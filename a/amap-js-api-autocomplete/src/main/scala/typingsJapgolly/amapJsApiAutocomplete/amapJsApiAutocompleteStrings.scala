@@ -2,55 +2,59 @@ package typingsJapgolly.amapJsApiAutocomplete
 
 import typingsJapgolly.amapJsApiAutocomplete.AMap.Autocomplete.DataType
 import typingsJapgolly.amapJsApiAutocomplete.AMap.Autocomplete.SearchStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiAutocompleteStrings {
-  @js.native
-  sealed trait all extends DataType
   
   @js.native
-  sealed trait bus extends DataType
+  sealed trait all
+    extends StObject
+       with DataType
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait busline extends DataType
+  sealed trait bus
+    extends StObject
+       with DataType
+  inline def bus: bus = "bus".asInstanceOf[bus]
   
   @js.native
-  sealed trait choose extends js.Object
+  sealed trait busline
+    extends StObject
+       with DataType
+  inline def busline: busline = "busline".asInstanceOf[busline]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait choose extends StObject
+  inline def choose: choose = "choose".asInstanceOf[choose]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait no_data extends SearchStatus
+  sealed trait error
+    extends StObject
+       with SearchStatus
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait poi extends DataType
+  sealed trait no_data
+    extends StObject
+       with SearchStatus
+  inline def no_data: no_data = "no_data".asInstanceOf[no_data]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait poi
+    extends StObject
+       with DataType
+  inline def poi: poi = "poi".asInstanceOf[poi]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def bus: bus = "bus".asInstanceOf[bus]
-  @scala.inline
-  def busline: busline = "busline".asInstanceOf[busline]
-  @scala.inline
-  def choose: choose = "choose".asInstanceOf[choose]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def no_data: no_data = "no_data".asInstanceOf[no_data]
-  @scala.inline
-  def poi: poi = "poi".asInstanceOf[poi]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
+  @js.native
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
 }
-

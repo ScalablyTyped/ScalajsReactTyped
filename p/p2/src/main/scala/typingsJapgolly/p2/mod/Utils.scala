@@ -1,22 +1,28 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Utils")
 @js.native
-class Utils () extends js.Object
-
+open class Utils () extends StObject
 /* static members */
-@JSImport("p2", "Utils")
-@js.native
-object Utils extends js.Object {
-  def appendArray[T](a: js.Array[T], b: js.Array[T]): js.Array[T] = js.native
-  def arrayRemove[T](array: js.Array[T], element: Double): Unit = js.native
-  def defaults(options: js.Any, defaults: js.Any): js.Any = js.native
-  def extend(a: js.Any, b: js.Any): Unit = js.native
-  def shallowClone[T](obj: T): T = js.native
-  def splice[T](array: js.Array[T], index: Double, howMany: Double): Unit = js.native
+object Utils {
+  
+  @JSImport("p2", "Utils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def appendArray[T](a: js.Array[T], b: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendArray")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  inline def arrayRemove[T](array: js.Array[T], element: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(array.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def defaults(options: Any, defaults: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def extend(a: Any, b: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def shallowClone[T](obj: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowClone")(obj.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def splice[T](array: js.Array[T], index: Double, howMany: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any], howMany.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

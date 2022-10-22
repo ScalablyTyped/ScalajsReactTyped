@@ -1,20 +1,25 @@
 package typingsJapgolly.asn1js.mod
 
-import typingsJapgolly.asn1js.LocalHexBlockParamsisCons
+import typingsJapgolly.asn1js.anon.PartialILocalIdentificati
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalIdentificationBlockParams extends js.Object {
-  var idBlock: js.UndefOr[LocalHexBlockParamsisCons] = js.undefined
+trait LocalIdentificationBlockParams extends StObject {
+  
+  var idBlock: js.UndefOr[PartialILocalIdentificati] = js.undefined
 }
-
 object LocalIdentificationBlockParams {
-  @scala.inline
-  def apply(idBlock: LocalHexBlockParamsisCons = null): LocalIdentificationBlockParams = {
+  
+  inline def apply(): LocalIdentificationBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (idBlock != null) __obj.updateDynamic("idBlock")(idBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalIdentificationBlockParams]
   }
+  
+  extension [Self <: LocalIdentificationBlockParams](x: Self) {
+    
+    inline def setIdBlock(value: PartialILocalIdentificati): Self = StObject.set(x, "idBlock", value.asInstanceOf[js.Any])
+    
+    inline def setIdBlockUndefined: Self = StObject.set(x, "idBlock", js.undefined)
+  }
 }
-

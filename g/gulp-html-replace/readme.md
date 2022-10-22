@@ -11,14 +11,11 @@ Replace build blocks in HTML. Like useref but done right.
 | Full name          | gulp-html-replace |
 | Keywords           | gulpplugin, html, replace |
 | # releases         | 1 |
-| # dependents       | 34 |
-| # downloads        | 624828 |
-| # stars            | 80 |
+| # dependents       | 0.0 |
+| # downloads        | 56005.0 |
+| # stars            | 221.0 |
 
 ## Links
-- [Homepage](https://github.com/VFK/gulp-html-replace#readme)
-- [Bugs](https://github.com/VFK/gulp-html-replace/issues)
-- [Repository](https://github.com/VFK/gulp-html-replace)
 - [Npm](https://www.npmjs.com/package/gulp-html-replace)
     
 

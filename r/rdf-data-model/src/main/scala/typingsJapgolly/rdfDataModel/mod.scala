@@ -1,30 +1,41 @@
 package typingsJapgolly.rdfDataModel
 
-import typingsJapgolly.rdfJs.mod.BlankNode
-import typingsJapgolly.rdfJs.mod.DefaultGraph
-import typingsJapgolly.rdfJs.mod.Literal
-import typingsJapgolly.rdfJs.mod.NamedNode
-import typingsJapgolly.rdfJs.mod.Quad
-import typingsJapgolly.rdfJs.mod.Term
-import typingsJapgolly.rdfJs.mod.Variable
+import typingsJapgolly.rdfjsTypes.dataModelMod.BlankNode
+import typingsJapgolly.rdfjsTypes.dataModelMod.DefaultGraph
+import typingsJapgolly.rdfjsTypes.dataModelMod.Literal
+import typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode
+import typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+import typingsJapgolly.rdfjsTypes.dataModelMod.Term
+import typingsJapgolly.rdfjsTypes.dataModelMod.Variable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rdf-data-model", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("rdf-data-model", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
+  inline def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
+  
+  inline def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
+  
+  @JSImport("rdf-data-model", "defaultGraphInstance")
+  @js.native
   val defaultGraphInstance: DefaultGraph = js.native
-  def blankNode(): BlankNode = js.native
-  def blankNode(value: String): BlankNode = js.native
-  def defaultGraph(): DefaultGraph = js.native
-  def literal(value: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: NamedNode): Literal = js.native
-  def namedNode(value: String): NamedNode = js.native
-  def quad(subject: Term, predicate: Term, `object`: Term): Quad = js.native
-  def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = js.native
-  def triple(subject: Term, predicate: Term, `object`: Term): Quad = js.native
-  def variable(value: String): Variable = js.native
+  
+  inline def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+  inline def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  inline def literal(value: String, languageOrDatatype: NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  
+  inline def namedNode(value: String): NamedNode[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[String]]
+  
+  inline def quad(subject: Term, predicate: Term, `object`: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  inline def quad(subject: Term, predicate: Term, `object`: Term, graph: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  
+  inline def triple(subject: Term, predicate: Term, `object`: Term): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  
+  inline def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
 }
-

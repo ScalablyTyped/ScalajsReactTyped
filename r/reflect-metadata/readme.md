@@ -10,10 +10,10 @@ Polyfill for Metadata Reflection API
 | ------------------ | :-------------: |
 | Full name          | reflect-metadata |
 | Keywords           | decorator, metadata, javascript, reflect |
-| # releases         | 2 |
-| # dependents       | 4306 |
-| # downloads        | 76920031 |
-| # stars            | 28 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0996336666666668E7 |
+| # stars            | 2561.0 |
 
 ## Links
 - [Homepage](http://rbuckton.github.io/reflect-metadata)

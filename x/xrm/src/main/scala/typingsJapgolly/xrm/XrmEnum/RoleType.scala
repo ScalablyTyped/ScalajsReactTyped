@@ -1,26 +1,22 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`2`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration for Relationship Role Type Metadata
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
 */
-trait RoleType extends js.Object
-
+trait RoleType extends StObject
 object RoleType {
-  @scala.inline
-  def AssociationEntity: `2` = this.cast(2)
-  @scala.inline
-  def Referencing: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AssociationEntity: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Referencing: `1` = 1.asInstanceOf[`1`]
 }
-

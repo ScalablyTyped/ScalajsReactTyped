@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RESTDataSourceSettings
-  extends /**
-	 * Option for RESTDataSourceSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Settings related to REST compliant update routine
-  	 */
+    * Settings related to REST compliant update routine
+    */
   var restSettings: js.UndefOr[RESTDataSourceSettingsRestSettings] = js.undefined
 }
-
 object RESTDataSourceSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for RESTDataSourceSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    restSettings: RESTDataSourceSettingsRestSettings = null
-  ): RESTDataSourceSettings = {
+  
+  inline def apply(): RESTDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (restSettings != null) __obj.updateDynamic("restSettings")(restSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[RESTDataSourceSettings]
   }
+  
+  extension [Self <: RESTDataSourceSettings](x: Self) {
+    
+    inline def setRestSettings(value: RESTDataSourceSettingsRestSettings): Self = StObject.set(x, "restSettings", value.asInstanceOf[js.Any])
+    
+    inline def setRestSettingsUndefined: Self = StObject.set(x, "restSettings", js.undefined)
+  }
 }
-

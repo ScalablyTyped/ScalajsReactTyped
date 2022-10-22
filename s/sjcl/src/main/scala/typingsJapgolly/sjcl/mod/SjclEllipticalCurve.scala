@@ -1,20 +1,22 @@
 package typingsJapgolly.sjcl.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SjclEllipticalCurve extends js.Object {
+trait SjclEllipticalCurve extends StObject {
+  
   def fromBits(bits: BitArray_): SjclEllipticalPoint
 }
-
 object SjclEllipticalCurve {
-  @scala.inline
-  def apply(fromBits: BitArray_ => CallbackTo[SjclEllipticalPoint]): SjclEllipticalCurve = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromBits")(js.Any.fromFunction1((t0: typingsJapgolly.sjcl.mod.BitArray_) => fromBits(t0).runNow()))
+  
+  inline def apply(fromBits: BitArray_ => SjclEllipticalPoint): SjclEllipticalCurve = {
+    val __obj = js.Dynamic.literal(fromBits = js.Any.fromFunction1(fromBits))
     __obj.asInstanceOf[SjclEllipticalCurve]
   }
+  
+  extension [Self <: SjclEllipticalCurve](x: Self) {
+    
+    inline def setFromBits(value: BitArray_ => SjclEllipticalPoint): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
+  }
 }
-

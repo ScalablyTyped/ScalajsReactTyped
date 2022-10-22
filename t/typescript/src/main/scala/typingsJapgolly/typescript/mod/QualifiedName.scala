@@ -1,16 +1,19 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait QualifiedName
-  extends EntityName
-     with Node {
+  extends StObject
+     with Node
+     with EntityName {
+  
   @JSName("kind")
-  var kind_QualifiedName: typingsJapgolly.typescript.mod.SyntaxKind.QualifiedName = js.native
-  var left: EntityName = js.native
-  var right: Identifier = js.native
+  val kind_QualifiedName: typingsJapgolly.typescript.mod.SyntaxKind.QualifiedName = js.native
+  
+  val left: EntityName = js.native
+  
+  val right: Identifier = js.native
 }
-

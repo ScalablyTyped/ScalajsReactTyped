@@ -1,20 +1,28 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExportUserField extends js.Object {
+trait ExportUserField extends StObject {
+  
   var export_as: js.UndefOr[String] = js.undefined
+  
   var name: String
 }
-
 object ExportUserField {
-  @scala.inline
-  def apply(name: String, export_as: String = null): ExportUserField = {
+  
+  inline def apply(name: String): ExportUserField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (export_as != null) __obj.updateDynamic("export_as")(export_as.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportUserField]
   }
+  
+  extension [Self <: ExportUserField](x: Self) {
+    
+    inline def setExport_as(value: String): Self = StObject.set(x, "export_as", value.asInstanceOf[js.Any])
+    
+    inline def setExport_asUndefined: Self = StObject.set(x, "export_as", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

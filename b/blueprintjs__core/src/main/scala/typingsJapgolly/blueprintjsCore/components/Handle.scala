@@ -1,75 +1,69 @@
 package typingsJapgolly.blueprintjsCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsCore.handleMod.IInternalHandleProps
-import typingsJapgolly.blueprintjsCore.handlePropsMod.HandleInteractionKind
-import typingsJapgolly.blueprintjsCore.handlePropsMod.HandleType
-import typingsJapgolly.blueprintjsCore.intentMod.Intent
-import typingsJapgolly.react.mod.ReactChild
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandleMod.IInternalHandleProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleHtmlProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleInteractionKind
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandlePropsMod.HandleType
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Handle {
-  def apply(
-    label: ReactChild,
+  
+  inline def apply(
+    max: Double,
+    min: Double,
+    stepSize: Double,
+    tickSize: Double,
+    tickSizeRatio: Double,
     value: Double,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    intentAfter: Intent = null,
-    intentBefore: Intent = null,
-    interactionKind: HandleInteractionKind = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    onChange: /* newValue */ Double => Callback = null,
-    onRelease: /* newValue */ Double => Callback = null,
-    stepSize: Int | Double = null,
-    tickSize: Int | Double = null,
-    tickSizeRatio: Int | Double = null,
-    `type`: HandleType = null,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IInternalHandleProps, 
-    typingsJapgolly.blueprintjsCore.handleMod.Handle, 
-    Unit, 
-    IInternalHandleProps
-  ] = {
-    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter.asInstanceOf[js.Any])
-    if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore.asInstanceOf[js.Any])
-    if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* newValue */ scala.Double) => onChange(t0).runNow()))
-    if (onRelease != null) __obj.updateDynamic("onRelease")(js.Any.fromFunction1((t0: /* newValue */ scala.Double) => onRelease(t0).runNow()))
-    if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (tickSizeRatio != null) __obj.updateDynamic("tickSizeRatio")(tickSizeRatio.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.handleMod.IInternalHandleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.handleMod.Handle](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.handleMod.IInternalHandleProps])(children: _*)
+    vertical: Boolean
+  ): Builder = {
+    val __props = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], stepSize = stepSize.asInstanceOf[js.Any], tickSize = tickSize.asInstanceOf[js.Any], tickSizeRatio = tickSizeRatio.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IInternalHandleProps]))
   }
+  
   @JSImport("@blueprintjs/core/lib/esm/components/slider/handle", "Handle")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.libEsmComponentsSliderHandleMod.Handle] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def htmlProps(value: HandleHtmlProps): this.type = set("htmlProps", value.asInstanceOf[js.Any])
+    
+    inline def intentAfter(value: Intent): this.type = set("intentAfter", value.asInstanceOf[js.Any])
+    
+    inline def intentBefore(value: Intent): this.type = set("intentBefore", value.asInstanceOf[js.Any])
+    
+    inline def interactionKind(value: HandleInteractionKind): this.type = set("interactionKind", value.asInstanceOf[js.Any])
+    
+    inline def label(value: Element | String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* newValue */ Double => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* newValue */ Double) => value(t0).runNow()))
+    
+    inline def onRelease(value: /* newValue */ Double => Callback): this.type = set("onRelease", js.Any.fromFunction1((t0: /* newValue */ Double) => value(t0).runNow()))
+    
+    inline def trackStyleAfter(value: CSSProperties): this.type = set("trackStyleAfter", value.asInstanceOf[js.Any])
+    
+    inline def trackStyleBefore(value: CSSProperties): this.type = set("trackStyleBefore", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: HandleType): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IInternalHandleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

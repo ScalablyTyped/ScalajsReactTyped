@@ -1,13 +1,13 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Axis")
 @js.native
-class Axis[D] protected ()
-  extends typingsJapgolly.plottable.axisMod.Axis[D] {
+open class Axis[D] protected ()
+  extends typingsJapgolly.plottable.buildSrcAxesAxisMod.Axis[D] {
   /**
     * Constructs an Axis.
     * An Axis is a visual representation of a Scale.
@@ -17,43 +17,75 @@ class Axis[D] protected ()
     * @param {AxisOrientation} orientation Orientation of this Axis.
     */
   def this(
-    scale: typingsJapgolly.plottable.scaleMod.Scale[D, Double],
-    orientation: typingsJapgolly.plottable.axisMod.AxisOrientation
+    scale: typingsJapgolly.plottable.buildSrcScalesScaleMod.Scale[D, Double],
+    orientation: typingsJapgolly.plottable.buildSrcAxesAxisMod.AxisOrientation
   ) = this()
 }
-
 /* static members */
-@JSImport("plottable", "Axis")
-@js.native
-object Axis extends js.Object {
+object Axis {
+  
+  @JSImport("plottable", "Axis")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * The css class applied to each annotation circle, which denotes which tick is being annotated.
     */
-  var ANNOTATION_CIRCLE_CLASS: String = js.native
+  @JSImport("plottable", "Axis.ANNOTATION_CIRCLE_CLASS")
+  @js.native
+  def ANNOTATION_CIRCLE_CLASS: String = js.native
+  inline def ANNOTATION_CIRCLE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_CIRCLE_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each annotation label, which shows the formatted annotation text.
     */
-  var ANNOTATION_LABEL_CLASS: String = js.native
+  @JSImport("plottable", "Axis.ANNOTATION_LABEL_CLASS")
+  @js.native
+  def ANNOTATION_LABEL_CLASS: String = js.native
+  inline def ANNOTATION_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LABEL_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each annotation line, which extends from the axis to the rect.
     */
-  var ANNOTATION_LINE_CLASS: String = js.native
+  @JSImport("plottable", "Axis.ANNOTATION_LINE_CLASS")
+  @js.native
+  def ANNOTATION_LINE_CLASS: String = js.native
+  inline def ANNOTATION_LINE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_LINE_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each annotation rect, which surrounds the annotation label.
     */
-  var ANNOTATION_RECT_CLASS: String = js.native
+  @JSImport("plottable", "Axis.ANNOTATION_RECT_CLASS")
+  @js.native
+  def ANNOTATION_RECT_CLASS: String = js.native
+  inline def ANNOTATION_RECT_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANNOTATION_RECT_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each end tick mark (the line on the end tick).
     */
-  var END_TICK_MARK_CLASS: String = js.native
+  @JSImport("plottable", "Axis.END_TICK_MARK_CLASS")
+  @js.native
+  def END_TICK_MARK_CLASS: String = js.native
+  inline def END_TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END_TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each tick label (the text associated with the tick).
     */
-  var TICK_LABEL_CLASS: String = js.native
+  @JSImport("plottable", "Axis.TICK_LABEL_CLASS")
+  @js.native
+  def TICK_LABEL_CLASS: String = js.native
+  inline def TICK_LABEL_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_LABEL_CLASS")(x.asInstanceOf[js.Any])
+  
   /**
     * The css class applied to each tick mark (the line on the tick).
     */
-  var TICK_MARK_CLASS: String = js.native
-  var _ANNOTATION_LABEL_PADDING: js.Any = js.native
+  @JSImport("plottable", "Axis.TICK_MARK_CLASS")
+  @js.native
+  def TICK_MARK_CLASS: String = js.native
+  inline def TICK_MARK_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TICK_MARK_CLASS")(x.asInstanceOf[js.Any])
+  
+  @JSImport("plottable", "Axis._ANNOTATION_LABEL_PADDING")
+  @js.native
+  def _ANNOTATION_LABEL_PADDING: Any = js.native
+  inline def _ANNOTATION_LABEL_PADDING_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANNOTATION_LABEL_PADDING")(x.asInstanceOf[js.Any])
 }
-

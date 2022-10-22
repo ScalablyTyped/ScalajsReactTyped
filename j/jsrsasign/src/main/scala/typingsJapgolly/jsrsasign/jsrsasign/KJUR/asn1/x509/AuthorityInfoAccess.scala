@@ -1,9 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AuthorityInfoAccess ASN.1 structure class
@@ -29,11 +30,37 @@ import scala.scalajs.js.annotation._
   *   }]
   * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.AuthorityInfoAccess")
-@js.native
-class AuthorityInfoAccess () extends Extension {
-  def this(params: ArrayParam[ExtensionParam]) = this()
-  def getExtnValueHex(): String = js.native
-  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit = js.native
+trait AuthorityInfoAccess
+  extends StObject
+     with Extension {
+  
+  def getExtnValueHex(): String
+  
+  def setAccessDescriptionArray(accessDescriptionArray: js.Array[ExtensionParam]): Unit
 }
-
+object AuthorityInfoAccess {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getExtnValueHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setAccessDescriptionArray: js.Array[ExtensionParam] => Callback
+  ): AuthorityInfoAccess = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getExtnValueHex = getExtnValueHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setAccessDescriptionArray = js.Any.fromFunction1((t0: js.Array[ExtensionParam]) => setAccessDescriptionArray(t0).runNow()), params = null)
+    __obj.asInstanceOf[AuthorityInfoAccess]
+  }
+  
+  extension [Self <: AuthorityInfoAccess](x: Self) {
+    
+    inline def setGetExtnValueHex(value: CallbackTo[String]): Self = StObject.set(x, "getExtnValueHex", value.toJsFn)
+    
+    inline def setSetAccessDescriptionArray(value: js.Array[ExtensionParam] => Callback): Self = StObject.set(x, "setAccessDescriptionArray", js.Any.fromFunction1((t0: js.Array[ExtensionParam]) => value(t0).runNow()))
+  }
+}

@@ -2,9 +2,10 @@ package typingsJapgolly.oauth2Server.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.express.mod.Response_
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an outgoing HTTP response.
@@ -15,26 +16,31 @@ import scala.scalajs.js.annotation._
   * Instantiates Response using the supplied options.
   *
   */
-class Response () extends js.Object {
-  def this(options: StringDictionary[js.Any]) = this()
-  def this(options: Response_) = this()
-  var body: js.UndefOr[js.Any] = js.native
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
-  var status: js.UndefOr[Double] = js.native
+open class Response () extends StObject {
+  def this(options: StringDictionary[Any]) = this()
+  def this(options: Response_[Any, Record[String, Any]]) = this()
+  
+  var body: js.UndefOr[Any] = js.native
+  
   /**
     * Returns the specified HTTP header field. The match is case-insensitive.
     *
     */
-  def get(field: String): js.UndefOr[js.Any] = js.native
+  def get(field: String): js.UndefOr[Any] = js.native
+  
+  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  
   /**
     * Redirects to the specified URL using 302 Found.
     *
     */
   def redirect(url: String): Unit = js.native
+  
   /**
     * Sets the specified HTTP header field. The match is case-insensitive.
     *
     */
   def set(field: String, value: String): Unit = js.native
+  
+  var status: js.UndefOr[Double] = js.native
 }
-

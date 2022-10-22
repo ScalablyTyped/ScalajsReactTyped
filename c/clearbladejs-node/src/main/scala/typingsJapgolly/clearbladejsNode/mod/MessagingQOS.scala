@@ -1,35 +1,33 @@
 package typingsJapgolly.clearbladejsNode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MessagingQOS extends js.Object
-
+sealed trait MessagingQOS extends StObject
 @JSImport("clearbladejs-node", "MessagingQOS")
 @js.native
-object MessagingQOS extends js.Object {
-  @js.native
-  sealed trait MESSAGING_QOS_AT_LEAST_ONCE extends MessagingQOS
-  
-  @js.native
-  sealed trait MESSAGING_QOS_AT_MOST_ONCE extends MessagingQOS
-  
-  @js.native
-  sealed trait MESSAGING_QOS_EXACTLY_ONCE extends MessagingQOS
+object MessagingQOS extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MessagingQOS with Double] = js.native
-  /* 1 */ @js.native
-  object MESSAGING_QOS_AT_LEAST_ONCE extends TopLevel[MESSAGING_QOS_AT_LEAST_ONCE with Double]
+  def apply(value: Double): js.UndefOr[MessagingQOS & Double] = js.native
   
-  /* 0 */ @js.native
-  object MESSAGING_QOS_AT_MOST_ONCE extends TopLevel[MESSAGING_QOS_AT_MOST_ONCE with Double]
+  @js.native
+  sealed trait MESSAGING_QOS_AT_LEAST_ONCE
+    extends StObject
+       with MessagingQOS
+  /* 1 */ val MESSAGING_QOS_AT_LEAST_ONCE: typingsJapgolly.clearbladejsNode.mod.MessagingQOS.MESSAGING_QOS_AT_LEAST_ONCE & Double = js.native
   
-  /* 2 */ @js.native
-  object MESSAGING_QOS_EXACTLY_ONCE extends TopLevel[MESSAGING_QOS_EXACTLY_ONCE with Double]
+  @js.native
+  sealed trait MESSAGING_QOS_AT_MOST_ONCE
+    extends StObject
+       with MessagingQOS
+  /* 0 */ val MESSAGING_QOS_AT_MOST_ONCE: typingsJapgolly.clearbladejsNode.mod.MessagingQOS.MESSAGING_QOS_AT_MOST_ONCE & Double = js.native
   
+  @js.native
+  sealed trait MESSAGING_QOS_EXACTLY_ONCE
+    extends StObject
+       with MessagingQOS
+  /* 2 */ val MESSAGING_QOS_EXACTLY_ONCE: typingsJapgolly.clearbladejsNode.mod.MessagingQOS.MESSAGING_QOS_EXACTLY_ONCE & Double = js.native
 }
-

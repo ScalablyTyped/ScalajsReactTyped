@@ -3,11 +3,12 @@ package typingsJapgolly.chromeApps.chrome.webViewRequest
 import typingsJapgolly.chromeApps.chrome.double
 import typingsJapgolly.chromeApps.chrome.integer
 import typingsJapgolly.chromeApps.chrome.webRequest.ResourceType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnMessageEventDetails extends js.Object {
+trait OnMessageEventDetails extends StObject {
+  
   /**
     * The value 0 indicates that the request happens in the main frame;
     * a positive value indicates the ID of a subframe in which the request happens.
@@ -16,33 +17,41 @@ trait OnMessageEventDetails extends js.Object {
     * Frame IDs are unique within a tab.
     */
   var frameId: integer
+  
   /** The message sent by the calling script. */
   var message: String
+  
   /** Standard HTTP method. */
   var method: String
+  
   /** ID of frame that wraps the frame which sent the request. Set to -1 if no parent frame exists. */
   var parentFrameId: integer
+  
   /**
     * The ID of the request.
     * Request IDs are unique within a browser session.
     * As a result, they could be used to relate different events of the same request.
     */
   var requestId: String
+  
   /** The stage of the network request during which the event was triggered. */
   var stage: Stage
+  
   /** The ID of the tab in which the request takes place. Set to -1 if the request isn't related to a tab. */
   var tabId: integer
+  
   /** The time when this signal is triggered, in milliseconds since the epoch. */
   var timeStamp: double
+  
   /** How the requested resource will be used. */
   var `type`: ResourceType
+  
   /** URL */
   var url: String
 }
-
 object OnMessageEventDetails {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     frameId: integer,
     message: String,
     method: String,
@@ -58,5 +67,27 @@ object OnMessageEventDetails {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnMessageEventDetails]
   }
+  
+  extension [Self <: OnMessageEventDetails](x: Self) {
+    
+    inline def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setParentFrameId(value: integer): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+    
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    
+    inline def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    
+    inline def setTabId(value: integer): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    
+    inline def setTimeStamp(value: double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

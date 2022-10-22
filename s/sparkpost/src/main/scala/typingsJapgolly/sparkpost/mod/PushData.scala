@@ -1,23 +1,32 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushData extends js.Object {
+trait PushData extends StObject {
+  
   /** payload for APNs messages */
-  var apns: js.UndefOr[js.Any] = js.undefined
+  var apns: js.UndefOr[Any] = js.undefined
+  
   /** payload for GCM messages */
-  var gcm: js.UndefOr[js.Any] = js.undefined
+  var gcm: js.UndefOr[Any] = js.undefined
 }
-
 object PushData {
-  @scala.inline
-  def apply(apns: js.Any = null, gcm: js.Any = null): PushData = {
+  
+  inline def apply(): PushData = {
     val __obj = js.Dynamic.literal()
-    if (apns != null) __obj.updateDynamic("apns")(apns.asInstanceOf[js.Any])
-    if (gcm != null) __obj.updateDynamic("gcm")(gcm.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushData]
   }
+  
+  extension [Self <: PushData](x: Self) {
+    
+    inline def setApns(value: Any): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    
+    inline def setApnsUndefined: Self = StObject.set(x, "apns", js.undefined)
+    
+    inline def setGcm(value: Any): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    
+    inline def setGcmUndefined: Self = StObject.set(x, "gcm", js.undefined)
+  }
 }
-

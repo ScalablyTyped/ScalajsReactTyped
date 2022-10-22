@@ -1,34 +1,127 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
 import typingsJapgolly.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.Font")
-@js.native
-class Font protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  var AutoRotateNumbers: MsoTriState = js.native
-  var BaselineOffset: Double = js.native
-  var Bold: MsoTriState = js.native
-  val Color: ColorFormat = js.native
-  val Embeddable: MsoTriState = js.native
-  val Embedded: MsoTriState = js.native
-  var Emboss: MsoTriState = js.native
-  var Italic: MsoTriState = js.native
-  var Name: String = js.native
-  var NameAscii: String = js.native
-  var NameComplexScript: String = js.native
-  var NameFarEast: String = js.native
-  var NameOther: String = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.Font_typekey")
-  var PowerPointDotFont_typekey: Font = js.native
-  var Shadow: MsoTriState = js.native
-  var Size: Double = js.native
-  var Subscript: MsoTriState = js.native
-  var Superscript: MsoTriState = js.native
-  var Underline: MsoTriState = js.native
+trait Font extends StObject {
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application
+  
+  var AutoRotateNumbers: MsoTriState
+  
+  var BaselineOffset: Double
+  
+  var Bold: MsoTriState
+  
+  val Color: ColorFormat
+  
+  val Embeddable: MsoTriState
+  
+  val Embedded: MsoTriState
+  
+  var Emboss: MsoTriState
+  
+  var Italic: MsoTriState
+  
+  var Name: String
+  
+  var NameAscii: String
+  
+  var NameComplexScript: String
+  
+  var NameFarEast: String
+  
+  var NameOther: String
+  
+  val Parent: Any
+  
+  /* private */ @JSName("PowerPoint.Font_typekey")
+  var PowerPointDotFont_typekey: Font
+  
+  var Shadow: MsoTriState
+  
+  var Size: Double
+  
+  var Subscript: MsoTriState
+  
+  var Superscript: MsoTriState
+  
+  var Underline: MsoTriState
 }
-
+object Font {
+  
+  inline def apply(
+    Application: Application,
+    AutoRotateNumbers: MsoTriState,
+    BaselineOffset: Double,
+    Bold: MsoTriState,
+    Color: ColorFormat,
+    Embeddable: MsoTriState,
+    Embedded: MsoTriState,
+    Emboss: MsoTriState,
+    Italic: MsoTriState,
+    Name: String,
+    NameAscii: String,
+    NameComplexScript: String,
+    NameFarEast: String,
+    NameOther: String,
+    Parent: Any,
+    PowerPointDotFont_typekey: Font,
+    Shadow: MsoTriState,
+    Size: Double,
+    Subscript: MsoTriState,
+    Superscript: MsoTriState,
+    Underline: MsoTriState
+  ): Font = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoRotateNumbers = AutoRotateNumbers.asInstanceOf[js.Any], BaselineOffset = BaselineOffset.asInstanceOf[js.Any], Bold = Bold.asInstanceOf[js.Any], Color = Color.asInstanceOf[js.Any], Embeddable = Embeddable.asInstanceOf[js.Any], Embedded = Embedded.asInstanceOf[js.Any], Emboss = Emboss.asInstanceOf[js.Any], Italic = Italic.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NameAscii = NameAscii.asInstanceOf[js.Any], NameComplexScript = NameComplexScript.asInstanceOf[js.Any], NameFarEast = NameFarEast.asInstanceOf[js.Any], NameOther = NameOther.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Shadow = Shadow.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], Subscript = Subscript.asInstanceOf[js.Any], Superscript = Superscript.asInstanceOf[js.Any], Underline = Underline.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Font_typekey")(PowerPointDotFont_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Font]
+  }
+  
+  extension [Self <: Font](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRotateNumbers(value: MsoTriState): Self = StObject.set(x, "AutoRotateNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineOffset(value: Double): Self = StObject.set(x, "BaselineOffset", value.asInstanceOf[js.Any])
+    
+    inline def setBold(value: MsoTriState): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+    
+    inline def setColor(value: ColorFormat): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    
+    inline def setEmbeddable(value: MsoTriState): Self = StObject.set(x, "Embeddable", value.asInstanceOf[js.Any])
+    
+    inline def setEmbedded(value: MsoTriState): Self = StObject.set(x, "Embedded", value.asInstanceOf[js.Any])
+    
+    inline def setEmboss(value: MsoTriState): Self = StObject.set(x, "Emboss", value.asInstanceOf[js.Any])
+    
+    inline def setItalic(value: MsoTriState): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setNameAscii(value: String): Self = StObject.set(x, "NameAscii", value.asInstanceOf[js.Any])
+    
+    inline def setNameComplexScript(value: String): Self = StObject.set(x, "NameComplexScript", value.asInstanceOf[js.Any])
+    
+    inline def setNameFarEast(value: String): Self = StObject.set(x, "NameFarEast", value.asInstanceOf[js.Any])
+    
+    inline def setNameOther(value: String): Self = StObject.set(x, "NameOther", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotFont_typekey(value: Font): Self = StObject.set(x, "PowerPoint.Font_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setShadow(value: MsoTriState): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    
+    inline def setSubscript(value: MsoTriState): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
+    
+    inline def setSuperscript(value: MsoTriState): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
+    
+    inline def setUnderline(value: MsoTriState): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+  }
+}

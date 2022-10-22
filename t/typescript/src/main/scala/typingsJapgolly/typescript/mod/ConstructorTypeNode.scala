@@ -1,17 +1,22 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ConstructorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ConstructorTypeNode
-  extends FunctionOrConstructorTypeNodeBase
+  extends StObject
+     with FunctionOrConstructorTypeNodeBase
      with FunctionOrConstructorTypeNode
-     with SignatureDeclaration
-     with _HasJSDoc {
+     with HasJSDoc
+     with HasModifiers
+     with SignatureDeclaration {
+  
   @JSName("kind")
-  var kind_ConstructorTypeNode: ConstructorType = js.native
+  val kind_ConstructorTypeNode: ConstructorType = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ConstructorTypeNode: js.UndefOr[NodeArray[Modifier]] = js.native
 }
-

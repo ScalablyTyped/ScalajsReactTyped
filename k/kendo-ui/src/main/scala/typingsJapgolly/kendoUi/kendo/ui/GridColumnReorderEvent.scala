@@ -1,32 +1,39 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnReorderEvent extends GridEvent {
-  var column: js.UndefOr[js.Any] = js.undefined
+trait GridColumnReorderEvent
+  extends StObject
+     with GridEvent {
+  
+  var column: js.UndefOr[Any] = js.undefined
+  
   var newIndex: js.UndefOr[Double] = js.undefined
+  
   var oldIndex: js.UndefOr[Double] = js.undefined
 }
-
 object GridColumnReorderEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Grid,
-    column: js.Any = null,
-    newIndex: Int | Double = null,
-    oldIndex: Int | Double = null
-  ): GridColumnReorderEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (newIndex != null) __obj.updateDynamic("newIndex")(newIndex.asInstanceOf[js.Any])
-    if (oldIndex != null) __obj.updateDynamic("oldIndex")(oldIndex.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Grid): GridColumnReorderEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnReorderEvent]
   }
+  
+  extension [Self <: GridColumnReorderEvent](x: Self) {
+    
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    
+    inline def setNewIndexUndefined: Self = StObject.set(x, "newIndex", js.undefined)
+    
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    
+    inline def setOldIndexUndefined: Self = StObject.set(x, "oldIndex", js.undefined)
+  }
 }
-

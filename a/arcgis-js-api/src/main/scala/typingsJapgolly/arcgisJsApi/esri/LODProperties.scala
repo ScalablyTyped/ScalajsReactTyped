@@ -1,28 +1,32 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LODProperties extends js.Object {
+trait LODProperties extends StObject {
+  
   /**
-    * ID for each level. The top most level is `0`.
+    * ID for each level.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#level)
     */
   var level: js.UndefOr[Double] = js.undefined
+  
   /**
-    * String to be used when constructing a URL to access a tile from this LOD. If `levelValue` is not defined, level will be used for the tile access URL. This property is useful when an LOD object represents a WMTS TileMatrix with non-numeric matrix identifiers.
+    * String to be used when constructing a URL to access a tile from this LOD.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#levelValue)
     */
   var levelValue: js.UndefOr[String] = js.undefined
+  
   /**
     * Resolution in map units of each pixel in a tile for each level.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html#resolution)
     */
   var resolution: js.UndefOr[Double] = js.undefined
+  
   /**
     * Scale for each level.
     *
@@ -30,21 +34,29 @@ trait LODProperties extends js.Object {
     */
   var scale: js.UndefOr[Double] = js.undefined
 }
-
 object LODProperties {
-  @scala.inline
-  def apply(
-    level: Int | Double = null,
-    levelValue: String = null,
-    resolution: Int | Double = null,
-    scale: Int | Double = null
-  ): LODProperties = {
+  
+  inline def apply(): LODProperties = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (levelValue != null) __obj.updateDynamic("levelValue")(levelValue.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[LODProperties]
   }
+  
+  extension [Self <: LODProperties](x: Self) {
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLevelValue(value: String): Self = StObject.set(x, "levelValue", value.asInstanceOf[js.Any])
+    
+    inline def setLevelValueUndefined: Self = StObject.set(x, "levelValue", js.undefined)
+    
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+  }
 }
-

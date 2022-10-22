@@ -1,31 +1,39 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerSymbol extends Symbol {
+trait MarkerSymbol
+  extends StObject
+     with Symbol {
+  
   var angle: js.UndefOr[Double] = js.undefined
+  
   var xoffset: js.UndefOr[Double] = js.undefined
+  
   var yoffset: js.UndefOr[Double] = js.undefined
 }
-
 object MarkerSymbol {
-  @scala.inline
-  def apply(
-    `type`: SymbolType,
-    angle: Int | Double = null,
-    style: String = null,
-    xoffset: Int | Double = null,
-    yoffset: Int | Double = null
-  ): MarkerSymbol = {
+  
+  inline def apply(`type`: SymbolType): MarkerSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerSymbol]
   }
+  
+  extension [Self <: MarkerSymbol](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setXoffset(value: Double): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    
+    inline def setYoffset(value: Double): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+  }
 }
-

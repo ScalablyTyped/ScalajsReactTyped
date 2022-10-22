@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorAxisEventsOptions extends js.Object {
+trait ColorAxisEventsOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps) As opposed to the `setExtremes` event,
     * this event fires after the final min and max values are computed and
@@ -21,12 +22,14 @@ trait ColorAxisEventsOptions extends js.Object {
     * `event.dataMax`.
     */
   var afterSetExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) Fires when the legend item belonging to
     * the colorAxis is clicked. One parameter, `event`, is passed to the
     * function.
     */
   var legendItemClick: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) Fires when the minimum and maximum is
     * set for the axis, either by calling the `.setExtremes()` method or by
@@ -41,19 +44,25 @@ trait ColorAxisEventsOptions extends js.Object {
     */
   var setExtremes: js.UndefOr[AxisSetExtremesEventCallbackFunction] = js.undefined
 }
-
 object ColorAxisEventsOptions {
-  @scala.inline
-  def apply(
-    afterSetExtremes: AxisSetExtremesEventCallbackFunction = null,
-    legendItemClick: js.Function = null,
-    setExtremes: AxisSetExtremesEventCallbackFunction = null
-  ): ColorAxisEventsOptions = {
+  
+  inline def apply(): ColorAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
-    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes.asInstanceOf[js.Any])
-    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick.asInstanceOf[js.Any])
-    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorAxisEventsOptions]
   }
+  
+  extension [Self <: ColorAxisEventsOptions](x: Self) {
+    
+    inline def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
+    
+    inline def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
+    
+    inline def setLegendItemClick(value: js.Function): Self = StObject.set(x, "legendItemClick", value.asInstanceOf[js.Any])
+    
+    inline def setLegendItemClickUndefined: Self = StObject.set(x, "legendItemClick", js.undefined)
+    
+    inline def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
+    
+    inline def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
+  }
 }
-

@@ -1,20 +1,28 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for parameters used in the ASPxHtmlEditor's client-side commands.
   */
-@JSGlobal("ASPxClientHtmlEditorCommandArguments")
-@js.native
-class ASPxClientHtmlEditorCommandArguments protected () extends js.Object {
-  def this(htmlEditor: ASPxClientHtmlEditor) = this()
-  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorCommandArguments extends StObject {
+  
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
-  var selectedElement: js.Any = js.native
+  var selectedElement: Any
 }
-
+object ASPxClientHtmlEditorCommandArguments {
+  
+  inline def apply(selectedElement: Any): ASPxClientHtmlEditorCommandArguments = {
+    val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandArguments]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorCommandArguments](x: Self) {
+    
+    inline def setSelectedElement(value: Any): Self = StObject.set(x, "selectedElement", value.asInstanceOf[js.Any])
+  }
+}

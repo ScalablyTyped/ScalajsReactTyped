@@ -1,14 +1,13 @@
 package typingsJapgolly.jsforce.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce", "Resource")
 @js.native
-class Resource[T] protected ()
-  extends typingsJapgolly.jsforce.chatterMod.Resource[T] {
-  def this(chatter: typingsJapgolly.jsforce.chatterMod.Chatter, url: String) = this()
-  def this(chatter: typingsJapgolly.jsforce.chatterMod.Chatter, url: String, queryParams: js.Object) = this()
+open class Resource[T] protected ()
+  extends typingsJapgolly.jsforce.apiChatterMod.Resource[T] {
+  def this(chatter: typingsJapgolly.jsforce.apiChatterMod.Chatter, url: String) = this()
+  def this(chatter: typingsJapgolly.jsforce.apiChatterMod.Chatter, url: String, queryParams: js.Object) = this()
 }
-

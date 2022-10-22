@@ -1,53 +1,43 @@
 package typingsJapgolly.reactBootstrapTypeahead.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.reactBootstrapTypeahead.PickCSSPropertiesboxSizin
 import typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AutosizeInput {
-  def apply(
-    style: CSSProperties,
-    className: String = null,
-    inputClassName: String = null,
-    inputRef: LegacyRef[HTMLInputElement] = null,
-    inputStyle: PickCSSPropertiesboxSizin = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AutosizeInputProps, 
-    typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInput, 
-    Unit, 
-    AutosizeInputProps
-  ] = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInput](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInputProps])(children: _*)
+  inline def apply(style: CSSProperties): Builder = {
+    val __props = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AutosizeInputProps]))
   }
+  
   @JSImport("react-bootstrap-typeahead", "AutosizeInput")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrapTypeahead.mod.AutosizeInput] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def inputClassName(value: String): this.type = set("inputClassName", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: LegacyRef[HTMLInputElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def inputRefFunction1(value: HTMLInputElement | Null => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: HTMLInputElement | Null) => value(t0).runNow()))
+    
+    inline def inputRefNull: this.type = set("inputRef", null)
+    
+    inline def inputStyle(value: CSSProperties): this.type = set("inputStyle", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AutosizeInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

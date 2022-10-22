@@ -10,10 +10,10 @@ ngStorage =========
 | ------------------ | :-------------: |
 | Full name          | ngstorage |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 840807 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 89552.66666666667 |
+| # stars            | 2348.0 |
 
 ## Links
 - [Homepage](https://github.com/gsklee/ngStorage#readme)

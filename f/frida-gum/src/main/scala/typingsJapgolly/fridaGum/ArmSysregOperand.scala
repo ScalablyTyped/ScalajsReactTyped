@@ -1,31 +1,31 @@
 package typingsJapgolly.fridaGum
 
 import typingsJapgolly.fridaGum.fridaGumStrings.sysreg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArmSysregOperand
-  extends ArmBaseOperand
+  extends StObject
+     with ArmBaseOperand
      with ArmOperand {
+  
   var `type`: sysreg
+  
   var value: ArmRegister
 }
-
 object ArmSysregOperand {
-  @scala.inline
-  def apply(
-    subtracted: Boolean,
-    `type`: sysreg,
-    value: ArmRegister,
-    shift: AnonType = null,
-    vectorIndex: Int | Double = null
-  ): ArmSysregOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess, subtracted: Boolean, value: ArmRegister): ArmSysregOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sysreg")
     __obj.asInstanceOf[ArmSysregOperand]
   }
+  
+  extension [Self <: ArmSysregOperand](x: Self) {
+    
+    inline def setType(value: sysreg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: ArmRegister): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

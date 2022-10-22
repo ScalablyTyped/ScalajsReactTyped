@@ -1,7 +1,7 @@
 
 # Scala.js typings for secp256k1
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 This module provides native bindings to ecdsa secp256k1 functions
@@ -10,10 +10,10 @@ This module provides native bindings to ecdsa secp256k1 functions
 | ------------------ | :-------------: |
 | Full name          | secp256k1 |
 | Keywords           | ec, ecdh, ecdsa, secp256k1 |
-| # releases         | 8 |
-| # dependents       | 516 |
-| # downloads        | 4579511 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3589527.6666666665 |
+| # stars            | 296.0 |
 
 ## Links
 - [Homepage](https://github.com/cryptocoinjs/secp256k1-node#readme)

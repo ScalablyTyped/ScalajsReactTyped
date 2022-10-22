@@ -1,41 +1,46 @@
 package typingsJapgolly.lambdaWrapper
 
 import typingsJapgolly.awsLambda.handlerMod.Callback
+import typingsJapgolly.lambdaWrapper.anon.Handler
+import typingsJapgolly.lambdaWrapper.anon.LambdaFunction
+import typingsJapgolly.lambdaWrapper.anon.PartialContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lambda-wrapper", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("lambda-wrapper", JSImport.Namespace)
   @js.native
-  trait Wrapped[TEvent, TResult] extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def init(mod: Any, options: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def run(event: Any, callback: Callback[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run(event: Any, context: PartialContext, callback: Callback[Any]): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  
+  inline def wrap(mod: LambdaFunction): Wrapped[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[Any, Any]]
+  inline def wrap(mod: LambdaFunction, options: js.Object): Wrapped[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[Any, Any]]
+  inline def wrap[TEvent, TResult, THandlerName /* <: String */](
+    mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any
+  ): Wrapped[TEvent, TResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any]).asInstanceOf[Wrapped[TEvent, TResult]]
+  inline def wrap[TEvent, TResult, THandlerName /* <: String */](
+    mod: /* import warning: importer.ImportType#apply Failed type conversion: {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>} */ js.Any,
+    options: Handler[THandlerName]
+  ): Wrapped[TEvent, TResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapped[TEvent, TResult]]
+  
+  @js.native
+  trait Wrapped[TEvent, TResult] extends StObject {
+    
     def run(event: TEvent): js.Promise[TResult] = js.native
     def run(event: TEvent, callback: Callback[TResult]): Unit = js.native
     def run(event: TEvent, context: PartialContext): js.Promise[TResult] = js.native
     // None of these functions resolve the promise if a callback is present, so prohibit using both.
     def run(event: TEvent, context: PartialContext, callback: Callback[TResult]): Unit = js.native
+    
     def runHandler(event: TEvent, context: PartialContext): Unit = js.native
     def runHandler(event: TEvent, context: PartialContext, callback: Callback[TResult]): Unit = js.native
     @JSName("runHandler")
     def runHandler_Promise(event: TEvent, context: PartialContext): js.Promise[TResult] = js.native
   }
-  
-  def init(mod: js.Any, options: js.Any): Unit = js.native
-  def run(event: js.Any, callback: Callback[_]): js.Promise[_] = js.native
-  def run(event: js.Any, context: PartialContext, callback: Callback[_]): js.Promise[_] = js.native
-  def wrap(mod: AnonLambdaFunction): Wrapped[_, _] = js.native
-  def wrap(mod: AnonLambdaFunction, options: js.Object): Wrapped[_, _] = js.native
-  def wrap[TEvent, TResult, THandlerName /* <: String */](
-    mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typingsJapgolly.lambdaWrapper.lambdaWrapperStrings.wrap with js.Any
-  ): Wrapped[TEvent, TResult] = js.native
-  def wrap[TEvent, TResult, THandlerName /* <: String */](
-    mod: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in THandlerName ]: aws-lambda.aws-lambda/handler.Handler<TEvent, TResult>}
-    */ typingsJapgolly.lambdaWrapper.lambdaWrapperStrings.wrap with js.Any,
-    options: AnonHandler[THandlerName]
-  ): Wrapped[TEvent, TResult] = js.native
 }
-

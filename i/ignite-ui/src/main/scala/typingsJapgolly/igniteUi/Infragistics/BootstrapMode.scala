@@ -1,14 +1,23 @@
 package typingsJapgolly.igniteUi.Infragistics
 
-import typingsJapgolly.igniteUi.BootstrapModeSettings
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Infragistics.BootstrapMode")
-@js.native
-class BootstrapMode protected () extends js.Object {
-  def this(settings: BootstrapModeSettings) = this()
-  def isActive(): Unit = js.native
+trait BootstrapMode extends StObject {
+  
+  def isActive(): Unit
 }
-
+object BootstrapMode {
+  
+  inline def apply(isActive: Callback): BootstrapMode = {
+    val __obj = js.Dynamic.literal(isActive = isActive.toJsFn)
+    __obj.asInstanceOf[BootstrapMode]
+  }
+  
+  extension [Self <: BootstrapMode](x: Self) {
+    
+    inline def setIsActive(value: Callback): Self = StObject.set(x, "isActive", value.toJsFn)
+  }
+}

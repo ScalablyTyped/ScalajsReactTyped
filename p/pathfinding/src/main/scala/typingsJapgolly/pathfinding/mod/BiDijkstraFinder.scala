@@ -1,14 +1,15 @@
 package typingsJapgolly.pathfinding.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.pathfinding.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BiDijkstraFinder extends BiAStarFinder
-
-@JSImport("pathfinding", "BiDijkstraFinder")
-@js.native
-object BiDijkstraFinder extends TopLevel[BiDijkstraFinder]
-
+trait BiDijkstraFinder
+  extends StObject
+     with BiAStarFinder
+object BiDijkstraFinder {
+  
+  inline def apply: BiDijkstraFinder = ^.asInstanceOf[js.Dynamic].selectDynamic("BiDijkstraFinder").asInstanceOf[BiDijkstraFinder]
+}

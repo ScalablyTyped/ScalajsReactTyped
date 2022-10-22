@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnChannelActivityEventType extends js.Object
-
+sealed trait VpnChannelActivityEventType extends StObject
 /** Specifies the type of activity events. */
 @JSGlobal("Windows.Networking.Vpn.VpnChannelActivityEventType")
 @js.native
-object VpnChannelActivityEventType extends js.Object {
+object VpnChannelActivityEventType extends StObject {
+  
   /** Mode in which traffic is currently being sent over the VPN channel. */
   @js.native
-  sealed trait active extends VpnChannelActivityEventType
+  sealed trait active
+    extends StObject
+       with VpnChannelActivityEventType
   
   /** Mode in which no traffic is being sent over the VPN channel. */
   @js.native
-  sealed trait idle extends VpnChannelActivityEventType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnChannelActivityEventType with Double] = js.native
-  /* 1 */ @js.native
-  object active extends TopLevel[active with Double]
-  
-  /* 0 */ @js.native
-  object idle extends TopLevel[idle with Double]
-  
+  sealed trait idle
+    extends StObject
+       with VpnChannelActivityEventType
 }
-

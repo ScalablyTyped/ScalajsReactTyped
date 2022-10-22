@@ -1,29 +1,52 @@
 package typingsJapgolly.materialSwitch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/switch/constants", JSImport.Namespace)
-@js.native
-object constantsMod extends js.Object {
-  /** CSS classes used by the switch. */
+object constantsMod {
+  
   @js.native
-  object cssClasses extends js.Object {
-    /** Class used for a switch that is in the "checked" (on) position. */
-    var CHECKED: String = js.native
-    /** Class used for a switch that is disabled. */
-    var DISABLED: String = js.native
+  sealed trait CssClasses extends StObject
+  @JSImport("@material/switch/constants", "CssClasses")
+  @js.native
+  object CssClasses extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[CssClasses & String] = js.native
+    
+    @js.native
+    sealed trait PROCESSING
+      extends StObject
+         with CssClasses
+    /* "mdc-switch--processing" */ val PROCESSING: typingsJapgolly.materialSwitch.constantsMod.CssClasses.PROCESSING & String = js.native
+    
+    @js.native
+    sealed trait SELECTED
+      extends StObject
+         with CssClasses
+    /* "mdc-switch--selected" */ val SELECTED: typingsJapgolly.materialSwitch.constantsMod.CssClasses.SELECTED & String = js.native
+    
+    @js.native
+    sealed trait UNSELECTED
+      extends StObject
+         with CssClasses
+    /* "mdc-switch--unselected" */ val UNSELECTED: typingsJapgolly.materialSwitch.constantsMod.CssClasses.UNSELECTED & String = js.native
   }
   
-  /** String constants used by the switch. */
   @js.native
-  object strings extends js.Object {
-    /** A CSS selector used to locate the native HTML control for the switch.  */
-    var NATIVE_CONTROL_SELECTOR: String = js.native
-    /** A CSS selector used to locate the ripple surface element for the switch. */
-    var RIPPLE_SURFACE_SELECTOR: String = js.native
+  sealed trait Selectors extends StObject
+  @JSImport("@material/switch/constants", "Selectors")
+  @js.native
+  object Selectors extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[Selectors & String] = js.native
+    
+    @js.native
+    sealed trait RIPPLE
+      extends StObject
+         with Selectors
+    /* ".mdc-switch__ripple" */ val RIPPLE: typingsJapgolly.materialSwitch.constantsMod.Selectors.RIPPLE & String = js.native
   }
-  
 }
-

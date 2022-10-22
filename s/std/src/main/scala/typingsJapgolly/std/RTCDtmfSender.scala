@@ -1,59 +1,65 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
 import typingsJapgolly.std.stdStrings.tonechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCDtmfSender extends EventTarget {
-  val canInsertDTMF: scala.Boolean = js.native
-  val duration: Double = js.native
-  val interToneGap: Double = js.native
-  var ontonechange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _]) | Null = js.native
-  val sender: RTCRtpSender = js.native
-  val toneBuffer: java.lang.String = js.native
+trait RTCDTMFSender
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_tonechange(
     `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tonechange(
     `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_tonechange(
     `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val canInsertDTMF: scala.Boolean = js.native
+  
+  /* standard dom */
   def insertDTMF(tones: java.lang.String): Unit = js.native
   def insertDTMF(tones: java.lang.String, duration: Double): Unit = js.native
   def insertDTMF(tones: java.lang.String, duration: Double, interToneGap: Double): Unit = js.native
+  def insertDTMF(tones: java.lang.String, duration: Unit, interToneGap: Double): Unit = js.native
+  
+  /* standard dom */
+  var ontonechange: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any]) | Null = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_tonechange(
     `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_tonechange(
     `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_tonechange(
+    `type`: tonechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_tonechange(
-    `type`: tonechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCDTMFToneChangeEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  val toneBuffer: java.lang.String = js.native
 }
-
-@JSGlobal("RTCDtmfSender")
-@js.native
-object RTCDtmfSender extends Instantiable1[/* sender */ RTCRtpSender, RTCDtmfSender]
-

@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UpgradeType extends js.Object
-
+sealed trait UpgradeType extends StObject
 @JSGlobal("SP.UpgradeType")
 @js.native
-object UpgradeType extends js.Object {
-  @js.native
-  sealed trait buildUpgrade extends UpgradeType
+object UpgradeType extends StObject {
   
   @js.native
-  sealed trait versionUpgrade extends UpgradeType
+  sealed trait buildUpgrade
+    extends StObject
+       with UpgradeType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpgradeType with Double] = js.native
-  /* 0 */ @js.native
-  object buildUpgrade extends TopLevel[buildUpgrade with Double]
-  
-  /* 1 */ @js.native
-  object versionUpgrade extends TopLevel[versionUpgrade with Double]
-  
+  @js.native
+  sealed trait versionUpgrade
+    extends StObject
+       with UpgradeType
 }
-

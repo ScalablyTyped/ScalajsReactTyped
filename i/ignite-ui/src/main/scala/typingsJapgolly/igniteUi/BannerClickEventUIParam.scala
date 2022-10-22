@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BannerClickEventUIParam extends js.Object {
+trait BannerClickEventUIParam extends StObject {
+  
   /**
-  	 * Get the banner html element in the DOM.
-  	 */
-  var bannerElement: js.UndefOr[js.Any] = js.undefined
+    * Get the banner html element in the DOM.
+    */
+  var bannerElement: js.UndefOr[Any] = js.undefined
 }
-
 object BannerClickEventUIParam {
-  @scala.inline
-  def apply(bannerElement: js.Any = null): BannerClickEventUIParam = {
+  
+  inline def apply(): BannerClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[BannerClickEventUIParam]
   }
+  
+  extension [Self <: BannerClickEventUIParam](x: Self) {
+    
+    inline def setBannerElement(value: Any): Self = StObject.set(x, "bannerElement", value.asInstanceOf[js.Any])
+    
+    inline def setBannerElementUndefined: Self = StObject.set(x, "bannerElement", js.undefined)
+  }
 }
-

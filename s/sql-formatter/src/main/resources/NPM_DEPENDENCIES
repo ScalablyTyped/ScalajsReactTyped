@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "sql-formatter" : "11.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "sql-formatter" : "11.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

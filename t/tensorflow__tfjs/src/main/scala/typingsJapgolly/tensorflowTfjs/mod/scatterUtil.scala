@@ -1,25 +1,29 @@
 package typingsJapgolly.tensorflowTfjs.mod
 
-import typingsJapgolly.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
-import typingsJapgolly.tensorflowTfjsCore.scatterNdUtilMod.ScatterShapeInfo
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor
+import typingsJapgolly.tensorflowTfjsCore.distKernelRegistryMod.TensorInfo
+import typingsJapgolly.tensorflowTfjsCore.distOpsScatterNdUtilMod.ScatterShapeInfo
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs", "scatter_util")
-@js.native
-object scatterUtil extends js.Object {
-  def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = js.native
-  def validateInput(
+object scatterUtil {
+  
+  @JSImport("@tensorflow/tfjs", "scatter_util")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def calculateShapes(updates: TensorInfo, indices: TensorInfo, shape: js.Array[Double]): ScatterShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateShapes")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[ScatterShapeInfo]
+  
+  inline def validateInput(
     updates: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
     indices: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
     shape: js.Array[Double]
-  ): Unit = js.native
-  def validateUpdateShape(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateInput")(updates.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def validateUpdateShape(
     shape: js.Array[Double],
     indices: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank],
     updates: Tensor[typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateUpdateShape")(shape.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

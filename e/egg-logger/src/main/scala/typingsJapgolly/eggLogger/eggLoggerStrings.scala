@@ -1,55 +1,57 @@
 package typingsJapgolly.eggLogger
 
 import typingsJapgolly.eggLogger.mod.LoggerLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eggLoggerStrings {
-  @js.native
-  sealed trait ALL extends LoggerLevel
   
   @js.native
-  sealed trait DEBUG extends LoggerLevel
+  sealed trait ALL
+    extends StObject
+       with LoggerLevel
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
-  sealed trait ERROR extends LoggerLevel
+  sealed trait DEBUG
+    extends StObject
+       with LoggerLevel
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait INFO extends LoggerLevel
+  sealed trait ERROR
+    extends StObject
+       with LoggerLevel
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait NONE extends LoggerLevel
+  sealed trait INFO
+    extends StObject
+       with LoggerLevel
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait WARN extends LoggerLevel
+  sealed trait NONE
+    extends StObject
+       with LoggerLevel
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait duplicate extends js.Object
+  sealed trait WARN
+    extends StObject
+       with LoggerLevel
+  inline def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait duplicate extends StObject
+  inline def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
   @js.native
-  sealed trait redirect extends js.Object
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def WARN: WARN = "WARN".asInstanceOf[WARN]
-  @scala.inline
-  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  @js.native
+  sealed trait redirect extends StObject
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
 }
-

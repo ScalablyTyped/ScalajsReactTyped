@@ -1,8 +1,8 @@
 package typingsJapgolly.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.axeCore.axeCoreStrings.rule
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.axeCore.axeCoreStrings.tag
   - typingsJapgolly.axeCore.axeCoreStrings.tags
 */
-trait RunOnlyType extends js.Object
-
+trait RunOnlyType extends StObject
 object RunOnlyType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def rule: typingsJapgolly.axeCore.axeCoreStrings.rule = this.cast("rule")
-  @scala.inline
-  def rules: typingsJapgolly.axeCore.axeCoreStrings.rules = this.cast("rules")
-  @scala.inline
-  def tag: typingsJapgolly.axeCore.axeCoreStrings.tag = this.cast("tag")
-  @scala.inline
-  def tags: typingsJapgolly.axeCore.axeCoreStrings.tags = this.cast("tags")
+  
+  inline def rule: typingsJapgolly.axeCore.axeCoreStrings.rule = "rule".asInstanceOf[typingsJapgolly.axeCore.axeCoreStrings.rule]
+  
+  inline def rules: typingsJapgolly.axeCore.axeCoreStrings.rules = "rules".asInstanceOf[typingsJapgolly.axeCore.axeCoreStrings.rules]
+  
+  inline def tag: typingsJapgolly.axeCore.axeCoreStrings.tag = "tag".asInstanceOf[typingsJapgolly.axeCore.axeCoreStrings.tag]
+  
+  inline def tags: typingsJapgolly.axeCore.axeCoreStrings.tags = "tags".asInstanceOf[typingsJapgolly.axeCore.axeCoreStrings.tags]
 }
-

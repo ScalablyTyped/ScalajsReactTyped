@@ -1,28 +1,23 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
-@js.native
-class Accelerometer () extends IAccelerometer {
-  /* CompleteClass */
-  override var minimumReportInterval: Double = js.native
-  /* CompleteClass */
-  override var onreadingchanged: js.Any = js.native
-  /* CompleteClass */
-  override var onshaken: js.Any = js.native
-  /* CompleteClass */
-  override var reportInterval: Double = js.native
-  /* CompleteClass */
-  override def getCurrentReading(): AccelerometerReading = js.native
+trait Accelerometer
+  extends StObject
+     with IAccelerometer
+object Accelerometer {
+  
+  inline def apply(
+    getCurrentReading: CallbackTo[AccelerometerReading],
+    minimumReportInterval: Double,
+    onreadingchanged: Any,
+    onshaken: Any,
+    reportInterval: Double
+  ): Accelerometer = {
+    val __obj = js.Dynamic.literal(getCurrentReading = getCurrentReading.toJsFn, minimumReportInterval = minimumReportInterval.asInstanceOf[js.Any], onreadingchanged = onreadingchanged.asInstanceOf[js.Any], onshaken = onshaken.asInstanceOf[js.Any], reportInterval = reportInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Accelerometer]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Sensors.Accelerometer")
-@js.native
-object Accelerometer extends js.Object {
-  def getDefault(): Accelerometer = js.native
-}
-

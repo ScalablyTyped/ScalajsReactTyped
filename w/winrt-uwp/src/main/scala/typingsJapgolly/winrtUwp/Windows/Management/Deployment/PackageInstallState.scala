@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Management.Deployment
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PackageInstallState extends js.Object
-
+sealed trait PackageInstallState extends StObject
 /** Represents the install state of the package. */
 @JSGlobal("Windows.Management.Deployment.PackageInstallState")
 @js.native
-object PackageInstallState extends js.Object {
+object PackageInstallState extends StObject {
+  
   /** The package is ready for use. */
   @js.native
-  sealed trait installed extends PackageInstallState
+  sealed trait installed
+    extends StObject
+       with PackageInstallState
   
   /** The package has not been installed. */
   @js.native
-  sealed trait notInstalled extends PackageInstallState
+  sealed trait notInstalled
+    extends StObject
+       with PackageInstallState
   
   /** The installation of the package has been paused. */
   @js.native
-  sealed trait paused extends PackageInstallState
+  sealed trait paused
+    extends StObject
+       with PackageInstallState
   
   /** The package has been downloaded. */
   @js.native
-  sealed trait staged extends PackageInstallState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PackageInstallState with Double] = js.native
-  /* 2 */ @js.native
-  object installed extends TopLevel[installed with Double]
-  
-  /* 0 */ @js.native
-  object notInstalled extends TopLevel[notInstalled with Double]
-  
-  /* 3 */ @js.native
-  object paused extends TopLevel[paused with Double]
-  
-  /* 1 */ @js.native
-  object staged extends TopLevel[staged with Double]
-  
+  sealed trait staged
+    extends StObject
+       with PackageInstallState
 }
-

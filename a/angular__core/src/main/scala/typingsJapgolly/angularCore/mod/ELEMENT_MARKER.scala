@@ -1,20 +1,23 @@
 package typingsJapgolly.angularCore.mod
 
 import typingsJapgolly.angularCore.angularCoreStrings.element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ELEMENT_MARKER extends js.Object {
+trait ELEMENT_MARKER extends StObject {
+  
   var marker: element
 }
-
 object ELEMENT_MARKER {
-  @scala.inline
-  def apply(marker: element): ELEMENT_MARKER = {
-    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
   
+  inline def apply(): ELEMENT_MARKER = {
+    val __obj = js.Dynamic.literal(marker = "element")
     __obj.asInstanceOf[ELEMENT_MARKER]
   }
+  
+  extension [Self <: ELEMENT_MARKER](x: Self) {
+    
+    inline def setMarker(value: element): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+  }
 }
-

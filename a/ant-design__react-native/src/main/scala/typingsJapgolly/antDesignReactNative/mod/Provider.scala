@@ -1,11 +1,10 @@
 package typingsJapgolly.antDesignReactNative.mod
 
+import typingsJapgolly.antDesignReactNative.libProviderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Provider")
 @js.native
-class Provider ()
-  extends typingsJapgolly.antDesignReactNative.providerMod.Provider
-
+open class Provider () extends default

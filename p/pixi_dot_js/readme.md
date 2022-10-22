@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixi_dot_js
 
-Typings are for version 5.2.1
+Typings are for version 6.5.6
 
 ## Library description:
 PixiJS without the CanvasRenderer fallback, modern browsers only
@@ -10,10 +10,10 @@ PixiJS without the CanvasRenderer fallback, modern browsers only
 | ------------------ | :-------------: |
 | Full name          | pixi.js |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 285 |
-| # downloads        | 1177130 |
-| # stars            | 30 |
+| # releases         | 53 |
+| # dependents       | 0.0 |
+| # downloads        | 412082.3333333333 |
+| # stars            | 37518.0 |
 
 ## Links
 - [Homepage](http://www.pixijs.com/)

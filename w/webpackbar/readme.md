@@ -1,7 +1,7 @@
 
 # Scala.js typings for webpackbar
 
-Typings are for version 2.6
+Typings are for version 4.0
 
 ## Library description:
 Elegant ProgressBar and Profiler for Webpack
@@ -10,15 +10,15 @@ Elegant ProgressBar and Profiler for Webpack
 | ------------------ | :-------------: |
 | Full name          | webpackbar |
 | Keywords           | - |
-| # releases         | 50 |
-| # dependents       | 305 |
-| # downloads        | 14778323 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 5521566.333333333 |
+| # stars            | 1962.0 |
 
 ## Links
-- [Homepage](https://github.com/nuxt/webpackbar#readme)
-- [Bugs](https://github.com/nuxt/webpackbar/issues)
-- [Repository](https://github.com/nuxt/webpackbar)
+- [Homepage](https://github.com/unjs/webpackbar#readme)
+- [Bugs](https://github.com/unjs/webpackbar/issues)
+- [Repository](https://github.com/unjs/webpackbar)
 - [Npm](https://www.npmjs.com/package/webpackbar)
     
 

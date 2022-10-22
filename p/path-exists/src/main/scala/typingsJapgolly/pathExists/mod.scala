@@ -1,30 +1,16 @@
 package typingsJapgolly.pathExists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("path-exists", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-  	Check if a path exists.
-  	@returns Whether the path exists.
-  	@example
-  	```
-  	// foo.ts
-  	import pathExists = require('path-exists');
-  	(async () => {
-  		console.log(await pathExists('foo.ts'));
-  		//=> true
-  	})();
-  	```
-  	*/
-  def apply(path: String): js.Promise[Boolean] = js.native
-  /**
-  	Synchronously check if a path exists.
-  	@returns Whether the path exists.
-  	*/
-  def sync(path: String): Boolean = js.native
+object mod {
+  
+  @JSImport("path-exists", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def pathExists(path: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExists")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  
+  inline def pathExistsSync(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExistsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalOrigin extends js.Object
-
+sealed trait HorizontalOrigin extends StObject
 @JSImport("cesium", "HorizontalOrigin")
 @js.native
-object HorizontalOrigin extends js.Object {
-  @js.native
-  sealed trait CENTER extends HorizontalOrigin
-  
-  @js.native
-  sealed trait LEFT extends HorizontalOrigin
-  
-  @js.native
-  sealed trait RIGHT extends HorizontalOrigin
+object HorizontalOrigin extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HorizontalOrigin with Double] = js.native
-  /* 0 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
+  def apply(value: Double): js.UndefOr[HorizontalOrigin & Double] = js.native
   
-  /* 1 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
+  /**
+    * The origin is at the horizontal center of the object.
+    */
+  @js.native
+  sealed trait CENTER
+    extends StObject
+       with HorizontalOrigin
+  /* 0 */ val CENTER: typingsJapgolly.cesium.mod.HorizontalOrigin.CENTER & Double = js.native
   
-  /* 2 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
+  /**
+    * The origin is on the left side of the object.
+    */
+  @js.native
+  sealed trait LEFT
+    extends StObject
+       with HorizontalOrigin
+  /* 1 */ val LEFT: typingsJapgolly.cesium.mod.HorizontalOrigin.LEFT & Double = js.native
   
+  /**
+    * The origin is on the right side of the object.
+    */
+  @js.native
+  sealed trait RIGHT
+    extends StObject
+       with HorizontalOrigin
+  /* -1 */ val RIGHT: typingsJapgolly.cesium.mod.HorizontalOrigin.RIGHT & Double = js.native
 }
-

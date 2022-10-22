@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactSelectionMode extends js.Object
-
+sealed trait ContactSelectionMode extends StObject
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactSelectionMode")
 @js.native
-object ContactSelectionMode extends js.Object {
-  @js.native
-  sealed trait contacts extends ContactSelectionMode
+object ContactSelectionMode extends StObject {
   
   @js.native
-  sealed trait fields extends ContactSelectionMode
+  sealed trait contacts
+    extends StObject
+       with ContactSelectionMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactSelectionMode with Double] = js.native
-  /* 0 */ @js.native
-  object contacts extends TopLevel[contacts with Double]
-  
-  /* 1 */ @js.native
-  object fields extends TopLevel[fields with Double]
-  
+  @js.native
+  sealed trait fields
+    extends StObject
+       with ContactSelectionMode
 }
-

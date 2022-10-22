@@ -1,25 +1,26 @@
 package typingsJapgolly.reactBigCalendar.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewStatic extends js.Object {
-  def navigate(date: js.Date, action: NavigateAction, props: js.Any): js.Date
+trait ViewStatic extends StObject {
+  
+  def navigate(date: js.Date, action: NavigateAction, props: Any): js.Date
+  
   def title(date: js.Date, options: TitleOptions): String
 }
-
 object ViewStatic {
-  @scala.inline
-  def apply(
-    navigate: (js.Date, NavigateAction, js.Any) => CallbackTo[js.Date],
-    title: (js.Date, TitleOptions) => CallbackTo[String]
-  ): ViewStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("navigate")(js.Any.fromFunction3((t0: js.Date, t1: typingsJapgolly.reactBigCalendar.mod.NavigateAction, t2: js.Any) => navigate(t0, t1, t2).runNow()))
-    __obj.updateDynamic("title")(js.Any.fromFunction2((t0: js.Date, t1: typingsJapgolly.reactBigCalendar.mod.TitleOptions) => title(t0, t1).runNow()))
+  
+  inline def apply(navigate: (js.Date, NavigateAction, Any) => js.Date, title: (js.Date, TitleOptions) => String): ViewStatic = {
+    val __obj = js.Dynamic.literal(navigate = js.Any.fromFunction3(navigate), title = js.Any.fromFunction2(title))
     __obj.asInstanceOf[ViewStatic]
   }
+  
+  extension [Self <: ViewStatic](x: Self) {
+    
+    inline def setNavigate(value: (js.Date, NavigateAction, Any) => js.Date): Self = StObject.set(x, "navigate", js.Any.fromFunction3(value))
+    
+    inline def setTitle(value: (js.Date, TitleOptions) => String): Self = StObject.set(x, "title", js.Any.fromFunction2(value))
+  }
 }
-

@@ -1,26 +1,34 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommentAuthorInformation extends js.Object {
+trait CommentAuthorInformation extends StObject {
+  
   /**
-  		 * The optional icon path for the author
-  		 */
+    * The optional icon path for the author
+    */
   var iconPath: js.UndefOr[Uri] = js.undefined
+  
   /**
-  		 * The display name of the author of the comment
-  		 */
+    * The display name of the author of the comment
+    */
   var name: String
 }
-
 object CommentAuthorInformation {
-  @scala.inline
-  def apply(name: String, iconPath: Uri = null): CommentAuthorInformation = {
+  
+  inline def apply(name: String): CommentAuthorInformation = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentAuthorInformation]
   }
+  
+  extension [Self <: CommentAuthorInformation](x: Self) {
+    
+    inline def setIconPath(value: Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

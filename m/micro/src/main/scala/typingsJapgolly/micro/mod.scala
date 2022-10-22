@@ -1,29 +1,57 @@
 package typingsJapgolly.micro
 
-import typingsJapgolly.node.Buffer
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.micro.anon.Encoding
+import typingsJapgolly.micro.anon.ErrorstatusCodenumberorig
+import typingsJapgolly.micro.anon.Message
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.Server
 import typingsJapgolly.node.httpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("micro", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def buffer(req: IncomingMessage): js.Promise[Buffer | String] = js.native
-  def buffer(req: IncomingMessage, info: AnonEncoding): js.Promise[Buffer | String] = js.native
-  def createError(code: Double, msg: String): ErrorstatusCodenumberorig = js.native
-  def createError(code: Double, msg: String, orig: js.Error): ErrorstatusCodenumberorig = js.native
-  def default(fn: RequestHandler): Server = js.native
-  def json(req: IncomingMessage): js.Promise[js.Object] = js.native
-  def json(req: IncomingMessage, info: AnonEncoding): js.Promise[js.Object] = js.native
-  def run(req: IncomingMessage, res: ServerResponse, fn: RequestHandler): js.Promise[Unit] = js.native
-  def send(res: ServerResponse, code: Double): js.Promise[Unit] = js.native
-  def send(res: ServerResponse, code: Double, data: js.Any): js.Promise[Unit] = js.native
-  def sendError(req: IncomingMessage, res: ServerResponse, info: AnonMessage): js.Promise[Unit] = js.native
-  def text(req: IncomingMessage): js.Promise[String] = js.native
-  def text(req: IncomingMessage, info: AnonEncoding): js.Promise[String] = js.native
-  type RequestHandler = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, js.Any]
+object mod {
+  
+  @JSImport("micro", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(fn: RequestHandler): Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any]).asInstanceOf[Server[
+    Instantiable1[/* socket */ Socket, IncomingMessage], 
+    Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      ServerResponse[IncomingMessage]
+    ]
+  ]]
+  
+  inline def buffer(req: IncomingMessage): js.Promise[Buffer | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(req.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer | String]]
+  inline def buffer(req: IncomingMessage, info: Encoding): js.Promise[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(req.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer | String]]
+  
+  inline def createError(code: Double, msg: String): ErrorstatusCodenumberorig = (^.asInstanceOf[js.Dynamic].applyDynamic("createError")(code.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[ErrorstatusCodenumberorig]
+  inline def createError(code: Double, msg: String, orig: js.Error): ErrorstatusCodenumberorig = (^.asInstanceOf[js.Dynamic].applyDynamic("createError")(code.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], orig.asInstanceOf[js.Any])).asInstanceOf[ErrorstatusCodenumberorig]
+  
+  inline def json(req: IncomingMessage): js.Promise[StringDictionary[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(req.asInstanceOf[js.Any]).asInstanceOf[js.Promise[StringDictionary[Any]]]
+  inline def json(req: IncomingMessage, info: Encoding): js.Promise[StringDictionary[Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(req.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StringDictionary[Any]]]
+  
+  inline def run(req: IncomingMessage, res: ServerResponse[IncomingMessage], fn: RequestHandler): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def send(res: ServerResponse[IncomingMessage], code: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(res.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def send(res: ServerResponse[IncomingMessage], code: Double, data: Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(res.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def sendError(req: IncomingMessage, res: ServerResponse[IncomingMessage], info: Message): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendError")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  inline def text(req: IncomingMessage): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(req.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def text(req: IncomingMessage, info: Encoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(req.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  type RequestHandler = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse[IncomingMessage], Any]
 }
-

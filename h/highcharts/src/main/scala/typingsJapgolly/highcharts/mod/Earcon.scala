@@ -1,15 +1,16 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Earcon class. Earcon objects represent a certain sound consisting of
   * one or more instruments playing a predefined sound.
   */
 @js.native
-trait Earcon extends js.Object {
+trait Earcon extends StObject {
+  
   /**
     * Cancel any current sonification of the Earcon. Calls onEnd functions.
     *
@@ -19,12 +20,14 @@ trait Earcon extends js.Object {
     */
   def cancelSonify(): Unit = js.native
   def cancelSonify(fadeOut: Boolean): Unit = js.native
+  
   /**
     * Play the earcon, optionally overriding init options.
     *
     * @param options
     *        Override existing options.
     */
-  def sonify(options: typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.EarconOptionsObject): Unit = js.native
+  def sonify(
+    options: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.EarconOptionsObject
+  ): Unit = js.native
 }
-

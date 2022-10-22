@@ -1,10 +1,8 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
-import typingsJapgolly.phaser.Phaser.Scene
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Arc Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -23,60 +21,40 @@ import scala.scalajs.js.annotation._
   * you to control how smooth the shape renders in WebGL, by controlling the number of iterations
   * that take place during construction.
   */
-@JSGlobal("Phaser.GameObjects.Arc")
 @js.native
-class Arc protected () extends Shape {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param radius The radius of the arc. Default 128.
-    * @param startAngle The start angle of the arc, in degrees. Default 0.
-    * @param endAngle The end angle of the arc, in degrees. Default 360.
-    * @param anticlockwise The winding order of the start and end angles. Default false.
-    * @param fillColor The color the arc will be filled with, i.e. 0xff0000 for red.
-    * @param fillAlpha The alpha the arc will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
-    */
-  def this(
-    scene: Scene,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    radius: js.UndefOr[Double],
-    startAngle: js.UndefOr[integer],
-    endAngle: js.UndefOr[integer],
-    anticlockwise: js.UndefOr[Boolean],
-    fillColor: js.UndefOr[Double],
-    fillAlpha: js.UndefOr[Double]
-  ) = this()
+trait Arc
+  extends StObject
+     with Shape {
+  
   /**
     * The winding order of the start and end angles.
     */
   var anticlockwise: Boolean = js.native
+  
   /**
     * The end angle of the arc, in degrees.
     */
-  var endAngle: integer = js.native
+  var endAngle: Double = js.native
+  
   /**
     * The number of iterations used when drawing the arc.
     * Increase this value for smoother arcs, at the cost of more polygons being rendered.
     * Modify this value by small amounts, such as 0.01.
     */
   var iterations: Double = js.native
+  
   /**
     * The radius of the arc.
     */
   var radius: Double = js.native
-  /**
-    * The start angle of the arc, in degrees.
-    */
-  var startAngle: integer = js.native
+  
   /**
     * Sets the ending angle of the arc, in degrees.
     * This call can be chained.
     * @param value The value to set the ending angle to.
     */
-  def setEndAngle(value: integer): this.type = js.native
+  def setEndAngle(value: Double): this.type = js.native
+  
   /**
     * Sets the number of iterations used when drawing the arc.
     * Increase this value for smoother arcs, at the cost of more polygons being rendered.
@@ -85,17 +63,23 @@ class Arc protected () extends Shape {
     * @param value The value to set the iterations to.
     */
   def setIterations(value: Double): this.type = js.native
+  
   /**
     * Sets the radius of the arc.
     * This call can be chained.
     * @param value The value to set the radius to.
     */
   def setRadius(value: Double): this.type = js.native
+  
   /**
     * Sets the starting angle of the arc, in degrees.
     * This call can be chained.
     * @param value The value to set the starting angle to.
     */
-  def setStartAngle(value: integer): this.type = js.native
+  def setStartAngle(value: Double): this.type = js.native
+  
+  /**
+    * The start angle of the arc, in degrees.
+    */
+  var startAngle: Double = js.native
 }
-

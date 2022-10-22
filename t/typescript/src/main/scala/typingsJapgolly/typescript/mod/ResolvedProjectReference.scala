@@ -1,25 +1,34 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResolvedProjectReference extends js.Object {
+trait ResolvedProjectReference extends StObject {
+  
   var commandLine: ParsedCommandLine
+  
   var references: js.UndefOr[js.Array[js.UndefOr[ResolvedProjectReference]]] = js.undefined
+  
   var sourceFile: SourceFile
 }
-
 object ResolvedProjectReference {
-  @scala.inline
-  def apply(
-    commandLine: ParsedCommandLine,
-    sourceFile: SourceFile,
-    references: js.Array[js.UndefOr[ResolvedProjectReference]] = null
-  ): ResolvedProjectReference = {
+  
+  inline def apply(commandLine: ParsedCommandLine, sourceFile: SourceFile): ResolvedProjectReference = {
     val __obj = js.Dynamic.literal(commandLine = commandLine.asInstanceOf[js.Any], sourceFile = sourceFile.asInstanceOf[js.Any])
-    if (references != null) __obj.updateDynamic("references")(references.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedProjectReference]
   }
+  
+  extension [Self <: ResolvedProjectReference](x: Self) {
+    
+    inline def setCommandLine(value: ParsedCommandLine): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+    
+    inline def setReferences(value: js.Array[js.UndefOr[ResolvedProjectReference]]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
+    
+    inline def setReferencesUndefined: Self = StObject.set(x, "references", js.undefined)
+    
+    inline def setReferencesVarargs(value: js.UndefOr[ResolvedProjectReference]*): Self = StObject.set(x, "references", js.Array(value*))
+    
+    inline def setSourceFile(value: SourceFile): Self = StObject.set(x, "sourceFile", value.asInstanceOf[js.Any])
+  }
 }
-

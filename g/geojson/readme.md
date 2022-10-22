@@ -11,9 +11,9 @@ Turn your geo data into GeoJSON
 | Full name          | geojson |
 | Keywords           | geojson |
 | # releases         | 1 |
-| # dependents       | 50 |
-| # downloads        | 513484 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 462800.6666666667 |
+| # stars            | 247.0 |
 
 ## Links
 - [Homepage](https://github.com/caseycesari/geojson.js)

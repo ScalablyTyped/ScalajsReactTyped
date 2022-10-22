@@ -1,20 +1,21 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.FractionDigits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/formatRFC3339", JSImport.Namespace)
-@js.native
-object formatRFC3339Mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): String = js.native
-    def apply(date: Double, options: AnonFractionDigits): String = js.native
-    def apply(date: Date): String = js.native
-    def apply(date: Date, options: AnonFractionDigits): String = js.native
-  }
+object formatRFC3339Mod {
   
+  object default {
+    
+    inline def apply(date: js.Date): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(date: js.Date, options: FractionDigits): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(date: Double, options: FractionDigits): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/formatRFC3339", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

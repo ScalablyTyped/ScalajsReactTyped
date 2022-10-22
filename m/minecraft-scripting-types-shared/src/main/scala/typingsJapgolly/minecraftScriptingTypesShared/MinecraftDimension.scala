@@ -3,9 +3,9 @@ package typingsJapgolly.minecraftScriptingTypesShared
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.`the end`
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.nether
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.overworld
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: move this stuff somewhere else
 /* Rewritten from type alias, can be one of: 
@@ -13,16 +13,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.nether
   - typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.`the end`
 */
-trait MinecraftDimension extends js.Object
-
+trait MinecraftDimension extends StObject
 object MinecraftDimension {
-  @scala.inline
-  def End: `the end` = this.cast("the end")
-  @scala.inline
-  def Nether: nether = this.cast("nether")
-  @scala.inline
-  def Overworld: overworld = this.cast("overworld")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def End: `the end` = ("the end").asInstanceOf[`the end`]
+  
+  inline def Nether: nether = "nether".asInstanceOf[nether]
+  
+  inline def Overworld: overworld = "overworld".asInstanceOf[overworld]
 }
-

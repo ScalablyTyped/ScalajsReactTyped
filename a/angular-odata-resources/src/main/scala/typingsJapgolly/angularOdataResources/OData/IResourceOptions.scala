@@ -1,34 +1,43 @@
 package typingsJapgolly.angularOdataResources.OData
 
-import typingsJapgolly.angularOdataResources.AnonMethod
+import typingsJapgolly.angularOdataResources.anon.Method
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Currently supported options for the $resource factory options argument.
   */
-trait IResourceOptions extends js.Object {
+trait IResourceOptions extends StObject {
+  
   var isodatav4: js.UndefOr[Boolean] = js.undefined
-  var odata: js.UndefOr[AnonMethod] = js.undefined
+  
+  var odata: js.UndefOr[Method] = js.undefined
+  
   /**
     * If true then the trailing slashes from any calculated URL will be stripped (defaults to true)
     */
   var stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
 }
-
 object IResourceOptions {
-  @scala.inline
-  def apply(
-    isodatav4: js.UndefOr[Boolean] = js.undefined,
-    odata: AnonMethod = null,
-    stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
-  ): IResourceOptions = {
+  
+  inline def apply(): IResourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isodatav4)) __obj.updateDynamic("isodatav4")(isodatav4.asInstanceOf[js.Any])
-    if (odata != null) __obj.updateDynamic("odata")(odata.asInstanceOf[js.Any])
-    if (!js.isUndefined(stripTrailingSlashes)) __obj.updateDynamic("stripTrailingSlashes")(stripTrailingSlashes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IResourceOptions]
   }
+  
+  extension [Self <: IResourceOptions](x: Self) {
+    
+    inline def setIsodatav4(value: Boolean): Self = StObject.set(x, "isodatav4", value.asInstanceOf[js.Any])
+    
+    inline def setIsodatav4Undefined: Self = StObject.set(x, "isodatav4", js.undefined)
+    
+    inline def setOdata(value: Method): Self = StObject.set(x, "odata", value.asInstanceOf[js.Any])
+    
+    inline def setOdataUndefined: Self = StObject.set(x, "odata", js.undefined)
+    
+    inline def setStripTrailingSlashes(value: Boolean): Self = StObject.set(x, "stripTrailingSlashes", value.asInstanceOf[js.Any])
+    
+    inline def setStripTrailingSlashesUndefined: Self = StObject.set(x, "stripTrailingSlashes", js.undefined)
+  }
 }
-

@@ -1,47 +1,39 @@
 package typingsJapgolly.reactLazylog.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLAnchorElement
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLAnchorElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactLazylog.lineNumberMod.LineNumberProps
-import typingsJapgolly.reactLazylog.lineNumberMod.default
+import typingsJapgolly.reactLazylog.buildLineNumberMod.LineNumberProps
+import typingsJapgolly.reactLazylog.buildLineNumberMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LineNumber {
-  def apply(
-    number: Double,
-    highlight: js.UndefOr[Boolean] = js.undefined,
-    onClick: ReactMouseEventFrom[HTMLAnchorElement] => Callback = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LineNumberProps, default, Unit, LineNumberProps] = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLAnchorElement]) => onClick(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLazylog.lineNumberMod.LineNumberProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactLazylog.lineNumberMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLazylog.lineNumberMod.LineNumberProps])(children: _*)
+  inline def apply(number: Double): Builder = {
+    val __props = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LineNumberProps]))
   }
+  
   @JSImport("react-lazylog/build/LineNumber", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def highlight(value: Boolean): this.type = set("highlight", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: ReactMouseEventFrom[HTMLAnchorElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLAnchorElement & Element]) => value(t0).runNow()))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LineNumberProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

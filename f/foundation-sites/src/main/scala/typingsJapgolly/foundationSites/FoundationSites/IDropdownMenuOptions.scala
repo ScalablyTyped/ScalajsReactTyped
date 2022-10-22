@@ -1,48 +1,90 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDropdownMenuOptions extends js.Object {
+trait IDropdownMenuOptions extends StObject {
+  
   var alignment: js.UndefOr[String] = js.undefined
+  
   var autoclose: js.UndefOr[Boolean] = js.undefined
+  
   var clickOpen: js.UndefOr[Boolean] = js.undefined
+  
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  
+  var closeOnClickInside: js.UndefOr[Boolean] = js.undefined
+  
   var closingTime: js.UndefOr[Double] = js.undefined
+  
   var disableHover: js.UndefOr[Boolean] = js.undefined
+  
+  var disableHoverOnTouch: js.UndefOr[Boolean] = js.undefined
+  
   var forceFollow: js.UndefOr[Boolean] = js.undefined
+  
   var hoverDelay: js.UndefOr[Double] = js.undefined
+  
   var rightClass: js.UndefOr[String] = js.undefined
+  
   var verticalClass: js.UndefOr[String] = js.undefined
 }
-
 object IDropdownMenuOptions {
-  @scala.inline
-  def apply(
-    alignment: String = null,
-    autoclose: js.UndefOr[Boolean] = js.undefined,
-    clickOpen: js.UndefOr[Boolean] = js.undefined,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    closingTime: Int | Double = null,
-    disableHover: js.UndefOr[Boolean] = js.undefined,
-    forceFollow: js.UndefOr[Boolean] = js.undefined,
-    hoverDelay: Int | Double = null,
-    rightClass: String = null,
-    verticalClass: String = null
-  ): IDropdownMenuOptions = {
+  
+  inline def apply(): IDropdownMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoclose)) __obj.updateDynamic("autoclose")(autoclose.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickOpen)) __obj.updateDynamic("clickOpen")(clickOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (closingTime != null) __obj.updateDynamic("closingTime")(closingTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableHover)) __obj.updateDynamic("disableHover")(disableHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFollow)) __obj.updateDynamic("forceFollow")(forceFollow.asInstanceOf[js.Any])
-    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
-    if (rightClass != null) __obj.updateDynamic("rightClass")(rightClass.asInstanceOf[js.Any])
-    if (verticalClass != null) __obj.updateDynamic("verticalClass")(verticalClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDropdownMenuOptions]
   }
+  
+  extension [Self <: IDropdownMenuOptions](x: Self) {
+    
+    inline def setAlignment(value: String): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setAutoclose(value: Boolean): Self = StObject.set(x, "autoclose", value.asInstanceOf[js.Any])
+    
+    inline def setAutocloseUndefined: Self = StObject.set(x, "autoclose", js.undefined)
+    
+    inline def setClickOpen(value: Boolean): Self = StObject.set(x, "clickOpen", value.asInstanceOf[js.Any])
+    
+    inline def setClickOpenUndefined: Self = StObject.set(x, "clickOpen", js.undefined)
+    
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClickInside(value: Boolean): Self = StObject.set(x, "closeOnClickInside", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClickInsideUndefined: Self = StObject.set(x, "closeOnClickInside", js.undefined)
+    
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    
+    inline def setClosingTime(value: Double): Self = StObject.set(x, "closingTime", value.asInstanceOf[js.Any])
+    
+    inline def setClosingTimeUndefined: Self = StObject.set(x, "closingTime", js.undefined)
+    
+    inline def setDisableHover(value: Boolean): Self = StObject.set(x, "disableHover", value.asInstanceOf[js.Any])
+    
+    inline def setDisableHoverOnTouch(value: Boolean): Self = StObject.set(x, "disableHoverOnTouch", value.asInstanceOf[js.Any])
+    
+    inline def setDisableHoverOnTouchUndefined: Self = StObject.set(x, "disableHoverOnTouch", js.undefined)
+    
+    inline def setDisableHoverUndefined: Self = StObject.set(x, "disableHover", js.undefined)
+    
+    inline def setForceFollow(value: Boolean): Self = StObject.set(x, "forceFollow", value.asInstanceOf[js.Any])
+    
+    inline def setForceFollowUndefined: Self = StObject.set(x, "forceFollow", js.undefined)
+    
+    inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+    
+    inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+    
+    inline def setRightClass(value: String): Self = StObject.set(x, "rightClass", value.asInstanceOf[js.Any])
+    
+    inline def setRightClassUndefined: Self = StObject.set(x, "rightClass", js.undefined)
+    
+    inline def setVerticalClass(value: String): Self = StObject.set(x, "verticalClass", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalClassUndefined: Self = StObject.set(x, "verticalClass", js.undefined)
+  }
 }
-

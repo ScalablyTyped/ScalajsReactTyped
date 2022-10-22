@@ -1,32 +1,25 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiUtils.mod.Dict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The base class for all objects that are rendered on the screen.
-  *
-  * This is an abstract class and should not be used on its own; rather it should be extended.
-  *
-  * @class
-  * @extends PIXI.utils.EventEmitter
-  * @memberof PIXI
-  */
-@JSImport("pixi.js", "DisplayObject")
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof @pixi/display.GlobalMixins.DisplayObject, keyof @pixi/utils.@pixi/utils.EventEmitter<string | symbol, any>> ]: @pixi/display.GlobalMixins.DisplayObject[P]} */ /* note: abstract class */ @JSImport("pixi.js", "DisplayObject")
 @js.native
-class DisplayObject ()
-  extends typingsJapgolly.pixiJs.PIXI.DisplayObject
-
+open class DisplayObject ()
+  extends typingsJapgolly.pixiDisplay.mod.DisplayObject
 /* static members */
-@JSImport("pixi.js", "DisplayObject")
-@js.native
-object DisplayObject extends js.Object {
+object DisplayObject {
+  
+  @JSImport("pixi.js", "DisplayObject")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Mixes all enumerable properties and methods from a source object to DisplayObject.
-    *
-    * @param {object} source The source of properties and methods to mix in.
+    * @param source - The source of properties and methods to mix in.
     */
-  def mixin(source: js.Any): Unit = js.native
+  inline def mixin(source: Dict[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

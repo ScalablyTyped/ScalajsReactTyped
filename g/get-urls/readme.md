@@ -1,7 +1,7 @@
 
 # Scala.js typings for get-urls
 
-Typings are for version 9.2.0
+Typings are for version 11.0.0
 
 ## Library description:
 Get all URLs in a string
@@ -10,10 +10,10 @@ Get all URLs in a string
 | ------------------ | :-------------: |
 | Full name          | get-urls |
 | Keywords           | get, urls, url, extract, find, scrape, text, string |
-| # releases         | 5 |
-| # dependents       | 37 |
-| # downloads        | 1162089 |
-| # stars            | 8 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 175017.33333333334 |
+| # stars            | 319.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/get-urls#readme)

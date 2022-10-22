@@ -1,8 +1,8 @@
 package typingsJapgolly.hapiHapi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiHapi.hapiHapiBooleans.`false`
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hapiHapi.hapiHapiStrings.Lax
   - typingsJapgolly.hapiHapi.hapiHapiStrings.Strict
 */
-trait SameSitePolicy extends js.Object
-
+trait SameSitePolicy extends StObject
 object SameSitePolicy {
-  @scala.inline
-  def Lax: typingsJapgolly.hapiHapi.hapiHapiStrings.Lax = this.cast("Lax")
-  @scala.inline
-  def None: typingsJapgolly.hapiHapi.hapiHapiStrings.None = this.cast("None")
-  @scala.inline
-  def Strict: typingsJapgolly.hapiHapi.hapiHapiStrings.Strict = this.cast("Strict")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `false`: typingsJapgolly.hapiHapi.hapiHapiBooleans.`false` = this.cast(false)
+  
+  inline def Lax: typingsJapgolly.hapiHapi.hapiHapiStrings.Lax = "Lax".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.Lax]
+  
+  inline def None: typingsJapgolly.hapiHapi.hapiHapiStrings.None = "None".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.None]
+  
+  inline def Strict: typingsJapgolly.hapiHapi.hapiHapiStrings.Strict = "Strict".asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiStrings.Strict]
+  
+  inline def `false`: typingsJapgolly.hapiHapi.hapiHapiBooleans.`false` = false.asInstanceOf[typingsJapgolly.hapiHapi.hapiHapiBooleans.`false`]
 }
-

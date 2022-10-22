@@ -1,31 +1,45 @@
 package typingsJapgolly.std
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Keyframe
-  extends /* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
+  extends StObject
+     with /* standard dom */
+/* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] {
+  
+  /* standard dom */
   var composite: js.UndefOr[CompositeOperationOrAuto] = js.undefined
+  
+  /* standard dom */
   var easing: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var offset: js.UndefOr[Double | Null] = js.undefined
 }
-
 object Keyframe {
-  @scala.inline
-  def apply(
-    StringDictionary: /* property */ StringDictionary[js.UndefOr[java.lang.String | Double | Null]] = null,
-    composite: CompositeOperationOrAuto = null,
-    easing: java.lang.String = null,
-    offset: Int | Double = null
-  ): Keyframe = {
+  
+  inline def apply(): Keyframe = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (composite != null) __obj.updateDynamic("composite")(composite.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Keyframe]
   }
+  
+  extension [Self <: Keyframe](x: Self) {
+    
+    inline def setComposite(value: CompositeOperationOrAuto): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    
+    inline def setEasing(value: java.lang.String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetNull: Self = StObject.set(x, "offset", null)
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

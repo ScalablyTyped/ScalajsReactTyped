@@ -1,34 +1,61 @@
 package typingsJapgolly.nivoCore.mod
 
-import typingsJapgolly.nivoCore.PartialCSSProperties
+import typingsJapgolly.nivoCore.anon.PartialCSSProperties
+import typingsJapgolly.nivoCore.nivoCoreStrings.horizontal
+import typingsJapgolly.nivoCore.nivoCoreStrings.vertical
 import typingsJapgolly.nivoCore.nivoCoreStrings.x
 import typingsJapgolly.nivoCore.nivoCoreStrings.y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CartesianMarkerProps extends js.Object {
+trait CartesianMarkerProps[V /* <: DatumValue */] extends StObject {
+  
   var axis: x | y
+  
   var legend: js.UndefOr[String] = js.undefined
+  
+  var legendOrientation: js.UndefOr[horizontal | vertical] = js.undefined
+  
+  var legendPosition: js.UndefOr[BoxAlign] = js.undefined
+  
   var lineStyle: js.UndefOr[PartialCSSProperties] = js.undefined
+  
   var textStyle: js.UndefOr[PartialCSSProperties] = js.undefined
-  var value: String | Double | js.Date
+  
+  var value: V
 }
-
 object CartesianMarkerProps {
-  @scala.inline
-  def apply(
-    axis: x | y,
-    value: String | Double | js.Date,
-    legend: String = null,
-    lineStyle: PartialCSSProperties = null,
-    textStyle: PartialCSSProperties = null
-  ): CartesianMarkerProps = {
+  
+  inline def apply[V /* <: DatumValue */](axis: x | y, value: V): CartesianMarkerProps[V] = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    __obj.asInstanceOf[CartesianMarkerProps]
+    __obj.asInstanceOf[CartesianMarkerProps[V]]
+  }
+  
+  extension [Self <: CartesianMarkerProps[?], V /* <: DatumValue */](x: Self & CartesianMarkerProps[V]) {
+    
+    inline def setAxis(value: typingsJapgolly.nivoCore.nivoCoreStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setLegend(value: String): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOrientation(value: horizontal | vertical): Self = StObject.set(x, "legendOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOrientationUndefined: Self = StObject.set(x, "legendOrientation", js.undefined)
+    
+    inline def setLegendPosition(value: BoxAlign): Self = StObject.set(x, "legendPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLegendPositionUndefined: Self = StObject.set(x, "legendPosition", js.undefined)
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setLineStyle(value: PartialCSSProperties): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setTextStyle(value: PartialCSSProperties): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    
+    inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }
-

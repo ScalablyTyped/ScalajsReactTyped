@@ -1,20 +1,24 @@
 package typingsJapgolly.winjs.mod.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the type of error that occurred during an edit operation on a IListDataSource or an IListDataAdapter.
   **/
 @JSImport("winjs", "UI.EditError")
 @js.native
-object EditError extends js.Object {
-  /* 1 */ val canceled: typingsJapgolly.winjs.WinJS.UI.EditError.canceled with Double = js.native
-  /* 3 */ val noLongerMeaningful: typingsJapgolly.winjs.WinJS.UI.EditError.noLongerMeaningful with Double = js.native
-  /* 0 */ val noResponse: typingsJapgolly.winjs.WinJS.UI.EditError.noResponse with Double = js.native
-  /* 2 */ val notPermitted: typingsJapgolly.winjs.WinJS.UI.EditError.notPermitted with Double = js.native
+object EditError extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.winjs.WinJS.UI.EditError with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.winjs.WinJS.UI.EditError & Double] = js.native
+  
+  /* 1 */ val canceled: typingsJapgolly.winjs.WinJS.UI.EditError.canceled & Double = js.native
+  
+  /* 3 */ val noLongerMeaningful: typingsJapgolly.winjs.WinJS.UI.EditError.noLongerMeaningful & Double = js.native
+  
+  /* 0 */ val noResponse: typingsJapgolly.winjs.WinJS.UI.EditError.noResponse & Double = js.native
+  
+  /* 2 */ val notPermitted: typingsJapgolly.winjs.WinJS.UI.EditError.notPermitted & Double = js.native
 }
-

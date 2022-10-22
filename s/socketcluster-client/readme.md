@@ -1,7 +1,7 @@
 
 # Scala.js typings for socketcluster-client
 
-Typings are for version 15.1
+Typings are for version 16.0
 
 ## Library description:
 SocketCluster JavaScript client
@@ -9,14 +9,14 @@ SocketCluster JavaScript client
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socketcluster-client |
-| Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 57 |
-| # downloads        | 2866928 |
-| # stars            | 1 |
+| Keywords           | websocket, realtime, client, socketcluster |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 263268.6666666667 |
+| # stars            | 278.0 |
 
 ## Links
-- [Homepage](http://socketcluster.io)
+- [Homepage](https://socketcluster.io/)
 - [Bugs](https://github.com/SocketCluster/socketcluster-client/issues)
 - [Repository](https://github.com/SocketCluster/socketcluster-client)
 - [Npm](https://www.npmjs.com/package/socketcluster-client)

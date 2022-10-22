@@ -1,22 +1,18 @@
 package typingsJapgolly.reactStripeElements.components
 
 import typingsJapgolly.reactStripeElements.mod.CardCVCElement_
+import typingsJapgolly.reactStripeElements.mod.ReactStripeElements.ElementProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object CardCVCElement extends SharedApply_ElementProps1796642645[CardCVCElement_] {
+object CardCVCElement {
+  
   @JSImport("react-stripe-elements", "CardCVCElement")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
-}
-
-object CardCvcElement
-  extends SharedApply_ElementProps1796642645[typingsJapgolly.reactStripeElements.mod.CardCvcElement] {
-  @JSImport("react-stripe-elements", "CardCvcElement")
-  @js.native
-  override object componentImport extends js.Object
+  implicit def make(companion: CardCVCElement.type): SharedBuilder_ElementProps_1851865827[CardCVCElement_] = new SharedBuilder_ElementProps_1851865827[CardCVCElement_](js.Array(this.component, js.Dictionary.empty))()
   
+  def withProps(p: ElementProps): SharedBuilder_ElementProps_1851865827[CardCVCElement_] = new SharedBuilder_ElementProps_1851865827[CardCVCElement_](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.responsiveEmbedMod.ResponsiveEmbedProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "ResponsiveEmbed")
 @js.native
-class ResponsiveEmbed ()
-  extends Component[ResponsiveEmbedProps, js.Object, js.Any]
-
+open class ResponsiveEmbed ()
+  extends typingsJapgolly.reactBootstrap.libMod.ResponsiveEmbed

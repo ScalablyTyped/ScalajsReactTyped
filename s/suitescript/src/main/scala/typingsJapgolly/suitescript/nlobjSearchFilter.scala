@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjSearchFilter filter objects used to define search criteria.
@@ -21,7 +21,8 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjSearchFilter
-  extends /**
+  extends StObject
+     with /**
   *
   * @param name
   * @param join
@@ -34,10 +35,11 @@ Instantiable5[
       /* name */ String, 
       /* join */ String, 
       /* operator */ String, 
-      /* value */ js.Any, 
+      /* value */ Any, 
       /* value2 */ String, 
-      js.Any
+      Any
     ] {
+  
   /**
     * Return the join id for this search filter.
     * @return {string}
@@ -49,6 +51,7 @@ Instantiable5[
     * @return
     */
   def getJoin(): String = js.native
+  
   /**
     * Return the name of this search filter.
     * @return {string}
@@ -60,6 +63,7 @@ Instantiable5[
     * @return
     */
   def getName(): String = js.native
+  
   /**
     * Return the filter operator used.
     * @return {string}
@@ -72,4 +76,3 @@ Instantiable5[
     */
   def getOperator(): String = js.native
 }
-

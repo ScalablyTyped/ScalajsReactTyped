@@ -1,23 +1,19 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
 */
-trait MsoButtonStyleHidden extends js.Object
-
+trait MsoButtonStyleHidden extends StObject
 object MsoButtonStyleHidden {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoButtonTextBelow: `8` = this.cast(8)
-  @scala.inline
-  def msoButtonWrapText: `4` = this.cast(4)
+  
+  inline def msoButtonTextBelow: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoButtonWrapText: `4` = 4.asInstanceOf[`4`]
 }
-

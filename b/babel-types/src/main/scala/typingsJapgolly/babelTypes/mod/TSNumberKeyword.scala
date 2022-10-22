@@ -1,19 +1,25 @@
 package typingsJapgolly.babelTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSNumberKeyword
-  extends Node
+  extends StObject
+     with Node
      with TSType {
+  
   @JSName("type")
   var type_TSNumberKeyword: typingsJapgolly.babelTypes.babelTypesStrings.TSNumberKeyword
 }
-
-@JSImport("babel-types", "TSNumberKeyword")
-@js.native
-object TSNumberKeyword extends js.Object {
+object TSNumberKeyword {
+  
+  @JSImport("babel-types", "TSNumberKeyword")
+  @js.native
   def apply(): TSNumberKeyword = js.native
+  
+  extension [Self <: TSNumberKeyword](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.babelTypes.babelTypesStrings.TSNumberKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

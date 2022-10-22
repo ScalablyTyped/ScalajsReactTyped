@@ -1,55 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
 */
-trait WdPasteDataType extends js.Object
-
+trait WdPasteDataType extends StObject
 object WdPasteDataType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdPasteBitmap: `4` = this.cast(4)
-  @scala.inline
-  def wdPasteDeviceIndependentBitmap: `5` = this.cast(5)
-  @scala.inline
-  def wdPasteEnhancedMetafile: `9` = this.cast(9)
-  @scala.inline
-  def wdPasteHTML: `10` = this.cast(10)
-  @scala.inline
-  def wdPasteHyperlink: `7` = this.cast(7)
-  @scala.inline
-  def wdPasteMetafilePicture: `3` = this.cast(3)
-  @scala.inline
-  def wdPasteOLEObject: `0` = this.cast(0)
-  @scala.inline
-  def wdPasteRTF: `1` = this.cast(1)
-  @scala.inline
-  def wdPasteShape: `8` = this.cast(8)
-  @scala.inline
-  def wdPasteText: `2` = this.cast(2)
+  
+  inline def wdPasteBitmap: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdPasteDeviceIndependentBitmap: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdPasteEnhancedMetafile: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdPasteHTML: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdPasteHyperlink: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdPasteMetafilePicture: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdPasteOLEObject: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdPasteRTF: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdPasteShape: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdPasteText: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "AssertionError")
 @js.native
-class AssertionError protected () extends Error {
+open class AssertionError protected ()
+  extends StObject
+     with Error {
   /**
     * Error object thrown when an assertion failed. This is an ECMA-262 Error,
     * extended with a `code` property.
@@ -15,6 +17,7 @@ class AssertionError protected () extends Error {
     * @param code Error code.
     */
   def this(code: Double) = this()
+  
   /**
     * Error code. The meaning of the code can be found on
     * {@link http://openlayers.org/en/latest/errors.html} (replace `latest` with
@@ -23,9 +26,12 @@ class AssertionError protected () extends Error {
     * @api
     */
   var code: Double = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

@@ -1,60 +1,51 @@
 package typingsJapgolly.reactTabsRedux.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Event
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTabsRedux.tabLinkMod.TabLinkProps
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabLink {
-  def apply(
-    to: Double | String,
-    activeClassName: String = null,
-    activeStyle: js.Object = null,
-    className: String = null,
-    component: String = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    disableInlineStyles: js.UndefOr[Boolean] = js.undefined,
-    handleSelect: (/* tab */ String, /* name */ String) => Callback = null,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    namespace: String = null,
-    onClick: /* event */ Event_ => Callback = null,
-    style: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabLinkProps, typingsJapgolly.reactTabsRedux.mod.TabLink, Unit, TabLinkProps] = {
-    val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
   
-      if (activeClassName != null) __obj.updateDynamic("activeClassName")(activeClassName.asInstanceOf[js.Any])
-    if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles.asInstanceOf[js.Any])
-    if (handleSelect != null) __obj.updateDynamic("handleSelect")(js.Any.fromFunction2((t0: /* tab */ java.lang.String, t1: /* name */ java.lang.String) => handleSelect(t0, t1).runNow()))
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.std.Event_) => onClick(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTabsRedux.tabLinkMod.TabLinkProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTabsRedux.mod.TabLink](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTabsRedux.tabLinkMod.TabLinkProps])(children: _*)
+  inline def apply(to: Double | String): Builder = {
+    val __props = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TabLinkProps]))
   }
+  
   @JSImport("react-tabs-redux", "TabLink")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactTabsRedux.mod.TabLink] {
+    
+    inline def default(value: Boolean): this.type = set("default", value.asInstanceOf[js.Any])
+    
+    inline def activeClassName(value: String): this.type = set("activeClassName", value.asInstanceOf[js.Any])
+    
+    inline def activeStyle(value: js.Object): this.type = set("activeStyle", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def component(value: String): this.type = set("component", value.asInstanceOf[js.Any])
+    
+    inline def disableInlineStyles(value: Boolean): this.type = set("disableInlineStyles", value.asInstanceOf[js.Any])
+    
+    inline def handleSelect(value: (/* tab */ String, /* name */ String) => Callback): this.type = set("handleSelect", js.Any.fromFunction2((t0: /* tab */ String, t1: /* name */ String) => (value(t0, t1)).runNow()))
+    
+    inline def isActive(value: Boolean): this.type = set("isActive", value.asInstanceOf[js.Any])
+    
+    inline def namespace(value: String): this.type = set("namespace", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* event */ Event => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ Event) => value(t0).runNow()))
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TabLinkProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

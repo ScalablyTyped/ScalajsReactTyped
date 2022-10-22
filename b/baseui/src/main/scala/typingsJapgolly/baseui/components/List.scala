@@ -1,49 +1,36 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonOldIndex
-import typingsJapgolly.baseui.dndListMod.ListOverrides
-import typingsJapgolly.baseui.dndListMod.ListProps
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.NewIndex
+import typingsJapgolly.baseui.dndListTypesMod.ListOverrides
+import typingsJapgolly.baseui.dndListTypesMod.ListProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object List {
-  def apply(
-    items: js.Array[Node] = null,
-    onChange: /* args */ AnonOldIndex => CallbackTo[js.Any] = null,
-    overrides: ListOverrides = null,
-    removable: js.UndefOr[Boolean] = js.undefined,
-    removableByMove: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListProps, typingsJapgolly.baseui.dndListMod.List, Unit, ListProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonOldIndex) => onChange(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(removable)) __obj.updateDynamic("removable")(removable.asInstanceOf[js.Any])
-    if (!js.isUndefined(removableByMove)) __obj.updateDynamic("removableByMove")(removableByMove.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.dndListMod.ListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.dndListMod.List](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.dndListMod.ListProps])(children: _*)
+  inline def apply(items: js.Array[Node], onChange: NewIndex => Any): Builder = {
+    val __props = js.Dynamic.literal(items = items.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ListProps]))
   }
+  
   @JSImport("baseui/dnd-list", "List")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.dndListMod.List] {
+    
+    inline def overrides(value: ListOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def removable(value: Boolean): this.type = set("removable", value.asInstanceOf[js.Any])
+    
+    inline def removableByMove(value: Boolean): this.type = set("removableByMove", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

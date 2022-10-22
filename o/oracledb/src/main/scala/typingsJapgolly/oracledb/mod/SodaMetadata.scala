@@ -1,13 +1,13 @@
 package typingsJapgolly.oracledb.mod
 
-import typingsJapgolly.oracledb.AnonAssignmentMethod
-import typingsJapgolly.oracledb.AnonCache
-import typingsJapgolly.oracledb.AnonIndex
-import typingsJapgolly.oracledb.AnonMethod
-import typingsJapgolly.oracledb.AnonName
+import typingsJapgolly.oracledb.anon.AssignmentMethod
+import typingsJapgolly.oracledb.anon.Cache
+import typingsJapgolly.oracledb.anon.Index
+import typingsJapgolly.oracledb.anon.Method
+import typingsJapgolly.oracledb.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata specifying various details about the collection, such as its database storage, whether it should
@@ -16,55 +16,85 @@ import scala.scalajs.js.annotation._
   *
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-collection-metadata-components-reference.html#GUID-46E36926-7E6C-4561-A19F-01C09428C56D
   */
-trait SodaMetadata extends js.Object {
+trait SodaMetadata extends StObject {
+  
   /** Object containing information related to the content column. */
-  var contentColumn: js.UndefOr[AnonCache] = js.undefined
+  var contentColumn: js.UndefOr[Cache] = js.undefined
+  
   /** Object containing information related to the creation time column. */
-  var creationTimeColumn: js.UndefOr[AnonName] = js.undefined
+  var creationTimeColumn: js.UndefOr[Name] = js.undefined
+  
   /** Object containing information related to the key column. */
-  var keyColumn: js.UndefOr[AnonAssignmentMethod] = js.undefined
+  var keyColumn: js.UndefOr[AssignmentMethod] = js.undefined
+  
   /** Object containing information related to the last modified column. */
-  var lastModifiedColumn: js.UndefOr[AnonIndex] = js.undefined
+  var lastModifiedColumn: js.UndefOr[Index] = js.undefined
+  
   /** Object containing information related to the media type column. */
-  var mediaTypeColumn: js.UndefOr[AnonName] = js.undefined
+  var mediaTypeColumn: js.UndefOr[Name] = js.undefined
+  
   /** Specifies whether or not the collection is read-only. */
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
   /** Name of the Oracle Database schema that owns the table or view to which the collection is mapped. */
   var schemaName: js.UndefOr[String] = js.undefined
+  
   /** Name of the table to which the collection is mapped. */
   var tableName: js.UndefOr[String] = js.undefined
+  
   /** Object containing information related to the version column. */
-  var versionColumn: js.UndefOr[AnonMethod] = js.undefined
+  var versionColumn: js.UndefOr[Method] = js.undefined
+  
   /** Name of the view to which the collection is mapped. */
   var viewName: js.UndefOr[String] = js.undefined
 }
-
 object SodaMetadata {
-  @scala.inline
-  def apply(
-    contentColumn: AnonCache = null,
-    creationTimeColumn: AnonName = null,
-    keyColumn: AnonAssignmentMethod = null,
-    lastModifiedColumn: AnonIndex = null,
-    mediaTypeColumn: AnonName = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    schemaName: String = null,
-    tableName: String = null,
-    versionColumn: AnonMethod = null,
-    viewName: String = null
-  ): SodaMetadata = {
+  
+  inline def apply(): SodaMetadata = {
     val __obj = js.Dynamic.literal()
-    if (contentColumn != null) __obj.updateDynamic("contentColumn")(contentColumn.asInstanceOf[js.Any])
-    if (creationTimeColumn != null) __obj.updateDynamic("creationTimeColumn")(creationTimeColumn.asInstanceOf[js.Any])
-    if (keyColumn != null) __obj.updateDynamic("keyColumn")(keyColumn.asInstanceOf[js.Any])
-    if (lastModifiedColumn != null) __obj.updateDynamic("lastModifiedColumn")(lastModifiedColumn.asInstanceOf[js.Any])
-    if (mediaTypeColumn != null) __obj.updateDynamic("mediaTypeColumn")(mediaTypeColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName.asInstanceOf[js.Any])
-    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
-    if (versionColumn != null) __obj.updateDynamic("versionColumn")(versionColumn.asInstanceOf[js.Any])
-    if (viewName != null) __obj.updateDynamic("viewName")(viewName.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaMetadata]
   }
+  
+  extension [Self <: SodaMetadata](x: Self) {
+    
+    inline def setContentColumn(value: Cache): Self = StObject.set(x, "contentColumn", value.asInstanceOf[js.Any])
+    
+    inline def setContentColumnUndefined: Self = StObject.set(x, "contentColumn", js.undefined)
+    
+    inline def setCreationTimeColumn(value: Name): Self = StObject.set(x, "creationTimeColumn", value.asInstanceOf[js.Any])
+    
+    inline def setCreationTimeColumnUndefined: Self = StObject.set(x, "creationTimeColumn", js.undefined)
+    
+    inline def setKeyColumn(value: AssignmentMethod): Self = StObject.set(x, "keyColumn", value.asInstanceOf[js.Any])
+    
+    inline def setKeyColumnUndefined: Self = StObject.set(x, "keyColumn", js.undefined)
+    
+    inline def setLastModifiedColumn(value: Index): Self = StObject.set(x, "lastModifiedColumn", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedColumnUndefined: Self = StObject.set(x, "lastModifiedColumn", js.undefined)
+    
+    inline def setMediaTypeColumn(value: Name): Self = StObject.set(x, "mediaTypeColumn", value.asInstanceOf[js.Any])
+    
+    inline def setMediaTypeColumnUndefined: Self = StObject.set(x, "mediaTypeColumn", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
+    
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    
+    inline def setVersionColumn(value: Method): Self = StObject.set(x, "versionColumn", value.asInstanceOf[js.Any])
+    
+    inline def setVersionColumnUndefined: Self = StObject.set(x, "versionColumn", js.undefined)
+    
+    inline def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
+    
+    inline def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
+  }
 }
-

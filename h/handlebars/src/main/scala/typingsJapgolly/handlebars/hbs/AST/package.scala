@@ -1,13 +1,16 @@
-package typingsJapgolly.handlebars.hbs
+package typingsJapgolly.handlebars.hbs.AST
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object AST {
-  type Decorator = typingsJapgolly.handlebars.hbs.AST.MustacheStatement
-  type DecoratorBlock = typingsJapgolly.handlebars.hbs.AST.BlockStatement
-  type Expression = typingsJapgolly.handlebars.hbs.AST.Node
-  type Literal = typingsJapgolly.handlebars.hbs.AST.Expression
-  type Statement = typingsJapgolly.handlebars.hbs.AST.Node
-}
+
+type Decorator = MustacheStatement
+
+type DecoratorBlock = BlockStatement
+
+type Expression = Node
+
+type Literal = Expression
+
+type Statement = Node

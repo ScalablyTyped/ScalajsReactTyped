@@ -1,30 +1,30 @@
 package typingsJapgolly.vastClient.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait VASTClientCustomStorage
-  extends /* key */ StringDictionary[js.Any | js.Function0[_]] {
+  extends StObject
+     with /* key */ StringDictionary[Any | js.Function0[Any]] {
+  
   def getItem(key: String): String | Null
+  
   def setItem(key: String, `val`: String): Unit
 }
-
 object VASTClientCustomStorage {
-  @scala.inline
-  def apply(
-    getItem: String => CallbackTo[String | Null],
-    setItem: (String, String) => Callback,
-    StringDictionary: /* key */ StringDictionary[js.Any | js.Function0[_]] = null
-  ): VASTClientCustomStorage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getItem")(js.Any.fromFunction1((t0: java.lang.String) => getItem(t0).runNow()))
-    __obj.updateDynamic("setItem")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => setItem(t0, t1).runNow()))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  
+  inline def apply(getItem: String => String | Null, setItem: (String, String) => Callback): VASTClientCustomStorage = {
+    val __obj = js.Dynamic.literal(getItem = js.Any.fromFunction1(getItem), setItem = js.Any.fromFunction2((t0: String, t1: String) => (setItem(t0, t1)).runNow()))
     __obj.asInstanceOf[VASTClientCustomStorage]
   }
+  
+  extension [Self <: VASTClientCustomStorage](x: Self) {
+    
+    inline def setGetItem(value: String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    
+    inline def setSetItem(value: (String, String) => Callback): Self = StObject.set(x, "setItem", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+  }
 }
-

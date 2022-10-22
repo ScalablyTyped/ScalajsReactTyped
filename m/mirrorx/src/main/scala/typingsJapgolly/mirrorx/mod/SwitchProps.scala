@@ -1,25 +1,43 @@
 package typingsJapgolly.mirrorx.mod
 
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.history.mod.Location
-import typingsJapgolly.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchProps extends js.Object {
+trait SwitchProps extends StObject {
+  
   var children: js.UndefOr[Node] = js.undefined
-  var location: js.UndefOr[Location[LocationState]] = js.undefined
+  
+  var location: js.UndefOr[Location] = js.undefined
 }
-
 object SwitchProps {
-  @scala.inline
-  def apply(children: VdomNode = null, location: Location[LocationState] = null): SwitchProps = {
+  
+  inline def apply(): SwitchProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchProps]
   }
+  
+  extension [Self <: SwitchProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+  }
 }
-

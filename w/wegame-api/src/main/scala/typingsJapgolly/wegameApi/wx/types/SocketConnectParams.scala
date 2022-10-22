@@ -2,39 +2,61 @@ package typingsJapgolly.wegameApi.wx.types
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SocketConnectParams extends js.Object {
+trait SocketConnectParams extends StObject {
+  
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var header: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var method: js.UndefOr[RequestMethod] = js.undefined
+  
   var protocols: js.UndefOr[js.Array[String]] = js.undefined
+  
   var success: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var url: String
 }
-
 object SocketConnectParams {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: js.UndefOr[Callback] = js.undefined,
-    fail: js.UndefOr[Callback] = js.undefined,
-    header: StringDictionary[String] = null,
-    method: RequestMethod = null,
-    protocols: js.Array[String] = null,
-    success: js.UndefOr[Callback] = js.undefined
-  ): SocketConnectParams = {
+  
+  inline def apply(url: String): SocketConnectParams = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    success.foreach(p => __obj.updateDynamic("success")(p.toJsFn))
     __obj.asInstanceOf[SocketConnectParams]
   }
+  
+  extension [Self <: SocketConnectParams](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setHeader(value: StringDictionary[String]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
+    
+    inline def setSuccess(value: Callback): Self = StObject.set(x, "success", value.toJsFn)
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

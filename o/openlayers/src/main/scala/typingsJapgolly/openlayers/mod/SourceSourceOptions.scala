@@ -2,34 +2,51 @@ package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.openlayers.mod.olx.LogoOptions
 import typingsJapgolly.openlayers.mod.source.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SourceSourceOptions extends js.Object {
+trait SourceSourceOptions extends StObject {
+  
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
+  
   var projection: ProjectionLike
+  
   var state: js.UndefOr[State] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object SourceSourceOptions {
-  @scala.inline
-  def apply(
-    attributions: AttributionLike = null,
-    logo: String | LogoOptions = null,
-    projection: ProjectionLike = null,
-    state: State = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): SourceSourceOptions = {
+  
+  inline def apply(): SourceSourceOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceSourceOptions]
   }
+  
+  extension [Self <: SourceSourceOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

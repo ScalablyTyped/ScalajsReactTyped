@@ -10,10 +10,10 @@ Tags input directive for AngularJS
 | ------------------ | :-------------: |
 | Full name          | ng-tags-input |
 | Keywords           | angular, tags, tags-input |
-| # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 978904 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 114250.66666666667 |
+| # stars            | 1654.0 |
 
 ## Links
 - [Homepage](http://mbenford.github.io/ngTagsInput)

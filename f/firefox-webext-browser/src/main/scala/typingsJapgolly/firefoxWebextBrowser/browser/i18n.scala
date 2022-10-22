@@ -1,49 +1,68 @@
 package typingsJapgolly.firefoxWebextBrowser.browser
 
-import typingsJapgolly.firefoxWebextBrowser.AnonIsReliable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use the `browser.i18n` infrastructure to implement internationalization across your whole app or extension.
   */
-@JSGlobal("browser.i18n")
-@js.native
-object i18n extends js.Object {
+object i18n {
+  
   /**
-    * Detects the language of the provided text using CLD.
-    * @param text User input string to be translated.
+    * LanguageDetectionResult object that holds detected langugae reliability and array of DetectedLanguage
     */
-  def detectLanguage(text: String): js.Promise[AnonIsReliable] = js.native
-  /* i18n functions */
-  /**
-    * Gets the accept-languages of the browser. This is different from the locale used by the browser; to get the
-    * locale, use `i18n.getUILanguage`.
-    */
-  def getAcceptLanguages(): js.Promise[js.Array[LanguageCode]] = js.native
-  /**
-    * Gets the localized string for the specified message. If the message is missing, this method returns an empty
-    * string (''). If the format of the `getMessage()` call is wrong — for example, _messageName_ is not a string or
-    * the _substitutions_ array has more than 9 elements — this method returns `undefined`.
-    * @param messageName The name of the message, as specified in the `messages.json` file.
-    * @param [substitutions] Substitution strings, if the message requires any.
-    * @returns Message localized for current locale.
-    */
-  def getMessage(messageName: String): String = js.native
-  def getMessage(messageName: String, substitutions: js.Any): String = js.native
-  /**
-    * Gets the browser UI language of the browser. This is different from `i18n.getAcceptLanguages` which returns the
-    * preferred user languages.
-    * @returns The browser UI language code such as en-US or fr-FR.
-    */
-  def getUILanguage(): String = js.native
+  trait DetectLanguageReturnResult extends StObject {
+    
+    /** CLD detected language reliability */
+    var isReliable: Boolean
+    
+    /** array of detectedLanguage */
+    var languages: js.Array[DetectLanguageReturnResultLanguages]
+  }
+  object DetectLanguageReturnResult {
+    
+    inline def apply(isReliable: Boolean, languages: js.Array[DetectLanguageReturnResultLanguages]): DetectLanguageReturnResult = {
+      val __obj = js.Dynamic.literal(isReliable = isReliable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DetectLanguageReturnResult]
+    }
+    
+    extension [Self <: DetectLanguageReturnResult](x: Self) {
+      
+      inline def setIsReliable(value: Boolean): Self = StObject.set(x, "isReliable", value.asInstanceOf[js.Any])
+      
+      inline def setLanguages(value: js.Array[DetectLanguageReturnResultLanguages]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      
+      inline def setLanguagesVarargs(value: DetectLanguageReturnResultLanguages*): Self = StObject.set(x, "languages", js.Array(value*))
+    }
+  }
+  
+  /** DetectedLanguage object that holds detected ISO language code and its percentage in the input string */
+  trait DetectLanguageReturnResultLanguages extends StObject {
+    
+    var language: LanguageCode
+    
+    /** The percentage of the detected language */
+    var percentage: Double
+  }
+  object DetectLanguageReturnResultLanguages {
+    
+    inline def apply(language: LanguageCode, percentage: Double): DetectLanguageReturnResultLanguages = {
+      val __obj = js.Dynamic.literal(language = language.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DetectLanguageReturnResultLanguages]
+    }
+    
+    extension [Self <: DetectLanguageReturnResultLanguages](x: Self) {
+      
+      inline def setLanguage(value: LanguageCode): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    }
+  }
+  
   /* i18n types */
   /**
-    * An ISO language code such as `en` or `fr`. For a complete list of languages supported by this method, see
-    * [kLanguageInfoTable](http://src.chromium.org/viewvc/chrome/trunk/src/third_party/cld/languages/internal/languages.cc).
-    * For an unknown language, `und` will be returned, which means that [percentage] of the text is unknown to CLD
+    * An ISO language code such as `en` or `fr`. For a complete list of languages supported by this method, see [kLanguageInfoTable](http://src.chromium.org/viewvc/chrome/trunk/src/third_party/cld/languages/internal/languages.cc). For an unknown language, `und` will be returned, which means that [percentage] of the text is unknown to CLD
     */
   type LanguageCode = String
 }
-

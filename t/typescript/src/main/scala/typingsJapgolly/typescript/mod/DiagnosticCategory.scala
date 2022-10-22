@@ -1,41 +1,39 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagnosticCategory extends js.Object
-
+sealed trait DiagnosticCategory extends StObject
 @JSImport("typescript", "DiagnosticCategory")
 @js.native
-object DiagnosticCategory extends js.Object {
-  @js.native
-  sealed trait Error extends DiagnosticCategory
-  
-  @js.native
-  sealed trait Message extends DiagnosticCategory
-  
-  @js.native
-  sealed trait Suggestion extends DiagnosticCategory
-  
-  @js.native
-  sealed trait Warning extends DiagnosticCategory
+object DiagnosticCategory extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DiagnosticCategory with Double] = js.native
-  /* 1 */ @js.native
-  object Error extends TopLevel[Error with Double]
+  def apply(value: Double): js.UndefOr[DiagnosticCategory & Double] = js.native
   
-  /* 3 */ @js.native
-  object Message extends TopLevel[Message with Double]
+  @js.native
+  sealed trait Error
+    extends StObject
+       with DiagnosticCategory
+  /* 1 */ val Error: typingsJapgolly.typescript.mod.DiagnosticCategory.Error & Double = js.native
   
-  /* 2 */ @js.native
-  object Suggestion extends TopLevel[Suggestion with Double]
+  @js.native
+  sealed trait Message
+    extends StObject
+       with DiagnosticCategory
+  /* 3 */ val Message: typingsJapgolly.typescript.mod.DiagnosticCategory.Message & Double = js.native
   
-  /* 0 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
+  @js.native
+  sealed trait Suggestion
+    extends StObject
+       with DiagnosticCategory
+  /* 2 */ val Suggestion: typingsJapgolly.typescript.mod.DiagnosticCategory.Suggestion & Double = js.native
   
+  @js.native
+  sealed trait Warning
+    extends StObject
+       with DiagnosticCategory
+  /* 0 */ val Warning: typingsJapgolly.typescript.mod.DiagnosticCategory.Warning & Double = js.native
 }
-

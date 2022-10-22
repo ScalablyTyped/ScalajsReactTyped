@@ -1,69 +1,65 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.KeyboardEvent
-import typingsJapgolly.baseui.AnonExpandedBoolean
-import typingsJapgolly.baseui.accordionMod.PanelOverrides
-import typingsJapgolly.baseui.accordionMod.PanelState
-import typingsJapgolly.baseui.accordionMod.SharedProps
-import typingsJapgolly.baseui.accordionMod.StatefulPanelProps
-import typingsJapgolly.baseui.baseuiStrings.expand
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalajs.dom.KeyboardEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.accordionTypesMod.PanelOverrides
+import typingsJapgolly.baseui.accordionTypesMod.PanelState
+import typingsJapgolly.baseui.accordionTypesMod.StateChangeType
+import typingsJapgolly.baseui.accordionTypesMod.StatefulPanelProps
+import typingsJapgolly.baseui.anon.ExpandedBoolean
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulPanel {
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    initialState: PanelState = null,
-    onChange: /* args */ AnonExpandedBoolean => CallbackTo[js.Any] = null,
-    onClick: /* e */ Event_ => CallbackTo[js.Any] = null,
-    onKeyDown: /* e */ KeyboardEvent => CallbackTo[js.Any] = null,
-    overrides: PanelOverrides[SharedProps] = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    renderPanelContent: js.UndefOr[Boolean] = js.undefined,
-    stateReducer: (expand, PanelState, PanelState) => CallbackTo[PanelState] = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    StatefulPanelProps, 
-    MountedWithRawType[StatefulPanelProps, js.Object, RawMounted[StatefulPanelProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonExpandedBoolean) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onClick(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: /* e */ org.scalajs.dom.raw.KeyboardEvent) => onKeyDown(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderPanelContent)) __obj.updateDynamic("renderPanelContent")(renderPanelContent.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.expand, t1: typingsJapgolly.baseui.accordionMod.PanelState, t2: typingsJapgolly.baseui.accordionMod.PanelState) => stateReducer(t0, t1, t2).runNow()))
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.accordionMod.StatefulPanelProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.accordionMod.StatefulPanelProps])(children: _*)
-  }
   @JSImport("baseui/accordion", "StatefulPanel")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def initialState(value: PanelState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* a */ ExpandedBoolean => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onClick(value: /* e */ Event => Any): this.type = set("onClick", js.Any.fromFunction1(value))
+    
+    inline def onKeyDown(value: /* e */ KeyboardEvent => Any): this.type = set("onKeyDown", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: PanelOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def renderAll(value: Boolean): this.type = set("renderAll", value.asInstanceOf[js.Any])
+    
+    inline def renderPanelContent(value: Boolean): this.type = set("renderPanelContent", value.asInstanceOf[js.Any])
+    
+    inline def stateReducer(
+      value: (/* stateChangeType */ StateChangeType, /* nextState */ PanelState, /* currentState */ PanelState) => PanelState
+    ): this.type = set("stateReducer", js.Any.fromFunction3(value))
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StatefulPanel.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StatefulPanelProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

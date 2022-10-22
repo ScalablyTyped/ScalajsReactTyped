@@ -1,55 +1,96 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonColumnComponent
-import typingsJapgolly.devextreme.AnonColumnComponentRow
-import typingsJapgolly.devextreme.AnonRowType
-import typingsJapgolly.devextreme.devextremeStrings.cancel
-import typingsJapgolly.devextreme.devextremeStrings.delete
-import typingsJapgolly.devextreme.devextremeStrings.edit
-import typingsJapgolly.devextreme.devextremeStrings.save
-import typingsJapgolly.devextreme.devextremeStrings.undelete
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.devextreme.anon.Column
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonClickEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnButtonTemplateData
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.DataGridPredefinedColumnButton
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxDataGridColumnButton extends GridBaseColumnButton {
-  /** The name used to identify a built-in button. */
-  var name: js.UndefOr[cancel | delete | edit | save | undelete | String] = js.undefined
-  /** A function that is executed when the button is clicked or tapped. Not executed if a template is used. */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonColumnComponent, _]) | String] = js.undefined
-  /** Specifies a custom button template. */
+trait dxDataGridColumnButton[TRowData, TKey]
+  extends StObject
+     with ColumnButtonBase {
+  
+  /**
+    * Specifies whether the button is disabled.
+    */
+  var disabled: js.UndefOr[Boolean | (js.Function1[/* options */ Column[TRowData, TKey], Boolean])] = js.undefined
+  
+  /**
+    * The name used to identify a built-in button.
+    */
+  var name: js.UndefOr[DataGridPredefinedColumnButton | String] = js.undefined
+  
+  /**
+    * A function that is executed when the button is clicked or tapped.
+    */
+  var onClick: js.UndefOr[js.Function1[/* e */ ColumnButtonClickEvent[TRowData, TKey], Unit]] = js.undefined
+  
+  /**
+    * Specifies a custom button template.
+    */
   var template: js.UndefOr[
-    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowType, String | Element | JQuery])
+    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[
+      /* cellElement */ DxElement_[HTMLElement], 
+      /* cellInfo */ ColumnButtonTemplateData[TRowData, TKey], 
+      String | UserDefinedElement[Element]
+    ])
   ] = js.undefined
-  /** Specifies the button's visibility. */
-  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ AnonColumnComponentRow, Boolean])] = js.undefined
+  
+  /**
+    * Specifies the button&apos;s visibility.
+    */
+  var visible: js.UndefOr[Boolean | (js.Function1[/* options */ Column[TRowData, TKey], Boolean])] = js.undefined
 }
-
 object dxDataGridColumnButton {
-  @scala.inline
-  def apply(
-    cssClass: String = null,
-    hint: String = null,
-    icon: String = null,
-    name: cancel | delete | edit | save | undelete | String = null,
-    onClick: (js.Function1[/* e */ AnonColumnComponent, _]) | String = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function2[/* cellElement */ dxElement, /* cellInfo */ AnonRowType, String | Element | JQuery]) = null,
-    text: String = null,
-    visible: Boolean | (js.Function1[/* options */ AnonColumnComponentRow, Boolean]) = null
-  ): dxDataGridColumnButton = {
+  
+  inline def apply[TRowData, TKey](): dxDataGridColumnButton[TRowData, TKey] = {
     val __obj = js.Dynamic.literal()
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    __obj.asInstanceOf[dxDataGridColumnButton]
+    __obj.asInstanceOf[dxDataGridColumnButton[TRowData, TKey]]
+  }
+  
+  extension [Self <: dxDataGridColumnButton[?, ?], TRowData, TKey](x: Self & (dxDataGridColumnButton[TRowData, TKey])) {
+    
+    inline def setDisabled(value: Boolean | (js.Function1[/* options */ Column[TRowData, TKey], Boolean])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledFunction1(value: /* options */ Column[TRowData, TKey] => Boolean): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setName(value: DataGridPredefinedColumnButton | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnClick(value: /* e */ ColumnButtonClickEvent[TRowData, TKey] => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: /* e */ ColumnButtonClickEvent[TRowData, TKey]) => value(t0).runNow()))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setTemplate(
+      value: template | (js.Function2[
+          /* cellElement */ DxElement_[HTMLElement], 
+          /* cellInfo */ ColumnButtonTemplateData[TRowData, TKey], 
+          String | UserDefinedElement[Element]
+        ])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateFunction2(
+      value: (/* cellElement */ DxElement_[HTMLElement], /* cellInfo */ ColumnButtonTemplateData[TRowData, TKey]) => String | UserDefinedElement[Element]
+    ): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setVisible(value: Boolean | (js.Function1[/* options */ Column[TRowData, TKey], Boolean])): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleFunction1(value: /* options */ Column[TRowData, TKey] => Boolean): Self = StObject.set(x, "visible", js.Any.fromFunction1(value))
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }
-

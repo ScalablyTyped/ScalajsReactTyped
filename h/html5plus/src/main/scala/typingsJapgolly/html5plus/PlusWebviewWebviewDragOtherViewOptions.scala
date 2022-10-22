@@ -2,27 +2,29 @@ package typingsJapgolly.html5plus
 
 import typingsJapgolly.html5plus.html5plusStrings.follow
 import typingsJapgolly.html5plus.html5plusStrings.silent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 手势操作关联对象参数
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-trait PlusWebviewWebviewDragOtherViewOptions extends js.Object {
+trait PlusWebviewWebviewDragOtherViewOptions extends StObject {
+  
   /**
     * 滑动模式
     * 可取值：
-    * 	"follow" - 同步跟随主Webview窗口滑动；
-    * 	"silent" - 不跟随主Webview窗口滑动。
+    *     "follow" - 同步跟随主Webview窗口滑动；
+    *     "silent" - 不跟随主Webview窗口滑动。
     * - follow: 同步跟随主Webview窗口滑动
     * - silent: 不跟随主Webview窗口滑动
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var moveMode: js.UndefOr[follow | silent] = js.undefined
+  
   /**
     * 手势关联对象
     * 可取值Webview窗口的id（String类型）、Webview窗口对象、原生View窗口对象（plus.nativeObj.View）。
@@ -31,14 +33,21 @@ trait PlusWebviewWebviewDragOtherViewOptions extends js.Object {
     */
   var view: js.UndefOr[String] = js.undefined
 }
-
 object PlusWebviewWebviewDragOtherViewOptions {
-  @scala.inline
-  def apply(moveMode: follow | silent = null, view: String = null): PlusWebviewWebviewDragOtherViewOptions = {
+  
+  inline def apply(): PlusWebviewWebviewDragOtherViewOptions = {
     val __obj = js.Dynamic.literal()
-    if (moveMode != null) __obj.updateDynamic("moveMode")(moveMode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDragOtherViewOptions]
   }
+  
+  extension [Self <: PlusWebviewWebviewDragOtherViewOptions](x: Self) {
+    
+    inline def setMoveMode(value: follow | silent): Self = StObject.set(x, "moveMode", value.asInstanceOf[js.Any])
+    
+    inline def setMoveModeUndefined: Self = StObject.set(x, "moveMode", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

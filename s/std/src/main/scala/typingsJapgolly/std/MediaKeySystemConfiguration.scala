@@ -1,39 +1,75 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaKeySystemConfiguration extends js.Object {
+trait MediaKeySystemConfiguration extends StObject {
+  
+  /* standard dom */
   var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
+  
+  /* standard dom */
   var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined
+  
+  /* standard dom */
   var initDataTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
+  /* standard dom */
   var label: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var persistentState: js.UndefOr[MediaKeysRequirement] = js.undefined
+  
+  /* standard dom */
   var sessionTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  
+  /* standard dom */
   var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
-
 object MediaKeySystemConfiguration {
-  @scala.inline
-  def apply(
-    audioCapabilities: js.Array[MediaKeySystemMediaCapability] = null,
-    distinctiveIdentifier: MediaKeysRequirement = null,
-    initDataTypes: js.Array[java.lang.String] = null,
-    label: java.lang.String = null,
-    persistentState: MediaKeysRequirement = null,
-    sessionTypes: js.Array[java.lang.String] = null,
-    videoCapabilities: js.Array[MediaKeySystemMediaCapability] = null
-  ): MediaKeySystemConfiguration = {
+  
+  inline def apply(): MediaKeySystemConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (audioCapabilities != null) __obj.updateDynamic("audioCapabilities")(audioCapabilities.asInstanceOf[js.Any])
-    if (distinctiveIdentifier != null) __obj.updateDynamic("distinctiveIdentifier")(distinctiveIdentifier.asInstanceOf[js.Any])
-    if (initDataTypes != null) __obj.updateDynamic("initDataTypes")(initDataTypes.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (persistentState != null) __obj.updateDynamic("persistentState")(persistentState.asInstanceOf[js.Any])
-    if (sessionTypes != null) __obj.updateDynamic("sessionTypes")(sessionTypes.asInstanceOf[js.Any])
-    if (videoCapabilities != null) __obj.updateDynamic("videoCapabilities")(videoCapabilities.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeySystemConfiguration]
   }
+  
+  extension [Self <: MediaKeySystemConfiguration](x: Self) {
+    
+    inline def setAudioCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "audioCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setAudioCapabilitiesUndefined: Self = StObject.set(x, "audioCapabilities", js.undefined)
+    
+    inline def setAudioCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "audioCapabilities", js.Array(value*))
+    
+    inline def setDistinctiveIdentifier(value: MediaKeysRequirement): Self = StObject.set(x, "distinctiveIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setDistinctiveIdentifierUndefined: Self = StObject.set(x, "distinctiveIdentifier", js.undefined)
+    
+    inline def setInitDataTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "initDataTypes", value.asInstanceOf[js.Any])
+    
+    inline def setInitDataTypesUndefined: Self = StObject.set(x, "initDataTypes", js.undefined)
+    
+    inline def setInitDataTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "initDataTypes", js.Array(value*))
+    
+    inline def setLabel(value: java.lang.String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setPersistentState(value: MediaKeysRequirement): Self = StObject.set(x, "persistentState", value.asInstanceOf[js.Any])
+    
+    inline def setPersistentStateUndefined: Self = StObject.set(x, "persistentState", js.undefined)
+    
+    inline def setSessionTypes(value: js.Array[java.lang.String]): Self = StObject.set(x, "sessionTypes", value.asInstanceOf[js.Any])
+    
+    inline def setSessionTypesUndefined: Self = StObject.set(x, "sessionTypes", js.undefined)
+    
+    inline def setSessionTypesVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionTypes", js.Array(value*))
+    
+    inline def setVideoCapabilities(value: js.Array[MediaKeySystemMediaCapability]): Self = StObject.set(x, "videoCapabilities", value.asInstanceOf[js.Any])
+    
+    inline def setVideoCapabilitiesUndefined: Self = StObject.set(x, "videoCapabilities", js.undefined)
+    
+    inline def setVideoCapabilitiesVarargs(value: MediaKeySystemMediaCapability*): Self = StObject.set(x, "videoCapabilities", js.Array(value*))
+  }
 }
-

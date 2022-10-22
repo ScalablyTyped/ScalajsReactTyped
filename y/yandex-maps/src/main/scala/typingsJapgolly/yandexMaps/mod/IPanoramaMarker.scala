@@ -2,30 +2,40 @@ package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.yandexMaps.mod.data.Manager
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanoramaMarker extends js.Object {
-  var properties: Manager
+trait IPanoramaMarker extends StObject {
+  
   def getIconSet(): js.Promise[IPanoramaMarkerIconSet]
+  
   def getPanorama(): IPanorama
+  
   def getPosition(): js.Array[Double]
+  
+  var properties: Manager
 }
-
 object IPanoramaMarker {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getIconSet: CallbackTo[js.Promise[IPanoramaMarkerIconSet]],
     getPanorama: CallbackTo[IPanorama],
     getPosition: CallbackTo[js.Array[Double]],
     properties: Manager
   ): IPanoramaMarker = {
-    val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("getIconSet")(getIconSet.toJsFn)
-    __obj.updateDynamic("getPanorama")(getPanorama.toJsFn)
-    __obj.updateDynamic("getPosition")(getPosition.toJsFn)
+    val __obj = js.Dynamic.literal(getIconSet = getIconSet.toJsFn, getPanorama = getPanorama.toJsFn, getPosition = getPosition.toJsFn, properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanoramaMarker]
   }
+  
+  extension [Self <: IPanoramaMarker](x: Self) {
+    
+    inline def setGetIconSet(value: CallbackTo[js.Promise[IPanoramaMarkerIconSet]]): Self = StObject.set(x, "getIconSet", value.toJsFn)
+    
+    inline def setGetPanorama(value: CallbackTo[IPanorama]): Self = StObject.set(x, "getPanorama", value.toJsFn)
+    
+    inline def setGetPosition(value: CallbackTo[js.Array[Double]]): Self = StObject.set(x, "getPosition", value.toJsFn)
+    
+    inline def setProperties(value: Manager): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+  }
 }
-

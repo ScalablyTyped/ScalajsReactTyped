@@ -1,27 +1,35 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Bluetooth LE advertisement byte pattern for filters to match. */
-@JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementBytePattern")
-@js.native
-/** Create a new BluetoothLEAdvertisementBytePattern object. */
-class BluetoothLEAdvertisementBytePattern () extends js.Object {
-  /**
-    * Create a new BluetoothLEAdvertisementBytePattern object with an advertisement data type to match, the advertisement data byte pattern to match, and the offset of the byte pattern from the beginning of the advertisement data section.
-    * @param dataType The Bluetooth LE advertisement data type to match.
-    * @param offset The offset of byte pattern from beginning of advertisement data section.
-    * @param data The Bluetooth LE advertisement data byte pattern to match.
-    */
-  def this(dataType: Double, offset: Double, data: IBuffer) = this()
+trait BluetoothLEAdvertisementBytePattern extends StObject {
+  
   /** The Bluetooth LE advertisement data byte pattern to match. */
-  var data: IBuffer = js.native
+  var data: IBuffer
+  
   /** The Bluetooth LE advertisement data type defined by the Bluetooth Special Interest Group (SIG) to match. */
-  var dataType: Double = js.native
+  var dataType: Double
+  
   /** The offset of byte pattern from beginning of advertisement data section. */
-  var offset: Double = js.native
+  var offset: Double
 }
-
+object BluetoothLEAdvertisementBytePattern {
+  
+  inline def apply(data: IBuffer, dataType: Double, offset: Double): BluetoothLEAdvertisementBytePattern = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], dataType = dataType.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothLEAdvertisementBytePattern]
+  }
+  
+  extension [Self <: BluetoothLEAdvertisementBytePattern](x: Self) {
+    
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: Double): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,25 +1,26 @@
 package typingsJapgolly.auth0Js.mod
 
-import typingsJapgolly.auth0Js.AnonConnection
-import typingsJapgolly.auth0Js.AnonRedirectUri
+import typingsJapgolly.auth0Js.anon.ResponseMode
+import typingsJapgolly.auth0Js.anon.emailstringpasswordstring
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "Redirect")
 @js.native
-class Redirect protected () extends js.Object {
-  def this(client: js.Any, options: js.Any) = this()
+open class Redirect protected () extends StObject {
+  def this(client: Any, options: Any) = this()
+  
   /**
     * Performs authentication with username/email and password with a database connection
     *
     * This method is not compatible with API Auth so if you need to fetch API tokens with audience
     * you should use {@link authorize} or {@link login}.
     */
-  def loginWithCredentials(options: AnonRedirectUri, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def loginWithCredentials(options: ResponseMode, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
+  
   /**
     * Signs up a new user and automatically logs the user in after the signup.
     */
-  def signupAndLogin(options: AnonConnection, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def signupAndLogin(options: emailstringpasswordstring, callback: Auth0Callback[Any, Auth0Error]): Unit = js.native
 }
-

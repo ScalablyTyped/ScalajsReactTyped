@@ -1,25 +1,35 @@
 package typingsJapgolly.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.data.Binding")
 @js.native
-class Binding protected () extends Observable_ {
-  def this(parents: js.Array[_], path: String) = this()
-  var dependencies: StringDictionary[Boolean] = js.native
-  var observable: Boolean = js.native
-  var parents: js.Array[_] = js.native
-  var path: String = js.native
-  var source: js.Any = js.native
+trait Binding
+  extends StObject
+     with Observable {
+  
   def change(e: js.Object): Unit = js.native
+  
+  var dependencies: StringDictionary[Boolean] = js.native
+  
   def destroy(): Unit = js.native
-  def get(): js.Any = js.native
-  def set(value: js.Any): Unit = js.native
-  def start(source: Observable_): Unit = js.native
-  def stop(source: Observable_): Unit = js.native
+  
+  def get(): Any = js.native
+  
+  var observable: Boolean = js.native
+  
+  var parents: js.Array[Any] = js.native
+  
+  var path: String = js.native
+  
+  def set(value: Any): Unit = js.native
+  
+  var source: Any = js.native
+  
+  def start(source: Observable): Unit = js.native
+  
+  def stop(source: Observable): Unit = js.native
 }
-

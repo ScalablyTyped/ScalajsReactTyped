@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder used to create TextStyle objects. It allows configuration of the text's
@@ -17,27 +17,36 @@ import scala.scalajs.js.annotation._
   *         .setColor('#0000FF').setFontName('Ariel').setFontSize(26);
   *     var style = textStyleBuilder.build();
   */
-trait TextStyleBuilder extends js.Object {
+trait TextStyleBuilder extends StObject {
+  
   def build(): TextStyle
+  
   def setColor(cssValue: String): TextStyleBuilder
+  
   def setFontName(fontName: String): TextStyleBuilder
+  
   def setFontSize(fontSize: Double): TextStyleBuilder
 }
-
 object TextStyleBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     build: CallbackTo[TextStyle],
-    setColor: String => CallbackTo[TextStyleBuilder],
-    setFontName: String => CallbackTo[TextStyleBuilder],
-    setFontSize: Double => CallbackTo[TextStyleBuilder]
+    setColor: String => TextStyleBuilder,
+    setFontName: String => TextStyleBuilder,
+    setFontSize: Double => TextStyleBuilder
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setColor")(js.Any.fromFunction1((t0: java.lang.String) => setColor(t0).runNow()))
-    __obj.updateDynamic("setFontName")(js.Any.fromFunction1((t0: java.lang.String) => setFontName(t0).runNow()))
-    __obj.updateDynamic("setFontSize")(js.Any.fromFunction1((t0: scala.Double) => setFontSize(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, setColor = js.Any.fromFunction1(setColor), setFontName = js.Any.fromFunction1(setFontName), setFontSize = js.Any.fromFunction1(setFontSize))
     __obj.asInstanceOf[TextStyleBuilder]
   }
+  
+  extension [Self <: TextStyleBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[TextStyle]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setColor", js.Any.fromFunction1(value))
+    
+    inline def setSetFontName(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontName", js.Any.fromFunction1(value))
+    
+    inline def setSetFontSize(value: Double => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
+  }
 }
-

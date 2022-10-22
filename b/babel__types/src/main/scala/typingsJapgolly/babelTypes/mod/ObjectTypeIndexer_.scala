@@ -1,51 +1,54 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ObjectTypeIndexer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ObjectTypeIndexer_
-  extends Flow
+  extends StObject
      with BaseNode
+     with Flow
      with UserWhitespacable {
+  
   var id: Identifier_ | Null
+  
   var key: FlowType
+  
   var static: Boolean
+  
   @JSName("type")
   var type_ObjectTypeIndexer_ : ObjectTypeIndexer
+  
   var value: FlowType
+  
   var variance: Variance_ | Null
 }
-
 object ObjectTypeIndexer_ {
-  @scala.inline
-  def apply(
-    key: FlowType,
-    static: Boolean,
-    `type`: ObjectTypeIndexer,
-    value: FlowType,
-    end: Int | Double = null,
-    id: Identifier_ = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    variance: Variance_ = null
-  ): ObjectTypeIndexer_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (variance != null) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
+  
+  inline def apply(key: FlowType, static: Boolean, value: FlowType): ObjectTypeIndexer_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], end = null, id = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    __obj.updateDynamic("type")("ObjectTypeIndexer")
     __obj.asInstanceOf[ObjectTypeIndexer_]
   }
+  
+  extension [Self <: ObjectTypeIndexer_](x: Self) {
+    
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setKey(value: FlowType): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ObjectTypeIndexer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: FlowType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    
+    inline def setVarianceNull: Self = StObject.set(x, "variance", null)
+  }
 }
-

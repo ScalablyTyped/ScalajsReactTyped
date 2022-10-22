@@ -1,60 +1,50 @@
 package typingsJapgolly.fundamentalReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.formRadioItemMod.FormRadioItemProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.libFormsFormRadioItemMod.FormRadioItemProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormRadioItem {
-  def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    customStyles: StringDictionary[js.Any] = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    name: String = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    FormRadioItemProps, 
-    MountedWithRawType[FormRadioItemProps, js.Object, RawMounted[FormRadioItemProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.fundamentalReact.formRadioItemMod.FormRadioItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.formRadioItemMod.FormRadioItemProps])(children: _*)
-  }
-  @JSImport("fundamental-react/lib/Forms/FormRadioItem", JSImport.Default)
+  @JSImport("fundamental-react", "FormRadioItem")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: Any): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def labelProps(value: Any): this.type = set("labelProps", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def state(value: Any): this.type = set("state", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: FormRadioItem.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FormRadioItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

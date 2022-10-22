@@ -1,47 +1,79 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EncryptedPassportElement extends js.Object {
+trait EncryptedPassportElement extends StObject {
+  
   var data: js.UndefOr[String] = js.undefined
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var files: js.UndefOr[js.Array[PassportFile]] = js.undefined
+  
   var front_side: js.UndefOr[PassportFile] = js.undefined
+  
   var hash: String
+  
   var phone_number: js.UndefOr[String] = js.undefined
+  
   var reverse_side: js.UndefOr[PassportFile] = js.undefined
+  
   var selfie: js.UndefOr[PassportFile] = js.undefined
+  
   var translation: js.UndefOr[js.Array[PassportFile]] = js.undefined
+  
   var `type`: String
 }
-
 object EncryptedPassportElement {
-  @scala.inline
-  def apply(
-    hash: String,
-    `type`: String,
-    data: String = null,
-    email: String = null,
-    files: js.Array[PassportFile] = null,
-    front_side: PassportFile = null,
-    phone_number: String = null,
-    reverse_side: PassportFile = null,
-    selfie: PassportFile = null,
-    translation: js.Array[PassportFile] = null
-  ): EncryptedPassportElement = {
+  
+  inline def apply(hash: String, `type`: String): EncryptedPassportElement = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (front_side != null) __obj.updateDynamic("front_side")(front_side.asInstanceOf[js.Any])
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (reverse_side != null) __obj.updateDynamic("reverse_side")(reverse_side.asInstanceOf[js.Any])
-    if (selfie != null) __obj.updateDynamic("selfie")(selfie.asInstanceOf[js.Any])
-    if (translation != null) __obj.updateDynamic("translation")(translation.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptedPassportElement]
   }
+  
+  extension [Self <: EncryptedPassportElement](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setFiles(value: js.Array[PassportFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: PassportFile*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setFront_side(value: PassportFile): Self = StObject.set(x, "front_side", value.asInstanceOf[js.Any])
+    
+    inline def setFront_sideUndefined: Self = StObject.set(x, "front_side", js.undefined)
+    
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    
+    inline def setReverse_side(value: PassportFile): Self = StObject.set(x, "reverse_side", value.asInstanceOf[js.Any])
+    
+    inline def setReverse_sideUndefined: Self = StObject.set(x, "reverse_side", js.undefined)
+    
+    inline def setSelfie(value: PassportFile): Self = StObject.set(x, "selfie", value.asInstanceOf[js.Any])
+    
+    inline def setSelfieUndefined: Self = StObject.set(x, "selfie", js.undefined)
+    
+    inline def setTranslation(value: js.Array[PassportFile]): Self = StObject.set(x, "translation", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationUndefined: Self = StObject.set(x, "translation", js.undefined)
+    
+    inline def setTranslationVarargs(value: PassportFile*): Self = StObject.set(x, "translation", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

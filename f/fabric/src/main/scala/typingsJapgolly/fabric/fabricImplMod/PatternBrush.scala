@@ -1,18 +1,25 @@
 package typingsJapgolly.fabric.fabricImplMod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "PatternBrush")
 @js.native
-class PatternBrush () extends PencilBrush {
+open class PatternBrush protected () extends PencilBrush {
   /**
-  	 * Creates "pattern" instance property
-  	 */
-  def getPattern(): js.Any = js.native
+    * Constructor
+    * @param {Canvas} canvas
+    */
+  def this(canvas: Canvas) = this()
+  
+  /**
+    * Creates "pattern" instance property
+    */
+  def getPattern(): Any = js.native
+  
   def getPatternSrc(): HTMLCanvasElement = js.native
+  
   def getPatternSrcFunction(): String = js.native
 }
-

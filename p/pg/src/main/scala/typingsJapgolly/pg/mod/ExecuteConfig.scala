@@ -1,21 +1,30 @@
 package typingsJapgolly.pg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExecuteConfig extends js.Object {
+trait ExecuteConfig extends StObject {
+  
   var portal: js.UndefOr[String] = js.undefined
+  
   var rows: js.UndefOr[String] = js.undefined
 }
-
 object ExecuteConfig {
-  @scala.inline
-  def apply(portal: String = null, rows: String = null): ExecuteConfig = {
+  
+  inline def apply(): ExecuteConfig = {
     val __obj = js.Dynamic.literal()
-    if (portal != null) __obj.updateDynamic("portal")(portal.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteConfig]
   }
+  
+  extension [Self <: ExecuteConfig](x: Self) {
+    
+    inline def setPortal(value: String): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    
+    inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+  }
 }
-

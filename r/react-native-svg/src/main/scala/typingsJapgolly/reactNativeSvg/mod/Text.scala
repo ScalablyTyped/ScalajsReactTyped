@@ -1,22 +1,22 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Text")
 @js.native
-class Text protected ()
-  extends Component[TextProps, ComponentState, js.Any] {
-  def this(props: TextProps) = this()
-  def this(props: TextProps, context: js.Any) = this()
+open class Text ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Text
+/* static members */
+object Text {
+  
+  @JSImport("react-native-svg", "Text")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Text.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Text")
-@js.native
-object Text extends TopLevel[ComponentClass[TextProps, ComponentState]]
-

@@ -2,22 +2,31 @@ package typingsJapgolly.lokijs
 
 import typingsJapgolly.lokijs.lokijsStrings.active
 import typingsJapgolly.lokijs.lokijsStrings.passive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicViewOptions extends js.Object {
+trait DynamicViewOptions extends StObject {
+  
   var minRebuildInterval: Double
+  
   var persistent: Boolean
+  
   var sortPriority: active | passive
 }
-
 object DynamicViewOptions {
-  @scala.inline
-  def apply(minRebuildInterval: Double, persistent: Boolean, sortPriority: active | passive): DynamicViewOptions = {
-    val __obj = js.Dynamic.literal(minRebuildInterval = minRebuildInterval.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], sortPriority = sortPriority.asInstanceOf[js.Any])
   
+  inline def apply(minRebuildInterval: Double, persistent: Boolean, sortPriority: active | passive): DynamicViewOptions = {
+    val __obj = js.Dynamic.literal(minRebuildInterval = minRebuildInterval.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], sortPriority = sortPriority.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamicViewOptions]
   }
+  
+  extension [Self <: DynamicViewOptions](x: Self) {
+    
+    inline def setMinRebuildInterval(value: Double): Self = StObject.set(x, "minRebuildInterval", value.asInstanceOf[js.Any])
+    
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    
+    inline def setSortPriority(value: active | passive): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
+  }
 }
-

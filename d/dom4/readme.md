@@ -10,15 +10,12 @@ a fully tested and covered polyfill for new DOM Level 4 entries
 | ------------------ | :-------------: |
 | Full name          | dom4 |
 | Keywords           | DOM, Level 4, classList, CustomEvent, DOM4 |
-| # releases         | 10 |
-| # dependents       | 38 |
-| # downloads        | 4141695 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 828323.6666666666 |
+| # stars            | 923.0 |
 
 ## Links
-- [Homepage](https://github.com/WebReflection/dom4)
-- [Bugs](https://github.com/WebReflection/dom4/issues)
-- [Repository](https://github.com/WebReflection/dom4)
 - [Npm](https://www.npmjs.com/package/dom4)
     
 

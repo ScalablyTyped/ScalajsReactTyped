@@ -1,11 +1,12 @@
 package typingsJapgolly.jquerySimplepagination
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimplePaginationOptions extends js.Object {
+trait SimplePaginationOptions extends StObject {
+  
   /**
     * The class of the CSS theme.
     * 
@@ -13,6 +14,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var cssStyle: js.UndefOr[String] = js.undefined
+  
   /**
     * Which page will be selected immediately after init.
     * 
@@ -20,6 +22,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var currentPage: js.UndefOr[Double] = js.undefined
+  
   /**
     * How many page numbers should be visible while navigating.
     * Minimum allowed: 3 (previous, current & next)
@@ -28,6 +31,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var displayedPages: js.UndefOr[Double] = js.undefined
+  
   /**
     * How many page numbers are visible at the beginning/ending of the pagination.
     * 
@@ -35,6 +39,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var edges: js.UndefOr[Double] = js.undefined
+  
   /**
     * When this option is true,
     * clicking on the ellipse will replace the ellipse
@@ -44,7 +49,9 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var ellipsePageSet: js.UndefOr[Boolean] = js.undefined
+  
   var ellipseText: js.UndefOr[String] = js.undefined
+  
   /**
     * A string used to build the href attribute, added before the page number.
     * 
@@ -52,6 +59,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var hrefTextPrefix: js.UndefOr[String] = js.undefined
+  
   /**
     * Another string used to build the href attribute, added after the page number.
     * 
@@ -59,7 +67,9 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var hrefTextSuffix: js.UndefOr[String] = js.undefined
+  
   var invertPageOrder: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Total number of items that will be used to calculate the pages.
     * 
@@ -67,6 +77,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var items: js.UndefOr[Double] = js.undefined
+  
   /**
     * Number of items displayed on each page.
     * 
@@ -74,15 +85,19 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var itemsOnPage: js.UndefOr[Double] = js.undefined
+  
   /**
     * A collection of labels that will be used to render the pagination items, replacing the numbers.
     * 
     * @type {any[]}
     * @memberof SimplePaginationOptions
     */
-  var labelMap: js.UndefOr[js.Array[_]] = js.undefined
+  var labelMap: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var listStyle: js.UndefOr[Boolean] = js.undefined
+  
   var nextAtFront: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Text to be display on the next button.
     * 
@@ -90,26 +105,30 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var nextText: js.UndefOr[String] = js.undefined
+  
   /**
     * Function to call when the pagination is initialized.
     * 
     * @memberof SimplePaginationOptions
     */
   var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * Function to call when a page is clicked.
     * Page number and event are optional parameters.
     * 
     * @memberof SimplePaginationOptions
     */
-  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ js.Any, Unit]] = js.undefined
+  var onPageClick: js.UndefOr[js.Function2[/* page */ Double, /* event */ Any, Unit]] = js.undefined
+  
   /**
-    * 	If specified, items and itemsOnPage will not be used to calculate the number of pages.
+    *     If specified, items and itemsOnPage will not be used to calculate the number of pages.
     * 
     * @type {number}
     * @memberof SimplePaginationOptions
     */
   var pages: js.UndefOr[Double] = js.undefined
+  
   /**
     * Text to be display on the previous button.
     * 
@@ -117,6 +136,7 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var prevText: js.UndefOr[String] = js.undefined
+  
   /**
     * Set to false if you don't want to select the page immediately after click.
     * 
@@ -124,63 +144,114 @@ trait SimplePaginationOptions extends js.Object {
     * @memberof SimplePaginationOptions
     */
   var selectOnClick: js.UndefOr[Boolean] = js.undefined
+  
   var useAnchors: js.UndefOr[Boolean] = js.undefined
+  
   var useEndEdge: js.UndefOr[Boolean] = js.undefined
+  
   var useStartEdge: js.UndefOr[Boolean] = js.undefined
 }
-
 object SimplePaginationOptions {
-  @scala.inline
-  def apply(
-    cssStyle: String = null,
-    currentPage: Int | Double = null,
-    displayedPages: Int | Double = null,
-    edges: Int | Double = null,
-    ellipsePageSet: js.UndefOr[Boolean] = js.undefined,
-    ellipseText: String = null,
-    hrefTextPrefix: String = null,
-    hrefTextSuffix: String = null,
-    invertPageOrder: js.UndefOr[Boolean] = js.undefined,
-    items: Int | Double = null,
-    itemsOnPage: Int | Double = null,
-    labelMap: js.Array[_] = null,
-    listStyle: js.UndefOr[Boolean] = js.undefined,
-    nextAtFront: js.UndefOr[Boolean] = js.undefined,
-    nextText: String = null,
-    onInit: js.UndefOr[Callback] = js.undefined,
-    onPageClick: (/* page */ Double, /* event */ js.Any) => Callback = null,
-    pages: Int | Double = null,
-    prevText: String = null,
-    selectOnClick: js.UndefOr[Boolean] = js.undefined,
-    useAnchors: js.UndefOr[Boolean] = js.undefined,
-    useEndEdge: js.UndefOr[Boolean] = js.undefined,
-    useStartEdge: js.UndefOr[Boolean] = js.undefined
-  ): SimplePaginationOptions = {
+  
+  inline def apply(): SimplePaginationOptions = {
     val __obj = js.Dynamic.literal()
-    if (cssStyle != null) __obj.updateDynamic("cssStyle")(cssStyle.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (displayedPages != null) __obj.updateDynamic("displayedPages")(displayedPages.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (!js.isUndefined(ellipsePageSet)) __obj.updateDynamic("ellipsePageSet")(ellipsePageSet.asInstanceOf[js.Any])
-    if (ellipseText != null) __obj.updateDynamic("ellipseText")(ellipseText.asInstanceOf[js.Any])
-    if (hrefTextPrefix != null) __obj.updateDynamic("hrefTextPrefix")(hrefTextPrefix.asInstanceOf[js.Any])
-    if (hrefTextSuffix != null) __obj.updateDynamic("hrefTextSuffix")(hrefTextSuffix.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertPageOrder)) __obj.updateDynamic("invertPageOrder")(invertPageOrder.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsOnPage != null) __obj.updateDynamic("itemsOnPage")(itemsOnPage.asInstanceOf[js.Any])
-    if (labelMap != null) __obj.updateDynamic("labelMap")(labelMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextAtFront)) __obj.updateDynamic("nextAtFront")(nextAtFront.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    onInit.foreach(p => __obj.updateDynamic("onInit")(p.toJsFn))
-    if (onPageClick != null) __obj.updateDynamic("onPageClick")(js.Any.fromFunction2((t0: /* page */ scala.Double, t1: /* event */ js.Any) => onPageClick(t0, t1).runNow()))
-    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(useAnchors)) __obj.updateDynamic("useAnchors")(useAnchors.asInstanceOf[js.Any])
-    if (!js.isUndefined(useEndEdge)) __obj.updateDynamic("useEndEdge")(useEndEdge.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStartEdge)) __obj.updateDynamic("useStartEdge")(useStartEdge.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimplePaginationOptions]
   }
+  
+  extension [Self <: SimplePaginationOptions](x: Self) {
+    
+    inline def setCssStyle(value: String): Self = StObject.set(x, "cssStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCssStyleUndefined: Self = StObject.set(x, "cssStyle", js.undefined)
+    
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    
+    inline def setDisplayedPages(value: Double): Self = StObject.set(x, "displayedPages", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayedPagesUndefined: Self = StObject.set(x, "displayedPages", js.undefined)
+    
+    inline def setEdges(value: Double): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    
+    inline def setEllipsePageSet(value: Boolean): Self = StObject.set(x, "ellipsePageSet", value.asInstanceOf[js.Any])
+    
+    inline def setEllipsePageSetUndefined: Self = StObject.set(x, "ellipsePageSet", js.undefined)
+    
+    inline def setEllipseText(value: String): Self = StObject.set(x, "ellipseText", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseTextUndefined: Self = StObject.set(x, "ellipseText", js.undefined)
+    
+    inline def setHrefTextPrefix(value: String): Self = StObject.set(x, "hrefTextPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setHrefTextPrefixUndefined: Self = StObject.set(x, "hrefTextPrefix", js.undefined)
+    
+    inline def setHrefTextSuffix(value: String): Self = StObject.set(x, "hrefTextSuffix", value.asInstanceOf[js.Any])
+    
+    inline def setHrefTextSuffixUndefined: Self = StObject.set(x, "hrefTextSuffix", js.undefined)
+    
+    inline def setInvertPageOrder(value: Boolean): Self = StObject.set(x, "invertPageOrder", value.asInstanceOf[js.Any])
+    
+    inline def setInvertPageOrderUndefined: Self = StObject.set(x, "invertPageOrder", js.undefined)
+    
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsOnPage(value: Double): Self = StObject.set(x, "itemsOnPage", value.asInstanceOf[js.Any])
+    
+    inline def setItemsOnPageUndefined: Self = StObject.set(x, "itemsOnPage", js.undefined)
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setLabelMap(value: js.Array[Any]): Self = StObject.set(x, "labelMap", value.asInstanceOf[js.Any])
+    
+    inline def setLabelMapUndefined: Self = StObject.set(x, "labelMap", js.undefined)
+    
+    inline def setLabelMapVarargs(value: Any*): Self = StObject.set(x, "labelMap", js.Array(value*))
+    
+    inline def setListStyle(value: Boolean): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+    
+    inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+    
+    inline def setNextAtFront(value: Boolean): Self = StObject.set(x, "nextAtFront", value.asInstanceOf[js.Any])
+    
+    inline def setNextAtFrontUndefined: Self = StObject.set(x, "nextAtFront", js.undefined)
+    
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    
+    inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
+    
+    inline def setOnInit(value: Callback): Self = StObject.set(x, "onInit", value.toJsFn)
+    
+    inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+    
+    inline def setOnPageClick(value: (/* page */ Double, /* event */ Any) => Callback): Self = StObject.set(x, "onPageClick", js.Any.fromFunction2((t0: /* page */ Double, t1: /* event */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnPageClickUndefined: Self = StObject.set(x, "onPageClick", js.undefined)
+    
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    
+    inline def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
+    
+    inline def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
+    
+    inline def setSelectOnClick(value: Boolean): Self = StObject.set(x, "selectOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnClickUndefined: Self = StObject.set(x, "selectOnClick", js.undefined)
+    
+    inline def setUseAnchors(value: Boolean): Self = StObject.set(x, "useAnchors", value.asInstanceOf[js.Any])
+    
+    inline def setUseAnchorsUndefined: Self = StObject.set(x, "useAnchors", js.undefined)
+    
+    inline def setUseEndEdge(value: Boolean): Self = StObject.set(x, "useEndEdge", value.asInstanceOf[js.Any])
+    
+    inline def setUseEndEdgeUndefined: Self = StObject.set(x, "useEndEdge", js.undefined)
+    
+    inline def setUseStartEdge(value: Boolean): Self = StObject.set(x, "useStartEdge", value.asInstanceOf[js.Any])
+    
+    inline def setUseStartEdgeUndefined: Self = StObject.set(x, "useStartEdge", js.undefined)
+  }
 }
-

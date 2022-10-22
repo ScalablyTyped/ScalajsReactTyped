@@ -1,64 +1,51 @@
 package typingsJapgolly.reactOnsenui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedWidth
+import typingsJapgolly.reactOnsenui.anon.FixedWidth
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
 import typingsJapgolly.reactOnsenui.mod.ModifiersNumber
 import typingsJapgolly.reactOnsenui.mod.ModifiersString
-import typingsJapgolly.reactOnsenui.reactOnsenuiNumbers.`180`
-import typingsJapgolly.reactOnsenui.reactOnsenuiNumbers.`270`
-import typingsJapgolly.reactOnsenui.reactOnsenuiNumbers.`90`
+import typingsJapgolly.reactOnsenui.reactOnsenuiInts.`180`
+import typingsJapgolly.reactOnsenui.reactOnsenuiInts.`270`
+import typingsJapgolly.reactOnsenui.reactOnsenuiInts.`90`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Icon {
-  def apply(
-    className: String = null,
-    fixedWidth: js.UndefOr[Boolean] = js.undefined,
-    icon: String | ModifiersString = null,
-    id: String = null,
-    modifier: String = null,
-    rotate: `90` | `180` | `270` = null,
-    size: Double | ModifiersNumber = null,
-    spin: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameFixedWidth, 
-    typingsJapgolly.reactOnsenui.mod.Icon, 
-    Unit, 
-    HTMLAttributesidclassNameFixedWidth
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedWidth)) __obj.updateDynamic("fixedWidth")(fixedWidth.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(spin)) __obj.updateDynamic("spin")(spin.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedWidth, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.Icon](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedWidth])(children: _*)
-  }
   @JSImport("react-onsenui", "Icon")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.Icon] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def fixedWidth(value: Boolean): this.type = set("fixedWidth", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: String | ModifiersString): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def modifier(value: String): this.type = set("modifier", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: `90` | `180` | `270`): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double | ModifiersNumber): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def spin(value: Boolean): this.type = set("spin", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Icon.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & FixedWidth): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

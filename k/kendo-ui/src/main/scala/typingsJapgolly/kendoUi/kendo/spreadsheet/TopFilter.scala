@@ -1,14 +1,16 @@
 package typingsJapgolly.kendoUi.kendo.spreadsheet
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.spreadsheet.TopFilter")
 @js.native
-class TopFilter () extends Observable_ {
+trait TopFilter
+  extends StObject
+     with Observable {
+  
+  def init(options: Any): Unit = js.native
+  
   var options: TopFilterOptions = js.native
-  def init(options: js.Any): Unit = js.native
 }
-

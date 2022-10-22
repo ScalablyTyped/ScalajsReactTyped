@@ -2,62 +2,100 @@ package typingsJapgolly.zui
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.File
+import org.scalajs.dom.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileObj extends js.Object {
-  var ext: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[String] = js.undefined
-  var isImage: js.UndefOr[Boolean] = js.undefined
-  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
-  var loaded: js.UndefOr[Double] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var origSize: js.UndefOr[Double] = js.undefined
-  var percent: js.UndefOr[Double] = js.undefined
-  var previewImage: js.UndefOr[String] = js.undefined
-  var size: js.UndefOr[Double] = js.undefined
-  var status: js.UndefOr[STATUS] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+trait FileObj extends StObject {
+  
   def destroy(): Unit
+  
+  var ext: js.UndefOr[String] = js.undefined
+  
   def getNative(): File
+  
+  var id: js.UndefOr[String] = js.undefined
+  
+  var isImage: js.UndefOr[Boolean] = js.undefined
+  
+  var lastModifiedDate: js.UndefOr[js.Date] = js.undefined
+  
+  var loaded: js.UndefOr[Double] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
+  
+  var origSize: js.UndefOr[Double] = js.undefined
+  
+  var percent: js.UndefOr[Double] = js.undefined
+  
+  var previewImage: js.UndefOr[String] = js.undefined
+  
+  var size: js.UndefOr[Double] = js.undefined
+  
+  var status: js.UndefOr[STATUS] = js.undefined
+  
+  var `type`: js.UndefOr[String] = js.undefined
 }
-
 object FileObj {
-  @scala.inline
-  def apply(
-    destroy: Callback,
-    getNative: CallbackTo[File],
-    ext: String = null,
-    id: String = null,
-    isImage: js.UndefOr[Boolean] = js.undefined,
-    lastModifiedDate: js.Date = null,
-    loaded: Int | Double = null,
-    name: String = null,
-    origSize: Int | Double = null,
-    percent: Int | Double = null,
-    previewImage: String = null,
-    size: Int | Double = null,
-    status: STATUS = null,
-    `type`: String = null
-  ): FileObj = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.updateDynamic("getNative")(getNative.toJsFn)
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isImage)) __obj.updateDynamic("isImage")(isImage.asInstanceOf[js.Any])
-    if (lastModifiedDate != null) __obj.updateDynamic("lastModifiedDate")(lastModifiedDate.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (origSize != null) __obj.updateDynamic("origSize")(origSize.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (previewImage != null) __obj.updateDynamic("previewImage")(previewImage.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(destroy: Callback, getNative: CallbackTo[File]): FileObj = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn, getNative = getNative.toJsFn)
     __obj.asInstanceOf[FileObj]
   }
+  
+  extension [Self <: FileObj](x: Self) {
+    
+    inline def setDestroy(value: Callback): Self = StObject.set(x, "destroy", value.toJsFn)
+    
+    inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    
+    inline def setGetNative(value: CallbackTo[File]): Self = StObject.set(x, "getNative", value.toJsFn)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsImage(value: Boolean): Self = StObject.set(x, "isImage", value.asInstanceOf[js.Any])
+    
+    inline def setIsImageUndefined: Self = StObject.set(x, "isImage", js.undefined)
+    
+    inline def setLastModifiedDate(value: js.Date): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "lastModifiedDate", js.undefined)
+    
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrigSize(value: Double): Self = StObject.set(x, "origSize", value.asInstanceOf[js.Any])
+    
+    inline def setOrigSizeUndefined: Self = StObject.set(x, "origSize", js.undefined)
+    
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    
+    inline def setPreviewImage(value: String): Self = StObject.set(x, "previewImage", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewImageUndefined: Self = StObject.set(x, "previewImage", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStatus(value: STATUS): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

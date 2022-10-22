@@ -1,12 +1,12 @@
 package typingsJapgolly.datatablesNet.DataTables
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "util-methods"
-trait CommonSubMethods extends js.Object {
+trait CommonSubMethods extends StObject {
+  
   /**
     * Get the DataTables cached data for the selected cell
     *
@@ -14,13 +14,15 @@ trait CommonSubMethods extends js.Object {
     */
   def cache(t: String): Api
 }
-
 object CommonSubMethods {
-  @scala.inline
-  def apply(cache: String => CallbackTo[Api]): CommonSubMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cache")(js.Any.fromFunction1((t0: java.lang.String) => cache(t0).runNow()))
+  
+  inline def apply(cache: String => Api): CommonSubMethods = {
+    val __obj = js.Dynamic.literal(cache = js.Any.fromFunction1(cache))
     __obj.asInstanceOf[CommonSubMethods]
   }
+  
+  extension [Self <: CommonSubMethods](x: Self) {
+    
+    inline def setCache(value: String => Api): Self = StObject.set(x, "cache", js.Any.fromFunction1(value))
+  }
 }
-

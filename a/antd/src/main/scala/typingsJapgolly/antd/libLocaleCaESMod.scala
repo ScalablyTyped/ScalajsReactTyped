@@ -1,26 +1,19 @@
 package typingsJapgolly.antd
 
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.antd.libLocaleProviderMod.Locale
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/locale/ca_ES", JSImport.Namespace)
-@js.native
-object libLocaleCaESMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    var Calendar: AnonTimePickerLocale = js.native
-    var DatePicker: AnonTimePickerLocale = js.native
-    var Empty: AnonDescription = js.native
-    var Modal: AnonCancelText = js.native
-    var Pagination: js.Any = js.native
-    var Popconfirm: AnonOkText = js.native
-    var Table: AnonFilterReset = js.native
-    var TimePicker: AnonPlaceholderString = js.native
-    var Transfer: AnonItemUnit = js.native
-    var Upload: AnonDownloadFile = js.native
-    var locale: String = js.native
-  }
+object libLocaleCaESMod extends Shortcut {
   
+  @JSImport("antd/lib/locale/ca_ES", JSImport.Default)
+  @js.native
+  val default: Locale = js.native
+  
+  type _To = Locale
+  
+  /* This means you don't have to write `default`, but can instead just say `libLocaleCaESMod.foo` */
+  override def _to: Locale = default
 }
-

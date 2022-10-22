@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.Toolbar.ToolbarProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Toolbar/Toolbar", JSImport.Namespace)
-@js.native
-object toolbarToolbarMod extends js.Object {
-  @js.native
-  class Toolbar ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+object toolbarToolbarMod {
   
+  @JSImport("material-ui/Toolbar/Toolbar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[ToolbarProps, js.Object, js.Any]
+  open class default () extends Toolbar
   
+  @JSImport("material-ui/Toolbar/Toolbar", "Toolbar")
+  @js.native
+  open class Toolbar ()
+    extends Component[ToolbarProps, js.Object, Any]
 }
-

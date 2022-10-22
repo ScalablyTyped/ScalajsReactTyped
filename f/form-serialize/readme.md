@@ -11,9 +11,9 @@ serialize html forms
 | Full name          | form-serialize |
 | Keywords           | form, serialize |
 | # releases         | 1 |
-| # dependents       | 92 |
-| # downloads        | 1588933 |
-| # stars            | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 288251.0 |
+| # stars            | 396.0 |
 
 ## Links
 - [Homepage](https://github.com/shtylman/form-serialize#readme)

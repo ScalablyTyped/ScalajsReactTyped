@@ -1,35 +1,41 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.solidityParserAntlr.mod.Statement because Already inherited */ trait VariableDeclarationStatement
-  extends SimpleStatement
+  extends StObject
      with BaseASTNode
-     with ASTNode {
+     with ASTNode
+     with SimpleStatement {
+  
   var initialValue: js.UndefOr[Expression] = js.undefined
+  
   @JSName("type")
   var type_VariableDeclarationStatement: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement
+  
   var variables: js.Array[ASTNode]
 }
-
 object VariableDeclarationStatement {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement,
-    variables: js.Array[ASTNode],
-    initialValue: Expression = null,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): VariableDeclarationStatement = {
+  
+  inline def apply(variables: js.Array[ASTNode]): VariableDeclarationStatement = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (initialValue != null) __obj.updateDynamic("initialValue")(initialValue.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarationStatement")
     __obj.asInstanceOf[VariableDeclarationStatement]
   }
+  
+  extension [Self <: VariableDeclarationStatement](x: Self) {
+    
+    inline def setInitialValue(value: Expression): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+    
+    inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.VariableDeclarationStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVariables(value: js.Array[ASTNode]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    
+    inline def setVariablesVarargs(value: ASTNode*): Self = StObject.set(x, "variables", js.Array(value*))
+  }
 }
-

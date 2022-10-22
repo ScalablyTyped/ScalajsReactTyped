@@ -1,14 +1,21 @@
 package typingsJapgolly.reactWindow.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "VariableSizeList")
 @js.native
-class VariableSizeList ()
-  extends Component[VariableSizeListProps, js.Object, js.Any] {
+open class VariableSizeList[T] protected ()
+  extends Component[VariableSizeListProps[T], js.Object, Any] {
+  def this(props: VariableSizeListProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: VariableSizeListProps[T], context: Any) = this()
+  
   /**
     * VariableSizeList caches offsets and measurements for each index for performance purposes.
     * This method clears that cached data for all items after (and including) the specified index.
@@ -18,11 +25,14 @@ class VariableSizeList ()
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
     * specify a value of false for the second, optional parameter.
     */
+  def resetAfterIndex(index: Double): Unit = js.native
   def resetAfterIndex(index: Double, shouldForceUpdate: Boolean): Unit = js.native
+  
   /**
     * Scroll to the specified offset (scrollTop or scrollLeft, depending on the direction prop).
     */
   def scrollTo(scrollOffset: Double): Unit = js.native
+  
   /**
     * Scroll to the specified item.
     *
@@ -41,4 +51,3 @@ class VariableSizeList ()
   def scrollToItem(index: Double): Unit = js.native
   def scrollToItem(index: Double, align: Align): Unit = js.native
 }
-

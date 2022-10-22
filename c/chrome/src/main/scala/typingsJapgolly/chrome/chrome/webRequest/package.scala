@@ -1,11 +1,12 @@
-package typingsJapgolly.chrome.chrome
+package typingsJapgolly.chrome.chrome.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object webRequest {
-  type WebRedirectionResponseEvent = typingsJapgolly.chrome.chrome.webRequest._WebResponseHeadersEvent[typingsJapgolly.chrome.chrome.webRequest.WebRedirectionResponseDetails]
-  type WebResponseCacheEvent = typingsJapgolly.chrome.chrome.webRequest._WebResponseHeadersEvent[typingsJapgolly.chrome.chrome.webRequest.WebResponseCacheDetails]
-  type WebResponseErrorEvent = typingsJapgolly.chrome.chrome.webRequest._WebResponseHeadersEvent[typingsJapgolly.chrome.chrome.webRequest.WebResponseErrorDetails]
-}
+
+type WebRedirectionResponseEvent = _WebResponseHeadersEvent[WebRedirectionResponseDetails]
+
+type WebResponseCacheEvent = _WebResponseHeadersEvent[WebResponseCacheDetails]
+
+type WebResponseErrorEvent = _WebResponseHeadersEvent[WebResponseErrorDetails]

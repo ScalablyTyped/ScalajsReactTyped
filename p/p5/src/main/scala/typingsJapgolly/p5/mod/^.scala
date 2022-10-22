@@ -1,14 +1,16 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @JSImport("p5", JSImport.Namespace)
 @js.native
-class ^ protected () extends p5 {
+open class ^ protected ()
+  extends StObject
+     with p5 {
   /**
     *   This is the p5 instance constructor. A p5 instance
     *   holds all the properties and methods related to a
@@ -31,7 +33,6 @@ class ^ protected () extends p5 {
     *   @param [node] element to attach canvas to
     *   @return a p5 instance
     */
-  def this(sketch: js.Function1[/* repeated */ js.Any, _]) = this()
-  def this(sketch: js.Function1[/* repeated */ js.Any, _], node: HTMLElement) = this()
+  def this(sketch: js.Function1[/* repeated */ Any, Any]) = this()
+  def this(sketch: js.Function1[/* repeated */ Any, Any], node: HTMLElement) = this()
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
-import typingsJapgolly.gitlab.baseServiceMod.BaseServiceOptions
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "MergeRequestAwardEmojis")
 @js.native
-class MergeRequestAwardEmojis ()
-  extends typingsJapgolly.gitlab.servicesMod.MergeRequestAwardEmojis {
+open class MergeRequestAwardEmojis protected ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.MergeRequestAwardEmojis {
   def this(options: BaseServiceOptions) = this()
 }
-

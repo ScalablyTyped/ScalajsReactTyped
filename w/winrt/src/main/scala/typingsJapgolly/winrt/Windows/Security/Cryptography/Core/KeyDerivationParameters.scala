@@ -1,31 +1,17 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
-@js.native
-class KeyDerivationParameters () extends IKeyDerivationParameters {
-  /* CompleteClass */
-  override var iterationCount: Double = js.native
-  /* CompleteClass */
-  override var kdfGenericBinary: IBuffer = js.native
+trait KeyDerivationParameters
+  extends StObject
+     with IKeyDerivationParameters
+object KeyDerivationParameters {
+  
+  inline def apply(iterationCount: Double, kdfGenericBinary: IBuffer): KeyDerivationParameters = {
+    val __obj = js.Dynamic.literal(iterationCount = iterationCount.asInstanceOf[js.Any], kdfGenericBinary = kdfGenericBinary.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyDerivationParameters]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
-@js.native
-object KeyDerivationParameters extends js.Object {
-  def buildForPbkdf2(pbkdf2Salt: IBuffer, iterationCount: Double): KeyDerivationParameters = js.native
-  def buildForSP800108(label: IBuffer, context: IBuffer): KeyDerivationParameters = js.native
-  def buildForSP80056a(
-    algorithmId: IBuffer,
-    partyUInfo: IBuffer,
-    partyVInfo: IBuffer,
-    suppPubInfo: IBuffer,
-    suppPrivInfo: IBuffer
-  ): KeyDerivationParameters = js.native
-}
-

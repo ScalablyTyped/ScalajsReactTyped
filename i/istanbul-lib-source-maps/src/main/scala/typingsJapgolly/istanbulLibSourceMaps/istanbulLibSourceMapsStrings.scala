@@ -1,19 +1,16 @@
 package typingsJapgolly.istanbulLibSourceMaps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object istanbulLibSourceMapsStrings {
-  @js.native
-  sealed trait file extends js.Object
   
   @js.native
-  sealed trait memory extends js.Object
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
+  @js.native
+  sealed trait memory extends StObject
+  inline def memory: memory = "memory".asInstanceOf[memory]
 }
-

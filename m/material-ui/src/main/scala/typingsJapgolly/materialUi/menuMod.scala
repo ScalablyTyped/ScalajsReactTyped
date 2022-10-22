@@ -1,21 +1,25 @@
 package typingsJapgolly.materialUi
 
-import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import typingsJapgolly.materialUi.MaterialUI.Menus.MenuItemProps
+import typingsJapgolly.materialUi.MaterialUI.Menus.MenuProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/svg-icons/navigation/menu", JSImport.Namespace)
-@js.native
-object menuMod extends js.Object {
-  @js.native
-  class NavigationMenu ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+object menuMod {
   
+  @JSImport("material-ui/Menu", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[SvgIconProps, js.Object, js.Any]
+  open class default () extends Menu
   
+  @JSImport("material-ui/Menu", "Menu")
+  @js.native
+  open class Menu ()
+    extends Component[MenuProps, js.Object, Any]
+  
+  @JSImport("material-ui/Menu", "MenuItem")
+  @js.native
+  open class MenuItem ()
+    extends Component[MenuItemProps, js.Object, Any]
 }
-

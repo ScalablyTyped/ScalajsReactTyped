@@ -1,26 +1,35 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.typescript.mod.TextRange because Already inherited
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.typescript.mod.ReadonlyTextRange because Already inherited
 - typingsJapgolly.typescript.mod.Node because Already inherited
 - typingsJapgolly.typescript.mod.Declaration because Already inherited
 - typingsJapgolly.typescript.mod.NamedDeclaration because Already inherited
-- typingsJapgolly.typescript.mod.TypeElement because var conflicts: _declarationBrand, decorators, end, flags, kind, modifiers, name, parent, pos. Inlined _typeElementBrand, questionToken */ @js.native
+- typingsJapgolly.typescript.mod.TypeElement because var conflicts: _declarationBrand. Inlined _typeElementBrand, questionToken */ @js.native
 trait MethodSignature
-  extends SignatureDeclarationBase
-     with SignatureDeclaration
-     with _HasJSDoc {
-  var _typeElementBrand: js.Any = js.native
+  extends StObject
+     with SignatureDeclarationBase
+     with HasJSDoc
+     with HasModifiers
+     with SignatureDeclaration {
+  
+  var _typeElementBrand: Any = js.native
+  
   @JSName("kind")
-  var kind_MethodSignature: typingsJapgolly.typescript.mod.SyntaxKind.MethodSignature = js.native
+  val kind_MethodSignature: typingsJapgolly.typescript.mod.SyntaxKind.MethodSignature = js.native
+  
+  @JSName("modifiers")
+  val modifiers_MethodSignature: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("name")
-  var name_MethodSignature: PropertyName = js.native
+  val name_MethodSignature: PropertyName = js.native
+  
   @JSName("parent")
-  var parent_MethodSignature: ObjectTypeDeclaration = js.native
-  var questionToken: js.UndefOr[QuestionToken] = js.native
+  val parent_MethodSignature: ObjectTypeDeclaration = js.native
+  
+  val questionToken: js.UndefOr[QuestionToken] = js.native
 }
-

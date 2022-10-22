@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *  cy   --> Cy.Core
@@ -14,7 +14,9 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Core
-  extends CoreGraphManipulation
+  extends StObject
+     with CoreGraphManipulation
+     with CoreData
      with CoreGraphManipulationExt
      with CoreEvents
      with CoreViewportManipulation
@@ -22,4 +24,3 @@ trait Core
      with CoreLayout
      with CoreStyle
      with CoreExport
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-email-editor
 
-Typings are for version 0.9
+Typings are for version 1.1
 
 ## Library description:
 Unlayer's Email Editor Component for React.js
@@ -10,10 +10,10 @@ Unlayer's Email Editor Component for React.js
 | ------------------ | :-------------: |
 | Full name          | react-email-editor |
 | Keywords           | react-component |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 117789 |
-| # stars            | 2 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 57933.0 |
+| # stars            | 3381.0 |
 
 ## Links
 - [Homepage](https://github.com/unlayer/react-email-editor#readme)

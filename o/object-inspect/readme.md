@@ -1,7 +1,7 @@
 
 # Scala.js typings for object-inspect
 
-Typings are for version 1.6
+Typings are for version 1.8
 
 ## Library description:
 string representations of objects in node and the browser
@@ -10,15 +10,12 @@ string representations of objects in node and the browser
 | ------------------ | :-------------: |
 | Full name          | object-inspect |
 | Keywords           | inspect, util.inspect, object, stringify, pretty |
-| # releases         | 3 |
-| # dependents       | 65 |
-| # downloads        | 190948737 |
-| # stars            | 2 |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4464396166666666E8 |
+| # stars            | 114.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/object-inspect)
-- [Bugs](https://github.com/substack/object-inspect/issues)
-- [Repository](https://github.com/substack/object-inspect)
 - [Npm](https://www.npmjs.com/package/object-inspect)
     
 

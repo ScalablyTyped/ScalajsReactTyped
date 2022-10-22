@@ -1,48 +1,63 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowOptionsObject extends js.Object {
+trait ShadowOptionsObject extends StObject {
+  
   /**
     * The shadow color.
     */
   var color: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * The horizontal offset from the element.
     */
   var offsetX: js.UndefOr[Double] = js.undefined
+  
   /**
     * The vertical offset from the element.
     */
   var offsetY: js.UndefOr[Double] = js.undefined
+  
   /**
     * The shadow opacity.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * The shadow width or distance from the element.
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ShadowOptionsObject {
-  @scala.inline
-  def apply(
-    color: ColorString = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
-    opacity: Int | Double = null,
-    width: Int | Double = null
-  ): ShadowOptionsObject = {
+  
+  inline def apply(): ShadowOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowOptionsObject]
   }
+  
+  extension [Self <: ShadowOptionsObject](x: Self) {
+    
+    inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

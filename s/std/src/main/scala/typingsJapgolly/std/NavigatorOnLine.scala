@@ -1,19 +1,23 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigatorOnLine extends js.Object {
+trait NavigatorOnLine extends StObject {
+  
+  /* standard dom */
   val onLine: scala.Boolean
 }
-
 object NavigatorOnLine {
-  @scala.inline
-  def apply(onLine: scala.Boolean): NavigatorOnLine = {
-    val __obj = js.Dynamic.literal(onLine = onLine.asInstanceOf[js.Any])
   
+  inline def apply(onLine: scala.Boolean): NavigatorOnLine = {
+    val __obj = js.Dynamic.literal(onLine = onLine.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorOnLine]
   }
+  
+  extension [Self <: NavigatorOnLine](x: Self) {
+    
+    inline def setOnLine(value: scala.Boolean): Self = StObject.set(x, "onLine", value.asInstanceOf[js.Any])
+  }
 }
-

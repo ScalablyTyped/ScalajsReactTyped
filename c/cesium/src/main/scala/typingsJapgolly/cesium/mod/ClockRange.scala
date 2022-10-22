@@ -1,35 +1,46 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClockRange extends js.Object
-
+sealed trait ClockRange extends StObject
 @JSImport("cesium", "ClockRange")
 @js.native
-object ClockRange extends js.Object {
-  @js.native
-  sealed trait CLAMPED extends ClockRange
-  
-  @js.native
-  sealed trait LOOP_STOP extends ClockRange
-  
-  @js.native
-  sealed trait UNBOUNDED extends ClockRange
+object ClockRange extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClockRange with Double] = js.native
-  /* 1 */ @js.native
-  object CLAMPED extends TopLevel[CLAMPED with Double]
+  def apply(value: Double): js.UndefOr[ClockRange & Double] = js.native
   
-  /* 2 */ @js.native
-  object LOOP_STOP extends TopLevel[LOOP_STOP with Double]
+  /**
+    * When {@link Clock#startTime} or {@link Clock#stopTime} is reached,
+    * {@link Clock#tick} will not advance {@link Clock#currentTime} any further.
+    */
+  @js.native
+  sealed trait CLAMPED
+    extends StObject
+       with ClockRange
+  /* 1 */ val CLAMPED: typingsJapgolly.cesium.mod.ClockRange.CLAMPED & Double = js.native
   
-  /* 0 */ @js.native
-  object UNBOUNDED extends TopLevel[UNBOUNDED with Double]
+  /**
+    * When {@link Clock#stopTime} is reached, {@link Clock#tick} will advance
+    * {@link Clock#currentTime} to the opposite end of the interval.  When
+    * time is moving backwards, {@link Clock#tick} will not advance past
+    * {@link Clock#startTime}
+    */
+  @js.native
+  sealed trait LOOP_STOP
+    extends StObject
+       with ClockRange
+  /* 2 */ val LOOP_STOP: typingsJapgolly.cesium.mod.ClockRange.LOOP_STOP & Double = js.native
   
+  /**
+    * {@link Clock#tick} will always advances the clock in its current direction.
+    */
+  @js.native
+  sealed trait UNBOUNDED
+    extends StObject
+       with ClockRange
+  /* 0 */ val UNBOUNDED: typingsJapgolly.cesium.mod.ClockRange.UNBOUNDED & Double = js.native
 }
-

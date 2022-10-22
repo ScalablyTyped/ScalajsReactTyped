@@ -1,35 +1,51 @@
 package typingsJapgolly.std
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PropertyIndexedKeyframes
-  extends /* property */ StringDictionary[
+  extends StObject
+     with /* standard dom */
+/* property */ StringDictionary[
       js.UndefOr[java.lang.String | (js.Array[Double | Null | java.lang.String]) | Double | Null]
     ] {
+  
+  /* standard dom */
   var composite: js.UndefOr[CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]] = js.undefined
+  
+  /* standard dom */
   var easing: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
+  
+  /* standard dom */
   var offset: js.UndefOr[Double | (js.Array[Double | Null])] = js.undefined
 }
-
 object PropertyIndexedKeyframes {
-  @scala.inline
-  def apply(
-    StringDictionary: /* property */ StringDictionary[
-      js.UndefOr[java.lang.String | (js.Array[Double | Null | java.lang.String]) | Double | Null]
-    ] = null,
-    composite: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto] = null,
-    easing: java.lang.String | js.Array[java.lang.String] = null,
-    offset: Double | (js.Array[Double | Null]) = null
-  ): PropertyIndexedKeyframes = {
+  
+  inline def apply(): PropertyIndexedKeyframes = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (composite != null) __obj.updateDynamic("composite")(composite.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyIndexedKeyframes]
   }
+  
+  extension [Self <: PropertyIndexedKeyframes](x: Self) {
+    
+    inline def setComposite(value: CompositeOperationOrAuto | js.Array[CompositeOperationOrAuto]): Self = StObject.set(x, "composite", value.asInstanceOf[js.Any])
+    
+    inline def setCompositeUndefined: Self = StObject.set(x, "composite", js.undefined)
+    
+    inline def setCompositeVarargs(value: CompositeOperationOrAuto*): Self = StObject.set(x, "composite", js.Array(value*))
+    
+    inline def setEasing(value: java.lang.String | js.Array[java.lang.String]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setEasingVarargs(value: java.lang.String*): Self = StObject.set(x, "easing", js.Array(value*))
+    
+    inline def setOffset(value: Double | (js.Array[Double | Null])): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOffsetVarargs(value: (Double | Null)*): Self = StObject.set(x, "offset", js.Array(value*))
+  }
 }
-

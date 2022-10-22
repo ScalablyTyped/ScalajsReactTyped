@@ -1,105 +1,131 @@
 package typingsJapgolly.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "TargetInstruction")
 @js.native
-class TargetInstruction () extends js.Object {
+open class TargetInstruction () extends StObject {
+  
   var anchorIsContainer: Boolean = js.native
+  
   var behaviorInstructions: js.Array[BehaviorInstruction] = js.native
+  
   /**
-    * Indicates if this instruction is targeting a text node
-    */
-  var contentExpression: js.Any = js.native
+  	 * Indicates if this instruction is targeting a text node
+  	 */
+  var contentExpression: Any = js.native
+  
   var elementInstruction: BehaviorInstruction = js.native
+  
   var expressions: js.Array[js.Object] = js.native
+  
   var injectorId: Double = js.native
+  
   /**
-    * Indicates if this instruction is a let element instruction
-    */
+  	 * Indicates if this instruction is a let element instruction
+  	 */
   var letElement: Boolean = js.native
+  
   var lifting: Boolean = js.native
+  
   var parentInjectorId: Double = js.native
+  
   var providers: js.Array[js.Function] = js.native
+  
   var shadowSlot: Boolean = js.native
-  var slotFallbackFactory: js.Any = js.native
+  
+  var slotDestination: Any = js.native
+  
+  var slotFallbackFactory: Any = js.native
+  
   var slotName: String = js.native
+  
   var values: js.Object = js.native
+  
   var viewFactory: ViewFactory = js.native
 }
-
 /* static members */
-@JSImport("aurelia-templating", "TargetInstruction")
-@js.native
-object TargetInstruction extends js.Object {
+object TargetInstruction {
+  
+  @JSImport("aurelia-templating", "TargetInstruction")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
-    * An empty array used to represent a target with no binding expressions.
-    */
-  var noExpressions: js.Any = js.native
+  	* Creates an instruction that represents a binding expression in the content of an element.
+  	* @param expression The binding expression.
+  	* @return The created instruction.
+  	*/
+  inline def contentExpression(expression: Any): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("contentExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  
   /**
-    * Creates an instruction that represents a binding expression in the content of an element.
-    * @param expression The binding expression.
-    * @return The created instruction.
-    */
-  def contentExpression(): TargetInstruction = js.native
-  def contentExpression(expression: js.Any): TargetInstruction = js.native
+  	* Creates an instruction that represents an element with behaviors and bindings.
+  	* @param injectorId The id of the dependency injection container.
+  	* @param parentInjectorId The id of the parent dependency injection container.
+  	* @param providers The types which will provide behavior for this element.
+  	* @param behaviorInstructions The instructions for creating behaviors on this element.
+  	* @param expressions Bindings, listeners, triggers, etc.
+  	* @param elementInstruction The element behavior for this element.
+  	* @return The created instruction.
+  	*/
+  inline def letElement(expressions: js.Array[js.Object]): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("letElement")(expressions.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  
   /**
-    * Creates an instruction that represents an element with behaviors and bindings.
-    * @param injectorId The id of the dependency injection container.
-    * @param parentInjectorId The id of the parent dependency injection container.
-    * @param providers The types which will provide behavior for this element.
-    * @param behaviorInstructions The instructions for creating behaviors on this element.
-    * @param expressions Bindings, listeners, triggers, etc.
-    * @param elementInstruction The element behavior for this element.
-    * @return The created instruction.
-    */
-  def letElement(expressions: js.Array[js.Object]): TargetInstruction = js.native
+  	* Creates an instruction that represents content that was lifted out of the DOM and into a ViewFactory.
+  	* @param parentInjectorId The id of the parent dependency injection container.
+  	* @param liftingInstruction The behavior instruction of the lifting behavior.
+  	* @return The created instruction.
+  	*/
+  inline def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("lifting")(parentInjectorId.asInstanceOf[js.Any], liftingInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
+  
   /**
-    * Creates an instruction that represents content that was lifted out of the DOM and into a ViewFactory.
-    * @param parentInjectorId The id of the parent dependency injection container.
-    * @param liftingInstruction The behavior instruction of the lifting behavior.
-    * @return The created instruction.
-    */
-  def lifting(parentInjectorId: Double, liftingInstruction: BehaviorInstruction): TargetInstruction = js.native
+  	* An empty array used to represent a target with no binding expressions.
+  	*/
+  @JSImport("aurelia-templating", "TargetInstruction.noExpressions")
+  @js.native
+  def noExpressions: js.Array[js.Object] = js.native
+  inline def noExpressions_=(x: js.Array[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noExpressions")(x.asInstanceOf[js.Any])
+  
   /**
-    * Creates an instruction that represents an element with behaviors and bindings.
-    * @param injectorId The id of the dependency injection container.
-    * @param parentInjectorId The id of the parent dependency injection container.
-    * @param providers The types which will provide behavior for this element.
-    * @param behaviorInstructions The instructions for creating behaviors on this element.
-    * @param expressions Bindings, listeners, triggers, etc.
-    * @param elementInstruction The element behavior for this element.
-    * @return The created instruction.
-    */
-  def normal(
+  	* Creates an instruction that represents an element with behaviors and bindings.
+  	* @param injectorId The id of the dependency injection container.
+  	* @param parentInjectorId The id of the parent dependency injection container.
+  	* @param providers The types which will provide behavior for this element.
+  	* @param behaviorInstructions The instructions for creating behaviors on this element.
+  	* @param expressions Bindings, listeners, triggers, etc.
+  	* @param elementInstruction The element behavior for this element.
+  	* @return The created instruction.
+  	*/
+  inline def normal(
     injectorId: Double,
     parentInjectorId: Double,
     providers: js.Array[js.Function],
     behaviorInstructions: js.Array[BehaviorInstruction],
     expressions: js.Array[js.Object],
     elementInstruction: BehaviorInstruction
-  ): TargetInstruction = js.native
+  ): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("normal")(injectorId.asInstanceOf[js.Any], parentInjectorId.asInstanceOf[js.Any], providers.asInstanceOf[js.Any], behaviorInstructions.asInstanceOf[js.Any], expressions.asInstanceOf[js.Any], elementInstruction.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
+  
   /**
-    * Creates an instruction that represents a shadow dom slot.
-    * @param parentInjectorId The id of the parent dependency injection container.
-    * @return The created instruction.
-    */
-  def shadowSlot(parentInjectorId: Double): TargetInstruction = js.native
+  	* Creates an instruction that represents a shadow dom slot.
+  	* @param parentInjectorId The id of the parent dependency injection container.
+  	* @return The created instruction.
+  	*/
+  inline def shadowSlot(parentInjectorId: Double): TargetInstruction = ^.asInstanceOf[js.Dynamic].applyDynamic("shadowSlot")(parentInjectorId.asInstanceOf[js.Any]).asInstanceOf[TargetInstruction]
+  
   /**
-    * Creates an instruction that represents the surrogate behaviors and bindings for an element.
-    * @param providers The types which will provide behavior for this element.
-    * @param behaviorInstructions The instructions for creating behaviors on this element.
-    * @param expressions Bindings, listeners, triggers, etc.
-    * @param values A key/value lookup of attributes to transplant.
-    * @return The created instruction.
-    */
-  def surrogate(
+  	* Creates an instruction that represents the surrogate behaviors and bindings for an element.
+  	* @param providers The types which will provide behavior for this element.
+  	* @param behaviorInstructions The instructions for creating behaviors on this element.
+  	* @param expressions Bindings, listeners, triggers, etc.
+  	* @param values A key/value lookup of attributes to transplant.
+  	* @return The created instruction.
+  	*/
+  inline def surrogate(
     providers: js.Array[js.Function],
     behaviorInstructions: js.Array[BehaviorInstruction],
     expressions: js.Array[js.Object],
     values: js.Object
-  ): TargetInstruction = js.native
+  ): TargetInstruction = (^.asInstanceOf[js.Dynamic].applyDynamic("surrogate")(providers.asInstanceOf[js.Any], behaviorInstructions.asInstanceOf[js.Any], expressions.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TargetInstruction]
 }
-

@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to specify whether the camera driver can dynamically adjust the frame rate of video capture in order to improve video quality in low-light conditions. */
-@JSGlobal("Windows.Media.Devices.ExposurePriorityVideoControl")
-@js.native
-abstract class ExposurePriorityVideoControl () extends js.Object {
+trait ExposurePriorityVideoControl extends StObject {
+  
   /** Gets or sets a value that specifies if ExposurePriorityVideoControl is enabled. */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
+  
   /** Gets or sets a value that specifies if ExposurePriorityVideoControl is supported on the current device. */
-  var supported: Boolean = js.native
+  var supported: Boolean
 }
-
+object ExposurePriorityVideoControl {
+  
+  inline def apply(enabled: Boolean, supported: Boolean): ExposurePriorityVideoControl = {
+    val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], supported = supported.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExposurePriorityVideoControl]
+  }
+  
+  extension [Self <: ExposurePriorityVideoControl](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+  }
+}

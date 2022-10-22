@@ -1,47 +1,40 @@
 package typingsJapgolly.glReactDom.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.glReact.mod.SurfaceProps
 import typingsJapgolly.glReact.mod.Visitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Surface {
-  def apply(
-    onLoad: js.UndefOr[Callback] = js.undefined,
-    onLoadError: /* e */ js.Error => Callback = null,
-    preload: js.Array[_] = null,
-    style: js.Any = null,
-    visitor: Visitor = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[SurfaceProps, typingsJapgolly.glReactDom.mod.Surface, Unit, SurfaceProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    onLoad.foreach(p => __obj.updateDynamic("onLoad")(p.toJsFn))
-    if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1((t0: /* e */ js.Error) => onLoadError(t0).runNow()))
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (visitor != null) __obj.updateDynamic("visitor")(visitor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.glReact.mod.SurfaceProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.glReactDom.mod.Surface](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.glReact.mod.SurfaceProps])
-  }
   @JSImport("gl-react-dom", "Surface")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.glReactDom.mod.Surface] {
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def onLoad(value: Callback): this.type = set("onLoad", value.toJsFn)
+    
+    inline def onLoadError(value: /* e */ js.Error => Callback): this.type = set("onLoadError", js.Any.fromFunction1((t0: /* e */ js.Error) => value(t0).runNow()))
+    
+    inline def preload(value: js.Array[Any]): this.type = set("preload", value.asInstanceOf[js.Any])
+    
+    inline def preloadVarargs(value: Any*): this.type = set("preload", js.Array(value*))
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def visitor(value: Visitor): this.type = set("visitor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Surface.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SurfaceProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

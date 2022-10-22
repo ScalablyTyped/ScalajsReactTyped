@@ -1,7 +1,7 @@
 
 # Scala.js typings for moment-business-time
 
-Typings are for version 0.7
+Typings are for version 1.1
 
 ## Library description:
 Query and manipulate moment objects within the context of business/working hours
@@ -10,10 +10,10 @@ Query and manipulate moment objects within the context of business/working hours
 | ------------------ | :-------------: |
 | Full name          | moment-business-time |
 | Keywords           | moment, working time, workings days, working hours, business time, business hours |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 168448 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 45801.666666666664 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/lennym/moment-business-time)

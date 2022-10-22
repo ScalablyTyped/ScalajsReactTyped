@@ -1,7 +1,7 @@
 
 # Scala.js typings for ssri
 
-Typings are for version 6.0
+Typings are for version 7.1
 
 ## Library description:
 Standard Subresource Integrity library -- parses, serializes, generates, and verifies integrity metadata according to the SRI spec.
@@ -10,10 +10,10 @@ Standard Subresource Integrity library -- parses, serializes, generates, and ver
 | ------------------ | :-------------: |
 | Full name          | ssri |
 | Keywords           | w3c, web, security, integrity, checksum, hashing, subresource integrity, sri, sri hash, sri string, sri generator, html |
-| # releases         | 11 |
-| # dependents       | 105 |
-| # downloads        | 346490968 |
-| # stars            | 2 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1230038166666667E8 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/ssri#readme)

@@ -10,13 +10,13 @@ destroy a stream if possible
 | ------------------ | :-------------: |
 | Full name          | destroy |
 | Keywords           | stream, streams, destroy, cleanup, leak, fd |
-| # releases         | 0 |
-| # dependents       | 180 |
-| # downloads        | 414867731 |
-| # stars            | 4 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0807805666666667E8 |
+| # stars            | 52.0 |
 
 ## Links
-- [Homepage](https://github.com/stream-utils/destroy)
+- [Homepage](https://github.com/stream-utils/destroy#readme)
 - [Bugs](https://github.com/stream-utils/destroy/issues)
 - [Repository](https://github.com/stream-utils/destroy)
 - [Npm](https://www.npmjs.com/package/destroy)

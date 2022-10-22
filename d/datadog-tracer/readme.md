@@ -10,10 +10,10 @@ Typings are for version 0.4
 | ------------------ | :-------------: |
 | Full name          | datadog-tracer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 55056 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 896.0 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/rochdev/datadog-tracer-js#readme)

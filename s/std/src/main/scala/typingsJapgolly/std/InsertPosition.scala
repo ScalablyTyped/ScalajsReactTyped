@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.beforebegin
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.beforeend
   - typingsJapgolly.std.stdStrings.afterend
 */
-trait InsertPosition extends js.Object
-
+trait InsertPosition extends StObject
 object InsertPosition {
-  @scala.inline
-  def afterbegin: typingsJapgolly.std.stdStrings.afterbegin = this.cast("afterbegin")
-  @scala.inline
-  def afterend: typingsJapgolly.std.stdStrings.afterend = this.cast("afterend")
-  @scala.inline
-  def beforebegin: typingsJapgolly.std.stdStrings.beforebegin = this.cast("beforebegin")
-  @scala.inline
-  def beforeend: typingsJapgolly.std.stdStrings.beforeend = this.cast("beforeend")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def afterbegin: typingsJapgolly.std.stdStrings.afterbegin = "afterbegin".asInstanceOf[typingsJapgolly.std.stdStrings.afterbegin]
+  
+  inline def afterend: typingsJapgolly.std.stdStrings.afterend = "afterend".asInstanceOf[typingsJapgolly.std.stdStrings.afterend]
+  
+  inline def beforebegin: typingsJapgolly.std.stdStrings.beforebegin = "beforebegin".asInstanceOf[typingsJapgolly.std.stdStrings.beforebegin]
+  
+  inline def beforeend: typingsJapgolly.std.stdStrings.beforeend = "beforeend".asInstanceOf[typingsJapgolly.std.stdStrings.beforeend]
 }
-

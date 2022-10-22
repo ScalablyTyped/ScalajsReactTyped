@@ -1,17 +1,15 @@
 organization := "org.scalablytyped.japgolly"
 name := "serverless-jest-plugin"
-version := "0.3-dt-20200219Z-678b7f"
-scalaVersion := "2.13.1"
+version := "0.3-dt-20211202Z-271e95"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "aws-lambda" % "8.10-dt-20200302Z-01b054",
-  "org.scalablytyped.japgolly" %%% "lambda-wrapper" % "0.3-dt-20200219Z-357d73",
-  "org.scalablytyped.japgolly" %%% "serverless" % "1.18-dt-20200227Z-253fb7",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "aws-lambda" % "8.10-dt-20221012Z-e2b4dc",
+  "org.scalablytyped.japgolly" %%% "lambda-wrapper" % "0.3-dt-20211202Z-a88cd4",
+  "org.scalablytyped.japgolly" %%% "serverless" % "3.12-dt-20220806Z-733e36",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

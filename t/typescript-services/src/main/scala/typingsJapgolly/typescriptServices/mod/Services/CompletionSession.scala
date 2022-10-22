@@ -2,14 +2,23 @@ package typingsJapgolly.typescriptServices.mod.Services
 
 import typingsJapgolly.typescriptServices.TypeScript.IdentiferNameHashTable
 import typingsJapgolly.typescriptServices.TypeScript.Services.CachedCompletionEntryDetails
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.CompletionSession")
 @js.native
-class CompletionSession protected ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Services.CompletionSession {
+open class CompletionSession protected ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Services.CompletionSession {
   def this(fileName: String, position: Double, entries: IdentiferNameHashTable[CachedCompletionEntryDetails]) = this()
+  
+  /* CompleteClass */
+  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails] = js.native
+  
+  /* CompleteClass */
+  var fileName: String = js.native
+  
+  /* CompleteClass */
+  var position: Double = js.native
 }
-

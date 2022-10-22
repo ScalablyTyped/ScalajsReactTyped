@@ -1,8 +1,8 @@
 package typingsJapgolly.axios.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.axios.axiosStrings.arraybuffer
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.axios.axiosStrings.text
   - typingsJapgolly.axios.axiosStrings.stream
 */
-trait ResponseType extends js.Object
-
+trait ResponseType extends StObject
 object ResponseType {
-  @scala.inline
-  def arraybuffer: typingsJapgolly.axios.axiosStrings.arraybuffer = this.cast("arraybuffer")
-  @scala.inline
-  def blob: typingsJapgolly.axios.axiosStrings.blob = this.cast("blob")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def document: typingsJapgolly.axios.axiosStrings.document = this.cast("document")
-  @scala.inline
-  def json: typingsJapgolly.axios.axiosStrings.json = this.cast("json")
-  @scala.inline
-  def stream: typingsJapgolly.axios.axiosStrings.stream = this.cast("stream")
-  @scala.inline
-  def text: typingsJapgolly.axios.axiosStrings.text = this.cast("text")
+  
+  inline def arraybuffer: typingsJapgolly.axios.axiosStrings.arraybuffer = "arraybuffer".asInstanceOf[typingsJapgolly.axios.axiosStrings.arraybuffer]
+  
+  inline def blob: typingsJapgolly.axios.axiosStrings.blob = "blob".asInstanceOf[typingsJapgolly.axios.axiosStrings.blob]
+  
+  inline def document: typingsJapgolly.axios.axiosStrings.document = "document".asInstanceOf[typingsJapgolly.axios.axiosStrings.document]
+  
+  inline def json: typingsJapgolly.axios.axiosStrings.json = "json".asInstanceOf[typingsJapgolly.axios.axiosStrings.json]
+  
+  inline def stream: typingsJapgolly.axios.axiosStrings.stream = "stream".asInstanceOf[typingsJapgolly.axios.axiosStrings.stream]
+  
+  inline def text: typingsJapgolly.axios.axiosStrings.text = "text".asInstanceOf[typingsJapgolly.axios.axiosStrings.text]
 }
-

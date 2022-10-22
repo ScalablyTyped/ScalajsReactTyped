@@ -1,21 +1,18 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.reactNative.reactNativeStrings.dismissedAction
 import typingsJapgolly.reactNative.reactNativeStrings.timeSetAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimePickerAndroidStatic extends js.Object {
+trait TimePickerAndroidStatic extends StObject {
+  
   /**
     * The dialog has been dismissed.
     */
   var dismissedAction: typingsJapgolly.reactNative.reactNativeStrings.dismissedAction
-  /**
-    * A time has been selected.
-    */
-  var timeSetAction: typingsJapgolly.reactNative.reactNativeStrings.timeSetAction
+  
   /**
     * Opens the standard Android time picker dialog.
     *
@@ -36,18 +33,25 @@ trait TimePickerAndroidStatic extends js.Object {
     * being undefined. **Always** check whether the `action` before reading the values.
     */
   def open(options: TimePickerAndroidOpenOptions): js.Promise[TimePickerAndroidOpenReturn]
+  
+  /**
+    * A time has been selected.
+    */
+  var timeSetAction: typingsJapgolly.reactNative.reactNativeStrings.timeSetAction
 }
-
 object TimePickerAndroidStatic {
-  @scala.inline
-  def apply(
-    dismissedAction: dismissedAction,
-    open: TimePickerAndroidOpenOptions => CallbackTo[js.Promise[TimePickerAndroidOpenReturn]],
-    timeSetAction: timeSetAction
-  ): TimePickerAndroidStatic = {
-    val __obj = js.Dynamic.literal(dismissedAction = dismissedAction.asInstanceOf[js.Any], timeSetAction = timeSetAction.asInstanceOf[js.Any])
-    __obj.updateDynamic("open")(js.Any.fromFunction1((t0: typingsJapgolly.reactNative.mod.TimePickerAndroidOpenOptions) => open(t0).runNow()))
+  
+  inline def apply(open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): TimePickerAndroidStatic = {
+    val __obj = js.Dynamic.literal(dismissedAction = "dismissedAction", open = js.Any.fromFunction1(open), timeSetAction = "timeSetAction")
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
+  
+  extension [Self <: TimePickerAndroidStatic](x: Self) {
+    
+    inline def setDismissedAction(value: dismissedAction): Self = StObject.set(x, "dismissedAction", value.asInstanceOf[js.Any])
+    
+    inline def setOpen(value: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    
+    inline def setTimeSetAction(value: timeSetAction): Self = StObject.set(x, "timeSetAction", value.asInstanceOf[js.Any])
+  }
 }
-

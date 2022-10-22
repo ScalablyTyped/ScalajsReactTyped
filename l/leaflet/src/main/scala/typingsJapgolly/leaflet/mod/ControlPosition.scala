@@ -1,8 +1,8 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.leaflet.leafletStrings.topleft
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.leaflet.leafletStrings.bottomleft
   - typingsJapgolly.leaflet.leafletStrings.bottomright
 */
-trait ControlPosition extends js.Object
-
+trait ControlPosition extends StObject
 object ControlPosition {
-  @scala.inline
-  def bottomleft: typingsJapgolly.leaflet.leafletStrings.bottomleft = this.cast("bottomleft")
-  @scala.inline
-  def bottomright: typingsJapgolly.leaflet.leafletStrings.bottomright = this.cast("bottomright")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def topleft: typingsJapgolly.leaflet.leafletStrings.topleft = this.cast("topleft")
-  @scala.inline
-  def topright: typingsJapgolly.leaflet.leafletStrings.topright = this.cast("topright")
+  
+  inline def bottomleft: typingsJapgolly.leaflet.leafletStrings.bottomleft = "bottomleft".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.bottomleft]
+  
+  inline def bottomright: typingsJapgolly.leaflet.leafletStrings.bottomright = "bottomright".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.bottomright]
+  
+  inline def topleft: typingsJapgolly.leaflet.leafletStrings.topleft = "topleft".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.topleft]
+  
+  inline def topright: typingsJapgolly.leaflet.leafletStrings.topright = "topright".asInstanceOf[typingsJapgolly.leaflet.leafletStrings.topright]
 }
-

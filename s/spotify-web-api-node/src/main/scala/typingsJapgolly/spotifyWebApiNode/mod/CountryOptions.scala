@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CountryOptions extends js.Object {
+trait CountryOptions extends StObject {
+  
   var country: js.UndefOr[String] = js.undefined
 }
-
 object CountryOptions {
-  @scala.inline
-  def apply(country: String = null): CountryOptions = {
+  
+  inline def apply(): CountryOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
     __obj.asInstanceOf[CountryOptions]
   }
+  
+  extension [Self <: CountryOptions](x: Self) {
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+  }
 }
-

@@ -1,17 +1,26 @@
 package typingsJapgolly.rdfjsFormatsCommon
 
 import typingsJapgolly.node.eventsMod.EventEmitter
-import typingsJapgolly.rdfJs.mod.Quad
-import typingsJapgolly.rdfJs.mod.Stream
 import typingsJapgolly.rdfjsSinkMap.mod.SinkMap
+import typingsJapgolly.rdfjsTypes.dataModelMod.Quad
+import typingsJapgolly.rdfjsTypes.streamMod.Stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@rdfjs/formats-common", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var parsers: SinkMap[EventEmitter, Stream[Quad]] = js.native
-  var serializers: SinkMap[Stream[Quad], EventEmitter] = js.native
+object mod {
+  
+  @JSImport("@rdfjs/formats-common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@rdfjs/formats-common", "parsers")
+  @js.native
+  def parsers: SinkMap[EventEmitter, Stream[Quad]] = js.native
+  inline def parsers_=(x: SinkMap[EventEmitter, Stream[Quad]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsers")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@rdfjs/formats-common", "serializers")
+  @js.native
+  def serializers: SinkMap[Stream[Quad], EventEmitter] = js.native
+  inline def serializers_=(x: SinkMap[Stream[Quad], EventEmitter]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serializers")(x.asInstanceOf[js.Any])
 }
-

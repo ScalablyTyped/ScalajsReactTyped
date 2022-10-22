@@ -1,17 +1,13 @@
 package typingsJapgolly.jqueryCookie
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryStatic extends js.Object {
-  /**
-    * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
-    */
-  @JSName("cookie")
-  var cookie_Original: JQueryCookieStatic = js.native
+trait JQueryStatic extends StObject {
+  
   /**
     * Gets an object of cookies as key-value pairs
     */
@@ -26,7 +22,7 @@ trait JQueryStatic extends js.Object {
   /**
     * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
     */
-  def cookie(name: String): js.Any = js.native
+  def cookie(name: String): Any = js.native
   /**
     * Gets a cookie by name after applying a conversion function to the value
     * @param name The name of the cookie to get
@@ -35,7 +31,7 @@ trait JQueryStatic extends js.Object {
   /**
     * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
     */
-  def cookie(name: String, converter: js.Function1[/* value */ String, _]): js.Any = js.native
+  def cookie(name: String, converter: js.Function1[/* value */ String, Any]): Any = js.native
   /**
     * Sets a cookie
     * @param name The name of the cookie to set
@@ -63,7 +59,7 @@ trait JQueryStatic extends js.Object {
   /**
     * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
     */
-  def cookie(name: String, value: js.Any): Unit = js.native
+  def cookie(name: String, value: Any): Unit = js.native
   /**
     * Sets a cookie using .toString(), or if $.cookie.json is set to true using JSON.stringify()
     * @param name The name of the cookie to set
@@ -73,7 +69,13 @@ trait JQueryStatic extends js.Object {
   /**
     * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
     */
-  def cookie(name: String, value: js.Any, options: JQueryCookieOptions): Unit = js.native
+  def cookie(name: String, value: Any, options: JQueryCookieOptions): Unit = js.native
+  /**
+    * A simple, lightweight jQuery plugin for reading, writing and deleting cookies.
+    */
+  @JSName("cookie")
+  var cookie_Original: JQueryCookieStatic = js.native
+  
   /**
     * Deletes a cookie
     * @param name Name of cookie to delete
@@ -86,4 +88,3 @@ trait JQueryStatic extends js.Object {
     */
   def removeCookie(name: String, options: JQueryCookieOptions): Boolean = js.native
 }
-

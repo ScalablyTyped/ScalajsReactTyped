@@ -1,65 +1,52 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PickerLocationId extends js.Object
-
+sealed trait PickerLocationId extends StObject
 @JSGlobal("Windows.Storage.Pickers.PickerLocationId")
 @js.native
-object PickerLocationId extends js.Object {
-  @js.native
-  sealed trait computerFolder extends PickerLocationId
+object PickerLocationId extends StObject {
   
   @js.native
-  sealed trait desktop extends PickerLocationId
+  sealed trait computerFolder
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait documentsLibrary extends PickerLocationId
+  sealed trait desktop
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait downloads extends PickerLocationId
+  sealed trait documentsLibrary
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait homeGroup extends PickerLocationId
+  sealed trait downloads
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait musicLibrary extends PickerLocationId
+  sealed trait homeGroup
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait picturesLibrary extends PickerLocationId
+  sealed trait musicLibrary
+    extends StObject
+       with PickerLocationId
   
   @js.native
-  sealed trait videosLibrary extends PickerLocationId
+  sealed trait picturesLibrary
+    extends StObject
+       with PickerLocationId
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PickerLocationId with Double] = js.native
-  /* 1 */ @js.native
-  object computerFolder extends TopLevel[computerFolder with Double]
-  
-  /* 2 */ @js.native
-  object desktop extends TopLevel[desktop with Double]
-  
-  /* 0 */ @js.native
-  object documentsLibrary extends TopLevel[documentsLibrary with Double]
-  
-  /* 3 */ @js.native
-  object downloads extends TopLevel[downloads with Double]
-  
-  /* 4 */ @js.native
-  object homeGroup extends TopLevel[homeGroup with Double]
-  
-  /* 5 */ @js.native
-  object musicLibrary extends TopLevel[musicLibrary with Double]
-  
-  /* 6 */ @js.native
-  object picturesLibrary extends TopLevel[picturesLibrary with Double]
-  
-  /* 7 */ @js.native
-  object videosLibrary extends TopLevel[videosLibrary with Double]
-  
+  @js.native
+  sealed trait videosLibrary
+    extends StObject
+       with PickerLocationId
 }
-

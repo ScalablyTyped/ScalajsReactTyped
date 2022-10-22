@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartValueAxisItemNotesDataItemIconBorder extends js.Object {
+trait ChartValueAxisItemNotesDataItemIconBorder extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ChartValueAxisItemNotesDataItemIconBorder {
-  @scala.inline
-  def apply(color: String = null, width: Int | Double = null): ChartValueAxisItemNotesDataItemIconBorder = {
+  
+  inline def apply(): ChartValueAxisItemNotesDataItemIconBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartValueAxisItemNotesDataItemIconBorder]
   }
+  
+  extension [Self <: ChartValueAxisItemNotesDataItemIconBorder](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

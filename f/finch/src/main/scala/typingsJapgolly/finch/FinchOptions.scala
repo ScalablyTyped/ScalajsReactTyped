@@ -1,19 +1,24 @@
 package typingsJapgolly.finch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FinchOptions extends js.Object {
+trait FinchOptions extends StObject {
+  
   var CoerceParameterTypes: js.UndefOr[Boolean] = js.undefined
 }
-
 object FinchOptions {
-  @scala.inline
-  def apply(CoerceParameterTypes: js.UndefOr[Boolean] = js.undefined): FinchOptions = {
+  
+  inline def apply(): FinchOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(CoerceParameterTypes)) __obj.updateDynamic("CoerceParameterTypes")(CoerceParameterTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinchOptions]
   }
+  
+  extension [Self <: FinchOptions](x: Self) {
+    
+    inline def setCoerceParameterTypes(value: Boolean): Self = StObject.set(x, "CoerceParameterTypes", value.asInstanceOf[js.Any])
+    
+    inline def setCoerceParameterTypesUndefined: Self = StObject.set(x, "CoerceParameterTypes", js.undefined)
+  }
 }
-

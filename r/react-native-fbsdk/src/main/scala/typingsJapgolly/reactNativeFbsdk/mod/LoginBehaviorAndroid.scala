@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_only
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web_only
 */
-trait LoginBehaviorAndroid extends js.Object
-
+trait LoginBehaviorAndroid extends StObject
 object LoginBehaviorAndroid {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def native_only: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_only = this.cast("native_only")
-  @scala.inline
-  def native_with_fallback: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback = this.cast("native_with_fallback")
-  @scala.inline
-  def web_only: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web_only = this.cast("web_only")
+  
+  inline def native_only: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_only = "native_only".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_only]
+  
+  inline def native_with_fallback: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback = "native_with_fallback".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native_with_fallback]
+  
+  inline def web_only: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web_only = "web_only".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web_only]
 }
-

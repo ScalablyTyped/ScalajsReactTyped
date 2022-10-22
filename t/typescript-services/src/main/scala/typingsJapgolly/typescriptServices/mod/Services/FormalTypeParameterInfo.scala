@@ -1,11 +1,24 @@
 package typingsJapgolly.typescriptServices.mod.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.FormalTypeParameterInfo")
 @js.native
-class FormalTypeParameterInfo ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Services.FormalTypeParameterInfo
-
+open class FormalTypeParameterInfo ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Services.FormalTypeParameterInfo {
+  
+  /* CompleteClass */
+  var docComment: String = js.native
+  
+  /* CompleteClass */
+  var limChar: Double = js.native
+  
+  /* CompleteClass */
+  var minChar: Double = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+}

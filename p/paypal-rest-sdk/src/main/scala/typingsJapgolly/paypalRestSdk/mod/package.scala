@@ -1,9 +1,11 @@
-package typingsJapgolly.paypalRestSdk
+package typingsJapgolly.paypalRestSdk.mod
 
+import typingsJapgolly.paypalRestSdk.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CallbackFunction[T] = js.Function2[/* err */ typingsJapgolly.paypalRestSdk.mod.SDKError, /* response */ T, js.Any]
-}
+
+inline def configure(opts: ConfigureOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(opts.asInstanceOf[js.Any]).asInstanceOf[String]
+
+type CallbackFunction[T] = js.Function2[/* err */ SDKError, /* response */ T, Any]

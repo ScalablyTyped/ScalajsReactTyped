@@ -1,8 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.TSCallSignatureDeclaration
@@ -11,132 +11,36 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.TSMethodSignature
   - typingsJapgolly.babelTypes.mod.TSPropertySignature
 */
-trait TSTypeElement extends js.Object
-
+trait TSTypeElement extends StObject
 object TSTypeElement {
-  @scala.inline
-  def TSConstructSignatureDeclaration(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typingsJapgolly.babelTypes.babelTypesStrings.TSConstructSignatureDeclaration,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    parameters: js.Array[Identifier_ | RestElement_] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+  
+  inline def TSCallSignatureDeclaration(end: Double, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.TSCallSignatureDeclaration = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parameters = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSCallSignatureDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TSCallSignatureDeclaration]
   }
-  @scala.inline
-  def TSMethodSignature(
-    end: Double,
-    key: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typingsJapgolly.babelTypes.babelTypesStrings.TSMethodSignature,
-    computed: js.UndefOr[Boolean] = js.undefined,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    parameters: js.Array[Identifier_ | RestElement_] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+  
+  inline def TSConstructSignatureDeclaration(end: Double, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.TSConstructSignatureDeclaration = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], parameters = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSConstructSignatureDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TSConstructSignatureDeclaration]
   }
-  @scala.inline
-  def TSPropertySignature(
-    end: Double,
-    key: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typingsJapgolly.babelTypes.babelTypesStrings.TSPropertySignature,
-    computed: js.UndefOr[Boolean] = js.undefined,
-    initializer: Expression = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation = null
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
-    if (initializer != null) __obj.updateDynamic("initializer")(initializer.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+  
+  inline def TSIndexSignature(end: Double, loc: SourceLocation, parameters: js.Array[Identifier_], start: Double): typingsJapgolly.babelTypes.mod.TSIndexSignature = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], readonly = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSIndexSignature")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TSIndexSignature]
   }
-  @scala.inline
-  def TSCallSignatureDeclaration(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typingsJapgolly.babelTypes.babelTypesStrings.TSCallSignatureDeclaration,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    parameters: js.Array[Identifier_ | RestElement_] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+  
+  inline def TSMethodSignature(end: Double, key: Expression, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.TSMethodSignature = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], computed = null, optional = null, parameters = null, typeAnnotation = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSMethodSignature")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TSMethodSignature]
   }
-  @scala.inline
-  def TSIndexSignature(
-    end: Double,
-    loc: SourceLocation,
-    parameters: js.Array[Identifier_],
-    start: Double,
-    `type`: typingsJapgolly.babelTypes.babelTypesStrings.TSIndexSignature,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation = null
-  ): TSTypeElement = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TSTypeElement]
+  
+  inline def TSPropertySignature(end: Double, key: Expression, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.TSPropertySignature = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], computed = null, initializer = null, optional = null, readonly = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSPropertySignature")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TSPropertySignature]
   }
 }
-

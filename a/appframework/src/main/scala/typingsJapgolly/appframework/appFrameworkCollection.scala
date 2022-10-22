@@ -1,14 +1,15 @@
 package typingsJapgolly.appframework
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.appframework.anon.Bottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait appFrameworkCollection extends js.Object {
-  var length: Double = js.native
+trait appFrameworkCollection extends StObject {
+  
   /**
     * Adds a css class to elements.
     ```
@@ -19,6 +20,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().addClass(name)
     */
   def addClass(className: String): appFrameworkCollection = js.native
+  
   /**
     * Appends to the elements
     * We boil everything down to an appframework object and then loop through that.
@@ -33,7 +35,8 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} appframework object
     * @title $().append(element,[insert])
     */
-  def append(content: js.Any): appFrameworkCollection = js.native
+  def append(content: Any): appFrameworkCollection = js.native
+  
   /**
     * Appends the current collection to the selector
     ```
@@ -43,7 +46,8 @@ trait appFrameworkCollection extends js.Object {
     * @param {Boolean} [insert] insert or append
     * @title $().appendTo(element,[insert])
     */
-  def appendTo(target: js.Any): appFrameworkCollection = js.native
+  def appendTo(target: Any): appFrameworkCollection = js.native
+  
   def attr(attributeHash: js.Object): appFrameworkCollection = js.native
   /**
     * Gets or sets an attribute on an element
@@ -58,9 +62,10 @@ trait appFrameworkCollection extends js.Object {
     * @return {String|Object|Array|Function} If used as a getter, return the attribute value.  If a setter, return an appframework object
     * @title $().attr(attribute,[value])
     */
-  def attr(attribute: String): js.Any = js.native
+  def attr(attribute: String): Any = js.native
   def attr(attribute: String, value: String): appFrameworkCollection = js.native
-  def attr(attribute: String, value: js.Any): appFrameworkCollection = js.native
+  def attr(attribute: String, value: Any): appFrameworkCollection = js.native
+  
   /**
     * Binds an event to each element in the collection and executes the callback
     ```
@@ -72,17 +77,20 @@ trait appFrameworkCollection extends js.Object {
     * @title $().bind(event,callback)
     */
   def bind(eventHash: js.Object): appFrameworkCollection = js.native
-  def bind(eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def bind(eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().blur instead of $().bind("blur")
     */
   def blur(): appFrameworkCollection = js.native
-  def blur(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def blur(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().change instead of $().bind("change")
     */
   def change(): appFrameworkCollection = js.native
-  def change(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def change(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Returns the child nodes of the elements based off the selector
     ```
@@ -95,13 +103,16 @@ trait appFrameworkCollection extends js.Object {
     * @title $().children(selector)
     */
   def children(): appFrameworkCollection = js.native
-  def children(selector: js.Any): appFrameworkCollection = js.native
+  def children(selector: Any): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().click instead of $().bind("click")
     */
   def click(): appFrameworkCollection = js.native
-  def click(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def click(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   def clone(deep: Boolean): appFrameworkCollection = js.native
+  
   /**
     * Returns the closest element based off the selector and optional context
     ```
@@ -115,7 +126,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().closest(selector,[context]);
     */
   def closest(): appFrameworkCollection = js.native
-  def closest(selector: js.Any): appFrameworkCollection = js.native
+  def closest(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Gets the computed style of CSS values
     *
@@ -127,8 +139,10 @@ trait appFrameworkCollection extends js.Object {
     * @title $().computedStyle()
     */
   def computedStyle(css: String): appFrameworkCollection = js.native
+  
   def concat(items: appFrameworkCollection*): js.Array[appFrameworkCollection] = js.native
-  def css(properties: js.Any): appFrameworkCollection = js.native
+  
+  def css(properties: Any): appFrameworkCollection = js.native
   /**
     * Gets or sets a css property for the collection
     * If used as a get, the first elements css property is returned
@@ -142,8 +156,9 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} an appframework object
     * @title $().css(attribute,[value])
     */
-  def css(property: String): js.Any = js.native
-  def css(property: String, value: js.Any): appFrameworkCollection = js.native
+  def css(property: String): Any = js.native
+  def css(property: String, value: Any): appFrameworkCollection = js.native
+  
   /**
     * Gets or set data-* attribute parameters on elements (when a string)
     * When used as a getter, it's only the first element
@@ -157,9 +172,10 @@ trait appFrameworkCollection extends js.Object {
     * @return {String|Object} returns the value or appframework object
     * @title $().data(key,[value]);
     */
-  def data(attribute: String): js.Any = js.native
+  def data(attribute: String): Any = js.native
   def data(attribute: String, value: String): appFrameworkCollection = js.native
-  def data(attribute: String, value: js.Any): appFrameworkCollection = js.native
+  def data(attribute: String, value: Any): appFrameworkCollection = js.native
+  
   /**
     * Delegate an event based off the selector.  The event will be registered at the parent level, but executes on the selector.
     ```
@@ -171,8 +187,9 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} appframework object
     * @title $().delegate(selector,event,callback)
     */
-  def delegate(selector: js.Any, eventHash: js.Object): appFrameworkCollection = js.native
-  def delegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def delegate(selector: Any, eventHash: js.Object): appFrameworkCollection = js.native
+  def delegate(selector: Any, eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Iterates through all elements and applys a callback function
     ```
@@ -182,7 +199,8 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} an appframework object
     * @title $().each(function)
     */
-  def each(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): appFrameworkCollection = js.native
+  def each(fn: js.Function2[/* index */ Double, /* item */ Any, Any]): appFrameworkCollection = js.native
+  
   /**
     * Sets the innerHTML of all elements to an empty string
     ```
@@ -192,6 +210,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().empty()
     */
   def empty(): appFrameworkCollection = js.native
+  
   /**
     * Rolls back the appframework elements when filters were applied
     * This can be used after .not(), .filter(), .children(), .parent()
@@ -202,6 +221,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().end();
     */
   def end(): appFrameworkCollection = js.native
+  
   /* added in 1.2 */
   /**
     * Reduce the set of elements based off index
@@ -213,11 +233,13 @@ trait appFrameworkCollection extends js.Object {
     * @title $().eq(index)
     */
   def eq(index: Double): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().error instead of $().bind("error")
     */
   def error(): appFrameworkCollection = js.native
-  def error(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def error(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Filters elements based off the selector
     ```
@@ -230,7 +252,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().filter(selector);
     */
   def filter(): appFrameworkCollection = js.native
-  def filter(selector: js.Any): appFrameworkCollection = js.native
+  def filter(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Searches through the collection and reduces them to elements that match the selector
     ```
@@ -243,12 +266,15 @@ trait appFrameworkCollection extends js.Object {
     * @title $().find(selector)
     */
   def find(selector: String): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().focus instead of $().bind("focus")
     */
   def focus(): appFrameworkCollection = js.native
-  def focus(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
-  def forEach(fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): Unit = js.native
+  def focus(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
+  def forEach(fn: js.Function2[/* item */ Any, /* index */ Double, Any]): Unit = js.native
+  
   /**
     * Returns the raw DOM element.
     ```
@@ -261,6 +287,7 @@ trait appFrameworkCollection extends js.Object {
     */
   def get(): js.Array[HTMLElement] = js.native
   def get(index: Double): HTMLElement = js.native
+  
   /**
     * Checks to see if an element has a class.
     ```
@@ -273,6 +300,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().hasClass(name,[element])
     */
   def hasClass(className: String, element: HTMLElement): Boolean = js.native
+  
   /**
     * returns the height of the element, including padding on IE
     ```
@@ -282,6 +310,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().height()
     */
   def height(): String = js.native
+  
   /**
     * Sets the elements display property to "none".
     * This will also store the old property into an attribute for hide
@@ -292,6 +321,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().hide()
     */
   def hide(): appFrameworkCollection = js.native
+  
   /**
     * Gets or sets the innerHTML for the collection.
     * If used as a get, the first elements innerHTML is returned
@@ -308,6 +338,7 @@ trait appFrameworkCollection extends js.Object {
   def html(): String = js.native
   def html(html: String): appFrameworkCollection = js.native
   def html(html: String, cleanup: Boolean): appFrameworkCollection = js.native
+  
   /**
     * Returns the index of the selected element in the collection
     ```
@@ -318,9 +349,11 @@ trait appFrameworkCollection extends js.Object {
     * @title $().index(elem)
     */
   def index(): Double = js.native
-  def index(selector: js.Any): Double = js.native
+  def index(selector: Any): Double = js.native
+  
   def indexOf(searchElement: appFrameworkCollection): Double = js.native
   def indexOf(searchElement: appFrameworkCollection, fromIndex: Double): Double = js.native
+  
   /**
     * Inserts collection after the target (adjacent)
     ```
@@ -329,7 +362,8 @@ trait appFrameworkCollection extends js.Object {
     * @param {String|Object} target
     * @title $().insertAfter(target);
     */
-  def insertAfter(target: js.Any): Unit = js.native
+  def insertAfter(target: Any): Unit = js.native
+  
   /**
     * Inserts collection before the target (adjacent)
     ```
@@ -338,7 +372,8 @@ trait appFrameworkCollection extends js.Object {
     * @param {String|Object} Target
     * @title $().insertBefore(target);
     */
-  def insertBefore(target: js.Any): appFrameworkCollection = js.native
+  def insertBefore(target: Any): appFrameworkCollection = js.native
+  
   /**
     * Returns boolean if the object is a type of the selector
     ```
@@ -348,27 +383,34 @@ trait appFrameworkCollection extends js.Object {
     * @return boolean
     * @title $().is(selector)
     */
-  def is(selector: js.Any): Double = js.native
+  def is(selector: Any): Double = js.native
+  
   /**
     custom events since people want to do $().keydown instead of $().bind("keydown")
     */
   def keydown(): appFrameworkCollection = js.native
-  def keydown(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def keydown(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().keypress instead of $().bind("keypress")
     */
   def keypress(): appFrameworkCollection = js.native
-  def keypress(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def keypress(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().keyup instead of $().bind("keyup")
     */
   def keyup(): appFrameworkCollection = js.native
-  def keyup(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def keyup(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
+  var length: Double = js.native
+  
   /**
     custom events since people want to do $().load instead of $().bind("load")
     */
   def load(): appFrameworkCollection = js.native
-  def load(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def load(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * This is a wrapper to $.map on the selected elements
     ```
@@ -378,7 +420,8 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} an appframework object
     * @title $().map(function)
     */
-  def map(fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): appFrameworkCollection = js.native
+  def map(fn: js.Function2[/* index */ Double, /* item */ Any, Any]): appFrameworkCollection = js.native
+  
   /**
     * Basically the reverse of filter.  Return all elements that do NOT match the selector
     ```
@@ -391,7 +434,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().not(selector);
     */
   def not(): appFrameworkCollection = js.native
-  def not(selector: js.Any): appFrameworkCollection = js.native
+  def not(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Removes event listeners for .on()
     * If selector is undefined or a function, we call unbind, otherwise it's undelegate
@@ -406,9 +450,10 @@ trait appFrameworkCollection extends js.Object {
     * @title $().off(event,selector,[callback])
     */
   def off(eventHash: js.Object): appFrameworkCollection = js.native
-  def off(eventHash: js.Object, selector: js.Any): appFrameworkCollection = js.native
-  def off(eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
-  def off(eventName: String, selector: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def off(eventHash: js.Object, selector: Any): appFrameworkCollection = js.native
+  def off(eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  def off(eventName: String, selector: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Returns the offset of the element, including traversing up the tree
     ```
@@ -417,7 +462,8 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} with left, top, width and height properties
     * @title $().offset()
     */
-  def offset(): AnonBottom = js.native
+  def offset(): Bottom = js.native
+  
   /**
     * Similar to delegate, but the function parameter order is easier to understand.
     * If selector is undefined or a function, we just call .bind, otherwise we use .delegate
@@ -431,9 +477,10 @@ trait appFrameworkCollection extends js.Object {
     * @title $().on(event,selector,callback);
     */
   def on(eventHash: js.Object): appFrameworkCollection = js.native
-  def on(eventHash: js.Object, selector: js.Any): appFrameworkCollection = js.native
-  def on(eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
-  def on(eventName: String, selector: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def on(eventHash: js.Object, selector: Any): appFrameworkCollection = js.native
+  def on(eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  def on(eventName: String, selector: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Binds an event to each element in the collection that will only execute once.  When it executes, we remove the event listener then right away so it no longer happens
     ```
@@ -445,7 +492,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().one(event,callback);
     */
   def one(eventHash: js.Object): appFrameworkCollection = js.native
-  def one(eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def one(eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Returns the parent nodes of the elements based off the selector
     ```
@@ -458,7 +506,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().parent(selector)
     */
   def parent(): appFrameworkCollection = js.native
-  def parent(selector: js.Any): appFrameworkCollection = js.native
+  def parent(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Returns the parents of the elements based off the selector (traversing up until html document)
     ```
@@ -471,7 +520,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().parents(selector)
     */
   def parents(): appFrameworkCollection = js.native
-  def parents(selector: js.Any): appFrameworkCollection = js.native
+  def parents(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Prepends to the elements
     * This simply calls append and sets insert to true
@@ -483,7 +533,8 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} appframework object
     * @title $().prepend(element)
     */
-  def prepend(content: js.Any): appFrameworkCollection = js.native
+  def prepend(content: Any): appFrameworkCollection = js.native
+  
   /**
     * Prepends the current collection to the selector
     ```
@@ -492,7 +543,8 @@ trait appFrameworkCollection extends js.Object {
     * @param {String|Object} Selector to prepent to
     * @title $().prependTo(element)
     */
-  def prependTo(target: js.Any): appFrameworkCollection = js.native
+  def prependTo(target: Any): appFrameworkCollection = js.native
+  
   def prop(attributeHash: js.Object): appFrameworkCollection = js.native
   /**
     * Gets or sets a property on an element
@@ -507,10 +559,12 @@ trait appFrameworkCollection extends js.Object {
     * @return {String|Object|Array|Function} If used as a getter, return the property value.  If a setter, return an appframework object
     * @title $().prop(property,[value])
     */
-  def prop(attribute: String): js.Any = js.native
+  def prop(attribute: String): Any = js.native
   def prop(attribute: String, value: String): appFrameworkCollection = js.native
-  def prop(attribute: String, value: js.Any): appFrameworkCollection = js.native
+  def prop(attribute: String, value: Any): appFrameworkCollection = js.native
+  
   def push(items: appFrameworkCollection*): Double = js.native
+  
   /**
     * This is executed when DOMContentLoaded happens, or after if you've registered for it.
     ```
@@ -521,6 +575,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().ready(function)
     */
   def ready(fn: js.Function): appFrameworkStatic = js.native
+  
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ this.type, 
@@ -540,6 +595,7 @@ trait appFrameworkCollection extends js.Object {
     ],
     initialValue: appFrameworkCollection
   ): appFrameworkCollection = js.native
+  
   /**
     * Removes elements based off a selector
     ```
@@ -554,10 +610,11 @@ trait appFrameworkCollection extends js.Object {
     * @title $().remove(selector)
     */
   def remove(): appFrameworkCollection = js.native
-  def remove(elements: js.Array[_]): appFrameworkCollection = js.native
+  def remove(element: HTMLElement): appFrameworkCollection = js.native
+  def remove(elements: js.Array[Any]): appFrameworkCollection = js.native
   def remove(elements: appFrameworkCollection): appFrameworkCollection = js.native
-  def remove(element: typingsJapgolly.std.HTMLElement): appFrameworkCollection = js.native
   def remove(selector: String): appFrameworkCollection = js.native
+  
   /**
     * Removes an attribute on the elements
     ```
@@ -568,6 +625,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().removeAttr(attribute)
     */
   def removeAttr(attribute: String): appFrameworkCollection = js.native
+  
   /**
     * Removes a css class from elements.
     ```
@@ -579,6 +637,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().removeClass(name)
     */
   def removeClass(className: String): appFrameworkCollection = js.native
+  
   /**
     * Removes a property on the elements
     ```
@@ -589,6 +648,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().removeProp(attribute)
     */
   def removeProp(attribute: String): appFrameworkCollection = js.native
+  
   /**
     * Replaces a css class on elements.
     ```
@@ -600,16 +660,19 @@ trait appFrameworkCollection extends js.Object {
     * @title $().replaceClass(old, new)
     */
   def replaceClass(oldClassName: String, newClassName: String): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().resize instead of $().bind("resize")
     */
   def resize(): appFrameworkCollection = js.native
-  def resize(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def resize(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     custom events since people want to do $().select instead of $().bind("select")
     */
   def select(): appFrameworkCollection = js.native
-  def select(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def select(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Serailizes a form into a query string
     ```
@@ -619,6 +682,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().serialize()
     */
   def serialize(): String = js.native
+  
   /**
     * Shows all the elements by setting the css display property
     * We look to see if we were retaining an old style (like table-cell) and restore that, otherwise we set it to block
@@ -629,6 +693,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().show()
     */
   def show(): appFrameworkCollection = js.native
+  
   /**
     * Returns the siblings of the element based off the selector
     ```
@@ -641,7 +706,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().siblings(selector)
     */
   def siblings(): appFrameworkCollection = js.native
-  def siblings(selector: js.Any): appFrameworkCollection = js.native
+  def siblings(selector: Any): appFrameworkCollection = js.native
+  
   /**
     * Returns the number of elements in the collection
     ```
@@ -651,13 +717,16 @@ trait appFrameworkCollection extends js.Object {
     * @title $().size();
     */
   def size(): Double = js.native
+  
   def slice(start: Double): js.Array[appFrameworkCollection] = js.native
   def slice(start: Double, end: Double): js.Array[appFrameworkCollection] = js.native
+  
   /**
     custom events since people want to do $().submit instead of $().bind("submit")
     */
   def submit(): appFrameworkCollection = js.native
-  def submit(fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def submit(fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Gets or sets the innerText for the collection.
     * If used as a get, the first elements innerText is returned
@@ -671,6 +740,7 @@ trait appFrameworkCollection extends js.Object {
     */
   def text(): String = js.native
   def text(text: String): appFrameworkCollection = js.native
+  
   /**
     * Toggle the visibility of a div
     ```
@@ -683,6 +753,7 @@ trait appFrameworkCollection extends js.Object {
     */
   def toggle(): appFrameworkCollection = js.native
   def toggle(show: Boolean): appFrameworkCollection = js.native
+  
   /**
     * Adds or removes a css class to elements.
     ```
@@ -695,8 +766,9 @@ trait appFrameworkCollection extends js.Object {
     */
   def toggleClass(name: String): appFrameworkCollection = js.native
   def toggleClass(name: String, state: Boolean): appFrameworkCollection = js.native
+  
   def trigger(eventHash: js.Object): appFrameworkCollection = js.native
-  def trigger(eventHash: js.Object, data: js.Any): appFrameworkCollection = js.native
+  def trigger(eventHash: js.Object, data: Any): appFrameworkCollection = js.native
   /**
     This triggers an event to be dispatched.  Usefull for emulating events, etc.
     ```
@@ -708,7 +780,8 @@ trait appFrameworkCollection extends js.Object {
     * @title $().trigger(event,data);
     */
   def trigger(eventName: String): appFrameworkCollection = js.native
-  def trigger(eventName: String, data: js.Any): appFrameworkCollection = js.native
+  def trigger(eventName: String, data: Any): appFrameworkCollection = js.native
+  
   def unbind(): appFrameworkCollection = js.native
   /**
     * Unbinds an event to each element in the collection.  If a callback is passed in, we remove just that one, otherwise we remove all callbacks for those events
@@ -723,7 +796,8 @@ trait appFrameworkCollection extends js.Object {
     */
   def unbind(eventHash: js.Object): appFrameworkCollection = js.native
   def unbind(eventName: String): appFrameworkCollection = js.native
-  def unbind(eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def unbind(eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Unbinds events that were registered through delegate.  It acts upon the selector and event.  If a callback is specified, it will remove that one, otherwise it removes all of them.
     ```
@@ -736,8 +810,9 @@ trait appFrameworkCollection extends js.Object {
     * @return {Object} appframework object
     * @title $().undelegate(selector,event,[callback]);
     */
-  def undelegate(selector: js.Any, eventHash: js.Object): appFrameworkCollection = js.native
-  def undelegate(selector: js.Any, eventName: String, fn: js.Function1[/* e */ Event_, _]): appFrameworkCollection = js.native
+  def undelegate(selector: Any, eventHash: js.Object): appFrameworkCollection = js.native
+  def undelegate(selector: Any, eventName: String, fn: js.Function1[/* e */ Event, Any]): appFrameworkCollection = js.native
+  
   /**
     * Gets or sets an elements value
     * If used as a getter, we return the first elements value.  If nothing is in the collection, we return undefined
@@ -751,6 +826,7 @@ trait appFrameworkCollection extends js.Object {
     */
   def `val`(): String = js.native
   def `val`(value: String): appFrameworkCollection = js.native
+  
   /**
     * Performs a css vendor specific transform:translate operation on the collection.
     *
@@ -762,6 +838,7 @@ trait appFrameworkCollection extends js.Object {
     * @title $().vendorCss(value)
     */
   def vendorCss(transform: String): appFrameworkCollection = js.native
+  
   /**
     * returns the width of the element, including padding on IE
     ```
@@ -772,4 +849,3 @@ trait appFrameworkCollection extends js.Object {
     */
   def width(): String = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.plaidLink.mod.Plaid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.plaidLink.plaidLinkStrings.transactions
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.plaidLink.plaidLinkStrings.investments
   - typingsJapgolly.plaidLink.plaidLinkStrings.liabilities
 */
-trait Product extends js.Object
-
+trait Product extends StObject
 object Product {
-  @scala.inline
-  def assets: typingsJapgolly.plaidLink.plaidLinkStrings.assets = this.cast("assets")
-  @scala.inline
-  def auth: typingsJapgolly.plaidLink.plaidLinkStrings.auth = this.cast("auth")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def identity: typingsJapgolly.plaidLink.plaidLinkStrings.identity = this.cast("identity")
-  @scala.inline
-  def income: typingsJapgolly.plaidLink.plaidLinkStrings.income = this.cast("income")
-  @scala.inline
-  def investments: typingsJapgolly.plaidLink.plaidLinkStrings.investments = this.cast("investments")
-  @scala.inline
-  def liabilities: typingsJapgolly.plaidLink.plaidLinkStrings.liabilities = this.cast("liabilities")
-  @scala.inline
-  def transactions: typingsJapgolly.plaidLink.plaidLinkStrings.transactions = this.cast("transactions")
+  
+  inline def assets: typingsJapgolly.plaidLink.plaidLinkStrings.assets = "assets".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.assets]
+  
+  inline def auth: typingsJapgolly.plaidLink.plaidLinkStrings.auth = "auth".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.auth]
+  
+  inline def identity: typingsJapgolly.plaidLink.plaidLinkStrings.identity = "identity".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.identity]
+  
+  inline def income: typingsJapgolly.plaidLink.plaidLinkStrings.income = "income".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.income]
+  
+  inline def investments: typingsJapgolly.plaidLink.plaidLinkStrings.investments = "investments".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.investments]
+  
+  inline def liabilities: typingsJapgolly.plaidLink.plaidLinkStrings.liabilities = "liabilities".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.liabilities]
+  
+  inline def transactions: typingsJapgolly.plaidLink.plaidLinkStrings.transactions = "transactions".asInstanceOf[typingsJapgolly.plaidLink.plaidLinkStrings.transactions]
 }
-

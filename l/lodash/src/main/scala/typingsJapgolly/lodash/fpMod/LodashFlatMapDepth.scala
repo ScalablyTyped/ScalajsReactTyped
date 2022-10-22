@@ -1,17 +1,17 @@
 package typingsJapgolly.lodash.fpMod
 
-import typingsJapgolly.lodash.mod.List
 import typingsJapgolly.lodash.mod.ListOfRecursiveArraysOrValues
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashFlatMapDepth extends js.Object {
+trait LodashFlatMapDepth extends StObject {
+  
   def apply(iteratee: String): LodashFlatMapDepth3x1 = js.native
   def apply(iteratee: String, depth: Double): LodashFlatMapDepth3x3 = js.native
-  def apply(iteratee: String, depth: Double, collection: js.Object): js.Array[_] = js.native
+  def apply(iteratee: String, depth: Double, collection: js.Object): js.Array[Any] = js.native
   def apply(iteratee: String, depth: __): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: String, depth: __, collection: js.Object): LodashFlatMapDepth3x5 = js.native
   def apply(iteratee: js.Object): LodashFlatMapDepth4x1 = js.native
@@ -24,19 +24,17 @@ trait LodashFlatMapDepth extends js.Object {
   def apply(iteratee: __, depth: __): LodashFlatMapDepth3x4 = js.native
   def apply(iteratee: __, depth: __, collection: js.Object): LodashFlatMapDepth3x4 = js.native
   def apply[T /* <: js.Object */](iteratee: __, depth: Double, collection: T): LodashFlatMapDepth2x6[T] = js.native
-  def apply[T](iteratee: __, depth: Double, collection: List[T]): LodashFlatMapDepth1x6[T] = js.native
+  def apply[T](iteratee: __, depth: Double, collection: typingsJapgolly.lodash.mod.List[T]): LodashFlatMapDepth1x6[T] = js.native
   def apply[T /* <: js.Object */](iteratee: __, depth: __, collection: T): LodashFlatMapDepth2x4[T] = js.native
-  def apply[T](iteratee: __, depth: __, collection: List[T]): LodashFlatMapDepth1x4[T] = js.native
+  def apply[T](iteratee: __, depth: __, collection: typingsJapgolly.lodash.mod.List[T]): LodashFlatMapDepth1x4[T] = js.native
+  def apply[T, TResult](iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult]): LodashFlatMapDepth1x1[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       ListOfRecursiveArraysOrValues[TResult] | TResult
-    ]
-  ): LodashFlatMapDepth2x1[T, TResult] = js.native
-  def apply[T, TResult](
-    iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult],
+    ],
     depth: Double
-  ): LodashFlatMapDepth1x3[T, TResult] = js.native
+  ): LodashFlatMapDepth2x3[T, TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -48,15 +46,9 @@ trait LodashFlatMapDepth extends js.Object {
   def apply[T, TResult](
     iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult],
     depth: Double,
-    collection: List[T]
+    collection: typingsJapgolly.lodash.mod.List[T]
   ): js.Array[TResult] = js.native
-  def apply[T /* <: js.Object */, TResult](
-    iteratee: js.Function1[
-      /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
-      ListOfRecursiveArraysOrValues[TResult] | TResult
-    ],
-    depth: __
-  ): LodashFlatMapDepth2x5[TResult] = js.native
+  def apply[T, TResult](iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult], depth: __): LodashFlatMapDepth1x5[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
@@ -68,7 +60,6 @@ trait LodashFlatMapDepth extends js.Object {
   def apply[T, TResult](
     iteratee: js.Function1[/* value */ T, ListOfRecursiveArraysOrValues[TResult] | TResult],
     depth: __,
-    collection: List[T]
+    collection: typingsJapgolly.lodash.mod.List[T]
   ): LodashFlatMapDepth1x5[TResult] = js.native
 }
-

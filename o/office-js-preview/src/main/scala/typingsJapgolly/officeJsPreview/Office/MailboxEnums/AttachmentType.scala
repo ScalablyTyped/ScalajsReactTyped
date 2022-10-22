@@ -1,51 +1,48 @@
 package typingsJapgolly.officeJsPreview.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AttachmentType extends js.Object
-
+sealed trait AttachmentType extends StObject
 /**
   * Specifies an attachment's type.
   *
   * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.AttachmentType")
 @js.native
-object AttachmentType extends js.Object {
+object AttachmentType extends StObject {
+  
   /**
-    * The attachment is stored in a cloud location, such as OneDrive. The `id` property of the attachment contains a URL to the file.
+    * The attachment is stored in a cloud location, such as OneDrive.
+    *
+    * **Important**: In Read mode, the `id` property of the attachment's {@link Office.AttachmentDetails | details} object
+    * contains a URL to the file.
+    * From requirement set 1.8, the `url` property included in the attachment's {@link Office.AttachmentDetailsCompose | details} object
+    * contains a URL to the file in Compose mode.
     */
   @js.native
-  sealed trait Cloud extends AttachmentType
+  sealed trait Cloud
+    extends StObject
+       with AttachmentType
   
   /**
     * The attachment is a file.
     */
   @js.native
-  sealed trait File extends AttachmentType
+  sealed trait File
+    extends StObject
+       with AttachmentType
   
   /**
     * The attachment is an Exchange item.
     */
   @js.native
-  sealed trait Item extends AttachmentType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AttachmentType with String] = js.native
-  /* "cloud" */ @js.native
-  object Cloud extends TopLevel[Cloud with String]
-  
-  /* "file" */ @js.native
-  object File extends TopLevel[File with String]
-  
-  /* "item" */ @js.native
-  object Item extends TopLevel[Item with String]
-  
+  sealed trait Item
+    extends StObject
+       with AttachmentType
 }
-

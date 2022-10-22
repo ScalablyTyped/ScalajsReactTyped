@@ -1,36 +1,53 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // NotificationPayloads
-trait BaseNotificationPayload extends js.Object {
+trait BaseNotificationPayload extends StObject {
+  
   var badge: js.UndefOr[Double] = js.undefined
+  
   var body: js.UndefOr[String] = js.undefined
+  
   var payload: js.Object
+  
   var sound: js.UndefOr[String] = js.undefined
+  
   var subtitle: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object BaseNotificationPayload {
-  @scala.inline
-  def apply(
-    payload: js.Object,
-    badge: Int | Double = null,
-    body: String = null,
-    sound: String = null,
-    subtitle: String = null,
-    title: String = null
-  ): BaseNotificationPayload = {
+  
+  inline def apply(payload: js.Object): BaseNotificationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (sound != null) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNotificationPayload]
   }
+  
+  extension [Self <: BaseNotificationPayload](x: Self) {
+    
+    inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setPayload(value: js.Object): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

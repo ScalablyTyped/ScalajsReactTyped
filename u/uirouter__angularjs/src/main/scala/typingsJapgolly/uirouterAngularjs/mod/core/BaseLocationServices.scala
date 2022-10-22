@@ -1,13 +1,12 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/angularjs", "core.BaseLocationServices")
+/* note: abstract class */ @JSImport("@uirouter/angularjs", "core.BaseLocationServices")
 @js.native
-abstract class BaseLocationServices protected ()
+open class BaseLocationServices protected ()
   extends typingsJapgolly.uirouterCore.mod.BaseLocationServices {
-  def this(router: typingsJapgolly.uirouterCore.routerMod.UIRouter, fireAfterUpdate: Boolean) = this()
+  def this(router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter, fireAfterUpdate: Boolean) = this()
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.dogeSeed
 
-import typingsJapgolly.dogeSeed.dogeSeedNumbers.`128`
-import typingsJapgolly.dogeSeed.dogeSeedNumbers.`160`
-import typingsJapgolly.dogeSeed.dogeSeedNumbers.`192`
-import typingsJapgolly.dogeSeed.dogeSeedNumbers.`224`
-import typingsJapgolly.dogeSeed.dogeSeedNumbers.`256`
+import typingsJapgolly.dogeSeed.dogeSeedInts.`128`
+import typingsJapgolly.dogeSeed.dogeSeedInts.`160`
+import typingsJapgolly.dogeSeed.dogeSeedInts.`192`
+import typingsJapgolly.dogeSeed.dogeSeedInts.`224`
+import typingsJapgolly.dogeSeed.dogeSeedInts.`256`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("doge-seed", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Generates a cryptographically secure mnemonic seed phrase with added dankness.
     * The first four words will be a randomly generated Doge-like sentence.
@@ -22,11 +21,10 @@ object mod extends js.Object {
     * @param bits The number of bits to derive a BIP39 mnemonic from. Default: `128`.
     * @returns A BIP39 mnemonic seed phrase.
     */
-  def apply(): String = js.native
-  def apply(bits: `128`): String = js.native
-  def apply(bits: `160`): String = js.native
-  def apply(bits: `192`): String = js.native
-  def apply(bits: `224`): String = js.native
-  def apply(bits: `256`): String = js.native
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(bits: `128` | `160` | `192` | `224` | `256`): String = ^.asInstanceOf[js.Dynamic].apply(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("doge-seed", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

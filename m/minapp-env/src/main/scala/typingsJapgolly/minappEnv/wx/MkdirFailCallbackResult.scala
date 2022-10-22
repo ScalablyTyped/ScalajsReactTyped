@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MkdirFailCallbackResult extends js.Object {
+trait MkdirFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -13,13 +14,15 @@ trait MkdirFailCallbackResult extends js.Object {
     * - 'fail file already exists ${dirPath}': 有同名文件或目录; */
   var errMsg: String
 }
-
 object MkdirFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): MkdirFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): MkdirFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[MkdirFailCallbackResult]
   }
+  
+  extension [Self <: MkdirFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

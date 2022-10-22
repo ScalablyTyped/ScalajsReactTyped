@@ -1,39 +1,60 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DroppableEvent extends js.Object {
+trait DroppableEvent extends StObject {
+  
   var element: js.UndefOr[JQuery] = js.undefined
+  
   var event: js.UndefOr[js.Object] = js.undefined
+  
   var offset: js.UndefOr[js.Object] = js.undefined
+  
   var pos: js.UndefOr[Postion] = js.undefined
+  
   var smallOffset: js.UndefOr[js.Object] = js.undefined
+  
   var startOffset: js.UndefOr[js.Object] = js.undefined
+  
   var target: js.UndefOr[JQuery] = js.undefined
 }
-
 object DroppableEvent {
-  @scala.inline
-  def apply(
-    element: JQuery = null,
-    event: js.Object = null,
-    offset: js.Object = null,
-    pos: Postion = null,
-    smallOffset: js.Object = null,
-    startOffset: js.Object = null,
-    target: JQuery = null
-  ): DroppableEvent = {
+  
+  inline def apply(): DroppableEvent = {
     val __obj = js.Dynamic.literal()
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
-    if (smallOffset != null) __obj.updateDynamic("smallOffset")(smallOffset.asInstanceOf[js.Any])
-    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableEvent]
   }
+  
+  extension [Self <: DroppableEvent](x: Self) {
+    
+    inline def setElement(value: JQuery): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    
+    inline def setEvent(value: js.Object): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setOffset(value: js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPos(value: Postion): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    
+    inline def setPosUndefined: Self = StObject.set(x, "pos", js.undefined)
+    
+    inline def setSmallOffset(value: js.Object): Self = StObject.set(x, "smallOffset", value.asInstanceOf[js.Any])
+    
+    inline def setSmallOffsetUndefined: Self = StObject.set(x, "smallOffset", js.undefined)
+    
+    inline def setStartOffset(value: js.Object): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    
+    inline def setStartOffsetUndefined: Self = StObject.set(x, "startOffset", js.undefined)
+    
+    inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

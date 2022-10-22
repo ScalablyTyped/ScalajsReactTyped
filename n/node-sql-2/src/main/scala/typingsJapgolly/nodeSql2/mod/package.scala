@@ -1,12 +1,14 @@
-package typingsJapgolly.nodeSql2
+package typingsJapgolly.nodeSql2.mod
 
+import typingsJapgolly.nodeSql2.anon.Alter
+import typingsJapgolly.nodeSql2.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Columns[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ Name in keyof T ]: node-sql-2.sql.Column<Name, T[Name]>}
-    */ typingsJapgolly.nodeSql2.nodeSql2Strings.Columns with T
-  type Table[Name /* <: java.lang.String */, T] = typingsJapgolly.nodeSql2.mod.TableNode with typingsJapgolly.nodeSql2.mod.Queryable[T] with typingsJapgolly.nodeSql2.mod.Named[Name] with typingsJapgolly.nodeSql2.mod.Columns[T] with typingsJapgolly.nodeSql2.AnonAlter[T]
-}
+
+inline def define[Name /* <: String */, T](map: TableDefinition[Name, T]): Table[Name, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(map.asInstanceOf[js.Any]).asInstanceOf[Table[Name, T]]
+
+inline def setDialect(dialect: SQLDialects): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDialect")(dialect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+type Table[Name /* <: String */, T] = TableNode & Queryable[T] & Named[Name] & Columns[T] & Alter[T]

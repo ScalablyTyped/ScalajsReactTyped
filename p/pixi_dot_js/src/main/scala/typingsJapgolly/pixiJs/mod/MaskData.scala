@@ -1,21 +1,17 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiCore.mod.IMaskTarget
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Component for masked elements
-  *
-  * Holds mask mode and temporary data about current mask
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "MaskData")
 @js.native
-class MaskData ()
-  extends typingsJapgolly.pixiJs.PIXI.MaskData {
-  def this(maskObject: typingsJapgolly.pixiJs.PIXI.DisplayObject) = this()
+/**
+  * Create MaskData
+  * @param {PIXI.DisplayObject} [maskObject=null] - object that describes the mask
+  */
+open class MaskData ()
+  extends typingsJapgolly.pixiCore.mod.MaskData {
+  def this(maskObject: IMaskTarget) = this()
 }
-

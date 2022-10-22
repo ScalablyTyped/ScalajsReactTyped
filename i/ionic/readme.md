@@ -10,10 +10,10 @@ A tool for creating and developing Ionic Framework mobile apps.
 | ------------------ | :-------------: |
 | Full name          | ionic |
 | Keywords           | ionic, ionic framework, ionicframework, mobile, app, hybrid, cordova, native, phonegap |
-| # releases         | 138 |
-| # dependents       | 21 |
-| # downloads        | 3374173 |
-| # stars            | 124 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 75982.66666666667 |
+| # stars            | 1984.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com)

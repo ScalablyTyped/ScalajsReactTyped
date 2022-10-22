@@ -1,20 +1,28 @@
 package typingsJapgolly.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BestPath extends js.Object {
+trait BestPath extends StObject {
+  
   var componenets: js.Array[Change]
+  
   var newPos: Double
 }
-
 object BestPath {
-  @scala.inline
-  def apply(componenets: js.Array[Change], newPos: Double): BestPath = {
-    val __obj = js.Dynamic.literal(componenets = componenets.asInstanceOf[js.Any], newPos = newPos.asInstanceOf[js.Any])
   
+  inline def apply(componenets: js.Array[Change], newPos: Double): BestPath = {
+    val __obj = js.Dynamic.literal(componenets = componenets.asInstanceOf[js.Any], newPos = newPos.asInstanceOf[js.Any])
     __obj.asInstanceOf[BestPath]
   }
+  
+  extension [Self <: BestPath](x: Self) {
+    
+    inline def setComponenets(value: js.Array[Change]): Self = StObject.set(x, "componenets", value.asInstanceOf[js.Any])
+    
+    inline def setComponenetsVarargs(value: Change*): Self = StObject.set(x, "componenets", js.Array(value*))
+    
+    inline def setNewPos(value: Double): Self = StObject.set(x, "newPos", value.asInstanceOf[js.Any])
+  }
 }
-

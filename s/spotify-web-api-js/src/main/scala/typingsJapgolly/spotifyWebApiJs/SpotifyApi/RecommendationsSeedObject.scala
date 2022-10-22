@@ -3,26 +3,31 @@ package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.artist
 import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.genre
 import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Recommendations Seed Object
   * [](https://developer.spotify.com/web-api/object-model/#recommendations-seed-object)
   */
-trait RecommendationsSeedObject extends js.Object {
+trait RecommendationsSeedObject extends StObject {
+  
   var afterFilteringSize: Double
+  
   var afterRelinkingSize: Double
+  
   var href: String
+  
   var id: String
+  
   var initialPoolSize: Double
+  
   var `type`: artist | track | genre
 }
-
 object RecommendationsSeedObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     afterFilteringSize: Double,
     afterRelinkingSize: Double,
     href: String,
@@ -34,5 +39,19 @@ object RecommendationsSeedObject {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecommendationsSeedObject]
   }
+  
+  extension [Self <: RecommendationsSeedObject](x: Self) {
+    
+    inline def setAfterFilteringSize(value: Double): Self = StObject.set(x, "afterFilteringSize", value.asInstanceOf[js.Any])
+    
+    inline def setAfterRelinkingSize(value: Double): Self = StObject.set(x, "afterRelinkingSize", value.asInstanceOf[js.Any])
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInitialPoolSize(value: Double): Self = StObject.set(x, "initialPoolSize", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: artist | track | genre): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

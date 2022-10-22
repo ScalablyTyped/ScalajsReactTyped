@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartZoomEndEvent extends StockChartEvent {
-  var axisRanges: js.UndefOr[js.Any] = js.undefined
-  var originalEvent: js.UndefOr[js.Any] = js.undefined
+trait StockChartZoomEndEvent
+  extends StObject
+     with StockChartEvent {
+  
+  var axisRanges: js.UndefOr[Any] = js.undefined
+  
+  var originalEvent: js.UndefOr[Any] = js.undefined
 }
-
 object StockChartZoomEndEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: StockChart,
-    axisRanges: js.Any = null,
-    originalEvent: js.Any = null
-  ): StockChartZoomEndEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (axisRanges != null) __obj.updateDynamic("axisRanges")(axisRanges.asInstanceOf[js.Any])
-    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: StockChart): StockChartZoomEndEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartZoomEndEvent]
   }
+  
+  extension [Self <: StockChartZoomEndEvent](x: Self) {
+    
+    inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
+    
+    inline def setAxisRangesUndefined: Self = StObject.set(x, "axisRanges", js.undefined)
+    
+    inline def setOriginalEvent(value: Any): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalEventUndefined: Self = StObject.set(x, "originalEvent", js.undefined)
+  }
 }
-

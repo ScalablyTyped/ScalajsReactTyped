@@ -1,24 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushSubscriptionOptionsInit extends js.Object {
+trait PushSubscriptionOptionsInit extends StObject {
+  
+  /* standard dom */
   var applicationServerKey: js.UndefOr[BufferSource | java.lang.String | Null] = js.undefined
+  
+  /* standard dom */
   var userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object PushSubscriptionOptionsInit {
-  @scala.inline
-  def apply(
-    applicationServerKey: BufferSource | java.lang.String = null,
-    userVisibleOnly: js.UndefOr[scala.Boolean] = js.undefined
-  ): PushSubscriptionOptionsInit = {
+  
+  inline def apply(): PushSubscriptionOptionsInit = {
     val __obj = js.Dynamic.literal()
-    if (applicationServerKey != null) __obj.updateDynamic("applicationServerKey")(applicationServerKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(userVisibleOnly)) __obj.updateDynamic("userVisibleOnly")(userVisibleOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushSubscriptionOptionsInit]
   }
+  
+  extension [Self <: PushSubscriptionOptionsInit](x: Self) {
+    
+    inline def setApplicationServerKey(value: BufferSource | java.lang.String): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
+    
+    inline def setApplicationServerKeyUndefined: Self = StObject.set(x, "applicationServerKey", js.undefined)
+    
+    inline def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
+    
+    inline def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
+  }
 }
-

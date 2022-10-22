@@ -1,30 +1,16 @@
 package typingsJapgolly.reactAsync.mod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactAsync.AnonChildren
-import typingsJapgolly.reactAsync.AnonChildrenPersist
-import typingsJapgolly.reactAsync.AnonChildrenSettledChildren
-import typingsJapgolly.reactAsync.AnonInitial
-import typingsJapgolly.reactAsync.AnonPersist
+import typingsJapgolly.reactAsync.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("react-async", JSImport.Default)
 @js.native
-class default[T] ()
-  extends Component[AsyncProps[T], AsyncState[T], js.Any]
-
-@JSImport("react-async", JSImport.Default)
-@js.native
-object default extends js.Object {
-  def Fulfilled[T](props: AnonPersist[T]): Element = js.native
-  def Initial[T](props: AnonChildren[T]): Element = js.native
-  def Loading[T](props: AnonInitial[T]): Element = js.native
-  def Pending[T](props: AnonInitial[T]): Element = js.native
-  def Rejected[T](props: AnonChildrenPersist[T]): Element = js.native
-  def Resolved[T](props: AnonPersist[T]): Element = js.native
-  def Settled[T](props: AnonChildrenSettledChildren[T]): Element = js.native
+open class default[T] () extends Component[AsyncProps[T], AsyncState[T, AbstractState[T]], Any]
+object default {
+  
+  inline def apply: GenericAsync = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[GenericAsync]
 }
-

@@ -1,16 +1,23 @@
 package typingsJapgolly.awsSdkMiddlewareInputDefault
 
-import typingsJapgolly.awsSdkTypes.middlewareMod.Middleware
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-input-default", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def inputDefault[Input /* <: js.Object */](inputBag: InputDefaultArgs[Input]): Middleware[Input, _] = js.native
-  type InputDefaultArgs[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ field in keyof Input ]:? Input[field]}
-    */ typingsJapgolly.awsSdkMiddlewareInputDefault.awsSdkMiddlewareInputDefaultStrings.InputDefaultArgs with Input
+object mod {
+  
+  @JSImport("@aws-sdk/middleware-input-default", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def inputDefault[Input /* <: js.Object */](inputBag: InputDefaultArgs[Input]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefault")(inputBag.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * This translation is imprecise and ignores the effect of the type mapping. 
+    * TS definition: {{{
+    {[ field in keyof Input ]:? Input[field]}
+    }}}
+    */
+  type InputDefaultArgs[Input /* <: js.Object */] = Input
 }
-

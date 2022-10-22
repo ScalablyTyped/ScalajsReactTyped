@@ -1,15 +1,17 @@
 package typingsJapgolly.awsSdkAddGlacierChecksumHeadersUniversal
 
-import typingsJapgolly.awsSdkTypes.cryptoMod.HashConstructor
-import typingsJapgolly.awsSdkTypes.middlewareMod.BuildMiddleware
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.HashConstructor
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Decoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/add-glacier-checksum-headers-universal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): BuildMiddleware[_, _, _] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/add-glacier-checksum-headers-universal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def addChecksumHeaders(Sha256: HashConstructor, fromUtf8: Decoder): BuildMiddleware[Any, Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("addChecksumHeaders")(Sha256.asInstanceOf[js.Any], fromUtf8.asInstanceOf[js.Any])).asInstanceOf[BuildMiddleware[Any, Any]]
 }
-

@@ -1,19 +1,19 @@
 package typingsJapgolly.mathjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // FactoryFunctionMap can be nested; all nested objects will be flattened
-trait FactoryFunctionMap extends /* key */ StringDictionary[FactoryFunction[_] | FactoryFunctionMap]
-
+trait FactoryFunctionMap
+  extends StObject
+     with // eslint-disable-next-line @typescript-eslint/no-explicit-any
+/* key */ StringDictionary[FactoryFunction[Any] | FactoryFunctionMap]
 object FactoryFunctionMap {
-  @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[FactoryFunction[_] | FactoryFunctionMap] = null): FactoryFunctionMap = {
+  
+  inline def apply(): FactoryFunctionMap = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[FactoryFunctionMap]
   }
 }
-

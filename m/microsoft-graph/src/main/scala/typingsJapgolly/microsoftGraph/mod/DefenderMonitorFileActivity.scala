@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly
 */
-trait DefenderMonitorFileActivity extends js.Object
-
+trait DefenderMonitorFileActivity extends StObject
 object DefenderMonitorFileActivity {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disable = this.cast("disable")
-  @scala.inline
-  def monitorAllFiles: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorAllFiles = this.cast("monitorAllFiles")
-  @scala.inline
-  def monitorIncomingFilesOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = this.cast("monitorIncomingFilesOnly")
-  @scala.inline
-  def monitorOutgoingFilesOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = this.cast("monitorOutgoingFilesOnly")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def disable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disable = "disable".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.disable]
+  
+  inline def monitorAllFiles: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorAllFiles = "monitorAllFiles".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorAllFiles]
+  
+  inline def monitorIncomingFilesOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorIncomingFilesOnly]
+  
+  inline def monitorOutgoingFilesOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.monitorOutgoingFilesOnly]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

@@ -1,43 +1,39 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
 */
-trait MsoIconType extends js.Object
-
+trait MsoIconType extends StObject
 object MsoIconType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoIconAlert: `2` = this.cast(2)
-  @scala.inline
-  def msoIconAlertCritical: `7` = this.cast(7)
-  @scala.inline
-  def msoIconAlertInfo: `4` = this.cast(4)
-  @scala.inline
-  def msoIconAlertQuery: `6` = this.cast(6)
-  @scala.inline
-  def msoIconAlertWarning: `5` = this.cast(5)
-  @scala.inline
-  def msoIconNone: `0` = this.cast(0)
-  @scala.inline
-  def msoIconTip: `3` = this.cast(3)
+  
+  inline def msoIconAlert: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoIconAlertCritical: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoIconAlertInfo: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoIconAlertQuery: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoIconAlertWarning: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoIconNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoIconTip: `3` = 3.asInstanceOf[`3`]
 }
-

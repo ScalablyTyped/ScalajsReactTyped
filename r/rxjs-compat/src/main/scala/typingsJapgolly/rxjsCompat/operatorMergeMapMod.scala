@@ -1,26 +1,17 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.ObservableInput
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/mergeMap", JSImport.Namespace)
-@js.native
-object operatorMergeMapMod extends js.Object {
-  def mergeMap[T, R](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
-    ]
-  ): js.Any = js.native
-  def mergeMap[T, R](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
-    ],
-    concurrent: Double
-  ): js.Any = js.native
+object operatorMergeMapMod {
+  
+  @JSImport("rxjs-compat/operator/mergeMap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def mergeMap[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any]).asInstanceOf[Observable_[R]]
+  inline def mergeMap[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double): Observable_[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeMap")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable_[R]]
 }
-

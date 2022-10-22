@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder used to construct Range objects from document elements.
@@ -18,9 +18,11 @@ import scala.scalajs.js.annotation._
   *     doc.setSelection(rangeBuilder.build());
   */
 @js.native
-trait RangeBuilder extends js.Object {
+trait RangeBuilder extends StObject {
+  
   def addElement(element: Element): RangeBuilder = js.native
   def addElement(textElement: Text, startOffset: Integer, endOffsetInclusive: Integer): RangeBuilder = js.native
+  
   def addElementsBetween(startElement: Element, endElementInclusive: Element): RangeBuilder = js.native
   def addElementsBetween(
     startTextElement: Text,
@@ -28,9 +30,12 @@ trait RangeBuilder extends js.Object {
     endTextElementInclusive: Text,
     endOffsetInclusive: Integer
   ): RangeBuilder = js.native
+  
   def addRange(range: Range): RangeBuilder = js.native
+  
   def build(): Range = js.native
+  
   def getRangeElements(): js.Array[RangeElement] = js.native
+  
   /** @deprecated DO NOT USE */ def getSelectedElements(): js.Array[RangeElement] = js.native
 }
-

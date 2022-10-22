@@ -1,7 +1,7 @@
 
 # Scala.js typings for bowser
 
-Typings are for version 2.9.0
+Typings are for version 2.11.0
 
 ## Library description:
 Lightweight browser detector
@@ -10,15 +10,12 @@ Lightweight browser detector
 | ------------------ | :-------------: |
 | Full name          | bowser |
 | Keywords           | browser, useragent, user-agent, parser, ua, detection, ender, sniff |
-| # releases         | 29 |
-| # dependents       | 250 |
-| # downloads        | 48911585 |
-| # stars            | 21 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6347394333333334E7 |
+| # stars            | 5120.0 |
 
 ## Links
-- [Homepage](https://github.com/lancedikson/bowser)
-- [Bugs](https://github.com/lancedikson/bowser/issues)
-- [Repository](https://github.com/lancedikson/bowser)
 - [Npm](https://www.npmjs.com/package/bowser)
     
 

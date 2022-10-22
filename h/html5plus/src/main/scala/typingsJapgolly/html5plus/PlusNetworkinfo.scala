@@ -1,16 +1,17 @@
 package typingsJapgolly.html5plus
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * networkinfo模块用于获取网络信息
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
-trait PlusNetworkinfo extends js.Object {
+trait PlusNetworkinfo extends StObject {
+  
   /**
     * 蜂窝移动2G网络
     * 网络状态常量，当前设备连接到蜂窝移动2G网络，固定值为4。
@@ -18,6 +19,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_CELL2G: js.UndefOr[Double] = js.undefined
+  
   /**
     * 蜂窝移动3G网络
     * 网络状态常量，当前设备连接到蜂窝移动3G网络，固定值为5。
@@ -25,6 +27,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_CELL3G: js.UndefOr[Double] = js.undefined
+  
   /**
     * 蜂窝移动4G网络
     * 网络状态常量，当前设备连接到蜂窝移动4G网络，固定值为6。
@@ -32,6 +35,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_CELL4G: js.UndefOr[Double] = js.undefined
+  
   /**
     * 有线网络
     * 网络状态常量，当前设备连接到有线网络，固定值为2。
@@ -39,6 +43,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_ETHERNET: js.UndefOr[Double] = js.undefined
+  
   /**
     * 未连接网络
     * 网络状态常量，当前设备网络未连接网络，固定值为1。
@@ -46,6 +51,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_NONE: js.UndefOr[Double] = js.undefined
+  
   /**
     * 网络连接状态未知
     * 网络状态常量，表示当前设备网络状态未知，固定值为0。
@@ -53,6 +59,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_UNKNOW: js.UndefOr[Double] = js.undefined
+  
   /**
     * 无线WIFI网络
     * 网络状态常量，当前设备连接到无线WIFI网络，固定值为3。
@@ -60,6 +67,7 @@ trait PlusNetworkinfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var CONNECTION_WIFI: js.UndefOr[Double] = js.undefined
+  
   /**
     * 获取设备当前连接的网络类型
     * 获取当前设备连接的网络类型，返回值为网络类型常量，可取值CONNECTION_*常量。
@@ -68,29 +76,43 @@ trait PlusNetworkinfo extends js.Object {
     */
   def getCurrentType(): Double
 }
-
 object PlusNetworkinfo {
-  @scala.inline
-  def apply(
-    getCurrentType: CallbackTo[Double],
-    CONNECTION_CELL2G: Int | Double = null,
-    CONNECTION_CELL3G: Int | Double = null,
-    CONNECTION_CELL4G: Int | Double = null,
-    CONNECTION_ETHERNET: Int | Double = null,
-    CONNECTION_NONE: Int | Double = null,
-    CONNECTION_UNKNOW: Int | Double = null,
-    CONNECTION_WIFI: Int | Double = null
-  ): PlusNetworkinfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getCurrentType")(getCurrentType.toJsFn)
-    if (CONNECTION_CELL2G != null) __obj.updateDynamic("CONNECTION_CELL2G")(CONNECTION_CELL2G.asInstanceOf[js.Any])
-    if (CONNECTION_CELL3G != null) __obj.updateDynamic("CONNECTION_CELL3G")(CONNECTION_CELL3G.asInstanceOf[js.Any])
-    if (CONNECTION_CELL4G != null) __obj.updateDynamic("CONNECTION_CELL4G")(CONNECTION_CELL4G.asInstanceOf[js.Any])
-    if (CONNECTION_ETHERNET != null) __obj.updateDynamic("CONNECTION_ETHERNET")(CONNECTION_ETHERNET.asInstanceOf[js.Any])
-    if (CONNECTION_NONE != null) __obj.updateDynamic("CONNECTION_NONE")(CONNECTION_NONE.asInstanceOf[js.Any])
-    if (CONNECTION_UNKNOW != null) __obj.updateDynamic("CONNECTION_UNKNOW")(CONNECTION_UNKNOW.asInstanceOf[js.Any])
-    if (CONNECTION_WIFI != null) __obj.updateDynamic("CONNECTION_WIFI")(CONNECTION_WIFI.asInstanceOf[js.Any])
+  
+  inline def apply(getCurrentType: CallbackTo[Double]): PlusNetworkinfo = {
+    val __obj = js.Dynamic.literal(getCurrentType = getCurrentType.toJsFn)
     __obj.asInstanceOf[PlusNetworkinfo]
   }
+  
+  extension [Self <: PlusNetworkinfo](x: Self) {
+    
+    inline def setCONNECTION_CELL2G(value: Double): Self = StObject.set(x, "CONNECTION_CELL2G", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_CELL2GUndefined: Self = StObject.set(x, "CONNECTION_CELL2G", js.undefined)
+    
+    inline def setCONNECTION_CELL3G(value: Double): Self = StObject.set(x, "CONNECTION_CELL3G", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_CELL3GUndefined: Self = StObject.set(x, "CONNECTION_CELL3G", js.undefined)
+    
+    inline def setCONNECTION_CELL4G(value: Double): Self = StObject.set(x, "CONNECTION_CELL4G", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_CELL4GUndefined: Self = StObject.set(x, "CONNECTION_CELL4G", js.undefined)
+    
+    inline def setCONNECTION_ETHERNET(value: Double): Self = StObject.set(x, "CONNECTION_ETHERNET", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_ETHERNETUndefined: Self = StObject.set(x, "CONNECTION_ETHERNET", js.undefined)
+    
+    inline def setCONNECTION_NONE(value: Double): Self = StObject.set(x, "CONNECTION_NONE", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_NONEUndefined: Self = StObject.set(x, "CONNECTION_NONE", js.undefined)
+    
+    inline def setCONNECTION_UNKNOW(value: Double): Self = StObject.set(x, "CONNECTION_UNKNOW", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_UNKNOWUndefined: Self = StObject.set(x, "CONNECTION_UNKNOW", js.undefined)
+    
+    inline def setCONNECTION_WIFI(value: Double): Self = StObject.set(x, "CONNECTION_WIFI", value.asInstanceOf[js.Any])
+    
+    inline def setCONNECTION_WIFIUndefined: Self = StObject.set(x, "CONNECTION_WIFI", js.undefined)
+    
+    inline def setGetCurrentType(value: CallbackTo[Double]): Self = StObject.set(x, "getCurrentType", value.toJsFn)
+  }
 }
-

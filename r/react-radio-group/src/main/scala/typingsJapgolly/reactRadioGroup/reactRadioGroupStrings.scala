@@ -1,39 +1,32 @@
 package typingsJapgolly.reactRadioGroup
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRadioGroupStrings {
-  @js.native
-  sealed trait `aria-checked` extends js.Object
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait `aria-checked` extends StObject
+  inline def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
   
   @js.native
-  sealed trait onChange extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait role extends js.Object
+  sealed trait onChange extends StObject
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait role extends StObject
+  inline def role: role = "role".asInstanceOf[role]
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
-  @scala.inline
-  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def role: role = "role".asInstanceOf[role]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
+  @js.native
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
 }
-

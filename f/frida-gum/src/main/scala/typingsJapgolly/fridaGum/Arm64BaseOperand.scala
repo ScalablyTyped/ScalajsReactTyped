@@ -1,30 +1,47 @@
 package typingsJapgolly.fridaGum
 
+import typingsJapgolly.fridaGum.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Arm64BaseOperand extends js.Object {
+trait Arm64BaseOperand extends StObject {
+  
+  var access: OperandAccess
+  
   var ext: js.UndefOr[Arm64Extender] = js.undefined
-  var shift: js.UndefOr[AnonValue] = js.undefined
+  
+  var shift: js.UndefOr[Value] = js.undefined
+  
   var vas: js.UndefOr[Arm64Vas] = js.undefined
+  
   var vectorIndex: js.UndefOr[Double] = js.undefined
 }
-
 object Arm64BaseOperand {
-  @scala.inline
-  def apply(
-    ext: Arm64Extender = null,
-    shift: AnonValue = null,
-    vas: Arm64Vas = null,
-    vectorIndex: Int | Double = null
-  ): Arm64BaseOperand = {
-    val __obj = js.Dynamic.literal()
-    if (ext != null) __obj.updateDynamic("ext")(ext.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vas != null) __obj.updateDynamic("vas")(vas.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess): Arm64BaseOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
     __obj.asInstanceOf[Arm64BaseOperand]
   }
+  
+  extension [Self <: Arm64BaseOperand](x: Self) {
+    
+    inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setExt(value: Arm64Extender): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    
+    inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+    
+    inline def setShift(value: Value): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    
+    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+    
+    inline def setVas(value: Arm64Vas): Self = StObject.set(x, "vas", value.asInstanceOf[js.Any])
+    
+    inline def setVasUndefined: Self = StObject.set(x, "vas", js.undefined)
+    
+    inline def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
+  }
 }
-

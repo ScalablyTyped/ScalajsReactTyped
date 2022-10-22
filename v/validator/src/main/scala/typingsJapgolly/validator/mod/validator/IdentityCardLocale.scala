@@ -1,24 +1,23 @@
 package typingsJapgolly.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.validator.validatorStrings.ES
   - typingsJapgolly.validator.validatorStrings.`he-IL`
   - typingsJapgolly.validator.validatorStrings.`zh-TW`
+  - typingsJapgolly.validator.validatorStrings.`zh-CN`
 */
-trait IdentityCardLocale extends js.Object
-
+trait IdentityCardLocale extends StObject
 object IdentityCardLocale {
-  @scala.inline
-  def ES: typingsJapgolly.validator.validatorStrings.ES = this.cast("ES")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `he-IL`: typingsJapgolly.validator.validatorStrings.`he-IL` = this.cast("he-IL")
-  @scala.inline
-  def `zh-TW`: typingsJapgolly.validator.validatorStrings.`zh-TW` = this.cast("zh-TW")
+  
+  inline def ES: typingsJapgolly.validator.validatorStrings.ES = "ES".asInstanceOf[typingsJapgolly.validator.validatorStrings.ES]
+  
+  inline def `he-IL`: typingsJapgolly.validator.validatorStrings.`he-IL` = "he-IL".asInstanceOf[typingsJapgolly.validator.validatorStrings.`he-IL`]
+  
+  inline def `zh-CN`: typingsJapgolly.validator.validatorStrings.`zh-CN` = "zh-CN".asInstanceOf[typingsJapgolly.validator.validatorStrings.`zh-CN`]
+  
+  inline def `zh-TW`: typingsJapgolly.validator.validatorStrings.`zh-TW` = "zh-TW".asInstanceOf[typingsJapgolly.validator.validatorStrings.`zh-TW`]
 }
-

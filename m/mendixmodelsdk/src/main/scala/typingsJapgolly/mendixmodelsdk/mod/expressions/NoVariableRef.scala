@@ -1,53 +1,71 @@
 package typingsJapgolly.mendixmodelsdk.mod.expressions
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.expressionsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
+  * @ignore
+  *
+  * In version 9.8.0: deleted
   * In version 7.9.0: introduced
   */
 @JSImport("mendixmodelsdk", "expressions.NoVariableRef")
 @js.native
-class NoVariableRef protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.expressions.NoVariableRef {
+open class NoVariableRef protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.expressions.NoVariableRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "expressions.NoVariableRef")
-@js.native
-object NoVariableRef extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object NoVariableRef {
+  
+  @JSImport("mendixmodelsdk", "expressions.NoVariableRef")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new NoVariableRef instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef]
+  
   /**
     * Creates and returns a new NoVariableRef instance in the SDK and on the server.
     * The new NoVariableRef will be automatically stored in the 'variable' property
     * of the parent VariableRefExpression element passed as argument.
     *
     * Warning! Can only be used on models with the following Mendix meta model versions:
-    *  7.9.0 and higher
+    *  7.9.0 to 9.7.0
     */
-  def createIn(container: typingsJapgolly.mendixmodelsdk.expressionsMod.expressions.VariableRefExpression): typingsJapgolly.mendixmodelsdk.expressionsMod.expressions.NoVariableRef = js.native
+  /* static member */
+  inline def createIn(container: typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.VariableRefExpression): typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenExpressionsMod.expressions.NoVariableRef]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.NoVariableRef.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "expressions.NoVariableRef.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

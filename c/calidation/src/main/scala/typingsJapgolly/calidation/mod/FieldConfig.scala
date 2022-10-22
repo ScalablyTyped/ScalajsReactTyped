@@ -1,54 +1,114 @@
 package typingsJapgolly.calidation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldConfig extends js.Object {
-  var isBlacklisted: js.UndefOr[BlacklistValidator] = js.undefined
-  var isEmail: js.UndefOr[SimpleValidator] = js.undefined
-  var isEqual: js.UndefOr[ValueValidator[_]] = js.undefined
-  var isExactLength: js.UndefOr[LengthValidator] = js.undefined
-  var isGreaterThan: js.UndefOr[ValueValidator[Double]] = js.undefined
-  var isLessThan: js.UndefOr[ValueValidator[Double]] = js.undefined
-  var isMaxLength: js.UndefOr[LengthValidator] = js.undefined
-  var isMinLength: js.UndefOr[LengthValidator] = js.undefined
-  var isNumber: js.UndefOr[SimpleValidator] = js.undefined
-  var isRegexMatch: js.UndefOr[RegexValidator] = js.undefined
-  var isRequired: js.UndefOr[SimpleValidator] = js.undefined
-  var isWhitelisted: js.UndefOr[WhitelistValidator] = js.undefined
+trait FieldConfig[T /* <: js.Object */] extends StObject {
+  
+  var isBlacklisted: js.UndefOr[BlacklistValidator[T]] = js.undefined
+  
+  var isEmail: js.UndefOr[SimpleValidator[T]] = js.undefined
+  
+  var isEqual: js.UndefOr[ValueValidator[Any, T]] = js.undefined
+  
+  var isExactLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  
+  var isGreaterThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
+  
+  var isLessThan: js.UndefOr[ValueValidator[Double, T]] = js.undefined
+  
+  var isMaxLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  
+  var isMinLength: js.UndefOr[LengthValidator[T]] = js.undefined
+  
+  var isNumber: js.UndefOr[SimpleValidator[T]] = js.undefined
+  
+  var isRegexMatch: js.UndefOr[RegexValidator[T]] = js.undefined
+  
+  var isRequired: js.UndefOr[SimpleValidator[T]] = js.undefined
+  
+  var isWhitelisted: js.UndefOr[WhitelistValidator[T]] = js.undefined
 }
-
 object FieldConfig {
-  @scala.inline
-  def apply(
-    isBlacklisted: BlacklistValidator = null,
-    isEmail: SimpleValidator = null,
-    isEqual: ValueValidator[_] = null,
-    isExactLength: LengthValidator = null,
-    isGreaterThan: ValueValidator[Double] = null,
-    isLessThan: ValueValidator[Double] = null,
-    isMaxLength: LengthValidator = null,
-    isMinLength: LengthValidator = null,
-    isNumber: SimpleValidator = null,
-    isRegexMatch: RegexValidator = null,
-    isRequired: SimpleValidator = null,
-    isWhitelisted: WhitelistValidator = null
-  ): FieldConfig = {
+  
+  inline def apply[T /* <: js.Object */](): FieldConfig[T] = {
     val __obj = js.Dynamic.literal()
-    if (isBlacklisted != null) __obj.updateDynamic("isBlacklisted")(isBlacklisted.asInstanceOf[js.Any])
-    if (isEmail != null) __obj.updateDynamic("isEmail")(isEmail.asInstanceOf[js.Any])
-    if (isEqual != null) __obj.updateDynamic("isEqual")(isEqual.asInstanceOf[js.Any])
-    if (isExactLength != null) __obj.updateDynamic("isExactLength")(isExactLength.asInstanceOf[js.Any])
-    if (isGreaterThan != null) __obj.updateDynamic("isGreaterThan")(isGreaterThan.asInstanceOf[js.Any])
-    if (isLessThan != null) __obj.updateDynamic("isLessThan")(isLessThan.asInstanceOf[js.Any])
-    if (isMaxLength != null) __obj.updateDynamic("isMaxLength")(isMaxLength.asInstanceOf[js.Any])
-    if (isMinLength != null) __obj.updateDynamic("isMinLength")(isMinLength.asInstanceOf[js.Any])
-    if (isNumber != null) __obj.updateDynamic("isNumber")(isNumber.asInstanceOf[js.Any])
-    if (isRegexMatch != null) __obj.updateDynamic("isRegexMatch")(isRegexMatch.asInstanceOf[js.Any])
-    if (isRequired != null) __obj.updateDynamic("isRequired")(isRequired.asInstanceOf[js.Any])
-    if (isWhitelisted != null) __obj.updateDynamic("isWhitelisted")(isWhitelisted.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FieldConfig]
+    __obj.asInstanceOf[FieldConfig[T]]
+  }
+  
+  extension [Self <: FieldConfig[?], T /* <: js.Object */](x: Self & FieldConfig[T]) {
+    
+    inline def setIsBlacklisted(value: BlacklistValidator[T]): Self = StObject.set(x, "isBlacklisted", value.asInstanceOf[js.Any])
+    
+    inline def setIsBlacklistedFunction1(value: /* context */ ValidatorContext[T] => BlacklistValidatorConfig[T]): Self = StObject.set(x, "isBlacklisted", js.Any.fromFunction1(value))
+    
+    inline def setIsBlacklistedUndefined: Self = StObject.set(x, "isBlacklisted", js.undefined)
+    
+    inline def setIsEmail(value: SimpleValidator[T]): Self = StObject.set(x, "isEmail", value.asInstanceOf[js.Any])
+    
+    inline def setIsEmailFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isEmail", js.Any.fromFunction1(value))
+    
+    inline def setIsEmailUndefined: Self = StObject.set(x, "isEmail", js.undefined)
+    
+    inline def setIsEqual(value: ValueValidator[Any, T]): Self = StObject.set(x, "isEqual", value.asInstanceOf[js.Any])
+    
+    inline def setIsEqualFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Any, T]): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
+    
+    inline def setIsExactLength(value: LengthValidator[T]): Self = StObject.set(x, "isExactLength", value.asInstanceOf[js.Any])
+    
+    inline def setIsExactLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isExactLength", js.Any.fromFunction1(value))
+    
+    inline def setIsExactLengthUndefined: Self = StObject.set(x, "isExactLength", js.undefined)
+    
+    inline def setIsGreaterThan(value: ValueValidator[Double, T]): Self = StObject.set(x, "isGreaterThan", value.asInstanceOf[js.Any])
+    
+    inline def setIsGreaterThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = StObject.set(x, "isGreaterThan", js.Any.fromFunction1(value))
+    
+    inline def setIsGreaterThanUndefined: Self = StObject.set(x, "isGreaterThan", js.undefined)
+    
+    inline def setIsLessThan(value: ValueValidator[Double, T]): Self = StObject.set(x, "isLessThan", value.asInstanceOf[js.Any])
+    
+    inline def setIsLessThanFunction1(value: /* context */ ValidatorContext[T] => ValueValidatorConfig[Double, T]): Self = StObject.set(x, "isLessThan", js.Any.fromFunction1(value))
+    
+    inline def setIsLessThanUndefined: Self = StObject.set(x, "isLessThan", js.undefined)
+    
+    inline def setIsMaxLength(value: LengthValidator[T]): Self = StObject.set(x, "isMaxLength", value.asInstanceOf[js.Any])
+    
+    inline def setIsMaxLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isMaxLength", js.Any.fromFunction1(value))
+    
+    inline def setIsMaxLengthUndefined: Self = StObject.set(x, "isMaxLength", js.undefined)
+    
+    inline def setIsMinLength(value: LengthValidator[T]): Self = StObject.set(x, "isMinLength", value.asInstanceOf[js.Any])
+    
+    inline def setIsMinLengthFunction1(value: /* context */ ValidatorContext[T] => LengthValidatorConfig[T]): Self = StObject.set(x, "isMinLength", js.Any.fromFunction1(value))
+    
+    inline def setIsMinLengthUndefined: Self = StObject.set(x, "isMinLength", js.undefined)
+    
+    inline def setIsNumber(value: SimpleValidator[T]): Self = StObject.set(x, "isNumber", value.asInstanceOf[js.Any])
+    
+    inline def setIsNumberFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isNumber", js.Any.fromFunction1(value))
+    
+    inline def setIsNumberUndefined: Self = StObject.set(x, "isNumber", js.undefined)
+    
+    inline def setIsRegexMatch(value: RegexValidator[T]): Self = StObject.set(x, "isRegexMatch", value.asInstanceOf[js.Any])
+    
+    inline def setIsRegexMatchFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = StObject.set(x, "isRegexMatch", js.Any.fromFunction1(value))
+    
+    inline def setIsRegexMatchUndefined: Self = StObject.set(x, "isRegexMatch", js.undefined)
+    
+    inline def setIsRequired(value: SimpleValidator[T]): Self = StObject.set(x, "isRequired", value.asInstanceOf[js.Any])
+    
+    inline def setIsRequiredFunction1(value: /* context */ ValidatorContext[T] => SimpleValidatorConfig[T]): Self = StObject.set(x, "isRequired", js.Any.fromFunction1(value))
+    
+    inline def setIsRequiredUndefined: Self = StObject.set(x, "isRequired", js.undefined)
+    
+    inline def setIsWhitelisted(value: WhitelistValidator[T]): Self = StObject.set(x, "isWhitelisted", value.asInstanceOf[js.Any])
+    
+    inline def setIsWhitelistedFunction1(value: /* context */ ValidatorContext[T] => RegexValidatorConfig[T]): Self = StObject.set(x, "isWhitelisted", js.Any.fromFunction1(value))
+    
+    inline def setIsWhitelistedUndefined: Self = StObject.set(x, "isWhitelisted", js.undefined)
   }
 }
-

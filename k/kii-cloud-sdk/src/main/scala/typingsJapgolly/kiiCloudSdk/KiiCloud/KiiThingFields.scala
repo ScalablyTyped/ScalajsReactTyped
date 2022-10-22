@@ -1,128 +1,173 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait KiiThingFields
-  extends /**
+  extends StObject
+     with /**
   * custom fields.
   */
-/* name */ StringDictionary[js.Any] {
+/* name */ StringDictionary[Any] {
+  
   /**
     * firmware version given by thing vendor.
     */
   var _firmwareVersion: js.UndefOr[String] = js.undefined
+  
   /**
     * lot identifier given by thing vendor.
     */
   var _lot: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary number field.
     */
   var _numberField1: js.UndefOr[Double] = js.undefined
+  
   /**
     * arbitrary number field.
     */
   var _numberField2: js.UndefOr[Double] = js.undefined
+  
   /**
     * arbitrary number field.
     */
   var _numberField3: js.UndefOr[Double] = js.undefined
+  
   /**
     * arbitrary number field.
     */
   var _numberField4: js.UndefOr[Double] = js.undefined
+  
   /**
     * arbitrary number field.
     */
   var _numberField5: js.UndefOr[Double] = js.undefined
+  
   /**
     * thing password given by thing vendor.
     */
   var _password: String
+  
   /**
     * product name given by thing vendor.
     */
   var _productName: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary string field.
     */
   var _stringField1: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary string field.
     */
   var _stringField2: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary string field.
     */
   var _stringField3: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary string field.
     */
   var _stringField4: js.UndefOr[String] = js.undefined
+  
   /**
     * arbitrary string field.
     */
   var _stringField5: js.UndefOr[String] = js.undefined
+  
   /**
     * thing type given by thing vendor.
     */
   var _thingType: js.UndefOr[String] = js.undefined
+  
   /**
     * vendor identifier given by thing vendor.
     */
   var _vendor: js.UndefOr[String] = js.undefined
+  
   /**
     * thing identifier given by thing vendor.
     */
   var _vendorThingID: String
 }
-
 object KiiThingFields {
-  @scala.inline
-  def apply(
-    _password: String,
-    _vendorThingID: String,
-    StringDictionary: /**
-    * custom fields.
-    */
-  /* name */ StringDictionary[js.Any] = null,
-    _firmwareVersion: String = null,
-    _lot: String = null,
-    _numberField1: Int | Double = null,
-    _numberField2: Int | Double = null,
-    _numberField3: Int | Double = null,
-    _numberField4: Int | Double = null,
-    _numberField5: Int | Double = null,
-    _productName: String = null,
-    _stringField1: String = null,
-    _stringField2: String = null,
-    _stringField3: String = null,
-    _stringField4: String = null,
-    _stringField5: String = null,
-    _thingType: String = null,
-    _vendor: String = null
-  ): KiiThingFields = {
+  
+  inline def apply(_password: String, _vendorThingID: String): KiiThingFields = {
     val __obj = js.Dynamic.literal(_password = _password.asInstanceOf[js.Any], _vendorThingID = _vendorThingID.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (_firmwareVersion != null) __obj.updateDynamic("_firmwareVersion")(_firmwareVersion.asInstanceOf[js.Any])
-    if (_lot != null) __obj.updateDynamic("_lot")(_lot.asInstanceOf[js.Any])
-    if (_numberField1 != null) __obj.updateDynamic("_numberField1")(_numberField1.asInstanceOf[js.Any])
-    if (_numberField2 != null) __obj.updateDynamic("_numberField2")(_numberField2.asInstanceOf[js.Any])
-    if (_numberField3 != null) __obj.updateDynamic("_numberField3")(_numberField3.asInstanceOf[js.Any])
-    if (_numberField4 != null) __obj.updateDynamic("_numberField4")(_numberField4.asInstanceOf[js.Any])
-    if (_numberField5 != null) __obj.updateDynamic("_numberField5")(_numberField5.asInstanceOf[js.Any])
-    if (_productName != null) __obj.updateDynamic("_productName")(_productName.asInstanceOf[js.Any])
-    if (_stringField1 != null) __obj.updateDynamic("_stringField1")(_stringField1.asInstanceOf[js.Any])
-    if (_stringField2 != null) __obj.updateDynamic("_stringField2")(_stringField2.asInstanceOf[js.Any])
-    if (_stringField3 != null) __obj.updateDynamic("_stringField3")(_stringField3.asInstanceOf[js.Any])
-    if (_stringField4 != null) __obj.updateDynamic("_stringField4")(_stringField4.asInstanceOf[js.Any])
-    if (_stringField5 != null) __obj.updateDynamic("_stringField5")(_stringField5.asInstanceOf[js.Any])
-    if (_thingType != null) __obj.updateDynamic("_thingType")(_thingType.asInstanceOf[js.Any])
-    if (_vendor != null) __obj.updateDynamic("_vendor")(_vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[KiiThingFields]
   }
+  
+  extension [Self <: KiiThingFields](x: Self) {
+    
+    inline def set_firmwareVersion(value: String): Self = StObject.set(x, "_firmwareVersion", value.asInstanceOf[js.Any])
+    
+    inline def set_firmwareVersionUndefined: Self = StObject.set(x, "_firmwareVersion", js.undefined)
+    
+    inline def set_lot(value: String): Self = StObject.set(x, "_lot", value.asInstanceOf[js.Any])
+    
+    inline def set_lotUndefined: Self = StObject.set(x, "_lot", js.undefined)
+    
+    inline def set_numberField1(value: Double): Self = StObject.set(x, "_numberField1", value.asInstanceOf[js.Any])
+    
+    inline def set_numberField1Undefined: Self = StObject.set(x, "_numberField1", js.undefined)
+    
+    inline def set_numberField2(value: Double): Self = StObject.set(x, "_numberField2", value.asInstanceOf[js.Any])
+    
+    inline def set_numberField2Undefined: Self = StObject.set(x, "_numberField2", js.undefined)
+    
+    inline def set_numberField3(value: Double): Self = StObject.set(x, "_numberField3", value.asInstanceOf[js.Any])
+    
+    inline def set_numberField3Undefined: Self = StObject.set(x, "_numberField3", js.undefined)
+    
+    inline def set_numberField4(value: Double): Self = StObject.set(x, "_numberField4", value.asInstanceOf[js.Any])
+    
+    inline def set_numberField4Undefined: Self = StObject.set(x, "_numberField4", js.undefined)
+    
+    inline def set_numberField5(value: Double): Self = StObject.set(x, "_numberField5", value.asInstanceOf[js.Any])
+    
+    inline def set_numberField5Undefined: Self = StObject.set(x, "_numberField5", js.undefined)
+    
+    inline def set_password(value: String): Self = StObject.set(x, "_password", value.asInstanceOf[js.Any])
+    
+    inline def set_productName(value: String): Self = StObject.set(x, "_productName", value.asInstanceOf[js.Any])
+    
+    inline def set_productNameUndefined: Self = StObject.set(x, "_productName", js.undefined)
+    
+    inline def set_stringField1(value: String): Self = StObject.set(x, "_stringField1", value.asInstanceOf[js.Any])
+    
+    inline def set_stringField1Undefined: Self = StObject.set(x, "_stringField1", js.undefined)
+    
+    inline def set_stringField2(value: String): Self = StObject.set(x, "_stringField2", value.asInstanceOf[js.Any])
+    
+    inline def set_stringField2Undefined: Self = StObject.set(x, "_stringField2", js.undefined)
+    
+    inline def set_stringField3(value: String): Self = StObject.set(x, "_stringField3", value.asInstanceOf[js.Any])
+    
+    inline def set_stringField3Undefined: Self = StObject.set(x, "_stringField3", js.undefined)
+    
+    inline def set_stringField4(value: String): Self = StObject.set(x, "_stringField4", value.asInstanceOf[js.Any])
+    
+    inline def set_stringField4Undefined: Self = StObject.set(x, "_stringField4", js.undefined)
+    
+    inline def set_stringField5(value: String): Self = StObject.set(x, "_stringField5", value.asInstanceOf[js.Any])
+    
+    inline def set_stringField5Undefined: Self = StObject.set(x, "_stringField5", js.undefined)
+    
+    inline def set_thingType(value: String): Self = StObject.set(x, "_thingType", value.asInstanceOf[js.Any])
+    
+    inline def set_thingTypeUndefined: Self = StObject.set(x, "_thingType", js.undefined)
+    
+    inline def set_vendor(value: String): Self = StObject.set(x, "_vendor", value.asInstanceOf[js.Any])
+    
+    inline def set_vendorThingID(value: String): Self = StObject.set(x, "_vendorThingID", value.asInstanceOf[js.Any])
+    
+    inline def set_vendorUndefined: Self = StObject.set(x, "_vendor", js.undefined)
+  }
 }
-

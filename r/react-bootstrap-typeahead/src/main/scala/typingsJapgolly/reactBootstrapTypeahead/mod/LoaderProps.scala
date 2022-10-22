@@ -1,19 +1,24 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoaderProps extends js.Object {
-  var bsSize: TypeaheadBsSizes
-}
-
-object LoaderProps {
-  @scala.inline
-  def apply(bsSize: TypeaheadBsSizes): LoaderProps = {
-    val __obj = js.Dynamic.literal(bsSize = bsSize.asInstanceOf[js.Any])
+trait LoaderProps extends StObject {
   
+  var label: js.UndefOr[String] = js.undefined
+}
+object LoaderProps {
+  
+  inline def apply(): LoaderProps = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoaderProps]
   }
+  
+  extension [Self <: LoaderProps](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

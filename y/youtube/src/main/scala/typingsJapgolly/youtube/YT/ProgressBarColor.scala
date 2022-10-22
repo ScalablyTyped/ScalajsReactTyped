@@ -1,21 +1,17 @@
 package typingsJapgolly.youtube.YT
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.youtube.youtubeStrings.red
   - typingsJapgolly.youtube.youtubeStrings.white
 */
-trait ProgressBarColor extends js.Object
-
+trait ProgressBarColor extends StObject
 object ProgressBarColor {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def red: typingsJapgolly.youtube.youtubeStrings.red = this.cast("red")
-  @scala.inline
-  def white: typingsJapgolly.youtube.youtubeStrings.white = this.cast("white")
+  
+  inline def red: typingsJapgolly.youtube.youtubeStrings.red = "red".asInstanceOf[typingsJapgolly.youtube.youtubeStrings.red]
+  
+  inline def white: typingsJapgolly.youtube.youtubeStrings.white = "white".asInstanceOf[typingsJapgolly.youtube.youtubeStrings.white]
 }
-

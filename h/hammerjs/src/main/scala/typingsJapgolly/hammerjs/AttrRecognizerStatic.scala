@@ -1,22 +1,26 @@
 package typingsJapgolly.hammerjs
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttrRecognizerStatic extends js.Object {
+trait AttrRecognizerStatic extends StObject {
+  
   def attrTest(input: HammerInput): Boolean
-  def process(input: HammerInput): js.Any
+  
+  def process(input: HammerInput): Any
 }
-
 object AttrRecognizerStatic {
-  @scala.inline
-  def apply(attrTest: HammerInput => CallbackTo[Boolean], process: HammerInput => CallbackTo[js.Any]): AttrRecognizerStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attrTest")(js.Any.fromFunction1((t0: typingsJapgolly.hammerjs.HammerInput) => attrTest(t0).runNow()))
-    __obj.updateDynamic("process")(js.Any.fromFunction1((t0: typingsJapgolly.hammerjs.HammerInput) => process(t0).runNow()))
+  
+  inline def apply(attrTest: HammerInput => Boolean, process: HammerInput => Any): AttrRecognizerStatic = {
+    val __obj = js.Dynamic.literal(attrTest = js.Any.fromFunction1(attrTest), process = js.Any.fromFunction1(process))
     __obj.asInstanceOf[AttrRecognizerStatic]
   }
+  
+  extension [Self <: AttrRecognizerStatic](x: Self) {
+    
+    inline def setAttrTest(value: HammerInput => Boolean): Self = StObject.set(x, "attrTest", js.Any.fromFunction1(value))
+    
+    inline def setProcess(value: HammerInput => Any): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+  }
 }
-

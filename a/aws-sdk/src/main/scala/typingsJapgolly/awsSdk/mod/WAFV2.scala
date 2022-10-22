@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.wafv2Mod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsWafv2Mod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "WAFV2")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class WAFV2 ()
-  extends typingsJapgolly.awsSdk.allMod.WAFV2 {
+open class WAFV2 ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.WAFV2 {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,71 +1,57 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TokenClass extends js.Object
-
+sealed trait TokenClass extends StObject
 @JSGlobal("TypeScript.Services.TokenClass")
 @js.native
-object TokenClass extends js.Object {
-  @js.native
-  sealed trait Comment extends TokenClass
+object TokenClass extends StObject {
   
   @js.native
-  sealed trait Identifier extends TokenClass
+  sealed trait Comment
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Keyword extends TokenClass
+  sealed trait Identifier
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait NumberLiteral extends TokenClass
+  sealed trait Keyword
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Operator extends TokenClass
+  sealed trait NumberLiteral
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Punctuation extends TokenClass
+  sealed trait Operator
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait RegExpLiteral extends TokenClass
+  sealed trait Punctuation
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait StringLiteral extends TokenClass
+  sealed trait RegExpLiteral
+    extends StObject
+       with TokenClass
   
   @js.native
-  sealed trait Whitespace extends TokenClass
+  sealed trait StringLiteral
+    extends StObject
+       with TokenClass
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TokenClass with Double] = js.native
-  /* 3 */ @js.native
-  object Comment extends TopLevel[Comment with Double]
-  
-  /* 5 */ @js.native
-  object Identifier extends TopLevel[Identifier with Double]
-  
-  /* 1 */ @js.native
-  object Keyword extends TopLevel[Keyword with Double]
-  
-  /* 6 */ @js.native
-  object NumberLiteral extends TopLevel[NumberLiteral with Double]
-  
-  /* 2 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
-  
-  /* 0 */ @js.native
-  object Punctuation extends TopLevel[Punctuation with Double]
-  
-  /* 8 */ @js.native
-  object RegExpLiteral extends TopLevel[RegExpLiteral with Double]
-  
-  /* 7 */ @js.native
-  object StringLiteral extends TopLevel[StringLiteral with Double]
-  
-  /* 4 */ @js.native
-  object Whitespace extends TopLevel[Whitespace with Double]
-  
+  @js.native
+  sealed trait Whitespace
+    extends StObject
+       with TokenClass
 }
-

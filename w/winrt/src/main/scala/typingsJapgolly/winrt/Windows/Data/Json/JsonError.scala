@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.Data.Json
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Data.Json.JsonError")
-@js.native
-class JsonError () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Data.Json.JsonError")
-@js.native
-object JsonError extends js.Object {
-  def getStatus(hresult: Double): JsonErrorStatus = js.native
-}
-
+trait JsonError extends StObject

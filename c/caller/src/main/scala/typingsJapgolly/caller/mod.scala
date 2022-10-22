@@ -1,13 +1,15 @@
 package typingsJapgolly.caller
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("caller", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): String = js.native
-  def apply(depth: Double): String = js.native
+object mod {
+  
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(depth: Double): String = ^.asInstanceOf[js.Dynamic].apply(depth.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("caller", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

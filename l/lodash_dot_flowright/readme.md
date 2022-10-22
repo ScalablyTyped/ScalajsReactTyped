@@ -10,10 +10,10 @@ The lodash method `_.flowRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.flowright |
 | Keywords           | lodash-modularized, flowright |
-| # releases         | 0 |
-| # dependents       | 49 |
-| # downloads        | 6650262 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 147385.66666666666 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

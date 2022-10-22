@@ -1,23 +1,36 @@
 package typingsJapgolly.mjmlReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HrefProps extends js.Object {
+trait HrefProps extends StObject {
+  
   var href: js.UndefOr[String] = js.undefined
+  
   var rel: js.UndefOr[String] = js.undefined
+  
   var target: js.UndefOr[String] = js.undefined
 }
-
 object HrefProps {
-  @scala.inline
-  def apply(href: String = null, rel: String = null, target: String = null): HrefProps = {
+  
+  inline def apply(): HrefProps = {
     val __obj = js.Dynamic.literal()
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (rel != null) __obj.updateDynamic("rel")(rel.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[HrefProps]
   }
+  
+  extension [Self <: HrefProps](x: Self) {
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setRel(value: String): Self = StObject.set(x, "rel", value.asInstanceOf[js.Any])
+    
+    inline def setRelUndefined: Self = StObject.set(x, "rel", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

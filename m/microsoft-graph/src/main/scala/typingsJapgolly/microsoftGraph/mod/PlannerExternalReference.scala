@@ -1,42 +1,66 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerExternalReference extends js.Object {
+trait PlannerExternalReference extends StObject {
+  
   // A name alias to describe the reference.
-  var alias: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Read-only. User ID by which this is last modified.
-  var lastModifiedBy: js.UndefOr[IdentitySet] = js.undefined
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
   /**
     * Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Used to set the relative priority order in which the reference will be shown as a preview on the task.
-  var previewPriority: js.UndefOr[String] = js.undefined
+  var previewPriority: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Used to describe the type of the reference. Types include: PowerPoint, Word, Excel, Other.
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object PlannerExternalReference {
-  @scala.inline
-  def apply(
-    alias: String = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedDateTime: String = null,
-    previewPriority: String = null,
-    `type`: String = null
-  ): PlannerExternalReference = {
+  
+  inline def apply(): PlannerExternalReference = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (previewPriority != null) __obj.updateDynamic("previewPriority")(previewPriority.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerExternalReference]
   }
+  
+  extension [Self <: PlannerExternalReference](x: Self) {
+    
+    inline def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasNull: Self = StObject.set(x, "alias", null)
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setLastModifiedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "lastModifiedBy", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedByNull: Self = StObject.set(x, "lastModifiedBy", null)
+    
+    inline def setLastModifiedByUndefined: Self = StObject.set(x, "lastModifiedBy", js.undefined)
+    
+    inline def setLastModifiedDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedDateTimeNull: Self = StObject.set(x, "lastModifiedDateTime", null)
+    
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    
+    inline def setPreviewPriority(value: NullableOption[String]): Self = StObject.set(x, "previewPriority", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewPriorityNull: Self = StObject.set(x, "previewPriority", null)
+    
+    inline def setPreviewPriorityUndefined: Self = StObject.set(x, "previewPriority", js.undefined)
+    
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

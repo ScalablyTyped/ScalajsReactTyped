@@ -1,8 +1,8 @@
 package typingsJapgolly.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.coinbase.coinbaseStrings.pending
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.coinbase.coinbaseStrings.waiting_for_signature
   - typingsJapgolly.coinbase.coinbaseStrings.waiting_for_clearing
 */
-trait TransactionStatus extends js.Object
-
+trait TransactionStatus extends StObject
 object TransactionStatus {
-  @scala.inline
-  def canceled: typingsJapgolly.coinbase.coinbaseStrings.canceled = this.cast("canceled")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def completed: typingsJapgolly.coinbase.coinbaseStrings.completed = this.cast("completed")
-  @scala.inline
-  def expired: typingsJapgolly.coinbase.coinbaseStrings.expired = this.cast("expired")
-  @scala.inline
-  def failed: typingsJapgolly.coinbase.coinbaseStrings.failed = this.cast("failed")
-  @scala.inline
-  def pending: typingsJapgolly.coinbase.coinbaseStrings.pending = this.cast("pending")
-  @scala.inline
-  def waiting_for_clearing: typingsJapgolly.coinbase.coinbaseStrings.waiting_for_clearing = this.cast("waiting_for_clearing")
-  @scala.inline
-  def waiting_for_signature: typingsJapgolly.coinbase.coinbaseStrings.waiting_for_signature = this.cast("waiting_for_signature")
+  
+  inline def canceled: typingsJapgolly.coinbase.coinbaseStrings.canceled = "canceled".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.canceled]
+  
+  inline def completed: typingsJapgolly.coinbase.coinbaseStrings.completed = "completed".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.completed]
+  
+  inline def expired: typingsJapgolly.coinbase.coinbaseStrings.expired = "expired".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.expired]
+  
+  inline def failed: typingsJapgolly.coinbase.coinbaseStrings.failed = "failed".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.failed]
+  
+  inline def pending: typingsJapgolly.coinbase.coinbaseStrings.pending = "pending".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.pending]
+  
+  inline def waiting_for_clearing: typingsJapgolly.coinbase.coinbaseStrings.waiting_for_clearing = "waiting_for_clearing".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.waiting_for_clearing]
+  
+  inline def waiting_for_signature: typingsJapgolly.coinbase.coinbaseStrings.waiting_for_signature = "waiting_for_signature".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.waiting_for_signature]
 }
-

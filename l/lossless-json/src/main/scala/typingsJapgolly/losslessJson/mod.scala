@@ -1,33 +1,45 @@
 package typingsJapgolly.losslessJson
 
+import typingsJapgolly.losslessJson.anon.CircularRefs
+import typingsJapgolly.losslessJson.anon.CircularRefsBoolean
 import typingsJapgolly.losslessJson.losslessJsonBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lossless-json", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("lossless-json", JSImport.Namespace)
   @js.native
-  class LosslessNumber protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @JSImport("lossless-json", "LosslessNumber")
+  @js.native
+  open class LosslessNumber protected () extends StObject {
     def this(value: String) = this()
     def this(value: Double) = this()
+    
     var isLosslessNumber: `true` = js.native
+    
     var `type`: typingsJapgolly.losslessJson.losslessJsonStrings.LosslessNumber = js.native
+    
     // value as string
     var value: String = js.native
   }
   
-  def config(): AnonCircularRefsBoolean = js.native
-  def config(hasCircularRefs: AnonCircularRefs): AnonCircularRefsBoolean = js.native
-  def parse(text: String): js.Any = js.native
-  def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _]): js.Any = js.native
-  def stringify(value: js.Any): String = js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-  def stringify(value: js.Any, replacer: js.Array[String | Double], space: String): String = js.native
-  def stringify(value: js.Any, replacer: js.Array[String | Double], space: Double): String = js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: String): String = js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: Double): String = js.native
+  inline def config(): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[CircularRefsBoolean]
+  inline def config(hasCircularRefs: CircularRefs): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(hasCircularRefs.asInstanceOf[js.Any]).asInstanceOf[CircularRefsBoolean]
+  
+  inline def parse(text: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def stringify(value: Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[String | Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[String | Double], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Array[String | Double], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Function2[/* key */ String, /* value */ Any, Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Function2[/* key */ String, /* value */ Any, Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: js.Function2[/* key */ String, /* value */ Any, Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stringify(value: Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

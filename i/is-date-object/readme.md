@@ -10,15 +10,12 @@ Is this value a JS Date object? This module works cross-realm/iframe, and despit
 | ------------------ | :-------------: |
 | Full name          | is-date-object |
 | Keywords           | Date, ES6, toStringTag, @@toStringTag, Date object |
-| # releases         | 2 |
-| # dependents       | 45 |
-| # downloads        | 374883647 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0305692633333333E8 |
+| # stars            | 11.0 |
 
 ## Links
-- [Homepage](https://github.com/ljharb/is-date-object#readme)
-- [Bugs](https://github.com/ljharb/is-date-object/issues)
-- [Repository](https://github.com/ljharb/is-date-object)
 - [Npm](https://www.npmjs.com/package/is-date-object)
     
 

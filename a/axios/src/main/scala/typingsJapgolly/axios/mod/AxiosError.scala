@@ -1,40 +1,168 @@
 package typingsJapgolly.axios.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AxiosError[T] extends Error {
-  var code: js.UndefOr[String] = js.undefined
-  var config: AxiosRequestConfig
-  var isAxiosError: Boolean
-  var request: js.UndefOr[js.Any] = js.undefined
-  var response: js.UndefOr[AxiosResponse[T]] = js.undefined
-  def toJSON(): js.Object
-}
-
-object AxiosError {
-  @scala.inline
-  def apply[T](
-    config: AxiosRequestConfig,
-    isAxiosError: Boolean,
+@JSImport("axios", "AxiosError")
+@js.native
+open class AxiosError[T, D] ()
+  extends StObject
+     with Error {
+  def this(message: String) = this()
+  def this(message: String, code: String) = this()
+  def this(message: Unit, code: String) = this()
+  def this(message: String, code: String, config: AxiosRequestConfig[D]) = this()
+  def this(message: String, code: Unit, config: AxiosRequestConfig[D]) = this()
+  def this(message: Unit, code: String, config: AxiosRequestConfig[D]) = this()
+  def this(message: Unit, code: Unit, config: AxiosRequestConfig[D]) = this()
+  def this(message: String, code: String, config: Unit, request: Any) = this()
+  def this(message: String, code: String, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: String, code: Unit, config: Unit, request: Any) = this()
+  def this(message: String, code: Unit, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: Unit, code: String, config: Unit, request: Any) = this()
+  def this(message: Unit, code: String, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: Unit, code: Unit, config: Unit, request: Any) = this()
+  def this(message: Unit, code: Unit, config: AxiosRequestConfig[D], request: Any) = this()
+  def this(message: String, code: String, config: Unit, request: Any, response: AxiosResponse[T, D]) = this()
+  def this(message: String, code: String, config: Unit, request: Unit, response: AxiosResponse[T, D]) = this()
+  def this(
     message: String,
-    name: String,
-    toJSON: CallbackTo[js.Object],
-    code: String = null,
-    request: js.Any = null,
-    response: AxiosResponse[T] = null,
-    stack: String = null
-  ): AxiosError[T] = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], isAxiosError = isAxiosError.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("toJSON")(toJSON.toJsFn)
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    __obj.asInstanceOf[AxiosError[T]]
-  }
+    code: String,
+    config: AxiosRequestConfig[D],
+    request: Any,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(
+    message: String,
+    code: String,
+    config: AxiosRequestConfig[D],
+    request: Unit,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(message: String, code: Unit, config: Unit, request: Any, response: AxiosResponse[T, D]) = this()
+  def this(message: String, code: Unit, config: Unit, request: Unit, response: AxiosResponse[T, D]) = this()
+  def this(
+    message: String,
+    code: Unit,
+    config: AxiosRequestConfig[D],
+    request: Any,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(
+    message: String,
+    code: Unit,
+    config: AxiosRequestConfig[D],
+    request: Unit,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(message: Unit, code: String, config: Unit, request: Any, response: AxiosResponse[T, D]) = this()
+  def this(message: Unit, code: String, config: Unit, request: Unit, response: AxiosResponse[T, D]) = this()
+  def this(
+    message: Unit,
+    code: String,
+    config: AxiosRequestConfig[D],
+    request: Any,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(
+    message: Unit,
+    code: String,
+    config: AxiosRequestConfig[D],
+    request: Unit,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(message: Unit, code: Unit, config: Unit, request: Any, response: AxiosResponse[T, D]) = this()
+  def this(message: Unit, code: Unit, config: Unit, request: Unit, response: AxiosResponse[T, D]) = this()
+  def this(
+    message: Unit,
+    code: Unit,
+    config: AxiosRequestConfig[D],
+    request: Any,
+    response: AxiosResponse[T, D]
+  ) = this()
+  def this(
+    message: Unit,
+    code: Unit,
+    config: AxiosRequestConfig[D],
+    request: Unit,
+    response: AxiosResponse[T, D]
+  ) = this()
+  
+  @JSName("cause")
+  var cause_AxiosError: js.UndefOr[js.Error] = js.native
+  
+  var code: js.UndefOr[String] = js.native
+  
+  var config: js.UndefOr[AxiosRequestConfig[D]] = js.native
+  
+  var isAxiosError: Boolean = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var name: String = js.native
+  
+  var request: js.UndefOr[Any] = js.native
+  
+  var response: js.UndefOr[AxiosResponse[T, D]] = js.native
+  
+  var status: js.UndefOr[Double] = js.native
+  
+  def toJSON(): js.Object = js.native
 }
-
+/* static members */
+object AxiosError {
+  
+  @JSImport("axios", "AxiosError.ECONNABORTED")
+  @js.native
+  val ECONNABORTED: /* "ECONNABORTED" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_BAD_OPTION")
+  @js.native
+  val ERR_BAD_OPTION: /* "ERR_BAD_OPTION" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_BAD_OPTION_VALUE")
+  @js.native
+  val ERR_BAD_OPTION_VALUE: /* "ERR_BAD_OPTION_VALUE" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_BAD_REQUEST")
+  @js.native
+  val ERR_BAD_REQUEST: /* "ERR_BAD_REQUEST" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_BAD_RESPONSE")
+  @js.native
+  val ERR_BAD_RESPONSE: /* "ERR_BAD_RESPONSE" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_CANCELED")
+  @js.native
+  val ERR_CANCELED: /* "ERR_CANCELED" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_DEPRECATED")
+  @js.native
+  val ERR_DEPRECATED: /* "ERR_DEPRECATED" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_FR_TOO_MANY_REDIRECTS")
+  @js.native
+  val ERR_FR_TOO_MANY_REDIRECTS: /* "ERR_FR_TOO_MANY_REDIRECTS" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_INVALID_URL")
+  @js.native
+  val ERR_INVALID_URL: /* "ERR_INVALID_URL" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_NETWORK")
+  @js.native
+  val ERR_NETWORK: /* "ERR_NETWORK" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ERR_NOT_SUPPORT")
+  @js.native
+  val ERR_NOT_SUPPORT: /* "ERR_NOT_SUPPORT" */ String = js.native
+  
+  @JSImport("axios", "AxiosError.ETIMEDOUT")
+  @js.native
+  val ETIMEDOUT: /* "ETIMEDOUT" */ String = js.native
+}

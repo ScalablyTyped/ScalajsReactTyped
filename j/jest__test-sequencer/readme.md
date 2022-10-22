@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest__test-sequencer
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | @jest/test-sequencer |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 97327203 |
-| # stars            | 0 |
+| # releases         | 74 |
+| # dependents       | 0.0 |
+| # downloads        | 7.2517775E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

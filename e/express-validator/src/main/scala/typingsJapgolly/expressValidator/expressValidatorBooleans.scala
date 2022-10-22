@@ -1,24 +1,24 @@
 package typingsJapgolly.expressValidator
 
-import typingsJapgolly.expressValidator.contextMod.Optional
-import typingsJapgolly.expressValidator.schemaMod.SanitizerSchemaOptions
-import typingsJapgolly.expressValidator.schemaMod.ValidatorSchemaOptions
+import typingsJapgolly.expressValidator.srcContextMod.Optional
+import typingsJapgolly.expressValidator.srcMiddlewaresSchemaMod.SanitizerSchemaOptions
+import typingsJapgolly.expressValidator.srcMiddlewaresSchemaMod.ValidatorSchemaOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressValidatorBooleans {
+  
   @js.native
-  sealed trait `false` extends Optional
+  sealed trait `false`
+    extends StObject
+       with Optional
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
-    extends SanitizerSchemaOptions[js.Any]
-       with ValidatorSchemaOptions[js.Any]
-  
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+    extends StObject
+       with SanitizerSchemaOptions[Any]
+       with ValidatorSchemaOptions[Any]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

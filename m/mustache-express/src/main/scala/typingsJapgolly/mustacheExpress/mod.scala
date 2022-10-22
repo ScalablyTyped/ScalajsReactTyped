@@ -1,22 +1,28 @@
 package typingsJapgolly.mustacheExpress
 
-import org.scalajs.dom.experimental.serviceworkers.Cache
+import org.scalajs.dom.Cache
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mustache-express", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply(): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: String): ExpessEngine = ^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any]).asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: String, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
+  inline def apply(partialsPath: Unit, partialsExt: String): ExpessEngine = (^.asInstanceOf[js.Dynamic].apply(partialsPath.asInstanceOf[js.Any], partialsExt.asInstanceOf[js.Any])).asInstanceOf[ExpessEngine]
+  
+  @JSImport("mustache-express", JSImport.Namespace)
   @js.native
-  trait ExpessEngine extends js.Object {
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait ExpessEngine extends StObject {
+    
+    def apply(path: String, options: Any, cb: js.Function1[/* repeated */ Any, Any]): Any = js.native
+    
     var cache: Cache = js.native
-    def apply(path: String, options: js.Any, cb: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   }
   
-  def apply(): ExpessEngine = js.native
-  def apply(partialsPath: String): ExpessEngine = js.native
-  def apply(partialsPath: String, partialsExt: String): ExpessEngine = js.native
   type TemplateCache = Cache
 }
-

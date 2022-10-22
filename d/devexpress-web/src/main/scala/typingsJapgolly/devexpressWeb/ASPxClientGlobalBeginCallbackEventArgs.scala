@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGlobalEvents.BeginCallback event.
   */
-@JSGlobal("ASPxClientGlobalBeginCallbackEventArgs")
-@js.native
-class ASPxClientGlobalBeginCallbackEventArgs protected () extends ASPxClientBeginCallbackEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGlobalBeginCallbackEventArgs class.
-    * @param control An ASPxClientControl class descendant object that is the control that initiated a callback.
-    * @param command A string value that is the name of the command that initiated a callback.
-    */
-  def this(control: ASPxClientControl, command: String) = this()
+trait ASPxClientGlobalBeginCallbackEventArgs
+  extends StObject
+     with ASPxClientBeginCallbackEventArgs {
+  
   /**
     * Gets an object that initiated a callback.
     */
-  var control: ASPxClientControl = js.native
+  var control: ASPxClientControl
 }
-
+object ASPxClientGlobalBeginCallbackEventArgs {
+  
+  inline def apply(command: String, control: ASPxClientControl): ASPxClientGlobalBeginCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGlobalBeginCallbackEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGlobalBeginCallbackEventArgs](x: Self) {
+    
+    inline def setControl(value: ASPxClientControl): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+  }
+}

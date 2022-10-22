@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.low
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.high
 */
-trait Importance extends js.Object
-
+trait Importance extends StObject
 object Importance {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
-  @scala.inline
-  def low: typingsJapgolly.microsoftGraph.microsoftGraphStrings.low = this.cast("low")
-  @scala.inline
-  def normal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal = this.cast("normal")
+  
+  inline def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.high]
+  
+  inline def low: typingsJapgolly.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.low]
+  
+  inline def normal: typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal = "normal".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.normal]
 }
-

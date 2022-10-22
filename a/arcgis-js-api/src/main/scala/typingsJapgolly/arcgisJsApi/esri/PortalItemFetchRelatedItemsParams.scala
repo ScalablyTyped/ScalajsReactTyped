@@ -1,42 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.forward
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.reverse
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalItemFetchRelatedItemsParams extends Object {
+trait PortalItemFetchRelatedItemsParams
+  extends StObject
+     with Object {
+  
   /**
-    * The direction of the relationship. Can either be `forward` (from origin to destination) or `reverse` (from destination to origin).
+    * The direction of the relationship.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRelatedItems)
     */
   var direction: forward | reverse
+  
   /**
-    * The type of relationship between the two items. See [Relationship types](https://developers.arcgis.com/rest/users-groups-and-items/relationship-types.htm) for a complete listing of types.
+    * The type of relationship between the two items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalItem.html#fetchRelatedItems)
     */
   var relationshipType: String
 }
-
 object PortalItemFetchRelatedItemsParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     direction: forward | reverse,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     relationshipType: String
   ): PortalItemFetchRelatedItemsParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], relationshipType = relationshipType.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), relationshipType = relationshipType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalItemFetchRelatedItemsParams]
   }
+  
+  extension [Self <: PortalItemFetchRelatedItemsParams](x: Self) {
+    
+    inline def setDirection(value: forward | reverse): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setRelationshipType(value: String): Self = StObject.set(x, "relationshipType", value.asInstanceOf[js.Any])
+  }
 }
-

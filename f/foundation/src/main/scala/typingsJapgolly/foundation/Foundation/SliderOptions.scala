@@ -1,44 +1,68 @@
 package typingsJapgolly.foundation.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/range_slider.html
-trait SliderOptions extends js.Object {
+trait SliderOptions extends StObject {
+  
   var end: js.UndefOr[Double] = js.undefined
+  
   var initial: js.UndefOr[Double] = js.undefined
-  var on_change: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var on_change: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var precision: js.UndefOr[Double] = js.undefined
+  
   var start: js.UndefOr[Double] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
+  
   var trigger_input_change: js.UndefOr[Boolean] = js.undefined
+  
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
-
 object SliderOptions {
-  @scala.inline
-  def apply(
-    end: Int | Double = null,
-    initial: Int | Double = null,
-    on_change: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    precision: Int | Double = null,
-    start: Int | Double = null,
-    step: Int | Double = null,
-    trigger_input_change: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): SliderOptions = {
+  
+  inline def apply(): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    on_change.foreach(p => __obj.updateDynamic("on_change")(p.toJsFn))
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(trigger_input_change)) __obj.updateDynamic("trigger_input_change")(trigger_input_change.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
+  
+  extension [Self <: SliderOptions](x: Self) {
+    
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    
+    inline def setOn_change(value: CallbackTo[Any]): Self = StObject.set(x, "on_change", value.toJsFn)
+    
+    inline def setOn_changeUndefined: Self = StObject.set(x, "on_change", js.undefined)
+    
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setTrigger_input_change(value: Boolean): Self = StObject.set(x, "trigger_input_change", value.asInstanceOf[js.Any])
+    
+    inline def setTrigger_input_changeUndefined: Self = StObject.set(x, "trigger_input_change", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

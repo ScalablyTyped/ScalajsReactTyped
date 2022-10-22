@@ -1,59 +1,98 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
+  
   var cache: js.UndefOr[Boolean] = js.undefined
+  
   var count: js.UndefOr[Boolean] = js.undefined
+  
   var failOnWarning: js.UndefOr[Boolean] = js.undefined
+  
   var fullCount: js.UndefOr[Boolean] = js.undefined
+  
   var intermediateCommitCount: js.UndefOr[Double] = js.undefined
+  
   var intermediateCommitSize: js.UndefOr[Double] = js.undefined
+  
   var maxNumberOfPlans: js.UndefOr[Double] = js.undefined
+  
   // RocksDB
   var maxTransactionsSize: js.UndefOr[Double] = js.undefined
+  
   var maxWarningCount: js.UndefOr[Double] = js.undefined
+  
   var memoryLimit: js.UndefOr[Double] = js.undefined
+  
   var profile: js.UndefOr[Boolean] = js.undefined
+  
   // enterprise
   var skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined
+  
   var stream: js.UndefOr[Boolean] = js.undefined
 }
-
 object QueryOptions {
-  @scala.inline
-  def apply(
-    cache: js.UndefOr[Boolean] = js.undefined,
-    count: js.UndefOr[Boolean] = js.undefined,
-    failOnWarning: js.UndefOr[Boolean] = js.undefined,
-    fullCount: js.UndefOr[Boolean] = js.undefined,
-    intermediateCommitCount: Int | Double = null,
-    intermediateCommitSize: Int | Double = null,
-    maxNumberOfPlans: Int | Double = null,
-    maxTransactionsSize: Int | Double = null,
-    maxWarningCount: Int | Double = null,
-    memoryLimit: Int | Double = null,
-    profile: js.UndefOr[Boolean] = js.undefined,
-    skipInaccessibleCollections: js.UndefOr[Boolean] = js.undefined,
-    stream: js.UndefOr[Boolean] = js.undefined
-  ): QueryOptions = {
+  
+  inline def apply(): QueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(failOnWarning)) __obj.updateDynamic("failOnWarning")(failOnWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullCount)) __obj.updateDynamic("fullCount")(fullCount.asInstanceOf[js.Any])
-    if (intermediateCommitCount != null) __obj.updateDynamic("intermediateCommitCount")(intermediateCommitCount.asInstanceOf[js.Any])
-    if (intermediateCommitSize != null) __obj.updateDynamic("intermediateCommitSize")(intermediateCommitSize.asInstanceOf[js.Any])
-    if (maxNumberOfPlans != null) __obj.updateDynamic("maxNumberOfPlans")(maxNumberOfPlans.asInstanceOf[js.Any])
-    if (maxTransactionsSize != null) __obj.updateDynamic("maxTransactionsSize")(maxTransactionsSize.asInstanceOf[js.Any])
-    if (maxWarningCount != null) __obj.updateDynamic("maxWarningCount")(maxWarningCount.asInstanceOf[js.Any])
-    if (memoryLimit != null) __obj.updateDynamic("memoryLimit")(memoryLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipInaccessibleCollections)) __obj.updateDynamic("skipInaccessibleCollections")(skipInaccessibleCollections.asInstanceOf[js.Any])
-    if (!js.isUndefined(stream)) __obj.updateDynamic("stream")(stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
+  
+  extension [Self <: QueryOptions](x: Self) {
+    
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setFailOnWarning(value: Boolean): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
+    
+    inline def setFailOnWarningUndefined: Self = StObject.set(x, "failOnWarning", js.undefined)
+    
+    inline def setFullCount(value: Boolean): Self = StObject.set(x, "fullCount", value.asInstanceOf[js.Any])
+    
+    inline def setFullCountUndefined: Self = StObject.set(x, "fullCount", js.undefined)
+    
+    inline def setIntermediateCommitCount(value: Double): Self = StObject.set(x, "intermediateCommitCount", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateCommitCountUndefined: Self = StObject.set(x, "intermediateCommitCount", js.undefined)
+    
+    inline def setIntermediateCommitSize(value: Double): Self = StObject.set(x, "intermediateCommitSize", value.asInstanceOf[js.Any])
+    
+    inline def setIntermediateCommitSizeUndefined: Self = StObject.set(x, "intermediateCommitSize", js.undefined)
+    
+    inline def setMaxNumberOfPlans(value: Double): Self = StObject.set(x, "maxNumberOfPlans", value.asInstanceOf[js.Any])
+    
+    inline def setMaxNumberOfPlansUndefined: Self = StObject.set(x, "maxNumberOfPlans", js.undefined)
+    
+    inline def setMaxTransactionsSize(value: Double): Self = StObject.set(x, "maxTransactionsSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTransactionsSizeUndefined: Self = StObject.set(x, "maxTransactionsSize", js.undefined)
+    
+    inline def setMaxWarningCount(value: Double): Self = StObject.set(x, "maxWarningCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWarningCountUndefined: Self = StObject.set(x, "maxWarningCount", js.undefined)
+    
+    inline def setMemoryLimit(value: Double): Self = StObject.set(x, "memoryLimit", value.asInstanceOf[js.Any])
+    
+    inline def setMemoryLimitUndefined: Self = StObject.set(x, "memoryLimit", js.undefined)
+    
+    inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    
+    inline def setSkipInaccessibleCollections(value: Boolean): Self = StObject.set(x, "skipInaccessibleCollections", value.asInstanceOf[js.Any])
+    
+    inline def setSkipInaccessibleCollectionsUndefined: Self = StObject.set(x, "skipInaccessibleCollections", js.undefined)
+    
+    inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+  }
 }
-

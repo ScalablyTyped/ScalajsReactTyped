@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPC
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZER
   - typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PERCENT_CPA
 */
-trait BiddingStrategyString extends js.Object
-
+trait BiddingStrategyString extends StObject
 object BiddingStrategyString {
-  @scala.inline
-  def BUDGET_OPTIMIZER: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.BUDGET_OPTIMIZER = this.cast("BUDGET_OPTIMIZER")
-  @scala.inline
-  def CONVERSION_OPTIMIZER: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZER = this.cast("CONVERSION_OPTIMIZER")
-  @scala.inline
-  def MANUAL_CPC: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPC = this.cast("MANUAL_CPC")
-  @scala.inline
-  def MANUAL_CPM: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPM = this.cast("MANUAL_CPM")
-  @scala.inline
-  def PERCENT_CPA: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PERCENT_CPA = this.cast("PERCENT_CPA")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BUDGET_OPTIMIZER: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.BUDGET_OPTIMIZER = "BUDGET_OPTIMIZER".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.BUDGET_OPTIMIZER]
+  
+  inline def CONVERSION_OPTIMIZER: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZER = "CONVERSION_OPTIMIZER".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.CONVERSION_OPTIMIZER]
+  
+  inline def MANUAL_CPC: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPC = "MANUAL_CPC".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPC]
+  
+  inline def MANUAL_CPM: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPM = "MANUAL_CPM".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.MANUAL_CPM]
+  
+  inline def PERCENT_CPA: typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PERCENT_CPA = "PERCENT_CPA".asInstanceOf[typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.PERCENT_CPA]
 }
-

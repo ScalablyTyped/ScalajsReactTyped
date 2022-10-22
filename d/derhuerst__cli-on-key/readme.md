@@ -10,10 +10,10 @@ Read command line key presses from process.stdin.
 | ------------------ | :-------------: |
 | Full name          | @derhuerst/cli-on-key |
 | Keywords           | command line, cli, key, keypress, stdin, event |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 1071 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 878.6666666666666 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/derhuerst/cli-on-key)

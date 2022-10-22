@@ -1,8 +1,8 @@
 package typingsJapgolly.parse.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new ACL.
@@ -19,8 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "ACL")
 @js.native
-class ACL ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.ACL {
-  def this(arg1: js.Any) = this()
+open class ACL ()
+  extends typingsJapgolly.parse.mod.global.Parse.ACL {
+  def this(arg1: Any) = this()
 }
-

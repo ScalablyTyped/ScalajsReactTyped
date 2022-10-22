@@ -1,22 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
-@js.native
-class PointerVisualizationSettings () extends IPointerVisualizationSettings {
-  /* CompleteClass */
-  override var isBarrelButtonFeedbackEnabled: Boolean = js.native
-  /* CompleteClass */
-  override var isContactFeedbackEnabled: Boolean = js.native
+trait PointerVisualizationSettings
+  extends StObject
+     with IPointerVisualizationSettings
+object PointerVisualizationSettings {
+  
+  inline def apply(isBarrelButtonFeedbackEnabled: Boolean, isContactFeedbackEnabled: Boolean): PointerVisualizationSettings = {
+    val __obj = js.Dynamic.literal(isBarrelButtonFeedbackEnabled = isBarrelButtonFeedbackEnabled.asInstanceOf[js.Any], isContactFeedbackEnabled = isContactFeedbackEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerVisualizationSettings]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
-@js.native
-object PointerVisualizationSettings extends js.Object {
-  def getForCurrentView(): PointerVisualizationSettings = js.native
-}
-

@@ -1,21 +1,23 @@
 package typingsJapgolly.hlsJs.mod
 
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLMediaElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait mediaAttachingData extends js.Object {
-  var mediaSource: String
-  var video: HTMLVideoElement
-}
-
-object mediaAttachingData {
-  @scala.inline
-  def apply(mediaSource: String, video: HTMLVideoElement): mediaAttachingData = {
-    val __obj = js.Dynamic.literal(mediaSource = mediaSource.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
+trait MediaAttachingData extends StObject {
   
-    __obj.asInstanceOf[mediaAttachingData]
+  var media: HTMLMediaElement
+}
+object MediaAttachingData {
+  
+  inline def apply(media: HTMLMediaElement): MediaAttachingData = {
+    val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MediaAttachingData]
+  }
+  
+  extension [Self <: MediaAttachingData](x: Self) {
+    
+    inline def setMedia(value: HTMLMediaElement): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
   }
 }
-

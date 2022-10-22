@@ -1,13 +1,16 @@
 package typingsJapgolly.btoaLite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("btoa-lite", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(decodedData: String): EncodedData = js.native
+object mod {
+  
+  inline def apply(decodedData: String): EncodedData = ^.asInstanceOf[js.Dynamic].apply(decodedData.asInstanceOf[js.Any]).asInstanceOf[EncodedData]
+  
+  @JSImport("btoa-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   type EncodedData = String
 }
-

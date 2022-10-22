@@ -1,21 +1,22 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Symbol")
 @js.native
-class Symbol protected ()
-  extends Component[SymbolProps, ComponentState, js.Any] {
-  def this(props: SymbolProps) = this()
-  def this(props: SymbolProps, context: js.Any) = this()
+open class Symbol ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Symbol
+/* static members */
+object Symbol {
+  
+  @JSImport("react-native-svg", "Symbol")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Symbol.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Symbol")
-@js.native
-object Symbol extends ComponentClass[SymbolProps, ComponentState]
-

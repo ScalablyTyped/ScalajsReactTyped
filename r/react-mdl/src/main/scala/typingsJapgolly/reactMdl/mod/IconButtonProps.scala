@@ -1,20 +1,26 @@
 package typingsJapgolly.reactMdl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IconButtonProps extends ButtonProps {
+trait IconButtonProps
+  extends StObject
+     with ButtonProps {
+  
   var raised: js.UndefOr[Boolean] = js.undefined
 }
-
 object IconButtonProps {
-  @scala.inline
-  def apply(ButtonProps: ButtonProps = null, raised: js.UndefOr[Boolean] = js.undefined): IconButtonProps = {
+  
+  inline def apply(): IconButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (ButtonProps != null) js.Dynamic.global.Object.assign(__obj, ButtonProps)
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconButtonProps]
   }
+  
+  extension [Self <: IconButtonProps](x: Self) {
+    
+    inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    
+    inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+  }
 }
-

@@ -1,24 +1,34 @@
 package typingsJapgolly.angularFormly.AngularFormly
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITemplateManipulators extends js.Object {
+trait ITemplateManipulators extends StObject {
+  
   var postWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.undefined
+  
   var preWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.undefined
 }
-
 object ITemplateManipulators {
-  @scala.inline
-  def apply(
-    postWrapper: js.Array[ITemplateManipulator] = null,
-    preWrapper: js.Array[ITemplateManipulator] = null
-  ): ITemplateManipulators = {
+  
+  inline def apply(): ITemplateManipulators = {
     val __obj = js.Dynamic.literal()
-    if (postWrapper != null) __obj.updateDynamic("postWrapper")(postWrapper.asInstanceOf[js.Any])
-    if (preWrapper != null) __obj.updateDynamic("preWrapper")(preWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateManipulators]
   }
+  
+  extension [Self <: ITemplateManipulators](x: Self) {
+    
+    inline def setPostWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "postWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setPostWrapperUndefined: Self = StObject.set(x, "postWrapper", js.undefined)
+    
+    inline def setPostWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "postWrapper", js.Array(value*))
+    
+    inline def setPreWrapper(value: js.Array[ITemplateManipulator]): Self = StObject.set(x, "preWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setPreWrapperUndefined: Self = StObject.set(x, "preWrapper", js.undefined)
+    
+    inline def setPreWrapperVarargs(value: ITemplateManipulator*): Self = StObject.set(x, "preWrapper", js.Array(value*))
+  }
 }
-

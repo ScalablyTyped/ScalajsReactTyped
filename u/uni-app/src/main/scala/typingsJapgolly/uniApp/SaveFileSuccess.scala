@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SaveFileSuccess extends js.Object {
+trait SaveFileSuccess extends StObject {
+  
   /**
     * 文件的保存路径
     */
   var savedFilePath: js.UndefOr[String] = js.undefined
 }
-
 object SaveFileSuccess {
-  @scala.inline
-  def apply(savedFilePath: String = null): SaveFileSuccess = {
+  
+  inline def apply(): SaveFileSuccess = {
     val __obj = js.Dynamic.literal()
-    if (savedFilePath != null) __obj.updateDynamic("savedFilePath")(savedFilePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveFileSuccess]
   }
+  
+  extension [Self <: SaveFileSuccess](x: Self) {
+    
+    inline def setSavedFilePath(value: String): Self = StObject.set(x, "savedFilePath", value.asInstanceOf[js.Any])
+    
+    inline def setSavedFilePathUndefined: Self = StObject.set(x, "savedFilePath", js.undefined)
+  }
 }
-

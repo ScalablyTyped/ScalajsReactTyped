@@ -1,37 +1,40 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import typingsJapgolly.winrt.AnonCompletedGetResults
-import typingsJapgolly.winrt.Windows.Foundation.AsyncStatus
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncAction
+import typingsJapgolly.winrt.anon.CompletedGetResults
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sms.SendSmsMessageOperation")
 @js.native
-class SendSmsMessageOperation () extends IAsyncAction {
-  /* CompleteClass */
-  override var errorCode: Double = js.native
-  /* CompleteClass */
-  override var id: Double = js.native
-  var operation: AnonCompletedGetResults = js.native
-  /* CompleteClass */
-  override var status: AsyncStatus = js.native
-  /* CompleteClass */
-  override def cancel(): Unit = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
+trait SendSmsMessageOperation
+  extends StObject
+     with IAsyncAction {
+  
   @JSName("done")
   def done_MSendSmsMessageOperation[U](): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: js.Function0[_]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any]): Unit = js.native
   @JSName("done")
-  def done_MSendSmsMessageOperation[U](success: js.Function0[_], error: js.Function1[/* error */ js.Any, _]): Unit = js.native
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any], error: js.Function1[/* error */ Any, Any]): Unit = js.native
   @JSName("done")
   def done_MSendSmsMessageOperation[U](
-    success: js.Function0[_],
-    error: js.Function1[/* error */ js.Any, _],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    success: js.Function0[Any],
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): Unit = js.native
+  @JSName("done")
+  def done_MSendSmsMessageOperation[U](success: js.Function0[Any], error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
+  @JSName("done")
+  def done_MSendSmsMessageOperation[U](success: Unit, error: js.Function1[/* error */ Any, Any]): Unit = js.native
+  @JSName("done")
+  def done_MSendSmsMessageOperation[U](
+    success: Unit,
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Unit = js.native
+  @JSName("done")
+  def done_MSendSmsMessageOperation[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
+  
+  var operation: CompletedGetResults = js.native
 }
-

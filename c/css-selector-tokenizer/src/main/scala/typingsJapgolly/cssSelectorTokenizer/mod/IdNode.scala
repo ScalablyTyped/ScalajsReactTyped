@@ -1,26 +1,32 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IdNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
+  
   @JSName("name")
   var name_IdNode: String
+  
   var `type`: id
 }
-
 object IdNode {
-  @scala.inline
-  def apply(name: String, `type`: id, after: String = null, before: String = null): IdNode = {
+  
+  inline def apply(name: String): IdNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("id")
     __obj.asInstanceOf[IdNode]
   }
+  
+  extension [Self <: IdNode](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: id): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

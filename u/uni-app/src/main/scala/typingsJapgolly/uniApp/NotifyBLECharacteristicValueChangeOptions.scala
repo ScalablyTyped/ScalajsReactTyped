@@ -1,61 +1,82 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotifyBLECharacteristicValueChangeOptions extends js.Object {
+trait NotifyBLECharacteristicValueChangeOptions extends StObject {
+  
   /**
     * 蓝牙特征值的 uuid
     */
   var characteristicId: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 蓝牙设备 id，参考 device 对象
     */
   var deviceId: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * 蓝牙特征值对应服务的 uuid
     */
   var serviceId: js.UndefOr[String] = js.undefined
+  
   /**
     * true: 启用 notify; false: 停用 notify
     */
   var state: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 成功则返回本机蓝牙适配器状态
     */
   var success: js.UndefOr[js.Function1[/* result */ StopBluetoothDevicesDiscoverySuccess, Unit]] = js.undefined
 }
-
 object NotifyBLECharacteristicValueChangeOptions {
-  @scala.inline
-  def apply(
-    characteristicId: String = null,
-    complete: js.UndefOr[Callback] = js.undefined,
-    deviceId: String = null,
-    fail: js.UndefOr[Callback] = js.undefined,
-    serviceId: String = null,
-    state: js.UndefOr[Boolean] = js.undefined,
-    success: /* result */ StopBluetoothDevicesDiscoverySuccess => Callback = null
-  ): NotifyBLECharacteristicValueChangeOptions = {
+  
+  inline def apply(): NotifyBLECharacteristicValueChangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (characteristicId != null) __obj.updateDynamic("characteristicId")(characteristicId.asInstanceOf[js.Any])
-    complete.foreach(p => __obj.updateDynamic("complete")(p.toJsFn))
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    fail.foreach(p => __obj.updateDynamic("fail")(p.toJsFn))
-    if (serviceId != null) __obj.updateDynamic("serviceId")(serviceId.asInstanceOf[js.Any])
-    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.uniApp.StopBluetoothDevicesDiscoverySuccess) => success(t0).runNow()))
     __obj.asInstanceOf[NotifyBLECharacteristicValueChangeOptions]
   }
+  
+  extension [Self <: NotifyBLECharacteristicValueChangeOptions](x: Self) {
+    
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    
+    inline def setCharacteristicIdUndefined: Self = StObject.set(x, "characteristicId", js.undefined)
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setFail(value: Callback): Self = StObject.set(x, "fail", value.toJsFn)
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    
+    inline def setState(value: Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setSuccess(value: /* result */ StopBluetoothDevicesDiscoverySuccess => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* result */ StopBluetoothDevicesDiscoverySuccess) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

@@ -1,13 +1,17 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "Variable")
 @js.native
-class Variable protected () extends Const {
+open class Variable protected () extends Const {
   def this(variableName: String) = this()
-  val variable: String = js.native
+  
+  var useValueAsItIs: Boolean = js.native
+  
+  var valueInfo: Any = js.native
+  
+  def variable: String = js.native
 }
-

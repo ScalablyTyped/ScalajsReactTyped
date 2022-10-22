@@ -1,23 +1,44 @@
 package typingsJapgolly.recharts.mod
 
+import typingsJapgolly.recharts.anon.StrokeDasharray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendPayload extends js.Object {
+trait LegendPayload extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
-  var id: js.Any
+  
+  var id: Any
+  
+  var payload: js.UndefOr[StrokeDasharray] = js.undefined
+  
   var `type`: LegendType
-  var value: js.Any
+  
+  var value: Any
 }
-
 object LegendPayload {
-  @scala.inline
-  def apply(id: js.Any, `type`: LegendType, value: js.Any, color: String = null): LegendPayload = {
+  
+  inline def apply(id: Any, `type`: LegendType, value: Any): LegendPayload = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendPayload]
   }
+  
+  extension [Self <: LegendPayload](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setPayload(value: StrokeDasharray): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setType(value: LegendType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,73 +1,111 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.antd.avatarMod.AvatarProps
-import typingsJapgolly.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typingsJapgolly.antd.pageHeaderMod.PageHeaderProps
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libAvatarAvatarMod.AvatarProps
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typingsJapgolly.antd.libPageHeaderMod.PageHeaderProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PageHeader {
-  def apply(
-    avatar: AvatarProps = null,
-    backIcon: VdomNode = null,
-    breadcrumb: BreadcrumbProps = null,
-    className: String = null,
-    extra: VdomNode = null,
-    footer: VdomNode = null,
-    ghost: js.UndefOr[Boolean] = js.undefined,
-    onBack: /* e */ ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    subTitle: VdomNode = null,
-    tags: japgolly.scalajs.react.raw.React.Element | js.Array[japgolly.scalajs.react.raw.React.Element] = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    PageHeaderProps, 
-    MountedWithRawType[PageHeaderProps, js.Object, RawMounted[PageHeaderProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
-    if (backIcon != null) __obj.updateDynamic("backIcon")(backIcon.rawNode.asInstanceOf[js.Any])
-    if (breadcrumb != null) __obj.updateDynamic("breadcrumb")(breadcrumb.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(ghost)) __obj.updateDynamic("ghost")(ghost.asInstanceOf[js.Any])
-    if (onBack != null) __obj.updateDynamic("onBack")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onBack(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.rawNode.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.pageHeaderMod.PageHeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.pageHeaderMod.PageHeaderProps])(children: _*)
-  }
-  @JSImport("antd/lib/page-header", JSImport.Default)
+  @JSImport("antd", "PageHeader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def avatar(value: AvatarProps): this.type = set("avatar", value.asInstanceOf[js.Any])
+    
+    inline def backIcon(value: VdomNode): this.type = set("backIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def backIconNull: this.type = set("backIcon", null)
+    
+    inline def backIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("backIcon", js.Array(value*))
+    
+    inline def backIconVdomElement(value: VdomElement): this.type = set("backIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def breadcrumb(value: BreadcrumbProps | japgolly.scalajs.react.facade.React.Element): this.type = set("breadcrumb", value.asInstanceOf[js.Any])
+    
+    inline def breadcrumbRender(
+      value: (PageHeaderProps, /* defaultDom */ japgolly.scalajs.react.facade.React.Node) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("breadcrumbRender", js.Any.fromFunction2(value))
+    
+    inline def breadcrumbVdomElement(value: VdomElement): this.type = set("breadcrumb", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def footer(value: VdomNode): this.type = set("footer", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def footerNull: this.type = set("footer", null)
+    
+    inline def footerVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("footer", js.Array(value*))
+    
+    inline def footerVdomElement(value: VdomElement): this.type = set("footer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def ghost(value: Boolean): this.type = set("ghost", value.asInstanceOf[js.Any])
+    
+    inline def onBack(value: /* e */ js.UndefOr[ReactMouseEventFrom[HTMLDivElement]] => Callback): this.type = set("onBack", js.Any.fromFunction1((t0: /* e */ js.UndefOr[ReactMouseEventFrom[HTMLDivElement]]) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def subTitle(value: VdomNode): this.type = set("subTitle", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def subTitleNull: this.type = set("subTitle", null)
+    
+    inline def subTitleVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("subTitle", js.Array(value*))
+    
+    inline def subTitleVdomElement(value: VdomElement): this.type = set("subTitle", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def tags(
+      value: japgolly.scalajs.react.facade.React.Element | js.Array[japgolly.scalajs.react.facade.React.Element]
+    ): this.type = set("tags", value.asInstanceOf[js.Any])
+    
+    inline def tagsVarargs(value: japgolly.scalajs.react.facade.React.Element*): this.type = set("tags", js.Array(value*))
+    
+    inline def tagsVdomElement(value: VdomElement): this.type = set("tags", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: PageHeader.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PageHeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

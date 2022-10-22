@@ -1,48 +1,59 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElevationLayerElevationQueryResult extends Object {
+trait ElevationLayerElevationQueryResult
+  extends StObject
+     with Object {
+  
   /**
     * The geometry with sampled z-values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#ElevationQueryResult)
     */
   var geometry: Point | Multipoint | Polyline
+  
   /**
     * The value used when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#ElevationQueryResult)
     */
   var noDataValue: Double
+  
   /**
-    * Contains additional information about how the geometry was sampled. This property is present depending on whether the user set `options.returnSampleInfo = true`, for each coordinate in the geometry.
+    * Contains additional information about how the geometry was sampled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ElevationLayer.html#ElevationQueryResult)
     */
   var sampleInfo: js.UndefOr[js.Array[ElevationLayerElevationQueryResultSampleInfo]] = js.undefined
 }
-
 object ElevationLayerElevationQueryResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     geometry: Point | Multipoint | Polyline,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     noDataValue: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    sampleInfo: js.Array[ElevationLayerElevationQueryResultSampleInfo] = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): ElevationLayerElevationQueryResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], noDataValue = noDataValue.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (sampleInfo != null) __obj.updateDynamic("sampleInfo")(sampleInfo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), noDataValue = noDataValue.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[ElevationLayerElevationQueryResult]
   }
+  
+  extension [Self <: ElevationLayerElevationQueryResult](x: Self) {
+    
+    inline def setGeometry(value: Point | Multipoint | Polyline): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    
+    inline def setSampleInfo(value: js.Array[ElevationLayerElevationQueryResultSampleInfo]): Self = StObject.set(x, "sampleInfo", value.asInstanceOf[js.Any])
+    
+    inline def setSampleInfoUndefined: Self = StObject.set(x, "sampleInfo", js.undefined)
+    
+    inline def setSampleInfoVarargs(value: ElevationLayerElevationQueryResultSampleInfo*): Self = StObject.set(x, "sampleInfo", js.Array(value*))
+  }
 }
-

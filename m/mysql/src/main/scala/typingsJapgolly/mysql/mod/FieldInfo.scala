@@ -1,16 +1,18 @@
 package typingsJapgolly.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldInfo extends UntypedFieldInfo {
+trait FieldInfo
+  extends StObject
+     with UntypedFieldInfo {
+  
   var `type`: Types
 }
-
 object FieldInfo {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     catalog: String,
     charsetNr: Double,
     db: String,
@@ -23,13 +25,15 @@ object FieldInfo {
     protocol41: Boolean,
     table: String,
     `type`: Types,
-    zeroFill: Boolean,
-    default: String = null
+    zeroFill: Boolean
   ): FieldInfo = {
     val __obj = js.Dynamic.literal(catalog = catalog.asInstanceOf[js.Any], charsetNr = charsetNr.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], decimals = decimals.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], orgName = orgName.asInstanceOf[js.Any], orgTable = orgTable.asInstanceOf[js.Any], protocol41 = protocol41.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any], zeroFill = zeroFill.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldInfo]
   }
+  
+  extension [Self <: FieldInfo](x: Self) {
+    
+    inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

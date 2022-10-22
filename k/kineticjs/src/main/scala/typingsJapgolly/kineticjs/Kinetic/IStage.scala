@@ -1,29 +1,44 @@
 package typingsJapgolly.kineticjs.Kinetic
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IStage extends IContainer {
-  def add(layer: ILayer): js.Any = js.native
-  def clear(): js.Any = js.native
+trait IStage
+  extends StObject
+     with IContainer {
+  
+  def add(layer: ILayer): Any = js.native
+  
+  def clear(): Any = js.native
+  
   def getContainer(): HTMLElement = js.native
+  
   def getContent(): HTMLElement = js.native
+  
   def getDOM(): HTMLElement = js.native
-  def getIntersection(pos: js.Any): js.Any = js.native
-  def getMousePosition(): js.Any = js.native
-  def getMousePosition(evt: Event_): js.Any = js.native
+  
+  def getIntersection(pos: Any): Any = js.native
+  
+  def getMousePosition(): Any = js.native
+  def getMousePosition(evt: Event): Any = js.native
+  
   def getPointerPosition(): Vector2d = js.native
-  def getTouchPosition(): js.Any = js.native
-  def getTouchPosition(evt: Event_): js.Any = js.native
-  def getUserPosition(): js.Any = js.native
-  def getUserPosition(evt: Event_): js.Any = js.native
-  def load(JSON: js.Any): js.Any = js.native
-  def reset(): js.Any = js.native
-  def toImage(config: js.Any, callback: js.Function0[_]): js.Any = js.native
-  def toJSON(): js.Any = js.native
+  
+  def getTouchPosition(): Any = js.native
+  def getTouchPosition(evt: Event): Any = js.native
+  
+  def getUserPosition(): Any = js.native
+  def getUserPosition(evt: Event): Any = js.native
+  
+  def load(JSON: Any): Any = js.native
+  
+  def reset(): Any = js.native
+  
+  def toImage(config: Any, callback: js.Function0[Any]): Any = js.native
+  
+  def toJSON(): Any = js.native
 }
-

@@ -10,10 +10,10 @@ Manage multiple filters on the same Twitter stream
 | ------------------ | :-------------: |
 | Full name          | twitter-stream-channels |
 | Keywords           | twitter, api, stream, filter |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 2512 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 75.0 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](http://labs.topheman.com/twitter-stream-channels/)

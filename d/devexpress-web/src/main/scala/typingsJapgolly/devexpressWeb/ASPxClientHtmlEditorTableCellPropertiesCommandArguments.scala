@@ -1,28 +1,41 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.TABLECELLPROPERTIES_DIALOG_COMMAND command parameter.
   */
-@JSGlobal("ASPxClientHtmlEditorTableCellPropertiesCommandArguments")
-@js.native
-class ASPxClientHtmlEditorTableCellPropertiesCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorTableCellPropertiesCommandArguments class with specified settings.
-    * @param htmlEditor The HTML editor executing a command.
-    * @param selectedElement An object containing the currently selected element in the HTML editor.
-    */
-  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorTableCellPropertiesCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
+  
   /**
     * Gets or sets a value that indicates whether the cell settings should be applied to all cells in the table.
     */
-  var applyForAll: Boolean = js.native
+  var applyForAll: Boolean
+  
   /**
     * Contains the style settings defining the appearance of the target cell element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
-
+object ASPxClientHtmlEditorTableCellPropertiesCommandArguments {
+  
+  inline def apply(
+    applyForAll: Boolean,
+    selectedElement: Any,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorTableCellPropertiesCommandArguments = {
+    val __obj = js.Dynamic.literal(applyForAll = applyForAll.asInstanceOf[js.Any], selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesCommandArguments]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorTableCellPropertiesCommandArguments](x: Self) {
+    
+    inline def setApplyForAll(value: Boolean): Self = StObject.set(x, "applyForAll", value.asInstanceOf[js.Any])
+    
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+  }
+}

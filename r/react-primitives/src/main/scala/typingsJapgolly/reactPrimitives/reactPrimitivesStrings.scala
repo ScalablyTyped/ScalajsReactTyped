@@ -1,40 +1,33 @@
 package typingsJapgolly.reactPrimitives
 
 import typingsJapgolly.reactPrimitives.mod._PlatformOSType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactPrimitivesStrings {
-  @js.native
-  sealed trait PlatformStatic extends js.Object
   
   @js.native
-  sealed trait disk extends js.Object
+  sealed trait disk extends StObject
+  inline def disk: disk = "disk".asInstanceOf[disk]
   
   @js.native
-  sealed trait diskSlashmemory extends js.Object
+  sealed trait diskSlashmemory extends StObject
+  inline def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
   
   @js.native
-  sealed trait memory extends js.Object
+  sealed trait memory extends StObject
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait sketch extends _PlatformOSType
+  sealed trait sketch
+    extends StObject
+       with _PlatformOSType
+  inline def sketch: sketch = "sketch".asInstanceOf[sketch]
   
   @js.native
-  sealed trait vr extends _PlatformOSType
-  
-  @scala.inline
-  def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
-  @scala.inline
-  def disk: disk = "disk".asInstanceOf[disk]
-  @scala.inline
-  def diskSlashmemory: diskSlashmemory = "disk/memory".asInstanceOf[diskSlashmemory]
-  @scala.inline
-  def memory: memory = "memory".asInstanceOf[memory]
-  @scala.inline
-  def sketch: sketch = "sketch".asInstanceOf[sketch]
-  @scala.inline
-  def vr: vr = "vr".asInstanceOf[vr]
+  sealed trait vr
+    extends StObject
+       with _PlatformOSType
+  inline def vr: vr = "vr".asInstanceOf[vr]
 }
-

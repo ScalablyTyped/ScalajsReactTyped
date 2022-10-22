@@ -1,13 +1,16 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "SurveyTriggerCopyValue")
 @js.native
-class SurveyTriggerCopyValue () extends SurveyTrigger {
-  var fromName: js.Any = js.native
-  var setToName: String = js.native
+open class SurveyTriggerCopyValue () extends SurveyTrigger {
+  
+  def fromName: String = js.native
+  def fromName_=(`val`: String): Unit = js.native
+  
+  def setToName: String = js.native
+  def setToName_=(`val`: String): Unit = js.native
 }
-

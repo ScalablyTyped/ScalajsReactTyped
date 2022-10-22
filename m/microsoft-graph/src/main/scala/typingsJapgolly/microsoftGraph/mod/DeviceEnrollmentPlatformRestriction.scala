@@ -1,34 +1,50 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceEnrollmentPlatformRestriction extends js.Object {
+trait DeviceEnrollmentPlatformRestriction extends StObject {
+  
   // Max OS version supported
-  var osMaximumVersion: js.UndefOr[String] = js.undefined
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Min OS version supported
-  var osMinimumVersion: js.UndefOr[String] = js.undefined
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Block personally owned devices from enrolling
   var personalDeviceEnrollmentBlocked: js.UndefOr[Boolean] = js.undefined
+  
   // Block the platform from enrolling
   var platformBlocked: js.UndefOr[Boolean] = js.undefined
 }
-
 object DeviceEnrollmentPlatformRestriction {
-  @scala.inline
-  def apply(
-    osMaximumVersion: String = null,
-    osMinimumVersion: String = null,
-    personalDeviceEnrollmentBlocked: js.UndefOr[Boolean] = js.undefined,
-    platformBlocked: js.UndefOr[Boolean] = js.undefined
-  ): DeviceEnrollmentPlatformRestriction = {
+  
+  inline def apply(): DeviceEnrollmentPlatformRestriction = {
     val __obj = js.Dynamic.literal()
-    if (osMaximumVersion != null) __obj.updateDynamic("osMaximumVersion")(osMaximumVersion.asInstanceOf[js.Any])
-    if (osMinimumVersion != null) __obj.updateDynamic("osMinimumVersion")(osMinimumVersion.asInstanceOf[js.Any])
-    if (!js.isUndefined(personalDeviceEnrollmentBlocked)) __obj.updateDynamic("personalDeviceEnrollmentBlocked")(personalDeviceEnrollmentBlocked.asInstanceOf[js.Any])
-    if (!js.isUndefined(platformBlocked)) __obj.updateDynamic("platformBlocked")(platformBlocked.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceEnrollmentPlatformRestriction]
   }
+  
+  extension [Self <: DeviceEnrollmentPlatformRestriction](x: Self) {
+    
+    inline def setOsMaximumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMaximumVersion", value.asInstanceOf[js.Any])
+    
+    inline def setOsMaximumVersionNull: Self = StObject.set(x, "osMaximumVersion", null)
+    
+    inline def setOsMaximumVersionUndefined: Self = StObject.set(x, "osMaximumVersion", js.undefined)
+    
+    inline def setOsMinimumVersion(value: NullableOption[String]): Self = StObject.set(x, "osMinimumVersion", value.asInstanceOf[js.Any])
+    
+    inline def setOsMinimumVersionNull: Self = StObject.set(x, "osMinimumVersion", null)
+    
+    inline def setOsMinimumVersionUndefined: Self = StObject.set(x, "osMinimumVersion", js.undefined)
+    
+    inline def setPersonalDeviceEnrollmentBlocked(value: Boolean): Self = StObject.set(x, "personalDeviceEnrollmentBlocked", value.asInstanceOf[js.Any])
+    
+    inline def setPersonalDeviceEnrollmentBlockedUndefined: Self = StObject.set(x, "personalDeviceEnrollmentBlocked", js.undefined)
+    
+    inline def setPlatformBlocked(value: Boolean): Self = StObject.set(x, "platformBlocked", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformBlockedUndefined: Self = StObject.set(x, "platformBlocked", js.undefined)
+  }
 }
-

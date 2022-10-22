@@ -11,9 +11,9 @@ get the current git commit hash, tag or branch in node
 | Full name          | git-rev |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 94 |
-| # downloads        | 1499935 |
-| # stars            | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 78318.33333333333 |
+| # stars            | 111.0 |
 
 ## Links
 - [Homepage](https://github.com/tblobaum/git-rev)

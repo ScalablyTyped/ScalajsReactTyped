@@ -1,32 +1,43 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsInformationProtectionAppLearningSummary extends Entity {
+trait WindowsInformationProtectionAppLearningSummary
+  extends StObject
+     with Entity {
+  
   // Application Name
-  var applicationName: js.UndefOr[String] = js.undefined
+  var applicationName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Application Type. Possible values are: universal, desktop.
   var applicationType: js.UndefOr[ApplicationType] = js.undefined
+  
   // Device Count
   var deviceCount: js.UndefOr[Double] = js.undefined
 }
-
 object WindowsInformationProtectionAppLearningSummary {
-  @scala.inline
-  def apply(
-    applicationName: String = null,
-    applicationType: ApplicationType = null,
-    deviceCount: Int | Double = null,
-    id: String = null
-  ): WindowsInformationProtectionAppLearningSummary = {
+  
+  inline def apply(): WindowsInformationProtectionAppLearningSummary = {
     val __obj = js.Dynamic.literal()
-    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName.asInstanceOf[js.Any])
-    if (applicationType != null) __obj.updateDynamic("applicationType")(applicationType.asInstanceOf[js.Any])
-    if (deviceCount != null) __obj.updateDynamic("deviceCount")(deviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionAppLearningSummary]
   }
+  
+  extension [Self <: WindowsInformationProtectionAppLearningSummary](x: Self) {
+    
+    inline def setApplicationName(value: NullableOption[String]): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationNameNull: Self = StObject.set(x, "applicationName", null)
+    
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "applicationName", js.undefined)
+    
+    inline def setApplicationType(value: ApplicationType): Self = StObject.set(x, "applicationType", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationTypeUndefined: Self = StObject.set(x, "applicationType", js.undefined)
+    
+    inline def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
+  }
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchInputOptions extends js.Object {
+trait SearchInputOptions extends StObject {
+  
   var clearSearchButtonText: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var initSelector: js.UndefOr[String] = js.undefined
+  
   var mini: js.UndefOr[Boolean] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
 }
-
 object SearchInputOptions {
-  @scala.inline
-  def apply(
-    clearSearchButtonText: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    initSelector: String = null,
-    mini: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): SearchInputOptions = {
+  
+  inline def apply(): SearchInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (clearSearchButtonText != null) __obj.updateDynamic("clearSearchButtonText")(clearSearchButtonText.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchInputOptions]
   }
+  
+  extension [Self <: SearchInputOptions](x: Self) {
+    
+    inline def setClearSearchButtonText(value: String): Self = StObject.set(x, "clearSearchButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setClearSearchButtonTextUndefined: Self = StObject.set(x, "clearSearchButtonText", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

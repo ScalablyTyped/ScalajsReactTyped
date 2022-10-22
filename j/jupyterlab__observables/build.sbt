@@ -1,19 +1,17 @@
 organization := "org.scalablytyped.japgolly"
 name := "jupyterlab__observables"
-version := "2.4.0-ead621"
-scalaVersion := "2.13.1"
+version := "4.4.8-2ce4bb"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "phosphor__algorithm" % "1.2.0-436d64",
-  "org.scalablytyped.japgolly" %%% "phosphor__coreutils" % "1.3.1-166b65",
-  "org.scalablytyped.japgolly" %%% "phosphor__disposable" % "1.3.1-d69c6d",
-  "org.scalablytyped.japgolly" %%% "phosphor__messaging" % "1.3.0-e44f58",
-  "org.scalablytyped.japgolly" %%% "phosphor__signaling" % "1.3.1-ccc341",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "lumino__algorithm" % "1.9.2-147e30",
+  "org.scalablytyped.japgolly" %%% "lumino__coreutils" % "1.12.1-93beef",
+  "org.scalablytyped.japgolly" %%% "lumino__disposable" % "1.10.2-d4a6c7",
+  "org.scalablytyped.japgolly" %%% "lumino__messaging" % "1.10.3-4da0f7",
+  "org.scalablytyped.japgolly" %%% "lumino__signaling" % "1.10.2-08c11b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -2,16 +2,17 @@ package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.ProxyConfiguration")
-@js.native
-class ProxyConfiguration () extends IProxyConfiguration {
-  /* CompleteClass */
-  override var canConnectDirectly: Boolean = js.native
-  /* CompleteClass */
-  override var proxyUris: IVectorView[Uri] = js.native
+trait ProxyConfiguration
+  extends StObject
+     with IProxyConfiguration
+object ProxyConfiguration {
+  
+  inline def apply(canConnectDirectly: Boolean, proxyUris: IVectorView[Uri]): ProxyConfiguration = {
+    val __obj = js.Dynamic.literal(canConnectDirectly = canConnectDirectly.asInstanceOf[js.Any], proxyUris = proxyUris.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProxyConfiguration]
+  }
 }
-

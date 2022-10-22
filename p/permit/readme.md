@@ -10,10 +10,10 @@ An unopinionated authentication library for building Node.js APIs.
 | ------------------ | :-------------: |
 | Full name          | permit |
 | Keywords           | api, auth, authentication, authn, authorization, basic, bearer, express, fastly, graphql, hapi, header, koa, oauth, passport, request, rest, server, token |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 10610 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3505.3333333333335 |
+| # stars            | 1661.0 |
 
 ## Links
 - [Homepage](https://github.com/ianstormtaylor/permit#readme)

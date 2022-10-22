@@ -10,10 +10,10 @@ A standalone AWS Signature V4 request signer for Node.JS
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/signature-v4-node |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 8433 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1934.3333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fsignature-v4-node)

@@ -1,60 +1,81 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetadataDroppedEventUIParam extends js.Object {
+trait MetadataDroppedEventUIParam extends StObject {
+  
   /**
-  	 * A reference to the dragged element.
-  	 */
+    * A reference to the dragged element.
+    */
   var draggedElement: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the helper.
-  	 */
+    * Gets a reference to the helper.
+    */
   var helper: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the data.
-  	 */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the data.
+    */
+  var metadata: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the index at which the metadata is inserted.
-  	 */
+    * Gets the index at which the metadata is inserted.
+    */
   var metadataIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets a reference to the offset.
-  	 */
-  var offset: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the offset.
+    */
+  var offset: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the current position of the draggable element.
-  	 */
-  var position: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the current position of the draggable element.
+    */
+  var position: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * A reference to the drop target.
-  	 */
+    * A reference to the drop target.
+    */
   var targetElement: js.UndefOr[String] = js.undefined
 }
-
 object MetadataDroppedEventUIParam {
-  @scala.inline
-  def apply(
-    draggedElement: String = null,
-    helper: String = null,
-    metadata: js.Any = null,
-    metadataIndex: Int | Double = null,
-    offset: js.Any = null,
-    position: js.Any = null,
-    targetElement: String = null
-  ): MetadataDroppedEventUIParam = {
+  
+  inline def apply(): MetadataDroppedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (draggedElement != null) __obj.updateDynamic("draggedElement")(draggedElement.asInstanceOf[js.Any])
-    if (helper != null) __obj.updateDynamic("helper")(helper.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (metadataIndex != null) __obj.updateDynamic("metadataIndex")(metadataIndex.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetadataDroppedEventUIParam]
   }
+  
+  extension [Self <: MetadataDroppedEventUIParam](x: Self) {
+    
+    inline def setDraggedElement(value: String): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
+    
+    inline def setDraggedElementUndefined: Self = StObject.set(x, "draggedElement", js.undefined)
+    
+    inline def setHelper(value: String): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    
+    inline def setHelperUndefined: Self = StObject.set(x, "helper", js.undefined)
+    
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataIndex(value: Double): Self = StObject.set(x, "metadataIndex", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataIndexUndefined: Self = StObject.set(x, "metadataIndex", js.undefined)
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setOffset(value: Any): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setTargetElement(value: String): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    
+    inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
+  }
 }
-

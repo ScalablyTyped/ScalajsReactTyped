@@ -1,214 +1,103 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.AnonHeight
-import typingsJapgolly.reactNative.reactNativeStrings.`column-reverse`
-import typingsJapgolly.reactNative.reactNativeStrings.`flex-end`
-import typingsJapgolly.reactNative.reactNativeStrings.`flex-start`
-import typingsJapgolly.reactNative.reactNativeStrings.`row-reverse`
-import typingsJapgolly.reactNative.reactNativeStrings.`space-around`
-import typingsJapgolly.reactNative.reactNativeStrings.`space-between`
-import typingsJapgolly.reactNative.reactNativeStrings.`space-evenly`
-import typingsJapgolly.reactNative.reactNativeStrings.`wrap-reverse`
-import typingsJapgolly.reactNative.reactNativeStrings.absolute
-import typingsJapgolly.reactNative.reactNativeStrings.auto
-import typingsJapgolly.reactNative.reactNativeStrings.center
-import typingsJapgolly.reactNative.reactNativeStrings.column
-import typingsJapgolly.reactNative.reactNativeStrings.flex
 import typingsJapgolly.reactNative.reactNativeStrings.hidden
-import typingsJapgolly.reactNative.reactNativeStrings.inherit
-import typingsJapgolly.reactNative.reactNativeStrings.ltr
-import typingsJapgolly.reactNative.reactNativeStrings.none
-import typingsJapgolly.reactNative.reactNativeStrings.nowrap
-import typingsJapgolly.reactNative.reactNativeStrings.relative
-import typingsJapgolly.reactNative.reactNativeStrings.row
-import typingsJapgolly.reactNative.reactNativeStrings.rtl
-import typingsJapgolly.reactNative.reactNativeStrings.stretch
 import typingsJapgolly.reactNative.reactNativeStrings.visible
-import typingsJapgolly.reactNative.reactNativeStrings.wrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ImageStyle
-  extends FlexStyle
+  extends StObject
+     with FlexStyle
      with ShadowStyleIOS
      with TransformsStyle {
+  
   var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
-  var backgroundColor: js.UndefOr[String] = js.undefined
+  
+  var backgroundColor: js.UndefOr[ColorValue] = js.undefined
+  
   var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
+  
   var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
-  var borderColor: js.UndefOr[String] = js.undefined
+  
+  var borderColor: js.UndefOr[ColorValue] = js.undefined
+  
   var borderRadius: js.UndefOr[Double] = js.undefined
+  
   var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
+  
   var borderTopRightRadius: js.UndefOr[Double] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   @JSName("overflow")
   var overflow_ImageStyle: js.UndefOr[visible | hidden] = js.undefined
-  var overlayColor: js.UndefOr[String] = js.undefined
+  
+  var overlayColor: js.UndefOr[ColorValue] = js.undefined
+  
   var resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
-  var tintColor: js.UndefOr[String] = js.undefined
+  
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
 }
-
 object ImageStyle {
-  @scala.inline
-  def apply(
-    alignContent: `flex-start` | `flex-end` | center | stretch | `space-between` | `space-around` = null,
-    alignItems: FlexAlignType = null,
-    alignSelf: auto | FlexAlignType = null,
-    aspectRatio: Int | Double = null,
-    backfaceVisibility: visible | hidden = null,
-    backgroundColor: String = null,
-    borderBottomLeftRadius: Int | Double = null,
-    borderBottomRightRadius: Int | Double = null,
-    borderBottomWidth: Int | Double = null,
-    borderColor: String = null,
-    borderEndWidth: Double | String = null,
-    borderLeftWidth: Int | Double = null,
-    borderRadius: Int | Double = null,
-    borderRightWidth: Int | Double = null,
-    borderStartWidth: Double | String = null,
-    borderTopLeftRadius: Int | Double = null,
-    borderTopRightRadius: Int | Double = null,
-    borderTopWidth: Int | Double = null,
-    borderWidth: Int | Double = null,
-    bottom: Double | String = null,
-    direction: inherit | ltr | rtl = null,
-    display: none | flex = null,
-    end: Double | String = null,
-    flex: Int | Double = null,
-    flexBasis: Double | String = null,
-    flexDirection: row | column | `row-reverse` | `column-reverse` = null,
-    flexGrow: Int | Double = null,
-    flexShrink: Int | Double = null,
-    flexWrap: wrap | nowrap | `wrap-reverse` = null,
-    height: Double | String = null,
-    justifyContent: `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly` = null,
-    left: Double | String = null,
-    margin: Double | String = null,
-    marginBottom: Double | String = null,
-    marginEnd: Double | String = null,
-    marginHorizontal: Double | String = null,
-    marginLeft: Double | String = null,
-    marginRight: Double | String = null,
-    marginStart: Double | String = null,
-    marginTop: Double | String = null,
-    marginVertical: Double | String = null,
-    maxHeight: Double | String = null,
-    maxWidth: Double | String = null,
-    minHeight: Double | String = null,
-    minWidth: Double | String = null,
-    opacity: Int | Double = null,
-    overflow: visible | hidden = null,
-    overlayColor: String = null,
-    padding: Double | String = null,
-    paddingBottom: Double | String = null,
-    paddingEnd: Double | String = null,
-    paddingHorizontal: Double | String = null,
-    paddingLeft: Double | String = null,
-    paddingRight: Double | String = null,
-    paddingStart: Double | String = null,
-    paddingTop: Double | String = null,
-    paddingVertical: Double | String = null,
-    position: absolute | relative = null,
-    resizeMode: ImageResizeMode = null,
-    right: Double | String = null,
-    rotation: Int | Double = null,
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
-    shadowColor: String = null,
-    shadowOffset: AnonHeight = null,
-    shadowOpacity: Int | Double = null,
-    shadowRadius: Int | Double = null,
-    start: Double | String = null,
-    tintColor: String = null,
-    top: Double | String = null,
-    transform: js.Array[
-      PerpectiveTransform | RotateTransform | RotateXTransform | RotateYTransform | RotateZTransform | ScaleTransform | ScaleXTransform | ScaleYTransform | TranslateXTransform | TranslateYTransform | SkewXTransform | SkewYTransform
-    ] = null,
-    transformMatrix: js.Array[Double] = null,
-    translateX: Int | Double = null,
-    translateY: Int | Double = null,
-    width: Double | String = null,
-    zIndex: Int | Double = null
-  ): ImageStyle = {
+  
+  inline def apply(): ImageStyle = {
     val __obj = js.Dynamic.literal()
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (backfaceVisibility != null) __obj.updateDynamic("backfaceVisibility")(backfaceVisibility.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderBottomLeftRadius != null) __obj.updateDynamic("borderBottomLeftRadius")(borderBottomLeftRadius.asInstanceOf[js.Any])
-    if (borderBottomRightRadius != null) __obj.updateDynamic("borderBottomRightRadius")(borderBottomRightRadius.asInstanceOf[js.Any])
-    if (borderBottomWidth != null) __obj.updateDynamic("borderBottomWidth")(borderBottomWidth.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderEndWidth != null) __obj.updateDynamic("borderEndWidth")(borderEndWidth.asInstanceOf[js.Any])
-    if (borderLeftWidth != null) __obj.updateDynamic("borderLeftWidth")(borderLeftWidth.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRightWidth != null) __obj.updateDynamic("borderRightWidth")(borderRightWidth.asInstanceOf[js.Any])
-    if (borderStartWidth != null) __obj.updateDynamic("borderStartWidth")(borderStartWidth.asInstanceOf[js.Any])
-    if (borderTopLeftRadius != null) __obj.updateDynamic("borderTopLeftRadius")(borderTopLeftRadius.asInstanceOf[js.Any])
-    if (borderTopRightRadius != null) __obj.updateDynamic("borderTopRightRadius")(borderTopRightRadius.asInstanceOf[js.Any])
-    if (borderTopWidth != null) __obj.updateDynamic("borderTopWidth")(borderTopWidth.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (flexBasis != null) __obj.updateDynamic("flexBasis")(flexBasis.asInstanceOf[js.Any])
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
-    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
-    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
-    if (marginEnd != null) __obj.updateDynamic("marginEnd")(marginEnd.asInstanceOf[js.Any])
-    if (marginHorizontal != null) __obj.updateDynamic("marginHorizontal")(marginHorizontal.asInstanceOf[js.Any])
-    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
-    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
-    if (marginStart != null) __obj.updateDynamic("marginStart")(marginStart.asInstanceOf[js.Any])
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (marginVertical != null) __obj.updateDynamic("marginVertical")(marginVertical.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overlayColor != null) __obj.updateDynamic("overlayColor")(overlayColor.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingEnd != null) __obj.updateDynamic("paddingEnd")(paddingEnd.asInstanceOf[js.Any])
-    if (paddingHorizontal != null) __obj.updateDynamic("paddingHorizontal")(paddingHorizontal.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingStart != null) __obj.updateDynamic("paddingStart")(paddingStart.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (paddingVertical != null) __obj.updateDynamic("paddingVertical")(paddingVertical.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
-    if (shadowOpacity != null) __obj.updateDynamic("shadowOpacity")(shadowOpacity.asInstanceOf[js.Any])
-    if (shadowRadius != null) __obj.updateDynamic("shadowRadius")(shadowRadius.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (tintColor != null) __obj.updateDynamic("tintColor")(tintColor.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (transformMatrix != null) __obj.updateDynamic("transformMatrix")(transformMatrix.asInstanceOf[js.Any])
-    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
-    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageStyle]
   }
+  
+  extension [Self <: ImageStyle](x: Self) {
+    
+    inline def setBackfaceVisibility(value: visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
+    
+    inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
+    
+    inline def setBorderBottomRightRadius(value: Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
+    
+    inline def setBorderColor(value: ColorValue): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderTopLeftRadius(value: Double): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
+    
+    inline def setBorderTopRightRadius(value: Double): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOverflow(value: visible | hidden): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setOverlayColor(value: ColorValue): Self = StObject.set(x, "overlayColor", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayColorUndefined: Self = StObject.set(x, "overlayColor", js.undefined)
+    
+    inline def setResizeMode(value: ImageResizeMode): Self = StObject.set(x, "resizeMode", value.asInstanceOf[js.Any])
+    
+    inline def setResizeModeUndefined: Self = StObject.set(x, "resizeMode", js.undefined)
+    
+    inline def setTintColor(value: ColorValue): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
+    
+    inline def setTintColorUndefined: Self = StObject.set(x, "tintColor", js.undefined)
+  }
 }
-

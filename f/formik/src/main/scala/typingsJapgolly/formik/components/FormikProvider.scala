@@ -1,46 +1,22 @@
 package typingsJapgolly.formik.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.formik.typesMod.FormikContext
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.formik.distTypesMod.FormikContextType
 import typingsJapgolly.react.mod.ProviderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormikProvider {
-  def apply(
-    value: FormikContext[js.Any],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ProviderProps[FormikContext[js.Any]], 
-    MountedWithRawType[
-      ProviderProps[FormikContext[js.Any]], 
-      js.Object, 
-      RawMounted[ProviderProps[FormikContext[js.Any]], js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.react.mod.ProviderProps[typingsJapgolly.formik.typesMod.FormikContext[js.Any]], 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.react.mod.ProviderProps[typingsJapgolly.formik.typesMod.FormikContext[js.Any]]])(children: _*)
+  inline def apply(value: FormikContextType[Any]): Default[js.Object] = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[ProviderProps[FormikContextType[Any]]]))
   }
+  
   @JSImport("formik", "FormikProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: ProviderProps[FormikContextType[Any]]): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

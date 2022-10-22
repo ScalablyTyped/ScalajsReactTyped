@@ -1,84 +1,162 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonColorDashStyle
-import typingsJapgolly.devextreme.AnonColorVisible
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.inside
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.outside
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
+import typingsJapgolly.devextreme.anon.ColorDashStyle
+import typingsJapgolly.devextreme.anon.ColorVisible
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.RelativePosition
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures point labels. */
-trait dxChartSeriesTypesCommonSeriesLabel extends js.Object {
-  /** Aligns point labels in relation to their points. */
-  var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Formats the point argument before it is displayed in the point label. To format the point value, use the format option. */
-  var argumentFormat: js.UndefOr[format] = js.undefined
-  /** Colors the point labels' background. The default color is inherited from the points. */
+trait dxChartSeriesTypesCommonSeriesLabel extends StObject {
+  
+  /**
+    * Aligns point labels in relation to their points.
+    */
+  var alignment: js.UndefOr[HorizontalAlignment] = js.undefined
+  
+  /**
+    * Formats the point argument before it is displayed in the point label. To format the point value, use the format property.
+    */
+  var argumentFormat: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Colors the point labels&apos; background. The default color is inherited from the points.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the borders of point labels. */
-  var border: js.UndefOr[AnonColorDashStyle] = js.undefined
-  /** Configures the label connectors. */
-  var connector: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Customizes the text displayed by point labels. */
-  var customizeText: js.UndefOr[js.Function1[/* pointInfo */ js.Any, String]] = js.undefined
-  /** Specifies font options for point labels. */
+  
+  /**
+    * Configures the borders of point labels.
+    */
+  var border: js.UndefOr[ColorDashStyle] = js.undefined
+  
+  /**
+    * Configures the label connectors.
+    */
+  var connector: js.UndefOr[ColorVisible] = js.undefined
+  
+  /**
+    * Customizes the text displayed by point labels.
+    */
+  var customizeText: js.UndefOr[js.Function1[/* pointInfo */ Any, String]] = js.undefined
+  
+  /**
+    * 
+    */
+  var displayFormat: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies font properties for point labels.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Formats the point value before it will be displayed in the point label. */
-  var format: js.UndefOr[typingsJapgolly.devextreme.mod.DevExpress.ui.format] = js.undefined
-  /** Along with verticalOffset, shifts point labels from their initial positions. */
+  
+  /**
+    * Formats the point value before it is displayed in the point label.
+    */
+  var format: js.UndefOr[Format] = js.undefined
+  
+  /**
+    * Along with verticalOffset, shifts point labels from their initial positions.
+    */
   var horizontalOffset: js.UndefOr[Double] = js.undefined
-  /** Specifies whether to display point labels inside or outside of series points. Applies only to bubble, range-like and bar-like series. */
-  var position: js.UndefOr[inside | outside] = js.undefined
-  /** Rotates point labels. */
+  
+  /**
+    * Specifies whether to display point labels inside or outside of series points. Applies only to bubble, range-like and bar-like series.
+    */
+  var position: js.UndefOr[RelativePosition] = js.undefined
+  
+  /**
+    * Rotates point labels.
+    */
   var rotationAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies whether or not to show labels for points with zero value. Applies only to bar-like series. */
+  
+  /**
+    * Specifies whether or not to show labels for points with zero value. Applies only to bar-like series.
+    */
   var showForZeroValues: js.UndefOr[Boolean] = js.undefined
-  /** Along with horizontalOffset, shifts point labels from their initial positions. */
+  
+  /**
+    * Along with horizontalOffset, shifts point labels from their initial positions.
+    */
   var verticalOffset: js.UndefOr[Double] = js.undefined
-  /** Makes the point labels visible. */
+  
+  /**
+    * Makes the point labels visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxChartSeriesTypesCommonSeriesLabel {
-  @scala.inline
-  def apply(
-    alignment: center | left | right = null,
-    argumentFormat: format = null,
-    backgroundColor: String = null,
-    border: AnonColorDashStyle = null,
-    connector: AnonColorVisible = null,
-    customizeText: /* pointInfo */ js.Any => CallbackTo[String] = null,
-    font: Font = null,
-    format: format = null,
-    horizontalOffset: Int | Double = null,
-    position: inside | outside = null,
-    rotationAngle: Int | Double = null,
-    showForZeroValues: js.UndefOr[Boolean] = js.undefined,
-    verticalOffset: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxChartSeriesTypesCommonSeriesLabel = {
+  
+  inline def apply(): dxChartSeriesTypesCommonSeriesLabel = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (argumentFormat != null) __obj.updateDynamic("argumentFormat")(argumentFormat.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (connector != null) __obj.updateDynamic("connector")(connector.asInstanceOf[js.Any])
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1((t0: /* pointInfo */ js.Any) => customizeText(t0).runNow()))
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rotationAngle != null) __obj.updateDynamic("rotationAngle")(rotationAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showForZeroValues)) __obj.updateDynamic("showForZeroValues")(showForZeroValues.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesLabel]
   }
+  
+  extension [Self <: dxChartSeriesTypesCommonSeriesLabel](x: Self) {
+    
+    inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setArgumentFormat(value: Format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "argumentFormat", js.Any.fromFunction1(value))
+    
+    inline def setArgumentFormatUndefined: Self = StObject.set(x, "argumentFormat", js.undefined)
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorder(value: ColorDashStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setConnector(value: ColorVisible): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorUndefined: Self = StObject.set(x, "connector", js.undefined)
+    
+    inline def setCustomizeText(value: /* pointInfo */ Any => String): Self = StObject.set(x, "customizeText", js.Any.fromFunction1(value))
+    
+    inline def setCustomizeTextUndefined: Self = StObject.set(x, "customizeText", js.undefined)
+    
+    inline def setDisplayFormat(value: String): Self = StObject.set(x, "displayFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFormatUndefined: Self = StObject.set(x, "displayFormat", js.undefined)
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatFunction1(value: js.Date | Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "horizontalOffset", js.undefined)
+    
+    inline def setPosition(value: RelativePosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRotationAngle(value: Double): Self = StObject.set(x, "rotationAngle", value.asInstanceOf[js.Any])
+    
+    inline def setRotationAngleUndefined: Self = StObject.set(x, "rotationAngle", js.undefined)
+    
+    inline def setShowForZeroValues(value: Boolean): Self = StObject.set(x, "showForZeroValues", value.asInstanceOf[js.Any])
+    
+    inline def setShowForZeroValuesUndefined: Self = StObject.set(x, "showForZeroValues", js.undefined)
+    
+    inline def setVerticalOffset(value: Double): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

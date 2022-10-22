@@ -2,34 +2,37 @@ package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CsvUpload extends BulkUpload[CsvUpload] {
+trait CsvUpload
+  extends StObject
+     with BulkUpload[CsvUpload] {
+  
   def append(row: js.Object): CsvUpload
+  
   @JSName("apply")
   def apply(): Unit
 }
-
 object CsvUpload {
-  @scala.inline
-  def apply(
-    append: js.Object => CallbackTo[CsvUpload],
+  
+  inline def apply(
+    append: js.Object => CsvUpload,
     apply: Callback,
     forCampaignManagement: CallbackTo[CsvUpload],
     forOfflineConversions: CallbackTo[CsvUpload],
     preview: Callback,
-    setFileName: String => CallbackTo[CsvUpload]
+    setFileName: String => CsvUpload
   ): CsvUpload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("append")(js.Any.fromFunction1((t0: js.Object) => append(t0).runNow()))
-    __obj.updateDynamic("apply")(apply.toJsFn)
-    __obj.updateDynamic("forCampaignManagement")(forCampaignManagement.toJsFn)
-    __obj.updateDynamic("forOfflineConversions")(forOfflineConversions.toJsFn)
-    __obj.updateDynamic("preview")(preview.toJsFn)
-    __obj.updateDynamic("setFileName")(js.Any.fromFunction1((t0: java.lang.String) => setFileName(t0).runNow()))
+    val __obj = js.Dynamic.literal(append = js.Any.fromFunction1(append), apply = apply.toJsFn, forCampaignManagement = forCampaignManagement.toJsFn, forOfflineConversions = forOfflineConversions.toJsFn, preview = preview.toJsFn, setFileName = js.Any.fromFunction1(setFileName))
     __obj.asInstanceOf[CsvUpload]
   }
+  
+  extension [Self <: CsvUpload](x: Self) {
+    
+    inline def setAppend(value: js.Object => CsvUpload): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
+    
+    inline def setApply(value: Callback): Self = StObject.set(x, "apply", value.toJsFn)
+  }
 }
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.typescript.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SourceFileLike extends js.Object {
+trait SourceFileLike extends StObject {
+  
   def getLineAndCharacterOfPosition(pos: Double): LineAndCharacter
+  
+  val text: java.lang.String
 }
-
 object SourceFileLike {
-  @scala.inline
-  def apply(getLineAndCharacterOfPosition: Double => CallbackTo[LineAndCharacter]): SourceFileLike = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLineAndCharacterOfPosition")(js.Any.fromFunction1((t0: scala.Double) => getLineAndCharacterOfPosition(t0).runNow()))
+  
+  inline def apply(getLineAndCharacterOfPosition: Double => LineAndCharacter, text: java.lang.String): SourceFileLike = {
+    val __obj = js.Dynamic.literal(getLineAndCharacterOfPosition = js.Any.fromFunction1(getLineAndCharacterOfPosition), text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceFileLike]
   }
+  
+  extension [Self <: SourceFileLike](x: Self) {
+    
+    inline def setGetLineAndCharacterOfPosition(value: Double => LineAndCharacter): Self = StObject.set(x, "getLineAndCharacterOfPosition", js.Any.fromFunction1(value))
+    
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

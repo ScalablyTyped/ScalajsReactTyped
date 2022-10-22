@@ -10,10 +10,10 @@ Document loading states as Promises
 | ------------------ | :-------------: |
 | Full name          | document-promises |
 | Keywords           | document, dom, content, ready, loaded, interactive, state, parsed, promise, ponyfill, polyfill |
-| # releases         | 2 |
-| # dependents       | 1 |
-| # downloads        | 1605 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1968.6666666666667 |
+| # stars            | 53.0 |
 
 ## Links
 - [Homepage](https://github.com/jonathantneal/document-promises#readme)

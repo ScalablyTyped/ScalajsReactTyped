@@ -1,12 +1,14 @@
 package typingsJapgolly.wordpressHtmlEntities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/html-entities", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def decodeEntities(html: String): String = js.native
+object mod {
+  
+  @JSImport("@wordpress/html-entities", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decodeEntities(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeEntities")(html.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

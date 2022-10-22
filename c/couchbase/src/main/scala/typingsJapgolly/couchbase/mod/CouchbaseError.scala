@@ -1,44 +1,51 @@
 package typingsJapgolly.couchbase.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The virtual class thrown for all Couchnode errors.
   */
-trait CouchbaseError extends Error {
+trait CouchbaseError
+  extends StObject
+     with Error {
+  
   /**
     * The error code for this error.
     */
   var code: js.UndefOr[errors] = js.undefined
+  
   /**
     * Possible inner error for this error.
     */
   var innerError: js.UndefOr[CouchbaseError] = js.undefined
+  
   /**
     * Possible response body included with the error.
     */
-  var responseBody: js.UndefOr[js.Any] = js.undefined
+  var responseBody: js.UndefOr[Any] = js.undefined
 }
-
 object CouchbaseError {
-  @scala.inline
-  def apply(
-    message: String,
-    name: String,
-    code: errors = null,
-    innerError: CouchbaseError = null,
-    responseBody: js.Any = null,
-    stack: String = null
-  ): CouchbaseError = {
+  
+  inline def apply(message: String, name: String): CouchbaseError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (innerError != null) __obj.updateDynamic("innerError")(innerError.asInstanceOf[js.Any])
-    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[CouchbaseError]
   }
+  
+  extension [Self <: CouchbaseError](x: Self) {
+    
+    inline def setCode(value: errors): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setInnerError(value: CouchbaseError): Self = StObject.set(x, "innerError", value.asInstanceOf[js.Any])
+    
+    inline def setInnerErrorUndefined: Self = StObject.set(x, "innerError", js.undefined)
+    
+    inline def setResponseBody(value: Any): Self = StObject.set(x, "responseBody", value.asInstanceOf[js.Any])
+    
+    inline def setResponseBodyUndefined: Self = StObject.set(x, "responseBody", js.undefined)
+  }
 }
-

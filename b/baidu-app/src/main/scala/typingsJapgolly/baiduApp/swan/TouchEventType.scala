@@ -1,8 +1,8 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.baiduApp.baiduAppStrings.tap
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.baiduApp.baiduAppStrings.touchend
   - typingsJapgolly.baiduApp.baiduAppStrings.touchforcechange
 */
-trait TouchEventType extends js.Object
-
+trait TouchEventType extends StObject
 object TouchEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def tap: typingsJapgolly.baiduApp.baiduAppStrings.tap = this.cast("tap")
-  @scala.inline
-  def touchcancel: typingsJapgolly.baiduApp.baiduAppStrings.touchcancel = this.cast("touchcancel")
-  @scala.inline
-  def touchend: typingsJapgolly.baiduApp.baiduAppStrings.touchend = this.cast("touchend")
-  @scala.inline
-  def touchforcechange: typingsJapgolly.baiduApp.baiduAppStrings.touchforcechange = this.cast("touchforcechange")
-  @scala.inline
-  def touchmove: typingsJapgolly.baiduApp.baiduAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typingsJapgolly.baiduApp.baiduAppStrings.touchstart = this.cast("touchstart")
+  
+  inline def tap: typingsJapgolly.baiduApp.baiduAppStrings.tap = "tap".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.tap]
+  
+  inline def touchcancel: typingsJapgolly.baiduApp.baiduAppStrings.touchcancel = "touchcancel".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.touchcancel]
+  
+  inline def touchend: typingsJapgolly.baiduApp.baiduAppStrings.touchend = "touchend".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.touchend]
+  
+  inline def touchforcechange: typingsJapgolly.baiduApp.baiduAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.touchforcechange]
+  
+  inline def touchmove: typingsJapgolly.baiduApp.baiduAppStrings.touchmove = "touchmove".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.touchmove]
+  
+  inline def touchstart: typingsJapgolly.baiduApp.baiduAppStrings.touchstart = "touchstart".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.touchstart]
 }
-

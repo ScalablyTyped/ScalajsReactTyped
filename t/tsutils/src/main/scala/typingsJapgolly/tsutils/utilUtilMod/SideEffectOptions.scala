@@ -1,41 +1,39 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SideEffectOptions extends js.Object
-
+sealed trait SideEffectOptions extends StObject
 @JSImport("tsutils/util/util", "SideEffectOptions")
 @js.native
-object SideEffectOptions extends js.Object {
-  @js.native
-  sealed trait Constructor extends SideEffectOptions
-  
-  @js.native
-  sealed trait JsxElement extends SideEffectOptions
-  
-  @js.native
-  sealed trait None extends SideEffectOptions
-  
-  @js.native
-  sealed trait TaggedTemplate extends SideEffectOptions
+object SideEffectOptions extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SideEffectOptions with Double] = js.native
-  /* 2 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  def apply(value: Double): js.UndefOr[SideEffectOptions & Double] = js.native
   
-  /* 4 */ @js.native
-  object JsxElement extends TopLevel[JsxElement with Double]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with SideEffectOptions
+  /* 2 */ val Constructor: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.Constructor & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait JsxElement
+    extends StObject
+       with SideEffectOptions
+  /* 4 */ val JsxElement: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.JsxElement & Double = js.native
   
-  /* 1 */ @js.native
-  object TaggedTemplate extends TopLevel[TaggedTemplate with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with SideEffectOptions
+  /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.None & Double = js.native
   
+  @js.native
+  sealed trait TaggedTemplate
+    extends StObject
+       with SideEffectOptions
+  /* 1 */ val TaggedTemplate: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate & Double = js.native
 }
-

@@ -1,118 +1,227 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseSchemaObject extends js.Object {
+trait BaseSchemaObject extends StObject {
+  
+  var default: js.UndefOr[Any] = js.undefined
+  
   var additionalProperties: js.UndefOr[Boolean | ReferenceObject | SchemaObject] = js.undefined
+  
   var allOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
+  
   var anyOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
+  
   var deprecated: js.UndefOr[Boolean] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var discriminator: js.UndefOr[DiscriminatorObject] = js.undefined
-  var enum: js.UndefOr[js.Array[_]] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
+  
+  var `enum`: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var example: js.UndefOr[Any] = js.undefined
+  
   var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
+  
   var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
+  
   var externalDocs: js.UndefOr[ExternalDocumentationObject] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var maxItems: js.UndefOr[Double] = js.undefined
+  
   var maxLength: js.UndefOr[Double] = js.undefined
+  
   var maxProperties: js.UndefOr[Double] = js.undefined
+  
   var maximum: js.UndefOr[Double] = js.undefined
+  
   var minItems: js.UndefOr[Double] = js.undefined
+  
   var minLength: js.UndefOr[Double] = js.undefined
+  
   var minProperties: js.UndefOr[Double] = js.undefined
+  
   var minimum: js.UndefOr[Double] = js.undefined
+  
   var multipleOf: js.UndefOr[Double] = js.undefined
+  
   var not: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
+  
   var nullable: js.UndefOr[Boolean] = js.undefined
+  
   var oneOf: js.UndefOr[js.Array[ReferenceObject | SchemaObject]] = js.undefined
+  
   var pattern: js.UndefOr[String] = js.undefined
+  
   var properties: js.UndefOr[StringDictionary[ReferenceObject | SchemaObject]] = js.undefined
+  
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
   var required: js.UndefOr[js.Array[String]] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var uniqueItems: js.UndefOr[Boolean] = js.undefined
+  
   var writeOnly: js.UndefOr[Boolean] = js.undefined
+  
   var xml: js.UndefOr[XMLObject] = js.undefined
 }
-
 object BaseSchemaObject {
-  @scala.inline
-  def apply(
-    additionalProperties: Boolean | ReferenceObject | SchemaObject = null,
-    allOf: js.Array[ReferenceObject | SchemaObject] = null,
-    anyOf: js.Array[ReferenceObject | SchemaObject] = null,
-    default: js.Any = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    discriminator: DiscriminatorObject = null,
-    enum: js.Array[_] = null,
-    example: js.Any = null,
-    exclusiveMaximum: js.UndefOr[Boolean] = js.undefined,
-    exclusiveMinimum: js.UndefOr[Boolean] = js.undefined,
-    externalDocs: ExternalDocumentationObject = null,
-    format: String = null,
-    maxItems: Int | Double = null,
-    maxLength: Int | Double = null,
-    maxProperties: Int | Double = null,
-    maximum: Int | Double = null,
-    minItems: Int | Double = null,
-    minLength: Int | Double = null,
-    minProperties: Int | Double = null,
-    minimum: Int | Double = null,
-    multipleOf: Int | Double = null,
-    not: ReferenceObject | SchemaObject = null,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    oneOf: js.Array[ReferenceObject | SchemaObject] = null,
-    pattern: String = null,
-    properties: StringDictionary[ReferenceObject | SchemaObject] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    required: js.Array[String] = null,
-    title: String = null,
-    uniqueItems: js.UndefOr[Boolean] = js.undefined,
-    writeOnly: js.UndefOr[Boolean] = js.undefined,
-    xml: XMLObject = null
-  ): BaseSchemaObject = {
+  
+  inline def apply(): BaseSchemaObject = {
     val __obj = js.Dynamic.literal()
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (allOf != null) __obj.updateDynamic("allOf")(allOf.asInstanceOf[js.Any])
-    if (anyOf != null) __obj.updateDynamic("anyOf")(anyOf.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (discriminator != null) __obj.updateDynamic("discriminator")(discriminator.asInstanceOf[js.Any])
-    if (enum != null) __obj.updateDynamic("enum")(enum.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMaximum)) __obj.updateDynamic("exclusiveMaximum")(exclusiveMaximum.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclusiveMinimum)) __obj.updateDynamic("exclusiveMinimum")(exclusiveMinimum.asInstanceOf[js.Any])
-    if (externalDocs != null) __obj.updateDynamic("externalDocs")(externalDocs.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (maxItems != null) __obj.updateDynamic("maxItems")(maxItems.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxProperties != null) __obj.updateDynamic("maxProperties")(maxProperties.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minItems != null) __obj.updateDynamic("minItems")(minItems.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minProperties != null) __obj.updateDynamic("minProperties")(minProperties.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (multipleOf != null) __obj.updateDynamic("multipleOf")(multipleOf.asInstanceOf[js.Any])
-    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (required != null) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueItems)) __obj.updateDynamic("uniqueItems")(uniqueItems.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeOnly)) __obj.updateDynamic("writeOnly")(writeOnly.asInstanceOf[js.Any])
-    if (xml != null) __obj.updateDynamic("xml")(xml.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSchemaObject]
   }
+  
+  extension [Self <: BaseSchemaObject](x: Self) {
+    
+    inline def setAdditionalProperties(value: Boolean | ReferenceObject | SchemaObject): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    
+    inline def setAllOf(value: js.Array[ReferenceObject | SchemaObject]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
+    
+    inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
+    
+    inline def setAllOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "allOf", js.Array(value*))
+    
+    inline def setAnyOf(value: js.Array[ReferenceObject | SchemaObject]): Self = StObject.set(x, "anyOf", value.asInstanceOf[js.Any])
+    
+    inline def setAnyOfUndefined: Self = StObject.set(x, "anyOf", js.undefined)
+    
+    inline def setAnyOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "anyOf", js.Array(value*))
+    
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDiscriminator(value: DiscriminatorObject): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
+    
+    inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
+    
+    inline def setEnum(value: js.Array[Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    
+    inline def setEnumVarargs(value: Any*): Self = StObject.set(x, "enum", js.Array(value*))
+    
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+    
+    inline def setExclusiveMaximum(value: Boolean): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveMaximumUndefined: Self = StObject.set(x, "exclusiveMaximum", js.undefined)
+    
+    inline def setExclusiveMinimum(value: Boolean): Self = StObject.set(x, "exclusiveMinimum", value.asInstanceOf[js.Any])
+    
+    inline def setExclusiveMinimumUndefined: Self = StObject.set(x, "exclusiveMinimum", js.undefined)
+    
+    inline def setExternalDocs(value: ExternalDocumentationObject): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
+    
+    inline def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setMaxItems(value: Double): Self = StObject.set(x, "maxItems", value.asInstanceOf[js.Any])
+    
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "maxItems", js.undefined)
+    
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxProperties(value: Double): Self = StObject.set(x, "maxProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPropertiesUndefined: Self = StObject.set(x, "maxProperties", js.undefined)
+    
+    inline def setMaximum(value: Double): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    
+    inline def setMinItems(value: Double): Self = StObject.set(x, "minItems", value.asInstanceOf[js.Any])
+    
+    inline def setMinItemsUndefined: Self = StObject.set(x, "minItems", js.undefined)
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setMinProperties(value: Double): Self = StObject.set(x, "minProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMinPropertiesUndefined: Self = StObject.set(x, "minProperties", js.undefined)
+    
+    inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    
+    inline def setMultipleOf(value: Double): Self = StObject.set(x, "multipleOf", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleOfUndefined: Self = StObject.set(x, "multipleOf", js.undefined)
+    
+    inline def setNot(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+    
+    inline def setNotUndefined: Self = StObject.set(x, "not", js.undefined)
+    
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    
+    inline def setOneOf(value: js.Array[ReferenceObject | SchemaObject]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
+    
+    inline def setOneOfUndefined: Self = StObject.set(x, "oneOf", js.undefined)
+    
+    inline def setOneOfVarargs(value: (ReferenceObject | SchemaObject)*): Self = StObject.set(x, "oneOf", js.Array(value*))
+    
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setProperties(value: StringDictionary[ReferenceObject | SchemaObject]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setUniqueItems(value: Boolean): Self = StObject.set(x, "uniqueItems", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueItemsUndefined: Self = StObject.set(x, "uniqueItems", js.undefined)
+    
+    inline def setWriteOnly(value: Boolean): Self = StObject.set(x, "writeOnly", value.asInstanceOf[js.Any])
+    
+    inline def setWriteOnlyUndefined: Self = StObject.set(x, "writeOnly", js.undefined)
+    
+    inline def setXml(value: XMLObject): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    
+    inline def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
+  }
 }
-

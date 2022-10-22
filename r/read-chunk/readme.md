@@ -1,7 +1,7 @@
 
 # Scala.js typings for read-chunk
 
-Typings are for version 3.2.0
+Typings are for version 4.0.3
 
 ## Library description:
 Read a chunk from a file
@@ -10,10 +10,10 @@ Read a chunk from a file
 | ------------------ | :-------------: |
 | Full name          | read-chunk |
 | Keywords           | read, file, readfile, fs, chunk, slice, part, head, tail, buffer, fd, open |
-| # releases         | 4 |
-| # dependents       | 218 |
-| # downloads        | 43099429 |
-| # stars            | 9 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3444130.0 |
+| # stars            | 103.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/read-chunk#readme)

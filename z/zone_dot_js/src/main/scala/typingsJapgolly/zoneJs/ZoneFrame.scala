@@ -1,23 +1,31 @@
 package typingsJapgolly.zoneJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * _ZoneFrame represents zone stack frame information
   */
-trait ZoneFrame extends js.Object {
+trait ZoneFrame extends StObject {
+  
   var parent: ZoneFrame | Null
+  
   var zone: Zone
 }
-
 object ZoneFrame {
-  @scala.inline
-  def apply(zone: Zone, parent: ZoneFrame = null): ZoneFrame = {
-    val __obj = js.Dynamic.literal(zone = zone.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+  
+  inline def apply(zone: Zone): ZoneFrame = {
+    val __obj = js.Dynamic.literal(zone = zone.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[ZoneFrame]
   }
+  
+  extension [Self <: ZoneFrame](x: Self) {
+    
+    inline def setParent(value: ZoneFrame): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
+    
+    inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+  }
 }
-

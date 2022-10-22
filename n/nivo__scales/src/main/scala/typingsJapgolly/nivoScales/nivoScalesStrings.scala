@@ -1,69 +1,196 @@
 package typingsJapgolly.nivoScales
 
+import typingsJapgolly.nivoScales.distTypesTimeHelpersMod.TIME_PRECISION
+import typingsJapgolly.nivoScales.distTypesTypesMod.AnyScale
+import typingsJapgolly.nivoScales.distTypesTypesMod.Scale
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleAxis
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleSpec
+import typingsJapgolly.nivoScales.distTypesTypesMod.ScaleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoScalesStrings {
-  @js.native
-  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait band
+    extends StObject
+       with ScaleType
+  inline def band: band = "band".asInstanceOf[band]
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait base
+    extends StObject
+       with ScaleSpec
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait clamp
+    extends StObject
+       with ScaleSpec
+  inline def clamp: clamp = "clamp".asInstanceOf[clamp]
   
   @js.native
-  sealed trait millisecond extends js.Object
+  sealed trait constant
+    extends StObject
+       with ScaleSpec
+  inline def constant: constant = "constant".asInstanceOf[constant]
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait day
+    extends StObject
+       with TIME_PRECISION
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait format
+    extends StObject
+       with ScaleSpec
+  inline def format: format = "format".asInstanceOf[format]
   
   @js.native
-  sealed trait point extends js.Object
+  sealed trait hour
+    extends StObject
+       with TIME_PRECISION
+  inline def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait linear
+    extends StObject
+       with ScaleType
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait log
+    extends StObject
+       with ScaleType
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait max
+    extends StObject
+       with ScaleSpec
+  inline def max: max = "max".asInstanceOf[max]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def hour: hour = "hour".asInstanceOf[hour]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
-  @scala.inline
-  def minute: minute = "minute".asInstanceOf[minute]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def point: point = "point".asInstanceOf[point]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  @js.native
+  sealed trait millisecond
+    extends StObject
+       with TIME_PRECISION
+  inline def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
+  
+  @js.native
+  sealed trait min
+    extends StObject
+       with ScaleSpec
+  inline def min: min = "min".asInstanceOf[min]
+  
+  @js.native
+  sealed trait minute
+    extends StObject
+       with TIME_PRECISION
+  inline def minute: minute = "minute".asInstanceOf[minute]
+  
+  @js.native
+  sealed trait month
+    extends StObject
+       with TIME_PRECISION
+  inline def month: month = "month".asInstanceOf[month]
+  
+  @js.native
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
+  
+  @js.native
+  sealed trait nice
+    extends StObject
+       with ScaleSpec
+  inline def nice: nice = "nice".asInstanceOf[nice]
+  
+  @js.native
+  sealed trait point
+    extends StObject
+       with ScaleType
+  inline def point: point = "point".asInstanceOf[point]
+  
+  @js.native
+  sealed trait precision
+    extends StObject
+       with ScaleSpec
+  inline def precision: precision = "precision".asInstanceOf[precision]
+  
+  @js.native
+  sealed trait reverse
+    extends StObject
+       with ScaleSpec
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
+  
+  @js.native
+  sealed trait round
+    extends StObject
+       with ScaleSpec
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait second
+    extends StObject
+       with TIME_PRECISION
+  inline def second: second = "second".asInstanceOf[second]
+  
+  @js.native
+  sealed trait stacked
+    extends StObject
+       with AnyScale
+       with Scale[Any, Any]
+       with ScaleSpec
+  inline def stacked: stacked = "stacked".asInstanceOf[stacked]
+  
+  @js.native
+  sealed trait symlog
+    extends StObject
+       with ScaleType
+  inline def symlog: symlog = "symlog".asInstanceOf[symlog]
+  
+  @js.native
+  sealed trait time
+    extends StObject
+       with ScaleType
+  inline def time: time = "time".asInstanceOf[time]
+  
+  @js.native
+  sealed trait `type`
+    extends StObject
+       with AnyScale
+       with Scale[Any, Any]
+       with ScaleSpec
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
+  
+  @js.native
+  sealed trait useUTC
+    extends StObject
+       with AnyScale
+       with Scale[Any, Any]
+       with ScaleSpec
+  inline def useUTC: useUTC = "useUTC".asInstanceOf[useUTC]
+  
+  @js.native
+  sealed trait x
+    extends StObject
+       with ScaleAxis
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait y
+    extends StObject
+       with ScaleAxis
+  inline def y: y = "y".asInstanceOf[y]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with TIME_PRECISION
+  inline def year: year = "year".asInstanceOf[year]
 }
-

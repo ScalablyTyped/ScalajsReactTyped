@@ -1,10 +1,7 @@
 package typingsJapgolly.reactNativePhoneInput.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentProps
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.reactNativePhoneInput.mod.CountriesListItem
@@ -12,80 +9,84 @@ import typingsJapgolly.reactNativePhoneInput.mod.ReactNativePhoneInputProps
 import typingsJapgolly.reactNativePhoneInput.mod.TextStyle
 import typingsJapgolly.reactNativePhoneInput.mod.ViewStyle
 import typingsJapgolly.reactNativePhoneInput.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativePhoneInput {
-  def apply[TextComponentType /* <: ComponentType[js.Object] */](
-    allowZeroAfterCountryCode: js.UndefOr[Boolean] = js.undefined,
-    buttonTextStyle: TextStyle = null,
-    cancelText: String = null,
-    confirmText: String = null,
-    countriesList: js.Array[CountriesListItem] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    flagStyle: ViewStyle = null,
-    initialCountry: String = null,
-    offset: Int | Double = null,
-    onChangePhoneNumber: /* number */ Double => Callback = null,
-    onPressCancel: js.UndefOr[Callback] = js.undefined,
-    onPressConfirm: js.UndefOr[Callback] = js.undefined,
-    onPressFlag: js.UndefOr[Callback] = js.undefined,
-    onSelectCountry: /* iso2 */ String => Callback = null,
-    pickerBackgroundColor: String = null,
-    pickerButtonColor: String = null,
-    pickerItemStyle: ViewStyle = null,
-    style: ViewStyle = null,
-    textComponent: TextComponentType = null,
-    textProps: ComponentProps[TextComponentType] = null,
-    textStyle: TextStyle = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ReactNativePhoneInputProps[TextComponentType], 
-    default[TextComponentType], 
-    Unit, 
-    ReactNativePhoneInputProps[TextComponentType]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allowZeroAfterCountryCode)) __obj.updateDynamic("allowZeroAfterCountryCode")(allowZeroAfterCountryCode.asInstanceOf[js.Any])
-    if (buttonTextStyle != null) __obj.updateDynamic("buttonTextStyle")(buttonTextStyle.asInstanceOf[js.Any])
-    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
-    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText.asInstanceOf[js.Any])
-    if (countriesList != null) __obj.updateDynamic("countriesList")(countriesList.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (flagStyle != null) __obj.updateDynamic("flagStyle")(flagStyle.asInstanceOf[js.Any])
-    if (initialCountry != null) __obj.updateDynamic("initialCountry")(initialCountry.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onChangePhoneNumber != null) __obj.updateDynamic("onChangePhoneNumber")(js.Any.fromFunction1((t0: /* number */ scala.Double) => onChangePhoneNumber(t0).runNow()))
-    onPressCancel.foreach(p => __obj.updateDynamic("onPressCancel")(p.toJsFn))
-    onPressConfirm.foreach(p => __obj.updateDynamic("onPressConfirm")(p.toJsFn))
-    onPressFlag.foreach(p => __obj.updateDynamic("onPressFlag")(p.toJsFn))
-    if (onSelectCountry != null) __obj.updateDynamic("onSelectCountry")(js.Any.fromFunction1((t0: /* iso2 */ java.lang.String) => onSelectCountry(t0).runNow()))
-    if (pickerBackgroundColor != null) __obj.updateDynamic("pickerBackgroundColor")(pickerBackgroundColor.asInstanceOf[js.Any])
-    if (pickerButtonColor != null) __obj.updateDynamic("pickerButtonColor")(pickerButtonColor.asInstanceOf[js.Any])
-    if (pickerItemStyle != null) __obj.updateDynamic("pickerItemStyle")(pickerItemStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textComponent != null) __obj.updateDynamic("textComponent")(textComponent.asInstanceOf[js.Any])
-    if (textProps != null) __obj.updateDynamic("textProps")(textProps.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativePhoneInput.mod.ReactNativePhoneInputProps[TextComponentType], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativePhoneInput.mod.default[TextComponentType]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativePhoneInput.mod.ReactNativePhoneInputProps[TextComponentType]])(children: _*)
+  inline def apply[TextComponentType /* <: ComponentType[js.Object] */](): Builder[TextComponentType] = {
+    val __props = js.Dynamic.literal()
+    new Builder[TextComponentType](js.Array(this.component, __props.asInstanceOf[ReactNativePhoneInputProps[TextComponentType]]))
   }
+  
   @JSImport("react-native-phone-input", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[TextComponentType /* <: ComponentType[js.Object] */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default[TextComponentType]] {
+    
+    inline def allowZeroAfterCountryCode(value: Boolean): this.type = set("allowZeroAfterCountryCode", value.asInstanceOf[js.Any])
+    
+    inline def buttonTextStyle(value: TextStyle): this.type = set("buttonTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def buttonTextStyleNull: this.type = set("buttonTextStyle", null)
+    
+    inline def cancelText(value: String): this.type = set("cancelText", value.asInstanceOf[js.Any])
+    
+    inline def confirmText(value: String): this.type = set("confirmText", value.asInstanceOf[js.Any])
+    
+    inline def countriesList(value: js.Array[CountriesListItem]): this.type = set("countriesList", value.asInstanceOf[js.Any])
+    
+    inline def countriesListVarargs(value: CountriesListItem*): this.type = set("countriesList", js.Array(value*))
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def flagStyle(value: ViewStyle): this.type = set("flagStyle", value.asInstanceOf[js.Any])
+    
+    inline def flagStyleNull: this.type = set("flagStyle", null)
+    
+    inline def initialCountry(value: String): this.type = set("initialCountry", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Double): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onChangePhoneNumber(value: /* number */ String => Callback): this.type = set("onChangePhoneNumber", js.Any.fromFunction1((t0: /* number */ String) => value(t0).runNow()))
+    
+    inline def onPressCancel(value: Callback): this.type = set("onPressCancel", value.toJsFn)
+    
+    inline def onPressConfirm(value: Callback): this.type = set("onPressConfirm", value.toJsFn)
+    
+    inline def onPressFlag(value: Callback): this.type = set("onPressFlag", value.toJsFn)
+    
+    inline def onSelectCountry(value: /* iso2 */ String => Callback): this.type = set("onSelectCountry", js.Any.fromFunction1((t0: /* iso2 */ String) => value(t0).runNow()))
+    
+    inline def pickerBackgroundColor(value: String): this.type = set("pickerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def pickerButtonColor(value: String): this.type = set("pickerButtonColor", value.asInstanceOf[js.Any])
+    
+    inline def pickerItemStyle(value: ViewStyle): this.type = set("pickerItemStyle", value.asInstanceOf[js.Any])
+    
+    inline def pickerItemStyleNull: this.type = set("pickerItemStyle", null)
+    
+    inline def style(value: ViewStyle): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def textComponent(value: TextComponentType): this.type = set("textComponent", value.asInstanceOf[js.Any])
+    
+    inline def textProps(value: ComponentProps[TextComponentType]): this.type = set("textProps", value.asInstanceOf[js.Any])
+    
+    inline def textStyle(value: TextStyle): this.type = set("textStyle", value.asInstanceOf[js.Any])
+    
+    inline def textStyleNull: this.type = set("textStyle", null)
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[TextComponentType /* <: ComponentType[js.Object] */](companion: ReactNativePhoneInput.type): Builder[TextComponentType] = new Builder[TextComponentType](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[TextComponentType /* <: ComponentType[js.Object] */](p: ReactNativePhoneInputProps[TextComponentType]): Builder[TextComponentType] = new Builder[TextComponentType](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

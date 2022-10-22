@@ -1,12 +1,11 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.configMod.APIVersions
-import typingsJapgolly.awsSdk.configMod.ConfigurationOptions
-import typingsJapgolly.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
-import typingsJapgolly.awsSdk.coreMod.Config
+import typingsJapgolly.awsSdk.libConfigMod.APIVersions
+import typingsJapgolly.awsSdk.libConfigServicePlaceholdersMod.ConfigurationServicePlaceholders
+import typingsJapgolly.awsSdk.libCoreMod.Config
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Config")
 @js.native
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation._
   * Creates a new configuration object.
   * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
   */
-class Config_ () extends Config {
-  def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+open class Config_ () extends Config {
+  def this(options: typingsJapgolly.awsSdk.libConfigBaseMod.ConfigurationOptions & ConfigurationServicePlaceholders & APIVersions) = this()
 }
-

@@ -1,31 +1,26 @@
 package typingsJapgolly.keycloakJs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeycloakPromise[TSuccess, TError] extends js.Object {
+@js.native
+trait KeycloakPromise[TSuccess, TError]
+  extends StObject
+     with Promise[TSuccess] {
+  
   /**
-  		 * Function to call if the promised action throws an error.
-  		 */
-  def error(callback: KeycloakPromiseCallback[TError]): KeycloakPromise[TSuccess, TError]
+  	 * Function to call if the promised action throws an error.
+  	 * 
+  	 * @deprecated Use `.catch()` instead.
+  	 */
+  def error(callback: KeycloakPromiseCallback[TError]): KeycloakPromise[TSuccess, TError] = js.native
+  
   /**
-  		 * Function to call if the promised action succeeds.
-  		 */
-  def success(callback: KeycloakPromiseCallback[TSuccess]): KeycloakPromise[TSuccess, TError]
+  	 * Function to call if the promised action succeeds.
+  	 * 
+  	 * @deprecated Use `.then()` instead.
+  	 */
+  def success(callback: KeycloakPromiseCallback[TSuccess]): KeycloakPromise[TSuccess, TError] = js.native
 }
-
-object KeycloakPromise {
-  @scala.inline
-  def apply[TSuccess, TError](
-    error: KeycloakPromiseCallback[TError] => CallbackTo[KeycloakPromise[TSuccess, TError]],
-    success: KeycloakPromiseCallback[TSuccess] => CallbackTo[KeycloakPromise[TSuccess, TError]]
-  ): KeycloakPromise[TSuccess, TError] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(js.Any.fromFunction1((t0: typingsJapgolly.keycloakJs.mod.KeycloakPromiseCallback[TError]) => error(t0).runNow()))
-    __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.keycloakJs.mod.KeycloakPromiseCallback[TSuccess]) => success(t0).runNow()))
-    __obj.asInstanceOf[KeycloakPromise[TSuccess, TError]]
-  }
-}
-

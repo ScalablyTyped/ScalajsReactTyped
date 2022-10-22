@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-image-gallery
 
-Typings are for version 0.9
+Typings are for version 1.0
 
 ## Library description:
 React carousel image gallery component with thumbnail and mobile support
@@ -10,10 +10,10 @@ React carousel image gallery component with thumbnail and mobile support
 | ------------------ | :-------------: |
 | Full name          | react-image-gallery |
 | Keywords           | react, carousel, react-component, react-carousel, react-slideshow, react-gallery, react carousel, react slideshow, react gallery, image gallery, image slider, slideshow, gallery, slider |
-| # releases         | 19 |
-| # dependents       | 31 |
-| # downloads        | 1601325 |
-| # stars            | 12 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 622349.3333333334 |
+| # stars            | 3215.0 |
 
 ## Links
 - [Homepage](https://github.com/xiaolin/react-image-gallery)

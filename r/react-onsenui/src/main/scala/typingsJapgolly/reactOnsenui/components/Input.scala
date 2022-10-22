@@ -1,85 +1,74 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactFocusEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameChecked
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.InputHTMLAttributesminmax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Input {
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    defaultValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    float: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    inputId: String = null,
-    max: Double | String = null,
-    min: Double | String = null,
-    modifier: String = null,
-    name: String = null,
-    onBlur: /* e */ ReactFocusEventFrom[Element] => Callback = null,
-    onChange: /* e */ ReactEventFrom[Element] => Callback = null,
-    onFocus: /* e */ ReactFocusEventFrom[Element] => Callback = null,
-    placeholder: String = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    step: Double | String = null,
-    style: CSSProperties = null,
-    `type`: String = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameChecked, 
-    typingsJapgolly.reactOnsenui.mod.Input, 
-    Unit, 
-    HTMLAttributesidclassNameChecked
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputId != null) __obj.updateDynamic("inputId")(inputId.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (modifier != null) __obj.updateDynamic("modifier")(modifier.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: /* e */ japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameChecked, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.Input](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameChecked])(children: _*)
-  }
   @JSImport("react-onsenui", "Input")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.Input] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def float(value: Boolean): this.type = set("float", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inputId(value: String): this.type = set("inputId", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double | String): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double | String): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def modifier(value: String): this.type = set("modifier", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* e */ ReactFocusEventFrom[Any & Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onChange(value: /* e */ ReactEventFrom[Any & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: /* e */ ReactFocusEventFrom[Any & Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def onInput(value: /* e */ ReactEventFrom[Any & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: /* e */ ReactEventFrom[Any & Element]) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def step(value: Double | String): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Input.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & InputHTMLAttributesminmax): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

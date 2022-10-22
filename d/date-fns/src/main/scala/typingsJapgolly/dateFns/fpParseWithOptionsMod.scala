@@ -1,18 +1,22 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.dateFns.anon.LocaleUseAdditionalDayOfYearTokens
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/fp/parseWithOptions", JSImport.Namespace)
-@js.native
-object fpParseWithOptionsMod extends js.Object {
-  @js.native
-  object default extends TopLevel[
-          CurriedFn4[AnonLocaleUseAdditionalDayOfYearTokens, Date | Double, String, String, Date]
-        ]
+object fpParseWithOptionsMod {
   
+  object default extends Shortcut {
+    
+    @JSImport("date-fns/fp/parseWithOptions", JSImport.Default)
+    @js.native
+    val ^ : CurriedFn4[LocaleUseAdditionalDayOfYearTokens, js.Date | Double, String, String, js.Date] = js.native
+    
+    type _To = CurriedFn4[LocaleUseAdditionalDayOfYearTokens, js.Date | Double, String, String, js.Date]
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: CurriedFn4[LocaleUseAdditionalDayOfYearTokens, js.Date | Double, String, String, js.Date] = ^
+  }
 }
-

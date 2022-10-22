@@ -1,23 +1,25 @@
 package typingsJapgolly.akamaiEdgeworkers.EW
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadsVariables extends js.Object {
+trait ReadsVariables extends StObject {
+  
   /**
-    * Get's the value of a request variable
+    * Gets the value of a metadata variable
     */
   def getVariable(name: String): js.UndefOr[String]
 }
-
 object ReadsVariables {
-  @scala.inline
-  def apply(getVariable: String => CallbackTo[js.UndefOr[String]]): ReadsVariables = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getVariable")(js.Any.fromFunction1((t0: java.lang.String) => getVariable(t0).runNow()))
+  
+  inline def apply(getVariable: String => js.UndefOr[String]): ReadsVariables = {
+    val __obj = js.Dynamic.literal(getVariable = js.Any.fromFunction1(getVariable))
     __obj.asInstanceOf[ReadsVariables]
   }
+  
+  extension [Self <: ReadsVariables](x: Self) {
+    
+    inline def setGetVariable(value: String => js.UndefOr[String]): Self = StObject.set(x, "getVariable", js.Any.fromFunction1(value))
+  }
 }
-

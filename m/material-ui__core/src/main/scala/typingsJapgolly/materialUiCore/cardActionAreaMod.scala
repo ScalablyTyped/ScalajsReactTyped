@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.cardActionAreaCardActionAreaMod.CardActionAreaProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.cardActionAreaCardActionAreaMod.CardActionAreaTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/CardActionArea", JSImport.Namespace)
-@js.native
-object cardActionAreaMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[CardActionAreaProps, ComponentState, js.Any] {
-    def this(props: CardActionAreaProps) = this()
-    def this(props: CardActionAreaProps, context: js.Any) = this()
-  }
+object cardActionAreaMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Cards](https://mui.com/components/cards/)
+    *
+    * API:
+    *
+    * - [CardActionArea API](https://mui.com/api/card-action-area/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/CardActionArea", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[CardActionAreaProps]]
+  val default: ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]] = js.native
   
+  type _To = ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]]
+  
+  /* This means you don't have to write `default`, but can instead just say `cardActionAreaMod.foo` */
+  override def _to: ExtendButtonBase[CardActionAreaTypeMap[js.Object, button]] = default
 }
-

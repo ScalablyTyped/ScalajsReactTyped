@@ -1,54 +1,52 @@
 package typingsJapgolly.htmlValidator.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValidationResultsOutputFormats extends js.Object
-
+sealed trait ValidationResultsOutputFormats extends StObject
 // Could be used to avoid string literals
 @JSImport("html-validator", "ValidationResultsOutputFormats")
 @js.native
-object ValidationResultsOutputFormats extends js.Object {
-  @js.native
-  sealed trait gnu extends ValidationResultsOutputFormats
-  
-  @js.native
-  sealed trait html extends ValidationResultsOutputFormats
-  
-  @js.native
-  sealed trait json extends ValidationResultsOutputFormats
-  
-  @js.native
-  sealed trait text extends ValidationResultsOutputFormats
-  
-  @js.native
-  sealed trait xhtml extends ValidationResultsOutputFormats
-  
-  @js.native
-  sealed trait xml extends ValidationResultsOutputFormats
+object ValidationResultsOutputFormats extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[ValidationResultsOutputFormats with String] = js.native
-  /* "gnu" */ @js.native
-  object gnu extends TopLevel[gnu with String]
+  def apply(value: String): js.UndefOr[ValidationResultsOutputFormats & String] = js.native
   
-  /* "html" */ @js.native
-  object html extends TopLevel[html with String]
+  @js.native
+  sealed trait gnu
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "gnu" */ val gnu: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.gnu & String = js.native
   
-  /* "json" */ @js.native
-  object json extends TopLevel[json with String]
+  @js.native
+  sealed trait html
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "html" */ val html: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.html & String = js.native
   
-  /* "text" */ @js.native
-  object text extends TopLevel[text with String]
+  @js.native
+  sealed trait json
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "json" */ val json: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.json & String = js.native
   
-  /* "xhtml" */ @js.native
-  object xhtml extends TopLevel[xhtml with String]
+  @js.native
+  sealed trait text
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "text" */ val text: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.text & String = js.native
   
-  /* "xml" */ @js.native
-  object xml extends TopLevel[xml with String]
+  @js.native
+  sealed trait xhtml
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "xhtml" */ val xhtml: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.xhtml & String = js.native
   
+  @js.native
+  sealed trait xml
+    extends StObject
+       with ValidationResultsOutputFormats
+  /* "xml" */ val xml: typingsJapgolly.htmlValidator.mod.ValidationResultsOutputFormats.xml & String = js.native
 }
-

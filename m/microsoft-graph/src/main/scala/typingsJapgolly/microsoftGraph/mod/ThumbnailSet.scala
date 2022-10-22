@@ -1,36 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThumbnailSet extends Entity {
+trait ThumbnailSet
+  extends StObject
+     with Entity {
+  
   // A 1920x1920 scaled thumbnail.
-  var large: js.UndefOr[Thumbnail] = js.undefined
+  var large: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
+  
   // A 176x176 scaled thumbnail.
-  var medium: js.UndefOr[Thumbnail] = js.undefined
+  var medium: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
+  
   // A 48x48 cropped thumbnail.
-  var small: js.UndefOr[Thumbnail] = js.undefined
+  var small: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
+  
   // A custom thumbnail image or the original image used to generate other thumbnails.
-  var source: js.UndefOr[Thumbnail] = js.undefined
+  var source: js.UndefOr[NullableOption[Thumbnail]] = js.undefined
 }
-
 object ThumbnailSet {
-  @scala.inline
-  def apply(
-    id: String = null,
-    large: Thumbnail = null,
-    medium: Thumbnail = null,
-    small: Thumbnail = null,
-    source: Thumbnail = null
-  ): ThumbnailSet = {
+  
+  inline def apply(): ThumbnailSet = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
-    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
-    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailSet]
   }
+  
+  extension [Self <: ThumbnailSet](x: Self) {
+    
+    inline def setLarge(value: NullableOption[Thumbnail]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
+    
+    inline def setLargeNull: Self = StObject.set(x, "large", null)
+    
+    inline def setLargeUndefined: Self = StObject.set(x, "large", js.undefined)
+    
+    inline def setMedium(value: NullableOption[Thumbnail]): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    
+    inline def setMediumNull: Self = StObject.set(x, "medium", null)
+    
+    inline def setMediumUndefined: Self = StObject.set(x, "medium", js.undefined)
+    
+    inline def setSmall(value: NullableOption[Thumbnail]): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    
+    inline def setSmallNull: Self = StObject.set(x, "small", null)
+    
+    inline def setSmallUndefined: Self = StObject.set(x, "small", js.undefined)
+    
+    inline def setSource(value: NullableOption[Thumbnail]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

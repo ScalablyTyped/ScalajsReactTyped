@@ -1,11 +1,10 @@
 package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -24,17 +23,20 @@ import scala.scalajs.js.annotation._
   * Section navigation and search, and maintain their state for the entire application lifetime
   *
   */
-trait INavigationService extends js.Object {
+trait INavigationService extends StObject {
+  
   /**
     Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
     have to set an active tree and then sync, the new API does this in one method by using syncTreePath
     */
   def _setActiveTreeType(treeAlias: String, loadChildren: Boolean): Unit
+  
   /**
     Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
     have to set an active tree and then sync, the new API does this in one method by using syncTree
     */
   def _syncPath(path: js.Array[String], forceReload: Boolean): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#changeSection
@@ -47,8 +49,10 @@ trait INavigationService extends js.Object {
     * @param {string} sectionAlias The alias of the section
     */
   def changeSection(sectionAlias: String, force: Boolean): Unit
+  
   /** Executes a given menu action */
-  def executeMenuAction(action: js.Any, node: js.Any, section: js.Any): Unit
+  def executeMenuAction(action: Any, node: Any, section: Any): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#hideDialog
@@ -58,6 +62,7 @@ trait INavigationService extends js.Object {
     * hides the currently open dialog
     */
   def hideDialog(showMenu: Boolean): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#hideMenu
@@ -67,6 +72,7 @@ trait INavigationService extends js.Object {
     * Hides the menu by hiding the containing dom element
     */
   def hideMenu(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#hideNavigation
@@ -76,6 +82,7 @@ trait INavigationService extends js.Object {
     * hides any open navigation panes and resets the tree, actions and the currently selected node
     */
   def hideNavigation(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#hideSearch
@@ -85,7 +92,9 @@ trait INavigationService extends js.Object {
     * hides the search pane
     */
   def hideSearch(): Unit
+  
   def hideTray(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#hideTree
@@ -95,6 +104,7 @@ trait INavigationService extends js.Object {
     * Hides the tree by hiding the containing dom element
     */
   def hideTree(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#load
@@ -105,15 +115,19 @@ trait INavigationService extends js.Object {
     * @param {String} source The URL to load into the iframe
     */
   def loadLegacyIFrame(source: String): Unit
+  
   //TODO: This should return a promise
-  def reloadNode(node: js.Any): Unit
+  def reloadNode(node: Any): Unit
+  
   //TODO: This should return a promise
   def reloadSection(sectionAlias: String): Unit
+  
   /**
     Called to assign the main tree event handler - this is called by the navigation controller.
     TODO: Potentially another dev could call this which would kind of mung the whole app so potentially there's a better way.
     */
-  def setupTreeEvents(treeEventHandler: js.Any): Unit
+  def setupTreeEvents(treeEventHandler: Any): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showDialog
@@ -135,6 +149,7 @@ trait INavigationService extends js.Object {
     * @param {Object} args.action the clicked action containing `name` and `alias`
     */
   def showDialog(args: IShowDialogArgs): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showUserDialog
@@ -145,6 +160,7 @@ trait INavigationService extends js.Object {
     * template is located in views/common/dialogs/user.html
     */
   def showHelpDialog(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showMenu
@@ -156,7 +172,8 @@ trait INavigationService extends js.Object {
     *
     * @param {Event} event the click event triggering the method, passed from the DOM element
     */
-  def showMenu(event: Event_, args: js.Any*): Unit
+  def showMenu(event: Event, args: Any*): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showSearch
@@ -166,7 +183,9 @@ trait INavigationService extends js.Object {
     * shows the search pane
     */
   def showSearch(): Unit
+  
   def showTray(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showTree
@@ -179,6 +198,7 @@ trait INavigationService extends js.Object {
     * @param {Object} syncArgs Optional object of arguments for syncing the tree for the section being shown
     */
   def showTree(sectionAlias: String, syncArgs: ISyncTreeArgs): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#showUserDialog
@@ -189,6 +209,7 @@ trait INavigationService extends js.Object {
     * template is located in views/common/dialogs/user.html
     */
   def showUserDialog(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.navigationService#syncTree
@@ -207,16 +228,15 @@ trait INavigationService extends js.Object {
     * @param {Boolean} args.forceReload optional, specifies whether to force reload the node data from the server even if it already exists in the tree currently
     * @param {Boolean} args.activate optional, specifies whether to set the synced node to be the active node, this will default to true if not specified
     */
-  def syncTree(args: ISyncTreeArgs): js.Any
+  def syncTree(args: ISyncTreeArgs): Any
 }
-
 object INavigationService {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     _setActiveTreeType: (String, Boolean) => Callback,
     _syncPath: (js.Array[String], Boolean) => Callback,
     changeSection: (String, Boolean) => Callback,
-    executeMenuAction: (js.Any, js.Any, js.Any) => Callback,
+    executeMenuAction: (Any, Any, Any) => Callback,
     hideDialog: Boolean => Callback,
     hideMenu: Callback,
     hideNavigation: Callback,
@@ -224,42 +244,66 @@ object INavigationService {
     hideTray: Callback,
     hideTree: Callback,
     loadLegacyIFrame: String => Callback,
-    reloadNode: js.Any => Callback,
+    reloadNode: Any => Callback,
     reloadSection: String => Callback,
-    setupTreeEvents: js.Any => Callback,
+    setupTreeEvents: Any => Callback,
     showDialog: IShowDialogArgs => Callback,
     showHelpDialog: Callback,
-    showMenu: (Event_, /* repeated */ js.Any) => Callback,
+    showMenu: (Event, /* repeated */ Any) => Callback,
     showSearch: Callback,
     showTray: Callback,
     showTree: (String, ISyncTreeArgs) => Callback,
     showUserDialog: Callback,
-    syncTree: ISyncTreeArgs => CallbackTo[js.Any]
+    syncTree: ISyncTreeArgs => Any
   ): INavigationService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("_setActiveTreeType")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => _setActiveTreeType(t0, t1).runNow()))
-    __obj.updateDynamic("_syncPath")(js.Any.fromFunction2((t0: js.Array[java.lang.String], t1: scala.Boolean) => _syncPath(t0, t1).runNow()))
-    __obj.updateDynamic("changeSection")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => changeSection(t0, t1).runNow()))
-    __obj.updateDynamic("executeMenuAction")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: js.Any) => executeMenuAction(t0, t1, t2).runNow()))
-    __obj.updateDynamic("hideDialog")(js.Any.fromFunction1((t0: scala.Boolean) => hideDialog(t0).runNow()))
-    __obj.updateDynamic("hideMenu")(hideMenu.toJsFn)
-    __obj.updateDynamic("hideNavigation")(hideNavigation.toJsFn)
-    __obj.updateDynamic("hideSearch")(hideSearch.toJsFn)
-    __obj.updateDynamic("hideTray")(hideTray.toJsFn)
-    __obj.updateDynamic("hideTree")(hideTree.toJsFn)
-    __obj.updateDynamic("loadLegacyIFrame")(js.Any.fromFunction1((t0: java.lang.String) => loadLegacyIFrame(t0).runNow()))
-    __obj.updateDynamic("reloadNode")(js.Any.fromFunction1((t0: js.Any) => reloadNode(t0).runNow()))
-    __obj.updateDynamic("reloadSection")(js.Any.fromFunction1((t0: java.lang.String) => reloadSection(t0).runNow()))
-    __obj.updateDynamic("setupTreeEvents")(js.Any.fromFunction1((t0: js.Any) => setupTreeEvents(t0).runNow()))
-    __obj.updateDynamic("showDialog")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.IShowDialogArgs) => showDialog(t0).runNow()))
-    __obj.updateDynamic("showHelpDialog")(showHelpDialog.toJsFn)
-    __obj.updateDynamic("showMenu")(js.Any.fromFunction2((t0: typingsJapgolly.std.Event_, t1: /* repeated */ js.Any) => showMenu(t0, t1).runNow()))
-    __obj.updateDynamic("showSearch")(showSearch.toJsFn)
-    __obj.updateDynamic("showTray")(showTray.toJsFn)
-    __obj.updateDynamic("showTree")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.umbraco.umbraco.services.ISyncTreeArgs) => showTree(t0, t1).runNow()))
-    __obj.updateDynamic("showUserDialog")(showUserDialog.toJsFn)
-    __obj.updateDynamic("syncTree")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.ISyncTreeArgs) => syncTree(t0).runNow()))
+    val __obj = js.Dynamic.literal(_setActiveTreeType = js.Any.fromFunction2((t0: String, t1: Boolean) => (_setActiveTreeType(t0, t1)).runNow()), _syncPath = js.Any.fromFunction2((t0: js.Array[String], t1: Boolean) => (_syncPath(t0, t1)).runNow()), changeSection = js.Any.fromFunction2((t0: String, t1: Boolean) => (changeSection(t0, t1)).runNow()), executeMenuAction = js.Any.fromFunction3((t0: Any, t1: Any, t2: Any) => (executeMenuAction(t0, t1, t2)).runNow()), hideDialog = js.Any.fromFunction1((t0: Boolean) => hideDialog(t0).runNow()), hideMenu = hideMenu.toJsFn, hideNavigation = hideNavigation.toJsFn, hideSearch = hideSearch.toJsFn, hideTray = hideTray.toJsFn, hideTree = hideTree.toJsFn, loadLegacyIFrame = js.Any.fromFunction1((t0: String) => loadLegacyIFrame(t0).runNow()), reloadNode = js.Any.fromFunction1((t0: Any) => reloadNode(t0).runNow()), reloadSection = js.Any.fromFunction1((t0: String) => reloadSection(t0).runNow()), setupTreeEvents = js.Any.fromFunction1((t0: Any) => setupTreeEvents(t0).runNow()), showDialog = js.Any.fromFunction1((t0: IShowDialogArgs) => showDialog(t0).runNow()), showHelpDialog = showHelpDialog.toJsFn, showMenu = js.Any.fromFunction2((t0: Event, t1: /* repeated */ Any) => (showMenu(t0, t1)).runNow()), showSearch = showSearch.toJsFn, showTray = showTray.toJsFn, showTree = js.Any.fromFunction2((t0: String, t1: ISyncTreeArgs) => (showTree(t0, t1)).runNow()), showUserDialog = showUserDialog.toJsFn, syncTree = js.Any.fromFunction1(syncTree))
     __obj.asInstanceOf[INavigationService]
   }
+  
+  extension [Self <: INavigationService](x: Self) {
+    
+    inline def setChangeSection(value: (String, Boolean) => Callback): Self = StObject.set(x, "changeSection", js.Any.fromFunction2((t0: String, t1: Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def setExecuteMenuAction(value: (Any, Any, Any) => Callback): Self = StObject.set(x, "executeMenuAction", js.Any.fromFunction3((t0: Any, t1: Any, t2: Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setHideDialog(value: Boolean => Callback): Self = StObject.set(x, "hideDialog", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setHideMenu(value: Callback): Self = StObject.set(x, "hideMenu", value.toJsFn)
+    
+    inline def setHideNavigation(value: Callback): Self = StObject.set(x, "hideNavigation", value.toJsFn)
+    
+    inline def setHideSearch(value: Callback): Self = StObject.set(x, "hideSearch", value.toJsFn)
+    
+    inline def setHideTray(value: Callback): Self = StObject.set(x, "hideTray", value.toJsFn)
+    
+    inline def setHideTree(value: Callback): Self = StObject.set(x, "hideTree", value.toJsFn)
+    
+    inline def setLoadLegacyIFrame(value: String => Callback): Self = StObject.set(x, "loadLegacyIFrame", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setReloadNode(value: Any => Callback): Self = StObject.set(x, "reloadNode", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setReloadSection(value: String => Callback): Self = StObject.set(x, "reloadSection", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetupTreeEvents(value: Any => Callback): Self = StObject.set(x, "setupTreeEvents", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setShowDialog(value: IShowDialogArgs => Callback): Self = StObject.set(x, "showDialog", js.Any.fromFunction1((t0: IShowDialogArgs) => value(t0).runNow()))
+    
+    inline def setShowHelpDialog(value: Callback): Self = StObject.set(x, "showHelpDialog", value.toJsFn)
+    
+    inline def setShowMenu(value: (Event, /* repeated */ Any) => Callback): Self = StObject.set(x, "showMenu", js.Any.fromFunction2((t0: Event, t1: /* repeated */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setShowSearch(value: Callback): Self = StObject.set(x, "showSearch", value.toJsFn)
+    
+    inline def setShowTray(value: Callback): Self = StObject.set(x, "showTray", value.toJsFn)
+    
+    inline def setShowTree(value: (String, ISyncTreeArgs) => Callback): Self = StObject.set(x, "showTree", js.Any.fromFunction2((t0: String, t1: ISyncTreeArgs) => (value(t0, t1)).runNow()))
+    
+    inline def setShowUserDialog(value: Callback): Self = StObject.set(x, "showUserDialog", value.toJsFn)
+    
+    inline def setSyncTree(value: ISyncTreeArgs => Any): Self = StObject.set(x, "syncTree", js.Any.fromFunction1(value))
+    
+    inline def set_setActiveTreeType(value: (String, Boolean) => Callback): Self = StObject.set(x, "_setActiveTreeType", js.Any.fromFunction2((t0: String, t1: Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def set_syncPath(value: (js.Array[String], Boolean) => Callback): Self = StObject.set(x, "_syncPath", js.Any.fromFunction2((t0: js.Array[String], t1: Boolean) => (value(t0, t1)).runNow()))
+  }
 }
-

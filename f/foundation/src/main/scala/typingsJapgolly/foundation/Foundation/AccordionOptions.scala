@@ -1,35 +1,50 @@
 package typingsJapgolly.foundation.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/accordion.html#optional-javascript-configuration
-trait AccordionOptions extends js.Object {
+trait AccordionOptions extends StObject {
+  
   var active_class: js.UndefOr[String] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var content_class: js.UndefOr[String] = js.undefined
+  
   var multi_expand: js.UndefOr[Boolean] = js.undefined
+  
   var toggleable: js.UndefOr[Boolean] = js.undefined
 }
-
 object AccordionOptions {
-  @scala.inline
-  def apply(
-    active_class: String = null,
-    callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    content_class: String = null,
-    multi_expand: js.UndefOr[Boolean] = js.undefined,
-    toggleable: js.UndefOr[Boolean] = js.undefined
-  ): AccordionOptions = {
+  
+  inline def apply(): AccordionOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_class != null) __obj.updateDynamic("active_class")(active_class.asInstanceOf[js.Any])
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (content_class != null) __obj.updateDynamic("content_class")(content_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi_expand)) __obj.updateDynamic("multi_expand")(multi_expand.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggleable)) __obj.updateDynamic("toggleable")(toggleable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccordionOptions]
   }
+  
+  extension [Self <: AccordionOptions](x: Self) {
+    
+    inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
+    
+    inline def setActive_classUndefined: Self = StObject.set(x, "active_class", js.undefined)
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setContent_class(value: String): Self = StObject.set(x, "content_class", value.asInstanceOf[js.Any])
+    
+    inline def setContent_classUndefined: Self = StObject.set(x, "content_class", js.undefined)
+    
+    inline def setMulti_expand(value: Boolean): Self = StObject.set(x, "multi_expand", value.asInstanceOf[js.Any])
+    
+    inline def setMulti_expandUndefined: Self = StObject.set(x, "multi_expand", js.undefined)
+    
+    inline def setToggleable(value: Boolean): Self = StObject.set(x, "toggleable", value.asInstanceOf[js.Any])
+    
+    inline def setToggleableUndefined: Self = StObject.set(x, "toggleable", js.undefined)
+  }
 }
-

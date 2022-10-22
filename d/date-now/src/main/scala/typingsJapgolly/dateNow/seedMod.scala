@@ -1,12 +1,14 @@
 package typingsJapgolly.dateNow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-now/seed", JSImport.Namespace)
-@js.native
-object seedMod extends js.Object {
-  def apply(seed: Double): Double = js.native
+object seedMod {
+  
+  inline def apply(seed: Double): Double = ^.asInstanceOf[js.Dynamic].apply(seed.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @JSImport("date-now/seed", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

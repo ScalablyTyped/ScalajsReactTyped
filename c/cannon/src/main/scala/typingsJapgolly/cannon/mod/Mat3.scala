@@ -1,13 +1,13 @@
 package typingsJapgolly.cannon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "Mat3")
 @js.native
-class Mat3 ()
-  extends typingsJapgolly.cannon.CANNON.Mat3 {
+open class Mat3 ()
+  extends StObject
+     with typingsJapgolly.cannon.CANNON.Mat3 {
   def this(elements: js.Array[Double]) = this()
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheetSortColumn extends js.Object {
+trait SpreadsheetSheetSortColumn extends StObject {
+  
   var ascending: js.UndefOr[Boolean] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
 }
-
 object SpreadsheetSheetSortColumn {
-  @scala.inline
-  def apply(ascending: js.UndefOr[Boolean] = js.undefined, index: Int | Double = null): SpreadsheetSheetSortColumn = {
+  
+  inline def apply(): SpreadsheetSheetSortColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetSortColumn]
   }
+  
+  extension [Self <: SpreadsheetSheetSortColumn](x: Self) {
+    
+    inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    
+    inline def setAscendingUndefined: Self = StObject.set(x, "ascending", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+  }
 }
-

@@ -1,45 +1,76 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.contains
-import typingsJapgolly.devextreme.devextremeStrings.equals
-import typingsJapgolly.devextreme.devextremeStrings.startswith
+import typingsJapgolly.devextreme.mod.DevExpress.common.SearchMode
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTextBox.Properties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchBoxMixinOptions[T] extends js.Object {
-  /** Configures the search panel. */
-  var searchEditorOptions: js.UndefOr[dxTextBoxOptions[dxTextBox]] = js.undefined
-  /** Specifies whether the search panel is visible. */
+trait SearchBoxMixinOptions extends StObject {
+  
+  /**
+    * Configures the search panel.
+    */
+  var searchEditorOptions: js.UndefOr[Properties] = js.undefined
+  
+  /**
+    * Specifies whether the search panel is visible.
+    */
   var searchEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies a data object's field name or an expression whose value is compared to the search string. */
+  
+  /**
+    * Specifies a data object&apos;s field name or an expression whose value is compared to the search string.
+    */
   var searchExpr: js.UndefOr[String | js.Function | (js.Array[String | js.Function])] = js.undefined
-  /** Specifies a comparison operation used to search widget items. */
-  var searchMode: js.UndefOr[contains | startswith | equals] = js.undefined
-  /** Specifies a delay in milliseconds between when a user finishes typing, and the search is executed. */
+  
+  /**
+    * Specifies a comparison operation used to search UI component items.
+    */
+  var searchMode: js.UndefOr[SearchMode] = js.undefined
+  
+  /**
+    * Specifies a delay in milliseconds between when a user finishes typing, and the search is executed.
+    */
   var searchTimeout: js.UndefOr[Double] = js.undefined
-  /** Specifies the current search string. */
+  
+  /**
+    * Specifies the current search string.
+    */
   var searchValue: js.UndefOr[String] = js.undefined
 }
-
 object SearchBoxMixinOptions {
-  @scala.inline
-  def apply[T](
-    searchEditorOptions: dxTextBoxOptions[dxTextBox] = null,
-    searchEnabled: js.UndefOr[Boolean] = js.undefined,
-    searchExpr: String | js.Function | (js.Array[String | js.Function]) = null,
-    searchMode: contains | startswith | equals = null,
-    searchTimeout: Int | Double = null,
-    searchValue: String = null
-  ): SearchBoxMixinOptions[T] = {
+  
+  inline def apply(): SearchBoxMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (searchEditorOptions != null) __obj.updateDynamic("searchEditorOptions")(searchEditorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchEnabled)) __obj.updateDynamic("searchEnabled")(searchEnabled.asInstanceOf[js.Any])
-    if (searchExpr != null) __obj.updateDynamic("searchExpr")(searchExpr.asInstanceOf[js.Any])
-    if (searchMode != null) __obj.updateDynamic("searchMode")(searchMode.asInstanceOf[js.Any])
-    if (searchTimeout != null) __obj.updateDynamic("searchTimeout")(searchTimeout.asInstanceOf[js.Any])
-    if (searchValue != null) __obj.updateDynamic("searchValue")(searchValue.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SearchBoxMixinOptions[T]]
+    __obj.asInstanceOf[SearchBoxMixinOptions]
+  }
+  
+  extension [Self <: SearchBoxMixinOptions](x: Self) {
+    
+    inline def setSearchEditorOptions(value: Properties): Self = StObject.set(x, "searchEditorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSearchEditorOptionsUndefined: Self = StObject.set(x, "searchEditorOptions", js.undefined)
+    
+    inline def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSearchEnabledUndefined: Self = StObject.set(x, "searchEnabled", js.undefined)
+    
+    inline def setSearchExpr(value: String | js.Function | (js.Array[String | js.Function])): Self = StObject.set(x, "searchExpr", value.asInstanceOf[js.Any])
+    
+    inline def setSearchExprUndefined: Self = StObject.set(x, "searchExpr", js.undefined)
+    
+    inline def setSearchExprVarargs(value: (String | js.Function)*): Self = StObject.set(x, "searchExpr", js.Array(value*))
+    
+    inline def setSearchMode(value: SearchMode): Self = StObject.set(x, "searchMode", value.asInstanceOf[js.Any])
+    
+    inline def setSearchModeUndefined: Self = StObject.set(x, "searchMode", js.undefined)
+    
+    inline def setSearchTimeout(value: Double): Self = StObject.set(x, "searchTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTimeoutUndefined: Self = StObject.set(x, "searchTimeout", js.undefined)
+    
+    inline def setSearchValue(value: String): Self = StObject.set(x, "searchValue", value.asInstanceOf[js.Any])
+    
+    inline def setSearchValueUndefined: Self = StObject.set(x, "searchValue", js.undefined)
   }
 }
-

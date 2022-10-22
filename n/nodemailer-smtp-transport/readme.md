@@ -11,9 +11,9 @@ SMTP transport for Nodemailer
 | Full name          | nodemailer-smtp-transport |
 | Keywords           | SMTP, Nodemailer |
 | # releases         | 1 |
-| # dependents       | 193 |
-| # downloads        | 15849592 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 686083.6666666666 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](http://github.com/andris9/nodemailer-smtp-transport)

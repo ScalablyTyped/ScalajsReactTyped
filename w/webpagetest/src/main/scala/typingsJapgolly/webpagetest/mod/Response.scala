@@ -1,21 +1,30 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Response[R] extends js.Object {
+trait Response[R] extends StObject {
+  
   var data: R
+  
   var statusCode: Double
+  
   var statusText: String
 }
-
 object Response {
-  @scala.inline
-  def apply[R](data: R, statusCode: Double, statusText: String): Response[R] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
   
+  inline def apply[R](data: R, statusCode: Double, statusText: String): Response[R] = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[R]]
   }
+  
+  extension [Self <: Response[?], R](x: Self & Response[R]) {
+    
+    inline def setData(value: R): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+  }
 }
-

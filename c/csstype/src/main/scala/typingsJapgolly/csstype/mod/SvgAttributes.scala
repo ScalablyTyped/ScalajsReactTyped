@@ -1,8 +1,8 @@
 package typingsJapgolly.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.csstype.csstypeStrings.`[accent-height]`
@@ -19,7 +19,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[baseProfile]`
   - typingsJapgolly.csstype.csstypeStrings.`[baseline-shift]`
   - typingsJapgolly.csstype.csstypeStrings.`[bbox]`
-  - typingsJapgolly.csstype.csstypeStrings.`[begin]`
   - typingsJapgolly.csstype.csstypeStrings.`[bias]`
   - typingsJapgolly.csstype.csstypeStrings.`[by]`
   - typingsJapgolly.csstype.csstypeStrings.`[calcMode]`
@@ -32,7 +31,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[color-interpolation-filters]`
   - typingsJapgolly.csstype.csstypeStrings.`[color-interpolation]`
   - typingsJapgolly.csstype.csstypeStrings.`[color-profile]`
-  - typingsJapgolly.csstype.csstypeStrings.`[color-rendering]`
   - typingsJapgolly.csstype.csstypeStrings.`[color]`
   - typingsJapgolly.csstype.csstypeStrings.`[contentScriptType]`
   - typingsJapgolly.csstype.csstypeStrings.`[contentStyleType]`
@@ -54,7 +52,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[edgeMode]`
   - typingsJapgolly.csstype.csstypeStrings.`[elevation]`
   - typingsJapgolly.csstype.csstypeStrings.`[enable-background]`
-  - typingsJapgolly.csstype.csstypeStrings.`[externalResourcesRequired]`
   - typingsJapgolly.csstype.csstypeStrings.`[fill-opacity]`
   - typingsJapgolly.csstype.csstypeStrings.`[fill-rule]`
   - typingsJapgolly.csstype.csstypeStrings.`[fill]`
@@ -86,8 +83,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[gradientUnits]`
   - typingsJapgolly.csstype.csstypeStrings.`[graphical]`
   - typingsJapgolly.csstype.csstypeStrings.`[hanging]`
-  - typingsJapgolly.csstype.csstypeStrings.`[hatchContentUnits]`
-  - typingsJapgolly.csstype.csstypeStrings.`[hatchUnits]`
   - typingsJapgolly.csstype.csstypeStrings.`[height]`
   - typingsJapgolly.csstype.csstypeStrings.`[horiz-adv-x]`
   - typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-x]`
@@ -111,10 +106,8 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[lang]`
   - typingsJapgolly.csstype.csstypeStrings.`[lengthAdjust]`
   - typingsJapgolly.csstype.csstypeStrings.`[letter-spacing]`
-  - typingsJapgolly.csstype.csstypeStrings.`[lighterForError]`
   - typingsJapgolly.csstype.csstypeStrings.`[lighting-color]`
   - typingsJapgolly.csstype.csstypeStrings.`[limitingConeAngle]`
-  - typingsJapgolly.csstype.csstypeStrings.`[local]`
   - typingsJapgolly.csstype.csstypeStrings.`[marker-end]`
   - typingsJapgolly.csstype.csstypeStrings.`[marker-mid]`
   - typingsJapgolly.csstype.csstypeStrings.`[marker-start]`
@@ -126,7 +119,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[mask]`
   - typingsJapgolly.csstype.csstypeStrings.`[mathematical]`
   - typingsJapgolly.csstype.csstypeStrings.`[media]`
-  - typingsJapgolly.csstype.csstypeStrings.`[method]`
   - typingsJapgolly.csstype.csstypeStrings.`[mode]`
   - typingsJapgolly.csstype.csstypeStrings.`[name]`
   - typingsJapgolly.csstype.csstypeStrings.`[numOctaves]`
@@ -147,7 +139,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[patternTransform]`
   - typingsJapgolly.csstype.csstypeStrings.`[patternUnits]`
   - typingsJapgolly.csstype.csstypeStrings.`[ping]`
-  - typingsJapgolly.csstype.csstypeStrings.`[pitch]`
   - typingsJapgolly.csstype.csstypeStrings.`[pointer-events]`
   - typingsJapgolly.csstype.csstypeStrings.`[pointsAtX]`
   - typingsJapgolly.csstype.csstypeStrings.`[pointsAtY]`
@@ -160,9 +151,8 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[radius]`
   - typingsJapgolly.csstype.csstypeStrings.`[refX]`
   - typingsJapgolly.csstype.csstypeStrings.`[refY]`
-  - typingsJapgolly.csstype.csstypeStrings.`[referrerPolicy]`
+  - typingsJapgolly.csstype.csstypeStrings.`[referrerpolicy]`
   - typingsJapgolly.csstype.csstypeStrings.`[rel]`
-  - typingsJapgolly.csstype.csstypeStrings.`[rendering-intent]`
   - typingsJapgolly.csstype.csstypeStrings.`[repeatCount]`
   - typingsJapgolly.csstype.csstypeStrings.`[requiredExtensions]`
   - typingsJapgolly.csstype.csstypeStrings.`[requiredFeatures]`
@@ -212,6 +202,7 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[textLength]`
   - typingsJapgolly.csstype.csstypeStrings.`[title]`
   - typingsJapgolly.csstype.csstypeStrings.`[to]`
+  - typingsJapgolly.csstype.csstypeStrings.`[transform-origin]`
   - typingsJapgolly.csstype.csstypeStrings.`[transform]`
   - typingsJapgolly.csstype.csstypeStrings.`[type]`
   - typingsJapgolly.csstype.csstypeStrings.`[u1]`
@@ -252,502 +243,480 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.csstype.csstypeStrings.`[z]`
   - typingsJapgolly.csstype.csstypeStrings.`[zoomAndPan]`
 */
-trait SvgAttributes extends js.Object
-
+trait SvgAttributes extends StObject
 object SvgAttributes {
-  @scala.inline
-  def `[accent-height]`: typingsJapgolly.csstype.csstypeStrings.`[accent-height]` = this.cast("[accent-height]")
-  @scala.inline
-  def `[alignment-baseline]`: typingsJapgolly.csstype.csstypeStrings.`[alignment-baseline]` = this.cast("[alignment-baseline]")
-  @scala.inline
-  def `[allowReorder]`: typingsJapgolly.csstype.csstypeStrings.`[allowReorder]` = this.cast("[allowReorder]")
-  @scala.inline
-  def `[alphabetic]`: typingsJapgolly.csstype.csstypeStrings.`[alphabetic]` = this.cast("[alphabetic]")
-  @scala.inline
-  def `[animation]`: typingsJapgolly.csstype.csstypeStrings.`[animation]` = this.cast("[animation]")
-  @scala.inline
-  def `[arabic-form]`: typingsJapgolly.csstype.csstypeStrings.`[arabic-form]` = this.cast("[arabic-form]")
-  @scala.inline
-  def `[ascent]`: typingsJapgolly.csstype.csstypeStrings.`[ascent]` = this.cast("[ascent]")
-  @scala.inline
-  def `[attributeName]`: typingsJapgolly.csstype.csstypeStrings.`[attributeName]` = this.cast("[attributeName]")
-  @scala.inline
-  def `[attributeType]`: typingsJapgolly.csstype.csstypeStrings.`[attributeType]` = this.cast("[attributeType]")
-  @scala.inline
-  def `[azimuth]`: typingsJapgolly.csstype.csstypeStrings.`[azimuth]` = this.cast("[azimuth]")
-  @scala.inline
-  def `[baseFrequency]`: typingsJapgolly.csstype.csstypeStrings.`[baseFrequency]` = this.cast("[baseFrequency]")
-  @scala.inline
-  def `[baseProfile]`: typingsJapgolly.csstype.csstypeStrings.`[baseProfile]` = this.cast("[baseProfile]")
-  @scala.inline
-  def `[baseline-shift]`: typingsJapgolly.csstype.csstypeStrings.`[baseline-shift]` = this.cast("[baseline-shift]")
-  @scala.inline
-  def `[bbox]`: typingsJapgolly.csstype.csstypeStrings.`[bbox]` = this.cast("[bbox]")
-  @scala.inline
-  def `[begin]`: typingsJapgolly.csstype.csstypeStrings.`[begin]` = this.cast("[begin]")
-  @scala.inline
-  def `[bias]`: typingsJapgolly.csstype.csstypeStrings.`[bias]` = this.cast("[bias]")
-  @scala.inline
-  def `[by]`: typingsJapgolly.csstype.csstypeStrings.`[by]` = this.cast("[by]")
-  @scala.inline
-  def `[calcMode]`: typingsJapgolly.csstype.csstypeStrings.`[calcMode]` = this.cast("[calcMode]")
-  @scala.inline
-  def `[cap-height]`: typingsJapgolly.csstype.csstypeStrings.`[cap-height]` = this.cast("[cap-height]")
-  @scala.inline
-  def `[class]`: typingsJapgolly.csstype.csstypeStrings.`[class]` = this.cast("[class]")
-  @scala.inline
-  def `[clip-path]`: typingsJapgolly.csstype.csstypeStrings.`[clip-path]` = this.cast("[clip-path]")
-  @scala.inline
-  def `[clip-rule]`: typingsJapgolly.csstype.csstypeStrings.`[clip-rule]` = this.cast("[clip-rule]")
-  @scala.inline
-  def `[clipPathUnits]`: typingsJapgolly.csstype.csstypeStrings.`[clipPathUnits]` = this.cast("[clipPathUnits]")
-  @scala.inline
-  def `[clip]`: typingsJapgolly.csstype.csstypeStrings.`[clip]` = this.cast("[clip]")
-  @scala.inline
-  def `[color-interpolation-filters]`: typingsJapgolly.csstype.csstypeStrings.`[color-interpolation-filters]` = this.cast("[color-interpolation-filters]")
-  @scala.inline
-  def `[color-interpolation]`: typingsJapgolly.csstype.csstypeStrings.`[color-interpolation]` = this.cast("[color-interpolation]")
-  @scala.inline
-  def `[color-profile]`: typingsJapgolly.csstype.csstypeStrings.`[color-profile]` = this.cast("[color-profile]")
-  @scala.inline
-  def `[color-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[color-rendering]` = this.cast("[color-rendering]")
-  @scala.inline
-  def `[color]`: typingsJapgolly.csstype.csstypeStrings.`[color]` = this.cast("[color]")
-  @scala.inline
-  def `[contentScriptType]`: typingsJapgolly.csstype.csstypeStrings.`[contentScriptType]` = this.cast("[contentScriptType]")
-  @scala.inline
-  def `[contentStyleType]`: typingsJapgolly.csstype.csstypeStrings.`[contentStyleType]` = this.cast("[contentStyleType]")
-  @scala.inline
-  def `[cursor]`: typingsJapgolly.csstype.csstypeStrings.`[cursor]` = this.cast("[cursor]")
-  @scala.inline
-  def `[cx]`: typingsJapgolly.csstype.csstypeStrings.`[cx]` = this.cast("[cx]")
-  @scala.inline
-  def `[cy]`: typingsJapgolly.csstype.csstypeStrings.`[cy]` = this.cast("[cy]")
-  @scala.inline
-  def `[d]`: typingsJapgolly.csstype.csstypeStrings.`[d]` = this.cast("[d]")
-  @scala.inline
-  def `[descent]`: typingsJapgolly.csstype.csstypeStrings.`[descent]` = this.cast("[descent]")
-  @scala.inline
-  def `[diffuseConstant]`: typingsJapgolly.csstype.csstypeStrings.`[diffuseConstant]` = this.cast("[diffuseConstant]")
-  @scala.inline
-  def `[direction]`: typingsJapgolly.csstype.csstypeStrings.`[direction]` = this.cast("[direction]")
-  @scala.inline
-  def `[display]`: typingsJapgolly.csstype.csstypeStrings.`[display]` = this.cast("[display]")
-  @scala.inline
-  def `[divisor]`: typingsJapgolly.csstype.csstypeStrings.`[divisor]` = this.cast("[divisor]")
-  @scala.inline
-  def `[document]`: typingsJapgolly.csstype.csstypeStrings.`[document]` = this.cast("[document]")
-  @scala.inline
-  def `[dominant-baseline]`: typingsJapgolly.csstype.csstypeStrings.`[dominant-baseline]` = this.cast("[dominant-baseline]")
-  @scala.inline
-  def `[download]`: typingsJapgolly.csstype.csstypeStrings.`[download]` = this.cast("[download]")
-  @scala.inline
-  def `[dur]`: typingsJapgolly.csstype.csstypeStrings.`[dur]` = this.cast("[dur]")
-  @scala.inline
-  def `[dx]`: typingsJapgolly.csstype.csstypeStrings.`[dx]` = this.cast("[dx]")
-  @scala.inline
-  def `[dy]`: typingsJapgolly.csstype.csstypeStrings.`[dy]` = this.cast("[dy]")
-  @scala.inline
-  def `[edgeMode]`: typingsJapgolly.csstype.csstypeStrings.`[edgeMode]` = this.cast("[edgeMode]")
-  @scala.inline
-  def `[elevation]`: typingsJapgolly.csstype.csstypeStrings.`[elevation]` = this.cast("[elevation]")
-  @scala.inline
-  def `[enable-background]`: typingsJapgolly.csstype.csstypeStrings.`[enable-background]` = this.cast("[enable-background]")
-  @scala.inline
-  def `[externalResourcesRequired]`: typingsJapgolly.csstype.csstypeStrings.`[externalResourcesRequired]` = this.cast("[externalResourcesRequired]")
-  @scala.inline
-  def `[fill-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[fill-opacity]` = this.cast("[fill-opacity]")
-  @scala.inline
-  def `[fill-rule]`: typingsJapgolly.csstype.csstypeStrings.`[fill-rule]` = this.cast("[fill-rule]")
-  @scala.inline
-  def `[fill]`: typingsJapgolly.csstype.csstypeStrings.`[fill]` = this.cast("[fill]")
-  @scala.inline
-  def `[filterRes]`: typingsJapgolly.csstype.csstypeStrings.`[filterRes]` = this.cast("[filterRes]")
-  @scala.inline
-  def `[filterUnits]`: typingsJapgolly.csstype.csstypeStrings.`[filterUnits]` = this.cast("[filterUnits]")
-  @scala.inline
-  def `[filter]`: typingsJapgolly.csstype.csstypeStrings.`[filter]` = this.cast("[filter]")
-  @scala.inline
-  def `[flood-color]`: typingsJapgolly.csstype.csstypeStrings.`[flood-color]` = this.cast("[flood-color]")
-  @scala.inline
-  def `[flood-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[flood-opacity]` = this.cast("[flood-opacity]")
-  @scala.inline
-  def `[font-family]`: typingsJapgolly.csstype.csstypeStrings.`[font-family]` = this.cast("[font-family]")
-  @scala.inline
-  def `[font-size-adjust]`: typingsJapgolly.csstype.csstypeStrings.`[font-size-adjust]` = this.cast("[font-size-adjust]")
-  @scala.inline
-  def `[font-size]`: typingsJapgolly.csstype.csstypeStrings.`[font-size]` = this.cast("[font-size]")
-  @scala.inline
-  def `[font-stretch]`: typingsJapgolly.csstype.csstypeStrings.`[font-stretch]` = this.cast("[font-stretch]")
-  @scala.inline
-  def `[font-style]`: typingsJapgolly.csstype.csstypeStrings.`[font-style]` = this.cast("[font-style]")
-  @scala.inline
-  def `[font-variant]`: typingsJapgolly.csstype.csstypeStrings.`[font-variant]` = this.cast("[font-variant]")
-  @scala.inline
-  def `[font-weight]`: typingsJapgolly.csstype.csstypeStrings.`[font-weight]` = this.cast("[font-weight]")
-  @scala.inline
-  def `[format]`: typingsJapgolly.csstype.csstypeStrings.`[format]` = this.cast("[format]")
-  @scala.inline
-  def `[fr]`: typingsJapgolly.csstype.csstypeStrings.`[fr]` = this.cast("[fr]")
-  @scala.inline
-  def `[from]`: typingsJapgolly.csstype.csstypeStrings.`[from]` = this.cast("[from]")
-  @scala.inline
-  def `[fx]`: typingsJapgolly.csstype.csstypeStrings.`[fx]` = this.cast("[fx]")
-  @scala.inline
-  def `[fy]`: typingsJapgolly.csstype.csstypeStrings.`[fy]` = this.cast("[fy]")
-  @scala.inline
-  def `[g1]`: typingsJapgolly.csstype.csstypeStrings.`[g1]` = this.cast("[g1]")
-  @scala.inline
-  def `[g2]`: typingsJapgolly.csstype.csstypeStrings.`[g2]` = this.cast("[g2]")
-  @scala.inline
-  def `[global]`: typingsJapgolly.csstype.csstypeStrings.`[global]` = this.cast("[global]")
-  @scala.inline
-  def `[glyph-name]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-name]` = this.cast("[glyph-name]")
-  @scala.inline
-  def `[glyph-orientation-horizontal]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-horizontal]` = this.cast("[glyph-orientation-horizontal]")
-  @scala.inline
-  def `[glyph-orientation-vertical]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-vertical]` = this.cast("[glyph-orientation-vertical]")
-  @scala.inline
-  def `[glyphRef]`: typingsJapgolly.csstype.csstypeStrings.`[glyphRef]` = this.cast("[glyphRef]")
-  @scala.inline
-  def `[gradientTransform]`: typingsJapgolly.csstype.csstypeStrings.`[gradientTransform]` = this.cast("[gradientTransform]")
-  @scala.inline
-  def `[gradientUnits]`: typingsJapgolly.csstype.csstypeStrings.`[gradientUnits]` = this.cast("[gradientUnits]")
-  @scala.inline
-  def `[graphical]`: typingsJapgolly.csstype.csstypeStrings.`[graphical]` = this.cast("[graphical]")
-  @scala.inline
-  def `[hanging]`: typingsJapgolly.csstype.csstypeStrings.`[hanging]` = this.cast("[hanging]")
-  @scala.inline
-  def `[hatchContentUnits]`: typingsJapgolly.csstype.csstypeStrings.`[hatchContentUnits]` = this.cast("[hatchContentUnits]")
-  @scala.inline
-  def `[hatchUnits]`: typingsJapgolly.csstype.csstypeStrings.`[hatchUnits]` = this.cast("[hatchUnits]")
-  @scala.inline
-  def `[height]`: typingsJapgolly.csstype.csstypeStrings.`[height]` = this.cast("[height]")
-  @scala.inline
-  def `[horiz-adv-x]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-adv-x]` = this.cast("[horiz-adv-x]")
-  @scala.inline
-  def `[horiz-origin-x]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-x]` = this.cast("[horiz-origin-x]")
-  @scala.inline
-  def `[horiz-origin-y]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-y]` = this.cast("[horiz-origin-y]")
-  @scala.inline
-  def `[href]`: typingsJapgolly.csstype.csstypeStrings.`[href]` = this.cast("[href]")
-  @scala.inline
-  def `[hreflang]`: typingsJapgolly.csstype.csstypeStrings.`[hreflang]` = this.cast("[hreflang]")
-  @scala.inline
-  def `[id]`: typingsJapgolly.csstype.csstypeStrings.`[id]` = this.cast("[id]")
-  @scala.inline
-  def `[ideographic]`: typingsJapgolly.csstype.csstypeStrings.`[ideographic]` = this.cast("[ideographic]")
-  @scala.inline
-  def `[image-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[image-rendering]` = this.cast("[image-rendering]")
-  @scala.inline
-  def `[in2]`: typingsJapgolly.csstype.csstypeStrings.`[in2]` = this.cast("[in2]")
-  @scala.inline
-  def `[in]`: typingsJapgolly.csstype.csstypeStrings.`[in]` = this.cast("[in]")
-  @scala.inline
-  def `[k1]`: typingsJapgolly.csstype.csstypeStrings.`[k1]` = this.cast("[k1]")
-  @scala.inline
-  def `[k2]`: typingsJapgolly.csstype.csstypeStrings.`[k2]` = this.cast("[k2]")
-  @scala.inline
-  def `[k3]`: typingsJapgolly.csstype.csstypeStrings.`[k3]` = this.cast("[k3]")
-  @scala.inline
-  def `[k4]`: typingsJapgolly.csstype.csstypeStrings.`[k4]` = this.cast("[k4]")
-  @scala.inline
-  def `[k]`: typingsJapgolly.csstype.csstypeStrings.`[k]` = this.cast("[k]")
-  @scala.inline
-  def `[kernelMatrix]`: typingsJapgolly.csstype.csstypeStrings.`[kernelMatrix]` = this.cast("[kernelMatrix]")
-  @scala.inline
-  def `[kernelUnitLength]`: typingsJapgolly.csstype.csstypeStrings.`[kernelUnitLength]` = this.cast("[kernelUnitLength]")
-  @scala.inline
-  def `[kerning]`: typingsJapgolly.csstype.csstypeStrings.`[kerning]` = this.cast("[kerning]")
-  @scala.inline
-  def `[keyPoints]`: typingsJapgolly.csstype.csstypeStrings.`[keyPoints]` = this.cast("[keyPoints]")
-  @scala.inline
-  def `[lang]`: typingsJapgolly.csstype.csstypeStrings.`[lang]` = this.cast("[lang]")
-  @scala.inline
-  def `[lengthAdjust]`: typingsJapgolly.csstype.csstypeStrings.`[lengthAdjust]` = this.cast("[lengthAdjust]")
-  @scala.inline
-  def `[letter-spacing]`: typingsJapgolly.csstype.csstypeStrings.`[letter-spacing]` = this.cast("[letter-spacing]")
-  @scala.inline
-  def `[lighterForError]`: typingsJapgolly.csstype.csstypeStrings.`[lighterForError]` = this.cast("[lighterForError]")
-  @scala.inline
-  def `[lighting-color]`: typingsJapgolly.csstype.csstypeStrings.`[lighting-color]` = this.cast("[lighting-color]")
-  @scala.inline
-  def `[limitingConeAngle]`: typingsJapgolly.csstype.csstypeStrings.`[limitingConeAngle]` = this.cast("[limitingConeAngle]")
-  @scala.inline
-  def `[local]`: typingsJapgolly.csstype.csstypeStrings.`[local]` = this.cast("[local]")
-  @scala.inline
-  def `[marker-end]`: typingsJapgolly.csstype.csstypeStrings.`[marker-end]` = this.cast("[marker-end]")
-  @scala.inline
-  def `[marker-mid]`: typingsJapgolly.csstype.csstypeStrings.`[marker-mid]` = this.cast("[marker-mid]")
-  @scala.inline
-  def `[marker-start]`: typingsJapgolly.csstype.csstypeStrings.`[marker-start]` = this.cast("[marker-start]")
-  @scala.inline
-  def `[markerHeight]`: typingsJapgolly.csstype.csstypeStrings.`[markerHeight]` = this.cast("[markerHeight]")
-  @scala.inline
-  def `[markerUnits]`: typingsJapgolly.csstype.csstypeStrings.`[markerUnits]` = this.cast("[markerUnits]")
-  @scala.inline
-  def `[markerWidth]`: typingsJapgolly.csstype.csstypeStrings.`[markerWidth]` = this.cast("[markerWidth]")
-  @scala.inline
-  def `[maskContentUnits]`: typingsJapgolly.csstype.csstypeStrings.`[maskContentUnits]` = this.cast("[maskContentUnits]")
-  @scala.inline
-  def `[maskUnits]`: typingsJapgolly.csstype.csstypeStrings.`[maskUnits]` = this.cast("[maskUnits]")
-  @scala.inline
-  def `[mask]`: typingsJapgolly.csstype.csstypeStrings.`[mask]` = this.cast("[mask]")
-  @scala.inline
-  def `[mathematical]`: typingsJapgolly.csstype.csstypeStrings.`[mathematical]` = this.cast("[mathematical]")
-  @scala.inline
-  def `[media]`: typingsJapgolly.csstype.csstypeStrings.`[media]` = this.cast("[media]")
-  @scala.inline
-  def `[method]`: typingsJapgolly.csstype.csstypeStrings.`[method]` = this.cast("[method]")
-  @scala.inline
-  def `[mode]`: typingsJapgolly.csstype.csstypeStrings.`[mode]` = this.cast("[mode]")
-  @scala.inline
-  def `[name]`: typingsJapgolly.csstype.csstypeStrings.`[name]` = this.cast("[name]")
-  @scala.inline
-  def `[numOctaves]`: typingsJapgolly.csstype.csstypeStrings.`[numOctaves]` = this.cast("[numOctaves]")
-  @scala.inline
-  def `[offset]`: typingsJapgolly.csstype.csstypeStrings.`[offset]` = this.cast("[offset]")
-  @scala.inline
-  def `[opacity]`: typingsJapgolly.csstype.csstypeStrings.`[opacity]` = this.cast("[opacity]")
-  @scala.inline
-  def `[operator]`: typingsJapgolly.csstype.csstypeStrings.`[operator]` = this.cast("[operator]")
-  @scala.inline
-  def `[order]`: typingsJapgolly.csstype.csstypeStrings.`[order]` = this.cast("[order]")
-  @scala.inline
-  def `[orient]`: typingsJapgolly.csstype.csstypeStrings.`[orient]` = this.cast("[orient]")
-  @scala.inline
-  def `[orientation]`: typingsJapgolly.csstype.csstypeStrings.`[orientation]` = this.cast("[orientation]")
-  @scala.inline
-  def `[origin]`: typingsJapgolly.csstype.csstypeStrings.`[origin]` = this.cast("[origin]")
-  @scala.inline
-  def `[overflow]`: typingsJapgolly.csstype.csstypeStrings.`[overflow]` = this.cast("[overflow]")
-  @scala.inline
-  def `[overline-position]`: typingsJapgolly.csstype.csstypeStrings.`[overline-position]` = this.cast("[overline-position]")
-  @scala.inline
-  def `[overline-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[overline-thickness]` = this.cast("[overline-thickness]")
-  @scala.inline
-  def `[paint-order]`: typingsJapgolly.csstype.csstypeStrings.`[paint-order]` = this.cast("[paint-order]")
-  @scala.inline
-  def `[panose-1]`: typingsJapgolly.csstype.csstypeStrings.`[panose-1]` = this.cast("[panose-1]")
-  @scala.inline
-  def `[path]`: typingsJapgolly.csstype.csstypeStrings.`[path]` = this.cast("[path]")
-  @scala.inline
-  def `[patternContentUnits]`: typingsJapgolly.csstype.csstypeStrings.`[patternContentUnits]` = this.cast("[patternContentUnits]")
-  @scala.inline
-  def `[patternTransform]`: typingsJapgolly.csstype.csstypeStrings.`[patternTransform]` = this.cast("[patternTransform]")
-  @scala.inline
-  def `[patternUnits]`: typingsJapgolly.csstype.csstypeStrings.`[patternUnits]` = this.cast("[patternUnits]")
-  @scala.inline
-  def `[ping]`: typingsJapgolly.csstype.csstypeStrings.`[ping]` = this.cast("[ping]")
-  @scala.inline
-  def `[pitch]`: typingsJapgolly.csstype.csstypeStrings.`[pitch]` = this.cast("[pitch]")
-  @scala.inline
-  def `[pointer-events]`: typingsJapgolly.csstype.csstypeStrings.`[pointer-events]` = this.cast("[pointer-events]")
-  @scala.inline
-  def `[pointsAtX]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtX]` = this.cast("[pointsAtX]")
-  @scala.inline
-  def `[pointsAtY]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtY]` = this.cast("[pointsAtY]")
-  @scala.inline
-  def `[pointsAtZ]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtZ]` = this.cast("[pointsAtZ]")
-  @scala.inline
-  def `[points]`: typingsJapgolly.csstype.csstypeStrings.`[points]` = this.cast("[points]")
-  @scala.inline
-  def `[preserveAlpha]`: typingsJapgolly.csstype.csstypeStrings.`[preserveAlpha]` = this.cast("[preserveAlpha]")
-  @scala.inline
-  def `[preserveAspectRatio]`: typingsJapgolly.csstype.csstypeStrings.`[preserveAspectRatio]` = this.cast("[preserveAspectRatio]")
-  @scala.inline
-  def `[primitiveUnits]`: typingsJapgolly.csstype.csstypeStrings.`[primitiveUnits]` = this.cast("[primitiveUnits]")
-  @scala.inline
-  def `[r]`: typingsJapgolly.csstype.csstypeStrings.`[r]` = this.cast("[r]")
-  @scala.inline
-  def `[radius]`: typingsJapgolly.csstype.csstypeStrings.`[radius]` = this.cast("[radius]")
-  @scala.inline
-  def `[refX]`: typingsJapgolly.csstype.csstypeStrings.`[refX]` = this.cast("[refX]")
-  @scala.inline
-  def `[refY]`: typingsJapgolly.csstype.csstypeStrings.`[refY]` = this.cast("[refY]")
-  @scala.inline
-  def `[referrerPolicy]`: typingsJapgolly.csstype.csstypeStrings.`[referrerPolicy]` = this.cast("[referrerPolicy]")
-  @scala.inline
-  def `[rel]`: typingsJapgolly.csstype.csstypeStrings.`[rel]` = this.cast("[rel]")
-  @scala.inline
-  def `[rendering-intent]`: typingsJapgolly.csstype.csstypeStrings.`[rendering-intent]` = this.cast("[rendering-intent]")
-  @scala.inline
-  def `[repeatCount]`: typingsJapgolly.csstype.csstypeStrings.`[repeatCount]` = this.cast("[repeatCount]")
-  @scala.inline
-  def `[requiredExtensions]`: typingsJapgolly.csstype.csstypeStrings.`[requiredExtensions]` = this.cast("[requiredExtensions]")
-  @scala.inline
-  def `[requiredFeatures]`: typingsJapgolly.csstype.csstypeStrings.`[requiredFeatures]` = this.cast("[requiredFeatures]")
-  @scala.inline
-  def `[rotate]`: typingsJapgolly.csstype.csstypeStrings.`[rotate]` = this.cast("[rotate]")
-  @scala.inline
-  def `[rx]`: typingsJapgolly.csstype.csstypeStrings.`[rx]` = this.cast("[rx]")
-  @scala.inline
-  def `[ry]`: typingsJapgolly.csstype.csstypeStrings.`[ry]` = this.cast("[ry]")
-  @scala.inline
-  def `[scale]`: typingsJapgolly.csstype.csstypeStrings.`[scale]` = this.cast("[scale]")
-  @scala.inline
-  def `[seed]`: typingsJapgolly.csstype.csstypeStrings.`[seed]` = this.cast("[seed]")
-  @scala.inline
-  def `[shape-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[shape-rendering]` = this.cast("[shape-rendering]")
-  @scala.inline
-  def `[side]`: typingsJapgolly.csstype.csstypeStrings.`[side]` = this.cast("[side]")
-  @scala.inline
-  def `[slope]`: typingsJapgolly.csstype.csstypeStrings.`[slope]` = this.cast("[slope]")
-  @scala.inline
-  def `[solid-color]`: typingsJapgolly.csstype.csstypeStrings.`[solid-color]` = this.cast("[solid-color]")
-  @scala.inline
-  def `[solid-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[solid-opacity]` = this.cast("[solid-opacity]")
-  @scala.inline
-  def `[spacing]`: typingsJapgolly.csstype.csstypeStrings.`[spacing]` = this.cast("[spacing]")
-  @scala.inline
-  def `[specularConstant]`: typingsJapgolly.csstype.csstypeStrings.`[specularConstant]` = this.cast("[specularConstant]")
-  @scala.inline
-  def `[specularExponent]`: typingsJapgolly.csstype.csstypeStrings.`[specularExponent]` = this.cast("[specularExponent]")
-  @scala.inline
-  def `[spreadMethod]`: typingsJapgolly.csstype.csstypeStrings.`[spreadMethod]` = this.cast("[spreadMethod]")
-  @scala.inline
-  def `[startOffset]`: typingsJapgolly.csstype.csstypeStrings.`[startOffset]` = this.cast("[startOffset]")
-  @scala.inline
-  def `[stdDeviation]`: typingsJapgolly.csstype.csstypeStrings.`[stdDeviation]` = this.cast("[stdDeviation]")
-  @scala.inline
-  def `[stemh]`: typingsJapgolly.csstype.csstypeStrings.`[stemh]` = this.cast("[stemh]")
-  @scala.inline
-  def `[stemv]`: typingsJapgolly.csstype.csstypeStrings.`[stemv]` = this.cast("[stemv]")
-  @scala.inline
-  def `[stitchTiles]`: typingsJapgolly.csstype.csstypeStrings.`[stitchTiles]` = this.cast("[stitchTiles]")
-  @scala.inline
-  def `[stop-color]`: typingsJapgolly.csstype.csstypeStrings.`[stop-color]` = this.cast("[stop-color]")
-  @scala.inline
-  def `[stop-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[stop-opacity]` = this.cast("[stop-opacity]")
-  @scala.inline
-  def `[strikethrough-position]`: typingsJapgolly.csstype.csstypeStrings.`[strikethrough-position]` = this.cast("[strikethrough-position]")
-  @scala.inline
-  def `[strikethrough-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[strikethrough-thickness]` = this.cast("[strikethrough-thickness]")
-  @scala.inline
-  def `[string]`: typingsJapgolly.csstype.csstypeStrings.`[string]` = this.cast("[string]")
-  @scala.inline
-  def `[stroke-dasharray]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-dasharray]` = this.cast("[stroke-dasharray]")
-  @scala.inline
-  def `[stroke-dashoffset]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-dashoffset]` = this.cast("[stroke-dashoffset]")
-  @scala.inline
-  def `[stroke-linecap]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-linecap]` = this.cast("[stroke-linecap]")
-  @scala.inline
-  def `[stroke-linejoin]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-linejoin]` = this.cast("[stroke-linejoin]")
-  @scala.inline
-  def `[stroke-miterlimit]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-miterlimit]` = this.cast("[stroke-miterlimit]")
-  @scala.inline
-  def `[stroke-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-opacity]` = this.cast("[stroke-opacity]")
-  @scala.inline
-  def `[stroke-width]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-width]` = this.cast("[stroke-width]")
-  @scala.inline
-  def `[stroke]`: typingsJapgolly.csstype.csstypeStrings.`[stroke]` = this.cast("[stroke]")
-  @scala.inline
-  def `[style]`: typingsJapgolly.csstype.csstypeStrings.`[style]` = this.cast("[style]")
-  @scala.inline
-  def `[surfaceScale]`: typingsJapgolly.csstype.csstypeStrings.`[surfaceScale]` = this.cast("[surfaceScale]")
-  @scala.inline
-  def `[systemLanguage]`: typingsJapgolly.csstype.csstypeStrings.`[systemLanguage]` = this.cast("[systemLanguage]")
-  @scala.inline
-  def `[tabindex]`: typingsJapgolly.csstype.csstypeStrings.`[tabindex]` = this.cast("[tabindex]")
-  @scala.inline
-  def `[targetX]`: typingsJapgolly.csstype.csstypeStrings.`[targetX]` = this.cast("[targetX]")
-  @scala.inline
-  def `[targetY]`: typingsJapgolly.csstype.csstypeStrings.`[targetY]` = this.cast("[targetY]")
-  @scala.inline
-  def `[target]`: typingsJapgolly.csstype.csstypeStrings.`[target]` = this.cast("[target]")
-  @scala.inline
-  def `[text-anchor]`: typingsJapgolly.csstype.csstypeStrings.`[text-anchor]` = this.cast("[text-anchor]")
-  @scala.inline
-  def `[text-decoration]`: typingsJapgolly.csstype.csstypeStrings.`[text-decoration]` = this.cast("[text-decoration]")
-  @scala.inline
-  def `[text-overflow]`: typingsJapgolly.csstype.csstypeStrings.`[text-overflow]` = this.cast("[text-overflow]")
-  @scala.inline
-  def `[text-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[text-rendering]` = this.cast("[text-rendering]")
-  @scala.inline
-  def `[textLength]`: typingsJapgolly.csstype.csstypeStrings.`[textLength]` = this.cast("[textLength]")
-  @scala.inline
-  def `[title]`: typingsJapgolly.csstype.csstypeStrings.`[title]` = this.cast("[title]")
-  @scala.inline
-  def `[to]`: typingsJapgolly.csstype.csstypeStrings.`[to]` = this.cast("[to]")
-  @scala.inline
-  def `[transform]`: typingsJapgolly.csstype.csstypeStrings.`[transform]` = this.cast("[transform]")
-  @scala.inline
-  def `[type]`: typingsJapgolly.csstype.csstypeStrings.`[type]` = this.cast("[type]")
-  @scala.inline
-  def `[u1]`: typingsJapgolly.csstype.csstypeStrings.`[u1]` = this.cast("[u1]")
-  @scala.inline
-  def `[u2]`: typingsJapgolly.csstype.csstypeStrings.`[u2]` = this.cast("[u2]")
-  @scala.inline
-  def `[underline-position]`: typingsJapgolly.csstype.csstypeStrings.`[underline-position]` = this.cast("[underline-position]")
-  @scala.inline
-  def `[underline-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[underline-thickness]` = this.cast("[underline-thickness]")
-  @scala.inline
-  def `[unicode-bidi]`: typingsJapgolly.csstype.csstypeStrings.`[unicode-bidi]` = this.cast("[unicode-bidi]")
-  @scala.inline
-  def `[unicode-range]`: typingsJapgolly.csstype.csstypeStrings.`[unicode-range]` = this.cast("[unicode-range]")
-  @scala.inline
-  def `[unicode]`: typingsJapgolly.csstype.csstypeStrings.`[unicode]` = this.cast("[unicode]")
-  @scala.inline
-  def `[units-per-em]`: typingsJapgolly.csstype.csstypeStrings.`[units-per-em]` = this.cast("[units-per-em]")
-  @scala.inline
-  def `[v-alphabetic]`: typingsJapgolly.csstype.csstypeStrings.`[v-alphabetic]` = this.cast("[v-alphabetic]")
-  @scala.inline
-  def `[v-hanging]`: typingsJapgolly.csstype.csstypeStrings.`[v-hanging]` = this.cast("[v-hanging]")
-  @scala.inline
-  def `[v-ideographic]`: typingsJapgolly.csstype.csstypeStrings.`[v-ideographic]` = this.cast("[v-ideographic]")
-  @scala.inline
-  def `[v-mathematical]`: typingsJapgolly.csstype.csstypeStrings.`[v-mathematical]` = this.cast("[v-mathematical]")
-  @scala.inline
-  def `[values]`: typingsJapgolly.csstype.csstypeStrings.`[values]` = this.cast("[values]")
-  @scala.inline
-  def `[vector-effect]`: typingsJapgolly.csstype.csstypeStrings.`[vector-effect]` = this.cast("[vector-effect]")
-  @scala.inline
-  def `[version]`: typingsJapgolly.csstype.csstypeStrings.`[version]` = this.cast("[version]")
-  @scala.inline
-  def `[vert-adv-y]`: typingsJapgolly.csstype.csstypeStrings.`[vert-adv-y]` = this.cast("[vert-adv-y]")
-  @scala.inline
-  def `[vert-origin-x]`: typingsJapgolly.csstype.csstypeStrings.`[vert-origin-x]` = this.cast("[vert-origin-x]")
-  @scala.inline
-  def `[vert-origin-y]`: typingsJapgolly.csstype.csstypeStrings.`[vert-origin-y]` = this.cast("[vert-origin-y]")
-  @scala.inline
-  def `[viewBox]`: typingsJapgolly.csstype.csstypeStrings.`[viewBox]` = this.cast("[viewBox]")
-  @scala.inline
-  def `[viewTarget]`: typingsJapgolly.csstype.csstypeStrings.`[viewTarget]` = this.cast("[viewTarget]")
-  @scala.inline
-  def `[visibility]`: typingsJapgolly.csstype.csstypeStrings.`[visibility]` = this.cast("[visibility]")
-  @scala.inline
-  def `[white-space]`: typingsJapgolly.csstype.csstypeStrings.`[white-space]` = this.cast("[white-space]")
-  @scala.inline
-  def `[width]`: typingsJapgolly.csstype.csstypeStrings.`[width]` = this.cast("[width]")
-  @scala.inline
-  def `[widths]`: typingsJapgolly.csstype.csstypeStrings.`[widths]` = this.cast("[widths]")
-  @scala.inline
-  def `[word-spacing]`: typingsJapgolly.csstype.csstypeStrings.`[word-spacing]` = this.cast("[word-spacing]")
-  @scala.inline
-  def `[writing-mode]`: typingsJapgolly.csstype.csstypeStrings.`[writing-mode]` = this.cast("[writing-mode]")
-  @scala.inline
-  def `[x-height]`: typingsJapgolly.csstype.csstypeStrings.`[x-height]` = this.cast("[x-height]")
-  @scala.inline
-  def `[x1]`: typingsJapgolly.csstype.csstypeStrings.`[x1]` = this.cast("[x1]")
-  @scala.inline
-  def `[x2]`: typingsJapgolly.csstype.csstypeStrings.`[x2]` = this.cast("[x2]")
-  @scala.inline
-  def `[xChannelSelector]`: typingsJapgolly.csstype.csstypeStrings.`[xChannelSelector]` = this.cast("[xChannelSelector]")
-  @scala.inline
-  def `[x]`: typingsJapgolly.csstype.csstypeStrings.`[x]` = this.cast("[x]")
-  @scala.inline
-  def `[y1]`: typingsJapgolly.csstype.csstypeStrings.`[y1]` = this.cast("[y1]")
-  @scala.inline
-  def `[y2]`: typingsJapgolly.csstype.csstypeStrings.`[y2]` = this.cast("[y2]")
-  @scala.inline
-  def `[yChannelSelector]`: typingsJapgolly.csstype.csstypeStrings.`[yChannelSelector]` = this.cast("[yChannelSelector]")
-  @scala.inline
-  def `[y]`: typingsJapgolly.csstype.csstypeStrings.`[y]` = this.cast("[y]")
-  @scala.inline
-  def `[z]`: typingsJapgolly.csstype.csstypeStrings.`[z]` = this.cast("[z]")
-  @scala.inline
-  def `[zoomAndPan]`: typingsJapgolly.csstype.csstypeStrings.`[zoomAndPan]` = this.cast("[zoomAndPan]")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `[accent-height]`: typingsJapgolly.csstype.csstypeStrings.`[accent-height]` = "[accent-height]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[accent-height]`]
+  
+  inline def `[alignment-baseline]`: typingsJapgolly.csstype.csstypeStrings.`[alignment-baseline]` = "[alignment-baseline]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[alignment-baseline]`]
+  
+  inline def `[allowReorder]`: typingsJapgolly.csstype.csstypeStrings.`[allowReorder]` = "[allowReorder]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[allowReorder]`]
+  
+  inline def `[alphabetic]`: typingsJapgolly.csstype.csstypeStrings.`[alphabetic]` = "[alphabetic]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[alphabetic]`]
+  
+  inline def `[animation]`: typingsJapgolly.csstype.csstypeStrings.`[animation]` = "[animation]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[animation]`]
+  
+  inline def `[arabic-form]`: typingsJapgolly.csstype.csstypeStrings.`[arabic-form]` = "[arabic-form]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[arabic-form]`]
+  
+  inline def `[ascent]`: typingsJapgolly.csstype.csstypeStrings.`[ascent]` = "[ascent]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[ascent]`]
+  
+  inline def `[attributeName]`: typingsJapgolly.csstype.csstypeStrings.`[attributeName]` = "[attributeName]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[attributeName]`]
+  
+  inline def `[attributeType]`: typingsJapgolly.csstype.csstypeStrings.`[attributeType]` = "[attributeType]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[attributeType]`]
+  
+  inline def `[azimuth]`: typingsJapgolly.csstype.csstypeStrings.`[azimuth]` = "[azimuth]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[azimuth]`]
+  
+  inline def `[baseFrequency]`: typingsJapgolly.csstype.csstypeStrings.`[baseFrequency]` = "[baseFrequency]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[baseFrequency]`]
+  
+  inline def `[baseProfile]`: typingsJapgolly.csstype.csstypeStrings.`[baseProfile]` = "[baseProfile]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[baseProfile]`]
+  
+  inline def `[baseline-shift]`: typingsJapgolly.csstype.csstypeStrings.`[baseline-shift]` = "[baseline-shift]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[baseline-shift]`]
+  
+  inline def `[bbox]`: typingsJapgolly.csstype.csstypeStrings.`[bbox]` = "[bbox]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[bbox]`]
+  
+  inline def `[bias]`: typingsJapgolly.csstype.csstypeStrings.`[bias]` = "[bias]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[bias]`]
+  
+  inline def `[by]`: typingsJapgolly.csstype.csstypeStrings.`[by]` = "[by]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[by]`]
+  
+  inline def `[calcMode]`: typingsJapgolly.csstype.csstypeStrings.`[calcMode]` = "[calcMode]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[calcMode]`]
+  
+  inline def `[cap-height]`: typingsJapgolly.csstype.csstypeStrings.`[cap-height]` = "[cap-height]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[cap-height]`]
+  
+  inline def `[class]`: typingsJapgolly.csstype.csstypeStrings.`[class]` = "[class]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[class]`]
+  
+  inline def `[clip-path]`: typingsJapgolly.csstype.csstypeStrings.`[clip-path]` = "[clip-path]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[clip-path]`]
+  
+  inline def `[clip-rule]`: typingsJapgolly.csstype.csstypeStrings.`[clip-rule]` = "[clip-rule]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[clip-rule]`]
+  
+  inline def `[clipPathUnits]`: typingsJapgolly.csstype.csstypeStrings.`[clipPathUnits]` = "[clipPathUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[clipPathUnits]`]
+  
+  inline def `[clip]`: typingsJapgolly.csstype.csstypeStrings.`[clip]` = "[clip]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[clip]`]
+  
+  inline def `[color-interpolation-filters]`: typingsJapgolly.csstype.csstypeStrings.`[color-interpolation-filters]` = "[color-interpolation-filters]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[color-interpolation-filters]`]
+  
+  inline def `[color-interpolation]`: typingsJapgolly.csstype.csstypeStrings.`[color-interpolation]` = "[color-interpolation]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[color-interpolation]`]
+  
+  inline def `[color-profile]`: typingsJapgolly.csstype.csstypeStrings.`[color-profile]` = "[color-profile]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[color-profile]`]
+  
+  inline def `[color]`: typingsJapgolly.csstype.csstypeStrings.`[color]` = "[color]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[color]`]
+  
+  inline def `[contentScriptType]`: typingsJapgolly.csstype.csstypeStrings.`[contentScriptType]` = "[contentScriptType]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[contentScriptType]`]
+  
+  inline def `[contentStyleType]`: typingsJapgolly.csstype.csstypeStrings.`[contentStyleType]` = "[contentStyleType]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[contentStyleType]`]
+  
+  inline def `[cursor]`: typingsJapgolly.csstype.csstypeStrings.`[cursor]` = "[cursor]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[cursor]`]
+  
+  inline def `[cx]`: typingsJapgolly.csstype.csstypeStrings.`[cx]` = "[cx]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[cx]`]
+  
+  inline def `[cy]`: typingsJapgolly.csstype.csstypeStrings.`[cy]` = "[cy]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[cy]`]
+  
+  inline def `[d]`: typingsJapgolly.csstype.csstypeStrings.`[d]` = "[d]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[d]`]
+  
+  inline def `[descent]`: typingsJapgolly.csstype.csstypeStrings.`[descent]` = "[descent]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[descent]`]
+  
+  inline def `[diffuseConstant]`: typingsJapgolly.csstype.csstypeStrings.`[diffuseConstant]` = "[diffuseConstant]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[diffuseConstant]`]
+  
+  inline def `[direction]`: typingsJapgolly.csstype.csstypeStrings.`[direction]` = "[direction]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[direction]`]
+  
+  inline def `[display]`: typingsJapgolly.csstype.csstypeStrings.`[display]` = "[display]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[display]`]
+  
+  inline def `[divisor]`: typingsJapgolly.csstype.csstypeStrings.`[divisor]` = "[divisor]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[divisor]`]
+  
+  inline def `[document]`: typingsJapgolly.csstype.csstypeStrings.`[document]` = "[document]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[document]`]
+  
+  inline def `[dominant-baseline]`: typingsJapgolly.csstype.csstypeStrings.`[dominant-baseline]` = "[dominant-baseline]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[dominant-baseline]`]
+  
+  inline def `[download]`: typingsJapgolly.csstype.csstypeStrings.`[download]` = "[download]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[download]`]
+  
+  inline def `[dur]`: typingsJapgolly.csstype.csstypeStrings.`[dur]` = "[dur]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[dur]`]
+  
+  inline def `[dx]`: typingsJapgolly.csstype.csstypeStrings.`[dx]` = "[dx]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[dx]`]
+  
+  inline def `[dy]`: typingsJapgolly.csstype.csstypeStrings.`[dy]` = "[dy]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[dy]`]
+  
+  inline def `[edgeMode]`: typingsJapgolly.csstype.csstypeStrings.`[edgeMode]` = "[edgeMode]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[edgeMode]`]
+  
+  inline def `[elevation]`: typingsJapgolly.csstype.csstypeStrings.`[elevation]` = "[elevation]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[elevation]`]
+  
+  inline def `[enable-background]`: typingsJapgolly.csstype.csstypeStrings.`[enable-background]` = "[enable-background]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[enable-background]`]
+  
+  inline def `[fill-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[fill-opacity]` = "[fill-opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fill-opacity]`]
+  
+  inline def `[fill-rule]`: typingsJapgolly.csstype.csstypeStrings.`[fill-rule]` = "[fill-rule]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fill-rule]`]
+  
+  inline def `[fill]`: typingsJapgolly.csstype.csstypeStrings.`[fill]` = "[fill]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fill]`]
+  
+  inline def `[filterRes]`: typingsJapgolly.csstype.csstypeStrings.`[filterRes]` = "[filterRes]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[filterRes]`]
+  
+  inline def `[filterUnits]`: typingsJapgolly.csstype.csstypeStrings.`[filterUnits]` = "[filterUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[filterUnits]`]
+  
+  inline def `[filter]`: typingsJapgolly.csstype.csstypeStrings.`[filter]` = "[filter]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[filter]`]
+  
+  inline def `[flood-color]`: typingsJapgolly.csstype.csstypeStrings.`[flood-color]` = "[flood-color]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[flood-color]`]
+  
+  inline def `[flood-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[flood-opacity]` = "[flood-opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[flood-opacity]`]
+  
+  inline def `[font-family]`: typingsJapgolly.csstype.csstypeStrings.`[font-family]` = "[font-family]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-family]`]
+  
+  inline def `[font-size-adjust]`: typingsJapgolly.csstype.csstypeStrings.`[font-size-adjust]` = "[font-size-adjust]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-size-adjust]`]
+  
+  inline def `[font-size]`: typingsJapgolly.csstype.csstypeStrings.`[font-size]` = "[font-size]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-size]`]
+  
+  inline def `[font-stretch]`: typingsJapgolly.csstype.csstypeStrings.`[font-stretch]` = "[font-stretch]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-stretch]`]
+  
+  inline def `[font-style]`: typingsJapgolly.csstype.csstypeStrings.`[font-style]` = "[font-style]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-style]`]
+  
+  inline def `[font-variant]`: typingsJapgolly.csstype.csstypeStrings.`[font-variant]` = "[font-variant]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-variant]`]
+  
+  inline def `[font-weight]`: typingsJapgolly.csstype.csstypeStrings.`[font-weight]` = "[font-weight]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[font-weight]`]
+  
+  inline def `[format]`: typingsJapgolly.csstype.csstypeStrings.`[format]` = "[format]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[format]`]
+  
+  inline def `[fr]`: typingsJapgolly.csstype.csstypeStrings.`[fr]` = "[fr]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fr]`]
+  
+  inline def `[from]`: typingsJapgolly.csstype.csstypeStrings.`[from]` = "[from]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[from]`]
+  
+  inline def `[fx]`: typingsJapgolly.csstype.csstypeStrings.`[fx]` = "[fx]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fx]`]
+  
+  inline def `[fy]`: typingsJapgolly.csstype.csstypeStrings.`[fy]` = "[fy]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[fy]`]
+  
+  inline def `[g1]`: typingsJapgolly.csstype.csstypeStrings.`[g1]` = "[g1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[g1]`]
+  
+  inline def `[g2]`: typingsJapgolly.csstype.csstypeStrings.`[g2]` = "[g2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[g2]`]
+  
+  inline def `[global]`: typingsJapgolly.csstype.csstypeStrings.`[global]` = "[global]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[global]`]
+  
+  inline def `[glyph-name]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-name]` = "[glyph-name]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[glyph-name]`]
+  
+  inline def `[glyph-orientation-horizontal]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-horizontal]` = "[glyph-orientation-horizontal]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-horizontal]`]
+  
+  inline def `[glyph-orientation-vertical]`: typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-vertical]` = "[glyph-orientation-vertical]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[glyph-orientation-vertical]`]
+  
+  inline def `[glyphRef]`: typingsJapgolly.csstype.csstypeStrings.`[glyphRef]` = "[glyphRef]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[glyphRef]`]
+  
+  inline def `[gradientTransform]`: typingsJapgolly.csstype.csstypeStrings.`[gradientTransform]` = "[gradientTransform]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[gradientTransform]`]
+  
+  inline def `[gradientUnits]`: typingsJapgolly.csstype.csstypeStrings.`[gradientUnits]` = "[gradientUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[gradientUnits]`]
+  
+  inline def `[graphical]`: typingsJapgolly.csstype.csstypeStrings.`[graphical]` = "[graphical]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[graphical]`]
+  
+  inline def `[hanging]`: typingsJapgolly.csstype.csstypeStrings.`[hanging]` = "[hanging]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[hanging]`]
+  
+  inline def `[height]`: typingsJapgolly.csstype.csstypeStrings.`[height]` = "[height]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[height]`]
+  
+  inline def `[horiz-adv-x]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-adv-x]` = "[horiz-adv-x]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[horiz-adv-x]`]
+  
+  inline def `[horiz-origin-x]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-x]` = "[horiz-origin-x]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-x]`]
+  
+  inline def `[horiz-origin-y]`: typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-y]` = "[horiz-origin-y]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[horiz-origin-y]`]
+  
+  inline def `[href]`: typingsJapgolly.csstype.csstypeStrings.`[href]` = "[href]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[href]`]
+  
+  inline def `[hreflang]`: typingsJapgolly.csstype.csstypeStrings.`[hreflang]` = "[hreflang]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[hreflang]`]
+  
+  inline def `[id]`: typingsJapgolly.csstype.csstypeStrings.`[id]` = "[id]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[id]`]
+  
+  inline def `[ideographic]`: typingsJapgolly.csstype.csstypeStrings.`[ideographic]` = "[ideographic]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[ideographic]`]
+  
+  inline def `[image-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[image-rendering]` = "[image-rendering]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[image-rendering]`]
+  
+  inline def `[in2]`: typingsJapgolly.csstype.csstypeStrings.`[in2]` = "[in2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[in2]`]
+  
+  inline def `[in]`: typingsJapgolly.csstype.csstypeStrings.`[in]` = "[in]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[in]`]
+  
+  inline def `[k1]`: typingsJapgolly.csstype.csstypeStrings.`[k1]` = "[k1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[k1]`]
+  
+  inline def `[k2]`: typingsJapgolly.csstype.csstypeStrings.`[k2]` = "[k2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[k2]`]
+  
+  inline def `[k3]`: typingsJapgolly.csstype.csstypeStrings.`[k3]` = "[k3]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[k3]`]
+  
+  inline def `[k4]`: typingsJapgolly.csstype.csstypeStrings.`[k4]` = "[k4]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[k4]`]
+  
+  inline def `[k]`: typingsJapgolly.csstype.csstypeStrings.`[k]` = "[k]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[k]`]
+  
+  inline def `[kernelMatrix]`: typingsJapgolly.csstype.csstypeStrings.`[kernelMatrix]` = "[kernelMatrix]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[kernelMatrix]`]
+  
+  inline def `[kernelUnitLength]`: typingsJapgolly.csstype.csstypeStrings.`[kernelUnitLength]` = "[kernelUnitLength]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[kernelUnitLength]`]
+  
+  inline def `[kerning]`: typingsJapgolly.csstype.csstypeStrings.`[kerning]` = "[kerning]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[kerning]`]
+  
+  inline def `[keyPoints]`: typingsJapgolly.csstype.csstypeStrings.`[keyPoints]` = "[keyPoints]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[keyPoints]`]
+  
+  inline def `[lang]`: typingsJapgolly.csstype.csstypeStrings.`[lang]` = "[lang]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[lang]`]
+  
+  inline def `[lengthAdjust]`: typingsJapgolly.csstype.csstypeStrings.`[lengthAdjust]` = "[lengthAdjust]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[lengthAdjust]`]
+  
+  inline def `[letter-spacing]`: typingsJapgolly.csstype.csstypeStrings.`[letter-spacing]` = "[letter-spacing]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[letter-spacing]`]
+  
+  inline def `[lighting-color]`: typingsJapgolly.csstype.csstypeStrings.`[lighting-color]` = "[lighting-color]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[lighting-color]`]
+  
+  inline def `[limitingConeAngle]`: typingsJapgolly.csstype.csstypeStrings.`[limitingConeAngle]` = "[limitingConeAngle]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[limitingConeAngle]`]
+  
+  inline def `[marker-end]`: typingsJapgolly.csstype.csstypeStrings.`[marker-end]` = "[marker-end]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[marker-end]`]
+  
+  inline def `[marker-mid]`: typingsJapgolly.csstype.csstypeStrings.`[marker-mid]` = "[marker-mid]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[marker-mid]`]
+  
+  inline def `[marker-start]`: typingsJapgolly.csstype.csstypeStrings.`[marker-start]` = "[marker-start]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[marker-start]`]
+  
+  inline def `[markerHeight]`: typingsJapgolly.csstype.csstypeStrings.`[markerHeight]` = "[markerHeight]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[markerHeight]`]
+  
+  inline def `[markerUnits]`: typingsJapgolly.csstype.csstypeStrings.`[markerUnits]` = "[markerUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[markerUnits]`]
+  
+  inline def `[markerWidth]`: typingsJapgolly.csstype.csstypeStrings.`[markerWidth]` = "[markerWidth]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[markerWidth]`]
+  
+  inline def `[maskContentUnits]`: typingsJapgolly.csstype.csstypeStrings.`[maskContentUnits]` = "[maskContentUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[maskContentUnits]`]
+  
+  inline def `[maskUnits]`: typingsJapgolly.csstype.csstypeStrings.`[maskUnits]` = "[maskUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[maskUnits]`]
+  
+  inline def `[mask]`: typingsJapgolly.csstype.csstypeStrings.`[mask]` = "[mask]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[mask]`]
+  
+  inline def `[mathematical]`: typingsJapgolly.csstype.csstypeStrings.`[mathematical]` = "[mathematical]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[mathematical]`]
+  
+  inline def `[media]`: typingsJapgolly.csstype.csstypeStrings.`[media]` = "[media]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[media]`]
+  
+  inline def `[mode]`: typingsJapgolly.csstype.csstypeStrings.`[mode]` = "[mode]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[mode]`]
+  
+  inline def `[name]`: typingsJapgolly.csstype.csstypeStrings.`[name]` = "[name]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[name]`]
+  
+  inline def `[numOctaves]`: typingsJapgolly.csstype.csstypeStrings.`[numOctaves]` = "[numOctaves]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[numOctaves]`]
+  
+  inline def `[offset]`: typingsJapgolly.csstype.csstypeStrings.`[offset]` = "[offset]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[offset]`]
+  
+  inline def `[opacity]`: typingsJapgolly.csstype.csstypeStrings.`[opacity]` = "[opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[opacity]`]
+  
+  inline def `[operator]`: typingsJapgolly.csstype.csstypeStrings.`[operator]` = "[operator]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[operator]`]
+  
+  inline def `[order]`: typingsJapgolly.csstype.csstypeStrings.`[order]` = "[order]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[order]`]
+  
+  inline def `[orient]`: typingsJapgolly.csstype.csstypeStrings.`[orient]` = "[orient]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[orient]`]
+  
+  inline def `[orientation]`: typingsJapgolly.csstype.csstypeStrings.`[orientation]` = "[orientation]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[orientation]`]
+  
+  inline def `[origin]`: typingsJapgolly.csstype.csstypeStrings.`[origin]` = "[origin]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[origin]`]
+  
+  inline def `[overflow]`: typingsJapgolly.csstype.csstypeStrings.`[overflow]` = "[overflow]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[overflow]`]
+  
+  inline def `[overline-position]`: typingsJapgolly.csstype.csstypeStrings.`[overline-position]` = "[overline-position]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[overline-position]`]
+  
+  inline def `[overline-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[overline-thickness]` = "[overline-thickness]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[overline-thickness]`]
+  
+  inline def `[paint-order]`: typingsJapgolly.csstype.csstypeStrings.`[paint-order]` = "[paint-order]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[paint-order]`]
+  
+  inline def `[panose-1]`: typingsJapgolly.csstype.csstypeStrings.`[panose-1]` = "[panose-1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[panose-1]`]
+  
+  inline def `[path]`: typingsJapgolly.csstype.csstypeStrings.`[path]` = "[path]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[path]`]
+  
+  inline def `[patternContentUnits]`: typingsJapgolly.csstype.csstypeStrings.`[patternContentUnits]` = "[patternContentUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[patternContentUnits]`]
+  
+  inline def `[patternTransform]`: typingsJapgolly.csstype.csstypeStrings.`[patternTransform]` = "[patternTransform]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[patternTransform]`]
+  
+  inline def `[patternUnits]`: typingsJapgolly.csstype.csstypeStrings.`[patternUnits]` = "[patternUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[patternUnits]`]
+  
+  inline def `[ping]`: typingsJapgolly.csstype.csstypeStrings.`[ping]` = "[ping]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[ping]`]
+  
+  inline def `[pointer-events]`: typingsJapgolly.csstype.csstypeStrings.`[pointer-events]` = "[pointer-events]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[pointer-events]`]
+  
+  inline def `[pointsAtX]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtX]` = "[pointsAtX]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[pointsAtX]`]
+  
+  inline def `[pointsAtY]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtY]` = "[pointsAtY]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[pointsAtY]`]
+  
+  inline def `[pointsAtZ]`: typingsJapgolly.csstype.csstypeStrings.`[pointsAtZ]` = "[pointsAtZ]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[pointsAtZ]`]
+  
+  inline def `[points]`: typingsJapgolly.csstype.csstypeStrings.`[points]` = "[points]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[points]`]
+  
+  inline def `[preserveAlpha]`: typingsJapgolly.csstype.csstypeStrings.`[preserveAlpha]` = "[preserveAlpha]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[preserveAlpha]`]
+  
+  inline def `[preserveAspectRatio]`: typingsJapgolly.csstype.csstypeStrings.`[preserveAspectRatio]` = "[preserveAspectRatio]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[preserveAspectRatio]`]
+  
+  inline def `[primitiveUnits]`: typingsJapgolly.csstype.csstypeStrings.`[primitiveUnits]` = "[primitiveUnits]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[primitiveUnits]`]
+  
+  inline def `[r]`: typingsJapgolly.csstype.csstypeStrings.`[r]` = "[r]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[r]`]
+  
+  inline def `[radius]`: typingsJapgolly.csstype.csstypeStrings.`[radius]` = "[radius]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[radius]`]
+  
+  inline def `[refX]`: typingsJapgolly.csstype.csstypeStrings.`[refX]` = "[refX]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[refX]`]
+  
+  inline def `[refY]`: typingsJapgolly.csstype.csstypeStrings.`[refY]` = "[refY]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[refY]`]
+  
+  inline def `[referrerpolicy]`: typingsJapgolly.csstype.csstypeStrings.`[referrerpolicy]` = "[referrerpolicy]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[referrerpolicy]`]
+  
+  inline def `[rel]`: typingsJapgolly.csstype.csstypeStrings.`[rel]` = "[rel]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[rel]`]
+  
+  inline def `[repeatCount]`: typingsJapgolly.csstype.csstypeStrings.`[repeatCount]` = "[repeatCount]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[repeatCount]`]
+  
+  inline def `[requiredExtensions]`: typingsJapgolly.csstype.csstypeStrings.`[requiredExtensions]` = "[requiredExtensions]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[requiredExtensions]`]
+  
+  inline def `[requiredFeatures]`: typingsJapgolly.csstype.csstypeStrings.`[requiredFeatures]` = "[requiredFeatures]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[requiredFeatures]`]
+  
+  inline def `[rotate]`: typingsJapgolly.csstype.csstypeStrings.`[rotate]` = "[rotate]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[rotate]`]
+  
+  inline def `[rx]`: typingsJapgolly.csstype.csstypeStrings.`[rx]` = "[rx]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[rx]`]
+  
+  inline def `[ry]`: typingsJapgolly.csstype.csstypeStrings.`[ry]` = "[ry]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[ry]`]
+  
+  inline def `[scale]`: typingsJapgolly.csstype.csstypeStrings.`[scale]` = "[scale]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[scale]`]
+  
+  inline def `[seed]`: typingsJapgolly.csstype.csstypeStrings.`[seed]` = "[seed]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[seed]`]
+  
+  inline def `[shape-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[shape-rendering]` = "[shape-rendering]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[shape-rendering]`]
+  
+  inline def `[side]`: typingsJapgolly.csstype.csstypeStrings.`[side]` = "[side]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[side]`]
+  
+  inline def `[slope]`: typingsJapgolly.csstype.csstypeStrings.`[slope]` = "[slope]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[slope]`]
+  
+  inline def `[solid-color]`: typingsJapgolly.csstype.csstypeStrings.`[solid-color]` = "[solid-color]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[solid-color]`]
+  
+  inline def `[solid-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[solid-opacity]` = "[solid-opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[solid-opacity]`]
+  
+  inline def `[spacing]`: typingsJapgolly.csstype.csstypeStrings.`[spacing]` = "[spacing]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[spacing]`]
+  
+  inline def `[specularConstant]`: typingsJapgolly.csstype.csstypeStrings.`[specularConstant]` = "[specularConstant]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[specularConstant]`]
+  
+  inline def `[specularExponent]`: typingsJapgolly.csstype.csstypeStrings.`[specularExponent]` = "[specularExponent]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[specularExponent]`]
+  
+  inline def `[spreadMethod]`: typingsJapgolly.csstype.csstypeStrings.`[spreadMethod]` = "[spreadMethod]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[spreadMethod]`]
+  
+  inline def `[startOffset]`: typingsJapgolly.csstype.csstypeStrings.`[startOffset]` = "[startOffset]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[startOffset]`]
+  
+  inline def `[stdDeviation]`: typingsJapgolly.csstype.csstypeStrings.`[stdDeviation]` = "[stdDeviation]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stdDeviation]`]
+  
+  inline def `[stemh]`: typingsJapgolly.csstype.csstypeStrings.`[stemh]` = "[stemh]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stemh]`]
+  
+  inline def `[stemv]`: typingsJapgolly.csstype.csstypeStrings.`[stemv]` = "[stemv]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stemv]`]
+  
+  inline def `[stitchTiles]`: typingsJapgolly.csstype.csstypeStrings.`[stitchTiles]` = "[stitchTiles]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stitchTiles]`]
+  
+  inline def `[stop-color]`: typingsJapgolly.csstype.csstypeStrings.`[stop-color]` = "[stop-color]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stop-color]`]
+  
+  inline def `[stop-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[stop-opacity]` = "[stop-opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stop-opacity]`]
+  
+  inline def `[strikethrough-position]`: typingsJapgolly.csstype.csstypeStrings.`[strikethrough-position]` = "[strikethrough-position]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[strikethrough-position]`]
+  
+  inline def `[strikethrough-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[strikethrough-thickness]` = "[strikethrough-thickness]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[strikethrough-thickness]`]
+  
+  inline def `[string]`: typingsJapgolly.csstype.csstypeStrings.`[string]` = "[string]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[string]`]
+  
+  inline def `[stroke-dasharray]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-dasharray]` = "[stroke-dasharray]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-dasharray]`]
+  
+  inline def `[stroke-dashoffset]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-dashoffset]` = "[stroke-dashoffset]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-dashoffset]`]
+  
+  inline def `[stroke-linecap]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-linecap]` = "[stroke-linecap]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-linecap]`]
+  
+  inline def `[stroke-linejoin]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-linejoin]` = "[stroke-linejoin]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-linejoin]`]
+  
+  inline def `[stroke-miterlimit]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-miterlimit]` = "[stroke-miterlimit]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-miterlimit]`]
+  
+  inline def `[stroke-opacity]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-opacity]` = "[stroke-opacity]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-opacity]`]
+  
+  inline def `[stroke-width]`: typingsJapgolly.csstype.csstypeStrings.`[stroke-width]` = "[stroke-width]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke-width]`]
+  
+  inline def `[stroke]`: typingsJapgolly.csstype.csstypeStrings.`[stroke]` = "[stroke]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[stroke]`]
+  
+  inline def `[style]`: typingsJapgolly.csstype.csstypeStrings.`[style]` = "[style]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[style]`]
+  
+  inline def `[surfaceScale]`: typingsJapgolly.csstype.csstypeStrings.`[surfaceScale]` = "[surfaceScale]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[surfaceScale]`]
+  
+  inline def `[systemLanguage]`: typingsJapgolly.csstype.csstypeStrings.`[systemLanguage]` = "[systemLanguage]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[systemLanguage]`]
+  
+  inline def `[tabindex]`: typingsJapgolly.csstype.csstypeStrings.`[tabindex]` = "[tabindex]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[tabindex]`]
+  
+  inline def `[targetX]`: typingsJapgolly.csstype.csstypeStrings.`[targetX]` = "[targetX]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[targetX]`]
+  
+  inline def `[targetY]`: typingsJapgolly.csstype.csstypeStrings.`[targetY]` = "[targetY]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[targetY]`]
+  
+  inline def `[target]`: typingsJapgolly.csstype.csstypeStrings.`[target]` = "[target]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[target]`]
+  
+  inline def `[text-anchor]`: typingsJapgolly.csstype.csstypeStrings.`[text-anchor]` = "[text-anchor]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[text-anchor]`]
+  
+  inline def `[text-decoration]`: typingsJapgolly.csstype.csstypeStrings.`[text-decoration]` = "[text-decoration]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[text-decoration]`]
+  
+  inline def `[text-overflow]`: typingsJapgolly.csstype.csstypeStrings.`[text-overflow]` = "[text-overflow]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[text-overflow]`]
+  
+  inline def `[text-rendering]`: typingsJapgolly.csstype.csstypeStrings.`[text-rendering]` = "[text-rendering]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[text-rendering]`]
+  
+  inline def `[textLength]`: typingsJapgolly.csstype.csstypeStrings.`[textLength]` = "[textLength]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[textLength]`]
+  
+  inline def `[title]`: typingsJapgolly.csstype.csstypeStrings.`[title]` = "[title]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[title]`]
+  
+  inline def `[to]`: typingsJapgolly.csstype.csstypeStrings.`[to]` = "[to]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[to]`]
+  
+  inline def `[transform-origin]`: typingsJapgolly.csstype.csstypeStrings.`[transform-origin]` = "[transform-origin]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[transform-origin]`]
+  
+  inline def `[transform]`: typingsJapgolly.csstype.csstypeStrings.`[transform]` = "[transform]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[transform]`]
+  
+  inline def `[type]`: typingsJapgolly.csstype.csstypeStrings.`[type]` = "[type]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[type]`]
+  
+  inline def `[u1]`: typingsJapgolly.csstype.csstypeStrings.`[u1]` = "[u1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[u1]`]
+  
+  inline def `[u2]`: typingsJapgolly.csstype.csstypeStrings.`[u2]` = "[u2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[u2]`]
+  
+  inline def `[underline-position]`: typingsJapgolly.csstype.csstypeStrings.`[underline-position]` = "[underline-position]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[underline-position]`]
+  
+  inline def `[underline-thickness]`: typingsJapgolly.csstype.csstypeStrings.`[underline-thickness]` = "[underline-thickness]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[underline-thickness]`]
+  
+  inline def `[unicode-bidi]`: typingsJapgolly.csstype.csstypeStrings.`[unicode-bidi]` = "[unicode-bidi]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[unicode-bidi]`]
+  
+  inline def `[unicode-range]`: typingsJapgolly.csstype.csstypeStrings.`[unicode-range]` = "[unicode-range]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[unicode-range]`]
+  
+  inline def `[unicode]`: typingsJapgolly.csstype.csstypeStrings.`[unicode]` = "[unicode]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[unicode]`]
+  
+  inline def `[units-per-em]`: typingsJapgolly.csstype.csstypeStrings.`[units-per-em]` = "[units-per-em]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[units-per-em]`]
+  
+  inline def `[v-alphabetic]`: typingsJapgolly.csstype.csstypeStrings.`[v-alphabetic]` = "[v-alphabetic]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[v-alphabetic]`]
+  
+  inline def `[v-hanging]`: typingsJapgolly.csstype.csstypeStrings.`[v-hanging]` = "[v-hanging]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[v-hanging]`]
+  
+  inline def `[v-ideographic]`: typingsJapgolly.csstype.csstypeStrings.`[v-ideographic]` = "[v-ideographic]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[v-ideographic]`]
+  
+  inline def `[v-mathematical]`: typingsJapgolly.csstype.csstypeStrings.`[v-mathematical]` = "[v-mathematical]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[v-mathematical]`]
+  
+  inline def `[values]`: typingsJapgolly.csstype.csstypeStrings.`[values]` = "[values]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[values]`]
+  
+  inline def `[vector-effect]`: typingsJapgolly.csstype.csstypeStrings.`[vector-effect]` = "[vector-effect]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[vector-effect]`]
+  
+  inline def `[version]`: typingsJapgolly.csstype.csstypeStrings.`[version]` = "[version]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[version]`]
+  
+  inline def `[vert-adv-y]`: typingsJapgolly.csstype.csstypeStrings.`[vert-adv-y]` = "[vert-adv-y]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[vert-adv-y]`]
+  
+  inline def `[vert-origin-x]`: typingsJapgolly.csstype.csstypeStrings.`[vert-origin-x]` = "[vert-origin-x]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[vert-origin-x]`]
+  
+  inline def `[vert-origin-y]`: typingsJapgolly.csstype.csstypeStrings.`[vert-origin-y]` = "[vert-origin-y]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[vert-origin-y]`]
+  
+  inline def `[viewBox]`: typingsJapgolly.csstype.csstypeStrings.`[viewBox]` = "[viewBox]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[viewBox]`]
+  
+  inline def `[viewTarget]`: typingsJapgolly.csstype.csstypeStrings.`[viewTarget]` = "[viewTarget]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[viewTarget]`]
+  
+  inline def `[visibility]`: typingsJapgolly.csstype.csstypeStrings.`[visibility]` = "[visibility]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[visibility]`]
+  
+  inline def `[white-space]`: typingsJapgolly.csstype.csstypeStrings.`[white-space]` = "[white-space]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[white-space]`]
+  
+  inline def `[width]`: typingsJapgolly.csstype.csstypeStrings.`[width]` = "[width]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[width]`]
+  
+  inline def `[widths]`: typingsJapgolly.csstype.csstypeStrings.`[widths]` = "[widths]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[widths]`]
+  
+  inline def `[word-spacing]`: typingsJapgolly.csstype.csstypeStrings.`[word-spacing]` = "[word-spacing]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[word-spacing]`]
+  
+  inline def `[writing-mode]`: typingsJapgolly.csstype.csstypeStrings.`[writing-mode]` = "[writing-mode]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[writing-mode]`]
+  
+  inline def `[x-height]`: typingsJapgolly.csstype.csstypeStrings.`[x-height]` = "[x-height]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[x-height]`]
+  
+  inline def `[x1]`: typingsJapgolly.csstype.csstypeStrings.`[x1]` = "[x1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[x1]`]
+  
+  inline def `[x2]`: typingsJapgolly.csstype.csstypeStrings.`[x2]` = "[x2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[x2]`]
+  
+  inline def `[xChannelSelector]`: typingsJapgolly.csstype.csstypeStrings.`[xChannelSelector]` = "[xChannelSelector]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[xChannelSelector]`]
+  
+  inline def `[x]`: typingsJapgolly.csstype.csstypeStrings.`[x]` = "[x]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[x]`]
+  
+  inline def `[y1]`: typingsJapgolly.csstype.csstypeStrings.`[y1]` = "[y1]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[y1]`]
+  
+  inline def `[y2]`: typingsJapgolly.csstype.csstypeStrings.`[y2]` = "[y2]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[y2]`]
+  
+  inline def `[yChannelSelector]`: typingsJapgolly.csstype.csstypeStrings.`[yChannelSelector]` = "[yChannelSelector]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[yChannelSelector]`]
+  
+  inline def `[y]`: typingsJapgolly.csstype.csstypeStrings.`[y]` = "[y]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[y]`]
+  
+  inline def `[z]`: typingsJapgolly.csstype.csstypeStrings.`[z]` = "[z]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[z]`]
+  
+  inline def `[zoomAndPan]`: typingsJapgolly.csstype.csstypeStrings.`[zoomAndPan]` = "[zoomAndPan]".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.`[zoomAndPan]`]
 }
-

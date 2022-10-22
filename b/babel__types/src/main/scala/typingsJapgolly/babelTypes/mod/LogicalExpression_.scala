@@ -4,45 +4,47 @@ import typingsJapgolly.babelTypes.babelTypesStrings.AmpersandAmpersand
 import typingsJapgolly.babelTypes.babelTypesStrings.LogicalExpression
 import typingsJapgolly.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
 import typingsJapgolly.babelTypes.babelTypesStrings.VerticallineVerticalline
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait LogicalExpression_
-  extends Binary
+  extends StObject
      with BaseNode
-     with Expression {
+     with Binary
+     with Expression
+     with Standardized {
+  
   var left: Expression
+  
   var operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark
+  
   var right: Expression
+  
   @JSName("type")
   var type_LogicalExpression_ : LogicalExpression
 }
-
 object LogicalExpression_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     left: Expression,
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
-    right: Expression,
-    `type`: LogicalExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
+    right: Expression
   ): LogicalExpression_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[LogicalExpression_]
   }
+  
+  extension [Self <: LogicalExpression_](x: Self) {
+    
+    inline def setLeft(value: Expression): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setOperator(value: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: LogicalExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

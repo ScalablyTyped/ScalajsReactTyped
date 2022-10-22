@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Diagnostics
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CausalityRelation extends js.Object
-
+sealed trait CausalityRelation extends StObject
 /** Tracks ways that synchronous work items may interact with asynchronous operations. */
 @JSGlobal("Windows.Foundation.Diagnostics.CausalityRelation")
 @js.native
-object CausalityRelation extends js.Object {
+object CausalityRelation extends StObject {
+  
   /** Indicates that a synchronous work items has assigned a callback or continuation to be run by an asynchronous operation. */
   @js.native
-  sealed trait assignDelegate extends CausalityRelation
+  sealed trait assignDelegate
+    extends StObject
+       with CausalityRelation
   
   /** Indicates that a synchronous work item was canceled. */
   @js.native
-  sealed trait cancel extends CausalityRelation
+  sealed trait cancel
+    extends StObject
+       with CausalityRelation
   
   /** Indicates that a synchronous work item has satisfied a choice asynchronous operation. */
   @js.native
-  sealed trait choice extends CausalityRelation
+  sealed trait choice
+    extends StObject
+       with CausalityRelation
   
   /** Indicates that a synchronous work item caused an error in an asynchronous operation. */
   @js.native
-  sealed trait error extends CausalityRelation
+  sealed trait error
+    extends StObject
+       with CausalityRelation
   
   /** Indicates that a synchronous work item has satisfied part of a join asynchronous operation. */
   @js.native
-  sealed trait join extends CausalityRelation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CausalityRelation with Double] = js.native
-  /* 0 */ @js.native
-  object assignDelegate extends TopLevel[assignDelegate with Double]
-  
-  /* 3 */ @js.native
-  object cancel extends TopLevel[cancel with Double]
-  
-  /* 2 */ @js.native
-  object choice extends TopLevel[choice with Double]
-  
-  /* 4 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 1 */ @js.native
-  object join extends TopLevel[join with Double]
-  
+  sealed trait join
+    extends StObject
+       with CausalityRelation
 }
-

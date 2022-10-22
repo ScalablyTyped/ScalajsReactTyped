@@ -1,10 +1,10 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.ConnectionProfile")
 @js.native
-class ConnectionProfile () extends IConnectionProfile
-
+trait ConnectionProfile
+  extends StObject
+     with IConnectionProfile

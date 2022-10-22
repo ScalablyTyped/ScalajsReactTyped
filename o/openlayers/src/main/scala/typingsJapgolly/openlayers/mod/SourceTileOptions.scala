@@ -3,49 +3,81 @@ package typingsJapgolly.openlayers.mod
 import typingsJapgolly.openlayers.mod.olx.LogoOptions
 import typingsJapgolly.openlayers.mod.source.State
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SourceTileOptions extends js.Object {
+trait SourceTileOptions extends StObject {
+  
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
   var cacheSize: js.UndefOr[Double] = js.undefined
+  
   var extent: js.UndefOr[Extent_] = js.undefined
+  
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
+  
   var opaque: js.UndefOr[Boolean] = js.undefined
+  
   var projection: ProjectionLike
+  
   var state: js.UndefOr[State] = js.undefined
+  
   var tileGrid: js.UndefOr[TileGrid] = js.undefined
+  
   var tilePixelRatio: js.UndefOr[Double] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object SourceTileOptions {
-  @scala.inline
-  def apply(
-    attributions: AttributionLike = null,
-    cacheSize: Int | Double = null,
-    extent: Extent_ = null,
-    logo: String | LogoOptions = null,
-    opaque: js.UndefOr[Boolean] = js.undefined,
-    projection: ProjectionLike = null,
-    state: State = null,
-    tileGrid: TileGrid = null,
-    tilePixelRatio: Int | Double = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): SourceTileOptions = {
+  
+  inline def apply(): SourceTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(opaque)) __obj.updateDynamic("opaque")(opaque.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
-    if (tilePixelRatio != null) __obj.updateDynamic("tilePixelRatio")(tilePixelRatio.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceTileOptions]
   }
+  
+  extension [Self <: SourceTileOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    
+    inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setOpaque(value: Boolean): Self = StObject.set(x, "opaque", value.asInstanceOf[js.Any])
+    
+    inline def setOpaqueUndefined: Self = StObject.set(x, "opaque", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    
+    inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+    
+    inline def setTilePixelRatio(value: Double): Self = StObject.set(x, "tilePixelRatio", value.asInstanceOf[js.Any])
+    
+    inline def setTilePixelRatioUndefined: Self = StObject.set(x, "tilePixelRatio", js.undefined)
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

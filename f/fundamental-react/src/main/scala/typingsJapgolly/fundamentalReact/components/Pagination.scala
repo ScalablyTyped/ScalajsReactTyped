@@ -1,67 +1,52 @@
 package typingsJapgolly.fundamentalReact.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.AnonNext
-import typingsJapgolly.fundamentalReact.paginationMod.PaginationProps
-import typingsJapgolly.fundamentalReact.paginationMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.anon.Next
+import typingsJapgolly.fundamentalReact.libPaginationPaginationMod.PaginationProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pagination {
-  def apply(
-    itemsTotal: Double,
-    onClick: Double => Callback,
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    className: String = null,
-    customStyles: StringDictionary[js.Any] = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    displayTotal: js.UndefOr[Boolean] = js.undefined,
-    displayTotalProps: StringDictionary[js.Any] = null,
-    initialPage: Int | Double = null,
-    itemsPerPage: Int | Double = null,
-    linkProps: StringDictionary[js.Any] = null,
-    localizedText: AnonNext = null,
-    nextProps: StringDictionary[js.Any] = null,
-    prevProps: StringDictionary[js.Any] = null,
-    totalText: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PaginationProps, default, Unit, PaginationProps] = {
-    val __obj = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: scala.Double) => onClick(t0).runNow()))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(displayTotal)) __obj.updateDynamic("displayTotal")(displayTotal.asInstanceOf[js.Any])
-    if (displayTotalProps != null) __obj.updateDynamic("displayTotalProps")(displayTotalProps.asInstanceOf[js.Any])
-    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
-    if (linkProps != null) __obj.updateDynamic("linkProps")(linkProps.asInstanceOf[js.Any])
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
-    if (nextProps != null) __obj.updateDynamic("nextProps")(nextProps.asInstanceOf[js.Any])
-    if (prevProps != null) __obj.updateDynamic("prevProps")(prevProps.asInstanceOf[js.Any])
-    if (totalText != null) __obj.updateDynamic("totalText")(totalText.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fundamentalReact.paginationMod.PaginationProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fundamentalReact.paginationMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.paginationMod.PaginationProps])(children: _*)
+  inline def apply(itemsTotal: Double, onClick: /* repeated */ Any => Any): Builder = {
+    val __props = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
+    new Builder(js.Array(this.component, __props.asInstanceOf[PaginationProps]))
   }
-  @JSImport("fundamental-react/lib/Pagination/Pagination", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("fundamental-react", "Pagination")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fundamentalReact.mod.Pagination] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def displayTotal(value: Boolean): this.type = set("displayTotal", value.asInstanceOf[js.Any])
+    
+    inline def displayTotalProps(value: Any): this.type = set("displayTotalProps", value.asInstanceOf[js.Any])
+    
+    inline def initialPage(value: Double): this.type = set("initialPage", value.asInstanceOf[js.Any])
+    
+    inline def itemsPerPage(value: Double): this.type = set("itemsPerPage", value.asInstanceOf[js.Any])
+    
+    inline def linkProps(value: Any): this.type = set("linkProps", value.asInstanceOf[js.Any])
+    
+    inline def localizedText(value: Next): this.type = set("localizedText", value.asInstanceOf[js.Any])
+    
+    inline def nextProps(value: Any): this.type = set("nextProps", value.asInstanceOf[js.Any])
+    
+    inline def prevProps(value: Any): this.type = set("prevProps", value.asInstanceOf[js.Any])
+    
+    inline def totalText(value: String): this.type = set("totalText", value.asInstanceOf[js.Any])
+    
+    inline def visiblePageTotal(value: Double): this.type = set("visiblePageTotal", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PaginationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

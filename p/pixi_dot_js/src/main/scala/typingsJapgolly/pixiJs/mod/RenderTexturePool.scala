@@ -1,39 +1,33 @@
 package typingsJapgolly.pixiJs.mod
 
-import typingsJapgolly.pixiJs.AnonScaleMode
+import typingsJapgolly.pixiCore.mod.IBaseTextureOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("pixi.js", "RenderTexturePool")
+@js.native
 /**
-  * Experimental!
-  *
-  * Texture pool, used by FilterSystem and plugins
-  * Stores collection of temporary pow2 or screen-sized renderTextures
-  *
-  * If you use custom RenderTexturePool for your filters, you can use methods
-  * `getFilterTexture` and `returnFilterTexture` same as in
-  *
-  * @class
-  * @memberof PIXI
+  * @param textureOptions - options that will be passed to BaseRenderTexture constructor
+  * @param {PIXI.SCALE_MODES} [textureOptions.scaleMode] - See {@link PIXI.SCALE_MODES} for possible values.
   */
-@JSImport("pixi.js", "RenderTexturePool")
-@js.native
-class RenderTexturePool ()
-  extends typingsJapgolly.pixiJs.PIXI.RenderTexturePool {
-  def this(textureOptions: AnonScaleMode) = this()
+open class RenderTexturePool ()
+  extends typingsJapgolly.pixiCore.mod.RenderTexturePool {
+  def this(textureOptions: IBaseTextureOptions[Any]) = this()
 }
-
 /* static members */
-@JSImport("pixi.js", "RenderTexturePool")
-@js.native
-object RenderTexturePool extends js.Object {
+object RenderTexturePool {
+  
+  @JSImport("pixi.js", "RenderTexturePool")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Key that is used to store fullscreen renderTextures in a pool
-    *
-    * @static
-    * @const {string}
+    * @constant
     */
-  val SCREEN_KEY: String = js.native
+  @JSImport("pixi.js", "RenderTexturePool.SCREEN_KEY")
+  @js.native
+  def SCREEN_KEY: Double = js.native
+  inline def SCREEN_KEY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN_KEY")(x.asInstanceOf[js.Any])
 }
-

@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains text area information for the config. Its properties determine how the text input is
@@ -21,33 +20,46 @@ import scala.scalajs.js.annotation._
   *       .setAllowOverride(true)
   *       .setPlaceholder("Search for an artist for all songs.");
   */
-trait TextArea extends js.Object {
+trait TextArea extends StObject {
+  
   def setAllowOverride(allowOverride: Boolean): TextArea
+  
   def setHelpText(helpText: String): TextArea
+  
   def setId(id: String): TextArea
+  
   def setIsDynamic(isDynamic: Boolean): TextArea
+  
   def setName(name: String): TextArea
+  
   def setPlaceholder(placeholder: String): TextArea
 }
-
 object TextArea {
-  @scala.inline
-  def apply(
-    setAllowOverride: Boolean => CallbackTo[TextArea],
-    setHelpText: String => CallbackTo[TextArea],
-    setId: String => CallbackTo[TextArea],
-    setIsDynamic: Boolean => CallbackTo[TextArea],
-    setName: String => CallbackTo[TextArea],
-    setPlaceholder: String => CallbackTo[TextArea]
+  
+  inline def apply(
+    setAllowOverride: Boolean => TextArea,
+    setHelpText: String => TextArea,
+    setId: String => TextArea,
+    setIsDynamic: Boolean => TextArea,
+    setName: String => TextArea,
+    setPlaceholder: String => TextArea
   ): TextArea = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAllowOverride")(js.Any.fromFunction1((t0: scala.Boolean) => setAllowOverride(t0).runNow()))
-    __obj.updateDynamic("setHelpText")(js.Any.fromFunction1((t0: java.lang.String) => setHelpText(t0).runNow()))
-    __obj.updateDynamic("setId")(js.Any.fromFunction1((t0: java.lang.String) => setId(t0).runNow()))
-    __obj.updateDynamic("setIsDynamic")(js.Any.fromFunction1((t0: scala.Boolean) => setIsDynamic(t0).runNow()))
-    __obj.updateDynamic("setName")(js.Any.fromFunction1((t0: java.lang.String) => setName(t0).runNow()))
-    __obj.updateDynamic("setPlaceholder")(js.Any.fromFunction1((t0: java.lang.String) => setPlaceholder(t0).runNow()))
+    val __obj = js.Dynamic.literal(setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName), setPlaceholder = js.Any.fromFunction1(setPlaceholder))
     __obj.asInstanceOf[TextArea]
   }
+  
+  extension [Self <: TextArea](x: Self) {
+    
+    inline def setSetAllowOverride(value: Boolean => TextArea): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => TextArea): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    
+    inline def setSetId(value: String => TextArea): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    
+    inline def setSetIsDynamic(value: Boolean => TextArea): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
+    
+    inline def setSetName(value: String => TextArea): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    
+    inline def setSetPlaceholder(value: String => TextArea): Self = StObject.set(x, "setPlaceholder", js.Any.fromFunction1(value))
+  }
 }
-

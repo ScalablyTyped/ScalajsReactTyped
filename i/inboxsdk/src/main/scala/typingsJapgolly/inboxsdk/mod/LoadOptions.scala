@@ -1,8 +1,8 @@
 package typingsJapgolly.inboxsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // // Undocummented
 // var IMPL_VERSION: string;
@@ -12,20 +12,33 @@ import scala.scalajs.js.annotation._
 //   error: () => any;
 //   event: () => any;
 // };
-trait LoadOptions extends js.Object {
+trait LoadOptions extends StObject {
+  
   var appIconUrl: js.UndefOr[String] = js.undefined
+  
   var appName: js.UndefOr[String] = js.undefined
+  
   var suppressAddonTitle: js.UndefOr[String] = js.undefined
 }
-
 object LoadOptions {
-  @scala.inline
-  def apply(appIconUrl: String = null, appName: String = null, suppressAddonTitle: String = null): LoadOptions = {
+  
+  inline def apply(): LoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (appIconUrl != null) __obj.updateDynamic("appIconUrl")(appIconUrl.asInstanceOf[js.Any])
-    if (appName != null) __obj.updateDynamic("appName")(appName.asInstanceOf[js.Any])
-    if (suppressAddonTitle != null) __obj.updateDynamic("suppressAddonTitle")(suppressAddonTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadOptions]
   }
+  
+  extension [Self <: LoadOptions](x: Self) {
+    
+    inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
+    
+    inline def setAppIconUrlUndefined: Self = StObject.set(x, "appIconUrl", js.undefined)
+    
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    
+    inline def setSuppressAddonTitle(value: String): Self = StObject.set(x, "suppressAddonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressAddonTitleUndefined: Self = StObject.set(x, "suppressAddonTitle", js.undefined)
+  }
 }
-

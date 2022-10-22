@@ -1,31 +1,40 @@
 package typingsJapgolly.anydbSql.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Queryable[T] extends js.Object {
+trait Queryable[T] extends StObject {
+  
   def delete(): ModifyingQuery
-  def select[U](nodes: js.Any*): Query[U]
-  def selectDeep[U](nodesOrTables: js.Any*): Query[U]
-  def where(nodes: js.Any*): Query[T]
+  
+  def select[U](nodes: Any*): Query[U]
+  
+  def selectDeep[U](nodesOrTables: Any*): Query[U]
+  
+  def where(nodes: Any*): Query[T]
 }
-
 object Queryable {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     delete: CallbackTo[ModifyingQuery],
-    select: /* repeated */ js.Any => CallbackTo[Query[js.Any]],
-    selectDeep: /* repeated */ js.Any => CallbackTo[Query[js.Any]],
-    where: /* repeated */ js.Any => CallbackTo[Query[T]]
+    select: /* repeated */ Any => Query[Any],
+    selectDeep: /* repeated */ Any => Query[Any],
+    where: /* repeated */ Any => Query[T]
   ): Queryable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("delete")(delete.toJsFn)
-    __obj.updateDynamic("select")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => select(t0).runNow()))
-    __obj.updateDynamic("selectDeep")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => selectDeep(t0).runNow()))
-    __obj.updateDynamic("where")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => where(t0).runNow()))
+    val __obj = js.Dynamic.literal(delete = delete.toJsFn, select = js.Any.fromFunction1(select), selectDeep = js.Any.fromFunction1(selectDeep), where = js.Any.fromFunction1(where))
     __obj.asInstanceOf[Queryable[T]]
   }
+  
+  extension [Self <: Queryable[?], T](x: Self & Queryable[T]) {
+    
+    inline def setDelete(value: CallbackTo[ModifyingQuery]): Self = StObject.set(x, "delete", value.toJsFn)
+    
+    inline def setSelect(value: /* repeated */ Any => Query[Any]): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    
+    inline def setSelectDeep(value: /* repeated */ Any => Query[Any]): Self = StObject.set(x, "selectDeep", js.Any.fromFunction1(value))
+    
+    inline def setWhere(value: /* repeated */ Any => Query[T]): Self = StObject.set(x, "where", js.Any.fromFunction1(value))
+  }
 }
-

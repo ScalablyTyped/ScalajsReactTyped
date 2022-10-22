@@ -1,7 +1,7 @@
 
 # Scala.js typings for pixelmatch
 
-Typings are for version 5.0
+Typings are for version 5.2
 
 ## Library description:
 The smallest and fastest pixel-level image comparison library.
@@ -10,10 +10,10 @@ The smallest and fastest pixel-level image comparison library.
 | ------------------ | :-------------: |
 | Full name          | pixelmatch |
 | Keywords           | image, comparison, diff |
-| # releases         | 5 |
-| # dependents       | 115 |
-| # downloads        | 30861256 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 9383455.333333334 |
+| # stars            | 4950.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/pixelmatch#readme)

@@ -1,9 +1,9 @@
 package typingsJapgolly.msRestAzure.mod
 
 import typingsJapgolly.msRest.mod.WebResource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest-azure", "MSITokenCredentials")
 @js.native
@@ -12,13 +12,9 @@ import scala.scalajs.js.annotation._
   * 
   * @param {MSIOptions} [options] - Optional parameters.
   */
-class MSITokenCredentials () extends js.Object {
+open class MSITokenCredentials () extends StObject {
   def this(options: MSIOptions) = this()
-  /**
-    * @property {string} resource - The resource uri or token audience for which the token is needed.
-    * Default is: "https://management.azure.com/"
-    */
-  var resource: js.UndefOr[String] = js.native
+  
   /**
     * Prepares and sends a POST request to a service endpoint hosted on the Azure VM, which responds with the access token.
     * @param  {function} callback  The callback in the form (err, result)
@@ -27,6 +23,13 @@ class MSITokenCredentials () extends js.Object {
     *                       {object} [tokenResponse] The tokenResponse (tokenType and accessToken are the two important properties). 
     */
   def getToken(callback: js.Function2[/* error */ js.Error, /* result */ TokenResponse, Unit]): Unit = js.native
+  
+  /**
+    * @property {string} resource - The resource uri or token audience for which the token is needed.
+    * Default is: "https://management.azure.com/"
+    */
+  var resource: js.UndefOr[String] = js.native
+  
   /**
     * Signs a request with the Authentication header.
     *
@@ -36,4 +39,3 @@ class MSITokenCredentials () extends js.Object {
     */
   def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }
-

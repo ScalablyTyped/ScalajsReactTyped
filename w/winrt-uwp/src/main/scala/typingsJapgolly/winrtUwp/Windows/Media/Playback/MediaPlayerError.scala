@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaPlayerError extends js.Object
-
+sealed trait MediaPlayerError extends StObject
 /** Indicates possible media player errors. */
 @JSGlobal("Windows.Media.Playback.MediaPlayerError")
 @js.native
-object MediaPlayerError extends js.Object {
+object MediaPlayerError extends StObject {
+  
   /** The last operation was aborted. */
   @js.native
-  sealed trait aborted extends MediaPlayerError
+  sealed trait aborted
+    extends StObject
+       with MediaPlayerError
   
   /** A media decoding error occurred. */
   @js.native
-  sealed trait decodingError extends MediaPlayerError
+  sealed trait decodingError
+    extends StObject
+       with MediaPlayerError
   
   /** A network error occurred. */
   @js.native
-  sealed trait networkError extends MediaPlayerError
+  sealed trait networkError
+    extends StObject
+       with MediaPlayerError
   
   /** The media type is not supported. */
   @js.native
-  sealed trait sourceNotSupported extends MediaPlayerError
+  sealed trait sourceNotSupported
+    extends StObject
+       with MediaPlayerError
   
   /** The error is unknown. */
   @js.native
-  sealed trait unknown extends MediaPlayerError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaPlayerError with Double] = js.native
-  /* 1 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 3 */ @js.native
-  object decodingError extends TopLevel[decodingError with Double]
-  
-  /* 2 */ @js.native
-  object networkError extends TopLevel[networkError with Double]
-  
-  /* 4 */ @js.native
-  object sourceNotSupported extends TopLevel[sourceNotSupported with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with MediaPlayerError
 }
-

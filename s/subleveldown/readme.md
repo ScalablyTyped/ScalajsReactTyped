@@ -10,15 +10,15 @@ Split a levelup database into sublevels with their own keyspace, encoding and ev
 | ------------------ | :-------------: |
 | Full name          | subleveldown |
 | Keywords           | level |
-| # releases         | 10 |
-| # dependents       | 108 |
-| # downloads        | 530510 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 177163.0 |
+| # stars            | 116.0 |
 
 ## Links
-- [Homepage](https://github.com/level/subleveldown)
-- [Bugs](https://github.com/level/subleveldown/issues)
-- [Repository](https://github.com/level/subleveldown)
+- [Homepage](https://github.com/Level/subleveldown)
+- [Bugs](https://github.com/Level/subleveldown/issues)
+- [Repository](https://github.com/Level/subleveldown)
 - [Npm](https://www.npmjs.com/package/subleveldown)
     
 

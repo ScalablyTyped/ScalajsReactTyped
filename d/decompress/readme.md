@@ -11,9 +11,9 @@ Extracting archives made easy
 | Full name          | decompress |
 | Keywords           | bz2, bzip2, decompress, extract, tar, tar.bz, tar.gz, zip, unzip |
 | # releases         | 1 |
-| # dependents       | 414 |
-| # downloads        | 68978106 |
-| # stars            | 20 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2097958E7 |
+| # stars            | 354.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/decompress#readme)

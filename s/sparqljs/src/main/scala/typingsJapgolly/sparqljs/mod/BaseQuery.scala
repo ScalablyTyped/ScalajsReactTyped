@@ -2,33 +2,50 @@ package typingsJapgolly.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseQuery extends js.Object {
+trait BaseQuery extends StObject {
+  
   var base: js.UndefOr[String] = js.undefined
+  
   var prefixes: StringDictionary[String]
+  
   var `type`: query
+  
   var values: js.UndefOr[js.Array[ValuePatternRow]] = js.undefined
+  
   var where: js.UndefOr[js.Array[Pattern]] = js.undefined
 }
-
 object BaseQuery {
-  @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    `type`: query,
-    base: String = null,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): BaseQuery = {
+  
+  inline def apply(prefixes: StringDictionary[String]): BaseQuery = {
     val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[BaseQuery]
   }
+  
+  extension [Self <: BaseQuery](x: Self) {
+    
+    inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    
+    inline def setPrefixes(value: StringDictionary[String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: query): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: js.Array[ValuePatternRow]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: ValuePatternRow*): Self = StObject.set(x, "values", js.Array(value*))
+    
+    inline def setWhere(value: js.Array[Pattern]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+    
+    inline def setWhereVarargs(value: Pattern*): Self = StObject.set(x, "where", js.Array(value*))
+  }
 }
-

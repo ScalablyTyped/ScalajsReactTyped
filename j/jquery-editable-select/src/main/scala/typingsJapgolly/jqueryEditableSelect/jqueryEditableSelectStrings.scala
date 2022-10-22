@@ -1,84 +1,68 @@
 package typingsJapgolly.jqueryEditableSelect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryEditableSelectStrings {
-  @js.native
-  sealed trait add extends js.Object
   
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait clear extends StObject
+  inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait fast extends js.Object
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait filter extends js.Object
+  sealed trait fast extends StObject
+  inline def fast: fast = "fast".asInstanceOf[fast]
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait slow extends js.Object
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fast: fast = "fast".asInstanceOf[fast]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def slow: slow = "slow".asInstanceOf[slow]
+  @js.native
+  sealed trait slow extends StObject
+  inline def slow: slow = "slow".asInstanceOf[slow]
 }
-

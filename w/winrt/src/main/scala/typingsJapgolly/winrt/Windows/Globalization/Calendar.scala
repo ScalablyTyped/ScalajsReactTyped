@@ -1,14 +1,10 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
-import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Globalization.Calendar")
 @js.native
-class Calendar () extends ICalendar {
-  def this(languages: IIterable[String]) = this()
-  def this(languages: IIterable[String], calendar: String, clock: String) = this()
-}
-
+trait Calendar
+  extends StObject
+     with ICalendar

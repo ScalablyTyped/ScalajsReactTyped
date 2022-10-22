@@ -1,24 +1,20 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiJoi.hapiJoiStrings.optional
   - typingsJapgolly.hapiJoi.hapiJoiStrings.required
   - typingsJapgolly.hapiJoi.hapiJoiStrings.forbidden
 */
-trait PresenceMode extends js.Object
-
+trait PresenceMode extends StObject
 object PresenceMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def forbidden: typingsJapgolly.hapiJoi.hapiJoiStrings.forbidden = this.cast("forbidden")
-  @scala.inline
-  def optional: typingsJapgolly.hapiJoi.hapiJoiStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typingsJapgolly.hapiJoi.hapiJoiStrings.required = this.cast("required")
+  
+  inline def forbidden: typingsJapgolly.hapiJoi.hapiJoiStrings.forbidden = "forbidden".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.forbidden]
+  
+  inline def optional: typingsJapgolly.hapiJoi.hapiJoiStrings.optional = "optional".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.optional]
+  
+  inline def required: typingsJapgolly.hapiJoi.hapiJoiStrings.required = "required".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.required]
 }
-

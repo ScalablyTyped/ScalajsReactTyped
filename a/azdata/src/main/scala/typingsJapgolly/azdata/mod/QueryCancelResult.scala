@@ -1,19 +1,22 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryCancelResult extends js.Object {
+trait QueryCancelResult extends StObject {
+  
   var messages: String
 }
-
 object QueryCancelResult {
-  @scala.inline
-  def apply(messages: String): QueryCancelResult = {
-    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
   
+  inline def apply(messages: String): QueryCancelResult = {
+    val __obj = js.Dynamic.literal(messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryCancelResult]
   }
+  
+  extension [Self <: QueryCancelResult](x: Self) {
+    
+    inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,22 +1,37 @@
 package typingsJapgolly.typescriptServices.mod.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "Services.TextEdit")
 @js.native
-class TextEdit protected ()
-  extends typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit {
+open class TextEdit protected ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit {
   def this(minChar: Double, limChar: Double, text: String) = this()
+  
+  /* CompleteClass */
+  var limChar: Double = js.native
+  
+  /* CompleteClass */
+  var minChar: Double = js.native
+  
+  /* CompleteClass */
+  var text: String = js.native
 }
-
-/* static members */
-@JSImport("typescript-services", "Services.TextEdit")
-@js.native
-object TextEdit extends js.Object {
-  def createDelete(minChar: Double, limChar: Double): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = js.native
-  def createInsert(pos: Double, text: String): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = js.native
-  def createReplace(minChar: Double, limChar: Double, text: String): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = js.native
+object TextEdit {
+  
+  @JSImport("typescript-services", "Services.TextEdit")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def createDelete(minChar: Double, limChar: Double): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDelete")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit]
+  
+  /* static member */
+  inline def createInsert(pos: Double, text: String): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createInsert")(pos.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit]
+  
+  /* static member */
+  inline def createReplace(minChar: Double, limChar: Double, text: String): typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("createReplace")(minChar.asInstanceOf[js.Any], limChar.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.Services.TextEdit]
 }
-

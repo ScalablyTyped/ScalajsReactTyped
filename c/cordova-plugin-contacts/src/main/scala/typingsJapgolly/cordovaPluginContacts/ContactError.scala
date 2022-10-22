@@ -1,27 +1,29 @@
 package typingsJapgolly.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The ContactError object is returned to the user through the contactError callback function when an error occurs. */
-trait ContactError extends js.Object {
+trait ContactError extends StObject {
+  
   /** Error code */
   var code: Double
+  
   /** Error message */
   var message: String
 }
-
-@JSGlobal("ContactError")
-@js.native
-object ContactError extends Instantiable1[/* code */ Double, ContactError] {
-  var INVALID_ARGUMENT_ERROR: Double = js.native
-  var IO_ERROR: Double = js.native
-  var NOT_SUPPORTED_ERROR: Double = js.native
-  var PENDING_OPERATION_ERROR: Double = js.native
-  var PERMISSION_DENIED_ERROR: Double = js.native
-  var TIMEOUT_ERROR: Double = js.native
-  var UNKNOWN_ERROR: Double = js.native
+object ContactError {
+  
+  inline def apply(code: Double, message: String): ContactError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactError]
+  }
+  
+  extension [Self <: ContactError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -10,10 +10,10 @@ Helper to require() directories.
 | ------------------ | :-------------: |
 | Full name          | require-dir |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 848 |
-| # downloads        | 9538391 |
-| # stars            | 91 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 922151.0 |
+| # stars            | 480.0 |
 
 ## Links
 - [Homepage](https://github.com/aseemk/requireDir)

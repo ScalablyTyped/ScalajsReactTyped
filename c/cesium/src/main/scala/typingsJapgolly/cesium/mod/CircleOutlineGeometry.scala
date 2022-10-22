@@ -1,23 +1,56 @@
 package typingsJapgolly.cesium.mod
 
-import typingsJapgolly.cesium.AnonExtrudedHeight
+import typingsJapgolly.cesium.anon.ExtrudedHeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CircleOutlineGeometry")
 @js.native
-class CircleOutlineGeometry protected () extends Packable {
-  def this(options: AnonExtrudedHeight) = this()
+open class CircleOutlineGeometry protected () extends StObject {
+  def this(options: ExtrudedHeight) = this()
 }
-
 /* static members */
-@JSImport("cesium", "CircleOutlineGeometry")
-@js.native
-object CircleOutlineGeometry extends js.Object {
-  def createGeometry(circleGeometry: CircleOutlineGeometry): Geometry = js.native
-  def unpack(array: js.Array[Double]): js.Array[Double] = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CircleOutlineGeometry): js.Array[Double] = js.native
+object CircleOutlineGeometry {
+  
+  @JSImport("cesium", "CircleOutlineGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Computes the geometric representation of an outline of a circle on an ellipsoid, including its vertices, indices, and a bounding sphere.
+    * @param circleGeometry - A description of the circle.
+    * @returns The computed vertices and indices.
+    */
+  inline def createGeometry(circleGeometry: CircleOutlineGeometry): js.UndefOr[Geometry] = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(circleGeometry.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Geometry]]
+  
+  /**
+    * Stores the provided instance into the provided array.
+    * @param value - The value to pack.
+    * @param array - The array to pack into.
+    * @param [startingIndex = 0] - The index into the array at which to start packing the elements.
+    * @returns The array that was packed into
+    */
+  inline def pack(value: CircleOutlineGeometry, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def pack(value: CircleOutlineGeometry, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  /**
+    * The number of elements used to pack the object into an array.
+    */
+  @JSImport("cesium", "CircleOutlineGeometry.packedLength")
+  @js.native
+  def packedLength: Double = js.native
+  inline def packedLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("packedLength")(x.asInstanceOf[js.Any])
+  
+  /**
+    * Retrieves an instance from a packed array.
+    * @param array - The packed array.
+    * @param [startingIndex = 0] - The starting index of the element to be unpacked.
+    * @param [result] - The object into which to store the result.
+    * @returns The modified result parameter or a new CircleOutlineGeometry instance if one was not provided.
+    */
+  inline def unpack(array: js.Array[Double]): CircleOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CircleOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): CircleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CircleOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: CircleOutlineGeometry): CircleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CircleOutlineGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: CircleOutlineGeometry): CircleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CircleOutlineGeometry]
 }
-

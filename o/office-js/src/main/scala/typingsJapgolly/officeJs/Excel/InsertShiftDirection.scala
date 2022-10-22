@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InsertShiftDirection extends js.Object
-
+sealed trait InsertShiftDirection extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.InsertShiftDirection")
 @js.native
-object InsertShiftDirection extends js.Object {
+object InsertShiftDirection extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait down extends InsertShiftDirection
+  sealed trait down
+    extends StObject
+       with InsertShiftDirection
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait right extends InsertShiftDirection
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[InsertShiftDirection with String] = js.native
-  /* "Down" */ @js.native
-  object down extends TopLevel[down with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
+  sealed trait right
+    extends StObject
+       with InsertShiftDirection
 }
-

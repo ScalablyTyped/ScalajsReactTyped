@@ -1,45 +1,51 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LayerView
-  extends Accessor
+  extends StObject
+     with Accessor
      with corePromise {
+  
   /**
     * The layer being viewed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#layer)
     */
   val layer: Layer = js.native
+  
+  /**
+    * Indicates if the  [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#spatialReference) of the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) is supported by the layer view.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#spatialReferenceSupported)
+    */
+  val spatialReferenceSupported: Boolean = js.native
+  
   /**
     * Value is `true` if the layer is suspended (i.e., layer will not redraw or update itself when the extent changes).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#suspended)
     */
   val suspended: Boolean = js.native
+  
   /**
     * Value is `true` when the layer is updating; for example, if it is in the process of fetching data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#updating)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#updating)
     */
   val updating: Boolean = js.native
+  
   /**
-    * When `true`, the layer is visible in the view. Set this property to `false` to hide the layer from the view.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#visible)
+    * When `true`, the layer is visible in the view.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-LayerView.html#visible)
     */
   var visible: Boolean = js.native
 }
-
-@JSGlobal("__esri.LayerView")
-@js.native
-object LayerView extends TopLevel[LayerViewConstructor]
-

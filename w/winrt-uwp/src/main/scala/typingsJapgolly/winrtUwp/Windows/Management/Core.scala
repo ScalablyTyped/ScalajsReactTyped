@@ -1,27 +1,11 @@
 package typingsJapgolly.winrtUwp.Windows.Management
 
-import typingsJapgolly.winrtUwp.Windows.Storage.ApplicationData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Management.Core")
-@js.native
-object Core extends js.Object {
+object Core {
+  
   /** Enables you to access and manage the app data store for a package family. */
-  @js.native
-  abstract class ApplicationDataManager () extends js.Object
-  
-  /* static members */
-  @js.native
-  object ApplicationDataManager extends js.Object {
-    /**
-      * Provides access to the app data store for the specified package family.
-      * @param packageFamilyName The package family name.
-      * @return The app data store.
-      */
-    def createForPackageFamily(packageFamilyName: String): ApplicationData = js.native
-  }
-  
+  trait ApplicationDataManager extends StObject
 }
-

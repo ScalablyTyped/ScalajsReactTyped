@@ -10,10 +10,10 @@ Escape LaTeX special characters with Javascript
 | ------------------ | :-------------: |
 | Full name          | escape-latex |
 | Keywords           | latex, escape |
-| # releases         | 11 |
-| # dependents       | 12 |
-| # downloads        | 5506129 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1609838.6666666667 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/dangmai/escape-latex#readme)

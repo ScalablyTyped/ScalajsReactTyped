@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the start time and duration for an established or prior connection. */
-@JSGlobal("Windows.Networking.Connectivity.ConnectivityInterval")
-@js.native
-abstract class ConnectivityInterval () extends js.Object {
+trait ConnectivityInterval extends StObject {
+  
   /** Indicates the duration of connectivity. */
-  var connectionDuration: Double = js.native
+  var connectionDuration: Double
+  
   /** Indicates when the connection was initially established. */
-  var startTime: js.Date = js.native
+  var startTime: js.Date
 }
-
+object ConnectivityInterval {
+  
+  inline def apply(connectionDuration: Double, startTime: js.Date): ConnectivityInterval = {
+    val __obj = js.Dynamic.literal(connectionDuration = connectionDuration.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectivityInterval]
+  }
+  
+  extension [Self <: ConnectivityInterval](x: Self) {
+    
+    inline def setConnectionDuration(value: Double): Self = StObject.set(x, "connectionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setStartTime(value: js.Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+  }
+}

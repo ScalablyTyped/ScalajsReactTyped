@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.XrmEnum
 
 import typingsJapgolly.xrm.xrmStrings.collapsed
 import typingsJapgolly.xrm.xrmStrings.expanded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Display States for setDisplayState() on {@link Controls.ProcessControl.setDisplayState Processes} and {@link Controls.Tab.setDisplayState Tabs}.
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.expanded
   - typingsJapgolly.xrm.xrmStrings.collapsed
 */
-trait DisplayState extends js.Object
-
+trait DisplayState extends StObject
 object DisplayState {
-  @scala.inline
-  def Collapsed: collapsed = this.cast("collapsed")
-  @scala.inline
-  def Expanded: expanded = this.cast("expanded")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  
+  inline def Expanded: expanded = "expanded".asInstanceOf[expanded]
 }
-

@@ -10,10 +10,10 @@ Parse the accept-language header from a HTTP request
 | ------------------ | :-------------: |
 | Full name          | accept-language-parser |
 | Keywords           | accept-language, i18n, parser |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 1587430 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1004958.3333333334 |
+| # stars            | 130.0 |
 
 ## Links
 - [Homepage](https://github.com/opentable/accept-language-parser)

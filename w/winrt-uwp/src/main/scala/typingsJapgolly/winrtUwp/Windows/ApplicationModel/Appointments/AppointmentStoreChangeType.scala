@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentStoreChangeType extends js.Object
-
+sealed trait AppointmentStoreChangeType extends StObject
 /** Specifies the type of change represented by an AppointmentStoreChange object. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentStoreChangeType")
 @js.native
-object AppointmentStoreChangeType extends js.Object {
+object AppointmentStoreChangeType extends StObject {
+  
   /** An appointment was created. */
   @js.native
-  sealed trait appointmentCreated extends AppointmentStoreChangeType
+  sealed trait appointmentCreated
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** An appointment was deleted. */
   @js.native
-  sealed trait appointmentDeleted extends AppointmentStoreChangeType
+  sealed trait appointmentDeleted
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** An appointment was modified. */
   @js.native
-  sealed trait appointmentModified extends AppointmentStoreChangeType
+  sealed trait appointmentModified
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** A calendar was created. */
   @js.native
-  sealed trait calendarCreated extends AppointmentStoreChangeType
+  sealed trait calendarCreated
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** A calendar was deleted. */
   @js.native
-  sealed trait calendarDeleted extends AppointmentStoreChangeType
+  sealed trait calendarDeleted
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** A calendar was modified. */
   @js.native
-  sealed trait calendarModified extends AppointmentStoreChangeType
+  sealed trait calendarModified
+    extends StObject
+       with AppointmentStoreChangeType
   
   /** The change tracking information associated with the appointment was lost. */
   @js.native
-  sealed trait changeTrackingLost extends AppointmentStoreChangeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentStoreChangeType with Double] = js.native
-  /* 0 */ @js.native
-  object appointmentCreated extends TopLevel[appointmentCreated with Double]
-  
-  /* 2 */ @js.native
-  object appointmentDeleted extends TopLevel[appointmentDeleted with Double]
-  
-  /* 1 */ @js.native
-  object appointmentModified extends TopLevel[appointmentModified with Double]
-  
-  /* 4 */ @js.native
-  object calendarCreated extends TopLevel[calendarCreated with Double]
-  
-  /* 6 */ @js.native
-  object calendarDeleted extends TopLevel[calendarDeleted with Double]
-  
-  /* 5 */ @js.native
-  object calendarModified extends TopLevel[calendarModified with Double]
-  
-  /* 3 */ @js.native
-  object changeTrackingLost extends TopLevel[changeTrackingLost with Double]
-  
+  sealed trait changeTrackingLost
+    extends StObject
+       with AppointmentStoreChangeType
 }
-

@@ -1,24 +1,30 @@
 package typingsJapgolly.wampy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PublishCallbacksHash extends js.Object {
+trait PublishCallbacksHash extends StObject {
+  
   var onError: js.UndefOr[ErrorCallback] = js.undefined
+  
   var onSuccess: js.UndefOr[Callback] = js.undefined
 }
-
 object PublishCallbacksHash {
-  @scala.inline
-  def apply(
-    onError: /* args */ ErrorArgs => japgolly.scalajs.react.Callback = null,
-    onSuccess: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined
-  ): PublishCallbacksHash = {
+  
+  inline def apply(): PublishCallbacksHash = {
     val __obj = js.Dynamic.literal()
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.wampy.mod.ErrorArgs) => onError(t0).runNow()))
-    onSuccess.foreach(p => __obj.updateDynamic("onSuccess")(p.toJsFn))
     __obj.asInstanceOf[PublishCallbacksHash]
   }
+  
+  extension [Self <: PublishCallbacksHash](x: Self) {
+    
+    inline def setOnError(value: /* args */ ErrorArgs => japgolly.scalajs.react.Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: /* args */ ErrorArgs) => value(t0).runNow()))
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnSuccess(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onSuccess", value.toJsFn)
+    
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+  }
 }
-

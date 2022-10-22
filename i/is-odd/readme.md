@@ -10,15 +10,12 @@ Returns true if the given number is odd, and is an integer that does not exceed 
 | ------------------ | :-------------: |
 | Full name          | is-odd |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
-| # releases         | 3 |
-| # dependents       | 29 |
-| # downloads        | 42397474 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1795836.3333333333 |
+| # stars            | 223.0 |
 
 ## Links
-- [Homepage](https://github.com/jonschlinkert/is-odd)
-- [Bugs](https://github.com/jonschlinkert/is-odd/issues)
-- [Repository](https://github.com/jonschlinkert/is-odd)
 - [Npm](https://www.npmjs.com/package/is-odd)
     
 

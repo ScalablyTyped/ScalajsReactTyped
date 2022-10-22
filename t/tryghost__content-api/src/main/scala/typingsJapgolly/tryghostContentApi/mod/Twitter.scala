@@ -1,27 +1,42 @@
 package typingsJapgolly.tryghostContentApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Twitter extends js.Object {
+trait Twitter extends StObject {
+  
   var twitter_description: js.UndefOr[Nullable[String]] = js.undefined
+  
   var twitter_image: js.UndefOr[Nullable[String]] = js.undefined
+  
   var twitter_title: js.UndefOr[Nullable[String]] = js.undefined
 }
-
 object Twitter {
-  @scala.inline
-  def apply(
-    twitter_description: Nullable[String] = null,
-    twitter_image: Nullable[String] = null,
-    twitter_title: Nullable[String] = null
-  ): Twitter = {
+  
+  inline def apply(): Twitter = {
     val __obj = js.Dynamic.literal()
-    if (twitter_description != null) __obj.updateDynamic("twitter_description")(twitter_description.asInstanceOf[js.Any])
-    if (twitter_image != null) __obj.updateDynamic("twitter_image")(twitter_image.asInstanceOf[js.Any])
-    if (twitter_title != null) __obj.updateDynamic("twitter_title")(twitter_title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Twitter]
   }
+  
+  extension [Self <: Twitter](x: Self) {
+    
+    inline def setTwitter_description(value: Nullable[String]): Self = StObject.set(x, "twitter_description", value.asInstanceOf[js.Any])
+    
+    inline def setTwitter_descriptionNull: Self = StObject.set(x, "twitter_description", null)
+    
+    inline def setTwitter_descriptionUndefined: Self = StObject.set(x, "twitter_description", js.undefined)
+    
+    inline def setTwitter_image(value: Nullable[String]): Self = StObject.set(x, "twitter_image", value.asInstanceOf[js.Any])
+    
+    inline def setTwitter_imageNull: Self = StObject.set(x, "twitter_image", null)
+    
+    inline def setTwitter_imageUndefined: Self = StObject.set(x, "twitter_image", js.undefined)
+    
+    inline def setTwitter_title(value: Nullable[String]): Self = StObject.set(x, "twitter_title", value.asInstanceOf[js.Any])
+    
+    inline def setTwitter_titleNull: Self = StObject.set(x, "twitter_title", null)
+    
+    inline def setTwitter_titleUndefined: Self = StObject.set(x, "twitter_title", js.undefined)
+  }
 }
-

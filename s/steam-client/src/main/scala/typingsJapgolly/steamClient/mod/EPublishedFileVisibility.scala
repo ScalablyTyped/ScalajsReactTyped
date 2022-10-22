@@ -1,35 +1,33 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EPublishedFileVisibility extends js.Object
-
+sealed trait EPublishedFileVisibility extends StObject
 @JSImport("steam-client", "EPublishedFileVisibility")
 @js.native
-object EPublishedFileVisibility extends js.Object {
-  @js.native
-  sealed trait FriendsOnly extends EPublishedFileVisibility
-  
-  @js.native
-  sealed trait Private extends EPublishedFileVisibility
-  
-  @js.native
-  sealed trait Public extends EPublishedFileVisibility
+object EPublishedFileVisibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EPublishedFileVisibility with Double] = js.native
-  /* 1 */ @js.native
-  object FriendsOnly extends TopLevel[FriendsOnly with Double]
+  def apply(value: Double): js.UndefOr[EPublishedFileVisibility & Double] = js.native
   
-  /* 2 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  @js.native
+  sealed trait FriendsOnly
+    extends StObject
+       with EPublishedFileVisibility
+  /* 1 */ val FriendsOnly: typingsJapgolly.steamClient.mod.EPublishedFileVisibility.FriendsOnly & Double = js.native
   
-  /* 0 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  @js.native
+  sealed trait Private
+    extends StObject
+       with EPublishedFileVisibility
+  /* 2 */ val Private: typingsJapgolly.steamClient.mod.EPublishedFileVisibility.Private & Double = js.native
   
+  @js.native
+  sealed trait Public
+    extends StObject
+       with EPublishedFileVisibility
+  /* 0 */ val Public: typingsJapgolly.steamClient.mod.EPublishedFileVisibility.Public & Double = js.native
 }
-

@@ -1,69 +1,57 @@
 package typingsJapgolly.devexpressWeb
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxHint control.
   */
-@JSGlobal("ASPxClientHint")
-@js.native
-class ASPxClientHint () extends ASPxClientControl {
+trait ASPxClientHint
+  extends StObject
+     with ASPxClientControl {
+  
   /**
     * Occurs on the client side when a hint is about to be hidden.
     */
-  var Hiding: ASPxClientEvent[ASPxClientHintHidingEventHandler] = js.native
+  var Hiding: ASPxClientEvent[ASPxClientHintHidingEventHandler]
+  
   /**
     * Occurs on the client side when a hint is about to be shown.
     */
-  var Showing: ASPxClientEvent[ASPxClientHintShowingEventHandler] = js.native
+  var Showing: ASPxClientEvent[ASPxClientHintShowingEventHandler]
 }
-
-/* static members */
-@JSGlobal("ASPxClientHint")
-@js.native
-object ASPxClientHint extends js.Object {
-  /**
-    * Hides a hint window.
-    */
-  def Hide(targetSelector: String): Unit = js.native
-  def Hide(targetSelector: js.Any): Unit = js.native
-  /**
-    * Hides all hints.
-    */
-  def HideAll(): Unit = js.native
-  def Register(targetSelector: String, options: String): ASPxClientHint = js.native
-  def Register(targetSelector: String, options: ASPxClientEvent[ASPxClientHintShowingEventHandler]): ASPxClientHint = js.native
-  /**
-    * Registers a hint's functionality with the specified settings. An ASPxClientHint that is the hint.
-    * @param targetSelector A string value that is the CSS selector. Specifies to which UI elements the hint is displayed.
-    * @param options An ASPxClientHintOptions object that is the hint's options.
-    */
-  def Register(targetSelector: String, options: ASPxClientHintOptions): ASPxClientHint = js.native
-  /**
-    * Invokes a hint.
-    * @param targetSelector A string value that is the CSS selector.
-    * @param options An ASPxClientHintOptions object that is the hint's options.
-    */
-  def Show(targetSelector: String): Unit = js.native
-  def Show(targetSelector: String, options: String): Unit = js.native
-  def Show(targetSelector: String, options: ASPxClientHintOptions): Unit = js.native
-  def Show(targetSelector: js.Any): Unit = js.native
-  def Show(targetSelector: js.Any, options: String): Unit = js.native
-  def Show(targetSelector: js.Any, options: ASPxClientHintOptions): Unit = js.native
-  def Show(targetSelector: ASPxClientHintOptions): Unit = js.native
-  def Show(targetSelector: ASPxClientHintOptions, options: String): Unit = js.native
-  def Show(targetSelector: ASPxClientHintOptions, options: ASPxClientHintOptions): Unit = js.native
-  /**
-    * Forces the hint to reselect target UI elements according to the specified CSS selector.
-    */
-  def Update(): Unit = js.native
-  /**
-    * Forces the hint to recalculate its position.
-    * @param hintElementOrTargetElement An object that is the hint element or the target element.
-    */
-  def UpdatePosition(): Unit = js.native
-  def UpdatePosition(hintElementOrTargetElement: js.Any): Unit = js.native
+object ASPxClientHint {
+  
+  inline def apply(
+    AdjustControl: Callback,
+    GetClientVisible: CallbackTo[Boolean],
+    GetHeight: CallbackTo[Double],
+    GetMainElement: CallbackTo[Any],
+    GetParentControl: CallbackTo[Any],
+    GetVisible: CallbackTo[Boolean],
+    GetWidth: CallbackTo[Double],
+    Hiding: ASPxClientEvent[ASPxClientHintHidingEventHandler],
+    InCallback: CallbackTo[Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: String => Callback,
+    SetClientVisible: Boolean => Callback,
+    SetHeight: Double => Callback,
+    SetVisible: Boolean => Callback,
+    SetWidth: Double => Callback,
+    Showing: ASPxClientEvent[ASPxClientHintShowingEventHandler],
+    name: String
+  ): ASPxClientHint = {
+    val __obj = js.Dynamic.literal(AdjustControl = AdjustControl.toJsFn, GetClientVisible = GetClientVisible.toJsFn, GetHeight = GetHeight.toJsFn, GetMainElement = GetMainElement.toJsFn, GetParentControl = GetParentControl.toJsFn, GetVisible = GetVisible.toJsFn, GetWidth = GetWidth.toJsFn, Hiding = Hiding.asInstanceOf[js.Any], InCallback = InCallback.toJsFn, Init = Init.asInstanceOf[js.Any], SendMessageToAssistiveTechnology = js.Any.fromFunction1((t0: String) => SendMessageToAssistiveTechnology(t0).runNow()), SetClientVisible = js.Any.fromFunction1((t0: Boolean) => SetClientVisible(t0).runNow()), SetHeight = js.Any.fromFunction1((t0: Double) => SetHeight(t0).runNow()), SetVisible = js.Any.fromFunction1((t0: Boolean) => SetVisible(t0).runNow()), SetWidth = js.Any.fromFunction1((t0: Double) => SetWidth(t0).runNow()), Showing = Showing.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHint]
+  }
+  
+  extension [Self <: ASPxClientHint](x: Self) {
+    
+    inline def setHiding(value: ASPxClientEvent[ASPxClientHintHidingEventHandler]): Self = StObject.set(x, "Hiding", value.asInstanceOf[js.Any])
+    
+    inline def setShowing(value: ASPxClientEvent[ASPxClientHintShowingEventHandler]): Self = StObject.set(x, "Showing", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,23 +1,39 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PatternedRecurrence extends js.Object {
-  // The frequency of an event.
-  var pattern: js.UndefOr[RecurrencePattern] = js.undefined
+trait PatternedRecurrence extends StObject {
+  
+  /**
+    * The frequency of an event. For access reviews: Do not specify this property for a one-time access review. Only
+    * interval, dayOfMonth, and type (weekly, absoluteMonthly) properties of recurrencePattern are supported.
+    */
+  var pattern: js.UndefOr[NullableOption[RecurrencePattern]] = js.undefined
+  
   // The duration of an event.
-  var range: js.UndefOr[RecurrenceRange] = js.undefined
+  var range: js.UndefOr[NullableOption[RecurrenceRange]] = js.undefined
 }
-
 object PatternedRecurrence {
-  @scala.inline
-  def apply(pattern: RecurrencePattern = null, range: RecurrenceRange = null): PatternedRecurrence = {
+  
+  inline def apply(): PatternedRecurrence = {
     val __obj = js.Dynamic.literal()
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatternedRecurrence]
   }
+  
+  extension [Self <: PatternedRecurrence](x: Self) {
+    
+    inline def setPattern(value: NullableOption[RecurrencePattern]): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternNull: Self = StObject.set(x, "pattern", null)
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setRange(value: NullableOption[RecurrenceRange]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeNull: Self = StObject.set(x, "range", null)
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+  }
 }
-

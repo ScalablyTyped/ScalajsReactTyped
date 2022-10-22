@@ -1,63 +1,48 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedContent
+import typingsJapgolly.reactOnsenui.anon.FixedContent
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
 import typingsJapgolly.reactOnsenui.mod.PullHookChangeEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullHook {
-  def apply(
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fixedContent: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    id: String = null,
-    onChange: /* e */ PullHookChangeEvent => Callback = null,
-    onLoad: /* done */ js.Function0[Unit] => Callback = null,
-    onPull: js.UndefOr[Callback] = js.undefined,
-    style: CSSProperties = null,
-    thresholdHeight: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameFixedContent, 
-    typingsJapgolly.reactOnsenui.mod.PullHook, 
-    Unit, 
-    HTMLAttributesidclassNameFixedContent
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedContent)) __obj.updateDynamic("fixedContent")(fixedContent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactOnsenui.mod.PullHookChangeEvent) => onChange(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: /* done */ js.Function0[scala.Unit]) => onLoad(t0).runNow()))
-    onPull.foreach(p => __obj.updateDynamic("onPull")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (thresholdHeight != null) __obj.updateDynamic("thresholdHeight")(thresholdHeight.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedContent, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.PullHook](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameFixedContent])(children: _*)
-  }
   @JSImport("react-onsenui", "PullHook")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.PullHook] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fixedContent(value: Boolean): this.type = set("fixedContent", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* e */ PullHookChangeEvent => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* e */ PullHookChangeEvent) => value(t0).runNow()))
+    
+    inline def onLoad(value: /* done */ js.Function0[Unit] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: /* done */ js.Function0[Unit]) => value(t0).runNow()))
+    
+    inline def onPull(value: Callback): this.type = set("onPull", value.toJsFn)
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def thresholdHeight(value: Double): this.type = set("thresholdHeight", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: PullHook.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HTMLAttributesidclassName & FixedContent): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

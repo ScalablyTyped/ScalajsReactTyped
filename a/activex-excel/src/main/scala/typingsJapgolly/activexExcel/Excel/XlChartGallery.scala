@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`21`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`22`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`23`
+import typingsJapgolly.activexExcel.activexExcelInts.`21`
+import typingsJapgolly.activexExcel.activexExcelInts.`22`
+import typingsJapgolly.activexExcel.activexExcelInts.`23`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`23`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`21`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`22`
+  - typingsJapgolly.activexExcel.activexExcelInts.`23`
+  - typingsJapgolly.activexExcel.activexExcelInts.`21`
+  - typingsJapgolly.activexExcel.activexExcelInts.`22`
 */
-trait XlChartGallery extends js.Object
-
+trait XlChartGallery extends StObject
 object XlChartGallery {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAnyGallery: `23` = this.cast(23)
-  @scala.inline
-  def xlBuiltIn: `21` = this.cast(21)
-  @scala.inline
-  def xlUserDefined: `22` = this.cast(22)
+  
+  inline def xlAnyGallery: `23` = 23.asInstanceOf[`23`]
+  
+  inline def xlBuiltIn: `21` = 21.asInstanceOf[`21`]
+  
+  inline def xlUserDefined: `22` = 22.asInstanceOf[`22`]
 }
-

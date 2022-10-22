@@ -1,22 +1,31 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadOptions extends js.Object {
+trait ReadOptions extends StObject {
+  
   var dataProjection: ProjectionLike
+  
   var featureProjection: ProjectionLike
 }
-
 object ReadOptions {
-  @scala.inline
-  def apply(dataProjection: ProjectionLike = null, featureProjection: ProjectionLike = null): ReadOptions = {
+  
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
+  
+  extension [Self <: ReadOptions](x: Self) {
+    
+    inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+    
+    inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+    
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+  }
 }
-

@@ -1,12 +1,17 @@
 package typingsJapgolly.griddleReact.mod.components
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("griddle-react", "components.SettingsToggle")
 @js.native
-class SettingsToggle ()
-  extends Component[SettingsToggleProps, js.Any, js.Any]
-
+open class SettingsToggle protected () extends Component[SettingsToggleProps, Any, Any] {
+  def this(props: SettingsToggleProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: SettingsToggleProps, context: Any) = this()
+}

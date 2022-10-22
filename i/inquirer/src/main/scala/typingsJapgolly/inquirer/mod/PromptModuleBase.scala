@@ -1,15 +1,13 @@
 package typingsJapgolly.inquirer.mod
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.inquirer.mod.prompts.PromptConstructor
+import typingsJapgolly.inquirer.mod.inquirer.prompts.PromptConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides prompts for answering questions.
-  */
-trait PromptModuleBase extends js.Object {
+@js.native
+trait PromptModuleBase extends PromptFunction {
+  
   /**
     * Registers a new prompt-type.
     *
@@ -19,20 +17,10 @@ trait PromptModuleBase extends js.Object {
     * @param prompt
     * The constructor of the prompt.
     */
-  def registerPrompt(name: String, prompt: PromptConstructor): Unit
+  def registerPrompt(name: String, prompt: PromptConstructor): Unit = js.native
+  
   /**
     * Registers the default prompts.
     */
-  def restoreDefaultPrompts(): Unit
+  def restoreDefaultPrompts(): Unit = js.native
 }
-
-object PromptModuleBase {
-  @scala.inline
-  def apply(registerPrompt: (String, PromptConstructor) => Callback, restoreDefaultPrompts: Callback): PromptModuleBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("registerPrompt")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.inquirer.mod.prompts.PromptConstructor) => registerPrompt(t0, t1).runNow()))
-    __obj.updateDynamic("restoreDefaultPrompts")(restoreDefaultPrompts.toJsFn)
-    __obj.asInstanceOf[PromptModuleBase]
-  }
-}
-

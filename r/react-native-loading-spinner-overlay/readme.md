@@ -10,10 +10,10 @@ The only pure React Native Native iOS and Android loading spinner (progress bar 
 | ------------------ | :-------------: |
 | Full name          | react-native-loading-spinner-overlay |
 | Keywords           | activity, android, bar, full, indicator, ios, loading, modal, native, pop-up, popup, progress, react, react-native, screen, spinner, view |
-| # releases         | 3 |
-| # dependents       | 20 |
-| # downloads        | 453145 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 75619.66666666667 |
+| # stars            | 1479.0 |
 
 ## Links
 - [Homepage](https://github.com/joinspontaneous/react-native-loading-spinner-overlay)

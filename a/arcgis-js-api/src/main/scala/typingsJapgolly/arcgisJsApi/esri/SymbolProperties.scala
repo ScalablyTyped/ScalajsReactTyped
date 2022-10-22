@@ -1,26 +1,33 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SymbolProperties extends js.Object {
+trait SymbolProperties extends StObject {
+  
   /**
-    * The color of the symbol. This can be autocast with an array of rgb(a) values, named string, hex string or an hsl(a) string, an object with `r`, `g`, `b`, and `a` properties, or a [Color](https://developers.arcgis.com/javascript/latest/api-reference/esri-Color.html) object.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
+    * The color of the symbol.
     *
     * @default black
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
 }
-
 object SymbolProperties {
-  @scala.inline
-  def apply(color: Color_ | js.Array[Double] | String = null): SymbolProperties = {
+  
+  inline def apply(): SymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolProperties]
   }
+  
+  extension [Self <: SymbolProperties](x: Self) {
+    
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+  }
 }
-

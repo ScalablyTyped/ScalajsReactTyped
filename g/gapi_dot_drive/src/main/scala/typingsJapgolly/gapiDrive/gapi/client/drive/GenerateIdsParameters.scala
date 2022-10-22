@@ -1,21 +1,30 @@
 package typingsJapgolly.gapiDrive.gapi.client.drive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenerateIdsParameters extends js.Object {
+trait GenerateIdsParameters extends StObject {
+  
   var maxResults: js.UndefOr[Double] = js.undefined
+  
   var space: js.UndefOr[String] = js.undefined
 }
-
 object GenerateIdsParameters {
-  @scala.inline
-  def apply(maxResults: Int | Double = null, space: String = null): GenerateIdsParameters = {
+  
+  inline def apply(): GenerateIdsParameters = {
     val __obj = js.Dynamic.literal()
-    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
-    if (space != null) __obj.updateDynamic("space")(space.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateIdsParameters]
   }
+  
+  extension [Self <: GenerateIdsParameters](x: Self) {
+    
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    
+    inline def setSpace(value: String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+    
+    inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+  }
 }
-

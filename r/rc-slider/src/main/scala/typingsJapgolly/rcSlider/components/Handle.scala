@@ -1,78 +1,55 @@
 package typingsJapgolly.rcSlider.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rcSlider.mod.HandleProps
-import typingsJapgolly.rcSlider.mod.Marks
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.ReactTouchEventFrom
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rcSlider.libHandlesHandleMod.HandleProps
+import typingsJapgolly.rcSlider.libHandlesHandleMod.RenderProps
+import typingsJapgolly.rcSlider.rcSliderStrings.max
+import typingsJapgolly.rcSlider.rcSliderStrings.min
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Handle {
-  def apply(
-    className: String,
-    offset: Double,
-    vertical: Boolean,
-    activeDotStyle: CSSProperties = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dotStyle: CSSProperties = null,
-    dots: js.UndefOr[Boolean] = js.undefined,
-    handle: /* props */ js.Any => CallbackTo[Node] = null,
-    handleStyle: js.Array[CSSProperties] | CSSProperties = null,
-    included: js.UndefOr[Boolean] = js.undefined,
-    marks: Marks = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    railStyle: CSSProperties = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    step: Int | Double = null,
-    style: js.Array[CSSProperties] | CSSProperties = null,
-    tabIndex: Int | Double = null,
-    tipFormatter: /* value */ js.Any => CallbackTo[js.UndefOr[js.Any]] = null,
-    tipTransitionName: String = null,
-    trackStyle: js.Array[CSSProperties] | CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HandleProps, typingsJapgolly.rcSlider.mod.Handle, Unit, HandleProps] = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], vertical = vertical.asInstanceOf[js.Any])
   
-      if (activeDotStyle != null) __obj.updateDynamic("activeDotStyle")(activeDotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots.asInstanceOf[js.Any])
-    if (handle != null) __obj.updateDynamic("handle")(js.Any.fromFunction1((t0: /* props */ js.Any) => handle(t0).runNow()))
-    if (handleStyle != null) __obj.updateDynamic("handleStyle")(handleStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(included)) __obj.updateDynamic("included")(included.asInstanceOf[js.Any])
-    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (railStyle != null) __obj.updateDynamic("railStyle")(railStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (tipFormatter != null) __obj.updateDynamic("tipFormatter")(js.Any.fromFunction1((t0: /* value */ js.Any) => tipFormatter(t0).runNow()))
-    if (tipTransitionName != null) __obj.updateDynamic("tipTransitionName")(tipTransitionName.asInstanceOf[js.Any])
-    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcSlider.mod.HandleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcSlider.mod.Handle](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcSlider.mod.HandleProps])(children: _*)
+  inline def apply(
+    dragging: Boolean,
+    onOffsetChange: (Double | max | min, Double) => Callback,
+    onStartMove: (/* e */ ReactMouseEventFrom[Element] | ReactTouchEventFrom[Element], /* valueIndex */ Double) => Callback,
+    prefixCls: String,
+    value: Double,
+    valueIndex: Double
+  ): Builder = {
+    val __props = js.Dynamic.literal(dragging = dragging.asInstanceOf[js.Any], onOffsetChange = js.Any.fromFunction2((t0: Double | max | min, t1: Double) => (onOffsetChange(t0, t1)).runNow()), onStartMove = js.Any.fromFunction2((t0: /* e */ ReactMouseEventFrom[Element] | ReactTouchEventFrom[Element], t1: /* valueIndex */ Double) => (onStartMove(t0, t1)).runNow()), prefixCls = prefixCls.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueIndex = valueIndex.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[HandleProps & RefAttributes[HTMLDivElement]]))
   }
-  @JSImport("rc-slider", "Handle")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("rc-slider/lib/Handles/Handle", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLDivElement] {
+    
+    inline def onBlur(value: /* e */ ReactFocusEventFrom[HTMLDivElement] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def onFocus(value: /* e */ ReactFocusEventFrom[HTMLDivElement] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: /* e */ ReactFocusEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def render(
+      value: (/* origin */ japgolly.scalajs.react.facade.React.Element, /* props */ RenderProps) => japgolly.scalajs.react.facade.React.Element
+    ): this.type = set("render", js.Any.fromFunction2(value))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: HandleProps & RefAttributes[HTMLDivElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

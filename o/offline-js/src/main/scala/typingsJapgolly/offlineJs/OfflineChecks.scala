@@ -1,25 +1,38 @@
 package typingsJapgolly.offlineJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OfflineChecks extends js.Object {
+trait OfflineChecks extends StObject {
+  
   var active: js.UndefOr[String] = js.undefined
+  
   var image: js.UndefOr[OfflineCheck] = js.undefined
+  
   // TODO "xhr" and "image" probably have different options.
   // However, this is not stated in the project documentation.
   var xhr: js.UndefOr[OfflineCheck] = js.undefined
 }
-
 object OfflineChecks {
-  @scala.inline
-  def apply(active: String = null, image: OfflineCheck = null, xhr: OfflineCheck = null): OfflineChecks = {
+  
+  inline def apply(): OfflineChecks = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineChecks]
   }
+  
+  extension [Self <: OfflineChecks](x: Self) {
+    
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setImage(value: OfflineCheck): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setXhr(value: OfflineCheck): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

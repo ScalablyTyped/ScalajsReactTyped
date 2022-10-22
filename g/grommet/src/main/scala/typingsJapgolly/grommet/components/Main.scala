@@ -1,13 +1,17 @@
 package typingsJapgolly.grommet.components
 
+import typingsJapgolly.grommet.es6ComponentsBoxMod.BoxExtendedProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Main extends SharedApply_BoxProps_323312997 {
-  @JSImport("grommet", "Main")
-  @js.native
-  override object componentImport extends js.Object
+object Main {
   
+  @JSImport("grommet/es6", "Main")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: Main.type): SharedBuilder_BoxExtendedProps1736190285 = new SharedBuilder_BoxExtendedProps1736190285(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BoxExtendedProps): SharedBuilder_BoxExtendedProps1736190285 = new SharedBuilder_BoxExtendedProps1736190285(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

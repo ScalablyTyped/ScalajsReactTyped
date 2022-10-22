@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadValidation extends js.Object {
-  var allowedExtensions: js.UndefOr[js.Any] = js.undefined
+trait UploadValidation extends StObject {
+  
+  var allowedExtensions: js.UndefOr[Any] = js.undefined
+  
   var maxFileSize: js.UndefOr[Double] = js.undefined
+  
   var minFileSize: js.UndefOr[Double] = js.undefined
 }
-
 object UploadValidation {
-  @scala.inline
-  def apply(
-    allowedExtensions: js.Any = null,
-    maxFileSize: Int | Double = null,
-    minFileSize: Int | Double = null
-  ): UploadValidation = {
+  
+  inline def apply(): UploadValidation = {
     val __obj = js.Dynamic.literal()
-    if (allowedExtensions != null) __obj.updateDynamic("allowedExtensions")(allowedExtensions.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (minFileSize != null) __obj.updateDynamic("minFileSize")(minFileSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadValidation]
   }
+  
+  extension [Self <: UploadValidation](x: Self) {
+    
+    inline def setAllowedExtensions(value: Any): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
+    
+    inline def setAllowedExtensionsUndefined: Self = StObject.set(x, "allowedExtensions", js.undefined)
+    
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    
+    inline def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinFileSizeUndefined: Self = StObject.set(x, "minFileSize", js.undefined)
+  }
 }
-

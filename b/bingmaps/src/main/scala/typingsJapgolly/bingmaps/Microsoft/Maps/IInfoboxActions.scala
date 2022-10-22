@@ -1,16 +1,17 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
-import org.scalajs.dom.raw.MouseEvent
+import org.scalajs.dom.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IInfoboxActions extends js.Object {
-  /** The text to display for the action. */
-  var label: String = js.native
+trait IInfoboxActions extends StObject {
+  
   /** The function to call when the label is clicked.  */
   def eventHandler(): Unit = js.native
   def eventHandler(eventArg: MouseEvent): Unit = js.native
+  
+  /** The text to display for the action. */
+  var label: String = js.native
 }
-

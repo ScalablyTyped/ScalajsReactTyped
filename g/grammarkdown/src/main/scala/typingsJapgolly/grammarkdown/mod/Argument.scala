@@ -1,19 +1,18 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.ArgumentOperatorKind
+import typingsJapgolly.grammarkdown.distTokensMod.ArgumentOperatorKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Argument")
 @js.native
-class Argument ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Argument {
-  def this(operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[ArgumentOperatorKind]) = this()
-  def this(operatorToken: js.UndefOr[scala.Nothing], name: typingsJapgolly.grammarkdown.nodesMod.Identifier) = this()
+open class Argument ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Argument {
+  def this(operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ArgumentOperatorKind]) = this()
+  def this(operatorToken: Unit, name: typingsJapgolly.grammarkdown.distNodesMod.Identifier) = this()
   def this(
-    operatorToken: typingsJapgolly.grammarkdown.nodesMod.Token[ArgumentOperatorKind],
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier
+    operatorToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ArgumentOperatorKind],
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier
   ) = this()
 }
-

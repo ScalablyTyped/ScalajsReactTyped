@@ -1,10 +1,12 @@
 package typingsJapgolly.hapiHapi.mod
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerExtEventsObject extends js.Object {
+trait ServerExtEventsObject extends StObject {
+  
   /**
     * (required) a function or an array of functions to be executed at a specified point during request processing. The required extension function signature is:
     * * server extension points: async function(server) where:
@@ -13,7 +15,9 @@ trait ServerExtEventsObject extends js.Object {
     * * request extension points: a lifecycle method.
     */
   var method: ServerExtPointFunction | js.Array[ServerExtPointFunction]
+  
   var options: js.UndefOr[ServerExtOptions] = js.undefined
+  
   /**
     * (required) the extension point event name. The available extension points include the request extension points as well as the following server extension points:
     * * 'onPreStart' - called before the connection listeners are started.
@@ -22,18 +26,26 @@ trait ServerExtEventsObject extends js.Object {
     */
   var `type`: ServerExtType
 }
-
 object ServerExtEventsObject {
-  @scala.inline
-  def apply(
-    method: ServerExtPointFunction | js.Array[ServerExtPointFunction],
-    `type`: ServerExtType,
-    options: ServerExtOptions = null
-  ): ServerExtEventsObject = {
+  
+  inline def apply(method: ServerExtPointFunction | js.Array[ServerExtPointFunction], `type`: ServerExtType): ServerExtEventsObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerExtEventsObject]
   }
+  
+  extension [Self <: ServerExtEventsObject](x: Self) {
+    
+    inline def setMethod(value: ServerExtPointFunction | js.Array[ServerExtPointFunction]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodFunction1(value: /* server */ Server_ => Callback): Self = StObject.set(x, "method", js.Any.fromFunction1((t0: /* server */ Server_) => value(t0).runNow()))
+    
+    inline def setMethodVarargs(value: ServerExtPointFunction*): Self = StObject.set(x, "method", js.Array(value*))
+    
+    inline def setOptions(value: ServerExtOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setType(value: ServerExtType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

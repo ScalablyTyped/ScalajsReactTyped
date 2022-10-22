@@ -1,35 +1,31 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4155`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4155`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4155`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4155`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
 */
-trait XlErrorBarType extends js.Object
-
+trait XlErrorBarType extends StObject
 object XlErrorBarType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlErrorBarTypeCustom: `-4114` = this.cast(-4114)
-  @scala.inline
-  def xlErrorBarTypeFixedValue: `1` = this.cast(1)
-  @scala.inline
-  def xlErrorBarTypePercent: `2` = this.cast(2)
-  @scala.inline
-  def xlErrorBarTypeStDev: `-4155` = this.cast(-4155)
-  @scala.inline
-  def xlErrorBarTypeStError: `4` = this.cast(4)
+  
+  inline def xlErrorBarTypeCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
+  inline def xlErrorBarTypeFixedValue: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlErrorBarTypePercent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlErrorBarTypeStDev: `-4155` = -4155.asInstanceOf[`-4155`]
+  
+  inline def xlErrorBarTypeStError: `4` = 4.asInstanceOf[`4`]
 }
-

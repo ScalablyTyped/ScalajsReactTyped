@@ -1,11 +1,12 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActionSheetIOSStatic extends js.Object {
+trait ActionSheetIOSStatic extends StObject {
+  
   /**
     * Display an iOS action sheet. The `options` object must contain one or more
     * of:
@@ -16,6 +17,7 @@ trait ActionSheetIOSStatic extends js.Object {
     * - `message` (string) - a message to show below the title
     */
   def showActionSheetWithOptions(options: ActionSheetIOSOptions, callback: js.Function1[/* buttonIndex */ Double, Unit]): Unit
+  
   /**
     * Display the iOS share sheet. The `options` object should contain
     * one or both of `message` and `url` and can additionally have
@@ -36,17 +38,22 @@ trait ActionSheetIOSStatic extends js.Object {
     successCallback: js.Function2[/* success */ Boolean, /* method */ String, Unit]
   ): Unit
 }
-
 object ActionSheetIOSStatic {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     showActionSheetWithOptions: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Callback,
     showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ js.Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Callback
   ): ActionSheetIOSStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("showActionSheetWithOptions")(js.Any.fromFunction2((t0: typingsJapgolly.reactNative.mod.ActionSheetIOSOptions, t1: js.Function1[/* buttonIndex */ scala.Double, scala.Unit]) => showActionSheetWithOptions(t0, t1).runNow()))
-    __obj.updateDynamic("showShareActionSheetWithOptions")(js.Any.fromFunction3((t0: typingsJapgolly.reactNative.mod.ShareActionSheetIOSOptions, t1: js.Function1[/* error */ js.Error, scala.Unit], t2: js.Function2[/* success */ scala.Boolean, /* method */ java.lang.String, scala.Unit]) => showShareActionSheetWithOptions(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(showActionSheetWithOptions = js.Any.fromFunction2((t0: ActionSheetIOSOptions, t1: js.Function1[/* buttonIndex */ Double, Unit]) => (showActionSheetWithOptions(t0, t1)).runNow()), showShareActionSheetWithOptions = js.Any.fromFunction3((t0: ShareActionSheetIOSOptions, t1: js.Function1[/* error */ js.Error, Unit], t2: js.Function2[/* success */ Boolean, /* method */ String, Unit]) => (showShareActionSheetWithOptions(t0, t1, t2)).runNow()))
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }
+  
+  extension [Self <: ActionSheetIOSStatic](x: Self) {
+    
+    inline def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Callback): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2((t0: ActionSheetIOSOptions, t1: js.Function1[/* buttonIndex */ Double, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setShowShareActionSheetWithOptions(
+      value: (ShareActionSheetIOSOptions, js.Function1[/* error */ js.Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Callback
+    ): Self = StObject.set(x, "showShareActionSheetWithOptions", js.Any.fromFunction3((t0: ShareActionSheetIOSOptions, t1: js.Function1[/* error */ js.Error, Unit], t2: js.Function2[/* success */ Boolean, /* method */ String, Unit]) => (value(t0, t1, t2)).runNow()))
+  }
 }
-

@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.PropertyType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBitmapTypedValueFactory extends js.Object {
-  def create(value: js.Any, `type`: PropertyType): BitmapTypedValue
+trait IBitmapTypedValueFactory extends StObject {
+  
+  def create(value: Any, `type`: PropertyType): BitmapTypedValue
 }
-
 object IBitmapTypedValueFactory {
-  @scala.inline
-  def apply(create: (js.Any, PropertyType) => CallbackTo[BitmapTypedValue]): IBitmapTypedValueFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction2((t0: js.Any, t1: typingsJapgolly.winrt.Windows.Foundation.PropertyType) => create(t0, t1).runNow()))
+  
+  inline def apply(create: (Any, PropertyType) => BitmapTypedValue): IBitmapTypedValueFactory = {
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction2(create))
     __obj.asInstanceOf[IBitmapTypedValueFactory]
   }
+  
+  extension [Self <: IBitmapTypedValueFactory](x: Self) {
+    
+    inline def setCreate(value: (Any, PropertyType) => BitmapTypedValue): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+  }
 }
-

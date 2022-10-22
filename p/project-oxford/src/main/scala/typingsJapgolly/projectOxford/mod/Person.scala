@@ -1,15 +1,16 @@
 package typingsJapgolly.projectOxford.mod
 
 import typingsJapgolly.bluebird.mod.^
-import typingsJapgolly.projectOxford.AnonPersonId
+import typingsJapgolly.projectOxford.anon.PersonId
 import typingsJapgolly.projectOxford.mod.PersonResponses.Face
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "Person")
 @js.native
-class Person () extends js.Object {
+open class Person () extends StObject {
+  
   /**
     * Adds a face to a person for identification. The maximum face count for each person is 32.
     * The face ID must be added to a person before its expiration. Typically a face ID expires
@@ -23,6 +24,7 @@ class Person () extends js.Object {
     */
   def addFace(personGroupId: String, personId: String, faceId: String): ^[Unit] = js.native
   def addFace(personGroupId: String, personId: String, faceId: String, userData: String): ^[Unit] = js.native
+  
   /**
     * Creates a new person in a specified person group for identification.
     * The number of persons has a subscription limit. Free subscription amount is 1000 persons.
@@ -34,7 +36,8 @@ class Person () extends js.Object {
     * @param {string} userData          - Optional fields for user-provided data attached to a person. Size limit is 16KB.
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
-  def create(personGroupId: String, faces: js.Array[String], name: String, userData: String): ^[AnonPersonId] = js.native
+  def create(personGroupId: String, faces: js.Array[String], name: String, userData: String): ^[PersonId] = js.native
+  
   /**
     * Deletes an existing person from a person group.
     *
@@ -43,6 +46,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def delete(personGroupId: String, personId: String): ^[Unit] = js.native
+  
   /**
     * Deletes a face from a person.
     *
@@ -52,6 +56,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def deleteFace(personGroupId: String, personId: String, faceId: String): ^[Unit] = js.native
+  
   /**
     * Gets an existing person from a person group.
     *
@@ -60,6 +65,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def get(personGroupId: String, personId: String): ^[typingsJapgolly.projectOxford.mod.PersonResponses.Person] = js.native
+  
   /**
     * Get a face for a person.
     *
@@ -69,6 +75,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def getFace(personGroupId: String, personId: String, faceId: String): ^[Face] = js.native
+  
   /**
     * Lists all persons in a person group, with the person information.
     *
@@ -76,6 +83,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def list(personGroupId: String): ^[js.Array[typingsJapgolly.projectOxford.mod.PersonResponses.Person]] = js.native
+  
   /**
     * Updates a person's information.
     *
@@ -86,6 +94,7 @@ class Person () extends js.Object {
     * @return {Promise}                 - Promise resolving with the resulting JSON
     */
   def update(personGroupId: String, personId: String, faces: js.Array[String], name: String, userData: String): ^[Unit] = js.native
+  
   /**
     * Updates a face for a person.
     *
@@ -97,4 +106,3 @@ class Person () extends js.Object {
     */
   def updateFace(personGroupId: String, personId: String, faceId: String, userData: String): ^[Unit] = js.native
 }
-

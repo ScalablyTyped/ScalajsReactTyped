@@ -1,35 +1,31 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`16`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4`
-import typingsJapgolly.activexDao.activexDaoNumbers.`8`
+import typingsJapgolly.activexDao.activexDaoInts.`16`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`4`
+import typingsJapgolly.activexDao.activexDaoInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`16`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`8`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`16`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`8`
+  - typingsJapgolly.activexDao.activexDaoInts.`4`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
 */
-trait RecordsetTypeEnum extends js.Object
-
+trait RecordsetTypeEnum extends StObject
 object RecordsetTypeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbOpenDynamic: `16` = this.cast(16)
-  @scala.inline
-  def dbOpenDynaset: `2` = this.cast(2)
-  @scala.inline
-  def dbOpenForwardOnly: `8` = this.cast(8)
-  @scala.inline
-  def dbOpenSnapshot: `4` = this.cast(4)
-  @scala.inline
-  def dbOpenTable: `1` = this.cast(1)
+  
+  inline def dbOpenDynamic: `16` = 16.asInstanceOf[`16`]
+  
+  inline def dbOpenDynaset: `2` = 2.asInstanceOf[`2`]
+  
+  inline def dbOpenForwardOnly: `8` = 8.asInstanceOf[`8`]
+  
+  inline def dbOpenSnapshot: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbOpenTable: `1` = 1.asInstanceOf[`1`]
 }
-

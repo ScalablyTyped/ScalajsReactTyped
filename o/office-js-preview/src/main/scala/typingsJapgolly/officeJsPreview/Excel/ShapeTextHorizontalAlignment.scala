@@ -1,65 +1,81 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextHorizontalAlignment extends js.Object
-
+sealed trait ShapeTextHorizontalAlignment extends StObject
 /**
-  *
   * Specifies the horizontal alignment for the text frame in a shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextHorizontalAlignment")
 @js.native
-object ShapeTextHorizontalAlignment extends js.Object {
+object ShapeTextHorizontalAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait center extends ShapeTextHorizontalAlignment
+  sealed trait center
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait distributed extends ShapeTextHorizontalAlignment
+  sealed trait distributed
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait justify extends ShapeTextHorizontalAlignment
+  sealed trait justify
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait justifyLow extends ShapeTextHorizontalAlignment
+  sealed trait justifyLow
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait left extends ShapeTextHorizontalAlignment
+  sealed trait left
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait right extends ShapeTextHorizontalAlignment
+  sealed trait right
+    extends StObject
+       with ShapeTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait thaiDistributed extends ShapeTextHorizontalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextHorizontalAlignment with String] = js.native
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Distributed" */ @js.native
-  object distributed extends TopLevel[distributed with String]
-  
-  /* "Justify" */ @js.native
-  object justify extends TopLevel[justify with String]
-  
-  /* "JustifyLow" */ @js.native
-  object justifyLow extends TopLevel[justifyLow with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "ThaiDistributed" */ @js.native
-  object thaiDistributed extends TopLevel[thaiDistributed with String]
-  
+  sealed trait thaiDistributed
+    extends StObject
+       with ShapeTextHorizontalAlignment
 }
-

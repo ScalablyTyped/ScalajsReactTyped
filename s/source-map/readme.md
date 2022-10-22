@@ -1,7 +1,7 @@
 
 # Scala.js typings for source-map
 
-Typings are for version 0.7.3
+Typings are for version 0.7.4
 
 ## Library description:
 Generates and consumes source maps
@@ -10,10 +10,10 @@ Generates and consumes source maps
 | ------------------ | :-------------: |
 | Full name          | source-map |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1741 |
-| # downloads        | 1689395593 |
-| # stars            | 34 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.437214143333334E8 |
+| # stars            | 3046.0 |
 
 ## Links
 - [Homepage](https://github.com/mozilla/source-map)

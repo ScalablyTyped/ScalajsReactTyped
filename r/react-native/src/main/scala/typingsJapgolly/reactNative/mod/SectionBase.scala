@@ -1,35 +1,52 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SectionBase[ItemT] extends js.Object {
-  var ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.undefined
+trait SectionBase[ItemT, SectionT] extends StObject {
+  
+  var ItemSeparatorComponent: js.UndefOr[ComponentType[Any] | Null] = js.undefined
+  
   var data: js.Array[ItemT]
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var keyExtractor: js.UndefOr[js.Function2[/* item */ ItemT, /* index */ Double, String]] = js.undefined
-  var renderItem: js.UndefOr[SectionListRenderItem[ItemT]] = js.undefined
+  
+  var renderItem: js.UndefOr[SectionListRenderItem[ItemT, SectionT]] = js.undefined
 }
-
 object SectionBase {
-  @scala.inline
-  def apply[ItemT](
-    data: js.Array[ItemT],
-    ItemSeparatorComponent: ComponentType[_] = null,
-    key: String = null,
-    keyExtractor: (/* item */ ItemT, /* index */ Double) => CallbackTo[String] = null,
-    renderItem: /* info */ SectionListRenderItemInfo[ItemT] => CallbackTo[Element | Null] = null
-  ): SectionBase[ItemT] = {
+  
+  inline def apply[ItemT, SectionT](data: js.Array[ItemT]): SectionBase[ItemT, SectionT] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (ItemSeparatorComponent != null) __obj.updateDynamic("ItemSeparatorComponent")(ItemSeparatorComponent.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2((t0: /* item */ ItemT, t1: /* index */ scala.Double) => keyExtractor(t0, t1).runNow()))
-    if (renderItem != null) __obj.updateDynamic("renderItem")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.reactNative.mod.SectionListRenderItemInfo[ItemT]) => renderItem(t0).runNow()))
-    __obj.asInstanceOf[SectionBase[ItemT]]
+    __obj.asInstanceOf[SectionBase[ItemT, SectionT]]
+  }
+  
+  extension [Self <: SectionBase[?, ?], ItemT, SectionT](x: Self & (SectionBase[ItemT, SectionT])) {
+    
+    inline def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setItemSeparatorComponent(value: ComponentType[Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    
+    inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
+    
+    inline def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
+    
+    inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => Element | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+    
+    inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
   }
 }
-

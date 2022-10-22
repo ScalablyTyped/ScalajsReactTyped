@@ -1,40 +1,54 @@
 package typingsJapgolly.cookieJs
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UtilStatic extends js.Object {
+trait UtilStatic extends StObject {
+  
   def decode(value: String): String
+  
   def encode(value: String): String
-  def getKeys(value: js.Object): js.Array[_]
-  def isArray(value: js.Any): Boolean
-  def isObject(value: js.Any): Boolean
+  
+  def getKeys(value: js.Object): js.Array[Any]
+  
+  def isArray(value: Any): Boolean
+  
+  def isObject(value: Any): Boolean
+  
   def retrieve(x: String, y: String): String
-  def toArray(args: js.Any*): js.Array[_]
+  
+  def toArray(args: Any*): js.Array[Any]
 }
-
 object UtilStatic {
-  @scala.inline
-  def apply(
-    decode: String => CallbackTo[String],
-    encode: String => CallbackTo[String],
-    getKeys: js.Object => CallbackTo[js.Array[js.Any]],
-    isArray: js.Any => CallbackTo[Boolean],
-    isObject: js.Any => CallbackTo[Boolean],
-    retrieve: (String, String) => CallbackTo[String],
-    toArray: /* repeated */ js.Any => CallbackTo[js.Array[js.Any]]
+  
+  inline def apply(
+    decode: String => String,
+    encode: String => String,
+    getKeys: js.Object => js.Array[Any],
+    isArray: Any => Boolean,
+    isObject: Any => Boolean,
+    retrieve: (String, String) => String,
+    toArray: /* repeated */ Any => js.Array[Any]
   ): UtilStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("decode")(js.Any.fromFunction1((t0: java.lang.String) => decode(t0).runNow()))
-    __obj.updateDynamic("encode")(js.Any.fromFunction1((t0: java.lang.String) => encode(t0).runNow()))
-    __obj.updateDynamic("getKeys")(js.Any.fromFunction1((t0: js.Object) => getKeys(t0).runNow()))
-    __obj.updateDynamic("isArray")(js.Any.fromFunction1((t0: js.Any) => isArray(t0).runNow()))
-    __obj.updateDynamic("isObject")(js.Any.fromFunction1((t0: js.Any) => isObject(t0).runNow()))
-    __obj.updateDynamic("retrieve")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => retrieve(t0, t1).runNow()))
-    __obj.updateDynamic("toArray")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => toArray(t0).runNow()))
+    val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), getKeys = js.Any.fromFunction1(getKeys), isArray = js.Any.fromFunction1(isArray), isObject = js.Any.fromFunction1(isObject), retrieve = js.Any.fromFunction2(retrieve), toArray = js.Any.fromFunction1(toArray))
     __obj.asInstanceOf[UtilStatic]
   }
+  
+  extension [Self <: UtilStatic](x: Self) {
+    
+    inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    
+    inline def setEncode(value: String => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    
+    inline def setGetKeys(value: js.Object => js.Array[Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction1(value))
+    
+    inline def setIsArray(value: Any => Boolean): Self = StObject.set(x, "isArray", js.Any.fromFunction1(value))
+    
+    inline def setIsObject(value: Any => Boolean): Self = StObject.set(x, "isObject", js.Any.fromFunction1(value))
+    
+    inline def setRetrieve(value: (String, String) => String): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
+    
+    inline def setToArray(value: /* repeated */ Any => js.Array[Any]): Self = StObject.set(x, "toArray", js.Any.fromFunction1(value))
+  }
 }
-

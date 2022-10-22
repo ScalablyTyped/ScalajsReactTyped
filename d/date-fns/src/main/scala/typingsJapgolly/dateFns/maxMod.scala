@@ -1,17 +1,17 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/max", JSImport.Namespace)
-@js.native
-object maxMod extends js.Object {
-  @js.native
-  object default
-    extends TopLevel[CurriedFn1[js.Array[Date | Double], Date]]
+object maxMod {
   
+  object default {
+    
+    inline def apply(datesArray: js.Array[js.Date | Double]): js.Date = ^.asInstanceOf[js.Dynamic].apply(datesArray.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/max", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

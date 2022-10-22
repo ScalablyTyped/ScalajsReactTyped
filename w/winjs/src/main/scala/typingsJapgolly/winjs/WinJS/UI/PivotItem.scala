@@ -1,58 +1,55 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An item within a Pivot control.
   **/
-@JSGlobal("WinJS.UI.PivotItem")
-@js.native
-//#region Constructors
-/**
-  * Creates a new PivotItem.
-  * @constructor
-  * @param element The DOM element hosts the new PivotItem.
-  * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-  **/
-class PivotItem () extends js.Object {
-  def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+trait PivotItem extends StObject {
+  
   //#endregion Methods
   //#region Properties
   /**
     * Gets the DOM element that hosts the PivotItem control's content.
     **/
-  var contentElement: HTMLElement = js.native
-  /**
-    * Gets the DOM element that hosts the PivotItem control.
-    **/
-  var element: HTMLElement = js.native
-  /**
-    * Gets or sets the header for this PivotItem.
-    **/
-  var header: String = js.native
+  var contentElement: HTMLElement
+  
   //#endregion Constructors
   //#region Methods
   /**
     * Releases resources held by this PivotItem. Call this method when the PivotItem is no longer needed. After calling this method, the PivotItem becomes unusable.
     **/
-  def dispose(): Unit = js.native
-}
-
-/* static members */
-@JSGlobal("WinJS.UI.PivotItem")
-@js.native
-object PivotItem extends js.Object {
+  def dispose(): Unit
+  
   /**
-    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+    * Gets the DOM element that hosts the PivotItem control.
     **/
-  var isDeclarativeControlContainer: js.Any = js.native
+  var element: HTMLElement
+  
   /**
-    * Indicates that the object is compatibile with declarative processing.
+    * Gets or sets the header for this PivotItem.
     **/
-  var supportedForProcessing: Boolean = js.native
+  var header: String
 }
-
+object PivotItem {
+  
+  inline def apply(contentElement: HTMLElement, dispose: Callback, element: HTMLElement, header: String): PivotItem = {
+    val __obj = js.Dynamic.literal(contentElement = contentElement.asInstanceOf[js.Any], dispose = dispose.toJsFn, element = element.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotItem]
+  }
+  
+  extension [Self <: PivotItem](x: Self) {
+    
+    inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+    
+    inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+  }
+}

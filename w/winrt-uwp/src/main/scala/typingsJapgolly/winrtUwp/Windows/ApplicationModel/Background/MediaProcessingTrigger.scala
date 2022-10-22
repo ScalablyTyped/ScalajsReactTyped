@@ -2,15 +2,14 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.ValueSet
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task for performing media processing. */
-@JSGlobal("Windows.ApplicationModel.Background.MediaProcessingTrigger")
 @js.native
-/** Initializes a new instance of the MediaProcessingTrigger class. */
-class MediaProcessingTrigger () extends js.Object {
+trait MediaProcessingTrigger extends StObject {
+  
   /**
     * Triggers the background task and returns a MediaProcessingTriggerResult indicating success or failure of the trigger request.
     * @return An asynchronous operation that returns a MediaProcessingTriggerResult upon completion.
@@ -23,4 +22,3 @@ class MediaProcessingTrigger () extends js.Object {
     */
   def requestAsync(args: ValueSet): IPromiseWithIAsyncOperation[MediaProcessingTriggerResult] = js.native
 }
-

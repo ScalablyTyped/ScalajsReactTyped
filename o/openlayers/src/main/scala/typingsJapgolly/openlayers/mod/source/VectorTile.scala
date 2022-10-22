@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.VectorTileOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.VectorTile")
 @js.native
-class VectorTile protected () extends UrlTile {
+open class VectorTile protected () extends UrlTile {
   /**
     * @classdesc
     * Class for layer sources providing vector data divided into a tile grid, to be
@@ -38,4 +38,3 @@ class VectorTile protected () extends UrlTile {
     */
   def this(options: VectorTileOptions) = this()
 }
-

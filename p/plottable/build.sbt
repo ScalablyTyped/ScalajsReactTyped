@@ -1,22 +1,19 @@
 organization := "org.scalablytyped.japgolly"
 name := "plottable"
-version := "3.8.6-a7dcf2"
-scalaVersion := "2.13.1"
+version := "3.13.0-fde622"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "d3-collection" % "1.0-dt-20200225Z-5d2d4a",
-  "org.scalablytyped.japgolly" %%% "d3-path" % "1.0-dt-20190212Z-092880",
-  "org.scalablytyped.japgolly" %%% "d3-selection" % "1.4-dt-20200225Z-910fbf",
-  "org.scalablytyped.japgolly" %%% "d3-shape" % "1.3-dt-20200225Z-c38cef",
-  "org.scalablytyped.japgolly" %%% "d3-time" % "1.0-dt-20190212Z-624fa0",
-  "org.scalablytyped.japgolly" %%% "d3-transition" % "1.1-dt-20200225Z-866f7e",
-  "org.scalablytyped.japgolly" %%% "lodash" % "4.14-dt-20200302Z-431400",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "typesettable" % "4.1.0-e36ea7")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "d3-path" % "3.0-dt-20220310Z-c74868",
+  "org.scalablytyped.japgolly" %%% "d3-selection" % "3.0-dt-20220720Z-ea39dc",
+  "org.scalablytyped.japgolly" %%% "d3-shape" % "3.1-dt-20220624Z-7b0e71",
+  "org.scalablytyped.japgolly" %%% "d3-time" % "3.0-dt-20211202Z-0604bb",
+  "org.scalablytyped.japgolly" %%% "d3-transition" % "3.0-dt-20220817Z-4b8cb3",
+  "org.scalablytyped.japgolly" %%% "lodash" % "4.14-dt-20220928Z-eb2108",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "typesettable" % "4.1.0-9f3732")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

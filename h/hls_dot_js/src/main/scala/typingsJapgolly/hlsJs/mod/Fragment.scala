@@ -1,67 +1,99 @@
 package typingsJapgolly.hlsJs.mod
 
+import typingsJapgolly.hlsJs.hlsJsStrings.initSegment
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * the Fragment object contains fragment related info
-  */
-trait Fragment extends js.Object {
-  /**
-    * continuity count
-    */
-  var cc: Double
-  /**
-    * fragment duration
-    */
-  var duration: Double
-  /**
-    * fragment level identifier
-    */
-  var level: Double
-  /**
-    * stream start date and time
-    */
-  var programDateTime: js.Date
-  /**
-    * fragment sequence number
-    */
-  var sn: Double
-  /**
-    * fragment start offset
-    */
-  var start: Double
-  /**
-    * list of tags associated with the fragment
-    */
-  var tagList: js.Array[js.Array[String]]
-  /**
-    * fragment title
-    */
-  var title: String
-  /**
-    * fragment url
-    */
-  var url: String
-}
-
-object Fragment {
-  @scala.inline
-  def apply(
-    cc: Double,
-    duration: Double,
-    level: Double,
-    programDateTime: js.Date,
-    sn: Double,
-    start: Double,
-    tagList: js.Array[js.Array[String]],
-    title: String,
-    url: String
-  ): Fragment = {
-    val __obj = js.Dynamic.literal(cc = cc.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], programDateTime = programDateTime.asInstanceOf[js.Any], sn = sn.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], tagList = tagList.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+@JSImport("hls.js", "Fragment")
+@js.native
+open class Fragment protected () extends BaseSegment {
+  def this(`type`: PlaylistLevelType, baseurl: String) = this()
   
-    __obj.asInstanceOf[Fragment]
-  }
+  /* private */ var _decryptdata: Any = js.native
+  
+  var appendedPTS: js.UndefOr[Double] = js.native
+  
+  var bitrateTest: Boolean = js.native
+  
+  var cc: Double = js.native
+  
+  def clearElementaryStreamInfo(): Unit = js.native
+  
+  /**
+    * Utility method for parseLevelPlaylist to create an initialization vector for a given segment
+    * @param {number} segmentNumber - segment number to generate IV with
+    * @returns {Uint8Array}
+    */
+  def createInitializationVector(segmentNumber: Double): js.typedarray.Uint8Array = js.native
+  
+  var data: js.UndefOr[js.typedarray.Uint8Array] = js.native
+  
+  def decryptdata: LevelKey | Null = js.native
+  
+  var deltaPTS: js.UndefOr[Double] = js.native
+  
+  var duration: Double = js.native
+  
+  def encrypted: Boolean = js.native
+  
+  def end: Double = js.native
+  
+  var endDTS: Double = js.native
+  
+  var endPTS: js.UndefOr[Double] = js.native
+  
+  def endProgramDateTime: Double | Null = js.native
+  
+  var initSegment: Fragment | Null = js.native
+  
+  var level: Double = js.native
+  
+  var levelkey: js.UndefOr[LevelKey] = js.native
+  
+  var loader: Loader[FragmentLoaderContext] | Null = js.native
+  
+  var maxStartPTS: js.UndefOr[Double] = js.native
+  
+  var minEndPTS: js.UndefOr[Double] = js.native
+  
+  var programDateTime: Double | Null = js.native
+  
+  var rawProgramDateTime: String | Null = js.native
+  
+  /**
+    * Utility method for parseLevelPlaylist to get a fragment's decryption data from the currently parsed encryption key data
+    * @param levelkey - a playlist's encryption info
+    * @param segmentNumber - the fragment's segment number
+    * @returns {LevelKey} - an object to be applied as a fragment's decryptdata
+    */
+  def setDecryptDataFromLevelKey(levelkey: LevelKey, segmentNumber: Double): LevelKey = js.native
+  
+  def setElementaryStreamInfo(`type`: ElementaryStreamTypes, startPTS: Double, endPTS: Double, startDTS: Double, endDTS: Double): Unit = js.native
+  def setElementaryStreamInfo(
+    `type`: ElementaryStreamTypes,
+    startPTS: Double,
+    endPTS: Double,
+    startDTS: Double,
+    endDTS: Double,
+    partial: Boolean
+  ): Unit = js.native
+  
+  var sn: Double | initSegment = js.native
+  
+  var start: Double = js.native
+  
+  var startDTS: Double = js.native
+  
+  var startPTS: js.UndefOr[Double] = js.native
+  
+  var stats: LoadStats = js.native
+  
+  var tagList: js.Array[js.Array[String]] = js.native
+  
+  var title: String | Null = js.native
+  
+  val `type`: PlaylistLevelType = js.native
+  
+  var urlId: Double = js.native
 }
-

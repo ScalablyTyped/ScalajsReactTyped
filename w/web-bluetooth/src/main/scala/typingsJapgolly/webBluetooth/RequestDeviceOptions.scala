@@ -1,30 +1,23 @@
 package typingsJapgolly.webBluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webBluetooth.AnonFilters
-  - typingsJapgolly.webBluetooth.AnonAcceptAllDevices
+  - typingsJapgolly.webBluetooth.anon.Filters
+  - typingsJapgolly.webBluetooth.anon.AcceptAllDevices
 */
-trait RequestDeviceOptions extends js.Object
-
+trait RequestDeviceOptions extends StObject
 object RequestDeviceOptions {
-  @scala.inline
-  def AnonFilters(
-    filters: js.Array[BluetoothRequestDeviceFilter],
-    optionalServices: js.Array[BluetoothServiceUUID] = null
-  ): RequestDeviceOptions = {
-    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
-    if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestDeviceOptions]
-  }
-  @scala.inline
-  def AnonAcceptAllDevices(acceptAllDevices: Boolean, optionalServices: js.Array[BluetoothServiceUUID] = null): RequestDeviceOptions = {
+  
+  inline def AcceptAllDevices(acceptAllDevices: Boolean): typingsJapgolly.webBluetooth.anon.AcceptAllDevices = {
     val __obj = js.Dynamic.literal(acceptAllDevices = acceptAllDevices.asInstanceOf[js.Any])
-    if (optionalServices != null) __obj.updateDynamic("optionalServices")(optionalServices.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RequestDeviceOptions]
+    __obj.asInstanceOf[typingsJapgolly.webBluetooth.anon.AcceptAllDevices]
+  }
+  
+  inline def Filters(filters: js.Array[BluetoothLEScanFilter]): typingsJapgolly.webBluetooth.anon.Filters = {
+    val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.webBluetooth.anon.Filters]
   }
 }
-

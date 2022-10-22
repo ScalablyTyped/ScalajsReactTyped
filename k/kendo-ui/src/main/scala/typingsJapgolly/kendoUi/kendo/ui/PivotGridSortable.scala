@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridSortable extends js.Object {
+trait PivotGridSortable extends StObject {
+  
   var allowUnsort: js.UndefOr[Boolean] = js.undefined
 }
-
 object PivotGridSortable {
-  @scala.inline
-  def apply(allowUnsort: js.UndefOr[Boolean] = js.undefined): PivotGridSortable = {
+  
+  inline def apply(): PivotGridSortable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridSortable]
   }
+  
+  extension [Self <: PivotGridSortable](x: Self) {
+    
+    inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUnsortUndefined: Self = StObject.set(x, "allowUnsort", js.undefined)
+  }
 }
-

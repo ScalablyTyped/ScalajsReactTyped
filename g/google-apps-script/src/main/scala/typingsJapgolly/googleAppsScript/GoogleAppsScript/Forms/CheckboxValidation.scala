@@ -1,10 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidation for a CheckboxItem.
@@ -23,24 +22,31 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     checkBoxItem.setValidation(checkBoxValidation);
   */
-trait CheckboxValidation extends js.Object {
+trait CheckboxValidation extends StObject {
+  
   def requireSelectAtLeast(number: Integer): CheckboxValidation
+  
   def requireSelectAtMost(number: Integer): CheckboxValidation
+  
   def requireSelectExactly(number: Integer): CheckboxValidation
 }
-
 object CheckboxValidation {
-  @scala.inline
-  def apply(
-    requireSelectAtLeast: Integer => CallbackTo[CheckboxValidation],
-    requireSelectAtMost: Integer => CallbackTo[CheckboxValidation],
-    requireSelectExactly: Integer => CallbackTo[CheckboxValidation]
+  
+  inline def apply(
+    requireSelectAtLeast: Integer => CheckboxValidation,
+    requireSelectAtMost: Integer => CheckboxValidation,
+    requireSelectExactly: Integer => CheckboxValidation
   ): CheckboxValidation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireSelectAtLeast")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectAtLeast(t0).runNow()))
-    __obj.updateDynamic("requireSelectAtMost")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectAtMost(t0).runNow()))
-    __obj.updateDynamic("requireSelectExactly")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectExactly(t0).runNow()))
+    val __obj = js.Dynamic.literal(requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
     __obj.asInstanceOf[CheckboxValidation]
   }
+  
+  extension [Self <: CheckboxValidation](x: Self) {
+    
+    inline def setRequireSelectAtLeast(value: Integer => CheckboxValidation): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
+    
+    inline def setRequireSelectAtMost(value: Integer => CheckboxValidation): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
+    
+    inline def setRequireSelectExactly(value: Integer => CheckboxValidation): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
+  }
 }
-

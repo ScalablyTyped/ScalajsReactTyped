@@ -1,33 +1,52 @@
 package typingsJapgolly.webidl2.mod
 
-import typingsJapgolly.webidl2.webidl2Strings.iterable
-import typingsJapgolly.webidl2.webidl2Strings.maplike
-import typingsJapgolly.webidl2.webidl2Strings.setlike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeclarationMemberType extends IDLInterfaceMemberType {
-  /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute]
-  /** An array with one or more IDL Types representing the declared type arguments. */
-  var idlType: js.Array[IDLTypeDescription]
-  /** Whether the maplike or setlike is declared as read only. */
-  var readonly: Boolean
-  var `type`: iterable | setlike | maplike
-}
-
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.webidl2.mod.IterableDeclarationMemberType
+  - typingsJapgolly.webidl2.mod.MaplikeDeclarationMemberType
+  - typingsJapgolly.webidl2.mod.SetlikeDeclarationMemberType
+*/
+trait DeclarationMemberType
+  extends StObject
+     with IDLInterfaceMemberType
 object DeclarationMemberType {
-  @scala.inline
-  def apply(
+  
+  inline def IterableDeclarationMemberType(
+    arguments: js.Array[Argument],
+    async: Boolean,
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription]),
+    parent: InterfaceMixinType | InterfaceType
+  ): typingsJapgolly.webidl2.mod.IterableDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = async.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = false)
+    __obj.updateDynamic("type")("iterable")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.IterableDeclarationMemberType]
+  }
+  
+  inline def MaplikeDeclarationMemberType(
+    arguments: js.Array[Any],
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
+    parent: InterfaceMixinType | InterfaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.MaplikeDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = false, extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("maplike")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.MaplikeDeclarationMemberType]
+  }
+  
+  inline def SetlikeDeclarationMemberType(
+    arguments: js.Array[Any],
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
-    readonly: Boolean,
-    `type`: iterable | setlike | maplike
-  ): DeclarationMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[DeclarationMemberType]
+    parent: InterfaceMixinType | InterfaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.SetlikeDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = false, extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setlike")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.SetlikeDeclarationMemberType]
   }
 }
-

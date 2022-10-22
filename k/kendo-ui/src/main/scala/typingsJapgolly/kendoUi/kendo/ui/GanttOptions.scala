@@ -3,166 +3,343 @@ package typingsJapgolly.kendoUi.kendo.ui
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.GanttDataSource
 import typingsJapgolly.kendoUi.kendo.data.GanttDependencyDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttOptions extends js.Object {
+trait GanttOptions extends StObject {
+  
   var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, Unit]] = js.undefined
+  
   var assignments: js.UndefOr[GanttAssignments] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
+  
   var cancel: js.UndefOr[js.Function1[/* e */ GanttCancelEvent, Unit]] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.undefined
+  
+  var columnMenu: js.UndefOr[Boolean | Any] = js.undefined
+  
   var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.undefined
+  
   var columnResizeHandleWidth: js.UndefOr[Double] = js.undefined
+  
   var columns: js.UndefOr[js.Array[GanttColumn]] = js.undefined
+  
   var currentTimeMarker: js.UndefOr[Boolean | GanttCurrentTimeMarker] = js.undefined
+  
   var dataBinding: js.UndefOr[js.Function1[/* e */ GanttDataBindingEvent, Unit]] = js.undefined
+  
   var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | GanttDataSource] = js.undefined
+  
   var date: js.UndefOr[js.Date] = js.undefined
-  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.undefined
+  
+  var dependencies: js.UndefOr[Any | GanttDependencyDataSource] = js.undefined
+  
   var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.undefined
+  
   var editable: js.UndefOr[Boolean | GanttEditable] = js.undefined
+  
+  var filterable: js.UndefOr[Boolean | Any] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var hourSpan: js.UndefOr[Double] = js.undefined
+  
   var listWidth: js.UndefOr[String | Double] = js.undefined
+  
   var messages: js.UndefOr[GanttMessages] = js.undefined
+  
   var move: js.UndefOr[js.Function1[/* e */ GanttMoveEvent, Unit]] = js.undefined
+  
   var moveEnd: js.UndefOr[js.Function1[/* e */ GanttMoveEndEvent, Unit]] = js.undefined
+  
   var moveStart: js.UndefOr[js.Function1[/* e */ GanttMoveStartEvent, Unit]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var navigate: js.UndefOr[js.Function1[/* e */ GanttNavigateEvent, Unit]] = js.undefined
+  
   var pdf: js.UndefOr[GanttPdf] = js.undefined
+  
   var pdfExport: js.UndefOr[js.Function1[/* e */ GanttPdfExportEvent, Unit]] = js.undefined
+  
   var range: js.UndefOr[GanttRange] = js.undefined
+  
   var remove: js.UndefOr[js.Function1[/* e */ GanttRemoveEvent, Unit]] = js.undefined
+  
+  var reorderable: js.UndefOr[Boolean] = js.undefined
+  
   var resizable: js.UndefOr[Boolean] = js.undefined
+  
   var resize: js.UndefOr[js.Function1[/* e */ GanttResizeEvent, Unit]] = js.undefined
+  
   var resizeEnd: js.UndefOr[js.Function1[/* e */ GanttResizeEndEvent, Unit]] = js.undefined
+  
   var resizeStart: js.UndefOr[js.Function1[/* e */ GanttResizeStartEvent, Unit]] = js.undefined
+  
   var resources: js.UndefOr[GanttResources] = js.undefined
+  
   var rowHeight: js.UndefOr[Double | String] = js.undefined
+  
   var save: js.UndefOr[js.Function1[/* e */ GanttSaveEvent, Unit]] = js.undefined
+  
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   var showWorkDays: js.UndefOr[Boolean] = js.undefined
+  
   var showWorkHours: js.UndefOr[Boolean] = js.undefined
+  
   var snap: js.UndefOr[Boolean] = js.undefined
+  
   var taskTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
+  var togglePlannedTasks: js.UndefOr[js.Function1[/* e */ GanttTogglePlannedTasks, Unit]] = js.undefined
+  
   var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.undefined
+  
   var tooltip: js.UndefOr[GanttTooltip] = js.undefined
+  
   var views: js.UndefOr[js.Array[GanttView]] = js.undefined
+  
   var workDayEnd: js.UndefOr[js.Date] = js.undefined
+  
   var workDayStart: js.UndefOr[js.Date] = js.undefined
+  
   var workWeekEnd: js.UndefOr[Double] = js.undefined
+  
   var workWeekStart: js.UndefOr[Double] = js.undefined
 }
-
 object GanttOptions {
-  @scala.inline
-  def apply(
-    add: /* e */ GanttAddEvent => Callback = null,
-    assignments: GanttAssignments = null,
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    cancel: /* e */ GanttCancelEvent => Callback = null,
-    change: /* e */ GanttChangeEvent => Callback = null,
-    columnResize: /* e */ GanttColumnResizeEvent => Callback = null,
-    columnResizeHandleWidth: Int | Double = null,
-    columns: js.Array[GanttColumn] = null,
-    currentTimeMarker: Boolean | GanttCurrentTimeMarker = null,
-    dataBinding: /* e */ GanttDataBindingEvent => Callback = null,
-    dataBound: /* e */ GanttDataBoundEvent => Callback = null,
-    dataSource: js.Any | GanttDataSource = null,
-    date: js.Date = null,
-    dependencies: js.Any | GanttDependencyDataSource = null,
-    edit: /* e */ GanttEditEvent => Callback = null,
-    editable: Boolean | GanttEditable = null,
-    height: Double | String = null,
-    hourSpan: Int | Double = null,
-    listWidth: String | Double = null,
-    messages: GanttMessages = null,
-    move: /* e */ GanttMoveEvent => Callback = null,
-    moveEnd: /* e */ GanttMoveEndEvent => Callback = null,
-    moveStart: /* e */ GanttMoveStartEvent => Callback = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    navigate: /* e */ GanttNavigateEvent => Callback = null,
-    pdf: GanttPdf = null,
-    pdfExport: /* e */ GanttPdfExportEvent => Callback = null,
-    range: GanttRange = null,
-    remove: /* e */ GanttRemoveEvent => Callback = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    resize: /* e */ GanttResizeEvent => Callback = null,
-    resizeEnd: /* e */ GanttResizeEndEvent => Callback = null,
-    resizeStart: /* e */ GanttResizeStartEvent => Callback = null,
-    resources: GanttResources = null,
-    rowHeight: Double | String = null,
-    save: /* e */ GanttSaveEvent => Callback = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    showWorkDays: js.UndefOr[Boolean] = js.undefined,
-    showWorkHours: js.UndefOr[Boolean] = js.undefined,
-    snap: js.UndefOr[Boolean] = js.undefined,
-    taskTemplate: String | js.Function = null,
-    toolbar: js.Array[GanttToolbarItem] = null,
-    tooltip: GanttTooltip = null,
-    views: js.Array[GanttView] = null,
-    workDayEnd: js.Date = null,
-    workDayStart: js.Date = null,
-    workWeekEnd: Int | Double = null,
-    workWeekStart: Int | Double = null
-  ): GanttOptions = {
+  
+  inline def apply(): GanttOptions = {
     val __obj = js.Dynamic.literal()
-    if (add != null) __obj.updateDynamic("add")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttAddEvent) => add(t0).runNow()))
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttCancelEvent) => cancel(t0).runNow()))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttChangeEvent) => change(t0).runNow()))
-    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttColumnResizeEvent) => columnResize(t0).runNow()))
-    if (columnResizeHandleWidth != null) __obj.updateDynamic("columnResizeHandleWidth")(columnResizeHandleWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (currentTimeMarker != null) __obj.updateDynamic("currentTimeMarker")(currentTimeMarker.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttDataBindingEvent) => dataBinding(t0).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttDataBoundEvent) => dataBound(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttEditEvent) => edit(t0).runNow()))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hourSpan != null) __obj.updateDynamic("hourSpan")(hourSpan.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttMoveEvent) => move(t0).runNow()))
-    if (moveEnd != null) __obj.updateDynamic("moveEnd")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttMoveEndEvent) => moveEnd(t0).runNow()))
-    if (moveStart != null) __obj.updateDynamic("moveStart")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttMoveStartEvent) => moveStart(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttNavigateEvent) => navigate(t0).runNow()))
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttPdfExportEvent) => pdfExport(t0).runNow()))
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttRemoveEvent) => remove(t0).runNow()))
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttResizeEvent) => resize(t0).runNow()))
-    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttResizeEndEvent) => resizeEnd(t0).runNow()))
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttResizeStartEvent) => resizeStart(t0).runNow()))
-    if (resources != null) __obj.updateDynamic("resources")(resources.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.GanttSaveEvent) => save(t0).runNow()))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkDays)) __obj.updateDynamic("showWorkDays")(showWorkDays.asInstanceOf[js.Any])
-    if (!js.isUndefined(showWorkHours)) __obj.updateDynamic("showWorkHours")(showWorkHours.asInstanceOf[js.Any])
-    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap.asInstanceOf[js.Any])
-    if (taskTemplate != null) __obj.updateDynamic("taskTemplate")(taskTemplate.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (workDayEnd != null) __obj.updateDynamic("workDayEnd")(workDayEnd.asInstanceOf[js.Any])
-    if (workDayStart != null) __obj.updateDynamic("workDayStart")(workDayStart.asInstanceOf[js.Any])
-    if (workWeekEnd != null) __obj.updateDynamic("workWeekEnd")(workWeekEnd.asInstanceOf[js.Any])
-    if (workWeekStart != null) __obj.updateDynamic("workWeekStart")(workWeekStart.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttOptions]
   }
+  
+  extension [Self <: GanttOptions](x: Self) {
+    
+    inline def setAdd(value: /* e */ GanttAddEvent => Callback): Self = StObject.set(x, "add", js.Any.fromFunction1((t0: /* e */ GanttAddEvent) => value(t0).runNow()))
+    
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    
+    inline def setAssignments(value: GanttAssignments): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    
+    inline def setCancel(value: /* e */ GanttCancelEvent => Callback): Self = StObject.set(x, "cancel", js.Any.fromFunction1((t0: /* e */ GanttCancelEvent) => value(t0).runNow()))
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setChange(value: /* e */ GanttChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ GanttChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setColumnMenu(value: Boolean | Any): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
+    
+    inline def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
+    
+    inline def setColumnResize(value: /* e */ GanttColumnResizeEvent => Callback): Self = StObject.set(x, "columnResize", js.Any.fromFunction1((t0: /* e */ GanttColumnResizeEvent) => value(t0).runNow()))
+    
+    inline def setColumnResizeHandleWidth(value: Double): Self = StObject.set(x, "columnResizeHandleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnResizeHandleWidthUndefined: Self = StObject.set(x, "columnResizeHandleWidth", js.undefined)
+    
+    inline def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
+    
+    inline def setColumns(value: js.Array[GanttColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: GanttColumn*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setCurrentTimeMarker(value: Boolean | GanttCurrentTimeMarker): Self = StObject.set(x, "currentTimeMarker", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentTimeMarkerUndefined: Self = StObject.set(x, "currentTimeMarker", js.undefined)
+    
+    inline def setDataBinding(value: /* e */ GanttDataBindingEvent => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1((t0: /* e */ GanttDataBindingEvent) => value(t0).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: /* e */ GanttDataBoundEvent => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction1((t0: /* e */ GanttDataBoundEvent) => value(t0).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: Any | GanttDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setDependencies(value: Any | GanttDependencyDataSource): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    
+    inline def setEdit(value: /* e */ GanttEditEvent => Callback): Self = StObject.set(x, "edit", js.Any.fromFunction1((t0: /* e */ GanttEditEvent) => value(t0).runNow()))
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setEditable(value: Boolean | GanttEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setFilterable(value: Boolean | Any): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHourSpan(value: Double): Self = StObject.set(x, "hourSpan", value.asInstanceOf[js.Any])
+    
+    inline def setHourSpanUndefined: Self = StObject.set(x, "hourSpan", js.undefined)
+    
+    inline def setListWidth(value: String | Double): Self = StObject.set(x, "listWidth", value.asInstanceOf[js.Any])
+    
+    inline def setListWidthUndefined: Self = StObject.set(x, "listWidth", js.undefined)
+    
+    inline def setMessages(value: GanttMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMove(value: /* e */ GanttMoveEvent => Callback): Self = StObject.set(x, "move", js.Any.fromFunction1((t0: /* e */ GanttMoveEvent) => value(t0).runNow()))
+    
+    inline def setMoveEnd(value: /* e */ GanttMoveEndEvent => Callback): Self = StObject.set(x, "moveEnd", js.Any.fromFunction1((t0: /* e */ GanttMoveEndEvent) => value(t0).runNow()))
+    
+    inline def setMoveEndUndefined: Self = StObject.set(x, "moveEnd", js.undefined)
+    
+    inline def setMoveStart(value: /* e */ GanttMoveStartEvent => Callback): Self = StObject.set(x, "moveStart", js.Any.fromFunction1((t0: /* e */ GanttMoveStartEvent) => value(t0).runNow()))
+    
+    inline def setMoveStartUndefined: Self = StObject.set(x, "moveStart", js.undefined)
+    
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setNavigate(value: /* e */ GanttNavigateEvent => Callback): Self = StObject.set(x, "navigate", js.Any.fromFunction1((t0: /* e */ GanttNavigateEvent) => value(t0).runNow()))
+    
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    
+    inline def setPdf(value: GanttPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    
+    inline def setPdfExport(value: /* e */ GanttPdfExportEvent => Callback): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1((t0: /* e */ GanttPdfExportEvent) => value(t0).runNow()))
+    
+    inline def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
+    
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    
+    inline def setRange(value: GanttRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setRemove(value: /* e */ GanttRemoveEvent => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: /* e */ GanttRemoveEvent) => value(t0).runNow()))
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+    
+    inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
+    
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setResize(value: /* e */ GanttResizeEvent => Callback): Self = StObject.set(x, "resize", js.Any.fromFunction1((t0: /* e */ GanttResizeEvent) => value(t0).runNow()))
+    
+    inline def setResizeEnd(value: /* e */ GanttResizeEndEvent => Callback): Self = StObject.set(x, "resizeEnd", js.Any.fromFunction1((t0: /* e */ GanttResizeEndEvent) => value(t0).runNow()))
+    
+    inline def setResizeEndUndefined: Self = StObject.set(x, "resizeEnd", js.undefined)
+    
+    inline def setResizeStart(value: /* e */ GanttResizeStartEvent => Callback): Self = StObject.set(x, "resizeStart", js.Any.fromFunction1((t0: /* e */ GanttResizeStartEvent) => value(t0).runNow()))
+    
+    inline def setResizeStartUndefined: Self = StObject.set(x, "resizeStart", js.undefined)
+    
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setResources(value: GanttResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    
+    inline def setRowHeight(value: Double | String): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    
+    inline def setSave(value: /* e */ GanttSaveEvent => Callback): Self = StObject.set(x, "save", js.Any.fromFunction1((t0: /* e */ GanttSaveEvent) => value(t0).runNow()))
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setShowWorkDays(value: Boolean): Self = StObject.set(x, "showWorkDays", value.asInstanceOf[js.Any])
+    
+    inline def setShowWorkDaysUndefined: Self = StObject.set(x, "showWorkDays", js.undefined)
+    
+    inline def setShowWorkHours(value: Boolean): Self = StObject.set(x, "showWorkHours", value.asInstanceOf[js.Any])
+    
+    inline def setShowWorkHoursUndefined: Self = StObject.set(x, "showWorkHours", js.undefined)
+    
+    inline def setSnap(value: Boolean): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
+    
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+    
+    inline def setTaskTemplate(value: String | js.Function): Self = StObject.set(x, "taskTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setTaskTemplateUndefined: Self = StObject.set(x, "taskTemplate", js.undefined)
+    
+    inline def setTogglePlannedTasks(value: /* e */ GanttTogglePlannedTasks => Callback): Self = StObject.set(x, "togglePlannedTasks", js.Any.fromFunction1((t0: /* e */ GanttTogglePlannedTasks) => value(t0).runNow()))
+    
+    inline def setTogglePlannedTasksUndefined: Self = StObject.set(x, "togglePlannedTasks", js.undefined)
+    
+    inline def setToolbar(value: js.Array[GanttToolbarItem]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setToolbarVarargs(value: GanttToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
+    
+    inline def setTooltip(value: GanttTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setViews(value: js.Array[GanttView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+    
+    inline def setViewsVarargs(value: GanttView*): Self = StObject.set(x, "views", js.Array(value*))
+    
+    inline def setWorkDayEnd(value: js.Date): Self = StObject.set(x, "workDayEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWorkDayEndUndefined: Self = StObject.set(x, "workDayEnd", js.undefined)
+    
+    inline def setWorkDayStart(value: js.Date): Self = StObject.set(x, "workDayStart", value.asInstanceOf[js.Any])
+    
+    inline def setWorkDayStartUndefined: Self = StObject.set(x, "workDayStart", js.undefined)
+    
+    inline def setWorkWeekEnd(value: Double): Self = StObject.set(x, "workWeekEnd", value.asInstanceOf[js.Any])
+    
+    inline def setWorkWeekEndUndefined: Self = StObject.set(x, "workWeekEnd", js.undefined)
+    
+    inline def setWorkWeekStart(value: Double): Self = StObject.set(x, "workWeekStart", value.asInstanceOf[js.Any])
+    
+    inline def setWorkWeekStartUndefined: Self = StObject.set(x, "workWeekStart", js.undefined)
+  }
 }
-

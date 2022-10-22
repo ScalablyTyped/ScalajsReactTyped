@@ -1,22 +1,26 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.diffFileMod.DiffFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/diff-delta", JSImport.Namespace)
-@js.native
-object diffDeltaMod extends js.Object {
+object diffDeltaMod {
+  
+  @JSImport("nodegit/diff-delta", "DiffDelta")
   @js.native
-  class DiffDelta () extends js.Object {
+  open class DiffDelta () extends StObject {
+    
     def flags(): Double = js.native
+    
     def newFile(): DiffFile = js.native
+    
     def nfiles(): Double = js.native
+    
     def oldFile(): DiffFile = js.native
+    
     def similarity(): Double = js.native
+    
     def status(): Double = js.native
   }
-  
 }
-

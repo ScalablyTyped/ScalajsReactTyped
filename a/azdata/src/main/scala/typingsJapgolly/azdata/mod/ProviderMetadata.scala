@@ -1,19 +1,24 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProviderMetadata extends js.Object {
+trait ProviderMetadata extends StObject {
+  
   var objectMetadata: js.Array[ObjectMetadata]
 }
-
 object ProviderMetadata {
-  @scala.inline
-  def apply(objectMetadata: js.Array[ObjectMetadata]): ProviderMetadata = {
-    val __obj = js.Dynamic.literal(objectMetadata = objectMetadata.asInstanceOf[js.Any])
   
+  inline def apply(objectMetadata: js.Array[ObjectMetadata]): ProviderMetadata = {
+    val __obj = js.Dynamic.literal(objectMetadata = objectMetadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProviderMetadata]
   }
+  
+  extension [Self <: ProviderMetadata](x: Self) {
+    
+    inline def setObjectMetadata(value: js.Array[ObjectMetadata]): Self = StObject.set(x, "objectMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setObjectMetadataVarargs(value: ObjectMetadata*): Self = StObject.set(x, "objectMetadata", js.Array(value*))
+  }
 }
-

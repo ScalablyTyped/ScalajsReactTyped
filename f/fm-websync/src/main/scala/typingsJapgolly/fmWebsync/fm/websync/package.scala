@@ -1,9 +1,9 @@
-package typingsJapgolly.fmWebsync.fm
+package typingsJapgolly.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object websync {
-  type baseArgs = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+type baseArgs = StringDictionary[Any]

@@ -1,15 +1,25 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/timestamp", JSImport.Namespace)
-@js.native
-object operatorTimestampMod extends js.Object {
-  def timestamp[T](): js.Any = js.native
-  def timestamp[T](
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+object operatorTimestampMod {
+  
+  @JSImport("rxjs-compat/operator/timestamp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def timestamp[T](): Observable_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp<T> */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")().asInstanceOf[Observable_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp<T> */ Any
+  ]]
+  inline def timestamp[T](scheduler: SchedulerLike): Observable_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp<T> */ Any
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("timestamp")(scheduler.asInstanceOf[js.Any]).asInstanceOf[Observable_[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp<T> */ Any
+  ]]
 }
-

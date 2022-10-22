@@ -1,12 +1,14 @@
 package typingsJapgolly.chartmogulNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("chartmogul-node", "Ping")
-@js.native
-object Ping extends js.Object {
-  def ping(config: Config): js.Promise[String] = js.native
+object Ping {
+  
+  @JSImport("chartmogul-node", "Ping")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def ping(config: Config): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ping")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }
-

@@ -1,44 +1,56 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageOverlayOptions extends InteractiveLayerOptions {
+trait ImageOverlayOptions
+  extends StObject
+     with InteractiveLayerOptions {
+  
   var alt: js.UndefOr[String] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
+  
+  var crossOrigin: js.UndefOr[CrossOrigin | Boolean] = js.undefined
+  
   var errorOverlayUrl: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object ImageOverlayOptions {
-  @scala.inline
-  def apply(
-    alt: String = null,
-    attribution: String = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    crossOrigin: CrossOrigin = null,
-    errorOverlayUrl: String = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    opacity: Int | Double = null,
-    pane: String = null,
-    zIndex: Int | Double = null
-  ): ImageOverlayOptions = {
+  
+  inline def apply(): ImageOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (errorOverlayUrl != null) __obj.updateDynamic("errorOverlayUrl")(errorOverlayUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOverlayOptions]
   }
+  
+  extension [Self <: ImageOverlayOptions](x: Self) {
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCrossOrigin(value: CrossOrigin | Boolean): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    
+    inline def setErrorOverlayUrl(value: String): Self = StObject.set(x, "errorOverlayUrl", value.asInstanceOf[js.Any])
+    
+    inline def setErrorOverlayUrlUndefined: Self = StObject.set(x, "errorOverlayUrl", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

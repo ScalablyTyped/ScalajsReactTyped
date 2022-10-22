@@ -1,19 +1,46 @@
 package typingsJapgolly.lessMiddleware
 
 import typingsJapgolly.express.mod.RequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
+import typingsJapgolly.lessMiddleware.anon.CacheFile
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("less-middleware", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Middleware created to allow processing of Less files for Connect JS framework
     * and by extension the Express JS framework
     */
-  def apply(source: String): RequestHandler[ParamsDictionary] = js.native
-  def apply(source: String, options: AnonCacheFile): RequestHandler[ParamsDictionary] = js.native
+  inline def apply(source: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def apply(source: String, options: CacheFile): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  
+  @JSImport("less-middleware", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

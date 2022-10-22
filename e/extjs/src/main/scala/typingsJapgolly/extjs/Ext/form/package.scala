@@ -1,11 +1,14 @@
-package typingsJapgolly.extjs.Ext
+package typingsJapgolly.extjs.Ext.form
 
+import typingsJapgolly.extjs.Ext.IBase
+import typingsJapgolly.extjs.Ext.util.IMixedCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object form {
-  type ICheckboxManager = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type IRadioManager = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type IVTypes = typingsJapgolly.extjs.Ext.IBase
-}
+
+type ICheckboxManager = IMixedCollection
+
+type IRadioManager = IMixedCollection
+
+type IVTypes = IBase

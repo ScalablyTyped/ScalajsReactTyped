@@ -1,21 +1,11 @@
 package typingsJapgolly.reservoir
 
 import typingsJapgolly.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("reservoir", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait ReservoirArray[T] extends Array[T] {
-    /**
-      * datum: one or more elements to consider for inclusion into the reservoir.
-      * Returns the current length of the reservoir.
-      */
-    def pushSome(datum: T*): Double = js.native
-  }
+object mod {
   
   /**
     * Create a new reservoir sampler.
@@ -25,8 +15,24 @@ object mod extends js.Object {
     * @param randomNumberGenerator is an optional random number generating function to use in
     *   place of the default Math.random.
     */
-  def apply[T](): ReservoirArray[T] = js.native
-  def apply[T](reservoirSize: Double): ReservoirArray[T] = js.native
-  def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = js.native
+  inline def apply[T](): ReservoirArray[T] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReservoirArray[T]]
+  inline def apply[T](reservoirSize: Double): ReservoirArray[T] = ^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any]).asInstanceOf[ReservoirArray[T]]
+  inline def apply[T](reservoirSize: Double, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = (^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any], randomNumberGenerator.asInstanceOf[js.Any])).asInstanceOf[ReservoirArray[T]]
+  inline def apply[T](reservoirSize: Unit, randomNumberGenerator: js.Function0[Double]): ReservoirArray[T] = (^.asInstanceOf[js.Dynamic].apply(reservoirSize.asInstanceOf[js.Any], randomNumberGenerator.asInstanceOf[js.Any])).asInstanceOf[ReservoirArray[T]]
+  
+  @JSImport("reservoir", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @js.native
+  trait ReservoirArray[T]
+    extends StObject
+       with Array[T] {
+    
+    /**
+      * datum: one or more elements to consider for inclusion into the reservoir.
+      * Returns the current length of the reservoir.
+      */
+    def pushSome(datum: T*): Double = js.native
+  }
 }
-

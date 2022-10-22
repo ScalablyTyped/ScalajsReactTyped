@@ -1,38 +1,63 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartCommonAxisSettingsTick extends js.Object {
-  /** Specifies ticks color. */
+trait dxPolarChartCommonAxisSettingsTick extends StObject {
+  
+  /**
+    * Specifies ticks color.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies tick length. */
+  
+  /**
+    * Specifies tick length.
+    */
   var length: js.UndefOr[Double] = js.undefined
-  /** Specifies tick opacity. */
+  
+  /**
+    * Specifies tick opacity.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Indicates whether or not ticks are visible on an axis. */
+  
+  /**
+    * Indicates whether or not ticks are visible on an axis.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies tick width. */
+  
+  /**
+    * Specifies tick width.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object dxPolarChartCommonAxisSettingsTick {
-  @scala.inline
-  def apply(
-    color: String = null,
-    length: Int | Double = null,
-    opacity: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxPolarChartCommonAxisSettingsTick = {
+  
+  inline def apply(): dxPolarChartCommonAxisSettingsTick = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsTick]
   }
+  
+  extension [Self <: dxPolarChartCommonAxisSettingsTick](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

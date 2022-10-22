@@ -1,65 +1,52 @@
 package typingsJapgolly.winrt.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoEncodingQuality extends js.Object
-
+sealed trait VideoEncodingQuality extends StObject
 @JSGlobal("Windows.Media.MediaProperties.VideoEncodingQuality")
 @js.native
-object VideoEncodingQuality extends js.Object {
-  @js.native
-  sealed trait auto extends VideoEncodingQuality
+object VideoEncodingQuality extends StObject {
   
   @js.native
-  sealed trait hD1080p extends VideoEncodingQuality
+  sealed trait auto
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait hD720p extends VideoEncodingQuality
+  sealed trait hD1080p
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait ntsc extends VideoEncodingQuality
+  sealed trait hD720p
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait pal extends VideoEncodingQuality
+  sealed trait ntsc
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait qvga extends VideoEncodingQuality
+  sealed trait pal
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait vga extends VideoEncodingQuality
+  sealed trait qvga
+    extends StObject
+       with VideoEncodingQuality
   
   @js.native
-  sealed trait wvga extends VideoEncodingQuality
+  sealed trait vga
+    extends StObject
+       with VideoEncodingQuality
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VideoEncodingQuality with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 1 */ @js.native
-  object hD1080p extends TopLevel[hD1080p with Double]
-  
-  /* 2 */ @js.native
-  object hD720p extends TopLevel[hD720p with Double]
-  
-  /* 4 */ @js.native
-  object ntsc extends TopLevel[ntsc with Double]
-  
-  /* 5 */ @js.native
-  object pal extends TopLevel[pal with Double]
-  
-  /* 7 */ @js.native
-  object qvga extends TopLevel[qvga with Double]
-  
-  /* 6 */ @js.native
-  object vga extends TopLevel[vga with Double]
-  
-  /* 3 */ @js.native
-  object wvga extends TopLevel[wvga with Double]
-  
+  @js.native
+  sealed trait wvga
+    extends StObject
+       with VideoEncodingQuality
 }
-

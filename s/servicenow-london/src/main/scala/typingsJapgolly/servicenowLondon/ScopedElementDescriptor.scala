@@ -1,11 +1,12 @@
 package typingsJapgolly.servicenowLondon
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScopedElementDescriptor extends js.Object {
+trait ScopedElementDescriptor extends StObject {
+  
   /**
     * Returns the encryption type used for attachments on the element's table.
     *
@@ -24,6 +25,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // null
     */
   def getAttachmentEncryptionType(): String
+  
   /**
     * Returns the element's encryption type.
     *
@@ -42,6 +44,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // null
     */
   def getEncryptionType(): String
+  
   /**
     * Returns the element's internal data type.
     *
@@ -58,6 +61,7 @@ trait ScopedElementDescriptor extends js.Object {
     * gs.info(isEdge);
     */
   def getInternalType(): String
+  
   /**
     * Returns the element's label.
     *
@@ -75,6 +79,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // Priority
     */
   def getLabel(): String
+  
   /**
     * Returns the element's length.
     *
@@ -92,6 +97,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // 40
     */
   def getLength(): Double
+  
   /**
     * Returns the element's name.
     *
@@ -109,6 +115,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // priority
     */
   def getName(): String
+  
   /**
     * Returns the element's plural label.
     *
@@ -122,6 +129,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // Incidents
     */
   def getPlural(): String
+  
   /**
     * Returns true if an encrypted attachment has been added to the table.
     *
@@ -139,6 +147,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // false
     */
   def hasAttachmentsEncrypted(): Boolean
+  
   /**
     * Returns true if the element is an automatically generated or system field.
     *
@@ -155,6 +164,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // false
     */
   def isAutoOrSysID(): Boolean
+  
   /**
     * Returns true if the element is defined as a dropdown choice in its dictionary
     * definition.
@@ -175,6 +185,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // true
     */
   def isChoiceTable(): Boolean
+  
   /**
     * Returns true if an element is encrypted.
     *
@@ -192,6 +203,7 @@ trait ScopedElementDescriptor extends js.Object {
     * // false
     */
   def isEdgeEncrypted(): Boolean
+  
   /**
     * Returns true if the element is a virtual element.
     *
@@ -213,10 +225,9 @@ trait ScopedElementDescriptor extends js.Object {
     */
   def isVirtual(): Boolean
 }
-
 object ScopedElementDescriptor {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getAttachmentEncryptionType: CallbackTo[String],
     getEncryptionType: CallbackTo[String],
     getInternalType: CallbackTo[String],
@@ -230,20 +241,34 @@ object ScopedElementDescriptor {
     isEdgeEncrypted: CallbackTo[Boolean],
     isVirtual: CallbackTo[Boolean]
   ): ScopedElementDescriptor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAttachmentEncryptionType")(getAttachmentEncryptionType.toJsFn)
-    __obj.updateDynamic("getEncryptionType")(getEncryptionType.toJsFn)
-    __obj.updateDynamic("getInternalType")(getInternalType.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getLength")(getLength.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getPlural")(getPlural.toJsFn)
-    __obj.updateDynamic("hasAttachmentsEncrypted")(hasAttachmentsEncrypted.toJsFn)
-    __obj.updateDynamic("isAutoOrSysID")(isAutoOrSysID.toJsFn)
-    __obj.updateDynamic("isChoiceTable")(isChoiceTable.toJsFn)
-    __obj.updateDynamic("isEdgeEncrypted")(isEdgeEncrypted.toJsFn)
-    __obj.updateDynamic("isVirtual")(isVirtual.toJsFn)
+    val __obj = js.Dynamic.literal(getAttachmentEncryptionType = getAttachmentEncryptionType.toJsFn, getEncryptionType = getEncryptionType.toJsFn, getInternalType = getInternalType.toJsFn, getLabel = getLabel.toJsFn, getLength = getLength.toJsFn, getName = getName.toJsFn, getPlural = getPlural.toJsFn, hasAttachmentsEncrypted = hasAttachmentsEncrypted.toJsFn, isAutoOrSysID = isAutoOrSysID.toJsFn, isChoiceTable = isChoiceTable.toJsFn, isEdgeEncrypted = isEdgeEncrypted.toJsFn, isVirtual = isVirtual.toJsFn)
     __obj.asInstanceOf[ScopedElementDescriptor]
   }
+  
+  extension [Self <: ScopedElementDescriptor](x: Self) {
+    
+    inline def setGetAttachmentEncryptionType(value: CallbackTo[String]): Self = StObject.set(x, "getAttachmentEncryptionType", value.toJsFn)
+    
+    inline def setGetEncryptionType(value: CallbackTo[String]): Self = StObject.set(x, "getEncryptionType", value.toJsFn)
+    
+    inline def setGetInternalType(value: CallbackTo[String]): Self = StObject.set(x, "getInternalType", value.toJsFn)
+    
+    inline def setGetLabel(value: CallbackTo[String]): Self = StObject.set(x, "getLabel", value.toJsFn)
+    
+    inline def setGetLength(value: CallbackTo[Double]): Self = StObject.set(x, "getLength", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetPlural(value: CallbackTo[String]): Self = StObject.set(x, "getPlural", value.toJsFn)
+    
+    inline def setHasAttachmentsEncrypted(value: CallbackTo[Boolean]): Self = StObject.set(x, "hasAttachmentsEncrypted", value.toJsFn)
+    
+    inline def setIsAutoOrSysID(value: CallbackTo[Boolean]): Self = StObject.set(x, "isAutoOrSysID", value.toJsFn)
+    
+    inline def setIsChoiceTable(value: CallbackTo[Boolean]): Self = StObject.set(x, "isChoiceTable", value.toJsFn)
+    
+    inline def setIsEdgeEncrypted(value: CallbackTo[Boolean]): Self = StObject.set(x, "isEdgeEncrypted", value.toJsFn)
+    
+    inline def setIsVirtual(value: CallbackTo[Boolean]): Self = StObject.set(x, "isVirtual", value.toJsFn)
+  }
 }
-

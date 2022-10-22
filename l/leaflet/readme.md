@@ -1,7 +1,7 @@
 
 # Scala.js typings for leaflet
 
-Typings are for version 1.5
+Typings are for version 1.9
 
 ## Library description:
 JavaScript library for mobile-friendly interactive maps
@@ -10,10 +10,10 @@ JavaScript library for mobile-friendly interactive maps
 | ------------------ | :-------------: |
 | Full name          | leaflet |
 | Keywords           | gis, map |
-| # releases         | 10 |
-| # dependents       | 774 |
-| # downloads        | 10127914 |
-| # stars            | 31 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2604527.0 |
+| # stars            | 34900.0 |
 
 ## Links
 - [Homepage](https://leafletjs.com/)

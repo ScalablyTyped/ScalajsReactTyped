@@ -1,68 +1,62 @@
 package typingsJapgolly.fundamentalReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.fundamentalReact.AnonCallback
-import typingsJapgolly.fundamentalReact.searchInputMod.SearchInputProps
-import typingsJapgolly.fundamentalReact.searchInputMod.default
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.anon.Text
+import typingsJapgolly.fundamentalReact.libSearchInputSearchInputMod.SearchInputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchInput {
-  def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    className: String = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    customStyles: StringDictionary[js.Any] = null,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    inShellbar: js.UndefOr[Boolean] = js.undefined,
-    inputProps: StringDictionary[js.Any] = null,
-    listProps: StringDictionary[js.Any] = null,
-    noSearchBtn: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* event */ ReactEventFrom[HTMLInputElement] => Callback = null,
-    onEnter: /* value */ js.UndefOr[String | Double | js.Array[String]] => Callback = null,
-    placeholder: String = null,
-    searchBtnProps: StringDictionary[js.Any] = null,
-    searchList: js.Array[AnonCallback] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SearchInputProps, default, Unit, SearchInputProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(inShellbar)) __obj.updateDynamic("inShellbar")(inShellbar.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (listProps != null) __obj.updateDynamic("listProps")(listProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSearchBtn)) __obj.updateDynamic("noSearchBtn")(noSearchBtn.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onChange(t0).runNow()))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[java.lang.String | scala.Double | js.Array[java.lang.String]]) => onEnter(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (searchBtnProps != null) __obj.updateDynamic("searchBtnProps")(searchBtnProps.asInstanceOf[js.Any])
-    if (searchList != null) __obj.updateDynamic("searchList")(searchList.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fundamentalReact.searchInputMod.SearchInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fundamentalReact.searchInputMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.searchInputMod.SearchInputProps])(children: _*)
-  }
-  @JSImport("fundamental-react/lib/SearchInput/SearchInput", JSImport.Default)
+  @JSImport("fundamental-react", "SearchInput")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fundamentalReact.mod.SearchInput] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def inShellbar(value: Boolean): this.type = set("inShellbar", value.asInstanceOf[js.Any])
+    
+    inline def inputGroupAddonProps(value: Any): this.type = set("inputGroupAddonProps", value.asInstanceOf[js.Any])
+    
+    inline def inputGroupProps(value: Any): this.type = set("inputGroupProps", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: Any): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def listProps(value: Any): this.type = set("listProps", value.asInstanceOf[js.Any])
+    
+    inline def noSearchBtn(value: Boolean): this.type = set("noSearchBtn", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* event */ ReactEventFrom[HTMLInputElement] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* event */ ReactEventFrom[HTMLInputElement]) => value(t0).runNow()))
+    
+    inline def onEnter(value: /* value */ js.UndefOr[String | Double | js.Array[String]] => Callback): this.type = set("onEnter", js.Any.fromFunction1((t0: /* value */ js.UndefOr[String | Double | js.Array[String]]) => value(t0).runNow()))
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def popoverProps(value: Any): this.type = set("popoverProps", value.asInstanceOf[js.Any])
+    
+    inline def searchBtnProps(value: Any): this.type = set("searchBtnProps", value.asInstanceOf[js.Any])
+    
+    inline def searchList(value: js.Array[typingsJapgolly.fundamentalReact.anon.Callback]): this.type = set("searchList", value.asInstanceOf[js.Any])
+    
+    inline def searchListVarargs(value: typingsJapgolly.fundamentalReact.anon.Callback*): this.type = set("searchList", js.Array(value*))
+    
+    inline def validationState(value: Text): this.type = set("validationState", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SearchInput.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SearchInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

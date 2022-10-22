@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-auth-kit" : "2.4.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-auth-kit" : "2.4.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

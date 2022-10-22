@@ -1,15 +1,13 @@
 package typingsJapgolly.oracleOraclejet.ojinputtextMod
 
-import typingsJapgolly.oracleOraclejet.AnonConverterHint
-import typingsJapgolly.oracleOraclejet.AnonDefinition
-import typingsJapgolly.oracleOraclejet.AnonInstruction
-import typingsJapgolly.oracleOraclejet.AnonRegexp
+import typingsJapgolly.oracleOraclejet.anon.ConverterHint
+import typingsJapgolly.oracleOraclejet.anon.Definition
+import typingsJapgolly.oracleOraclejet.anon.Instruction
+import typingsJapgolly.oracleOraclejet.anon.Regexp
 import typingsJapgolly.oracleOraclejet.ojmessagingMod.^
 import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.AsyncValidator
 import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.Converter
 import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredConverter
-import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.Validation.RegisteredValidator
-import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.Validator
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.always
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.auto
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.conditional
@@ -26,49 +24,59 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.tel
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.text
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.url
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.valid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ojInputTextSettableProperties
-  extends inputBaseSettableProperties[js.Any, js.Any, js.Any] {
+  extends StObject
+     with inputBaseSettableProperties[Any, Any, Any] {
+  
   var clearIcon: never | always | conditional
-  var converter: Converter[_] | RegisteredConverter | Null
+  
+  var converter: Converter[Any] | RegisteredConverter | Null
+  
   var list: String
+  
   var virtualKeyboard: auto | email | number | search | tel | text | url
 }
-
 object ojInputTextSettableProperties {
-  @scala.inline
-  def apply(
-    asyncValidators: js.Array[AsyncValidator[js.Any]],
+  
+  inline def apply(
+    asyncValidators: js.Array[AsyncValidator[Any]],
     autocomplete: on | off | String,
     autofocus: Boolean,
     clearIcon: never | always | conditional,
     disabled: Boolean,
-    displayOptions: AnonConverterHint,
-    help: AnonInstruction,
-    helpHints: AnonDefinition,
+    displayOptions: ConverterHint,
+    help: Instruction,
+    helpHints: Definition,
     labelHint: String,
     list: String,
     messagesCustom: js.Array[^],
     placeholder: String,
-    rawValue: js.Any,
+    rawValue: Any,
     readonly: Boolean,
     required: Boolean,
-    translations: AnonRegexp,
+    translations: Regexp,
     valid: valid | pending | invalidHidden | invalidShown,
-    value: js.Any,
-    virtualKeyboard: auto | email | number | search | tel | text | url,
-    converter: Converter[_] | RegisteredConverter = null,
-    describedBy: String = null,
-    validators: js.Array[Validator[js.Any] | RegisteredValidator] = null
+    value: Any,
+    virtualKeyboard: auto | email | number | search | tel | text | url
   ): ojInputTextSettableProperties = {
-    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearIcon = clearIcon.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any])
-    if (converter != null) __obj.updateDynamic("converter")(converter.asInstanceOf[js.Any])
-    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(asyncValidators = asyncValidators.asInstanceOf[js.Any], autocomplete = autocomplete.asInstanceOf[js.Any], autofocus = autofocus.asInstanceOf[js.Any], clearIcon = clearIcon.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], displayOptions = displayOptions.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], helpHints = helpHints.asInstanceOf[js.Any], labelHint = labelHint.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], messagesCustom = messagesCustom.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], rawValue = rawValue.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], translations = translations.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], virtualKeyboard = virtualKeyboard.asInstanceOf[js.Any], converter = null, describedBy = null, validators = null)
     __obj.asInstanceOf[ojInputTextSettableProperties]
   }
+  
+  extension [Self <: ojInputTextSettableProperties](x: Self) {
+    
+    inline def setClearIcon(value: never | always | conditional): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
+    
+    inline def setConverter(value: Converter[Any] | RegisteredConverter): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
+    
+    inline def setConverterNull: Self = StObject.set(x, "converter", null)
+    
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    inline def setVirtualKeyboard(value: auto | email | number | search | tel | text | url): Self = StObject.set(x, "virtualKeyboard", value.asInstanceOf[js.Any])
+  }
 }
-

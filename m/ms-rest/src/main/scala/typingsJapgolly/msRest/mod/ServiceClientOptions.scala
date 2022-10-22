@@ -1,27 +1,38 @@
 package typingsJapgolly.msRest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceClientOptions extends js.Object {
-  var filters: js.UndefOr[js.Array[_]] = js.undefined
+trait ServiceClientOptions extends StObject {
+  
+  var filters: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var noRetryPolicy: js.UndefOr[Boolean] = js.undefined
+  
   var requestOptions: js.UndefOr[ClientRequestOptions] = js.undefined
 }
-
 object ServiceClientOptions {
-  @scala.inline
-  def apply(
-    filters: js.Array[_] = null,
-    noRetryPolicy: js.UndefOr[Boolean] = js.undefined,
-    requestOptions: ClientRequestOptions = null
-  ): ServiceClientOptions = {
+  
+  inline def apply(): ServiceClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(noRetryPolicy)) __obj.updateDynamic("noRetryPolicy")(noRetryPolicy.asInstanceOf[js.Any])
-    if (requestOptions != null) __obj.updateDynamic("requestOptions")(requestOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceClientOptions]
   }
+  
+  extension [Self <: ServiceClientOptions](x: Self) {
+    
+    inline def setFilters(value: js.Array[Any]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: Any*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setNoRetryPolicy(value: Boolean): Self = StObject.set(x, "noRetryPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setNoRetryPolicyUndefined: Self = StObject.set(x, "noRetryPolicy", js.undefined)
+    
+    inline def setRequestOptions(value: ClientRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+  }
 }
-

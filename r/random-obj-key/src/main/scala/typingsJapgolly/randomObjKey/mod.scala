@@ -1,13 +1,15 @@
 package typingsJapgolly.randomObjKey
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("random-obj-key", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): String = js.native
+object mod {
+  
+  @JSImport("random-obj-key", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[ObjectType /* <: Record[String, Any] */](`object`: ObjectType): /* keyof ObjectType */ String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* keyof ObjectType */ String]
 }
-

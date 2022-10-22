@@ -1,20 +1,19 @@
 package typingsJapgolly.jquery
 
-import typingsJapgolly.jquery.JQuery_._Falsy
+import typingsJapgolly.jquery.JQuery._Falsy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryBooleans {
-  @js.native
-  sealed trait `false` extends _Falsy
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `false`
+    extends StObject
+       with _Falsy
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

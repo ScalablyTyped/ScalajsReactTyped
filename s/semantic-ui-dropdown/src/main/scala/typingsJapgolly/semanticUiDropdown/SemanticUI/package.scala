@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiDropdown
+package typingsJapgolly.semanticUiDropdown.SemanticUI
 
+import typingsJapgolly.semanticUiDropdown.SemanticUI.DropdownSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Dropdown = typingsJapgolly.semanticUiDropdown.SemanticUI.Dropdown_
-  /**
-    * @see {@link http://semantic-ui.com/modules/dropdown.html#/settings}
-    */
-  type DropdownSettings = typingsJapgolly.semanticUiDropdown.SemanticUI.DropdownSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/dropdown.html#/settings}
+  */
+type DropdownSettings = Param

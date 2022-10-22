@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextVerticalAlignment extends js.Object
-
+sealed trait ShapeTextVerticalAlignment extends StObject
 /**
-  *
   * Specifies the vertical alignment for the text frame in a shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextVerticalAlignment")
 @js.native
-object ShapeTextVerticalAlignment extends js.Object {
+object ShapeTextVerticalAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait bottom extends ShapeTextVerticalAlignment
+  sealed trait bottom
+    extends StObject
+       with ShapeTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait distributed extends ShapeTextVerticalAlignment
+  sealed trait distributed
+    extends StObject
+       with ShapeTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait justified extends ShapeTextVerticalAlignment
+  sealed trait justified
+    extends StObject
+       with ShapeTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait middle extends ShapeTextVerticalAlignment
+  sealed trait middle
+    extends StObject
+       with ShapeTextVerticalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait top extends ShapeTextVerticalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextVerticalAlignment with String] = js.native
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Distributed" */ @js.native
-  object distributed extends TopLevel[distributed with String]
-  
-  /* "Justified" */ @js.native
-  object justified extends TopLevel[justified with String]
-  
-  /* "Middle" */ @js.native
-  object middle extends TopLevel[middle with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with ShapeTextVerticalAlignment
 }
-

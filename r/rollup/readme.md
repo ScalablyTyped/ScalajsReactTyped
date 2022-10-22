@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup
 
-Typings are for version 1.31.1
+Typings are for version 3.2.2
 
 ## Library description:
 Next-generation ES module bundler
@@ -10,13 +10,13 @@ Next-generation ES module bundler
 | ------------------ | :-------------: |
 | Full name          | rollup |
 | Keywords           | modules, bundler, bundling, es6, optimizer |
-| # releases         | 176 |
-| # dependents       | 1608 |
-| # downloads        | 38866404 |
-| # stars            | 84 |
+| # releases         | 144 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6297196666666664E7 |
+| # stars            | 22327.0 |
 
 ## Links
-- [Homepage](https://github.com/rollup/rollup)
+- [Homepage](https://rollupjs.org/)
 - [Bugs](https://github.com/rollup/rollup/issues)
 - [Repository](https://github.com/rollup/rollup)
 - [Npm](https://www.npmjs.com/package/rollup)

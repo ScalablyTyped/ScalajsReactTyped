@@ -1,29 +1,24 @@
 package typingsJapgolly.winjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object winjsStrings {
-  @js.native
-  sealed trait down extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
+  @js.native
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
 }
-

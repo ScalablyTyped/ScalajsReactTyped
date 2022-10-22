@@ -1,15 +1,18 @@
 package typingsJapgolly.bitwise
 
-import typingsJapgolly.bitwise.typesMod.Bit
+import typingsJapgolly.bitwise.typesMod.Bits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/bits/to-string", JSImport.Namespace)
-@js.native
-object bitsToStringMod extends js.Object {
-  def default(bits: js.Array[Bit]): String = js.native
-  def default(bits: js.Array[Bit], spacing: Double): String = js.native
-  def default(bits: js.Array[Bit], spacing: Double, spacer: String): String = js.native
+object bitsToStringMod {
+  
+  @JSImport("bitwise/bits/to-string", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(bits: Bits): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(bits: Bits, spacing: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(bits: Bits, spacing: Double, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(bits: Bits, spacing: Unit, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

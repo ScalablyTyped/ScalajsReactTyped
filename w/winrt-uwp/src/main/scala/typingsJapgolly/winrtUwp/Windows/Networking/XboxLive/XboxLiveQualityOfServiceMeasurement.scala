@@ -1,86 +1,124 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.XboxLive
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
-import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-@JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
-@js.native
-/** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-class XboxLiveQualityOfServiceMeasurement () extends js.Object {
+trait XboxLiveQualityOfServiceMeasurement extends StObject {
+  
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var deviceAddresses: IVector[XboxLiveDeviceAddress] = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var metricResults: IVectorView[XboxLiveQualityOfServiceMetricResult] = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var metrics: IVector[XboxLiveQualityOfServiceMetric] = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var numberOfProbesToAttempt: Double = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var numberOfResultsPending: Double = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var privatePayloadResults: IVectorView[XboxLiveQualityOfServicePrivatePayloadResult] = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var shouldRequestPrivatePayloads: Boolean = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var timeoutInMilliseconds: Double = js.native
+  var deviceAddresses: IVector[XboxLiveDeviceAddress]
+  
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @param deviceAddress This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @param metric This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     */
-  def getMetricResult(deviceAddress: XboxLiveDeviceAddress, metric: XboxLiveQualityOfServiceMetric): XboxLiveQualityOfServiceMetricResult = js.native
+  def getMetricResult(deviceAddress: XboxLiveDeviceAddress, metric: XboxLiveQualityOfServiceMetric): XboxLiveQualityOfServiceMetricResult
+  
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @param deviceAddress This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     */
-  def getMetricResultsForDevice(deviceAddress: XboxLiveDeviceAddress): IVectorView[XboxLiveQualityOfServiceMetricResult] = js.native
+  def getMetricResultsForDevice(deviceAddress: XboxLiveDeviceAddress): IVectorView[XboxLiveQualityOfServiceMetricResult]
+  
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @param metric This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     */
-  def getMetricResultsForMetric(metric: XboxLiveQualityOfServiceMetric): IVectorView[XboxLiveQualityOfServiceMetricResult] = js.native
+  def getMetricResultsForMetric(metric: XboxLiveQualityOfServiceMetric): IVectorView[XboxLiveQualityOfServiceMetricResult]
+  
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @param deviceAddress This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     */
-  def getPrivatePayloadResult(deviceAddress: XboxLiveDeviceAddress): XboxLiveQualityOfServicePrivatePayloadResult = js.native
+  def getPrivatePayloadResult(deviceAddress: XboxLiveDeviceAddress): XboxLiveQualityOfServicePrivatePayloadResult
+  
   /**
     * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     * @return This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
     */
-  def measureAsync(): IPromiseWithIAsyncAction = js.native
+  def measureAsync(): IPromiseWithIAsyncAction
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var metricResults: IVectorView[XboxLiveQualityOfServiceMetricResult]
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var metrics: IVector[XboxLiveQualityOfServiceMetric]
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var numberOfProbesToAttempt: Double
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var numberOfResultsPending: Double
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var privatePayloadResults: IVectorView[XboxLiveQualityOfServicePrivatePayloadResult]
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var shouldRequestPrivatePayloads: Boolean
+  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  var timeoutInMilliseconds: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
-@js.native
-object XboxLiveQualityOfServiceMeasurement extends js.Object {
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var isSystemInboundBandwidthConstrained: Boolean = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var isSystemOutboundBandwidthConstrained: Boolean = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var maxPrivatePayloadSize: Double = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var maxSimultaneousProbeConnections: Double = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  var publishedPrivatePayload: IBuffer = js.native
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  def clearPrivatePayload(): Unit = js.native
-  /**
-    * This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
-    * @param payload This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime.
-    */
-  def publishPrivatePayloadBytes(payload: js.Array[Double]): Unit = js.native
+object XboxLiveQualityOfServiceMeasurement {
+  
+  inline def apply(
+    deviceAddresses: IVector[XboxLiveDeviceAddress],
+    getMetricResult: (XboxLiveDeviceAddress, XboxLiveQualityOfServiceMetric) => XboxLiveQualityOfServiceMetricResult,
+    getMetricResultsForDevice: XboxLiveDeviceAddress => IVectorView[XboxLiveQualityOfServiceMetricResult],
+    getMetricResultsForMetric: XboxLiveQualityOfServiceMetric => IVectorView[XboxLiveQualityOfServiceMetricResult],
+    getPrivatePayloadResult: XboxLiveDeviceAddress => XboxLiveQualityOfServicePrivatePayloadResult,
+    measureAsync: CallbackTo[IPromiseWithIAsyncAction],
+    metricResults: IVectorView[XboxLiveQualityOfServiceMetricResult],
+    metrics: IVector[XboxLiveQualityOfServiceMetric],
+    numberOfProbesToAttempt: Double,
+    numberOfResultsPending: Double,
+    privatePayloadResults: IVectorView[XboxLiveQualityOfServicePrivatePayloadResult],
+    shouldRequestPrivatePayloads: Boolean,
+    timeoutInMilliseconds: Double
+  ): XboxLiveQualityOfServiceMeasurement = {
+    val __obj = js.Dynamic.literal(deviceAddresses = deviceAddresses.asInstanceOf[js.Any], getMetricResult = js.Any.fromFunction2(getMetricResult), getMetricResultsForDevice = js.Any.fromFunction1(getMetricResultsForDevice), getMetricResultsForMetric = js.Any.fromFunction1(getMetricResultsForMetric), getPrivatePayloadResult = js.Any.fromFunction1(getPrivatePayloadResult), measureAsync = measureAsync.toJsFn, metricResults = metricResults.asInstanceOf[js.Any], metrics = metrics.asInstanceOf[js.Any], numberOfProbesToAttempt = numberOfProbesToAttempt.asInstanceOf[js.Any], numberOfResultsPending = numberOfResultsPending.asInstanceOf[js.Any], privatePayloadResults = privatePayloadResults.asInstanceOf[js.Any], shouldRequestPrivatePayloads = shouldRequestPrivatePayloads.asInstanceOf[js.Any], timeoutInMilliseconds = timeoutInMilliseconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XboxLiveQualityOfServiceMeasurement]
+  }
+  
+  extension [Self <: XboxLiveQualityOfServiceMeasurement](x: Self) {
+    
+    inline def setDeviceAddresses(value: IVector[XboxLiveDeviceAddress]): Self = StObject.set(x, "deviceAddresses", value.asInstanceOf[js.Any])
+    
+    inline def setGetMetricResult(
+      value: (XboxLiveDeviceAddress, XboxLiveQualityOfServiceMetric) => XboxLiveQualityOfServiceMetricResult
+    ): Self = StObject.set(x, "getMetricResult", js.Any.fromFunction2(value))
+    
+    inline def setGetMetricResultsForDevice(value: XboxLiveDeviceAddress => IVectorView[XboxLiveQualityOfServiceMetricResult]): Self = StObject.set(x, "getMetricResultsForDevice", js.Any.fromFunction1(value))
+    
+    inline def setGetMetricResultsForMetric(value: XboxLiveQualityOfServiceMetric => IVectorView[XboxLiveQualityOfServiceMetricResult]): Self = StObject.set(x, "getMetricResultsForMetric", js.Any.fromFunction1(value))
+    
+    inline def setGetPrivatePayloadResult(value: XboxLiveDeviceAddress => XboxLiveQualityOfServicePrivatePayloadResult): Self = StObject.set(x, "getPrivatePayloadResult", js.Any.fromFunction1(value))
+    
+    inline def setMeasureAsync(value: CallbackTo[IPromiseWithIAsyncAction]): Self = StObject.set(x, "measureAsync", value.toJsFn)
+    
+    inline def setMetricResults(value: IVectorView[XboxLiveQualityOfServiceMetricResult]): Self = StObject.set(x, "metricResults", value.asInstanceOf[js.Any])
+    
+    inline def setMetrics(value: IVector[XboxLiveQualityOfServiceMetric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfProbesToAttempt(value: Double): Self = StObject.set(x, "numberOfProbesToAttempt", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfResultsPending(value: Double): Self = StObject.set(x, "numberOfResultsPending", value.asInstanceOf[js.Any])
+    
+    inline def setPrivatePayloadResults(value: IVectorView[XboxLiveQualityOfServicePrivatePayloadResult]): Self = StObject.set(x, "privatePayloadResults", value.asInstanceOf[js.Any])
+    
+    inline def setShouldRequestPrivatePayloads(value: Boolean): Self = StObject.set(x, "shouldRequestPrivatePayloads", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutInMilliseconds(value: Double): Self = StObject.set(x, "timeoutInMilliseconds", value.asInstanceOf[js.Any])
+  }
 }
-

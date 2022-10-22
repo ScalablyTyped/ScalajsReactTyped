@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the HyperlinkCollection object, for use in "hyperlinkCollection.set({ ... })". */
-trait HyperlinkCollectionUpdateData extends js.Object {
+/** An interface for updating data on the HyperlinkCollection object, for use in `hyperlinkCollection.set({ ... })`. */
+trait HyperlinkCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
 }
-
 object HyperlinkCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[HyperlinkData] = null): HyperlinkCollectionUpdateData = {
+  
+  inline def apply(): HyperlinkCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[HyperlinkCollectionUpdateData]
   }
+  
+  extension [Self <: HyperlinkCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[HyperlinkData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: HyperlinkData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

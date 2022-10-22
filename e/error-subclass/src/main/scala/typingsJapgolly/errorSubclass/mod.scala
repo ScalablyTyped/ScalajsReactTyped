@@ -1,27 +1,38 @@
 package typingsJapgolly.errorSubclass
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("error-subclass", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
+object mod {
   
-  /* static members */
+  @JSImport("error-subclass", JSImport.Default)
   @js.native
-  object default extends js.Object {
-    var displayName: String = js.native
+  open class default ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("error-subclass", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("error-subclass", "default.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   type ErrorSubclass = js.Error
 }
-

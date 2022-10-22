@@ -1,29 +1,34 @@
 package typingsJapgolly.mqtt
 
-import typingsJapgolly.mqtt.clientMod.IStream
-import typingsJapgolly.mqtt.clientOptionsMod.IClientOptions
-import typingsJapgolly.mqtt.storeOptionsMod.IStoreOptions
+import typingsJapgolly.mqtt.typesLibClientMod.IStream
+import typingsJapgolly.mqtt.typesLibClientOptionsMod.IClientOptions
+import typingsJapgolly.mqtt.typesLibStoreOptionsMod.IStoreOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mqtt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("mqtt", JSImport.Namespace)
   @js.native
-  class Client protected ()
-    extends typingsJapgolly.mqtt.clientMod.MqttClient {
+  val ^ : js.Any = js.native
+  
+  @JSImport("mqtt", "Client")
+  @js.native
+  open class Client protected ()
+    extends typingsJapgolly.mqtt.typesLibClientMod.MqttClient {
     def this(
-      streamBuilder: js.Function1[/* client */ typingsJapgolly.mqtt.clientMod.MqttClient, IStream],
+      streamBuilder: js.Function1[/* client */ typingsJapgolly.mqtt.typesLibClientMod.MqttClient, IStream],
       options: IClientOptions
     ) = this()
   }
   
+  @JSImport("mqtt", "MqttClient")
   @js.native
-  class MqttClient protected ()
-    extends typingsJapgolly.mqtt.connectMod.MqttClient {
+  open class MqttClient protected ()
+    extends typingsJapgolly.mqtt.typesLibConnectMod.MqttClient {
     def this(
-      streamBuilder: js.Function1[/* client */ typingsJapgolly.mqtt.clientMod.MqttClient, IStream],
+      streamBuilder: js.Function1[/* client */ typingsJapgolly.mqtt.typesLibClientMod.MqttClient, IStream],
       options: IClientOptions
     ) = this()
   }
@@ -33,9 +38,10 @@ object mod extends js.Object {
     * This can actually be saved into files.
     *
     */
+  @JSImport("mqtt", "Store")
   @js.native
-  class Store protected ()
-    extends typingsJapgolly.mqtt.storeMod.Store {
+  open class Store protected ()
+    extends typingsJapgolly.mqtt.typesLibStoreMod.Store {
     /**
       * Store constructor
       *
@@ -45,15 +51,29 @@ object mod extends js.Object {
   }
   
   /**
+    * UniqueMessageIdProvider
+    */
+  @JSImport("mqtt", "UniqueMessageIdProvider")
+  @js.native
+  /**
+    * UniqueMessageIdProvider constructor.
+    * @constructor
+    */
+  open class UniqueMessageIdProvider ()
+    extends typingsJapgolly.mqtt.typesLibUniqueMessageIdProviderMod.UniqueMessageIdProvider
+  
+  /**
     * connect - connect to an MQTT broker.
     *
-    * @param {String} [brokerUrl] - url of the broker, optional
+    * @param {String} brokerUrl - url of the broker
     * @param {Object} opts - see MqttClient#constructor
     */
-  def connect(): typingsJapgolly.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: String): typingsJapgolly.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: String, opts: IClientOptions): typingsJapgolly.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: js.Any): typingsJapgolly.mqtt.clientMod.MqttClient = js.native
-  def connect(brokerUrl: js.Any, opts: IClientOptions): typingsJapgolly.mqtt.clientMod.MqttClient = js.native
+  inline def connect(brokerUrl: String): typingsJapgolly.mqtt.typesLibClientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mqtt.typesLibClientMod.MqttClient]
+  inline def connect(brokerUrl: String, opts: IClientOptions): typingsJapgolly.mqtt.typesLibClientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.mqtt.typesLibClientMod.MqttClient]
+  /**
+    * connect - connect to an MQTT broker.
+    *
+    * @param {Object} opts - see MqttClient#constructor
+    */
+  inline def connect(opts: IClientOptions): typingsJapgolly.mqtt.typesLibClientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mqtt.typesLibClientMod.MqttClient]
 }
-

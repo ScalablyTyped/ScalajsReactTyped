@@ -1,31 +1,40 @@
 package typingsJapgolly.satnav
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISatnav extends js.Object {
-  def change(onChange: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, _]): ISatnav
+trait ISatnav extends StObject {
+  
+  def change(onChange: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any]): ISatnav
+  
   def go(): ISatnav
+  
   def navigate(navigationOptions: INavigationOptions): ISatnav
+  
   def otherwise(route: String): ISatnav
 }
-
 object ISatnav {
-  @scala.inline
-  def apply(
-    change: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => CallbackTo[ISatnav],
+  
+  inline def apply(
+    change: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any] => ISatnav,
     go: CallbackTo[ISatnav],
-    navigate: INavigationOptions => CallbackTo[ISatnav],
-    otherwise: String => CallbackTo[ISatnav]
+    navigate: INavigationOptions => ISatnav,
+    otherwise: String => ISatnav
   ): ISatnav = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("change")(js.Any.fromFunction1((t0: js.Function3[/* hash */ java.lang.String, /* params */ js.Any, /* old */ js.Any, js.Any]) => change(t0).runNow()))
-    __obj.updateDynamic("go")(go.toJsFn)
-    __obj.updateDynamic("navigate")(js.Any.fromFunction1((t0: typingsJapgolly.satnav.INavigationOptions) => navigate(t0).runNow()))
-    __obj.updateDynamic("otherwise")(js.Any.fromFunction1((t0: java.lang.String) => otherwise(t0).runNow()))
+    val __obj = js.Dynamic.literal(change = js.Any.fromFunction1(change), go = go.toJsFn, navigate = js.Any.fromFunction1(navigate), otherwise = js.Any.fromFunction1(otherwise))
     __obj.asInstanceOf[ISatnav]
   }
+  
+  extension [Self <: ISatnav](x: Self) {
+    
+    inline def setChange(value: js.Function3[/* hash */ String, /* params */ Any, /* old */ Any, Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    
+    inline def setGo(value: CallbackTo[ISatnav]): Self = StObject.set(x, "go", value.toJsFn)
+    
+    inline def setNavigate(value: INavigationOptions => ISatnav): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+    
+    inline def setOtherwise(value: String => ISatnav): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+  }
 }
-

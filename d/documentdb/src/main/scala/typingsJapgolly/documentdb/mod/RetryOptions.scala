@@ -1,30 +1,39 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RetryOptions extends js.Object {
+trait RetryOptions extends StObject {
+  
   /** Fixed retry interval in milliseconds to wait between each retry ignoring the retryAfter returned as part of the response. */
   var FixedRetryIntervalInMilliseconds: js.UndefOr[Double] = js.undefined
+  
   /** Max number of retries to be performed for a request. Default value 9. */
   var MaxRetryAttemptCount: js.UndefOr[Double] = js.undefined
+  
   /** Max wait time in seconds to wait for a request while the retries are happening. Default value 30 seconds. */
   var MaxWaitTimeInSeconds: js.UndefOr[Double] = js.undefined
 }
-
 object RetryOptions {
-  @scala.inline
-  def apply(
-    FixedRetryIntervalInMilliseconds: Int | Double = null,
-    MaxRetryAttemptCount: Int | Double = null,
-    MaxWaitTimeInSeconds: Int | Double = null
-  ): RetryOptions = {
+  
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
-    if (FixedRetryIntervalInMilliseconds != null) __obj.updateDynamic("FixedRetryIntervalInMilliseconds")(FixedRetryIntervalInMilliseconds.asInstanceOf[js.Any])
-    if (MaxRetryAttemptCount != null) __obj.updateDynamic("MaxRetryAttemptCount")(MaxRetryAttemptCount.asInstanceOf[js.Any])
-    if (MaxWaitTimeInSeconds != null) __obj.updateDynamic("MaxWaitTimeInSeconds")(MaxWaitTimeInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetryOptions]
   }
+  
+  extension [Self <: RetryOptions](x: Self) {
+    
+    inline def setFixedRetryIntervalInMilliseconds(value: Double): Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", value.asInstanceOf[js.Any])
+    
+    inline def setFixedRetryIntervalInMillisecondsUndefined: Self = StObject.set(x, "FixedRetryIntervalInMilliseconds", js.undefined)
+    
+    inline def setMaxRetryAttemptCount(value: Double): Self = StObject.set(x, "MaxRetryAttemptCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetryAttemptCountUndefined: Self = StObject.set(x, "MaxRetryAttemptCount", js.undefined)
+    
+    inline def setMaxWaitTimeInSeconds(value: Double): Self = StObject.set(x, "MaxWaitTimeInSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWaitTimeInSecondsUndefined: Self = StObject.set(x, "MaxWaitTimeInSeconds", js.undefined)
+  }
 }
-

@@ -1,34 +1,43 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events related to clicking on the control's group headers.
   */
-@JSGlobal("BootstrapClientAccordionGroupClickEventArgs")
-@js.native
-class BootstrapClientAccordionGroupClickEventArgs protected () extends BootstrapClientAccordionGroupCancelEventArgs {
-  /**
-    * Initializes a new object of the BootstrapClientAccordionGroupClickEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param group An BootstrapClientAccordionGroup object that represents a group related to the event.
-    * @param htmlElement An HTML object that contains the processed accordion group.
-    */
-  def this(
-    processOnServer: Boolean,
-    group: BootstrapClientAccordionGroup,
-    htmlElement: js.Any,
-    htmlEvent: js.Any
-  ) = this()
+trait BootstrapClientAccordionGroupClickEventArgs
+  extends StObject
+     with BootstrapClientAccordionGroupCancelEventArgs {
+  
   /**
     * Gets an HTML object that contains the processed Accordion group.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object BootstrapClientAccordionGroupClickEventArgs {
+  
+  inline def apply(
+    cancel: Boolean,
+    group: BootstrapClientAccordionGroup,
+    htmlElement: Any,
+    htmlEvent: Any,
+    processOnServer: Boolean
+  ): BootstrapClientAccordionGroupClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientAccordionGroupClickEventArgs]
+  }
+  
+  extension [Self <: BootstrapClientAccordionGroupClickEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NodeCollapsedEventUIParam extends js.Object {
+trait NodeCollapsedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the collapsed node object.
-  	 */
-  var node: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the collapsed node object.
+    */
+  var node: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the tree.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the tree.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object NodeCollapsedEventUIParam {
-  @scala.inline
-  def apply(node: js.Any = null, owner: js.Any = null): NodeCollapsedEventUIParam = {
+  
+  inline def apply(): NodeCollapsedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCollapsedEventUIParam]
   }
+  
+  extension [Self <: NodeCollapsedEventUIParam](x: Self) {
+    
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,24 +1,41 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // getState
-trait GetStateParameters extends js.Object {
+trait GetStateParameters extends StObject {
+  
   var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
+  
   var channels: js.UndefOr[js.Array[String]] = js.undefined
+  
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object GetStateParameters {
-  @scala.inline
-  def apply(channelGroups: js.Array[String] = null, channels: js.Array[String] = null, uuid: String = null): GetStateParameters = {
+  
+  inline def apply(): GetStateParameters = {
     val __obj = js.Dynamic.literal()
-    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups.asInstanceOf[js.Any])
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStateParameters]
   }
+  
+  extension [Self <: GetStateParameters](x: Self) {
+    
+    inline def setChannelGroups(value: js.Array[String]): Self = StObject.set(x, "channelGroups", value.asInstanceOf[js.Any])
+    
+    inline def setChannelGroupsUndefined: Self = StObject.set(x, "channelGroups", js.undefined)
+    
+    inline def setChannelGroupsVarargs(value: String*): Self = StObject.set(x, "channelGroups", js.Array(value*))
+    
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value*))
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

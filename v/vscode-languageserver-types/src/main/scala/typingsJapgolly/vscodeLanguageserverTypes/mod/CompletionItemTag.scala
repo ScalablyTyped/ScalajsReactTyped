@@ -1,16 +1,15 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
-import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-types", "CompletionItemTag")
-@js.native
-object CompletionItemTag extends js.Object {
+object CompletionItemTag {
+  
   /**
     * Render a completion as obsolete, usually using a strike-out.
     */
-  val Deprecated: `1` = js.native
+  @JSImport("vscode-languageserver-types", "CompletionItemTag.Deprecated")
+  @js.native
+  val Deprecated: /* 1 */ Double = js.native
 }
-

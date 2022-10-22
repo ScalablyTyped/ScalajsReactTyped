@@ -1,18 +1,21 @@
 package typingsJapgolly.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INxCell extends js.Object {
+trait INxCell extends StObject {
+  
   /**
     * Attribute dimensions values.
     */
   var qAttrDims: INxAttributeDimValues
+  
   /**
     * Attribute expression values.
     */
   var qAttrExps: INxAttributeExpressionValues
+  
   /**
     * Rank number of the value, starting from 0.
     * If the element number is a negative number, it means that the returned value is not an element number.
@@ -23,26 +26,31 @@ trait INxCell extends js.Object {
     *       # -4: the cell is empty. Applies to pivot tables.
     */
   var qElemNumber: Double
+  
   /**
     * Frequency of the value.
     * This parameter is optional.
     */
   var qFrequency: String
+  
   /**
     * Search hits.
     * The search hits are highlighted.
     * This parameter is optional.
     */
   var qHighlightRanges: INxHighlightRanges
+  
   /**
     * Is set to true, if qText and qNum are empty.
     * This parameter is optional. The default value is false.
     */
   var qIsEmpty: Boolean
+  
   /**
     * Is set to true if the value is Null.
     */
   var qIsNull: Boolean
+  
   /**
     * Is set to true if the cell belongs to the group Others.
     * Dimension values can be set as Others depending on what has been defined in OtherTotalSpecProp.
@@ -50,17 +58,20 @@ trait INxCell extends js.Object {
     * Not applicable to list objects.
     */
   var qIsOtherCell: Boolean
+  
   /**
     * Is set to true if a total is displayed in the cell.
     * This parameter is optional. The default value is false.
     * Not applicable to list objects.
     */
   var qIsTotalCell: Boolean
+  
   /**
     * A value.
     * This parameter is optional.
     */
   var qNum: js.UndefOr[Double] = js.undefined
+  
   /**
     * State of the value.
     * The default state for a measure is L.
@@ -74,16 +85,16 @@ trait INxCell extends js.Object {
     * XL for eXcluded Locked
     */
   var qState: StateType
+  
   /**
     * Some text.
     * This parameter is optional.
     */
   var qText: js.UndefOr[String] = js.undefined
 }
-
 object INxCell {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     qAttrDims: INxAttributeDimValues,
     qAttrExps: INxAttributeExpressionValues,
     qElemNumber: Double,
@@ -93,14 +104,40 @@ object INxCell {
     qIsNull: Boolean,
     qIsOtherCell: Boolean,
     qIsTotalCell: Boolean,
-    qState: StateType,
-    qNum: Int | Double = null,
-    qText: String = null
+    qState: StateType
   ): INxCell = {
     val __obj = js.Dynamic.literal(qAttrDims = qAttrDims.asInstanceOf[js.Any], qAttrExps = qAttrExps.asInstanceOf[js.Any], qElemNumber = qElemNumber.asInstanceOf[js.Any], qFrequency = qFrequency.asInstanceOf[js.Any], qHighlightRanges = qHighlightRanges.asInstanceOf[js.Any], qIsEmpty = qIsEmpty.asInstanceOf[js.Any], qIsNull = qIsNull.asInstanceOf[js.Any], qIsOtherCell = qIsOtherCell.asInstanceOf[js.Any], qIsTotalCell = qIsTotalCell.asInstanceOf[js.Any], qState = qState.asInstanceOf[js.Any])
-    if (qNum != null) __obj.updateDynamic("qNum")(qNum.asInstanceOf[js.Any])
-    if (qText != null) __obj.updateDynamic("qText")(qText.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxCell]
   }
+  
+  extension [Self <: INxCell](x: Self) {
+    
+    inline def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    
+    inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    
+    inline def setQElemNumber(value: Double): Self = StObject.set(x, "qElemNumber", value.asInstanceOf[js.Any])
+    
+    inline def setQFrequency(value: String): Self = StObject.set(x, "qFrequency", value.asInstanceOf[js.Any])
+    
+    inline def setQHighlightRanges(value: INxHighlightRanges): Self = StObject.set(x, "qHighlightRanges", value.asInstanceOf[js.Any])
+    
+    inline def setQIsEmpty(value: Boolean): Self = StObject.set(x, "qIsEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setQIsNull(value: Boolean): Self = StObject.set(x, "qIsNull", value.asInstanceOf[js.Any])
+    
+    inline def setQIsOtherCell(value: Boolean): Self = StObject.set(x, "qIsOtherCell", value.asInstanceOf[js.Any])
+    
+    inline def setQIsTotalCell(value: Boolean): Self = StObject.set(x, "qIsTotalCell", value.asInstanceOf[js.Any])
+    
+    inline def setQNum(value: Double): Self = StObject.set(x, "qNum", value.asInstanceOf[js.Any])
+    
+    inline def setQNumUndefined: Self = StObject.set(x, "qNum", js.undefined)
+    
+    inline def setQState(value: StateType): Self = StObject.set(x, "qState", value.asInstanceOf[js.Any])
+    
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    
+    inline def setQTextUndefined: Self = StObject.set(x, "qText", js.undefined)
+  }
 }
-

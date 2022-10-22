@@ -1,14 +1,15 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SuperPropertyAccessExpression
-  extends PropertyAccessExpression
+  extends StObject
+     with PropertyAccessExpression
      with SuperProperty {
+  
   @JSName("expression")
-  var expression_SuperPropertyAccessExpression: SuperExpression = js.native
+  val expression_SuperPropertyAccessExpression: SuperExpression = js.native
 }
-

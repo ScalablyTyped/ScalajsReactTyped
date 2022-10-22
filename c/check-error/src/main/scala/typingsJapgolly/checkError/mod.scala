@@ -1,23 +1,29 @@
 package typingsJapgolly.checkError
 
-import typingsJapgolly.std.Error
-import typingsJapgolly.std.RegExp
+import typingsJapgolly.checkError.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("check-error", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def compatibleConstructor(thrown: js.Error, errorLike: ErrorInstanceOrConstructor): Boolean = js.native
-  def compatibleInstance(thrown: js.Error, errorLike: js.Error): Boolean = js.native
-  def compatibleMessage(thrown: String, errMatcher: String): Boolean = js.native
-  def compatibleMessage(thrown: String, errMatcher: RegExp): Boolean = js.native
-  def compatibleMessage(thrown: Error, errMatcher: String): Boolean = js.native
-  def compatibleMessage(thrown: Error, errMatcher: RegExp): Boolean = js.native
-  def getConstructorName(errorLike: ErrorInstanceOrConstructor): String = js.native
-  def getMessage(err: String): String = js.native
-  def getMessage(err: Error): String = js.native
-  type ErrorInstanceOrConstructor = js.Error | AnonInstantiable | (js.Function1[/* repeated */ js.Any, js.Error])
+object mod {
+  
+  @JSImport("check-error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def compatibleConstructor(thrown: js.Error, errorLike: ErrorInstanceOrConstructor): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleConstructor")(thrown.asInstanceOf[js.Any], errorLike.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def compatibleInstance(thrown: js.Error, errorLike: js.Error): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleInstance")(thrown.asInstanceOf[js.Any], errorLike.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def compatibleMessage(thrown: String, errMatcher: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleMessage")(thrown.asInstanceOf[js.Any], errMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compatibleMessage(thrown: String, errMatcher: js.RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleMessage")(thrown.asInstanceOf[js.Any], errMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compatibleMessage(thrown: js.Error, errMatcher: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleMessage")(thrown.asInstanceOf[js.Any], errMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compatibleMessage(thrown: js.Error, errMatcher: js.RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compatibleMessage")(thrown.asInstanceOf[js.Any], errMatcher.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def getConstructorName(errorLike: ErrorInstanceOrConstructor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getConstructorName")(errorLike.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def getMessage(err: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getMessage(err: js.Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  type ErrorInstanceOrConstructor = js.Error | Instantiable | (js.Function1[/* repeated */ Any, js.Error])
 }
-

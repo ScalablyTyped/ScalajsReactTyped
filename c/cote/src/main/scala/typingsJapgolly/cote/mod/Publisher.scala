@@ -1,12 +1,12 @@
 package typingsJapgolly.cote.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cote", "Publisher")
 @js.native
-class Publisher protected () extends Component {
+open class Publisher protected () extends Component {
   def this(/**
     * Configuration which controls the data being advertised for auto-discovery.
     */
@@ -21,6 +21,7 @@ class Publisher protected () extends Component {
     */
   discoveryOptions: DiscoveryOptions
   ) = this()
+  
   /**
     * Publishes an event to all Subscribers. Does not wait for results. If
     * there are no Subscribers listening, the event is lost.
@@ -30,4 +31,3 @@ class Publisher protected () extends Component {
     */
   def publish[T /* <: Event */](`type`: String, event: T): Unit = js.native
 }
-

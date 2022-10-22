@@ -1,22 +1,30 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IValue extends js.Object {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait IValue extends StObject {
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var localized: js.UndefOr[String] = js.undefined
 }
-
 object IValue {
-  @scala.inline
-  def apply(data: js.Any = null, localized: String = null): IValue = {
+  
+  inline def apply(): IValue = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (localized != null) __obj.updateDynamic("localized")(localized.asInstanceOf[js.Any])
     __obj.asInstanceOf[IValue]
   }
+  
+  extension [Self <: IValue](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setLocalized(value: String): Self = StObject.set(x, "localized", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizedUndefined: Self = StObject.set(x, "localized", js.undefined)
+  }
 }
-

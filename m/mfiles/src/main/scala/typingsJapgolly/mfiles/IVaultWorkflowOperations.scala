@@ -2,82 +2,125 @@ package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultWorkflowOperations extends js.Object {
+trait IVaultWorkflowOperations extends StObject {
+  
   def AddWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
+  
   def GetStateTransitionSignatureSettings(FromState: Double, ToState: Double): ISignatureSettings
+  
   def GetStateTransitionSignatureSettingsByID(StateTransitionID: Double): ISignatureSettings
+  
   def GetWorkflowAdmin(WorkflowID: Double): IWorkflowAdmin
+  
   def GetWorkflowForClient(WorkflowID: Double, UpdateFromServer: Boolean): IWorkflow
+  
   def GetWorkflowIDByAlias(Alias: String): Double
+  
   def GetWorkflowIDByGUID(WorkflowGUID: String): Double
+  
   def GetWorkflowStateIDByAlias(Alias: String): Double
+  
   def GetWorkflowStateIDByGUID(StateGUID: String): Double
+  
   def GetWorkflowStateTransitionIDByAlias(Alias: String): Double
+  
   def GetWorkflowStateTransitionIDByGUID(StateTransitionGUID: String): Double
+  
   def GetWorkflowStateTransitions(Workflow: Double, CurrentState: ITypedValue): IStateTransitionsForClient
+  
   def GetWorkflowStateTransitionsAsJSON(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): String
+  
   def GetWorkflowStateTransitionsEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStateTransitionsForClient
+  
   def GetWorkflowStates(Workflow: Double, CurrentState: ITypedValue): IStates
+  
   def GetWorkflowStatesEx(Workflow: Double, CurrentState: ITypedValue, ObjVer: IObjVer): IStates
+  
   def GetWorkflowsAdmin(): IWorkflowsAdmin
+  
   def GetWorkflowsAsValueListItems(UpdateFromServer: Boolean): IValueListItems
+  
   def GetWorkflowsForClient(UpdateFromServer: Boolean): IWorkflows
+  
   def RemoveWorkflowAdmin(WorkflowID: Double): Unit
+  
   def UpdateWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
 }
-
 object IVaultWorkflowOperations {
-  @scala.inline
-  def apply(
-    AddWorkflowAdmin: IWorkflowAdmin => CallbackTo[IWorkflowAdmin],
-    GetStateTransitionSignatureSettings: (Double, Double) => CallbackTo[ISignatureSettings],
-    GetStateTransitionSignatureSettingsByID: Double => CallbackTo[ISignatureSettings],
-    GetWorkflowAdmin: Double => CallbackTo[IWorkflowAdmin],
-    GetWorkflowForClient: (Double, Boolean) => CallbackTo[IWorkflow],
-    GetWorkflowIDByAlias: String => CallbackTo[Double],
-    GetWorkflowIDByGUID: String => CallbackTo[Double],
-    GetWorkflowStateIDByAlias: String => CallbackTo[Double],
-    GetWorkflowStateIDByGUID: String => CallbackTo[Double],
-    GetWorkflowStateTransitionIDByAlias: String => CallbackTo[Double],
-    GetWorkflowStateTransitionIDByGUID: String => CallbackTo[Double],
-    GetWorkflowStateTransitions: (Double, ITypedValue) => CallbackTo[IStateTransitionsForClient],
-    GetWorkflowStateTransitionsAsJSON: (Double, ITypedValue, IObjVer) => CallbackTo[String],
-    GetWorkflowStateTransitionsEx: (Double, ITypedValue, IObjVer) => CallbackTo[IStateTransitionsForClient],
-    GetWorkflowStates: (Double, ITypedValue) => CallbackTo[IStates],
-    GetWorkflowStatesEx: (Double, ITypedValue, IObjVer) => CallbackTo[IStates],
+  
+  inline def apply(
+    AddWorkflowAdmin: IWorkflowAdmin => IWorkflowAdmin,
+    GetStateTransitionSignatureSettings: (Double, Double) => ISignatureSettings,
+    GetStateTransitionSignatureSettingsByID: Double => ISignatureSettings,
+    GetWorkflowAdmin: Double => IWorkflowAdmin,
+    GetWorkflowForClient: (Double, Boolean) => IWorkflow,
+    GetWorkflowIDByAlias: String => Double,
+    GetWorkflowIDByGUID: String => Double,
+    GetWorkflowStateIDByAlias: String => Double,
+    GetWorkflowStateIDByGUID: String => Double,
+    GetWorkflowStateTransitionIDByAlias: String => Double,
+    GetWorkflowStateTransitionIDByGUID: String => Double,
+    GetWorkflowStateTransitions: (Double, ITypedValue) => IStateTransitionsForClient,
+    GetWorkflowStateTransitionsAsJSON: (Double, ITypedValue, IObjVer) => String,
+    GetWorkflowStateTransitionsEx: (Double, ITypedValue, IObjVer) => IStateTransitionsForClient,
+    GetWorkflowStates: (Double, ITypedValue) => IStates,
+    GetWorkflowStatesEx: (Double, ITypedValue, IObjVer) => IStates,
     GetWorkflowsAdmin: CallbackTo[IWorkflowsAdmin],
-    GetWorkflowsAsValueListItems: Boolean => CallbackTo[IValueListItems],
-    GetWorkflowsForClient: Boolean => CallbackTo[IWorkflows],
+    GetWorkflowsAsValueListItems: Boolean => IValueListItems,
+    GetWorkflowsForClient: Boolean => IWorkflows,
     RemoveWorkflowAdmin: Double => Callback,
-    UpdateWorkflowAdmin: IWorkflowAdmin => CallbackTo[IWorkflowAdmin]
+    UpdateWorkflowAdmin: IWorkflowAdmin => IWorkflowAdmin
   ): IVaultWorkflowOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddWorkflowAdmin")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IWorkflowAdmin) => AddWorkflowAdmin(t0).runNow()))
-    __obj.updateDynamic("GetStateTransitionSignatureSettings")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => GetStateTransitionSignatureSettings(t0, t1).runNow()))
-    __obj.updateDynamic("GetStateTransitionSignatureSettingsByID")(js.Any.fromFunction1((t0: scala.Double) => GetStateTransitionSignatureSettingsByID(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowAdmin")(js.Any.fromFunction1((t0: scala.Double) => GetWorkflowAdmin(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowForClient")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Boolean) => GetWorkflowForClient(t0, t1).runNow()))
-    __obj.updateDynamic("GetWorkflowIDByAlias")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowIDByAlias(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowIDByGUID")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowIDByGUID(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowStateIDByAlias")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowStateIDByAlias(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowStateIDByGUID")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowStateIDByGUID(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowStateTransitionIDByAlias")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowStateTransitionIDByAlias(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowStateTransitionIDByGUID")(js.Any.fromFunction1((t0: java.lang.String) => GetWorkflowStateTransitionIDByGUID(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowStateTransitions")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.mfiles.ITypedValue) => GetWorkflowStateTransitions(t0, t1).runNow()))
-    __obj.updateDynamic("GetWorkflowStateTransitionsAsJSON")(js.Any.fromFunction3((t0: scala.Double, t1: typingsJapgolly.mfiles.ITypedValue, t2: typingsJapgolly.mfiles.IObjVer) => GetWorkflowStateTransitionsAsJSON(t0, t1, t2).runNow()))
-    __obj.updateDynamic("GetWorkflowStateTransitionsEx")(js.Any.fromFunction3((t0: scala.Double, t1: typingsJapgolly.mfiles.ITypedValue, t2: typingsJapgolly.mfiles.IObjVer) => GetWorkflowStateTransitionsEx(t0, t1, t2).runNow()))
-    __obj.updateDynamic("GetWorkflowStates")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.mfiles.ITypedValue) => GetWorkflowStates(t0, t1).runNow()))
-    __obj.updateDynamic("GetWorkflowStatesEx")(js.Any.fromFunction3((t0: scala.Double, t1: typingsJapgolly.mfiles.ITypedValue, t2: typingsJapgolly.mfiles.IObjVer) => GetWorkflowStatesEx(t0, t1, t2).runNow()))
-    __obj.updateDynamic("GetWorkflowsAdmin")(GetWorkflowsAdmin.toJsFn)
-    __obj.updateDynamic("GetWorkflowsAsValueListItems")(js.Any.fromFunction1((t0: scala.Boolean) => GetWorkflowsAsValueListItems(t0).runNow()))
-    __obj.updateDynamic("GetWorkflowsForClient")(js.Any.fromFunction1((t0: scala.Boolean) => GetWorkflowsForClient(t0).runNow()))
-    __obj.updateDynamic("RemoveWorkflowAdmin")(js.Any.fromFunction1((t0: scala.Double) => RemoveWorkflowAdmin(t0).runNow()))
-    __obj.updateDynamic("UpdateWorkflowAdmin")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IWorkflowAdmin) => UpdateWorkflowAdmin(t0).runNow()))
+    val __obj = js.Dynamic.literal(AddWorkflowAdmin = js.Any.fromFunction1(AddWorkflowAdmin), GetStateTransitionSignatureSettings = js.Any.fromFunction2(GetStateTransitionSignatureSettings), GetStateTransitionSignatureSettingsByID = js.Any.fromFunction1(GetStateTransitionSignatureSettingsByID), GetWorkflowAdmin = js.Any.fromFunction1(GetWorkflowAdmin), GetWorkflowForClient = js.Any.fromFunction2(GetWorkflowForClient), GetWorkflowIDByAlias = js.Any.fromFunction1(GetWorkflowIDByAlias), GetWorkflowIDByGUID = js.Any.fromFunction1(GetWorkflowIDByGUID), GetWorkflowStateIDByAlias = js.Any.fromFunction1(GetWorkflowStateIDByAlias), GetWorkflowStateIDByGUID = js.Any.fromFunction1(GetWorkflowStateIDByGUID), GetWorkflowStateTransitionIDByAlias = js.Any.fromFunction1(GetWorkflowStateTransitionIDByAlias), GetWorkflowStateTransitionIDByGUID = js.Any.fromFunction1(GetWorkflowStateTransitionIDByGUID), GetWorkflowStateTransitions = js.Any.fromFunction2(GetWorkflowStateTransitions), GetWorkflowStateTransitionsAsJSON = js.Any.fromFunction3(GetWorkflowStateTransitionsAsJSON), GetWorkflowStateTransitionsEx = js.Any.fromFunction3(GetWorkflowStateTransitionsEx), GetWorkflowStates = js.Any.fromFunction2(GetWorkflowStates), GetWorkflowStatesEx = js.Any.fromFunction3(GetWorkflowStatesEx), GetWorkflowsAdmin = GetWorkflowsAdmin.toJsFn, GetWorkflowsAsValueListItems = js.Any.fromFunction1(GetWorkflowsAsValueListItems), GetWorkflowsForClient = js.Any.fromFunction1(GetWorkflowsForClient), RemoveWorkflowAdmin = js.Any.fromFunction1((t0: Double) => RemoveWorkflowAdmin(t0).runNow()), UpdateWorkflowAdmin = js.Any.fromFunction1(UpdateWorkflowAdmin))
     __obj.asInstanceOf[IVaultWorkflowOperations]
   }
+  
+  extension [Self <: IVaultWorkflowOperations](x: Self) {
+    
+    inline def setAddWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "AddWorkflowAdmin", js.Any.fromFunction1(value))
+    
+    inline def setGetStateTransitionSignatureSettings(value: (Double, Double) => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettings", js.Any.fromFunction2(value))
+    
+    inline def setGetStateTransitionSignatureSettingsByID(value: Double => ISignatureSettings): Self = StObject.set(x, "GetStateTransitionSignatureSettingsByID", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowAdmin(value: Double => IWorkflowAdmin): Self = StObject.set(x, "GetWorkflowAdmin", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowForClient(value: (Double, Boolean) => IWorkflow): Self = StObject.set(x, "GetWorkflowForClient", js.Any.fromFunction2(value))
+    
+    inline def setGetWorkflowIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByAlias", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowIDByGUID", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowStateIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByAlias", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowStateIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateIDByGUID", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowStateTransitionIDByAlias(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByAlias", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowStateTransitionIDByGUID(value: String => Double): Self = StObject.set(x, "GetWorkflowStateTransitionIDByGUID", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowStateTransitions(value: (Double, ITypedValue) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitions", js.Any.fromFunction2(value))
+    
+    inline def setGetWorkflowStateTransitionsAsJSON(value: (Double, ITypedValue, IObjVer) => String): Self = StObject.set(x, "GetWorkflowStateTransitionsAsJSON", js.Any.fromFunction3(value))
+    
+    inline def setGetWorkflowStateTransitionsEx(value: (Double, ITypedValue, IObjVer) => IStateTransitionsForClient): Self = StObject.set(x, "GetWorkflowStateTransitionsEx", js.Any.fromFunction3(value))
+    
+    inline def setGetWorkflowStates(value: (Double, ITypedValue) => IStates): Self = StObject.set(x, "GetWorkflowStates", js.Any.fromFunction2(value))
+    
+    inline def setGetWorkflowStatesEx(value: (Double, ITypedValue, IObjVer) => IStates): Self = StObject.set(x, "GetWorkflowStatesEx", js.Any.fromFunction3(value))
+    
+    inline def setGetWorkflowsAdmin(value: CallbackTo[IWorkflowsAdmin]): Self = StObject.set(x, "GetWorkflowsAdmin", value.toJsFn)
+    
+    inline def setGetWorkflowsAsValueListItems(value: Boolean => IValueListItems): Self = StObject.set(x, "GetWorkflowsAsValueListItems", js.Any.fromFunction1(value))
+    
+    inline def setGetWorkflowsForClient(value: Boolean => IWorkflows): Self = StObject.set(x, "GetWorkflowsForClient", js.Any.fromFunction1(value))
+    
+    inline def setRemoveWorkflowAdmin(value: Double => Callback): Self = StObject.set(x, "RemoveWorkflowAdmin", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setUpdateWorkflowAdmin(value: IWorkflowAdmin => IWorkflowAdmin): Self = StObject.set(x, "UpdateWorkflowAdmin", js.Any.fromFunction1(value))
+  }
 }
-

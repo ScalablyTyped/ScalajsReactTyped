@@ -1,15 +1,17 @@
 package typingsJapgolly.scrollparent
 
-import typingsJapgolly.std.HTMLElement
-import typingsJapgolly.std.SVGElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("scrollparent", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(node: HTMLElement): org.scalajs.dom.raw.HTMLElement | Null = js.native
-  def apply(node: SVGElement): org.scalajs.dom.raw.HTMLElement | Null = js.native
+object mod {
+  
+  inline def apply(node: HTMLElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  inline def apply(node: SVGElement): HTMLElement | Null = ^.asInstanceOf[js.Dynamic].apply(node.asInstanceOf[js.Any]).asInstanceOf[HTMLElement | Null]
+  
+  @JSImport("scrollparent", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

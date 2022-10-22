@@ -3,24 +3,23 @@ package typingsJapgolly.materialUi
 import typingsJapgolly.materialUi.MaterialUI.Popover.PopoverAnimationVerticalProps
 import typingsJapgolly.materialUi.MaterialUI.Popover.PopoverProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Popover", JSImport.Namespace)
-@js.native
-object popoverMod extends js.Object {
-  @js.native
-  class Popover ()
-    extends Component[PopoverProps, js.Object, js.Any]
+object popoverMod {
   
+  @JSImport("material-ui/Popover", JSImport.Default)
   @js.native
-  class PopoverAnimationVertical ()
-    extends Component[PopoverAnimationVerticalProps, js.Object, js.Any]
+  open class default () extends Popover
   
+  @JSImport("material-ui/Popover", "Popover")
   @js.native
-  class default ()
-    extends Component[PopoverProps, js.Object, js.Any]
+  open class Popover ()
+    extends Component[PopoverProps, js.Object, Any]
   
+  @JSImport("material-ui/Popover", "PopoverAnimationVertical")
+  @js.native
+  open class PopoverAnimationVertical ()
+    extends Component[PopoverAnimationVerticalProps, js.Object, Any]
 }
-

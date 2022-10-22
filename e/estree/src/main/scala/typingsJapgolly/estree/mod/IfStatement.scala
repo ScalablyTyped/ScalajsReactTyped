@@ -1,39 +1,43 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IfStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
+  
   var alternate: js.UndefOr[Statement | Null] = js.undefined
+  
   var consequent: Statement
+  
   var test: Expression
+  
   @JSName("type")
   var type_IfStatement: typingsJapgolly.estree.estreeStrings.IfStatement
 }
-
 object IfStatement {
-  @scala.inline
-  def apply(
-    consequent: Statement,
-    test: Expression,
-    `type`: typingsJapgolly.estree.estreeStrings.IfStatement,
-    alternate: Statement = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): IfStatement = {
+  
+  inline def apply(consequent: Statement, test: Expression): IfStatement = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (alternate != null) __obj.updateDynamic("alternate")(alternate.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("IfStatement")
     __obj.asInstanceOf[IfStatement]
   }
+  
+  extension [Self <: IfStatement](x: Self) {
+    
+    inline def setAlternate(value: Statement): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    
+    inline def setAlternateNull: Self = StObject.set(x, "alternate", null)
+    
+    inline def setAlternateUndefined: Self = StObject.set(x, "alternate", js.undefined)
+    
+    inline def setConsequent(value: Statement): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    
+    inline def setTest(value: Expression): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.IfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,22 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomEditor[TRow /* <: js.Object */, K /* <: String */] extends js.Object {
+trait CustomEditor[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */] extends StObject {
+  
   /**
-  	 * Additional parameters to pass to the getElement function inside the props argument.
-  	 */
+    * Additional parameters to pass to the getElement function inside the props argument.
+    */
   var customEditorParameters: js.UndefOr[js.Object] = js.undefined
+  
   /**
-  	 * Required. Function to use to create the custom cell editor. Takes two parameters:
-  	 *   `onUpdate`: callback function to call to update the value inside the cell.
-  	 *   `props`:
-  	 */
+    * Required. Function to use to create the custom cell editor. Takes two parameters:
+    *   `onUpdate`: callback function to call to update the value inside the cell.
+    *   `props`:
+    */
   def getElement(
     onUpdate: js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
@@ -24,22 +25,29 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: String */] extends js.Object
     props: CustomEditorProps[TRow, K]
   ): Element
 }
-
 object CustomEditor {
-  @scala.inline
-  def apply[TRow /* <: js.Object */, K /* <: String */](
+  
+  inline def apply[TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](
     getElement: (js.Function1[
       /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
       Unit
-    ], CustomEditorProps[TRow, K]) => CallbackTo[Element],
-    customEditorParameters: js.Object = null
+    ], CustomEditorProps[TRow, K]) => Element
   ): CustomEditor[TRow, K] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getElement")(js.Any.fromFunction2((t0: js.Function1[
-  /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
-  scala.Unit], t1: typingsJapgolly.reactBootstrapTable.mod.CustomEditorProps[TRow, K]) => getElement(t0, t1).runNow()))
-    if (customEditorParameters != null) __obj.updateDynamic("customEditorParameters")(customEditorParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(getElement = js.Any.fromFunction2(getElement))
     __obj.asInstanceOf[CustomEditor[TRow, K]]
   }
+  
+  extension [Self <: CustomEditor[?, ?], TRow /* <: js.Object */, K /* <: /* keyof TRow */ String */](x: Self & (CustomEditor[TRow, K])) {
+    
+    inline def setCustomEditorParameters(value: js.Object): Self = StObject.set(x, "customEditorParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCustomEditorParametersUndefined: Self = StObject.set(x, "customEditorParameters", js.undefined)
+    
+    inline def setGetElement(
+      value: (js.Function1[
+          /* import warning: importer.ImportType#apply Failed type conversion: TRow[K] */ /* updatedCell */ js.Any, 
+          Unit
+        ], CustomEditorProps[TRow, K]) => Element
+    ): Self = StObject.set(x, "getElement", js.Any.fromFunction2(value))
+  }
 }
-

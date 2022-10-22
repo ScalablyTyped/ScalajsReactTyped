@@ -4,30 +4,33 @@ import japgolly.scalajs.react.Callback
 import typingsJapgolly.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl
 import typingsJapgolly.activexDiskquota.activexDiskquotaStrings.OnUserNameChanged
 import typingsJapgolly.activexDiskquota.activexDiskquotaStrings.pUser
+import typingsJapgolly.activexDiskquota.anon.PUser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
+  
   def on(
     obj: DiskQuotaControl,
     event: OnUserNameChanged,
     argNames: js.Array[pUser],
-    handler: js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ AnonPUser, Unit]
+    handler: js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]
   ): Unit
 }
-
 object ActiveXObject {
-  @scala.inline
-  def apply(
-    on: (DiskQuotaControl, OnUserNameChanged, js.Array[pUser], js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ AnonPUser, Unit]) => Callback
+  
+  inline def apply(
+    on: (DiskQuotaControl, OnUserNameChanged, js.Array[pUser], js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]) => Callback
   ): ActiveXObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("on")(js.Any.fromFunction4((t0: typingsJapgolly.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl, t1: typingsJapgolly.activexDiskquota.activexDiskquotaStrings.OnUserNameChanged, t2: js.Array[typingsJapgolly.activexDiskquota.activexDiskquotaStrings.pUser], t3: js.ThisFunction1[
-  /* this */ typingsJapgolly.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl, 
-  /* parameter */ typingsJapgolly.activexDiskquota.AnonPUser, 
-  scala.Unit]) => on(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(on = js.Any.fromFunction4((t0: DiskQuotaControl, t1: OnUserNameChanged, t2: js.Array[pUser], t3: js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]) => (on(t0, t1, t2, t3)).runNow()))
     __obj.asInstanceOf[ActiveXObject]
   }
+  
+  extension [Self <: ActiveXObject](x: Self) {
+    
+    inline def setOn(
+      value: (DiskQuotaControl, OnUserNameChanged, js.Array[pUser], js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]) => Callback
+    ): Self = StObject.set(x, "on", js.Any.fromFunction4((t0: DiskQuotaControl, t1: OnUserNameChanged, t2: js.Array[pUser], t3: js.ThisFunction1[/* this */ DiskQuotaControl, /* parameter */ PUser, Unit]) => (value(t0, t1, t2, t3)).runNow()))
+  }
 }
-

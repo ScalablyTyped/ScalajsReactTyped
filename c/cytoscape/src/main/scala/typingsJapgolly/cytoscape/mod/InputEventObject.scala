@@ -2,23 +2,27 @@ package typingsJapgolly.cytoscape.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.MouseEvent
+import org.scalajs.dom.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputEventObject extends AbstractEventObject {
+trait InputEventObject
+  extends StObject
+     with AbstractEventObject {
+  
   /** originalEvent : the original user input device event object */
   var originalEvent: MouseEvent
+  
   /** position : indicates the model position of the event */
   var position: Position
+  
   /** renderedPosition : indicates the rendered position of the event */
   var renderedPosition: Position
 }
-
 object InputEventObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     cy: Core,
     isDefaultPrevented: CallbackTo[Boolean],
     isImmediatePropagationStopped: CallbackTo[Boolean],
@@ -30,19 +34,21 @@ object InputEventObject {
     renderedPosition: Position,
     stopImmediatePropagation: Callback,
     stopPropagation: Callback,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): InputEventObject = {
-    val __obj = js.Dynamic.literal(cy = cy.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderedPosition = renderedPosition.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped.toJsFn)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped.toJsFn)
-    __obj.updateDynamic("preventDefault")(preventDefault.toJsFn)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation.toJsFn)
-    __obj.updateDynamic("stopPropagation")(stopPropagation.toJsFn)
+    val __obj = js.Dynamic.literal(cy = cy.asInstanceOf[js.Any], isDefaultPrevented = isDefaultPrevented.toJsFn, isImmediatePropagationStopped = isImmediatePropagationStopped.toJsFn, isPropagationStopped = isPropagationStopped.toJsFn, namespace = namespace.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], preventDefault = preventDefault.toJsFn, renderedPosition = renderedPosition.asInstanceOf[js.Any], stopImmediatePropagation = stopImmediatePropagation.toJsFn, stopPropagation = stopPropagation.toJsFn, target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEventObject]
   }
+  
+  extension [Self <: InputEventObject](x: Self) {
+    
+    inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setRenderedPosition(value: Position): Self = StObject.set(x, "renderedPosition", value.asInstanceOf[js.Any])
+  }
 }
-

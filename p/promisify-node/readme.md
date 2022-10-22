@@ -10,15 +10,12 @@ Wrap Node-callback functions to return Promises.
 | ------------------ | :-------------: |
 | Full name          | promisify-node |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 145 |
-| # downloads        | 1689933 |
-| # stars            | 14 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 137402.66666666666 |
+| # stars            | 153.0 |
 
 ## Links
-- [Homepage](https://github.com/nodegit/promisify-node#readme)
-- [Bugs](https://github.com/nodegit/promisify-node/issues)
-- [Repository](https://github.com/nodegit/promisify-node)
 - [Npm](https://www.npmjs.com/package/promisify-node)
     
 

@@ -10,10 +10,10 @@ NodeJS wrapper for Three.js' TDSLoader function
 | ------------------ | :-------------: |
 | Full name          | three-tds-loader |
 | Keywords           | three, three.js, tds, 3ds, loader |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 2556 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 160.66666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/three-tds-loader)

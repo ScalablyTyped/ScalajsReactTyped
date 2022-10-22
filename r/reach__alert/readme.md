@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__alert
 
-Typings are for version 0.1
+Typings are for version 0.18.0
 
 ## Library description:
 Screen-reader-friendly alert messages.
@@ -10,10 +10,10 @@ Screen-reader-friendly alert messages.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 13 |
-| # downloads        | 221460 |
-| # stars            | 0 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 1068547.3333333333 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Screen-reader-friendly alert messages.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

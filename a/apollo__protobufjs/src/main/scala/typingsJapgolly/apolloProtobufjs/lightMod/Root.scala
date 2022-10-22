@@ -2,9 +2,9 @@ package typingsJapgolly.apolloProtobufjs.lightMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.apolloProtobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/light", "Root")
 @js.native
@@ -12,22 +12,23 @@ import scala.scalajs.js.annotation._
   * Constructs a new root namespace instance.
   * @param [options] Top level options
   */
-class Root ()
+open class Root ()
   extends typingsJapgolly.apolloProtobufjs.mod.Root {
-  def this(options: StringDictionary[js.Any]) = this()
+  def this(options: StringDictionary[Any]) = this()
 }
-
 /* static members */
-@JSImport("@apollo/protobufjs/light", "Root")
-@js.native
-object Root extends js.Object {
+object Root {
+  
+  @JSImport("@apollo/protobufjs/light", "Root")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Loads a namespace descriptor into a root namespace.
     * @param json Nameespace descriptor
     * @param [root] Root namespace, defaults to create a new one if omitted
     * @returns Root namespace
     */
-  def fromJSON(json: INamespace): typingsJapgolly.apolloProtobufjs.mod.Root = js.native
-  def fromJSON(json: INamespace, root: typingsJapgolly.apolloProtobufjs.mod.Root): typingsJapgolly.apolloProtobufjs.mod.Root = js.native
+  inline def fromJSON(json: INamespace): typingsJapgolly.apolloProtobufjs.mod.Root = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.apolloProtobufjs.mod.Root]
+  inline def fromJSON(json: INamespace, root: typingsJapgolly.apolloProtobufjs.mod.Root): typingsJapgolly.apolloProtobufjs.mod.Root = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.apolloProtobufjs.mod.Root]
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.lodash.fpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashIsArrayLike extends js.Object {
+trait LodashIsArrayLike extends StObject {
+  
   def apply(): /* is never */ Boolean = js.native
-  def apply(value: js.Any): /* is lodash.AnonLength */ Boolean = js.native
-  def apply(value: js.Function1[/* repeated */ js.Any, _]): /* is never */ Boolean = js.native
-  def apply[T](value: T with String with Double): Boolean = js.native
+  def apply(value: js.Function1[/* repeated */ Any, Any]): /* is never */ Boolean = js.native
+  def apply(value: Any): /* is lodash.anon.Length */ Boolean = js.native
 }
-

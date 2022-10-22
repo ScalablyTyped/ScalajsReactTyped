@@ -1,24 +1,20 @@
 package typingsJapgolly.muiDatatables.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.muiDatatables.muiDatatablesStrings.stacked
-  - typingsJapgolly.muiDatatables.muiDatatablesStrings.scrollMaxHeight
-  - typingsJapgolly.muiDatatables.muiDatatablesStrings.scrollFullHeight
+  - typingsJapgolly.muiDatatables.muiDatatablesStrings.vertical
+  - typingsJapgolly.muiDatatables.muiDatatablesStrings.standard
+  - typingsJapgolly.muiDatatables.muiDatatablesStrings.simple
 */
-trait Responsive extends js.Object
-
+trait Responsive extends StObject
 object Responsive {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def scrollFullHeight: typingsJapgolly.muiDatatables.muiDatatablesStrings.scrollFullHeight = this.cast("scrollFullHeight")
-  @scala.inline
-  def scrollMaxHeight: typingsJapgolly.muiDatatables.muiDatatablesStrings.scrollMaxHeight = this.cast("scrollMaxHeight")
-  @scala.inline
-  def stacked: typingsJapgolly.muiDatatables.muiDatatablesStrings.stacked = this.cast("stacked")
+  
+  inline def simple: typingsJapgolly.muiDatatables.muiDatatablesStrings.simple = "simple".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.simple]
+  
+  inline def standard: typingsJapgolly.muiDatatables.muiDatatablesStrings.standard = "standard".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.standard]
+  
+  inline def vertical: typingsJapgolly.muiDatatables.muiDatatablesStrings.vertical = "vertical".asInstanceOf[typingsJapgolly.muiDatatables.muiDatatablesStrings.vertical]
 }
-

@@ -1,29 +1,27 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EWorkshopFileAction extends js.Object
-
+sealed trait EWorkshopFileAction extends StObject
 @JSImport("steam-client", "EWorkshopFileAction")
 @js.native
-object EWorkshopFileAction extends js.Object {
-  @js.native
-  sealed trait Completed extends EWorkshopFileAction
-  
-  @js.native
-  sealed trait Played extends EWorkshopFileAction
+object EWorkshopFileAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EWorkshopFileAction with Double] = js.native
-  /* 1 */ @js.native
-  object Completed extends TopLevel[Completed with Double]
+  def apply(value: Double): js.UndefOr[EWorkshopFileAction & Double] = js.native
   
-  /* 0 */ @js.native
-  object Played extends TopLevel[Played with Double]
+  @js.native
+  sealed trait Completed
+    extends StObject
+       with EWorkshopFileAction
+  /* 1 */ val Completed: typingsJapgolly.steamClient.mod.EWorkshopFileAction.Completed & Double = js.native
   
+  @js.native
+  sealed trait Played
+    extends StObject
+       with EWorkshopFileAction
+  /* 0 */ val Played: typingsJapgolly.steamClient.mod.EWorkshopFileAction.Played & Double = js.native
 }
-

@@ -1,15 +1,17 @@
 package typingsJapgolly.git.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Status")
 @js.native
-class Status protected () extends js.Object {
-  def this(repo: js.Any, callback: js.Function) = this()
-  var files: js.Array[_] = js.native
-  var repo: js.Any = js.native
-  def index(file: js.Any): js.Any = js.native
+open class Status protected () extends StObject {
+  def this(repo: Any, callback: js.Function) = this()
+  
+  var files: js.Array[Any] = js.native
+  
+  def index(file: Any): Any = js.native
+  
+  var repo: Any = js.native
 }
-

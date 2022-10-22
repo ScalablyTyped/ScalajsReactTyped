@@ -1,35 +1,54 @@
 package typingsJapgolly.kuromoji.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Tokenizer[T] extends js.Object {
+trait Tokenizer[T] extends StObject {
+  
   var formatter: Formatter[T]
-  var token_info_dictionary: TokenInfoDictionary
-  var unknown_dictionary: UnknownDictionary
-  var viterbi_builder: ViterbiBuilder
-  var viterbi_searcher: ViterbiSearcher
+  
   def getLattice(text: String): ViterbiLattice
+  
+  var token_info_dictionary: TokenInfoDictionary
+  
   def tokenize(text: String): js.Array[T]
+  
+  var unknown_dictionary: UnknownDictionary
+  
+  var viterbi_builder: ViterbiBuilder
+  
+  var viterbi_searcher: ViterbiSearcher
 }
-
 object Tokenizer {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     formatter: Formatter[T],
-    getLattice: String => CallbackTo[ViterbiLattice],
+    getLattice: String => ViterbiLattice,
     token_info_dictionary: TokenInfoDictionary,
-    tokenize: String => CallbackTo[js.Array[T]],
+    tokenize: String => js.Array[T],
     unknown_dictionary: UnknownDictionary,
     viterbi_builder: ViterbiBuilder,
     viterbi_searcher: ViterbiSearcher
   ): Tokenizer[T] = {
-    val __obj = js.Dynamic.literal(formatter = formatter.asInstanceOf[js.Any], token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], unknown_dictionary = unknown_dictionary.asInstanceOf[js.Any], viterbi_builder = viterbi_builder.asInstanceOf[js.Any], viterbi_searcher = viterbi_searcher.asInstanceOf[js.Any])
-    __obj.updateDynamic("getLattice")(js.Any.fromFunction1((t0: java.lang.String) => getLattice(t0).runNow()))
-    __obj.updateDynamic("tokenize")(js.Any.fromFunction1((t0: java.lang.String) => tokenize(t0).runNow()))
+    val __obj = js.Dynamic.literal(formatter = formatter.asInstanceOf[js.Any], getLattice = js.Any.fromFunction1(getLattice), token_info_dictionary = token_info_dictionary.asInstanceOf[js.Any], tokenize = js.Any.fromFunction1(tokenize), unknown_dictionary = unknown_dictionary.asInstanceOf[js.Any], viterbi_builder = viterbi_builder.asInstanceOf[js.Any], viterbi_searcher = viterbi_searcher.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tokenizer[T]]
   }
+  
+  extension [Self <: Tokenizer[?], T](x: Self & Tokenizer[T]) {
+    
+    inline def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setGetLattice(value: String => ViterbiLattice): Self = StObject.set(x, "getLattice", js.Any.fromFunction1(value))
+    
+    inline def setToken_info_dictionary(value: TokenInfoDictionary): Self = StObject.set(x, "token_info_dictionary", value.asInstanceOf[js.Any])
+    
+    inline def setTokenize(value: String => js.Array[T]): Self = StObject.set(x, "tokenize", js.Any.fromFunction1(value))
+    
+    inline def setUnknown_dictionary(value: UnknownDictionary): Self = StObject.set(x, "unknown_dictionary", value.asInstanceOf[js.Any])
+    
+    inline def setViterbi_builder(value: ViterbiBuilder): Self = StObject.set(x, "viterbi_builder", value.asInstanceOf[js.Any])
+    
+    inline def setViterbi_searcher(value: ViterbiSearcher): Self = StObject.set(x, "viterbi_searcher", value.asInstanceOf[js.Any])
+  }
 }
-

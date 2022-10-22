@@ -1,24 +1,27 @@
 package typingsJapgolly.mqttPacket.mod
 
 import typingsJapgolly.mqttPacket.mqttPacketStrings.pingresp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IPingrespPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
+  
   @JSName("cmd")
   var cmd_IPingrespPacket: pingresp
 }
-
 object IPingrespPacket {
-  @scala.inline
-  def apply(cmd: pingresp, length: Int | Double = null, messageId: Int | Double = null): IPingrespPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
+  
+  inline def apply(): IPingrespPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pingresp")
     __obj.asInstanceOf[IPingrespPacket]
   }
+  
+  extension [Self <: IPingrespPacket](x: Self) {
+    
+    inline def setCmd(value: pingresp): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+  }
 }
-

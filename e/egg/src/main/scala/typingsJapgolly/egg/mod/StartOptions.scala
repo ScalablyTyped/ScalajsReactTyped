@@ -1,30 +1,39 @@
 package typingsJapgolly.egg.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StartOptions extends js.Object {
+trait StartOptions extends StObject {
+  
   /** directory of application, default to `process.cwd()` */
   var baseDir: js.UndefOr[String] = js.undefined
+  
   /** specify framework that can be absolute path or npm package */
   var framework: js.UndefOr[String] = js.undefined
+  
   /** ignore single process mode warning */
   var ignoreWarning: js.UndefOr[Boolean] = js.undefined
 }
-
 object StartOptions {
-  @scala.inline
-  def apply(
-    baseDir: String = null,
-    framework: String = null,
-    ignoreWarning: js.UndefOr[Boolean] = js.undefined
-  ): StartOptions = {
+  
+  inline def apply(): StartOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir.asInstanceOf[js.Any])
-    if (framework != null) __obj.updateDynamic("framework")(framework.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWarning)) __obj.updateDynamic("ignoreWarning")(ignoreWarning.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOptions]
   }
+  
+  extension [Self <: StartOptions](x: Self) {
+    
+    inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
+    
+    inline def setBaseDirUndefined: Self = StObject.set(x, "baseDir", js.undefined)
+    
+    inline def setFramework(value: String): Self = StObject.set(x, "framework", value.asInstanceOf[js.Any])
+    
+    inline def setFrameworkUndefined: Self = StObject.set(x, "framework", js.undefined)
+    
+    inline def setIgnoreWarning(value: Boolean): Self = StObject.set(x, "ignoreWarning", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreWarningUndefined: Self = StObject.set(x, "ignoreWarning", js.undefined)
+  }
 }
-

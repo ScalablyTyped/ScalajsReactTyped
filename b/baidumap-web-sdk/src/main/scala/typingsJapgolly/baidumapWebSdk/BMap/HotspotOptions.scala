@@ -1,33 +1,50 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HotspotOptions extends js.Object {
+trait HotspotOptions extends StObject {
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var offsets: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
-  var userData: js.UndefOr[js.Any] = js.undefined
+  
+  var userData: js.UndefOr[Any] = js.undefined
 }
-
 object HotspotOptions {
-  @scala.inline
-  def apply(
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    offsets: js.Array[Double] = null,
-    text: String = null,
-    userData: js.Any = null
-  ): HotspotOptions = {
+  
+  inline def apply(): HotspotOptions = {
     val __obj = js.Dynamic.literal()
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (offsets != null) __obj.updateDynamic("offsets")(offsets.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotspotOptions]
   }
+  
+  extension [Self <: HotspotOptions](x: Self) {
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setOffsets(value: js.Array[Double]): Self = StObject.set(x, "offsets", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetsUndefined: Self = StObject.set(x, "offsets", js.undefined)
+    
+    inline def setOffsetsVarargs(value: Double*): Self = StObject.set(x, "offsets", js.Array(value*))
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUserData(value: Any): Self = StObject.set(x, "userData", value.asInstanceOf[js.Any])
+    
+    inline def setUserDataUndefined: Self = StObject.set(x, "userData", js.undefined)
+  }
 }
-

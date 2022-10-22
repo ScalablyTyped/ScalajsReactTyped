@@ -1,169 +1,148 @@
 package typingsJapgolly.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProjectViewTypes extends js.Object
-
+sealed trait ProjectViewTypes extends StObject
 /**
   * Specifies the types of views that the {@link Office.Document | Document}.getSelectedViewAsync method can recognize.
   *
   * @remarks
-  * 
-  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the 
+  *
+  * The {@link Office.Document | Document}.getSelectedViewAsync method returns the ProjectViewTypes constant value and name that corresponds to the
   * active view.
   */
 @JSGlobal("Office.ProjectViewTypes")
 @js.native
-object ProjectViewTypes extends js.Object {
+object ProjectViewTypes extends StObject {
+  
   /**
     * The Calendar view.
     */
   @js.native
-  sealed trait Calendar extends ProjectViewTypes
+  sealed trait Calendar
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Gantt chart view.
     */
   @js.native
-  sealed trait Gantt extends ProjectViewTypes
+  sealed trait Gantt
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Network Diagram view.
     */
   @js.native
-  sealed trait NetworkDiagram extends ProjectViewTypes
+  sealed trait NetworkDiagram
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Resource Form view.
     */
   @js.native
-  sealed trait ResourceForm extends ProjectViewTypes
+  sealed trait ResourceForm
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Resource Graph view.
     */
   @js.native
-  sealed trait ResourceGraph extends ProjectViewTypes
+  sealed trait ResourceGraph
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Resource Names view.
     */
   @js.native
-  sealed trait ResourceNames extends ProjectViewTypes
+  sealed trait ResourceNames
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Resource Sheet view.
     */
   @js.native
-  sealed trait ResourceSheet extends ProjectViewTypes
+  sealed trait ResourceSheet
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Resource Usage view.
     */
   @js.native
-  sealed trait ResourceUsage extends ProjectViewTypes
+  sealed trait ResourceUsage
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task Details view.
     */
   @js.native
-  sealed trait TaskDetails extends ProjectViewTypes
+  sealed trait TaskDetails
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task Diagram view.
     */
   @js.native
-  sealed trait TaskDiagram extends ProjectViewTypes
+  sealed trait TaskDiagram
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task form view.
     */
   @js.native
-  sealed trait TaskForm extends ProjectViewTypes
+  sealed trait TaskForm
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task Name Form view.
     */
   @js.native
-  sealed trait TaskNameForm extends ProjectViewTypes
+  sealed trait TaskNameForm
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task Sheet view.
     */
   @js.native
-  sealed trait TaskSheet extends ProjectViewTypes
+  sealed trait TaskSheet
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Task Usage view.
     */
   @js.native
-  sealed trait TaskUsage extends ProjectViewTypes
+  sealed trait TaskUsage
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Team Planner view.
     */
   @js.native
-  sealed trait TeamPlanner extends ProjectViewTypes
+  sealed trait TeamPlanner
+    extends StObject
+       with ProjectViewTypes
   
   /**
     * The Timeline view.
     */
   @js.native
-  sealed trait Timeline extends ProjectViewTypes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProjectViewTypes with Double] = js.native
-  /* 12 */ @js.native
-  object Calendar extends TopLevel[Calendar with Double]
-  
-  /* 0 */ @js.native
-  object Gantt extends TopLevel[Gantt with Double]
-  
-  /* 1 */ @js.native
-  object NetworkDiagram extends TopLevel[NetworkDiagram with Double]
-  
-  /* 5 */ @js.native
-  object ResourceForm extends TopLevel[ResourceForm with Double]
-  
-  /* 7 */ @js.native
-  object ResourceGraph extends TopLevel[ResourceGraph with Double]
-  
-  /* 11 */ @js.native
-  object ResourceNames extends TopLevel[ResourceNames with Double]
-  
-  /* 6 */ @js.native
-  object ResourceSheet extends TopLevel[ResourceSheet with Double]
-  
-  /* 14 */ @js.native
-  object ResourceUsage extends TopLevel[ResourceUsage with Double]
-  
-  /* 9 */ @js.native
-  object TaskDetails extends TopLevel[TaskDetails with Double]
-  
-  /* 2 */ @js.native
-  object TaskDiagram extends TopLevel[TaskDiagram with Double]
-  
-  /* 3 */ @js.native
-  object TaskForm extends TopLevel[TaskForm with Double]
-  
-  /* 10 */ @js.native
-  object TaskNameForm extends TopLevel[TaskNameForm with Double]
-  
-  /* 4 */ @js.native
-  object TaskSheet extends TopLevel[TaskSheet with Double]
-  
-  /* 13 */ @js.native
-  object TaskUsage extends TopLevel[TaskUsage with Double]
-  
-  /* 8 */ @js.native
-  object TeamPlanner extends TopLevel[TeamPlanner with Double]
-  
-  /* 15 */ @js.native
-  object Timeline extends TopLevel[Timeline with Double]
-  
+  sealed trait Timeline
+    extends StObject
+       with ProjectViewTypes
 }
-

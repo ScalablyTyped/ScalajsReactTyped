@@ -1,49 +1,59 @@
 package typingsJapgolly.weixinApp.wx
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebSocket
 trait ConnectSocketOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /** 请求的数据 */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
+  
   /** HTTP Header , header 中不能设置 Referer */
   var header: js.UndefOr[RequestHeader] = js.undefined
+  
   /** 默认是GET，有效值为： OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT */
   var method: js.UndefOr[String] = js.undefined
+  
   /**
-  		 * 子协议数组
-  		 * @version 1.4.0
-  		 */
+    * 子协议数组
+    * @version 1.4.0
+    */
   var protocols: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** 开发者服务器接口地址，必须是 HTTPS 协议，且域名必须是后台配置的合法域名 */
   var url: String
 }
-
 object ConnectSocketOptions {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* res */ js.Any => Callback = null,
-    data: js.Any = null,
-    fail: js.Any => Callback = null,
-    header: RequestHeader = null,
-    method: String = null,
-    protocols: js.Array[String] = null,
-    success: js.Any => Callback = null
-  ): ConnectSocketOptions = {
+  
+  inline def apply(url: String): ConnectSocketOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[ConnectSocketOptions]
   }
+  
+  extension [Self <: ConnectSocketOptions](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHeader(value: RequestHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

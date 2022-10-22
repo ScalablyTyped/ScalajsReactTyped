@@ -1,11 +1,12 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SoundRecorder extends js.Object {
+trait SoundRecorder extends StObject {
+  
   /**
     *   Start recording. To access the recording, provide
     *   a p5.SoundFile as the first parameter. The
@@ -22,7 +23,9 @@ trait SoundRecorder extends js.Object {
     */
   def record(soundFile: SoundFile): Unit = js.native
   def record(soundFile: SoundFile, duration: Double): Unit = js.native
-  def record(soundFile: SoundFile, duration: Double, callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def record(soundFile: SoundFile, duration: Double, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+  def record(soundFile: SoundFile, duration: Unit, callback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+  
   /**
     *   Connect a specific device to the p5.SoundRecorder.
     *   If no parameter is given, p5.SoundRecorer will
@@ -32,6 +35,7 @@ trait SoundRecorder extends js.Object {
     */
   def setInput(): Unit = js.native
   def setInput(unit: js.Object): Unit = js.native
+  
   /**
     *   Stop the recording. Once the recording is stopped,
     *   the results will be sent to the p5.SoundFile that
@@ -41,4 +45,3 @@ trait SoundRecorder extends js.Object {
     */
   def stop(): Unit = js.native
 }
-

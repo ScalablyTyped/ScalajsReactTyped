@@ -7,152 +7,176 @@ import typingsJapgolly.documentdb.mod.MediaReadMode
 import typingsJapgolly.documentdb.mod.PermissionMode
 import typingsJapgolly.documentdb.mod.TriggerOperation
 import typingsJapgolly.documentdb.mod.TriggerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentdbStrings {
+  
   @js.native
   sealed trait All
-    extends PermissionMode
+    extends StObject
+       with PermissionMode
        with TriggerOperation
+  inline def All: All = "All".asInstanceOf[All]
   
   @js.native
-  sealed trait BoundedStaleness extends ConsistencyLevel
+  sealed trait BoundedStaleness
+    extends StObject
+       with ConsistencyLevel
+  inline def BoundedStaleness: BoundedStaleness = "BoundedStaleness".asInstanceOf[BoundedStaleness]
   
   @js.native
-  sealed trait Buffered extends MediaReadMode
+  sealed trait Buffered
+    extends StObject
+       with MediaReadMode
+  inline def Buffered: Buffered = "Buffered".asInstanceOf[Buffered]
   
   @js.native
-  sealed trait Consistent extends IndexingMode
+  sealed trait Consistent
+    extends StObject
+       with IndexingMode
+  inline def Consistent: Consistent = "Consistent".asInstanceOf[Consistent]
   
   @js.native
-  sealed trait Create extends TriggerOperation
+  sealed trait Create
+    extends StObject
+       with TriggerOperation
+  inline def Create: Create = "Create".asInstanceOf[Create]
   
   @js.native
-  sealed trait Delete extends TriggerOperation
+  sealed trait Delete
+    extends StObject
+       with TriggerOperation
+  inline def Delete: Delete = "Delete".asInstanceOf[Delete]
   
   @js.native
-  sealed trait Eventual extends ConsistencyLevel
+  sealed trait Eventual
+    extends StObject
+       with ConsistencyLevel
+  inline def Eventual: Eventual = "Eventual".asInstanceOf[Eventual]
   
   @js.native
-  sealed trait Hash extends IndexKind
+  sealed trait Hash
+    extends StObject
+       with IndexKind
+  inline def Hash: Hash = "Hash".asInstanceOf[Hash]
   
   @js.native
-  sealed trait Javascript extends js.Object
+  sealed trait Javascript extends StObject
+  inline def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
   
   @js.native
-  sealed trait Lazy extends IndexingMode
+  sealed trait Lazy
+    extends StObject
+       with IndexingMode
+  inline def Lazy: Lazy = "Lazy".asInstanceOf[Lazy]
   
   @js.native
-  sealed trait None extends PermissionMode
+  sealed trait None
+    extends StObject
+       with PermissionMode
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
-  sealed trait Post extends TriggerType
+  sealed trait Post
+    extends StObject
+       with TriggerType
+  inline def Post: Post = "Post".asInstanceOf[Post]
   
   @js.native
-  sealed trait Pre extends TriggerType
+  sealed trait Pre
+    extends StObject
+       with TriggerType
+  inline def Pre: Pre = "Pre".asInstanceOf[Pre]
   
   @js.native
-  sealed trait Range extends IndexKind
+  sealed trait Range
+    extends StObject
+       with IndexKind
+  inline def Range: Range = "Range".asInstanceOf[Range]
   
   @js.native
-  sealed trait Read extends PermissionMode
+  sealed trait Read
+    extends StObject
+       with PermissionMode
+  inline def Read: Read = "Read".asInstanceOf[Read]
   
   @js.native
-  sealed trait Replace extends TriggerOperation
+  sealed trait Replace
+    extends StObject
+       with TriggerOperation
+  inline def Replace: Replace = "Replace".asInstanceOf[Replace]
   
   @js.native
-  sealed trait Session extends ConsistencyLevel
+  sealed trait Session
+    extends StObject
+       with ConsistencyLevel
+  inline def Session: Session = "Session".asInstanceOf[Session]
   
   @js.native
-  sealed trait Spatial extends IndexKind
+  sealed trait Spatial
+    extends StObject
+       with IndexKind
+  inline def Spatial: Spatial = "Spatial".asInstanceOf[Spatial]
   
   @js.native
-  sealed trait Streamed extends MediaReadMode
+  sealed trait Streamed
+    extends StObject
+       with MediaReadMode
+  inline def Streamed: Streamed = "Streamed".asInstanceOf[Streamed]
   
   @js.native
-  sealed trait Strong extends ConsistencyLevel
+  sealed trait Strong
+    extends StObject
+       with ConsistencyLevel
+  inline def Strong: Strong = "Strong".asInstanceOf[Strong]
   
   @js.native
-  sealed trait Update extends TriggerOperation
+  sealed trait Update
+    extends StObject
+       with TriggerOperation
+  inline def Update: Update = "Update".asInstanceOf[Update]
   
   @js.native
-  sealed trait all_ extends TriggerOperation
+  sealed trait all_
+    extends StObject
+       with TriggerOperation
+  inline def all_ : all_ = "all".asInstanceOf[all_]
   
   @js.native
-  sealed trait create_ extends TriggerOperation
+  sealed trait create_
+    extends StObject
+       with TriggerOperation
+  inline def create_ : create_ = "create".asInstanceOf[create_]
   
   @js.native
-  sealed trait delete_ extends TriggerOperation
+  sealed trait delete_
+    extends StObject
+       with TriggerOperation
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
-  sealed trait post_ extends TriggerType
+  sealed trait post_
+    extends StObject
+       with TriggerType
+  inline def post_ : post_ = "post".asInstanceOf[post_]
   
   @js.native
-  sealed trait pre_ extends TriggerType
+  sealed trait pre_
+    extends StObject
+       with TriggerType
+  inline def pre_ : pre_ = "pre".asInstanceOf[pre_]
   
   @js.native
-  sealed trait replace_ extends TriggerOperation
+  sealed trait replace_
+    extends StObject
+       with TriggerOperation
+  inline def replace_ : replace_ = "replace".asInstanceOf[replace_]
   
   @js.native
-  sealed trait update_ extends TriggerOperation
-  
-  @scala.inline
-  def All: All = "All".asInstanceOf[All]
-  @scala.inline
-  def BoundedStaleness: BoundedStaleness = "BoundedStaleness".asInstanceOf[BoundedStaleness]
-  @scala.inline
-  def Buffered: Buffered = "Buffered".asInstanceOf[Buffered]
-  @scala.inline
-  def Consistent: Consistent = "Consistent".asInstanceOf[Consistent]
-  @scala.inline
-  def Create: Create = "Create".asInstanceOf[Create]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Eventual: Eventual = "Eventual".asInstanceOf[Eventual]
-  @scala.inline
-  def Hash: Hash = "Hash".asInstanceOf[Hash]
-  @scala.inline
-  def Javascript: Javascript = "Javascript".asInstanceOf[Javascript]
-  @scala.inline
-  def Lazy: Lazy = "Lazy".asInstanceOf[Lazy]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def Post: Post = "Post".asInstanceOf[Post]
-  @scala.inline
-  def Pre: Pre = "Pre".asInstanceOf[Pre]
-  @scala.inline
-  def Range: Range = "Range".asInstanceOf[Range]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def Replace: Replace = "Replace".asInstanceOf[Replace]
-  @scala.inline
-  def Session: Session = "Session".asInstanceOf[Session]
-  @scala.inline
-  def Spatial: Spatial = "Spatial".asInstanceOf[Spatial]
-  @scala.inline
-  def Streamed: Streamed = "Streamed".asInstanceOf[Streamed]
-  @scala.inline
-  def Strong: Strong = "Strong".asInstanceOf[Strong]
-  @scala.inline
-  def Update: Update = "Update".asInstanceOf[Update]
-  @scala.inline
-  def all_ : all_ = "all".asInstanceOf[all_]
-  @scala.inline
-  def create_ : create_ = "create".asInstanceOf[create_]
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
-  @scala.inline
-  def post_ : post_ = "post".asInstanceOf[post_]
-  @scala.inline
-  def pre_ : pre_ = "pre".asInstanceOf[pre_]
-  @scala.inline
-  def replace_ : replace_ = "replace".asInstanceOf[replace_]
-  @scala.inline
-  def update_ : update_ = "update".asInstanceOf[update_]
+  sealed trait update_
+    extends StObject
+       with TriggerOperation
+  inline def update_ : update_ = "update".asInstanceOf[update_]
 }
-

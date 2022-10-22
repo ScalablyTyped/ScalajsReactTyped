@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.badgeBadgeMod.BadgeProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.badgeBadgeMod.BadgeTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Badge", JSImport.Namespace)
-@js.native
-object badgeMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[BadgeProps, ComponentState, js.Any] {
-    def this(props: BadgeProps) = this()
-    def this(props: BadgeProps, context: js.Any) = this()
-  }
+object badgeMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Avatars](https://mui.com/components/avatars/)
+    * - [Badges](https://mui.com/components/badges/)
+    *
+    * API:
+    *
+    * - [Badge API](https://mui.com/api/badge/)
+    */
+  @JSImport("@material-ui/core/Badge", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[BadgeProps]]
+  val default: OverridableComponent[BadgeTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[BadgeTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `badgeMod.foo` */
+  override def _to: OverridableComponent[BadgeTypeMap[js.Object, div]] = default
 }
-

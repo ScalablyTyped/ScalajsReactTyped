@@ -1,72 +1,126 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridPdf extends js.Object {
+trait GridPdf extends StObject {
+  
   var allPages: js.UndefOr[Boolean] = js.undefined
+  
   var author: js.UndefOr[String] = js.undefined
+  
   var avoidLinks: js.UndefOr[Boolean | String] = js.undefined
+  
   var creator: js.UndefOr[String] = js.undefined
+  
   var date: js.UndefOr[js.Date] = js.undefined
+  
   var fileName: js.UndefOr[String] = js.undefined
+  
   var forceProxy: js.UndefOr[Boolean] = js.undefined
+  
   var keywords: js.UndefOr[String] = js.undefined
+  
   var landscape: js.UndefOr[Boolean] = js.undefined
+  
   var margin: js.UndefOr[GridPdfMargin] = js.undefined
-  var paperSize: js.UndefOr[String | js.Any] = js.undefined
+  
+  var paperSize: js.UndefOr[String | Any] = js.undefined
+  
   var proxyTarget: js.UndefOr[String] = js.undefined
+  
   var proxyURL: js.UndefOr[String] = js.undefined
+  
   var repeatHeaders: js.UndefOr[Boolean] = js.undefined
+  
   var scale: js.UndefOr[Double] = js.undefined
+  
   var subject: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object GridPdf {
-  @scala.inline
-  def apply(
-    allPages: js.UndefOr[Boolean] = js.undefined,
-    author: String = null,
-    avoidLinks: Boolean | String = null,
-    creator: String = null,
-    date: js.Date = null,
-    fileName: String = null,
-    forceProxy: js.UndefOr[Boolean] = js.undefined,
-    keywords: String = null,
-    landscape: js.UndefOr[Boolean] = js.undefined,
-    margin: GridPdfMargin = null,
-    paperSize: String | js.Any = null,
-    proxyTarget: String = null,
-    proxyURL: String = null,
-    repeatHeaders: js.UndefOr[Boolean] = js.undefined,
-    scale: Int | Double = null,
-    subject: String = null,
-    template: String = null,
-    title: String = null
-  ): GridPdf = {
+  
+  inline def apply(): GridPdf = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPages)) __obj.updateDynamic("allPages")(allPages.asInstanceOf[js.Any])
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (avoidLinks != null) __obj.updateDynamic("avoidLinks")(avoidLinks.asInstanceOf[js.Any])
-    if (creator != null) __obj.updateDynamic("creator")(creator.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (!js.isUndefined(landscape)) __obj.updateDynamic("landscape")(landscape.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize.asInstanceOf[js.Any])
-    if (proxyTarget != null) __obj.updateDynamic("proxyTarget")(proxyTarget.asInstanceOf[js.Any])
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(repeatHeaders)) __obj.updateDynamic("repeatHeaders")(repeatHeaders.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridPdf]
   }
+  
+  extension [Self <: GridPdf](x: Self) {
+    
+    inline def setAllPages(value: Boolean): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
+    
+    inline def setAllPagesUndefined: Self = StObject.set(x, "allPages", js.undefined)
+    
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setAvoidLinks(value: Boolean | String): Self = StObject.set(x, "avoidLinks", value.asInstanceOf[js.Any])
+    
+    inline def setAvoidLinksUndefined: Self = StObject.set(x, "avoidLinks", js.undefined)
+    
+    inline def setCreator(value: String): Self = StObject.set(x, "creator", value.asInstanceOf[js.Any])
+    
+    inline def setCreatorUndefined: Self = StObject.set(x, "creator", js.undefined)
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    
+    inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+    
+    inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+    
+    inline def setMargin(value: GridPdfMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setPaperSize(value: String | Any): Self = StObject.set(x, "paperSize", value.asInstanceOf[js.Any])
+    
+    inline def setPaperSizeUndefined: Self = StObject.set(x, "paperSize", js.undefined)
+    
+    inline def setProxyTarget(value: String): Self = StObject.set(x, "proxyTarget", value.asInstanceOf[js.Any])
+    
+    inline def setProxyTargetUndefined: Self = StObject.set(x, "proxyTarget", js.undefined)
+    
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+    
+    inline def setRepeatHeaders(value: Boolean): Self = StObject.set(x, "repeatHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatHeadersUndefined: Self = StObject.set(x, "repeatHeaders", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

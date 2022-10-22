@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AudioContextOptions extends js.Object {
+trait AudioContextOptions extends StObject {
+  
+  /* standard dom */
   var latencyHint: js.UndefOr[AudioContextLatencyCategory | Double] = js.undefined
+  
+  /* standard dom */
   var sampleRate: js.UndefOr[Double] = js.undefined
 }
-
 object AudioContextOptions {
-  @scala.inline
-  def apply(latencyHint: AudioContextLatencyCategory | Double = null, sampleRate: Int | Double = null): AudioContextOptions = {
+  
+  inline def apply(): AudioContextOptions = {
     val __obj = js.Dynamic.literal()
-    if (latencyHint != null) __obj.updateDynamic("latencyHint")(latencyHint.asInstanceOf[js.Any])
-    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioContextOptions]
   }
+  
+  extension [Self <: AudioContextOptions](x: Self) {
+    
+    inline def setLatencyHint(value: AudioContextLatencyCategory | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
+    
+    inline def setLatencyHintUndefined: Self = StObject.set(x, "latencyHint", js.undefined)
+    
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+  }
 }
-

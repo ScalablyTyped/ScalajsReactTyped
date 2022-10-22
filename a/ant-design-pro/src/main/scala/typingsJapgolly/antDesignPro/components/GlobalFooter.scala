@@ -1,47 +1,47 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.AnonBlankTarget
-import typingsJapgolly.antDesignPro.globalFooterMod.GlobalFooterProps
-import typingsJapgolly.antDesignPro.globalFooterMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.anon.BlankTarget
+import typingsJapgolly.antDesignPro.libGlobalFooterMod.GlobalFooterProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GlobalFooter {
-  def apply(
-    className: String = null,
-    copyright: VdomNode = null,
-    links: js.Array[AnonBlankTarget] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GlobalFooterProps, default, Unit, GlobalFooterProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.rawNode.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.globalFooterMod.GlobalFooterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.globalFooterMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.globalFooterMod.GlobalFooterProps])(children: _*)
-  }
-  @JSImport("ant-design-pro/lib/GlobalFooter", JSImport.Default)
+  @JSImport("ant-design-pro", "GlobalFooter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.GlobalFooter] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def copyright(value: VdomNode): this.type = set("copyright", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def copyrightNull: this.type = set("copyright", null)
+    
+    inline def copyrightVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("copyright", js.Array(value*))
+    
+    inline def copyrightVdomElement(value: VdomElement): this.type = set("copyright", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def links(value: js.Array[BlankTarget]): this.type = set("links", value.asInstanceOf[js.Any])
+    
+    inline def linksVarargs(value: BlankTarget*): this.type = set("links", js.Array(value*))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: GlobalFooter.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: GlobalFooterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

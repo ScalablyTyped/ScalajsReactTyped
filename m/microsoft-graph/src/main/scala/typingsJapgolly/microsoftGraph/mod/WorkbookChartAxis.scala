@@ -1,64 +1,104 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookChartAxis extends Entity {
+trait WorkbookChartAxis
+  extends StObject
+     with Entity {
+  
   // Represents the formatting of a chart object, which includes line and font formatting. Read-only.
-  var format: js.UndefOr[WorkbookChartAxisFormat] = js.undefined
+  var format: js.UndefOr[NullableOption[WorkbookChartAxisFormat]] = js.undefined
+  
   // Returns a gridlines object that represents the major gridlines for the specified axis. Read-only.
-  var majorGridlines: js.UndefOr[WorkbookChartGridlines] = js.undefined
+  var majorGridlines: js.UndefOr[NullableOption[WorkbookChartGridlines]] = js.undefined
+  
   /**
     * Represents the interval between two major tick marks. Can be set to a numeric value or an empty string. The returned
     * value is always a number.
     */
-  var majorUnit: js.UndefOr[js.Any] = js.undefined
+  var majorUnit: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   /**
     * Represents the maximum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
     * values). The returned value is always a number.
     */
-  var maximum: js.UndefOr[js.Any] = js.undefined
+  var maximum: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   /**
     * Represents the minimum value on the value axis. Can be set to a numeric value or an empty string (for automatic axis
     * values). The returned value is always a number.
     */
-  var minimum: js.UndefOr[js.Any] = js.undefined
+  var minimum: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // Returns a Gridlines object that represents the minor gridlines for the specified axis. Read-only.
-  var minorGridlines: js.UndefOr[WorkbookChartGridlines] = js.undefined
+  var minorGridlines: js.UndefOr[NullableOption[WorkbookChartGridlines]] = js.undefined
+  
   /**
     * Represents the interval between two minor tick marks. 'Can be set to a numeric value or an empty string (for automatic
     * axis values). The returned value is always a number.
     */
-  var minorUnit: js.UndefOr[js.Any] = js.undefined
+  var minorUnit: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // Represents the axis title. Read-only.
-  var title: js.UndefOr[WorkbookChartAxisTitle] = js.undefined
+  var title: js.UndefOr[NullableOption[WorkbookChartAxisTitle]] = js.undefined
 }
-
 object WorkbookChartAxis {
-  @scala.inline
-  def apply(
-    format: WorkbookChartAxisFormat = null,
-    id: String = null,
-    majorGridlines: WorkbookChartGridlines = null,
-    majorUnit: js.Any = null,
-    maximum: js.Any = null,
-    minimum: js.Any = null,
-    minorGridlines: WorkbookChartGridlines = null,
-    minorUnit: js.Any = null,
-    title: WorkbookChartAxisTitle = null
-  ): WorkbookChartAxis = {
+  
+  inline def apply(): WorkbookChartAxis = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines.asInstanceOf[js.Any])
-    if (majorUnit != null) __obj.updateDynamic("majorUnit")(majorUnit.asInstanceOf[js.Any])
-    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
-    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
-    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines.asInstanceOf[js.Any])
-    if (minorUnit != null) __obj.updateDynamic("minorUnit")(minorUnit.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookChartAxis]
   }
+  
+  extension [Self <: WorkbookChartAxis](x: Self) {
+    
+    inline def setFormat(value: NullableOption[WorkbookChartAxisFormat]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setMajorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
+    
+    inline def setMajorGridlinesNull: Self = StObject.set(x, "majorGridlines", null)
+    
+    inline def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
+    
+    inline def setMajorUnit(value: NullableOption[Any]): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMajorUnitNull: Self = StObject.set(x, "majorUnit", null)
+    
+    inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
+    
+    inline def setMaximum(value: NullableOption[Any]): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumNull: Self = StObject.set(x, "maximum", null)
+    
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    
+    inline def setMinimum(value: NullableOption[Any]): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumNull: Self = StObject.set(x, "minimum", null)
+    
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    
+    inline def setMinorGridlines(value: NullableOption[WorkbookChartGridlines]): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
+    
+    inline def setMinorGridlinesNull: Self = StObject.set(x, "minorGridlines", null)
+    
+    inline def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
+    
+    inline def setMinorUnit(value: NullableOption[Any]): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    
+    inline def setMinorUnitNull: Self = StObject.set(x, "minorUnit", null)
+    
+    inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
+    
+    inline def setTitle(value: NullableOption[WorkbookChartAxisTitle]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

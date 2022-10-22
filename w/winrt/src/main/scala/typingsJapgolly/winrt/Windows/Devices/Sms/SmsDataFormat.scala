@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsDataFormat extends js.Object
-
+sealed trait SmsDataFormat extends StObject
 @JSGlobal("Windows.Devices.Sms.SmsDataFormat")
 @js.native
-object SmsDataFormat extends js.Object {
-  @js.native
-  sealed trait cdmaDeliver extends SmsDataFormat
+object SmsDataFormat extends StObject {
   
   @js.native
-  sealed trait cdmaSubmit extends SmsDataFormat
+  sealed trait cdmaDeliver
+    extends StObject
+       with SmsDataFormat
   
   @js.native
-  sealed trait gsmDeliver extends SmsDataFormat
+  sealed trait cdmaSubmit
+    extends StObject
+       with SmsDataFormat
   
   @js.native
-  sealed trait gsmSubmit extends SmsDataFormat
+  sealed trait gsmDeliver
+    extends StObject
+       with SmsDataFormat
   
   @js.native
-  sealed trait unknown extends SmsDataFormat
+  sealed trait gsmSubmit
+    extends StObject
+       with SmsDataFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsDataFormat with Double] = js.native
-  /* 3 */ @js.native
-  object cdmaDeliver extends TopLevel[cdmaDeliver with Double]
-  
-  /* 1 */ @js.native
-  object cdmaSubmit extends TopLevel[cdmaSubmit with Double]
-  
-  /* 4 */ @js.native
-  object gsmDeliver extends TopLevel[gsmDeliver with Double]
-  
-  /* 2 */ @js.native
-  object gsmSubmit extends TopLevel[gsmSubmit with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with SmsDataFormat
 }
-

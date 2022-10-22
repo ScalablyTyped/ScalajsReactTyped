@@ -1,13 +1,14 @@
 package typingsJapgolly.hapiJoi.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.hapiJoi.AnonGlobal
-import typingsJapgolly.hapiJoi.hapiJoiBooleans.`false`
+import typingsJapgolly.hapiJoi.anon.Global
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceOptions extends HierarchySeparatorOptions {
+trait ReferenceOptions
+  extends StObject
+     with HierarchySeparatorOptions {
+  
   /**
     * a function with the signature `function(value)` where `value` is the resolved reference value and the return value is the adjusted value to use.
     * Note that the adjust feature will not perform any type validation on the adjusted value and it must match the value expected by the rule it is used in.
@@ -15,53 +16,70 @@ trait ReferenceOptions extends HierarchySeparatorOptions {
     *
     * @example `(value) => value + 5`
     */
-  var adjust: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  var adjust: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
+  
   /**
     * If set to a number, sets the reference relative starting point.
     * Cannot be combined with separator prefix characters.
     * Defaults to the reference key prefix (or 1 if none present)
     */
   var ancestor: js.UndefOr[Double] = js.undefined
+  
   /**
     * creates an in-reference.
     */
   var in: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * when true, the reference resolves by reaching into maps and sets.
     */
   var iterables: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * an array of array pairs using the format `[[key, value], [key, value]]` used to maps the resolved reference value to another value.
     * If the resolved value is not in the map, it is returned as-is.
     * Cannot be used with `adjust`.
     */
-  var map: js.UndefOr[js.Array[js.Tuple2[_, _]]] = js.undefined
+  var map: js.UndefOr[js.Array[js.Tuple2[Any, Any]]] = js.undefined
+  
   /**
     * overrides default prefix characters.
     */
-  var prefix: js.UndefOr[AnonGlobal] = js.undefined
+  var prefix: js.UndefOr[Global] = js.undefined
 }
-
 object ReferenceOptions {
-  @scala.inline
-  def apply(
-    adjust: /* value */ js.Any => CallbackTo[js.Any] = null,
-    ancestor: Int | Double = null,
-    in: js.UndefOr[Boolean] = js.undefined,
-    iterables: js.UndefOr[Boolean] = js.undefined,
-    map: js.Array[js.Tuple2[_, _]] = null,
-    prefix: AnonGlobal = null,
-    separator: String | `false` = null
-  ): ReferenceOptions = {
+  
+  inline def apply(): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (adjust != null) __obj.updateDynamic("adjust")(js.Any.fromFunction1((t0: /* value */ js.Any) => adjust(t0).runNow()))
-    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor.asInstanceOf[js.Any])
-    if (!js.isUndefined(in)) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (!js.isUndefined(iterables)) __obj.updateDynamic("iterables")(iterables.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
+  
+  extension [Self <: ReferenceOptions](x: Self) {
+    
+    inline def setAdjust(value: /* value */ Any => Any): Self = StObject.set(x, "adjust", js.Any.fromFunction1(value))
+    
+    inline def setAdjustUndefined: Self = StObject.set(x, "adjust", js.undefined)
+    
+    inline def setAncestor(value: Double): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
+    
+    inline def setAncestorUndefined: Self = StObject.set(x, "ancestor", js.undefined)
+    
+    inline def setIn(value: Boolean): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    
+    inline def setInUndefined: Self = StObject.set(x, "in", js.undefined)
+    
+    inline def setIterables(value: Boolean): Self = StObject.set(x, "iterables", value.asInstanceOf[js.Any])
+    
+    inline def setIterablesUndefined: Self = StObject.set(x, "iterables", js.undefined)
+    
+    inline def setMap(value: js.Array[js.Tuple2[Any, Any]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setMapVarargs(value: (js.Tuple2[Any, Any])*): Self = StObject.set(x, "map", js.Array(value*))
+    
+    inline def setPrefix(value: Global): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+  }
 }
-

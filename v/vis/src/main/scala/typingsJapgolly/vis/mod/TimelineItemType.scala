@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.box
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.range
   - typingsJapgolly.vis.visStrings.background
 */
-trait TimelineItemType extends js.Object
-
+trait TimelineItemType extends StObject
 object TimelineItemType {
-  @scala.inline
-  def background: typingsJapgolly.vis.visStrings.background = this.cast("background")
-  @scala.inline
-  def box: typingsJapgolly.vis.visStrings.box = this.cast("box")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def point: typingsJapgolly.vis.visStrings.point = this.cast("point")
-  @scala.inline
-  def range: typingsJapgolly.vis.visStrings.range = this.cast("range")
+  
+  inline def background: typingsJapgolly.vis.visStrings.background = "background".asInstanceOf[typingsJapgolly.vis.visStrings.background]
+  
+  inline def box: typingsJapgolly.vis.visStrings.box = "box".asInstanceOf[typingsJapgolly.vis.visStrings.box]
+  
+  inline def point: typingsJapgolly.vis.visStrings.point = "point".asInstanceOf[typingsJapgolly.vis.visStrings.point]
+  
+  inline def range: typingsJapgolly.vis.visStrings.range = "range".asInstanceOf[typingsJapgolly.vis.visStrings.range]
 }
-

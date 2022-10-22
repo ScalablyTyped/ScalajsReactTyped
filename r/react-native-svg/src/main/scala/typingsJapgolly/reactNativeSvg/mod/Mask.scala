@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import typingsJapgolly.reactNativeSvg.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Mask")
 @js.native
-class Mask protected ()
-  extends Component[MaskProps, ComponentState, js.Any] {
-  def this(props: MaskProps) = this()
-  def this(props: MaskProps, context: js.Any) = this()
+open class Mask ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Mask
+/* static members */
+object Mask {
+  
+  @JSImport("react-native-svg", "Mask")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Mask.defaultProps")
+  @js.native
+  def defaultProps: Height = js.native
+  inline def defaultProps_=(x: Height): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg", "Mask.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Mask")
-@js.native
-object Mask extends TopLevel[ComponentClass[MaskProps, ComponentState]]
-

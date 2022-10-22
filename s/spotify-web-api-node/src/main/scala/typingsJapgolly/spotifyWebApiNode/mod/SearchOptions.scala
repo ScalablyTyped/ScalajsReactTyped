@@ -1,30 +1,27 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
 import typingsJapgolly.spotifyWebApiNode.spotifyWebApiNodeStrings.audio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SearchOptions
-  extends PaginationOptions
-     with MarketOptions {
+  extends StObject
+     with PaginationMarketOptions {
+  
   var include_external: js.UndefOr[audio] = js.undefined
 }
-
 object SearchOptions {
-  @scala.inline
-  def apply(
-    include_external: audio = null,
-    limit: Int | Double = null,
-    market: String = null,
-    offset: Int | Double = null
-  ): SearchOptions = {
+  
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (include_external != null) __obj.updateDynamic("include_external")(include_external.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
+  
+  extension [Self <: SearchOptions](x: Self) {
+    
+    inline def setInclude_external(value: audio): Self = StObject.set(x, "include_external", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_externalUndefined: Self = StObject.set(x, "include_external", js.undefined)
+  }
 }
-

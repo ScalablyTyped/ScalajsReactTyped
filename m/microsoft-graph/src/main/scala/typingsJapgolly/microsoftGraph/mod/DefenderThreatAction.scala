@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.block
 */
-trait DefenderThreatAction extends js.Object
-
+trait DefenderThreatAction extends StObject
 object DefenderThreatAction {
-  @scala.inline
-  def allow: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow = this.cast("allow")
-  @scala.inline
-  def block: typingsJapgolly.microsoftGraph.microsoftGraphStrings.block = this.cast("block")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clean: typingsJapgolly.microsoftGraph.microsoftGraphStrings.clean = this.cast("clean")
-  @scala.inline
-  def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
-  @scala.inline
-  def quarantine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantine = this.cast("quarantine")
-  @scala.inline
-  def remove: typingsJapgolly.microsoftGraph.microsoftGraphStrings.remove = this.cast("remove")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def allow: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow]
+  
+  inline def block: typingsJapgolly.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.block]
+  
+  inline def clean: typingsJapgolly.microsoftGraph.microsoftGraphStrings.clean = "clean".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.clean]
+  
+  inline def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
+  inline def quarantine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantine = "quarantine".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantine]
+  
+  inline def remove: typingsJapgolly.microsoftGraph.microsoftGraphStrings.remove = "remove".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.remove]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

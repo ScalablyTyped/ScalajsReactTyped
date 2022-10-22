@@ -1,27 +1,38 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CheckIsSupportSoterAuthenticationRes extends js.Object {
+trait CheckIsSupportSoterAuthenticationRes extends StObject {
+  
   /**
     * 接口调用结果
     */
   var errMsg: js.UndefOr[String] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
-  var supportMode: js.UndefOr[js.Array[_]] = js.undefined
+  var supportMode: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object CheckIsSupportSoterAuthenticationRes {
-  @scala.inline
-  def apply(errMsg: String = null, supportMode: js.Array[_] = null): CheckIsSupportSoterAuthenticationRes = {
+  
+  inline def apply(): CheckIsSupportSoterAuthenticationRes = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
-    if (supportMode != null) __obj.updateDynamic("supportMode")(supportMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckIsSupportSoterAuthenticationRes]
   }
+  
+  extension [Self <: CheckIsSupportSoterAuthenticationRes](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    
+    inline def setSupportMode(value: js.Array[Any]): Self = StObject.set(x, "supportMode", value.asInstanceOf[js.Any])
+    
+    inline def setSupportModeUndefined: Self = StObject.set(x, "supportMode", js.undefined)
+    
+    inline def setSupportModeVarargs(value: Any*): Self = StObject.set(x, "supportMode", js.Array(value*))
+  }
 }
-

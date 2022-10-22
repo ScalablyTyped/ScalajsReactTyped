@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisScaleType extends js.Object
-
+sealed trait ChartAxisScaleType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisScaleType")
 @js.native
-object ChartAxisScaleType extends js.Object {
+object ChartAxisScaleType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait linear extends ChartAxisScaleType
+  sealed trait linear
+    extends StObject
+       with ChartAxisScaleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait logarithmic extends ChartAxisScaleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisScaleType with String] = js.native
-  /* "Linear" */ @js.native
-  object linear extends TopLevel[linear with String]
-  
-  /* "Logarithmic" */ @js.native
-  object logarithmic extends TopLevel[logarithmic with String]
-  
+  sealed trait logarithmic
+    extends StObject
+       with ChartAxisScaleType
 }
-

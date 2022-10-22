@@ -1,40 +1,28 @@
 package typingsJapgolly.pulsarClient.mod
 
-import typingsJapgolly.node.Buffer
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("pulsar-client", "Message")
 @js.native
-class Message () extends js.Object {
-  /**
-    * Getter method of message data.
-    */
+open class Message () extends StObject {
+  
   def getData(): Buffer = js.native
-  /**
-    * Getter method of event timestamp.
-    */
+  
   def getEventTimestamp(): Double = js.native
-  /**
-    * Getter method of message id object.
-    */
+  
   def getMessageId(): MessageId = js.native
-  /**
-    * Getter method of partition key.
-    */
+  
   def getPartitionKey(): String = js.native
-  /**
-    * Getter method of properties.
-    */
-  def getProperties(): MessageProperties = js.native
-  /**
-    * Getter method of publish timestamp.
-    */
+  
+  def getProperties(): StringDictionary[String] = js.native
+  
   def getPublishTimestamp(): Double = js.native
-  /**
-    * Getter method of topic name.
-    */
+  
+  def getRedeliveryCount(): Double = js.native
+  
   def getTopicName(): String = js.native
 }
-

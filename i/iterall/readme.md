@@ -1,7 +1,7 @@
 
 # Scala.js typings for iterall
 
-Typings are for version 1.2.2
+Typings are for version 1.3.0
 
 ## Library description:
 Minimal zero-dependency utilities for using JavaScript Iterables in all environments.
@@ -10,10 +10,10 @@ Minimal zero-dependency utilities for using JavaScript Iterables in all environm
 | ------------------ | :-------------: |
 | Full name          | iterall |
 | Keywords           | es6, iterator, iterable, polyfill, for-of |
-| # releases         | 4 |
-| # dependents       | 144 |
-| # downloads        | 73119748 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.7417269666666668E7 |
+| # stars            | 816.0 |
 
 ## Links
 - [Homepage](https://github.com/leebyron/iterall)

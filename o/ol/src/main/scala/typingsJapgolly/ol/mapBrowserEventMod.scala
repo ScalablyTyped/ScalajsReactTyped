@@ -1,42 +1,65 @@
 package typingsJapgolly.ol
 
+import org.scalajs.dom.UIEvent
 import typingsJapgolly.ol.coordinateMod.Coordinate
 import typingsJapgolly.ol.pixelMod.Pixel
 import typingsJapgolly.ol.pluggableMapMod.FrameState
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/MapBrowserEvent", JSImport.Namespace)
-@js.native
-object mapBrowserEventMod extends js.Object {
-  @js.native
-  trait MapBrowserEvent
-    extends typingsJapgolly.ol.mapEventMod.default {
-    var coordinate: Coordinate = js.native
-    var dragging: Boolean = js.native
-    var originalEvent: Event_ = js.native
-    var pixel: Pixel = js.native
-  }
+object mapBrowserEventMod {
   
+  @JSImport("ol/MapBrowserEvent", JSImport.Default)
   @js.native
-  class default protected () extends MapBrowserEvent {
-    def this(`type`: String, map: typingsJapgolly.ol.pluggableMapMod.default, browserEvent: Event_) = this()
+  open class default[EVENT /* <: UIEvent */] protected () extends MapBrowserEvent[EVENT] {
+    def this(`type`: String, map: typingsJapgolly.ol.pluggableMapMod.default, originalEvent: EVENT) = this()
     def this(
       `type`: String,
       map: typingsJapgolly.ol.pluggableMapMod.default,
-      browserEvent: Event_,
+      originalEvent: EVENT,
       opt_dragging: Boolean
     ) = this()
     def this(
       `type`: String,
       map: typingsJapgolly.ol.pluggableMapMod.default,
-      browserEvent: Event_,
+      originalEvent: EVENT,
       opt_dragging: Boolean,
+      opt_frameState: FrameState
+    ) = this()
+    def this(
+      `type`: String,
+      map: typingsJapgolly.ol.pluggableMapMod.default,
+      originalEvent: EVENT,
+      opt_dragging: Unit,
       opt_frameState: FrameState
     ) = this()
   }
   
+  @js.native
+  trait MapBrowserEvent[EVENT /* <: UIEvent */]
+    extends typingsJapgolly.ol.mapEventMod.default {
+    
+    /**
+      * The coordinate corresponding to the original browser event.  This will be in the user
+      * projection if one is set.  Otherwise it will be in the view projection.
+      */
+    var coordinate: Coordinate = js.native
+    
+    /**
+      * Indicates if the map is currently being dragged. Only set for
+      * POINTERDRAG and POINTERMOVE events. Default is false.
+      */
+    var dragging: Boolean = js.native
+    
+    /**
+      * The original browser event.
+      */
+    var originalEvent: EVENT = js.native
+    
+    /**
+      * The map pixel relative to the viewport corresponding to the original event.
+      */
+    var pixel: Pixel = js.native
+  }
 }
-

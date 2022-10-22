@@ -1,36 +1,31 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.copy
-import typingsJapgolly.devextreme.devextremeStrings.create
-import typingsJapgolly.devextreme.devextremeStrings.delete
-import typingsJapgolly.devextreme.devextremeStrings.download
-import typingsJapgolly.devextreme.devextremeStrings.move
-import typingsJapgolly.devextreme.devextremeStrings.refresh
-import typingsJapgolly.devextreme.devextremeStrings.rename
-import typingsJapgolly.devextreme.devextremeStrings.upload
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxFileManager.ContextMenuItem
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxFileManager.FileManagerPredefinedContextMenuItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxFileManagerContextMenu extends js.Object {
-  /** Configures context menu items' settings. */
-  var items: js.UndefOr[
-    js.Array[
-      dxFileManagerContextMenuItem | create | upload | refresh | download | move | copy | rename | delete
-    ]
-  ] = js.undefined
+trait dxFileManagerContextMenu extends StObject {
+  
+  /**
+    * Configures context menu items&apos; settings.
+    */
+  var items: js.UndefOr[js.Array[ContextMenuItem | FileManagerPredefinedContextMenuItem]] = js.undefined
 }
-
 object dxFileManagerContextMenu {
-  @scala.inline
-  def apply(
-    items: js.Array[
-      dxFileManagerContextMenuItem | create | upload | refresh | download | move | copy | rename | delete
-    ] = null
-  ): dxFileManagerContextMenu = {
+  
+  inline def apply(): dxFileManagerContextMenu = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFileManagerContextMenu]
   }
+  
+  extension [Self <: dxFileManagerContextMenu](x: Self) {
+    
+    inline def setItems(value: js.Array[ContextMenuItem | FileManagerPredefinedContextMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: (ContextMenuItem | FileManagerPredefinedContextMenuItem)*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

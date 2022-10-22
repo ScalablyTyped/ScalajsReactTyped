@@ -1,59 +1,57 @@
 package typingsJapgolly.clearbladejsNode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QueryConditions extends js.Object
-
+sealed trait QueryConditions extends StObject
 @JSImport("clearbladejs-node", "QueryConditions")
 @js.native
-object QueryConditions extends js.Object {
-  @js.native
-  sealed trait QUERY_EQUAL extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_GREATERTHAN extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_GREATERTHAN_EQUAL extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_LESSTHAN extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_LESSTHAN_EQUAL extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_MATCHES extends QueryConditions
-  
-  @js.native
-  sealed trait QUERY_NOTEQUAL extends QueryConditions
+object QueryConditions extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[QueryConditions with String] = js.native
-  /* "EQ" */ @js.native
-  object QUERY_EQUAL extends TopLevel[QUERY_EQUAL with String]
+  def apply(value: String): js.UndefOr[QueryConditions & String] = js.native
   
-  /* "GT" */ @js.native
-  object QUERY_GREATERTHAN extends TopLevel[QUERY_GREATERTHAN with String]
+  @js.native
+  sealed trait QUERY_EQUAL
+    extends StObject
+       with QueryConditions
+  /* "EQ" */ val QUERY_EQUAL: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_EQUAL & String = js.native
   
-  /* "GTE" */ @js.native
-  object QUERY_GREATERTHAN_EQUAL extends TopLevel[QUERY_GREATERTHAN_EQUAL with String]
+  @js.native
+  sealed trait QUERY_GREATERTHAN
+    extends StObject
+       with QueryConditions
+  /* "GT" */ val QUERY_GREATERTHAN: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_GREATERTHAN & String = js.native
   
-  /* "LT" */ @js.native
-  object QUERY_LESSTHAN extends TopLevel[QUERY_LESSTHAN with String]
+  @js.native
+  sealed trait QUERY_GREATERTHAN_EQUAL
+    extends StObject
+       with QueryConditions
+  /* "GTE" */ val QUERY_GREATERTHAN_EQUAL: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_GREATERTHAN_EQUAL & String = js.native
   
-  /* "LTE" */ @js.native
-  object QUERY_LESSTHAN_EQUAL extends TopLevel[QUERY_LESSTHAN_EQUAL with String]
+  @js.native
+  sealed trait QUERY_LESSTHAN
+    extends StObject
+       with QueryConditions
+  /* "LT" */ val QUERY_LESSTHAN: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_LESSTHAN & String = js.native
   
-  /* "RE" */ @js.native
-  object QUERY_MATCHES extends TopLevel[QUERY_MATCHES with String]
+  @js.native
+  sealed trait QUERY_LESSTHAN_EQUAL
+    extends StObject
+       with QueryConditions
+  /* "LTE" */ val QUERY_LESSTHAN_EQUAL: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_LESSTHAN_EQUAL & String = js.native
   
-  /* "NEQ" */ @js.native
-  object QUERY_NOTEQUAL extends TopLevel[QUERY_NOTEQUAL with String]
+  @js.native
+  sealed trait QUERY_MATCHES
+    extends StObject
+       with QueryConditions
+  /* "RE" */ val QUERY_MATCHES: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_MATCHES & String = js.native
   
+  @js.native
+  sealed trait QUERY_NOTEQUAL
+    extends StObject
+       with QueryConditions
+  /* "NEQ" */ val QUERY_NOTEQUAL: typingsJapgolly.clearbladejsNode.mod.QueryConditions.QUERY_NOTEQUAL & String = js.native
 }
-

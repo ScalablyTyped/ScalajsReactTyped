@@ -1,85 +1,81 @@
 package typingsJapgolly.reactAvatarEditor.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.DragEvent
-import org.scalajs.dom.raw.File
+import org.scalajs.dom.Event
+import org.scalajs.dom.File
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactAvatarEditor.mod.AvatarEditorProps
 import typingsJapgolly.reactAvatarEditor.mod.ImageState
 import typingsJapgolly.reactAvatarEditor.mod.Position
 import typingsJapgolly.reactAvatarEditor.mod.default
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactAvatarEditor {
-  def apply(
-    image: String | File,
-    border: Double | js.Array[Double] = null,
-    borderRadius: Int | Double = null,
-    className: String = null,
-    color: js.Array[Double] = null,
-    crossOrigin: String = null,
-    disableBoundaryChecks: js.UndefOr[Boolean] = js.undefined,
-    disableDrop: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    onDropFile: /* event */ DragEvent => Callback = null,
-    onImageChange: js.UndefOr[Callback] = js.undefined,
-    onImageReady: /* event */ Event_ => Callback = null,
-    onLoadFailure: /* event */ Event_ => Callback = null,
-    onLoadSuccess: /* imgInfo */ ImageState => Callback = null,
-    onMouseMove: /* event */ Event_ => Callback = null,
-    onMouseUp: js.UndefOr[Callback] = js.undefined,
-    onPositionChange: /* position */ Position => Callback = null,
-    position: Position = null,
-    rotate: Int | Double = null,
-    scale: Int | Double = null,
-    style: js.Object = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AvatarEditorProps, default, Unit, AvatarEditorProps] = {
-    val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
   
-      if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableBoundaryChecks)) __obj.updateDynamic("disableBoundaryChecks")(disableBoundaryChecks.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDrop)) __obj.updateDynamic("disableDrop")(disableDrop.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (onDropFile != null) __obj.updateDynamic("onDropFile")(js.Any.fromFunction1((t0: /* event */ org.scalajs.dom.raw.DragEvent) => onDropFile(t0).runNow()))
-    onImageChange.foreach(p => __obj.updateDynamic("onImageChange")(p.toJsFn))
-    if (onImageReady != null) __obj.updateDynamic("onImageReady")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.std.Event_) => onImageReady(t0).runNow()))
-    if (onLoadFailure != null) __obj.updateDynamic("onLoadFailure")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.std.Event_) => onLoadFailure(t0).runNow()))
-    if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(js.Any.fromFunction1((t0: /* imgInfo */ typingsJapgolly.reactAvatarEditor.mod.ImageState) => onLoadSuccess(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.std.Event_) => onMouseMove(t0).runNow()))
-    onMouseUp.foreach(p => __obj.updateDynamic("onMouseUp")(p.toJsFn))
-    if (onPositionChange != null) __obj.updateDynamic("onPositionChange")(js.Any.fromFunction1((t0: /* position */ typingsJapgolly.reactAvatarEditor.mod.Position) => onPositionChange(t0).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAvatarEditor.mod.AvatarEditorProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAvatarEditor.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAvatarEditor.mod.AvatarEditorProps])(children: _*)
+  inline def apply(image: String | File): Builder = {
+    val __props = js.Dynamic.literal(image = image.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AvatarEditorProps]))
   }
+  
   @JSImport("react-avatar-editor", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def border(value: Double | js.Array[Double]): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderRadius(value: Double): this.type = set("borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def borderVarargs(value: Double*): this.type = set("border", js.Array(value*))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: js.Array[Double]): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def colorVarargs(value: Double*): this.type = set("color", js.Array(value*))
+    
+    inline def crossOrigin(value: String): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def disableBoundaryChecks(value: Boolean): this.type = set("disableBoundaryChecks", value.asInstanceOf[js.Any])
+    
+    inline def disableCanvasRotation(value: Boolean): this.type = set("disableCanvasRotation", value.asInstanceOf[js.Any])
+    
+    inline def disableHiDPIScaling(value: Boolean): this.type = set("disableHiDPIScaling", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def onImageChange(value: Callback): this.type = set("onImageChange", value.toJsFn)
+    
+    inline def onImageReady(value: /* event */ Event => Callback): this.type = set("onImageReady", js.Any.fromFunction1((t0: /* event */ Event) => value(t0).runNow()))
+    
+    inline def onLoadFailure(value: /* event */ Event => Callback): this.type = set("onLoadFailure", js.Any.fromFunction1((t0: /* event */ Event) => value(t0).runNow()))
+    
+    inline def onLoadSuccess(value: /* imgInfo */ ImageState => Callback): this.type = set("onLoadSuccess", js.Any.fromFunction1((t0: /* imgInfo */ ImageState) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: /* event */ Event => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: /* event */ Event) => value(t0).runNow()))
+    
+    inline def onMouseUp(value: Callback): this.type = set("onMouseUp", value.toJsFn)
+    
+    inline def onPositionChange(value: /* position */ Position => Callback): this.type = set("onPositionChange", js.Any.fromFunction1((t0: /* position */ Position) => value(t0).runNow()))
+    
+    inline def position(value: Position): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: Double): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: Double): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AvatarEditorProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

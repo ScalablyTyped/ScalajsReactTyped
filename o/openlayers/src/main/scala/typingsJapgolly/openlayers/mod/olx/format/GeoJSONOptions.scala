@@ -1,28 +1,37 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeoJSONOptions extends js.Object {
+trait GeoJSONOptions extends StObject {
+  
   var defaultDataProjection: ProjectionLike
+  
   var featureProjection: ProjectionLike
+  
   var geometryName: js.UndefOr[String] = js.undefined
 }
-
 object GeoJSONOptions {
-  @scala.inline
-  def apply(
-    defaultDataProjection: ProjectionLike = null,
-    featureProjection: ProjectionLike = null,
-    geometryName: String = null
-  ): GeoJSONOptions = {
+  
+  inline def apply(): GeoJSONOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultDataProjection != null) __obj.updateDynamic("defaultDataProjection")(defaultDataProjection.asInstanceOf[js.Any])
-    if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONOptions]
   }
+  
+  extension [Self <: GeoJSONOptions](x: Self) {
+    
+    inline def setDefaultDataProjection(value: ProjectionLike): Self = StObject.set(x, "defaultDataProjection", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultDataProjectionUndefined: Self = StObject.set(x, "defaultDataProjection", js.undefined)
+    
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+    
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+  }
 }
-

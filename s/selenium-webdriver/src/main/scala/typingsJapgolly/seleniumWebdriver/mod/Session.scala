@@ -1,12 +1,12 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Session")
 @js.native
-class Session protected () extends js.Object {
+open class Session protected () extends StObject {
   def this(id: String, capabilities: js.Object) = this()
   // region Constructors
   /**
@@ -15,23 +15,27 @@ class Session protected () extends js.Object {
     *     capabilities.
     * @constructor
     */
-  def this(id: String, capabilities: typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
+  def this(id: String, capabilities: typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
+  
   /**
     * @return {!Capabilities} This session's capabilities.
     */
-  def getCapabilities(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def getCapabilities(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
+  
   /**
     * Retrieves the value of a specific capability.
     * @param {string} key The capability to retrieve.
     * @return {*} The capability value.
     */
-  def getCapability(key: String): js.Any = js.native
+  def getCapability(key: String): Any = js.native
+  
   // endregion
   // region Methods
   /**
     * @return {string} This session's ID.
     */
   def getId(): String = js.native
+  
   /**
     * Returns the JSON representation of this object, which is just the string
     * session ID.
@@ -39,4 +43,3 @@ class Session protected () extends js.Object {
     */
   def toJSON(): String = js.native
 }
-

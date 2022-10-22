@@ -1,54 +1,86 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISMapServiceCapabilitiesExportMap extends Object {
+trait ArcGISMapServiceCapabilitiesExportMap
+  extends StObject
+     with Object {
+  
+  /**
+    * Indicates if sublayers support Arcade expressions for labeling.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var supportsArcadeExpressionForLabeling: Boolean
+  
+  /**
+    * _Since 4.23_ Indicates if [CIMSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html) can be used in a sublayer's [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#renderer).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
+    */
+  var supportsCIMSymbols: Boolean
+  
   /**
     * Indicates if sublayers rendering can be modified or added using dynamic layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
   var supportsDynamicLayers: Boolean
+  
   /**
     * Indicates if sublayers [definition expression](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#definitionExpression) can be set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
   var supportsSublayerDefinitionExpression: Boolean
+  
   /**
     * Indicates if sublayers [visibility](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#visible) can be changed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
   var supportsSublayerVisibility: Boolean
+  
   /**
-    * Indicates if sublayers can be added, removed, or reordered.
+    * Indicates if sublayers can be added, or removed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#capabilities)
     */
   var supportsSublayersChanges: Boolean
 }
-
 object ArcGISMapServiceCapabilitiesExportMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    supportsArcadeExpressionForLabeling: Boolean,
+    supportsCIMSymbols: Boolean,
     supportsDynamicLayers: Boolean,
     supportsSublayerDefinitionExpression: Boolean,
     supportsSublayerVisibility: Boolean,
     supportsSublayersChanges: Boolean
   ): ArcGISMapServiceCapabilitiesExportMap = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsArcadeExpressionForLabeling = supportsArcadeExpressionForLabeling.asInstanceOf[js.Any], supportsCIMSymbols = supportsCIMSymbols.asInstanceOf[js.Any], supportsDynamicLayers = supportsDynamicLayers.asInstanceOf[js.Any], supportsSublayerDefinitionExpression = supportsSublayerDefinitionExpression.asInstanceOf[js.Any], supportsSublayerVisibility = supportsSublayerVisibility.asInstanceOf[js.Any], supportsSublayersChanges = supportsSublayersChanges.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISMapServiceCapabilitiesExportMap]
   }
+  
+  extension [Self <: ArcGISMapServiceCapabilitiesExportMap](x: Self) {
+    
+    inline def setSupportsArcadeExpressionForLabeling(value: Boolean): Self = StObject.set(x, "supportsArcadeExpressionForLabeling", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsCIMSymbols(value: Boolean): Self = StObject.set(x, "supportsCIMSymbols", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsDynamicLayers(value: Boolean): Self = StObject.set(x, "supportsDynamicLayers", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsSublayerDefinitionExpression(value: Boolean): Self = StObject.set(x, "supportsSublayerDefinitionExpression", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsSublayerVisibility(value: Boolean): Self = StObject.set(x, "supportsSublayerVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsSublayersChanges(value: Boolean): Self = StObject.set(x, "supportsSublayersChanges", value.asInstanceOf[js.Any])
+  }
 }
-

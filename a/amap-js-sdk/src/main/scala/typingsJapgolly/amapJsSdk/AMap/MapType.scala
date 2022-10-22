@@ -1,17 +1,17 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import typingsJapgolly.amapJsSdk.AnonDefaultType
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.MapType")
-@js.native
-class MapType () extends MapControl {
-  def this(options: AnonDefaultType) = this()
-  /* CompleteClass */
-  override def hide(): Unit = js.native
-  /* CompleteClass */
-  override def show(): Unit = js.native
+trait MapType
+  extends StObject
+     with MapControl
+object MapType {
+  
+  inline def apply(hide: Callback, show: Callback): MapType = {
+    val __obj = js.Dynamic.literal(hide = hide.toJsFn, show = show.toJsFn)
+    __obj.asInstanceOf[MapType]
+  }
 }
-

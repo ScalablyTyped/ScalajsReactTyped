@@ -1,20 +1,26 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IComponentLoadFailedEventArgs extends js.Object {
+trait IComponentLoadFailedEventArgs extends StObject {
+  
   var completion: MediaProtectionServiceCompletion
+  
   var information: RevocationAndRenewalInformation
 }
-
 object IComponentLoadFailedEventArgs {
-  @scala.inline
-  def apply(completion: MediaProtectionServiceCompletion, information: RevocationAndRenewalInformation): IComponentLoadFailedEventArgs = {
-    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any])
   
+  inline def apply(completion: MediaProtectionServiceCompletion, information: RevocationAndRenewalInformation): IComponentLoadFailedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], information = information.asInstanceOf[js.Any])
     __obj.asInstanceOf[IComponentLoadFailedEventArgs]
   }
+  
+  extension [Self <: IComponentLoadFailedEventArgs](x: Self) {
+    
+    inline def setCompletion(value: MediaProtectionServiceCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    
+    inline def setInformation(value: RevocationAndRenewalInformation): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+  }
 }
-

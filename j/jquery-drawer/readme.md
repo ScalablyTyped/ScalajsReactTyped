@@ -11,9 +11,9 @@ Flexible drawer menu using jQuery, iScroll and CSS.
 | Full name          | jquery-drawer |
 | Keywords           | jQuery, CSS, drawer, iScroll, navigation, responsive |
 | # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 31528 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3859.6666666666665 |
+| # stars            | 614.0 |
 
 ## Links
 - [Homepage](http://git.blivesta.com/drawer)

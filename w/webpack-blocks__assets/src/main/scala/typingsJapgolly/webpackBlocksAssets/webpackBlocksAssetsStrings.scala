@@ -1,34 +1,28 @@
 package typingsJapgolly.webpackBlocksAssets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackBlocksAssetsStrings {
-  @js.native
-  sealed trait asIs extends js.Object
   
   @js.native
-  sealed trait camelCase extends js.Object
+  sealed trait asIs extends StObject
+  inline def asIs: asIs = "asIs".asInstanceOf[asIs]
   
   @js.native
-  sealed trait camelCaseOnly extends js.Object
+  sealed trait camelCase extends StObject
+  inline def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
   
   @js.native
-  sealed trait dashes extends js.Object
+  sealed trait camelCaseOnly extends StObject
+  inline def camelCaseOnly: camelCaseOnly = "camelCaseOnly".asInstanceOf[camelCaseOnly]
   
   @js.native
-  sealed trait dashesOnly extends js.Object
+  sealed trait dashes extends StObject
+  inline def dashes: dashes = "dashes".asInstanceOf[dashes]
   
-  @scala.inline
-  def asIs: asIs = "asIs".asInstanceOf[asIs]
-  @scala.inline
-  def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
-  @scala.inline
-  def camelCaseOnly: camelCaseOnly = "camelCaseOnly".asInstanceOf[camelCaseOnly]
-  @scala.inline
-  def dashes: dashes = "dashes".asInstanceOf[dashes]
-  @scala.inline
-  def dashesOnly: dashesOnly = "dashesOnly".asInstanceOf[dashesOnly]
+  @js.native
+  sealed trait dashesOnly extends StObject
+  inline def dashesOnly: dashesOnly = "dashesOnly".asInstanceOf[dashesOnly]
 }
-

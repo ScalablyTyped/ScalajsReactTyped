@@ -1,13 +1,16 @@
 package typingsJapgolly.dirWalkerGen
 
+import typingsJapgolly.dirWalkerGen.anon.ExcludeExtensions
 import typingsJapgolly.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dir-walker-gen", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(options: AnonExcludeExtensions): IterableIterator[String] = js.native
+object mod {
+  
+  inline def apply(options: ExcludeExtensions): IterableIterator[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[IterableIterator[String]]
+  
+  @JSImport("dir-walker-gen", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

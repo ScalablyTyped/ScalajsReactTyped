@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.RowClick event.
   */
-@JSGlobal("ASPxClientGridViewRowClickEventArgs")
-@js.native
-class ASPxClientGridViewRowClickEventArgs protected () extends ASPxClientGridViewRowCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewRowClickEventArgs class.
-    * @param visibleIndex A zero-based integer index that identifies the clicked row.
-    * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientGridViewRowClickEventArgs.htmlEvent property.
-    */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+trait ASPxClientGridViewRowClickEventArgs
+  extends StObject
+     with ASPxClientGridViewRowCancelEventArgs {
+  
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.RowClick event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
 }
-
+object ASPxClientGridViewRowClickEventArgs {
+  
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientGridViewRowClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewRowClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewRowClickEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+  }
+}

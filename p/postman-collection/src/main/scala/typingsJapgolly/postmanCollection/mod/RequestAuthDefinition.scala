@@ -11,62 +11,111 @@ import typingsJapgolly.postmanCollection.postmanCollectionStrings.noauth
 import typingsJapgolly.postmanCollection.postmanCollectionStrings.ntlm
 import typingsJapgolly.postmanCollection.postmanCollectionStrings.oauth1
 import typingsJapgolly.postmanCollection.postmanCollectionStrings.oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestAuthDefinition extends PropertyDefinition {
+trait RequestAuthDefinition
+  extends StObject
+     with PropertyDefinition {
+  
   var apikey: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var awsv4: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var basic: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var bearer: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var digest: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var edgegrid: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var hawk: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var ntlm: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var oauth1: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var oauth2: js.UndefOr[js.Array[VariableDefinition]] = js.undefined
+  
   var `type`: js.UndefOr[
     oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
   ] = js.undefined
 }
-
 object RequestAuthDefinition {
-  @scala.inline
-  def apply(
-    apikey: js.Array[VariableDefinition] = null,
-    awsv4: js.Array[VariableDefinition] = null,
-    basic: js.Array[VariableDefinition] = null,
-    bearer: js.Array[VariableDefinition] = null,
-    description: String | DescriptionDefinition = null,
-    digest: js.Array[VariableDefinition] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    edgegrid: js.Array[VariableDefinition] = null,
-    hawk: js.Array[VariableDefinition] = null,
-    id: String = null,
-    name: String = null,
-    ntlm: js.Array[VariableDefinition] = null,
-    oauth1: js.Array[VariableDefinition] = null,
-    oauth2: js.Array[VariableDefinition] = null,
-    `type`: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm = null
-  ): RequestAuthDefinition = {
+  
+  inline def apply(): RequestAuthDefinition = {
     val __obj = js.Dynamic.literal()
-    if (apikey != null) __obj.updateDynamic("apikey")(apikey.asInstanceOf[js.Any])
-    if (awsv4 != null) __obj.updateDynamic("awsv4")(awsv4.asInstanceOf[js.Any])
-    if (basic != null) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (bearer != null) __obj.updateDynamic("bearer")(bearer.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (digest != null) __obj.updateDynamic("digest")(digest.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (edgegrid != null) __obj.updateDynamic("edgegrid")(edgegrid.asInstanceOf[js.Any])
-    if (hawk != null) __obj.updateDynamic("hawk")(hawk.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ntlm != null) __obj.updateDynamic("ntlm")(ntlm.asInstanceOf[js.Any])
-    if (oauth1 != null) __obj.updateDynamic("oauth1")(oauth1.asInstanceOf[js.Any])
-    if (oauth2 != null) __obj.updateDynamic("oauth2")(oauth2.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestAuthDefinition]
   }
+  
+  extension [Self <: RequestAuthDefinition](x: Self) {
+    
+    inline def setApikey(value: js.Array[VariableDefinition]): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+    
+    inline def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
+    
+    inline def setApikeyVarargs(value: VariableDefinition*): Self = StObject.set(x, "apikey", js.Array(value*))
+    
+    inline def setAwsv4(value: js.Array[VariableDefinition]): Self = StObject.set(x, "awsv4", value.asInstanceOf[js.Any])
+    
+    inline def setAwsv4Undefined: Self = StObject.set(x, "awsv4", js.undefined)
+    
+    inline def setAwsv4Varargs(value: VariableDefinition*): Self = StObject.set(x, "awsv4", js.Array(value*))
+    
+    inline def setBasic(value: js.Array[VariableDefinition]): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    
+    inline def setBasicVarargs(value: VariableDefinition*): Self = StObject.set(x, "basic", js.Array(value*))
+    
+    inline def setBearer(value: js.Array[VariableDefinition]): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
+    
+    inline def setBearerUndefined: Self = StObject.set(x, "bearer", js.undefined)
+    
+    inline def setBearerVarargs(value: VariableDefinition*): Self = StObject.set(x, "bearer", js.Array(value*))
+    
+    inline def setDigest(value: js.Array[VariableDefinition]): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    
+    inline def setDigestVarargs(value: VariableDefinition*): Self = StObject.set(x, "digest", js.Array(value*))
+    
+    inline def setEdgegrid(value: js.Array[VariableDefinition]): Self = StObject.set(x, "edgegrid", value.asInstanceOf[js.Any])
+    
+    inline def setEdgegridUndefined: Self = StObject.set(x, "edgegrid", js.undefined)
+    
+    inline def setEdgegridVarargs(value: VariableDefinition*): Self = StObject.set(x, "edgegrid", js.Array(value*))
+    
+    inline def setHawk(value: js.Array[VariableDefinition]): Self = StObject.set(x, "hawk", value.asInstanceOf[js.Any])
+    
+    inline def setHawkUndefined: Self = StObject.set(x, "hawk", js.undefined)
+    
+    inline def setHawkVarargs(value: VariableDefinition*): Self = StObject.set(x, "hawk", js.Array(value*))
+    
+    inline def setNtlm(value: js.Array[VariableDefinition]): Self = StObject.set(x, "ntlm", value.asInstanceOf[js.Any])
+    
+    inline def setNtlmUndefined: Self = StObject.set(x, "ntlm", js.undefined)
+    
+    inline def setNtlmVarargs(value: VariableDefinition*): Self = StObject.set(x, "ntlm", js.Array(value*))
+    
+    inline def setOauth1(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth1", value.asInstanceOf[js.Any])
+    
+    inline def setOauth1Undefined: Self = StObject.set(x, "oauth1", js.undefined)
+    
+    inline def setOauth1Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth1", js.Array(value*))
+    
+    inline def setOauth2(value: js.Array[VariableDefinition]): Self = StObject.set(x, "oauth2", value.asInstanceOf[js.Any])
+    
+    inline def setOauth2Undefined: Self = StObject.set(x, "oauth2", js.undefined)
+    
+    inline def setOauth2Varargs(value: VariableDefinition*): Self = StObject.set(x, "oauth2", js.Array(value*))
+    
+    inline def setType(
+      value: oauth2 | hawk | noauth | basic | oauth1 | apikey | digest | bearer | awsv4 | edgegrid | ntlm
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,23 +1,32 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HierarchicalDataSourceSchemaModel extends DataSourceSchemaModel {
-  var children: js.UndefOr[js.Any] = js.undefined
-  var hasChildren: js.UndefOr[js.Any] = js.undefined
+trait HierarchicalDataSourceSchemaModel
+  extends StObject
+     with DataSourceSchemaModel {
+  
+  var children: js.UndefOr[Any] = js.undefined
+  
+  var hasChildren: js.UndefOr[Any] = js.undefined
 }
-
 object HierarchicalDataSourceSchemaModel {
-  @scala.inline
-  def apply(children: js.Any = null, fields: js.Any = null, hasChildren: js.Any = null, id: String = null): HierarchicalDataSourceSchemaModel = {
+  
+  inline def apply(): HierarchicalDataSourceSchemaModel = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (hasChildren != null) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchicalDataSourceSchemaModel]
   }
+  
+  extension [Self <: HierarchicalDataSourceSchemaModel](x: Self) {
+    
+    inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setHasChildren(value: Any): Self = StObject.set(x, "hasChildren", value.asInstanceOf[js.Any])
+    
+    inline def setHasChildrenUndefined: Self = StObject.set(x, "hasChildren", js.undefined)
+  }
 }
-

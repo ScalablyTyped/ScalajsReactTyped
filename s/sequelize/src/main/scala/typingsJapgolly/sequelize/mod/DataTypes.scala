@@ -1,16 +1,16 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonDecimals
-import typingsJapgolly.sequelize.AnonLength
-import typingsJapgolly.sequelize.AnonLengthNumber
-import typingsJapgolly.sequelize.AnonLengthString
-import typingsJapgolly.sequelize.AnonPrecision
-import typingsJapgolly.sequelize.AnonSubtype
-import typingsJapgolly.sequelize.AnonType
-import typingsJapgolly.sequelize.AnonValues
+import typingsJapgolly.sequelize.anon.Decimals
+import typingsJapgolly.sequelize.anon.Length
+import typingsJapgolly.sequelize.anon.LengthString
+import typingsJapgolly.sequelize.anon.Precision
+import typingsJapgolly.sequelize.anon.Subtype
+import typingsJapgolly.sequelize.anon.Type
+import typingsJapgolly.sequelize.anon.Values
+import typingsJapgolly.sequelize.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A convenience class holding commonly used data types. The datatypes are used when definining a new model
@@ -48,203 +48,352 @@ import scala.scalajs.js.annotation._
   * })
   * ```
   */
-@js.native
-trait DataTypes extends js.Object {
-  var ABSTRACT: DataTypeAbstract = js.native
-  @JSName("ARRAY")
-  var ARRAY_Original: DataTypeArray = js.native
-  @JSName("BIGINT")
-  var BIGINT_Original: DataTypeBigInt = js.native
-  @JSName("BLOB")
-  var BLOB_Original: DataTypeBlob = js.native
-  var BOOLEAN: DataTypeBoolean = js.native
-  @JSName("CHAR")
-  var CHAR_Original: DataTypeChar = js.native
-  var DATEONLY: DataTypeDateOnly = js.native
-  @JSName("DATE")
-  var DATE_Original: DataTypeDate = js.native
-  @JSName("DECIMAL")
-  var DECIMAL_Original: DataTypeDecimal = js.native
-  @JSName("DOUBLE PRECISION")
-  var `DOUBLE PRECISION_Original`: DataTypeDouble = js.native
-  @JSName("DOUBLE")
-  var DOUBLE_Original: DataTypeDouble = js.native
-  @JSName("ENUM")
-  var ENUM_Original: DataTypeEnum = js.native
-  @JSName("FLOAT")
-  var FLOAT_Original: DataTypeFloat = js.native
-  @JSName("GEOMETRY")
-  var GEOMETRY_Original: DataTypeGeometry = js.native
-  var HSTORE: DataTypeHStore = js.native
-  @JSName("INTEGER")
-  var INTEGER_Original: DataTypeInteger = js.native
-  var JSON: DataTypeJSONType = js.native
-  var JSONB: DataTypeJSONB = js.native
-  @JSName("MEDIUMINT")
-  var MEDIUMINT_Original: DataTypeMediumInt = js.native
-  var NONE: DataTypeVirtual = js.native
-  var NOW: DataTypeNow = js.native
-  var NUMBER: DataTypeNumber = js.native
-  @JSName("NUMERIC")
-  var NUMERIC_Original: DataTypeDecimal = js.native
-  @JSName("RANGE")
-  var RANGE_Original: DataTypeRange = js.native
-  @JSName("REAL")
-  var REAL_Original: DataTypeReal = js.native
-  @JSName("SMALLINT")
-  var SMALLINT_Original: DataTypeSmallInt = js.native
-  @JSName("STRING")
-  var STRING_Original: DataTypeString = js.native
-  @JSName("TEXT")
-  var TEXT_Original: DataTypeText = js.native
-  var TIME: DataTypeTime = js.native
-  @JSName("TINYINT")
-  var TINYINT_Original: DataTypeTinyInt = js.native
-  @JSName("UUIDV1")
-  var UUIDV1_Original: DataTypeUUIDv1 = js.native
-  @JSName("UUIDV4")
-  var UUIDV4_Original: DataTypeUUIDv4 = js.native
-  @JSName("UUID")
-  var UUID_Original: DataTypeUUID = js.native
-  var VIRTUAL: DataTypeVirtual = js.native
+trait DataTypes extends StObject {
+  
+  var ABSTRACT: DataTypeAbstract
+  
   /**
     * Array field for Postgre
     *
     * Accepts type any of the DataTypes
     */
-  def ARRAY(options: AnonType): DataTypeArray = js.native
-  def ARRAY(`type`: DataTypeAbstract): DataTypeArray = js.native
+  def ARRAY(options: Type): DataTypeArray
+  def ARRAY(`type`: DataTypeAbstract): DataTypeArray
+  @JSName("ARRAY")
+  var ARRAY_Original: DataTypeArray
+  
   /**
     * Length of the number field.
     */
-  def BIGINT(): DataTypeBigInt = js.native
-  def BIGINT(length: Double): DataTypeBigInt = js.native
-  def BIGINT(options: AnonLength): DataTypeBigInt = js.native
+  def BIGINT(): DataTypeBigInt
+  def BIGINT(length: Double): DataTypeBigInt
+  def BIGINT(options: Length): DataTypeBigInt
+  @JSName("BIGINT")
+  var BIGINT_Original: DataTypeBigInt
+  
   /**
     * Length of the blob field.
     *
     * Available lengths: `tiny`, `medium`, `long`
     */
-  def BLOB(): DataTypeBlob = js.native
-  def BLOB(length: String): DataTypeBlob = js.native
-  def BLOB(options: AnonLengthString): DataTypeBlob = js.native
+  def BLOB(): DataTypeBlob
+  def BLOB(length: String): DataTypeBlob
+  def BLOB(options: LengthString): DataTypeBlob
+  @JSName("BLOB")
+  var BLOB_Original: DataTypeBlob
+  
+  var BOOLEAN: DataTypeBoolean
+  
   /**
     * A variable length string. Default length 255
     */
-  def CHAR(): DataTypeChar = js.native
-  def CHAR(length: Double): DataTypeChar = js.native
-  def CHAR(options: AnonLength): DataTypeChar = js.native
+  def CHAR(): DataTypeChar
+  def CHAR(length: Double): DataTypeChar
+  def CHAR(options: Length): DataTypeChar
+  @JSName("CHAR")
+  var CHAR_Original: DataTypeChar
+  
   /**
     * Length of decimal places of time
     */
-  def DATE(): DataTypeDate = js.native
-  def DATE(length: Double): DataTypeDate = js.native
-  def DATE(options: AnonLengthNumber): DataTypeDate = js.native
+  def DATE(): DataTypeDate
+  def DATE(length: Double): DataTypeDate
+  def DATE(options: `0`): DataTypeDate
+  
+  var DATEONLY: DataTypeDateOnly
+  
+  @JSName("DATE")
+  var DATE_Original: DataTypeDate
+  
   /**
     * Precision and scale for the decimal number
     */
-  def DECIMAL(): DataTypeDecimal = js.native
-  def DECIMAL(options: AnonPrecision): DataTypeDecimal = js.native
-  def DECIMAL(precision: Double): DataTypeDecimal = js.native
-  def DECIMAL(precision: Double, scale: Double): DataTypeDecimal = js.native
+  def DECIMAL(): DataTypeDecimal
+  def DECIMAL(options: Precision): DataTypeDecimal
+  def DECIMAL(precision: Double): DataTypeDecimal
+  def DECIMAL(precision: Double, scale: Double): DataTypeDecimal
+  @JSName("DECIMAL")
+  var DECIMAL_Original: DataTypeDecimal
+  
   /**
     * Length of the number field and decimals of the real
     */
-  def DOUBLE(): DataTypeDouble = js.native
-  def DOUBLE(length: Double): DataTypeDouble = js.native
-  def DOUBLE(length: Double, decimals: Double): DataTypeDouble = js.native
-  def DOUBLE(options: AnonDecimals): DataTypeDouble = js.native
+  def DOUBLE(): DataTypeDouble
+  def DOUBLE(length: Double): DataTypeDouble
+  def DOUBLE(length: Double, decimals: Double): DataTypeDouble
+  def DOUBLE(options: Decimals): DataTypeDouble
+  
   /**
     * Length of the number field and decimals of the real
     */
-  def `DOUBLE PRECISION`(): DataTypeDouble = js.native
-  def `DOUBLE PRECISION`(length: Double): DataTypeDouble = js.native
-  def `DOUBLE PRECISION`(length: Double, decimals: Double): DataTypeDouble = js.native
-  def `DOUBLE PRECISION`(options: AnonDecimals): DataTypeDouble = js.native
+  def `DOUBLE PRECISION`(): DataTypeDouble
+  def `DOUBLE PRECISION`(length: Double): DataTypeDouble
+  def `DOUBLE PRECISION`(length: Double, decimals: Double): DataTypeDouble
+  def `DOUBLE PRECISION`(options: Decimals): DataTypeDouble
+  @JSName("DOUBLE PRECISION")
+  var `DOUBLE PRECISION_Original`: DataTypeDouble
+  
+  @JSName("DOUBLE")
+  var DOUBLE_Original: DataTypeDouble
+  
   /**
     * Enum field
     *
     * Accepts values
     */
-  def ENUM(): DataTypeEnum = js.native
-  def ENUM(args: String*): DataTypeEnum = js.native
-  def ENUM(options: AnonValues): DataTypeEnum = js.native
-  def ENUM(values: String): DataTypeEnum = js.native
-  def ENUM(values: js.Array[String]): DataTypeEnum = js.native
+  def ENUM(): DataTypeEnum
+  def ENUM(args: String*): DataTypeEnum
+  def ENUM(options: Values): DataTypeEnum
+  def ENUM(values: String): DataTypeEnum
+  def ENUM(values: js.Array[String]): DataTypeEnum
+  @JSName("ENUM")
+  var ENUM_Original: DataTypeEnum
+  
   /**
     * Length of the number field and decimals of the float
     */
-  def FLOAT(): DataTypeFloat = js.native
-  def FLOAT(length: Double): DataTypeFloat = js.native
-  def FLOAT(length: Double, decimals: Double): DataTypeFloat = js.native
-  def FLOAT(options: AnonDecimals): DataTypeFloat = js.native
+  def FLOAT(): DataTypeFloat
+  def FLOAT(length: Double): DataTypeFloat
+  def FLOAT(length: Double, decimals: Double): DataTypeFloat
+  def FLOAT(options: Decimals): DataTypeFloat
+  @JSName("FLOAT")
+  var FLOAT_Original: DataTypeFloat
+  
   /**
     * Geometry field for Postgres
     */
-  def GEOMETRY(`type`: String): DataTypeGeometry = js.native
-  def GEOMETRY(`type`: String, srid: Double): DataTypeGeometry = js.native
+  def GEOMETRY(`type`: String): DataTypeGeometry
+  def GEOMETRY(`type`: String, srid: Double): DataTypeGeometry
+  @JSName("GEOMETRY")
+  var GEOMETRY_Original: DataTypeGeometry
+  
+  var HSTORE: DataTypeHStore
+  
   /**
     * Length of the number field.
     */
-  def INTEGER(): DataTypeInteger = js.native
-  def INTEGER(length: Double): DataTypeInteger = js.native
-  def INTEGER(options: AnonLength): DataTypeInteger = js.native
+  def INTEGER(): DataTypeInteger
+  def INTEGER(length: Double): DataTypeInteger
+  def INTEGER(options: Length): DataTypeInteger
+  @JSName("INTEGER")
+  var INTEGER_Original: DataTypeInteger
+  
+  var JSON: DataTypeJSONType
+  
+  var JSONB: DataTypeJSONB
+  
   /**
     * Length of the number field.
     */
-  def MEDIUMINT(): DataTypeMediumInt = js.native
-  def MEDIUMINT(length: Double): DataTypeMediumInt = js.native
-  def MEDIUMINT(options: AnonLength): DataTypeMediumInt = js.native
+  def MEDIUMINT(): DataTypeMediumInt
+  def MEDIUMINT(length: Double): DataTypeMediumInt
+  def MEDIUMINT(options: Length): DataTypeMediumInt
+  @JSName("MEDIUMINT")
+  var MEDIUMINT_Original: DataTypeMediumInt
+  
+  var NONE: DataTypeVirtual
+  
+  var NOW: DataTypeNow
+  
+  var NUMBER: DataTypeNumber
+  
   /**
     * Precision and scale for the decimal number
     */
-  def NUMERIC(): DataTypeDecimal = js.native
-  def NUMERIC(options: AnonPrecision): DataTypeDecimal = js.native
-  def NUMERIC(precision: Double): DataTypeDecimal = js.native
-  def NUMERIC(precision: Double, scale: Double): DataTypeDecimal = js.native
+  def NUMERIC(): DataTypeDecimal
+  def NUMERIC(options: Precision): DataTypeDecimal
+  def NUMERIC(precision: Double): DataTypeDecimal
+  def NUMERIC(precision: Double, scale: Double): DataTypeDecimal
+  @JSName("NUMERIC")
+  var NUMERIC_Original: DataTypeDecimal
+  
   /**
     * Range field for Postgre
     *
     * Accepts subtype any of the ranges
     */
-  def RANGE(): DataTypeRange = js.native
-  def RANGE(options: AnonSubtype): DataTypeRange = js.native
-  def RANGE(subtype: DataTypeAbstract): DataTypeRange = js.native
+  def RANGE(): DataTypeRange
+  def RANGE(options: Subtype): DataTypeRange
+  def RANGE(subtype: DataTypeAbstract): DataTypeRange
+  @JSName("RANGE")
+  var RANGE_Original: DataTypeRange
+  
   /**
     * Length of the number field and decimals of the real
     */
-  def REAL(): DataTypeReal = js.native
-  def REAL(length: Double): DataTypeReal = js.native
-  def REAL(length: Double, decimals: Double): DataTypeReal = js.native
-  def REAL(options: AnonDecimals): DataTypeReal = js.native
+  def REAL(): DataTypeReal
+  def REAL(length: Double): DataTypeReal
+  def REAL(length: Double, decimals: Double): DataTypeReal
+  def REAL(options: Decimals): DataTypeReal
+  @JSName("REAL")
+  var REAL_Original: DataTypeReal
+  
   /**
     * Length of the number field.
     */
-  def SMALLINT(): DataTypeSmallInt = js.native
-  def SMALLINT(length: Double): DataTypeSmallInt = js.native
-  def SMALLINT(options: AnonLength): DataTypeSmallInt = js.native
+  def SMALLINT(): DataTypeSmallInt
+  def SMALLINT(length: Double): DataTypeSmallInt
+  def SMALLINT(options: Length): DataTypeSmallInt
+  @JSName("SMALLINT")
+  var SMALLINT_Original: DataTypeSmallInt
+  
   /**
     * A variable length string. Default length 255
     */
-  def STRING(): DataTypeString = js.native
-  def STRING(length: Double): DataTypeString = js.native
-  def STRING(options: AnonLength): DataTypeString = js.native
+  def STRING(): DataTypeString
+  def STRING(length: Double): DataTypeString
+  def STRING(options: Length): DataTypeString
+  @JSName("STRING")
+  var STRING_Original: DataTypeString
+  
   /**
     * Length of the text field.
     *
     * Available lengths: `tiny`, `medium`, `long`
     */
-  def TEXT(): DataTypeText = js.native
-  def TEXT(length: String): DataTypeText = js.native
-  def TEXT(options: AnonLengthString): DataTypeText = js.native
+  def TEXT(): DataTypeText
+  def TEXT(length: String): DataTypeText
+  def TEXT(options: LengthString): DataTypeText
+  @JSName("TEXT")
+  var TEXT_Original: DataTypeText
+  
+  var TIME: DataTypeTime
+  
   /**
     * Length of the number field.
     */
-  def TINYINT(): DataTypeTinyInt = js.native
-  def TINYINT(length: Double): DataTypeTinyInt = js.native
-  def TINYINT(options: AnonLength): DataTypeTinyInt = js.native
-  def UUID(): DataTypeUUID = js.native
-  def UUIDV1(): DataTypeUUIDv1 = js.native
-  def UUIDV4(): DataTypeUUIDv4 = js.native
+  def TINYINT(): DataTypeTinyInt
+  def TINYINT(length: Double): DataTypeTinyInt
+  def TINYINT(options: Length): DataTypeTinyInt
+  @JSName("TINYINT")
+  var TINYINT_Original: DataTypeTinyInt
+  
+  def UUID(): DataTypeUUID
+  
+  def UUIDV1(): DataTypeUUIDv1
+  @JSName("UUIDV1")
+  var UUIDV1_Original: DataTypeUUIDv1
+  
+  def UUIDV4(): DataTypeUUIDv4
+  @JSName("UUIDV4")
+  var UUIDV4_Original: DataTypeUUIDv4
+  
+  @JSName("UUID")
+  var UUID_Original: DataTypeUUID
+  
+  var VIRTUAL: DataTypeVirtual
 }
-
+object DataTypes {
+  
+  inline def apply(
+    ABSTRACT: DataTypeAbstract,
+    ARRAY: DataTypeArray,
+    BIGINT: DataTypeBigInt,
+    BLOB: DataTypeBlob,
+    BOOLEAN: DataTypeBoolean,
+    CHAR: DataTypeChar,
+    DATE: DataTypeDate,
+    DATEONLY: DataTypeDateOnly,
+    DECIMAL: DataTypeDecimal,
+    DOUBLE: DataTypeDouble,
+    `DOUBLE PRECISION`: DataTypeDouble,
+    ENUM: DataTypeEnum,
+    FLOAT: DataTypeFloat,
+    GEOMETRY: DataTypeGeometry,
+    HSTORE: DataTypeHStore,
+    INTEGER: DataTypeInteger,
+    JSON: DataTypeJSONType,
+    JSONB: DataTypeJSONB,
+    MEDIUMINT: DataTypeMediumInt,
+    NONE: DataTypeVirtual,
+    NOW: DataTypeNow,
+    NUMBER: DataTypeNumber,
+    NUMERIC: DataTypeDecimal,
+    RANGE: DataTypeRange,
+    REAL: DataTypeReal,
+    SMALLINT: DataTypeSmallInt,
+    STRING: DataTypeString,
+    TEXT: DataTypeText,
+    TIME: DataTypeTime,
+    TINYINT: DataTypeTinyInt,
+    UUID: DataTypeUUID,
+    UUIDV1: DataTypeUUIDv1,
+    UUIDV4: DataTypeUUIDv4,
+    VIRTUAL: DataTypeVirtual
+  ): DataTypes = {
+    val __obj = js.Dynamic.literal(ABSTRACT = ABSTRACT.asInstanceOf[js.Any], ARRAY = ARRAY.asInstanceOf[js.Any], BIGINT = BIGINT.asInstanceOf[js.Any], BLOB = BLOB.asInstanceOf[js.Any], BOOLEAN = BOOLEAN.asInstanceOf[js.Any], CHAR = CHAR.asInstanceOf[js.Any], DATE = DATE.asInstanceOf[js.Any], DATEONLY = DATEONLY.asInstanceOf[js.Any], DECIMAL = DECIMAL.asInstanceOf[js.Any], DOUBLE = DOUBLE.asInstanceOf[js.Any], ENUM = ENUM.asInstanceOf[js.Any], FLOAT = FLOAT.asInstanceOf[js.Any], GEOMETRY = GEOMETRY.asInstanceOf[js.Any], HSTORE = HSTORE.asInstanceOf[js.Any], INTEGER = INTEGER.asInstanceOf[js.Any], JSON = JSON.asInstanceOf[js.Any], JSONB = JSONB.asInstanceOf[js.Any], MEDIUMINT = MEDIUMINT.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], NOW = NOW.asInstanceOf[js.Any], NUMBER = NUMBER.asInstanceOf[js.Any], NUMERIC = NUMERIC.asInstanceOf[js.Any], RANGE = RANGE.asInstanceOf[js.Any], REAL = REAL.asInstanceOf[js.Any], SMALLINT = SMALLINT.asInstanceOf[js.Any], STRING = STRING.asInstanceOf[js.Any], TEXT = TEXT.asInstanceOf[js.Any], TIME = TIME.asInstanceOf[js.Any], TINYINT = TINYINT.asInstanceOf[js.Any], UUID = UUID.asInstanceOf[js.Any], UUIDV1 = UUIDV1.asInstanceOf[js.Any], UUIDV4 = UUIDV4.asInstanceOf[js.Any], VIRTUAL = VIRTUAL.asInstanceOf[js.Any])
+    __obj.updateDynamic("DOUBLE PRECISION")((`DOUBLE PRECISION`).asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataTypes]
+  }
+  
+  extension [Self <: DataTypes](x: Self) {
+    
+    inline def setABSTRACT(value: DataTypeAbstract): Self = StObject.set(x, "ABSTRACT", value.asInstanceOf[js.Any])
+    
+    inline def setARRAY(value: DataTypeArray): Self = StObject.set(x, "ARRAY", value.asInstanceOf[js.Any])
+    
+    inline def setBIGINT(value: DataTypeBigInt): Self = StObject.set(x, "BIGINT", value.asInstanceOf[js.Any])
+    
+    inline def setBLOB(value: DataTypeBlob): Self = StObject.set(x, "BLOB", value.asInstanceOf[js.Any])
+    
+    inline def setBOOLEAN(value: DataTypeBoolean): Self = StObject.set(x, "BOOLEAN", value.asInstanceOf[js.Any])
+    
+    inline def setCHAR(value: DataTypeChar): Self = StObject.set(x, "CHAR", value.asInstanceOf[js.Any])
+    
+    inline def setDATE(value: DataTypeDate): Self = StObject.set(x, "DATE", value.asInstanceOf[js.Any])
+    
+    inline def setDATEONLY(value: DataTypeDateOnly): Self = StObject.set(x, "DATEONLY", value.asInstanceOf[js.Any])
+    
+    inline def setDECIMAL(value: DataTypeDecimal): Self = StObject.set(x, "DECIMAL", value.asInstanceOf[js.Any])
+    
+    inline def setDOUBLE(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE", value.asInstanceOf[js.Any])
+    
+    inline def `setDOUBLE PRECISION`(value: DataTypeDouble): Self = StObject.set(x, "DOUBLE PRECISION", value.asInstanceOf[js.Any])
+    
+    inline def setENUM(value: DataTypeEnum): Self = StObject.set(x, "ENUM", value.asInstanceOf[js.Any])
+    
+    inline def setFLOAT(value: DataTypeFloat): Self = StObject.set(x, "FLOAT", value.asInstanceOf[js.Any])
+    
+    inline def setGEOMETRY(value: DataTypeGeometry): Self = StObject.set(x, "GEOMETRY", value.asInstanceOf[js.Any])
+    
+    inline def setHSTORE(value: DataTypeHStore): Self = StObject.set(x, "HSTORE", value.asInstanceOf[js.Any])
+    
+    inline def setINTEGER(value: DataTypeInteger): Self = StObject.set(x, "INTEGER", value.asInstanceOf[js.Any])
+    
+    inline def setJSON(value: DataTypeJSONType): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
+    
+    inline def setJSONB(value: DataTypeJSONB): Self = StObject.set(x, "JSONB", value.asInstanceOf[js.Any])
+    
+    inline def setMEDIUMINT(value: DataTypeMediumInt): Self = StObject.set(x, "MEDIUMINT", value.asInstanceOf[js.Any])
+    
+    inline def setNONE(value: DataTypeVirtual): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+    
+    inline def setNOW(value: DataTypeNow): Self = StObject.set(x, "NOW", value.asInstanceOf[js.Any])
+    
+    inline def setNUMBER(value: DataTypeNumber): Self = StObject.set(x, "NUMBER", value.asInstanceOf[js.Any])
+    
+    inline def setNUMERIC(value: DataTypeDecimal): Self = StObject.set(x, "NUMERIC", value.asInstanceOf[js.Any])
+    
+    inline def setRANGE(value: DataTypeRange): Self = StObject.set(x, "RANGE", value.asInstanceOf[js.Any])
+    
+    inline def setREAL(value: DataTypeReal): Self = StObject.set(x, "REAL", value.asInstanceOf[js.Any])
+    
+    inline def setSMALLINT(value: DataTypeSmallInt): Self = StObject.set(x, "SMALLINT", value.asInstanceOf[js.Any])
+    
+    inline def setSTRING(value: DataTypeString): Self = StObject.set(x, "STRING", value.asInstanceOf[js.Any])
+    
+    inline def setTEXT(value: DataTypeText): Self = StObject.set(x, "TEXT", value.asInstanceOf[js.Any])
+    
+    inline def setTIME(value: DataTypeTime): Self = StObject.set(x, "TIME", value.asInstanceOf[js.Any])
+    
+    inline def setTINYINT(value: DataTypeTinyInt): Self = StObject.set(x, "TINYINT", value.asInstanceOf[js.Any])
+    
+    inline def setUUID(value: DataTypeUUID): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
+    
+    inline def setUUIDV1(value: DataTypeUUIDv1): Self = StObject.set(x, "UUIDV1", value.asInstanceOf[js.Any])
+    
+    inline def setUUIDV4(value: DataTypeUUIDv4): Self = StObject.set(x, "UUIDV4", value.asInstanceOf[js.Any])
+    
+    inline def setVIRTUAL(value: DataTypeVirtual): Self = StObject.set(x, "VIRTUAL", value.asInstanceOf[js.Any])
+  }
+}

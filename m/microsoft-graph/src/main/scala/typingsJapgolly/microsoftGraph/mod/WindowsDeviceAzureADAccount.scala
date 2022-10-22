@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsDeviceAzureADAccount extends WindowsDeviceAccount {
+trait WindowsDeviceAzureADAccount
+  extends StObject
+     with WindowsDeviceAccount {
+  
   // Not yet documented
-  var userPrincipalName: js.UndefOr[String] = js.undefined
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WindowsDeviceAzureADAccount {
-  @scala.inline
-  def apply(password: String = null, userPrincipalName: String = null): WindowsDeviceAzureADAccount = {
+  
+  inline def apply(): WindowsDeviceAzureADAccount = {
     val __obj = js.Dynamic.literal()
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (userPrincipalName != null) __obj.updateDynamic("userPrincipalName")(userPrincipalName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDeviceAzureADAccount]
   }
+  
+  extension [Self <: WindowsDeviceAzureADAccount](x: Self) {
+    
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+  }
 }
-

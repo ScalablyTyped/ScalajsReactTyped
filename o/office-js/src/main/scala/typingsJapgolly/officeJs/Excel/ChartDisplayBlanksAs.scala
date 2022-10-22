@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartDisplayBlanksAs extends js.Object
-
+sealed trait ChartDisplayBlanksAs extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartDisplayBlanksAs")
 @js.native
-object ChartDisplayBlanksAs extends js.Object {
+object ChartDisplayBlanksAs extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait interplotted extends ChartDisplayBlanksAs
+  sealed trait interplotted
+    extends StObject
+       with ChartDisplayBlanksAs
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait notPlotted extends ChartDisplayBlanksAs
+  sealed trait notPlotted
+    extends StObject
+       with ChartDisplayBlanksAs
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait zero extends ChartDisplayBlanksAs
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartDisplayBlanksAs with String] = js.native
-  /* "Interplotted" */ @js.native
-  object interplotted extends TopLevel[interplotted with String]
-  
-  /* "NotPlotted" */ @js.native
-  object notPlotted extends TopLevel[notPlotted with String]
-  
-  /* "Zero" */ @js.native
-  object zero extends TopLevel[zero with String]
-  
+  sealed trait zero
+    extends StObject
+       with ChartDisplayBlanksAs
 }
-

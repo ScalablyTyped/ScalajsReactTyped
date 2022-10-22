@@ -1,171 +1,360 @@
 package typingsJapgolly.pixiJs.mod
 
-import typingsJapgolly.std.Float32Array
-import typingsJapgolly.std.HTMLCanvasElement
-import typingsJapgolly.std.HTMLImageElement
-import typingsJapgolly.std.HTMLVideoElement
-import typingsJapgolly.std.Uint8Array
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import typingsJapgolly.pixiCore.mod.IAutoDetectOptions
+import typingsJapgolly.pixiCore.mod.IBaseTextureOptions
+import typingsJapgolly.pixiCore.mod.TextureSource
+import typingsJapgolly.pixiMath.mod.IPointData
+import typingsJapgolly.pixiMath.mod.ISize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A texture stores the information that represents an image or part of an image.
-  *
-  * It cannot be added to the display list directly; instead use it as the texture for a Sprite.
-  * If no frame is provided for a texture, then the whole image is used.
-  *
-  * You can directly create a texture from an image and then reuse it multiple times like this :
-  *
-  * ```js
-  * let texture = PIXI.Texture.from('assets/image.png');
-  * let sprite1 = new PIXI.Sprite(texture);
-  * let sprite2 = new PIXI.Sprite(texture);
-  * ```
-  *
-  * If you didnt pass the texture frame to constructor, it enables `noFrame` mode:
-  * it subscribes on baseTexture events, it automatically resizes at the same time as baseTexture.
-  *
-  * Textures made from SVGs, loaded or not, cannot be used before the file finishes processing.
-  * You can check for this by checking the sprite's _textureID property.
-  * ```js
-  * var texture = PIXI.Texture.from('assets/image.svg');
-  * var sprite1 = new PIXI.Sprite(texture);
-  * //sprite1._textureID should not be undefined if the texture has finished processing the SVG file
-  * ```
-  * You can use a ticker or rAF to ensure your sprites load the finished textures after processing. See issue #3068.
-  *
-  * @class
-  * @extends PIXI.utils.EventEmitter
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Texture")
 @js.native
-class Texture protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Texture {
-  def this(baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture) = this()
-  def this(baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture, frame: typingsJapgolly.pixiJs.PIXI.Rectangle) = this()
+open class Texture[R /* <: typingsJapgolly.pixiCore.mod.Resource */] protected ()
+  extends typingsJapgolly.pixiCore.mod.Texture[R] {
+  /**
+    * @param baseTexture - The base texture source to create the texture from
+    * @param frame - The rectangle frame of the texture to show
+    * @param orig - The area of original texture
+    * @param trim - Trimmed rectangle of original texture
+    * @param rotate - indicates how the texture was rotated by texture packer. See {@link PIXI.groupD8}
+    * @param anchor - Default anchor point used for sprite placement / rotation
+    */
+  def this(baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions]) = this()
   def this(
-    baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture,
-    frame: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    orig: typingsJapgolly.pixiJs.PIXI.Rectangle
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle
   ) = this()
   def this(
-    baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture,
-    frame: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    orig: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    trim: typingsJapgolly.pixiJs.PIXI.Rectangle
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle
   ) = this()
   def this(
-    baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture,
-    frame: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    orig: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    trim: typingsJapgolly.pixiJs.PIXI.Rectangle,
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: Unit,
     rotate: Double
   ) = this()
   def this(
-    baseTexture: typingsJapgolly.pixiJs.PIXI.BaseTexture,
-    frame: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    orig: typingsJapgolly.pixiJs.PIXI.Rectangle,
-    trim: typingsJapgolly.pixiJs.PIXI.Rectangle,
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: Unit,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: Unit,
     rotate: Double,
-    anchor: typingsJapgolly.pixiJs.PIXI.Point
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: Unit,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: Unit,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: Unit,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: Unit,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: Unit,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: Unit,
+    rotate: Unit,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Double,
+    anchor: IPointData
+  ) = this()
+  def this(
+    baseTexture: typingsJapgolly.pixiCore.mod.BaseTexture[R, IAutoDetectOptions],
+    frame: typingsJapgolly.pixiMath.mod.Rectangle,
+    orig: typingsJapgolly.pixiMath.mod.Rectangle,
+    trim: typingsJapgolly.pixiMath.mod.Rectangle,
+    rotate: Unit,
+    anchor: IPointData
   ) = this()
 }
-
 /* static members */
-@JSImport("pixi.js", "Texture")
-@js.native
-object Texture extends js.Object {
-  /**
-    * An empty texture, used often to not have to create multiple empty textures.
-    * Can not be destroyed.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Texture}
-    */
-  var EMPTY: typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  /**
-    * A white texture of 16x16 size, used for graphics and other things
-    * Can not be destroyed.
-    *
-    * @static
-    * @constant
-    * @member {PIXI.Texture}
-    */
-  var WHITE: typingsJapgolly.pixiJs.PIXI.Texture = js.native
+object Texture {
+  
+  @JSImport("pixi.js", "Texture")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("pixi.js", "Texture._EMPTY")
+  @js.native
+  def _EMPTY: Any = js.native
+  inline def _EMPTY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_EMPTY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("pixi.js", "Texture._WHITE")
+  @js.native
+  def _WHITE: Any = js.native
+  inline def _WHITE_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_WHITE")(x.asInstanceOf[js.Any])
+  
   /**
     * Adds a Texture to the global TextureCache. This cache is shared across the whole PIXI object.
-    *
-    * @static
-    * @param {PIXI.Texture} texture - The Texture to add to the cache.
-    * @param {string} id - The id that the Texture will be stored against.
+    * @param texture - The Texture to add to the cache.
+    * @param id - The id that the Texture will be stored against.
     */
-  def addToCache(texture: typingsJapgolly.pixiJs.PIXI.Texture, id: String): Unit = js.native
+  inline def addToCache(texture: typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource], id: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToCache")(texture.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: js.Array[TextureSource]): typingsJapgolly.pixiCore.mod.Texture[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: js.Array[TextureSource], options: Unit, strict: Boolean): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: js.Array[TextureSource], options: IBaseTextureOptions[RO]): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: js.Array[TextureSource], options: IBaseTextureOptions[RO], strict: Boolean): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
   /**
     * Helper function that creates a new Texture based on the source you provide.
     * The source can be - frame id, image url, video url, canvas element, video element, base texture
-    *
-    * @static
-    * @param {string|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|PIXI.BaseTexture} source
-    *        Source to create texture from
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @param {boolean} [strict] Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
-    * @return {PIXI.Texture} The newly created texture
+    * @param {string|HTMLImageElement|HTMLCanvasElement|HTMLVideoElement|PIXI.BaseTexture} source -
+    *        Source or array of sources to create texture from
+    * @param options - See {@link PIXI.BaseTexture}'s constructor for options.
+    * @param {string} [options.pixiIdPrefix=pixiid] - If a source has no id, this is the prefix of the generated id
+    * @param {boolean} [strict] - Enforce strict-mode, see {@link PIXI.settings.STRICT_TEXTURE_CACHE}.
+    * @returns {PIXI.Texture} The newly created texture
     */
-  def from(source: String): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: String, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: String, options: js.Any, strict: Boolean): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: typingsJapgolly.pixiJs.PIXI.BaseTexture): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: typingsJapgolly.pixiJs.PIXI.BaseTexture, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: typingsJapgolly.pixiJs.PIXI.BaseTexture, options: js.Any, strict: Boolean): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLCanvasElement): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLCanvasElement, options: js.Any, strict: Boolean): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLImageElement): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLImageElement, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLImageElement, options: js.Any, strict: Boolean): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLVideoElement): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLVideoElement, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def from(source: HTMLVideoElement, options: js.Any, strict: Boolean): typingsJapgolly.pixiJs.PIXI.Texture = js.native
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: TextureSource): typingsJapgolly.pixiCore.mod.Texture[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: TextureSource, options: Unit, strict: Boolean): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: TextureSource, options: IBaseTextureOptions[RO]): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  inline def from[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](source: TextureSource, options: IBaseTextureOptions[RO], strict: Boolean): typingsJapgolly.pixiCore.mod.Texture[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[R]]
+  
   /**
     * Create a new Texture with a BufferResource from a Float32Array.
     * RGBA values are floats from 0 to 1.
-    * @static
-    * @param {Float32Array|Uint8Array} buffer The optional array to use, if no data
+    * @param {Float32Array|Uint8Array} buffer - The optional array to use, if no data
     *        is provided, a new Float32Array is created.
-    * @param {number} width - Width of the resource
-    * @param {number} height - Height of the resource
-    * @param {object} [options] See {@link PIXI.BaseTexture}'s constructor for options.
-    * @return {PIXI.Texture} The resulting new BaseTexture
+    * @param width - Width of the resource
+    * @param height - Height of the resource
+    * @param options - See {@link PIXI.BaseTexture}'s constructor for options.
+    * @returns - The resulting new BaseTexture
     */
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromBuffer(buffer: Float32Array, width: Double, height: Double, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromBuffer(buffer: Uint8Array, width: Double, height: Double, options: js.Any): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromLoader(source: HTMLCanvasElement, imageUrl: String, name: String): typingsJapgolly.pixiJs.PIXI.Texture = js.native
+  inline def fromBuffer(buffer: js.typedarray.Float32Array, width: Double, height: Double): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource]]
+  inline def fromBuffer(
+    buffer: js.typedarray.Float32Array,
+    width: Double,
+    height: Double,
+    options: IBaseTextureOptions[ISize]
+  ): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource]]
+  inline def fromBuffer(buffer: js.typedarray.Uint8Array, width: Double, height: Double): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource]]
+  inline def fromBuffer(
+    buffer: js.typedarray.Uint8Array,
+    width: Double,
+    height: Double,
+    options: IBaseTextureOptions[ISize]
+  ): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.BufferResource]]
+  
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: String, imageUrl: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: String, imageUrl: String, name: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: String, imageUrl: String, name: String, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: String, imageUrl: String, name: Unit, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLCanvasElement, imageUrl: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLCanvasElement, imageUrl: String, name: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLCanvasElement, imageUrl: String, name: String, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLCanvasElement, imageUrl: String, name: Unit, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
   /**
     * Create a texture from a source and add to the cache.
-    *
-    * @static
-    * @param {HTMLImageElement|HTMLCanvasElement} source - The input source.
-    * @param {String} imageUrl - File name of texture, for cache and resolving resolution.
-    * @param {String} [name] - Human readable name for the texture cache. If no name is
+    * @param {HTMLImageElement|HTMLCanvasElement|string} source - The input source.
+    * @param imageUrl - File name of texture, for cache and resolving resolution.
+    * @param name - Human readable name for the texture cache. If no name is
     *        specified, only `imageUrl` will be used as the cache ID.
-    * @return {PIXI.Texture} Output texture
+    * @param options
+    * @returns - Output texture
     */
-  def fromLoader(source: HTMLImageElement, imageUrl: String): typingsJapgolly.pixiJs.PIXI.Texture = js.native
-  def fromLoader(source: HTMLImageElement, imageUrl: String, name: String): typingsJapgolly.pixiJs.PIXI.Texture = js.native
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLImageElement, imageUrl: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLImageElement, imageUrl: String, name: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLImageElement, imageUrl: String, name: String, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromLoader[R /* <: typingsJapgolly.pixiCore.mod.Resource */](source: HTMLImageElement, imageUrl: String, name: Unit, options: IBaseTextureOptions[Any]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromLoader")(source.asInstanceOf[js.Any], imageUrl.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  
+  /**
+    * Useful for loading textures via URLs. Use instead of `Texture.from` because
+    * it does a better job of handling failed URLs more effectively. This also ignores
+    * `PIXI.settings.STRICT_TEXTURE_CACHE`. Works for Videos, SVGs, Images.
+    * @param url - The remote URL or array of URLs to load.
+    * @param options - Optional options to include
+    * @returns - A Promise that resolves to a Texture.
+    */
+  inline def fromURL[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](url: String): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromURL[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](url: String, options: IBaseTextureOptions[RO]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromURL[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](url: js.Array[String]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  inline def fromURL[R /* <: typingsJapgolly.pixiCore.mod.Resource */, RO](url: js.Array[String], options: IBaseTextureOptions[RO]): js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.pixiCore.mod.Texture[R]]]
+  
   /**
     * Remove a Texture from the global TextureCache.
-    *
-    * @static
-    * @param {string|PIXI.Texture} texture - id of a Texture to be removed, or a Texture instance itself
-    * @return {PIXI.Texture|null} The Texture that was removed
+    * @param texture - id of a Texture to be removed, or a Texture instance itself
+    * @returns - The Texture that was removed
     */
-  def removeFromCache(texture: String): typingsJapgolly.pixiJs.PIXI.Texture | Null = js.native
-  def removeFromCache(texture: typingsJapgolly.pixiJs.PIXI.Texture): typingsJapgolly.pixiJs.PIXI.Texture | Null = js.native
+  inline def removeFromCache(texture: String): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource] | Null]
+  inline def removeFromCache(texture: typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource]): typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFromCache")(texture.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.pixiCore.mod.Texture[typingsJapgolly.pixiCore.mod.Resource] | Null]
 }
-

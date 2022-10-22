@@ -1,19 +1,18 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.semanticUiReact.portalMod.default
+import typingsJapgolly.semanticUiReact.distCommonjsAddonsPortalMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Portal")
 @js.native
-class Portal () extends default
-
-/* static members */
-@JSImport("semantic-ui-react", "Portal")
-@js.native
-object Portal extends js.Object {
-  var Inner: Instantiable0[typingsJapgolly.semanticUiReact.portalInnerMod.default] = js.native
+open class Portal () extends default
+object Portal {
+  
+  /* was `typeof PortalInner` */
+  @JSImport("semantic-ui-react", "Portal.Inner")
+  @js.native
+  open class Inner ()
+    extends typingsJapgolly.semanticUiReact.distCommonjsAddonsPortalMod.default.Inner
 }
-

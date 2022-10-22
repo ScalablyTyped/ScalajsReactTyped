@@ -1,13 +1,12 @@
 package typingsJapgolly.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "PushStateLocationService")
 @js.native
-class PushStateLocationService protected ()
-  extends typingsJapgolly.uirouterCore.vanillaMod.PushStateLocationService {
-  def this(router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+open class PushStateLocationService protected ()
+  extends typingsJapgolly.uirouterCore.libVanillaMod.PushStateLocationService {
+  def this(router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-

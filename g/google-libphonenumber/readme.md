@@ -10,10 +10,10 @@ The up-to-date and reliable Google's libphonenumber package for node.js.
 | ------------------ | :-------------: |
 | Full name          | google-libphonenumber |
 | Keywords           | browserify, e164, format, formatting, international, libphonenumber, number, phone, phonenumber, rfc3966, standardize, wrapper |
-| # releases         | 27 |
-| # dependents       | 207 |
-| # downloads        | 13786267 |
-| # stars            | 29 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 4122977.6666666665 |
+| # stars            | 1200.0 |
 
 ## Links
 - [Homepage](https://ruimarinho.github.io/google-libphonenumber/)

@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access the current active selection in the active sheet. A selection is the set of cells the user
@@ -27,30 +27,41 @@ import scala.scalajs.js.annotation._
   *     }
   *     Logger.log('Active Sheet: ' + selection.getActiveSheet().getName());
   */
-trait Selection extends js.Object {
+trait Selection extends StObject {
+  
   def getActiveRange(): Range | Null
+  
   def getActiveRangeList(): RangeList | Null
+  
   def getActiveSheet(): Sheet
+  
   def getCurrentCell(): Range | Null
+  
   def getNextDataRange(direction: Direction): Range | Null
 }
-
 object Selection {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getActiveRange: CallbackTo[Range | Null],
     getActiveRangeList: CallbackTo[RangeList | Null],
     getActiveSheet: CallbackTo[Sheet],
     getCurrentCell: CallbackTo[Range | Null],
-    getNextDataRange: Direction => CallbackTo[Range | Null]
+    getNextDataRange: Direction => Range | Null
   ): Selection = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getActiveRange")(getActiveRange.toJsFn)
-    __obj.updateDynamic("getActiveRangeList")(getActiveRangeList.toJsFn)
-    __obj.updateDynamic("getActiveSheet")(getActiveSheet.toJsFn)
-    __obj.updateDynamic("getCurrentCell")(getCurrentCell.toJsFn)
-    __obj.updateDynamic("getNextDataRange")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.Direction) => getNextDataRange(t0).runNow()))
+    val __obj = js.Dynamic.literal(getActiveRange = getActiveRange.toJsFn, getActiveRangeList = getActiveRangeList.toJsFn, getActiveSheet = getActiveSheet.toJsFn, getCurrentCell = getCurrentCell.toJsFn, getNextDataRange = js.Any.fromFunction1(getNextDataRange))
     __obj.asInstanceOf[Selection]
   }
+  
+  extension [Self <: Selection](x: Self) {
+    
+    inline def setGetActiveRange(value: CallbackTo[Range | Null]): Self = StObject.set(x, "getActiveRange", value.toJsFn)
+    
+    inline def setGetActiveRangeList(value: CallbackTo[RangeList | Null]): Self = StObject.set(x, "getActiveRangeList", value.toJsFn)
+    
+    inline def setGetActiveSheet(value: CallbackTo[Sheet]): Self = StObject.set(x, "getActiveSheet", value.toJsFn)
+    
+    inline def setGetCurrentCell(value: CallbackTo[Range | Null]): Self = StObject.set(x, "getCurrentCell", value.toJsFn)
+    
+    inline def setGetNextDataRange(value: Direction => Range | Null): Self = StObject.set(x, "getNextDataRange", js.Any.fromFunction1(value))
+  }
 }
-

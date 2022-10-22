@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockToolsGuiDefinitionsSimpleShapesLabelOptions extends js.Object {
+trait StockToolsGuiDefinitionsSimpleShapesLabelOptions extends StObject {
+  
   /**
     * (Highstock) A predefined background symbol for the button.
     */
   var symbol: js.UndefOr[String] = js.undefined
 }
-
 object StockToolsGuiDefinitionsSimpleShapesLabelOptions {
-  @scala.inline
-  def apply(symbol: String = null): StockToolsGuiDefinitionsSimpleShapesLabelOptions = {
+  
+  inline def apply(): StockToolsGuiDefinitionsSimpleShapesLabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesLabelOptions]
   }
+  
+  extension [Self <: StockToolsGuiDefinitionsSimpleShapesLabelOptions](x: Self) {
+    
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+  }
 }
-

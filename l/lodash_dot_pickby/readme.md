@@ -10,10 +10,10 @@ The lodash method `_.pickBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pickby |
 | Keywords           | lodash-modularized, pickby |
-| # releases         | 0 |
-| # dependents       | 129 |
-| # downloads        | 16609481 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4245425.666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

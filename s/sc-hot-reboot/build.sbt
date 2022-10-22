@@ -1,30 +1,35 @@
 organization := "org.scalablytyped.japgolly"
 name := "sc-hot-reboot"
-version := "1.0-dt-20200205Z-a43265"
-scalaVersion := "2.13.1"
+version := "1.0-dt-20211202Z-09ccc3"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "async" % "3.0-dt-20200225Z-3508f7",
-  "org.scalablytyped.japgolly" %%% "async-iterable-stream" % "3.0-dt-20200205Z-21686c",
-  "org.scalablytyped.japgolly" %%% "chokidar" % "3.3.1-5b0ac8",
-  "org.scalablytyped.japgolly" %%% "consumable-stream" % "1.0-dt-20200205Z-f08d81",
-  "org.scalablytyped.japgolly" %%% "expirymanager" % "0.9-dt-20181130Z-4135d4",
-  "org.scalablytyped.japgolly" %%% "fleximap" % "0.9-dt-20181205Z-dcc977",
-  "org.scalablytyped.japgolly" %%% "jsonwebtoken" % "8.3-dt-20200228Z-32b0f3",
-  "org.scalablytyped.japgolly" %%% "ncom" % "1.0-dt-20200205Z-0f8a26",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "sc-auth" % "5.0-dt-20181130Z-4a5492",
-  "org.scalablytyped.japgolly" %%% "sc-broker" % "8.0-dt-20200205Z-df1f5b",
-  "org.scalablytyped.japgolly" %%% "sc-broker-cluster" % "9.0-dt-20200205Z-7a31cf",
-  "org.scalablytyped.japgolly" %%% "sc-channel" % "2.0-dt-20200205Z-00a747",
-  "org.scalablytyped.japgolly" %%% "socketcluster" % "14.0-dt-20200205Z-ab44e2",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "stream-demux" % "7.0-dt-20200205Z-e1d41d",
-  "org.scalablytyped.japgolly" %%% "writable-consumable-stream" % "1.1-dt-20200205Z-d1380c")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "ag-channel" % "5.0-dt-20220215Z-330f6f",
+  "org.scalablytyped.japgolly" %%% "ag-simple-broker" % "5.0-dt-20220215Z-65dc42",
+  "org.scalablytyped.japgolly" %%% "anymatch" % "3.1.2-1a8878",
+  "org.scalablytyped.japgolly" %%% "async" % "3.2-dt-20220706Z-a54de8",
+  "org.scalablytyped.japgolly" %%% "async-iterable-stream" % "3.0-dt-20211202Z-418fcb",
+  "org.scalablytyped.japgolly" %%% "async-stream-emitter" % "4.0-dt-20220215Z-7c96f4",
+  "org.scalablytyped.japgolly" %%% "chokidar" % "3.5.3-996cd7",
+  "org.scalablytyped.japgolly" %%% "consumable-stream" % "2.0-dt-20220215Z-eba991",
+  "org.scalablytyped.japgolly" %%% "expirymanager" % "0.9-dt-20211202Z-aec436",
+  "org.scalablytyped.japgolly" %%% "fleximap" % "0.9-dt-20211202Z-7d9bff",
+  "org.scalablytyped.japgolly" %%% "jsonwebtoken" % "8.5-dt-20220824Z-9a567d",
+  "org.scalablytyped.japgolly" %%% "ncom" % "1.0-dt-20211202Z-8b90d0",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "sc-auth" % "5.0-dt-20211202Z-4ab4e3",
+  "org.scalablytyped.japgolly" %%% "sc-broker" % "8.0-dt-20211202Z-894472",
+  "org.scalablytyped.japgolly" %%% "sc-broker-cluster" % "9.0-dt-20211202Z-9b583c",
+  "org.scalablytyped.japgolly" %%% "sc-channel" % "2.0-dt-20211202Z-e128fc",
+  "org.scalablytyped.japgolly" %%% "sc-errors" % "1.4-dt-20211202Z-6de8d8",
+  "org.scalablytyped.japgolly" %%% "socketcluster" % "14.0-dt-20211202Z-415e39",
+  "org.scalablytyped.japgolly" %%% "socketcluster-server" % "16.1-dt-20220215Z-68393a",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "stream-demux" % "8.0-dt-20220215Z-891644",
+  "org.scalablytyped.japgolly" %%% "writable-consumable-stream" % "2.0-dt-20220215Z-94a351",
+  "org.scalablytyped.japgolly" %%% "ws" % "8.5-dt-20220624Z-5c45c7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

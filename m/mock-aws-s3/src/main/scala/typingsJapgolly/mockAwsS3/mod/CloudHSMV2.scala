@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.cloudhsmv2Mod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsCloudhsmv2Mod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "CloudHSMV2")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudHSMV2 ()
+open class CloudHSMV2 ()
   extends typingsJapgolly.awsSdk.mod.CloudHSMV2 {
   def this(options: ClientConfiguration) = this()
 }
-

@@ -1,6 +1,6 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
-import typingsJapgolly.reactNativeChartsWrapper.AnonColors
+import typingsJapgolly.reactNativeChartsWrapper.anon.Colors
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.BOTTOM
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.CENTER
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.CIRCLE
@@ -16,76 +16,133 @@ import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SQUARE
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.VERTICAL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartLegend extends js.Object {
-  var custom: js.UndefOr[AnonColors] = js.undefined
+trait ChartLegend extends StObject {
+  
+  var custom: js.UndefOr[Colors] = js.undefined
+  
   var direction: js.UndefOr[LEFT_TO_RIGHT | RIGHT_TO_LEFT] = js.undefined
+  
   var drawInside: js.UndefOr[Boolean] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var fontFamily: js.UndefOr[String] = js.undefined
+  
   var fontStyle: js.UndefOr[Double] = js.undefined
+  
   var fontWeight: js.UndefOr[Double] = js.undefined
+  
   var form: js.UndefOr[NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE] = js.undefined
+  
   var formSize: js.UndefOr[Double] = js.undefined
+  
   var formToTextSpace: js.UndefOr[Double] = js.undefined
+  
   var horizontalAlignment: js.UndefOr[LEFT | CENTER | RIGHT] = js.undefined
+  
   var maxSizePercent: js.UndefOr[Double] = js.undefined
+  
   var orientation: js.UndefOr[HORIZONTAL | VERTICAL] = js.undefined
+  
   var textColor: js.UndefOr[Color] = js.undefined
+  
   var textSize: js.UndefOr[Double] = js.undefined
+  
   var verticalAlignment: js.UndefOr[TOP | CENTER | BOTTOM] = js.undefined
+  
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var xEntrySpace: js.UndefOr[Double] = js.undefined
+  
   var yEntrySpace: js.UndefOr[Double] = js.undefined
 }
-
 object ChartLegend {
-  @scala.inline
-  def apply(
-    custom: AnonColors = null,
-    direction: LEFT_TO_RIGHT | RIGHT_TO_LEFT = null,
-    drawInside: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontStyle: Int | Double = null,
-    fontWeight: Int | Double = null,
-    form: NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE = null,
-    formSize: Int | Double = null,
-    formToTextSpace: Int | Double = null,
-    horizontalAlignment: LEFT | CENTER | RIGHT = null,
-    maxSizePercent: Int | Double = null,
-    orientation: HORIZONTAL | VERTICAL = null,
-    textColor: Int | Double = null,
-    textSize: Int | Double = null,
-    verticalAlignment: TOP | CENTER | BOTTOM = null,
-    wordWrapEnabled: js.UndefOr[Boolean] = js.undefined,
-    xEntrySpace: Int | Double = null,
-    yEntrySpace: Int | Double = null
-  ): ChartLegend = {
+  
+  inline def apply(): ChartLegend = {
     val __obj = js.Dynamic.literal()
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawInside)) __obj.updateDynamic("drawInside")(drawInside.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (form != null) __obj.updateDynamic("form")(form.asInstanceOf[js.Any])
-    if (formSize != null) __obj.updateDynamic("formSize")(formSize.asInstanceOf[js.Any])
-    if (formToTextSpace != null) __obj.updateDynamic("formToTextSpace")(formToTextSpace.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (maxSizePercent != null) __obj.updateDynamic("maxSizePercent")(maxSizePercent.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
-    if (xEntrySpace != null) __obj.updateDynamic("xEntrySpace")(xEntrySpace.asInstanceOf[js.Any])
-    if (yEntrySpace != null) __obj.updateDynamic("yEntrySpace")(yEntrySpace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartLegend]
   }
+  
+  extension [Self <: ChartLegend](x: Self) {
+    
+    inline def setCustom(value: Colors): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDirection(value: LEFT_TO_RIGHT | RIGHT_TO_LEFT): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDrawInside(value: Boolean): Self = StObject.set(x, "drawInside", value.asInstanceOf[js.Any])
+    
+    inline def setDrawInsideUndefined: Self = StObject.set(x, "drawInside", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontStyle(value: Double): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setForm(value: NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    
+    inline def setFormSize(value: Double): Self = StObject.set(x, "formSize", value.asInstanceOf[js.Any])
+    
+    inline def setFormSizeUndefined: Self = StObject.set(x, "formSize", js.undefined)
+    
+    inline def setFormToTextSpace(value: Double): Self = StObject.set(x, "formToTextSpace", value.asInstanceOf[js.Any])
+    
+    inline def setFormToTextSpaceUndefined: Self = StObject.set(x, "formToTextSpace", js.undefined)
+    
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    
+    inline def setHorizontalAlignment(value: LEFT | CENTER | RIGHT): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setMaxSizePercent(value: Double): Self = StObject.set(x, "maxSizePercent", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSizePercentUndefined: Self = StObject.set(x, "maxSizePercent", js.undefined)
+    
+    inline def setOrientation(value: HORIZONTAL | VERTICAL): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    
+    inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+    
+    inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+    
+    inline def setVerticalAlignment(value: TOP | CENTER | BOTTOM): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
+    
+    inline def setXEntrySpace(value: Double): Self = StObject.set(x, "xEntrySpace", value.asInstanceOf[js.Any])
+    
+    inline def setXEntrySpaceUndefined: Self = StObject.set(x, "xEntrySpace", js.undefined)
+    
+    inline def setYEntrySpace(value: Double): Self = StObject.set(x, "yEntrySpace", value.asInstanceOf[js.Any])
+    
+    inline def setYEntrySpaceUndefined: Self = StObject.set(x, "yEntrySpace", js.undefined)
+  }
 }
-

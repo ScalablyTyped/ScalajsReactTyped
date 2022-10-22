@@ -2,14 +2,16 @@ package typingsJapgolly.expressPromiseRouter
 
 import typingsJapgolly.express.mod.Router
 import typingsJapgolly.express.mod.RouterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-promise-router", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(): Router = js.native
-  def default(options: RouterOptions): Router = js.native
+object mod {
+  
+  @JSImport("express-promise-router", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Router]
+  inline def default(options: RouterOptions): Router = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Router]
 }
-

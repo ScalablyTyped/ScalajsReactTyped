@@ -1,47 +1,43 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1024`
-import typingsJapgolly.mfiles.mfilesNumbers.`128`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`32`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`64`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1024`
+import typingsJapgolly.mfiles.mfilesInts.`128`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`32`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`64`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32`
-  - typingsJapgolly.mfiles.mfilesNumbers.`64`
-  - typingsJapgolly.mfiles.mfilesNumbers.`128`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1024`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`32`
+  - typingsJapgolly.mfiles.mfilesInts.`64`
+  - typingsJapgolly.mfiles.mfilesInts.`128`
+  - typingsJapgolly.mfiles.mfilesInts.`1024`
 */
-trait MFExportContentFlag extends js.Object
-
+trait MFExportContentFlag extends StObject
 object MFExportContentFlag {
-  @scala.inline
-  def ClearArchivalMarker: `8` = this.cast(8)
-  @scala.inline
-  def DestroyAfterExport: `4` = this.cast(4)
-  @scala.inline
-  def ExportInformationOnDestroyedData: `64` = this.cast(64)
-  @scala.inline
-  def IndicateDropouts: `1024` = this.cast(1024)
-  @scala.inline
-  def LatestVersionsOnly: `2` = this.cast(2)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def SaveFilesAlsoAsPDFA: `32` = this.cast(32)
-  @scala.inline
-  def UseMultipleContentPackages: `128` = this.cast(128)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ClearArchivalMarker: `8` = 8.asInstanceOf[`8`]
+  
+  inline def DestroyAfterExport: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ExportInformationOnDestroyedData: `64` = 64.asInstanceOf[`64`]
+  
+  inline def IndicateDropouts: `1024` = 1024.asInstanceOf[`1024`]
+  
+  inline def LatestVersionsOnly: `2` = 2.asInstanceOf[`2`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
+  
+  inline def SaveFilesAlsoAsPDFA: `32` = 32.asInstanceOf[`32`]
+  
+  inline def UseMultipleContentPackages: `128` = 128.asInstanceOf[`128`]
 }
-

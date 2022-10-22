@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-captcha
 
-Typings are for version 1.1
+Typings are for version 1.3
 
 ## Library description:
 Simple captcha component written in pure JavaScript with no dependencies based on canvas element
@@ -10,10 +10,10 @@ Simple captcha component written in pure JavaScript with no dependencies based o
 | ------------------ | :-------------: |
 | Full name          | js-captcha |
 | Keywords           | captcha, vanilla, simple, dependency-free, lightweight, javascript |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 592 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 308.0 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/robiveli/js-captcha#readme)

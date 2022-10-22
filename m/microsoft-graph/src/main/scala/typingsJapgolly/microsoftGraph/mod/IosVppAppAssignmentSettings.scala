@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosVppAppAssignmentSettings extends MobileAppAssignmentSettings {
+trait IosVppAppAssignmentSettings
+  extends StObject
+     with MobileAppAssignmentSettings {
+  
   // Whether or not to use device licensing.
   var useDeviceLicensing: js.UndefOr[Boolean] = js.undefined
+  
   // The VPN Configuration Id to apply for this app.
-  var vpnConfigurationId: js.UndefOr[String] = js.undefined
+  var vpnConfigurationId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object IosVppAppAssignmentSettings {
-  @scala.inline
-  def apply(useDeviceLicensing: js.UndefOr[Boolean] = js.undefined, vpnConfigurationId: String = null): IosVppAppAssignmentSettings = {
+  
+  inline def apply(): IosVppAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(useDeviceLicensing)) __obj.updateDynamic("useDeviceLicensing")(useDeviceLicensing.asInstanceOf[js.Any])
-    if (vpnConfigurationId != null) __obj.updateDynamic("vpnConfigurationId")(vpnConfigurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosVppAppAssignmentSettings]
   }
+  
+  extension [Self <: IosVppAppAssignmentSettings](x: Self) {
+    
+    inline def setUseDeviceLicensing(value: Boolean): Self = StObject.set(x, "useDeviceLicensing", value.asInstanceOf[js.Any])
+    
+    inline def setUseDeviceLicensingUndefined: Self = StObject.set(x, "useDeviceLicensing", js.undefined)
+    
+    inline def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
+    
+    inline def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
+    
+    inline def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
+  }
 }
-

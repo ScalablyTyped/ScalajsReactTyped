@@ -1,64 +1,64 @@
 package typingsJapgolly.ws
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wsStrings {
-  @js.native
-  sealed trait close extends js.Object
   
   @js.native
-  sealed trait connection extends js.Object
+  sealed trait arraybuffer extends StObject
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait headers extends js.Object
+  sealed trait connection extends StObject
+  inline def connection: connection = "connection".asInstanceOf[connection]
   
   @js.native
-  sealed trait listening extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait fragments extends StObject
+  inline def fragments: fragments = "fragments".asInstanceOf[fragments]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait headers extends StObject
+  inline def headers: headers = "headers".asInstanceOf[headers]
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait listening extends StObject
+  inline def listening: listening = "listening".asInstanceOf[listening]
   
   @js.native
-  sealed trait pong extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait `unexpected-response` extends js.Object
+  sealed trait nodebuffer extends StObject
+  inline def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
   
   @js.native
-  sealed trait upgrade extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def headers: headers = "headers".asInstanceOf[headers]
-  @scala.inline
-  def listening: listening = "listening".asInstanceOf[listening]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def ping: ping = "ping".asInstanceOf[ping]
-  @scala.inline
-  def pong: pong = "pong".asInstanceOf[pong]
-  @scala.inline
-  def `unexpected-response`: `unexpected-response` = "unexpected-response".asInstanceOf[`unexpected-response`]
-  @scala.inline
-  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
+  @js.native
+  sealed trait ping extends StObject
+  inline def ping: ping = "ping".asInstanceOf[ping]
+  
+  @js.native
+  sealed trait pong extends StObject
+  inline def pong: pong = "pong".asInstanceOf[pong]
+  
+  @js.native
+  sealed trait `unexpected-response` extends StObject
+  inline def `unexpected-response`: `unexpected-response` = "unexpected-response".asInstanceOf[`unexpected-response`]
+  
+  @js.native
+  sealed trait upgrade extends StObject
+  inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
 }
-

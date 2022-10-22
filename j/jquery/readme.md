@@ -1,7 +1,7 @@
 
 # Scala.js typings for jquery
 
-Typings are for version 3.3
+Typings are for version 3.5
 
 ## Library description:
 JavaScript library for DOM operations
@@ -10,10 +10,10 @@ JavaScript library for DOM operations
 | ------------------ | :-------------: |
 | Full name          | jquery |
 | Keywords           | jquery, javascript, browser, library |
-| # releases         | 5 |
-| # dependents       | 11520 |
-| # downloads        | 142893198 |
-| # stars            | 365 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1782882333333332E7 |
+| # stars            | 56622.0 |
 
 ## Links
 - [Homepage](https://jquery.com)

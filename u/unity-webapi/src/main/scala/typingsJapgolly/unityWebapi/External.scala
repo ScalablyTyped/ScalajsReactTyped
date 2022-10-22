@@ -1,20 +1,22 @@
 package typingsJapgolly.unityWebapi
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait External extends js.Object {
+trait External extends StObject {
+  
   def getUnityObject(version: Double): Unity
 }
-
 object External {
-  @scala.inline
-  def apply(getUnityObject: Double => CallbackTo[Unity]): External = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getUnityObject")(js.Any.fromFunction1((t0: scala.Double) => getUnityObject(t0).runNow()))
+  
+  inline def apply(getUnityObject: Double => Unity): External = {
+    val __obj = js.Dynamic.literal(getUnityObject = js.Any.fromFunction1(getUnityObject))
     __obj.asInstanceOf[External]
   }
+  
+  extension [Self <: External](x: Self) {
+    
+    inline def setGetUnityObject(value: Double => Unity): Self = StObject.set(x, "getUnityObject", js.Any.fromFunction1(value))
+  }
 }
-

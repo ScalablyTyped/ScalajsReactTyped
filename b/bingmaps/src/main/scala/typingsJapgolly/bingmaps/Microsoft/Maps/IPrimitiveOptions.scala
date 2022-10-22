@@ -1,23 +1,32 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPrimitiveOptions extends js.Object {
+trait IPrimitiveOptions extends StObject {
+  
   /** The css cursor to show when the IPrimitive has mouse events on it. Default value is pointer (hand). */
   var cursor: js.UndefOr[String] = js.undefined
+  
   /** Boolean indicating whether the IPrimitive is visible. */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object IPrimitiveOptions {
-  @scala.inline
-  def apply(cursor: String = null, visible: js.UndefOr[Boolean] = js.undefined): IPrimitiveOptions = {
+  
+  inline def apply(): IPrimitiveOptions = {
     val __obj = js.Dynamic.literal()
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPrimitiveOptions]
   }
+  
+  extension [Self <: IPrimitiveOptions](x: Self) {
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

@@ -1,25 +1,20 @@
 package typingsJapgolly.puppeteer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Touchscreen extends js.Object {
+@JSImport("puppeteer", "Touchscreen")
+@js.native
+open class Touchscreen () extends StObject {
+  
+  /* private */ var `private`: Any = js.native
+  
+  /* Excluded from this release type: __constructor */
   /**
-    * Dispatches a touchstart and touchend event.
-    * @param x The x position.
-    * @param y The y position.
+    * Dispatches a `touchstart` and `touchend` event.
+    * @param x - Horizontal position of the tap.
+    * @param y - Vertical position of the tap.
     */
-  def tap(x: Double, y: Double): js.Promise[Unit]
+  def tap(x: Double, y: Double): js.Promise[Unit] = js.native
 }
-
-object Touchscreen {
-  @scala.inline
-  def apply(tap: (Double, Double) => CallbackTo[js.Promise[Unit]]): Touchscreen = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tap")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => tap(t0, t1).runNow()))
-    __obj.asInstanceOf[Touchscreen]
-  }
-}
-

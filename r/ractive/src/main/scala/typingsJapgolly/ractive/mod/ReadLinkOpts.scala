@@ -1,20 +1,25 @@
 package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadLinkOpts extends js.Object {
+trait ReadLinkOpts extends StObject {
+  
   /** Whether or not to follow through any upstream links when resolving the source. */
   var canonical: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReadLinkOpts {
-  @scala.inline
-  def apply(canonical: js.UndefOr[Boolean] = js.undefined): ReadLinkOpts = {
+  
+  inline def apply(): ReadLinkOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canonical)) __obj.updateDynamic("canonical")(canonical.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadLinkOpts]
   }
+  
+  extension [Self <: ReadLinkOpts](x: Self) {
+    
+    inline def setCanonical(value: Boolean): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
+    
+    inline def setCanonicalUndefined: Self = StObject.set(x, "canonical", js.undefined)
+  }
 }
-

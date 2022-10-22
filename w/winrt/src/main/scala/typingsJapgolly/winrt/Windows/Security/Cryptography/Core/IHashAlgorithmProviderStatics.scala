@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHashAlgorithmProviderStatics extends js.Object {
+trait IHashAlgorithmProviderStatics extends StObject {
+  
   def openAlgorithm(algorithm: String): HashAlgorithmProvider
 }
-
 object IHashAlgorithmProviderStatics {
-  @scala.inline
-  def apply(openAlgorithm: String => CallbackTo[HashAlgorithmProvider]): IHashAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openAlgorithm")(js.Any.fromFunction1((t0: java.lang.String) => openAlgorithm(t0).runNow()))
+  
+  inline def apply(openAlgorithm: String => HashAlgorithmProvider): IHashAlgorithmProviderStatics = {
+    val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
     __obj.asInstanceOf[IHashAlgorithmProviderStatics]
   }
+  
+  extension [Self <: IHashAlgorithmProviderStatics](x: Self) {
+    
+    inline def setOpenAlgorithm(value: String => HashAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
+  }
 }
-

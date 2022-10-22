@@ -1,19 +1,16 @@
 package typingsJapgolly.bingmaps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bingmapsStrings {
-  @js.native
-  sealed trait meters extends js.Object
   
   @js.native
-  sealed trait pixel extends js.Object
+  sealed trait meters extends StObject
+  inline def meters: meters = "meters".asInstanceOf[meters]
   
-  @scala.inline
-  def meters: meters = "meters".asInstanceOf[meters]
-  @scala.inline
-  def pixel: pixel = "pixel".asInstanceOf[pixel]
+  @js.native
+  sealed trait pixel extends StObject
+  inline def pixel: pixel = "pixel".asInstanceOf[pixel]
 }
-

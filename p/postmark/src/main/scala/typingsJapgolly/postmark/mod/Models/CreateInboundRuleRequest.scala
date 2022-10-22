@@ -1,13 +1,12 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.CreateInboundRuleRequest")
 @js.native
-class CreateInboundRuleRequest protected ()
-  extends typingsJapgolly.postmark.modelsMod.CreateInboundRuleRequest {
+open class CreateInboundRuleRequest protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.CreateInboundRuleRequest {
   def this(Rule: String) = this()
 }
-

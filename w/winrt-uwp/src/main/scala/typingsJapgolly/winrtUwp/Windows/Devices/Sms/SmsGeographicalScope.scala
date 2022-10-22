@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsGeographicalScope extends js.Object
-
+sealed trait SmsGeographicalScope extends StObject
 /** Values that describe the geographical scope of a cell broadcast message. */
 @JSGlobal("Windows.Devices.Sms.SmsGeographicalScope")
 @js.native
-object SmsGeographicalScope extends js.Object {
+object SmsGeographicalScope extends StObject {
+  
   /** Scope is a single cell tower. */
   @js.native
-  sealed trait cell extends SmsGeographicalScope
+  sealed trait cell
+    extends StObject
+       with SmsGeographicalScope
   
   /** Scope is a single cell tower, with immediate display. */
   @js.native
-  sealed trait cellWithImmediateDisplay extends SmsGeographicalScope
+  sealed trait cellWithImmediateDisplay
+    extends StObject
+       with SmsGeographicalScope
   
   /** Scope is a Location Area. */
   @js.native
-  sealed trait locationArea extends SmsGeographicalScope
+  sealed trait locationArea
+    extends StObject
+       with SmsGeographicalScope
   
   /** An undefined or unknown geographical scope. */
   @js.native
-  sealed trait none extends SmsGeographicalScope
+  sealed trait none
+    extends StObject
+       with SmsGeographicalScope
   
   /** Scope is the entire Public Land Mobile Network (PLMN). */
   @js.native
-  sealed trait plmn extends SmsGeographicalScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsGeographicalScope with Double] = js.native
-  /* 4 */ @js.native
-  object cell extends TopLevel[cell with Double]
-  
-  /* 1 */ @js.native
-  object cellWithImmediateDisplay extends TopLevel[cellWithImmediateDisplay with Double]
-  
-  /* 2 */ @js.native
-  object locationArea extends TopLevel[locationArea with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object plmn extends TopLevel[plmn with Double]
-  
+  sealed trait plmn
+    extends StObject
+       with SmsGeographicalScope
 }
-

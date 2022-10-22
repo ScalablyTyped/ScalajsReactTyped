@@ -1,47 +1,56 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CatCommonParams extends GenericParams {
+trait CatCommonParams
+  extends StObject
+     with GenericParams {
+  
   var format: String
+  
   var h: js.UndefOr[NameList] = js.undefined
+  
   var help: js.UndefOr[Boolean] = js.undefined
+  
   var local: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var v: js.UndefOr[Boolean] = js.undefined
 }
-
 object CatCommonParams {
-  @scala.inline
-  def apply(
-    format: String,
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    h: NameList = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatCommonParams = {
+  
+  inline def apply(format: String): CatCommonParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatCommonParams]
   }
+  
+  extension [Self <: CatCommonParams](x: Self) {
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value*))
+    
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+  }
 }
-

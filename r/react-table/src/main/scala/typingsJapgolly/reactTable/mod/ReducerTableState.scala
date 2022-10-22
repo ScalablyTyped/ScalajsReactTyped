@@ -1,18 +1,17 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in string ]: any} */ trait ReducerTableState[D /* <: js.Object */] extends TableState[D]
-
+- Dropped {[ P in string ]: any} */ trait ReducerTableState[D /* <: js.Object */]
+  extends StObject
+     with TableState[D]
 object ReducerTableState {
-  @scala.inline
-  def apply[D /* <: js.Object */](hiddenColumns: js.Array[IdType[D]] = null): ReducerTableState[D] = {
+  
+  inline def apply[D /* <: js.Object */](): ReducerTableState[D] = {
     val __obj = js.Dynamic.literal()
-    if (hiddenColumns != null) __obj.updateDynamic("hiddenColumns")(hiddenColumns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReducerTableState[D]]
   }
 }
-

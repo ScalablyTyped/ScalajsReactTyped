@@ -1,26 +1,39 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtensionSchemaProperty extends js.Object {
+trait ExtensionSchemaProperty extends StObject {
+  
   // The name of the strongly-typed property defined as part of a schema extension.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The type of the property that is defined as part of a schema extension. Allowed values are Binary, Boolean, DateTime,
     * Integer or String. See the table below for more details.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ExtensionSchemaProperty {
-  @scala.inline
-  def apply(name: String = null, `type`: String = null): ExtensionSchemaProperty = {
+  
+  inline def apply(): ExtensionSchemaProperty = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionSchemaProperty]
   }
+  
+  extension [Self <: ExtensionSchemaProperty](x: Self) {
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

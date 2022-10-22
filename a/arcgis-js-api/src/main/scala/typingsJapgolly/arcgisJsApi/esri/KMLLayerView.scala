@@ -1,29 +1,35 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KMLLayerView extends LayerView {
+trait KMLLayerView
+  extends StObject
+     with LayerView {
+  
   /**
     * A collection of all the [MapImages](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#MapImage) from visible sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisibleMapImages)
     */
   val allVisibleMapImages: Collection[KMLLayerViewMapImage] = js.native
+  
   /**
     * A collection of all the points from visible sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePoints)
     */
   val allVisiblePoints: Collection[Point] = js.native
+  
   /**
     * A collection of all the polygons from visible sublayers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-KMLLayerView.html#allVisiblePolygons)
     */
   val allVisiblePolygons: Collection[Polygon] = js.native
+  
   /**
     * A collection of all the polylines from visible sublayers.
     *
@@ -31,4 +37,3 @@ trait KMLLayerView extends LayerView {
     */
   val allVisiblePolylines: Collection[Polyline] = js.native
 }
-

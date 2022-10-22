@@ -1,22 +1,34 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPlayToConnection extends js.Object {
-  var onerror: js.Any
-  var onstatechanged: js.Any
-  var ontransferred: js.Any
+trait IPlayToConnection extends StObject {
+  
+  var onerror: Any
+  
+  var onstatechanged: Any
+  
+  var ontransferred: Any
+  
   var state: PlayToConnectionState
 }
-
 object IPlayToConnection {
-  @scala.inline
-  def apply(onerror: js.Any, onstatechanged: js.Any, ontransferred: js.Any, state: PlayToConnectionState): IPlayToConnection = {
-    val __obj = js.Dynamic.literal(onerror = onerror.asInstanceOf[js.Any], onstatechanged = onstatechanged.asInstanceOf[js.Any], ontransferred = ontransferred.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
   
+  inline def apply(onerror: Any, onstatechanged: Any, ontransferred: Any, state: PlayToConnectionState): IPlayToConnection = {
+    val __obj = js.Dynamic.literal(onerror = onerror.asInstanceOf[js.Any], onstatechanged = onstatechanged.asInstanceOf[js.Any], ontransferred = ontransferred.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlayToConnection]
   }
+  
+  extension [Self <: IPlayToConnection](x: Self) {
+    
+    inline def setOnerror(value: Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
+    
+    inline def setOnstatechanged(value: Any): Self = StObject.set(x, "onstatechanged", value.asInstanceOf[js.Any])
+    
+    inline def setOntransferred(value: Any): Self = StObject.set(x, "ontransferred", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: PlayToConnectionState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+  }
 }
-

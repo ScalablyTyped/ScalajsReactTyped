@@ -11,9 +11,9 @@ Teddy Templating Engine
 | Full name          | teddy |
 | Keywords           | teddy.js, node.js, teddy, template, view |
 | # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 20413 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 788.6666666666666 |
+| # stars            | 165.0 |
 
 ## Links
 - [Homepage](https://github.com/rooseveltframework/teddy)

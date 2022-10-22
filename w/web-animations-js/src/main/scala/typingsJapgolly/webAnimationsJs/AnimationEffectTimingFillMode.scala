@@ -1,8 +1,8 @@
 package typingsJapgolly.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.none
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.both
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.auto
 */
-trait AnimationEffectTimingFillMode extends js.Object
-
+trait AnimationEffectTimingFillMode extends StObject
 object AnimationEffectTimingFillMode {
-  @scala.inline
-  def auto: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.auto = this.cast("auto")
-  @scala.inline
-  def backwards: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.backwards = this.cast("backwards")
-  @scala.inline
-  def both: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.both = this.cast("both")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def forwards: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.forwards = this.cast("forwards")
-  @scala.inline
-  def none: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.none = this.cast("none")
+  
+  inline def auto: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.auto = "auto".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.auto]
+  
+  inline def backwards: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.backwards = "backwards".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.backwards]
+  
+  inline def both: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.both = "both".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.both]
+  
+  inline def forwards: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.forwards = "forwards".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.forwards]
+  
+  inline def none: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.none = "none".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.none]
 }
-

@@ -1,41 +1,45 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartParentLabelStrategy extends js.Object
-
+sealed trait ChartParentLabelStrategy extends StObject
 /**
-  *
   * Represents the parent label strategy of the chart series layout. This only applies to treemap charts
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartParentLabelStrategy")
 @js.native
-object ChartParentLabelStrategy extends js.Object {
+object ChartParentLabelStrategy extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait banner extends ChartParentLabelStrategy
+  sealed trait banner
+    extends StObject
+       with ChartParentLabelStrategy
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait none extends ChartParentLabelStrategy
+  sealed trait none
+    extends StObject
+       with ChartParentLabelStrategy
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait overlapping extends ChartParentLabelStrategy
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartParentLabelStrategy with String] = js.native
-  /* "Banner" */ @js.native
-  object banner extends TopLevel[banner with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Overlapping" */ @js.native
-  object overlapping extends TopLevel[overlapping with String]
-  
+  sealed trait overlapping
+    extends StObject
+       with ChartParentLabelStrategy
 }
-

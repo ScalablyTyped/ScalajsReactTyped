@@ -1,56 +1,40 @@
 package typingsJapgolly.reactScrollRotate.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactScrollRotate.mod.ScrollRotateProps
-import typingsJapgolly.reactScrollRotate.reactScrollRotateStrings.prec
+import typingsJapgolly.reactScrollRotate.reactScrollRotateStrings.perc
 import typingsJapgolly.reactScrollRotate.reactScrollRotateStrings.px
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScrollRotate {
-  def apply(
-    animationDuration: Int | Double = null,
-    from: Int | Double = null,
-    loops: Int | Double = null,
-    method: px | prec = null,
-    target: String = null,
-    throttle: Int | Double = null,
-    to: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ScrollRotateProps, 
-    typingsJapgolly.reactScrollRotate.mod.ScrollRotate, 
-    Unit, 
-    ScrollRotateProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (loops != null) __obj.updateDynamic("loops")(loops.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactScrollRotate.mod.ScrollRotateProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactScrollRotate.mod.ScrollRotate](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactScrollRotate.mod.ScrollRotateProps])(children: _*)
-  }
   @JSImport("react-scroll-rotate", "ScrollRotate")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactScrollRotate.mod.ScrollRotate] {
+    
+    inline def animationDuration(value: Double): this.type = set("animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def from(value: Double): this.type = set("from", value.asInstanceOf[js.Any])
+    
+    inline def loops(value: Double): this.type = set("loops", value.asInstanceOf[js.Any])
+    
+    inline def method(value: px | perc): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def throttle(value: Double): this.type = set("throttle", value.asInstanceOf[js.Any])
+    
+    inline def to(value: Double): this.type = set("to", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ScrollRotate.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ScrollRotateProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 颜色。可以用以下几种方式来表示 canvas 中使用的颜色：
   *
@@ -164,5 +164,4 @@ import scala.scalajs.js.annotation._
   * | WhiteSmoke           | #F5F5F5 |
   * | Yellow               | #FFFF00 |
   * | YellowGreen          | #9ACD32 | */
-trait Color extends js.Object
-
+trait Color extends StObject

@@ -10,10 +10,10 @@ The modern build of lodash’s `_.last` as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.last |
 | Keywords           | lodash, lodash-modularized, stdlib, util |
-| # releases         | 0 |
-| # dependents       | 94 |
-| # downloads        | 16168651 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1038655.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

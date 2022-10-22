@@ -18,128 +18,164 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Stealth
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Straight
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Triangle
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `line.toJSON()`. */
-trait LineData extends js.Object {
+trait LineData extends StObject {
+  
   /**
-    *
     * Represents the length of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
+  
   /**
-    *
     * Represents the style of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
+  
   /**
-    *
     * Represents the width of the arrowhead at the beginning of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
+  
   /**
+    * Represents the connection site to which the beginning of a connector is connected. Returns `null` when the beginning of the line is not attached to any shape.
     *
-    * Represents the connection site to which the beginning of a connector is connected. Read-only. Returns null when the beginning of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var beginConnectedSite: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the connector type for the line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectorType: js.UndefOr[ConnectorType | Straight | Elbow | Curve] = js.undefined
+  
   /**
-    *
     * Represents the length of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadLength: js.UndefOr[ArrowheadLength | Short | Medium | Long] = js.undefined
+  
   /**
-    *
     * Represents the style of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadStyle: js.UndefOr[ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open] = js.undefined
+  
   /**
-    *
     * Represents the width of the arrowhead at the end of the specified line.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endArrowheadWidth: js.UndefOr[ArrowheadWidth | Narrow | Medium | Wide] = js.undefined
+  
   /**
+    * Represents the connection site to which the end of a connector is connected. Returns `null` when the end of the line is not attached to any shape.
     *
-    * Represents the connection site to which the end of a connector is connected. Read-only. Returns null when the end of the line is not attached to any shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endConnectedSite: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the shape identifier.
     *
-    * Represents the shape identifier. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the beginning of the specified line is connected to a shape.
     *
-    * Specifies whether or not the beginning of the specified line is connected to a shape. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isBeginConnected: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the end of the specified line is connected to a shape.
     *
-    * Specifies whether or not the end of the specified line is connected to a shape. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isEndConnected: js.UndefOr[Boolean] = js.undefined
 }
-
 object LineData {
-  @scala.inline
-  def apply(
-    beginArrowheadLength: ArrowheadLength | Short | Medium | Long = null,
-    beginArrowheadStyle: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open = null,
-    beginArrowheadWidth: ArrowheadWidth | Narrow | Medium | Wide = null,
-    beginConnectedSite: Int | Double = null,
-    connectorType: ConnectorType | Straight | Elbow | Curve = null,
-    endArrowheadLength: ArrowheadLength | Short | Medium | Long = null,
-    endArrowheadStyle: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open = null,
-    endArrowheadWidth: ArrowheadWidth | Narrow | Medium | Wide = null,
-    endConnectedSite: Int | Double = null,
-    id: String = null,
-    isBeginConnected: js.UndefOr[Boolean] = js.undefined,
-    isEndConnected: js.UndefOr[Boolean] = js.undefined
-  ): LineData = {
+  
+  inline def apply(): LineData = {
     val __obj = js.Dynamic.literal()
-    if (beginArrowheadLength != null) __obj.updateDynamic("beginArrowheadLength")(beginArrowheadLength.asInstanceOf[js.Any])
-    if (beginArrowheadStyle != null) __obj.updateDynamic("beginArrowheadStyle")(beginArrowheadStyle.asInstanceOf[js.Any])
-    if (beginArrowheadWidth != null) __obj.updateDynamic("beginArrowheadWidth")(beginArrowheadWidth.asInstanceOf[js.Any])
-    if (beginConnectedSite != null) __obj.updateDynamic("beginConnectedSite")(beginConnectedSite.asInstanceOf[js.Any])
-    if (connectorType != null) __obj.updateDynamic("connectorType")(connectorType.asInstanceOf[js.Any])
-    if (endArrowheadLength != null) __obj.updateDynamic("endArrowheadLength")(endArrowheadLength.asInstanceOf[js.Any])
-    if (endArrowheadStyle != null) __obj.updateDynamic("endArrowheadStyle")(endArrowheadStyle.asInstanceOf[js.Any])
-    if (endArrowheadWidth != null) __obj.updateDynamic("endArrowheadWidth")(endArrowheadWidth.asInstanceOf[js.Any])
-    if (endConnectedSite != null) __obj.updateDynamic("endConnectedSite")(endConnectedSite.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBeginConnected)) __obj.updateDynamic("isBeginConnected")(isBeginConnected.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEndConnected)) __obj.updateDynamic("isEndConnected")(isEndConnected.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineData]
   }
+  
+  extension [Self <: LineData](x: Self) {
+    
+    inline def setBeginArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "beginArrowheadLength", value.asInstanceOf[js.Any])
+    
+    inline def setBeginArrowheadLengthUndefined: Self = StObject.set(x, "beginArrowheadLength", js.undefined)
+    
+    inline def setBeginArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "beginArrowheadStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBeginArrowheadStyleUndefined: Self = StObject.set(x, "beginArrowheadStyle", js.undefined)
+    
+    inline def setBeginArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "beginArrowheadWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBeginArrowheadWidthUndefined: Self = StObject.set(x, "beginArrowheadWidth", js.undefined)
+    
+    inline def setBeginConnectedSite(value: Double): Self = StObject.set(x, "beginConnectedSite", value.asInstanceOf[js.Any])
+    
+    inline def setBeginConnectedSiteUndefined: Self = StObject.set(x, "beginConnectedSite", js.undefined)
+    
+    inline def setConnectorType(value: ConnectorType | Straight | Elbow | Curve): Self = StObject.set(x, "connectorType", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorTypeUndefined: Self = StObject.set(x, "connectorType", js.undefined)
+    
+    inline def setEndArrowheadLength(value: ArrowheadLength | Short | Medium | Long): Self = StObject.set(x, "endArrowheadLength", value.asInstanceOf[js.Any])
+    
+    inline def setEndArrowheadLengthUndefined: Self = StObject.set(x, "endArrowheadLength", js.undefined)
+    
+    inline def setEndArrowheadStyle(value: ArrowheadStyle | None | Triangle | Stealth | Diamond | Oval | Open): Self = StObject.set(x, "endArrowheadStyle", value.asInstanceOf[js.Any])
+    
+    inline def setEndArrowheadStyleUndefined: Self = StObject.set(x, "endArrowheadStyle", js.undefined)
+    
+    inline def setEndArrowheadWidth(value: ArrowheadWidth | Narrow | Medium | Wide): Self = StObject.set(x, "endArrowheadWidth", value.asInstanceOf[js.Any])
+    
+    inline def setEndArrowheadWidthUndefined: Self = StObject.set(x, "endArrowheadWidth", js.undefined)
+    
+    inline def setEndConnectedSite(value: Double): Self = StObject.set(x, "endConnectedSite", value.asInstanceOf[js.Any])
+    
+    inline def setEndConnectedSiteUndefined: Self = StObject.set(x, "endConnectedSite", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIsBeginConnected(value: Boolean): Self = StObject.set(x, "isBeginConnected", value.asInstanceOf[js.Any])
+    
+    inline def setIsBeginConnectedUndefined: Self = StObject.set(x, "isBeginConnected", js.undefined)
+    
+    inline def setIsEndConnected(value: Boolean): Self = StObject.set(x, "isEndConnected", value.asInstanceOf[js.Any])
+    
+    inline def setIsEndConnectedUndefined: Self = StObject.set(x, "isEndConnected", js.undefined)
+  }
 }
-

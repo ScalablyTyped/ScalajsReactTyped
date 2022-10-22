@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownListFilteringEvent extends DropDownListEvent {
-  var filter: js.UndefOr[js.Any] = js.undefined
+trait DropDownListFilteringEvent
+  extends StObject
+     with DropDownListEvent {
+  
+  var filter: js.UndefOr[Any] = js.undefined
 }
-
 object DropDownListFilteringEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: DropDownList,
-    filter: js.Any = null
-  ): DropDownListFilteringEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: DropDownList): DropDownListFilteringEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownListFilteringEvent]
   }
+  
+  extension [Self <: DropDownListFilteringEvent](x: Self) {
+    
+    inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for mime
 
-Typings are for version 2.0
+Typings are for version 3.0
 
 ## Library description:
 A comprehensive library for mime-type mapping
@@ -10,15 +10,15 @@ A comprehensive library for mime-type mapping
 | ------------------ | :-------------: |
 | Full name          | mime |
 | Keywords           | util, mime |
-| # releases         | 13 |
-| # dependents       | 3952 |
-| # downloads        | 1043739230 |
-| # stars            | 133 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2.07457158E8 |
+| # stars            | 1837.0 |
 
 ## Links
-- [Homepage](https://github.com/broofa/node-mime#readme)
-- [Bugs](https://github.com/broofa/node-mime/issues)
-- [Repository](https://github.com/broofa/node-mime)
+- [Homepage](https://github.com/broofa/mime#readme)
+- [Bugs](https://github.com/broofa/mime/issues)
+- [Repository](https://github.com/broofa/mime)
 - [Npm](https://www.npmjs.com/package/mime)
     
 

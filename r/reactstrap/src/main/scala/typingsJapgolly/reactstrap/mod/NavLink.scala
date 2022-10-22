@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.navLinkMod.NavLinkProps
+import typingsJapgolly.reactstrap.typesLibNavLinkMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "NavLink")
 @js.native
-class NavLink[T] ()
-  extends Component[NavLinkProps, js.Object, js.Any]
-
+open class NavLink () extends default

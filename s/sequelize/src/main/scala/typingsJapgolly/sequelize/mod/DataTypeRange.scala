@@ -1,19 +1,21 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonSubtype
+import typingsJapgolly.sequelize.anon.Subtype
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeRange extends DataTypeAbstract {
+trait DataTypeRange
+  extends StObject
+     with DataTypeAbstract {
+  
   /**
     * Range field for Postgre
     *
     * Accepts subtype any of the ranges
     */
   def apply(): DataTypeRange = js.native
-  def apply(options: AnonSubtype): DataTypeRange = js.native
+  def apply(options: Subtype): DataTypeRange = js.native
   def apply(subtype: DataTypeAbstract): DataTypeRange = js.native
 }
-

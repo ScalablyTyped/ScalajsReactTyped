@@ -1,80 +1,100 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdStrings.error
 import typingsJapgolly.std.stdStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RTCDtlsTransport
-  extends EventTarget
-     with RTCTransport {
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  
+  /* standard dom */
+  def getRemoteCertificates(): js.Array[js.typedarray.ArrayBuffer] = js.native
+  
+  /* standard dom */
   val iceTransport: RTCIceTransport = js.native
-  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]) | Null = js.native
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
+  
+  /* standard dom */
+  var onerror: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_error(
+    `type`: error,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  
+  /* standard dom */
   val state: RTCDtlsTransportState = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
-  def getRemoteCertificates(): js.Array[scala.scalajs.js.typedarray.ArrayBuffer] = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_error(
-    `type`: error,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ RTCErrorEvent, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
 }
-
-@JSGlobal("RTCDtlsTransport")
-@js.native
-object RTCDtlsTransport extends Instantiable0[RTCDtlsTransport]
-

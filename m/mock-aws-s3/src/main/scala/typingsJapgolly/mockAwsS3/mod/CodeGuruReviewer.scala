@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.codegurureviewerMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsCodegurureviewerMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "CodeGuruReviewer")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CodeGuruReviewer ()
+open class CodeGuruReviewer ()
   extends typingsJapgolly.awsSdk.mod.CodeGuruReviewer {
   def this(options: ClientConfiguration) = this()
 }
-

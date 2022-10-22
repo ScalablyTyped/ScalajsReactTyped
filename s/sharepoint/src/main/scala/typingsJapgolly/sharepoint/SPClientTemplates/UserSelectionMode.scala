@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserSelectionMode extends js.Object
-
+sealed trait UserSelectionMode extends StObject
 @JSGlobal("SPClientTemplates.UserSelectionMode")
 @js.native
-object UserSelectionMode extends js.Object {
-  @js.native
-  sealed trait PeopleAndGroups extends UserSelectionMode
+object UserSelectionMode extends StObject {
   
   @js.native
-  sealed trait PeopleOnly extends UserSelectionMode
+  sealed trait PeopleAndGroups
+    extends StObject
+       with UserSelectionMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserSelectionMode with Double] = js.native
-  /* 1 */ @js.native
-  object PeopleAndGroups extends TopLevel[PeopleAndGroups with Double]
-  
-  /* 0 */ @js.native
-  object PeopleOnly extends TopLevel[PeopleOnly with Double]
-  
+  @js.native
+  sealed trait PeopleOnly
+    extends StObject
+       with UserSelectionMode
 }
-

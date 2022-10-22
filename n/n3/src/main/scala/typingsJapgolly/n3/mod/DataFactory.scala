@@ -1,54 +1,62 @@
 package typingsJapgolly.n3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("n3", "DataFactory")
-@js.native
-object DataFactory extends js.Object {
-  def blankNode(): BlankNode = js.native
-  def blankNode(value: String): BlankNode = js.native
-  def defaultGraph(): DefaultGraph = js.native
-  def literal(value: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: String): Literal = js.native
-  def literal(value: String, languageOrDatatype: typingsJapgolly.rdfJs.mod.NamedNode): Literal = js.native
-  def literal(value: Double): Literal = js.native
-  def literal(value: Double, languageOrDatatype: String): Literal = js.native
-  def literal(value: Double, languageOrDatatype: typingsJapgolly.rdfJs.mod.NamedNode): Literal = js.native
-  def namedNode(value: String): NamedNode = js.native
-  def quad(
-    subject: typingsJapgolly.rdfJs.mod.QuadSubject,
-    predicate: typingsJapgolly.rdfJs.mod.QuadPredicate,
-    `object`: typingsJapgolly.rdfJs.mod.QuadObject
-  ): Quad = js.native
-  def quad(
-    subject: typingsJapgolly.rdfJs.mod.QuadSubject,
-    predicate: typingsJapgolly.rdfJs.mod.QuadPredicate,
-    `object`: typingsJapgolly.rdfJs.mod.QuadObject,
-    graph: typingsJapgolly.rdfJs.mod.QuadGraph
-  ): Quad = js.native
-  def quad[Q_In /* <: typingsJapgolly.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+object DataFactory {
+  
+  @JSImport("n3", "DataFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
+  inline def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
+  
+  inline def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
+  
+  inline def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+  inline def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  inline def literal(value: String, languageOrDatatype: typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  inline def literal(value: Double): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+  inline def literal(value: Double, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  inline def literal(value: Double, languageOrDatatype: typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+  
+  inline def namedNode[Iri /* <: String */](value: Iri): NamedNode[Iri] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[Iri]]
+  
+  inline def quad(
+    subject: typingsJapgolly.rdfjsTypes.dataModelMod.QuadSubject,
+    predicate: typingsJapgolly.rdfjsTypes.dataModelMod.QuadPredicate,
+    `object`: typingsJapgolly.rdfjsTypes.dataModelMod.QuadObject
+  ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  inline def quad(
+    subject: typingsJapgolly.rdfjsTypes.dataModelMod.QuadSubject,
+    predicate: typingsJapgolly.rdfjsTypes.dataModelMod.QuadPredicate,
+    `object`: typingsJapgolly.rdfjsTypes.dataModelMod.QuadObject,
+    graph: typingsJapgolly.rdfjsTypes.dataModelMod.QuadGraph
+  ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  inline def quad[Q_In /* <: typingsJapgolly.rdfjsTypes.dataModelMod.BaseQuad */, Q_Out /* <: BaseQuad */](
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
-  ): Q_Out = js.native
-  def quad[Q_In /* <: typingsJapgolly.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+  ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
+  inline def quad[Q_In /* <: typingsJapgolly.rdfjsTypes.dataModelMod.BaseQuad */, Q_Out /* <: BaseQuad */](
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any,
     graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['graph'] */ js.Any
-  ): Q_Out = js.native
-  def triple(
-    subject: typingsJapgolly.rdfJs.mod.QuadSubject,
-    predicate: typingsJapgolly.rdfJs.mod.QuadPredicate,
-    `object`: typingsJapgolly.rdfJs.mod.QuadObject
-  ): Quad = js.native
-  def triple[Q_In /* <: typingsJapgolly.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+  ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
+  
+  inline def triple(
+    subject: typingsJapgolly.rdfjsTypes.dataModelMod.QuadSubject,
+    predicate: typingsJapgolly.rdfjsTypes.dataModelMod.QuadPredicate,
+    `object`: typingsJapgolly.rdfjsTypes.dataModelMod.QuadObject
+  ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
+  inline def triple[Q_In /* <: typingsJapgolly.rdfjsTypes.dataModelMod.BaseQuad */, Q_Out /* <: BaseQuad */](
     subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
     predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
     `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
-  ): Q_Out = js.native
-  def variable(value: String): Variable = js.native
+  ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
+  
+  inline def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
 }
-

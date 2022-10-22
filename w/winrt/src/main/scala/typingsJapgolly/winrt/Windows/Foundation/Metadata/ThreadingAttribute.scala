@@ -1,12 +1,7 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.ThreadingAttribute")
-@js.native
-class ThreadingAttribute protected () extends js.Object {
-  def this(model: ThreadingModel) = this()
-}
-
+trait ThreadingAttribute extends StObject

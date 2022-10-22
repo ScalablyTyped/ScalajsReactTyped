@@ -3,9 +3,9 @@ package typingsJapgolly.openlayers.mod.source
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.RasterOperation
 import typingsJapgolly.openlayers.mod.olx.source.RasterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -19,7 +19,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Raster")
 @js.native
-class Raster protected () extends Image {
+open class Raster protected () extends Image {
   /**
     * @classdesc
     * A source that transforms data from any number of input sources using an array
@@ -31,6 +31,7 @@ class Raster protected () extends Image {
     * @api
     */
   def this(options: RasterOptions) = this()
+  
   /**
     * Set the operation.
     * @param operation New operation.
@@ -41,4 +42,3 @@ class Raster protected () extends Image {
   def setOperation(operation: RasterOperation): Unit = js.native
   def setOperation(operation: RasterOperation, opt_lib: GlobalObject): Unit = js.native
 }
-

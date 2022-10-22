@@ -1,37 +1,45 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.sharepoint.AnonBottom
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.sharepoint.anon.Bottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IEditControlCellContext extends IEditActorCellContext {
-  var cellHeight: Double
-   // TODO: Determine correct type
-  var cellRect: js.Any
-  var cellStyle: js.Any
-  var cellWidth: Double
+trait IEditControlCellContext
+  extends StObject
+     with IEditActorCellContext {
+  
   def Hide(element: HTMLElement): Unit
+  
   def NotifyEditComplete(): Unit
+  
   def NotifyExpandControl(): Unit
+  
   def Show(element: HTMLElement): Unit
+  
+  var cellHeight: Double
+  
+  // TODO: Determine correct type
+  var cellRect: Any
+  
+  var cellStyle: Any
+  
+  var cellWidth: Double
 }
-
 object IEditControlCellContext {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Hide: HTMLElement => Callback,
     NotifyEditComplete: Callback,
     NotifyExpandControl: Callback,
-    SetCurrentValue: js.Any => Callback,
+    SetCurrentValue: Any => Callback,
     Show: HTMLElement => Callback,
-    cellExpandSpace: AnonBottom,
+    cellExpandSpace: Bottom,
     cellHeight: Double,
-    cellRect: js.Any,
-    cellStyle: js.Any,
+    cellRect: Any,
+    cellStyle: Any,
     cellWidth: Double,
     column: ColumnInfo,
     field: GridField,
@@ -40,13 +48,26 @@ object IEditControlCellContext {
     propType: IPropertyType,
     record: IRecord
   ): IEditControlCellContext = {
-    val __obj = js.Dynamic.literal(cellExpandSpace = cellExpandSpace.asInstanceOf[js.Any], cellHeight = cellHeight.asInstanceOf[js.Any], cellRect = cellRect.asInstanceOf[js.Any], cellStyle = cellStyle.asInstanceOf[js.Any], cellWidth = cellWidth.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
-    __obj.updateDynamic("Hide")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.HTMLElement) => Hide(t0).runNow()))
-    __obj.updateDynamic("NotifyEditComplete")(NotifyEditComplete.toJsFn)
-    __obj.updateDynamic("NotifyExpandControl")(NotifyExpandControl.toJsFn)
-    __obj.updateDynamic("SetCurrentValue")(js.Any.fromFunction1((t0: js.Any) => SetCurrentValue(t0).runNow()))
-    __obj.updateDynamic("Show")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.HTMLElement) => Show(t0).runNow()))
+    val __obj = js.Dynamic.literal(Hide = js.Any.fromFunction1((t0: HTMLElement) => Hide(t0).runNow()), NotifyEditComplete = NotifyEditComplete.toJsFn, NotifyExpandControl = NotifyExpandControl.toJsFn, SetCurrentValue = js.Any.fromFunction1((t0: Any) => SetCurrentValue(t0).runNow()), Show = js.Any.fromFunction1((t0: HTMLElement) => Show(t0).runNow()), cellExpandSpace = cellExpandSpace.asInstanceOf[js.Any], cellHeight = cellHeight.asInstanceOf[js.Any], cellRect = cellRect.asInstanceOf[js.Any], cellStyle = cellStyle.asInstanceOf[js.Any], cellWidth = cellWidth.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditControlCellContext]
   }
+  
+  extension [Self <: IEditControlCellContext](x: Self) {
+    
+    inline def setCellHeight(value: Double): Self = StObject.set(x, "cellHeight", value.asInstanceOf[js.Any])
+    
+    inline def setCellRect(value: Any): Self = StObject.set(x, "cellRect", value.asInstanceOf[js.Any])
+    
+    inline def setCellStyle(value: Any): Self = StObject.set(x, "cellStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCellWidth(value: Double): Self = StObject.set(x, "cellWidth", value.asInstanceOf[js.Any])
+    
+    inline def setHide(value: HTMLElement => Callback): Self = StObject.set(x, "Hide", js.Any.fromFunction1((t0: HTMLElement) => value(t0).runNow()))
+    
+    inline def setNotifyEditComplete(value: Callback): Self = StObject.set(x, "NotifyEditComplete", value.toJsFn)
+    
+    inline def setNotifyExpandControl(value: Callback): Self = StObject.set(x, "NotifyExpandControl", value.toJsFn)
+    
+    inline def setShow(value: HTMLElement => Callback): Self = StObject.set(x, "Show", js.Any.fromFunction1((t0: HTMLElement) => value(t0).runNow()))
+  }
 }
-

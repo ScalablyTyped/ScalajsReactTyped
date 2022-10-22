@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetNotificationOptions extends js.Object {
+trait GetNotificationOptions extends StObject {
+  
+  /* standard dom */
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object GetNotificationOptions {
-  @scala.inline
-  def apply(tag: java.lang.String = null): GetNotificationOptions = {
+  
+  inline def apply(): GetNotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNotificationOptions]
   }
+  
+  extension [Self <: GetNotificationOptions](x: Self) {
+    
+    inline def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+  }
 }
-

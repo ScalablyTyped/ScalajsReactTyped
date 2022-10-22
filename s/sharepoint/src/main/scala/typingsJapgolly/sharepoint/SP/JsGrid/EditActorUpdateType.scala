@@ -1,31 +1,23 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditActorUpdateType extends js.Object
-
+sealed trait EditActorUpdateType extends StObject
 @JSGlobal("SP.JsGrid.EditActorUpdateType")
 @js.native
-object EditActorUpdateType extends js.Object {
-   // 0,
+object EditActorUpdateType extends StObject {
+  
   @js.native
-  sealed trait Committed extends EditActorUpdateType
+  sealed trait Committed
+    extends StObject
+       with EditActorUpdateType
   
-   // 1
+  // 0,
   @js.native
-  sealed trait Uncommitted extends EditActorUpdateType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditActorUpdateType with Double] = js.native
-  /* 0 */ @js.native
-  object Committed extends TopLevel[Committed with Double]
-  
-  /* 1 */ @js.native
-  object Uncommitted extends TopLevel[Uncommitted with Double]
-  
+  sealed trait Uncommitted
+    extends StObject
+       with EditActorUpdateType
 }
-

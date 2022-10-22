@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAxisTitleFormat object, for use in `chartAxisTitleFormat.set({ ... })`. */
-trait ChartAxisTitleFormatUpdateData extends js.Object {
+trait ChartAxisTitleFormatUpdateData extends StObject {
+  
   /**
+    * Specifies the chart axis title's border format, which includes color, linestyle, and weight.
     *
-    * Represents the border format, which includes color, linestyle, and weight.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var border: js.UndefOr[ChartBorderUpdateData] = js.undefined
+  
   /**
+    * Specifies the chart axis title's font attributes, such as font name, font size, or color, of the chart axis title object.
     *
-    * Represents the font attributes, such as font name, font size, color, etc. of chart axis title object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
 }
-
 object ChartAxisTitleFormatUpdateData {
-  @scala.inline
-  def apply(border: ChartBorderUpdateData = null, font: ChartFontUpdateData = null): ChartAxisTitleFormatUpdateData = {
+  
+  inline def apply(): ChartAxisTitleFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisTitleFormatUpdateData]
   }
+  
+  extension [Self <: ChartAxisTitleFormatUpdateData](x: Self) {
+    
+    inline def setBorder(value: ChartBorderUpdateData): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+  }
 }
-

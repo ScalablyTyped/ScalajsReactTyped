@@ -1,13 +1,17 @@
 package typingsJapgolly.winrt.Windows.UI.WebUI
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.ActivatedDeferral")
-@js.native
-class ActivatedDeferral () extends IActivatedDeferral {
-  /* CompleteClass */
-  override def complete(): Unit = js.native
+trait ActivatedDeferral
+  extends StObject
+     with IActivatedDeferral
+object ActivatedDeferral {
+  
+  inline def apply(complete: Callback): ActivatedDeferral = {
+    val __obj = js.Dynamic.literal(complete = complete.toJsFn)
+    __obj.asInstanceOf[ActivatedDeferral]
+  }
 }
-

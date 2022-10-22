@@ -1,0 +1,38 @@
+package typingsJapgolly.awsSdkClientKmsBrowser
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object typesDescribeKeyExceptionsUnionMod {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException
+    - typingsJapgolly.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException
+    - typingsJapgolly.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException
+    - typingsJapgolly.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException
+  */
+  trait DescribeKeyExceptionsUnion extends StObject
+  object DescribeKeyExceptionsUnion {
+    
+    inline def DependencyTimeoutException(): typingsJapgolly.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException = {
+      val __obj = js.Dynamic.literal(name = "DependencyTimeoutException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsBrowser.typesDependencyTimeoutExceptionMod.DependencyTimeoutException]
+    }
+    
+    inline def InvalidArnException(): typingsJapgolly.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArnException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsBrowser.typesInvalidArnExceptionMod.InvalidArnException]
+    }
+    
+    inline def KMSInternalException(): typingsJapgolly.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = "KMSInternalException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsBrowser.typesKmsinternalexceptionMod.KMSInternalException]
+    }
+    
+    inline def NotFoundException(): typingsJapgolly.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException = {
+      val __obj = js.Dynamic.literal(name = "NotFoundException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsBrowser.typesNotFoundExceptionMod.NotFoundException]
+    }
+  }
+}

@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotStochasticSmoothedLineOptions extends js.Object {
+trait PlotStochasticSmoothedLineOptions extends StObject {
+  
   /**
     * (Highstock) Styles for a smoothed line.
     */
   var styles: js.UndefOr[PlotStochasticSmoothedLineStylesOptions] = js.undefined
 }
-
 object PlotStochasticSmoothedLineOptions {
-  @scala.inline
-  def apply(styles: PlotStochasticSmoothedLineStylesOptions = null): PlotStochasticSmoothedLineOptions = {
+  
+  inline def apply(): PlotStochasticSmoothedLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotStochasticSmoothedLineOptions]
   }
+  
+  extension [Self <: PlotStochasticSmoothedLineOptions](x: Self) {
+    
+    inline def setStyles(value: PlotStochasticSmoothedLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+  }
 }
-

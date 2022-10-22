@@ -1,9 +1,9 @@
 package typingsJapgolly.orientjs.mod
 
-import typingsJapgolly.orientjs.AnonForce
+import typingsJapgolly.orientjs.anon.Force
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The class constructor.
@@ -11,15 +11,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("orientjs", "OClass")
 @js.native
-class OClass () extends js.Object {
-  var clusterIds: js.UndefOr[js.Array[Double]] = js.native
-  var db: js.UndefOr[ODB] = js.native
-  var defaultClusterId: js.UndefOr[js.Any] = js.native
-  var name: js.UndefOr[String] = js.native
-  var originalName: js.UndefOr[String] = js.native
-  var property: OClassProperty = js.native
-  var shortName: js.UndefOr[String] = js.native
-  var superClass: js.UndefOr[String] = js.native
+open class OClass () extends StObject {
+  
   /**
     * Cache the given class data for fast lookup later.
     *
@@ -27,6 +20,9 @@ class OClass () extends js.Object {
     * @return                The db instance.
     */
   def cacheData(classes: js.Array[OClass]): ODB = js.native
+  
+  var clusterIds: js.UndefOr[js.Array[Double]] = js.native
+  
   /**
     * Create a new class.
     *
@@ -42,6 +38,17 @@ class OClass () extends js.Object {
   def create(name: String, parentName: String, cluster: String): js.Promise[OClass] = js.native
   def create(name: String, parentName: String, cluster: String, isAbstract: Boolean): js.Promise[OClass] = js.native
   def create(name: String, parentName: String, cluster: String, isAbstract: Boolean, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: String, cluster: String, isAbstract: Unit, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: String, cluster: Unit, isAbstract: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: String, cluster: Unit, isAbstract: Boolean, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: String, cluster: Unit, isAbstract: Unit, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: String): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: String, isAbstract: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: String, isAbstract: Boolean, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: String, isAbstract: Unit, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: Unit, isAbstract: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: Unit, isAbstract: Boolean, ifnotexist: Boolean): js.Promise[OClass] = js.native
+  def create(name: String, parentName: Unit, cluster: Unit, isAbstract: Unit, ifnotexist: Boolean): js.Promise[OClass] = js.native
   /**
     * Create a record for this class.
     *
@@ -49,6 +56,11 @@ class OClass () extends js.Object {
     * @promise {Object}        The created record.
     */
   def create(record: ORecord): js.Promise[ORecord] = js.native
+  
+  var db: js.UndefOr[ODB] = js.native
+  
+  var defaultClusterId: js.UndefOr[Any] = js.native
+  
   /**
     * Delete a class.
     *
@@ -57,7 +69,8 @@ class OClass () extends js.Object {
     * @promise {Db}         The database instance.
     */
   def drop(name: String): js.Promise[ODB] = js.native
-  def drop(name: String, config: AnonForce): js.Promise[ODB] = js.native
+  def drop(name: String, config: Force): js.Promise[ODB] = js.native
+  
   /**
     * Find a list of records in the class.
     *
@@ -66,9 +79,11 @@ class OClass () extends js.Object {
     * @param  offset     The offset to start returning records from.
     * @promise {Object[]}          An array of records in the class.
     */
-  def find(attributes: js.Any): js.Promise[js.Array[ORecord]] = js.native
-  def find(attributes: js.Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
-  def find(attributes: js.Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Double, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  def find(attributes: Any, limit: Unit, offset: Double): js.Promise[js.Array[ORecord]] = js.native
+  
   /**
     * Get a class by name.
     *
@@ -78,8 +93,9 @@ class OClass () extends js.Object {
     */
   def get(name: String): js.Promise[OClass] = js.native
   def get(name: String, refresh: Boolean): js.Promise[OClass] = js.native
-  def list(limit: js.Any): js.Promise[js.Array[OClass]] = js.native
-  def list(limit: js.Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
+  
+  def list(limit: Any): js.Promise[js.Array[OClass]] = js.native
+  def list(limit: Any, offset: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Boolean, offset: Double): js.Promise[js.Array[OClass]] = js.native
   /**
@@ -94,12 +110,24 @@ class OClass () extends js.Object {
     */
   def list(limit: Double): js.Promise[js.Array[OClass]] = js.native
   def list(limit: Double, offset: Double): js.Promise[js.Array[OClass]] = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var originalName: js.UndefOr[String] = js.native
+  
+  var property: OClassProperty = js.native
+  
   /**
     * Reload the class instance.
     *
     * @promise {Class} The class instance.
     */
   def reload(): js.Promise[js.Array[OClass]] = js.native
+  
+  var shortName: js.UndefOr[String] = js.native
+  
+  var superClass: js.UndefOr[String] = js.native
+  
   /**
     * Update the given class.
     *
@@ -107,6 +135,5 @@ class OClass () extends js.Object {
     * @param   reload   Whether to reload the class, default to true.
     * @promise {Object}           The updated class.
     */
-  def update(cls: js.Any, reload: Boolean): js.Promise[OClass] = js.native
+  def update(cls: Any, reload: Boolean): js.Promise[OClass] = js.native
 }
-

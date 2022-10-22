@@ -1,39 +1,44 @@
 package typingsJapgolly.css.mod
 
-import typingsJapgolly.css.AnonContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Document
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
+  
   /** The part following @document. */
   var document: js.UndefOr[String] = js.undefined
+  
   /** Array of nodes with the types rule, comment and any of the at-rule types. */
   var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.undefined
+  
   /** The vendor prefix in @document, or undefined if there is none. */
   var vendor: js.UndefOr[String] = js.undefined
 }
-
 object Document {
-  @scala.inline
-  def apply(
-    document: String = null,
-    parent: Node = null,
-    position: AnonContent = null,
-    rules: js.Array[Rule | Comment | AtRule] = null,
-    `type`: String = null,
-    vendor: String = null
-  ): Document = {
+  
+  inline def apply(): Document = {
     val __obj = js.Dynamic.literal()
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (vendor != null) __obj.updateDynamic("vendor")(vendor.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
+  
+  extension [Self <: Document](x: Self) {
+    
+    inline def setDocument(value: String): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setRules(value: js.Array[Rule | Comment | AtRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    
+    inline def setRulesVarargs(value: (Rule | Comment | AtRule)*): Self = StObject.set(x, "rules", js.Array(value*))
+    
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+  }
 }
-

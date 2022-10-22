@@ -1,19 +1,21 @@
 package typingsJapgolly.parseJson
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("parse-json", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): js.Any = js.native
-  def apply(input: String): js.Any = js.native
-  def apply(input: String, filepath: String): js.Any = js.native
-  def apply(input: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
-  def apply(input: String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _], filepath: String): js.Any = js.native
-  def apply(input: Null, filepath: String): js.Any = js.native
-  def apply(input: Null, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
-  def apply(input: Null, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _], filepath: String): js.Any = js.native
+object mod {
+  
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  inline def apply(input: String): Any = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(input: String, filepath: String): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: String, reviver: js.Function2[/* key */ Any, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: String, reviver: js.Function2[/* key */ Any, /* value */ Any, Any], filepath: String): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Null, filepath: String): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Null, reviver: js.Function2[/* key */ Any, /* value */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(input: Null, reviver: js.Function2[/* key */ Any, /* value */ Any, Any], filepath: String): Any = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], filepath.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("parse-json", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

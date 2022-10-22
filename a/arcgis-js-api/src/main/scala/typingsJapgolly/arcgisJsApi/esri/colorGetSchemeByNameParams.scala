@@ -1,87 +1,112 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`centered-on`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.dark
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.extremes
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.light
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.mesh
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipatch
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorGetSchemeByNameParams extends Object {
+trait colorGetSchemeByNameParams
+  extends StObject
+     with Object {
+  
   /**
-    * The basemap to pair with the visualization. This value indicates the best symbol colors for visualizing features against the given basemap.
+    * The basemap to pair with the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
+  
   /**
-    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    * If you have a non-Esri basemap (e.g.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var basemapTheme: js.UndefOr[String] = js.undefined
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
+  
   /**
-    * The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](global.html#geometryType)
     */
-  var geometryType: String
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
+  
   /**
     * The name of the scheme to retrieve.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
   var name: String
+  
   /**
-    * The theme determines which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
+    * The theme determines which values will be emphasized in the continuous ramp and the map.
     *
-    * | Value | Description | Example |
-    * | ----- | ----------- | ------- |
-    * | high-to-low | High values are emphasized with strong colors. | ![high-to-low](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-high-to-low.png) |
-    * | above-and-below | Values centered around a given point (e.g. the average) are visualized with weak colors while other values are emphasized with strong colors. | ![above-and-below](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-above-and-below.png) |
-    * | centered-on | Values centered around a given point (e.g. the average) are emphasized with strong colors while other values are visualized with weak colors. | ![centered-on](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-centered-on.png) |
-    * | extremes | High and low values are emphasized with strong colors. All others are visualized with weak colors. | ![extremes](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-extremes.png) |
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
-  var theme: String
+  var theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
+  
   /**
-    * The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
+    * The SceneView instance in which the scheme will be used.
     *
     * [Read more...](global.html)
     */
   var view: js.UndefOr[SceneView] = js.undefined
+  
   /**
-    * Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
+    * Indicates if the size units of the scheme will be in meters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#getSchemeByName)
     */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
-
 object colorGetSchemeByNameParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    geometryType: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
+    hasOwnProperty: PropertyKey => Boolean,
     name: String,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    theme: String,
-    basemap: String | Basemap = null,
-    basemapTheme: String = null,
-    view: SceneView = null,
-    worldScale: js.UndefOr[Boolean] = js.undefined
+    propertyIsEnumerable: PropertyKey => Boolean,
+    theme: `high-to-low` | `above-and-below` | `centered-on` | extremes
   ): colorGetSchemeByNameParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), theme = theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorGetSchemeByNameParams]
   }
+  
+  extension [Self <: colorGetSchemeByNameParams](x: Self) {
+    
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+  }
 }
-

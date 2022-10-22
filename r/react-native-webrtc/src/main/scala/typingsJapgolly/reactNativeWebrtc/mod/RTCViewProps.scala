@@ -3,33 +3,47 @@ package typingsJapgolly.reactNativeWebrtc.mod
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.contain
 import typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.cover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCViewProps extends js.Object {
+trait RTCViewProps extends StObject {
+  
   var mirror: js.UndefOr[Boolean] = js.undefined
+  
   var objectFit: js.UndefOr[contain | cover] = js.undefined
+  
   var streamURL: String
+  
   var style: js.UndefOr[ViewStyle] = js.undefined
+  
   var zOrder: js.UndefOr[Double] = js.undefined
 }
-
 object RTCViewProps {
-  @scala.inline
-  def apply(
-    streamURL: String,
-    mirror: js.UndefOr[Boolean] = js.undefined,
-    objectFit: contain | cover = null,
-    style: ViewStyle = null,
-    zOrder: Int | Double = null
-  ): RTCViewProps = {
+  
+  inline def apply(streamURL: String): RTCViewProps = {
     val __obj = js.Dynamic.literal(streamURL = streamURL.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
-    if (objectFit != null) __obj.updateDynamic("objectFit")(objectFit.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (zOrder != null) __obj.updateDynamic("zOrder")(zOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCViewProps]
   }
+  
+  extension [Self <: RTCViewProps](x: Self) {
+    
+    inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    
+    inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    
+    inline def setObjectFit(value: contain | cover): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+    
+    inline def setObjectFitUndefined: Self = StObject.set(x, "objectFit", js.undefined)
+    
+    inline def setStreamURL(value: String): Self = StObject.set(x, "streamURL", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: ViewStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    
+    inline def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
+  }
 }
-

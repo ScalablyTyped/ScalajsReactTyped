@@ -1,14 +1,18 @@
 package typingsJapgolly.reactSketchapp.components
 
-import typingsJapgolly.reactSketchapp.textMod.default
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactSketchapp.libComponentsTextMod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Text extends SharedApply_TextProps227616877[default] {
-  @JSImport("react-sketchapp/lib/components/Svg/Text", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object Text {
   
+  @JSImport("react-sketchapp", "Text")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: Text.type): Default[typingsJapgolly.reactSketchapp.mod.Text] = new Default[typingsJapgolly.reactSketchapp.mod.Text](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Default[typingsJapgolly.reactSketchapp.mod.Text] = new Default[typingsJapgolly.reactSketchapp.mod.Text](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

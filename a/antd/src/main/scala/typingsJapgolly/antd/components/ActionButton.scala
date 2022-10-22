@@ -1,48 +1,44 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.actionButtonMod.ActionButtonProps
-import typingsJapgolly.antd.actionButtonMod.default
-import typingsJapgolly.antd.buttonButtonMod.ButtonType
-import typingsJapgolly.antd.buttonButtonMod.NativeButtonProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libButtonButtonMod.ButtonProps
+import typingsJapgolly.antd.libButtonButtonMod.LegacyButtonType
+import typingsJapgolly.antd.libUtilActionButtonMod.ActionButtonProps
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ActionButton {
-  def apply(
-    closeModal: js.Function,
-    actionFn: /* repeated */ js.Any => CallbackTo[js.Any | js.Thenable[js.Any]] = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    buttonProps: NativeButtonProps = null,
-    `type`: ButtonType = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ActionButtonProps, default, Unit, ActionButtonProps] = {
-    val __obj = js.Dynamic.literal(closeModal = closeModal.asInstanceOf[js.Any])
   
-      if (actionFn != null) __obj.updateDynamic("actionFn")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => actionFn(t0).runNow()))
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (buttonProps != null) __obj.updateDynamic("buttonProps")(buttonProps.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.actionButtonMod.ActionButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.actionButtonMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.actionButtonMod.ActionButtonProps])(children: _*)
+  inline def apply(prefixCls: String): Builder = {
+    val __props = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ActionButtonProps]))
   }
-  @JSImport("antd/lib/modal/ActionButton", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("antd/lib/_util/ActionButton", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def actionFn(value: /* repeated */ Any => Any | PromiseLike[Any]): this.type = set("actionFn", js.Any.fromFunction1(value))
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def buttonProps(value: ButtonProps): this.type = set("buttonProps", value.asInstanceOf[js.Any])
+    
+    inline def close(value: js.Function): this.type = set("close", value.asInstanceOf[js.Any])
+    
+    inline def emitEvent(value: Boolean): this.type = set("emitEvent", value.asInstanceOf[js.Any])
+    
+    inline def quitOnNullishReturnValue(value: Boolean): this.type = set("quitOnNullishReturnValue", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: LegacyButtonType): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ActionButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

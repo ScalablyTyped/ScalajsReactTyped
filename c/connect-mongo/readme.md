@@ -1,7 +1,7 @@
 
 # Scala.js typings for connect-mongo
 
-Typings are for version 3.2.0
+Typings are for version 4.6.0
 
 ## Library description:
 MongoDB session store for Express and Connect
@@ -10,10 +10,10 @@ MongoDB session store for Express and Connect
 | ------------------ | :-------------: |
 | Full name          | connect-mongo |
 | Keywords           | connect, mongo, mongodb, session, express |
-| # releases         | 11 |
-| # dependents       | 379 |
-| # downloads        | 3457647 |
-| # stars            | 105 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 435842.6666666667 |
+| # stars            | 1875.0 |
 
 ## Links
 - [Homepage](https://github.com/jdesboeufs/connect-mongo#readme)

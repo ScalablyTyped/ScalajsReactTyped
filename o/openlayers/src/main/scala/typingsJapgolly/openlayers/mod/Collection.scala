@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Collection")
 @js.native
@@ -19,13 +19,15 @@ import scala.scalajs.js.annotation._
   * @template T
   * @api stable
   */
-class Collection[T] () extends Object {
+open class Collection[T] () extends Object {
   def this(opt_array: js.Array[T]) = this()
+  
   /**
     * Remove all elements from the collection.
     * @api stable
     */
   def clear(): Unit = js.native
+  
   /**
     * Add elements to the collection.  This pushes each item in the provided array
     * to the end of the collection.
@@ -34,6 +36,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def extend(arr: js.Array[T]): Collection[T] = js.native
+  
   /**
     * Iterate over each element, calling the provided callback.
     * @param f The function to call
@@ -43,8 +46,9 @@ class Collection[T] () extends Object {
     * @template S
     * @api stable
     */
-  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], _]): Unit = js.native
-  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], _], opt_this: js.Any): Unit = js.native
+  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Any]): Unit = js.native
+  def forEach(f: js.Function3[/* item */ T, /* index */ Double, /* array */ js.Array[T], Any], opt_this: Any): Unit = js.native
+  
   /**
     * Get a reference to the underlying Array object. Warning: if the array
     * is mutated, no events will be dispatched by the collection, and the
@@ -54,6 +58,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def getArray(): js.Array[T] = js.native
+  
   /**
     * Get the length of this collection.
     * @return The length of the array.
@@ -61,6 +66,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def getLength(): Double = js.native
+  
   /**
     * Insert an element at the provided index.
     * @param index Index.
@@ -68,6 +74,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def insertAt(index: Double, elem: T): Unit = js.native
+  
   /**
     * Get the element at the provided index.
     * @param index Index.
@@ -75,6 +82,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def item(index: Double): T = js.native
+  
   /**
     * Remove the last element of the collection and return it.
     * Return `undefined` if the collection is empty.
@@ -82,6 +90,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def pop(): T = js.native
+  
   /**
     * Insert the provided element at the end of the collection.
     * @param elem Element.
@@ -89,6 +98,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def push(elem: T): Double = js.native
+  
   /**
     * Remove the first occurrence of an element from the collection.
     * @param elem Element.
@@ -96,6 +106,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def remove(elem: T): T = js.native
+  
   /**
     * Remove the element at the provided index and return it.
     * Return `undefined` if the collection does not contain this index.
@@ -104,6 +115,7 @@ class Collection[T] () extends Object {
     * @api stable
     */
   def removeAt(index: Double): T = js.native
+  
   /**
     * Set the element at the provided index.
     * @param index Index.
@@ -112,10 +124,8 @@ class Collection[T] () extends Object {
     */
   def setAt(index: Double, elem: T): Unit = js.native
 }
-
-@JSImport("openlayers", "Collection")
-@js.native
-object Collection extends js.Object {
+object Collection {
+  
   /**
     * @classdesc
     * Events emitted by {@link ol.Collection} instances are instances of this
@@ -124,8 +134,9 @@ object Collection extends js.Object {
     * @param type Type.
     * @param opt_element Element.
     */
+  @JSImport("openlayers", "Collection.Event")
   @js.native
-  class Event protected ()
+  open class Event protected ()
     extends typingsJapgolly.openlayers.mod.events.Event {
     /**
       * @classdesc
@@ -136,14 +147,14 @@ object Collection extends js.Object {
       * @param opt_element Element.
       */
     def this(`type`: EventType) = this()
-    def this(`type`: EventType, opt_element: js.Any) = this()
+    def this(`type`: EventType, opt_element: Any) = this()
+    
     /**
       * The element that is added to or removed from the collection.
       * @api stable
       */
-    var element: js.Any = js.native
+    var element: Any = js.native
   }
   
   type EventType = String
 }
-

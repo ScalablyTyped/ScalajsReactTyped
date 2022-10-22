@@ -3,17 +3,19 @@ package typingsJapgolly.arcgisJsApi.esri
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`coded-value`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.inherited
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DomainProperties extends js.Object {
+trait DomainProperties extends StObject {
+  
   /**
     * The domain name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * The domain type.
     *
@@ -21,14 +23,21 @@ trait DomainProperties extends js.Object {
     */
   var `type`: js.UndefOr[range | `coded-value` | inherited] = js.undefined
 }
-
 object DomainProperties {
-  @scala.inline
-  def apply(name: String = null, `type`: range | `coded-value` | inherited = null): DomainProperties = {
+  
+  inline def apply(): DomainProperties = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainProperties]
   }
+  
+  extension [Self <: DomainProperties](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: range | `coded-value` | inherited): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

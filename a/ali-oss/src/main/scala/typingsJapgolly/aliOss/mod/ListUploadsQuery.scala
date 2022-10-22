@@ -1,30 +1,42 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListUploadsQuery extends js.Object {
+trait ListUploadsQuery extends StObject {
+  
   var `key-marker`: js.UndefOr[String] = js.undefined
+  
   var `max-uploads`: js.UndefOr[Double] = js.undefined
+  
   var prefix: js.UndefOr[String] = js.undefined
+  
   var `upload-id-marker`: js.UndefOr[String] = js.undefined
 }
-
 object ListUploadsQuery {
-  @scala.inline
-  def apply(
-    `key-marker`: String = null,
-    `max-uploads`: Int | Double = null,
-    prefix: String = null,
-    `upload-id-marker`: String = null
-  ): ListUploadsQuery = {
+  
+  inline def apply(): ListUploadsQuery = {
     val __obj = js.Dynamic.literal()
-    if (`key-marker` != null) __obj.updateDynamic("key-marker")(`key-marker`.asInstanceOf[js.Any])
-    if (`max-uploads` != null) __obj.updateDynamic("max-uploads")(`max-uploads`.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (`upload-id-marker` != null) __obj.updateDynamic("upload-id-marker")(`upload-id-marker`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUploadsQuery]
   }
+  
+  extension [Self <: ListUploadsQuery](x: Self) {
+    
+    inline def `setKey-marker`(value: String): Self = StObject.set(x, "key-marker", value.asInstanceOf[js.Any])
+    
+    inline def `setKey-markerUndefined`: Self = StObject.set(x, "key-marker", js.undefined)
+    
+    inline def `setMax-uploads`(value: Double): Self = StObject.set(x, "max-uploads", value.asInstanceOf[js.Any])
+    
+    inline def `setMax-uploadsUndefined`: Self = StObject.set(x, "max-uploads", js.undefined)
+    
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
+    inline def `setUpload-id-marker`(value: String): Self = StObject.set(x, "upload-id-marker", value.asInstanceOf[js.Any])
+    
+    inline def `setUpload-id-markerUndefined`: Self = StObject.set(x, "upload-id-marker", js.undefined)
+  }
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.lyricist
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lyricistStrings {
-  @js.native
-  sealed trait asc extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
+  @js.native
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
 }
-

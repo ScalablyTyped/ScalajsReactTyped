@@ -1,14 +1,16 @@
 package typingsJapgolly.bitwise
 
-import typingsJapgolly.bitwise.typesMod.Bit
-import typingsJapgolly.bitwise.typesMod.UInt8
+import typingsJapgolly.bitwise.esmTypesMod.Byte
+import typingsJapgolly.bitwise.esmTypesMod.UInt8
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bitwise/esm/byte/read", JSImport.Namespace)
-@js.native
-object esmByteReadMod extends js.Object {
-  def default(byte: UInt8): js.Tuple8[Bit, Bit, Bit, Bit, Bit, Bit, Bit, Bit] = js.native
+object esmByteReadMod {
+  
+  @JSImport("bitwise/esm/byte/read", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(byte: UInt8): Byte = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(byte.asInstanceOf[js.Any]).asInstanceOf[Byte]
 }
-

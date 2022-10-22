@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The {@link Entity.save Entity}'s Save Mode
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.saveandclose
   - typingsJapgolly.xrm.xrmStrings.saveandnew
 */
-trait EntitySaveMode extends js.Object
-
+trait EntitySaveMode extends StObject
 object EntitySaveMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def saveandclose: typingsJapgolly.xrm.xrmStrings.saveandclose = this.cast("saveandclose")
-  @scala.inline
-  def saveandnew: typingsJapgolly.xrm.xrmStrings.saveandnew = this.cast("saveandnew")
+  
+  inline def saveandclose: typingsJapgolly.xrm.xrmStrings.saveandclose = "saveandclose".asInstanceOf[typingsJapgolly.xrm.xrmStrings.saveandclose]
+  
+  inline def saveandnew: typingsJapgolly.xrm.xrmStrings.saveandnew = "saveandnew".asInstanceOf[typingsJapgolly.xrm.xrmStrings.saveandnew]
 }
-

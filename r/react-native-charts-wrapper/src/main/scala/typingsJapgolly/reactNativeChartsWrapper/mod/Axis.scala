@@ -1,106 +1,190 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
-import typingsJapgolly.reactNativeChartsWrapper.AnonLabel
-import typingsJapgolly.reactNativeChartsWrapper.AnonLineLength
+import typingsJapgolly.reactNativeChartsWrapper.anon.LineLength
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.DAYS
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.HOURS
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.MILLISECONDS
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.MINUTES
 import typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.SECONDS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Axis extends js.Object {
+trait Axis extends StObject {
+  
   var axisLineColor: js.UndefOr[Color] = js.undefined
+  
   var axisLineWidth: js.UndefOr[Double] = js.undefined
+  
   var axisMaximum: js.UndefOr[Double] = js.undefined
+  
   var axisMinimum: js.UndefOr[Double] = js.undefined
+  
   var centerAxisLabels: js.UndefOr[Boolean] = js.undefined
+  
   var drawAxisLines: js.UndefOr[Boolean] = js.undefined
+  
   var drawGridLines: js.UndefOr[Boolean] = js.undefined
+  
   var drawLabels: js.UndefOr[Boolean] = js.undefined
+  
   var drawLimitLinesBehindData: js.UndefOr[Boolean] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var fontFamily: js.UndefOr[String] = js.undefined
+  
   var fontStyle: js.UndefOr[String] = js.undefined
+  
   var fontWeight: js.UndefOr[Double] = js.undefined
+  
   var granularity: js.UndefOr[Double] = js.undefined
+  
   var granularityEnabled: js.UndefOr[Boolean] = js.undefined
+  
   var gridColor: js.UndefOr[Color] = js.undefined
-  var gridDashedLine: js.UndefOr[AnonLineLength] = js.undefined
+  
+  var gridDashedLine: js.UndefOr[LineLength] = js.undefined
+  
   var gridLineWidth: js.UndefOr[Double] = js.undefined
+  
   var labelCount: js.UndefOr[Double] = js.undefined
+  
   var labelCountForce: js.UndefOr[Boolean] = js.undefined
-  var limitLines: js.UndefOr[js.Array[AnonLabel]] = js.undefined
+  
+  var limitLines: js.UndefOr[js.Array[AxisLimitLine]] = js.undefined
+  
   var since: js.UndefOr[Double] = js.undefined
+  
   var textColor: js.UndefOr[Color] = js.undefined
+  
   var textSize: js.UndefOr[Double] = js.undefined
+  
   var timeUnit: js.UndefOr[MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS] = js.undefined
+  
   var valueFormatter: js.UndefOr[ValueFormatter] = js.undefined
+  
   var valueFormatterPattern: js.UndefOr[String] = js.undefined
 }
-
 object Axis {
-  @scala.inline
-  def apply(
-    axisLineColor: Int | Double = null,
-    axisLineWidth: Int | Double = null,
-    axisMaximum: Int | Double = null,
-    axisMinimum: Int | Double = null,
-    centerAxisLabels: js.UndefOr[Boolean] = js.undefined,
-    drawAxisLines: js.UndefOr[Boolean] = js.undefined,
-    drawGridLines: js.UndefOr[Boolean] = js.undefined,
-    drawLabels: js.UndefOr[Boolean] = js.undefined,
-    drawLimitLinesBehindData: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontStyle: String = null,
-    fontWeight: Int | Double = null,
-    granularity: Int | Double = null,
-    granularityEnabled: js.UndefOr[Boolean] = js.undefined,
-    gridColor: Int | Double = null,
-    gridDashedLine: AnonLineLength = null,
-    gridLineWidth: Int | Double = null,
-    labelCount: Int | Double = null,
-    labelCountForce: js.UndefOr[Boolean] = js.undefined,
-    limitLines: js.Array[AnonLabel] = null,
-    since: Int | Double = null,
-    textColor: Int | Double = null,
-    textSize: Int | Double = null,
-    timeUnit: MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS = null,
-    valueFormatter: ValueFormatter = null,
-    valueFormatterPattern: String = null
-  ): Axis = {
+  
+  inline def apply(): Axis = {
     val __obj = js.Dynamic.literal()
-    if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor.asInstanceOf[js.Any])
-    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
-    if (axisMaximum != null) __obj.updateDynamic("axisMaximum")(axisMaximum.asInstanceOf[js.Any])
-    if (axisMinimum != null) __obj.updateDynamic("axisMinimum")(axisMinimum.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerAxisLabels)) __obj.updateDynamic("centerAxisLabels")(centerAxisLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawAxisLines)) __obj.updateDynamic("drawAxisLines")(drawAxisLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawGridLines)) __obj.updateDynamic("drawGridLines")(drawGridLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLabels)) __obj.updateDynamic("drawLabels")(drawLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(drawLimitLinesBehindData)) __obj.updateDynamic("drawLimitLinesBehindData")(drawLimitLinesBehindData.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
-    if (!js.isUndefined(granularityEnabled)) __obj.updateDynamic("granularityEnabled")(granularityEnabled.asInstanceOf[js.Any])
-    if (gridColor != null) __obj.updateDynamic("gridColor")(gridColor.asInstanceOf[js.Any])
-    if (gridDashedLine != null) __obj.updateDynamic("gridDashedLine")(gridDashedLine.asInstanceOf[js.Any])
-    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
-    if (labelCount != null) __obj.updateDynamic("labelCount")(labelCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelCountForce)) __obj.updateDynamic("labelCountForce")(labelCountForce.asInstanceOf[js.Any])
-    if (limitLines != null) __obj.updateDynamic("limitLines")(limitLines.asInstanceOf[js.Any])
-    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (textSize != null) __obj.updateDynamic("textSize")(textSize.asInstanceOf[js.Any])
-    if (timeUnit != null) __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
-    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter.asInstanceOf[js.Any])
-    if (valueFormatterPattern != null) __obj.updateDynamic("valueFormatterPattern")(valueFormatterPattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Axis]
   }
+  
+  extension [Self <: Axis](x: Self) {
+    
+    inline def setAxisLineColor(value: Color): Self = StObject.set(x, "axisLineColor", value.asInstanceOf[js.Any])
+    
+    inline def setAxisLineColorUndefined: Self = StObject.set(x, "axisLineColor", js.undefined)
+    
+    inline def setAxisLineWidth(value: Double): Self = StObject.set(x, "axisLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setAxisLineWidthUndefined: Self = StObject.set(x, "axisLineWidth", js.undefined)
+    
+    inline def setAxisMaximum(value: Double): Self = StObject.set(x, "axisMaximum", value.asInstanceOf[js.Any])
+    
+    inline def setAxisMaximumUndefined: Self = StObject.set(x, "axisMaximum", js.undefined)
+    
+    inline def setAxisMinimum(value: Double): Self = StObject.set(x, "axisMinimum", value.asInstanceOf[js.Any])
+    
+    inline def setAxisMinimumUndefined: Self = StObject.set(x, "axisMinimum", js.undefined)
+    
+    inline def setCenterAxisLabels(value: Boolean): Self = StObject.set(x, "centerAxisLabels", value.asInstanceOf[js.Any])
+    
+    inline def setCenterAxisLabelsUndefined: Self = StObject.set(x, "centerAxisLabels", js.undefined)
+    
+    inline def setDrawAxisLines(value: Boolean): Self = StObject.set(x, "drawAxisLines", value.asInstanceOf[js.Any])
+    
+    inline def setDrawAxisLinesUndefined: Self = StObject.set(x, "drawAxisLines", js.undefined)
+    
+    inline def setDrawGridLines(value: Boolean): Self = StObject.set(x, "drawGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setDrawGridLinesUndefined: Self = StObject.set(x, "drawGridLines", js.undefined)
+    
+    inline def setDrawLabels(value: Boolean): Self = StObject.set(x, "drawLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDrawLabelsUndefined: Self = StObject.set(x, "drawLabels", js.undefined)
+    
+    inline def setDrawLimitLinesBehindData(value: Boolean): Self = StObject.set(x, "drawLimitLinesBehindData", value.asInstanceOf[js.Any])
+    
+    inline def setDrawLimitLinesBehindDataUndefined: Self = StObject.set(x, "drawLimitLinesBehindData", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontStyle(value: String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setGranularity(value: Double): Self = StObject.set(x, "granularity", value.asInstanceOf[js.Any])
+    
+    inline def setGranularityEnabled(value: Boolean): Self = StObject.set(x, "granularityEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setGranularityEnabledUndefined: Self = StObject.set(x, "granularityEnabled", js.undefined)
+    
+    inline def setGranularityUndefined: Self = StObject.set(x, "granularity", js.undefined)
+    
+    inline def setGridColor(value: Color): Self = StObject.set(x, "gridColor", value.asInstanceOf[js.Any])
+    
+    inline def setGridColorUndefined: Self = StObject.set(x, "gridColor", js.undefined)
+    
+    inline def setGridDashedLine(value: LineLength): Self = StObject.set(x, "gridDashedLine", value.asInstanceOf[js.Any])
+    
+    inline def setGridDashedLineUndefined: Self = StObject.set(x, "gridDashedLine", js.undefined)
+    
+    inline def setGridLineWidth(value: Double): Self = StObject.set(x, "gridLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setGridLineWidthUndefined: Self = StObject.set(x, "gridLineWidth", js.undefined)
+    
+    inline def setLabelCount(value: Double): Self = StObject.set(x, "labelCount", value.asInstanceOf[js.Any])
+    
+    inline def setLabelCountForce(value: Boolean): Self = StObject.set(x, "labelCountForce", value.asInstanceOf[js.Any])
+    
+    inline def setLabelCountForceUndefined: Self = StObject.set(x, "labelCountForce", js.undefined)
+    
+    inline def setLabelCountUndefined: Self = StObject.set(x, "labelCount", js.undefined)
+    
+    inline def setLimitLines(value: js.Array[AxisLimitLine]): Self = StObject.set(x, "limitLines", value.asInstanceOf[js.Any])
+    
+    inline def setLimitLinesUndefined: Self = StObject.set(x, "limitLines", js.undefined)
+    
+    inline def setLimitLinesVarargs(value: AxisLimitLine*): Self = StObject.set(x, "limitLines", js.Array(value*))
+    
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    
+    inline def setTextColor(value: Color): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    
+    inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+    
+    inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+    
+    inline def setTimeUnit(value: MILLISECONDS | SECONDS | MINUTES | HOURS | DAYS): Self = StObject.set(x, "timeUnit", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUnitUndefined: Self = StObject.set(x, "timeUnit", js.undefined)
+    
+    inline def setValueFormatter(value: ValueFormatter): Self = StObject.set(x, "valueFormatter", value.asInstanceOf[js.Any])
+    
+    inline def setValueFormatterPattern(value: String): Self = StObject.set(x, "valueFormatterPattern", value.asInstanceOf[js.Any])
+    
+    inline def setValueFormatterPatternUndefined: Self = StObject.set(x, "valueFormatterPattern", js.undefined)
+    
+    inline def setValueFormatterUndefined: Self = StObject.set(x, "valueFormatter", js.undefined)
+    
+    inline def setValueFormatterVarargs(value: String*): Self = StObject.set(x, "valueFormatter", js.Array(value*))
+  }
 }
-

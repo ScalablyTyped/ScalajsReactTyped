@@ -1,30 +1,32 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReplaceOptions extends InsertOptions {
+trait ReplaceOptions
+  extends StObject
+     with InsertOptions {
+  
   var overwrite: js.UndefOr[Boolean] = js.undefined
+  
   var returnOld: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReplaceOptions {
-  @scala.inline
-  def apply(
-    overwrite: js.UndefOr[Boolean] = js.undefined,
-    returnNew: js.UndefOr[Boolean] = js.undefined,
-    returnOld: js.UndefOr[Boolean] = js.undefined,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    waitForSync: js.UndefOr[Boolean] = js.undefined
-  ): ReplaceOptions = {
+  
+  inline def apply(): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnNew)) __obj.updateDynamic("returnNew")(returnNew.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnOld)) __obj.updateDynamic("returnOld")(returnOld.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceOptions]
   }
+  
+  extension [Self <: ReplaceOptions](x: Self) {
+    
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    
+    inline def setReturnOld(value: Boolean): Self = StObject.set(x, "returnOld", value.asInstanceOf[js.Any])
+    
+    inline def setReturnOldUndefined: Self = StObject.set(x, "returnOld", js.undefined)
+  }
 }
-

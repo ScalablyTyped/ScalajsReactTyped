@@ -1,59 +1,48 @@
 package typingsJapgolly.dos2unix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dos2unixStrings {
-  @js.native
-  sealed trait convertDotend extends js.Object
   
   @js.native
-  sealed trait convertDoterror extends js.Object
+  sealed trait convertDotend extends StObject
+  inline def convertDotend: convertDotend = "convert.end".asInstanceOf[convertDotend]
   
   @js.native
-  sealed trait convertDotstart extends js.Object
+  sealed trait convertDoterror extends StObject
+  inline def convertDoterror: convertDoterror = "convert.error".asInstanceOf[convertDoterror]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait convertDotstart extends StObject
+  inline def convertDotstart: convertDotstart = "convert.start".asInstanceOf[convertDotstart]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait processingDotend extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait processingDoterror extends js.Object
+  sealed trait processingDotend extends StObject
+  inline def processingDotend: processingDotend = "processing.end".asInstanceOf[processingDotend]
   
   @js.native
-  sealed trait processingDotskip extends js.Object
+  sealed trait processingDoterror extends StObject
+  inline def processingDoterror: processingDoterror = "processing.error".asInstanceOf[processingDoterror]
   
   @js.native
-  sealed trait processingDotstart extends js.Object
+  sealed trait processingDotskip extends StObject
+  inline def processingDotskip: processingDotskip = "processing.skip".asInstanceOf[processingDotskip]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait processingDotstart extends StObject
+  inline def processingDotstart: processingDotstart = "processing.start".asInstanceOf[processingDotstart]
   
-  @scala.inline
-  def convertDotend: convertDotend = "convert.end".asInstanceOf[convertDotend]
-  @scala.inline
-  def convertDoterror: convertDoterror = "convert.error".asInstanceOf[convertDoterror]
-  @scala.inline
-  def convertDotstart: convertDotstart = "convert.start".asInstanceOf[convertDotstart]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def processingDotend: processingDotend = "processing.end".asInstanceOf[processingDotend]
-  @scala.inline
-  def processingDoterror: processingDoterror = "processing.error".asInstanceOf[processingDoterror]
-  @scala.inline
-  def processingDotskip: processingDotskip = "processing.skip".asInstanceOf[processingDotskip]
-  @scala.inline
-  def processingDotstart: processingDotstart = "processing.start".asInstanceOf[processingDotstart]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
 }
-

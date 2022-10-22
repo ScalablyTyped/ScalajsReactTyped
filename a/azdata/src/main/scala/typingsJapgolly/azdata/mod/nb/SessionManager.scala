@@ -1,39 +1,52 @@
 package typingsJapgolly.azdata.mod.nb
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SessionManager extends js.Object {
+trait SessionManager extends StObject {
+  
   /**
-  			 * Indicates whether the manager is ready.
-  			 */
+    * Indicates whether the manager is ready.
+    */
   val isReady: Boolean
+  
   /**
-  			 * A Thenable that is fulfilled when the manager is ready.
-  			 */
+    * A Thenable that is fulfilled when the manager is ready.
+    */
   val ready: Thenable[Unit]
-  val specs: js.UndefOr[IAllKernels] = js.undefined
+  
   def shutdown(id: String): Thenable[Unit]
+  
+  val specs: js.UndefOr[IAllKernels] = js.undefined
+  
   def startNew(options: ISessionOptions): Thenable[ISession]
 }
-
 object SessionManager {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     isReady: Boolean,
     ready: Thenable[Unit],
-    shutdown: String => CallbackTo[Thenable[Unit]],
-    startNew: ISessionOptions => CallbackTo[Thenable[ISession]],
-    specs: IAllKernels = null
+    shutdown: String => Thenable[Unit],
+    startNew: ISessionOptions => Thenable[ISession]
   ): SessionManager = {
-    val __obj = js.Dynamic.literal(isReady = isReady.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any])
-    __obj.updateDynamic("shutdown")(js.Any.fromFunction1((t0: java.lang.String) => shutdown(t0).runNow()))
-    __obj.updateDynamic("startNew")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.nb.ISessionOptions) => startNew(t0).runNow()))
-    if (specs != null) __obj.updateDynamic("specs")(specs.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isReady = isReady.asInstanceOf[js.Any], ready = ready.asInstanceOf[js.Any], shutdown = js.Any.fromFunction1(shutdown), startNew = js.Any.fromFunction1(startNew))
     __obj.asInstanceOf[SessionManager]
   }
+  
+  extension [Self <: SessionManager](x: Self) {
+    
+    inline def setIsReady(value: Boolean): Self = StObject.set(x, "isReady", value.asInstanceOf[js.Any])
+    
+    inline def setReady(value: Thenable[Unit]): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    
+    inline def setShutdown(value: String => Thenable[Unit]): Self = StObject.set(x, "shutdown", js.Any.fromFunction1(value))
+    
+    inline def setSpecs(value: IAllKernels): Self = StObject.set(x, "specs", value.asInstanceOf[js.Any])
+    
+    inline def setSpecsUndefined: Self = StObject.set(x, "specs", js.undefined)
+    
+    inline def setStartNew(value: ISessionOptions => Thenable[ISession]): Self = StObject.set(x, "startNew", js.Any.fromFunction1(value))
+  }
 }
-

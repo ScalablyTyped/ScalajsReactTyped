@@ -11,14 +11,11 @@ Map color names to HEX color values.
 | Full name          | colornames |
 | Keywords           | color, colour, names, css, hex, rgb, convert |
 | # releases         | 1 |
-| # dependents       | 32 |
-| # downloads        | 52787110 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6938414.666666667 |
+| # stars            | 42.0 |
 
 ## Links
-- [Homepage](https://github.com/timoxley/colornames#readme)
-- [Bugs](https://github.com/timoxley/colornames/issues)
-- [Repository](https://github.com/timoxley/colornames)
 - [Npm](https://www.npmjs.com/package/colornames)
     
 

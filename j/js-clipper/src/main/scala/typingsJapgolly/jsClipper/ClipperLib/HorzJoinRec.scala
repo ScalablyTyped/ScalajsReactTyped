@@ -1,13 +1,26 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ClipperLib.HorzJoinRec")
-@js.native
-class HorzJoinRec () extends js.Object {
-  var edge: TEdge = js.native
-  var savedIdx: Double = js.native
+trait HorzJoinRec extends StObject {
+  
+  var edge: TEdge
+  
+  var savedIdx: Double
 }
-
+object HorzJoinRec {
+  
+  inline def apply(edge: TEdge, savedIdx: Double): HorzJoinRec = {
+    val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any], savedIdx = savedIdx.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HorzJoinRec]
+  }
+  
+  extension [Self <: HorzJoinRec](x: Self) {
+    
+    inline def setEdge(value: TEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    
+    inline def setSavedIdx(value: Double): Self = StObject.set(x, "savedIdx", value.asInstanceOf[js.Any])
+  }
+}

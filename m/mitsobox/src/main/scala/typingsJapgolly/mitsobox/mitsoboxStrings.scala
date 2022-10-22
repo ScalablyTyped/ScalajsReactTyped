@@ -1,34 +1,28 @@
 package typingsJapgolly.mitsobox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mitsoboxStrings {
-  @js.native
-  sealed trait ABORT extends js.Object
   
   @js.native
-  sealed trait CANCEL extends js.Object
+  sealed trait ABORT extends StObject
+  inline def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
   
   @js.native
-  sealed trait IGNORE extends js.Object
+  sealed trait CANCEL extends StObject
+  inline def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   
   @js.native
-  sealed trait OK extends js.Object
+  sealed trait IGNORE extends StObject
+  inline def IGNORE: IGNORE = "IGNORE".asInstanceOf[IGNORE]
   
   @js.native
-  sealed trait RETRY extends js.Object
+  sealed trait OK extends StObject
+  inline def OK: OK = "OK".asInstanceOf[OK]
   
-  @scala.inline
-  def ABORT: ABORT = "ABORT".asInstanceOf[ABORT]
-  @scala.inline
-  def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
-  @scala.inline
-  def IGNORE: IGNORE = "IGNORE".asInstanceOf[IGNORE]
-  @scala.inline
-  def OK: OK = "OK".asInstanceOf[OK]
-  @scala.inline
-  def RETRY: RETRY = "RETRY".asInstanceOf[RETRY]
+  @js.native
+  sealed trait RETRY extends StObject
+  inline def RETRY: RETRY = "RETRY".asInstanceOf[RETRY]
 }
-

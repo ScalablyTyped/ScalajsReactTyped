@@ -1,22 +1,34 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.EditorOptions")
-@js.native
-class EditorOptions () extends js.Object {
-  var ConvertTabsToSpaces: Boolean = js.native
-  var IndentSize: Double = js.native
-  var NewLineCharacter: String = js.native
-  var TabSize: Double = js.native
+trait EditorOptions extends StObject {
+  
+  var ConvertTabsToSpaces: Boolean
+  
+  var IndentSize: Double
+  
+  var NewLineCharacter: String
+  
+  var TabSize: Double
 }
-
-/* static members */
-@JSGlobal("TypeScript.Services.EditorOptions")
-@js.native
-object EditorOptions extends js.Object {
-  def clone(objectToClone: EditorOptions): EditorOptions = js.native
+object EditorOptions {
+  
+  inline def apply(ConvertTabsToSpaces: Boolean, IndentSize: Double, NewLineCharacter: String, TabSize: Double): EditorOptions = {
+    val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces.asInstanceOf[js.Any], IndentSize = IndentSize.asInstanceOf[js.Any], NewLineCharacter = NewLineCharacter.asInstanceOf[js.Any], TabSize = TabSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditorOptions]
+  }
+  
+  extension [Self <: EditorOptions](x: Self) {
+    
+    inline def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
+    
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
+    
+    inline def setNewLineCharacter(value: String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
+  }
 }
-

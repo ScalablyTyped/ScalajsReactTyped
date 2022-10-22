@@ -1,44 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentHighlightKind extends js.Object
-
+sealed trait DocumentHighlightKind extends StObject
 @JSImport("vscode", "DocumentHighlightKind")
 @js.native
-object DocumentHighlightKind extends js.Object {
-  /**
-  		 * Read-access of a symbol, like reading a variable.
-  		 */
-  @js.native
-  sealed trait Read extends DocumentHighlightKind
-  
-  /**
-  		 * A textual occurrence.
-  		 */
-  @js.native
-  sealed trait Text extends DocumentHighlightKind
-  
-  /**
-  		 * Write-access of a symbol, like writing to a variable.
-  		 */
-  @js.native
-  sealed trait Write extends DocumentHighlightKind
+object DocumentHighlightKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DocumentHighlightKind with Double] = js.native
-  /* 1 */ @js.native
-  object Read extends TopLevel[Read with Double]
+  def apply(value: Double): js.UndefOr[DocumentHighlightKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
+  /**
+    * Read-access of a symbol, like reading a variable.
+    */
+  @js.native
+  sealed trait Read
+    extends StObject
+       with DocumentHighlightKind
+  /* 1 */ val Read: typingsJapgolly.vscode.mod.DocumentHighlightKind.Read & Double = js.native
   
-  /* 2 */ @js.native
-  object Write extends TopLevel[Write with Double]
+  /**
+    * A textual occurrence.
+    */
+  @js.native
+  sealed trait Text
+    extends StObject
+       with DocumentHighlightKind
+  /* 0 */ val Text: typingsJapgolly.vscode.mod.DocumentHighlightKind.Text & Double = js.native
   
+  /**
+    * Write-access of a symbol, like writing to a variable.
+    */
+  @js.native
+  sealed trait Write
+    extends StObject
+       with DocumentHighlightKind
+  /* 2 */ val Write: typingsJapgolly.vscode.mod.DocumentHighlightKind.Write & Double = js.native
 }
-

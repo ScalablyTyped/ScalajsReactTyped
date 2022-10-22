@@ -1,0 +1,13 @@
+package typingsJapgolly.rxjsCompat.anon
+
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait FnCallThisPredicate extends StObject {
+  
+  def apply[T](): Observable_[Double] = js.native
+  def apply[T](predicate: js.Function3[/* value */ T, /* index */ Double, /* source */ Observable_[T], Boolean]): Observable_[Double] = js.native
+}

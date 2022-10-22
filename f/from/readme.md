@@ -11,9 +11,9 @@ Easy way to make a Readable Stream
 | Full name          | from |
 | Keywords           | stream, streams, readable, easy |
 | # releases         | 1 |
-| # dependents       | 33 |
-| # downloads        | 56863134 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.180359E7 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/from#readme)

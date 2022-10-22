@@ -1,19 +1,24 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlobalBeginCallbackEventArgs extends BeginCallbackEventArgs {
+trait GlobalBeginCallbackEventArgs
+  extends StObject
+     with BeginCallbackEventArgs {
+  
   val control: Control
 }
-
 object GlobalBeginCallbackEventArgs {
-  @scala.inline
-  def apply(command: String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
   
+  inline def apply(command: String, control: Control, sender: Control): GlobalBeginCallbackEventArgs = {
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], control = control.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalBeginCallbackEventArgs]
   }
+  
+  extension [Self <: GlobalBeginCallbackEventArgs](x: Self) {
+    
+    inline def setControl(value: Control): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+  }
 }
-

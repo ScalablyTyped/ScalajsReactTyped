@@ -9,10 +9,10 @@ Lets you interface with Steam without running an actual Steam client
 | ------------------ | :-------------: |
 | Full name          | steam |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 26 |
-| # downloads        | 30887 |
-| # stars            | 11 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1593.6666666666667 |
+| # stars            | 990.0 |
 
 ## Links
 - [Homepage](https://github.com/seishun/node-steam#readme)

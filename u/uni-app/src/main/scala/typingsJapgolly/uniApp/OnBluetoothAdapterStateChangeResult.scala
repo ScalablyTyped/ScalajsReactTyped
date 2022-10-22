@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnBluetoothAdapterStateChangeResult extends js.Object {
+trait OnBluetoothAdapterStateChangeResult extends StObject {
+  
   /**
     * 蓝牙适配器是否可用
     */
   var available: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 是否正在搜索设备
     */
   var discovering: js.UndefOr[Boolean] = js.undefined
 }
-
 object OnBluetoothAdapterStateChangeResult {
-  @scala.inline
-  def apply(available: js.UndefOr[Boolean] = js.undefined, discovering: js.UndefOr[Boolean] = js.undefined): OnBluetoothAdapterStateChangeResult = {
+  
+  inline def apply(): OnBluetoothAdapterStateChangeResult = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (!js.isUndefined(discovering)) __obj.updateDynamic("discovering")(discovering.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBluetoothAdapterStateChangeResult]
   }
+  
+  extension [Self <: OnBluetoothAdapterStateChangeResult](x: Self) {
+    
+    inline def setAvailable(value: Boolean): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    
+    inline def setDiscovering(value: Boolean): Self = StObject.set(x, "discovering", value.asInstanceOf[js.Any])
+    
+    inline def setDiscoveringUndefined: Self = StObject.set(x, "discovering", js.undefined)
+  }
 }
-

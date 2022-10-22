@@ -1,22 +1,23 @@
-package typingsJapgolly
+package typingsJapgolly.angular
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Document
+import org.scalajs.dom.Element
+import org.scalajs.dom.Window
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object angular {
-  type JQLiteCssProperties = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | typingsJapgolly.angular.cssPropertySetter]
-  type JQueryStatic = js.Function1[
-    /* element */ java.lang.String | org.scalajs.dom.raw.Element | typingsJapgolly.std.Document_ | typingsJapgolly.std.Window_ | typingsJapgolly.angular.JQuery | typingsJapgolly.std.ArrayLike[org.scalajs.dom.raw.Element] | js.Function0[scala.Unit], 
-    typingsJapgolly.angular.JQLite
-  ]
-  /**
-    * The interface used to specify the properties parameter in css()
-    */
-  // tslint:disable-next-line:class-name
-  type cssPropertySetter = js.Function2[
-    /* index */ scala.Double, 
-    /* value */ js.UndefOr[java.lang.String], 
-    java.lang.String | scala.Double
-  ]
-}
+
+type JQLiteCssProperties = StringDictionary[String | Double | cssPropertySetter]
+
+type JQueryStatic = js.Function1[
+/* element */ String | Element | Document | Window | JQuery | ArrayLike[Element] | js.Function0[Unit], 
+JQLite]
+
+/**
+  * The interface used to specify the properties parameter in css()
+  */
+// tslint:disable-next-line:class-name
+type cssPropertySetter = js.Function2[/* index */ Double, /* value */ js.UndefOr[String], String | Double]

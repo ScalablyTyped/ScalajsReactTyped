@@ -1,23 +1,63 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
-import typingsJapgolly.devextreme.mod._Global_.JQueryPromise
-import typingsJapgolly.devextreme.mod._Global_.Promise
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.utils.DxPromise
+import typingsJapgolly.devextreme.mod.DevExpress.events.ChangedOptionInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.EventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.InitializedEventInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait dxSlideOutView extends Widget {
-  /** Gets the widget's content. */
-  def content(): dxElement = js.native
-  /** Hides the widget's slide-out menu. */
-  def hideMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Gets the slide-out menu's content. */
-  def menuContent(): dxElement = js.native
-  /** Shows the slide-out menu. */
-  def showMenu(): Promise[Unit] with JQueryPromise[Unit] = js.native
-  /** Shows or hides the slide-out menu depending on the argument. */
-  def toggleMenuVisibility(): Promise[Unit] with JQueryPromise[Unit] = js.native
+trait dxSlideOutView
+  extends StObject
+     with Widget[dxSlideOutViewOptions] {
+  
+  /**
+    * Gets the UI component&apos;s content.
+    */
+  def content(): DxElement_[HTMLElement] = js.native
+  
+  /**
+    * Hides the UI component&apos;s slide-out menu.
+    */
+  def hideMenu(): DxPromise[Unit] = js.native
+  
+  /**
+    * Gets the slide-out menu&apos;s content.
+    */
+  def menuContent(): DxElement_[HTMLElement] = js.native
+  
+  /**
+    * Shows the slide-out menu.
+    */
+  def showMenu(): DxPromise[Unit] = js.native
+  
+  /**
+    * Shows or hides the slide-out menu depending on the argument.
+    */
+  def toggleMenuVisibility(): DxPromise[Unit] = js.native
+  def toggleMenuVisibility(showing: Boolean): DxPromise[Unit] = js.native
 }
-
+object dxSlideOutView {
+  
+  type DisposingEvent = EventInfo[dxSlideOutView]
+  
+  type InitializedEvent = InitializedEventInfo[dxSlideOutView]
+  
+  trait OptionChangedEvent
+    extends StObject
+       with EventInfo[dxSlideOutView]
+       with ChangedOptionInfo
+  object OptionChangedEvent {
+    
+    inline def apply(component: dxSlideOutView, element: DxElement_[HTMLElement], fullName: String, name: String): OptionChangedEvent = {
+      val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[OptionChangedEvent]
+    }
+  }
+  
+  type Properties = dxSlideOutViewOptions
+}

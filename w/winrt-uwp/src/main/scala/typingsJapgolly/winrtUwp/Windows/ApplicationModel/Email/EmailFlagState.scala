@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailFlagState extends js.Object
-
+sealed trait EmailFlagState extends StObject
 /** Defines the flag state of an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailFlagState")
 @js.native
-object EmailFlagState extends js.Object {
+object EmailFlagState extends StObject {
+  
   /** The email was flagged for follow up and the flag has been cleared. */
   @js.native
-  sealed trait cleared extends EmailFlagState
+  sealed trait cleared
+    extends StObject
+       with EmailFlagState
   
   /** The email was flagged for follow up and has been marked completed. */
   @js.native
-  sealed trait completed extends EmailFlagState
+  sealed trait completed
+    extends StObject
+       with EmailFlagState
   
   /** The email has been flagged for follow up. */
   @js.native
-  sealed trait flagged extends EmailFlagState
+  sealed trait flagged
+    extends StObject
+       with EmailFlagState
   
   /** The email has not been flagged for follow up. */
   @js.native
-  sealed trait unflagged extends EmailFlagState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailFlagState with Double] = js.native
-  /* 3 */ @js.native
-  object cleared extends TopLevel[cleared with Double]
-  
-  /* 2 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 1 */ @js.native
-  object flagged extends TopLevel[flagged with Double]
-  
-  /* 0 */ @js.native
-  object unflagged extends TopLevel[unflagged with Double]
-  
+  sealed trait unflagged
+    extends StObject
+       with EmailFlagState
 }
-

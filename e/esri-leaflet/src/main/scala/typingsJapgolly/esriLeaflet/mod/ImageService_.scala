@@ -1,9 +1,9 @@
 package typingsJapgolly.esriLeaflet.mod
 
 import typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.ImageServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `L.esri.ImageService` is an abstraction for interacting with Image Services running on ArcGIS Online and
@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("esri-leaflet", "ImageService")
 @js.native
-class ImageService_ protected ()
+open class ImageService_ protected ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.ImageService_ {
   def this(options: ImageServiceOptions) = this()
 }
-

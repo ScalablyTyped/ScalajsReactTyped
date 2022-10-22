@@ -1,26 +1,21 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Events providing information related to animations. */
 @js.native
-trait AnimationEvent extends Event_ {
+trait AnimationEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   val animationName: java.lang.String = js.native
+  
+  /* standard dom */
   val elapsedTime: Double = js.native
+  
+  /* standard dom */
   val pseudoElement: java.lang.String = js.native
 }
-
-@JSGlobal("AnimationEvent")
-@js.native
-object AnimationEvent
-  extends Instantiable1[/* type */ java.lang.String, AnimationEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* animationEventInitDict */ AnimationEventInit, 
-      AnimationEvent
-    ]
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XPadding extends js.Object {
+trait XPadding extends StObject {
+  
   var left: Double
+  
   var right: Double
 }
-
 object XPadding {
-  @scala.inline
-  def apply(left: Double, right: Double): XPadding = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
   
+  inline def apply(left: Double, right: Double): XPadding = {
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[XPadding]
   }
+  
+  extension [Self <: XPadding](x: Self) {
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+  }
 }
-

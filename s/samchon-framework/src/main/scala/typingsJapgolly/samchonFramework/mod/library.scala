@@ -1,15 +1,64 @@
 package typingsJapgolly.samchonFramework.mod
 
-import typingsJapgolly.tstl.mod.Pair
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon-framework", "library")
-@js.native
-object library extends js.Object {
+object library {
+  
+  object default {
+    
+    @JSImport("samchon-framework", "library.default.XML")
+    @js.native
+    open class XML ()
+      extends typingsJapgolly.samchon.mod.library.default.XML {
+      def this(str: String) = this()
+      def this(xml: typingsJapgolly.sxml.libModuleXmlMod.XML) = this()
+    }
+    /* static members */
+    object XML {
+      
+      @JSImport("samchon-framework", "library.default.XML")
+      @js.native
+      val ^ : js.Any = js.native
+      
+      /**
+        * @hidden
+        */
+      @JSImport("samchon-framework", "library.default.XML._Compute_min_index")
+      @js.native
+      def _Compute_min_index: Any = js.native
+      inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+      
+      /**
+        * @hidden
+        */
+      @JSImport("samchon-framework", "library.default.XML._Repeat")
+      @js.native
+      def _Repeat: Any = js.native
+      inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+      
+      inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+      
+      inline def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+      inline def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
+    }
+    
+    @JSImport("samchon-framework", "library.default.XMLList")
+    @js.native
+    open class XMLList ()
+      extends typingsJapgolly.samchon.mod.library.default.XMLList
+  }
+  
+  @JSImport("samchon-framework", "library.CartesianProduct")
   @js.native
-  class CartesianProduct protected ()
+  open class CartesianProduct protected ()
     extends typingsJapgolly.samchon.mod.library.CartesianProduct {
     /**
       * Initializer Constructor.
@@ -19,8 +68,9 @@ object library extends js.Object {
     def this(digits: Double*) = this()
   }
   
+  @JSImport("samchon-framework", "library.Factorial")
   @js.native
-  class Factorial protected ()
+  open class Factorial protected ()
     extends typingsJapgolly.samchon.mod.library.Factorial {
     /**
       * Construct from factorial size N.
@@ -30,8 +80,9 @@ object library extends js.Object {
     def this(n: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.Permutation")
   @js.native
-  class Permutation protected ()
+  open class Permutation protected ()
     extends typingsJapgolly.samchon.mod.library.Permutation {
     /**
       * Construct from size of N and R.
@@ -42,8 +93,9 @@ object library extends js.Object {
     def this(n: Double, r: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.RepeatedPermutation")
   @js.native
-  class RepeatedPermutation protected ()
+  open class RepeatedPermutation protected ()
     extends typingsJapgolly.samchon.mod.library.RepeatedPermutation {
     /**
       * Construct from size of N and R.
@@ -54,63 +106,41 @@ object library extends js.Object {
     def this(n: Double, r: Double) = this()
   }
   
+  @JSImport("samchon-framework", "library.StringUtil")
   @js.native
-  class StringUtil ()
+  open class StringUtil ()
     extends typingsJapgolly.samchon.mod.library.StringUtil
-  
-  /**
-    * URLVariables class is for representing variables of HTTP.
-    *
-    * {@link URLVariables} class allows you to transfer variables between an application and server.
-    *
-    * When transfering, {@link URLVariables} will be converted to a *URI* string.
-    * - URI: Uniform Resource Identifier
-    *
-    * @reference http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLVariables.html
-    * @author Migrated by Jeongho Nam <http://samchon.org>
-    */
-  @js.native
-  /**
-    * Default Constructor.
-    */
-  class URLVariables ()
-    extends typingsJapgolly.samchon.mod.library.URLVariables {
-    /**
-      * Construct from a URL-encoded string.
-      *
-      * The {@link decode decode()} method is automatically called to convert the string to properties of the {@link URLVariables} object.
-      *
-      * @param str A URL-encoded string containing name/value pairs.
-      */
-    def this(str: String) = this()
-  }
-  
-  @js.native
-  class XML ()
-    extends typingsJapgolly.samchon.mod.library.XML {
-    def this(str: String) = this()
-    def this(xml: typingsJapgolly.sxml.xmlMod.XML) = this()
-  }
-  
-  @js.native
-  class XMLList ()
-    extends typingsJapgolly.sxml.xmllistMod.XMLList
-  
   /* static members */
-  @js.native
-  object StringUtil extends js.Object {
+  object StringUtil {
+    
+    @JSImport("samchon-framework", "library.StringUtil")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * An array containing whitespaces.
       */
-    var SPACE_ARRAY: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil.SPACE_ARRAY")
+    @js.native
+    def SPACE_ARRAY: Any = js.native
+    inline def SPACE_ARRAY_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
+    
     /**
       * @hidden
       */
-    var _Fetch_substitute_index: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil._Fetch_substitute_index")
+    @js.native
+    def _Fetch_substitute_index: Any = js.native
+    inline def _Fetch_substitute_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
+    
     /**
       * @hidden
       */
-    var _Substitute_sql_string: js.Any = js.native
+    @JSImport("samchon-framework", "library.StringUtil._Substitute_sql_string")
+    @js.native
+    def _Substitute_sql_string: Any = js.native
+    inline def _Substitute_sql_string_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
+    
     /**
       * Generate a substring.
       *
@@ -132,9 +162,11 @@ object library extends js.Object {
       *
       * @return substring by specified terms.
       */
-    def between(str: String): String = js.native
-    def between(str: String, start: String): String = js.native
-    def between(str: String, start: String, end: String): String = js.native
+    inline def between(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def between(str: String, start: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def between(str: String, start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def between(str: String, start: Unit, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     /**
       * Fetch substrings.
       *
@@ -154,9 +186,11 @@ object library extends js.Object {
       *			  If omitted, it's same with split(start) not having first item.
       * @return An array of substrings.
       */
-    def betweens(str: String): js.Array[String] = js.native
-    def betweens(str: String, start: String): js.Array[String] = js.native
-    def betweens(str: String, start: String, end: String): js.Array[String] = js.native
+    inline def betweens(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: String, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: Unit, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    
     /**
       * Remove all designated characters from the beginning of the specified string.
       *
@@ -165,7 +199,8 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    def ltrim(str: String, args: String*): String = js.native
+    inline def ltrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
     /**
       * Number to formatted string with &quot;,&quot; sign.
       *
@@ -176,16 +211,19 @@ object library extends js.Object {
       *
       * @return A string who represents the number with roundoff and &quot;,&quot; symbols.
       */
-    def numberFormat(`val`: Double): String = js.native
-    def numberFormat(`val`: Double, precision: Double): String = js.native
-    def percentFormat(`val`: Double): String = js.native
-    def percentFormat(`val`: Double, precision: Double): String = js.native
+    inline def numberFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def numberFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    inline def percentFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def percentFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     /**
       * Replace all HTML spaces to a literal space.
       *
       * @param str Target string to replace.
       */
-    def removeHTMLSpaces(str: String): String = js.native
+    inline def removeHTMLSpaces(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHTMLSpaces")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
     /**
       * Repeat a string.
       *
@@ -196,7 +234,8 @@ object library extends js.Object {
       *
       * @return The repeated string.
       */
-    def repeat(str: String, n: Double): String = js.native
+    inline def repeat(str: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(str.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     /**
       * Returns a string specified word is replaced.
       *
@@ -206,7 +245,7 @@ object library extends js.Object {
       *
       * @return A string specified word is replaced
       */
-    def replaceAll(str: String, before: String, after: String): String = js.native
+    inline def replaceAll(str: String, before: String, after: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Returns a string specified words are replaced.
       *
@@ -215,7 +254,11 @@ object library extends js.Object {
       *
       * @return A string specified words are replaced
       */
-    def replaceAll(str: String, pairs: (Pair[String, String])*): String = js.native
+    inline def replaceAll(
+      str: String,
+      pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ Any)*
+    ): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(scala.List(str.asInstanceOf[js.Any]).`++`(pairs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
     /**
       * Remove all designated characters from the end of the specified string.
       *
@@ -224,7 +267,8 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    def rtrim(str: String, args: String*): String = js.native
+    inline def rtrim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
     /**
       * Substitute `{n}` tokens within the specified string.
       *
@@ -237,7 +281,8 @@ object library extends js.Object {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    def substitute(format: String, args: js.Any*): String = js.native
+    inline def substitute(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
       *
@@ -250,7 +295,8 @@ object library extends js.Object {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    def substituteSQL(format: String, args: js.Any*): String = js.native
+    inline def substituteSQL(format: String, args: Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(scala.List(format.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
+    
     /**
       * Remove all designated characters from the beginning and end of the specified string.
       *
@@ -259,38 +305,81 @@ object library extends js.Object {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    def trim(str: String, args: String*): String = js.native
+    inline def trim(str: String, args: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(scala.List(str.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String]
   }
   
+  @JSImport("samchon-framework", "library.URLVariables")
   @js.native
-  object URLVariables extends js.Object {
-    def parse[T](str: String): T = js.native
-    def parse[T](str: String, autoCase: Boolean): T = js.native
-    def stringify[T](obj: T): String = js.native
+  /**
+    * Default Constructor.
+    */
+  open class URLVariables ()
+    extends typingsJapgolly.samchon.mod.library.URLVariables {
+    /**
+      * Construct from a URL-encoded string.
+      *
+      * The {@link decode decode()} method is automatically called to convert the string to properties of the {@link URLVariables} object.
+      *
+      * @param str A URL-encoded string containing name/value pairs.
+      */
+    def this(str: String) = this()
+  }
+  object URLVariables {
+    
+    @JSImport("samchon-framework", "library.URLVariables")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def parse[T](str: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def parse[T](str: String, autoCase: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], autoCase.asInstanceOf[js.Any])).asInstanceOf[T]
+    
+    inline def stringify[T](obj: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
+  @JSImport("samchon-framework", "library.XML")
+  @js.native
+  open class XML ()
+    extends typingsJapgolly.samchon.mod.library.XML {
+    def this(str: String) = this()
+    def this(xml: typingsJapgolly.sxml.libModuleXmlMod.XML) = this()
+  }
   /* static members */
-  @js.native
-  object XML extends js.Object {
+  object XML {
+    
+    @JSImport("samchon-framework", "library.XML")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @hidden
       */
-    var _Compute_min_index: js.Any = js.native
+    @JSImport("samchon-framework", "library.XML._Compute_min_index")
+    @js.native
+    def _Compute_min_index: Any = js.native
+    inline def _Compute_min_index_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Compute_min_index")(x.asInstanceOf[js.Any])
+    
     /**
       * @hidden
       */
-    var _Repeat: js.Any = js.native
-    @JSName("decode_property")
-    def decodeProperty(str: String): String = js.native
-    @JSName("decode_value")
-    def decodeValue(str: String): String = js.native
-    @JSName("encode_property")
-    def encodeProperty(str: String): String = js.native
-    @JSName("encode_value")
-    def encodeValue(str: String): String = js.native
-    def head(): String = js.native
-    def head(encoding: String): String = js.native
+    @JSImport("samchon-framework", "library.XML._Repeat")
+    @js.native
+    def _Repeat: Any = js.native
+    inline def _Repeat_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
+    
+    inline def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+    inline def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
+  @JSImport("samchon-framework", "library.XMLList")
+  @js.native
+  open class XMLList ()
+    extends typingsJapgolly.samchon.mod.library.XMLList
 }
-

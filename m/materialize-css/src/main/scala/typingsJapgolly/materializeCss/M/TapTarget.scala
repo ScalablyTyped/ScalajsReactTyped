@@ -1,46 +1,50 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialTapTargetOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.TapTarget")
-@js.native
-class TapTarget () extends Component[TapTargetOptions] {
-  /**
-    * If the tap target is open
-    */
-  var isOpen: Boolean = js.native
+trait TapTarget
+  extends StObject
+     with Component[TapTargetOptions] {
+  
   /**
     * Close Tap Target
     */
-  def close(): Unit = js.native
+  def close(): Unit
+  
+  /**
+    * If the tap target is open
+    */
+  var isOpen: Boolean
+  
   /**
     * Open Tap Target
     */
-  def open(): Unit = js.native
+  def open(): Unit
 }
-
-/* static members */
-@JSGlobal("M.TapTarget")
-@js.native
-object TapTarget extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): TapTarget = js.native
-  /**
-    * Init TapTargets
-    */
-  def init(els: MElements): js.Array[TapTarget] = js.native
-  def init(els: MElements, options: PartialTapTargetOptions): js.Array[TapTarget] = js.native
-  /**
-    * Init TapTarget
-    */
-  def init(els: typingsJapgolly.std.Element): TapTarget = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialTapTargetOptions): TapTarget = js.native
+object TapTarget {
+  
+  inline def apply(
+    close: Callback,
+    destroy: Callback,
+    el: Element,
+    isOpen: Boolean,
+    open: Callback,
+    options: TapTargetOptions
+  ): TapTarget = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = open.toJsFn, options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TapTarget]
+  }
+  
+  extension [Self <: TapTarget](x: Self) {
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    
+    inline def setOpen(value: Callback): Self = StObject.set(x, "open", value.toJsFn)
+  }
 }
-

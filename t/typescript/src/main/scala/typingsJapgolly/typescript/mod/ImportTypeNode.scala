@@ -1,16 +1,23 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.ImportType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ImportTypeNode extends NodeWithTypeArguments {
-  var argument: TypeNode = js.native
-  var isTypeOf: js.UndefOr[Boolean] = js.native
+trait ImportTypeNode
+  extends StObject
+     with NodeWithTypeArguments {
+  
+  val argument: TypeNode = js.native
+  
+  val assertions: js.UndefOr[ImportTypeAssertionContainer] = js.native
+  
+  val isTypeOf: Boolean = js.native
+  
   @JSName("kind")
-  var kind_ImportTypeNode: ImportType = js.native
-  var qualifier: js.UndefOr[EntityName] = js.native
+  val kind_ImportTypeNode: ImportType = js.native
+  
+  val qualifier: js.UndefOr[EntityName] = js.native
 }
-

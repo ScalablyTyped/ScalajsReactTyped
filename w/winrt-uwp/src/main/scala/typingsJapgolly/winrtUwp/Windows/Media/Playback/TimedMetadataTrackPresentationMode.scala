@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Playback
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedMetadataTrackPresentationMode extends js.Object
-
+sealed trait TimedMetadataTrackPresentationMode extends StObject
 /** Specifies the presentation mode of a timed metadata track. */
 @JSGlobal("Windows.Media.Playback.TimedMetadataTrackPresentationMode")
 @js.native
-object TimedMetadataTrackPresentationMode extends js.Object {
+object TimedMetadataTrackPresentationMode extends StObject {
+  
   /** The timed metadata track is presented by the app. */
   @js.native
-  sealed trait applicationPresented extends TimedMetadataTrackPresentationMode
+  sealed trait applicationPresented
+    extends StObject
+       with TimedMetadataTrackPresentationMode
   
   /** The timed metadata track is not displayed and does not generate events. */
   @js.native
-  sealed trait disabled extends TimedMetadataTrackPresentationMode
+  sealed trait disabled
+    extends StObject
+       with TimedMetadataTrackPresentationMode
   
   /** The timed metadata track is hidden, but continues to generate events. */
   @js.native
-  sealed trait hidden extends TimedMetadataTrackPresentationMode
+  sealed trait hidden
+    extends StObject
+       with TimedMetadataTrackPresentationMode
   
   /** The timed metadata track is presented by the platform. */
   @js.native
-  sealed trait platformPresented extends TimedMetadataTrackPresentationMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedMetadataTrackPresentationMode with Double] = js.native
-  /* 2 */ @js.native
-  object applicationPresented extends TopLevel[applicationPresented with Double]
-  
-  /* 0 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 1 */ @js.native
-  object hidden extends TopLevel[hidden with Double]
-  
-  /* 3 */ @js.native
-  object platformPresented extends TopLevel[platformPresented with Double]
-  
+  sealed trait platformPresented
+    extends StObject
+       with TimedMetadataTrackPresentationMode
 }
-

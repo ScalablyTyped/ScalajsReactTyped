@@ -1,33 +1,41 @@
 package typingsJapgolly.fmWebsync.fm.websync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait streamFailureArgs extends baseResponseArgs {
+trait streamFailureArgs
+  extends StObject
+     with baseResponseArgs {
+  
   /**
     * The error generated while completing the request.
     */
   var error: String
+  
   /**
     * Whether the client will automatically reconnect after the callback returns.
     */
   var willReconnect: Boolean
 }
-
 object streamFailureArgs {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     client: client,
     clientId: String,
     error: String,
-    meta: js.Any,
+    meta: Any,
     timestamp: js.Date,
     willReconnect: Boolean
   ): streamFailureArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any], willReconnect = willReconnect.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[streamFailureArgs]
   }
+  
+  extension [Self <: streamFailureArgs](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setWillReconnect(value: Boolean): Self = StObject.set(x, "willReconnect", value.asInstanceOf[js.Any])
+  }
 }
-

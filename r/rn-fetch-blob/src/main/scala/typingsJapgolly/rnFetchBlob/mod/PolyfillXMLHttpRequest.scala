@@ -1,32 +1,34 @@
 package typingsJapgolly.rnFetchBlob.mod
 
+import org.scalajs.dom.Event
 import typingsJapgolly.rnFetchBlob.rnFetchBlobBooleans.`true`
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
+trait PolyfillXMLHttpRequest
+  extends StObject
+     with PolyfillXMLHttpRequestEventTarget {
+  
   val DONE: Double = js.native
+  
   val HEADERS_RECEIVED: Double = js.native
+  
   val LOADING: Double = js.native
+  
   val OPENED: Double = js.native
+  
   val UNSENT: Double = js.native
-  var readyState: Double = js.native
-  var response: js.Any = js.native
-  var responseHeaders: js.Any = js.native
-  var responseText: js.Any = js.native
-  var responseType: String = js.native
-  var responseURL: String = js.native
-  var status: Double = js.native
-  var statusText: String = js.native
-  var timeout: Double = js.native
-  var upload: PolyfillXMLHttpRequestEventTarget = js.native
+  
   def abort(): Unit = js.native
+  
   def getAllResponseHeaders(): String | Null = js.native
+  
   def getResponseHeader(field: String): String | Null = js.native
-  def onreadystatechange(e: Event_): Unit = js.native
+  
+  def onreadystatechange(e: Event): Unit = js.native
+  
   /**
     * XMLHttpRequest.open, always async, user and password not supported. When
     * this method invoked, headers should becomes empty again.
@@ -37,27 +39,71 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
     * @param  password NOT SUPPORTED
     */
   @JSName("open")
-  def open_true(method: String, url: String, async: `true`, user: js.Any, password: js.Any): Unit = js.native
+  def open_true(method: String, url: String, async: `true`, user: Any, password: Any): Unit = js.native
+  
   def overrideMimeType(mime: String): Unit = js.native
+  
+  var readyState: Double = js.native
+  
+  var response: Any = js.native
+  
+  var responseHeaders: Any = js.native
+  
+  var responseText: Any = js.native
+  
+  var responseType: String = js.native
+  
+  var responseURL: String = js.native
+  
   /**
     * Invoke this function to send HTTP request, and set body.
     * @param body Body in RNfetchblob flavor
     */
-  def send(body: js.Any): Unit = js.native
+  def send(body: Any): Unit = js.native
+  
   def setRequestHeader(name: String, value: String): Unit = js.native
+  
+  var status: Double = js.native
+  
+  var statusText: String = js.native
+  
+  var timeout: Double = js.native
+  
+  var upload: PolyfillXMLHttpRequestEventTarget = js.native
 }
-
-@JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest")
-@js.native
-object PolyfillXMLHttpRequest extends js.Object {
+object PolyfillXMLHttpRequest {
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.DONE")
+  @js.native
   val DONE: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.HEADERS_RECEIVED")
+  @js.native
   val HEADERS_RECEIVED: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.LOADING")
+  @js.native
   val LOADING: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.OPENED")
+  @js.native
   val OPENED: Double = js.native
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.UNSENT")
+  @js.native
   val UNSENT: Double = js.native
+  
+  inline def addBinaryContentType(substr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinaryContentType")(substr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("rn-fetch-blob", "PolyfillXMLHttpRequest.binaryContentTypes")
+  @js.native
   val binaryContentTypes: js.Array[String] = js.native
-  def addBinaryContentType(substr: String): Unit = js.native
-  def removeBinaryContentType(): Unit = js.native
-  def setLog(level: Double): Unit = js.native
+  
+  inline def removeBinaryContentType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBinaryContentType")().asInstanceOf[Unit]
+  
+  inline def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

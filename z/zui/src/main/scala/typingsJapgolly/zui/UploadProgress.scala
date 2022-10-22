@@ -1,39 +1,60 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadProgress extends js.Object {
+trait UploadProgress extends StObject {
+  
   var bytesPerSec: js.UndefOr[Double] = js.undefined
+  
   var failed: js.UndefOr[Double] = js.undefined
+  
   var loaded: js.UndefOr[Double] = js.undefined
+  
   var percent: js.UndefOr[Double] = js.undefined
+  
   var queued: js.UndefOr[Double] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
+  
   var uploaded: js.UndefOr[Double] = js.undefined
 }
-
 object UploadProgress {
-  @scala.inline
-  def apply(
-    bytesPerSec: Int | Double = null,
-    failed: Int | Double = null,
-    loaded: Int | Double = null,
-    percent: Int | Double = null,
-    queued: Int | Double = null,
-    size: Int | Double = null,
-    uploaded: Int | Double = null
-  ): UploadProgress = {
+  
+  inline def apply(): UploadProgress = {
     val __obj = js.Dynamic.literal()
-    if (bytesPerSec != null) __obj.updateDynamic("bytesPerSec")(bytesPerSec.asInstanceOf[js.Any])
-    if (failed != null) __obj.updateDynamic("failed")(failed.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (queued != null) __obj.updateDynamic("queued")(queued.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uploaded != null) __obj.updateDynamic("uploaded")(uploaded.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadProgress]
   }
+  
+  extension [Self <: UploadProgress](x: Self) {
+    
+    inline def setBytesPerSec(value: Double): Self = StObject.set(x, "bytesPerSec", value.asInstanceOf[js.Any])
+    
+    inline def setBytesPerSecUndefined: Self = StObject.set(x, "bytesPerSec", js.undefined)
+    
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    
+    inline def setFailedUndefined: Self = StObject.set(x, "failed", js.undefined)
+    
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    
+    inline def setQueued(value: Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    
+    inline def setQueuedUndefined: Self = StObject.set(x, "queued", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUploaded(value: Double): Self = StObject.set(x, "uploaded", value.asInstanceOf[js.Any])
+    
+    inline def setUploadedUndefined: Self = StObject.set(x, "uploaded", js.undefined)
+  }
 }
-

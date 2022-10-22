@@ -1,49 +1,80 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataItem extends js.Object {
+trait DataItem extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var content: String
+  
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   var end: js.UndefOr[DateType] = js.undefined
-  var group: js.UndefOr[js.Any] = js.undefined
+  
+  var group: js.UndefOr[Any] = js.undefined
+  
   var id: js.UndefOr[IdType] = js.undefined
+  
   var start: DateType
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var subgroup: js.UndefOr[SubgroupType] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object DataItem {
-  @scala.inline
-  def apply(
-    content: String,
-    start: DateType,
-    className: String = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    end: DateType = null,
-    group: js.Any = null,
-    id: IdType = null,
-    style: String = null,
-    subgroup: SubgroupType = null,
-    title: String = null,
-    `type`: String = null
-  ): DataItem = {
+  
+  inline def apply(content: String, start: DateType): DataItem = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subgroup != null) __obj.updateDynamic("subgroup")(subgroup.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataItem]
   }
+  
+  extension [Self <: DataItem](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setGroup(value: Any): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setId(value: IdType): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setStart(value: DateType): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setSubgroup(value: SubgroupType): Self = StObject.set(x, "subgroup", value.asInstanceOf[js.Any])
+    
+    inline def setSubgroupUndefined: Self = StObject.set(x, "subgroup", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,26 +1,32 @@
 package typingsJapgolly.winrtUwp.Windows.Management.Deployment
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Management.Deployment.Preview")
-@js.native
-object Preview extends js.Object {
-  @js.native
-  abstract class ClassicAppManager () extends js.Object
+object Preview {
   
-  @js.native
-  abstract class InstalledClassicAppInfo () extends js.Object {
-    var displayName: js.Any = js.native
-     /* unmapped type */ var displayVersion: js.Any = js.native
+  trait ClassicAppManager extends StObject
+  
+  trait InstalledClassicAppInfo extends StObject {
+    
+    var displayName: Any
+    
+    /* unmapped type */
+    var displayVersion: Any
   }
-  
-  /* static members */
-  @js.native
-  object ClassicAppManager extends js.Object {
-    var findInstalledApp: js.Any = js.native
+  object InstalledClassicAppInfo {
+    
+    inline def apply(displayName: Any, displayVersion: Any): InstalledClassicAppInfo = {
+      val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], displayVersion = displayVersion.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InstalledClassicAppInfo]
+    }
+    
+    extension [Self <: InstalledClassicAppInfo](x: Self) {
+      
+      inline def setDisplayName(value: Any): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      
+      inline def setDisplayVersion(value: Any): Self = StObject.set(x, "displayVersion", value.asInstanceOf[js.Any])
+    }
   }
-  
 }
-

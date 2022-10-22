@@ -1,25 +1,42 @@
 package typingsJapgolly.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RGBA extends js.Object {
+trait RGBA extends StObject {
+  
   var alpha: js.UndefOr[Double] = js.undefined
+  
   var b: js.UndefOr[Double] = js.undefined
+  
   var g: js.UndefOr[Double] = js.undefined
+  
   var r: js.UndefOr[Double] = js.undefined
 }
-
 object RGBA {
-  @scala.inline
-  def apply(alpha: Int | Double = null, b: Int | Double = null, g: Int | Double = null, r: Int | Double = null): RGBA = {
+  
+  inline def apply(): RGBA = {
     val __obj = js.Dynamic.literal()
-    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (g != null) __obj.updateDynamic("g")(g.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
     __obj.asInstanceOf[RGBA]
   }
+  
+  extension [Self <: RGBA](x: Self) {
+    
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    
+    inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    
+    inline def setGUndefined: Self = StObject.set(x, "g", js.undefined)
+    
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+  }
 }
-

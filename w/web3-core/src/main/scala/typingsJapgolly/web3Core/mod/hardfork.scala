@@ -1,8 +1,8 @@
 package typingsJapgolly.web3Core.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.web3Core.web3CoreStrings.chainstart
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.web3Core.web3CoreStrings.petersburg
   - typingsJapgolly.web3Core.web3CoreStrings.istanbul
 */
-trait hardfork extends js.Object
-
+trait hardfork extends StObject
 object hardfork {
-  @scala.inline
-  def byzantium: typingsJapgolly.web3Core.web3CoreStrings.byzantium = this.cast("byzantium")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def chainstart: typingsJapgolly.web3Core.web3CoreStrings.chainstart = this.cast("chainstart")
-  @scala.inline
-  def constantinople: typingsJapgolly.web3Core.web3CoreStrings.constantinople = this.cast("constantinople")
-  @scala.inline
-  def dao: typingsJapgolly.web3Core.web3CoreStrings.dao = this.cast("dao")
-  @scala.inline
-  def homestead: typingsJapgolly.web3Core.web3CoreStrings.homestead = this.cast("homestead")
-  @scala.inline
-  def istanbul: typingsJapgolly.web3Core.web3CoreStrings.istanbul = this.cast("istanbul")
-  @scala.inline
-  def petersburg: typingsJapgolly.web3Core.web3CoreStrings.petersburg = this.cast("petersburg")
-  @scala.inline
-  def spuriousDragon: typingsJapgolly.web3Core.web3CoreStrings.spuriousDragon = this.cast("spuriousDragon")
-  @scala.inline
-  def tangerineWhistle: typingsJapgolly.web3Core.web3CoreStrings.tangerineWhistle = this.cast("tangerineWhistle")
+  
+  inline def byzantium: typingsJapgolly.web3Core.web3CoreStrings.byzantium = "byzantium".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.byzantium]
+  
+  inline def chainstart: typingsJapgolly.web3Core.web3CoreStrings.chainstart = "chainstart".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.chainstart]
+  
+  inline def constantinople: typingsJapgolly.web3Core.web3CoreStrings.constantinople = "constantinople".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.constantinople]
+  
+  inline def dao: typingsJapgolly.web3Core.web3CoreStrings.dao = "dao".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.dao]
+  
+  inline def homestead: typingsJapgolly.web3Core.web3CoreStrings.homestead = "homestead".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.homestead]
+  
+  inline def istanbul: typingsJapgolly.web3Core.web3CoreStrings.istanbul = "istanbul".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.istanbul]
+  
+  inline def petersburg: typingsJapgolly.web3Core.web3CoreStrings.petersburg = "petersburg".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.petersburg]
+  
+  inline def spuriousDragon: typingsJapgolly.web3Core.web3CoreStrings.spuriousDragon = "spuriousDragon".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.spuriousDragon]
+  
+  inline def tangerineWhistle: typingsJapgolly.web3Core.web3CoreStrings.tangerineWhistle = "tangerineWhistle".asInstanceOf[typingsJapgolly.web3Core.web3CoreStrings.tangerineWhistle]
 }
-

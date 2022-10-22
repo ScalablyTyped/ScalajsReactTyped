@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.offline
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.online
 */
-trait MicrosoftStoreForBusinessLicenseType extends js.Object
-
+trait MicrosoftStoreForBusinessLicenseType extends StObject
 object MicrosoftStoreForBusinessLicenseType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def offline: typingsJapgolly.microsoftGraph.microsoftGraphStrings.offline = this.cast("offline")
-  @scala.inline
-  def online: typingsJapgolly.microsoftGraph.microsoftGraphStrings.online = this.cast("online")
+  
+  inline def offline: typingsJapgolly.microsoftGraph.microsoftGraphStrings.offline = "offline".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.offline]
+  
+  inline def online: typingsJapgolly.microsoftGraph.microsoftGraphStrings.online = "online".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.online]
 }
-

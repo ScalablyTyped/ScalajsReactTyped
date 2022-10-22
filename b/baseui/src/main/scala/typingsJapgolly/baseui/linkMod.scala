@@ -1,13 +1,18 @@
 package typingsJapgolly.baseui
 
-import typingsJapgolly.react.mod.FC
+import typingsJapgolly.baseui.anon.AnimateUnderline
+import typingsJapgolly.baseui.baseuiStrings.a
+import typingsJapgolly.react.mod.ComponentProps
+import typingsJapgolly.styletronReact.libTypesMod.StyletronComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/link", JSImport.Namespace)
-@js.native
-object linkMod extends js.Object {
-  val StyledLink: FC[js.Any] = js.native
+object linkMod {
+  
+  @JSImport("baseui/link", "StyledLink")
+  @js.native
+  val StyledLink: StyletronComponent[a, AnimateUnderline] = js.native
+  
+  type LinkProps = ComponentProps[StyletronComponent[a, AnimateUnderline]]
 }
-

@@ -1,24 +1,23 @@
-package typingsJapgolly.request
+package typingsJapgolly.request.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Cookie = typingsJapgolly.toughCookie.mod.Cookie
-  type Headers = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type MultipartBody = java.lang.String | typingsJapgolly.node.Buffer | scala.scalajs.js.typedarray.ArrayBuffer | scala.scalajs.js.typedarray.Uint8Array
-  type OptionalUriUrl = typingsJapgolly.request.mod.RequiredUriUrl | js.Object
-  type Options = typingsJapgolly.request.mod.OptionsWithUri | typingsJapgolly.request.mod.OptionsWithUrl
-  type OptionsWithUri = typingsJapgolly.request.mod.UriOptions with typingsJapgolly.request.mod.CoreOptions
-  type OptionsWithUrl = typingsJapgolly.request.mod.UrlOptions with typingsJapgolly.request.mod.CoreOptions
-  type RequestCallback = js.Function3[
-    /* error */ js.Any, 
-    /* response */ typingsJapgolly.request.mod.Response, 
-    /* body */ js.Any, 
-    scala.Unit
-  ]
-  type RequestResponse = typingsJapgolly.request.mod.Response
-  // aliases for backwards compatibility
-  type ResponseRequest = typingsJapgolly.request.mod.Request
-}
+
+type Cookie = typingsJapgolly.toughCookie.mod.Cookie
+
+type Headers = StringDictionary[Any]
+
+type MultipartBody = String | Buffer | js.typedarray.ArrayBuffer | js.typedarray.Uint8Array
+
+type OptionalUriUrl = RequiredUriUrl | js.Object
+
+type RequestCallback = js.Function3[/* error */ Any, /* response */ Response, /* body */ Any, Unit]
+
+type RequestResponse = Response
+
+// aliases for backwards compatibility
+type ResponseRequest = Request

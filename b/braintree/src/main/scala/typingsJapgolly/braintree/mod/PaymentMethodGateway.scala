@@ -1,38 +1,50 @@
 package typingsJapgolly.braintree.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.braintree.AnonAllowVaulting
+import typingsJapgolly.braintree.anon.AllowVaulting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentMethodGateway extends js.Object {
+trait PaymentMethodGateway extends StObject {
+  
   def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
+  
   def delete(token: String): js.Promise[Unit]
+  
   def find(token: String): js.Promise[PaymentMethod]
-  def grant(sharedPaymentMethodToken: String, options: AnonAllowVaulting): js.Promise[String]
+  
+  def grant(sharedPaymentMethodToken: String, options: AllowVaulting): js.Promise[ValidatedResponse[PaymentMethodNonce]]
+  
   def revoke(sharedPaymentMethodToken: String): js.Promise[Unit]
+  
   def update(token: String, updates: PaymentMethodUpdateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
 }
-
 object PaymentMethodGateway {
-  @scala.inline
-  def apply(
-    create: PaymentMethodCreateRequest => CallbackTo[js.Promise[ValidatedResponse[PaymentMethod]]],
-    delete: String => CallbackTo[js.Promise[Unit]],
-    find: String => CallbackTo[js.Promise[PaymentMethod]],
-    grant: (String, AnonAllowVaulting) => CallbackTo[js.Promise[String]],
-    revoke: String => CallbackTo[js.Promise[Unit]],
-    update: (String, PaymentMethodUpdateRequest) => CallbackTo[js.Promise[ValidatedResponse[PaymentMethod]]]
+  
+  inline def apply(
+    create: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]],
+    delete: String => js.Promise[Unit],
+    find: String => js.Promise[PaymentMethod],
+    grant: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]],
+    revoke: String => js.Promise[Unit],
+    update: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]
   ): PaymentMethodGateway = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("create")(js.Any.fromFunction1((t0: typingsJapgolly.braintree.mod.PaymentMethodCreateRequest) => create(t0).runNow()))
-    __obj.updateDynamic("delete")(js.Any.fromFunction1((t0: java.lang.String) => delete(t0).runNow()))
-    __obj.updateDynamic("find")(js.Any.fromFunction1((t0: java.lang.String) => find(t0).runNow()))
-    __obj.updateDynamic("grant")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.braintree.AnonAllowVaulting) => grant(t0, t1).runNow()))
-    __obj.updateDynamic("revoke")(js.Any.fromFunction1((t0: java.lang.String) => revoke(t0).runNow()))
-    __obj.updateDynamic("update")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.braintree.mod.PaymentMethodUpdateRequest) => update(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), delete = js.Any.fromFunction1(delete), find = js.Any.fromFunction1(find), grant = js.Any.fromFunction2(grant), revoke = js.Any.fromFunction1(revoke), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[PaymentMethodGateway]
   }
+  
+  extension [Self <: PaymentMethodGateway](x: Self) {
+    
+    inline def setCreate(value: PaymentMethodCreateRequest => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    
+    inline def setFind(value: String => js.Promise[PaymentMethod]): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
+    
+    inline def setGrant(value: (String, AllowVaulting) => js.Promise[ValidatedResponse[PaymentMethodNonce]]): Self = StObject.set(x, "grant", js.Any.fromFunction2(value))
+    
+    inline def setRevoke(value: String => js.Promise[Unit]): Self = StObject.set(x, "revoke", js.Any.fromFunction1(value))
+    
+    inline def setUpdate(value: (String, PaymentMethodUpdateRequest) => js.Promise[ValidatedResponse[PaymentMethod]]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+  }
 }
-

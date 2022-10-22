@@ -2,60 +2,69 @@ package typingsJapgolly.swPrecache
 
 import typingsJapgolly.swPrecache.mod.Method
 import typingsJapgolly.swPrecache.mod._Handler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swPrecacheStrings {
-  @js.native
-  sealed trait cacheFirst extends _Handler
   
   @js.native
-  sealed trait cacheOnly extends _Handler
+  sealed trait cacheFirst
+    extends StObject
+       with _Handler
+  inline def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]
   
   @js.native
-  sealed trait delete extends Method
+  sealed trait cacheOnly
+    extends StObject
+       with _Handler
+  inline def cacheOnly: cacheOnly = "cacheOnly".asInstanceOf[cacheOnly]
   
   @js.native
-  sealed trait fastest extends _Handler
+  sealed trait delete
+    extends StObject
+       with Method
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait get extends Method
+  sealed trait fastest
+    extends StObject
+       with _Handler
+  inline def fastest: fastest = "fastest".asInstanceOf[fastest]
   
   @js.native
-  sealed trait head extends Method
+  sealed trait get
+    extends StObject
+       with Method
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait networkFirst extends _Handler
+  sealed trait head
+    extends StObject
+       with Method
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait networkOnly extends _Handler
+  sealed trait networkFirst
+    extends StObject
+       with _Handler
+  inline def networkFirst: networkFirst = "networkFirst".asInstanceOf[networkFirst]
   
   @js.native
-  sealed trait post extends Method
+  sealed trait networkOnly
+    extends StObject
+       with _Handler
+  inline def networkOnly: networkOnly = "networkOnly".asInstanceOf[networkOnly]
   
   @js.native
-  sealed trait put extends Method
+  sealed trait post
+    extends StObject
+       with Method
+  inline def post: post = "post".asInstanceOf[post]
   
-  @scala.inline
-  def cacheFirst: cacheFirst = "cacheFirst".asInstanceOf[cacheFirst]
-  @scala.inline
-  def cacheOnly: cacheOnly = "cacheOnly".asInstanceOf[cacheOnly]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def fastest: fastest = "fastest".asInstanceOf[fastest]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def networkFirst: networkFirst = "networkFirst".asInstanceOf[networkFirst]
-  @scala.inline
-  def networkOnly: networkOnly = "networkOnly".asInstanceOf[networkOnly]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  @js.native
+  sealed trait put
+    extends StObject
+       with Method
+  inline def put: put = "put".asInstanceOf[put]
 }
-

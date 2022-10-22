@@ -2,16 +2,16 @@ package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
 import typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod.Options
 import typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Analyze various features of text content at scale. Provide text, raw HTML, or a public URL and IBM Watson Natural Language Understanding will give you results for the features you request. The service cleans HTML content before analysis by default, so the results can ignore most advertisements and other unwanted content.  You can create [custom models](https://cloud.ibm.com/docs/services/natural-language-understanding/customizing.html) with Watson Knowledge Studio to detect custom entities, relations, and categories in Natural Language Understanding.
   */
 @JSImport("watson-developer-cloud/sdk", "NaturalLanguageUnderstandingV1")
 @js.native
-class NaturalLanguageUnderstandingV1 protected () extends ^ {
+open class NaturalLanguageUnderstandingV1 protected () extends ^ {
   /**
     * Construct a NaturalLanguageUnderstandingV1 object.
     *
@@ -32,11 +32,15 @@ class NaturalLanguageUnderstandingV1 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "NaturalLanguageUnderstandingV1")
-@js.native
-object NaturalLanguageUnderstandingV1 extends js.Object {
-  var URL: String = js.native
+object NaturalLanguageUnderstandingV1 {
+  
+  @JSImport("watson-developer-cloud/sdk", "NaturalLanguageUnderstandingV1")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "NaturalLanguageUnderstandingV1.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

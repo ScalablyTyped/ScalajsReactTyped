@@ -1,23 +1,28 @@
 package typingsJapgolly.remarkable.libMod
 
 import typingsJapgolly.remarkable.remarkableStrings.dt_close
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait DtCloseToken extends TagToken {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait DtCloseToken
+  extends StObject
+     with TagToken {
+  
   @JSName("type")
   var type_DtCloseToken: dt_close
 }
-
 object DtCloseToken {
-  @scala.inline
-  def apply(level: Double, `type`: dt_close, lines: js.Tuple2[Double, Double] = null): DtCloseToken = {
+  
+  inline def apply(level: Double): DtCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dt_close")
     __obj.asInstanceOf[DtCloseToken]
   }
+  
+  extension [Self <: DtCloseToken](x: Self) {
+    
+    inline def setType(value: dt_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

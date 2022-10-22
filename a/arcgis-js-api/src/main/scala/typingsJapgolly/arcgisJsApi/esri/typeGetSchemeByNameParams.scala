@@ -1,82 +1,113 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`point-cloud-class`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.dark
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.default_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.light
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.mesh
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipatch
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait typeGetSchemeByNameParams extends Object {
+trait typeGetSchemeByNameParams
+  extends StObject
+     with Object {
+  
   /**
-    * The basemap to pair with the visualization. This value indicates the best symbol color for visualizing features with the given basemap.
+    * The basemap to pair with the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
     */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
+  
   /**
-    * If you have a non-Esri basemap (e.g. a VectorTileLayer basemap with a custom style) or no basemap at all, use this parameter to indicate whether the background of the visualization is `light` or `dark`.  **Possible Values:** light | dark
+    * If you have a non-Esri basemap (e.g.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
     */
-  var basemapTheme: js.UndefOr[String] = js.undefined
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
+  
   /**
-    * The geometry type of the features to visualize.  **Possible Values:** point | multipoint | polyline | polygon | mesh
+    * The geometry type of the features to visualize.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * [Read more...](global.html#geometryType)
     */
-  var geometryType: String
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
+  
   /**
     * The name of the scheme to retrieve.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
     */
   var name: String
+  
   /**
-    * Determines whether to return a standardized  unique value scheme for point cloud class renderers (i.e. when the `CLASS_CODE` field is driving the visualization in a [PointCloudLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-PointCloudLayer.html)), or to return the other default primary schemes used in other unique value renderers generated for non-point cloud layer types.  **Possible Values:** point-cloud-class | default
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * Determines whether to return a standardized  unique value scheme for point cloud class renderers (i.e.
     *
     * @default default
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[`point-cloud-class` | default_] = js.undefined
+  
   /**
-    * The SceneView instance in which the scheme will be used. This property is only applicable when the scheme will be used in conjunction with 3D symbols.
+    * The SceneView instance in which the scheme will be used.
     *
     * [Read more...](global.html)
     */
   var view: js.UndefOr[SceneView] = js.undefined
+  
   /**
-    * Indicates if the size units of the scheme will be in meters. This should be `true` when the scheme is intended for 3D volumetric symbology. A `view` must be provided if this property is set to `true`.
+    * Indicates if the size units of the scheme will be in meters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-type.html#getSchemeByName)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-type.html#getSchemeByName)
     */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
-
 object typeGetSchemeByNameParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    geometryType: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    geometryType: point | multipoint | polyline | polygon | mesh | multipatch,
+    hasOwnProperty: PropertyKey => Boolean,
     name: String,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    basemap: String | Basemap = null,
-    basemapTheme: String = null,
-    theme: String = null,
-    view: SceneView = null,
-    worldScale: js.UndefOr[Boolean] = js.undefined
+    propertyIsEnumerable: PropertyKey => Boolean
   ): typeGetSchemeByNameParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (basemapTheme != null) __obj.updateDynamic("basemapTheme")(basemapTheme.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), name = name.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[typeGetSchemeByNameParams]
   }
+  
+  extension [Self <: typeGetSchemeByNameParams](x: Self) {
+    
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapTheme(value: light | dark): Self = StObject.set(x, "basemapTheme", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapThemeUndefined: Self = StObject.set(x, "basemapTheme", js.undefined)
+    
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    
+    inline def setGeometryType(value: point | multipoint | polyline | polygon | mesh | multipatch): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setTheme(value: `point-cloud-class` | default_): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setView(value: SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+  }
 }
-

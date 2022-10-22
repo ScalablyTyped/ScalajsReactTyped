@@ -1,35 +1,57 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.SelectionChanged event.
   */
-@JSGlobal("ASPxClientCardViewSelectionEventArgs")
-@js.native
-class ASPxClientCardViewSelectionEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewSelectionEventArgs class.
-    * @param visibleIndex An integer value that specifies the visible index of the card whose selected state has been changed. This value is assigned to the ASPxClientCardViewSelectionEventArgs.visibleIndex property.
-    */
-  def this(visibleIndex: Double) = this()
+trait ASPxClientCardViewSelectionEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets whether all cards displayed within a page have been selected or unselected.
     */
-  var isAllRecordsOnPage: Boolean = js.native
+  var isAllRecordsOnPage: Boolean
+  
   /**
     * Gets whether a selection has been changed on the server.
     */
-  var isChangedOnServer: Boolean = js.native
+  var isChangedOnServer: Boolean
+  
   /**
     * Gets whether the card has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
+  
   /**
     * Gets the visible index of the card whose selected state has been changed.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientCardViewSelectionEventArgs {
+  
+  inline def apply(
+    isAllRecordsOnPage: Boolean,
+    isChangedOnServer: Boolean,
+    isSelected: Boolean,
+    processOnServer: Boolean,
+    visibleIndex: Double
+  ): ASPxClientCardViewSelectionEventArgs = {
+    val __obj = js.Dynamic.literal(isAllRecordsOnPage = isAllRecordsOnPage.asInstanceOf[js.Any], isChangedOnServer = isChangedOnServer.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewSelectionEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCardViewSelectionEventArgs](x: Self) {
+    
+    inline def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
+    
+    inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
+    
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

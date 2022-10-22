@@ -1,17 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect.Services
 
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returned when a WiFiDirectServiceAdvertiser.AutoAcceptSessionConnected event is raised. */
-@JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceAutoAcceptSessionConnectedEventArgs")
-@js.native
-abstract class WiFiDirectServiceAutoAcceptSessionConnectedEventArgs () extends js.Object {
+trait WiFiDirectServiceAutoAcceptSessionConnectedEventArgs extends StObject {
+  
   /** Gets the WiFiDirectServiceSession that was created when the connection was automatically accepted. */
-  var session: WiFiDirectServiceSession = js.native
+  var session: WiFiDirectServiceSession
+  
   /** Gets the session information buffer that corresponds to this automatically accepted connection. */
-  var sessionInfo: IBuffer = js.native
+  var sessionInfo: IBuffer
 }
-
+object WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
+  
+  inline def apply(session: WiFiDirectServiceSession, sessionInfo: IBuffer): WiFiDirectServiceAutoAcceptSessionConnectedEventArgs = {
+    val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], sessionInfo = sessionInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WiFiDirectServiceAutoAcceptSessionConnectedEventArgs]
+  }
+  
+  extension [Self <: WiFiDirectServiceAutoAcceptSessionConnectedEventArgs](x: Self) {
+    
+    inline def setSession(value: WiFiDirectServiceSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    
+    inline def setSessionInfo(value: IBuffer): Self = StObject.set(x, "sessionInfo", value.asInstanceOf[js.Any])
+  }
+}

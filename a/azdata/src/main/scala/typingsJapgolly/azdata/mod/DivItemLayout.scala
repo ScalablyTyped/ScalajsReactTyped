@@ -1,28 +1,36 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DivItemLayout extends js.Object {
+trait DivItemLayout extends StObject {
+  
   /**
-  		 * Matches the CSS style key and its available values.
-  		 */
-  var CSSStyles: js.UndefOr[StringDictionary[String]] = js.undefined
+    * Matches the CSS style key and its available values.
+    */
+  var CSSStyles: js.UndefOr[CssStyles] = js.undefined
+  
   /**
-  		 * Matches the order CSS property and its available values.
-  		 */
+    * Matches the order CSS property and its available values.
+    */
   var order: js.UndefOr[Double] = js.undefined
 }
-
 object DivItemLayout {
-  @scala.inline
-  def apply(CSSStyles: StringDictionary[String] = null, order: Int | Double = null): DivItemLayout = {
+  
+  inline def apply(): DivItemLayout = {
     val __obj = js.Dynamic.literal()
-    if (CSSStyles != null) __obj.updateDynamic("CSSStyles")(CSSStyles.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
     __obj.asInstanceOf[DivItemLayout]
   }
+  
+  extension [Self <: DivItemLayout](x: Self) {
+    
+    inline def setCSSStyles(value: CssStyles): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    
+    inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
+    
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+  }
 }
-

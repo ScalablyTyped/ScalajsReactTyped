@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single choice associated with a type of Item that supports choices, like CheckboxItem, ListItem, or MultipleChoiceItem.
@@ -28,27 +28,36 @@ import scala.scalajs.js.annotation._
   *                choices[i].getPageNavigationType());
   *     }
   */
-trait Choice extends js.Object {
+trait Choice extends StObject {
+  
   def getGotoPage(): PageBreakItem
+  
   def getPageNavigationType(): PageNavigationType
+  
   def getValue(): String
+  
   def isCorrectAnswer(): Boolean
 }
-
 object Choice {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getGotoPage: CallbackTo[PageBreakItem],
     getPageNavigationType: CallbackTo[PageNavigationType],
     getValue: CallbackTo[String],
     isCorrectAnswer: CallbackTo[Boolean]
   ): Choice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getGotoPage")(getGotoPage.toJsFn)
-    __obj.updateDynamic("getPageNavigationType")(getPageNavigationType.toJsFn)
-    __obj.updateDynamic("getValue")(getValue.toJsFn)
-    __obj.updateDynamic("isCorrectAnswer")(isCorrectAnswer.toJsFn)
+    val __obj = js.Dynamic.literal(getGotoPage = getGotoPage.toJsFn, getPageNavigationType = getPageNavigationType.toJsFn, getValue = getValue.toJsFn, isCorrectAnswer = isCorrectAnswer.toJsFn)
     __obj.asInstanceOf[Choice]
   }
+  
+  extension [Self <: Choice](x: Self) {
+    
+    inline def setGetGotoPage(value: CallbackTo[PageBreakItem]): Self = StObject.set(x, "getGotoPage", value.toJsFn)
+    
+    inline def setGetPageNavigationType(value: CallbackTo[PageNavigationType]): Self = StObject.set(x, "getPageNavigationType", value.toJsFn)
+    
+    inline def setGetValue(value: CallbackTo[String]): Self = StObject.set(x, "getValue", value.toJsFn)
+    
+    inline def setIsCorrectAnswer(value: CallbackTo[Boolean]): Self = StObject.set(x, "isCorrectAnswer", value.toJsFn)
+  }
 }
-

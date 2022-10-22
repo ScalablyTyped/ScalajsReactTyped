@@ -1,37 +1,26 @@
 package typingsJapgolly.qlik.mod
 
-import typingsJapgolly.qlik.qlikStrings.array
-import typingsJapgolly.qlik.qlikStrings.boolean
-import typingsJapgolly.qlik.qlikStrings.integer
-import typingsJapgolly.qlik.qlikStrings.items
-import typingsJapgolly.qlik.qlikStrings.number
-import typingsJapgolly.qlik.qlikStrings.string
 import typingsJapgolly.qlik.qlikStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CustomPropertyText
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
+  
   var component: text
 }
-
 object CustomPropertyText {
-  @scala.inline
-  def apply(
-    component: text,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null
-  ): CustomPropertyText = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(): CustomPropertyText = {
+    val __obj = js.Dynamic.literal(component = "text")
     __obj.asInstanceOf[CustomPropertyText]
   }
+  
+  extension [Self <: CustomPropertyText](x: Self) {
+    
+    inline def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+  }
 }
-

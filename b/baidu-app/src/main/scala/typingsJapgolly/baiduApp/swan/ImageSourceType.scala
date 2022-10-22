@@ -1,21 +1,17 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.baiduApp.baiduAppStrings.album
   - typingsJapgolly.baiduApp.baiduAppStrings.camera
 */
-trait ImageSourceType extends js.Object
-
+trait ImageSourceType extends StObject
 object ImageSourceType {
-  @scala.inline
-  def album: typingsJapgolly.baiduApp.baiduAppStrings.album = this.cast("album")
-  @scala.inline
-  def camera: typingsJapgolly.baiduApp.baiduAppStrings.camera = this.cast("camera")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def album: typingsJapgolly.baiduApp.baiduAppStrings.album = "album".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.album]
+  
+  inline def camera: typingsJapgolly.baiduApp.baiduAppStrings.camera = "camera".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.camera]
 }
-

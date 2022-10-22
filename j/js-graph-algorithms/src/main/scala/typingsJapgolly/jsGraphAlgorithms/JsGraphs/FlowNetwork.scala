@@ -1,19 +1,55 @@
 package typingsJapgolly.jsGraphAlgorithms.JsGraphs
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JsGraphs.FlowNetwork")
-@js.native
-class FlowNetwork protected () extends js.Object {
-  def this(V: Double) = this()
-  var V: Double = js.native
-  var adjList: js.Any = js.native
-  var nodeInfo: js.Any = js.native
-  def addEdge(e: FlowEdge): Unit = js.native
-  def adj(v: Double): js.Array[FlowEdge] = js.native
-  def edge(v: Double, w: Double): FlowEdge | Null = js.native
-  def node(v: Double): Node = js.native
+trait FlowNetwork extends StObject {
+  
+  var V: Double
+  
+  def addEdge(e: FlowEdge): Unit
+  
+  def adj(v: Double): js.Array[FlowEdge]
+  
+  /* private */ var adjList: Any
+  
+  def edge(v: Double, w: Double): FlowEdge | Null
+  
+  def node(v: Double): Node
+  
+  /* private */ var nodeInfo: Any
 }
-
+object FlowNetwork {
+  
+  inline def apply(
+    V: Double,
+    addEdge: FlowEdge => Callback,
+    adj: Double => js.Array[FlowEdge],
+    adjList: Any,
+    edge: (Double, Double) => FlowEdge | Null,
+    node: Double => Node,
+    nodeInfo: Any
+  ): FlowNetwork = {
+    val __obj = js.Dynamic.literal(V = V.asInstanceOf[js.Any], addEdge = js.Any.fromFunction1((t0: FlowEdge) => addEdge(t0).runNow()), adj = js.Any.fromFunction1(adj), adjList = adjList.asInstanceOf[js.Any], edge = js.Any.fromFunction2(edge), node = js.Any.fromFunction1(node), nodeInfo = nodeInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlowNetwork]
+  }
+  
+  extension [Self <: FlowNetwork](x: Self) {
+    
+    inline def setAddEdge(value: FlowEdge => Callback): Self = StObject.set(x, "addEdge", js.Any.fromFunction1((t0: FlowEdge) => value(t0).runNow()))
+    
+    inline def setAdj(value: Double => js.Array[FlowEdge]): Self = StObject.set(x, "adj", js.Any.fromFunction1(value))
+    
+    inline def setAdjList(value: Any): Self = StObject.set(x, "adjList", value.asInstanceOf[js.Any])
+    
+    inline def setEdge(value: (Double, Double) => FlowEdge | Null): Self = StObject.set(x, "edge", js.Any.fromFunction2(value))
+    
+    inline def setNode(value: Double => Node): Self = StObject.set(x, "node", js.Any.fromFunction1(value))
+    
+    inline def setNodeInfo(value: Any): Self = StObject.set(x, "nodeInfo", value.asInstanceOf[js.Any])
+    
+    inline def setV(value: Double): Self = StObject.set(x, "V", value.asInstanceOf[js.Any])
+  }
+}

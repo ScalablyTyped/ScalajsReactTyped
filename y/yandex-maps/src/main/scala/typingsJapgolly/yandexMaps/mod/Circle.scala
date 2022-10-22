@@ -1,12 +1,13 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Circle")
 @js.native
-class Circle protected () extends GeoObject_ {
+open class Circle protected ()
+  extends GeoObject_[ICircleGeometry, js.Object] {
   def this(geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]]) = this()
   def this(geometry: js.Object) = this()
   def this(geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]], properties: js.Object) = this()
@@ -23,12 +24,19 @@ class Circle protected () extends GeoObject_ {
   ) = this()
   def this(
     geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]],
+    properties: Unit,
+    options: ICircleOptions
+  ) = this()
+  def this(
+    geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]],
     properties: IDataManager,
     options: ICircleOptions
   ) = this()
   def this(geometry: js.Object, properties: js.Object, options: ICircleOptions) = this()
+  def this(geometry: js.Object, properties: Unit, options: ICircleOptions) = this()
   def this(geometry: js.Object, properties: IDataManager, options: ICircleOptions) = this()
-  var indices: scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  var vertices: scala.scalajs.js.typedarray.ArrayBuffer = js.native
+  
+  var indices: js.typedarray.ArrayBuffer = js.native
+  
+  var vertices: js.typedarray.ArrayBuffer = js.native
 }
-

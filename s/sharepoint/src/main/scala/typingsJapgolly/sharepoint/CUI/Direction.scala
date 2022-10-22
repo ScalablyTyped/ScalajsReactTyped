@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.CUI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Direction extends js.Object
-
+sealed trait Direction extends StObject
 @JSGlobal("CUI.Direction")
 @js.native
-object Direction extends js.Object {
-  @js.native
-  sealed trait LTR extends Direction
+object Direction extends StObject {
   
   @js.native
-  sealed trait RTL extends Direction
+  sealed trait LTR
+    extends StObject
+       with Direction
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Direction with Double] = js.native
-  /* 0 */ @js.native
-  object LTR extends TopLevel[LTR with Double]
-  
-  /* 1 */ @js.native
-  object RTL extends TopLevel[RTL with Double]
-  
+  @js.native
+  sealed trait RTL
+    extends StObject
+       with Direction
 }
-

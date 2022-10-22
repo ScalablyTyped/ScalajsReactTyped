@@ -1,16 +1,27 @@
 package typingsJapgolly.pulumiCloud.serviceMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HostPathVolume extends Volume {
+trait HostPathVolume
+  extends StObject
+     with Volume {
+  
   var kind: typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume
+  
   var path: String
 }
-
-@JSImport("@pulumi/cloud/service", "HostPathVolume")
-@js.native
-object HostPathVolume extends TopLevel[HostPathVolumeConstructor]
-
+object HostPathVolume {
+  
+  @JSImport("@pulumi/cloud/service", "HostPathVolume")
+  @js.native
+  val ^ : HostPathVolumeConstructor = js.native
+  
+  extension [Self <: HostPathVolume](x: Self) {
+    
+    inline def setKind(value: typingsJapgolly.pulumiCloud.pulumiCloudStrings.HostPathVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+  }
+}

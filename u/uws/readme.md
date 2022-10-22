@@ -4,16 +4,16 @@
 Typings are for version 0.13
 
 ## Library description:
-## New versions with slightly different goal and purpose are available at [https://github.com/uNetworking/uWebSockets.js](https://github.com/uNetworking/uWebSockets.js).
+## Go to [https://github.com/uNetworking/uWebSockets.js](https://github.com/uNetworking/uWebSockets.js).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | uws |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 194 |
-| # downloads        | 16266987 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 549917.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/uNetworking/uWebSockets.js#readme)

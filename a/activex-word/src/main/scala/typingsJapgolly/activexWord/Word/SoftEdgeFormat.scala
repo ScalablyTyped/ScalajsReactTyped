@@ -1,19 +1,52 @@
 package typingsJapgolly.activexWord.Word
 
 import typingsJapgolly.activexOffice.Office.MsoSoftEdgeType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.SoftEdgeFormat")
-@js.native
-class SoftEdgeFormat protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  var Radius: Double = js.native
-  var Type: MsoSoftEdgeType = js.native
-  @JSName("Word.SoftEdgeFormat_typekey")
-  var WordDotSoftEdgeFormat_typekey: SoftEdgeFormat = js.native
+trait SoftEdgeFormat extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  val Parent: Any
+  
+  var Radius: Double
+  
+  var Type: MsoSoftEdgeType
+  
+  /* private */ @JSName("Word.SoftEdgeFormat_typekey")
+  var WordDotSoftEdgeFormat_typekey: SoftEdgeFormat
 }
-
+object SoftEdgeFormat {
+  
+  inline def apply(
+    Application: Application,
+    Creator: Double,
+    Parent: Any,
+    Radius: Double,
+    Type: MsoSoftEdgeType,
+    WordDotSoftEdgeFormat_typekey: SoftEdgeFormat
+  ): SoftEdgeFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Radius = Radius.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.SoftEdgeFormat_typekey")(WordDotSoftEdgeFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SoftEdgeFormat]
+  }
+  
+  extension [Self <: SoftEdgeFormat](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: MsoSoftEdgeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotSoftEdgeFormat_typekey(value: SoftEdgeFormat): Self = StObject.set(x, "Word.SoftEdgeFormat_typekey", value.asInstanceOf[js.Any])
+  }
+}

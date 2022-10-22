@@ -1,12 +1,14 @@
 package typingsJapgolly.deepFreezeStrict
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("deep-freeze-strict", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](o: T): T = js.native
+object mod {
+  
+  inline def apply[T](o: T): T = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @JSImport("deep-freeze-strict", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

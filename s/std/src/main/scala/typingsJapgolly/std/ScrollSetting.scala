@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings._empty
   - typingsJapgolly.std.stdStrings.up
 */
-trait ScrollSetting extends js.Object
-
+trait ScrollSetting extends StObject
 object ScrollSetting {
-  @scala.inline
-  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def up: typingsJapgolly.std.stdStrings.up = this.cast("up")
+  
+  inline def _empty: typingsJapgolly.std.stdStrings._empty = "".asInstanceOf[typingsJapgolly.std.stdStrings._empty]
+  
+  inline def up: typingsJapgolly.std.stdStrings.up = "up".asInstanceOf[typingsJapgolly.std.stdStrings.up]
 }
-

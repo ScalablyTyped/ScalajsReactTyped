@@ -1,23 +1,38 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SizeEffect extends js.Object {
+trait SizeEffect extends StObject {
+  
   var origin: js.UndefOr[js.Array[String]] = js.undefined
+  
   var scale: js.UndefOr[String] = js.undefined
-  var to: js.UndefOr[js.Any] = js.undefined
+  
+  var to: js.UndefOr[Any] = js.undefined
 }
-
 object SizeEffect {
-  @scala.inline
-  def apply(origin: js.Array[String] = null, scale: String = null, to: js.Any = null): SizeEffect = {
+  
+  inline def apply(): SizeEffect = {
     val __obj = js.Dynamic.literal()
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeEffect]
   }
+  
+  extension [Self <: SizeEffect](x: Self) {
+    
+    inline def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value*))
+    
+    inline def setScale(value: String): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setTo(value: Any): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

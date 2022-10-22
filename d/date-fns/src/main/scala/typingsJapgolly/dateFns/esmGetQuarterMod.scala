@@ -1,18 +1,18 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/getQuarter", JSImport.Namespace)
-@js.native
-object esmGetQuarterMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): Double = js.native
-    def apply(date: Date): Double = js.native
-  }
+object esmGetQuarterMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: Double): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @JSImport("date-fns/esm/getQuarter", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

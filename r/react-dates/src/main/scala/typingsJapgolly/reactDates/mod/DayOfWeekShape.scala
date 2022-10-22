@@ -1,37 +1,32 @@
 package typingsJapgolly.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// shapes/DayOfWeekShape.js
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.reactDates.reactDatesNumbers.`0`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`1`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`2`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`3`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`4`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`5`
-  - typingsJapgolly.reactDates.reactDatesNumbers.`6`
+  - typingsJapgolly.reactDates.reactDatesInts.`0`
+  - typingsJapgolly.reactDates.reactDatesInts.`1`
+  - typingsJapgolly.reactDates.reactDatesInts.`2`
+  - typingsJapgolly.reactDates.reactDatesInts.`3`
+  - typingsJapgolly.reactDates.reactDatesInts.`4`
+  - typingsJapgolly.reactDates.reactDatesInts.`5`
+  - typingsJapgolly.reactDates.reactDatesInts.`6`
 */
-trait DayOfWeekShape extends js.Object
-
+trait DayOfWeekShape extends StObject
 object DayOfWeekShape {
-  @scala.inline
-  def `0`: typingsJapgolly.reactDates.reactDatesNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.reactDates.reactDatesNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.reactDates.reactDatesNumbers.`2` = this.cast(2)
-  @scala.inline
-  def `3`: typingsJapgolly.reactDates.reactDatesNumbers.`3` = this.cast(3)
-  @scala.inline
-  def `4`: typingsJapgolly.reactDates.reactDatesNumbers.`4` = this.cast(4)
-  @scala.inline
-  def `5`: typingsJapgolly.reactDates.reactDatesNumbers.`5` = this.cast(5)
-  @scala.inline
-  def `6`: typingsJapgolly.reactDates.reactDatesNumbers.`6` = this.cast(6)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.reactDates.reactDatesInts.`0` = 0.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`0`]
+  
+  inline def `1`: typingsJapgolly.reactDates.reactDatesInts.`1` = 1.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`1`]
+  
+  inline def `2`: typingsJapgolly.reactDates.reactDatesInts.`2` = 2.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`2`]
+  
+  inline def `3`: typingsJapgolly.reactDates.reactDatesInts.`3` = 3.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`3`]
+  
+  inline def `4`: typingsJapgolly.reactDates.reactDatesInts.`4` = 4.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`4`]
+  
+  inline def `5`: typingsJapgolly.reactDates.reactDatesInts.`5` = 5.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`5`]
+  
+  inline def `6`: typingsJapgolly.reactDates.reactDatesInts.`6` = 6.asInstanceOf[typingsJapgolly.reactDates.reactDatesInts.`6`]
 }
-

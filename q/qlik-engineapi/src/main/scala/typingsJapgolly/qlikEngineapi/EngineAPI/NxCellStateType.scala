@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.L
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XS
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XL
 */
-trait NxCellStateType extends js.Object
-
+trait NxCellStateType extends StObject
 object NxCellStateType {
-  @scala.inline
-  def A: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A = this.cast("A")
-  @scala.inline
-  def D: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D = this.cast("D")
-  @scala.inline
-  def L: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.L = this.cast("L")
-  @scala.inline
-  def O: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.O = this.cast("O")
-  @scala.inline
-  def S: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S = this.cast("S")
-  @scala.inline
-  def X: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.X = this.cast("X")
-  @scala.inline
-  def XL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XL = this.cast("XL")
-  @scala.inline
-  def XS: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XS = this.cast("XS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def A: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A]
+  
+  inline def D: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D = "D".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.D]
+  
+  inline def L: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.L = "L".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.L]
+  
+  inline def O: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.O = "O".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.O]
+  
+  inline def S: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S = "S".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.S]
+  
+  inline def X: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.X = "X".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.X]
+  
+  inline def XL: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XL = "XL".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XL]
+  
+  inline def XS: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XS = "XS".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XS]
 }
-

@@ -1,23 +1,32 @@
 package typingsJapgolly.reactTouch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HoldConfig extends js.Object {
+trait HoldConfig extends StObject {
+  
   /** @default 1000 */
   var holdFor: js.UndefOr[Double] = js.undefined
+  
   /** @default 250 */
   var updateEvery: js.UndefOr[Double] = js.undefined
 }
-
 object HoldConfig {
-  @scala.inline
-  def apply(holdFor: Int | Double = null, updateEvery: Int | Double = null): HoldConfig = {
+  
+  inline def apply(): HoldConfig = {
     val __obj = js.Dynamic.literal()
-    if (holdFor != null) __obj.updateDynamic("holdFor")(holdFor.asInstanceOf[js.Any])
-    if (updateEvery != null) __obj.updateDynamic("updateEvery")(updateEvery.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoldConfig]
   }
+  
+  extension [Self <: HoldConfig](x: Self) {
+    
+    inline def setHoldFor(value: Double): Self = StObject.set(x, "holdFor", value.asInstanceOf[js.Any])
+    
+    inline def setHoldForUndefined: Self = StObject.set(x, "holdFor", js.undefined)
+    
+    inline def setUpdateEvery(value: Double): Self = StObject.set(x, "updateEvery", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateEveryUndefined: Self = StObject.set(x, "updateEvery", js.undefined)
+  }
 }
-

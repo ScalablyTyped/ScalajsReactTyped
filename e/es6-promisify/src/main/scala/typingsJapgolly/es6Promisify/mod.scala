@@ -1,53 +1,74 @@
 package typingsJapgolly.es6Promisify
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.std.PromiseConstructor
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("es6-promisify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object promisify extends js.Object {
+object mod {
+  
+  object promisify {
+    
+    inline def apply(original: CallbackFunction): PromiseFunction = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[PromiseFunction]
+    inline def apply[T](original: js.Function1[/* cb */ Callback[T], Any]): js.Function0[js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function0[js.Promise[T]]]
+    inline def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], Any]): js.Function1[/* param1 */ U, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param1 */ U, js.Promise[T]]]
+    inline def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], Any]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]]]
+    inline def apply[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], Any]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = ^.asInstanceOf[js.Dynamic].apply(original.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]]]
+    
+    @JSImport("es6-promisify", "promisify")
     @js.native
-    class Promise[T] protected ()
-      extends typingsJapgolly.std.Promise[T] {
+    val ^ : js.Any = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("es6-promisify", "promisify.Promise")
+    @js.native
+    open class Promise[T] protected ()
+      extends StObject
+         with typingsJapgolly.std.Promise[T] {
       /**
         * Creates a new Promise.
         * @param executor A callback used to initialize the promise. This callback is passed two arguments:
         * a resolve callback used to resolve the promise with a value or the result of another promise,
         * and a reject callback used to reject the promise with a provided reason or error.
         */
+      /* standard es2015.promise */
       def this(executor: js.Function2[
-                /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], Unit], 
-                /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], Unit], 
+                /* resolve */ js.Function1[/* value */ T | PromiseLike[T], Unit], 
+                /* reject */ js.Function1[/* reason */ js.UndefOr[Any], Unit], 
                 Unit
               ]) = this()
     }
+    /**
+      * The user can supply their own Promise implementation by setting it
+      * here. Otherwise, the global Promise object will be used.
+      */
+    @JSImport("es6-promisify", "promisify.Promise")
+    @js.native
+    def Promise: PromiseConstructor = js.native
+    inline def Promise_=(x: PromiseConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Promise")(x.asInstanceOf[js.Any])
     
     /**
       * This symbol can be placed on the function to be promisified to
       * provide names as an array of strings for the values in a success
       * callback.
       */
-    val argumentNames: js.Symbol = js.native
-    def apply(original: CallbackFunction): PromiseFunction = js.native
-    def apply[T, U](original: js.Function2[/* param1 */ U, /* cb */ Callback[T], _]): js.Function1[/* param1 */ U, js.Promise[T]] = js.native
-    def apply[T, U, V](original: js.Function3[/* param1 */ U, /* param2 */ V, /* cb */ Callback[T], _]): js.Function2[/* param1 */ U, /* param2 */ V, js.Promise[T]] = js.native
-    def apply[T, U, V, W](original: js.Function4[/* param1 */ U, /* param2 */ V, /* param3 */ W, /* cb */ Callback[T], _]): js.Function3[/* param1 */ U, /* param2 */ V, /* param3 */ W, js.Promise[T]] = js.native
-    /**
-      * The user can supply their own Promise implementation by setting it
-      * here. Otherwise, the global Promise object will be used.
-      */
+    @JSImport("es6-promisify", "promisify.argumentNames")
     @js.native
-    object Promise extends TopLevel[PromiseConstructor]
-    
+    val argumentNames: js.Symbol = js.native
   }
   
-  type Callback[T] = js.Function2[/* err */ js.Any, /* arg */ js.UndefOr[T], js.Any]
-  type CallbackFunction = js.Function1[/* repeated */ js.Any, js.Any]
-  type PromiseFunction = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
+  type Callback[T] = js.Function2[/* err */ Any, /* arg */ js.UndefOr[T], Any]
+  
+  @js.native
+  trait CallbackFunction extends StObject {
+    
+    def apply(args: Any*): Any = js.native
+  }
+  
+  @js.native
+  trait PromiseFunction extends StObject {
+    
+    def apply(args: Any*): js.Promise[Any] = js.native
+  }
 }
-

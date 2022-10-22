@@ -10,10 +10,10 @@ Passport authentication strategy using JSON Web Tokens
 | ------------------ | :-------------: |
 | Full name          | passport-jwt |
 | Keywords           | Passport, Strategy, JSON, Web, Token, JWT |
-| # releases         | 2 |
-| # dependents       | 302 |
-| # downloads        | 8049800 |
-| # stars            | 53 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2411645.0 |
+| # stars            | 1817.0 |
 
 ## Links
 - [Homepage](https://github.com/themikenicholson/passport-jwt)

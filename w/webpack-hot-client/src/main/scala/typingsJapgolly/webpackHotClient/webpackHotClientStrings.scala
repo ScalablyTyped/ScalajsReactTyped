@@ -1,39 +1,32 @@
 package typingsJapgolly.webpackHotClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackHotClientStrings {
-  @js.native
-  sealed trait debug extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait debug extends StObject
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait silent extends StObject
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait trace extends StObject
+  inline def trace: trace = "trace".asInstanceOf[trace]
   
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def trace: trace = "trace".asInstanceOf[trace]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

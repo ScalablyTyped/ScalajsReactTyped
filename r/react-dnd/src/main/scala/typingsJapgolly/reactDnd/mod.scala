@@ -1,89 +1,53 @@
 package typingsJapgolly.reactDnd
 
-import typingsJapgolly.dndCore.interfacesMod.BackendFactory
-import typingsJapgolly.dndCore.interfacesMod.SourceType
-import typingsJapgolly.dndCore.interfacesMod.TargetType
+import typingsJapgolly.dndCore.distInterfacesMod.DragDropManager
 import typingsJapgolly.react.mod.Context
 import typingsJapgolly.react.mod.FC
-import typingsJapgolly.reactDnd.connectorsMod.ConnectDragPreview
-import typingsJapgolly.reactDnd.connectorsMod.ConnectDragSource
-import typingsJapgolly.reactDnd.connectorsMod.ConnectDropTarget
-import typingsJapgolly.reactDnd.dndContextMod.DndContextType
-import typingsJapgolly.reactDnd.dndProviderMod.DndProviderProps
-import typingsJapgolly.reactDnd.dragPreviewImageMod.DragPreviewImageProps
-import typingsJapgolly.reactDnd.hooksApiMod.DragObjectWithType
-import typingsJapgolly.reactDnd.hooksApiMod.DragSourceHookSpec
-import typingsJapgolly.reactDnd.hooksApiMod.DropTargetHookSpec
-import typingsJapgolly.reactDnd.interfacesMod.DndComponentEnhancer
-import typingsJapgolly.reactDnd.interfacesMod.DragLayerCollector
-import typingsJapgolly.reactDnd.interfacesMod.DragSourceCollector
-import typingsJapgolly.reactDnd.interfacesMod.DragSourceSpec
-import typingsJapgolly.reactDnd.interfacesMod.DropTargetCollector
-import typingsJapgolly.reactDnd.interfacesMod.DropTargetSpec
-import typingsJapgolly.reactDnd.monitorsMod.DragLayerMonitor
-import typingsJapgolly.reactDnd.optionsMod.DndOptions
+import typingsJapgolly.reactDnd.distCoreDndContextMod.DndContextType
+import typingsJapgolly.reactDnd.distCoreDndProviderMod.DndProviderProps
+import typingsJapgolly.reactDnd.distCoreDragPreviewImageMod.DragPreviewImageProps
+import typingsJapgolly.reactDnd.distHooksTypesMod.DragSourceHookSpec
+import typingsJapgolly.reactDnd.distHooksTypesMod.DropTargetHookSpec
+import typingsJapgolly.reactDnd.distHooksTypesMod.FactoryOrInstance
+import typingsJapgolly.reactDnd.distTypesConnectorsMod.ConnectDragPreview
+import typingsJapgolly.reactDnd.distTypesConnectorsMod.ConnectDragSource
+import typingsJapgolly.reactDnd.distTypesConnectorsMod.ConnectDropTarget
+import typingsJapgolly.reactDnd.distTypesMonitorsMod.DragLayerMonitor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-dnd", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-dnd", "DndContext")
+  @js.native
   val DndContext: Context[DndContextType] = js.native
-  val DndProvider: FC[DndProviderProps[js.Any, js.Any]] = js.native
+  
+  @JSImport("react-dnd", "DndProvider")
+  @js.native
+  val DndProvider: FC[DndProviderProps[Any, Any]] = js.native
+  
+  @JSImport("react-dnd", "DragPreviewImage")
+  @js.native
   val DragPreviewImage: FC[DragPreviewImageProps] = js.native
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps]): DndComponentEnhancer[CollectedProps] = js.native
-  def DragLayer[RequiredProps, CollectedProps](collect: DragLayerCollector[RequiredProps, CollectedProps], options: DndOptions[RequiredProps]): DndComponentEnhancer[CollectedProps] = js.native
-  def DragSource[RequiredProps, CollectedProps, DragObject](
-    `type`: js.Function1[/* props */ RequiredProps, SourceType],
-    spec: DragSourceSpec[RequiredProps, DragObject],
-    collect: DragSourceCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DragSource[RequiredProps, CollectedProps, DragObject](
-    `type`: js.Function1[/* props */ RequiredProps, SourceType],
-    spec: DragSourceSpec[RequiredProps, DragObject],
-    collect: DragSourceCollector[CollectedProps, RequiredProps],
-    options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DragSource[RequiredProps, CollectedProps, DragObject](
-    `type`: SourceType,
-    spec: DragSourceSpec[RequiredProps, DragObject],
-    collect: DragSourceCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DragSource[RequiredProps, CollectedProps, DragObject](
-    `type`: SourceType,
-    spec: DragSourceSpec[RequiredProps, DragObject],
-    collect: DragSourceCollector[CollectedProps, RequiredProps],
-    options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DropTarget[RequiredProps, CollectedProps](
-    `type`: js.Function1[/* props */ RequiredProps, TargetType],
-    spec: DropTargetSpec[RequiredProps],
-    collect: DropTargetCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DropTarget[RequiredProps, CollectedProps](
-    `type`: js.Function1[/* props */ RequiredProps, TargetType],
-    spec: DropTargetSpec[RequiredProps],
-    collect: DropTargetCollector[CollectedProps, RequiredProps],
-    options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DropTarget[RequiredProps, CollectedProps](
-    `type`: TargetType,
-    spec: DropTargetSpec[RequiredProps],
-    collect: DropTargetCollector[CollectedProps, RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def DropTarget[RequiredProps, CollectedProps](
-    `type`: TargetType,
-    spec: DropTargetSpec[RequiredProps],
-    collect: DropTargetCollector[CollectedProps, RequiredProps],
-    options: DndOptions[RequiredProps]
-  ): DndComponentEnhancer[CollectedProps] = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory): AnonDragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext): AnonDragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions): AnonDragDropManager = js.native
-  def createDndContext[BackendContext, BackendOptions](backend: BackendFactory, context: BackendContext, options: BackendOptions, debugMode: Boolean): AnonDragDropManager = js.native
-  def useDrag[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DragSourceHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = js.native
-  def useDragLayer[CollectedProps](collect: js.Function1[/* monitor */ DragLayerMonitor, CollectedProps]): CollectedProps = js.native
-  def useDrop[DragObject /* <: DragObjectWithType */, DropResult, CollectedProps](spec: DropTargetHookSpec[DragObject, DropResult, CollectedProps]): js.Tuple2[CollectedProps, ConnectDropTarget] = js.native
+  
+  inline def useDrag[DragObject, DropResult, CollectedProps](specArg: FactoryOrInstance[DragSourceHookSpec[DragObject, DropResult, CollectedProps]]): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDrag")(specArg.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview]]
+  inline def useDrag[DragObject, DropResult, CollectedProps](
+    specArg: FactoryOrInstance[DragSourceHookSpec[DragObject, DropResult, CollectedProps]],
+    deps: js.Array[Any]
+  ): js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDrag")(specArg.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Tuple3[CollectedProps, ConnectDragSource, ConnectDragPreview]]
+  
+  inline def useDragDropManager(): DragDropManager = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragDropManager")().asInstanceOf[DragDropManager]
+  
+  inline def useDragLayer[CollectedProps, DragObject](collect: js.Function1[/* monitor */ DragLayerMonitor[DragObject], CollectedProps]): CollectedProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useDragLayer")(collect.asInstanceOf[js.Any]).asInstanceOf[CollectedProps]
+  
+  inline def useDrop[DragObject, DropResult, CollectedProps](specArg: FactoryOrInstance[DropTargetHookSpec[DragObject, DropResult, CollectedProps]]): js.Tuple2[CollectedProps, ConnectDropTarget] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDrop")(specArg.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[CollectedProps, ConnectDropTarget]]
+  inline def useDrop[DragObject, DropResult, CollectedProps](
+    specArg: FactoryOrInstance[DropTargetHookSpec[DragObject, DropResult, CollectedProps]],
+    deps: js.Array[Any]
+  ): js.Tuple2[CollectedProps, ConnectDropTarget] = (^.asInstanceOf[js.Dynamic].applyDynamic("useDrop")(specArg.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[CollectedProps, ConnectDropTarget]]
 }
-

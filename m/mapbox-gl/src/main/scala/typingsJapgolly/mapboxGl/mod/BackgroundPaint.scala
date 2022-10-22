@@ -1,36 +1,56 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BackgroundPaint extends js.Object {
+trait BackgroundPaint
+  extends StObject
+     with AnyPaint {
+  
   var `background-color`: js.UndefOr[String | Expression] = js.undefined
+  
   var `background-color-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `background-opacity`: js.UndefOr[Double | Expression] = js.undefined
+  
   var `background-opacity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `background-pattern`: js.UndefOr[String] = js.undefined
+  
   var `background-pattern-transition`: js.UndefOr[Transition] = js.undefined
 }
-
 object BackgroundPaint {
-  @scala.inline
-  def apply(
-    `background-color`: String | Expression = null,
-    `background-color-transition`: Transition = null,
-    `background-opacity`: Double | Expression = null,
-    `background-opacity-transition`: Transition = null,
-    `background-pattern`: String = null,
-    `background-pattern-transition`: Transition = null
-  ): BackgroundPaint = {
+  
+  inline def apply(): BackgroundPaint = {
     val __obj = js.Dynamic.literal()
-    if (`background-color` != null) __obj.updateDynamic("background-color")(`background-color`.asInstanceOf[js.Any])
-    if (`background-color-transition` != null) __obj.updateDynamic("background-color-transition")(`background-color-transition`.asInstanceOf[js.Any])
-    if (`background-opacity` != null) __obj.updateDynamic("background-opacity")(`background-opacity`.asInstanceOf[js.Any])
-    if (`background-opacity-transition` != null) __obj.updateDynamic("background-opacity-transition")(`background-opacity-transition`.asInstanceOf[js.Any])
-    if (`background-pattern` != null) __obj.updateDynamic("background-pattern")(`background-pattern`.asInstanceOf[js.Any])
-    if (`background-pattern-transition` != null) __obj.updateDynamic("background-pattern-transition")(`background-pattern-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundPaint]
   }
+  
+  extension [Self <: BackgroundPaint](x: Self) {
+    
+    inline def `setBackground-color`(value: String | Expression): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-color-transition`(value: Transition): Self = StObject.set(x, "background-color-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-color-transitionUndefined`: Self = StObject.set(x, "background-color-transition", js.undefined)
+    
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    
+    inline def `setBackground-opacity`(value: Double | Expression): Self = StObject.set(x, "background-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-opacity-transition`(value: Transition): Self = StObject.set(x, "background-opacity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-opacity-transitionUndefined`: Self = StObject.set(x, "background-opacity-transition", js.undefined)
+    
+    inline def `setBackground-opacityUndefined`: Self = StObject.set(x, "background-opacity", js.undefined)
+    
+    inline def `setBackground-pattern`(value: String): Self = StObject.set(x, "background-pattern", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-pattern-transition`(value: Transition): Self = StObject.set(x, "background-pattern-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setBackground-pattern-transitionUndefined`: Self = StObject.set(x, "background-pattern-transition", js.undefined)
+    
+    inline def `setBackground-patternUndefined`: Self = StObject.set(x, "background-pattern", js.undefined)
+  }
 }
-

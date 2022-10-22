@@ -1,33 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.EditingFieldChanged and ASPxClientReportDesigner.PreviewEditingFieldChanged events.
   */
-@JSGlobal("ASPxClientWebDocumentViewerEditingFieldChangedEventArgs")
-@js.native
-class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Creates a new instance of the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs class with the specified settings.
-    * @param field An editing field whose value has been changed. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.Field property.
-    * @param oldValue An object that specifies an editing field's previous value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.OldValue property.
-    * @param newValue An object that specifies an editing field's new value. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.NewValue property.
-    */
-  def this(field: ASPxClientWebDocumentViewerEditingField, oldValue: js.Any, newValue: js.Any) = this()
+trait ASPxClientWebDocumentViewerEditingFieldChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets an editing field whose value has been changed.
     */
-  var Field: ASPxClientWebDocumentViewerEditingField = js.native
+  var Field: ASPxClientWebDocumentViewerEditingField
+  
   /**
     * Provides access to a new value of an editing field.
     */
-  var NewValue: js.Any = js.native
+  var NewValue: Any
+  
   /**
     * Provides access to a previous value of an editing field.
     */
-  var OldValue: js.Any = js.native
+  var OldValue: Any
 }
-
+object ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
+  
+  inline def apply(Field: ASPxClientWebDocumentViewerEditingField, NewValue: Any, OldValue: Any): ASPxClientWebDocumentViewerEditingFieldChangedEventArgs = {
+    val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], NewValue = NewValue.asInstanceOf[js.Any], OldValue = OldValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingFieldChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientWebDocumentViewerEditingFieldChangedEventArgs](x: Self) {
+    
+    inline def setField(value: ASPxClientWebDocumentViewerEditingField): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    
+    inline def setNewValue(value: Any): Self = StObject.set(x, "NewValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValue(value: Any): Self = StObject.set(x, "OldValue", value.asInstanceOf[js.Any])
+  }
+}

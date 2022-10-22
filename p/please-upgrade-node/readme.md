@@ -10,10 +10,10 @@ Displays a beginner-friendly message telling your user to upgrade their version 
 | ------------------ | :-------------: |
 | Full name          | please-upgrade-node |
 | Keywords           | node, engines, version, check, verify, upgrade |
-| # releases         | 5 |
-| # dependents       | 90 |
-| # downloads        | 75672663 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.0830609666666668E7 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/typicode/please-upgrade-node#readme)

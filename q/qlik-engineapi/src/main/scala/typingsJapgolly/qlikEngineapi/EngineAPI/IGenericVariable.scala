@@ -2,15 +2,18 @@ package typingsJapgolly.qlikEngineapi.EngineAPI
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.qlikEngineapi.enigmaJS.IGeneratedAPI
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class describes all the methods that apply at generic variable level.
   * The handle member in the JSON request for all methods listed in this section is the handle of the generic variable.
   */
-trait IGenericVariable extends IGeneratedAPI {
+trait IGenericVariable
+  extends StObject
+     with IGeneratedAPI {
+  
   /**
     * Applies a patch to the properties of a variable. Allows an update to some of the properties.
     *
@@ -18,16 +21,19 @@ trait IGenericVariable extends IGeneratedAPI {
     * @param qPatches - Array of NxPatch
     */
   def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit]
+  
   /**
     * Returns the type and identifier of the object.
     */
   def getInfo(): js.Promise[INxInfo]
+  
   /**
     * Evaluates an object and displays its properties including the dynamic properties.
     * If the member delta is set to true in the request object, only the delta is evaluated.
     * @returns GenericVariableLayout Information on the object
     */
   def getLayout(): js.Promise[IGenericVariableLayout]
+  
   /**
     * Shows the properties of an object.
     *
@@ -35,6 +41,7 @@ trait IGenericVariable extends IGeneratedAPI {
     * @returns GenericVariableProperties Information about the generic object
     */
   def getProperties(): js.Promise[IGenericVariableProperties]
+  
   /**
     * Sets the value of a dual variable.
     *
@@ -46,6 +53,7 @@ trait IGenericVariable extends IGeneratedAPI {
     * >> This parameter is mandatory.
     */
   def setDualValue(qText: String, qNum: Double): js.Promise[Unit]
+  
   /**
     * Sets a numerical value to a variable.
     *
@@ -53,6 +61,7 @@ trait IGenericVariable extends IGeneratedAPI {
     * @param qVal - Value of the variable.
     */
   def setNumValue(qVal: Double): js.Promise[Unit]
+  
   /**
     * Sets some properties for a variable.
     *
@@ -62,6 +71,7 @@ trait IGenericVariable extends IGeneratedAPI {
     * >> This parameter is mandatory.
     */
   def setProperties(qProp: IGenericVariableProperties): js.Promise[Unit]
+  
   /**
     * Sets a string value to a variable.
     * Note: These changes are not persistent. They only last the duration of the engine session.
@@ -69,29 +79,38 @@ trait IGenericVariable extends IGeneratedAPI {
     */
   def setStringValue(qVal: String): js.Promise[Unit]
 }
-
 object IGenericVariable {
-  @scala.inline
-  def apply(
-    applyPatches: js.Array[INxPatch] => CallbackTo[js.Promise[Unit]],
+  
+  inline def apply(
+    applyPatches: js.Array[INxPatch] => js.Promise[Unit],
     getInfo: CallbackTo[js.Promise[INxInfo]],
     getLayout: CallbackTo[js.Promise[IGenericVariableLayout]],
     getProperties: CallbackTo[js.Promise[IGenericVariableProperties]],
-    setDualValue: (String, Double) => CallbackTo[js.Promise[Unit]],
-    setNumValue: Double => CallbackTo[js.Promise[Unit]],
-    setProperties: IGenericVariableProperties => CallbackTo[js.Promise[Unit]],
-    setStringValue: String => CallbackTo[js.Promise[Unit]]
+    setDualValue: (String, Double) => js.Promise[Unit],
+    setNumValue: Double => js.Promise[Unit],
+    setProperties: IGenericVariableProperties => js.Promise[Unit],
+    setStringValue: String => js.Promise[Unit]
   ): IGenericVariable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyPatches")(js.Any.fromFunction1((t0: js.Array[typingsJapgolly.qlikEngineapi.EngineAPI.INxPatch]) => applyPatches(t0).runNow()))
-    __obj.updateDynamic("getInfo")(getInfo.toJsFn)
-    __obj.updateDynamic("getLayout")(getLayout.toJsFn)
-    __obj.updateDynamic("getProperties")(getProperties.toJsFn)
-    __obj.updateDynamic("setDualValue")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Double) => setDualValue(t0, t1).runNow()))
-    __obj.updateDynamic("setNumValue")(js.Any.fromFunction1((t0: scala.Double) => setNumValue(t0).runNow()))
-    __obj.updateDynamic("setProperties")(js.Any.fromFunction1((t0: typingsJapgolly.qlikEngineapi.EngineAPI.IGenericVariableProperties) => setProperties(t0).runNow()))
-    __obj.updateDynamic("setStringValue")(js.Any.fromFunction1((t0: java.lang.String) => setStringValue(t0).runNow()))
+    val __obj = js.Dynamic.literal(applyPatches = js.Any.fromFunction1(applyPatches), getInfo = getInfo.toJsFn, getLayout = getLayout.toJsFn, getProperties = getProperties.toJsFn, setDualValue = js.Any.fromFunction2(setDualValue), setNumValue = js.Any.fromFunction1(setNumValue), setProperties = js.Any.fromFunction1(setProperties), setStringValue = js.Any.fromFunction1(setStringValue))
     __obj.asInstanceOf[IGenericVariable]
   }
+  
+  extension [Self <: IGenericVariable](x: Self) {
+    
+    inline def setApplyPatches(value: js.Array[INxPatch] => js.Promise[Unit]): Self = StObject.set(x, "applyPatches", js.Any.fromFunction1(value))
+    
+    inline def setGetInfo(value: CallbackTo[js.Promise[INxInfo]]): Self = StObject.set(x, "getInfo", value.toJsFn)
+    
+    inline def setGetLayout(value: CallbackTo[js.Promise[IGenericVariableLayout]]): Self = StObject.set(x, "getLayout", value.toJsFn)
+    
+    inline def setGetProperties(value: CallbackTo[js.Promise[IGenericVariableProperties]]): Self = StObject.set(x, "getProperties", value.toJsFn)
+    
+    inline def setSetDualValue(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "setDualValue", js.Any.fromFunction2(value))
+    
+    inline def setSetNumValue(value: Double => js.Promise[Unit]): Self = StObject.set(x, "setNumValue", js.Any.fromFunction1(value))
+    
+    inline def setSetProperties(value: IGenericVariableProperties => js.Promise[Unit]): Self = StObject.set(x, "setProperties", js.Any.fromFunction1(value))
+    
+    inline def setSetStringValue(value: String => js.Promise[Unit]): Self = StObject.set(x, "setStringValue", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tensorflow/tfjs-backend-cpu" : "4.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tensorflow/tfjs-backend-cpu" : "4.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

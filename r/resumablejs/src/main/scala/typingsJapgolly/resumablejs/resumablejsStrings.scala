@@ -1,129 +1,104 @@
 package typingsJapgolly.resumablejs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resumablejsStrings {
-  @js.native
-  sealed trait DELETE extends js.Object
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait OPTIONS extends StObject
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait beforeCancel extends js.Object
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait beforeCancel extends StObject
+  inline def beforeCancel: beforeCancel = "beforeCancel".asInstanceOf[beforeCancel]
   
   @js.native
-  sealed trait catchAll extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait chunkingComplete extends js.Object
+  sealed trait catchAll extends StObject
+  inline def catchAll: catchAll = "catchAll".asInstanceOf[catchAll]
   
   @js.native
-  sealed trait chunkingProgress extends js.Object
+  sealed trait chunkingComplete extends StObject
+  inline def chunkingComplete: chunkingComplete = "chunkingComplete".asInstanceOf[chunkingComplete]
   
   @js.native
-  sealed trait chunkingStart extends js.Object
+  sealed trait chunkingProgress extends StObject
+  inline def chunkingProgress: chunkingProgress = "chunkingProgress".asInstanceOf[chunkingProgress]
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait chunkingStart extends StObject
+  inline def chunkingStart: chunkingStart = "chunkingStart".asInstanceOf[chunkingStart]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait complete extends StObject
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait fileAdded extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fileError extends js.Object
+  sealed trait fileAdded extends StObject
+  inline def fileAdded: fileAdded = "fileAdded".asInstanceOf[fileAdded]
   
   @js.native
-  sealed trait fileProgress extends js.Object
+  sealed trait fileError extends StObject
+  inline def fileError: fileError = "fileError".asInstanceOf[fileError]
   
   @js.native
-  sealed trait fileRetry extends js.Object
+  sealed trait fileProgress extends StObject
+  inline def fileProgress: fileProgress = "fileProgress".asInstanceOf[fileProgress]
   
   @js.native
-  sealed trait fileSuccess extends js.Object
+  sealed trait fileRetry extends StObject
+  inline def fileRetry: fileRetry = "fileRetry".asInstanceOf[fileRetry]
   
   @js.native
-  sealed trait filesAdded extends js.Object
+  sealed trait fileSuccess extends StObject
+  inline def fileSuccess: fileSuccess = "fileSuccess".asInstanceOf[fileSuccess]
   
   @js.native
-  sealed trait multipart extends js.Object
+  sealed trait filesAdded extends StObject
+  inline def filesAdded: filesAdded = "filesAdded".asInstanceOf[filesAdded]
   
   @js.native
-  sealed trait octet extends js.Object
+  sealed trait multipart extends StObject
+  inline def multipart: multipart = "multipart".asInstanceOf[multipart]
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait octet extends StObject
+  inline def octet: octet = "octet".asInstanceOf[octet]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait uploadStart extends js.Object
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def beforeCancel: beforeCancel = "beforeCancel".asInstanceOf[beforeCancel]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def catchAll: catchAll = "catchAll".asInstanceOf[catchAll]
-  @scala.inline
-  def chunkingComplete: chunkingComplete = "chunkingComplete".asInstanceOf[chunkingComplete]
-  @scala.inline
-  def chunkingProgress: chunkingProgress = "chunkingProgress".asInstanceOf[chunkingProgress]
-  @scala.inline
-  def chunkingStart: chunkingStart = "chunkingStart".asInstanceOf[chunkingStart]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fileAdded: fileAdded = "fileAdded".asInstanceOf[fileAdded]
-  @scala.inline
-  def fileError: fileError = "fileError".asInstanceOf[fileError]
-  @scala.inline
-  def fileProgress: fileProgress = "fileProgress".asInstanceOf[fileProgress]
-  @scala.inline
-  def fileRetry: fileRetry = "fileRetry".asInstanceOf[fileRetry]
-  @scala.inline
-  def fileSuccess: fileSuccess = "fileSuccess".asInstanceOf[fileSuccess]
-  @scala.inline
-  def filesAdded: filesAdded = "filesAdded".asInstanceOf[filesAdded]
-  @scala.inline
-  def multipart: multipart = "multipart".asInstanceOf[multipart]
-  @scala.inline
-  def octet: octet = "octet".asInstanceOf[octet]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def uploadStart: uploadStart = "uploadStart".asInstanceOf[uploadStart]
+  @js.native
+  sealed trait uploadStart extends StObject
+  inline def uploadStart: uploadStart = "uploadStart".asInstanceOf[uploadStart]
 }
-

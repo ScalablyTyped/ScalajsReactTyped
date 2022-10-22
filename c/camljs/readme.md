@@ -1,7 +1,7 @@
 
 # Scala.js typings for camljs
 
-Typings are for version 2.12.0
+Typings are for version 2.13.0
 
 ## Library description:
 Library for creating SharePoint CAML queries client-side. For JSOM, REST or SPServices.
@@ -10,15 +10,12 @@ Library for creating SharePoint CAML queries client-side. For JSOM, REST or SPSe
 | ------------------ | :-------------: |
 | Full name          | camljs |
 | Keywords           | sharepoint, caml |
-| # releases         | 8 |
-| # dependents       | 3 |
-| # downloads        | 10735 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1538.3333333333333 |
+| # stars            | 71.0 |
 
 ## Links
-- [Homepage](https://github.com/andrei-markeev/camljs#readme)
-- [Bugs](https://github.com/andrei-markeev/camljs/issues)
-- [Repository](https://github.com/andrei-markeev/camljs)
 - [Npm](https://www.npmjs.com/package/camljs)
     
 

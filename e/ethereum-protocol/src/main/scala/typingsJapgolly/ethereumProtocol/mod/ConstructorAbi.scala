@@ -1,20 +1,25 @@
 package typingsJapgolly.ethereumProtocol.mod
 
 import typingsJapgolly.ethereumProtocol.mod.AbiType.Constructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstructorAbi extends FunctionAbi {
+trait ConstructorAbi
+  extends StObject
+     with FunctionAbi {
+  
   var inputs: js.Array[DataItem]
+  
   var payable: Boolean
+  
   var stateMutability: ConstructorStateMutability
+  
   var `type`: Constructor
 }
-
 object ConstructorAbi {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     inputs: js.Array[DataItem],
     payable: Boolean,
     stateMutability: ConstructorStateMutability,
@@ -24,5 +29,17 @@ object ConstructorAbi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorAbi]
   }
+  
+  extension [Self <: ConstructorAbi](x: Self) {
+    
+    inline def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    
+    inline def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value*))
+    
+    inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
+    
+    inline def setStateMutability(value: ConstructorStateMutability): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

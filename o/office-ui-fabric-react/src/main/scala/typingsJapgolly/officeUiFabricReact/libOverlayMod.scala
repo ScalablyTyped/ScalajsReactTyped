@@ -1,20 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.overlayTypesMod.IOverlayProps
+import typingsJapgolly.officeUiFabricReact.libComponentsOverlayOverlayDottypesMod.IOverlayProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Overlay", JSImport.Namespace)
-@js.native
-object libOverlayMod extends js.Object {
+object libOverlayMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Overlay", "Overlay")
   @js.native
-  class OverlayBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.overlayMod.OverlayBase {
+  val Overlay: FunctionComponent[IOverlayProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Overlay", "OverlayBase")
+  @js.native
+  open class OverlayBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsOverlayMod.OverlayBase {
     def this(props: IOverlayProps) = this()
   }
-  
-  val Overlay: FunctionComponent[IOverlayProps] = js.native
 }
-

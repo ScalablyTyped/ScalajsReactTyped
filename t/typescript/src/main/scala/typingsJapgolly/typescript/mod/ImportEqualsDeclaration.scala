@@ -1,20 +1,30 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ImportEqualsDeclaration
-  extends DeclarationStatement
-     with JSDocContainer
-     with _HasJSDoc {
+  extends StObject
+     with DeclarationStatement
+     with HasJSDoc
+     with HasModifiers
+     with TypeOnlyCompatibleAliasDeclaration {
+  
+  val isTypeOnly: Boolean = js.native
+  
   @JSName("kind")
-  var kind_ImportEqualsDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ImportEqualsDeclaration = js.native
-  var moduleReference: ModuleReference = js.native
+  val kind_ImportEqualsDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ImportEqualsDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_ImportEqualsDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  
+  val moduleReference: ModuleReference = js.native
+  
   @JSName("name")
-  var name_ImportEqualsDeclaration: Identifier = js.native
+  val name_ImportEqualsDeclaration: Identifier = js.native
+  
   @JSName("parent")
-  var parent_ImportEqualsDeclaration: SourceFile | ModuleBlock = js.native
+  val parent_ImportEqualsDeclaration: SourceFile | ModuleBlock = js.native
 }
-

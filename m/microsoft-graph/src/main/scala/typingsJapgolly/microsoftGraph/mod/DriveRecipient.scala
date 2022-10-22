@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DriveRecipient extends js.Object {
+trait DriveRecipient extends StObject {
+  
   // The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
-  var alias: js.UndefOr[String] = js.undefined
+  var alias: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The email address for the recipient, if the recipient has an associated email address.
-  var email: js.UndefOr[String] = js.undefined
+  var email: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The unique identifier for the recipient in the directory.
-  var objectId: js.UndefOr[String] = js.undefined
+  var objectId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DriveRecipient {
-  @scala.inline
-  def apply(alias: String = null, email: String = null, objectId: String = null): DriveRecipient = {
+  
+  inline def apply(): DriveRecipient = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (objectId != null) __obj.updateDynamic("objectId")(objectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveRecipient]
   }
+  
+  extension [Self <: DriveRecipient](x: Self) {
+    
+    inline def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasNull: Self = StObject.set(x, "alias", null)
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setEmail(value: NullableOption[String]): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailNull: Self = StObject.set(x, "email", null)
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setObjectId(value: NullableOption[String]): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdNull: Self = StObject.set(x, "objectId", null)
+    
+    inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+  }
 }
-

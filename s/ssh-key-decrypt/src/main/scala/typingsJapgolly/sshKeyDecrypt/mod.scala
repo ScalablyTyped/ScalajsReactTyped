@@ -1,20 +1,22 @@
 package typingsJapgolly.sshKeyDecrypt
 
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.BufferEncoding
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
 import typingsJapgolly.sshKeyDecrypt.sshKeyDecryptStrings.buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ssh-key-decrypt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(data: String, passphrase: String): Buffer = js.native
-  def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = js.native
-  def apply(data: String, passphrase: String, outEnc: buffer): Buffer = js.native
-  def apply(data: Buffer, passphrase: String): Buffer = js.native
-  def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = js.native
-  def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = js.native
+object mod {
+  
+  inline def apply(data: String, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: String, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: String, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: Buffer, passphrase: String): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def apply(data: Buffer, passphrase: String, outEnc: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(data: Buffer, passphrase: String, outEnc: buffer): Buffer = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], outEnc.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  @JSImport("ssh-key-decrypt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

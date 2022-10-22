@@ -1,102 +1,146 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendProperties extends WidgetProperties {
+trait LegendProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
-    * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend. The legend widget watches this property to hide or display the layer's legend when an [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) is removed from or added to this collection.
+    * Collection of [ActiveLayerInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html) objects used by the legend view to display data in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#activeLayerInfos)
     */
   var activeLayerInfos: js.UndefOr[CollectionProperties[ActiveLayerInfoProperties]] = js.undefined
+  
   /**
     * Indicates whether to show the [Basemap](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html) layers in the Legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#basemapLegendVisible)
     */
   var basemapLegendVisible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the heading level to use for the legend title.
+    *
+    * @default 3
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#headingLevel)
+    */
+  var headingLevel: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When `true`, layers will only be shown in the legend if they are visible in the view's extent.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#hideLayersNotInCurrentView)
+    */
+  var hideLayersNotInCurrentView: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
-    * Specifies a subset of the layers to display in the legend. If this property is not set, all layers in the map will display in the legend. Objects in this array are defined with the properties listed below.
+    * Specifies a subset of the layers to display in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */
   var layerInfos: js.UndefOr[js.Array[LegendLayerInfos]] = js.undefined
+  
   /**
-    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`). By default, a layer's legend elements **will not render** in the legend given the following conditions:
-    *   * The layer's [legendEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled) property is set to `false`.
-    *   * If the view's scale is outside the visibility range defined by the layer's [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#minScale) and [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#maxScale) properties.
-    *
-    *
-    * When the `respectLayerVisibility` property of the legend is set to `false`, the legend elements for each layer in the map will always display, thus disregarding the `minScale`, `maxScale`, and `legendEnabled` properties for each layer in the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#respectLayerVisibility)
+    * Determines whether to respect the properties of the layers in the map that control the legend's visibility (`minScale`, `maxScale`, `legendEnabled`).
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#respectLayerVisibility)
     */
   var respectLayerVisibility: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Indicates the style of the legend. The style determines the legend's layout and behavior. You can either specify a string or an object to indicate the style. The known string values are the same values listed in the table within the `type` property.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
+    * Indicates the style of the legend.
     *
     * @default classic
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#style)
     */
   var style: js.UndefOr[String | LegendStyle] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [LegendViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-LegendViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#viewModel)
     */
   var viewModel: js.UndefOr[LegendViewModelProperties] = js.undefined
 }
-
 object LegendProperties {
-  @scala.inline
-  def apply(
-    activeLayerInfos: CollectionProperties[ActiveLayerInfoProperties] = null,
-    basemapLegendVisible: js.UndefOr[Boolean] = js.undefined,
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    layerInfos: js.Array[LegendLayerInfos] = null,
-    respectLayerVisibility: js.UndefOr[Boolean] = js.undefined,
-    style: String | LegendStyle = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: LegendViewModelProperties = null
-  ): LegendProperties = {
+  
+  inline def apply(): LegendProperties = {
     val __obj = js.Dynamic.literal()
-    if (activeLayerInfos != null) __obj.updateDynamic("activeLayerInfos")(activeLayerInfos.asInstanceOf[js.Any])
-    if (!js.isUndefined(basemapLegendVisible)) __obj.updateDynamic("basemapLegendVisible")(basemapLegendVisible.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layerInfos != null) __obj.updateDynamic("layerInfos")(layerInfos.asInstanceOf[js.Any])
-    if (!js.isUndefined(respectLayerVisibility)) __obj.updateDynamic("respectLayerVisibility")(respectLayerVisibility.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendProperties]
   }
+  
+  extension [Self <: LegendProperties](x: Self) {
+    
+    inline def setActiveLayerInfos(value: CollectionProperties[ActiveLayerInfoProperties]): Self = StObject.set(x, "activeLayerInfos", value.asInstanceOf[js.Any])
+    
+    inline def setActiveLayerInfosUndefined: Self = StObject.set(x, "activeLayerInfos", js.undefined)
+    
+    inline def setActiveLayerInfosVarargs(value: ActiveLayerInfoProperties*): Self = StObject.set(x, "activeLayerInfos", js.Array(value*))
+    
+    inline def setBasemapLegendVisible(value: Boolean): Self = StObject.set(x, "basemapLegendVisible", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapLegendVisibleUndefined: Self = StObject.set(x, "basemapLegendVisible", js.undefined)
+    
+    inline def setHeadingLevel(value: Double): Self = StObject.set(x, "headingLevel", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingLevelUndefined: Self = StObject.set(x, "headingLevel", js.undefined)
+    
+    inline def setHideLayersNotInCurrentView(value: Boolean): Self = StObject.set(x, "hideLayersNotInCurrentView", value.asInstanceOf[js.Any])
+    
+    inline def setHideLayersNotInCurrentViewUndefined: Self = StObject.set(x, "hideLayersNotInCurrentView", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setLayerInfos(value: js.Array[LegendLayerInfos]): Self = StObject.set(x, "layerInfos", value.asInstanceOf[js.Any])
+    
+    inline def setLayerInfosUndefined: Self = StObject.set(x, "layerInfos", js.undefined)
+    
+    inline def setLayerInfosVarargs(value: LegendLayerInfos*): Self = StObject.set(x, "layerInfos", js.Array(value*))
+    
+    inline def setRespectLayerVisibility(value: Boolean): Self = StObject.set(x, "respectLayerVisibility", value.asInstanceOf[js.Any])
+    
+    inline def setRespectLayerVisibilityUndefined: Self = StObject.set(x, "respectLayerVisibility", js.undefined)
+    
+    inline def setStyle(value: String | LegendStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: LegendViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

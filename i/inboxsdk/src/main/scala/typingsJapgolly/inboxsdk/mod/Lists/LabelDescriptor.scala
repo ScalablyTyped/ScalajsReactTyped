@@ -1,45 +1,23 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorHtml
   - typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorUrl
 */
-trait LabelDescriptor extends js.Object
-
+trait LabelDescriptor extends StObject
 object LabelDescriptor {
-  @scala.inline
-  def LabelDescriptorHtml(
-    iconHtml: String,
-    title: String,
-    backgroundColor: String = null,
-    foregroundColor: String = null,
-    iconBackgroundColor: String = null
-  ): LabelDescriptor = {
+  
+  inline def LabelDescriptorHtml(iconHtml: String, title: String): typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorHtml = {
     val __obj = js.Dynamic.literal(iconHtml = iconHtml.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (iconBackgroundColor != null) __obj.updateDynamic("iconBackgroundColor")(iconBackgroundColor.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LabelDescriptor]
+    __obj.asInstanceOf[typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorHtml]
   }
-  @scala.inline
-  def LabelDescriptorUrl(
-    iconUrl: String,
-    title: String,
-    backgroundColor: String = null,
-    foregroundColor: String = null,
-    iconBackgroundColor: String = null,
-    iconClass: String = null
-  ): LabelDescriptor = {
+  
+  inline def LabelDescriptorUrl(iconUrl: String, title: String): typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorUrl = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (iconBackgroundColor != null) __obj.updateDynamic("iconBackgroundColor")(iconBackgroundColor.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LabelDescriptor]
+    __obj.asInstanceOf[typingsJapgolly.inboxsdk.mod.Lists.LabelDescriptorUrl]
   }
 }
-

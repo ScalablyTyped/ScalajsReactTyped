@@ -1,12 +1,15 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region "ajax-methods"
 @js.native
-trait AjaxMethods extends Api {
+trait AjaxMethods
+  extends StObject
+     with Api {
+  
   /**
     * Reload the table data from the Ajax data source.
     *
@@ -14,7 +17,7 @@ trait AjaxMethods extends Api {
     * @param resetPaging Reset (default action or true) or hold the current paging position (false).
     */
   def load(): Api = js.native
-  def load(callback: js.Function1[/* json */ js.Any, Unit]): Api = js.native
-  def load(callback: js.Function1[/* json */ js.Any, Unit], resetPaging: Boolean): Api = js.native
+  def load(callback: js.Function1[/* json */ Any, Unit]): Api = js.native
+  def load(callback: js.Function1[/* json */ Any, Unit], resetPaging: Boolean): Api = js.native
+  def load(callback: Unit, resetPaging: Boolean): Api = js.native
 }
-

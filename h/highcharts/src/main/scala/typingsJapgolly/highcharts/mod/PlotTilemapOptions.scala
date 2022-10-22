@@ -1,17 +1,18 @@
 package typingsJapgolly.highcharts.mod
 
-import typingsJapgolly.highcharts.highchartsNumbers.`0`
-import typingsJapgolly.highcharts.highchartsNumbers.`100`
+import typingsJapgolly.highcharts.highchartsInts.`0`
+import typingsJapgolly.highcharts.highchartsInts.`100`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotTilemapOptions extends js.Object {
+trait PlotTilemapOptions extends StObject {
+  
   /**
-    * (Highcharts, Highmaps) Accessibility options for a series. Requires the
-    * accessibility module.
+    * (Highcharts, Highmaps) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[js.Object | PlotTilemapAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Allow this series' points to be selected by
     * clicking on the graphic (columns, point markers, pie slices, map areas
@@ -23,31 +24,13 @@ trait PlotTilemapOptions extends js.Object {
     * And alternative way of selecting points is through dragging.
     */
   var allowPointSelect: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Animation is disabled by default on the heatmap
     * series.
     */
   var animation: js.UndefOr[Boolean | PlotTilemapAnimationOptions] = js.undefined
-  /**
-    * (Highcharts, Highmaps) Sets the color blending in the boost module.
-    */
-  var boostBlending: js.UndefOr[OptionsBoostBlendingValue] = js.undefined
-  /**
-    * (Highcharts, Highmaps) Set the point threshold for when a series should
-    * enter boost mode.
-    *
-    * Setting it to e.g. 2000 will cause the series to enter boost mode when
-    * there are 2000 or more points in the series.
-    *
-    * To disable boosting on the series, set the `boostThreshold` to 0. Setting
-    * it to 1 will force boosting.
-    *
-    * Note that the cropThreshold also affects this setting. When zooming in on
-    * a series that has fewer points than the `cropThreshold`, all points are
-    * rendered although outside the visible plot area, and the `boostThreshold`
-    * won't take effect.
-    */
-  var boostThreshold: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highmaps) The border color of the map areas.
     *
@@ -55,16 +38,25 @@ trait PlotTilemapOptions extends js.Object {
     * class.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
-    * (Highmaps) The border width for each heat map item.
+    * (Highcharts, Highmaps) The border radius for each heatmap item. The
+    * border's color and width can be set in marker options.
+    */
+  var borderRadius: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highmaps) The border width for each heatmap item.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) An additional class name to apply to the series'
     * graphical elements. This option does not replace default class names of
     * the graphical element.
     */
   var className: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Disable this option to allow series rendering in
     * the whole plotting area.
@@ -72,6 +64,7 @@ trait PlotTilemapOptions extends js.Object {
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
   var clip: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) The main color of the series. In heat maps this color is
     * rarely used, as we mostly use the color to denote the value of each
@@ -79,6 +72,7 @@ trait PlotTilemapOptions extends js.Object {
     * pulled from the options.colors array.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
     * this number defines which colorAxis the particular series is connected
@@ -90,12 +84,14 @@ trait PlotTilemapOptions extends js.Object {
     * of a boolean flag.
     */
   var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Styled mode only. A specific color index to use
     * for the series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
   var colorIndex: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) Determines what data value should be
     * used to calculate point color if `colorAxis` is used. Requires to set
@@ -103,11 +99,13 @@ trait PlotTilemapOptions extends js.Object {
     * for data grouping is set to `'sum'`.
     */
   var colorKey: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The column size - how many X axis units each
     * column in the tilemap should span. Works as in Heatmaps.
     */
   var colsize: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Compare the values of the series against the first non-null,
     * non- zero value in the visible range. The y axis will show percentage or
@@ -116,37 +114,50 @@ trait PlotTilemapOptions extends js.Object {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.undefined
+  var compare: js.UndefOr[OptionsCompareValue] = js.undefined
+  
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
   var compareBase: js.UndefOr[`0` | `100`] = js.undefined
+  
   /**
     * (Highstock) Defines if comparison should start from the first point
-    * within the visible range or should start from the first point (see online
-    * documentation for example) the range. In other words, this flag
-    * determines if first point within the visible range will have 0%
-    * (`compareStart=true`) or should have been already calculated according to
-    * the previous point (`compareStart=false`).
+    * within the visible range or should start from the first point **before**
+    * the range.
+    *
+    * In other words, this flag determines if first point within the visible
+    * range will have 0% (`compareStart=true`) or should have been already
+    * calculated according to the previous point (`compareStart=false`).
     */
   var compareStart: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[PlotTilemapConnectorsOptions] = js.undefined
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
+  
   /**
-    * (Highcharts, Highstock) When the series contains less points than the
-    * crop threshold, all points are drawn, even if the points fall outside the
-    * visible plot area at the current zoom. The advantage of drawing all
-    * points (including markers and columns), is that animation is performed on
-    * updates. On the other hand, when the series contains more points than the
-    * crop threshold, the series data is cropped to only contain points that
-    * fall within the plot area. The advantage of cropping away invisible
-    * points is to increase performance on large series.
+    * (Highcharts, Highstock, Gantt) When true, each point or column edge is
+    * rounded to its nearest pixel in order to render sharp on screen. In some
+    * cases, when there are a lot of densely packed columns, this leads to
+    * visible difference in column widths or distance between columns. In these
+    * cases, setting `crisp` to `false` may look better, even though each
+    * column is rendered blurry.
     */
-  var cropThreshold: js.UndefOr[Double] = js.undefined
+  var crisp: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highstock) Cumulative Sum feature replaces points' values with the
+    * following formula: `sum of all previous points' values + current point's
+    * value`. Works only for points in a visible range. Adds the
+    * `cumulativeSum` field to each point object that can be accessed e.g. in
+    * the tooltip.pointFormat.
+    */
+  var cumulative: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) You can set the cursor to "pointer" if you have
     * click events attached to the series, to signal to the user that the
@@ -156,12 +167,26 @@ trait PlotTilemapOptions extends js.Object {
     * listed under series.color.
     */
   var cursor: js.UndefOr[String | CursorValue] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) A reserved subspace to store options and values
+    * for customized functionality. Here you can add additional data for your
+    * own event callbacks and formatter callbacks.
+    */
+  var custom: js.UndefOr[Dictionary[Any]] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Indicates data is structured as columns instead of
+    * rows.
+    */
+  var dataAsColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
     * larger blocks in order to ease readability and increase performance of
-    * the JavaScript charts. Highstock by default applies data grouping when
-    * the points become closer than a certain pixel value, determined by the
-    * `groupPixelWidth` option.
+    * the JavaScript charts. Highcharts Stock by default applies data grouping
+    * when the points become closer than a certain pixel value, determined by
+    * the `groupPixelWidth` option.
     *
     * If data grouping is applied, the grouping information of grouped points
     * can be read from the Point.dataGroup. If point options other than the
@@ -170,10 +195,11 @@ trait PlotTilemapOptions extends js.Object {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[PlotTilemapDataGroupingOptions] = js.undefined
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
+  
   /**
-    * (Highcharts, Highmaps) Options for the series data labels, appearing next
-    * to each data point.
+    * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
+    * labels, appearing next to each data point.
     *
     * Since v6.2.0, multiple data labels can be applied to each single point by
     * defining them as an array of configs.
@@ -182,31 +208,36 @@ trait PlotTilemapOptions extends js.Object {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject]] = js.undefined
+  var dataLabels: js.UndefOr[PlotTilemapDataLabelsOptions | js.Array[PlotTilemapDataLabelsOptions]] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) A description of the series to add to the screen
     * reader information about the series.
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The draggable-points module allows points to be
     * moved around or modified in the chart. In addition to the options
     * mentioned under the `dragDrop` API structure, the module fires three
     * events, point.dragStart, point.drag and point.drop.
     */
-  var dragDrop: js.UndefOr[PlotTilemapDragDropOptions] = js.undefined
+  var dragDrop: js.UndefOr[SeriesDragDropOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Enable or disable the mouse tracking for a
     * specific series. This includes point tooltips and click events on graphs
     * and points. For large datasets it improves performance.
     */
   var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) General event handlers for the series items. These
     * event hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[PlotTilemapEventsOptions] = js.undefined
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
     * gapUnit option.
@@ -223,19 +254,21 @@ trait PlotTilemapOptions extends js.Object {
     * while gaps will appear in nights and weekends.
     */
   var gapSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Together with gapSize, this option defines where to draw gaps
     * in the graph.
     *
-    * When the `gapUnit` is `relative` (default), a gap size of 5 means that if
-    * the distance between two points is greater than five times that of the
+    * When the `gapUnit` is `"relative"` (default), a gap size of 5 means that
+    * if the distance between two points is greater than 5 times that of the
     * two closest points, the graph will be broken.
     *
-    * When the `gapUnit` is `value`, the gap is based on absolute axis values,
-    * which on a datetime axis is milliseconds. This also applies to the
-    * navigator series that inherits gap options from the base series.
+    * When the `gapUnit` is `"value"`, the gap is based on absolute axis
+    * values, which on a datetime axis is milliseconds. This also applies to
+    * the navigator series that inherits gap options from the base series.
     */
   var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) When set to `false` will prevent the series data
     * from being included in any form of data export.
@@ -244,12 +277,14 @@ trait PlotTilemapOptions extends js.Object {
     * `includeInCSVExport`.
     */
   var includeInDataExport: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) An array specifying which option maps to which key
     * in the data point array. This makes it convenient to work with
     * unstructured data arrays from different sources.
     */
   var keys: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
     * series as possible in a natural way, seeking to avoid other series. The
@@ -259,22 +294,32 @@ trait PlotTilemapOptions extends js.Object {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[PlotTilemapLabelOptions] = js.undefined
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
+  
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[PlotTilemapLastPriceOptions] = js.undefined
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
+  
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[PlotTilemapLastVisiblePriceOptions] = js.undefined
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
     * Additionally, the value can be ":previous" to link to the previous
     * series. When two series are linked, only the first one appears in the
     * legend. Toggling the visibility of this also toggles the linked series.
+    *
+    * If master series uses data sorting and linked series does not have its
+    * own sorting definition, the linked series will be sorted in the same
+    * order as the master one.
     */
   var linkedTo: js.UndefOr[String] = js.undefined
+  
+  var marker: js.UndefOr[Any] = js.undefined
+  
   /**
     * (Highstock) Options for the corresponding navigator series if
     * `showInNavigator` is `true` for this series. Available options are the
@@ -284,51 +329,81 @@ trait PlotTilemapOptions extends js.Object {
     * precedence if the same option is defined both places.
     */
   var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The color for the parts of the graph or points
-    * that are below the threshold.
+    * that are below the threshold. Note that `zones` takes precedence over the
+    * negative color. Using `negativeColor` is equivalent to applying a zone
+    * with value of 0.
     */
   var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The color applied to null points. In styled mode,
     * a general CSS class is applied instead.
     */
   var nullColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highmaps) Options for the _Series on point_ feature. Only
+    * `pie` and `sunburst` series are supported at this moment.
+    */
+  var onPoint: js.UndefOr[js.Object | PlotTilemapOnPointOptions] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Opacity of a series parts: line, fill (e.g. area)
     * and dataLabels.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Properties for each single point.
     */
-  var point: js.UndefOr[PlotTilemapPointOptions] = js.undefined
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
+  
   /**
-    * (Highcharts, Highmaps) Same as accessibility.pointDescriptionFormatter,
+    * (Highcharts, Highmaps) Same as accessibility.series.descriptionFormatter,
     * but for an individual series. Overrides the chart wide configuration.
     */
   var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The padding between points in the tilemap.
     */
   var pointPadding: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) When true, X values in the data set are relative
+    * to the current `pointStart`, `pointInterval` and `pointIntervalUnit`
+    * settings. This allows compression of the data for datasets with irregular
+    * X values.
+    *
+    * The real X values are computed on the formula `f(x) = ax + b`, where `a`
+    * is the `pointInterval` (optionally with a time unit given by
+    * `pointIntervalUnit`), and `b` is the `pointStart`.
+    */
+  var relativeXValue: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The row size - how many Y axis units each tilemap
     * row should span. Analogous to colsize.
     */
   var rowsize: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Whether to select the series initially. If
     * `showCheckbox` is true, the checkbox next to the series name in the
     * legend will be checked for a selected series.
     */
   var selected: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) If true, a checkbox is displayed next to the
     * legend item to allow selecting the series. The state of the checkbox is
     * determined by the `selected` option.
     */
   var showCheckbox: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Whether to display this particular series or
     * series type in the legend. Standalone series are shown in legend by
@@ -336,41 +411,48 @@ trait PlotTilemapOptions extends js.Object {
     * series that use colorAxis by setting this option to `true`.
     */
   var showInLegend: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock) Whether or not to show the series in the navigator. Takes
     * precedence over navigator.baseSeries if defined.
     */
   var showInNavigator: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) If set to `true`, the accessibility module will
     * skip past the points in this series for keyboard navigation.
     */
   var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
-  var states: js.UndefOr[PlotTilemapStatesOptions] = js.undefined
+  
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
+  
   /**
-    * (Highcharts, Highstock) Sticky tracking of mouse events. When true, the
-    * `mouseOut` event on a series isn't triggered until the mouse moves over
-    * another series, or out of the plot area. When false, the `mouseOut` event
-    * on a series is triggered when the mouse leaves the area around the
-    * series' graph or markers. This also implies the tooltip. When
+    * (Highcharts, Highstock, Highmaps) Sticky tracking of mouse events. When
+    * true, the `mouseOut` event on a series isn't triggered until the mouse
+    * moves over another series, or out of the plot area. When false, the
+    * `mouseOut` event on a series is triggered when the mouse leaves the area
+    * around the series' graph or markers. This also implies the tooltip. When
     * `stickyTracking` is false and `tooltip.shared` is false, the tooltip will
     * be hidden when moving the mouse between series.
     */
   var stickyTracking: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) The shape of the tiles in the tilemap. Possible
     * values are `hexagon`, `circle`, `diamond`, and `square`.
     */
   var tileShape: js.UndefOr[TilemapShapeValue] = js.undefined
+  
   /**
-    * (Highcharts, Highstock) A configuration object for the tooltip rendering
-    * of each single series. Properties are inherited from tooltip. Overridable
-    * properties are `headerFormat`, `pointFormat`, `yDecimals`, `xDateFormat`,
-    * `yPrefix` and `ySuffix`. Unlike other series, in a scatter plot the
-    * series.name by default shows in the headerFormat and point.x and point.y
-    * in the pointFormat.
+    * (Highcharts, Highstock, Highmaps) A configuration object for the tooltip
+    * rendering of each single series. Properties are inherited from tooltip.
+    * Overridable properties are `headerFormat`, `pointFormat`, `yDecimals`,
+    * `xDateFormat`, `yPrefix` and `ySuffix`. Unlike other series, in a scatter
+    * plot the series.name by default shows in the headerFormat and point.x and
+    * point.y in the pointFormat.
     */
-  var tooltip: js.UndefOr[PlotTilemapTooltipOptions] = js.undefined
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
     * is longer than this, only one dimensional arrays of numbers, or two
@@ -383,18 +465,22 @@ trait PlotTilemapOptions extends js.Object {
     * two dimensional arrays are allowed.
     */
   var turboThreshold: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highmaps) Set the initial visibility of the series.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highmaps) Define the z index of the series.
     */
   var zIndex: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock) Defines the Axis on which the zones are applied.
     */
   var zoneAxis: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
     * can be applied to the X axis, Y axis or Z axis for bubbles, according to
@@ -405,127 +491,265 @@ trait PlotTilemapOptions extends js.Object {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[PlotTilemapZonesOptions]] = js.undefined
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
-
 object PlotTilemapOptions {
-  @scala.inline
-  def apply(
-    accessibility: js.Object | PlotTilemapAccessibilityOptions = null,
-    allowPointSelect: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | PlotTilemapAnimationOptions = null,
-    boostBlending: OptionsBoostBlendingValue = null,
-    boostThreshold: Int | Double = null,
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    borderWidth: Int | Double = null,
-    className: String = null,
-    clip: js.UndefOr[Boolean] = js.undefined,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    colorAxis: Boolean | Double | String = null,
-    colorIndex: Int | Double = null,
-    colorKey: String = null,
-    colsize: Int | Double = null,
-    compare: String = null,
-    compareBase: `0` | `100` = null,
-    compareStart: js.UndefOr[Boolean] = js.undefined,
-    connectors: PlotTilemapConnectorsOptions = null,
-    cropThreshold: Int | Double = null,
-    cursor: String | CursorValue = null,
-    dataGrouping: PlotTilemapDataGroupingOptions = null,
-    dataLabels: DataLabelsOptionsObject | js.Array[DataLabelsOptionsObject] = null,
-    description: String = null,
-    dragDrop: PlotTilemapDragDropOptions = null,
-    enableMouseTracking: js.UndefOr[Boolean] = js.undefined,
-    events: PlotTilemapEventsOptions = null,
-    gapSize: Int | Double = null,
-    gapUnit: OptionsGapUnitValue = null,
-    includeInDataExport: js.UndefOr[Boolean] = js.undefined,
-    keys: js.Array[String] = null,
-    label: PlotTilemapLabelOptions = null,
-    lastPrice: PlotTilemapLastPriceOptions = null,
-    lastVisiblePrice: PlotTilemapLastVisiblePriceOptions = null,
-    linkedTo: String = null,
-    navigatorOptions: PlotSeriesOptions = null,
-    negativeColor: ColorString | GradientColorObject | PatternObject = null,
-    nullColor: ColorString | GradientColorObject | PatternObject = null,
-    opacity: Int | Double = null,
-    point: PlotTilemapPointOptions = null,
-    pointDescriptionFormatter: js.Function = null,
-    pointPadding: Int | Double = null,
-    rowsize: Int | Double = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    showCheckbox: js.UndefOr[Boolean] = js.undefined,
-    showInLegend: js.UndefOr[Boolean] = js.undefined,
-    showInNavigator: js.UndefOr[Boolean] = js.undefined,
-    skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    states: PlotTilemapStatesOptions = null,
-    stickyTracking: js.UndefOr[Boolean] = js.undefined,
-    tileShape: TilemapShapeValue = null,
-    tooltip: PlotTilemapTooltipOptions = null,
-    turboThreshold: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null,
-    zoneAxis: String = null,
-    zones: js.Array[PlotTilemapZonesOptions] = null
-  ): PlotTilemapOptions = {
+  
+  inline def apply(): PlotTilemapOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPointSelect)) __obj.updateDynamic("allowPointSelect")(allowPointSelect.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (boostBlending != null) __obj.updateDynamic("boostBlending")(boostBlending.asInstanceOf[js.Any])
-    if (boostThreshold != null) __obj.updateDynamic("boostThreshold")(boostThreshold.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clip)) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorAxis != null) __obj.updateDynamic("colorAxis")(colorAxis.asInstanceOf[js.Any])
-    if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
-    if (colorKey != null) __obj.updateDynamic("colorKey")(colorKey.asInstanceOf[js.Any])
-    if (colsize != null) __obj.updateDynamic("colsize")(colsize.asInstanceOf[js.Any])
-    if (compare != null) __obj.updateDynamic("compare")(compare.asInstanceOf[js.Any])
-    if (compareBase != null) __obj.updateDynamic("compareBase")(compareBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(compareStart)) __obj.updateDynamic("compareStart")(compareStart.asInstanceOf[js.Any])
-    if (connectors != null) __obj.updateDynamic("connectors")(connectors.asInstanceOf[js.Any])
-    if (cropThreshold != null) __obj.updateDynamic("cropThreshold")(cropThreshold.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (dataGrouping != null) __obj.updateDynamic("dataGrouping")(dataGrouping.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (dragDrop != null) __obj.updateDynamic("dragDrop")(dragDrop.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMouseTracking)) __obj.updateDynamic("enableMouseTracking")(enableMouseTracking.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (gapSize != null) __obj.updateDynamic("gapSize")(gapSize.asInstanceOf[js.Any])
-    if (gapUnit != null) __obj.updateDynamic("gapUnit")(gapUnit.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeInDataExport)) __obj.updateDynamic("includeInDataExport")(includeInDataExport.asInstanceOf[js.Any])
-    if (keys != null) __obj.updateDynamic("keys")(keys.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (lastPrice != null) __obj.updateDynamic("lastPrice")(lastPrice.asInstanceOf[js.Any])
-    if (lastVisiblePrice != null) __obj.updateDynamic("lastVisiblePrice")(lastVisiblePrice.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (navigatorOptions != null) __obj.updateDynamic("navigatorOptions")(navigatorOptions.asInstanceOf[js.Any])
-    if (negativeColor != null) __obj.updateDynamic("negativeColor")(negativeColor.asInstanceOf[js.Any])
-    if (nullColor != null) __obj.updateDynamic("nullColor")(nullColor.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (point != null) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (pointDescriptionFormatter != null) __obj.updateDynamic("pointDescriptionFormatter")(pointDescriptionFormatter.asInstanceOf[js.Any])
-    if (pointPadding != null) __obj.updateDynamic("pointPadding")(pointPadding.asInstanceOf[js.Any])
-    if (rowsize != null) __obj.updateDynamic("rowsize")(rowsize.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInLegend)) __obj.updateDynamic("showInLegend")(showInLegend.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInNavigator)) __obj.updateDynamic("showInNavigator")(showInNavigator.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipKeyboardNavigation)) __obj.updateDynamic("skipKeyboardNavigation")(skipKeyboardNavigation.asInstanceOf[js.Any])
-    if (states != null) __obj.updateDynamic("states")(states.asInstanceOf[js.Any])
-    if (!js.isUndefined(stickyTracking)) __obj.updateDynamic("stickyTracking")(stickyTracking.asInstanceOf[js.Any])
-    if (tileShape != null) __obj.updateDynamic("tileShape")(tileShape.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (turboThreshold != null) __obj.updateDynamic("turboThreshold")(turboThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    if (zoneAxis != null) __obj.updateDynamic("zoneAxis")(zoneAxis.asInstanceOf[js.Any])
-    if (zones != null) __obj.updateDynamic("zones")(zones.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTilemapOptions]
   }
+  
+  extension [Self <: PlotTilemapOptions](x: Self) {
+    
+    inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
+    
+    inline def setAllowPointSelectUndefined: Self = StObject.set(x, "allowPointSelect", js.undefined)
+    
+    inline def setAnimation(value: Boolean | PlotTilemapAnimationOptions): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setClip(value: Boolean): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorAxis(value: Boolean | Double | String): Self = StObject.set(x, "colorAxis", value.asInstanceOf[js.Any])
+    
+    inline def setColorAxisUndefined: Self = StObject.set(x, "colorAxis", js.undefined)
+    
+    inline def setColorIndex(value: Double): Self = StObject.set(x, "colorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColorIndexUndefined: Self = StObject.set(x, "colorIndex", js.undefined)
+    
+    inline def setColorKey(value: String): Self = StObject.set(x, "colorKey", value.asInstanceOf[js.Any])
+    
+    inline def setColorKeyUndefined: Self = StObject.set(x, "colorKey", js.undefined)
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColsize(value: Double): Self = StObject.set(x, "colsize", value.asInstanceOf[js.Any])
+    
+    inline def setColsizeUndefined: Self = StObject.set(x, "colsize", js.undefined)
+    
+    inline def setCompare(value: OptionsCompareValue): Self = StObject.set(x, "compare", value.asInstanceOf[js.Any])
+    
+    inline def setCompareBase(value: `0` | `100`): Self = StObject.set(x, "compareBase", value.asInstanceOf[js.Any])
+    
+    inline def setCompareBaseUndefined: Self = StObject.set(x, "compareBase", js.undefined)
+    
+    inline def setCompareStart(value: Boolean): Self = StObject.set(x, "compareStart", value.asInstanceOf[js.Any])
+    
+    inline def setCompareStartUndefined: Self = StObject.set(x, "compareStart", js.undefined)
+    
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    
+    inline def setConnectors(value: SeriesConnectorsOptionsObject): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorsUndefined: Self = StObject.set(x, "connectors", js.undefined)
+    
+    inline def setCrisp(value: Boolean): Self = StObject.set(x, "crisp", value.asInstanceOf[js.Any])
+    
+    inline def setCrispUndefined: Self = StObject.set(x, "crisp", js.undefined)
+    
+    inline def setCumulative(value: Boolean): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    
+    inline def setCumulativeUndefined: Self = StObject.set(x, "cumulative", js.undefined)
+    
+    inline def setCursor(value: String | CursorValue): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setCustom(value: Dictionary[Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDataAsColumns(value: Boolean): Self = StObject.set(x, "dataAsColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDataAsColumnsUndefined: Self = StObject.set(x, "dataAsColumns", js.undefined)
+    
+    inline def setDataGrouping(value: DataGroupingOptionsObject): Self = StObject.set(x, "dataGrouping", value.asInstanceOf[js.Any])
+    
+    inline def setDataGroupingUndefined: Self = StObject.set(x, "dataGrouping", js.undefined)
+    
+    inline def setDataLabels(value: PlotTilemapDataLabelsOptions | js.Array[PlotTilemapDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDataLabelsVarargs(value: PlotTilemapDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDragDrop(value: SeriesDragDropOptionsObject): Self = StObject.set(x, "dragDrop", value.asInstanceOf[js.Any])
+    
+    inline def setDragDropUndefined: Self = StObject.set(x, "dragDrop", js.undefined)
+    
+    inline def setEnableMouseTracking(value: Boolean): Self = StObject.set(x, "enableMouseTracking", value.asInstanceOf[js.Any])
+    
+    inline def setEnableMouseTrackingUndefined: Self = StObject.set(x, "enableMouseTracking", js.undefined)
+    
+    inline def setEvents(value: SeriesEventsOptionsObject): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setGapSize(value: Double): Self = StObject.set(x, "gapSize", value.asInstanceOf[js.Any])
+    
+    inline def setGapSizeUndefined: Self = StObject.set(x, "gapSize", js.undefined)
+    
+    inline def setGapUnit(value: OptionsGapUnitValue): Self = StObject.set(x, "gapUnit", value.asInstanceOf[js.Any])
+    
+    inline def setGapUnitUndefined: Self = StObject.set(x, "gapUnit", js.undefined)
+    
+    inline def setIncludeInDataExport(value: Boolean): Self = StObject.set(x, "includeInDataExport", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeInDataExportUndefined: Self = StObject.set(x, "includeInDataExport", js.undefined)
+    
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+    
+    inline def setLabel(value: SeriesLabelOptionsObject): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLastPrice(value: SeriesLastPriceOptionsObject): Self = StObject.set(x, "lastPrice", value.asInstanceOf[js.Any])
+    
+    inline def setLastPriceUndefined: Self = StObject.set(x, "lastPrice", js.undefined)
+    
+    inline def setLastVisiblePrice(value: SeriesLastVisiblePriceOptionsObject): Self = StObject.set(x, "lastVisiblePrice", value.asInstanceOf[js.Any])
+    
+    inline def setLastVisiblePriceUndefined: Self = StObject.set(x, "lastVisiblePrice", js.undefined)
+    
+    inline def setLinkedTo(value: String): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
+    inline def setMarker(value: Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    inline def setNavigatorOptions(value: PlotSeriesOptions): Self = StObject.set(x, "navigatorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatorOptionsUndefined: Self = StObject.set(x, "navigatorOptions", js.undefined)
+    
+    inline def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    
+    inline def setNullColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "nullColor", value.asInstanceOf[js.Any])
+    
+    inline def setNullColorUndefined: Self = StObject.set(x, "nullColor", js.undefined)
+    
+    inline def setOnPoint(value: js.Object | PlotTilemapOnPointOptions): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPoint(value: PlotSeriesPointOptions): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatter(value: js.Function): Self = StObject.set(x, "pointDescriptionFormatter", value.asInstanceOf[js.Any])
+    
+    inline def setPointDescriptionFormatterUndefined: Self = StObject.set(x, "pointDescriptionFormatter", js.undefined)
+    
+    inline def setPointPadding(value: Double): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
+    
+    inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
+    
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setRelativeXValue(value: Boolean): Self = StObject.set(x, "relativeXValue", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeXValueUndefined: Self = StObject.set(x, "relativeXValue", js.undefined)
+    
+    inline def setRowsize(value: Double): Self = StObject.set(x, "rowsize", value.asInstanceOf[js.Any])
+    
+    inline def setRowsizeUndefined: Self = StObject.set(x, "rowsize", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShowCheckbox(value: Boolean): Self = StObject.set(x, "showCheckbox", value.asInstanceOf[js.Any])
+    
+    inline def setShowCheckboxUndefined: Self = StObject.set(x, "showCheckbox", js.undefined)
+    
+    inline def setShowInLegend(value: Boolean): Self = StObject.set(x, "showInLegend", value.asInstanceOf[js.Any])
+    
+    inline def setShowInLegendUndefined: Self = StObject.set(x, "showInLegend", js.undefined)
+    
+    inline def setShowInNavigator(value: Boolean): Self = StObject.set(x, "showInNavigator", value.asInstanceOf[js.Any])
+    
+    inline def setShowInNavigatorUndefined: Self = StObject.set(x, "showInNavigator", js.undefined)
+    
+    inline def setSkipKeyboardNavigation(value: Boolean): Self = StObject.set(x, "skipKeyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setSkipKeyboardNavigationUndefined: Self = StObject.set(x, "skipKeyboardNavigation", js.undefined)
+    
+    inline def setStates(value: SeriesStatesOptionsObject): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+    
+    inline def setStatesUndefined: Self = StObject.set(x, "states", js.undefined)
+    
+    inline def setStickyTracking(value: Boolean): Self = StObject.set(x, "stickyTracking", value.asInstanceOf[js.Any])
+    
+    inline def setStickyTrackingUndefined: Self = StObject.set(x, "stickyTracking", js.undefined)
+    
+    inline def setTileShape(value: TilemapShapeValue): Self = StObject.set(x, "tileShape", value.asInstanceOf[js.Any])
+    
+    inline def setTileShapeUndefined: Self = StObject.set(x, "tileShape", js.undefined)
+    
+    inline def setTooltip(value: SeriesTooltipOptionsObject): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTurboThreshold(value: Double): Self = StObject.set(x, "turboThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setTurboThresholdUndefined: Self = StObject.set(x, "turboThreshold", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    
+    inline def setZoneAxis(value: String): Self = StObject.set(x, "zoneAxis", value.asInstanceOf[js.Any])
+    
+    inline def setZoneAxisUndefined: Self = StObject.set(x, "zoneAxis", js.undefined)
+    
+    inline def setZones(value: js.Array[SeriesZonesOptionsObject]): Self = StObject.set(x, "zones", value.asInstanceOf[js.Any])
+    
+    inline def setZonesUndefined: Self = StObject.set(x, "zones", js.undefined)
+    
+    inline def setZonesVarargs(value: SeriesZonesOptionsObject*): Self = StObject.set(x, "zones", js.Array(value*))
+  }
 }
-

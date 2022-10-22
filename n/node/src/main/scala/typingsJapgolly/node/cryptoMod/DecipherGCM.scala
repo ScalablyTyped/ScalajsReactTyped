@@ -1,15 +1,16 @@
 package typingsJapgolly.node.cryptoMod
 
-import typingsJapgolly.node.AnonPlaintextLength
 import typingsJapgolly.node.NodeJS.ArrayBufferView
+import typingsJapgolly.node.anon.PlaintextLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DecipherGCM extends Decipher {
+trait DecipherGCM extends StObject {
+  
   def setAAD(buffer: ArrayBufferView): this.type = js.native
-  def setAAD(buffer: ArrayBufferView, options: AnonPlaintextLength): this.type = js.native
+  def setAAD(buffer: ArrayBufferView, options: PlaintextLength): this.type = js.native
+  
   def setAuthTag(buffer: ArrayBufferView): this.type = js.native
 }
-

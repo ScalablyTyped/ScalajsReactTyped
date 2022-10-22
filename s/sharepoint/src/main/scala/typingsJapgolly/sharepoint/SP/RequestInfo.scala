@@ -2,16 +2,20 @@ package typingsJapgolly.sharepoint.SP
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestInfo extends js.Object {
+trait RequestInfo extends StObject {
+  
   var binaryStringRequestBody: js.UndefOr[Boolean] = js.undefined
+  
   /** Currently need fix to get ginary response. Details: http:// techmikael.blogspot.ru/2013/07/how-to-copy-files-between-sites-using.html */
   var binaryStringResponseBody: js.UndefOr[Boolean] = js.undefined
+  
   /** Can be string or bytearray depending on binaryStringRequestBody field */
-  var body: js.UndefOr[String | scala.scalajs.js.typedarray.Uint8Array] = js.undefined
+  var body: js.UndefOr[String | js.typedarray.Uint8Array] = js.undefined
+  
   var error: js.UndefOr[
     js.Function3[
       /* response */ ResponseInfo, 
@@ -20,39 +24,66 @@ trait RequestInfo extends js.Object {
       Unit
     ]
   ] = js.undefined
+  
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[js.Any] = js.undefined
+  
+  var state: js.UndefOr[Any] = js.undefined
+  
   var success: js.UndefOr[js.Function1[/* response */ ResponseInfo, Unit]] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
+  
   var url: String
 }
-
 object RequestInfo {
-  @scala.inline
-  def apply(
-    url: String,
-    binaryStringRequestBody: js.UndefOr[Boolean] = js.undefined,
-    binaryStringResponseBody: js.UndefOr[Boolean] = js.undefined,
-    body: String | scala.scalajs.js.typedarray.Uint8Array = null,
-    error: (/* response */ ResponseInfo, /* error */ RequestExecutorErrors, /* statusText */ String) => Callback = null,
-    headers: StringDictionary[String] = null,
-    method: String = null,
-    state: js.Any = null,
-    success: /* response */ ResponseInfo => Callback = null,
-    timeout: Int | Double = null
-  ): RequestInfo = {
+  
+  inline def apply(url: String): RequestInfo = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(binaryStringRequestBody)) __obj.updateDynamic("binaryStringRequestBody")(binaryStringRequestBody.asInstanceOf[js.Any])
-    if (!js.isUndefined(binaryStringResponseBody)) __obj.updateDynamic("binaryStringResponseBody")(binaryStringResponseBody.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction3((t0: /* response */ typingsJapgolly.sharepoint.SP.ResponseInfo, t1: /* error */ typingsJapgolly.sharepoint.SP.RequestExecutorErrors, t2: /* statusText */ java.lang.String) => error(t0, t1, t2).runNow()))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* response */ typingsJapgolly.sharepoint.SP.ResponseInfo) => success(t0).runNow()))
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestInfo]
   }
+  
+  extension [Self <: RequestInfo](x: Self) {
+    
+    inline def setBinaryStringRequestBody(value: Boolean): Self = StObject.set(x, "binaryStringRequestBody", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryStringRequestBodyUndefined: Self = StObject.set(x, "binaryStringRequestBody", js.undefined)
+    
+    inline def setBinaryStringResponseBody(value: Boolean): Self = StObject.set(x, "binaryStringResponseBody", value.asInstanceOf[js.Any])
+    
+    inline def setBinaryStringResponseBodyUndefined: Self = StObject.set(x, "binaryStringResponseBody", js.undefined)
+    
+    inline def setBody(value: String | js.typedarray.Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setError(
+      value: (/* response */ ResponseInfo, /* error */ RequestExecutorErrors, /* statusText */ String) => Callback
+    ): Self = StObject.set(x, "error", js.Any.fromFunction3((t0: /* response */ ResponseInfo, t1: /* error */ RequestExecutorErrors, t2: /* statusText */ String) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setSuccess(value: /* response */ ResponseInfo => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* response */ ResponseInfo) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsxSelfClosingElement
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
      with HasTypeArguments
+     with JsxAttributeValue
      with JsxChild
      with JsxOpeningLikeElement {
-  var attributes: JsxAttributes = js.native
+  
+  val attributes: JsxAttributes = js.native
+  
   @JSName("kind")
-  var kind_JsxSelfClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxSelfClosingElement = js.native
-  var tagName: JsxTagNameExpression = js.native
-  var typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
+  val kind_JsxSelfClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxSelfClosingElement = js.native
+  
+  val tagName: JsxTagNameExpression = js.native
+  
+  val typeArguments: js.UndefOr[NodeArray[TypeNode]] = js.native
 }
-

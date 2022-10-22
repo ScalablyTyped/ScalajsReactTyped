@@ -1,111 +1,109 @@
 package typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `toneChat` operation. */
-@JSImport("watson-developer-cloud/tone-analyzer/v3-generated", "ToneChatConstants")
-@js.native
-object ToneChatConstants extends js.Object {
-  @js.native
-  sealed trait AcceptLanguage extends js.Object
+object ToneChatConstants {
   
   @js.native
-  sealed trait ContentLanguage extends js.Object
-  
+  sealed trait AcceptLanguage extends StObject
   /** The desired language of the response. For two-character arguments, regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. You can use different languages for **Content-Language** and **Accept-Language**. */
+  @JSImport("watson-developer-cloud/tone-analyzer/v3-generated", "ToneChatConstants.AcceptLanguage")
   @js.native
-  object AcceptLanguage extends js.Object {
-    @js.native
-    sealed trait AR extends AcceptLanguage
-    
-    @js.native
-    sealed trait DE extends AcceptLanguage
-    
-    @js.native
-    sealed trait EN extends AcceptLanguage
-    
-    @js.native
-    sealed trait ES extends AcceptLanguage
-    
-    @js.native
-    sealed trait FR extends AcceptLanguage
-    
-    @js.native
-    sealed trait IT extends AcceptLanguage
-    
-    @js.native
-    sealed trait JA extends AcceptLanguage
-    
-    @js.native
-    sealed trait KO extends AcceptLanguage
-    
-    @js.native
-    sealed trait PT_BR extends AcceptLanguage
-    
-    @js.native
-    sealed trait ZH_CN extends AcceptLanguage
-    
-    @js.native
-    sealed trait ZH_TW extends AcceptLanguage
+  object AcceptLanguage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AcceptLanguage with String] = js.native
-    /* "ar" */ @js.native
-    object AR extends TopLevel[AR with String]
+    def apply(value: String): js.UndefOr[AcceptLanguage & String] = js.native
     
-    /* "de" */ @js.native
-    object DE extends TopLevel[DE with String]
+    @js.native
+    sealed trait AR
+      extends StObject
+         with AcceptLanguage
+    /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.AR & String = js.native
     
-    /* "en" */ @js.native
-    object EN extends TopLevel[EN with String]
+    @js.native
+    sealed trait DE
+      extends StObject
+         with AcceptLanguage
+    /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.DE & String = js.native
     
-    /* "es" */ @js.native
-    object ES extends TopLevel[ES with String]
+    @js.native
+    sealed trait EN
+      extends StObject
+         with AcceptLanguage
+    /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.EN & String = js.native
     
-    /* "fr" */ @js.native
-    object FR extends TopLevel[FR with String]
+    @js.native
+    sealed trait ES
+      extends StObject
+         with AcceptLanguage
+    /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ES & String = js.native
     
-    /* "it" */ @js.native
-    object IT extends TopLevel[IT with String]
+    @js.native
+    sealed trait FR
+      extends StObject
+         with AcceptLanguage
+    /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.FR & String = js.native
     
-    /* "ja" */ @js.native
-    object JA extends TopLevel[JA with String]
+    @js.native
+    sealed trait IT
+      extends StObject
+         with AcceptLanguage
+    /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.IT & String = js.native
     
-    /* "ko" */ @js.native
-    object KO extends TopLevel[KO with String]
+    @js.native
+    sealed trait JA
+      extends StObject
+         with AcceptLanguage
+    /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.JA & String = js.native
     
-    /* "pt-br" */ @js.native
-    object PT_BR extends TopLevel[PT_BR with String]
+    @js.native
+    sealed trait KO
+      extends StObject
+         with AcceptLanguage
+    /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.KO & String = js.native
     
-    /* "zh-cn" */ @js.native
-    object ZH_CN extends TopLevel[ZH_CN with String]
+    @js.native
+    sealed trait PT_BR
+      extends StObject
+         with AcceptLanguage
+    /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR & String = js.native
     
-    /* "zh-tw" */ @js.native
-    object ZH_TW extends TopLevel[ZH_TW with String]
+    @js.native
+    sealed trait ZH_CN
+      extends StObject
+         with AcceptLanguage
+    /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN & String = js.native
     
+    @js.native
+    sealed trait ZH_TW
+      extends StObject
+         with AcceptLanguage
+    /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW & String = js.native
   }
   
+  @js.native
+  sealed trait ContentLanguage extends StObject
   /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
+  @JSImport("watson-developer-cloud/tone-analyzer/v3-generated", "ToneChatConstants.ContentLanguage")
   @js.native
-  object ContentLanguage extends js.Object {
-    @js.native
-    sealed trait EN extends ContentLanguage
-    
-    @js.native
-    sealed trait FR extends ContentLanguage
+  object ContentLanguage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContentLanguage with String] = js.native
-    /* "en" */ @js.native
-    object EN extends TopLevel[EN with String]
+    def apply(value: String): js.UndefOr[ContentLanguage & String] = js.native
     
-    /* "fr" */ @js.native
-    object FR extends TopLevel[FR with String]
+    @js.native
+    sealed trait EN
+      extends StObject
+         with ContentLanguage
+    /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.EN & String = js.native
     
+    @js.native
+    sealed trait FR
+      extends StObject
+         with ContentLanguage
+    /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.FR & String = js.native
   }
-  
 }
-

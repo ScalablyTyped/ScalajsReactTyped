@@ -1,17 +1,21 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForInStatement
-  extends IterationStatement
+  extends StObject
+     with IterationStatement
      with ForInOrOfStatement
-     with HasInitializer {
-  var expression: Expression = js.native
-  var initializer: ForInitializer = js.native
+     with HasInitializer
+     with HasJSDoc {
+  
+  val expression: Expression = js.native
+  
+  val initializer: ForInitializer = js.native
+  
   @JSName("kind")
-  var kind_ForInStatement: typingsJapgolly.typescript.mod.SyntaxKind.ForInStatement = js.native
+  val kind_ForInStatement: typingsJapgolly.typescript.mod.SyntaxKind.ForInStatement = js.native
 }
-

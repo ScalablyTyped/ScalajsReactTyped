@@ -1,55 +1,90 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonCompany
-import typingsJapgolly.braintree.AnonMakeDefault
+import typingsJapgolly.braintree.anon.Company
+import typingsJapgolly.braintree.anon.MakeDefault
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreditCardCreateRequest extends js.Object {
-  var billingAddress: js.UndefOr[AnonCompany] = js.undefined
+trait CreditCardCreateRequest extends StObject {
+  
+  var billingAddress: js.UndefOr[Company] = js.undefined
+  
   var billingAddressId: js.UndefOr[String] = js.undefined
+  
   var cardholderName: js.UndefOr[String] = js.undefined
+  
   var customerId: String
+  
   var cvv: js.UndefOr[String] = js.undefined
+  
   var expirationDate: js.UndefOr[String] = js.undefined
+  
   var expirationMonth: js.UndefOr[String] = js.undefined
+  
   var expirationYear: js.UndefOr[String] = js.undefined
+  
   var number: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonMakeDefault] = js.undefined
+  
+  var options: js.UndefOr[MakeDefault] = js.undefined
+  
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
+  
   var token: js.UndefOr[String] = js.undefined
 }
-
 object CreditCardCreateRequest {
-  @scala.inline
-  def apply(
-    customerId: String,
-    billingAddress: AnonCompany = null,
-    billingAddressId: String = null,
-    cardholderName: String = null,
-    cvv: String = null,
-    expirationDate: String = null,
-    expirationMonth: String = null,
-    expirationYear: String = null,
-    number: String = null,
-    options: AnonMakeDefault = null,
-    paymentMethodNonce: String = null,
-    token: String = null
-  ): CreditCardCreateRequest = {
+  
+  inline def apply(customerId: String): CreditCardCreateRequest = {
     val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any])
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (billingAddressId != null) __obj.updateDynamic("billingAddressId")(billingAddressId.asInstanceOf[js.Any])
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditCardCreateRequest]
   }
+  
+  extension [Self <: CreditCardCreateRequest](x: Self) {
+    
+    inline def setBillingAddress(value: Company): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    
+    inline def setBillingAddressId(value: String): Self = StObject.set(x, "billingAddressId", value.asInstanceOf[js.Any])
+    
+    inline def setBillingAddressIdUndefined: Self = StObject.set(x, "billingAddressId", js.undefined)
+    
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    
+    inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    
+    inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+    
+    inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+    
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    
+    inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    
+    inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    
+    inline def setOptions(value: MakeDefault): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
+    
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+  }
 }
-

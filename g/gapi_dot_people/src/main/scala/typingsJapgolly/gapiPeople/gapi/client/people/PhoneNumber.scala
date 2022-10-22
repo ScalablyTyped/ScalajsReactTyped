@@ -1,20 +1,24 @@
 package typingsJapgolly.gapiPeople.gapi.client.people
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PhoneNumber extends js.Object {
+trait PhoneNumber extends StObject {
+  
   var canonicalForm: String
+  
   var formattedType: String
+  
   var metadata: FieldMetadata
+  
   var `type`: String
+  
   var value: String
 }
-
 object PhoneNumber {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     canonicalForm: String,
     formattedType: String,
     metadata: FieldMetadata,
@@ -25,5 +29,17 @@ object PhoneNumber {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneNumber]
   }
+  
+  extension [Self <: PhoneNumber](x: Self) {
+    
+    inline def setCanonicalForm(value: String): Self = StObject.set(x, "canonicalForm", value.asInstanceOf[js.Any])
+    
+    inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
+    
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

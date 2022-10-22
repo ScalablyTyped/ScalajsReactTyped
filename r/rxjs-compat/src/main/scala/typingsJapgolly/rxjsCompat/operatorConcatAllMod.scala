@@ -1,14 +1,17 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/concatAll", JSImport.Namespace)
-@js.native
-object operatorConcatAllMod extends js.Object {
-  def concatAll[T](): js.Any = js.native
-  @JSName("concatAll")
-  def concatAll_TR[T, R](): js.Any = js.native
+object operatorConcatAllMod {
+  
+  @JSImport("rxjs-compat/operator/concatAll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def concatAll[T](): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[Observable_[T]]
+  
+  inline def concatAll_TR[T, R](): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatAll")().asInstanceOf[Observable_[R]]
 }
-

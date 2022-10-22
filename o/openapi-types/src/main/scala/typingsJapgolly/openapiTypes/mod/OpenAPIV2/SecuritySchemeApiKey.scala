@@ -1,26 +1,36 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
 import typingsJapgolly.openapiTypes.openapiTypesStrings.apiKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SecuritySchemeApiKey
-  extends SecuritySchemeObjectBase
+  extends StObject
+     with SecuritySchemeObjectBase
      with SecuritySchemeObject {
+  
   var in: String
+  
   var name: String
+  
   @JSName("type")
   var type_SecuritySchemeApiKey: apiKey
 }
-
 object SecuritySchemeApiKey {
-  @scala.inline
-  def apply(in: String, name: String, `type`: apiKey, description: String = null): SecuritySchemeApiKey = {
+  
+  inline def apply(in: String, name: String): SecuritySchemeApiKey = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("apiKey")
     __obj.asInstanceOf[SecuritySchemeApiKey]
   }
+  
+  extension [Self <: SecuritySchemeApiKey](x: Self) {
+    
+    inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: apiKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

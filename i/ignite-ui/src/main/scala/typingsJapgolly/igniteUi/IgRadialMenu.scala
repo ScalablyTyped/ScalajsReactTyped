@@ -2,225 +2,319 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgRadialMenu
-  extends /**
-	 * Option for igRadialMenu
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Returns or sets the background of the center button of the menu when the IsOpen property is false.
-  	 */
+    * Returns or sets the background of the center button of the menu when the IsOpen property is false.
+    */
   var centerButtonClosedFill: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen property is false.
-  	 */
+    * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen property is false.
+    */
   var centerButtonClosedStroke: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the height of the center button content.
-  	 */
+    * Returns or sets the height of the center button content.
+    */
   var centerButtonContentHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the width of the center button content.
-  	 */
+    * Returns or sets the width of the center button content.
+    */
   var centerButtonContentWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the background of the center button of the menu when the IsOpen property is true.
-  	 */
+    * Returns or sets the background of the center button of the menu when the IsOpen property is true.
+    */
   var centerButtonFill: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the background of the center button of the menu when under the pointer.
-  	 */
+    * Returns or sets the background of the center button of the menu when under the pointer.
+    */
   var centerButtonHotTrackFill: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the brush used for the outline of the ring of the center button when under the pointer.
-  	 */
+    * Returns or sets the brush used for the outline of the ring of the center button when under the pointer.
+    */
   var centerButtonHotTrackStroke: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen is true.
-  	 */
+    * Returns or sets the brush used for the outline of the ring of the center button when the IsOpen is true.
+    */
   var centerButtonStroke: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the width of the outline of the inner rings of the menu.
-  	 */
+    * Returns or sets the width of the outline of the inner rings of the menu.
+    */
   var centerButtonStrokeThickness: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Invoked when the IsOpen property is changed to false.
-  	 * Function takes a first argument ui.
-  	 * Use ui.owner to obtain reference to menu widget.
-  	 */
+    * Invoked when the IsOpen property is changed to false.
+    * Function takes a first argument ui.
+    * Use ui.owner to obtain reference to menu widget.
+    */
   var closed: js.UndefOr[ClosedEvent] = js.undefined
+  
   /**
-  	 * Gets or sets the name of the item within the menu whose children are currently displayed.
-  	 */
+    * Gets or sets the name of the item within the menu whose children are currently displayed.
+    */
   var currentOpenMenuItemName: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The font for the control
-  	 */
+    * The font for the control
+    */
   var font: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets a boolean indicating whether the items of the menu are currently displayed. When closed, only the center button is rendered.
-  	 */
+    * Returns or sets a boolean indicating whether the items of the menu are currently displayed. When closed, only the center button is rendered.
+    */
   var isOpen: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets or sets the items in the menu.
-  	 */
+    * Gets or sets the items in the menu.
+    */
   var items: js.UndefOr[js.Array[IgRadialMenuItem]] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Returns or sets the brush for the backing of the radial menu.
-  	 */
+    * Returns or sets the brush for the backing of the radial menu.
+    */
   var menuBackground: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the duration of the animation performed when the IsOpen property is changed.
-  	 */
+    * Returns or sets the duration of the animation performed when the IsOpen property is changed.
+    */
   var menuItemOpenCloseAnimationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
-  	 */
-  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
+    * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
+    */
+  var menuItemOpenCloseAnimationEasingFunction: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Returns or sets the duration of the animation performed when the IsOpen property is changed.
-  	 */
+    * Returns or sets the duration of the animation performed when the IsOpen property is changed.
+    */
   var menuOpenCloseAnimationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
-  	 */
-  var menuOpenCloseAnimationEasingFunction: js.UndefOr[js.Any] = js.undefined
+    * Returns or sets the easing function applied to the animation that occurs when the IsOpen property is changed.
+    */
+  var menuOpenCloseAnimationEasingFunction: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Returns or sets the minimum number of wedges displayed by the menu.
-  	 */
+    * Returns or sets the minimum number of wedges displayed by the menu.
+    */
   var minWedgeCount: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Invoked when the IsOpen property is changed to true.
-  	 * Function takes a first argument ui.
-  	 * Use ui.owner to obtain reference to menu widget.
-  	 */
+    * Invoked when the IsOpen property is changed to true.
+    * Function takes a first argument ui.
+    * Use ui.owner to obtain reference to menu widget.
+    */
   var opened: js.UndefOr[OpenedEvent] = js.undefined
+  
   /**
-  	 * Returns or sets the background of the outer ring of the menu.
-  	 */
+    * Returns or sets the background of the outer ring of the menu.
+    */
   var outerRingFill: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the brush used for the outline of the outer ring.
-  	 */
+    * Returns or sets the brush used for the outline of the outer ring.
+    */
   var outerRingStroke: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Returns or sets the width of the outline of the outer ring of the menu.
-  	 */
+    * Returns or sets the width of the outline of the outer ring of the menu.
+    */
   var outerRingStrokeThickness: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the thickness of the outer ring of the menu.
-  	 */
+    * Returns or sets the thickness of the outer ring of the menu.
+    */
   var outerRingThickness: js.UndefOr[Double] = js.undefined
+  
   var pixelScalingRatio: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Returns or sets the starting angle of the items expressed as the percentage of the width of a single wedge/slice.
-  	 */
+    * Returns or sets the starting angle of the items expressed as the percentage of the width of a single wedge/slice.
+    */
   var rotationAsPercentageOfWedge: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the starting angle of the items in degrees.
-  	 */
+    * Returns or sets the starting angle of the items in degrees.
+    */
   var rotationInDegrees: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Returns or sets the amount of padding around each wedge in degrees.
-  	 */
+    * Returns or sets the amount of padding around each wedge in degrees.
+    */
   var wedgePaddingInDegrees: js.UndefOr[Double] = js.undefined
 }
-
 object IgRadialMenu {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igRadialMenu
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    centerButtonClosedFill: String = null,
-    centerButtonClosedStroke: String = null,
-    centerButtonContentHeight: Int | Double = null,
-    centerButtonContentWidth: Int | Double = null,
-    centerButtonFill: String = null,
-    centerButtonHotTrackFill: String = null,
-    centerButtonHotTrackStroke: String = null,
-    centerButtonStroke: String = null,
-    centerButtonStrokeThickness: Int | Double = null,
-    closed: (/* event */ Event_, /* ui */ ClosedEventUIParam) => Callback = null,
-    currentOpenMenuItemName: String = null,
-    font: String = null,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    items: js.Array[IgRadialMenuItem] = null,
-    language: String = null,
-    locale: js.Any = null,
-    menuBackground: String = null,
-    menuItemOpenCloseAnimationDuration: Int | Double = null,
-    menuItemOpenCloseAnimationEasingFunction: js.Any = null,
-    menuOpenCloseAnimationDuration: Int | Double = null,
-    menuOpenCloseAnimationEasingFunction: js.Any = null,
-    minWedgeCount: Int | Double = null,
-    opened: (/* event */ Event_, /* ui */ OpenedEventUIParam) => Callback = null,
-    outerRingFill: String = null,
-    outerRingStroke: String = null,
-    outerRingStrokeThickness: Int | Double = null,
-    outerRingThickness: Int | Double = null,
-    pixelScalingRatio: Int | Double = null,
-    regional: String | js.Object = null,
-    rotationAsPercentageOfWedge: Int | Double = null,
-    rotationInDegrees: Int | Double = null,
-    wedgePaddingInDegrees: Int | Double = null
-  ): IgRadialMenu = {
+  
+  inline def apply(): IgRadialMenu = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (centerButtonClosedFill != null) __obj.updateDynamic("centerButtonClosedFill")(centerButtonClosedFill.asInstanceOf[js.Any])
-    if (centerButtonClosedStroke != null) __obj.updateDynamic("centerButtonClosedStroke")(centerButtonClosedStroke.asInstanceOf[js.Any])
-    if (centerButtonContentHeight != null) __obj.updateDynamic("centerButtonContentHeight")(centerButtonContentHeight.asInstanceOf[js.Any])
-    if (centerButtonContentWidth != null) __obj.updateDynamic("centerButtonContentWidth")(centerButtonContentWidth.asInstanceOf[js.Any])
-    if (centerButtonFill != null) __obj.updateDynamic("centerButtonFill")(centerButtonFill.asInstanceOf[js.Any])
-    if (centerButtonHotTrackFill != null) __obj.updateDynamic("centerButtonHotTrackFill")(centerButtonHotTrackFill.asInstanceOf[js.Any])
-    if (centerButtonHotTrackStroke != null) __obj.updateDynamic("centerButtonHotTrackStroke")(centerButtonHotTrackStroke.asInstanceOf[js.Any])
-    if (centerButtonStroke != null) __obj.updateDynamic("centerButtonStroke")(centerButtonStroke.asInstanceOf[js.Any])
-    if (centerButtonStrokeThickness != null) __obj.updateDynamic("centerButtonStrokeThickness")(centerButtonStrokeThickness.asInstanceOf[js.Any])
-    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ClosedEventUIParam) => closed(t0, t1).runNow()))
-    if (currentOpenMenuItemName != null) __obj.updateDynamic("currentOpenMenuItemName")(currentOpenMenuItemName.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (menuBackground != null) __obj.updateDynamic("menuBackground")(menuBackground.asInstanceOf[js.Any])
-    if (menuItemOpenCloseAnimationDuration != null) __obj.updateDynamic("menuItemOpenCloseAnimationDuration")(menuItemOpenCloseAnimationDuration.asInstanceOf[js.Any])
-    if (menuItemOpenCloseAnimationEasingFunction != null) __obj.updateDynamic("menuItemOpenCloseAnimationEasingFunction")(menuItemOpenCloseAnimationEasingFunction.asInstanceOf[js.Any])
-    if (menuOpenCloseAnimationDuration != null) __obj.updateDynamic("menuOpenCloseAnimationDuration")(menuOpenCloseAnimationDuration.asInstanceOf[js.Any])
-    if (menuOpenCloseAnimationEasingFunction != null) __obj.updateDynamic("menuOpenCloseAnimationEasingFunction")(menuOpenCloseAnimationEasingFunction.asInstanceOf[js.Any])
-    if (minWedgeCount != null) __obj.updateDynamic("minWedgeCount")(minWedgeCount.asInstanceOf[js.Any])
-    if (opened != null) __obj.updateDynamic("opened")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.OpenedEventUIParam) => opened(t0, t1).runNow()))
-    if (outerRingFill != null) __obj.updateDynamic("outerRingFill")(outerRingFill.asInstanceOf[js.Any])
-    if (outerRingStroke != null) __obj.updateDynamic("outerRingStroke")(outerRingStroke.asInstanceOf[js.Any])
-    if (outerRingStrokeThickness != null) __obj.updateDynamic("outerRingStrokeThickness")(outerRingStrokeThickness.asInstanceOf[js.Any])
-    if (outerRingThickness != null) __obj.updateDynamic("outerRingThickness")(outerRingThickness.asInstanceOf[js.Any])
-    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rotationAsPercentageOfWedge != null) __obj.updateDynamic("rotationAsPercentageOfWedge")(rotationAsPercentageOfWedge.asInstanceOf[js.Any])
-    if (rotationInDegrees != null) __obj.updateDynamic("rotationInDegrees")(rotationInDegrees.asInstanceOf[js.Any])
-    if (wedgePaddingInDegrees != null) __obj.updateDynamic("wedgePaddingInDegrees")(wedgePaddingInDegrees.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgRadialMenu]
   }
+  
+  extension [Self <: IgRadialMenu](x: Self) {
+    
+    inline def setCenterButtonClosedFill(value: String): Self = StObject.set(x, "centerButtonClosedFill", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonClosedFillUndefined: Self = StObject.set(x, "centerButtonClosedFill", js.undefined)
+    
+    inline def setCenterButtonClosedStroke(value: String): Self = StObject.set(x, "centerButtonClosedStroke", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonClosedStrokeUndefined: Self = StObject.set(x, "centerButtonClosedStroke", js.undefined)
+    
+    inline def setCenterButtonContentHeight(value: Double): Self = StObject.set(x, "centerButtonContentHeight", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonContentHeightUndefined: Self = StObject.set(x, "centerButtonContentHeight", js.undefined)
+    
+    inline def setCenterButtonContentWidth(value: Double): Self = StObject.set(x, "centerButtonContentWidth", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonContentWidthUndefined: Self = StObject.set(x, "centerButtonContentWidth", js.undefined)
+    
+    inline def setCenterButtonFill(value: String): Self = StObject.set(x, "centerButtonFill", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonFillUndefined: Self = StObject.set(x, "centerButtonFill", js.undefined)
+    
+    inline def setCenterButtonHotTrackFill(value: String): Self = StObject.set(x, "centerButtonHotTrackFill", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonHotTrackFillUndefined: Self = StObject.set(x, "centerButtonHotTrackFill", js.undefined)
+    
+    inline def setCenterButtonHotTrackStroke(value: String): Self = StObject.set(x, "centerButtonHotTrackStroke", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonHotTrackStrokeUndefined: Self = StObject.set(x, "centerButtonHotTrackStroke", js.undefined)
+    
+    inline def setCenterButtonStroke(value: String): Self = StObject.set(x, "centerButtonStroke", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonStrokeThickness(value: Double): Self = StObject.set(x, "centerButtonStrokeThickness", value.asInstanceOf[js.Any])
+    
+    inline def setCenterButtonStrokeThicknessUndefined: Self = StObject.set(x, "centerButtonStrokeThickness", js.undefined)
+    
+    inline def setCenterButtonStrokeUndefined: Self = StObject.set(x, "centerButtonStroke", js.undefined)
+    
+    inline def setClosed(value: (/* event */ Event, /* ui */ ClosedEventUIParam) => Callback): Self = StObject.set(x, "closed", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ClosedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setClosedUndefined: Self = StObject.set(x, "closed", js.undefined)
+    
+    inline def setCurrentOpenMenuItemName(value: String): Self = StObject.set(x, "currentOpenMenuItemName", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentOpenMenuItemNameUndefined: Self = StObject.set(x, "currentOpenMenuItemName", js.undefined)
+    
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+    
+    inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+    
+    inline def setItems(value: js.Array[IgRadialMenuItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: IgRadialMenuItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMenuBackground(value: String): Self = StObject.set(x, "menuBackground", value.asInstanceOf[js.Any])
+    
+    inline def setMenuBackgroundUndefined: Self = StObject.set(x, "menuBackground", js.undefined)
+    
+    inline def setMenuItemOpenCloseAnimationDuration(value: Double): Self = StObject.set(x, "menuItemOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMenuItemOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationDuration", js.undefined)
+    
+    inline def setMenuItemOpenCloseAnimationEasingFunction(value: Any): Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMenuItemOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuItemOpenCloseAnimationEasingFunction", js.undefined)
+    
+    inline def setMenuOpenCloseAnimationDuration(value: Double): Self = StObject.set(x, "menuOpenCloseAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMenuOpenCloseAnimationDurationUndefined: Self = StObject.set(x, "menuOpenCloseAnimationDuration", js.undefined)
+    
+    inline def setMenuOpenCloseAnimationEasingFunction(value: Any): Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", value.asInstanceOf[js.Any])
+    
+    inline def setMenuOpenCloseAnimationEasingFunctionUndefined: Self = StObject.set(x, "menuOpenCloseAnimationEasingFunction", js.undefined)
+    
+    inline def setMinWedgeCount(value: Double): Self = StObject.set(x, "minWedgeCount", value.asInstanceOf[js.Any])
+    
+    inline def setMinWedgeCountUndefined: Self = StObject.set(x, "minWedgeCount", js.undefined)
+    
+    inline def setOpened(value: (/* event */ Event, /* ui */ OpenedEventUIParam) => Callback): Self = StObject.set(x, "opened", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ OpenedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setOpenedUndefined: Self = StObject.set(x, "opened", js.undefined)
+    
+    inline def setOuterRingFill(value: String): Self = StObject.set(x, "outerRingFill", value.asInstanceOf[js.Any])
+    
+    inline def setOuterRingFillUndefined: Self = StObject.set(x, "outerRingFill", js.undefined)
+    
+    inline def setOuterRingStroke(value: String): Self = StObject.set(x, "outerRingStroke", value.asInstanceOf[js.Any])
+    
+    inline def setOuterRingStrokeThickness(value: Double): Self = StObject.set(x, "outerRingStrokeThickness", value.asInstanceOf[js.Any])
+    
+    inline def setOuterRingStrokeThicknessUndefined: Self = StObject.set(x, "outerRingStrokeThickness", js.undefined)
+    
+    inline def setOuterRingStrokeUndefined: Self = StObject.set(x, "outerRingStroke", js.undefined)
+    
+    inline def setOuterRingThickness(value: Double): Self = StObject.set(x, "outerRingThickness", value.asInstanceOf[js.Any])
+    
+    inline def setOuterRingThicknessUndefined: Self = StObject.set(x, "outerRingThickness", js.undefined)
+    
+    inline def setPixelScalingRatio(value: Double): Self = StObject.set(x, "pixelScalingRatio", value.asInstanceOf[js.Any])
+    
+    inline def setPixelScalingRatioUndefined: Self = StObject.set(x, "pixelScalingRatio", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRotationAsPercentageOfWedge(value: Double): Self = StObject.set(x, "rotationAsPercentageOfWedge", value.asInstanceOf[js.Any])
+    
+    inline def setRotationAsPercentageOfWedgeUndefined: Self = StObject.set(x, "rotationAsPercentageOfWedge", js.undefined)
+    
+    inline def setRotationInDegrees(value: Double): Self = StObject.set(x, "rotationInDegrees", value.asInstanceOf[js.Any])
+    
+    inline def setRotationInDegreesUndefined: Self = StObject.set(x, "rotationInDegrees", js.undefined)
+    
+    inline def setWedgePaddingInDegrees(value: Double): Self = StObject.set(x, "wedgePaddingInDegrees", value.asInstanceOf[js.Any])
+    
+    inline def setWedgePaddingInDegreesUndefined: Self = StObject.set(x, "wedgePaddingInDegrees", js.undefined)
+  }
 }
-

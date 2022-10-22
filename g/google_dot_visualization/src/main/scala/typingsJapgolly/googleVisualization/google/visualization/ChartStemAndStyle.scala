@@ -1,21 +1,30 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartStemAndStyle extends js.Object {
+trait ChartStemAndStyle extends StObject {
+  
   var stem: js.UndefOr[ChartStem] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
 }
-
 object ChartStemAndStyle {
-  @scala.inline
-  def apply(stem: ChartStem = null, style: String = null): ChartStemAndStyle = {
+  
+  inline def apply(): ChartStemAndStyle = {
     val __obj = js.Dynamic.literal()
-    if (stem != null) __obj.updateDynamic("stem")(stem.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartStemAndStyle]
   }
+  
+  extension [Self <: ChartStemAndStyle](x: Self) {
+    
+    inline def setStem(value: ChartStem): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+    
+    inline def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

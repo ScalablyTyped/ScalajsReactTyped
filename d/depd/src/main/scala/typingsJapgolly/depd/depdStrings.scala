@@ -1,19 +1,16 @@
 package typingsJapgolly.depd
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depdStrings {
-  @js.native
-  sealed trait DeprecationError extends js.Object
   
   @js.native
-  sealed trait deprecation extends js.Object
+  sealed trait DeprecationError extends StObject
+  inline def DeprecationError: DeprecationError = "DeprecationError".asInstanceOf[DeprecationError]
   
-  @scala.inline
-  def DeprecationError: DeprecationError = "DeprecationError".asInstanceOf[DeprecationError]
-  @scala.inline
-  def deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
+  @js.native
+  sealed trait deprecation extends StObject
+  inline def deprecation: deprecation = "deprecation".asInstanceOf[deprecation]
 }
-

@@ -1,19 +1,48 @@
 package typingsJapgolly.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Access.WebService")
-@js.native
-class WebService protected () extends js.Object {
-  @JSName("Access.WebService_typekey")
-  var AccessDotWebService_typekey: WebService = js.native
+trait WebService extends StObject {
+  
+  /* private */ @JSName("Access.WebService_typekey")
+  var AccessDotWebService_typekey: WebService
+  
+  def Entities(Index: Any): Entity
   @JSName("Entities")
-  val Entities_Original: Entities = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  def Entities(Index: js.Any): Entity = js.native
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  val Entities_Original: Entities
+  
+  def IsMemberSafe(dispid: Double): Boolean
+  
+  val Name: String
+  
+  val Parent: Any
 }
-
+object WebService {
+  
+  inline def apply(
+    AccessDotWebService_typekey: WebService,
+    Entities: Entities,
+    IsMemberSafe: Double => Boolean,
+    Name: String,
+    Parent: Any
+  ): WebService = {
+    val __obj = js.Dynamic.literal(Entities = Entities.asInstanceOf[js.Any], IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.WebService_typekey")(AccessDotWebService_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebService]
+  }
+  
+  extension [Self <: WebService](x: Self) {
+    
+    inline def setAccessDotWebService_typekey(value: WebService): Self = StObject.set(x, "Access.WebService_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setEntities(value: Entities): Self = StObject.set(x, "Entities", value.asInstanceOf[js.Any])
+    
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+  }
+}

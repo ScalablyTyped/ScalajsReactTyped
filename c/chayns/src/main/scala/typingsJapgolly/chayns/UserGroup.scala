@@ -1,8 +1,8 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enviroment Variables
@@ -10,28 +10,41 @@ import scala.scalajs.js.annotation._
   * interfaces
   */
 // chayns.env.user.groups
-trait UserGroup extends js.Object {
+trait UserGroup extends StObject {
+  
   var id: Double
+  
   var isActive: js.UndefOr[Boolean] = js.undefined
+  
   var isSystemGroup: js.UndefOr[Boolean] = js.undefined
+  
   var name: String
+  
   var showName: js.UndefOr[String] = js.undefined
 }
-
 object UserGroup {
-  @scala.inline
-  def apply(
-    id: Double,
-    name: String,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    isSystemGroup: js.UndefOr[Boolean] = js.undefined,
-    showName: String = null
-  ): UserGroup = {
+  
+  inline def apply(id: Double, name: String): UserGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSystemGroup)) __obj.updateDynamic("isSystemGroup")(isSystemGroup.asInstanceOf[js.Any])
-    if (showName != null) __obj.updateDynamic("showName")(showName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserGroup]
   }
+  
+  extension [Self <: UserGroup](x: Self) {
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+    
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    
+    inline def setIsSystemGroup(value: Boolean): Self = StObject.set(x, "isSystemGroup", value.asInstanceOf[js.Any])
+    
+    inline def setIsSystemGroupUndefined: Self = StObject.set(x, "isSystemGroup", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setShowName(value: String): Self = StObject.set(x, "showName", value.asInstanceOf[js.Any])
+    
+    inline def setShowNameUndefined: Self = StObject.set(x, "showName", js.undefined)
+  }
 }
-

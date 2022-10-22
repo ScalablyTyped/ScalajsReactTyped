@@ -1,95 +1,181 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// https://console.bluemix.net/docs/services/Cloudant/api/search.html#queries
-trait DocumentSearchParams extends js.Object {
-  // A bookmark that was received from a previous search. Used for pagination.
+/** Document search parameters: 
+  * @see Docs: {@link https://docs.couchdb.org/en/latest/ddocs/search.html#queries} */
+trait DocumentSearchParams extends StObject {
+  
+  /** A bookmark that was received from a previous search. Used for pagination. */
   var bookmark: js.UndefOr[String] = js.undefined
-  // An array of field names for which facet counts are requested.
+  
+  /** An array of field names for which facet counts are requested. */
   var counts: js.UndefOr[js.Array[String]] = js.undefined
-  // Filters the result set using key value pairs supplied to the drilldown parameter.
+  
+  /** Filters the result set using key value pairs supplied to the drilldown parameter. */
   var drilldown: js.UndefOr[js.Array[String]] = js.undefined
-  // The name of a string field to group results by.
+  
+  /** The name of a string field to group results by. */
   var group_field: js.UndefOr[String] = js.undefined
-  // The maximum group count when used in conjunction with group_field.
+  
+  /** The maximum group count when used in conjunction with group_field. */
   var group_limit: js.UndefOr[Double] = js.undefined
-  // Defines the order of the groups in a search when used with group_field.
+  
+  /** Defines the order of the groups in a search when used with group_field. */
   var group_sort: js.UndefOr[String | js.Array[String]] = js.undefined
-  // Which fields are to be highlighted.
+  
+  /** Which fields are to be highlighted. */
   var highlight_fields: js.UndefOr[js.Array[String]] = js.undefined
-  // The number of gradments that are returned in highlights. Defaults to 1.
+  
+  /** The number of gradments that are returned in highlights.
+    *
+    * @default 1 */
   var highlight_number: js.UndefOr[Double] = js.undefined
-  // String used after a highlighted word. Defaults to </em>.
+  
+  /** String used after a highlighted word.
+    *
+    * @default </em> */
   var highlight_post_tag: js.UndefOr[String] = js.undefined
-  // String used before a highlighted word. Defaults to <em>.
+  
+  /** String used before a highlighted word.
+    *
+    * @default <em> */
   var highlight_pre_tag: js.UndefOr[String] = js.undefined
-  // The number of characters in each fragment for highlight. Defaults to 100.
+  
+  /** The number of characters in each fragment for highlight.
+    *
+    * @default 100 */
   var highlight_size: js.UndefOr[Double] = js.undefined
-  // Include the full document bodies in the response. Defaults to false
+  
+  /** Include the full document bodies in the response.
+    *
+    * @default false */
   var include_docs: js.UndefOr[Boolean] = js.undefined
-  // An array of fields to include in the search results.
+  
+  /** An array of fields to include in the search results */
   var include_fields: js.UndefOr[js.Array[String]] = js.undefined
-  // The maximum number of returned documents. Positive integer up to 200.
+  
+  /** The maximum number of returned documents.
+    *
+    * Positive integer up to 200. */
   var limit: js.UndefOr[Double] = js.undefined
-  // Alias of 'query'. One of q or query must be present.
+  
+  /** Alias of 'query'.
+    *
+    * One of q or query must be present. */
   var q: js.UndefOr[String] = js.undefined
-  // The Lucene query to perform. One of q or query must be present.
+  
+  /** The Lucene query to perform.
+    *
+    * One of q or query must be present. */
   var query: js.UndefOr[String] = js.undefined
-  // Defines ranges for faceted numeric search fields.
+  
+  /** Defines ranges for faceted numeric search fields. */
   var ranges: js.UndefOr[js.Object] = js.undefined
-  // Specifies the sort order of the results.
+  
+  /** Specifies the sort order of the results. */
   var sort: js.UndefOr[String | js.Array[String]] = js.undefined
-  // Do not wait for the index to finish building to return results.
+  
+  /** Do not wait for the index to finish building to return results. */
   var stale: js.UndefOr[Boolean] = js.undefined
 }
-
 object DocumentSearchParams {
-  @scala.inline
-  def apply(
-    bookmark: String = null,
-    counts: js.Array[String] = null,
-    drilldown: js.Array[String] = null,
-    group_field: String = null,
-    group_limit: Int | Double = null,
-    group_sort: String | js.Array[String] = null,
-    highlight_fields: js.Array[String] = null,
-    highlight_number: Int | Double = null,
-    highlight_post_tag: String = null,
-    highlight_pre_tag: String = null,
-    highlight_size: Int | Double = null,
-    include_docs: js.UndefOr[Boolean] = js.undefined,
-    include_fields: js.Array[String] = null,
-    limit: Int | Double = null,
-    q: String = null,
-    query: String = null,
-    ranges: js.Object = null,
-    sort: String | js.Array[String] = null,
-    stale: js.UndefOr[Boolean] = js.undefined
-  ): DocumentSearchParams = {
+  
+  inline def apply(): DocumentSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark.asInstanceOf[js.Any])
-    if (counts != null) __obj.updateDynamic("counts")(counts.asInstanceOf[js.Any])
-    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown.asInstanceOf[js.Any])
-    if (group_field != null) __obj.updateDynamic("group_field")(group_field.asInstanceOf[js.Any])
-    if (group_limit != null) __obj.updateDynamic("group_limit")(group_limit.asInstanceOf[js.Any])
-    if (group_sort != null) __obj.updateDynamic("group_sort")(group_sort.asInstanceOf[js.Any])
-    if (highlight_fields != null) __obj.updateDynamic("highlight_fields")(highlight_fields.asInstanceOf[js.Any])
-    if (highlight_number != null) __obj.updateDynamic("highlight_number")(highlight_number.asInstanceOf[js.Any])
-    if (highlight_post_tag != null) __obj.updateDynamic("highlight_post_tag")(highlight_post_tag.asInstanceOf[js.Any])
-    if (highlight_pre_tag != null) __obj.updateDynamic("highlight_pre_tag")(highlight_pre_tag.asInstanceOf[js.Any])
-    if (highlight_size != null) __obj.updateDynamic("highlight_size")(highlight_size.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs.asInstanceOf[js.Any])
-    if (include_fields != null) __obj.updateDynamic("include_fields")(include_fields.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSearchParams]
   }
+  
+  extension [Self <: DocumentSearchParams](x: Self) {
+    
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    
+    inline def setCounts(value: js.Array[String]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    
+    inline def setCountsVarargs(value: String*): Self = StObject.set(x, "counts", js.Array(value*))
+    
+    inline def setDrilldown(value: js.Array[String]): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
+    
+    inline def setDrilldownVarargs(value: String*): Self = StObject.set(x, "drilldown", js.Array(value*))
+    
+    inline def setGroup_field(value: String): Self = StObject.set(x, "group_field", value.asInstanceOf[js.Any])
+    
+    inline def setGroup_fieldUndefined: Self = StObject.set(x, "group_field", js.undefined)
+    
+    inline def setGroup_limit(value: Double): Self = StObject.set(x, "group_limit", value.asInstanceOf[js.Any])
+    
+    inline def setGroup_limitUndefined: Self = StObject.set(x, "group_limit", js.undefined)
+    
+    inline def setGroup_sort(value: String | js.Array[String]): Self = StObject.set(x, "group_sort", value.asInstanceOf[js.Any])
+    
+    inline def setGroup_sortUndefined: Self = StObject.set(x, "group_sort", js.undefined)
+    
+    inline def setGroup_sortVarargs(value: String*): Self = StObject.set(x, "group_sort", js.Array(value*))
+    
+    inline def setHighlight_fields(value: js.Array[String]): Self = StObject.set(x, "highlight_fields", value.asInstanceOf[js.Any])
+    
+    inline def setHighlight_fieldsUndefined: Self = StObject.set(x, "highlight_fields", js.undefined)
+    
+    inline def setHighlight_fieldsVarargs(value: String*): Self = StObject.set(x, "highlight_fields", js.Array(value*))
+    
+    inline def setHighlight_number(value: Double): Self = StObject.set(x, "highlight_number", value.asInstanceOf[js.Any])
+    
+    inline def setHighlight_numberUndefined: Self = StObject.set(x, "highlight_number", js.undefined)
+    
+    inline def setHighlight_post_tag(value: String): Self = StObject.set(x, "highlight_post_tag", value.asInstanceOf[js.Any])
+    
+    inline def setHighlight_post_tagUndefined: Self = StObject.set(x, "highlight_post_tag", js.undefined)
+    
+    inline def setHighlight_pre_tag(value: String): Self = StObject.set(x, "highlight_pre_tag", value.asInstanceOf[js.Any])
+    
+    inline def setHighlight_pre_tagUndefined: Self = StObject.set(x, "highlight_pre_tag", js.undefined)
+    
+    inline def setHighlight_size(value: Double): Self = StObject.set(x, "highlight_size", value.asInstanceOf[js.Any])
+    
+    inline def setHighlight_sizeUndefined: Self = StObject.set(x, "highlight_size", js.undefined)
+    
+    inline def setInclude_docs(value: Boolean): Self = StObject.set(x, "include_docs", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_docsUndefined: Self = StObject.set(x, "include_docs", js.undefined)
+    
+    inline def setInclude_fields(value: js.Array[String]): Self = StObject.set(x, "include_fields", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_fieldsUndefined: Self = StObject.set(x, "include_fields", js.undefined)
+    
+    inline def setInclude_fieldsVarargs(value: String*): Self = StObject.set(x, "include_fields", js.Array(value*))
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setRanges(value: js.Object): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    
+    inline def setRangesUndefined: Self = StObject.set(x, "ranges", js.undefined)
+    
+    inline def setSort(value: String | js.Array[String]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setStale(value: Boolean): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+    
+    inline def setStaleUndefined: Self = StObject.set(x, "stale", js.undefined)
+  }
 }
-

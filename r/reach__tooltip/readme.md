@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__tooltip
 
-Typings are for version 0.2
+Typings are for version 0.18.0
 
 ## Library description:
 Accessible tooltips
@@ -10,10 +10,10 @@ Accessible tooltips
 | ------------------ | :-------------: |
 | Full name          | @reach/tooltip |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 10 |
-| # downloads        | 289828 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 400131.6666666667 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Accessible tooltips
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

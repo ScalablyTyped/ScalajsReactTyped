@@ -1,20 +1,29 @@
 package typingsJapgolly.glReact.mod
 
-import typingsJapgolly.glReact.AnonNode
-import typingsJapgolly.glReact.AnonObj
-import typingsJapgolly.glReact.AnonRatio
+import typingsJapgolly.glReact.anon.Obj
+import typingsJapgolly.glReact.anon.Ratio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-react", "Uniform")
-@js.native
-object Uniform extends js.Object {
+object Uniform {
+  
+  @JSImport("gl-react", "Uniform")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("gl-react", "Uniform.Backbuffer")
+  @js.native
   val Backbuffer: String = js.native
+  
+  @JSImport("gl-react", "Uniform.Resolution")
+  @js.native
   val Resolution: String = js.native
-  def backbufferFrom(node: Bus): AnonNode = js.native
-  def backbufferFrom(node: Node): AnonNode = js.native
-  def textureSize(obj: js.Any): AnonObj = js.native
-  def textureSizeRatio(obj: js.Any): AnonRatio = js.native
+  
+  inline def backbufferFrom(node: Bus): typingsJapgolly.glReact.anon.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("backbufferFrom")(node.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.glReact.anon.Node]
+  inline def backbufferFrom(node: Node): typingsJapgolly.glReact.anon.Node = ^.asInstanceOf[js.Dynamic].applyDynamic("backbufferFrom")(node.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.glReact.anon.Node]
+  
+  inline def textureSize(obj: Any): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSize")(obj.asInstanceOf[js.Any]).asInstanceOf[Obj]
+  
+  inline def textureSizeRatio(obj: Any): Ratio = ^.asInstanceOf[js.Dynamic].applyDynamic("textureSizeRatio")(obj.asInstanceOf[js.Any]).asInstanceOf[Ratio]
 }
-

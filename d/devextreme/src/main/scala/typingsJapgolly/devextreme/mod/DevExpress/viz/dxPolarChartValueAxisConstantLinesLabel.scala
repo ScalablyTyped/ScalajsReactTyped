@@ -1,22 +1,29 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartValueAxisConstantLinesLabel extends dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
-  /** Specifies the text to be displayed in a constant line label. */
+trait dxPolarChartValueAxisConstantLinesLabel
+  extends StObject
+     with dxPolarChartCommonAxisSettingsConstantLineStyleLabel {
+  
+  /**
+    * Specifies the text to be displayed in a constant line label.
+    */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object dxPolarChartValueAxisConstantLinesLabel {
-  @scala.inline
-  def apply(font: Font = null, text: String = null, visible: js.UndefOr[Boolean] = js.undefined): dxPolarChartValueAxisConstantLinesLabel = {
+  
+  inline def apply(): dxPolarChartValueAxisConstantLinesLabel = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartValueAxisConstantLinesLabel]
   }
+  
+  extension [Self <: dxPolarChartValueAxisConstantLinesLabel](x: Self) {
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

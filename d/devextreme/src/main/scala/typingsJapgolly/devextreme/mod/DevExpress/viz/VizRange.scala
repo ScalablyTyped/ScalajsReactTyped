@@ -1,41 +1,45 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.day
-import typingsJapgolly.devextreme.devextremeStrings.hour
-import typingsJapgolly.devextreme.devextremeStrings.millisecond
-import typingsJapgolly.devextreme.devextremeStrings.minute
-import typingsJapgolly.devextreme.devextremeStrings.month
-import typingsJapgolly.devextreme.devextremeStrings.quarter
-import typingsJapgolly.devextreme.devextremeStrings.second
-import typingsJapgolly.devextreme.devextremeStrings.week
-import typingsJapgolly.devextreme.devextremeStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VizRange extends js.Object {
-  /** The range's end value. */
+trait VizRange extends StObject {
+  
+  /**
+    * The range&apos;s end value.
+    */
   var endValue: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** The range's length. */
-  var length: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** The range's start value. */
+  
+  /**
+    * The range&apos;s length.
+    */
+  var length: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * The range&apos;s start value.
+    */
   var startValue: js.UndefOr[Double | js.Date | String] = js.undefined
 }
-
 object VizRange {
-  @scala.inline
-  def apply(
-    endValue: Double | js.Date | String = null,
-    length: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    startValue: Double | js.Date | String = null
-  ): VizRange = {
+  
+  inline def apply(): VizRange = {
     val __obj = js.Dynamic.literal()
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[VizRange]
   }
+  
+  extension [Self <: VizRange](x: Self) {
+    
+    inline def setEndValue(value: Double | js.Date | String): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setLength(value: VizTimeInterval): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setStartValue(value: Double | js.Date | String): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+  }
 }
-

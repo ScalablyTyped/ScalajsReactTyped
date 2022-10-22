@@ -1,41 +1,45 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeScaleFrom extends js.Object
-
+sealed trait ShapeScaleFrom extends StObject
 /**
-  *
   * Specifies which part of the shape retains its position when the shape is scaled.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeScaleFrom")
 @js.native
-object ShapeScaleFrom extends js.Object {
+object ShapeScaleFrom extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait scaleFromBottomRight extends ShapeScaleFrom
+  sealed trait scaleFromBottomRight
+    extends StObject
+       with ShapeScaleFrom
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait scaleFromMiddle extends ShapeScaleFrom
+  sealed trait scaleFromMiddle
+    extends StObject
+       with ShapeScaleFrom
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait scaleFromTopLeft extends ShapeScaleFrom
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeScaleFrom with String] = js.native
-  /* "ScaleFromBottomRight" */ @js.native
-  object scaleFromBottomRight extends TopLevel[scaleFromBottomRight with String]
-  
-  /* "ScaleFromMiddle" */ @js.native
-  object scaleFromMiddle extends TopLevel[scaleFromMiddle with String]
-  
-  /* "ScaleFromTopLeft" */ @js.native
-  object scaleFromTopLeft extends TopLevel[scaleFromTopLeft with String]
-  
+  sealed trait scaleFromTopLeft
+    extends StObject
+       with ShapeScaleFrom
 }
-

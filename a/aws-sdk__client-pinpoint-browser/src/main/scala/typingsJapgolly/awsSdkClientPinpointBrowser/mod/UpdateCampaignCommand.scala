@@ -1,14 +1,13 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser.mod
 
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesUpdateCampaignInputMod.UpdateCampaignInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-pinpoint-browser", "UpdateCampaignCommand")
 @js.native
-class UpdateCampaignCommand protected ()
-  extends typingsJapgolly.awsSdkClientPinpointBrowser.updateCampaignCommandMod.UpdateCampaignCommand {
+open class UpdateCampaignCommand protected ()
+  extends typingsJapgolly.awsSdkClientPinpointBrowser.commandsUpdateCampaignCommandMod.UpdateCampaignCommand {
   def this(input: UpdateCampaignInput) = this()
 }
-

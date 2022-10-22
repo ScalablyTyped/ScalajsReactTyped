@@ -1,44 +1,60 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * {@link PIXI.Loader Loader} middleware for loading
-  * bitmap-based fonts suitable for using with {@link PIXI.BitmapText}.
-  * @class
-  * @memberof PIXI
-  * @implements PIXI.ILoaderPlugin
-  */
 @JSImport("pixi.js", "BitmapFontLoader")
 @js.native
-class BitmapFontLoader ()
-  extends typingsJapgolly.pixiJs.PIXI.BitmapFontLoader
-
+open class BitmapFontLoader ()
+  extends typingsJapgolly.pixiTextBitmap.mod.BitmapFontLoader
 /* static members */
-@JSImport("pixi.js", "BitmapFontLoader")
-@js.native
-object BitmapFontLoader extends js.Object {
+object BitmapFontLoader {
+  
+  @JSImport("pixi.js", "BitmapFontLoader")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Called when the plugin is installed.
-    *
-    * @see PIXI.Loader.registerPlugin
+    * @see PIXI.extensions.add
     */
-  def add(): Unit = js.native
+  inline def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
+  
   /**
-    * Register a BitmapText font from loader resource.
-    *
-    * @param {PIXI.LoaderResource} resource - Loader resource.
-    * @param {PIXI.Texture} texture - Reference to texture.
+    * Replacement for NodeJS's path.dirname
+    * @param {string} url - Path to get directory for
     */
-  def parse(resource: typingsJapgolly.pixiJs.PIXI.LoaderResource, texture: typingsJapgolly.pixiJs.PIXI.Texture): Unit = js.native
+  @JSImport("pixi.js", "BitmapFontLoader.dirname")
+  @js.native
+  def dirname: Any = js.native
+  inline def dirname_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dirname")(x.asInstanceOf[js.Any])
+  
+  /** @ignore */
+  @JSImport("pixi.js", "BitmapFontLoader.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+  
+  /**
+    * Get folder path from a resource.
+    * @param loader
+    * @param resource
+    */
+  @JSImport("pixi.js", "BitmapFontLoader.getBaseUrl")
+  @js.native
+  def getBaseUrl: Any = js.native
+  inline def getBaseUrl_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getBaseUrl")(x.asInstanceOf[js.Any])
+  
   /**
     * Called after a resource is loaded.
     * @see PIXI.Loader.loaderMiddleware
+    * @param this
     * @param {PIXI.LoaderResource} resource
-    * @param {function} next
+    * @param {Function} next
     */
-  def use(resource: typingsJapgolly.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  inline def use(
+    resource: typingsJapgolly.pixiLoaders.mod.LoaderResource,
+    next: js.Function1[/* repeated */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

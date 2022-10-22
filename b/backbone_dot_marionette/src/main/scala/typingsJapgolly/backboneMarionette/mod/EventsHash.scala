@@ -1,25 +1,18 @@
 package typingsJapgolly.backboneMarionette.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.jquery.JQuery_.TriggeredEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- org.scalablytyped.runtime.StObject because Already inherited
 - org.scalablytyped.runtime.StringDictionary because Already inherited */ trait EventsHash
-  extends typingsJapgolly.backbone.mod.EventsHash
-
+  extends StObject
+     with typingsJapgolly.backbone.mod.EventsHash
 object EventsHash {
-  @scala.inline
-  def apply(
-    StringDictionary: StringDictionary[
-      String | (js.Function1[/* eventObject */ TriggeredEvent[js.Any, js.Any, js.Any, js.Any], Unit])
-    ] = null
-  ): EventsHash = {
+  
+  inline def apply(): EventsHash = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[EventsHash]
   }
 }
-

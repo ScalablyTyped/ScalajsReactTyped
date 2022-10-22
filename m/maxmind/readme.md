@@ -1,7 +1,7 @@
 
 # Scala.js typings for maxmind
 
-Typings are for version 3.1.2
+Typings are for version 4.3.8
 
 ## Library description:
 IP lookup using Maxmind databases
@@ -9,11 +9,11 @@ IP lookup using Maxmind databases
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | maxmind |
-| Keywords           | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup, ip base, geocode, timezone, asn |
-| # releases         | 22 |
-| # dependents       | 58 |
-| # downloads        | 1798531 |
-| # stars            | 17 |
+| Keywords           | maxmind, mmdb, geo, geoip, geoip2, geobase, geo lookup, ip base, geocode, timezone, asn, geo lookup, ip lookup |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 604578.6666666666 |
+| # stars            | 538.0 |
 
 ## Links
 - [Homepage](https://github.com/runk/node-maxmind)

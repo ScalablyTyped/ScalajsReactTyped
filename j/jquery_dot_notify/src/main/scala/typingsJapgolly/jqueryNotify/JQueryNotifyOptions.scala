@@ -3,43 +3,67 @@ package typingsJapgolly.jqueryNotify
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jqueryNotify.jqueryNotifyStrings.above
 import typingsJapgolly.jqueryNotify.jqueryNotifyStrings.below
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryNotifyOptions extends js.Object {
+trait JQueryNotifyOptions extends StObject {
+  
   var close: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var custom: js.UndefOr[Boolean] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var expires: js.UndefOr[Double] = js.undefined
+  
   var open: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var queue: js.UndefOr[Boolean] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
+  
   var stack: js.UndefOr[below | above] = js.undefined
 }
-
 object JQueryNotifyOptions {
-  @scala.inline
-  def apply(
-    close: js.UndefOr[Callback] = js.undefined,
-    custom: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    expires: Int | Double = null,
-    open: js.UndefOr[Callback] = js.undefined,
-    queue: js.UndefOr[Boolean] = js.undefined,
-    speed: Int | Double = null,
-    stack: below | above = null
-  ): JQueryNotifyOptions = {
+  
+  inline def apply(): JQueryNotifyOptions = {
     val __obj = js.Dynamic.literal()
-    close.foreach(p => __obj.updateDynamic("close")(p.toJsFn))
-    if (!js.isUndefined(custom)) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    open.foreach(p => __obj.updateDynamic("open")(p.toJsFn))
-    if (!js.isUndefined(queue)) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryNotifyOptions]
   }
+  
+  extension [Self <: JQueryNotifyOptions](x: Self) {
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setCustom(value: Boolean): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    
+    inline def setOpen(value: Callback): Self = StObject.set(x, "open", value.toJsFn)
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setStack(value: below | above): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+  }
 }
-

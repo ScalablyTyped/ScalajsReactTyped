@@ -1,10 +1,10 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonConnector
-import typingsJapgolly.loopback.AnonRelations
+import typingsJapgolly.loopback.anon.Connector
+import typingsJapgolly.loopback.anon.Relations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Define and reference `Models` and `anys`
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Registry")
 @js.native
-class Registry () extends js.Object {
+open class Registry () extends StObject {
+  
   /**
     * Alter an existing Model class.
     * @param {Model} ModelCtor The model constructor to alter.
@@ -21,7 +22,8 @@ class Registry () extends js.Object {
     * @property {any} [relations] Model relations to add/update
     * @header loopback.configureModel(ModelCtor, config
     */
-  def configureModel(ModelCtor: Model, config: AnonRelations): Unit = js.native
+  def configureModel(ModelCtor: Model, config: Relations): Unit = js.native
+  
   /**
     * Create a data source with passing the provided options to the connector
     * @param {string} name Optional name.
@@ -30,7 +32,8 @@ class Registry () extends js.Object {
     * @property {*} [*] Other&nbsp;connector properties.
     *   See the relevant connector documentation
     */
-  def createDataSource(name: String, options: AnonConnector): Unit = js.native
+  def createDataSource(name: String, options: Connector): Unit = js.native
+  
   /**
     * Create a named vanilla JavaScript class constructor with an attached
     * set of properties and options
@@ -84,7 +87,8 @@ class Registry () extends js.Object {
     * @param {any} options (optional
     * @header loopback.createMode
     */
-  def createModel(name: String, properties: js.Any, options: js.Any): Unit = js.native
+  def createModel(name: String, properties: Any, options: Any): Unit = js.native
+  
   /**
     * Look up a model class by name from all models created by
     * `loopback.createModel()`
@@ -93,6 +97,7 @@ class Registry () extends js.Object {
     * @header loopback.findModel(modelName
     */
   def findModel(modelOrName: String): Model = js.native
+  
   /**
     * Look up a model class by name from all models created by
     * `loopback.createModel()`. **Throw an error when no such model exists.*
@@ -101,6 +106,7 @@ class Registry () extends js.Object {
     * @header loopback.getModel(modelName
     */
   def getModel(modelOrName: String): Model = js.native
+  
   /**
     * Look up a model class by the base model class.
     * The method can be used by LoopBack
@@ -110,6 +116,7 @@ class Registry () extends js.Object {
     * @header loopback.getModelByType(modelType
     */
   def getModelByType(modelType: Model): Model = js.native
+  
   /**
     * Get an in-memory data source. Use one if it already exists
     * @param {string} [name] The name of the data source.
@@ -118,11 +125,12 @@ class Registry () extends js.Object {
   def memory(): Unit = js.native
   def memory(name: String): Unit = js.native
 }
-
-/* static members */
-@JSImport("loopback", "Registry")
-@js.native
-object Registry extends js.Object {
-  def addACL(acls: js.Array[_], acl: js.Any): Unit = js.native
+object Registry {
+  
+  @JSImport("loopback", "Registry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def addACL(acls: js.Array[Any], acl: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addACL")(acls.asInstanceOf[js.Any], acl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

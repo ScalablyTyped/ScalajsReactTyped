@@ -1,20 +1,22 @@
 package typingsJapgolly.openjscad
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICenter extends js.Object {
+trait ICenter extends StObject {
+  
   def center(cAxes: js.Array[String]): CxG
 }
-
 object ICenter {
-  @scala.inline
-  def apply(center: js.Array[String] => CallbackTo[CxG]): ICenter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("center")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => center(t0).runNow()))
+  
+  inline def apply(center: js.Array[String] => CxG): ICenter = {
+    val __obj = js.Dynamic.literal(center = js.Any.fromFunction1(center))
     __obj.asInstanceOf[ICenter]
   }
+  
+  extension [Self <: ICenter](x: Self) {
+    
+    inline def setCenter(value: js.Array[String] => CxG): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
+  }
 }
-

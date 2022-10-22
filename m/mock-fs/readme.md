@@ -1,7 +1,7 @@
 
 # Scala.js typings for mock-fs
 
-Typings are for version 4.10
+Typings are for version 4.13
 
 ## Library description:
 A configurable mock file system.  You know, for testing.
@@ -10,10 +10,10 @@ A configurable mock file system.  You know, for testing.
 | ------------------ | :-------------: |
 | Full name          | mock-fs |
 | Keywords           | mock, fs, test, fixtures, file system, memory |
-| # releases         | 9 |
-| # dependents       | 61 |
-| # downloads        | 5976946 |
-| # stars            | 26 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 2337006.3333333335 |
+| # stars            | 831.0 |
 
 ## Links
 - [Homepage](https://github.com/tschaub/mock-fs)

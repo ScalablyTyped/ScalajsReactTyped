@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnSocketMessageCallbackResult extends js.Object {
+trait OnSocketMessageCallbackResult extends StObject {
+  
   /**
     * 服务器返回的消息
     */
-  var data: js.UndefOr[String | scala.scalajs.js.typedarray.ArrayBuffer] = js.undefined
+  var data: js.UndefOr[String | js.typedarray.ArrayBuffer] = js.undefined
 }
-
 object OnSocketMessageCallbackResult {
-  @scala.inline
-  def apply(data: String | scala.scalajs.js.typedarray.ArrayBuffer = null): OnSocketMessageCallbackResult = {
+  
+  inline def apply(): OnSocketMessageCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSocketMessageCallbackResult]
   }
+  
+  extension [Self <: OnSocketMessageCallbackResult](x: Self) {
+    
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+  }
 }
-

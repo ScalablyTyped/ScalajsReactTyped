@@ -2,16 +2,17 @@ package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.dataTypeResource
   * @description Loads in data for data types
   **/
-trait IDataTypeResource extends js.Object {
+trait IDataTypeResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#deleteById
@@ -33,7 +34,9 @@ trait IDataTypeResource extends js.Object {
     *
     */
   def deleteById(id: Double): IPromise[IResourcePromise]
-  def getAll(): js.Any
+  
+  def getAll(): Any
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#getById
@@ -55,6 +58,7 @@ trait IDataTypeResource extends js.Object {
     *
     */
   def getById(id: Double): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#getPreValues
@@ -77,6 +81,7 @@ trait IDataTypeResource extends js.Object {
     *
     */
   def getPreValues(editorAlias: String, dataTypeId: Double): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentResource#getScaffold
@@ -105,6 +110,7 @@ trait IDataTypeResource extends js.Object {
     *
     */
   def getScaffold(): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.dataTypeResource#save
@@ -119,27 +125,34 @@ trait IDataTypeResource extends js.Object {
     * @returns {Promise} resourcePromise object.
     *
     */
-  def save(dataType: js.Object, preValues: js.Array[_], isNew: Boolean): IPromise[IResourcePromise]
+  def save(dataType: js.Object, preValues: js.Array[Any], isNew: Boolean): IPromise[IResourcePromise]
 }
-
 object IDataTypeResource {
-  @scala.inline
-  def apply(
-    deleteById: Double => CallbackTo[IPromise[IResourcePromise]],
-    getAll: CallbackTo[js.Any],
-    getById: Double => CallbackTo[IPromise[IResourcePromise]],
-    getPreValues: (String, Double) => CallbackTo[IPromise[IResourcePromise]],
+  
+  inline def apply(
+    deleteById: Double => IPromise[IResourcePromise],
+    getAll: CallbackTo[Any],
+    getById: Double => IPromise[IResourcePromise],
+    getPreValues: (String, Double) => IPromise[IResourcePromise],
     getScaffold: CallbackTo[IPromise[IResourcePromise]],
-    save: (js.Object, js.Array[js.Any], Boolean) => CallbackTo[IPromise[IResourcePromise]]
+    save: (js.Object, js.Array[Any], Boolean) => IPromise[IResourcePromise]
   ): IDataTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("deleteById")(js.Any.fromFunction1((t0: scala.Double) => deleteById(t0).runNow()))
-    __obj.updateDynamic("getAll")(getAll.toJsFn)
-    __obj.updateDynamic("getById")(js.Any.fromFunction1((t0: scala.Double) => getById(t0).runNow()))
-    __obj.updateDynamic("getPreValues")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Double) => getPreValues(t0, t1).runNow()))
-    __obj.updateDynamic("getScaffold")(getScaffold.toJsFn)
-    __obj.updateDynamic("save")(js.Any.fromFunction3((t0: js.Object, t1: js.Array[js.Any], t2: scala.Boolean) => save(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(deleteById = js.Any.fromFunction1(deleteById), getAll = getAll.toJsFn, getById = js.Any.fromFunction1(getById), getPreValues = js.Any.fromFunction2(getPreValues), getScaffold = getScaffold.toJsFn, save = js.Any.fromFunction3(save))
     __obj.asInstanceOf[IDataTypeResource]
   }
+  
+  extension [Self <: IDataTypeResource](x: Self) {
+    
+    inline def setDeleteById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "deleteById", js.Any.fromFunction1(value))
+    
+    inline def setGetAll(value: CallbackTo[Any]): Self = StObject.set(x, "getAll", value.toJsFn)
+    
+    inline def setGetById(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    
+    inline def setGetPreValues(value: (String, Double) => IPromise[IResourcePromise]): Self = StObject.set(x, "getPreValues", js.Any.fromFunction2(value))
+    
+    inline def setGetScaffold(value: CallbackTo[IPromise[IResourcePromise]]): Self = StObject.set(x, "getScaffold", value.toJsFn)
+    
+    inline def setSave(value: (js.Object, js.Array[Any], Boolean) => IPromise[IResourcePromise]): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+  }
 }
-

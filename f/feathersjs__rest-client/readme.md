@@ -10,10 +10,10 @@ REST client services for different Ajax libraries
 | ------------------ | :-------------: |
 | Full name          | @feathersjs/rest-client |
 | Keywords           | feathers, feathers-plugin |
-| # releases         | 33 |
-| # dependents       | 12 |
-| # downloads        | 293542 |
-| # stars            | 0 |
+| # releases         | 35 |
+| # dependents       | 0.0 |
+| # downloads        | 54002.666666666664 |
+| # stars            | 14155.0 |
 
 ## Links
 - [Homepage](https://feathersjs.com)

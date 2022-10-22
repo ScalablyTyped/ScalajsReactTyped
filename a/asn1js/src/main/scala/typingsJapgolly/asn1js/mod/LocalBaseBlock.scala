@@ -1,39 +1,35 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalBaseBlock")
+/**
+  * Class used as a base block for all remaining ASN.1 classes
+  */
 @js.native
-class LocalBaseBlock () extends js.Object {
-  def this(params: LocalBaseBlockParams) = this()
-  var blockLength: Double = js.native
-  var error: String = js.native
-  var valueBeforeDecode: scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  var warnings: js.Array[String] = js.native
+trait LocalBaseBlock
+  extends StObject
+     with ILocalBaseBlock {
+  
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * Returns a JSON representation of an object
+    * @returns JSON object
     */
-  def toJSON(): JsonLocalBaseBlock = js.native
-}
-
-/* static members */
-@JSImport("asn1js", "LocalBaseBlock")
-@js.native
-object LocalBaseBlock extends js.Object {
+  def toJSON(): LocalBaseBlockJson = js.native
+  
   /**
-    * Aux function, need to get a block name. Need to have it here for inhiritence
-    * 
-    * @static
-    * @returns {string}
-    * 
-    * @memberOf LocalBaseBlock
+    * @deprecated since version 3.0.0
     */
-  def blockName(): String = js.native
+  def valueBeforeDecode: js.typedarray.ArrayBuffer = js.native
+  
+  /**
+    * @since 3.0.0
+    */
+  var valueBeforeDecodeView: js.typedarray.Uint8Array = js.native
+  
+  /**
+    * @deprecated since version 3.0.0
+    */
+  def valueBeforeDecode_=(value: js.typedarray.ArrayBuffer): Unit = js.native
 }
-

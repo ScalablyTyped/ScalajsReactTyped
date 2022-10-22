@@ -11,9 +11,9 @@ Creates and returns a new debounced version of the passed function that will pos
 | Full name          | debounce |
 | Keywords           | function, throttle, invoke |
 | # releases         | 2 |
-| # dependents       | 707 |
-| # downloads        | 34831281 |
-| # stars            | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1292784E7 |
+| # stars            | 571.0 |
 
 ## Links
 - [Homepage](https://github.com/component/debounce#readme)

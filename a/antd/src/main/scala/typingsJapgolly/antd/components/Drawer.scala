@@ -1,98 +1,146 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.ReactKeyboardEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.antdBooleans.`false`
-import typingsJapgolly.antd.drawerMod.DrawerProps
-import typingsJapgolly.antd.drawerMod.EventType
-import typingsJapgolly.antd.drawerMod.getContainerFunc
-import typingsJapgolly.antd.drawerMod.placementType
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libDrawerMod.DrawerProps
+import typingsJapgolly.antd.libDrawerMod.sizeType
+import typingsJapgolly.rcComponentPortal.esPortalMod.GetContainer
+import typingsJapgolly.rcDrawer.esDrawerPopupMod.Placement
+import typingsJapgolly.rcDrawer.esDrawerPopupMod.PushConfig
+import typingsJapgolly.rcMotion.esCssmotionMod.CSSMotionProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Drawer {
-  def apply(
-    afterVisibleChange: /* visible */ Boolean => Callback = null,
-    bodyStyle: CSSProperties = null,
-    className: String = null,
-    closable: js.UndefOr[Boolean] = js.undefined,
-    destroyOnClose: js.UndefOr[Boolean] = js.undefined,
-    drawerStyle: CSSProperties = null,
-    footer: VdomNode = null,
-    footerStyle: CSSProperties = null,
-    getContainer: String | HTMLElement | getContainerFunc | `false` = null,
-    handler: VdomNode = null,
-    headerStyle: CSSProperties = null,
-    height: Double | String = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    mask: js.UndefOr[Boolean] = js.undefined,
-    maskClosable: js.UndefOr[Boolean] = js.undefined,
-    maskStyle: CSSProperties = null,
-    onClose: /* e */ EventType => Callback = null,
-    placement: placementType = null,
-    prefixCls: String = null,
-    push: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    title: VdomNode = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null,
-    zIndex: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    DrawerProps, 
-    MountedWithRawType[DrawerProps, js.Object, RawMounted[DrawerProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (afterVisibleChange != null) __obj.updateDynamic("afterVisibleChange")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => afterVisibleChange(t0).runNow()))
-    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose.asInstanceOf[js.Any])
-    if (drawerStyle != null) __obj.updateDynamic("drawerStyle")(drawerStyle.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.rawNode.asInstanceOf[js.Any])
-    if (footerStyle != null) __obj.updateDynamic("footerStyle")(footerStyle.asInstanceOf[js.Any])
-    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.rawNode.asInstanceOf[js.Any])
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable.asInstanceOf[js.Any])
-    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.antd.drawerMod.EventType) => onClose(t0).runNow()))
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.drawerMod.DrawerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.drawerMod.DrawerProps])(children: _*)
-  }
-  @JSImport("antd/lib/drawer", JSImport.Default)
+  @JSImport("antd", "Drawer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def afterOpenChange(value: /* open */ Boolean => Callback): this.type = set("afterOpenChange", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+    
+    inline def afterVisibleChange(value: /* visible */ Boolean => Callback): this.type = set("afterVisibleChange", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def bodyStyle(value: CSSProperties): this.type = set("bodyStyle", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def closable(value: Boolean): this.type = set("closable", value.asInstanceOf[js.Any])
+    
+    inline def closeIcon(value: VdomNode): this.type = set("closeIcon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def closeIconNull: this.type = set("closeIcon", null)
+    
+    inline def closeIconVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("closeIcon", js.Array(value*))
+    
+    inline def closeIconVdomElement(value: VdomElement): this.type = set("closeIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def contentWrapperStyle(value: CSSProperties): this.type = set("contentWrapperStyle", value.asInstanceOf[js.Any])
+    
+    inline def destroyOnClose(value: Boolean): this.type = set("destroyOnClose", value.asInstanceOf[js.Any])
+    
+    inline def drawerStyle(value: CSSProperties): this.type = set("drawerStyle", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def footer(value: VdomNode): this.type = set("footer", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def footerNull: this.type = set("footer", null)
+    
+    inline def footerStyle(value: CSSProperties): this.type = set("footerStyle", value.asInstanceOf[js.Any])
+    
+    inline def footerVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("footer", js.Array(value*))
+    
+    inline def footerVdomElement(value: VdomElement): this.type = set("footer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def forceRender(value: Boolean): this.type = set("forceRender", value.asInstanceOf[js.Any])
+    
+    inline def getContainer(value: GetContainer): this.type = set("getContainer", value.asInstanceOf[js.Any])
+    
+    inline def headerStyle(value: CSSProperties): this.type = set("headerStyle", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def keyboard(value: Boolean): this.type = set("keyboard", value.asInstanceOf[js.Any])
+    
+    inline def mask(value: Boolean): this.type = set("mask", value.asInstanceOf[js.Any])
+    
+    inline def maskClassName(value: String): this.type = set("maskClassName", value.asInstanceOf[js.Any])
+    
+    inline def maskClosable(value: Boolean): this.type = set("maskClosable", value.asInstanceOf[js.Any])
+    
+    inline def maskMotion(value: CSSMotionProps): this.type = set("maskMotion", value.asInstanceOf[js.Any])
+    
+    inline def maskStyle(value: CSSProperties): this.type = set("maskStyle", value.asInstanceOf[js.Any])
+    
+    inline def motion(value: CSSMotionProps | (js.Function1[/* placement */ Placement, CSSMotionProps])): this.type = set("motion", value.asInstanceOf[js.Any])
+    
+    inline def motionFunction1(value: /* placement */ Placement => CSSMotionProps): this.type = set("motion", js.Any.fromFunction1(value))
+    
+    inline def onClose(
+      value: /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] | ReactKeyboardEventFrom[org.scalajs.dom.Element] => Callback
+    ): this.type = set("onClose", js.Any.fromFunction1((t0: /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] | ReactKeyboardEventFrom[org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: Placement): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def push(value: Boolean | PushConfig): this.type = set("push", value.asInstanceOf[js.Any])
+    
+    inline def rootClassName(value: String): this.type = set("rootClassName", value.asInstanceOf[js.Any])
+    
+    inline def rootStyle(value: CSSProperties): this.type = set("rootStyle", value.asInstanceOf[js.Any])
+    
+    inline def size(value: sizeType): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def zIndex(value: Double): this.type = set("zIndex", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Drawer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DrawerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

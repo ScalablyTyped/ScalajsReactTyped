@@ -1,17 +1,28 @@
-package typingsJapgolly.senchaTouch.Ext
+package typingsJapgolly.senchaTouch.Ext.data
 
+import typingsJapgolly.senchaTouch.Ext.IAbstractManager
+import typingsJapgolly.senchaTouch.Ext.IBase
+import typingsJapgolly.senchaTouch.Ext.data.proxy.IWebStorage
+import typingsJapgolly.senchaTouch.Ext.util.ICollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object data {
-  type IJsonP = typingsJapgolly.senchaTouch.Ext.IBase
-  type ILocalStorageProxy = typingsJapgolly.senchaTouch.Ext.data.proxy.IWebStorage
-  type IModelManager = typingsJapgolly.senchaTouch.Ext.IAbstractManager
-  type ISessionStorageProxy = typingsJapgolly.senchaTouch.Ext.data.proxy.IWebStorage
-  type ISortTypes = typingsJapgolly.senchaTouch.Ext.IBase
-  type IStoreManager = typingsJapgolly.senchaTouch.Ext.util.ICollection
-  type IStoreMgr = typingsJapgolly.senchaTouch.Ext.util.ICollection
-  type ITypes = typingsJapgolly.senchaTouch.Ext.IBase
-  type IValidations = typingsJapgolly.senchaTouch.Ext.IBase
-}
+
+type IJsonP = IBase
+
+type ILocalStorageProxy = IWebStorage
+
+type IModelManager = IAbstractManager
+
+type ISessionStorageProxy = IWebStorage
+
+type ISortTypes = IBase
+
+type IStoreManager = ICollection
+
+type IStoreMgr = ICollection
+
+type ITypes = IBase
+
+type IValidations = IBase

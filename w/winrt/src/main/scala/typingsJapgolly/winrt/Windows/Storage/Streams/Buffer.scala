@@ -1,16 +1,16 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Streams.Buffer")
-@js.native
-class Buffer protected () extends IBuffer {
-  def this(capacity: Double) = this()
-  /* CompleteClass */
-  override var capacity: Double = js.native
-  /* CompleteClass */
-  override var length: Double = js.native
+trait Buffer
+  extends StObject
+     with IBuffer
+object Buffer {
+  
+  inline def apply(capacity: Double, length: Double): Buffer = {
+    val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Buffer]
+  }
 }
-

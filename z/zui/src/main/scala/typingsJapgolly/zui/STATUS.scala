@@ -1,53 +1,42 @@
 package typingsJapgolly.zui
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait STATUS extends js.Object
-
+sealed trait STATUS extends StObject
 @JSGlobal("STATUS")
 @js.native
-object STATUS extends js.Object {
-  @js.native
-  sealed trait DONE extends STATUS
+object STATUS extends StObject {
   
   @js.native
-  sealed trait FAILED extends STATUS
+  sealed trait DONE
+    extends StObject
+       with STATUS
   
   @js.native
-  sealed trait QUEUED extends STATUS
+  sealed trait FAILED
+    extends StObject
+       with STATUS
   
   @js.native
-  sealed trait STARTED extends STATUS
+  sealed trait QUEUED
+    extends StObject
+       with STATUS
   
   @js.native
-  sealed trait STOPPED extends STATUS
+  sealed trait STARTED
+    extends StObject
+       with STATUS
   
   @js.native
-  sealed trait UPLOADING extends STATUS
+  sealed trait STOPPED
+    extends StObject
+       with STATUS
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[STATUS with Double] = js.native
-  /* 4 */ @js.native
-  object DONE extends TopLevel[DONE with Double]
-  
-  /* 3 */ @js.native
-  object FAILED extends TopLevel[FAILED with Double]
-  
-  /* 1 */ @js.native
-  object QUEUED extends TopLevel[QUEUED with Double]
-  
-  /* 2 */ @js.native
-  object STARTED extends TopLevel[STARTED with Double]
-  
-  /* 1 */ @js.native
-  object STOPPED extends TopLevel[STOPPED with Double]
-  
-  /* 2 */ @js.native
-  object UPLOADING extends TopLevel[UPLOADING with Double]
-  
+  @js.native
+  sealed trait UPLOADING
+    extends StObject
+       with STATUS
 }
-

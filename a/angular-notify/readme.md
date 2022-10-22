@@ -11,14 +11,11 @@ Angular service for using browser notifications
 | Full name          | angular-notify |
 | Keywords           | angular, notifications, ngNotifications, notify, window.Notification |
 | # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 4164 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 280.3333333333333 |
+| # stars            | 15.0 |
 
 ## Links
-- [Homepage](https://github.com/hanford/angular-notify#readme)
-- [Bugs](https://github.com/hanford/angular-notify/issues)
-- [Repository](https://github.com/hanford/angular-notify)
 - [Npm](https://www.npmjs.com/package/angular-notify)
     
 

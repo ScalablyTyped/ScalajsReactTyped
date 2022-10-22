@@ -1,17 +1,22 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Printing.PrintTaskSourceRequestedArgs")
-@js.native
-class PrintTaskSourceRequestedArgs () extends IPrintTaskSourceRequestedArgs {
-  /* CompleteClass */
-  override var deadline: js.Date = js.native
-  /* CompleteClass */
-  override def getDeferral(): PrintTaskSourceRequestedDeferral = js.native
-  /* CompleteClass */
-  override def setSource(source: IPrintDocumentSource): Unit = js.native
+trait PrintTaskSourceRequestedArgs
+  extends StObject
+     with IPrintTaskSourceRequestedArgs
+object PrintTaskSourceRequestedArgs {
+  
+  inline def apply(
+    deadline: js.Date,
+    getDeferral: CallbackTo[PrintTaskSourceRequestedDeferral],
+    setSource: IPrintDocumentSource => Callback
+  ): PrintTaskSourceRequestedArgs = {
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = getDeferral.toJsFn, setSource = js.Any.fromFunction1((t0: IPrintDocumentSource) => setSource(t0).runNow()))
+    __obj.asInstanceOf[PrintTaskSourceRequestedArgs]
+  }
 }
-

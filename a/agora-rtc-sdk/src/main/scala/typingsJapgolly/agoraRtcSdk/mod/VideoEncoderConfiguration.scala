@@ -1,10 +1,10 @@
 package typingsJapgolly.agoraRtcSdk.mod
 
-import typingsJapgolly.agoraRtcSdk.AnonHeight
-import typingsJapgolly.agoraRtcSdk.AnonMax
+import typingsJapgolly.agoraRtcSdk.anon.Height
+import typingsJapgolly.agoraRtcSdk.anon.Max
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The video encoder configuration.
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   *
   * Depending on the OS, browser, and camera, the actual resolution, frame rate, and bitrate might be different from the set values.
   */
-trait VideoEncoderConfiguration extends js.Object {
+trait VideoEncoderConfiguration extends StObject {
+  
   /**
     * The video bitrate (Kbps). The value range is [1,10000000].
     *
@@ -21,17 +22,19 @@ trait VideoEncoderConfiguration extends js.Object {
     *
     * [[include:VideoProfileDefinition.md]]
     */
-  var bitrate: js.UndefOr[AnonMax] = js.undefined
+  var bitrate: js.UndefOr[Max] = js.undefined
+  
   /**
-    * The video frame rate (fps).
+    * The video encoding frame rate (fps). The value range is [1, 10000].
     *
-    * The value range is [1, 10000]. We recommend setting the frame rate between 5 fps and 30 fps.
+    * Set this parameter as a value range. The minimum is **the expected frame rate**, and the maximum is the upper limit of the adjusted frame rate when the browser does not support the expected frame rate.
     *
-    * **Note:**
-    * - This parameter sets the local capturing video frame rate. The actual encoding frame rate depends on the device, system, and browser.
+    * **Note**
+    * - The actual encoding frame rate depends on the device, system, and browser.
     * - When the network conditions change, the browser adjusts the encoding frame rate automatically.
     */
-  var frameRate: js.UndefOr[AnonMax] = js.undefined
+  var frameRate: js.UndefOr[Max] = js.undefined
+  
   /**
     * Resolution of the video.
     *
@@ -42,17 +45,27 @@ trait VideoEncoderConfiguration extends js.Object {
     * - 960 &times; 720
     *
     */
-  var resolution: js.UndefOr[AnonHeight] = js.undefined
+  var resolution: js.UndefOr[Height] = js.undefined
 }
-
 object VideoEncoderConfiguration {
-  @scala.inline
-  def apply(bitrate: AnonMax = null, frameRate: AnonMax = null, resolution: AnonHeight = null): VideoEncoderConfiguration = {
+  
+  inline def apply(): VideoEncoderConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (bitrate != null) __obj.updateDynamic("bitrate")(bitrate.asInstanceOf[js.Any])
-    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoEncoderConfiguration]
   }
+  
+  extension [Self <: VideoEncoderConfiguration](x: Self) {
+    
+    inline def setBitrate(value: Max): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    
+    inline def setBitrateUndefined: Self = StObject.set(x, "bitrate", js.undefined)
+    
+    inline def setFrameRate(value: Max): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    
+    inline def setFrameRateUndefined: Self = StObject.set(x, "frameRate", js.undefined)
+    
+    inline def setResolution(value: Height): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionUndefined: Self = StObject.set(x, "resolution", js.undefined)
+  }
 }
-

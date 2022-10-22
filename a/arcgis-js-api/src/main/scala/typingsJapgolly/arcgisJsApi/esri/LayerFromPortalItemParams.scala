@@ -1,13 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerFromPortalItemParams extends Object {
+trait LayerFromPortalItemParams
+  extends StObject
+     with Object {
+  
   /**
     * The object representing an ArcGIS Online or ArcGIS Enterprise portal item from which to load the layer.
     *
@@ -15,19 +17,20 @@ trait LayerFromPortalItemParams extends Object {
     */
   var portalItem: PortalItem
 }
-
 object LayerFromPortalItemParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     portalItem: PortalItem,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): LayerFromPortalItemParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], portalItem = portalItem.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), portalItem = portalItem.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[LayerFromPortalItemParams]
   }
+  
+  extension [Self <: LayerFromPortalItemParams](x: Self) {
+    
+    inline def setPortalItem(value: PortalItem): Self = StObject.set(x, "portalItem", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,27 +1,32 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.invalid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InvalidNode
-  extends SelectorNodeType
+  extends StObject
      with BaseNode
+     with SelectorNodeType
      with ValueNodeType {
+  
   var `type`: invalid
+  
   var value: String
 }
-
 object InvalidNode {
-  @scala.inline
-  def apply(`type`: invalid, value: String, after: String = null, before: String = null, name: String = null): InvalidNode = {
+  
+  inline def apply(value: String): InvalidNode = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("invalid")
     __obj.asInstanceOf[InvalidNode]
   }
+  
+  extension [Self <: InvalidNode](x: Self) {
+    
+    inline def setType(value: invalid): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

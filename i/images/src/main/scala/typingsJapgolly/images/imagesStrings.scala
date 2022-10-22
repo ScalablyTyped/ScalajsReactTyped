@@ -1,40 +1,45 @@
 package typingsJapgolly.images
 
-import typingsJapgolly.images.mod.SupportType
+import typingsJapgolly.images.mod.FILE_TYPE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagesStrings {
-  @js.native
-  sealed trait bmp extends SupportType
   
   @js.native
-  sealed trait gif extends SupportType
+  sealed trait bmp
+    extends StObject
+       with FILE_TYPE
+  inline def bmp: bmp = "bmp".asInstanceOf[bmp]
   
   @js.native
-  sealed trait jpg extends SupportType
+  sealed trait gif
+    extends StObject
+       with FILE_TYPE
+  inline def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait png extends SupportType
+  sealed trait jpeg
+    extends StObject
+       with FILE_TYPE
+  inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
-  sealed trait raw extends SupportType
+  sealed trait jpg
+    extends StObject
+       with FILE_TYPE
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
-  sealed trait webp extends SupportType
+  sealed trait png
+    extends StObject
+       with FILE_TYPE
+  inline def png: png = "png".asInstanceOf[png]
   
-  @scala.inline
-  def bmp: bmp = "bmp".asInstanceOf[bmp]
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
-  @scala.inline
-  def webp: webp = "webp".asInstanceOf[webp]
+  @js.native
+  sealed trait raw
+    extends StObject
+       with FILE_TYPE
+  inline def raw: raw = "raw".asInstanceOf[raw]
 }
-

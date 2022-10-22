@@ -1,34 +1,50 @@
 package typingsJapgolly.zui
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeMenuOption extends js.Object {
+trait TreeMenuOption extends StObject {
+  
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   var data: js.UndefOr[js.Array[TreeNode]] = js.undefined
+  
   var initialState: js.UndefOr[String] = js.undefined
-  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, _]] = js.undefined
+  
+  var itemCreator: js.UndefOr[js.Function2[/* li */ JQuery | js.Object, /* item */ TreeNode, Any]] = js.undefined
+  
   var itemWrapper: js.UndefOr[Boolean] = js.undefined
 }
-
 object TreeMenuOption {
-  @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    data: js.Array[TreeNode] = null,
-    initialState: String = null,
-    itemCreator: (/* li */ JQuery | js.Object, /* item */ TreeNode) => CallbackTo[js.Any] = null,
-    itemWrapper: js.UndefOr[Boolean] = js.undefined
-  ): TreeMenuOption = {
+  
+  inline def apply(): TreeMenuOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (itemCreator != null) __obj.updateDynamic("itemCreator")(js.Any.fromFunction2((t0: /* li */ typingsJapgolly.zui.JQuery | js.Object, t1: /* item */ typingsJapgolly.zui.TreeNode) => itemCreator(t0, t1).runNow()))
-    if (!js.isUndefined(itemWrapper)) __obj.updateDynamic("itemWrapper")(itemWrapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeMenuOption]
   }
+  
+  extension [Self <: TreeMenuOption](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setData(value: js.Array[TreeNode]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: TreeNode*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setInitialState(value: String): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
+    
+    inline def setInitialStateUndefined: Self = StObject.set(x, "initialState", js.undefined)
+    
+    inline def setItemCreator(value: (/* li */ JQuery | js.Object, /* item */ TreeNode) => Any): Self = StObject.set(x, "itemCreator", js.Any.fromFunction2(value))
+    
+    inline def setItemCreatorUndefined: Self = StObject.set(x, "itemCreator", js.undefined)
+    
+    inline def setItemWrapper(value: Boolean): Self = StObject.set(x, "itemWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setItemWrapperUndefined: Self = StObject.set(x, "itemWrapper", js.undefined)
+  }
 }
-

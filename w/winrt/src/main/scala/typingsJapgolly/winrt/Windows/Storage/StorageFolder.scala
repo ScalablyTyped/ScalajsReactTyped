@@ -3,27 +3,18 @@ package typingsJapgolly.winrt.Windows.Storage
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Storage.Search.IStorageFolderQueryOperations
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.StorageFolder")
 @js.native
-class StorageFolder ()
-  extends IStorageFolder
+trait StorageFolder
+  extends StObject
+     with IStorageFolder
      with IStorageFolder2
      with IStorageFolderQueryOperations
      with IStorageItemProperties {
+  
   /* InferMemberOverrides */
   override def getItemsAsync(startIndex: Double, maxItemsToRetrieve: Double): IAsyncOperation[IVectorView[IStorageItem]] = js.native
-  /* CompleteClass */
-  override def tryGetItemAsync(name: String): IAsyncOperation[IStorageItem] = js.native
 }
-
-/* static members */
-@JSGlobal("Windows.Storage.StorageFolder")
-@js.native
-object StorageFolder extends js.Object {
-  def getFolderFromPathAsync(path: String): IAsyncOperation[StorageFolder] = js.native
-}
-

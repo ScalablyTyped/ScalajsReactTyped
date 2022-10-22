@@ -1,56 +1,55 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.bottom
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.left
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.right
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.top
-import typingsJapgolly.antdMobileRn.drawerIndexNativeMod.DrawerNativeProps
+import typingsJapgolly.antdMobileRn.libDrawerIndexDotnativeMod.DrawerNativeProps
 import typingsJapgolly.reactNativeDrawerLayout.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Drawer {
-  def apply(
-    drawerBackgroundColor: String = null,
-    drawerRef: /* el */ default | Null => Callback = null,
-    drawerWidth: Int | Double = null,
-    onOpenChange: /* isOpen */ Boolean => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    position: left | right | top | bottom = null,
-    sidebar: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DrawerNativeProps, typingsJapgolly.antdMobileRn.mod.Drawer, Unit, DrawerNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor.asInstanceOf[js.Any])
-    if (drawerRef != null) __obj.updateDynamic("drawerRef")(js.Any.fromFunction1((t0: /* el */ typingsJapgolly.reactNativeDrawerLayout.mod.default | scala.Null) => drawerRef(t0).runNow()))
-    if (drawerWidth != null) __obj.updateDynamic("drawerWidth")(drawerWidth.asInstanceOf[js.Any])
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* isOpen */ scala.Boolean) => onOpenChange(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.drawerIndexNativeMod.DrawerNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.Drawer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.drawerIndexNativeMod.DrawerNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "Drawer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.Drawer] {
+    
+    inline def drawerBackgroundColor(value: String): this.type = set("drawerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def drawerRef(value: /* el */ default | Null => Callback): this.type = set("drawerRef", js.Any.fromFunction1((t0: /* el */ default | Null) => value(t0).runNow()))
+    
+    inline def drawerWidth(value: Double): this.type = set("drawerWidth", value.asInstanceOf[js.Any])
+    
+    inline def onOpenChange(value: /* isOpen */ Boolean => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* isOpen */ Boolean) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def position(value: left | right | top | bottom): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def sidebar(value: VdomNode): this.type = set("sidebar", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def sidebarNull: this.type = set("sidebar", null)
+    
+    inline def sidebarVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("sidebar", js.Array(value*))
+    
+    inline def sidebarVdomElement(value: VdomElement): this.type = set("sidebar", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Drawer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DrawerNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

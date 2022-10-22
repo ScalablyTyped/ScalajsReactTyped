@@ -1,22 +1,34 @@
 package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineValue extends js.Object {
+trait LineValue extends StObject {
+  
   var marker: js.UndefOr[String] = js.undefined
+  
   var x: js.UndefOr[Double] = js.undefined
+  
   var y: Double
 }
-
 object LineValue {
-  @scala.inline
-  def apply(y: Double, marker: String = null, x: Int | Double = null): LineValue = {
+  
+  inline def apply(y: Double): LineValue = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineValue]
   }
+  
+  extension [Self <: LineValue](x: Self) {
+    
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
 }
-

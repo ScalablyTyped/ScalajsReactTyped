@@ -1,13 +1,12 @@
 package typingsJapgolly.mapboxGl.mod
 
-import typingsJapgolly.mapboxGl.AnonCompact
+import typingsJapgolly.mapboxGl.anon.Compact
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mapbox-gl", "AttributionControl")
 @js.native
-class AttributionControl () extends Evented {
-  def this(options: AnonCompact) = this()
+open class AttributionControl () extends Control {
+  def this(options: Compact) = this()
 }
-

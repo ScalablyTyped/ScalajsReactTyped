@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnCommandItemText extends js.Object {
+trait GridColumnCommandItemText extends StObject {
+  
   var cancel: js.UndefOr[String] = js.undefined
+  
   var edit: js.UndefOr[String] = js.undefined
+  
   var update: js.UndefOr[String] = js.undefined
 }
-
 object GridColumnCommandItemText {
-  @scala.inline
-  def apply(cancel: String = null, edit: String = null, update: String = null): GridColumnCommandItemText = {
+  
+  inline def apply(): GridColumnCommandItemText = {
     val __obj = js.Dynamic.literal()
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnCommandItemText]
   }
+  
+  extension [Self <: GridColumnCommandItemText](x: Self) {
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setEdit(value: String): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+  }
 }
-

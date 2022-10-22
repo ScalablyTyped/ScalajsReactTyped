@@ -1,27 +1,38 @@
 package typingsJapgolly.reactAsync.mod
 
-import typingsJapgolly.reactAsync.AnonDictmeta
+import typingsJapgolly.reactAsync.anon.Dictmeta
 import typingsJapgolly.reactAsync.reactAsyncBooleans.`true`
 import typingsJapgolly.reactAsync.reactAsyncStrings.reject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined react-async.react-async.AbstractAction & {  type  :'reject',   payload  :std.Error,   error  :true} */
 trait Reject
-  extends AsyncAction[js.Any] {
+  extends StObject
+     with AbstractAction
+     with AsyncAction[Any] {
+  
   var error: `true`
-  var meta: AnonDictmeta
+  
   var payload: js.Error
-  var `type`: String with reject
+  
+  @JSName("type")
+  var type_Reject: reject
 }
-
 object Reject {
-  @scala.inline
-  def apply(error: `true`, meta: AnonDictmeta, payload: js.Error, `type`: String with reject): Reject = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(meta: Dictmeta, payload: js.Error): Reject = {
+    val __obj = js.Dynamic.literal(error = true, meta = meta.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reject")
     __obj.asInstanceOf[Reject]
   }
+  
+  extension [Self <: Reject](x: Self) {
+    
+    inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setPayload(value: js.Error): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: reject): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

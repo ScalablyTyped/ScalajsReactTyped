@@ -1,0 +1,109 @@
+package typingsJapgolly.yandexMaps.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignredClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedRedClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkOrangeClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignnightClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedNightClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkBlueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignpinkClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedPinkClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngrayClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGrayClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbrownClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBrownClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkGreenClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignvioletClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedVioletClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblackClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlackClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignyellowClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedYellowClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngreenClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGreenClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignorangeClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOrangeClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedLightBlueClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignoliveClusterIcons
+  - typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOliveClusterIcons
+*/
+trait PresetClusterKey
+  extends StObject
+     with _PresetKey
+object PresetClusterKey {
+  
+  inline def islandsNumbersignblackClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblackClusterIcons = "islands#blackClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblackClusterIcons]
+  
+  inline def islandsNumbersignblueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueClusterIcons = "islands#blueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignblueClusterIcons]
+  
+  inline def islandsNumbersignbrownClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbrownClusterIcons = "islands#brownClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignbrownClusterIcons]
+  
+  inline def islandsNumbersigndarkBlueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueClusterIcons = "islands#darkBlueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkBlueClusterIcons]
+  
+  inline def islandsNumbersigndarkGreenClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenClusterIcons = "islands#darkGreenClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkGreenClusterIcons]
+  
+  inline def islandsNumbersigndarkOrangeClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeClusterIcons = "islands#darkOrangeClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigndarkOrangeClusterIcons]
+  
+  inline def islandsNumbersigngrayClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngrayClusterIcons = "islands#grayClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngrayClusterIcons]
+  
+  inline def islandsNumbersigngreenClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngreenClusterIcons = "islands#greenClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigngreenClusterIcons]
+  
+  inline def islandsNumbersigninvertedBlackClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlackClusterIcons = "islands#invertedBlackClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlackClusterIcons]
+  
+  inline def islandsNumbersigninvertedBlueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlueClusterIcons = "islands#invertedBlueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBlueClusterIcons]
+  
+  inline def islandsNumbersigninvertedBrownClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBrownClusterIcons = "islands#invertedBrownClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedBrownClusterIcons]
+  
+  inline def islandsNumbersigninvertedDarkBlueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkBlueClusterIcons = "islands#invertedDarkBlueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkBlueClusterIcons]
+  
+  inline def islandsNumbersigninvertedDarkGreenClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkGreenClusterIcons = "islands#invertedDarkGreenClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkGreenClusterIcons]
+  
+  inline def islandsNumbersigninvertedDarkOrangeClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkOrangeClusterIcons = "islands#invertedDarkOrangeClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedDarkOrangeClusterIcons]
+  
+  inline def islandsNumbersigninvertedGrayClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGrayClusterIcons = "islands#invertedGrayClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGrayClusterIcons]
+  
+  inline def islandsNumbersigninvertedGreenClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGreenClusterIcons = "islands#invertedGreenClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedGreenClusterIcons]
+  
+  inline def islandsNumbersigninvertedLightBlueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedLightBlueClusterIcons = "islands#invertedLightBlueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedLightBlueClusterIcons]
+  
+  inline def islandsNumbersigninvertedNightClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedNightClusterIcons = "islands#invertedNightClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedNightClusterIcons]
+  
+  inline def islandsNumbersigninvertedOliveClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOliveClusterIcons = "islands#invertedOliveClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOliveClusterIcons]
+  
+  inline def islandsNumbersigninvertedOrangeClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOrangeClusterIcons = "islands#invertedOrangeClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedOrangeClusterIcons]
+  
+  inline def islandsNumbersigninvertedPinkClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedPinkClusterIcons = "islands#invertedPinkClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedPinkClusterIcons]
+  
+  inline def islandsNumbersigninvertedRedClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedRedClusterIcons = "islands#invertedRedClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedRedClusterIcons]
+  
+  inline def islandsNumbersigninvertedVioletClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedVioletClusterIcons = "islands#invertedVioletClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedVioletClusterIcons]
+  
+  inline def islandsNumbersigninvertedYellowClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedYellowClusterIcons = "islands#invertedYellowClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersigninvertedYellowClusterIcons]
+  
+  inline def islandsNumbersignlightBlueClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueClusterIcons = "islands#lightBlueClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignlightBlueClusterIcons]
+  
+  inline def islandsNumbersignnightClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignnightClusterIcons = "islands#nightClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignnightClusterIcons]
+  
+  inline def islandsNumbersignoliveClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignoliveClusterIcons = "islands#oliveClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignoliveClusterIcons]
+  
+  inline def islandsNumbersignorangeClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignorangeClusterIcons = "islands#orangeClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignorangeClusterIcons]
+  
+  inline def islandsNumbersignpinkClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignpinkClusterIcons = "islands#pinkClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignpinkClusterIcons]
+  
+  inline def islandsNumbersignredClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignredClusterIcons = "islands#redClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignredClusterIcons]
+  
+  inline def islandsNumbersignvioletClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignvioletClusterIcons = "islands#violetClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignvioletClusterIcons]
+  
+  inline def islandsNumbersignyellowClusterIcons: typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignyellowClusterIcons = "islands#yellowClusterIcons".asInstanceOf[typingsJapgolly.yandexMaps.yandexMapsStrings.islandsNumbersignyellowClusterIcons]
+}

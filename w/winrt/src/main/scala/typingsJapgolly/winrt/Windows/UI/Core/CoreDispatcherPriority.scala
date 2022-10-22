@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreDispatcherPriority extends js.Object
-
+sealed trait CoreDispatcherPriority extends StObject
 @JSGlobal("Windows.UI.Core.CoreDispatcherPriority")
 @js.native
-object CoreDispatcherPriority extends js.Object {
-  @js.native
-  sealed trait high extends CoreDispatcherPriority
+object CoreDispatcherPriority extends StObject {
   
   @js.native
-  sealed trait low extends CoreDispatcherPriority
+  sealed trait high
+    extends StObject
+       with CoreDispatcherPriority
   
   @js.native
-  sealed trait normal extends CoreDispatcherPriority
+  sealed trait low
+    extends StObject
+       with CoreDispatcherPriority
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreDispatcherPriority with Double] = js.native
-  /* 2 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 0 */ @js.native
-  object low extends TopLevel[low with Double]
-  
-  /* 1 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
+  @js.native
+  sealed trait normal
+    extends StObject
+       with CoreDispatcherPriority
 }
-

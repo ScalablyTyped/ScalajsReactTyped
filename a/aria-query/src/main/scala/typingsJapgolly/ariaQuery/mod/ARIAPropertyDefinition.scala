@@ -9,28 +9,38 @@ import typingsJapgolly.ariaQuery.ariaQueryStrings.string
 import typingsJapgolly.ariaQuery.ariaQueryStrings.token
 import typingsJapgolly.ariaQuery.ariaQueryStrings.tokenlist
 import typingsJapgolly.ariaQuery.ariaQueryStrings.tristate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ARIAPropertyDefinition extends js.Object {
+trait ARIAPropertyDefinition extends StObject {
+  
   var allowundefined: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate
-  var value: js.UndefOr[js.Array[String | Boolean]] = js.undefined
+  
+  var values: js.UndefOr[js.Array[String | Boolean]] = js.undefined
 }
-
 object ARIAPropertyDefinition {
-  @scala.inline
-  def apply(
-    `type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate,
-    allowundefined: js.UndefOr[Boolean] = js.undefined,
-    value: js.Array[String | Boolean] = null
-  ): ARIAPropertyDefinition = {
+  
+  inline def apply(`type`: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): ARIAPropertyDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowundefined)) __obj.updateDynamic("allowundefined")(allowundefined.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIAPropertyDefinition]
   }
+  
+  extension [Self <: ARIAPropertyDefinition](x: Self) {
+    
+    inline def setAllowundefined(value: Boolean): Self = StObject.set(x, "allowundefined", value.asInstanceOf[js.Any])
+    
+    inline def setAllowundefinedUndefined: Self = StObject.set(x, "allowundefined", js.undefined)
+    
+    inline def setType(value: string | id | idlist | integer | number | boolean | token | tokenlist | tristate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: js.Array[String | Boolean]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: (String | Boolean)*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

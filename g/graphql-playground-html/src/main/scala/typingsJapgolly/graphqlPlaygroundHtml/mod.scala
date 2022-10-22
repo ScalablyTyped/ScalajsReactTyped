@@ -1,13 +1,15 @@
 package typingsJapgolly.graphqlPlaygroundHtml
 
-import typingsJapgolly.graphqlPlaygroundHtml.renderPlaygroundPageMod.RenderPageOptions
+import typingsJapgolly.graphqlPlaygroundHtml.distRenderPlaygroundPageMod.RenderPageOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("graphql-playground-html", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def renderPlaygroundPage(options: RenderPageOptions): String = js.native
+object mod {
+  
+  @JSImport("graphql-playground-html", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def renderPlaygroundPage(options: RenderPageOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPlaygroundPage")(options.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

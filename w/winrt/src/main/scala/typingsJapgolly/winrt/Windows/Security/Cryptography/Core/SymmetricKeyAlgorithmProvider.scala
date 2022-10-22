@@ -1,25 +1,17 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
-@js.native
-class SymmetricKeyAlgorithmProvider () extends ISymmetricKeyAlgorithmProvider {
-  /* CompleteClass */
-  override var algorithmName: String = js.native
-  /* CompleteClass */
-  override var blockLength: Double = js.native
-  /* CompleteClass */
-  override def createSymmetricKey(keyMaterial: IBuffer): CryptographicKey = js.native
+trait SymmetricKeyAlgorithmProvider
+  extends StObject
+     with ISymmetricKeyAlgorithmProvider
+object SymmetricKeyAlgorithmProvider {
+  
+  inline def apply(algorithmName: String, blockLength: Double, createSymmetricKey: IBuffer => CryptographicKey): SymmetricKeyAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], blockLength = blockLength.asInstanceOf[js.Any], createSymmetricKey = js.Any.fromFunction1(createSymmetricKey))
+    __obj.asInstanceOf[SymmetricKeyAlgorithmProvider]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
-@js.native
-object SymmetricKeyAlgorithmProvider extends js.Object {
-  def openAlgorithm(algorithm: String): SymmetricKeyAlgorithmProvider = js.native
-}
-

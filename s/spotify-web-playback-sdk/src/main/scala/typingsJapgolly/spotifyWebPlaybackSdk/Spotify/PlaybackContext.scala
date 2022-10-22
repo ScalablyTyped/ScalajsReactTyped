@@ -1,20 +1,30 @@
 package typingsJapgolly.spotifyWebPlaybackSdk.Spotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaybackContext extends js.Object {
-  var metadata: js.Any
+trait PlaybackContext extends StObject {
+  
+  var metadata: PlaybackContextMetadata | Null
+  
   var uri: String | Null
 }
-
 object PlaybackContext {
-  @scala.inline
-  def apply(metadata: js.Any, uri: String = null): PlaybackContext = {
-    val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
+  
+  inline def apply(): PlaybackContext = {
+    val __obj = js.Dynamic.literal(metadata = null, uri = null)
     __obj.asInstanceOf[PlaybackContext]
   }
+  
+  extension [Self <: PlaybackContext](x: Self) {
+    
+    inline def setMetadata(value: PlaybackContextMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataNull: Self = StObject.set(x, "metadata", null)
+    
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
+  }
 }
-

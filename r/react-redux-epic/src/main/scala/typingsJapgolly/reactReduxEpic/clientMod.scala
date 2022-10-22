@@ -1,13 +1,15 @@
 package typingsJapgolly.reactReduxEpic
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-redux-epic/client", JSImport.Namespace)
-@js.native
-object clientMod extends js.Object {
-  def render(element: Element, container: org.scalajs.dom.raw.Element): js.Any = js.native
+object clientMod {
+  
+  @JSImport("react-redux-epic/client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def render(element: Element, container: org.scalajs.dom.Element): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

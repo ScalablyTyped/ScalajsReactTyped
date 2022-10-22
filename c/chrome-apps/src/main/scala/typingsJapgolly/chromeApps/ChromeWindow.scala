@@ -1,10 +1,10 @@
 package typingsJapgolly.chromeApps
 
-import typingsJapgolly.std.History_
-import typingsJapgolly.std.Location_
+import org.scalajs.dom.History
+import org.scalajs.dom.Location
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////
 // WEB APIs & Warnings //
@@ -20,25 +20,13 @@ import scala.scalajs.js.annotation._
   * @see[Docs]{@link https://developer.chrome.com/apps/api_other}
   */
 @js.native
-trait ChromeWindow extends js.Object {
+trait ChromeWindow extends StObject {
+  
   ///
   /// Other APIs
   ///
-  var AudioContext: AnonInstantiableAudioContext = js.native
-  /**
-    * ❗ window.history is not available in packaged apps. ❗
-    * Links open up with the system web browser.
-    */
-  val history: History_ = js.native
-  /**
-    * ❗ window.localStorage is not available in packaged apps. Use chrome.storage.local instead. ❗
-    */
-  // localStorage: typeof localStorage;
-  /**
-    * ❗ window.location is not available in packaged apps. ❗
-    * Links open up with the system web browser.
-    */
-  var location: Location_ = js.native
+  var AudioContext: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AudioContext */ Any = js.native
+  
   ///
   /// Disabled Web Features
   /// https://developer.chrome.com/apps/app_deprecated
@@ -48,12 +36,28 @@ trait ChromeWindow extends js.Object {
     * Work-around: Use a custom lightbox / popup.
     */
   def alert(): Unit = js.native
-  def alert(message: js.Any): Unit = js.native
+  def alert(message: Any): Unit = js.native
+  
   /**
     * ❗ confirm is not available in packaged apps. ❗
     * Work-around: Use a custom lightbox / popup.
     */
   def confirm(): Boolean = js.native
   def confirm(message: String): Boolean = js.native
+  
+  /**
+    * ❗ window.history is not available in packaged apps. ❗
+    * Links open up with the system web browser.
+    */
+  val history: History = js.native
+  
+  /**
+    * ❗ window.localStorage is not available in packaged apps. Use chrome.storage.local instead. ❗
+    */
+  // localStorage: typeof localStorage;
+  /**
+    * ❗ window.location is not available in packaged apps. ❗
+    * Links open up with the system web browser.
+    */
+  var location: Location = js.native
 }
-

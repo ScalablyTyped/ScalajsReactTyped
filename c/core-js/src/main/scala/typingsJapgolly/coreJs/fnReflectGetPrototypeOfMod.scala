@@ -1,12 +1,15 @@
 package typingsJapgolly.coreJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/reflect/get-prototype-of", JSImport.Namespace)
-@js.native
-object fnReflectGetPrototypeOfMod
-  extends TopLevel[js.Function1[/* target */ js.Any, js.Any]]
-
+object fnReflectGetPrototypeOfMod {
+  
+  /* was `typeof core.Reflect.getPrototypeOf` */
+  inline def apply(target: Any): Any = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  @JSImport("core-js/fn/reflect/get-prototype-of", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+}

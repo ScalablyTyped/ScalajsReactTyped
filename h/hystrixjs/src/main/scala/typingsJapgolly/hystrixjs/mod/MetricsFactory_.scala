@@ -2,28 +2,35 @@ package typingsJapgolly.hystrixjs.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetricsFactory_ extends js.Object {
+trait MetricsFactory_ extends StObject {
+  
   def getAllMetrics(): js.Array[CommandMetrics]
+  
   def getOrCreate(config: MetricsProperties): CommandMetrics
+  
   def resetCache(): Unit
 }
-
 object MetricsFactory_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getAllMetrics: CallbackTo[js.Array[CommandMetrics]],
-    getOrCreate: MetricsProperties => CallbackTo[CommandMetrics],
+    getOrCreate: MetricsProperties => CommandMetrics,
     resetCache: Callback
   ): MetricsFactory_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllMetrics")(getAllMetrics.toJsFn)
-    __obj.updateDynamic("getOrCreate")(js.Any.fromFunction1((t0: typingsJapgolly.hystrixjs.mod.MetricsProperties) => getOrCreate(t0).runNow()))
-    __obj.updateDynamic("resetCache")(resetCache.toJsFn)
+    val __obj = js.Dynamic.literal(getAllMetrics = getAllMetrics.toJsFn, getOrCreate = js.Any.fromFunction1(getOrCreate), resetCache = resetCache.toJsFn)
     __obj.asInstanceOf[MetricsFactory_]
   }
+  
+  extension [Self <: MetricsFactory_](x: Self) {
+    
+    inline def setGetAllMetrics(value: CallbackTo[js.Array[CommandMetrics]]): Self = StObject.set(x, "getAllMetrics", value.toJsFn)
+    
+    inline def setGetOrCreate(value: MetricsProperties => CommandMetrics): Self = StObject.set(x, "getOrCreate", js.Any.fromFunction1(value))
+    
+    inline def setResetCache(value: Callback): Self = StObject.set(x, "resetCache", value.toJsFn)
+  }
 }
-

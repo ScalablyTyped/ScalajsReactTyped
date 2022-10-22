@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjColumn used for scriptable list column.
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjColumn
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[/* nlobjColumn */ js.Any] {
+Instantiable0[Any] {
+  
   /**
     * add a URL parameter (optionally defined per row) to this column's URL.
     *
@@ -36,6 +38,7 @@ Instantiable0[/* nlobjColumn */ js.Any] {
     */
   def addParamToURL(param: String, value: String): Unit = js.native
   def addParamToURL(param: String, value: String, perRow: Boolean): Unit = js.native
+  
   /**
     * set the header name for this column.
     *
@@ -48,6 +51,7 @@ Instantiable0[/* nlobjColumn */ js.Any] {
     * @param label
     */
   def setLabel(label: String): Unit = js.native
+  
   /**
     * set the base URL (optionally defined per row) for this column.
     *
@@ -63,4 +67,3 @@ Instantiable0[/* nlobjColumn */ js.Any] {
     */
   def setURL(value: String, perRow: Boolean): Unit = js.native
 }
-

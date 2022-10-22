@@ -1,24 +1,40 @@
 package typingsJapgolly.webidl2.mod
 
 import typingsJapgolly.webidl2.webidl2Strings.constructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstructorMemberType extends IDLInterfaceMemberType {
+trait ConstructorMemberType
+  extends StObject
+     with AbstractBase
+     with IDLInterfaceMemberType {
+  
   /** An array of arguments for the constructor operation. */
   var arguments: js.Array[Argument]
-  /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute]
-  var `type`: constructor
+  
+  @JSName("parent")
+  var parent_ConstructorMemberType: InterfaceType
+  
+  @JSName("type")
+  var type_ConstructorMemberType: constructor
 }
-
 object ConstructorMemberType {
-  @scala.inline
-  def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], `type`: constructor): ConstructorMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): ConstructorMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("constructor")
     __obj.asInstanceOf[ConstructorMemberType]
   }
+  
+  extension [Self <: ConstructorMemberType](x: Self) {
+    
+    inline def setArguments(value: js.Array[Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentsVarargs(value: Argument*): Self = StObject.set(x, "arguments", js.Array(value*))
+    
+    inline def setParent(value: InterfaceType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: constructor): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

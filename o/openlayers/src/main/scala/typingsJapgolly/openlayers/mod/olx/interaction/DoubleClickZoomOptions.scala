@@ -1,21 +1,30 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DoubleClickZoomOptions extends js.Object {
+trait DoubleClickZoomOptions extends StObject {
+  
   var delta: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
 }
-
 object DoubleClickZoomOptions {
-  @scala.inline
-  def apply(delta: Int | Double = null, duration: Int | Double = null): DoubleClickZoomOptions = {
+  
+  inline def apply(): DoubleClickZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoubleClickZoomOptions]
   }
+  
+  extension [Self <: DoubleClickZoomOptions](x: Self) {
+    
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+  }
 }
-

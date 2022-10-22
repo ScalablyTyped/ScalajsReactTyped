@@ -1,57 +1,43 @@
 package typingsJapgolly.reactElemental.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactElemental.mod.SpacingProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Spacing {
-  def apply(
-    bottom: js.UndefOr[Boolean] = js.undefined,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    left: js.UndefOr[Boolean] = js.undefined,
-    padding: js.UndefOr[Boolean] = js.undefined,
-    right: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    style: CSSProperties = null,
-    top: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedSimple[
-    SpacingProps, 
-    MountedWithRawType[SpacingProps, js.Object, RawMounted[SpacingProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottom)) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(padding)) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(right)) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactElemental.mod.SpacingProps, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactElemental.mod.SpacingProps])
-  }
-  @JSImport("react-elemental", "Spacing")
+  @JSImport("react-elemental", "Spacing_")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def bottom(value: Boolean): this.type = set("bottom", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def left(value: Boolean): this.type = set("left", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: Boolean): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def right(value: Boolean): this.type = set("right", value.asInstanceOf[js.Any])
+    
+    inline def size(value: String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def top(value: Boolean): this.type = set("top", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Spacing.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SpacingProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

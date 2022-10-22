@@ -1,27 +1,35 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Payment Request API interface is returned after a user selects a payment method and approves a payment request. */
+/**
+  * This Payment Request API interface is returned after a user selects a payment method and approves a payment request.
+  * Available only in secure contexts.
+  */
 @js.native
-trait PaymentResponse extends js.Object {
-  val details: js.Any = js.native
-  val methodName: java.lang.String = js.native
-  val payerEmail: java.lang.String | Null = js.native
-  val payerName: java.lang.String | Null = js.native
-  val payerPhone: java.lang.String | Null = js.native
-  val requestId: java.lang.String = js.native
-  val shippingAddress: PaymentAddress | Null = js.native
-  val shippingOption: java.lang.String | Null = js.native
+trait PaymentResponse
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   def complete(): js.Promise[Unit] = js.native
   def complete(result: PaymentComplete): js.Promise[Unit] = js.native
-  def toJSON(): js.Any = js.native
+  
+  /* standard dom */
+  val details: Any = js.native
+  
+  /* standard dom */
+  val methodName: java.lang.String = js.native
+  
+  /* standard dom */
+  val requestId: java.lang.String = js.native
+  
+  /* standard dom */
+  def retry(): js.Promise[Unit] = js.native
+  def retry(errorFields: PaymentValidationErrors): js.Promise[Unit] = js.native
+  
+  /* standard dom */
+  def toJSON(): Any = js.native
 }
-
-@JSGlobal("PaymentResponse")
-@js.native
-object PaymentResponse extends Instantiable0[PaymentResponse]
-

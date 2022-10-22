@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkTypes extends js.Object
-
+sealed trait NetworkTypes extends StObject
 @JSGlobal("Windows.Networking.Connectivity.NetworkTypes")
 @js.native
-object NetworkTypes extends js.Object {
-  @js.native
-  sealed trait internet extends NetworkTypes
+object NetworkTypes extends StObject {
   
   @js.native
-  sealed trait none extends NetworkTypes
+  sealed trait internet
+    extends StObject
+       with NetworkTypes
   
   @js.native
-  sealed trait privateNetwork extends NetworkTypes
+  sealed trait none
+    extends StObject
+       with NetworkTypes
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkTypes with Double] = js.native
-  /* 1 */ @js.native
-  object internet extends TopLevel[internet with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object privateNetwork extends TopLevel[privateNetwork with Double]
-  
+  @js.native
+  sealed trait privateNetwork
+    extends StObject
+       with NetworkTypes
 }
-

@@ -1,34 +1,21 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Mipmap filtering modes that are supported by pixi.
-  *
-  * The {@link PIXI.settings.MIPMAP_TEXTURES} affects default texture filtering.
-  * Mipmaps are generated for a baseTexture if its `mipmap` field is `ON`,
-  * or its `POW2` and texture dimensions are powers of 2.
-  * Due to platform restriction, `ON` option will work like `POW2` for webgl-1.
-  *
-  * This property only affects WebGL.
-  *
-  * @name MIPMAP_MODES
-  * @memberof PIXI
-  * @static
-  * @enum {number}
-  * @property {number} OFF - No mipmaps
-  * @property {number} POW2 - Generate mipmaps if texture dimensions are pow2
-  * @property {number} ON - Always generate mipmaps
-  */
 @JSImport("pixi.js", "MIPMAP_MODES")
 @js.native
-object MIPMAP_MODES extends js.Object {
-  /* 0 */ val OFF: typingsJapgolly.pixiJs.PIXI.MIPMAP_MODES.OFF with Double = js.native
-  /* 2 */ val ON: typingsJapgolly.pixiJs.PIXI.MIPMAP_MODES.ON with Double = js.native
-  /* 1 */ val POW2: typingsJapgolly.pixiJs.PIXI.MIPMAP_MODES.POW2 with Double = js.native
+object MIPMAP_MODES extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.pixiJs.PIXI.MIPMAP_MODES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.pixiConstants.mod.MIPMAP_MODES & Double] = js.native
+  
+  /* 0 */ val OFF: typingsJapgolly.pixiConstants.mod.MIPMAP_MODES.OFF & Double = js.native
+  
+  /* 2 */ val ON: typingsJapgolly.pixiConstants.mod.MIPMAP_MODES.ON & Double = js.native
+  
+  /* 3 */ val ON_MANUAL: typingsJapgolly.pixiConstants.mod.MIPMAP_MODES.ON_MANUAL & Double = js.native
+  
+  /* 1 */ val POW2: typingsJapgolly.pixiConstants.mod.MIPMAP_MODES.POW2 & Double = js.native
 }
-

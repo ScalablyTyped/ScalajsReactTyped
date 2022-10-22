@@ -1,64 +1,70 @@
 package typingsJapgolly.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webAnimationsJsStrings {
-  @js.native
-  sealed trait alternate extends AnimationEffectTimingPlaybackDirection
   
   @js.native
-  sealed trait `alternate-reverse` extends AnimationEffectTimingPlaybackDirection
+  sealed trait alternate
+    extends StObject
+       with AnimationEffectTimingPlaybackDirection
+  inline def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
-  sealed trait auto extends AnimationEffectTimingFillMode
+  sealed trait `alternate-reverse`
+    extends StObject
+       with AnimationEffectTimingPlaybackDirection
+  inline def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
   
   @js.native
-  sealed trait backwards extends AnimationEffectTimingFillMode
+  sealed trait auto
+    extends StObject
+       with AnimationEffectTimingFillMode
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait both extends AnimationEffectTimingFillMode
+  sealed trait backwards
+    extends StObject
+       with AnimationEffectTimingFillMode
+  inline def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait both
+    extends StObject
+       with AnimationEffectTimingFillMode
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait forwards extends AnimationEffectTimingFillMode
+  sealed trait finish extends StObject
+  inline def finish: finish = "finish".asInstanceOf[finish]
   
   @js.native
-  sealed trait none extends AnimationEffectTimingFillMode
+  sealed trait forwards
+    extends StObject
+       with AnimationEffectTimingFillMode
+  inline def forwards: forwards = "forwards".asInstanceOf[forwards]
   
   @js.native
-  sealed trait normal extends AnimationEffectTimingPlaybackDirection
+  sealed trait none
+    extends StObject
+       with AnimationEffectTimingFillMode
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait reverse extends AnimationEffectTimingPlaybackDirection
+  sealed trait normal
+    extends StObject
+       with AnimationEffectTimingPlaybackDirection
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
-  @scala.inline
-  def alternate: alternate = "alternate".asInstanceOf[alternate]
-  @scala.inline
-  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def backwards: backwards = "backwards".asInstanceOf[backwards]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def finish: finish = "finish".asInstanceOf[finish]
-  @scala.inline
-  def forwards: forwards = "forwards".asInstanceOf[forwards]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
+  @js.native
+  sealed trait reverse
+    extends StObject
+       with AnimationEffectTimingPlaybackDirection
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
 }
-

@@ -1,46 +1,63 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify value groups in pivot tables.
   */
-trait PivotValue extends js.Object {
+trait PivotValue extends StObject {
+  
   def getDisplayType(): PivotValueDisplayType
+  
   def getFormula(): String | Null
+  
   def getPivotTable(): PivotTable
+  
   def getSummarizedBy(): PivotTableSummarizeFunction
+  
   def setDisplayName(name: String): PivotValue
+  
   def setFormula(formula: String): PivotValue
+  
   def showAs(displayType: PivotValueDisplayType): PivotValue
+  
   def summarizeBy(summarizeFunction: PivotTableSummarizeFunction): PivotValue
 }
-
 object PivotValue {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getDisplayType: CallbackTo[PivotValueDisplayType],
     getFormula: CallbackTo[String | Null],
     getPivotTable: CallbackTo[PivotTable],
     getSummarizedBy: CallbackTo[PivotTableSummarizeFunction],
-    setDisplayName: String => CallbackTo[PivotValue],
-    setFormula: String => CallbackTo[PivotValue],
-    showAs: PivotValueDisplayType => CallbackTo[PivotValue],
-    summarizeBy: PivotTableSummarizeFunction => CallbackTo[PivotValue]
+    setDisplayName: String => PivotValue,
+    setFormula: String => PivotValue,
+    showAs: PivotValueDisplayType => PivotValue,
+    summarizeBy: PivotTableSummarizeFunction => PivotValue
   ): PivotValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDisplayType")(getDisplayType.toJsFn)
-    __obj.updateDynamic("getFormula")(getFormula.toJsFn)
-    __obj.updateDynamic("getPivotTable")(getPivotTable.toJsFn)
-    __obj.updateDynamic("getSummarizedBy")(getSummarizedBy.toJsFn)
-    __obj.updateDynamic("setDisplayName")(js.Any.fromFunction1((t0: java.lang.String) => setDisplayName(t0).runNow()))
-    __obj.updateDynamic("setFormula")(js.Any.fromFunction1((t0: java.lang.String) => setFormula(t0).runNow()))
-    __obj.updateDynamic("showAs")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.PivotValueDisplayType) => showAs(t0).runNow()))
-    __obj.updateDynamic("summarizeBy")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet.PivotTableSummarizeFunction) => summarizeBy(t0).runNow()))
+    val __obj = js.Dynamic.literal(getDisplayType = getDisplayType.toJsFn, getFormula = getFormula.toJsFn, getPivotTable = getPivotTable.toJsFn, getSummarizedBy = getSummarizedBy.toJsFn, setDisplayName = js.Any.fromFunction1(setDisplayName), setFormula = js.Any.fromFunction1(setFormula), showAs = js.Any.fromFunction1(showAs), summarizeBy = js.Any.fromFunction1(summarizeBy))
     __obj.asInstanceOf[PivotValue]
   }
+  
+  extension [Self <: PivotValue](x: Self) {
+    
+    inline def setGetDisplayType(value: CallbackTo[PivotValueDisplayType]): Self = StObject.set(x, "getDisplayType", value.toJsFn)
+    
+    inline def setGetFormula(value: CallbackTo[String | Null]): Self = StObject.set(x, "getFormula", value.toJsFn)
+    
+    inline def setGetPivotTable(value: CallbackTo[PivotTable]): Self = StObject.set(x, "getPivotTable", value.toJsFn)
+    
+    inline def setGetSummarizedBy(value: CallbackTo[PivotTableSummarizeFunction]): Self = StObject.set(x, "getSummarizedBy", value.toJsFn)
+    
+    inline def setSetDisplayName(value: String => PivotValue): Self = StObject.set(x, "setDisplayName", js.Any.fromFunction1(value))
+    
+    inline def setSetFormula(value: String => PivotValue): Self = StObject.set(x, "setFormula", js.Any.fromFunction1(value))
+    
+    inline def setShowAs(value: PivotValueDisplayType => PivotValue): Self = StObject.set(x, "showAs", js.Any.fromFunction1(value))
+    
+    inline def setSummarizeBy(value: PivotTableSummarizeFunction => PivotValue): Self = StObject.set(x, "summarizeBy", js.Any.fromFunction1(value))
+  }
 }
-

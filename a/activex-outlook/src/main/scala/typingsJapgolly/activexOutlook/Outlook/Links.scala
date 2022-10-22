@@ -1,21 +1,67 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.Links")
-@js.native
-class Links protected () extends js.Object {
-  val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val Count: Double = js.native
-  @JSName("Outlook.Links_typekey")
-  var OutlookDotLinks_typekey: Links = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
-  def Add(Item: js.Any): Link = js.native
-  def Item(Index: js.Any): Link = js.native
-  def Remove(Index: js.Any): Unit = js.native
+trait Links extends StObject {
+  
+  def Add(Item: Any): Link
+  
+  val Application: typingsJapgolly.activexOutlook.Outlook.Application
+  
+  val Class: OlObjectClass
+  
+  val Count: Double
+  
+  def Item(Index: Any): Link
+  
+  /* private */ @JSName("Outlook.Links_typekey")
+  var OutlookDotLinks_typekey: Links
+  
+  val Parent: Any
+  
+  def Remove(Index: Any): Unit
+  
+  val Session: NameSpace
 }
-
+object Links {
+  
+  inline def apply(
+    Add: Any => Link,
+    Application: Application,
+    Class: OlObjectClass,
+    Count: Double,
+    Item: Any => Link,
+    OutlookDotLinks_typekey: Links,
+    Parent: Any,
+    Remove: Any => Callback,
+    Session: NameSpace
+  ): Links = {
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Remove = js.Any.fromFunction1((t0: Any) => Remove(t0).runNow()), Session = Session.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.Links_typekey")(OutlookDotLinks_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Links]
+  }
+  
+  extension [Self <: Links](x: Self) {
+    
+    inline def setAdd(value: Any => Link): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Any => Link): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setOutlookDotLinks_typekey(value: Links): Self = StObject.set(x, "Outlook.Links_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRemove(value: Any => Callback): Self = StObject.set(x, "Remove", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+  }
+}

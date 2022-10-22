@@ -1,50 +1,88 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AndroidMinimumOperatingSystem extends js.Object {
+trait AndroidMinimumOperatingSystem extends StObject {
+  
+  // Version 10.0 or later.
+  var v10_0: js.UndefOr[Boolean] = js.undefined
+  
+  // Version 11.0 or later.
+  var v11_0: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.0 or later.
   var v4_0: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.0.3 or later.
   var v4_0_3: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.1 or later.
   var v4_1: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.2 or later.
   var v4_2: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.3 or later.
   var v4_3: js.UndefOr[Boolean] = js.undefined
+  
   // Version 4.4 or later.
   var v4_4: js.UndefOr[Boolean] = js.undefined
+  
   // Version 5.0 or later.
   var v5_0: js.UndefOr[Boolean] = js.undefined
+  
   // Version 5.1 or later.
   var v5_1: js.UndefOr[Boolean] = js.undefined
 }
-
 object AndroidMinimumOperatingSystem {
-  @scala.inline
-  def apply(
-    v4_0: js.UndefOr[Boolean] = js.undefined,
-    v4_0_3: js.UndefOr[Boolean] = js.undefined,
-    v4_1: js.UndefOr[Boolean] = js.undefined,
-    v4_2: js.UndefOr[Boolean] = js.undefined,
-    v4_3: js.UndefOr[Boolean] = js.undefined,
-    v4_4: js.UndefOr[Boolean] = js.undefined,
-    v5_0: js.UndefOr[Boolean] = js.undefined,
-    v5_1: js.UndefOr[Boolean] = js.undefined
-  ): AndroidMinimumOperatingSystem = {
+  
+  inline def apply(): AndroidMinimumOperatingSystem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(v4_0)) __obj.updateDynamic("v4_0")(v4_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_0_3)) __obj.updateDynamic("v4_0_3")(v4_0_3.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_1)) __obj.updateDynamic("v4_1")(v4_1.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_2)) __obj.updateDynamic("v4_2")(v4_2.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_3)) __obj.updateDynamic("v4_3")(v4_3.asInstanceOf[js.Any])
-    if (!js.isUndefined(v4_4)) __obj.updateDynamic("v4_4")(v4_4.asInstanceOf[js.Any])
-    if (!js.isUndefined(v5_0)) __obj.updateDynamic("v5_0")(v5_0.asInstanceOf[js.Any])
-    if (!js.isUndefined(v5_1)) __obj.updateDynamic("v5_1")(v5_1.asInstanceOf[js.Any])
     __obj.asInstanceOf[AndroidMinimumOperatingSystem]
   }
+  
+  extension [Self <: AndroidMinimumOperatingSystem](x: Self) {
+    
+    inline def setV10_0(value: Boolean): Self = StObject.set(x, "v10_0", value.asInstanceOf[js.Any])
+    
+    inline def setV10_0Undefined: Self = StObject.set(x, "v10_0", js.undefined)
+    
+    inline def setV11_0(value: Boolean): Self = StObject.set(x, "v11_0", value.asInstanceOf[js.Any])
+    
+    inline def setV11_0Undefined: Self = StObject.set(x, "v11_0", js.undefined)
+    
+    inline def setV4_0(value: Boolean): Self = StObject.set(x, "v4_0", value.asInstanceOf[js.Any])
+    
+    inline def setV4_0Undefined: Self = StObject.set(x, "v4_0", js.undefined)
+    
+    inline def setV4_0_3(value: Boolean): Self = StObject.set(x, "v4_0_3", value.asInstanceOf[js.Any])
+    
+    inline def setV4_0_3Undefined: Self = StObject.set(x, "v4_0_3", js.undefined)
+    
+    inline def setV4_1(value: Boolean): Self = StObject.set(x, "v4_1", value.asInstanceOf[js.Any])
+    
+    inline def setV4_1Undefined: Self = StObject.set(x, "v4_1", js.undefined)
+    
+    inline def setV4_2(value: Boolean): Self = StObject.set(x, "v4_2", value.asInstanceOf[js.Any])
+    
+    inline def setV4_2Undefined: Self = StObject.set(x, "v4_2", js.undefined)
+    
+    inline def setV4_3(value: Boolean): Self = StObject.set(x, "v4_3", value.asInstanceOf[js.Any])
+    
+    inline def setV4_3Undefined: Self = StObject.set(x, "v4_3", js.undefined)
+    
+    inline def setV4_4(value: Boolean): Self = StObject.set(x, "v4_4", value.asInstanceOf[js.Any])
+    
+    inline def setV4_4Undefined: Self = StObject.set(x, "v4_4", js.undefined)
+    
+    inline def setV5_0(value: Boolean): Self = StObject.set(x, "v5_0", value.asInstanceOf[js.Any])
+    
+    inline def setV5_0Undefined: Self = StObject.set(x, "v5_0", js.undefined)
+    
+    inline def setV5_1(value: Boolean): Self = StObject.set(x, "v5_1", value.asInstanceOf[js.Any])
+    
+    inline def setV5_1Undefined: Self = StObject.set(x, "v5_1", js.undefined)
+  }
 }
-

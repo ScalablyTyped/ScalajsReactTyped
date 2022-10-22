@@ -1,42 +1,46 @@
 package typingsJapgolly.reactIntl.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ProviderProps
-import typingsJapgolly.reactIntl.typesMod.IntlShape
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.PropsWithChildren
+import typingsJapgolly.reactIntl.libSrcComponentsProviderMod.default
+import typingsJapgolly.reactIntl.libSrcTypesMod.IntlConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Provider {
-  def apply(
-    value: IntlShape,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ProviderProps[IntlShape], 
-    MountedWithRawType[ProviderProps[IntlShape], js.Object, RawMounted[ProviderProps[IntlShape], js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.react.mod.ProviderProps[typingsJapgolly.reactIntl.typesMod.IntlShape], 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.react.mod.ProviderProps[typingsJapgolly.reactIntl.typesMod.IntlShape]])(children: _*)
-  }
-  @JSImport("react-intl/lib/components/injectIntl", "Provider")
+  @JSImport("react-intl/lib/src/components/provider", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def defaultFormats(value: Any): this.type = set("defaultFormats", value.asInstanceOf[js.Any])
+    
+    inline def defaultLocale(value: Any): this.type = set("defaultLocale", value.asInstanceOf[js.Any])
+    
+    inline def fallbackOnEmptyString(value: Any): this.type = set("fallbackOnEmptyString", value.asInstanceOf[js.Any])
+    
+    inline def formats(value: Any): this.type = set("formats", value.asInstanceOf[js.Any])
+    
+    inline def messages(value: Any): this.type = set("messages", value.asInstanceOf[js.Any])
+    
+    inline def onError(value: Any): this.type = set("onError", value.asInstanceOf[js.Any])
+    
+    inline def textComponent(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118, starting with typingsJapgolly.react.mod.ComponentType[js.Object], typingsJapgolly.reactIntl.reactIntlStrings.a, typingsJapgolly.reactIntl.reactIntlStrings.abbr */ Any
+    ): this.type = set("textComponent", value.asInstanceOf[js.Any])
+    
+    inline def timeZone(value: Any): this.type = set("timeZone", value.asInstanceOf[js.Any])
+    
+    inline def wrapRichTextChunksInFragment(value: Boolean): this.type = set("wrapRichTextChunksInFragment", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Provider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsWithChildren[IntlConfig]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.asc
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.desc
 */
-trait SortOrder extends js.Object
-
+trait SortOrder extends StObject
 object SortOrder {
-  @scala.inline
-  def asc: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.asc = this.cast("asc")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.desc = this.cast("desc")
+  
+  inline def asc: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.asc = "asc".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.asc]
+  
+  inline def desc: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.desc = "desc".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.desc]
 }
-

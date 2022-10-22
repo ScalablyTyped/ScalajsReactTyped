@@ -1,14 +1,14 @@
 package typingsJapgolly.awsSdkHashBlobBrowser
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.awsSdkTypes.cryptoMod.StreamHasher
+import org.scalajs.dom.Blob
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.StreamHasher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/hash-blob-browser", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val calculateSha256: StreamHasher[Blob] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/hash-blob-browser", "blobHasher")
+  @js.native
+  val blobHasher: StreamHasher[Blob] = js.native
 }
-

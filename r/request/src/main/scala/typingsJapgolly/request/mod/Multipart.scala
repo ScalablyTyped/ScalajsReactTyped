@@ -1,22 +1,33 @@
 package typingsJapgolly.request.mod
 
-import typingsJapgolly.request.AnonBody
+import typingsJapgolly.request.anon.Body
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Multipart extends js.Object {
+trait Multipart extends StObject {
+  
   var chunked: js.UndefOr[Boolean] = js.undefined
-  var data: js.UndefOr[js.Array[AnonBody]] = js.undefined
+  
+  var data: js.UndefOr[js.Array[Body]] = js.undefined
 }
-
 object Multipart {
-  @scala.inline
-  def apply(chunked: js.UndefOr[Boolean] = js.undefined, data: js.Array[AnonBody] = null): Multipart = {
+  
+  inline def apply(): Multipart = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(chunked)) __obj.updateDynamic("chunked")(chunked.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Multipart]
   }
+  
+  extension [Self <: Multipart](x: Self) {
+    
+    inline def setChunked(value: Boolean): Self = StObject.set(x, "chunked", value.asInstanceOf[js.Any])
+    
+    inline def setChunkedUndefined: Self = StObject.set(x, "chunked", js.undefined)
+    
+    inline def setData(value: js.Array[Body]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Body*): Self = StObject.set(x, "data", js.Array(value*))
+  }
 }
-

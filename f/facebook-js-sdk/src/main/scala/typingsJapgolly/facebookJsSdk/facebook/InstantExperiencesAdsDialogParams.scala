@@ -2,35 +2,44 @@ package typingsJapgolly.facebookJsSdk.facebook
 
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.canvas_editor
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InstantExperiencesAdsDialogParams extends DialogParams {
+trait InstantExperiencesAdsDialogParams
+  extends StObject
+     with DialogParams {
+  
   var business_id: String
+  
   var canvas_id: js.UndefOr[String] = js.undefined
+  
   @JSName("display")
   var display_InstantExperiencesAdsDialogParams: popup
+  
   var method: canvas_editor
+  
   var page_id: String
 }
-
 object InstantExperiencesAdsDialogParams {
-  @scala.inline
-  def apply(
-    business_id: String,
-    display: popup,
-    method: canvas_editor,
-    page_id: String,
-    app_id: String = null,
-    canvas_id: String = null,
-    redirect_uri: String = null
-  ): InstantExperiencesAdsDialogParams = {
-    val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (canvas_id != null) __obj.updateDynamic("canvas_id")(canvas_id.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+  
+  inline def apply(business_id: String, page_id: String): InstantExperiencesAdsDialogParams = {
+    val __obj = js.Dynamic.literal(business_id = business_id.asInstanceOf[js.Any], display = "popup", method = "canvas_editor", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstantExperiencesAdsDialogParams]
   }
+  
+  extension [Self <: InstantExperiencesAdsDialogParams](x: Self) {
+    
+    inline def setBusiness_id(value: String): Self = StObject.set(x, "business_id", value.asInstanceOf[js.Any])
+    
+    inline def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    
+    inline def setCanvas_idUndefined: Self = StObject.set(x, "canvas_id", js.undefined)
+    
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: canvas_editor): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
+  }
 }
-

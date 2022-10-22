@@ -1,39 +1,39 @@
 package typingsJapgolly.estree.mod
 
 import typingsJapgolly.estree.estreeBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UnaryExpression
-  extends BaseNode
-     with Expression {
+  extends StObject
+     with BaseNode {
+  
   var argument: Expression
+  
   var operator: UnaryOperator
+  
   var prefix: `true`
+  
   @JSName("type")
   var type_UnaryExpression: typingsJapgolly.estree.estreeStrings.UnaryExpression
 }
-
 object UnaryExpression {
-  @scala.inline
-  def apply(
-    argument: Expression,
-    operator: UnaryOperator,
-    prefix: `true`,
-    `type`: typingsJapgolly.estree.estreeStrings.UnaryExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): UnaryExpression = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(argument: Expression, operator: UnaryOperator): UnaryExpression = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = true)
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[UnaryExpression]
   }
+  
+  extension [Self <: UnaryExpression](x: Self) {
+    
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setOperator(value: UnaryOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setPrefix(value: `true`): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.UnaryExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

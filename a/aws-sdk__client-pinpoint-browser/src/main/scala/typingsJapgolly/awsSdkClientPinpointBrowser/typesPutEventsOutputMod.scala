@@ -1,27 +1,41 @@
 package typingsJapgolly.awsSdkClientPinpointBrowser
 
-import typingsJapgolly.awsSdkClientPinpointBrowser.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientPinpointBrowser.typesEventsResponseMod.UnmarshalledEventsResponse
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientPinpointBrowser.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-pinpoint-browser/types/PutEventsOutput", JSImport.Namespace)
-@js.native
-object typesPutEventsOutputMod extends js.Object {
-  @js.native
-  trait PutEventsOutput extends OutputTypesUnion {
+object typesPutEventsOutputMod {
+  
+  trait PutEventsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * Custom messages associated with events.
       */
-    var EventsResponse: UnmarshalledEventsResponse = js.native
+    var EventsResponse: UnmarshalledEventsResponse
   }
-  
+  object PutEventsOutput {
+    
+    inline def apply($metadata: ResponseMetadata, EventsResponse: UnmarshalledEventsResponse): PutEventsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EventsResponse = EventsResponse.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutEventsOutput]
+    }
+    
+    extension [Self <: PutEventsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setEventsResponse(value: UnmarshalledEventsResponse): Self = StObject.set(x, "EventsResponse", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

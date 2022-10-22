@@ -1,26 +1,31 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FlowStart
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
-  var node: js.UndefOr[FunctionExpression | ArrowFunction | MethodDeclaration] = js.undefined
+  
+  var node: js.UndefOr[
+    FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration
+  ] = js.undefined
 }
-
 object FlowStart {
-  @scala.inline
-  def apply(
-    flags: FlowFlags,
-    id: Int | Double = null,
-    node: FunctionExpression | ArrowFunction | MethodDeclaration = null
-  ): FlowStart = {
+  
+  inline def apply(flags: FlowFlags): FlowStart = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlowStart]
   }
+  
+  extension [Self <: FlowStart](x: Self) {
+    
+    inline def setNode(
+      value: FunctionExpression | ArrowFunction | MethodDeclaration | GetAccessorDeclaration | SetAccessorDeclaration
+    ): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+  }
 }
-

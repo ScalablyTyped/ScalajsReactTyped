@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReverseGeocodingRequest extends js.Object {
+trait ReverseGeocodingRequest extends StObject {
+  
   /**
     * The language in which to return results.
     *  - Google often updates the supported languages, so this list may not be exhaustive.
@@ -17,8 +18,10 @@ trait ReverseGeocodingRequest extends js.Object {
     *  - If a name is not available in the preferred language, the geocoder uses the closest match.
     */
   var language: js.UndefOr[Language] = js.undefined
+  
   /** The latitude and longitude values specifying the location for which you wish to obtain the closest, human-readable address. */
   var latlng: js.UndefOr[LatLng] = js.undefined
+  
   /**
     * A filter of one or more location types, separated by a pipe (`|`).
     * If the parameter contains multiple location types, the API returns all addresses that match any of the types.
@@ -28,6 +31,7 @@ trait ReverseGeocodingRequest extends js.Object {
     * Note: This parameter is available only for requests that include an API key or a client ID.
     */
   var location_type: js.UndefOr[ReverseGeocodingLocationType] = js.undefined
+  
   /**
     * The place ID of the place for which you wish to obtain the human-readable address.
     * The place ID is a unique identifier that can be used with other Google APIs.
@@ -35,6 +39,7 @@ trait ReverseGeocodingRequest extends js.Object {
     * The place ID may only be specified if the request includes an API key or a Google Maps APIs Premium Plan client ID.
     */
   var place_id: js.UndefOr[String] = js.undefined
+  
   /**
     * A filter of one or more address types, separated by a pipe (`|`).
     * If the parameter contains multiple address types, the API returns all addresses that match any of the types.
@@ -45,23 +50,33 @@ trait ReverseGeocodingRequest extends js.Object {
     */
   var result_type: js.UndefOr[AddressType] = js.undefined
 }
-
 object ReverseGeocodingRequest {
-  @scala.inline
-  def apply(
-    language: Language = null,
-    latlng: LatLng = null,
-    location_type: ReverseGeocodingLocationType = null,
-    place_id: String = null,
-    result_type: AddressType = null
-  ): ReverseGeocodingRequest = {
+  
+  inline def apply(): ReverseGeocodingRequest = {
     val __obj = js.Dynamic.literal()
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (latlng != null) __obj.updateDynamic("latlng")(latlng.asInstanceOf[js.Any])
-    if (location_type != null) __obj.updateDynamic("location_type")(location_type.asInstanceOf[js.Any])
-    if (place_id != null) __obj.updateDynamic("place_id")(place_id.asInstanceOf[js.Any])
-    if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReverseGeocodingRequest]
   }
+  
+  extension [Self <: ReverseGeocodingRequest](x: Self) {
+    
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLatlng(value: LatLng): Self = StObject.set(x, "latlng", value.asInstanceOf[js.Any])
+    
+    inline def setLatlngUndefined: Self = StObject.set(x, "latlng", js.undefined)
+    
+    inline def setLocation_type(value: ReverseGeocodingLocationType): Self = StObject.set(x, "location_type", value.asInstanceOf[js.Any])
+    
+    inline def setLocation_typeUndefined: Self = StObject.set(x, "location_type", js.undefined)
+    
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    
+    inline def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
+    
+    inline def setResult_type(value: AddressType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
+    
+    inline def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
+  }
 }
-

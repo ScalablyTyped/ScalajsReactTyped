@@ -1,10 +1,11 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CloseConnectionOptions extends js.Object {
+trait CloseConnectionOptions extends StObject {
+  
   /**
     * If drop is false, then the connection is returned to the pool for reuse.
     *
@@ -14,13 +15,15 @@ trait CloseConnectionOptions extends js.Object {
     */
   var drop: Boolean
 }
-
 object CloseConnectionOptions {
-  @scala.inline
-  def apply(drop: Boolean): CloseConnectionOptions = {
-    val __obj = js.Dynamic.literal(drop = drop.asInstanceOf[js.Any])
   
+  inline def apply(drop: Boolean): CloseConnectionOptions = {
+    val __obj = js.Dynamic.literal(drop = drop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseConnectionOptions]
   }
+  
+  extension [Self <: CloseConnectionOptions](x: Self) {
+    
+    inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,43 +1,161 @@
 package typingsJapgolly.activexExcel.Excel
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.Databar")
-@js.native
-class Databar protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+trait Databar extends StObject {
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application
+  
+  def AppliesTo(Address: String): Range
+  def AppliesTo(RowIndex: Double): Range
+  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("AppliesTo")
-  val AppliesTo_Original: Range = js.native
-  val AxisColor: FormatColor = js.native
-  var AxisPosition: XlDataBarAxisPosition = js.native
-  val BarBorder: DataBarBorder = js.native
-  val BarColor: FormatColor = js.native
-  var BarFillType: XlDataBarFillType = js.native
-  val Creator: XlCreator = js.native
-  var Direction: Double = js.native
-  @JSName("Excel.Databar_typekey")
-  var ExcelDotDatabar_typekey: Databar = js.native
-  var Formula: String = js.native
-  val MaxPoint: ConditionValue = js.native
-  val MinPoint: ConditionValue = js.native
-  val NegativeBarFormat: typingsJapgolly.activexExcel.Excel.NegativeBarFormat = js.native
-  val PTCondition: Boolean = js.native
-  val Parent: js.Any = js.native
-  var PercentMax: Double = js.native
-  var PercentMin: Double = js.native
-  var Priority: Double = js.native
-  var ScopeType: XlPivotConditionScope = js.native
-  var ShowValue: Boolean = js.native
-  val StopIfTrue: Boolean = js.native
-  val Type: Double = js.native
-  def AppliesTo(Address: String): Range = js.native
-  def AppliesTo(RowIndex: Double): Range = js.native
-  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range = js.native
-  def Delete(): Unit = js.native
-  def ModifyAppliesToRange(Range: Range): Unit = js.native
-  def SetFirstPriority(): Unit = js.native
-  def SetLastPriority(): Unit = js.native
+  val AppliesTo_Original: Range
+  
+  val AxisColor: FormatColor
+  
+  var AxisPosition: XlDataBarAxisPosition
+  
+  val BarBorder: DataBarBorder
+  
+  val BarColor: FormatColor
+  
+  var BarFillType: XlDataBarFillType
+  
+  val Creator: XlCreator
+  
+  def Delete(): Unit
+  
+  var Direction: Double
+  
+  /* private */ @JSName("Excel.Databar_typekey")
+  var ExcelDotDatabar_typekey: Databar
+  
+  var Formula: String
+  
+  val MaxPoint: ConditionValue
+  
+  val MinPoint: ConditionValue
+  
+  def ModifyAppliesToRange(Range: Range): Unit
+  
+  val NegativeBarFormat: typingsJapgolly.activexExcel.Excel.NegativeBarFormat
+  
+  val PTCondition: Boolean
+  
+  val Parent: Any
+  
+  var PercentMax: Double
+  
+  var PercentMin: Double
+  
+  var Priority: Double
+  
+  var ScopeType: XlPivotConditionScope
+  
+  def SetFirstPriority(): Unit
+  
+  def SetLastPriority(): Unit
+  
+  var ShowValue: Boolean
+  
+  val StopIfTrue: Boolean
+  
+  val Type: Double
 }
-
+object Databar {
+  
+  inline def apply(
+    Application: Application,
+    AppliesTo: Range,
+    AxisColor: FormatColor,
+    AxisPosition: XlDataBarAxisPosition,
+    BarBorder: DataBarBorder,
+    BarColor: FormatColor,
+    BarFillType: XlDataBarFillType,
+    Creator: XlCreator,
+    Delete: Callback,
+    Direction: Double,
+    ExcelDotDatabar_typekey: Databar,
+    Formula: String,
+    MaxPoint: ConditionValue,
+    MinPoint: ConditionValue,
+    ModifyAppliesToRange: Range => Callback,
+    NegativeBarFormat: NegativeBarFormat,
+    PTCondition: Boolean,
+    Parent: Any,
+    PercentMax: Double,
+    PercentMin: Double,
+    Priority: Double,
+    ScopeType: XlPivotConditionScope,
+    SetFirstPriority: Callback,
+    SetLastPriority: Callback,
+    ShowValue: Boolean,
+    StopIfTrue: Boolean,
+    Type: Double
+  ): Databar = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AppliesTo = AppliesTo.asInstanceOf[js.Any], AxisColor = AxisColor.asInstanceOf[js.Any], AxisPosition = AxisPosition.asInstanceOf[js.Any], BarBorder = BarBorder.asInstanceOf[js.Any], BarColor = BarColor.asInstanceOf[js.Any], BarFillType = BarFillType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = Delete.toJsFn, Direction = Direction.asInstanceOf[js.Any], Formula = Formula.asInstanceOf[js.Any], MaxPoint = MaxPoint.asInstanceOf[js.Any], MinPoint = MinPoint.asInstanceOf[js.Any], ModifyAppliesToRange = js.Any.fromFunction1((t0: Range) => ModifyAppliesToRange(t0).runNow()), NegativeBarFormat = NegativeBarFormat.asInstanceOf[js.Any], PTCondition = PTCondition.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PercentMax = PercentMax.asInstanceOf[js.Any], PercentMin = PercentMin.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ScopeType = ScopeType.asInstanceOf[js.Any], SetFirstPriority = SetFirstPriority.toJsFn, SetLastPriority = SetLastPriority.toJsFn, ShowValue = ShowValue.asInstanceOf[js.Any], StopIfTrue = StopIfTrue.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Databar_typekey")(ExcelDotDatabar_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Databar]
+  }
+  
+  extension [Self <: Databar](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
+    
+    inline def setAxisColor(value: FormatColor): Self = StObject.set(x, "AxisColor", value.asInstanceOf[js.Any])
+    
+    inline def setAxisPosition(value: XlDataBarAxisPosition): Self = StObject.set(x, "AxisPosition", value.asInstanceOf[js.Any])
+    
+    inline def setBarBorder(value: DataBarBorder): Self = StObject.set(x, "BarBorder", value.asInstanceOf[js.Any])
+    
+    inline def setBarColor(value: FormatColor): Self = StObject.set(x, "BarColor", value.asInstanceOf[js.Any])
+    
+    inline def setBarFillType(value: XlDataBarFillType): Self = StObject.set(x, "BarFillType", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: Callback): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setDirection(value: Double): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+    
+    inline def setExcelDotDatabar_typekey(value: Databar): Self = StObject.set(x, "Excel.Databar_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPoint(value: ConditionValue): Self = StObject.set(x, "MaxPoint", value.asInstanceOf[js.Any])
+    
+    inline def setMinPoint(value: ConditionValue): Self = StObject.set(x, "MinPoint", value.asInstanceOf[js.Any])
+    
+    inline def setModifyAppliesToRange(value: Range => Callback): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1((t0: Range) => value(t0).runNow()))
+    
+    inline def setNegativeBarFormat(value: NegativeBarFormat): Self = StObject.set(x, "NegativeBarFormat", value.asInstanceOf[js.Any])
+    
+    inline def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPercentMax(value: Double): Self = StObject.set(x, "PercentMax", value.asInstanceOf[js.Any])
+    
+    inline def setPercentMin(value: Double): Self = StObject.set(x, "PercentMin", value.asInstanceOf[js.Any])
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    
+    inline def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
+    
+    inline def setSetFirstPriority(value: Callback): Self = StObject.set(x, "SetFirstPriority", value.toJsFn)
+    
+    inline def setSetLastPriority(value: Callback): Self = StObject.set(x, "SetLastPriority", value.toJsFn)
+    
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "ShowValue", value.asInstanceOf[js.Any])
+    
+    inline def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
+}

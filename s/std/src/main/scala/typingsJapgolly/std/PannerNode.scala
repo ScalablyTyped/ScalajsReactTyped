@@ -1,37 +1,62 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A PannerNode always has exactly one input and one output: the input can be mono or stereo but the output is always stereo (2 channels); you can't have panning effects without at least two audio channels! */
 @js.native
-trait PannerNode extends AudioNode {
+trait PannerNode
+  extends StObject
+     with AudioNode {
+  
+  /* standard dom */
   var coneInnerAngle: Double = js.native
+  
+  /* standard dom */
   var coneOuterAngle: Double = js.native
+  
+  /* standard dom */
   var coneOuterGain: Double = js.native
+  
+  /* standard dom */
   var distanceModel: DistanceModelType = js.native
+  
+  /* standard dom */
   var maxDistance: Double = js.native
-  val orientationX: org.scalajs.dom.raw.AudioParam = js.native
-  val orientationY: org.scalajs.dom.raw.AudioParam = js.native
-  val orientationZ: org.scalajs.dom.raw.AudioParam = js.native
+  
+  /* standard dom */
+  val orientationX: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val orientationY: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val orientationZ: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
   var panningModel: PanningModelType = js.native
-  val positionX: org.scalajs.dom.raw.AudioParam = js.native
-  val positionY: org.scalajs.dom.raw.AudioParam = js.native
-  val positionZ: org.scalajs.dom.raw.AudioParam = js.native
+  
+  /* standard dom */
+  val positionX: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val positionY: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
+  val positionZ: org.scalajs.dom.AudioParam = js.native
+  
+  /* standard dom */
   var refDistance: Double = js.native
+  
+  /* standard dom */
   var rolloffFactor: Double = js.native
+  
   /** @deprecated */
+  /* standard dom */
   def setOrientation(x: Double, y: Double, z: Double): Unit = js.native
+  
   /** @deprecated */
+  /* standard dom */
   def setPosition(x: Double, y: Double, z: Double): Unit = js.native
 }
-
-@JSGlobal("PannerNode")
-@js.native
-object PannerNode
-  extends Instantiable1[/* context */ BaseAudioContext, PannerNode]
-     with Instantiable2[/* context */ BaseAudioContext, /* options */ PannerOptions, PannerNode]
-

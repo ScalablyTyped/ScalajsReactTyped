@@ -1,8 +1,8 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 媒体API列表
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.weixinApp.weixinAppStrings.original
   - typingsJapgolly.weixinApp.weixinAppStrings.compressed
 */
-trait ImageSizeType extends js.Object
-
+trait ImageSizeType extends StObject
 object ImageSizeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def compressed: typingsJapgolly.weixinApp.weixinAppStrings.compressed = this.cast("compressed")
-  @scala.inline
-  def original: typingsJapgolly.weixinApp.weixinAppStrings.original = this.cast("original")
+  
+  inline def compressed: typingsJapgolly.weixinApp.weixinAppStrings.compressed = "compressed".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.compressed]
+  
+  inline def original: typingsJapgolly.weixinApp.weixinAppStrings.original = "original".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.original]
 }
-

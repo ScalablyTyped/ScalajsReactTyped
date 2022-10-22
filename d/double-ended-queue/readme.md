@@ -10,10 +10,10 @@ Extremely fast double-ended queue implementation
 | ------------------ | :-------------: |
 | Full name          | double-ended-queue |
 | Keywords           | data-structure, data-structures, queue, deque, double-ended-queue |
-| # releases         | 0 |
-| # dependents       | 73 |
-| # downloads        | 55412172 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3619733.6666666665 |
+| # stars            | 602.0 |
 
 ## Links
 - [Homepage](https://github.com/petkaantonov/deque)

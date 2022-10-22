@@ -1,35 +1,46 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Subdocuments")
 @js.native
-class Subdocuments protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  var Expanded: Boolean = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Subdocuments_typekey")
-  var WordDotSubdocuments_typekey: Subdocuments = js.native
+trait Subdocuments extends StObject {
+  
   def AddFromFile(
-    Name: js.Any,
-    ConfirmConversions: js.UndefOr[js.Any],
-    ReadOnly: js.UndefOr[js.Any],
-    PasswordDocument: js.UndefOr[js.Any],
-    PasswordTemplate: js.UndefOr[js.Any],
-    Revert: js.UndefOr[js.Any],
-    WritePasswordDocument: js.UndefOr[js.Any],
-    WritePasswordTemplate: js.UndefOr[js.Any]
+    Name: Any,
+    ConfirmConversions: js.UndefOr[Any],
+    ReadOnly: js.UndefOr[Any],
+    PasswordDocument: js.UndefOr[Any],
+    PasswordTemplate: js.UndefOr[Any],
+    Revert: js.UndefOr[Any],
+    WritePasswordDocument: js.UndefOr[Any],
+    WritePasswordTemplate: js.UndefOr[Any]
   ): Subdocument = js.native
+  
   def AddFromRange(Range: Range): Subdocument = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
   def Delete(): Unit = js.native
+  
+  var Expanded: Boolean = js.native
+  
   def Item(Index: Double): Subdocument = js.native
+  
   def Merge(): Unit = js.native
-  def Merge(FirstSubdocument: js.Any): Unit = js.native
-  def Merge(FirstSubdocument: js.Any, LastSubdocument: js.Any): Unit = js.native
+  def Merge(FirstSubdocument: Any): Unit = js.native
+  def Merge(FirstSubdocument: Any, LastSubdocument: Any): Unit = js.native
+  def Merge(FirstSubdocument: Unit, LastSubdocument: Any): Unit = js.native
+  
+  val Parent: Any = js.native
+  
   def Select(): Unit = js.native
+  
+  /* private */ @JSName("Word.Subdocuments_typekey")
+  var WordDotSubdocuments_typekey: Subdocuments = js.native
 }
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CaptureError extends js.Object {
+trait CaptureError extends StObject {
+  
   var code: Double
+  
   var message: String
 }
-
 object CaptureError {
-  @scala.inline
-  def apply(code: Double, message: String): CaptureError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
   
+  inline def apply(code: Double, message: String): CaptureError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureError]
   }
+  
+  extension [Self <: CaptureError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

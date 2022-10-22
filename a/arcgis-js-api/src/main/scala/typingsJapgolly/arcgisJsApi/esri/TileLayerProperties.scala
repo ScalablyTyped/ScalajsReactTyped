@@ -1,107 +1,111 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`hide-children`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hide
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.arcgisJsApi.esri.ArcGISCachedServiceProperties because var conflicts: copyright. Inlined tileInfo
 - typingsJapgolly.arcgisJsApi.esri.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ trait TileLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with RefreshableLayerProperties
      with ScaleRangeLayerProperties
-     with PortalLayerProperties {
+     with PortalLayerProperties
+     with BlendLayerProperties
+     with CustomParametersMixinProperties
+     with APIKeyMixinProperties {
+  
   /**
     * The copyright text as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates whether the layer will be included in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). This means that tile images are resampled at a lower level of detail and displayed at levels where tiles may not be available. Setting this property to `false` disables this behavior. Instead, if a tile is not available, a transparent image is displayed.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
+    * Resampling is enabled by default in 2D [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) and 3D [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#resampling)
     */
   var resampling: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API. While most commonly used [properties](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#properties-summary) are exposed on the TileLayer class directly, this property gives access to all information returned by the tiled map service. This property is useful if working in an application built using an older version of the API which requires access to tiled map service properties from a more recent version.
+    * The [tiled map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.undefined
+  var sourceJSON: js.UndefOr[Any] = js.undefined
+  
   /**
     * Contains information about the tiling scheme for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#tileInfo)
     */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
+  
   /**
     * An array of tile servers used for changing map tiles.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#tileServers)
     */
   var tileServers: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * The URL of the REST endpoint of the layer. The URL may either point to a resource on ArcGIS Enterprise or ArcGIS Online.
+    * The URL of the REST endpoint of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-TileLayer.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object TileLayerProperties {
-  @scala.inline
-  def apply(
-    copyright: String = null,
-    fullExtent: ExtentProperties = null,
-    id: String = null,
-    legendEnabled: js.UndefOr[Boolean] = js.undefined,
-    listMode: show | hide | `hide-children` = null,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
-    opacity: Int | Double = null,
-    portalItem: PortalItemProperties = null,
-    refreshInterval: Int | Double = null,
-    resampling: js.UndefOr[Boolean] = js.undefined,
-    sourceJSON: js.Any = null,
-    tileInfo: TileInfoProperties = null,
-    tileServers: js.Array[String] = null,
-    title: String = null,
-    url: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): TileLayerProperties = {
+  
+  inline def apply(): TileLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(resampling)) __obj.updateDynamic("resampling")(resampling.asInstanceOf[js.Any])
-    if (sourceJSON != null) __obj.updateDynamic("sourceJSON")(sourceJSON.asInstanceOf[js.Any])
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
-    if (tileServers != null) __obj.updateDynamic("tileServers")(tileServers.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileLayerProperties]
   }
+  
+  extension [Self <: TileLayerProperties](x: Self) {
+    
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setResampling(value: Boolean): Self = StObject.set(x, "resampling", value.asInstanceOf[js.Any])
+    
+    inline def setResamplingUndefined: Self = StObject.set(x, "resampling", js.undefined)
+    
+    inline def setSourceJSON(value: Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+    
+    inline def setTileServers(value: js.Array[String]): Self = StObject.set(x, "tileServers", value.asInstanceOf[js.Any])
+    
+    inline def setTileServersUndefined: Self = StObject.set(x, "tileServers", js.undefined)
+    
+    inline def setTileServersVarargs(value: String*): Self = StObject.set(x, "tileServers", js.Array(value*))
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

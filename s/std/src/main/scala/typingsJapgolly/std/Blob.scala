@@ -1,33 +1,35 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A file-like object of immutable, raw data. Blobs represent data that isn't necessarily in a JavaScript-native format. The File interface is based on Blob, inheriting blob functionality and expanding it to support files on the user's system. */
 @js.native
-trait Blob
-  extends ImageBitmapSource
-     with _BlobPart
-     with _BodyInit {
+trait Blob extends StObject {
+  
+  /* standard dom */
+  def arrayBuffer(): js.Promise[js.typedarray.ArrayBuffer] = js.native
+  
+  /* standard dom */
   val size: Double = js.native
-  val `type`: java.lang.String = js.native
-  def arrayBuffer(): js.Promise[scala.scalajs.js.typedarray.ArrayBuffer] = js.native
-  def slice(): org.scalajs.dom.raw.Blob = js.native
-  def slice(start: Double): org.scalajs.dom.raw.Blob = js.native
-  def slice(start: Double, end: Double): org.scalajs.dom.raw.Blob = js.native
-  def slice(start: Double, end: Double, contentType: java.lang.String): org.scalajs.dom.raw.Blob = js.native
-  def stream(): org.scalajs.dom.experimental.ReadableStream[_] = js.native
+  
+  /* standard dom */
+  def slice(): org.scalajs.dom.Blob = js.native
+  def slice(start: Double): org.scalajs.dom.Blob = js.native
+  def slice(start: Double, end: Double): org.scalajs.dom.Blob = js.native
+  def slice(start: Double, end: Double, contentType: java.lang.String): org.scalajs.dom.Blob = js.native
+  def slice(start: Double, end: Unit, contentType: java.lang.String): org.scalajs.dom.Blob = js.native
+  def slice(start: Unit, end: Double): org.scalajs.dom.Blob = js.native
+  def slice(start: Unit, end: Double, contentType: java.lang.String): org.scalajs.dom.Blob = js.native
+  def slice(start: Unit, end: Unit, contentType: java.lang.String): org.scalajs.dom.Blob = js.native
+  
+  /* standard dom */
+  def stream(): org.scalajs.dom.ReadableStream[js.typedarray.Uint8Array] = js.native
+  
+  /* standard dom */
   def text(): js.Promise[java.lang.String] = js.native
+  
+  /* standard dom */
+  val `type`: java.lang.String = js.native
 }
-
-@JSGlobal("Blob")
-@js.native
-object Blob
-  extends Instantiable0[Blob]
-     with Instantiable1[/* blobParts */ js.Array[BlobPart], Blob]
-     with Instantiable2[/* blobParts */ js.Array[BlobPart], /* options */ BlobPropertyBag, Blob]
-

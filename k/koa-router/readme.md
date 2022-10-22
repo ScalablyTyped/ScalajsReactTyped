@@ -4,21 +4,21 @@
 Typings are for version 7.4
 
 ## Library description:
-Router middleware for koa. Provides RESTful resource routing.
+Router middleware for koa. Maintained by Forward Email and Lad.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-router |
-| Keywords           | koa, middleware, router, route |
-| # releases         | 3 |
-| # dependents       | 2056 |
-| # downloads        | 9879275 |
-| # stars            | 65 |
+| Keywords           | koa, middleware, route, router |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1742900.3333333333 |
+| # stars            | 691.0 |
 
 ## Links
-- [Homepage](https://github.com/alexmingoia/koa-router#readme)
-- [Bugs](https://github.com/alexmingoia/koa-router/issues)
-- [Repository](https://github.com/alexmingoia/koa-router)
+- [Homepage](https://github.com/koajs/router)
+- [Bugs](https://github.com/koajs/router/issues)
+- [Repository](https://github.com/koajs/router)
 - [Npm](https://www.npmjs.com/package/koa-router)
     
 

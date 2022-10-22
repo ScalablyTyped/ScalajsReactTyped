@@ -1,20 +1,28 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SyntaxParseResult extends js.Object {
+trait SyntaxParseResult extends StObject {
+  
   var errors: js.Array[String]
+  
   var parseable: Boolean
 }
-
 object SyntaxParseResult {
-  @scala.inline
-  def apply(errors: js.Array[String], parseable: Boolean): SyntaxParseResult = {
-    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], parseable = parseable.asInstanceOf[js.Any])
   
+  inline def apply(errors: js.Array[String], parseable: Boolean): SyntaxParseResult = {
+    val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], parseable = parseable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyntaxParseResult]
   }
+  
+  extension [Self <: SyntaxParseResult](x: Self) {
+    
+    inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    
+    inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value*))
+    
+    inline def setParseable(value: Boolean): Self = StObject.set(x, "parseable", value.asInstanceOf[js.Any])
+  }
 }
-

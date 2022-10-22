@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnifiedPosErrorSeverity extends js.Object
-
+sealed trait UnifiedPosErrorSeverity extends StObject
 /** Defines the constants that indicates the error severity. */
 @JSGlobal("Windows.Devices.PointOfService.UnifiedPosErrorSeverity")
 @js.native
-object UnifiedPosErrorSeverity extends js.Object {
+object UnifiedPosErrorSeverity extends StObject {
+  
   /** Requires assistance. */
   @js.native
-  sealed trait assistanceRequired extends UnifiedPosErrorSeverity
+  sealed trait assistanceRequired
+    extends StObject
+       with UnifiedPosErrorSeverity
   
   /** A fatal error. */
   @js.native
-  sealed trait fatal extends UnifiedPosErrorSeverity
+  sealed trait fatal
+    extends StObject
+       with UnifiedPosErrorSeverity
   
   /** A recoverable error. */
   @js.native
-  sealed trait recoverable extends UnifiedPosErrorSeverity
+  sealed trait recoverable
+    extends StObject
+       with UnifiedPosErrorSeverity
   
   /** An unknown error severity. */
   @js.native
-  sealed trait unknownErrorSeverity extends UnifiedPosErrorSeverity
+  sealed trait unknownErrorSeverity
+    extends StObject
+       with UnifiedPosErrorSeverity
   
   /** An unrecoverable error. */
   @js.native
-  sealed trait unrecoverable extends UnifiedPosErrorSeverity
+  sealed trait unrecoverable
+    extends StObject
+       with UnifiedPosErrorSeverity
   
   /** A warning. */
   @js.native
-  sealed trait warning extends UnifiedPosErrorSeverity
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnifiedPosErrorSeverity with Double] = js.native
-  /* 4 */ @js.native
-  object assistanceRequired extends TopLevel[assistanceRequired with Double]
-  
-  /* 5 */ @js.native
-  object fatal extends TopLevel[fatal with Double]
-  
-  /* 2 */ @js.native
-  object recoverable extends TopLevel[recoverable with Double]
-  
-  /* 0 */ @js.native
-  object unknownErrorSeverity extends TopLevel[unknownErrorSeverity with Double]
-  
-  /* 3 */ @js.native
-  object unrecoverable extends TopLevel[unrecoverable with Double]
-  
-  /* 1 */ @js.native
-  object warning extends TopLevel[warning with Double]
-  
+  sealed trait warning
+    extends StObject
+       with UnifiedPosErrorSeverity
 }
-

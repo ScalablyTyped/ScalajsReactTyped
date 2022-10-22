@@ -1,12 +1,14 @@
 package typingsJapgolly.workboxCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-core/clientsClaim", JSImport.Namespace)
-@js.native
-object clientsClaimMod extends js.Object {
-  def clientsClaim(): Unit = js.native
+object clientsClaimMod {
+  
+  @JSImport("workbox-core/clientsClaim", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def clientsClaim(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clientsClaim")().asInstanceOf[Unit]
 }
-

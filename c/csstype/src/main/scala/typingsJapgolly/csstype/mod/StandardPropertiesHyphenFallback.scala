@@ -1,23 +1,17 @@
 package typingsJapgolly.csstype.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StandardPropertiesHyphenFallback[TLength]
-  extends StandardLonghandPropertiesHyphenFallback[TLength]
-     with StandardShorthandPropertiesHyphenFallback[TLength]
-
+trait StandardPropertiesHyphenFallback[TLength, TTime]
+  extends StObject
+     with StandardLonghandPropertiesHyphenFallback[TLength, TTime]
+     with StandardShorthandPropertiesHyphenFallback[TLength, TTime]
 object StandardPropertiesHyphenFallback {
-  @scala.inline
-  def apply[TLength](
-    StandardLonghandPropertiesHyphenFallback: StandardLonghandPropertiesHyphenFallback[TLength] = null,
-    StandardShorthandPropertiesHyphenFallback: StandardShorthandPropertiesHyphenFallback[TLength] = null
-  ): StandardPropertiesHyphenFallback[TLength] = {
+  
+  inline def apply[TLength, TTime](): StandardPropertiesHyphenFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (StandardLonghandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardLonghandPropertiesHyphenFallback)
-    if (StandardShorthandPropertiesHyphenFallback != null) js.Dynamic.global.Object.assign(__obj, StandardShorthandPropertiesHyphenFallback)
-    __obj.asInstanceOf[StandardPropertiesHyphenFallback[TLength]]
+    __obj.asInstanceOf[StandardPropertiesHyphenFallback[TLength, TTime]]
   }
 }
-

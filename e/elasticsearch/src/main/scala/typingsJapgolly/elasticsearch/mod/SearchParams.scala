@@ -5,139 +5,259 @@ import typingsJapgolly.elasticsearch.elasticsearchStrings.dfs_query_then_fetch
 import typingsJapgolly.elasticsearch.elasticsearchStrings.missing
 import typingsJapgolly.elasticsearch.elasticsearchStrings.popular
 import typingsJapgolly.elasticsearch.elasticsearchStrings.query_then_fetch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchParams extends GenericParams {
+trait SearchParams
+  extends StObject
+     with GenericParams {
+  
   var _source: js.UndefOr[NameList] = js.undefined
+  
   var _sourceExclude: js.UndefOr[NameList] = js.undefined
+  
   var _sourceInclude: js.UndefOr[NameList] = js.undefined
+  
   var allowNoIndices: js.UndefOr[Boolean] = js.undefined
+  
   var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
+  
   var analyzer: js.UndefOr[String] = js.undefined
+  
   var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
+  
   var df: js.UndefOr[String] = js.undefined
+  
   var docvalueFields: js.UndefOr[NameList] = js.undefined
+  
   var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
+  
   var explain: js.UndefOr[Boolean] = js.undefined
+  
   var fielddataFields: js.UndefOr[NameList] = js.undefined
+  
   var from: js.UndefOr[Double] = js.undefined
+  
   var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
+  
   var index: js.UndefOr[NameList] = js.undefined
+  
   var lenient: js.UndefOr[Boolean] = js.undefined
+  
   var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
+  
   var preference: js.UndefOr[String] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var requestCache: js.UndefOr[Boolean] = js.undefined
+  
   var routing: js.UndefOr[NameList] = js.undefined
+  
   var scroll: js.UndefOr[TimeSpan] = js.undefined
+  
   var searchType: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
+  
   var sort: js.UndefOr[NameList] = js.undefined
+  
   var stats: js.UndefOr[NameList] = js.undefined
+  
   var storedFields: js.UndefOr[NameList] = js.undefined
+  
   var suggestField: js.UndefOr[String] = js.undefined
+  
   var suggestMode: js.UndefOr[missing | popular | always] = js.undefined
+  
   var suggestSize: js.UndefOr[Double] = js.undefined
+  
   var suggestText: js.UndefOr[String] = js.undefined
+  
   var terminateAfter: js.UndefOr[Double] = js.undefined
+  
   var timeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var trackScores: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: js.UndefOr[NameList] = js.undefined
+  
   var version: js.UndefOr[Boolean] = js.undefined
 }
-
 object SearchParams {
-  @scala.inline
-  def apply(
-    _source: NameList = null,
-    _sourceExclude: NameList = null,
-    _sourceInclude: NameList = null,
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    analyzeWildcard: js.UndefOr[Boolean] = js.undefined,
-    analyzer: String = null,
-    body: js.Any = null,
-    defaultOperator: DefaultOperator = null,
-    df: String = null,
-    docvalueFields: NameList = null,
-    expandWildcards: ExpandWildcards = null,
-    explain: js.UndefOr[Boolean] = js.undefined,
-    fielddataFields: NameList = null,
-    filterPath: String | js.Array[String] = null,
-    from: Int | Double = null,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    index: NameList = null,
-    lenient: js.UndefOr[Boolean] = js.undefined,
-    lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    preference: String = null,
-    q: String = null,
-    requestCache: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
-    routing: NameList = null,
-    scroll: TimeSpan = null,
-    searchType: query_then_fetch | dfs_query_then_fetch = null,
-    size: Int | Double = null,
-    sort: NameList = null,
-    stats: NameList = null,
-    storedFields: NameList = null,
-    suggestField: String = null,
-    suggestMode: missing | popular | always = null,
-    suggestSize: Int | Double = null,
-    suggestText: String = null,
-    terminateAfter: Int | Double = null,
-    timeout: TimeSpan = null,
-    trackScores: js.UndefOr[Boolean] = js.undefined,
-    `type`: NameList = null,
-    version: js.UndefOr[Boolean] = js.undefined
-  ): SearchParams = {
+  
+  inline def apply(): SearchParams = {
     val __obj = js.Dynamic.literal()
-    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
-    if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
-    if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard.asInstanceOf[js.Any])
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (defaultOperator != null) __obj.updateDynamic("defaultOperator")(defaultOperator.asInstanceOf[js.Any])
-    if (df != null) __obj.updateDynamic("df")(df.asInstanceOf[js.Any])
-    if (docvalueFields != null) __obj.updateDynamic("docvalueFields")(docvalueFields.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (!js.isUndefined(explain)) __obj.updateDynamic("explain")(explain.asInstanceOf[js.Any])
-    if (fielddataFields != null) __obj.updateDynamic("fielddataFields")(fielddataFields.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercaseExpandedTerms)) __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (!js.isUndefined(requestCache)) __obj.updateDynamic("requestCache")(requestCache.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (scroll != null) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (searchType != null) __obj.updateDynamic("searchType")(searchType.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (storedFields != null) __obj.updateDynamic("storedFields")(storedFields.asInstanceOf[js.Any])
-    if (suggestField != null) __obj.updateDynamic("suggestField")(suggestField.asInstanceOf[js.Any])
-    if (suggestMode != null) __obj.updateDynamic("suggestMode")(suggestMode.asInstanceOf[js.Any])
-    if (suggestSize != null) __obj.updateDynamic("suggestSize")(suggestSize.asInstanceOf[js.Any])
-    if (suggestText != null) __obj.updateDynamic("suggestText")(suggestText.asInstanceOf[js.Any])
-    if (terminateAfter != null) __obj.updateDynamic("terminateAfter")(terminateAfter.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(trackScores)) __obj.updateDynamic("trackScores")(trackScores.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchParams]
   }
+  
+  extension [Self <: SearchParams](x: Self) {
+    
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    
+    inline def setAnalyzeWildcard(value: Boolean): Self = StObject.set(x, "analyzeWildcard", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzeWildcardUndefined: Self = StObject.set(x, "analyzeWildcard", js.undefined)
+    
+    inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzerUndefined: Self = StObject.set(x, "analyzer", js.undefined)
+    
+    inline def setDefaultOperator(value: DefaultOperator): Self = StObject.set(x, "defaultOperator", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultOperatorUndefined: Self = StObject.set(x, "defaultOperator", js.undefined)
+    
+    inline def setDf(value: String): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
+    
+    inline def setDfUndefined: Self = StObject.set(x, "df", js.undefined)
+    
+    inline def setDocvalueFields(value: NameList): Self = StObject.set(x, "docvalueFields", value.asInstanceOf[js.Any])
+    
+    inline def setDocvalueFieldsUndefined: Self = StObject.set(x, "docvalueFields", js.undefined)
+    
+    inline def setDocvalueFieldsVarargs(value: String*): Self = StObject.set(x, "docvalueFields", js.Array(value*))
+    
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    
+    inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
+    
+    inline def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
+    
+    inline def setFielddataFields(value: NameList): Self = StObject.set(x, "fielddataFields", value.asInstanceOf[js.Any])
+    
+    inline def setFielddataFieldsUndefined: Self = StObject.set(x, "fielddataFields", js.undefined)
+    
+    inline def setFielddataFieldsVarargs(value: String*): Self = StObject.set(x, "fielddataFields", js.Array(value*))
+    
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+    
+    inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
+    
+    inline def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
+    
+    inline def setLowercaseExpandedTerms(value: Boolean): Self = StObject.set(x, "lowercaseExpandedTerms", value.asInstanceOf[js.Any])
+    
+    inline def setLowercaseExpandedTermsUndefined: Self = StObject.set(x, "lowercaseExpandedTerms", js.undefined)
+    
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setRequestCache(value: Boolean): Self = StObject.set(x, "requestCache", value.asInstanceOf[js.Any])
+    
+    inline def setRequestCacheUndefined: Self = StObject.set(x, "requestCache", js.undefined)
+    
+    inline def setRouting(value: NameList): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    
+    inline def setRoutingVarargs(value: String*): Self = StObject.set(x, "routing", js.Array(value*))
+    
+    inline def setScroll(value: TimeSpan): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+    
+    inline def setSearchType(value: query_then_fetch | dfs_query_then_fetch): Self = StObject.set(x, "searchType", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTypeUndefined: Self = StObject.set(x, "searchType", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSort(value: NameList): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: String*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setStats(value: NameList): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    
+    inline def setStatsVarargs(value: String*): Self = StObject.set(x, "stats", js.Array(value*))
+    
+    inline def setStoredFields(value: NameList): Self = StObject.set(x, "storedFields", value.asInstanceOf[js.Any])
+    
+    inline def setStoredFieldsUndefined: Self = StObject.set(x, "storedFields", js.undefined)
+    
+    inline def setStoredFieldsVarargs(value: String*): Self = StObject.set(x, "storedFields", js.Array(value*))
+    
+    inline def setSuggestField(value: String): Self = StObject.set(x, "suggestField", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestFieldUndefined: Self = StObject.set(x, "suggestField", js.undefined)
+    
+    inline def setSuggestMode(value: missing | popular | always): Self = StObject.set(x, "suggestMode", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestModeUndefined: Self = StObject.set(x, "suggestMode", js.undefined)
+    
+    inline def setSuggestSize(value: Double): Self = StObject.set(x, "suggestSize", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestSizeUndefined: Self = StObject.set(x, "suggestSize", js.undefined)
+    
+    inline def setSuggestText(value: String): Self = StObject.set(x, "suggestText", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestTextUndefined: Self = StObject.set(x, "suggestText", js.undefined)
+    
+    inline def setTerminateAfter(value: Double): Self = StObject.set(x, "terminateAfter", value.asInstanceOf[js.Any])
+    
+    inline def setTerminateAfterUndefined: Self = StObject.set(x, "terminateAfter", js.undefined)
+    
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTrackScores(value: Boolean): Self = StObject.set(x, "trackScores", value.asInstanceOf[js.Any])
+    
+    inline def setTrackScoresUndefined: Self = StObject.set(x, "trackScores", js.undefined)
+    
+    inline def setType(value: NameList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value*))
+    
+    inline def setVersion(value: Boolean): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def set_source(value: NameList): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExclude(value: NameList): Self = StObject.set(x, "_sourceExclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
+    
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
+    
+    inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
+    
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
+    
+    inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
+    
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
+  }
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.winjs.mod.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays a tooltip that can contain images and formatting.
@@ -17,19 +17,25 @@ import scala.scalajs.js.annotation._
   * @param element The DOM element associated that hosts the Tooltip.
   * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the opened event, add a property named "onopened" to the options object and set its value to the event handler.
   **/
-class Tooltip ()
-  extends typingsJapgolly.winjs.WinJS.UI.Tooltip {
+open class Tooltip ()
+  extends StObject
+     with typingsJapgolly.winjs.WinJS.UI.Tooltip {
   def this(element: HTMLElement) = this()
-  def this(element: HTMLElement, options: js.Any) = this()
+  def this(element: HTMLElement, options: Any) = this()
+  def this(element: Unit, options: Any) = this()
 }
-
-/* static members */
-@JSImport("winjs", "UI.Tooltip")
-@js.native
-object Tooltip extends js.Object {
+object Tooltip {
+  
+  @JSImport("winjs", "UI.Tooltip")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Indicates that the object is compatibile with declarative processing.
     **/
-  var supportedForProcessing: Boolean = js.native
+  /* static member */
+  @JSImport("winjs", "UI.Tooltip.supportedForProcessing")
+  @js.native
+  def supportedForProcessing: Boolean = js.native
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }
-

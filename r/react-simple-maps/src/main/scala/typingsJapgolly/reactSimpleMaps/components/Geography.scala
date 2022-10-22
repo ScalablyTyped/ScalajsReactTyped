@@ -1,8 +1,6 @@
 package typingsJapgolly.reactSimpleMaps.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactAnimationEventFrom
 import japgolly.scalajs.react.ReactClipboardEventFrom
 import japgolly.scalajs.react.ReactCompositionEventFrom
@@ -12,20 +10,28 @@ import japgolly.scalajs.react.ReactFocusEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.ReactPointerEventFrom
+import japgolly.scalajs.react.ReactTouchEventFrom
+import japgolly.scalajs.react.ReactTransitionEventFrom
 import japgolly.scalajs.react.ReactUIEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.SVGPathElement
-import typingsJapgolly.react.AnonHtml
+import japgolly.scalajs.react.ReactWheelEventFrom
+import org.scalajs.dom.Element
+import org.scalajs.dom.SVGPathElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.anon.Html
+import typingsJapgolly.react.mod.AriaRole
 import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.reactSimpleMaps.anon.Default
 import typingsJapgolly.reactSimpleMaps.mod.GeographyProps
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings._empty
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`additions removals`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`additions text`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`after-edge`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`before-edge`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`inline`
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`removals additions`
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`removals text`
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`text additions`
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`text removals`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`text-after-edge`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`text-before-edge`
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.`use-credentials`
@@ -37,7 +43,9 @@ import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.ascending
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.assertive
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.auto
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.baseline
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.bevel
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.both
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.butt
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.central
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.copy
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.date
@@ -62,6 +70,7 @@ import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.mathematical
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.medial
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.menu
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.middle
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.miter
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.mixed
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.move
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.no
@@ -74,8 +83,10 @@ import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.polite
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.popup
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.removals
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.replace
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.round
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.sRGB
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.spelling
+import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.square
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.step
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.sum
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.terminal
@@ -84,532 +95,803 @@ import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.time
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.tree
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.vertical
 import typingsJapgolly.reactSimpleMaps.reactSimpleMapsStrings.yes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Geography {
-  def apply(
-    accentHeight: Double | String = null,
-    accumulate: none | sum = null,
-    additive: replace | sum = null,
-    alignmentBaseline: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit = null,
-    allowReorder: no | yes = null,
-    alphabetic: Double | String = null,
-    amplitude: Double | String = null,
-    arabicForm: initial | medial | terminal | isolated = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    ascent: Double | String = null,
-    attributeName: String = null,
-    attributeType: String = null,
-    autoReverse: js.UndefOr[Boolean] = js.undefined,
-    azimuth: Double | String = null,
-    baseFrequency: Double | String = null,
-    baseProfile: Double | String = null,
-    baselineShift: Double | String = null,
-    bbox: Double | String = null,
-    begin: Double | String = null,
-    bias: Double | String = null,
-    by: Double | String = null,
-    calcMode: Double | String = null,
-    capHeight: Double | String = null,
-    className: String = null,
-    clip: Double | String = null,
-    clipPath: String = null,
-    clipPathUnits: Double | String = null,
-    clipRule: Double | String = null,
-    color: String = null,
-    colorInterpolation: Double | String = null,
-    colorInterpolationFilters: auto | sRGB | linearRGB | inherit = null,
-    colorProfile: Double | String = null,
-    colorRendering: Double | String = null,
-    contentScriptType: Double | String = null,
-    contentStyleType: Double | String = null,
-    crossOrigin: anonymous | `use-credentials` | _empty = null,
-    cursor: Double | String = null,
-    cx: Double | String = null,
-    cy: Double | String = null,
-    d: String = null,
-    dangerouslySetInnerHTML: AnonHtml = null,
-    decelerate: Double | String = null,
-    descent: Double | String = null,
-    diffuseConstant: Double | String = null,
-    direction: Double | String = null,
-    display: Double | String = null,
-    divisor: Double | String = null,
-    dominantBaseline: Double | String = null,
-    dur: Double | String = null,
-    dx: Double | String = null,
-    dy: Double | String = null,
-    edgeMode: Double | String = null,
-    elevation: Double | String = null,
-    enableBackground: Double | String = null,
-    end: Double | String = null,
-    exponent: Double | String = null,
-    externalResourcesRequired: js.UndefOr[Boolean] = js.undefined,
-    fill: String = null,
-    fillOpacity: Double | String = null,
-    fillRule: nonzero | evenodd | inherit = null,
-    filter: String = null,
-    filterRes: Double | String = null,
-    filterUnits: Double | String = null,
-    floodColor: Double | String = null,
-    floodOpacity: Double | String = null,
-    focusable: Booleanish | auto = null,
-    fontFamily: String = null,
-    fontSize: Double | String = null,
-    fontSizeAdjust: Double | String = null,
-    fontStretch: Double | String = null,
-    fontStyle: Double | String = null,
-    fontVariant: Double | String = null,
-    fontWeight: Double | String = null,
-    format: Double | String = null,
-    from: Double | String = null,
-    fx: Double | String = null,
-    fy: Double | String = null,
-    g1: Double | String = null,
-    g2: Double | String = null,
-    geography: js.Any = null,
-    glyphName: Double | String = null,
-    glyphOrientationHorizontal: Double | String = null,
-    glyphOrientationVertical: Double | String = null,
-    glyphRef: Double | String = null,
-    gradientTransform: String = null,
-    gradientUnits: String = null,
-    hanging: Double | String = null,
-    height: Double | String = null,
-    horizAdvX: Double | String = null,
-    horizOriginX: Double | String = null,
-    href: String = null,
-    id: String = null,
-    ideographic: Double | String = null,
-    imageRendering: Double | String = null,
-    in: String = null,
-    in2: Double | String = null,
-    intercept: Double | String = null,
-    k: Double | String = null,
-    k1: Double | String = null,
-    k2: Double | String = null,
-    k3: Double | String = null,
-    k4: Double | String = null,
-    kernelMatrix: Double | String = null,
-    kernelUnitLength: Double | String = null,
-    kerning: Double | String = null,
-    keyPoints: Double | String = null,
-    keySplines: Double | String = null,
-    keyTimes: Double | String = null,
-    lang: String = null,
-    lengthAdjust: Double | String = null,
-    letterSpacing: Double | String = null,
-    lightingColor: Double | String = null,
-    limitingConeAngle: Double | String = null,
-    local: Double | String = null,
-    markerEnd: String = null,
-    markerHeight: Double | String = null,
-    markerMid: String = null,
-    markerStart: String = null,
-    markerUnits: Double | String = null,
-    markerWidth: Double | String = null,
-    mask: String = null,
-    maskContentUnits: Double | String = null,
-    maskUnits: Double | String = null,
-    mathematical: Double | String = null,
-    max: Double | String = null,
-    media: String = null,
-    method: String = null,
-    min: Double | String = null,
-    mode: Double | String = null,
-    name: String = null,
-    numOctaves: Double | String = null,
-    offset: Double | String = null,
-    onAbort: ReactEventFrom[SVGPathElement] => Callback = null,
-    onAnimationEnd: ReactAnimationEventFrom[SVGPathElement] => Callback = null,
-    onAnimationIteration: ReactAnimationEventFrom[SVGPathElement] => Callback = null,
-    onAnimationStart: ReactAnimationEventFrom[SVGPathElement] => Callback = null,
-    onAuxClick: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onBeforeInput: ReactEventFrom[SVGPathElement] => Callback = null,
-    onBlur: ReactFocusEventFrom[SVGPathElement] => Callback = null,
-    onCanPlay: ReactEventFrom[SVGPathElement] => Callback = null,
-    onCanPlayThrough: ReactEventFrom[SVGPathElement] => Callback = null,
-    onChange: ReactEventFrom[SVGPathElement] => Callback = null,
-    onClick: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onCompositionEnd: ReactCompositionEventFrom[SVGPathElement] => Callback = null,
-    onCompositionStart: ReactCompositionEventFrom[SVGPathElement] => Callback = null,
-    onCompositionUpdate: ReactCompositionEventFrom[SVGPathElement] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onCopy: ReactClipboardEventFrom[SVGPathElement] => Callback = null,
-    onCut: ReactClipboardEventFrom[SVGPathElement] => Callback = null,
-    onDoubleClick: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onDrag: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragEnd: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragEnter: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragExit: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragLeave: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragOver: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDragStart: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDrop: ReactDragEventFrom[SVGPathElement] => Callback = null,
-    onDurationChange: ReactEventFrom[SVGPathElement] => Callback = null,
-    onEmptied: ReactEventFrom[SVGPathElement] => Callback = null,
-    onEncrypted: ReactEventFrom[SVGPathElement] => Callback = null,
-    onEnded: ReactEventFrom[SVGPathElement] => Callback = null,
-    onError: ReactEventFrom[SVGPathElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[SVGPathElement] => Callback = null,
-    onInput: ReactEventFrom[SVGPathElement] => Callback = null,
-    onInvalid: ReactEventFrom[SVGPathElement] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[SVGPathElement] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[SVGPathElement] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[SVGPathElement] => Callback = null,
-    onLoad: ReactEventFrom[SVGPathElement] => Callback = null,
-    onLoadStart: ReactEventFrom[SVGPathElement] => Callback = null,
-    onLoadedData: ReactEventFrom[SVGPathElement] => Callback = null,
-    onLoadedMetadata: ReactEventFrom[SVGPathElement] => Callback = null,
-    onMouseDown: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseEnter: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseLeave: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseMove: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseOut: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseOver: ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onMouseUp: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback = null,
-    onPaste: ReactClipboardEventFrom[SVGPathElement] => Callback = null,
-    onPause: ReactEventFrom[SVGPathElement] => Callback = null,
-    onPlay: ReactEventFrom[SVGPathElement] => Callback = null,
-    onPlaying: ReactEventFrom[SVGPathElement] => Callback = null,
-    onPointerCancel: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerDown: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerEnter: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerLeave: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerMove: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerOut: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerOver: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onPointerUp: ReactPointerEventFrom[SVGPathElement] => Callback = null,
-    onProgress: ReactEventFrom[SVGPathElement] => Callback = null,
-    onRateChange: ReactEventFrom[SVGPathElement] => Callback = null,
-    onReset: ReactEventFrom[SVGPathElement] => Callback = null,
-    onScroll: ReactUIEventFrom[SVGPathElement] => Callback = null,
-    onSeeked: ReactEventFrom[SVGPathElement] => Callback = null,
-    onSeeking: ReactEventFrom[SVGPathElement] => Callback = null,
-    onSelect: ReactEventFrom[SVGPathElement] => Callback = null,
-    onStalled: ReactEventFrom[SVGPathElement] => Callback = null,
-    onSubmit: ReactEventFrom[SVGPathElement] => Callback = null,
-    onSuspend: ReactEventFrom[SVGPathElement] => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    GeographyProps, 
-    MountedWithRawType[GeographyProps, js.Object, RawMounted[GeographyProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (accentHeight != null) __obj.updateDynamic("accentHeight")(accentHeight.asInstanceOf[js.Any])
-    if (accumulate != null) __obj.updateDynamic("accumulate")(accumulate.asInstanceOf[js.Any])
-    if (additive != null) __obj.updateDynamic("additive")(additive.asInstanceOf[js.Any])
-    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (allowReorder != null) __obj.updateDynamic("allowReorder")(allowReorder.asInstanceOf[js.Any])
-    if (alphabetic != null) __obj.updateDynamic("alphabetic")(alphabetic.asInstanceOf[js.Any])
-    if (amplitude != null) __obj.updateDynamic("amplitude")(amplitude.asInstanceOf[js.Any])
-    if (arabicForm != null) __obj.updateDynamic("arabicForm")(arabicForm.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (ascent != null) __obj.updateDynamic("ascent")(ascent.asInstanceOf[js.Any])
-    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName.asInstanceOf[js.Any])
-    if (attributeType != null) __obj.updateDynamic("attributeType")(attributeType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReverse)) __obj.updateDynamic("autoReverse")(autoReverse.asInstanceOf[js.Any])
-    if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
-    if (baseFrequency != null) __obj.updateDynamic("baseFrequency")(baseFrequency.asInstanceOf[js.Any])
-    if (baseProfile != null) __obj.updateDynamic("baseProfile")(baseProfile.asInstanceOf[js.Any])
-    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
-    if (begin != null) __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
-    if (bias != null) __obj.updateDynamic("bias")(bias.asInstanceOf[js.Any])
-    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
-    if (calcMode != null) __obj.updateDynamic("calcMode")(calcMode.asInstanceOf[js.Any])
-    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (clipPathUnits != null) __obj.updateDynamic("clipPathUnits")(clipPathUnits.asInstanceOf[js.Any])
-    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
-    if (colorInterpolationFilters != null) __obj.updateDynamic("colorInterpolationFilters")(colorInterpolationFilters.asInstanceOf[js.Any])
-    if (colorProfile != null) __obj.updateDynamic("colorProfile")(colorProfile.asInstanceOf[js.Any])
-    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
-    if (contentScriptType != null) __obj.updateDynamic("contentScriptType")(contentScriptType.asInstanceOf[js.Any])
-    if (contentStyleType != null) __obj.updateDynamic("contentStyleType")(contentStyleType.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
-    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
-    if (decelerate != null) __obj.updateDynamic("decelerate")(decelerate.asInstanceOf[js.Any])
-    if (descent != null) __obj.updateDynamic("descent")(descent.asInstanceOf[js.Any])
-    if (diffuseConstant != null) __obj.updateDynamic("diffuseConstant")(diffuseConstant.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (divisor != null) __obj.updateDynamic("divisor")(divisor.asInstanceOf[js.Any])
-    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (dur != null) __obj.updateDynamic("dur")(dur.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (edgeMode != null) __obj.updateDynamic("edgeMode")(edgeMode.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (enableBackground != null) __obj.updateDynamic("enableBackground")(enableBackground.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(externalResourcesRequired)) __obj.updateDynamic("externalResourcesRequired")(externalResourcesRequired.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (filterRes != null) __obj.updateDynamic("filterRes")(filterRes.asInstanceOf[js.Any])
-    if (filterUnits != null) __obj.updateDynamic("filterUnits")(filterUnits.asInstanceOf[js.Any])
-    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
-    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
-    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
-    if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
-    if (g1 != null) __obj.updateDynamic("g1")(g1.asInstanceOf[js.Any])
-    if (g2 != null) __obj.updateDynamic("g2")(g2.asInstanceOf[js.Any])
-    if (geography != null) __obj.updateDynamic("geography")(geography.asInstanceOf[js.Any])
-    if (glyphName != null) __obj.updateDynamic("glyphName")(glyphName.asInstanceOf[js.Any])
-    if (glyphOrientationHorizontal != null) __obj.updateDynamic("glyphOrientationHorizontal")(glyphOrientationHorizontal.asInstanceOf[js.Any])
-    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (glyphRef != null) __obj.updateDynamic("glyphRef")(glyphRef.asInstanceOf[js.Any])
-    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
-    if (gradientUnits != null) __obj.updateDynamic("gradientUnits")(gradientUnits.asInstanceOf[js.Any])
-    if (hanging != null) __obj.updateDynamic("hanging")(hanging.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (horizAdvX != null) __obj.updateDynamic("horizAdvX")(horizAdvX.asInstanceOf[js.Any])
-    if (horizOriginX != null) __obj.updateDynamic("horizOriginX")(horizOriginX.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ideographic != null) __obj.updateDynamic("ideographic")(ideographic.asInstanceOf[js.Any])
-    if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (in2 != null) __obj.updateDynamic("in2")(in2.asInstanceOf[js.Any])
-    if (intercept != null) __obj.updateDynamic("intercept")(intercept.asInstanceOf[js.Any])
-    if (k != null) __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
-    if (k1 != null) __obj.updateDynamic("k1")(k1.asInstanceOf[js.Any])
-    if (k2 != null) __obj.updateDynamic("k2")(k2.asInstanceOf[js.Any])
-    if (k3 != null) __obj.updateDynamic("k3")(k3.asInstanceOf[js.Any])
-    if (k4 != null) __obj.updateDynamic("k4")(k4.asInstanceOf[js.Any])
-    if (kernelMatrix != null) __obj.updateDynamic("kernelMatrix")(kernelMatrix.asInstanceOf[js.Any])
-    if (kernelUnitLength != null) __obj.updateDynamic("kernelUnitLength")(kernelUnitLength.asInstanceOf[js.Any])
-    if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (keyPoints != null) __obj.updateDynamic("keyPoints")(keyPoints.asInstanceOf[js.Any])
-    if (keySplines != null) __obj.updateDynamic("keySplines")(keySplines.asInstanceOf[js.Any])
-    if (keyTimes != null) __obj.updateDynamic("keyTimes")(keyTimes.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (lengthAdjust != null) __obj.updateDynamic("lengthAdjust")(lengthAdjust.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
-    if (limitingConeAngle != null) __obj.updateDynamic("limitingConeAngle")(limitingConeAngle.asInstanceOf[js.Any])
-    if (local != null) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (markerHeight != null) __obj.updateDynamic("markerHeight")(markerHeight.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
-    if (markerUnits != null) __obj.updateDynamic("markerUnits")(markerUnits.asInstanceOf[js.Any])
-    if (markerWidth != null) __obj.updateDynamic("markerWidth")(markerWidth.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (maskContentUnits != null) __obj.updateDynamic("maskContentUnits")(maskContentUnits.asInstanceOf[js.Any])
-    if (maskUnits != null) __obj.updateDynamic("maskUnits")(maskUnits.asInstanceOf[js.Any])
-    if (mathematical != null) __obj.updateDynamic("mathematical")(mathematical.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (numOctaves != null) __obj.updateDynamic("numOctaves")(numOctaves.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (onAbort != null) __obj.updateDynamic("onAbort")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onAbort(t0).runNow()))
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onAnimationEnd(t0).runNow()))
-    if (onAnimationIteration != null) __obj.updateDynamic("onAnimationIteration")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onAnimationIteration(t0).runNow()))
-    if (onAnimationStart != null) __obj.updateDynamic("onAnimationStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactAnimationEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onAnimationStart(t0).runNow()))
-    if (onAuxClick != null) __obj.updateDynamic("onAuxClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onAuxClick(t0).runNow()))
-    if (onBeforeInput != null) __obj.updateDynamic("onBeforeInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onBeforeInput(t0).runNow()))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onBlur(t0).runNow()))
-    if (onCanPlay != null) __obj.updateDynamic("onCanPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCanPlay(t0).runNow()))
-    if (onCanPlayThrough != null) __obj.updateDynamic("onCanPlayThrough")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCanPlayThrough(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onClick(t0).runNow()))
-    if (onCompositionEnd != null) __obj.updateDynamic("onCompositionEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCompositionEnd(t0).runNow()))
-    if (onCompositionStart != null) __obj.updateDynamic("onCompositionStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCompositionStart(t0).runNow()))
-    if (onCompositionUpdate != null) __obj.updateDynamic("onCompositionUpdate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactCompositionEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCompositionUpdate(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onContextMenu(t0).runNow()))
-    if (onCopy != null) __obj.updateDynamic("onCopy")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCopy(t0).runNow()))
-    if (onCut != null) __obj.updateDynamic("onCut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onCut(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDoubleClick(t0).runNow()))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDrag(t0).runNow()))
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragEnd(t0).runNow()))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragEnter(t0).runNow()))
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragExit(t0).runNow()))
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragLeave(t0).runNow()))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragOver(t0).runNow()))
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDragStart(t0).runNow()))
-    if (onDrop != null) __obj.updateDynamic("onDrop")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactDragEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDrop(t0).runNow()))
-    if (onDurationChange != null) __obj.updateDynamic("onDurationChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onDurationChange(t0).runNow()))
-    if (onEmptied != null) __obj.updateDynamic("onEmptied")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onEmptied(t0).runNow()))
-    if (onEncrypted != null) __obj.updateDynamic("onEncrypted")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onEncrypted(t0).runNow()))
-    if (onEnded != null) __obj.updateDynamic("onEnded")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onEnded(t0).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onError(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onFocus(t0).runNow()))
-    if (onInput != null) __obj.updateDynamic("onInput")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onInput(t0).runNow()))
-    if (onInvalid != null) __obj.updateDynamic("onInvalid")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onInvalid(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onKeyUp(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onLoad(t0).runNow()))
-    if (onLoadStart != null) __obj.updateDynamic("onLoadStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onLoadStart(t0).runNow()))
-    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onLoadedData(t0).runNow()))
-    if (onLoadedMetadata != null) __obj.updateDynamic("onLoadedMetadata")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onLoadedMetadata(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseOut(t0).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseOver(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onMouseUp(t0).runNow()))
-    if (onPaste != null) __obj.updateDynamic("onPaste")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactClipboardEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPaste(t0).runNow()))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPause(t0).runNow()))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPlay(t0).runNow()))
-    if (onPlaying != null) __obj.updateDynamic("onPlaying")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPlaying(t0).runNow()))
-    if (onPointerCancel != null) __obj.updateDynamic("onPointerCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerCancel(t0).runNow()))
-    if (onPointerDown != null) __obj.updateDynamic("onPointerDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerDown(t0).runNow()))
-    if (onPointerEnter != null) __obj.updateDynamic("onPointerEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerEnter(t0).runNow()))
-    if (onPointerLeave != null) __obj.updateDynamic("onPointerLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerLeave(t0).runNow()))
-    if (onPointerMove != null) __obj.updateDynamic("onPointerMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerMove(t0).runNow()))
-    if (onPointerOut != null) __obj.updateDynamic("onPointerOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerOut(t0).runNow()))
-    if (onPointerOver != null) __obj.updateDynamic("onPointerOver")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerOver(t0).runNow()))
-    if (onPointerUp != null) __obj.updateDynamic("onPointerUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactPointerEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onPointerUp(t0).runNow()))
-    if (onProgress != null) __obj.updateDynamic("onProgress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onProgress(t0).runNow()))
-    if (onRateChange != null) __obj.updateDynamic("onRateChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onRateChange(t0).runNow()))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onReset(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactUIEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onScroll(t0).runNow()))
-    if (onSeeked != null) __obj.updateDynamic("onSeeked")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onSeeked(t0).runNow()))
-    if (onSeeking != null) __obj.updateDynamic("onSeeking")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onSeeking(t0).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onSelect(t0).runNow()))
-    if (onStalled != null) __obj.updateDynamic("onStalled")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onStalled(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onSubmit(t0).runNow()))
-    if (onSuspend != null) __obj.updateDynamic("onSuspend")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.SVGPathElement]) => onSuspend(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactSimpleMaps.mod.GeographyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSimpleMaps.mod.GeographyProps])(children: _*)
-  }
   @JSImport("react-simple-maps", "Geography")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[SVGPathElement] {
+    
+    inline def accentHeight(value: Double | String): this.type = set("accentHeight", value.asInstanceOf[js.Any])
+    
+    inline def accumulate(value: none | sum): this.type = set("accumulate", value.asInstanceOf[js.Any])
+    
+    inline def additive(value: replace | sum): this.type = set("additive", value.asInstanceOf[js.Any])
+    
+    inline def alignmentBaseline(
+      value: auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | inherit
+    ): this.type = set("alignmentBaseline", value.asInstanceOf[js.Any])
+    
+    inline def allowReorder(value: no | yes): this.type = set("allowReorder", value.asInstanceOf[js.Any])
+    
+    inline def alphabetic(value: Double | String): this.type = set("alphabetic", value.asInstanceOf[js.Any])
+    
+    inline def amplitude(value: Double | String): this.type = set("amplitude", value.asInstanceOf[js.Any])
+    
+    inline def arabicForm(value: initial | medial | terminal | isolated): this.type = set("arabicForm", value.asInstanceOf[js.Any])
+    
+    inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+    
+    inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+    
+    inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+    
+    inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+    
+    inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+    
+    inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+    
+    inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+    
+    inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+    
+    inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+    
+    inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+    
+    inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+    
+    inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+    
+    inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+    
+    inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+    
+    inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+    
+    inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+    
+    inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+    
+    inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+    
+    inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+    
+    inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+    
+    inline def `aria-relevant`(
+      value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+    ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+    
+    inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+    
+    inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+    
+    inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+    
+    inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+    
+    inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+    
+    inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+    
+    inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+    
+    inline def ascent(value: Double | String): this.type = set("ascent", value.asInstanceOf[js.Any])
+    
+    inline def attributeName(value: String): this.type = set("attributeName", value.asInstanceOf[js.Any])
+    
+    inline def attributeType(value: String): this.type = set("attributeType", value.asInstanceOf[js.Any])
+    
+    inline def autoReverse(value: Booleanish): this.type = set("autoReverse", value.asInstanceOf[js.Any])
+    
+    inline def azimuth(value: Double | String): this.type = set("azimuth", value.asInstanceOf[js.Any])
+    
+    inline def baseFrequency(value: Double | String): this.type = set("baseFrequency", value.asInstanceOf[js.Any])
+    
+    inline def baseProfile(value: Double | String): this.type = set("baseProfile", value.asInstanceOf[js.Any])
+    
+    inline def baselineShift(value: Double | String): this.type = set("baselineShift", value.asInstanceOf[js.Any])
+    
+    inline def bbox(value: Double | String): this.type = set("bbox", value.asInstanceOf[js.Any])
+    
+    inline def begin(value: Double | String): this.type = set("begin", value.asInstanceOf[js.Any])
+    
+    inline def bias(value: Double | String): this.type = set("bias", value.asInstanceOf[js.Any])
+    
+    inline def by(value: Double | String): this.type = set("by", value.asInstanceOf[js.Any])
+    
+    inline def calcMode(value: Double | String): this.type = set("calcMode", value.asInstanceOf[js.Any])
+    
+    inline def capHeight(value: Double | String): this.type = set("capHeight", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def clip(value: Double | String): this.type = set("clip", value.asInstanceOf[js.Any])
+    
+    inline def clipPath(value: String): this.type = set("clipPath", value.asInstanceOf[js.Any])
+    
+    inline def clipPathUnits(value: Double | String): this.type = set("clipPathUnits", value.asInstanceOf[js.Any])
+    
+    inline def clipRule(value: Double | String): this.type = set("clipRule", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def colorInterpolation(value: Double | String): this.type = set("colorInterpolation", value.asInstanceOf[js.Any])
+    
+    inline def colorInterpolationFilters(value: auto | sRGB | linearRGB | inherit): this.type = set("colorInterpolationFilters", value.asInstanceOf[js.Any])
+    
+    inline def colorProfile(value: Double | String): this.type = set("colorProfile", value.asInstanceOf[js.Any])
+    
+    inline def colorRendering(value: Double | String): this.type = set("colorRendering", value.asInstanceOf[js.Any])
+    
+    inline def contentScriptType(value: Double | String): this.type = set("contentScriptType", value.asInstanceOf[js.Any])
+    
+    inline def contentStyleType(value: Double | String): this.type = set("contentStyleType", value.asInstanceOf[js.Any])
+    
+    inline def crossOrigin(value: anonymous | `use-credentials` | _empty): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+    
+    inline def cursor(value: Double | String): this.type = set("cursor", value.asInstanceOf[js.Any])
+    
+    inline def cx(value: Double | String): this.type = set("cx", value.asInstanceOf[js.Any])
+    
+    inline def cy(value: Double | String): this.type = set("cy", value.asInstanceOf[js.Any])
+    
+    inline def d(value: String): this.type = set("d", value.asInstanceOf[js.Any])
+    
+    inline def dangerouslySetInnerHTML(value: Html): this.type = set("dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    
+    inline def decelerate(value: Double | String): this.type = set("decelerate", value.asInstanceOf[js.Any])
+    
+    inline def descent(value: Double | String): this.type = set("descent", value.asInstanceOf[js.Any])
+    
+    inline def diffuseConstant(value: Double | String): this.type = set("diffuseConstant", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: Double | String): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def display(value: Double | String): this.type = set("display", value.asInstanceOf[js.Any])
+    
+    inline def divisor(value: Double | String): this.type = set("divisor", value.asInstanceOf[js.Any])
+    
+    inline def dominantBaseline(value: Double | String): this.type = set("dominantBaseline", value.asInstanceOf[js.Any])
+    
+    inline def dur(value: Double | String): this.type = set("dur", value.asInstanceOf[js.Any])
+    
+    inline def dx(value: Double | String): this.type = set("dx", value.asInstanceOf[js.Any])
+    
+    inline def dy(value: Double | String): this.type = set("dy", value.asInstanceOf[js.Any])
+    
+    inline def edgeMode(value: Double | String): this.type = set("edgeMode", value.asInstanceOf[js.Any])
+    
+    inline def elevation(value: Double | String): this.type = set("elevation", value.asInstanceOf[js.Any])
+    
+    inline def enableBackground(value: Double | String): this.type = set("enableBackground", value.asInstanceOf[js.Any])
+    
+    inline def end(value: Double | String): this.type = set("end", value.asInstanceOf[js.Any])
+    
+    inline def exponent(value: Double | String): this.type = set("exponent", value.asInstanceOf[js.Any])
+    
+    inline def externalResourcesRequired(value: Booleanish): this.type = set("externalResourcesRequired", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: String): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillOpacity(value: Double | String): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def fillRule(value: nonzero | evenodd | inherit): this.type = set("fillRule", value.asInstanceOf[js.Any])
+    
+    inline def filter(value: String): this.type = set("filter", value.asInstanceOf[js.Any])
+    
+    inline def filterRes(value: Double | String): this.type = set("filterRes", value.asInstanceOf[js.Any])
+    
+    inline def filterUnits(value: Double | String): this.type = set("filterUnits", value.asInstanceOf[js.Any])
+    
+    inline def floodColor(value: Double | String): this.type = set("floodColor", value.asInstanceOf[js.Any])
+    
+    inline def floodOpacity(value: Double | String): this.type = set("floodOpacity", value.asInstanceOf[js.Any])
+    
+    inline def focusable(value: Booleanish | auto): this.type = set("focusable", value.asInstanceOf[js.Any])
+    
+    inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def fontSize(value: Double | String): this.type = set("fontSize", value.asInstanceOf[js.Any])
+    
+    inline def fontSizeAdjust(value: Double | String): this.type = set("fontSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def fontStretch(value: Double | String): this.type = set("fontStretch", value.asInstanceOf[js.Any])
+    
+    inline def fontStyle(value: Double | String): this.type = set("fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def fontVariant(value: Double | String): this.type = set("fontVariant", value.asInstanceOf[js.Any])
+    
+    inline def fontWeight(value: Double | String): this.type = set("fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def format(value: Double | String): this.type = set("format", value.asInstanceOf[js.Any])
+    
+    inline def fr(value: Double | String): this.type = set("fr", value.asInstanceOf[js.Any])
+    
+    inline def from(value: Double | String): this.type = set("from", value.asInstanceOf[js.Any])
+    
+    inline def fx(value: Double | String): this.type = set("fx", value.asInstanceOf[js.Any])
+    
+    inline def fy(value: Double | String): this.type = set("fy", value.asInstanceOf[js.Any])
+    
+    inline def g1(value: Double | String): this.type = set("g1", value.asInstanceOf[js.Any])
+    
+    inline def g2(value: Double | String): this.type = set("g2", value.asInstanceOf[js.Any])
+    
+    inline def geography(value: Any): this.type = set("geography", value.asInstanceOf[js.Any])
+    
+    inline def glyphName(value: Double | String): this.type = set("glyphName", value.asInstanceOf[js.Any])
+    
+    inline def glyphOrientationHorizontal(value: Double | String): this.type = set("glyphOrientationHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def glyphOrientationVertical(value: Double | String): this.type = set("glyphOrientationVertical", value.asInstanceOf[js.Any])
+    
+    inline def glyphRef(value: Double | String): this.type = set("glyphRef", value.asInstanceOf[js.Any])
+    
+    inline def gradientTransform(value: String): this.type = set("gradientTransform", value.asInstanceOf[js.Any])
+    
+    inline def gradientUnits(value: String): this.type = set("gradientUnits", value.asInstanceOf[js.Any])
+    
+    inline def hanging(value: Double | String): this.type = set("hanging", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def horizAdvX(value: Double | String): this.type = set("horizAdvX", value.asInstanceOf[js.Any])
+    
+    inline def horizOriginX(value: Double | String): this.type = set("horizOriginX", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def ideographic(value: Double | String): this.type = set("ideographic", value.asInstanceOf[js.Any])
+    
+    inline def imageRendering(value: Double | String): this.type = set("imageRendering", value.asInstanceOf[js.Any])
+    
+    inline def in(value: String): this.type = set("in", value.asInstanceOf[js.Any])
+    
+    inline def in2(value: Double | String): this.type = set("in2", value.asInstanceOf[js.Any])
+    
+    inline def intercept(value: Double | String): this.type = set("intercept", value.asInstanceOf[js.Any])
+    
+    inline def k(value: Double | String): this.type = set("k", value.asInstanceOf[js.Any])
+    
+    inline def k1(value: Double | String): this.type = set("k1", value.asInstanceOf[js.Any])
+    
+    inline def k2(value: Double | String): this.type = set("k2", value.asInstanceOf[js.Any])
+    
+    inline def k3(value: Double | String): this.type = set("k3", value.asInstanceOf[js.Any])
+    
+    inline def k4(value: Double | String): this.type = set("k4", value.asInstanceOf[js.Any])
+    
+    inline def kernelMatrix(value: Double | String): this.type = set("kernelMatrix", value.asInstanceOf[js.Any])
+    
+    inline def kernelUnitLength(value: Double | String): this.type = set("kernelUnitLength", value.asInstanceOf[js.Any])
+    
+    inline def kerning(value: Double | String): this.type = set("kerning", value.asInstanceOf[js.Any])
+    
+    inline def keyPoints(value: Double | String): this.type = set("keyPoints", value.asInstanceOf[js.Any])
+    
+    inline def keySplines(value: Double | String): this.type = set("keySplines", value.asInstanceOf[js.Any])
+    
+    inline def keyTimes(value: Double | String): this.type = set("keyTimes", value.asInstanceOf[js.Any])
+    
+    inline def lang(value: String): this.type = set("lang", value.asInstanceOf[js.Any])
+    
+    inline def lengthAdjust(value: Double | String): this.type = set("lengthAdjust", value.asInstanceOf[js.Any])
+    
+    inline def letterSpacing(value: Double | String): this.type = set("letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def lightingColor(value: Double | String): this.type = set("lightingColor", value.asInstanceOf[js.Any])
+    
+    inline def limitingConeAngle(value: Double | String): this.type = set("limitingConeAngle", value.asInstanceOf[js.Any])
+    
+    inline def local(value: Double | String): this.type = set("local", value.asInstanceOf[js.Any])
+    
+    inline def markerEnd(value: String): this.type = set("markerEnd", value.asInstanceOf[js.Any])
+    
+    inline def markerHeight(value: Double | String): this.type = set("markerHeight", value.asInstanceOf[js.Any])
+    
+    inline def markerMid(value: String): this.type = set("markerMid", value.asInstanceOf[js.Any])
+    
+    inline def markerStart(value: String): this.type = set("markerStart", value.asInstanceOf[js.Any])
+    
+    inline def markerUnits(value: Double | String): this.type = set("markerUnits", value.asInstanceOf[js.Any])
+    
+    inline def markerWidth(value: Double | String): this.type = set("markerWidth", value.asInstanceOf[js.Any])
+    
+    inline def mask(value: String): this.type = set("mask", value.asInstanceOf[js.Any])
+    
+    inline def maskContentUnits(value: Double | String): this.type = set("maskContentUnits", value.asInstanceOf[js.Any])
+    
+    inline def maskUnits(value: Double | String): this.type = set("maskUnits", value.asInstanceOf[js.Any])
+    
+    inline def mathematical(value: Double | String): this.type = set("mathematical", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double | String): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def media(value: String): this.type = set("media", value.asInstanceOf[js.Any])
+    
+    inline def method(value: String): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double | String): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: Double | String): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def numOctaves(value: Double | String): this.type = set("numOctaves", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Double | String): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onAbort(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onAbort", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationEnd(value: ReactAnimationEventFrom[SVGPathElement & Element] => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: ReactAnimationEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationIteration(value: ReactAnimationEventFrom[SVGPathElement & Element] => Callback): this.type = set("onAnimationIteration", js.Any.fromFunction1((t0: ReactAnimationEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onAnimationStart(value: ReactAnimationEventFrom[SVGPathElement & Element] => Callback): this.type = set("onAnimationStart", js.Any.fromFunction1((t0: ReactAnimationEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onAuxClick(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onAuxClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onBeforeInput(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onBeforeInput", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onBlur(value: /* event */ ReactFocusEventFrom[SVGPathElement] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: /* event */ ReactFocusEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onCanPlay(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCanPlay", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCanPlayThrough(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCanPlayThrough", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onChange(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onClick(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionEnd(value: ReactCompositionEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCompositionEnd", js.Any.fromFunction1((t0: ReactCompositionEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionStart(value: ReactCompositionEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCompositionStart", js.Any.fromFunction1((t0: ReactCompositionEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCompositionUpdate(value: ReactCompositionEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCompositionUpdate", js.Any.fromFunction1((t0: ReactCompositionEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onContextMenu(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCopy(value: ReactClipboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCopy", js.Any.fromFunction1((t0: ReactClipboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onCut(value: ReactClipboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onCut", js.Any.fromFunction1((t0: ReactClipboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDoubleClick(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDrag(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDrag", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEnd(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragEnd", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragEnter(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragEnter", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragExit(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragExit", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragLeave(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragLeave", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragOver(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragOver", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDragStart(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDragStart", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDrop(value: ReactDragEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: ReactDragEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onDurationChange(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onDurationChange", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onEmptied(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onEmptied", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onEncrypted(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onEncrypted", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onEnded(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onEnded", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onError(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onFocus(value: /* event */ ReactFocusEventFrom[SVGPathElement] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: /* event */ ReactFocusEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onInput(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onInput", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onInvalid(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onInvalid", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyPress(value: ReactKeyboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyUp(value: ReactKeyboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoad(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onLoad", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadStart(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onLoadStart", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedData(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onLoadedData", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onLoadedMetadata(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onLoadedMetadata", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseDown(value: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onMouseEnter(value: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onMouseLeave(value: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOut(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onMouseOut", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseOver(value: ReactMouseEventFrom[SVGPathElement & Element] => Callback): this.type = set("onMouseOver", js.Any.fromFunction1((t0: ReactMouseEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onMouseUp(value: /* event */ ReactMouseEventFrom[SVGPathElement] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[SVGPathElement]) => value(t0).runNow()))
+    
+    inline def onPaste(value: ReactClipboardEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPaste", js.Any.fromFunction1((t0: ReactClipboardEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPause(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlay(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPlaying(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPlaying", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancel(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerDown(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnter(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeave(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerMove(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOut(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerOut", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerOver(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerOver", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onPointerUp(value: ReactPointerEventFrom[SVGPathElement & Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactPointerEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onProgress(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onProgress", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onRateChange(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onRateChange", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onReset(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onReset", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onScroll(value: ReactUIEventFrom[SVGPathElement & Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeeked(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onSeeked", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onSeeking(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onSeeking", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onSelect(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onStalled(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onStalled", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onSubmit(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onSubmit", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onSuspend(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onSuspend", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTimeUpdate(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTimeUpdate", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchCancel(value: ReactTouchEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactTouchEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: ReactTouchEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: ReactTouchEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactTouchEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: ReactTouchEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onTransitionEnd(value: ReactTransitionEventFrom[SVGPathElement & Element] => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: ReactTransitionEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onVolumeChange(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onVolumeChange", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onWaiting(value: ReactEventFrom[SVGPathElement & Element] => Callback): this.type = set("onWaiting", js.Any.fromFunction1((t0: ReactEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def onWheel(value: ReactWheelEventFrom[SVGPathElement & Element] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[SVGPathElement & Element]) => value(t0).runNow()))
+    
+    inline def opacity(value: Double | String): this.type = set("opacity", value.asInstanceOf[js.Any])
+    
+    inline def operator(value: Double | String): this.type = set("operator", value.asInstanceOf[js.Any])
+    
+    inline def order(value: Double | String): this.type = set("order", value.asInstanceOf[js.Any])
+    
+    inline def orient(value: Double | String): this.type = set("orient", value.asInstanceOf[js.Any])
+    
+    inline def orientation(value: Double | String): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
+    inline def origin(value: Double | String): this.type = set("origin", value.asInstanceOf[js.Any])
+    
+    inline def overflow(value: Double | String): this.type = set("overflow", value.asInstanceOf[js.Any])
+    
+    inline def overlinePosition(value: Double | String): this.type = set("overlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def overlineThickness(value: Double | String): this.type = set("overlineThickness", value.asInstanceOf[js.Any])
+    
+    inline def paintOrder(value: Double | String): this.type = set("paintOrder", value.asInstanceOf[js.Any])
+    
+    inline def panose1(value: Double | String): this.type = set("panose1", value.asInstanceOf[js.Any])
+    
+    inline def path(value: String): this.type = set("path", value.asInstanceOf[js.Any])
+    
+    inline def pathLength(value: Double | String): this.type = set("pathLength", value.asInstanceOf[js.Any])
+    
+    inline def patternContentUnits(value: String): this.type = set("patternContentUnits", value.asInstanceOf[js.Any])
+    
+    inline def patternTransform(value: Double | String): this.type = set("patternTransform", value.asInstanceOf[js.Any])
+    
+    inline def patternUnits(value: String): this.type = set("patternUnits", value.asInstanceOf[js.Any])
+    
+    inline def pointerEvents(value: Double | String): this.type = set("pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def points(value: String): this.type = set("points", value.asInstanceOf[js.Any])
+    
+    inline def pointsAtX(value: Double | String): this.type = set("pointsAtX", value.asInstanceOf[js.Any])
+    
+    inline def pointsAtY(value: Double | String): this.type = set("pointsAtY", value.asInstanceOf[js.Any])
+    
+    inline def pointsAtZ(value: Double | String): this.type = set("pointsAtZ", value.asInstanceOf[js.Any])
+    
+    inline def preserveAlpha(value: Booleanish): this.type = set("preserveAlpha", value.asInstanceOf[js.Any])
+    
+    inline def preserveAspectRatio(value: String): this.type = set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def primitiveUnits(value: Double | String): this.type = set("primitiveUnits", value.asInstanceOf[js.Any])
+    
+    inline def r(value: Double | String): this.type = set("r", value.asInstanceOf[js.Any])
+    
+    inline def radius(value: Double | String): this.type = set("radius", value.asInstanceOf[js.Any])
+    
+    inline def refX(value: Double | String): this.type = set("refX", value.asInstanceOf[js.Any])
+    
+    inline def refY(value: Double | String): this.type = set("refY", value.asInstanceOf[js.Any])
+    
+    inline def renderingIntent(value: Double | String): this.type = set("renderingIntent", value.asInstanceOf[js.Any])
+    
+    inline def repeatCount(value: Double | String): this.type = set("repeatCount", value.asInstanceOf[js.Any])
+    
+    inline def repeatDur(value: Double | String): this.type = set("repeatDur", value.asInstanceOf[js.Any])
+    
+    inline def requiredExtensions(value: Double | String): this.type = set("requiredExtensions", value.asInstanceOf[js.Any])
+    
+    inline def requiredFeatures(value: Double | String): this.type = set("requiredFeatures", value.asInstanceOf[js.Any])
+    
+    inline def restart(value: Double | String): this.type = set("restart", value.asInstanceOf[js.Any])
+    
+    inline def result(value: String): this.type = set("result", value.asInstanceOf[js.Any])
+    
+    inline def role(value: AriaRole): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: Double | String): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def rx(value: Double | String): this.type = set("rx", value.asInstanceOf[js.Any])
+    
+    inline def ry(value: Double | String): this.type = set("ry", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: Double | String): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def seed(value: Double | String): this.type = set("seed", value.asInstanceOf[js.Any])
+    
+    inline def shapeRendering(value: Double | String): this.type = set("shapeRendering", value.asInstanceOf[js.Any])
+    
+    inline def slope(value: Double | String): this.type = set("slope", value.asInstanceOf[js.Any])
+    
+    inline def spacing(value: Double | String): this.type = set("spacing", value.asInstanceOf[js.Any])
+    
+    inline def specularConstant(value: Double | String): this.type = set("specularConstant", value.asInstanceOf[js.Any])
+    
+    inline def specularExponent(value: Double | String): this.type = set("specularExponent", value.asInstanceOf[js.Any])
+    
+    inline def speed(value: Double | String): this.type = set("speed", value.asInstanceOf[js.Any])
+    
+    inline def spreadMethod(value: String): this.type = set("spreadMethod", value.asInstanceOf[js.Any])
+    
+    inline def startOffset(value: Double | String): this.type = set("startOffset", value.asInstanceOf[js.Any])
+    
+    inline def stdDeviation(value: Double | String): this.type = set("stdDeviation", value.asInstanceOf[js.Any])
+    
+    inline def stemh(value: Double | String): this.type = set("stemh", value.asInstanceOf[js.Any])
+    
+    inline def stemv(value: Double | String): this.type = set("stemv", value.asInstanceOf[js.Any])
+    
+    inline def stitchTiles(value: Double | String): this.type = set("stitchTiles", value.asInstanceOf[js.Any])
+    
+    inline def stopColor(value: String): this.type = set("stopColor", value.asInstanceOf[js.Any])
+    
+    inline def stopOpacity(value: Double | String): this.type = set("stopOpacity", value.asInstanceOf[js.Any])
+    
+    inline def strikethroughPosition(value: Double | String): this.type = set("strikethroughPosition", value.asInstanceOf[js.Any])
+    
+    inline def strikethroughThickness(value: Double | String): this.type = set("strikethroughThickness", value.asInstanceOf[js.Any])
+    
+    inline def string(value: Double | String): this.type = set("string", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: String): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def strokeDasharray(value: String | Double): this.type = set("strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def strokeDashoffset(value: String | Double): this.type = set("strokeDashoffset", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinecap(value: butt | round | square | inherit): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinejoin(value: miter | round | bevel | inherit): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def strokeMiterlimit(value: Double | String): this.type = set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def strokeOpacity(value: Double | String): this.type = set("strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def strokeWidth(value: Double | String): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Default): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def surfaceScale(value: Double | String): this.type = set("surfaceScale", value.asInstanceOf[js.Any])
+    
+    inline def systemLanguage(value: Double | String): this.type = set("systemLanguage", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def tableValues(value: Double | String): this.type = set("tableValues", value.asInstanceOf[js.Any])
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def targetX(value: Double | String): this.type = set("targetX", value.asInstanceOf[js.Any])
+    
+    inline def targetY(value: Double | String): this.type = set("targetY", value.asInstanceOf[js.Any])
+    
+    inline def textAnchor(value: String): this.type = set("textAnchor", value.asInstanceOf[js.Any])
+    
+    inline def textDecoration(value: Double | String): this.type = set("textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def textLength(value: Double | String): this.type = set("textLength", value.asInstanceOf[js.Any])
+    
+    inline def textRendering(value: Double | String): this.type = set("textRendering", value.asInstanceOf[js.Any])
+    
+    inline def to(value: Double | String): this.type = set("to", value.asInstanceOf[js.Any])
+    
+    inline def transform(value: String): this.type = set("transform", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def u1(value: Double | String): this.type = set("u1", value.asInstanceOf[js.Any])
+    
+    inline def u2(value: Double | String): this.type = set("u2", value.asInstanceOf[js.Any])
+    
+    inline def underlinePosition(value: Double | String): this.type = set("underlinePosition", value.asInstanceOf[js.Any])
+    
+    inline def underlineThickness(value: Double | String): this.type = set("underlineThickness", value.asInstanceOf[js.Any])
+    
+    inline def unicode(value: Double | String): this.type = set("unicode", value.asInstanceOf[js.Any])
+    
+    inline def unicodeBidi(value: Double | String): this.type = set("unicodeBidi", value.asInstanceOf[js.Any])
+    
+    inline def unicodeRange(value: Double | String): this.type = set("unicodeRange", value.asInstanceOf[js.Any])
+    
+    inline def unitsPerEm(value: Double | String): this.type = set("unitsPerEm", value.asInstanceOf[js.Any])
+    
+    inline def vAlphabetic(value: Double | String): this.type = set("vAlphabetic", value.asInstanceOf[js.Any])
+    
+    inline def vHanging(value: Double | String): this.type = set("vHanging", value.asInstanceOf[js.Any])
+    
+    inline def vIdeographic(value: Double | String): this.type = set("vIdeographic", value.asInstanceOf[js.Any])
+    
+    inline def vMathematical(value: Double | String): this.type = set("vMathematical", value.asInstanceOf[js.Any])
+    
+    inline def values(value: String): this.type = set("values", value.asInstanceOf[js.Any])
+    
+    inline def vectorEffect(value: Double | String): this.type = set("vectorEffect", value.asInstanceOf[js.Any])
+    
+    inline def version(value: String): this.type = set("version", value.asInstanceOf[js.Any])
+    
+    inline def vertAdvY(value: Double | String): this.type = set("vertAdvY", value.asInstanceOf[js.Any])
+    
+    inline def vertOriginX(value: Double | String): this.type = set("vertOriginX", value.asInstanceOf[js.Any])
+    
+    inline def vertOriginY(value: Double | String): this.type = set("vertOriginY", value.asInstanceOf[js.Any])
+    
+    inline def viewBox(value: String): this.type = set("viewBox", value.asInstanceOf[js.Any])
+    
+    inline def viewTarget(value: Double | String): this.type = set("viewTarget", value.asInstanceOf[js.Any])
+    
+    inline def visibility(value: Double | String): this.type = set("visibility", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def widths(value: Double | String): this.type = set("widths", value.asInstanceOf[js.Any])
+    
+    inline def wordSpacing(value: Double | String): this.type = set("wordSpacing", value.asInstanceOf[js.Any])
+    
+    inline def writingMode(value: Double | String): this.type = set("writingMode", value.asInstanceOf[js.Any])
+    
+    inline def x(value: Double | String): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def x1(value: Double | String): this.type = set("x1", value.asInstanceOf[js.Any])
+    
+    inline def x2(value: Double | String): this.type = set("x2", value.asInstanceOf[js.Any])
+    
+    inline def xChannelSelector(value: String): this.type = set("xChannelSelector", value.asInstanceOf[js.Any])
+    
+    inline def xHeight(value: Double | String): this.type = set("xHeight", value.asInstanceOf[js.Any])
+    
+    inline def xlinkActuate(value: String): this.type = set("xlinkActuate", value.asInstanceOf[js.Any])
+    
+    inline def xlinkArcrole(value: String): this.type = set("xlinkArcrole", value.asInstanceOf[js.Any])
+    
+    inline def xlinkHref(value: String): this.type = set("xlinkHref", value.asInstanceOf[js.Any])
+    
+    inline def xlinkRole(value: String): this.type = set("xlinkRole", value.asInstanceOf[js.Any])
+    
+    inline def xlinkShow(value: String): this.type = set("xlinkShow", value.asInstanceOf[js.Any])
+    
+    inline def xlinkTitle(value: String): this.type = set("xlinkTitle", value.asInstanceOf[js.Any])
+    
+    inline def xlinkType(value: String): this.type = set("xlinkType", value.asInstanceOf[js.Any])
+    
+    inline def xmlBase(value: String): this.type = set("xmlBase", value.asInstanceOf[js.Any])
+    
+    inline def xmlLang(value: String): this.type = set("xmlLang", value.asInstanceOf[js.Any])
+    
+    inline def xmlSpace(value: String): this.type = set("xmlSpace", value.asInstanceOf[js.Any])
+    
+    inline def xmlns(value: String): this.type = set("xmlns", value.asInstanceOf[js.Any])
+    
+    inline def xmlnsXlink(value: String): this.type = set("xmlnsXlink", value.asInstanceOf[js.Any])
+    
+    inline def y(value: Double | String): this.type = set("y", value.asInstanceOf[js.Any])
+    
+    inline def y1(value: Double | String): this.type = set("y1", value.asInstanceOf[js.Any])
+    
+    inline def y2(value: Double | String): this.type = set("y2", value.asInstanceOf[js.Any])
+    
+    inline def yChannelSelector(value: String): this.type = set("yChannelSelector", value.asInstanceOf[js.Any])
+    
+    inline def z(value: Double | String): this.type = set("z", value.asInstanceOf[js.Any])
+    
+    inline def zoomAndPan(value: String): this.type = set("zoomAndPan", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Geography.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: GeographyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

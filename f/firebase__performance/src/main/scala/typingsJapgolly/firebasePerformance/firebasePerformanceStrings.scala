@@ -1,156 +1,142 @@
 package typingsJapgolly.firebasePerformance
 
-import typingsJapgolly.firebasePerformance.apiServiceMod.EntryType
-import typingsJapgolly.firebasePerformance.errorsMod.ErrorCode
+import typingsJapgolly.firebasePerformance.distSrcServicesApiServiceMod.EntryType
+import typingsJapgolly.firebasePerformance.distSrcUtilsErrorsMod.ErrorCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebasePerformanceStrings {
-  @js.native
-  sealed trait `@firebaseSlashperformanceSlashconfig` extends js.Object
   
   @js.native
-  sealed trait `@firebaseSlashperformanceSlashconfigexpire` extends js.Object
+  sealed trait `FB not default`
+    extends StObject
+       with ErrorCode
+  inline def `FB not default`: `FB not default` = ("FB not default").asInstanceOf[`FB not default`]
   
   @js.native
-  sealed trait `FB not default` extends ErrorCode
+  sealed trait `RC response not ok`
+    extends StObject
+       with ErrorCode
+  inline def `RC response not ok`: `RC response not ok` = ("RC response not ok").asInstanceOf[`RC response not ok`]
   
   @js.native
-  sealed trait `FB-PERF-TRACE-MEASURE` extends js.Object
+  sealed trait `already initialized`
+    extends StObject
+       with ErrorCode
+  inline def `already initialized`: `already initialized` = ("already initialized").asInstanceOf[`already initialized`]
   
   @js.native
-  sealed trait `FB-PERF-TRACE-START` extends js.Object
+  sealed trait frame
+    extends StObject
+       with EntryType
+  inline def frame: frame = "frame".asInstanceOf[frame]
   
   @js.native
-  sealed trait `FB-PERF-TRACE-STOP` extends js.Object
+  sealed trait `invalid String merger input`
+    extends StObject
+       with ErrorCode
+  inline def `invalid String merger input`: `invalid String merger input` = ("invalid String merger input").asInstanceOf[`invalid String merger input`]
   
   @js.native
-  sealed trait Performance extends js.Object
+  sealed trait `invalid attribute name`
+    extends StObject
+       with ErrorCode
+  inline def `invalid attribute name`: `invalid attribute name` = ("invalid attribute name").asInstanceOf[`invalid attribute name`]
   
   @js.native
-  sealed trait `RC response not ok` extends ErrorCode
+  sealed trait `invalid attribute value`
+    extends StObject
+       with ErrorCode
+  inline def `invalid attribute value`: `invalid attribute value` = ("invalid attribute value").asInstanceOf[`invalid attribute value`]
   
   @js.native
-  sealed trait _fcp extends js.Object
+  sealed trait `invalid cc log`
+    extends StObject
+       with ErrorCode
+  inline def `invalid cc log`: `invalid cc log` = ("invalid cc log").asInstanceOf[`invalid cc log`]
   
   @js.native
-  sealed trait _fid extends js.Object
+  sealed trait `invalid custom metric name`
+    extends StObject
+       with ErrorCode
+  inline def `invalid custom metric name`: `invalid custom metric name` = ("invalid custom metric name").asInstanceOf[`invalid custom metric name`]
   
   @js.native
-  sealed trait _fp extends js.Object
+  sealed trait mark
+    extends StObject
+       with EntryType
+  inline def mark: mark = "mark".asInstanceOf[mark]
   
   @js.native
-  sealed trait _wt_ extends js.Object
+  sealed trait measure
+    extends StObject
+       with EntryType
+  inline def measure: measure = "measure".asInstanceOf[measure]
   
   @js.native
-  sealed trait frame extends EntryType
+  sealed trait navigation
+    extends StObject
+       with EntryType
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait `invalid attribute name` extends ErrorCode
+  sealed trait `no api key`
+    extends StObject
+       with ErrorCode
+  inline def `no api key`: `no api key` = ("no api key").asInstanceOf[`no api key`]
   
   @js.native
-  sealed trait `invalid attribute value` extends ErrorCode
+  sealed trait `no app id`
+    extends StObject
+       with ErrorCode
+  inline def `no app id`: `no app id` = ("no app id").asInstanceOf[`no app id`]
   
   @js.native
-  sealed trait `invalid cc log` extends ErrorCode
+  sealed trait `no project id`
+    extends StObject
+       with ErrorCode
+  inline def `no project id`: `no project id` = ("no project id").asInstanceOf[`no project id`]
   
   @js.native
-  sealed trait `invalide custom metric name` extends ErrorCode
+  sealed trait `no window`
+    extends StObject
+       with ErrorCode
+  inline def `no window`: `no window` = ("no window").asInstanceOf[`no window`]
   
   @js.native
-  sealed trait mark extends EntryType
+  sealed trait `nonpositive trace duration`
+    extends StObject
+       with ErrorCode
+  inline def `nonpositive trace duration`: `nonpositive trace duration` = ("nonpositive trace duration").asInstanceOf[`nonpositive trace duration`]
   
   @js.native
-  sealed trait measure extends EntryType
+  sealed trait `nonpositive trace startTime`
+    extends StObject
+       with ErrorCode
+  inline def `nonpositive trace startTime`: `nonpositive trace startTime` = ("nonpositive trace startTime").asInstanceOf[`nonpositive trace startTime`]
   
   @js.native
-  sealed trait navigation extends EntryType
+  sealed trait paint
+    extends StObject
+       with EntryType
+  inline def paint: paint = "paint".asInstanceOf[paint]
   
   @js.native
-  sealed trait `no api key` extends ErrorCode
+  sealed trait resource
+    extends StObject
+       with EntryType
+  inline def resource: resource = "resource".asInstanceOf[resource]
   
   @js.native
-  sealed trait `no app id` extends ErrorCode
+  sealed trait `trace started`
+    extends StObject
+       with ErrorCode
+  inline def `trace started`: `trace started` = ("trace started").asInstanceOf[`trace started`]
   
   @js.native
-  sealed trait `no project id` extends ErrorCode
-  
-  @js.native
-  sealed trait `no window` extends ErrorCode
-  
-  @js.native
-  sealed trait paint extends EntryType
-  
-  @js.native
-  sealed trait performance_ extends js.Object
-  
-  @js.native
-  sealed trait resource extends EntryType
-  
-  @js.native
-  sealed trait `trace started` extends ErrorCode
-  
-  @js.native
-  sealed trait `trace stopped` extends ErrorCode
-  
-  @scala.inline
-  def `@firebaseSlashperformanceSlashconfig`: `@firebaseSlashperformanceSlashconfig` = "@firebase/performance/config".asInstanceOf[`@firebaseSlashperformanceSlashconfig`]
-  @scala.inline
-  def `@firebaseSlashperformanceSlashconfigexpire`: `@firebaseSlashperformanceSlashconfigexpire` = "@firebase/performance/configexpire".asInstanceOf[`@firebaseSlashperformanceSlashconfigexpire`]
-  @scala.inline
-  def `FB not default`: `FB not default` = "FB not default".asInstanceOf[`FB not default`]
-  @scala.inline
-  def `FB-PERF-TRACE-MEASURE`: `FB-PERF-TRACE-MEASURE` = "FB-PERF-TRACE-MEASURE".asInstanceOf[`FB-PERF-TRACE-MEASURE`]
-  @scala.inline
-  def `FB-PERF-TRACE-START`: `FB-PERF-TRACE-START` = "FB-PERF-TRACE-START".asInstanceOf[`FB-PERF-TRACE-START`]
-  @scala.inline
-  def `FB-PERF-TRACE-STOP`: `FB-PERF-TRACE-STOP` = "FB-PERF-TRACE-STOP".asInstanceOf[`FB-PERF-TRACE-STOP`]
-  @scala.inline
-  def Performance: Performance = "Performance".asInstanceOf[Performance]
-  @scala.inline
-  def `RC response not ok`: `RC response not ok` = "RC response not ok".asInstanceOf[`RC response not ok`]
-  @scala.inline
-  def _fcp: _fcp = "_fcp".asInstanceOf[_fcp]
-  @scala.inline
-  def _fid: _fid = "_fid".asInstanceOf[_fid]
-  @scala.inline
-  def _fp: _fp = "_fp".asInstanceOf[_fp]
-  @scala.inline
-  def _wt_ : _wt_ = "_wt_".asInstanceOf[_wt_]
-  @scala.inline
-  def frame: frame = "frame".asInstanceOf[frame]
-  @scala.inline
-  def `invalid attribute name`: `invalid attribute name` = "invalid attribute name".asInstanceOf[`invalid attribute name`]
-  @scala.inline
-  def `invalid attribute value`: `invalid attribute value` = "invalid attribute value".asInstanceOf[`invalid attribute value`]
-  @scala.inline
-  def `invalid cc log`: `invalid cc log` = "invalid cc log".asInstanceOf[`invalid cc log`]
-  @scala.inline
-  def `invalide custom metric name`: `invalide custom metric name` = "invalide custom metric name".asInstanceOf[`invalide custom metric name`]
-  @scala.inline
-  def mark: mark = "mark".asInstanceOf[mark]
-  @scala.inline
-  def measure: measure = "measure".asInstanceOf[measure]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
-  @scala.inline
-  def `no api key`: `no api key` = "no api key".asInstanceOf[`no api key`]
-  @scala.inline
-  def `no app id`: `no app id` = "no app id".asInstanceOf[`no app id`]
-  @scala.inline
-  def `no project id`: `no project id` = "no project id".asInstanceOf[`no project id`]
-  @scala.inline
-  def `no window`: `no window` = "no window".asInstanceOf[`no window`]
-  @scala.inline
-  def paint: paint = "paint".asInstanceOf[paint]
-  @scala.inline
-  def performance_ : performance_ = "performance".asInstanceOf[performance_]
-  @scala.inline
-  def resource: resource = "resource".asInstanceOf[resource]
-  @scala.inline
-  def `trace started`: `trace started` = "trace started".asInstanceOf[`trace started`]
-  @scala.inline
-  def `trace stopped`: `trace stopped` = "trace stopped".asInstanceOf[`trace stopped`]
+  sealed trait `trace stopped`
+    extends StObject
+       with ErrorCode
+  inline def `trace stopped`: `trace stopped` = ("trace stopped").asInstanceOf[`trace stopped`]
 }
-

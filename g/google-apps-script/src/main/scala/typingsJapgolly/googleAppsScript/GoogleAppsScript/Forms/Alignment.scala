@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Alignment extends js.Object
-
+sealed trait Alignment extends StObject
 /**
   * An enum representing the supported types of image alignment. Alignment types can be accessed from
   * FormApp.Alignment.
@@ -21,26 +19,20 @@ sealed trait Alignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.Alignment")
 @js.native
-object Alignment extends js.Object {
-  @js.native
-  sealed trait CENTER extends Alignment
+object Alignment extends StObject {
   
   @js.native
-  sealed trait LEFT extends Alignment
+  sealed trait CENTER
+    extends StObject
+       with Alignment
   
   @js.native
-  sealed trait RIGHT extends Alignment
+  sealed trait LEFT
+    extends StObject
+       with Alignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Alignment with Double] = js.native
-  /* 1 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
-  
-  /* 0 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
-  
-  /* 2 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
-  
+  @js.native
+  sealed trait RIGHT
+    extends StObject
+       with Alignment
 }
-

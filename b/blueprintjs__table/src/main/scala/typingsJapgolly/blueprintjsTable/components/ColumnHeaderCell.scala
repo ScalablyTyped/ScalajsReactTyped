@@ -1,71 +1,58 @@
 package typingsJapgolly.blueprintjsTable.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsIcons.iconNameMod.IconName
-import typingsJapgolly.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import typingsJapgolly.blueprintjsTable.libEsmHeadersColumnHeaderCellMod.IColumnHeaderCellProps
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColumnHeaderCell {
-  def apply(
-    className: String = null,
-    enableColumnReordering: js.UndefOr[Boolean] = js.undefined,
-    index: Int | Double = null,
-    isActive: js.UndefOr[Boolean] = js.undefined,
-    isColumnSelected: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    menuIcon: IconName | Element = null,
-    menuRenderer: /* index */ js.UndefOr[Double] => CallbackTo[Element] = null,
-    name: String = null,
-    nameRenderer: (/* name */ String, /* index */ js.UndefOr[Double]) => CallbackTo[Element] = null,
-    reorderHandle: VdomElement = null,
-    resizeHandle: typingsJapgolly.blueprintjsTable.resizeHandleMod.ResizeHandle = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IColumnHeaderCellProps, 
-    typingsJapgolly.blueprintjsTable.mod.ColumnHeaderCell, 
-    Unit, 
-    IColumnHeaderCellProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(isActive)) __obj.updateDynamic("isActive")(isActive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isColumnSelected)) __obj.updateDynamic("isColumnSelected")(isColumnSelected.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (menuIcon != null) __obj.updateDynamic("menuIcon")(menuIcon.asInstanceOf[js.Any])
-    if (menuRenderer != null) __obj.updateDynamic("menuRenderer")(js.Any.fromFunction1((t0: /* index */ js.UndefOr[scala.Double]) => menuRenderer(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nameRenderer != null) __obj.updateDynamic("nameRenderer")(js.Any.fromFunction2((t0: /* name */ java.lang.String, t1: /* index */ js.UndefOr[scala.Double]) => nameRenderer(t0, t1).runNow()))
-    if (reorderHandle != null) __obj.updateDynamic("reorderHandle")(reorderHandle.rawElement.asInstanceOf[js.Any])
-    if (resizeHandle != null) __obj.updateDynamic("resizeHandle")(resizeHandle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.mod.ColumnHeaderCell](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.columnHeaderCellMod.IColumnHeaderCellProps])(children: _*)
-  }
   @JSImport("@blueprintjs/table", "ColumnHeaderCell")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.mod.ColumnHeaderCell] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def enableColumnReordering(value: Boolean): this.type = set("enableColumnReordering", value.asInstanceOf[js.Any])
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def isActive(value: Boolean): this.type = set("isActive", value.asInstanceOf[js.Any])
+    
+    inline def isColumnSelected(value: Boolean): this.type = set("isColumnSelected", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def menuIcon(value: BlueprintIcons16Id | Element): this.type = set("menuIcon", value.asInstanceOf[js.Any])
+    
+    inline def menuIconVdomElement(value: VdomElement): this.type = set("menuIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def menuRenderer(value: /* index */ js.UndefOr[Double] => Element): this.type = set("menuRenderer", js.Any.fromFunction1(value))
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def nameRenderer(
+      value: (/* name */ String, /* index */ js.UndefOr[Double]) => japgolly.scalajs.react.facade.React.Element
+    ): this.type = set("nameRenderer", js.Any.fromFunction2(value))
+    
+    inline def reorderHandle(value: VdomElement): this.type = set("reorderHandle", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def resizeHandle(value: typingsJapgolly.blueprintjsTable.libEsmInteractionsResizeHandleMod.ResizeHandle): this.type = set("resizeHandle", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ColumnHeaderCell.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IColumnHeaderCellProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

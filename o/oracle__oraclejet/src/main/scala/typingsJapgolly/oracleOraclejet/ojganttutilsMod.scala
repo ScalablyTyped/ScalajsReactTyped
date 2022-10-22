@@ -1,13 +1,16 @@
 package typingsJapgolly.oracleOraclejet
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.oracleOraclejet.anon.MajorAxis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojganttutils", JSImport.Namespace)
-@js.native
-object ojganttutilsMod extends js.Object {
-  def computeTableColumnHeaderHeight(table: Element, gantt: Element, axisInfo: AnonMajorAxis): Double = js.native
+object ojganttutilsMod {
+  
+  @JSImport("@oracle/oraclejet/ojganttutils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def computeTableColumnHeaderHeight(table: Element, gantt: Element, axisInfo: MajorAxis): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeTableColumnHeaderHeight")(table.asInstanceOf[js.Any], gantt.asInstanceOf[js.Any], axisInfo.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

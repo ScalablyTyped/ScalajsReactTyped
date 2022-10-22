@@ -1,24 +1,20 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Add
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Remove
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Replace
 */
-trait NxPatchOpType extends js.Object
-
+trait NxPatchOpType extends StObject
 object NxPatchOpType {
-  @scala.inline
-  def Add: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Add = this.cast("Add")
-  @scala.inline
-  def Remove: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Remove = this.cast("Remove")
-  @scala.inline
-  def Replace: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Replace = this.cast("Replace")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Add: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Add = "Add".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Add]
+  
+  inline def Remove: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Remove = "Remove".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Remove]
+  
+  inline def Replace: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Replace = "Replace".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Replace]
 }
-

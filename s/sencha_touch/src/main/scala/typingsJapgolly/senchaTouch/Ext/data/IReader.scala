@@ -2,286 +2,280 @@ package typingsJapgolly.senchaTouch.Ext.data
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.senchaTouch.Ext.Array
-import typingsJapgolly.senchaTouch.Ext.IClass
 import typingsJapgolly.senchaTouch.Ext.mixin.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IReader extends IObservable {
+trait IReader
+  extends StObject
+     with IObservable {
+  
   /** [Config Option] (String) */
   var clientIdProperty: js.UndefOr[String] = js.undefined
+  
   /** [Method] Returns the value of clientIdProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getClientIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of idProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getIdProperty: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of implicitIncludes
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getImplicitIncludes: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of messageProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getMessageProperty: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of model
-  		* @returns Object
-  		*/
-  var getModel: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getModel: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Takes a raw response object as passed to this read and returns the useful data segment of it
-  		* @param response Object The response object
-  		* @returns Object The useful data from the response
-  		*/
-  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], _]] = js.undefined
+    * @param response Object The response object
+    * @returns Object The useful data from the response
+    */
+  var getResponseData: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], Any]] = js.undefined
+  
   /** [Method] Returns the value of rootProperty
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getRootProperty: js.UndefOr[js.Function0[String]] = js.undefined
+  
   /** [Method] Returns the value of successProperty
-  		* @returns any
-  		*/
-  var getSuccessProperty: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns any
+    */
+  var getSuccessProperty: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of totalProperty
-  		* @returns any
-  		*/
-  var getTotalProperty: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns any
+    */
+  var getTotalProperty: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (String) */
   var idProperty: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var implicitIncludes: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var messageProperty: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Object) */
-  var metaData: js.UndefOr[js.Any] = js.undefined
+  var metaData: js.UndefOr[Any] = js.undefined
+  
   /** [Property] (Object) */
-  var rawData: js.UndefOr[js.Any] = js.undefined
+  var rawData: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Reads the given response object
-  		* @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
-  		* @returns Ext.data.ResultSet The parsed ResultSet object
-  		*/
-  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+    * @param response Object The response object. This may be either an XMLHttpRequest object or a plain JS object
+    * @returns Ext.data.ResultSet The parsed ResultSet object
+    */
+  var read: js.UndefOr[js.Function1[/* response */ js.UndefOr[Any], IResultSet]] = js.undefined
+  
   /** [Method] Abstracts common functionality used by all Reader subclasses
-  		* @param data Object The raw data object
-  		* @returns Ext.data.ResultSet A ResultSet object
-  		*/
-  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], IResultSet]] = js.undefined
+    * @param data Object The raw data object
+    * @returns Ext.data.ResultSet A ResultSet object
+    */
+  var readRecords: js.UndefOr[js.Function1[/* data */ js.UndefOr[Any], IResultSet]] = js.undefined
+  
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
-  		* @param object Object The Observable whose events this object is to relay.
-  		* @param events String/Array/Object Array of event names to relay.
-  		* @returns Ext.mixin.Observable this
-  		*/
+    * @param object Object The Observable whose events this object is to relay.
+    * @param events String/Array/Object Array of event names to relay.
+    * @returns Ext.mixin.Observable this
+    */
   @JSName("relayEvents")
   var relayEvents_IReader: js.UndefOr[
-    js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
+    js.Function2[/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any], IObservable]
   ] = js.undefined
+  
   /** [Config Option] (String) */
   var root: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var rootProperty: js.UndefOr[String] = js.undefined
+  
   /** [Method] Sets the value of clientIdProperty
-  		* @param clientIdProperty String The new value.
-  		*/
+    * @param clientIdProperty String The new value.
+    */
   var setClientIdProperty: js.UndefOr[js.Function1[/* clientIdProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of idProperty
-  		* @param idProperty String The new value.
-  		*/
+    * @param idProperty String The new value.
+    */
   var setIdProperty: js.UndefOr[js.Function1[/* idProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of implicitIncludes
-  		* @param implicitIncludes Boolean The new value.
-  		*/
+    * @param implicitIncludes Boolean The new value.
+    */
   var setImplicitIncludes: js.UndefOr[js.Function1[/* implicitIncludes */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of messageProperty
-  		* @param messageProperty String The new value.
-  		*/
+    * @param messageProperty String The new value.
+    */
   var setMessageProperty: js.UndefOr[js.Function1[/* messageProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of model
-  		* @param model Object The new value.
-  		*/
-  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param model Object The new value.
+    */
+  var setModel: js.UndefOr[js.Function1[/* model */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of rootProperty
-  		* @param rootProperty String The new value.
-  		*/
+    * @param rootProperty String The new value.
+    */
   var setRootProperty: js.UndefOr[js.Function1[/* rootProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of successProperty
-  		* @param successProperty String The new value.
-  		*/
+    * @param successProperty String The new value.
+    */
   var setSuccessProperty: js.UndefOr[js.Function1[/* successProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of totalProperty
-  		* @param totalProperty String The new value.
-  		*/
+    * @param totalProperty String The new value.
+    */
   var setTotalProperty: js.UndefOr[js.Function1[/* totalProperty */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var successProperty: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var totalProperty: js.UndefOr[String] = js.undefined
 }
-
 object IReader {
-  @scala.inline
-  def apply(
-    addAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    addBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    addEvents: /* eventNames */ js.UndefOr[js.Any] => Callback = null,
-    addListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    addManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    bubbleEvents: js.Any = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    clearListeners: js.UndefOr[Callback] = js.undefined,
-    clientIdProperty: String = null,
-    config: js.Any = null,
-    destroy: js.UndefOr[Callback] = js.undefined,
-    enableBubble: /* events */ js.UndefOr[js.Any] => Callback = null,
-    extend: String = null,
-    fireAction: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    fireEvent: (/* eventName */ String, /* repeated */ js.Any) => CallbackTo[Boolean] = null,
-    getBubbleEvents: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getClientIdProperty: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getId: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getIdProperty: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getImplicitIncludes: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getListeners: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getMessageProperty: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getModel: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getResponseData: /* response */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    getRootProperty: js.UndefOr[CallbackTo[String]] = js.undefined,
-    getSuccessProperty: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getTotalProperty: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    hasListener: /* eventName */ js.UndefOr[String] => CallbackTo[Boolean] = null,
-    idProperty: String = null,
-    implicitIncludes: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* instanceConfig */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    listeners: js.Any = null,
-    messageProperty: String = null,
-    metaData: js.Any = null,
-    mixins: js.Any = null,
-    mon: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    mun: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Callback = null,
-    on: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    onAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    onBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    platformConfig: js.Any = null,
-    rawData: js.Any = null,
-    read: /* response */ js.UndefOr[js.Any] => CallbackTo[IResultSet] = null,
-    readRecords: /* data */ js.UndefOr[js.Any] => CallbackTo[IResultSet] = null,
-    relayEvents: (/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any]) => CallbackTo[IObservable] = null,
-    removeAfterListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    removeBeforeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    removeListener: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    removeManagedListener: (/* object */ js.UndefOr[js.Any], /* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => Callback = null,
-    resumeEvents: /* discardQueuedEvents */ js.UndefOr[Boolean] => Callback = null,
-    root: String = null,
-    rootProperty: String = null,
-    self: IClass = null,
-    setBubbleEvents: /* bubbleEvents */ js.UndefOr[js.Any] => Callback = null,
-    setClientIdProperty: /* clientIdProperty */ js.UndefOr[String] => Callback = null,
-    setIdProperty: /* idProperty */ js.UndefOr[String] => Callback = null,
-    setImplicitIncludes: /* implicitIncludes */ js.UndefOr[Boolean] => Callback = null,
-    setListeners: /* listeners */ js.UndefOr[js.Any] => Callback = null,
-    setMessageProperty: /* messageProperty */ js.UndefOr[String] => Callback = null,
-    setModel: /* model */ js.UndefOr[js.Any] => Callback = null,
-    setRootProperty: /* rootProperty */ js.UndefOr[String] => Callback = null,
-    setSuccessProperty: /* successProperty */ js.UndefOr[String] => Callback = null,
-    setTotalProperty: /* totalProperty */ js.UndefOr[String] => Callback = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    successProperty: String = null,
-    suspendEvents: js.UndefOr[Callback] = js.undefined,
-    totalProperty: String = null,
-    un: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any], /* order */ js.UndefOr[String]) => Callback = null,
-    unAfter: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    unBefore: (/* eventName */ js.UndefOr[js.Any], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Any]) => Callback = null,
-    uses: Array = null
-  ): IReader = {
+  
+  inline def apply(): IReader = {
     val __obj = js.Dynamic.literal()
-    if (addAfterListener != null) __obj.updateDynamic("addAfterListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => addAfterListener(t0, t1, t2, t3).runNow()))
-    if (addBeforeListener != null) __obj.updateDynamic("addBeforeListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => addBeforeListener(t0, t1, t2, t3).runNow()))
-    if (addEvents != null) __obj.updateDynamic("addEvents")(js.Any.fromFunction1((t0: /* eventNames */ js.UndefOr[js.Any]) => addEvents(t0).runNow()))
-    if (addListener != null) __obj.updateDynamic("addListener")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => addListener(t0, t1, t2, t3, t4).runNow()))
-    if (addManagedListener != null) __obj.updateDynamic("addManagedListener")(js.Any.fromFunction5((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any], t4: /* options */ js.UndefOr[js.Any]) => addManagedListener(t0, t1, t2, t3, t4).runNow()))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (bubbleEvents != null) __obj.updateDynamic("bubbleEvents")(bubbleEvents.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    clearListeners.foreach(p => __obj.updateDynamic("clearListeners")(p.toJsFn))
-    if (clientIdProperty != null) __obj.updateDynamic("clientIdProperty")(clientIdProperty.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    destroy.foreach(p => __obj.updateDynamic("destroy")(p.toJsFn))
-    if (enableBubble != null) __obj.updateDynamic("enableBubble")(js.Any.fromFunction1((t0: /* events */ js.UndefOr[js.Any]) => enableBubble(t0).runNow()))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (fireAction != null) __obj.updateDynamic("fireAction")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[java.lang.String], t1: /* args */ js.UndefOr[typingsJapgolly.senchaTouch.Ext.Array], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => fireAction(t0, t1, t2, t3).runNow()))
-    if (fireEvent != null) __obj.updateDynamic("fireEvent")(js.Any.fromFunction2((t0: /* eventName */ java.lang.String, t1: /* repeated */ js.Any) => fireEvent(t0, t1).runNow()))
-    getBubbleEvents.foreach(p => __obj.updateDynamic("getBubbleEvents")(p.toJsFn))
-    getClientIdProperty.foreach(p => __obj.updateDynamic("getClientIdProperty")(p.toJsFn))
-    getId.foreach(p => __obj.updateDynamic("getId")(p.toJsFn))
-    getIdProperty.foreach(p => __obj.updateDynamic("getIdProperty")(p.toJsFn))
-    getImplicitIncludes.foreach(p => __obj.updateDynamic("getImplicitIncludes")(p.toJsFn))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getListeners.foreach(p => __obj.updateDynamic("getListeners")(p.toJsFn))
-    getMessageProperty.foreach(p => __obj.updateDynamic("getMessageProperty")(p.toJsFn))
-    getModel.foreach(p => __obj.updateDynamic("getModel")(p.toJsFn))
-    if (getResponseData != null) __obj.updateDynamic("getResponseData")(js.Any.fromFunction1((t0: /* response */ js.UndefOr[js.Any]) => getResponseData(t0).runNow()))
-    getRootProperty.foreach(p => __obj.updateDynamic("getRootProperty")(p.toJsFn))
-    getSuccessProperty.foreach(p => __obj.updateDynamic("getSuccessProperty")(p.toJsFn))
-    getTotalProperty.foreach(p => __obj.updateDynamic("getTotalProperty")(p.toJsFn))
-    if (hasListener != null) __obj.updateDynamic("hasListener")(js.Any.fromFunction1((t0: /* eventName */ js.UndefOr[java.lang.String]) => hasListener(t0).runNow()))
-    if (idProperty != null) __obj.updateDynamic("idProperty")(idProperty.asInstanceOf[js.Any])
-    if (!js.isUndefined(implicitIncludes)) __obj.updateDynamic("implicitIncludes")(implicitIncludes.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* instanceConfig */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (messageProperty != null) __obj.updateDynamic("messageProperty")(messageProperty.asInstanceOf[js.Any])
-    if (metaData != null) __obj.updateDynamic("metaData")(metaData.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (mon != null) __obj.updateDynamic("mon")(js.Any.fromFunction5((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any], t4: /* options */ js.UndefOr[js.Any]) => mon(t0, t1, t2, t3, t4).runNow()))
-    if (mun != null) __obj.updateDynamic("mun")(js.Any.fromFunction4((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => mun(t0, t1, t2, t3).runNow()))
-    if (on != null) __obj.updateDynamic("on")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => on(t0, t1, t2, t3, t4).runNow()))
-    if (onAfter != null) __obj.updateDynamic("onAfter")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => onAfter(t0, t1, t2, t3).runNow()))
-    if (onBefore != null) __obj.updateDynamic("onBefore")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => onBefore(t0, t1, t2, t3).runNow()))
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (rawData != null) __obj.updateDynamic("rawData")(rawData.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(js.Any.fromFunction1((t0: /* response */ js.UndefOr[js.Any]) => read(t0).runNow()))
-    if (readRecords != null) __obj.updateDynamic("readRecords")(js.Any.fromFunction1((t0: /* data */ js.UndefOr[js.Any]) => readRecords(t0).runNow()))
-    if (relayEvents != null) __obj.updateDynamic("relayEvents")(js.Any.fromFunction2((t0: /* object */ js.UndefOr[js.Any], t1: /* events */ js.UndefOr[js.Any]) => relayEvents(t0, t1).runNow()))
-    if (removeAfterListener != null) __obj.updateDynamic("removeAfterListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => removeAfterListener(t0, t1, t2, t3).runNow()))
-    if (removeBeforeListener != null) __obj.updateDynamic("removeBeforeListener")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => removeBeforeListener(t0, t1, t2, t3).runNow()))
-    if (removeListener != null) __obj.updateDynamic("removeListener")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => removeListener(t0, t1, t2, t3, t4).runNow()))
-    if (removeManagedListener != null) __obj.updateDynamic("removeManagedListener")(js.Any.fromFunction4((t0: /* object */ js.UndefOr[js.Any], t1: /* eventName */ js.UndefOr[js.Any], t2: /* fn */ js.UndefOr[js.Any], t3: /* scope */ js.UndefOr[js.Any]) => removeManagedListener(t0, t1, t2, t3).runNow()))
-    if (resumeEvents != null) __obj.updateDynamic("resumeEvents")(js.Any.fromFunction1((t0: /* discardQueuedEvents */ js.UndefOr[scala.Boolean]) => resumeEvents(t0).runNow()))
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (rootProperty != null) __obj.updateDynamic("rootProperty")(rootProperty.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setBubbleEvents != null) __obj.updateDynamic("setBubbleEvents")(js.Any.fromFunction1((t0: /* bubbleEvents */ js.UndefOr[js.Any]) => setBubbleEvents(t0).runNow()))
-    if (setClientIdProperty != null) __obj.updateDynamic("setClientIdProperty")(js.Any.fromFunction1((t0: /* clientIdProperty */ js.UndefOr[java.lang.String]) => setClientIdProperty(t0).runNow()))
-    if (setIdProperty != null) __obj.updateDynamic("setIdProperty")(js.Any.fromFunction1((t0: /* idProperty */ js.UndefOr[java.lang.String]) => setIdProperty(t0).runNow()))
-    if (setImplicitIncludes != null) __obj.updateDynamic("setImplicitIncludes")(js.Any.fromFunction1((t0: /* implicitIncludes */ js.UndefOr[scala.Boolean]) => setImplicitIncludes(t0).runNow()))
-    if (setListeners != null) __obj.updateDynamic("setListeners")(js.Any.fromFunction1((t0: /* listeners */ js.UndefOr[js.Any]) => setListeners(t0).runNow()))
-    if (setMessageProperty != null) __obj.updateDynamic("setMessageProperty")(js.Any.fromFunction1((t0: /* messageProperty */ js.UndefOr[java.lang.String]) => setMessageProperty(t0).runNow()))
-    if (setModel != null) __obj.updateDynamic("setModel")(js.Any.fromFunction1((t0: /* model */ js.UndefOr[js.Any]) => setModel(t0).runNow()))
-    if (setRootProperty != null) __obj.updateDynamic("setRootProperty")(js.Any.fromFunction1((t0: /* rootProperty */ js.UndefOr[java.lang.String]) => setRootProperty(t0).runNow()))
-    if (setSuccessProperty != null) __obj.updateDynamic("setSuccessProperty")(js.Any.fromFunction1((t0: /* successProperty */ js.UndefOr[java.lang.String]) => setSuccessProperty(t0).runNow()))
-    if (setTotalProperty != null) __obj.updateDynamic("setTotalProperty")(js.Any.fromFunction1((t0: /* totalProperty */ js.UndefOr[java.lang.String]) => setTotalProperty(t0).runNow()))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (successProperty != null) __obj.updateDynamic("successProperty")(successProperty.asInstanceOf[js.Any])
-    suspendEvents.foreach(p => __obj.updateDynamic("suspendEvents")(p.toJsFn))
-    if (totalProperty != null) __obj.updateDynamic("totalProperty")(totalProperty.asInstanceOf[js.Any])
-    if (un != null) __obj.updateDynamic("un")(js.Any.fromFunction5((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any], t4: /* order */ js.UndefOr[java.lang.String]) => un(t0, t1, t2, t3, t4).runNow()))
-    if (unAfter != null) __obj.updateDynamic("unAfter")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => unAfter(t0, t1, t2, t3).runNow()))
-    if (unBefore != null) __obj.updateDynamic("unBefore")(js.Any.fromFunction4((t0: /* eventName */ js.UndefOr[js.Any], t1: /* fn */ js.UndefOr[js.Any], t2: /* scope */ js.UndefOr[js.Any], t3: /* options */ js.UndefOr[js.Any]) => unBefore(t0, t1, t2, t3).runNow()))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IReader]
   }
+  
+  extension [Self <: IReader](x: Self) {
+    
+    inline def setClientIdProperty(value: String): Self = StObject.set(x, "clientIdProperty", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdPropertyUndefined: Self = StObject.set(x, "clientIdProperty", js.undefined)
+    
+    inline def setGetClientIdProperty(value: CallbackTo[String]): Self = StObject.set(x, "getClientIdProperty", value.toJsFn)
+    
+    inline def setGetClientIdPropertyUndefined: Self = StObject.set(x, "getClientIdProperty", js.undefined)
+    
+    inline def setGetIdProperty(value: CallbackTo[String]): Self = StObject.set(x, "getIdProperty", value.toJsFn)
+    
+    inline def setGetIdPropertyUndefined: Self = StObject.set(x, "getIdProperty", js.undefined)
+    
+    inline def setGetImplicitIncludes(value: CallbackTo[Boolean]): Self = StObject.set(x, "getImplicitIncludes", value.toJsFn)
+    
+    inline def setGetImplicitIncludesUndefined: Self = StObject.set(x, "getImplicitIncludes", js.undefined)
+    
+    inline def setGetMessageProperty(value: CallbackTo[String]): Self = StObject.set(x, "getMessageProperty", value.toJsFn)
+    
+    inline def setGetMessagePropertyUndefined: Self = StObject.set(x, "getMessageProperty", js.undefined)
+    
+    inline def setGetModel(value: CallbackTo[Any]): Self = StObject.set(x, "getModel", value.toJsFn)
+    
+    inline def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
+    
+    inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
+    
+    inline def setGetResponseDataUndefined: Self = StObject.set(x, "getResponseData", js.undefined)
+    
+    inline def setGetRootProperty(value: CallbackTo[String]): Self = StObject.set(x, "getRootProperty", value.toJsFn)
+    
+    inline def setGetRootPropertyUndefined: Self = StObject.set(x, "getRootProperty", js.undefined)
+    
+    inline def setGetSuccessProperty(value: CallbackTo[Any]): Self = StObject.set(x, "getSuccessProperty", value.toJsFn)
+    
+    inline def setGetSuccessPropertyUndefined: Self = StObject.set(x, "getSuccessProperty", js.undefined)
+    
+    inline def setGetTotalProperty(value: CallbackTo[Any]): Self = StObject.set(x, "getTotalProperty", value.toJsFn)
+    
+    inline def setGetTotalPropertyUndefined: Self = StObject.set(x, "getTotalProperty", js.undefined)
+    
+    inline def setIdProperty(value: String): Self = StObject.set(x, "idProperty", value.asInstanceOf[js.Any])
+    
+    inline def setIdPropertyUndefined: Self = StObject.set(x, "idProperty", js.undefined)
+    
+    inline def setImplicitIncludes(value: Boolean): Self = StObject.set(x, "implicitIncludes", value.asInstanceOf[js.Any])
+    
+    inline def setImplicitIncludesUndefined: Self = StObject.set(x, "implicitIncludes", js.undefined)
+    
+    inline def setMessageProperty(value: String): Self = StObject.set(x, "messageProperty", value.asInstanceOf[js.Any])
+    
+    inline def setMessagePropertyUndefined: Self = StObject.set(x, "messageProperty", js.undefined)
+    
+    inline def setMetaData(value: Any): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
+    
+    inline def setMetaDataUndefined: Self = StObject.set(x, "metaData", js.undefined)
+    
+    inline def setRawData(value: Any): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    
+    inline def setRawDataUndefined: Self = StObject.set(x, "rawData", js.undefined)
+    
+    inline def setRead(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    
+    inline def setReadRecords(value: /* data */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "readRecords", js.Any.fromFunction1(value))
+    
+    inline def setReadRecordsUndefined: Self = StObject.set(x, "readRecords", js.undefined)
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
+    
+    inline def setRelayEventsUndefined: Self = StObject.set(x, "relayEvents", js.undefined)
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootProperty(value: String): Self = StObject.set(x, "rootProperty", value.asInstanceOf[js.Any])
+    
+    inline def setRootPropertyUndefined: Self = StObject.set(x, "rootProperty", js.undefined)
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setSetClientIdProperty(value: /* clientIdProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setClientIdProperty", js.Any.fromFunction1((t0: /* clientIdProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetClientIdPropertyUndefined: Self = StObject.set(x, "setClientIdProperty", js.undefined)
+    
+    inline def setSetIdProperty(value: /* idProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setIdProperty", js.Any.fromFunction1((t0: /* idProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetIdPropertyUndefined: Self = StObject.set(x, "setIdProperty", js.undefined)
+    
+    inline def setSetImplicitIncludes(value: /* implicitIncludes */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setImplicitIncludes", js.Any.fromFunction1((t0: /* implicitIncludes */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetImplicitIncludesUndefined: Self = StObject.set(x, "setImplicitIncludes", js.undefined)
+    
+    inline def setSetMessageProperty(value: /* messageProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setMessageProperty", js.Any.fromFunction1((t0: /* messageProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetMessagePropertyUndefined: Self = StObject.set(x, "setMessageProperty", js.undefined)
+    
+    inline def setSetModel(value: /* model */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setModel", js.Any.fromFunction1((t0: /* model */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetModelUndefined: Self = StObject.set(x, "setModel", js.undefined)
+    
+    inline def setSetRootProperty(value: /* rootProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setRootProperty", js.Any.fromFunction1((t0: /* rootProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetRootPropertyUndefined: Self = StObject.set(x, "setRootProperty", js.undefined)
+    
+    inline def setSetSuccessProperty(value: /* successProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setSuccessProperty", js.Any.fromFunction1((t0: /* successProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetSuccessPropertyUndefined: Self = StObject.set(x, "setSuccessProperty", js.undefined)
+    
+    inline def setSetTotalProperty(value: /* totalProperty */ js.UndefOr[String] => Callback): Self = StObject.set(x, "setTotalProperty", js.Any.fromFunction1((t0: /* totalProperty */ js.UndefOr[String]) => value(t0).runNow()))
+    
+    inline def setSetTotalPropertyUndefined: Self = StObject.set(x, "setTotalProperty", js.undefined)
+    
+    inline def setSuccessProperty(value: String): Self = StObject.set(x, "successProperty", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessPropertyUndefined: Self = StObject.set(x, "successProperty", js.undefined)
+    
+    inline def setTotalProperty(value: String): Self = StObject.set(x, "totalProperty", value.asInstanceOf[js.Any])
+    
+    inline def setTotalPropertyUndefined: Self = StObject.set(x, "totalProperty", js.undefined)
+  }
 }
-

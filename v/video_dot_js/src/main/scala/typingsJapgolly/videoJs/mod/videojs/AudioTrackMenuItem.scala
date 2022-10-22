@@ -1,15 +1,18 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An {@link AudioTrack} {@link MenuItem}
   */
 @js.native
-trait AudioTrackMenuItem extends MenuItem {
+trait AudioTrackMenuItem
+  extends StObject
+     with MenuItem {
+  
   /**
     * Handle any {@link AudioTrack} change.
     *
@@ -20,4 +23,3 @@ trait AudioTrackMenuItem extends MenuItem {
     */
   def handleTracksChange(event: Event): Unit = js.native
 }
-

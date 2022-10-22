@@ -1,18 +1,63 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript | Introduction}
   */
 @js.native
-trait DZ extends js.Object {
+trait DZ extends StObject {
+  
   /**
     * See: {@link https://developers.deezer.com/sdk/javascript/events-subscribe | Subscribe to an event}
     */
   val Event: typingsJapgolly.deezerSdk.DeezerSdk.Event = js.native
+  
+  /**
+    * Make calls to the Deezer API.
+    *
+    * See:\
+    * {@link https://developers.deezer.com/sdk/javascript/api | DZ.api}\
+    * {@link https://developers.deezer.com/api | API}
+    */
+  def api(path: String, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  def api(path: String, method: HttpMethod, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  def api(path: String, method: HttpMethod, data: Any, callback: js.Function1[/* response */ Any, Unit]): Unit = js.native
+  
+  /**
+    * Determine if a user is logged in and connected to your app.
+    *
+    * See: {@link https://developers.deezer.com/sdk/javascript/getloginstatus | DZ.getLoginStatus}
+    */
+  def getLoginStatus(callback: js.Function1[/* loginStatus */ LoginStatus, Unit]): Unit = js.native
+  
+  /**
+    * Initialize the JavaScript SDK in your page.
+    *
+    * See: {@link https://developers.deezer.com/sdk/javascript/init | DZ.init}
+    */
+  def init(options: InitOptions): Unit = js.native
+  
+  /**
+    * Prompt the user to connect on Deezer, and to authorize you application.
+    *
+    * The DZ.login method opens up a modal window. Since most browsers block pop-up windows unless they
+    * are initiated from a user event, we advise you to call DZ.login from a JavaScript onclick event.
+    *
+    * See: {@link https://developers.deezer.com/sdk/javascript/login | DZ.login}
+    */
+  def login(callback: js.Function1[/* response */ LoginResponse, Unit]): Unit = js.native
+  
+  /**
+    * Destroy the current user session.
+    *
+    * See: {@link https://developers.deezer.com/sdk/javascript/logout | DZ.logout}
+    */
+  def logout(): Unit = js.native
+  def logout(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Allows you to load and play tracks from your page.
     *
@@ -26,49 +71,7 @@ trait DZ extends js.Object {
     * {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
     */
   val player: Player = js.native
-  /**
-    * Make calls to the Deezer API.
-    *
-    * See:\
-    * {@link https://developers.deezer.com/sdk/javascript/api | DZ.api}\
-    * {@link https://developers.deezer.com/api | API}
-    */
-  def api(path: String, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def api(path: String, method: HttpMethod, callback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  def api(
-    path: String,
-    method: HttpMethod,
-    data: js.Any,
-    callback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  /**
-    * Determine if a user is logged in and connected to your app.
-    *
-    * See: {@link https://developers.deezer.com/sdk/javascript/getloginstatus | DZ.getLoginStatus}
-    */
-  def getLoginStatus(callback: js.Function1[/* loginStatus */ LoginStatus, Unit]): Unit = js.native
-  /**
-    * Initialize the JavaScript SDK in your page.
-    *
-    * See: {@link https://developers.deezer.com/sdk/javascript/init | DZ.init}
-    */
-  def init(options: InitOptions): Unit = js.native
-  /**
-    * Prompt the user to connect on Deezer, and to authorize you application.
-    *
-    * The DZ.login method opens up a modal window. Since most browsers block pop-up windows unless they
-    * are initiated from a user event, we advise you to call DZ.login from a JavaScript onclick event.
-    *
-    * See: {@link https://developers.deezer.com/sdk/javascript/login | DZ.login}
-    */
-  def login(callback: js.Function1[/* response */ LoginResponse, Unit]): Unit = js.native
-  /**
-    * Destroy the current user session.
-    *
-    * See: {@link https://developers.deezer.com/sdk/javascript/logout | DZ.logout}
-    */
-  def logout(): Unit = js.native
-  def logout(callback: js.Function0[Unit]): Unit = js.native
+  
   /**
     * Allows you to interact with the DZ.player object.
     *
@@ -86,4 +89,3 @@ trait DZ extends js.Object {
     */
   def ready(callback: js.Function1[/* sdkOptions */ SdkOptions, Unit]): Unit = js.native
 }
-

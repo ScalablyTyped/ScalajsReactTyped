@@ -1,20 +1,12 @@
 package typingsJapgolly.pulsarClient.mod
 
+import typingsJapgolly.pulsarClient.anon.CertificatePath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticationTls extends js.Object {
-  var certificatePath: String
-  var privateKeyPath: String
+@JSImport("pulsar-client", "AuthenticationTls")
+@js.native
+open class AuthenticationTls protected () extends StObject {
+  def this(params: CertificatePath) = this()
 }
-
-object AuthenticationTls {
-  @scala.inline
-  def apply(certificatePath: String, privateKeyPath: String): AuthenticationTls = {
-    val __obj = js.Dynamic.literal(certificatePath = certificatePath.asInstanceOf[js.Any], privateKeyPath = privateKeyPath.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AuthenticationTls]
-  }
-}
-

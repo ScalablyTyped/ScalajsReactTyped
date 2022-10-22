@@ -1,18 +1,22 @@
 package typingsJapgolly.evernote.mod.Types
 
-import typingsJapgolly.evernote.AnonFileSize
+import typingsJapgolly.evernote.anon.FileSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.RelatedContentImage")
 @js.native
-class RelatedContentImage () extends js.Object {
-  def this(args: AnonFileSize) = this()
+open class RelatedContentImage () extends StObject {
+  def this(args: FileSize) = this()
+  
   var fileSize: js.UndefOr[Double] = js.native
+  
   var height: js.UndefOr[Double] = js.native
+  
   var pixelRatio: js.UndefOr[Double] = js.native
+  
   var url: js.UndefOr[String] = js.native
+  
   var width: js.UndefOr[Double] = js.native
 }
-

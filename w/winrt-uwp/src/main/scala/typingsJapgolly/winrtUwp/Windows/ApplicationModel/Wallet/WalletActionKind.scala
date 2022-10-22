@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Wallet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletActionKind extends js.Object
-
+sealed trait WalletActionKind extends StObject
 /** Represents the action that was taken on the item that caused your app to launch. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletActionKind")
 @js.native
-object WalletActionKind extends js.Object {
+object WalletActionKind extends StObject {
+  
   /** A message was tapped. */
   @js.native
-  sealed trait message extends WalletActionKind
+  sealed trait message
+    extends StObject
+       with WalletActionKind
   
   /** The UI item "see more transactions" was tapped. */
   @js.native
-  sealed trait moreTransactions extends WalletActionKind
+  sealed trait moreTransactions
+    extends StObject
+       with WalletActionKind
   
   /** The item was opened. */
   @js.native
-  sealed trait openItem extends WalletActionKind
+  sealed trait openItem
+    extends StObject
+       with WalletActionKind
   
   /** A transaction was tapped. */
   @js.native
-  sealed trait transaction extends WalletActionKind
+  sealed trait transaction
+    extends StObject
+       with WalletActionKind
   
   /** A verb was tapped. */
   @js.native
-  sealed trait verb extends WalletActionKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WalletActionKind with Double] = js.native
-  /* 3 */ @js.native
-  object message extends TopLevel[message with Double]
-  
-  /* 2 */ @js.native
-  object moreTransactions extends TopLevel[moreTransactions with Double]
-  
-  /* 0 */ @js.native
-  object openItem extends TopLevel[openItem with Double]
-  
-  /* 1 */ @js.native
-  object transaction extends TopLevel[transaction with Double]
-  
-  /* 4 */ @js.native
-  object verb extends TopLevel[verb with Double]
-  
+  sealed trait verb
+    extends StObject
+       with WalletActionKind
 }
-

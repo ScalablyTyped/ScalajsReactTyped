@@ -1,31 +1,43 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.AnonHeight
+import typingsJapgolly.reactNative.anon.Width
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowStyleIOS extends js.Object {
-  var shadowColor: js.UndefOr[String] = js.undefined
-  var shadowOffset: js.UndefOr[AnonHeight] = js.undefined
+trait ShadowStyleIOS extends StObject {
+  
+  var shadowColor: js.UndefOr[ColorValue] = js.undefined
+  
+  var shadowOffset: js.UndefOr[Width] = js.undefined
+  
   var shadowOpacity: js.UndefOr[Double] = js.undefined
+  
   var shadowRadius: js.UndefOr[Double] = js.undefined
 }
-
 object ShadowStyleIOS {
-  @scala.inline
-  def apply(
-    shadowColor: String = null,
-    shadowOffset: AnonHeight = null,
-    shadowOpacity: Int | Double = null,
-    shadowRadius: Int | Double = null
-  ): ShadowStyleIOS = {
+  
+  inline def apply(): ShadowStyleIOS = {
     val __obj = js.Dynamic.literal()
-    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor.asInstanceOf[js.Any])
-    if (shadowOffset != null) __obj.updateDynamic("shadowOffset")(shadowOffset.asInstanceOf[js.Any])
-    if (shadowOpacity != null) __obj.updateDynamic("shadowOpacity")(shadowOpacity.asInstanceOf[js.Any])
-    if (shadowRadius != null) __obj.updateDynamic("shadowRadius")(shadowRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowStyleIOS]
   }
+  
+  extension [Self <: ShadowStyleIOS](x: Self) {
+    
+    inline def setShadowColor(value: ColorValue): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    
+    inline def setShadowOffset(value: Width): Self = StObject.set(x, "shadowOffset", value.asInstanceOf[js.Any])
+    
+    inline def setShadowOffsetUndefined: Self = StObject.set(x, "shadowOffset", js.undefined)
+    
+    inline def setShadowOpacity(value: Double): Self = StObject.set(x, "shadowOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setShadowOpacityUndefined: Self = StObject.set(x, "shadowOpacity", js.undefined)
+    
+    inline def setShadowRadius(value: Double): Self = StObject.set(x, "shadowRadius", value.asInstanceOf[js.Any])
+    
+    inline def setShadowRadiusUndefined: Self = StObject.set(x, "shadowRadius", js.undefined)
+  }
 }
-

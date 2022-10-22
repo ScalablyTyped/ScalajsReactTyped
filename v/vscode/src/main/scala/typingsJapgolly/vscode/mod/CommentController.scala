@@ -1,66 +1,92 @@
 package typingsJapgolly.vscode.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommentController extends js.Object {
+trait CommentController extends StObject {
+  
   /**
-  		 * Optional commenting range provider. Provide a list [ranges](#Range) which support commenting to any given resource uri.
-  		 *
-  		 * If not provided, users can leave comments in any document opened in the editor.
-  		 */
+    * Optional commenting range provider. Provide a list {@link Range ranges} which support commenting to any given resource uri.
+    *
+    * If not provided, users cannot leave any comments.
+    */
   var commentingRangeProvider: js.UndefOr[CommentingRangeProvider] = js.undefined
+  
   /**
-  		 * The id of this comment controller.
-  		 */
-  val id: String
-  /**
-  		 * The human-readable label of this comment controller.
-  		 */
-  val label: String
-  /**
-  		 * Optional reaction handler for creating and deleting reactions on a [comment](#Comment).
-  		 */
-  var reactionHandler: js.UndefOr[
-    js.Function2[/* comment */ Comment, /* reaction */ CommentReaction, js.Promise[Unit]]
-  ] = js.undefined
-  /**
-  		 * Create a [comment thread](#CommentThread). The comment thread will be displayed in visible text editors (if the resource matches)
-  		 * and Comments Panel once created.
-  		 *
-  		 * @param uri The uri of the document the thread has been created on.
-  		 * @param range The range the comment thread is located within the document.
-  		 * @param comments The ordered comments of the thread.
-  		 */
+    * Create a {@link CommentThread comment thread}. The comment thread will be displayed in visible text editors (if the resource matches)
+    * and Comments Panel once created.
+    *
+    * @param uri The uri of the document the thread has been created on.
+    * @param range The range the comment thread is located within the document.
+    * @param comments The ordered comments of the thread.
+    */
   def createCommentThread(uri: Uri, range: Range, comments: js.Array[Comment]): CommentThread
+  
   /**
-  		 * Dispose this comment controller.
-  		 *
-  		 * Once disposed, all [comment threads](#CommentThread) created by this comment controller will also be removed from the editor
-  		 * and Comments Panel.
-  		 */
+    * Dispose this comment controller.
+    *
+    * Once disposed, all {@link CommentThread comment threads} created by this comment controller will also be removed from the editor
+    * and Comments Panel.
+    */
   def dispose(): Unit
+  
+  /**
+    * The id of this comment controller.
+    */
+  val id: String
+  
+  /**
+    * The human-readable label of this comment controller.
+    */
+  val label: String
+  
+  /**
+    * Comment controller options
+    */
+  var options: js.UndefOr[CommentOptions] = js.undefined
+  
+  /**
+    * Optional reaction handler for creating and deleting reactions on a {@link Comment}.
+    */
+  var reactionHandler: js.UndefOr[
+    js.Function2[/* comment */ Comment, /* reaction */ CommentReaction, Thenable[Unit]]
+  ] = js.undefined
 }
-
 object CommentController {
-  @scala.inline
-  def apply(
-    createCommentThread: (Uri, Range, js.Array[Comment]) => CallbackTo[CommentThread],
+  
+  inline def apply(
+    createCommentThread: (Uri, Range, js.Array[Comment]) => CommentThread,
     dispose: Callback,
     id: String,
-    label: String,
-    commentingRangeProvider: CommentingRangeProvider = null,
-    reactionHandler: (/* comment */ Comment, /* reaction */ CommentReaction) => CallbackTo[js.Promise[Unit]] = null
+    label: String
   ): CommentController = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
-    __obj.updateDynamic("createCommentThread")(js.Any.fromFunction3((t0: typingsJapgolly.vscode.mod.Uri, t1: typingsJapgolly.vscode.mod.Range, t2: js.Array[typingsJapgolly.vscode.mod.Comment]) => createCommentThread(t0, t1, t2).runNow()))
-    __obj.updateDynamic("dispose")(dispose.toJsFn)
-    if (commentingRangeProvider != null) __obj.updateDynamic("commentingRangeProvider")(commentingRangeProvider.asInstanceOf[js.Any])
-    if (reactionHandler != null) __obj.updateDynamic("reactionHandler")(js.Any.fromFunction2((t0: /* comment */ typingsJapgolly.vscode.mod.Comment, t1: /* reaction */ typingsJapgolly.vscode.mod.CommentReaction) => reactionHandler(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(createCommentThread = js.Any.fromFunction3(createCommentThread), dispose = dispose.toJsFn, id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentController]
   }
+  
+  extension [Self <: CommentController](x: Self) {
+    
+    inline def setCommentingRangeProvider(value: CommentingRangeProvider): Self = StObject.set(x, "commentingRangeProvider", value.asInstanceOf[js.Any])
+    
+    inline def setCommentingRangeProviderUndefined: Self = StObject.set(x, "commentingRangeProvider", js.undefined)
+    
+    inline def setCreateCommentThread(value: (Uri, Range, js.Array[Comment]) => CommentThread): Self = StObject.set(x, "createCommentThread", js.Any.fromFunction3(value))
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: CommentOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setReactionHandler(value: (/* comment */ Comment, /* reaction */ CommentReaction) => Thenable[Unit]): Self = StObject.set(x, "reactionHandler", js.Any.fromFunction2(value))
+    
+    inline def setReactionHandlerUndefined: Self = StObject.set(x, "reactionHandler", js.undefined)
+  }
 }
-

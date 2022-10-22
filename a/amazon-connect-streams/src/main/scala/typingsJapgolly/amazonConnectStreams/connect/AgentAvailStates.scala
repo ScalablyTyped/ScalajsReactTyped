@@ -1,65 +1,52 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AgentAvailStates extends js.Object
-
+sealed trait AgentAvailStates extends StObject
 @JSGlobal("connect.AgentAvailStates")
 @js.native
-object AgentAvailStates extends js.Object {
-  @js.native
-  sealed trait AFTER_CALL_WORK extends AgentAvailStates
+object AgentAvailStates extends StObject {
   
   @js.native
-  sealed trait BUSY extends AgentAvailStates
+  sealed trait AFTER_CALL_WORK
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait CALLING_CUSTOMER extends AgentAvailStates
+  sealed trait BUSY
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait DIALING extends AgentAvailStates
+  sealed trait CALLING_CUSTOMER
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait INIT extends AgentAvailStates
+  sealed trait DIALING
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait JOINING extends AgentAvailStates
+  sealed trait INIT
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait PENDING_AVAILABLE extends AgentAvailStates
+  sealed trait JOINING
+    extends StObject
+       with AgentAvailStates
   
   @js.native
-  sealed trait PENDING_BUSY extends AgentAvailStates
+  sealed trait PENDING_AVAILABLE
+    extends StObject
+       with AgentAvailStates
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[AgentAvailStates with String] = js.native
-  /* "AfterCallWork" */ @js.native
-  object AFTER_CALL_WORK extends TopLevel[AFTER_CALL_WORK with String]
-  
-  /* "Busy" */ @js.native
-  object BUSY extends TopLevel[BUSY with String]
-  
-  /* "CallingCustomer" */ @js.native
-  object CALLING_CUSTOMER extends TopLevel[CALLING_CUSTOMER with String]
-  
-  /* "Dialing" */ @js.native
-  object DIALING extends TopLevel[DIALING with String]
-  
-  /* "Init" */ @js.native
-  object INIT extends TopLevel[INIT with String]
-  
-  /* "Joining" */ @js.native
-  object JOINING extends TopLevel[JOINING with String]
-  
-  /* "PendingAvailable" */ @js.native
-  object PENDING_AVAILABLE extends TopLevel[PENDING_AVAILABLE with String]
-  
-  /* "PendingBusy" */ @js.native
-  object PENDING_BUSY extends TopLevel[PENDING_BUSY with String]
-  
+  @js.native
+  sealed trait PENDING_BUSY
+    extends StObject
+       with AgentAvailStates
 }
-

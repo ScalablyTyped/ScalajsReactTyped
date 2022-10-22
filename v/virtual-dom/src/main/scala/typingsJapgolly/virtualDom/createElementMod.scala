@@ -1,29 +1,32 @@
 package typingsJapgolly.virtualDom
 
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.Text
+import org.scalajs.dom.Element
+import org.scalajs.dom.Text
 import typingsJapgolly.virtualDom.VirtualDOM.Thunk
 import typingsJapgolly.virtualDom.VirtualDOM.VNode
 import typingsJapgolly.virtualDom.VirtualDOM.VText
 import typingsJapgolly.virtualDom.VirtualDOM.Widget
+import typingsJapgolly.virtualDom.anon.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("virtual-dom/create-element", JSImport.Namespace)
-@js.native
-object createElementMod extends js.Object {
-  def apply(vnode: Thunk): Element = js.native
-  def apply(vnode: Thunk, opts: AnonDocument): Element = js.native
-  def apply(vnode: VNode): Element = js.native
-  def apply(vnode: VNode, opts: AnonDocument): Element = js.native
+object createElementMod {
+  
+  inline def apply(vnode: Thunk): Element = ^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(vnode: Thunk, opts: Document): Element = (^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def apply(vnode: VNode): Element = ^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(vnode: VNode, opts: Document): Element = (^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
   /**
     create() calls either document.createElement() or document.createElementNS(),
     for which the common denominator is Element (not HTMLElement).
     */
-  def apply(vnode: VText): Text = js.native
-  def apply(vnode: VText, opts: AnonDocument): Text = js.native
-  def apply(vnode: Widget): Element = js.native
-  def apply(vnode: Widget, opts: AnonDocument): Element = js.native
+  inline def apply(vnode: VText): Text = ^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any]).asInstanceOf[Text]
+  inline def apply(vnode: VText, opts: Document): Text = (^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Text]
+  inline def apply(vnode: Widget): Element = ^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(vnode: Widget, opts: Document): Element = (^.asInstanceOf[js.Dynamic].apply(vnode.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Element]
+  
+  @JSImport("virtual-dom/create-element", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

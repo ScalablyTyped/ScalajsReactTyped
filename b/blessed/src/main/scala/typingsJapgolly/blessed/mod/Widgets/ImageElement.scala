@@ -1,8 +1,8 @@
 package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Display an image in the terminal (jpeg, png, gif) using w3mimgdisplay. Requires w3m to be installed.
@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("blessed", "Widgets.ImageElement")
 @js.native
-class ImageElement () extends BoxElement {
+open class ImageElement () extends BoxElement {
   def this(options: ImageOptions) = this()
+  
   @JSName("options")
   var options_ImageElement: ImageOptions = js.native
 }
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVideoEncodingProperties extends IMediaEncodingProperties {
+trait IVideoEncodingProperties
+  extends StObject
+     with IMediaEncodingProperties {
+  
   var bitrate: Double
+  
   var frameRate: MediaRatio
+  
   var height: Double
+  
   var pixelAspectRatio: MediaRatio
+  
   var width: Double
 }
-
 object IVideoEncodingProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bitrate: Double,
     frameRate: MediaRatio,
     height: Double,
@@ -28,5 +34,17 @@ object IVideoEncodingProperties {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IVideoEncodingProperties]
   }
+  
+  extension [Self <: IVideoEncodingProperties](x: Self) {
+    
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    
+    inline def setFrameRate(value: MediaRatio): Self = StObject.set(x, "frameRate", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setPixelAspectRatio(value: MediaRatio): Self = StObject.set(x, "pixelAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

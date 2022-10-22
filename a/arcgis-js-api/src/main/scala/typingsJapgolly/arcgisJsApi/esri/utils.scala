@@ -1,34 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait utils extends js.Object {
+/**
+  * This object contains utility methods for obtaining information about supported renderers of raster layers (i.e.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html)
+  */
+trait utils extends StObject {
+  
   /**
-    * Formats a UNIX timestamp to a basic date string. This function is only intended for convenience in formatting thumb values in slider widgets and does not include additional formatting options.
+    * Returns default band ids used by a multispectral imagery layer when using a raster [rgb](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-rgb.html) or [stretch](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-renderers-stretch.html) renderer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#formatDateLabel)
-    *
-    * @param value The UNIX timestamp to convert to a formatted date string.
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getDefaultBandCombination)
     */
-  def formatDateLabel(value: Double): String
+  def getDefaultBandCombination(params: utilsGetDefaultBandCombinationParams): js.Promise[js.Array[Double]]
+  
   /**
-    * Computes and returns standard deviation values based on the given average and standard deviation.
+    * Returns supported raster renderer information of an imagery layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-support-utils.html#getDeviationValues)
-    *
-    * @param standardDeviation The standard deviation from the given `average`.
-    * @param average The average of the dataset from which to compute standard deviation values.
-    * @param count The number of standard deviations from the mean to compute.
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-raster-support-utils.html#getSupportedRendererInfo)
     */
-  def getDeviationValues(standardDeviation: Double, average: Double, count: Double): js.Array[Double]
+  def getSupportedRendererInfo(params: utilsGetSupportedRendererInfoParams): js.Promise[SupportedRendererInfo]
 }
-
-@JSGlobal("__esri.utils")
-@js.native
-object utils extends TopLevel[utils]
-
+object utils {
+  
+  inline def apply(
+    getDefaultBandCombination: utilsGetDefaultBandCombinationParams => js.Promise[js.Array[Double]],
+    getSupportedRendererInfo: utilsGetSupportedRendererInfoParams => js.Promise[SupportedRendererInfo]
+  ): utils = {
+    val __obj = js.Dynamic.literal(getDefaultBandCombination = js.Any.fromFunction1(getDefaultBandCombination), getSupportedRendererInfo = js.Any.fromFunction1(getSupportedRendererInfo))
+    __obj.asInstanceOf[utils]
+  }
+  
+  extension [Self <: utils](x: Self) {
+    
+    inline def setGetDefaultBandCombination(value: utilsGetDefaultBandCombinationParams => js.Promise[js.Array[Double]]): Self = StObject.set(x, "getDefaultBandCombination", js.Any.fromFunction1(value))
+    
+    inline def setGetSupportedRendererInfo(value: utilsGetSupportedRendererInfoParams => js.Promise[SupportedRendererInfo]): Self = StObject.set(x, "getSupportedRendererInfo", js.Any.fromFunction1(value))
+  }
+}

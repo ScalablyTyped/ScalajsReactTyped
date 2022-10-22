@@ -1,52 +1,59 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSEnumDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSEnumDeclaration_
-  extends Declaration
+  extends StObject
      with BaseNode
-     with Statement {
+     with Declaration
+     with Statement
+     with TypeScript {
+  
   var const: Boolean | Null
+  
   var declare: Boolean | Null
+  
   var id: Identifier_
+  
   var initializer: Expression | Null
+  
   var members: js.Array[TSEnumMember_]
+  
   @JSName("type")
   var type_TSEnumDeclaration_ : TSEnumDeclaration
 }
-
 object TSEnumDeclaration_ {
-  @scala.inline
-  def apply(
-    id: Identifier_,
-    members: js.Array[TSEnumMember_],
-    `type`: TSEnumDeclaration,
-    const: js.UndefOr[Boolean] = js.undefined,
-    declare: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    initializer: Expression = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSEnumDeclaration_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(const)) __obj.updateDynamic("const")(const.asInstanceOf[js.Any])
-    if (!js.isUndefined(declare)) __obj.updateDynamic("declare")(declare.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (initializer != null) __obj.updateDynamic("initializer")(initializer.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(id: Identifier_, members: js.Array[TSEnumMember_]): TSEnumDeclaration_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], const = null, declare = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSEnumDeclaration")
     __obj.asInstanceOf[TSEnumDeclaration_]
   }
+  
+  extension [Self <: TSEnumDeclaration_](x: Self) {
+    
+    inline def setConst(value: Boolean): Self = StObject.set(x, "const", value.asInstanceOf[js.Any])
+    
+    inline def setConstNull: Self = StObject.set(x, "const", null)
+    
+    inline def setDeclare(value: Boolean): Self = StObject.set(x, "declare", value.asInstanceOf[js.Any])
+    
+    inline def setDeclareNull: Self = StObject.set(x, "declare", null)
+    
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
+    
+    inline def setInitializerNull: Self = StObject.set(x, "initializer", null)
+    
+    inline def setMembers(value: js.Array[TSEnumMember_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: TSEnumMember_ *): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setType(value: TSEnumDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

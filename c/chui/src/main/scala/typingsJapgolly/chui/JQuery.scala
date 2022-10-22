@@ -1,15 +1,21 @@
 package typingsJapgolly.chui
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.chui.anon.Color
+import typingsJapgolly.chui.anon.DefaultValue
+import typingsJapgolly.chui.anon.Deletable
+import typingsJapgolly.chui.anon.Name
+import typingsJapgolly.chui.anon.Selected
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for jQuery
   */
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Display a busy indicator. Posible options: {size: "100px", color: "#ff0000", position: "align-flush", duration: "2s"}.
     *
@@ -20,13 +26,15 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIBusy(): Unit = js.native
-  def UIBusy(options: AnonColor): Unit = js.native
+  def UIBusy(options: Color): Unit = js.native
+  
   /**
     * Center an element to the screen.
     *
     * @return void
     */
   def UICenter(): Unit = js.native
+  
   /**
     * Make a list editable. This can be enabling changing the order of list items, or deleting them, or both. Options: {editLabel: "Edit", doneLabel: "Done",
     * deleteLabel: "Delete", callback: function() {alert('Bye bye!');}, deletable: true, movable: true}.
@@ -34,33 +42,38 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UIEditList(): Unit = js.native
-  def UIEditList(options: AnonDeletable): Unit = js.native
+  def UIEditList(options: Deletable): Unit = js.native
+  
   /**
     * This method allows the user to use a segmented control to toggle a set of panels. It is executed on the segmented control.
     * The options id is the contain of the panels. The options callback is to execute when the user toggles a panel.
     *
     * @return void
     */
-  def UIPanelToggle(panelsContainer: String, callback: js.Function0[_]): Unit = js.native
+  def UIPanelToggle(panelsContainer: String, callback: js.Function0[Any]): Unit = js.native
+  
   /**
     * Close the currently displayed Popup. This is executed on the popup: $('#myPopup').UIPopupClose().
     *
     * @return void
     */
   def UIPopupClose(): Unit = js.native
+  
   /**
     * Execute this on a range control to initialize it.
     *
     * @return void
     */
   def UIRange(): Unit = js.native
+  
   /**
     * Initialize a segmented control. Options: {selected: 2, callback: function() {console.log('Blah');}}
     *
     * @return void
     */
   def UISegmented(): Unit = js.native
-  def UISegmented(options: AnonSelected): Unit = js.native
+  def UISegmented(options: Selected): Unit = js.native
+  
   /**
     * Convert a simple list into a selection list. This converts the list into a radio button group, meaning only one can be selected at any time.
     * You can name the radios buttons using the options name. Options: {name: "selectedNamesGroup", selected: 2, callback: function() {alert('hi');}}
@@ -68,19 +81,22 @@ trait JQuery extends js.Object {
     * @return void
     */
   def UISelectList(): Unit = js.native
-  def UISelectList(options: AnonName): Unit = js.native
+  def UISelectList(options: Name): Unit = js.native
+  
   /**
     * Create a stepper control by executing it on a span with the class "stepper". Possible options: {start: 0, end: 10, defaultValue: 3}.
     *
     * @return void
     */
-  def UIStepper(options: AnonDefaultValue): Unit = js.native
+  def UIStepper(options: DefaultValue): Unit = js.native
+  
   /**
     * Initialize any existing switch controls: $('.switch').UISwitch();
     *
     * @return void
     */
   def UISwitch(): Unit = js.native
+  
   /**
     * Attach a handler to an event for the elements.
     *
@@ -88,11 +104,7 @@ trait JQuery extends js.Object {
     * @param eventData An object containing data that will be passed to the event handler.
     * @param handler A function to execute each time the event is triggered.
     */
-  def bind(
-    eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def bind(eventType: String, eventData: Any, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -101,7 +113,7 @@ trait JQuery extends js.Object {
     * @param preventBubble Setting the third argument to false will attach a function that prevents the default action from occurring and stops the event from bubbling. The default is true.
     * @return JQuery
     */
-  def bind(eventType: String, eventData: js.Any, preventBubble: Boolean): JQuery = js.native
+  def bind(eventType: String, eventData: Any, preventBubble: Boolean): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -109,7 +121,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute each time the event is triggered.
     * @return JQuery
     */
-  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def bind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements.
     *
@@ -120,44 +132,47 @@ trait JQuery extends js.Object {
   def bind(eventType: String, preventBubble: Boolean): JQuery = js.native
   def bind(
     eventType: ChUIEventInterface,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    eventData: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
-  def bind(eventType: ChUIEventInterface, eventData: js.Any, preventBubble: Boolean): JQuery = js.native
-  def bind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def bind(eventType: ChUIEventInterface, eventData: Any, preventBubble: Boolean): JQuery = js.native
+  def bind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def bind(eventType: ChUIEventInterface, preventBubble: Boolean): JQuery = js.native
+  
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: String,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    eventData: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
-  def delegate(selector: js.Any, eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def delegate(selector: Any, eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: ChUIEventInterface,
-    eventData: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    eventData: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   def delegate(
-    selector: js.Any,
+    selector: Any,
     eventType: ChUIEventInterface,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
+  
   /**
     * Iterate over an Array object, executing a function for each matched element.
     *
     * @param callback A function to execute while looping over an interable. This takes to arguments: ctx: HTMLElement and idx: number.
     * @return JQuery
     */
-  def forEach(callback: js.Function2[/* ctx */ HTMLElement, /* idx */ Double, _]): JQuery = js.native
+  def forEach(callback: js.Function2[/* ctx */ HTMLElement, /* idx */ Double, Any]): JQuery = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
     *
     * @param contained A DOM element to match elements against.
     * @return JQuery
     */
-  def haz(contained: typingsJapgolly.std.HTMLElement): JQuery = js.native
+  def haz(contained: HTMLElement): JQuery = js.native
   /**
     * Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element.
     *
@@ -165,6 +180,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def haz(selector: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that have the given attribute.
     *
@@ -172,6 +188,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazAttr(attributeName: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that have the given class.
     *
@@ -179,13 +196,14 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazClass(className: String): JQuery = js.native
+  
   /**
     * Reduce the set of matched elements to those that have a descendant that does not match the selector or DOM element.
     *
     * @param contained A DOM element to match elements against.
     * @return JQuery
     */
-  def haznt(contained: typingsJapgolly.std.HTMLElement): JQuery = js.native
+  def haznt(contained: HTMLElement): JQuery = js.native
   /**
     * Reduce the set of matched elements to those that have a descendant that does not match the selector or DOM element.
     *
@@ -193,6 +211,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def haznt(selector: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that do not have the given attribute.
     *
@@ -200,6 +219,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazntAttr(attributeName: String): JQuery = js.native
+  
   /**
     * Return any of the matched elements that do not have the given class.
     *
@@ -207,6 +227,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def hazntClass(className: String): JQuery = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -214,7 +235,7 @@ trait JQuery extends js.Object {
     * @param elements One or more elements to match the current set of elements against.
     * @return JQuery
     */
-  def iz(element: js.Any): JQuery = js.native
+  def iz(element: Any): JQuery = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it matches the given arguments.
@@ -223,6 +244,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def iz(selector: String): JQuery = js.native
+  
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -230,7 +252,7 @@ trait JQuery extends js.Object {
     * @param elements One or more elements to match the current set of elements against.
     * @return JQuery
     */
-  def iznt(element: js.Any): JQuery = js.native
+  def iznt(element: Any): JQuery = js.native
   /**
     * Check the current matched set of elements against a selector or element and return it
     * if it does not match the given arguments.
@@ -239,6 +261,7 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def iznt(selector: String): JQuery = js.native
+  
   /**
     * Remove an event handler.
     *
@@ -255,17 +278,24 @@ trait JQuery extends js.Object {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     * @return JQuery
     */
-  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def off(events: String, selector: String): JQuery = js.native
-  def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def off(events: String, selector: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def off(events: ChUIEventInterface): JQuery = js.native
-  def off(events: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def off(events: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def off(events: ChUIEventInterface, selector: String): JQuery = js.native
   def off(
     events: ChUIEventInterface,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
+  def off(
+    events: ChUIEventInterface,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
+  ): JQuery = js.native
+  
   /**
     * Attach an event handler function for one or more events to the selected elements.
     *
@@ -276,8 +306,8 @@ trait JQuery extends js.Object {
     */
   def on(
     events: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -288,7 +318,7 @@ trait JQuery extends js.Object {
     */
   def on(
     events: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -302,8 +332,8 @@ trait JQuery extends js.Object {
   def on(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for one or more events to the selected elements.
@@ -316,28 +346,29 @@ trait JQuery extends js.Object {
   def on(
     events: String,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   def on(
     events: ChUIEventInterface,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   def on(
     events: ChUIEventInterface,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
-  ): JQuery = js.native
-  def on(
-    events: ChUIEventInterface,
-    selector: String,
-    data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
   def on(
     events: ChUIEventInterface,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    data: Any,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
   ): JQuery = js.native
+  def on(
+    events: ChUIEventInterface,
+    selector: String,
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ Any, Any]
+  ): JQuery = js.native
+  
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -346,7 +377,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute at the time the event is triggered.
     * @return JQuery
     */
-  def one(events: String, data: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def one(events: String, data: js.Object, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -354,7 +385,7 @@ trait JQuery extends js.Object {
     * @param handler A function to execute at the time the event is triggered.
     * @return JQuery
     */
-  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def one(events: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
     *
@@ -367,8 +398,8 @@ trait JQuery extends js.Object {
   def one(
     events: String,
     selector: String,
-    data: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    data: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   /**
     * Attach a handler to an event for the elements. The handler is executed at most once per element per event type.
@@ -378,24 +409,25 @@ trait JQuery extends js.Object {
     * @param handler A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     * @return JQuery
     */
-  def one(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def one(events: String, selector: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def one(
     events: ChUIEventInterface,
     data: js.Object,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
-  def one(events: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def one(events: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def one(
     events: ChUIEventInterface,
     selector: String,
-    data: js.Any,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    data: Any,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   def one(
     events: ChUIEventInterface,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
+  
   /**
     * Execute all handlers and behaviors attached to the matched elements for the given event type.
     *
@@ -404,11 +436,12 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def trigger(eventType: String): JQuery = js.native
-  def trigger(eventType: String, extraParameters: js.Array[_]): JQuery = js.native
+  def trigger(eventType: String, extraParameters: js.Array[Any]): JQuery = js.native
   def trigger(eventType: String, extraParameters: js.Object): JQuery = js.native
   def trigger(eventType: ChUIEventInterface): JQuery = js.native
-  def trigger(eventType: ChUIEventInterface, extraParameters: js.Array[_]): JQuery = js.native
+  def trigger(eventType: ChUIEventInterface, extraParameters: js.Array[Any]): JQuery = js.native
   def trigger(eventType: ChUIEventInterface, extraParameters: js.Object): JQuery = js.native
+  
   /**
     * Execute all handlers attached to an element for an event.
     *
@@ -416,8 +449,9 @@ trait JQuery extends js.Object {
     * @param extraParameters An array of additional parameters to pass along to the event handler.
     * @return Object
     */
-  def triggerHandler(eventType: String, extraParameters: js.Any*): js.Object = js.native
-  def triggerHandler(eventType: ChUIEventInterface, extraParameters: js.Any*): js.Object = js.native
+  def triggerHandler(eventType: String, extraParameters: Any*): js.Object = js.native
+  def triggerHandler(eventType: ChUIEventInterface, extraParameters: Any*): js.Object = js.native
+  
   /**
     * Remove a previously-attached event handler from the elements.
     *
@@ -435,10 +469,12 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def unbind(eventType: String, fls: Boolean): JQuery = js.native
-  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def unbind(eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  def unbind(eventType: Unit, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
   def unbind(eventType: ChUIEventInterface): JQuery = js.native
   def unbind(eventType: ChUIEventInterface, fls: Boolean): JQuery = js.native
-  def unbind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def unbind(eventType: ChUIEventInterface, handler: js.Function1[/* eventObject */ JQueryEventObject, Any]): JQuery = js.native
+  
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     *
@@ -448,7 +484,11 @@ trait JQuery extends js.Object {
     * @return JQuery
     */
   def undelegate(selector: String, eventType: String): JQuery = js.native
-  def undelegate(selector: String, eventType: String, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def undelegate(
+    selector: String,
+    eventType: String,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
+  ): JQuery = js.native
   /**
     * Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements.
     *
@@ -461,8 +501,7 @@ trait JQuery extends js.Object {
   def undelegate(
     selector: ChUIEventInterface,
     eventType: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, Any]
   ): JQuery = js.native
   def undelegate(selector: ChUIEventInterface, events: js.Object): JQuery = js.native
 }
-

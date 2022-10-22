@@ -1,20 +1,23 @@
 package typingsJapgolly.escpos.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Console")
 @js.native
-class Console () extends Adapter {
-  def this(handler: js.Function1[/* data */ js.Array[js.Array[_]], Unit]) = this()
+open class Console ()
+  extends StObject
+     with Adapter {
+  def this(handler: js.Function1[/* data */ js.Array[js.Array[Any]], Unit]) = this()
+  
   def open(): Console = js.native
   /* CompleteClass */
-  override def open(args: js.Any*): Adapter = js.native
-  def open(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Console = js.native
+  override def open(args: Any*): Adapter = js.native
+  def open(callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Console = js.native
+  
   def write(data: Buffer): Console = js.native
   /* CompleteClass */
-  override def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Adapter = js.native
+  override def write(data: Buffer, callback: js.Function1[/* error */ js.UndefOr[Any], Unit]): Adapter = js.native
 }
-

@@ -1,37 +1,56 @@
 package typingsJapgolly.dynogels.mod
 
-import typingsJapgolly.awsSdk.dynamodbMod.AttributeNameList
-import typingsJapgolly.awsSdk.dynamodbMod.ExpressionAttributeNameMap
-import typingsJapgolly.awsSdk.dynamodbMod.ProjectionExpression
-import typingsJapgolly.awsSdk.dynamodbMod.ReturnConsumedCapacity
+import typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeName
+import typingsJapgolly.awsSdk.clientsDynamodbMod.AttributeNameList
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ConsistentRead
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ExpressionAttributeNameMap
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ProjectionExpression
+import typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetItemOptions extends js.Object {
+trait GetItemOptions extends StObject {
+  
   var AttributesToGet: js.UndefOr[AttributeNameList] = js.undefined
-  var ConsistentRead: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ConsistentRead] = js.undefined
+  
+  var ConsistentRead: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ConsistentRead] = js.undefined
+  
   var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
-  var ProjectionExpression: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ProjectionExpression] = js.undefined
-  var ReturnConsumedCapacity: js.UndefOr[typingsJapgolly.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
+  
+  var ProjectionExpression: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ProjectionExpression] = js.undefined
+  
+  var ReturnConsumedCapacity: js.UndefOr[typingsJapgolly.awsSdk.clientsDynamodbMod.ReturnConsumedCapacity] = js.undefined
 }
-
 object GetItemOptions {
-  @scala.inline
-  def apply(
-    AttributesToGet: AttributeNameList = null,
-    ConsistentRead: js.UndefOr[Boolean] = js.undefined,
-    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
-    ProjectionExpression: ProjectionExpression = null,
-    ReturnConsumedCapacity: ReturnConsumedCapacity = null
-  ): GetItemOptions = {
+  
+  inline def apply(): GetItemOptions = {
     val __obj = js.Dynamic.literal()
-    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet.asInstanceOf[js.Any])
-    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead.asInstanceOf[js.Any])
-    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames.asInstanceOf[js.Any])
-    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression.asInstanceOf[js.Any])
-    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemOptions]
   }
+  
+  extension [Self <: GetItemOptions](x: Self) {
+    
+    inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+    
+    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value*))
+    
+    inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+    
+    inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+    
+    inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+    
+    inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+    
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+  }
 }
-

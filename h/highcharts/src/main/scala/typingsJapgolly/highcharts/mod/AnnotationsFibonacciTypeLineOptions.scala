@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsFibonacciTypeLineOptions extends js.Object {
+trait AnnotationsFibonacciTypeLineOptions extends StObject {
+  
   var fill: js.UndefOr[String] = js.undefined
 }
-
 object AnnotationsFibonacciTypeLineOptions {
-  @scala.inline
-  def apply(fill: String = null): AnnotationsFibonacciTypeLineOptions = {
+  
+  inline def apply(): AnnotationsFibonacciTypeLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsFibonacciTypeLineOptions]
   }
+  
+  extension [Self <: AnnotationsFibonacciTypeLineOptions](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+  }
 }
-

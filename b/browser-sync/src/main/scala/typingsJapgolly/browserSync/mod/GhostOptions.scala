@@ -1,27 +1,36 @@
 package typingsJapgolly.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GhostOptions extends js.Object {
+trait GhostOptions extends StObject {
+  
   var clicks: js.UndefOr[Boolean] = js.undefined
+  
   var forms: js.UndefOr[FormsOptions | Boolean] = js.undefined
+  
   var scroll: js.UndefOr[Boolean] = js.undefined
 }
-
 object GhostOptions {
-  @scala.inline
-  def apply(
-    clicks: js.UndefOr[Boolean] = js.undefined,
-    forms: FormsOptions | Boolean = null,
-    scroll: js.UndefOr[Boolean] = js.undefined
-  ): GhostOptions = {
+  
+  inline def apply(): GhostOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clicks)) __obj.updateDynamic("clicks")(clicks.asInstanceOf[js.Any])
-    if (forms != null) __obj.updateDynamic("forms")(forms.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[GhostOptions]
   }
+  
+  extension [Self <: GhostOptions](x: Self) {
+    
+    inline def setClicks(value: Boolean): Self = StObject.set(x, "clicks", value.asInstanceOf[js.Any])
+    
+    inline def setClicksUndefined: Self = StObject.set(x, "clicks", js.undefined)
+    
+    inline def setForms(value: FormsOptions | Boolean): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
+    
+    inline def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
+    
+    inline def setScroll(value: Boolean): Self = StObject.set(x, "scroll", value.asInstanceOf[js.Any])
+    
+    inline def setScrollUndefined: Self = StObject.set(x, "scroll", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerCurrentTimeMarker extends js.Object {
+trait SchedulerCurrentTimeMarker extends StObject {
+  
   var updateInterval: js.UndefOr[Double] = js.undefined
+  
   var useLocalTimezone: js.UndefOr[Boolean] = js.undefined
 }
-
 object SchedulerCurrentTimeMarker {
-  @scala.inline
-  def apply(updateInterval: Int | Double = null, useLocalTimezone: js.UndefOr[Boolean] = js.undefined): SchedulerCurrentTimeMarker = {
+  
+  inline def apply(): SchedulerCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
-    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLocalTimezone)) __obj.updateDynamic("useLocalTimezone")(useLocalTimezone.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerCurrentTimeMarker]
   }
+  
+  extension [Self <: SchedulerCurrentTimeMarker](x: Self) {
+    
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
+    
+    inline def setUseLocalTimezone(value: Boolean): Self = StObject.set(x, "useLocalTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setUseLocalTimezoneUndefined: Self = StObject.set(x, "useLocalTimezone", js.undefined)
+  }
 }
-

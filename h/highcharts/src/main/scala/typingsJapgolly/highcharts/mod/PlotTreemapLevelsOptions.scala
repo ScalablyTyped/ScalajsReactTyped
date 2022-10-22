@@ -1,30 +1,34 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotTreemapLevelsOptions extends js.Object {
+trait PlotTreemapLevelsOptions extends StObject {
+  
   /**
     * (Highcharts) Can set a `borderColor` on all points which lies on the same
     * level.
     */
   var borderColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Highcharts) Set the dash style of the border of all the point which lies
-    * on the level. See (see online documentation for example) for possible
-    * options.
+    * on the level. See plotOptions.scatter.dashStyle for possible options.
     */
   var borderDashStyle: js.UndefOr[DashStyleValue] = js.undefined
+  
   /**
     * (Highcharts) Can set the borderWidth on all points which lies on the same
     * level.
     */
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Can set a color on all points which lies on the same level.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts) A configuration object to define how the color of a child
     * varies from the parent's color. The variation is distributed among the
@@ -36,51 +40,77 @@ trait PlotTreemapLevelsOptions extends js.Object {
     * charts.
     */
   var colorVariation: js.UndefOr[PlotTreemapLevelsColorVariationOptions] = js.undefined
+  
   /**
     * (Highcharts) Can set the options of dataLabels on each point which lies
     * on the level. plotOptions.treemap.dataLabels for possible values.
     */
-  var dataLabels: js.UndefOr[DataLabelsOptionsObject] = js.undefined
+  var dataLabels: js.UndefOr[
+    PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]
+  ] = js.undefined
+  
   /**
     * (Highcharts) Can set the layoutAlgorithm option on a specific level.
     */
   var layoutAlgorithm: js.UndefOr[OptionsLayoutAlgorithmValue] = js.undefined
+  
   /**
     * (Highcharts) Can set the layoutStartingDirection option on a specific
     * level.
     */
   var layoutStartingDirection: js.UndefOr[OptionsLayoutStartingDirectionValue] = js.undefined
+  
   /**
     * (Highcharts) Decides which level takes effect from the options set in the
     * levels object.
     */
   var level: js.UndefOr[Double] = js.undefined
 }
-
 object PlotTreemapLevelsOptions {
-  @scala.inline
-  def apply(
-    borderColor: ColorString = null,
-    borderDashStyle: DashStyleValue = null,
-    borderWidth: Int | Double = null,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    colorVariation: PlotTreemapLevelsColorVariationOptions = null,
-    dataLabels: DataLabelsOptionsObject = null,
-    layoutAlgorithm: OptionsLayoutAlgorithmValue = null,
-    layoutStartingDirection: OptionsLayoutStartingDirectionValue = null,
-    level: Int | Double = null
-  ): PlotTreemapLevelsOptions = {
+  
+  inline def apply(): PlotTreemapLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderDashStyle != null) __obj.updateDynamic("borderDashStyle")(borderDashStyle.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorVariation != null) __obj.updateDynamic("colorVariation")(colorVariation.asInstanceOf[js.Any])
-    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels.asInstanceOf[js.Any])
-    if (layoutAlgorithm != null) __obj.updateDynamic("layoutAlgorithm")(layoutAlgorithm.asInstanceOf[js.Any])
-    if (layoutStartingDirection != null) __obj.updateDynamic("layoutStartingDirection")(layoutStartingDirection.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotTreemapLevelsOptions]
   }
+  
+  extension [Self <: PlotTreemapLevelsOptions](x: Self) {
+    
+    inline def setBorderColor(value: ColorString): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderDashStyle(value: DashStyleValue): Self = StObject.set(x, "borderDashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBorderDashStyleUndefined: Self = StObject.set(x, "borderDashStyle", js.undefined)
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVariation(value: PlotTreemapLevelsColorVariationOptions): Self = StObject.set(x, "colorVariation", value.asInstanceOf[js.Any])
+    
+    inline def setColorVariationUndefined: Self = StObject.set(x, "colorVariation", js.undefined)
+    
+    inline def setDataLabels(value: PlotTreemapLevelsDataLabelsOptions | js.Array[PlotTreemapLevelsDataLabelsOptions]): Self = StObject.set(x, "dataLabels", value.asInstanceOf[js.Any])
+    
+    inline def setDataLabelsUndefined: Self = StObject.set(x, "dataLabels", js.undefined)
+    
+    inline def setDataLabelsVarargs(value: PlotTreemapLevelsDataLabelsOptions*): Self = StObject.set(x, "dataLabels", js.Array(value*))
+    
+    inline def setLayoutAlgorithm(value: OptionsLayoutAlgorithmValue): Self = StObject.set(x, "layoutAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutAlgorithmUndefined: Self = StObject.set(x, "layoutAlgorithm", js.undefined)
+    
+    inline def setLayoutStartingDirection(value: OptionsLayoutStartingDirectionValue): Self = StObject.set(x, "layoutStartingDirection", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutStartingDirectionUndefined: Self = StObject.set(x, "layoutStartingDirection", js.undefined)
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+  }
 }
-

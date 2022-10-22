@@ -3,9 +3,9 @@ package typingsJapgolly.xrm.XrmEnum
 import typingsJapgolly.xrm.xrmStrings.none
 import typingsJapgolly.xrm.xrmStrings.recommended
 import typingsJapgolly.xrm.xrmStrings.required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Requirement Level for {@link Attributes.Attribute.getRequiredLevel Attributes.Attribute.getRequiredLevel()} and
@@ -17,16 +17,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.recommended
   - typingsJapgolly.xrm.xrmStrings.required
 */
-trait AttributeRequirementLevel extends js.Object
-
+trait AttributeRequirementLevel extends StObject
 object AttributeRequirementLevel {
-  @scala.inline
-  def None: none = this.cast("none")
-  @scala.inline
-  def Recommended: recommended = this.cast("recommended")
-  @scala.inline
-  def Required: required = this.cast("required")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def None: none = "none".asInstanceOf[none]
+  
+  inline def Recommended: recommended = "recommended".asInstanceOf[recommended]
+  
+  inline def Required: required = "required".asInstanceOf[required]
 }
-

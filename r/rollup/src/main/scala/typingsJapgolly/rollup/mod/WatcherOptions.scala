@@ -1,30 +1,58 @@
 package typingsJapgolly.rollup.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WatcherOptions extends js.Object {
-  var chokidar: js.UndefOr[Boolean | WatchOptions] = js.undefined
+trait WatcherOptions extends StObject {
+  
+  var buildDelay: js.UndefOr[Double] = js.undefined
+  
+  var chokidar: js.UndefOr[ChokidarOptions] = js.undefined
+  
   var clearScreen: js.UndefOr[Boolean] = js.undefined
-  var exclude: js.UndefOr[js.Array[String]] = js.undefined
-  var include: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var exclude: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
+  
+  var include: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
+  
+  var skipWrite: js.UndefOr[Boolean] = js.undefined
 }
-
 object WatcherOptions {
-  @scala.inline
-  def apply(
-    chokidar: Boolean | WatchOptions = null,
-    clearScreen: js.UndefOr[Boolean] = js.undefined,
-    exclude: js.Array[String] = null,
-    include: js.Array[String] = null
-  ): WatcherOptions = {
+  
+  inline def apply(): WatcherOptions = {
     val __obj = js.Dynamic.literal()
-    if (chokidar != null) __obj.updateDynamic("chokidar")(chokidar.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearScreen)) __obj.updateDynamic("clearScreen")(clearScreen.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[WatcherOptions]
   }
+  
+  extension [Self <: WatcherOptions](x: Self) {
+    
+    inline def setBuildDelay(value: Double): Self = StObject.set(x, "buildDelay", value.asInstanceOf[js.Any])
+    
+    inline def setBuildDelayUndefined: Self = StObject.set(x, "buildDelay", js.undefined)
+    
+    inline def setChokidar(value: ChokidarOptions): Self = StObject.set(x, "chokidar", value.asInstanceOf[js.Any])
+    
+    inline def setChokidarUndefined: Self = StObject.set(x, "chokidar", js.undefined)
+    
+    inline def setClearScreen(value: Boolean): Self = StObject.set(x, "clearScreen", value.asInstanceOf[js.Any])
+    
+    inline def setClearScreenUndefined: Self = StObject.set(x, "clearScreen", js.undefined)
+    
+    inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "exclude", js.Array(value*))
+    
+    inline def setInclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setIncludeVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "include", js.Array(value*))
+    
+    inline def setSkipWrite(value: Boolean): Self = StObject.set(x, "skipWrite", value.asInstanceOf[js.Any])
+    
+    inline def setSkipWriteUndefined: Self = StObject.set(x, "skipWrite", js.undefined)
+  }
 }
-

@@ -1,13 +1,23 @@
 package typingsJapgolly.chromecastCafSender.cast.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("cast.framework.EventData")
-@js.native
-abstract class EventData protected () extends js.Object {
-  def this(`type`: String) = this()
-  var `type`: String = js.native
+trait EventData extends StObject {
+  
+  var `type`: String
 }
-
+object EventData {
+  
+  inline def apply(`type`: String): EventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventData]
+  }
+  
+  extension [Self <: EventData](x: Self) {
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
+}

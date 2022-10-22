@@ -1,18 +1,16 @@
 package typingsJapgolly.natural.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AggressiveTokenizer extends Tokenizer
-
+trait AggressiveTokenizer
+  extends StObject
+     with Tokenizer
 object AggressiveTokenizer {
-  @scala.inline
-  def apply(tokenize: String => CallbackTo[js.Array[String]]): AggressiveTokenizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tokenize")(js.Any.fromFunction1((t0: java.lang.String) => tokenize(t0).runNow()))
+  
+  inline def apply(tokenize: String => js.Array[String]): AggressiveTokenizer = {
+    val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
     __obj.asInstanceOf[AggressiveTokenizer]
   }
 }
-

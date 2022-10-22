@@ -1,19 +1,19 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/MapBrowserEventHandler", JSImport.Namespace)
-@js.native
-object mapBrowserEventHandlerMod extends js.Object {
+object mapBrowserEventHandlerMod {
+  
+  @JSImport("ol/MapBrowserEventHandler", JSImport.Default)
   @js.native
-  class default protected ()
-    extends typingsJapgolly.ol.targetMod.default {
+  open class default protected () extends MapBrowserEventHandler {
     def this(map: typingsJapgolly.ol.pluggableMapMod.default) = this()
     def this(map: typingsJapgolly.ol.pluggableMapMod.default, moveTolerance: Double) = this()
   }
   
-  type MapBrowserEventHandler = typingsJapgolly.ol.targetMod.default
+  @js.native
+  trait MapBrowserEventHandler
+    extends typingsJapgolly.ol.eventsTargetMod.default
 }
-

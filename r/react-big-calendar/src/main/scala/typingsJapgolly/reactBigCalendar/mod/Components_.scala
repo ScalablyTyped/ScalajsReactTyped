@@ -1,81 +1,120 @@
 package typingsJapgolly.reactBigCalendar.mod
 
-import japgolly.scalajs.react.raw.React.Component
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.react.mod.SFC
-import typingsJapgolly.reactBigCalendar.AnonDate
-import typingsJapgolly.reactBigCalendar.AnonDateHeader
-import typingsJapgolly.reactBigCalendar.AnonEvent
+import typingsJapgolly.reactBigCalendar.anon.Date
+import typingsJapgolly.reactBigCalendar.anon.DateHeader
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Components_[TEvent /* <: js.Object */] extends js.Object {
-  var agenda: js.UndefOr[AnonDate] = js.undefined
-  var dateCellWrapper: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element
-  ] = js.undefined
-  var day: js.UndefOr[AnonEvent] = js.undefined
+trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
+  
+  var agenda: js.UndefOr[Date[TEvent]] = js.undefined
+  
+  var dateCellWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
+  var day: js.UndefOr[typingsJapgolly.reactBigCalendar.anon.Event[TEvent]] = js.undefined
+  
+  var dayColumnWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
   var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
-  var eventContainerWrapper: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element
-  ] = js.undefined
+  
+  var eventContainerWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
   var eventWrapper: js.UndefOr[ComponentType[EventWrapperProps[TEvent]]] = js.undefined
+  
   /**
     * component used as a header for each column in the TimeGridHeader
     */
   var header: js.UndefOr[ComponentType[HeaderProps]] = js.undefined
-  var month: js.UndefOr[AnonDateHeader] = js.undefined
-  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps]] = js.undefined
-  var timeGutterHeader: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element
-  ] = js.undefined
-  var timeGutterWrapper: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element
-  ] = js.undefined
-  var timeSlotWrapper: js.UndefOr[
-    SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element
-  ] = js.undefined
-  var toolbar: js.UndefOr[ComponentType[ToolbarProps]] = js.undefined
-  var week: js.UndefOr[AnonEvent] = js.undefined
+  
+  var month: js.UndefOr[DateHeader[TEvent]] = js.undefined
+  
+  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps[TResource]]] = js.undefined
+  
+  var timeGutterHeader: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
+  var timeGutterWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
+  var timeSlotWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
+  
+  var toolbar: js.UndefOr[ComponentType[ToolbarProps[TEvent, TResource]]] = js.undefined
+  
+  var week: js.UndefOr[typingsJapgolly.reactBigCalendar.anon.Event[TEvent]] = js.undefined
+  
+  var work_week: js.UndefOr[typingsJapgolly.reactBigCalendar.anon.Event[TEvent]] = js.undefined
 }
-
 object Components_ {
-  @scala.inline
-  def apply[TEvent /* <: js.Object */](
-    agenda: AnonDate = null,
-    dateCellWrapper: SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element = null,
-    day: AnonEvent = null,
-    event: ComponentType[EventProps[TEvent]] = null,
-    eventContainerWrapper: SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element = null,
-    eventWrapper: ComponentType[EventWrapperProps[TEvent]] = null,
-    header: ComponentType[HeaderProps] = null,
-    month: AnonDateHeader = null,
-    resourceHeader: ComponentType[ResourceHeaderProps] = null,
-    timeGutterHeader: SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element = null,
-    timeGutterWrapper: SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element = null,
-    timeSlotWrapper: SFC[js.Object] | (Component[js.Object, js.Object]) | ComponentClassP[js.Object] | Element = null,
-    toolbar: ComponentType[ToolbarProps] = null,
-    week: AnonEvent = null
-  ): Components_[TEvent] = {
+  
+  inline def apply[TEvent /* <: js.Object */, TResource /* <: js.Object */](): Components_[TEvent, TResource] = {
     val __obj = js.Dynamic.literal()
-    if (agenda != null) __obj.updateDynamic("agenda")(agenda.asInstanceOf[js.Any])
-    if (dateCellWrapper != null) __obj.updateDynamic("dateCellWrapper")(dateCellWrapper.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (eventContainerWrapper != null) __obj.updateDynamic("eventContainerWrapper")(eventContainerWrapper.asInstanceOf[js.Any])
-    if (eventWrapper != null) __obj.updateDynamic("eventWrapper")(eventWrapper.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (resourceHeader != null) __obj.updateDynamic("resourceHeader")(resourceHeader.asInstanceOf[js.Any])
-    if (timeGutterHeader != null) __obj.updateDynamic("timeGutterHeader")(timeGutterHeader.asInstanceOf[js.Any])
-    if (timeGutterWrapper != null) __obj.updateDynamic("timeGutterWrapper")(timeGutterWrapper.asInstanceOf[js.Any])
-    if (timeSlotWrapper != null) __obj.updateDynamic("timeSlotWrapper")(timeSlotWrapper.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (week != null) __obj.updateDynamic("week")(week.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Components_[TEvent]]
+    __obj.asInstanceOf[Components_[TEvent, TResource]]
+  }
+  
+  extension [Self <: Components_[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (Components_[TEvent, TResource])) {
+    
+    inline def setAgenda(value: Date[TEvent]): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
+    
+    inline def setAgendaUndefined: Self = StObject.set(x, "agenda", js.undefined)
+    
+    inline def setDateCellWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dateCellWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setDateCellWrapperUndefined: Self = StObject.set(x, "dateCellWrapper", js.undefined)
+    
+    inline def setDay(value: typingsJapgolly.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    
+    inline def setDayColumnWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dayColumnWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setDayColumnWrapperUndefined: Self = StObject.set(x, "dayColumnWrapper", js.undefined)
+    
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    
+    inline def setEvent(value: ComponentType[EventProps[TEvent]]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventContainerWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "eventContainerWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setEventContainerWrapperUndefined: Self = StObject.set(x, "eventContainerWrapper", js.undefined)
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setEventWrapper(value: ComponentType[EventWrapperProps[TEvent]]): Self = StObject.set(x, "eventWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setEventWrapperUndefined: Self = StObject.set(x, "eventWrapper", js.undefined)
+    
+    inline def setHeader(value: ComponentType[HeaderProps]): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setMonth(value: DateHeader[TEvent]): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    
+    inline def setResourceHeader(value: ComponentType[ResourceHeaderProps[TResource]]): Self = StObject.set(x, "resourceHeader", value.asInstanceOf[js.Any])
+    
+    inline def setResourceHeaderUndefined: Self = StObject.set(x, "resourceHeader", js.undefined)
+    
+    inline def setTimeGutterHeader(value: ComponentType[js.Object]): Self = StObject.set(x, "timeGutterHeader", value.asInstanceOf[js.Any])
+    
+    inline def setTimeGutterHeaderUndefined: Self = StObject.set(x, "timeGutterHeader", js.undefined)
+    
+    inline def setTimeGutterWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "timeGutterWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setTimeGutterWrapperUndefined: Self = StObject.set(x, "timeGutterWrapper", js.undefined)
+    
+    inline def setTimeSlotWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "timeSlotWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSlotWrapperUndefined: Self = StObject.set(x, "timeSlotWrapper", js.undefined)
+    
+    inline def setToolbar(value: ComponentType[ToolbarProps[TEvent, TResource]]): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setWeek(value: typingsJapgolly.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+    
+    inline def setWeekUndefined: Self = StObject.set(x, "week", js.undefined)
+    
+    inline def setWork_week(value: typingsJapgolly.reactBigCalendar.anon.Event[TEvent]): Self = StObject.set(x, "work_week", value.asInstanceOf[js.Any])
+    
+    inline def setWork_weekUndefined: Self = StObject.set(x, "work_week", js.undefined)
   }
 }
-

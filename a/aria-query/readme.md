@@ -1,7 +1,7 @@
 
 # Scala.js typings for aria-query
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 Programmatic access to the ARIA specification
@@ -10,10 +10,10 @@ Programmatic access to the ARIA specification
 | ------------------ | :-------------: |
 | Full name          | aria-query |
 | Keywords           | accessibility, ARIA |
-| # releases         | 8 |
-| # dependents       | 13 |
-| # downloads        | 149615815 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.305560266666667E7 |
+| # stars            | 193.0 |
 
 ## Links
 - [Homepage](https://github.com/A11yance/aria-query#readme)

@@ -1,30 +1,33 @@
-package typingsJapgolly.ionicCliFramework
+package typingsJapgolly.ionicCliFramework.definitionsMod
 
+import typingsJapgolly.ionicCliFramework.anon.Aliases
+import typingsJapgolly.ionicCliFramework.ionicCliFrameworkBooleans.`true`
+import typingsJapgolly.ionicUtilsObject.mod.AliasedMap
+import typingsJapgolly.std.BooleanConstructor
+import typingsJapgolly.std.StringConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object definitionsMod {
-  type CommandLineInputs = js.Array[java.lang.String]
-  type CommandMapGetter[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = js.Function0[js.Promise[C]]
-  type CommandOptionType = typingsJapgolly.std.StringConstructor | typingsJapgolly.std.BooleanConstructor
-  type CommandPathItem[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = js.Tuple2[java.lang.String, C | N]
-  type HydratedCommandMetadata[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = M with (typingsJapgolly.ionicCliFramework.AnonAliases[C, N, M, I, O])
-  type HydratedCommandMetadataOption[O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = typingsJapgolly.std.Required[O]
-  type ICommandMap[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = typingsJapgolly.ionicUtilsObject.mod.AliasedMap[
-    java.lang.String, 
-    typingsJapgolly.ionicCliFramework.definitionsMod.CommandMapGetter[C, N, M, I, O]
-  ]
-  type INamespaceMap[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = typingsJapgolly.ionicUtilsObject.mod.AliasedMap[
-    java.lang.String, 
-    typingsJapgolly.ionicCliFramework.definitionsMod.NamespaceMapGetter[C, N, M, I, O]
-  ]
-  type NamespaceMapGetter[C /* <: typingsJapgolly.ionicCliFramework.definitionsMod.ICommand[C, N, M, I, O] */, N /* <: typingsJapgolly.ionicCliFramework.definitionsMod.INamespace[C, N, M, I, O] */, M /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadata[I, O] */, I /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataInput */, O /* <: typingsJapgolly.ionicCliFramework.definitionsMod.CommandMetadataOption */] = js.Function0[js.Promise[N]]
-  type NamespaceMetadata = typingsJapgolly.ionicCliFramework.definitionsMod.Metadata
-  type ParsedArg = js.UndefOr[java.lang.String | scala.Boolean | scala.Null | js.Array[java.lang.String]]
-  type Validator = js.Function2[
-    /* input */ js.UndefOr[java.lang.String], 
-    /* key */ js.UndefOr[java.lang.String], 
-    typingsJapgolly.ionicCliFramework.ionicCliFrameworkBooleans.`true` | java.lang.String
-  ]
-}
+
+type CommandLineInputs = js.Array[String]
+
+type CommandMapGetter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = js.Function0[js.Promise[C]]
+
+type CommandOptionType = StringConstructor | BooleanConstructor
+
+type CommandPathItem[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = js.Tuple2[String, C | N]
+
+type HydratedCommandMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = M & (Aliases[C, N, M, I, O])
+
+type ICommandMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = AliasedMap[String, CommandMapGetter[C, N, M, I, O]]
+
+type INamespaceMap[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = AliasedMap[String, NamespaceMapGetter[C, N, M, I, O]]
+
+type NamespaceMapGetter[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] = js.Function0[js.Promise[N]]
+
+type NamespaceMetadata = Metadata
+
+type ParsedArg = js.UndefOr[String | Boolean | Null | js.Array[String]]
+
+type Validator = js.Function2[/* input */ js.UndefOr[String], /* key */ js.UndefOr[String], `true` | String]

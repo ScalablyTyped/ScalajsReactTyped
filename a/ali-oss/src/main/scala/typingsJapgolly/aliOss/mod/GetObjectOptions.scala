@@ -1,24 +1,37 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetObjectOptions extends js.Object {
-   // image process params, will send with x-oss-process e.g.: {process: 'image/resize,w_200'}
+trait GetObjectOptions extends StObject {
+  
   var headers: js.UndefOr[js.Object] = js.undefined
+  
+  /** The Content-Type of the callback requests initiatiated, It supports application/x-www-form-urlencoded and application/json, and the former is the default value. */
   var process: js.UndefOr[String] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object GetObjectOptions {
-  @scala.inline
-  def apply(headers: js.Object = null, process: String = null, timeout: Int | Double = null): GetObjectOptions = {
+  
+  inline def apply(): GetObjectOptions = {
     val __obj = js.Dynamic.literal()
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (process != null) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectOptions]
   }
+  
+  extension [Self <: GetObjectOptions](x: Self) {
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

@@ -1,29 +1,23 @@
 package typingsJapgolly.blueimpLoadImage.mod
 
-import typingsJapgolly.blueimpLoadImage.blueimpLoadImageBooleans.`false`
-import typingsJapgolly.blueimpLoadImage.blueimpLoadImageBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.blueimpLoadImage.mod.MetaTrueOptions
   - typingsJapgolly.blueimpLoadImage.mod.MetaFalseOptions
 */
-trait MetaOptions extends js.Object
-
+trait MetaOptions extends StObject
 object MetaOptions {
-  @scala.inline
-  def MetaTrueOptions(orientation: Orientation, meta: `true` = null): MetaOptions = {
-    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MetaOptions]
-  }
-  @scala.inline
-  def MetaFalseOptions(meta: `false` = null): MetaOptions = {
+  
+  inline def MetaFalseOptions(): typingsJapgolly.blueimpLoadImage.mod.MetaFalseOptions = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MetaOptions]
+    __obj.asInstanceOf[typingsJapgolly.blueimpLoadImage.mod.MetaFalseOptions]
+  }
+  
+  inline def MetaTrueOptions(orientation: Orientation): typingsJapgolly.blueimpLoadImage.mod.MetaTrueOptions = {
+    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.blueimpLoadImage.mod.MetaTrueOptions]
   }
 }
-

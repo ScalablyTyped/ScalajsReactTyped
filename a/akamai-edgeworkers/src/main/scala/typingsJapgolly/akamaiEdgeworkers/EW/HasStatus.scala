@@ -1,22 +1,25 @@
 package typingsJapgolly.akamaiEdgeworkers.EW
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HasStatus extends js.Object {
+trait HasStatus extends StObject {
+  
   /**
     * The HTTP status of a response sent to the client.
     */
   var status: Double
 }
-
 object HasStatus {
-  @scala.inline
-  def apply(status: Double): HasStatus = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
+  inline def apply(status: Double): HasStatus = {
+    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasStatus]
   }
+  
+  extension [Self <: HasStatus](x: Self) {
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+  }
 }
-

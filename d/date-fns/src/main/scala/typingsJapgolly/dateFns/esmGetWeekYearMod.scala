@@ -1,22 +1,24 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.FirstWeekContainsDateLocaleWeekStartsOn
+import typingsJapgolly.dateFns.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/getWeekYear", JSImport.Namespace)
-@js.native
-object esmGetWeekYearMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): Double = js.native
-    def apply(date: Double, options: AnonFirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-    def apply(date: Double, options: AnonLocaleLocale): Double = js.native
-    def apply(date: Date): Double = js.native
-    def apply(date: Date, options: AnonFirstWeekContainsDateLocaleWeekStartsOn): Double = js.native
-    def apply(date: Date, options: AnonLocaleLocale): Double = js.native
-  }
+object esmGetWeekYearMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: js.Date, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(date: js.Date, options: `1`): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(date: Double): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(date: Double, options: `1`): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/esm/getWeekYear", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

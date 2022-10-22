@@ -1,13 +1,17 @@
 package typingsJapgolly.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/function", JSImport.Namespace)
-@js.native
-object libraryFnFunctionMod extends js.Object {
-  def bind(target: Function, thisArg: js.Any, argArray: js.Any*): js.Any = js.native
-  def part(target: Function, args: js.Any*): js.Any = js.native
+/* was `typeof core.Function` */
+object libraryFnFunctionMod {
+  
+  @JSImport("core-js/library/fn/function", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def bind(target: Function, thisArg: Any, argArray: Any*): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")((scala.List(target.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).`++`(argArray.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[Any]
+  
+  inline def part(target: Function, args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("part")(scala.List(target.asInstanceOf[js.Any]).`++`(args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
 }
-

@@ -1,60 +1,65 @@
 package typingsJapgolly.reactTextTruncate.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTextTruncate.mod.TextTruncateProps
 import typingsJapgolly.reactTextTruncate.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactTextTruncate {
-  def apply(
-    containerClassName: String = null,
-    element: String = null,
-    line: Double | Boolean = null,
-    maxCalculateTimes: Int | Double = null,
-    onCalculated: js.UndefOr[Callback] = js.undefined,
-    onToggled: /* truncated */ Boolean => Callback = null,
-    onTruncated: js.UndefOr[Callback] = js.undefined,
-    text: String = null,
-    textElement: VdomNode = null,
-    textTruncateChild: VdomNode = null,
-    truncateText: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TextTruncateProps, default, Unit, TextTruncateProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (maxCalculateTimes != null) __obj.updateDynamic("maxCalculateTimes")(maxCalculateTimes.asInstanceOf[js.Any])
-    onCalculated.foreach(p => __obj.updateDynamic("onCalculated")(p.toJsFn))
-    if (onToggled != null) __obj.updateDynamic("onToggled")(js.Any.fromFunction1((t0: /* truncated */ scala.Boolean) => onToggled(t0).runNow()))
-    onTruncated.foreach(p => __obj.updateDynamic("onTruncated")(p.toJsFn))
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textElement != null) __obj.updateDynamic("textElement")(textElement.rawNode.asInstanceOf[js.Any])
-    if (textTruncateChild != null) __obj.updateDynamic("textTruncateChild")(textTruncateChild.rawNode.asInstanceOf[js.Any])
-    if (truncateText != null) __obj.updateDynamic("truncateText")(truncateText.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTextTruncate.mod.TextTruncateProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTextTruncate.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTextTruncate.mod.TextTruncateProps])(children: _*)
-  }
   @JSImport("react-text-truncate", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def containerClassName(value: String): this.type = set("containerClassName", value.asInstanceOf[js.Any])
+    
+    inline def element(value: String): this.type = set("element", value.asInstanceOf[js.Any])
+    
+    inline def line(value: Double | Boolean): this.type = set("line", value.asInstanceOf[js.Any])
+    
+    inline def maxCalculateTimes(value: Double): this.type = set("maxCalculateTimes", value.asInstanceOf[js.Any])
+    
+    inline def onCalculated(value: Callback): this.type = set("onCalculated", value.toJsFn)
+    
+    inline def onToggled(value: /* truncated */ Boolean => Callback): this.type = set("onToggled", js.Any.fromFunction1((t0: /* truncated */ Boolean) => value(t0).runNow()))
+    
+    inline def onTruncated(value: Callback): this.type = set("onTruncated", value.toJsFn)
+    
+    inline def text(value: String): this.type = set("text", value.asInstanceOf[js.Any])
+    
+    inline def textElement(value: VdomNode): this.type = set("textElement", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textElementNull: this.type = set("textElement", null)
+    
+    inline def textElementVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("textElement", js.Array(value*))
+    
+    inline def textElementVdomElement(value: VdomElement): this.type = set("textElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def textTruncateChild(value: VdomNode): this.type = set("textTruncateChild", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textTruncateChildNull: this.type = set("textTruncateChild", null)
+    
+    inline def textTruncateChildVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("textTruncateChild", js.Array(value*))
+    
+    inline def textTruncateChildVdomElement(value: VdomElement): this.type = set("textTruncateChild", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def truncateText(value: String): this.type = set("truncateText", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactTextTruncate.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TextTruncateProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

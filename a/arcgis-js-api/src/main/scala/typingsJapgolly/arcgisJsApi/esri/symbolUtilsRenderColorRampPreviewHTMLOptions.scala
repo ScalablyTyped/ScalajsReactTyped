@@ -1,37 +1,42 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.vertical
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait symbolUtilsRenderColorRampPreviewHTMLOptions extends Object {
+trait symbolUtilsRenderColorRampPreviewHTMLOptions
+  extends StObject
+     with Object {
+  
   /**
     * Specifies the alignment of the color ramp.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
-    *
     * @default vertical
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
   var align: js.UndefOr[horizontal | vertical] = js.undefined
+  
   /**
-    * Indicates whether to render the color ramp with a continuous gradient. When `false`, distinct colors will appear in the ramp without a gradient.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
+    * Indicates whether to render the color ramp with a continuous gradient.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
   var gradient: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The height of the ramp in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-support-symbolUtils.html#renderColorRampPreviewHTML)
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * The width of the ramp in pixels.
     *
@@ -39,26 +44,33 @@ trait symbolUtilsRenderColorRampPreviewHTMLOptions extends Object {
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object symbolUtilsRenderColorRampPreviewHTMLOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    align: horizontal | vertical = null,
-    gradient: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    width: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): symbolUtilsRenderColorRampPreviewHTMLOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(gradient)) __obj.updateDynamic("gradient")(gradient.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[symbolUtilsRenderColorRampPreviewHTMLOptions]
   }
+  
+  extension [Self <: symbolUtilsRenderColorRampPreviewHTMLOptions](x: Self) {
+    
+    inline def setAlign(value: horizontal | vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setGradient(value: Boolean): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    
+    inline def setGradientUndefined: Self = StObject.set(x, "gradient", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

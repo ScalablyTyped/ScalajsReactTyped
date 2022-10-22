@@ -1,35 +1,33 @@
 package typingsJapgolly.reactNativeKeychain.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SECURITY_LEVEL extends js.Object
-
+sealed trait SECURITY_LEVEL extends StObject
 @JSImport("react-native-keychain", "SECURITY_LEVEL")
 @js.native
-object SECURITY_LEVEL extends js.Object {
-  @js.native
-  sealed trait ANY extends SECURITY_LEVEL
-  
-  @js.native
-  sealed trait SECURE_HARDWARE extends SECURITY_LEVEL
-  
-  @js.native
-  sealed trait SECURE_SOFTWARE extends SECURITY_LEVEL
+object SECURITY_LEVEL extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SECURITY_LEVEL with Double] = js.native
-  /* 2 */ @js.native
-  object ANY extends TopLevel[ANY with Double]
+  def apply(value: Double): js.UndefOr[SECURITY_LEVEL & Double] = js.native
   
-  /* 1 */ @js.native
-  object SECURE_HARDWARE extends TopLevel[SECURE_HARDWARE with Double]
+  @js.native
+  sealed trait ANY
+    extends StObject
+       with SECURITY_LEVEL
+  /* 2 */ val ANY: typingsJapgolly.reactNativeKeychain.mod.SECURITY_LEVEL.ANY & Double = js.native
   
-  /* 0 */ @js.native
-  object SECURE_SOFTWARE extends TopLevel[SECURE_SOFTWARE with Double]
+  @js.native
+  sealed trait SECURE_HARDWARE
+    extends StObject
+       with SECURITY_LEVEL
+  /* 1 */ val SECURE_HARDWARE: typingsJapgolly.reactNativeKeychain.mod.SECURITY_LEVEL.SECURE_HARDWARE & Double = js.native
   
+  @js.native
+  sealed trait SECURE_SOFTWARE
+    extends StObject
+       with SECURITY_LEVEL
+  /* 0 */ val SECURE_SOFTWARE: typingsJapgolly.reactNativeKeychain.mod.SECURITY_LEVEL.SECURE_SOFTWARE & Double = js.native
 }
-

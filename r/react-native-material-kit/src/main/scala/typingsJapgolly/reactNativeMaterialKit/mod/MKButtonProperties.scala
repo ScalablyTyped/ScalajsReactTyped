@@ -1,248 +1,157 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.ReactEventFrom
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
-import typingsJapgolly.reactNative.mod.AccessibilityRole
-import typingsJapgolly.reactNative.mod.AccessibilityState
-import typingsJapgolly.reactNative.mod.AccessibilityStates
-import typingsJapgolly.reactNative.mod.AccessibilityTrait
-import typingsJapgolly.reactNative.mod.Insets
-import typingsJapgolly.reactNative.mod.LayoutChangeEvent
-import typingsJapgolly.reactNative.mod.NodeHandle
-import typingsJapgolly.reactNative.mod.StyleProp
-import typingsJapgolly.reactNative.mod.TVParallaxProperties
-import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.reactNative.mod.GestureResponderHandlers
+import typingsJapgolly.reactNative.mod.PointerEvents
+import typingsJapgolly.reactNative.mod.Touchable
+import typingsJapgolly.reactNative.mod.TouchableWithoutFeedbackProps
+import typingsJapgolly.reactNative.mod.ViewPropsAndroid
+import typingsJapgolly.reactNative.mod.ViewPropsIOS
 import typingsJapgolly.reactNative.reactNativeStrings.`box-none`
 import typingsJapgolly.reactNative.reactNativeStrings.`box-only`
-import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
-import typingsJapgolly.reactNative.reactNativeStrings.assertive
 import typingsJapgolly.reactNative.reactNativeStrings.auto
-import typingsJapgolly.reactNative.reactNativeStrings.button
-import typingsJapgolly.reactNative.reactNativeStrings.no
 import typingsJapgolly.reactNative.reactNativeStrings.none
-import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
-import typingsJapgolly.reactNative.reactNativeStrings.yes
 import typingsJapgolly.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.reactNative.mod.AccessibilityPropsIOS because Already inherited
 - typingsJapgolly.reactNative.mod.AccessibilityPropsAndroid because Already inherited
-- typingsJapgolly.reactNative.mod.TouchableWithoutFeedbackPropsIOS because var conflicts: hasTVPreferredFocus, tvParallaxProperties. Inlined 
 - typingsJapgolly.reactNative.mod.AccessibilityProps because Already inherited
-- typingsJapgolly.reactNative.mod.TouchableWithoutFeedbackProps because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityStates, accessibilityTraits, accessibilityViewIsModal, accessible, hasTVPreferredFocus, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID, tvParallaxProperties. Inlined delayLongPress, delayPressIn, delayPressOut, disabled, onBlur, onFocus, onLongPress, onPress, onPressIn, onPressOut, pressRetentionOffset */ trait MKButtonProperties extends MKRippleProperties {
-  /**
-    * Delay in ms, from onPressIn, before onLongPress is called.
-    */
-  var delayLongPress: js.UndefOr[Double] = js.undefined
-  /**
-    * Delay in ms, from the start of the touch, before onPressIn is called.
-    */
-  var delayPressIn: js.UndefOr[Double] = js.undefined
-  /**
-    * Delay in ms, from the release of the touch, before onPressOut is called.
-    */
-  var delayPressOut: js.UndefOr[Double] = js.undefined
-  /**
-    * If true, disable all interactions for this component.
-    */
-  var disabled: js.UndefOr[Boolean] = js.undefined
+- typingsJapgolly.reactNative.mod.ViewProps because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined pointerEvents, removeClippedSubviews, nativeID
+- typingsJapgolly.reactNativeMaterialKit.mod.MKRippleProperties because var conflicts: accessibilityActions, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLabelledBy, accessibilityLanguage, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityValue, accessibilityViewIsModal, accessible, children, hitSlop, importantForAccessibility, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, style, testID. Inlined rippleColor, rippleDuration, rippleLocation, maskEnabled, maskColor, maskBorderRadius, maskBorderRadiusInPercent, maskDuration, shadowAniEnabled */ trait MKButtonProperties
+  extends StObject
+     with TouchableWithoutFeedbackProps
+     with ViewPropsAndroid
+     with ViewPropsIOS
+     with GestureResponderHandlers
+     with Touchable
+     with PointerEvents {
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var fab: js.UndefOr[Boolean] = js.undefined
+  
+  var maskBorderRadius: js.UndefOr[Double] = js.undefined
+  
+  var maskBorderRadiusInPercent: js.UndefOr[Double] = js.undefined
+  
+  var maskColor: js.UndefOr[String] = js.undefined
+  
+  var maskDuration: js.UndefOr[Double] = js.undefined
+  
+  var maskEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * When `accessible` is true (which is the default) this may be called when
-    * the OS-specific concept of "blur" occurs, meaning the element lost focus.
-    * Some platforms may not have the concept of blur.
+    * Used to reference react managed views from native code.
     */
-  var onBlur: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var nativeID: js.UndefOr[String] = js.undefined
+  
   /**
-    * When `accessible` is true (which is the default) this may be called when
-    * the OS-specific concept of "focus" occurs. Some platforms may not have
-    * the concept of focus.
+    *
+    * In the absence of auto property, none is much like CSS's none value. box-none is as if you had applied the CSS class:
+    *
+    * .box-none {
+    *   pointer-events: none;
+    * }
+    * .box-none * {
+    *   pointer-events: all;
+    * }
+    *
+    * box-only is the equivalent of
+    *
+    * .box-only {
+    *   pointer-events: all;
+    * }
+    * .box-only * {
+    *   pointer-events: none;
+    * }
+    *
+    * But since pointerEvents does not affect layout/appearance, and we are already deviating from the spec by adding additional modes,
+    * we opt to not include pointerEvents on style. On some platforms, we would need to implement it as a className anyways. Using style or not is an implementation detail of the platform.
     */
-  var onFocus: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onLongPress: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
+  var pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
+  
   /**
-    * Called when the touch is released,
-    * but not if cancelled (e.g. by a scroll that steals the responder lock).
+    *
+    * This is a special performance property exposed by RCTView and is useful for scrolling content when there are many subviews,
+    * most of which are offscreen. For this property to be effective, it must be applied to a view that contains many subviews that extend outside its bound.
+    * The subviews must also have overflow: hidden, as should the containing view (or one of its superviews).
     */
-  var onPress: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onPressIn: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  var onPressOut: js.UndefOr[js.Function1[ReactEventFrom[NodeHandle with Element], Unit]] = js.undefined
-  /**
-    * When the scroll view is disabled, this defines how far your
-    * touch may move off of the button, before deactivating the button.
-    * Once deactivated, try moving it back and you'll see that the button
-    * is once again reactivated! Move it back and forth several times
-    * while the scroll view is disabled. Ensure you pass in a constant
-    * to reduce memory allocations.
-    */
-  var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
+  
+  var rippleColor: js.UndefOr[String] = js.undefined
+  
+  var rippleDuration: js.UndefOr[Double] = js.undefined
+  
+  var rippleLocation: js.UndefOr[typingsJapgolly.reactNativeMaterialKit.mod.MKPropTypes.rippleLocation] = js.undefined
+  
+  var shadowAniEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object MKButtonProperties {
-  @scala.inline
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    delayLongPress: Int | Double = null,
-    delayPressIn: Int | Double = null,
-    delayPressOut: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    fab: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    maskBorderRadius: Int | Double = null,
-    maskBorderRadiusInPercent: Int | Double = null,
-    maskColor: String = null,
-    maskDuration: Int | Double = null,
-    maskEnabled: js.UndefOr[Boolean] = js.undefined,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onBlur: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onFocus: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onMoveShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onMoveShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressIn: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressOut: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderGrant: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderReject: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderRelease: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminate: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminationRequest: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onTouchCancel: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEndCapture: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    pressRetentionOffset: Insets = null,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    rippleColor: String = null,
-    rippleDuration: Int | Double = null,
-    rippleLocation: rippleLocation = null,
-    shadowAniEnabled: js.UndefOr[Boolean] = js.undefined,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    testID: String = null,
-    tvParallaxMagnification: Int | Double = null,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: Int | Double = null,
-    tvParallaxShiftDistanceY: Int | Double = null,
-    tvParallaxTiltAngle: Int | Double = null
-  ): MKButtonProperties = {
+  
+  inline def apply(): MKButtonProperties = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
-    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fab)) __obj.updateDynamic("fab")(fab.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
-    if (maskBorderRadius != null) __obj.updateDynamic("maskBorderRadius")(maskBorderRadius.asInstanceOf[js.Any])
-    if (maskBorderRadiusInPercent != null) __obj.updateDynamic("maskBorderRadiusInPercent")(maskBorderRadiusInPercent.asInstanceOf[js.Any])
-    if (maskColor != null) __obj.updateDynamic("maskColor")(maskColor.asInstanceOf[js.Any])
-    if (maskDuration != null) __obj.updateDynamic("maskDuration")(maskDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(maskEnabled)) __obj.updateDynamic("maskEnabled")(maskEnabled.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponder(t0).runNow()))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponderCapture(t0).runNow()))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressIn(t0).runNow()))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressOut(t0).runNow()))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderEnd(t0).runNow()))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderGrant(t0).runNow()))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderMove(t0).runNow()))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderReject(t0).runNow()))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderRelease(t0).runNow()))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderStart(t0).runNow()))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminate(t0).runNow()))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminationRequest(t0).runNow()))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponder(t0).runNow()))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponderCapture(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEndCapture(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (pressRetentionOffset != null) __obj.updateDynamic("pressRetentionOffset")(pressRetentionOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
-    if (rippleColor != null) __obj.updateDynamic("rippleColor")(rippleColor.asInstanceOf[js.Any])
-    if (rippleDuration != null) __obj.updateDynamic("rippleDuration")(rippleDuration.asInstanceOf[js.Any])
-    if (rippleLocation != null) __obj.updateDynamic("rippleLocation")(rippleLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadowAniEnabled)) __obj.updateDynamic("shadowAniEnabled")(shadowAniEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
-    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[MKButtonProperties]
   }
+  
+  extension [Self <: MKButtonProperties](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFab(value: Boolean): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
+    
+    inline def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
+    
+    inline def setMaskBorderRadius(value: Double): Self = StObject.set(x, "maskBorderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setMaskBorderRadiusInPercent(value: Double): Self = StObject.set(x, "maskBorderRadiusInPercent", value.asInstanceOf[js.Any])
+    
+    inline def setMaskBorderRadiusInPercentUndefined: Self = StObject.set(x, "maskBorderRadiusInPercent", js.undefined)
+    
+    inline def setMaskBorderRadiusUndefined: Self = StObject.set(x, "maskBorderRadius", js.undefined)
+    
+    inline def setMaskColor(value: String): Self = StObject.set(x, "maskColor", value.asInstanceOf[js.Any])
+    
+    inline def setMaskColorUndefined: Self = StObject.set(x, "maskColor", js.undefined)
+    
+    inline def setMaskDuration(value: Double): Self = StObject.set(x, "maskDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaskDurationUndefined: Self = StObject.set(x, "maskDuration", js.undefined)
+    
+    inline def setMaskEnabled(value: Boolean): Self = StObject.set(x, "maskEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setMaskEnabledUndefined: Self = StObject.set(x, "maskEnabled", js.undefined)
+    
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    
+    inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    inline def setRemoveClippedSubviews(value: Boolean): Self = StObject.set(x, "removeClippedSubviews", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveClippedSubviewsUndefined: Self = StObject.set(x, "removeClippedSubviews", js.undefined)
+    
+    inline def setRippleColor(value: String): Self = StObject.set(x, "rippleColor", value.asInstanceOf[js.Any])
+    
+    inline def setRippleColorUndefined: Self = StObject.set(x, "rippleColor", js.undefined)
+    
+    inline def setRippleDuration(value: Double): Self = StObject.set(x, "rippleDuration", value.asInstanceOf[js.Any])
+    
+    inline def setRippleDurationUndefined: Self = StObject.set(x, "rippleDuration", js.undefined)
+    
+    inline def setRippleLocation(value: rippleLocation): Self = StObject.set(x, "rippleLocation", value.asInstanceOf[js.Any])
+    
+    inline def setRippleLocationUndefined: Self = StObject.set(x, "rippleLocation", js.undefined)
+    
+    inline def setShadowAniEnabled(value: Boolean): Self = StObject.set(x, "shadowAniEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setShadowAniEnabledUndefined: Self = StObject.set(x, "shadowAniEnabled", js.undefined)
+  }
 }
-

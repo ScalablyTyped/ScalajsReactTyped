@@ -1,43 +1,39 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`16777216`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`256`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`33554432`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4096`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4`
+import typingsJapgolly.activexDao.activexDaoInts.`16777216`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`256`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`33554432`
+import typingsJapgolly.activexDao.activexDaoInts.`4096`
+import typingsJapgolly.activexDao.activexDaoInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4096`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`16777216`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`33554432`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`256`
+  - typingsJapgolly.activexDao.activexDaoInts.`4096`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`4`
+  - typingsJapgolly.activexDao.activexDaoInts.`16777216`
+  - typingsJapgolly.activexDao.activexDaoInts.`33554432`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`256`
 */
-trait RelationAttributeEnum extends js.Object
-
+trait RelationAttributeEnum extends StObject
 object RelationAttributeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbRelationDeleteCascade: `4096` = this.cast(4096)
-  @scala.inline
-  def dbRelationDontEnforce: `2` = this.cast(2)
-  @scala.inline
-  def dbRelationInherited: `4` = this.cast(4)
-  @scala.inline
-  def dbRelationLeft: `16777216` = this.cast(16777216)
-  @scala.inline
-  def dbRelationRight: `33554432` = this.cast(33554432)
-  @scala.inline
-  def dbRelationUnique: `1` = this.cast(1)
-  @scala.inline
-  def dbRelationUpdateCascade: `256` = this.cast(256)
+  
+  inline def dbRelationDeleteCascade: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def dbRelationDontEnforce: `2` = 2.asInstanceOf[`2`]
+  
+  inline def dbRelationInherited: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbRelationLeft: `16777216` = 16777216.asInstanceOf[`16777216`]
+  
+  inline def dbRelationRight: `33554432` = 33554432.asInstanceOf[`33554432`]
+  
+  inline def dbRelationUnique: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbRelationUpdateCascade: `256` = 256.asInstanceOf[`256`]
 }
-

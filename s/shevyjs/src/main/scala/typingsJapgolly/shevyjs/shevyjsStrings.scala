@@ -1,65 +1,65 @@
 package typingsJapgolly.shevyjs
 
 import typingsJapgolly.shevyjs.typesMod.Heading
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shevyjsStrings {
-  @js.native
-  sealed trait augmentedFourth extends js.Object
   
   @js.native
-  sealed trait h1 extends Heading
+  sealed trait augmentedFourth extends StObject
+  inline def augmentedFourth: augmentedFourth = "augmentedFourth".asInstanceOf[augmentedFourth]
   
   @js.native
-  sealed trait h2 extends Heading
+  sealed trait h1
+    extends StObject
+       with Heading
+  inline def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait h3 extends Heading
+  sealed trait h2
+    extends StObject
+       with Heading
+  inline def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait h4 extends Heading
+  sealed trait h3
+    extends StObject
+       with Heading
+  inline def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait h5 extends Heading
+  sealed trait h4
+    extends StObject
+       with Heading
+  inline def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait h6 extends Heading
+  sealed trait h5
+    extends StObject
+       with Heading
+  inline def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait majorSecond extends js.Object
+  sealed trait h6
+    extends StObject
+       with Heading
+  inline def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait majorThird extends js.Object
+  sealed trait majorSecond extends StObject
+  inline def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
   
   @js.native
-  sealed trait minorThird extends js.Object
+  sealed trait majorThird extends StObject
+  inline def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
   
   @js.native
-  sealed trait perfectFourth extends js.Object
+  sealed trait minorThird extends StObject
+  inline def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
   
-  @scala.inline
-  def augmentedFourth: augmentedFourth = "augmentedFourth".asInstanceOf[augmentedFourth]
-  @scala.inline
-  def h1: h1 = "h1".asInstanceOf[h1]
-  @scala.inline
-  def h2: h2 = "h2".asInstanceOf[h2]
-  @scala.inline
-  def h3: h3 = "h3".asInstanceOf[h3]
-  @scala.inline
-  def h4: h4 = "h4".asInstanceOf[h4]
-  @scala.inline
-  def h5: h5 = "h5".asInstanceOf[h5]
-  @scala.inline
-  def h6: h6 = "h6".asInstanceOf[h6]
-  @scala.inline
-  def majorSecond: majorSecond = "majorSecond".asInstanceOf[majorSecond]
-  @scala.inline
-  def majorThird: majorThird = "majorThird".asInstanceOf[majorThird]
-  @scala.inline
-  def minorThird: minorThird = "minorThird".asInstanceOf[minorThird]
-  @scala.inline
-  def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
+  @js.native
+  sealed trait perfectFourth extends StObject
+  inline def perfectFourth: perfectFourth = "perfectFourth".asInstanceOf[perfectFourth]
 }
-

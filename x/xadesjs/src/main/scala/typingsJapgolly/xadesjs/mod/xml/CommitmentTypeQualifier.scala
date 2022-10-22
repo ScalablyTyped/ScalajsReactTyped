@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.CommitmentTypeQualifier")
 @js.native
-class CommitmentTypeQualifier ()
-  extends typingsJapgolly.xadesjs.xmlMod.CommitmentTypeQualifier
-
+open class CommitmentTypeQualifier ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.CommitmentTypeQualifier {
+  def this(properties: js.Object) = this()
+}

@@ -1,46 +1,46 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotifyMethods extends js.Object
-
+sealed trait NotifyMethods extends StObject
 @JSImport("azdata", "NotifyMethods")
 @js.native
-object NotifyMethods extends js.Object {
-  @js.native
-  sealed trait netSend extends NotifyMethods
+object NotifyMethods extends StObject {
   
-  @js.native
-  sealed trait none extends NotifyMethods
-  
-  @js.native
-  sealed trait notifyAll extends NotifyMethods
-  
-  @js.native
-  sealed trait notifyEmail extends NotifyMethods
-  
-  @js.native
-  sealed trait pager extends NotifyMethods
-  
-  /* 7 */ @JSName("notifyAll")
-  val notifyAll_ : notifyAll with Double = js.native
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotifyMethods with Double] = js.native
-  /* 4 */ @js.native
-  object netSend extends TopLevel[netSend with Double]
+  def apply(value: Double): js.UndefOr[NotifyMethods & Double] = js.native
   
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
+  @js.native
+  sealed trait netSend
+    extends StObject
+       with NotifyMethods
+  /* 4 */ val netSend: typingsJapgolly.azdata.mod.NotifyMethods.netSend & Double = js.native
   
-  /* 1 */ @js.native
-  object notifyEmail extends TopLevel[notifyEmail with Double]
+  @js.native
+  sealed trait none
+    extends StObject
+       with NotifyMethods
+  /* 0 */ val none: typingsJapgolly.azdata.mod.NotifyMethods.none & Double = js.native
   
-  /* 2 */ @js.native
-  object pager extends TopLevel[pager with Double]
+  @js.native
+  sealed trait notifyAll
+    extends StObject
+       with NotifyMethods
+  /* 7 */ @JSName("notifyAll")
+  val notifyAll_ : notifyAll & Double = js.native
   
+  @js.native
+  sealed trait notifyEmail
+    extends StObject
+       with NotifyMethods
+  /* 1 */ val notifyEmail: typingsJapgolly.azdata.mod.NotifyMethods.notifyEmail & Double = js.native
+  
+  @js.native
+  sealed trait pager
+    extends StObject
+       with NotifyMethods
+  /* 2 */ val pager: typingsJapgolly.azdata.mod.NotifyMethods.pager & Double = js.native
 }
-

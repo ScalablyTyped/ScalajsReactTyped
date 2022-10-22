@@ -1,33 +1,48 @@
 package typingsJapgolly.jqueryJnotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JNotifyOptions extends js.Object {
+trait JNotifyOptions extends StObject {
+  
   var disappearTime: js.UndefOr[Double] = js.undefined
+  
   var permanent: js.UndefOr[Boolean] = js.undefined
+  
   var showIcon: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object JNotifyOptions {
-  @scala.inline
-  def apply(
-    disappearTime: Int | Double = null,
-    permanent: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    `type`: String = null
-  ): JNotifyOptions = {
+  
+  inline def apply(): JNotifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (disappearTime != null) __obj.updateDynamic("disappearTime")(disappearTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(permanent)) __obj.updateDynamic("permanent")(permanent.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JNotifyOptions]
   }
+  
+  extension [Self <: JNotifyOptions](x: Self) {
+    
+    inline def setDisappearTime(value: Double): Self = StObject.set(x, "disappearTime", value.asInstanceOf[js.Any])
+    
+    inline def setDisappearTimeUndefined: Self = StObject.set(x, "disappearTime", js.undefined)
+    
+    inline def setPermanent(value: Boolean): Self = StObject.set(x, "permanent", value.asInstanceOf[js.Any])
+    
+    inline def setPermanentUndefined: Self = StObject.set(x, "permanent", js.undefined)
+    
+    inline def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

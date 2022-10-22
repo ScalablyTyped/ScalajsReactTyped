@@ -11,9 +11,9 @@ react currency formatter Component
 | Full name          | react-currency-formatter |
 | Keywords           | currency, formatter, react-component |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 315202 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 36436.666666666664 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/xDae/react-currency-formatter#readme)

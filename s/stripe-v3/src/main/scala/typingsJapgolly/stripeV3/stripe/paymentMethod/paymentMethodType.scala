@@ -1,21 +1,17 @@
 package typingsJapgolly.stripeV3.stripe.paymentMethod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV3.stripeV3Strings.card
   - typingsJapgolly.stripeV3.stripeV3Strings.card_present
 */
-trait paymentMethodType extends js.Object
-
+trait paymentMethodType extends StObject
 object paymentMethodType {
-  @scala.inline
-  def card: typingsJapgolly.stripeV3.stripeV3Strings.card = this.cast("card")
-  @scala.inline
-  def card_present: typingsJapgolly.stripeV3.stripeV3Strings.card_present = this.cast("card_present")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def card: typingsJapgolly.stripeV3.stripeV3Strings.card = "card".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.card]
+  
+  inline def card_present: typingsJapgolly.stripeV3.stripeV3Strings.card_present = "card_present".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.card_present]
 }
-

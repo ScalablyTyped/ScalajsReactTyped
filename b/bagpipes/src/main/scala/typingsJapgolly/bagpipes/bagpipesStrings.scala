@@ -2,30 +2,33 @@ package typingsJapgolly.bagpipes
 
 import typingsJapgolly.bagpipes.mod.Affinity
 import typingsJapgolly.bagpipes.mod._FittingType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bagpipesStrings {
-  @js.native
-  sealed trait hoist extends Affinity
   
   @js.native
-  sealed trait sink extends Affinity
+  sealed trait hoist
+    extends StObject
+       with Affinity
+  inline def hoist: hoist = "hoist".asInstanceOf[hoist]
   
   @js.native
-  sealed trait system extends _FittingType
+  sealed trait sink
+    extends StObject
+       with Affinity
+  inline def sink: sink = "sink".asInstanceOf[sink]
   
   @js.native
-  sealed trait user extends _FittingType
+  sealed trait system
+    extends StObject
+       with _FittingType
+  inline def system: system = "system".asInstanceOf[system]
   
-  @scala.inline
-  def hoist: hoist = "hoist".asInstanceOf[hoist]
-  @scala.inline
-  def sink: sink = "sink".asInstanceOf[sink]
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  @js.native
+  sealed trait user
+    extends StObject
+       with _FittingType
+  inline def user: user = "user".asInstanceOf[user]
 }
-

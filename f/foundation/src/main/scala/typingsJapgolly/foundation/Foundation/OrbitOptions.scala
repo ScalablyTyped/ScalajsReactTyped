@@ -1,119 +1,218 @@
 package typingsJapgolly.foundation.Foundation
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/orbit.html#advanced
-trait OrbitOptions extends js.Object {
+trait OrbitOptions extends StObject {
+  
   var active_slide_class: js.UndefOr[String] = js.undefined
-  var after_slide_change: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var after_slide_change: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var animation: js.UndefOr[String] = js.undefined
+  
   var animation_speed: js.UndefOr[Double] = js.undefined
-  var before_slide_change: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var before_slide_change: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var bullets: js.UndefOr[Boolean] = js.undefined
+  
   var bullets_active_class: js.UndefOr[String] = js.undefined
+  
   var bullets_container_class: js.UndefOr[String] = js.undefined
+  
   var caption_class: js.UndefOr[String] = js.undefined
+  
   var circular: js.UndefOr[Boolean] = js.undefined
+  
   var container_class: js.UndefOr[String] = js.undefined
+  
   var navigation_arrows: js.UndefOr[Boolean] = js.undefined
+  
   var next_class: js.UndefOr[String] = js.undefined
+  
   var next_on_click: js.UndefOr[Boolean] = js.undefined
+  
   var orbit_transition_class: js.UndefOr[String] = js.undefined
+  
   var pause_on_hover: js.UndefOr[Boolean] = js.undefined
+  
   var preloader_class: js.UndefOr[String] = js.undefined
+  
   var prev_class: js.UndefOr[String] = js.undefined
+  
   var resume_on_mouseout: js.UndefOr[Boolean] = js.undefined
+  
   var slide_number: js.UndefOr[Boolean] = js.undefined
+  
   var slide_number_class: js.UndefOr[String] = js.undefined
+  
   var slide_number_text: js.UndefOr[String] = js.undefined
+  
   var slide_selector: js.UndefOr[String] = js.undefined
+  
   var slides_container_class: js.UndefOr[String] = js.undefined
+  
   var stack_on_small: js.UndefOr[Boolean] = js.undefined
+  
   var stack_on_small_class: js.UndefOr[String] = js.undefined
+  
   var swipe: js.UndefOr[Boolean] = js.undefined
+  
   var timer: js.UndefOr[Boolean] = js.undefined
+  
   var timer_container_class: js.UndefOr[String] = js.undefined
+  
   var timer_paused_class: js.UndefOr[String] = js.undefined
+  
   var timer_progress_class: js.UndefOr[String] = js.undefined
+  
   var timer_speed: js.UndefOr[Double] = js.undefined
+  
   var variable_height: js.UndefOr[Boolean] = js.undefined
 }
-
 object OrbitOptions {
-  @scala.inline
-  def apply(
-    active_slide_class: String = null,
-    after_slide_change: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    animation: String = null,
-    animation_speed: Int | Double = null,
-    before_slide_change: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    bullets: js.UndefOr[Boolean] = js.undefined,
-    bullets_active_class: String = null,
-    bullets_container_class: String = null,
-    caption_class: String = null,
-    circular: js.UndefOr[Boolean] = js.undefined,
-    container_class: String = null,
-    navigation_arrows: js.UndefOr[Boolean] = js.undefined,
-    next_class: String = null,
-    next_on_click: js.UndefOr[Boolean] = js.undefined,
-    orbit_transition_class: String = null,
-    pause_on_hover: js.UndefOr[Boolean] = js.undefined,
-    preloader_class: String = null,
-    prev_class: String = null,
-    resume_on_mouseout: js.UndefOr[Boolean] = js.undefined,
-    slide_number: js.UndefOr[Boolean] = js.undefined,
-    slide_number_class: String = null,
-    slide_number_text: String = null,
-    slide_selector: String = null,
-    slides_container_class: String = null,
-    stack_on_small: js.UndefOr[Boolean] = js.undefined,
-    stack_on_small_class: String = null,
-    swipe: js.UndefOr[Boolean] = js.undefined,
-    timer: js.UndefOr[Boolean] = js.undefined,
-    timer_container_class: String = null,
-    timer_paused_class: String = null,
-    timer_progress_class: String = null,
-    timer_speed: Int | Double = null,
-    variable_height: js.UndefOr[Boolean] = js.undefined
-  ): OrbitOptions = {
+  
+  inline def apply(): OrbitOptions = {
     val __obj = js.Dynamic.literal()
-    if (active_slide_class != null) __obj.updateDynamic("active_slide_class")(active_slide_class.asInstanceOf[js.Any])
-    after_slide_change.foreach(p => __obj.updateDynamic("after_slide_change")(p.toJsFn))
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed.asInstanceOf[js.Any])
-    before_slide_change.foreach(p => __obj.updateDynamic("before_slide_change")(p.toJsFn))
-    if (!js.isUndefined(bullets)) __obj.updateDynamic("bullets")(bullets.asInstanceOf[js.Any])
-    if (bullets_active_class != null) __obj.updateDynamic("bullets_active_class")(bullets_active_class.asInstanceOf[js.Any])
-    if (bullets_container_class != null) __obj.updateDynamic("bullets_container_class")(bullets_container_class.asInstanceOf[js.Any])
-    if (caption_class != null) __obj.updateDynamic("caption_class")(caption_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
-    if (container_class != null) __obj.updateDynamic("container_class")(container_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation_arrows)) __obj.updateDynamic("navigation_arrows")(navigation_arrows.asInstanceOf[js.Any])
-    if (next_class != null) __obj.updateDynamic("next_class")(next_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(next_on_click)) __obj.updateDynamic("next_on_click")(next_on_click.asInstanceOf[js.Any])
-    if (orbit_transition_class != null) __obj.updateDynamic("orbit_transition_class")(orbit_transition_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(pause_on_hover)) __obj.updateDynamic("pause_on_hover")(pause_on_hover.asInstanceOf[js.Any])
-    if (preloader_class != null) __obj.updateDynamic("preloader_class")(preloader_class.asInstanceOf[js.Any])
-    if (prev_class != null) __obj.updateDynamic("prev_class")(prev_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(resume_on_mouseout)) __obj.updateDynamic("resume_on_mouseout")(resume_on_mouseout.asInstanceOf[js.Any])
-    if (!js.isUndefined(slide_number)) __obj.updateDynamic("slide_number")(slide_number.asInstanceOf[js.Any])
-    if (slide_number_class != null) __obj.updateDynamic("slide_number_class")(slide_number_class.asInstanceOf[js.Any])
-    if (slide_number_text != null) __obj.updateDynamic("slide_number_text")(slide_number_text.asInstanceOf[js.Any])
-    if (slide_selector != null) __obj.updateDynamic("slide_selector")(slide_selector.asInstanceOf[js.Any])
-    if (slides_container_class != null) __obj.updateDynamic("slides_container_class")(slides_container_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(stack_on_small)) __obj.updateDynamic("stack_on_small")(stack_on_small.asInstanceOf[js.Any])
-    if (stack_on_small_class != null) __obj.updateDynamic("stack_on_small_class")(stack_on_small_class.asInstanceOf[js.Any])
-    if (!js.isUndefined(swipe)) __obj.updateDynamic("swipe")(swipe.asInstanceOf[js.Any])
-    if (!js.isUndefined(timer)) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
-    if (timer_container_class != null) __obj.updateDynamic("timer_container_class")(timer_container_class.asInstanceOf[js.Any])
-    if (timer_paused_class != null) __obj.updateDynamic("timer_paused_class")(timer_paused_class.asInstanceOf[js.Any])
-    if (timer_progress_class != null) __obj.updateDynamic("timer_progress_class")(timer_progress_class.asInstanceOf[js.Any])
-    if (timer_speed != null) __obj.updateDynamic("timer_speed")(timer_speed.asInstanceOf[js.Any])
-    if (!js.isUndefined(variable_height)) __obj.updateDynamic("variable_height")(variable_height.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrbitOptions]
   }
+  
+  extension [Self <: OrbitOptions](x: Self) {
+    
+    inline def setActive_slide_class(value: String): Self = StObject.set(x, "active_slide_class", value.asInstanceOf[js.Any])
+    
+    inline def setActive_slide_classUndefined: Self = StObject.set(x, "active_slide_class", js.undefined)
+    
+    inline def setAfter_slide_change(value: CallbackTo[Any]): Self = StObject.set(x, "after_slide_change", value.toJsFn)
+    
+    inline def setAfter_slide_changeUndefined: Self = StObject.set(x, "after_slide_change", js.undefined)
+    
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAnimation_speed(value: Double): Self = StObject.set(x, "animation_speed", value.asInstanceOf[js.Any])
+    
+    inline def setAnimation_speedUndefined: Self = StObject.set(x, "animation_speed", js.undefined)
+    
+    inline def setBefore_slide_change(value: CallbackTo[Any]): Self = StObject.set(x, "before_slide_change", value.toJsFn)
+    
+    inline def setBefore_slide_changeUndefined: Self = StObject.set(x, "before_slide_change", js.undefined)
+    
+    inline def setBullets(value: Boolean): Self = StObject.set(x, "bullets", value.asInstanceOf[js.Any])
+    
+    inline def setBulletsUndefined: Self = StObject.set(x, "bullets", js.undefined)
+    
+    inline def setBullets_active_class(value: String): Self = StObject.set(x, "bullets_active_class", value.asInstanceOf[js.Any])
+    
+    inline def setBullets_active_classUndefined: Self = StObject.set(x, "bullets_active_class", js.undefined)
+    
+    inline def setBullets_container_class(value: String): Self = StObject.set(x, "bullets_container_class", value.asInstanceOf[js.Any])
+    
+    inline def setBullets_container_classUndefined: Self = StObject.set(x, "bullets_container_class", js.undefined)
+    
+    inline def setCaption_class(value: String): Self = StObject.set(x, "caption_class", value.asInstanceOf[js.Any])
+    
+    inline def setCaption_classUndefined: Self = StObject.set(x, "caption_class", js.undefined)
+    
+    inline def setCircular(value: Boolean): Self = StObject.set(x, "circular", value.asInstanceOf[js.Any])
+    
+    inline def setCircularUndefined: Self = StObject.set(x, "circular", js.undefined)
+    
+    inline def setContainer_class(value: String): Self = StObject.set(x, "container_class", value.asInstanceOf[js.Any])
+    
+    inline def setContainer_classUndefined: Self = StObject.set(x, "container_class", js.undefined)
+    
+    inline def setNavigation_arrows(value: Boolean): Self = StObject.set(x, "navigation_arrows", value.asInstanceOf[js.Any])
+    
+    inline def setNavigation_arrowsUndefined: Self = StObject.set(x, "navigation_arrows", js.undefined)
+    
+    inline def setNext_class(value: String): Self = StObject.set(x, "next_class", value.asInstanceOf[js.Any])
+    
+    inline def setNext_classUndefined: Self = StObject.set(x, "next_class", js.undefined)
+    
+    inline def setNext_on_click(value: Boolean): Self = StObject.set(x, "next_on_click", value.asInstanceOf[js.Any])
+    
+    inline def setNext_on_clickUndefined: Self = StObject.set(x, "next_on_click", js.undefined)
+    
+    inline def setOrbit_transition_class(value: String): Self = StObject.set(x, "orbit_transition_class", value.asInstanceOf[js.Any])
+    
+    inline def setOrbit_transition_classUndefined: Self = StObject.set(x, "orbit_transition_class", js.undefined)
+    
+    inline def setPause_on_hover(value: Boolean): Self = StObject.set(x, "pause_on_hover", value.asInstanceOf[js.Any])
+    
+    inline def setPause_on_hoverUndefined: Self = StObject.set(x, "pause_on_hover", js.undefined)
+    
+    inline def setPreloader_class(value: String): Self = StObject.set(x, "preloader_class", value.asInstanceOf[js.Any])
+    
+    inline def setPreloader_classUndefined: Self = StObject.set(x, "preloader_class", js.undefined)
+    
+    inline def setPrev_class(value: String): Self = StObject.set(x, "prev_class", value.asInstanceOf[js.Any])
+    
+    inline def setPrev_classUndefined: Self = StObject.set(x, "prev_class", js.undefined)
+    
+    inline def setResume_on_mouseout(value: Boolean): Self = StObject.set(x, "resume_on_mouseout", value.asInstanceOf[js.Any])
+    
+    inline def setResume_on_mouseoutUndefined: Self = StObject.set(x, "resume_on_mouseout", js.undefined)
+    
+    inline def setSlide_number(value: Boolean): Self = StObject.set(x, "slide_number", value.asInstanceOf[js.Any])
+    
+    inline def setSlide_numberUndefined: Self = StObject.set(x, "slide_number", js.undefined)
+    
+    inline def setSlide_number_class(value: String): Self = StObject.set(x, "slide_number_class", value.asInstanceOf[js.Any])
+    
+    inline def setSlide_number_classUndefined: Self = StObject.set(x, "slide_number_class", js.undefined)
+    
+    inline def setSlide_number_text(value: String): Self = StObject.set(x, "slide_number_text", value.asInstanceOf[js.Any])
+    
+    inline def setSlide_number_textUndefined: Self = StObject.set(x, "slide_number_text", js.undefined)
+    
+    inline def setSlide_selector(value: String): Self = StObject.set(x, "slide_selector", value.asInstanceOf[js.Any])
+    
+    inline def setSlide_selectorUndefined: Self = StObject.set(x, "slide_selector", js.undefined)
+    
+    inline def setSlides_container_class(value: String): Self = StObject.set(x, "slides_container_class", value.asInstanceOf[js.Any])
+    
+    inline def setSlides_container_classUndefined: Self = StObject.set(x, "slides_container_class", js.undefined)
+    
+    inline def setStack_on_small(value: Boolean): Self = StObject.set(x, "stack_on_small", value.asInstanceOf[js.Any])
+    
+    inline def setStack_on_smallUndefined: Self = StObject.set(x, "stack_on_small", js.undefined)
+    
+    inline def setStack_on_small_class(value: String): Self = StObject.set(x, "stack_on_small_class", value.asInstanceOf[js.Any])
+    
+    inline def setStack_on_small_classUndefined: Self = StObject.set(x, "stack_on_small_class", js.undefined)
+    
+    inline def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+    
+    inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+    
+    inline def setTimer(value: Boolean): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+    
+    inline def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
+    
+    inline def setTimer_container_class(value: String): Self = StObject.set(x, "timer_container_class", value.asInstanceOf[js.Any])
+    
+    inline def setTimer_container_classUndefined: Self = StObject.set(x, "timer_container_class", js.undefined)
+    
+    inline def setTimer_paused_class(value: String): Self = StObject.set(x, "timer_paused_class", value.asInstanceOf[js.Any])
+    
+    inline def setTimer_paused_classUndefined: Self = StObject.set(x, "timer_paused_class", js.undefined)
+    
+    inline def setTimer_progress_class(value: String): Self = StObject.set(x, "timer_progress_class", value.asInstanceOf[js.Any])
+    
+    inline def setTimer_progress_classUndefined: Self = StObject.set(x, "timer_progress_class", js.undefined)
+    
+    inline def setTimer_speed(value: Double): Self = StObject.set(x, "timer_speed", value.asInstanceOf[js.Any])
+    
+    inline def setTimer_speedUndefined: Self = StObject.set(x, "timer_speed", js.undefined)
+    
+    inline def setVariable_height(value: Boolean): Self = StObject.set(x, "variable_height", value.asInstanceOf[js.Any])
+    
+    inline def setVariable_heightUndefined: Self = StObject.set(x, "variable_height", js.undefined)
+  }
 }
-

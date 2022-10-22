@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-form
 
-Typings are for version 2.16
+Typings are for version 4.0
 
 ## Library description:
 ⚛️ 💼 React hooks for managing form state and lifecycle
@@ -10,10 +10,10 @@ Typings are for version 2.16
 | ------------------ | :-------------: |
 | Full name          | react-form |
 | Keywords           | - |
-| # releases         | 56 |
-| # dependents       | 16 |
-| # downloads        | 875052 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 55701.666666666664 |
+| # stars            | 2355.0 |
 
 ## Links
 - [Homepage](https://github.com/tannerlinsley/react-form#readme)

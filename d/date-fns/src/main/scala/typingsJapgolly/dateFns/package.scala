@@ -1,12 +1,16 @@
-package typingsJapgolly
+package typingsJapgolly.dateFns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object dateFns {
-  type CurriedFn1[A, R] = js.Function1[/* a */ A, R]
-  type DurationAliased = typingsJapgolly.dateFns.Duration
-  type IntervalAliased = typingsJapgolly.dateFns.Interval
-  type LocaleAliased = typingsJapgolly.dateFns.Locale
-}
+
+type CurriedFn1[A, R] = js.Function1[/* a */ A, R]
+
+type DayAliased = Day
+
+type DurationAliased = Duration
+
+type IntervalAliased = Interval
+
+type LocaleAliased = Locale

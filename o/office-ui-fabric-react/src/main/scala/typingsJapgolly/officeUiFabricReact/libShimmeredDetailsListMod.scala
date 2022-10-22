@@ -1,20 +1,21 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/ShimmeredDetailsList", JSImport.Namespace)
-@js.native
-object libShimmeredDetailsListMod extends js.Object {
+object libShimmeredDetailsListMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ShimmeredDetailsList", "ShimmeredDetailsList")
   @js.native
-  class ShimmeredDetailsListBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.shimmeredDetailsListBaseMod.ShimmeredDetailsListBase {
+  val ShimmeredDetailsList: FunctionComponent[IShimmeredDetailsListProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/ShimmeredDetailsList", "ShimmeredDetailsListBase")
+  @js.native
+  open class ShimmeredDetailsListBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDotbaseMod.ShimmeredDetailsListBase {
     def this(props: IShimmeredDetailsListProps) = this()
   }
-  
-  val ShimmeredDetailsList: FunctionComponent[IShimmeredDetailsListProps] = js.native
 }
-

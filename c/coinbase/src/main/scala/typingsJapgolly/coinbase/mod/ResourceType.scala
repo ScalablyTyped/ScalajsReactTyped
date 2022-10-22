@@ -1,8 +1,8 @@
 package typingsJapgolly.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.coinbase.coinbaseStrings.account
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.coinbase.coinbaseStrings.withdrawal
   - typingsJapgolly.coinbase.coinbaseStrings.payment_method
 */
-trait ResourceType extends js.Object
-
+trait ResourceType extends StObject
 object ResourceType {
-  @scala.inline
-  def account: typingsJapgolly.coinbase.coinbaseStrings.account = this.cast("account")
-  @scala.inline
-  def address: typingsJapgolly.coinbase.coinbaseStrings.address = this.cast("address")
-  @scala.inline
-  def buy: typingsJapgolly.coinbase.coinbaseStrings.buy = this.cast("buy")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def deposit: typingsJapgolly.coinbase.coinbaseStrings.deposit = this.cast("deposit")
-  @scala.inline
-  def payment_method: typingsJapgolly.coinbase.coinbaseStrings.payment_method = this.cast("payment_method")
-  @scala.inline
-  def sell: typingsJapgolly.coinbase.coinbaseStrings.sell = this.cast("sell")
-  @scala.inline
-  def transaction: typingsJapgolly.coinbase.coinbaseStrings.transaction = this.cast("transaction")
-  @scala.inline
-  def user: typingsJapgolly.coinbase.coinbaseStrings.user = this.cast("user")
-  @scala.inline
-  def withdrawal: typingsJapgolly.coinbase.coinbaseStrings.withdrawal = this.cast("withdrawal")
+  
+  inline def account: typingsJapgolly.coinbase.coinbaseStrings.account = "account".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.account]
+  
+  inline def address: typingsJapgolly.coinbase.coinbaseStrings.address = "address".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.address]
+  
+  inline def buy: typingsJapgolly.coinbase.coinbaseStrings.buy = "buy".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.buy]
+  
+  inline def deposit: typingsJapgolly.coinbase.coinbaseStrings.deposit = "deposit".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.deposit]
+  
+  inline def payment_method: typingsJapgolly.coinbase.coinbaseStrings.payment_method = "payment_method".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.payment_method]
+  
+  inline def sell: typingsJapgolly.coinbase.coinbaseStrings.sell = "sell".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.sell]
+  
+  inline def transaction: typingsJapgolly.coinbase.coinbaseStrings.transaction = "transaction".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.transaction]
+  
+  inline def user: typingsJapgolly.coinbase.coinbaseStrings.user = "user".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.user]
+  
+  inline def withdrawal: typingsJapgolly.coinbase.coinbaseStrings.withdrawal = "withdrawal".asInstanceOf[typingsJapgolly.coinbase.coinbaseStrings.withdrawal]
 }
-

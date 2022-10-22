@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeView.ExpandedChanging event.
   */
-@JSGlobal("BootstrapClientTreeViewNodeCancelEventArgs")
-@js.native
-class BootstrapClientTreeViewNodeCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
-  /**
-    * Initializes a new object of the BootstrapClientTreeViewNodeCancelEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param node An BootstrapClientTreeViewNode object that represents a node related to the event.
-    */
-  def this(processOnServer: Boolean, node: BootstrapClientTreeViewNode) = this()
+trait BootstrapClientTreeViewNodeCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
+  
   /**
     * Gets a node object related to the event.
     */
-  var node: BootstrapClientTreeViewNode = js.native
+  var node: BootstrapClientTreeViewNode
 }
-
+object BootstrapClientTreeViewNodeCancelEventArgs {
+  
+  inline def apply(cancel: Boolean, node: BootstrapClientTreeViewNode, processOnServer: Boolean): BootstrapClientTreeViewNodeCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapClientTreeViewNodeCancelEventArgs]
+  }
+  
+  extension [Self <: BootstrapClientTreeViewNodeCancelEventArgs](x: Self) {
+    
+    inline def setNode(value: BootstrapClientTreeViewNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+  }
+}

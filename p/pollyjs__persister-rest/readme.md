@@ -10,15 +10,15 @@ REST persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister-rest |
 | Keywords           | polly, pollyjs, record, replay, rest, persister |
-| # releases         | 19 |
-| # dependents       | 2 |
-| # downloads        | 118803 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 16236.666666666666 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
+- [Homepage](https://github.com/netflix/pollyjs/tree/master#readme)
 - [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
+- [Repository](https://github.com/netflix/pollyjs/tree/master)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fpersister-rest)
     
 

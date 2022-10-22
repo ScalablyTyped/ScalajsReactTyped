@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListFilterableOperators extends js.Object {
+trait TreeListFilterableOperators extends StObject {
+  
   var date: js.UndefOr[TreeListFilterableOperatorsDate] = js.undefined
+  
   var number: js.UndefOr[TreeListFilterableOperatorsNumber] = js.undefined
+  
   var string: js.UndefOr[TreeListFilterableOperatorsString] = js.undefined
 }
-
 object TreeListFilterableOperators {
-  @scala.inline
-  def apply(
-    date: TreeListFilterableOperatorsDate = null,
-    number: TreeListFilterableOperatorsNumber = null,
-    string: TreeListFilterableOperatorsString = null
-  ): TreeListFilterableOperators = {
+  
+  inline def apply(): TreeListFilterableOperators = {
     val __obj = js.Dynamic.literal()
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListFilterableOperators]
   }
+  
+  extension [Self <: TreeListFilterableOperators](x: Self) {
+    
+    inline def setDate(value: TreeListFilterableOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setNumber(value: TreeListFilterableOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    
+    inline def setString(value: TreeListFilterableOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+  }
 }
-

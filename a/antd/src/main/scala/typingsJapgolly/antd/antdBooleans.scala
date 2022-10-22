@@ -1,18 +1,25 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.directoryTreeMod.ExpandAction
-import typingsJapgolly.antd.statisticUtilsMod._Formatter
+import typingsJapgolly.antd.libConfigProviderDisabledContextMod._DisabledType
+import typingsJapgolly.antd.libStatisticUtilsMod._Formatter
+import typingsJapgolly.antd.libTreeDirectoryTreeMod.ExpandAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdBooleans {
+  
   @js.native
   sealed trait `false`
-    extends ExpandAction
+    extends StObject
+       with ExpandAction
+       with _DisabledType
        with _Formatter
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  @js.native
+  sealed trait `true`
+    extends StObject
+       with _DisabledType
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

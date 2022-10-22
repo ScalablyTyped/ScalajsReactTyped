@@ -1,52 +1,67 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotMacdParamsOptions extends js.Object {
+trait PlotMacdParamsOptions extends StObject {
+  
   /**
     * (Highstock) The point index which indicator calculations will base. For
     * example using OHLC data, index=2 means the indicator will be calculated
     * using Low values.
     */
   var index: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) The long period for indicator calculations.
     */
   var longPeriod: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
     * calculations.
     */
   var period: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) The short period for indicator calculations.
     */
   var shortPeriod: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) The base period for signal calculations.
     */
   var signalPeriod: js.UndefOr[Double] = js.undefined
 }
-
 object PlotMacdParamsOptions {
-  @scala.inline
-  def apply(
-    index: Int | Double = null,
-    longPeriod: Int | Double = null,
-    period: Int | Double = null,
-    shortPeriod: Int | Double = null,
-    signalPeriod: Int | Double = null
-  ): PlotMacdParamsOptions = {
+  
+  inline def apply(): PlotMacdParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (longPeriod != null) __obj.updateDynamic("longPeriod")(longPeriod.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (shortPeriod != null) __obj.updateDynamic("shortPeriod")(shortPeriod.asInstanceOf[js.Any])
-    if (signalPeriod != null) __obj.updateDynamic("signalPeriod")(signalPeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotMacdParamsOptions]
   }
+  
+  extension [Self <: PlotMacdParamsOptions](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setLongPeriod(value: Double): Self = StObject.set(x, "longPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setLongPeriodUndefined: Self = StObject.set(x, "longPeriod", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
+    inline def setShortPeriod(value: Double): Self = StObject.set(x, "shortPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setShortPeriodUndefined: Self = StObject.set(x, "shortPeriod", js.undefined)
+    
+    inline def setSignalPeriod(value: Double): Self = StObject.set(x, "signalPeriod", value.asInstanceOf[js.Any])
+    
+    inline def setSignalPeriodUndefined: Self = StObject.set(x, "signalPeriod", js.undefined)
+  }
 }
-

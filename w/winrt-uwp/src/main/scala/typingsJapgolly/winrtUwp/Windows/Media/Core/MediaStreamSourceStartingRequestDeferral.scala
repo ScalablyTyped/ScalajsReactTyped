@@ -1,14 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a way for the application to asynchronously report that it has completed processing the MediaStreamSource.Starting event. */
-@JSGlobal("Windows.Media.Core.MediaStreamSourceStartingRequestDeferral")
-@js.native
-abstract class MediaStreamSourceStartingRequestDeferral () extends js.Object {
+trait MediaStreamSourceStartingRequestDeferral extends StObject {
+  
   /** Reports that the application has completed processing the Starting event. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
-
+object MediaStreamSourceStartingRequestDeferral {
+  
+  inline def apply(complete: Callback): MediaStreamSourceStartingRequestDeferral = {
+    val __obj = js.Dynamic.literal(complete = complete.toJsFn)
+    __obj.asInstanceOf[MediaStreamSourceStartingRequestDeferral]
+  }
+  
+  extension [Self <: MediaStreamSourceStartingRequestDeferral](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+  }
+}

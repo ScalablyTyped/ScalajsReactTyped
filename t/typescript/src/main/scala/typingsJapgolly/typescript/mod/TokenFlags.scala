@@ -1,53 +1,51 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TokenFlags extends js.Object
-
+sealed trait TokenFlags extends StObject
 @JSImport("typescript", "TokenFlags")
 @js.native
-object TokenFlags extends js.Object {
-  @js.native
-  sealed trait BinarySpecifier extends TokenFlags
-  
-  @js.native
-  sealed trait HexSpecifier extends TokenFlags
-  
-  @js.native
-  sealed trait None extends TokenFlags
-  
-  @js.native
-  sealed trait Octal extends TokenFlags
-  
-  @js.native
-  sealed trait OctalSpecifier extends TokenFlags
-  
-  @js.native
-  sealed trait Scientific extends TokenFlags
+object TokenFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TokenFlags with Double] = js.native
-  /* 128 */ @js.native
-  object BinarySpecifier extends TopLevel[BinarySpecifier with Double]
+  def apply(value: Double): js.UndefOr[TokenFlags & Double] = js.native
   
-  /* 64 */ @js.native
-  object HexSpecifier extends TopLevel[HexSpecifier with Double]
+  @js.native
+  sealed trait BinarySpecifier
+    extends StObject
+       with TokenFlags
+  /* 128 */ val BinarySpecifier: typingsJapgolly.typescript.mod.TokenFlags.BinarySpecifier & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait HexSpecifier
+    extends StObject
+       with TokenFlags
+  /* 64 */ val HexSpecifier: typingsJapgolly.typescript.mod.TokenFlags.HexSpecifier & Double = js.native
   
-  /* 32 */ @js.native
-  object Octal extends TopLevel[Octal with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with TokenFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.TokenFlags.None & Double = js.native
   
-  /* 256 */ @js.native
-  object OctalSpecifier extends TopLevel[OctalSpecifier with Double]
+  @js.native
+  sealed trait Octal
+    extends StObject
+       with TokenFlags
+  /* 32 */ val Octal: typingsJapgolly.typescript.mod.TokenFlags.Octal & Double = js.native
   
-  /* 16 */ @js.native
-  object Scientific extends TopLevel[Scientific with Double]
+  @js.native
+  sealed trait OctalSpecifier
+    extends StObject
+       with TokenFlags
+  /* 256 */ val OctalSpecifier: typingsJapgolly.typescript.mod.TokenFlags.OctalSpecifier & Double = js.native
   
+  @js.native
+  sealed trait Scientific
+    extends StObject
+       with TokenFlags
+  /* 16 */ val Scientific: typingsJapgolly.typescript.mod.TokenFlags.Scientific & Double = js.native
 }
-

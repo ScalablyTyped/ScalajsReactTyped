@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wdio/logger" : "7.19.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wdio/logger" : "7.19.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

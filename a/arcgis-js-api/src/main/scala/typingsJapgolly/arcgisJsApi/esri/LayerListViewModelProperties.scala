@@ -1,31 +1,43 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayerListViewModelProperties extends js.Object {
+trait LayerListViewModelProperties extends StObject {
+  
   /**
-    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html). Each list item can be modified according to its modifiable propeties. Actions can be added to list items using the [actionsSections](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html#actionsSections) property of the ListItem.
+    * Specifies a function that accesses each [ListItem](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#listItemCreatedFunction)
     */
-  var listItemCreatedFunction: js.UndefOr[js.Function] = js.undefined
+  var listItemCreatedFunction: js.UndefOr[LayerListListItemCreatedHandler] = js.undefined
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-LayerListViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
-
 object LayerListViewModelProperties {
-  @scala.inline
-  def apply(listItemCreatedFunction: js.Function = null, view: MapViewProperties | SceneViewProperties = null): LayerListViewModelProperties = {
+  
+  inline def apply(): LayerListViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (listItemCreatedFunction != null) __obj.updateDynamic("listItemCreatedFunction")(listItemCreatedFunction.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayerListViewModelProperties]
   }
+  
+  extension [Self <: LayerListViewModelProperties](x: Self) {
+    
+    inline def setListItemCreatedFunction(value: /* event */ Any => Callback): Self = StObject.set(x, "listItemCreatedFunction", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+    
+    inline def setListItemCreatedFunctionUndefined: Self = StObject.set(x, "listItemCreatedFunction", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

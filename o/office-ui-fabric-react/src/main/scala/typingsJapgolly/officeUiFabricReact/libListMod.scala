@@ -1,48 +1,75 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.listTypesMod.IListProps
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`3`
+import typingsJapgolly.officeUiFabricReact.anon.OnRenderCell
+import typingsJapgolly.officeUiFabricReact.libComponentsListListDottypesMod.IListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsListListMod.IListState
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`2`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/List", JSImport.Namespace)
-@js.native
-object libListMod extends js.Object {
+object libListMod {
+  
+  @JSImport("office-ui-fabric-react/lib/List", "List")
   @js.native
-  class List[T] protected ()
-    extends typingsJapgolly.officeUiFabricReact.listMod.List[T] {
+  open class List[T] protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsListMod.List[T] {
     def this(props: IListProps[T]) = this()
   }
-  
   /* static members */
-  @js.native
-  object List extends js.Object {
-    var defaultProps: AnonOnRenderCell = js.native
+  object List {
+    
+    @JSImport("office-ui-fabric-react/lib/List", "List")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/List", "List.defaultProps")
+    @js.native
+    def defaultProps: OnRenderCell = js.native
+    inline def defaultProps_=(x: OnRenderCell): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    
+    inline def getDerivedStateFromProps[T](nextProps: IListProps[T], previousState: IListState[T]): IListState[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IListState[T]]
   }
   
-  @js.native
-  object ScrollToMode extends js.Object {
+  object ScrollToMode {
+    
+    @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Does not make any consideration to where in the viewport the item should align to.
       */
-    var auto: `0` = js.native
+    @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.auto")
+    @js.native
+    def auto: `0` = js.native
+    inline def auto_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
+    
     /**
       * Attempts to scroll the list so the bottom of the desired item is aligned with the bottom of the viewport.
       */
-    var bottom: `2` = js.native
+    @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.bottom")
+    @js.native
+    def bottom: `2` = js.native
+    inline def bottom_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+    
     /**
       * Attempts to scroll the list so the desired item is in the exact center of the viewport.
       */
-    var center: `3` = js.native
+    @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.center")
+    @js.native
+    def center: `3` = js.native
+    inline def center_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("center")(x.asInstanceOf[js.Any])
+    
     /**
       * Attempts to scroll the list so the top of the desired item is aligned with the top of the viewport.
       */
-    var top: `1` = js.native
+    @JSImport("office-ui-fabric-react/lib/List", "ScrollToMode.top")
+    @js.native
+    def top: `1` = js.native
+    inline def top_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
   }
-  
 }
-

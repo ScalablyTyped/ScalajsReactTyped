@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The AccessibilityComponent base class, representing a part of the chart
@@ -13,5 +13,4 @@ import scala.scalajs.js.annotation._
   * event handlers on destroy. This is handled automatically if using
   * this.addEvent and this.createElement.
   */
-trait AccessibilityComponent extends js.Object
-
+trait AccessibilityComponent extends StObject

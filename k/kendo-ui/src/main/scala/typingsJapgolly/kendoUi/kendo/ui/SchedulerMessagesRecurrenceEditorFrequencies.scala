@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesRecurrenceEditorFrequencies extends js.Object {
+trait SchedulerMessagesRecurrenceEditorFrequencies extends StObject {
+  
   var daily: js.UndefOr[String] = js.undefined
+  
   var monthly: js.UndefOr[String] = js.undefined
+  
   var never: js.UndefOr[String] = js.undefined
+  
   var weekly: js.UndefOr[String] = js.undefined
+  
   var yearly: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerMessagesRecurrenceEditorFrequencies {
-  @scala.inline
-  def apply(
-    daily: String = null,
-    monthly: String = null,
-    never: String = null,
-    weekly: String = null,
-    yearly: String = null
-  ): SchedulerMessagesRecurrenceEditorFrequencies = {
+  
+  inline def apply(): SchedulerMessagesRecurrenceEditorFrequencies = {
     val __obj = js.Dynamic.literal()
-    if (daily != null) __obj.updateDynamic("daily")(daily.asInstanceOf[js.Any])
-    if (monthly != null) __obj.updateDynamic("monthly")(monthly.asInstanceOf[js.Any])
-    if (never != null) __obj.updateDynamic("never")(never.asInstanceOf[js.Any])
-    if (weekly != null) __obj.updateDynamic("weekly")(weekly.asInstanceOf[js.Any])
-    if (yearly != null) __obj.updateDynamic("yearly")(yearly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorFrequencies]
   }
+  
+  extension [Self <: SchedulerMessagesRecurrenceEditorFrequencies](x: Self) {
+    
+    inline def setDaily(value: String): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    
+    inline def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
+    
+    inline def setMonthly(value: String): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
+    
+    inline def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
+    
+    inline def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
+    
+    inline def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
+    
+    inline def setWeekly(value: String): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
+    
+    inline def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
+    
+    inline def setYearly(value: String): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
+    
+    inline def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
+  }
 }
-

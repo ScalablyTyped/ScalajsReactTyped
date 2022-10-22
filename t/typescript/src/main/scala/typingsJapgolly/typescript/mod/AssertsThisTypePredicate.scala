@@ -1,32 +1,35 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.TypePredicateKind.AssertsThis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AssertsThisTypePredicate
-  extends TypePredicateBase
+  extends StObject
+     with TypePredicateBase
      with TypePredicate {
+  
   @JSName("kind")
   var kind_AssertsThisTypePredicate: AssertsThis
-  var parameterIndex: js.UndefOr[scala.Nothing] = js.undefined
-  var parameterName: js.UndefOr[scala.Nothing] = js.undefined
+  
+  var parameterIndex: Unit
+  
+  var parameterName: Unit
 }
-
 object AssertsThisTypePredicate {
-  @scala.inline
-  def apply(
-    kind: AssertsThis,
-    parameterIndex: js.UndefOr[scala.Nothing] = js.undefined,
-    parameterName: js.UndefOr[scala.Nothing] = js.undefined,
-    `type`: Type = null
-  ): AssertsThisTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterIndex)) __obj.updateDynamic("parameterIndex")(parameterIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(parameterName)) __obj.updateDynamic("parameterName")(parameterName.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(kind: AssertsThis, parameterIndex: Unit, parameterName: Unit): AssertsThisTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssertsThisTypePredicate]
   }
+  
+  extension [Self <: AssertsThisTypePredicate](x: Self) {
+    
+    inline def setKind(value: AssertsThis): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setParameterIndex(value: Unit): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    
+    inline def setParameterName(value: Unit): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+  }
 }
-

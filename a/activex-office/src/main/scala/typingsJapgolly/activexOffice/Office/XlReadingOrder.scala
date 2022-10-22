@@ -1,27 +1,23 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-5002`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-5003`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-5004`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-5002`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-5003`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-5004`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-5002`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-5003`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-5004`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-5002`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-5003`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-5004`
 */
-trait XlReadingOrder extends js.Object
-
+trait XlReadingOrder extends StObject
 object XlReadingOrder {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlContext: `-5002` = this.cast(-5002)
-  @scala.inline
-  def xlLTR: `-5003` = this.cast(-5003)
-  @scala.inline
-  def xlRTL: `-5004` = this.cast(-5004)
+  
+  inline def xlContext: `-5002` = -5002.asInstanceOf[`-5002`]
+  
+  inline def xlLTR: `-5003` = -5003.asInstanceOf[`-5003`]
+  
+  inline def xlRTL: `-5004` = -5004.asInstanceOf[`-5004`]
 }
-

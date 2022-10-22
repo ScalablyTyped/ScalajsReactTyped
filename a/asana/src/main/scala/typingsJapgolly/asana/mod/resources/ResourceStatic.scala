@@ -2,19 +2,24 @@ package typingsJapgolly.asana.mod.resources
 
 import org.scalablytyped.runtime.Instantiable1
 import typingsJapgolly.asana.mod.Dispatcher
+import typingsJapgolly.bluebird.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ResourceStatic extends /**
+trait ResourceStatic
+  extends StObject
+     with /**
   * @param dispatcher
   */
 Instantiable1[/* dispatcher */ Dispatcher, Resource] {
+  
   /**
     * @type {number} Default number of items to get per page.
     */
   var DEFAULT_PAGE_LIMIT: Double = js.native
+  
   /**
     * Helper method that dispatches a GET request to the API, where the expected
     * result is a collection.
@@ -29,9 +34,11 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param query?
     * @param dispatchOptions?
     */
-  def getCollection(dispatcher: js.Any, path: String): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
-  def getCollection(dispatcher: js.Any, path: String, query: js.Any, dispatchOptions: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def getCollection(dispatcher: Any, path: String): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Any): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Any, dispatchOptions: Any): ^[Any] = js.native
+  def getCollection(dispatcher: Any, path: String, query: Unit, dispatchOptions: Any): ^[Any] = js.native
+  
   /**
     * Helper method for any request Promise from the Dispatcher, unwraps the `data`
     * value from the payload.
@@ -40,6 +47,5 @@ Instantiable1[/* dispatcher */ Dispatcher, Resource] {
     * @param promise
     * @return
     */
-  def unwrap(promise: js.Any): typingsJapgolly.bluebird.mod.^[_] = js.native
+  def unwrap(promise: Any): ^[Any] = js.native
 }
-

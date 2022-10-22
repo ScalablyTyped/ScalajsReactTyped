@@ -1,13 +1,18 @@
 package typingsJapgolly.pulumiPulumi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi/metadata", JSImport.Namespace)
-@js.native
-object metadataMod extends js.Object {
-  def getProject(): String = js.native
-  def getStack(): String = js.native
+object metadataMod {
+  
+  @JSImport("@pulumi/pulumi/metadata", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getOrganization(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganization")().asInstanceOf[String]
+  
+  inline def getProject(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProject")().asInstanceOf[String]
+  
+  inline def getStack(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")().asInstanceOf[String]
 }
-

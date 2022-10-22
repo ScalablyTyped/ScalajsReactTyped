@@ -1,23 +1,26 @@
 package typingsJapgolly.bull.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JobPromise extends js.Object {
+trait JobPromise extends StObject {
+  
   /**
     * Abort this job
     */
   def cancel(): Unit
 }
-
 object JobPromise {
-  @scala.inline
-  def apply(cancel: Callback): JobPromise = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cancel")(cancel.toJsFn)
+  
+  inline def apply(cancel: Callback): JobPromise = {
+    val __obj = js.Dynamic.literal(cancel = cancel.toJsFn)
     __obj.asInstanceOf[JobPromise]
   }
+  
+  extension [Self <: JobPromise](x: Self) {
+    
+    inline def setCancel(value: Callback): Self = StObject.set(x, "cancel", value.toJsFn)
+  }
 }
-

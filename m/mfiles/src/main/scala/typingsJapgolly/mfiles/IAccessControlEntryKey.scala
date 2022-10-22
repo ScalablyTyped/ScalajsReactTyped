@@ -2,25 +2,33 @@ package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAccessControlEntryKey extends js.Object {
-  val HasConcreteUserOrGroupID: Boolean
-  val IsGroup: Boolean
-  val IsPseudoUser: Boolean
-  var PseudoUserID: IIndirectPropertyID
-  val UserOrGroupID: Double
+trait IAccessControlEntryKey extends StObject {
+  
   def Clone(): IAccessControlEntryKey
+  
   def GetResolvedPseudoUserOrGroupIDs(): IUserOrUserGroupIDs
+  
+  val HasConcreteUserOrGroupID: Boolean
+  
+  val IsGroup: Boolean
+  
+  val IsPseudoUser: Boolean
+  
+  var PseudoUserID: IIndirectPropertyID
+  
   def ResetResolvedPseudoUserOrGroupIDs(): Unit
+  
   def SetUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): Unit
+  
+  val UserOrGroupID: Double
 }
-
 object IAccessControlEntryKey {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Clone: CallbackTo[IAccessControlEntryKey],
     GetResolvedPseudoUserOrGroupIDs: CallbackTo[IUserOrUserGroupIDs],
     HasConcreteUserOrGroupID: Boolean,
@@ -31,12 +39,28 @@ object IAccessControlEntryKey {
     SetUserOrGroupID: (Double, Boolean) => Callback,
     UserOrGroupID: Double
   ): IAccessControlEntryKey = {
-    val __obj = js.Dynamic.literal(HasConcreteUserOrGroupID = HasConcreteUserOrGroupID.asInstanceOf[js.Any], IsGroup = IsGroup.asInstanceOf[js.Any], IsPseudoUser = IsPseudoUser.asInstanceOf[js.Any], PseudoUserID = PseudoUserID.asInstanceOf[js.Any], UserOrGroupID = UserOrGroupID.asInstanceOf[js.Any])
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
-    __obj.updateDynamic("GetResolvedPseudoUserOrGroupIDs")(GetResolvedPseudoUserOrGroupIDs.toJsFn)
-    __obj.updateDynamic("ResetResolvedPseudoUserOrGroupIDs")(ResetResolvedPseudoUserOrGroupIDs.toJsFn)
-    __obj.updateDynamic("SetUserOrGroupID")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Boolean) => SetUserOrGroupID(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(Clone = Clone.toJsFn, GetResolvedPseudoUserOrGroupIDs = GetResolvedPseudoUserOrGroupIDs.toJsFn, HasConcreteUserOrGroupID = HasConcreteUserOrGroupID.asInstanceOf[js.Any], IsGroup = IsGroup.asInstanceOf[js.Any], IsPseudoUser = IsPseudoUser.asInstanceOf[js.Any], PseudoUserID = PseudoUserID.asInstanceOf[js.Any], ResetResolvedPseudoUserOrGroupIDs = ResetResolvedPseudoUserOrGroupIDs.toJsFn, SetUserOrGroupID = js.Any.fromFunction2((t0: Double, t1: Boolean) => (SetUserOrGroupID(t0, t1)).runNow()), UserOrGroupID = UserOrGroupID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccessControlEntryKey]
   }
+  
+  extension [Self <: IAccessControlEntryKey](x: Self) {
+    
+    inline def setClone(value: CallbackTo[IAccessControlEntryKey]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setGetResolvedPseudoUserOrGroupIDs(value: CallbackTo[IUserOrUserGroupIDs]): Self = StObject.set(x, "GetResolvedPseudoUserOrGroupIDs", value.toJsFn)
+    
+    inline def setHasConcreteUserOrGroupID(value: Boolean): Self = StObject.set(x, "HasConcreteUserOrGroupID", value.asInstanceOf[js.Any])
+    
+    inline def setIsGroup(value: Boolean): Self = StObject.set(x, "IsGroup", value.asInstanceOf[js.Any])
+    
+    inline def setIsPseudoUser(value: Boolean): Self = StObject.set(x, "IsPseudoUser", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoUserID(value: IIndirectPropertyID): Self = StObject.set(x, "PseudoUserID", value.asInstanceOf[js.Any])
+    
+    inline def setResetResolvedPseudoUserOrGroupIDs(value: Callback): Self = StObject.set(x, "ResetResolvedPseudoUserOrGroupIDs", value.toJsFn)
+    
+    inline def setSetUserOrGroupID(value: (Double, Boolean) => Callback): Self = StObject.set(x, "SetUserOrGroupID", js.Any.fromFunction2((t0: Double, t1: Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def setUserOrGroupID(value: Double): Self = StObject.set(x, "UserOrGroupID", value.asInstanceOf[js.Any])
+  }
 }
-

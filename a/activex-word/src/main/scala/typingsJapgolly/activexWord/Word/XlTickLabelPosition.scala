@@ -1,31 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-4127`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4134`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4142`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
+import typingsJapgolly.activexWord.activexWordInts.`-4127`
+import typingsJapgolly.activexWord.activexWordInts.`-4134`
+import typingsJapgolly.activexWord.activexWordInts.`-4142`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4127`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4134`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4142`
+  - typingsJapgolly.activexWord.activexWordInts.`-4127`
+  - typingsJapgolly.activexWord.activexWordInts.`-4134`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`-4142`
 */
-trait XlTickLabelPosition extends js.Object
-
+trait XlTickLabelPosition extends StObject
 object XlTickLabelPosition {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlTickLabelPositionHigh: `-4127` = this.cast(-4127)
-  @scala.inline
-  def xlTickLabelPositionLow: `-4134` = this.cast(-4134)
-  @scala.inline
-  def xlTickLabelPositionNextToAxis: `4` = this.cast(4)
-  @scala.inline
-  def xlTickLabelPositionNone: `-4142` = this.cast(-4142)
+  
+  inline def xlTickLabelPositionHigh: `-4127` = -4127.asInstanceOf[`-4127`]
+  
+  inline def xlTickLabelPositionLow: `-4134` = -4134.asInstanceOf[`-4134`]
+  
+  inline def xlTickLabelPositionNextToAxis: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlTickLabelPositionNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }
-

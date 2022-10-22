@@ -1,35 +1,47 @@
 package typingsJapgolly.mendixmodelsdk.mod.domainmodels
 
-import typingsJapgolly.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * In version 9.6.0: added public
   * In version 7.11.0: introduced
   */
-@JSImport("mendixmodelsdk", "domainmodels.EntityRef")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "domainmodels.EntityRef")
 @js.native
-abstract class EntityRef protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.domainmodels.EntityRef {
+open class EntityRef protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.EntityRef {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "domainmodels.EntityRef")
-@js.native
-object EntityRef extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object EntityRef {
+  
+  @JSImport("mendixmodelsdk", "domainmodels.EntityRef")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.EntityRef.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.EntityRef.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

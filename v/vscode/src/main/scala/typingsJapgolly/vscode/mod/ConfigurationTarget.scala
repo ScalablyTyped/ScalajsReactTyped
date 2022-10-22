@@ -1,45 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConfigurationTarget extends js.Object
-
+sealed trait ConfigurationTarget extends StObject
 @JSImport("vscode", "ConfigurationTarget")
 @js.native
-object ConfigurationTarget extends js.Object {
-  /**
-  		 * Global configuration
-  		*/
-  @js.native
-  sealed trait Global extends ConfigurationTarget
-  
-  /**
-  		 * Workspace configuration
-  		 */
-  @js.native
-  sealed trait Workspace extends ConfigurationTarget
-  
-  /**
-  		 * Workspace folder configuration
-  		 */
-  @js.native
-  sealed trait WorkspaceFolder extends ConfigurationTarget
+object ConfigurationTarget extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ConfigurationTarget with Double] = js.native
-  /* 1 */ @js.native
-  object Global extends TopLevel[Global with Double]
+  def apply(value: Double): js.UndefOr[ConfigurationTarget & Double] = js.native
   
-  /* 2 */ @js.native
-  object Workspace extends TopLevel[Workspace with Double]
+  /**
+    * Global configuration
+    */
+  @js.native
+  sealed trait Global
+    extends StObject
+       with ConfigurationTarget
+  /* 1 */ val Global: typingsJapgolly.vscode.mod.ConfigurationTarget.Global & Double = js.native
   
-  /* 3 */ @js.native
-  object WorkspaceFolder
-    extends TopLevel[typingsJapgolly.vscode.mod.ConfigurationTarget.WorkspaceFolder with Double]
+  /**
+    * Workspace configuration
+    */
+  @js.native
+  sealed trait Workspace
+    extends StObject
+       with ConfigurationTarget
+  /* 2 */ val Workspace: typingsJapgolly.vscode.mod.ConfigurationTarget.Workspace & Double = js.native
   
+  /**
+    * Workspace folder configuration
+    */
+  @js.native
+  sealed trait WorkspaceFolder
+    extends StObject
+       with ConfigurationTarget
+  /* 3 */ val WorkspaceFolder: typingsJapgolly.vscode.mod.ConfigurationTarget.WorkspaceFolder & Double = js.native
 }
-

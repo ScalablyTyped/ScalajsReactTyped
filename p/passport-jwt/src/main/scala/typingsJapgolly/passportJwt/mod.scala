@@ -1,57 +1,197 @@
 package typingsJapgolly.passportJwt
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.express.mod.Request_
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
 import typingsJapgolly.jsonwebtoken.mod.VerifyOptions
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.passport.mod.global.Express.User
+import typingsJapgolly.passportJwt.passportJwtBooleans.`false`
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("passport-jwt", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  object ExtractJwt {
+    
+    @JSImport("passport-jwt", "ExtractJwt")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromAuthHeader(): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAuthHeader")().asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromAuthHeaderAsBearerToken(): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAuthHeaderAsBearerToken")().asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromAuthHeaderWithScheme(auth_scheme: String): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAuthHeaderWithScheme")(auth_scheme.asInstanceOf[js.Any]).asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromBodyField(field_name: String): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBodyField")(field_name.asInstanceOf[js.Any]).asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromExtractors(extractors: js.Array[JwtFromRequestFunction]): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtractors")(extractors.asInstanceOf[js.Any]).asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromHeader(header_name: String): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHeader")(header_name.asInstanceOf[js.Any]).asInstanceOf[JwtFromRequestFunction]
+    
+    inline def fromUrlQueryParameter(param_name: String): JwtFromRequestFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrlQueryParameter")(param_name.asInstanceOf[js.Any]).asInstanceOf[JwtFromRequestFunction]
+  }
+  
+  @JSImport("passport-jwt", "Strategy")
   @js.native
-  class Strategy protected ()
+  open class Strategy protected ()
     extends typingsJapgolly.passportStrategy.mod.Strategy {
     def this(opt: StrategyOptions, verify: VerifyCallback) = this()
     def this(opt: StrategyOptions, verify: VerifyCallbackWithRequest) = this()
   }
   
-  @js.native
-  trait StrategyOptions extends js.Object {
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
-    var audience: js.UndefOr[String] = js.native
-    var ignoreExpiration: js.UndefOr[Boolean] = js.native
-    var issuer: js.UndefOr[String] = js.native
-    var jsonWebTokenOptions: js.UndefOr[VerifyOptions] = js.native
+  type JwtFromRequestFunction = js.Function1[
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    String | Null
+  ]
+  
+  type SecretOrKeyProvider = js.Function3[
+    /* request */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* rawJwtToken */ Any, 
+    /* done */ js.Function2[/* err */ Any, /* secretOrKey */ js.UndefOr[String | Buffer], Unit], 
+    Unit
+  ]
+  
+  trait StrategyOptions extends StObject {
+    
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
+    
+    var audience: js.UndefOr[String] = js.undefined
+    
+    var ignoreExpiration: js.UndefOr[Boolean] = js.undefined
+    
+    var issuer: js.UndefOr[String] = js.undefined
+    
+    var jsonWebTokenOptions: js.UndefOr[VerifyOptions] = js.undefined
+    
+    def jwtFromRequest(
+      req: Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ]
+    ): String | Null
     @JSName("jwtFromRequest")
-    var jwtFromRequest_Original: JwtFromRequestFunction = js.native
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
-    var secretOrKey: js.UndefOr[String | Buffer] = js.native
-    var secretOrKeyProvider: js.UndefOr[js.Any] = js.native
-    def jwtFromRequest(req: Request_[ParamsDictionary]): String | Null = js.native
+    var jwtFromRequest_Original: JwtFromRequestFunction
+    
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
+    
+    var secretOrKey: js.UndefOr[String | Buffer] = js.undefined
+    
+    var secretOrKeyProvider: js.UndefOr[SecretOrKeyProvider] = js.undefined
+  }
+  object StrategyOptions {
+    
+    inline def apply(
+      jwtFromRequest: /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ] => String | Null
+    ): StrategyOptions = {
+      val __obj = js.Dynamic.literal(jwtFromRequest = js.Any.fromFunction1(jwtFromRequest))
+      __obj.asInstanceOf[StrategyOptions]
+    }
+    
+    extension [Self <: StrategyOptions](x: Self) {
+      
+      inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+      
+      inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+      
+      inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value*))
+      
+      inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      
+      inline def setAudienceUndefined: Self = StObject.set(x, "audience", js.undefined)
+      
+      inline def setIgnoreExpiration(value: Boolean): Self = StObject.set(x, "ignoreExpiration", value.asInstanceOf[js.Any])
+      
+      inline def setIgnoreExpirationUndefined: Self = StObject.set(x, "ignoreExpiration", js.undefined)
+      
+      inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      
+      inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+      
+      inline def setJsonWebTokenOptions(value: VerifyOptions): Self = StObject.set(x, "jsonWebTokenOptions", value.asInstanceOf[js.Any])
+      
+      inline def setJsonWebTokenOptionsUndefined: Self = StObject.set(x, "jsonWebTokenOptions", js.undefined)
+      
+      inline def setJwtFromRequest(
+        value: /* req */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ] => String | Null
+      ): Self = StObject.set(x, "jwtFromRequest", js.Any.fromFunction1(value))
+      
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      
+      inline def setSecretOrKey(value: String | Buffer): Self = StObject.set(x, "secretOrKey", value.asInstanceOf[js.Any])
+      
+      inline def setSecretOrKeyProvider(
+        value: (/* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], /* rawJwtToken */ Any, /* done */ js.Function2[/* err */ Any, /* secretOrKey */ js.UndefOr[String | Buffer], Unit]) => Callback
+      ): Self = StObject.set(x, "secretOrKeyProvider", js.Any.fromFunction3((t0: /* request */ Request_[
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+              Any, 
+              Any, 
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+              Record[String, Any]
+            ], t1: /* rawJwtToken */ Any, t2: /* done */ js.Function2[/* err */ Any, /* secretOrKey */ js.UndefOr[String | Buffer], Unit]) => (value(t0, t1, t2)).runNow()))
+      
+      inline def setSecretOrKeyProviderUndefined: Self = StObject.set(x, "secretOrKeyProvider", js.undefined)
+      
+      inline def setSecretOrKeyUndefined: Self = StObject.set(x, "secretOrKey", js.undefined)
+    }
   }
   
-  @js.native
-  object ExtractJwt extends js.Object {
-    def fromAuthHeader(): JwtFromRequestFunction = js.native
-    def fromAuthHeaderAsBearerToken(): JwtFromRequestFunction = js.native
-    def fromAuthHeaderWithScheme(auth_scheme: String): JwtFromRequestFunction = js.native
-    def fromBodyField(field_name: String): JwtFromRequestFunction = js.native
-    def fromExtractors(extractors: js.Array[JwtFromRequestFunction]): JwtFromRequestFunction = js.native
-    def fromHeader(header_name: String): JwtFromRequestFunction = js.native
-    def fromUrlQueryParameter(param_name: String): JwtFromRequestFunction = js.native
-  }
+  type VerifiedCallback = js.Function3[
+    /* error */ Any, 
+    /* user */ js.UndefOr[User | `false`], 
+    /* info */ js.UndefOr[Any], 
+    Unit
+  ]
   
-  type JwtFromRequestFunction = js.Function1[/* req */ Request_[ParamsDictionary], String | Null]
-  type VerifiedCallback = js.Function3[/* error */ js.Any, /* user */ js.UndefOr[js.Any], /* info */ js.UndefOr[js.Any], Unit]
-  type VerifyCallback = js.Function2[/* payload */ js.Any, /* done */ VerifiedCallback, Unit]
+  type VerifyCallback = js.Function2[/* payload */ Any, /* done */ VerifiedCallback, Unit]
+  
   type VerifyCallbackWithRequest = js.Function3[
-    /* req */ Request_[ParamsDictionary], 
-    /* payload */ js.Any, 
+    /* req */ Request_[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+      Any, 
+      Any, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+      Record[String, Any]
+    ], 
+    /* payload */ Any, 
     /* done */ VerifiedCallback, 
     Unit
   ]
 }
-

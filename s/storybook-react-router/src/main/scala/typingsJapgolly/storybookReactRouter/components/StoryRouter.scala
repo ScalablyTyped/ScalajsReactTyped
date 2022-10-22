@@ -1,40 +1,23 @@
 package typingsJapgolly.storybookReactRouter.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactRouter.mod.MemoryRouterProps
-import typingsJapgolly.storybookAddons.typesMod.StoryApi
-import typingsJapgolly.storybookReactRouter.AnonLinks
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactRouter.distLibComponentsMod.MemoryRouterProps
+import typingsJapgolly.storybookAddons.distTs3Dot9TypesMod.StoryApi
+import typingsJapgolly.storybookReactRouter.anon.Links
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StoryRouter {
-  def apply(
-    links: js.Object,
-    routerProps: MemoryRouterProps,
-    story: StoryApi[_],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AnonLinks, typingsJapgolly.storybookReactRouter.mod.StoryRouter, Unit, AnonLinks] = {
-    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any], routerProps = routerProps.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookReactRouter.AnonLinks, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookReactRouter.mod.StoryRouter](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookReactRouter.AnonLinks])(children: _*)
+  inline def apply(links: js.Object, routerProps: MemoryRouterProps, story: StoryApi[Any]): Default[js.Object] = {
+    val __props = js.Dynamic.literal(links = links.asInstanceOf[js.Any], routerProps = routerProps.asInstanceOf[js.Any], story = story.asInstanceOf[js.Any])
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[Links]))
   }
+  
   @JSImport("storybook-react-router", "StoryRouter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: Links): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for istanbul-lib-source-maps
 
-Typings are for version 1.2
+Typings are for version 4.0
 
 ## Library description:
 Source maps support for istanbul
@@ -10,10 +10,10 @@ Source maps support for istanbul
 | ------------------ | :-------------: |
 | Full name          | istanbul-lib-source-maps |
 | Keywords           | istanbul, sourcemaps, sourcemap, source, maps |
-| # releases         | 21 |
-| # dependents       | 48 |
-| # downloads        | 288485409 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 7.819053733333333E7 |
+| # stars            | 820.0 |
 
 ## Links
 - [Homepage](https://istanbul.js.org/)

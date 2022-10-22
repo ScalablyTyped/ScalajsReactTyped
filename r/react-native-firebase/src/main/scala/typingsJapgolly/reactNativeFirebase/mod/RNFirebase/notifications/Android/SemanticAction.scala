@@ -1,83 +1,81 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SemanticAction extends js.Object
-
+sealed trait SemanticAction extends StObject
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.SemanticAction")
 @js.native
-object SemanticAction extends js.Object {
-  @js.native
-  sealed trait Archive extends SemanticAction
-  
-  @js.native
-  sealed trait Call extends SemanticAction
-  
-  @js.native
-  sealed trait Delete extends SemanticAction
-  
-  @js.native
-  sealed trait MarkAsRead extends SemanticAction
-  
-  @js.native
-  sealed trait MarkAsUnread extends SemanticAction
-  
-  @js.native
-  sealed trait Mute extends SemanticAction
-  
-  @js.native
-  sealed trait None extends SemanticAction
-  
-  @js.native
-  sealed trait Reply extends SemanticAction
-  
-  @js.native
-  sealed trait ThumbsDown extends SemanticAction
-  
-  @js.native
-  sealed trait ThumbsUp extends SemanticAction
-  
-  @js.native
-  sealed trait Unmute extends SemanticAction
+object SemanticAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SemanticAction with Double] = js.native
-  /* 5 */ @js.native
-  object Archive extends TopLevel[Archive with Double]
+  def apply(value: Double): js.UndefOr[SemanticAction & Double] = js.native
   
-  /* 10 */ @js.native
-  object Call extends TopLevel[Call with Double]
+  @js.native
+  sealed trait Archive
+    extends StObject
+       with SemanticAction
+  /* 5 */ val Archive: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Archive & Double = js.native
   
-  /* 4 */ @js.native
-  object Delete extends TopLevel[Delete with Double]
+  @js.native
+  sealed trait Call
+    extends StObject
+       with SemanticAction
+  /* 10 */ val Call: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Call & Double = js.native
   
-  /* 2 */ @js.native
-  object MarkAsRead extends TopLevel[MarkAsRead with Double]
+  @js.native
+  sealed trait Delete
+    extends StObject
+       with SemanticAction
+  /* 4 */ val Delete: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Delete & Double = js.native
   
-  /* 3 */ @js.native
-  object MarkAsUnread extends TopLevel[MarkAsUnread with Double]
+  @js.native
+  sealed trait MarkAsRead
+    extends StObject
+       with SemanticAction
+  /* 2 */ val MarkAsRead: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.MarkAsRead & Double = js.native
   
-  /* 6 */ @js.native
-  object Mute extends TopLevel[Mute with Double]
+  @js.native
+  sealed trait MarkAsUnread
+    extends StObject
+       with SemanticAction
+  /* 3 */ val MarkAsUnread: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.MarkAsUnread & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait Mute
+    extends StObject
+       with SemanticAction
+  /* 6 */ val Mute: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Mute & Double = js.native
   
-  /* 1 */ @js.native
-  object Reply extends TopLevel[Reply with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with SemanticAction
+  /* 0 */ val None: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.None & Double = js.native
   
-  /* 9 */ @js.native
-  object ThumbsDown extends TopLevel[ThumbsDown with Double]
+  @js.native
+  sealed trait Reply
+    extends StObject
+       with SemanticAction
+  /* 1 */ val Reply: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Reply & Double = js.native
   
-  /* 8 */ @js.native
-  object ThumbsUp extends TopLevel[ThumbsUp with Double]
+  @js.native
+  sealed trait ThumbsDown
+    extends StObject
+       with SemanticAction
+  /* 9 */ val ThumbsDown: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.ThumbsDown & Double = js.native
   
-  /* 7 */ @js.native
-  object Unmute extends TopLevel[Unmute with Double]
+  @js.native
+  sealed trait ThumbsUp
+    extends StObject
+       with SemanticAction
+  /* 8 */ val ThumbsUp: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.ThumbsUp & Double = js.native
   
+  @js.native
+  sealed trait Unmute
+    extends StObject
+       with SemanticAction
+  /* 7 */ val Unmute: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.SemanticAction.Unmute & Double = js.native
 }
-

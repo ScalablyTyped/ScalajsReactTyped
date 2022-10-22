@@ -3,151 +3,193 @@ package typingsJapgolly.officeJs.Excel
 import typingsJapgolly.officeJs.officeJsStrings.None
 import typingsJapgolly.officeJs.officeJsStrings.Normal
 import typingsJapgolly.officeJs.officeJsStrings.Unlocked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the options in sheet protection.
   *
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
-trait WorksheetProtectionOptions extends js.Object {
+trait WorksheetProtectionOptions extends StObject {
+  
   /**
+    * Represents the worksheet protection option allowing use of the AutoFilter feature.
     *
-    * Represents the worksheet protection option of allowing using auto filter feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowAutoFilter: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing deleting of columns.
     *
-    * Represents the worksheet protection option of allowing deleting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowDeleteColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing deleting of rows.
     *
-    * Represents the worksheet protection option of allowing deleting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowDeleteRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing editing of objects.
     *
-    * Represents the worksheet protection option of allowing editing objects.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var allowEditObjects: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing editing of scenarios.
     *
-    * Represents the worksheet protection option of allowing editing scenarios.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var allowEditScenarios: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing formatting of cells.
     *
-    * Represents the worksheet protection option of allowing formatting cells.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatCells: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing formatting of columns.
     *
-    * Represents the worksheet protection option of allowing formatting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing formatting of rows.
     *
-    * Represents the worksheet protection option of allowing formatting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowFormatRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing inserting of columns.
     *
-    * Represents the worksheet protection option of allowing inserting columns.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing inserting of hyperlinks.
     *
-    * Represents the worksheet protection option of allowing inserting hyperlinks.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertHyperlinks: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing inserting of rows.
     *
-    * Represents the worksheet protection option of allowing inserting rows.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowInsertRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing use of the PivotTable feature.
     *
-    * Represents the worksheet protection option of allowing using PivotTable feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowPivotTables: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the worksheet protection option allowing use of the sort feature.
     *
-    * Represents the worksheet protection option of allowing using sort feature.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var allowSort: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the worksheet protection option of selection mode.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var selectionMode: js.UndefOr[ProtectionSelectionMode | Normal | Unlocked | None] = js.undefined
 }
-
 object WorksheetProtectionOptions {
-  @scala.inline
-  def apply(
-    allowAutoFilter: js.UndefOr[Boolean] = js.undefined,
-    allowDeleteColumns: js.UndefOr[Boolean] = js.undefined,
-    allowDeleteRows: js.UndefOr[Boolean] = js.undefined,
-    allowEditObjects: js.UndefOr[Boolean] = js.undefined,
-    allowEditScenarios: js.UndefOr[Boolean] = js.undefined,
-    allowFormatCells: js.UndefOr[Boolean] = js.undefined,
-    allowFormatColumns: js.UndefOr[Boolean] = js.undefined,
-    allowFormatRows: js.UndefOr[Boolean] = js.undefined,
-    allowInsertColumns: js.UndefOr[Boolean] = js.undefined,
-    allowInsertHyperlinks: js.UndefOr[Boolean] = js.undefined,
-    allowInsertRows: js.UndefOr[Boolean] = js.undefined,
-    allowPivotTables: js.UndefOr[Boolean] = js.undefined,
-    allowSort: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: ProtectionSelectionMode | Normal | Unlocked | None = null
-  ): WorksheetProtectionOptions = {
+  
+  inline def apply(): WorksheetProtectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAutoFilter)) __obj.updateDynamic("allowAutoFilter")(allowAutoFilter.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleteColumns)) __obj.updateDynamic("allowDeleteColumns")(allowDeleteColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleteRows)) __obj.updateDynamic("allowDeleteRows")(allowDeleteRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditObjects)) __obj.updateDynamic("allowEditObjects")(allowEditObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEditScenarios)) __obj.updateDynamic("allowEditScenarios")(allowEditScenarios.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormatCells)) __obj.updateDynamic("allowFormatCells")(allowFormatCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormatColumns)) __obj.updateDynamic("allowFormatColumns")(allowFormatColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFormatRows)) __obj.updateDynamic("allowFormatRows")(allowFormatRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInsertColumns)) __obj.updateDynamic("allowInsertColumns")(allowInsertColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInsertHyperlinks)) __obj.updateDynamic("allowInsertHyperlinks")(allowInsertHyperlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowInsertRows)) __obj.updateDynamic("allowInsertRows")(allowInsertRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowPivotTables)) __obj.updateDynamic("allowPivotTables")(allowPivotTables.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSort)) __obj.updateDynamic("allowSort")(allowSort.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetProtectionOptions]
   }
+  
+  extension [Self <: WorksheetProtectionOptions](x: Self) {
+    
+    inline def setAllowAutoFilter(value: Boolean): Self = StObject.set(x, "allowAutoFilter", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAutoFilterUndefined: Self = StObject.set(x, "allowAutoFilter", js.undefined)
+    
+    inline def setAllowDeleteColumns(value: Boolean): Self = StObject.set(x, "allowDeleteColumns", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDeleteColumnsUndefined: Self = StObject.set(x, "allowDeleteColumns", js.undefined)
+    
+    inline def setAllowDeleteRows(value: Boolean): Self = StObject.set(x, "allowDeleteRows", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDeleteRowsUndefined: Self = StObject.set(x, "allowDeleteRows", js.undefined)
+    
+    inline def setAllowEditObjects(value: Boolean): Self = StObject.set(x, "allowEditObjects", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEditObjectsUndefined: Self = StObject.set(x, "allowEditObjects", js.undefined)
+    
+    inline def setAllowEditScenarios(value: Boolean): Self = StObject.set(x, "allowEditScenarios", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEditScenariosUndefined: Self = StObject.set(x, "allowEditScenarios", js.undefined)
+    
+    inline def setAllowFormatCells(value: Boolean): Self = StObject.set(x, "allowFormatCells", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFormatCellsUndefined: Self = StObject.set(x, "allowFormatCells", js.undefined)
+    
+    inline def setAllowFormatColumns(value: Boolean): Self = StObject.set(x, "allowFormatColumns", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFormatColumnsUndefined: Self = StObject.set(x, "allowFormatColumns", js.undefined)
+    
+    inline def setAllowFormatRows(value: Boolean): Self = StObject.set(x, "allowFormatRows", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFormatRowsUndefined: Self = StObject.set(x, "allowFormatRows", js.undefined)
+    
+    inline def setAllowInsertColumns(value: Boolean): Self = StObject.set(x, "allowInsertColumns", value.asInstanceOf[js.Any])
+    
+    inline def setAllowInsertColumnsUndefined: Self = StObject.set(x, "allowInsertColumns", js.undefined)
+    
+    inline def setAllowInsertHyperlinks(value: Boolean): Self = StObject.set(x, "allowInsertHyperlinks", value.asInstanceOf[js.Any])
+    
+    inline def setAllowInsertHyperlinksUndefined: Self = StObject.set(x, "allowInsertHyperlinks", js.undefined)
+    
+    inline def setAllowInsertRows(value: Boolean): Self = StObject.set(x, "allowInsertRows", value.asInstanceOf[js.Any])
+    
+    inline def setAllowInsertRowsUndefined: Self = StObject.set(x, "allowInsertRows", js.undefined)
+    
+    inline def setAllowPivotTables(value: Boolean): Self = StObject.set(x, "allowPivotTables", value.asInstanceOf[js.Any])
+    
+    inline def setAllowPivotTablesUndefined: Self = StObject.set(x, "allowPivotTables", js.undefined)
+    
+    inline def setAllowSort(value: Boolean): Self = StObject.set(x, "allowSort", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSortUndefined: Self = StObject.set(x, "allowSort", js.undefined)
+    
+    inline def setSelectionMode(value: ProtectionSelectionMode | Normal | Unlocked | None): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+  }
 }
-

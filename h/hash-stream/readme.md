@@ -10,10 +10,10 @@ Get a hash of a file or a stream
 | ------------------ | :-------------: |
 | Full name          | hash-stream |
 | Keywords           | hash, stream |
-| # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 6719 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7631.0 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/hash-stream#readme)

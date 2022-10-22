@@ -10,10 +10,10 @@ Configuration API
 | ------------------ | :-------------: |
 | Full name          | confidence |
 | Keywords           | hapi, plugin, configuration, api |
-| # releases         | 4 |
-| # dependents       | 37 |
-| # downloads        | 462244 |
-| # stars            | 11 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 54782.0 |
+| # stars            | 263.0 |
 
 ## Links
 - [Homepage](https://github.com/hapipal/confidence#readme)

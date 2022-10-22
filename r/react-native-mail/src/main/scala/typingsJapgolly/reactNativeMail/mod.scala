@@ -1,21 +1,33 @@
 package typingsJapgolly.reactNativeMail
 
+import typingsJapgolly.reactNativeMail.anon.Attachments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-mail", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object Mailer extends js.Object {
-    def mail(options: AnonAttachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = js.native
+object mod {
+  
+  object default {
+    
+    @JSImport("react-native-mail", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def mail(
+      options: Attachments,
+      callback: js.Function2[/* error */ String, /* event */ js.UndefOr[String], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
-  object default extends js.Object {
-    def mail(options: AnonAttachment, callback: js.Function2[/* error */ String, /* event */ String, Unit]): Unit = js.native
+  object Mailer {
+    
+    @JSImport("react-native-mail", "Mailer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def mail(
+      options: Attachments,
+      callback: js.Function2[/* error */ String, /* event */ js.UndefOr[String], Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mail")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
-  
 }
-

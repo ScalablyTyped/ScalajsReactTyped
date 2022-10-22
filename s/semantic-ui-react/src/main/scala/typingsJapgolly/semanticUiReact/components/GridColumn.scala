@@ -1,76 +1,17 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticFLOATS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticVERTICALALIGNMENTS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticWIDTHS
-import typingsJapgolly.semanticUiReact.gridColumnMod.GridColumnProps
-import typingsJapgolly.semanticUiReact.gridColumnMod.GridOnlyProp
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsGridGridColumnMod.GridColumnProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GridColumn {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    computer: SemanticWIDTHS = null,
-    floated: SemanticFLOATS = null,
-    largeScreen: SemanticWIDTHS = null,
-    mobile: SemanticWIDTHS = null,
-    only: GridOnlyProp = null,
-    stretched: js.UndefOr[Boolean] = js.undefined,
-    tablet: SemanticWIDTHS = null,
-    textAlign: SemanticTEXTALIGNMENTS = null,
-    verticalAlign: SemanticVERTICALALIGNMENTS = null,
-    widescreen: SemanticWIDTHS = null,
-    width: SemanticWIDTHS = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    GridColumnProps, 
-    MountedWithRawType[GridColumnProps, js.Object, RawMounted[GridColumnProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (computer != null) __obj.updateDynamic("computer")(computer.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (largeScreen != null) __obj.updateDynamic("largeScreen")(largeScreen.asInstanceOf[js.Any])
-    if (mobile != null) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (only != null) __obj.updateDynamic("only")(only.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretched)) __obj.updateDynamic("stretched")(stretched.asInstanceOf[js.Any])
-    if (tablet != null) __obj.updateDynamic("tablet")(tablet.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (widescreen != null) __obj.updateDynamic("widescreen")(widescreen.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.gridColumnMod.GridColumnProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.gridColumnMod.GridColumnProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/collections/Grid/GridColumn", JSImport.Default)
+  @JSImport("semantic-ui-react", "GridColumn")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: GridColumn.type): SharedBuilder_GridColumnProps_1699554840 = new SharedBuilder_GridColumnProps_1699554840(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: GridColumnProps): SharedBuilder_GridColumnProps_1699554840 = new SharedBuilder_GridColumnProps_1699554840(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

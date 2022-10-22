@@ -1,39 +1,60 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderClasses extends js.Object {
+trait SliderClasses extends StObject {
+  
   var `ui-slider`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-handle`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-horizontal`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-range`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-range-max`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-range-min`: js.UndefOr[String] = js.undefined
+  
   var `ui-slider-vertical`: js.UndefOr[String] = js.undefined
 }
-
 object SliderClasses {
-  @scala.inline
-  def apply(
-    `ui-slider`: String = null,
-    `ui-slider-handle`: String = null,
-    `ui-slider-horizontal`: String = null,
-    `ui-slider-range`: String = null,
-    `ui-slider-range-max`: String = null,
-    `ui-slider-range-min`: String = null,
-    `ui-slider-vertical`: String = null
-  ): SliderClasses = {
+  
+  inline def apply(): SliderClasses = {
     val __obj = js.Dynamic.literal()
-    if (`ui-slider` != null) __obj.updateDynamic("ui-slider")(`ui-slider`.asInstanceOf[js.Any])
-    if (`ui-slider-handle` != null) __obj.updateDynamic("ui-slider-handle")(`ui-slider-handle`.asInstanceOf[js.Any])
-    if (`ui-slider-horizontal` != null) __obj.updateDynamic("ui-slider-horizontal")(`ui-slider-horizontal`.asInstanceOf[js.Any])
-    if (`ui-slider-range` != null) __obj.updateDynamic("ui-slider-range")(`ui-slider-range`.asInstanceOf[js.Any])
-    if (`ui-slider-range-max` != null) __obj.updateDynamic("ui-slider-range-max")(`ui-slider-range-max`.asInstanceOf[js.Any])
-    if (`ui-slider-range-min` != null) __obj.updateDynamic("ui-slider-range-min")(`ui-slider-range-min`.asInstanceOf[js.Any])
-    if (`ui-slider-vertical` != null) __obj.updateDynamic("ui-slider-vertical")(`ui-slider-vertical`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderClasses]
   }
+  
+  extension [Self <: SliderClasses](x: Self) {
+    
+    inline def `setUi-slider`(value: String): Self = StObject.set(x, "ui-slider", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-handle`(value: String): Self = StObject.set(x, "ui-slider-handle", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-handleUndefined`: Self = StObject.set(x, "ui-slider-handle", js.undefined)
+    
+    inline def `setUi-slider-horizontal`(value: String): Self = StObject.set(x, "ui-slider-horizontal", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-horizontalUndefined`: Self = StObject.set(x, "ui-slider-horizontal", js.undefined)
+    
+    inline def `setUi-slider-range`(value: String): Self = StObject.set(x, "ui-slider-range", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-range-max`(value: String): Self = StObject.set(x, "ui-slider-range-max", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-range-maxUndefined`: Self = StObject.set(x, "ui-slider-range-max", js.undefined)
+    
+    inline def `setUi-slider-range-min`(value: String): Self = StObject.set(x, "ui-slider-range-min", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-range-minUndefined`: Self = StObject.set(x, "ui-slider-range-min", js.undefined)
+    
+    inline def `setUi-slider-rangeUndefined`: Self = StObject.set(x, "ui-slider-range", js.undefined)
+    
+    inline def `setUi-slider-vertical`(value: String): Self = StObject.set(x, "ui-slider-vertical", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-slider-verticalUndefined`: Self = StObject.set(x, "ui-slider-vertical", js.undefined)
+    
+    inline def `setUi-sliderUndefined`: Self = StObject.set(x, "ui-slider", js.undefined)
+  }
 }
-

@@ -10,15 +10,12 @@ Better radio buttons.
 | ------------------ | :-------------: |
 | Full name          | react-radio-group |
 | Keywords           | facebook, react, radio, radio-group, component, react-component |
-| # releases         | 2 |
-| # dependents       | 23 |
-| # downloads        | 798218 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 129584.33333333333 |
+| # stars            | 437.0 |
 
 ## Links
-- [Homepage](https://github.com/chenglou/react-radio-group)
-- [Bugs](https://github.com/chenglou/react-radio-group/issues)
-- [Repository](https://github.com/chenglou/react-radio-group)
 - [Npm](https://www.npmjs.com/package/react-radio-group)
     
 

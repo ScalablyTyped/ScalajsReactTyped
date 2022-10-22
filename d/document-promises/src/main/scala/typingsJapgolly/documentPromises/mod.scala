@@ -1,14 +1,27 @@
 package typingsJapgolly.documentPromises
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("document-promises", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var contentLoaded: js.Promise[Unit] = js.native
-  var loaded: js.Promise[Unit] = js.native
-  var parsed: js.Promise[Unit] = js.native
+object mod {
+  
+  @JSImport("document-promises", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("document-promises", "contentLoaded")
+  @js.native
+  def contentLoaded: js.Promise[Unit] = js.native
+  inline def contentLoaded_=(x: js.Promise[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contentLoaded")(x.asInstanceOf[js.Any])
+  
+  @JSImport("document-promises", "loaded")
+  @js.native
+  def loaded: js.Promise[Unit] = js.native
+  inline def loaded_=(x: js.Promise[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loaded")(x.asInstanceOf[js.Any])
+  
+  @JSImport("document-promises", "parsed")
+  @js.native
+  def parsed: js.Promise[Unit] = js.native
+  inline def parsed_=(x: js.Promise[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parsed")(x.asInstanceOf[js.Any])
 }
-

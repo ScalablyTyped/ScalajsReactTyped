@@ -1,23 +1,23 @@
 package typingsJapgolly.react.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsumerProps[T] extends js.Object {
-  var unstable_observedBits: js.UndefOr[Double] = js.undefined
+trait ConsumerProps[T] extends StObject {
+  
   def children(value: T): Node
 }
-
 object ConsumerProps {
-  @scala.inline
-  def apply[T](children: T => CallbackTo[Node], unstable_observedBits: Int | Double = null): ConsumerProps[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("children")(js.Any.fromFunction1((t0: T) => children(t0).runNow()))
-    if (unstable_observedBits != null) __obj.updateDynamic("unstable_observedBits")(unstable_observedBits.asInstanceOf[js.Any])
+  
+  inline def apply[T](children: T => Node): ConsumerProps[T] = {
+    val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
     __obj.asInstanceOf[ConsumerProps[T]]
   }
+  
+  extension [Self <: ConsumerProps[?], T](x: Self & ConsumerProps[T]) {
+    
+    inline def setChildren(value: T => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+  }
 }
-

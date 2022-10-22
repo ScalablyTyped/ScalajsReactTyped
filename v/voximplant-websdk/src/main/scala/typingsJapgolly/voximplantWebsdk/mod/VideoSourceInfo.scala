@@ -1,29 +1,35 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-	*	Video recording device info
-	*/
-trait VideoSourceInfo extends js.Object {
+  *    Video recording device info
+  */
+trait VideoSourceInfo extends StObject {
+  
   /**
-  		*	Device id that can be used to choose video recording device
-  		*/
+    *    Device id that can be used to choose video recording device
+    */
   var id: Double | String
+  
   /**
-  		*	Device name , in WebRTC mode populated with real data only when app has been opened using HTTPS protocol
-  		*/
+    *    Device name , in WebRTC mode populated with real data only when app has been opened using HTTPS protocol
+    */
   var name: String
 }
-
 object VideoSourceInfo {
-  @scala.inline
-  def apply(id: Double | String, name: String): VideoSourceInfo = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(id: Double | String, name: String): VideoSourceInfo = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoSourceInfo]
   }
+  
+  extension [Self <: VideoSourceInfo](x: Self) {
+    
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

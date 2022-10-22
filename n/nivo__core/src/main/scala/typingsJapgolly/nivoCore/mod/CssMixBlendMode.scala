@@ -1,8 +1,8 @@
 package typingsJapgolly.nivoCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nivoCore.nivoCoreStrings.normal
@@ -22,42 +22,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nivoCore.nivoCoreStrings.color
   - typingsJapgolly.nivoCore.nivoCoreStrings.luminosity
 */
-trait CssMixBlendMode extends js.Object
-
+trait CssMixBlendMode extends StObject
 object CssMixBlendMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def color: typingsJapgolly.nivoCore.nivoCoreStrings.color = this.cast("color")
-  @scala.inline
-  def `color-burn`: typingsJapgolly.nivoCore.nivoCoreStrings.`color-burn` = this.cast("color-burn")
-  @scala.inline
-  def `color-dodge`: typingsJapgolly.nivoCore.nivoCoreStrings.`color-dodge` = this.cast("color-dodge")
-  @scala.inline
-  def darken: typingsJapgolly.nivoCore.nivoCoreStrings.darken = this.cast("darken")
-  @scala.inline
-  def difference: typingsJapgolly.nivoCore.nivoCoreStrings.difference = this.cast("difference")
-  @scala.inline
-  def exclusion: typingsJapgolly.nivoCore.nivoCoreStrings.exclusion = this.cast("exclusion")
-  @scala.inline
-  def `hard-light`: typingsJapgolly.nivoCore.nivoCoreStrings.`hard-light` = this.cast("hard-light")
-  @scala.inline
-  def hue: typingsJapgolly.nivoCore.nivoCoreStrings.hue = this.cast("hue")
-  @scala.inline
-  def lighten: typingsJapgolly.nivoCore.nivoCoreStrings.lighten = this.cast("lighten")
-  @scala.inline
-  def luminosity: typingsJapgolly.nivoCore.nivoCoreStrings.luminosity = this.cast("luminosity")
-  @scala.inline
-  def multiply: typingsJapgolly.nivoCore.nivoCoreStrings.multiply = this.cast("multiply")
-  @scala.inline
-  def normal: typingsJapgolly.nivoCore.nivoCoreStrings.normal = this.cast("normal")
-  @scala.inline
-  def overlay: typingsJapgolly.nivoCore.nivoCoreStrings.overlay = this.cast("overlay")
-  @scala.inline
-  def saturation: typingsJapgolly.nivoCore.nivoCoreStrings.saturation = this.cast("saturation")
-  @scala.inline
-  def screen: typingsJapgolly.nivoCore.nivoCoreStrings.screen = this.cast("screen")
-  @scala.inline
-  def `soft-light`: typingsJapgolly.nivoCore.nivoCoreStrings.`soft-light` = this.cast("soft-light")
+  
+  inline def color: typingsJapgolly.nivoCore.nivoCoreStrings.color = "color".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.color]
+  
+  inline def `color-burn`: typingsJapgolly.nivoCore.nivoCoreStrings.`color-burn` = "color-burn".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.`color-burn`]
+  
+  inline def `color-dodge`: typingsJapgolly.nivoCore.nivoCoreStrings.`color-dodge` = "color-dodge".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.`color-dodge`]
+  
+  inline def darken: typingsJapgolly.nivoCore.nivoCoreStrings.darken = "darken".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.darken]
+  
+  inline def difference: typingsJapgolly.nivoCore.nivoCoreStrings.difference = "difference".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.difference]
+  
+  inline def exclusion: typingsJapgolly.nivoCore.nivoCoreStrings.exclusion = "exclusion".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.exclusion]
+  
+  inline def `hard-light`: typingsJapgolly.nivoCore.nivoCoreStrings.`hard-light` = "hard-light".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.`hard-light`]
+  
+  inline def hue: typingsJapgolly.nivoCore.nivoCoreStrings.hue = "hue".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.hue]
+  
+  inline def lighten: typingsJapgolly.nivoCore.nivoCoreStrings.lighten = "lighten".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.lighten]
+  
+  inline def luminosity: typingsJapgolly.nivoCore.nivoCoreStrings.luminosity = "luminosity".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.luminosity]
+  
+  inline def multiply: typingsJapgolly.nivoCore.nivoCoreStrings.multiply = "multiply".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.multiply]
+  
+  inline def normal: typingsJapgolly.nivoCore.nivoCoreStrings.normal = "normal".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.normal]
+  
+  inline def overlay: typingsJapgolly.nivoCore.nivoCoreStrings.overlay = "overlay".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.overlay]
+  
+  inline def saturation: typingsJapgolly.nivoCore.nivoCoreStrings.saturation = "saturation".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.saturation]
+  
+  inline def screen: typingsJapgolly.nivoCore.nivoCoreStrings.screen = "screen".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.screen]
+  
+  inline def `soft-light`: typingsJapgolly.nivoCore.nivoCoreStrings.`soft-light` = "soft-light".asInstanceOf[typingsJapgolly.nivoCore.nivoCoreStrings.`soft-light`]
 }
-

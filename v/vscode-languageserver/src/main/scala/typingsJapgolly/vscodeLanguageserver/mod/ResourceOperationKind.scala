@@ -1,23 +1,29 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "ResourceOperationKind")
-@js.native
-object ResourceOperationKind extends js.Object {
+object ResourceOperationKind {
+  
   /**
     * Supports creating new files and folders.
     */
-  val Create: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  @JSImport("vscode-languageserver", "ResourceOperationKind.Create")
+  @js.native
+  val Create: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
+  
   /**
     * Supports deleting existing files and folders.
     */
-  val Delete: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  @JSImport("vscode-languageserver", "ResourceOperationKind.Delete")
+  @js.native
+  val Delete: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
+  
   /**
     * Supports renaming existing files and folders.
     */
-  val Rename: typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ResourceOperationKind = js.native
+  @JSImport("vscode-languageserver", "ResourceOperationKind.Rename")
+  @js.native
+  val Rename: typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ResourceOperationKind = js.native
 }
-

@@ -1,58 +1,46 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.center
 import typingsJapgolly.antd.antdStrings.horizontal
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
 import typingsJapgolly.antd.antdStrings.vertical
-import typingsJapgolly.antd.dividerMod.DividerProps
+import typingsJapgolly.antd.libDividerMod.DividerProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Divider {
-  def apply(
-    className: String = null,
-    dashed: js.UndefOr[Boolean] = js.undefined,
-    orientation: left | right | center = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    `type`: horizontal | vertical = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    DividerProps, 
-    MountedWithRawType[DividerProps, js.Object, RawMounted[DividerProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(dashed)) __obj.updateDynamic("dashed")(dashed.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.dividerMod.DividerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.dividerMod.DividerProps])(children: _*)
-  }
-  @JSImport("antd/lib/divider", JSImport.Default)
+  @JSImport("antd", "Divider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dashed(value: Boolean): this.type = set("dashed", value.asInstanceOf[js.Any])
+    
+    inline def orientation(value: left | right | center): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
+    inline def orientationMargin(value: String | Double): this.type = set("orientationMargin", value.asInstanceOf[js.Any])
+    
+    inline def plain(value: Boolean): this.type = set("plain", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: horizontal | vertical): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Divider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: DividerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

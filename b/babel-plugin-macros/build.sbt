@@ -1,20 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "babel-plugin-macros"
-version := "2.8-dt-20200225Z-9cc4f1"
-scalaVersion := "2.13.1"
+version := "2.8-dt-20211202Z-eec0e8"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "babel__core" % "7.1-dt-20200225Z-18de56",
-  "org.scalablytyped.japgolly" %%% "babel__generator" % "7.6-dt-20191210Z-60f2e1",
-  "org.scalablytyped.japgolly" %%% "babel__parser" % "7.8.4-d6139a",
-  "org.scalablytyped.japgolly" %%% "babel__template" % "7.0-dt-20190213Z-5270ce",
-  "org.scalablytyped.japgolly" %%% "babel__traverse" % "7.0-dt-20200225Z-78abb6",
-  "org.scalablytyped.japgolly" %%% "babel__types" % "7.8.3-f87775",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "babel__core" % "7.1-dt-20220624Z-70ea58",
+  "org.scalablytyped.japgolly" %%% "babel__generator" % "7.6-dt-20211223Z-d287e9",
+  "org.scalablytyped.japgolly" %%% "babel__parser" % "7.19.4-03fc7e",
+  "org.scalablytyped.japgolly" %%% "babel__template" % "7.4-dt-20211202Z-a6f3ab",
+  "org.scalablytyped.japgolly" %%% "babel__traverse" % "7.18-dt-20220923Z-12cca0",
+  "org.scalablytyped.japgolly" %%% "babel__types" % "7.19.4-3aab9c",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

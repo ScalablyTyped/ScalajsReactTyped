@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollViewChangingEvent extends ScrollViewEvent {
+trait ScrollViewChangingEvent
+  extends StObject
+     with ScrollViewEvent {
+  
   var currentPage: js.UndefOr[Double] = js.undefined
+  
   var nextPage: js.UndefOr[Double] = js.undefined
 }
-
 object ScrollViewChangingEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: ScrollView,
-    currentPage: Int | Double = null,
-    nextPage: Int | Double = null
-  ): ScrollViewChangingEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: ScrollView): ScrollViewChangingEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollViewChangingEvent]
   }
+  
+  extension [Self <: ScrollViewChangingEvent](x: Self) {
+    
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPageUndefined: Self = StObject.set(x, "currentPage", js.undefined)
+    
+    inline def setNextPage(value: Double): Self = StObject.set(x, "nextPage", value.asInstanceOf[js.Any])
+    
+    inline def setNextPageUndefined: Self = StObject.set(x, "nextPage", js.undefined)
+  }
 }
-

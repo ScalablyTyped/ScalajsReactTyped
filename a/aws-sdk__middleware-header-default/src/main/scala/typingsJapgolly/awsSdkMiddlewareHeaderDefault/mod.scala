@@ -1,15 +1,18 @@
 package typingsJapgolly.awsSdkMiddlewareHeaderDefault
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.awsSdkTypes.middlewareMod.BuildMiddleware
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-header-default", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def headerDefault(headerBag: HeaderDefaultArgs): BuildMiddleware[_, _, _] = js.native
-  type HeaderDefaultArgs = StringDictionary[String]
+object mod {
+  
+  @JSImport("@aws-sdk/middleware-header-default", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def headerDefault(headerBag: HeaderDefaultArgs): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("headerDefault")(headerBag.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Any, Any]]
+  
+  type HeaderDefaultArgs = Record[String, String]
 }
-

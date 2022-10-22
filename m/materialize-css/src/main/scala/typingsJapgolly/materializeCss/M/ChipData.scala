@@ -1,26 +1,34 @@
 package typingsJapgolly.materializeCss.M
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChipData extends js.Object {
+trait ChipData extends StObject {
+  
   /**
     * Chip image
     */
   var img: js.UndefOr[String] = js.undefined
+  
   /**
     * Chip tag
     */
   var tag: String
 }
-
 object ChipData {
-  @scala.inline
-  def apply(tag: String, img: String = null): ChipData = {
+  
+  inline def apply(tag: String): ChipData = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChipData]
   }
+  
+  extension [Self <: ChipData](x: Self) {
+    
+    inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    
+    inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,12 +1,12 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MatterJS.VerticesFactory")
 @js.native
-class VerticesFactory () extends js.Object {
+trait VerticesFactory extends StObject {
+  
   /**
     * Returns the area of the set of vertices.
     * @method area
@@ -15,6 +15,7 @@ class VerticesFactory () extends js.Object {
     * @return {number} The area
     */
   def area(vertices: js.Array[Vector], signed: Boolean): Double = js.native
+  
   /**
     * Returns the centre (centroid) of the set of vertices.
     * @method centre
@@ -22,6 +23,7 @@ class VerticesFactory () extends js.Object {
     * @return {vector} The centre point
     */
   def centre(vertices: js.Array[Vector]): Vector = js.native
+  
   def chamfer(
     vertices: js.Array[Vector],
     radius: js.Array[Double],
@@ -46,6 +48,7 @@ class VerticesFactory () extends js.Object {
     qualityMin: Double,
     qualityMax: Double
   ): Unit = js.native
+  
   /**
     * Sorts the input vertices into clockwise order in place.
     * @method clockwiseSort
@@ -53,6 +56,7 @@ class VerticesFactory () extends js.Object {
     * @return {vertices} vertices
     */
   def clockwiseSort(vertices: js.Array[Vector]): js.Array[Vector] = js.native
+  
   /**
     * Returns `true` if the `point` is inside the set of `vertices`.
     * @method contains
@@ -61,6 +65,7 @@ class VerticesFactory () extends js.Object {
     * @return {boolean} True if the vertices contains point, otherwise false
     */
   def contains(vertices: js.Array[Vector], point: Vector): Boolean = js.native
+  
   /**
     * Creates a new set of `Matter.Body` compatible vertices.
     * The `points` argument accepts an array of `Matter.Vector` points orientated around the origin `(0, 0)`, for example:
@@ -77,6 +82,7 @@ class VerticesFactory () extends js.Object {
     * @param {body} body
     */
   def create(points: js.Array[Vector], body: BodyType): js.Array[Vector] = js.native
+  
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
     * into a `Matter.Vertices` object for the given `Matter.Body`.
@@ -87,6 +93,7 @@ class VerticesFactory () extends js.Object {
     * @return {vertices} vertices
     */
   def fromPath(path: String, body: BodyType): js.Array[Vector] = js.native
+  
   /**
     * Returns the convex hull of the input vertices as a new array of points.
     * @method hull
@@ -94,6 +101,7 @@ class VerticesFactory () extends js.Object {
     * @return [vertex] vertices
     */
   def hull(vertices: js.Array[Vector]): js.Array[Vector] = js.native
+  
   /**
     * Returns the moment of inertia (second moment of area) of the set of vertices given the total mass.
     * @method inertia
@@ -102,6 +110,7 @@ class VerticesFactory () extends js.Object {
     * @return {number} The polygon's moment of inertia
     */
   def inertia(vertices: js.Array[Vector], mass: Double): Double = js.native
+  
   /**
     * Returns true if the vertices form a convex shape (vertices must be in clockwise order).
     * @method isConvex
@@ -109,6 +118,7 @@ class VerticesFactory () extends js.Object {
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
   def isConvex(vertices: js.Array[Vector]): Boolean = js.native
+  
   /**
     * Returns the average (mean) of the set of vertices.
     * @method mean
@@ -116,6 +126,7 @@ class VerticesFactory () extends js.Object {
     * @return {vector} The average point
     */
   def mean(vertices: js.Array[Vector]): js.Array[Vector] = js.native
+  
   /**
     * Rotates the set of vertices in-place.
     * @method rotate
@@ -124,6 +135,7 @@ class VerticesFactory () extends js.Object {
     * @param {vector} point
     */
   def rotate(vertices: js.Array[Vector], angle: Double, point: Vector): Unit = js.native
+  
   /**
     * Scales the vertices from a point (default is centre) in-place.
     * @method scale
@@ -133,6 +145,7 @@ class VerticesFactory () extends js.Object {
     * @param {vector} point
     */
   def scale(vertices: js.Array[Vector], scaleX: Double, scaleY: Double, point: Vector): Unit = js.native
+  
   /**
     * Translates the set of vertices in-place.
     * @method translate
@@ -142,4 +155,3 @@ class VerticesFactory () extends js.Object {
     */
   def translate(vertices: js.Array[Vector], vector: Vector, scalar: Double): Unit = js.native
 }
-

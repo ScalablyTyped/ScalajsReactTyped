@@ -1,32 +1,37 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EnumDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var members: js.Array[EnumValue]
+  
   var name: String
+  
   @JSName("type")
   var type_EnumDefinition: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition
 }
-
 object EnumDefinition {
-  @scala.inline
-  def apply(
-    members: js.Array[EnumValue],
-    name: String,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): EnumDefinition = {
+  
+  inline def apply(members: js.Array[EnumValue], name: String): EnumDefinition = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumDefinition")
     __obj.asInstanceOf[EnumDefinition]
   }
+  
+  extension [Self <: EnumDefinition](x: Self) {
+    
+    inline def setMembers(value: js.Array[EnumValue]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: EnumValue*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,43 +1,46 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit
-import typingsJapgolly.mendixmodelsdk.pagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenPagesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/search-button relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/control-bar relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "pages.GridSearchButton")
 @js.native
-class GridSearchButton protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.GridSearchButton {
+open class GridSearchButton protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.GridSearchButton {
   def this(
     model: AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
-    unit: ModelUnit,
-    container: AbstractElement
+    unit: ModelUnit[IAbstractModel],
+    container: AbstractElement[IAbstractModel, Container]
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.GridSearchButton")
-@js.native
-object GridSearchButton extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object GridSearchButton {
+  
+  @JSImport("mendixmodelsdk", "pages.GridSearchButton")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
     * Expects one argument: the IModel object the instance will "live on".
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
-  def create(model: IModel): typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridSearchButton = js.native
+  /* static member */
+  inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton]
+  
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
     * The new GridSearchButton will be automatically stored in the 'items' property
@@ -46,13 +49,17 @@ object GridSearchButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  7.13.0 and higher
     */
-  def createIn(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ControlBar): typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridSearchButton = js.native
+  /* static member */
+  inline def createIn(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ControlBar): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton]
+  
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
     * The new GridSearchButton will be automatically stored in the 'items' property
     * of the parent ControlBar element passed as argument.
     */
-  def createInControlBarUnderItems(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.ControlBar): typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridSearchButton = js.native
+  /* static member */
+  inline def createInControlBarUnderItems(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.ControlBar): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarUnderItems")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton]
+  
   /**
     * Creates and returns a new GridSearchButton instance in the SDK and on the server.
     * The new GridSearchButton will be automatically stored in the 'searchButton' property
@@ -61,6 +68,18 @@ object GridSearchButton extends js.Object {
     * Warning! Can only be used on models with the following Mendix meta model versions:
     *  6.0.0 to 7.12.0
     */
-  def createInGridControlBarUnderSearchButton(container: typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridControlBar): typingsJapgolly.mendixmodelsdk.pagesMod.pages.GridSearchButton = js.native
+  /* static member */
+  inline def createInGridControlBarUnderSearchButton(container: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridControlBar): typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridControlBarUnderSearchButton")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.GridSearchButton]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.GridSearchButton.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.GridSearchButton.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

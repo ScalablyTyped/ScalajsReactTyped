@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.`flex-start`
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.stretch
   - typingsJapgolly.reactNative.reactNativeStrings.baseline
 */
-trait FlexAlignType extends js.Object
-
+trait FlexAlignType extends StObject
 object FlexAlignType {
-  @scala.inline
-  def baseline: typingsJapgolly.reactNative.reactNativeStrings.baseline = this.cast("baseline")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.reactNative.reactNativeStrings.center = this.cast("center")
-  @scala.inline
-  def `flex-end`: typingsJapgolly.reactNative.reactNativeStrings.`flex-end` = this.cast("flex-end")
-  @scala.inline
-  def `flex-start`: typingsJapgolly.reactNative.reactNativeStrings.`flex-start` = this.cast("flex-start")
-  @scala.inline
-  def stretch: typingsJapgolly.reactNative.reactNativeStrings.stretch = this.cast("stretch")
+  
+  inline def baseline: typingsJapgolly.reactNative.reactNativeStrings.baseline = "baseline".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.baseline]
+  
+  inline def center: typingsJapgolly.reactNative.reactNativeStrings.center = "center".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.center]
+  
+  inline def `flex-end`: typingsJapgolly.reactNative.reactNativeStrings.`flex-end` = "flex-end".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.`flex-end`]
+  
+  inline def `flex-start`: typingsJapgolly.reactNative.reactNativeStrings.`flex-start` = "flex-start".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.`flex-start`]
+  
+  inline def stretch: typingsJapgolly.reactNative.reactNativeStrings.stretch = "stretch".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.stretch]
 }
-

@@ -2,16 +2,16 @@ package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
 import typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.Options
 import typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IBM Watson&trade; Natural Language Classifier uses machine learning algorithms to return the top matching predefined classes for short text input. You create and train a classifier to connect predefined classes to example texts so that the service can apply those classes to new inputs.
   */
 @JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1")
 @js.native
-class NaturalLanguageClassifierV1 protected () extends ^ {
+open class NaturalLanguageClassifierV1 protected () extends ^ {
   /**
     * Construct a NaturalLanguageClassifierV1 object.
     *
@@ -30,11 +30,15 @@ class NaturalLanguageClassifierV1 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1")
-@js.native
-object NaturalLanguageClassifierV1 extends js.Object {
-  var URL: String = js.native
+object NaturalLanguageClassifierV1 {
+  
+  @JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "NaturalLanguageClassifierV1.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

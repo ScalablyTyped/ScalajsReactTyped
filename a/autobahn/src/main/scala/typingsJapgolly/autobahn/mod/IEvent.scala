@@ -1,21 +1,32 @@
 package typingsJapgolly.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEvent extends js.Object {
+trait IEvent[TName] extends StObject {
+  
   var publication: Double
+  
   var publisher: js.UndefOr[Double] = js.undefined
-  var topic: String
+  
+  var topic: TName
 }
-
 object IEvent {
-  @scala.inline
-  def apply(publication: Double, topic: String, publisher: Int | Double = null): IEvent = {
+  
+  inline def apply[TName](publication: Double, topic: TName): IEvent[TName] = {
     val __obj = js.Dynamic.literal(publication = publication.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any])
-    if (publisher != null) __obj.updateDynamic("publisher")(publisher.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IEvent]
+    __obj.asInstanceOf[IEvent[TName]]
+  }
+  
+  extension [Self <: IEvent[?], TName](x: Self & IEvent[TName]) {
+    
+    inline def setPublication(value: Double): Self = StObject.set(x, "publication", value.asInstanceOf[js.Any])
+    
+    inline def setPublisher(value: Double): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    
+    inline def setTopic(value: TName): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }
-

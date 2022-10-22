@@ -1,27 +1,35 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPrintTaskRequest extends js.Object {
-  var deadline: js.Date
+trait IPrintTaskRequest extends StObject {
+  
   def createPrintTask(title: String, handler: PrintTaskSourceRequestedHandler): PrintTask
+  
+  var deadline: js.Date
+  
   def getDeferral(): PrintTaskRequestedDeferral
 }
-
 object IPrintTaskRequest {
-  @scala.inline
-  def apply(
-    createPrintTask: (String, PrintTaskSourceRequestedHandler) => CallbackTo[PrintTask],
+  
+  inline def apply(
+    createPrintTask: (String, PrintTaskSourceRequestedHandler) => PrintTask,
     deadline: js.Date,
     getDeferral: CallbackTo[PrintTaskRequestedDeferral]
   ): IPrintTaskRequest = {
-    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any])
-    __obj.updateDynamic("createPrintTask")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.winrt.Windows.Graphics.Printing.PrintTaskSourceRequestedHandler) => createPrintTask(t0, t1).runNow()))
-    __obj.updateDynamic("getDeferral")(getDeferral.toJsFn)
+    val __obj = js.Dynamic.literal(createPrintTask = js.Any.fromFunction2(createPrintTask), deadline = deadline.asInstanceOf[js.Any], getDeferral = getDeferral.toJsFn)
     __obj.asInstanceOf[IPrintTaskRequest]
   }
+  
+  extension [Self <: IPrintTaskRequest](x: Self) {
+    
+    inline def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = StObject.set(x, "createPrintTask", js.Any.fromFunction2(value))
+    
+    inline def setDeadline(value: js.Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+    
+    inline def setGetDeferral(value: CallbackTo[PrintTaskRequestedDeferral]): Self = StObject.set(x, "getDeferral", value.toJsFn)
+  }
 }
-

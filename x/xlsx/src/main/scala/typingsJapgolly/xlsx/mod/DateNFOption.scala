@@ -1,20 +1,25 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateNFOption extends js.Object {
+trait DateNFOption extends StObject {
+  
   /** Use specified date format */
   var dateNF: js.UndefOr[NumberFormat] = js.undefined
 }
-
 object DateNFOption {
-  @scala.inline
-  def apply(dateNF: NumberFormat = null): DateNFOption = {
+  
+  inline def apply(): DateNFOption = {
     val __obj = js.Dynamic.literal()
-    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateNFOption]
   }
+  
+  extension [Self <: DateNFOption](x: Self) {
+    
+    inline def setDateNF(value: NumberFormat): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
+    
+    inline def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
+  }
 }
-

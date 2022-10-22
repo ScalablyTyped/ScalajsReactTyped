@@ -1,12 +1,18 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.react.mod.PureComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap-typeahead", "Highlighter")
 @js.native
-class Highlighter ()
-  extends Component[HighligherProps, js.Object, js.Any]
-
+open class Highlighter protected ()
+  extends PureComponent[HighligherProps, js.Object, Any] {
+  def this(props: HighligherProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HighligherProps, context: Any) = this()
+}

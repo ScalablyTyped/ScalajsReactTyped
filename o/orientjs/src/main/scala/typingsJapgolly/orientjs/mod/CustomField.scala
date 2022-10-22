@@ -1,11 +1,11 @@
 package typingsJapgolly.orientjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomField extends js.Object {
+trait CustomField extends StObject {
+  
   /**
     * Get the value of the given custom field.
     *
@@ -13,6 +13,7 @@ trait CustomField extends js.Object {
     * @return      The field value, or undefined if it doesn't exist.
     */
   def get(key: String): CustomField
+  
   /**
     * Set a custom field.
     *
@@ -20,7 +21,8 @@ trait CustomField extends js.Object {
     * @param          value The value to set, if `key` is not an object.
     * @promise {Object|null}         The new set of custom fields, or null if none are present.
     */
-  def set(key: String, value: js.Any): CustomField
+  def set(key: String, value: Any): CustomField
+  
   /**
     * Unset the custom field with the given name,
     *
@@ -29,19 +31,19 @@ trait CustomField extends js.Object {
     */
   def unset(key: String): CustomField
 }
-
 object CustomField {
-  @scala.inline
-  def apply(
-    get: String => CallbackTo[CustomField],
-    set: (String, js.Any) => CallbackTo[CustomField],
-    unset: String => CallbackTo[CustomField]
-  ): CustomField = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
-    __obj.updateDynamic("set")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => set(t0, t1).runNow()))
-    __obj.updateDynamic("unset")(js.Any.fromFunction1((t0: java.lang.String) => unset(t0).runNow()))
+  
+  inline def apply(get: String => CustomField, set: (String, Any) => CustomField, unset: String => CustomField): CustomField = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set), unset = js.Any.fromFunction1(unset))
     __obj.asInstanceOf[CustomField]
   }
+  
+  extension [Self <: CustomField](x: Self) {
+    
+    inline def setGet(value: String => CustomField): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setSet(value: (String, Any) => CustomField): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    
+    inline def setUnset(value: String => CustomField): Self = StObject.set(x, "unset", js.Any.fromFunction1(value))
+  }
 }
-

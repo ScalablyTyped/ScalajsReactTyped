@@ -1,74 +1,56 @@
 package typingsJapgolly.reduxApiMiddleware
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduxApiMiddlewareStrings {
-  @js.native
-  sealed trait `@@redux-api-middlewareSlashRSAA` extends js.Object
   
   @js.native
-  sealed trait ApiError extends js.Object
+  sealed trait ApiError extends StObject
+  inline def ApiError: ApiError = "ApiError".asInstanceOf[ApiError]
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD extends StObject
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait InternalError extends js.Object
+  sealed trait InternalError extends StObject
+  inline def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
   
   @js.native
-  sealed trait `Invalid RSAA` extends js.Object
+  sealed trait `Invalid RSAA` extends StObject
+  inline def `Invalid RSAA`: `Invalid RSAA` = ("Invalid RSAA").asInstanceOf[`Invalid RSAA`]
   
   @js.native
-  sealed trait InvalidRSAA extends js.Object
+  sealed trait InvalidRSAA extends StObject
+  inline def InvalidRSAA: InvalidRSAA = "InvalidRSAA".asInstanceOf[InvalidRSAA]
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS extends StObject
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH extends StObject
+  inline def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait RequestError extends js.Object
-  
-  @scala.inline
-  def `@@redux-api-middlewareSlashRSAA`: `@@redux-api-middlewareSlashRSAA` = "@@redux-api-middleware/RSAA".asInstanceOf[`@@redux-api-middlewareSlashRSAA`]
-  @scala.inline
-  def ApiError: ApiError = "ApiError".asInstanceOf[ApiError]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def InternalError: InternalError = "InternalError".asInstanceOf[InternalError]
-  @scala.inline
-  def `Invalid RSAA`: `Invalid RSAA` = "Invalid RSAA".asInstanceOf[`Invalid RSAA`]
-  @scala.inline
-  def InvalidRSAA: InvalidRSAA = "InvalidRSAA".asInstanceOf[InvalidRSAA]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
+  sealed trait RequestError extends StObject
+  inline def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
 }
-

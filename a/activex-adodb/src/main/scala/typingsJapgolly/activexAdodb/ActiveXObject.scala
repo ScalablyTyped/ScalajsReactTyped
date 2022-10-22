@@ -41,113 +41,98 @@ import typingsJapgolly.activexAdodb.activexAdodbStrings.fMoreData
 import typingsJapgolly.activexAdodb.activexAdodbStrings.pConnection
 import typingsJapgolly.activexAdodb.activexAdodbStrings.pError
 import typingsJapgolly.activexAdodb.activexAdodbStrings.pRecordset
+import typingsJapgolly.activexAdodb.anon.AdReason
+import typingsJapgolly.activexAdodb.anon.AdReasonAdStatus
+import typingsJapgolly.activexAdodb.anon.AdStatus
+import typingsJapgolly.activexAdodb.anon.AdStatusPConnection
+import typingsJapgolly.activexAdodb.anon.CFields
+import typingsJapgolly.activexAdodb.anon.CRecords
+import typingsJapgolly.activexAdodb.anon.FMoreData
+import typingsJapgolly.activexAdodb.anon.PConnection
+import typingsJapgolly.activexAdodb.anon.PError
+import typingsJapgolly.activexAdodb.anon.PRecordset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
+  
+  def on(
+    obj: Connection,
+    event: CommitTransComplete | ConnectComplete | InfoMessage | RollbackTransComplete,
+    argNames: js.Tuple3[pError, adStatus, pConnection],
+    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ PConnection, Unit]
+  ): Unit = js.native
   def on(
     obj: Connection,
     event: BeginTransComplete,
     argNames: js.Tuple4[TransactionLevel, pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonAdStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Connection,
-    event: CommitTransComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonPConnection, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Connection,
-    event: ConnectComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonPConnection, Unit]
+    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AdStatus, Unit]
   ): Unit = js.native
   def on(
     obj: Connection,
     event: Disconnect,
     argNames: js.Tuple2[adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonAdStatusPConnection, Unit]
+    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AdStatusPConnection, Unit]
   ): Unit = js.native
   def on(
-    obj: Connection,
-    event: InfoMessage,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonPConnection, Unit]
+    obj: Recordset,
+    event: WillChangeRecordset | WillMove,
+    argNames: js.Tuple3[adReason, adStatus, pRecordset],
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReasonAdStatus, Unit]
   ): Unit = js.native
   def on(
-    obj: Connection,
-    event: RollbackTransComplete,
-    argNames: js.Tuple3[pError, adStatus, pConnection],
-    handler: js.ThisFunction1[/* this */ Connection, /* parameter */ AnonPConnection, Unit]
+    obj: Recordset,
+    event: MoveComplete | RecordsetChangeComplete,
+    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AdReason, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: EndOfRecordset,
     argNames: js.Tuple3[fMoreData, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonFMoreData, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ FMoreData, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: FetchComplete,
     argNames: js.Tuple3[pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonPError, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ PError, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: FetchProgress,
     argNames: js.Tuple4[Progress, MaxProgress, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonMaxProgress, Unit]
+    handler: js.ThisFunction1[
+      /* this */ Recordset, 
+      /* parameter */ typingsJapgolly.activexAdodb.anon.MaxProgress, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: FieldChangeComplete,
     argNames: js.Tuple5[cFields, Fields, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonCFields, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: MoveComplete,
-    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonAdReason, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ CFields, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: RecordChangeComplete,
     argNames: js.Tuple5[adReason, cRecords, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonCRecords, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: RecordsetChangeComplete,
-    argNames: js.Tuple4[adReason, pError, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonAdReason, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ CRecords, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: WillChangeField,
     argNames: js.Tuple4[cFields, Fields, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonFields, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ typingsJapgolly.activexAdodb.anon.Fields, Unit]
   ): Unit = js.native
   def on(
     obj: Recordset,
     event: WillChangeRecord,
     argNames: js.Tuple4[adReason, cRecords, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonPRecordset, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: WillChangeRecordset,
-    argNames: js.Tuple3[adReason, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonAdReasonAdStatus, Unit]
-  ): Unit = js.native
-  def on(
-    obj: Recordset,
-    event: WillMove,
-    argNames: js.Tuple3[adReason, adStatus, pRecordset],
-    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ AnonAdReasonAdStatus, Unit]
+    handler: js.ThisFunction1[/* this */ Recordset, /* parameter */ PRecordset, Unit]
   ): Unit = js.native
   @JSName("on")
   def on_ExecuteComplete(
@@ -170,7 +155,7 @@ trait ActiveXObject extends js.Object {
     argNames: ConnectionWillExecuteArgNames,
     handler: js.ThisFunction1[/* this */ Connection, /* parameter */ ConnectionWillExecuteParameter, Unit]
   ): Unit = js.native
+  
   @JSName("set")
-  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[_], newValue: js.Any): Unit = js.native
+  def set_Collect(obj: Recordset, propertyName: Collect, parameterTypes: js.Array[Any], newValue: Any): Unit = js.native
 }
-

@@ -1,66 +1,102 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Subtotals for the Pivot Field.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-trait Subtotals extends js.Object {
+trait Subtotals extends StObject {
+  
   /**
+    * If `Automatic` is set to `true`, then all other values will be ignored when setting the `Subtotals`.
     *
-    * If Automatic is set to true, then all other values will be ignored when setting the Subtotals.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var automatic: js.UndefOr[Boolean] = js.undefined
+  
   var average: js.UndefOr[Boolean] = js.undefined
+  
   var count: js.UndefOr[Boolean] = js.undefined
+  
   var countNumbers: js.UndefOr[Boolean] = js.undefined
+  
   var max: js.UndefOr[Boolean] = js.undefined
+  
   var min: js.UndefOr[Boolean] = js.undefined
+  
   var product: js.UndefOr[Boolean] = js.undefined
+  
   var standardDeviation: js.UndefOr[Boolean] = js.undefined
+  
   var standardDeviationP: js.UndefOr[Boolean] = js.undefined
+  
   var sum: js.UndefOr[Boolean] = js.undefined
+  
   var variance: js.UndefOr[Boolean] = js.undefined
+  
   var varianceP: js.UndefOr[Boolean] = js.undefined
 }
-
 object Subtotals {
-  @scala.inline
-  def apply(
-    automatic: js.UndefOr[Boolean] = js.undefined,
-    average: js.UndefOr[Boolean] = js.undefined,
-    count: js.UndefOr[Boolean] = js.undefined,
-    countNumbers: js.UndefOr[Boolean] = js.undefined,
-    max: js.UndefOr[Boolean] = js.undefined,
-    min: js.UndefOr[Boolean] = js.undefined,
-    product: js.UndefOr[Boolean] = js.undefined,
-    standardDeviation: js.UndefOr[Boolean] = js.undefined,
-    standardDeviationP: js.UndefOr[Boolean] = js.undefined,
-    sum: js.UndefOr[Boolean] = js.undefined,
-    variance: js.UndefOr[Boolean] = js.undefined,
-    varianceP: js.UndefOr[Boolean] = js.undefined
-  ): Subtotals = {
+  
+  inline def apply(): Subtotals = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(automatic)) __obj.updateDynamic("automatic")(automatic.asInstanceOf[js.Any])
-    if (!js.isUndefined(average)) __obj.updateDynamic("average")(average.asInstanceOf[js.Any])
-    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(countNumbers)) __obj.updateDynamic("countNumbers")(countNumbers.asInstanceOf[js.Any])
-    if (!js.isUndefined(max)) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (!js.isUndefined(min)) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(product)) __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardDeviation)) __obj.updateDynamic("standardDeviation")(standardDeviation.asInstanceOf[js.Any])
-    if (!js.isUndefined(standardDeviationP)) __obj.updateDynamic("standardDeviationP")(standardDeviationP.asInstanceOf[js.Any])
-    if (!js.isUndefined(sum)) __obj.updateDynamic("sum")(sum.asInstanceOf[js.Any])
-    if (!js.isUndefined(variance)) __obj.updateDynamic("variance")(variance.asInstanceOf[js.Any])
-    if (!js.isUndefined(varianceP)) __obj.updateDynamic("varianceP")(varianceP.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subtotals]
   }
+  
+  extension [Self <: Subtotals](x: Self) {
+    
+    inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticUndefined: Self = StObject.set(x, "automatic", js.undefined)
+    
+    inline def setAverage(value: Boolean): Self = StObject.set(x, "average", value.asInstanceOf[js.Any])
+    
+    inline def setAverageUndefined: Self = StObject.set(x, "average", js.undefined)
+    
+    inline def setCount(value: Boolean): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountNumbers(value: Boolean): Self = StObject.set(x, "countNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setCountNumbersUndefined: Self = StObject.set(x, "countNumbers", js.undefined)
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setMax(value: Boolean): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Boolean): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setProduct(value: Boolean): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    
+    inline def setStandardDeviation(value: Boolean): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    
+    inline def setStandardDeviationP(value: Boolean): Self = StObject.set(x, "standardDeviationP", value.asInstanceOf[js.Any])
+    
+    inline def setStandardDeviationPUndefined: Self = StObject.set(x, "standardDeviationP", js.undefined)
+    
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
+    
+    inline def setSum(value: Boolean): Self = StObject.set(x, "sum", value.asInstanceOf[js.Any])
+    
+    inline def setSumUndefined: Self = StObject.set(x, "sum", js.undefined)
+    
+    inline def setVariance(value: Boolean): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    
+    inline def setVarianceP(value: Boolean): Self = StObject.set(x, "varianceP", value.asInstanceOf[js.Any])
+    
+    inline def setVariancePUndefined: Self = StObject.set(x, "varianceP", js.undefined)
+    
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+  }
 }
-

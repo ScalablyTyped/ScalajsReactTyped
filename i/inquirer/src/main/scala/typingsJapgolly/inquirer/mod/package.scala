@@ -1,140 +1,91 @@
-package typingsJapgolly.inquirer
+package typingsJapgolly.inquirer.mod
 
+import typingsJapgolly.inquirer.anon.IsFinal
+import typingsJapgolly.inquirer.inquirerStrings.`type`
+import typingsJapgolly.inquirer.mod.^
+import typingsJapgolly.inquirer.mod.inquirer.prompts.PromptConstructor
+import typingsJapgolly.rxjs.mod.Observable_
+import typingsJapgolly.std.Extract
+import typingsJapgolly.std.Partial
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  /**
-    * A set of answers.
-    */
-  type Answers = typingsJapgolly.std.Record[java.lang.String, js.Any]
-  /**
-    * Represents a dynamic property for a question which can be fetched asynchronously.
-    */
-  type AsyncDynamicQuestionProperty[T, TAnswers /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.DynamicQuestionProperty[T | js.Promise[T], TAnswers]
-  /**
-    * Provides options for a question for the `CheckboxPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type CheckboxQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.ListQuestionOptionsBase[T, typingsJapgolly.inquirer.mod.CheckboxChoiceMap[T]]
-  /**
-    * Represents a set of choices.
-    */
-  type ChoiceCollection[T /* <: typingsJapgolly.inquirer.mod.Answers */] = js.Array[
-    typingsJapgolly.inquirer.mod.DistinctChoice[typingsJapgolly.inquirer.mod.AllChoiceMap[typingsJapgolly.inquirer.mod.Answers]]
-  ]
-  /**
-    * Provides options for a question for the `ConfirmPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type ConfirmQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.Question[T]
-  /**
-    * Provides valid choices for the question of the `TChoiceMap`.
-    *
-    * @template TChoiceMap
-    * The choice-types to provide.
-    */
-  type DistinctChoice[TChoiceMap] = java.lang.String | (/* import warning: importer.ImportType#apply Failed type conversion: TChoiceMap[keyof TChoiceMap] */ js.Any)
-  /**
-    * Represents a dynamic property for a question.
-    */
-  type DynamicQuestionProperty[T, TAnswers /* <: typingsJapgolly.inquirer.mod.Answers */] = T | (js.Function1[/* answers */ TAnswers, T])
-  /**
-    * Provides options for a question for the `EditorPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type EditorQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.Question[T]
-  /**
-    * Provides options for a question for the `ExpandPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type ExpandQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.ListQuestionOptionsBase[T, typingsJapgolly.inquirer.mod.ExpandChoiceMap[T]]
-  /**
-    * Represents either a key of `T` or a `string`.
-    *
-    * @template T
-    * The type of the keys to suggest.
-    */
-  type KeyUnion[T] = typingsJapgolly.inquirer.mod.LiteralUnion[typingsJapgolly.std.Extract[java.lang.String, java.lang.String], java.lang.String]
-  /**
-    * Provides options for a question for the `ListPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type ListQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.ListQuestionOptionsBase[T, typingsJapgolly.inquirer.mod.ListChoiceMap[T]]
-  /**
-    * Represents a union which preserves autocompletion.
-    *
-    * @template T
-    * The keys which are available for autocompletion.
-    *
-    * @template F
-    * The fallback-type.
-    */
-  type LiteralUnion[T /* <: F */, F] = T | (F with js.Object)
-  /**
-    * Provides options for a question for the `NumberPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type NumberQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.InputQuestionOptions[T]
-  /**
-    * Represents a collection of questions.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type QuestionCollection[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.DistinctQuestion[T] | js.Array[typingsJapgolly.inquirer.mod.DistinctQuestion[T]] | typingsJapgolly.rxjs.mod.Observable_[typingsJapgolly.inquirer.mod.DistinctQuestion[T]]
-  /**
-    * Provides options for a question for the `RawListPrompt`.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type RawListQuestionOptions[T /* <: typingsJapgolly.inquirer.mod.Answers */] = typingsJapgolly.inquirer.mod.ListQuestionOptions[T]
-  /**
-    * Provides the functionality to transform an answer.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type Transformer[T /* <: typingsJapgolly.inquirer.mod.Answers */] = js.UndefOr[
-    js.Function3[
-      /* input */ js.Any, 
-      /* answers */ T, 
-      /* flags */ typingsJapgolly.inquirer.AnonIsFinal, 
-      java.lang.String | js.Promise[java.lang.String]
-    ]
-  ]
-  /**
-    * Converts the specified union-type `U` to an intersection-type.
-    *
-    * @template U
-    * The union to convert to an intersection.
-    */
-  type UnionToIntersection[U] = js.Any
-  /**
-    * Provides the functionality to validate answers.
-    *
-    * @template T
-    * The type of the answers.
-    */
-  type Validator[T /* <: typingsJapgolly.inquirer.mod.Answers */] = js.UndefOr[
-    js.Function2[
-      /* input */ js.Any, 
-      /* answers */ js.UndefOr[T], 
-      scala.Boolean | java.lang.String | (js.Promise[scala.Boolean | java.lang.String])
-    ]
-  ]
-}
+
+inline def createPromptModule(): PromptModule = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")().asInstanceOf[PromptModule]
+inline def createPromptModule(opt: StreamOptions): PromptModule = ^.asInstanceOf[js.Dynamic].applyDynamic("createPromptModule")(opt.asInstanceOf[js.Any]).asInstanceOf[PromptModule]
+
+type Answers = Record[String, Any]
+
+type AsyncDynamicQuestionProperty[T, TAnswers /* <: Answers */] = DynamicQuestionProperty[T | js.Promise[T], TAnswers]
+
+type CheckboxQuestionOptions[T /* <: Answers */] = LoopableListQuestionOptionsBase[T, CheckboxChoiceMap[T]]
+
+type ChoiceCollection[T /* <: Answers */] = js.Array[DistinctChoice[T, AllChoiceMap[T]]]
+
+type ConfirmQuestionOptions[T /* <: Answers */] = Question[T]
+
+type DistinctChoice[TAnswers /* <: Answers */, TChoiceMap] = String | (/* import warning: importer.ImportType#apply Failed type conversion: TChoiceMap[keyof TChoiceMap] */ js.Any)
+
+/* Inlined inquirer.inquirer.QuestionMap<T>[keyof inquirer.inquirer.QuestionMap<T>] */
+type DistinctQuestion[T /* <: Answers */] = `type`
+
+type DynamicQuestionProperty[T, TAnswers /* <: Answers */] = T | (js.Function1[/* answers */ TAnswers, T])
+
+type ExpandQuestionOptions[T /* <: Answers */] = ListQuestionOptionsBase[T, ExpandChoiceMap[T]]
+
+type KeyUnion[T] = LiteralUnion[Extract[/* keyof T */ String, String], String]
+
+type ListQuestionOptions[T /* <: Answers */] = LoopableListQuestionOptionsBase[T, ListChoiceMap[T]]
+
+/**
+  * Represents a union which preserves autocompletion.
+  *
+  * @template T
+  * The keys which are available for autocompletion.
+  *
+  * @template F
+  * The fallback-type.
+  */
+type LiteralUnion[T /* <: F */, F] = T | (F & js.Object)
+
+type NumberQuestionOptions[T /* <: Answers */] = InputQuestionOptions[T]
+
+type PromptFunction = js.Function2[
+/* questions */ QuestionCollection[Answers], 
+/* initialAnswers */ js.UndefOr[Partial[Answers]], 
+js.Promise[Answers]]
+
+/**
+  * A component for creating {@link PromptModule `PromptModule`}s.
+  */
+type PromptModuleCreator = js.Function1[/* opt */ js.UndefOr[StreamOptions], PromptModule]
+
+type QuestionAnswer[T /* <: Answers */] = /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: {  name :K,   answer :T[K]}}[keyof T] */ js.Any
+
+type QuestionCollection[T /* <: Answers */] = DistinctQuestion[T] | js.Array[DistinctQuestion[T]] | Observable_[DistinctQuestion[T]] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in inquirer.inquirer.KeyUnion<T> ]:? inquirer.inquirer.DistinctQuestion<T> & {  name :never | undefined}} */ js.Any)
+
+type QuestionTypeName = /* import warning: importer.ImportType#apply Failed type conversion: inquirer.inquirer.DistinctQuestion<inquirer.inquirer.Answers>['type'] */ js.Any
+
+type RawListQuestionOptions[T /* <: Answers */] = ListQuestionOptions[T]
+
+/**
+  * Represents a function for registering a prompt.
+  */
+type RegisterFunction = js.Function2[/* name */ String, /* prompt */ PromptConstructor, Unit]
+
+/**
+  * Represents a function for restoring a prompt.
+  */
+type RestoreFunction = js.Function0[Unit]
+
+type Transformer[T /* <: Answers */] = js.UndefOr[
+js.Function3[/* input */ Any, /* answers */ T, /* flags */ IsFinal, String | js.Promise[String]]]
+
+type Validator[T /* <: Answers */] = js.UndefOr[
+js.Function2[
+  /* input */ Any, 
+  /* answers */ js.UndefOr[T], 
+  Boolean | String | (js.Promise[Boolean | String])
+]]

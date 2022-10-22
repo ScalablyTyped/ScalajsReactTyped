@@ -1,158 +1,259 @@
 package typingsJapgolly.recharts.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.recharts.anon.PartialYPadding
 import typingsJapgolly.recharts.rechartsStrings.category
 import typingsJapgolly.recharts.rechartsStrings.left
 import typingsJapgolly.recharts.rechartsStrings.number
 import typingsJapgolly.recharts.rechartsStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait YAxisProps extends EventAttributes {
+trait YAxisProps
+  extends StObject
+     with EventAttributes {
+  
   var allowDataOverflow: js.UndefOr[Boolean] = js.undefined
+  
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
+  
+  var allowDuplicatedCategory: js.UndefOr[Boolean] = js.undefined
+  
   // Rotation of tick labels
   var angle: js.UndefOr[Double] = js.undefined
+  
   var axisLine: js.UndefOr[Boolean | js.Object] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   // The key of data displayed in the axis
   var dataKey: js.UndefOr[DataKey] = js.undefined
+  
   var domain: js.UndefOr[js.Tuple2[AxisDomain, AxisDomain]] = js.undefined
+  
   // X offset of tick label
   var dx: js.UndefOr[Double] = js.undefined
+  
   // Y offset of tick label
   var dy: js.UndefOr[Double] = js.undefined
+  
   // The height of axis which is usually calculated in Chart
   var height: js.UndefOr[Double] = js.undefined
+  
   var hide: js.UndefOr[Boolean] = js.undefined
+  
   var interval: js.UndefOr[AxisInterval] = js.undefined
+  
   // see label section at http://recharts.org/#/en-US/api/YAxis
   var label: js.UndefOr[String | Double | Label | LabelProps] = js.undefined
+  
   var minTickGap: js.UndefOr[Double] = js.undefined
+  
   var mirror: js.UndefOr[Boolean] = js.undefined
+  
   // The name of data displayed in the axis
   var name: js.UndefOr[String | Double] = js.undefined
+  
   // The orientation of axis
   var orientation: js.UndefOr[left | right] = js.undefined
-  var padding: js.UndefOr[YPadding] = js.undefined
+  
+  var padding: js.UndefOr[PartialYPadding] = js.undefined
+  
   var reversed: js.UndefOr[Boolean] = js.undefined
+  
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
+  
   var stroke: js.UndefOr[String] = js.undefined
-  var tick: js.UndefOr[Boolean | ContentRenderer[_] | js.Object | Element] = js.undefined
+  
+  var tick: js.UndefOr[Boolean | ContentRenderer[Any] | js.Object | Element] = js.undefined
+  
   // The count of ticks
   var tickCount: js.UndefOr[Double] = js.undefined
+  
   // The formatter function of tick
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
+  
   var tickLine: js.UndefOr[Boolean | js.Object] = js.undefined
+  
   // The margin between tick line and the label
   var tickMargin: js.UndefOr[Double] = js.undefined
+  
   var tickSize: js.UndefOr[Double] = js.undefined
+  
   // Ticks can be any type when the axis is the type of category
   // Ticks must be numbers when the axis is the type of number
-  var ticks: js.UndefOr[js.Array[_]] = js.undefined
+  var ticks: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var `type`: js.UndefOr[number | category] = js.undefined
+  
   // The unit of data displayed in the axis
   var unit: js.UndefOr[String | Double] = js.undefined
+  
   // The width of axis, which need to be set by user
   var width: js.UndefOr[Double] = js.undefined
+  
   // The unique id of y-axis
   var yAxisId: js.UndefOr[String | Double] = js.undefined
 }
-
 object YAxisProps {
-  @scala.inline
-  def apply(
-    allowDataOverflow: js.UndefOr[Boolean] = js.undefined,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    angle: Int | Double = null,
-    axisLine: Boolean | js.Object = null,
-    dataKey: DataKey = null,
-    domain: js.Tuple2[AxisDomain, AxisDomain] = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
-    height: Int | Double = null,
-    hide: js.UndefOr[Boolean] = js.undefined,
-    interval: AxisInterval = null,
-    label: String | Double | Label | LabelProps = null,
-    minTickGap: Int | Double = null,
-    mirror: js.UndefOr[Boolean] = js.undefined,
-    name: String | Double = null,
-    onClick: /* repeated */ js.Any => Callback = null,
-    onMouseDown: /* repeated */ js.Any => Callback = null,
-    onMouseEnter: /* repeated */ js.Any => Callback = null,
-    onMouseLeave: /* repeated */ js.Any => Callback = null,
-    onMouseMove: /* repeated */ js.Any => Callback = null,
-    onMouseOut: /* repeated */ js.Any => Callback = null,
-    onMouseOver: /* repeated */ js.Any => Callback = null,
-    onMouseUp: /* repeated */ js.Any => Callback = null,
-    onTouchCancel: /* repeated */ js.Any => Callback = null,
-    onTouchEnd: /* repeated */ js.Any => Callback = null,
-    onTouchMove: /* repeated */ js.Any => Callback = null,
-    onTouchStart: /* repeated */ js.Any => Callback = null,
-    orientation: left | right = null,
-    padding: YPadding = null,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    scale: ScaleType | RechartsFunction = null,
-    stroke: String = null,
-    tick: Boolean | ContentRenderer[_] | js.Object | Element = null,
-    tickCount: Int | Double = null,
-    tickFormatter: /* value */ js.Any => CallbackTo[js.Any] = null,
-    tickLine: Boolean | js.Object = null,
-    tickMargin: Int | Double = null,
-    tickSize: Int | Double = null,
-    ticks: js.Array[_] = null,
-    `type`: number | category = null,
-    unit: String | Double = null,
-    width: Int | Double = null,
-    yAxisId: String | Double = null
-  ): YAxisProps = {
+  
+  inline def apply(): YAxisProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDataOverflow)) __obj.updateDynamic("allowDataOverflow")(allowDataOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (minTickGap != null) __obj.updateDynamic("minTickGap")(minTickGap.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onClick(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseOut(t0).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseOver(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseUp(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchStart(t0).runNow()))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1((t0: /* value */ js.Any) => tickFormatter(t0).runNow()))
-    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
-    if (tickMargin != null) __obj.updateDynamic("tickMargin")(tickMargin.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisProps]
   }
+  
+  extension [Self <: YAxisProps](x: Self) {
+    
+    inline def setAllowDataOverflow(value: Boolean): Self = StObject.set(x, "allowDataOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDataOverflowUndefined: Self = StObject.set(x, "allowDataOverflow", js.undefined)
+    
+    inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
+    
+    inline def setAllowDuplicatedCategory(value: Boolean): Self = StObject.set(x, "allowDuplicatedCategory", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDuplicatedCategoryUndefined: Self = StObject.set(x, "allowDuplicatedCategory", js.undefined)
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setAxisLine(value: Boolean | js.Object): Self = StObject.set(x, "axisLine", value.asInstanceOf[js.Any])
+    
+    inline def setAxisLineUndefined: Self = StObject.set(x, "axisLine", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    
+    inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
+    
+    inline def setDomain(value: js.Tuple2[AxisDomain, AxisDomain]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHide(value: Boolean): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setInterval(value: AxisInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setLabel(value: String | Double | Label | LabelProps): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMinTickGap(value: Double): Self = StObject.set(x, "minTickGap", value.asInstanceOf[js.Any])
+    
+    inline def setMinTickGapUndefined: Self = StObject.set(x, "minTickGap", js.undefined)
+    
+    inline def setMirror(value: Boolean): Self = StObject.set(x, "mirror", value.asInstanceOf[js.Any])
+    
+    inline def setMirrorUndefined: Self = StObject.set(x, "mirror", js.undefined)
+    
+    inline def setName(value: String | Double): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrientation(value: left | right): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPadding(value: PartialYPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    
+    inline def setScale(value: ScaleType | RechartsFunction): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setTick(value: Boolean | ContentRenderer[Any] | js.Object | Element): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    
+    inline def setTickCount(value: Double): Self = StObject.set(x, "tickCount", value.asInstanceOf[js.Any])
+    
+    inline def setTickCountUndefined: Self = StObject.set(x, "tickCount", js.undefined)
+    
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    
+    inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
+    
+    inline def setTickFunction1(value: Any => Node): Self = StObject.set(x, "tick", js.Any.fromFunction1(value))
+    
+    inline def setTickLine(value: Boolean | js.Object): Self = StObject.set(x, "tickLine", value.asInstanceOf[js.Any])
+    
+    inline def setTickLineUndefined: Self = StObject.set(x, "tickLine", js.undefined)
+    
+    inline def setTickMargin(value: Double): Self = StObject.set(x, "tickMargin", value.asInstanceOf[js.Any])
+    
+    inline def setTickMarginUndefined: Self = StObject.set(x, "tickMargin", js.undefined)
+    
+    inline def setTickSize(value: Double): Self = StObject.set(x, "tickSize", value.asInstanceOf[js.Any])
+    
+    inline def setTickSizeUndefined: Self = StObject.set(x, "tickSize", js.undefined)
+    
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    
+    inline def setTickVdomElement(value: VdomElement): Self = StObject.set(x, "tick", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setTicks(value: js.Array[Any]): Self = StObject.set(x, "ticks", value.asInstanceOf[js.Any])
+    
+    inline def setTicksUndefined: Self = StObject.set(x, "ticks", js.undefined)
+    
+    inline def setTicksVarargs(value: Any*): Self = StObject.set(x, "ticks", js.Array(value*))
+    
+    inline def setType(value: number | category): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUnit(value: String | Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setYAxisId(value: String | Double): Self = StObject.set(x, "yAxisId", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisIdUndefined: Self = StObject.set(x, "yAxisId", js.undefined)
+  }
 }
-

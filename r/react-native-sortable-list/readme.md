@@ -10,15 +10,12 @@ React Native Sortable List component
 | ------------------ | :-------------: |
 | Full name          | react-native-sortable-list |
 | Keywords           | react-native, ios, react-component |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 194229 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19207.666666666668 |
+| # stars            | 737.0 |
 
 ## Links
-- [Homepage](https://github.com/gitim/react-native-sortable-list)
-- [Bugs](https://github.com/gitim/react-native-sortable-list/issues)
-- [Repository](https://github.com/gitim/react-native-sortable-list)
 - [Npm](https://www.npmjs.com/package/react-native-sortable-list)
     
 

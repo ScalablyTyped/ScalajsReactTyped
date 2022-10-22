@@ -1,29 +1,60 @@
 package typingsJapgolly.materialAutoInit
 
-import typingsJapgolly.std.Document_
+import org.scalajs.dom.Document
+import org.scalajs.dom.Element
+import typingsJapgolly.materialBase.componentMod.MDCComponent
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/auto-init", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait MDCAutoInit extends js.Object {
-    def apply(): MDCAutoInit = js.native
-    def apply(root: Document_): MDCAutoInit = js.native
-    def apply(root: Document_, warn: MDCLogger): MDCAutoInit = js.native
-    def deregister(componentName: String): Unit = js.native
-    def deregisterAll(): Unit = js.native
-    def register(componentName: String, Ctor: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-    def register(componentName: String, Ctor: js.Function1[/* repeated */ js.Any, _], warn: MDCLogger): Unit = js.native
+object mod {
+  
+  object default {
+    
+    /**
+      * Auto-initializes all MDC components on a page.
+      */
+    inline def apply(): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    inline def apply(root: Document): js.Array[MDCComponent[MDCFoundation[js.Object]]] = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[js.Array[MDCComponent[MDCFoundation[js.Object]]]]
+    
+    @JSImport("@material/auto-init", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/auto-init", "default.deregister")
+    @js.native
+    def deregister: js.Function1[/* componentName */ String, Unit] = js.native
+    
+    @JSImport("@material/auto-init", "default.deregisterAll")
+    @js.native
+    def deregisterAll: js.Function0[Unit] = js.native
+    inline def deregisterAll_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregisterAll")(x.asInstanceOf[js.Any])
+    
+    inline def deregister_=(x: js.Function1[/* componentName */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deregister")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/auto-init", "default.register")
+    @js.native
+    def register: js.Function3[
+        /* componentName */ String, 
+        /* Constructor */ MDCAttachable, 
+        /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
+        Unit
+      ] = js.native
+    inline def register_=(
+      x: js.Function3[
+          /* componentName */ String, 
+          /* Constructor */ MDCAttachable, 
+          /* warn */ js.UndefOr[js.Function1[/* repeated */ Any, Unit]], 
+          Unit
+        ]
+    ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("register")(x.asInstanceOf[js.Any])
   }
   
-  /**
-    * Auto-initializes all mdc components on a page.
-    */
-  // tslint:disable-next-line:strict-export-declare-modifiers
-  val default: MDCAutoInit = js.native
-  type MDCLogger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
+  @js.native
+  trait MDCAttachable
+    extends js.Function {
+    
+    def attachTo(root: Element): MDCComponent[MDCFoundation[js.Object]] = js.native
+  }
 }
-

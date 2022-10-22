@@ -1,16 +1,16 @@
 package typingsJapgolly.openlayers.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.HTMLVideoElement
 import typingsJapgolly.openlayers.mod.Tile.State
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "ImageTile")
 @js.native
-class ImageTile protected () extends Tile {
+open class ImageTile protected () extends Tile {
   /**
     * @param tileCoord Tile coordinate.
     * @param state State.
@@ -27,6 +27,14 @@ class ImageTile protected () extends Tile {
     crossOrigin: String,
     tileLoadFunction: TileLoadFunctionType
   ) = this()
+  def this(
+    tileCoord: TileCoord,
+    state: State,
+    src: String,
+    crossOrigin: Unit,
+    tileLoadFunction: TileLoadFunctionType
+  ) = this()
+  
   /**
     * Get the image element for this tile.
     * @inheritDoc
@@ -35,4 +43,3 @@ class ImageTile protected () extends Tile {
   def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
   def getImage(opt_context: GlobalObject): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
 }
-

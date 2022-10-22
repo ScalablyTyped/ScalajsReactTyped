@@ -1,28 +1,31 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Provides a utility method that normalizes geometries that intersect the central meridian or fall outside the world extent so they stay within the coordinate system of the view.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-normalizeUtils.html)
+  */
 @js.native
-trait normalizeUtils extends js.Object {
+trait normalizeUtils extends StObject {
+  
   /**
-    * Normalizes geometries that intersect the central meridian or fall outside the world extent so they stay within the coordinate system of the view. Only supported for Web Mercator and WGS84 spatial references.
+    * Returns an [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) over the dateline that is smaller than the normalized width if it visually contains the geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-normalizeUtils.html#getDenormalizedExtent)
+    */
+  def getDenormalizedExtent(geometry: Geometry_): Extent = js.native
+  
+  /**
+    * Normalizes geometries that intersect the central meridian or fall outside the world extent so they stay within the coordinate system of the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-normalizeUtils.html#normalizeCentralMeridian)
-    *
-    * @param geometries An array of geometries to normalize.
-    * @param geometryService A geometry service used to perform the normalization. If this value is `null` then the default geometry service in [esriConfig.geometryServiceUrl](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#geometryServiceUrl) is used.
-    * @param requestOptions Additional [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for the data request.
-    *
     */
   def normalizeCentralMeridian(geometries: js.Array[Geometry_]): js.Promise[js.Array[Geometry_]] = js.native
-  def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService): js.Promise[js.Array[Geometry_]] = js.native
-  def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService, requestOptions: js.Any): js.Promise[js.Array[Geometry_]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry_], url: String): js.Promise[js.Array[Geometry_]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry_], url: String, requestOptions: Any): js.Promise[js.Array[Geometry_]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry_], url: scala.Unit, requestOptions: Any): js.Promise[js.Array[Geometry_]] = js.native
 }
-
-@JSGlobal("__esri.normalizeUtils")
-@js.native
-object normalizeUtils extends TopLevel[normalizeUtils]
-

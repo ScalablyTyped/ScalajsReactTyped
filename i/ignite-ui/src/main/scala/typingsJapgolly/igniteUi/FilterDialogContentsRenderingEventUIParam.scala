@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterDialogContentsRenderingEventUIParam extends js.Object {
+trait FilterDialogContentsRenderingEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the filtering dialog DOM element.
-  	 */
+    * Gets reference to the filtering dialog DOM element.
+    */
   var dialogElement: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets reference to GridFiltering.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridFiltering.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object FilterDialogContentsRenderingEventUIParam {
-  @scala.inline
-  def apply(dialogElement: String = null, owner: js.Any = null): FilterDialogContentsRenderingEventUIParam = {
+  
+  inline def apply(): FilterDialogContentsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDialogContentsRenderingEventUIParam]
   }
+  
+  extension [Self <: FilterDialogContentsRenderingEventUIParam](x: Self) {
+    
+    inline def setDialogElement(value: String): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
+    
+    inline def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

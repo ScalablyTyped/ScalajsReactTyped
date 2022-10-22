@@ -1,60 +1,18 @@
 package typingsJapgolly.sharepoint
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Commands")
-@js.native
-object Commands extends js.Object {
-  @js.native
-  class CommandIds () extends js.Object
+object Commands {
   
-  @js.native
-  class GlobalRedoProperties () extends js.Object
+  trait CommandIds extends StObject
   
-  @js.native
-  class GlobalUndoProperties () extends js.Object
+  trait GlobalRedoProperties extends StObject
   
-  @js.native
-  class RedoProperties () extends js.Object
+  trait GlobalUndoProperties extends StObject
   
-  @js.native
-  class UndoProperties () extends js.Object
+  trait RedoProperties extends StObject
   
-  /* static members */
-  @js.native
-  object CommandIds extends js.Object {
-    var ApplicationStateChanged: String = js.native
-    var GlobalRedo: String = js.native
-    var GlobalUndo: String = js.native
-    var Redo: String = js.native
-    var Undo: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object GlobalRedoProperties extends js.Object {
-    var SequenceNumber: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object GlobalUndoProperties extends js.Object {
-    var SequenceNumber: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object RedoProperties extends js.Object {
-    var SequenceNumber: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object UndoProperties extends js.Object {
-    var SequenceNumber: String = js.native
-  }
-  
+  trait UndoProperties extends StObject
 }
-

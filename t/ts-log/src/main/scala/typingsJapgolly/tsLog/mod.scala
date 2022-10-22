@@ -1,28 +1,34 @@
 package typingsJapgolly.tsLog
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ts-log", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("ts-log", "dummyLogger")
+  @js.native
+  val dummyLogger: Logger = js.native
+  
   @js.native
   trait Logger
-    extends /* x */ StringDictionary[js.Any] {
-    def debug(): Unit = js.native
-    def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def error(): Unit = js.native
-    def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def info(): Unit = js.native
-    def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def trace(): Unit = js.native
-    def trace(message: js.Any, optionalParams: js.Any*): Unit = js.native
-    def warn(): Unit = js.native
-    def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    extends StObject
+       with /* x */ StringDictionary[Any] {
+    
+    def debug(message: Any, optionalParams: Any*): Unit = js.native
+    def debug(message: Unit, optionalParams: Any*): Unit = js.native
+    
+    def error(message: Any, optionalParams: Any*): Unit = js.native
+    def error(message: Unit, optionalParams: Any*): Unit = js.native
+    
+    def info(message: Any, optionalParams: Any*): Unit = js.native
+    def info(message: Unit, optionalParams: Any*): Unit = js.native
+    
+    def trace(message: Any, optionalParams: Any*): Unit = js.native
+    def trace(message: Unit, optionalParams: Any*): Unit = js.native
+    
+    def warn(message: Any, optionalParams: Any*): Unit = js.native
+    def warn(message: Unit, optionalParams: Any*): Unit = js.native
   }
-  
-  val dummyLogger: Logger = js.native
 }
-

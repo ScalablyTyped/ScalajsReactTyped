@@ -10,40 +10,59 @@ import typingsJapgolly.reactJoyride.reactJoyrideStrings.tooltip
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.tourColonend
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.tourColonstart
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.tourColonstatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait events extends js.Object {
+trait events extends StObject {
+  
   var BEACON: beacon
+  
   var ERROR: error
+  
   var STEP_AFTER: stepColonafter
+  
   var STEP_BEFORE: stepColonbefore
+  
   var TARGET_NOT_FOUND: errorColontarget_not_found
+  
   var TOOLTIP: tooltip
+  
   var TOOLTIP_CLOSE: close
+  
   var TOUR_END: tourColonend
+  
   var TOUR_START: tourColonstart
+  
   var TOUR_STATUS: tourColonstatus
 }
-
 object events {
-  @scala.inline
-  def apply(
-    BEACON: beacon,
-    ERROR: error,
-    STEP_AFTER: stepColonafter,
-    STEP_BEFORE: stepColonbefore,
-    TARGET_NOT_FOUND: errorColontarget_not_found,
-    TOOLTIP: tooltip,
-    TOOLTIP_CLOSE: close,
-    TOUR_END: tourColonend,
-    TOUR_START: tourColonstart,
-    TOUR_STATUS: tourColonstatus
-  ): events = {
-    val __obj = js.Dynamic.literal(BEACON = BEACON.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], STEP_AFTER = STEP_AFTER.asInstanceOf[js.Any], STEP_BEFORE = STEP_BEFORE.asInstanceOf[js.Any], TARGET_NOT_FOUND = TARGET_NOT_FOUND.asInstanceOf[js.Any], TOOLTIP = TOOLTIP.asInstanceOf[js.Any], TOOLTIP_CLOSE = TOOLTIP_CLOSE.asInstanceOf[js.Any], TOUR_END = TOUR_END.asInstanceOf[js.Any], TOUR_START = TOUR_START.asInstanceOf[js.Any], TOUR_STATUS = TOUR_STATUS.asInstanceOf[js.Any])
   
+  inline def apply(): events = {
+    val __obj = js.Dynamic.literal(BEACON = "beacon", ERROR = "error", STEP_AFTER = "step:after", STEP_BEFORE = "step:before", TARGET_NOT_FOUND = "error:target_not_found", TOOLTIP = "tooltip", TOOLTIP_CLOSE = "close", TOUR_END = "tour:end", TOUR_START = "tour:start", TOUR_STATUS = "tour:status")
     __obj.asInstanceOf[events]
   }
+  
+  extension [Self <: events](x: Self) {
+    
+    inline def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
+    
+    inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    
+    inline def setSTEP_AFTER(value: stepColonafter): Self = StObject.set(x, "STEP_AFTER", value.asInstanceOf[js.Any])
+    
+    inline def setSTEP_BEFORE(value: stepColonbefore): Self = StObject.set(x, "STEP_BEFORE", value.asInstanceOf[js.Any])
+    
+    inline def setTARGET_NOT_FOUND(value: errorColontarget_not_found): Self = StObject.set(x, "TARGET_NOT_FOUND", value.asInstanceOf[js.Any])
+    
+    inline def setTOOLTIP(value: tooltip): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
+    
+    inline def setTOOLTIP_CLOSE(value: close): Self = StObject.set(x, "TOOLTIP_CLOSE", value.asInstanceOf[js.Any])
+    
+    inline def setTOUR_END(value: tourColonend): Self = StObject.set(x, "TOUR_END", value.asInstanceOf[js.Any])
+    
+    inline def setTOUR_START(value: tourColonstart): Self = StObject.set(x, "TOUR_START", value.asInstanceOf[js.Any])
+    
+    inline def setTOUR_STATUS(value: tourColonstatus): Self = StObject.set(x, "TOUR_STATUS", value.asInstanceOf[js.Any])
+  }
 }
-

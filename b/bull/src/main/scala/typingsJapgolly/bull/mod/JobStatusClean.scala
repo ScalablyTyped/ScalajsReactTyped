@@ -1,8 +1,8 @@
 package typingsJapgolly.bull.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bull.bullStrings.completed
@@ -10,19 +10,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.bull.bullStrings.active
   - typingsJapgolly.bull.bullStrings.delayed
   - typingsJapgolly.bull.bullStrings.failed
+  - typingsJapgolly.bull.bullStrings.paused
 */
-trait JobStatusClean extends js.Object
-
+trait JobStatusClean extends StObject
 object JobStatusClean {
-  @scala.inline
-  def active: typingsJapgolly.bull.bullStrings.active = this.cast("active")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def completed: typingsJapgolly.bull.bullStrings.completed = this.cast("completed")
-  @scala.inline
-  def delayed: typingsJapgolly.bull.bullStrings.delayed = this.cast("delayed")
-  @scala.inline
-  def failed: typingsJapgolly.bull.bullStrings.failed = this.cast("failed")
+  
+  inline def active: typingsJapgolly.bull.bullStrings.active = "active".asInstanceOf[typingsJapgolly.bull.bullStrings.active]
+  
+  inline def completed: typingsJapgolly.bull.bullStrings.completed = "completed".asInstanceOf[typingsJapgolly.bull.bullStrings.completed]
+  
+  inline def delayed: typingsJapgolly.bull.bullStrings.delayed = "delayed".asInstanceOf[typingsJapgolly.bull.bullStrings.delayed]
+  
+  inline def failed: typingsJapgolly.bull.bullStrings.failed = "failed".asInstanceOf[typingsJapgolly.bull.bullStrings.failed]
+  
+  inline def paused: typingsJapgolly.bull.bullStrings.paused = "paused".asInstanceOf[typingsJapgolly.bull.bullStrings.paused]
 }
-

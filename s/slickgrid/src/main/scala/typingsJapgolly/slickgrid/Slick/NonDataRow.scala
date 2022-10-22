@@ -1,10 +1,7 @@
 package typingsJapgolly.slickgrid.Slick
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Slick.NonDataRow")
-@js.native
-class NonDataRow () extends js.Object
-
+trait NonDataRow extends StObject

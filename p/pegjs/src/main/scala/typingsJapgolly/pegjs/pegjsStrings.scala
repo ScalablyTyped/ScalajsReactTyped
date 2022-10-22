@@ -1,54 +1,44 @@
 package typingsJapgolly.pegjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pegjsStrings {
-  @js.native
-  sealed trait amd extends js.Object
   
   @js.native
-  sealed trait bare extends js.Object
+  sealed trait amd extends StObject
+  inline def amd: amd = "amd".asInstanceOf[amd]
   
   @js.native
-  sealed trait commonjs extends js.Object
+  sealed trait bare extends StObject
+  inline def bare: bare = "bare".asInstanceOf[bare]
   
   @js.native
-  sealed trait globals extends js.Object
+  sealed trait commonjs extends StObject
+  inline def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   
   @js.native
-  sealed trait parser extends js.Object
+  sealed trait globals extends StObject
+  inline def globals: globals = "globals".asInstanceOf[globals]
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait parser extends StObject
+  inline def parser: parser = "parser".asInstanceOf[parser]
   
   @js.native
-  sealed trait source extends js.Object
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait speed extends js.Object
+  sealed trait source extends StObject
+  inline def source: source = "source".asInstanceOf[source]
   
   @js.native
-  sealed trait umd extends js.Object
+  sealed trait speed extends StObject
+  inline def speed: speed = "speed".asInstanceOf[speed]
   
-  @scala.inline
-  def amd: amd = "amd".asInstanceOf[amd]
-  @scala.inline
-  def bare: bare = "bare".asInstanceOf[bare]
-  @scala.inline
-  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  @scala.inline
-  def globals: globals = "globals".asInstanceOf[globals]
-  @scala.inline
-  def parser: parser = "parser".asInstanceOf[parser]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def source: source = "source".asInstanceOf[source]
-  @scala.inline
-  def speed: speed = "speed".asInstanceOf[speed]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
+  @js.native
+  sealed trait umd extends StObject
+  inline def umd: umd = "umd".asInstanceOf[umd]
 }
-

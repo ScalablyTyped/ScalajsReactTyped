@@ -1,20 +1,28 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateParam extends js.Object {
+trait DateParam extends StObject {
+  
   var date: js.Date
+  
   var withMillis: js.UndefOr[Boolean] = js.undefined
 }
-
 object DateParam {
-  @scala.inline
-  def apply(date: js.Date, withMillis: js.UndefOr[Boolean] = js.undefined): DateParam = {
+  
+  inline def apply(date: js.Date): DateParam = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
-    if (!js.isUndefined(withMillis)) __obj.updateDynamic("withMillis")(withMillis.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateParam]
   }
+  
+  extension [Self <: DateParam](x: Self) {
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setWithMillis(value: Boolean): Self = StObject.set(x, "withMillis", value.asInstanceOf[js.Any])
+    
+    inline def setWithMillisUndefined: Self = StObject.set(x, "withMillis", js.undefined)
+  }
 }
-

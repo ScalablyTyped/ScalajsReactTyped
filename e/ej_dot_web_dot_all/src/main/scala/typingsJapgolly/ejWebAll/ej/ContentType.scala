@@ -1,52 +1,42 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentType extends js.Object
-
+sealed trait ContentType extends StObject
 @JSGlobal("ej.ContentType")
 @js.native
-object ContentType extends js.Object {
+object ContentType extends StObject {
+  
   //Supports to display  image for both ends of the button
   @js.native
-  sealed trait ImageBoth extends ContentType
+  sealed trait ImageBoth
+    extends StObject
+       with ContentType
   
   //To display the image only in button
   @js.native
-  sealed trait ImageOnly extends ContentType
+  sealed trait ImageOnly
+    extends StObject
+       with ContentType
   
   //Supports to display  image with both ends of the text
   @js.native
-  sealed trait ImageTextImage extends ContentType
+  sealed trait ImageTextImage
+    extends StObject
+       with ContentType
   
   //Supports to display image with the text content
   @js.native
-  sealed trait TextAndImage extends ContentType
+  sealed trait TextAndImage
+    extends StObject
+       with ContentType
   
   //To display the text content only in button
   @js.native
-  sealed trait TextOnly extends ContentType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
-  /* 2 */ @js.native
-  object ImageBoth extends TopLevel[ImageBoth with Double]
-  
-  /* 1 */ @js.native
-  object ImageOnly extends TopLevel[ImageOnly with Double]
-  
-  /* 4 */ @js.native
-  object ImageTextImage extends TopLevel[ImageTextImage with Double]
-  
-  /* 3 */ @js.native
-  object TextAndImage extends TopLevel[TextAndImage with Double]
-  
-  /* 0 */ @js.native
-  object TextOnly extends TopLevel[TextOnly with Double]
-  
+  sealed trait TextOnly
+    extends StObject
+       with ContentType
 }
-

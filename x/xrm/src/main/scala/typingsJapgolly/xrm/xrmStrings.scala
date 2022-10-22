@@ -18,6 +18,7 @@ import typingsJapgolly.xrm.XrmEnum.EntitySaveMode
 import typingsJapgolly.xrm.XrmEnum.FormNotificationLevel
 import typingsJapgolly.xrm.XrmEnum.IntegerAttributeFormat
 import typingsJapgolly.xrm.XrmEnum.NavBarDisplay
+import typingsJapgolly.xrm.XrmEnum.OpenSearchResultMode
 import typingsJapgolly.xrm.XrmEnum.OptionSetAttributeFormat
 import typingsJapgolly.xrm.XrmEnum.ProcessStatus
 import typingsJapgolly.xrm.XrmEnum.ReportAction
@@ -27,527 +28,570 @@ import typingsJapgolly.xrm.XrmEnum.StandardControlType
 import typingsJapgolly.xrm.XrmEnum.StringAttributeFormat
 import typingsJapgolly.xrm.XrmEnum.SubmitMode
 import typingsJapgolly.xrm.XrmEnum.Theme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xrmStrings {
+  
+  @js.native
+  sealed trait default
+    extends StObject
+       with Theme
+       with typingsJapgolly.xrm.Xrm.Theme
+  inline def default: default = "default".asInstanceOf[default]
+  
   @js.native
   sealed trait ERROR
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typingsJapgolly.xrm.Xrm.FormNotificationLevel
        with NotificationLevel
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait INFO
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typingsJapgolly.xrm.Xrm.FormNotificationLevel
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait MaxChildIncidentNumber extends AdvancedConfigSettingOption
+  sealed trait Inline
+    extends StObject
+       with OpenSearchResultMode
+  inline def Inline: Inline = "Inline".asInstanceOf[Inline]
   
   @js.native
-  sealed trait MaxIncidentMergeNumber extends AdvancedConfigSettingOption
+  sealed trait MaxChildIncidentNumber
+    extends StObject
+       with AdvancedConfigSettingOption
+  inline def MaxChildIncidentNumber: MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[MaxChildIncidentNumber]
+  
+  @js.native
+  sealed trait MaxIncidentMergeNumber
+    extends StObject
+       with AdvancedConfigSettingOption
+  inline def MaxIncidentMergeNumber: MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[MaxIncidentMergeNumber]
   
   @js.native
   sealed trait Mobile
-    extends Client
+    extends StObject
+       with Client
        with typingsJapgolly.xrm.Xrm.Client
+  inline def Mobile: Mobile = "Mobile".asInstanceOf[Mobile]
   
   @js.native
   sealed trait Next
-    extends StageChangeDirection
+    extends StObject
+       with StageChangeDirection
        with typingsJapgolly.xrm.Xrm.ProcessFlow.StageChangeDirection
+  inline def Next: Next = "Next".asInstanceOf[Next]
   
   @js.native
   sealed trait Office12Blue
-    extends Theme
+    extends StObject
+       with Theme
        with typingsJapgolly.xrm.Xrm.Theme
+  inline def Office12Blue: Office12Blue = "Office12Blue".asInstanceOf[Office12Blue]
   
   @js.native
   sealed trait Office14Silver
-    extends Theme
+    extends StObject
+       with Theme
        with typingsJapgolly.xrm.Xrm.Theme
+  inline def Office14Silver: Office14Silver = "Office14Silver".asInstanceOf[Office14Silver]
   
   @js.native
   sealed trait Offline
-    extends ClientState
+    extends StObject
+       with ClientState
        with typingsJapgolly.xrm.Xrm.ClientState
+  inline def Offline: Offline = "Offline".asInstanceOf[Offline]
   
   @js.native
   sealed trait Online
-    extends ClientState
+    extends StObject
+       with ClientState
        with typingsJapgolly.xrm.Xrm.ClientState
+  inline def Online: Online = "Online".asInstanceOf[Online]
   
   @js.native
   sealed trait Outlook
-    extends Client
+    extends StObject
+       with Client
        with typingsJapgolly.xrm.Xrm.Client
+  inline def Outlook: Outlook = "Outlook".asInstanceOf[Outlook]
+  
+  @js.native
+  sealed trait Percentsign extends StObject
+  inline def Percentsign: Percentsign = "%".asInstanceOf[Percentsign]
+  
+  @js.native
+  sealed trait Popup
+    extends StObject
+       with OpenSearchResultMode
+  inline def Popup: Popup = "Popup".asInstanceOf[Popup]
   
   @js.native
   sealed trait Previous
-    extends StageChangeDirection
+    extends StObject
+       with StageChangeDirection
        with typingsJapgolly.xrm.Xrm.ProcessFlow.StageChangeDirection
+  inline def Previous: Previous = "Previous".asInstanceOf[Previous]
   
   @js.native
-  sealed trait RECOMMENDATION extends NotificationLevel
+  sealed trait RECOMMENDATION
+    extends StObject
+       with NotificationLevel
+  inline def RECOMMENDATION: RECOMMENDATION = "RECOMMENDATION".asInstanceOf[RECOMMENDATION]
   
   @js.native
   sealed trait UnifiedServiceDesk
-    extends Client
+    extends StObject
+       with Client
        with typingsJapgolly.xrm.Xrm.Client
+  inline def UnifiedServiceDesk: UnifiedServiceDesk = "UnifiedServiceDesk".asInstanceOf[UnifiedServiceDesk]
   
   @js.native
   sealed trait WARNING
-    extends FormNotificationLevel
+    extends StObject
+       with FormNotificationLevel
        with typingsJapgolly.xrm.Xrm.FormNotificationLevel
+  inline def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
   
   @js.native
   sealed trait Web
-    extends Client
+    extends StObject
+       with Client
        with typingsJapgolly.xrm.Xrm.Client
+  inline def Web: Web = "Web".asInstanceOf[Web]
   
   @js.native
   sealed trait aborted
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typingsJapgolly.xrm.Xrm.ProcessFlow.ProcessStatus
+  inline def aborted: aborted = "aborted".asInstanceOf[aborted]
   
   @js.native
   sealed trait active
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typingsJapgolly.xrm.Xrm.ProcessFlow.ProcessStatus
        with StageStatus
        with typingsJapgolly.xrm.Xrm.ProcessFlow.StageStatus
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait always
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typingsJapgolly.xrm.Xrm.SubmitMode
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait audio
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait boolean
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait collapsed
-    extends DisplayState
+    extends StObject
+       with DisplayState
        with typingsJapgolly.xrm.Xrm.DisplayState
+  inline def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  
+  @js.native
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
+  
+  @js.native
+  sealed trait dashboard extends StObject
+  inline def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   
   @js.native
   sealed trait date
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with DateAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.DateAttributeFormat
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait datetime
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
        with DateAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.DateAttributeFormat
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
   sealed trait decimal
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
-  
-  @js.native
-  sealed trait default
-    extends Theme
-       with typingsJapgolly.xrm.Xrm.Theme
+  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
   sealed trait dirty
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typingsJapgolly.xrm.Xrm.SubmitMode
+  inline def dirty: dirty = "dirty".asInstanceOf[dirty]
   
   @js.native
   sealed trait double
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
   sealed trait duration
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with IntegerAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.IntegerAttributeFormat
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
   sealed trait email
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait entity
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typingsJapgolly.xrm.Xrm.Url.NavBarDisplay
+  inline def entity: entity = "entity".asInstanceOf[entity]
+  
+  @js.native
+  sealed trait entitylist extends StObject
+  inline def entitylist: entitylist = "entitylist".asInstanceOf[entitylist]
+  
+  @js.native
+  sealed trait entityrecord extends StObject
+  inline def entityrecord: entityrecord = "entityrecord".asInstanceOf[entityrecord]
   
   @js.native
   sealed trait expanded
-    extends DisplayState
+    extends StObject
+       with DisplayState
        with typingsJapgolly.xrm.Xrm.DisplayState
+  inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
   sealed trait `false`
-    extends CmdBarDisplay
+    extends StObject
+       with CmdBarDisplay
        with typingsJapgolly.xrm.Xrm.Url.CmdBarDisplay
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait filter
-    extends ReportAction
+    extends StObject
+       with ReportAction
        with typingsJapgolly.xrm.Xrm.Url.ReportAction
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
   sealed trait finished
-    extends ProcessStatus
+    extends StObject
+       with ProcessStatus
        with typingsJapgolly.xrm.Xrm.ProcessFlow.ProcessStatus
+  inline def finished: finished = "finished".asInstanceOf[finished]
   
   @js.native
   sealed trait iframe
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def iframe: iframe = "iframe".asInstanceOf[iframe]
   
   @js.native
   sealed trait image
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
   sealed trait inactive
-    extends StageStatus
+    extends StObject
+       with StageStatus
        with typingsJapgolly.xrm.Xrm.ProcessFlow.StageStatus
+  inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
   sealed trait integer
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait kbsearch
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def kbsearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
   
   @js.native
   sealed trait language
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with OptionSetAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.OptionSetAttributeFormat
+  inline def language: language = "language".asInstanceOf[language]
   
   @js.native
   sealed trait lookup
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
   sealed trait memo
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def memo: memo = "memo".asInstanceOf[memo]
   
   @js.native
   sealed trait money
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def money: money = "money".asInstanceOf[money]
   
   @js.native
-  sealed trait multioptionset
-    extends AttributeType
+  sealed trait multiselectoptionset
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
-  
-  @js.native
-  sealed trait multiselectoptionset extends StandardControlType
+       with StandardControlType
+  inline def multiselectoptionset: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
   
   @js.native
   sealed trait never
-    extends SubmitMode
+    extends StObject
+       with SubmitMode
        with typingsJapgolly.xrm.Xrm.SubmitMode
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait none
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with AttributeRequirementLevel
        with IntegerAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.IntegerAttributeFormat
        with RequirementLevel
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait notes
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def notes: notes = "notes".asInstanceOf[notes]
   
   @js.native
   sealed trait off
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typingsJapgolly.xrm.Xrm.Url.NavBarDisplay
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
   sealed trait on
-    extends NavBarDisplay
+    extends StObject
+       with NavBarDisplay
        with typingsJapgolly.xrm.Xrm.Url.NavBarDisplay
+  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
   sealed trait optionset
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
        with StandardControlType
        with _ControlType
+  inline def optionset: optionset = "optionset".asInstanceOf[optionset]
   
   @js.native
   sealed trait phone
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait quickform extends StandardControlType
+  sealed trait px extends StObject
+  inline def px: px = "px".asInstanceOf[px]
+  
+  @js.native
+  sealed trait quickform
+    extends StObject
+       with StandardControlType
+  inline def quickform: quickform = "quickform".asInstanceOf[quickform]
   
   @js.native
   sealed trait recommended
-    extends AttributeRequirementLevel
+    extends StObject
+       with AttributeRequirementLevel
        with RequirementLevel
+  inline def recommended: recommended = "recommended".asInstanceOf[recommended]
   
   @js.native
   sealed trait required
-    extends AttributeRequirementLevel
+    extends StObject
+       with AttributeRequirementLevel
        with RequirementLevel
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait run
-    extends ReportAction
+    extends StObject
+       with ReportAction
        with typingsJapgolly.xrm.Xrm.Url.ReportAction
+  inline def run: run = "run".asInstanceOf[run]
   
   @js.native
   sealed trait saveandclose
-    extends EntitySaveMode
+    extends StObject
+       with EntitySaveMode
        with typingsJapgolly.xrm.Xrm.EntitySaveMode
+  inline def saveandclose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
   
   @js.native
   sealed trait saveandnew
-    extends EntitySaveMode
+    extends StObject
+       with EntitySaveMode
        with typingsJapgolly.xrm.Xrm.EntitySaveMode
+  inline def saveandnew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
+  
+  @js.native
+  sealed trait savedquery extends StObject
+  inline def savedquery: savedquery = "savedquery".asInstanceOf[savedquery]
   
   @js.native
   sealed trait standard
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait string
-    extends AttributeType
+    extends StObject
+       with AttributeType
        with typingsJapgolly.xrm.Xrm.Attributes.AttributeType
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait subgrid
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
   
   @js.native
   sealed trait text
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait textarea
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
   sealed trait tickersymbol
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def tickersymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
   
   @js.native
   sealed trait timelinewall
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def timelinewall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
   
   @js.native
   sealed trait timercontrol
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
+  inline def timercontrol: timercontrol = "timercontrol".asInstanceOf[timercontrol]
   
   @js.native
   sealed trait timezone
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with OptionSetAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.OptionSetAttributeFormat
+  inline def timezone: timezone = "timezone".asInstanceOf[timezone]
   
   @js.native
   sealed trait `true`
-    extends CmdBarDisplay
+    extends StObject
+       with CmdBarDisplay
        with typingsJapgolly.xrm.Xrm.Url.CmdBarDisplay
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
   sealed trait url
-    extends AttributeFormat
+    extends StObject
+       with AttributeFormat
        with StringAttributeFormat
        with typingsJapgolly.xrm.Xrm.Attributes.StringAttributeFormat
+  inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait userquery extends StObject
+  inline def userquery: userquery = "userquery".asInstanceOf[userquery]
   
   @js.native
   sealed trait video
-    extends DevicePickFileType
+    extends StObject
+       with DevicePickFileType
        with PickFileTypes
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait webresource
-    extends StandardControlType
+    extends StObject
+       with StandardControlType
        with _ControlType
-  
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
-  @scala.inline
-  def MaxChildIncidentNumber: MaxChildIncidentNumber = "MaxChildIncidentNumber".asInstanceOf[MaxChildIncidentNumber]
-  @scala.inline
-  def MaxIncidentMergeNumber: MaxIncidentMergeNumber = "MaxIncidentMergeNumber".asInstanceOf[MaxIncidentMergeNumber]
-  @scala.inline
-  def Mobile: Mobile = "Mobile".asInstanceOf[Mobile]
-  @scala.inline
-  def Next: Next = "Next".asInstanceOf[Next]
-  @scala.inline
-  def Office12Blue: Office12Blue = "Office12Blue".asInstanceOf[Office12Blue]
-  @scala.inline
-  def Office14Silver: Office14Silver = "Office14Silver".asInstanceOf[Office14Silver]
-  @scala.inline
-  def Offline: Offline = "Offline".asInstanceOf[Offline]
-  @scala.inline
-  def Online: Online = "Online".asInstanceOf[Online]
-  @scala.inline
-  def Outlook: Outlook = "Outlook".asInstanceOf[Outlook]
-  @scala.inline
-  def Previous: Previous = "Previous".asInstanceOf[Previous]
-  @scala.inline
-  def RECOMMENDATION: RECOMMENDATION = "RECOMMENDATION".asInstanceOf[RECOMMENDATION]
-  @scala.inline
-  def UnifiedServiceDesk: UnifiedServiceDesk = "UnifiedServiceDesk".asInstanceOf[UnifiedServiceDesk]
-  @scala.inline
-  def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
-  @scala.inline
-  def Web: Web = "Web".asInstanceOf[Web]
-  @scala.inline
-  def aborted: aborted = "aborted".asInstanceOf[aborted]
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def dirty: dirty = "dirty".asInstanceOf[dirty]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def entity: entity = "entity".asInstanceOf[entity]
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def finished: finished = "finished".asInstanceOf[finished]
-  @scala.inline
-  def iframe: iframe = "iframe".asInstanceOf[iframe]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def kbsearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def memo: memo = "memo".asInstanceOf[memo]
-  @scala.inline
-  def money: money = "money".asInstanceOf[money]
-  @scala.inline
-  def multioptionset: multioptionset = "multioptionset".asInstanceOf[multioptionset]
-  @scala.inline
-  def multiselectoptionset: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def notes: notes = "notes".asInstanceOf[notes]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def optionset: optionset = "optionset".asInstanceOf[optionset]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def quickform: quickform = "quickform".asInstanceOf[quickform]
-  @scala.inline
-  def recommended: recommended = "recommended".asInstanceOf[recommended]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def saveandclose: saveandclose = "saveandclose".asInstanceOf[saveandclose]
-  @scala.inline
-  def saveandnew: saveandnew = "saveandnew".asInstanceOf[saveandnew]
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def subgrid: subgrid = "subgrid".asInstanceOf[subgrid]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def tickersymbol: tickersymbol = "tickersymbol".asInstanceOf[tickersymbol]
-  @scala.inline
-  def timelinewall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
-  @scala.inline
-  def timercontrol: timercontrol = "timercontrol".asInstanceOf[timercontrol]
-  @scala.inline
-  def timezone: timezone = "timezone".asInstanceOf[timezone]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def webresource: webresource = "webresource".asInstanceOf[webresource]
+  inline def webresource: webresource = "webresource".asInstanceOf[webresource]
 }
-

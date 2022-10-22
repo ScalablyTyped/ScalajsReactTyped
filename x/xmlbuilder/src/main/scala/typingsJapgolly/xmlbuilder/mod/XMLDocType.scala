@@ -1,45 +1,27 @@
 package typingsJapgolly.xmlbuilder.mod
 
-import typingsJapgolly.xmlbuilder.AnonNData
-import typingsJapgolly.xmlbuilder.AnonPubID
+import typingsJapgolly.xmlbuilder.anon.NData
+import typingsJapgolly.xmlbuilder.anon.PubID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the document type definition.
   */
 @JSImport("xmlbuilder", "XMLDocType")
 @js.native
-class XMLDocType () extends js.Object {
-  /** 
-    * Child nodes 
-    */
-  var children: js.Array[XMLNode] = js.native
-  /** 
-    * Parent element node 
-    */
-  var parent: XMLElement = js.native
-  /** 
-    * Public identifier of the DTD 
-    */
-  var pubID: String = js.native
-  /** 
-    * System identifier of the DTD 
-    */
-  var sysID: String = js.native
-  /** 
-    * Type of the node 
-    */
-  var `type`: NodeType_ = js.native
+open class XMLDocType () extends StObject {
+  
   def att(elementName: String, attributeName: String, attributeType: String, defaultValueType: String): XMLDocType = js.native
   def att(
     elementName: String,
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
-    defaultValue: js.Any
+    defaultValue: Any
   ): XMLDocType = js.native
+  
   /**
     * Creates an attribute declaration.
     * 
@@ -61,8 +43,9 @@ class XMLDocType () extends js.Object {
     attributeName: String,
     attributeType: String,
     defaultValueType: String,
-    defaultValue: js.Any
+    defaultValue: Any
   ): XMLDocType = js.native
+  
   /**
     * Creates a new CDATA node and appends it to the list of child nodes.
     * 
@@ -73,7 +56,15 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def cdata(value: String): XMLDocType = js.native
-  def com(value: String): XMLDocType = js.native
+  
+  /** 
+    * Child nodes 
+    */
+  var children: js.Array[XMLNode] = js.native
+  
+  @JSName("com")
+  def com_(value: String): XMLDocType = js.native
+  
   /**
     * Creates a new comment child and appends it to the list of child
     * nodes.
@@ -85,16 +76,21 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def comment(value: String): XMLDocType = js.native
+  
   def dat(value: String): XMLDocType = js.native
+  
   def doc(): XMLDocument = js.native
+  
   /**
     * Returns the document node.
     * 
     * _Alias:_ `doc`
     */
   def document(): XMLDocument = js.native
+  
   def ele(name: String): XMLDocType = js.native
   def ele(name: String, value: js.Object): XMLDocType = js.native
+  
   /**
     * Creates an element type declaration.
     * 
@@ -107,6 +103,7 @@ class XMLDocType () extends js.Object {
     */
   def element(name: String): XMLDocType = js.native
   def element(name: String, value: js.Object): XMLDocType = js.native
+  
   /**
     * Converts the XML document to string.
     * 
@@ -115,8 +112,10 @@ class XMLDocType () extends js.Object {
   def end(): String = js.native
   def end(options: XMLToStringOptions): String = js.native
   def end(options: XMLWriter): String = js.native
+  
   def ent(name: String, value: String): XMLDocType = js.native
-  def ent(name: String, value: AnonNData): XMLDocType = js.native
+  def ent(name: String, value: NData): XMLDocType = js.native
+  
   /**
     * Creates a general entity declaration.
     * 
@@ -128,11 +127,13 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def entity(name: String, value: String): XMLDocType = js.native
-  def entity(name: String, value: AnonNData): XMLDocType = js.native
-  def ins(array: js.Array[_]): XMLDocType = js.native
+  def entity(name: String, value: NData): XMLDocType = js.native
+  
+  def ins(array: js.Array[Any]): XMLDocType = js.native
   def ins(obj: js.Object): XMLDocType = js.native
-  def ins(target: String, value: js.Any): XMLDocType = js.native
-  def instruction(array: js.Array[_]): XMLDocType = js.native
+  def ins(target: String, value: Any): XMLDocType = js.native
+  
+  def instruction(array: js.Array[Any]): XMLDocType = js.native
   def instruction(obj: js.Object): XMLDocType = js.native
   /**
     * Creates a new processing instruction node and appends it to the list 
@@ -145,8 +146,10 @@ class XMLDocType () extends js.Object {
     * 
     * @returns the DOCTYPE node
     */
-  def instruction(target: String, value: js.Any): XMLDocType = js.native
-  def not(name: String, value: AnonPubID): XMLDocType = js.native
+  def instruction(target: String, value: Any): XMLDocType = js.native
+  
+  def not(name: String, value: PubID): XMLDocType = js.native
+  
   /**
     * Creates a notation declaration.
     * 
@@ -157,7 +160,8 @@ class XMLDocType () extends js.Object {
     * 
     * @returns the DOCTYPE node
     */
-  def notation(name: String, value: AnonPubID): XMLDocType = js.native
+  def notation(name: String, value: PubID): XMLDocType = js.native
+  
   /**
     * Creates a parameter entity declaration.
     * 
@@ -169,16 +173,39 @@ class XMLDocType () extends js.Object {
     * @returns the DOCTYPE node
     */
   def pEntity(name: String, value: String): XMLDocType = js.native
-  def pEntity(name: String, value: AnonPubID): XMLDocType = js.native
+  def pEntity(name: String, value: PubID): XMLDocType = js.native
+  
+  /** 
+    * Parent element node 
+    */
+  var parent: XMLElement = js.native
+  
   def pent(name: String, value: String): XMLDocType = js.native
-  def pent(name: String, value: AnonPubID): XMLDocType = js.native
+  def pent(name: String, value: PubID): XMLDocType = js.native
+  
+  /** 
+    * Public identifier of the DTD 
+    */
+  var pubID: String = js.native
+  
   /**
     * Returns the root element node.
     * 
     * _Alias:_ `up`
     */
   def root(): XMLElement = js.native
+  
+  /** 
+    * System identifier of the DTD 
+    */
+  var sysID: String = js.native
+  
   def toString(options: XMLToStringOptions): String = js.native
+  
+  /** 
+    * Type of the node 
+    */
+  var `type`: NodeType_ = js.native
+  
   def up(): XMLElement = js.native
 }
-

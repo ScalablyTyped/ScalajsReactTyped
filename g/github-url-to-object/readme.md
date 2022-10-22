@@ -10,10 +10,10 @@ Extract user, repo, and other interesting properties from GitHub URLs
 | ------------------ | :-------------: |
 | Full name          | github-url-to-object |
 | Keywords           | github, url, repo |
-| # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 835775 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 150158.66666666666 |
+| # stars            | 83.0 |
 
 ## Links
 - [Homepage](https://github.com/zeke/github-url-to-object#readme)

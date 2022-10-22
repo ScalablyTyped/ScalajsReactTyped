@@ -1,51 +1,44 @@
 package typingsJapgolly.primereact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.primereact.chartChartMod.ChartProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Chart {
-  def apply(
-    className: String = null,
-    data: js.Object = null,
-    height: String = null,
-    id: String = null,
-    options: js.Object = null,
-    style: js.Object = null,
-    `type`: String = null,
-    width: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ChartProps, typingsJapgolly.primereact.chartMod.Chart, Unit, ChartProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.primereact.chartChartMod.ChartProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.primereact.chartMod.Chart](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.primereact.chartChartMod.ChartProps])(children: _*)
-  }
-  @JSImport("primereact/chart", "Chart")
+  @JSImport("primereact", "Chart")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.primereact.mod.Chart] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Object): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def height(value: String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def options(value: js.Object): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def plugins(value: js.Array[Any]): this.type = set("plugins", value.asInstanceOf[js.Any])
+    
+    inline def pluginsVarargs(value: Any*): this.type = set("plugins", js.Array(value*))
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def width(value: String): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Chart.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ChartProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

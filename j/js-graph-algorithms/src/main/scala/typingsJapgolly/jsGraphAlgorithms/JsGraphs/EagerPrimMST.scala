@@ -1,16 +1,37 @@
 package typingsJapgolly.jsGraphAlgorithms.JsGraphs
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JsGraphs.EagerPrimMST")
-@js.native
-class EagerPrimMST protected () extends js.Object {
-  def this(G: WeightedGraph) = this()
-  var marked: js.Any = js.native
-  var mst: js.Array[Edge] = js.native
-  var pq: js.Any = js.native
-  def visit(G: WeightedGraph, v: Double): Unit = js.native
+trait EagerPrimMST extends StObject {
+  
+  /* private */ var marked: Any
+  
+  var mst: js.Array[Edge]
+  
+  /* private */ var pq: Any
+  
+  def visit(G: WeightedGraph, v: Double): Unit
 }
-
+object EagerPrimMST {
+  
+  inline def apply(marked: Any, mst: js.Array[Edge], pq: Any, visit: (WeightedGraph, Double) => Callback): EagerPrimMST = {
+    val __obj = js.Dynamic.literal(marked = marked.asInstanceOf[js.Any], mst = mst.asInstanceOf[js.Any], pq = pq.asInstanceOf[js.Any], visit = js.Any.fromFunction2((t0: WeightedGraph, t1: Double) => (visit(t0, t1)).runNow()))
+    __obj.asInstanceOf[EagerPrimMST]
+  }
+  
+  extension [Self <: EagerPrimMST](x: Self) {
+    
+    inline def setMarked(value: Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    
+    inline def setMst(value: js.Array[Edge]): Self = StObject.set(x, "mst", value.asInstanceOf[js.Any])
+    
+    inline def setMstVarargs(value: Edge*): Self = StObject.set(x, "mst", js.Array(value*))
+    
+    inline def setPq(value: Any): Self = StObject.set(x, "pq", value.asInstanceOf[js.Any])
+    
+    inline def setVisit(value: (WeightedGraph, Double) => Callback): Self = StObject.set(x, "visit", js.Any.fromFunction2((t0: WeightedGraph, t1: Double) => (value(t0, t1)).runNow()))
+  }
+}

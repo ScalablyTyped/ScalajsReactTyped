@@ -1,13 +1,13 @@
 package typingsJapgolly.azureSb.mod
 
-import typingsJapgolly.azureSb.notificationhubserviceMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure-sb", "NotificationHubService")
 @js.native
-class NotificationHubService protected () extends ^ {
+open class NotificationHubService protected ()
+  extends typingsJapgolly.azureSb.libNotificationhubserviceMod.^ {
   def this(
     hubName: String,
     endpointOrConnectionString: String,
@@ -15,4 +15,3 @@ class NotificationHubService protected () extends ^ {
     sharedAccessKeyValue: String
   ) = this()
 }
-

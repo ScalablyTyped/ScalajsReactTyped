@@ -1,24 +1,31 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import typingsJapgolly.reactNativeMaterialUi.AnonContentContainer
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.ContentContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogContentProps extends js.Object {
+trait DialogContentProps extends StObject {
+  
   var children: Element
-  var style: js.UndefOr[AnonContentContainer] = js.undefined
+  
+  var style: js.UndefOr[ContentContainer] = js.undefined
 }
-
 object DialogContentProps {
-  @scala.inline
-  def apply(children: VdomElement, style: AnonContentContainer = null): DialogContentProps = {
-    val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawElement.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+  
+  inline def apply(children: VdomElement): DialogContentProps = {
+    val __obj = js.Dynamic.literal(children = children.rawElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogContentProps]
   }
+  
+  extension [Self <: DialogContentProps](x: Self) {
+    
+    inline def setChildren(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: ContentContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

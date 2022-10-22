@@ -1,17 +1,17 @@
 package typingsJapgolly.bull.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.bull.bullStrings.bclient
 import typingsJapgolly.bull.bullStrings.client
 import typingsJapgolly.bull.bullStrings.subscriber
+import typingsJapgolly.ioredis.builtRedisRedisOptionsMod.RedisOptions
 import typingsJapgolly.ioredis.mod.Cluster
 import typingsJapgolly.ioredis.mod.Redis
-import typingsJapgolly.ioredis.mod.RedisOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueueOptions extends js.Object {
+trait QueueOptions extends StObject {
+  
   /**
     * When specified, the `Queue` will use this function to create new `ioredis` client connections.
     * This is useful if you want to re-use connections or connect to a Redis cluster.
@@ -23,37 +23,57 @@ trait QueueOptions extends js.Object {
       Redis | Cluster
     ]
   ] = js.undefined
+  
   var defaultJobOptions: js.UndefOr[JobOptions] = js.undefined
+  
   var limiter: js.UndefOr[RateLimiter] = js.undefined
+  
   /**
     * Prefix to use for all redis keys
     */
   var prefix: js.UndefOr[String] = js.undefined
+  
   /**
-    * Options passed directly to the `ioredis` constructor
+    * Options passed into the `ioredis` constructor's `options` parameter.
+    * `connectionName` is overwritten with `Queue.clientName()`. other properties are copied
     */
-  var redis: js.UndefOr[RedisOptions | String] = js.undefined
+  var redis: js.UndefOr[RedisOptions] = js.undefined
+  
   var settings: js.UndefOr[AdvancedSettings] = js.undefined
 }
-
 object QueueOptions {
-  @scala.inline
-  def apply(
-    createClient: (/* type */ client | subscriber | bclient, /* redisOpts */ js.UndefOr[RedisOptions]) => CallbackTo[Redis | Cluster] = null,
-    defaultJobOptions: JobOptions = null,
-    limiter: RateLimiter = null,
-    prefix: String = null,
-    redis: RedisOptions | String = null,
-    settings: AdvancedSettings = null
-  ): QueueOptions = {
+  
+  inline def apply(): QueueOptions = {
     val __obj = js.Dynamic.literal()
-    if (createClient != null) __obj.updateDynamic("createClient")(js.Any.fromFunction2((t0: /* type */ typingsJapgolly.bull.bullStrings.client | typingsJapgolly.bull.bullStrings.subscriber | typingsJapgolly.bull.bullStrings.bclient, t1: /* redisOpts */ js.UndefOr[typingsJapgolly.ioredis.mod.RedisOptions]) => createClient(t0, t1).runNow()))
-    if (defaultJobOptions != null) __obj.updateDynamic("defaultJobOptions")(defaultJobOptions.asInstanceOf[js.Any])
-    if (limiter != null) __obj.updateDynamic("limiter")(limiter.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (redis != null) __obj.updateDynamic("redis")(redis.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueueOptions]
   }
+  
+  extension [Self <: QueueOptions](x: Self) {
+    
+    inline def setCreateClient(
+      value: (/* type */ client | subscriber | bclient, /* redisOpts */ js.UndefOr[RedisOptions]) => Redis | Cluster
+    ): Self = StObject.set(x, "createClient", js.Any.fromFunction2(value))
+    
+    inline def setCreateClientUndefined: Self = StObject.set(x, "createClient", js.undefined)
+    
+    inline def setDefaultJobOptions(value: JobOptions): Self = StObject.set(x, "defaultJobOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultJobOptionsUndefined: Self = StObject.set(x, "defaultJobOptions", js.undefined)
+    
+    inline def setLimiter(value: RateLimiter): Self = StObject.set(x, "limiter", value.asInstanceOf[js.Any])
+    
+    inline def setLimiterUndefined: Self = StObject.set(x, "limiter", js.undefined)
+    
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
+    inline def setRedis(value: RedisOptions): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+    
+    inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
+    
+    inline def setSettings(value: AdvancedSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+  }
 }
-

@@ -1,11 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser
 
-import typingsJapgolly.firefoxWebextBrowser.AnonCaseSensitive
-import typingsJapgolly.firefoxWebextBrowser.AnonCount
-import typingsJapgolly.firefoxWebextBrowser.AnonNoScroll
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Use the `browser.find` API to interact with the browser's `Find` interface.
@@ -14,28 +11,89 @@ import scala.scalajs.js.annotation._
   *
   * Not allowed in: Content scripts, Devtools pages
   */
-@JSGlobal("browser.find")
-@js.native
-object find extends js.Object {
-  /* find functions */
-  /**
-    * Search for text in document and store found ranges in array, in document order.
-    * @param queryphrase The string to search for.
-    * @param [params] Search parameters.
-    */
-  def find(queryphrase: String): js.Promise[AnonCount] = js.native
-  def find(queryphrase: String, params: AnonCaseSensitive): js.Promise[AnonCount] = js.native
-  /**
-    * Highlight a range
-    * @param [params] highlightResults parameters
-    */
-  def highlightResults(): Unit = js.native
-  def highlightResults(params: AnonNoScroll): Unit = js.native
-  /**
-    * Remove all highlighting from previous searches.
-    * @param [tabId] Tab to highlight. Defaults to the active tab.
-    */
-  def removeHighlighting(): Unit = js.native
-  def removeHighlighting(tabId: Double): Unit = js.native
+object find {
+  
+  /** Search parameters. */
+  trait FindParams extends StObject {
+    
+    /** Find only ranges with case sensitive match. */
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
+    
+    /** Find only ranges that match entire word. */
+    var entireWord: js.UndefOr[Boolean] = js.undefined
+    
+    /** Return range data which provides range data in a serializable form. */
+    var includeRangeData: js.UndefOr[Boolean] = js.undefined
+    
+    /** Return rectangle data which describes visual position of search results. */
+    var includeRectData: js.UndefOr[Boolean] = js.undefined
+    
+    /** Tab to query. Defaults to the active tab. */
+    var tabId: js.UndefOr[Double] = js.undefined
+  }
+  object FindParams {
+    
+    inline def apply(): FindParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[FindParams]
+    }
+    
+    extension [Self <: FindParams](x: Self) {
+      
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      
+      inline def setEntireWord(value: Boolean): Self = StObject.set(x, "entireWord", value.asInstanceOf[js.Any])
+      
+      inline def setEntireWordUndefined: Self = StObject.set(x, "entireWord", js.undefined)
+      
+      inline def setIncludeRangeData(value: Boolean): Self = StObject.set(x, "includeRangeData", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeRangeDataUndefined: Self = StObject.set(x, "includeRangeData", js.undefined)
+      
+      inline def setIncludeRectData(value: Boolean): Self = StObject.set(x, "includeRectData", value.asInstanceOf[js.Any])
+      
+      inline def setIncludeRectDataUndefined: Self = StObject.set(x, "includeRectData", js.undefined)
+      
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+    }
+  }
+  
+  /** highlightResults parameters */
+  trait HighlightResultsParams extends StObject {
+    
+    /** Don't scroll to highlighted item. */
+    var noScroll: js.UndefOr[Boolean] = js.undefined
+    
+    /** Found range to be highlighted. Default highlights all ranges. */
+    var rangeIndex: js.UndefOr[Double] = js.undefined
+    
+    /** Tab to highlight. Defaults to the active tab. */
+    var tabId: js.UndefOr[Double] = js.undefined
+  }
+  object HighlightResultsParams {
+    
+    inline def apply(): HighlightResultsParams = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[HighlightResultsParams]
+    }
+    
+    extension [Self <: HighlightResultsParams](x: Self) {
+      
+      inline def setNoScroll(value: Boolean): Self = StObject.set(x, "noScroll", value.asInstanceOf[js.Any])
+      
+      inline def setNoScrollUndefined: Self = StObject.set(x, "noScroll", js.undefined)
+      
+      inline def setRangeIndex(value: Double): Self = StObject.set(x, "rangeIndex", value.asInstanceOf[js.Any])
+      
+      inline def setRangeIndexUndefined: Self = StObject.set(x, "rangeIndex", js.undefined)
+      
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      
+      inline def setTabIdUndefined: Self = StObject.set(x, "tabId", js.undefined)
+    }
+  }
 }
-

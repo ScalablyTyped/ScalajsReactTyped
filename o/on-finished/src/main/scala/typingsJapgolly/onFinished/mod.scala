@@ -2,23 +2,25 @@ package typingsJapgolly.onFinished
 
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.OutgoingMessage
-import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("on-finished", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(
+object mod {
+  
+  inline def apply(
     msg: IncomingMessage,
-    listener: js.Function2[/* err */ Error | Null, /* msg */ IncomingMessage, Unit]
-  ): IncomingMessage = js.native
-  def apply(
-    msg: OutgoingMessage,
-    listener: js.Function2[/* err */ Error | Null, /* msg */ OutgoingMessage, Unit]
-  ): OutgoingMessage = js.native
-  def isFinished(msg: IncomingMessage): Boolean = js.native
-  def isFinished(msg: OutgoingMessage): Boolean = js.native
+    listener: js.Function2[/* err */ js.Error | Null, /* msg */ IncomingMessage, Unit]
+  ): IncomingMessage = (^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[IncomingMessage]
+  inline def apply(
+    msg: OutgoingMessage[IncomingMessage],
+    listener: js.Function2[/* err */ js.Error | Null, /* msg */ OutgoingMessage[IncomingMessage], Unit]
+  ): OutgoingMessage[IncomingMessage] = (^.asInstanceOf[js.Dynamic].apply(msg.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[OutgoingMessage[IncomingMessage]]
+  
+  @JSImport("on-finished", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isFinished(msg: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinished")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFinished(msg: OutgoingMessage[IncomingMessage]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinished")(msg.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

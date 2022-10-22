@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFi
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiAccessStatus extends js.Object
-
+sealed trait WiFiAccessStatus extends StObject
 /** Used to report the results of an attempt to request access to a Wi-Fi adapter. */
 @JSGlobal("Windows.Devices.WiFi.WiFiAccessStatus")
 @js.native
-object WiFiAccessStatus extends js.Object {
+object WiFiAccessStatus extends StObject {
+  
   /** Access has been allowed. */
   @js.native
-  sealed trait allowed extends WiFiAccessStatus
+  sealed trait allowed
+    extends StObject
+       with WiFiAccessStatus
   
   /** Access has been denied by the system. */
   @js.native
-  sealed trait deniedBySystem extends WiFiAccessStatus
+  sealed trait deniedBySystem
+    extends StObject
+       with WiFiAccessStatus
   
   /** Access has been denied by the user, through the user interface. */
   @js.native
-  sealed trait deniedByUser extends WiFiAccessStatus
+  sealed trait deniedByUser
+    extends StObject
+       with WiFiAccessStatus
   
   /** The asynchronous request has not completed yet. */
   @js.native
-  sealed trait unspecified extends WiFiAccessStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiAccessStatus with Double] = js.native
-  /* 1 */ @js.native
-  object allowed extends TopLevel[allowed with Double]
-  
-  /* 3 */ @js.native
-  object deniedBySystem extends TopLevel[deniedBySystem with Double]
-  
-  /* 2 */ @js.native
-  object deniedByUser extends TopLevel[deniedByUser with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
-  
+  sealed trait unspecified
+    extends StObject
+       with WiFiAccessStatus
 }
-

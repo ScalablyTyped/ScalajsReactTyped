@@ -1,7 +1,7 @@
 
 # Scala.js typings for loadable__component
 
-Typings are for version 5.10
+Typings are for version 5.13
 
 ## Library description:
 React code splitting made easy.
@@ -10,10 +10,10 @@ React code splitting made easy.
 | ------------------ | :-------------: |
 | Full name          | @loadable/component |
 | Keywords           | react, ssr, webpack, code-splitting, react-router, server-side-rendering, dynamic-import, react-loadable, react-async-components |
-| # releases         | 22 |
-| # dependents       | 103 |
-| # downloads        | 3112858 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1920908.0 |
+| # stars            | 6675.0 |
 
 ## Links
 - [Homepage](https://github.com/gregberge/loadable-components#readme)

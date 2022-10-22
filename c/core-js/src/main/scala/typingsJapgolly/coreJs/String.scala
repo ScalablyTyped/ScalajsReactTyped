@@ -1,8 +1,8 @@
 package typingsJapgolly.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #############################################################################################
 // ECMAScript 7
@@ -18,19 +18,23 @@ import scala.scalajs.js.annotation._
 // Modules: core.string.escape-html
 // #############################################################################################
 @js.native
-trait String extends js.Object {
+trait String extends StObject {
+  
   def at(index: Double): java.lang.String = js.native
+  
   /**
     * Non-standard.
     */
   def escapeHTML(): java.lang.String = js.native
+  
   def padEnd(length: Double): java.lang.String = js.native
   def padEnd(length: Double, fillStr: java.lang.String): java.lang.String = js.native
+  
   def padStart(length: Double): java.lang.String = js.native
   def padStart(length: Double, fillStr: java.lang.String): java.lang.String = js.native
+  
   /**
     * Non-standard.
     */
   def unescapeHTML(): java.lang.String = js.native
 }
-

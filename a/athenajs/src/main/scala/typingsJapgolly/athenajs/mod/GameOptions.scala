@@ -1,38 +1,57 @@
 package typingsJapgolly.athenajs.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GameOptions extends js.Object {
+trait GameOptions extends StObject {
+  
   var debug: Boolean
+  
   var height: Double
+  
   var name: String
+  
   var scene: js.UndefOr[Scene] = js.undefined
+  
   var showFps: Boolean
+  
   var sound: js.UndefOr[Boolean] = js.undefined
+  
   var target: js.UndefOr[String | HTMLElement] = js.undefined
+  
   var width: Double
 }
-
 object GameOptions {
-  @scala.inline
-  def apply(
-    debug: Boolean,
-    height: Double,
-    name: String,
-    showFps: Boolean,
-    width: Double,
-    scene: Scene = null,
-    sound: js.UndefOr[Boolean] = js.undefined,
-    target: String | HTMLElement = null
-  ): GameOptions = {
+  
+  inline def apply(debug: Boolean, height: Double, name: String, showFps: Boolean, width: Double): GameOptions = {
     val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], showFps = showFps.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameOptions]
   }
+  
+  extension [Self <: GameOptions](x: Self) {
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setScene(value: Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    
+    inline def setShowFps(value: Boolean): Self = StObject.set(x, "showFps", value.asInstanceOf[js.Any])
+    
+    inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    
+    inline def setTarget(value: String | HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

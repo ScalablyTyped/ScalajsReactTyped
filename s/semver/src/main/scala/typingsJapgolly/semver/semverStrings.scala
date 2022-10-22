@@ -2,100 +2,115 @@ package typingsJapgolly.semver
 
 import typingsJapgolly.semver.mod.Operator
 import typingsJapgolly.semver.mod.ReleaseType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semverStrings {
-  @js.native
-  sealed trait `2Dot0Dot0` extends js.Object
   
   @js.native
-  sealed trait Equalssign extends Operator
+  sealed trait `2Dot0Dot0` extends StObject
+  inline def `2Dot0Dot0`: `2Dot0Dot0` = "2.0.0".asInstanceOf[`2Dot0Dot0`]
   
   @js.native
-  sealed trait EqualssignEqualssign extends Operator
+  sealed trait Equalssign
+    extends StObject
+       with Operator
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait EqualssignEqualssignEqualssign extends Operator
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with Operator
+  inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends Operator
+  sealed trait EqualssignEqualssignEqualssign
+    extends StObject
+       with Operator
+  inline def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssignEqualssign extends Operator
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with Operator
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait Greaterthansign extends Operator
+  sealed trait ExclamationmarkEqualssignEqualssign
+    extends StObject
+       with Operator
+  inline def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends Operator
+  sealed trait Greaterthansign
+    extends StObject
+       with Operator
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends Operator
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with Operator
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends Operator
+  sealed trait Lessthansign
+    extends StObject
+       with Operator
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait _empty extends Operator
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with Operator
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait major extends ReleaseType
+  sealed trait _empty
+    extends StObject
+       with Operator
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait minor extends ReleaseType
+  sealed trait major
+    extends StObject
+       with ReleaseType
+  inline def major: major = "major".asInstanceOf[major]
   
   @js.native
-  sealed trait patch extends ReleaseType
+  sealed trait minor
+    extends StObject
+       with ReleaseType
+  inline def minor: minor = "minor".asInstanceOf[minor]
   
   @js.native
-  sealed trait premajor extends ReleaseType
+  sealed trait patch
+    extends StObject
+       with ReleaseType
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
-  sealed trait preminor extends ReleaseType
+  sealed trait premajor
+    extends StObject
+       with ReleaseType
+  inline def premajor: premajor = "premajor".asInstanceOf[premajor]
   
   @js.native
-  sealed trait prepatch extends ReleaseType
+  sealed trait preminor
+    extends StObject
+       with ReleaseType
+  inline def preminor: preminor = "preminor".asInstanceOf[preminor]
   
   @js.native
-  sealed trait prerelease extends ReleaseType
+  sealed trait prepatch
+    extends StObject
+       with ReleaseType
+  inline def prepatch: prepatch = "prepatch".asInstanceOf[prepatch]
   
-  @scala.inline
-  def `2Dot0Dot0`: `2Dot0Dot0` = "2.0.0".asInstanceOf[`2Dot0Dot0`]
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def EqualssignEqualssignEqualssign: EqualssignEqualssignEqualssign = "===".asInstanceOf[EqualssignEqualssignEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssignEqualssign: ExclamationmarkEqualssignEqualssign = "!==".asInstanceOf[ExclamationmarkEqualssignEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def major: major = "major".asInstanceOf[major]
-  @scala.inline
-  def minor: minor = "minor".asInstanceOf[minor]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def premajor: premajor = "premajor".asInstanceOf[premajor]
-  @scala.inline
-  def preminor: preminor = "preminor".asInstanceOf[preminor]
-  @scala.inline
-  def prepatch: prepatch = "prepatch".asInstanceOf[prepatch]
-  @scala.inline
-  def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
+  @js.native
+  sealed trait prerelease
+    extends StObject
+       with ReleaseType
+  inline def prerelease: prerelease = "prerelease".asInstanceOf[prerelease]
 }
-

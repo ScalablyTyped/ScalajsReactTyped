@@ -1,19 +1,24 @@
 package typingsJapgolly.fmWebsync.fm.websync
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait connectConfig extends baseRequestConfig {
+trait connectConfig
+  extends StObject
+     with baseRequestConfig {
+  
   /**
     * The callback to invoke after onSuccess or onFailure. See connectCompleteArgs for callback argument details.
     */
   var onComplete: js.UndefOr[js.Function1[/* args */ connectCompleteArgs, Unit]] = js.undefined
+  
   /**
     * The callback to invoke if the connect fails. Defaults to an alert of the error. See connectFailureArgs for callback argument details.
     */
   var onFailure: js.UndefOr[js.Function1[/* args */ connectFailureArgs, Unit]] = js.undefined
+  
   /**
     * The callback to invoke if the streaming connection fails. See streamFailureArgs for callback argument details.
     * This method will be invoked if (a) the connection was lost, automatic retries succeeded, but the client had idled on the server (and so needs to reconnect),
@@ -24,48 +29,55 @@ trait connectConfig extends baseRequestConfig {
     * With the exception of UI updates, invocations of this callback with willReconnect set to true can be ignored.
     */
   var onStreamFailure: js.UndefOr[js.Function1[/* args */ streamFailureArgs, Unit]] = js.undefined
+  
   /**
     * The callback to invoke if the connect succeeds. See connectSuccessArgs for callback argument details.
     */
   var onSuccess: js.UndefOr[js.Function1[/* args */ connectSuccessArgs, Unit]] = js.undefined
+  
   /**
     * The callback to invoke when a message is received on a channel that has no local callback specified to handle it. See receiveArgs for callback argument details.
     * This can occur if (a) a client is manually subscribed to a channel by the server or (b) a client subscribed to a channel and then manually removed the local callback using client.
     */
   var onUnhandledReceive: js.UndefOr[js.Function1[/* args */ receiveArgs, Unit]] = js.undefined
+  
   /**
     * Whether to always attempt to stay connected in the event of network failure. If true, the client will continually reconnect, even after exhausting the specified number
     * of retries specified by initializeConfig.retries. If false, the client will stop reconnecting if all retry attempts fail.
     */
   var stayConnected: js.UndefOr[Boolean] = js.undefined
 }
-
 object connectConfig {
-  @scala.inline
-  def apply(
-    meta: js.Any = null,
-    onComplete: /* args */ connectCompleteArgs => Callback = null,
-    onFailure: /* args */ connectFailureArgs => Callback = null,
-    onStreamFailure: /* args */ streamFailureArgs => Callback = null,
-    onSuccess: /* args */ connectSuccessArgs => Callback = null,
-    onUnhandledReceive: /* args */ receiveArgs => Callback = null,
-    requestUrl: String = null,
-    stayConnected: js.UndefOr[Boolean] = js.undefined,
-    suppressErrors: js.UndefOr[Boolean] = js.undefined,
-    sync: js.UndefOr[Boolean] = js.undefined
-  ): connectConfig = {
+  
+  inline def apply(): connectConfig = {
     val __obj = js.Dynamic.literal()
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (onComplete != null) __obj.updateDynamic("onComplete")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.fmWebsync.fm.websync.connectCompleteArgs) => onComplete(t0).runNow()))
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.fmWebsync.fm.websync.connectFailureArgs) => onFailure(t0).runNow()))
-    if (onStreamFailure != null) __obj.updateDynamic("onStreamFailure")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.fmWebsync.fm.websync.streamFailureArgs) => onStreamFailure(t0).runNow()))
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.fmWebsync.fm.websync.connectSuccessArgs) => onSuccess(t0).runNow()))
-    if (onUnhandledReceive != null) __obj.updateDynamic("onUnhandledReceive")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.fmWebsync.fm.websync.receiveArgs) => onUnhandledReceive(t0).runNow()))
-    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(stayConnected)) __obj.updateDynamic("stayConnected")(stayConnected.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors.asInstanceOf[js.Any])
-    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
     __obj.asInstanceOf[connectConfig]
   }
+  
+  extension [Self <: connectConfig](x: Self) {
+    
+    inline def setOnComplete(value: /* args */ connectCompleteArgs => Callback): Self = StObject.set(x, "onComplete", js.Any.fromFunction1((t0: /* args */ connectCompleteArgs) => value(t0).runNow()))
+    
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    
+    inline def setOnFailure(value: /* args */ connectFailureArgs => Callback): Self = StObject.set(x, "onFailure", js.Any.fromFunction1((t0: /* args */ connectFailureArgs) => value(t0).runNow()))
+    
+    inline def setOnFailureUndefined: Self = StObject.set(x, "onFailure", js.undefined)
+    
+    inline def setOnStreamFailure(value: /* args */ streamFailureArgs => Callback): Self = StObject.set(x, "onStreamFailure", js.Any.fromFunction1((t0: /* args */ streamFailureArgs) => value(t0).runNow()))
+    
+    inline def setOnStreamFailureUndefined: Self = StObject.set(x, "onStreamFailure", js.undefined)
+    
+    inline def setOnSuccess(value: /* args */ connectSuccessArgs => Callback): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1((t0: /* args */ connectSuccessArgs) => value(t0).runNow()))
+    
+    inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+    
+    inline def setOnUnhandledReceive(value: /* args */ receiveArgs => Callback): Self = StObject.set(x, "onUnhandledReceive", js.Any.fromFunction1((t0: /* args */ receiveArgs) => value(t0).runNow()))
+    
+    inline def setOnUnhandledReceiveUndefined: Self = StObject.set(x, "onUnhandledReceive", js.undefined)
+    
+    inline def setStayConnected(value: Boolean): Self = StObject.set(x, "stayConnected", value.asInstanceOf[js.Any])
+    
+    inline def setStayConnectedUndefined: Self = StObject.set(x, "stayConnected", js.undefined)
+  }
 }
-

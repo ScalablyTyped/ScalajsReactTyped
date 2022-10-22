@@ -1,26 +1,40 @@
 package typingsJapgolly.webidl2.mod
 
+import typingsJapgolly.std.Error
+import typingsJapgolly.webidl2.anon.BareMessage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebIDLParseError extends js.Object {
-  /** a short peek at the text at the point where the error happened */
-  var input: String
-  /** the line at which the error occurred. */
-  var line: Double
-  /** the error message */
-  var message: String
-  /** the five tokens at the point of error, as understood by the tokeniser */
-  var tokens: js.Array[ValueDescription]
-}
-
-object WebIDLParseError {
-  @scala.inline
-  def apply(input: String, line: Double, message: String, tokens: js.Array[ValueDescription]): WebIDLParseError = {
-    val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
+@JSImport("webidl2", "WebIDLParseError")
+@js.native
+open class WebIDLParseError protected ()
+  extends StObject
+     with Error {
+  def this(options: BareMessage) = this()
   
-    __obj.asInstanceOf[WebIDLParseError]
-  }
+  var bareMessage: String = js.native
+  
+  var context: String = js.native
+  
+  /** a short peek at the text at the point where the error happened */
+  var input: String = js.native
+  
+  /** the line at which the error occurred. */
+  var line: Double = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var message: String = js.native
+  
+  /* standard es5 */
+  /* CompleteClass */
+  var name: String = js.native
+  @JSName("name")
+  var name_WebIDLParseError: typingsJapgolly.webidl2.webidl2Strings.WebIDLParseError = js.native
+  
+  var sourceName: js.UndefOr[String] = js.native
+  
+  /** the five tokens at the point of error, as understood by the tokeniser */
+  var tokens: js.Array[Token] = js.native
 }
-

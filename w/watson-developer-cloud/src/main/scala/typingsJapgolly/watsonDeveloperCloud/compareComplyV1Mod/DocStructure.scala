@@ -1,27 +1,37 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The structure of the input document. */
-trait DocStructure extends js.Object {
+trait DocStructure extends StObject {
+  
   /** An array containing one object per section or subsection, in parallel with the `section_titles` array, that details the leading sentences in the corresponding section or subsection. */
   var leading_sentences: js.UndefOr[js.Array[LeadingSentence]] = js.undefined
+  
   /** An array containing one object per section or subsection identified in the input document. */
   var section_titles: js.UndefOr[js.Array[SectionTitles]] = js.undefined
 }
-
 object DocStructure {
-  @scala.inline
-  def apply(
-    leading_sentences: js.Array[LeadingSentence] = null,
-    section_titles: js.Array[SectionTitles] = null
-  ): DocStructure = {
+  
+  inline def apply(): DocStructure = {
     val __obj = js.Dynamic.literal()
-    if (leading_sentences != null) __obj.updateDynamic("leading_sentences")(leading_sentences.asInstanceOf[js.Any])
-    if (section_titles != null) __obj.updateDynamic("section_titles")(section_titles.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocStructure]
   }
+  
+  extension [Self <: DocStructure](x: Self) {
+    
+    inline def setLeading_sentences(value: js.Array[LeadingSentence]): Self = StObject.set(x, "leading_sentences", value.asInstanceOf[js.Any])
+    
+    inline def setLeading_sentencesUndefined: Self = StObject.set(x, "leading_sentences", js.undefined)
+    
+    inline def setLeading_sentencesVarargs(value: LeadingSentence*): Self = StObject.set(x, "leading_sentences", js.Array(value*))
+    
+    inline def setSection_titles(value: js.Array[SectionTitles]): Self = StObject.set(x, "section_titles", value.asInstanceOf[js.Any])
+    
+    inline def setSection_titlesUndefined: Self = StObject.set(x, "section_titles", js.undefined)
+    
+    inline def setSection_titlesVarargs(value: SectionTitles*): Self = StObject.set(x, "section_titles", js.Array(value*))
+  }
 }
-

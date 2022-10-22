@@ -1,18 +1,17 @@
 organization := "org.scalablytyped.japgolly"
 name := "pino-multi-stream"
-version := "3.1-dt-20190816Z-45c9d9"
-scalaVersion := "2.13.1"
+version := "5.1-dt-20211202Z-f50537"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "pino" % "5.15-dt-20200206Z-8ae2a6",
-  "org.scalablytyped.japgolly" %%% "pino-std-serializers" % "2.4-dt-20190701Z-be88be",
-  "org.scalablytyped.japgolly" %%% "sonic-boom" % "0.7-dt-20190819Z-4e9923",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "pino" % "8.6.1-61c2d1",
+  "org.scalablytyped.japgolly" %%% "pino-pretty" % "4.7-dt-20220624Z-ef32bb",
+  "org.scalablytyped.japgolly" %%% "pino-std-serializers" % "6.0.0-dc906e",
+  "org.scalablytyped.japgolly" %%% "sonic-boom" % "3.2.0-670545",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

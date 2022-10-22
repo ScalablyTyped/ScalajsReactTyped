@@ -1,49 +1,36 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonValueNumber
-import typingsJapgolly.baseui.ratingMod.EmoticonRatingProps
-import typingsJapgolly.baseui.ratingMod.RatingOverrides
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.ValueNumber
+import typingsJapgolly.baseui.ratingTypesMod.EmoticonRatingProps
+import typingsJapgolly.baseui.ratingTypesMod.RatingOverrides
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EmoticonRating {
-  def apply(
-    onChange: /* args */ AnonValueNumber => CallbackTo[js.Any] = null,
-    overrides: RatingOverrides = null,
-    value: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    EmoticonRatingProps, 
-    typingsJapgolly.baseui.ratingMod.EmoticonRating, 
-    Unit, 
-    EmoticonRatingProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonValueNumber) => onChange(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.ratingMod.EmoticonRatingProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.ratingMod.EmoticonRating](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.ratingMod.EmoticonRatingProps])(children: _*)
-  }
   @JSImport("baseui/rating", "EmoticonRating")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.ratingMod.EmoticonRating] {
+    
+    inline def onChange(value: /* a */ ValueNumber => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: RatingOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Double): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: EmoticonRating.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: EmoticonRatingProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

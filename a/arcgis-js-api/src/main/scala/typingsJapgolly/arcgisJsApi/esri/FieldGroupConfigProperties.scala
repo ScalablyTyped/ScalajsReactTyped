@@ -1,53 +1,67 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldGroupConfigProperties extends js.Object {
+trait FieldGroupConfigProperties extends StObject {
+  
   /**
-    * The field's description. The description is shown below the field.
+    * The field's description.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
-    * The field configurations belonging to a group. For an example of grouped field configurations, please refer to the [Update Feature Attributes](https://developers.arcgis.com/javascript/latest/sample-code/editing-groupedfeatureform/index.html) sample.
+    * An array of field configurations belonging to a group.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#fieldConfig)
     */
   var fieldConfig: js.UndefOr[js.Array[FieldConfigProperties]] = js.undefined
+  
   /**
-    * The field's label. The label is shown above the field.
+    * The field's label.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#label)
     */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that controls this field's visibility. The field will only display if this expression is `true`.  [![featureFormFieldVisibility](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/featureform-fieldvisilbility.png)](https://developers.arcgis.com/javascript/latest/sample-code/sandbox/sandbox.html?sample=editing-featureform-fieldvisibility)
-    * > This only affects how the field is rendered. It does not have any impact on the attribute's values.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Constraint Arcade Profile](https://developers.arcgis.com/javascript/latest/arcade/#forms).
     *
     * @default null
+    * @deprecated since version 4.23. Set fields via the {@link module:esri/form/elements/GroupElement#visibilityExpression GroupElement.visibilityExpression}
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm-FieldGroupConfig.html#visibilityExpression)
     */
   var visibilityExpression: js.UndefOr[String] = js.undefined
 }
-
 object FieldGroupConfigProperties {
-  @scala.inline
-  def apply(
-    description: String = null,
-    fieldConfig: js.Array[FieldConfigProperties] = null,
-    label: String = null,
-    visibilityExpression: String = null
-  ): FieldGroupConfigProperties = {
+  
+  inline def apply(): FieldGroupConfigProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fieldConfig != null) __obj.updateDynamic("fieldConfig")(fieldConfig.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (visibilityExpression != null) __obj.updateDynamic("visibilityExpression")(visibilityExpression.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldGroupConfigProperties]
   }
+  
+  extension [Self <: FieldGroupConfigProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFieldConfig(value: js.Array[FieldConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    
+    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
+    
+    inline def setFieldConfigVarargs(value: FieldConfigProperties*): Self = StObject.set(x, "fieldConfig", js.Array(value*))
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setVisibilityExpression(value: String): Self = StObject.set(x, "visibilityExpression", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityExpressionUndefined: Self = StObject.set(x, "visibilityExpression", js.undefined)
+  }
 }
-

@@ -1,13 +1,13 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.credentialsMod.CredentialsOptions
+import typingsJapgolly.awsSdk.libCredentialsMod.CredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Credentials")
 @js.native
-class Credentials protected ()
+open class Credentials protected ()
   extends typingsJapgolly.awsSdk.mod.Credentials {
   /**
     * Creates a Credentials object with a given set of credential information as an options hash.
@@ -17,7 +17,7 @@ class Credentials protected ()
   def this(options: CredentialsOptions) = this()
   /**
     * Creates a Credentials object with a given set of credential information as positional arguments.
-    *          *
+    *
     * @param {string} accessKeyId - The AWS access key ID.
     * @param {string} secretAccessKey - The AWS secret access key.
     * @param {string} sessionToken - The optional AWS session token.
@@ -25,11 +25,15 @@ class Credentials protected ()
   def this(accessKeyId: String, secretAccessKey: String) = this()
   def this(accessKeyId: String, secretAccessKey: String, sessionToken: String) = this()
 }
-
 /* static members */
-@JSImport("dynogels", "AWS.Credentials")
-@js.native
-object Credentials extends js.Object {
-  var expiryWindow: Double = js.native
+object Credentials {
+  
+  @JSImport("dynogels", "AWS.Credentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("dynogels", "AWS.Credentials.expiryWindow")
+  @js.native
+  def expiryWindow: Double = js.native
+  inline def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
 }
-

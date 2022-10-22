@@ -1,36 +1,21 @@
 package typingsJapgolly.rrc.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.rrc.mod.StatusProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Status {
-  def apply(
-    code: String,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StatusProps, typingsJapgolly.rrc.mod.Status, Unit, StatusProps] = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rrc.mod.StatusProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rrc.mod.Status](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rrc.mod.StatusProps])(children: _*)
+  inline def apply(code: String): Default[typingsJapgolly.rrc.mod.Status] = {
+    val __props = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.rrc.mod.Status](js.Array(this.component, __props.asInstanceOf[StatusProps]))
   }
+  
   @JSImport("rrc", "Status")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: StatusProps): Default[typingsJapgolly.rrc.mod.Status] = new Default[typingsJapgolly.rrc.mod.Status](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

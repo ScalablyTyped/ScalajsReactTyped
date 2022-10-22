@@ -1,23 +1,27 @@
 package typingsJapgolly.clearbladejsClient.CbClient
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Resp extends js.Object {
-  def error(msg: js.Any): scala.Nothing
-   // todo: figure out if we can have the compiler throw an error if someone adds code after this
-  def success(msg: js.Any): scala.Nothing
+trait Resp extends StObject {
+  
+  def error(msg: Any): scala.Nothing
+  
+  // todo: figure out if we can have the compiler throw an error if someone adds code after this
+  def success(msg: Any): scala.Nothing
 }
-
 object Resp {
-  @scala.inline
-  def apply(error: js.Any => CallbackTo[scala.Nothing], success: js.Any => CallbackTo[scala.Nothing]): Resp = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(js.Any.fromFunction1((t0: js.Any) => error(t0).runNow()))
-    __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
+  
+  inline def apply(error: Any => scala.Nothing, success: Any => scala.Nothing): Resp = {
+    val __obj = js.Dynamic.literal(error = js.Any.fromFunction1(error), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[Resp]
   }
+  
+  extension [Self <: Resp](x: Self) {
+    
+    inline def setError(value: Any => scala.Nothing): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    
+    inline def setSuccess(value: Any => scala.Nothing): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+  }
 }
-

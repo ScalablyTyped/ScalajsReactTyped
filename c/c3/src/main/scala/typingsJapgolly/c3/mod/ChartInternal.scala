@@ -1,22 +1,26 @@
 package typingsJapgolly.c3.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ChartInternal
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   /** Access the external Chart API. */
   var api: ChartAPI
 }
-
 object ChartInternal {
-  @scala.inline
-  def apply(api: ChartAPI, StringDictionary: /* key */ StringDictionary[js.Any] = null): ChartInternal = {
+  
+  inline def apply(api: ChartAPI): ChartInternal = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[ChartInternal]
   }
+  
+  extension [Self <: ChartInternal](x: Self) {
+    
+    inline def setApi(value: ChartAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,37 +1,39 @@
 package typingsJapgolly.aliApp.my
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.aliApp.AnonHeight
+import typingsJapgolly.aliApp.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GetImageInfoOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /**
-  		 * 图片路径，目前支持：
-  		 * - 网络图片路径
-  		 * - apFilePath路径
-  		 * - 相对路径
-  		 */
+    * 图片路径，目前支持：
+    * - 网络图片路径
+    * - apFilePath路径
+    * - 相对路径
+    */
   var src: String
+  
   @JSName("success")
-  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ AnonHeight, Unit]] = js.undefined
+  var success_GetImageInfoOptions: js.UndefOr[js.Function1[/* res */ Height, Unit]] = js.undefined
 }
-
 object GetImageInfoOptions {
-  @scala.inline
-  def apply(
-    src: String,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: /* res */ AnonHeight => Callback = null
-  ): GetImageInfoOptions = {
+  
+  inline def apply(src: String): GetImageInfoOptions = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.aliApp.AnonHeight) => success(t0).runNow()))
     __obj.asInstanceOf[GetImageInfoOptions]
   }
+  
+  extension [Self <: GetImageInfoOptions](x: Self) {
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ Height => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ Height) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

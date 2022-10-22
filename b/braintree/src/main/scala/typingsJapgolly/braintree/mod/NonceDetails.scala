@@ -1,23 +1,36 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NonceDetails extends js.Object {
+trait NonceDetails extends StObject {
+  
   var bin: js.UndefOr[String] = js.undefined
+  
   var cardType: js.UndefOr[String] = js.undefined
+  
   var lastTwo: js.UndefOr[String] = js.undefined
 }
-
 object NonceDetails {
-  @scala.inline
-  def apply(bin: String = null, cardType: String = null, lastTwo: String = null): NonceDetails = {
+  
+  inline def apply(): NonceDetails = {
     val __obj = js.Dynamic.literal()
-    if (bin != null) __obj.updateDynamic("bin")(bin.asInstanceOf[js.Any])
-    if (cardType != null) __obj.updateDynamic("cardType")(cardType.asInstanceOf[js.Any])
-    if (lastTwo != null) __obj.updateDynamic("lastTwo")(lastTwo.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonceDetails]
   }
+  
+  extension [Self <: NonceDetails](x: Self) {
+    
+    inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    
+    inline def setBinUndefined: Self = StObject.set(x, "bin", js.undefined)
+    
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    
+    inline def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
+    
+    inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+    
+    inline def setLastTwoUndefined: Self = StObject.set(x, "lastTwo", js.undefined)
+  }
 }
-

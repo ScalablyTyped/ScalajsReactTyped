@@ -1,41 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IdleReason extends js.Object
-
+sealed trait IdleReason extends StObject
 @JSGlobal("chrome.cast.media.IdleReason")
 @js.native
-object IdleReason extends js.Object {
-  @js.native
-  sealed trait CANCELLED extends IdleReason
+object IdleReason extends StObject {
   
   @js.native
-  sealed trait ERROR extends IdleReason
+  sealed trait CANCELLED
+    extends StObject
+       with IdleReason
   
   @js.native
-  sealed trait FINISHED extends IdleReason
+  sealed trait ERROR
+    extends StObject
+       with IdleReason
   
   @js.native
-  sealed trait INTERRUPTED extends IdleReason
+  sealed trait FINISHED
+    extends StObject
+       with IdleReason
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[IdleReason with String] = js.native
-  /* "CANCELLED" */ @js.native
-  object CANCELLED extends TopLevel[CANCELLED with String]
-  
-  /* "ERROR" */ @js.native
-  object ERROR extends TopLevel[ERROR with String]
-  
-  /* "FINISHED" */ @js.native
-  object FINISHED extends TopLevel[FINISHED with String]
-  
-  /* "INTERRUPTED" */ @js.native
-  object INTERRUPTED extends TopLevel[INTERRUPTED with String]
-  
+  @js.native
+  sealed trait INTERRUPTED
+    extends StObject
+       with IdleReason
 }
-

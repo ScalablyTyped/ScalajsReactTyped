@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customConditionalFormat.toJSON()`. */
-trait CustomConditionalFormatData extends js.Object {
+trait CustomConditionalFormatData extends StObject {
+  
   /**
+    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
     *
-    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatData] = js.undefined
+  
   /**
+    * Specifies the `Rule` object on this conditional format.
     *
-    * Represents the Rule object on this conditional format. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[ConditionalFormatRuleData] = js.undefined
 }
-
 object CustomConditionalFormatData {
-  @scala.inline
-  def apply(format: ConditionalRangeFormatData = null, rule: ConditionalFormatRuleData = null): CustomConditionalFormatData = {
+  
+  inline def apply(): CustomConditionalFormatData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomConditionalFormatData]
   }
+  
+  extension [Self <: CustomConditionalFormatData](x: Self) {
+    
+    inline def setFormat(value: ConditionalRangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setRule(value: ConditionalFormatRuleData): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+  }
 }
-

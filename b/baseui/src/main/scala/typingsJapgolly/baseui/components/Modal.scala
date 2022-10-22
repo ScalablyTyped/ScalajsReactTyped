@@ -1,66 +1,74 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.baseui.AnonCloseSource
-import typingsJapgolly.baseui.baseuiStrings.alertdialog
-import typingsJapgolly.baseui.baseuiStrings.auto
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.dialog
-import typingsJapgolly.baseui.baseuiStrings.full
-import typingsJapgolly.baseui.modalMod.ModalOverrides
-import typingsJapgolly.baseui.modalMod.ModalProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.`15`
+import typingsJapgolly.baseui.modalTypesMod.ModalOverrides
+import typingsJapgolly.baseui.modalTypesMod.ModalProps
+import typingsJapgolly.baseui.modalTypesMod.RoleProp
+import typingsJapgolly.baseui.modalTypesMod.SizeProp
+import typingsJapgolly.std.FocusOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Modal {
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    autofocus: js.UndefOr[Boolean] = js.undefined,
-    closeable: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    mountNode: HTMLElement = null,
-    onClose: /* args */ AnonCloseSource => CallbackTo[js.Any] = null,
-    overrides: ModalOverrides = null,
-    role: dialog | alertdialog = null,
-    size: default_ | full | auto = null,
-    unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ModalProps, typingsJapgolly.baseui.modalMod.Modal, Unit, ModalProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(autofocus)) __obj.updateDynamic("autofocus")(autofocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeable)) __obj.updateDynamic("closeable")(closeable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonCloseSource) => onClose(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(unstable_ModalBackdropScroll)) __obj.updateDynamic("unstable_ModalBackdropScroll")(unstable_ModalBackdropScroll.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.modalMod.ModalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.modalMod.Modal](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.modalMod.ModalProps])(children: _*)
-  }
   @JSImport("baseui/modal", "Modal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.modalMod.Modal] {
+    
+    inline def animate(value: Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Node | js.Function0[Node]): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenCallbackTo(value: CallbackTo[Node]): this.type = set("children", value.toJsFn)
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def closeable(value: Boolean): this.type = set("closeable", value.asInstanceOf[js.Any])
+    
+    inline def focusLock(value: Boolean): this.type = set("focusLock", value.asInstanceOf[js.Any])
+    
+    inline def isOpen(value: Boolean): this.type = set("isOpen", value.asInstanceOf[js.Any])
+    
+    inline def mountNode(value: HTMLElement): this.type = set("mountNode", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onClose(value: /* a */ `15` => Any): this.type = set("onClose", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: ModalOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def returnFocus(
+      value: Boolean | FocusOptions | (js.Function1[/* returnTo */ org.scalajs.dom.Element, Boolean | FocusOptions])
+    ): this.type = set("returnFocus", value.asInstanceOf[js.Any])
+    
+    inline def returnFocusFunction1(value: /* returnTo */ org.scalajs.dom.Element => Boolean | FocusOptions): this.type = set("returnFocus", js.Any.fromFunction1(value))
+    
+    inline def role(value: RoleProp): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SizeProp): this.type = set("size", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Modal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ModalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

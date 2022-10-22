@@ -1,27 +1,36 @@
 package typingsJapgolly.jqueryTagsmanager
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITypeaheadOverrides extends js.Object {
+trait ITypeaheadOverrides extends StObject {
+  
   var instanceSelectHandler: js.UndefOr[js.Function] = js.undefined
+  
   var select: js.UndefOr[js.Function] = js.undefined
+  
   var selectedClass: js.UndefOr[String] = js.undefined
 }
-
 object ITypeaheadOverrides {
-  @scala.inline
-  def apply(
-    instanceSelectHandler: js.Function = null,
-    select: js.Function = null,
-    selectedClass: String = null
-  ): ITypeaheadOverrides = {
+  
+  inline def apply(): ITypeaheadOverrides = {
     val __obj = js.Dynamic.literal()
-    if (instanceSelectHandler != null) __obj.updateDynamic("instanceSelectHandler")(instanceSelectHandler.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (selectedClass != null) __obj.updateDynamic("selectedClass")(selectedClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITypeaheadOverrides]
   }
+  
+  extension [Self <: ITypeaheadOverrides](x: Self) {
+    
+    inline def setInstanceSelectHandler(value: js.Function): Self = StObject.set(x, "instanceSelectHandler", value.asInstanceOf[js.Any])
+    
+    inline def setInstanceSelectHandlerUndefined: Self = StObject.set(x, "instanceSelectHandler", js.undefined)
+    
+    inline def setSelect(value: js.Function): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setSelectedClass(value: String): Self = StObject.set(x, "selectedClass", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedClassUndefined: Self = StObject.set(x, "selectedClass", js.undefined)
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.workboxPrecaching
 
-import typingsJapgolly.workboxPrecaching.precacheEntryMod.PrecacheEntry
+import typingsJapgolly.workboxPrecaching.typesPrecacheEntryMod.PrecacheEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-precaching/precache", JSImport.Namespace)
-@js.native
-object precacheMod extends js.Object {
-  def precache(entries: js.Array[String | PrecacheEntry]): Unit = js.native
+object precacheMod {
+  
+  @JSImport("workbox-precaching/precache", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def precache(entries: js.Array[String | PrecacheEntry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precache")(entries.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

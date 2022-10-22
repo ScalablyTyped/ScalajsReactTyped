@@ -1,11 +1,12 @@
 package typingsJapgolly.webrtc
 
 import typingsJapgolly.webrtc.W3C.DoubleRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaTrackCapabilities extends js.Object {
+trait MediaTrackCapabilities extends StObject {
+  
   //width: number | W3C.LongRange;
   //height: number | W3C.LongRange;
   //aspectRatio: number | W3C.DoubleRange;
@@ -17,13 +18,17 @@ trait MediaTrackCapabilities extends js.Object {
   //echoCancellation: boolean[];
   var latency: js.UndefOr[DoubleRange] = js.undefined
 }
-
 object MediaTrackCapabilities {
-  @scala.inline
-  def apply(latency: DoubleRange = null): MediaTrackCapabilities = {
+  
+  inline def apply(): MediaTrackCapabilities = {
     val __obj = js.Dynamic.literal()
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackCapabilities]
   }
+  
+  extension [Self <: MediaTrackCapabilities](x: Self) {
+    
+    inline def setLatency(value: DoubleRange): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+  }
 }
-

@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.transitionGroupMod.TransitionGroupComponent
-import typingsJapgolly.semanticUiReact.transitionGroupMod.TransitionGroupProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesTransitionTransitionGroupMod.TransitionGroupProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "TransitionGroup")
 @js.native
-class TransitionGroup protected ()
-  extends Component[TransitionGroupProps, ComponentState, js.Any] {
+open class TransitionGroup protected ()
+  extends Component[TransitionGroupProps, js.Object, Any] {
   def this(props: TransitionGroupProps) = this()
-  def this(props: TransitionGroupProps, context: js.Any) = this()
+  def this(props: TransitionGroupProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "TransitionGroup")
-@js.native
-object TransitionGroup extends TopLevel[TransitionGroupComponent]
-
+object TransitionGroup {
+  
+  inline def apply: ComponentClassP[TransitionGroupProps & js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("TransitionGroup").asInstanceOf[ComponentClassP[TransitionGroupProps & js.Object]]
+}

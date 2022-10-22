@@ -1,11 +1,10 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import japgolly.scalajs.react.raw.React.Node
-import typingsJapgolly.antDesignReactNative.TypeofPortalHost
-import typingsJapgolly.antDesignReactNative.portalMod.default
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.antDesignReactNative.libPortalMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Portal allows to render a component at a different place in the parent tree.
@@ -31,14 +30,40 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("@ant-design/react-native", "Portal")
 @js.native
-class Portal () extends default
-
-/* static members */
-@JSImport("@ant-design/react-native", "Portal")
-@js.native
-object Portal extends js.Object {
-  var Host: TypeofPortalHost = js.native
-  def add(e: Node): Double = js.native
-  def remove(key: Double): Unit = js.native
+open class Portal () extends default
+object Portal {
+  
+  @JSImport("@ant-design/react-native", "Portal")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* was `typeof PortalHost` */
+  @JSImport("@ant-design/react-native", "Portal.Host")
+  @js.native
+  open class Host ()
+    extends typingsJapgolly.antDesignReactNative.libPortalMod.default.Host
+  /* static members */
+  object Host {
+    
+    @JSImport("@ant-design/react-native", "Portal.Host")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@ant-design/react-native", "Portal.Host.displayName")
+    @js.native
+    def displayName: String = js.native
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  }
+  
+  /* static member */
+  @JSImport("@ant-design/react-native", "Portal.add")
+  @js.native
+  def add: js.Function1[/* e */ Node, Double] = js.native
+  inline def add_=(x: js.Function1[/* e */ Node, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("add")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("@ant-design/react-native", "Portal.remove")
+  @js.native
+  def remove: js.Function1[/* key */ Double, Unit] = js.native
+  inline def remove_=(x: js.Function1[/* key */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("remove")(x.asInstanceOf[js.Any])
 }
-

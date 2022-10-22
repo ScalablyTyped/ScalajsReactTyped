@@ -1,31 +1,24 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps.Directions
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DistanceUnit extends js.Object
-
+sealed trait DistanceUnit extends StObject
 @JSGlobal("Microsoft.Maps.Directions.DistanceUnit")
 @js.native
-object DistanceUnit extends js.Object {
+object DistanceUnit extends StObject {
+  
   /** A distance in Kilometers. */
   @js.native
-  sealed trait km extends DistanceUnit
+  sealed trait km
+    extends StObject
+       with DistanceUnit
   
   /** A distance in Miles. */
   @js.native
-  sealed trait miles extends DistanceUnit
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DistanceUnit with Double] = js.native
-  /* 0 */ @js.native
-  object km extends TopLevel[km with Double]
-  
-  /* 1 */ @js.native
-  object miles extends TopLevel[miles with Double]
-  
+  sealed trait miles
+    extends StObject
+       with DistanceUnit
 }
-

@@ -1,17 +1,20 @@
-package typingsJapgolly
+package typingsJapgolly.node
 
+import typingsJapgolly.node.NodeJS.Module
+import typingsJapgolly.node.NodeJS.Require
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object node {
-  type NodeModule = typingsJapgolly.node.NodeJS.Module
-  /*-----------------------------------------------*
-    *                                               *
-    *                   GLOBAL                      *
-    *                                               *
-    ------------------------------------------------*/
-  // For backwards compability
-  type NodeRequire = typingsJapgolly.node.NodeJS.Require
-  type RequireResolve = typingsJapgolly.node.NodeJS.RequireResolve
-}
+
+type NodeModule = Module
+
+/*-----------------------------------------------*
+  *                                               *
+  *                   GLOBAL                      *
+  *                                               *
+  ------------------------------------------------*/
+// For backwards compability
+type NodeRequire = Require
+
+type RequireResolve = typingsJapgolly.node.NodeJS.RequireResolve

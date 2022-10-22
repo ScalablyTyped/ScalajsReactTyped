@@ -1,113 +1,105 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FlowFlags extends js.Object
-
+sealed trait FlowFlags extends StObject
 @JSImport("typescript", "FlowFlags")
 @js.native
-object FlowFlags extends js.Object {
-  @js.native
-  sealed trait AfterFinally extends FlowFlags
-  
-  @js.native
-  sealed trait ArrayMutation extends FlowFlags
-  
-  @js.native
-  sealed trait Assignment extends FlowFlags
-  
-  @js.native
-  sealed trait BranchLabel extends FlowFlags
-  
-  @js.native
-  sealed trait Call extends FlowFlags
-  
-  @js.native
-  sealed trait Condition extends FlowFlags
-  
-  @js.native
-  sealed trait FalseCondition extends FlowFlags
-  
-  @js.native
-  sealed trait Label extends FlowFlags
-  
-  @js.native
-  sealed trait LoopLabel extends FlowFlags
-  
-  @js.native
-  sealed trait PreFinally extends FlowFlags
-  
-  @js.native
-  sealed trait Referenced extends FlowFlags
-  
-  @js.native
-  sealed trait Shared extends FlowFlags
-  
-  @js.native
-  sealed trait Start extends FlowFlags
-  
-  @js.native
-  sealed trait SwitchClause extends FlowFlags
-  
-  @js.native
-  sealed trait TrueCondition extends FlowFlags
-  
-  @js.native
-  sealed trait Unreachable extends FlowFlags
+object FlowFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FlowFlags with Double] = js.native
-  /* 8192 */ @js.native
-  object AfterFinally extends TopLevel[AfterFinally with Double]
+  def apply(value: Double): js.UndefOr[FlowFlags & Double] = js.native
   
-  /* 256 */ @js.native
-  object ArrayMutation extends TopLevel[ArrayMutation with Double]
+  @js.native
+  sealed trait ArrayMutation
+    extends StObject
+       with FlowFlags
+  /* 256 */ val ArrayMutation: typingsJapgolly.typescript.mod.FlowFlags.ArrayMutation & Double = js.native
   
-  /* 16 */ @js.native
-  object Assignment extends TopLevel[Assignment with Double]
+  @js.native
+  sealed trait Assignment
+    extends StObject
+       with FlowFlags
+  /* 16 */ val Assignment: typingsJapgolly.typescript.mod.FlowFlags.Assignment & Double = js.native
   
-  /* 4 */ @js.native
-  object BranchLabel extends TopLevel[BranchLabel with Double]
+  @js.native
+  sealed trait BranchLabel
+    extends StObject
+       with FlowFlags
+  /* 4 */ val BranchLabel: typingsJapgolly.typescript.mod.FlowFlags.BranchLabel & Double = js.native
   
-  /* 512 */ @js.native
-  object Call extends TopLevel[Call with Double]
+  @js.native
+  sealed trait Call
+    extends StObject
+       with FlowFlags
+  /* 512 */ val Call: typingsJapgolly.typescript.mod.FlowFlags.Call & Double = js.native
   
-  /* 96 */ @js.native
-  object Condition extends TopLevel[Condition with Double]
+  @js.native
+  sealed trait Condition
+    extends StObject
+       with FlowFlags
+  /* 96 */ val Condition: typingsJapgolly.typescript.mod.FlowFlags.Condition & Double = js.native
   
-  /* 64 */ @js.native
-  object FalseCondition extends TopLevel[FalseCondition with Double]
+  @js.native
+  sealed trait FalseCondition
+    extends StObject
+       with FlowFlags
+  /* 64 */ val FalseCondition: typingsJapgolly.typescript.mod.FlowFlags.FalseCondition & Double = js.native
   
-  /* 12 */ @js.native
-  object Label extends TopLevel[Label with Double]
+  @js.native
+  sealed trait Label
+    extends StObject
+       with FlowFlags
+  /* 12 */ val Label: typingsJapgolly.typescript.mod.FlowFlags.Label & Double = js.native
   
-  /* 8 */ @js.native
-  object LoopLabel extends TopLevel[LoopLabel with Double]
+  @js.native
+  sealed trait LoopLabel
+    extends StObject
+       with FlowFlags
+  /* 8 */ val LoopLabel: typingsJapgolly.typescript.mod.FlowFlags.LoopLabel & Double = js.native
   
-  /* 4096 */ @js.native
-  object PreFinally extends TopLevel[PreFinally with Double]
+  @js.native
+  sealed trait ReduceLabel
+    extends StObject
+       with FlowFlags
+  /* 1024 */ val ReduceLabel: typingsJapgolly.typescript.mod.FlowFlags.ReduceLabel & Double = js.native
   
-  /* 1024 */ @js.native
-  object Referenced extends TopLevel[Referenced with Double]
+  @js.native
+  sealed trait Referenced
+    extends StObject
+       with FlowFlags
+  /* 2048 */ val Referenced: typingsJapgolly.typescript.mod.FlowFlags.Referenced & Double = js.native
   
-  /* 2048 */ @js.native
-  object Shared extends TopLevel[Shared with Double]
+  @js.native
+  sealed trait Shared
+    extends StObject
+       with FlowFlags
+  /* 4096 */ val Shared: typingsJapgolly.typescript.mod.FlowFlags.Shared & Double = js.native
   
-  /* 2 */ @js.native
-  object Start extends TopLevel[Start with Double]
+  @js.native
+  sealed trait Start
+    extends StObject
+       with FlowFlags
+  /* 2 */ val Start: typingsJapgolly.typescript.mod.FlowFlags.Start & Double = js.native
   
-  /* 128 */ @js.native
-  object SwitchClause extends TopLevel[SwitchClause with Double]
+  @js.native
+  sealed trait SwitchClause
+    extends StObject
+       with FlowFlags
+  /* 128 */ val SwitchClause: typingsJapgolly.typescript.mod.FlowFlags.SwitchClause & Double = js.native
   
-  /* 32 */ @js.native
-  object TrueCondition extends TopLevel[TrueCondition with Double]
+  @js.native
+  sealed trait TrueCondition
+    extends StObject
+       with FlowFlags
+  /* 32 */ val TrueCondition: typingsJapgolly.typescript.mod.FlowFlags.TrueCondition & Double = js.native
   
-  /* 1 */ @js.native
-  object Unreachable extends TopLevel[Unreachable with Double]
-  
+  @js.native
+  sealed trait Unreachable
+    extends StObject
+       with FlowFlags
+  /* 1 */ val Unreachable: typingsJapgolly.typescript.mod.FlowFlags.Unreachable & Double = js.native
 }
-

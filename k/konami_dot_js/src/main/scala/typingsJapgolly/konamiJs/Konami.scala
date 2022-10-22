@@ -1,13 +1,7 @@
 package typingsJapgolly.konamiJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Konami")
-@js.native
-class Konami protected () extends js.Object {
-  def this(action: String) = this()
-  def this(action: js.Function) = this()
-}
-
+trait Konami extends StObject

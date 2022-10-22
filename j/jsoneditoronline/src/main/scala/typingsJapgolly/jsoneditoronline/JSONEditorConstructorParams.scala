@@ -1,23 +1,36 @@
 package typingsJapgolly.jsoneditoronline
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorConstructorParams extends js.Object {
+trait JSONEditorConstructorParams extends StObject {
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var fieldEditable: js.UndefOr[Boolean] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object JSONEditorConstructorParams {
-  @scala.inline
-  def apply(field: String = null, fieldEditable: js.UndefOr[Boolean] = js.undefined, value: js.Any = null): JSONEditorConstructorParams = {
+  
+  inline def apply(): JSONEditorConstructorParams = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (!js.isUndefined(fieldEditable)) __obj.updateDynamic("fieldEditable")(fieldEditable.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorConstructorParams]
   }
+  
+  extension [Self <: JSONEditorConstructorParams](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldEditable(value: Boolean): Self = StObject.set(x, "fieldEditable", value.asInstanceOf[js.Any])
+    
+    inline def setFieldEditableUndefined: Self = StObject.set(x, "fieldEditable", js.undefined)
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

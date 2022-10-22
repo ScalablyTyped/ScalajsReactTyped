@@ -1,8 +1,8 @@
 package typingsJapgolly.bootstrapColorpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.create
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.enable
   - typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.destroy
 */
-trait ColorPickerEvents extends js.Object
-
+trait ColorPickerEvents extends StObject
 object ColorPickerEvents {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def changeColor: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor = this.cast("changeColor")
-  @scala.inline
-  def create: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.create = this.cast("create")
-  @scala.inline
-  def destroy: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.destroy = this.cast("destroy")
-  @scala.inline
-  def disable: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.disable = this.cast("disable")
-  @scala.inline
-  def enable: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.enable = this.cast("enable")
-  @scala.inline
-  def hidePicker: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker = this.cast("hidePicker")
-  @scala.inline
-  def showPicker: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker = this.cast("showPicker")
+  
+  inline def changeColor: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor = "changeColor".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.changeColor]
+  
+  inline def create: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.create = "create".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.create]
+  
+  inline def destroy: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.destroy = "destroy".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.destroy]
+  
+  inline def disable: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.disable = "disable".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.disable]
+  
+  inline def enable: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.enable = "enable".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.enable]
+  
+  inline def hidePicker: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker = "hidePicker".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.hidePicker]
+  
+  inline def showPicker: typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker = "showPicker".asInstanceOf[typingsJapgolly.bootstrapColorpicker.bootstrapColorpickerStrings.showPicker]
 }
-

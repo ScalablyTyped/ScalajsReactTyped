@@ -1,12 +1,8 @@
 package typingsJapgolly.cordovaPluginContacts
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ContactField object is a reusable component that represents contact fields generically.
@@ -20,21 +16,31 @@ import scala.scalajs.js.annotation._
   * url when the value attribute contains a URL to the photo image, or base64 when the value
   * contains a base64-encoded image string.
   */
-trait ContactField extends js.Object {
+trait ContactField extends StObject {
+  
   /** Set to true if this ContactField contains the user's preferred value. */
   var pref: Boolean
+  
   /** A string that indicates what type of field this is, home for example. */
   var `type`: String
+  
   /** The value of the field, such as a phone number or email address. */
   var value: String
 }
-
-@JSGlobal("ContactField")
-@js.native
-object ContactField
-  extends /** Constructor for ContactField object */
-Instantiable0[ContactField]
-     with Instantiable1[/* type */ String, ContactField]
-     with Instantiable2[/* type */ String, /* value */ String, ContactField]
-     with Instantiable3[/* type */ String, /* value */ String, /* pref */ Boolean, ContactField]
-
+object ContactField {
+  
+  inline def apply(pref: Boolean, `type`: String, value: String): ContactField = {
+    val __obj = js.Dynamic.literal(pref = pref.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContactField]
+  }
+  
+  extension [Self <: ContactField](x: Self) {
+    
+    inline def setPref(value: Boolean): Self = StObject.set(x, "pref", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

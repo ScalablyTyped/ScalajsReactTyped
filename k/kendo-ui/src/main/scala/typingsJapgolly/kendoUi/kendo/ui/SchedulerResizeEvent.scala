@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerResizeEvent extends SchedulerEvent {
+trait SchedulerResizeEvent
+  extends StObject
+     with SchedulerEvent {
+  
   var event: js.UndefOr[typingsJapgolly.kendoUi.kendo.data.SchedulerEvent] = js.undefined
-  var slot: js.UndefOr[js.Any] = js.undefined
+  
+  var slot: js.UndefOr[Any] = js.undefined
 }
-
 object SchedulerResizeEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Scheduler,
-    event: typingsJapgolly.kendoUi.kendo.data.SchedulerEvent = null,
-    slot: js.Any = null
-  ): SchedulerResizeEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
-    if (slot != null) __obj.updateDynamic("slot")(slot.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Scheduler): SchedulerResizeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerResizeEvent]
   }
+  
+  extension [Self <: SchedulerResizeEvent](x: Self) {
+    
+    inline def setEvent(value: typingsJapgolly.kendoUi.kendo.data.SchedulerEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setSlot(value: Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    
+    inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+  }
 }
-

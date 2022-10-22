@@ -1,19 +1,16 @@
 package typingsJapgolly.jqueryNotify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryNotifyStrings {
-  @js.native
-  sealed trait above extends js.Object
   
   @js.native
-  sealed trait below extends js.Object
+  sealed trait above extends StObject
+  inline def above: above = "above".asInstanceOf[above]
   
-  @scala.inline
-  def above: above = "above".asInstanceOf[above]
-  @scala.inline
-  def below: below = "below".asInstanceOf[below]
+  @js.native
+  sealed trait below extends StObject
+  inline def below: below = "below".asInstanceOf[below]
 }
-

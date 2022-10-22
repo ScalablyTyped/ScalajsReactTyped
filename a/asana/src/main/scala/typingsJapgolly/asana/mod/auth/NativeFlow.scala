@@ -1,11 +1,14 @@
 package typingsJapgolly.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NativeFlow extends Flow {
+trait NativeFlow
+  extends StObject
+     with Flow {
+  
   /**
     * @param {String} code An authorization code obtained via `asanaAuthorizeUrl`.
     * @return {Promise<Object>} The token, which will include the `access_token`
@@ -14,6 +17,7 @@ trait NativeFlow extends Flow {
     * @param code
     */
   def accessToken(code: String): Unit
+  
   /**
     * @return {Promise} The access token, which will include a refresh token
     *     that can be stored in the future to create a client without going
@@ -21,10 +25,18 @@ trait NativeFlow extends Flow {
     * @param url
     * @return
     */
-  def promptForCode(url: String): js.Any
+  def promptForCode(url: String): Any
 }
-
-@JSImport("asana", "auth.NativeFlow")
-@js.native
-object NativeFlow extends TopLevel[NativeFlowStatic]
-
+object NativeFlow {
+  
+  @JSImport("asana", "auth.NativeFlow")
+  @js.native
+  val ^ : NativeFlowStatic = js.native
+  
+  extension [Self <: NativeFlow](x: Self) {
+    
+    inline def setAccessToken(value: String => Callback): Self = StObject.set(x, "accessToken", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setPromptForCode(value: String => Any): Self = StObject.set(x, "promptForCode", js.Any.fromFunction1(value))
+  }
+}

@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.arc
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.triangle
   - typingsJapgolly.highcharts.highchartsStrings.`triangle-down`
 */
-trait SymbolKeyValue extends js.Object
-
+trait SymbolKeyValue extends StObject
 object SymbolKeyValue {
-  @scala.inline
-  def arc: typingsJapgolly.highcharts.highchartsStrings.arc = this.cast("arc")
-  @scala.inline
-  def callout: typingsJapgolly.highcharts.highchartsStrings.callout = this.cast("callout")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def circle: typingsJapgolly.highcharts.highchartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def diamond: typingsJapgolly.highcharts.highchartsStrings.diamond = this.cast("diamond")
-  @scala.inline
-  def square: typingsJapgolly.highcharts.highchartsStrings.square = this.cast("square")
-  @scala.inline
-  def triangle: typingsJapgolly.highcharts.highchartsStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def `triangle-down`: typingsJapgolly.highcharts.highchartsStrings.`triangle-down` = this.cast("triangle-down")
+  
+  inline def arc: typingsJapgolly.highcharts.highchartsStrings.arc = "arc".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.arc]
+  
+  inline def callout: typingsJapgolly.highcharts.highchartsStrings.callout = "callout".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.callout]
+  
+  inline def circle: typingsJapgolly.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.circle]
+  
+  inline def diamond: typingsJapgolly.highcharts.highchartsStrings.diamond = "diamond".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.diamond]
+  
+  inline def square: typingsJapgolly.highcharts.highchartsStrings.square = "square".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.square]
+  
+  inline def triangle: typingsJapgolly.highcharts.highchartsStrings.triangle = "triangle".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.triangle]
+  
+  inline def `triangle-down`: typingsJapgolly.highcharts.highchartsStrings.`triangle-down` = "triangle-down".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.`triangle-down`]
 }
-

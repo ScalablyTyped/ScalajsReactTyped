@@ -1,17 +1,18 @@
 package typingsJapgolly.reactNativeUuidGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-uuid-generator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def getRandomUUID(): js.Promise[String] = js.native
-    def getRandomUUID(callback: js.Function1[/* uuid */ String, Unit]): Unit = js.native
-  }
+object mod {
   
+  object default {
+    
+    @JSImport("react-native-uuid-generator", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getRandomUUID(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")().asInstanceOf[js.Promise[String]]
+    inline def getRandomUUID(callback: js.Function1[/* uuid */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomUUID")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
 }
-

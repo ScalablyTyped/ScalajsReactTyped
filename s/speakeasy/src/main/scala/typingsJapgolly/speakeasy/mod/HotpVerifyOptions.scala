@@ -1,27 +1,34 @@
 package typingsJapgolly.speakeasy.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HotpVerifyOptions extends SharedOptions {
+trait HotpVerifyOptions
+  extends StObject
+     with SharedOptions {
+  
   /**
     * Counter value. This should be stored by
     * the application and must be incremented for each request.
     */
   var counter: Double
+  
   /**
     * The number of digits for the one-time passcode, defaults to 6
     */
   var digits: js.UndefOr[Double] = js.undefined
+  
   /**
     * Shared secret key
     */
   var secret: String
+  
   /**
     * Passcode to validate
     */
   var token: String
+  
   /**
     * The allowable margin for the counter.
     * The function will check "W" codes in the future against the provided
@@ -31,24 +38,27 @@ trait HotpVerifyOptions extends SharedOptions {
     */
   var window: js.UndefOr[Double] = js.undefined
 }
-
 object HotpVerifyOptions {
-  @scala.inline
-  def apply(
-    counter: Double,
-    secret: String,
-    token: String,
-    algorithm: Algorithm = null,
-    digits: Int | Double = null,
-    encoding: Encoding = null,
-    window: Int | Double = null
-  ): HotpVerifyOptions = {
+  
+  inline def apply(counter: Double, secret: String, token: String): HotpVerifyOptions = {
     val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
     __obj.asInstanceOf[HotpVerifyOptions]
   }
+  
+  extension [Self <: HotpVerifyOptions](x: Self) {
+    
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setWindow(value: Double): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+  }
 }
-

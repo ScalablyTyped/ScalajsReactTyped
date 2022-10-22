@@ -1,11 +1,7 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("WebGLTransformFeedback")
-@js.native
-object WebGLTransformFeedback extends Instantiable0[WebGLTransformFeedback]
-
+trait WebGLTransformFeedback extends StObject

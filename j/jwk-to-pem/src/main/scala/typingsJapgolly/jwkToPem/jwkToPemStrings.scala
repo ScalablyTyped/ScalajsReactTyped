@@ -1,19 +1,16 @@
 package typingsJapgolly.jwkToPem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwkToPemStrings {
-  @js.native
-  sealed trait EC extends js.Object
   
   @js.native
-  sealed trait RSA extends js.Object
+  sealed trait EC extends StObject
+  inline def EC: EC = "EC".asInstanceOf[EC]
   
-  @scala.inline
-  def EC: EC = "EC".asInstanceOf[EC]
-  @scala.inline
-  def RSA: RSA = "RSA".asInstanceOf[RSA]
+  @js.native
+  sealed trait RSA extends StObject
+  inline def RSA: RSA = "RSA".asInstanceOf[RSA]
 }
-

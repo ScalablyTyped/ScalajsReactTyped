@@ -1,15 +1,14 @@
 package typingsJapgolly.grunt.grunt
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("grunt.template")
-@js.native
-object template extends js.Object {
+object template {
+  
   @js.native
-  trait TemplateModule extends js.Object {
+  trait TemplateModule extends StObject {
+    
     /**
       * Add a named set of Lo-Dash template delimiters.
       *
@@ -17,6 +16,7 @@ object template extends js.Object {
       * but you could always add {% %} or [% %] style delimiters.
       */
     def addDelimiters(name: String, opener: String, closer: String): Unit = js.native
+    
     /**
       * Format a date using the dateformat library.
       * {@link https://github.com/felixge/node-dateformat}
@@ -26,10 +26,12 @@ object template extends js.Object {
     def date(): String = js.native
     def date(date: String): String = js.native
     def date(date: String, format: String): String = js.native
+    def date(date: js.Date): String = js.native
+    def date(date: js.Date, format: String): String = js.native
     def date(date: Double): String = js.native
     def date(date: Double, format: String): String = js.native
-    def date(date: Date): String = js.native
-    def date(date: Date, format: String): String = js.native
+    def date(date: Unit, format: String): String = js.native
+    
     /**
       * Process a Lo-Dash template string.
       *
@@ -44,8 +46,9 @@ object template extends js.Object {
       *
       * @note if the data object already has a grunt property, the grunt API will not be accessible in templates.
       */
-    def process(template: String): js.Function1[/* options */ js.Any, String] = js.native
-    def process(template: String, options: js.Any): String = js.native
+    def process(template: String): js.Function1[/* options */ Any, String] = js.native
+    def process(template: String, options: Any): String = js.native
+    
     /**
       * Set the Lo-Dash template delimiters to a predefined set in case you grunt.util._.template
       * needs to be called manually.
@@ -53,6 +56,7 @@ object template extends js.Object {
       * The config delimiters <% %> are included by default.
       */
     def setDelimiters(name: String): Unit = js.native
+    
     /**
       * Format today's date using the dateformat library using the current date and time.
       * {@link https://github.com/felixge/node-dateformat}
@@ -62,6 +66,4 @@ object template extends js.Object {
     def today(): String = js.native
     def today(format: String): String = js.native
   }
-  
 }
-

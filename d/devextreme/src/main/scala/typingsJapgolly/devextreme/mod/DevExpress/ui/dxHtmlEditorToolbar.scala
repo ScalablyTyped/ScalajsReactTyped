@@ -1,60 +1,51 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.devextremeStrings.alignCenter
-import typingsJapgolly.devextreme.devextremeStrings.alignJustify
-import typingsJapgolly.devextreme.devextremeStrings.alignLeft
-import typingsJapgolly.devextreme.devextremeStrings.alignRight
-import typingsJapgolly.devextreme.devextremeStrings.background
-import typingsJapgolly.devextreme.devextremeStrings.blockquote
-import typingsJapgolly.devextreme.devextremeStrings.bold
-import typingsJapgolly.devextreme.devextremeStrings.bulletList
-import typingsJapgolly.devextreme.devextremeStrings.clear
-import typingsJapgolly.devextreme.devextremeStrings.codeBlock
-import typingsJapgolly.devextreme.devextremeStrings.color
-import typingsJapgolly.devextreme.devextremeStrings.decreaseIndent
-import typingsJapgolly.devextreme.devextremeStrings.header
-import typingsJapgolly.devextreme.devextremeStrings.image
-import typingsJapgolly.devextreme.devextremeStrings.increaseIndent
-import typingsJapgolly.devextreme.devextremeStrings.italic
-import typingsJapgolly.devextreme.devextremeStrings.link
-import typingsJapgolly.devextreme.devextremeStrings.orderedList
-import typingsJapgolly.devextreme.devextremeStrings.redo
-import typingsJapgolly.devextreme.devextremeStrings.separator
-import typingsJapgolly.devextreme.devextremeStrings.strike
-import typingsJapgolly.devextreme.devextremeStrings.subscript
-import typingsJapgolly.devextreme.devextremeStrings.superscript
-import typingsJapgolly.devextreme.devextremeStrings.underline
-import typingsJapgolly.devextreme.devextremeStrings.undo
-import typingsJapgolly.devextreme.devextremeStrings.variable
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxHtmlEditor.HtmlEditorPredefinedToolbarItem
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxHtmlEditor.ToolbarItem
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxHtmlEditorToolbar extends js.Object {
-  /** Specifies the container in which to place the toolbar. */
-  var container: js.UndefOr[String | Element | JQuery] = js.undefined
-  /** Configures toolbar items. These items allow users to format text and execute commands. */
-  var items: js.UndefOr[
-    js.Array[
-      dxHtmlEditorToolbarItem | background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
-    ]
-  ] = js.undefined
+trait dxHtmlEditorToolbar extends StObject {
+  
+  /**
+    * Specifies the container in which to place the toolbar.
+    */
+  var container: js.UndefOr[String | UserDefinedElement[Element]] = js.undefined
+  
+  /**
+    * Configures toolbar items. These items allow users to format text and execute commands.
+    */
+  var items: js.UndefOr[js.Array[ToolbarItem | HtmlEditorPredefinedToolbarItem]] = js.undefined
+  
+  /**
+    * Specifies whether or not items are arranged into multiple lines when their combined width exceeds the toolbar width.
+    */
+  var multiline: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxHtmlEditorToolbar {
-  @scala.inline
-  def apply(
-    container: String | Element | JQuery = null,
-    items: js.Array[
-      dxHtmlEditorToolbarItem | background | bold | color | italic | link | image | strike | subscript | superscript | underline | blockquote | header | increaseIndent | decreaseIndent | orderedList | bulletList | alignLeft | alignCenter | alignRight | alignJustify | codeBlock | variable | separator | undo | redo | clear
-    ] = null
-  ): dxHtmlEditorToolbar = {
+  
+  inline def apply(): dxHtmlEditorToolbar = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxHtmlEditorToolbar]
   }
+  
+  extension [Self <: dxHtmlEditorToolbar](x: Self) {
+    
+    inline def setContainer(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setItems(value: js.Array[ToolbarItem | HtmlEditorPredefinedToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: (ToolbarItem | HtmlEditorPredefinedToolbarItem)*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    
+    inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+  }
 }
-

@@ -1,36 +1,35 @@
 package typingsJapgolly.facebookJsSdk.facebook
 
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.async
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.iframe
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.page
-import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.send
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendDialogParams extends DialogParams {
+trait SendDialogParams
+  extends StObject
+     with DialogParams {
+  
   var link: String
+  
   var method: send
+  
   var to: js.UndefOr[String] = js.undefined
 }
-
 object SendDialogParams {
-  @scala.inline
-  def apply(
-    link: String,
-    method: send,
-    app_id: String = null,
-    display: page | iframe | async | popup = null,
-    redirect_uri: String = null,
-    to: String = null
-  ): SendDialogParams = {
-    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+  
+  inline def apply(link: String): SendDialogParams = {
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = "send")
     __obj.asInstanceOf[SendDialogParams]
   }
+  
+  extension [Self <: SendDialogParams](x: Self) {
+    
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: send): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

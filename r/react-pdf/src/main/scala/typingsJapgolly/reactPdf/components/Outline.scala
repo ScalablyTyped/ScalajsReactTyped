@@ -1,47 +1,48 @@
 package typingsJapgolly.reactPdf.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.pdfjsDist.mod.PDFTreeNode
-import typingsJapgolly.reactPdf.AnonPageNumber
-import typingsJapgolly.reactPdf.outlineMod.Props
-import typingsJapgolly.reactPdf.outlineMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactPdf.anon.PageNumber
+import typingsJapgolly.reactPdf.distOutlineMod.Awaited
+import typingsJapgolly.reactPdf.distOutlineMod.Props
+import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Outline {
-  def apply(
-    className: String | js.Array[String] = null,
-    onItemClick: /* hasPageNumber */ AnonPageNumber => Callback = null,
-    onLoadError: /* error */ js.Error => Callback = null,
-    onLoadSuccess: /* outline */ js.Array[PDFTreeNode] => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction1((t0: /* hasPageNumber */ typingsJapgolly.reactPdf.AnonPageNumber) => onItemClick(t0).runNow()))
-    if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1((t0: /* error */ js.Error) => onLoadError(t0).runNow()))
-    if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(js.Any.fromFunction1((t0: /* outline */ js.Array[typingsJapgolly.pdfjsDist.mod.PDFTreeNode]) => onLoadSuccess(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPdf.outlineMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactPdf.outlineMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPdf.outlineMod.Props])(children: _*)
-  }
-  @JSImport("react-pdf/dist/Outline", JSImport.Default)
+  @JSImport("react-pdf", "Outline")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactPdf.mod.Outline] {
+    
+    inline def className(value: String | js.Array[String]): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classNameVarargs(value: String*): this.type = set("className", js.Array(value*))
+    
+    inline def onItemClick(value: /* hasPageNumber */ PageNumber => Callback): this.type = set("onItemClick", js.Any.fromFunction1((t0: /* hasPageNumber */ PageNumber) => value(t0).runNow()))
+    
+    inline def onLoadError(value: /* error */ js.Error => Callback): this.type = set("onLoadError", js.Any.fromFunction1((t0: /* error */ js.Error) => value(t0).runNow()))
+    
+    inline def onLoadSuccess(
+      value: /* outline */ Awaited[
+          ReturnType[
+            /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<(src : pdfjs-dist.pdfjs-dist/types/src/display/api.GetDocumentParameters): pdfjs-dist.pdfjs-dist/types/src/display/api.PDFDocumentLoadingTask>['promise']>['getOutline'] */ js.Any
+          ]
+        ] => Callback
+    ): this.type = set("onLoadSuccess", js.Any.fromFunction1((t0: /* outline */ Awaited[
+          ReturnType[
+            /* import warning: importer.ImportType#apply Failed type conversion: react-pdf.react-pdf/dist/Outline.Awaited<std.ReturnType<(src : pdfjs-dist.pdfjs-dist/types/src/display/api.GetDocumentParameters): pdfjs-dist.pdfjs-dist/types/src/display/api.PDFDocumentLoadingTask>['promise']>['getOutline'] */ js.Any
+          ]
+        ]) => value(t0).runNow()))
+  }
+  
+  implicit def make(companion: Outline.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

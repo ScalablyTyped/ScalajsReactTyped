@@ -1,25 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopOverPane extends js.Object {
+trait PopOverPane extends StObject {
+  
   var initial: js.UndefOr[String] = js.undefined
+  
   var layout: js.UndefOr[String] = js.undefined
+  
   var loading: js.UndefOr[String] = js.undefined
+  
   var transition: js.UndefOr[String] = js.undefined
 }
-
 object PopOverPane {
-  @scala.inline
-  def apply(initial: String = null, layout: String = null, loading: String = null, transition: String = null): PopOverPane = {
+  
+  inline def apply(): PopOverPane = {
     val __obj = js.Dynamic.literal()
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopOverPane]
   }
+  
+  extension [Self <: PopOverPane](x: Self) {
+    
+    inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+  }
 }
-

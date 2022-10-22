@@ -1,46 +1,80 @@
 package typingsJapgolly.tryghostContentApi.mod
 
-import typingsJapgolly.tryghostContentApi.AnonPosts
+import typingsJapgolly.tryghostContentApi.anon.Posts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Tag
-  extends Identification
+  extends StObject
+     with Identification
      with Metadata
+     with SocialMedia
      with GhostData {
-  var count: js.UndefOr[AnonPosts] = js.undefined
+  
+  var accent_color: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var canonical_url: js.UndefOr[Nullable[String]] = js.undefined
+  
+  var count: js.UndefOr[Posts] = js.undefined
+  
   var description: js.UndefOr[Nullable[String]] = js.undefined
+  
   var feature_image: js.UndefOr[Nullable[String]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var visibility: js.UndefOr[TagVisibility] = js.undefined
 }
-
 object Tag {
-  @scala.inline
-  def apply(
-    id: String,
-    slug: String,
-    count: AnonPosts = null,
-    description: Nullable[String] = null,
-    feature_image: Nullable[String] = null,
-    meta_description: Nullable[String] = null,
-    meta_title: Nullable[String] = null,
-    name: String = null,
-    url: String = null,
-    visibility: TagVisibility = null
-  ): Tag = {
+  
+  inline def apply(id: String, slug: String): Tag = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (feature_image != null) __obj.updateDynamic("feature_image")(feature_image.asInstanceOf[js.Any])
-    if (meta_description != null) __obj.updateDynamic("meta_description")(meta_description.asInstanceOf[js.Any])
-    if (meta_title != null) __obj.updateDynamic("meta_title")(meta_title.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Tag]
   }
+  
+  extension [Self <: Tag](x: Self) {
+    
+    inline def setAccent_color(value: Nullable[String]): Self = StObject.set(x, "accent_color", value.asInstanceOf[js.Any])
+    
+    inline def setAccent_colorNull: Self = StObject.set(x, "accent_color", null)
+    
+    inline def setAccent_colorUndefined: Self = StObject.set(x, "accent_color", js.undefined)
+    
+    inline def setCanonical_url(value: Nullable[String]): Self = StObject.set(x, "canonical_url", value.asInstanceOf[js.Any])
+    
+    inline def setCanonical_urlNull: Self = StObject.set(x, "canonical_url", null)
+    
+    inline def setCanonical_urlUndefined: Self = StObject.set(x, "canonical_url", js.undefined)
+    
+    inline def setCount(value: Posts): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setDescription(value: Nullable[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFeature_image(value: Nullable[String]): Self = StObject.set(x, "feature_image", value.asInstanceOf[js.Any])
+    
+    inline def setFeature_imageNull: Self = StObject.set(x, "feature_image", null)
+    
+    inline def setFeature_imageUndefined: Self = StObject.set(x, "feature_image", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVisibility(value: TagVisibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+  }
 }
-

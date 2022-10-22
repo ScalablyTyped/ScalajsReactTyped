@@ -1,27 +1,33 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.IHTMLTableSection")
 @js.native
-class IHTMLTableSection protected () extends js.Object {
-  @JSName("MSHTML.IHTMLTableSection_typekey")
+trait IHTMLTableSection extends StObject {
+  
+  /* private */ @JSName("MSHTML.IHTMLTableSection_typekey")
   var MSHTMLDotIHTMLTableSection_typekey: IHTMLTableSection = js.native
+  
   var align: String = js.native
-  var bgColor: js.Any = js.native
-  @JSName("rows")
-  val rows_Original: IHTMLElementCollection = js.native
-  var vAlign: String = js.native
+  
+  var bgColor: Any = js.native
+  
   /** @param index [index=-1] */
   def deleteRow(): Unit = js.native
   def deleteRow(index: Double): Unit = js.native
+  
   /** @param index [index=-1] */
-  def insertRow(): js.Any = js.native
-  def insertRow(index: Double): js.Any = js.native
-  def rows(): js.Any = js.native
-  def rows(name: js.Any): js.Any = js.native
-  def rows(name: js.Any, index: js.Any): js.Any = js.native
+  def insertRow(): Any = js.native
+  def insertRow(index: Double): Any = js.native
+  
+  def rows(): Any = js.native
+  def rows(name: Any): Any = js.native
+  def rows(name: Any, index: Any): Any = js.native
+  def rows(name: Unit, index: Any): Any = js.native
+  @JSName("rows")
+  val rows_Original: IHTMLElementCollection = js.native
+  
+  var vAlign: String = js.native
 }
-

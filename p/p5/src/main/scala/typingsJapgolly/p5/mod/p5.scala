@@ -1,19 +1,31 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 @js.native
-trait p5 extends p5InstanceExtensions {
+trait p5
+  extends StObject
+     with p5InstanceExtensions {
+  
   /**
-    *   Allows for the friendly error system (FES) to be
-    *   turned off when creating a sketch, which can give
-    *   a significant boost to performance when needed.
+    *   Turn off some features of the friendly error
+    *   system (FES), which can give a significant boost
+    *   to performance when needed. Note that this will
+    *   disable the parts of the FES that cause
+    *   performance slowdown (like argument checking).
+    *   Friendly errors that have no performance cost
+    *   (like giving an descriptive error if a file load
+    *   fails, or warning you if you try to override p5.js
+    *   functions in the global space), will remain in
+    *   place.
+    *
     *   See  disabling the friendly error system.
     */
   var disableFriendlyErrors: Boolean = js.native
+  
   /**
     *   Called directly after setup(), the draw() function
     *   continuously executes the lines of code contained
@@ -21,7 +33,7 @@ trait p5 extends p5InstanceExtensions {
     *   noLoop() is called. Note if noLoop() is called in
     *   setup(), draw() will still be executed once before
     *   stopping. draw() is called automatically and
-    *   should never be called explicitly.  It should
+    *   should never be called explicitly. It should
     *   always be controlled with noLoop(), redraw() and
     *   loop(). After noLoop() stops the code in draw()
     *   from executing, redraw() causes the code inside
@@ -29,10 +41,8 @@ trait p5 extends p5InstanceExtensions {
     *   code inside draw() to resume executing
     *   continuously.
     *
-    *
     *   The number of times draw() executes in each second
     *   may be controlled with the frameRate() function.
-    *
     *
     *   There can only be one draw() function for each
     *   sketch, and draw() must exist if you want the code
@@ -40,7 +50,6 @@ trait p5 extends p5InstanceExtensions {
     *   mousePressed(). Sometimes, you might have an empty
     *   call to draw() in your program, as shown in the
     *   above example.
-    *
     *
     *   It is important to note that the drawing
     *   coordinate system will be reset at the beginning
@@ -53,6 +62,7 @@ trait p5 extends p5InstanceExtensions {
     *   effect.
     */
   def draw(): Unit = js.native
+  
   /**
     *   Called directly before setup(), the preload()
     *   function is used to handle asynchronous loading of
@@ -64,12 +74,13 @@ trait p5 extends p5InstanceExtensions {
     *   function. If asynchronous loading is preferred,
     *   the load methods can instead be called in setup()
     *   or anywhere else with the use of a callback
-    *   parameter.  By default the text "loading..." will
+    *   parameter. By default the text "loading..." will
     *   be displayed. To make your own loading page,
     *   include an HTML element with id "p5_loading" in
     *   your page. More information here.
     */
   def preload(): Unit = js.native
+  
   /**
     *   Removes the entire p5 sketch. This will remove the
     *   canvas and any elements created by p5.js. It will
@@ -83,6 +94,7 @@ trait p5 extends p5InstanceExtensions {
     *   will remain.
     */
   def remove(): Unit = js.native
+  
   /**
     *   The setup() function is called once when the
     *   program starts. It's used to define initial
@@ -91,10 +103,9 @@ trait p5 extends p5InstanceExtensions {
     *   and fonts as the program starts. There can only be
     *   one setup() function for each program and it
     *   shouldn't be called again after its initial
-    *   execution.  Note: Variables declared within
-    *   setup() are not accessible within other functions,
+    *   execution. Note: Variables declared within setup()
+    *   are not accessible within other functions,
     *   including draw().
     */
   def setup(): Unit = js.native
 }
-

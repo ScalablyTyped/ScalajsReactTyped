@@ -1,8 +1,8 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.left
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.start
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.end
 */
-trait DataAlignType extends js.Object
-
+trait DataAlignType extends StObject
 object DataAlignType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.center = this.cast("center")
-  @scala.inline
-  def end: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.end = this.cast("end")
-  @scala.inline
-  def left: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.right = this.cast("right")
-  @scala.inline
-  def start: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.start = this.cast("start")
+  
+  inline def center: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.center = "center".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.center]
+  
+  inline def end: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.end = "end".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.end]
+  
+  inline def left: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.left = "left".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.left]
+  
+  inline def right: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.right = "right".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.right]
+  
+  inline def start: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.start = "start".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.start]
 }
-

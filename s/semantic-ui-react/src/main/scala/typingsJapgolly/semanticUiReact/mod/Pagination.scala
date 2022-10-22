@@ -1,19 +1,18 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.semanticUiReact.paginationMod.default
+import typingsJapgolly.semanticUiReact.distCommonjsAddonsPaginationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Pagination")
 @js.native
-class Pagination () extends default
-
-/* static members */
-@JSImport("semantic-ui-react", "Pagination")
-@js.native
-object Pagination extends js.Object {
-  var Item: Instantiable0[typingsJapgolly.semanticUiReact.paginationItemMod.default] = js.native
+open class Pagination () extends default
+object Pagination {
+  
+  /* was `typeof PaginationItem` */
+  @JSImport("semantic-ui-react", "Pagination.Item")
+  @js.native
+  open class Item ()
+    extends typingsJapgolly.semanticUiReact.distCommonjsAddonsPaginationMod.default.Item
 }
-

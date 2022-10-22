@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Input.Inking
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InkRecognitionTarget extends js.Object
-
+sealed trait InkRecognitionTarget extends StObject
 @JSGlobal("Windows.UI.Input.Inking.InkRecognitionTarget")
 @js.native
-object InkRecognitionTarget extends js.Object {
-  @js.native
-  sealed trait all extends InkRecognitionTarget
+object InkRecognitionTarget extends StObject {
   
   @js.native
-  sealed trait recent extends InkRecognitionTarget
+  sealed trait all
+    extends StObject
+       with InkRecognitionTarget
   
   @js.native
-  sealed trait selected extends InkRecognitionTarget
+  sealed trait recent
+    extends StObject
+       with InkRecognitionTarget
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InkRecognitionTarget with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 2 */ @js.native
-  object recent extends TopLevel[recent with Double]
-  
-  /* 1 */ @js.native
-  object selected extends TopLevel[selected with Double]
-  
+  @js.native
+  sealed trait selected
+    extends StObject
+       with InkRecognitionTarget
 }
-

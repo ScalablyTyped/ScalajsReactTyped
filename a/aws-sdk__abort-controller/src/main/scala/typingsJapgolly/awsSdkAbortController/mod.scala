@@ -1,19 +1,18 @@
 package typingsJapgolly.awsSdkAbortController
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/abort-controller", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class AbortController ()
-    extends typingsJapgolly.awsSdkAbortController.abortControllerMod.AbortController
+object mod {
   
+  @JSImport("@aws-sdk/abort-controller", "AbortController")
   @js.native
-  class AbortSignal ()
-    extends typingsJapgolly.awsSdkAbortController.abortSignalMod.AbortSignal
+  open class AbortController ()
+    extends typingsJapgolly.awsSdkAbortController.distTypesAbortControllerMod.AbortController
   
+  @JSImport("@aws-sdk/abort-controller", "AbortSignal")
+  @js.native
+  open class AbortSignal ()
+    extends typingsJapgolly.awsSdkAbortController.distTypesAbortSignalMod.AbortSignal
 }
-

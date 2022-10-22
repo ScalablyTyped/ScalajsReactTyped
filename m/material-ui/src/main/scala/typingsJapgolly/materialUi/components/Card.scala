@@ -1,56 +1,44 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.Card.CardProps
-import typingsJapgolly.materialUi.cardMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
-  def apply(
-    actAsExpander: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    containerStyle: CSSProperties = null,
-    expandable: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    initiallyExpanded: js.UndefOr[Boolean] = js.undefined,
-    onExpandChange: /* isExpanded */ Boolean => Callback = null,
-    showExpandableButton: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CardProps, default, Unit, CardProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(actAsExpander)) __obj.updateDynamic("actAsExpander")(actAsExpander.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(initiallyExpanded)) __obj.updateDynamic("initiallyExpanded")(initiallyExpanded.asInstanceOf[js.Any])
-    if (onExpandChange != null) __obj.updateDynamic("onExpandChange")(js.Any.fromFunction1((t0: /* isExpanded */ scala.Boolean) => onExpandChange(t0).runNow()))
-    if (!js.isUndefined(showExpandableButton)) __obj.updateDynamic("showExpandableButton")(showExpandableButton.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Card.CardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.cardMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Card.CardProps])(children: _*)
-  }
-  @JSImport("material-ui/Card", JSImport.Default)
+  @JSImport("material-ui", "Card")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Card] {
+    
+    inline def actAsExpander(value: Boolean): this.type = set("actAsExpander", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def containerStyle(value: CSSProperties): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def expandable(value: Boolean): this.type = set("expandable", value.asInstanceOf[js.Any])
+    
+    inline def expanded(value: Boolean): this.type = set("expanded", value.asInstanceOf[js.Any])
+    
+    inline def initiallyExpanded(value: Boolean): this.type = set("initiallyExpanded", value.asInstanceOf[js.Any])
+    
+    inline def onExpandChange(value: /* isExpanded */ Boolean => Callback): this.type = set("onExpandChange", js.Any.fromFunction1((t0: /* isExpanded */ Boolean) => value(t0).runNow()))
+    
+    inline def showExpandableButton(value: Boolean): this.type = set("showExpandableButton", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Card.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

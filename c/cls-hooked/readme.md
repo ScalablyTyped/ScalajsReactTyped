@@ -10,10 +10,10 @@ CLS using AsynWrap instead of async-listener - Node >= 4.7.0
 | ------------------ | :-------------: |
 | Full name          | cls-hooked |
 | Keywords           | threading, shared, context |
-| # releases         | 0 |
-| # dependents       | 161 |
-| # downloads        | 8145133 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5114512.666666667 |
+| # stars            | 646.0 |
 
 ## Links
 - [Homepage](https://github.com/jeff-lewis/cls-hooked#readme)

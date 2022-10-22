@@ -1,24 +1,40 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
+import typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.compact
+import typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.messages
+import typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.off
+import typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.verbose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.off
-  - typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.messages
-  - typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.verbose
-*/
-trait TraceValues extends js.Object
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TraceValues {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def messages: typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.messages = this.cast("messages")
-  @scala.inline
-  def off: typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.off = this.cast("off")
-  @scala.inline
-  def verbose: typingsJapgolly.vscodeJsonrpc.vscodeJsonrpcStrings.verbose = this.cast("verbose")
+  
+  /**
+    * Compact message tracing.
+    */
+  @JSImport("vscode-jsonrpc", "TraceValues.Compact")
+  @js.native
+  val Compact: compact = js.native
+  
+  /**
+    * Trace messages only.
+    */
+  @JSImport("vscode-jsonrpc", "TraceValues.Messages")
+  @js.native
+  val Messages: messages = js.native
+  
+  /**
+    * Turn tracing off.
+    */
+  @JSImport("vscode-jsonrpc", "TraceValues.Off")
+  @js.native
+  val Off: off = js.native
+  
+  /**
+    * Verbose message tracing.
+    */
+  @JSImport("vscode-jsonrpc", "TraceValues.Verbose")
+  @js.native
+  val Verbose: verbose = js.native
 }
-

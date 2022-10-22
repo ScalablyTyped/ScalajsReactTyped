@@ -1,7 +1,7 @@
 
 # Scala.js typings for tar-fs
 
-Typings are for version 1.16
+Typings are for version 2.0
 
 ## Library description:
 filesystem bindings for tar-stream
@@ -10,10 +10,10 @@ filesystem bindings for tar-stream
 | ------------------ | :-------------: |
 | Full name          | tar-fs |
 | Keywords           | tar, fs, file, tarball, directory, stream |
-| # releases         | 5 |
-| # dependents       | 505 |
-| # downloads        | 51393940 |
-| # stars            | 12 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0369528333333332E7 |
+| # stars            | 323.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/tar-fs)

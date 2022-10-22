@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.badgeMod.BadgeProps
+import typingsJapgolly.reactstrap.typesLibBadgeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Badge")
 @js.native
-class Badge[T] ()
-  extends Component[BadgeProps, js.Object, js.Any]
-
+open class Badge () extends default

@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.modalTitleMod.ModalTitleProps
+import typingsJapgolly.reactBootstrap.libModalTitleMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "ModalTitle")
 @js.native
-class ModalTitle ()
-  extends Component[ModalTitleProps, js.Object, js.Any]
-
+open class ModalTitle () extends ^

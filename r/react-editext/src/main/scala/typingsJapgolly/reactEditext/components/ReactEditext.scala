@@ -1,72 +1,119 @@
 package typingsJapgolly.reactEditext.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLButtonElement
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ButtonHTMLAttributes
+import typingsJapgolly.react.mod.DetailedHTMLProps
+import typingsJapgolly.react.mod.HTMLAttributes
+import typingsJapgolly.reactEditext.mod.ButtonsAlignment
 import typingsJapgolly.reactEditext.mod.EdiTextProps
 import typingsJapgolly.reactEditext.mod.EdiTextType
-import typingsJapgolly.reactEditext.mod.default
+import typingsJapgolly.reactEditext.mod.InputProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactEditext {
-  def apply(
-    value: String,
-    onSave: /* repeated */ String => CallbackTo[js.Any],
-    `type`: EdiTextType,
-    cancelButtonClassName: String = null,
-    cancelButtonContent: js.Any = null,
-    editButtonClassName: String = null,
-    editButtonContent: js.Any = null,
-    hideIcons: js.UndefOr[Boolean] = js.undefined,
-    hint: VdomNode = null,
-    inputProps: js.Object = null,
-    onCancel: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    onValidationFail: /* repeated */ String => CallbackTo[js.Any] = null,
-    saveButtonClassName: String = null,
-    saveButtonContent: js.Any = null,
-    validation: /* repeated */ String => CallbackTo[Boolean] = null,
-    validationMessage: String = null,
-    viewProps: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[EdiTextProps, default, Unit, EdiTextProps] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onSave")(js.Any.fromFunction1((t0: /* repeated */ java.lang.String) => onSave(t0).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (cancelButtonClassName != null) __obj.updateDynamic("cancelButtonClassName")(cancelButtonClassName.asInstanceOf[js.Any])
-    if (cancelButtonContent != null) __obj.updateDynamic("cancelButtonContent")(cancelButtonContent.asInstanceOf[js.Any])
-    if (editButtonClassName != null) __obj.updateDynamic("editButtonClassName")(editButtonClassName.asInstanceOf[js.Any])
-    if (editButtonContent != null) __obj.updateDynamic("editButtonContent")(editButtonContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideIcons)) __obj.updateDynamic("hideIcons")(hideIcons.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.rawNode.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onCancel(t0).runNow()))
-    if (onValidationFail != null) __obj.updateDynamic("onValidationFail")(js.Any.fromFunction1((t0: /* repeated */ java.lang.String) => onValidationFail(t0).runNow()))
-    if (saveButtonClassName != null) __obj.updateDynamic("saveButtonClassName")(saveButtonClassName.asInstanceOf[js.Any])
-    if (saveButtonContent != null) __obj.updateDynamic("saveButtonContent")(saveButtonContent.asInstanceOf[js.Any])
-    if (validation != null) __obj.updateDynamic("validation")(js.Any.fromFunction1((t0: /* repeated */ java.lang.String) => validation(t0).runNow()))
-    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage.asInstanceOf[js.Any])
-    if (viewProps != null) __obj.updateDynamic("viewProps")(viewProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactEditext.mod.EdiTextProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactEditext.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactEditext.mod.EdiTextProps])(children: _*)
+  inline def apply(onSave: (Any, js.UndefOr[InputProps]) => Any, value: String): Builder = {
+    val __props = js.Dynamic.literal(onSave = js.Any.fromFunction2(onSave), value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[EdiTextProps]))
   }
+  
   @JSImport("react-editext", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def buttonsAlign(value: ButtonsAlignment): this.type = set("buttonsAlign", value.asInstanceOf[js.Any])
+    
+    inline def canEdit(value: Boolean | js.Function0[Boolean]): this.type = set("canEdit", value.asInstanceOf[js.Any])
+    
+    inline def canEditCallbackTo(value: CallbackTo[Boolean]): this.type = set("canEdit", value.toJsFn)
+    
+    inline def cancelButtonClassName(value: String): this.type = set("cancelButtonClassName", value.asInstanceOf[js.Any])
+    
+    inline def cancelButtonContent(value: Any): this.type = set("cancelButtonContent", value.asInstanceOf[js.Any])
+    
+    inline def cancelOnEscape(value: Boolean): this.type = set("cancelOnEscape", value.asInstanceOf[js.Any])
+    
+    inline def cancelOnUnfocus(value: Boolean): this.type = set("cancelOnUnfocus", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def containerProps(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): this.type = set("containerProps", value.asInstanceOf[js.Any])
+    
+    inline def editButtonClassName(value: String): this.type = set("editButtonClassName", value.asInstanceOf[js.Any])
+    
+    inline def editButtonContent(value: Any): this.type = set("editButtonContent", value.asInstanceOf[js.Any])
+    
+    inline def editButtonProps(value: DetailedHTMLProps[ButtonHTMLAttributes[HTMLButtonElement], HTMLButtonElement]): this.type = set("editButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def editContainerClassName(value: String): this.type = set("editContainerClassName", value.asInstanceOf[js.Any])
+    
+    inline def editOnViewClick(value: Boolean): this.type = set("editOnViewClick", value.asInstanceOf[js.Any])
+    
+    inline def editing(value: Boolean): this.type = set("editing", value.asInstanceOf[js.Any])
+    
+    inline def hideIcons(value: Boolean): this.type = set("hideIcons", value.asInstanceOf[js.Any])
+    
+    inline def hint(value: VdomNode): this.type = set("hint", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def hintNull: this.type = set("hint", null)
+    
+    inline def hintVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("hint", js.Array(value*))
+    
+    inline def hintVdomElement(value: VdomElement): this.type = set("hint", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: InputProps): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def mainContainerClassName(value: String): this.type = set("mainContainerClassName", value.asInstanceOf[js.Any])
+    
+    inline def onCancel(value: (/* value */ Any, /* inputProps */ js.UndefOr[InputProps]) => Any): this.type = set("onCancel", js.Any.fromFunction2(value))
+    
+    inline def onEditingStart(value: (/* value */ Any, /* inputProps */ js.UndefOr[InputProps]) => Any): this.type = set("onEditingStart", js.Any.fromFunction2(value))
+    
+    inline def onValidationFail(value: /* repeated */ String => Any): this.type = set("onValidationFail", js.Any.fromFunction1(value))
+    
+    inline def renderValue(value: /* value */ Any => Any): this.type = set("renderValue", js.Any.fromFunction1(value))
+    
+    inline def saveButtonClassName(value: String): this.type = set("saveButtonClassName", value.asInstanceOf[js.Any])
+    
+    inline def saveButtonContent(value: Any): this.type = set("saveButtonContent", value.asInstanceOf[js.Any])
+    
+    inline def showButtonsOnHover(value: Boolean): this.type = set("showButtonsOnHover", value.asInstanceOf[js.Any])
+    
+    inline def startEditingOnEnter(value: Boolean): this.type = set("startEditingOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def startEditingOnFocus(value: Boolean): this.type = set("startEditingOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def submitOnEnter(value: Boolean): this.type = set("submitOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def submitOnUnfocus(value: Boolean): this.type = set("submitOnUnfocus", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: EdiTextType): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def validation(value: /* repeated */ String => Boolean | js.Promise[Boolean]): this.type = set("validation", js.Any.fromFunction1(value))
+    
+    inline def validationMessage(value: Any): this.type = set("validationMessage", value.asInstanceOf[js.Any])
+    
+    inline def viewContainerClassName(value: String): this.type = set("viewContainerClassName", value.asInstanceOf[js.Any])
+    
+    inline def viewProps(value: DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]): this.type = set("viewProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: EdiTextProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

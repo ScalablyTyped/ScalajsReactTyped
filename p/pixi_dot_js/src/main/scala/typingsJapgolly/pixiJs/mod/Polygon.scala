@@ -1,19 +1,13 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiMath.mod.IPointData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * A class to define a shape via user defined co-orinates.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Polygon")
 @js.native
-class Polygon protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Polygon {
-  def this(points: (js.Array[js.Array[Double] | Double | typingsJapgolly.pixiJs.PIXI.Point])*) = this()
+open class Polygon protected ()
+  extends typingsJapgolly.pixiMath.mod.Polygon {
+  def this(points: js.Array[Double | IPointData]) = this()
 }
-

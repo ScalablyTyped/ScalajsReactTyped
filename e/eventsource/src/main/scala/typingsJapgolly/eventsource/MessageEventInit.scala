@@ -1,33 +1,38 @@
 package typingsJapgolly.eventsource
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageEventInit extends EventInit {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait MessageEventInit[T]
+  extends StObject
+     with EventInit {
+  
+  var data: js.UndefOr[T] = js.undefined
+  
   var lastEventId: js.UndefOr[String] = js.undefined
+  
   var origin: js.UndefOr[String] = js.undefined
 }
-
 object MessageEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    data: js.Any = null,
-    lastEventId: String = null,
-    origin: String = null
-  ): MessageEventInit = {
+  
+  inline def apply[T](): MessageEventInit[T] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (lastEventId != null) __obj.updateDynamic("lastEventId")(lastEventId.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MessageEventInit]
+    __obj.asInstanceOf[MessageEventInit[T]]
+  }
+  
+  extension [Self <: MessageEventInit[?], T](x: Self & MessageEventInit[T]) {
+    
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setLastEventId(value: String): Self = StObject.set(x, "lastEventId", value.asInstanceOf[js.Any])
+    
+    inline def setLastEventIdUndefined: Self = StObject.set(x, "lastEventId", js.undefined)
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
   }
 }
-

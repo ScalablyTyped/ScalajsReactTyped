@@ -1,63 +1,59 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`1024`
-import typingsJapgolly.activexDao.activexDaoNumbers.`128`
-import typingsJapgolly.activexDao.activexDaoNumbers.`16`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2048`
-import typingsJapgolly.activexDao.activexDaoNumbers.`256`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`32`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4`
-import typingsJapgolly.activexDao.activexDaoNumbers.`512`
-import typingsJapgolly.activexDao.activexDaoNumbers.`64`
-import typingsJapgolly.activexDao.activexDaoNumbers.`8`
+import typingsJapgolly.activexDao.activexDaoInts.`1024`
+import typingsJapgolly.activexDao.activexDaoInts.`128`
+import typingsJapgolly.activexDao.activexDaoInts.`16`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`2048`
+import typingsJapgolly.activexDao.activexDaoInts.`256`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`32`
+import typingsJapgolly.activexDao.activexDaoInts.`4`
+import typingsJapgolly.activexDao.activexDaoInts.`512`
+import typingsJapgolly.activexDao.activexDaoInts.`64`
+import typingsJapgolly.activexDao.activexDaoInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`8`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`32`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2048`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`128`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`256`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`16`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1024`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`512`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`64`
+  - typingsJapgolly.activexDao.activexDaoInts.`8`
+  - typingsJapgolly.activexDao.activexDaoInts.`32`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`2048`
+  - typingsJapgolly.activexDao.activexDaoInts.`128`
+  - typingsJapgolly.activexDao.activexDaoInts.`256`
+  - typingsJapgolly.activexDao.activexDaoInts.`16`
+  - typingsJapgolly.activexDao.activexDaoInts.`4`
+  - typingsJapgolly.activexDao.activexDaoInts.`1024`
+  - typingsJapgolly.activexDao.activexDaoInts.`512`
+  - typingsJapgolly.activexDao.activexDaoInts.`64`
 */
-trait RecordsetOptionEnum extends js.Object
-
+trait RecordsetOptionEnum extends StObject
 object RecordsetOptionEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbAppendOnly: `8` = this.cast(8)
-  @scala.inline
-  def dbConsistent: `32` = this.cast(32)
-  @scala.inline
-  def dbDenyRead: `2` = this.cast(2)
-  @scala.inline
-  def dbDenyWrite: `1` = this.cast(1)
-  @scala.inline
-  def dbExecDirect: `2048` = this.cast(2048)
-  @scala.inline
-  def dbFailOnError: `128` = this.cast(128)
-  @scala.inline
-  def dbForwardOnly: `256` = this.cast(256)
-  @scala.inline
-  def dbInconsistent: `16` = this.cast(16)
-  @scala.inline
-  def dbReadOnly: `4` = this.cast(4)
-  @scala.inline
-  def dbRunAsync: `1024` = this.cast(1024)
-  @scala.inline
-  def dbSQLPassThrough: `64` = this.cast(64)
-  @scala.inline
-  def dbSeeChanges: `512` = this.cast(512)
+  
+  inline def dbAppendOnly: `8` = 8.asInstanceOf[`8`]
+  
+  inline def dbConsistent: `32` = 32.asInstanceOf[`32`]
+  
+  inline def dbDenyRead: `2` = 2.asInstanceOf[`2`]
+  
+  inline def dbDenyWrite: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbExecDirect: `2048` = 2048.asInstanceOf[`2048`]
+  
+  inline def dbFailOnError: `128` = 128.asInstanceOf[`128`]
+  
+  inline def dbForwardOnly: `256` = 256.asInstanceOf[`256`]
+  
+  inline def dbInconsistent: `16` = 16.asInstanceOf[`16`]
+  
+  inline def dbReadOnly: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbRunAsync: `1024` = 1024.asInstanceOf[`1024`]
+  
+  inline def dbSQLPassThrough: `64` = 64.asInstanceOf[`64`]
+  
+  inline def dbSeeChanges: `512` = 512.asInstanceOf[`512`]
 }
-

@@ -1,26 +1,31 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the setAssociations mixin of the belongsToMany association.
   * @see BelongsToManySetAssociationsMixin
   */
-trait BelongsToManySetAssociationsMixinOptions extends js.Object {
+trait BelongsToManySetAssociationsMixinOptions extends StObject {
+  
   /**
     * Run validation for the join model.
     */
   var validate: js.UndefOr[Boolean] = js.undefined
 }
-
 object BelongsToManySetAssociationsMixinOptions {
-  @scala.inline
-  def apply(validate: js.UndefOr[Boolean] = js.undefined): BelongsToManySetAssociationsMixinOptions = {
+  
+  inline def apply(): BelongsToManySetAssociationsMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(validate)) __obj.updateDynamic("validate")(validate.asInstanceOf[js.Any])
     __obj.asInstanceOf[BelongsToManySetAssociationsMixinOptions]
   }
+  
+  extension [Self <: BelongsToManySetAssociationsMixinOptions](x: Self) {
+    
+    inline def setValidate(value: Boolean): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+  }
 }
-

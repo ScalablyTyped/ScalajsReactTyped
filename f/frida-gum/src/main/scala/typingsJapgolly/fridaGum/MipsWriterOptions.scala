@@ -1,10 +1,11 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MipsWriterOptions extends js.Object {
+trait MipsWriterOptions extends StObject {
+  
   /**
     * Specifies the initial program counter, which is useful when
     * generating code to a scratch buffer. This is essential when using
@@ -14,13 +15,17 @@ trait MipsWriterOptions extends js.Object {
     */
   var pc: js.UndefOr[NativePointer] = js.undefined
 }
-
 object MipsWriterOptions {
-  @scala.inline
-  def apply(pc: NativePointer = null): MipsWriterOptions = {
+  
+  inline def apply(): MipsWriterOptions = {
     val __obj = js.Dynamic.literal()
-    if (pc != null) __obj.updateDynamic("pc")(pc.asInstanceOf[js.Any])
     __obj.asInstanceOf[MipsWriterOptions]
   }
+  
+  extension [Self <: MipsWriterOptions](x: Self) {
+    
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+  }
 }
-

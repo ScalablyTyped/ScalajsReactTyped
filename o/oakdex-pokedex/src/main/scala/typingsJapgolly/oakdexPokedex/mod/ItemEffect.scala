@@ -1,31 +1,48 @@
 package typingsJapgolly.oakdexPokedex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemEffect extends js.Object {
+trait ItemEffect extends StObject {
+  
   var condition: String
+  
   var move_changes: js.UndefOr[js.Array[ItemMoveChange]] = js.undefined
+  
   var pokemon_changes: js.UndefOr[js.Array[ItemPokemonChange]] = js.undefined
+  
   var target: String
+  
   var triggers_evolution: js.UndefOr[Boolean] = js.undefined
 }
-
 object ItemEffect {
-  @scala.inline
-  def apply(
-    condition: String,
-    target: String,
-    move_changes: js.Array[ItemMoveChange] = null,
-    pokemon_changes: js.Array[ItemPokemonChange] = null,
-    triggers_evolution: js.UndefOr[Boolean] = js.undefined
-  ): ItemEffect = {
+  
+  inline def apply(condition: String, target: String): ItemEffect = {
     val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    if (move_changes != null) __obj.updateDynamic("move_changes")(move_changes.asInstanceOf[js.Any])
-    if (pokemon_changes != null) __obj.updateDynamic("pokemon_changes")(pokemon_changes.asInstanceOf[js.Any])
-    if (!js.isUndefined(triggers_evolution)) __obj.updateDynamic("triggers_evolution")(triggers_evolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemEffect]
   }
+  
+  extension [Self <: ItemEffect](x: Self) {
+    
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setMove_changes(value: js.Array[ItemMoveChange]): Self = StObject.set(x, "move_changes", value.asInstanceOf[js.Any])
+    
+    inline def setMove_changesUndefined: Self = StObject.set(x, "move_changes", js.undefined)
+    
+    inline def setMove_changesVarargs(value: ItemMoveChange*): Self = StObject.set(x, "move_changes", js.Array(value*))
+    
+    inline def setPokemon_changes(value: js.Array[ItemPokemonChange]): Self = StObject.set(x, "pokemon_changes", value.asInstanceOf[js.Any])
+    
+    inline def setPokemon_changesUndefined: Self = StObject.set(x, "pokemon_changes", js.undefined)
+    
+    inline def setPokemon_changesVarargs(value: ItemPokemonChange*): Self = StObject.set(x, "pokemon_changes", js.Array(value*))
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTriggers_evolution(value: Boolean): Self = StObject.set(x, "triggers_evolution", value.asInstanceOf[js.Any])
+    
+    inline def setTriggers_evolutionUndefined: Self = StObject.set(x, "triggers_evolution", js.undefined)
+  }
 }
-

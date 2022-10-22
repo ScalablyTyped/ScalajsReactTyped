@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ItemType extends js.Object
-
+sealed trait ItemType extends StObject
 /**
   * An enum representing the supported types of form items. Item types can be accessed from FormApp.ItemType.
   *
@@ -23,104 +21,90 @@ sealed trait ItemType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.ItemType")
 @js.native
-object ItemType extends js.Object {
-  @js.native
-  sealed trait CHECKBOX extends ItemType
+object ItemType extends StObject {
   
   @js.native
-  sealed trait CHECKBOX_GRID extends ItemType
+  sealed trait CHECKBOX
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DATE extends ItemType
+  sealed trait CHECKBOX_GRID
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DATETIME extends ItemType
+  sealed trait DATE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait DURATION extends ItemType
+  sealed trait DATETIME
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait GRID extends ItemType
+  sealed trait DURATION
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait IMAGE extends ItemType
+  sealed trait FILE_UPLOAD
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait LIST extends ItemType
+  sealed trait GRID
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait MULTIPLE_CHOICE extends ItemType
+  sealed trait IMAGE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait PAGE_BREAK extends ItemType
+  sealed trait LIST
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait PARAGRAPH_TEXT extends ItemType
+  sealed trait MULTIPLE_CHOICE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait SCALE extends ItemType
+  sealed trait PAGE_BREAK
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait SECTION_HEADER extends ItemType
+  sealed trait PARAGRAPH_TEXT
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait TEXT extends ItemType
+  sealed trait SCALE
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait TIME extends ItemType
+  sealed trait SECTION_HEADER
+    extends StObject
+       with ItemType
   
   @js.native
-  sealed trait VIDEO extends ItemType
+  sealed trait TEXT
+    extends StObject
+       with ItemType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ItemType with Double] = js.native
-  /* 0 */ @js.native
-  object CHECKBOX extends TopLevel[CHECKBOX with Double]
+  @js.native
+  sealed trait TIME
+    extends StObject
+       with ItemType
   
-  /* 1 */ @js.native
-  object CHECKBOX_GRID extends TopLevel[CHECKBOX_GRID with Double]
-  
-  /* 2 */ @js.native
-  object DATE extends TopLevel[DATE with Double]
-  
-  /* 3 */ @js.native
-  object DATETIME extends TopLevel[DATETIME with Double]
-  
-  /* 4 */ @js.native
-  object DURATION extends TopLevel[DURATION with Double]
-  
-  /* 5 */ @js.native
-  object GRID extends TopLevel[GRID with Double]
-  
-  /* 6 */ @js.native
-  object IMAGE extends TopLevel[IMAGE with Double]
-  
-  /* 7 */ @js.native
-  object LIST extends TopLevel[LIST with Double]
-  
-  /* 8 */ @js.native
-  object MULTIPLE_CHOICE extends TopLevel[MULTIPLE_CHOICE with Double]
-  
-  /* 9 */ @js.native
-  object PAGE_BREAK extends TopLevel[PAGE_BREAK with Double]
-  
-  /* 10 */ @js.native
-  object PARAGRAPH_TEXT extends TopLevel[PARAGRAPH_TEXT with Double]
-  
-  /* 11 */ @js.native
-  object SCALE extends TopLevel[SCALE with Double]
-  
-  /* 12 */ @js.native
-  object SECTION_HEADER extends TopLevel[SECTION_HEADER with Double]
-  
-  /* 13 */ @js.native
-  object TEXT extends TopLevel[TEXT with Double]
-  
-  /* 14 */ @js.native
-  object TIME extends TopLevel[TIME with Double]
-  
-  /* 15 */ @js.native
-  object VIDEO extends TopLevel[VIDEO with Double]
-  
+  @js.native
+  sealed trait VIDEO
+    extends StObject
+       with ItemType
 }
-

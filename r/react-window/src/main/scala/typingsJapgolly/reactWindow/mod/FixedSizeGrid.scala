@@ -1,20 +1,27 @@
 package typingsJapgolly.reactWindow.mod
 
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactWindow.AnonAlign
-import typingsJapgolly.reactWindow.AnonScrollLeft
+import typingsJapgolly.reactWindow.anon.ScrollLeft
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-window", "FixedSizeGrid")
 @js.native
-class FixedSizeGrid ()
-  extends Component[FixedSizeGridProps, js.Object, js.Any] {
+open class FixedSizeGrid[T] protected ()
+  extends Component[FixedSizeGridProps[T], js.Object, Any] {
+  def this(props: FixedSizeGridProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: FixedSizeGridProps[T], context: Any) = this()
+  
   /**
     * Scroll to the specified offsets.
     */
-  def scrollTo(params: AnonScrollLeft): Unit = js.native
+  def scrollTo(params: ScrollLeft): Unit = js.native
+  
   /**
     * Scroll to the specified item.
     *
@@ -32,6 +39,5 @@ class FixedSizeGrid ()
     *
     * If either `columnIndex` or `rowIndex` are omitted, `scrollLeft` or `scrollTop` will be unchanged (respectively).
     */
-  def scrollToItem(params: AnonAlign): Unit = js.native
+  def scrollToItem(params: typingsJapgolly.reactWindow.anon.Align): Unit = js.native
 }
-

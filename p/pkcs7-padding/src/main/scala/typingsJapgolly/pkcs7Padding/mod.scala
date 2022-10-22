@@ -1,16 +1,21 @@
 package typingsJapgolly.pkcs7Padding
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pkcs7-padding", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def pad(data: String, size: Double): String = js.native
-  def pad(data: Buffer, size: Double): Buffer = js.native
-  def unpad(data: String): String = js.native
-  def unpad(data: Buffer): Buffer = js.native
+object mod {
+  
+  @JSImport("pkcs7-padding", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def pad(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pad(data: String, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pad(data: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def pad(data: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(data.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def unpad(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unpad(data: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("unpad")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }
-

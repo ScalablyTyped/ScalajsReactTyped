@@ -1,27 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slice extends Widget_ {
+trait Slice
+  extends StObject
+     with Widget_ {
+  
   /**
-    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * The slice analysis object being created or modified by the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#analysis)
+    */
+  val analysis: SliceAnalysis = js.native
+  
+  /**
+    * Indicates the heading level to use for the "Excluded layers" heading.
+    *
+    * @default 3
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#headingLevel)
+    */
+  var headingLevel: Double = js.native
+  
+  /**
+    * The widget's default CSS icon class.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#iconClass)
+    */
+  var iconClass: String = js.native
+  
+  /**
+    * A reference to the [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#view)
     */
   var view: SceneView = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains the properties and methods that control this widget's behavior.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slice.html#viewModel)
     */
   var viewModel: SliceViewModel = js.native
 }
-
-@JSGlobal("__esri.Slice")
-@js.native
-object Slice extends TopLevel[SliceConstructor]
-

@@ -10,10 +10,10 @@ Watch globs and execute a function upon change, with intelligent defaults for de
 | ------------------ | :-------------: |
 | Full name          | glob-watcher |
 | Keywords           | watch, glob, async, queue, debounce, callback |
-| # releases         | 4 |
-| # dependents       | 96 |
-| # downloads        | 64266755 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 6276511.333333333 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/gulpjs/glob-watcher#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for chance
 
-Typings are for version 1.0
+Typings are for version 1.1
 
 ## Library description:
 Chance - Utility library to generate anything random
@@ -10,10 +10,10 @@ Chance - Utility library to generate anything random
 | ------------------ | :-------------: |
 | Full name          | chance |
 | Keywords           | chance, random, generator, test, mersenne, name, address, dice |
-| # releases         | 10 |
-| # dependents       | 491 |
-| # downloads        | 14902661 |
-| # stars            | 77 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 3669336.0 |
+| # stars            | 5995.0 |
 
 ## Links
 - [Homepage](http://chancejs.com)

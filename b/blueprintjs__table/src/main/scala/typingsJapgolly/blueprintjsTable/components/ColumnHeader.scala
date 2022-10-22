@@ -1,93 +1,82 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.KeyboardEvent
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.blueprintjsTable.columnHeaderMod.IColumnHeaderProps
-import typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typingsJapgolly.blueprintjsTable.commonMod.Grid
-import typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion
-import typingsJapgolly.blueprintjsTable.locatorMod.ILocator
+import japgolly.scalajs.react.facade.React.Element
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.blueprintjsTableStrings.column
+import typingsJapgolly.blueprintjsTable.blueprintjsTableStrings.row
+import typingsJapgolly.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typingsJapgolly.blueprintjsTable.libEsmCommonMod.Grid
+import typingsJapgolly.blueprintjsTable.libEsmHeadersColumnHeaderMod.IColumnHeaderProps
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsDragTypesMod.ICoordinateData
+import typingsJapgolly.blueprintjsTable.libEsmLocatorMod.ILocator
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.Region
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColumnHeader {
-  def apply(
+  
+  inline def apply(
+    cellRenderer: /* columnIndex */ Double => Element | Null,
     columnIndexEnd: Double,
     columnIndexStart: Double,
+    defaultColumnWidth: Double,
     grid: Grid,
     locator: ILocator,
-    cellRenderer: /* columnIndex */ Double => CallbackTo[Element],
+    maxColumnWidth: Double,
+    minColumnWidth: Double,
     onColumnWidthChanged: (/* index */ Double, /* size */ Double) => Callback,
-    onFocusedCell: IFocusedCellCoordinates => Callback,
+    onFocusedCell: FocusedCellCoordinates => Callback,
     onLayoutLock: js.UndefOr[Boolean] => Callback,
     onReordered: (Double, Double, Double) => Callback,
     onReordering: (Double, Double, Double) => Callback,
-    onResizeGuide: js.Array[Double] => Callback,
-    onSelection: js.Array[IRegion] => Callback,
-    defaultColumnWidth: Int | Double = null,
-    enableMultipleSelection: js.UndefOr[Boolean] = js.undefined,
-    focusedCell: IFocusedCellCoordinates = null,
-    isResizable: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    maxColumnWidth: Int | Double = null,
-    measurableElementRef: /* ref */ HTMLElement | Null => Callback = null,
-    minColumnWidth: Int | Double = null,
-    onSelectionEnd: /* regions */ js.Array[IRegion] => Callback = null,
-    selectedRegionTransform: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => CallbackTo[IRegion] = null,
-    selectedRegions: js.Array[IRegion] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IColumnHeaderProps, 
-    typingsJapgolly.blueprintjsTable.columnHeaderMod.ColumnHeader, 
-    Unit, 
-    IColumnHeaderProps
-  ] = {
-    val __obj = js.Dynamic.literal(columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], locator = locator.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("cellRenderer")(js.Any.fromFunction1((t0: /* columnIndex */ scala.Double) => cellRenderer(t0).runNow()))
-    __obj.updateDynamic("onColumnWidthChanged")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* size */ scala.Double) => onColumnWidthChanged(t0, t1).runNow()))
-    __obj.updateDynamic("onFocusedCell")(js.Any.fromFunction1((t0: typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates) => onFocusedCell(t0).runNow()))
-    __obj.updateDynamic("onLayoutLock")(js.Any.fromFunction1((t0: js.UndefOr[scala.Boolean]) => onLayoutLock(t0).runNow()))
-    __obj.updateDynamic("onReordered")(js.Any.fromFunction3((t0: scala.Double, t1: scala.Double, t2: scala.Double) => onReordered(t0, t1, t2).runNow()))
-    __obj.updateDynamic("onReordering")(js.Any.fromFunction3((t0: scala.Double, t1: scala.Double, t2: scala.Double) => onReordering(t0, t1, t2).runNow()))
-    __obj.updateDynamic("onResizeGuide")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => onResizeGuide(t0).runNow()))
-    __obj.updateDynamic("onSelection")(js.Any.fromFunction1((t0: js.Array[typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion]) => onSelection(t0).runNow()))
-    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.asInstanceOf[js.Any])
-    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (maxColumnWidth != null) __obj.updateDynamic("maxColumnWidth")(maxColumnWidth.asInstanceOf[js.Any])
-    if (measurableElementRef != null) __obj.updateDynamic("measurableElementRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => measurableElementRef(t0).runNow()))
-    if (minColumnWidth != null) __obj.updateDynamic("minColumnWidth")(minColumnWidth.asInstanceOf[js.Any])
-    if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(js.Any.fromFunction1((t0: /* regions */ js.Array[typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion]) => onSelectionEnd(t0).runNow()))
-    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(js.Any.fromFunction3((t0: /* region */ typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion, t1: /* event */ org.scalajs.dom.raw.MouseEvent | org.scalajs.dom.raw.KeyboardEvent, t2: /* coords */ js.UndefOr[typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData]) => selectedRegionTransform(t0, t1, t2).runNow()))
-    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.columnHeaderMod.IColumnHeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.columnHeaderMod.ColumnHeader](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.columnHeaderMod.IColumnHeaderProps])(children: _*)
+    onResizeGuide: js.UndefOr[js.Array[Double]] => Callback,
+    onSelection: js.Array[Region] => Callback
+  ): Builder = {
+    val __props = js.Dynamic.literal(cellRenderer = js.Any.fromFunction1(cellRenderer), columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], defaultColumnWidth = defaultColumnWidth.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], locator = locator.asInstanceOf[js.Any], maxColumnWidth = maxColumnWidth.asInstanceOf[js.Any], minColumnWidth = minColumnWidth.asInstanceOf[js.Any], onColumnWidthChanged = js.Any.fromFunction2((t0: /* index */ Double, t1: /* size */ Double) => (onColumnWidthChanged(t0, t1)).runNow()), onFocusedCell = js.Any.fromFunction1((t0: FocusedCellCoordinates) => onFocusedCell(t0).runNow()), onLayoutLock = js.Any.fromFunction1((t0: js.UndefOr[Boolean]) => onLayoutLock(t0).runNow()), onReordered = js.Any.fromFunction3((t0: Double, t1: Double, t2: Double) => (onReordered(t0, t1, t2)).runNow()), onReordering = js.Any.fromFunction3((t0: Double, t1: Double, t2: Double) => (onReordering(t0, t1, t2)).runNow()), onResizeGuide = js.Any.fromFunction1((t0: js.UndefOr[js.Array[Double]]) => onResizeGuide(t0).runNow()), onSelection = js.Any.fromFunction1((t0: js.Array[Region]) => onSelection(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[IColumnHeaderProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/headers/columnHeader", "ColumnHeader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmHeadersColumnHeaderMod.ColumnHeader] {
+    
+    inline def enableMultipleSelection(value: Boolean): this.type = set("enableMultipleSelection", value.asInstanceOf[js.Any])
+    
+    inline def focusedCell(value: FocusedCellCoordinates): this.type = set("focusedCell", value.asInstanceOf[js.Any])
+    
+    inline def isResizable(value: Boolean): this.type = set("isResizable", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def measurableElementRef(value: Ref[HTMLDivElement]): this.type = set("measurableElementRef", value.asInstanceOf[js.Any])
+    
+    inline def measurableElementRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("measurableElementRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def measurableElementRefNull: this.type = set("measurableElementRef", null)
+    
+    inline def onMount(value: /* whichHeader */ column | row => Callback): this.type = set("onMount", js.Any.fromFunction1((t0: /* whichHeader */ column | row) => value(t0).runNow()))
+    
+    inline def onSelectionEnd(value: /* regions */ js.Array[Region] => Callback): this.type = set("onSelectionEnd", js.Any.fromFunction1((t0: /* regions */ js.Array[Region]) => value(t0).runNow()))
+    
+    inline def selectedRegionTransform(
+      value: (/* region */ Region, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => Region
+    ): this.type = set("selectedRegionTransform", js.Any.fromFunction3(value))
+    
+    inline def selectedRegions(value: js.Array[Region]): this.type = set("selectedRegions", value.asInstanceOf[js.Any])
+    
+    inline def selectedRegionsVarargs(value: Region*): this.type = set("selectedRegions", js.Array(value*))
+  }
+  
+  def withProps(p: IColumnHeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

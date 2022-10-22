@@ -1,23 +1,44 @@
 package typingsJapgolly.stripeV3.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StripeOptions extends js.Object {
+trait StripeOptions extends StObject {
+  
+  var apiVersion: js.UndefOr[String] = js.undefined
+  
   var betas: js.UndefOr[js.Array[String]] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var stripeAccount: js.UndefOr[String] = js.undefined
 }
-
 object StripeOptions {
-  @scala.inline
-  def apply(betas: js.Array[String] = null, locale: String = null, stripeAccount: String = null): StripeOptions = {
+  
+  inline def apply(): StripeOptions = {
     val __obj = js.Dynamic.literal()
-    if (betas != null) __obj.updateDynamic("betas")(betas.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (stripeAccount != null) __obj.updateDynamic("stripeAccount")(stripeAccount.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeOptions]
   }
+  
+  extension [Self <: StripeOptions](x: Self) {
+    
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    
+    inline def setBetas(value: js.Array[String]): Self = StObject.set(x, "betas", value.asInstanceOf[js.Any])
+    
+    inline def setBetasUndefined: Self = StObject.set(x, "betas", js.undefined)
+    
+    inline def setBetasVarargs(value: String*): Self = StObject.set(x, "betas", js.Array(value*))
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setStripeAccount(value: String): Self = StObject.set(x, "stripeAccount", value.asInstanceOf[js.Any])
+    
+    inline def setStripeAccountUndefined: Self = StObject.set(x, "stripeAccount", js.undefined)
+  }
 }
-

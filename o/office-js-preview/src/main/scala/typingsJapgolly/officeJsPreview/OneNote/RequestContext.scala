@@ -1,14 +1,14 @@
 package typingsJapgolly.officeJsPreview.OneNote
 
+import typingsJapgolly.officeJsPreview.OfficeExtension.ClientRequestContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OneNote.RequestContext")
 @js.native
-class RequestContext ()
-  extends typingsJapgolly.officeJsPreview.OfficeCore.RequestContext {
-  def this(url: String) = this()
+trait RequestContext
+  extends StObject
+     with ClientRequestContext {
+  
   val application: Application = js.native
 }
-

@@ -1,15 +1,18 @@
 package typingsJapgolly.promptSyncHistory
 
 import typingsJapgolly.promptSync.mod.History
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prompt-sync-history", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): History = js.native
-  def apply(file: String): History = js.native
-  def apply(file: String, max: Double): History = js.native
+object mod {
+  
+  inline def apply(): History = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[History]
+  inline def apply(file: String): History = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[History]
+  inline def apply(file: String, max: Double): History = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[History]
+  inline def apply(file: Unit, max: Double): History = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[History]
+  
+  @JSImport("prompt-sync-history", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

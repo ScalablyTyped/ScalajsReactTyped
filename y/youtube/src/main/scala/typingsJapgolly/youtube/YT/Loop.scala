@@ -1,29 +1,28 @@
 package typingsJapgolly.youtube.YT
 
-import typingsJapgolly.youtube.youtubeNumbers.`0`
-import typingsJapgolly.youtube.youtubeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.youtube.youtubeNumbers.`0`
-  - typingsJapgolly.youtube.youtubeNumbers.`1`
-*/
-trait Loop extends js.Object
-
-object Loop {
+@js.native
+sealed trait Loop extends StObject
+@JSGlobal("YT.Loop")
+@js.native
+object Loop extends StObject {
+  
   /**
-  		 * Video or playlist will be played over and over again.
-  		 */
-  @scala.inline
-  def Loop: `1` = this.cast(1)
+    * Video or playlist will be played over and over again.
+    */
+  @js.native
+  sealed trait Loop
+    extends StObject
+       with typingsJapgolly.youtube.YT.Loop
+  
   /**
-  		 * Video or playlist will be played only once.
-  		 */
-  @scala.inline
-  def SinglePlay: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+    * Video or playlist will be played only once.
+    */
+  @js.native
+  sealed trait SinglePlay
+    extends StObject
+       with typingsJapgolly.youtube.YT.Loop
 }
-

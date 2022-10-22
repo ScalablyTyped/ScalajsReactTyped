@@ -1,0 +1,570 @@
+package typingsJapgolly.phaser.global.Phaser
+
+import typingsJapgolly.phaser.Phaser.Types.Sound.SoundConfig
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object Sound {
+  
+  @JSGlobal("Phaser.Sound")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Class containing all the shared state and behavior of a sound object, independent of the implementation.
+    */
+  @JSGlobal("Phaser.Sound.BaseSound")
+  @js.native
+  open class BaseSound protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.BaseSound {
+    /**
+      * 
+      * @param manager Reference to the current sound manager instance.
+      * @param key Asset key for the sound.
+      * @param config An optional config object containing default sound settings.
+      */
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.BaseSoundManager, key: String) = this()
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.BaseSoundManager, key: String, config: SoundConfig) = this()
+  }
+  
+  /**
+    * Base class for other Sound Manager classes.
+    */
+  @JSGlobal("Phaser.Sound.BaseSoundManager")
+  @js.native
+  open class BaseSoundManager protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.BaseSoundManager {
+    /**
+      * 
+      * @param game Reference to the current game instance.
+      */
+    def this(game: typingsJapgolly.phaser.Phaser.Game) = this()
+  }
+  
+  object Events {
+    
+    /**
+      * The Sound Complete Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they complete playback.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('complete', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('complete', listener);
+      * music.play();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.COMPLETE")
+    @js.native
+    val COMPLETE: Any = js.native
+    
+    /**
+      * The Audio Data Decoded Event.
+      * 
+      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method.
+      * 
+      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decoded', listener)`, i.e.:
+      * 
+      * ```javascript
+      * this.sound.on('decoded', handler);
+      * this.sound.decodeAudio(key, audioData);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.DECODED")
+    @js.native
+    val DECODED: Any = js.native
+    
+    /**
+      * The Audio Data Decoded All Event.
+      * 
+      * This event is dispatched by the Web Audio Sound Manager as a result of calling the `decodeAudio` method,
+      * once all files passed to the method have been decoded (or errored).
+      * 
+      * Use `Phaser.Sound.Events#DECODED` to listen for single sounds being decoded, and `DECODED_ALL` to
+      * listen for them all completing.
+      * 
+      * Listen to it from the Sound Manager in a Scene using `this.sound.on('decodedall', listener)`, i.e.:
+      * 
+      * ```javascript
+      * this.sound.once('decodedall', handler);
+      * this.sound.decodeAudio([ audioFiles ]);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.DECODED_ALL")
+    @js.native
+    val DECODED_ALL: Any = js.native
+    
+    /**
+      * The Sound Destroy Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are destroyed, either
+      * directly or via a Sound Manager.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('destroy', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('destroy', listener);
+      * music.destroy();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.DESTROY")
+    @js.native
+    val DESTROY: Any = js.native
+    
+    /**
+      * The Sound Detune Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their detune value changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('detune', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('detune', listener);
+      * music.play();
+      * music.setDetune(200);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.DETUNE")
+    @js.native
+    val DETUNE: Any = js.native
+    
+    /**
+      * The Sound Manager Global Detune Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched when the `detune` property of the Sound Manager is changed, which globally
+      * adjusts the detuning of all active sounds.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_DETUNE")
+    @js.native
+    val GLOBAL_DETUNE: Any = js.native
+    
+    /**
+      * The Sound Manager Global Mute Event.
+      * 
+      * This event is dispatched by the Sound Manager when its `mute` property is changed, either directly
+      * or via the `setMute` method. This changes the mute state of all active sounds.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('mute', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_MUTE")
+    @js.native
+    val GLOBAL_MUTE: Any = js.native
+    
+    /**
+      * The Sound Manager Global Rate Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched when the `rate` property of the Sound Manager is changed, which globally
+      * adjusts the playback rate of all active sounds.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('rate', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_RATE")
+    @js.native
+    val GLOBAL_RATE: Any = js.native
+    
+    /**
+      * The Sound Manager Global Volume Event.
+      * 
+      * This event is dispatched by the Sound Manager when its `volume` property is changed, either directly
+      * or via the `setVolume` method. This changes the volume of all active sounds.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('volume', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.GLOBAL_VOLUME")
+    @js.native
+    val GLOBAL_VOLUME: Any = js.native
+    
+    /**
+      * The Sound Loop Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their loop state is changed.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('loop', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('loop', listener);
+      * music.setLoop(true);
+      * ```
+      * 
+      * This is not to be confused with the [LOOPED]{@linkcode Phaser.Sound.Events#event:LOOPED} event, which emits each time a Sound loops during playback.
+      */
+    @JSGlobal("Phaser.Sound.Events.LOOP")
+    @js.native
+    val LOOP: Any = js.native
+    
+    /**
+      * The Sound Looped Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they loop during playback.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('looped', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('looped', listener);
+      * music.setLoop(true);
+      * music.play();
+      * ```
+      * 
+      * This is not to be confused with the [LOOP]{@linkcode Phaser.Sound.Events#event:LOOP} event, which only emits when the loop state of a Sound is changed.
+      */
+    @JSGlobal("Phaser.Sound.Events.LOOPED")
+    @js.native
+    val LOOPED: Any = js.native
+    
+    /**
+      * The Sound Mute Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their mute state changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('mute', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('mute', listener);
+      * music.play();
+      * music.setMute(true);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.MUTE")
+    @js.native
+    val MUTE: Any = js.native
+    
+    /**
+      * The Sound Pan Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their pan changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('pan', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var sound = this.sound.add('key');
+      * sound.on('pan', listener);
+      * sound.play();
+      * sound.setPan(0.5);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.PAN")
+    @js.native
+    val PAN: Any = js.native
+    
+    /**
+      * The Sound Pause Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are paused.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('pause', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('pause', listener);
+      * music.play();
+      * music.pause();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.PAUSE")
+    @js.native
+    val PAUSE: Any = js.native
+    
+    /**
+      * The Pause All Sounds Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched when the `pauseAll` method is invoked and after all current Sounds
+      * have been paused.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('pauseall', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.PAUSE_ALL")
+    @js.native
+    val PAUSE_ALL: Any = js.native
+    
+    /**
+      * The Sound Play Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are played.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('play', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('play', listener);
+      * music.play();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.PLAY")
+    @js.native
+    val PLAY: Any = js.native
+    
+    /**
+      * The Sound Rate Change Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their rate changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('rate', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('rate', listener);
+      * music.play();
+      * music.setRate(0.5);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.RATE")
+    @js.native
+    val RATE: Any = js.native
+    
+    /**
+      * The Sound Resume Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are resumed from a paused state.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('resume', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('resume', listener);
+      * music.play();
+      * music.pause();
+      * music.resume();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.RESUME")
+    @js.native
+    val RESUME: Any = js.native
+    
+    /**
+      * The Resume All Sounds Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched when the `resumeAll` method is invoked and after all current Sounds
+      * have been resumed.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('resumeall', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.RESUME_ALL")
+    @js.native
+    val RESUME_ALL: Any = js.native
+    
+    /**
+      * The Sound Seek Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are seeked to a new position.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('seek', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('seek', listener);
+      * music.play();
+      * music.setSeek(5000);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.SEEK")
+    @js.native
+    val SEEK: Any = js.native
+    
+    /**
+      * The Sound Stop Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when they are stopped.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('stop', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('stop', listener);
+      * music.play();
+      * music.stop();
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.STOP")
+    @js.native
+    val STOP: Any = js.native
+    
+    /**
+      * The Stop All Sounds Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched when the `stopAll` method is invoked and after all current Sounds
+      * have been stopped.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('stopall', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.STOP_ALL")
+    @js.native
+    val STOP_ALL: Any = js.native
+    
+    /**
+      * The Sound Manager Unlocked Event.
+      * 
+      * This event is dispatched by the Base Sound Manager, or more typically, an instance of the Web Audio Sound Manager,
+      * or the HTML5 Audio Manager. It is dispatched during the update loop when the Sound Manager becomes unlocked. For
+      * Web Audio this is on the first user gesture on the page.
+      * 
+      * Listen to it from a Scene using: `this.sound.on('unlocked', listener)`.
+      */
+    @JSGlobal("Phaser.Sound.Events.UNLOCKED")
+    @js.native
+    val UNLOCKED: Any = js.native
+    
+    /**
+      * The Sound Volume Event.
+      * 
+      * This event is dispatched by both Web Audio and HTML5 Audio Sound objects when their volume changes.
+      * 
+      * Listen to it from a Sound instance using `Sound.on('volume', listener)`, i.e.:
+      * 
+      * ```javascript
+      * var music = this.sound.add('key');
+      * music.on('volume', listener);
+      * music.play();
+      * music.setVolume(0.5);
+      * ```
+      */
+    @JSGlobal("Phaser.Sound.Events.VOLUME")
+    @js.native
+    val VOLUME: Any = js.native
+  }
+  
+  /**
+    * HTML5 Audio implementation of the sound.
+    */
+  @JSGlobal("Phaser.Sound.HTML5AudioSound")
+  @js.native
+  open class HTML5AudioSound protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSound {
+    /**
+      * 
+      * @param manager Reference to the current sound manager instance.
+      * @param key Asset key for the sound.
+      * @param config An optional config object containing default sound settings. Default {}.
+      */
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSoundManager, key: String) = this()
+    def this(
+      manager: typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSoundManager,
+      key: String,
+      config: SoundConfig
+    ) = this()
+  }
+  
+  /**
+    * HTML5AudioSoundManager
+    */
+  @JSGlobal("Phaser.Sound.HTML5AudioSoundManager")
+  @js.native
+  open class HTML5AudioSoundManager protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSoundManager {
+    /**
+      * 
+      * @param game Reference to the current game instance.
+      */
+    def this(game: typingsJapgolly.phaser.Phaser.Game) = this()
+  }
+  
+  /**
+    * No audio implementation of the sound. It is used if audio has been
+    * disabled in the game config or the device doesn't support any audio.
+    * 
+    * It represents a graceful degradation of sound logic that provides
+    * minimal functionality and prevents Phaser projects that use audio from
+    * breaking on devices that don't support any audio playback technologies.
+    */
+  @JSGlobal("Phaser.Sound.NoAudioSound")
+  @js.native
+  open class NoAudioSound protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.NoAudioSound {
+    /**
+      * 
+      * @param manager Reference to the current sound manager instance.
+      * @param key Asset key for the sound.
+      * @param config An optional config object containing default sound settings. Default {}.
+      */
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.NoAudioSoundManager, key: String) = this()
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.NoAudioSoundManager, key: String, config: SoundConfig) = this()
+  }
+  
+  /**
+    * No-audio implementation of the Sound Manager. It is used if audio has been
+    * disabled in the game config or the device doesn't support any audio.
+    * 
+    * It represents a graceful degradation of Sound Manager logic that provides
+    * minimal functionality and prevents Phaser projects that use audio from
+    * breaking on devices that don't support any audio playback technologies.
+    */
+  @JSGlobal("Phaser.Sound.NoAudioSoundManager")
+  @js.native
+  open class NoAudioSoundManager protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.BaseSoundManager {
+    /**
+      * 
+      * @param game Reference to the current game instance.
+      */
+    def this(game: typingsJapgolly.phaser.Phaser.Game) = this()
+  }
+  
+  /**
+    * Creates a Web Audio, HTML5 Audio or No Audio Sound Manager based on config and device settings.
+    * 
+    * Be aware of https://developers.google.com/web/updates/2017/09/autoplay-policy-changes
+    * @param game Reference to the current game instance.
+    */
+  inline def SoundManagerCreator(game: typingsJapgolly.phaser.Phaser.Game): typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSoundManager | typingsJapgolly.phaser.Phaser.Sound.WebAudioSoundManager | typingsJapgolly.phaser.Phaser.Sound.NoAudioSoundManager = ^.asInstanceOf[js.Dynamic].applyDynamic("SoundManagerCreator")(game.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.phaser.Phaser.Sound.HTML5AudioSoundManager | typingsJapgolly.phaser.Phaser.Sound.WebAudioSoundManager | typingsJapgolly.phaser.Phaser.Sound.NoAudioSoundManager]
+  
+  /**
+    * Web Audio API implementation of the sound.
+    */
+  @JSGlobal("Phaser.Sound.WebAudioSound")
+  @js.native
+  open class WebAudioSound protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.WebAudioSound {
+    /**
+      * 
+      * @param manager Reference to the current sound manager instance.
+      * @param key Asset key for the sound.
+      * @param config An optional config object containing default sound settings. Default {}.
+      */
+    def this(manager: typingsJapgolly.phaser.Phaser.Sound.WebAudioSoundManager, key: String) = this()
+    def this(
+      manager: typingsJapgolly.phaser.Phaser.Sound.WebAudioSoundManager,
+      key: String,
+      config: SoundConfig
+    ) = this()
+  }
+  
+  /**
+    * Web Audio API implementation of the Sound Manager.
+    * 
+    * Not all browsers can play all audio formats.
+    * 
+    * There is a good guide to what's supported: [Cross-browser audio basics: Audio codec support](https://developer.mozilla.org/en-US/Apps/Fundamentals/Audio_and_video_delivery/Cross-browser_audio_basics#Audio_Codec_Support).
+    */
+  @JSGlobal("Phaser.Sound.WebAudioSoundManager")
+  @js.native
+  open class WebAudioSoundManager protected ()
+    extends StObject
+       with typingsJapgolly.phaser.Phaser.Sound.WebAudioSoundManager {
+    /**
+      * 
+      * @param game Reference to the current game instance.
+      */
+    def this(game: typingsJapgolly.phaser.Phaser.Game) = this()
+  }
+}

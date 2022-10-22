@@ -1,75 +1,107 @@
 package typingsJapgolly.socketclusterServer.serverMod
 
+import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.jsonwebtoken.mod.Secret
+import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.Server
-import typingsJapgolly.scAuth.mod.SCAuthEngine
-import typingsJapgolly.socketclusterServer.socketclusterServerNumbers.`1`
-import typingsJapgolly.socketclusterServer.socketclusterServerNumbers.`2`
+import typingsJapgolly.node.httpMod.ServerResponse
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import typingsJapgolly.socketclusterServer.socketclusterServerInts.`1`
+import typingsJapgolly.socketclusterServer.socketclusterServerInts.`2`
 import typingsJapgolly.socketclusterServer.socketclusterServerStrings.close
 import typingsJapgolly.socketclusterServer.socketclusterServerStrings.kill
 import typingsJapgolly.ws.mod.ClientOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AGServerOptions
-  extends /* additionalOptions */ StringDictionary[js.Any] {
+  extends StObject
+     with /* additionalOptions */ StringDictionary[Any] {
+  
   // In milliseconds, the timeout for receiving a response
   // when using invoke() or invokePublish().
   var ackTimeout: js.UndefOr[Double] = js.undefined
+  
   // Whether or not clients are allowed to publish messages
   // to channels.
   var allowClientPublish: js.UndefOr[Boolean] = js.undefined
+  
   // The algorithm to use to sign and verify JWT tokens.
   var authAlgorithm: js.UndefOr[String] = js.undefined
+  
   // The default expiry for auth tokens in seconds
   var authDefaultExpiry: js.UndefOr[Double] = js.undefined
-  var authEngine: js.UndefOr[SCAuthEngine] = js.undefined
+  
+  var authEngine: js.UndefOr[AuthEngineType] = js.undefined
+  
   // The key which SC will use to encrypt/decrypt authTokens,
   // defaults to a 256 bits cryptographically random hex
   // string. The default JWT algorithm used is 'HS256'.
   // If you want to use RSA or ECDSA, you should provide an
   // authPrivateKey and authPublicKey instead of authKey.
   var authKey: js.UndefOr[Secret] = js.undefined
+  
   // If using an RSA or ECDSA algorithm to sign the
   // authToken, you will need to provide an authPrivateKey
   // and authPublicKey in PEM format (string or Buffer).
   var authPrivateKey: js.UndefOr[Secret] = js.undefined
+  
   var authPublicKey: js.UndefOr[Secret] = js.undefined
+  
   var authVerifyAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
+  
   // If batchOnHandshake is true, this lets you specify
   // the size of each batch in milliseconds.
   var batchInterval: js.UndefOr[Double] = js.undefined
+  
   // Whether or not to batch all socket messages
   // for some time immediately after completing
   // a handshake. This can be useful in failure-recovery
   // scenarios (e.g. batch resubscribe).
   var batchOnHandshake: js.UndefOr[Boolean] = js.undefined
+  
   // If batchOnHandshake is true, this lets you specify
   // How long to enable batching (in milliseconds) following
   // a successful socket handshake.
   var batchOnHandshakeDuration: js.UndefOr[Double] = js.undefined
+  
   var cloneData: js.UndefOr[Boolean] = js.undefined
+  
   var codecEngine: js.UndefOr[CodecEngine] = js.undefined
+  
   // In milliseconds - If the socket handshake hasn't been
   // completed before this timeout is reached, the new
   // connection attempt will be terminated.
   var handshakeTimeout: js.UndefOr[Double] = js.undefined
+  
   // An instance of a Node.js HTTP server.
   // https://nodejs.org/api/http.html#http_class_http_server
   // This option should not be set if the server is created
   // with socketClusterServer.attach(...).
-  var httpServer: js.UndefOr[Server] = js.undefined
+  var httpServer: js.UndefOr[
+    Server[
+      Instantiable1[/* socket */ Socket, IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        ServerResponse[IncomingMessage]
+      ]
+    ]
+  ] = js.undefined
+  
   // Whether or not an error should be emitted on
   // the socket whenever an action is blocked by a
   // middleware function
   var middlewareEmitFailures: js.UndefOr[Boolean] = js.undefined
+  
   // Origins which are allowed to connect to the server.
   var origins: js.UndefOr[String] = js.undefined
+  
   // The URL path reserved by SocketCluster clients to
   // interact with the server.
   var path: js.UndefOr[String] = js.undefined
+  
   // perMessageDeflate compression. Note that this option is
   // passed directly to the wsEngine's Server object.
   // So if you're using 'ws' as the engine, you can pass an
@@ -77,19 +109,24 @@ trait AGServerOptions
   // Note that by default, per-message deflate only kicks in
   // for messages > 1024 bytes.
   var perMessageDeflate: js.UndefOr[Boolean | js.Object] = js.undefined
+  
   // The interval in milliseconds on which to
   // send a ping to the client to check that
   // it is still alive.
   var pingInterval: js.UndefOr[Double] = js.undefined
+  
   // How many milliseconds to wait without receiving a ping
   // before closing the socket.
   var pingTimeout: js.UndefOr[Double] = js.undefined
+  
   // Can be 1 or 2. Version 1 is for maximum backwards
   // compatibility with SocketCluster clients.
   var protocolVersion: js.UndefOr[`1` | `2`] = js.undefined
+  
   // The maximum number of unique channels which a single
   // socket can subscribe to.
   var socketChannelLimit: js.UndefOr[Double] = js.undefined
+  
   // Lets you specify the default cleanup behaviour for
   // when a socket becomes disconnected.
   // Can be either 'kill' or 'close'. Kill mode means
@@ -99,76 +136,140 @@ trait AGServerOptions
   // be able to finish processing their stream backlogs
   // bebfore they are ended.
   var socketStreamCleanupMode: js.UndefOr[kill | close] = js.undefined
+  
   // This can be the name of an npm module or a path to a
   // Node.js module to use as the WebSocket server engine.
-  var wsEngine: js.UndefOr[js.Any] = js.undefined
+  var wsEngine: js.UndefOr[String | typingsJapgolly.socketclusterServer.anon.Server] = js.undefined
+  
   // Custom options to pass to the wsEngine when it is being
   // instantiated.
   var wsEngineServerOptions: js.UndefOr[ClientOptions] = js.undefined
 }
-
 object AGServerOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /* additionalOptions */ StringDictionary[js.Any] = null,
-    ackTimeout: Int | Double = null,
-    allowClientPublish: js.UndefOr[Boolean] = js.undefined,
-    authAlgorithm: String = null,
-    authDefaultExpiry: Int | Double = null,
-    authEngine: SCAuthEngine = null,
-    authKey: Secret = null,
-    authPrivateKey: Secret = null,
-    authPublicKey: Secret = null,
-    authVerifyAlgorithms: js.Array[String] = null,
-    batchInterval: Int | Double = null,
-    batchOnHandshake: js.UndefOr[Boolean] = js.undefined,
-    batchOnHandshakeDuration: Int | Double = null,
-    cloneData: js.UndefOr[Boolean] = js.undefined,
-    codecEngine: CodecEngine = null,
-    handshakeTimeout: Int | Double = null,
-    httpServer: Server = null,
-    middlewareEmitFailures: js.UndefOr[Boolean] = js.undefined,
-    origins: String = null,
-    path: String = null,
-    perMessageDeflate: Boolean | js.Object = null,
-    pingInterval: Int | Double = null,
-    pingTimeout: Int | Double = null,
-    protocolVersion: `1` | `2` = null,
-    socketChannelLimit: Int | Double = null,
-    socketStreamCleanupMode: kill | close = null,
-    wsEngine: js.Any = null,
-    wsEngineServerOptions: ClientOptions = null
-  ): AGServerOptions = {
+  
+  inline def apply(): AGServerOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (ackTimeout != null) __obj.updateDynamic("ackTimeout")(ackTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClientPublish)) __obj.updateDynamic("allowClientPublish")(allowClientPublish.asInstanceOf[js.Any])
-    if (authAlgorithm != null) __obj.updateDynamic("authAlgorithm")(authAlgorithm.asInstanceOf[js.Any])
-    if (authDefaultExpiry != null) __obj.updateDynamic("authDefaultExpiry")(authDefaultExpiry.asInstanceOf[js.Any])
-    if (authEngine != null) __obj.updateDynamic("authEngine")(authEngine.asInstanceOf[js.Any])
-    if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
-    if (authPrivateKey != null) __obj.updateDynamic("authPrivateKey")(authPrivateKey.asInstanceOf[js.Any])
-    if (authPublicKey != null) __obj.updateDynamic("authPublicKey")(authPublicKey.asInstanceOf[js.Any])
-    if (authVerifyAlgorithms != null) __obj.updateDynamic("authVerifyAlgorithms")(authVerifyAlgorithms.asInstanceOf[js.Any])
-    if (batchInterval != null) __obj.updateDynamic("batchInterval")(batchInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(batchOnHandshake)) __obj.updateDynamic("batchOnHandshake")(batchOnHandshake.asInstanceOf[js.Any])
-    if (batchOnHandshakeDuration != null) __obj.updateDynamic("batchOnHandshakeDuration")(batchOnHandshakeDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData.asInstanceOf[js.Any])
-    if (codecEngine != null) __obj.updateDynamic("codecEngine")(codecEngine.asInstanceOf[js.Any])
-    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
-    if (httpServer != null) __obj.updateDynamic("httpServer")(httpServer.asInstanceOf[js.Any])
-    if (!js.isUndefined(middlewareEmitFailures)) __obj.updateDynamic("middlewareEmitFailures")(middlewareEmitFailures.asInstanceOf[js.Any])
-    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
-    if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
-    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
-    if (protocolVersion != null) __obj.updateDynamic("protocolVersion")(protocolVersion.asInstanceOf[js.Any])
-    if (socketChannelLimit != null) __obj.updateDynamic("socketChannelLimit")(socketChannelLimit.asInstanceOf[js.Any])
-    if (socketStreamCleanupMode != null) __obj.updateDynamic("socketStreamCleanupMode")(socketStreamCleanupMode.asInstanceOf[js.Any])
-    if (wsEngine != null) __obj.updateDynamic("wsEngine")(wsEngine.asInstanceOf[js.Any])
-    if (wsEngineServerOptions != null) __obj.updateDynamic("wsEngineServerOptions")(wsEngineServerOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[AGServerOptions]
   }
+  
+  extension [Self <: AGServerOptions](x: Self) {
+    
+    inline def setAckTimeout(value: Double): Self = StObject.set(x, "ackTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setAckTimeoutUndefined: Self = StObject.set(x, "ackTimeout", js.undefined)
+    
+    inline def setAllowClientPublish(value: Boolean): Self = StObject.set(x, "allowClientPublish", value.asInstanceOf[js.Any])
+    
+    inline def setAllowClientPublishUndefined: Self = StObject.set(x, "allowClientPublish", js.undefined)
+    
+    inline def setAuthAlgorithm(value: String): Self = StObject.set(x, "authAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAuthAlgorithmUndefined: Self = StObject.set(x, "authAlgorithm", js.undefined)
+    
+    inline def setAuthDefaultExpiry(value: Double): Self = StObject.set(x, "authDefaultExpiry", value.asInstanceOf[js.Any])
+    
+    inline def setAuthDefaultExpiryUndefined: Self = StObject.set(x, "authDefaultExpiry", js.undefined)
+    
+    inline def setAuthEngine(value: AuthEngineType): Self = StObject.set(x, "authEngine", value.asInstanceOf[js.Any])
+    
+    inline def setAuthEngineUndefined: Self = StObject.set(x, "authEngine", js.undefined)
+    
+    inline def setAuthKey(value: Secret): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
+    
+    inline def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
+    
+    inline def setAuthPrivateKey(value: Secret): Self = StObject.set(x, "authPrivateKey", value.asInstanceOf[js.Any])
+    
+    inline def setAuthPrivateKeyUndefined: Self = StObject.set(x, "authPrivateKey", js.undefined)
+    
+    inline def setAuthPublicKey(value: Secret): Self = StObject.set(x, "authPublicKey", value.asInstanceOf[js.Any])
+    
+    inline def setAuthPublicKeyUndefined: Self = StObject.set(x, "authPublicKey", js.undefined)
+    
+    inline def setAuthVerifyAlgorithms(value: js.Array[String]): Self = StObject.set(x, "authVerifyAlgorithms", value.asInstanceOf[js.Any])
+    
+    inline def setAuthVerifyAlgorithmsUndefined: Self = StObject.set(x, "authVerifyAlgorithms", js.undefined)
+    
+    inline def setAuthVerifyAlgorithmsVarargs(value: String*): Self = StObject.set(x, "authVerifyAlgorithms", js.Array(value*))
+    
+    inline def setBatchInterval(value: Double): Self = StObject.set(x, "batchInterval", value.asInstanceOf[js.Any])
+    
+    inline def setBatchIntervalUndefined: Self = StObject.set(x, "batchInterval", js.undefined)
+    
+    inline def setBatchOnHandshake(value: Boolean): Self = StObject.set(x, "batchOnHandshake", value.asInstanceOf[js.Any])
+    
+    inline def setBatchOnHandshakeDuration(value: Double): Self = StObject.set(x, "batchOnHandshakeDuration", value.asInstanceOf[js.Any])
+    
+    inline def setBatchOnHandshakeDurationUndefined: Self = StObject.set(x, "batchOnHandshakeDuration", js.undefined)
+    
+    inline def setBatchOnHandshakeUndefined: Self = StObject.set(x, "batchOnHandshake", js.undefined)
+    
+    inline def setCloneData(value: Boolean): Self = StObject.set(x, "cloneData", value.asInstanceOf[js.Any])
+    
+    inline def setCloneDataUndefined: Self = StObject.set(x, "cloneData", js.undefined)
+    
+    inline def setCodecEngine(value: CodecEngine): Self = StObject.set(x, "codecEngine", value.asInstanceOf[js.Any])
+    
+    inline def setCodecEngineUndefined: Self = StObject.set(x, "codecEngine", js.undefined)
+    
+    inline def setHandshakeTimeout(value: Double): Self = StObject.set(x, "handshakeTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setHandshakeTimeoutUndefined: Self = StObject.set(x, "handshakeTimeout", js.undefined)
+    
+    inline def setHttpServer(
+      value: Server[
+          Instantiable1[/* socket */ Socket, IncomingMessage], 
+          Instantiable1[
+            /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+            ServerResponse[IncomingMessage]
+          ]
+        ]
+    ): Self = StObject.set(x, "httpServer", value.asInstanceOf[js.Any])
+    
+    inline def setHttpServerUndefined: Self = StObject.set(x, "httpServer", js.undefined)
+    
+    inline def setMiddlewareEmitFailures(value: Boolean): Self = StObject.set(x, "middlewareEmitFailures", value.asInstanceOf[js.Any])
+    
+    inline def setMiddlewareEmitFailuresUndefined: Self = StObject.set(x, "middlewareEmitFailures", js.undefined)
+    
+    inline def setOrigins(value: String): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+    
+    inline def setOriginsUndefined: Self = StObject.set(x, "origins", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPerMessageDeflate(value: Boolean | js.Object): Self = StObject.set(x, "perMessageDeflate", value.asInstanceOf[js.Any])
+    
+    inline def setPerMessageDeflateUndefined: Self = StObject.set(x, "perMessageDeflate", js.undefined)
+    
+    inline def setPingInterval(value: Double): Self = StObject.set(x, "pingInterval", value.asInstanceOf[js.Any])
+    
+    inline def setPingIntervalUndefined: Self = StObject.set(x, "pingInterval", js.undefined)
+    
+    inline def setPingTimeout(value: Double): Self = StObject.set(x, "pingTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setPingTimeoutUndefined: Self = StObject.set(x, "pingTimeout", js.undefined)
+    
+    inline def setProtocolVersion(value: `1` | `2`): Self = StObject.set(x, "protocolVersion", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolVersionUndefined: Self = StObject.set(x, "protocolVersion", js.undefined)
+    
+    inline def setSocketChannelLimit(value: Double): Self = StObject.set(x, "socketChannelLimit", value.asInstanceOf[js.Any])
+    
+    inline def setSocketChannelLimitUndefined: Self = StObject.set(x, "socketChannelLimit", js.undefined)
+    
+    inline def setSocketStreamCleanupMode(value: kill | close): Self = StObject.set(x, "socketStreamCleanupMode", value.asInstanceOf[js.Any])
+    
+    inline def setSocketStreamCleanupModeUndefined: Self = StObject.set(x, "socketStreamCleanupMode", js.undefined)
+    
+    inline def setWsEngine(value: String | typingsJapgolly.socketclusterServer.anon.Server): Self = StObject.set(x, "wsEngine", value.asInstanceOf[js.Any])
+    
+    inline def setWsEngineServerOptions(value: ClientOptions): Self = StObject.set(x, "wsEngineServerOptions", value.asInstanceOf[js.Any])
+    
+    inline def setWsEngineServerOptionsUndefined: Self = StObject.set(x, "wsEngineServerOptions", js.undefined)
+    
+    inline def setWsEngineUndefined: Self = StObject.set(x, "wsEngine", js.undefined)
+  }
 }
-

@@ -1,20 +1,26 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICompleteRequest extends js.Object {
+trait ICompleteRequest extends StObject {
+  
   var code: String
+  
   var cursor_pos: Double
 }
-
 object ICompleteRequest {
-  @scala.inline
-  def apply(code: String, cursor_pos: Double): ICompleteRequest = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], cursor_pos = cursor_pos.asInstanceOf[js.Any])
   
+  inline def apply(code: String, cursor_pos: Double): ICompleteRequest = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], cursor_pos = cursor_pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICompleteRequest]
   }
+  
+  extension [Self <: ICompleteRequest](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCursor_pos(value: Double): Self = StObject.set(x, "cursor_pos", value.asInstanceOf[js.Any])
+  }
 }
-

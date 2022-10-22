@@ -1,22 +1,22 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Path")
 @js.native
-class Path protected ()
-  extends Component[PathProps, ComponentState, js.Any] {
-  def this(props: PathProps) = this()
-  def this(props: PathProps, context: js.Any) = this()
+open class Path ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Path
+/* static members */
+object Path {
+  
+  @JSImport("react-native-svg", "Path")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Path.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Path")
-@js.native
-object Path extends TopLevel[ComponentClass[PathProps, ComponentState]]
-

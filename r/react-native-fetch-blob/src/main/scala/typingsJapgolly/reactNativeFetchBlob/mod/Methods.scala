@@ -4,9 +4,9 @@ import typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.delete_
 import typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.get_
 import typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.post_
 import typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.put_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST
@@ -18,26 +18,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.delete_
   - typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.put_
 */
-trait Methods extends js.Object
-
+trait Methods extends StObject
 object Methods {
-  @scala.inline
-  def DELETE: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = this.cast("GET")
-  @scala.inline
-  def POST: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = this.cast("POST")
-  @scala.inline
-  def PUT: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delete: delete_ = this.cast("delete")
-  @scala.inline
-  def get: get_ = this.cast("get")
-  @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def put: put_ = this.cast("put")
+  
+  inline def DELETE: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET = "GET".asInstanceOf[typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.GET]
+  
+  inline def POST: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST = "POST".asInstanceOf[typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.POST]
+  
+  inline def PUT: typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.reactNativeFetchBlob.reactNativeFetchBlobStrings.PUT]
+  
+  inline def delete: delete_ = "delete".asInstanceOf[delete_]
+  
+  inline def get: get_ = "get".asInstanceOf[get_]
+  
+  inline def post: post_ = "post".asInstanceOf[post_]
+  
+  inline def put: put_ = "put".asInstanceOf[put_]
 }
-

@@ -1,54 +1,44 @@
 package typingsJapgolly.ffmpeg
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ffmpegStrings {
-  @js.native
-  sealed trait C extends js.Object
   
   @js.native
-  sealed trait CE extends js.Object
+  sealed trait C extends StObject
+  inline def C: C = "C".asInstanceOf[C]
   
   @js.native
-  sealed trait CW extends js.Object
+  sealed trait CE extends StObject
+  inline def CE: CE = "CE".asInstanceOf[CE]
   
   @js.native
-  sealed trait NC extends js.Object
+  sealed trait CW extends StObject
+  inline def CW: CW = "CW".asInstanceOf[CW]
   
   @js.native
-  sealed trait NE extends js.Object
+  sealed trait NC extends StObject
+  inline def NC: NC = "NC".asInstanceOf[NC]
   
   @js.native
-  sealed trait NW extends js.Object
+  sealed trait NE extends StObject
+  inline def NE: NE = "NE".asInstanceOf[NE]
   
   @js.native
-  sealed trait SC extends js.Object
+  sealed trait NW extends StObject
+  inline def NW: NW = "NW".asInstanceOf[NW]
   
   @js.native
-  sealed trait SE extends js.Object
+  sealed trait SC extends StObject
+  inline def SC: SC = "SC".asInstanceOf[SC]
   
   @js.native
-  sealed trait SW extends js.Object
+  sealed trait SE extends StObject
+  inline def SE: SE = "SE".asInstanceOf[SE]
   
-  @scala.inline
-  def C: C = "C".asInstanceOf[C]
-  @scala.inline
-  def CE: CE = "CE".asInstanceOf[CE]
-  @scala.inline
-  def CW: CW = "CW".asInstanceOf[CW]
-  @scala.inline
-  def NC: NC = "NC".asInstanceOf[NC]
-  @scala.inline
-  def NE: NE = "NE".asInstanceOf[NE]
-  @scala.inline
-  def NW: NW = "NW".asInstanceOf[NW]
-  @scala.inline
-  def SC: SC = "SC".asInstanceOf[SC]
-  @scala.inline
-  def SE: SE = "SE".asInstanceOf[SE]
-  @scala.inline
-  def SW: SW = "SW".asInstanceOf[SW]
+  @js.native
+  sealed trait SW extends StObject
+  inline def SW: SW = "SW".asInstanceOf[SW]
 }
-

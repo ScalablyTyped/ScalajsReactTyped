@@ -1,31 +1,40 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataFileProperties extends js.Object {
+trait DataFileProperties extends StObject {
+  
   /**
-    * The ID of the uploaded file returned as a result of the upload operation. For ArcGIS Server 10.1 and greater services that support uploads, this class can be used to specify an uploaded item as input by specifying the itemID.
+    * The ID of the uploaded file returned as a result of the upload operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html#itemId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#itemId)
     */
   var itemId: js.UndefOr[String] = js.undefined
+  
   /**
     * URL to the location of the data file.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataFile.html#url)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataFile.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object DataFileProperties {
-  @scala.inline
-  def apply(itemId: String = null, url: String = null): DataFileProperties = {
+  
+  inline def apply(): DataFileProperties = {
     val __obj = js.Dynamic.literal()
-    if (itemId != null) __obj.updateDynamic("itemId")(itemId.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataFileProperties]
   }
+  
+  extension [Self <: DataFileProperties](x: Self) {
+    
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    
+    inline def setItemIdUndefined: Self = StObject.set(x, "itemId", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

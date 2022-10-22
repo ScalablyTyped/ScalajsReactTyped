@@ -1,21 +1,17 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Parallel
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Sequential
 */
-trait AdHocOrdering extends js.Object
-
+trait AdHocOrdering extends StObject
 object AdHocOrdering {
-  @scala.inline
-  def Parallel: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Parallel = this.cast("Parallel")
-  @scala.inline
-  def Sequential: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Sequential = this.cast("Sequential")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Parallel: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Parallel = "Parallel".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Parallel]
+  
+  inline def Sequential: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Sequential = "Sequential".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Sequential]
 }
-

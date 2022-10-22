@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchSourceFilter extends Object {
+trait SearchSourceFilter
+  extends StObject
+     with Object {
+  
   /**
-    * The filter geometry for suggests or search results. [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) is the only supported geometry when working with [locator](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-LocatorSearchSource.html) sources. See [Find Address Candidates](https://developers.arcgis.com/rest/services-reference/find-address-candidates.htm) for additional information.
+    * The filter geometry for suggests or search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchSource.html#filter)
     */
   var geometry: js.UndefOr[Geometry_] = js.undefined
+  
   /**
     * The where clause specified for filtering suggests or search results.
     *
@@ -21,22 +24,25 @@ trait SearchSourceFilter extends Object {
     */
   var where: js.UndefOr[String] = js.undefined
 }
-
 object SearchSourceFilter {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    geometry: Geometry_ = null,
-    where: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SearchSourceFilter = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SearchSourceFilter]
   }
+  
+  extension [Self <: SearchSourceFilter](x: Self) {
+    
+    inline def setGeometry(value: Geometry_): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+  }
 }
-

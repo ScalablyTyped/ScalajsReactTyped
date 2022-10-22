@@ -10,10 +10,10 @@ YAML parser that preserves comments and styling
 | ------------------ | :-------------: |
 | Full name          | yawn-yaml |
 | Keywords           | yaml |
-| # releases         | 1 |
-| # dependents       | 12 |
-| # downloads        | 366957 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 21913.666666666668 |
+| # stars            | 88.0 |
 
 ## Links
 - [Homepage](https://github.com/mohsen1/yawn#readme)

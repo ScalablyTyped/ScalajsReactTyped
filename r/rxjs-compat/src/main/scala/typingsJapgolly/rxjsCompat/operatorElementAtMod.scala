@@ -1,13 +1,16 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/elementAt", JSImport.Namespace)
-@js.native
-object operatorElementAtMod extends js.Object {
-  def elementAt[T](index: Double): js.Any = js.native
-  def elementAt[T](index: Double, defaultValue: T): js.Any = js.native
+object operatorElementAtMod {
+  
+  @JSImport("rxjs-compat/operator/elementAt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def elementAt[T](index: Double): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("elementAt")(index.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def elementAt[T](index: Double, defaultValue: T): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("elementAt")(index.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
 }
-

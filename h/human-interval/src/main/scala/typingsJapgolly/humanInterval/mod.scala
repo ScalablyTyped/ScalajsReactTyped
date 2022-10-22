@@ -1,16 +1,15 @@
 package typingsJapgolly.humanInterval
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("human-interval", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  var languageMap: LanguageMap_ = js.native
-  def apply(): js.UndefOr[Double] = js.native
-  def apply(time: String): js.UndefOr[Double] = js.native
-  type LanguageMap_ = StringDictionary[Double]
+object mod {
+  
+  inline def apply(): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[Double]]
+  inline def apply(time: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].apply(time.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  
+  @JSImport("human-interval", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

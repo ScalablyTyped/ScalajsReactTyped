@@ -1,28 +1,40 @@
 package typingsJapgolly.modernizr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputTypesBoolean extends js.Object {
+trait InputTypesBoolean extends StObject {
+  
   var color: Boolean
+  
   var date: Boolean
+  
   var datetime: Boolean
+  
   var `datetime-local`: Boolean
+  
   var email: Boolean
+  
   var month: Boolean
+  
   var number: Boolean
+  
   var range: Boolean
+  
   var search: Boolean
+  
   var tel: Boolean
+  
   var time: Boolean
+  
   var url: Boolean
+  
   var week: Boolean
 }
-
 object InputTypesBoolean {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     color: Boolean,
     date: Boolean,
     datetime: Boolean,
@@ -41,5 +53,33 @@ object InputTypesBoolean {
     __obj.updateDynamic("datetime-local")(`datetime-local`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputTypesBoolean]
   }
+  
+  extension [Self <: InputTypesBoolean](x: Self) {
+    
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setDate(value: Boolean): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDatetime(value: Boolean): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
+    
+    inline def `setDatetime-local`(value: Boolean): Self = StObject.set(x, "datetime-local", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: Boolean): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setMonth(value: Boolean): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    
+    inline def setNumber(value: Boolean): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setTel(value: Boolean): Self = StObject.set(x, "tel", value.asInstanceOf[js.Any])
+    
+    inline def setTime(value: Boolean): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: Boolean): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setWeek(value: Boolean): Self = StObject.set(x, "week", value.asInstanceOf[js.Any])
+  }
 }
-

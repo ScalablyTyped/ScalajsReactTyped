@@ -1,28 +1,19 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlayOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxOverlay")
+@JSImport("devextreme", "default.ui.dxOverlay")
 @js.native
-class dxOverlay protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxOverlayOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay]) = this()
-  def this(
-    element: Element,
-    options: dxOverlayOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay]
-  ) = this()
+open class dxOverlay[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay[TProperties]
+object dxOverlay {
+  
+  @JSImport("devextreme", "default.ui.dxOverlay")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def baseZIndex(zIndex: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("baseZIndex")(zIndex.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-
-@JSImport("devextreme", "ui.dxOverlay")
-@js.native
-object dxOverlay extends js.Object {
-  def baseZIndex(zIndex: Double): Unit = js.native
-}
-

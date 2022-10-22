@@ -1,28 +1,30 @@
 package typingsJapgolly.angularCore.mod
 
-import typingsJapgolly.angularCore.angularCoreNumbers.`0`
-import typingsJapgolly.angularCore.angularCoreNumbers.`1`
-import typingsJapgolly.angularCore.angularCoreNumbers.`2`
-import typingsJapgolly.angularCore.angularCoreNumbers.`3`
-import typingsJapgolly.angularCore.angularCoreNumbers.`4`
-import typingsJapgolly.angularCore.angularCoreNumbers.`5`
-import typingsJapgolly.angularCore.angularCoreNumbers.`6`
+import typingsJapgolly.angularCore.angularCoreInts.`-1`
+import typingsJapgolly.angularCore.angularCoreInts.`0`
+import typingsJapgolly.angularCore.angularCoreInts.`1`
+import typingsJapgolly.angularCore.angularCoreInts.`2`
+import typingsJapgolly.angularCore.angularCoreInts.`3`
+import typingsJapgolly.angularCore.angularCoreInts.`4`
+import typingsJapgolly.angularCore.angularCoreInts.`5`
+import typingsJapgolly.angularCore.angularCoreInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.angularCore.angularCoreNumbers.`0`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`1`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`2`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`3`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`4`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`5`
-  - typingsJapgolly.angularCore.angularCoreNumbers.`6`
+  - typingsJapgolly.angularCore.angularCoreInts.`-1`
+  - typingsJapgolly.angularCore.angularCoreInts.`0`
+  - typingsJapgolly.angularCore.angularCoreInts.`1`
+  - typingsJapgolly.angularCore.angularCoreInts.`2`
+  - typingsJapgolly.angularCore.angularCoreInts.`3`
+  - typingsJapgolly.angularCore.angularCoreInts.`4`
+  - typingsJapgolly.angularCore.angularCoreInts.`5`
+  - typingsJapgolly.angularCore.angularCoreInts.`6`
 */
-trait ɵAttributeMarker extends js.Object
-
+trait ɵAttributeMarker extends StObject
 object ɵAttributeMarker {
+  
   /**
     * Signals that the following attribute names were extracted from input or output bindings.
     *
@@ -38,8 +40,8 @@ object ɵAttributeMarker {
     * var _c1 = ['moo', 'car', AttributeMarker.Bindings, 'foo', 'bar'];
     * ```
     */
-  @scala.inline
-  def Bindings: `3` = this.cast(3)
+  inline def Bindings: `3` = 3.asInstanceOf[`3`]
+  
   /**
     * Signals class declaration.
     *
@@ -56,8 +58,8 @@ object ɵAttributeMarker {
     * var _c1 = [AttributeMarker.Classes, 'foo', 'bar', 'baz'];
     * ```
     */
-  @scala.inline
-  def Classes: `1` = this.cast(1)
+  inline def Classes: `1` = 1.asInstanceOf[`1`]
+  
   /**
     * Signals that the following attribute will be translated by runtime i18n
     *
@@ -72,17 +74,27 @@ object ɵAttributeMarker {
     * ```
     * var _c1 = ['moo', 'car', AttributeMarker.I18n, 'foo', 'bar'];
     */
-  @scala.inline
-  def I18n: `6` = this.cast(6)
+  inline def I18n: `6` = 6.asInstanceOf[`6`]
+  
+  /**
+    * An implicit marker which indicates that the value in the array are of `attributeKey`,
+    * `attributeValue` format.
+    *
+    * NOTE: This is implicit as it is the type when no marker is present in array. We indicate that
+    * it should not be present at runtime by the negative number.
+    */
+  inline def ImplicitAttributes: `-1` = -1.asInstanceOf[`-1`]
+  
   /**
     * Marker indicates that the following 3 values in the attributes array are:
     * namespaceUri, attributeName, attributeValue
     * in that order.
     */
-  @scala.inline
-  def NamespaceURI: `0` = this.cast(0)
+  inline def NamespaceURI: `0` = 0.asInstanceOf[`0`]
+  
   /**
-    * Signals that the following attribute is `ngProjectAs` and its value is a parsed `CssSelector`.
+    * Signals that the following attribute is `ngProjectAs` and its value is a parsed
+    * `CssSelector`.
     *
     * For example, given the following HTML:
     *
@@ -96,8 +108,8 @@ object ɵAttributeMarker {
     * ['attr', 'value', AttributeMarker.ProjectAs, ['', 'title', '']]
     * ```
     */
-  @scala.inline
-  def ProjectAs: `5` = this.cast(5)
+  inline def ProjectAs: `5` = 5.asInstanceOf[`5`]
+  
   /**
     * Signals style declaration.
     *
@@ -115,8 +127,8 @@ object ɵAttributeMarker {
     * var _c1 = [AttributeMarker.Styles, 'width', '100px', 'height'. '200px', 'color', 'red'];
     * ```
     */
-  @scala.inline
-  def Styles: `2` = this.cast(2)
+  inline def Styles: `2` = 2.asInstanceOf[`2`]
+  
   /**
     * Signals that the following attribute names were hoisted from an inline-template declaration.
     *
@@ -140,9 +152,5 @@ object ɵAttributeMarker {
     * ['dirA', '', AttributeMarker.Bindings, 'dirB']
     * ```
     */
-  @scala.inline
-  def Template: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  inline def Template: `4` = 4.asInstanceOf[`4`]
 }
-

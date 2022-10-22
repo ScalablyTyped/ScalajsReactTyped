@@ -1,61 +1,76 @@
 package typingsJapgolly.protonNative.mod
 
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BoxProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   /**
     * Whether the Box is enabled.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether there is extra space between the children in the Box.
     */
   var padded: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether the Box arranges its children vertically or horizontally.
     */
   var vertical: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether the Box and its children can be seen.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object BoxProps {
-  @scala.inline
-  def apply(
-    align: AnonH = null,
-    column: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: AnonH = null,
-    label: String = null,
-    padded: js.UndefOr[Boolean] = js.undefined,
-    row: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): BoxProps = {
+  
+  inline def apply(): BoxProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(padded)) __obj.updateDynamic("padded")(padded.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoxProps]
   }
+  
+  extension [Self <: BoxProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setPadded(value: Boolean): Self = StObject.set(x, "padded", value.asInstanceOf[js.Any])
+    
+    inline def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.stripeV3.stripe
 
 import typingsJapgolly.stripeV3.stripeV3Strings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV3.stripeV3Strings.credit
@@ -11,18 +11,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.stripeV3.stripeV3Strings.prepaid
   - typingsJapgolly.stripeV3.stripeV3Strings.unknown_
 */
-trait fundingType extends js.Object
-
+trait fundingType extends StObject
 object fundingType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def credit: typingsJapgolly.stripeV3.stripeV3Strings.credit = this.cast("credit")
-  @scala.inline
-  def debit: typingsJapgolly.stripeV3.stripeV3Strings.debit = this.cast("debit")
-  @scala.inline
-  def prepaid: typingsJapgolly.stripeV3.stripeV3Strings.prepaid = this.cast("prepaid")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def credit: typingsJapgolly.stripeV3.stripeV3Strings.credit = "credit".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.credit]
+  
+  inline def debit: typingsJapgolly.stripeV3.stripeV3Strings.debit = "debit".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.debit]
+  
+  inline def prepaid: typingsJapgolly.stripeV3.stripeV3Strings.prepaid = "prepaid".asInstanceOf[typingsJapgolly.stripeV3.stripeV3Strings.prepaid]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

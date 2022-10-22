@@ -1,32 +1,32 @@
 package typingsJapgolly.uirouterCore.mod
 
-import typingsJapgolly.uirouterCore.transitionHookMod.GetErrorHandler
-import typingsJapgolly.uirouterCore.transitionHookMod.GetResultHandler
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.PathType
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.PathType
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.GetErrorHandler
+import typingsJapgolly.uirouterCore.libTransitionTransitionHookMod.GetResultHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "TransitionEventType")
 @js.native
-class TransitionEventType protected ()
-  extends typingsJapgolly.uirouterCore.transitionMod.TransitionEventType {
+open class TransitionEventType protected ()
+  extends typingsJapgolly.uirouterCore.libTransitionMod.TransitionEventType {
   def this(
     name: String,
-    hookPhase: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType
   ) = this()
   def this(
     name: String,
-    hookPhase: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean
   ) = this()
   def this(
     name: String,
-    hookPhase: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -34,7 +34,24 @@ class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: GetResultHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: Unit,
+    getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -43,7 +60,55 @@ class TransitionEventType protected ()
   ) = this()
   def this(
     name: String,
-    hookPhase: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookPhase,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: Unit,
+    getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: GetResultHandler,
+    getErrorHandler: GetErrorHandler
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: Unit,
+    getErrorHandler: Unit,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: Unit,
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Boolean,
+    getResultHandler: GetResultHandler,
+    getErrorHandler: Unit,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
     hookOrder: Double,
     criteriaMatchPath: PathType,
     reverseSort: Boolean,
@@ -51,5 +116,44 @@ class TransitionEventType protected ()
     getErrorHandler: GetErrorHandler,
     synchronous: Boolean
   ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: Unit,
+    getErrorHandler: Unit,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: Unit,
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: GetResultHandler,
+    getErrorHandler: Unit,
+    synchronous: Boolean
+  ) = this()
+  def this(
+    name: String,
+    hookPhase: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookPhase,
+    hookOrder: Double,
+    criteriaMatchPath: PathType,
+    reverseSort: Unit,
+    getResultHandler: GetResultHandler,
+    getErrorHandler: GetErrorHandler,
+    synchronous: Boolean
+  ) = this()
 }
-

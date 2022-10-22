@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiColumnComboBoxVirtual extends js.Object {
+trait MultiColumnComboBoxVirtual extends StObject {
+  
   var itemHeight: js.UndefOr[Double] = js.undefined
+  
   var mapValueTo: js.UndefOr[String] = js.undefined
+  
   var valueMapper: js.UndefOr[js.Function] = js.undefined
 }
-
 object MultiColumnComboBoxVirtual {
-  @scala.inline
-  def apply(itemHeight: Int | Double = null, mapValueTo: String = null, valueMapper: js.Function = null): MultiColumnComboBoxVirtual = {
+  
+  inline def apply(): MultiColumnComboBoxVirtual = {
     val __obj = js.Dynamic.literal()
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo.asInstanceOf[js.Any])
-    if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiColumnComboBoxVirtual]
   }
+  
+  extension [Self <: MultiColumnComboBoxVirtual](x: Self) {
+    
+    inline def setItemHeight(value: Double): Self = StObject.set(x, "itemHeight", value.asInstanceOf[js.Any])
+    
+    inline def setItemHeightUndefined: Self = StObject.set(x, "itemHeight", js.undefined)
+    
+    inline def setMapValueTo(value: String): Self = StObject.set(x, "mapValueTo", value.asInstanceOf[js.Any])
+    
+    inline def setMapValueToUndefined: Self = StObject.set(x, "mapValueTo", js.undefined)
+    
+    inline def setValueMapper(value: js.Function): Self = StObject.set(x, "valueMapper", value.asInstanceOf[js.Any])
+    
+    inline def setValueMapperUndefined: Self = StObject.set(x, "valueMapper", js.undefined)
+  }
 }
-

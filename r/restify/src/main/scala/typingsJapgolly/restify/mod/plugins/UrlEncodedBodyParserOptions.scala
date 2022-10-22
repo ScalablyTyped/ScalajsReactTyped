@@ -1,27 +1,36 @@
 package typingsJapgolly.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UrlEncodedBodyParserOptions extends js.Object {
+trait UrlEncodedBodyParserOptions extends StObject {
+  
   var bodyReader: js.UndefOr[Boolean] = js.undefined
+  
   var mapParams: js.UndefOr[Boolean] = js.undefined
+  
   var overrideParams: js.UndefOr[Boolean] = js.undefined
 }
-
 object UrlEncodedBodyParserOptions {
-  @scala.inline
-  def apply(
-    bodyReader: js.UndefOr[Boolean] = js.undefined,
-    mapParams: js.UndefOr[Boolean] = js.undefined,
-    overrideParams: js.UndefOr[Boolean] = js.undefined
-  ): UrlEncodedBodyParserOptions = {
+  
+  inline def apply(): UrlEncodedBodyParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bodyReader)) __obj.updateDynamic("bodyReader")(bodyReader.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams.asInstanceOf[js.Any])
-    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[UrlEncodedBodyParserOptions]
   }
+  
+  extension [Self <: UrlEncodedBodyParserOptions](x: Self) {
+    
+    inline def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
+    
+    inline def setBodyReaderUndefined: Self = StObject.set(x, "bodyReader", js.undefined)
+    
+    inline def setMapParams(value: Boolean): Self = StObject.set(x, "mapParams", value.asInstanceOf[js.Any])
+    
+    inline def setMapParamsUndefined: Self = StObject.set(x, "mapParams", js.undefined)
+    
+    inline def setOverrideParams(value: Boolean): Self = StObject.set(x, "overrideParams", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideParamsUndefined: Self = StObject.set(x, "overrideParams", js.undefined)
+  }
 }
-

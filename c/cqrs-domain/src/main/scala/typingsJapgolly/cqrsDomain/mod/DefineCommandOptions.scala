@@ -1,32 +1,44 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineCommand
-trait DefineCommandOptions extends js.Object {
+trait DefineCommandOptions extends StObject {
+  
   var existing: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var payload: js.UndefOr[String] = js.undefined
+  
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DefineCommandOptions {
-  @scala.inline
-  def apply(
-    existing: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    payload: String = null,
-    version: Int | Double = null
-  ): DefineCommandOptions = {
+  
+  inline def apply(): DefineCommandOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(existing)) __obj.updateDynamic("existing")(existing.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineCommandOptions]
   }
+  
+  extension [Self <: DefineCommandOptions](x: Self) {
+    
+    inline def setExisting(value: Boolean): Self = StObject.set(x, "existing", value.asInstanceOf[js.Any])
+    
+    inline def setExistingUndefined: Self = StObject.set(x, "existing", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

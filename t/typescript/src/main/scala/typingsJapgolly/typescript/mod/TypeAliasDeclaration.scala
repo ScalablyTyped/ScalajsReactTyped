@@ -1,21 +1,28 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeAliasDeclaration
-  extends DeclarationStatement
-     with JSDocContainer
+  extends StObject
+     with DeclarationStatement
      with DeclarationWithTypeParameterChildren
-     with HasType
-     with _HasJSDoc {
+     with HasJSDoc
+     with HasModifiers
+     with HasType {
+  
   @JSName("kind")
-  var kind_TypeAliasDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.TypeAliasDeclaration = js.native
+  val kind_TypeAliasDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.TypeAliasDeclaration = js.native
+  
+  @JSName("modifiers")
+  val modifiers_TypeAliasDeclaration: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("name")
-  var name_TypeAliasDeclaration: Identifier = js.native
-  var `type`: TypeNode = js.native
-  var typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
+  val name_TypeAliasDeclaration: Identifier = js.native
+  
+  val `type`: TypeNode = js.native
+  
+  val typeParameters: js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
 }
-

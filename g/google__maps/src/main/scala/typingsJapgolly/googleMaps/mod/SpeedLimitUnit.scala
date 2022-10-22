@@ -1,21 +1,17 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.KPH
   - typingsJapgolly.googleMaps.googleMapsStrings.MPH
 */
-trait SpeedLimitUnit extends js.Object
-
+trait SpeedLimitUnit extends StObject
 object SpeedLimitUnit {
-  @scala.inline
-  def KPH: typingsJapgolly.googleMaps.googleMapsStrings.KPH = this.cast("KPH")
-  @scala.inline
-  def MPH: typingsJapgolly.googleMaps.googleMapsStrings.MPH = this.cast("MPH")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def KPH: typingsJapgolly.googleMaps.googleMapsStrings.KPH = "KPH".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.KPH]
+  
+  inline def MPH: typingsJapgolly.googleMaps.googleMapsStrings.MPH = "MPH".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.MPH]
 }
-

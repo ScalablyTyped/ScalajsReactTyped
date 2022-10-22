@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DraftVisibilityType extends js.Object
-
+sealed trait DraftVisibilityType extends StObject
 @JSGlobal("SP.DraftVisibilityType")
 @js.native
-object DraftVisibilityType extends js.Object {
-  @js.native
-  sealed trait approver extends DraftVisibilityType
+object DraftVisibilityType extends StObject {
   
   @js.native
-  sealed trait author extends DraftVisibilityType
+  sealed trait approver
+    extends StObject
+       with DraftVisibilityType
   
   @js.native
-  sealed trait reader extends DraftVisibilityType
+  sealed trait author
+    extends StObject
+       with DraftVisibilityType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DraftVisibilityType with Double] = js.native
-  /* 2 */ @js.native
-  object approver extends TopLevel[approver with Double]
-  
-  /* 1 */ @js.native
-  object author extends TopLevel[author with Double]
-  
-  /* 0 */ @js.native
-  object reader extends TopLevel[reader with Double]
-  
+  @js.native
+  sealed trait reader
+    extends StObject
+       with DraftVisibilityType
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothCacheMode extends js.Object
-
+sealed trait BluetoothCacheMode extends StObject
 /** Indicates whether certain Bluetooth API methods should operate on values cached in the system or retrieve those values from the Bluetooth device. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothCacheMode")
 @js.native
-object BluetoothCacheMode extends js.Object {
+object BluetoothCacheMode extends StObject {
+  
   /** Use system-cached values. */
   @js.native
-  sealed trait cached extends BluetoothCacheMode
+  sealed trait cached
+    extends StObject
+       with BluetoothCacheMode
   
   /** Retrieve values from the Bluetooth device. */
   @js.native
-  sealed trait uncached extends BluetoothCacheMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothCacheMode with Double] = js.native
-  /* 0 */ @js.native
-  object cached extends TopLevel[cached with Double]
-  
-  /* 1 */ @js.native
-  object uncached extends TopLevel[uncached with Double]
-  
+  sealed trait uncached
+    extends StObject
+       with BluetoothCacheMode
 }
-

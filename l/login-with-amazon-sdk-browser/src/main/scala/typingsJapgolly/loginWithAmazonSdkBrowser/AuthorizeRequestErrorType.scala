@@ -1,8 +1,8 @@
 package typingsJapgolly.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.access_denied
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.temporarily_unavailable
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.unauthorized_client
 */
-trait AuthorizeRequestErrorType extends js.Object
-
+trait AuthorizeRequestErrorType extends StObject
 object AuthorizeRequestErrorType {
-  @scala.inline
-  def access_denied: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.access_denied = this.cast("access_denied")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def invalid_grant: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_grant = this.cast("invalid_grant")
-  @scala.inline
-  def invalid_request: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_request = this.cast("invalid_request")
-  @scala.inline
-  def invalid_scope: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_scope = this.cast("invalid_scope")
-  @scala.inline
-  def server_error: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.server_error = this.cast("server_error")
-  @scala.inline
-  def temporarily_unavailable: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.temporarily_unavailable = this.cast("temporarily_unavailable")
-  @scala.inline
-  def unauthorized_client: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.unauthorized_client = this.cast("unauthorized_client")
+  
+  inline def access_denied: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.access_denied = "access_denied".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.access_denied]
+  
+  inline def invalid_grant: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_grant = "invalid_grant".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_grant]
+  
+  inline def invalid_request: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_request = "invalid_request".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_request]
+  
+  inline def invalid_scope: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_scope = "invalid_scope".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.invalid_scope]
+  
+  inline def server_error: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.server_error = "server_error".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.server_error]
+  
+  inline def temporarily_unavailable: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.temporarily_unavailable = "temporarily_unavailable".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.temporarily_unavailable]
+  
+  inline def unauthorized_client: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.unauthorized_client = "unauthorized_client".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.unauthorized_client]
 }
-

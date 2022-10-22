@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.RowExpandedChanged event.
   */
-@JSGlobal("ASPxClientVerticalGridRowExpandedEventArgs")
-@js.native
-class ASPxClientVerticalGridRowExpandedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridRowExpandedEventArgs class with specified settings.
-    * @param row A ASPxClientVerticalGridRow object that uniquely identifies the expanded row. This value is assigned to the ASPxClientVerticalGridRowExpandedEventArgs.row property.
-    */
-  def this(row: ASPxClientVerticalGridRow) = this()
+trait ASPxClientVerticalGridRowExpandedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the expanded row.
     */
-  var row: ASPxClientVerticalGridRow = js.native
+  var row: ASPxClientVerticalGridRow
 }
-
+object ASPxClientVerticalGridRowExpandedEventArgs {
+  
+  inline def apply(row: ASPxClientVerticalGridRow): ASPxClientVerticalGridRowExpandedEventArgs = {
+    val __obj = js.Dynamic.literal(row = row.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridRowExpandedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientVerticalGridRowExpandedEventArgs](x: Self) {
+    
+    inline def setRow(value: ASPxClientVerticalGridRow): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+  }
+}

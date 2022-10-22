@@ -1,0 +1,101 @@
+package typingsJapgolly.devtoolsProtocol.mod.Protocol.Network
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow
+*/
+trait CorsError extends StObject
+object CorsError {
+  
+  inline def AllowOriginMismatch: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch = "AllowOriginMismatch".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.AllowOriginMismatch]
+  
+  inline def CorsDisabledScheme: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme = "CorsDisabledScheme".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorsDisabledScheme]
+  
+  inline def DisallowedByMode: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode = "DisallowedByMode".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.DisallowedByMode]
+  
+  inline def HeaderDisallowedByPreflightResponse: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse = "HeaderDisallowedByPreflightResponse".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.HeaderDisallowedByPreflightResponse]
+  
+  inline def InsecurePrivateNetwork: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork = "InsecurePrivateNetwork".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InsecurePrivateNetwork]
+  
+  inline def InvalidAllowCredentials: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials = "InvalidAllowCredentials".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowCredentials]
+  
+  inline def InvalidAllowHeadersPreflightResponse: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse = "InvalidAllowHeadersPreflightResponse".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowHeadersPreflightResponse]
+  
+  inline def InvalidAllowMethodsPreflightResponse: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse = "InvalidAllowMethodsPreflightResponse".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowMethodsPreflightResponse]
+  
+  inline def InvalidAllowOriginValue: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue = "InvalidAllowOriginValue".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidAllowOriginValue]
+  
+  inline def InvalidPrivateNetworkAccess: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess = "InvalidPrivateNetworkAccess".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidPrivateNetworkAccess]
+  
+  inline def InvalidResponse: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse = "InvalidResponse".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.InvalidResponse]
+  
+  inline def MethodDisallowedByPreflightResponse: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse = "MethodDisallowedByPreflightResponse".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MethodDisallowedByPreflightResponse]
+  
+  inline def MissingAllowOriginHeader: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader = "MissingAllowOriginHeader".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MissingAllowOriginHeader]
+  
+  inline def MultipleAllowOriginValues: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues = "MultipleAllowOriginValues".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.MultipleAllowOriginValues]
+  
+  inline def NoCorsRedirectModeNotFollow: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow = "NoCorsRedirectModeNotFollow".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.NoCorsRedirectModeNotFollow]
+  
+  inline def PreflightAllowOriginMismatch: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch = "PreflightAllowOriginMismatch".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightAllowOriginMismatch]
+  
+  inline def PreflightDisallowedRedirect: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect = "PreflightDisallowedRedirect".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightDisallowedRedirect]
+  
+  inline def PreflightInvalidAllowCredentials: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials = "PreflightInvalidAllowCredentials".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowCredentials]
+  
+  inline def PreflightInvalidAllowExternal: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal = "PreflightInvalidAllowExternal".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowExternal]
+  
+  inline def PreflightInvalidAllowOriginValue: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue = "PreflightInvalidAllowOriginValue".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowOriginValue]
+  
+  inline def PreflightInvalidAllowPrivateNetwork: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork = "PreflightInvalidAllowPrivateNetwork".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidAllowPrivateNetwork]
+  
+  inline def PreflightInvalidStatus: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus = "PreflightInvalidStatus".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightInvalidStatus]
+  
+  inline def PreflightMissingAllowExternal: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal = "PreflightMissingAllowExternal".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowExternal]
+  
+  inline def PreflightMissingAllowOriginHeader: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader = "PreflightMissingAllowOriginHeader".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowOriginHeader]
+  
+  inline def PreflightMissingAllowPrivateNetwork: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork = "PreflightMissingAllowPrivateNetwork".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMissingAllowPrivateNetwork]
+  
+  inline def PreflightMultipleAllowOriginValues: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues = "PreflightMultipleAllowOriginValues".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightMultipleAllowOriginValues]
+  
+  inline def PreflightWildcardOriginNotAllowed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed = "PreflightWildcardOriginNotAllowed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.PreflightWildcardOriginNotAllowed]
+  
+  inline def RedirectContainsCredentials: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials = "RedirectContainsCredentials".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.RedirectContainsCredentials]
+  
+  inline def UnexpectedPrivateNetworkAccess: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess = "UnexpectedPrivateNetworkAccess".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.UnexpectedPrivateNetworkAccess]
+  
+  inline def WildcardOriginNotAllowed: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed = "WildcardOriginNotAllowed".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WildcardOriginNotAllowed]
+}

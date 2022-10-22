@@ -1,183 +1,358 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Contact extends OutlookItem {
+trait Contact
+  extends StObject
+     with OutlookItem {
+  
   // The name of the contact's assistant.
-  var assistantName: js.UndefOr[String] = js.undefined
+  var assistantName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in
-    * UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
+    * UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
-  var birthday: js.UndefOr[String] = js.undefined
+  var birthday: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's business address.
-  var businessAddress: js.UndefOr[PhysicalAddress] = js.undefined
+  var businessAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
+  
   // The business home page of the contact.
-  var businessHomePage: js.UndefOr[String] = js.undefined
+  var businessHomePage: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's business phone numbers.
-  var businessPhones: js.UndefOr[js.Array[String]] = js.undefined
+  var businessPhones: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // The names of the contact's children.
-  var children: js.UndefOr[js.Array[String]] = js.undefined
+  var children: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // The name of the contact's company.
-  var companyName: js.UndefOr[String] = js.undefined
+  var companyName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's department.
-  var department: js.UndefOr[String] = js.undefined
+  var department: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The contact's display name. You can specify the display name in a create or update operation. Note that later updates
     * to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
     * To preserve a pre-existing value, always include it as displayName in an update operation.
     */
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's email addresses.
-  var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
+  var emailAddresses: js.UndefOr[NullableOption[js.Array[EmailAddress]]] = js.undefined
+  
   // The collection of open extensions defined for the contact. Read-only. Nullable.
-  var extensions: js.UndefOr[js.Array[Extension]] = js.undefined
+  var extensions: js.UndefOr[NullableOption[js.Array[Extension]]] = js.undefined
+  
   // The name the contact is filed under.
-  var fileAs: js.UndefOr[String] = js.undefined
+  var fileAs: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's generation.
-  var generation: js.UndefOr[String] = js.undefined
+  var generation: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's given name.
-  var givenName: js.UndefOr[String] = js.undefined
+  var givenName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The contact's home address.
-  var homeAddress: js.UndefOr[PhysicalAddress] = js.undefined
+  var homeAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
+  
   // The contact's home phone numbers.
-  var homePhones: js.UndefOr[js.Array[String]] = js.undefined
-  // The contact's instant messaging (IM) addresses.
-  var imAddresses: js.UndefOr[js.Array[String]] = js.undefined
-  // The contact's initials.
-  var initials: js.UndefOr[String] = js.undefined
-  // The contact’s job title.
-  var jobTitle: js.UndefOr[String] = js.undefined
-  // The name of the contact's manager.
-  var manager: js.UndefOr[String] = js.undefined
-  // The contact's middle name.
-  var middleName: js.UndefOr[String] = js.undefined
-  // The contact's mobile phone number.
-  var mobilePhone: js.UndefOr[String] = js.undefined
+  var homePhones: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
+  var imAddresses: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
+  var initials: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var jobTitle: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var manager: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var middleName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var mobilePhone: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-  var multiValueExtendedProperties: js.UndefOr[js.Array[MultiValueLegacyExtendedProperty]] = js.undefined
-  // The contact's nickname.
-  var nickName: js.UndefOr[String] = js.undefined
-  // The location of the contact's office.
-  var officeLocation: js.UndefOr[String] = js.undefined
-  // Other addresses for the contact.
-  var otherAddress: js.UndefOr[PhysicalAddress] = js.undefined
-  // The ID of the contact's parent folder.
-  var parentFolderId: js.UndefOr[String] = js.undefined
-  // The user's notes about the contact.
-  var personalNotes: js.UndefOr[String] = js.undefined
+  var multiValueExtendedProperties: js.UndefOr[NullableOption[js.Array[MultiValueLegacyExtendedProperty]]] = js.undefined
+  
+  var nickName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var officeLocation: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var otherAddress: js.UndefOr[NullableOption[PhysicalAddress]] = js.undefined
+  
+  var parentFolderId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var personalNotes: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Optional contact picture. You can get or set a photo for a contact.
-  var photo: js.UndefOr[ProfilePhoto] = js.undefined
-  // The contact's profession.
-  var profession: js.UndefOr[String] = js.undefined
+  var photo: js.UndefOr[NullableOption[ProfilePhoto]] = js.undefined
+  
+  var profession: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-  var singleValueExtendedProperties: js.UndefOr[js.Array[SingleValueLegacyExtendedProperty]] = js.undefined
-  // The name of the contact's spouse/partner.
-  var spouseName: js.UndefOr[String] = js.undefined
-  // The contact's surname.
-  var surname: js.UndefOr[String] = js.undefined
-  // The contact's title.
-  var title: js.UndefOr[String] = js.undefined
-  // The phonetic Japanese company name of the contact.
-  var yomiCompanyName: js.UndefOr[String] = js.undefined
-  // The phonetic Japanese given name (first name) of the contact.
-  var yomiGivenName: js.UndefOr[String] = js.undefined
-  // The phonetic Japanese surname (last name) of the contact.
-  var yomiSurname: js.UndefOr[String] = js.undefined
+  var singleValueExtendedProperties: js.UndefOr[NullableOption[js.Array[SingleValueLegacyExtendedProperty]]] = js.undefined
+  
+  var spouseName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var surname: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var yomiCompanyName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var yomiGivenName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var yomiSurname: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object Contact {
-  @scala.inline
-  def apply(
-    assistantName: String = null,
-    birthday: String = null,
-    businessAddress: PhysicalAddress = null,
-    businessHomePage: String = null,
-    businessPhones: js.Array[String] = null,
-    categories: js.Array[String] = null,
-    changeKey: String = null,
-    children: js.Array[String] = null,
-    companyName: String = null,
-    createdDateTime: String = null,
-    department: String = null,
-    displayName: String = null,
-    emailAddresses: js.Array[EmailAddress] = null,
-    extensions: js.Array[Extension] = null,
-    fileAs: String = null,
-    generation: String = null,
-    givenName: String = null,
-    homeAddress: PhysicalAddress = null,
-    homePhones: js.Array[String] = null,
-    id: String = null,
-    imAddresses: js.Array[String] = null,
-    initials: String = null,
-    jobTitle: String = null,
-    lastModifiedDateTime: String = null,
-    manager: String = null,
-    middleName: String = null,
-    mobilePhone: String = null,
-    multiValueExtendedProperties: js.Array[MultiValueLegacyExtendedProperty] = null,
-    nickName: String = null,
-    officeLocation: String = null,
-    otherAddress: PhysicalAddress = null,
-    parentFolderId: String = null,
-    personalNotes: String = null,
-    photo: ProfilePhoto = null,
-    profession: String = null,
-    singleValueExtendedProperties: js.Array[SingleValueLegacyExtendedProperty] = null,
-    spouseName: String = null,
-    surname: String = null,
-    title: String = null,
-    yomiCompanyName: String = null,
-    yomiGivenName: String = null,
-    yomiSurname: String = null
-  ): Contact = {
+  
+  inline def apply(): Contact = {
     val __obj = js.Dynamic.literal()
-    if (assistantName != null) __obj.updateDynamic("assistantName")(assistantName.asInstanceOf[js.Any])
-    if (birthday != null) __obj.updateDynamic("birthday")(birthday.asInstanceOf[js.Any])
-    if (businessAddress != null) __obj.updateDynamic("businessAddress")(businessAddress.asInstanceOf[js.Any])
-    if (businessHomePage != null) __obj.updateDynamic("businessHomePage")(businessHomePage.asInstanceOf[js.Any])
-    if (businessPhones != null) __obj.updateDynamic("businessPhones")(businessPhones.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (changeKey != null) __obj.updateDynamic("changeKey")(changeKey.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (companyName != null) __obj.updateDynamic("companyName")(companyName.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (department != null) __obj.updateDynamic("department")(department.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (emailAddresses != null) __obj.updateDynamic("emailAddresses")(emailAddresses.asInstanceOf[js.Any])
-    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
-    if (fileAs != null) __obj.updateDynamic("fileAs")(fileAs.asInstanceOf[js.Any])
-    if (generation != null) __obj.updateDynamic("generation")(generation.asInstanceOf[js.Any])
-    if (givenName != null) __obj.updateDynamic("givenName")(givenName.asInstanceOf[js.Any])
-    if (homeAddress != null) __obj.updateDynamic("homeAddress")(homeAddress.asInstanceOf[js.Any])
-    if (homePhones != null) __obj.updateDynamic("homePhones")(homePhones.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imAddresses != null) __obj.updateDynamic("imAddresses")(imAddresses.asInstanceOf[js.Any])
-    if (initials != null) __obj.updateDynamic("initials")(initials.asInstanceOf[js.Any])
-    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
-    if (middleName != null) __obj.updateDynamic("middleName")(middleName.asInstanceOf[js.Any])
-    if (mobilePhone != null) __obj.updateDynamic("mobilePhone")(mobilePhone.asInstanceOf[js.Any])
-    if (multiValueExtendedProperties != null) __obj.updateDynamic("multiValueExtendedProperties")(multiValueExtendedProperties.asInstanceOf[js.Any])
-    if (nickName != null) __obj.updateDynamic("nickName")(nickName.asInstanceOf[js.Any])
-    if (officeLocation != null) __obj.updateDynamic("officeLocation")(officeLocation.asInstanceOf[js.Any])
-    if (otherAddress != null) __obj.updateDynamic("otherAddress")(otherAddress.asInstanceOf[js.Any])
-    if (parentFolderId != null) __obj.updateDynamic("parentFolderId")(parentFolderId.asInstanceOf[js.Any])
-    if (personalNotes != null) __obj.updateDynamic("personalNotes")(personalNotes.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (profession != null) __obj.updateDynamic("profession")(profession.asInstanceOf[js.Any])
-    if (singleValueExtendedProperties != null) __obj.updateDynamic("singleValueExtendedProperties")(singleValueExtendedProperties.asInstanceOf[js.Any])
-    if (spouseName != null) __obj.updateDynamic("spouseName")(spouseName.asInstanceOf[js.Any])
-    if (surname != null) __obj.updateDynamic("surname")(surname.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (yomiCompanyName != null) __obj.updateDynamic("yomiCompanyName")(yomiCompanyName.asInstanceOf[js.Any])
-    if (yomiGivenName != null) __obj.updateDynamic("yomiGivenName")(yomiGivenName.asInstanceOf[js.Any])
-    if (yomiSurname != null) __obj.updateDynamic("yomiSurname")(yomiSurname.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contact]
   }
+  
+  extension [Self <: Contact](x: Self) {
+    
+    inline def setAssistantName(value: NullableOption[String]): Self = StObject.set(x, "assistantName", value.asInstanceOf[js.Any])
+    
+    inline def setAssistantNameNull: Self = StObject.set(x, "assistantName", null)
+    
+    inline def setAssistantNameUndefined: Self = StObject.set(x, "assistantName", js.undefined)
+    
+    inline def setBirthday(value: NullableOption[String]): Self = StObject.set(x, "birthday", value.asInstanceOf[js.Any])
+    
+    inline def setBirthdayNull: Self = StObject.set(x, "birthday", null)
+    
+    inline def setBirthdayUndefined: Self = StObject.set(x, "birthday", js.undefined)
+    
+    inline def setBusinessAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "businessAddress", value.asInstanceOf[js.Any])
+    
+    inline def setBusinessAddressNull: Self = StObject.set(x, "businessAddress", null)
+    
+    inline def setBusinessAddressUndefined: Self = StObject.set(x, "businessAddress", js.undefined)
+    
+    inline def setBusinessHomePage(value: NullableOption[String]): Self = StObject.set(x, "businessHomePage", value.asInstanceOf[js.Any])
+    
+    inline def setBusinessHomePageNull: Self = StObject.set(x, "businessHomePage", null)
+    
+    inline def setBusinessHomePageUndefined: Self = StObject.set(x, "businessHomePage", js.undefined)
+    
+    inline def setBusinessPhones(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "businessPhones", value.asInstanceOf[js.Any])
+    
+    inline def setBusinessPhonesNull: Self = StObject.set(x, "businessPhones", null)
+    
+    inline def setBusinessPhonesUndefined: Self = StObject.set(x, "businessPhones", js.undefined)
+    
+    inline def setBusinessPhonesVarargs(value: String*): Self = StObject.set(x, "businessPhones", js.Array(value*))
+    
+    inline def setChildren(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: String*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setCompanyName(value: NullableOption[String]): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyNameNull: Self = StObject.set(x, "companyName", null)
+    
+    inline def setCompanyNameUndefined: Self = StObject.set(x, "companyName", js.undefined)
+    
+    inline def setDepartment(value: NullableOption[String]): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
+    
+    inline def setDepartmentNull: Self = StObject.set(x, "department", null)
+    
+    inline def setDepartmentUndefined: Self = StObject.set(x, "department", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setEmailAddresses(value: NullableOption[js.Array[EmailAddress]]): Self = StObject.set(x, "emailAddresses", value.asInstanceOf[js.Any])
+    
+    inline def setEmailAddressesNull: Self = StObject.set(x, "emailAddresses", null)
+    
+    inline def setEmailAddressesUndefined: Self = StObject.set(x, "emailAddresses", js.undefined)
+    
+    inline def setEmailAddressesVarargs(value: EmailAddress*): Self = StObject.set(x, "emailAddresses", js.Array(value*))
+    
+    inline def setExtensions(value: NullableOption[js.Array[Extension]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    
+    inline def setExtensionsNull: Self = StObject.set(x, "extensions", null)
+    
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    
+    inline def setExtensionsVarargs(value: Extension*): Self = StObject.set(x, "extensions", js.Array(value*))
+    
+    inline def setFileAs(value: NullableOption[String]): Self = StObject.set(x, "fileAs", value.asInstanceOf[js.Any])
+    
+    inline def setFileAsNull: Self = StObject.set(x, "fileAs", null)
+    
+    inline def setFileAsUndefined: Self = StObject.set(x, "fileAs", js.undefined)
+    
+    inline def setGeneration(value: NullableOption[String]): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    
+    inline def setGenerationNull: Self = StObject.set(x, "generation", null)
+    
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    
+    inline def setGivenName(value: NullableOption[String]): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    
+    inline def setGivenNameNull: Self = StObject.set(x, "givenName", null)
+    
+    inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+    
+    inline def setHomeAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "homeAddress", value.asInstanceOf[js.Any])
+    
+    inline def setHomeAddressNull: Self = StObject.set(x, "homeAddress", null)
+    
+    inline def setHomeAddressUndefined: Self = StObject.set(x, "homeAddress", js.undefined)
+    
+    inline def setHomePhones(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "homePhones", value.asInstanceOf[js.Any])
+    
+    inline def setHomePhonesNull: Self = StObject.set(x, "homePhones", null)
+    
+    inline def setHomePhonesUndefined: Self = StObject.set(x, "homePhones", js.undefined)
+    
+    inline def setHomePhonesVarargs(value: String*): Self = StObject.set(x, "homePhones", js.Array(value*))
+    
+    inline def setImAddresses(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "imAddresses", value.asInstanceOf[js.Any])
+    
+    inline def setImAddressesNull: Self = StObject.set(x, "imAddresses", null)
+    
+    inline def setImAddressesUndefined: Self = StObject.set(x, "imAddresses", js.undefined)
+    
+    inline def setImAddressesVarargs(value: String*): Self = StObject.set(x, "imAddresses", js.Array(value*))
+    
+    inline def setInitials(value: NullableOption[String]): Self = StObject.set(x, "initials", value.asInstanceOf[js.Any])
+    
+    inline def setInitialsNull: Self = StObject.set(x, "initials", null)
+    
+    inline def setInitialsUndefined: Self = StObject.set(x, "initials", js.undefined)
+    
+    inline def setJobTitle(value: NullableOption[String]): Self = StObject.set(x, "jobTitle", value.asInstanceOf[js.Any])
+    
+    inline def setJobTitleNull: Self = StObject.set(x, "jobTitle", null)
+    
+    inline def setJobTitleUndefined: Self = StObject.set(x, "jobTitle", js.undefined)
+    
+    inline def setManager(value: NullableOption[String]): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+    
+    inline def setManagerNull: Self = StObject.set(x, "manager", null)
+    
+    inline def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
+    
+    inline def setMiddleName(value: NullableOption[String]): Self = StObject.set(x, "middleName", value.asInstanceOf[js.Any])
+    
+    inline def setMiddleNameNull: Self = StObject.set(x, "middleName", null)
+    
+    inline def setMiddleNameUndefined: Self = StObject.set(x, "middleName", js.undefined)
+    
+    inline def setMobilePhone(value: NullableOption[String]): Self = StObject.set(x, "mobilePhone", value.asInstanceOf[js.Any])
+    
+    inline def setMobilePhoneNull: Self = StObject.set(x, "mobilePhone", null)
+    
+    inline def setMobilePhoneUndefined: Self = StObject.set(x, "mobilePhone", js.undefined)
+    
+    inline def setMultiValueExtendedProperties(value: NullableOption[js.Array[MultiValueLegacyExtendedProperty]]): Self = StObject.set(x, "multiValueExtendedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setMultiValueExtendedPropertiesNull: Self = StObject.set(x, "multiValueExtendedProperties", null)
+    
+    inline def setMultiValueExtendedPropertiesUndefined: Self = StObject.set(x, "multiValueExtendedProperties", js.undefined)
+    
+    inline def setMultiValueExtendedPropertiesVarargs(value: MultiValueLegacyExtendedProperty*): Self = StObject.set(x, "multiValueExtendedProperties", js.Array(value*))
+    
+    inline def setNickName(value: NullableOption[String]): Self = StObject.set(x, "nickName", value.asInstanceOf[js.Any])
+    
+    inline def setNickNameNull: Self = StObject.set(x, "nickName", null)
+    
+    inline def setNickNameUndefined: Self = StObject.set(x, "nickName", js.undefined)
+    
+    inline def setOfficeLocation(value: NullableOption[String]): Self = StObject.set(x, "officeLocation", value.asInstanceOf[js.Any])
+    
+    inline def setOfficeLocationNull: Self = StObject.set(x, "officeLocation", null)
+    
+    inline def setOfficeLocationUndefined: Self = StObject.set(x, "officeLocation", js.undefined)
+    
+    inline def setOtherAddress(value: NullableOption[PhysicalAddress]): Self = StObject.set(x, "otherAddress", value.asInstanceOf[js.Any])
+    
+    inline def setOtherAddressNull: Self = StObject.set(x, "otherAddress", null)
+    
+    inline def setOtherAddressUndefined: Self = StObject.set(x, "otherAddress", js.undefined)
+    
+    inline def setParentFolderId(value: NullableOption[String]): Self = StObject.set(x, "parentFolderId", value.asInstanceOf[js.Any])
+    
+    inline def setParentFolderIdNull: Self = StObject.set(x, "parentFolderId", null)
+    
+    inline def setParentFolderIdUndefined: Self = StObject.set(x, "parentFolderId", js.undefined)
+    
+    inline def setPersonalNotes(value: NullableOption[String]): Self = StObject.set(x, "personalNotes", value.asInstanceOf[js.Any])
+    
+    inline def setPersonalNotesNull: Self = StObject.set(x, "personalNotes", null)
+    
+    inline def setPersonalNotesUndefined: Self = StObject.set(x, "personalNotes", js.undefined)
+    
+    inline def setPhoto(value: NullableOption[ProfilePhoto]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    
+    inline def setPhotoNull: Self = StObject.set(x, "photo", null)
+    
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    
+    inline def setProfession(value: NullableOption[String]): Self = StObject.set(x, "profession", value.asInstanceOf[js.Any])
+    
+    inline def setProfessionNull: Self = StObject.set(x, "profession", null)
+    
+    inline def setProfessionUndefined: Self = StObject.set(x, "profession", js.undefined)
+    
+    inline def setSingleValueExtendedProperties(value: NullableOption[js.Array[SingleValueLegacyExtendedProperty]]): Self = StObject.set(x, "singleValueExtendedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setSingleValueExtendedPropertiesNull: Self = StObject.set(x, "singleValueExtendedProperties", null)
+    
+    inline def setSingleValueExtendedPropertiesUndefined: Self = StObject.set(x, "singleValueExtendedProperties", js.undefined)
+    
+    inline def setSingleValueExtendedPropertiesVarargs(value: SingleValueLegacyExtendedProperty*): Self = StObject.set(x, "singleValueExtendedProperties", js.Array(value*))
+    
+    inline def setSpouseName(value: NullableOption[String]): Self = StObject.set(x, "spouseName", value.asInstanceOf[js.Any])
+    
+    inline def setSpouseNameNull: Self = StObject.set(x, "spouseName", null)
+    
+    inline def setSpouseNameUndefined: Self = StObject.set(x, "spouseName", js.undefined)
+    
+    inline def setSurname(value: NullableOption[String]): Self = StObject.set(x, "surname", value.asInstanceOf[js.Any])
+    
+    inline def setSurnameNull: Self = StObject.set(x, "surname", null)
+    
+    inline def setSurnameUndefined: Self = StObject.set(x, "surname", js.undefined)
+    
+    inline def setTitle(value: NullableOption[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setYomiCompanyName(value: NullableOption[String]): Self = StObject.set(x, "yomiCompanyName", value.asInstanceOf[js.Any])
+    
+    inline def setYomiCompanyNameNull: Self = StObject.set(x, "yomiCompanyName", null)
+    
+    inline def setYomiCompanyNameUndefined: Self = StObject.set(x, "yomiCompanyName", js.undefined)
+    
+    inline def setYomiGivenName(value: NullableOption[String]): Self = StObject.set(x, "yomiGivenName", value.asInstanceOf[js.Any])
+    
+    inline def setYomiGivenNameNull: Self = StObject.set(x, "yomiGivenName", null)
+    
+    inline def setYomiGivenNameUndefined: Self = StObject.set(x, "yomiGivenName", js.undefined)
+    
+    inline def setYomiSurname(value: NullableOption[String]): Self = StObject.set(x, "yomiSurname", value.asInstanceOf[js.Any])
+    
+    inline def setYomiSurnameNull: Self = StObject.set(x, "yomiSurname", null)
+    
+    inline def setYomiSurnameUndefined: Self = StObject.set(x, "yomiSurname", js.undefined)
+  }
 }
-

@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.dropdownButtonMod.DropdownButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "DropdownButton")
 @js.native
-class DropdownButton ()
-  extends Component[DropdownButtonProps, js.Object, js.Any]
-
+open class DropdownButton ()
+  extends typingsJapgolly.reactBootstrap.libMod.DropdownButton

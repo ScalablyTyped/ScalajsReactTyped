@@ -1,87 +1,174 @@
 package typingsJapgolly.vimeoPlayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var autopause: js.UndefOr[Boolean] = js.undefined
+  
   var autoplay: js.UndefOr[Boolean] = js.undefined
+  
   var background: js.UndefOr[Boolean] = js.undefined
+  
   var byline: js.UndefOr[Boolean] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var controls: js.UndefOr[Boolean] = js.undefined
+  
   var dnt: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var id: js.UndefOr[Double] = js.undefined
+  
+  var interactive_params: js.UndefOr[String] = js.undefined
+  
+  var keyboard: js.UndefOr[Boolean] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   var maxheight: js.UndefOr[Double] = js.undefined
+  
   var maxwidth: js.UndefOr[Double] = js.undefined
+  
   var muted: js.UndefOr[Boolean] = js.undefined
+  
+  var pip: js.UndefOr[Boolean] = js.undefined
+  
   var playsinline: js.UndefOr[Boolean] = js.undefined
+  
   var portrait: js.UndefOr[Boolean] = js.undefined
+  
   var quality: js.UndefOr[VimeoVideoQuality] = js.undefined
+  
   var responsive: js.UndefOr[Boolean] = js.undefined
+  
   var speed: js.UndefOr[Boolean] = js.undefined
+  
   var texttrack: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[Boolean] = js.undefined
+  
   var transparent: js.UndefOr[Boolean] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    autopause: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    background: js.UndefOr[Boolean] = js.undefined,
-    byline: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    controls: js.UndefOr[Boolean] = js.undefined,
-    dnt: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    id: Int | Double = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxheight: Int | Double = null,
-    maxwidth: Int | Double = null,
-    muted: js.UndefOr[Boolean] = js.undefined,
-    playsinline: js.UndefOr[Boolean] = js.undefined,
-    portrait: js.UndefOr[Boolean] = js.undefined,
-    quality: VimeoVideoQuality = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    speed: js.UndefOr[Boolean] = js.undefined,
-    texttrack: String = null,
-    title: js.UndefOr[Boolean] = js.undefined,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    width: Int | Double = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (!js.isUndefined(byline)) __obj.updateDynamic("byline")(byline.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls.asInstanceOf[js.Any])
-    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (maxheight != null) __obj.updateDynamic("maxheight")(maxheight.asInstanceOf[js.Any])
-    if (maxwidth != null) __obj.updateDynamic("maxwidth")(maxwidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
-    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline.asInstanceOf[js.Any])
-    if (!js.isUndefined(portrait)) __obj.updateDynamic("portrait")(portrait.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
-    if (texttrack != null) __obj.updateDynamic("texttrack")(texttrack.asInstanceOf[js.Any])
-    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setAutopause(value: Boolean): Self = StObject.set(x, "autopause", value.asInstanceOf[js.Any])
+    
+    inline def setAutopauseUndefined: Self = StObject.set(x, "autopause", js.undefined)
+    
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setByline(value: Boolean): Self = StObject.set(x, "byline", value.asInstanceOf[js.Any])
+    
+    inline def setBylineUndefined: Self = StObject.set(x, "byline", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    
+    inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+    
+    inline def setDnt(value: Boolean): Self = StObject.set(x, "dnt", value.asInstanceOf[js.Any])
+    
+    inline def setDntUndefined: Self = StObject.set(x, "dnt", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInteractive_params(value: String): Self = StObject.set(x, "interactive_params", value.asInstanceOf[js.Any])
+    
+    inline def setInteractive_paramsUndefined: Self = StObject.set(x, "interactive_params", js.undefined)
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMaxheight(value: Double): Self = StObject.set(x, "maxheight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxheightUndefined: Self = StObject.set(x, "maxheight", js.undefined)
+    
+    inline def setMaxwidth(value: Double): Self = StObject.set(x, "maxwidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxwidthUndefined: Self = StObject.set(x, "maxwidth", js.undefined)
+    
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    
+    inline def setPip(value: Boolean): Self = StObject.set(x, "pip", value.asInstanceOf[js.Any])
+    
+    inline def setPipUndefined: Self = StObject.set(x, "pip", js.undefined)
+    
+    inline def setPlaysinline(value: Boolean): Self = StObject.set(x, "playsinline", value.asInstanceOf[js.Any])
+    
+    inline def setPlaysinlineUndefined: Self = StObject.set(x, "playsinline", js.undefined)
+    
+    inline def setPortrait(value: Boolean): Self = StObject.set(x, "portrait", value.asInstanceOf[js.Any])
+    
+    inline def setPortraitUndefined: Self = StObject.set(x, "portrait", js.undefined)
+    
+    inline def setQuality(value: VimeoVideoQuality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    
+    inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setSpeed(value: Boolean): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    
+    inline def setTexttrack(value: String): Self = StObject.set(x, "texttrack", value.asInstanceOf[js.Any])
+    
+    inline def setTexttrackUndefined: Self = StObject.set(x, "texttrack", js.undefined)
+    
+    inline def setTitle(value: Boolean): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

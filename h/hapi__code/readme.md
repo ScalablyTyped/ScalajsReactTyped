@@ -1,7 +1,7 @@
 
 # Scala.js typings for hapi__code
 
-Typings are for version 8.0.1
+Typings are for version 9.0.1
 
 ## Library description:
 assertion library
@@ -10,10 +10,10 @@ assertion library
 | ------------------ | :-------------: |
 | Full name          | @hapi/code |
 | Keywords           | test, expect, assertion |
-| # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 229885 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 75795.33333333333 |
+| # stars            | 234.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/code#readme)

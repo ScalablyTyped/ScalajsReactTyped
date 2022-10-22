@@ -1,38 +1,31 @@
 package typingsJapgolly.officeJsPreview.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InitializationReason extends js.Object
-
+sealed trait InitializationReason extends StObject
 /**
   * Specifies whether the add-in was just inserted or was already contained in the document.
   */
 @JSGlobal("Office.InitializationReason")
 @js.native
-object InitializationReason extends js.Object {
+object InitializationReason extends StObject {
+  
   /**
     * The add-in is already part of the document that was opened.
     */
   @js.native
-  sealed trait DocumentOpened extends InitializationReason
+  sealed trait DocumentOpened
+    extends StObject
+       with InitializationReason
   
   /**
     * The add-in was just inserted into the document.
     */
   @js.native
-  sealed trait Inserted extends InitializationReason
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InitializationReason with Double] = js.native
-  /* 1 */ @js.native
-  object DocumentOpened extends TopLevel[DocumentOpened with Double]
-  
-  /* 0 */ @js.native
-  object Inserted extends TopLevel[Inserted with Double]
-  
+  sealed trait Inserted
+    extends StObject
+       with InitializationReason
 }
-

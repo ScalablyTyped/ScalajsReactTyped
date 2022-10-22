@@ -1,80 +1,149 @@
 package typingsJapgolly.recharts.mod
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.recharts.PartialMargin
+import typingsJapgolly.recharts.anon.PartialMargin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BrushProps extends js.Object {
+trait BrushProps extends StObject {
+  
   var children: js.UndefOr[Node] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var data: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var dataKey: js.UndefOr[DataKey] = js.undefined
+  
   var endIndex: js.UndefOr[Double] = js.undefined
+  
   var fill: js.UndefOr[String] = js.undefined
+  
   var gap: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var leaveTimeOut: js.UndefOr[Double] = js.undefined
+  
   var onChange: js.UndefOr[RechartsFunction] = js.undefined
+  
   var padding: js.UndefOr[PartialMargin] = js.undefined
+  
   var startIndex: js.UndefOr[Double] = js.undefined
+  
   var stroke: js.UndefOr[String] = js.undefined
+  
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined
+  
   var travellerWidth: js.UndefOr[Double] = js.undefined
+  
   var updateId: js.UndefOr[String | Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
+  
   var x: js.UndefOr[Double] = js.undefined
+  
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object BrushProps {
-  @scala.inline
-  def apply(
-    children: VdomNode = null,
-    className: String = null,
-    data: js.Array[_] = null,
-    dataKey: DataKey = null,
-    endIndex: Int | Double = null,
-    fill: String = null,
-    gap: Int | Double = null,
-    height: Int | Double = null,
-    leaveTimeOut: Int | Double = null,
-    onChange: /* repeated */ js.Any => Callback = null,
-    padding: PartialMargin = null,
-    startIndex: Int | Double = null,
-    stroke: String = null,
-    tickFormatter: /* value */ js.Any => CallbackTo[js.Any] = null,
-    travellerWidth: Int | Double = null,
-    updateId: String | Double = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): BrushProps = {
+  
+  inline def apply(): BrushProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (leaveTimeOut != null) __obj.updateDynamic("leaveTimeOut")(leaveTimeOut.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onChange(t0).runNow()))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1((t0: /* value */ js.Any) => tickFormatter(t0).runNow()))
-    if (travellerWidth != null) __obj.updateDynamic("travellerWidth")(travellerWidth.asInstanceOf[js.Any])
-    if (updateId != null) __obj.updateDynamic("updateId")(updateId.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrushProps]
   }
+  
+  extension [Self <: BrushProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataKey(value: DataKey): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    
+    inline def setDataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): Self = StObject.set(x, "dataKey", js.Any.fromFunction1(value))
+    
+    inline def setDataKeyUndefined: Self = StObject.set(x, "dataKey", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setEndIndex(value: Double): Self = StObject.set(x, "endIndex", value.asInstanceOf[js.Any])
+    
+    inline def setEndIndexUndefined: Self = StObject.set(x, "endIndex", js.undefined)
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLeaveTimeOut(value: Double): Self = StObject.set(x, "leaveTimeOut", value.asInstanceOf[js.Any])
+    
+    inline def setLeaveTimeOutUndefined: Self = StObject.set(x, "leaveTimeOut", js.undefined)
+    
+    inline def setOnChange(value: RechartsFunction): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setPadding(value: PartialMargin): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setTickFormatter(value: /* value */ Any => Any): Self = StObject.set(x, "tickFormatter", js.Any.fromFunction1(value))
+    
+    inline def setTickFormatterUndefined: Self = StObject.set(x, "tickFormatter", js.undefined)
+    
+    inline def setTravellerWidth(value: Double): Self = StObject.set(x, "travellerWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTravellerWidthUndefined: Self = StObject.set(x, "travellerWidth", js.undefined)
+    
+    inline def setUpdateId(value: String | Double): Self = StObject.set(x, "updateId", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateIdUndefined: Self = StObject.set(x, "updateId", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

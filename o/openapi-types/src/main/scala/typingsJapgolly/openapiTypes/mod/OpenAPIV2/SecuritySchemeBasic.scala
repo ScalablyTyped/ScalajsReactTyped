@@ -1,24 +1,28 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
 import typingsJapgolly.openapiTypes.openapiTypesStrings.basic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SecuritySchemeBasic
-  extends SecuritySchemeObjectBase
+  extends StObject
+     with SecuritySchemeObjectBase
      with SecuritySchemeObject {
+  
   @JSName("type")
   var type_SecuritySchemeBasic: basic
 }
-
 object SecuritySchemeBasic {
-  @scala.inline
-  def apply(`type`: basic, description: String = null): SecuritySchemeBasic = {
+  
+  inline def apply(): SecuritySchemeBasic = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[SecuritySchemeBasic]
   }
+  
+  extension [Self <: SecuritySchemeBasic](x: Self) {
+    
+    inline def setType(value: basic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.fabFabMod.FabProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.fabFabMod.FabTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Fab", JSImport.Namespace)
-@js.native
-object fabMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[FabProps, ComponentState, js.Any] {
-    def this(props: FabProps) = this()
-    def this(props: FabProps, context: js.Any) = this()
-  }
+object fabMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Floating Action Button](https://mui.com/components/floating-action-button/)
+    *
+    * API:
+    *
+    * - [Fab API](https://mui.com/api/fab/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/Fab", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[FabProps]]
+  val default: ExtendButtonBase[FabTypeMap[js.Object, button]] = js.native
   
+  type _To = ExtendButtonBase[FabTypeMap[js.Object, button]]
+  
+  /* This means you don't have to write `default`, but can instead just say `fabMod.foo` */
+  override def _to: ExtendButtonBase[FabTypeMap[js.Object, button]] = default
 }
-

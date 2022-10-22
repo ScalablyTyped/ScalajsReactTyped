@@ -1,74 +1,60 @@
 package typingsJapgolly.leafletAwesomeMarkers
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletAwesomeMarkersStrings {
-  @js.native
-  sealed trait black extends js.Object
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait black extends StObject
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait cadetblue extends js.Object
+  sealed trait blue extends StObject
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait darkgreen extends js.Object
+  sealed trait cadetblue extends StObject
+  inline def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
   
   @js.native
-  sealed trait darkpurple extends js.Object
+  sealed trait darkgreen extends StObject
+  inline def darkgreen: darkgreen = "darkgreen".asInstanceOf[darkgreen]
   
   @js.native
-  sealed trait darkred extends js.Object
+  sealed trait darkpurple extends StObject
+  inline def darkpurple: darkpurple = "darkpurple".asInstanceOf[darkpurple]
   
   @js.native
-  sealed trait fa extends js.Object
+  sealed trait darkred extends StObject
+  inline def darkred: darkred = "darkred".asInstanceOf[darkred]
   
   @js.native
-  sealed trait glyphicon extends js.Object
+  sealed trait fa extends StObject
+  inline def fa: fa = "fa".asInstanceOf[fa]
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait glyphicon extends StObject
+  inline def glyphicon: glyphicon = "glyphicon".asInstanceOf[glyphicon]
   
   @js.native
-  sealed trait orange extends js.Object
+  sealed trait green extends StObject
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait purple extends js.Object
+  sealed trait orange extends StObject
+  inline def orange: orange = "orange".asInstanceOf[orange]
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait purple extends StObject
+  inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait red extends StObject
+  inline def red: red = "red".asInstanceOf[red]
   
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def cadetblue: cadetblue = "cadetblue".asInstanceOf[cadetblue]
-  @scala.inline
-  def darkgreen: darkgreen = "darkgreen".asInstanceOf[darkgreen]
-  @scala.inline
-  def darkpurple: darkpurple = "darkpurple".asInstanceOf[darkpurple]
-  @scala.inline
-  def darkred: darkred = "darkred".asInstanceOf[darkred]
-  @scala.inline
-  def fa: fa = "fa".asInstanceOf[fa]
-  @scala.inline
-  def glyphicon: glyphicon = "glyphicon".asInstanceOf[glyphicon]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def orange: orange = "orange".asInstanceOf[orange]
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  @js.native
+  sealed trait white extends StObject
+  inline def white: white = "white".asInstanceOf[white]
 }
-

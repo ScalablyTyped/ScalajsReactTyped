@@ -2,9 +2,9 @@ package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.noncompliant_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
@@ -15,24 +15,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.inGracePeriod
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.configManager
 */
-trait ComplianceState extends js.Object
-
+trait ComplianceState extends StObject
 object ComplianceState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def compliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant = this.cast("compliant")
-  @scala.inline
-  def configManager: typingsJapgolly.microsoftGraph.microsoftGraphStrings.configManager = this.cast("configManager")
-  @scala.inline
-  def conflict: typingsJapgolly.microsoftGraph.microsoftGraphStrings.conflict = this.cast("conflict")
-  @scala.inline
-  def error: typingsJapgolly.microsoftGraph.microsoftGraphStrings.error = this.cast("error")
-  @scala.inline
-  def inGracePeriod: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inGracePeriod = this.cast("inGracePeriod")
-  @scala.inline
-  def noncompliant: noncompliant_ = this.cast("noncompliant")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def compliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant = "compliant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant]
+  
+  inline def configManager: typingsJapgolly.microsoftGraph.microsoftGraphStrings.configManager = "configManager".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.configManager]
+  
+  inline def conflict: typingsJapgolly.microsoftGraph.microsoftGraphStrings.conflict = "conflict".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.conflict]
+  
+  inline def error: typingsJapgolly.microsoftGraph.microsoftGraphStrings.error = "error".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.error]
+  
+  inline def inGracePeriod: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inGracePeriod = "inGracePeriod".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.inGracePeriod]
+  
+  inline def noncompliant: noncompliant_ = "noncompliant".asInstanceOf[noncompliant_]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

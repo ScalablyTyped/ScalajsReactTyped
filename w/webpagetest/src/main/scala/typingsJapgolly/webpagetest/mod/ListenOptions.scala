@@ -1,23 +1,32 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListenOptions extends js.Object {
+trait ListenOptions extends StObject {
+  
   /** public x509 certificate file path to use for SSL */
   var cert: js.UndefOr[String] = js.undefined
+  
   /** private key file path to use for SSL */
   var key: js.UndefOr[String] = js.undefined
 }
-
 object ListenOptions {
-  @scala.inline
-  def apply(cert: String = null, key: String = null): ListenOptions = {
+  
+  inline def apply(): ListenOptions = {
     val __obj = js.Dynamic.literal()
-    if (cert != null) __obj.updateDynamic("cert")(cert.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenOptions]
   }
+  
+  extension [Self <: ListenOptions](x: Self) {
+    
+    inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+    
+    inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.forgeApis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateRef extends js.Object {
+trait CreateRef extends StObject {
+  
   var data: js.UndefOr[CreateRefData] = js.undefined
+  
   var jsonapi: js.UndefOr[JsonApiVersionJsonapi] = js.undefined
 }
-
 object CreateRef {
-  @scala.inline
-  def apply(data: CreateRefData = null, jsonapi: JsonApiVersionJsonapi = null): CreateRef = {
+  
+  inline def apply(): CreateRef = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (jsonapi != null) __obj.updateDynamic("jsonapi")(jsonapi.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRef]
   }
+  
+  extension [Self <: CreateRef](x: Self) {
+    
+    inline def setData(value: CreateRefData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setJsonapi(value: JsonApiVersionJsonapi): Self = StObject.set(x, "jsonapi", value.asInstanceOf[js.Any])
+    
+    inline def setJsonapiUndefined: Self = StObject.set(x, "jsonapi", js.undefined)
+  }
 }
-

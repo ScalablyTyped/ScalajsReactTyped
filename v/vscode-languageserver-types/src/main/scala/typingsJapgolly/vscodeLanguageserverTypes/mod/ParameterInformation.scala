@@ -1,15 +1,17 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParameterInformation extends js.Object {
+trait ParameterInformation extends StObject {
+  
   /**
-    * The human-readable doc-comment of this signature. Will be shown
+    * The human-readable doc-comment of this parameter. Will be shown
     * in the UI but can be omitted.
     */
   var documentation: js.UndefOr[String | MarkupContent] = js.undefined
+  
   /**
     * The label of this parameter information.
     *
@@ -20,21 +22,36 @@ trait ParameterInformation extends js.Object {
     * *Note*: a label of type string should be a substring of its containing signature label.
     * Its intended use case is to highlight the parameter label part in the `SignatureInformation.label`.
     */
-  var label: String | (js.Tuple2[Double, Double])
+  var label: String | (js.Tuple2[uinteger, uinteger])
 }
-
-@JSImport("vscode-languageserver-types", "ParameterInformation")
-@js.native
-object ParameterInformation extends js.Object {
+object ParameterInformation {
+  
+  inline def apply(label: String | (js.Tuple2[uinteger, uinteger])): ParameterInformation = {
+    val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParameterInformation]
+  }
+  
+  @JSImport("vscode-languageserver-types", "ParameterInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new parameter information literal.
     *
     * @param label A label string.
     * @param documentation A doc string.
     */
-  def create(label: String): ParameterInformation = js.native
-  def create(label: String, documentation: String): ParameterInformation = js.native
-  def create(label: js.Tuple2[Double, Double]): ParameterInformation = js.native
-  def create(label: js.Tuple2[Double, Double], documentation: String): ParameterInformation = js.native
+  inline def create(label: String): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
+  inline def create(label: String, documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
+  inline def create(label: js.Tuple2[uinteger, uinteger]): ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[ParameterInformation]
+  inline def create(label: js.Tuple2[uinteger, uinteger], documentation: String): ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[ParameterInformation]
+  
+  extension [Self <: ParameterInformation](x: Self) {
+    
+    inline def setDocumentation(value: String | MarkupContent): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    
+    inline def setLabel(value: String | (js.Tuple2[uinteger, uinteger])): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+  }
 }
-

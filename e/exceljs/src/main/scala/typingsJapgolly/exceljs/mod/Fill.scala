@@ -1,41 +1,33 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.AnonLeft
-import typingsJapgolly.exceljs.PartialColor
-import typingsJapgolly.exceljs.exceljsStrings.angle
-import typingsJapgolly.exceljs.exceljsStrings.gradient
-import typingsJapgolly.exceljs.exceljsStrings.path
-import typingsJapgolly.exceljs.exceljsStrings.pattern
+import typingsJapgolly.exceljs.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.exceljs.mod.FillPattern
   - typingsJapgolly.exceljs.mod.FillGradientAngle
   - typingsJapgolly.exceljs.mod.FillGradientPath
 */
-trait Fill extends js.Object
-
+trait Fill extends StObject
 object Fill {
-  @scala.inline
-  def FillPattern(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern, bgColor: PartialColor = null): Fill = {
-    val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Fill]
+  
+  inline def FillGradientAngle(degree: Double, stops: js.Array[GradientStop]): typingsJapgolly.exceljs.mod.FillGradientAngle = {
+    val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], gradient = "angle", stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("gradient")
+    __obj.asInstanceOf[typingsJapgolly.exceljs.mod.FillGradientAngle]
   }
-  @scala.inline
-  def FillGradientAngle(degree: Double, gradient: angle, stops: js.Array[GradientStop], `type`: gradient): Fill = {
-    val __obj = js.Dynamic.literal(degree = degree.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Fill]
+  
+  inline def FillGradientPath(center: Left, stops: js.Array[GradientStop]): typingsJapgolly.exceljs.mod.FillGradientPath = {
+    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = "path", stops = stops.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("gradient")
+    __obj.asInstanceOf[typingsJapgolly.exceljs.mod.FillGradientPath]
   }
-  @scala.inline
-  def FillGradientPath(center: AnonLeft, gradient: path, stops: js.Array[GradientStop], `type`: gradient): Fill = {
-    val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Fill]
+  
+  inline def FillPattern(pattern: FillPatterns): typingsJapgolly.exceljs.mod.FillPattern = {
+    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pattern")
+    __obj.asInstanceOf[typingsJapgolly.exceljs.mod.FillPattern]
   }
 }
-

@@ -1,40 +1,30 @@
 package typingsJapgolly.nodelibFsWalk
 
 import typingsJapgolly.node.streamMod.Readable
-import typingsJapgolly.nodelibFsWalk.asyncMod.AsyncCallback
-import typingsJapgolly.nodelibFsWalk.settingsMod.Options
-import typingsJapgolly.nodelibFsWalk.settingsMod.default
-import typingsJapgolly.nodelibFsWalk.typesMod.Entry
+import typingsJapgolly.nodelibFsWalk.outSettingsMod.Options
+import typingsJapgolly.nodelibFsWalk.outSettingsMod.default
+import typingsJapgolly.nodelibFsWalk.outTypesMod.Entry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@nodelib/fs.walk", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@nodelib/fs.walk", JSImport.Namespace)
   @js.native
-  class Settings () extends default {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@nodelib/fs.walk", "Settings")
+  @js.native
+  open class Settings () extends default {
     def this(_options: Options) = this()
   }
   
-  def walkStream(directory: String): Readable = js.native
-  def walkStream(directory: String, optionsOrSettings: Options): Readable = js.native
-  def walkStream(directory: String, optionsOrSettings: default): Readable = js.native
-  def walkSync(directory: String): js.Array[Entry] = js.native
-  def walkSync(directory: String, optionsOrSettings: Options): js.Array[Entry] = js.native
-  def walkSync(directory: String, optionsOrSettings: default): js.Array[Entry] = js.native
-  @js.native
-  object walk extends js.Object {
-    def apply(directory: String, callback: AsyncCallback): Unit = js.native
-    def apply(directory: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
-    def apply(directory: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
-    @JSName("__promisify__")
-    def promisify(directory: String): js.Promise[js.Array[Entry]] = js.native
-    @JSName("__promisify__")
-    def promisify(directory: String, optionsOrSettings: Options): js.Promise[js.Array[Entry]] = js.native
-    @JSName("__promisify__")
-    def promisify(directory: String, optionsOrSettings: default): js.Promise[js.Array[Entry]] = js.native
-  }
+  inline def walkStream(directory: String): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  inline def walkStream(directory: String, optionsOrSettings: Options): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  inline def walkStream(directory: String, optionsOrSettings: default): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("walkStream")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[Readable]
   
+  inline def walkSync(directory: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(directory.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
+  inline def walkSync(directory: String, optionsOrSettings: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  inline def walkSync(directory: String, optionsOrSettings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(directory.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
 }
-

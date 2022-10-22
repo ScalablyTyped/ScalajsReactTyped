@@ -4,49 +4,73 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
 import japgolly.scalajs.react.ReactTouchEventFrom
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.MouseEventHandler
 import typingsJapgolly.react.mod.ReactEventHandler
 import typingsJapgolly.react.mod.TouchEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Omit<react-calendar-timeline.react-calendar-timeline.ItemRendererGetItemPropsReturnType, 'key' | 'ref'>> */
-trait GetItemsProps extends js.Object {
+trait GetItemsProps extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var onContextMenu: js.UndefOr[ReactEventHandler[Element]] = js.undefined
+  
   var onDoubleClick: js.UndefOr[MouseEventHandler[Element]] = js.undefined
+  
   var onMouseDown: js.UndefOr[MouseEventHandler[Element]] = js.undefined
+  
   var onMouseUp: js.UndefOr[MouseEventHandler[Element]] = js.undefined
+  
   var onTouchEnd: js.UndefOr[TouchEventHandler[Element]] = js.undefined
+  
   var onTouchStart: js.UndefOr[TouchEventHandler[Element]] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object GetItemsProps {
-  @scala.inline
-  def apply(
-    className: String = null,
-    onContextMenu: ReactEventFrom[Element] => Callback = null,
-    onDoubleClick: ReactMouseEventFrom[Element] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[Element] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[Element] => Callback = null,
-    onTouchEnd: ReactTouchEventFrom[Element] => Callback = null,
-    onTouchStart: ReactTouchEventFrom[Element] => Callback = null,
-    style: CSSProperties = null
-  ): GetItemsProps = {
+  
+  inline def apply(): GetItemsProps = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.Element]) => onContextMenu(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element]) => onDoubleClick(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element]) => onMouseDown(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element]) => onMouseUp(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactTouchEventFrom[org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetItemsProps]
   }
+  
+  extension [Self <: GetItemsProps](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setOnContextMenu(value: ReactEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1((t0: ReactEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+    
+    inline def setOnDoubleClick(value: ReactMouseEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onDoubleClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnDoubleClickUndefined: Self = StObject.set(x, "onDoubleClick", js.undefined)
+    
+    inline def setOnMouseDown(value: ReactMouseEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    
+    inline def setOnMouseUp(value: ReactMouseEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+    
+    inline def setOnTouchEnd(value: ReactTouchEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: ReactTouchEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    
+    inline def setOnTouchStart(value: ReactTouchEventFrom[Element & Element] => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: ReactTouchEventFrom[Element & Element]) => value(t0).runNow()))
+    
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

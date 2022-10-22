@@ -1,53 +1,51 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrivilegeLevel extends js.Object
-
+sealed trait PrivilegeLevel extends StObject
 @JSImport("evernote", "Types.PrivilegeLevel")
 @js.native
-object PrivilegeLevel extends js.Object {
-  @js.native
-  sealed trait ADMIN extends PrivilegeLevel
-  
-  @js.native
-  sealed trait MANAGER extends PrivilegeLevel
-  
-  @js.native
-  sealed trait NORMAL extends PrivilegeLevel
-  
-  @js.native
-  sealed trait PREMIUM extends PrivilegeLevel
-  
-  @js.native
-  sealed trait SUPPORT extends PrivilegeLevel
-  
-  @js.native
-  sealed trait VIP extends PrivilegeLevel
+object PrivilegeLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrivilegeLevel with Double] = js.native
-  /* 9 */ @js.native
-  object ADMIN extends TopLevel[ADMIN with Double]
+  def apply(value: Double): js.UndefOr[PrivilegeLevel & Double] = js.native
   
-  /* 7 */ @js.native
-  object MANAGER extends TopLevel[MANAGER with Double]
+  @js.native
+  sealed trait ADMIN
+    extends StObject
+       with PrivilegeLevel
+  /* 9 */ val ADMIN: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.ADMIN & Double = js.native
   
-  /* 1 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
+  @js.native
+  sealed trait MANAGER
+    extends StObject
+       with PrivilegeLevel
+  /* 7 */ val MANAGER: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.MANAGER & Double = js.native
   
-  /* 3 */ @js.native
-  object PREMIUM extends TopLevel[PREMIUM with Double]
+  @js.native
+  sealed trait NORMAL
+    extends StObject
+       with PrivilegeLevel
+  /* 1 */ val NORMAL: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.NORMAL & Double = js.native
   
-  /* 8 */ @js.native
-  object SUPPORT extends TopLevel[SUPPORT with Double]
+  @js.native
+  sealed trait PREMIUM
+    extends StObject
+       with PrivilegeLevel
+  /* 3 */ val PREMIUM: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.PREMIUM & Double = js.native
   
-  /* 5 */ @js.native
-  object VIP extends TopLevel[VIP with Double]
+  @js.native
+  sealed trait SUPPORT
+    extends StObject
+       with PrivilegeLevel
+  /* 8 */ val SUPPORT: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.SUPPORT & Double = js.native
   
+  @js.native
+  sealed trait VIP
+    extends StObject
+       with PrivilegeLevel
+  /* 5 */ val VIP: typingsJapgolly.evernote.mod.Types.PrivilegeLevel.VIP & Double = js.native
 }
-

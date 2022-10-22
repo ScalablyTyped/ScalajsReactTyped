@@ -1,63 +1,97 @@
 package typingsJapgolly.slonik.mod
 
 import typingsJapgolly.slonik.slonikStrings.DISABLE_TIMEOUT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientConfigurationType extends js.Object {
+trait ClientConfigurationType extends StObject {
+  
   /** Dictates whether to capture stack trace before executing query. Middlewares access stack trace through query execution context. (Default: true) */
   var captureStackTrace: js.UndefOr[Boolean] = js.undefined
+  
   /** Number of times to retry establishing a new connection. (Default: 3) */
   var connectionRetryLimit: js.UndefOr[Double] = js.undefined
+  
   /** connectionTimeout Timeout (in milliseconds) after which an error is raised if connection cannot cannot be established. (Default: 5000) */
   var connectionTimeout: js.UndefOr[Double | DISABLE_TIMEOUT] = js.undefined
+  
   /** idleInTransactionSessionTimeout Timeout (in milliseconds) after which idle clients are closed. Use 'DISABLE_TIMEOUT' constant to disable the timeout. (Default: 60000) */
   var idleInTransactionSessionTimeout: js.UndefOr[Double | DISABLE_TIMEOUT] = js.undefined
+  
   /** Timeout (in milliseconds) after which idle clients are closed. (Default: 5000) */
   var idleTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * An array of [Slonik interceptors](https://github.com/gajus/slonik#slonik-interceptors)
     */
   var interceptors: js.UndefOr[js.Array[InterceptorType]] = js.undefined
+  
   /** Do not allow more than this many connections. (Default: 10) */
   var maximumPoolSize: js.UndefOr[Double] = js.undefined
+  
   /** Uses libpq bindings when `pg-native` module is installed. (Default: true) */
   var preferNativeBindings: js.UndefOr[Boolean] = js.undefined
+  
   /** Timeout (in milliseconds) after which database is instructed to abort the query. Use 'DISABLE_TIMEOUT' constant to disable the timeout. (Default: 60000) */
   var statementTimeout: js.UndefOr[Double | DISABLE_TIMEOUT] = js.undefined
+  
   /**
     * An array of [Slonik type parsers](https://github.com/gajus/slonik#slonik-type-parsers)
     */
-  var typeParsers: js.UndefOr[js.Array[TypeParserType[_]]] = js.undefined
+  var typeParsers: js.UndefOr[js.Array[TypeParserType[Any]]] = js.undefined
 }
-
 object ClientConfigurationType {
-  @scala.inline
-  def apply(
-    captureStackTrace: js.UndefOr[Boolean] = js.undefined,
-    connectionRetryLimit: Int | Double = null,
-    connectionTimeout: Double | DISABLE_TIMEOUT = null,
-    idleInTransactionSessionTimeout: Double | DISABLE_TIMEOUT = null,
-    idleTimeout: Int | Double = null,
-    interceptors: js.Array[InterceptorType] = null,
-    maximumPoolSize: Int | Double = null,
-    preferNativeBindings: js.UndefOr[Boolean] = js.undefined,
-    statementTimeout: Double | DISABLE_TIMEOUT = null,
-    typeParsers: js.Array[TypeParserType[_]] = null
-  ): ClientConfigurationType = {
+  
+  inline def apply(): ClientConfigurationType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(captureStackTrace)) __obj.updateDynamic("captureStackTrace")(captureStackTrace.asInstanceOf[js.Any])
-    if (connectionRetryLimit != null) __obj.updateDynamic("connectionRetryLimit")(connectionRetryLimit.asInstanceOf[js.Any])
-    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
-    if (idleInTransactionSessionTimeout != null) __obj.updateDynamic("idleInTransactionSessionTimeout")(idleInTransactionSessionTimeout.asInstanceOf[js.Any])
-    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
-    if (interceptors != null) __obj.updateDynamic("interceptors")(interceptors.asInstanceOf[js.Any])
-    if (maximumPoolSize != null) __obj.updateDynamic("maximumPoolSize")(maximumPoolSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(preferNativeBindings)) __obj.updateDynamic("preferNativeBindings")(preferNativeBindings.asInstanceOf[js.Any])
-    if (statementTimeout != null) __obj.updateDynamic("statementTimeout")(statementTimeout.asInstanceOf[js.Any])
-    if (typeParsers != null) __obj.updateDynamic("typeParsers")(typeParsers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientConfigurationType]
   }
+  
+  extension [Self <: ClientConfigurationType](x: Self) {
+    
+    inline def setCaptureStackTrace(value: Boolean): Self = StObject.set(x, "captureStackTrace", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureStackTraceUndefined: Self = StObject.set(x, "captureStackTrace", js.undefined)
+    
+    inline def setConnectionRetryLimit(value: Double): Self = StObject.set(x, "connectionRetryLimit", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionRetryLimitUndefined: Self = StObject.set(x, "connectionRetryLimit", js.undefined)
+    
+    inline def setConnectionTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+    
+    inline def setIdleInTransactionSessionTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "idleInTransactionSessionTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setIdleInTransactionSessionTimeoutUndefined: Self = StObject.set(x, "idleInTransactionSessionTimeout", js.undefined)
+    
+    inline def setIdleTimeout(value: Double): Self = StObject.set(x, "idleTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setIdleTimeoutUndefined: Self = StObject.set(x, "idleTimeout", js.undefined)
+    
+    inline def setInterceptors(value: js.Array[InterceptorType]): Self = StObject.set(x, "interceptors", value.asInstanceOf[js.Any])
+    
+    inline def setInterceptorsUndefined: Self = StObject.set(x, "interceptors", js.undefined)
+    
+    inline def setInterceptorsVarargs(value: InterceptorType*): Self = StObject.set(x, "interceptors", js.Array(value*))
+    
+    inline def setMaximumPoolSize(value: Double): Self = StObject.set(x, "maximumPoolSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumPoolSizeUndefined: Self = StObject.set(x, "maximumPoolSize", js.undefined)
+    
+    inline def setPreferNativeBindings(value: Boolean): Self = StObject.set(x, "preferNativeBindings", value.asInstanceOf[js.Any])
+    
+    inline def setPreferNativeBindingsUndefined: Self = StObject.set(x, "preferNativeBindings", js.undefined)
+    
+    inline def setStatementTimeout(value: Double | DISABLE_TIMEOUT): Self = StObject.set(x, "statementTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setStatementTimeoutUndefined: Self = StObject.set(x, "statementTimeout", js.undefined)
+    
+    inline def setTypeParsers(value: js.Array[TypeParserType[Any]]): Self = StObject.set(x, "typeParsers", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParsersUndefined: Self = StObject.set(x, "typeParsers", js.undefined)
+    
+    inline def setTypeParsersVarargs(value: TypeParserType[Any]*): Self = StObject.set(x, "typeParsers", js.Array(value*))
+  }
 }
-

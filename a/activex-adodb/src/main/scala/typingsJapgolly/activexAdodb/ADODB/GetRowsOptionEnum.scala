@@ -1,14 +1,11 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GetRowsOptionEnum {
-  @scala.inline
-  def adGetRowsRest: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adGetRowsRest: `-1` = -1.asInstanceOf[`-1`]
 }
-

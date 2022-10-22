@@ -10,10 +10,10 @@ Get a random useragent (with an optional filter)
 | ------------------ | :-------------: |
 | Full name          | random-useragent |
 | Keywords           | random, useragent, user-agent, user, agent, data, web, developer |
-| # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 112156 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 419482.6666666667 |
+| # stars            | 202.0 |
 
 ## Links
 - [Homepage](https://github.com/skratchdot/random-useragent)

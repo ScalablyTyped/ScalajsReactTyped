@@ -1,19 +1,22 @@
 package typingsJapgolly.cordovaPluginBadge
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CordovaPluginBadgeOptions extends js.Object {
+trait CordovaPluginBadgeOptions extends StObject {
+  
   var autoClear: Boolean
 }
-
 object CordovaPluginBadgeOptions {
-  @scala.inline
-  def apply(autoClear: Boolean): CordovaPluginBadgeOptions = {
-    val __obj = js.Dynamic.literal(autoClear = autoClear.asInstanceOf[js.Any])
   
+  inline def apply(autoClear: Boolean): CordovaPluginBadgeOptions = {
+    val __obj = js.Dynamic.literal(autoClear = autoClear.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPluginBadgeOptions]
   }
+  
+  extension [Self <: CordovaPluginBadgeOptions](x: Self) {
+    
+    inline def setAutoClear(value: Boolean): Self = StObject.set(x, "autoClear", value.asInstanceOf[js.Any])
+  }
 }
-

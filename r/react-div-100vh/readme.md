@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-div-100vh
 
-Typings are for version 0.3
+Typings are for version 0.7.0
 
 ## Library description:
-A React component that aims to solve '100vh' issue in mobile browsers
+A workaround for the '100vh' issue in mobile browsers
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-div-100vh |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 1 |
-| # downloads        | 200436 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 216729.66666666666 |
+| # stars            | 935.0 |
 
 ## Links
 - [Homepage](https://github.com/mvasin/react-div-100vh)
@@ -24,7 +24,7 @@ A React component that aims to solve '100vh' issue in mobile browsers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

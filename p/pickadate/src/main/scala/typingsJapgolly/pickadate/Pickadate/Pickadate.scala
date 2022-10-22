@@ -1,18 +1,18 @@
 package typingsJapgolly.pickadate.Pickadate
 
-import org.scalajs.dom.raw.HTMLInputElement
+import org.scalajs.dom.HTMLInputElement
 import typingsJapgolly.pickadate.JQuery
 import typingsJapgolly.pickadate.pickadateStrings.$node
 import typingsJapgolly.pickadate.pickadateStrings.$root
 import typingsJapgolly.pickadate.pickadateStrings._hidden
 import typingsJapgolly.pickadate.pickadateStrings.picker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Pickadate extends js.Object {
-  var defaults: DateOptions = js.native
+trait Pickadate extends StObject {
+  
   /**
     * Initialize a date picker.
     */
@@ -24,10 +24,11 @@ trait Pickadate extends js.Object {
   /**
     * Invoke API methods after date picker initialization.
     */
-  def apply(methodName: String, arguments: js.Any*): js.Any = js.native
+  def apply(methodName: String, arguments: Any*): Any = js.native
   def apply(objectName: $node): JQuery = js.native
   def apply(objectName: $root): JQuery = js.native
   def apply(objectName: _hidden): HTMLInputElement = js.native
   def apply(options: DateOptions): JQuery = js.native
+  
+  var defaults: DateOptions = js.native
 }
-

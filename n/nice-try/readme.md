@@ -1,7 +1,7 @@
 
 # Scala.js typings for nice-try
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
 Tries to execute a function and discards any error that occurs
@@ -10,10 +10,10 @@ Tries to execute a function and discards any error that occurs
 | ------------------ | :-------------: |
 | Full name          | nice-try |
 | Keywords           | try, catch, error |
-| # releases         | 3 |
-| # dependents       | 37 |
-| # downloads        | 383507770 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7.297940466666667E7 |
+| # stars            | 60.0 |
 
 ## Links
 - [Homepage](https://github.com/electerious/nice-try)

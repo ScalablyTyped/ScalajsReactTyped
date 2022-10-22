@@ -3,23 +3,34 @@ package typingsJapgolly.ionicUtilsObject
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Map
 import typingsJapgolly.std.ProxyHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/utils-object", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@ionic/utils-object", JSImport.Namespace)
   @js.native
-  class AliasedMap[K, V] () extends Map[AliasedMapKey | K, AliasedMapKey | V] {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ionic/utils-object", "AliasedMap")
+  @js.native
+  open class AliasedMap[K, V] ()
+    extends StObject
+       with Map[AliasedMapKey | K, AliasedMapKey | V] {
+    
     def getAliases(): Map[AliasedMapKey, js.Array[AliasedMapKey]] = js.native
+    
     def keysWithoutAliases(): js.Array[K] = js.native
-    def resolveAlias(key: K): js.UndefOr[V] = js.native
-    def resolveAlias(key: AliasedMapKey): js.UndefOr[V] = js.native
+    
+    def resolveAlias(key: AliasedMapKey | K): js.UndefOr[V] = js.native
   }
   
-  val CaseInsensitiveProxyHandler: ProxyHandler[js.Any] = js.native
-  def createCaseInsensitiveObject[T](): StringDictionary[T] = js.native
+  @JSImport("@ionic/utils-object", "CaseInsensitiveProxyHandler")
+  @js.native
+  val CaseInsensitiveProxyHandler: ProxyHandler[Any] = js.native
+  
+  inline def createCaseInsensitiveObject[T](): StringDictionary[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCaseInsensitiveObject")().asInstanceOf[StringDictionary[T]]
+  
   type AliasedMapKey = String | js.Symbol
 }
-

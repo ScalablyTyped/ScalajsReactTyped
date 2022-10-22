@@ -1,23 +1,26 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.SyntaxKind.AbstractKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.AnyKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.AsKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.AssertsKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.AssertKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.AsyncKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.AwaitKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.BigIntKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.BooleanKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.BreakKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.CaseKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.CatchKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ClassKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.ContinueKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ConstKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ConstructorKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.ContinueKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.DebuggerKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.DeclareKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.DefaultKeyword
@@ -33,13 +36,15 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.SyntaxKind.FromKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.FunctionKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.GetKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.GlobalKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.IfKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ImplementsKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ImportKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.InKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.InferKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.InKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.InstanceOfKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.InterfaceKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.IntrinsicKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.IsKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.KeyOfKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.LetKeyword
@@ -50,13 +55,15 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.SyntaxKind.NullKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.NumberKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ObjectKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.OfKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.PackageKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.PrivateKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ProtectedKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.PublicKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ReadonlyKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.OutKeyword
+  - typingsJapgolly.typescript.mod.SyntaxKind.OverrideKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.RequireKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.GlobalKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.ReturnKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.SetKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.StaticKeyword
@@ -78,9 +85,8 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.SyntaxKind.WhileKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.WithKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.YieldKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.AsyncKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.AwaitKeyword
-  - typingsJapgolly.typescript.mod.SyntaxKind.OfKeyword
 */
-trait KeywordSyntaxKind extends JSDocSyntaxKind
-
+trait KeywordSyntaxKind
+  extends StObject
+     with JSDocSyntaxKind
+     with TokenSyntaxKind

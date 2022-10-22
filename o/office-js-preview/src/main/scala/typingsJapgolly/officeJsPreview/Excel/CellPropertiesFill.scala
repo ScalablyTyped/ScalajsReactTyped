@@ -21,72 +21,89 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.SemiGray75
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Solid
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Up
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the `format.fill` properties of `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the `format.fill` input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesFill extends js.Object {
+trait CellPropertiesFill extends StObject {
+  
   /**
-    *
     * Represents the `format.fill.color` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the `format.fill.pattern` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[
     FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
   ] = js.undefined
+  
   /**
-    *
     * Represents the `format.fill.patternColor` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the `format.fill.patternTintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the `format.fill.tintAndShade` property.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined
 }
-
 object CellPropertiesFill {
-  @scala.inline
-  def apply(
-    color: String = null,
-    pattern: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient = null,
-    patternColor: String = null,
-    patternTintAndShade: Int | Double = null,
-    tintAndShade: Int | Double = null
-  ): CellPropertiesFill = {
+  
+  inline def apply(): CellPropertiesFill = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (patternColor != null) __obj.updateDynamic("patternColor")(patternColor.asInstanceOf[js.Any])
-    if (patternTintAndShade != null) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFill]
   }
+  
+  extension [Self <: CellPropertiesFill](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setPattern(
+      value: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
+    ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColor(value: String): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
+    
+    inline def setPatternTintAndShade(value: Double): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+  }
 }
-

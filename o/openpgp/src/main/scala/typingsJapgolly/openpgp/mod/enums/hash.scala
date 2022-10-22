@@ -1,62 +1,60 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait hash extends js.Object
-
+sealed trait hash extends StObject
 /**
   * {@link https://tools.ietf.org/html/rfc4880#section-9.4|RFC4880, section 9.4}
   */
 @JSImport("openpgp", "enums.hash")
 @js.native
-object hash extends js.Object {
-  @js.native
-  sealed trait md5 extends hash
-  
-  @js.native
-  sealed trait ripemd extends hash
-  
-  @js.native
-  sealed trait sha1 extends hash
-  
-  @js.native
-  sealed trait sha224 extends hash
-  
-  @js.native
-  sealed trait sha256 extends hash
-  
-  @js.native
-  sealed trait sha384 extends hash
-  
-  @js.native
-  sealed trait sha512 extends hash
+object hash extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[hash with Double] = js.native
-  /* 1 */ @js.native
-  object md5 extends TopLevel[md5 with Double]
+  def apply(value: Double): js.UndefOr[hash & Double] = js.native
   
-  /* 3 */ @js.native
-  object ripemd extends TopLevel[ripemd with Double]
+  @js.native
+  sealed trait md5
+    extends StObject
+       with hash
+  /* 1 */ val md5: typingsJapgolly.openpgp.mod.enums.hash.md5 & Double = js.native
   
-  /* 2 */ @js.native
-  object sha1 extends TopLevel[sha1 with Double]
+  @js.native
+  sealed trait ripemd
+    extends StObject
+       with hash
+  /* 3 */ val ripemd: typingsJapgolly.openpgp.mod.enums.hash.ripemd & Double = js.native
   
-  /* 11 */ @js.native
-  object sha224 extends TopLevel[sha224 with Double]
+  @js.native
+  sealed trait sha1
+    extends StObject
+       with hash
+  /* 2 */ val sha1: typingsJapgolly.openpgp.mod.enums.hash.sha1 & Double = js.native
   
-  /* 8 */ @js.native
-  object sha256 extends TopLevel[sha256 with Double]
+  @js.native
+  sealed trait sha224
+    extends StObject
+       with hash
+  /* 11 */ val sha224: typingsJapgolly.openpgp.mod.enums.hash.sha224 & Double = js.native
   
-  /* 9 */ @js.native
-  object sha384 extends TopLevel[sha384 with Double]
+  @js.native
+  sealed trait sha256
+    extends StObject
+       with hash
+  /* 8 */ val sha256: typingsJapgolly.openpgp.mod.enums.hash.sha256 & Double = js.native
   
-  /* 10 */ @js.native
-  object sha512 extends TopLevel[sha512 with Double]
+  @js.native
+  sealed trait sha384
+    extends StObject
+       with hash
+  /* 9 */ val sha384: typingsJapgolly.openpgp.mod.enums.hash.sha384 & Double = js.native
   
+  @js.native
+  sealed trait sha512
+    extends StObject
+       with hash
+  /* 10 */ val sha512: typingsJapgolly.openpgp.mod.enums.hash.sha512 & Double = js.native
 }
-

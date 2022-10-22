@@ -1,14 +1,14 @@
 package typingsJapgolly.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Server")
 @js.native
-class Server protected ()
+open class Server protected ()
   extends typingsJapgolly.node.netMod.Server {
   def this(device: Adapter) = this()
-  def request(client: js.Any): Unit = js.native
+  
+  def request(client: Any): Unit = js.native
 }
-

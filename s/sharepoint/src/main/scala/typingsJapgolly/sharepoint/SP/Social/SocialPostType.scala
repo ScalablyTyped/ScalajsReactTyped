@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialPostType extends js.Object
-
+sealed trait SocialPostType extends StObject
 @JSGlobal("SP.Social.SocialPostType")
 @js.native
-object SocialPostType extends js.Object {
-  @js.native
-  sealed trait reply extends SocialPostType
+object SocialPostType extends StObject {
   
   @js.native
-  sealed trait root extends SocialPostType
+  sealed trait reply
+    extends StObject
+       with SocialPostType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialPostType with Double] = js.native
-  /* 1 */ @js.native
-  object reply extends TopLevel[reply with Double]
-  
-  /* 0 */ @js.native
-  object root extends TopLevel[root with Double]
-  
+  @js.native
+  sealed trait root
+    extends StObject
+       with SocialPostType
 }
-

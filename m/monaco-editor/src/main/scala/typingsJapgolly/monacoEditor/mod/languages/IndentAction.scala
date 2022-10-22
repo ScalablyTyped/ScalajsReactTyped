@@ -1,21 +1,26 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IndentAction extends js.Object
-
+sealed trait IndentAction extends StObject
 @JSImport("monaco-editor", "languages.IndentAction")
 @js.native
-object IndentAction extends js.Object {
+object IndentAction extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[IndentAction & Double] = js.native
+  
   /**
     * Insert new line and indent once (relative to the previous line's indentation).
     */
   @js.native
-  sealed trait Indent extends IndentAction
+  sealed trait Indent
+    extends StObject
+       with IndentAction
+  /* 1 */ val Indent: typingsJapgolly.monacoEditor.mod.languages.IndentAction.Indent & Double = js.native
   
   /**
     * Insert two new lines:
@@ -23,33 +28,26 @@ object IndentAction extends js.Object {
     *  - the second one at the same indentation level
     */
   @js.native
-  sealed trait IndentOutdent extends IndentAction
+  sealed trait IndentOutdent
+    extends StObject
+       with IndentAction
+  /* 2 */ val IndentOutdent: typingsJapgolly.monacoEditor.mod.languages.IndentAction.IndentOutdent & Double = js.native
   
   /**
     * Insert new line and copy the previous line's indentation.
     */
   @js.native
-  sealed trait None extends IndentAction
+  sealed trait None
+    extends StObject
+       with IndentAction
+  /* 0 */ val None: typingsJapgolly.monacoEditor.mod.languages.IndentAction.None & Double = js.native
   
   /**
     * Insert new line and outdent once (relative to the previous line's indentation).
     */
   @js.native
-  sealed trait Outdent extends IndentAction
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndentAction with Double] = js.native
-  /* 1 */ @js.native
-  object Indent extends TopLevel[Indent with Double]
-  
-  /* 2 */ @js.native
-  object IndentOutdent extends TopLevel[IndentOutdent with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object Outdent extends TopLevel[Outdent with Double]
-  
+  sealed trait Outdent
+    extends StObject
+       with IndentAction
+  /* 3 */ val Outdent: typingsJapgolly.monacoEditor.mod.languages.IndentAction.Outdent & Double = js.native
 }
-

@@ -1,19 +1,18 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.nodesMod.ProseFragment
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.GreaterThanToken
+import typingsJapgolly.grammarkdown.distNodesMod.ProseFragment
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.GreaterThanToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Prose")
 @js.native
-class Prose protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Prose {
-  def this(greaterThanToken: typingsJapgolly.grammarkdown.nodesMod.Token[GreaterThanToken]) = this()
+open class Prose protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Prose {
+  def this(greaterThanToken: typingsJapgolly.grammarkdown.distNodesMod.Token[GreaterThanToken]) = this()
   def this(
-    greaterThanToken: typingsJapgolly.grammarkdown.nodesMod.Token[GreaterThanToken],
+    greaterThanToken: typingsJapgolly.grammarkdown.distNodesMod.Token[GreaterThanToken],
     fragments: js.Array[ProseFragment]
   ) = this()
 }
-

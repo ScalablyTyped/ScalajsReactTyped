@@ -1,32 +1,25 @@
 package typingsJapgolly.inboxsdk.mod.ButterBar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait LoadingMessageDescriptorHtml
-  extends LoadingMessageDescriptorBase
+  extends StObject
+     with LoadingMessageDescriptorBase
      with LoadingMessageDescriptor {
+  
   var html: String
 }
-
 object LoadingMessageDescriptorHtml {
-  @scala.inline
-  def apply(
-    html: String,
-    className: String = null,
-    hideOnViewChanged: js.UndefOr[Boolean] = js.undefined,
-    messageKey: js.Object | String = null,
-    persistent: js.UndefOr[Boolean] = js.undefined,
-    priority: Int | Double = null
-  ): LoadingMessageDescriptorHtml = {
+  
+  inline def apply(html: String): LoadingMessageDescriptorHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnViewChanged)) __obj.updateDynamic("hideOnViewChanged")(hideOnViewChanged.asInstanceOf[js.Any])
-    if (messageKey != null) __obj.updateDynamic("messageKey")(messageKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadingMessageDescriptorHtml]
   }
+  
+  extension [Self <: LoadingMessageDescriptorHtml](x: Self) {
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+  }
 }
-

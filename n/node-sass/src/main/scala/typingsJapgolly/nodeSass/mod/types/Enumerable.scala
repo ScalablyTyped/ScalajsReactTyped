@@ -2,28 +2,31 @@ package typingsJapgolly.nodeSass.mod.types
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Enumerable extends js.Object {
+trait Enumerable extends StObject {
+  
   def getLength(): Double
+  
   def getValue(index: Double): Value
+  
   def setValue(index: Double, value: Value): Unit
 }
-
 object Enumerable {
-  @scala.inline
-  def apply(
-    getLength: CallbackTo[Double],
-    getValue: Double => CallbackTo[Value],
-    setValue: (Double, Value) => Callback
-  ): Enumerable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getLength")(getLength.toJsFn)
-    __obj.updateDynamic("getValue")(js.Any.fromFunction1((t0: scala.Double) => getValue(t0).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction2((t0: scala.Double, t1: typingsJapgolly.nodeSass.mod.types.Value) => setValue(t0, t1).runNow()))
+  
+  inline def apply(getLength: CallbackTo[Double], getValue: Double => Value, setValue: (Double, Value) => Callback): Enumerable = {
+    val __obj = js.Dynamic.literal(getLength = getLength.toJsFn, getValue = js.Any.fromFunction1(getValue), setValue = js.Any.fromFunction2((t0: Double, t1: Value) => (setValue(t0, t1)).runNow()))
     __obj.asInstanceOf[Enumerable]
   }
+  
+  extension [Self <: Enumerable](x: Self) {
+    
+    inline def setGetLength(value: CallbackTo[Double]): Self = StObject.set(x, "getLength", value.toJsFn)
+    
+    inline def setGetValue(value: Double => Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    
+    inline def setSetValue(value: (Double, Value) => Callback): Self = StObject.set(x, "setValue", js.Any.fromFunction2((t0: Double, t1: Value) => (value(t0, t1)).runNow()))
+  }
 }
-

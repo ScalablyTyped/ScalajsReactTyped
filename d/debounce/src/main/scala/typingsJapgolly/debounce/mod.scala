@@ -1,15 +1,22 @@
 package typingsJapgolly.debounce
 
+import typingsJapgolly.debounce.anon.Clear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("debounce", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val debounce: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _debounce */ js.Any = js.native
-  def apply[A /* <: js.Function */](f: A): AnonClear with A = js.native
-  def apply[A /* <: js.Function */](f: A, interval: Double): AnonClear with A = js.native
-  def apply[A /* <: js.Function */](f: A, interval: Double, immediate: Boolean): AnonClear with A = js.native
+object mod {
+  
+  inline def apply[A /* <: js.Function */](f: A): Clear & A = ^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any]).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Double): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Double, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  inline def apply[A /* <: js.Function */](f: A, interval: Unit, immediate: Boolean): Clear & A = (^.asInstanceOf[js.Dynamic].apply(f.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[Clear & A]
+  
+  @JSImport("debounce", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("debounce", "debounce")
+  @js.native
+  val debounce: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _debounce */ Any = js.native
 }
-

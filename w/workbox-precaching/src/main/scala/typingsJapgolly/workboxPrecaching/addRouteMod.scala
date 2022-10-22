@@ -1,14 +1,16 @@
 package typingsJapgolly.workboxPrecaching
 
-import typingsJapgolly.workboxPrecaching.fetchListenerOptionsMod.FetchListenerOptions
+import typingsJapgolly.workboxPrecaching.typesFetchListenerOptionsMod.FetchListenerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-precaching/addRoute", JSImport.Namespace)
-@js.native
-object addRouteMod extends js.Object {
-  def addRoute(): Unit = js.native
-  def addRoute(options: FetchListenerOptions): Unit = js.native
+object addRouteMod {
+  
+  @JSImport("workbox-precaching/addRoute", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def addRoute(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")().asInstanceOf[Unit]
+  inline def addRoute(options: FetchListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRoute")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

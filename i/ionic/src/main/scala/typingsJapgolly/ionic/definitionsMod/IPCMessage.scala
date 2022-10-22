@@ -1,30 +1,26 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import typingsJapgolly.ionic.AnonArgs
-import typingsJapgolly.ionic.ionicStrings.`update-check`
-import typingsJapgolly.ionic.ionicStrings.telemetry
+import typingsJapgolly.ionic.anon.Args
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.definitionsMod.TelemetryIPCMessage
   - typingsJapgolly.ionic.definitionsMod.UpdateCheckIPCMessage
 */
-trait IPCMessage extends js.Object
-
+trait IPCMessage extends StObject
 object IPCMessage {
-  @scala.inline
-  def TelemetryIPCMessage(data: AnonArgs, `type`: telemetry): IPCMessage = {
+  
+  inline def TelemetryIPCMessage(data: Args): typingsJapgolly.ionic.definitionsMod.TelemetryIPCMessage = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IPCMessage]
+    __obj.updateDynamic("type")("telemetry")
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.TelemetryIPCMessage]
   }
-  @scala.inline
-  def UpdateCheckIPCMessage(`type`: `update-check`): IPCMessage = {
+  
+  inline def UpdateCheckIPCMessage(): typingsJapgolly.ionic.definitionsMod.UpdateCheckIPCMessage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IPCMessage]
+    __obj.updateDynamic("type")("update-check")
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.UpdateCheckIPCMessage]
   }
 }
-

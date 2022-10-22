@@ -1,13 +1,16 @@
 package typingsJapgolly.cordovaPluginFile
 
-import org.scalajs.dom.raw.File
+import org.scalajs.dom.File
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents a file on a file system. */
 @js.native
-trait FileEntry extends Entry {
+trait FileEntry
+  extends StObject
+     with Entry {
+  
   /**
     * Creates a new FileWriter associated with the file that this FileEntry represents.
     * @param successCallback A callback that is called with the new FileWriter.
@@ -18,6 +21,7 @@ trait FileEntry extends Entry {
     successCallback: js.Function1[/* writer */ FileWriter, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  
   /**
     * Returns a File that represents the current state of the file that this FileEntry represents.
     * @param successCallback A callback that is called with the File.
@@ -29,4 +33,3 @@ trait FileEntry extends Entry {
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
 }
-

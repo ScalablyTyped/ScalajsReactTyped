@@ -1,7 +1,7 @@
 
 # Scala.js typings for axe-webdriverjs
 
-Typings are for version 2.1
+Typings are for version 2.3
 
 ## Library description:
 Provides a method to inject and analyze web pages using aXe
@@ -10,10 +10,10 @@ Provides a method to inject and analyze web pages using aXe
 | ------------------ | :-------------: |
 | Full name          | axe-webdriverjs |
 | Keywords           | a11y, unit, testing, tdd, bdd, accessibility, aXe, selenium, webdriver, webdriverjs |
-| # releases         | 32 |
-| # dependents       | 24 |
-| # downloads        | 977428 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 219605.0 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/dequelabs/axe-webdriverjs#readme)

@@ -1,27 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the visual feedback settings for pointer input. */
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
-@js.native
-abstract class PointerVisualizationSettings () extends js.Object {
+trait PointerVisualizationSettings extends StObject {
+  
   /** Gets or sets a value that indicates whether visual feedback is enabled for pen/stylus input when the barrel button is pressed. */
-  var isBarrelButtonFeedbackEnabled: Boolean = js.native
+  var isBarrelButtonFeedbackEnabled: Boolean
+  
   /** Gets or sets a value that indicates whether visual feedback is enabled when a pointer contact is detected. */
-  var isContactFeedbackEnabled: Boolean = js.native
+  var isContactFeedbackEnabled: Boolean
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
-@js.native
-object PointerVisualizationSettings extends js.Object {
-  /**
-    * Gets a PointerVisualizationSettings object associated with the current app.
-    * @return The PointerVisualizationSettings object associated with the current app.
-    */
-  def getForCurrentView(): PointerVisualizationSettings = js.native
+object PointerVisualizationSettings {
+  
+  inline def apply(isBarrelButtonFeedbackEnabled: Boolean, isContactFeedbackEnabled: Boolean): PointerVisualizationSettings = {
+    val __obj = js.Dynamic.literal(isBarrelButtonFeedbackEnabled = isBarrelButtonFeedbackEnabled.asInstanceOf[js.Any], isContactFeedbackEnabled = isContactFeedbackEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerVisualizationSettings]
+  }
+  
+  extension [Self <: PointerVisualizationSettings](x: Self) {
+    
+    inline def setIsBarrelButtonFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isBarrelButtonFeedbackEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setIsContactFeedbackEnabled(value: Boolean): Self = StObject.set(x, "isContactFeedbackEnabled", value.asInstanceOf[js.Any])
+  }
 }
-

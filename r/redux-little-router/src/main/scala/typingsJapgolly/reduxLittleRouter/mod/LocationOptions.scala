@@ -1,21 +1,30 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocationOptions extends js.Object {
+trait LocationOptions extends StObject {
+  
   var persistQuery: js.UndefOr[Boolean] = js.undefined
+  
   var updateRoutes: js.UndefOr[Boolean] = js.undefined
 }
-
 object LocationOptions {
-  @scala.inline
-  def apply(persistQuery: js.UndefOr[Boolean] = js.undefined, updateRoutes: js.UndefOr[Boolean] = js.undefined): LocationOptions = {
+  
+  inline def apply(): LocationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(persistQuery)) __obj.updateDynamic("persistQuery")(persistQuery.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateRoutes)) __obj.updateDynamic("updateRoutes")(updateRoutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationOptions]
   }
+  
+  extension [Self <: LocationOptions](x: Self) {
+    
+    inline def setPersistQuery(value: Boolean): Self = StObject.set(x, "persistQuery", value.asInstanceOf[js.Any])
+    
+    inline def setPersistQueryUndefined: Self = StObject.set(x, "persistQuery", js.undefined)
+    
+    inline def setUpdateRoutes(value: Boolean): Self = StObject.set(x, "updateRoutes", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateRoutesUndefined: Self = StObject.set(x, "updateRoutes", js.undefined)
+  }
 }
-

@@ -1,30 +1,34 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentSymbolProvider extends js.Object {
+trait DocumentSymbolProvider extends StObject {
+  
   /**
-  		 * Provide symbol information for the given document.
-  		 *
-  		 * @param document The document in which the command was invoked.
-  		 * @param token A cancellation token.
-  		 * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
-  		 * signaled by returning `undefined`, `null`, or an empty array.
-  		 */
+    * Provide symbol information for the given document.
+    *
+    * @param document The document in which the command was invoked.
+    * @param token A cancellation token.
+    * @return An array of document highlights or a thenable that resolves to such. The lack of a result can be
+    * signaled by returning `undefined`, `null`, or an empty array.
+    */
   def provideDocumentSymbols(document: TextDocument, token: CancellationToken): ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
 }
-
 object DocumentSymbolProvider {
-  @scala.inline
-  def apply(
-    provideDocumentSymbols: (TextDocument, CancellationToken) => CallbackTo[ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]]
+  
+  inline def apply(
+    provideDocumentSymbols: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
   ): DocumentSymbolProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideDocumentSymbols")(js.Any.fromFunction2((t0: typingsJapgolly.vscode.mod.TextDocument, t1: typingsJapgolly.vscode.mod.CancellationToken) => provideDocumentSymbols(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(provideDocumentSymbols = js.Any.fromFunction2(provideDocumentSymbols))
     __obj.asInstanceOf[DocumentSymbolProvider]
   }
+  
+  extension [Self <: DocumentSymbolProvider](x: Self) {
+    
+    inline def setProvideDocumentSymbols(
+      value: (TextDocument, CancellationToken) => ProviderResult[js.Array[DocumentSymbol | SymbolInformation]]
+    ): Self = StObject.set(x, "provideDocumentSymbols", js.Any.fromFunction2(value))
+  }
 }
-

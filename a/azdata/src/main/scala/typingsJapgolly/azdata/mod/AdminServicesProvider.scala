@@ -1,35 +1,43 @@
 package typingsJapgolly.azdata.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AdminServicesProvider extends DataProvider {
+trait AdminServicesProvider
+  extends StObject
+     with DataProvider {
+  
   def createDatabase(connectionUri: String, database: DatabaseInfo): Thenable[CreateDatabaseResponse]
+  
   def createLogin(connectionUri: String, login: LoginInfo): Thenable[CreateLoginResponse]
+  
   def getDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo]
+  
   def getDefaultDatabaseInfo(connectionUri: String): Thenable[DatabaseInfo]
 }
-
 object AdminServicesProvider {
-  @scala.inline
-  def apply(
-    createDatabase: (String, DatabaseInfo) => CallbackTo[Thenable[CreateDatabaseResponse]],
-    createLogin: (String, LoginInfo) => CallbackTo[Thenable[CreateLoginResponse]],
-    getDatabaseInfo: String => CallbackTo[Thenable[DatabaseInfo]],
-    getDefaultDatabaseInfo: String => CallbackTo[Thenable[DatabaseInfo]],
-    providerId: String,
-    handle: Int | Double = null
+  
+  inline def apply(
+    createDatabase: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse],
+    createLogin: (String, LoginInfo) => Thenable[CreateLoginResponse],
+    getDatabaseInfo: String => Thenable[DatabaseInfo],
+    getDefaultDatabaseInfo: String => Thenable[DatabaseInfo],
+    providerId: String
   ): AdminServicesProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("createDatabase")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.azdata.mod.DatabaseInfo) => createDatabase(t0, t1).runNow()))
-    __obj.updateDynamic("createLogin")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.azdata.mod.LoginInfo) => createLogin(t0, t1).runNow()))
-    __obj.updateDynamic("getDatabaseInfo")(js.Any.fromFunction1((t0: java.lang.String) => getDatabaseInfo(t0).runNow()))
-    __obj.updateDynamic("getDefaultDatabaseInfo")(js.Any.fromFunction1((t0: java.lang.String) => getDefaultDatabaseInfo(t0).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(createDatabase = js.Any.fromFunction2(createDatabase), createLogin = js.Any.fromFunction2(createLogin), getDatabaseInfo = js.Any.fromFunction1(getDatabaseInfo), getDefaultDatabaseInfo = js.Any.fromFunction1(getDefaultDatabaseInfo), providerId = providerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminServicesProvider]
   }
+  
+  extension [Self <: AdminServicesProvider](x: Self) {
+    
+    inline def setCreateDatabase(value: (String, DatabaseInfo) => Thenable[CreateDatabaseResponse]): Self = StObject.set(x, "createDatabase", js.Any.fromFunction2(value))
+    
+    inline def setCreateLogin(value: (String, LoginInfo) => Thenable[CreateLoginResponse]): Self = StObject.set(x, "createLogin", js.Any.fromFunction2(value))
+    
+    inline def setGetDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDatabaseInfo", js.Any.fromFunction1(value))
+    
+    inline def setGetDefaultDatabaseInfo(value: String => Thenable[DatabaseInfo]): Self = StObject.set(x, "getDefaultDatabaseInfo", js.Any.fromFunction1(value))
+  }
 }
-

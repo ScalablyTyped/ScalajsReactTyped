@@ -1,49 +1,65 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RTCSctpTransport extends EventTarget {
-  val maxChannels: Double | Null = js.native
-  val maxMessageSize: Double = js.native
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val state: RTCSctpTransportState = js.native
-  val transport: RTCDtlsTransport = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+trait RTCSctpTransport
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  
+  /* standard dom */
+  val maxChannels: Double | Null = js.native
+  
+  /* standard dom */
+  val maxMessageSize: Double = js.native
+  
+  /* standard dom */
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  val state: RTCSctpTransportState = js.native
+  
+  /* standard dom */
+  val transport: RTCDtlsTransport = js.native
 }
-
-@JSGlobal("RTCSctpTransport")
-@js.native
-object RTCSctpTransport extends Instantiable0[RTCSctpTransport]
-

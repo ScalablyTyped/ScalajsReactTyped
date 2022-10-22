@@ -1,22 +1,25 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrt.Windows.System.VirtualKeyModifiers
 import typingsJapgolly.winrt.Windows.UI.Input.PointerPoint
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.PointerEventArgs")
-@js.native
-class PointerEventArgs () extends IPointerEventArgs {
-  /* CompleteClass */
-  override var currentPoint: PointerPoint = js.native
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /* CompleteClass */
-  override var keyModifiers: VirtualKeyModifiers = js.native
-  /* CompleteClass */
-  override def getIntermediatePoints(): IVector[PointerPoint] = js.native
+trait PointerEventArgs
+  extends StObject
+     with IPointerEventArgs
+object PointerEventArgs {
+  
+  inline def apply(
+    currentPoint: PointerPoint,
+    getIntermediatePoints: CallbackTo[IVector[PointerPoint]],
+    handled: Boolean,
+    keyModifiers: VirtualKeyModifiers
+  ): PointerEventArgs = {
+    val __obj = js.Dynamic.literal(currentPoint = currentPoint.asInstanceOf[js.Any], getIntermediatePoints = getIntermediatePoints.toJsFn, handled = handled.asInstanceOf[js.Any], keyModifiers = keyModifiers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerEventArgs]
+  }
 }
-

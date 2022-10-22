@@ -1,19 +1,29 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DocumentLinkParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.DocumentLinkRegistrationOptions
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashdocumentLink
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentLinkParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.DocumentLinkRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "DocumentLinkRequest")
-@js.native
-object DocumentLinkRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
+object DocumentLinkRequest {
+  
+  @JSImport("vscode-languageclient", "DocumentLinkRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "DocumentLinkRequest.method")
+  @js.native
+  val method: textDocumentSlashdocumentLink = js.native
+  
+  @JSImport("vscode-languageclient", "DocumentLinkRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DocumentLinkParams, 
     js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentLink] | Null, 
+    js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentLink], 
     Unit, 
     DocumentLinkRegistrationOptions
   ] = js.native
 }
-

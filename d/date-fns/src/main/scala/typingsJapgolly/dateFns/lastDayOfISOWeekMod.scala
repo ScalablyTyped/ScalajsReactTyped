@@ -1,16 +1,18 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/lastDayOfISOWeek", JSImport.Namespace)
-@js.native
-object lastDayOfISOWeekMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn1[Date | Double, Date]]
+object lastDayOfISOWeekMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/lastDayOfISOWeek", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

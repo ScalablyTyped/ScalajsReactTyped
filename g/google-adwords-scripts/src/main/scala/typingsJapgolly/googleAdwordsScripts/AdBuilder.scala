@@ -1,31 +1,25 @@
 package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AdBuilder[T]
-  extends AdWordsBuilder[T]
+  extends StObject
+     with AdWordsBuilder[T]
      with hasFinalUrlBuilder[T]
      with hasTrackingTemplateBuilder[T]
-
 object AdBuilder {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     build: CallbackTo[AdWordsOperation[T]],
-    withCustomParameters: js.Object => CallbackTo[T],
-    withFinalUrl: String => CallbackTo[T],
-    withMobileFinalUrl: String => CallbackTo[T],
-    withTrackingTemplate: String => CallbackTo[T]
+    withCustomParameters: js.Object => T,
+    withFinalUrl: String => T,
+    withMobileFinalUrl: String => T,
+    withTrackingTemplate: String => T
   ): AdBuilder[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("withCustomParameters")(js.Any.fromFunction1((t0: js.Object) => withCustomParameters(t0).runNow()))
-    __obj.updateDynamic("withFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withFinalUrl(t0).runNow()))
-    __obj.updateDynamic("withMobileFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withMobileFinalUrl(t0).runNow()))
-    __obj.updateDynamic("withTrackingTemplate")(js.Any.fromFunction1((t0: java.lang.String) => withTrackingTemplate(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, withCustomParameters = js.Any.fromFunction1(withCustomParameters), withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl), withTrackingTemplate = js.Any.fromFunction1(withTrackingTemplate))
     __obj.asInstanceOf[AdBuilder[T]]
   }
 }
-

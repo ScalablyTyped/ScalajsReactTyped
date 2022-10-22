@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendOption extends js.Object
-
+sealed trait BlendOption extends StObject
 @JSImport("cesium", "BlendOption")
 @js.native
-object BlendOption extends js.Object {
-  @js.native
-  sealed trait OPAQUE extends BlendOption
-  
-  @js.native
-  sealed trait OPAQUE_AND_TRANSLUCENT extends BlendOption
-  
-  @js.native
-  sealed trait TRANSLUCENT extends BlendOption
+object BlendOption extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BlendOption with Double] = js.native
-  /* 0 */ @js.native
-  object OPAQUE extends TopLevel[OPAQUE with Double]
+  def apply(value: Double): js.UndefOr[BlendOption & Double] = js.native
   
-  /* 1 */ @js.native
-  object OPAQUE_AND_TRANSLUCENT extends TopLevel[OPAQUE_AND_TRANSLUCENT with Double]
+  /**
+    * The billboards, points, or labels in the collection are completely opaque.
+    */
+  @js.native
+  sealed trait OPAQUE
+    extends StObject
+       with BlendOption
+  /* 0 */ val OPAQUE: typingsJapgolly.cesium.mod.BlendOption.OPAQUE & Double = js.native
   
-  /* 2 */ @js.native
-  object TRANSLUCENT extends TopLevel[TRANSLUCENT with Double]
+  /**
+    * The billboards, points, or labels in the collection are both opaque and translucent.
+    */
+  @js.native
+  sealed trait OPAQUE_AND_TRANSLUCENT
+    extends StObject
+       with BlendOption
+  /* 2 */ val OPAQUE_AND_TRANSLUCENT: typingsJapgolly.cesium.mod.BlendOption.OPAQUE_AND_TRANSLUCENT & Double = js.native
   
+  /**
+    * The billboards, points, or labels in the collection are completely translucent.
+    */
+  @js.native
+  sealed trait TRANSLUCENT
+    extends StObject
+       with BlendOption
+  /* 1 */ val TRANSLUCENT: typingsJapgolly.cesium.mod.BlendOption.TRANSLUCENT & Double = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-floater
 
-Typings are for version 0.7.2
+Typings are for version 0.8.2
 
 ## Library description:
 Floaters everywhere!
@@ -10,10 +10,10 @@ Floaters everywhere!
 | ------------------ | :-------------: |
 | Full name          | react-floater |
 | Keywords           | react, react-component, component, tooltip, modal, popup, alert, notification |
-| # releases         | 17 |
-| # dependents       | 15 |
-| # downloads        | 1379107 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 713464.3333333334 |
+| # stars            | 156.0 |
 
 ## Links
 - [Homepage](https://github.com/gilbarbara/react-floater#readme)

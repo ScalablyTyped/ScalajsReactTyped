@@ -1,23 +1,36 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import typingsJapgolly.three.constantsMod.Mapping
-import typingsJapgolly.three.constantsMod.PixelFormat
-import typingsJapgolly.three.constantsMod.TextureDataType
-import typingsJapgolly.three.constantsMod.TextureEncoding
-import typingsJapgolly.three.constantsMod.TextureFilter
-import typingsJapgolly.three.constantsMod.Wrapping
+import typingsJapgolly.three.srcConstantsMod.Mapping
+import typingsJapgolly.three.srcConstantsMod.PixelFormat
+import typingsJapgolly.three.srcConstantsMod.TextureDataType
+import typingsJapgolly.three.srcConstantsMod.TextureEncoding
+import typingsJapgolly.three.srcConstantsMod.TextureFilter
+import typingsJapgolly.three.srcConstantsMod.Wrapping
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.CubeTexture")
 @js.native
-class CubeTexture protected ()
+open class CubeTexture protected ()
   extends typingsJapgolly.three.mod.CubeTexture {
+  /**
+    * @param [images=[]]
+    * @param [mapping=THREE.CubeReflectionMapping]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearMipmapLinearFilter]
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [anisotropy=1]
+    * @param [encoding=THREE.LinearEncoding]
+    */
   def this(
-     // HTMLImageElement or HTMLCanvasElement
-  images: js.UndefOr[js.Array[_]],
-    mapping: js.UndefOr[Mapping],
+    images: js.UndefOr[js.Array[Any]],
+    // HTMLImageElement or HTMLCanvasElement
+  mapping: js.UndefOr[Mapping],
     wrapS: js.UndefOr[Wrapping],
     wrapT: js.UndefOr[Wrapping],
     magFilter: js.UndefOr[TextureFilter],
@@ -28,4 +41,3 @@ class CubeTexture protected ()
     encoding: js.UndefOr[TextureEncoding]
   ) = this()
 }
-

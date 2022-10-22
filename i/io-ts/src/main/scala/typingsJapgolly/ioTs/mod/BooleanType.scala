@@ -1,13 +1,15 @@
 package typingsJapgolly.ioTs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("io-ts", "BooleanType")
 @js.native
-class BooleanType ()
-  extends Type_[Boolean, Boolean, js.Any] {
+open class BooleanType () extends Type_[Boolean, Boolean, Any] {
+  
+  /**
+    * @since 1.0.0
+    */
   val _tag: typingsJapgolly.ioTs.ioTsStrings.BooleanType = js.native
 }
-

@@ -1,13 +1,18 @@
 package typingsJapgolly.reactTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-table", "useRowSelect")
-@js.native
-object useRowSelect extends js.Object {
-  val pluginName: typingsJapgolly.reactTable.reactTableStrings.useRowSelect = js.native
-  def apply[D /* <: js.Object */](hooks: Hooks[D]): Unit = js.native
+object useRowSelect {
+  
+  inline def apply[D /* <: js.Object */](hooks: Hooks[D]): Unit = ^.asInstanceOf[js.Dynamic].apply(hooks.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("react-table", "useRowSelect")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-table", "useRowSelect.pluginName")
+  @js.native
+  val pluginName: /* "useRowSelect" */ String = js.native
 }
-

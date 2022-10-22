@@ -1,27 +1,45 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchBarLabelConstructorOptions extends js.Object {
+trait TouchBarLabelConstructorOptions extends StObject {
+  
+  /**
+    * A short description of the button for use by screenreaders like VoiceOver.
+    */
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
+  
   /**
     * Text to display.
     */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
-    * Hex color of text, i.e #ABCDEF.
+    * Hex color of text, i.e `#ABCDEF`.
     */
   var textColor: js.UndefOr[String] = js.undefined
 }
-
 object TouchBarLabelConstructorOptions {
-  @scala.inline
-  def apply(label: String = null, textColor: String = null): TouchBarLabelConstructorOptions = {
+  
+  inline def apply(): TouchBarLabelConstructorOptions = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarLabelConstructorOptions]
   }
+  
+  extension [Self <: TouchBarLabelConstructorOptions](x: Self) {
+    
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setTextColor(value: String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+  }
 }
-

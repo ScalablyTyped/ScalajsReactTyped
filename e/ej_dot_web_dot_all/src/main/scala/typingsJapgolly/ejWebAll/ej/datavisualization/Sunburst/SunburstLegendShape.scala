@@ -1,59 +1,48 @@
 package typingsJapgolly.ejWebAll.ej.datavisualization.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLegendShape extends js.Object
-
+sealed trait SunburstLegendShape extends StObject
 @JSGlobal("ej.datavisualization.Sunburst.SunburstLegendShape")
 @js.native
-object SunburstLegendShape extends js.Object {
-  //string
-  @js.native
-  sealed trait Circle extends SunburstLegendShape
+object SunburstLegendShape extends StObject {
   
   //string
   @js.native
-  sealed trait Cross extends SunburstLegendShape
+  sealed trait Circle
+    extends StObject
+       with SunburstLegendShape
   
   //string
   @js.native
-  sealed trait Diamond extends SunburstLegendShape
+  sealed trait Cross
+    extends StObject
+       with SunburstLegendShape
   
   //string
   @js.native
-  sealed trait Pentagon extends SunburstLegendShape
+  sealed trait Diamond
+    extends StObject
+       with SunburstLegendShape
   
   //string
   @js.native
-  sealed trait Rectangle extends SunburstLegendShape
+  sealed trait Pentagon
+    extends StObject
+       with SunburstLegendShape
   
   //string
   @js.native
-  sealed trait Triangle extends SunburstLegendShape
+  sealed trait Rectangle
+    extends StObject
+       with SunburstLegendShape
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstLegendShape with Double] = js.native
-  /* 3 */ @js.native
-  object Circle extends TopLevel[Circle with Double]
-  
-  /* 4 */ @js.native
-  object Cross extends TopLevel[Cross with Double]
-  
-  /* 0 */ @js.native
-  object Diamond extends TopLevel[Diamond with Double]
-  
-  /* 1 */ @js.native
-  object Pentagon extends TopLevel[Pentagon with Double]
-  
-  /* 2 */ @js.native
-  object Rectangle extends TopLevel[Rectangle with Double]
-  
-  /* 5 */ @js.native
-  object Triangle extends TopLevel[Triangle with Double]
-  
+  //string
+  @js.native
+  sealed trait Triangle
+    extends StObject
+       with SunburstLegendShape
 }
-

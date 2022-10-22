@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.VerticalAlignProperty
+import typingsJapgolly.csstype.mod.Property.VerticalAlign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VerticalAlignProps[TLength] extends js.Object {
-  val verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlignProperty[TLength]]] = js.undefined
+trait VerticalAlignProps[TLength] extends StObject {
+  
+  val verticalAlign: js.UndefOr[ResponsiveValue[VerticalAlign[TLength]]] = js.undefined
 }
-
 object VerticalAlignProps {
-  @scala.inline
-  def apply[TLength](verticalAlign: ResponsiveValue[VerticalAlignProperty[TLength]] = null): VerticalAlignProps[TLength] = {
+  
+  inline def apply[TLength](): VerticalAlignProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerticalAlignProps[TLength]]
   }
+  
+  extension [Self <: VerticalAlignProps[?], TLength](x: Self & VerticalAlignProps[TLength]) {
+    
+    inline def setVerticalAlign(value: ResponsiveValue[VerticalAlign[TLength]]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setVerticalAlignVarargs(value: VerticalAlign[TLength]*): Self = StObject.set(x, "verticalAlign", js.Array(value*))
+  }
 }
-

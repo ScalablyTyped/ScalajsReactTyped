@@ -1,20 +1,33 @@
 package typingsJapgolly.reactAsync.mod
 
-import typingsJapgolly.react.mod.SyntheticEvent
-import typingsJapgolly.reactAsync.PartialRequestInit
-import typingsJapgolly.std.Element
-import typingsJapgolly.std.Event_
-import typingsJapgolly.std.RequestInit
+import japgolly.scalajs.react.ReactEventFrom
+import org.scalajs.dom.Element
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined parent std.Omit<react-async.react-async.AbstractState<T>, 'run'> */
 @js.native
-trait FetchRun[T] extends js.Object {
+trait FetchRun[T] extends StObject {
+  
+  var cancel: js.Function0[Unit] = js.native
+  
+  var counter: Double = js.native
+  
+  var initialValue: js.UndefOr[T | js.Error] = js.native
+  
+  var promise: js.Promise[T] = js.native
+  
+  var reload: js.Function0[Unit] = js.native
+  
   def run(): Unit = js.native
-  def run(ignoredEvent: SyntheticEvent[Element, Event_]): Unit = js.native
-  def run(ignoredEvent: Event_): Unit = js.native
-  def run(overrideInit: js.Function1[/* init */ RequestInit, RequestInit]): Unit = js.native
-  def run(overrideInit: PartialRequestInit): Unit = js.native
+  def run(ignoredEvent: ReactEventFrom[Element]): Unit = js.native
+  def run(ignoredEvent: Event): Unit = js.native
+  def run(overrideParams: js.Function1[/* params */ js.UndefOr[OverrideParams], OverrideParams]): Unit = js.native
+  def run(overrideParams: OverrideParams): Unit = js.native
+  
+  var setData: js.Function2[/* data */ T, /* callback */ js.UndefOr[js.Function0[Unit]], T] = js.native
+  
+  var setError: js.Function2[/* error */ js.Error, /* callback */ js.UndefOr[js.Function0[Unit]], js.Error] = js.native
 }
-

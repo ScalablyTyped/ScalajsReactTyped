@@ -1,104 +1,108 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointerEventInit extends MouseEventInit {
+trait PointerEventInit
+  extends StObject
+     with MouseEventInit {
+  
+  /* standard dom */
+  var coalescedEvents: js.UndefOr[js.Array[org.scalajs.dom.PointerEvent]] = js.undefined
+  
+  /* standard dom */
   var height: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var isPrimary: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var pointerId: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var pointerType: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var predictedEvents: js.UndefOr[js.Array[org.scalajs.dom.PointerEvent]] = js.undefined
+  
+  /* standard dom */
   var pressure: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var tangentialPressure: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var tiltX: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var tiltY: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var twist: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object PointerEventInit {
-  @scala.inline
-  def apply(
-    altKey: js.UndefOr[scala.Boolean] = js.undefined,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    button: Int | Double = null,
-    buttons: Int | Double = null,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    clientX: Int | Double = null,
-    clientY: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: Int | Double = null,
-    height: Int | Double = null,
-    isPrimary: js.UndefOr[scala.Boolean] = js.undefined,
-    metaKey: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierAltGraph: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierCapsLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFn: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
-    movementX: Int | Double = null,
-    movementY: Int | Double = null,
-    pointerId: Int | Double = null,
-    pointerType: java.lang.String = null,
-    pressure: Int | Double = null,
-    relatedTarget: org.scalajs.dom.raw.EventTarget = null,
-    screenX: Int | Double = null,
-    screenY: Int | Double = null,
-    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    tangentialPressure: Int | Double = null,
-    tiltX: Int | Double = null,
-    tiltY: Int | Double = null,
-    twist: Int | Double = null,
-    view: Window_ = null,
-    width: Int | Double = null
-  ): PointerEventInit = {
+  
+  inline def apply(): PointerEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
-    if (clientY != null) __obj.updateDynamic("clientY")(clientY.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierAltGraph)) __obj.updateDynamic("modifierAltGraph")(modifierAltGraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierCapsLock)) __obj.updateDynamic("modifierCapsLock")(modifierCapsLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFn)) __obj.updateDynamic("modifierFn")(modifierFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock.asInstanceOf[js.Any])
-    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
-    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
-    if (pointerId != null) __obj.updateDynamic("pointerId")(pointerId.asInstanceOf[js.Any])
-    if (pointerType != null) __obj.updateDynamic("pointerType")(pointerType.asInstanceOf[js.Any])
-    if (pressure != null) __obj.updateDynamic("pressure")(pressure.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
-    if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
-    if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
-    if (tangentialPressure != null) __obj.updateDynamic("tangentialPressure")(tangentialPressure.asInstanceOf[js.Any])
-    if (tiltX != null) __obj.updateDynamic("tiltX")(tiltX.asInstanceOf[js.Any])
-    if (tiltY != null) __obj.updateDynamic("tiltY")(tiltY.asInstanceOf[js.Any])
-    if (twist != null) __obj.updateDynamic("twist")(twist.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerEventInit]
   }
+  
+  extension [Self <: PointerEventInit](x: Self) {
+    
+    inline def setCoalescedEvents(value: js.Array[org.scalajs.dom.PointerEvent]): Self = StObject.set(x, "coalescedEvents", value.asInstanceOf[js.Any])
+    
+    inline def setCoalescedEventsUndefined: Self = StObject.set(x, "coalescedEvents", js.undefined)
+    
+    inline def setCoalescedEventsVarargs(value: org.scalajs.dom.PointerEvent*): Self = StObject.set(x, "coalescedEvents", js.Array(value*))
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setIsPrimary(value: scala.Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+    
+    inline def setPointerId(value: Double): Self = StObject.set(x, "pointerId", value.asInstanceOf[js.Any])
+    
+    inline def setPointerIdUndefined: Self = StObject.set(x, "pointerId", js.undefined)
+    
+    inline def setPointerType(value: java.lang.String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
+    
+    inline def setPointerTypeUndefined: Self = StObject.set(x, "pointerType", js.undefined)
+    
+    inline def setPredictedEvents(value: js.Array[org.scalajs.dom.PointerEvent]): Self = StObject.set(x, "predictedEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPredictedEventsUndefined: Self = StObject.set(x, "predictedEvents", js.undefined)
+    
+    inline def setPredictedEventsVarargs(value: org.scalajs.dom.PointerEvent*): Self = StObject.set(x, "predictedEvents", js.Array(value*))
+    
+    inline def setPressure(value: Double): Self = StObject.set(x, "pressure", value.asInstanceOf[js.Any])
+    
+    inline def setPressureUndefined: Self = StObject.set(x, "pressure", js.undefined)
+    
+    inline def setTangentialPressure(value: Double): Self = StObject.set(x, "tangentialPressure", value.asInstanceOf[js.Any])
+    
+    inline def setTangentialPressureUndefined: Self = StObject.set(x, "tangentialPressure", js.undefined)
+    
+    inline def setTiltX(value: Double): Self = StObject.set(x, "tiltX", value.asInstanceOf[js.Any])
+    
+    inline def setTiltXUndefined: Self = StObject.set(x, "tiltX", js.undefined)
+    
+    inline def setTiltY(value: Double): Self = StObject.set(x, "tiltY", value.asInstanceOf[js.Any])
+    
+    inline def setTiltYUndefined: Self = StObject.set(x, "tiltY", js.undefined)
+    
+    inline def setTwist(value: Double): Self = StObject.set(x, "twist", value.asInstanceOf[js.Any])
+    
+    inline def setTwistUndefined: Self = StObject.set(x, "twist", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

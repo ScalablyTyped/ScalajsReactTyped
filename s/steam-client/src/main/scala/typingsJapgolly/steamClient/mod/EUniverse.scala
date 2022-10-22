@@ -1,53 +1,51 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EUniverse extends js.Object
-
+sealed trait EUniverse extends StObject
 @JSImport("steam-client", "EUniverse")
 @js.native
-object EUniverse extends js.Object {
-  @js.native
-  sealed trait Beta extends EUniverse
-  
-  @js.native
-  sealed trait Dev extends EUniverse
-  
-  @js.native
-  sealed trait Internal extends EUniverse
-  
-  @js.native
-  sealed trait Invalid extends EUniverse
-  
-  @js.native
-  sealed trait Max extends EUniverse
-  
-  @js.native
-  sealed trait Public extends EUniverse
+object EUniverse extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EUniverse with Double] = js.native
-  /* 2 */ @js.native
-  object Beta extends TopLevel[Beta with Double]
+  def apply(value: Double): js.UndefOr[EUniverse & Double] = js.native
   
-  /* 4 */ @js.native
-  object Dev extends TopLevel[Dev with Double]
+  @js.native
+  sealed trait Beta
+    extends StObject
+       with EUniverse
+  /* 2 */ val Beta: typingsJapgolly.steamClient.mod.EUniverse.Beta & Double = js.native
   
-  /* 3 */ @js.native
-  object Internal extends TopLevel[Internal with Double]
+  @js.native
+  sealed trait Dev
+    extends StObject
+       with EUniverse
+  /* 4 */ val Dev: typingsJapgolly.steamClient.mod.EUniverse.Dev & Double = js.native
   
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  @js.native
+  sealed trait Internal
+    extends StObject
+       with EUniverse
+  /* 3 */ val Internal: typingsJapgolly.steamClient.mod.EUniverse.Internal & Double = js.native
   
-  /* 5 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with EUniverse
+  /* 0 */ val Invalid: typingsJapgolly.steamClient.mod.EUniverse.Invalid & Double = js.native
   
-  /* 1 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EUniverse
+  /* 5 */ val Max: typingsJapgolly.steamClient.mod.EUniverse.Max & Double = js.native
   
+  @js.native
+  sealed trait Public
+    extends StObject
+       with EUniverse
+  /* 1 */ val Public: typingsJapgolly.steamClient.mod.EUniverse.Public & Double = js.native
 }
-

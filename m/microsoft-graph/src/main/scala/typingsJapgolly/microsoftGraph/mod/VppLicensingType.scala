@@ -1,26 +1,32 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VppLicensingType extends js.Object {
+trait VppLicensingType extends StObject {
+  
   // Whether the program supports the device licensing type.
   var supportsDeviceLicensing: js.UndefOr[Boolean] = js.undefined
+  
   // Whether the program supports the user licensing type.
   var supportsUserLicensing: js.UndefOr[Boolean] = js.undefined
 }
-
 object VppLicensingType {
-  @scala.inline
-  def apply(
-    supportsDeviceLicensing: js.UndefOr[Boolean] = js.undefined,
-    supportsUserLicensing: js.UndefOr[Boolean] = js.undefined
-  ): VppLicensingType = {
+  
+  inline def apply(): VppLicensingType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(supportsDeviceLicensing)) __obj.updateDynamic("supportsDeviceLicensing")(supportsDeviceLicensing.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportsUserLicensing)) __obj.updateDynamic("supportsUserLicensing")(supportsUserLicensing.asInstanceOf[js.Any])
     __obj.asInstanceOf[VppLicensingType]
   }
+  
+  extension [Self <: VppLicensingType](x: Self) {
+    
+    inline def setSupportsDeviceLicensing(value: Boolean): Self = StObject.set(x, "supportsDeviceLicensing", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsDeviceLicensingUndefined: Self = StObject.set(x, "supportsDeviceLicensing", js.undefined)
+    
+    inline def setSupportsUserLicensing(value: Boolean): Self = StObject.set(x, "supportsUserLicensing", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsUserLicensingUndefined: Self = StObject.set(x, "supportsUserLicensing", js.undefined)
+  }
 }
-

@@ -1,23 +1,26 @@
 package typingsJapgolly.log4js.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CustomAppender
-  extends /* key */ StringDictionary[js.Any]
-     with Appender {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var `type`: String | AppenderModule
 }
-
 object CustomAppender {
-  @scala.inline
-  def apply(`type`: String | AppenderModule, StringDictionary: /* key */ StringDictionary[js.Any] = null): CustomAppender = {
+  
+  inline def apply(`type`: String | AppenderModule): CustomAppender = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CustomAppender]
   }
+  
+  extension [Self <: CustomAppender](x: Self) {
+    
+    inline def setType(value: String | AppenderModule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

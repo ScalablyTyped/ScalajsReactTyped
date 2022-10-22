@@ -1,20 +1,28 @@
 package typingsJapgolly.sparqljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Ordering extends js.Object {
+trait Ordering extends StObject {
+  
   var descending: js.UndefOr[Boolean] = js.undefined
+  
   var expression: Expression
 }
-
 object Ordering {
-  @scala.inline
-  def apply(expression: Expression, descending: js.UndefOr[Boolean] = js.undefined): Ordering = {
+  
+  inline def apply(expression: Expression): Ordering = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ordering]
   }
+  
+  extension [Self <: Ordering](x: Self) {
+    
+    inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    
+    inline def setDescendingUndefined: Self = StObject.set(x, "descending", js.undefined)
+    
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+  }
 }
-

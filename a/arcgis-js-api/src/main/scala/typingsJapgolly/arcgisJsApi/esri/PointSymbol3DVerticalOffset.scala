@@ -1,55 +1,61 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.HashMap
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointSymbol3DVerticalOffset extends AnonymousAccessor {
+trait PointSymbol3DVerticalOffset
+  extends StObject
+     with AnonymousAccessor {
+  
   /**
-    * The maximum vertical symbol offset in world units. It acts as an upper bound to avoid vertical offset becoming too big.  In the following animation the green symbols have `maxWorldLength = 50` and orange symbols don't have `maxWorldLength` set:  ![maxWorldLength](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3D-line-callout-maxWorldLength.gif)
+    * The maximum vertical symbol offset in world units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
   var maxWorldLength: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The minimum vertical symbol offset in world units. It acts as a lower bound to avoid vertical offset becoming too small.  In the following animation the green symbol on the left has `minWorldLength = 20` and for the orange symbol on the right `minWorldLength` has not been set:  ![minWorldLength-on](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols3D-line-callout-minWorldLength.gif)
+    * The minimum vertical symbol offset in world units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
   var minWorldLength: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The vertical symbol offset in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
+    * The vertical symbol offset in points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PointSymbol3D.html#verticalOffset)
     */
   var screenLength: Double
 }
-
 object PointSymbol3DVerticalOffset {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     screenLength: Double,
-    get: /* propertyName */ String => CallbackTo[js.Any] = null,
-    maxWorldLength: Int | Double = null,
-    minWorldLength: Int | Double = null,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, PointSymbol3DVerticalOffset]) with (js.Function1[/* props */ HashMap[_], PointSymbol3DVerticalOffset]) = null,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => CallbackTo[WatchHandle] = null
+    set: (js.UndefOr[
+      js.Function2[/* propertyName */ String, /* value */ Any, PointSymbol3DVerticalOffset]
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], PointSymbol3DVerticalOffset]])
   ): PointSymbol3DVerticalOffset = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], screenLength = screenLength.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1((t0: /* propertyName */ java.lang.String) => get(t0).runNow()))
-    if (maxWorldLength != null) __obj.updateDynamic("maxWorldLength")(maxWorldLength.asInstanceOf[js.Any])
-    if (minWorldLength != null) __obj.updateDynamic("minWorldLength")(minWorldLength.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3((t0: /* path */ java.lang.String | js.Array[java.lang.String], t1: /* callback */ typingsJapgolly.arcgisJsApi.esri.WatchCallback, t2: /* sync */ js.UndefOr[scala.Boolean]) => watch(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), screenLength = screenLength.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointSymbol3DVerticalOffset]
   }
+  
+  extension [Self <: PointSymbol3DVerticalOffset](x: Self) {
+    
+    inline def setMaxWorldLength(value: Double): Self = StObject.set(x, "maxWorldLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWorldLengthUndefined: Self = StObject.set(x, "maxWorldLength", js.undefined)
+    
+    inline def setMinWorldLength(value: Double): Self = StObject.set(x, "minWorldLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinWorldLengthUndefined: Self = StObject.set(x, "minWorldLength", js.undefined)
+    
+    inline def setScreenLength(value: Double): Self = StObject.set(x, "screenLength", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.nextServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("next-server/config", JSImport.Namespace)
-@js.native
-object configMod extends js.Object {
-  def default(): js.Any = js.native
+object configMod {
+  
+  @JSImport("next-server/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Any]
 }
-

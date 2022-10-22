@@ -10,10 +10,10 @@ Persistence layer for redux with flexible backends
 | ------------------ | :-------------: |
 | Full name          | redux-storage |
 | Keywords           | redux, redux-middleware, fsa, flux-standard-action, flux, immutable, persistent, data, localstorage |
-| # releases         | 1 |
-| # dependents       | 10 |
-| # downloads        | 408445 |
-| # stars            | 9 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 25526.0 |
+| # stars            | 217.0 |
 
 ## Links
 - [Homepage](https://github.com/react-stack/redux-storage)

@@ -10,10 +10,10 @@ Wrapper around libsass
 | ------------------ | :-------------: |
 | Full name          | node-sass |
 | Keywords           | css, libsass, preprocessor, sass, scss, style |
-| # releases         | 13 |
-| # dependents       | 6057 |
-| # downloads        | 186588604 |
-| # stars            | 261 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4335430333333334E7 |
+| # stars            | 8214.0 |
 
 ## Links
 - [Homepage](https://github.com/sass/node-sass)

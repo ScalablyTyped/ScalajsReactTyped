@@ -1,12 +1,14 @@
 package typingsJapgolly.detectEmojiSupport
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("detect-emoji-support", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def emojiSupport(): Boolean = js.native
+object mod {
+  
+  @JSImport("detect-emoji-support", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def emojiSupport(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("emojiSupport")().asInstanceOf[Boolean]
 }
-

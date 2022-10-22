@@ -1,14 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IndexedAccessTypeNode extends TypeNode {
-  var indexType: TypeNode = js.native
+trait IndexedAccessTypeNode
+  extends StObject
+     with TypeNode {
+  
+  val indexType: TypeNode = js.native
+  
   @JSName("kind")
-  var kind_IndexedAccessTypeNode: typingsJapgolly.typescript.mod.SyntaxKind.IndexedAccessType = js.native
-  var objectType: TypeNode = js.native
+  val kind_IndexedAccessTypeNode: typingsJapgolly.typescript.mod.SyntaxKind.IndexedAccessType = js.native
+  
+  val objectType: TypeNode = js.native
 }
-

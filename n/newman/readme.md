@@ -1,7 +1,7 @@
 
 # Scala.js typings for newman
 
-Typings are for version 4.5
+Typings are for version 5.3
 
 ## Library description:
 Command-line companion utility for Postman
@@ -10,10 +10,10 @@ Command-line companion utility for Postman
 | ------------------ | :-------------: |
 | Full name          | newman |
 | Keywords           | newman, postman, api, testing, ci, rest-client, rest |
-| # releases         | 29 |
-| # dependents       | 52 |
-| # downloads        | 5375947 |
-| # stars            | 118 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1909631.6666666667 |
+| # stars            | 5921.0 |
 
 ## Links
 - [Homepage](https://github.com/postmanlabs/newman)

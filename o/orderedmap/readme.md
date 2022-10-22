@@ -1,7 +1,7 @@
 
 # Scala.js typings for orderedmap
 
-Typings are for version 1.0
+Typings are for version 2.0.0
 
 ## Library description:
 Persistent ordered mapping from strings
@@ -10,10 +10,10 @@ Persistent ordered mapping from strings
 | ------------------ | :-------------: |
 | Full name          | orderedmap |
 | Keywords           | persistent, map |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 2356290 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2090277.3333333333 |
+| # stars            | 23.0 |
 
 ## Links
 - [Homepage](https://github.com/marijnh/orderedmap#readme)
@@ -24,7 +24,7 @@ Persistent ordered mapping from strings
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

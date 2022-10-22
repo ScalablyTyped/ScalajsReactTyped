@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.currentTimeTick
@@ -24,46 +24,42 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.timechange
   - typingsJapgolly.vis.visStrings.timechanged
 */
-trait TimelineEvents extends js.Object
-
+trait TimelineEvents extends StObject
 object TimelineEvents {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def changed: typingsJapgolly.vis.visStrings.changed = this.cast("changed")
-  @scala.inline
-  def click: typingsJapgolly.vis.visStrings.click = this.cast("click")
-  @scala.inline
-  def contextmenu: typingsJapgolly.vis.visStrings.contextmenu = this.cast("contextmenu")
-  @scala.inline
-  def currentTimeTick: typingsJapgolly.vis.visStrings.currentTimeTick = this.cast("currentTimeTick")
-  @scala.inline
-  def doubleClick: typingsJapgolly.vis.visStrings.doubleClick = this.cast("doubleClick")
-  @scala.inline
-  def drop: typingsJapgolly.vis.visStrings.drop = this.cast("drop")
-  @scala.inline
-  def groupDragged: typingsJapgolly.vis.visStrings.groupDragged = this.cast("groupDragged")
-  @scala.inline
-  def itemout: typingsJapgolly.vis.visStrings.itemout = this.cast("itemout")
-  @scala.inline
-  def itemover: typingsJapgolly.vis.visStrings.itemover = this.cast("itemover")
-  @scala.inline
-  def mouseDown: typingsJapgolly.vis.visStrings.mouseDown = this.cast("mouseDown")
-  @scala.inline
-  def mouseMove: typingsJapgolly.vis.visStrings.mouseMove = this.cast("mouseMove")
-  @scala.inline
-  def mouseOver: typingsJapgolly.vis.visStrings.mouseOver = this.cast("mouseOver")
-  @scala.inline
-  def mouseUp: typingsJapgolly.vis.visStrings.mouseUp = this.cast("mouseUp")
-  @scala.inline
-  def rangechange: typingsJapgolly.vis.visStrings.rangechange = this.cast("rangechange")
-  @scala.inline
-  def rangechanged: typingsJapgolly.vis.visStrings.rangechanged = this.cast("rangechanged")
-  @scala.inline
-  def select: typingsJapgolly.vis.visStrings.select = this.cast("select")
-  @scala.inline
-  def timechange: typingsJapgolly.vis.visStrings.timechange = this.cast("timechange")
-  @scala.inline
-  def timechanged: typingsJapgolly.vis.visStrings.timechanged = this.cast("timechanged")
+  
+  inline def changed: typingsJapgolly.vis.visStrings.changed = "changed".asInstanceOf[typingsJapgolly.vis.visStrings.changed]
+  
+  inline def click: typingsJapgolly.vis.visStrings.click = "click".asInstanceOf[typingsJapgolly.vis.visStrings.click]
+  
+  inline def contextmenu: typingsJapgolly.vis.visStrings.contextmenu = "contextmenu".asInstanceOf[typingsJapgolly.vis.visStrings.contextmenu]
+  
+  inline def currentTimeTick: typingsJapgolly.vis.visStrings.currentTimeTick = "currentTimeTick".asInstanceOf[typingsJapgolly.vis.visStrings.currentTimeTick]
+  
+  inline def doubleClick: typingsJapgolly.vis.visStrings.doubleClick = "doubleClick".asInstanceOf[typingsJapgolly.vis.visStrings.doubleClick]
+  
+  inline def drop: typingsJapgolly.vis.visStrings.drop = "drop".asInstanceOf[typingsJapgolly.vis.visStrings.drop]
+  
+  inline def groupDragged: typingsJapgolly.vis.visStrings.groupDragged = "groupDragged".asInstanceOf[typingsJapgolly.vis.visStrings.groupDragged]
+  
+  inline def itemout: typingsJapgolly.vis.visStrings.itemout = "itemout".asInstanceOf[typingsJapgolly.vis.visStrings.itemout]
+  
+  inline def itemover: typingsJapgolly.vis.visStrings.itemover = "itemover".asInstanceOf[typingsJapgolly.vis.visStrings.itemover]
+  
+  inline def mouseDown: typingsJapgolly.vis.visStrings.mouseDown = "mouseDown".asInstanceOf[typingsJapgolly.vis.visStrings.mouseDown]
+  
+  inline def mouseMove: typingsJapgolly.vis.visStrings.mouseMove = "mouseMove".asInstanceOf[typingsJapgolly.vis.visStrings.mouseMove]
+  
+  inline def mouseOver: typingsJapgolly.vis.visStrings.mouseOver = "mouseOver".asInstanceOf[typingsJapgolly.vis.visStrings.mouseOver]
+  
+  inline def mouseUp: typingsJapgolly.vis.visStrings.mouseUp = "mouseUp".asInstanceOf[typingsJapgolly.vis.visStrings.mouseUp]
+  
+  inline def rangechange: typingsJapgolly.vis.visStrings.rangechange = "rangechange".asInstanceOf[typingsJapgolly.vis.visStrings.rangechange]
+  
+  inline def rangechanged: typingsJapgolly.vis.visStrings.rangechanged = "rangechanged".asInstanceOf[typingsJapgolly.vis.visStrings.rangechanged]
+  
+  inline def select: typingsJapgolly.vis.visStrings.select = "select".asInstanceOf[typingsJapgolly.vis.visStrings.select]
+  
+  inline def timechange: typingsJapgolly.vis.visStrings.timechange = "timechange".asInstanceOf[typingsJapgolly.vis.visStrings.timechange]
+  
+  inline def timechanged: typingsJapgolly.vis.visStrings.timechanged = "timechanged".asInstanceOf[typingsJapgolly.vis.visStrings.timechanged]
 }
-

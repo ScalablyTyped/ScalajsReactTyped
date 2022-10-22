@@ -1,7 +1,7 @@
 
 # Scala.js typings for multiaddr
 
-Typings are for version 7.2
+Typings are for version 10.0.1
 
 ## Library description:
 multiaddr implementation (binary + string representation of network addresses)
@@ -10,10 +10,10 @@ multiaddr implementation (binary + string representation of network addresses)
 | ------------------ | :-------------: |
 | Full name          | multiaddr |
 | Keywords           | multiaddr, binary, string |
-| # releases         | 20 |
-| # dependents       | 102 |
-| # downloads        | 1255776 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 605671.3333333334 |
+| # stars            | 92.0 |
 
 ## Links
 - [Homepage](https://github.com/multiformats/js-multiaddr)
@@ -24,7 +24,7 @@ multiaddr implementation (binary + string representation of network addresses)
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

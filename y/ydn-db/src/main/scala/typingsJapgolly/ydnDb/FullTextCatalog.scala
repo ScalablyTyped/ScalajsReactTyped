@@ -1,21 +1,32 @@
 package typingsJapgolly.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FullTextCatalog extends js.Object {
+trait FullTextCatalog extends StObject {
+  
   var lang: String
+  
   var name: String
+  
   var sources: js.Array[FullTextSource]
 }
-
 object FullTextCatalog {
-  @scala.inline
-  def apply(lang: String, name: String, sources: js.Array[FullTextSource]): FullTextCatalog = {
-    val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
   
+  inline def apply(lang: String, name: String, sources: js.Array[FullTextSource]): FullTextCatalog = {
+    val __obj = js.Dynamic.literal(lang = lang.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullTextCatalog]
   }
+  
+  extension [Self <: FullTextCatalog](x: Self) {
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSources(value: js.Array[FullTextSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    
+    inline def setSourcesVarargs(value: FullTextSource*): Self = StObject.set(x, "sources", js.Array(value*))
+  }
 }
-

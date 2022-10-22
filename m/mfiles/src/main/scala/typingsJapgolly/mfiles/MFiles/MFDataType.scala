@@ -1,71 +1,67 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`10`
-import typingsJapgolly.mfiles.mfilesNumbers.`11`
-import typingsJapgolly.mfiles.mfilesNumbers.`12`
-import typingsJapgolly.mfiles.mfilesNumbers.`13`
-import typingsJapgolly.mfiles.mfilesNumbers.`14`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`5`
-import typingsJapgolly.mfiles.mfilesNumbers.`6`
-import typingsJapgolly.mfiles.mfilesNumbers.`7`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
-import typingsJapgolly.mfiles.mfilesNumbers.`9`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`10`
+import typingsJapgolly.mfiles.mfilesInts.`11`
+import typingsJapgolly.mfiles.mfilesInts.`12`
+import typingsJapgolly.mfiles.mfilesInts.`13`
+import typingsJapgolly.mfiles.mfilesInts.`14`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`5`
+import typingsJapgolly.mfiles.mfilesInts.`6`
+import typingsJapgolly.mfiles.mfilesInts.`7`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import typingsJapgolly.mfiles.mfilesInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`5`
-  - typingsJapgolly.mfiles.mfilesNumbers.`6`
-  - typingsJapgolly.mfiles.mfilesNumbers.`7`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`9`
-  - typingsJapgolly.mfiles.mfilesNumbers.`10`
-  - typingsJapgolly.mfiles.mfilesNumbers.`11`
-  - typingsJapgolly.mfiles.mfilesNumbers.`12`
-  - typingsJapgolly.mfiles.mfilesNumbers.`13`
-  - typingsJapgolly.mfiles.mfilesNumbers.`14`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`5`
+  - typingsJapgolly.mfiles.mfilesInts.`6`
+  - typingsJapgolly.mfiles.mfilesInts.`7`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`9`
+  - typingsJapgolly.mfiles.mfilesInts.`10`
+  - typingsJapgolly.mfiles.mfilesInts.`11`
+  - typingsJapgolly.mfiles.mfilesInts.`12`
+  - typingsJapgolly.mfiles.mfilesInts.`13`
+  - typingsJapgolly.mfiles.mfilesInts.`14`
 */
-trait MFDataType extends js.Object
-
+trait MFDataType extends StObject
 object MFDataType {
-  @scala.inline
-  def ACL: `14` = this.cast(14)
-  @scala.inline
-  def Boolean: `8` = this.cast(8)
-  @scala.inline
-  def Date: `5` = this.cast(5)
-  @scala.inline
-  def FILETIME: `12` = this.cast(12)
-  @scala.inline
-  def Floating: `3` = this.cast(3)
-  @scala.inline
-  def Integer: `2` = this.cast(2)
-  @scala.inline
-  def Integer64: `11` = this.cast(11)
-  @scala.inline
-  def Lookup: `9` = this.cast(9)
-  @scala.inline
-  def MultiLineText: `13` = this.cast(13)
-  @scala.inline
-  def MultiSelectLookup: `10` = this.cast(10)
-  @scala.inline
-  def Text: `1` = this.cast(1)
-  @scala.inline
-  def Time: `6` = this.cast(6)
-  @scala.inline
-  def Timestamp: `7` = this.cast(7)
-  @scala.inline
-  def Uninitialized: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ACL: `14` = 14.asInstanceOf[`14`]
+  
+  inline def Boolean: `8` = 8.asInstanceOf[`8`]
+  
+  inline def Date: `5` = 5.asInstanceOf[`5`]
+  
+  inline def FILETIME: `12` = 12.asInstanceOf[`12`]
+  
+  inline def Floating: `3` = 3.asInstanceOf[`3`]
+  
+  inline def Integer: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Integer64: `11` = 11.asInstanceOf[`11`]
+  
+  inline def Lookup: `9` = 9.asInstanceOf[`9`]
+  
+  inline def MultiLineText: `13` = 13.asInstanceOf[`13`]
+  
+  inline def MultiSelectLookup: `10` = 10.asInstanceOf[`10`]
+  
+  inline def Text: `1` = 1.asInstanceOf[`1`]
+  
+  inline def Time: `6` = 6.asInstanceOf[`6`]
+  
+  inline def Timestamp: `7` = 7.asInstanceOf[`7`]
+  
+  inline def Uninitialized: `0` = 0.asInstanceOf[`0`]
 }
-

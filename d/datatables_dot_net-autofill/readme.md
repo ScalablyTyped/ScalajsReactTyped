@@ -9,11 +9,11 @@ AutoFill for DataTables
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | datatables.net-autofill |
-| Keywords           | autofill, excel, DataTables, jQuery, table, DataTables |
+| Keywords           | AutoFill, Excel, Datatables, jQuery, table, filter, sort |
 | # releases         | 6 |
-| # dependents       | 7 |
-| # downloads        | 184298 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 115512.33333333333 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://datatables.net)

@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.CRLRefs")
 @js.native
-class CRLRefs ()
-  extends typingsJapgolly.xadesjs.xmlMod.CRLRefs
-
+open class CRLRefs ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.CRLRefs {
+  def this(properties: js.Object) = this()
+}

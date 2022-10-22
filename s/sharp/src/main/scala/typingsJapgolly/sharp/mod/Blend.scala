@@ -1,8 +1,8 @@
 package typingsJapgolly.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.sharp.sharpStrings.clear
@@ -24,67 +24,69 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.sharp.sharpStrings.overlay
   - typingsJapgolly.sharp.sharpStrings.darken
   - typingsJapgolly.sharp.sharpStrings.lighten
+  - typingsJapgolly.sharp.sharpStrings.`color-dodge`
   - typingsJapgolly.sharp.sharpStrings.`colour-dodge`
+  - typingsJapgolly.sharp.sharpStrings.`color-burn`
   - typingsJapgolly.sharp.sharpStrings.`colour-burn`
   - typingsJapgolly.sharp.sharpStrings.`hard-light`
   - typingsJapgolly.sharp.sharpStrings.`soft-light`
   - typingsJapgolly.sharp.sharpStrings.difference
   - typingsJapgolly.sharp.sharpStrings.exclusion
 */
-trait Blend extends js.Object
-
+trait Blend extends StObject
 object Blend {
-  @scala.inline
-  def add: typingsJapgolly.sharp.sharpStrings.add = this.cast("add")
-  @scala.inline
-  def atop: typingsJapgolly.sharp.sharpStrings.atop = this.cast("atop")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clear: typingsJapgolly.sharp.sharpStrings.clear = this.cast("clear")
-  @scala.inline
-  def `colour-burn`: typingsJapgolly.sharp.sharpStrings.`colour-burn` = this.cast("colour-burn")
-  @scala.inline
-  def `colour-dodge`: typingsJapgolly.sharp.sharpStrings.`colour-dodge` = this.cast("colour-dodge")
-  @scala.inline
-  def darken: typingsJapgolly.sharp.sharpStrings.darken = this.cast("darken")
-  @scala.inline
-  def dest: typingsJapgolly.sharp.sharpStrings.dest = this.cast("dest")
-  @scala.inline
-  def `dest-atop`: typingsJapgolly.sharp.sharpStrings.`dest-atop` = this.cast("dest-atop")
-  @scala.inline
-  def `dest-in`: typingsJapgolly.sharp.sharpStrings.`dest-in` = this.cast("dest-in")
-  @scala.inline
-  def `dest-out`: typingsJapgolly.sharp.sharpStrings.`dest-out` = this.cast("dest-out")
-  @scala.inline
-  def `dest-over`: typingsJapgolly.sharp.sharpStrings.`dest-over` = this.cast("dest-over")
-  @scala.inline
-  def difference: typingsJapgolly.sharp.sharpStrings.difference = this.cast("difference")
-  @scala.inline
-  def exclusion: typingsJapgolly.sharp.sharpStrings.exclusion = this.cast("exclusion")
-  @scala.inline
-  def `hard-light`: typingsJapgolly.sharp.sharpStrings.`hard-light` = this.cast("hard-light")
-  @scala.inline
-  def in: typingsJapgolly.sharp.sharpStrings.in = this.cast("in")
-  @scala.inline
-  def lighten: typingsJapgolly.sharp.sharpStrings.lighten = this.cast("lighten")
-  @scala.inline
-  def multiply: typingsJapgolly.sharp.sharpStrings.multiply = this.cast("multiply")
-  @scala.inline
-  def out: typingsJapgolly.sharp.sharpStrings.out = this.cast("out")
-  @scala.inline
-  def over: typingsJapgolly.sharp.sharpStrings.over = this.cast("over")
-  @scala.inline
-  def overlay: typingsJapgolly.sharp.sharpStrings.overlay = this.cast("overlay")
-  @scala.inline
-  def saturate: typingsJapgolly.sharp.sharpStrings.saturate = this.cast("saturate")
-  @scala.inline
-  def screen: typingsJapgolly.sharp.sharpStrings.screen = this.cast("screen")
-  @scala.inline
-  def `soft-light`: typingsJapgolly.sharp.sharpStrings.`soft-light` = this.cast("soft-light")
-  @scala.inline
-  def source: typingsJapgolly.sharp.sharpStrings.source = this.cast("source")
-  @scala.inline
-  def xor: typingsJapgolly.sharp.sharpStrings.xor = this.cast("xor")
+  
+  inline def add: typingsJapgolly.sharp.sharpStrings.add = "add".asInstanceOf[typingsJapgolly.sharp.sharpStrings.add]
+  
+  inline def atop: typingsJapgolly.sharp.sharpStrings.atop = "atop".asInstanceOf[typingsJapgolly.sharp.sharpStrings.atop]
+  
+  inline def clear: typingsJapgolly.sharp.sharpStrings.clear = "clear".asInstanceOf[typingsJapgolly.sharp.sharpStrings.clear]
+  
+  inline def `color-burn`: typingsJapgolly.sharp.sharpStrings.`color-burn` = "color-burn".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`color-burn`]
+  
+  inline def `color-dodge`: typingsJapgolly.sharp.sharpStrings.`color-dodge` = "color-dodge".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`color-dodge`]
+  
+  inline def `colour-burn`: typingsJapgolly.sharp.sharpStrings.`colour-burn` = "colour-burn".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`colour-burn`]
+  
+  inline def `colour-dodge`: typingsJapgolly.sharp.sharpStrings.`colour-dodge` = "colour-dodge".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`colour-dodge`]
+  
+  inline def darken: typingsJapgolly.sharp.sharpStrings.darken = "darken".asInstanceOf[typingsJapgolly.sharp.sharpStrings.darken]
+  
+  inline def dest: typingsJapgolly.sharp.sharpStrings.dest = "dest".asInstanceOf[typingsJapgolly.sharp.sharpStrings.dest]
+  
+  inline def `dest-atop`: typingsJapgolly.sharp.sharpStrings.`dest-atop` = "dest-atop".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`dest-atop`]
+  
+  inline def `dest-in`: typingsJapgolly.sharp.sharpStrings.`dest-in` = "dest-in".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`dest-in`]
+  
+  inline def `dest-out`: typingsJapgolly.sharp.sharpStrings.`dest-out` = "dest-out".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`dest-out`]
+  
+  inline def `dest-over`: typingsJapgolly.sharp.sharpStrings.`dest-over` = "dest-over".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`dest-over`]
+  
+  inline def difference: typingsJapgolly.sharp.sharpStrings.difference = "difference".asInstanceOf[typingsJapgolly.sharp.sharpStrings.difference]
+  
+  inline def exclusion: typingsJapgolly.sharp.sharpStrings.exclusion = "exclusion".asInstanceOf[typingsJapgolly.sharp.sharpStrings.exclusion]
+  
+  inline def `hard-light`: typingsJapgolly.sharp.sharpStrings.`hard-light` = "hard-light".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`hard-light`]
+  
+  inline def in: typingsJapgolly.sharp.sharpStrings.in = "in".asInstanceOf[typingsJapgolly.sharp.sharpStrings.in]
+  
+  inline def lighten: typingsJapgolly.sharp.sharpStrings.lighten = "lighten".asInstanceOf[typingsJapgolly.sharp.sharpStrings.lighten]
+  
+  inline def multiply: typingsJapgolly.sharp.sharpStrings.multiply = "multiply".asInstanceOf[typingsJapgolly.sharp.sharpStrings.multiply]
+  
+  inline def out: typingsJapgolly.sharp.sharpStrings.out = "out".asInstanceOf[typingsJapgolly.sharp.sharpStrings.out]
+  
+  inline def over: typingsJapgolly.sharp.sharpStrings.over = "over".asInstanceOf[typingsJapgolly.sharp.sharpStrings.over]
+  
+  inline def overlay: typingsJapgolly.sharp.sharpStrings.overlay = "overlay".asInstanceOf[typingsJapgolly.sharp.sharpStrings.overlay]
+  
+  inline def saturate: typingsJapgolly.sharp.sharpStrings.saturate = "saturate".asInstanceOf[typingsJapgolly.sharp.sharpStrings.saturate]
+  
+  inline def screen: typingsJapgolly.sharp.sharpStrings.screen = "screen".asInstanceOf[typingsJapgolly.sharp.sharpStrings.screen]
+  
+  inline def `soft-light`: typingsJapgolly.sharp.sharpStrings.`soft-light` = "soft-light".asInstanceOf[typingsJapgolly.sharp.sharpStrings.`soft-light`]
+  
+  inline def source: typingsJapgolly.sharp.sharpStrings.source = "source".asInstanceOf[typingsJapgolly.sharp.sharpStrings.source]
+  
+  inline def xor: typingsJapgolly.sharp.sharpStrings.xor = "xor".asInstanceOf[typingsJapgolly.sharp.sharpStrings.xor]
 }
-

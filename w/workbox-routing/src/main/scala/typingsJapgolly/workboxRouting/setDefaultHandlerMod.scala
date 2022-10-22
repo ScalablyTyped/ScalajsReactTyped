@@ -1,13 +1,15 @@
 package typingsJapgolly.workboxRouting
 
-import typingsJapgolly.workboxRouting.routeHandlerMod.RouteHandler
+import typingsJapgolly.workboxRouting.typesRouteHandlerMod.RouteHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-routing/setDefaultHandler", JSImport.Namespace)
-@js.native
-object setDefaultHandlerMod extends js.Object {
-  def setDefaultHandler(handler: RouteHandler): Unit = js.native
+object setDefaultHandlerMod {
+  
+  @JSImport("workbox-routing/setDefaultHandler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def setDefaultHandler(handler: RouteHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

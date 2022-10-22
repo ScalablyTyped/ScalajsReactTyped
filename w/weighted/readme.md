@@ -1,6 +1,7 @@
 
 # Scala.js typings for weighted
 
+Typings are for version 0.3
 
 ## Library description:
 A dead-simple module for picking a random item with weights.
@@ -9,13 +10,13 @@ A dead-simple module for picking a random item with weights.
 | ------------------ | :-------------: |
 | Full name          | weighted |
 | Keywords           | simple, random, weighted, weights, ai, bot |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 86265 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29764.666666666668 |
+| # stars            | 52.0 |
 
 ## Links
-- [Homepage](https://github.com/Schoonology/weighted)
+- [Homepage](https://github.com/Schoonology/weighted#readme)
 - [Bugs](https://github.com/Schoonology/weighted/issues)
 - [Repository](https://github.com/Schoonology/weighted)
 - [Npm](https://www.npmjs.com/package/weighted)

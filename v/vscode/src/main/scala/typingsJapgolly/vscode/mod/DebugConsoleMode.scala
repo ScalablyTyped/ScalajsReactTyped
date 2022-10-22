@@ -1,36 +1,34 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DebugConsoleMode extends js.Object
-
+sealed trait DebugConsoleMode extends StObject
 @JSImport("vscode", "DebugConsoleMode")
 @js.native
-object DebugConsoleMode extends js.Object {
-  /**
-  		 * Debug session should share debug console with its parent session.
-  		 * This value has no effect for sessions which do not have a parent session.
-  		 */
-  @js.native
-  sealed trait MergeWithParent extends DebugConsoleMode
-  
-  /**
-  		 * Debug session should have a separate debug console.
-  		 */
-  @js.native
-  sealed trait Separate extends DebugConsoleMode
+object DebugConsoleMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DebugConsoleMode with Double] = js.native
-  /* 1 */ @js.native
-  object MergeWithParent extends TopLevel[MergeWithParent with Double]
+  def apply(value: Double): js.UndefOr[DebugConsoleMode & Double] = js.native
   
-  /* 0 */ @js.native
-  object Separate extends TopLevel[Separate with Double]
+  /**
+    * Debug session should share debug console with its parent session.
+    * This value has no effect for sessions which do not have a parent session.
+    */
+  @js.native
+  sealed trait MergeWithParent
+    extends StObject
+       with DebugConsoleMode
+  /* 1 */ val MergeWithParent: typingsJapgolly.vscode.mod.DebugConsoleMode.MergeWithParent & Double = js.native
   
+  /**
+    * Debug session should have a separate debug console.
+    */
+  @js.native
+  sealed trait Separate
+    extends StObject
+       with DebugConsoleMode
+  /* 0 */ val Separate: typingsJapgolly.vscode.mod.DebugConsoleMode.Separate & Double = js.native
 }
-

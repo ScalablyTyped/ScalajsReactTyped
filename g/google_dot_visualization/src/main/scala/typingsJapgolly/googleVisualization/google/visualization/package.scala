@@ -1,9 +1,13 @@
-package typingsJapgolly.googleVisualization.google
+package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object visualization {
-  type Properties = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+type ArrowFormat = DefaultFormatter
+
+type BarFormat = DefaultFormatter
+
+type Properties = StringDictionary[Any]

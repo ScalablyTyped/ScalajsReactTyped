@@ -1,49 +1,40 @@
 package typingsJapgolly.mcustomscrollbar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mcustomscrollbarStrings {
-  @js.native
-  sealed trait auto extends js.Object
   
   @js.native
-  sealed trait inside extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait outside extends js.Object
+  sealed trait inside extends StObject
+  inline def inside: inside = "inside".asInstanceOf[inside]
   
   @js.native
-  sealed trait stepless extends js.Object
+  sealed trait outside extends StObject
+  inline def outside: outside = "outside".asInstanceOf[outside]
   
   @js.native
-  sealed trait stepped extends js.Object
+  sealed trait stepless extends StObject
+  inline def stepless: stepless = "stepless".asInstanceOf[stepless]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait stepped extends StObject
+  inline def stepped: stepped = "stepped".asInstanceOf[stepped]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait yx extends js.Object
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def inside: inside = "inside".asInstanceOf[inside]
-  @scala.inline
-  def outside: outside = "outside".asInstanceOf[outside]
-  @scala.inline
-  def stepless: stepless = "stepless".asInstanceOf[stepless]
-  @scala.inline
-  def stepped: stepped = "stepped".asInstanceOf[stepped]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def yx: yx = "yx".asInstanceOf[yx]
+  @js.native
+  sealed trait yx extends StObject
+  inline def yx: yx = "yx".asInstanceOf[yx]
 }
-

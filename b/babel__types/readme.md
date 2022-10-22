@@ -1,26 +1,8 @@
 
 # Scala.js typings for babel__types
 
-Typings are for version 7.8.3
+Typings are for version 7.19.4
 
-## Library description:
-Babel Types is a Lodash-esque utility library for AST nodes
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @babel/types |
-| Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 726 |
-| # downloads        | 569821962 |
-| # stars            | 1 |
-
-## Links
-- [Homepage](https://babeljs.io/)
-- [Bugs](https://github.com/babel/babel/issues)
-- [Repository](https://github.com/babel/babel)
-- [Npm](https://www.npmjs.com/package/%40babel%2Ftypes)
-    
 
 
 ## Note

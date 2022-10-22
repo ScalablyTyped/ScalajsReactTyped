@@ -1,7 +1,6 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.experimental.AbortSignal
+import org.scalajs.dom.AbortSignal
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`in-cubic`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`in-expo`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`in-out-coast-quadratic`
@@ -12,74 +11,97 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`out-expo`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.linear
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GoToOptions3D extends Object {
+trait GoToOptions3D
+  extends StObject
+     with Object {
+  
   /**
-    * Indicates if the transition to the new view should be animated. If set to false, `speedFactor`, `duration`, `maxDuration`, and `easing` properties are ignored.
+    * Indicates if the transition to the new view should be animated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Set the exact duration (in milliseconds) of the animation. Note that by default, animation duration is calculated based on the time required to reach the target at a constant speed. Setting duration overrides the speedFactor option. Note that the resulting duration is still limited to the maxDuration.
+    * Set the exact duration (in milliseconds) of the animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The easing function to use for the animation. This may either be a preset (named) function, or a user specified function. Supported named presets are: `linear`, `in-cubic`, `out-cubic`, `in-out-cubic`, `in-expo`, `out-expo`, `in-out-expo`, `in-out-coast-quadratic`. See [easing functions](https://easings.net/) for graphical representations of these functions.  By default, animations that are less than 1000 ms use the `out-expo` easing function; longer animations use the `in-out-coast-quadratic` easing function.
+    * The easing function to use for the animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var easing: js.UndefOr[
     linear | `in-cubic` | `out-cubic` | `in-out-cubic` | `in-expo` | `out-expo` | `in-out-expo` | `in-out-coast-quadratic` | EasingFunction
   ] = js.undefined
+  
   /**
-    * The maximum allowed duration (in milliseconds) of the animation. The default maxDuration value takes the specified speedFactor into account.
+    * The maximum allowed duration (in milliseconds) of the animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var maxDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation. If canceled, the promise will be rejected with an error named `AbortError`. See also [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController).
+    * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the animation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   /**
-    * Increases or decreases the animation speed by the specified factor. A speedFactor of 2 will make the animation twice as fast, while a speedFactor of 0.5 will make the animation half as fast. Setting the speed factor will automatically adapt the default maxDuration accordingly.
+    * Increases or decreases the animation speed by the specified factor.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#GoToOptions3D)
     */
   var speedFactor: js.UndefOr[Double] = js.undefined
 }
-
 object GoToOptions3D {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    easing: linear | `in-cubic` | `out-cubic` | `in-out-cubic` | `in-expo` | `out-expo` | `in-out-expo` | `in-out-coast-quadratic` | EasingFunction = null,
-    maxDuration: Int | Double = null,
-    signal: AbortSignal = null,
-    speedFactor: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): GoToOptions3D = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (maxDuration != null) __obj.updateDynamic("maxDuration")(maxDuration.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (speedFactor != null) __obj.updateDynamic("speedFactor")(speedFactor.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[GoToOptions3D]
   }
+  
+  extension [Self <: GoToOptions3D](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEasing(
+      value: linear | `in-cubic` | `out-cubic` | `in-out-cubic` | `in-expo` | `out-expo` | `in-out-expo` | `in-out-coast-quadratic` | EasingFunction
+    ): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    
+    inline def setEasingFunction2(value: (/* t */ Double, /* duration */ Double) => Double): Self = StObject.set(x, "easing", js.Any.fromFunction2(value))
+    
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setSpeedFactor(value: Double): Self = StObject.set(x, "speedFactor", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedFactorUndefined: Self = StObject.set(x, "speedFactor", js.undefined)
+  }
 }
-

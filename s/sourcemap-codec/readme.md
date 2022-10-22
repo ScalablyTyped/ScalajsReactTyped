@@ -1,7 +1,7 @@
 
 # Scala.js typings for sourcemap-codec
 
-Typings are for version 1.4.6
+Typings are for version 1.4.8
 
 ## Library description:
 Encode/decode sourcemap mappings
@@ -10,10 +10,10 @@ Encode/decode sourcemap mappings
 | ------------------ | :-------------: |
 | Full name          | sourcemap-codec |
 | Keywords           | sourcemap, vlq |
-| # releases         | 8 |
-| # dependents       | 41 |
-| # downloads        | 60482186 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.8644264E7 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/Rich-Harris/sourcemap-codec)

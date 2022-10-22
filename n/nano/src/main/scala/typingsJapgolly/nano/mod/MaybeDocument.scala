@@ -1,20 +1,17 @@
 package typingsJapgolly.nano.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MaybeDocument
-  extends MaybeIdentifiedDocument
+  extends StObject
+     with MaybeIdentifiedDocument
      with MaybeRevisionedDocument
-
 object MaybeDocument {
-  @scala.inline
-  def apply(_id: String = null, _rev: String = null): MaybeDocument = {
+  
+  inline def apply(): MaybeDocument = {
     val __obj = js.Dynamic.literal()
-    if (_id != null) __obj.updateDynamic("_id")(_id.asInstanceOf[js.Any])
-    if (_rev != null) __obj.updateDynamic("_rev")(_rev.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaybeDocument]
   }
 }
-

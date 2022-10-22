@@ -1,71 +1,69 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserStatuses extends js.Object
-
+sealed trait UserStatuses extends StObject
 @JSImport("voximplant-websdk", "UserStatuses")
 @js.native
-object UserStatuses extends js.Object {
-  /**
-  		*	User is away
-  		*/
-  @js.native
-  sealed trait Away extends UserStatuses
-  
-  /**
-  		*	User is available for chat
-  		*/
-  @js.native
-  sealed trait Chat extends UserStatuses
-  
-  /**
-  		*	User is in DND state (Do Not Disturbed)
-  		*/
-  @js.native
-  sealed trait DND extends UserStatuses
-  
-  /**
-  		*	User is offline
-  		*/
-  @js.native
-  sealed trait Offline extends UserStatuses
-  
-  /**
-  		*	User is online
-  		*/
-  @js.native
-  sealed trait Online extends UserStatuses
-  
-  /**
-  		*	User is in XA state (eXtended Away)
-  		*/
-  @js.native
-  sealed trait XA extends UserStatuses
+object UserStatuses extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserStatuses with Double] = js.native
-  /* 0 */ @js.native
-  object Away extends TopLevel[Away with Double]
+  def apply(value: Double): js.UndefOr[UserStatuses & Double] = js.native
   
-  /* 1 */ @js.native
-  object Chat extends TopLevel[Chat with Double]
+  /**
+    *    User is away
+    */
+  @js.native
+  sealed trait Away
+    extends StObject
+       with UserStatuses
+  /* 0 */ val Away: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.Away & Double = js.native
   
-  /* 2 */ @js.native
-  object DND extends TopLevel[DND with Double]
+  /**
+    *    User is available for chat
+    */
+  @js.native
+  sealed trait Chat
+    extends StObject
+       with UserStatuses
+  /* 1 */ val Chat: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.Chat & Double = js.native
   
-  /* 3 */ @js.native
-  object Offline extends TopLevel[Offline with Double]
+  /**
+    *    User is in DND state (Do Not Disturbed)
+    */
+  @js.native
+  sealed trait DND
+    extends StObject
+       with UserStatuses
+  /* 2 */ val DND: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.DND & Double = js.native
   
-  /* 4 */ @js.native
-  object Online extends TopLevel[Online with Double]
+  /**
+    *    User is offline
+    */
+  @js.native
+  sealed trait Offline
+    extends StObject
+       with UserStatuses
+  /* 3 */ val Offline: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.Offline & Double = js.native
   
-  /* 5 */ @js.native
-  object XA extends TopLevel[XA with Double]
+  /**
+    *    User is online
+    */
+  @js.native
+  sealed trait Online
+    extends StObject
+       with UserStatuses
+  /* 4 */ val Online: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.Online & Double = js.native
   
+  /**
+    *    User is in XA state (eXtended Away)
+    */
+  @js.native
+  sealed trait XA
+    extends StObject
+       with UserStatuses
+  /* 5 */ val XA: typingsJapgolly.voximplantWebsdk.mod.UserStatuses.XA & Double = js.native
 }
-

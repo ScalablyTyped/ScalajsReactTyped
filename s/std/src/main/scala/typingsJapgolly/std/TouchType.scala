@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.direct
   - typingsJapgolly.std.stdStrings.stylus
 */
-trait TouchType extends js.Object
-
+trait TouchType extends StObject
 object TouchType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def direct: typingsJapgolly.std.stdStrings.direct = this.cast("direct")
-  @scala.inline
-  def stylus: typingsJapgolly.std.stdStrings.stylus = this.cast("stylus")
+  
+  inline def direct: typingsJapgolly.std.stdStrings.direct = "direct".asInstanceOf[typingsJapgolly.std.stdStrings.direct]
+  
+  inline def stylus: typingsJapgolly.std.stdStrings.stylus = "stylus".asInstanceOf[typingsJapgolly.std.stdStrings.stylus]
 }
-

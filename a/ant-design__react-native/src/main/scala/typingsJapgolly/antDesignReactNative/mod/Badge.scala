@@ -1,19 +1,23 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonCorner
-import typingsJapgolly.antDesignReactNative.badgeMod.default
+import typingsJapgolly.antDesignReactNative.anon.Corner
+import typingsJapgolly.antDesignReactNative.libBadgeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Badge")
 @js.native
-class Badge () extends default
-
+open class Badge () extends default
 /* static members */
-@JSImport("@ant-design/react-native", "Badge")
-@js.native
-object Badge extends js.Object {
-  var defaultProps: AnonCorner = js.native
+object Badge {
+  
+  @JSImport("@ant-design/react-native", "Badge")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Badge.defaultProps")
+  @js.native
+  def defaultProps: Corner = js.native
+  inline def defaultProps_=(x: Corner): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

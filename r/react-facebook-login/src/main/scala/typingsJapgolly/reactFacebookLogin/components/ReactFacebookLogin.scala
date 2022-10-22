@@ -1,15 +1,16 @@
 package typingsJapgolly.reactFacebookLogin.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Component
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactFacebookLogin.mod.ReactFacebookFailureResponse
 import typingsJapgolly.reactFacebookLogin.mod.ReactFacebookLoginInfo
@@ -18,86 +19,84 @@ import typingsJapgolly.reactFacebookLogin.mod.default
 import typingsJapgolly.reactFacebookLogin.reactFacebookLoginStrings.medium
 import typingsJapgolly.reactFacebookLogin.reactFacebookLoginStrings.metro
 import typingsJapgolly.reactFacebookLogin.reactFacebookLoginStrings.small
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactFacebookLogin {
-  def apply(
-    appId: String,
-    callback: ReactFacebookLoginInfo => Callback,
-    authType: String = null,
-    autoLoad: js.UndefOr[Boolean] = js.undefined,
-    buttonStyle: CSSProperties = null,
-    containerStyle: CSSProperties = null,
-    cookie: js.UndefOr[Boolean] = js.undefined,
-    cssClass: String = null,
-    disableMobileRedirect: js.UndefOr[Boolean] = js.undefined,
-    fields: String = null,
-    icon: VdomNode = null,
-    isDisabled: js.UndefOr[Boolean] = js.undefined,
-    isMobile: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    onClick: /* event */ ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onFailure: /* response */ ReactFacebookFailureResponse => Callback = null,
-    reAuthenticate: js.UndefOr[Boolean] = js.undefined,
-    redirectUri: String = null,
-    responseType: String = null,
-    returnScopes: js.UndefOr[Boolean] = js.undefined,
-    scope: String = null,
-    size: small | medium | metro = null,
-    state: String = null,
-    tag: Node | (Component[js.Object, js.Object]) = null,
-    textButton: String = null,
-    typeButton: String = null,
-    version: String = null,
-    xfbml: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactFacebookLoginProps, default, Unit, ReactFacebookLoginProps] = {
-    val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: typingsJapgolly.reactFacebookLogin.mod.ReactFacebookLoginInfo) => callback(t0).runNow()))
-    if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoLoad)) __obj.updateDynamic("autoLoad")(autoLoad.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(cookie)) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMobileRedirect)) __obj.updateDynamic("disableMobileRedirect")(disableMobileRedirect.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onFailure != null) __obj.updateDynamic("onFailure")(js.Any.fromFunction1((t0: /* response */ typingsJapgolly.reactFacebookLogin.mod.ReactFacebookFailureResponse) => onFailure(t0).runNow()))
-    if (!js.isUndefined(reAuthenticate)) __obj.updateDynamic("reAuthenticate")(reAuthenticate.asInstanceOf[js.Any])
-    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnScopes)) __obj.updateDynamic("returnScopes")(returnScopes.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (textButton != null) __obj.updateDynamic("textButton")(textButton.asInstanceOf[js.Any])
-    if (typeButton != null) __obj.updateDynamic("typeButton")(typeButton.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (!js.isUndefined(xfbml)) __obj.updateDynamic("xfbml")(xfbml.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactFacebookLogin.mod.ReactFacebookLoginProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactFacebookLogin.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactFacebookLogin.mod.ReactFacebookLoginProps])(children: _*)
+  inline def apply(appId: String, callback: ReactFacebookFailureResponse | ReactFacebookLoginInfo => Callback): Builder = {
+    val __props = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], callback = js.Any.fromFunction1((t0: ReactFacebookFailureResponse | ReactFacebookLoginInfo) => callback(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReactFacebookLoginProps]))
   }
+  
   @JSImport("react-facebook-login", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def authType(value: String): this.type = set("authType", value.asInstanceOf[js.Any])
+    
+    inline def autoLoad(value: Boolean): this.type = set("autoLoad", value.asInstanceOf[js.Any])
+    
+    inline def buttonStyle(value: CSSProperties): this.type = set("buttonStyle", value.asInstanceOf[js.Any])
+    
+    inline def containerStyle(value: CSSProperties): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def cookie(value: Boolean): this.type = set("cookie", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def disableMobileRedirect(value: Boolean): this.type = set("disableMobileRedirect", value.asInstanceOf[js.Any])
+    
+    inline def fields(value: String): this.type = set("fields", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomNode): this.type = set("icon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def isDisabled(value: Boolean): this.type = set("isDisabled", value.asInstanceOf[js.Any])
+    
+    inline def isMobile(value: Boolean): this.type = set("isMobile", value.asInstanceOf[js.Any])
+    
+    inline def language(value: String): this.type = set("language", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* event */ ReactMouseEventFrom[HTMLDivElement] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def onFailure(value: /* response */ ReactFacebookFailureResponse => Callback): this.type = set("onFailure", js.Any.fromFunction1((t0: /* response */ ReactFacebookFailureResponse) => value(t0).runNow()))
+    
+    inline def reAuthenticate(value: Boolean): this.type = set("reAuthenticate", value.asInstanceOf[js.Any])
+    
+    inline def redirectUri(value: String): this.type = set("redirectUri", value.asInstanceOf[js.Any])
+    
+    inline def responseType(value: String): this.type = set("responseType", value.asInstanceOf[js.Any])
+    
+    inline def returnScopes(value: Boolean): this.type = set("returnScopes", value.asInstanceOf[js.Any])
+    
+    inline def scope(value: String): this.type = set("scope", value.asInstanceOf[js.Any])
+    
+    inline def size(value: small | medium | metro): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def state(value: String): this.type = set("state", value.asInstanceOf[js.Any])
+    
+    inline def tag(value: Node | (Component[Any & js.Object, js.Object])): this.type = set("tag", value.asInstanceOf[js.Any])
+    
+    inline def textButton(value: String): this.type = set("textButton", value.asInstanceOf[js.Any])
+    
+    inline def typeButton(value: String): this.type = set("typeButton", value.asInstanceOf[js.Any])
+    
+    inline def version(value: String): this.type = set("version", value.asInstanceOf[js.Any])
+    
+    inline def xfbml(value: Boolean): this.type = set("xfbml", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ReactFacebookLoginProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

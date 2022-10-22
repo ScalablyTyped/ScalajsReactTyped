@@ -1,14 +1,16 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsCore.backendMod.DataMover
+import typingsJapgolly.tensorflowTfjsCore.distBackendsBackendMod.DataMover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-node", "DataStorage")
 @js.native
-class DataStorage[T] protected ()
+open class DataStorage[T] protected ()
   extends typingsJapgolly.tensorflowTfjs.mod.DataStorage[T] {
-  def this(backend: typingsJapgolly.tensorflowTfjsCore.backendMod.KernelBackend, dataMover: DataMover) = this()
+  def this(
+    backend: typingsJapgolly.tensorflowTfjsCore.distBackendsBackendMod.KernelBackend,
+    dataMover: DataMover
+  ) = this()
 }
-

@@ -1,23 +1,24 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "BufferWriter")
 @js.native
 /** Constructs a new buffer writer instance. */
-class BufferWriter () extends Writer
-
+open class BufferWriter () extends Writer
 /* static members */
-@JSImport("@apollo/protobufjs", "BufferWriter")
-@js.native
-object BufferWriter extends js.Object {
+object BufferWriter {
+  
+  @JSImport("@apollo/protobufjs", "BufferWriter")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
-  def alloc(size: Double): scala.scalajs.js.typedarray.Uint8Array = js.native
+  inline def alloc(size: Double): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
 }
-

@@ -1,17 +1,21 @@
 package typingsJapgolly.mapboxGl.mod
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalajs.dom.WebGLRenderingContext
 import typingsJapgolly.mapboxGl.mapboxGlStrings.`2d`
 import typingsJapgolly.mapboxGl.mapboxGlStrings.`3d`
 import typingsJapgolly.mapboxGl.mapboxGlStrings.custom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomLayerInterface extends js.Object {
+trait CustomLayerInterface
+  extends StObject
+     with AnyLayer {
+  
   /** A unique layer id. */
   var id: String
+  
   /**
     * Optional method called when the layer has been added to the Map with Map#addLayer.
     * This gives the layer a chance to initialize gl resources and register event listeners.
@@ -19,6 +23,7 @@ trait CustomLayerInterface extends js.Object {
     * @param gl The gl context for the map.
     */
   var onAdd: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.undefined
+  
   /**
     * Optional method called when the layer has been removed from the Map with Map#removeLayer.
     * This gives the layer a chance to clean up gl resources and event listeners.
@@ -26,6 +31,7 @@ trait CustomLayerInterface extends js.Object {
     * @param gl The gl context for the map.
     */
   var onRemove: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.undefined
+  
   /**
     * Optional method called during a render frame to allow a layer to prepare resources
     * or render into a texture.
@@ -44,10 +50,7 @@ trait CustomLayerInterface extends js.Object {
   var prerender: js.UndefOr[
     js.Function2[/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double], Unit]
   ] = js.undefined
-  /* Either "2d" or "3d". Defaults to  "2d". */
-  var renderingMode: js.UndefOr[`2d` | `3d`] = js.undefined
-  /* The layer's type. Must be "custom". */
-  var `type`: custom
+  
   /**
     * Called during a render frame allowing the layer to draw into the GL context.
     *
@@ -73,27 +76,43 @@ trait CustomLayerInterface extends js.Object {
     *               coordinate.
     */
   def render(gl: WebGLRenderingContext, matrix: js.Array[Double]): Unit
+  
+  /* Either "2d" or "3d". Defaults to  "2d". */
+  var renderingMode: js.UndefOr[`2d` | `3d`] = js.undefined
+  
+  /* The layer's type. Must be "custom". */
+  var `type`: custom
 }
-
 object CustomLayerInterface {
-  @scala.inline
-  def apply(
-    id: String,
-    render: (WebGLRenderingContext, js.Array[Double]) => Callback,
-    `type`: custom,
-    onAdd: (/* map */ Map, /* gl */ WebGLRenderingContext) => Callback = null,
-    onRemove: (/* map */ Map, /* gl */ WebGLRenderingContext) => Callback = null,
-    prerender: (/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double]) => Callback = null,
-    renderingMode: `2d` | `3d` = null
-  ): CustomLayerInterface = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("render")(js.Any.fromFunction2((t0: org.scalajs.dom.raw.WebGLRenderingContext, t1: js.Array[scala.Double]) => render(t0, t1).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2((t0: /* map */ typingsJapgolly.mapboxGl.mod.Map, t1: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext) => onAdd(t0, t1).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2((t0: /* map */ typingsJapgolly.mapboxGl.mod.Map, t1: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext) => onRemove(t0, t1).runNow()))
-    if (prerender != null) __obj.updateDynamic("prerender")(js.Any.fromFunction2((t0: /* gl */ org.scalajs.dom.raw.WebGLRenderingContext, t1: /* matrix */ js.Array[scala.Double]) => prerender(t0, t1).runNow()))
-    if (renderingMode != null) __obj.updateDynamic("renderingMode")(renderingMode.asInstanceOf[js.Any])
+  
+  inline def apply(id: String, render: (WebGLRenderingContext, js.Array[Double]) => Callback): CustomLayerInterface = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], render = js.Any.fromFunction2((t0: WebGLRenderingContext, t1: js.Array[Double]) => (render(t0, t1)).runNow()))
+    __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[CustomLayerInterface]
   }
+  
+  extension [Self <: CustomLayerInterface](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setOnAdd(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Callback): Self = StObject.set(x, "onAdd", js.Any.fromFunction2((t0: /* map */ Map, t1: /* gl */ WebGLRenderingContext) => (value(t0, t1)).runNow()))
+    
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    
+    inline def setOnRemove(value: (/* map */ Map, /* gl */ WebGLRenderingContext) => Callback): Self = StObject.set(x, "onRemove", js.Any.fromFunction2((t0: /* map */ Map, t1: /* gl */ WebGLRenderingContext) => (value(t0, t1)).runNow()))
+    
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    
+    inline def setPrerender(value: (/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double]) => Callback): Self = StObject.set(x, "prerender", js.Any.fromFunction2((t0: /* gl */ WebGLRenderingContext, t1: /* matrix */ js.Array[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def setPrerenderUndefined: Self = StObject.set(x, "prerender", js.undefined)
+    
+    inline def setRender(value: (WebGLRenderingContext, js.Array[Double]) => Callback): Self = StObject.set(x, "render", js.Any.fromFunction2((t0: WebGLRenderingContext, t1: js.Array[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderingMode(value: `2d` | `3d`): Self = StObject.set(x, "renderingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRenderingModeUndefined: Self = StObject.set(x, "renderingMode", js.undefined)
+    
+    inline def setType(value: custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

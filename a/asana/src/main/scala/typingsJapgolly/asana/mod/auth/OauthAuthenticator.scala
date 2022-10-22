@@ -1,11 +1,13 @@
 package typingsJapgolly.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OauthAuthenticator extends Authenticator {
+trait OauthAuthenticator
+  extends StObject
+     with Authenticator {
+  
   /**
     * @param {Object} request The request to modify, for the `request` library.
     * @return {Object} The `request` parameter, modified to include authentication
@@ -15,8 +17,14 @@ trait OauthAuthenticator extends Authenticator {
     */
   def authenticateRequest(request: OauthAuthenticatorRequest): OauthAuthenticatorRequest
 }
-
-@JSImport("asana", "auth.OauthAuthenticator")
-@js.native
-object OauthAuthenticator extends TopLevel[OauthAuthenticatorStatic]
-
+object OauthAuthenticator {
+  
+  @JSImport("asana", "auth.OauthAuthenticator")
+  @js.native
+  val ^ : OauthAuthenticatorStatic = js.native
+  
+  extension [Self <: OauthAuthenticator](x: Self) {
+    
+    inline def setAuthenticateRequest(value: OauthAuthenticatorRequest => OauthAuthenticatorRequest): Self = StObject.set(x, "authenticateRequest", js.Any.fromFunction1(value))
+  }
+}

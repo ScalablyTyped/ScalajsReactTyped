@@ -1,31 +1,37 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SublayersOwner extends js.Object {
+trait SublayersOwner extends StObject {
+  
   /**
-    * Returns a deep clone of a map service's [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) as defined by the service. This is useful for scenarios when the developer is unfamiliar with the service sublayers and needs to "reset" the layer's sublayers to match those defined by the service.
+    * Returns a deep clone of a map service's [sublayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#createServiceSublayers)
-    *
-    *
     */
   def createServiceSublayers(): Collection[Sublayer]
+  
   /**
     * Returns the sublayer with the given layerId.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SublayersOwner.html#findSublayerById)
-    *
-    * @param id The [id](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#id) of the sublayer.
-    *
     */
   def findSublayerById(id: Double): Sublayer
 }
-
-@JSGlobal("__esri.SublayersOwner")
-@js.native
-object SublayersOwner extends TopLevel[SublayersOwnerConstructor]
-
+object SublayersOwner {
+  
+  inline def apply(createServiceSublayers: CallbackTo[Collection[Sublayer]], findSublayerById: Double => Sublayer): SublayersOwner = {
+    val __obj = js.Dynamic.literal(createServiceSublayers = createServiceSublayers.toJsFn, findSublayerById = js.Any.fromFunction1(findSublayerById))
+    __obj.asInstanceOf[SublayersOwner]
+  }
+  
+  extension [Self <: SublayersOwner](x: Self) {
+    
+    inline def setCreateServiceSublayers(value: CallbackTo[Collection[Sublayer]]): Self = StObject.set(x, "createServiceSublayers", value.toJsFn)
+    
+    inline def setFindSublayerById(value: Double => Sublayer): Self = StObject.set(x, "findSublayerById", js.Any.fromFunction1(value))
+  }
+}

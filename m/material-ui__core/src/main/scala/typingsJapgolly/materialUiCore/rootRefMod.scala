@@ -1,27 +1,58 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.materialUiCore.rootRefRootRefMod.RootRefProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/RootRef", JSImport.Namespace)
-@js.native
-object rootRefMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[RootRefProps[js.Any], ComponentState, js.Any] {
-    def this(props: RootRefProps[_]) = this()
-    def this(props: RootRefProps[_], context: js.Any) = this()
-  }
+object rootRefMod extends Shortcut {
   
+  /**
+    * ⚠️⚠️⚠️
+    * If you want the DOM element of a Material-UI component check out
+    * [FAQ: How can I access the DOM element?](https://mui.com/getting-started/faq/#how-can-i-access-the-dom-element)
+    * first.
+    *
+    * This component uses `findDOMNode` which is deprecated in React.StrictMode.
+    *
+    * Helper component to allow attaching a ref to a
+    * wrapped element to access the underlying DOM element.
+    *
+    * It's highly inspired by <https://github.com/facebook/react/issues/11401#issuecomment-340543801>.
+    * For example:
+    *
+    * ```jsx
+    * import React from 'react';
+    * import RootRef from '@material-ui/core/RootRef';
+    *
+    * function MyComponent() {
+    *   const domRef = React.useRef();
+    *
+    *   React.useEffect(() => {
+    *     console.log(domRef.current); // DOM node
+    *   }, []);
+    *
+    *   return (
+    *     <RootRef rootRef={domRef}>
+    *       <SomeChildComponent />
+    *     </RootRef>
+    *   );
+    * }
+    * ```
+    *
+    * @deprecated
+    * API:
+    *
+    * - [RootRef API](https://mui.com/api/root-ref/)
+    */
+  @JSImport("@material-ui/core/RootRef", JSImport.Default)
   @js.native
-  object default
-    extends TopLevel[ComponentType[RootRefProps[js.Any]]]
+  val default: ComponentType[RootRefProps[Any]] = js.native
   
+  type _To = ComponentType[RootRefProps[Any]]
+  
+  /* This means you don't have to write `default`, but can instead just say `rootRefMod.foo` */
+  override def _to: ComponentType[RootRefProps[Any]] = default
 }
-

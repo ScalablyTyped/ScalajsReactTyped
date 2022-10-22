@@ -1,13 +1,12 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonCritical
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.BigIntegerParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.StringParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AuthorityKeyIdentifier ASN.1 structure class
@@ -29,11 +28,13 @@ import scala.scalajs.js.annotation._
   *   sn:     {hex: '1234'}
   * });
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.AuthorityKeyIdentifier")
 @js.native
-class AuthorityKeyIdentifier () extends Extension {
-  def this(params: AnonCritical) = this()
+trait AuthorityKeyIdentifier
+  extends StObject
+     with Extension {
+  
   def getExtnValueHex(): String = js.native
+  
   /**
     * set authorityCertIssuer value by X500Name parameter
     * @param param array of `KJUR.asn1.x509.X500Name` parameter
@@ -42,6 +43,7 @@ class AuthorityKeyIdentifier () extends Extension {
     * certificate will be supported in future version.
     */
   def setCertIssuerByParam(param: js.Array[StringParam | X500NameParam]): Unit = js.native
+  
   /**
     * set authorityCertSerialNumber value by DERInteger parameter
     * @param param array of `KJUR.asn1.DERInteger` parameter
@@ -51,6 +53,7 @@ class AuthorityKeyIdentifier () extends Extension {
     */
   def setCertSNByParam(): Unit = js.native
   def setCertSNByParam(param: js.Array[IntegerParam | BigIntegerParam | HexParam | Double]): Unit = js.native
+  
   /**
     * set keyIdentifier value by DERInteger parameter
     * @param param array of `KJUR.asn1.DERInteger` parameter
@@ -60,4 +63,3 @@ class AuthorityKeyIdentifier () extends Extension {
     */
   def setKIDByParam(param: js.Array[IntegerParam | BigIntegerParam | HexParam | Double]): Unit = js.native
 }
-

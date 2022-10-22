@@ -1,21 +1,43 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.ChangeListActionType")
 @js.native
-class ChangeListActionType ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.ChangeListActionType
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.ChangeListActionType")
-@js.native
-object ChangeListActionType extends js.Object {
-  var Add: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ChangeListActionType = js.native
-  var Clear: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ChangeListActionType = js.native
-  var Remove: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ChangeListActionType = js.native
-  var Set: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ChangeListActionType = js.native
+open class ChangeListActionType protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.ChangeListActionType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object ChangeListActionType {
+  
+  @JSImport("mendixmodelsdk", "microflows.ChangeListActionType")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ChangeListActionType.Add")
+  @js.native
+  def Add: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType = js.native
+  inline def Add_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Add")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ChangeListActionType.Clear")
+  @js.native
+  def Clear: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType = js.native
+  inline def Clear_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Clear")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ChangeListActionType.Remove")
+  @js.native
+  def Remove: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType = js.native
+  inline def Remove_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Remove")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ChangeListActionType.Set")
+  @js.native
+  def Set: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType = js.native
+  inline def Set_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ChangeListActionType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Set")(x.asInstanceOf[js.Any])
+}

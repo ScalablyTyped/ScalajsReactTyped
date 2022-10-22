@@ -1,23 +1,26 @@
 package typingsJapgolly.typescript.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Printer extends js.Object {
+trait Printer extends StObject {
+  
   /**
     * Prints a bundle of source files as-is, without any emit transformations.
     */
   def printBundle(bundle: Bundle): java.lang.String
+  
   /**
     * Prints a source file as-is, without any emit transformations.
     */
   def printFile(sourceFile: SourceFile): java.lang.String
+  
   /**
     * Prints a list of nodes using the given format flags
     */
   def printList[T /* <: Node */](format: ListFormat, list: NodeArray[T], sourceFile: SourceFile): java.lang.String
+  
   /**
     * Print a node and its subtree as-is, without any emit transformations.
     * @param hint A value indicating the purpose of a node. This is primarily used to
@@ -33,21 +36,26 @@ trait Printer extends js.Object {
     */
   def printNode(hint: EmitHint, node: Node, sourceFile: SourceFile): java.lang.String
 }
-
 object Printer {
-  @scala.inline
-  def apply(
-    printBundle: Bundle => CallbackTo[java.lang.String],
-    printFile: SourceFile => CallbackTo[java.lang.String],
-    printList: (ListFormat, NodeArray[js.Any], SourceFile) => CallbackTo[java.lang.String],
-    printNode: (EmitHint, Node, SourceFile) => CallbackTo[java.lang.String]
+  
+  inline def apply(
+    printBundle: Bundle => java.lang.String,
+    printFile: SourceFile => java.lang.String,
+    printList: (ListFormat, NodeArray[Any], SourceFile) => java.lang.String,
+    printNode: (EmitHint, Node, SourceFile) => java.lang.String
   ): Printer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printBundle")(js.Any.fromFunction1((t0: typingsJapgolly.typescript.mod.Bundle) => printBundle(t0).runNow()))
-    __obj.updateDynamic("printFile")(js.Any.fromFunction1((t0: typingsJapgolly.typescript.mod.SourceFile) => printFile(t0).runNow()))
-    __obj.updateDynamic("printList")(js.Any.fromFunction3((t0: typingsJapgolly.typescript.mod.ListFormat, t1: typingsJapgolly.typescript.mod.NodeArray[js.Any], t2: typingsJapgolly.typescript.mod.SourceFile) => printList(t0, t1, t2).runNow()))
-    __obj.updateDynamic("printNode")(js.Any.fromFunction3((t0: typingsJapgolly.typescript.mod.EmitHint, t1: typingsJapgolly.typescript.mod.Node, t2: typingsJapgolly.typescript.mod.SourceFile) => printNode(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(printBundle = js.Any.fromFunction1(printBundle), printFile = js.Any.fromFunction1(printFile), printList = js.Any.fromFunction3(printList), printNode = js.Any.fromFunction3(printNode))
     __obj.asInstanceOf[Printer]
   }
+  
+  extension [Self <: Printer](x: Self) {
+    
+    inline def setPrintBundle(value: Bundle => java.lang.String): Self = StObject.set(x, "printBundle", js.Any.fromFunction1(value))
+    
+    inline def setPrintFile(value: SourceFile => java.lang.String): Self = StObject.set(x, "printFile", js.Any.fromFunction1(value))
+    
+    inline def setPrintList(value: (ListFormat, NodeArray[Any], SourceFile) => java.lang.String): Self = StObject.set(x, "printList", js.Any.fromFunction3(value))
+    
+    inline def setPrintNode(value: (EmitHint, Node, SourceFile) => java.lang.String): Self = StObject.set(x, "printNode", js.Any.fromFunction3(value))
+  }
 }
-

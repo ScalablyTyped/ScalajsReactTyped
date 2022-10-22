@@ -1,41 +1,40 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.ApplicationModel.Background.IBackgroundTrigger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.ControlChannelTrigger")
-@js.native
-class ControlChannelTrigger protected () extends IControlChannelTrigger {
-  def this(channelId: String, serverKeepAliveIntervalInMinutes: Double) = this()
-  def this(
-    channelId: String,
-    serverKeepAliveIntervalInMinutes: Double,
-    resourceRequestType: ControlChannelTriggerResourceType
-  ) = this()
-  /* CompleteClass */
-  override var controlChannelTriggerId: String = js.native
-  /* CompleteClass */
-  override var currentKeepAliveIntervalInMinutes: Double = js.native
-  /* CompleteClass */
-  override var keepAliveTrigger: IBackgroundTrigger = js.native
-  /* CompleteClass */
-  override var pushNotificationTrigger: IBackgroundTrigger = js.native
-  /* CompleteClass */
-  override var serverKeepAliveIntervalInMinutes: Double = js.native
-  /* CompleteClass */
-  override var transportObject: js.Any = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def decreaseNetworkKeepAliveInterval(): Unit = js.native
-  def dispose(): Unit = js.native
-  /* CompleteClass */
-  override def flushTransport(): Unit = js.native
-  /* CompleteClass */
-  override def usingTransport(transport: js.Any): Unit = js.native
-  /* CompleteClass */
-  override def waitForPushEnabled(): ControlChannelTriggerStatus = js.native
+trait ControlChannelTrigger
+  extends StObject
+     with IControlChannelTrigger {
+  
+  def dispose(): Unit
 }
-
+object ControlChannelTrigger {
+  
+  inline def apply(
+    close: Callback,
+    controlChannelTriggerId: String,
+    currentKeepAliveIntervalInMinutes: Double,
+    decreaseNetworkKeepAliveInterval: Callback,
+    dispose: Callback,
+    flushTransport: Callback,
+    keepAliveTrigger: IBackgroundTrigger,
+    pushNotificationTrigger: IBackgroundTrigger,
+    serverKeepAliveIntervalInMinutes: Double,
+    transportObject: Any,
+    usingTransport: Any => Callback,
+    waitForPushEnabled: CallbackTo[ControlChannelTriggerStatus]
+  ): ControlChannelTrigger = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, controlChannelTriggerId = controlChannelTriggerId.asInstanceOf[js.Any], currentKeepAliveIntervalInMinutes = currentKeepAliveIntervalInMinutes.asInstanceOf[js.Any], decreaseNetworkKeepAliveInterval = decreaseNetworkKeepAliveInterval.toJsFn, dispose = dispose.toJsFn, flushTransport = flushTransport.toJsFn, keepAliveTrigger = keepAliveTrigger.asInstanceOf[js.Any], pushNotificationTrigger = pushNotificationTrigger.asInstanceOf[js.Any], serverKeepAliveIntervalInMinutes = serverKeepAliveIntervalInMinutes.asInstanceOf[js.Any], transportObject = transportObject.asInstanceOf[js.Any], usingTransport = js.Any.fromFunction1((t0: Any) => usingTransport(t0).runNow()), waitForPushEnabled = waitForPushEnabled.toJsFn)
+    __obj.asInstanceOf[ControlChannelTrigger]
+  }
+  
+  extension [Self <: ControlChannelTrigger](x: Self) {
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+  }
+}

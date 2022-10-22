@@ -1,20 +1,23 @@
 package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IgTooltipMethods extends js.Object {
+trait IgTooltipMethods extends StObject {
+  
   def destroy(): Unit
 }
-
 object IgTooltipMethods {
-  @scala.inline
-  def apply(destroy: Callback): IgTooltipMethods = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
+  
+  inline def apply(destroy: Callback): IgTooltipMethods = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn)
     __obj.asInstanceOf[IgTooltipMethods]
   }
+  
+  extension [Self <: IgTooltipMethods](x: Self) {
+    
+    inline def setDestroy(value: Callback): Self = StObject.set(x, "destroy", value.toJsFn)
+  }
 }
-

@@ -1,53 +1,87 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureMinificationFilter extends js.Object
-
+sealed trait TextureMinificationFilter extends StObject
 @JSImport("cesium", "TextureMinificationFilter")
 @js.native
-object TextureMinificationFilter extends js.Object {
-  @js.native
-  sealed trait LINEAR extends TextureMinificationFilter
-  
-  @js.native
-  sealed trait LINEAR_MIPMAP_LINEAR extends TextureMinificationFilter
-  
-  @js.native
-  sealed trait LINEAR_MIPMAP_NEAREST extends TextureMinificationFilter
-  
-  @js.native
-  sealed trait NEAREST extends TextureMinificationFilter
-  
-  @js.native
-  sealed trait NEAREST_MIPMAP_LINEAR extends TextureMinificationFilter
-  
-  @js.native
-  sealed trait NEAREST_MIPMAP_NEAREST extends TextureMinificationFilter
+object TextureMinificationFilter extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureMinificationFilter with Double] = js.native
-  /* 0 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
+  def apply(value: scala.Nothing): js.UndefOr[TextureMinificationFilter & scala.Nothing] = js.native
   
-  /* 1 */ @js.native
-  object LINEAR_MIPMAP_LINEAR extends TopLevel[LINEAR_MIPMAP_LINEAR with Double]
+  /**
+    * Samples the texture through bi-linear interpolation of the four nearest pixels. This produces smoother results than <code>NEAREST</code> filtering.
+    */
+  @js.native
+  sealed trait LINEAR
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.LINEAR */ val LINEAR: typingsJapgolly.cesium.mod.TextureMinificationFilter.LINEAR & scala.Nothing = js.native
   
-  /* 2 */ @js.native
-  object LINEAR_MIPMAP_NEAREST extends TopLevel[LINEAR_MIPMAP_NEAREST with Double]
+  /**
+    * Read texture values with linear sampling from two adjacent mip levels and linearly interpolate the results.
+    * <p>
+    * This option provides a good balance of visual quality and speed when sampling from a mipmapped texture.
+    * </p>
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
+  @js.native
+  sealed trait LINEAR_MIPMAP_LINEAR
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.LINEAR_MIPMAP_LINEAR */ val LINEAR_MIPMAP_LINEAR: typingsJapgolly.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_LINEAR & scala.Nothing = js.native
   
-  /* 3 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
+  /**
+    * Selects the nearest mip level and applies linear sampling within that level.
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
+  @js.native
+  sealed trait LINEAR_MIPMAP_NEAREST
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.LINEAR_MIPMAP_NEAREST */ val LINEAR_MIPMAP_NEAREST: typingsJapgolly.cesium.mod.TextureMinificationFilter.LINEAR_MIPMAP_NEAREST & scala.Nothing = js.native
   
-  /* 4 */ @js.native
-  object NEAREST_MIPMAP_LINEAR extends TopLevel[NEAREST_MIPMAP_LINEAR with Double]
+  /**
+    * Samples the texture by returning the closest pixel.
+    */
+  @js.native
+  sealed trait NEAREST
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.NEAREST */ val NEAREST: typingsJapgolly.cesium.mod.TextureMinificationFilter.NEAREST & scala.Nothing = js.native
   
-  /* 5 */ @js.native
-  object NEAREST_MIPMAP_NEAREST extends TopLevel[NEAREST_MIPMAP_NEAREST with Double]
+  /**
+    * Read texture values with nearest sampling from two adjacent mip levels and linearly interpolate the results.
+    * <p>
+    * This option provides a good balance of visual quality and speed when sampling from a mipmapped texture.
+    * </p>
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
+  @js.native
+  sealed trait NEAREST_MIPMAP_LINEAR
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.NEAREST_MIPMAP_LINEAR */ val NEAREST_MIPMAP_LINEAR: typingsJapgolly.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_LINEAR & scala.Nothing = js.native
   
+  /**
+    * Selects the nearest mip level and applies nearest sampling within that level.
+    * <p>
+    * Requires that the texture has a mipmap. The mip level is chosen by the view angle and screen-space size of the texture.
+    * </p>
+    */
+  @js.native
+  sealed trait NEAREST_MIPMAP_NEAREST
+    extends StObject
+       with TextureMinificationFilter
+  /* WebGLConstants.NEAREST_MIPMAP_NEAREST */ val NEAREST_MIPMAP_NEAREST: typingsJapgolly.cesium.mod.TextureMinificationFilter.NEAREST_MIPMAP_NEAREST & scala.Nothing = js.native
 }
-

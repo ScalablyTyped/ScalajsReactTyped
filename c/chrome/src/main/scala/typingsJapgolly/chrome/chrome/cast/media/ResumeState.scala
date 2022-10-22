@@ -1,29 +1,22 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ResumeState extends js.Object
-
+sealed trait ResumeState extends StObject
 @JSGlobal("chrome.cast.media.ResumeState")
 @js.native
-object ResumeState extends js.Object {
-  @js.native
-  sealed trait PLAYBACK_PAUSE extends ResumeState
+object ResumeState extends StObject {
   
   @js.native
-  sealed trait PLAYBACK_START extends ResumeState
+  sealed trait PLAYBACK_PAUSE
+    extends StObject
+       with ResumeState
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ResumeState with String] = js.native
-  /* "PLAYBACK_PAUSE" */ @js.native
-  object PLAYBACK_PAUSE extends TopLevel[PLAYBACK_PAUSE with String]
-  
-  /* "PLAYBACK_START" */ @js.native
-  object PLAYBACK_START extends TopLevel[PLAYBACK_START with String]
-  
+  @js.native
+  sealed trait PLAYBACK_START
+    extends StObject
+       with ResumeState
 }
-

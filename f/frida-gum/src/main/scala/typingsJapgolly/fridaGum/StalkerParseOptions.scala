@@ -1,14 +1,16 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StalkerParseOptions extends js.Object {
+trait StalkerParseOptions extends StObject {
+  
   /**
     * Whether to include the type of each event. Defaults to `true`.
     */
   var annotate: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether to format pointer values as strings instead of `NativePointer`
     * values, i.e. less overhead if you're just going to `send()` the result
@@ -16,14 +18,21 @@ trait StalkerParseOptions extends js.Object {
     */
   var stringify: js.UndefOr[Boolean] = js.undefined
 }
-
 object StalkerParseOptions {
-  @scala.inline
-  def apply(annotate: js.UndefOr[Boolean] = js.undefined, stringify: js.UndefOr[Boolean] = js.undefined): StalkerParseOptions = {
+  
+  inline def apply(): StalkerParseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(annotate)) __obj.updateDynamic("annotate")(annotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
     __obj.asInstanceOf[StalkerParseOptions]
   }
+  
+  extension [Self <: StalkerParseOptions](x: Self) {
+    
+    inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
+    
+    inline def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+  }
 }
-

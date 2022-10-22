@@ -10,10 +10,10 @@ Parse sass files and extract a graph of imports
 | ------------------ | :-------------: |
 | Full name          | sass-graph |
 | Keywords           | sass, graph |
-| # releases         | 6 |
-| # dependents       | 63 |
-| # downloads        | 162582270 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3920061E7 |
+| # stars            | 75.0 |
 
 ## Links
 - [Homepage](https://github.com/xzyfer/sass-graph#readme)

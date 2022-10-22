@@ -1,85 +1,67 @@
-package typingsJapgolly.ractive
+package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.ractive.anon.Teardown
+import typingsJapgolly.ractive.ractiveInts.`-1`
+import typingsJapgolly.ractive.ractiveInts.`0`
+import typingsJapgolly.ractive.ractiveInts.`1`
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AdaptorPrefixer = js.Function1[
-    /* map */ typingsJapgolly.ractive.mod.ValueMap, 
-    typingsJapgolly.ractive.mod.ValueMap
-  ]
-  type Component = typingsJapgolly.ractive.mod.Static[typingsJapgolly.ractive.mod.Ractive[typingsJapgolly.ractive.mod.Ractive[js.Any]]] | (js.Promise[
-    typingsJapgolly.ractive.mod.Static[typingsJapgolly.ractive.mod.Ractive[typingsJapgolly.ractive.mod.Ractive[js.Any]]]
-  ])
-  type Computation[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = java.lang.String | typingsJapgolly.ractive.mod.ComputationFn[T] | typingsJapgolly.ractive.mod.ComputationDescriptor[T]
-  type ComputationFn[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction0[/* this */ T, js.Any]
-  type CssFn = js.Function1[/* data */ typingsJapgolly.ractive.mod.DataGetFn, java.lang.String]
-  type Data = typingsJapgolly.ractive.mod.ValueMap
-  type DataFn[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction0[/* this */ T, typingsJapgolly.ractive.mod.ValueMap]
-  type DataGetFn = js.Function1[/* keypath */ java.lang.String, js.Any]
-  type Decorator[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction2[
-    /* this */ T, 
-    /* node */ org.scalajs.dom.raw.HTMLElement, 
-    /* repeated */ js.Any, 
-    typingsJapgolly.ractive.mod.DecoratorHandle
-  ]
-  type Easing = js.Function1[/* time */ scala.Double, scala.Double]
-  type EventPlugin[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction2[
-    /* this */ T, 
-    /* node */ org.scalajs.dom.raw.HTMLElement, 
-    /* fire */ js.Function1[/* event */ typingsJapgolly.std.Event_, scala.Unit], 
-    typingsJapgolly.ractive.AnonTeardown
-  ]
-  type Helper = js.ThisFunction1[
-    /* this */ typingsJapgolly.ractive.mod.Ractive[typingsJapgolly.ractive.mod.Ractive[js.Any]], 
-    /* repeated */ js.Any, 
-    js.Any
-  ]
-  type Interpolator = js.Function2[/* from */ js.Any, /* to */ js.Any, js.Function1[/* t */ scala.Double, js.Any]]
-  type ListenerCallback[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction2[
-    /* this */ T, 
-    /* ctx */ typingsJapgolly.ractive.mod.ContextHelper, 
-    /* repeated */ js.Any, 
-    scala.Boolean | scala.Unit | js.Promise[js.Any]
-  ]
-  type MacroFn = js.Function1[/* MacroHelper */ js.Any, typingsJapgolly.ractive.mod.MacroHandle]
-  type ObserverArrayCallback[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction1[
-    /* this */ T, 
-    /* changes */ typingsJapgolly.ractive.mod.ArrayChanges, 
-    scala.Unit | js.Promise[js.Any]
-  ]
-  type ObserverCallback[T /* <: typingsJapgolly.ractive.mod.Ractive[T] */] = js.ThisFunction4[
-    /* this */ T, 
-    /* value */ js.Any, 
-    /* old */ js.Any, 
-    /* keypath */ java.lang.String, 
-    /* repeated */ java.lang.String, 
-    scala.Unit | js.Promise[js.Any]
-  ]
-  type ParseDelimiters = js.Tuple2[java.lang.String, java.lang.String]
-  type ParseFn = js.Function1[
-    /* helper */ typingsJapgolly.ractive.mod.ParseHelper, 
-    java.lang.String | (js.Array[js.Object | java.lang.String]) | typingsJapgolly.ractive.mod.ParsedTemplate
-  ]
-  type Partial = java.lang.String | js.Array[js.Any] | typingsJapgolly.ractive.mod.ParseFn | typingsJapgolly.ractive.mod.Macro
-  type PartialMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.ractive.mod.Partial]
-  type Plugin = js.Function1[/* PluginArgsBase */ js.Any, scala.Unit]
-  type PluginExtend = js.Function1[/* PluginArgsExtend */ js.Any, scala.Unit]
-  type PluginInstance = js.Function1[/* PluginArgsInstance */ js.Any, scala.Unit]
-  type Registry[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type ShuffleFn = js.Function2[
-    /* left */ js.Any, 
-    /* right */ js.Any, 
-    typingsJapgolly.ractive.ractiveNumbers.`1` | typingsJapgolly.ractive.ractiveNumbers.`0` | typingsJapgolly.ractive.ractiveNumbers.`-1`
-  ]
-  type Shuffler = scala.Boolean | java.lang.String | typingsJapgolly.ractive.mod.ShuffleFn
-  type Target = java.lang.String | org.scalajs.dom.raw.HTMLElement | typingsJapgolly.std.ArrayLike[js.Any]
-  type Template = typingsJapgolly.ractive.mod.ParsedTemplate | java.lang.String | js.Array[js.Any] | typingsJapgolly.ractive.mod.ParseFn
-  type Transition = js.Function2[
-    /* helper */ typingsJapgolly.ractive.mod.TransitionHelper, 
-    /* repeated */ js.Any, 
-    scala.Unit | js.Promise[scala.Unit]
-  ]
-  type ValueMap = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+type AdaptorPrefixer = js.Function1[/* map */ ValueMap, ValueMap]
+
+type Component = Static[Any] | js.Promise[Static[Any]]
+
+type Computation[T /* <: Ractive[T] */] = String | ComputationFn[T] | ComputationDescriptor[T]
+
+type ComputationFn[T /* <: Ractive[T] */] = js.ThisFunction2[/* this */ T, /* context */ Any, /* keypath */ String, Any]
+
+type CssFn = js.Function1[/* data */ DataGetFn, String]
+
+type Data = ValueMap
+
+type DataFn[T /* <: Ractive[T] */] = js.ThisFunction0[/* this */ T, ValueMap]
+
+type DataGetFn = js.Function1[/* keypath */ String, Any]
+
+type Easing = js.Function1[/* time */ Double, Double]
+
+type EventPlugin[T /* <: Ractive[T] */] = js.ThisFunction2[
+/* this */ T, 
+/* node */ HTMLElement, 
+/* fire */ js.Function1[/* event */ js.UndefOr[ValueMap], Unit], 
+Teardown]
+
+type Interpolator = js.Function2[/* from */ Any, /* to */ Any, js.Function1[/* t */ Double, Any]]
+
+type MacroFn = js.Function1[/* helper */ MacroHelper, MacroHandle]
+
+type Merge[T, U /* <: js.Array[Any] */, X] = /* import warning: importer.ImportType#apply Failed type conversion: ractive.anon.0<T, U, X>[U['length'] extends 0 ? 0 : 1] */ js.Any
+
+type ObserverArrayCallback[T /* <: Ractive[T] */] = js.ThisFunction1[/* this */ T, /* changes */ ArrayChanges, Unit | js.Promise[Any]]
+
+type ParseDelimiters = js.Tuple2[String, String]
+
+type ParseFn = js.Function1[/* helper */ ParseHelper, String | (js.Array[js.Object | String]) | ParsedTemplate]
+
+type Partial = String | js.Array[Any] | ParseFn | Macro
+
+type PartialMap = StringDictionary[Partial]
+
+type Plugin = js.Function1[/* args */ PluginArgs, Unit]
+
+type Registry[T] = StringDictionary[T]
+
+type ShuffleFn = js.Function2[/* left */ Any, /* right */ Any, `1` | `0` | `-1`]
+
+type Shuffler = Boolean | String | ShuffleFn
+
+type Target = String | HTMLElement | ArrayLike[Any]
+
+type Template = ParsedTemplate | String | js.Array[Any] | ParseFn
+
+type ValueMap = StringDictionary[Any]

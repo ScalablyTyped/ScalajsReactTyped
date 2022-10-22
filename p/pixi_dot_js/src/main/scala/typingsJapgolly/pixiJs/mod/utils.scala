@@ -1,419 +1,223 @@
 package typingsJapgolly.pixiJs.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import typingsJapgolly.pixiJs.AnonDevice
-import typingsJapgolly.pixiJs.AnonPhone
-import typingsJapgolly.pixiJs.PIXI.utils.DecomposedDataUri
-import typingsJapgolly.std.Float32Array
-import typingsJapgolly.std.Uint16Array
-import typingsJapgolly.std.Uint32Array
+import org.scalablytyped.runtime.Shortcut
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.Location
+import org.scalajs.dom.URL
+import typingsJapgolly.eventemitter3.mod.EventEmitterStatic
+import typingsJapgolly.eventemitter3.mod.ValidEventTypes
+import typingsJapgolly.pixiJs.pixiJsBooleans.`false`
+import typingsJapgolly.pixiJs.pixiJsBooleans.`true`
+import typingsJapgolly.pixiJs.pixiJsInts.`-1`
+import typingsJapgolly.pixiJs.pixiJsInts.`0`
+import typingsJapgolly.pixiJs.pixiJsInts.`1`
+import typingsJapgolly.pixiJs.pixiJsStrings.Float32Array
+import typingsJapgolly.pixiJs.pixiJsStrings.Int32Array
+import typingsJapgolly.pixiJs.pixiJsStrings.Uint16Array
+import typingsJapgolly.pixiJs.pixiJsStrings.Uint32Array
+import typingsJapgolly.pixiJs.pixiJsStrings.Uint8Array
+import typingsJapgolly.pixiSettings.mod.isMobileResult
+import typingsJapgolly.pixiUtils.anon.Data
+import typingsJapgolly.pixiUtils.mod.DecomposedDataUri
+import typingsJapgolly.pixiUtils.mod.FormatFunction
+import typingsJapgolly.pixiUtils.mod.PackedArray
+import typingsJapgolly.pixiUtils.mod.ParseFunction
+import typingsJapgolly.pixiUtils.mod.Path_
+import typingsJapgolly.pixiUtils.mod.ResolveFunction
+import typingsJapgolly.pixiUtils.mod.URLFormatOptions
+import typingsJapgolly.pixiUtils.mod.UrlObject
+import typingsJapgolly.pixiUtils.mod.UrlWithParsedQuery
+import typingsJapgolly.pixiUtils.mod.UrlWithStringQuery
+import typingsJapgolly.pixiUtils.mod.Url_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Generalized convenience utilities for PIXI.
-  * @example
-  * // Extend PIXI's internal Event Emitter.
-  * class MyEmitter extends PIXI.utils.EventEmitter {
-  *   constructor() {
-  *      super();
-  *      console.log("Emitter created!");
-  *   }
-  * }
-  *
-  * // Get info on current device
-  * console.log(PIXI.utils.isMobile);
-  *
-  * // Convert hex color to string
-  * console.log(PIXI.utils.hex2string(0xff00ff)); // returns: "#ff00ff"
-  * @namespace PIXI.utils
-  */
-@JSImport("pixi.js", "utils")
-@js.native
-object utils extends js.Object {
-  /**
-    * Creates a Canvas element of the given size to be used as a target for rendering to.
-    *
-    * @class
-    * @memberof PIXI.utils
-    */
+object utils {
+  
+  @JSImport("pixi.js", "utils")
   @js.native
-  class CanvasRenderTarget protected ()
-    extends typingsJapgolly.pixiJs.PIXI.utils.CanvasRenderTarget {
+  val ^ : js.Any = js.native
+  
+  @JSImport("pixi.js", "utils.CanvasRenderTarget")
+  @js.native
+  open class CanvasRenderTarget protected ()
+    extends typingsJapgolly.pixiUtils.mod.CanvasRenderTarget {
+    /**
+      * @param width - the width for the newly created canvas
+      * @param height - the height for the newly created canvas
+      * @param {number} [resolution=PIXI.settings.RESOLUTION] - The resolution / device pixel ratio of the canvas
+      */
     def this(width: Double, height: Double) = this()
     def this(width: Double, height: Double, resolution: Double) = this()
   }
   
-  /**
-    * A high performance event emitter
-    *
-    * @see {@link https://github.com/primus/eventemitter3}
-    *
-    * @memberof PIXI.utils
-    * @class EventEmitter
-    * @type {EventEmitter}
-    */
+  @JSImport("pixi.js", "utils.DATA_URI")
   @js.native
-  class EventEmitter ()
-    extends typingsJapgolly.pixiJs.PIXI.utils.EventEmitter
+  val DATA_URI: js.RegExp = js.native
   
-  /**
-    * @todo Describe property usage
-    *
-    * @static
-    * @name BaseTextureCache
-    * @memberof PIXI.utils
-    * @type {Object}
-    */
-  var BaseTextureCache: js.Any = js.native
-  /**
-    * @todo Describe property usage
-    *
-    * @static
-    * @name ProgramCache
-    * @memberof PIXI.utils
-    * @type {Object}
-    */
-  var ProgramCache: js.Any = js.native
-  /**
-    * @todo Describe property usage
-    *
-    * @static
-    * @name TextureCache
-    * @memberof PIXI.utils
-    * @type {Object}
-    */
-  var TextureCache: js.Any = js.native
-  /**
-    * maps premultiply flag and blendMode to adjusted blendMode
-    * @memberof PIXI.utils
-    * @const premultiplyBlendMode
-    * @type {Array<number[]>}
-    */
-  var premultiplyBlendMode: js.Array[js.Array[Double]] = js.native
-  /**
-    * Node.js compatible URL utilities.
-    *
-    * @see https://www.npmjs.com/package/url
-    *
-    * @memberof PIXI.utils
-    * @name url
-    * @type {object}
-    */
-  var url: js.Any = js.native
-  /**
-    * Removes all textures from cache, but does not destroy them
-    *
-    * @memberof PIXI.utils
-    * @function clearTextureCache
-    */
-  def clearTextureCache(): Unit = js.native
-  /**
-    * changes blendMode according to texture format
-    *
-    * @memberof PIXI.utils
-    * @function correctBlendMode
-    * @param {number} blendMode supposed blend mode
-    * @param {boolean} premultiplied  whether source is premultiplied
-    * @returns {number} true blend mode for this texture
-    */
-  def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = js.native
-  /**
-    * Generic Mask Stack data structure
-    *
-    * @memberof PIXI.utils
-    * @function createIndicesForQuads
-    * @param {number} size - Number of quads
-    * @param {Uint16Array|Uint32Array} [outBuffer] - Buffer for output, length has to be `6 * size`
-    * @return {Uint16Array|Uint32Array} - Resulting index buffer
-    */
-  def createIndicesForQuads(size: Double): scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array = js.native
-  def createIndicesForQuads(size: Double, outBuffer: Uint16Array): scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array = js.native
-  def createIndicesForQuads(size: Double, outBuffer: Uint32Array): scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array = js.native
-  /**
-    * Split a data URI into components. Returns undefined if
-    * parameter `dataUri` is not a valid data URI.
-    *
-    * @memberof PIXI.utils
-    * @function decomposeDataUri
-    * @param {string} dataUri - the data URI to check
-    * @return {PIXI.utils.DecomposedDataUri|undefined} The decomposed data uri or undefined
-    */
-  def decomposeDataUri(dataUri: String): js.UndefOr[DecomposedDataUri] = js.native
-  /**
-    * Helper for warning developers about deprecated features & settings.
-    * A stack track for warnings is given; useful for tracking-down where
-    * deprecated methods/properties/classes are being used within the code.
-    *
-    * @memberof PIXI.utils
-    * @function deprecation
-    * @param {string} version - The version where the feature became deprecated
-    * @param {string} message - Message should include what is deprecated, where, and the new solution
-    * @param {number} [ignoreDepth=3] - The number of steps to ignore at the top of the error stack
-    *        this is mostly to ignore internal deprecation calls.
-    */
-  def deprecation(version: String, message: String): Unit = js.native
-  def deprecation(version: String, message: String, ignoreDepth: Double): Unit = js.native
-  /**
-    * Destroys all texture in the cache
-    *
-    * @memberof PIXI.utils
-    * @function destroyTextureCache
-    */
-  def destroyTextureCache(): Unit = js.native
-  /**
-    * A polygon triangulation library
-    *
-    * @see {@link https://github.com/mapbox/earcut}
-    *
-    * @memberof PIXI.utils
-    * @function earcut
-    * @param {number[]} vertices - A flat array of vertex coordinates
-    * @param {number[]} [holes] - An array of hole indices
-    * @param {number} [dimensions=2] The number of coordinates per vertex in the input array
-    * @return {number[]} Triangulated polygon
-    */
-  def earcut(vertices: js.Array[Double]): js.Array[Double] = js.native
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double]): js.Array[Double] = js.native
-  def earcut(vertices: js.Array[Double], holes: js.Array[Double], dimensions: Double): js.Array[Double] = js.native
-  /**
-    * get the resolution / device pixel ratio of an asset by looking for the prefix
-    * used by spritesheets and image urls
-    *
-    * @memberof PIXI.utils
-    * @function getResolutionOfUrl
-    * @param {string} url - the image path
-    * @param {number} [defaultValue=1] - the defaultValue if no filename prefix is set.
-    * @return {number} resolution / device pixel ratio of an asset
-    */
-  def getResolutionOfUrl(url: String): Double = js.native
-  def getResolutionOfUrl(url: String, defaultValue: Double): Double = js.native
-  /**
-    * Converts a hexadecimal color number to an [R, G, B] array of normalized floats (numbers from 0.0 to 1.0).
-    *
-    * @example
-    * PIXI.utils.hex2rgb(0xffffff); // returns [1, 1, 1]
-    * @memberof PIXI.utils
-    * @function hex2rgb
-    * @param {number} hex - The hexadecimal number to convert
-    * @param  {number[]} [out=[]] If supplied, this array will be used rather than returning a new one
-    * @return {number[]} An array representing the [R, G, B] of the color where all values are floats.
-    */
-  def hex2rgb(hex: Double): js.Array[Double] = js.native
-  def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] = js.native
-  /**
-    * Converts a hexadecimal color number to a string.
-    *
-    * @example
-    * PIXI.utils.hex2string(0xffffff); // returns "#ffffff"
-    * @memberof PIXI.utils
-    * @function hex2string
-    * @param {number} hex - Number in hex (e.g., `0xffffff`)
-    * @return {string} The string color (e.g., `"#ffffff"`).
-    */
-  def hex2string(hex: Double): String = js.native
-  /**
-    * Checks if a number is a power of two.
-    *
-    * @function isPow2
-    * @memberof PIXI.utils
-    * @param {number} v input value
-    * @return {boolean} `true` if value is power of two
-    */
-  def isPow2(v: Double): Boolean = js.native
-  /**
-    * Helper for checking for WebGL support.
-    *
-    * @memberof PIXI.utils
-    * @function isWebGLSupported
-    * @return {boolean} Is WebGL supported.
-    */
-  def isWebGLSupported(): Boolean = js.native
-  /**
-    * Computes ceil of log base 2
-    *
-    * @function log2
-    * @memberof PIXI.utils
-    * @param {number} v input value
-    * @return {number} logarithm base 2
-    */
-  def log2(v: Double): Double = js.native
-  /**
-    * Rounds to next power of two.
-    *
-    * @function nextPow2
-    * @memberof PIXI.utils
-    * @param {number} v input value
-    * @return {number}
-    */
-  def nextPow2(v: Double): Double = js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: scala.scalajs.js.typedarray.Float32Array): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyRgba(
-    rgb: js.Array[Double],
-    alpha: Double,
-    out: scala.scalajs.js.typedarray.Float32Array,
-    premultiply: Boolean
-  ): scala.scalajs.js.typedarray.Float32Array = js.native
-  /**
-    * combines rgb and alpha to out array
-    *
-    * @memberof PIXI.utils
-    * @function premultiplyRgba
-    * @param {Float32Array|number[]} rgb input rgb
-    * @param {number} alpha alpha param
-    * @param {Float32Array} [out] output
-    * @param {boolean} [premultiply=true] do premultiply it
-    * @returns {Float32Array} vec4 rgba
-    */
-  def premultiplyRgba(rgb: Float32Array, alpha: Double): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyRgba(rgb: Float32Array, alpha: Double, out: scala.scalajs.js.typedarray.Float32Array): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyRgba(
-    rgb: Float32Array,
-    alpha: Double,
-    out: scala.scalajs.js.typedarray.Float32Array,
-    premultiply: Boolean
-  ): scala.scalajs.js.typedarray.Float32Array = js.native
-  /**
-    * premultiplies tint
-    *
-    * @memberof PIXI.utils
-    * @function premultiplyTint
-    * @param {number} tint integer RGB
-    * @param {number} alpha floating point alpha (0.0-1.0)
-    * @returns {number} tint multiplied by alpha
-    */
-  def premultiplyTint(tint: Double, alpha: Double): Double = js.native
-  /**
-    * converts integer tint and float alpha to vec4 form, premultiplies by default
-    *
-    * @memberof PIXI.utils
-    * @function premultiplyTintToRgba
-    * @param {number} tint input tint
-    * @param {number} alpha alpha param
-    * @param {Float32Array} [out] output
-    * @param {boolean} [premultiply=true] do premultiply it
-    * @returns {Float32Array} vec4 rgba
-    */
-  def premultiplyTintToRgba(tint: Double, alpha: Double): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: scala.scalajs.js.typedarray.Float32Array): scala.scalajs.js.typedarray.Float32Array = js.native
-  def premultiplyTintToRgba(tint: Double, alpha: Double, out: scala.scalajs.js.typedarray.Float32Array, premultiply: Boolean): scala.scalajs.js.typedarray.Float32Array = js.native
-  /**
-    * Remove items from a javascript array without generating garbage
-    *
-    * @function removeItems
-    * @memberof PIXI.utils
-    * @param {Array<any>} arr Array to remove elements from
-    * @param {number} startIdx starting index
-    * @param {number} removeCount how many to remove
-    */
-  def removeItems(arr: js.Array[_], startIdx: Double, removeCount: Double): Unit = js.native
-  /**
-    * Converts a color as an [R, G, B] array of normalized floats to a hexadecimal number.
-    *
-    * @example
-    * PIXI.utils.rgb2hex([1, 1, 1]); // returns 0xffffff
-    * @memberof PIXI.utils
-    * @function rgb2hex
-    * @param {number[]} rgb - Array of numbers where all values are normalized floats from 0.0 to 1.0.
-    * @return {number} Number in hexadecimal.
-    */
-  def rgb2hex(rgb: js.Array[Double]): Double = js.native
-  /**
-    * Logs out the version and renderer information for this running instance of PIXI.
-    * If you don't want to see this message you can run `PIXI.utils.skipHello()` before
-    * creating your renderer. Keep in mind that doing that will forever make you a jerk face.
-    *
-    * @static
-    * @function sayHello
-    * @memberof PIXI.utils
-    * @param {string} type - The string renderer type to log.
-    */
-  def sayHello(`type`: String): Unit = js.native
-  /**
-    * Returns sign of number
-    *
-    * @memberof PIXI.utils
-    * @function sign
-    * @param {number} n - the number to check the sign of
-    * @returns {number} 0 if `n` is 0, -1 if `n` is negative, 1 if `n` is positive
-    */
-  def sign(n: Double): Double = js.native
-  /**
-    * Skips the hello message of renderers that are created after this is run.
-    *
-    * @function skipHello
-    * @memberof PIXI.utils
-    */
-  def skipHello(): Unit = js.native
-  /**
-    * Converts a hexadecimal string to a hexadecimal color number.
-    *
-    * @example
-    * PIXI.utils.string2hex("#ffffff"); // returns 0xffffff
-    * @memberof PIXI.utils
-    * @function string2hex
-    * @param {string} The string color (e.g., `"#ffffff"`)
-    * @return {number} Number in hexadecimal.
-    */
-  def string2hex(The: String): Double = js.native
-  /**
-    * Trim transparent borders from a canvas
-    *
-    * @memberof PIXI.utils
-    * @function trimCanvas
-    * @param {HTMLCanvasElement} canvas - the canvas to trim
-    * @returns {object} Trim data
-    */
-  def trimCanvas(canvas: HTMLCanvasElement): js.Any = js.native
-  /**
-    * Gets the next unique identifier
-    *
-    * @memberof PIXI.utils
-    * @function uid
-    * @return {number} The next unique identifier to use.
-    */
-  def uid(): Double = js.native
-  /**
-    * A simple JS library that detects mobile devices.
-    *
-    * @see {@link https://github.com/kaimallea/isMobile}
-    *
-    * @memberof PIXI.utils
-    * @name isMobile
-    * @type {Object}
-    * @property {boolean} any - `true` if current platform is tablet or phone device
-    * @property {boolean} tablet - `true` if current platform large-screen tablet device
-    * @property {boolean} phone - `true` if current platform small-screen phone device
-    * @property {object} apple
-    * @property {boolean} apple.device - `true` if any Apple device
-    * @property {boolean} apple.tablet - `true` if any Apple iPad
-    * @property {boolean} apple.phone - `true` if any Apple iPhone
-    * @property {boolean} apple.ipod - `true` if any iPod
-    * @property {object} android
-    * @property {boolean} android.device - `true` if any Android device
-    * @property {boolean} android.tablet - `true` if any Android tablet
-    * @property {boolean} android.phone - `true` if any Android phone
-    * @property {object} amazon
-    * @property {boolean} amazon.device - `true` if any Silk device
-    * @property {boolean} amazon.tablet - `true` if any Silk tablet
-    * @property {boolean} amazon.phone - `true` if any Silk phone
-    * @property {object} windows
-    * @property {boolean} windows.device - `true` if any Windows device
-    * @property {boolean} windows.tablet - `true` if any Windows tablet
-    * @property {boolean} windows.phone - `true` if any Windows phone
-    */
+  @JSImport("pixi.js", "utils.EventEmitter")
   @js.native
-  object isMobile extends js.Object {
-    var amazon: AnonPhone = js.native
-    var android: AnonPhone = js.native
-    var any: Boolean = js.native
-    var apple: AnonDevice = js.native
-    var phone: Boolean = js.native
-    var tablet: Boolean = js.native
-    var windows: AnonPhone = js.native
+  open class EventEmitter[EventTypes /* <: ValidEventTypes */, Context /* <: Any */] ()
+    extends typingsJapgolly.pixiUtils.mod.EventEmitter[EventTypes, Context]
+  object EventEmitter extends Shortcut {
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("pixi.js", "utils.EventEmitter")
+    @js.native
+    open class ^[EventTypes /* <: ValidEventTypes */, Context] ()
+      extends StObject
+         with typingsJapgolly.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    
+    @JSImport("pixi.js", "utils.EventEmitter")
+    @js.native
+    val ^ : js.Object & EventEmitterStatic = js.native
+    @JSImport("pixi.js", "utils.EventEmitter.EventEmitter")
+    @js.native
+    val EventEmitter: EventEmitterStatic = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("pixi.js", "utils.EventEmitter.EventEmitter")
+    @js.native
+    open class EventEmitterCls[EventTypes /* <: ValidEventTypes */, Context] ()
+      extends StObject
+         with typingsJapgolly.eventemitter3.mod.EventEmitter[EventTypes, Context]
+    
+    /* static member */
+    @JSImport("pixi.js", "utils.EventEmitter.prefixed")
+    @js.native
+    def prefixed: String | Boolean = js.native
+    inline def prefixed_=(x: String | Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prefixed")(x.asInstanceOf[js.Any])
+    
+    type _To = js.Object & EventEmitterStatic
+    
+    /* This means you don't have to write `^`, but can instead just say `EventEmitter.foo` */
+    override def _to: js.Object & EventEmitterStatic = ^
   }
   
+  inline def clearTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTextureCache")().asInstanceOf[Unit]
+  
+  inline def correctBlendMode(blendMode: Double, premultiplied: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("correctBlendMode")(blendMode.asInstanceOf[js.Any], premultiplied.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def createIndicesForQuads(size: Double): js.typedarray.Uint16Array | js.typedarray.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint16Array | js.typedarray.Uint32Array]
+  inline def createIndicesForQuads(size: Double, outBuffer: js.typedarray.Uint16Array): js.typedarray.Uint16Array | js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array | js.typedarray.Uint32Array]
+  inline def createIndicesForQuads(size: Double, outBuffer: js.typedarray.Uint32Array): js.typedarray.Uint16Array | js.typedarray.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("createIndicesForQuads")(size.asInstanceOf[js.Any], outBuffer.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Uint16Array | js.typedarray.Uint32Array]
+  
+  inline def decomposeDataUri(dataUri: String): DecomposedDataUri = ^.asInstanceOf[js.Dynamic].applyDynamic("decomposeDataUri")(dataUri.asInstanceOf[js.Any]).asInstanceOf[DecomposedDataUri]
+  
+  inline def deprecation(version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def deprecation(version: String, message: String, ignoreDepth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecation")(version.asInstanceOf[js.Any], message.asInstanceOf[js.Any], ignoreDepth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def destroyTextureCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyTextureCache")().asInstanceOf[Unit]
+  
+  inline def determineCrossOrigin(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("determineCrossOrigin")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def determineCrossOrigin(url: String, loc: Location): String = (^.asInstanceOf[js.Dynamic].applyDynamic("determineCrossOrigin")(url.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def getBufferType(
+    array: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ITypedArray */ Any
+  ): Float32Array | Uint32Array | Int32Array | Uint16Array | Uint8Array | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBufferType")(array.asInstanceOf[js.Any]).asInstanceOf[Float32Array | Uint32Array | Int32Array | Uint16Array | Uint8Array | Null]
+  
+  inline def getResolutionOfUrl(url: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getResolutionOfUrl(url: String, defaultValue: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolutionOfUrl")(url.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def hex2rgb(hex: Double): js.Array[Double] | js.typedarray.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double] | js.typedarray.Float32Array]
+  inline def hex2rgb(hex: Double, out: js.Array[Double]): js.Array[Double] | js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | js.typedarray.Float32Array]
+  inline def hex2rgb(hex: Double, out: js.typedarray.Float32Array): js.Array[Double] | js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("hex2rgb")(hex.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double] | js.typedarray.Float32Array]
+  
+  inline def hex2string(hex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex2string")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def interleaveTypedArrays(arrays: js.Array[PackedArray], sizes: js.Array[Double]): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("interleaveTypedArrays")(arrays.asInstanceOf[js.Any], sizes.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  
+  @JSImport("pixi.js", "utils.isMobile")
+  @js.native
+  val isMobile: isMobileResult = js.native
+  
+  inline def isPow2(v: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isWebGLSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebGLSupported")().asInstanceOf[Boolean]
+  
+  inline def log2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def nextPow2(v: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("nextPow2")(v.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @JSImport("pixi.js", "utils.path")
+  @js.native
+  val path: Path_ = js.native
+  
+  @JSImport("pixi.js", "utils.premultiplyBlendMode")
+  @js.native
+  val premultiplyBlendMode: js.Array[js.Array[Double]] = js.native
+  
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: js.typedarray.Float32Array): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: js.typedarray.Float32Array, premultiply: Boolean): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.Array[Double], alpha: Double, out: Unit, premultiply: Boolean): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.typedarray.Float32Array, alpha: Double): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.typedarray.Float32Array, alpha: Double, out: js.typedarray.Float32Array): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(
+    rgb: js.typedarray.Float32Array,
+    alpha: Double,
+    out: js.typedarray.Float32Array,
+    premultiply: Boolean
+  ): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyRgba(rgb: js.typedarray.Float32Array, alpha: Double, out: Unit, premultiply: Boolean): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyRgba")(rgb.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  
+  inline def premultiplyTint(tint: Double, alpha: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTint")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double, out: js.typedarray.Float32Array): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  inline def premultiplyTintToRgba(tint: Double, alpha: Double, out: js.typedarray.Float32Array, premultiply: Boolean): js.typedarray.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTintToRgba")(tint.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], out.asInstanceOf[js.Any], premultiply.asInstanceOf[js.Any])).asInstanceOf[js.typedarray.Float32Array]
+  
+  inline def removeItems(arr: js.Array[Any], startIdx: Double, removeCount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeItems")(arr.asInstanceOf[js.Any], startIdx.asInstanceOf[js.Any], removeCount.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def rgb2hex(rgb: js.Array[Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def rgb2hex(rgb: js.typedarray.Float32Array): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def sayHello(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sayHello")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def sign(n: Double): `-1` | `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(n.asInstanceOf[js.Any]).asInstanceOf[`-1` | `0` | `1`]
+  
+  inline def skipHello(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("skipHello")().asInstanceOf[Unit]
+  
+  inline def string2hex(string: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("string2hex")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def trimCanvas(canvas: HTMLCanvasElement): Data = ^.asInstanceOf[js.Dynamic].applyDynamic("trimCanvas")(canvas.asInstanceOf[js.Any]).asInstanceOf[Data]
+  
+  inline def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
+  
+  object url {
+    
+    @JSImport("pixi.js", "utils.url")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("pixi.js", "utils.url.format")
+    @js.native
+    def format: FormatFunction = js.native
+    inline def format(URL: URL): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(URL.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(URL: URL, options: URLFormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(URL.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def format(urlObject: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format(urlObject: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def format_=(x: FormatFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
+    
+    @JSImport("pixi.js", "utils.url.parse")
+    @js.native
+    def parse: ParseFunction = js.native
+    inline def parse(urlStr: String): UrlWithStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any]).asInstanceOf[UrlWithStringQuery]
+    inline def parse(urlStr: String, parseQueryString: Boolean): Url_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[Url_]
+    inline def parse(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url_ = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url_]
+    inline def parse(urlStr: String, parseQueryString: Unit, slashesDenoteHost: Boolean): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+    inline def parse_=(x: ParseFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parse")(x.asInstanceOf[js.Any])
+    
+    inline def parse_false(urlStr: String, parseQueryString: `false`): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+    inline def parse_false(urlStr: String, parseQueryString: `false`, slashesDenoteHost: Boolean): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+    
+    inline def parse_true(urlStr: String, parseQueryString: `true`): UrlWithParsedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[UrlWithParsedQuery]
+    inline def parse_true(urlStr: String, parseQueryString: `true`, slashesDenoteHost: Boolean): UrlWithParsedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithParsedQuery]
+    
+    @JSImport("pixi.js", "utils.url.resolve")
+    @js.native
+    def resolve: ResolveFunction = js.native
+    inline def resolve(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def resolve_=(x: ResolveFunction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolve")(x.asInstanceOf[js.Any])
+  }
 }
-

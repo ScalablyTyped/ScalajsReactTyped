@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CellularClass extends js.Object
-
+sealed trait CellularClass extends StObject
 @JSGlobal("Windows.Devices.Sms.CellularClass")
 @js.native
-object CellularClass extends js.Object {
-  @js.native
-  sealed trait cdma extends CellularClass
+object CellularClass extends StObject {
   
   @js.native
-  sealed trait gsm extends CellularClass
+  sealed trait cdma
+    extends StObject
+       with CellularClass
   
   @js.native
-  sealed trait none extends CellularClass
+  sealed trait gsm
+    extends StObject
+       with CellularClass
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CellularClass with Double] = js.native
-  /* 2 */ @js.native
-  object cdma extends TopLevel[cdma with Double]
-  
-  /* 1 */ @js.native
-  object gsm extends TopLevel[gsm with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with CellularClass
 }
-

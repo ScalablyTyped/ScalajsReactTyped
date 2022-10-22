@@ -1,40 +1,63 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedAppPolicyDeploymentSummary extends Entity {
+trait ManagedAppPolicyDeploymentSummary
+  extends StObject
+     with Entity {
+  
   // Not yet documented
   var configurationDeployedUserCount: js.UndefOr[Double] = js.undefined
+  
   // Not yet documented
-  var configurationDeploymentSummaryPerApp: js.UndefOr[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]] = js.undefined
+  var configurationDeploymentSummaryPerApp: js.UndefOr[NullableOption[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]]] = js.undefined
+  
   // Not yet documented
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Not yet documented
   var lastRefreshTime: js.UndefOr[String] = js.undefined
+  
   // Version of the entity.
-  var version: js.UndefOr[String] = js.undefined
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ManagedAppPolicyDeploymentSummary {
-  @scala.inline
-  def apply(
-    configurationDeployedUserCount: Int | Double = null,
-    configurationDeploymentSummaryPerApp: js.Array[ManagedAppPolicyDeploymentSummaryPerApp] = null,
-    displayName: String = null,
-    id: String = null,
-    lastRefreshTime: String = null,
-    version: String = null
-  ): ManagedAppPolicyDeploymentSummary = {
+  
+  inline def apply(): ManagedAppPolicyDeploymentSummary = {
     val __obj = js.Dynamic.literal()
-    if (configurationDeployedUserCount != null) __obj.updateDynamic("configurationDeployedUserCount")(configurationDeployedUserCount.asInstanceOf[js.Any])
-    if (configurationDeploymentSummaryPerApp != null) __obj.updateDynamic("configurationDeploymentSummaryPerApp")(configurationDeploymentSummaryPerApp.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastRefreshTime != null) __obj.updateDynamic("lastRefreshTime")(lastRefreshTime.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppPolicyDeploymentSummary]
   }
+  
+  extension [Self <: ManagedAppPolicyDeploymentSummary](x: Self) {
+    
+    inline def setConfigurationDeployedUserCount(value: Double): Self = StObject.set(x, "configurationDeployedUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationDeployedUserCountUndefined: Self = StObject.set(x, "configurationDeployedUserCount", js.undefined)
+    
+    inline def setConfigurationDeploymentSummaryPerApp(value: NullableOption[js.Array[ManagedAppPolicyDeploymentSummaryPerApp]]): Self = StObject.set(x, "configurationDeploymentSummaryPerApp", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationDeploymentSummaryPerAppNull: Self = StObject.set(x, "configurationDeploymentSummaryPerApp", null)
+    
+    inline def setConfigurationDeploymentSummaryPerAppUndefined: Self = StObject.set(x, "configurationDeploymentSummaryPerApp", js.undefined)
+    
+    inline def setConfigurationDeploymentSummaryPerAppVarargs(value: ManagedAppPolicyDeploymentSummaryPerApp*): Self = StObject.set(x, "configurationDeploymentSummaryPerApp", js.Array(value*))
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    
+    inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

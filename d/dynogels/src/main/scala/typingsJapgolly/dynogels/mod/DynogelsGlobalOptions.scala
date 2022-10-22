@@ -1,13 +1,24 @@
 package typingsJapgolly.dynogels.mod
 
-import typingsJapgolly.dynogels.AnonPollingInterval
+import typingsJapgolly.dynogels.anon.PollingInterval
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DynogelsGlobalOptions extends js.Object {
+trait DynogelsGlobalOptions extends StObject {
+  
   @JSName("$dynogels")
-  var $dynogels: AnonPollingInterval = js.native
+  var $dynogels: PollingInterval
 }
-
+object DynogelsGlobalOptions {
+  
+  inline def apply($dynogels: PollingInterval): DynogelsGlobalOptions = {
+    val __obj = js.Dynamic.literal($dynogels = $dynogels.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DynogelsGlobalOptions]
+  }
+  
+  extension [Self <: DynogelsGlobalOptions](x: Self) {
+    
+    inline def set$dynogels(value: PollingInterval): Self = StObject.set(x, "$dynogels", value.asInstanceOf[js.Any])
+  }
+}

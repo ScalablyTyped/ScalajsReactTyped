@@ -1,30 +1,42 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModifyOptions extends js.Object {
+trait ModifyOptions extends StObject {
+  
   var each: js.UndefOr[Boolean] = js.undefined
+  
   var once: js.UndefOr[Boolean] = js.undefined
+  
   var ref: js.UndefOr[Boolean] = js.undefined
+  
   var schema: js.UndefOr[Boolean] = js.undefined
 }
-
 object ModifyOptions {
-  @scala.inline
-  def apply(
-    each: js.UndefOr[Boolean] = js.undefined,
-    once: js.UndefOr[Boolean] = js.undefined,
-    ref: js.UndefOr[Boolean] = js.undefined,
-    schema: js.UndefOr[Boolean] = js.undefined
-  ): ModifyOptions = {
+  
+  inline def apply(): ModifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(each)) __obj.updateDynamic("each")(each.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (!js.isUndefined(schema)) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptions]
   }
+  
+  extension [Self <: ModifyOptions](x: Self) {
+    
+    inline def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+    
+    inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+    
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    
+    inline def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+  }
 }
-

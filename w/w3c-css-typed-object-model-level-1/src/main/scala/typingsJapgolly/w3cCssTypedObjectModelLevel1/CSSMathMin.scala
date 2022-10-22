@@ -1,13 +1,40 @@
 package typingsJapgolly.w3cCssTypedObjectModelLevel1
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CSSMathMin")
-@js.native
-class CSSMathMin protected () extends CSSMathValue {
-  def this(args: CSSNumberish*) = this()
-  val values: CSSNumericArray = js.native
+trait CSSMathMin
+  extends StObject
+     with CSSMathValue {
+  
+  val values: CSSNumericArray
 }
-
+object CSSMathMin {
+  
+  inline def apply(
+    add: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    div: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    equals_ : /* repeated */ CSSNumberOrNumeric => Boolean,
+    max: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    min: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    mul: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    operator: CSSMathOperator,
+    sub: /* repeated */ CSSNumberOrNumeric => CSSNumericValue,
+    to: String => CSSUnitValue,
+    toSum: /* repeated */ String => CSSMathSum,
+    `type`: CallbackTo[CSSNumericType],
+    values: CSSNumericArray
+  ): CSSMathMin = {
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), div = js.Any.fromFunction1(div), max = js.Any.fromFunction1(max), min = js.Any.fromFunction1(min), mul = js.Any.fromFunction1(mul), operator = operator.asInstanceOf[js.Any], sub = js.Any.fromFunction1(sub), to = js.Any.fromFunction1(to), toSum = js.Any.fromFunction1(toSum), values = values.asInstanceOf[js.Any])
+    __obj.updateDynamic("equals")(js.Any.fromFunction1(equals_))
+    __obj.updateDynamic("type")(`type`.toJsFn)
+    __obj.asInstanceOf[CSSMathMin]
+  }
+  
+  extension [Self <: CSSMathMin](x: Self) {
+    
+    inline def setValues(value: CSSNumericArray): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+  }
+}

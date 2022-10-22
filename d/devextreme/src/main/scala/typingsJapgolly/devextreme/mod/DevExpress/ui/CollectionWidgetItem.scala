@@ -1,42 +1,86 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionWidgetItem extends js.Object {
-  /** Specifies whether a widget item should be disabled. */
+trait CollectionWidgetItem extends StObject {
+  
+  /**
+    * Specifies whether the UI component item responds to user interaction.
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies html code inserted into the widget item element. */
+  
+  /**
+    * Specifies the HTML markup to be inserted into the item element.
+    */
   var html: js.UndefOr[String] = js.undefined
-  /** Specifies a template that should be used to render this item only. */
+  
+  /**
+    * Specifies a template that should be used to render this item only.
+    */
   var template: js.UndefOr[
-    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery])
+    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function3[
+      /* itemData */ this.type, 
+      /* itemIndex */ Double, 
+      /* itemElement */ DxElement_[HTMLElement], 
+      String | UserDefinedElement[Element]
+    ])
   ] = js.undefined
-  /** Specifies text displayed for the widget item. */
+  
+  /**
+    * Specifies text displayed for the UI component item.
+    */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies whether or not a widget item must be displayed. */
+  
+  /**
+    * Specifies whether or not a UI component item must be displayed.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object CollectionWidgetItem {
-  @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): CollectionWidgetItem = {
+  
+  inline def apply(): CollectionWidgetItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionWidgetItem]
   }
+  
+  extension [Self <: CollectionWidgetItem](x: Self) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setTemplate(
+      value: template | (js.Function3[
+          CollectionWidgetItem, 
+          /* itemIndex */ Double, 
+          /* itemElement */ DxElement_[HTMLElement], 
+          String | UserDefinedElement[Element]
+        ])
+    ): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateFunction3(
+      value: (CollectionWidgetItem, /* itemIndex */ Double, /* itemElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
+    ): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.added
   - typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.removed
   - typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.modified
 */
-trait DocumentChangeType extends js.Object
-
+trait DocumentChangeType extends StObject
 object DocumentChangeType {
-  @scala.inline
-  def added: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.added = this.cast("added")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def modified: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.modified = this.cast("modified")
-  @scala.inline
-  def removed: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.removed = this.cast("removed")
+  
+  inline def added: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.added = "added".asInstanceOf[typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.added]
+  
+  inline def modified: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.modified = "modified".asInstanceOf[typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.modified]
+  
+  inline def removed: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.removed = "removed".asInstanceOf[typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.removed]
 }
-

@@ -1,95 +1,93 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ELicenseFlags extends js.Object
-
+sealed trait ELicenseFlags extends StObject
 @JSImport("steam-client", "ELicenseFlags")
 @js.native
-object ELicenseFlags extends js.Object {
-  @js.native
-  sealed trait CancelledByAdmin extends ELicenseFlags
-  
-  @js.native
-  sealed trait CancelledByFriendlyFraudLock extends ELicenseFlags
-  
-  @js.native
-  sealed trait CancelledByUser extends ELicenseFlags
-  
-  @js.native
-  sealed trait Expired extends ELicenseFlags
-  
-  @js.native
-  sealed trait ForceRunRestriction extends ELicenseFlags
-  
-  @js.native
-  sealed trait ImportedFromSteam2 extends ELicenseFlags
-  
-  @js.native
-  sealed trait LowViolenceContent extends ELicenseFlags
-  
-  @js.native
-  sealed trait None extends ELicenseFlags
-  
-  @js.native
-  sealed trait NotActivated extends ELicenseFlags
-  
-  @js.native
-  sealed trait Pending extends ELicenseFlags
-  
-  @js.native
-  sealed trait RegionRestrictionExpired extends ELicenseFlags
-  
-  @js.native
-  sealed trait Renew extends ELicenseFlags
-  
-  @js.native
-  sealed trait RenewalFailed extends ELicenseFlags
+object ELicenseFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ELicenseFlags with Double] = js.native
-  /* 0x20 */ @js.native
-  object CancelledByAdmin extends TopLevel[CancelledByAdmin with Double]
+  def apply(value: Double): js.UndefOr[ELicenseFlags & Double] = js.native
   
-  /* 0x400 */ @js.native
-  object CancelledByFriendlyFraudLock extends TopLevel[CancelledByFriendlyFraudLock with Double]
+  @js.native
+  sealed trait CancelledByAdmin
+    extends StObject
+       with ELicenseFlags
+  /* 0x20 */ val CancelledByAdmin: typingsJapgolly.steamClient.mod.ELicenseFlags.CancelledByAdmin & Double = js.native
   
-  /* 0x10 */ @js.native
-  object CancelledByUser extends TopLevel[CancelledByUser with Double]
+  @js.native
+  sealed trait CancelledByFriendlyFraudLock
+    extends StObject
+       with ELicenseFlags
+  /* 0x400 */ val CancelledByFriendlyFraudLock: typingsJapgolly.steamClient.mod.ELicenseFlags.CancelledByFriendlyFraudLock & Double = js.native
   
-  /* 0x08 */ @js.native
-  object Expired extends TopLevel[Expired with Double]
+  @js.native
+  sealed trait CancelledByUser
+    extends StObject
+       with ELicenseFlags
+  /* 0x10 */ val CancelledByUser: typingsJapgolly.steamClient.mod.ELicenseFlags.CancelledByUser & Double = js.native
   
-  /* 0x100 */ @js.native
-  object ForceRunRestriction extends TopLevel[ForceRunRestriction with Double]
+  @js.native
+  sealed trait Expired
+    extends StObject
+       with ELicenseFlags
+  /* 0x08 */ val Expired: typingsJapgolly.steamClient.mod.ELicenseFlags.Expired & Double = js.native
   
-  /* 0x80 */ @js.native
-  object ImportedFromSteam2 extends TopLevel[ImportedFromSteam2 with Double]
+  @js.native
+  sealed trait ForceRunRestriction
+    extends StObject
+       with ELicenseFlags
+  /* 0x100 */ val ForceRunRestriction: typingsJapgolly.steamClient.mod.ELicenseFlags.ForceRunRestriction & Double = js.native
   
-  /* 0x40 */ @js.native
-  object LowViolenceContent extends TopLevel[LowViolenceContent with Double]
+  @js.native
+  sealed trait ImportedFromSteam2
+    extends StObject
+       with ELicenseFlags
+  /* 0x80 */ val ImportedFromSteam2: typingsJapgolly.steamClient.mod.ELicenseFlags.ImportedFromSteam2 & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait LowViolenceContent
+    extends StObject
+       with ELicenseFlags
+  /* 0x40 */ val LowViolenceContent: typingsJapgolly.steamClient.mod.ELicenseFlags.LowViolenceContent & Double = js.native
   
-  /* 0x800 */ @js.native
-  object NotActivated extends TopLevel[NotActivated with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with ELicenseFlags
+  /* 0 */ val None: typingsJapgolly.steamClient.mod.ELicenseFlags.None & Double = js.native
   
-  /* 0x04 */ @js.native
-  object Pending extends TopLevel[Pending with Double]
+  @js.native
+  sealed trait NotActivated
+    extends StObject
+       with ELicenseFlags
+  /* 0x800 */ val NotActivated: typingsJapgolly.steamClient.mod.ELicenseFlags.NotActivated & Double = js.native
   
-  /* 0x200 */ @js.native
-  object RegionRestrictionExpired extends TopLevel[RegionRestrictionExpired with Double]
+  @js.native
+  sealed trait Pending
+    extends StObject
+       with ELicenseFlags
+  /* 0x04 */ val Pending: typingsJapgolly.steamClient.mod.ELicenseFlags.Pending & Double = js.native
   
-  /* 0x01 */ @js.native
-  object Renew extends TopLevel[Renew with Double]
+  @js.native
+  sealed trait RegionRestrictionExpired
+    extends StObject
+       with ELicenseFlags
+  /* 0x200 */ val RegionRestrictionExpired: typingsJapgolly.steamClient.mod.ELicenseFlags.RegionRestrictionExpired & Double = js.native
   
-  /* 0x02 */ @js.native
-  object RenewalFailed extends TopLevel[RenewalFailed with Double]
+  @js.native
+  sealed trait Renew
+    extends StObject
+       with ELicenseFlags
+  /* 0x01 */ val Renew: typingsJapgolly.steamClient.mod.ELicenseFlags.Renew & Double = js.native
   
+  @js.native
+  sealed trait RenewalFailed
+    extends StObject
+       with ELicenseFlags
+  /* 0x02 */ val RenewalFailed: typingsJapgolly.steamClient.mod.ELicenseFlags.RenewalFailed & Double = js.native
 }
-

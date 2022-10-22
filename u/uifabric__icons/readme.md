@@ -1,24 +1,24 @@
 
 # Scala.js typings for uifabric__icons
 
-Typings are for version 7.3.8
+Typings are for version 7.9.4
 
 ## Library description:
-Office UI Fabric icon set.
+Fluent UI React icon set.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @uifabric/icons |
 | Keywords           | - |
-| # releases         | 66 |
-| # dependents       | 27 |
-| # downloads        | 1887801 |
-| # stars            | 0 |
+| # releases         | 38 |
+| # dependents       | 0.0 |
+| # downloads        | 285670.3333333333 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/OfficeDev/office-ui-fabric-react#readme)
-- [Bugs](https://github.com/OfficeDev/office-ui-fabric-react/issues)
-- [Repository](https://github.com/OfficeDev/office-ui-fabric-react)
+- [Homepage](https://github.com/microsoft/fluentui#readme)
+- [Bugs](https://github.com/microsoft/fluentui/issues)
+- [Repository](https://github.com/microsoft/fluentui)
 - [Npm](https://www.npmjs.com/package/%40uifabric%2Ficons)
     
 

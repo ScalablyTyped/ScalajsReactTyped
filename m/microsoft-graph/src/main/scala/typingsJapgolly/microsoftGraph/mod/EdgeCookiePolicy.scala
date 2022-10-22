@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockThirdParty
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAll
 */
-trait EdgeCookiePolicy extends js.Object
-
+trait EdgeCookiePolicy extends StObject
 object EdgeCookiePolicy {
-  @scala.inline
-  def allow: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow = this.cast("allow")
-  @scala.inline
-  def blockAll: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAll = this.cast("blockAll")
-  @scala.inline
-  def blockThirdParty: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockThirdParty = this.cast("blockThirdParty")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def allow: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allow]
+  
+  inline def blockAll: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAll = "blockAll".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAll]
+  
+  inline def blockThirdParty: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockThirdParty = "blockThirdParty".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockThirdParty]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

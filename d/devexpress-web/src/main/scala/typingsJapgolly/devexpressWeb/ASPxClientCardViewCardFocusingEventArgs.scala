@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.CardFocusing event.
   */
-@JSGlobal("ASPxClientCardViewCardFocusingEventArgs")
-@js.native
-class ASPxClientCardViewCardFocusingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewCardFocusingEventArgs class.
-    * @param visibleIndex A integer value specifying the card visible index.
-    * @param htmlEvent An object specifying the HTML event.
-    */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+trait ASPxClientCardViewCardFocusingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Provides access to the parameters associated with the ASPxClientCardView.CardFocusing event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
+  
   /**
     * Gets the card visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientCardViewCardFocusingEventArgs {
+  
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientCardViewCardFocusingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewCardFocusingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCardViewCardFocusingEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

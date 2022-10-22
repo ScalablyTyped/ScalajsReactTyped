@@ -1,21 +1,25 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
-import typingsJapgolly.vscodeJsonrpc.eventsMod.EmitterOptions
+import typingsJapgolly.vscodeJsonrpc.libCommonEventsMod.EmitterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-jsonrpc", "Emitter")
 @js.native
-class Emitter[T] ()
-  extends typingsJapgolly.vscodeJsonrpc.eventsMod.Emitter[T] {
+open class Emitter[T] ()
+  extends typingsJapgolly.vscodeJsonrpc.libCommonEventsMod.Emitter[T] {
   def this(_options: EmitterOptions) = this()
 }
-
 /* static members */
-@JSImport("vscode-jsonrpc", "Emitter")
-@js.native
-object Emitter extends js.Object {
-  var _noop: js.Any = js.native
+object Emitter {
+  
+  @JSImport("vscode-jsonrpc", "Emitter")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("vscode-jsonrpc", "Emitter._noop")
+  @js.native
+  def _noop: Any = js.native
+  inline def _noop_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_noop")(x.asInstanceOf[js.Any])
 }
-

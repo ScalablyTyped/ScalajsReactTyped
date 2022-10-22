@@ -1,30 +1,39 @@
 package typingsJapgolly.zepto
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZeptoEffectsSpeeds extends js.Object {
+trait ZeptoEffectsSpeeds extends StObject {
+  
   /**
-  	* Default = 400ms.
-  	**/
+    * Default = 400ms.
+    **/
   var _default: Double
+  
   /**
-  	* Default = 200ms.
-  	**/
+    * Default = 200ms.
+    **/
   var fast: Double
+  
   /**
-  	* Default = 600ms.
-  	**/
+    * Default = 600ms.
+    **/
   var slow: Double
 }
-
 object ZeptoEffectsSpeeds {
-  @scala.inline
-  def apply(_default: Double, fast: Double, slow: Double): ZeptoEffectsSpeeds = {
-    val __obj = js.Dynamic.literal(_default = _default.asInstanceOf[js.Any], fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
   
+  inline def apply(_default: Double, fast: Double, slow: Double): ZeptoEffectsSpeeds = {
+    val __obj = js.Dynamic.literal(_default = _default.asInstanceOf[js.Any], fast = fast.asInstanceOf[js.Any], slow = slow.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZeptoEffectsSpeeds]
   }
+  
+  extension [Self <: ZeptoEffectsSpeeds](x: Self) {
+    
+    inline def setFast(value: Double): Self = StObject.set(x, "fast", value.asInstanceOf[js.Any])
+    
+    inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    
+    inline def set_default(value: Double): Self = StObject.set(x, "_default", value.asInstanceOf[js.Any])
+  }
 }
-

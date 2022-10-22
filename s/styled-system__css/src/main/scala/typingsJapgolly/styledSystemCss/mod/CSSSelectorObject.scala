@@ -1,23 +1,18 @@
 package typingsJapgolly.styledSystemCss.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Map all nested selectors
-  */
 trait CSSSelectorObject
-  extends /* cssSelector */ StringDictionary[SystemStyleObject]
-     with SystemStyleObject
-
+  extends StObject
+     with /* cssSelector */ StringDictionary[SystemStyleObject]
+     with _SystemStyleObject
 object CSSSelectorObject {
-  @scala.inline
-  def apply(StringDictionary: /* cssSelector */ StringDictionary[SystemStyleObject] = null): CSSSelectorObject = {
+  
+  inline def apply(): CSSSelectorObject = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[CSSSelectorObject]
   }
 }
-

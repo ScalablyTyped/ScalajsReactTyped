@@ -1,21 +1,17 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.PICKUP
   - typingsJapgolly.squareConnect.squareConnectStrings.SHIPMENT
 */
-trait FulfillmentType extends js.Object
-
+trait FulfillmentType extends StObject
 object FulfillmentType {
-  @scala.inline
-  def PICKUP: typingsJapgolly.squareConnect.squareConnectStrings.PICKUP = this.cast("PICKUP")
-  @scala.inline
-  def SHIPMENT: typingsJapgolly.squareConnect.squareConnectStrings.SHIPMENT = this.cast("SHIPMENT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def PICKUP: typingsJapgolly.squareConnect.squareConnectStrings.PICKUP = "PICKUP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PICKUP]
+  
+  inline def SHIPMENT: typingsJapgolly.squareConnect.squareConnectStrings.SHIPMENT = "SHIPMENT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SHIPMENT]
 }
-

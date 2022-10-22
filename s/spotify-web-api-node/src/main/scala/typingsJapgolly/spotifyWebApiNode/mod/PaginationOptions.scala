@@ -1,20 +1,26 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaginationOptions extends LimitOptions {
+trait PaginationOptions
+  extends StObject
+     with LimitOptions {
+  
   var offset: js.UndefOr[Double] = js.undefined
 }
-
 object PaginationOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, offset: Int | Double = null): PaginationOptions = {
+  
+  inline def apply(): PaginationOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]
   }
+  
+  extension [Self <: PaginationOptions](x: Self) {
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

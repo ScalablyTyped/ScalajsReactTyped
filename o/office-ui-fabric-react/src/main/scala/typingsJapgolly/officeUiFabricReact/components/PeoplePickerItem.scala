@@ -1,13 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.anon.IPersonaPropsValidationSt
+import typingsJapgolly.officeUiFabricReact.libComponentsPickersPeoplePickerPeoplePickerItemsPeoplePickerItemDottypesMod.IPeoplePickerItemSelectedProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object PeoplePickerItem extends SharedApply_IPeoplePickerItemSelectedProps_1054615157 {
+object PeoplePickerItem {
+  
+  inline def apply(index: Double, item: IPersonaPropsValidationSt): SharedBuilder_IPeoplePickerItemSelectedProps660179614 = {
+    val __props = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
+    new SharedBuilder_IPeoplePickerItemSelectedProps660179614(js.Array(this.component, __props.asInstanceOf[IPeoplePickerItemSelectedProps]))
+  }
+  
   @JSImport("office-ui-fabric-react", "PeoplePickerItem")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: IPeoplePickerItemSelectedProps): SharedBuilder_IPeoplePickerItemSelectedProps660179614 = new SharedBuilder_IPeoplePickerItemSelectedProps660179614(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

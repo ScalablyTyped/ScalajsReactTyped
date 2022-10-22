@@ -1,91 +1,87 @@
 package typingsJapgolly.reactJsPagination.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactJsPagination.mod.ReactJsPaginationProps
 import typingsJapgolly.reactJsPagination.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactJsPagination {
-  def apply(
-    activePage: Double,
-    totalItemsCount: Double,
-    onChange: Double => Callback,
-    activeClass: String = null,
-    activeLinkClass: String = null,
-    disabledClass: String = null,
-    firstPageText: String | Element = null,
-    getPageUrl: /* pageNumber */ Double => CallbackTo[String] = null,
-    hideDisabled: js.UndefOr[Boolean] = js.undefined,
-    hideFirstLastPages: js.UndefOr[Boolean] = js.undefined,
-    hideNavigation: js.UndefOr[Boolean] = js.undefined,
-    innerClass: String = null,
-    itemClass: String = null,
-    itemClassFirst: String = null,
-    itemClassLast: String = null,
-    itemClassNext: String = null,
-    itemClassPrev: String = null,
-    itemsCountPerPage: Int | Double = null,
-    lastPageText: String | Element = null,
-    linkClass: String = null,
-    linkClassFirst: String = null,
-    linkClassLast: String = null,
-    linkClassNext: String = null,
-    linkClassPrev: String = null,
-    nextPageText: String | Element = null,
-    pageRangeDisplayed: Int | Double = null,
-    prevPageText: String | Element = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactJsPaginationProps, default, Unit, ReactJsPaginationProps] = {
-    val __obj = js.Dynamic.literal(activePage = activePage.asInstanceOf[js.Any], totalItemsCount = totalItemsCount.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: scala.Double) => onChange(t0).runNow()))
-    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass.asInstanceOf[js.Any])
-    if (activeLinkClass != null) __obj.updateDynamic("activeLinkClass")(activeLinkClass.asInstanceOf[js.Any])
-    if (disabledClass != null) __obj.updateDynamic("disabledClass")(disabledClass.asInstanceOf[js.Any])
-    if (firstPageText != null) __obj.updateDynamic("firstPageText")(firstPageText.asInstanceOf[js.Any])
-    if (getPageUrl != null) __obj.updateDynamic("getPageUrl")(js.Any.fromFunction1((t0: /* pageNumber */ scala.Double) => getPageUrl(t0).runNow()))
-    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFirstLastPages)) __obj.updateDynamic("hideFirstLastPages")(hideFirstLastPages.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideNavigation)) __obj.updateDynamic("hideNavigation")(hideNavigation.asInstanceOf[js.Any])
-    if (innerClass != null) __obj.updateDynamic("innerClass")(innerClass.asInstanceOf[js.Any])
-    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass.asInstanceOf[js.Any])
-    if (itemClassFirst != null) __obj.updateDynamic("itemClassFirst")(itemClassFirst.asInstanceOf[js.Any])
-    if (itemClassLast != null) __obj.updateDynamic("itemClassLast")(itemClassLast.asInstanceOf[js.Any])
-    if (itemClassNext != null) __obj.updateDynamic("itemClassNext")(itemClassNext.asInstanceOf[js.Any])
-    if (itemClassPrev != null) __obj.updateDynamic("itemClassPrev")(itemClassPrev.asInstanceOf[js.Any])
-    if (itemsCountPerPage != null) __obj.updateDynamic("itemsCountPerPage")(itemsCountPerPage.asInstanceOf[js.Any])
-    if (lastPageText != null) __obj.updateDynamic("lastPageText")(lastPageText.asInstanceOf[js.Any])
-    if (linkClass != null) __obj.updateDynamic("linkClass")(linkClass.asInstanceOf[js.Any])
-    if (linkClassFirst != null) __obj.updateDynamic("linkClassFirst")(linkClassFirst.asInstanceOf[js.Any])
-    if (linkClassLast != null) __obj.updateDynamic("linkClassLast")(linkClassLast.asInstanceOf[js.Any])
-    if (linkClassNext != null) __obj.updateDynamic("linkClassNext")(linkClassNext.asInstanceOf[js.Any])
-    if (linkClassPrev != null) __obj.updateDynamic("linkClassPrev")(linkClassPrev.asInstanceOf[js.Any])
-    if (nextPageText != null) __obj.updateDynamic("nextPageText")(nextPageText.asInstanceOf[js.Any])
-    if (pageRangeDisplayed != null) __obj.updateDynamic("pageRangeDisplayed")(pageRangeDisplayed.asInstanceOf[js.Any])
-    if (prevPageText != null) __obj.updateDynamic("prevPageText")(prevPageText.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactJsPagination.mod.ReactJsPaginationProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactJsPagination.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactJsPagination.mod.ReactJsPaginationProps])(children: _*)
+  inline def apply(activePage: Double, onChange: Double => Callback, totalItemsCount: Double): Builder = {
+    val __props = js.Dynamic.literal(activePage = activePage.asInstanceOf[js.Any], onChange = js.Any.fromFunction1((t0: Double) => onChange(t0).runNow()), totalItemsCount = totalItemsCount.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReactJsPaginationProps]))
   }
+  
   @JSImport("react-js-pagination", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def activeClass(value: String): this.type = set("activeClass", value.asInstanceOf[js.Any])
+    
+    inline def activeLinkClass(value: String): this.type = set("activeLinkClass", value.asInstanceOf[js.Any])
+    
+    inline def disabledClass(value: String): this.type = set("disabledClass", value.asInstanceOf[js.Any])
+    
+    inline def firstPageText(value: String | Element): this.type = set("firstPageText", value.asInstanceOf[js.Any])
+    
+    inline def firstPageTextVdomElement(value: VdomElement): this.type = set("firstPageText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def getPageUrl(value: /* pageNumber */ Double => String): this.type = set("getPageUrl", js.Any.fromFunction1(value))
+    
+    inline def hideDisabled(value: Boolean): this.type = set("hideDisabled", value.asInstanceOf[js.Any])
+    
+    inline def hideFirstLastPages(value: Boolean): this.type = set("hideFirstLastPages", value.asInstanceOf[js.Any])
+    
+    inline def hideNavigation(value: Boolean): this.type = set("hideNavigation", value.asInstanceOf[js.Any])
+    
+    inline def innerClass(value: String): this.type = set("innerClass", value.asInstanceOf[js.Any])
+    
+    inline def itemClass(value: String): this.type = set("itemClass", value.asInstanceOf[js.Any])
+    
+    inline def itemClassFirst(value: String): this.type = set("itemClassFirst", value.asInstanceOf[js.Any])
+    
+    inline def itemClassLast(value: String): this.type = set("itemClassLast", value.asInstanceOf[js.Any])
+    
+    inline def itemClassNext(value: String): this.type = set("itemClassNext", value.asInstanceOf[js.Any])
+    
+    inline def itemClassPrev(value: String): this.type = set("itemClassPrev", value.asInstanceOf[js.Any])
+    
+    inline def itemsCountPerPage(value: Double): this.type = set("itemsCountPerPage", value.asInstanceOf[js.Any])
+    
+    inline def lastPageText(value: String | Element): this.type = set("lastPageText", value.asInstanceOf[js.Any])
+    
+    inline def lastPageTextVdomElement(value: VdomElement): this.type = set("lastPageText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def linkClass(value: String): this.type = set("linkClass", value.asInstanceOf[js.Any])
+    
+    inline def linkClassFirst(value: String): this.type = set("linkClassFirst", value.asInstanceOf[js.Any])
+    
+    inline def linkClassLast(value: String): this.type = set("linkClassLast", value.asInstanceOf[js.Any])
+    
+    inline def linkClassNext(value: String): this.type = set("linkClassNext", value.asInstanceOf[js.Any])
+    
+    inline def linkClassPrev(value: String): this.type = set("linkClassPrev", value.asInstanceOf[js.Any])
+    
+    inline def nextPageText(value: String | Element): this.type = set("nextPageText", value.asInstanceOf[js.Any])
+    
+    inline def nextPageTextVdomElement(value: VdomElement): this.type = set("nextPageText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def pageRangeDisplayed(value: Double): this.type = set("pageRangeDisplayed", value.asInstanceOf[js.Any])
+    
+    inline def prevPageText(value: String | Element): this.type = set("prevPageText", value.asInstanceOf[js.Any])
+    
+    inline def prevPageTextVdomElement(value: VdomElement): this.type = set("prevPageText", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ReactJsPaginationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

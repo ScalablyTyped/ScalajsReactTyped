@@ -4,156 +4,306 @@ import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactFocusEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.FocusEventHandler
 import typingsJapgolly.react.mod.KeyboardEventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextFieldProps extends js.Object {
+trait TextFieldProps extends StObject {
+  
   var autoComplete: js.UndefOr[String] = js.undefined
+  
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var defaultValue: js.UndefOr[String | Double] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var errorStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var errorText: js.UndefOr[Node] = js.undefined
+  
   var floatingLabelFixed: js.UndefOr[Boolean] = js.undefined
+  
   var floatingLabelFocusStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var floatingLabelShrinkStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var floatingLabelStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var floatingLabelText: js.UndefOr[Node] = js.undefined
+  
   var fullWidth: js.UndefOr[Boolean] = js.undefined
+  
   var hintStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var hintText: js.UndefOr[Node] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var inputStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var maxlength: js.UndefOr[String] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var minlength: js.UndefOr[String] = js.undefined
+  
   var multiLine: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
+  
   var onChange: js.UndefOr[
-    js.Function2[/* e */ ReactEventFrom[js.Object with Element], /* newValue */ String, Unit]
+    js.Function2[/* e */ ReactEventFrom[js.Object & Element], /* newValue */ String, Unit]
   ] = js.undefined
+  
   var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
+  
   var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
+  
   var onKeyPress: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
+  
   var onKeyUp: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
+  
   var rows: js.UndefOr[Double] = js.undefined
+  
   var rowsMax: js.UndefOr[Double] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
+  
   var style: js.UndefOr[CSSProperties] = js.undefined
+  
   var textareaStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var underlineFocusStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var underlineShow: js.UndefOr[Boolean] = js.undefined
+  
   var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var value: js.UndefOr[String | Double] = js.undefined
 }
-
 object TextFieldProps {
-  @scala.inline
-  def apply(
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    defaultValue: String | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    errorStyle: CSSProperties = null,
-    errorText: VdomNode = null,
-    floatingLabelFixed: js.UndefOr[Boolean] = js.undefined,
-    floatingLabelFocusStyle: CSSProperties = null,
-    floatingLabelShrinkStyle: CSSProperties = null,
-    floatingLabelStyle: CSSProperties = null,
-    floatingLabelText: VdomNode = null,
-    fullWidth: js.UndefOr[Boolean] = js.undefined,
-    hintStyle: CSSProperties = null,
-    hintText: VdomNode = null,
-    id: String = null,
-    inputStyle: CSSProperties = null,
-    max: Int | Double = null,
-    maxlength: String = null,
-    min: Int | Double = null,
-    minlength: String = null,
-    multiLine: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onBlur: ReactFocusEventFrom[js.Object with Element] => Callback = null,
-    onChange: (/* e */ ReactEventFrom[js.Object with Element], /* newValue */ String) => Callback = null,
-    onFocus: ReactFocusEventFrom[js.Object with Element] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    placeholder: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
-    rowsMax: Int | Double = null,
-    step: Int | Double = null,
-    style: CSSProperties = null,
-    textareaStyle: CSSProperties = null,
-    title: String = null,
-    `type`: String = null,
-    underlineDisabledStyle: CSSProperties = null,
-    underlineFocusStyle: CSSProperties = null,
-    underlineShow: js.UndefOr[Boolean] = js.undefined,
-    underlineStyle: CSSProperties = null,
-    value: String | Double = null
-  ): TextFieldProps = {
+  
+  inline def apply(): TextFieldProps = {
     val __obj = js.Dynamic.literal()
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle.asInstanceOf[js.Any])
-    if (errorText != null) __obj.updateDynamic("errorText")(errorText.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(floatingLabelFixed)) __obj.updateDynamic("floatingLabelFixed")(floatingLabelFixed.asInstanceOf[js.Any])
-    if (floatingLabelFocusStyle != null) __obj.updateDynamic("floatingLabelFocusStyle")(floatingLabelFocusStyle.asInstanceOf[js.Any])
-    if (floatingLabelShrinkStyle != null) __obj.updateDynamic("floatingLabelShrinkStyle")(floatingLabelShrinkStyle.asInstanceOf[js.Any])
-    if (floatingLabelStyle != null) __obj.updateDynamic("floatingLabelStyle")(floatingLabelStyle.asInstanceOf[js.Any])
-    if (floatingLabelText != null) __obj.updateDynamic("floatingLabelText")(floatingLabelText.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth.asInstanceOf[js.Any])
-    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
-    if (hintText != null) __obj.updateDynamic("hintText")(hintText.rawNode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxlength != null) __obj.updateDynamic("maxlength")(maxlength.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minlength != null) __obj.updateDynamic("minlength")(minlength.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiLine)) __obj.updateDynamic("multiLine")(multiLine.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* newValue */ java.lang.String) => onChange(t0, t1).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onFocus(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyUp(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textareaStyle != null) __obj.updateDynamic("textareaStyle")(textareaStyle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (underlineDisabledStyle != null) __obj.updateDynamic("underlineDisabledStyle")(underlineDisabledStyle.asInstanceOf[js.Any])
-    if (underlineFocusStyle != null) __obj.updateDynamic("underlineFocusStyle")(underlineFocusStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(underlineShow)) __obj.updateDynamic("underlineShow")(underlineShow.asInstanceOf[js.Any])
-    if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextFieldProps]
   }
+  
+  extension [Self <: TextFieldProps](x: Self) {
+    
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setDefaultValue(value: String | Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setErrorStyle(value: CSSProperties): Self = StObject.set(x, "errorStyle", value.asInstanceOf[js.Any])
+    
+    inline def setErrorStyleUndefined: Self = StObject.set(x, "errorStyle", js.undefined)
+    
+    inline def setErrorText(value: VdomNode): Self = StObject.set(x, "errorText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setErrorTextNull: Self = StObject.set(x, "errorText", null)
+    
+    inline def setErrorTextUndefined: Self = StObject.set(x, "errorText", js.undefined)
+    
+    inline def setErrorTextVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "errorText", js.Array(value*))
+    
+    inline def setErrorTextVdomElement(value: VdomElement): Self = StObject.set(x, "errorText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelFixed(value: Boolean): Self = StObject.set(x, "floatingLabelFixed", value.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelFixedUndefined: Self = StObject.set(x, "floatingLabelFixed", js.undefined)
+    
+    inline def setFloatingLabelFocusStyle(value: CSSProperties): Self = StObject.set(x, "floatingLabelFocusStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelFocusStyleUndefined: Self = StObject.set(x, "floatingLabelFocusStyle", js.undefined)
+    
+    inline def setFloatingLabelShrinkStyle(value: CSSProperties): Self = StObject.set(x, "floatingLabelShrinkStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelShrinkStyleUndefined: Self = StObject.set(x, "floatingLabelShrinkStyle", js.undefined)
+    
+    inline def setFloatingLabelStyle(value: CSSProperties): Self = StObject.set(x, "floatingLabelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelStyleUndefined: Self = StObject.set(x, "floatingLabelStyle", js.undefined)
+    
+    inline def setFloatingLabelText(value: VdomNode): Self = StObject.set(x, "floatingLabelText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setFloatingLabelTextNull: Self = StObject.set(x, "floatingLabelText", null)
+    
+    inline def setFloatingLabelTextUndefined: Self = StObject.set(x, "floatingLabelText", js.undefined)
+    
+    inline def setFloatingLabelTextVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "floatingLabelText", js.Array(value*))
+    
+    inline def setFloatingLabelTextVdomElement(value: VdomElement): Self = StObject.set(x, "floatingLabelText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    
+    inline def setHintStyle(value: CSSProperties): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHintStyleUndefined: Self = StObject.set(x, "hintStyle", js.undefined)
+    
+    inline def setHintText(value: VdomNode): Self = StObject.set(x, "hintText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setHintTextNull: Self = StObject.set(x, "hintText", null)
+    
+    inline def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
+    
+    inline def setHintTextVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "hintText", js.Array(value*))
+    
+    inline def setHintTextVdomElement(value: VdomElement): Self = StObject.set(x, "hintText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInputStyle(value: CSSProperties): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+    
+    inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMaxlength(value: String): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMinlength(value: String): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
+    
+    inline def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
+    
+    inline def setMultiLine(value: Boolean): Self = StObject.set(x, "multiLine", value.asInstanceOf[js.Any])
+    
+    inline def setMultiLineUndefined: Self = StObject.set(x, "multiLine", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOnBlur(value: ReactFocusEventFrom[js.Object & Element] => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    
+    inline def setOnChange(value: (/* e */ ReactEventFrom[js.Object & Element], /* newValue */ String) => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction2((t0: /* e */ ReactEventFrom[js.Object & Element], t1: /* newValue */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnFocus(value: ReactFocusEventFrom[js.Object & Element] => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnKeyDown(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    
+    inline def setOnKeyPress(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): Self = StObject.set(x, "onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
+    
+    inline def setOnKeyUp(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsMax(value: Double): Self = StObject.set(x, "rowsMax", value.asInstanceOf[js.Any])
+    
+    inline def setRowsMaxUndefined: Self = StObject.set(x, "rowsMax", js.undefined)
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTextareaStyle(value: CSSProperties): Self = StObject.set(x, "textareaStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTextareaStyleUndefined: Self = StObject.set(x, "textareaStyle", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUnderlineDisabledStyle(value: CSSProperties): Self = StObject.set(x, "underlineDisabledStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineDisabledStyleUndefined: Self = StObject.set(x, "underlineDisabledStyle", js.undefined)
+    
+    inline def setUnderlineFocusStyle(value: CSSProperties): Self = StObject.set(x, "underlineFocusStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineFocusStyleUndefined: Self = StObject.set(x, "underlineFocusStyle", js.undefined)
+    
+    inline def setUnderlineShow(value: Boolean): Self = StObject.set(x, "underlineShow", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineShowUndefined: Self = StObject.set(x, "underlineShow", js.undefined)
+    
+    inline def setUnderlineStyle(value: CSSProperties): Self = StObject.set(x, "underlineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineStyleUndefined: Self = StObject.set(x, "underlineStyle", js.undefined)
+    
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

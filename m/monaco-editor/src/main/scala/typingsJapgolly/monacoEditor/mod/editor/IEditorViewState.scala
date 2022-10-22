@@ -1,33 +1,28 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.monacoEditor.mod.editor.ICodeEditorViewState
   - typingsJapgolly.monacoEditor.mod.editor.IDiffEditorViewState
 */
-trait IEditorViewState extends js.Object
-
+trait IEditorViewState extends StObject
 object IEditorViewState {
-  @scala.inline
-  def ICodeEditorViewState(
-    contributionsState: StringDictionary[js.Any],
+  
+  inline def ICodeEditorViewState(
+    contributionsState: StringDictionary[Any],
     cursorState: js.Array[ICursorState],
     viewState: IViewState
-  ): IEditorViewState = {
+  ): typingsJapgolly.monacoEditor.mod.editor.ICodeEditorViewState = {
     val __obj = js.Dynamic.literal(contributionsState = contributionsState.asInstanceOf[js.Any], cursorState = cursorState.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[IEditorViewState]
+    __obj.asInstanceOf[typingsJapgolly.monacoEditor.mod.editor.ICodeEditorViewState]
   }
-  @scala.inline
-  def IDiffEditorViewState(modified: ICodeEditorViewState = null, original: ICodeEditorViewState = null): IEditorViewState = {
-    val __obj = js.Dynamic.literal()
-    if (modified != null) __obj.updateDynamic("modified")(modified.asInstanceOf[js.Any])
-    if (original != null) __obj.updateDynamic("original")(original.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IEditorViewState]
+  
+  inline def IDiffEditorViewState(): typingsJapgolly.monacoEditor.mod.editor.IDiffEditorViewState = {
+    val __obj = js.Dynamic.literal(modified = null, original = null)
+    __obj.asInstanceOf[typingsJapgolly.monacoEditor.mod.editor.IDiffEditorViewState]
   }
 }
-

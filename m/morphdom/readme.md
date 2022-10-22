@@ -1,7 +1,7 @@
 
 # Scala.js typings for morphdom
 
-Typings are for version 2.5.12
+Typings are for version 2.6.1
 
 ## Library description:
 Morph a DOM tree to another DOM tree (no virtual DOM needed)
@@ -10,10 +10,10 @@ Morph a DOM tree to another DOM tree (no virtual DOM needed)
 | ------------------ | :-------------: |
 | Full name          | morphdom |
 | Keywords           | dom, diff, patch, virtual, browser |
-| # releases         | 15 |
-| # dependents       | 57 |
-| # downloads        | 406164 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 292340.3333333333 |
+| # stars            | 2559.0 |
 
 ## Links
 - [Homepage](https://github.com/patrick-steele-idem/morphdom#readme)

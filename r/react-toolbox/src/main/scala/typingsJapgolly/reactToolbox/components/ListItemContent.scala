@@ -1,53 +1,47 @@
 package typingsJapgolly.reactToolbox.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactToolbox.listListItemContentMod.ListItemContentProps
-import typingsJapgolly.reactToolbox.listListItemContentMod.ListItemContentTheme
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactToolbox.componentsListListItemContentMod.ListItemContentProps
+import typingsJapgolly.reactToolbox.componentsListListItemContentMod.ListItemContentTheme
 import typingsJapgolly.reactToolbox.reactToolboxStrings.auto
 import typingsJapgolly.reactToolbox.reactToolboxStrings.large
 import typingsJapgolly.reactToolbox.reactToolboxStrings.normal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItemContent {
-  def apply(
-    caption: VdomNode = null,
-    legend: String = null,
-    theme: ListItemContentTheme = null,
-    `type`: auto | normal | large = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ListItemContentProps, 
-    typingsJapgolly.reactToolbox.libListMod.ListItemContent, 
-    Unit, 
-    ListItemContentProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (caption != null) __obj.updateDynamic("caption")(caption.rawNode.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactToolbox.listListItemContentMod.ListItemContentProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactToolbox.libListMod.ListItemContent](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactToolbox.listListItemContentMod.ListItemContentProps])(children: _*)
-  }
-  @JSImport("react-toolbox/lib/list", "ListItemContent")
+  @JSImport("react-toolbox/components/list", "ListItemContent")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactToolbox.componentsListMod.ListItemContent] {
+    
+    inline def caption(value: VdomNode): this.type = set("caption", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def captionNull: this.type = set("caption", null)
+    
+    inline def captionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("caption", js.Array(value*))
+    
+    inline def captionVdomElement(value: VdomElement): this.type = set("caption", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def legend(value: String): this.type = set("legend", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: ListItemContentTheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: auto | normal | large): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItemContent.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListItemContentProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,15 +1,13 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates the PlayReady ITA-specific serialized initialization data. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyITADataGenerator")
-@js.native
-/** Initializes a new instance of the PlayReadyITADataGenerator class. */
-class PlayReadyITADataGenerator () extends js.Object {
+trait PlayReadyITADataGenerator extends StObject {
+  
   /**
     * Returns a serialized blob of the specified IPropertySet data that the PlayReady ITA can consume if wrapped in a content protection instantiation format.
     * @param guidCPSystemId The content protection system GUID.
@@ -23,6 +21,17 @@ class PlayReadyITADataGenerator () extends js.Object {
     countOfStreams: Double,
     configuration: IPropertySet,
     format: PlayReadyITADataFormat
-  ): js.Array[Double] = js.native
+  ): js.Array[Double]
 }
-
+object PlayReadyITADataGenerator {
+  
+  inline def apply(generateData: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): PlayReadyITADataGenerator = {
+    val __obj = js.Dynamic.literal(generateData = js.Any.fromFunction4(generateData))
+    __obj.asInstanceOf[PlayReadyITADataGenerator]
+  }
+  
+  extension [Self <: PlayReadyITADataGenerator](x: Self) {
+    
+    inline def setGenerateData(value: (String, Double, IPropertySet, PlayReadyITADataFormat) => js.Array[Double]): Self = StObject.set(x, "generateData", js.Any.fromFunction4(value))
+  }
+}

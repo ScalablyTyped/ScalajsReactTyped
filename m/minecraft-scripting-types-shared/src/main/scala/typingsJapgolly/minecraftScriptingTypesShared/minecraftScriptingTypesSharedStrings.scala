@@ -1,369 +1,390 @@
 package typingsJapgolly.minecraftScriptingTypesShared
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minecraftScriptingTypesSharedStrings {
-  @js.native
-  sealed trait Equalssign extends js.Object
   
   @js.native
-  sealed trait EqualssignEqualssign extends js.Object
+  sealed trait Equalssign extends StObject
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends js.Object
+  sealed trait EqualssignEqualssign extends StObject
+  inline def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait Greaterthansign extends js.Object
+  sealed trait ExclamationmarkEqualssign extends StObject
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends js.Object
+  sealed trait Greaterthansign extends StObject
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends js.Object
+  sealed trait GreaterthansignEqualssign extends StObject
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends js.Object
+  sealed trait Lessthansign extends StObject
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignGreaterthansign extends js.Object
+  sealed trait LessthansignEqualssign extends StObject
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait block extends js.Object
+  sealed trait LessthansignGreaterthansign extends StObject
+  inline def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
   
   @js.native
-  sealed trait component extends js.Object
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait entity extends js.Object
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
-  sealed trait entity_ticking_area extends js.Object
+  sealed trait entity extends StObject
+  inline def entity: entity = "entity".asInstanceOf[entity]
   
   @js.native
-  sealed trait equals extends js.Object
+  sealed trait entity_ticking_area extends StObject
+  inline def entity_ticking_area: entity_ticking_area = "entity_ticking_area".asInstanceOf[entity_ticking_area]
   
   @js.native
-  sealed trait event_data extends js.Object
+  sealed trait equals extends StObject
+  inline def equals: equals = "equals".asInstanceOf[equals]
   
   @js.native
-  sealed trait item_entity extends js.Object
+  sealed trait event_data extends StObject
+  inline def event_data: event_data = "event_data".asInstanceOf[event_data]
   
   @js.native
-  sealed trait item_stack extends js.Object
+  sealed trait item_entity extends StObject
+  inline def item_entity: item_entity = "item_entity".asInstanceOf[item_entity]
   
   @js.native
-  sealed trait level extends js.Object
+  sealed trait item_stack extends StObject
+  inline def item_stack: item_stack = "item_stack".asInstanceOf[item_stack]
   
   @js.native
-  sealed trait level_ticking_area extends js.Object
+  sealed trait level extends StObject
+  inline def level: level = "level".asInstanceOf[level]
   
   @js.native
-  sealed trait minecraftColonblockbreak extends MinecraftParticleEffect
+  sealed trait level_ticking_area extends StObject
+  inline def level_ticking_area: level_ticking_area = "level_ticking_area".asInstanceOf[level_ticking_area]
   
   @js.native
-  sealed trait minecraftColonblockdust extends MinecraftParticleEffect
+  sealed trait minecraftColonblockbreak
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonblockbreak: minecraftColonblockbreak = "minecraft:blockbreak".asInstanceOf[minecraftColonblockbreak]
   
   @js.native
-  sealed trait minecraftColonbubble extends MinecraftParticleEffect
+  sealed trait minecraftColonblockdust
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonblockdust: minecraftColonblockdust = "minecraft:blockdust".asInstanceOf[minecraftColonblockdust]
   
   @js.native
-  sealed trait minecraftColoncrit extends MinecraftParticleEffect
+  sealed trait minecraftColonbubble
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonbubble: minecraftColonbubble = "minecraft:bubble".asInstanceOf[minecraftColonbubble]
   
   @js.native
-  sealed trait minecraftColondragonbreath extends MinecraftParticleEffect
+  sealed trait minecraftColoncrit
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColoncrit: minecraftColoncrit = "minecraft:crit".asInstanceOf[minecraftColoncrit]
   
   @js.native
-  sealed trait minecraftColondriplava extends MinecraftParticleEffect
+  sealed trait minecraftColondragonbreath
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColondragonbreath: minecraftColondragonbreath = "minecraft:dragonbreath".asInstanceOf[minecraftColondragonbreath]
   
   @js.native
-  sealed trait minecraftColondripwater extends MinecraftParticleEffect
+  sealed trait minecraftColondriplava
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColondriplava: minecraftColondriplava = "minecraft:driplava".asInstanceOf[minecraftColondriplava]
   
   @js.native
-  sealed trait minecraftColonenchantingtable extends MinecraftParticleEffect
+  sealed trait minecraftColondripwater
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColondripwater: minecraftColondripwater = "minecraft:dripwater".asInstanceOf[minecraftColondripwater]
   
   @js.native
-  sealed trait minecraftColonendrod extends MinecraftParticleEffect
+  sealed trait minecraftColonenchantingtable
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonenchantingtable: minecraftColonenchantingtable = "minecraft:enchantingtable".asInstanceOf[minecraftColonenchantingtable]
   
   @js.native
-  sealed trait minecraftColonevaporation extends MinecraftParticleEffect
+  sealed trait minecraftColonendrod
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonendrod: minecraftColonendrod = "minecraft:endrod".asInstanceOf[minecraftColonendrod]
   
   @js.native
-  sealed trait minecraftColonexplode extends MinecraftParticleEffect
+  sealed trait minecraftColonevaporation
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonevaporation: minecraftColonevaporation = "minecraft:evaporation".asInstanceOf[minecraftColonevaporation]
   
   @js.native
-  sealed trait minecraftColonfallingdust extends MinecraftParticleEffect
+  sealed trait minecraftColonexplode
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonexplode: minecraftColonexplode = "minecraft:explode".asInstanceOf[minecraftColonexplode]
   
   @js.native
-  sealed trait minecraftColonfireworksspark extends MinecraftParticleEffect
+  sealed trait minecraftColonfallingdust
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonfallingdust: minecraftColonfallingdust = "minecraft:fallingdust".asInstanceOf[minecraftColonfallingdust]
   
   @js.native
-  sealed trait minecraftColonflame extends MinecraftParticleEffect
+  sealed trait minecraftColonfireworksspark
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonfireworksspark: minecraftColonfireworksspark = "minecraft:fireworksspark".asInstanceOf[minecraftColonfireworksspark]
   
   @js.native
-  sealed trait minecraftColonheart extends MinecraftParticleEffect
+  sealed trait minecraftColonflame
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonflame: minecraftColonflame = "minecraft:flame".asInstanceOf[minecraftColonflame]
   
   @js.native
-  sealed trait minecraftColonhugeexplosion extends MinecraftParticleEffect
+  sealed trait minecraftColonheart
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonheart: minecraftColonheart = "minecraft:heart".asInstanceOf[minecraftColonheart]
   
   @js.native
-  sealed trait minecraftColoniconcrack extends MinecraftParticleEffect
+  sealed trait minecraftColonhugeexplosion
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonhugeexplosion: minecraftColonhugeexplosion = "minecraft:hugeexplosion".asInstanceOf[minecraftColonhugeexplosion]
   
   @js.native
-  sealed trait minecraftColonink extends MinecraftParticleEffect
+  sealed trait minecraftColoniconcrack
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColoniconcrack: minecraftColoniconcrack = "minecraft:iconcrack".asInstanceOf[minecraftColoniconcrack]
   
   @js.native
-  sealed trait minecraftColonlargeexplode extends MinecraftParticleEffect
+  sealed trait minecraftColonink
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonink: minecraftColonink = "minecraft:ink".asInstanceOf[minecraftColonink]
   
   @js.native
-  sealed trait minecraftColonlargesmoke extends MinecraftParticleEffect
+  sealed trait minecraftColonlargeexplode
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonlargeexplode: minecraftColonlargeexplode = "minecraft:largeexplode".asInstanceOf[minecraftColonlargeexplode]
   
   @js.native
-  sealed trait minecraftColonlava extends MinecraftParticleEffect
+  sealed trait minecraftColonlargesmoke
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonlargesmoke: minecraftColonlargesmoke = "minecraft:largesmoke".asInstanceOf[minecraftColonlargesmoke]
   
   @js.native
-  sealed trait minecraftColonmobappearance extends MinecraftParticleEffect
+  sealed trait minecraftColonlava
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonlava: minecraftColonlava = "minecraft:lava".asInstanceOf[minecraftColonlava]
   
   @js.native
-  sealed trait minecraftColonmobflame extends MinecraftParticleEffect
+  sealed trait minecraftColonmobappearance
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonmobappearance: minecraftColonmobappearance = "minecraft:mobappearance".asInstanceOf[minecraftColonmobappearance]
   
   @js.native
-  sealed trait minecraftColonmobspell extends MinecraftParticleEffect
+  sealed trait minecraftColonmobflame
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonmobflame: minecraftColonmobflame = "minecraft:mobflame".asInstanceOf[minecraftColonmobflame]
   
   @js.native
-  sealed trait minecraftColonmobspellambient extends MinecraftParticleEffect
+  sealed trait minecraftColonmobspell
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonmobspell: minecraftColonmobspell = "minecraft:mobspell".asInstanceOf[minecraftColonmobspell]
   
   @js.native
-  sealed trait minecraftColonmobspellinstantaneous extends MinecraftParticleEffect
+  sealed trait minecraftColonmobspellambient
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonmobspellambient: minecraftColonmobspellambient = "minecraft:mobspellambient".asInstanceOf[minecraftColonmobspellambient]
   
   @js.native
-  sealed trait minecraftColonnautilus extends MinecraftParticleEffect
+  sealed trait minecraftColonmobspellinstantaneous
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonmobspellinstantaneous: minecraftColonmobspellinstantaneous = "minecraft:mobspellinstantaneous".asInstanceOf[minecraftColonmobspellinstantaneous]
   
   @js.native
-  sealed trait minecraftColonnote extends MinecraftParticleEffect
+  sealed trait minecraftColonnautilus
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonnautilus: minecraftColonnautilus = "minecraft:nautilus".asInstanceOf[minecraftColonnautilus]
   
   @js.native
-  sealed trait minecraftColonportal extends MinecraftParticleEffect
+  sealed trait minecraftColonnote
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonnote: minecraftColonnote = "minecraft:note".asInstanceOf[minecraftColonnote]
   
   @js.native
-  sealed trait minecraftColonrainsplash extends MinecraftParticleEffect
+  sealed trait minecraftColonportal
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonportal: minecraftColonportal = "minecraft:portal".asInstanceOf[minecraftColonportal]
   
   @js.native
-  sealed trait minecraftColonreddust extends MinecraftParticleEffect
+  sealed trait minecraftColonrainsplash
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonrainsplash: minecraftColonrainsplash = "minecraft:rainsplash".asInstanceOf[minecraftColonrainsplash]
   
   @js.native
-  sealed trait minecraftColonslime extends MinecraftParticleEffect
+  sealed trait minecraftColonreddust
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonreddust: minecraftColonreddust = "minecraft:reddust".asInstanceOf[minecraftColonreddust]
   
   @js.native
-  sealed trait minecraftColonsmoke extends MinecraftParticleEffect
+  sealed trait minecraftColonslime
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonslime: minecraftColonslime = "minecraft:slime".asInstanceOf[minecraftColonslime]
   
   @js.native
-  sealed trait minecraftColonsnowballpoof extends MinecraftParticleEffect
+  sealed trait minecraftColonsmoke
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonsmoke: minecraftColonsmoke = "minecraft:smoke".asInstanceOf[minecraftColonsmoke]
   
   @js.native
-  sealed trait minecraftColonspell extends MinecraftParticleEffect
+  sealed trait minecraftColonsnowballpoof
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonsnowballpoof: minecraftColonsnowballpoof = "minecraft:snowballpoof".asInstanceOf[minecraftColonsnowballpoof]
   
   @js.native
-  sealed trait minecraftColonterrain extends MinecraftParticleEffect
+  sealed trait minecraftColonspell
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonspell: minecraftColonspell = "minecraft:spell".asInstanceOf[minecraftColonspell]
   
   @js.native
-  sealed trait minecraftColontotem extends MinecraftParticleEffect
+  sealed trait minecraftColonterrain
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonterrain: minecraftColonterrain = "minecraft:terrain".asInstanceOf[minecraftColonterrain]
   
   @js.native
-  sealed trait minecraftColontownaura extends MinecraftParticleEffect
+  sealed trait minecraftColontotem
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColontotem: minecraftColontotem = "minecraft:totem".asInstanceOf[minecraftColontotem]
   
   @js.native
-  sealed trait minecraftColontrackingemitter extends MinecraftParticleEffect
+  sealed trait minecraftColontownaura
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColontownaura: minecraftColontownaura = "minecraft:townaura".asInstanceOf[minecraftColontownaura]
   
   @js.native
-  sealed trait minecraftColonvillagerangry extends MinecraftParticleEffect
+  sealed trait minecraftColontrackingemitter
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColontrackingemitter: minecraftColontrackingemitter = "minecraft:trackingemitter".asInstanceOf[minecraftColontrackingemitter]
   
   @js.native
-  sealed trait minecraftColonvillagerhappy extends MinecraftParticleEffect
+  sealed trait minecraftColonvillagerangry
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonvillagerangry: minecraftColonvillagerangry = "minecraft:villagerangry".asInstanceOf[minecraftColonvillagerangry]
   
   @js.native
-  sealed trait minecraftColonwatersplash extends MinecraftParticleEffect
+  sealed trait minecraftColonvillagerhappy
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonvillagerhappy: minecraftColonvillagerhappy = "minecraft:villagerhappy".asInstanceOf[minecraftColonvillagerhappy]
   
   @js.native
-  sealed trait minecraftColonwaterwake extends MinecraftParticleEffect
+  sealed trait minecraftColonwatersplash
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonwatersplash: minecraftColonwatersplash = "minecraft:watersplash".asInstanceOf[minecraftColonwatersplash]
   
   @js.native
-  sealed trait minecraftColonwitchspell extends MinecraftParticleEffect
+  sealed trait minecraftColonwaterwake
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonwaterwake: minecraftColonwaterwake = "minecraft:waterwake".asInstanceOf[minecraftColonwaterwake]
   
   @js.native
-  sealed trait nether extends MinecraftDimension
+  sealed trait minecraftColonwitchspell
+    extends StObject
+       with MinecraftParticleEffect
+  inline def minecraftColonwitchspell: minecraftColonwitchspell = "minecraft:witchspell".asInstanceOf[minecraftColonwitchspell]
   
   @js.native
-  sealed trait not extends js.Object
+  sealed trait nether
+    extends StObject
+       with MinecraftDimension
+  inline def nether: nether = "nether".asInstanceOf[nether]
   
   @js.native
-  sealed trait other extends js.Object
+  sealed trait not extends StObject
+  inline def not: not = "not".asInstanceOf[not]
   
   @js.native
-  sealed trait overworld extends MinecraftDimension
+  sealed trait other extends StObject
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait parent extends js.Object
+  sealed trait overworld
+    extends StObject
+       with MinecraftDimension
+  inline def overworld: overworld = "overworld".asInstanceOf[overworld]
   
   @js.native
-  sealed trait player extends js.Object
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait player extends StObject
+  inline def player: player = "player".asInstanceOf[player]
   
   @js.native
-  sealed trait self extends js.Object
+  sealed trait query extends StObject
+  inline def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait target extends js.Object
+  sealed trait self extends StObject
+  inline def self: self = "self".asInstanceOf[self]
   
   @js.native
-  sealed trait `the end` extends MinecraftDimension
+  sealed trait target extends StObject
+  inline def target: target = "target".asInstanceOf[target]
   
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def LessthansignGreaterthansign: LessthansignGreaterthansign = "<>".asInstanceOf[LessthansignGreaterthansign]
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
-  @scala.inline
-  def component: component = "component".asInstanceOf[component]
-  @scala.inline
-  def entity: entity = "entity".asInstanceOf[entity]
-  @scala.inline
-  def entity_ticking_area: entity_ticking_area = "entity_ticking_area".asInstanceOf[entity_ticking_area]
-  @scala.inline
-  def equals: equals = "equals".asInstanceOf[equals]
-  @scala.inline
-  def event_data: event_data = "event_data".asInstanceOf[event_data]
-  @scala.inline
-  def item_entity: item_entity = "item_entity".asInstanceOf[item_entity]
-  @scala.inline
-  def item_stack: item_stack = "item_stack".asInstanceOf[item_stack]
-  @scala.inline
-  def level: level = "level".asInstanceOf[level]
-  @scala.inline
-  def level_ticking_area: level_ticking_area = "level_ticking_area".asInstanceOf[level_ticking_area]
-  @scala.inline
-  def minecraftColonblockbreak: minecraftColonblockbreak = "minecraft:blockbreak".asInstanceOf[minecraftColonblockbreak]
-  @scala.inline
-  def minecraftColonblockdust: minecraftColonblockdust = "minecraft:blockdust".asInstanceOf[minecraftColonblockdust]
-  @scala.inline
-  def minecraftColonbubble: minecraftColonbubble = "minecraft:bubble".asInstanceOf[minecraftColonbubble]
-  @scala.inline
-  def minecraftColoncrit: minecraftColoncrit = "minecraft:crit".asInstanceOf[minecraftColoncrit]
-  @scala.inline
-  def minecraftColondragonbreath: minecraftColondragonbreath = "minecraft:dragonbreath".asInstanceOf[minecraftColondragonbreath]
-  @scala.inline
-  def minecraftColondriplava: minecraftColondriplava = "minecraft:driplava".asInstanceOf[minecraftColondriplava]
-  @scala.inline
-  def minecraftColondripwater: minecraftColondripwater = "minecraft:dripwater".asInstanceOf[minecraftColondripwater]
-  @scala.inline
-  def minecraftColonenchantingtable: minecraftColonenchantingtable = "minecraft:enchantingtable".asInstanceOf[minecraftColonenchantingtable]
-  @scala.inline
-  def minecraftColonendrod: minecraftColonendrod = "minecraft:endrod".asInstanceOf[minecraftColonendrod]
-  @scala.inline
-  def minecraftColonevaporation: minecraftColonevaporation = "minecraft:evaporation".asInstanceOf[minecraftColonevaporation]
-  @scala.inline
-  def minecraftColonexplode: minecraftColonexplode = "minecraft:explode".asInstanceOf[minecraftColonexplode]
-  @scala.inline
-  def minecraftColonfallingdust: minecraftColonfallingdust = "minecraft:fallingdust".asInstanceOf[minecraftColonfallingdust]
-  @scala.inline
-  def minecraftColonfireworksspark: minecraftColonfireworksspark = "minecraft:fireworksspark".asInstanceOf[minecraftColonfireworksspark]
-  @scala.inline
-  def minecraftColonflame: minecraftColonflame = "minecraft:flame".asInstanceOf[minecraftColonflame]
-  @scala.inline
-  def minecraftColonheart: minecraftColonheart = "minecraft:heart".asInstanceOf[minecraftColonheart]
-  @scala.inline
-  def minecraftColonhugeexplosion: minecraftColonhugeexplosion = "minecraft:hugeexplosion".asInstanceOf[minecraftColonhugeexplosion]
-  @scala.inline
-  def minecraftColoniconcrack: minecraftColoniconcrack = "minecraft:iconcrack".asInstanceOf[minecraftColoniconcrack]
-  @scala.inline
-  def minecraftColonink: minecraftColonink = "minecraft:ink".asInstanceOf[minecraftColonink]
-  @scala.inline
-  def minecraftColonlargeexplode: minecraftColonlargeexplode = "minecraft:largeexplode".asInstanceOf[minecraftColonlargeexplode]
-  @scala.inline
-  def minecraftColonlargesmoke: minecraftColonlargesmoke = "minecraft:largesmoke".asInstanceOf[minecraftColonlargesmoke]
-  @scala.inline
-  def minecraftColonlava: minecraftColonlava = "minecraft:lava".asInstanceOf[minecraftColonlava]
-  @scala.inline
-  def minecraftColonmobappearance: minecraftColonmobappearance = "minecraft:mobappearance".asInstanceOf[minecraftColonmobappearance]
-  @scala.inline
-  def minecraftColonmobflame: minecraftColonmobflame = "minecraft:mobflame".asInstanceOf[minecraftColonmobflame]
-  @scala.inline
-  def minecraftColonmobspell: minecraftColonmobspell = "minecraft:mobspell".asInstanceOf[minecraftColonmobspell]
-  @scala.inline
-  def minecraftColonmobspellambient: minecraftColonmobspellambient = "minecraft:mobspellambient".asInstanceOf[minecraftColonmobspellambient]
-  @scala.inline
-  def minecraftColonmobspellinstantaneous: minecraftColonmobspellinstantaneous = "minecraft:mobspellinstantaneous".asInstanceOf[minecraftColonmobspellinstantaneous]
-  @scala.inline
-  def minecraftColonnautilus: minecraftColonnautilus = "minecraft:nautilus".asInstanceOf[minecraftColonnautilus]
-  @scala.inline
-  def minecraftColonnote: minecraftColonnote = "minecraft:note".asInstanceOf[minecraftColonnote]
-  @scala.inline
-  def minecraftColonportal: minecraftColonportal = "minecraft:portal".asInstanceOf[minecraftColonportal]
-  @scala.inline
-  def minecraftColonrainsplash: minecraftColonrainsplash = "minecraft:rainsplash".asInstanceOf[minecraftColonrainsplash]
-  @scala.inline
-  def minecraftColonreddust: minecraftColonreddust = "minecraft:reddust".asInstanceOf[minecraftColonreddust]
-  @scala.inline
-  def minecraftColonslime: minecraftColonslime = "minecraft:slime".asInstanceOf[minecraftColonslime]
-  @scala.inline
-  def minecraftColonsmoke: minecraftColonsmoke = "minecraft:smoke".asInstanceOf[minecraftColonsmoke]
-  @scala.inline
-  def minecraftColonsnowballpoof: minecraftColonsnowballpoof = "minecraft:snowballpoof".asInstanceOf[minecraftColonsnowballpoof]
-  @scala.inline
-  def minecraftColonspell: minecraftColonspell = "minecraft:spell".asInstanceOf[minecraftColonspell]
-  @scala.inline
-  def minecraftColonterrain: minecraftColonterrain = "minecraft:terrain".asInstanceOf[minecraftColonterrain]
-  @scala.inline
-  def minecraftColontotem: minecraftColontotem = "minecraft:totem".asInstanceOf[minecraftColontotem]
-  @scala.inline
-  def minecraftColontownaura: minecraftColontownaura = "minecraft:townaura".asInstanceOf[minecraftColontownaura]
-  @scala.inline
-  def minecraftColontrackingemitter: minecraftColontrackingemitter = "minecraft:trackingemitter".asInstanceOf[minecraftColontrackingemitter]
-  @scala.inline
-  def minecraftColonvillagerangry: minecraftColonvillagerangry = "minecraft:villagerangry".asInstanceOf[minecraftColonvillagerangry]
-  @scala.inline
-  def minecraftColonvillagerhappy: minecraftColonvillagerhappy = "minecraft:villagerhappy".asInstanceOf[minecraftColonvillagerhappy]
-  @scala.inline
-  def minecraftColonwatersplash: minecraftColonwatersplash = "minecraft:watersplash".asInstanceOf[minecraftColonwatersplash]
-  @scala.inline
-  def minecraftColonwaterwake: minecraftColonwaterwake = "minecraft:waterwake".asInstanceOf[minecraftColonwaterwake]
-  @scala.inline
-  def minecraftColonwitchspell: minecraftColonwitchspell = "minecraft:witchspell".asInstanceOf[minecraftColonwitchspell]
-  @scala.inline
-  def nether: nether = "nether".asInstanceOf[nether]
-  @scala.inline
-  def not: not = "not".asInstanceOf[not]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def overworld: overworld = "overworld".asInstanceOf[overworld]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def player: player = "player".asInstanceOf[player]
-  @scala.inline
-  def query: query = "query".asInstanceOf[query]
-  @scala.inline
-  def self: self = "self".asInstanceOf[self]
-  @scala.inline
-  def target: target = "target".asInstanceOf[target]
-  @scala.inline
-  def `the end`: `the end` = "the end".asInstanceOf[`the end`]
+  @js.native
+  sealed trait `the end`
+    extends StObject
+       with MinecraftDimension
+  inline def `the end`: `the end` = ("the end").asInstanceOf[`the end`]
 }
-

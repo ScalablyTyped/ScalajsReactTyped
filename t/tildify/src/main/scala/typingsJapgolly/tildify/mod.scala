@@ -1,12 +1,14 @@
 package typingsJapgolly.tildify
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tildify", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(absolutePath: String): String = js.native
+object mod {
+  
+  @JSImport("tildify", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(absolutePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(absolutePath.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

@@ -1,20 +1,53 @@
 package typingsJapgolly.ariaQuery.mod
 
+import typingsJapgolly.ariaQuery.ariaQueryStrings.`descendant of table`
+import typingsJapgolly.ariaQuery.ariaQueryStrings.`direct descendant of document`
+import typingsJapgolly.ariaQuery.ariaQueryStrings.`direct descendant of olComma ul or menu`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ARIARoleRelationConcept extends js.Object {
+trait ARIARoleRelationConcept extends StObject {
+  
   var attributes: js.UndefOr[js.Array[ARIARoleRelationConceptAttribute]] = js.undefined
+  
+  // These constraints are drawn from the mapping between ARIA and HTML:
+  // https://www.w3.org/TR/html-aria
+  var constraints: js.UndefOr[
+    js.Array[
+      (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (/* direct descendant of details element with the open attribute defined */ String) | (`descendant of table`)
+    ]
+  ] = js.undefined
+  
   var name: String
 }
-
 object ARIARoleRelationConcept {
-  @scala.inline
-  def apply(name: String, attributes: js.Array[ARIARoleRelationConceptAttribute] = null): ARIARoleRelationConcept = {
+  
+  inline def apply(name: String): ARIARoleRelationConcept = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ARIARoleRelationConcept]
   }
+  
+  extension [Self <: ARIARoleRelationConcept](x: Self) {
+    
+    inline def setAttributes(value: js.Array[ARIARoleRelationConceptAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAttributesVarargs(value: ARIARoleRelationConceptAttribute*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setConstraints(
+      value: js.Array[
+          (`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (/* direct descendant of details element with the open attribute defined */ String) | (`descendant of table`)
+        ]
+    ): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+    
+    inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+    
+    inline def setConstraintsVarargs(
+      value: ((`direct descendant of document`) | (`direct descendant of olComma ul or menu`) | (/* direct descendant of details element with the open attribute defined */ String) | (`descendant of table`))*
+    ): Self = StObject.set(x, "constraints", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

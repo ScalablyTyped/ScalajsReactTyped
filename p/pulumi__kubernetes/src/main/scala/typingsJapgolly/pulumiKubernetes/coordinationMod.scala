@@ -1,190 +1,143 @@
 package typingsJapgolly.pulumiKubernetes
 
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseList
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseListArgs
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.Lease
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.LeaseArgs
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatch
+import typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes/coordination", JSImport.Namespace)
-@js.native
-object coordinationMod extends js.Object {
-  @js.native
-  object v1 extends js.Object {
-    @js.native
-    class Lease protected ()
-      extends typingsJapgolly.pulumiKubernetes.coordinationV1Mod.Lease {
-      /**
-        * Create a coordination.v1.Lease resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1.Lease) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1.Lease,
-        opts: CustomResourceOptions
-      ) = this()
-    }
+object coordinationMod {
+  
+  object v1beta1 {
     
-    @js.native
-    class LeaseList protected ()
-      extends typingsJapgolly.pulumiKubernetes.coordinationV1Mod.LeaseList {
+    object Lease {
+      
+      @JSImport("@pulumi/kubernetes/coordination", "v1beta1.Lease")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a coordination.v1.LeaseList resource with the given unique name, arguments, and options.
+        * Get an existing Lease resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1.LeaseList) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1.LeaseList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object Lease extends js.Object {
-      /**
-        * Get the state of an existing `Lease` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1LeaseMod.Lease = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1LeaseMod.Lease = js.native
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.Lease = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.Lease]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.Lease = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseMod.Lease]
+      
       /**
         * Returns true if the given object is an instance of Lease.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/Lease.Lease */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/lease.Lease */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/lease.Lease */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes/coordination", "v1beta1.Lease")
     @js.native
-    object LeaseList extends js.Object {
+    open class LeaseCls protected () extends Lease {
       /**
-        * Get the state of an existing `LeaseList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1LeaseListMod.LeaseList = js.native
-      /**
-        * Returns true if the given object is an instance of LeaseList.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1/LeaseList.LeaseList */ Boolean = js.native
-    }
-    
-  }
-  
-  @js.native
-  object v1beta1 extends js.Object {
-    @js.native
-    class Lease protected ()
-      extends typingsJapgolly.pulumiKubernetes.coordinationV1beta1Mod.Lease {
-      /**
-        * Create a coordination.v1beta1.Lease resource with the given unique name, arguments, and options.
+        * Create a Lease resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1beta1.Lease) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1beta1.Lease,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: LeaseArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: LeaseArgs, opts: CustomResourceOptions) = this()
     }
     
-    @js.native
-    class LeaseList protected ()
-      extends typingsJapgolly.pulumiKubernetes.coordinationV1beta1Mod.LeaseList {
+    object LeaseList {
+      
+      @JSImport("@pulumi/kubernetes/coordination", "v1beta1.LeaseList")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a coordination.v1beta1.LeaseList resource with the given unique name, arguments, and options.
+        * Get an existing LeaseList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeaseListMod.LeaseList]
+      
+      /**
+        * Returns true if the given object is an instance of LeaseList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/leaseList.LeaseList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/leaseList.LeaseList */ Boolean]
+    }
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes/coordination", "v1beta1.LeaseList")
+    @js.native
+    open class LeaseListCls protected () extends LeaseList {
+      /**
+        * Create a LeaseList resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(name: String, args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1beta1.LeaseList) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.coordination.v1beta1.LeaseList,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: LeaseListArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: LeaseListArgs, opts: CustomResourceOptions) = this()
     }
     
-    /* static members */
-    @js.native
-    object Lease extends js.Object {
+    object LeasePatch {
+      
+      @JSImport("@pulumi/kubernetes/coordination", "v1beta1.LeasePatch")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Get the state of an existing `Lease` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing LeasePatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.leaseMod.Lease = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.leaseMod.Lease = js.native
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatch]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.coordinationV1beta1LeasePatchMod.LeasePatch]
+      
       /**
-        * Returns true if the given object is an instance of Lease.  This is designed to work even
+        * Returns true if the given object is an instance of LeasePatch.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/Lease.Lease */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/leasePatch.LeasePatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/leasePatch.LeasePatch */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes/coordination", "v1beta1.LeasePatch")
     @js.native
-    object LeaseList extends js.Object {
+    open class LeasePatchCls protected () extends LeasePatch {
       /**
-        * Get the state of an existing `LeaseList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Create a LeasePatch resource with the given unique name, arguments, and options.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.leaseListMod.LeaseList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.leaseListMod.LeaseList = js.native
-      /**
-        * Returns true if the given object is an instance of LeaseList.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/coordination/v1beta1/LeaseList.LeaseList */ Boolean = js.native
+      def this(name: String) = this()
+      def this(name: String, args: LeasePatchArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: LeasePatchArgs, opts: CustomResourceOptions) = this()
     }
-    
   }
-  
 }
-

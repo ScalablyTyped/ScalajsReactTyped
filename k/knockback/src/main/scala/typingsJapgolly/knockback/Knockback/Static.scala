@@ -1,63 +1,86 @@
 package typingsJapgolly.knockback.Knockback
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.backbone.mod.Collection
 import typingsJapgolly.backbone.mod.Model
-import typingsJapgolly.knockout.KnockoutObservable
+import typingsJapgolly.backbone.mod.ModelSetOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Static extends Utils {
-  var CollectionObservable: js.Any = js.native
-  var ViewModel: js.Any = js.native
-  def applyBindings(viewModel: ViewModel): js.Any = js.native
-  def applyBindings(viewModel: ViewModel, node: Element): js.Any = js.native
+trait Static
+  extends StObject
+     with Utils {
+  
+  var CollectionObservable: Any = js.native
+  
+  var ViewModel: Any = js.native
+  
+  def applyBindings(viewModel: ViewModel): Any = js.native
+  def applyBindings(viewModel: ViewModel, node: Element): Any = js.native
+  
   def collectionObservable(): CollectionObservable = js.native
-  def collectionObservable(model: Collection[Model]): CollectionObservable = js.native
-  def collectionObservable(model: Collection[Model], options: CollectionOptions): CollectionObservable = js.native
-  def defaultObservable(targetObservable: KnockoutObservable[_], defaultValue: js.Any): KnockoutObservable[_] = js.native
-  def formattedObservable(format: String, args: js.Array[_]): KnockoutObservable[_] = js.native
-  def formattedObservable(format: KnockoutObservable[_], args: js.Array[_]): KnockoutObservable[_] = js.native
-  def localizedObservable(data: js.Any, options: js.Any): KnockoutObservable[_] = js.native
+  def collectionObservable(model: Unit, options: CollectionOptions): CollectionObservable = js.native
+  def collectionObservable(model: Collection[Model[Any, ModelSetOptions, Any]]): CollectionObservable = js.native
+  def collectionObservable(model: Collection[Model[Any, ModelSetOptions, Any]], options: CollectionOptions): CollectionObservable = js.native
+  
+  def defaultObservable(
+    targetObservable: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any,
+    defaultValue: Any
+  ): Any = js.native
+  
+  def formattedObservable(format: String, args: js.Array[Any]): Any = js.native
+  def formattedObservable(
+    format: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any,
+    args: js.Array[Any]
+  ): Any = js.native
+  
+  def localizedObservable(data: Any, options: Any): Any = js.native
+  
   def observable(
     /** the model to observe (can be null) */
-  model: Model,
+  model: Model[Any, ModelSetOptions, Any],
     /** the create options. String is a single attribute name, Array is an array of attribute names. */
   options_attributeName: String
-  ): KnockoutObservable[_] = js.native
+  ): Any = js.native
   def observable(
     /** the model to observe (can be null) */
-  model: Model,
+  model: Model[Any, ModelSetOptions, Any],
     /** the create options. String is a single attribute name, Array is an array of attribute names. */
   options_attributeName: String,
     /** the viewModel */
   vm: ViewModel
-  ): KnockoutObservable[_] = js.native
+  ): Any = js.native
   /** Base class for observing model attributes. */
   def observable(
     /** the model to observe (can be null) */
-  model: Model,
+  model: Model[Any, ModelSetOptions, Any],
     /** the create options. String is a single attribute name, Array is an array of attribute names. */
   options: IObservableOptions
-  ): KnockoutObservable[_] = js.native
+  ): Any = js.native
   def observable(
     /** the model to observe (can be null) */
-  model: Model,
+  model: Model[Any, ModelSetOptions, Any],
     /** the create options. String is a single attribute name, Array is an array of attribute names. */
   options: IObservableOptions,
     /** the viewModel */
   vm: ViewModel
-  ): KnockoutObservable[_] = js.native
-  def release(`object`: js.Any): js.Any = js.native
-  def release(`object`: js.Any, pre_release: js.Function0[Unit]): js.Any = js.native
-  def releaseKeys(`object`: js.Any): js.Any = js.native
-  def releaseOnNodeRemove(viewmodel: ViewModel, node: Element): js.Any = js.native
-  def renderAutoReleasedTemplate(template: String, viewModel: ViewModel, options: js.Any): js.Any = js.native
-  def renderTemplate(template: String, viewModel: ViewModel, options: js.Any): js.Any = js.native
-  def viewModel(): KnockoutObservable[_] = js.native
-  def viewModel(model: Model): KnockoutObservable[_] = js.native
-  def viewModel(model: Model, options: js.Any): KnockoutObservable[_] = js.native
+  ): Any = js.native
+  
+  def release(`object`: Any): Any = js.native
+  def release(`object`: Any, pre_release: js.Function0[Unit]): Any = js.native
+  
+  def releaseKeys(`object`: Any): Any = js.native
+  
+  def releaseOnNodeRemove(viewmodel: ViewModel, node: Element): Any = js.native
+  
+  def renderAutoReleasedTemplate(template: String, viewModel: ViewModel, options: Any): Any = js.native
+  
+  def renderTemplate(template: String, viewModel: ViewModel, options: Any): Any = js.native
+  
+  def viewModel(): Any = js.native
+  def viewModel(model: Unit, options: Any): Any = js.native
+  def viewModel(model: Model[Any, ModelSetOptions, Any]): Any = js.native
+  def viewModel(model: Model[Any, ModelSetOptions, Any], options: Any): Any = js.native
 }
-

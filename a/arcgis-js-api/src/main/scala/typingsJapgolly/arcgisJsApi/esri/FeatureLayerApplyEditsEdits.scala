@@ -1,74 +1,104 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerApplyEditsEdits extends Object {
+trait FeatureLayerApplyEditsEdits
+  extends StObject
+     with Object {
+  
   /**
-    * An array of attachments to be added. Applies only when the `options.globalIdUsed` parameter is set to `true`. User must provide [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for all attachments to be added.
+    * An array of attachments to be added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var addAttachments: js.UndefOr[js.Array[AttachmentEdit]] = js.undefined
+  
   /**
-    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added. Values of non nullable fields must be provided when adding new features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var addFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.undefined
+  
   /**
-    * An array of [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for attachments to be deleted. Applies only when the `options.globalIdUsed` parameter is set to `true`.
+    * An array of [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for attachments to be deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var deleteAttachments: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features, or an array of objects with `objectId` or `globalId` of each feature to be deleted. When an array or collection of features is passed, each feature must have a valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). When an array of objects is used, each object must have a valid value set for `objectId` or `globalId` property.
+    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features, or an array of objects with `objectId` or `globalId` of each feature to be deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  var deleteFeatures: js.UndefOr[(js.Array[_ | Graphic]) | Collection[Graphic]] = js.undefined
+  var deleteFeatures: js.UndefOr[(js.Array[Any | Graphic]) | Collection[Graphic]] = js.undefined
+  
   /**
-    * An array of attachments to be updated. Applies only when the `options.globalIdUsed` parameter is set to `true`. User must provide [globalId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)s for all attachments to be updated.
+    * An array of attachments to be updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var updateAttachments: js.UndefOr[js.Array[AttachmentEdit]] = js.undefined
+  
   /**
-    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated. Each feature must have valid [objectId](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField). Values of non nullable fields must be provided when updating features. Date fields must have [numeric](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) values representing universal time.
+    * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
   var updateFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.undefined
 }
-
 object FeatureLayerApplyEditsEdits {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    addAttachments: js.Array[AttachmentEdit] = null,
-    addFeatures: js.Array[Graphic] | Collection[Graphic] = null,
-    deleteAttachments: js.Array[String] = null,
-    deleteFeatures: (js.Array[_ | Graphic]) | Collection[Graphic] = null,
-    updateAttachments: js.Array[AttachmentEdit] = null,
-    updateFeatures: js.Array[Graphic] | Collection[Graphic] = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): FeatureLayerApplyEditsEdits = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (addAttachments != null) __obj.updateDynamic("addAttachments")(addAttachments.asInstanceOf[js.Any])
-    if (addFeatures != null) __obj.updateDynamic("addFeatures")(addFeatures.asInstanceOf[js.Any])
-    if (deleteAttachments != null) __obj.updateDynamic("deleteAttachments")(deleteAttachments.asInstanceOf[js.Any])
-    if (deleteFeatures != null) __obj.updateDynamic("deleteFeatures")(deleteFeatures.asInstanceOf[js.Any])
-    if (updateAttachments != null) __obj.updateDynamic("updateAttachments")(updateAttachments.asInstanceOf[js.Any])
-    if (updateFeatures != null) __obj.updateDynamic("updateFeatures")(updateFeatures.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[FeatureLayerApplyEditsEdits]
   }
+  
+  extension [Self <: FeatureLayerApplyEditsEdits](x: Self) {
+    
+    inline def setAddAttachments(value: js.Array[AttachmentEdit]): Self = StObject.set(x, "addAttachments", value.asInstanceOf[js.Any])
+    
+    inline def setAddAttachmentsUndefined: Self = StObject.set(x, "addAttachments", js.undefined)
+    
+    inline def setAddAttachmentsVarargs(value: AttachmentEdit*): Self = StObject.set(x, "addAttachments", js.Array(value*))
+    
+    inline def setAddFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "addFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setAddFeaturesUndefined: Self = StObject.set(x, "addFeatures", js.undefined)
+    
+    inline def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value*))
+    
+    inline def setDeleteAttachments(value: js.Array[String]): Self = StObject.set(x, "deleteAttachments", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteAttachmentsUndefined: Self = StObject.set(x, "deleteAttachments", js.undefined)
+    
+    inline def setDeleteAttachmentsVarargs(value: String*): Self = StObject.set(x, "deleteAttachments", js.Array(value*))
+    
+    inline def setDeleteFeatures(value: (js.Array[Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)
+    
+    inline def setDeleteFeaturesVarargs(value: (Any | Graphic)*): Self = StObject.set(x, "deleteFeatures", js.Array(value*))
+    
+    inline def setUpdateAttachments(value: js.Array[AttachmentEdit]): Self = StObject.set(x, "updateAttachments", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateAttachmentsUndefined: Self = StObject.set(x, "updateAttachments", js.undefined)
+    
+    inline def setUpdateAttachmentsVarargs(value: AttachmentEdit*): Self = StObject.set(x, "updateAttachments", js.Array(value*))
+    
+    inline def setUpdateFeatures(value: js.Array[Graphic] | Collection[Graphic]): Self = StObject.set(x, "updateFeatures", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateFeaturesUndefined: Self = StObject.set(x, "updateFeatures", js.undefined)
+    
+    inline def setUpdateFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "updateFeatures", js.Array(value*))
+  }
 }
-

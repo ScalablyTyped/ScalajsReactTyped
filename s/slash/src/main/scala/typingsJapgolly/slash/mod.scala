@@ -1,12 +1,14 @@
 package typingsJapgolly.slash
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("slash", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(path: String): String = js.native
+object mod {
+  
+  @JSImport("slash", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

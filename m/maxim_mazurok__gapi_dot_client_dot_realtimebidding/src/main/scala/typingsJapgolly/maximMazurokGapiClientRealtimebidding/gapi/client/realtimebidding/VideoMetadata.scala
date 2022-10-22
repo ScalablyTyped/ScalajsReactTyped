@@ -1,0 +1,65 @@
+package typingsJapgolly.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebidding
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait VideoMetadata extends StObject {
+  
+  /** The duration of the ad. Can be used to filter the response of the creatives.list method. */
+  var duration: js.UndefOr[String] = js.undefined
+  
+  /** Is this a valid VAST ad? Can be used to filter the response of the creatives.list method. */
+  var isValidVast: js.UndefOr[Boolean] = js.undefined
+  
+  /** Is this a VPAID ad? Can be used to filter the response of the creatives.list method. */
+  var isVpaid: js.UndefOr[Boolean] = js.undefined
+  
+  /** The list of all media files declared in the VAST. If there are multiple VASTs in a wrapper chain, this includes the media files from the deepest one in the chain. */
+  var mediaFiles: js.UndefOr[js.Array[MediaFile]] = js.undefined
+  
+  /**
+    * The minimum duration that the user has to watch before being able to skip this ad. If the field is not set, the ad is not skippable. If the field is set, the ad is skippable. Can be
+    * used to filter the response of the creatives.list method.
+    */
+  var skipOffset: js.UndefOr[String] = js.undefined
+  
+  /** The maximum VAST version across all wrapped VAST documents. Can be used to filter the response of the creatives.list method. */
+  var vastVersion: js.UndefOr[String] = js.undefined
+}
+object VideoMetadata {
+  
+  inline def apply(): VideoMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[VideoMetadata]
+  }
+  
+  extension [Self <: VideoMetadata](x: Self) {
+    
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setIsValidVast(value: Boolean): Self = StObject.set(x, "isValidVast", value.asInstanceOf[js.Any])
+    
+    inline def setIsValidVastUndefined: Self = StObject.set(x, "isValidVast", js.undefined)
+    
+    inline def setIsVpaid(value: Boolean): Self = StObject.set(x, "isVpaid", value.asInstanceOf[js.Any])
+    
+    inline def setIsVpaidUndefined: Self = StObject.set(x, "isVpaid", js.undefined)
+    
+    inline def setMediaFiles(value: js.Array[MediaFile]): Self = StObject.set(x, "mediaFiles", value.asInstanceOf[js.Any])
+    
+    inline def setMediaFilesUndefined: Self = StObject.set(x, "mediaFiles", js.undefined)
+    
+    inline def setMediaFilesVarargs(value: MediaFile*): Self = StObject.set(x, "mediaFiles", js.Array(value*))
+    
+    inline def setSkipOffset(value: String): Self = StObject.set(x, "skipOffset", value.asInstanceOf[js.Any])
+    
+    inline def setSkipOffsetUndefined: Self = StObject.set(x, "skipOffset", js.undefined)
+    
+    inline def setVastVersion(value: String): Self = StObject.set(x, "vastVersion", value.asInstanceOf[js.Any])
+    
+    inline def setVastVersionUndefined: Self = StObject.set(x, "vastVersion", js.undefined)
+  }
+}

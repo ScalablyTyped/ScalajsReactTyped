@@ -1,27 +1,41 @@
 package typingsJapgolly.bson.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.buffer.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "Decimal128")
 @js.native
-class Decimal128 protected () extends js.Object {
+open class Decimal128 protected () extends StObject {
+  def this(bytes: String) = this()
   /**
-    * @param bytes A buffer containing the raw Decimal128 bytes.
+    * @param bytes - a buffer containing the raw Decimal128 bytes in little endian order,
+    *                or a string representation as returned by .toString()
     */
   def this(bytes: Buffer) = this()
-  /** A buffer containing the raw Decimal128 bytes. */
+  
+  var _bsontype: typingsJapgolly.bson.bsonStrings.Decimal128 = js.native
+  
   val bytes: Buffer = js.native
-  def toJSON(): String = js.native
+  
+  /* Excluded from this release type: toExtendedJSON */
+  /* Excluded from this release type: fromExtendedJSON */
+  def inspect(): String = js.native
+  
+  def toJSON(): Decimal128Extended = js.native
 }
-
 /* static members */
-@JSImport("bson", "Decimal128")
-@js.native
-object Decimal128 extends js.Object {
-  /** Create a Decimal128 instance from a string representation. */
-  def fromString(s: String): Decimal128 = js.native
+object Decimal128 {
+  
+  @JSImport("bson", "Decimal128")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Create a Decimal128 instance from a string representation
+    *
+    * @param representation - a numeric string representation.
+    */
+  inline def fromString(representation: String): Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(representation.asInstanceOf[js.Any]).asInstanceOf[Decimal128]
 }
-

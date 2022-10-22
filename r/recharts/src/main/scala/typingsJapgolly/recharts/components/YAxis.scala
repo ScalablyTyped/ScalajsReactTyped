@@ -1,12 +1,10 @@
 package typingsJapgolly.recharts.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.recharts.anon.PartialYPadding
 import typingsJapgolly.recharts.mod.AxisDomain
 import typingsJapgolly.recharts.mod.AxisInterval
 import typingsJapgolly.recharts.mod.ContentRenderer
@@ -15,122 +13,123 @@ import typingsJapgolly.recharts.mod.LabelProps
 import typingsJapgolly.recharts.mod.RechartsFunction
 import typingsJapgolly.recharts.mod.ScaleType
 import typingsJapgolly.recharts.mod.YAxisProps
-import typingsJapgolly.recharts.mod.YPadding
 import typingsJapgolly.recharts.rechartsStrings.category
 import typingsJapgolly.recharts.rechartsStrings.left
 import typingsJapgolly.recharts.rechartsStrings.number
 import typingsJapgolly.recharts.rechartsStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object YAxis {
-  def apply(
-    allowDataOverflow: js.UndefOr[Boolean] = js.undefined,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    angle: Int | Double = null,
-    axisLine: Boolean | js.Object = null,
-    dataKey: DataKey = null,
-    domain: js.Tuple2[AxisDomain, AxisDomain] = null,
-    dx: Int | Double = null,
-    dy: Int | Double = null,
-    height: Int | Double = null,
-    hide: js.UndefOr[Boolean] = js.undefined,
-    interval: AxisInterval = null,
-    label: String | Double | typingsJapgolly.recharts.mod.Label | LabelProps = null,
-    minTickGap: Int | Double = null,
-    mirror: js.UndefOr[Boolean] = js.undefined,
-    name: String | Double = null,
-    onClick: /* repeated */ js.Any => Callback = null,
-    onMouseDown: /* repeated */ js.Any => Callback = null,
-    onMouseEnter: /* repeated */ js.Any => Callback = null,
-    onMouseLeave: /* repeated */ js.Any => Callback = null,
-    onMouseMove: /* repeated */ js.Any => Callback = null,
-    onMouseOut: /* repeated */ js.Any => Callback = null,
-    onMouseOver: /* repeated */ js.Any => Callback = null,
-    onMouseUp: /* repeated */ js.Any => Callback = null,
-    onTouchCancel: /* repeated */ js.Any => Callback = null,
-    onTouchEnd: /* repeated */ js.Any => Callback = null,
-    onTouchMove: /* repeated */ js.Any => Callback = null,
-    onTouchStart: /* repeated */ js.Any => Callback = null,
-    orientation: left | right = null,
-    padding: YPadding = null,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    scale: ScaleType | RechartsFunction = null,
-    stroke: String = null,
-    tick: Boolean | ContentRenderer[_] | js.Object | Element = null,
-    tickCount: Int | Double = null,
-    tickFormatter: /* value */ js.Any => CallbackTo[js.Any] = null,
-    tickLine: Boolean | js.Object = null,
-    tickMargin: Int | Double = null,
-    tickSize: Int | Double = null,
-    ticks: js.Array[_] = null,
-    `type`: number | category = null,
-    unit: String | Double = null,
-    width: Int | Double = null,
-    yAxisId: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[YAxisProps, typingsJapgolly.recharts.mod.YAxis, Unit, YAxisProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(allowDataOverflow)) __obj.updateDynamic("allowDataOverflow")(allowDataOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine.asInstanceOf[js.Any])
-    if (dataKey != null) __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (minTickGap != null) __obj.updateDynamic("minTickGap")(minTickGap.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onClick(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseOut(t0).runNow()))
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseOver(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseUp(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onTouchStart(t0).runNow()))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickCount != null) __obj.updateDynamic("tickCount")(tickCount.asInstanceOf[js.Any])
-    if (tickFormatter != null) __obj.updateDynamic("tickFormatter")(js.Any.fromFunction1((t0: /* value */ js.Any) => tickFormatter(t0).runNow()))
-    if (tickLine != null) __obj.updateDynamic("tickLine")(tickLine.asInstanceOf[js.Any])
-    if (tickMargin != null) __obj.updateDynamic("tickMargin")(tickMargin.asInstanceOf[js.Any])
-    if (tickSize != null) __obj.updateDynamic("tickSize")(tickSize.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (yAxisId != null) __obj.updateDynamic("yAxisId")(yAxisId.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.recharts.mod.YAxisProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.recharts.mod.YAxis](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.recharts.mod.YAxisProps])(children: _*)
-  }
   @JSImport("recharts", "YAxis")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.recharts.mod.YAxis] {
+    
+    inline def allowDataOverflow(value: Boolean): this.type = set("allowDataOverflow", value.asInstanceOf[js.Any])
+    
+    inline def allowDecimals(value: Boolean): this.type = set("allowDecimals", value.asInstanceOf[js.Any])
+    
+    inline def allowDuplicatedCategory(value: Boolean): this.type = set("allowDuplicatedCategory", value.asInstanceOf[js.Any])
+    
+    inline def angle(value: Double): this.type = set("angle", value.asInstanceOf[js.Any])
+    
+    inline def axisLine(value: Boolean | js.Object): this.type = set("axisLine", value.asInstanceOf[js.Any])
+    
+    inline def dataKey(value: DataKey): this.type = set("dataKey", value.asInstanceOf[js.Any])
+    
+    inline def dataKeyFunction1(value: /* dataObject */ Any => String | Double | (js.Tuple2[Double, Double]) | Null): this.type = set("dataKey", js.Any.fromFunction1(value))
+    
+    inline def domain(value: js.Tuple2[AxisDomain, AxisDomain]): this.type = set("domain", value.asInstanceOf[js.Any])
+    
+    inline def dx(value: Double): this.type = set("dx", value.asInstanceOf[js.Any])
+    
+    inline def dy(value: Double): this.type = set("dy", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def hide(value: Boolean): this.type = set("hide", value.asInstanceOf[js.Any])
+    
+    inline def interval(value: AxisInterval): this.type = set("interval", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String | Double | typingsJapgolly.recharts.mod.Label | LabelProps): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def minTickGap(value: Double): this.type = set("minTickGap", value.asInstanceOf[js.Any])
+    
+    inline def mirror(value: Boolean): this.type = set("mirror", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String | Double): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: RechartsFunction): this.type = set("onClick", value.asInstanceOf[js.Any])
+    
+    inline def onMouseDown(value: RechartsFunction): this.type = set("onMouseDown", value.asInstanceOf[js.Any])
+    
+    inline def onMouseEnter(value: RechartsFunction): this.type = set("onMouseEnter", value.asInstanceOf[js.Any])
+    
+    inline def onMouseLeave(value: RechartsFunction): this.type = set("onMouseLeave", value.asInstanceOf[js.Any])
+    
+    inline def onMouseMove(value: RechartsFunction): this.type = set("onMouseMove", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOut(value: RechartsFunction): this.type = set("onMouseOut", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOver(value: RechartsFunction): this.type = set("onMouseOver", value.asInstanceOf[js.Any])
+    
+    inline def onMouseUp(value: RechartsFunction): this.type = set("onMouseUp", value.asInstanceOf[js.Any])
+    
+    inline def onTouchCancel(value: RechartsFunction): this.type = set("onTouchCancel", value.asInstanceOf[js.Any])
+    
+    inline def onTouchEnd(value: RechartsFunction): this.type = set("onTouchEnd", value.asInstanceOf[js.Any])
+    
+    inline def onTouchMove(value: RechartsFunction): this.type = set("onTouchMove", value.asInstanceOf[js.Any])
+    
+    inline def onTouchStart(value: RechartsFunction): this.type = set("onTouchStart", value.asInstanceOf[js.Any])
+    
+    inline def orientation(value: left | right): this.type = set("orientation", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: PartialYPadding): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def reversed(value: Boolean): this.type = set("reversed", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: ScaleType | RechartsFunction): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: String): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def tick(value: Boolean | ContentRenderer[Any] | js.Object | Element): this.type = set("tick", value.asInstanceOf[js.Any])
+    
+    inline def tickCount(value: Double): this.type = set("tickCount", value.asInstanceOf[js.Any])
+    
+    inline def tickFormatter(value: /* value */ Any => Any): this.type = set("tickFormatter", js.Any.fromFunction1(value))
+    
+    inline def tickFunction1(value: Any => Node): this.type = set("tick", js.Any.fromFunction1(value))
+    
+    inline def tickLine(value: Boolean | js.Object): this.type = set("tickLine", value.asInstanceOf[js.Any])
+    
+    inline def tickMargin(value: Double): this.type = set("tickMargin", value.asInstanceOf[js.Any])
+    
+    inline def tickSize(value: Double): this.type = set("tickSize", value.asInstanceOf[js.Any])
+    
+    inline def tickVdomElement(value: VdomElement): this.type = set("tick", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def ticks(value: js.Array[Any]): this.type = set("ticks", value.asInstanceOf[js.Any])
+    
+    inline def ticksVarargs(value: Any*): this.type = set("ticks", js.Array(value*))
+    
+    inline def `type`(value: number | category): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def unit(value: String | Double): this.type = set("unit", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def yAxisId(value: String | Double): this.type = set("yAxisId", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: YAxis.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: YAxisProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

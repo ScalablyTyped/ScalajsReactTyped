@@ -1,51 +1,28 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "ExternalExpr")
 @js.native
-class ExternalExpr protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.ExternalExpr {
-  def this(value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: Null,
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type]
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type,
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type]
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: Null,
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: Null,
-    typeParams: Null,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type,
-    typeParams: js.Array[typingsJapgolly.angularCompiler.outputAstMod.Type],
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.outputAstMod.ExternalReference,
-    `type`: typingsJapgolly.angularCompiler.outputAstMod.Type,
-    typeParams: Null,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
+open class ExternalExpr protected () extends Expression {
+  def this(value: ExternalReference) = this()
+  def this(value: ExternalReference, `type`: Type) = this()
+  def this(value: ExternalReference, `type`: Null, typeParams: js.Array[Type]) = this()
+  def this(value: ExternalReference, `type`: Unit, typeParams: js.Array[Type]) = this()
+  def this(value: ExternalReference, `type`: Type, typeParams: js.Array[Type]) = this()
+  def this(value: ExternalReference, `type`: Null, typeParams: js.Array[Type], sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Null, typeParams: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Null, typeParams: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Unit, typeParams: js.Array[Type], sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Unit, typeParams: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Unit, typeParams: Unit, sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Type, typeParams: js.Array[Type], sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Type, typeParams: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(value: ExternalReference, `type`: Type, typeParams: Unit, sourceSpan: ParseSourceSpan) = this()
+  
+  var typeParams: js.Array[Type] | Null = js.native
+  
+  var value: ExternalReference = js.native
 }
-

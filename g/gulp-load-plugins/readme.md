@@ -10,9 +10,9 @@ Automatically load any gulp plugins in your package.json
 | Full name          | gulp-load-plugins |
 | Keywords           | gulpfriendly, gulp, require, load, plugins |
 | # releases         | 3 |
-| # dependents       | 542 |
-| # downloads        | 7318156 |
-| # stars            | 225 |
+| # dependents       | 0.0 |
+| # downloads        | 551534.6666666666 |
+| # stars            | 762.0 |
 
 ## Links
 - [Homepage](https://github.com/jackfranklin/gulp-load-plugins#readme)

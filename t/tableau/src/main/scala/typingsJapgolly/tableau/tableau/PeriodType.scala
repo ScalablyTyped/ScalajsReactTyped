@@ -1,65 +1,52 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeriodType extends js.Object
-
+sealed trait PeriodType extends StObject
 @JSGlobal("tableau.PeriodType")
 @js.native
-object PeriodType extends js.Object {
-  @js.native
-  sealed trait DAYS extends PeriodType
+object PeriodType extends StObject {
   
   @js.native
-  sealed trait HOURS extends PeriodType
+  sealed trait DAYS
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait MINUTES extends PeriodType
+  sealed trait HOURS
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait MONTHS extends PeriodType
+  sealed trait MINUTES
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait QUARTERS extends PeriodType
+  sealed trait MONTHS
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait SECONDS extends PeriodType
+  sealed trait QUARTERS
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait WEEKS extends PeriodType
+  sealed trait SECONDS
+    extends StObject
+       with PeriodType
   
   @js.native
-  sealed trait YEARS extends PeriodType
+  sealed trait WEEKS
+    extends StObject
+       with PeriodType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PeriodType with String] = js.native
-  /* "days" */ @js.native
-  object DAYS extends TopLevel[DAYS with String]
-  
-  /* "hours" */ @js.native
-  object HOURS extends TopLevel[HOURS with String]
-  
-  /* "minutes" */ @js.native
-  object MINUTES extends TopLevel[MINUTES with String]
-  
-  /* "months" */ @js.native
-  object MONTHS extends TopLevel[MONTHS with String]
-  
-  /* "quarters" */ @js.native
-  object QUARTERS extends TopLevel[QUARTERS with String]
-  
-  /* "seconds" */ @js.native
-  object SECONDS extends TopLevel[SECONDS with String]
-  
-  /* "weeks" */ @js.native
-  object WEEKS extends TopLevel[WEEKS with String]
-  
-  /* "years" */ @js.native
-  object YEARS extends TopLevel[YEARS with String]
-  
+  @js.native
+  sealed trait YEARS
+    extends StObject
+       with PeriodType
 }
-

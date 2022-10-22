@@ -1,57 +1,61 @@
 package typingsJapgolly.bizcharts.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.bizcharts.AnonOffsetX
-import typingsJapgolly.bizcharts.AnonOffsetY
-import typingsJapgolly.bizcharts.mod.FacetProps
-import typingsJapgolly.bizcharts.mod.FacetType
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antvG2.libInterfaceMod.FacetTitle
+import typingsJapgolly.antvG2.libInterfaceMod.ViewPadding
+import typingsJapgolly.bizcharts.bizchartsStrings.circle
+import typingsJapgolly.bizcharts.bizchartsStrings.list
+import typingsJapgolly.bizcharts.bizchartsStrings.matrix
+import typingsJapgolly.bizcharts.bizchartsStrings.mirror
+import typingsJapgolly.bizcharts.bizchartsStrings.rect
+import typingsJapgolly.bizcharts.bizchartsStrings.tree
+import typingsJapgolly.bizcharts.libComponentsFacetMod.IFacetProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Facet {
-  def apply(
-    autoSetAxis: js.UndefOr[Boolean] = js.undefined,
-    colTitle: AnonOffsetY = null,
-    eachView: (/* view */ js.UndefOr[js.Any], /* facet */ js.UndefOr[js.Any]) => Callback = null,
-    fields: String | js.Array[_] = null,
-    margin: Double | js.Array[Double] = null,
-    padding: Double | js.Array[Double] = null,
-    rowTitle: AnonOffsetX = null,
-    showTitle: js.UndefOr[Boolean] = js.undefined,
-    `type`: FacetType = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FacetProps, typingsJapgolly.bizcharts.mod.Facet, Unit, FacetProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoSetAxis)) __obj.updateDynamic("autoSetAxis")(autoSetAxis.asInstanceOf[js.Any])
-    if (colTitle != null) __obj.updateDynamic("colTitle")(colTitle.asInstanceOf[js.Any])
-    if (eachView != null) __obj.updateDynamic("eachView")(js.Any.fromFunction2((t0: /* view */ js.UndefOr[js.Any], t1: /* facet */ js.UndefOr[js.Any]) => eachView(t0, t1).runNow()))
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (rowTitle != null) __obj.updateDynamic("rowTitle")(rowTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.bizcharts.mod.FacetProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.bizcharts.mod.Facet](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.bizcharts.mod.FacetProps])(children: _*)
+  inline def apply(
+    eachView: (Any, Any) => Callback,
+    fields: js.Array[String],
+    `type`: circle | rect | mirror | list | matrix | tree
+  ): Builder = {
+    val __props = js.Dynamic.literal(eachView = js.Any.fromFunction2((t0: Any, t1: Any) => (eachView(t0, t1)).runNow()), fields = fields.asInstanceOf[js.Any])
+    __props.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IFacetProps]))
   }
+  
   @JSImport("bizcharts", "Facet")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def cols(value: Double): this.type = set("cols", value.asInstanceOf[js.Any])
+    
+    inline def columnTitle(value: FacetTitle): this.type = set("columnTitle", value.asInstanceOf[js.Any])
+    
+    inline def line(value: typingsJapgolly.antvG2.libInterfaceMod.Line): this.type = set("line", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: ViewPadding): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingVarargs(value: Double*): this.type = set("padding", js.Array(value*))
+    
+    inline def rowTitle(value: FacetTitle): this.type = set("rowTitle", value.asInstanceOf[js.Any])
+    
+    inline def showTitle(value: Boolean): this.type = set("showTitle", value.asInstanceOf[js.Any])
+    
+    inline def spacing(value: js.Tuple2[Double | String, Double | String]): this.type = set("spacing", value.asInstanceOf[js.Any])
+    
+    inline def title(value: FacetTitle): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def transpose(value: Boolean): this.type = set("transpose", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IFacetProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

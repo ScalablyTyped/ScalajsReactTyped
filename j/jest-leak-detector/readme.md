@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-leak-detector
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 ## Library description:
 Module for verifying whether an object has been garbage collected or not.
@@ -10,10 +10,10 @@ Module for verifying whether an object has been garbage collected or not.
 | ------------------ | :-------------: |
 | Full name          | jest-leak-detector |
 | Keywords           | - |
-| # releases         | 51 |
-| # dependents       | 12 |
-| # downloads        | 191101581 |
-| # stars            | 0 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 7.436152966666667E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

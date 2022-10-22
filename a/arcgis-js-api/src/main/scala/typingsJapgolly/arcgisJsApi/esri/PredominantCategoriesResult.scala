@@ -1,33 +1,38 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PredominantCategoriesResult extends Object {
+trait PredominantCategoriesResult
+  extends StObject
+     with Object {
+  
   /**
     * An array of objects describing the count of each predominant category.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-predominantCategories.html#PredominantCategoriesResult)
     */
   var predominantCategoryInfos: js.Array[PredominantCategoriesResultPredominantCategoryInfos]
 }
-
 object PredominantCategoriesResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     predominantCategoryInfos: js.Array[PredominantCategoriesResultPredominantCategoryInfos],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): PredominantCategoriesResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], predominantCategoryInfos = predominantCategoryInfos.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), predominantCategoryInfos = predominantCategoryInfos.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[PredominantCategoriesResult]
   }
+  
+  extension [Self <: PredominantCategoriesResult](x: Self) {
+    
+    inline def setPredominantCategoryInfos(value: js.Array[PredominantCategoriesResultPredominantCategoryInfos]): Self = StObject.set(x, "predominantCategoryInfos", value.asInstanceOf[js.Any])
+    
+    inline def setPredominantCategoryInfosVarargs(value: PredominantCategoriesResultPredominantCategoryInfos*): Self = StObject.set(x, "predominantCategoryInfos", js.Array(value*))
+  }
 }
-

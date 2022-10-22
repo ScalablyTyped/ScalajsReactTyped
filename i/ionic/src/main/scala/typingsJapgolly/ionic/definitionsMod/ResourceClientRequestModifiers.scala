@@ -1,19 +1,26 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResourceClientRequestModifiers extends js.Object {
+trait ResourceClientRequestModifiers extends StObject {
+  
   var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object ResourceClientRequestModifiers {
-  @scala.inline
-  def apply(fields: js.Array[String] = null): ResourceClientRequestModifiers = {
+  
+  inline def apply(): ResourceClientRequestModifiers = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceClientRequestModifiers]
   }
+  
+  extension [Self <: ResourceClientRequestModifiers](x: Self) {
+    
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+  }
 }
-

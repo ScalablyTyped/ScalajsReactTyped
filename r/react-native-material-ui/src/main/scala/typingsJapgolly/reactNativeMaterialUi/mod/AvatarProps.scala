@@ -1,41 +1,62 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import typingsJapgolly.reactNative.mod.Image
-import typingsJapgolly.reactNativeMaterialUi.AnonContent
+import typingsJapgolly.reactNativeMaterialUi.anon.Content
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AvatarProps extends js.Object {
+trait AvatarProps extends StObject {
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var iconColor: js.UndefOr[String] = js.undefined
+  
   var iconSize: js.UndefOr[Double] = js.undefined
+  
   var image: js.UndefOr[Image] = js.undefined
+  
   var size: js.UndefOr[Double] = js.undefined
-  var style: js.UndefOr[AnonContent] = js.undefined
+  
+  var style: js.UndefOr[Content] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object AvatarProps {
-  @scala.inline
-  def apply(
-    icon: String = null,
-    iconColor: String = null,
-    iconSize: Int | Double = null,
-    image: Image = null,
-    size: Int | Double = null,
-    style: AnonContent = null,
-    text: String = null
-  ): AvatarProps = {
+  
+  inline def apply(): AvatarProps = {
     val __obj = js.Dynamic.literal()
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[AvatarProps]
   }
+  
+  extension [Self <: AvatarProps](x: Self) {
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconColor(value: String): Self = StObject.set(x, "iconColor", value.asInstanceOf[js.Any])
+    
+    inline def setIconColorUndefined: Self = StObject.set(x, "iconColor", js.undefined)
+    
+    inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    
+    inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStyle(value: Content): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

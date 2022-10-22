@@ -1,9 +1,9 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.remoteCredentialsMod.RemoteCredentialsOptions
+import typingsJapgolly.awsSdk.libCredentialsRemoteCredentialsMod.RemoteCredentialsOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "RemoteCredentials")
 @js.native
@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
   * Represents credentials received.
   * @param {object} options - Override the default (1s) timeout period.
   */
-class RemoteCredentials ()
-  extends typingsJapgolly.awsSdk.coreMod.RemoteCredentials {
+open class RemoteCredentials ()
+  extends typingsJapgolly.awsSdk.libCoreMod.RemoteCredentials {
   def this(options: RemoteCredentialsOptions) = this()
 }
-

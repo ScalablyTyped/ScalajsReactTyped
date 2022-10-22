@@ -1,21 +1,36 @@
 package typingsJapgolly.navermaps.naver.maps.Service
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceOptions extends js.Object {
-  var coordType: js.UndefOr[js.Any] = js.undefined
-  var encoding: js.UndefOr[js.Any] = js.undefined
+trait ServiceOptions extends StObject {
+  
+  var orders: js.UndefOr[OrderType | String] = js.undefined
+  
+  var sourcecrs: js.UndefOr[CoordinatesType] = js.undefined
+  
+  var targetcrs: js.UndefOr[CoordinatesType] = js.undefined
 }
-
 object ServiceOptions {
-  @scala.inline
-  def apply(coordType: js.Any = null, encoding: js.Any = null): ServiceOptions = {
+  
+  inline def apply(): ServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (coordType != null) __obj.updateDynamic("coordType")(coordType.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions]
   }
+  
+  extension [Self <: ServiceOptions](x: Self) {
+    
+    inline def setOrders(value: OrderType | String): Self = StObject.set(x, "orders", value.asInstanceOf[js.Any])
+    
+    inline def setOrdersUndefined: Self = StObject.set(x, "orders", js.undefined)
+    
+    inline def setSourcecrs(value: CoordinatesType): Self = StObject.set(x, "sourcecrs", value.asInstanceOf[js.Any])
+    
+    inline def setSourcecrsUndefined: Self = StObject.set(x, "sourcecrs", js.undefined)
+    
+    inline def setTargetcrs(value: CoordinatesType): Self = StObject.set(x, "targetcrs", value.asInstanceOf[js.Any])
+    
+    inline def setTargetcrsUndefined: Self = StObject.set(x, "targetcrs", js.undefined)
+  }
 }
-

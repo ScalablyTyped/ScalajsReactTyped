@@ -1,24 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`100`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`20`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`50`
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSpinnerSpinnerMod.SpinnerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Spinner")
 @js.native
-class Spinner ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Spinner
-
-/* static members */
-@JSImport("@blueprintjs/core", "Spinner")
-@js.native
-object Spinner extends js.Object {
-  val SIZE_LARGE: `100` = js.native
-  val SIZE_SMALL: `20` = js.native
-  val SIZE_STANDARD: `50` = js.native
-  var displayName: String = js.native
+open class Spinner protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Spinner {
+  def this(props: SpinnerProps) = this()
+  def this(props: SpinnerProps, context: Any) = this()
 }
-
+/* static members */
+object Spinner {
+  
+  @JSImport("@blueprintjs/core", "Spinner")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Spinner.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

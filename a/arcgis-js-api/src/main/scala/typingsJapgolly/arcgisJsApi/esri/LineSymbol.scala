@@ -1,13 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`simple-line`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LineSymbol extends Symbol {
+trait LineSymbol
+  extends StObject
+     with Symbol {
+  
   /**
     * The symbol type.
     *
@@ -15,17 +17,13 @@ trait LineSymbol extends Symbol {
     */
   @JSName("type")
   var type_LineSymbol: `simple-line` = js.native
+  
   /**
-    * The width of the symbol in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
+    * The width of the symbol in points.
     *
     * @default 0.75
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol.html#width)
     */
   var width: Double = js.native
 }
-
-@JSGlobal("__esri.LineSymbol")
-@js.native
-object LineSymbol extends TopLevel[LineSymbolConstructor]
-

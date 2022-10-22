@@ -1,24 +1,20 @@
 package typingsJapgolly.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.insert
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.update
   - typingsJapgolly.servicenowLondon.servicenowLondonStrings.delete
 */
-trait GlideRecordOperation extends js.Object
-
+trait GlideRecordOperation extends StObject
 object GlideRecordOperation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def delete: typingsJapgolly.servicenowLondon.servicenowLondonStrings.delete = this.cast("delete")
-  @scala.inline
-  def insert: typingsJapgolly.servicenowLondon.servicenowLondonStrings.insert = this.cast("insert")
-  @scala.inline
-  def update: typingsJapgolly.servicenowLondon.servicenowLondonStrings.update = this.cast("update")
+  
+  inline def delete: typingsJapgolly.servicenowLondon.servicenowLondonStrings.delete = "delete".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.delete]
+  
+  inline def insert: typingsJapgolly.servicenowLondon.servicenowLondonStrings.insert = "insert".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.insert]
+  
+  inline def update: typingsJapgolly.servicenowLondon.servicenowLondonStrings.update = "update".asInstanceOf[typingsJapgolly.servicenowLondon.servicenowLondonStrings.update]
 }
-

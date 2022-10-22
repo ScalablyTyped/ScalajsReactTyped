@@ -1,104 +1,119 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WMSSublayerProperties extends js.Object {
+trait WMSSublayerProperties extends StObject {
+  
   /**
-    * Description for the WMS sublayer. This defaults to the value of the Abstract property from the WMS GetCapabilities request.
+    * Description for the WMS sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * The full extent of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#fullExtent)
     */
   var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
+  
   /**
     * The id for the WMS sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#id)
     */
   var id: js.UndefOr[Double] = js.undefined
+  
   /**
     * The [WMSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMSLayer.html) to which the sublayer belongs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#layer)
     */
   var layer: js.UndefOr[WMSLayerProperties] = js.undefined
+  
   /**
-    * Indicates whether the layer will be included in the legend. When `false`, the layer will be excluded from the legend.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#legendEnabled)
+    * Indicates whether the layer will be included in the legend.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A string url pointing to a legend image for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#legendUrl)
     */
   var legendUrl: js.UndefOr[String] = js.undefined
+  
   /**
-    * The maximum scale (most zoomed in) at which the layer is visible in the view. If the map is zoomed in beyond this scale, the layer will not be visible. A value of zero means the layer does not have a maximum scale.
+    * The maximum scale (most zoomed in) at which the layer is visible in the view.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#maxScale)
-    *
-    * @default 0
     */
   var maxScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The minimum scale (most zoomed out) at which the layer is visible in the view. If the map is zoomed out beyond this scale, the layer will not be visible. A value of zero means the layer does not have a minimum scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#minScale)
+    * The minimum scale (most zoomed out) at which the layer is visible in the view.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#minScale)
     */
   var minScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Name of the WMS sublayer. This defaults to the value of the Name property from the WMS GetCapabilities request.
+    * Name of the WMS sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#popupEnabled)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#popupEnabled)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Indicates if the layer can be queried, i.e. the service supports GetFeatureInfo with either text/html or text/plain formats.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#queryable)
+    * Indicates if the layer can be queried, i.e.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#queryable)
     */
   var queryable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * List of spatialReferences (WKID) derived from the CRS elements of the first layer in the GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#spatialReferences)
     */
   var spatialReferences: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * A collection of [WMSSublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html)s.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#sublayers)
     */
   var sublayers: js.UndefOr[CollectionProperties[WMSSublayerProperties]] = js.undefined
+  
   /**
-    * The title of the WMS sublayer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) and [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widgets. This defaults to the value of the Title property from the WMS GetCapabilities request.
+    * The title of the WMS sublayer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) and [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widgets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMSSublayer.html#title)
     */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates if the layer is visible in the view.
     *
@@ -106,43 +121,77 @@ trait WMSSublayerProperties extends js.Object {
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object WMSSublayerProperties {
-  @scala.inline
-  def apply(
-    description: String = null,
-    fullExtent: ExtentProperties = null,
-    id: Int | Double = null,
-    layer: WMSLayerProperties = null,
-    legendEnabled: js.UndefOr[Boolean] = js.undefined,
-    legendUrl: String = null,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
-    name: String = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    queryable: js.UndefOr[Boolean] = js.undefined,
-    spatialReferences: js.Array[Double] = null,
-    sublayers: CollectionProperties[WMSSublayerProperties] = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): WMSSublayerProperties = {
+  
+  inline def apply(): WMSSublayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
-    if (legendUrl != null) __obj.updateDynamic("legendUrl")(legendUrl.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(queryable)) __obj.updateDynamic("queryable")(queryable.asInstanceOf[js.Any])
-    if (spatialReferences != null) __obj.updateDynamic("spatialReferences")(spatialReferences.asInstanceOf[js.Any])
-    if (sublayers != null) __obj.updateDynamic("sublayers")(sublayers.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[WMSSublayerProperties]
   }
+  
+  extension [Self <: WMSSublayerProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFullExtent(value: ExtentProperties): Self = StObject.set(x, "fullExtent", value.asInstanceOf[js.Any])
+    
+    inline def setFullExtentUndefined: Self = StObject.set(x, "fullExtent", js.undefined)
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLayer(value: WMSLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setLegendUrl(value: String): Self = StObject.set(x, "legendUrl", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUrlUndefined: Self = StObject.set(x, "legendUrl", js.undefined)
+    
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    
+    inline def setQueryable(value: Boolean): Self = StObject.set(x, "queryable", value.asInstanceOf[js.Any])
+    
+    inline def setQueryableUndefined: Self = StObject.set(x, "queryable", js.undefined)
+    
+    inline def setSpatialReferences(value: js.Array[Double]): Self = StObject.set(x, "spatialReferences", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferencesUndefined: Self = StObject.set(x, "spatialReferences", js.undefined)
+    
+    inline def setSpatialReferencesVarargs(value: Double*): Self = StObject.set(x, "spatialReferences", js.Array(value*))
+    
+    inline def setSublayers(value: CollectionProperties[WMSSublayerProperties]): Self = StObject.set(x, "sublayers", value.asInstanceOf[js.Any])
+    
+    inline def setSublayersUndefined: Self = StObject.set(x, "sublayers", js.undefined)
+    
+    inline def setSublayersVarargs(value: WMSSublayerProperties*): Self = StObject.set(x, "sublayers", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

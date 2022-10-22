@@ -2,13 +2,16 @@ package typingsJapgolly.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.chromeApps.chromeAppsStrings.`object`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONSchemaObjectType extends js.Object {
+trait JSONSchemaObjectType extends StObject {
+  
   var additionalProperties: js.UndefOr[JSONSchemaObjectType] = js.undefined
+  
   var properties: js.UndefOr[StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]] = js.undefined
+  
   /**
     * An 'object' can have known properties listed as 'properties', and can
     * optionally have 'additionalProperties' indicating a schema to apply to
@@ -16,19 +19,24 @@ trait JSONSchemaObjectType extends js.Object {
     */
   var `type`: `object`
 }
-
 object JSONSchemaObjectType {
-  @scala.inline
-  def apply(
-    `type`: `object`,
-    additionalProperties: JSONSchemaObjectType = null,
-    properties: StringDictionary[JSONSchemaBasicType | JSONSchemaRefType] = null
-  ): JSONSchemaObjectType = {
+  
+  inline def apply(): JSONSchemaObjectType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (additionalProperties != null) __obj.updateDynamic("additionalProperties")(additionalProperties.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[JSONSchemaObjectType]
   }
+  
+  extension [Self <: JSONSchemaObjectType](x: Self) {
+    
+    inline def setAdditionalProperties(value: JSONSchemaObjectType): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    
+    inline def setProperties(value: StringDictionary[JSONSchemaBasicType | JSONSchemaRefType]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

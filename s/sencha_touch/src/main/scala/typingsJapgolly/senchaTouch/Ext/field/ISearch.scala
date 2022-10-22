@@ -1,17 +1,16 @@
 package typingsJapgolly.senchaTouch.Ext.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISearch extends IText
-
+trait ISearch
+  extends StObject
+     with IText
 object ISearch {
-  @scala.inline
-  def apply(IText: IText = null): ISearch = {
+  
+  inline def apply(): ISearch = {
     val __obj = js.Dynamic.literal()
-    if (IText != null) js.Dynamic.global.Object.assign(__obj, IText)
     __obj.asInstanceOf[ISearch]
   }
 }
-

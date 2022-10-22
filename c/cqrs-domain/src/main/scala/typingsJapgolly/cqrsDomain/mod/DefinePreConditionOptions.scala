@@ -1,16 +1,18 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region definePreCondition
-trait DefinePreConditionOptions extends js.Object {
+trait DefinePreConditionOptions extends StObject {
+  
   /**
     * optional
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * the command name
     * optional, default is file name without extension,
@@ -18,36 +20,49 @@ trait DefinePreConditionOptions extends js.Object {
     * if name is an array of strings it will handle all commands that matches the appropriate name
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * optional, if not defined it will use what is defined as default in aggregate or pass the whole command
     */
   var payload: js.UndefOr[String] = js.undefined
+  
   /**
     * optional, default Infinity, all pre-conditions will be sorted by this value
     */
   var priority: js.UndefOr[Double] = js.undefined
+  
   /**
     * optional, default 0
     */
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DefinePreConditionOptions {
-  @scala.inline
-  def apply(
-    description: String = null,
-    name: String = null,
-    payload: String = null,
-    priority: Int | Double = null,
-    version: Int | Double = null
-  ): DefinePreConditionOptions = {
+  
+  inline def apply(): DefinePreConditionOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefinePreConditionOptions]
   }
+  
+  extension [Self <: DefinePreConditionOptions](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

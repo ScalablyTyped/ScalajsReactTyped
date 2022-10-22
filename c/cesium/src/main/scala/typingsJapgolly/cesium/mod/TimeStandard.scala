@@ -1,29 +1,38 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimeStandard extends js.Object
-
+sealed trait TimeStandard extends StObject
 @JSImport("cesium", "TimeStandard")
 @js.native
-object TimeStandard extends js.Object {
-  @js.native
-  sealed trait TAI extends TimeStandard
-  
-  @js.native
-  sealed trait UTC extends TimeStandard
+object TimeStandard extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimeStandard with Double] = js.native
-  /* 1 */ @js.native
-  object TAI extends TopLevel[TAI with Double]
+  def apply(value: Double): js.UndefOr[TimeStandard & Double] = js.native
   
-  /* 0 */ @js.native
-  object UTC extends TopLevel[UTC with Double]
+  /**
+    * Represents the International Atomic Time (TAI) time standard.
+    * TAI is the principal time standard to which the other time standards are related.
+    */
+  @js.native
+  sealed trait TAI
+    extends StObject
+       with TimeStandard
+  /* 1 */ val TAI: typingsJapgolly.cesium.mod.TimeStandard.TAI & Double = js.native
   
+  /**
+    * Represents the coordinated Universal Time (UTC) time standard.
+    *
+    * UTC is related to TAI according to the relationship
+    * <code>UTC = TAI - deltaT</code> where <code>deltaT</code> is the number of leap
+    * seconds which have been introduced as of the time in TAI.
+    */
+  @js.native
+  sealed trait UTC
+    extends StObject
+       with TimeStandard
+  /* 0 */ val UTC: typingsJapgolly.cesium.mod.TimeStandard.UTC & Double = js.native
 }
-

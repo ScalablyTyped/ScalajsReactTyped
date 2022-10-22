@@ -1,125 +1,135 @@
 package typingsJapgolly.forgeDi
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.forgeDi.argumentsMod.Arguments
-import typingsJapgolly.forgeDi.configMod.Config
-import typingsJapgolly.forgeDi.constructorMod.Constructor
-import typingsJapgolly.forgeDi.dependencyMod.Dependency
+import typingsJapgolly.forgeDi.anon.Partialdefault
+import typingsJapgolly.forgeDi.distFrameworkConfigMod.Config
+import typingsJapgolly.forgeDi.distFrameworkConstructorMod.Constructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("forge-di", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class Binding protected ()
-    extends typingsJapgolly.forgeDi.bindingMod.default {
-    def this(forge: typingsJapgolly.forgeDi.forgeMod.default, name: String) = this()
-  }
+object mod {
   
+  @JSImport("forge-di", JSImport.Namespace)
   @js.native
-  class ConfigurationError protected ()
-    extends typingsJapgolly.forgeDi.configurationErrorMod.default {
-    def this(name: String, message: String) = this()
-  }
+  val ^ : js.Any = js.native
   
+  @JSImport("forge-di", JSImport.Default)
   @js.native
-  class Context ()
-    extends typingsJapgolly.forgeDi.contextMod.default
-  
-  @js.native
-  class Forge ()
-    extends typingsJapgolly.forgeDi.forgeMod.default {
+  open class default ()
+    extends typingsJapgolly.forgeDi.distForgeMod.default {
     def this(config: Config) = this()
   }
   
+  @JSImport("forge-di", "Binding")
   @js.native
-  class FunctionResolver protected ()
-    extends typingsJapgolly.forgeDi.functionResolverMod.default {
+  open class Binding protected ()
+    extends typingsJapgolly.forgeDi.distFrameworkBindingMod.default {
+    def this(forge: typingsJapgolly.forgeDi.distForgeMod.default, name: String) = this()
+  }
+  
+  @JSImport("forge-di", "ConfigurationError")
+  @js.native
+  open class ConfigurationError protected ()
+    extends typingsJapgolly.forgeDi.distErrorsConfigurationErrorMod.default {
+    def this(name: String, message: String) = this()
+  }
+  
+  @JSImport("forge-di", "Context")
+  @js.native
+  open class Context ()
+    extends typingsJapgolly.forgeDi.distFrameworkContextMod.default
+  
+  @JSImport("forge-di", "Forge")
+  @js.native
+  open class Forge ()
+    extends typingsJapgolly.forgeDi.distForgeMod.default {
+    def this(config: Config) = this()
+  }
+  
+  @JSImport("forge-di", "FunctionResolver")
+  @js.native
+  open class FunctionResolver protected ()
+    extends typingsJapgolly.forgeDi.distResolversFunctionResolverMod.default {
     def this(
-      forge: typingsJapgolly.forgeDi.forgeMod.default,
-      binding: typingsJapgolly.forgeDi.bindingMod.default,
+      forge: typingsJapgolly.forgeDi.distForgeMod.default,
+      binding: typingsJapgolly.forgeDi.distFrameworkBindingMod.default,
       func: js.Function
     ) = this()
   }
   
+  @JSImport("forge-di", "InstanceResolver")
   @js.native
-  class InstanceResolver protected ()
-    extends typingsJapgolly.forgeDi.instanceResolverMod.default {
+  open class InstanceResolver protected ()
+    extends typingsJapgolly.forgeDi.distResolversInstanceResolverMod.default {
     def this(
-      forge: typingsJapgolly.forgeDi.forgeMod.default,
-      binding: typingsJapgolly.forgeDi.bindingMod.default,
-      instance: js.Any
+      forge: typingsJapgolly.forgeDi.distForgeMod.default,
+      binding: typingsJapgolly.forgeDi.distFrameworkBindingMod.default,
+      instance: Any
     ) = this()
   }
   
+  @JSImport("forge-di", "Mode")
   @js.native
-  class RegexInspector ()
-    extends typingsJapgolly.forgeDi.regexInspectorMod.RegexInspector {
-    /* CompleteClass */
-    override var getParameterNames: js.Any = js.native
-    /* CompleteClass */
-    override def findConstructor(func: Constructor): Constructor = js.native
-    /* CompleteClass */
-    override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
+  object Mode extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typingsJapgolly.forgeDi.distFrameworkModeMod.Mode & String] = js.native
+    
+    /* "All" */ val All: typingsJapgolly.forgeDi.distFrameworkModeMod.Mode.All & String = js.native
+    
+    /* "AtLeastOne" */ val AtLeastOne: typingsJapgolly.forgeDi.distFrameworkModeMod.Mode.AtLeastOne & String = js.native
+    
+    /* "AtMostOne" */ val AtMostOne: typingsJapgolly.forgeDi.distFrameworkModeMod.Mode.AtMostOne & String = js.native
   }
   
+  @JSImport("forge-di", "RegexInspector")
   @js.native
-  class ResolutionError protected ()
-    extends typingsJapgolly.forgeDi.resolutionErrorMod.default {
-    def this(name: String, hint: js.Any, context: typingsJapgolly.forgeDi.contextMod.default, message: String) = this()
-  }
+  open class RegexInspector ()
+    extends typingsJapgolly.forgeDi.distInspectorsRegexInspectorMod.default
   
+  @JSImport("forge-di", "ResolutionError")
   @js.native
-  abstract class Resolver protected ()
-    extends typingsJapgolly.forgeDi.resolverMod.default {
+  open class ResolutionError protected ()
+    extends typingsJapgolly.forgeDi.distErrorsResolutionErrorMod.default {
     def this(
-      forge: typingsJapgolly.forgeDi.forgeMod.default,
-      binding: typingsJapgolly.forgeDi.bindingMod.default
+      name: String,
+      hint: Any,
+      context: typingsJapgolly.forgeDi.distFrameworkContextMod.default,
+      message: String
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("forge-di", "Resolver")
   @js.native
-  class SingletonLifecycle ()
-    extends typingsJapgolly.forgeDi.singletonLifecycleMod.default
-  
-  @js.native
-  class TransientLifecycle ()
-    extends typingsJapgolly.forgeDi.transientLifecycleMod.TransientLifecycle {
-    /* CompleteClass */
-    override def resolve(
-      resolver: typingsJapgolly.forgeDi.resolverMod.default,
-      context: typingsJapgolly.forgeDi.contextMod.default,
-      args: Arguments
-    ): js.Any = js.native
+  open class Resolver protected ()
+    extends typingsJapgolly.forgeDi.distResolversResolverMod.default {
+    def this(
+      forge: typingsJapgolly.forgeDi.distForgeMod.default,
+      binding: typingsJapgolly.forgeDi.distFrameworkBindingMod.default
+    ) = this()
   }
   
+  @JSImport("forge-di", "SingletonLifecycle")
   @js.native
-  class TypeResolver protected ()
-    extends typingsJapgolly.forgeDi.typeResolverMod.default {
+  open class SingletonLifecycle ()
+    extends typingsJapgolly.forgeDi.distLifecyclesSingletonLifecycleMod.default
+  
+  @JSImport("forge-di", "TransientLifecycle")
+  @js.native
+  open class TransientLifecycle ()
+    extends typingsJapgolly.forgeDi.distLifecyclesTransientLifecycleMod.default
+  
+  @JSImport("forge-di", "TypeResolver")
+  @js.native
+  open class TypeResolver protected ()
+    extends typingsJapgolly.forgeDi.distResolversTypeResolverMod.default {
     def this(
-      forge: typingsJapgolly.forgeDi.forgeMod.default,
-      binding: typingsJapgolly.forgeDi.bindingMod.default,
+      forge: typingsJapgolly.forgeDi.distForgeMod.default,
+      binding: typingsJapgolly.forgeDi.distFrameworkBindingMod.default,
       `type`: Constructor
     ) = this()
   }
   
-  @js.native
-  class default ()
-    extends typingsJapgolly.forgeDi.forgeMod.default {
-    def this(config: Config) = this()
-  }
-  
-  def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = js.native
-  @js.native
-  object Mode extends js.Object {
-    /* "All" */ val All: typingsJapgolly.forgeDi.modeMod.Mode.All with String = js.native
-    /* "AtLeastOne" */ val AtLeastOne: typingsJapgolly.forgeDi.modeMod.Mode.AtLeastOne with String = js.native
-    /* "AtMostOne" */ val AtMostOne: typingsJapgolly.forgeDi.modeMod.Mode.AtMostOne with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.forgeDi.modeMod.Mode with String] = js.native
-  }
-  
+  inline def inject[T](hints: StringDictionary[String | Partialdefault]): js.Function1[/* target */ T, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(hints.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ T, T]]
 }
-

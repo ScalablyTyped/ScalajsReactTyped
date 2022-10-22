@@ -1,21 +1,17 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf
   - typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip
 */
-trait DocumentMimeType extends js.Object
-
+trait DocumentMimeType extends StObject
 object DocumentMimeType {
-  @scala.inline
-  def applicationSlashpdf: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf = this.cast("application/pdf")
-  @scala.inline
-  def applicationSlashzip: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip = this.cast("application/zip")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def applicationSlashpdf: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashpdf]
+  
+  inline def applicationSlashzip: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip = "application/zip".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.applicationSlashzip]
 }
-

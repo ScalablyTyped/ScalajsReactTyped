@@ -1,21 +1,56 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "CatmullRomCurve3")
 @js.native
-class CatmullRomCurve3 ()
-  extends typingsJapgolly.three.curvesMod.CatmullRomCurve3 {
-  def this(points: js.Array[typingsJapgolly.three.vector3Mod.Vector3]) = this()
-  def this(points: js.Array[typingsJapgolly.three.vector3Mod.Vector3], closed: Boolean) = this()
-  def this(points: js.Array[typingsJapgolly.three.vector3Mod.Vector3], closed: Boolean, curveType: String) = this()
+/**
+  * @param [points=[]]
+  * @param [closed=false]
+  * @param [curveType='centripetal']
+  * @param [tension=0.5]
+  */
+open class CatmullRomCurve3 ()
+  extends typingsJapgolly.three.srcThreeMod.CatmullRomCurve3 {
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3]) = this()
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3], closed: Boolean) = this()
+  def this(points: Unit, closed: Boolean) = this()
   def this(
-    points: js.Array[typingsJapgolly.three.vector3Mod.Vector3],
+    points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3],
+    closed: Boolean,
+    curveType: String
+  ) = this()
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3], closed: Unit, curveType: String) = this()
+  def this(points: Unit, closed: Boolean, curveType: String) = this()
+  def this(points: Unit, closed: Unit, curveType: String) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3],
     closed: Boolean,
     curveType: String,
     tension: Double
   ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3],
+    closed: Boolean,
+    curveType: Unit,
+    tension: Double
+  ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3],
+    closed: Unit,
+    curveType: String,
+    tension: Double
+  ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector3Mod.Vector3],
+    closed: Unit,
+    curveType: Unit,
+    tension: Double
+  ) = this()
+  def this(points: Unit, closed: Boolean, curveType: String, tension: Double) = this()
+  def this(points: Unit, closed: Boolean, curveType: Unit, tension: Double) = this()
+  def this(points: Unit, closed: Unit, curveType: String, tension: Double) = this()
+  def this(points: Unit, closed: Unit, curveType: Unit, tension: Double) = this()
 }
-

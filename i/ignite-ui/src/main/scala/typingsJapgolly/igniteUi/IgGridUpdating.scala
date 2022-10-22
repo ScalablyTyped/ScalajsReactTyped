@@ -2,341 +2,476 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridUpdating
-  extends /**
-	 * Option for igGridUpdating
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
-  	 * Use option [locale.addRowLabel](ui.iggridupdating#options:locale.addRowLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
+    * Use option [locale.addRowLabel](ui.iggridupdating#options:locale.addRowLabel).
+    */
   var addRowLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the title for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowTooltip is used.
-  	 * Use option [locale.addRowTooltip](ui.iggridupdating#options:locale.addRowTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the title for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowTooltip is used.
+    * Use option [locale.addRowTooltip](ui.iggridupdating#options:locale.addRowTooltip).
+    */
   var addRowTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the label for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelLabel is used.
-  	 * Use option [locale.cancelLabel](ui.iggridupdating#options:locale.cancelLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the label for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelLabel is used.
+    * Use option [locale.cancelLabel](ui.iggridupdating#options:locale.cancelLabel).
+    */
   var cancelLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the title for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelTooltip is used.
-  	 * Use option [locale.cancelTooltip](ui.iggridupdating#options:locale.cancelTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the title for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelTooltip is used.
+    * Use option [locale.cancelTooltip](ui.iggridupdating#options:locale.cancelTooltip).
+    */
   var cancelTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * A list of custom column options that specify editing and validation settings for a specific column.
-  	 *
-  	 */
+    * A list of custom column options that specify editing and validation settings for a specific column.
+    *
+    */
   var columnSettings: js.UndefOr[js.Array[IgGridUpdatingColumnSetting]] = js.undefined
+  
   /**
-  	 * Event fired before the dataDirtyException is thrown. This can be controlled by the [enableDataDirtyException](ui.iggridupdating#options:enableDataDirtyException) property. Any pending changes may be committed in the handler of this event in order to prevent dataDirtyException from being thrown.
-  	 * Return false in order to prevent the exception.
-  	 */
+    * Event fired before the dataDirtyException is thrown. This can be controlled by the [enableDataDirtyException](ui.iggridupdating#options:enableDataDirtyException) property. Any pending changes may be committed in the handler of this event in order to prevent dataDirtyException from being thrown.
+    * Return false in order to prevent the exception.
+    */
   var dataDirty: js.UndefOr[DataDirtyEvent] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the label for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowLabel is used.
-  	 * Use option [locale.deleteRowLabel](ui.iggridupdating#options:locale.deleteRowLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the label for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowLabel is used.
+    * Use option [locale.deleteRowLabel](ui.iggridupdating#options:locale.deleteRowLabel).
+    */
   var deleteRowLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the title for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowTooltip is used.
-  	 * Use option [locale.deleteRowTooltip](ui.iggridupdating#options:locale.deleteRowTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the title for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowTooltip is used.
+    * Use option [locale.deleteRowTooltip](ui.iggridupdating#options:locale.deleteRowTooltip).
+    */
   var deleteRowTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Name of the dialog widget to be used. It should inherit from $.ui.igGridModalDialog. For more information on how to utilize this property, please refer to the [Extending igGrid Modal Dialog](http://www.igniteui.com/help/extending-iggrid-modal-dialog) topic.
-  	 *
-  	 */
+    * Name of the dialog widget to be used. It should inherit from $.ui.igGridModalDialog. For more information on how to utilize this property, please refer to the [Extending igGrid Modal Dialog](http://www.igniteui.com/help/extending-iggrid-modal-dialog) topic.
+    *
+    */
   var dialogWidget: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the label for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneLabel is used.
-  	 * Use option [locale.doneLabel](ui.iggridupdating#options:locale.doneLabel).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the label for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneLabel is used.
+    * Use option [locale.doneLabel](ui.iggridupdating#options:locale.doneLabel).
+    */
   var doneLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 * Specifies the title for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneTooltip is used.
-  	 * Use option [locale.doneTooltip](ui.iggridupdating#options:locale.doneTooltip).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    * Specifies the title for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneTooltip is used.
+    * Use option [locale.doneTooltip](ui.iggridupdating#options:locale.doneTooltip).
+    */
   var doneTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after cell editing ends (including when row editing closes editing for a cell).
-  	 */
+    * Event fired after cell editing ends (including when row editing closes editing for a cell).
+    */
   var editCellEnded: js.UndefOr[EditCellEndedEvent] = js.undefined
+  
   /**
-  	 * Event fired before cell editing ends (including when row editing closes editing for a cell).
-  	 * Return false in order to prevent the grid from exiting edit mode (only functions if [editMode](ui.iggridupdating#options:editMode) is 'cell').
-  	 */
+    * Event fired before cell editing ends (including when row editing closes editing for a cell).
+    * Return false in order to prevent the grid from exiting edit mode (only functions if [editMode](ui.iggridupdating#options:editMode) is 'cell').
+    */
   var editCellEnding: js.UndefOr[EditCellEndingEvent] = js.undefined
+  
   /**
-  	 * Event fired after cell editing begins (including when row editing opens editing for a cell).
-  	 */
+    * Event fired after cell editing begins (including when row editing opens editing for a cell).
+    */
   var editCellStarted: js.UndefOr[EditCellStartedEvent] = js.undefined
+  
   /**
-  	 * Event fired before cell editing begins (including when row editing opens editing for a cell).
-  	 * Return false in order to cancel editing.
-  	 */
+    * Event fired before cell editing begins (including when row editing opens editing for a cell).
+    * Return false in order to cancel editing.
+    */
   var editCellStarting: js.UndefOr[EditCellStartingEvent] = js.undefined
+  
   /**
-  	 * Specifies the edit mode.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "row" Editors are shown for all columns that are not read-only. The editor of the clicked cell receives initial focus. Done and Cancel buttons may be displayed based on the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) property.
-  	 * "cell" An editor is shown for the cell entering edit mode. The Done and Cancel buttons are not supported for this mode.
-  	 * "dialog" A popup dialog is used with seperate settings available through the [rowEditDialogOptions](ui.iggridupdating#options:rowEditDialogOptions) property.
-  	 * "none" Editing through the UI is disabled.
-  	 */
+    * Specifies the edit mode.
+    *
+    *
+    * Valid values:
+    * "row" Editors are shown for all columns that are not read-only. The editor of the clicked cell receives initial focus. Done and Cancel buttons may be displayed based on the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) property.
+    * "cell" An editor is shown for the cell entering edit mode. The Done and Cancel buttons are not supported for this mode.
+    * "dialog" A popup dialog is used with seperate settings available through the [rowEditDialogOptions](ui.iggridupdating#options:rowEditDialogOptions) property.
+    * "none" Editing through the UI is disabled.
+    */
   var editMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after row editing ends.
-  	 */
+    * Event fired after row editing ends.
+    */
   var editRowEnded: js.UndefOr[EditRowEndedEvent] = js.undefined
+  
   /**
-  	 * Event fired before row editing ends.
-  	 * Return false in order to prevent the grid from exiting edit mode.
-  	 */
+    * Event fired before row editing ends.
+    * Return false in order to prevent the grid from exiting edit mode.
+    */
   var editRowEnding: js.UndefOr[EditRowEndingEvent] = js.undefined
+  
   /**
-  	 * Event fired after row editing begins.
-  	 */
+    * Event fired after row editing begins.
+    */
   var editRowStarted: js.UndefOr[EditRowStartedEvent] = js.undefined
+  
   /**
-  	 * Event fired before row editing begins.
-  	 * Return false in order to cancel editing.
-  	 */
+    * Event fired before row editing begins.
+    * Return false in order to cancel editing.
+    */
   var editRowStarting: js.UndefOr[EditRowStartingEvent] = js.undefined
+  
   /**
-  	 * Specifies if adding rows through the UI is enabled. When enabled an additional row is rendered at the bottom of the grid's header that works as a button. When the end-user clicks on it edit mode is initiated either through a dialog (when [editMode](ui.iggridupdating#options:editMode) is 'dialog') or mimicking the look and feel of 'row' [editMode](ui.iggridupdating#options:editMode) (when [editMode](ui.iggridupdating#options:editMode) is 'row' or 'cell').
-  	 *
-  	 */
+    * Specifies if adding rows through the UI is enabled. When enabled an additional row is rendered at the bottom of the grid's header that works as a button. When the end-user clicks on it edit mode is initiated either through a dialog (when [editMode](ui.iggridupdating#options:editMode) is 'dialog') or mimicking the look and feel of 'row' [editMode](ui.iggridupdating#options:editMode) (when [editMode](ui.iggridupdating#options:editMode) is 'row' or 'cell').
+    *
+    */
   var enableAddRow: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specifies if an exception should be thrown when the grid's data view changes while there are pending transactions in the data source. The data view changes when the data source performs a sorting, filtering, groupby or paging operation and the exception thrown will prevent the operation from succeeding. All pending transactions must be committed before a data view operation is able to complete. Committing transactions can be done manually through the grid's [commit](ui.iggrid#methods:commit) function or automatically by setting [autoCommit](ui.iggrid#options:autoCommit) to 'true'.
-  	 *
-  	 */
+    * Specifies if an exception should be thrown when the grid's data view changes while there are pending transactions in the data source. The data view changes when the data source performs a sorting, filtering, groupby or paging operation and the exception thrown will prevent the operation from succeeding. All pending transactions must be committed before a data view operation is able to complete. Committing transactions can be done manually through the grid's [commit](ui.iggrid#methods:commit) function or automatically by setting [autoCommit](ui.iggrid#options:autoCommit) to 'true'.
+    *
+    */
   var enableDataDirtyException: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specifies if deleting rows through the UI is enabled.
-  	 *
-  	 */
+    * Specifies if deleting rows through the UI is enabled.
+    *
+    */
   var enableDeleteRow: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Enables excel navigation style. When turned on, the arrow keys can be used for changing the currently edited cell similar to how Tab and Enter behave. When disabled, the arrow keys control the cursor inside editors.
-  	 *
-  	 */
+    * Enables excel navigation style. When turned on, the arrow keys can be used for changing the currently edited cell similar to how Tab and Enter behave. When disabled, the arrow keys control the cursor inside editors.
+    *
+    */
   var excelNavigationMode: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Event fired before editing starts for adding a new row, when Updating generates an automatic primary key for it.
-  	 */
+    * Event fired before editing starts for adding a new row, when Updating generates an automatic primary key for it.
+    */
   var generatePrimaryKeyValue: js.UndefOr[GeneratePrimaryKeyValueEvent] = js.undefined
+  
   /**
-  	 * Determines if pressing Enter to navigate away from the currently edited cell should move the focus horizontally or vertically (default).
-  	 *
-  	 */
+    * Determines if pressing Enter to navigate away from the currently edited cell should move the focus horizontally or vertically (default).
+    *
+    */
   var horizontalMoveOnEnter: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Enables/disables feature inheritance for the child layouts in igHierarchicalGrid.
-  	 */
+    * Enables/disables feature inheritance for the child layouts in igHierarchicalGrid.
+    */
   var inherit: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[IgGridUpdatingLocale] = js.undefined
+  
   /**
-  	 * Event fired after adding a new row.
-  	 */
+    * Event fired after adding a new row.
+    */
   var rowAdded: js.UndefOr[RowAddedEvent] = js.undefined
+  
   /**
-  	 * Event fired before adding a new row.
-  	 * Return false in order to cancel the adding of the new row to the data source.
-  	 */
+    * Event fired before adding a new row.
+    * Return false in order to cancel the adding of the new row to the data source.
+    */
   var rowAdding: js.UndefOr[RowAddingEvent] = js.undefined
+  
   /**
-  	 * Event fired after a row is deleted.
-  	 */
+    * Event fired after a row is deleted.
+    */
   var rowDeleted: js.UndefOr[RowDeletedEvent] = js.undefined
+  
   /**
-  	 * Event fired before deleting a row.
-  	 * Return false in order to cancel the row's deletion.
-  	 */
+    * Event fired before deleting a row.
+    * Return false in order to cancel the row's deletion.
+    */
   var rowDeleting: js.UndefOr[RowDeletingEvent] = js.undefined
+  
   /**
-  	 * Event fired after the row edit dialog is closed.
-  	 */
+    * Event fired after the row edit dialog is closed.
+    */
   var rowEditDialogAfterClose: js.UndefOr[RowEditDialogAfterCloseEvent] = js.undefined
+  
   /**
-  	 * Event fired after the row edit dialog is opened.
-  	 */
+    * Event fired after the row edit dialog is opened.
+    */
   var rowEditDialogAfterOpen: js.UndefOr[RowEditDialogAfterOpenEvent] = js.undefined
+  
   /**
-  	 * Event fired before the row edit dialog is closed.
-  	 */
+    * Event fired before the row edit dialog is closed.
+    */
   var rowEditDialogBeforeClose: js.UndefOr[RowEditDialogBeforeCloseEvent] = js.undefined
+  
   /**
-  	 * Event fired before the row edit dialog is opened.
-  	 */
+    * Event fired before the row edit dialog is opened.
+    */
   var rowEditDialogBeforeOpen: js.UndefOr[RowEditDialogBeforeOpenEvent] = js.undefined
+  
   /**
-  	 * Event fired after the row edit dialog is rendered.
-  	 */
+    * Event fired after the row edit dialog is rendered.
+    */
   var rowEditDialogContentsRendered: js.UndefOr[RowEditDialogContentsRenderedEvent] = js.undefined
+  
   /**
-  	 * A list of options controlling the rendering behavior of the row edit dialog. If [editMode](ui.iggridupdating#options:editMode) is not 'dialog' these have no effect.
-  	 *
-  	 */
+    * A list of options controlling the rendering behavior of the row edit dialog. If [editMode](ui.iggridupdating#options:editMode) is not 'dialog' these have no effect.
+    *
+    */
   var rowEditDialogOptions: js.UndefOr[IgGridUpdatingRowEditDialogOptions] = js.undefined
+  
   /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 */
+    * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property fails. The function will be called with arguments representing the data returned by the server.
+    *
+    */
   var saveChangesErrorHandler: js.UndefOr[js.Function | String] = js.undefined
+  
   /**
-  	 * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
-  	 *
-  	 */
+    * Sets a custom function to be called when the AJAX request to the URL specified by the [updateUrl](ui.iggrid#options:updateUrl) property succeeds. The function will be called with arguments representing the data returned by the server.
+    *
+    */
   var saveChangesSuccessHandler: js.UndefOr[js.Function | String] = js.undefined
+  
   /**
-  	 * Determines if the Done and Cancel buttons will be available as means to end edit mode for [editMode](ui.iggridupdating#options:editMode) 'row' and when adding a new row.
-  	 *
-  	 */
+    * Determines if the Done and Cancel buttons will be available as means to end edit mode for [editMode](ui.iggridupdating#options:editMode) 'row' and when adding a new row.
+    *
+    */
   var showDoneCancelButtons: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specifies how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
-  	 *
-  	 */
-  var startEditTriggers: js.UndefOr[String | js.Array[_]] = js.undefined
+    * Specifies how end-users are able to start edit mode. Possible values: "click", "dblclick", "F2", "enter" and their combinations separated by coma or in array. The keyboard triggers have effect only if the grid cells can receive focus (the grid's [tabIndex](ui.iggrid#options:tabIndex) property should not have a negative value) or Selection is enabled. If "dblclick" is included, then "click" has no effect.
+    *
+    */
+  var startEditTriggers: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   /**
-  	 * On touch-enabled devices specifies the swipe distance for the delete button to appear.
-  	 *
-  	 */
+    * On touch-enabled devices specifies the swipe distance for the delete button to appear.
+    *
+    */
   var swipeDistance: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Specifies if the value of each editable column in the grid should be validated. The validation is done based on the rules of their corresponding editors.
-  	 *
-  	 */
+    * Specifies if the value of each editable column in the grid should be validated. The validation is done based on the rules of their corresponding editors.
+    *
+    */
   var validation: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Controls if navigation will wrap around the grid. The feature will never wrap around virtual grids.
-  	 *
-  	 */
+    * Controls if navigation will wrap around the grid. The feature will never wrap around virtual grids.
+    *
+    */
   var wrapAround: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgGridUpdating {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igGridUpdating
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    addRowLabel: String = null,
-    addRowTooltip: String = null,
-    cancelLabel: String = null,
-    cancelTooltip: String = null,
-    columnSettings: js.Array[IgGridUpdatingColumnSetting] = null,
-    dataDirty: (/* event */ Event_, /* ui */ DataDirtyEventUIParam) => Callback = null,
-    deleteRowLabel: String = null,
-    deleteRowTooltip: String = null,
-    dialogWidget: String = null,
-    doneLabel: String = null,
-    doneTooltip: String = null,
-    editCellEnded: (/* event */ Event_, /* ui */ EditCellEndedEventUIParam) => Callback = null,
-    editCellEnding: (/* event */ Event_, /* ui */ EditCellEndingEventUIParam) => Callback = null,
-    editCellStarted: (/* event */ Event_, /* ui */ EditCellStartedEventUIParam) => Callback = null,
-    editCellStarting: (/* event */ Event_, /* ui */ EditCellStartingEventUIParam) => Callback = null,
-    editMode: String = null,
-    editRowEnded: (/* event */ Event_, /* ui */ EditRowEndedEventUIParam) => Callback = null,
-    editRowEnding: (/* event */ Event_, /* ui */ EditRowEndingEventUIParam) => Callback = null,
-    editRowStarted: (/* event */ Event_, /* ui */ EditRowStartedEventUIParam) => Callback = null,
-    editRowStarting: (/* event */ Event_, /* ui */ EditRowStartingEventUIParam) => Callback = null,
-    enableAddRow: js.UndefOr[Boolean] = js.undefined,
-    enableDataDirtyException: js.UndefOr[Boolean] = js.undefined,
-    enableDeleteRow: js.UndefOr[Boolean] = js.undefined,
-    excelNavigationMode: js.UndefOr[Boolean] = js.undefined,
-    generatePrimaryKeyValue: (/* event */ Event_, /* ui */ GeneratePrimaryKeyValueEventUIParam) => Callback = null,
-    horizontalMoveOnEnter: js.UndefOr[Boolean] = js.undefined,
-    inherit: js.UndefOr[Boolean] = js.undefined,
-    locale: IgGridUpdatingLocale = null,
-    rowAdded: (/* event */ Event_, /* ui */ RowAddedEventUIParam) => Callback = null,
-    rowAdding: (/* event */ Event_, /* ui */ RowAddingEventUIParam) => Callback = null,
-    rowDeleted: (/* event */ Event_, /* ui */ RowDeletedEventUIParam) => Callback = null,
-    rowDeleting: (/* event */ Event_, /* ui */ RowDeletingEventUIParam) => Callback = null,
-    rowEditDialogAfterClose: (/* event */ Event_, /* ui */ RowEditDialogAfterCloseEventUIParam) => Callback = null,
-    rowEditDialogAfterOpen: (/* event */ Event_, /* ui */ RowEditDialogAfterOpenEventUIParam) => Callback = null,
-    rowEditDialogBeforeClose: (/* event */ Event_, /* ui */ RowEditDialogBeforeCloseEventUIParam) => Callback = null,
-    rowEditDialogBeforeOpen: (/* event */ Event_, /* ui */ RowEditDialogBeforeOpenEventUIParam) => Callback = null,
-    rowEditDialogContentsRendered: (/* event */ Event_, /* ui */ RowEditDialogContentsRenderedEventUIParam) => Callback = null,
-    rowEditDialogOptions: IgGridUpdatingRowEditDialogOptions = null,
-    saveChangesErrorHandler: js.Function | String = null,
-    saveChangesSuccessHandler: js.Function | String = null,
-    showDoneCancelButtons: js.UndefOr[Boolean] = js.undefined,
-    startEditTriggers: String | js.Array[_] = null,
-    swipeDistance: String | Double = null,
-    validation: js.UndefOr[Boolean] = js.undefined,
-    wrapAround: js.UndefOr[Boolean] = js.undefined
-  ): IgGridUpdating = {
+  
+  inline def apply(): IgGridUpdating = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel.asInstanceOf[js.Any])
-    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip.asInstanceOf[js.Any])
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
-    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip.asInstanceOf[js.Any])
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
-    if (dataDirty != null) __obj.updateDynamic("dataDirty")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DataDirtyEventUIParam) => dataDirty(t0, t1).runNow()))
-    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel.asInstanceOf[js.Any])
-    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip.asInstanceOf[js.Any])
-    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget.asInstanceOf[js.Any])
-    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
-    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip.asInstanceOf[js.Any])
-    if (editCellEnded != null) __obj.updateDynamic("editCellEnded")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditCellEndedEventUIParam) => editCellEnded(t0, t1).runNow()))
-    if (editCellEnding != null) __obj.updateDynamic("editCellEnding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditCellEndingEventUIParam) => editCellEnding(t0, t1).runNow()))
-    if (editCellStarted != null) __obj.updateDynamic("editCellStarted")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditCellStartedEventUIParam) => editCellStarted(t0, t1).runNow()))
-    if (editCellStarting != null) __obj.updateDynamic("editCellStarting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditCellStartingEventUIParam) => editCellStarting(t0, t1).runNow()))
-    if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
-    if (editRowEnded != null) __obj.updateDynamic("editRowEnded")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditRowEndedEventUIParam) => editRowEnded(t0, t1).runNow()))
-    if (editRowEnding != null) __obj.updateDynamic("editRowEnding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditRowEndingEventUIParam) => editRowEnding(t0, t1).runNow()))
-    if (editRowStarted != null) __obj.updateDynamic("editRowStarted")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditRowStartedEventUIParam) => editRowStarted(t0, t1).runNow()))
-    if (editRowStarting != null) __obj.updateDynamic("editRowStarting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.EditRowStartingEventUIParam) => editRowStarting(t0, t1).runNow()))
-    if (!js.isUndefined(enableAddRow)) __obj.updateDynamic("enableAddRow")(enableAddRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDataDirtyException)) __obj.updateDynamic("enableDataDirtyException")(enableDataDirtyException.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDeleteRow)) __obj.updateDynamic("enableDeleteRow")(enableDeleteRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(excelNavigationMode)) __obj.updateDynamic("excelNavigationMode")(excelNavigationMode.asInstanceOf[js.Any])
-    if (generatePrimaryKeyValue != null) __obj.updateDynamic("generatePrimaryKeyValue")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.GeneratePrimaryKeyValueEventUIParam) => generatePrimaryKeyValue(t0, t1).runNow()))
-    if (!js.isUndefined(horizontalMoveOnEnter)) __obj.updateDynamic("horizontalMoveOnEnter")(horizontalMoveOnEnter.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (rowAdded != null) __obj.updateDynamic("rowAdded")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowAddedEventUIParam) => rowAdded(t0, t1).runNow()))
-    if (rowAdding != null) __obj.updateDynamic("rowAdding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowAddingEventUIParam) => rowAdding(t0, t1).runNow()))
-    if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowDeletedEventUIParam) => rowDeleted(t0, t1).runNow()))
-    if (rowDeleting != null) __obj.updateDynamic("rowDeleting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowDeletingEventUIParam) => rowDeleting(t0, t1).runNow()))
-    if (rowEditDialogAfterClose != null) __obj.updateDynamic("rowEditDialogAfterClose")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowEditDialogAfterCloseEventUIParam) => rowEditDialogAfterClose(t0, t1).runNow()))
-    if (rowEditDialogAfterOpen != null) __obj.updateDynamic("rowEditDialogAfterOpen")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowEditDialogAfterOpenEventUIParam) => rowEditDialogAfterOpen(t0, t1).runNow()))
-    if (rowEditDialogBeforeClose != null) __obj.updateDynamic("rowEditDialogBeforeClose")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowEditDialogBeforeCloseEventUIParam) => rowEditDialogBeforeClose(t0, t1).runNow()))
-    if (rowEditDialogBeforeOpen != null) __obj.updateDynamic("rowEditDialogBeforeOpen")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowEditDialogBeforeOpenEventUIParam) => rowEditDialogBeforeOpen(t0, t1).runNow()))
-    if (rowEditDialogContentsRendered != null) __obj.updateDynamic("rowEditDialogContentsRendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowEditDialogContentsRenderedEventUIParam) => rowEditDialogContentsRendered(t0, t1).runNow()))
-    if (rowEditDialogOptions != null) __obj.updateDynamic("rowEditDialogOptions")(rowEditDialogOptions.asInstanceOf[js.Any])
-    if (saveChangesErrorHandler != null) __obj.updateDynamic("saveChangesErrorHandler")(saveChangesErrorHandler.asInstanceOf[js.Any])
-    if (saveChangesSuccessHandler != null) __obj.updateDynamic("saveChangesSuccessHandler")(saveChangesSuccessHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(showDoneCancelButtons)) __obj.updateDynamic("showDoneCancelButtons")(showDoneCancelButtons.asInstanceOf[js.Any])
-    if (startEditTriggers != null) __obj.updateDynamic("startEditTriggers")(startEditTriggers.asInstanceOf[js.Any])
-    if (swipeDistance != null) __obj.updateDynamic("swipeDistance")(swipeDistance.asInstanceOf[js.Any])
-    if (!js.isUndefined(validation)) __obj.updateDynamic("validation")(validation.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapAround)) __obj.updateDynamic("wrapAround")(wrapAround.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridUpdating]
   }
+  
+  extension [Self <: IgGridUpdating](x: Self) {
+    
+    inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
+    
+    inline def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
+    
+    inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+    
+    inline def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
+    
+    inline def setColumnSettings(value: js.Array[IgGridUpdatingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    
+    inline def setColumnSettingsVarargs(value: IgGridUpdatingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
+    
+    inline def setDataDirty(value: (/* event */ Event, /* ui */ DataDirtyEventUIParam) => Callback): Self = StObject.set(x, "dataDirty", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DataDirtyEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDataDirtyUndefined: Self = StObject.set(x, "dataDirty", js.undefined)
+    
+    inline def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
+    
+    inline def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
+    
+    inline def setDialogWidget(value: String): Self = StObject.set(x, "dialogWidget", value.asInstanceOf[js.Any])
+    
+    inline def setDialogWidgetUndefined: Self = StObject.set(x, "dialogWidget", js.undefined)
+    
+    inline def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
+    
+    inline def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
+    
+    inline def setEditCellEnded(value: (/* event */ Event, /* ui */ EditCellEndedEventUIParam) => Callback): Self = StObject.set(x, "editCellEnded", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditCellEndedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditCellEndedUndefined: Self = StObject.set(x, "editCellEnded", js.undefined)
+    
+    inline def setEditCellEnding(value: (/* event */ Event, /* ui */ EditCellEndingEventUIParam) => Callback): Self = StObject.set(x, "editCellEnding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditCellEndingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditCellEndingUndefined: Self = StObject.set(x, "editCellEnding", js.undefined)
+    
+    inline def setEditCellStarted(value: (/* event */ Event, /* ui */ EditCellStartedEventUIParam) => Callback): Self = StObject.set(x, "editCellStarted", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditCellStartedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditCellStartedUndefined: Self = StObject.set(x, "editCellStarted", js.undefined)
+    
+    inline def setEditCellStarting(value: (/* event */ Event, /* ui */ EditCellStartingEventUIParam) => Callback): Self = StObject.set(x, "editCellStarting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditCellStartingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditCellStartingUndefined: Self = StObject.set(x, "editCellStarting", js.undefined)
+    
+    inline def setEditMode(value: String): Self = StObject.set(x, "editMode", value.asInstanceOf[js.Any])
+    
+    inline def setEditModeUndefined: Self = StObject.set(x, "editMode", js.undefined)
+    
+    inline def setEditRowEnded(value: (/* event */ Event, /* ui */ EditRowEndedEventUIParam) => Callback): Self = StObject.set(x, "editRowEnded", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditRowEndedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditRowEndedUndefined: Self = StObject.set(x, "editRowEnded", js.undefined)
+    
+    inline def setEditRowEnding(value: (/* event */ Event, /* ui */ EditRowEndingEventUIParam) => Callback): Self = StObject.set(x, "editRowEnding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditRowEndingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditRowEndingUndefined: Self = StObject.set(x, "editRowEnding", js.undefined)
+    
+    inline def setEditRowStarted(value: (/* event */ Event, /* ui */ EditRowStartedEventUIParam) => Callback): Self = StObject.set(x, "editRowStarted", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditRowStartedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditRowStartedUndefined: Self = StObject.set(x, "editRowStarted", js.undefined)
+    
+    inline def setEditRowStarting(value: (/* event */ Event, /* ui */ EditRowStartingEventUIParam) => Callback): Self = StObject.set(x, "editRowStarting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ EditRowStartingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setEditRowStartingUndefined: Self = StObject.set(x, "editRowStarting", js.undefined)
+    
+    inline def setEnableAddRow(value: Boolean): Self = StObject.set(x, "enableAddRow", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAddRowUndefined: Self = StObject.set(x, "enableAddRow", js.undefined)
+    
+    inline def setEnableDataDirtyException(value: Boolean): Self = StObject.set(x, "enableDataDirtyException", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDataDirtyExceptionUndefined: Self = StObject.set(x, "enableDataDirtyException", js.undefined)
+    
+    inline def setEnableDeleteRow(value: Boolean): Self = StObject.set(x, "enableDeleteRow", value.asInstanceOf[js.Any])
+    
+    inline def setEnableDeleteRowUndefined: Self = StObject.set(x, "enableDeleteRow", js.undefined)
+    
+    inline def setExcelNavigationMode(value: Boolean): Self = StObject.set(x, "excelNavigationMode", value.asInstanceOf[js.Any])
+    
+    inline def setExcelNavigationModeUndefined: Self = StObject.set(x, "excelNavigationMode", js.undefined)
+    
+    inline def setGeneratePrimaryKeyValue(value: (/* event */ Event, /* ui */ GeneratePrimaryKeyValueEventUIParam) => Callback): Self = StObject.set(x, "generatePrimaryKeyValue", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ GeneratePrimaryKeyValueEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setGeneratePrimaryKeyValueUndefined: Self = StObject.set(x, "generatePrimaryKeyValue", js.undefined)
+    
+    inline def setHorizontalMoveOnEnter(value: Boolean): Self = StObject.set(x, "horizontalMoveOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalMoveOnEnterUndefined: Self = StObject.set(x, "horizontalMoveOnEnter", js.undefined)
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    
+    inline def setLocale(value: IgGridUpdatingLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setRowAdded(value: (/* event */ Event, /* ui */ RowAddedEventUIParam) => Callback): Self = StObject.set(x, "rowAdded", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowAddedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowAddedUndefined: Self = StObject.set(x, "rowAdded", js.undefined)
+    
+    inline def setRowAdding(value: (/* event */ Event, /* ui */ RowAddingEventUIParam) => Callback): Self = StObject.set(x, "rowAdding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowAddingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowAddingUndefined: Self = StObject.set(x, "rowAdding", js.undefined)
+    
+    inline def setRowDeleted(value: (/* event */ Event, /* ui */ RowDeletedEventUIParam) => Callback): Self = StObject.set(x, "rowDeleted", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowDeletedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowDeletedUndefined: Self = StObject.set(x, "rowDeleted", js.undefined)
+    
+    inline def setRowDeleting(value: (/* event */ Event, /* ui */ RowDeletingEventUIParam) => Callback): Self = StObject.set(x, "rowDeleting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowDeletingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowDeletingUndefined: Self = StObject.set(x, "rowDeleting", js.undefined)
+    
+    inline def setRowEditDialogAfterClose(value: (/* event */ Event, /* ui */ RowEditDialogAfterCloseEventUIParam) => Callback): Self = StObject.set(x, "rowEditDialogAfterClose", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowEditDialogAfterCloseEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowEditDialogAfterCloseUndefined: Self = StObject.set(x, "rowEditDialogAfterClose", js.undefined)
+    
+    inline def setRowEditDialogAfterOpen(value: (/* event */ Event, /* ui */ RowEditDialogAfterOpenEventUIParam) => Callback): Self = StObject.set(x, "rowEditDialogAfterOpen", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowEditDialogAfterOpenEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowEditDialogAfterOpenUndefined: Self = StObject.set(x, "rowEditDialogAfterOpen", js.undefined)
+    
+    inline def setRowEditDialogBeforeClose(value: (/* event */ Event, /* ui */ RowEditDialogBeforeCloseEventUIParam) => Callback): Self = StObject.set(x, "rowEditDialogBeforeClose", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowEditDialogBeforeCloseEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowEditDialogBeforeCloseUndefined: Self = StObject.set(x, "rowEditDialogBeforeClose", js.undefined)
+    
+    inline def setRowEditDialogBeforeOpen(value: (/* event */ Event, /* ui */ RowEditDialogBeforeOpenEventUIParam) => Callback): Self = StObject.set(x, "rowEditDialogBeforeOpen", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowEditDialogBeforeOpenEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowEditDialogBeforeOpenUndefined: Self = StObject.set(x, "rowEditDialogBeforeOpen", js.undefined)
+    
+    inline def setRowEditDialogContentsRendered(value: (/* event */ Event, /* ui */ RowEditDialogContentsRenderedEventUIParam) => Callback): Self = StObject.set(x, "rowEditDialogContentsRendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowEditDialogContentsRenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowEditDialogContentsRenderedUndefined: Self = StObject.set(x, "rowEditDialogContentsRendered", js.undefined)
+    
+    inline def setRowEditDialogOptions(value: IgGridUpdatingRowEditDialogOptions): Self = StObject.set(x, "rowEditDialogOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRowEditDialogOptionsUndefined: Self = StObject.set(x, "rowEditDialogOptions", js.undefined)
+    
+    inline def setSaveChangesErrorHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesErrorHandler", value.asInstanceOf[js.Any])
+    
+    inline def setSaveChangesErrorHandlerUndefined: Self = StObject.set(x, "saveChangesErrorHandler", js.undefined)
+    
+    inline def setSaveChangesSuccessHandler(value: js.Function | String): Self = StObject.set(x, "saveChangesSuccessHandler", value.asInstanceOf[js.Any])
+    
+    inline def setSaveChangesSuccessHandlerUndefined: Self = StObject.set(x, "saveChangesSuccessHandler", js.undefined)
+    
+    inline def setShowDoneCancelButtons(value: Boolean): Self = StObject.set(x, "showDoneCancelButtons", value.asInstanceOf[js.Any])
+    
+    inline def setShowDoneCancelButtonsUndefined: Self = StObject.set(x, "showDoneCancelButtons", js.undefined)
+    
+    inline def setStartEditTriggers(value: String | js.Array[Any]): Self = StObject.set(x, "startEditTriggers", value.asInstanceOf[js.Any])
+    
+    inline def setStartEditTriggersUndefined: Self = StObject.set(x, "startEditTriggers", js.undefined)
+    
+    inline def setStartEditTriggersVarargs(value: Any*): Self = StObject.set(x, "startEditTriggers", js.Array(value*))
+    
+    inline def setSwipeDistance(value: String | Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
+    
+    inline def setSwipeDistanceUndefined: Self = StObject.set(x, "swipeDistance", js.undefined)
+    
+    inline def setValidation(value: Boolean): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    
+    inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+    
+    inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+  }
 }
-

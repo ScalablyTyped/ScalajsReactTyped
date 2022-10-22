@@ -1,19 +1,24 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFileReference extends ILineAndCharacter {
+trait IFileReference
+  extends StObject
+     with ILineAndCharacter {
+  
   var isResident: Boolean
+  
   var length: Double
+  
   var path: String
+  
   var position: Double
 }
-
 object IFileReference {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     character: Double,
     isResident: Boolean,
     length: Double,
@@ -22,8 +27,17 @@ object IFileReference {
     position: Double
   ): IFileReference = {
     val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], isResident = isResident.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFileReference]
   }
+  
+  extension [Self <: IFileReference](x: Self) {
+    
+    inline def setIsResident(value: Boolean): Self = StObject.set(x, "isResident", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+  }
 }
-

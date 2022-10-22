@@ -1,10 +1,10 @@
 package typingsJapgolly.oracledb.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The SodaDatabase class is the top level object for node-oracledb SODA operations.
@@ -17,7 +17,8 @@ import scala.scalajs.js.annotation._
   * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaoverview
   */
 @js.native
-trait SodaDatabase extends js.Object {
+trait SodaDatabase extends StObject {
+  
   /**
     * Creates a SODA collection of the given name. If you try to create a collection, and a collection with the
     * same name already exists, then that existing collection is opened without error.
@@ -55,6 +56,7 @@ trait SodaDatabase extends js.Object {
     options: SodaCollectionOptions,
     callback: js.Function2[/* error */ DBError, /* collection */ SodaCollection, Unit]
   ): Unit = js.native
+  
   /**
     * A synchronous method that constructs a proto SodaDocument object usable for SODA insert and replace methods.
     * SodaDocument attributes like createdOn will not be defined, and neither will attributes valid in options but not specified.
@@ -70,8 +72,9 @@ trait SodaDatabase extends js.Object {
   def createDocument(content: String, options: SodaDocumentOptions): SodaDocument = js.native
   def createDocument(content: Buffer): SodaDocument = js.native
   def createDocument(content: Buffer, options: SodaDocumentOptions): SodaDocument = js.native
-  def createDocument(content: Record[String, _]): SodaDocument = js.native
-  def createDocument(content: Record[String, _], options: SodaDocumentOptions): SodaDocument = js.native
+  def createDocument(content: Record[String, Any]): SodaDocument = js.native
+  def createDocument(content: Record[String, Any], options: SodaDocumentOptions): SodaDocument = js.native
+  
   /**
     * Gets an array of collection names in alphabetical order.
     *
@@ -88,6 +91,7 @@ trait SodaDatabase extends js.Object {
     options: SodaCollectionNamesOptions,
     callback: js.Function2[/* error */ DBError, /* names */ js.Array[String], Unit]
   ): Unit = js.native
+  
   /**
     * Opens an existing SodaCollection of the given name. The collection can then be used to access documents.
     *
@@ -107,4 +111,3 @@ trait SodaDatabase extends js.Object {
     callback: js.Function2[/* error */ DBError, /* collection */ js.UndefOr[SodaCollection], Unit]
   ): Unit = js.native
 }
-

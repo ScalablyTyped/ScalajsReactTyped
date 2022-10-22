@@ -1,8 +1,8 @@
 package typingsJapgolly.webgme.Gme
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webgme.webgmeStrings.load
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webgme.webgmeStrings.complete
   - typingsJapgolly.webgme.webgmeStrings.incomplete
 */
-trait TerritoryEventType extends js.Object
-
+trait TerritoryEventType extends StObject
 object TerritoryEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def complete: typingsJapgolly.webgme.webgmeStrings.complete = this.cast("complete")
-  @scala.inline
-  def incomplete: typingsJapgolly.webgme.webgmeStrings.incomplete = this.cast("incomplete")
-  @scala.inline
-  def load: typingsJapgolly.webgme.webgmeStrings.load = this.cast("load")
-  @scala.inline
-  def unload: typingsJapgolly.webgme.webgmeStrings.unload = this.cast("unload")
-  @scala.inline
-  def update: typingsJapgolly.webgme.webgmeStrings.update = this.cast("update")
+  
+  inline def complete: typingsJapgolly.webgme.webgmeStrings.complete = "complete".asInstanceOf[typingsJapgolly.webgme.webgmeStrings.complete]
+  
+  inline def incomplete: typingsJapgolly.webgme.webgmeStrings.incomplete = "incomplete".asInstanceOf[typingsJapgolly.webgme.webgmeStrings.incomplete]
+  
+  inline def load: typingsJapgolly.webgme.webgmeStrings.load = "load".asInstanceOf[typingsJapgolly.webgme.webgmeStrings.load]
+  
+  inline def unload: typingsJapgolly.webgme.webgmeStrings.unload = "unload".asInstanceOf[typingsJapgolly.webgme.webgmeStrings.unload]
+  
+  inline def update: typingsJapgolly.webgme.webgmeStrings.update = "update".asInstanceOf[typingsJapgolly.webgme.webgmeStrings.update]
 }
-

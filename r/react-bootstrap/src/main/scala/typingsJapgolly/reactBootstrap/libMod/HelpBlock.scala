@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.helpBlockMod.HelpBlockProps
+import typingsJapgolly.reactBootstrap.libHelpBlockMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "HelpBlock")
 @js.native
-class HelpBlock ()
-  extends Component[HelpBlockProps, js.Object, js.Any]
-
+open class HelpBlock () extends ^

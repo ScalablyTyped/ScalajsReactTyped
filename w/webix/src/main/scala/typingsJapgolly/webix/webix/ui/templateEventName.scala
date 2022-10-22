@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterLoad
@@ -27,52 +27,48 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onViewResize
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait templateEventName extends js.Object
-
+trait templateEventName extends StObject
 object templateEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
-  @scala.inline
-  def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = this.cast("onAfterRender")
-  @scala.inline
-  def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
-  @scala.inline
-  def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
-  @scala.inline
-  def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = this.cast("onBeforeRender")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onBlur: typingsJapgolly.webix.webixStrings.onBlur = this.cast("onBlur")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onEnter: typingsJapgolly.webix.webixStrings.onEnter = this.cast("onEnter")
-  @scala.inline
-  def onFocus: typingsJapgolly.webix.webixStrings.onFocus = this.cast("onFocus")
-  @scala.inline
-  def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = this.cast("onKeyPress")
-  @scala.inline
-  def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = this.cast("onLongTouch")
-  @scala.inline
-  def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = this.cast("onSwipeX")
-  @scala.inline
-  def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = this.cast("onSwipeY")
-  @scala.inline
-  def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = this.cast("onTimedKeyPress")
-  @scala.inline
-  def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = this.cast("onTouchEnd")
-  @scala.inline
-  def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = this.cast("onTouchMove")
-  @scala.inline
-  def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = this.cast("onTouchStart")
-  @scala.inline
-  def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = this.cast("onViewResize")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterLoad]
+  
+  inline def onAfterRender: typingsJapgolly.webix.webixStrings.onAfterRender = "onAfterRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterRender]
+  
+  inline def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterScroll]
+  
+  inline def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeLoad]
+  
+  inline def onBeforeRender: typingsJapgolly.webix.webixStrings.onBeforeRender = "onBeforeRender".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeRender]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onBlur: typingsJapgolly.webix.webixStrings.onBlur = "onBlur".asInstanceOf[typingsJapgolly.webix.webixStrings.onBlur]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onEnter: typingsJapgolly.webix.webixStrings.onEnter = "onEnter".asInstanceOf[typingsJapgolly.webix.webixStrings.onEnter]
+  
+  inline def onFocus: typingsJapgolly.webix.webixStrings.onFocus = "onFocus".asInstanceOf[typingsJapgolly.webix.webixStrings.onFocus]
+  
+  inline def onKeyPress: typingsJapgolly.webix.webixStrings.onKeyPress = "onKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onKeyPress]
+  
+  inline def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typingsJapgolly.webix.webixStrings.onLoadError]
+  
+  inline def onLongTouch: typingsJapgolly.webix.webixStrings.onLongTouch = "onLongTouch".asInstanceOf[typingsJapgolly.webix.webixStrings.onLongTouch]
+  
+  inline def onSwipeX: typingsJapgolly.webix.webixStrings.onSwipeX = "onSwipeX".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeX]
+  
+  inline def onSwipeY: typingsJapgolly.webix.webixStrings.onSwipeY = "onSwipeY".asInstanceOf[typingsJapgolly.webix.webixStrings.onSwipeY]
+  
+  inline def onTimedKeyPress: typingsJapgolly.webix.webixStrings.onTimedKeyPress = "onTimedKeyPress".asInstanceOf[typingsJapgolly.webix.webixStrings.onTimedKeyPress]
+  
+  inline def onTouchEnd: typingsJapgolly.webix.webixStrings.onTouchEnd = "onTouchEnd".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchEnd]
+  
+  inline def onTouchMove: typingsJapgolly.webix.webixStrings.onTouchMove = "onTouchMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchMove]
+  
+  inline def onTouchStart: typingsJapgolly.webix.webixStrings.onTouchStart = "onTouchStart".asInstanceOf[typingsJapgolly.webix.webixStrings.onTouchStart]
+  
+  inline def onViewResize: typingsJapgolly.webix.webixStrings.onViewResize = "onViewResize".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewResize]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

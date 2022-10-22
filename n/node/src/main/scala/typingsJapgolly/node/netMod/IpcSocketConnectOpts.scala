@@ -1,21 +1,25 @@
 package typingsJapgolly.node.netMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IpcSocketConnectOpts
-  extends ConnectOpts
+  extends StObject
+     with ConnectOpts
      with SocketConnectOpts {
+  
   var path: String
 }
-
 object IpcSocketConnectOpts {
-  @scala.inline
-  def apply(path: String, onread: OnReadOpts = null): IpcSocketConnectOpts = {
+  
+  inline def apply(path: String): IpcSocketConnectOpts = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpcSocketConnectOpts]
   }
+  
+  extension [Self <: IpcSocketConnectOpts](x: Self) {
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+  }
 }
-

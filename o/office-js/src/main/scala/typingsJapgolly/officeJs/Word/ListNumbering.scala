@@ -1,56 +1,70 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListNumbering extends js.Object
-
+sealed trait ListNumbering extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.ListNumbering")
 @js.native
-object ListNumbering extends js.Object {
+object ListNumbering extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait arabic extends ListNumbering
+  sealed trait arabic
+    extends StObject
+       with ListNumbering
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait lowerLetter extends ListNumbering
+  sealed trait lowerLetter
+    extends StObject
+       with ListNumbering
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait lowerRoman extends ListNumbering
+  sealed trait lowerRoman
+    extends StObject
+       with ListNumbering
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait none extends ListNumbering
+  sealed trait none
+    extends StObject
+       with ListNumbering
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait upperLetter extends ListNumbering
+  sealed trait upperLetter
+    extends StObject
+       with ListNumbering
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait upperRoman extends ListNumbering
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ListNumbering with String] = js.native
-  /* "Arabic" */ @js.native
-  object arabic extends TopLevel[arabic with String]
-  
-  /* "LowerLetter" */ @js.native
-  object lowerLetter extends TopLevel[lowerLetter with String]
-  
-  /* "LowerRoman" */ @js.native
-  object lowerRoman extends TopLevel[lowerRoman with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "UpperLetter" */ @js.native
-  object upperLetter extends TopLevel[upperLetter with String]
-  
-  /* "UpperRoman" */ @js.native
-  object upperRoman extends TopLevel[upperRoman with String]
-  
+  sealed trait upperRoman
+    extends StObject
+       with ListNumbering
 }
-

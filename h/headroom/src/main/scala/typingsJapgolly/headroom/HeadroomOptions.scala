@@ -1,50 +1,92 @@
 package typingsJapgolly.headroom
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.headroom.anon.Bottom
+import typingsJapgolly.headroom.anon.Down
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeadroomOptions extends js.Object {
-  var classes: js.UndefOr[AnonInitial] = js.undefined
-  var offset: js.UndefOr[Double] = js.undefined
+trait HeadroomOptions extends StObject {
+  
+  /** css classes to apply multiple classes are also supported with a space-separated list */
+  var classes: js.UndefOr[Bottom] = js.undefined
+  
+  /** vertical offset in px before element is first unpinned */
+  var offset: js.UndefOr[Down | Double] = js.undefined
+  
+  /** callback when at bottom of page, `this` is headroom object */
   var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** callback when moving away from bottom of page, `this` is headroom object */
   var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** callback when below offset, `this` is headroom object */
   var onNotTop: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** callback when pinned, `this` is headroom object */
   var onPin: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** callback when above offset, `this` is headroom object */
   var onTop: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  /** callback when unpinned, `this` is headroom object */
   var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var scroller: js.UndefOr[Element] = js.undefined
-  var tolerance: js.UndefOr[js.Any] = js.undefined
+  
+  /** element to listen to scroll events on, defaults to `window` */
+  var scroller: js.UndefOr[HTMLElement] = js.undefined
+  
+  /** scroll tolerance in px before state changes or you can specify tolerance individually for up/down scroll */
+  var tolerance: js.UndefOr[Down | Double] = js.undefined
 }
-
 object HeadroomOptions {
-  @scala.inline
-  def apply(
-    classes: AnonInitial = null,
-    offset: Int | Double = null,
-    onBottom: js.UndefOr[Callback] = js.undefined,
-    onNotBottom: js.UndefOr[Callback] = js.undefined,
-    onNotTop: js.UndefOr[Callback] = js.undefined,
-    onPin: js.UndefOr[Callback] = js.undefined,
-    onTop: js.UndefOr[Callback] = js.undefined,
-    onUnpin: js.UndefOr[Callback] = js.undefined,
-    scroller: Element = null,
-    tolerance: js.Any = null
-  ): HeadroomOptions = {
+  
+  inline def apply(): HeadroomOptions = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    onBottom.foreach(p => __obj.updateDynamic("onBottom")(p.toJsFn))
-    onNotBottom.foreach(p => __obj.updateDynamic("onNotBottom")(p.toJsFn))
-    onNotTop.foreach(p => __obj.updateDynamic("onNotTop")(p.toJsFn))
-    onPin.foreach(p => __obj.updateDynamic("onPin")(p.toJsFn))
-    onTop.foreach(p => __obj.updateDynamic("onTop")(p.toJsFn))
-    onUnpin.foreach(p => __obj.updateDynamic("onUnpin")(p.toJsFn))
-    if (scroller != null) __obj.updateDynamic("scroller")(scroller.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeadroomOptions]
   }
+  
+  extension [Self <: HeadroomOptions](x: Self) {
+    
+    inline def setClasses(value: Bottom): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setOffset(value: Down | Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOnBottom(value: Callback): Self = StObject.set(x, "onBottom", value.toJsFn)
+    
+    inline def setOnBottomUndefined: Self = StObject.set(x, "onBottom", js.undefined)
+    
+    inline def setOnNotBottom(value: Callback): Self = StObject.set(x, "onNotBottom", value.toJsFn)
+    
+    inline def setOnNotBottomUndefined: Self = StObject.set(x, "onNotBottom", js.undefined)
+    
+    inline def setOnNotTop(value: Callback): Self = StObject.set(x, "onNotTop", value.toJsFn)
+    
+    inline def setOnNotTopUndefined: Self = StObject.set(x, "onNotTop", js.undefined)
+    
+    inline def setOnPin(value: Callback): Self = StObject.set(x, "onPin", value.toJsFn)
+    
+    inline def setOnPinUndefined: Self = StObject.set(x, "onPin", js.undefined)
+    
+    inline def setOnTop(value: Callback): Self = StObject.set(x, "onTop", value.toJsFn)
+    
+    inline def setOnTopUndefined: Self = StObject.set(x, "onTop", js.undefined)
+    
+    inline def setOnUnpin(value: Callback): Self = StObject.set(x, "onUnpin", value.toJsFn)
+    
+    inline def setOnUnpinUndefined: Self = StObject.set(x, "onUnpin", js.undefined)
+    
+    inline def setScroller(value: HTMLElement): Self = StObject.set(x, "scroller", value.asInstanceOf[js.Any])
+    
+    inline def setScrollerUndefined: Self = StObject.set(x, "scroller", js.undefined)
+    
+    inline def setTolerance(value: Down | Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+  }
 }
-

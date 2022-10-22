@@ -1,19 +1,24 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineAnimationOptions extends js.Object {
+trait TimelineAnimationOptions extends StObject {
+  
   var animation: js.UndefOr[TimelineAnimationType] = js.undefined
 }
-
 object TimelineAnimationOptions {
-  @scala.inline
-  def apply(animation: TimelineAnimationType = null): TimelineAnimationOptions = {
+  
+  inline def apply(): TimelineAnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineAnimationOptions]
   }
+  
+  extension [Self <: TimelineAnimationOptions](x: Self) {
+    
+    inline def setAnimation(value: TimelineAnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+  }
 }
-

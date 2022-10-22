@@ -1,6 +1,6 @@
 package typingsJapgolly.jqgrid
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.jqgrid.anon.ColModel
 import typingsJapgolly.jqgrid.jqgridStrings.actions
 import typingsJapgolly.jqgrid.jqgridStrings.center
 import typingsJapgolly.jqgrid.jqgridStrings.checkbox
@@ -14,16 +14,18 @@ import typingsJapgolly.jqgrid.jqgridStrings.number
 import typingsJapgolly.jqgrid.jqgridStrings.right
 import typingsJapgolly.jqgrid.jqgridStrings.select
 import typingsJapgolly.jqgrid.jqgridStrings.showlink
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://www.trirand.com/jqgridwiki/doku.php?id=wiki:colmodel_options
-trait JQueryJqGridColumn extends js.Object {
+trait JQueryJqGridColumn extends StObject {
+  
   /**
     * Defines the alignment of the cell in the Body layer, not in header cell. Possible values: left, center, right
     */
   var align: js.UndefOr[left | center | right] = js.undefined
+  
   /**
     * This function add attributes to the cell during the creation of the data - i.e dynamically.
     * By example all valid attributes for the table cell can be used or a style attribute with different properties.
@@ -35,15 +37,9 @@ trait JQueryJqGridColumn extends js.Object {
     * @returns {} 
     */
   var cellattr: js.UndefOr[
-    js.Function5[
-      /* rowId */ js.Any, 
-      /* val */ js.Any, 
-      /* rowObject */ js.Any, 
-      /* cm */ js.Any, 
-      /* rdata */ js.Any, 
-      String
-    ]
+    js.Function5[/* rowId */ Any, /* val */ Any, /* rowObject */ Any, /* cm */ Any, /* rdata */ Any, String]
   ] = js.undefined
+  
   /**
     * This option allow to add classes to the column. If more than one class will be used a space should be set.
     * By example classes:'class1 class2' will set a class1 and class2 to every cell on that column.
@@ -51,6 +47,7 @@ trait JQueryJqGridColumn extends js.Object {
     * Also this will work in FireFox too.
     */
   var classes: js.UndefOr[String] = js.undefined
+  
   /**
     * Governs format of sorttype:date (when datetype is set to local) and editrules {date:true} fields.
     * Determines the expected date format for that column. Uses a PHP-like date formatting. Currently "/", "-", and "." are supported as date separators. Valid formats are:
@@ -60,10 +57,12 @@ trait JQueryJqGridColumn extends js.Object {
     *  d,dd for days.
     */
   var datefmt: js.UndefOr[String] = js.undefined
+  
   /**
     * Defines if the field is editable. This option is used in cell, inline and form modules.
     */
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The predefined types (string) or custom function name that controls the format of this field
     * @param cellvalue is the value to be formatted
@@ -72,80 +71,121 @@ trait JQueryJqGridColumn extends js.Object {
     * @returns {} the formatted value
     */
   var formatter: js.UndefOr[
-    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _])
+    integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any, Any])
   ] = js.undefined
+  
   /**
     * Defines if this column is hidden at initialization.
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Set the index name when sorting. Passed as sidx parameter.
     */
   var index: js.UndefOr[String] = js.undefined
+  
   /**
     * Overwrite the id (defined in readers) from server. Can be set as id for the unique row id. Only one column can have this property.
     * This option have higher priority as those from the readers.
     * If there are more than one key set the grid finds the first one and the second is ignored.
     */
   var key: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * When colNames array is empty, defines the heading for this column.
     * If both the colNames array and this setting are empty, the heading for this column comes from the name property.
     */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
     * Set the unique name in the grid for the column.
     * This property is required.
     * As well as other words used as property/event names, the reserved words (which cannot be used for names) include subgrid, cb and rn.
     */
   var name: String
+  
   /**
     * When used in search modules, disables or enables searching on that column
     */
   var search: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Defines is this can be sorted
     */
   var sortable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Set the initial width of the column, in pixels. This value currently can not be set as percentage
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object JQueryJqGridColumn {
-  @scala.inline
-  def apply(
-    name: String,
-    align: left | center | right = null,
-    cellattr: (/* rowId */ js.Any, /* val */ js.Any, /* rowObject */ js.Any, /* cm */ js.Any, /* rdata */ js.Any) => CallbackTo[String] = null,
-    classes: String = null,
-    datefmt: String = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    formatter: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ js.Any, /* options */ AnonColModel, /* rowObject */ js.Any, _]) = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    index: String = null,
-    key: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    sortable: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): JQueryJqGridColumn = {
+  
+  inline def apply(name: String): JQueryJqGridColumn = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (cellattr != null) __obj.updateDynamic("cellattr")(js.Any.fromFunction5((t0: /* rowId */ js.Any, t1: /* val */ js.Any, t2: /* rowObject */ js.Any, t3: /* cm */ js.Any, t4: /* rdata */ js.Any) => cellattr(t0, t1, t2, t3, t4).runNow()))
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (datefmt != null) __obj.updateDynamic("datefmt")(datefmt.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryJqGridColumn]
   }
+  
+  extension [Self <: JQueryJqGridColumn](x: Self) {
+    
+    inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setCellattr(
+      value: (/* rowId */ Any, /* val */ Any, /* rowObject */ Any, /* cm */ Any, /* rdata */ Any) => String
+    ): Self = StObject.set(x, "cellattr", js.Any.fromFunction5(value))
+    
+    inline def setCellattrUndefined: Self = StObject.set(x, "cellattr", js.undefined)
+    
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setDatefmt(value: String): Self = StObject.set(x, "datefmt", value.asInstanceOf[js.Any])
+    
+    inline def setDatefmtUndefined: Self = StObject.set(x, "datefmt", js.undefined)
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setFormatter(
+      value: integer | number | currency | date | email | link | showlink | checkbox | select | actions | (js.Function3[/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any, Any])
+    ): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterFunction3(value: (/* cellvalue */ Any, /* options */ ColModel, /* rowObject */ Any) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setKey(value: Boolean): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

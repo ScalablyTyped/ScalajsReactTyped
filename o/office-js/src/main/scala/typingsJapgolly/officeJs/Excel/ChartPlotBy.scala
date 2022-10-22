@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartPlotBy extends js.Object
-
+sealed trait ChartPlotBy extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartPlotBy")
 @js.native
-object ChartPlotBy extends js.Object {
+object ChartPlotBy extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait columns extends ChartPlotBy
+  sealed trait columns
+    extends StObject
+       with ChartPlotBy
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait rows extends ChartPlotBy
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartPlotBy with String] = js.native
-  /* "Columns" */ @js.native
-  object columns extends TopLevel[columns with String]
-  
-  /* "Rows" */ @js.native
-  object rows extends TopLevel[rows with String]
-  
+  sealed trait rows
+    extends StObject
+       with ChartPlotBy
 }
-

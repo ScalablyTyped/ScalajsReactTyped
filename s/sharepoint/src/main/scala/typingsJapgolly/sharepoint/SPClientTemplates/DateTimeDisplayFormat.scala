@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateTimeDisplayFormat extends js.Object
-
+sealed trait DateTimeDisplayFormat extends StObject
 @JSGlobal("SPClientTemplates.DateTimeDisplayFormat")
 @js.native
-object DateTimeDisplayFormat extends js.Object {
-  @js.native
-  sealed trait DateOnly extends DateTimeDisplayFormat
+object DateTimeDisplayFormat extends StObject {
   
   @js.native
-  sealed trait DateTime extends DateTimeDisplayFormat
+  sealed trait DateOnly
+    extends StObject
+       with DateTimeDisplayFormat
   
   @js.native
-  sealed trait TimeOnly extends DateTimeDisplayFormat
+  sealed trait DateTime
+    extends StObject
+       with DateTimeDisplayFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DateTimeDisplayFormat with Double] = js.native
-  /* 0 */ @js.native
-  object DateOnly extends TopLevel[DateOnly with Double]
-  
-  /* 1 */ @js.native
-  object DateTime extends TopLevel[DateTime with Double]
-  
-  /* 2 */ @js.native
-  object TimeOnly extends TopLevel[TimeOnly with Double]
-  
+  @js.native
+  sealed trait TimeOnly
+    extends StObject
+       with DateTimeDisplayFormat
 }
-

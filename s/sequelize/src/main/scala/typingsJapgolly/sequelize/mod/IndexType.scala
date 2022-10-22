@@ -1,24 +1,20 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.sequelize.sequelizeStrings.UNIQUE
   - typingsJapgolly.sequelize.sequelizeStrings.FULLTEXT
   - typingsJapgolly.sequelize.sequelizeStrings.SPATIAL
 */
-trait IndexType extends js.Object
-
+trait IndexType extends StObject
 object IndexType {
-  @scala.inline
-  def FULLTEXT: typingsJapgolly.sequelize.sequelizeStrings.FULLTEXT = this.cast("FULLTEXT")
-  @scala.inline
-  def SPATIAL: typingsJapgolly.sequelize.sequelizeStrings.SPATIAL = this.cast("SPATIAL")
-  @scala.inline
-  def UNIQUE: typingsJapgolly.sequelize.sequelizeStrings.UNIQUE = this.cast("UNIQUE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FULLTEXT: typingsJapgolly.sequelize.sequelizeStrings.FULLTEXT = "FULLTEXT".asInstanceOf[typingsJapgolly.sequelize.sequelizeStrings.FULLTEXT]
+  
+  inline def SPATIAL: typingsJapgolly.sequelize.sequelizeStrings.SPATIAL = "SPATIAL".asInstanceOf[typingsJapgolly.sequelize.sequelizeStrings.SPATIAL]
+  
+  inline def UNIQUE: typingsJapgolly.sequelize.sequelizeStrings.UNIQUE = "UNIQUE".asInstanceOf[typingsJapgolly.sequelize.sequelizeStrings.UNIQUE]
 }
-

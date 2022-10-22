@@ -1,36 +1,32 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClusterPendingTasksParams extends GenericParams {
+trait ClusterPendingTasksParams
+  extends StObject
+     with GenericParams {
+  
   var local: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
 }
-
 object ClusterPendingTasksParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): ClusterPendingTasksParams = {
+  
+  inline def apply(): ClusterPendingTasksParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterPendingTasksParams]
   }
+  
+  extension [Self <: ClusterPendingTasksParams](x: Self) {
+    
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+  }
 }
-

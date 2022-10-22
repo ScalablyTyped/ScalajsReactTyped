@@ -1,16 +1,18 @@
 package typingsJapgolly.jstree
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeStaticDefaultsCore extends js.Object {
+trait JSTreeStaticDefaultsCore extends StObject {
+  
   /**
     * the open / close animation duration in milliseconds - set this to `false` to disable the animation (default is `200`)
     * @name $.jstree.defaults.core.animation
     */
-  var animation: js.UndefOr[js.Any] = js.undefined
+  var animation: js.UndefOr[Any] = js.undefined
+  
   /**
     * determines what happens when a user tries to modify the structure of the tree
     * If left as `false` all operations like create, rename, delete, move or copy are prevented.
@@ -30,7 +32,8 @@ trait JSTreeStaticDefaultsCore extends js.Object {
     *
     * @name $.jstree.defaults.core.check_callback
     */
-  var check_callback: js.UndefOr[js.Any] = js.undefined
+  var check_callback: js.UndefOr[Any] = js.undefined
+  
   /**
     * data configuration
     *
@@ -85,45 +88,60 @@ trait JSTreeStaticDefaultsCore extends js.Object {
     *
     * @name $.jstree.defaults.core.data
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[Any] = js.undefined
+  
   /**
     * Should the node be toggled if the text is double clicked. Defaults to `true`
     * @name $.jstree.defaults.core.dblclick_toggle
     */
   var dblclick_toggle: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * a callback called with a single object parameter in the instance's scope when something goes wrong
+    * (operation prevented, ajax failed, etc)
+    * @name $.jstree.defaults.core.error
+    */
+  def error(): Any
+  
   /**
     * if left as `true` all parents of all selected nodes will be opened once the tree loads
     * (so that all selected nodes are visible to the user)
     * @name $.jstree.defaults.core.expand_selected_onload
     */
   var expand_selected_onload: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Force node text to plain text (and escape HTML). Defaults to `false`
     * @name $.jstree.defaults.core.force_text
     */
   var force_text: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Default keyboard shortcuts (an object where each key is the button name or combo - like 'enter', 'ctrl-space', 'p', etc
     * and the value is the function to execute in the instance's scope)
     * @name $.jstree.defaults.core.keyboard
     */
   var keyboard: js.UndefOr[JSTreeStaticDefaultsCoreKeyboard] = js.undefined
+  
   /**
     * Should the loaded nodes be part of the state. Defaults to `false`
     * @name $.jstree.defaults.core.dblclick_toggle
     */
   var loaded_state: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * a boolean indicating if multiple nodes can be selected
     * @name $.jstree.defaults.core.multiple
     */
   var multiple: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Should the last active node be focused when the tree container is blurred and the focused again.
     * This helps working with screen readers. Defaults to `true`
     * @name $.jstree.defaults.core.restore_focus
     */
   var restore_focus: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * configure the various strings used throughout the tree
     *
@@ -143,12 +161,14 @@ trait JSTreeStaticDefaultsCore extends js.Object {
     *
     * @name $.jstree.defaults.core.strings
     */
-  var strings: js.UndefOr[js.Any] = js.undefined
+  var strings: js.UndefOr[Any] = js.undefined
+  
   /**
     * theme configuration object
     * @name $.jstree.defaults.core.themes
     */
   var themes: js.UndefOr[JSTreeStaticDefaultsCoreThemes] = js.undefined
+  
   /**
     * if left as `true` web workers will be used to parse incoming JSON data where possible,
     * so that the UI will not be blocked by large requests.
@@ -156,48 +176,68 @@ trait JSTreeStaticDefaultsCore extends js.Object {
     * @name $.jstree.defaults.core.worker
     */
   var worker: js.UndefOr[Boolean] = js.undefined
-  /**
-    * a callback called with a single object parameter in the instance's scope when something goes wrong
-    * (operation prevented, ajax failed, etc)
-    * @name $.jstree.defaults.core.error
-    */
-  def error(): js.Any
 }
-
 object JSTreeStaticDefaultsCore {
-  @scala.inline
-  def apply(
-    error: CallbackTo[js.Any],
-    animation: js.Any = null,
-    check_callback: js.Any = null,
-    data: js.Any = null,
-    dblclick_toggle: js.UndefOr[Boolean] = js.undefined,
-    expand_selected_onload: js.UndefOr[Boolean] = js.undefined,
-    force_text: js.UndefOr[Boolean] = js.undefined,
-    keyboard: JSTreeStaticDefaultsCoreKeyboard = null,
-    loaded_state: js.UndefOr[Boolean] = js.undefined,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    restore_focus: js.UndefOr[Boolean] = js.undefined,
-    strings: js.Any = null,
-    themes: JSTreeStaticDefaultsCoreThemes = null,
-    worker: js.UndefOr[Boolean] = js.undefined
-  ): JSTreeStaticDefaultsCore = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error.toJsFn)
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (check_callback != null) __obj.updateDynamic("check_callback")(check_callback.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(dblclick_toggle)) __obj.updateDynamic("dblclick_toggle")(dblclick_toggle.asInstanceOf[js.Any])
-    if (!js.isUndefined(expand_selected_onload)) __obj.updateDynamic("expand_selected_onload")(expand_selected_onload.asInstanceOf[js.Any])
-    if (!js.isUndefined(force_text)) __obj.updateDynamic("force_text")(force_text.asInstanceOf[js.Any])
-    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(loaded_state)) __obj.updateDynamic("loaded_state")(loaded_state.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (!js.isUndefined(restore_focus)) __obj.updateDynamic("restore_focus")(restore_focus.asInstanceOf[js.Any])
-    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
-    if (themes != null) __obj.updateDynamic("themes")(themes.asInstanceOf[js.Any])
-    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker.asInstanceOf[js.Any])
+  
+  inline def apply(error: CallbackTo[Any]): JSTreeStaticDefaultsCore = {
+    val __obj = js.Dynamic.literal(error = error.toJsFn)
     __obj.asInstanceOf[JSTreeStaticDefaultsCore]
   }
+  
+  extension [Self <: JSTreeStaticDefaultsCore](x: Self) {
+    
+    inline def setAnimation(value: Any): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCheck_callback(value: Any): Self = StObject.set(x, "check_callback", value.asInstanceOf[js.Any])
+    
+    inline def setCheck_callbackUndefined: Self = StObject.set(x, "check_callback", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDblclick_toggle(value: Boolean): Self = StObject.set(x, "dblclick_toggle", value.asInstanceOf[js.Any])
+    
+    inline def setDblclick_toggleUndefined: Self = StObject.set(x, "dblclick_toggle", js.undefined)
+    
+    inline def setError(value: CallbackTo[Any]): Self = StObject.set(x, "error", value.toJsFn)
+    
+    inline def setExpand_selected_onload(value: Boolean): Self = StObject.set(x, "expand_selected_onload", value.asInstanceOf[js.Any])
+    
+    inline def setExpand_selected_onloadUndefined: Self = StObject.set(x, "expand_selected_onload", js.undefined)
+    
+    inline def setForce_text(value: Boolean): Self = StObject.set(x, "force_text", value.asInstanceOf[js.Any])
+    
+    inline def setForce_textUndefined: Self = StObject.set(x, "force_text", js.undefined)
+    
+    inline def setKeyboard(value: JSTreeStaticDefaultsCoreKeyboard): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setLoaded_state(value: Boolean): Self = StObject.set(x, "loaded_state", value.asInstanceOf[js.Any])
+    
+    inline def setLoaded_stateUndefined: Self = StObject.set(x, "loaded_state", js.undefined)
+    
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    
+    inline def setRestore_focus(value: Boolean): Self = StObject.set(x, "restore_focus", value.asInstanceOf[js.Any])
+    
+    inline def setRestore_focusUndefined: Self = StObject.set(x, "restore_focus", js.undefined)
+    
+    inline def setStrings(value: Any): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+    
+    inline def setThemes(value: JSTreeStaticDefaultsCoreThemes): Self = StObject.set(x, "themes", value.asInstanceOf[js.Any])
+    
+    inline def setThemesUndefined: Self = StObject.set(x, "themes", js.undefined)
+    
+    inline def setWorker(value: Boolean): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+    
+    inline def setWorkerUndefined: Self = StObject.set(x, "worker", js.undefined)
+  }
 }
-

@@ -1,16 +1,13 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "NonNullAssert")
 @js.native
-class NonNullAssert protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.NonNullAssert {
-  def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
-    expression: typingsJapgolly.angularCompiler.astMod.AST
-  ) = this()
+open class NonNullAssert protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, expression: AST) = this()
+  
+  var expression: AST = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for amazon-connect-streams
 
-Typings are for version 1.4
+Typings are for version 2.3.2
 
 ## Library description:
 Amazon Connect Streams Library
@@ -9,22 +9,22 @@ Amazon Connect Streams Library
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | amazon-connect-streams |
-| Keywords           | streams, softphone, rintone, connect |
-| # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 11 |
-| # stars            | 0 |
+| Keywords           | streams, softphone, ringtone, connect |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 23850.666666666668 |
+| # stars            | 316.0 |
 
 ## Links
-- [Homepage](https://github.com/aws/amazon-connect-streams#readme)
-- [Bugs](https://github.com/aws/amazon-connect-streams/issues)
-- [Repository](https://github.com/aws/amazon-connect-streams)
+- [Homepage](https://github.com/amazon-connect/amazon-connect-streams#readme)
+- [Bugs](https://github.com/amazon-connect/amazon-connect-streams/issues)
+- [Repository](https://github.com/amazon-connect/amazon-connect-streams)
 - [Npm](https://www.npmjs.com/package/amazon-connect-streams)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

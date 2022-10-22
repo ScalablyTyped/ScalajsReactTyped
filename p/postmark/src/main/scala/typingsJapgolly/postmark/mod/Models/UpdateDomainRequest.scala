@@ -1,13 +1,12 @@
 package typingsJapgolly.postmark.mod.Models
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "Models.UpdateDomainRequest")
 @js.native
-class UpdateDomainRequest protected ()
-  extends typingsJapgolly.postmark.modelsMod.UpdateDomainRequest {
+open class UpdateDomainRequest protected ()
+  extends typingsJapgolly.postmark.distClientModelsMod.UpdateDomainRequest {
   def this(ReturnPathDomain: String) = this()
 }
-

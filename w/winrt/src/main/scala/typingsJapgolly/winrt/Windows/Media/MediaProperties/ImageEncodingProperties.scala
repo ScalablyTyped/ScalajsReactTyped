@@ -1,30 +1,17 @@
 package typingsJapgolly.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
-@js.native
-class ImageEncodingProperties () extends IImageEncodingProperties {
-  /* CompleteClass */
-  override var height: Double = js.native
-  /* CompleteClass */
-  override var properties: MediaPropertySet = js.native
-  /* CompleteClass */
-  override var subtype: String = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /* CompleteClass */
-  override var width: Double = js.native
+trait ImageEncodingProperties
+  extends StObject
+     with IImageEncodingProperties
+object ImageEncodingProperties {
+  
+  inline def apply(height: Double, properties: MediaPropertySet, subtype: String, `type`: String, width: Double): ImageEncodingProperties = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageEncodingProperties]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
-@js.native
-object ImageEncodingProperties extends js.Object {
-  def createJpeg(): ImageEncodingProperties = js.native
-  def createJpegXR(): ImageEncodingProperties = js.native
-  def createPng(): ImageEncodingProperties = js.native
-}
-

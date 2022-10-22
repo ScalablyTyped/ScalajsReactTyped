@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IStorageFolder2 extends js.Object {
+trait IStorageFolder2 extends StObject {
+  
   def tryGetItemAsync(name: String): IAsyncOperation[IStorageItem]
 }
-
 object IStorageFolder2 {
-  @scala.inline
-  def apply(tryGetItemAsync: String => CallbackTo[IAsyncOperation[IStorageItem]]): IStorageFolder2 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("tryGetItemAsync")(js.Any.fromFunction1((t0: java.lang.String) => tryGetItemAsync(t0).runNow()))
+  
+  inline def apply(tryGetItemAsync: String => IAsyncOperation[IStorageItem]): IStorageFolder2 = {
+    val __obj = js.Dynamic.literal(tryGetItemAsync = js.Any.fromFunction1(tryGetItemAsync))
     __obj.asInstanceOf[IStorageFolder2]
   }
+  
+  extension [Self <: IStorageFolder2](x: Self) {
+    
+    inline def setTryGetItemAsync(value: String => IAsyncOperation[IStorageItem]): Self = StObject.set(x, "tryGetItemAsync", js.Any.fromFunction1(value))
+  }
 }
-

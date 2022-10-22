@@ -1,18 +1,26 @@
-package typingsJapgolly.kendoUi.kendo.dataviz
+package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type ChartDataBoundEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.ChartEvent
-  type ChartPlotAreaLeaveEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.ChartEvent
-  type ChartRenderEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.ChartEvent
-  type DiagramDataBoundEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.DiagramEvent
-  type MapBeforeResetEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.MapEvent
-  type MapResetEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.MapEvent
-  type SparklinePlotAreaLeaveEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.SparklineEvent
-  type StockChartPlotAreaLeaveEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.StockChartEvent
-  type StockChartRenderEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.StockChartEvent
-  type TreeMapDataBoundEvent = typingsJapgolly.kendoUi.kendo.dataviz.ui.TreeMapEvent
-}
+
+type ChartDataBoundEvent = ChartEvent
+
+type ChartPlotAreaLeaveEvent = ChartEvent
+
+type ChartRenderEvent = ChartEvent
+
+type DiagramDataBoundEvent = DiagramEvent
+
+type MapBeforeResetEvent = MapEvent
+
+type MapResetEvent = MapEvent
+
+type SparklinePlotAreaLeaveEvent = SparklineEvent
+
+type StockChartPlotAreaLeaveEvent = StockChartEvent
+
+type StockChartRenderEvent = StockChartEvent
+
+type TreeMapDataBoundEvent = TreeMapEvent

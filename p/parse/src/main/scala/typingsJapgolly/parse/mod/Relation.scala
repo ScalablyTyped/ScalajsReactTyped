@@ -1,9 +1,9 @@
 package typingsJapgolly.parse.mod
 
-import typingsJapgolly.parse.mod._Global_.Parse.Attributes
+import typingsJapgolly.parse.mod.global.Parse.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A class that is used to access all of the children of a many-to-many relationship.
@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "Relation")
 @js.native
-class Relation[S /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */, T /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */] ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.Relation[S, T] {
+open class Relation[S /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */, T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */] ()
+  extends typingsJapgolly.parse.mod.global.Parse.Relation[S, T] {
   def this(parent: S) = this()
   def this(parent: S, key: String) = this()
+  def this(parent: Unit, key: String) = this()
 }
-

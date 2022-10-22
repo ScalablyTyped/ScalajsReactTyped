@@ -1,66 +1,72 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLImageElement
-import org.scalajs.dom.raw.ImageData
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.ImageData
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.clamp
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.mirror
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.repeat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshTextureProperties extends js.Object {
+trait MeshTextureProperties extends StObject {
+  
   /**
-    * A direct reference to the image data. The image data can be an [image element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement), [canvas element](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement) or [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData).  The data property is mutually exclusive with the url property, setting the data will clear the url (if there is one).
+    * A direct reference to the image or video data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data)
     */
-  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | ImageData] = js.undefined
+  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | Any | ImageData] = js.undefined
+  
   /**
-    * Indicates whether the image data should be interpreted as being semi-transparent. The default value is automatically derived when the data property contains a canvas element or an ImageData object. If instead a url to a .png file was provided, it is assumed that transparency is present. In all other cases it defaults to `false`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#transparent)
+    * Indicates whether the image data should be interpreted as being semi-transparent.
     *
     * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#transparent)
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The url to the image resource. This can either be a remote url (absolute or relative) or a data url.  The url property is mutually exclusive with the data property, setting the url will clear the data (if there is one).
+    * The url to the image resource.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
+  
   /**
-    * Specifies how uv coordinates outside the [0, 1] range are handled. One of "repeat", "clamp" or "mirror". Can also be specified separately for the two texture axes using an object:
-    * ```js
-    * {
-    *   vertical: "clamp",
-    *   horizontal: "repeat"
-    * }
-    * ```
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#wrap)
+    * Specifies how uv coordinates outside the [0, 1] range are handled.
     *
     * @default "repeat"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#wrap)
     */
   var wrap: js.UndefOr[clamp | repeat | mirror | SeparableWrapModes] = js.undefined
 }
-
 object MeshTextureProperties {
-  @scala.inline
-  def apply(
-    data: HTMLImageElement | HTMLCanvasElement | ImageData = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    wrap: clamp | repeat | mirror | SeparableWrapModes = null
-  ): MeshTextureProperties = {
+  
+  inline def apply(): MeshTextureProperties = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[MeshTextureProperties]
   }
+  
+  extension [Self <: MeshTextureProperties](x: Self) {
+    
+    inline def setData(value: HTMLImageElement | HTMLCanvasElement | Any | ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWrap(value: clamp | repeat | mirror | SeparableWrapModes): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+    
+    inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+  }
 }
-

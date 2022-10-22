@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsreport-core
 
-Typings are for version 1.5
+Typings are for version 2.0
 
 ## Library description:
 javascript based business reporting
@@ -10,10 +10,10 @@ javascript based business reporting
 | ------------------ | :-------------: |
 | Full name          | jsreport-core |
 | Keywords           | report, business, javascript |
-| # releases         | 23 |
-| # dependents       | 9 |
-| # downloads        | 220722 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 11726.333333333334 |
+| # stars            | 85.0 |
 
 ## Links
 - [Homepage](http://jsreport.net)

@@ -6,11 +6,12 @@ import typingsJapgolly.minappEnv.minappEnvStrings.`4g`
 import typingsJapgolly.minappEnv.minappEnvStrings.none
 import typingsJapgolly.minappEnv.minappEnvStrings.unknown
 import typingsJapgolly.minappEnv.minappEnvStrings.wifi
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetNetworkTypeSuccessCallbackResult extends js.Object {
+trait GetNetworkTypeSuccessCallbackResult extends StObject {
+  
   /** 网络类型
     *
     * 可选值：
@@ -22,13 +23,15 @@ trait GetNetworkTypeSuccessCallbackResult extends js.Object {
     * - 'none': 无网络; */
   var networkType: wifi | `2g` | `3g` | `4g` | unknown | none
 }
-
 object GetNetworkTypeSuccessCallbackResult {
-  @scala.inline
-  def apply(networkType: wifi | `2g` | `3g` | `4g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
-    val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
   
+  inline def apply(networkType: wifi | `2g` | `3g` | `4g` | unknown | none): GetNetworkTypeSuccessCallbackResult = {
+    val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkTypeSuccessCallbackResult]
   }
+  
+  extension [Self <: GetNetworkTypeSuccessCallbackResult](x: Self) {
+    
+    inline def setNetworkType(value: wifi | `2g` | `3g` | `4g` | unknown | none): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+  }
 }
-

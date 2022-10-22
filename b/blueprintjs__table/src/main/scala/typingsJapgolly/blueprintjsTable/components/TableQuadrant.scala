@@ -2,76 +2,76 @@ package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactUIEventFrom
 import japgolly.scalajs.react.ReactWheelEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsTable.gridMod.Grid
-import typingsJapgolly.blueprintjsTable.tableQuadrantMod.ITableQuadrantProps
-import typingsJapgolly.blueprintjsTable.tableQuadrantMod.QuadrantType
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmCommonGridMod.Grid
+import typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.ITableQuadrantProps
+import typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.QuadrantType
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableQuadrant {
-  def apply(
+  
+  inline def apply(
+    bodyRenderer: (QuadrantType, js.UndefOr[Boolean | Unit], js.UndefOr[Boolean]) => js.UndefOr[Element],
     grid: Grid,
-    bodyRenderer: (js.UndefOr[QuadrantType], js.UndefOr[Boolean], js.UndefOr[Boolean]) => CallbackTo[Element],
-    bodyRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    className: String = null,
-    columnHeaderCellRenderer: /* showFrozenColumnsOnly */ js.UndefOr[Boolean] => CallbackTo[Element] = null,
-    enableRowHeader: js.UndefOr[Boolean] = js.undefined,
-    menuRenderer: js.UndefOr[CallbackTo[Element]] = js.undefined,
-    onScroll: ReactUIEventFrom[HTMLDivElement] => Callback = null,
-    onWheel: ReactWheelEventFrom[HTMLDivElement] => Callback = null,
-    quadrantRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    quadrantType: QuadrantType = null,
-    rowHeaderCellRenderer: /* showFrozenRowsOnly */ js.UndefOr[Boolean] => CallbackTo[Element] = null,
-    scrollContainerRef: /* ref */ HTMLElement | Null => CallbackTo[js.Any] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITableQuadrantProps, 
-    typingsJapgolly.blueprintjsTable.tableQuadrantMod.TableQuadrant, 
-    Unit, 
-    ITableQuadrantProps
-  ] = {
-    val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("bodyRenderer")(js.Any.fromFunction3((t0: js.UndefOr[typingsJapgolly.blueprintjsTable.tableQuadrantMod.QuadrantType], t1: js.UndefOr[scala.Boolean], t2: js.UndefOr[scala.Boolean]) => bodyRenderer(t0, t1, t2).runNow()))
-    if (bodyRef != null) __obj.updateDynamic("bodyRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => bodyRef(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnHeaderCellRenderer != null) __obj.updateDynamic("columnHeaderCellRenderer")(js.Any.fromFunction1((t0: /* showFrozenColumnsOnly */ js.UndefOr[scala.Boolean]) => columnHeaderCellRenderer(t0).runNow()))
-    if (!js.isUndefined(enableRowHeader)) __obj.updateDynamic("enableRowHeader")(enableRowHeader.asInstanceOf[js.Any])
-    menuRenderer.foreach(p => __obj.updateDynamic("menuRenderer")(p.toJsFn))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactUIEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onScroll(t0).runNow()))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactWheelEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onWheel(t0).runNow()))
-    if (quadrantRef != null) __obj.updateDynamic("quadrantRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => quadrantRef(t0).runNow()))
-    if (quadrantType != null) __obj.updateDynamic("quadrantType")(quadrantType.asInstanceOf[js.Any])
-    if (rowHeaderCellRenderer != null) __obj.updateDynamic("rowHeaderCellRenderer")(js.Any.fromFunction1((t0: /* showFrozenRowsOnly */ js.UndefOr[scala.Boolean]) => rowHeaderCellRenderer(t0).runNow()))
-    if (scrollContainerRef != null) __obj.updateDynamic("scrollContainerRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => scrollContainerRef(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.tableQuadrantMod.ITableQuadrantProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.tableQuadrantMod.TableQuadrant](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.tableQuadrantMod.ITableQuadrantProps])(children: _*)
+    quadrantType: QuadrantType
+  ): Builder = {
+    val __props = js.Dynamic.literal(bodyRenderer = js.Any.fromFunction3(bodyRenderer), grid = grid.asInstanceOf[js.Any], quadrantType = quadrantType.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITableQuadrantProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmQuadrantsTableQuadrantMod.TableQuadrant] {
+    
+    inline def bodyRef(value: Ref[HTMLDivElement]): this.type = set("bodyRef", value.asInstanceOf[js.Any])
+    
+    inline def bodyRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("bodyRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def bodyRefNull: this.type = set("bodyRef", null)
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def columnHeaderCellRenderer(value: /* showFrozenColumnsOnly */ Boolean => js.UndefOr[Element]): this.type = set("columnHeaderCellRenderer", js.Any.fromFunction1(value))
+    
+    inline def enableColumnHeader(value: Boolean): this.type = set("enableColumnHeader", value.asInstanceOf[js.Any])
+    
+    inline def enableRowHeader(value: Boolean): this.type = set("enableRowHeader", value.asInstanceOf[js.Any])
+    
+    inline def menuRenderer(value: CallbackTo[js.UndefOr[Element]]): this.type = set("menuRenderer", value.toJsFn)
+    
+    inline def onScroll(value: ReactUIEventFrom[HTMLDivElement] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactUIEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def onWheel(value: ReactWheelEventFrom[HTMLDivElement] => Callback): this.type = set("onWheel", js.Any.fromFunction1((t0: ReactWheelEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def quadrantRef(value: Ref[HTMLDivElement]): this.type = set("quadrantRef", value.asInstanceOf[js.Any])
+    
+    inline def quadrantRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("quadrantRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def quadrantRefNull: this.type = set("quadrantRef", null)
+    
+    inline def rowHeaderCellRenderer(value: /* showFrozenRowsOnly */ Boolean => js.UndefOr[Element]): this.type = set("rowHeaderCellRenderer", js.Any.fromFunction1(value))
+    
+    inline def scrollContainerRef(value: Ref[HTMLDivElement]): this.type = set("scrollContainerRef", value.asInstanceOf[js.Any])
+    
+    inline def scrollContainerRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("scrollContainerRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def scrollContainerRefNull: this.type = set("scrollContainerRef", null)
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ITableQuadrantProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

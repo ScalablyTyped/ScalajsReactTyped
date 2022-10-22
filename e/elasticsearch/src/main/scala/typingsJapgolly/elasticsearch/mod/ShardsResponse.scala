@@ -1,22 +1,34 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShardsResponse extends js.Object {
+trait ShardsResponse extends StObject {
+  
   var failed: Double
+  
   var skipped: Double
+  
   var successful: Double
+  
   var total: Double
 }
-
 object ShardsResponse {
-  @scala.inline
-  def apply(failed: Double, skipped: Double, successful: Double, total: Double): ShardsResponse = {
-    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
+  inline def apply(failed: Double, skipped: Double, successful: Double, total: Double): ShardsResponse = {
+    val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], successful = successful.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShardsResponse]
   }
+  
+  extension [Self <: ShardsResponse](x: Self) {
+    
+    inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    
+    inline def setSkipped(value: Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessful(value: Double): Self = StObject.set(x, "successful", value.asInstanceOf[js.Any])
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+  }
 }
-

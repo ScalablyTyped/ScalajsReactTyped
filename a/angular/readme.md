@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular
 
-Typings are for version 1.6
+Typings are for version 1.8
 
 ## Library description:
 HTML enhanced for web apps
@@ -10,10 +10,10 @@ HTML enhanced for web apps
 | ------------------ | :-------------: |
 | Full name          | angular |
 | Keywords           | angular, framework, browser, client-side |
-| # releases         | 14 |
-| # dependents       | 2572 |
-| # downloads        | 22361736 |
-| # stars            | 236 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2278429.6666666665 |
+| # stars            | 59417.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

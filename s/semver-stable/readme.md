@@ -10,10 +10,10 @@ semver-stable
 | ------------------ | :-------------: |
 | Full name          | semver-stable |
 | Keywords           | semver, satisfies, satisfy, match, stable, is |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 375129 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 196091.66666666666 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/kaelzhang/node-semver-stable#readme)

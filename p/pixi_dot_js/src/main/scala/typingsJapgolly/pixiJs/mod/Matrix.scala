@@ -1,25 +1,21 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The PixiJS Matrix as a class makes it a lot faster.
-  *
-  * Here is a representation of it:
-  * ```js
-  * | a | c | tx|
-  * | b | d | ty|
-  * | 0 | 0 | 1 |
-  * ```
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Matrix")
 @js.native
-class Matrix protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Matrix {
+open class Matrix protected ()
+  extends typingsJapgolly.pixiMath.mod.Matrix {
+  /**
+    * @param a - x scale
+    * @param b - y skew
+    * @param c - x skew
+    * @param d - y scale
+    * @param tx - x translation
+    * @param ty - y translation
+    */
   def this(
     a: js.UndefOr[Double],
     b: js.UndefOr[Double],
@@ -29,26 +25,3 @@ class Matrix protected ()
     ty: js.UndefOr[Double]
   ) = this()
 }
-
-/* static members */
-@JSImport("pixi.js", "Matrix")
-@js.native
-object Matrix extends js.Object {
-  /**
-    * A default (identity) matrix
-    *
-    * @static
-    * @const
-    * @member {PIXI.Matrix}
-    */
-  var IDENTITY: typingsJapgolly.pixiJs.PIXI.Matrix = js.native
-  /**
-    * A temp matrix
-    *
-    * @static
-    * @const
-    * @member {PIXI.Matrix}
-    */
-  var TEMP_MATRIX: typingsJapgolly.pixiJs.PIXI.Matrix = js.native
-}
-

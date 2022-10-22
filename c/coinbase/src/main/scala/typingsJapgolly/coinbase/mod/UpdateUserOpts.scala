@@ -1,32 +1,45 @@
 package typingsJapgolly.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateUserOpts extends js.Object {
+trait UpdateUserOpts extends StObject {
+  
   /**
     * User’s name
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * Local currency used to display amounts converted from BTC
     */
   var native_currency: js.UndefOr[String] = js.undefined
+  
   /**
     * Time zone
     */
   var time_zone: js.UndefOr[String] = js.undefined
 }
-
 object UpdateUserOpts {
-  @scala.inline
-  def apply(name: String = null, native_currency: String = null, time_zone: String = null): UpdateUserOpts = {
+  
+  inline def apply(): UpdateUserOpts = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (native_currency != null) __obj.updateDynamic("native_currency")(native_currency.asInstanceOf[js.Any])
-    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserOpts]
   }
+  
+  extension [Self <: UpdateUserOpts](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNative_currency(value: String): Self = StObject.set(x, "native_currency", value.asInstanceOf[js.Any])
+    
+    inline def setNative_currencyUndefined: Self = StObject.set(x, "native_currency", js.undefined)
+    
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+  }
 }
-

@@ -1,45 +1,52 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IndicesGetUpgradeParams extends GenericParams {
+trait IndicesGetUpgradeParams
+  extends StObject
+     with GenericParams {
+  
   var allowNoIndices: js.UndefOr[Boolean] = js.undefined
+  
   var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined
+  
   var human: js.UndefOr[Boolean] = js.undefined
+  
   var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
+  
   var index: js.UndefOr[NameList] = js.undefined
 }
-
 object IndicesGetUpgradeParams {
-  @scala.inline
-  def apply(
-    allowNoIndices: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    expandWildcards: ExpandWildcards = null,
-    filterPath: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    ignoreUnavailable: js.UndefOr[Boolean] = js.undefined,
-    index: NameList = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): IndicesGetUpgradeParams = {
+  
+  inline def apply(): IndicesGetUpgradeParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNoIndices)) __obj.updateDynamic("allowNoIndices")(allowNoIndices.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (expandWildcards != null) __obj.updateDynamic("expandWildcards")(expandWildcards.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreUnavailable)) __obj.updateDynamic("ignoreUnavailable")(ignoreUnavailable.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesGetUpgradeParams]
   }
+  
+  extension [Self <: IndicesGetUpgradeParams](x: Self) {
+    
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    
+    inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    
+    inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
+    
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+  }
 }
-

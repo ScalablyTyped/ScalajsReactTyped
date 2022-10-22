@@ -1,29 +1,23 @@
 package typingsJapgolly.cordovaPluginFile
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileError extends js.Object {
+trait FileError extends StObject {
+  
   /** Error code */
   var code: Double
 }
-
-@JSGlobal("FileError")
-@js.native
-object FileError extends Instantiable1[/* code */ Double, FileError] {
-  var ABORT_ERR: Double = js.native
-  var ENCODING_ERR: Double = js.native
-  var INVALID_MODIFICATION_ERR: Double = js.native
-  var INVALID_STATE_ERR: Double = js.native
-  var NOT_FOUND_ERR: Double = js.native
-  var NOT_READABLE_ERR: Double = js.native
-  var NO_MODIFICATION_ALLOWED_ERR: Double = js.native
-  var PATH_EXISTS_ERR: Double = js.native
-  var QUOTA_EXCEEDED_ERR: Double = js.native
-  var SECURITY_ERR: Double = js.native
-  var SYNTAX_ERR: Double = js.native
-  var TYPE_MISMATCH_ERR: Double = js.native
+object FileError {
+  
+  inline def apply(code: Double): FileError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FileError]
+  }
+  
+  extension [Self <: FileError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+  }
 }
-

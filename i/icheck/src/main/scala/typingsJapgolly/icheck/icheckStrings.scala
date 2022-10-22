@@ -1,0 +1,56 @@
+package typingsJapgolly.icheck
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object icheckStrings {
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait check extends StObject
+  inline def check: check = "check".asInstanceOf[check]
+  
+  @js.native
+  sealed trait checkbox extends StObject
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @js.native
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
+  
+  @js.native
+  sealed trait determinate extends StObject
+  inline def determinate: determinate = "determinate".asInstanceOf[determinate]
+  
+  @js.native
+  sealed trait disable extends StObject
+  inline def disable: disable = "disable".asInstanceOf[disable]
+  
+  @js.native
+  sealed trait enable extends StObject
+  inline def enable: enable = "enable".asInstanceOf[enable]
+  
+  @js.native
+  sealed trait indeterminate extends StObject
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
+  
+  @js.native
+  sealed trait radio extends StObject
+  inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
+  
+  @js.native
+  sealed trait uncheck extends StObject
+  inline def uncheck: uncheck = "uncheck".asInstanceOf[uncheck]
+  
+  @js.native
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
+}

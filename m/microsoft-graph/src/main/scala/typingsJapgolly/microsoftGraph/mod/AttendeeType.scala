@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.required
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.optional
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.resource
 */
-trait AttendeeType extends js.Object
-
+trait AttendeeType extends StObject
 object AttendeeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def optional: typingsJapgolly.microsoftGraph.microsoftGraphStrings.optional = this.cast("optional")
-  @scala.inline
-  def required: typingsJapgolly.microsoftGraph.microsoftGraphStrings.required = this.cast("required")
-  @scala.inline
-  def resource: typingsJapgolly.microsoftGraph.microsoftGraphStrings.resource = this.cast("resource")
+  
+  inline def optional: typingsJapgolly.microsoftGraph.microsoftGraphStrings.optional = "optional".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.optional]
+  
+  inline def required: typingsJapgolly.microsoftGraph.microsoftGraphStrings.required = "required".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.required]
+  
+  inline def resource: typingsJapgolly.microsoftGraph.microsoftGraphStrings.resource = "resource".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.resource]
 }
-

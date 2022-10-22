@@ -1,44 +1,36 @@
 package typingsJapgolly.scrollbooster
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollboosterStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait native extends js.Object
+  sealed trait mouse extends StObject
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
-  sealed trait touch extends js.Object
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait transform extends js.Object
+  sealed trait touch extends StObject
+  inline def touch: touch = "touch".asInstanceOf[touch]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait transform extends StObject
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @js.native
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

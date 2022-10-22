@@ -1,12 +1,11 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MatterJS.SATFactory")
-@js.native
-class SATFactory () extends js.Object {
+trait SATFactory extends StObject {
+  
   /**
     * Detect collision between two bodies using the Separating Axis Theorem.
     * @method collides
@@ -15,6 +14,17 @@ class SATFactory () extends js.Object {
     * @param {ICollisionData} previousCollision
     * @return {ICollisionData} collision
     */
-  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData = js.native
+  def collides(bodyA: BodyType, bodyB: BodyType, previousCollision: ICollisionData): ICollisionData
 }
-
+object SATFactory {
+  
+  inline def apply(collides: (BodyType, BodyType, ICollisionData) => ICollisionData): SATFactory = {
+    val __obj = js.Dynamic.literal(collides = js.Any.fromFunction3(collides))
+    __obj.asInstanceOf[SATFactory]
+  }
+  
+  extension [Self <: SATFactory](x: Self) {
+    
+    inline def setCollides(value: (BodyType, BodyType, ICollisionData) => ICollisionData): Self = StObject.set(x, "collides", js.Any.fromFunction3(value))
+  }
+}

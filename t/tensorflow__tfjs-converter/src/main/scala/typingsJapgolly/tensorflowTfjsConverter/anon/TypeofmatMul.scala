@@ -1,0 +1,73 @@
+package typingsJapgolly.tensorflowTfjsConverter.anon
+
+import typingsJapgolly.tensorflowTfjsCore.distTypesMod.Rank
+import typingsJapgolly.tensorflowTfjsCore.distTypesMod.TensorLike
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait TypeofmatMul extends StObject {
+  
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank]
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Boolean,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Unit,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank], b: TensorLike): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: TensorLike,
+    transposeA: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: TensorLike,
+    transposeA: Boolean,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    b: TensorLike,
+    transposeA: Unit,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: TensorLike, b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank]): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: TensorLike,
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: TensorLike,
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Boolean,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](
+    a: TensorLike,
+    b: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank],
+    transposeA: Unit,
+    transposeB: Boolean
+  ): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = js.native
+  def apply[T /* <: typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Unit, transposeB: Boolean): T = js.native
+}

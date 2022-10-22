@@ -1,7 +1,7 @@
 
 # Scala.js typings for yargs-parser
 
-Typings are for version 15.0
+Typings are for version 21.0
 
 ## Library description:
 the mighty option parser used by yargs
@@ -10,10 +10,10 @@ the mighty option parser used by yargs
 | ------------------ | :-------------: |
 | Full name          | yargs-parser |
 | Keywords           | argument, parser, yargs, command, cli, parsing, option, args, argument |
-| # releases         | 19 |
-| # dependents       | 598 |
-| # downloads        | 1124548618 |
-| # stars            | 11 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 3.02425438E8 |
+| # stars            | 414.0 |
 
 ## Links
 - [Homepage](https://github.com/yargs/yargs-parser#readme)

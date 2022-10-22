@@ -1,19 +1,19 @@
 
 # Scala.js typings for io-ts
 
-Typings are for version 2.1.0
+Typings are for version 2.2.19
 
 ## Library description:
-TypeScript compatible runtime type system for IO validation
+TypeScript runtime type system for IO decoding/encoding
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | io-ts |
-| Keywords           | typescript, validation, inference, types, runtime |
-| # releases         | 57 |
-| # dependents       | 213 |
-| # downloads        | 4540513 |
-| # stars            | 1 |
+| Keywords           | typescript, runtime, decoder, encoder, schema |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3381582.0 |
+| # stars            | 5714.0 |
 
 ## Links
 - [Homepage](https://github.com/gcanti/io-ts)

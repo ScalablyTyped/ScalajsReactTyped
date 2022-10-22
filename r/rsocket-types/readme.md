@@ -10,10 +10,10 @@ RSocket types
 | ------------------ | :-------------: |
 | Full name          | rsocket-types |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 13 |
-| # downloads        | 137210 |
-| # stars            | 0 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 554441.3333333334 |
+| # stars            | 495.0 |
 
 ## Links
 - [Homepage](https://github.com/rsocket/rsocket-js#readme)

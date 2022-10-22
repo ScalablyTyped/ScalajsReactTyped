@@ -1,7 +1,7 @@
 
 # Scala.js typings for notyf
 
-Typings are for version 3.1.0
+Typings are for version 3.10.0
 
 ## Library description:
 A dead simple, responsive, a11y, dependency-free, vanilla JavaScript toast library.
@@ -9,11 +9,11 @@ A dead simple, responsive, a11y, dependency-free, vanilla JavaScript toast libra
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | notyf |
-| Keywords           | javascript, plugin, notification, plugin, notify |
-| # releases         | 11 |
-| # dependents       | 1 |
-| # downloads        | 22795 |
-| # stars            | 0 |
+| Keywords           | javascript, plugin, notification, toast, notify |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 81721.0 |
+| # stars            | 2236.0 |
 
 ## Links
 - [Homepage](https://github.com/caroso1222/notyf#readme)

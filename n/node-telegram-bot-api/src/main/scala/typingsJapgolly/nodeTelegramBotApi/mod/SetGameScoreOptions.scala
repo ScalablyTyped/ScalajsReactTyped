@@ -1,33 +1,48 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetGameScoreOptions extends js.Object {
+trait SetGameScoreOptions extends StObject {
+  
   var chat_id: js.UndefOr[Double] = js.undefined
+  
   var disable_edit_message: js.UndefOr[Boolean] = js.undefined
+  
   var force: js.UndefOr[Boolean] = js.undefined
+  
   var inline_message_id: js.UndefOr[String] = js.undefined
+  
   var message_id: js.UndefOr[Double] = js.undefined
 }
-
 object SetGameScoreOptions {
-  @scala.inline
-  def apply(
-    chat_id: Int | Double = null,
-    disable_edit_message: js.UndefOr[Boolean] = js.undefined,
-    force: js.UndefOr[Boolean] = js.undefined,
-    inline_message_id: String = null,
-    message_id: Int | Double = null
-  ): SetGameScoreOptions = {
+  
+  inline def apply(): SetGameScoreOptions = {
     val __obj = js.Dynamic.literal()
-    if (chat_id != null) __obj.updateDynamic("chat_id")(chat_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_edit_message)) __obj.updateDynamic("disable_edit_message")(disable_edit_message.asInstanceOf[js.Any])
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
-    if (message_id != null) __obj.updateDynamic("message_id")(message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetGameScoreOptions]
   }
+  
+  extension [Self <: SetGameScoreOptions](x: Self) {
+    
+    inline def setChat_id(value: Double): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setChat_idUndefined: Self = StObject.set(x, "chat_id", js.undefined)
+    
+    inline def setDisable_edit_message(value: Boolean): Self = StObject.set(x, "disable_edit_message", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_edit_messageUndefined: Self = StObject.set(x, "disable_edit_message", js.undefined)
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
+    
+    inline def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
+    
+    inline def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
+  }
 }
-

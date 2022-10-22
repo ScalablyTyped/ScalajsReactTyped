@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.noProtection
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock
 */
-trait WindowsInformationProtectionEnforcementLevel extends js.Object
-
+trait WindowsInformationProtectionEnforcementLevel extends StObject
 object WindowsInformationProtectionEnforcementLevel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def encryptAndAuditOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = this.cast("encryptAndAuditOnly")
-  @scala.inline
-  def encryptAuditAndBlock: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = this.cast("encryptAuditAndBlock")
-  @scala.inline
-  def encryptAuditAndPrompt: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = this.cast("encryptAuditAndPrompt")
-  @scala.inline
-  def noProtection: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noProtection = this.cast("noProtection")
+  
+  inline def encryptAndAuditOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAndAuditOnly]
+  
+  inline def encryptAuditAndBlock: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndBlock]
+  
+  inline def encryptAuditAndPrompt: typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.encryptAuditAndPrompt]
+  
+  inline def noProtection: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noProtection = "noProtection".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.noProtection]
 }
-

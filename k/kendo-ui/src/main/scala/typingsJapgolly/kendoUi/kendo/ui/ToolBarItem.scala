@@ -1,87 +1,160 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToolBarItem extends js.Object {
-  var attributes: js.UndefOr[js.Any] = js.undefined
+trait ToolBarItem extends StObject {
+  
+  var attributes: js.UndefOr[Any] = js.undefined
+  
   var buttons: js.UndefOr[js.Array[ToolBarItemButton]] = js.undefined
+  
   var click: js.UndefOr[js.Function] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var group: js.UndefOr[String] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var imageUrl: js.UndefOr[String] = js.undefined
+  
   var menuButtons: js.UndefOr[js.Array[ToolBarItemMenuButton]] = js.undefined
+  
   var overflow: js.UndefOr[String] = js.undefined
+  
   var overflowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var primary: js.UndefOr[Boolean] = js.undefined
+  
   var selected: js.UndefOr[Boolean] = js.undefined
+  
   var showIcon: js.UndefOr[String] = js.undefined
+  
   var showText: js.UndefOr[String] = js.undefined
+  
   var spriteCssClass: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var togglable: js.UndefOr[Boolean] = js.undefined
+  
   var toggle: js.UndefOr[js.Function] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ToolBarItem {
-  @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    buttons: js.Array[ToolBarItemButton] = null,
-    click: js.Function = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    id: String = null,
-    imageUrl: String = null,
-    menuButtons: js.Array[ToolBarItemMenuButton] = null,
-    overflow: String = null,
-    overflowTemplate: String | js.Function = null,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    showIcon: String = null,
-    showText: String = null,
-    spriteCssClass: String = null,
-    template: String | js.Function = null,
-    text: String = null,
-    togglable: js.UndefOr[Boolean] = js.undefined,
-    toggle: js.Function = null,
-    `type`: String = null,
-    url: String = null
-  ): ToolBarItem = {
+  
+  inline def apply(): ToolBarItem = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl.asInstanceOf[js.Any])
-    if (menuButtons != null) __obj.updateDynamic("menuButtons")(menuButtons.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (overflowTemplate != null) __obj.updateDynamic("overflowTemplate")(overflowTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (showIcon != null) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (showText != null) __obj.updateDynamic("showText")(showText.asInstanceOf[js.Any])
-    if (spriteCssClass != null) __obj.updateDynamic("spriteCssClass")(spriteCssClass.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(togglable)) __obj.updateDynamic("togglable")(togglable.asInstanceOf[js.Any])
-    if (toggle != null) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarItem]
   }
+  
+  extension [Self <: ToolBarItem](x: Self) {
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setButtons(value: js.Array[ToolBarItemButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: ToolBarItemButton*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    
+    inline def setMenuButtons(value: js.Array[ToolBarItemMenuButton]): Self = StObject.set(x, "menuButtons", value.asInstanceOf[js.Any])
+    
+    inline def setMenuButtonsUndefined: Self = StObject.set(x, "menuButtons", js.undefined)
+    
+    inline def setMenuButtonsVarargs(value: ToolBarItemMenuButton*): Self = StObject.set(x, "menuButtons", js.Array(value*))
+    
+    inline def setOverflow(value: String): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowTemplate(value: String | js.Function): Self = StObject.set(x, "overflowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowTemplateUndefined: Self = StObject.set(x, "overflowTemplate", js.undefined)
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setShowIcon(value: String): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+    
+    inline def setShowText(value: String): Self = StObject.set(x, "showText", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextUndefined: Self = StObject.set(x, "showText", js.undefined)
+    
+    inline def setSpriteCssClass(value: String): Self = StObject.set(x, "spriteCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setSpriteCssClassUndefined: Self = StObject.set(x, "spriteCssClass", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTogglable(value: Boolean): Self = StObject.set(x, "togglable", value.asInstanceOf[js.Any])
+    
+    inline def setTogglableUndefined: Self = StObject.set(x, "togglable", js.undefined)
+    
+    inline def setToggle(value: js.Function): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

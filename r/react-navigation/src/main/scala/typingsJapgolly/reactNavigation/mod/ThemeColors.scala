@@ -1,13 +1,23 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation", "ThemeColors")
-@js.native
-object ThemeColors extends js.Object {
-  var dark: Theme = js.native
-  var light: Theme = js.native
+/* Inlined {[ k in react-navigation.react-navigation.SupportedThemes ]: react-navigation.react-navigation.Theme} */
+object ThemeColors {
+  
+  @JSImport("react-navigation", "ThemeColors")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-navigation", "ThemeColors.dark")
+  @js.native
+  def dark: Theme = js.native
+  inline def dark_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dark")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-navigation", "ThemeColors.light")
+  @js.native
+  def light: Theme = js.native
+  inline def light_=(x: Theme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
 }
-

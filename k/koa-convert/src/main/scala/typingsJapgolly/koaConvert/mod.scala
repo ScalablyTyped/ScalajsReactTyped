@@ -1,18 +1,36 @@
 package typingsJapgolly.koaConvert
 
-import typingsJapgolly.koa.mod.Context
-import typingsJapgolly.koa.mod.DefaultContext
-import typingsJapgolly.koa.mod.DefaultState
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.koa.mod.Middleware
-import typingsJapgolly.koa.mod.Next
+import typingsJapgolly.koaConvert.mod.KoaConvert.convert
 import typingsJapgolly.std.Generator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("koa-convert", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(mw: js.Function2[/* context */ Context, /* next */ Next, Generator[_, _, _]]): Middleware[DefaultState, DefaultContext] = js.native
+object mod extends Shortcut {
+  
+  @JSImport("koa-convert", JSImport.Namespace)
+  @js.native
+  val ^ : convert = js.native
+  
+  object KoaConvert {
+    
+    @js.native
+    trait convert extends StObject {
+      
+      def apply[State, Context](mw: MW[State, Context]): Middleware[State, Context, Any] = js.native
+      
+      def back[State, Context](mw: MW[State, Context]): Middleware[State, Context, Any] = js.native
+      
+      def compose[State, Context](mw: (MW[State, Context])*): Middleware[State, Context, Any] = js.native
+    }
+  }
+  
+  type MW[State, Context] = (js.Function1[/* next */ Any, Generator[Any, Any, Any]]) | (Middleware[State, Context, Any])
+  
+  type _To = convert
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: convert = ^
 }
-

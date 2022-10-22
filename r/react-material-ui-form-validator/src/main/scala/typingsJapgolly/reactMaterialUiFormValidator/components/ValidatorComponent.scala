@@ -1,53 +1,40 @@
 package typingsJapgolly.reactMaterialUiFormValidator.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponentProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ValidatorComponent {
-  def apply(
-    name: String,
-    value: js.Any,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    errorMessages: js.Array[_] | String = null,
-    validatorListener: /* isValid */ Boolean => Callback = null,
-    validators: js.Array[_] = null,
-    withRequiredValidator: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ValidatorComponentProps, 
-    typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponent, 
-    Unit, 
-    ValidatorComponentProps
-  ] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (errorMessages != null) __obj.updateDynamic("errorMessages")(errorMessages.asInstanceOf[js.Any])
-    if (validatorListener != null) __obj.updateDynamic("validatorListener")(js.Any.fromFunction1((t0: /* isValid */ scala.Boolean) => validatorListener(t0).runNow()))
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
-    if (!js.isUndefined(withRequiredValidator)) __obj.updateDynamic("withRequiredValidator")(withRequiredValidator.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponentProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponent](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponentProps])(children: _*)
+  inline def apply(name: String, value: Any): Builder = {
+    val __props = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ValidatorComponentProps]))
   }
+  
   @JSImport("react-material-ui-form-validator", "ValidatorComponent")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMaterialUiFormValidator.mod.ValidatorComponent] {
+    
+    inline def errorMessages(value: js.Array[Any] | String): this.type = set("errorMessages", value.asInstanceOf[js.Any])
+    
+    inline def errorMessagesVarargs(value: Any*): this.type = set("errorMessages", js.Array(value*))
+    
+    inline def validatorListener(value: /* isValid */ Boolean => Callback): this.type = set("validatorListener", js.Any.fromFunction1((t0: /* isValid */ Boolean) => value(t0).runNow()))
+    
+    inline def validators(value: js.Array[Any]): this.type = set("validators", value.asInstanceOf[js.Any])
+    
+    inline def validatorsVarargs(value: Any*): this.type = set("validators", js.Array(value*))
+    
+    inline def withRequiredValidator(value: Boolean): this.type = set("withRequiredValidator", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ValidatorComponentProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

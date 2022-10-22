@@ -1,28 +1,27 @@
 package typingsJapgolly.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "ViewEngineHooksResource")
 @js.native
-class ViewEngineHooksResource () extends js.Object {
-  def initialize(): js.Any = js.native
-  def initialize(container: js.Any): js.Any = js.native
-  def initialize(container: js.Any, target: js.Any): js.Any = js.native
-  def load(): js.Any = js.native
-  def load(container: js.Any): js.Any = js.native
-  def load(container: js.Any, target: js.Any): js.Any = js.native
-  def register(): js.Any = js.native
-  def register(registry: js.Any): js.Any = js.native
-  def register(registry: js.Any, name: js.Any): js.Any = js.native
+open class ViewEngineHooksResource ()
+  extends StObject
+     with _ViewResourceType {
+  
+  def initialize(container: Any, target: Any): Unit = js.native
+  
+  def load(container: Any, target: Any): Unit = js.native
+  
+  def register(registry: Any, name: Any): Unit = js.native
 }
-
 /* static members */
-@JSImport("aurelia-templating", "ViewEngineHooksResource")
-@js.native
-object ViewEngineHooksResource extends js.Object {
-  def convention(): js.Any = js.native
-  def convention(name: js.Any): js.Any = js.native
+object ViewEngineHooksResource {
+  
+  @JSImport("aurelia-templating", "ViewEngineHooksResource")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def convention(name: Any): ViewEngineHooksResource = ^.asInstanceOf[js.Dynamic].applyDynamic("convention")(name.asInstanceOf[js.Any]).asInstanceOf[ViewEngineHooksResource]
 }
-

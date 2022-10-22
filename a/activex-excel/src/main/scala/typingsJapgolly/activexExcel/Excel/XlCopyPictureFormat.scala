@@ -1,23 +1,19 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4147`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4147`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4147`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4147`
 */
-trait XlCopyPictureFormat extends js.Object
-
+trait XlCopyPictureFormat extends StObject
 object XlCopyPictureFormat {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlBitmap: `2` = this.cast(2)
-  @scala.inline
-  def xlPicture: `-4147` = this.cast(-4147)
+  
+  inline def xlBitmap: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlPicture: `-4147` = -4147.asInstanceOf[`-4147`]
 }
-

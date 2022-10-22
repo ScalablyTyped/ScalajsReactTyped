@@ -1,24 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Input
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Input.EdgeGesture")
-@js.native
-class EdgeGesture () extends IEdgeGesture {
-  /* CompleteClass */
-  override var oncanceled: js.Any = js.native
-  /* CompleteClass */
-  override var oncompleted: js.Any = js.native
-  /* CompleteClass */
-  override var onstarting: js.Any = js.native
+trait EdgeGesture
+  extends StObject
+     with IEdgeGesture
+object EdgeGesture {
+  
+  inline def apply(oncanceled: Any, oncompleted: Any, onstarting: Any): EdgeGesture = {
+    val __obj = js.Dynamic.literal(oncanceled = oncanceled.asInstanceOf[js.Any], oncompleted = oncompleted.asInstanceOf[js.Any], onstarting = onstarting.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EdgeGesture]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Input.EdgeGesture")
-@js.native
-object EdgeGesture extends js.Object {
-  def getForCurrentView(): EdgeGesture = js.native
-}
-

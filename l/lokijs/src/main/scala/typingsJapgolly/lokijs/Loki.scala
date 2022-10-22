@@ -1,5 +1,19 @@
 package typingsJapgolly.lokijs
 
+import typingsJapgolly.lokijs.anon.CollectionIndex
+import typingsJapgolly.lokijs.anon.Collections
+import typingsJapgolly.lokijs.anon.DictcollName
+import typingsJapgolly.lokijs.anon.FnCall
+import typingsJapgolly.lokijs.anon.PartialLokiConfigOptionsP
+import typingsJapgolly.lokijs.anon.PartialLokiConstructorOptAdapter
+import typingsJapgolly.lokijs.anon.PartialThrottledSaveDrain
+import typingsJapgolly.lokijs.anon.Partition
+import typingsJapgolly.lokijs.anon.Partitioned
+import typingsJapgolly.lokijs.anon.RemoveNonSerializable
+import typingsJapgolly.lokijs.anon.RetainDirtyFlags
+import typingsJapgolly.lokijs.anon.SerializationMethod
+import typingsJapgolly.lokijs.anon.`0`
+import typingsJapgolly.lokijs.anon.`1`
 import typingsJapgolly.lokijs.lokijsStrings.BROWSER
 import typingsJapgolly.lokijs.lokijsStrings.CORDOVA
 import typingsJapgolly.lokijs.lokijsStrings.NA
@@ -16,56 +30,20 @@ import typingsJapgolly.lokijs.lokijsStrings.throttledCallbacks
 import typingsJapgolly.lokijs.lokijsStrings.throttledSavePending
 import typingsJapgolly.lokijs.lokijsStrings.ttl
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Loki: The main database class
-  * @implements LokiEventEmitter
   */
-@JSGlobal("Loki")
 @js.native
-class Loki protected () extends LokiEventEmitter {
-  /**
-    * @param filename - name of the file to be saved to
-    * @param options - (Optional) config options object
-    * @param options.env - override environment detection as 'NODEJS', 'BROWSER', 'CORDOVA'
-    * @param [options.verbose=false] - enable console output
-    * @param [options.autosave=false] - enables autosave
-    * @param [options.autosaveInterval=5000] - time interval (in milliseconds) between saves (if dirty)
-    * @param [options.autoload=false] - enables autoload on loki instantiation
-    * @param options.autoloadCallback - user callback called after database load
-    * @param options.adapter - an instance of a loki persistence adapter
-    * @param [options.serializationMethod='normal'] - ['normal', 'pretty', 'destructured']
-    * @param options.destructureDelimiter - string delimiter used for destructured serialization
-    * @param [options.throttledSaves=true] - debounces multiple calls to to saveDatabase reducing number of disk I/O operations
-    and guaranteeing proper serialization of the calls.
-    */
-  def this(filename: String) = this()
-  def this(filename: String, options: PartialLokiConstructorOptAdapter) = this()
+trait Loki
+  extends StObject
+     with LokiEventEmitter {
+  
   var ENV: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA = js.native
-  var autosave: Boolean = js.native
-  var autosaveHandle: Double | Null = js.native
-  var autosaveInterval: Double = js.native
-  var collections: js.Array[Collection[_]] = js.native
-  var databaseVersion: Double = js.native
-  var engineVersion: Double = js.native
-  var filename: String = js.native
-  var name: js.UndefOr[String] = js.native
-  var options: PartialLokiConstructorOpt = js.native
-  var persistenceAdapter: js.UndefOr[LokiPersistenceAdapter | Null] = js.native
-  var persistenceMethod: js.UndefOr[fs | localStorage | memory | adapter | Null] = js.native
-  // alias
-  @JSName("save")
-  var save_Original: js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]], Unit] = js.native
-  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[_], Unit]] = js.native
-  var throttledSavePending: Boolean = js.native
-  var throttledSaves: Boolean = js.native
-  // alias of serialize
-  @JSName("toJson")
-  var toJson_Original: FnCall = js.native
-  var verbose: Boolean = js.native
+  
   /**
     * Adds a collection to the database.
     * @param name - name of collection to add
@@ -83,22 +61,28 @@ class Loki protected () extends LokiEventEmitter {
     */
   def addCollection[F /* <: js.Object */](name: String): Collection[F] = js.native
   def addCollection[F /* <: js.Object */](name: String, options: Partial[CollectionOptions[F]]): Collection[F] = js.native
+  
+  var autosave: Boolean = js.native
+  
   /**
     * autosaveClearFlags - resets dirty flags on all collections.
     *    Called from saveDatabase() after db is saved.
     *
     */
   def autosaveClearFlags(): Unit = js.native
+  
   /**
     * autosaveDirty - check whether any collections are 'dirty' meaning we need to save (entire) database
     *
     * @returns true if database has changed since last autosave, false if not.
     */
   def autosaveDirty(): Boolean = js.native
+  
   /**
     * autosaveDisable - stop the autosave interval timer.
     */
   def autosaveDisable(): Unit = js.native
+  
   /**
     * autosaveEnable - begin a javascript interval to periodically save the database.
     *
@@ -106,12 +90,19 @@ class Loki protected () extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback
     */
   def autosaveEnable(): Unit = js.native
-  def autosaveEnable(options: js.Any): Unit = js.native
-  def autosaveEnable(options: js.Any, callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def autosaveEnable(options: Any): Unit = js.native
+  def autosaveEnable(options: Any, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  def autosaveEnable(options: Unit, callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  
+  var autosaveHandle: Double | Null = js.native
+  
+  var autosaveInterval: Double = js.native
+  
   /**
     * (Changes API) : clears all the changes in all collections.
     */
   def clearChanges(): Unit = js.native
+  
   /**
     * Emits the close event. In autosave scenarios, if the database is dirty, this will save and disable timer.
     * Does not actually destroy the db.
@@ -119,7 +110,10 @@ class Loki protected () extends LokiEventEmitter {
     * @param callback - (Optional) if supplied will be registered with close event before emitting.
     */
   def close(): Unit = js.native
-  def close(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def close(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  
+  var collections: js.Array[Collection[Any]] = js.native
+  
   /**
     * Allows reconfiguring database options
     *
@@ -136,8 +130,10 @@ class Loki protected () extends LokiEventEmitter {
     * @param initialConfig - (internal) true is passed when loki ctor is invoking
     */
   def configureOptions(): Unit = js.native
+  def configureOptions(options: Unit, initialConfig: Boolean): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP): Unit = js.native
   def configureOptions(options: PartialLokiConfigOptionsP, initialConfig: Boolean): Unit = js.native
+  
   /**
     * Copies 'this' database into a new Loki instance. Object references are shared to make lightweight.
     *
@@ -145,7 +141,10 @@ class Loki protected () extends LokiEventEmitter {
     * @param options.removeNonSerializable - nulls properties not safe for serialization.
     */
   def copy(): Loki = js.native
-  def copy(options: AnonRemoveNonSerializable): Loki = js.native
+  def copy(options: RemoveNonSerializable): Loki = js.native
+  
+  var databaseVersion: Double = js.native
+  
   def deleteDatabase(): Unit = js.native
   /**
     * Handles deleting a database from file system, local
@@ -155,15 +154,14 @@ class Loki protected () extends LokiEventEmitter {
     *
     * @param callback - (Optional) user supplied async callback / error handler
     */
-  def deleteDatabase(callback: js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Unit]): Unit = js.native
+  def deleteDatabase(callback: js.Function2[js.UndefOr[Any], js.UndefOr[Any], Unit]): Unit = js.native
   def deleteDatabase(
-    options: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit],
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
+    options: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit],
+    callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]
   ): Unit = js.native
-  def deleteDatabase(
-    options: Null,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  def deleteDatabase(options: Null, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  def deleteDatabase(options: Unit, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  
   /**
     * Collection level utility function to deserializes a destructured collection.
     *
@@ -174,11 +172,11 @@ class Loki protected () extends LokiEventEmitter {
     *
     * @returns an array of documents to attach to collection.data.
     */
-  def deserializeCollection(destructuredSource: String): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: String, options: AnonPartitioned): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[_] = js.native
-  def deserializeCollection(destructuredSource: js.Array[String], options: AnonPartitioned): js.Array[_] = js.native
-  def deserializeDestructured(): js.Any = js.native
+  def deserializeCollection(destructuredSource: String): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: String, options: Partitioned): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String]): js.Array[Any] = js.native
+  def deserializeCollection(destructuredSource: js.Array[String], options: Partitioned): js.Array[Any] = js.native
+  
   /**
     * Database level destructured JSON deserialization routine to minimize memory overhead.
     * Internally, Loki supports destructuring via loki "serializationMethod' option and
@@ -194,11 +192,17 @@ class Loki protected () extends LokiEventEmitter {
     *
     * @returns An object representation of the deserialized database, not yet applied to 'this' db or document array
     */
-  def deserializeDestructured(destructuredSource: String): js.Any = js.native
-  def deserializeDestructured(destructuredSource: String, options: DeserializeOptions): js.Any = js.native
-  def deserializeDestructured(destructuredSource: js.Array[String]): js.Any = js.native
-  def deserializeDestructured(destructuredSource: js.Array[String], options: DeserializeOptions): js.Any = js.native
-  def deserializeDestructured(destructuredSource: Null, options: DeserializeOptions): js.Any = js.native
+  def deserializeDestructured(): Any = js.native
+  def deserializeDestructured(destructuredSource: String): Any = js.native
+  def deserializeDestructured(destructuredSource: String, options: DeserializeOptions): Any = js.native
+  def deserializeDestructured(destructuredSource: js.Array[String]): Any = js.native
+  def deserializeDestructured(destructuredSource: js.Array[String], options: DeserializeOptions): Any = js.native
+  def deserializeDestructured(destructuredSource: Null, options: DeserializeOptions): Any = js.native
+  
+  var engineVersion: Double = js.native
+  
+  var filename: String = js.native
+  
   /**-------------------------+
     | Changes API               |
     +--------------------------*/
@@ -217,18 +221,24 @@ class Loki protected () extends LokiEventEmitter {
     */
   def generateChangesNotification(): js.Array[CollectionChange] = js.native
   def generateChangesNotification(arrayOfCollectionNames: js.Array[String]): js.Array[CollectionChange] = js.native
+  
   /**
     * Retrieves reference to a collection by name.
     * @param collectionName - name of collection to look up
     * @returns Reference to collection in database by that name, or null if not found
     */
   def getCollection[F /* <: js.Object */](collectionName: String): Collection[F] = js.native
+  
   // experimental support for browserify's abstract syntax scan to pick up dependency of indexed adapter.
   // Hopefully, once this hits npm a browserify require of lokijs should scan the main file and detect this indexed adapter reference.
-  def getIndexedAdapter(): js.Any = js.native
+  def getIndexedAdapter(): Any = js.native
+  
   def getName(): String = js.native
-  def listCollections(): js.Array[Collection[_]] = js.native
-  def loadCollection(collection: Collection[_]): Unit = js.native
+  
+  def listCollections(): js.Array[Collection[Any]] = js.native
+  
+  def loadCollection(collection: Collection[Any]): Unit = js.native
+  
   /**
     * Handles manually loading from file system, local storage, or adapter (such as indexeddb)
     *    This method utilizes loki configuration options (if provided) to determine which
@@ -253,8 +263,10 @@ class Loki protected () extends LokiEventEmitter {
     * });
     */
   def loadDatabase(): Unit = js.native
+  def loadDatabase(options: Unit, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
   def loadDatabase(options: PartialThrottledSaveDrain): Unit = js.native
-  def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def loadDatabase(options: PartialThrottledSaveDrain, callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
+  
   /**
     * Internal load logic, decoupled from throttling/contention logic
     *
@@ -262,11 +274,10 @@ class Loki protected () extends LokiEventEmitter {
     * @param [callback] - (Optional) user supplied async callback / error handler
     */
   def loadDatabaseInternal(): Unit = js.native
-  def loadDatabaseInternal(options: js.Any): Unit = js.native
-  def loadDatabaseInternal(
-    options: js.Any,
-    callback: js.Function2[/* err */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any], Unit]
-  ): Unit = js.native
+  def loadDatabaseInternal(options: Any): Unit = js.native
+  def loadDatabaseInternal(options: Any, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  def loadDatabaseInternal(options: Unit, callback: js.Function2[/* err */ js.UndefOr[Any], /* data */ js.UndefOr[Any], Unit]): Unit = js.native
+  
   /**
     * Inflates a loki database from a serialized JSON string
     *
@@ -275,7 +286,8 @@ class Loki protected () extends LokiEventEmitter {
     * @param [options.serializationMethod] - the serialization format to deserialize
     */
   def loadJSON(serializedDb: String): Unit = js.native
-  def loadJSON(serializedDb: String, options: AnonDictcollName): Unit = js.native
+  def loadJSON(serializedDb: String, options: DictcollName): Unit = js.native
+  
   /**
     * Inflates a loki database from a JS object
     *
@@ -283,23 +295,35 @@ class Loki protected () extends LokiEventEmitter {
     * @param options - apply or override collection level settings
     * @param options.retainDirtyFlags - whether collection dirty flags will be preserved
     */
-  def loadJSONObject(dbObject: AnonCollections): Unit = js.native
-  def loadJSONObject(dbObject: AnonCollections, options: AnonRetainDirtyFlags): Unit = js.native
+  def loadJSONObject(dbObject: Collections): Unit = js.native
+  def loadJSONObject(dbObject: Collections, options: RetainDirtyFlags): Unit = js.native
+  
+  var name: js.UndefOr[String] = js.native
+  
+  var options: PartialLokiConstructorOptAdapter = js.native
+  
+  var persistenceAdapter: js.UndefOr[LokiPersistenceAdapter | Null] = js.native
+  
+  var persistenceMethod: js.UndefOr[fs | localStorage | memory | adapter | Null] = js.native
+  
   /**
     * Removes a collection from the database.
     * @param collectionName - name of collection to remove
     */
   def removeCollection(collectionName: String): Unit = js.native
+  
   /**
     * Renames an existing loki collection
     * @param oldName - name of collection to rename
     * @param newName - new name of collection
     * @returns reference to the newly renamed collection
     */
-  def renameCollection(oldName: String, newName: String): Collection[_] = js.native
+  def renameCollection(oldName: String, newName: String): Collection[Any] = js.native
+  
   // alias
   def save(): Unit = js.native
-  def save(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def save(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  
   /**
     * Handles manually saving to file system, local storage, or adapter (such as indexeddb)
     *    This method utilizes loki configuration options (if provided) to determine which
@@ -319,27 +343,35 @@ class Loki protected () extends LokiEventEmitter {
     * });
     */
   def saveDatabase(): Unit = js.native
-  def saveDatabase(callback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  def saveDatabase(callback: js.Function1[/* err */ js.UndefOr[Any], Unit]): Unit = js.native
+  
   /**
     * Internal save logic, decoupled from save throttling logic
     */
   def saveDatabaseInternal(): Unit = js.native
-  def saveDatabaseInternal(callback: js.Function1[/* err */ js.Any, Unit]): Unit = js.native
+  def saveDatabaseInternal(callback: js.Function1[/* err */ Any, Unit]): Unit = js.native
+  
+  // alias
+  @JSName("save")
+  var save_Original: js.Function1[/* callback */ js.UndefOr[js.Function1[/* err */ js.UndefOr[Any], Unit]], Unit] = js.native
+  
   /**
     * Serialize database to a string which can be loaded via {@link Loki#loadJSON}
     *
     * @returns Stringified representation of the loki database.
     */
   def serialize(): String = js.native
-  def serialize(options: Anon0): js.Array[String] = js.native
-  def serialize(options: Anon1): String | js.Array[String] = js.native
-  def serialize(options: AnonSerializationMethod): String = js.native
+  def serialize(options: SerializationMethod): String = js.native
+  def serialize(options: `0`): js.Array[String] = js.native
+  def serialize(options: `1`): String | js.Array[String] = js.native
+  
   /**
     * (Changes API) - stringify changes for network transmission
     * @returns string representation of the changes
     */
   def serializeChanges(): String = js.native
   def serializeChanges(collectionNamesArray: js.Array[String]): String = js.native
+  
   /**
     * Collection level utility method to serialize a collection in a 'destructured' format
     *
@@ -351,7 +383,8 @@ class Loki protected () extends LokiEventEmitter {
     * @returns A custom, restructured aggregation of independent serializations for a single collection.
     */
   def serializeCollection(): String | js.Array[String] = js.native
-  def serializeCollection(options: AnonCollectionIndex): String | js.Array[String] = js.native
+  def serializeCollection(options: CollectionIndex): String | js.Array[String] = js.native
+  
   /**
     * Database level destructured JSON serialization routine to allow alternate serialization methods.
     * Internally, Loki supports destructuring via loki "serializationMethod' option and
@@ -367,25 +400,22 @@ class Loki protected () extends LokiEventEmitter {
     * @returns A custom, restructured aggregation of independent serializations.
     */
   def serializeDestructured(): String | js.Array[String] = js.native
-  def serializeDestructured(options: AnonPartition): String | js.Array[String] = js.native
-  def serializeReplacer(key: String, value: js.Any): js.Any = js.native
+  def serializeDestructured(options: Partition): String | js.Array[String] = js.native
+  
+  def serializeReplacer(
+    key: autosaveHandle | persistenceAdapter | constraints | ttl | throttledSavePending | throttledCallbacks,
+    value: Any
+  ): Any = js.native
   /**
     * serializeReplacer - used to prevent certain properties from being serialized
     */
-  @JSName("serializeReplacer")
-  def serializeReplacer_autosaveHandle(key: autosaveHandle, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_constraints(key: constraints, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_persistenceAdapter(key: persistenceAdapter, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_throttledCallbacks(key: throttledCallbacks, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_throttledSavePending(key: throttledSavePending, value: js.Any): js.Any = js.native
-  @JSName("serializeReplacer")
-  def serializeReplacer_ttl(key: ttl, value: js.Any): js.Any = js.native
+  def serializeReplacer(key: String, value: Any): Any = js.native
+  
   @JSName("serialize")
   def serialize_Union(): String | js.Array[String] = js.native
+  
+  var throttledCallbacks: js.Array[js.Function1[/* err */ js.UndefOr[Any], Unit]] = js.native
+  
   /**
     * Wait for throttledSaves to complete and invoke your callback when drained or duration is met.
     *
@@ -397,15 +427,24 @@ class Loki protected () extends LokiEventEmitter {
     */
   def throttledSaveDrain(callback: js.Function1[/* result */ js.UndefOr[Boolean], Unit]): Unit = js.native
   def throttledSaveDrain(callback: js.Function1[/* result */ js.UndefOr[Boolean], Unit], options: PartialThrottledSaveDrain): Unit = js.native
+  
+  var throttledSavePending: Boolean = js.native
+  
+  var throttledSaves: Boolean = js.native
+  
   // alias of serialize
   def toJson(): String = js.native
   // alias of serialize
-  def toJson(options: Anon0): js.Array[String] = js.native
-  def toJson(options: Anon1): String | js.Array[String] = js.native
+  def toJson(options: SerializationMethod): String = js.native
   // alias of serialize
-  def toJson(options: AnonSerializationMethod): String = js.native
+  def toJson(options: `0`): js.Array[String] = js.native
+  def toJson(options: `1`): String | js.Array[String] = js.native
+  // alias of serialize
+  @JSName("toJson")
+  var toJson_Original: FnCall = js.native
   // alias of serialize
   @JSName("toJson")
   def toJson_Union(): String | js.Array[String] = js.native
+  
+  var verbose: Boolean = js.native
 }
-

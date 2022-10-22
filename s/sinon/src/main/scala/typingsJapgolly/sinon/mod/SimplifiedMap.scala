@@ -1,21 +1,24 @@
 package typingsJapgolly.sinon.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimplifiedMap extends SimplifiedSet {
-  def get(key: js.Any): js.Any
+trait SimplifiedMap
+  extends StObject
+     with SimplifiedSet {
+  
+  def get(key: Any): Any
 }
-
 object SimplifiedMap {
-  @scala.inline
-  def apply(get: js.Any => CallbackTo[js.Any], has: js.Any => CallbackTo[Boolean]): SimplifiedMap = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: js.Any) => get(t0).runNow()))
-    __obj.updateDynamic("has")(js.Any.fromFunction1((t0: js.Any) => has(t0).runNow()))
+  
+  inline def apply(get: Any => Any, has: Any => Boolean): SimplifiedMap = {
+    val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), has = js.Any.fromFunction1(has))
     __obj.asInstanceOf[SimplifiedMap]
   }
+  
+  extension [Self <: SimplifiedMap](x: Self) {
+    
+    inline def setGet(value: Any => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+  }
 }
-

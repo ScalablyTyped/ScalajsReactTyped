@@ -1,30 +1,34 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NonDocumentTypeChildNode extends js.Object {
-  /**
-    * Returns the first following sibling that is an element, and null otherwise.
-    */
-  val nextElementSibling: org.scalajs.dom.raw.Element | Null
-  /**
-    * Returns the first preceding sibling that is an element, and null otherwise.
-    */
-  val previousElementSibling: org.scalajs.dom.raw.Element | Null
+trait NonDocumentTypeChildNode extends StObject {
+  
+  /** Returns the first following sibling that is an element, and null otherwise. */
+  /* standard dom */
+  val nextElementSibling: org.scalajs.dom.Element | Null
+  
+  /** Returns the first preceding sibling that is an element, and null otherwise. */
+  /* standard dom */
+  val previousElementSibling: org.scalajs.dom.Element | Null
 }
-
 object NonDocumentTypeChildNode {
-  @scala.inline
-  def apply(
-    nextElementSibling: org.scalajs.dom.raw.Element = null,
-    previousElementSibling: org.scalajs.dom.raw.Element = null
-  ): NonDocumentTypeChildNode = {
-    val __obj = js.Dynamic.literal()
-    if (nextElementSibling != null) __obj.updateDynamic("nextElementSibling")(nextElementSibling.asInstanceOf[js.Any])
-    if (previousElementSibling != null) __obj.updateDynamic("previousElementSibling")(previousElementSibling.asInstanceOf[js.Any])
+  
+  inline def apply(): NonDocumentTypeChildNode = {
+    val __obj = js.Dynamic.literal(nextElementSibling = null, previousElementSibling = null)
     __obj.asInstanceOf[NonDocumentTypeChildNode]
   }
+  
+  extension [Self <: NonDocumentTypeChildNode](x: Self) {
+    
+    inline def setNextElementSibling(value: org.scalajs.dom.Element): Self = StObject.set(x, "nextElementSibling", value.asInstanceOf[js.Any])
+    
+    inline def setNextElementSiblingNull: Self = StObject.set(x, "nextElementSibling", null)
+    
+    inline def setPreviousElementSibling(value: org.scalajs.dom.Element): Self = StObject.set(x, "previousElementSibling", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousElementSiblingNull: Self = StObject.set(x, "previousElementSibling", null)
+  }
 }
-

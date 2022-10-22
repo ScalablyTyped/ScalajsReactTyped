@@ -1,7 +1,7 @@
 
 # Scala.js typings for sindresorhus__is
 
-Typings are for version 0.7.0
+Typings are for version 5.3.0
 
 ## Library description:
 Type check values
@@ -10,10 +10,10 @@ Type check values
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/is |
 | Keywords           | type, types, is, check, checking, validate, validation, utility, util, typeof, instanceof, object, assert, assertion, test, kind, primitive, verify, compare, typescript, typeguards, types |
-| # releases         | 15 |
-| # dependents       | 77 |
-| # downloads        | 102427043 |
-| # stars            | 3 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 6.952393666666667E7 |
+| # stars            | 1382.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/is#readme)

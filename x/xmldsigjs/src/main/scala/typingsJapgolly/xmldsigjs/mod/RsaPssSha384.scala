@@ -1,13 +1,12 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "RsaPssSha384")
 @js.native
-class RsaPssSha384 ()
-  extends typingsJapgolly.xmldsigjs.algorithmsMod.RsaPssSha384 {
+open class RsaPssSha384 ()
+  extends typingsJapgolly.xmldsigjs.buildTypesAlgorithmsMod.RsaPssSha384 {
   def this(saltLength: Double) = this()
 }
-

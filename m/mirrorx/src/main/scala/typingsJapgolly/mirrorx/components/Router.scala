@@ -1,46 +1,34 @@
 package typingsJapgolly.mirrorx.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
 import typingsJapgolly.mirrorx.mod.ConnectedRouterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Router {
-  def apply[State](
-    history: History[LocationState] = null,
-    store: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ConnectedRouterProps[State], 
-    typingsJapgolly.mirrorx.mod.Router[State], 
-    Unit, 
-    ConnectedRouterProps[State]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mirrorx.mod.ConnectedRouterProps[State], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mirrorx.mod.Router[State]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mirrorx.mod.ConnectedRouterProps[State]])(children: _*)
+  inline def apply[State](): Builder[State] = {
+    val __props = js.Dynamic.literal()
+    new Builder[State](js.Array(this.component, __props.asInstanceOf[ConnectedRouterProps[State]]))
   }
+  
   @JSImport("mirrorx", "Router")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[State] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mirrorx.mod.Router[State]] {
+    
+    inline def history(value: History): this.type = set("history", value.asInstanceOf[js.Any])
+    
+    inline def store(value: Any): this.type = set("store", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[State](companion: Router.type): Builder[State] = new Builder[State](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[State](p: ConnectedRouterProps[State]): Builder[State] = new Builder[State](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

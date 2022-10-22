@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalRangeFontUnderlineStyle extends js.Object
-
+sealed trait ConditionalRangeFontUnderlineStyle extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalRangeFontUnderlineStyle")
 @js.native
-object ConditionalRangeFontUnderlineStyle extends js.Object {
+object ConditionalRangeFontUnderlineStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait double extends ConditionalRangeFontUnderlineStyle
+  sealed trait double
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait none extends ConditionalRangeFontUnderlineStyle
+  sealed trait none
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait single extends ConditionalRangeFontUnderlineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalRangeFontUnderlineStyle with String] = js.native
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
-  
+  sealed trait single
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
 }
-

@@ -10,10 +10,10 @@ Parse and construct vCards, jCards
 | ------------------ | :-------------: |
 | Full name          | vcf |
 | Keywords           | vcard, hcard, jcard, vcf |
-| # releases         | 6 |
-| # dependents       | 5 |
-| # downloads        | 115920 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 40522.0 |
+| # stars            | 80.0 |
 
 ## Links
 - [Homepage](https://github.com/jhermsmeier/node-vcf)

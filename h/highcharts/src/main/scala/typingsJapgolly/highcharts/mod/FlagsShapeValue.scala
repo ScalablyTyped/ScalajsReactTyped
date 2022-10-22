@@ -1,24 +1,20 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.circlepin
   - typingsJapgolly.highcharts.highchartsStrings.flag
   - typingsJapgolly.highcharts.highchartsStrings.squarepin
 */
-trait FlagsShapeValue extends js.Object
-
+trait FlagsShapeValue extends StObject
 object FlagsShapeValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def circlepin: typingsJapgolly.highcharts.highchartsStrings.circlepin = this.cast("circlepin")
-  @scala.inline
-  def flag: typingsJapgolly.highcharts.highchartsStrings.flag = this.cast("flag")
-  @scala.inline
-  def squarepin: typingsJapgolly.highcharts.highchartsStrings.squarepin = this.cast("squarepin")
+  
+  inline def circlepin: typingsJapgolly.highcharts.highchartsStrings.circlepin = "circlepin".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.circlepin]
+  
+  inline def flag: typingsJapgolly.highcharts.highchartsStrings.flag = "flag".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.flag]
+  
+  inline def squarepin: typingsJapgolly.highcharts.highchartsStrings.squarepin = "squarepin".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.squarepin]
 }
-

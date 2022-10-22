@@ -1,9 +1,9 @@
 package typingsJapgolly.gm.mod
 
 import typingsJapgolly.gm.gmStrings.Xor_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Over
@@ -29,54 +29,50 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.CopyYellow
   - typingsJapgolly.gm.gmStrings.CopyBlack
 */
-trait ComposeOperator extends js.Object
-
+trait ComposeOperator extends StObject
 object ComposeOperator {
-  @scala.inline
-  def Add: typingsJapgolly.gm.gmStrings.Add = this.cast("Add")
-  @scala.inline
-  def Atop: typingsJapgolly.gm.gmStrings.Atop = this.cast("Atop")
-  @scala.inline
-  def Bumpmap: typingsJapgolly.gm.gmStrings.Bumpmap = this.cast("Bumpmap")
-  @scala.inline
-  def Copy: typingsJapgolly.gm.gmStrings.Copy = this.cast("Copy")
-  @scala.inline
-  def CopyBlack: typingsJapgolly.gm.gmStrings.CopyBlack = this.cast("CopyBlack")
-  @scala.inline
-  def CopyBlue: typingsJapgolly.gm.gmStrings.CopyBlue = this.cast("CopyBlue")
-  @scala.inline
-  def CopyCyan: typingsJapgolly.gm.gmStrings.CopyCyan = this.cast("CopyCyan")
-  @scala.inline
-  def CopyGreen: typingsJapgolly.gm.gmStrings.CopyGreen = this.cast("CopyGreen")
-  @scala.inline
-  def CopyMagenta: typingsJapgolly.gm.gmStrings.CopyMagenta = this.cast("CopyMagenta")
-  @scala.inline
-  def CopyOpacity: typingsJapgolly.gm.gmStrings.CopyOpacity = this.cast("CopyOpacity")
-  @scala.inline
-  def CopyRed: typingsJapgolly.gm.gmStrings.CopyRed = this.cast("CopyRed")
-  @scala.inline
-  def CopyYellow: typingsJapgolly.gm.gmStrings.CopyYellow = this.cast("CopyYellow")
-  @scala.inline
-  def Difference: typingsJapgolly.gm.gmStrings.Difference = this.cast("Difference")
-  @scala.inline
-  def Divide: typingsJapgolly.gm.gmStrings.Divide = this.cast("Divide")
-  @scala.inline
-  def In: typingsJapgolly.gm.gmStrings.In = this.cast("In")
-  @scala.inline
-  def Minus: typingsJapgolly.gm.gmStrings.Minus = this.cast("Minus")
-  @scala.inline
-  def Multiply: typingsJapgolly.gm.gmStrings.Multiply = this.cast("Multiply")
-  @scala.inline
-  def Out: typingsJapgolly.gm.gmStrings.Out = this.cast("Out")
-  @scala.inline
-  def Over: typingsJapgolly.gm.gmStrings.Over = this.cast("Over")
-  @scala.inline
-  def Plus: typingsJapgolly.gm.gmStrings.Plus = this.cast("Plus")
-  @scala.inline
-  def Subtract: typingsJapgolly.gm.gmStrings.Subtract = this.cast("Subtract")
-  @scala.inline
-  def Xor: Xor_ = this.cast("Xor")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Add: typingsJapgolly.gm.gmStrings.Add = "Add".asInstanceOf[typingsJapgolly.gm.gmStrings.Add]
+  
+  inline def Atop: typingsJapgolly.gm.gmStrings.Atop = "Atop".asInstanceOf[typingsJapgolly.gm.gmStrings.Atop]
+  
+  inline def Bumpmap: typingsJapgolly.gm.gmStrings.Bumpmap = "Bumpmap".asInstanceOf[typingsJapgolly.gm.gmStrings.Bumpmap]
+  
+  inline def Copy: typingsJapgolly.gm.gmStrings.Copy = "Copy".asInstanceOf[typingsJapgolly.gm.gmStrings.Copy]
+  
+  inline def CopyBlack: typingsJapgolly.gm.gmStrings.CopyBlack = "CopyBlack".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyBlack]
+  
+  inline def CopyBlue: typingsJapgolly.gm.gmStrings.CopyBlue = "CopyBlue".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyBlue]
+  
+  inline def CopyCyan: typingsJapgolly.gm.gmStrings.CopyCyan = "CopyCyan".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyCyan]
+  
+  inline def CopyGreen: typingsJapgolly.gm.gmStrings.CopyGreen = "CopyGreen".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyGreen]
+  
+  inline def CopyMagenta: typingsJapgolly.gm.gmStrings.CopyMagenta = "CopyMagenta".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyMagenta]
+  
+  inline def CopyOpacity: typingsJapgolly.gm.gmStrings.CopyOpacity = "CopyOpacity".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyOpacity]
+  
+  inline def CopyRed: typingsJapgolly.gm.gmStrings.CopyRed = "CopyRed".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyRed]
+  
+  inline def CopyYellow: typingsJapgolly.gm.gmStrings.CopyYellow = "CopyYellow".asInstanceOf[typingsJapgolly.gm.gmStrings.CopyYellow]
+  
+  inline def Difference: typingsJapgolly.gm.gmStrings.Difference = "Difference".asInstanceOf[typingsJapgolly.gm.gmStrings.Difference]
+  
+  inline def Divide: typingsJapgolly.gm.gmStrings.Divide = "Divide".asInstanceOf[typingsJapgolly.gm.gmStrings.Divide]
+  
+  inline def In: typingsJapgolly.gm.gmStrings.In = "In".asInstanceOf[typingsJapgolly.gm.gmStrings.In]
+  
+  inline def Minus: typingsJapgolly.gm.gmStrings.Minus = "Minus".asInstanceOf[typingsJapgolly.gm.gmStrings.Minus]
+  
+  inline def Multiply: typingsJapgolly.gm.gmStrings.Multiply = "Multiply".asInstanceOf[typingsJapgolly.gm.gmStrings.Multiply]
+  
+  inline def Out: typingsJapgolly.gm.gmStrings.Out = "Out".asInstanceOf[typingsJapgolly.gm.gmStrings.Out]
+  
+  inline def Over: typingsJapgolly.gm.gmStrings.Over = "Over".asInstanceOf[typingsJapgolly.gm.gmStrings.Over]
+  
+  inline def Plus: typingsJapgolly.gm.gmStrings.Plus = "Plus".asInstanceOf[typingsJapgolly.gm.gmStrings.Plus]
+  
+  inline def Subtract: typingsJapgolly.gm.gmStrings.Subtract = "Subtract".asInstanceOf[typingsJapgolly.gm.gmStrings.Subtract]
+  
+  inline def Xor: Xor_ = "Xor".asInstanceOf[Xor_]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for dropzone
 
-Typings are for version 5.5.0
+Typings are for version 5.7.2
 
 ## Library description:
 Handles drag and drop of files for you.
@@ -10,15 +10,15 @@ Handles drag and drop of files for you.
 | ------------------ | :-------------: |
 | Full name          | dropzone |
 | Keywords           | dragndrop, drag and drop, file upload, upload |
-| # releases         | 6 |
-| # dependents       | 144 |
-| # downloads        | 8441034 |
-| # stars            | 19 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1918971.6666666667 |
+| # stars            | 16645.0 |
 
 ## Links
-- [Homepage](http://www.dropzonejs.com)
-- [Bugs](https://gitlab.com/meno/dropzone/issues)
-- [Repository](https://gitlab.com/meno/dropzone)
+- [Homepage](https://www.dropzone.dev/js)
+- [Bugs](https://github.com/dropzone/dropzone/issues)
+- [Repository](https://github.com/dropzone/dropzone)
 - [Npm](https://www.npmjs.com/package/dropzone)
     
 

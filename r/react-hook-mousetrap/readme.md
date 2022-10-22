@@ -9,16 +9,13 @@ A react hook to trigger callbacks on specified key combo with mousetrap
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-hook-mousetrap |
-| Keywords           | ract, hook, mousetrap, keys, combo, hotkeys |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 1555 |
-| # stars            | 0 |
+| Keywords           | react, hook, mousetrap, keys, combo, hotkeys |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 12380.666666666666 |
+| # stars            | 18.0 |
 
 ## Links
-- [Homepage](https://github.com/olup/react-hook-mousetrap#readme)
-- [Bugs](https://github.com/olup/react-hook-mousetrap/issues)
-- [Repository](https://github.com/olup/react-hook-mousetrap)
 - [Npm](https://www.npmjs.com/package/react-hook-mousetrap)
     
 

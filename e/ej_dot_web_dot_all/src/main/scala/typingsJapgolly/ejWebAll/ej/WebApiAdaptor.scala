@@ -1,20 +1,25 @@
 package typingsJapgolly.ejWebAll.ej
 
-import typingsJapgolly.ejWebAll.AnonAccept
-import typingsJapgolly.ejWebAll.AnonDataType
+import typingsJapgolly.ejWebAll.anon.Accept
+import typingsJapgolly.ejWebAll.anon.DataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.WebApiAdaptor")
 @js.native
-class WebApiAdaptor () extends ODataAdaptor {
-  def insert(dm: DataManager, data: js.Any): AnonDataType = js.native
-  def remove(dm: DataManager, value: js.Any): AnonDataType = js.native
-  def remove(dm: DataManager, value: js.Any, keyField: String): AnonDataType = js.native
-  def remove(dm: DataManager, value: js.Any, keyField: String, tableName: String): AnonDataType = js.native
-  def update(dm: DataManager, value: js.Any): AnonAccept = js.native
-  def update(dm: DataManager, value: js.Any, keyField: String): AnonAccept = js.native
-  def update(dm: DataManager, value: js.Any, keyField: String, tableName: String): AnonAccept = js.native
+trait WebApiAdaptor
+  extends StObject
+     with ODataAdaptor {
+  
+  def insert(dm: DataManager, data: Any): DataType = js.native
+  
+  def remove(dm: DataManager, value: Any): DataType = js.native
+  def remove(dm: DataManager, value: Any, keyField: String): DataType = js.native
+  def remove(dm: DataManager, value: Any, keyField: String, tableName: String): DataType = js.native
+  def remove(dm: DataManager, value: Any, keyField: Unit, tableName: String): DataType = js.native
+  
+  def update(dm: DataManager, value: Any): Accept = js.native
+  def update(dm: DataManager, value: Any, keyField: String): Accept = js.native
+  def update(dm: DataManager, value: Any, keyField: String, tableName: String): Accept = js.native
+  def update(dm: DataManager, value: Any, keyField: Unit, tableName: String): Accept = js.native
 }
-

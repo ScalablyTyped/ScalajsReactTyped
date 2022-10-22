@@ -1,56 +1,97 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BodyType extends js.Object
-
+sealed trait BodyType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.BodyType")
 @js.native
-object BodyType extends js.Object {
+object BodyType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
   @js.native
-  sealed trait footer extends BodyType
+  sealed trait endnote
+    extends StObject
+       with BodyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait header extends BodyType
+  sealed trait footer
+    extends StObject
+       with BodyType
   
+  /**
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
   @js.native
-  sealed trait mainDoc extends BodyType
+  sealed trait footnote
+    extends StObject
+       with BodyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait section extends BodyType
+  sealed trait header
+    extends StObject
+       with BodyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait tableCell extends BodyType
+  sealed trait mainDoc
+    extends StObject
+       with BodyType
   
+  /**
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
   @js.native
-  sealed trait unknown extends BodyType
+  sealed trait noteItem
+    extends StObject
+       with BodyType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BodyType with String] = js.native
-  /* "Footer" */ @js.native
-  object footer extends TopLevel[footer with String]
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  @js.native
+  sealed trait section
+    extends StObject
+       with BodyType
   
-  /* "Header" */ @js.native
-  object header extends TopLevel[header with String]
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  @js.native
+  sealed trait tableCell
+    extends StObject
+       with BodyType
   
-  /* "MainDoc" */ @js.native
-  object mainDoc extends TopLevel[mainDoc with String]
-  
-  /* "Section" */ @js.native
-  object section extends TopLevel[section with String]
-  
-  /* "TableCell" */ @js.native
-  object tableCell extends TopLevel[tableCell with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with BodyType
 }
-

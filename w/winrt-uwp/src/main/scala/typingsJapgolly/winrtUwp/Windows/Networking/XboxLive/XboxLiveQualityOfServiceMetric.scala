@@ -1,81 +1,67 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.XboxLive
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait XboxLiveQualityOfServiceMetric extends js.Object
-
+sealed trait XboxLiveQualityOfServiceMetric extends StObject
 /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMetric")
 @js.native
-object XboxLiveQualityOfServiceMetric extends js.Object {
-  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
-  @js.native
-  sealed trait averageInboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+object XboxLiveQualityOfServiceMetric extends StObject {
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait averageLatencyInMilliseconds extends XboxLiveQualityOfServiceMetric
+  sealed trait averageInboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait averageOutboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+  sealed trait averageLatencyInMilliseconds
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait maxInboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+  sealed trait averageOutboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait maxLatencyInMilliseconds extends XboxLiveQualityOfServiceMetric
+  sealed trait maxInboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait maxOutboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+  sealed trait maxLatencyInMilliseconds
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait minInboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+  sealed trait maxOutboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait minLatencyInMilliseconds extends XboxLiveQualityOfServiceMetric
+  sealed trait minInboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
   /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
   @js.native
-  sealed trait minOutboundBitsPerSecond extends XboxLiveQualityOfServiceMetric
+  sealed trait minLatencyInMilliseconds
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[XboxLiveQualityOfServiceMetric with Double] = js.native
-  /* 6 */ @js.native
-  object averageInboundBitsPerSecond extends TopLevel[averageInboundBitsPerSecond with Double]
-  
-  /* 0 */ @js.native
-  object averageLatencyInMilliseconds extends TopLevel[averageLatencyInMilliseconds with Double]
-  
-  /* 3 */ @js.native
-  object averageOutboundBitsPerSecond extends TopLevel[averageOutboundBitsPerSecond with Double]
-  
-  /* 8 */ @js.native
-  object maxInboundBitsPerSecond extends TopLevel[maxInboundBitsPerSecond with Double]
-  
-  /* 2 */ @js.native
-  object maxLatencyInMilliseconds extends TopLevel[maxLatencyInMilliseconds with Double]
-  
-  /* 5 */ @js.native
-  object maxOutboundBitsPerSecond extends TopLevel[maxOutboundBitsPerSecond with Double]
-  
-  /* 7 */ @js.native
-  object minInboundBitsPerSecond extends TopLevel[minInboundBitsPerSecond with Double]
-  
-  /* 1 */ @js.native
-  object minLatencyInMilliseconds extends TopLevel[minLatencyInMilliseconds with Double]
-  
-  /* 4 */ @js.native
-  object minOutboundBitsPerSecond extends TopLevel[minOutboundBitsPerSecond with Double]
-  
+  /** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+  @js.native
+  sealed trait minOutboundBitsPerSecond
+    extends StObject
+       with XboxLiveQualityOfServiceMetric
 }
-

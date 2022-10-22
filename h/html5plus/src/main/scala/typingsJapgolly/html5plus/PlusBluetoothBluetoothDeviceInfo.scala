@@ -1,45 +1,51 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 蓝牙设备信息
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
   */
-trait PlusBluetoothBluetoothDeviceInfo extends js.Object {
+trait PlusBluetoothBluetoothDeviceInfo extends StObject {
+  
   /**
     * 蓝牙设备的信号强度
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   var RSSI: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备的广播数据段中的ManufacturerData数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var advertisData: js.UndefOr[scala.scalajs.js.typedarray.ArrayBuffer] = js.undefined
+  var advertisData: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
+  
   /**
     * 蓝牙设备的广播数据段中的ServiceUUIDs数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var advertisServiceUUIDs: js.UndefOr[js.Array[_]] = js.undefined
+  var advertisServiceUUIDs: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * 蓝牙设备的id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   var deviceId: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备的广播数据段中的LocalName数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   var localName: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备名称
     * 某些设备可能没有此字段值。
@@ -47,34 +53,51 @@ trait PlusBluetoothBluetoothDeviceInfo extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * 蓝牙设备的广播数据段中的ServiceData数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var serviceData: js.UndefOr[js.Any] = js.undefined
+  var serviceData: js.UndefOr[Any] = js.undefined
 }
-
 object PlusBluetoothBluetoothDeviceInfo {
-  @scala.inline
-  def apply(
-    RSSI: String = null,
-    advertisData: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    advertisServiceUUIDs: js.Array[_] = null,
-    deviceId: String = null,
-    localName: String = null,
-    name: String = null,
-    serviceData: js.Any = null
-  ): PlusBluetoothBluetoothDeviceInfo = {
+  
+  inline def apply(): PlusBluetoothBluetoothDeviceInfo = {
     val __obj = js.Dynamic.literal()
-    if (RSSI != null) __obj.updateDynamic("RSSI")(RSSI.asInstanceOf[js.Any])
-    if (advertisData != null) __obj.updateDynamic("advertisData")(advertisData.asInstanceOf[js.Any])
-    if (advertisServiceUUIDs != null) __obj.updateDynamic("advertisServiceUUIDs")(advertisServiceUUIDs.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
-    if (localName != null) __obj.updateDynamic("localName")(localName.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusBluetoothBluetoothDeviceInfo]
   }
+  
+  extension [Self <: PlusBluetoothBluetoothDeviceInfo](x: Self) {
+    
+    inline def setAdvertisData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "advertisData", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
+    
+    inline def setAdvertisServiceUUIDs(value: js.Array[Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    
+    inline def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)
+    
+    inline def setAdvertisServiceUUIDsVarargs(value: Any*): Self = StObject.set(x, "advertisServiceUUIDs", js.Array(value*))
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    
+    inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+    
+    inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRSSI(value: String): Self = StObject.set(x, "RSSI", value.asInstanceOf[js.Any])
+    
+    inline def setRSSIUndefined: Self = StObject.set(x, "RSSI", js.undefined)
+    
+    inline def setServiceData(value: Any): Self = StObject.set(x, "serviceData", value.asInstanceOf[js.Any])
+    
+    inline def setServiceDataUndefined: Self = StObject.set(x, "serviceData", js.undefined)
+  }
 }
-

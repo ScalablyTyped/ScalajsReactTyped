@@ -1,21 +1,16 @@
 package typingsJapgolly.coreJs
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.PropertyDescriptor
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/reflect/define-property", JSImport.Namespace)
-@js.native
-object fnReflectDefinePropertyMod
-  extends TopLevel[
-      js.Function3[
-        /* target */ js.Any, 
-        /* propertyKey */ PropertyKey, 
-        /* attributes */ PropertyDescriptor, 
-        Boolean
-      ]
-    ]
-
+object fnReflectDefinePropertyMod {
+  
+  /* was `typeof core.Reflect.defineProperty` */
+  inline def apply(target: Any, propertyKey: PropertyKey, attributes: js.PropertyDescriptor): Boolean = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], propertyKey.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("core-js/fn/reflect/define-property", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+}

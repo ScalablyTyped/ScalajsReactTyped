@@ -1,23 +1,27 @@
 package typingsJapgolly.limeJs.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMessageChannel extends js.Object {
-  def onMessage(message: Message): js.Any
+trait IMessageChannel extends StObject {
+  
+  def onMessage(message: Message): Any
+  
   def sendMessage(message: Message): Unit
 }
-
 object IMessageChannel {
-  @scala.inline
-  def apply(onMessage: Message => CallbackTo[js.Any], sendMessage: Message => Callback): IMessageChannel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onMessage")(js.Any.fromFunction1((t0: typingsJapgolly.limeJs.mod.Message) => onMessage(t0).runNow()))
-    __obj.updateDynamic("sendMessage")(js.Any.fromFunction1((t0: typingsJapgolly.limeJs.mod.Message) => sendMessage(t0).runNow()))
+  
+  inline def apply(onMessage: Message => Any, sendMessage: Message => Callback): IMessageChannel = {
+    val __obj = js.Dynamic.literal(onMessage = js.Any.fromFunction1(onMessage), sendMessage = js.Any.fromFunction1((t0: Message) => sendMessage(t0).runNow()))
     __obj.asInstanceOf[IMessageChannel]
   }
+  
+  extension [Self <: IMessageChannel](x: Self) {
+    
+    inline def setOnMessage(value: Message => Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    
+    inline def setSendMessage(value: Message => Callback): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1((t0: Message) => value(t0).runNow()))
+  }
 }
-

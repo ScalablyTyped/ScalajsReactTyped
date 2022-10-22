@@ -1,42 +1,35 @@
 package typingsJapgolly.officeJs.Office.MailboxEnums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ItemType extends js.Object
-
+sealed trait ItemType extends StObject
 /**
   * Specifies an item's type.
   *
   * @remarks
-  * 
-  * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
+  *
+  * **{@link https://learn.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
 @JSGlobal("Office.MailboxEnums.ItemType")
 @js.native
-object ItemType extends js.Object {
+object ItemType extends StObject {
+  
   /**
     * An appointment item.
     */
   @js.native
-  sealed trait Appointment extends ItemType
+  sealed trait Appointment
+    extends StObject
+       with ItemType
   
   /**
     * An email, meeting request, meeting response, or meeting cancellation.
     */
   @js.native
-  sealed trait Message extends ItemType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ItemType with String] = js.native
-  /* "appointment" */ @js.native
-  object Appointment extends TopLevel[Appointment with String]
-  
-  /* "message" */ @js.native
-  object Message extends TopLevel[Message with String]
-  
+  sealed trait Message
+    extends StObject
+       with ItemType
 }
-

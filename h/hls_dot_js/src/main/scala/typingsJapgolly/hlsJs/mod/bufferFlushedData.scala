@@ -1,20 +1,23 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait bufferFlushedData extends js.Object {
-  var endOffset: Double
-  var startOffset: Double
-}
-
-object bufferFlushedData {
-  @scala.inline
-  def apply(endOffset: Double, startOffset: Double): bufferFlushedData = {
-    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
+trait BufferFlushedData extends StObject {
   
-    __obj.asInstanceOf[bufferFlushedData]
+  var `type`: SourceBufferName
+}
+object BufferFlushedData {
+  
+  inline def apply(`type`: SourceBufferName): BufferFlushedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BufferFlushedData]
+  }
+  
+  extension [Self <: BufferFlushedData](x: Self) {
+    
+    inline def setType(value: SourceBufferName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }
-

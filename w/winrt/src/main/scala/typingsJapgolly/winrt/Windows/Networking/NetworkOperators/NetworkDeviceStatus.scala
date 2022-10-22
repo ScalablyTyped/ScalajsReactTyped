@@ -1,65 +1,52 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkDeviceStatus extends js.Object
-
+sealed trait NetworkDeviceStatus extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkDeviceStatus")
 @js.native
-object NetworkDeviceStatus extends js.Object {
-  @js.native
-  sealed trait accountNotActivated extends NetworkDeviceStatus
+object NetworkDeviceStatus extends StObject {
   
   @js.native
-  sealed trait badSim extends NetworkDeviceStatus
+  sealed trait accountNotActivated
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceBlocked extends NetworkDeviceStatus
+  sealed trait badSim
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceHardwareFailure extends NetworkDeviceStatus
+  sealed trait deviceBlocked
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceLocked extends NetworkDeviceStatus
+  sealed trait deviceHardwareFailure
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceNotReady extends NetworkDeviceStatus
+  sealed trait deviceLocked
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait deviceReady extends NetworkDeviceStatus
+  sealed trait deviceNotReady
+    extends StObject
+       with NetworkDeviceStatus
   
   @js.native
-  sealed trait simNotInserted extends NetworkDeviceStatus
+  sealed trait deviceReady
+    extends StObject
+       with NetworkDeviceStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkDeviceStatus with Double] = js.native
-  /* 5 */ @js.native
-  object accountNotActivated extends TopLevel[accountNotActivated with Double]
-  
-  /* 3 */ @js.native
-  object badSim extends TopLevel[badSim with Double]
-  
-  /* 7 */ @js.native
-  object deviceBlocked extends TopLevel[deviceBlocked with Double]
-  
-  /* 4 */ @js.native
-  object deviceHardwareFailure extends TopLevel[deviceHardwareFailure with Double]
-  
-  /* 6 */ @js.native
-  object deviceLocked extends TopLevel[deviceLocked with Double]
-  
-  /* 0 */ @js.native
-  object deviceNotReady extends TopLevel[deviceNotReady with Double]
-  
-  /* 1 */ @js.native
-  object deviceReady extends TopLevel[deviceReady with Double]
-  
-  /* 2 */ @js.native
-  object simNotInserted extends TopLevel[simNotInserted with Double]
-  
+  @js.native
+  sealed trait simNotInserted
+    extends StObject
+       with NetworkDeviceStatus
 }
-

@@ -10,10 +10,10 @@ Javascript utility for calculating deep difference, capturing changes, and apply
 | ------------------ | :-------------: |
 | Full name          | deep-diff |
 | Keywords           | diff, difference, compare, change-tracking |
-| # releases         | 6 |
-| # dependents       | 458 |
-| # downloads        | 38721069 |
-| # stars            | 47 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6204867.333333333 |
+| # stars            | 2788.0 |
 
 ## Links
 - [Homepage](https://github.com/flitbit/diff#readme)

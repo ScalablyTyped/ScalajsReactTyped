@@ -4,16 +4,16 @@
 Typings are for version 1.4
 
 ## Library description:
-Javascript interface for TDLib (telegram library)
+JavaScript interface for TDLib (Telegram library)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tdweb |
 | Keywords           | telegram |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 2434 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 522.3333333333334 |
+| # stars            | 4749.0 |
 
 ## Links
 - [Homepage](https://github.com/tdlib/td#readme)

@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetRootNodeOptions extends js.Object {
+trait GetRootNodeOptions extends StObject {
+  
+  /* standard dom */
   var composed: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object GetRootNodeOptions {
-  @scala.inline
-  def apply(composed: js.UndefOr[scala.Boolean] = js.undefined): GetRootNodeOptions = {
+  
+  inline def apply(): GetRootNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRootNodeOptions]
   }
+  
+  extension [Self <: GetRootNodeOptions](x: Self) {
+    
+    inline def setComposed(value: scala.Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+    
+    inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+  }
 }
-

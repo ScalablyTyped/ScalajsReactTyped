@@ -1,20 +1,20 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/differenceInBusinessDays", JSImport.Namespace)
-@js.native
-object differenceInBusinessDaysMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(dateLeft: Double, dateRight: Double): Double = js.native
-    def apply(dateLeft: Double, dateRight: Date): Double = js.native
-    def apply(dateLeft: Date, dateRight: Double): Double = js.native
-    def apply(dateLeft: Date, dateRight: Date): Double = js.native
-  }
+object differenceInBusinessDaysMod {
   
+  object default {
+    
+    inline def apply(dateLeft: js.Date, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/differenceInBusinessDays", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

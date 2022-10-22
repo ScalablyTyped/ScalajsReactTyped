@@ -1,24 +1,35 @@
 package typingsJapgolly.axeCore.mod
 
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextObject extends js.Object {
-  var exclude: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
-  var include: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
+trait ContextObject extends StObject {
+  
+  var exclude: js.UndefOr[Node | BaseSelector | (js.Array[Node | BaseSelector | js.Array[BaseSelector]])] = js.undefined
+  
+  var include: js.UndefOr[Node | BaseSelector | (js.Array[Node | BaseSelector | js.Array[BaseSelector]])] = js.undefined
 }
-
 object ContextObject {
-  @scala.inline
-  def apply(
-    exclude: js.Array[js.Array[String] | String] = null,
-    include: js.Array[js.Array[String] | String] = null
-  ): ContextObject = {
+  
+  inline def apply(): ContextObject = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextObject]
   }
+  
+  extension [Self <: ContextObject](x: Self) {
+    
+    inline def setExclude(value: Node | BaseSelector | (js.Array[Node | BaseSelector | js.Array[BaseSelector]])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setExcludeVarargs(value: (Node | BaseSelector | js.Array[BaseSelector])*): Self = StObject.set(x, "exclude", js.Array(value*))
+    
+    inline def setInclude(value: Node | BaseSelector | (js.Array[Node | BaseSelector | js.Array[BaseSelector]])): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setIncludeVarargs(value: (Node | BaseSelector | js.Array[BaseSelector])*): Self = StObject.set(x, "include", js.Array(value*))
+  }
 }
-

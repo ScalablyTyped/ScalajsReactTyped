@@ -1,41 +1,118 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionDropdownModel")
 @js.native
-class QuestionDropdownModel protected () extends QuestionSelectBase {
+open class QuestionDropdownModel protected () extends QuestionSelectBase {
   def this(name: String) = this()
-  /**
-    * Use this and choicesMax property to automatically add choices. For example choicesMin = 1 and choicesMax = 10 will generate ten additional choices from 1 to 10.
-    * @see choicesMin
-    * @see choicesStep
+  
+  /*
+    * Specifies whether to display a button that clears the selected value.
     */
-  var choicesMax: Double = js.native
-  /**
-    * Use this and choicesMax property to automatically add choices. For example choicesMin = 1 and choicesMax = 10 will generate ten additional choices from 1 to 10.
-    * @see choicesMax
-    * @see choicesStep
+  var allowClear: Boolean = js.native
+  
+  /*
+    * An [autocomplete](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete) attribute value for the underlying `<input>` element.
     */
-  var choicesMin: Double = js.native
-  /**
-    * The default value is 1. It tells the value of the iterator between choicesMin and choicesMax properties.
-    * If choicesMin = 10, choicesMax = 30 and choicesStep = 10 then you will have only three additional choices: [10, 20, 30].
-    * @see choicesMin
-    * @see choicesMax
+  def autoComplete: String = js.native
+  def autoComplete_=(`val`: String): Unit = js.native
+  
+  /*
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
     */
-  var choicesStep: Double = js.native
-  val locOptionsCaption: LocalizableString = js.native
-  /**
-    * Use this property to set the options caption different from the default value. The default value is taken from localization strings.
+  def choicesMax: Double = js.native
+  def choicesMax_=(`val`: Double): Unit = js.native
+  
+  /*
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
     */
-  var optionsCaption: String = js.native
-  val selectedItem: ItemValue = js.native
-  /**
-    * This flag controls whether to show options caption item ('Choose...').
+  def choicesMin: Double = js.native
+  def choicesMin_=(`val`: Double): Unit = js.native
+  
+  /*
+    * Use the `choicesMin`, `choicesMax`, and `choicesStep` properties to generate choice items automatically. For example, the configuration below generates three choice items: [10, 20, 30].
+    * 
+    * ```js
+    * "choicesMin": 10,
+    * "choicesMax": 30
+    * "choicesStep": 10
+    * ```
+    * 
+    * The default value of the `choicesStep` property is 1.
     */
-  var showOptionsCaption: Boolean = js.native
+  def choicesStep: Double = js.native
+  def choicesStep_=(`val`: Double): Unit = js.native
+  
+  def cleanCaption: String = js.native
+  def cleanCaption_=(`val`: String): Unit = js.native
+  
+  var dropdownListModel: DropdownListModel = js.native
+  
+  def getControlClass(): String = js.native
+  
+  def getInputId(): String = js.native
+  
+  def inputFieldComponentName: String = js.native
+  
+  var inputHasValue: Boolean = js.native
+  
+  def locCleanCaption: LocalizableString = js.native
+  
+  def locPlaceholder: LocalizableString = js.native
+  
+  var minMaxChoices: Any = js.native
+  
+  def onClick(e: Any): Unit = js.native
+  
+  def onKeyUp(event: Any): Unit = js.native
+  
+  var onOpened: EventBase[QuestionDropdownModel] = js.native
+  
+  def onOpenedCallBack(): Unit = js.native
+  
+  def optionsCaption: String = js.native
+  def optionsCaption_=(`val`: String): Unit = js.native
+  
+  /*
+    * A placeholder for the input field.
+    */
+  def placeholder: String = js.native
+  def placeholder_=(`val`: String): Unit = js.native
+  
+  def popupModel: Any = js.native
+  
+  var readOnlyText: String = js.native
+  
+  /*
+    * Specifies whether users can enter a value into the input field to filter the drop-down list.
+    */
+  var searchEnabled: Boolean = js.native
+  
+  def selectedItem: ItemValue = js.native
+  
+  def selectedItemLocText: LocalizableString = js.native
+  
+  def showInputFieldComponent: Boolean = js.native
+  
+  def showOptionsCaption: Boolean = js.native
+  def showOptionsCaption_=(`val`: Boolean): Unit = js.native
+  
+  def showSelectedItemLocText: Boolean = js.native
+  
+  def updateReadOnlyText(): Unit = js.native
 }
-

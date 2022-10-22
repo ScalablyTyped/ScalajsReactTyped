@@ -1,8 +1,8 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.typescript.mod.SyntaxKind.LessThanToken
@@ -12,5 +12,4 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.typescript.mod.SyntaxKind.InstanceOfKeyword
   - typingsJapgolly.typescript.mod.SyntaxKind.InKeyword
 */
-trait RelationalOperator extends js.Object
-
+trait RelationalOperator extends StObject

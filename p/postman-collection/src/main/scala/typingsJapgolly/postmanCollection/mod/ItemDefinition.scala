@@ -1,35 +1,42 @@
 package typingsJapgolly.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemDefinition extends PropertyDefinition {
+trait ItemDefinition
+  extends StObject
+     with PropertyDefinition {
+  
   var events: js.UndefOr[js.Array[EventDefinition]] = js.undefined
+  
   var request: js.UndefOr[RequestDefinition] = js.undefined
-  var responses: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
+  
+  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
 }
-
 object ItemDefinition {
-  @scala.inline
-  def apply(
-    description: String | DescriptionDefinition = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    events: js.Array[EventDefinition] = null,
-    id: String = null,
-    name: String = null,
-    request: RequestDefinition = null,
-    responses: js.Array[ResponseDefinition] = null
-  ): ItemDefinition = {
+  
+  inline def apply(): ItemDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
-    if (responses != null) __obj.updateDynamic("responses")(responses.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemDefinition]
   }
+  
+  extension [Self <: ItemDefinition](x: Self) {
+    
+    inline def setEvents(value: js.Array[EventDefinition]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setEventsVarargs(value: EventDefinition*): Self = StObject.set(x, "events", js.Array(value*))
+    
+    inline def setRequest(value: RequestDefinition): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    
+    inline def setResponse(value: js.Array[ResponseDefinition]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setResponseVarargs(value: ResponseDefinition*): Self = StObject.set(x, "response", js.Array(value*))
+  }
 }
-

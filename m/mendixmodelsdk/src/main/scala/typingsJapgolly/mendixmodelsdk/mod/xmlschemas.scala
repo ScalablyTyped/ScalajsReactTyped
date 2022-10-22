@@ -1,94 +1,79 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.baseModelMod.IModel
-import typingsJapgolly.mendixmodelsdk.jsonstructuresMod.jsonstructures.JsonStructure
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typingsJapgolly.mendixmodelsdk.webservicesMod.webservices.WsdlDescription
+import typingsJapgolly.mendixmodelsdk.srcGenBaseModelMod.IModel
+import typingsJapgolly.mendixmodelsdk.srcGenJsonstructuresMod.jsonstructures.JsonStructure
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.webservices.WsdlDescription
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "xmlschemas")
-@js.native
-object xmlschemas extends js.Object {
+object xmlschemas {
+  
+  /* note: abstract class */ @JSImport("mendixmodelsdk", "xmlschemas.MxSchema")
   @js.native
-  abstract class MxSchema protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.xmlschemas.MxSchema {
+  open class MxSchema protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.xmlschemas.MxSchema {
     def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
       container: IFolderBase
     ) = this()
+  }
+  object MxSchema {
+    
+    @JSImport("mendixmodelsdk", "xmlschemas.MxSchema")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.MxSchema.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.MxSchema.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
     * In version 6.6.0: introduced
     */
+  @JSImport("mendixmodelsdk", "xmlschemas.XmlElement")
   @js.native
-  class XmlElement protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlElement {
+  open class XmlElement protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.xmlschemas.XmlElement {
     def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
-      unit: typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit,
-      container: typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
+      unit: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
     ) = this()
   }
-  
-  @js.native
-  class XmlPrimitiveType ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlPrimitiveType
-  
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
-    */
-  @js.native
-  class XmlSchema protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlSchema {
-    def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
-      structureTypeName: String,
-      id: String,
-      isPartial: Boolean,
-      container: IFolderBase
-    ) = this()
-  }
-  
-  @js.native
-  class XmlSchemaEntry protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.xmlschemas.XmlSchemaEntry {
-    def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
-      structureTypeName: String,
-      id: String,
-      isPartial: Boolean,
-      unit: typingsJapgolly.mendixmodelsdk.internalMod.ModelUnit,
-      container: typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement
-    ) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object MxSchema extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.xmlschemasMod.StructureVersionInfo = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object XmlElement extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.xmlschemasMod.StructureVersionInfo = js.native
+  object XmlElement {
+    
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlElement")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates and returns a new XmlElement instance in the SDK and on the server.
       * Expects one argument: the IModel object the instance will "live on".
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
-    def create(model: IModel): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    /* static member */
+    inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement]
+    
     /**
       * Creates and returns a new XmlElement instance in the SDK and on the server.
       * The new XmlElement will be automatically stored in the 'children' property
@@ -97,7 +82,9 @@ object xmlschemas extends js.Object {
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  6.6.0 and higher
       */
-    def createInElementUnderChildren(container: typingsJapgolly.mendixmodelsdk.mappingsMod.mappings.Element): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    /* static member */
+    inline def createInElementUnderChildren(container: typingsJapgolly.mendixmodelsdk.srcGenMappingsMod.mappings.Element): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement]
+    
     /**
       * Creates and returns a new XmlElement instance in the SDK and on the server.
       * The new XmlElement will be automatically stored in the 'elements' property
@@ -106,62 +93,202 @@ object xmlschemas extends js.Object {
       * Warning! Can only be used on models with the following Mendix meta model versions:
       *  6.6.0 and higher
       */
-    def createInJsonStructureUnderElements(container: JsonStructure): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement = js.native
+    /* static member */
+    inline def createInJsonStructureUnderElements(container: JsonStructure): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlElement]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlElement.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlElement.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
+  @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType")
   @js.native
-  object XmlPrimitiveType extends js.Object {
-    var AnyType: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Binary: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Boolean: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Date: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var DateTime: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Decimal: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Float: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Integer: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Long: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var String: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Time: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
-    var Unknown: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+  open class XmlPrimitiveType protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.xmlschemas.XmlPrimitiveType {
+    def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
+  }
+  object XmlPrimitiveType {
+    
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.AnyType")
+    @js.native
+    def AnyType: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def AnyType_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnyType")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Binary")
+    @js.native
+    def Binary: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Binary_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Binary")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Boolean")
+    @js.native
+    def Boolean: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Boolean_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Boolean")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Date")
+    @js.native
+    def Date: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.DateTime")
+    @js.native
+    def DateTime: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def DateTime_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DateTime")(x.asInstanceOf[js.Any])
+    
+    inline def Date_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Date")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Decimal")
+    @js.native
+    def Decimal: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Decimal_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Decimal")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Float")
+    @js.native
+    def Float: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Float_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Float")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Integer")
+    @js.native
+    def Integer: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Integer_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Integer")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Long")
+    @js.native
+    def Long: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Long_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Long")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.String")
+    @js.native
+    def String: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def String_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("String")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Time")
+    @js.native
+    def Time: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Time_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Time")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlPrimitiveType.Unknown")
+    @js.native
+    def Unknown: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType = js.native
+    inline def Unknown_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlPrimitiveType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Unknown")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
+  /**
+    * See: {@link https://docs.mendix.com/refguide/xml-schemas relevant section in reference guide}
+    */
+  @JSImport("mendixmodelsdk", "xmlschemas.XmlSchema")
   @js.native
-  object XmlSchema extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.xmlschemasMod.StructureVersionInfo = js.native
+  open class XmlSchema protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.xmlschemas.XmlSchema {
+    def this(
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      container: IFolderBase
+    ) = this()
+  }
+  object XmlSchema {
+    
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchema")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new XmlSchema unit in the SDK and on the server.
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
-    def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema = js.native
+    /* static member */
+    inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchema]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchema.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchema.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
+  @JSImport("mendixmodelsdk", "xmlschemas.XmlSchemaEntry")
   @js.native
-  object XmlSchemaEntry extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.xmlschemasMod.StructureVersionInfo = js.native
+  open class XmlSchemaEntry protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.xmlschemas.XmlSchemaEntry {
+    def this(
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
+      structureTypeName: String,
+      id: String,
+      isPartial: Boolean,
+      unit: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.ModelUnit[IAbstractModel],
+      container: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement[IAbstractModel, Container]
+    ) = this()
+  }
+  object XmlSchemaEntry {
+    
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchemaEntry")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
       * Expects one argument: the IModel object the instance will "live on".
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
-    def create(model: IModel): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    /* static member */
+    inline def create(model: IModel): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry]
+    
     /**
       * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
       * The new XmlSchemaEntry will be automatically stored in the 'schemaEntries' property
       * of the parent webservices.WsdlDescription element passed as argument.
       */
-    def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    /* static member */
+    inline def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWsdlDescriptionUnderSchemaEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry]
+    
     /**
       * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
       * The new XmlSchemaEntry will be automatically stored in the 'entries' property
       * of the parent XmlSchema element passed as argument.
       */
-    def createInXmlSchemaUnderEntries(container: typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchema): typingsJapgolly.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry = js.native
+    /* static member */
+    inline def createInXmlSchemaUnderEntries(container: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchema): typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInXmlSchemaUnderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.xmlschemas.XmlSchemaEntry]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchemaEntry.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "xmlschemas.XmlSchemaEntry.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenXmlschemasMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
-  
 }
-

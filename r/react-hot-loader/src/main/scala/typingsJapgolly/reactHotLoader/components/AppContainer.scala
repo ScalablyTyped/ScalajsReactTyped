@@ -1,47 +1,31 @@
 package typingsJapgolly.reactHotLoader.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.reactHotLoader.mod.AppChildren
 import typingsJapgolly.reactHotLoader.mod.AppContainerProps
 import typingsJapgolly.reactHotLoader.mod.ErrorReporterProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AppContainer {
-  def apply(
-    errorBoundary: js.UndefOr[Boolean] = js.undefined,
-    errorReporter: ComponentType[ErrorReporterProps] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AppContainerProps with AppChildren, 
-    typingsJapgolly.reactHotLoader.mod.AppContainer, 
-    Unit, 
-    AppContainerProps with AppChildren
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(errorBoundary)) __obj.updateDynamic("errorBoundary")(errorBoundary.asInstanceOf[js.Any])
-    if (errorReporter != null) __obj.updateDynamic("errorReporter")(errorReporter.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactHotLoader.mod.AppContainerProps with typingsJapgolly.reactHotLoader.mod.AppChildren, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactHotLoader.mod.AppContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactHotLoader.mod.AppContainerProps with typingsJapgolly.reactHotLoader.mod.AppChildren])(children: _*)
-  }
   @JSImport("react-hot-loader", "AppContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactHotLoader.mod.AppContainer] {
+    
+    inline def errorBoundary(value: Boolean): this.type = set("errorBoundary", value.asInstanceOf[js.Any])
+    
+    inline def errorReporter(value: ComponentType[ErrorReporterProps]): this.type = set("errorReporter", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: AppContainer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AppContainerProps & AppChildren): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

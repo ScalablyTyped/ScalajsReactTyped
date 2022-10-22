@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 0: No repeat\
@@ -14,20 +14,16 @@ import scala.scalajs.js.annotation._
   * {@link https://developers.deezer.com/sdk/javascript/player_object | The player properties}
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.deezerSdk.deezerSdkNumbers.`0`
-  - typingsJapgolly.deezerSdk.deezerSdkNumbers.`1`
-  - typingsJapgolly.deezerSdk.deezerSdkNumbers.`2`
+  - typingsJapgolly.deezerSdk.deezerSdkInts.`0`
+  - typingsJapgolly.deezerSdk.deezerSdkInts.`1`
+  - typingsJapgolly.deezerSdk.deezerSdkInts.`2`
 */
-trait RepeatMode extends js.Object
-
+trait RepeatMode extends StObject
 object RepeatMode {
-  @scala.inline
-  def `0`: typingsJapgolly.deezerSdk.deezerSdkNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.deezerSdk.deezerSdkNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.deezerSdk.deezerSdkNumbers.`2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.deezerSdk.deezerSdkInts.`0` = 0.asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkInts.`0`]
+  
+  inline def `1`: typingsJapgolly.deezerSdk.deezerSdkInts.`1` = 1.asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkInts.`1`]
+  
+  inline def `2`: typingsJapgolly.deezerSdk.deezerSdkInts.`2` = 2.asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkInts.`2`]
 }
-

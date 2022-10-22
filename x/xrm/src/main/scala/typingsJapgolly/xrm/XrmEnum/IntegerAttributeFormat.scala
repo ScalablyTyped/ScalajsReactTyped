@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.XrmEnum
 
 import typingsJapgolly.xrm.xrmStrings.duration
 import typingsJapgolly.xrm.xrmStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Integer attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.NumberAttribute NumberAttribute}.
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.duration
   - typingsJapgolly.xrm.xrmStrings.none
 */
-trait IntegerAttributeFormat extends js.Object
-
+trait IntegerAttributeFormat extends StObject
 object IntegerAttributeFormat {
-  @scala.inline
-  def Duration: duration = this.cast("duration")
-  @scala.inline
-  def None: none = this.cast("none")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Duration: duration = "duration".asInstanceOf[duration]
+  
+  inline def None: none = "none".asInstanceOf[none]
 }
-

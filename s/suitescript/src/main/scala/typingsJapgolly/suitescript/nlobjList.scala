@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjList used for scriptable list page.
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjList
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
+  
   /**
     * add a button (nlobjButton) to the footer of this page.
     *
@@ -31,6 +33,7 @@ Instantiable0[js.Any] {
     * @param script
     */
   def addButton(name: String, label: String, script: String): Unit = js.native
+  
   /**
     * add a column (nlobjColumn) to this list and return it.
     *
@@ -49,6 +52,7 @@ Instantiable0[js.Any] {
     */
   def addColumn(name: String, `type`: String, label: String): js.Function0[Unit] = js.native
   def addColumn(name: String, `type`: String, label: String, align: String): js.Function0[Unit] = js.native
+  
   /**
     * add an Edit column (nlobjColumn) to the left of the column specified.
     *
@@ -65,6 +69,7 @@ Instantiable0[js.Any] {
     */
   def addEditColumn(column: js.Function0[Unit], showView: Boolean): js.Function0[Unit] = js.native
   def addEditColumn(column: js.Function0[Unit], showView: Boolean, showHref: String): js.Function0[Unit] = js.native
+  
   /**
     * add a navigation cross-link to the page.
     *
@@ -77,6 +82,7 @@ Instantiable0[js.Any] {
     * @param url
     */
   def addPageLink(`type`: String, title: String, url: String): Unit = js.native
+  
   /**
     * add a row (Array of name-value pairs or nlobjSearchResult) to this portlet.
     *
@@ -84,7 +90,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param row
     */
-  def addRow(row: js.Any): Unit = js.native
+  def addRow(row: Any): Unit = js.native
+  
   /**
     * add multiple rows (Array of nlobjSearchResults or name-value pair Arrays) to this portlet.
     *
@@ -92,7 +99,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param rows
     */
-  def addRows(rows: js.Any): Unit = js.native
+  def addRows(rows: Any): Unit = js.native
+  
   /**
     * set the Client SuiteScript used for this page.
     *
@@ -100,7 +108,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @param script
     */
-  def setScript(script: js.Any): Unit = js.native
+  def setScript(script: Any): Unit = js.native
+  
   /**
     * set the global style for this list: grid|report|plain|normal.
     *
@@ -109,6 +118,7 @@ Instantiable0[js.Any] {
     * @param style
     */
   def setStyle(style: String): Unit = js.native
+  
   /**
     * set the page title.
     *
@@ -118,4 +128,3 @@ Instantiable0[js.Any] {
     */
   def setTitle(title: String): Unit = js.native
 }
-

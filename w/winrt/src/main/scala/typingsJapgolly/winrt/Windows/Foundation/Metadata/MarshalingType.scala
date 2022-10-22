@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MarshalingType extends js.Object
-
+sealed trait MarshalingType extends StObject
 @JSGlobal("Windows.Foundation.Metadata.MarshalingType")
 @js.native
-object MarshalingType extends js.Object {
-  @js.native
-  sealed trait agile extends MarshalingType
+object MarshalingType extends StObject {
   
   @js.native
-  sealed trait invalidMarshaling extends MarshalingType
+  sealed trait agile
+    extends StObject
+       with MarshalingType
   
   @js.native
-  sealed trait none extends MarshalingType
+  sealed trait invalidMarshaling
+    extends StObject
+       with MarshalingType
   
   @js.native
-  sealed trait standard extends MarshalingType
+  sealed trait none
+    extends StObject
+       with MarshalingType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MarshalingType with Double] = js.native
-  /* 1 */ @js.native
-  object agile extends TopLevel[agile with Double]
-  
-  /* 3 */ @js.native
-  object invalidMarshaling extends TopLevel[invalidMarshaling with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object standard extends TopLevel[standard with Double]
-  
+  @js.native
+  sealed trait standard
+    extends StObject
+       with MarshalingType
 }
-

@@ -1,17 +1,21 @@
 package typingsJapgolly.storybookAddonViewport
 
-import typingsJapgolly.storybookAddonViewport.storybookAddonViewportStrings.responsive
-import typingsJapgolly.storybookAddonViewport.viewportMod.ViewportMap
+import typingsJapgolly.storybookAddonViewport.distTs3Dot9ModelsViewportMod.ViewportMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-viewport", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val DEFAULT_VIEWPORT: responsive = js.native
+object mod {
+  
+  @JSImport("@storybook/addon-viewport", "DEFAULT_VIEWPORT")
+  @js.native
+  val DEFAULT_VIEWPORT: /* "responsive" */ String = js.native
+  
+  @JSImport("@storybook/addon-viewport", "INITIAL_VIEWPORTS")
+  @js.native
   val INITIAL_VIEWPORTS: ViewportMap = js.native
+  
+  @JSImport("@storybook/addon-viewport", "MINIMAL_VIEWPORTS")
+  @js.native
   val MINIMAL_VIEWPORTS: ViewportMap = js.native
-  def configureViewport(): Unit = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for agent-base
 
-Typings are for version 4.2
+Typings are for version 6.0.2
 
 ## Library description:
 Turn a function into an `http.Agent` instance
@@ -10,10 +10,10 @@ Turn a function into an `http.Agent` instance
 | ------------------ | :-------------: |
 | Full name          | agent-base |
 | Keywords           | http, agent, base, barebones, https |
-| # releases         | 7 |
-| # dependents       | 31 |
-| # downloads        | 318961324 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2811834333333333E8 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/TooTallNate/node-agent-base#readme)
@@ -24,7 +24,7 @@ Turn a function into an `http.Agent` instance
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

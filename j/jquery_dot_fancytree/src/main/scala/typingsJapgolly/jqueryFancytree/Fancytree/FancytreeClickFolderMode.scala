@@ -1,41 +1,32 @@
 package typingsJapgolly.jqueryFancytree.Fancytree
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FancytreeClickFolderMode extends js.Object
-
+sealed trait FancytreeClickFolderMode extends StObject
 @JSGlobal("Fancytree.FancytreeClickFolderMode")
 @js.native
-object FancytreeClickFolderMode extends js.Object {
-  @js.native
-  sealed trait activate extends FancytreeClickFolderMode
+object FancytreeClickFolderMode extends StObject {
   
   @js.native
-  sealed trait activate_and_expand extends FancytreeClickFolderMode
+  sealed trait activate
+    extends StObject
+       with FancytreeClickFolderMode
   
   @js.native
-  sealed trait activate_dblclick_expands extends FancytreeClickFolderMode
+  sealed trait activate_and_expand
+    extends StObject
+       with FancytreeClickFolderMode
   
   @js.native
-  sealed trait expand extends FancytreeClickFolderMode
+  sealed trait activate_dblclick_expands
+    extends StObject
+       with FancytreeClickFolderMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FancytreeClickFolderMode with Double] = js.native
-  /* 1 */ @js.native
-  object activate extends TopLevel[activate with Double]
-  
-  /* 3 */ @js.native
-  object activate_and_expand extends TopLevel[activate_and_expand with Double]
-  
-  /* 4 */ @js.native
-  object activate_dblclick_expands extends TopLevel[activate_dblclick_expands with Double]
-  
-  /* 2 */ @js.native
-  object expand extends TopLevel[expand with Double]
-  
+  @js.native
+  sealed trait expand
+    extends StObject
+       with FancytreeClickFolderMode
 }
-

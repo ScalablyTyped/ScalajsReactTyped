@@ -1,21 +1,17 @@
 package typingsJapgolly.node.childProcessMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.node.nodeStrings.json
   - typingsJapgolly.node.nodeStrings.advanced
 */
-trait SerializationType extends js.Object
-
+trait SerializationType extends StObject
 object SerializationType {
-  @scala.inline
-  def advanced: typingsJapgolly.node.nodeStrings.advanced = this.cast("advanced")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def json: typingsJapgolly.node.nodeStrings.json = this.cast("json")
+  
+  inline def advanced: typingsJapgolly.node.nodeStrings.advanced = "advanced".asInstanceOf[typingsJapgolly.node.nodeStrings.advanced]
+  
+  inline def json: typingsJapgolly.node.nodeStrings.json = "json".asInstanceOf[typingsJapgolly.node.nodeStrings.json]
 }
-

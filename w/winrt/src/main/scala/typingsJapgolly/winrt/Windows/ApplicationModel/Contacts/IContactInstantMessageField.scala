@@ -1,20 +1,25 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Contacts
 
 import typingsJapgolly.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IContactInstantMessageField extends IContactField {
+trait IContactInstantMessageField
+  extends StObject
+     with IContactField {
+  
   var displayText: String
+  
   var launchUri: Uri
+  
   var service: String
+  
   var userName: String
 }
-
 object IContactInstantMessageField {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     category: ContactFieldCategory,
     displayText: String,
     launchUri: Uri,
@@ -28,5 +33,15 @@ object IContactInstantMessageField {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContactInstantMessageField]
   }
+  
+  extension [Self <: IContactInstantMessageField](x: Self) {
+    
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    
+    inline def setLaunchUri(value: Uri): Self = StObject.set(x, "launchUri", value.asInstanceOf[js.Any])
+    
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+  }
 }
-

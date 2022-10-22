@@ -1,7 +1,7 @@
 
 # Scala.js typings for browser-pack
 
-Typings are for version v6.0.1
+Typings are for version 6.1
 
 ## Library description:
 pack node-style source files from a json stream into a browser bundle
@@ -10,10 +10,10 @@ pack node-style source files from a json stream into a browser bundle
 | ------------------ | :-------------: |
 | Full name          | browser-pack |
 | Keywords           | browser, bundle, commonjs, commonj-esque, exports, module.exports, require |
-| # releases         | 4 |
-| # dependents       | 83 |
-| # downloads        | 27448743 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 5625035.0 |
+| # stars            | 168.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/browser-pack)

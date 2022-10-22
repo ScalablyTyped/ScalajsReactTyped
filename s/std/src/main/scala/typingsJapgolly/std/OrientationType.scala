@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.`landscape-primary`
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.`portrait-primary`
   - typingsJapgolly.std.stdStrings.`portrait-secondary`
 */
-trait OrientationType extends js.Object
-
+trait OrientationType extends StObject
 object OrientationType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `landscape-primary`: typingsJapgolly.std.stdStrings.`landscape-primary` = this.cast("landscape-primary")
-  @scala.inline
-  def `landscape-secondary`: typingsJapgolly.std.stdStrings.`landscape-secondary` = this.cast("landscape-secondary")
-  @scala.inline
-  def `portrait-primary`: typingsJapgolly.std.stdStrings.`portrait-primary` = this.cast("portrait-primary")
-  @scala.inline
-  def `portrait-secondary`: typingsJapgolly.std.stdStrings.`portrait-secondary` = this.cast("portrait-secondary")
+  
+  inline def `landscape-primary`: typingsJapgolly.std.stdStrings.`landscape-primary` = "landscape-primary".asInstanceOf[typingsJapgolly.std.stdStrings.`landscape-primary`]
+  
+  inline def `landscape-secondary`: typingsJapgolly.std.stdStrings.`landscape-secondary` = "landscape-secondary".asInstanceOf[typingsJapgolly.std.stdStrings.`landscape-secondary`]
+  
+  inline def `portrait-primary`: typingsJapgolly.std.stdStrings.`portrait-primary` = "portrait-primary".asInstanceOf[typingsJapgolly.std.stdStrings.`portrait-primary`]
+  
+  inline def `portrait-secondary`: typingsJapgolly.std.stdStrings.`portrait-secondary` = "portrait-secondary".asInstanceOf[typingsJapgolly.std.stdStrings.`portrait-secondary`]
 }
-

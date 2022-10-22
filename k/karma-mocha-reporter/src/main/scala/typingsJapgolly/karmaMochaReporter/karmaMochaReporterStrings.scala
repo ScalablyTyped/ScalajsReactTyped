@@ -1,62 +1,71 @@
 package typingsJapgolly.karmaMochaReporter
 
-import typingsJapgolly.karmaMochaReporter.mod.OutputOptions
-import typingsJapgolly.karmaMochaReporter.mod.ReporterColor
-import typingsJapgolly.karmaMochaReporter.mod.ShowDiffOptions
+import typingsJapgolly.karmaMochaReporter.karmaMod.OutputOptions
+import typingsJapgolly.karmaMochaReporter.karmaMod.ReporterColor
+import typingsJapgolly.karmaMochaReporter.karmaMod.ShowDiffOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object karmaMochaReporterStrings {
-  @js.native
-  sealed trait autowatch extends OutputOptions
   
   @js.native
-  sealed trait error extends ReporterColor
+  sealed trait autowatch
+    extends StObject
+       with OutputOptions
+  inline def autowatch: autowatch = "autowatch".asInstanceOf[autowatch]
   
   @js.native
-  sealed trait full extends OutputOptions
+  sealed trait error
+    extends StObject
+       with ReporterColor
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends ReporterColor
+  sealed trait full
+    extends StObject
+       with OutputOptions
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait `inline` extends ShowDiffOptions
+  sealed trait info
+    extends StObject
+       with ReporterColor
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait minimal extends OutputOptions
+  sealed trait `inline`
+    extends StObject
+       with ShowDiffOptions
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait noFailures extends OutputOptions
+  sealed trait minimal
+    extends StObject
+       with OutputOptions
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait success extends ReporterColor
+  sealed trait noFailures
+    extends StObject
+       with OutputOptions
+  inline def noFailures: noFailures = "noFailures".asInstanceOf[noFailures]
   
   @js.native
-  sealed trait unified extends ShowDiffOptions
+  sealed trait success
+    extends StObject
+       with ReporterColor
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait warning extends ReporterColor
+  sealed trait unified
+    extends StObject
+       with ShowDiffOptions
+  inline def unified: unified = "unified".asInstanceOf[unified]
   
-  @scala.inline
-  def autowatch: autowatch = "autowatch".asInstanceOf[autowatch]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
-  @scala.inline
-  def noFailures: noFailures = "noFailures".asInstanceOf[noFailures]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def unified: unified = "unified".asInstanceOf[unified]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  @js.native
+  sealed trait warning
+    extends StObject
+       with ReporterColor
+  inline def warning: warning = "warning".asInstanceOf[warning]
 }
-

@@ -3,22 +3,27 @@ package typingsJapgolly.bingmaps.Microsoft.Maps.SpatialDataService
 import typingsJapgolly.bingmaps.Microsoft.Maps.IPrimitive
 import typingsJapgolly.bingmaps.Microsoft.Maps.Location
 import typingsJapgolly.bingmaps.Microsoft.Maps.LocationRect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISpatialFilterOptions extends js.Object {
+trait ISpatialFilterOptions extends StObject {
+  
   /** End location of the route (only for nearroute filter). */
   var end: js.UndefOr[String | Location] = js.undefined
+  
   /** Intersection object. Can be a well known text string or a LocationRect object (only for intersects filter). */
   var intersects: js.UndefOr[String | LocationRect | IPrimitive] = js.undefined
+  
   /** Location at which the filter should be applied (only for nearby filter). */
   var location: js.UndefOr[String | Location] = js.undefined
+  
   /** 
     * Radius to use when performing a nearby search. The distance in kilometers and must be between 0.16 and 1000 kilometers
     * (only for nearby filter).
     */
   var radius: js.UndefOr[Double] = js.undefined
+  
   /** 
     * One of the following values:
     * • nearby – Searches in a radius around a location.
@@ -27,27 +32,39 @@ trait ISpatialFilterOptions extends js.Object {
     * Note: Note that the NavteqNA and NavteqEU data sources only support nearby queries.
     */
   var spatialFilterType: String
+  
   /** Start location of the route (only for nearroute filter). */
   var start: js.UndefOr[String | Location] = js.undefined
 }
-
 object ISpatialFilterOptions {
-  @scala.inline
-  def apply(
-    spatialFilterType: String,
-    end: String | Location = null,
-    intersects: String | LocationRect | IPrimitive = null,
-    location: String | Location = null,
-    radius: Int | Double = null,
-    start: String | Location = null
-  ): ISpatialFilterOptions = {
+  
+  inline def apply(spatialFilterType: String): ISpatialFilterOptions = {
     val __obj = js.Dynamic.literal(spatialFilterType = spatialFilterType.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (intersects != null) __obj.updateDynamic("intersects")(intersects.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpatialFilterOptions]
   }
+  
+  extension [Self <: ISpatialFilterOptions](x: Self) {
+    
+    inline def setEnd(value: String | Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setIntersects(value: String | LocationRect | IPrimitive): Self = StObject.set(x, "intersects", value.asInstanceOf[js.Any])
+    
+    inline def setIntersectsUndefined: Self = StObject.set(x, "intersects", js.undefined)
+    
+    inline def setLocation(value: String | Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setSpatialFilterType(value: String): Self = StObject.set(x, "spatialFilterType", value.asInstanceOf[js.Any])
+    
+    inline def setStart(value: String | Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

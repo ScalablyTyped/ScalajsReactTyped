@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.default
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.unix64
   - typingsJapgolly.fridaGum.fridaGumStrings.vfp
 */
-trait NativeABI extends js.Object
-
+trait NativeABI extends StObject
 object NativeABI {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typingsJapgolly.fridaGum.fridaGumStrings.default = this.cast("default")
-  @scala.inline
-  def fastcall: typingsJapgolly.fridaGum.fridaGumStrings.fastcall = this.cast("fastcall")
-  @scala.inline
-  def mscdecl: typingsJapgolly.fridaGum.fridaGumStrings.mscdecl = this.cast("mscdecl")
-  @scala.inline
-  def stdcall: typingsJapgolly.fridaGum.fridaGumStrings.stdcall = this.cast("stdcall")
-  @scala.inline
-  def sysv: typingsJapgolly.fridaGum.fridaGumStrings.sysv = this.cast("sysv")
-  @scala.inline
-  def thiscall: typingsJapgolly.fridaGum.fridaGumStrings.thiscall = this.cast("thiscall")
-  @scala.inline
-  def unix64: typingsJapgolly.fridaGum.fridaGumStrings.unix64 = this.cast("unix64")
-  @scala.inline
-  def vfp: typingsJapgolly.fridaGum.fridaGumStrings.vfp = this.cast("vfp")
-  @scala.inline
-  def win64: typingsJapgolly.fridaGum.fridaGumStrings.win64 = this.cast("win64")
+  
+  inline def default: typingsJapgolly.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.default]
+  
+  inline def fastcall: typingsJapgolly.fridaGum.fridaGumStrings.fastcall = "fastcall".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.fastcall]
+  
+  inline def mscdecl: typingsJapgolly.fridaGum.fridaGumStrings.mscdecl = "mscdecl".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.mscdecl]
+  
+  inline def stdcall: typingsJapgolly.fridaGum.fridaGumStrings.stdcall = "stdcall".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.stdcall]
+  
+  inline def sysv: typingsJapgolly.fridaGum.fridaGumStrings.sysv = "sysv".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sysv]
+  
+  inline def thiscall: typingsJapgolly.fridaGum.fridaGumStrings.thiscall = "thiscall".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.thiscall]
+  
+  inline def unix64: typingsJapgolly.fridaGum.fridaGumStrings.unix64 = "unix64".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.unix64]
+  
+  inline def vfp: typingsJapgolly.fridaGum.fridaGumStrings.vfp = "vfp".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.vfp]
+  
+  inline def win64: typingsJapgolly.fridaGum.fridaGumStrings.win64 = "win64".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.win64]
 }
-

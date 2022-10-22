@@ -1,10 +1,11 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CacheProvisionOptions extends js.Object {
+trait CacheProvisionOptions extends StObject {
+  
   /**
     * number of items to store in the cache before the least used items are dropped.
     *
@@ -12,13 +13,15 @@ trait CacheProvisionOptions extends js.Object {
     */
   var max: Double
 }
-
 object CacheProvisionOptions {
-  @scala.inline
-  def apply(max: Double): CacheProvisionOptions = {
-    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
   
+  inline def apply(max: Double): CacheProvisionOptions = {
+    val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any])
     __obj.asInstanceOf[CacheProvisionOptions]
   }
+  
+  extension [Self <: CacheProvisionOptions](x: Self) {
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+  }
 }
-

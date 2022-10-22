@@ -1,23 +1,26 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
 import typingsJapgolly.winrt.Windows.Storage.Streams.IInputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.backgroundUpload method.
   */
-trait IBackgroundUploadProperties extends js.Object {
+trait IBackgroundUploadProperties extends StObject {
+  
   /**
     * The file input object to read the file from. Can be a
     * Windows.Storage.StorageFile or an IFile.
     */
-  var file_input: js.UndefOr[js.Any] = js.undefined
+  var file_input: js.UndefOr[Any] = js.undefined
+  
   /**
     * The name of the file to upload.
     */
   var file_name: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates whether the uploaded file should overwrite an existing
     * copy. Specify "true" to overwrite, "false" to not overwrite and for
@@ -27,31 +30,42 @@ trait IBackgroundUploadProperties extends js.Object {
     * @default "false".
     */
   var overwrite: js.UndefOr[String] = js.undefined
+  
   /**
     * The path to the file to upload.
     */
   var path: String
+  
   /**
     * The file input stream to read the file from.
     */
   var stream_input: js.UndefOr[IInputStream] = js.undefined
 }
-
 object IBackgroundUploadProperties {
-  @scala.inline
-  def apply(
-    path: String,
-    file_input: js.Any = null,
-    file_name: String = null,
-    overwrite: String = null,
-    stream_input: IInputStream = null
-  ): IBackgroundUploadProperties = {
+  
+  inline def apply(path: String): IBackgroundUploadProperties = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (file_input != null) __obj.updateDynamic("file_input")(file_input.asInstanceOf[js.Any])
-    if (file_name != null) __obj.updateDynamic("file_name")(file_name.asInstanceOf[js.Any])
-    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
-    if (stream_input != null) __obj.updateDynamic("stream_input")(stream_input.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBackgroundUploadProperties]
   }
+  
+  extension [Self <: IBackgroundUploadProperties](x: Self) {
+    
+    inline def setFile_input(value: Any): Self = StObject.set(x, "file_input", value.asInstanceOf[js.Any])
+    
+    inline def setFile_inputUndefined: Self = StObject.set(x, "file_input", js.undefined)
+    
+    inline def setFile_name(value: String): Self = StObject.set(x, "file_name", value.asInstanceOf[js.Any])
+    
+    inline def setFile_nameUndefined: Self = StObject.set(x, "file_name", js.undefined)
+    
+    inline def setOverwrite(value: String): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setStream_input(value: IInputStream): Self = StObject.set(x, "stream_input", value.asInstanceOf[js.Any])
+    
+    inline def setStream_inputUndefined: Self = StObject.set(x, "stream_input", js.undefined)
+  }
 }
-

@@ -1,48 +1,29 @@
 package typingsJapgolly.react.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.react.mod.ProfilerProps
-import typingsJapgolly.react.mod.SchedulerInteraction
 import typingsJapgolly.react.reactStrings.mount
 import typingsJapgolly.react.reactStrings.update
+import typingsJapgolly.scheduler.tracingMod.Interaction
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Profiler {
-  def apply(
+  
+  inline def apply(
     id: String,
-    onRender: (/* id */ String, /* phase */ mount | update, /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[SchedulerInteraction]) => Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    ProfilerProps, 
-    MountedWithRawType[ProfilerProps, js.Object, RawMounted[ProfilerProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("onRender")(js.Any.fromFunction7((t0: /* id */ java.lang.String, t1: /* phase */ typingsJapgolly.react.reactStrings.mount | typingsJapgolly.react.reactStrings.update, t2: /* actualDuration */ scala.Double, t3: /* baseDuration */ scala.Double, t4: /* startTime */ scala.Double, t5: /* commitTime */ scala.Double, t6: /* interactions */ typingsJapgolly.std.Set[typingsJapgolly.react.mod.SchedulerInteraction]) => onRender(t0, t1, t2, t3, t4, t5, t6).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.react.mod.ProfilerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.react.mod.ProfilerProps])(children: _*)
+    onRender: (/* id */ String, /* phase */ mount | update, /* actualDuration */ Double, /* baseDuration */ Double, /* startTime */ Double, /* commitTime */ Double, /* interactions */ Set[Interaction]) => Callback
+  ): Default[js.Object] = {
+    val __props = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onRender = js.Any.fromFunction7((t0: /* id */ String, t1: /* phase */ mount | update, t2: /* actualDuration */ Double, t3: /* baseDuration */ Double, t4: /* startTime */ Double, t5: /* commitTime */ Double, t6: /* interactions */ Set[Interaction]) => (onRender(t0, t1, t2, t3, t4, t5, t6)).runNow()))
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[ProfilerProps]))
   }
+  
   @JSImport("react", "Profiler")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: ProfilerProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

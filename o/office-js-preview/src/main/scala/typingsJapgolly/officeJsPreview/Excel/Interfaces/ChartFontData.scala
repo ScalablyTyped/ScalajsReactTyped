@@ -3,74 +3,92 @@ package typingsJapgolly.officeJsPreview.Excel.Interfaces
 import typingsJapgolly.officeJsPreview.Excel.ChartUnderlineStyle
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Single
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartFont.toJSON()`. */
-trait ChartFontData extends js.Object {
+trait ChartFontData extends StObject {
+  
   /**
-    *
     * Represents the bold status of font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var bold: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * HTML color code representation of the text color (e.g., #FF0000 represents Red).
     *
-    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the italic status of the font.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var italic: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Font name (e.g., "Calibri")
     *
-    * Font name (e.g. "Calibri")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Size of the font (e.g., 11)
     *
-    * Size of the font (e.g. 11)
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var size: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Type of underline applied to the font. See `Excel.ChartUnderlineStyle` for details.
     *
-    * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var underline: js.UndefOr[ChartUnderlineStyle | None | Single] = js.undefined
 }
-
 object ChartFontData {
-  @scala.inline
-  def apply(
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    size: Int | Double = null,
-    underline: ChartUnderlineStyle | None | Single = null
-  ): ChartFontData = {
+  
+  inline def apply(): ChartFontData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFontData]
   }
+  
+  extension [Self <: ChartFontData](x: Self) {
+    
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUnderline(value: ChartUnderlineStyle | None | Single): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+  }
 }
-

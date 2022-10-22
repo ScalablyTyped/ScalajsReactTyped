@@ -3,9 +3,9 @@ package typingsJapgolly.xrm.XrmEnum
 import typingsJapgolly.xrm.xrmStrings.audio
 import typingsJapgolly.xrm.xrmStrings.image
 import typingsJapgolly.xrm.xrmStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Possible file types for Xrm.Device.pickFile options
@@ -16,16 +16,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.video
   - typingsJapgolly.xrm.xrmStrings.image
 */
-trait DevicePickFileType extends js.Object
-
+trait DevicePickFileType extends StObject
 object DevicePickFileType {
-  @scala.inline
-  def Audio: audio = this.cast("audio")
-  @scala.inline
-  def Image: image = this.cast("image")
-  @scala.inline
-  def Video: video = this.cast("video")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Audio: audio = "audio".asInstanceOf[audio]
+  
+  inline def Image: image = "image".asInstanceOf[image]
+  
+  inline def Video: video = "video".asInstanceOf[video]
 }
-

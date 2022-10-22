@@ -1,74 +1,54 @@
 package typingsJapgolly.fundamentalReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.fundamentalReact.AnonDay1Sun
-import typingsJapgolly.fundamentalReact.calendarMod.CalendarProps
-import typingsJapgolly.fundamentalReact.calendarMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fundamentalReact.anon.NextMonth
+import typingsJapgolly.fundamentalReact.libCalendarCalendarMod.CalendarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Calendar {
-  def apply(
-    StringDictionary: /* x */ StringDictionary[js.Any] = null,
-    blockedDates: js.Array[js.Date] = null,
-    customStyles: StringDictionary[js.Any] = null,
-    disableAfterDate: js.Date = null,
-    disableBeforeDate: js.Date = null,
-    disableFutureDates: js.UndefOr[Boolean] = js.undefined,
-    disablePastDates: js.UndefOr[Boolean] = js.undefined,
-    disableStyles: js.UndefOr[Boolean] = js.undefined,
-    disableWeekday: js.Array[String] = null,
-    disableWeekends: js.UndefOr[Boolean] = js.undefined,
-    disabledDates: js.Array[js.Date] = null,
-    localizedText: AnonDay1Sun = null,
-    monthListProps: StringDictionary[js.Any] = null,
-    onChange: /* date */ js.Date => Callback = null,
-    tableBodyProps: StringDictionary[js.Any] = null,
-    tableHeaderProps: StringDictionary[js.Any] = null,
-    tableProps: StringDictionary[js.Any] = null,
-    yearListProps: StringDictionary[js.Any] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CalendarProps, default, Unit, CalendarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (blockedDates != null) __obj.updateDynamic("blockedDates")(blockedDates.asInstanceOf[js.Any])
-    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles.asInstanceOf[js.Any])
-    if (disableAfterDate != null) __obj.updateDynamic("disableAfterDate")(disableAfterDate.asInstanceOf[js.Any])
-    if (disableBeforeDate != null) __obj.updateDynamic("disableBeforeDate")(disableBeforeDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableFutureDates)) __obj.updateDynamic("disableFutureDates")(disableFutureDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePastDates)) __obj.updateDynamic("disablePastDates")(disablePastDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStyles)) __obj.updateDynamic("disableStyles")(disableStyles.asInstanceOf[js.Any])
-    if (disableWeekday != null) __obj.updateDynamic("disableWeekday")(disableWeekday.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends.asInstanceOf[js.Any])
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (localizedText != null) __obj.updateDynamic("localizedText")(localizedText.asInstanceOf[js.Any])
-    if (monthListProps != null) __obj.updateDynamic("monthListProps")(monthListProps.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* date */ js.Date) => onChange(t0).runNow()))
-    if (tableBodyProps != null) __obj.updateDynamic("tableBodyProps")(tableBodyProps.asInstanceOf[js.Any])
-    if (tableHeaderProps != null) __obj.updateDynamic("tableHeaderProps")(tableHeaderProps.asInstanceOf[js.Any])
-    if (tableProps != null) __obj.updateDynamic("tableProps")(tableProps.asInstanceOf[js.Any])
-    if (yearListProps != null) __obj.updateDynamic("yearListProps")(yearListProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.fundamentalReact.calendarMod.CalendarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.fundamentalReact.calendarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.fundamentalReact.calendarMod.CalendarProps])(children: _*)
-  }
-  @JSImport("fundamental-react/lib/Calendar/Calendar", JSImport.Default)
+  @JSImport("fundamental-react", "Calendar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.fundamentalReact.mod.Calendar] {
+    
+    inline def blockedDates(value: js.Array[js.Date]): this.type = set("blockedDates", value.asInstanceOf[js.Any])
+    
+    inline def blockedDatesVarargs(value: js.Date*): this.type = set("blockedDates", js.Array(value*))
+    
+    inline def disableAfterDate(value: js.Date): this.type = set("disableAfterDate", value.asInstanceOf[js.Any])
+    
+    inline def disableBeforeDate(value: js.Date): this.type = set("disableBeforeDate", value.asInstanceOf[js.Any])
+    
+    inline def disableFutureDates(value: Boolean): this.type = set("disableFutureDates", value.asInstanceOf[js.Any])
+    
+    inline def disablePastDates(value: Boolean): this.type = set("disablePastDates", value.asInstanceOf[js.Any])
+    
+    inline def disableStyles(value: Boolean): this.type = set("disableStyles", value.asInstanceOf[js.Any])
+    
+    inline def disableWeekday(value: js.Array[String]): this.type = set("disableWeekday", value.asInstanceOf[js.Any])
+    
+    inline def disableWeekdayVarargs(value: String*): this.type = set("disableWeekday", js.Array(value*))
+    
+    inline def disableWeekends(value: Boolean): this.type = set("disableWeekends", value.asInstanceOf[js.Any])
+    
+    inline def disabledDates(value: js.Array[js.Date]): this.type = set("disabledDates", value.asInstanceOf[js.Any])
+    
+    inline def disabledDatesVarargs(value: js.Date*): this.type = set("disabledDates", js.Array(value*))
+    
+    inline def localizedText(value: NextMonth): this.type = set("localizedText", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* date */ js.Date => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* date */ js.Date) => value(t0).runNow()))
+  }
+  
+  implicit def make(companion: Calendar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CalendarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

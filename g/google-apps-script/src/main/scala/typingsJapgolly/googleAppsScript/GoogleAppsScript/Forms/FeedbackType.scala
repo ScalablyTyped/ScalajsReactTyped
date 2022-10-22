@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FeedbackType extends js.Object
-
+sealed trait FeedbackType extends StObject
 /**
   * An enum representing the supported types of feedback. Feedback types can be accessed from FormApp.FeedbackType.
   *
@@ -25,26 +23,20 @@ sealed trait FeedbackType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Forms.FeedbackType")
 @js.native
-object FeedbackType extends js.Object {
-  @js.native
-  sealed trait CORRECT extends FeedbackType
+object FeedbackType extends StObject {
   
   @js.native
-  sealed trait GENERAL extends FeedbackType
+  sealed trait CORRECT
+    extends StObject
+       with FeedbackType
   
   @js.native
-  sealed trait INCORRECT extends FeedbackType
+  sealed trait GENERAL
+    extends StObject
+       with FeedbackType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FeedbackType with Double] = js.native
-  /* 0 */ @js.native
-  object CORRECT extends TopLevel[CORRECT with Double]
-  
-  /* 2 */ @js.native
-  object GENERAL extends TopLevel[GENERAL with Double]
-  
-  /* 1 */ @js.native
-  object INCORRECT extends TopLevel[INCORRECT with Double]
-  
+  @js.native
+  sealed trait INCORRECT
+    extends StObject
+       with FeedbackType
 }
-

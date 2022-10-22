@@ -1,16 +1,31 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
 import typingsJapgolly.typescriptServices.TypeScript.IdentiferNameHashTable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.CompletionSession")
-@js.native
-class CompletionSession protected () extends js.Object {
-  def this(fileName: String, position: Double, entries: IdentiferNameHashTable[CachedCompletionEntryDetails]) = this()
-  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails] = js.native
-  var fileName: String = js.native
-  var position: Double = js.native
+trait CompletionSession extends StObject {
+  
+  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails]
+  
+  var fileName: String
+  
+  var position: Double
 }
-
+object CompletionSession {
+  
+  inline def apply(entries: IdentiferNameHashTable[CachedCompletionEntryDetails], fileName: String, position: Double): CompletionSession = {
+    val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompletionSession]
+  }
+  
+  extension [Self <: CompletionSession](x: Self) {
+    
+    inline def setEntries(value: IdentiferNameHashTable[CachedCompletionEntryDetails]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+  }
+}

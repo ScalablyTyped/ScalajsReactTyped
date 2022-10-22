@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A type that indicates whether a line item is final or pending.
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.`final`
   - typingsJapgolly.applepayjs.applepayjsStrings.pending
 */
-trait ApplePayLineItemType extends js.Object
-
+trait ApplePayLineItemType extends StObject
 object ApplePayLineItemType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `final`: typingsJapgolly.applepayjs.applepayjsStrings.`final` = this.cast("final")
-  @scala.inline
-  def pending: typingsJapgolly.applepayjs.applepayjsStrings.pending = this.cast("pending")
+  
+  inline def `final`: typingsJapgolly.applepayjs.applepayjsStrings.`final` = "final".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.`final`]
+  
+  inline def pending: typingsJapgolly.applepayjs.applepayjsStrings.pending = "pending".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.pending]
 }
-

@@ -1,45 +1,84 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SplitterPane extends js.Object {
+trait SplitterPane extends StObject {
+  
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   var collapsedSize: js.UndefOr[String] = js.undefined
+  
   var collapsible: js.UndefOr[Boolean] = js.undefined
+  
   var contentUrl: js.UndefOr[String] = js.undefined
+  
+  var label: js.UndefOr[String] = js.undefined
+  
+  var labelId: js.UndefOr[String] = js.undefined
+  
   var max: js.UndefOr[String] = js.undefined
+  
   var min: js.UndefOr[String] = js.undefined
+  
   var resizable: js.UndefOr[Boolean] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
 }
-
 object SplitterPane {
-  @scala.inline
-  def apply(
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsedSize: String = null,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    contentUrl: String = null,
-    max: String = null,
-    min: String = null,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    size: String = null
-  ): SplitterPane = {
+  
+  inline def apply(): SplitterPane = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (collapsedSize != null) __obj.updateDynamic("collapsedSize")(collapsedSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[SplitterPane]
   }
+  
+  extension [Self <: SplitterPane](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedSize(value: String): Self = StObject.set(x, "collapsedSize", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedSizeUndefined: Self = StObject.set(x, "collapsedSize", js.undefined)
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelId(value: String): Self = StObject.set(x, "labelId", value.asInstanceOf[js.Any])
+    
+    inline def setLabelIdUndefined: Self = StObject.set(x, "labelId", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

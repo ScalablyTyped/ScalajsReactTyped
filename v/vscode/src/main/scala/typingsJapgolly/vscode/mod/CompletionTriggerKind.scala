@@ -1,44 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionTriggerKind extends js.Object
-
+sealed trait CompletionTriggerKind extends StObject
 @JSImport("vscode", "CompletionTriggerKind")
 @js.native
-object CompletionTriggerKind extends js.Object {
-  /**
-  		 * Completion was triggered normally.
-  		 */
-  @js.native
-  sealed trait Invoke extends CompletionTriggerKind
-  
-  /**
-  		 * Completion was triggered by a trigger character.
-  		 */
-  @js.native
-  sealed trait TriggerCharacter extends CompletionTriggerKind
-  
-  /**
-  		 * Completion was re-triggered as current completion list is incomplete
-  		 */
-  @js.native
-  sealed trait TriggerForIncompleteCompletions extends CompletionTriggerKind
+object CompletionTriggerKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompletionTriggerKind with Double] = js.native
-  /* 0 */ @js.native
-  object Invoke extends TopLevel[Invoke with Double]
+  def apply(value: Double): js.UndefOr[CompletionTriggerKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object TriggerCharacter extends TopLevel[TriggerCharacter with Double]
+  /**
+    * Completion was triggered normally.
+    */
+  @js.native
+  sealed trait Invoke
+    extends StObject
+       with CompletionTriggerKind
+  /* 0 */ val Invoke: typingsJapgolly.vscode.mod.CompletionTriggerKind.Invoke & Double = js.native
   
-  /* 2 */ @js.native
-  object TriggerForIncompleteCompletions extends TopLevel[TriggerForIncompleteCompletions with Double]
+  /**
+    * Completion was triggered by a trigger character.
+    */
+  @js.native
+  sealed trait TriggerCharacter
+    extends StObject
+       with CompletionTriggerKind
+  /* 1 */ val TriggerCharacter: typingsJapgolly.vscode.mod.CompletionTriggerKind.TriggerCharacter & Double = js.native
   
+  /**
+    * Completion was re-triggered as current completion list is incomplete
+    */
+  @js.native
+  sealed trait TriggerForIncompleteCompletions
+    extends StObject
+       with CompletionTriggerKind
+  /* 2 */ val TriggerForIncompleteCompletions: typingsJapgolly.vscode.mod.CompletionTriggerKind.TriggerForIncompleteCompletions & Double = js.native
 }
-

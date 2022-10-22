@@ -1,44 +1,36 @@
 package typingsJapgolly.hjson
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hjsonStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait keys extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait keys extends StObject
+  inline def keys: keys = "keys".asInstanceOf[keys]
   
   @js.native
-  sealed trait `no-tabs` extends js.Object
+  sealed trait min extends StObject
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait `no-tabs` extends StObject
+  inline def `no-tabs`: `no-tabs` = "no-tabs".asInstanceOf[`no-tabs`]
   
   @js.native
-  sealed trait std extends js.Object
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait strings extends js.Object
+  sealed trait std extends StObject
+  inline def std: std = "std".asInstanceOf[std]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def keys: keys = "keys".asInstanceOf[keys]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def `no-tabs`: `no-tabs` = "no-tabs".asInstanceOf[`no-tabs`]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def std: std = "std".asInstanceOf[std]
-  @scala.inline
-  def strings: strings = "strings".asInstanceOf[strings]
+  @js.native
+  sealed trait strings extends StObject
+  inline def strings: strings = "strings".asInstanceOf[strings]
 }
-

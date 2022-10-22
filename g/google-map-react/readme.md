@@ -1,19 +1,19 @@
 
 # Scala.js typings for google-map-react
 
-Typings are for version 1.1
+Typings are for version 2.1
 
 ## Library description:
-isomorphic google map react component, allows render react components on the google map
+Isomorphic component that allows rendering react components on a google map
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | google-map-react |
 | Keywords           | react, reactjs, google, map, maps, isomorphic, render, component, javascript, react-component |
-| # releases         | 25 |
-| # dependents       | 84 |
-| # downloads        | 3856105 |
-| # stars            | 15 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 1036883.3333333334 |
+| # stars            | 5740.0 |
 
 ## Links
 - [Homepage](https://github.com/google-map-react/google-map-react#readme)

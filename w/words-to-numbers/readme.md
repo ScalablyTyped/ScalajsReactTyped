@@ -1,7 +1,7 @@
 
 # Scala.js typings for words-to-numbers
 
-Typings are for version 1.2
+Typings are for version 1.5.1
 
 ## Library description:
 convert textual words to numbers with optional fuzzy text matching
@@ -10,10 +10,10 @@ convert textual words to numbers with optional fuzzy text matching
 | ------------------ | :-------------: |
 | Full name          | words-to-numbers |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 16 |
-| # downloads        | 179631 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 25948.333333333332 |
+| # stars            | 228.0 |
 
 ## Links
 - [Homepage](https://github.com/finnfiddle/words-to-numbers)
@@ -24,7 +24,7 @@ convert textual words to numbers with optional fuzzy text matching
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

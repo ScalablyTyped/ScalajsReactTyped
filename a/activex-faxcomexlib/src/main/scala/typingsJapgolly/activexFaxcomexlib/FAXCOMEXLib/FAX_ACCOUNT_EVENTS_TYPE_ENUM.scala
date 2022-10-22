@@ -1,40 +1,36 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
 */
-trait FAX_ACCOUNT_EVENTS_TYPE_ENUM extends js.Object
-
+trait FAX_ACCOUNT_EVENTS_TYPE_ENUM extends StObject
 object FAX_ACCOUNT_EVENTS_TYPE_ENUM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def faetFXSSVC_ENDED: `16` = this.cast(16)
-  @scala.inline
-  def faetIN_ARCHIVE: `4` = this.cast(4)
-  @scala.inline
-  def faetIN_QUEUE: `1` = this.cast(1)
-  @scala.inline
-  def faetNONE: `0` = this.cast(0)
-  @scala.inline
-  def faetOUT_ARCHIVE: `8` = this.cast(8)
-  @scala.inline
-  def faetOUT_QUEUE: `2` = this.cast(2)
+  
+  inline def faetFXSSVC_ENDED: `16` = 16.asInstanceOf[`16`]
+  
+  inline def faetIN_ARCHIVE: `4` = 4.asInstanceOf[`4`]
+  
+  inline def faetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
+  
+  inline def faetNONE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def faetOUT_ARCHIVE: `8` = 8.asInstanceOf[`8`]
+  
+  inline def faetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
 }
-

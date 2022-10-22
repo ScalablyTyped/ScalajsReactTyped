@@ -1,16 +1,48 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input.Spatial
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Input.Spatial.SpatialNavigationStartedEventArgs")
-@js.native
-abstract class SpatialNavigationStartedEventArgs () extends js.Object {
-  var interactionSourceKind: js.Any = js.native
-   /* unmapped type */ var isNavigatingX: js.Any = js.native
-   /* unmapped type */ var isNavigatingY: js.Any = js.native
-   /* unmapped type */ var isNavigatingZ: js.Any = js.native
-   /* unmapped type */ var tryGetPointerPose: js.Any = js.native
+trait SpatialNavigationStartedEventArgs extends StObject {
+  
+  var interactionSourceKind: Any
+  
+  /* unmapped type */
+  var isNavigatingX: Any
+  
+  /* unmapped type */
+  var isNavigatingY: Any
+  
+  /* unmapped type */
+  var isNavigatingZ: Any
+  
+  /* unmapped type */
+  var tryGetPointerPose: Any
 }
-
+object SpatialNavigationStartedEventArgs {
+  
+  inline def apply(
+    interactionSourceKind: Any,
+    isNavigatingX: Any,
+    isNavigatingY: Any,
+    isNavigatingZ: Any,
+    tryGetPointerPose: Any
+  ): SpatialNavigationStartedEventArgs = {
+    val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any], isNavigatingX = isNavigatingX.asInstanceOf[js.Any], isNavigatingY = isNavigatingY.asInstanceOf[js.Any], isNavigatingZ = isNavigatingZ.asInstanceOf[js.Any], tryGetPointerPose = tryGetPointerPose.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpatialNavigationStartedEventArgs]
+  }
+  
+  extension [Self <: SpatialNavigationStartedEventArgs](x: Self) {
+    
+    inline def setInteractionSourceKind(value: Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    
+    inline def setIsNavigatingX(value: Any): Self = StObject.set(x, "isNavigatingX", value.asInstanceOf[js.Any])
+    
+    inline def setIsNavigatingY(value: Any): Self = StObject.set(x, "isNavigatingY", value.asInstanceOf[js.Any])
+    
+    inline def setIsNavigatingZ(value: Any): Self = StObject.set(x, "isNavigatingZ", value.asInstanceOf[js.Any])
+    
+    inline def setTryGetPointerPose(value: Any): Self = StObject.set(x, "tryGetPointerPose", value.asInstanceOf[js.Any])
+  }
+}

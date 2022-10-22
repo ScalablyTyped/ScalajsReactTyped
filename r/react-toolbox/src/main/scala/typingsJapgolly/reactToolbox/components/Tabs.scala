@@ -1,102 +1,90 @@
 package typingsJapgolly.reactToolbox.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactToolbox.libTabsTabsMod.TabsProps
-import typingsJapgolly.reactToolbox.libTabsTabsMod.TabsTheme
-import typingsJapgolly.reactToolbox.libTabsTabsMod.default
+import typingsJapgolly.reactToolbox.componentsTabsTabsMod.TabsProps
+import typingsJapgolly.reactToolbox.componentsTabsTabsMod.TabsTheme
 import typingsJapgolly.reactToolbox.reactToolboxStrings.display
 import typingsJapgolly.reactToolbox.reactToolboxStrings.unmounted
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
-  def apply(
-    className: String = null,
-    disableAnimatedBottomBorder: js.UndefOr[Boolean] = js.undefined,
-    fixed: js.UndefOr[Boolean] = js.undefined,
-    hideMode: display | unmounted = null,
-    index: Int | Double = null,
-    inverse: js.UndefOr[Boolean] = js.undefined,
-    onChange: js.Function = null,
-    onClick: js.Function = null,
-    onContextMenu: js.Function = null,
-    onDoubleClick: js.Function = null,
-    onDrag: js.Function = null,
-    onDragEnd: js.Function = null,
-    onDragEnter: js.Function = null,
-    onDragExit: js.Function = null,
-    onDragLeave: js.Function = null,
-    onDragOver: js.Function = null,
-    onDragStart: js.Function = null,
-    onDrop: js.Function = null,
-    onMouseDown: js.Function = null,
-    onMouseEnter: js.Function = null,
-    onMouseLeave: js.Function = null,
-    onMouseMove: js.Function = null,
-    onMouseOut: js.Function = null,
-    onMouseOver: js.Function = null,
-    onMouseUp: js.Function = null,
-    onTouchCancel: js.Function = null,
-    onTouchEnd: js.Function = null,
-    onTouchMove: js.Function = null,
-    onTouchStart: js.Function = null,
-    style: CSSProperties = null,
-    theme: TabsTheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabsProps, default, Unit, TabsProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnimatedBottomBorder)) __obj.updateDynamic("disableAnimatedBottomBorder")(disableAnimatedBottomBorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (hideMode != null) __obj.updateDynamic("hideMode")(hideMode.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(onChange.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(onContextMenu.asInstanceOf[js.Any])
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(onDoubleClick.asInstanceOf[js.Any])
-    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag.asInstanceOf[js.Any])
-    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd.asInstanceOf[js.Any])
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter.asInstanceOf[js.Any])
-    if (onDragExit != null) __obj.updateDynamic("onDragExit")(onDragExit.asInstanceOf[js.Any])
-    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave.asInstanceOf[js.Any])
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver.asInstanceOf[js.Any])
-    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart.asInstanceOf[js.Any])
-    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop.asInstanceOf[js.Any])
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown.asInstanceOf[js.Any])
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter.asInstanceOf[js.Any])
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave.asInstanceOf[js.Any])
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove.asInstanceOf[js.Any])
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut.asInstanceOf[js.Any])
-    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver.asInstanceOf[js.Any])
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp.asInstanceOf[js.Any])
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel.asInstanceOf[js.Any])
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd.asInstanceOf[js.Any])
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove.asInstanceOf[js.Any])
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactToolbox.libTabsTabsMod.TabsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactToolbox.libTabsTabsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactToolbox.libTabsTabsMod.TabsProps])(children: _*)
-  }
-  @JSImport("react-toolbox/lib/tabs/Tabs", JSImport.Default)
+  @JSImport("react-toolbox/components/tabs", "Tabs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactToolbox.componentsTabsMod.Tabs] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disableAnimatedBottomBorder(value: Boolean): this.type = set("disableAnimatedBottomBorder", value.asInstanceOf[js.Any])
+    
+    inline def fixed(value: Boolean): this.type = set("fixed", value.asInstanceOf[js.Any])
+    
+    inline def hideMode(value: display | unmounted): this.type = set("hideMode", value.asInstanceOf[js.Any])
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def inverse(value: Boolean): this.type = set("inverse", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: js.Function): this.type = set("onChange", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: js.Function): this.type = set("onClick", value.asInstanceOf[js.Any])
+    
+    inline def onContextMenu(value: js.Function): this.type = set("onContextMenu", value.asInstanceOf[js.Any])
+    
+    inline def onDoubleClick(value: js.Function): this.type = set("onDoubleClick", value.asInstanceOf[js.Any])
+    
+    inline def onDrag(value: js.Function): this.type = set("onDrag", value.asInstanceOf[js.Any])
+    
+    inline def onDragEnd(value: js.Function): this.type = set("onDragEnd", value.asInstanceOf[js.Any])
+    
+    inline def onDragEnter(value: js.Function): this.type = set("onDragEnter", value.asInstanceOf[js.Any])
+    
+    inline def onDragExit(value: js.Function): this.type = set("onDragExit", value.asInstanceOf[js.Any])
+    
+    inline def onDragLeave(value: js.Function): this.type = set("onDragLeave", value.asInstanceOf[js.Any])
+    
+    inline def onDragOver(value: js.Function): this.type = set("onDragOver", value.asInstanceOf[js.Any])
+    
+    inline def onDragStart(value: js.Function): this.type = set("onDragStart", value.asInstanceOf[js.Any])
+    
+    inline def onDrop(value: js.Function): this.type = set("onDrop", value.asInstanceOf[js.Any])
+    
+    inline def onMouseDown(value: js.Function): this.type = set("onMouseDown", value.asInstanceOf[js.Any])
+    
+    inline def onMouseEnter(value: js.Function): this.type = set("onMouseEnter", value.asInstanceOf[js.Any])
+    
+    inline def onMouseLeave(value: js.Function): this.type = set("onMouseLeave", value.asInstanceOf[js.Any])
+    
+    inline def onMouseMove(value: js.Function): this.type = set("onMouseMove", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOut(value: js.Function): this.type = set("onMouseOut", value.asInstanceOf[js.Any])
+    
+    inline def onMouseOver(value: js.Function): this.type = set("onMouseOver", value.asInstanceOf[js.Any])
+    
+    inline def onMouseUp(value: js.Function): this.type = set("onMouseUp", value.asInstanceOf[js.Any])
+    
+    inline def onTouchCancel(value: js.Function): this.type = set("onTouchCancel", value.asInstanceOf[js.Any])
+    
+    inline def onTouchEnd(value: js.Function): this.type = set("onTouchEnd", value.asInstanceOf[js.Any])
+    
+    inline def onTouchMove(value: js.Function): this.type = set("onTouchMove", value.asInstanceOf[js.Any])
+    
+    inline def onTouchStart(value: js.Function): this.type = set("onTouchStart", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: TabsTheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tabs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TabsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

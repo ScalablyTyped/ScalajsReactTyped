@@ -1,22 +1,35 @@
 package typingsJapgolly.preact.mod
 
-import typingsJapgolly.preact.AnonHtml
+import typingsJapgolly.preact.anon.Html
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PreactDOMAttributes extends js.Object {
+trait PreactDOMAttributes extends StObject {
+  
   var children: js.UndefOr[ComponentChildren] = js.undefined
-  var dangerouslySetInnerHTML: js.UndefOr[AnonHtml] = js.undefined
+  
+  var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
 }
-
 object PreactDOMAttributes {
-  @scala.inline
-  def apply(children: ComponentChildren = null, dangerouslySetInnerHTML: AnonHtml = null): PreactDOMAttributes = {
+  
+  inline def apply(): PreactDOMAttributes = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (dangerouslySetInnerHTML != null) __obj.updateDynamic("dangerouslySetInnerHTML")(dangerouslySetInnerHTML.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreactDOMAttributes]
   }
+  
+  extension [Self <: PreactDOMAttributes](x: Self) {
+    
+    inline def setChildren(value: ComponentChildren): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: ComponentChild*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setDangerouslySetInnerHTML(value: Html): Self = StObject.set(x, "dangerouslySetInnerHTML", value.asInstanceOf[js.Any])
+    
+    inline def setDangerouslySetInnerHTMLUndefined: Self = StObject.set(x, "dangerouslySetInnerHTML", js.undefined)
+  }
 }
-

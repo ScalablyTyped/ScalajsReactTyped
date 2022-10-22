@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerDialogs extends js.Object {
-  var deleteConfirm: js.UndefOr[js.Any] = js.undefined
-  var moveConfirm: js.UndefOr[js.Any] = js.undefined
-  var renamePrompt: js.UndefOr[js.Any] = js.undefined
-  var upload: js.UndefOr[js.Any] = js.undefined
+trait FileManagerDialogs extends StObject {
+  
+  var deleteConfirm: js.UndefOr[Any] = js.undefined
+  
+  var moveConfirm: js.UndefOr[Any] = js.undefined
+  
+  var renamePrompt: js.UndefOr[Any] = js.undefined
+  
+  var upload: js.UndefOr[Any] = js.undefined
 }
-
 object FileManagerDialogs {
-  @scala.inline
-  def apply(
-    deleteConfirm: js.Any = null,
-    moveConfirm: js.Any = null,
-    renamePrompt: js.Any = null,
-    upload: js.Any = null
-  ): FileManagerDialogs = {
+  
+  inline def apply(): FileManagerDialogs = {
     val __obj = js.Dynamic.literal()
-    if (deleteConfirm != null) __obj.updateDynamic("deleteConfirm")(deleteConfirm.asInstanceOf[js.Any])
-    if (moveConfirm != null) __obj.updateDynamic("moveConfirm")(moveConfirm.asInstanceOf[js.Any])
-    if (renamePrompt != null) __obj.updateDynamic("renamePrompt")(renamePrompt.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerDialogs]
   }
+  
+  extension [Self <: FileManagerDialogs](x: Self) {
+    
+    inline def setDeleteConfirm(value: Any): Self = StObject.set(x, "deleteConfirm", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteConfirmUndefined: Self = StObject.set(x, "deleteConfirm", js.undefined)
+    
+    inline def setMoveConfirm(value: Any): Self = StObject.set(x, "moveConfirm", value.asInstanceOf[js.Any])
+    
+    inline def setMoveConfirmUndefined: Self = StObject.set(x, "moveConfirm", js.undefined)
+    
+    inline def setRenamePrompt(value: Any): Self = StObject.set(x, "renamePrompt", value.asInstanceOf[js.Any])
+    
+    inline def setRenamePromptUndefined: Self = StObject.set(x, "renamePrompt", js.undefined)
+    
+    inline def setUpload(value: Any): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+  }
 }
-

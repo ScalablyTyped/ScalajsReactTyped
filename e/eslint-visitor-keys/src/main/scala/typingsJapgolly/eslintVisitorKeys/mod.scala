@@ -1,16 +1,29 @@
 package typingsJapgolly.eslintVisitorKeys
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("eslint-visitor-keys", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val KEYS: VisitorKeys = js.native
-  def getKeys(node: js.Object): js.Array[String] = js.native
-  def unionWith(keys: VisitorKeys): VisitorKeys = js.native
-  type VisitorKeys = StringDictionary[js.UndefOr[js.Array[String]]]
+object mod {
+  
+  @JSImport("eslint-visitor-keys", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * @typedef {import('./index.js').VisitorKeys} VisitorKeys
+    */
+  /**
+    * @type {VisitorKeys}
+    */
+  @JSImport("eslint-visitor-keys", "KEYS")
+  @js.native
+  val KEYS: typingsJapgolly.eslintVisitorKeys.distVisitorKeysMod.VisitorKeys = js.native
+  
+  inline def getKeys(node: js.Object): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeys")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def unionWith(additionalKeys: VisitorKeys): VisitorKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("unionWith")(additionalKeys.asInstanceOf[js.Any]).asInstanceOf[VisitorKeys]
+  
+  type VisitorKeys = StringDictionary[js.Array[String]]
 }
-

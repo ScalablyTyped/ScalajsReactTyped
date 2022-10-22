@@ -1,17 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait UnparsedPrepend
-  extends UnparsedSection
+  extends StObject
+     with UnparsedSection
      with UnparsedSourceText {
+  
   @JSName("data")
-  var data_UnparsedPrepend: java.lang.String = js.native
+  val data_UnparsedPrepend: java.lang.String = js.native
+  
   @JSName("kind")
-  var kind_UnparsedPrepend: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrepend = js.native
-  var texts: js.Array[UnparsedTextLike] = js.native
+  val kind_UnparsedPrepend: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrepend = js.native
+  
+  val texts: js.Array[UnparsedTextLike] = js.native
 }
-

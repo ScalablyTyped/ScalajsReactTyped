@@ -1,23 +1,36 @@
 package typingsJapgolly.bootstrapDatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatepickerBeforeShowResponse extends js.Object {
+trait DatepickerBeforeShowResponse extends StObject {
+  
   var classes: js.UndefOr[String] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var tooltip: js.UndefOr[String] = js.undefined
 }
-
 object DatepickerBeforeShowResponse {
-  @scala.inline
-  def apply(classes: String = null, enabled: js.UndefOr[Boolean] = js.undefined, tooltip: String = null): DatepickerBeforeShowResponse = {
+  
+  inline def apply(): DatepickerBeforeShowResponse = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerBeforeShowResponse]
   }
+  
+  extension [Self <: DatepickerBeforeShowResponse](x: Self) {
+    
+    inline def setClasses(value: String): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

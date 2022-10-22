@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NDCertificateFeature extends js.Object
-
+sealed trait NDCertificateFeature extends StObject
 /** Indicates the PlayReady-ND feature to which the certificate controls access. */
 @JSGlobal("Windows.Media.Protection.PlayReady.NDCertificateFeature")
 @js.native
-object NDCertificateFeature extends js.Object {
+object NDCertificateFeature extends StObject {
+  
   /** Device implements anti-rollback clock. */
   @js.native
-  sealed trait antiRollBackClock extends NDCertificateFeature
+  sealed trait antiRollBackClock
+    extends StObject
+       with NDCertificateFeature
   
   /** Entity supports certificate revocation lists. */
   @js.native
-  sealed trait crls extends NDCertificateFeature
+  sealed trait crls
+    extends StObject
+       with NDCertificateFeature
   
   /** Entity supports PlayReady version 3.x features such as per-stream keys. */
   @js.native
-  sealed trait playReady3Features extends NDCertificateFeature
+  sealed trait playReady3Features
+    extends StObject
+       with NDCertificateFeature
   
   /** Entity implements receiver functionality. */
   @js.native
-  sealed trait receiver extends NDCertificateFeature
+  sealed trait receiver
+    extends StObject
+       with NDCertificateFeature
   
   /** Device implements SecureClock. */
   @js.native
-  sealed trait secureClock extends NDCertificateFeature
+  sealed trait secureClock
+    extends StObject
+       with NDCertificateFeature
   
   /** Entity shares receiver key across multiple devices. */
   @js.native
-  sealed trait sharedCertificate extends NDCertificateFeature
+  sealed trait sharedCertificate
+    extends StObject
+       with NDCertificateFeature
   
   /** Entity implements transmitter functionality. */
   @js.native
-  sealed trait transmitter extends NDCertificateFeature
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NDCertificateFeature with Double] = js.native
-  /* 4 */ @js.native
-  object antiRollBackClock extends TopLevel[antiRollBackClock with Double]
-  
-  /* 5 */ @js.native
-  object crls extends TopLevel[crls with Double]
-  
-  /* 6 */ @js.native
-  object playReady3Features extends TopLevel[playReady3Features with Double]
-  
-  /* 1 */ @js.native
-  object receiver extends TopLevel[receiver with Double]
-  
-  /* 3 */ @js.native
-  object secureClock extends TopLevel[secureClock with Double]
-  
-  /* 2 */ @js.native
-  object sharedCertificate extends TopLevel[sharedCertificate with Double]
-  
-  /* 0 */ @js.native
-  object transmitter extends TopLevel[transmitter with Double]
-  
+  sealed trait transmitter
+    extends StObject
+       with NDCertificateFeature
 }
-

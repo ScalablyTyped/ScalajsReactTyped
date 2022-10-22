@@ -1,11 +1,12 @@
 package typingsJapgolly.jqueryJsignature
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * inits the jSignature widget
     */
@@ -23,7 +24,7 @@ trait JQuery extends js.Object {
     * @see http://willowsystems.github.io/jSignature/#/about/
     *
     */
-  def jSignature(command: String): js.Any = js.native
+  def jSignature(command: String): Any = js.native
   /**
     * Arguments vary per command. When provided, command is expected to be a string with a command for jSignature. Commands supported at this time: init, reset, getData, setData, listPlugins
     * @summary
@@ -38,6 +39,5 @@ trait JQuery extends js.Object {
     * @see http://willowsystems.github.io/jSignature/#/about/
     *
     */
-  def jSignature(command: String, arg: String*): js.Any = js.native
+  def jSignature(command: String, arg: String*): Any = js.native
 }
-

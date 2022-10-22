@@ -1,31 +1,39 @@
 package typingsJapgolly.cryptoJs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/**
+  * Configuration options.
+  */
 trait CipherOption
-  extends /* option */ StringDictionary[js.Any] {
-  var iv: js.UndefOr[String] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var padding: js.UndefOr[Padding] = js.undefined
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
+  var format: js.UndefOr[Format_] = js.undefined
+  
+  /**
+    * The IV to use for this operation.
+    */
+  var iv: js.UndefOr[WordArray] = js.undefined
 }
-
 object CipherOption {
-  @scala.inline
-  def apply(
-    StringDictionary: /* option */ StringDictionary[js.Any] = null,
-    iv: String = null,
-    mode: Mode = null,
-    padding: Padding = null
-  ): CipherOption = {
+  
+  inline def apply(): CipherOption = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (iv != null) __obj.updateDynamic("iv")(iv.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
     __obj.asInstanceOf[CipherOption]
   }
+  
+  extension [Self <: CipherOption](x: Self) {
+    
+    inline def setFormat(value: Format_): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setIv(value: WordArray): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    
+    inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+  }
 }
-

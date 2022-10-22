@@ -1,35 +1,27 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextureWrap extends js.Object
-
+sealed trait TextureWrap extends StObject
 @JSGlobal("spine.TextureWrap")
 @js.native
-object TextureWrap extends js.Object {
-  @js.native
-  sealed trait ClampToEdge extends TextureWrap
+object TextureWrap extends StObject {
   
   @js.native
-  sealed trait MirroredRepeat extends TextureWrap
+  sealed trait ClampToEdge
+    extends StObject
+       with TextureWrap
   
   @js.native
-  sealed trait Repeat extends TextureWrap
+  sealed trait MirroredRepeat
+    extends StObject
+       with TextureWrap
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextureWrap with Double] = js.native
-  /* 33071 */ @js.native
-  object ClampToEdge extends TopLevel[ClampToEdge with Double]
-  
-  /* 33648 */ @js.native
-  object MirroredRepeat extends TopLevel[MirroredRepeat with Double]
-  
-  /* 10497 */ @js.native
-  object Repeat extends TopLevel[Repeat with Double]
-  
+  @js.native
+  sealed trait Repeat
+    extends StObject
+       with TextureWrap
 }
-

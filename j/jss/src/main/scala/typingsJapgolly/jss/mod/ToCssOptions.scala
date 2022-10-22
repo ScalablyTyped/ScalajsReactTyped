@@ -1,21 +1,36 @@
 package typingsJapgolly.jss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToCssOptions extends js.Object {
+trait ToCssOptions extends StObject {
+  
   var allowEmpty: js.UndefOr[Boolean] = js.undefined
+  
+  var format: js.UndefOr[Boolean] = js.undefined
+  
   var indent: js.UndefOr[Double] = js.undefined
 }
-
 object ToCssOptions {
-  @scala.inline
-  def apply(allowEmpty: js.UndefOr[Boolean] = js.undefined, indent: Int | Double = null): ToCssOptions = {
+  
+  inline def apply(): ToCssOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmpty)) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToCssOptions]
   }
+  
+  extension [Self <: ToCssOptions](x: Self) {
+    
+    inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+    
+    inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    
+    inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+  }
 }
-

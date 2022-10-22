@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.emrMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsEmrMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EMR")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class EMR ()
+open class EMR ()
   extends typingsJapgolly.awsSdk.mod.EMR {
   def this(options: ClientConfiguration) = this()
 }
-

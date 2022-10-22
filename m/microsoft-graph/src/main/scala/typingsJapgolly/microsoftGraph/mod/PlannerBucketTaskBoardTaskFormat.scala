@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerBucketTaskBoardTaskFormat extends Entity {
+trait PlannerBucketTaskBoardTaskFormat
+  extends StObject
+     with Entity {
+  
   // Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
-  var orderHint: js.UndefOr[String] = js.undefined
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object PlannerBucketTaskBoardTaskFormat {
-  @scala.inline
-  def apply(id: String = null, orderHint: String = null): PlannerBucketTaskBoardTaskFormat = {
+  
+  inline def apply(): PlannerBucketTaskBoardTaskFormat = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerBucketTaskBoardTaskFormat]
   }
+  
+  extension [Self <: PlannerBucketTaskBoardTaskFormat](x: Self) {
+    
+    inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    
+    inline def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
+    
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+  }
 }
-

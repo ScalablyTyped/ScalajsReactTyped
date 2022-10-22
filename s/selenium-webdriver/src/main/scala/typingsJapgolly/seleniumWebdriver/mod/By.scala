@@ -1,24 +1,26 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "By")
 @js.native
-class By protected ()
-  extends typingsJapgolly.seleniumWebdriver.byMod.By {
+open class By protected ()
+  extends typingsJapgolly.seleniumWebdriver.libByMod.By {
   /**
     * @param {string} using the name of the location strategy to use.
     * @param {string} value the value to search for.
     */
-  def this(using: String, value: String) = this()
+  def this(`using`: String, value: String) = this()
 }
-
 /* static members */
-@JSImport("selenium-webdriver", "By")
-@js.native
-object By extends js.Object {
+object By {
+  
+  @JSImport("selenium-webdriver", "By")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Locates elements that have a specific class name.
     *
@@ -27,7 +29,8 @@ object By extends js.Object {
     * @see http://www.w3.org/TR/2011/WD-html5-20110525/elements.html#classes
     * @see http://www.w3.org/TR/CSS2/selector.html#class-html
     */
-  def className(name: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def className(name: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("className")(name.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates elements using a CSS selector.
     *
@@ -35,7 +38,8 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/CSS2/selector.html
     */
-  def css(selector: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def css(selector: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(selector.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates eleemnts by the ID attribute. This locator uses the CSS selector
     * `*[id='$ID']`, _not_ `document.getElementById`.
@@ -43,7 +47,8 @@ object By extends js.Object {
     * @param {string} id The ID to search for.
     * @return {!By} The new locator.
     */
-  def id(id: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def id(id: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates an elements by evaluating a
     * {@linkplain WebDriver#executeScript JavaScript expression}.
@@ -54,10 +59,9 @@ object By extends js.Object {
     * @return {function(!./WebDriver): !./Promise}
     *     A new JavaScript-based locator function.
     */
-  @JSName("js")
-  def js_(script: String, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
-  @JSName("js")
-  def js_(script: js.Function, var_args: js.Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[_]] = js.native
+  inline def js_(script: String, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(scala.List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
+  inline def js_(script: js.Function, var_args: Any*): js.Function1[/* webdriver */ WebDriver, js.Promise[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("js")(scala.List(script.asInstanceOf[js.Any]).`++`(var_args.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Function1[/* webdriver */ WebDriver, js.Promise[Any]]]
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} matches the given
@@ -66,14 +70,16 @@ object By extends js.Object {
     * @param {string} text The link text to search for.
     * @return {!By} The new locator.
     */
-  def linkText(text: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def linkText(text: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("linkText")(text.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates elements whose `name` attribute has the given value.
     *
     * @param {string} name The name attribute to search for.
     * @return {!By} The new locator.
     */
-  def name(name: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def name(name: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(name.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates link elements whose
     * {@linkplain WebElement#getText visible text} contains the given
@@ -82,7 +88,8 @@ object By extends js.Object {
     * @param {string} text The substring to check for in a link's visible text.
     * @return {!By} The new locator.
     */
-  def partialLinkText(text: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def partialLinkText(text: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("partialLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates elements with a given tag name.
     *
@@ -90,7 +97,8 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @deprecated Use {@link By.css() By.css(tagName)} instead.
     */
-  def tagName(name: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def tagName(name: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("tagName")(name.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
+  
   /**
     * Locates elements matching a XPath selector. Care should be taken when
     * using an XPath selector with a {@link WebElement} as WebDriver
@@ -102,6 +110,5 @@ object By extends js.Object {
     * @return {!By} The new locator.
     * @see http://www.w3.org/TR/xpath/
     */
-  def xpath(xpath: String): typingsJapgolly.seleniumWebdriver.byMod.By = js.native
+  inline def xpath(xpath: String): typingsJapgolly.seleniumWebdriver.libByMod.By = ^.asInstanceOf[js.Dynamic].applyDynamic("xpath")(xpath.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.seleniumWebdriver.libByMod.By]
 }
-

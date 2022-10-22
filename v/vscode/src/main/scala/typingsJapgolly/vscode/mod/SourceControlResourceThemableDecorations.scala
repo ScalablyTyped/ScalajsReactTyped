@@ -1,23 +1,28 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SourceControlResourceThemableDecorations extends js.Object {
+trait SourceControlResourceThemableDecorations extends StObject {
+  
   /**
-  		 * The icon path for a specific
-  		 * [source control resource state](#SourceControlResourceState).
-  		 */
-  val iconPath: js.UndefOr[String | Uri] = js.undefined
+    * The icon path for a specific
+    * {@link SourceControlResourceState source control resource state}.
+    */
+  val iconPath: js.UndefOr[String | Uri | ThemeIcon] = js.undefined
 }
-
 object SourceControlResourceThemableDecorations {
-  @scala.inline
-  def apply(iconPath: String | Uri = null): SourceControlResourceThemableDecorations = {
+  
+  inline def apply(): SourceControlResourceThemableDecorations = {
     val __obj = js.Dynamic.literal()
-    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlResourceThemableDecorations]
   }
+  
+  extension [Self <: SourceControlResourceThemableDecorations](x: Self) {
+    
+    inline def setIconPath(value: String | Uri | ThemeIcon): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+  }
 }
-

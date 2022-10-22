@@ -1,45 +1,51 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.reactNativeStrings.fade
-import typingsJapgolly.reactNative.reactNativeStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait StatusBarProps
-  extends StatusBarPropsIOS
+  extends StObject
+     with StatusBarPropsIOS
      with StatusBarPropsAndroid {
+  
   /**
     * If the transition between status bar property changes should be
     * animated. Supported for backgroundColor, barStyle and hidden.
     */
   var animated: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets the color of the status bar text.
+    */
+  var barStyle: js.UndefOr[Null | StatusBarStyle] = js.undefined
+  
   /**
     * If the status bar is hidden.
     */
   var hidden: js.UndefOr[Boolean] = js.undefined
 }
-
 object StatusBarProps {
-  @scala.inline
-  def apply(
-    animated: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: String = null,
-    barStyle: StatusBarStyle = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined,
-    showHideTransition: fade | slide = null,
-    translucent: js.UndefOr[Boolean] = js.undefined
-  ): StatusBarProps = {
+  
+  inline def apply(): StatusBarProps = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkActivityIndicatorVisible)) __obj.updateDynamic("networkActivityIndicatorVisible")(networkActivityIndicatorVisible.asInstanceOf[js.Any])
-    if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
-    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBarProps]
   }
+  
+  extension [Self <: StatusBarProps](x: Self) {
+    
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    
+    inline def setBarStyle(value: StatusBarStyle): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBarStyleNull: Self = StObject.set(x, "barStyle", null)
+    
+    inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+  }
 }
-

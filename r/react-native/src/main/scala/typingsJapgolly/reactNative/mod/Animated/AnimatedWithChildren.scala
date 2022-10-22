@@ -1,11 +1,9 @@
 package typingsJapgolly.reactNative.mod.Animated
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "Animated.AnimatedWithChildren")
 @js.native
-class AnimatedWithChildren ()
-  extends typingsJapgolly.reactNative.mod.Animated.Animated
-
+open class AnimatedWithChildren () extends AnimatedNode

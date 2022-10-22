@@ -10,15 +10,12 @@ This directive allows you to jQueryUI Sortable.
 | ------------------ | :-------------: |
 | Full name          | angular-ui-sortable |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 1118395 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 255879.33333333334 |
+| # stars            | 1284.0 |
 
 ## Links
-- [Homepage](http://angular-ui.github.com)
-- [Bugs](https://github.com/angular-ui/ui-sortable/issues)
-- [Repository](https://github.com/angular-ui/ui-sortable)
 - [Npm](https://www.npmjs.com/package/angular-ui-sortable)
     
 

@@ -1,22 +1,34 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FraudManagementFiltersDetails extends js.Object {
+trait FraudManagementFiltersDetails extends StObject {
+  
   var description: String
+  
   var filter_id: String
+  
   var filter_type: String
+  
   var name: String
 }
-
 object FraudManagementFiltersDetails {
-  @scala.inline
-  def apply(description: String, filter_id: String, filter_type: String, name: String): FraudManagementFiltersDetails = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], filter_id = filter_id.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(description: String, filter_id: String, filter_type: String, name: String): FraudManagementFiltersDetails = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], filter_id = filter_id.asInstanceOf[js.Any], filter_type = filter_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FraudManagementFiltersDetails]
   }
+  
+  extension [Self <: FraudManagementFiltersDetails](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setFilter_id(value: String): Self = StObject.set(x, "filter_id", value.asInstanceOf[js.Any])
+    
+    inline def setFilter_type(value: String): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

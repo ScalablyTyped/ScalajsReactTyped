@@ -1,33 +1,46 @@
 package typingsJapgolly.kendoUi.kendo.data
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceGroupItem extends js.Object {
+trait DataSourceGroupItem extends StObject {
+  
   var aggregates: js.UndefOr[js.Array[DataSourceGroupItemAggregate]] = js.undefined
+  
   var compare: js.UndefOr[
     js.Function2[/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem, Double]
   ] = js.undefined
+  
   var dir: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceGroupItem {
-  @scala.inline
-  def apply(
-    aggregates: js.Array[DataSourceGroupItemAggregate] = null,
-    compare: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => CallbackTo[Double] = null,
-    dir: String = null,
-    field: String = null
-  ): DataSourceGroupItem = {
+  
+  inline def apply(): DataSourceGroupItem = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
-    if (compare != null) __obj.updateDynamic("compare")(js.Any.fromFunction2((t0: /* a */ typingsJapgolly.kendoUi.kendo.data.DataSourceGroupCompareItem, t1: /* b */ typingsJapgolly.kendoUi.kendo.data.DataSourceGroupCompareItem) => compare(t0, t1).runNow()))
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroupItem]
   }
+  
+  extension [Self <: DataSourceGroupItem](x: Self) {
+    
+    inline def setAggregates(value: js.Array[DataSourceGroupItemAggregate]): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    
+    inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
+    
+    inline def setAggregatesVarargs(value: DataSourceGroupItemAggregate*): Self = StObject.set(x, "aggregates", js.Array(value*))
+    
+    inline def setCompare(value: (/* a */ DataSourceGroupCompareItem, /* b */ DataSourceGroupCompareItem) => Double): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    
+    inline def setCompareUndefined: Self = StObject.set(x, "compare", js.undefined)
+    
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

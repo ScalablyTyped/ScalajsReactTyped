@@ -3,49 +3,64 @@ package typingsJapgolly.screeps
 import typingsJapgolly.screeps.screepsStrings.dashed
 import typingsJapgolly.screeps.screepsStrings.dotted
 import typingsJapgolly.screeps.screepsStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PolyStyle extends js.Object {
+trait PolyStyle extends StObject {
+  
   /**
-    * Fill color in any web format, default is #ffffff(white).
+    * Fill color in any web format, default is undefined (no fill).
     */
   var fill: js.UndefOr[String] = js.undefined
+  
   /**
-    * Either undefined (solid line), dashed, or dotted.Default is undefined.
+    * Either undefined (solid line), dashed, or dotted. Default is undefined.
     */
   var lineStyle: js.UndefOr[dashed | dotted | solid] = js.undefined
+  
   /**
     * Opacity value, default is 0.5.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Stroke color in any web format, default is undefined (no stroke).
+    * Stroke color in any web format, default is #ffffff (white).
     */
   var stroke: js.UndefOr[String] = js.undefined
+  
   /**
     * Stroke line width, default is 0.1.
     */
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object PolyStyle {
-  @scala.inline
-  def apply(
-    fill: String = null,
-    lineStyle: dashed | dotted | solid = null,
-    opacity: Int | Double = null,
-    stroke: String = null,
-    strokeWidth: Int | Double = null
-  ): PolyStyle = {
+  
+  inline def apply(): PolyStyle = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolyStyle]
   }
+  
+  extension [Self <: PolyStyle](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setLineStyle(value: dashed | dotted | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

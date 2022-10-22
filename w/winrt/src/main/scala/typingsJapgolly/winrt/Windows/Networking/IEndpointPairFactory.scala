@@ -1,11 +1,11 @@
 package typingsJapgolly.winrt.Windows.Networking
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEndpointPairFactory extends js.Object {
+trait IEndpointPairFactory extends StObject {
+  
   def createEndpointPair(
     localHostName: HostName,
     localServiceName: String,
@@ -13,13 +13,15 @@ trait IEndpointPairFactory extends js.Object {
     remoteServiceName: String
   ): EndpointPair
 }
-
 object IEndpointPairFactory {
-  @scala.inline
-  def apply(createEndpointPair: (HostName, String, HostName, String) => CallbackTo[EndpointPair]): IEndpointPairFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createEndpointPair")(js.Any.fromFunction4((t0: typingsJapgolly.winrt.Windows.Networking.HostName, t1: java.lang.String, t2: typingsJapgolly.winrt.Windows.Networking.HostName, t3: java.lang.String) => createEndpointPair(t0, t1, t2, t3).runNow()))
+  
+  inline def apply(createEndpointPair: (HostName, String, HostName, String) => EndpointPair): IEndpointPairFactory = {
+    val __obj = js.Dynamic.literal(createEndpointPair = js.Any.fromFunction4(createEndpointPair))
     __obj.asInstanceOf[IEndpointPairFactory]
   }
+  
+  extension [Self <: IEndpointPairFactory](x: Self) {
+    
+    inline def setCreateEndpointPair(value: (HostName, String, HostName, String) => EndpointPair): Self = StObject.set(x, "createEndpointPair", js.Any.fromFunction4(value))
+  }
 }
-

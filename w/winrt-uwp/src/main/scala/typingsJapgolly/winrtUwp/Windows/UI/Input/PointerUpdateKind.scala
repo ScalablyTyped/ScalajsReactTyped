@@ -1,95 +1,79 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Input
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PointerUpdateKind extends js.Object
-
+sealed trait PointerUpdateKind extends StObject
 /** Specifies the types of pointer updates that are supported by an application. */
 @JSGlobal("Windows.UI.Input.PointerUpdateKind")
 @js.native
-object PointerUpdateKind extends js.Object {
+object PointerUpdateKind extends StObject {
+  
   /** Left button pressed. */
   @js.native
-  sealed trait leftButtonPressed extends PointerUpdateKind
+  sealed trait leftButtonPressed
+    extends StObject
+       with PointerUpdateKind
   
   /** Left button released. */
   @js.native
-  sealed trait leftButtonReleased extends PointerUpdateKind
+  sealed trait leftButtonReleased
+    extends StObject
+       with PointerUpdateKind
   
   /** Middle button pressed. */
   @js.native
-  sealed trait middleButtonPressed extends PointerUpdateKind
+  sealed trait middleButtonPressed
+    extends StObject
+       with PointerUpdateKind
   
   /** Middle button released. */
   @js.native
-  sealed trait middleButtonReleased extends PointerUpdateKind
+  sealed trait middleButtonReleased
+    extends StObject
+       with PointerUpdateKind
   
   /** Pointer updates not identified by other PointerUpdateKind values. */
   @js.native
-  sealed trait other extends PointerUpdateKind
+  sealed trait other
+    extends StObject
+       with PointerUpdateKind
   
   /** Right button pressed. */
   @js.native
-  sealed trait rightButtonPressed extends PointerUpdateKind
+  sealed trait rightButtonPressed
+    extends StObject
+       with PointerUpdateKind
   
   /** Right button released. */
   @js.native
-  sealed trait rightButtonReleased extends PointerUpdateKind
+  sealed trait rightButtonReleased
+    extends StObject
+       with PointerUpdateKind
   
   /** XBUTTON1 pressed. */
   @js.native
-  sealed trait xbutton1Pressed extends PointerUpdateKind
+  sealed trait xbutton1Pressed
+    extends StObject
+       with PointerUpdateKind
   
   /** XBUTTON1 released. */
   @js.native
-  sealed trait xbutton1Released extends PointerUpdateKind
+  sealed trait xbutton1Released
+    extends StObject
+       with PointerUpdateKind
   
   /** XBUTTON2 pressed. */
   @js.native
-  sealed trait xbutton2Pressed extends PointerUpdateKind
+  sealed trait xbutton2Pressed
+    extends StObject
+       with PointerUpdateKind
   
   /** XBUTTON2 released. */
   @js.native
-  sealed trait xbutton2Released extends PointerUpdateKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PointerUpdateKind with Double] = js.native
-  /* 1 */ @js.native
-  object leftButtonPressed extends TopLevel[leftButtonPressed with Double]
-  
-  /* 2 */ @js.native
-  object leftButtonReleased extends TopLevel[leftButtonReleased with Double]
-  
-  /* 5 */ @js.native
-  object middleButtonPressed extends TopLevel[middleButtonPressed with Double]
-  
-  /* 6 */ @js.native
-  object middleButtonReleased extends TopLevel[middleButtonReleased with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 3 */ @js.native
-  object rightButtonPressed extends TopLevel[rightButtonPressed with Double]
-  
-  /* 4 */ @js.native
-  object rightButtonReleased extends TopLevel[rightButtonReleased with Double]
-  
-  /* 7 */ @js.native
-  object xbutton1Pressed extends TopLevel[xbutton1Pressed with Double]
-  
-  /* 8 */ @js.native
-  object xbutton1Released extends TopLevel[xbutton1Released with Double]
-  
-  /* 9 */ @js.native
-  object xbutton2Pressed extends TopLevel[xbutton2Pressed with Double]
-  
-  /* 10 */ @js.native
-  object xbutton2Released extends TopLevel[xbutton2Released with Double]
-  
+  sealed trait xbutton2Released
+    extends StObject
+       with PointerUpdateKind
 }
-

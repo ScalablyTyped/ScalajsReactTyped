@@ -1,41 +1,24 @@
 package typingsJapgolly.braintree.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.braintree.braintreeStrings.recurring_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait TransactionRequestSource extends js.Object
-
-@JSImport("braintree", "TransactionRequestSource")
-@js.native
-object TransactionRequestSource extends js.Object {
-  @js.native
-  sealed trait moto extends TransactionRequestSource
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.braintree.braintreeStrings.recurring_
+  - typingsJapgolly.braintree.braintreeStrings.unscheduled
+  - typingsJapgolly.braintree.braintreeStrings.recurring_first
+  - typingsJapgolly.braintree.braintreeStrings.moto
+*/
+trait TransactionRequestSource extends StObject
+object TransactionRequestSource {
   
-  @js.native
-  sealed trait recurring extends TransactionRequestSource
+  inline def moto: typingsJapgolly.braintree.braintreeStrings.moto = "moto".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.moto]
   
-  @js.native
-  sealed trait recurring_first extends TransactionRequestSource
+  inline def recurring: recurring_ = "recurring".asInstanceOf[recurring_]
   
-  @js.native
-  sealed trait unscheduled extends TransactionRequestSource
+  inline def recurring_first: typingsJapgolly.braintree.braintreeStrings.recurring_first = "recurring_first".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.recurring_first]
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[TransactionRequestSource with String] = js.native
-  /* "moto" */ @js.native
-  object moto extends TopLevel[moto with String]
-  
-  /* "recurring" */ @js.native
-  object recurring extends TopLevel[recurring with String]
-  
-  /* "recurring_first" */ @js.native
-  object recurring_first extends TopLevel[recurring_first with String]
-  
-  /* "unscheduled" */ @js.native
-  object unscheduled extends TopLevel[unscheduled with String]
-  
+  inline def unscheduled: typingsJapgolly.braintree.braintreeStrings.unscheduled = "unscheduled".asInstanceOf[typingsJapgolly.braintree.braintreeStrings.unscheduled]
 }
-

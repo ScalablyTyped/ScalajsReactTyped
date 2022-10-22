@@ -1,18 +1,22 @@
 package typingsJapgolly.malijsCompose
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@malijs/compose", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](middleware: js.Array[Middleware[T]]): ComposedMiddleware[T] = js.native
+object mod {
+  
+  inline def apply[T](middleware: js.Array[Middleware[T]]): ComposedMiddleware[T] = ^.asInstanceOf[js.Dynamic].apply(middleware.asInstanceOf[js.Any]).asInstanceOf[ComposedMiddleware[T]]
+  
+  @JSImport("@malijs/compose", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   type ComposedMiddleware[T] = js.Function2[
     /* context */ T, 
-    /* next */ js.UndefOr[js.Function0[js.Promise[js.Any]]], 
+    /* next */ js.UndefOr[js.Function0[js.Promise[Any]]], 
     js.Promise[Unit]
   ]
-  type Middleware[T] = js.Function2[/* context */ T, /* next */ js.Function0[js.Promise[js.Any]], js.Any]
+  
+  type Middleware[T] = js.Function2[/* context */ T, /* next */ js.Function0[js.Promise[Any]], Any]
 }
-

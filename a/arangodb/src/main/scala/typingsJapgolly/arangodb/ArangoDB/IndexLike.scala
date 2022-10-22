@@ -1,22 +1,26 @@
 package typingsJapgolly.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Indexes
 trait IndexLike
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var id: String
 }
-
 object IndexLike {
-  @scala.inline
-  def apply(id: String, StringDictionary: /* key */ StringDictionary[js.Any] = null): IndexLike = {
+  
+  inline def apply(id: String): IndexLike = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IndexLike]
   }
+  
+  extension [Self <: IndexLike](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+  }
 }
-

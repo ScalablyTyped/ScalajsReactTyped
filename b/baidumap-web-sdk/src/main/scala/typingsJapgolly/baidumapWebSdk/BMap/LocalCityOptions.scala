@@ -1,19 +1,24 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalCityOptions extends js.Object {
+trait LocalCityOptions extends StObject {
+  
   var renderOptions: js.UndefOr[RenderOptions] = js.undefined
 }
-
 object LocalCityOptions {
-  @scala.inline
-  def apply(renderOptions: RenderOptions = null): LocalCityOptions = {
+  
+  inline def apply(): LocalCityOptions = {
     val __obj = js.Dynamic.literal()
-    if (renderOptions != null) __obj.updateDynamic("renderOptions")(renderOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalCityOptions]
   }
+  
+  extension [Self <: LocalCityOptions](x: Self) {
+    
+    inline def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRenderOptionsUndefined: Self = StObject.set(x, "renderOptions", js.undefined)
+  }
 }
-

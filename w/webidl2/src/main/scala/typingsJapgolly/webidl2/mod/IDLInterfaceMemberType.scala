@@ -1,89 +1,94 @@
 package typingsJapgolly.webidl2.mod
 
-import typingsJapgolly.webidl2.webidl2Strings.attribute
-import typingsJapgolly.webidl2.webidl2Strings.const
-import typingsJapgolly.webidl2.webidl2Strings.constructor
-import typingsJapgolly.webidl2.webidl2Strings.deleter
-import typingsJapgolly.webidl2.webidl2Strings.getter
-import typingsJapgolly.webidl2.webidl2Strings.iterable
-import typingsJapgolly.webidl2.webidl2Strings.maplike
-import typingsJapgolly.webidl2.webidl2Strings.operation
-import typingsJapgolly.webidl2.webidl2Strings.setlike
-import typingsJapgolly.webidl2.webidl2Strings.setter
-import typingsJapgolly.webidl2.webidl2Strings.static
-import typingsJapgolly.webidl2.webidl2Strings.stringifier
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webidl2.mod.OperationMemberType
-  - typingsJapgolly.webidl2.mod.ConstructorMemberType
   - typingsJapgolly.webidl2.mod.AttributeMemberType
   - typingsJapgolly.webidl2.mod.ConstantMemberType
+  - typingsJapgolly.webidl2.mod.ConstructorMemberType
   - typingsJapgolly.webidl2.mod.DeclarationMemberType
+  - typingsJapgolly.webidl2.mod.OperationMemberType
 */
-trait IDLInterfaceMemberType extends js.Object
-
+trait IDLInterfaceMemberType extends StObject
 object IDLInterfaceMemberType {
-  @scala.inline
-  def OperationMemberType(
-    arguments: js.Array[Argument],
-    extAttrs: js.Array[ExtendedAttribute],
-    special: getter | setter | deleter | static | stringifier,
-    `type`: operation,
-    idlType: IDLTypeDescription = null,
-    name: String = null
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (idlType != null) __obj.updateDynamic("idlType")(idlType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
-  }
-  @scala.inline
-  def AttributeMemberType(
+  
+  inline def AttributeMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     inherit: Boolean,
     name: String,
-    readonly: Boolean,
-    special: static | stringifier,
-    `type`: attribute
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = special.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
+    parent: InterfaceMixinType | InterfaceType | NamespaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.AttributeMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], inherit = inherit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any], special = null)
+    __obj.updateDynamic("type")("attribute")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.AttributeMemberType]
   }
-  @scala.inline
-  def ConstructorMemberType(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], `type`: constructor): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
-  }
-  @scala.inline
-  def DeclarationMemberType(
-    extAttrs: js.Array[ExtendedAttribute],
-    idlType: js.Array[IDLTypeDescription],
-    readonly: Boolean,
-    `type`: iterable | setlike | maplike
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
-  }
-  @scala.inline
-  def ConstantMemberType(
+  
+  inline def ConstantMemberType(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
     nullable: Boolean,
-    `type`: const,
+    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType,
     value: ValueDescription
-  ): IDLInterfaceMemberType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IDLInterfaceMemberType]
+  ): typingsJapgolly.webidl2.mod.ConstantMemberType = {
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nullable = nullable.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("const")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.ConstantMemberType]
+  }
+  
+  inline def ConstructorMemberType(arguments: js.Array[Argument], extAttrs: js.Array[ExtendedAttribute], parent: InterfaceType): typingsJapgolly.webidl2.mod.ConstructorMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("constructor")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.ConstructorMemberType]
+  }
+  
+  inline def IterableDeclarationMemberType(
+    arguments: js.Array[Argument],
+    async: Boolean,
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Array[IDLTypeDescription] | (js.Tuple2[IDLTypeDescription, IDLTypeDescription]),
+    parent: InterfaceMixinType | InterfaceType
+  ): typingsJapgolly.webidl2.mod.IterableDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = async.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = false)
+    __obj.updateDynamic("type")("iterable")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.IterableDeclarationMemberType]
+  }
+  
+  inline def MaplikeDeclarationMemberType(
+    arguments: js.Array[Any],
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
+    parent: InterfaceMixinType | InterfaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.MaplikeDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = false, extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("maplike")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.MaplikeDeclarationMemberType]
+  }
+  
+  inline def OperationMemberType(
+    arguments: js.Array[Argument],
+    extAttrs: js.Array[ExtendedAttribute],
+    parent: CallbackInterfaceType | InterfaceMixinType | InterfaceType | NamespaceType
+  ): typingsJapgolly.webidl2.mod.OperationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], idlType = null, name = null, special = null)
+    __obj.updateDynamic("type")("operation")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.OperationMemberType]
+  }
+  
+  inline def SetlikeDeclarationMemberType(
+    arguments: js.Array[Any],
+    extAttrs: js.Array[ExtendedAttribute],
+    idlType: js.Array[IDLTypeDescription],
+    parent: InterfaceMixinType | InterfaceType,
+    readonly: Boolean
+  ): typingsJapgolly.webidl2.mod.SetlikeDeclarationMemberType = {
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = false, extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setlike")
+    __obj.asInstanceOf[typingsJapgolly.webidl2.mod.SetlikeDeclarationMemberType]
   }
 }
-

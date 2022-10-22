@@ -1,20 +1,26 @@
 package typingsJapgolly.riotGamesApi.RiotGamesAPI.LolStaticData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlockItemDto extends js.Object {
+trait BlockItemDto extends StObject {
+  
   var count: Double
+  
   var id: Double
 }
-
 object BlockItemDto {
-  @scala.inline
-  def apply(count: Double, id: Double): BlockItemDto = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
   
+  inline def apply(count: Double, id: Double): BlockItemDto = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockItemDto]
   }
+  
+  extension [Self <: BlockItemDto](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+  }
 }
-

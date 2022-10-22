@@ -1,15 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SeriesClickEventObject extends Event_ {
+trait SeriesClickEventObject
+  extends StObject
+     with Event {
+  
   /**
     * Nearest point on the graph.
     */
   var point: Point = js.native
 }
-

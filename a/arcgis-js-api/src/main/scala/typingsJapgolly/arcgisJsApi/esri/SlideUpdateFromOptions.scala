@@ -1,33 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SlideUpdateFromOptions extends Object {
+trait SlideUpdateFromOptions
+  extends StObject
+     with Object {
+  
   /**
-    * Screenshot options to use. See properties below for object specifications.
+    * Screenshot options to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */
   var screenshot: SlideUpdateFromOptionsScreenshot
 }
-
 object SlideUpdateFromOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     screenshot: SlideUpdateFromOptionsScreenshot
   ): SlideUpdateFromOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], screenshot = screenshot.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), screenshot = screenshot.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlideUpdateFromOptions]
   }
+  
+  extension [Self <: SlideUpdateFromOptions](x: Self) {
+    
+    inline def setScreenshot(value: SlideUpdateFromOptionsScreenshot): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+  }
 }
-

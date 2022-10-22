@@ -1,29 +1,27 @@
 package typingsJapgolly.slackMock.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SlashCommandCallType extends js.Object
-
+sealed trait SlashCommandCallType extends StObject
 @JSImport("slack-mock", "SlashCommandCallType")
 @js.native
-object SlashCommandCallType extends js.Object {
-  @js.native
-  sealed trait response extends SlashCommandCallType
-  
-  @js.native
-  sealed trait response_url extends SlashCommandCallType
+object SlashCommandCallType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[SlashCommandCallType with String] = js.native
-  /* "response" */ @js.native
-  object response extends TopLevel[response with String]
+  def apply(value: String): js.UndefOr[SlashCommandCallType & String] = js.native
   
-  /* "response_url" */ @js.native
-  object response_url extends TopLevel[response_url with String]
+  @js.native
+  sealed trait response
+    extends StObject
+       with SlashCommandCallType
+  /* "response" */ val response: typingsJapgolly.slackMock.mod.SlashCommandCallType.response & String = js.native
   
+  @js.native
+  sealed trait response_url
+    extends StObject
+       with SlashCommandCallType
+  /* "response_url" */ val response_url: typingsJapgolly.slackMock.mod.SlashCommandCallType.response_url & String = js.native
 }
-

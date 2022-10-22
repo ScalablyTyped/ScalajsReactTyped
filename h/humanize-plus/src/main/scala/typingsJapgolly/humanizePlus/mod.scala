@@ -1,48 +1,71 @@
 package typingsJapgolly.humanizePlus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("humanize-plus", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def boundedNumber(number: Double): String = js.native
-  def boundedNumber(number: Double, bounds: Double): String = js.native
-  def boundedNumber(number: Double, bounds: Double, ending: String): String = js.native
-  def capitalize(string: String): String = js.native
-  def capitalize(string: String, downCaseTail: Boolean): String = js.native
-  def capitalizeAll(string: String): String = js.native
-  def compactInteger(number: Double): String = js.native
-  def compactInteger(number: Double, decimals: Double): String = js.native
-  def fileSize(filesize: Double): String = js.native
-  def fileSize(filesize: Double, precision: Double): String = js.native
-  def formatNumber(number: Double): String = js.native
-  def formatNumber(number: Double, decimals: Double): String = js.native
-  def frequency(list: js.Array[_]): String = js.native
-  def frequency(list: js.Array[_], verb: String): String = js.native
-  def intComma(number: Double): String = js.native
-  def intComma(number: Double, decimals: Double): String = js.native
-  def normalizePrecision(value: Double): Double = js.native
-  def normalizePrecision(value: Double, base: Double): Double = js.native
-  def ordinal(value: Double): String = js.native
-  def oxford(items: js.Array[_]): String = js.native
-  def oxford(items: js.Array[_], limit: Double): String = js.native
-  def oxford(items: js.Array[_], limit: Double, limitStr: String): String = js.native
-  def pace(value: Double, intervalMs: Double): String = js.native
-  def pace(value: Double, intervalMs: Double, unit: String): String = js.native
-  def pluralize(number: Double): String = js.native
-  def pluralize(number: Double, singular: String): String = js.native
-  def pluralize(number: Double, singular: String, plural: String): String = js.native
-  def times(value: Double): String = js.native
-  def times(value: Double, overrides: js.Any): String = js.native
-  def titleCase(string: String): String = js.native
-  def toFixed(value: Double): String = js.native
-  def toFixed(value: Double, precision: Double): String = js.native
-  def truncate(string: String): String = js.native
-  def truncate(string: String, length: Double): String = js.native
-  def truncate(string: String, length: Double, ending: String): String = js.native
-  def truncateWords(string: String): String | Null = js.native
-  def truncateWords(string: String, length: Double): String | Null = js.native
+object mod {
+  
+  @JSImport("humanize-plus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def boundedNumber(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def boundedNumber(number: Double, bounds: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def boundedNumber(number: Double, bounds: Double, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def boundedNumber(number: Double, bounds: Unit, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("boundedNumber")(number.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def capitalize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def capitalize(string: String, downCaseTail: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(string.asInstanceOf[js.Any], downCaseTail.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def capitalizeAll(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalizeAll")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def compactInteger(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compactInteger")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compactInteger(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compactInteger")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def fileSize(filesize: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fileSize")(filesize.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fileSize(filesize: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fileSize")(filesize.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def formatNumber(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatNumber(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatNumber")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def frequency(list: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def frequency(list: js.Array[Any], verb: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("frequency")(list.asInstanceOf[js.Any], verb.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def intComma(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def intComma(number: Double, decimals: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("intComma")(number.asInstanceOf[js.Any], decimals.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def normalizePrecision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def normalizePrecision(value: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizePrecision")(value.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def ordinal(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def oxford(items: js.Array[Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Double, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def oxford(items: js.Array[Any], limit: Unit, limitStr: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("oxford")(items.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], limitStr.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def pace(value: Double, intervalMs: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pace(value: Double, intervalMs: Double, unit: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pace")(value.asInstanceOf[js.Any], intervalMs.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def pluralize(number: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pluralize(number: Double, singular: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pluralize(number: Double, singular: String, plural: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pluralize(number: Double, singular: Unit, plural: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pluralize")(number.asInstanceOf[js.Any], singular.asInstanceOf[js.Any], plural.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def times(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def times(value: Double, overrides: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(value.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def titleCase(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("titleCase")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def toFixed(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toFixed(value: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFixed")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def truncate(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def truncate(string: String, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def truncate(string: String, length: Double, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def truncate(string: String, length: Unit, ending: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any], ending.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def truncateWords(string: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateWords")(string.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def truncateWords(string: String, length: Double): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateWords")(string.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }
-

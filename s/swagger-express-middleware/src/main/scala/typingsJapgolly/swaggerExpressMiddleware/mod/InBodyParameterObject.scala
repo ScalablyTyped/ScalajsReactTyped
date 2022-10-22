@@ -1,26 +1,24 @@
 package typingsJapgolly.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InBodyParameterObject extends ParameterObject {
+trait InBodyParameterObject
+  extends StObject
+     with ParameterObject {
+  
   var schema: SchemaObject
 }
-
 object InBodyParameterObject {
-  @scala.inline
-  def apply(
-    in: String,
-    name: String,
-    schema: SchemaObject,
-    description: String = null,
-    required: js.UndefOr[Boolean] = js.undefined
-  ): InBodyParameterObject = {
+  
+  inline def apply(in: String, name: String, schema: SchemaObject): InBodyParameterObject = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
     __obj.asInstanceOf[InBodyParameterObject]
   }
+  
+  extension [Self <: InBodyParameterObject](x: Self) {
+    
+    inline def setSchema(value: SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+  }
 }
-

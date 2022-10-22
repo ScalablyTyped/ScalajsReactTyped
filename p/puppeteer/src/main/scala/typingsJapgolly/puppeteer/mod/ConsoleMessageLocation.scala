@@ -1,32 +1,45 @@
 package typingsJapgolly.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsoleMessageLocation extends js.Object {
+trait ConsoleMessageLocation extends StObject {
+  
   /**
-    * Column number in the resource if known.
+    * 0-based column number in the resource if known or `undefined` otherwise.
     */
   var columnNumber: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Line number in the resource if known
+    * 0-based line number in the resource if known or `undefined` otherwise.
     */
   var lineNumber: js.UndefOr[Double] = js.undefined
+  
   /**
-    * URL of the resource if known.
+    * URL of the resource if known or `undefined` otherwise.
     */
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ConsoleMessageLocation {
-  @scala.inline
-  def apply(columnNumber: Int | Double = null, lineNumber: Int | Double = null, url: String = null): ConsoleMessageLocation = {
+  
+  inline def apply(): ConsoleMessageLocation = {
     val __obj = js.Dynamic.literal()
-    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
-    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsoleMessageLocation]
   }
+  
+  extension [Self <: ConsoleMessageLocation](x: Self) {
+    
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+    
+    inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+    
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

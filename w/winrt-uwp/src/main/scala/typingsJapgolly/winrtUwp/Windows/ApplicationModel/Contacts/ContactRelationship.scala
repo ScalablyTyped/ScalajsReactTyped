@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactRelationship extends js.Object
-
+sealed trait ContactRelationship extends StObject
 /** Defines a value that indicates the nature of a contact relationship, such as spouse, partner, sibling, parent and so on. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactRelationship")
 @js.native
-object ContactRelationship extends js.Object {
+object ContactRelationship extends StObject {
+  
   /** Child */
   @js.native
-  sealed trait child extends ContactRelationship
+  sealed trait child
+    extends StObject
+       with ContactRelationship
   
   /** Other */
   @js.native
-  sealed trait other extends ContactRelationship
+  sealed trait other
+    extends StObject
+       with ContactRelationship
   
   /** Parent */
   @js.native
-  sealed trait parent extends ContactRelationship
+  sealed trait parent
+    extends StObject
+       with ContactRelationship
   
   /** Partner */
   @js.native
-  sealed trait partner extends ContactRelationship
+  sealed trait partner
+    extends StObject
+       with ContactRelationship
   
   /** Sibling */
   @js.native
-  sealed trait sibling extends ContactRelationship
+  sealed trait sibling
+    extends StObject
+       with ContactRelationship
   
   /** Spouse */
   @js.native
-  sealed trait spouse extends ContactRelationship
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactRelationship with Double] = js.native
-  /* 5 */ @js.native
-  object child extends TopLevel[child with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 4 */ @js.native
-  object parent extends TopLevel[parent with Double]
-  
-  /* 2 */ @js.native
-  object partner extends TopLevel[partner with Double]
-  
-  /* 3 */ @js.native
-  object sibling extends TopLevel[sibling with Double]
-  
-  /* 1 */ @js.native
-  object spouse extends TopLevel[spouse with Double]
-  
+  sealed trait spouse
+    extends StObject
+       with ContactRelationship
 }
-

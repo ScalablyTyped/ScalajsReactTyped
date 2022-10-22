@@ -10,10 +10,10 @@ Get index of closest value in sorted array.
 | ------------------ | :-------------: |
 | Full name          | array-binarysearch.closest |
 | Keywords           | array, binary, search, closest |
-| # releases         | 18 |
-| # dependents       | 3 |
-| # downloads        | 59758 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4353.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/array-binarysearch.closest)

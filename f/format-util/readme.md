@@ -11,9 +11,9 @@ Lightweight format utility for the browser, based on util.format().
 | Full name          | format-util |
 | Keywords           | format, string, util |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 19618979 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2324008.3333333335 |
+| # stars            | 10.0 |
 
 ## Links
 - [Homepage](https://github.com/tmpfs/format-util#readme)

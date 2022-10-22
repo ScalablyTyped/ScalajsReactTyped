@@ -1,21 +1,70 @@
 package typingsJapgolly.angularCommon.mod
 
+import typingsJapgolly.angularCommon.angularCommonBooleans.`true`
+import typingsJapgolly.angularCommon.angularCommonStrings.`[ngPlural]`
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgPlural")
 @js.native
-class NgPlural protected () extends js.Object {
+open class NgPlural protected () extends StObject {
   def this(_localization: NgLocalization) = this()
-  var _activateView: js.Any = js.native
-  var _activeView: js.Any = js.native
-  var _caseViews: js.Any = js.native
-  var _clearViews: js.Any = js.native
-  var _localization: js.Any = js.native
-  var _switchValue: js.Any = js.native
-  var _updateView: js.Any = js.native
-  var ngPlural: Double = js.native
+  
+  /* private */ var _activateView: Any = js.native
+  
+  /* private */ var _activeView: Any = js.native
+  
+  /* private */ var _caseViews: Any = js.native
+  
+  /* private */ var _clearViews: Any = js.native
+  
+  /* private */ var _localization: Any = js.native
+  
+  /* private */ var _switchValue: Any = js.native
+  
+  /* private */ var _updateView: Any = js.native
+  
   def addCase(value: String, switchView: SwitchView): Unit = js.native
+  
+  def ngPlural_=(value: Double): Unit = js.native
 }
-
+/* static members */
+object NgPlural {
+  
+  @JSImport("@angular/common", "NgPlural")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/common", "NgPlural.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgPlural, 
+    `[ngPlural]`, 
+    scala.Nothing, 
+    typingsJapgolly.angularCommon.anon.NgPlural, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `true`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      NgPlural, 
+      `[ngPlural]`, 
+      scala.Nothing, 
+      typingsJapgolly.angularCommon.anon.NgPlural, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `true`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/common", "NgPlural.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgPlural, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgPlural, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

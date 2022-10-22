@@ -10,10 +10,10 @@ Uri and query string manipulation
 | ------------------ | :-------------: |
 | Full name          | jsuri |
 | Keywords           | uri, url, query, path |
-| # releases         | 0 |
-| # dependents       | 39 |
-| # downloads        | 1480225 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 297354.3333333333 |
+| # stars            | 379.0 |
 
 ## Links
 - [Homepage](https://github.com/derek-watson/jsUri)

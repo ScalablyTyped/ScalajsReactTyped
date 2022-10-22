@@ -1,8 +1,8 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arcgisJsApi.esri.ExtrudeSymbol3DLayer
@@ -14,5 +14,4 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.arcgisJsApi.esri.PathSymbol3DLayer
   - typingsJapgolly.arcgisJsApi.esri.TextSymbol3DLayer
 */
-trait symbolsSymbol3DLayer extends js.Object
-
+trait symbolsSymbol3DLayer extends StObject

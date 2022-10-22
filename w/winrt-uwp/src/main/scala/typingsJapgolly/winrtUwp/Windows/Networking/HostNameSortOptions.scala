@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Networking
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HostNameSortOptions extends js.Object
-
+sealed trait HostNameSortOptions extends StObject
 /** Options for how a list of EndpointPair objects is sorted. */
 @JSGlobal("Windows.Networking.HostNameSortOptions")
 @js.native
-object HostNameSortOptions extends js.Object {
+object HostNameSortOptions extends StObject {
+  
   /** Sort a list of EndpointPair objects by the default criteria used the system which is to minimize connection delays. */
   @js.native
-  sealed trait none extends HostNameSortOptions
+  sealed trait none
+    extends StObject
+       with HostNameSortOptions
   
   /** Sort a list of EndpointPair objects to optimize for long connections. */
   @js.native
-  sealed trait optimizeForLongConnections extends HostNameSortOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HostNameSortOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object optimizeForLongConnections extends TopLevel[optimizeForLongConnections with Double]
-  
+  sealed trait optimizeForLongConnections
+    extends StObject
+       with HostNameSortOptions
 }
-

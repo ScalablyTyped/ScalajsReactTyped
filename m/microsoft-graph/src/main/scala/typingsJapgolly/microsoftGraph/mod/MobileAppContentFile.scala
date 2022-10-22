@@ -1,26 +1,37 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MobileAppContentFile extends Entity {
+trait MobileAppContentFile
+  extends StObject
+     with Entity {
+  
   // The Azure Storage URI.
-  var azureStorageUri: js.UndefOr[String] = js.undefined
+  var azureStorageUri: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The time the Azure storage Uri expires.
-  var azureStorageUriExpirationDateTime: js.UndefOr[String] = js.undefined
+  var azureStorageUriExpirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The time the file was created.
   var createdDateTime: js.UndefOr[String] = js.undefined
+  
   // A value indicating whether the file is committed.
   var isCommitted: js.UndefOr[Boolean] = js.undefined
+  
   // The manifest information.
-  var manifest: js.UndefOr[Double] = js.undefined
+  var manifest: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // the file name.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The size of the file prior to encryption.
   var size: js.UndefOr[Double] = js.undefined
+  
   // The size of the file after encryption.
   var sizeEncrypted: js.UndefOr[Double] = js.undefined
+  
   /**
     * The state of the current upload request. Possible values are: success, transientError, error, unknown,
     * azureStorageUriRequestSuccess, azureStorageUriRequestPending, azureStorageUriRequestFailed,
@@ -30,33 +41,57 @@ trait MobileAppContentFile extends Entity {
     */
   var uploadState: js.UndefOr[MobileAppContentFileUploadState] = js.undefined
 }
-
 object MobileAppContentFile {
-  @scala.inline
-  def apply(
-    azureStorageUri: String = null,
-    azureStorageUriExpirationDateTime: String = null,
-    createdDateTime: String = null,
-    id: String = null,
-    isCommitted: js.UndefOr[Boolean] = js.undefined,
-    manifest: Int | Double = null,
-    name: String = null,
-    size: Int | Double = null,
-    sizeEncrypted: Int | Double = null,
-    uploadState: MobileAppContentFileUploadState = null
-  ): MobileAppContentFile = {
+  
+  inline def apply(): MobileAppContentFile = {
     val __obj = js.Dynamic.literal()
-    if (azureStorageUri != null) __obj.updateDynamic("azureStorageUri")(azureStorageUri.asInstanceOf[js.Any])
-    if (azureStorageUriExpirationDateTime != null) __obj.updateDynamic("azureStorageUriExpirationDateTime")(azureStorageUriExpirationDateTime.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isCommitted)) __obj.updateDynamic("isCommitted")(isCommitted.asInstanceOf[js.Any])
-    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (sizeEncrypted != null) __obj.updateDynamic("sizeEncrypted")(sizeEncrypted.asInstanceOf[js.Any])
-    if (uploadState != null) __obj.updateDynamic("uploadState")(uploadState.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppContentFile]
   }
+  
+  extension [Self <: MobileAppContentFile](x: Self) {
+    
+    inline def setAzureStorageUri(value: NullableOption[String]): Self = StObject.set(x, "azureStorageUri", value.asInstanceOf[js.Any])
+    
+    inline def setAzureStorageUriExpirationDateTime(value: NullableOption[String]): Self = StObject.set(x, "azureStorageUriExpirationDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setAzureStorageUriExpirationDateTimeNull: Self = StObject.set(x, "azureStorageUriExpirationDateTime", null)
+    
+    inline def setAzureStorageUriExpirationDateTimeUndefined: Self = StObject.set(x, "azureStorageUriExpirationDateTime", js.undefined)
+    
+    inline def setAzureStorageUriNull: Self = StObject.set(x, "azureStorageUri", null)
+    
+    inline def setAzureStorageUriUndefined: Self = StObject.set(x, "azureStorageUri", js.undefined)
+    
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setIsCommitted(value: Boolean): Self = StObject.set(x, "isCommitted", value.asInstanceOf[js.Any])
+    
+    inline def setIsCommittedUndefined: Self = StObject.set(x, "isCommitted", js.undefined)
+    
+    inline def setManifest(value: NullableOption[String]): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    
+    inline def setManifestNull: Self = StObject.set(x, "manifest", null)
+    
+    inline def setManifestUndefined: Self = StObject.set(x, "manifest", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeEncrypted(value: Double): Self = StObject.set(x, "sizeEncrypted", value.asInstanceOf[js.Any])
+    
+    inline def setSizeEncryptedUndefined: Self = StObject.set(x, "sizeEncrypted", js.undefined)
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUploadState(value: MobileAppContentFileUploadState): Self = StObject.set(x, "uploadState", value.asInstanceOf[js.Any])
+    
+    inline def setUploadStateUndefined: Self = StObject.set(x, "uploadState", js.undefined)
+  }
 }
-

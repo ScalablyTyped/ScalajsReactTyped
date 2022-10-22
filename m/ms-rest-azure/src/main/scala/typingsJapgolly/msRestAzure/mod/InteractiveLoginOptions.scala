@@ -1,40 +1,29 @@
 package typingsJapgolly.msRestAzure.mod
 
-import typingsJapgolly.msRestAzure.msRestAzureStrings.batch
-import typingsJapgolly.msRestAzure.msRestAzureStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InteractiveLoginOptions extends DeviceTokenCredentialsOptions {
+trait InteractiveLoginOptions
+  extends StObject
+     with DeviceTokenCredentialsOptions {
+  
   /**
     * The language code specifying how the message should be localized to. Default value 'en-us'.
     */
   var language: js.UndefOr[String] = js.undefined
 }
-
 object InteractiveLoginOptions {
-  @scala.inline
-  def apply(
-    authorizationScheme: String = null,
-    clientId: String = null,
-    domain: String = null,
-    environment: AzureEnvironment = null,
-    language: String = null,
-    tokenAudience: graph | batch | String = null,
-    tokenCache: js.Any = null,
-    username: String = null
-  ): InteractiveLoginOptions = {
+  
+  inline def apply(): InteractiveLoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (authorizationScheme != null) __obj.updateDynamic("authorizationScheme")(authorizationScheme.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (tokenAudience != null) __obj.updateDynamic("tokenAudience")(tokenAudience.asInstanceOf[js.Any])
-    if (tokenCache != null) __obj.updateDynamic("tokenCache")(tokenCache.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveLoginOptions]
   }
+  
+  extension [Self <: InteractiveLoginOptions](x: Self) {
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+  }
 }
-

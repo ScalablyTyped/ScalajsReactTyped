@@ -1,20 +1,27 @@
 package typingsJapgolly.apolloProtobufjs.mod.common
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.ListValue message. */
-trait IListValue extends js.Object {
+trait IListValue extends StObject {
+  
   var values: js.UndefOr[js.Array[IValue]] = js.undefined
 }
-
 object IListValue {
-  @scala.inline
-  def apply(values: js.Array[IValue] = null): IListValue = {
+  
+  inline def apply(): IListValue = {
     val __obj = js.Dynamic.literal()
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[IListValue]
   }
+  
+  extension [Self <: IListValue](x: Self) {
+    
+    inline def setValues(value: js.Array[IValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: IValue*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

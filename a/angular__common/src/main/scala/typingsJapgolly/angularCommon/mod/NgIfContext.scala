@@ -1,14 +1,15 @@
 package typingsJapgolly.angularCommon.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common", "NgIfContext")
 @js.native
-class NgIfContext () extends js.Object {
+open class NgIfContext[T] () extends StObject {
+  
   @JSName("$implicit")
-  var $implicit: js.Any = js.native
-  var ngIf: js.Any = js.native
+  var $implicit: T = js.native
+  
+  var ngIf: T = js.native
 }
-

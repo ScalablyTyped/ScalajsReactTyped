@@ -1,19 +1,29 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.RefHandle
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.facade.React.RefHandle
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.popupContentMod.PopupContentProps
-import typingsJapgolly.semanticUiReact.popupHeaderMod.PopupHeaderProps
-import typingsJapgolly.semanticUiReact.popupMod.default
-import typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps
+import org.scalajs.dom.Document
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.HTMLAttributes
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsModulesPopupPopupContentMod.PopupContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesPopupPopupMod.PopperOffsetsFunction
+import typingsJapgolly.semanticUiReact.distCommonjsModulesPopupPopupMod.PopperOffsetsFunctionParams
+import typingsJapgolly.semanticUiReact.distCommonjsModulesPopupPopupMod.PopupProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`bottom center`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`bottom left`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`bottom right`
@@ -31,119 +41,185 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.mini
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.small
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.tiny
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.very
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popup {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    basic: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    closeOnDocumentClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEscape: js.UndefOr[Boolean] = js.undefined,
-    closeOnPortalMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerBlur: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnTriggerMouseLeave: js.UndefOr[Boolean] = js.undefined,
-    content: SemanticShorthandItem[PopupContentProps] = null,
-    context: js.Object | RefHandle[HTMLElement] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    eventPool: String = null,
-    eventsEnabled: js.UndefOr[Boolean] = js.undefined,
-    flowing: js.UndefOr[Boolean] = js.undefined,
-    header: SemanticShorthandItem[PopupHeaderProps] = null,
-    hideOnScroll: js.UndefOr[Boolean] = js.undefined,
-    hoverable: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    mountNode: js.Any = null,
-    mouseEnterDelay: Int | Double = null,
-    mouseLeaveDelay: Int | Double = null,
-    offset: Double | String = null,
-    on: hover | click | focus | (js.Array[hover | click | focus]) = null,
-    onClose: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ PopupProps) => Callback = null,
-    onMount: (/* nothing */ Null, /* data */ PopupProps) => Callback = null,
-    onOpen: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ PopupProps) => Callback = null,
-    onUnmount: (/* nothing */ Null, /* data */ PopupProps) => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerClick: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerFocus: js.UndefOr[Boolean] = js.undefined,
-    openOnTriggerMouseEnter: js.UndefOr[Boolean] = js.undefined,
-    pinned: js.UndefOr[Boolean] = js.undefined,
-    popperDependencies: js.Array[_] = null,
-    popperModifiers: js.Object = null,
-    position: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`) = null,
-    positionFixed: js.UndefOr[Boolean] = js.undefined,
-    size: mini | tiny | small | large | huge = null,
-    style: js.Object = null,
-    trigger: VdomNode = null,
-    triggerRef: japgolly.scalajs.react.raw.React.Ref = null,
-    wide: Boolean | very = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PopupProps, default, Unit, PopupProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnDocumentClick)) __obj.updateDynamic("closeOnDocumentClick")(closeOnDocumentClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnPortalMouseLeave)) __obj.updateDynamic("closeOnPortalMouseLeave")(closeOnPortalMouseLeave.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerBlur)) __obj.updateDynamic("closeOnTriggerBlur")(closeOnTriggerBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerClick)) __obj.updateDynamic("closeOnTriggerClick")(closeOnTriggerClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnTriggerMouseLeave)) __obj.updateDynamic("closeOnTriggerMouseLeave")(closeOnTriggerMouseLeave.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool.asInstanceOf[js.Any])
-    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(flowing)) __obj.updateDynamic("flowing")(flowing.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
-    if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps) => onClose(t0, t1).runNow()))
-    if (onMount != null) __obj.updateDynamic("onMount")(js.Any.fromFunction2((t0: /* nothing */ scala.Null, t1: /* data */ typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps) => onMount(t0, t1).runNow()))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps) => onOpen(t0, t1).runNow()))
-    if (onUnmount != null) __obj.updateDynamic("onUnmount")(js.Any.fromFunction2((t0: /* nothing */ scala.Null, t1: /* data */ typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps) => onUnmount(t0, t1).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned.asInstanceOf[js.Any])
-    if (popperDependencies != null) __obj.updateDynamic("popperDependencies")(popperDependencies.asInstanceOf[js.Any])
-    if (popperModifiers != null) __obj.updateDynamic("popperModifiers")(popperModifiers.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(positionFixed)) __obj.updateDynamic("positionFixed")(positionFixed.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.rawNode.asInstanceOf[js.Any])
-    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef.asInstanceOf[js.Any])
-    if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.popupMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.popupPopupMod.PopupProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Popup.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_PopupContentProps_1200653545 = new SharedBuilder_PopupContentProps_1200653545(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: PopupContentProps): SharedBuilder_PopupContentProps_1200653545 = new SharedBuilder_PopupContentProps_1200653545(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Popup", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Header {
+    
+    @JSImport("semantic-ui-react", "Popup.Header")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Header.type): SharedBuilder_PopupHeaderProps_1580835029 = new SharedBuilder_PopupHeaderProps_1580835029(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: PopupHeaderProps): SharedBuilder_PopupHeaderProps_1580835029 = new SharedBuilder_PopupHeaderProps_1580835029(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Popup")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def basic(value: Boolean): this.type = set("basic", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def closeOnDocumentClick(value: Boolean): this.type = set("closeOnDocumentClick", value.asInstanceOf[js.Any])
+    
+    inline def closeOnEscape(value: Boolean): this.type = set("closeOnEscape", value.asInstanceOf[js.Any])
+    
+    inline def closeOnPortalMouseLeave(value: Boolean): this.type = set("closeOnPortalMouseLeave", value.asInstanceOf[js.Any])
+    
+    inline def closeOnTriggerBlur(value: Boolean): this.type = set("closeOnTriggerBlur", value.asInstanceOf[js.Any])
+    
+    inline def closeOnTriggerClick(value: Boolean): this.type = set("closeOnTriggerClick", value.asInstanceOf[js.Any])
+    
+    inline def closeOnTriggerMouseLeave(value: Boolean): this.type = set("closeOnTriggerMouseLeave", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandItem[PopupContentProps]): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentFunction3(
+      value: (/* component */ ElementType, PopupContentProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("content", js.Any.fromFunction3(value))
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def context(value: Document | Window | HTMLElement | RefHandle[HTMLElement]): this.type = set("context", value.asInstanceOf[js.Any])
+    
+    inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def eventPool(value: String): this.type = set("eventPool", value.asInstanceOf[js.Any])
+    
+    inline def eventsEnabled(value: Boolean): this.type = set("eventsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def flowing(value: Boolean): this.type = set("flowing", value.asInstanceOf[js.Any])
+    
+    inline def header(value: SemanticShorthandItem[PopupHeaderProps]): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def headerFunction3(
+      value: (/* component */ ElementType, PopupHeaderProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("header", js.Any.fromFunction3(value))
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def hideOnScroll(value: Boolean): this.type = set("hideOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def hoverable(value: Boolean): this.type = set("hoverable", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def mountNode(value: Any): this.type = set("mountNode", value.asInstanceOf[js.Any])
+    
+    inline def mouseEnterDelay(value: Double): this.type = set("mouseEnterDelay", value.asInstanceOf[js.Any])
+    
+    inline def mouseLeaveDelay(value: Double): this.type = set("mouseLeaveDelay", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: (js.Tuple2[Double, js.UndefOr[Double]]) | PopperOffsetsFunction): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def offsetFunction1(
+      value: /* params */ PopperOffsetsFunctionParams => js.Tuple2[js.UndefOr[Double], js.UndefOr[Double]]
+    ): this.type = set("offset", js.Any.fromFunction1(value))
+    
+    inline def on(value: hover | click | focus | (js.Array[hover | click | focus])): this.type = set("on", value.asInstanceOf[js.Any])
+    
+    inline def onClose(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ PopupProps) => Callback): this.type = set("onClose", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ PopupProps) => (value(t0, t1)).runNow()))
+    
+    inline def onMount(value: (/* nothing */ Null, /* data */ PopupProps) => Callback): this.type = set("onMount", js.Any.fromFunction2((t0: /* nothing */ Null, t1: /* data */ PopupProps) => (value(t0, t1)).runNow()))
+    
+    inline def onOpen(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ PopupProps) => Callback): this.type = set("onOpen", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ PopupProps) => (value(t0, t1)).runNow()))
+    
+    inline def onUnmount(value: (/* nothing */ Null, /* data */ PopupProps) => Callback): this.type = set("onUnmount", js.Any.fromFunction2((t0: /* nothing */ Null, t1: /* data */ PopupProps) => (value(t0, t1)).runNow()))
+    
+    inline def onVarargs(value: (hover | click | focus)*): this.type = set("on", js.Array(value*))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def openOnTriggerClick(value: Boolean): this.type = set("openOnTriggerClick", value.asInstanceOf[js.Any])
+    
+    inline def openOnTriggerFocus(value: Boolean): this.type = set("openOnTriggerFocus", value.asInstanceOf[js.Any])
+    
+    inline def openOnTriggerMouseEnter(value: Boolean): this.type = set("openOnTriggerMouseEnter", value.asInstanceOf[js.Any])
+    
+    inline def pinned(value: Boolean): this.type = set("pinned", value.asInstanceOf[js.Any])
+    
+    inline def popper(value: SemanticShorthandItem[HTMLAttributes[HTMLDivElement]]): this.type = set("popper", value.asInstanceOf[js.Any])
+    
+    inline def popperDependencies(value: js.Array[Any]): this.type = set("popperDependencies", value.asInstanceOf[js.Any])
+    
+    inline def popperDependenciesVarargs(value: Any*): this.type = set("popperDependencies", js.Array(value*))
+    
+    inline def popperFunction3(
+      value: (/* component */ ElementType, HTMLAttributes[HTMLDivElement], /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("popper", js.Any.fromFunction3(value))
+    
+    inline def popperModifiers(value: js.Array[Any]): this.type = set("popperModifiers", value.asInstanceOf[js.Any])
+    
+    inline def popperModifiersVarargs(value: Any*): this.type = set("popperModifiers", js.Array(value*))
+    
+    inline def popperNull: this.type = set("popper", null)
+    
+    inline def popperVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("popper", js.Array(value*))
+    
+    inline def popperVdomElement(value: VdomElement): this.type = set("popper", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def position(
+      value: (`top left`) | (`top right`) | (`bottom right`) | (`bottom left`) | (`right center`) | (`left center`) | (`top center`) | (`bottom center`)
+    ): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def positionFixed(value: Boolean): this.type = set("positionFixed", value.asInstanceOf[js.Any])
+    
+    inline def size(value: mini | tiny | small | large | huge): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def trigger(value: VdomNode): this.type = set("trigger", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def triggerNull: this.type = set("trigger", null)
+    
+    inline def triggerRef(value: typingsJapgolly.react.mod.Ref[Any]): this.type = set("triggerRef", value.asInstanceOf[js.Any])
+    
+    inline def triggerRefFunction1(value: Any | Null => Callback): this.type = set("triggerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def triggerRefNull: this.type = set("triggerRef", null)
+    
+    inline def triggerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("trigger", js.Array(value*))
+    
+    inline def triggerVdomElement(value: VdomElement): this.type = set("trigger", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def wide(value: Boolean | very): this.type = set("wide", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Popup.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PopupProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

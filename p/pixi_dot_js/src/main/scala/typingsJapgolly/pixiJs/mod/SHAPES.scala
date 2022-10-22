@@ -1,33 +1,23 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Constants that identify shapes, mainly to prevent `instanceof` calls.
-  *
-  * @static
-  * @constant
-  * @name SHAPES
-  * @memberof PIXI
-  * @type {enum}
-  * @property {number} POLY Polygon
-  * @property {number} RECT Rectangle
-  * @property {number} CIRC Circle
-  * @property {number} ELIP Ellipse
-  * @property {number} RREC Rounded Rectangle
-  * @enum {number}
-  */
 @JSImport("pixi.js", "SHAPES")
 @js.native
-object SHAPES extends js.Object {
-  /* 2 */ val CIRC: typingsJapgolly.pixiJs.PIXI.SHAPES.CIRC with Double = js.native
-  /* 3 */ val ELIP: typingsJapgolly.pixiJs.PIXI.SHAPES.ELIP with Double = js.native
-  /* 0 */ val POLY: typingsJapgolly.pixiJs.PIXI.SHAPES.POLY with Double = js.native
-  /* 1 */ val RECT: typingsJapgolly.pixiJs.PIXI.SHAPES.RECT with Double = js.native
-  /* 4 */ val RREC: typingsJapgolly.pixiJs.PIXI.SHAPES.RREC with Double = js.native
+object SHAPES extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.pixiJs.PIXI.SHAPES with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.pixiMath.mod.SHAPES & Double] = js.native
+  
+  /* 2 */ val CIRC: typingsJapgolly.pixiMath.mod.SHAPES.CIRC & Double = js.native
+  
+  /* 3 */ val ELIP: typingsJapgolly.pixiMath.mod.SHAPES.ELIP & Double = js.native
+  
+  /* 0 */ val POLY: typingsJapgolly.pixiMath.mod.SHAPES.POLY & Double = js.native
+  
+  /* 1 */ val RECT: typingsJapgolly.pixiMath.mod.SHAPES.RECT & Double = js.native
+  
+  /* 4 */ val RREC: typingsJapgolly.pixiMath.mod.SHAPES.RREC & Double = js.native
 }
-

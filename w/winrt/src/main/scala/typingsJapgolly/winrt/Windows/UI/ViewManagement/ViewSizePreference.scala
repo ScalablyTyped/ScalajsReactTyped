@@ -1,53 +1,42 @@
 package typingsJapgolly.winrt.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewSizePreference extends js.Object
-
+sealed trait ViewSizePreference extends StObject
 @JSGlobal("Windows.UI.ViewManagement.ViewSizePreference")
 @js.native
-object ViewSizePreference extends js.Object {
-  @js.native
-  sealed trait default extends ViewSizePreference
+object ViewSizePreference extends StObject {
   
   @js.native
-  sealed trait useHalf extends ViewSizePreference
+  sealed trait default
+    extends StObject
+       with ViewSizePreference
   
   @js.native
-  sealed trait useLess extends ViewSizePreference
+  sealed trait useHalf
+    extends StObject
+       with ViewSizePreference
   
   @js.native
-  sealed trait useMinimum extends ViewSizePreference
+  sealed trait useLess
+    extends StObject
+       with ViewSizePreference
   
   @js.native
-  sealed trait useMore extends ViewSizePreference
+  sealed trait useMinimum
+    extends StObject
+       with ViewSizePreference
   
   @js.native
-  sealed trait useNone extends ViewSizePreference
+  sealed trait useMore
+    extends StObject
+       with ViewSizePreference
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewSizePreference with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 2 */ @js.native
-  object useHalf extends TopLevel[useHalf with Double]
-  
-  /* 1 */ @js.native
-  object useLess extends TopLevel[useLess with Double]
-  
-  /* 4 */ @js.native
-  object useMinimum extends TopLevel[useMinimum with Double]
-  
-  /* 3 */ @js.native
-  object useMore extends TopLevel[useMore with Double]
-  
-  /* 5 */ @js.native
-  object useNone extends TopLevel[useNone with Double]
-  
+  @js.native
+  sealed trait useNone
+    extends StObject
+       with ViewSizePreference
 }
-

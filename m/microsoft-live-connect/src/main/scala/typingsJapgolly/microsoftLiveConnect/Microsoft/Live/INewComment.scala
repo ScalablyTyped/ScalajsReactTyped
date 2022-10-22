@@ -1,26 +1,29 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new comment.
   */
-trait INewComment extends js.Object {
+trait INewComment extends StObject {
+  
   /**
     * The text of the comment. The maximum length of a comment is 10,000
     * characters.
     */
   var message: String
 }
-
 object INewComment {
-  @scala.inline
-  def apply(message: String): INewComment = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
   
+  inline def apply(message: String): INewComment = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[INewComment]
   }
+  
+  extension [Self <: INewComment](x: Self) {
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

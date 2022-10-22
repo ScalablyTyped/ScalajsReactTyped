@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceOptions extends js.Object {
+trait DeviceOptions extends StObject {
+  
   var device_id: js.UndefOr[String] = js.undefined
 }
-
 object DeviceOptions {
-  @scala.inline
-  def apply(device_id: String = null): DeviceOptions = {
+  
+  inline def apply(): DeviceOptions = {
     val __obj = js.Dynamic.literal()
-    if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceOptions]
   }
+  
+  extension [Self <: DeviceOptions](x: Self) {
+    
+    inline def setDevice_id(value: String): Self = StObject.set(x, "device_id", value.asInstanceOf[js.Any])
+    
+    inline def setDevice_idUndefined: Self = StObject.set(x, "device_id", js.undefined)
+  }
 }
-

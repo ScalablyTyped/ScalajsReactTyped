@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-instantsearch-native
 
-Typings are for version 5.3
+Typings are for version 6.3
 
 ## Library description:
 ⚡ Lightning-fast search for React Native, by Algolia
@@ -10,15 +10,13 @@ Typings are for version 5.3
 | ------------------ | :-------------: |
 | Full name          | react-instantsearch-native |
 | Keywords           | algolia, components, fast, instantsearch, react, react-native, search |
-| # releases         | 23 |
-| # dependents       | 1 |
-| # downloads        | 637713 |
-| # stars            | 0 |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 79556.0 |
+| # stars            | 1912.0 |
 
 ## Links
 - [Homepage](https://www.algolia.com/doc/guides/building-search-ui/what-is-instantsearch/react/)
-- [Bugs](https://github.com/algolia/react-instantsearch/issues)
-- [Repository](https://github.com/algolia/react-instantsearch)
 - [Npm](https://www.npmjs.com/package/react-instantsearch-native)
     
 

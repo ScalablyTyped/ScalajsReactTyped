@@ -1,36 +1,54 @@
 package typingsJapgolly.firebaseTokenGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TokenOptions extends js.Object {
+trait TokenOptions extends StObject {
+  
   var admin: js.UndefOr[Boolean] = js.undefined
+  
   var debug: js.UndefOr[Boolean] = js.undefined
+  
   var expires: js.UndefOr[Double] = js.undefined
+  
   var iat: js.UndefOr[Double] = js.undefined
+  
   var notBefore: js.UndefOr[Double] = js.undefined
+  
   var simulate: js.UndefOr[Boolean] = js.undefined
 }
-
 object TokenOptions {
-  @scala.inline
-  def apply(
-    admin: js.UndefOr[Boolean] = js.undefined,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    expires: Int | Double = null,
-    iat: Int | Double = null,
-    notBefore: Int | Double = null,
-    simulate: js.UndefOr[Boolean] = js.undefined
-  ): TokenOptions = {
+  
+  inline def apply(): TokenOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(admin)) __obj.updateDynamic("admin")(admin.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (iat != null) __obj.updateDynamic("iat")(iat.asInstanceOf[js.Any])
-    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
-    if (!js.isUndefined(simulate)) __obj.updateDynamic("simulate")(simulate.asInstanceOf[js.Any])
     __obj.asInstanceOf[TokenOptions]
   }
+  
+  extension [Self <: TokenOptions](x: Self) {
+    
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    
+    inline def setAdminUndefined: Self = StObject.set(x, "admin", js.undefined)
+    
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    
+    inline def setIat(value: Double): Self = StObject.set(x, "iat", value.asInstanceOf[js.Any])
+    
+    inline def setIatUndefined: Self = StObject.set(x, "iat", js.undefined)
+    
+    inline def setNotBefore(value: Double): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+    
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "notBefore", js.undefined)
+    
+    inline def setSimulate(value: Boolean): Self = StObject.set(x, "simulate", value.asInstanceOf[js.Any])
+    
+    inline def setSimulateUndefined: Self = StObject.set(x, "simulate", js.undefined)
+  }
 }
-

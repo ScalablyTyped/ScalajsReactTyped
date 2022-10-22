@@ -1,26 +1,38 @@
 package typingsJapgolly.ydnDb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatabaseSchemaJson extends js.Object {
+trait DatabaseSchemaJson extends StObject {
+  
   var fullTextCatalogs: js.UndefOr[js.Array[FullTextCatalog]] = js.undefined
+  
   var stores: js.Array[StoreSchemaJson]
+  
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DatabaseSchemaJson {
-  @scala.inline
-  def apply(
-    stores: js.Array[StoreSchemaJson],
-    fullTextCatalogs: js.Array[FullTextCatalog] = null,
-    version: Int | Double = null
-  ): DatabaseSchemaJson = {
+  
+  inline def apply(stores: js.Array[StoreSchemaJson]): DatabaseSchemaJson = {
     val __obj = js.Dynamic.literal(stores = stores.asInstanceOf[js.Any])
-    if (fullTextCatalogs != null) __obj.updateDynamic("fullTextCatalogs")(fullTextCatalogs.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseSchemaJson]
   }
+  
+  extension [Self <: DatabaseSchemaJson](x: Self) {
+    
+    inline def setFullTextCatalogs(value: js.Array[FullTextCatalog]): Self = StObject.set(x, "fullTextCatalogs", value.asInstanceOf[js.Any])
+    
+    inline def setFullTextCatalogsUndefined: Self = StObject.set(x, "fullTextCatalogs", js.undefined)
+    
+    inline def setFullTextCatalogsVarargs(value: FullTextCatalog*): Self = StObject.set(x, "fullTextCatalogs", js.Array(value*))
+    
+    inline def setStores(value: js.Array[StoreSchemaJson]): Self = StObject.set(x, "stores", value.asInstanceOf[js.Any])
+    
+    inline def setStoresVarargs(value: StoreSchemaJson*): Self = StObject.set(x, "stores", js.Array(value*))
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

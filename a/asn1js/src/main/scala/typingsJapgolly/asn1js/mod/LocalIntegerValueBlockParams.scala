@@ -1,29 +1,66 @@
 package typingsJapgolly.asn1js.mod
 
+import typingsJapgolly.pvtsutils.mod.BufferSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalIntegerValueBlockParams extends LocalHexBlockParams
-
+/* Inlined parent asn1js.asn1js.HexBlockParams */
+/* Inlined parent asn1js.asn1js.ValueBlockParams */
+/* Inlined parent std.Partial<asn1js.asn1js.ILocalIntegerValueBlock> */
+trait LocalIntegerValueBlockParams extends StObject {
+  
+  var blockLength: js.UndefOr[Double] = js.undefined
+  
+  var error: js.UndefOr[String] = js.undefined
+  
+  var isHexOnly: js.UndefOr[scala.Boolean] = js.undefined
+  
+  var value: js.UndefOr[Double] = js.undefined
+  
+  var valueBeforeDecode: js.UndefOr[BufferSource] = js.undefined
+  
+  var valueHex: js.UndefOr[BufferSource] = js.undefined
+  
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
+}
 object LocalIntegerValueBlockParams {
-  @scala.inline
-  def apply(
-    blockLength: Int | Double = null,
-    error: String = null,
-    isHexOnly: js.UndefOr[scala.Boolean] = js.undefined,
-    valueBeforeDecode: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    valueHex: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    warnings: js.Array[String] = null
-  ): LocalIntegerValueBlockParams = {
+  
+  inline def apply(): LocalIntegerValueBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHexOnly)) __obj.updateDynamic("isHexOnly")(isHexOnly.asInstanceOf[js.Any])
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
-    if (valueHex != null) __obj.updateDynamic("valueHex")(valueHex.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalIntegerValueBlockParams]
   }
+  
+  extension [Self <: LocalIntegerValueBlockParams](x: Self) {
+    
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    
+    inline def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
+    
+    inline def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueBeforeDecode(value: BufferSource): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+    
+    inline def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
+    
+    inline def setValueHex(value: BufferSource): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
+    
+    inline def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
+  }
 }
-

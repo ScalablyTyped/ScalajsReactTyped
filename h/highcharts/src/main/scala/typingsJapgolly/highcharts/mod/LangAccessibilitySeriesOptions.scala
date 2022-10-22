@@ -1,15 +1,29 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LangAccessibilitySeriesOptions extends js.Object {
+trait LangAccessibilitySeriesOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) User supplied description text.
-    * This is added after the main summary if present.
+    * This is added in the point comment description by default if present.
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Description for the value of
+    * null points.
+    */
+  var nullPointValue: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Description for annotations on a
+    * point, as it is made available to assistive technology.
+    */
+  var pointAnnotationsDescription: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Lang configuration for the
     * series main summary. Each series type has two modes:
@@ -20,34 +34,59 @@ trait LangAccessibilitySeriesOptions extends js.Object {
     *
     * If a definition does not exist for the specific series type and mode, the
     * 'default' lang definitions are used.
+    *
+    * Chart and its subproperties can be accessed with the `{chart}` variable.
+    * The series and its subproperties can be accessed with the `{series}`
+    * variable.
+    *
+    * The series index (starting from 1) can be accessed with the
+    * `{seriesNumber}` variable.
     */
   var summary: js.UndefOr[LangAccessibilitySeriesSummaryOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) xAxis description for series if
     * there are multiple xAxes in the chart.
     */
   var xAxisDescription: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) yAxis description for series if
     * there are multiple yAxes in the chart.
     */
   var yAxisDescription: js.UndefOr[String] = js.undefined
 }
-
 object LangAccessibilitySeriesOptions {
-  @scala.inline
-  def apply(
-    description: String = null,
-    summary: LangAccessibilitySeriesSummaryOptions = null,
-    xAxisDescription: String = null,
-    yAxisDescription: String = null
-  ): LangAccessibilitySeriesOptions = {
+  
+  inline def apply(): LangAccessibilitySeriesOptions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
-    if (xAxisDescription != null) __obj.updateDynamic("xAxisDescription")(xAxisDescription.asInstanceOf[js.Any])
-    if (yAxisDescription != null) __obj.updateDynamic("yAxisDescription")(yAxisDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[LangAccessibilitySeriesOptions]
   }
+  
+  extension [Self <: LangAccessibilitySeriesOptions](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setNullPointValue(value: String): Self = StObject.set(x, "nullPointValue", value.asInstanceOf[js.Any])
+    
+    inline def setNullPointValueUndefined: Self = StObject.set(x, "nullPointValue", js.undefined)
+    
+    inline def setPointAnnotationsDescription(value: String): Self = StObject.set(x, "pointAnnotationsDescription", value.asInstanceOf[js.Any])
+    
+    inline def setPointAnnotationsDescriptionUndefined: Self = StObject.set(x, "pointAnnotationsDescription", js.undefined)
+    
+    inline def setSummary(value: LangAccessibilitySeriesSummaryOptions): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    
+    inline def setXAxisDescription(value: String): Self = StObject.set(x, "xAxisDescription", value.asInstanceOf[js.Any])
+    
+    inline def setXAxisDescriptionUndefined: Self = StObject.set(x, "xAxisDescription", js.undefined)
+    
+    inline def setYAxisDescription(value: String): Self = StObject.set(x, "yAxisDescription", value.asInstanceOf[js.Any])
+    
+    inline def setYAxisDescriptionUndefined: Self = StObject.set(x, "yAxisDescription", js.undefined)
+  }
 }
-

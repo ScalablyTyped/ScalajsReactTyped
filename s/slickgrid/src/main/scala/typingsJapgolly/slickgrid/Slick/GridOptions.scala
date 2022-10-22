@@ -1,308 +1,492 @@
 package typingsJapgolly.slickgrid.Slick
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridOptions[T /* <: SlickData */] extends js.Object {
+trait GridOptions[T /* <: SlickData */] extends StObject {
+  
   var addNewRowCssClass: js.UndefOr[String] = js.undefined
+  
   var alwaysAllowHorizontalScroll: js.UndefOr[Boolean] = js.undefined
+  
   var alwaysShowVerticalScroll: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
-  		**/
+    * Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.
+    **/
   var asyncEditorLoadDelay: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* Makes cell editors load asynchronously after a small delay. This greatly increases keyboard navigation speed.
-  		**/
+    * Makes cell editors load asynchronously after a small delay. This greatly increases keyboard navigation speed.
+    **/
   var asyncEditorLoading: js.UndefOr[Boolean] = js.undefined
+  
   var asyncPostRenderCleanupDelay: js.UndefOr[Double] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var asyncPostRenderDelay: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* Cell will not automatically go into edit mode when selected.
-  		**/
+    * Cell will not automatically go into edit mode when selected.
+    **/
   var autoEdit: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var autoHeight: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* A CSS class to apply to flashing cells via flashCell().
-  		**/
+    * A CSS class to apply to flashing cells via flashCell().
+    **/
   var cellFlashingCssClass: js.UndefOr[String] = js.undefined
+  
   /**
-  		* A CSS class to apply to cells highlighted via setHighlightedCells().
-  		**/
+    * A CSS class to apply to cells highlighted via setHighlightedCells().
+    **/
   var cellHighlightCssClass: js.UndefOr[String] = js.undefined
+  
   var createFooterRow: js.UndefOr[Boolean] = js.undefined
+  
   var createPreHeaderPanel: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
-  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ js.Any, /* columnDef */ js.Any, _]] = js.undefined
+    *
+    **/
+  var dataItemColumnValueExtractor: js.UndefOr[js.Function2[/* item */ Any, /* columnDef */ Any, Any]] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var defaultColumnWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var defaultFormatter: js.UndefOr[Formatter[T]] = js.undefined
+  
   var doPaging: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* Not listed as a default under options in slick.grid.js
-  		**/
-  var editCommandHandler: js.UndefOr[js.Any] = js.undefined
+    * Not listed as a default under options in slick.grid.js
+    **/
+  var editCommandHandler: js.UndefOr[Any] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   var editorCellNavOnLRKeys: js.UndefOr[Boolean] = js.undefined
-   // queueAndExecuteCommand
+  
+  // queueAndExecuteCommand
   /**
-  		* A factory object responsible to creating an editor for a given cell. Must implement getEditor(column).
-  		**/
+    * A factory object responsible to creating an editor for a given cell. Must implement getEditor(column).
+    **/
   var editorFactory: js.UndefOr[EditorFactory] = js.undefined
+  
   /**
-  		* A Slick.EditorLock instance to use for controlling concurrent data edits.
-  		**/
+    * A Slick.EditorLock instance to use for controlling concurrent data edits.
+    **/
   var editorLock: js.UndefOr[EditorLock[T]] = js.undefined
+  
   var emulatePagingWhenScrolling: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If true, a blank row will be displayed at the bottom - typing values in that row will add a new one. Must subscribe to onAddNewRow to save values.
-  		**/
+    * If true, a blank row will be displayed at the bottom - typing values in that row will add a new one. Must subscribe to onAddNewRow to save values.
+    **/
   var enableAddRow: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
-  		**/
+    * If true, async post rendering will occur and asyncPostRender delegates on columns will be called.
+    **/
   var enableAsyncPostRender: js.UndefOr[Boolean] = js.undefined
+  
   var enableAsyncPostRenderCleanup: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* Appears to enable cell virtualisation for optimised speed with large datasets
-  		**/
+    * Appears to enable cell virtualisation for optimised speed with large datasets
+    **/
   var enableCellNavigation: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
-  		**/
-  var enableCellRangeSelection: js.UndefOr[js.Any] = js.undefined
+    * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
+    **/
+  var enableCellRangeSelection: js.UndefOr[Any] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var enableColumnReorder: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
-  		**/
-  var enableRowReordering: js.UndefOr[js.Any] = js.undefined
+    * *WARNING*: Not contained in SlickGrid 2.1, may be deprecated
+    **/
+  var enableRowReordering: js.UndefOr[Any] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var enableTextSelectionOnCells: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* @see Example: Explicit Initialization
-  		**/
+    * @see Example: Explicit Initialization
+    **/
   var explicitInitialization: js.UndefOr[Boolean] = js.undefined
+  
   var footerRowHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* Force column sizes to fit into the container (preventing horizontal scrolling). Effectively sets column width to be 1/Number of Columns which on small containers may not be desirable
-  		**/
+    * Force column sizes to fit into the container (preventing horizontal scrolling). Effectively sets column width to be 1/Number of Columns which on small containers may not be desirable
+    **/
   var forceFitColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var forceSyncScrolling: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* A factory object responsible to creating a formatter for a given cell. Must implement getFormatter(column).
-  		**/
+    * A factory object responsible to creating a formatter for a given cell. Must implement getFormatter(column).
+    **/
   var formatterFactory: js.UndefOr[FormatterFactory[T]] = js.undefined
+  
   var frozenBottom: js.UndefOr[Boolean] = js.undefined
+  
   var frozenColumn: js.UndefOr[Double] = js.undefined
+  
   var frozenRow: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* Will expand the table row divs to the full width of the container, table cell divs will remain aligned to the left
-  		**/
+    * Will expand the table row divs to the full width of the container, table cell divs will remain aligned to the left
+    **/
   var fullWidthRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var headerRowHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var leaveSpaceForNewRows: js.UndefOr[Boolean] = js.undefined
+  
   var minRowBuffer: js.UndefOr[Double] = js.undefined
+  
   /**
-  		* @see Example: Multi-Column Sort
-  		**/
+    * @see Example: Multi-Column Sort
+    **/
   var multiColumnSort: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var multiSelect: js.UndefOr[Boolean] = js.undefined
+  
   var numberedMultiColumnSort: js.UndefOr[Boolean] = js.undefined
+  
   var preHeaderPanelHeight: js.UndefOr[Double] = js.undefined
+  
   var preserveCopiedSelectionOnPaste: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var rowHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var selectedCellCssClass: js.UndefOr[String] = js.undefined
+  
   var showCellSelection: js.UndefOr[Boolean] = js.undefined
+  
   var showFooterRow: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var showHeaderRow: js.UndefOr[Boolean] = js.undefined
+  
   var showPreHeaderPanel: js.UndefOr[Boolean] = js.undefined
+  
   var showTopPanel: js.UndefOr[Boolean] = js.undefined
+  
   var sortColNumberInSeparateSpan: js.UndefOr[Boolean] = js.undefined
+  
   var suppressActiveCellChangeOnEdit: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		* If true, the column being resized will change its width as the mouse is dragging the resize handle. If false, the column will resize after mouse drag ends.
-  		**/
+    * If true, the column being resized will change its width as the mouse is dragging the resize handle. If false, the column will resize after mouse drag ends.
+    **/
   var syncColumnCellResize: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		*
-  		**/
+    *
+    **/
   var topPanelHeight: js.UndefOr[Double] = js.undefined
+  
   var tristateMultiColumnSort: js.UndefOr[Boolean] = js.undefined
+  
   var viewportClass: js.UndefOr[String] = js.undefined
 }
-
 object GridOptions {
-  @scala.inline
-  def apply[T /* <: SlickData */](
-    addNewRowCssClass: String = null,
-    alwaysAllowHorizontalScroll: js.UndefOr[Boolean] = js.undefined,
-    alwaysShowVerticalScroll: js.UndefOr[Boolean] = js.undefined,
-    asyncEditorLoadDelay: Int | Double = null,
-    asyncEditorLoading: js.UndefOr[Boolean] = js.undefined,
-    asyncPostRenderCleanupDelay: Int | Double = null,
-    asyncPostRenderDelay: Int | Double = null,
-    autoEdit: js.UndefOr[Boolean] = js.undefined,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    cellFlashingCssClass: String = null,
-    cellHighlightCssClass: String = null,
-    createFooterRow: js.UndefOr[Boolean] = js.undefined,
-    createPreHeaderPanel: js.UndefOr[Boolean] = js.undefined,
-    dataItemColumnValueExtractor: (/* item */ js.Any, /* columnDef */ js.Any) => CallbackTo[js.Any] = null,
-    defaultColumnWidth: Int | Double = null,
-    defaultFormatter: (/* row */ Double, /* cell */ Double, /* value */ js.Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => CallbackTo[String] = null,
-    doPaging: js.UndefOr[Boolean] = js.undefined,
-    editCommandHandler: js.Any = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    editorCellNavOnLRKeys: js.UndefOr[Boolean] = js.undefined,
-    editorFactory: EditorFactory = null,
-    editorLock: EditorLock[T] = null,
-    emulatePagingWhenScrolling: js.UndefOr[Boolean] = js.undefined,
-    enableAddRow: js.UndefOr[Boolean] = js.undefined,
-    enableAsyncPostRender: js.UndefOr[Boolean] = js.undefined,
-    enableAsyncPostRenderCleanup: js.UndefOr[Boolean] = js.undefined,
-    enableCellNavigation: js.UndefOr[Boolean] = js.undefined,
-    enableCellRangeSelection: js.Any = null,
-    enableColumnReorder: js.UndefOr[Boolean] = js.undefined,
-    enableRowReordering: js.Any = null,
-    enableTextSelectionOnCells: js.UndefOr[Boolean] = js.undefined,
-    explicitInitialization: js.UndefOr[Boolean] = js.undefined,
-    footerRowHeight: Int | Double = null,
-    forceFitColumns: js.UndefOr[Boolean] = js.undefined,
-    forceSyncScrolling: js.UndefOr[Boolean] = js.undefined,
-    formatterFactory: FormatterFactory[T] = null,
-    frozenBottom: js.UndefOr[Boolean] = js.undefined,
-    frozenColumn: Int | Double = null,
-    frozenRow: Int | Double = null,
-    fullWidthRows: js.UndefOr[Boolean] = js.undefined,
-    headerRowHeight: Int | Double = null,
-    leaveSpaceForNewRows: js.UndefOr[Boolean] = js.undefined,
-    minRowBuffer: Int | Double = null,
-    multiColumnSort: js.UndefOr[Boolean] = js.undefined,
-    multiSelect: js.UndefOr[Boolean] = js.undefined,
-    numberedMultiColumnSort: js.UndefOr[Boolean] = js.undefined,
-    preHeaderPanelHeight: Int | Double = null,
-    preserveCopiedSelectionOnPaste: js.UndefOr[Boolean] = js.undefined,
-    rowHeight: Int | Double = null,
-    selectedCellCssClass: String = null,
-    showCellSelection: js.UndefOr[Boolean] = js.undefined,
-    showFooterRow: js.UndefOr[Boolean] = js.undefined,
-    showHeaderRow: js.UndefOr[Boolean] = js.undefined,
-    showPreHeaderPanel: js.UndefOr[Boolean] = js.undefined,
-    showTopPanel: js.UndefOr[Boolean] = js.undefined,
-    sortColNumberInSeparateSpan: js.UndefOr[Boolean] = js.undefined,
-    suppressActiveCellChangeOnEdit: js.UndefOr[Boolean] = js.undefined,
-    syncColumnCellResize: js.UndefOr[Boolean] = js.undefined,
-    topPanelHeight: Int | Double = null,
-    tristateMultiColumnSort: js.UndefOr[Boolean] = js.undefined,
-    viewportClass: String = null
-  ): GridOptions[T] = {
+  
+  inline def apply[T /* <: SlickData */](): GridOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (addNewRowCssClass != null) __obj.updateDynamic("addNewRowCssClass")(addNewRowCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysAllowHorizontalScroll)) __obj.updateDynamic("alwaysAllowHorizontalScroll")(alwaysAllowHorizontalScroll.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysShowVerticalScroll)) __obj.updateDynamic("alwaysShowVerticalScroll")(alwaysShowVerticalScroll.asInstanceOf[js.Any])
-    if (asyncEditorLoadDelay != null) __obj.updateDynamic("asyncEditorLoadDelay")(asyncEditorLoadDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(asyncEditorLoading)) __obj.updateDynamic("asyncEditorLoading")(asyncEditorLoading.asInstanceOf[js.Any])
-    if (asyncPostRenderCleanupDelay != null) __obj.updateDynamic("asyncPostRenderCleanupDelay")(asyncPostRenderCleanupDelay.asInstanceOf[js.Any])
-    if (asyncPostRenderDelay != null) __obj.updateDynamic("asyncPostRenderDelay")(asyncPostRenderDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoEdit)) __obj.updateDynamic("autoEdit")(autoEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
-    if (cellFlashingCssClass != null) __obj.updateDynamic("cellFlashingCssClass")(cellFlashingCssClass.asInstanceOf[js.Any])
-    if (cellHighlightCssClass != null) __obj.updateDynamic("cellHighlightCssClass")(cellHighlightCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(createFooterRow)) __obj.updateDynamic("createFooterRow")(createFooterRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(createPreHeaderPanel)) __obj.updateDynamic("createPreHeaderPanel")(createPreHeaderPanel.asInstanceOf[js.Any])
-    if (dataItemColumnValueExtractor != null) __obj.updateDynamic("dataItemColumnValueExtractor")(js.Any.fromFunction2((t0: /* item */ js.Any, t1: /* columnDef */ js.Any) => dataItemColumnValueExtractor(t0, t1).runNow()))
-    if (defaultColumnWidth != null) __obj.updateDynamic("defaultColumnWidth")(defaultColumnWidth.asInstanceOf[js.Any])
-    if (defaultFormatter != null) __obj.updateDynamic("defaultFormatter")(js.Any.fromFunction5((t0: /* row */ scala.Double, t1: /* cell */ scala.Double, t2: /* value */ js.Any, t3: /* columnDef */ typingsJapgolly.slickgrid.Slick.Column[T], t4: /* dataContext */ typingsJapgolly.slickgrid.Slick.SlickData) => defaultFormatter(t0, t1, t2, t3, t4).runNow()))
-    if (!js.isUndefined(doPaging)) __obj.updateDynamic("doPaging")(doPaging.asInstanceOf[js.Any])
-    if (editCommandHandler != null) __obj.updateDynamic("editCommandHandler")(editCommandHandler.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (!js.isUndefined(editorCellNavOnLRKeys)) __obj.updateDynamic("editorCellNavOnLRKeys")(editorCellNavOnLRKeys.asInstanceOf[js.Any])
-    if (editorFactory != null) __obj.updateDynamic("editorFactory")(editorFactory.asInstanceOf[js.Any])
-    if (editorLock != null) __obj.updateDynamic("editorLock")(editorLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(emulatePagingWhenScrolling)) __obj.updateDynamic("emulatePagingWhenScrolling")(emulatePagingWhenScrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAddRow)) __obj.updateDynamic("enableAddRow")(enableAddRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAsyncPostRender)) __obj.updateDynamic("enableAsyncPostRender")(enableAsyncPostRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableAsyncPostRenderCleanup)) __obj.updateDynamic("enableAsyncPostRenderCleanup")(enableAsyncPostRenderCleanup.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCellNavigation)) __obj.updateDynamic("enableCellNavigation")(enableCellNavigation.asInstanceOf[js.Any])
-    if (enableCellRangeSelection != null) __obj.updateDynamic("enableCellRangeSelection")(enableCellRangeSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableColumnReorder)) __obj.updateDynamic("enableColumnReorder")(enableColumnReorder.asInstanceOf[js.Any])
-    if (enableRowReordering != null) __obj.updateDynamic("enableRowReordering")(enableRowReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableTextSelectionOnCells)) __obj.updateDynamic("enableTextSelectionOnCells")(enableTextSelectionOnCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(explicitInitialization)) __obj.updateDynamic("explicitInitialization")(explicitInitialization.asInstanceOf[js.Any])
-    if (footerRowHeight != null) __obj.updateDynamic("footerRowHeight")(footerRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFitColumns)) __obj.updateDynamic("forceFitColumns")(forceFitColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceSyncScrolling)) __obj.updateDynamic("forceSyncScrolling")(forceSyncScrolling.asInstanceOf[js.Any])
-    if (formatterFactory != null) __obj.updateDynamic("formatterFactory")(formatterFactory.asInstanceOf[js.Any])
-    if (!js.isUndefined(frozenBottom)) __obj.updateDynamic("frozenBottom")(frozenBottom.asInstanceOf[js.Any])
-    if (frozenColumn != null) __obj.updateDynamic("frozenColumn")(frozenColumn.asInstanceOf[js.Any])
-    if (frozenRow != null) __obj.updateDynamic("frozenRow")(frozenRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullWidthRows)) __obj.updateDynamic("fullWidthRows")(fullWidthRows.asInstanceOf[js.Any])
-    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(leaveSpaceForNewRows)) __obj.updateDynamic("leaveSpaceForNewRows")(leaveSpaceForNewRows.asInstanceOf[js.Any])
-    if (minRowBuffer != null) __obj.updateDynamic("minRowBuffer")(minRowBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiColumnSort)) __obj.updateDynamic("multiColumnSort")(multiColumnSort.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(numberedMultiColumnSort)) __obj.updateDynamic("numberedMultiColumnSort")(numberedMultiColumnSort.asInstanceOf[js.Any])
-    if (preHeaderPanelHeight != null) __obj.updateDynamic("preHeaderPanelHeight")(preHeaderPanelHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveCopiedSelectionOnPaste)) __obj.updateDynamic("preserveCopiedSelectionOnPaste")(preserveCopiedSelectionOnPaste.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (selectedCellCssClass != null) __obj.updateDynamic("selectedCellCssClass")(selectedCellCssClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCellSelection)) __obj.updateDynamic("showCellSelection")(showCellSelection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFooterRow)) __obj.updateDynamic("showFooterRow")(showFooterRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaderRow)) __obj.updateDynamic("showHeaderRow")(showHeaderRow.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreHeaderPanel)) __obj.updateDynamic("showPreHeaderPanel")(showPreHeaderPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTopPanel)) __obj.updateDynamic("showTopPanel")(showTopPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortColNumberInSeparateSpan)) __obj.updateDynamic("sortColNumberInSeparateSpan")(sortColNumberInSeparateSpan.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressActiveCellChangeOnEdit)) __obj.updateDynamic("suppressActiveCellChangeOnEdit")(suppressActiveCellChangeOnEdit.asInstanceOf[js.Any])
-    if (!js.isUndefined(syncColumnCellResize)) __obj.updateDynamic("syncColumnCellResize")(syncColumnCellResize.asInstanceOf[js.Any])
-    if (topPanelHeight != null) __obj.updateDynamic("topPanelHeight")(topPanelHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(tristateMultiColumnSort)) __obj.updateDynamic("tristateMultiColumnSort")(tristateMultiColumnSort.asInstanceOf[js.Any])
-    if (viewportClass != null) __obj.updateDynamic("viewportClass")(viewportClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridOptions[T]]
   }
+  
+  extension [Self <: GridOptions[?], T /* <: SlickData */](x: Self & GridOptions[T]) {
+    
+    inline def setAddNewRowCssClass(value: String): Self = StObject.set(x, "addNewRowCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setAddNewRowCssClassUndefined: Self = StObject.set(x, "addNewRowCssClass", js.undefined)
+    
+    inline def setAlwaysAllowHorizontalScroll(value: Boolean): Self = StObject.set(x, "alwaysAllowHorizontalScroll", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysAllowHorizontalScrollUndefined: Self = StObject.set(x, "alwaysAllowHorizontalScroll", js.undefined)
+    
+    inline def setAlwaysShowVerticalScroll(value: Boolean): Self = StObject.set(x, "alwaysShowVerticalScroll", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysShowVerticalScrollUndefined: Self = StObject.set(x, "alwaysShowVerticalScroll", js.undefined)
+    
+    inline def setAsyncEditorLoadDelay(value: Double): Self = StObject.set(x, "asyncEditorLoadDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncEditorLoadDelayUndefined: Self = StObject.set(x, "asyncEditorLoadDelay", js.undefined)
+    
+    inline def setAsyncEditorLoading(value: Boolean): Self = StObject.set(x, "asyncEditorLoading", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncEditorLoadingUndefined: Self = StObject.set(x, "asyncEditorLoading", js.undefined)
+    
+    inline def setAsyncPostRenderCleanupDelay(value: Double): Self = StObject.set(x, "asyncPostRenderCleanupDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncPostRenderCleanupDelayUndefined: Self = StObject.set(x, "asyncPostRenderCleanupDelay", js.undefined)
+    
+    inline def setAsyncPostRenderDelay(value: Double): Self = StObject.set(x, "asyncPostRenderDelay", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncPostRenderDelayUndefined: Self = StObject.set(x, "asyncPostRenderDelay", js.undefined)
+    
+    inline def setAutoEdit(value: Boolean): Self = StObject.set(x, "autoEdit", value.asInstanceOf[js.Any])
+    
+    inline def setAutoEditUndefined: Self = StObject.set(x, "autoEdit", js.undefined)
+    
+    inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    
+    inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+    
+    inline def setCellFlashingCssClass(value: String): Self = StObject.set(x, "cellFlashingCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCellFlashingCssClassUndefined: Self = StObject.set(x, "cellFlashingCssClass", js.undefined)
+    
+    inline def setCellHighlightCssClass(value: String): Self = StObject.set(x, "cellHighlightCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCellHighlightCssClassUndefined: Self = StObject.set(x, "cellHighlightCssClass", js.undefined)
+    
+    inline def setCreateFooterRow(value: Boolean): Self = StObject.set(x, "createFooterRow", value.asInstanceOf[js.Any])
+    
+    inline def setCreateFooterRowUndefined: Self = StObject.set(x, "createFooterRow", js.undefined)
+    
+    inline def setCreatePreHeaderPanel(value: Boolean): Self = StObject.set(x, "createPreHeaderPanel", value.asInstanceOf[js.Any])
+    
+    inline def setCreatePreHeaderPanelUndefined: Self = StObject.set(x, "createPreHeaderPanel", js.undefined)
+    
+    inline def setDataItemColumnValueExtractor(value: (/* item */ Any, /* columnDef */ Any) => Any): Self = StObject.set(x, "dataItemColumnValueExtractor", js.Any.fromFunction2(value))
+    
+    inline def setDataItemColumnValueExtractorUndefined: Self = StObject.set(x, "dataItemColumnValueExtractor", js.undefined)
+    
+    inline def setDefaultColumnWidth(value: Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultColumnWidthUndefined: Self = StObject.set(x, "defaultColumnWidth", js.undefined)
+    
+    inline def setDefaultFormatter(
+      value: (/* row */ Double, /* cell */ Double, /* value */ Any, /* columnDef */ Column[T], /* dataContext */ SlickData) => String
+    ): Self = StObject.set(x, "defaultFormatter", js.Any.fromFunction5(value))
+    
+    inline def setDefaultFormatterUndefined: Self = StObject.set(x, "defaultFormatter", js.undefined)
+    
+    inline def setDoPaging(value: Boolean): Self = StObject.set(x, "doPaging", value.asInstanceOf[js.Any])
+    
+    inline def setDoPagingUndefined: Self = StObject.set(x, "doPaging", js.undefined)
+    
+    inline def setEditCommandHandler(value: Any): Self = StObject.set(x, "editCommandHandler", value.asInstanceOf[js.Any])
+    
+    inline def setEditCommandHandlerUndefined: Self = StObject.set(x, "editCommandHandler", js.undefined)
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEditorCellNavOnLRKeys(value: Boolean): Self = StObject.set(x, "editorCellNavOnLRKeys", value.asInstanceOf[js.Any])
+    
+    inline def setEditorCellNavOnLRKeysUndefined: Self = StObject.set(x, "editorCellNavOnLRKeys", js.undefined)
+    
+    inline def setEditorFactory(value: EditorFactory): Self = StObject.set(x, "editorFactory", value.asInstanceOf[js.Any])
+    
+    inline def setEditorFactoryUndefined: Self = StObject.set(x, "editorFactory", js.undefined)
+    
+    inline def setEditorLock(value: EditorLock[T]): Self = StObject.set(x, "editorLock", value.asInstanceOf[js.Any])
+    
+    inline def setEditorLockUndefined: Self = StObject.set(x, "editorLock", js.undefined)
+    
+    inline def setEmulatePagingWhenScrolling(value: Boolean): Self = StObject.set(x, "emulatePagingWhenScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setEmulatePagingWhenScrollingUndefined: Self = StObject.set(x, "emulatePagingWhenScrolling", js.undefined)
+    
+    inline def setEnableAddRow(value: Boolean): Self = StObject.set(x, "enableAddRow", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAddRowUndefined: Self = StObject.set(x, "enableAddRow", js.undefined)
+    
+    inline def setEnableAsyncPostRender(value: Boolean): Self = StObject.set(x, "enableAsyncPostRender", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAsyncPostRenderCleanup(value: Boolean): Self = StObject.set(x, "enableAsyncPostRenderCleanup", value.asInstanceOf[js.Any])
+    
+    inline def setEnableAsyncPostRenderCleanupUndefined: Self = StObject.set(x, "enableAsyncPostRenderCleanup", js.undefined)
+    
+    inline def setEnableAsyncPostRenderUndefined: Self = StObject.set(x, "enableAsyncPostRender", js.undefined)
+    
+    inline def setEnableCellNavigation(value: Boolean): Self = StObject.set(x, "enableCellNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCellNavigationUndefined: Self = StObject.set(x, "enableCellNavigation", js.undefined)
+    
+    inline def setEnableCellRangeSelection(value: Any): Self = StObject.set(x, "enableCellRangeSelection", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCellRangeSelectionUndefined: Self = StObject.set(x, "enableCellRangeSelection", js.undefined)
+    
+    inline def setEnableColumnReorder(value: Boolean): Self = StObject.set(x, "enableColumnReorder", value.asInstanceOf[js.Any])
+    
+    inline def setEnableColumnReorderUndefined: Self = StObject.set(x, "enableColumnReorder", js.undefined)
+    
+    inline def setEnableRowReordering(value: Any): Self = StObject.set(x, "enableRowReordering", value.asInstanceOf[js.Any])
+    
+    inline def setEnableRowReorderingUndefined: Self = StObject.set(x, "enableRowReordering", js.undefined)
+    
+    inline def setEnableTextSelectionOnCells(value: Boolean): Self = StObject.set(x, "enableTextSelectionOnCells", value.asInstanceOf[js.Any])
+    
+    inline def setEnableTextSelectionOnCellsUndefined: Self = StObject.set(x, "enableTextSelectionOnCells", js.undefined)
+    
+    inline def setExplicitInitialization(value: Boolean): Self = StObject.set(x, "explicitInitialization", value.asInstanceOf[js.Any])
+    
+    inline def setExplicitInitializationUndefined: Self = StObject.set(x, "explicitInitialization", js.undefined)
+    
+    inline def setFooterRowHeight(value: Double): Self = StObject.set(x, "footerRowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setFooterRowHeightUndefined: Self = StObject.set(x, "footerRowHeight", js.undefined)
+    
+    inline def setForceFitColumns(value: Boolean): Self = StObject.set(x, "forceFitColumns", value.asInstanceOf[js.Any])
+    
+    inline def setForceFitColumnsUndefined: Self = StObject.set(x, "forceFitColumns", js.undefined)
+    
+    inline def setForceSyncScrolling(value: Boolean): Self = StObject.set(x, "forceSyncScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setForceSyncScrollingUndefined: Self = StObject.set(x, "forceSyncScrolling", js.undefined)
+    
+    inline def setFormatterFactory(value: FormatterFactory[T]): Self = StObject.set(x, "formatterFactory", value.asInstanceOf[js.Any])
+    
+    inline def setFormatterFactoryUndefined: Self = StObject.set(x, "formatterFactory", js.undefined)
+    
+    inline def setFrozenBottom(value: Boolean): Self = StObject.set(x, "frozenBottom", value.asInstanceOf[js.Any])
+    
+    inline def setFrozenBottomUndefined: Self = StObject.set(x, "frozenBottom", js.undefined)
+    
+    inline def setFrozenColumn(value: Double): Self = StObject.set(x, "frozenColumn", value.asInstanceOf[js.Any])
+    
+    inline def setFrozenColumnUndefined: Self = StObject.set(x, "frozenColumn", js.undefined)
+    
+    inline def setFrozenRow(value: Double): Self = StObject.set(x, "frozenRow", value.asInstanceOf[js.Any])
+    
+    inline def setFrozenRowUndefined: Self = StObject.set(x, "frozenRow", js.undefined)
+    
+    inline def setFullWidthRows(value: Boolean): Self = StObject.set(x, "fullWidthRows", value.asInstanceOf[js.Any])
+    
+    inline def setFullWidthRowsUndefined: Self = StObject.set(x, "fullWidthRows", js.undefined)
+    
+    inline def setHeaderRowHeight(value: Double): Self = StObject.set(x, "headerRowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderRowHeightUndefined: Self = StObject.set(x, "headerRowHeight", js.undefined)
+    
+    inline def setLeaveSpaceForNewRows(value: Boolean): Self = StObject.set(x, "leaveSpaceForNewRows", value.asInstanceOf[js.Any])
+    
+    inline def setLeaveSpaceForNewRowsUndefined: Self = StObject.set(x, "leaveSpaceForNewRows", js.undefined)
+    
+    inline def setMinRowBuffer(value: Double): Self = StObject.set(x, "minRowBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setMinRowBufferUndefined: Self = StObject.set(x, "minRowBuffer", js.undefined)
+    
+    inline def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])
+    
+    inline def setMultiColumnSortUndefined: Self = StObject.set(x, "multiColumnSort", js.undefined)
+    
+    inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+    
+    inline def setNumberedMultiColumnSort(value: Boolean): Self = StObject.set(x, "numberedMultiColumnSort", value.asInstanceOf[js.Any])
+    
+    inline def setNumberedMultiColumnSortUndefined: Self = StObject.set(x, "numberedMultiColumnSort", js.undefined)
+    
+    inline def setPreHeaderPanelHeight(value: Double): Self = StObject.set(x, "preHeaderPanelHeight", value.asInstanceOf[js.Any])
+    
+    inline def setPreHeaderPanelHeightUndefined: Self = StObject.set(x, "preHeaderPanelHeight", js.undefined)
+    
+    inline def setPreserveCopiedSelectionOnPaste(value: Boolean): Self = StObject.set(x, "preserveCopiedSelectionOnPaste", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveCopiedSelectionOnPasteUndefined: Self = StObject.set(x, "preserveCopiedSelectionOnPaste", js.undefined)
+    
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    
+    inline def setSelectedCellCssClass(value: String): Self = StObject.set(x, "selectedCellCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedCellCssClassUndefined: Self = StObject.set(x, "selectedCellCssClass", js.undefined)
+    
+    inline def setShowCellSelection(value: Boolean): Self = StObject.set(x, "showCellSelection", value.asInstanceOf[js.Any])
+    
+    inline def setShowCellSelectionUndefined: Self = StObject.set(x, "showCellSelection", js.undefined)
+    
+    inline def setShowFooterRow(value: Boolean): Self = StObject.set(x, "showFooterRow", value.asInstanceOf[js.Any])
+    
+    inline def setShowFooterRowUndefined: Self = StObject.set(x, "showFooterRow", js.undefined)
+    
+    inline def setShowHeaderRow(value: Boolean): Self = StObject.set(x, "showHeaderRow", value.asInstanceOf[js.Any])
+    
+    inline def setShowHeaderRowUndefined: Self = StObject.set(x, "showHeaderRow", js.undefined)
+    
+    inline def setShowPreHeaderPanel(value: Boolean): Self = StObject.set(x, "showPreHeaderPanel", value.asInstanceOf[js.Any])
+    
+    inline def setShowPreHeaderPanelUndefined: Self = StObject.set(x, "showPreHeaderPanel", js.undefined)
+    
+    inline def setShowTopPanel(value: Boolean): Self = StObject.set(x, "showTopPanel", value.asInstanceOf[js.Any])
+    
+    inline def setShowTopPanelUndefined: Self = StObject.set(x, "showTopPanel", js.undefined)
+    
+    inline def setSortColNumberInSeparateSpan(value: Boolean): Self = StObject.set(x, "sortColNumberInSeparateSpan", value.asInstanceOf[js.Any])
+    
+    inline def setSortColNumberInSeparateSpanUndefined: Self = StObject.set(x, "sortColNumberInSeparateSpan", js.undefined)
+    
+    inline def setSuppressActiveCellChangeOnEdit(value: Boolean): Self = StObject.set(x, "suppressActiveCellChangeOnEdit", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressActiveCellChangeOnEditUndefined: Self = StObject.set(x, "suppressActiveCellChangeOnEdit", js.undefined)
+    
+    inline def setSyncColumnCellResize(value: Boolean): Self = StObject.set(x, "syncColumnCellResize", value.asInstanceOf[js.Any])
+    
+    inline def setSyncColumnCellResizeUndefined: Self = StObject.set(x, "syncColumnCellResize", js.undefined)
+    
+    inline def setTopPanelHeight(value: Double): Self = StObject.set(x, "topPanelHeight", value.asInstanceOf[js.Any])
+    
+    inline def setTopPanelHeightUndefined: Self = StObject.set(x, "topPanelHeight", js.undefined)
+    
+    inline def setTristateMultiColumnSort(value: Boolean): Self = StObject.set(x, "tristateMultiColumnSort", value.asInstanceOf[js.Any])
+    
+    inline def setTristateMultiColumnSortUndefined: Self = StObject.set(x, "tristateMultiColumnSort", js.undefined)
+    
+    inline def setViewportClass(value: String): Self = StObject.set(x, "viewportClass", value.asInstanceOf[js.Any])
+    
+    inline def setViewportClassUndefined: Self = StObject.set(x, "viewportClass", js.undefined)
+  }
 }
-

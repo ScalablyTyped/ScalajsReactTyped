@@ -1,69 +1,67 @@
 package typingsJapgolly.reactInstantsearch.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLFormElement
-import org.scalajs.dom.raw.HTMLInputElement
+import org.scalajs.dom.HTMLFormElement
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.Ref
 import typingsJapgolly.reactInstantsearchDom.mod.SearchBoxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchBox {
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    defaultRefinement: String = null,
-    focusShortcuts: js.Array[String] = null,
-    loadingIndicator: VdomElement = null,
-    onChange: /* event */ ReactEventFrom[HTMLInputElement] => CallbackTo[js.Any] = null,
-    onReset: /* event */ ReactEventFrom[HTMLFormElement] => CallbackTo[js.Any] = null,
-    onSubmit: /* event */ ReactEventFrom[HTMLFormElement] => CallbackTo[js.Any] = null,
-    reset: VdomElement = null,
-    searchAsYouType: js.UndefOr[Boolean] = js.undefined,
-    showLoadingIndicator: js.UndefOr[Boolean] = js.undefined,
-    submit: VdomElement = null,
-    translations: StringDictionary[String | (js.Function1[/* repeated */ js.Any, _])] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SearchBoxProps, 
-    typingsJapgolly.reactInstantsearch.domMod.SearchBox, 
-    Unit, 
-    SearchBoxProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
-    if (focusShortcuts != null) __obj.updateDynamic("focusShortcuts")(focusShortcuts.asInstanceOf[js.Any])
-    if (loadingIndicator != null) __obj.updateDynamic("loadingIndicator")(loadingIndicator.rawElement.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onChange(t0).runNow()))
-    if (onReset != null) __obj.updateDynamic("onReset")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onReset(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLFormElement]) => onSubmit(t0).runNow()))
-    if (reset != null) __obj.updateDynamic("reset")(reset.rawElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchAsYouType)) __obj.updateDynamic("searchAsYouType")(searchAsYouType.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLoadingIndicator)) __obj.updateDynamic("showLoadingIndicator")(showLoadingIndicator.asInstanceOf[js.Any])
-    if (submit != null) __obj.updateDynamic("submit")(submit.rawElement.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactInstantsearchDom.mod.SearchBoxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactInstantsearch.domMod.SearchBox](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactInstantsearchDom.mod.SearchBoxProps])(children: _*)
-  }
   @JSImport("react-instantsearch/dom", "SearchBox")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactInstantsearch.domMod.SearchBox] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultRefinement(value: String): this.type = set("defaultRefinement", value.asInstanceOf[js.Any])
+    
+    inline def focusShortcuts(value: js.Array[String]): this.type = set("focusShortcuts", value.asInstanceOf[js.Any])
+    
+    inline def focusShortcutsVarargs(value: String*): this.type = set("focusShortcuts", js.Array(value*))
+    
+    inline def inputId(value: String): this.type = set("inputId", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: Ref[HTMLInputElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def inputRefFunction1(value: HTMLInputElement | Null => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: HTMLInputElement | Null) => value(t0).runNow()))
+    
+    inline def inputRefNull: this.type = set("inputRef", null)
+    
+    inline def loadingIndicator(value: VdomElement): this.type = set("loadingIndicator", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* event */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onKeyDown(value: /* event */ ReactKeyboardEventFrom[HTMLInputElement] => Any): this.type = set("onKeyDown", js.Any.fromFunction1(value))
+    
+    inline def onReset(value: /* event */ ReactEventFrom[HTMLFormElement] => Any): this.type = set("onReset", js.Any.fromFunction1(value))
+    
+    inline def onSubmit(value: /* event */ ReactEventFrom[HTMLFormElement] => Any): this.type = set("onSubmit", js.Any.fromFunction1(value))
+    
+    inline def reset(value: VdomElement): this.type = set("reset", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def searchAsYouType(value: Boolean): this.type = set("searchAsYouType", value.asInstanceOf[js.Any])
+    
+    inline def showLoadingIndicator(value: Boolean): this.type = set("showLoadingIndicator", value.asInstanceOf[js.Any])
+    
+    inline def submit(value: VdomElement): this.type = set("submit", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: SearchBox.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SearchBoxProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

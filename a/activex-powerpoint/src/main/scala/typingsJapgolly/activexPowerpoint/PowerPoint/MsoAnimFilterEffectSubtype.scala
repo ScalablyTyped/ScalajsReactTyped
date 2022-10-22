@@ -1,123 +1,119 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
 */
-trait MsoAnimFilterEffectSubtype extends js.Object
-
+trait MsoAnimFilterEffectSubtype extends StObject
 object MsoAnimFilterEffectSubtype {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoAnimFilterEffectSubtypeAcross: `9` = this.cast(9)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeDown: `25` = this.cast(25)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeDownLeft: `14` = this.cast(14)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeDownRight: `16` = this.cast(16)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeFromBottom: `13` = this.cast(13)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeFromLeft: `10` = this.cast(10)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeFromRight: `11` = this.cast(11)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeFromTop: `12` = this.cast(12)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeHorizontal: `5` = this.cast(5)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeIn: `7` = this.cast(7)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeInHorizontal: `3` = this.cast(3)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeInVertical: `1` = this.cast(1)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeLeft: `23` = this.cast(23)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeNone: `0` = this.cast(0)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeOut: `8` = this.cast(8)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeOutHorizontal: `4` = this.cast(4)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeOutVertical: `2` = this.cast(2)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeRight: `24` = this.cast(24)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes1: `18` = this.cast(18)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes2: `19` = this.cast(19)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes3: `20` = this.cast(20)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes4: `21` = this.cast(21)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeSpokes8: `22` = this.cast(22)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeUp: `26` = this.cast(26)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeUpLeft: `15` = this.cast(15)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeUpRight: `17` = this.cast(17)
-  @scala.inline
-  def msoAnimFilterEffectSubtypeVertical: `6` = this.cast(6)
+  
+  inline def msoAnimFilterEffectSubtypeAcross: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoAnimFilterEffectSubtypeDown: `25` = 25.asInstanceOf[`25`]
+  
+  inline def msoAnimFilterEffectSubtypeDownLeft: `14` = 14.asInstanceOf[`14`]
+  
+  inline def msoAnimFilterEffectSubtypeDownRight: `16` = 16.asInstanceOf[`16`]
+  
+  inline def msoAnimFilterEffectSubtypeFromBottom: `13` = 13.asInstanceOf[`13`]
+  
+  inline def msoAnimFilterEffectSubtypeFromLeft: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoAnimFilterEffectSubtypeFromRight: `11` = 11.asInstanceOf[`11`]
+  
+  inline def msoAnimFilterEffectSubtypeFromTop: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoAnimFilterEffectSubtypeHorizontal: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoAnimFilterEffectSubtypeIn: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoAnimFilterEffectSubtypeInHorizontal: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoAnimFilterEffectSubtypeInVertical: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoAnimFilterEffectSubtypeLeft: `23` = 23.asInstanceOf[`23`]
+  
+  inline def msoAnimFilterEffectSubtypeNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoAnimFilterEffectSubtypeOut: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoAnimFilterEffectSubtypeOutHorizontal: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoAnimFilterEffectSubtypeOutVertical: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoAnimFilterEffectSubtypeRight: `24` = 24.asInstanceOf[`24`]
+  
+  inline def msoAnimFilterEffectSubtypeSpokes1: `18` = 18.asInstanceOf[`18`]
+  
+  inline def msoAnimFilterEffectSubtypeSpokes2: `19` = 19.asInstanceOf[`19`]
+  
+  inline def msoAnimFilterEffectSubtypeSpokes3: `20` = 20.asInstanceOf[`20`]
+  
+  inline def msoAnimFilterEffectSubtypeSpokes4: `21` = 21.asInstanceOf[`21`]
+  
+  inline def msoAnimFilterEffectSubtypeSpokes8: `22` = 22.asInstanceOf[`22`]
+  
+  inline def msoAnimFilterEffectSubtypeUp: `26` = 26.asInstanceOf[`26`]
+  
+  inline def msoAnimFilterEffectSubtypeUpLeft: `15` = 15.asInstanceOf[`15`]
+  
+  inline def msoAnimFilterEffectSubtypeUpRight: `17` = 17.asInstanceOf[`17`]
+  
+  inline def msoAnimFilterEffectSubtypeVertical: `6` = 6.asInstanceOf[`6`]
 }
-

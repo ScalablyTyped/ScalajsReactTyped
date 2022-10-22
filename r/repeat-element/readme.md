@@ -10,10 +10,10 @@ Create an array by repeating the given value n times.
 | ------------------ | :-------------: |
 | Full name          | repeat-element |
 | Keywords           | array, element, repeat, string |
-| # releases         | 2 |
-| # dependents       | 67 |
-| # downloads        | 433526412 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.569747E7 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/repeat-element)

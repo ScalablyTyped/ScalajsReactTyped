@@ -1,14 +1,13 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.TransitionService")
 @js.native
-class TransitionService protected ()
+open class TransitionService protected ()
   extends typingsJapgolly.uirouterCore.mod.TransitionService {
-  /** @hidden */
-  def this(_router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+  /** @internal */
+  def this(_router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-

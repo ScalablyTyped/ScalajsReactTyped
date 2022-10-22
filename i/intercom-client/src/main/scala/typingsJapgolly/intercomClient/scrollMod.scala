@@ -1,14 +1,12 @@
 package typingsJapgolly.intercomClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("intercom-client/Scroll", JSImport.Namespace)
-@js.native
-object scrollMod extends js.Object {
-  @js.native
-  class Scroll[T] () extends js.Object
+object scrollMod {
   
+  @JSImport("intercom-client/Scroll", "Scroll")
+  @js.native
+  open class Scroll[T] () extends StObject
 }
-

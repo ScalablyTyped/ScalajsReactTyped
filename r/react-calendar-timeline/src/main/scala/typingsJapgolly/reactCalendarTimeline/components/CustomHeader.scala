@@ -1,50 +1,36 @@
 package typingsJapgolly.reactCalendarTimeline.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactCalendarTimeline.mod.CustomHeaderProps
 import typingsJapgolly.reactCalendarTimeline.mod.CustomHeaderPropsChildrenFnProps
 import typingsJapgolly.reactCalendarTimeline.mod.Unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CustomHeader {
-  def apply[Data](
-    headerData: Data = null,
-    height: Int | Double = null,
-    unit: Unit = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.UndefOr[CustomHeaderPropsChildrenFnProps[Data]] => CallbackTo[Node]
-  ): UnmountedWithRoot[
-    CustomHeaderProps[Data], 
-    typingsJapgolly.reactCalendarTimeline.mod.CustomHeader[Data], 
-    scala.Unit, 
-    CustomHeaderProps[Data]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: js.UndefOr[typingsJapgolly.reactCalendarTimeline.mod.CustomHeaderPropsChildrenFnProps[Data]]) => children(t0).runNow()))
-    if (headerData != null) __obj.updateDynamic("headerData")(headerData.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCalendarTimeline.mod.CustomHeaderProps[Data], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactCalendarTimeline.mod.CustomHeader[Data]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCalendarTimeline.mod.CustomHeaderProps[Data]])
+  inline def apply[Data](children: js.UndefOr[CustomHeaderPropsChildrenFnProps[Data]] => Node): Builder[Data] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Builder[Data](js.Array(this.component, __props.asInstanceOf[CustomHeaderProps[Data]]))
   }
+  
   @JSImport("react-calendar-timeline", "CustomHeader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[Data] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactCalendarTimeline.mod.CustomHeader[Data]] {
+    
+    inline def headerData(value: Data): this.type = set("headerData", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def unit(value: Unit): this.type = set("unit", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[Data](p: CustomHeaderProps[Data]): Builder[Data] = new Builder[Data](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

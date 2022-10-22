@@ -1,12 +1,7 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Foundation.Metadata.AttributeUsageAttribute")
-@js.native
-class AttributeUsageAttribute protected () extends js.Object {
-  def this(targets: AttributeTargets) = this()
-}
-
+trait AttributeUsageAttribute extends StObject

@@ -1,73 +1,132 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Process extends js.Object {
+trait Process extends StObject {
+  
   // User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
-  var accountName: js.UndefOr[String] = js.undefined
+  var accountName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The full process invocation commandline including all parameters.
-  var commandLine: js.UndefOr[String] = js.undefined
+  var commandLine: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format
-    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
+    * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
-  var createdDateTime: js.UndefOr[String] = js.undefined
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Complex type containing file hashes (cryptographic and location-sensitive).
-  var fileHash: js.UndefOr[FileHash] = js.undefined
+  var fileHash: js.UndefOr[NullableOption[FileHash]] = js.undefined
+  
   // The integrity level of the process. Possible values are: unknown, untrusted, low, medium, high, system.
-  var integrityLevel: js.UndefOr[ProcessIntegrityLevel] = js.undefined
+  var integrityLevel: js.UndefOr[NullableOption[ProcessIntegrityLevel]] = js.undefined
+  
   // True if the process is elevated.
-  var isElevated: js.UndefOr[Boolean] = js.undefined
+  var isElevated: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The name of the process' Image file.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * DateTime at which the parent process was started. The Timestamp type represents date and time information using ISO
-    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'.
+    * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     */
-  var parentProcessCreatedDateTime: js.UndefOr[String] = js.undefined
+  var parentProcessCreatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The Process ID (PID) of the parent process.
-  var parentProcessId: js.UndefOr[Double] = js.undefined
+  var parentProcessId: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The name of the image file of the parent process.
-  var parentProcessName: js.UndefOr[String] = js.undefined
+  var parentProcessName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Full path, including filename.
-  var path: js.UndefOr[String] = js.undefined
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The Process ID (PID) of the process.
-  var processId: js.UndefOr[Double] = js.undefined
+  var processId: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object Process {
-  @scala.inline
-  def apply(
-    accountName: String = null,
-    commandLine: String = null,
-    createdDateTime: String = null,
-    fileHash: FileHash = null,
-    integrityLevel: ProcessIntegrityLevel = null,
-    isElevated: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    parentProcessCreatedDateTime: String = null,
-    parentProcessId: Int | Double = null,
-    parentProcessName: String = null,
-    path: String = null,
-    processId: Int | Double = null
-  ): Process = {
+  
+  inline def apply(): Process = {
     val __obj = js.Dynamic.literal()
-    if (accountName != null) __obj.updateDynamic("accountName")(accountName.asInstanceOf[js.Any])
-    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash.asInstanceOf[js.Any])
-    if (integrityLevel != null) __obj.updateDynamic("integrityLevel")(integrityLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(isElevated)) __obj.updateDynamic("isElevated")(isElevated.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parentProcessCreatedDateTime != null) __obj.updateDynamic("parentProcessCreatedDateTime")(parentProcessCreatedDateTime.asInstanceOf[js.Any])
-    if (parentProcessId != null) __obj.updateDynamic("parentProcessId")(parentProcessId.asInstanceOf[js.Any])
-    if (parentProcessName != null) __obj.updateDynamic("parentProcessName")(parentProcessName.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (processId != null) __obj.updateDynamic("processId")(processId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Process]
   }
+  
+  extension [Self <: Process](x: Self) {
+    
+    inline def setAccountName(value: NullableOption[String]): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    
+    inline def setAccountNameNull: Self = StObject.set(x, "accountName", null)
+    
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    
+    inline def setCommandLine(value: NullableOption[String]): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
+    
+    inline def setCommandLineNull: Self = StObject.set(x, "commandLine", null)
+    
+    inline def setCommandLineUndefined: Self = StObject.set(x, "commandLine", js.undefined)
+    
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setFileHash(value: NullableOption[FileHash]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    
+    inline def setFileHashNull: Self = StObject.set(x, "fileHash", null)
+    
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    
+    inline def setIntegrityLevel(value: NullableOption[ProcessIntegrityLevel]): Self = StObject.set(x, "integrityLevel", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrityLevelNull: Self = StObject.set(x, "integrityLevel", null)
+    
+    inline def setIntegrityLevelUndefined: Self = StObject.set(x, "integrityLevel", js.undefined)
+    
+    inline def setIsElevated(value: NullableOption[Boolean]): Self = StObject.set(x, "isElevated", value.asInstanceOf[js.Any])
+    
+    inline def setIsElevatedNull: Self = StObject.set(x, "isElevated", null)
+    
+    inline def setIsElevatedUndefined: Self = StObject.set(x, "isElevated", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setParentProcessCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "parentProcessCreatedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setParentProcessCreatedDateTimeNull: Self = StObject.set(x, "parentProcessCreatedDateTime", null)
+    
+    inline def setParentProcessCreatedDateTimeUndefined: Self = StObject.set(x, "parentProcessCreatedDateTime", js.undefined)
+    
+    inline def setParentProcessId(value: NullableOption[Double]): Self = StObject.set(x, "parentProcessId", value.asInstanceOf[js.Any])
+    
+    inline def setParentProcessIdNull: Self = StObject.set(x, "parentProcessId", null)
+    
+    inline def setParentProcessIdUndefined: Self = StObject.set(x, "parentProcessId", js.undefined)
+    
+    inline def setParentProcessName(value: NullableOption[String]): Self = StObject.set(x, "parentProcessName", value.asInstanceOf[js.Any])
+    
+    inline def setParentProcessNameNull: Self = StObject.set(x, "parentProcessName", null)
+    
+    inline def setParentProcessNameUndefined: Self = StObject.set(x, "parentProcessName", js.undefined)
+    
+    inline def setPath(value: NullableOption[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathNull: Self = StObject.set(x, "path", null)
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setProcessId(value: NullableOption[Double]): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+    
+    inline def setProcessIdNull: Self = StObject.set(x, "processId", null)
+    
+    inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+  }
 }
-

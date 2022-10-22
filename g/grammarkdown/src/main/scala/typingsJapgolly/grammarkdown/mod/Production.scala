@@ -1,53 +1,52 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.nodesMod.ProductionBody
-import typingsJapgolly.grammarkdown.tokensMod.ProductionSeperatorKind
+import typingsJapgolly.grammarkdown.distNodesMod.ProductionBody
+import typingsJapgolly.grammarkdown.distTokensMod.ProductionSeperatorKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Production")
 @js.native
-class Production protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Production {
-  def this(name: typingsJapgolly.grammarkdown.nodesMod.Identifier) = this()
+open class Production protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Production {
+  def this(name: typingsJapgolly.grammarkdown.distNodesMod.Identifier) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: typingsJapgolly.grammarkdown.nodesMod.ParameterList
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: typingsJapgolly.grammarkdown.distNodesMod.ParameterList
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: js.UndefOr[scala.Nothing],
-    colonToken: typingsJapgolly.grammarkdown.nodesMod.Token[ProductionSeperatorKind]
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: Unit,
+    colonToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ProductionSeperatorKind]
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: typingsJapgolly.grammarkdown.nodesMod.ParameterList,
-    colonToken: typingsJapgolly.grammarkdown.nodesMod.Token[ProductionSeperatorKind]
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: typingsJapgolly.grammarkdown.distNodesMod.ParameterList,
+    colonToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ProductionSeperatorKind]
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: js.UndefOr[scala.Nothing],
-    colonToken: js.UndefOr[scala.Nothing],
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: Unit,
+    colonToken: Unit,
     body: ProductionBody
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: js.UndefOr[scala.Nothing],
-    colonToken: typingsJapgolly.grammarkdown.nodesMod.Token[ProductionSeperatorKind],
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: Unit,
+    colonToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ProductionSeperatorKind],
     body: ProductionBody
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: typingsJapgolly.grammarkdown.nodesMod.ParameterList,
-    colonToken: js.UndefOr[scala.Nothing],
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: typingsJapgolly.grammarkdown.distNodesMod.ParameterList,
+    colonToken: Unit,
     body: ProductionBody
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    parameterList: typingsJapgolly.grammarkdown.nodesMod.ParameterList,
-    colonToken: typingsJapgolly.grammarkdown.nodesMod.Token[ProductionSeperatorKind],
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    parameterList: typingsJapgolly.grammarkdown.distNodesMod.ParameterList,
+    colonToken: typingsJapgolly.grammarkdown.distNodesMod.Token[ProductionSeperatorKind],
     body: ProductionBody
   ) = this()
 }
-

@@ -1,23 +1,32 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RateOptions extends js.Object {
+trait RateOptions extends StObject {
+  
   /** Controls rate-limiting of requests. Maximum number of requests per period. (Default: 50). */
   var limit: js.UndefOr[Double] = js.undefined
+  
   /** Period for rate limit, in milliseconds. (Default: 1000 ms). */
   var period: js.UndefOr[Double] = js.undefined
 }
-
 object RateOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, period: Int | Double = null): RateOptions = {
+  
+  inline def apply(): RateOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[RateOptions]
   }
+  
+  extension [Self <: RateOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+  }
 }
-

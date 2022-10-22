@@ -1,22 +1,27 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentSymbolProviderMetadata extends js.Object {
+trait DocumentSymbolProviderMetadata extends StObject {
+  
   /**
-  		 * A human-readable string that is shown when multiple outlines trees show for one document.
-  		 */
+    * A human-readable string that is shown when multiple outlines trees show for one document.
+    */
   var label: js.UndefOr[String] = js.undefined
 }
-
 object DocumentSymbolProviderMetadata {
-  @scala.inline
-  def apply(label: String = null): DocumentSymbolProviderMetadata = {
+  
+  inline def apply(): DocumentSymbolProviderMetadata = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbolProviderMetadata]
   }
+  
+  extension [Self <: DocumentSymbolProviderMetadata](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+  }
 }
-

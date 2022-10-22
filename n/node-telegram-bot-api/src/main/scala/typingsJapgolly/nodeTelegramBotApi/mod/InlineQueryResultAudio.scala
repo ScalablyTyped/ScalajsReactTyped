@@ -1,43 +1,59 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
 import typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.audio
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InlineQueryResultAudio
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
+  
   var audio_duration: js.UndefOr[Double] = js.undefined
+  
   var audio_url: String
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
+  
   var performer: js.UndefOr[String] = js.undefined
+  
   var title: String
+  
   var `type`: audio
 }
-
 object InlineQueryResultAudio {
-  @scala.inline
-  def apply(
-    audio_url: String,
-    id: String,
-    title: String,
-    `type`: audio,
-    audio_duration: Int | Double = null,
-    caption: String = null,
-    input_message_content: InputMessageContent = null,
-    performer: String = null,
-    reply_markup: InlineKeyboardMarkup = null
-  ): InlineQueryResultAudio = {
+  
+  inline def apply(audio_url: String, id: String, title: String): InlineQueryResultAudio = {
     val __obj = js.Dynamic.literal(audio_url = audio_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (audio_duration != null) __obj.updateDynamic("audio_duration")(audio_duration.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (performer != null) __obj.updateDynamic("performer")(performer.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("audio")
     __obj.asInstanceOf[InlineQueryResultAudio]
   }
+  
+  extension [Self <: InlineQueryResultAudio](x: Self) {
+    
+    inline def setAudio_duration(value: Double): Self = StObject.set(x, "audio_duration", value.asInstanceOf[js.Any])
+    
+    inline def setAudio_durationUndefined: Self = StObject.set(x, "audio_duration", js.undefined)
+    
+    inline def setAudio_url(value: String): Self = StObject.set(x, "audio_url", value.asInstanceOf[js.Any])
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    
+    inline def setPerformer(value: String): Self = StObject.set(x, "performer", value.asInstanceOf[js.Any])
+    
+    inline def setPerformerUndefined: Self = StObject.set(x, "performer", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: audio): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

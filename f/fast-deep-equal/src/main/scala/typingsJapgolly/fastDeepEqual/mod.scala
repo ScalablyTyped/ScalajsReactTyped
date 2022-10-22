@@ -1,12 +1,14 @@
 package typingsJapgolly.fastDeepEqual
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("fast-deep-equal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(a: js.Any, b: js.Any): Boolean = js.native
+object mod {
+  
+  inline def apply(a: Any, b: Any): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("fast-deep-equal", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapContextGetScaleResult extends js.Object {
+trait MapContextGetScaleResult extends StObject {
+  
   /**
     * 地图缩放级别
     */
   var scale: js.UndefOr[Double] = js.undefined
 }
-
 object MapContextGetScaleResult {
-  @scala.inline
-  def apply(scale: Int | Double = null): MapContextGetScaleResult = {
+  
+  inline def apply(): MapContextGetScaleResult = {
     val __obj = js.Dynamic.literal()
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapContextGetScaleResult]
   }
+  
+  extension [Self <: MapContextGetScaleResult](x: Self) {
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+  }
 }
-

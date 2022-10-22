@@ -1,8 +1,8 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.aliApp.aliAppStrings.UNKNOWN
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.aliApp.aliAppStrings.`4G`
   - typingsJapgolly.aliApp.aliAppStrings.WWAN
 */
-trait NetworkType extends js.Object
-
+trait NetworkType extends StObject
 object NetworkType {
-  @scala.inline
-  def `2G`: typingsJapgolly.aliApp.aliAppStrings.`2G` = this.cast("2G")
-  @scala.inline
-  def `3G`: typingsJapgolly.aliApp.aliAppStrings.`3G` = this.cast("3G")
-  @scala.inline
-  def `4G`: typingsJapgolly.aliApp.aliAppStrings.`4G` = this.cast("4G")
-  @scala.inline
-  def NOTREACHABLE: typingsJapgolly.aliApp.aliAppStrings.NOTREACHABLE = this.cast("NOTREACHABLE")
-  @scala.inline
-  def UNKNOWN: typingsJapgolly.aliApp.aliAppStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  def WIFI: typingsJapgolly.aliApp.aliAppStrings.WIFI = this.cast("WIFI")
-  @scala.inline
-  def WWAN: typingsJapgolly.aliApp.aliAppStrings.WWAN = this.cast("WWAN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `2G`: typingsJapgolly.aliApp.aliAppStrings.`2G` = "2G".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`2G`]
+  
+  inline def `3G`: typingsJapgolly.aliApp.aliAppStrings.`3G` = "3G".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`3G`]
+  
+  inline def `4G`: typingsJapgolly.aliApp.aliAppStrings.`4G` = "4G".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.`4G`]
+  
+  inline def NOTREACHABLE: typingsJapgolly.aliApp.aliAppStrings.NOTREACHABLE = "NOTREACHABLE".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.NOTREACHABLE]
+  
+  inline def UNKNOWN: typingsJapgolly.aliApp.aliAppStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.UNKNOWN]
+  
+  inline def WIFI: typingsJapgolly.aliApp.aliAppStrings.WIFI = "WIFI".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.WIFI]
+  
+  inline def WWAN: typingsJapgolly.aliApp.aliAppStrings.WWAN = "WWAN".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.WWAN]
 }
-

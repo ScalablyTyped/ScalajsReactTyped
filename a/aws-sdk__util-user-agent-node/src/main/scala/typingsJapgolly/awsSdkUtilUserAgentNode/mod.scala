@@ -1,14 +1,47 @@
 package typingsJapgolly.awsSdkUtilUserAgentNode
 
-import typingsJapgolly.awsSdkTypes.httpMod.HttpRequest
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Provider
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.UserAgent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/util-user-agent-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def appendToUserAgent(request: HttpRequest[scala.scalajs.js.typedarray.Uint8Array], userAgentPartial: String): Unit = js.native
-  def defaultUserAgent(packageName: String, packageVersion: String): String = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/util-user-agent-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@aws-sdk/util-user-agent-node", "UA_APP_ID_ENV_NAME")
+  @js.native
+  val UA_APP_ID_ENV_NAME: /* "AWS_SDK_UA_APP_ID" */ String = js.native
+  
+  @JSImport("@aws-sdk/util-user-agent-node", "UA_APP_ID_INI_NAME")
+  @js.native
+  val UA_APP_ID_INI_NAME: /* "sdk-ua-app-id" */ String = js.native
+  
+  inline def defaultUserAgent(hasServiceIdClientVersion: DefaultUserAgentOptions): Provider[UserAgent] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(hasServiceIdClientVersion.asInstanceOf[js.Any]).asInstanceOf[Provider[UserAgent]]
+  
+  trait DefaultUserAgentOptions extends StObject {
+    
+    var clientVersion: String
+    
+    var serviceId: js.UndefOr[String] = js.undefined
+  }
+  object DefaultUserAgentOptions {
+    
+    inline def apply(clientVersion: String): DefaultUserAgentOptions = {
+      val __obj = js.Dynamic.literal(clientVersion = clientVersion.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DefaultUserAgentOptions]
+    }
+    
+    extension [Self <: DefaultUserAgentOptions](x: Self) {
+      
+      inline def setClientVersion(value: String): Self = StObject.set(x, "clientVersion", value.asInstanceOf[js.Any])
+      
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      
+      inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    }
+  }
 }
-

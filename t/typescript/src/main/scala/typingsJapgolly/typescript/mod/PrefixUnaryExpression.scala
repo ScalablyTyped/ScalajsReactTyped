@@ -1,14 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrefixUnaryExpression extends UpdateExpression {
+trait PrefixUnaryExpression
+  extends StObject
+     with UpdateExpression {
+  
   @JSName("kind")
-  var kind_PrefixUnaryExpression: typingsJapgolly.typescript.mod.SyntaxKind.PrefixUnaryExpression = js.native
-  var operand: UnaryExpression = js.native
-  var operator: PrefixUnaryOperator = js.native
+  val kind_PrefixUnaryExpression: typingsJapgolly.typescript.mod.SyntaxKind.PrefixUnaryExpression = js.native
+  
+  val operand: UnaryExpression = js.native
+  
+  val operator: PrefixUnaryOperator = js.native
 }
-

@@ -1,17 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ExpressionWithTypeArguments
-  extends NodeWithTypeArguments
+  extends StObject
+     with MemberExpression
+     with NodeWithTypeArguments
      with TypeReferenceType {
-  var expression: LeftHandSideExpression = js.native
+  
+  val expression: LeftHandSideExpression = js.native
+  
   @JSName("kind")
-  var kind_ExpressionWithTypeArguments: typingsJapgolly.typescript.mod.SyntaxKind.ExpressionWithTypeArguments = js.native
-  @JSName("parent")
-  var parent_ExpressionWithTypeArguments: HeritageClause | JSDocAugmentsTag = js.native
+  val kind_ExpressionWithTypeArguments: typingsJapgolly.typescript.mod.SyntaxKind.ExpressionWithTypeArguments = js.native
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.artyomJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDevice extends js.Object {
+trait IDevice extends StObject {
+  
   var isChrome: js.UndefOr[Boolean] = js.undefined
+  
   var isMobile: js.UndefOr[Boolean] = js.undefined
 }
-
 object IDevice {
-  @scala.inline
-  def apply(isChrome: js.UndefOr[Boolean] = js.undefined, isMobile: js.UndefOr[Boolean] = js.undefined): IDevice = {
+  
+  inline def apply(): IDevice = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome.asInstanceOf[js.Any])
-    if (!js.isUndefined(isMobile)) __obj.updateDynamic("isMobile")(isMobile.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDevice]
   }
+  
+  extension [Self <: IDevice](x: Self) {
+    
+    inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    
+    inline def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
+    
+    inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+    
+    inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+  }
 }
-

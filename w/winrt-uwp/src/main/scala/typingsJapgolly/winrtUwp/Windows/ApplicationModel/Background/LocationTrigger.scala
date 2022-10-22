@@ -1,19 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a location event that triggers a background task. This is used for Geofencing. */
-@JSGlobal("Windows.ApplicationModel.Background.LocationTrigger")
-@js.native
-class LocationTrigger protected () extends js.Object {
-  /**
-    * Initializes a new instance of a location event trigger.
-    * @param triggerType The type of location event for this trigger.
-    */
-  def this(triggerType: LocationTriggerType) = this()
+trait LocationTrigger extends StObject {
+  
   /** The type of location event for this trigger. */
-  var triggerType: LocationTriggerType = js.native
+  var triggerType: LocationTriggerType
 }
-
+object LocationTrigger {
+  
+  inline def apply(triggerType: LocationTriggerType): LocationTrigger = {
+    val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationTrigger]
+  }
+  
+  extension [Self <: LocationTrigger](x: Self) {
+    
+    inline def setTriggerType(value: LocationTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+  }
+}

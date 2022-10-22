@@ -1,23 +1,28 @@
 package typingsJapgolly.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseOptions extends js.Object {
+trait BaseOptions extends StObject {
+  
   /**
     * `true` to ignore casing difference.
     * @default false
     */
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseOptions {
-  @scala.inline
-  def apply(ignoreCase: js.UndefOr[Boolean] = js.undefined): BaseOptions = {
+  
+  inline def apply(): BaseOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseOptions]
   }
+  
+  extension [Self <: BaseOptions](x: Self) {
+    
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+  }
 }
-

@@ -1,26 +1,59 @@
 package typingsJapgolly.playcanvas.mod
 
+import typingsJapgolly.playcanvas.anon.Basis
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.TextureHandler
-  * @implements {pc.ResourceHandler}
-  * @classdesc Resource handler used for loading 2D and 3D {@link pc.Texture} resources.
-  * @param {pc.GraphicsDevice} device - The graphics device.
-  * @param {pc.AssetRegistry} assets - The asset registry.
-  * @param {pc.ResourceLoader} loader - The resource loader.
+  * Resource handler used for loading 2D and 3D {@link Texture} resources.
+  *
+  * @implements {ResourceHandler}
   */
 @JSImport("playcanvas", "TextureHandler")
 @js.native
-class TextureHandler protected ()
-  extends typingsJapgolly.playcanvas.pc.TextureHandler {
-  def this(
-    device: typingsJapgolly.playcanvas.pc.GraphicsDevice,
-    assets: typingsJapgolly.playcanvas.pc.AssetRegistry,
-    loader: typingsJapgolly.playcanvas.pc.ResourceLoader
-  ) = this()
+open class TextureHandler protected ()
+  extends StObject
+     with ResourceHandler {
+  /**
+    * Create a new TextureHandler instance.
+    *
+    * @param {AppBase} app - The running {@link AppBase}.
+    * @hideconstructor
+    */
+  def this(app: AppBase) = this()
+  
+  var _assets: AssetRegistry = js.native
+  
+  var _device: GraphicsDevice = js.native
+  
+  def _getParser(url: Any): Any = js.native
+  
+  def _getUrlWithoutParams(url: Any): Any = js.native
+  
+  var _loader: ResourceLoader = js.native
+  
+  def crossOrigin: String = js.native
+  def crossOrigin_=(arg: String): Unit = js.native
+  
+  /**
+    * Type of the resource the handler handles.
+    *
+    * @type {string}
+    */
+  var handlerType: String = js.native
+  
+  var imgParser: ImgParser = js.native
+  
+  def load(url: Any, callback: Any, asset: Any): Unit = js.native
+  
+  def maxRetries: Double = js.native
+  def maxRetries_=(arg: Double): Unit = js.native
+  
+  def open(url: Any, data: Any, asset: Any): Any = js.native
+  
+  var parsers: Basis = js.native
+  
+  @JSName("patch")
+  def patch_MTextureHandler(asset: Any, assets: Any): Unit = js.native
 }
-

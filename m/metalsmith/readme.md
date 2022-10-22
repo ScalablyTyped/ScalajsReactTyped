@@ -9,16 +9,16 @@ An extremely simple, pluggable static site generator.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | metalsmith |
-| Keywords           | static, file, site, website, blog, generator, markdown, jekyll, wintersmith, blacksmith |
-| # releases         | 1 |
-| # dependents       | 842 |
-| # downloads        | 1874441 |
-| # stars            | 36 |
+| Keywords           | static, jamstack, file, site, website, blog, generator, markdown, jekyll, metalsmith, yaml |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 231994.66666666666 |
+| # stars            | 7753.0 |
 
 ## Links
-- [Homepage](https://github.com/segmentio/metalsmith#readme)
-- [Bugs](https://github.com/segmentio/metalsmith/issues)
-- [Repository](https://github.com/segmentio/metalsmith)
+- [Homepage](https://metalsmith.io)
+- [Bugs](https://github.com/metalsmith/metalsmith/issues)
+- [Repository](https://github.com/metalsmith/metalsmith)
 - [Npm](https://www.npmjs.com/package/metalsmith)
     
 

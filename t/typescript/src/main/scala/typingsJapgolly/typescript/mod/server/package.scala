@@ -1,15 +1,27 @@
-package typingsJapgolly.typescript.mod
+package typingsJapgolly.typescript.mod.server
 
+import typingsJapgolly.typescript.typescriptStrings.actionColonColoninvalidate
+import typingsJapgolly.typescript.typescriptStrings.actionColonColonpackageInstalled
+import typingsJapgolly.typescript.typescriptStrings.actionColonColonset
+import typingsJapgolly.typescript.typescriptStrings.eventColonColonbeginInstallTypes
+import typingsJapgolly.typescript.typescriptStrings.eventColonColonendInstallTypes
+import typingsJapgolly.typescript.typescriptStrings.eventColonColoninitializationFailed
+import typingsJapgolly.typescript.typescriptStrings.eventColonColontypesRegistry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object server {
-  type ActionInvalidate = typingsJapgolly.typescript.typescriptStrings.actionColonColoninvalidate
-  type ActionPackageInstalled = typingsJapgolly.typescript.typescriptStrings.actionColonColonpackageInstalled
-  type ActionSet = typingsJapgolly.typescript.typescriptStrings.actionColonColonset
-  type EventBeginInstallTypes = typingsJapgolly.typescript.typescriptStrings.eventColonColonbeginInstallTypes
-  type EventEndInstallTypes = typingsJapgolly.typescript.typescriptStrings.eventColonColonendInstallTypes
-  type EventInitializationFailed = typingsJapgolly.typescript.typescriptStrings.eventColonColoninitializationFailed
-  type EventTypesRegistry = typingsJapgolly.typescript.typescriptStrings.eventColonColontypesRegistry
-}
+
+type ActionInvalidate = actionColonColoninvalidate
+
+type ActionPackageInstalled = actionColonColonpackageInstalled
+
+type ActionSet = actionColonColonset
+
+type EventBeginInstallTypes = eventColonColonbeginInstallTypes
+
+type EventEndInstallTypes = eventColonColonendInstallTypes
+
+type EventInitializationFailed = eventColonColoninitializationFailed
+
+type EventTypesRegistry = eventColonColontypesRegistry

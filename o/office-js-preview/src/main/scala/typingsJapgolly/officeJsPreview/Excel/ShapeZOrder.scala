@@ -1,47 +1,54 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeZOrder extends js.Object
-
+sealed trait ShapeZOrder extends StObject
 /**
-  *
   * Specifies where in the z-order a shape should be moved relative to other shapes.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeZOrder")
 @js.native
-object ShapeZOrder extends js.Object {
+object ShapeZOrder extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait bringForward extends ShapeZOrder
+  sealed trait bringForward
+    extends StObject
+       with ShapeZOrder
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait bringToFront extends ShapeZOrder
+  sealed trait bringToFront
+    extends StObject
+       with ShapeZOrder
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait sendBackward extends ShapeZOrder
+  sealed trait sendBackward
+    extends StObject
+       with ShapeZOrder
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait sendToBack extends ShapeZOrder
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeZOrder with String] = js.native
-  /* "BringForward" */ @js.native
-  object bringForward extends TopLevel[bringForward with String]
-  
-  /* "BringToFront" */ @js.native
-  object bringToFront extends TopLevel[bringToFront with String]
-  
-  /* "SendBackward" */ @js.native
-  object sendBackward extends TopLevel[sendBackward with String]
-  
-  /* "SendToBack" */ @js.native
-  object sendToBack extends TopLevel[sendToBack with String]
-  
+  sealed trait sendToBack
+    extends StObject
+       with ShapeZOrder
 }
-

@@ -11,9 +11,9 @@ ProseMirror plugin for cursors at normally impossible-to-reach positions
 | Full name          | prosemirror-gapcursor |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 38 |
-| # downloads        | 1884646 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1425362.6666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/prosemirror/prosemirror-gapcursor#readme)

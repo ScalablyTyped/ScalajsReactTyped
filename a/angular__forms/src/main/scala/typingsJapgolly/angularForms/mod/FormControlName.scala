@@ -4,14 +4,22 @@ import typingsJapgolly.angularCore.mod.EventEmitter
 import typingsJapgolly.angularCore.mod.OnChanges
 import typingsJapgolly.angularCore.mod.OnDestroy
 import typingsJapgolly.angularCore.mod.SimpleChanges
-import typingsJapgolly.rxjs.mod.Observable_
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.angularFormsStrings.`[formControlName]`
+import typingsJapgolly.angularForms.anon.Host
+import typingsJapgolly.angularForms.anon.IsDisabled
+import typingsJapgolly.angularForms.anon.Optional
+import typingsJapgolly.angularForms.anon.Self
+import typingsJapgolly.angularForms.anon.Update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "FormControlName")
 @js.native
-class FormControlName protected ()
+open class FormControlName protected ()
   extends NgControl
      with OnChanges
      with OnDestroy {
@@ -28,51 +36,37 @@ class FormControlName protected ()
     valueAccessors: js.Array[ControlValueAccessor],
     _ngModelWarningConfig: String
   ) = this()
-  var _added: js.Any = js.native
-  var _checkParentType: js.Any = js.native
-  var _ngModelWarningConfig: js.Any = js.native
-  var _setUpControl: js.Any = js.native
+  
+  /* private */ var _added: Any = js.native
+  
+  /* private */ var _checkParentType: Any = js.native
+  
+  /* private */ var _ngModelWarningConfig: Any = js.native
+  
+  /* private */ var _setUpControl: Any = js.native
+  
   /**
     * @description
     * Tracks the `FormControl` instance bound to the directive.
     */
   @JSName("control")
-  val control_FormControlName: FormControl = js.native
+  val control_FFormControlName: FormControl[Any] = js.native
+  
   /**
     * @description
     * The top-level directive for this group if present, otherwise null.
     */
-  val formDirective: js.Any = js.native
+  def formDirective: Any = js.native
+  
   /**
     * @description
-    * Triggers a warning that this input should not be used with reactive forms.
+    * Triggers a warning in dev mode that this input should not be used with reactive forms.
     */
-  var isDisabled: Boolean = js.native
+  def isDisabled_=(isDisabled: Boolean): Unit = js.native
+  
   /** @deprecated as of v6 */
-  var model: js.Any = js.native
-  /**
-    * @description
-    * Tracks the name of the `FormControl` bound to the directive. The name corresponds
-    * to a key in the parent `FormGroup` or `FormArray`.
-    */
-  @JSName("name")
-  var name_FormControlName: String = js.native
-  /**
-    * @description
-    * Returns an array that represents the path from the top-level form to this control.
-    * Each index is the string name of the control on that level.
-    */
-  @JSName("path")
-  val path_FormControlName: js.Array[String] = js.native
-  /** @deprecated as of v6 */
-  var update: EventEmitter[_] = js.native
-  /**
-    * @description
-    * Async validator function composed of all the async validators registered with this
-    * directive.
-    */
-  @JSName("asyncValidator")
-  def asyncValidator_MFormControlName(control: AbstractControl): (js.Promise[ValidationErrors | Null]) | (Observable_[ValidationErrors | Null]) = js.native
+  var model: Any = js.native
+  
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties
@@ -82,11 +76,51 @@ class FormControlName protected ()
     */
   /* CompleteClass */
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
+  
   /**
     * A callback method that performs custom clean-up, invoked immediately
-    * after a directive, pipe, or service instance is destroyed.
+    * before a directive, pipe, or service instance is destroyed.
     */
   /* CompleteClass */
   override def ngOnDestroy(): Unit = js.native
+  
+  /** @deprecated as of v6 */
+  var update: EventEmitter[Any] = js.native
 }
-
+/* static members */
+object FormControlName {
+  
+  @JSImport("@angular/forms", "FormControlName")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "FormControlName.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    FormControlName, 
+    `[formControlName]`, 
+    scala.Nothing, 
+    IsDisabled, 
+    Update, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      FormControlName, 
+      `[formControlName]`, 
+      scala.Nothing, 
+      IsDisabled, 
+      Update, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "FormControlName.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[FormControlName, js.Tuple5[Host, Self, Self, Self, Optional]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[FormControlName, js.Tuple5[Host, Self, Self, Self, Optional]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

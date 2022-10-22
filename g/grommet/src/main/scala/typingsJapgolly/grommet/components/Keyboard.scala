@@ -1,71 +1,54 @@
 package typingsJapgolly.grommet.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.grommet.grommetStrings.component
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.es6ComponentsKeyboardMod.KeyboardProps
 import typingsJapgolly.grommet.grommetStrings.document
-import typingsJapgolly.grommet.keyboardMod.KeyboardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Keyboard {
-  def apply(
-    onBackspace: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onComma: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onDown: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onEnter: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onEsc: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onKeyDown: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onLeft: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onRight: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onShift: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onSpace: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onTab: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onUp: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    target: component | document = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    KeyboardProps, 
-    MountedWithRawType[KeyboardProps, js.Object, RawMounted[KeyboardProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (onBackspace != null) __obj.updateDynamic("onBackspace")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onBackspace(t0).runNow()))
-    if (onComma != null) __obj.updateDynamic("onComma")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onComma(t0).runNow()))
-    if (onDown != null) __obj.updateDynamic("onDown")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onDown(t0).runNow()))
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEnter(t0).runNow()))
-    if (onEsc != null) __obj.updateDynamic("onEsc")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEsc(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
-    if (onLeft != null) __obj.updateDynamic("onLeft")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onLeft(t0).runNow()))
-    if (onRight != null) __obj.updateDynamic("onRight")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onRight(t0).runNow()))
-    if (onShift != null) __obj.updateDynamic("onShift")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onShift(t0).runNow()))
-    if (onSpace != null) __obj.updateDynamic("onSpace")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onSpace(t0).runNow()))
-    if (onTab != null) __obj.updateDynamic("onTab")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onTab(t0).runNow()))
-    if (onUp != null) __obj.updateDynamic("onUp")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onUp(t0).runNow()))
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.grommet.keyboardMod.KeyboardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.keyboardMod.KeyboardProps])(children: _*)
-  }
-  @JSImport("grommet", "Keyboard")
+  @JSImport("grommet/es6", "Keyboard")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def onBackspace(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onBackspace", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onComma(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onComma", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onDown(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onDown", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onEnter(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onEnter", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onEsc(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onEsc", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onKeyDown(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onLeft(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onLeft", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onRight(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onRight", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onShift(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onShift", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onSpace(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onSpace", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onTab(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onTab", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def onUp(value: /* event */ ReactKeyboardEventFrom[HTMLElement] => Callback): this.type = set("onUp", js.Any.fromFunction1((t0: /* event */ ReactKeyboardEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def target(value: typingsJapgolly.grommet.grommetStrings.component | document): this.type = set("target", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Keyboard.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: KeyboardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

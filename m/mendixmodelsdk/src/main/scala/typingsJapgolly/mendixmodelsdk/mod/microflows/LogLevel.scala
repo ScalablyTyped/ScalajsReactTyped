@@ -1,23 +1,55 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.LogLevel")
 @js.native
-class LogLevel ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.LogLevel
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.LogLevel")
-@js.native
-object LogLevel extends js.Object {
-  var Critical: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
-  var Debug: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
-  var Error: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
-  var Info: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
-  var Trace: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
-  var Warning: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.LogLevel = js.native
+open class LogLevel protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.LogLevel {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object LogLevel {
+  
+  @JSImport("mendixmodelsdk", "microflows.LogLevel")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Critical")
+  @js.native
+  def Critical: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Critical_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Critical")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Debug")
+  @js.native
+  def Debug: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Debug_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Debug")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Error")
+  @js.native
+  def Error: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Error_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Info")
+  @js.native
+  def Info: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Info_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Info")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Trace")
+  @js.native
+  def Trace: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Trace_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Trace")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.LogLevel.Warning")
+  @js.native
+  def Warning: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel = js.native
+  inline def Warning_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.LogLevel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Warning")(x.asInstanceOf[js.Any])
+}

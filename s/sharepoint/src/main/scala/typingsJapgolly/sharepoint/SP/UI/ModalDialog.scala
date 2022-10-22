@@ -1,58 +1,48 @@
 package typingsJapgolly.sharepoint.SP.UI
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.std.HTMLFrameElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a modal dialog */
-@JSGlobal("SP.UI.ModalDialog")
-@js.native
-class ModalDialog () extends Dialog {
+trait ModalDialog
+  extends StObject
+     with Dialog {
+  
   /** Closes the dialog using the specified dialog result. */
-  def close(dialogResult: DialogResult): Unit = js.native
+  def close(dialogResult: DialogResult): Unit
 }
-
-/* static members */
-@JSGlobal("SP.UI.ModalDialog")
-@js.native
-object ModalDialog extends js.Object {
-  /** Show modal dialog specified by url, callback, height and width. */
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback): Unit = js.native
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double): Unit = js.native
-  def OpenPopUpPage(url: String, callback: DialogReturnValueCallback, width: Double, height: Double): Unit = js.native
-  /** Refresh the page if specified dialogResult equals to SP.UI.DialogResult.OK */
-  def RefreshPage(dialogResult: DialogResult): Unit = js.native
-  /** Show page specified by the url in a modal dialog. If the dialog returns SP.UI.DialogResult.OK, the page is refreshed. */
-  def ShowPopupDialog(url: String): Unit = js.native
-  /** Should be called from an existing dialog. */
-  def commonModalDialogClose(dialogResult: DialogResult, returnValue: js.Any): Unit = js.native
-  /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
-    @param url overrides options.url
-    @param callback overrides options.dialogResultValueCallback
-    @param args overrides options.args */
-  def commonModalDialogOpen(url: String, options: IDialogOptions): Unit = js.native
-  def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback): Unit = js.native
-  def commonModalDialogOpen(url: String, options: IDialogOptions, callback: DialogReturnValueCallback, args: js.Any): Unit = js.native
-  def get_childDialog(): ModalDialog = js.native
-  /** Displays a modal dialog defined by the specified options. */
-  def showModalDialog(options: IDialogOptions): ModalDialog = js.native
-  def showPlatformFirstRunDialog(url: String, callbackFunc: DialogReturnValueCallback): ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
-  def showWaitScreenSize(title: String): ModalDialog = js.native
-  def showWaitScreenSize(title: String, message: String): ModalDialog = js.native
-  def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback): ModalDialog = js.native
-  def showWaitScreenSize(title: String, message: String, callbackFunc: DialogReturnValueCallback, height: Double): ModalDialog = js.native
-  def showWaitScreenSize(
-    title: String,
-    message: String,
-    callbackFunc: DialogReturnValueCallback,
-    height: Double,
-    width: Double
-  ): ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
-  def showWaitScreenWithNoClose(title: String): ModalDialog = js.native
-  def showWaitScreenWithNoClose(title: String, message: String): ModalDialog = js.native
-  def showWaitScreenWithNoClose(title: String, message: String, height: Double): ModalDialog = js.native
-  def showWaitScreenWithNoClose(title: String, message: String, height: Double, width: Double): ModalDialog = js.native
+object ModalDialog {
+  
+  inline def apply(
+    autoSize: Callback,
+    autoSizeSuppressScrollbar: Any => Callback,
+    close: DialogResult => Callback,
+    get_allowMaximize: CallbackTo[Boolean],
+    get_args: CallbackTo[Any],
+    get_closed: CallbackTo[Boolean],
+    get_dialogElement: CallbackTo[HTMLElement],
+    get_firstTabStop: CallbackTo[HTMLElement],
+    get_frameElement: CallbackTo[HTMLFrameElement],
+    get_html: CallbackTo[String],
+    get_isMaximized: CallbackTo[Boolean],
+    get_lastTabStop: CallbackTo[HTMLElement],
+    get_returnValue: CallbackTo[Any],
+    get_showClose: CallbackTo[Boolean],
+    get_title: CallbackTo[String],
+    get_url: CallbackTo[String],
+    set_returnValue: Any => Callback
+  ): ModalDialog = {
+    val __obj = js.Dynamic.literal(autoSize = autoSize.toJsFn, autoSizeSuppressScrollbar = js.Any.fromFunction1((t0: Any) => autoSizeSuppressScrollbar(t0).runNow()), close = js.Any.fromFunction1((t0: DialogResult) => close(t0).runNow()), get_allowMaximize = get_allowMaximize.toJsFn, get_args = get_args.toJsFn, get_closed = get_closed.toJsFn, get_dialogElement = get_dialogElement.toJsFn, get_firstTabStop = get_firstTabStop.toJsFn, get_frameElement = get_frameElement.toJsFn, get_html = get_html.toJsFn, get_isMaximized = get_isMaximized.toJsFn, get_lastTabStop = get_lastTabStop.toJsFn, get_returnValue = get_returnValue.toJsFn, get_showClose = get_showClose.toJsFn, get_title = get_title.toJsFn, get_url = get_url.toJsFn, set_returnValue = js.Any.fromFunction1((t0: Any) => set_returnValue(t0).runNow()))
+    __obj.asInstanceOf[ModalDialog]
+  }
+  
+  extension [Self <: ModalDialog](x: Self) {
+    
+    inline def setClose(value: DialogResult => Callback): Self = StObject.set(x, "close", js.Any.fromFunction1((t0: DialogResult) => value(t0).runNow()))
+  }
 }
-

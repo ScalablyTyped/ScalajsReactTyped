@@ -1,87 +1,83 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`20`
-import typingsJapgolly.activexWord.activexWordNumbers.`23`
-import typingsJapgolly.activexWord.activexWordNumbers.`25`
-import typingsJapgolly.activexWord.activexWordNumbers.`26`
-import typingsJapgolly.activexWord.activexWordNumbers.`27`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`39`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`43`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`55`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`20`
+import typingsJapgolly.activexWord.activexWordInts.`23`
+import typingsJapgolly.activexWord.activexWordInts.`25`
+import typingsJapgolly.activexWord.activexWordInts.`26`
+import typingsJapgolly.activexWord.activexWordInts.`27`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`39`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`43`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`55`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`23`
-  - typingsJapgolly.activexWord.activexWordNumbers.`39`
-  - typingsJapgolly.activexWord.activexWordNumbers.`55`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`25`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`26`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`20`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
-  - typingsJapgolly.activexWord.activexWordNumbers.`43`
-  - typingsJapgolly.activexWord.activexWordNumbers.`27`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`23`
+  - typingsJapgolly.activexWord.activexWordInts.`39`
+  - typingsJapgolly.activexWord.activexWordInts.`55`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`25`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`26`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`20`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`43`
+  - typingsJapgolly.activexWord.activexWordInts.`27`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
 */
-trait WdUnderline extends js.Object
-
+trait WdUnderline extends StObject
 object WdUnderline {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdUnderlineDash: `7` = this.cast(7)
-  @scala.inline
-  def wdUnderlineDashHeavy: `23` = this.cast(23)
-  @scala.inline
-  def wdUnderlineDashLong: `39` = this.cast(39)
-  @scala.inline
-  def wdUnderlineDashLongHeavy: `55` = this.cast(55)
-  @scala.inline
-  def wdUnderlineDotDash: `9` = this.cast(9)
-  @scala.inline
-  def wdUnderlineDotDashHeavy: `25` = this.cast(25)
-  @scala.inline
-  def wdUnderlineDotDotDash: `10` = this.cast(10)
-  @scala.inline
-  def wdUnderlineDotDotDashHeavy: `26` = this.cast(26)
-  @scala.inline
-  def wdUnderlineDotted: `4` = this.cast(4)
-  @scala.inline
-  def wdUnderlineDottedHeavy: `20` = this.cast(20)
-  @scala.inline
-  def wdUnderlineDouble: `3` = this.cast(3)
-  @scala.inline
-  def wdUnderlineNone: `0` = this.cast(0)
-  @scala.inline
-  def wdUnderlineSingle: `1` = this.cast(1)
-  @scala.inline
-  def wdUnderlineThick: `6` = this.cast(6)
-  @scala.inline
-  def wdUnderlineWavy: `11` = this.cast(11)
-  @scala.inline
-  def wdUnderlineWavyDouble: `43` = this.cast(43)
-  @scala.inline
-  def wdUnderlineWavyHeavy: `27` = this.cast(27)
-  @scala.inline
-  def wdUnderlineWords: `2` = this.cast(2)
+  
+  inline def wdUnderlineDash: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdUnderlineDashHeavy: `23` = 23.asInstanceOf[`23`]
+  
+  inline def wdUnderlineDashLong: `39` = 39.asInstanceOf[`39`]
+  
+  inline def wdUnderlineDashLongHeavy: `55` = 55.asInstanceOf[`55`]
+  
+  inline def wdUnderlineDotDash: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdUnderlineDotDashHeavy: `25` = 25.asInstanceOf[`25`]
+  
+  inline def wdUnderlineDotDotDash: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdUnderlineDotDotDashHeavy: `26` = 26.asInstanceOf[`26`]
+  
+  inline def wdUnderlineDotted: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdUnderlineDottedHeavy: `20` = 20.asInstanceOf[`20`]
+  
+  inline def wdUnderlineDouble: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdUnderlineNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdUnderlineSingle: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdUnderlineThick: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdUnderlineWavy: `11` = 11.asInstanceOf[`11`]
+  
+  inline def wdUnderlineWavyDouble: `43` = 43.asInstanceOf[`43`]
+  
+  inline def wdUnderlineWavyHeavy: `27` = 27.asInstanceOf[`27`]
+  
+  inline def wdUnderlineWords: `2` = 2.asInstanceOf[`2`]
 }
-

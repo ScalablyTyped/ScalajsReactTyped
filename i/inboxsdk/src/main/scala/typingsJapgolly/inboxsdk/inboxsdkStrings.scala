@@ -5,304 +5,273 @@ import typingsJapgolly.inboxsdk.mod.NavMenu.NavItemTypes
 import typingsJapgolly.inboxsdk.mod.Router.RouteTypes
 import typingsJapgolly.inboxsdk.mod.Toolbars.SectionNames
 import typingsJapgolly.inboxsdk.mod.Toolbars.ToolbarButtonPosition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inboxsdkStrings {
-  @js.native
-  sealed trait CHAT extends RouteTypes
   
   @js.native
-  sealed trait COLLAPSED extends MessageViewViewStates
+  sealed trait CHAT
+    extends StObject
+       with RouteTypes
+  inline def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
   
   @js.native
-  sealed trait CREATE extends js.Object
+  sealed trait COLLAPSED
+    extends StObject
+       with MessageViewViewStates
+  inline def COLLAPSED: COLLAPSED = "COLLAPSED".asInstanceOf[COLLAPSED]
   
   @js.native
-  sealed trait CUSTOM extends RouteTypes
+  sealed trait CREATE extends StObject
+  inline def CREATE: CREATE = "CREATE".asInstanceOf[CREATE]
   
   @js.native
-  sealed trait DROPDOWN_BUTTON extends js.Object
+  sealed trait CUSTOM
+    extends StObject
+       with RouteTypes
+  inline def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
   
   @js.native
-  sealed trait EXPANDED extends MessageViewViewStates
+  sealed trait DROPDOWN_BUTTON extends StObject
+  inline def DROPDOWN_BUTTON: DROPDOWN_BUTTON = "DROPDOWN_BUTTON".asInstanceOf[DROPDOWN_BUTTON]
   
   @js.native
-  sealed trait HIDDEN extends MessageViewViewStates
+  sealed trait EXPANDED
+    extends StObject
+       with MessageViewViewStates
+  inline def EXPANDED: EXPANDED = "EXPANDED".asInstanceOf[EXPANDED]
   
   @js.native
-  sealed trait ICON_BUTTON extends js.Object
+  sealed trait HIDDEN
+    extends StObject
+       with MessageViewViewStates
+  inline def HIDDEN: HIDDEN = "HIDDEN".asInstanceOf[HIDDEN]
   
   @js.native
-  sealed trait INBOX_STATE extends SectionNames
+  sealed trait ICON_BUTTON extends StObject
+  inline def ICON_BUTTON: ICON_BUTTON = "ICON_BUTTON".asInstanceOf[ICON_BUTTON]
   
   @js.native
-  sealed trait LINK extends NavItemTypes
+  sealed trait INBOX_STATE
+    extends StObject
+       with SectionNames
+  inline def INBOX_STATE: INBOX_STATE = "INBOX_STATE".asInstanceOf[INBOX_STATE]
+  
+  @js.native
+  sealed trait LINK
+    extends StObject
+       with NavItemTypes
+  inline def LINK: LINK = "LINK".asInstanceOf[LINK]
   
   @js.native
   sealed trait LIST
-    extends RouteTypes
+    extends StObject
+       with RouteTypes
        with ToolbarButtonPosition
+  inline def LIST: LIST = "LIST".asInstanceOf[LIST]
   
   @js.native
-  sealed trait METADATA_STATE extends SectionNames
+  sealed trait METADATA_STATE
+    extends StObject
+       with SectionNames
+  inline def METADATA_STATE: METADATA_STATE = "METADATA_STATE".asInstanceOf[METADATA_STATE]
   
   @js.native
-  sealed trait MODIFIER extends js.Object
+  sealed trait MODIFIER extends StObject
+  inline def MODIFIER: MODIFIER = "MODIFIER".asInstanceOf[MODIFIER]
   
   @js.native
-  sealed trait MORE extends js.Object
+  sealed trait MORE extends StObject
+  inline def MORE: MORE = "MORE".asInstanceOf[MORE]
   
   @js.native
-  sealed trait NAVIGATION extends NavItemTypes
+  sealed trait NAVIGATION
+    extends StObject
+       with NavItemTypes
+  inline def NAVIGATION: NAVIGATION = "NAVIGATION".asInstanceOf[NAVIGATION]
   
   @js.native
-  sealed trait OTHER extends SectionNames
+  sealed trait OTHER
+    extends StObject
+       with SectionNames
+  inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
-  sealed trait PRIMARY_ACTION extends js.Object
+  sealed trait PRIMARY_ACTION extends StObject
+  inline def PRIMARY_ACTION: PRIMARY_ACTION = "PRIMARY_ACTION".asInstanceOf[PRIMARY_ACTION]
   
   @js.native
-  sealed trait ROW extends ToolbarButtonPosition
+  sealed trait ROW
+    extends StObject
+       with ToolbarButtonPosition
+  inline def ROW: ROW = "ROW".asInstanceOf[ROW]
   
   @js.native
-  sealed trait SECONDARY_ACTION extends js.Object
+  sealed trait SECONDARY_ACTION extends StObject
+  inline def SECONDARY_ACTION: SECONDARY_ACTION = "SECONDARY_ACTION".asInstanceOf[SECONDARY_ACTION]
   
   @js.native
-  sealed trait SEND_ACTION extends js.Object
+  sealed trait SEND_ACTION extends StObject
+  inline def SEND_ACTION: SEND_ACTION = "SEND_ACTION".asInstanceOf[SEND_ACTION]
   
   @js.native
-  sealed trait SETTINGS extends RouteTypes
+  sealed trait SETTINGS
+    extends StObject
+       with RouteTypes
+  inline def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
   
   @js.native
   sealed trait THREAD
-    extends RouteTypes
+    extends StObject
+       with RouteTypes
        with ToolbarButtonPosition
+  inline def THREAD: THREAD = "THREAD".asInstanceOf[THREAD]
   
   @js.native
-  sealed trait UNKNOWN extends RouteTypes
+  sealed trait UNKNOWN
+    extends StObject
+       with RouteTypes
+  inline def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
   
   @js.native
-  sealed trait activate extends js.Object
+  sealed trait activate extends StObject
+  inline def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
-  sealed trait bccContactAdded extends js.Object
+  sealed trait bccContactAdded extends StObject
+  inline def bccContactAdded: bccContactAdded = "bccContactAdded".asInstanceOf[bccContactAdded]
   
   @js.native
-  sealed trait bccContactRemoved extends js.Object
+  sealed trait bccContactRemoved extends StObject
+  inline def bccContactRemoved: bccContactRemoved = "bccContactRemoved".asInstanceOf[bccContactRemoved]
   
   @js.native
-  sealed trait bodyChanged extends js.Object
+  sealed trait bodyChanged extends StObject
+  inline def bodyChanged: bodyChanged = "bodyChanged".asInstanceOf[bodyChanged]
   
   @js.native
-  sealed trait ccContactAdded extends js.Object
+  sealed trait ccContactAdded extends StObject
+  inline def ccContactAdded: ccContactAdded = "ccContactAdded".asInstanceOf[ccContactAdded]
   
   @js.native
-  sealed trait ccContactRemoved extends js.Object
+  sealed trait ccContactRemoved extends StObject
+  inline def ccContactRemoved: ccContactRemoved = "ccContactRemoved".asInstanceOf[ccContactRemoved]
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closing extends StObject
+  inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait collapsed_ extends js.Object
+  sealed trait collapsed_ extends StObject
+  inline def collapsed_ : collapsed_ = "collapsed".asInstanceOf[collapsed_]
   
   @js.native
-  sealed trait contactHover extends js.Object
+  sealed trait contactHover extends StObject
+  inline def contactHover: contactHover = "contactHover".asInstanceOf[contactHover]
   
   @js.native
-  sealed trait deactivate extends js.Object
+  sealed trait deactivate extends StObject
+  inline def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait discard extends js.Object
+  sealed trait discard extends StObject
+  inline def discard: discard = "discard".asInstanceOf[discard]
   
   @js.native
-  sealed trait escape extends js.Object
+  sealed trait escape extends StObject
+  inline def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
-  sealed trait expanded_ extends js.Object
+  sealed trait expanded_ extends StObject
+  inline def expanded_ : expanded_ = "expanded".asInstanceOf[expanded_]
   
   @js.native
-  sealed trait fromContactChanged extends js.Object
+  sealed trait fromContactChanged extends StObject
+  inline def fromContactChanged: fromContactChanged = "fromContactChanged".asInstanceOf[fromContactChanged]
   
   @js.native
-  sealed trait fullscreenChanged extends js.Object
+  sealed trait fullscreenChanged extends StObject
+  inline def fullscreenChanged: fullscreenChanged = "fullscreenChanged".asInstanceOf[fullscreenChanged]
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait minimize extends js.Object
+  sealed trait minimize extends StObject
+  inline def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
-  sealed trait minimized extends js.Object
+  sealed trait minimized extends StObject
+  inline def minimized: minimized = "minimized".asInstanceOf[minimized]
   
   @js.native
-  sealed trait outsideInteraction extends js.Object
+  sealed trait outsideInteraction extends StObject
+  inline def outsideInteraction: outsideInteraction = "outsideInteraction".asInstanceOf[outsideInteraction]
   
   @js.native
-  sealed trait preautoclose extends js.Object
+  sealed trait preautoclose extends StObject
+  inline def preautoclose: preautoclose = "preautoclose".asInstanceOf[preautoclose]
   
   @js.native
-  sealed trait presending extends js.Object
+  sealed trait presending extends StObject
+  inline def presending: presending = "presending".asInstanceOf[presending]
   
   @js.native
-  sealed trait recipient extends js.Object
+  sealed trait recipient extends StObject
+  inline def recipient: recipient = "recipient".asInstanceOf[recipient]
   
   @js.native
-  sealed trait recipientsChanged extends js.Object
+  sealed trait recipientsChanged extends StObject
+  inline def recipientsChanged: recipientsChanged = "recipientsChanged".asInstanceOf[recipientsChanged]
   
   @js.native
-  sealed trait responseTypeChanged extends js.Object
+  sealed trait responseTypeChanged extends StObject
+  inline def responseTypeChanged: responseTypeChanged = "responseTypeChanged".asInstanceOf[responseTypeChanged]
   
   @js.native
-  sealed trait restore extends js.Object
+  sealed trait restore extends StObject
+  inline def restore: restore = "restore".asInstanceOf[restore]
   
   @js.native
-  sealed trait restored extends js.Object
+  sealed trait restored extends StObject
+  inline def restored: restored = "restored".asInstanceOf[restored]
   
   @js.native
-  sealed trait sendCanceled extends js.Object
+  sealed trait sendCanceled extends StObject
+  inline def sendCanceled: sendCanceled = "sendCanceled".asInstanceOf[sendCanceled]
   
   @js.native
-  sealed trait sender extends js.Object
+  sealed trait sender extends StObject
+  inline def sender: sender = "sender".asInstanceOf[sender]
   
   @js.native
-  sealed trait sending extends js.Object
+  sealed trait sending extends StObject
+  inline def sending: sending = "sending".asInstanceOf[sending]
   
   @js.native
-  sealed trait sent extends js.Object
+  sealed trait sent extends StObject
+  inline def sent: sent = "sent".asInstanceOf[sent]
   
   @js.native
-  sealed trait slideAnimationDone extends js.Object
+  sealed trait slideAnimationDone extends StObject
+  inline def slideAnimationDone: slideAnimationDone = "slideAnimationDone".asInstanceOf[slideAnimationDone]
   
   @js.native
-  sealed trait toContactAdded extends js.Object
+  sealed trait toContactAdded extends StObject
+  inline def toContactAdded: toContactAdded = "toContactAdded".asInstanceOf[toContactAdded]
   
   @js.native
-  sealed trait toContactRemoved extends js.Object
+  sealed trait toContactRemoved extends StObject
+  inline def toContactRemoved: toContactRemoved = "toContactRemoved".asInstanceOf[toContactRemoved]
   
   @js.native
-  sealed trait viewStateChange extends js.Object
-  
-  @scala.inline
-  def CHAT: CHAT = "CHAT".asInstanceOf[CHAT]
-  @scala.inline
-  def COLLAPSED: COLLAPSED = "COLLAPSED".asInstanceOf[COLLAPSED]
-  @scala.inline
-  def CREATE: CREATE = "CREATE".asInstanceOf[CREATE]
-  @scala.inline
-  def CUSTOM: CUSTOM = "CUSTOM".asInstanceOf[CUSTOM]
-  @scala.inline
-  def DROPDOWN_BUTTON: DROPDOWN_BUTTON = "DROPDOWN_BUTTON".asInstanceOf[DROPDOWN_BUTTON]
-  @scala.inline
-  def EXPANDED: EXPANDED = "EXPANDED".asInstanceOf[EXPANDED]
-  @scala.inline
-  def HIDDEN: HIDDEN = "HIDDEN".asInstanceOf[HIDDEN]
-  @scala.inline
-  def ICON_BUTTON: ICON_BUTTON = "ICON_BUTTON".asInstanceOf[ICON_BUTTON]
-  @scala.inline
-  def INBOX_STATE: INBOX_STATE = "INBOX_STATE".asInstanceOf[INBOX_STATE]
-  @scala.inline
-  def LINK: LINK = "LINK".asInstanceOf[LINK]
-  @scala.inline
-  def LIST: LIST = "LIST".asInstanceOf[LIST]
-  @scala.inline
-  def METADATA_STATE: METADATA_STATE = "METADATA_STATE".asInstanceOf[METADATA_STATE]
-  @scala.inline
-  def MODIFIER: MODIFIER = "MODIFIER".asInstanceOf[MODIFIER]
-  @scala.inline
-  def MORE: MORE = "MORE".asInstanceOf[MORE]
-  @scala.inline
-  def NAVIGATION: NAVIGATION = "NAVIGATION".asInstanceOf[NAVIGATION]
-  @scala.inline
-  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
-  @scala.inline
-  def PRIMARY_ACTION: PRIMARY_ACTION = "PRIMARY_ACTION".asInstanceOf[PRIMARY_ACTION]
-  @scala.inline
-  def ROW: ROW = "ROW".asInstanceOf[ROW]
-  @scala.inline
-  def SECONDARY_ACTION: SECONDARY_ACTION = "SECONDARY_ACTION".asInstanceOf[SECONDARY_ACTION]
-  @scala.inline
-  def SEND_ACTION: SEND_ACTION = "SEND_ACTION".asInstanceOf[SEND_ACTION]
-  @scala.inline
-  def SETTINGS: SETTINGS = "SETTINGS".asInstanceOf[SETTINGS]
-  @scala.inline
-  def THREAD: THREAD = "THREAD".asInstanceOf[THREAD]
-  @scala.inline
-  def UNKNOWN: UNKNOWN = "UNKNOWN".asInstanceOf[UNKNOWN]
-  @scala.inline
-  def activate: activate = "activate".asInstanceOf[activate]
-  @scala.inline
-  def bccContactAdded: bccContactAdded = "bccContactAdded".asInstanceOf[bccContactAdded]
-  @scala.inline
-  def bccContactRemoved: bccContactRemoved = "bccContactRemoved".asInstanceOf[bccContactRemoved]
-  @scala.inline
-  def bodyChanged: bodyChanged = "bodyChanged".asInstanceOf[bodyChanged]
-  @scala.inline
-  def ccContactAdded: ccContactAdded = "ccContactAdded".asInstanceOf[ccContactAdded]
-  @scala.inline
-  def ccContactRemoved: ccContactRemoved = "ccContactRemoved".asInstanceOf[ccContactRemoved]
-  @scala.inline
-  def closing: closing = "closing".asInstanceOf[closing]
-  @scala.inline
-  def collapsed_ : collapsed_ = "collapsed".asInstanceOf[collapsed_]
-  @scala.inline
-  def contactHover: contactHover = "contactHover".asInstanceOf[contactHover]
-  @scala.inline
-  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def discard: discard = "discard".asInstanceOf[discard]
-  @scala.inline
-  def escape: escape = "escape".asInstanceOf[escape]
-  @scala.inline
-  def expanded_ : expanded_ = "expanded".asInstanceOf[expanded_]
-  @scala.inline
-  def fromContactChanged: fromContactChanged = "fromContactChanged".asInstanceOf[fromContactChanged]
-  @scala.inline
-  def fullscreenChanged: fullscreenChanged = "fullscreenChanged".asInstanceOf[fullscreenChanged]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def minimize: minimize = "minimize".asInstanceOf[minimize]
-  @scala.inline
-  def minimized: minimized = "minimized".asInstanceOf[minimized]
-  @scala.inline
-  def outsideInteraction: outsideInteraction = "outsideInteraction".asInstanceOf[outsideInteraction]
-  @scala.inline
-  def preautoclose: preautoclose = "preautoclose".asInstanceOf[preautoclose]
-  @scala.inline
-  def presending: presending = "presending".asInstanceOf[presending]
-  @scala.inline
-  def recipient: recipient = "recipient".asInstanceOf[recipient]
-  @scala.inline
-  def recipientsChanged: recipientsChanged = "recipientsChanged".asInstanceOf[recipientsChanged]
-  @scala.inline
-  def responseTypeChanged: responseTypeChanged = "responseTypeChanged".asInstanceOf[responseTypeChanged]
-  @scala.inline
-  def restore: restore = "restore".asInstanceOf[restore]
-  @scala.inline
-  def restored: restored = "restored".asInstanceOf[restored]
-  @scala.inline
-  def sendCanceled: sendCanceled = "sendCanceled".asInstanceOf[sendCanceled]
-  @scala.inline
-  def sender: sender = "sender".asInstanceOf[sender]
-  @scala.inline
-  def sending: sending = "sending".asInstanceOf[sending]
-  @scala.inline
-  def sent: sent = "sent".asInstanceOf[sent]
-  @scala.inline
-  def slideAnimationDone: slideAnimationDone = "slideAnimationDone".asInstanceOf[slideAnimationDone]
-  @scala.inline
-  def toContactAdded: toContactAdded = "toContactAdded".asInstanceOf[toContactAdded]
-  @scala.inline
-  def toContactRemoved: toContactRemoved = "toContactRemoved".asInstanceOf[toContactRemoved]
-  @scala.inline
-  def viewStateChange: viewStateChange = "viewStateChange".asInstanceOf[viewStateChange]
+  sealed trait viewStateChange extends StObject
+  inline def viewStateChange: viewStateChange = "viewStateChange".asInstanceOf[viewStateChange]
 }
-

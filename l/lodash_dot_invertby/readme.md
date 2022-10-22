@@ -10,10 +10,10 @@ The lodash method `_.invertBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.invertby |
 | Keywords           | lodash-modularized, invertby |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 84194 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 15399.666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

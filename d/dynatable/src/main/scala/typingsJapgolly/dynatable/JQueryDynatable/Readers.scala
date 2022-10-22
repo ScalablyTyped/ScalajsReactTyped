@@ -1,12 +1,12 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Readers extends js.Object {
+trait Readers extends StObject {
+  
   /**
     * Function that interprets the cell into data
     *
@@ -21,7 +21,8 @@ trait Readers extends js.Object {
     *    return $(cell).html();
     * };
     */
-  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ js.Any, _]] = js.undefined
+  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ Any, Any]] = js.undefined
+  
   /**
     * Function that interprets the row into data
     *
@@ -37,19 +38,23 @@ trait Readers extends js.Object {
     *     //...
     * };
     */
-  var _rowReader: js.UndefOr[js.Function3[/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any, _]] = js.undefined
+  var _rowReader: js.UndefOr[js.Function3[/* index */ Double, /* thisRef */ Any, /* record */ Any, Any]] = js.undefined
 }
-
 object Readers {
-  @scala.inline
-  def apply(
-    _attributeReader: (/* cell */ Element, /* record */ js.Any) => CallbackTo[js.Any] = null,
-    _rowReader: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => CallbackTo[js.Any] = null
-  ): Readers = {
+  
+  inline def apply(): Readers = {
     val __obj = js.Dynamic.literal()
-    if (_attributeReader != null) __obj.updateDynamic("_attributeReader")(js.Any.fromFunction2((t0: /* cell */ org.scalajs.dom.raw.Element, t1: /* record */ js.Any) => _attributeReader(t0, t1).runNow()))
-    if (_rowReader != null) __obj.updateDynamic("_rowReader")(js.Any.fromFunction3((t0: /* index */ scala.Double, t1: /* thisRef */ js.Any, t2: /* record */ js.Any) => _rowReader(t0, t1, t2).runNow()))
     __obj.asInstanceOf[Readers]
   }
+  
+  extension [Self <: Readers](x: Self) {
+    
+    inline def set_attributeReader(value: (/* cell */ Element, /* record */ Any) => Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
+    
+    inline def set_attributeReaderUndefined: Self = StObject.set(x, "_attributeReader", js.undefined)
+    
+    inline def set_rowReader(value: (/* index */ Double, /* thisRef */ Any, /* record */ Any) => Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
+    
+    inline def set_rowReaderUndefined: Self = StObject.set(x, "_rowReader", js.undefined)
+  }
 }
-

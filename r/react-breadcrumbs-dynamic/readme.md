@@ -10,10 +10,10 @@ React dynamic breadcrumbs extremely flexible and easy to use
 | ------------------ | :-------------: |
 | Full name          | react-breadcrumbs-dynamic |
 | Keywords           | breadcrumbs, theme, react, router, react-router, through, react-through |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 164681 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 27689.333333333332 |
+| # stars            | 122.0 |
 
 ## Links
 - [Homepage](https://github.com/oklas/react-breadcrumbs-dynamic#readme)

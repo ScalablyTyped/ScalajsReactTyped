@@ -1,26 +1,33 @@
 package typingsJapgolly.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "application.toJSON()". */
-trait ApplicationData extends js.Object {
+/** An interface describing the data returned by calling `application.toJSON()`. */
+trait ApplicationData extends StObject {
+  
   /**
+    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote Online, only one notebook at a time is open in the application instance. Read-only.
     *
-    * Gets the collection of notebooks that are open in the OneNote application instance. In OneNote on the web, only one notebook at a time is open in the application instance. Read-only.
-    *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var notebooks: js.UndefOr[js.Array[NotebookData]] = js.undefined
 }
-
 object ApplicationData {
-  @scala.inline
-  def apply(notebooks: js.Array[NotebookData] = null): ApplicationData = {
+  
+  inline def apply(): ApplicationData = {
     val __obj = js.Dynamic.literal()
-    if (notebooks != null) __obj.updateDynamic("notebooks")(notebooks.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationData]
   }
+  
+  extension [Self <: ApplicationData](x: Self) {
+    
+    inline def setNotebooks(value: js.Array[NotebookData]): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
+    
+    inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
+    
+    inline def setNotebooksVarargs(value: NotebookData*): Self = StObject.set(x, "notebooks", js.Array(value*))
+  }
 }
-

@@ -1,18 +1,25 @@
 package typingsJapgolly.meteor.meteorMod.Meteor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("meteor/meteor", "Meteor.TypedError")
 @js.native
-class TypedErrorCls protected () extends TypedError {
+open class TypedErrorCls protected ()
+  extends StObject
+     with TypedError {
   def this(message: String, errorType: String) = this()
+  
   /* CompleteClass */
-  override var errorType: String = js.native
+  var errorType: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

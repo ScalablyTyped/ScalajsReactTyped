@@ -1,42 +1,49 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationBindingsOptions extends js.Object {
+trait NavigationBindingsOptions extends StObject {
+  
   /**
     * (Highstock) A line with arrow annotation. Includes `start` and one event
     * in `steps` array.
     */
-  var arrowInfinityLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var arrowInfinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A ray with an arrow annotation bindings. Includes `start` and
     * one event in `steps` array.
     */
-  var arrowRay: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var arrowRay: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A segment with an arrow annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var arrowSegment: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var arrowSegment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock) A circle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var circleAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var circleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Crooked line (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points in crooked
     * line) array.
     */
-  var crooked3: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var crooked3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Crooked line (five points) annotation bindings. Includes
     * `start` and four events in `steps` (for all consequent points in crooked
     * line) array.
     */
-  var crooked5: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var crooked5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Hides/shows two price indicators:
     *
@@ -44,107 +51,142 @@ trait NavigationBindingsOptions extends js.Object {
     *
     * - last price in the selected range
     */
-  var currentPriceIndicator: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var currentPriceIndicator: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Elliott wave (three points) annotation bindings. Includes
     * `start` and two events in `steps` (for second and third points) array.
     */
-  var elliott3: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var elliott3: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Elliott wave (five points) annotation bindings. Includes
     * `start` and four event in `steps` (for all consequent points in Elliott
     * wave) array.
     */
-  var elliott5: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var elliott5: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) A ellipse annotation bindings. Includes `start`
+    * and two events in `steps` array. First updates the second point,
+    * responsible for a rx width, and second updates the ry width.
+    */
+  var ellipseAnnotation: js.UndefOr[NavigationBindingsEllipseAnnotationOptions | NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A fibonacci annotation bindings. Includes `start` and two
     * events in `steps` array (updates second point, then height).
     */
-  var fibonacci: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var fibonacci: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) The Fibonacci Time Zones annotation bindings. Includes
+    * `start` and one event in `steps` array.
+    */
+  var fibonacciTimeZones: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'circlepin'`
     * shape.
     */
-  var flagCirclepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagCirclepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'diamondpin'`
     * shape.
     */
-  var flagDiamondpin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagDiamondpin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag without pin shape.
     */
-  var flagSimplepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagSimplepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A flag series bindings. Includes `start` event. On click,
     * finds the closest point and marks it with a flag with `'squarepin'`
     * shape.
     */
-  var flagSquarepin: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var flagSquarepin: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Displays chart in fullscreen.
+    *
+    * **Note**: Fullscreen is not supported on iPhone due to iOS limitations.
     */
-  var fullScreen: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var fullScreen: js.UndefOr[NavigationBindingsFullScreenOptions | NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A horizontal line annotation. Includes `start` event.
     */
-  var horizontalLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var horizontalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Indicators bindings. Includes `init` event to show a popup.
     *
     * Note: In order to show base series from the chart in the popup's dropdown
     * each series requires series.id to be defined.
     */
-  var indicators: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var indicators: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A line annotation. Includes `start` and one event in `steps`
     * array.
     */
-  var infinityLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var infinityLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock) A label annotation bindings. Includes `start`
     * event only.
     */
-  var labelAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var labelAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A measure (x-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureX: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var measureX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A measure (xy-dimension) annotation bindings. Includes
     * `start` and one event in `steps` array.
     */
-  var measureXY: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var measureXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A measure (y-dimension) annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var measureY: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var measureY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A parallel channel (tunnel) annotation bindings. Includes
     * `start` and two events in `steps` array (updates second point, then
     * height).
     */
-  var parallelChannel: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var parallelChannel: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) An Andrew's pitchfork annotation bindings. Includes `start`
     * and two events in `steps` array (sets second and third control points).
     */
-  var pitchfork: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var pitchfork: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A ray annotation bindings. Includes `start` and one event in
     * `steps` array.
     */
-  var ray: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var ray: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock) A rectangle annotation bindings. Includes `start`
     * and one event in `steps` array.
     */
-  var rectangleAnnotation: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var rectangleAnnotation: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Save a chart in localStorage under `highcharts-chart` key.
     * Stored items:
@@ -155,151 +197,277 @@ trait NavigationBindingsOptions extends js.Object {
     *
     * - flags
     */
-  var saveChart: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var saveChart: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsSaveChartOptions] = js.undefined
+  
   /**
     * (Highstock) A segment annotation bindings. Includes `start` and one event
     * in `steps` array.
     */
-  var segment: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var segment: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Changes main series to `'candlestick'` type.
     */
-  var seriesTypeCandlestick: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var seriesTypeCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) Change main series to `'hlc'` type.
+    */
+  var seriesTypeHLC: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsSeriesTypeHLCOptions] = js.undefined
+  
+  /**
+    * (Highstock) Changes main series to `'heikinashi'` type.
+    */
+  var seriesTypeHeikinAshi: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) Changes main series to `'hollowcandlestick'` type.
+    */
+  var seriesTypeHollowCandlestick: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Changes main series to `'line'` type.
     */
-  var seriesTypeLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var seriesTypeLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Changes main series to `'ohlc'` type.
     */
-  var seriesTypeOhlc: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var seriesTypeOhlc: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
+  /**
+    * (Highstock) A time cycles annotation bindings. Includes `start` event and
+    * 1 `step` event. first click marks the beginning of the circle, and the
+    * second one sets its diameter.
+    */
+  var timeCycles: js.UndefOr[NavigationBindingsOptionsObject | NavigationBindingsTimeCyclesOptions] = js.undefined
+  
   /**
     * (Highstock) Hides/shows all annotations on a chart.
     */
-  var toggleAnnotations: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var toggleAnnotations: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
-    * On click, finds the closest point and marks it with an arrow. Green arrow
-    * when pointing from above, red when pointing from below the point.
+    * On click, finds the closest point and marks it with an arrow. `#06b535`
+    * is the color of the arrow when pointing from above and `#f21313` when
+    * pointing from below the point.
     */
-  var verticalArrow: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var verticalArrow: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A vertical counter annotation bindings. Includes `start`
     * event. On click, finds the closest point and marks it with a numeric
     * annotation - incrementing counter on each add.
     */
-  var verticalCounter: js.UndefOr[StockToolsBindingsObject] = js.undefined
-  /**
-    * (Highstock) A vertical arrow annotation bindings. Includes `start` event.
-    * On click, finds the closest point and marks it with an arrow and a label
-    * with value.
-    */
-  var verticalLabel: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var verticalCounter: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) A vertical line annotation. Includes `start` event.
     */
-  var verticalLine: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var verticalLine: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Enables zooming in xAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomX: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var zoomX: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Enables zooming in xAxis and yAxis on a chart. Includes
     * `start` event which changes chart.zoomType.
     */
-  var zoomXY: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var zoomXY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
+  
   /**
     * (Highstock) Enables zooming in yAxis on a chart. Includes `start` event
     * which changes chart.zoomType.
     */
-  var zoomY: js.UndefOr[StockToolsBindingsObject] = js.undefined
+  var zoomY: js.UndefOr[NavigationBindingsOptionsObject] = js.undefined
 }
-
 object NavigationBindingsOptions {
-  @scala.inline
-  def apply(
-    arrowInfinityLine: StockToolsBindingsObject = null,
-    arrowRay: StockToolsBindingsObject = null,
-    arrowSegment: StockToolsBindingsObject = null,
-    circleAnnotation: StockToolsBindingsObject = null,
-    crooked3: StockToolsBindingsObject = null,
-    crooked5: StockToolsBindingsObject = null,
-    currentPriceIndicator: StockToolsBindingsObject = null,
-    elliott3: StockToolsBindingsObject = null,
-    elliott5: StockToolsBindingsObject = null,
-    fibonacci: StockToolsBindingsObject = null,
-    flagCirclepin: StockToolsBindingsObject = null,
-    flagDiamondpin: StockToolsBindingsObject = null,
-    flagSimplepin: StockToolsBindingsObject = null,
-    flagSquarepin: StockToolsBindingsObject = null,
-    fullScreen: StockToolsBindingsObject = null,
-    horizontalLine: StockToolsBindingsObject = null,
-    indicators: StockToolsBindingsObject = null,
-    infinityLine: StockToolsBindingsObject = null,
-    labelAnnotation: StockToolsBindingsObject = null,
-    measureX: StockToolsBindingsObject = null,
-    measureXY: StockToolsBindingsObject = null,
-    measureY: StockToolsBindingsObject = null,
-    parallelChannel: StockToolsBindingsObject = null,
-    pitchfork: StockToolsBindingsObject = null,
-    ray: StockToolsBindingsObject = null,
-    rectangleAnnotation: StockToolsBindingsObject = null,
-    saveChart: StockToolsBindingsObject = null,
-    segment: StockToolsBindingsObject = null,
-    seriesTypeCandlestick: StockToolsBindingsObject = null,
-    seriesTypeLine: StockToolsBindingsObject = null,
-    seriesTypeOhlc: StockToolsBindingsObject = null,
-    toggleAnnotations: StockToolsBindingsObject = null,
-    verticalArrow: StockToolsBindingsObject = null,
-    verticalCounter: StockToolsBindingsObject = null,
-    verticalLabel: StockToolsBindingsObject = null,
-    verticalLine: StockToolsBindingsObject = null,
-    zoomX: StockToolsBindingsObject = null,
-    zoomXY: StockToolsBindingsObject = null,
-    zoomY: StockToolsBindingsObject = null
-  ): NavigationBindingsOptions = {
+  
+  inline def apply(): NavigationBindingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (arrowInfinityLine != null) __obj.updateDynamic("arrowInfinityLine")(arrowInfinityLine.asInstanceOf[js.Any])
-    if (arrowRay != null) __obj.updateDynamic("arrowRay")(arrowRay.asInstanceOf[js.Any])
-    if (arrowSegment != null) __obj.updateDynamic("arrowSegment")(arrowSegment.asInstanceOf[js.Any])
-    if (circleAnnotation != null) __obj.updateDynamic("circleAnnotation")(circleAnnotation.asInstanceOf[js.Any])
-    if (crooked3 != null) __obj.updateDynamic("crooked3")(crooked3.asInstanceOf[js.Any])
-    if (crooked5 != null) __obj.updateDynamic("crooked5")(crooked5.asInstanceOf[js.Any])
-    if (currentPriceIndicator != null) __obj.updateDynamic("currentPriceIndicator")(currentPriceIndicator.asInstanceOf[js.Any])
-    if (elliott3 != null) __obj.updateDynamic("elliott3")(elliott3.asInstanceOf[js.Any])
-    if (elliott5 != null) __obj.updateDynamic("elliott5")(elliott5.asInstanceOf[js.Any])
-    if (fibonacci != null) __obj.updateDynamic("fibonacci")(fibonacci.asInstanceOf[js.Any])
-    if (flagCirclepin != null) __obj.updateDynamic("flagCirclepin")(flagCirclepin.asInstanceOf[js.Any])
-    if (flagDiamondpin != null) __obj.updateDynamic("flagDiamondpin")(flagDiamondpin.asInstanceOf[js.Any])
-    if (flagSimplepin != null) __obj.updateDynamic("flagSimplepin")(flagSimplepin.asInstanceOf[js.Any])
-    if (flagSquarepin != null) __obj.updateDynamic("flagSquarepin")(flagSquarepin.asInstanceOf[js.Any])
-    if (fullScreen != null) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (horizontalLine != null) __obj.updateDynamic("horizontalLine")(horizontalLine.asInstanceOf[js.Any])
-    if (indicators != null) __obj.updateDynamic("indicators")(indicators.asInstanceOf[js.Any])
-    if (infinityLine != null) __obj.updateDynamic("infinityLine")(infinityLine.asInstanceOf[js.Any])
-    if (labelAnnotation != null) __obj.updateDynamic("labelAnnotation")(labelAnnotation.asInstanceOf[js.Any])
-    if (measureX != null) __obj.updateDynamic("measureX")(measureX.asInstanceOf[js.Any])
-    if (measureXY != null) __obj.updateDynamic("measureXY")(measureXY.asInstanceOf[js.Any])
-    if (measureY != null) __obj.updateDynamic("measureY")(measureY.asInstanceOf[js.Any])
-    if (parallelChannel != null) __obj.updateDynamic("parallelChannel")(parallelChannel.asInstanceOf[js.Any])
-    if (pitchfork != null) __obj.updateDynamic("pitchfork")(pitchfork.asInstanceOf[js.Any])
-    if (ray != null) __obj.updateDynamic("ray")(ray.asInstanceOf[js.Any])
-    if (rectangleAnnotation != null) __obj.updateDynamic("rectangleAnnotation")(rectangleAnnotation.asInstanceOf[js.Any])
-    if (saveChart != null) __obj.updateDynamic("saveChart")(saveChart.asInstanceOf[js.Any])
-    if (segment != null) __obj.updateDynamic("segment")(segment.asInstanceOf[js.Any])
-    if (seriesTypeCandlestick != null) __obj.updateDynamic("seriesTypeCandlestick")(seriesTypeCandlestick.asInstanceOf[js.Any])
-    if (seriesTypeLine != null) __obj.updateDynamic("seriesTypeLine")(seriesTypeLine.asInstanceOf[js.Any])
-    if (seriesTypeOhlc != null) __obj.updateDynamic("seriesTypeOhlc")(seriesTypeOhlc.asInstanceOf[js.Any])
-    if (toggleAnnotations != null) __obj.updateDynamic("toggleAnnotations")(toggleAnnotations.asInstanceOf[js.Any])
-    if (verticalArrow != null) __obj.updateDynamic("verticalArrow")(verticalArrow.asInstanceOf[js.Any])
-    if (verticalCounter != null) __obj.updateDynamic("verticalCounter")(verticalCounter.asInstanceOf[js.Any])
-    if (verticalLabel != null) __obj.updateDynamic("verticalLabel")(verticalLabel.asInstanceOf[js.Any])
-    if (verticalLine != null) __obj.updateDynamic("verticalLine")(verticalLine.asInstanceOf[js.Any])
-    if (zoomX != null) __obj.updateDynamic("zoomX")(zoomX.asInstanceOf[js.Any])
-    if (zoomXY != null) __obj.updateDynamic("zoomXY")(zoomXY.asInstanceOf[js.Any])
-    if (zoomY != null) __obj.updateDynamic("zoomY")(zoomY.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationBindingsOptions]
   }
+  
+  extension [Self <: NavigationBindingsOptions](x: Self) {
+    
+    inline def setArrowInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowInfinityLine", value.asInstanceOf[js.Any])
+    
+    inline def setArrowInfinityLineUndefined: Self = StObject.set(x, "arrowInfinityLine", js.undefined)
+    
+    inline def setArrowRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
+    
+    inline def setArrowRayUndefined: Self = StObject.set(x, "arrowRay", js.undefined)
+    
+    inline def setArrowSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
+    
+    inline def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
+    
+    inline def setCircleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "circleAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setCircleAnnotationUndefined: Self = StObject.set(x, "circleAnnotation", js.undefined)
+    
+    inline def setCrooked3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked3", value.asInstanceOf[js.Any])
+    
+    inline def setCrooked3Undefined: Self = StObject.set(x, "crooked3", js.undefined)
+    
+    inline def setCrooked5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "crooked5", value.asInstanceOf[js.Any])
+    
+    inline def setCrooked5Undefined: Self = StObject.set(x, "crooked5", js.undefined)
+    
+    inline def setCurrentPriceIndicator(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "currentPriceIndicator", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentPriceIndicatorUndefined: Self = StObject.set(x, "currentPriceIndicator", js.undefined)
+    
+    inline def setElliott3(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott3", value.asInstanceOf[js.Any])
+    
+    inline def setElliott3Undefined: Self = StObject.set(x, "elliott3", js.undefined)
+    
+    inline def setElliott5(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "elliott5", value.asInstanceOf[js.Any])
+    
+    inline def setElliott5Undefined: Self = StObject.set(x, "elliott5", js.undefined)
+    
+    inline def setEllipseAnnotation(value: NavigationBindingsEllipseAnnotationOptions | NavigationBindingsOptionsObject): Self = StObject.set(x, "ellipseAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setEllipseAnnotationUndefined: Self = StObject.set(x, "ellipseAnnotation", js.undefined)
+    
+    inline def setFibonacci(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacci", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZones(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "fibonacciTimeZones", value.asInstanceOf[js.Any])
+    
+    inline def setFibonacciTimeZonesUndefined: Self = StObject.set(x, "fibonacciTimeZones", js.undefined)
+    
+    inline def setFibonacciUndefined: Self = StObject.set(x, "fibonacci", js.undefined)
+    
+    inline def setFlagCirclepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagCirclepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagCirclepinUndefined: Self = StObject.set(x, "flagCirclepin", js.undefined)
+    
+    inline def setFlagDiamondpin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagDiamondpin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagDiamondpinUndefined: Self = StObject.set(x, "flagDiamondpin", js.undefined)
+    
+    inline def setFlagSimplepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSimplepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagSimplepinUndefined: Self = StObject.set(x, "flagSimplepin", js.undefined)
+    
+    inline def setFlagSquarepin(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "flagSquarepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
+    
+    inline def setFullScreen(value: NavigationBindingsFullScreenOptions | NavigationBindingsOptionsObject): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    
+    inline def setHorizontalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
+    
+    inline def setIndicators(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "indicators", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorsUndefined: Self = StObject.set(x, "indicators", js.undefined)
+    
+    inline def setInfinityLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "infinityLine", value.asInstanceOf[js.Any])
+    
+    inline def setInfinityLineUndefined: Self = StObject.set(x, "infinityLine", js.undefined)
+    
+    inline def setLabelAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "labelAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setLabelAnnotationUndefined: Self = StObject.set(x, "labelAnnotation", js.undefined)
+    
+    inline def setMeasureX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureX", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureXUndefined: Self = StObject.set(x, "measureX", js.undefined)
+    
+    inline def setMeasureXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureXY", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureXYUndefined: Self = StObject.set(x, "measureXY", js.undefined)
+    
+    inline def setMeasureY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "measureY", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureYUndefined: Self = StObject.set(x, "measureY", js.undefined)
+    
+    inline def setParallelChannel(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "parallelChannel", value.asInstanceOf[js.Any])
+    
+    inline def setParallelChannelUndefined: Self = StObject.set(x, "parallelChannel", js.undefined)
+    
+    inline def setPitchfork(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "pitchfork", value.asInstanceOf[js.Any])
+    
+    inline def setPitchforkUndefined: Self = StObject.set(x, "pitchfork", js.undefined)
+    
+    inline def setRay(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+    
+    inline def setRayUndefined: Self = StObject.set(x, "ray", js.undefined)
+    
+    inline def setRectangleAnnotation(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "rectangleAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setRectangleAnnotationUndefined: Self = StObject.set(x, "rectangleAnnotation", js.undefined)
+    
+    inline def setSaveChart(value: NavigationBindingsOptionsObject | NavigationBindingsSaveChartOptions): Self = StObject.set(x, "saveChart", value.asInstanceOf[js.Any])
+    
+    inline def setSaveChartUndefined: Self = StObject.set(x, "saveChart", js.undefined)
+    
+    inline def setSegment(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    
+    inline def setSeriesTypeCandlestick(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeCandlestick", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeCandlestickUndefined: Self = StObject.set(x, "seriesTypeCandlestick", js.undefined)
+    
+    inline def setSeriesTypeHLC(value: NavigationBindingsOptionsObject | NavigationBindingsSeriesTypeHLCOptions): Self = StObject.set(x, "seriesTypeHLC", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHLCUndefined: Self = StObject.set(x, "seriesTypeHLC", js.undefined)
+    
+    inline def setSeriesTypeHeikinAshi(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeHeikinAshi", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHeikinAshiUndefined: Self = StObject.set(x, "seriesTypeHeikinAshi", js.undefined)
+    
+    inline def setSeriesTypeHollowCandlestick(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeHollowCandlestick", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeHollowCandlestickUndefined: Self = StObject.set(x, "seriesTypeHollowCandlestick", js.undefined)
+    
+    inline def setSeriesTypeLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeLine", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeLineUndefined: Self = StObject.set(x, "seriesTypeLine", js.undefined)
+    
+    inline def setSeriesTypeOhlc(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "seriesTypeOhlc", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesTypeOhlcUndefined: Self = StObject.set(x, "seriesTypeOhlc", js.undefined)
+    
+    inline def setTimeCycles(value: NavigationBindingsOptionsObject | NavigationBindingsTimeCyclesOptions): Self = StObject.set(x, "timeCycles", value.asInstanceOf[js.Any])
+    
+    inline def setTimeCyclesUndefined: Self = StObject.set(x, "timeCycles", js.undefined)
+    
+    inline def setToggleAnnotations(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "toggleAnnotations", value.asInstanceOf[js.Any])
+    
+    inline def setToggleAnnotationsUndefined: Self = StObject.set(x, "toggleAnnotations", js.undefined)
+    
+    inline def setVerticalArrow(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalArrow", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalArrowUndefined: Self = StObject.set(x, "verticalArrow", js.undefined)
+    
+    inline def setVerticalCounter(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalCounter", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalCounterUndefined: Self = StObject.set(x, "verticalCounter", js.undefined)
+    
+    inline def setVerticalLine(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
+    
+    inline def setZoomX(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomX", value.asInstanceOf[js.Any])
+    
+    inline def setZoomXUndefined: Self = StObject.set(x, "zoomX", js.undefined)
+    
+    inline def setZoomXY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomXY", value.asInstanceOf[js.Any])
+    
+    inline def setZoomXYUndefined: Self = StObject.set(x, "zoomXY", js.undefined)
+    
+    inline def setZoomY(value: NavigationBindingsOptionsObject): Self = StObject.set(x, "zoomY", value.asInstanceOf[js.Any])
+    
+    inline def setZoomYUndefined: Self = StObject.set(x, "zoomY", js.undefined)
+  }
 }
-

@@ -1,48 +1,38 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialDataItemType extends js.Object
-
+sealed trait SocialDataItemType extends StObject
 /** Specifies whether the item being inserted is a user, document, site, tag, or link. */
 @JSGlobal("SP.Social.SocialDataItemType")
 @js.native
-object SocialDataItemType extends js.Object {
-  @js.native
-  sealed trait document extends SocialDataItemType
+object SocialDataItemType extends StObject {
   
   @js.native
-  sealed trait link extends SocialDataItemType
+  sealed trait document
+    extends StObject
+       with SocialDataItemType
   
   @js.native
-  sealed trait site extends SocialDataItemType
+  sealed trait link
+    extends StObject
+       with SocialDataItemType
   
   @js.native
-  sealed trait tag extends SocialDataItemType
+  sealed trait site
+    extends StObject
+       with SocialDataItemType
   
   @js.native
-  sealed trait user extends SocialDataItemType
+  sealed trait tag
+    extends StObject
+       with SocialDataItemType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialDataItemType with Double] = js.native
-  /* 1 */ @js.native
-  object document extends TopLevel[document with Double]
-  
-  /* 4 */ @js.native
-  object link extends TopLevel[link with Double]
-  
-  /* 2 */ @js.native
-  object site extends TopLevel[site with Double]
-  
-  /* 3 */ @js.native
-  object tag extends TopLevel[tag with Double]
-  
-  /* 0 */ @js.native
-  object user extends TopLevel[user with Double]
-  
+  @js.native
+  sealed trait user
+    extends StObject
+       with SocialDataItemType
 }
-

@@ -1,17 +1,20 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonFilters
+import typingsJapgolly.ldapjs.anon.Filters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "OrFilter")
 @js.native
-class OrFilter protected () extends Filter {
-  def this(options: AnonFilters) = this()
+open class OrFilter protected ()
+  extends StObject
+     with Filter {
+  def this(options: Filters) = this()
+  
   /* CompleteClass */
-  override var `type`: String = js.native
+  override def matches(obj: Any): Boolean = js.native
+  
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  var `type`: String = js.native
 }
-

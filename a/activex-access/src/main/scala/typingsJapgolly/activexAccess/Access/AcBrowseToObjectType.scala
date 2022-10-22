@@ -1,23 +1,19 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`3`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`3`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`3`
 */
-trait AcBrowseToObjectType extends js.Object
-
+trait AcBrowseToObjectType extends StObject
 object AcBrowseToObjectType {
-  @scala.inline
-  def acBrowseToForm: `2` = this.cast(2)
-  @scala.inline
-  def acBrowseToReport: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acBrowseToForm: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acBrowseToReport: `3` = 3.asInstanceOf[`3`]
 }
-

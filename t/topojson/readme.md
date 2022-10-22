@@ -10,10 +10,10 @@ An extension to GeoJSON that encodes topology.
 | ------------------ | :-------------: |
 | Full name          | topojson |
 | Keywords           | topojson, geojson |
-| # releases         | 1 |
-| # dependents       | 147 |
-| # downloads        | 3033921 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 228168.0 |
+| # stars            | 4284.0 |
 
 ## Links
 - [Homepage](https://github.com/topojson/topojson)

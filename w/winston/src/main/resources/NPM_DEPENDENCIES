@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "winston" : "3.8.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "winston" : "3.8.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

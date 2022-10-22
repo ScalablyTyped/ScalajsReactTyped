@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.panelGroupMod.PanelGroupProps
+import typingsJapgolly.reactBootstrap.libPanelGroupMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "PanelGroup")
 @js.native
-class PanelGroup ()
-  extends Component[PanelGroupProps, js.Object, js.Any]
-
+open class PanelGroup () extends ^

@@ -1,43 +1,69 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Notifications
 
 import typingsJapgolly.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the XML that defines the toast notification that will display at the scheduled time. */
-@JSGlobal("Windows.UI.Notifications.ScheduledToastNotification")
-@js.native
-class ScheduledToastNotification protected () extends js.Object {
-  /**
-    * Creates and initializes a new instance of a ScheduledToastNotification that will be displayed only once.
-    * @param content The XML that defines the toast notification content.
-    * @param deliveryTime The date and time that Windows should display the toast notification. You must call AddToSchedule before this time.
-    */
-  def this(content: XmlDocument, deliveryTime: js.Date) = this()
-  /**
-    * Creates and initializes a new instance of a recurring ScheduledToastNotification .
-    * @param content The XML that defines the toast notification content.
-    * @param deliveryTime The date and time that Windows should first display the toast notification. You must call AddToSchedule before this time.
-    * @param snoozeInterval The amount of time between occurrences of the notification. To be valid, this value must be no less than 60 seconds and no more than 60 minutes.
-    * @param maximumSnoozeCount The maximum number of times to display this notification. Valid values range from 1 to 5.
-    */
-  def this(content: XmlDocument, deliveryTime: js.Date, snoozeInterval: Double, maximumSnoozeCount: Double) = this()
+trait ScheduledToastNotification extends StObject {
+  
   /** Gets the XML that defines this scheduled toast notification. */
-  var content: XmlDocument = js.native
+  var content: XmlDocument
+  
   /** Gets the time that this toast notification is scheduled to be displayed. */
-  var deliveryTime: js.Date = js.native
+  var deliveryTime: js.Date
+  
   /** Gets or sets the group identifier for the notification. */
-  var group: String = js.native
+  var group: String
+  
   /** Gets a developer-specified value used to identify a specific scheduled toast. */
-  var id: String = js.native
+  var id: String
+  
   /** Gets the maximum number of times to display this notification. */
-  var maximumSnoozeCount: Double = js.native
+  var maximumSnoozeCount: Double
+  
   /** Gets the amount of time between occurrences of the notification. */
-  var snoozeInterval: Double = js.native
+  var snoozeInterval: Double
+  
   /** Gets or sets whether a toast's pop-up UI is displayed on the Windows Phone 8.1 screen. */
-  var suppressPopup: Boolean = js.native
+  var suppressPopup: Boolean
+  
   /** Gets or sets a string that uniquely identifies a toast notification inside a Group . */
-  var tag: String = js.native
+  var tag: String
 }
-
+object ScheduledToastNotification {
+  
+  inline def apply(
+    content: XmlDocument,
+    deliveryTime: js.Date,
+    group: String,
+    id: String,
+    maximumSnoozeCount: Double,
+    snoozeInterval: Double,
+    suppressPopup: Boolean,
+    tag: String
+  ): ScheduledToastNotification = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], deliveryTime = deliveryTime.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], maximumSnoozeCount = maximumSnoozeCount.asInstanceOf[js.Any], snoozeInterval = snoozeInterval.asInstanceOf[js.Any], suppressPopup = suppressPopup.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScheduledToastNotification]
+  }
+  
+  extension [Self <: ScheduledToastNotification](x: Self) {
+    
+    inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setDeliveryTime(value: js.Date): Self = StObject.set(x, "deliveryTime", value.asInstanceOf[js.Any])
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumSnoozeCount(value: Double): Self = StObject.set(x, "maximumSnoozeCount", value.asInstanceOf[js.Any])
+    
+    inline def setSnoozeInterval(value: Double): Self = StObject.set(x, "snoozeInterval", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressPopup(value: Boolean): Self = StObject.set(x, "suppressPopup", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+  }
+}

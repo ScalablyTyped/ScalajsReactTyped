@@ -1,38 +1,66 @@
 package typingsJapgolly.web3Core.mod
 
-import typingsJapgolly.web3Core.AnonData
+import typingsJapgolly.web3Core.anon.Data
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventLog extends js.Object {
+trait EventLog extends StObject {
+  
   var address: String
+  
   var blockHash: String
+  
   var blockNumber: Double
+  
   var event: String
+  
   var logIndex: Double
-  var raw: js.UndefOr[AnonData] = js.undefined
-  var returnValues: js.Any
+  
+  var raw: js.UndefOr[Data] = js.undefined
+  
+  var returnValues: Any
+  
   var transactionHash: String
+  
   var transactionIndex: Double
 }
-
 object EventLog {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     address: String,
     blockHash: String,
     blockNumber: Double,
     event: String,
     logIndex: Double,
-    returnValues: js.Any,
+    returnValues: Any,
     transactionHash: String,
-    transactionIndex: Double,
-    raw: AnonData = null
+    transactionIndex: Double
   ): EventLog = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], logIndex = logIndex.asInstanceOf[js.Any], returnValues = returnValues.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventLog]
   }
+  
+  extension [Self <: EventLog](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setBlockHash(value: String): Self = StObject.set(x, "blockHash", value.asInstanceOf[js.Any])
+    
+    inline def setBlockNumber(value: Double): Self = StObject.set(x, "blockNumber", value.asInstanceOf[js.Any])
+    
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setLogIndex(value: Double): Self = StObject.set(x, "logIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRaw(value: Data): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setReturnValues(value: Any): Self = StObject.set(x, "returnValues", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionHash(value: String): Self = StObject.set(x, "transactionHash", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionIndex(value: Double): Self = StObject.set(x, "transactionIndex", value.asInstanceOf[js.Any])
+  }
 }
-

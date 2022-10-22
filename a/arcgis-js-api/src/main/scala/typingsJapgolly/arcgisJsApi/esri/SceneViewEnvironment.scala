@@ -1,74 +1,101 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.HashMap
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewEnvironment extends AnonymousAccessor {
+trait SceneViewEnvironment
+  extends StObject
+     with AnonymousAccessor {
+  
   /**
     * Atmosphere conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphere] = js.undefined
+  
   /**
     * Indicates whether atmosphere visualization is enabled.
+    *
+    * @default true
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed. By default this is simply a single, fully opaque, black color. Currently [ColorBackground](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-background-ColorBackground.html) is the only type of background supported.
+    * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var background: js.UndefOr[Background] = js.undefined
+  
   /**
-    * Lighting conditions of the scene.
+    * Indicates the type of lighting in the scene.
+    *
+    * @default SunLighting
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.undefined
+  var lighting: js.UndefOr[SunLighting | VirtualLighting] = js.undefined
+  
   /**
     * Indicates whether stars visualization is enabled.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
   var starsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the type of weather visualization in the scene.
+    *
+    * @default SunnyWeather
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
+    */
+  var weather: js.UndefOr[SunnyWeather | CloudyWeather | RainyWeather | SnowyWeather | FoggyWeather] = js.undefined
 }
-
 object SceneViewEnvironment {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    atmosphere: SceneViewEnvironmentAtmosphere = null,
-    atmosphereEnabled: js.UndefOr[Boolean] = js.undefined,
-    background: Background = null,
-    get: /* propertyName */ String => CallbackTo[js.Any] = null,
-    lighting: SceneViewEnvironmentLighting = null,
-    set: (js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironment]) with (js.Function1[/* props */ HashMap[_], SceneViewEnvironment]) = null,
-    starsEnabled: js.UndefOr[Boolean] = js.undefined,
-    watch: (/* path */ String | js.Array[String], /* callback */ WatchCallback, /* sync */ js.UndefOr[Boolean]) => CallbackTo[WatchHandle] = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    set: (js.UndefOr[js.Function2[/* propertyName */ String, /* value */ Any, SceneViewEnvironment]]) & (js.UndefOr[js.Function1[/* props */ HashMap[Any], SceneViewEnvironment]])
   ): SceneViewEnvironment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (atmosphere != null) __obj.updateDynamic("atmosphere")(atmosphere.asInstanceOf[js.Any])
-    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction1((t0: /* propertyName */ java.lang.String) => get(t0).runNow()))
-    if (lighting != null) __obj.updateDynamic("lighting")(lighting.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled.asInstanceOf[js.Any])
-    if (watch != null) __obj.updateDynamic("watch")(js.Any.fromFunction3((t0: /* path */ java.lang.String | js.Array[java.lang.String], t1: /* callback */ typingsJapgolly.arcgisJsApi.esri.WatchCallback, t2: /* sync */ js.UndefOr[scala.Boolean]) => watch(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironment]
   }
+  
+  extension [Self <: SceneViewEnvironment](x: Self) {
+    
+    inline def setAtmosphere(value: SceneViewEnvironmentAtmosphere): Self = StObject.set(x, "atmosphere", value.asInstanceOf[js.Any])
+    
+    inline def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
+    
+    inline def setAtmosphereUndefined: Self = StObject.set(x, "atmosphere", js.undefined)
+    
+    inline def setBackground(value: Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setLighting(value: SunLighting | VirtualLighting): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    
+    inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
+    
+    inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    
+    inline def setWeather(value: SunnyWeather | CloudyWeather | RainyWeather | SnowyWeather | FoggyWeather): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
+    
+    inline def setWeatherUndefined: Self = StObject.set(x, "weather", js.undefined)
+  }
 }
-

@@ -1,197 +1,208 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeBuilderFlags extends js.Object
-
+sealed trait NodeBuilderFlags extends StObject
 @JSImport("typescript", "NodeBuilderFlags")
 @js.native
-object NodeBuilderFlags extends js.Object {
-  @js.native
-  sealed trait AllowAnonymousIdentifier extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowEmptyIndexInfoType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowEmptyTuple extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowEmptyUnionOrIntersection extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowNodeModulesRelativePaths extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowQualifedNameInPlaceOfIdentifier extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowThisInObjectLiteral extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait AllowUniqueESSymbolType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait ForbidIndexedAccessSymbolReferences extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait GenerateNamesForShadowedTypeParams extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait IgnoreErrors extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait InInitialEntityName extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait InObjectTypeLiteral extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait InReverseMappedType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait InTypeAlias extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait MultilineObjectLiterals extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait NoTruncation extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait None extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait OmitParameterModifiers extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait SuppressAnyReturnType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseAliasDefinedOutsideCurrentScope extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseFullyQualifiedType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseOnlyExternalAliasing extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseSingleQuotesForStringLiteralType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseStructuralFallback extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait UseTypeOfFunction extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait WriteArrayAsGenericType extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait WriteClassExpressionAsTypeLiteral extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait WriteTypeArgumentsOfSignature extends NodeBuilderFlags
-  
-  @js.native
-  sealed trait WriteTypeParametersInQualifiedName extends NodeBuilderFlags
+object NodeBuilderFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeBuilderFlags with Double] = js.native
-  /* 131072 */ @js.native
-  object AllowAnonymousIdentifier extends TopLevel[AllowAnonymousIdentifier with Double]
+  def apply(value: Double): js.UndefOr[NodeBuilderFlags & Double] = js.native
   
-  /* 2097152 */ @js.native
-  object AllowEmptyIndexInfoType extends TopLevel[AllowEmptyIndexInfoType with Double]
+  @js.native
+  sealed trait AllowAnonymousIdentifier
+    extends StObject
+       with NodeBuilderFlags
+  /* 131072 */ val AllowAnonymousIdentifier: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowAnonymousIdentifier & Double = js.native
   
-  /* 524288 */ @js.native
-  object AllowEmptyTuple extends TopLevel[AllowEmptyTuple with Double]
+  @js.native
+  sealed trait AllowEmptyIndexInfoType
+    extends StObject
+       with NodeBuilderFlags
+  /* 2097152 */ val AllowEmptyIndexInfoType: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowEmptyIndexInfoType & Double = js.native
   
-  /* 262144 */ @js.native
-  object AllowEmptyUnionOrIntersection extends TopLevel[AllowEmptyUnionOrIntersection with Double]
+  @js.native
+  sealed trait AllowEmptyTuple
+    extends StObject
+       with NodeBuilderFlags
+  /* 524288 */ val AllowEmptyTuple: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowEmptyTuple & Double = js.native
   
-  /* 67108864 */ @js.native
-  object AllowNodeModulesRelativePaths extends TopLevel[AllowNodeModulesRelativePaths with Double]
+  @js.native
+  sealed trait AllowEmptyUnionOrIntersection
+    extends StObject
+       with NodeBuilderFlags
+  /* 262144 */ val AllowEmptyUnionOrIntersection: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowEmptyUnionOrIntersection & Double = js.native
   
-  /* 65536 */ @js.native
-  object AllowQualifedNameInPlaceOfIdentifier extends TopLevel[AllowQualifedNameInPlaceOfIdentifier with Double]
+  @js.native
+  sealed trait AllowNodeModulesRelativePaths
+    extends StObject
+       with NodeBuilderFlags
+  /* 67108864 */ val AllowNodeModulesRelativePaths: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowNodeModulesRelativePaths & Double = js.native
   
-  /* 32768 */ @js.native
-  object AllowThisInObjectLiteral extends TopLevel[AllowThisInObjectLiteral with Double]
+  /** @deprecated AllowQualifedNameInPlaceOfIdentifier. Use AllowQualifiedNameInPlaceOfIdentifier instead. */
+  @js.native
+  sealed trait AllowQualifedNameInPlaceOfIdentifier
+    extends StObject
+       with NodeBuilderFlags
+  /* 65536 */ val AllowQualifedNameInPlaceOfIdentifier: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowQualifedNameInPlaceOfIdentifier & Double = js.native
   
-  /* 1048576 */ @js.native
-  object AllowUniqueESSymbolType extends TopLevel[AllowUniqueESSymbolType with Double]
+  @js.native
+  sealed trait AllowQualifiedNameInPlaceOfIdentifier
+    extends StObject
+       with NodeBuilderFlags
+  /* 65536 */ val AllowQualifiedNameInPlaceOfIdentifier: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowQualifiedNameInPlaceOfIdentifier & Double = js.native
   
-  /* 16 */ @js.native
-  object ForbidIndexedAccessSymbolReferences extends TopLevel[ForbidIndexedAccessSymbolReferences with Double]
+  @js.native
+  sealed trait AllowThisInObjectLiteral
+    extends StObject
+       with NodeBuilderFlags
+  /* 32768 */ val AllowThisInObjectLiteral: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowThisInObjectLiteral & Double = js.native
   
-  /* 4 */ @js.native
-  object GenerateNamesForShadowedTypeParams extends TopLevel[GenerateNamesForShadowedTypeParams with Double]
+  @js.native
+  sealed trait AllowUniqueESSymbolType
+    extends StObject
+       with NodeBuilderFlags
+  /* 1048576 */ val AllowUniqueESSymbolType: typingsJapgolly.typescript.mod.NodeBuilderFlags.AllowUniqueESSymbolType & Double = js.native
   
-  /* 70221824 */ @js.native
-  object IgnoreErrors extends TopLevel[IgnoreErrors with Double]
+  @js.native
+  sealed trait ForbidIndexedAccessSymbolReferences
+    extends StObject
+       with NodeBuilderFlags
+  /* 16 */ val ForbidIndexedAccessSymbolReferences: typingsJapgolly.typescript.mod.NodeBuilderFlags.ForbidIndexedAccessSymbolReferences & Double = js.native
   
-  /* 16777216 */ @js.native
-  object InInitialEntityName extends TopLevel[InInitialEntityName with Double]
+  @js.native
+  sealed trait GenerateNamesForShadowedTypeParams
+    extends StObject
+       with NodeBuilderFlags
+  /* 4 */ val GenerateNamesForShadowedTypeParams: typingsJapgolly.typescript.mod.NodeBuilderFlags.GenerateNamesForShadowedTypeParams & Double = js.native
   
-  /* 4194304 */ @js.native
-  object InObjectTypeLiteral extends TopLevel[InObjectTypeLiteral with Double]
+  @js.native
+  sealed trait IgnoreErrors
+    extends StObject
+       with NodeBuilderFlags
+  /* 70221824 */ val IgnoreErrors: typingsJapgolly.typescript.mod.NodeBuilderFlags.IgnoreErrors & Double = js.native
   
-  /* 33554432 */ @js.native
-  object InReverseMappedType extends TopLevel[InReverseMappedType with Double]
+  @js.native
+  sealed trait InInitialEntityName
+    extends StObject
+       with NodeBuilderFlags
+  /* 16777216 */ val InInitialEntityName: typingsJapgolly.typescript.mod.NodeBuilderFlags.InInitialEntityName & Double = js.native
   
-  /* 8388608 */ @js.native
-  object InTypeAlias extends TopLevel[InTypeAlias with Double]
+  @js.native
+  sealed trait InObjectTypeLiteral
+    extends StObject
+       with NodeBuilderFlags
+  /* 4194304 */ val InObjectTypeLiteral: typingsJapgolly.typescript.mod.NodeBuilderFlags.InObjectTypeLiteral & Double = js.native
   
-  /* 1024 */ @js.native
-  object MultilineObjectLiterals extends TopLevel[MultilineObjectLiterals with Double]
+  @js.native
+  sealed trait InTypeAlias
+    extends StObject
+       with NodeBuilderFlags
+  /* 8388608 */ val InTypeAlias: typingsJapgolly.typescript.mod.NodeBuilderFlags.InTypeAlias & Double = js.native
   
-  /* 1 */ @js.native
-  object NoTruncation extends TopLevel[NoTruncation with Double]
+  @js.native
+  sealed trait MultilineObjectLiterals
+    extends StObject
+       with NodeBuilderFlags
+  /* 1024 */ val MultilineObjectLiterals: typingsJapgolly.typescript.mod.NodeBuilderFlags.MultilineObjectLiterals & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait NoTruncation
+    extends StObject
+       with NodeBuilderFlags
+  /* 1 */ val NoTruncation: typingsJapgolly.typescript.mod.NodeBuilderFlags.NoTruncation & Double = js.native
   
-  /* 8192 */ @js.native
-  object OmitParameterModifiers extends TopLevel[OmitParameterModifiers with Double]
+  @js.native
+  sealed trait NoTypeReduction
+    extends StObject
+       with NodeBuilderFlags
+  /* 536870912 */ val NoTypeReduction: typingsJapgolly.typescript.mod.NodeBuilderFlags.NoTypeReduction & Double = js.native
   
-  /* 256 */ @js.native
-  object SuppressAnyReturnType extends TopLevel[SuppressAnyReturnType with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with NodeBuilderFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.NodeBuilderFlags.None & Double = js.native
   
-  /* 16384 */ @js.native
-  object UseAliasDefinedOutsideCurrentScope extends TopLevel[UseAliasDefinedOutsideCurrentScope with Double]
+  @js.native
+  sealed trait OmitParameterModifiers
+    extends StObject
+       with NodeBuilderFlags
+  /* 8192 */ val OmitParameterModifiers: typingsJapgolly.typescript.mod.NodeBuilderFlags.OmitParameterModifiers & Double = js.native
   
-  /* 64 */ @js.native
-  object UseFullyQualifiedType extends TopLevel[UseFullyQualifiedType with Double]
+  @js.native
+  sealed trait OmitThisParameter
+    extends StObject
+       with NodeBuilderFlags
+  /* 33554432 */ val OmitThisParameter: typingsJapgolly.typescript.mod.NodeBuilderFlags.OmitThisParameter & Double = js.native
   
-  /* 128 */ @js.native
-  object UseOnlyExternalAliasing extends TopLevel[UseOnlyExternalAliasing with Double]
+  @js.native
+  sealed trait SuppressAnyReturnType
+    extends StObject
+       with NodeBuilderFlags
+  /* 256 */ val SuppressAnyReturnType: typingsJapgolly.typescript.mod.NodeBuilderFlags.SuppressAnyReturnType & Double = js.native
   
-  /* 268435456 */ @js.native
-  object UseSingleQuotesForStringLiteralType extends TopLevel[UseSingleQuotesForStringLiteralType with Double]
+  @js.native
+  sealed trait UseAliasDefinedOutsideCurrentScope
+    extends StObject
+       with NodeBuilderFlags
+  /* 16384 */ val UseAliasDefinedOutsideCurrentScope: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseAliasDefinedOutsideCurrentScope & Double = js.native
   
-  /* 8 */ @js.native
-  object UseStructuralFallback extends TopLevel[UseStructuralFallback with Double]
+  @js.native
+  sealed trait UseFullyQualifiedType
+    extends StObject
+       with NodeBuilderFlags
+  /* 64 */ val UseFullyQualifiedType: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseFullyQualifiedType & Double = js.native
   
-  /* 4096 */ @js.native
-  object UseTypeOfFunction extends TopLevel[UseTypeOfFunction with Double]
+  @js.native
+  sealed trait UseOnlyExternalAliasing
+    extends StObject
+       with NodeBuilderFlags
+  /* 128 */ val UseOnlyExternalAliasing: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseOnlyExternalAliasing & Double = js.native
   
-  /* 2 */ @js.native
-  object WriteArrayAsGenericType extends TopLevel[WriteArrayAsGenericType with Double]
+  @js.native
+  sealed trait UseSingleQuotesForStringLiteralType
+    extends StObject
+       with NodeBuilderFlags
+  /* 268435456 */ val UseSingleQuotesForStringLiteralType: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseSingleQuotesForStringLiteralType & Double = js.native
   
-  /* 2048 */ @js.native
-  object WriteClassExpressionAsTypeLiteral extends TopLevel[WriteClassExpressionAsTypeLiteral with Double]
+  @js.native
+  sealed trait UseStructuralFallback
+    extends StObject
+       with NodeBuilderFlags
+  /* 8 */ val UseStructuralFallback: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseStructuralFallback & Double = js.native
   
-  /* 32 */ @js.native
-  object WriteTypeArgumentsOfSignature extends TopLevel[WriteTypeArgumentsOfSignature with Double]
+  @js.native
+  sealed trait UseTypeOfFunction
+    extends StObject
+       with NodeBuilderFlags
+  /* 4096 */ val UseTypeOfFunction: typingsJapgolly.typescript.mod.NodeBuilderFlags.UseTypeOfFunction & Double = js.native
   
-  /* 512 */ @js.native
-  object WriteTypeParametersInQualifiedName extends TopLevel[WriteTypeParametersInQualifiedName with Double]
+  @js.native
+  sealed trait WriteArrayAsGenericType
+    extends StObject
+       with NodeBuilderFlags
+  /* 2 */ val WriteArrayAsGenericType: typingsJapgolly.typescript.mod.NodeBuilderFlags.WriteArrayAsGenericType & Double = js.native
   
+  @js.native
+  sealed trait WriteClassExpressionAsTypeLiteral
+    extends StObject
+       with NodeBuilderFlags
+  /* 2048 */ val WriteClassExpressionAsTypeLiteral: typingsJapgolly.typescript.mod.NodeBuilderFlags.WriteClassExpressionAsTypeLiteral & Double = js.native
+  
+  @js.native
+  sealed trait WriteTypeArgumentsOfSignature
+    extends StObject
+       with NodeBuilderFlags
+  /* 32 */ val WriteTypeArgumentsOfSignature: typingsJapgolly.typescript.mod.NodeBuilderFlags.WriteTypeArgumentsOfSignature & Double = js.native
+  
+  @js.native
+  sealed trait WriteTypeParametersInQualifiedName
+    extends StObject
+       with NodeBuilderFlags
+  /* 512 */ val WriteTypeParametersInQualifiedName: typingsJapgolly.typescript.mod.NodeBuilderFlags.WriteTypeParametersInQualifiedName & Double = js.native
 }
-

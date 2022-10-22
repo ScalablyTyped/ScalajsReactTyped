@@ -1,224 +1,282 @@
 package typingsJapgolly.typescript
 
-import typingsJapgolly.typescript.mod.CompletionsTriggerCharacter
-import typingsJapgolly.typescript.mod.SignatureHelpRetriggerCharacter
-import typingsJapgolly.typescript.mod.SignatureHelpTriggerCharacter
+import typingsJapgolly.typescript.mod.RefactorTriggerReason
+import typingsJapgolly.typescript.mod.TypeOfTag
+import typingsJapgolly.typescript.mod._CompletionsTriggerCharacter
+import typingsJapgolly.typescript.mod._SignatureHelpRetriggerCharacter
+import typingsJapgolly.typescript.mod._SignatureHelpTriggerCharacter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typescriptStrings {
-  @js.native
-  sealed trait `0Dot8` extends js.Object
   
   @js.native
-  sealed trait `3Dot8` extends js.Object
-  
-  @js.native
-  sealed trait `@` extends CompletionsTriggerCharacter
-  
-  @js.native
-  sealed trait Apostrophe extends CompletionsTriggerCharacter
+  sealed trait `@`
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def `@`: `@` = "@".asInstanceOf[`@`]
   
   @js.native
   sealed trait Comma
-    extends SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+    extends StObject
+       with _SignatureHelpRetriggerCharacter
+       with _SignatureHelpTriggerCharacter
+  inline def Comma: Comma = ",".asInstanceOf[Comma]
   
   @js.native
-  sealed trait Dot extends CompletionsTriggerCharacter
+  sealed trait CreatePackageJsonAutoImportProvider extends StObject
+  inline def CreatePackageJsonAutoImportProvider: CreatePackageJsonAutoImportProvider = "CreatePackageJsonAutoImportProvider".asInstanceOf[CreatePackageJsonAutoImportProvider]
   
   @js.native
-  sealed trait Graveaccent extends CompletionsTriggerCharacter
+  sealed trait Dot
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Dot: Dot = ".".asInstanceOf[Dot]
   
   @js.native
-  sealed trait Leftparenthesis
-    extends SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+  sealed trait Graveaccent
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
   
   @js.native
   sealed trait Lessthansign
-    extends CompletionsTriggerCharacter
-       with SignatureHelpRetriggerCharacter
-       with SignatureHelpTriggerCharacter
+    extends StObject
+       with _CompletionsTriggerCharacter
+       with _SignatureHelpRetriggerCharacter
+       with _SignatureHelpTriggerCharacter
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait Numbersign extends CompletionsTriggerCharacter
+  sealed trait Numbersign
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
   
   @js.native
-  sealed trait Quotationmark extends CompletionsTriggerCharacter
+  sealed trait Quotationmark
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
-  sealed trait Rightparenthesis extends SignatureHelpRetriggerCharacter
+  sealed trait Slash
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Slash: Slash = "/".asInstanceOf[Slash]
   
   @js.native
-  sealed trait Slash extends CompletionsTriggerCharacter
+  sealed trait Space
+    extends StObject
+       with _CompletionsTriggerCharacter
+  inline def Space: Space = (" ").asInstanceOf[Space]
   
   @js.native
-  sealed trait actionColonColoninvalidate extends js.Object
+  sealed trait UpdateGraph extends StObject
+  inline def UpdateGraph: UpdateGraph = "UpdateGraph".asInstanceOf[UpdateGraph]
   
   @js.native
-  sealed trait actionColonColonpackageInstalled extends js.Object
+  sealed trait actionColonColoninvalidate extends StObject
+  inline def actionColonColoninvalidate: actionColonColoninvalidate = "action::invalidate".asInstanceOf[actionColonColoninvalidate]
   
   @js.native
-  sealed trait actionColonColonset extends js.Object
+  sealed trait actionColonColonpackageInstalled extends StObject
+  inline def actionColonColonpackageInstalled: actionColonColonpackageInstalled = "action::packageInstalled".asInstanceOf[actionColonColonpackageInstalled]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait actionColonColonset extends StObject
+  inline def actionColonColonset: actionColonColonset = "action::set".asInstanceOf[actionColonColonset]
   
   @js.native
-  sealed trait camelCase extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait characterTyped extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait closeProject extends js.Object
+  sealed trait bigint
+    extends StObject
+       with TypeOfTag
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
-  sealed trait discover extends js.Object
+  sealed trait boolean
+    extends StObject
+       with TypeOfTag
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait braces extends StObject
+  inline def braces: braces = "braces".asInstanceOf[braces]
   
   @js.native
-  sealed trait dts extends js.Object
+  sealed trait camelCase extends StObject
+  inline def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
   
   @js.native
-  sealed trait eventColonColonbeginInstallTypes extends js.Object
+  sealed trait characterTyped extends StObject
+  inline def characterTyped: characterTyped = "characterTyped".asInstanceOf[characterTyped]
   
   @js.native
-  sealed trait eventColonColonendInstallTypes extends js.Object
+  sealed trait closeProject extends StObject
+  inline def closeProject: closeProject = "closeProject".asInstanceOf[closeProject]
   
   @js.native
-  sealed trait eventColonColoninitializationFailed extends js.Object
+  sealed trait discover extends StObject
+  inline def discover: discover = "discover".asInstanceOf[discover]
   
   @js.native
-  sealed trait eventColonColontypesRegistry extends js.Object
+  sealed trait double extends StObject
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait exact extends js.Object
+  sealed trait dts extends StObject
+  inline def dts: dts = "dts".asInstanceOf[dts]
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait eventColonColonbeginInstallTypes extends StObject
+  inline def eventColonColonbeginInstallTypes: eventColonColonbeginInstallTypes = "event::beginInstallTypes".asInstanceOf[eventColonColonbeginInstallTypes]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait eventColonColonendInstallTypes extends StObject
+  inline def eventColonColonendInstallTypes: eventColonColonendInstallTypes = "event::endInstallTypes".asInstanceOf[eventColonColonendInstallTypes]
   
   @js.native
-  sealed trait installPackage extends js.Object
+  sealed trait eventColonColoninitializationFailed extends StObject
+  inline def eventColonColoninitializationFailed: eventColonColoninitializationFailed = "event::initializationFailed".asInstanceOf[eventColonColoninitializationFailed]
   
   @js.native
-  sealed trait invoked extends js.Object
+  sealed trait eventColonColontypesRegistry extends StObject
+  inline def eventColonColontypesRegistry: eventColonColontypesRegistry = "event::typesRegistry".asInstanceOf[eventColonColontypesRegistry]
   
   @js.native
-  sealed trait js_ extends js.Object
+  sealed trait exact extends StObject
+  inline def exact: exact = "exact".asInstanceOf[exact]
   
   @js.native
-  sealed trait minimal extends js.Object
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait `non-relative` extends js.Object
+  sealed trait function
+    extends StObject
+       with TypeOfTag
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait prefix extends js.Object
+  sealed trait `implicit`
+    extends StObject
+       with RefactorTriggerReason
+  inline def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
   @js.native
-  sealed trait relative extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait retrigger extends js.Object
+  sealed trait installPackage extends StObject
+  inline def installPackage: installPackage = "installPackage".asInstanceOf[installPackage]
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait invoked
+    extends StObject
+       with RefactorTriggerReason
+  inline def invoked: invoked = "invoked".asInstanceOf[invoked]
   
   @js.native
-  sealed trait substring extends js.Object
+  sealed trait js_ extends StObject
+  inline def js_ : js_ = "js".asInstanceOf[js_]
   
   @js.native
-  sealed trait typesRegistry extends js.Object
+  sealed trait literals extends StObject
+  inline def literals: literals = "literals".asInstanceOf[literals]
   
-  @scala.inline
-  def `0Dot8`: `0Dot8` = "0.8".asInstanceOf[`0Dot8`]
-  @scala.inline
-  def `3Dot8`: `3Dot8` = "3.8".asInstanceOf[`3Dot8`]
-  @scala.inline
-  def `@`: `@` = "@".asInstanceOf[`@`]
-  @scala.inline
-  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  @scala.inline
-  def Comma: Comma = ",".asInstanceOf[Comma]
-  @scala.inline
-  def Dot: Dot = ".".asInstanceOf[Dot]
-  @scala.inline
-  def Graveaccent: Graveaccent = "`".asInstanceOf[Graveaccent]
-  @scala.inline
-  def Leftparenthesis: Leftparenthesis = "(".asInstanceOf[Leftparenthesis]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def Numbersign: Numbersign = "#".asInstanceOf[Numbersign]
-  @scala.inline
-  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
-  @scala.inline
-  def Rightparenthesis: Rightparenthesis = ")".asInstanceOf[Rightparenthesis]
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
-  @scala.inline
-  def actionColonColoninvalidate: actionColonColoninvalidate = "action::invalidate".asInstanceOf[actionColonColoninvalidate]
-  @scala.inline
-  def actionColonColonpackageInstalled: actionColonColonpackageInstalled = "action::packageInstalled".asInstanceOf[actionColonColonpackageInstalled]
-  @scala.inline
-  def actionColonColonset: actionColonColonset = "action::set".asInstanceOf[actionColonColonset]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
-  @scala.inline
-  def characterTyped: characterTyped = "characterTyped".asInstanceOf[characterTyped]
-  @scala.inline
-  def closeProject: closeProject = "closeProject".asInstanceOf[closeProject]
-  @scala.inline
-  def discover: discover = "discover".asInstanceOf[discover]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def dts: dts = "dts".asInstanceOf[dts]
-  @scala.inline
-  def eventColonColonbeginInstallTypes: eventColonColonbeginInstallTypes = "event::beginInstallTypes".asInstanceOf[eventColonColonbeginInstallTypes]
-  @scala.inline
-  def eventColonColonendInstallTypes: eventColonColonendInstallTypes = "event::endInstallTypes".asInstanceOf[eventColonColonendInstallTypes]
-  @scala.inline
-  def eventColonColoninitializationFailed: eventColonColoninitializationFailed = "event::initializationFailed".asInstanceOf[eventColonColoninitializationFailed]
-  @scala.inline
-  def eventColonColontypesRegistry: eventColonColontypesRegistry = "event::typesRegistry".asInstanceOf[eventColonColontypesRegistry]
-  @scala.inline
-  def exact: exact = "exact".asInstanceOf[exact]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def installPackage: installPackage = "installPackage".asInstanceOf[installPackage]
-  @scala.inline
-  def invoked: invoked = "invoked".asInstanceOf[invoked]
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
-  @scala.inline
-  def `non-relative`: `non-relative` = "non-relative".asInstanceOf[`non-relative`]
-  @scala.inline
-  def prefix: prefix = "prefix".asInstanceOf[prefix]
-  @scala.inline
-  def relative: relative = "relative".asInstanceOf[relative]
-  @scala.inline
-  def retrigger: retrigger = "retrigger".asInstanceOf[retrigger]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def substring: substring = "substring".asInstanceOf[substring]
-  @scala.inline
-  def typesRegistry: typesRegistry = "typesRegistry".asInstanceOf[typesRegistry]
+  @js.native
+  sealed trait minimal extends StObject
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
+  
+  @js.native
+  sealed trait `non-relative` extends StObject
+  inline def `non-relative`: `non-relative` = "non-relative".asInstanceOf[`non-relative`]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait number
+    extends StObject
+       with TypeOfTag
+  inline def number: number = "number".asInstanceOf[number]
+  
+  @js.native
+  sealed trait `object`
+    extends StObject
+       with TypeOfTag
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
+  
+  @js.native
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait on extends StObject
+  inline def on: on = "on".asInstanceOf[on]
+  
+  @js.native
+  sealed trait prefix extends StObject
+  inline def prefix: prefix = "prefix".asInstanceOf[prefix]
+  
+  @js.native
+  sealed trait `project-relative` extends StObject
+  inline def `project-relative`: `project-relative` = "project-relative".asInstanceOf[`project-relative`]
+  
+  @js.native
+  sealed trait quit extends StObject
+  inline def quit: quit = "quit".asInstanceOf[quit]
+  
+  @js.native
+  sealed trait relative extends StObject
+  inline def relative: relative = "relative".asInstanceOf[relative]
+  
+  @js.native
+  sealed trait retrigger extends StObject
+  inline def retrigger: retrigger = "retrigger".asInstanceOf[retrigger]
+  
+  @js.native
+  sealed trait shortest extends StObject
+  inline def shortest: shortest = "shortest".asInstanceOf[shortest]
+  
+  @js.native
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
+  
+  @js.native
+  sealed trait string
+    extends StObject
+       with TypeOfTag
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait substring extends StObject
+  inline def substring: substring = "substring".asInstanceOf[substring]
+  
+  @js.native
+  sealed trait symbol
+    extends StObject
+       with TypeOfTag
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait typesRegistry extends StObject
+  inline def typesRegistry: typesRegistry = "typesRegistry".asInstanceOf[typesRegistry]
+  
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with TypeOfTag
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

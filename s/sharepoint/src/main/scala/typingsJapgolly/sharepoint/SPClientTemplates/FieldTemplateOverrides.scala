@@ -1,35 +1,46 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldTemplateOverrides extends js.Object {
+trait FieldTemplateOverrides extends StObject {
+  
   /** Defines templates for rendering the field on a display form. */
   var DisplayForm: js.UndefOr[FieldInFormCallback] = js.undefined
+  
   /** Defines templates for rendering the field on an edit form. */
   var EditForm: js.UndefOr[FieldInFormCallback] = js.undefined
+  
   /** Defines templates for rendering the field on a new form. */
   var NewForm: js.UndefOr[FieldInFormCallback] = js.undefined
+  
   /** Defines templates for rendering the field on a list view. */
   var View: js.UndefOr[FieldInViewCallback] = js.undefined
 }
-
 object FieldTemplateOverrides {
-  @scala.inline
-  def apply(
-    DisplayForm: /* renderContext */ RenderContextFieldInForm => CallbackTo[String] = null,
-    EditForm: /* renderContext */ RenderContextFieldInForm => CallbackTo[String] = null,
-    NewForm: /* renderContext */ RenderContextFieldInForm => CallbackTo[String] = null,
-    View: /* renderContext */ RenderContextFieldInView => CallbackTo[String] = null
-  ): FieldTemplateOverrides = {
+  
+  inline def apply(): FieldTemplateOverrides = {
     val __obj = js.Dynamic.literal()
-    if (DisplayForm != null) __obj.updateDynamic("DisplayForm")(js.Any.fromFunction1((t0: /* renderContext */ typingsJapgolly.sharepoint.SPClientTemplates.RenderContextFieldInForm) => DisplayForm(t0).runNow()))
-    if (EditForm != null) __obj.updateDynamic("EditForm")(js.Any.fromFunction1((t0: /* renderContext */ typingsJapgolly.sharepoint.SPClientTemplates.RenderContextFieldInForm) => EditForm(t0).runNow()))
-    if (NewForm != null) __obj.updateDynamic("NewForm")(js.Any.fromFunction1((t0: /* renderContext */ typingsJapgolly.sharepoint.SPClientTemplates.RenderContextFieldInForm) => NewForm(t0).runNow()))
-    if (View != null) __obj.updateDynamic("View")(js.Any.fromFunction1((t0: /* renderContext */ typingsJapgolly.sharepoint.SPClientTemplates.RenderContextFieldInView) => View(t0).runNow()))
     __obj.asInstanceOf[FieldTemplateOverrides]
   }
+  
+  extension [Self <: FieldTemplateOverrides](x: Self) {
+    
+    inline def setDisplayForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "DisplayForm", js.Any.fromFunction1(value))
+    
+    inline def setDisplayFormUndefined: Self = StObject.set(x, "DisplayForm", js.undefined)
+    
+    inline def setEditForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "EditForm", js.Any.fromFunction1(value))
+    
+    inline def setEditFormUndefined: Self = StObject.set(x, "EditForm", js.undefined)
+    
+    inline def setNewForm(value: /* renderContext */ RenderContextFieldInForm => String): Self = StObject.set(x, "NewForm", js.Any.fromFunction1(value))
+    
+    inline def setNewFormUndefined: Self = StObject.set(x, "NewForm", js.undefined)
+    
+    inline def setView(value: /* renderContext */ RenderContextFieldInView => String): Self = StObject.set(x, "View", js.Any.fromFunction1(value))
+    
+    inline def setViewUndefined: Self = StObject.set(x, "View", js.undefined)
+  }
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoaderOptions extends js.Object {
+trait LoaderOptions extends StObject {
+  
   var html: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var textVisible: js.UndefOr[Boolean] = js.undefined
+  
   var textonly: js.UndefOr[Boolean] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
 }
-
 object LoaderOptions {
-  @scala.inline
-  def apply(
-    html: String = null,
-    text: String = null,
-    textVisible: js.UndefOr[Boolean] = js.undefined,
-    textonly: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): LoaderOptions = {
+  
+  inline def apply(): LoaderOptions = {
     val __obj = js.Dynamic.literal()
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(textVisible)) __obj.updateDynamic("textVisible")(textVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(textonly)) __obj.updateDynamic("textonly")(textonly.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoaderOptions]
   }
+  
+  extension [Self <: LoaderOptions](x: Self) {
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTextVisible(value: Boolean): Self = StObject.set(x, "textVisible", value.asInstanceOf[js.Any])
+    
+    inline def setTextVisibleUndefined: Self = StObject.set(x, "textVisible", js.undefined)
+    
+    inline def setTextonly(value: Boolean): Self = StObject.set(x, "textonly", value.asInstanceOf[js.Any])
+    
+    inline def setTextonlyUndefined: Self = StObject.set(x, "textonly", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

@@ -1,22 +1,25 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.checkboxCheckboxMod.CheckboxProps
-import typingsJapgolly.antDesignReactNative.checkboxMod.default
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.antDesignReactNative.libCheckboxCheckboxItemMod.default
+import typingsJapgolly.antDesignReactNative.libCheckboxMod.CompoundedComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ant-design/react-native", "Checkbox")
-@js.native
-class Checkbox protected () extends default {
-  def this(props: CheckboxProps, context: js.Any) = this()
+object Checkbox extends Shortcut {
+  
+  @JSImport("@ant-design/react-native", "Checkbox")
+  @js.native
+  val ^ : CompoundedComponent = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("@ant-design/react-native", "Checkbox.CheckboxItem")
+  @js.native
+  open class CheckboxItem () extends default
+  
+  type _To = CompoundedComponent
+  
+  /* This means you don't have to write `^`, but can instead just say `Checkbox.foo` */
+  override def _to: CompoundedComponent = ^
 }
-
-/* static members */
-@JSImport("@ant-design/react-native", "Checkbox")
-@js.native
-object Checkbox extends js.Object {
-  var AgreeItem: js.Any = js.native
-  var CheckboxItem: js.Any = js.native
-}
-

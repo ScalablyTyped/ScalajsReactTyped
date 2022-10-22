@@ -1,43 +1,73 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsCore.modelTypesMod.MetaGraph
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor3D
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor4D
-import typingsJapgolly.tensorflowTfjsNode.callbacksMod.TensorBoardCallback
-import typingsJapgolly.tensorflowTfjsNode.callbacksMod.TensorBoardCallbackArgs
-import typingsJapgolly.tensorflowTfjsNode.savedModelMod.TFSavedModel
-import typingsJapgolly.tensorflowTfjsNode.tensorboardMod.SummaryFileWriter_
+import typingsJapgolly.tensorflowTfjsCore.distModelTypesMod.MetaGraph
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor3D
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor4D
+import typingsJapgolly.tensorflowTfjsNode.distCallbacksMod.TensorBoardCallback
+import typingsJapgolly.tensorflowTfjsNode.distCallbacksMod.TensorBoardCallbackArgs
+import typingsJapgolly.tensorflowTfjsNode.distSavedModelMod.TFSavedModel
+import typingsJapgolly.tensorflowTfjsNode.distTensorboardMod.SummaryFileWriter_
 import typingsJapgolly.tensorflowTfjsNode.tensorflowTfjsNodeStrings._empty
 import typingsJapgolly.tensorflowTfjsNode.tensorflowTfjsNodeStrings.cm
 import typingsJapgolly.tensorflowTfjsNode.tensorflowTfjsNodeStrings.grayscale
 import typingsJapgolly.tensorflowTfjsNode.tensorflowTfjsNodeStrings.in
 import typingsJapgolly.tensorflowTfjsNode.tensorflowTfjsNodeStrings.rgb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "node")
-@js.native
-object node extends js.Object {
-  @JSName("decodeBmp")
-  var decodeBmp_Original: js.Function2[
-    /* contents */ scala.scalajs.js.typedarray.Uint8Array, 
-    /* channels */ js.UndefOr[Double], 
-    Tensor3D
-  ] = js.native
-  @JSName("decodeGif")
-  var decodeGif_Original: js.Function1[/* contents */ scala.scalajs.js.typedarray.Uint8Array, Tensor4D] = js.native
-  @JSName("decodeImage")
-  var decodeImage_Original: js.Function4[
-    /* content */ scala.scalajs.js.typedarray.Uint8Array, 
+object node {
+  
+  @JSImport("@tensorflow/tfjs-node", "node")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@tensorflow/tfjs-node", "node.decodeBmp")
+  @js.native
+  def decodeBmp: js.Function2[/* contents */ js.typedarray.Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D] = js.native
+  inline def decodeBmp(contents: js.typedarray.Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+  inline def decodeBmp(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeBmp")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  inline def decodeBmp_=(
+    x: js.Function2[/* contents */ js.typedarray.Uint8Array, /* channels */ js.UndefOr[Double], Tensor3D]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeBmp")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.decodeGif")
+  @js.native
+  def decodeGif: js.Function1[/* contents */ js.typedarray.Uint8Array, Tensor4D] = js.native
+  inline def decodeGif(contents: js.typedarray.Uint8Array): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeGif")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
+  inline def decodeGif_=(x: js.Function1[/* contents */ js.typedarray.Uint8Array, Tensor4D]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeGif")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.decodeImage")
+  @js.native
+  def decodeImage: js.Function4[
+    /* content */ js.typedarray.Uint8Array, 
     /* channels */ js.UndefOr[Double], 
     /* dtype */ js.UndefOr[String], 
     /* expandAnimations */ js.UndefOr[Boolean], 
     Tensor3D | Tensor4D
   ] = js.native
-  @JSName("decodeJpeg")
-  var decodeJpeg_Original: js.Function7[
-    /* contents */ scala.scalajs.js.typedarray.Uint8Array, 
+  inline def decodeImage(content: js.typedarray.Uint8Array): Tensor3D | Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any]).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Double, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: String): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: String, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage(content: js.typedarray.Uint8Array, channels: Unit, dtype: Unit, expandAnimations: Boolean): Tensor3D | Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(content.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], expandAnimations.asInstanceOf[js.Any])).asInstanceOf[Tensor3D | Tensor4D]
+  inline def decodeImage_=(
+    x: js.Function4[
+      /* content */ js.typedarray.Uint8Array, 
+      /* channels */ js.UndefOr[Double], 
+      /* dtype */ js.UndefOr[String], 
+      /* expandAnimations */ js.UndefOr[Boolean], 
+      Tensor3D | Tensor4D
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeImage")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.decodeJpeg")
+  @js.native
+  def decodeJpeg: js.Function7[
+    /* contents */ js.typedarray.Uint8Array, 
     /* channels */ js.UndefOr[Double], 
     /* ratio */ js.UndefOr[Double], 
     /* fancyUpscaling */ js.UndefOr[Boolean], 
@@ -46,15 +76,52 @@ object node extends js.Object {
     /* dctMethod */ js.UndefOr[String], 
     Tensor3D
   ] = js.native
-  @JSName("decodePng")
-  var decodePng_Original: js.Function3[
-    /* contents */ scala.scalajs.js.typedarray.Uint8Array, 
+  inline def decodeJpeg(
+    contents: js.typedarray.Uint8Array,
+    channels: js.UndefOr[Double],
+    ratio: js.UndefOr[Double],
+    fancyUpscaling: js.UndefOr[Boolean],
+    tryRecoverTruncated: js.UndefOr[Boolean],
+    acceptableFraction: js.UndefOr[Double],
+    dctMethod: js.UndefOr[String]
+  ): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeJpeg")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any], fancyUpscaling.asInstanceOf[js.Any], tryRecoverTruncated.asInstanceOf[js.Any], acceptableFraction.asInstanceOf[js.Any], dctMethod.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  inline def decodeJpeg_=(
+    x: js.Function7[
+      /* contents */ js.typedarray.Uint8Array, 
+      /* channels */ js.UndefOr[Double], 
+      /* ratio */ js.UndefOr[Double], 
+      /* fancyUpscaling */ js.UndefOr[Boolean], 
+      /* tryRecoverTruncated */ js.UndefOr[Boolean], 
+      /* acceptableFraction */ js.UndefOr[Double], 
+      /* dctMethod */ js.UndefOr[String], 
+      Tensor3D
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeJpeg")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.decodePng")
+  @js.native
+  def decodePng: js.Function3[
+    /* contents */ js.typedarray.Uint8Array, 
     /* channels */ js.UndefOr[Double], 
     /* dtype */ js.UndefOr[String], 
     Tensor3D
   ] = js.native
-  @JSName("encodeJpeg")
-  var encodeJpeg_Original: js.Function10[
+  inline def decodePng(contents: js.typedarray.Uint8Array): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+  inline def decodePng(contents: js.typedarray.Uint8Array, channels: Double): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  inline def decodePng(contents: js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  inline def decodePng(contents: js.typedarray.Uint8Array, channels: Unit, dtype: String): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("decodePng")(contents.asInstanceOf[js.Any], channels.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  inline def decodePng_=(
+    x: js.Function3[
+      /* contents */ js.typedarray.Uint8Array, 
+      /* channels */ js.UndefOr[Double], 
+      /* dtype */ js.UndefOr[String], 
+      Tensor3D
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodePng")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.encodeJpeg")
+  @js.native
+  def encodeJpeg: js.Function10[
     /* image */ Tensor3D, 
     /* format */ js.UndefOr[_empty | grayscale | rgb], 
     /* quality */ js.UndefOr[Double], 
@@ -65,114 +132,131 @@ object node extends js.Object {
     /* xDensity */ js.UndefOr[Double], 
     /* yDensity */ js.UndefOr[Double], 
     /* xmpMetadata */ js.UndefOr[String], 
-    js.Promise[scala.scalajs.js.typedarray.Uint8Array]
+    js.Promise[js.typedarray.Uint8Array]
   ] = js.native
-  @JSName("encodePng")
-  var encodePng_Original: js.Function2[
+  inline def encodeJpeg(
+    image: Tensor3D,
+    format: js.UndefOr[_empty | grayscale | rgb],
+    quality: js.UndefOr[Double],
+    progressive: js.UndefOr[Boolean],
+    optimizeSize: js.UndefOr[Boolean],
+    chromaDownsampling: js.UndefOr[Boolean],
+    densityUnit: js.UndefOr[in | cm],
+    xDensity: js.UndefOr[Double],
+    yDensity: js.UndefOr[Double],
+    xmpMetadata: js.UndefOr[String]
+  ): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeJpeg")(image.asInstanceOf[js.Any], format.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], progressive.asInstanceOf[js.Any], optimizeSize.asInstanceOf[js.Any], chromaDownsampling.asInstanceOf[js.Any], densityUnit.asInstanceOf[js.Any], xDensity.asInstanceOf[js.Any], yDensity.asInstanceOf[js.Any], xmpMetadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def encodeJpeg_=(
+    x: js.Function10[
+      /* image */ Tensor3D, 
+      /* format */ js.UndefOr[_empty | grayscale | rgb], 
+      /* quality */ js.UndefOr[Double], 
+      /* progressive */ js.UndefOr[Boolean], 
+      /* optimizeSize */ js.UndefOr[Boolean], 
+      /* chromaDownsampling */ js.UndefOr[Boolean], 
+      /* densityUnit */ js.UndefOr[in | cm], 
+      /* xDensity */ js.UndefOr[Double], 
+      /* yDensity */ js.UndefOr[Double], 
+      /* xmpMetadata */ js.UndefOr[String], 
+      js.Promise[js.typedarray.Uint8Array]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encodeJpeg")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.encodePng")
+  @js.native
+  def encodePng: js.Function2[
     /* image */ Tensor3D, 
     /* compression */ js.UndefOr[Double], 
-    js.Promise[scala.scalajs.js.typedarray.Uint8Array]
+    js.Promise[js.typedarray.Uint8Array]
   ] = js.native
-  @JSName("getMetaGraphsFromSavedModel")
-  var getMetaGraphsFromSavedModel_Original: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraph]]] = js.native
-  @JSName("getNumOfSavedModels")
-  var getNumOfSavedModels_Original: js.Function0[Double] = js.native
-  @JSName("loadSavedModel")
-  var loadSavedModel_Original: js.Function3[
+  inline def encodePng(image: Tensor3D): js.Promise[js.typedarray.Uint8Array] = ^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def encodePng(image: Tensor3D, compression: Double): js.Promise[js.typedarray.Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encodePng")(image.asInstanceOf[js.Any], compression.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.typedarray.Uint8Array]]
+  inline def encodePng_=(
+    x: js.Function2[
+      /* image */ Tensor3D, 
+      /* compression */ js.UndefOr[Double], 
+      js.Promise[js.typedarray.Uint8Array]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encodePng")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.getMetaGraphsFromSavedModel")
+  @js.native
+  def getMetaGraphsFromSavedModel: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraph]]] = js.native
+  inline def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaGraphsFromSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[MetaGraph]]]
+  inline def getMetaGraphsFromSavedModel_=(x: js.Function1[/* path */ String, js.Promise[js.Array[MetaGraph]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getMetaGraphsFromSavedModel")(x.asInstanceOf[js.Any])
+  
+  inline def getNumOfSavedModels(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNumOfSavedModels")().asInstanceOf[Double]
+  @JSImport("@tensorflow/tfjs-node", "node.getNumOfSavedModels")
+  @js.native
+  def getNumOfSavedModels_Fnode: js.Function0[Double] = js.native
+  
+  inline def getNumOfSavedModels_Fnode_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getNumOfSavedModels")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.loadSavedModel")
+  @js.native
+  def loadSavedModel: js.Function3[
     /* path */ String, 
     /* tags */ js.UndefOr[js.Array[String]], 
     /* signature */ js.UndefOr[String], 
     js.Promise[TFSavedModel]
   ] = js.native
-  @JSName("summaryFileWriter")
-  var summaryFileWriter_Original: js.Function4[
+  inline def loadSavedModel(path: String): js.Promise[TFSavedModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel(path: String, tags: Unit, signature: String): js.Promise[TFSavedModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSavedModel")(path.asInstanceOf[js.Any], tags.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TFSavedModel]]
+  inline def loadSavedModel_=(
+    x: js.Function3[
+      /* path */ String, 
+      /* tags */ js.UndefOr[js.Array[String]], 
+      /* signature */ js.UndefOr[String], 
+      js.Promise[TFSavedModel]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("loadSavedModel")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@tensorflow/tfjs-node", "node.summaryFileWriter")
+  @js.native
+  def summaryFileWriter: js.Function4[
     /* logdir */ String, 
     /* maxQueue */ js.UndefOr[Double], 
     /* flushMillis */ js.UndefOr[Double], 
     /* filenameSuffix */ js.UndefOr[String], 
     SummaryFileWriter_
   ] = js.native
-  @JSName("tensorBoard")
-  var tensorBoard_Original: js.Function2[
+  inline def summaryFileWriter(logdir: String): SummaryFileWriter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any]).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Unit, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Unit, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  inline def summaryFileWriter_=(
+    x: js.Function4[
+      /* logdir */ String, 
+      /* maxQueue */ js.UndefOr[Double], 
+      /* flushMillis */ js.UndefOr[Double], 
+      /* filenameSuffix */ js.UndefOr[String], 
+      SummaryFileWriter_
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("summaryFileWriter")(x.asInstanceOf[js.Any])
+  
+  inline def tensorBoard(): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")().asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: String): TensorBoardCallback = ^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any]).asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  inline def tensorBoard(logdir: Unit, args: TensorBoardCallbackArgs): TensorBoardCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("tensorBoard")(logdir.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[TensorBoardCallback]
+  @JSImport("@tensorflow/tfjs-node", "node.tensorBoard")
+  @js.native
+  def tensorBoard_Fnode: js.Function2[
     /* logdir */ js.UndefOr[String], 
     /* args */ js.UndefOr[TensorBoardCallbackArgs], 
     TensorBoardCallback
   ] = js.native
-  def decodeBmp(contents: scala.scalajs.js.typedarray.Uint8Array): Tensor3D = js.native
-  def decodeBmp(contents: scala.scalajs.js.typedarray.Uint8Array, channels: Double): Tensor3D = js.native
-  def decodeGif(contents: scala.scalajs.js.typedarray.Uint8Array): Tensor4D = js.native
-  def decodeImage(content: scala.scalajs.js.typedarray.Uint8Array): Tensor3D | Tensor4D = js.native
-  def decodeImage(content: scala.scalajs.js.typedarray.Uint8Array, channels: Double): Tensor3D | Tensor4D = js.native
-  def decodeImage(content: scala.scalajs.js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D | Tensor4D = js.native
-  def decodeImage(
-    content: scala.scalajs.js.typedarray.Uint8Array,
-    channels: Double,
-    dtype: String,
-    expandAnimations: Boolean
-  ): Tensor3D | Tensor4D = js.native
-  def decodeJpeg(
-    contents: scala.scalajs.js.typedarray.Uint8Array,
-    channels: js.UndefOr[Double],
-    ratio: js.UndefOr[Double],
-    fancyUpscaling: js.UndefOr[Boolean],
-    tryRecoverTruncated: js.UndefOr[Boolean],
-    acceptableFraction: js.UndefOr[Double],
-    dctMethod: js.UndefOr[String]
-  ): Tensor3D = js.native
-  def decodePng(contents: scala.scalajs.js.typedarray.Uint8Array): Tensor3D = js.native
-  def decodePng(contents: scala.scalajs.js.typedarray.Uint8Array, channels: Double): Tensor3D = js.native
-  def decodePng(contents: scala.scalajs.js.typedarray.Uint8Array, channels: Double, dtype: String): Tensor3D = js.native
-  def encodeJpeg(
-    image: Tensor3D,
-    format: js.UndefOr[grayscale | rgb],
-    quality: js.UndefOr[Double],
-    progressive: js.UndefOr[Boolean],
-    optimizeSize: js.UndefOr[Boolean],
-    chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[cm | in],
-    xDensity: js.UndefOr[Double],
-    yDensity: js.UndefOr[Double],
-    xmpMetadata: js.UndefOr[String]
-  ): js.Promise[scala.scalajs.js.typedarray.Uint8Array] = js.native
-  @JSName("encodeJpeg")
-  def encodeJpeg_cm(
-    image: Tensor3D,
-    format: js.UndefOr[_empty],
-    quality: js.UndefOr[Double],
-    progressive: js.UndefOr[Boolean],
-    optimizeSize: js.UndefOr[Boolean],
-    chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[cm],
-    xDensity: js.UndefOr[Double],
-    yDensity: js.UndefOr[Double],
-    xmpMetadata: js.UndefOr[String]
-  ): js.Promise[scala.scalajs.js.typedarray.Uint8Array] = js.native
-  @JSName("encodeJpeg")
-  def encodeJpeg_in(
-    image: Tensor3D,
-    format: js.UndefOr[_empty],
-    quality: js.UndefOr[Double],
-    progressive: js.UndefOr[Boolean],
-    optimizeSize: js.UndefOr[Boolean],
-    chromaDownsampling: js.UndefOr[Boolean],
-    densityUnit: js.UndefOr[in],
-    xDensity: js.UndefOr[Double],
-    yDensity: js.UndefOr[Double],
-    xmpMetadata: js.UndefOr[String]
-  ): js.Promise[scala.scalajs.js.typedarray.Uint8Array] = js.native
-  def encodePng(image: Tensor3D): js.Promise[scala.scalajs.js.typedarray.Uint8Array] = js.native
-  def encodePng(image: Tensor3D, compression: Double): js.Promise[scala.scalajs.js.typedarray.Uint8Array] = js.native
-  def getMetaGraphsFromSavedModel(path: String): js.Promise[js.Array[MetaGraph]] = js.native
-  def getNumOfSavedModels(): Double = js.native
-  def loadSavedModel(path: String): js.Promise[TFSavedModel] = js.native
-  def loadSavedModel(path: String, tags: js.Array[String]): js.Promise[TFSavedModel] = js.native
-  def loadSavedModel(path: String, tags: js.Array[String], signature: String): js.Promise[TFSavedModel] = js.native
-  def summaryFileWriter(logdir: String): SummaryFileWriter_ = js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter_ = js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter_ = js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = js.native
-  def tensorBoard(): TensorBoardCallback = js.native
-  def tensorBoard(logdir: String): TensorBoardCallback = js.native
-  def tensorBoard(logdir: String, args: TensorBoardCallbackArgs): TensorBoardCallback = js.native
+  
+  inline def tensorBoard_Fnode_=(
+    x: js.Function2[
+      /* logdir */ js.UndefOr[String], 
+      /* args */ js.UndefOr[TensorBoardCallbackArgs], 
+      TensorBoardCallback
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tensorBoard")(x.asInstanceOf[js.Any])
 }
-

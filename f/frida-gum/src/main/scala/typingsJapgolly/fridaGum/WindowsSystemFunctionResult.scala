@@ -1,20 +1,28 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsSystemFunctionResult extends SystemFunctionResult {
-  var lastError: Double
-  var value: NativeReturnValue
-}
-
-object WindowsSystemFunctionResult {
-  @scala.inline
-  def apply(lastError: Double, value: NativeReturnValue): WindowsSystemFunctionResult = {
-    val __obj = js.Dynamic.literal(lastError = lastError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+trait WindowsSystemFunctionResult[Value /* <: NativeFunctionReturnValue */]
+  extends StObject
+     with SystemFunctionResult[Value] {
   
-    __obj.asInstanceOf[WindowsSystemFunctionResult]
+  var lastError: Double
+  
+  var value: Value
+}
+object WindowsSystemFunctionResult {
+  
+  inline def apply[Value /* <: NativeFunctionReturnValue */](lastError: Double, value: Value): WindowsSystemFunctionResult[Value] = {
+    val __obj = js.Dynamic.literal(lastError = lastError.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WindowsSystemFunctionResult[Value]]
+  }
+  
+  extension [Self <: WindowsSystemFunctionResult[?], Value /* <: NativeFunctionReturnValue */](x: Self & WindowsSystemFunctionResult[Value]) {
+    
+    inline def setLastError(value: Double): Self = StObject.set(x, "lastError", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }
-

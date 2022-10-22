@@ -1,13 +1,15 @@
 package typingsJapgolly.ajvMergePatch
 
-import typingsJapgolly.ajv.mod.Ajv
+import typingsJapgolly.ajv.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ajv-merge-patch", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(ajv: Ajv): Unit = js.native
+object mod {
+  
+  inline def apply(ajv: default): Unit = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("ajv-merge-patch", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

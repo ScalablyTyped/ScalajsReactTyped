@@ -1,29 +1,41 @@
 package typingsJapgolly.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#iface-authenticatorassertionresponse}
   */
-trait AuthenticatorAssertionResponse extends AuthenticatorResponse {
-  val authenticatorData: scala.scalajs.js.typedarray.ArrayBuffer
-  val signature: scala.scalajs.js.typedarray.ArrayBuffer
-  val userHandle: scala.scalajs.js.typedarray.ArrayBuffer | Null
+trait AuthenticatorAssertionResponse
+  extends StObject
+     with AuthenticatorResponse {
+  
+  val authenticatorData: js.typedarray.ArrayBuffer
+  
+  val signature: js.typedarray.ArrayBuffer
+  
+  val userHandle: js.typedarray.ArrayBuffer | Null
 }
-
 object AuthenticatorAssertionResponse {
-  @scala.inline
-  def apply(
-    authenticatorData: scala.scalajs.js.typedarray.ArrayBuffer,
-    clientDataJSON: scala.scalajs.js.typedarray.ArrayBuffer,
-    signature: scala.scalajs.js.typedarray.ArrayBuffer,
-    userHandle: scala.scalajs.js.typedarray.ArrayBuffer = null
+  
+  inline def apply(
+    authenticatorData: js.typedarray.ArrayBuffer,
+    clientDataJSON: js.typedarray.ArrayBuffer,
+    signature: js.typedarray.ArrayBuffer
   ): AuthenticatorAssertionResponse = {
-    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
-    if (userHandle != null) __obj.updateDynamic("userHandle")(userHandle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userHandle = null)
     __obj.asInstanceOf[AuthenticatorAssertionResponse]
   }
+  
+  extension [Self <: AuthenticatorAssertionResponse](x: Self) {
+    
+    inline def setAuthenticatorData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
+    
+    inline def setSignature(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    
+    inline def setUserHandle(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "userHandle", value.asInstanceOf[js.Any])
+    
+    inline def setUserHandleNull: Self = StObject.set(x, "userHandle", null)
+  }
 }
-

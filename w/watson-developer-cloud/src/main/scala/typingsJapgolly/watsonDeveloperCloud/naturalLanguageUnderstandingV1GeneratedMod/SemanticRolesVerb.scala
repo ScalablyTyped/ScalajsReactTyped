@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SemanticRolesVerb. */
-trait SemanticRolesVerb extends js.Object {
+trait SemanticRolesVerb extends StObject {
+  
   /** Verb tense. */
   var tense: js.UndefOr[String] = js.undefined
+  
   /** The keyword text. */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object SemanticRolesVerb {
-  @scala.inline
-  def apply(tense: String = null, text: String = null): SemanticRolesVerb = {
+  
+  inline def apply(): SemanticRolesVerb = {
     val __obj = js.Dynamic.literal()
-    if (tense != null) __obj.updateDynamic("tense")(tense.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticRolesVerb]
   }
+  
+  extension [Self <: SemanticRolesVerb](x: Self) {
+    
+    inline def setTense(value: String): Self = StObject.set(x, "tense", value.asInstanceOf[js.Any])
+    
+    inline def setTenseUndefined: Self = StObject.set(x, "tense", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

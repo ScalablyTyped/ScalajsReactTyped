@@ -1,21 +1,23 @@
 package typingsJapgolly.swiftclick
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwiftClickStatic extends js.Object {
+trait SwiftClickStatic extends StObject {
+  
   def attach(contextEl: Element): SwiftClickObject
 }
-
 object SwiftClickStatic {
-  @scala.inline
-  def apply(attach: Element => CallbackTo[SwiftClickObject]): SwiftClickStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("attach")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.Element) => attach(t0).runNow()))
+  
+  inline def apply(attach: Element => SwiftClickObject): SwiftClickStatic = {
+    val __obj = js.Dynamic.literal(attach = js.Any.fromFunction1(attach))
     __obj.asInstanceOf[SwiftClickStatic]
   }
+  
+  extension [Self <: SwiftClickStatic](x: Self) {
+    
+    inline def setAttach(value: Element => SwiftClickObject): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+  }
 }
-

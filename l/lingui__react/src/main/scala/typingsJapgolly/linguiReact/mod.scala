@@ -1,87 +1,44 @@
 package typingsJapgolly.linguiReact
 
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.linguiReact.createFormatMod.FormatPropsWithoutI18n
-import typingsJapgolly.linguiReact.i18nMod.I18nComponentProps
-import typingsJapgolly.linguiReact.i18nProviderMod.I18nProviderProps
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.linguiReact.cjsI18nProviderMod.I18nContext
+import typingsJapgolly.linguiReact.cjsI18nProviderMod.I18nProviderProps
+import typingsJapgolly.linguiReact.cjsI18nProviderMod.withI18nProps
+import typingsJapgolly.linguiReact.cjsTransMod.TransProps
 import typingsJapgolly.linguiReact.linguiReactStrings.i18n
-import typingsJapgolly.linguiReact.selectMod.PluralPropsWithoutI18n
-import typingsJapgolly.linguiReact.selectMod.SelectPropsWithoutI18n
-import typingsJapgolly.linguiReact.transMod.TransPropsWithoutI18n
-import typingsJapgolly.linguiReact.withI18nMod.ComponentConstructor
-import typingsJapgolly.linguiReact.withI18nMod.withI18nOptions
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.std.Date
-import typingsJapgolly.std.Exclude
-import typingsJapgolly.std.Intl.DateTimeFormatOptions
-import typingsJapgolly.std.Intl.NumberFormatOptions
-import typingsJapgolly.std.Pick
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.std.Omit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@lingui/react", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class DateFormat protected ()
-    extends Component[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState, js.Any] {
-    def this(props: FormatPropsWithoutI18n[js.Date, DateTimeFormatOptions]) = this()
-    def this(props: FormatPropsWithoutI18n[js.Date, DateTimeFormatOptions], context: js.Any) = this()
-  }
+object mod {
   
+  @JSImport("@lingui/react", JSImport.Namespace)
   @js.native
-  class I18n ()
-    extends Component[I18nComponentProps, js.Object, js.Any]
+  val ^ : js.Any = js.native
   
+  @JSImport("@lingui/react", "I18nProvider")
   @js.native
-  class I18nProvider ()
-    extends Component[I18nProviderProps, js.Object, js.Any]
+  val I18nProvider: FunctionComponent[I18nProviderProps] = js.native
   
-  @js.native
-  class NumberFormat protected ()
-    extends Component[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState, js.Any] {
-    def this(props: FormatPropsWithoutI18n[Double, NumberFormatOptions]) = this()
-    def this(props: FormatPropsWithoutI18n[Double, NumberFormatOptions], context: js.Any) = this()
-  }
+  inline def Trans(props: TransProps): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("Trans")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
-  @js.native
-  class Plural ()
-    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
+  inline def useLingui(): I18nContext = ^.asInstanceOf[js.Dynamic].applyDynamic("useLingui")().asInstanceOf[I18nContext]
   
-  @js.native
-  class Select ()
-    extends Component[SelectPropsWithoutI18n, js.Object, js.Any]
-  
-  @js.native
-  class SelectOrdinal ()
-    extends Component[PluralPropsWithoutI18n, js.Object, js.Any]
-  
-  @js.native
-  class Trans ()
-    extends Component[TransPropsWithoutI18n, js.Object, js.Any]
-  
-  def i18nMark(id: String): String = js.native
-  def withI18n(): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClassP[(Pick[_, Exclude[String, i18n]]) with js.Object]
-  ] = js.native
-  def withI18n(options: withI18nOptions): js.Function1[
-    /* WrappedComponent */ ComponentConstructor[_], 
-    ComponentClassP[(Pick[_, Exclude[String, i18n]]) with js.Object]
-  ] = js.native
-  @js.native
-  object DateFormat extends TopLevel[
-          ComponentClass[FormatPropsWithoutI18n[Date, DateTimeFormatOptions], ComponentState]
-        ]
-  
-  @js.native
-  object NumberFormat extends TopLevel[
-          ComponentClass[FormatPropsWithoutI18n[Double, NumberFormatOptions], ComponentState]
-        ]
-  
+  inline def withI18n(): js.Function1[
+    /* Component */ ComponentType[withI18nProps], 
+    ComponentType[Omit[withI18nProps, i18n]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")().asInstanceOf[js.Function1[
+    /* Component */ ComponentType[withI18nProps], 
+    ComponentType[Omit[withI18nProps, i18n]]
+  ]]
+  inline def withI18n(o: js.Object): js.Function1[
+    /* Component */ ComponentType[withI18nProps], 
+    ComponentType[Omit[withI18nProps, i18n]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withI18n")(o.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* Component */ ComponentType[withI18nProps], 
+    ComponentType[Omit[withI18nProps, i18n]]
+  ]]
 }
-

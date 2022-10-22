@@ -1,74 +1,70 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.facade.React.Component
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.materialUi.MaterialUI.Menus.MenuItemProps
 import typingsJapgolly.materialUi.MaterialUI.Menus.MenuProps
 import typingsJapgolly.materialUi.MaterialUI.ReactLink
-import typingsJapgolly.materialUi.materialUiMenuMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Menu {
-  def apply(
-    autoWidth: js.UndefOr[Boolean] = js.undefined,
-    desktop: js.UndefOr[Boolean] = js.undefined,
-    disableAutoFocus: js.UndefOr[Boolean] = js.undefined,
-    initiallyKeyboardFocused: js.UndefOr[Boolean] = js.undefined,
-    listStyle: CSSProperties = null,
-    maxHeight: Int | Double = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    onChange: (/* e */ ReactEventFrom[js.Object with Element], /* itemValue */ js.Any | js.Array[js.Any]) => Callback = null,
-    onEscKeyDown: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    onItemClick: (/* e */ ReactEventFrom[js.Object with Element], /* item */ typingsJapgolly.materialUi.MaterialUI.Menus.MenuItem) => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[js.Object with Element] => Callback = null,
-    selectedMenuItemStyle: CSSProperties = null,
-    style: CSSProperties = null,
-    value: js.Any | js.Array[_] = null,
-    valueLink: ReactLink[_ | js.Array[_]] = null,
-    width: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MenuProps, default, Unit, MenuProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(initiallyKeyboardFocused)) __obj.updateDynamic("initiallyKeyboardFocused")(initiallyKeyboardFocused.asInstanceOf[js.Any])
-    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* itemValue */ js.Any | js.Array[js.Any]) => onChange(t0, t1).runNow()))
-    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onEscKeyDown(t0).runNow()))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction2((t0: /* e */ japgolly.scalajs.react.ReactEventFrom[js.Object with org.scalajs.dom.raw.Element], t1: /* item */ typingsJapgolly.materialUi.MaterialUI.Menus.MenuItem) => onItemClick(t0, t1).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[js.Object with org.scalajs.dom.raw.Element]) => onKeyDown(t0).runNow()))
-    if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Menus.MenuProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.materialUiMenuMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Menus.MenuProps])(children: _*)
-  }
-  @JSImport("material-ui/Menu", JSImport.Default)
+  @JSImport("material-ui", "Menu")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Menu] {
+    
+    inline def autoWidth(value: Boolean): this.type = set("autoWidth", value.asInstanceOf[js.Any])
+    
+    inline def desktop(value: Boolean): this.type = set("desktop", value.asInstanceOf[js.Any])
+    
+    inline def disableAutoFocus(value: Boolean): this.type = set("disableAutoFocus", value.asInstanceOf[js.Any])
+    
+    inline def initiallyKeyboardFocused(value: Boolean): this.type = set("initiallyKeyboardFocused", value.asInstanceOf[js.Any])
+    
+    inline def listStyle(value: CSSProperties): this.type = set("listStyle", value.asInstanceOf[js.Any])
+    
+    inline def maxHeight(value: Double): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def multiple(value: Boolean): this.type = set("multiple", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* e */ ReactEventFrom[js.Object & Element], /* itemValue */ Any | js.Array[Any]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* e */ ReactEventFrom[js.Object & Element], t1: /* itemValue */ Any | js.Array[Any]) => (value(t0, t1)).runNow()))
+    
+    inline def onEscKeyDown(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): this.type = set("onEscKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def onItemClick(
+      value: (/* e */ ReactEventFrom[js.Object & Element], Component[MenuItemProps & js.Object, js.Object]) => Callback
+    ): this.type = set("onItemClick", js.Any.fromFunction2((t0: /* e */ ReactEventFrom[js.Object & Element], t1: Component[MenuItemProps & js.Object, js.Object]) => (value(t0, t1)).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[js.Object & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[js.Object & Element]) => value(t0).runNow()))
+    
+    inline def selectedMenuItemStyle(value: CSSProperties): this.type = set("selectedMenuItemStyle", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any | js.Array[Any]): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueLink(value: ReactLink[Any | js.Array[Any]]): this.type = set("valueLink", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: Any*): this.type = set("value", js.Array(value*))
+    
+    inline def width(value: String | Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Menu.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MenuProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

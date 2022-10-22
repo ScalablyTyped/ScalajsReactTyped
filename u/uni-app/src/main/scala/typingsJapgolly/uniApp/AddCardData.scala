@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddCardData extends js.Object {
+trait AddCardData extends StObject {
+  
   /**
     * 卡券的扩展参数
     */
   var cardExt: js.UndefOr[String] = js.undefined
+  
   /**
     * 卡券 id
     */
   var cardId: js.UndefOr[String] = js.undefined
 }
-
 object AddCardData {
-  @scala.inline
-  def apply(cardExt: String = null, cardId: String = null): AddCardData = {
+  
+  inline def apply(): AddCardData = {
     val __obj = js.Dynamic.literal()
-    if (cardExt != null) __obj.updateDynamic("cardExt")(cardExt.asInstanceOf[js.Any])
-    if (cardId != null) __obj.updateDynamic("cardId")(cardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCardData]
   }
+  
+  extension [Self <: AddCardData](x: Self) {
+    
+    inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+    
+    inline def setCardExtUndefined: Self = StObject.set(x, "cardExt", js.undefined)
+    
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    
+    inline def setCardIdUndefined: Self = StObject.set(x, "cardId", js.undefined)
+  }
 }
-

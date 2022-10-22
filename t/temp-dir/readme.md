@@ -1,7 +1,7 @@
 
 # Scala.js typings for temp-dir
 
-Typings are for version 2.0.0
+Typings are for version 3.0.0
 
 ## Library description:
 Get the real path of the system temp directory
@@ -10,10 +10,10 @@ Get the real path of the system temp directory
 | ------------------ | :-------------: |
 | Full name          | temp-dir |
 | Keywords           | temp, tmpdir, os, system, real, path, realpath, resolved, temporary, directory, folder |
-| # releases         | 2 |
-| # dependents       | 68 |
-| # downloads        | 61678199 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.0859437333333332E7 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/temp-dir#readme)

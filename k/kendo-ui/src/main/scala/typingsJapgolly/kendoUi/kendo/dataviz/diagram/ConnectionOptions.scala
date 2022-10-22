@@ -1,63 +1,110 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionOptions extends js.Object {
+trait ConnectionOptions extends StObject {
+  
   var content: js.UndefOr[ConnectionContent] = js.undefined
+  
   var endCap: js.UndefOr[String | ConnectionEndCap] = js.undefined
+  
   var fromConnector: js.UndefOr[String] = js.undefined
+  
   var fromX: js.UndefOr[Double] = js.undefined
+  
   var fromY: js.UndefOr[Double] = js.undefined
+  
   var hover: js.UndefOr[ConnectionHover] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var points: js.UndefOr[js.Array[ConnectionPoint]] = js.undefined
+  
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   var startCap: js.UndefOr[String | ConnectionStartCap] = js.undefined
+  
   var stroke: js.UndefOr[ConnectionStroke] = js.undefined
+  
   var toConnector: js.UndefOr[String] = js.undefined
+  
   var toX: js.UndefOr[Double] = js.undefined
+  
   var toY: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ConnectionOptions {
-  @scala.inline
-  def apply(
-    content: ConnectionContent = null,
-    endCap: String | ConnectionEndCap = null,
-    fromConnector: String = null,
-    fromX: Int | Double = null,
-    fromY: Int | Double = null,
-    hover: ConnectionHover = null,
-    name: String = null,
-    points: js.Array[ConnectionPoint] = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    startCap: String | ConnectionStartCap = null,
-    stroke: ConnectionStroke = null,
-    toConnector: String = null,
-    toX: Int | Double = null,
-    toY: Int | Double = null,
-    `type`: String = null
-  ): ConnectionOptions = {
+  
+  inline def apply(): ConnectionOptions = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (endCap != null) __obj.updateDynamic("endCap")(endCap.asInstanceOf[js.Any])
-    if (fromConnector != null) __obj.updateDynamic("fromConnector")(fromConnector.asInstanceOf[js.Any])
-    if (fromX != null) __obj.updateDynamic("fromX")(fromX.asInstanceOf[js.Any])
-    if (fromY != null) __obj.updateDynamic("fromY")(fromY.asInstanceOf[js.Any])
-    if (hover != null) __obj.updateDynamic("hover")(hover.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (points != null) __obj.updateDynamic("points")(points.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (startCap != null) __obj.updateDynamic("startCap")(startCap.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (toConnector != null) __obj.updateDynamic("toConnector")(toConnector.asInstanceOf[js.Any])
-    if (toX != null) __obj.updateDynamic("toX")(toX.asInstanceOf[js.Any])
-    if (toY != null) __obj.updateDynamic("toY")(toY.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionOptions]
   }
+  
+  extension [Self <: ConnectionOptions](x: Self) {
+    
+    inline def setContent(value: ConnectionContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setEndCap(value: String | ConnectionEndCap): Self = StObject.set(x, "endCap", value.asInstanceOf[js.Any])
+    
+    inline def setEndCapUndefined: Self = StObject.set(x, "endCap", js.undefined)
+    
+    inline def setFromConnector(value: String): Self = StObject.set(x, "fromConnector", value.asInstanceOf[js.Any])
+    
+    inline def setFromConnectorUndefined: Self = StObject.set(x, "fromConnector", js.undefined)
+    
+    inline def setFromX(value: Double): Self = StObject.set(x, "fromX", value.asInstanceOf[js.Any])
+    
+    inline def setFromXUndefined: Self = StObject.set(x, "fromX", js.undefined)
+    
+    inline def setFromY(value: Double): Self = StObject.set(x, "fromY", value.asInstanceOf[js.Any])
+    
+    inline def setFromYUndefined: Self = StObject.set(x, "fromY", js.undefined)
+    
+    inline def setHover(value: ConnectionHover): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPoints(value: js.Array[ConnectionPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsUndefined: Self = StObject.set(x, "points", js.undefined)
+    
+    inline def setPointsVarargs(value: ConnectionPoint*): Self = StObject.set(x, "points", js.Array(value*))
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setStartCap(value: String | ConnectionStartCap): Self = StObject.set(x, "startCap", value.asInstanceOf[js.Any])
+    
+    inline def setStartCapUndefined: Self = StObject.set(x, "startCap", js.undefined)
+    
+    inline def setStroke(value: ConnectionStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setToConnector(value: String): Self = StObject.set(x, "toConnector", value.asInstanceOf[js.Any])
+    
+    inline def setToConnectorUndefined: Self = StObject.set(x, "toConnector", js.undefined)
+    
+    inline def setToX(value: Double): Self = StObject.set(x, "toX", value.asInstanceOf[js.Any])
+    
+    inline def setToXUndefined: Self = StObject.set(x, "toX", js.undefined)
+    
+    inline def setToY(value: Double): Self = StObject.set(x, "toY", value.asInstanceOf[js.Any])
+    
+    inline def setToYUndefined: Self = StObject.set(x, "toY", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,59 +1,57 @@
 package typingsJapgolly.thrift.mod.Thrift
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TProtocolExceptionType extends js.Object
-
+sealed trait TProtocolExceptionType extends StObject
 @JSImport("thrift", "Thrift.TProtocolExceptionType")
 @js.native
-object TProtocolExceptionType extends js.Object {
-  @js.native
-  sealed trait BAD_VERSION extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait DEPTH_LIMIT extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait INVALID_DATA extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait NEGATIVE_SIZE extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait NOT_IMPLEMENTED extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait SIZE_LIMIT extends TProtocolExceptionType
-  
-  @js.native
-  sealed trait UNKNOWN extends TProtocolExceptionType
+object TProtocolExceptionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TProtocolExceptionType with Double] = js.native
-  /* 4 */ @js.native
-  object BAD_VERSION extends TopLevel[BAD_VERSION with Double]
+  def apply(value: Double): js.UndefOr[TProtocolExceptionType & Double] = js.native
   
-  /* 6 */ @js.native
-  object DEPTH_LIMIT extends TopLevel[DEPTH_LIMIT with Double]
+  @js.native
+  sealed trait BAD_VERSION
+    extends StObject
+       with TProtocolExceptionType
+  /* 4 */ val BAD_VERSION: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.BAD_VERSION & Double = js.native
   
-  /* 1 */ @js.native
-  object INVALID_DATA extends TopLevel[INVALID_DATA with Double]
+  @js.native
+  sealed trait DEPTH_LIMIT
+    extends StObject
+       with TProtocolExceptionType
+  /* 6 */ val DEPTH_LIMIT: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.DEPTH_LIMIT & Double = js.native
   
-  /* 2 */ @js.native
-  object NEGATIVE_SIZE extends TopLevel[NEGATIVE_SIZE with Double]
+  @js.native
+  sealed trait INVALID_DATA
+    extends StObject
+       with TProtocolExceptionType
+  /* 1 */ val INVALID_DATA: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.INVALID_DATA & Double = js.native
   
-  /* 5 */ @js.native
-  object NOT_IMPLEMENTED extends TopLevel[NOT_IMPLEMENTED with Double]
+  @js.native
+  sealed trait NEGATIVE_SIZE
+    extends StObject
+       with TProtocolExceptionType
+  /* 2 */ val NEGATIVE_SIZE: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.NEGATIVE_SIZE & Double = js.native
   
-  /* 3 */ @js.native
-  object SIZE_LIMIT extends TopLevel[SIZE_LIMIT with Double]
+  @js.native
+  sealed trait NOT_IMPLEMENTED
+    extends StObject
+       with TProtocolExceptionType
+  /* 5 */ val NOT_IMPLEMENTED: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.NOT_IMPLEMENTED & Double = js.native
   
-  /* 0 */ @js.native
-  object UNKNOWN extends TopLevel[UNKNOWN with Double]
+  @js.native
+  sealed trait SIZE_LIMIT
+    extends StObject
+       with TProtocolExceptionType
+  /* 3 */ val SIZE_LIMIT: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.SIZE_LIMIT & Double = js.native
   
+  @js.native
+  sealed trait UNKNOWN
+    extends StObject
+       with TProtocolExceptionType
+  /* 0 */ val UNKNOWN: typingsJapgolly.thrift.mod.Thrift.TProtocolExceptionType.UNKNOWN & Double = js.native
 }
-

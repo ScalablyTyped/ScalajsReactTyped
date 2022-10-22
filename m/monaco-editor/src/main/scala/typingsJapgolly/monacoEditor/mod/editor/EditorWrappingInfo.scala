@@ -1,37 +1,39 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorWrappingInfo extends js.Object {
-  val inDiffEditor: Boolean
+trait EditorWrappingInfo extends StObject {
+  
   val isDominatedByLongLines: Boolean
+  
   val isViewportWrapping: Boolean
+  
   val isWordWrapMinified: Boolean
-  val wordWrapBreakAfterCharacters: String
-  val wordWrapBreakBeforeCharacters: String
-  val wordWrapBreakObtrusiveCharacters: String
+  
   val wrappingColumn: Double
-  val wrappingIndent: WrappingIndent
 }
-
 object EditorWrappingInfo {
-  @scala.inline
-  def apply(
-    inDiffEditor: Boolean,
+  
+  inline def apply(
     isDominatedByLongLines: Boolean,
     isViewportWrapping: Boolean,
     isWordWrapMinified: Boolean,
-    wordWrapBreakAfterCharacters: String,
-    wordWrapBreakBeforeCharacters: String,
-    wordWrapBreakObtrusiveCharacters: String,
-    wrappingColumn: Double,
-    wrappingIndent: WrappingIndent
+    wrappingColumn: Double
   ): EditorWrappingInfo = {
-    val __obj = js.Dynamic.literal(inDiffEditor = inDiffEditor.asInstanceOf[js.Any], isDominatedByLongLines = isDominatedByLongLines.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], wordWrapBreakAfterCharacters = wordWrapBreakAfterCharacters.asInstanceOf[js.Any], wordWrapBreakBeforeCharacters = wordWrapBreakBeforeCharacters.asInstanceOf[js.Any], wordWrapBreakObtrusiveCharacters = wordWrapBreakObtrusiveCharacters.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any], wrappingIndent = wrappingIndent.asInstanceOf[js.Any])
-  
+    val __obj = js.Dynamic.literal(isDominatedByLongLines = isDominatedByLongLines.asInstanceOf[js.Any], isViewportWrapping = isViewportWrapping.asInstanceOf[js.Any], isWordWrapMinified = isWordWrapMinified.asInstanceOf[js.Any], wrappingColumn = wrappingColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorWrappingInfo]
   }
+  
+  extension [Self <: EditorWrappingInfo](x: Self) {
+    
+    inline def setIsDominatedByLongLines(value: Boolean): Self = StObject.set(x, "isDominatedByLongLines", value.asInstanceOf[js.Any])
+    
+    inline def setIsViewportWrapping(value: Boolean): Self = StObject.set(x, "isViewportWrapping", value.asInstanceOf[js.Any])
+    
+    inline def setIsWordWrapMinified(value: Boolean): Self = StObject.set(x, "isWordWrapMinified", value.asInstanceOf[js.Any])
+    
+    inline def setWrappingColumn(value: Double): Self = StObject.set(x, "wrappingColumn", value.asInstanceOf[js.Any])
+  }
 }
-

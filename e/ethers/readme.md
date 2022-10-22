@@ -1,19 +1,19 @@
 
 # Scala.js typings for ethers
 
-Typings are for version 4.0.0-beta.3
+Typings are for version 5.7.1
 
 ## Library description:
-Ethereum wallet library.
+Umbrella package for most common Ethers libraries.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ethers |
-| Keywords           | ethereum, library, wallet |
-| # releases         | 138 |
-| # dependents       | 520 |
-| # downloads        | 4991412 |
-| # stars            | 2 |
+| Keywords           | Ethereum, ethers |
+| # releases         | 66 |
+| # dependents       | 0.0 |
+| # downloads        | 3716665.6666666665 |
+| # stars            | 5723.0 |
 
 ## Links
 - [Homepage](https://github.com/ethers-io/ethers.js#readme)

@@ -1,66 +1,76 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.stepsItemMod.RenderIconParams
-import typingsJapgolly.antDesignReactNative.stepsItemMod.StepsItemProps
-import typingsJapgolly.antDesignReactNative.stepsItemMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libStepsStepsItemMod.RenderIconParams
+import typingsJapgolly.antDesignReactNative.libStepsStepsItemMod.StepsItemProps
+import typingsJapgolly.antDesignReactNative.libStepsStepsItemMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StepsItem {
-  def apply(
-    current: Int | Double = null,
-    description: VdomNode = null,
-    direction: String = null,
-    errorTail: Int | Double = null,
-    icon: VdomNode = null,
-    index: Int | Double = null,
-    last: js.UndefOr[Boolean] = js.undefined,
-    renderIcon: /* params */ RenderIconParams => CallbackTo[Node] = null,
-    size: String = null,
-    status: String = null,
-    styles: js.Any = null,
-    title: VdomNode = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StepsItemProps, default, Unit, StepsItemProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.rawNode.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (errorTail != null) __obj.updateDynamic("errorTail")(errorTail.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawNode.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last.asInstanceOf[js.Any])
-    if (renderIcon != null) __obj.updateDynamic("renderIcon")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.antDesignReactNative.stepsItemMod.RenderIconParams) => renderIcon(t0).runNow()))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.stepsItemMod.StepsItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.stepsItemMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.stepsItemMod.StepsItemProps])(children: _*)
-  }
   @JSImport("@ant-design/react-native/lib/steps/StepsItem", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def description(value: VdomNode): this.type = set("description", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def descriptionNull: this.type = set("description", null)
+    
+    inline def descriptionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("description", js.Array(value*))
+    
+    inline def descriptionVdomElement(value: VdomElement): this.type = set("description", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def direction(value: String): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def errorTail(value: Double): this.type = set("errorTail", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomNode): this.type = set("icon", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def index(value: Double): this.type = set("index", value.asInstanceOf[js.Any])
+    
+    inline def last(value: Boolean): this.type = set("last", value.asInstanceOf[js.Any])
+    
+    inline def renderIcon(value: /* params */ RenderIconParams => Node): this.type = set("renderIcon", js.Any.fromFunction1(value))
+    
+    inline def size(value: String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: String): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: Any): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StepsItem.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StepsItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

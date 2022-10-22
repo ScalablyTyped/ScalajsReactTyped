@@ -1,34 +1,40 @@
 package typingsJapgolly.mqttPacket.mod
 
-import typingsJapgolly.mqttPacket.AnonReasonString
+import typingsJapgolly.mqttPacket.anon.SubscriptionIdentifier
 import typingsJapgolly.mqttPacket.mqttPacketStrings.subscribe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ISubscribePacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
+  
   @JSName("cmd")
   var cmd_ISubscribePacket: subscribe
-  var properties: js.UndefOr[AnonReasonString] = js.undefined
+  
+  var properties: js.UndefOr[SubscriptionIdentifier] = js.undefined
+  
   var subscriptions: js.Array[ISubscription]
 }
-
 object ISubscribePacket {
-  @scala.inline
-  def apply(
-    cmd: subscribe,
-    subscriptions: js.Array[ISubscription],
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonReasonString = null
-  ): ISubscribePacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], subscriptions = subscriptions.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+  
+  inline def apply(subscriptions: js.Array[ISubscription]): ISubscribePacket = {
+    val __obj = js.Dynamic.literal(cmd = "subscribe", subscriptions = subscriptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscribePacket]
   }
+  
+  extension [Self <: ISubscribePacket](x: Self) {
+    
+    inline def setCmd(value: subscribe): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: SubscriptionIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setSubscriptions(value: js.Array[ISubscription]): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+    
+    inline def setSubscriptionsVarargs(value: ISubscription*): Self = StObject.set(x, "subscriptions", js.Array(value*))
+  }
 }
-

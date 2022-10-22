@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-docgen-typescript" : "2.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-docgen-typescript" : "2.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

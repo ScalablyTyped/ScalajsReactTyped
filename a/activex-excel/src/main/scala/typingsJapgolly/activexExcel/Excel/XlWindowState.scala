@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4137`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4140`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4143`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4137`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4140`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4143`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4137`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4140`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4143`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4137`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4140`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4143`
 */
-trait XlWindowState extends js.Object
-
+trait XlWindowState extends StObject
 object XlWindowState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlMaximized: `-4137` = this.cast(-4137)
-  @scala.inline
-  def xlMinimized: `-4140` = this.cast(-4140)
-  @scala.inline
-  def xlNormal: `-4143` = this.cast(-4143)
+  
+  inline def xlMaximized: `-4137` = -4137.asInstanceOf[`-4137`]
+  
+  inline def xlMinimized: `-4140` = -4140.asInstanceOf[`-4140`]
+  
+  inline def xlNormal: `-4143` = -4143.asInstanceOf[`-4143`]
 }
-

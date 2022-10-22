@@ -10,10 +10,10 @@ Get random Star Wars names
 | ------------------ | :-------------: |
 | Full name          | starwars-names |
 | Keywords           | random, star, wars |
-| # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 56079 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4674.666666666667 |
+| # stars            | 179.0 |
 
 ## Links
 - [Homepage](https://github.com/kentcdodds/starwars-names#readme)

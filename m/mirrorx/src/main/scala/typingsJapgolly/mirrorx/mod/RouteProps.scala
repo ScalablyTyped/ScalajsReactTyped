@@ -1,44 +1,75 @@
 package typingsJapgolly.mirrorx.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import typingsJapgolly.history.mod.Location
-import typingsJapgolly.history.mod.LocationState
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteProps extends js.Object {
-  var children: js.UndefOr[(js.Function1[/* props */ RouteComponentProps[_], Node]) | Node] = js.undefined
-  var component: js.UndefOr[ComponentType[_ | RouteComponentProps[_]]] = js.undefined
+trait RouteProps extends StObject {
+  
+  var children: js.UndefOr[(js.Function1[/* props */ RouteComponentProps[Any], Node]) | Node] = js.undefined
+  
+  var component: js.UndefOr[ComponentType[Any | RouteComponentProps[Any]]] = js.undefined
+  
   var exact: js.UndefOr[Boolean] = js.undefined
-  var location: js.UndefOr[Location[LocationState]] = js.undefined
+  
+  var location: js.UndefOr[Location] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
-  var render: js.UndefOr[js.Function1[/* props */ RouteComponentProps[_], Node]] = js.undefined
+  
+  var render: js.UndefOr[js.Function1[/* props */ RouteComponentProps[Any], Node]] = js.undefined
+  
   var strict: js.UndefOr[Boolean] = js.undefined
 }
-
 object RouteProps {
-  @scala.inline
-  def apply(
-    children: (js.Function1[/* props */ RouteComponentProps[_], Node]) | Node = null,
-    component: ComponentType[_ | RouteComponentProps[_]] = null,
-    exact: js.UndefOr[Boolean] = js.undefined,
-    location: Location[LocationState] = null,
-    path: String = null,
-    render: /* props */ RouteComponentProps[js.Any] => CallbackTo[Node] = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): RouteProps = {
+  
+  inline def apply(): RouteProps = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.mirrorx.mod.RouteComponentProps[js.Any]) => render(t0).runNow()))
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteProps]
   }
+  
+  extension [Self <: RouteProps](x: Self) {
+    
+    inline def setChildren(value: (js.Function1[/* props */ RouteComponentProps[Any], Node]) | Node): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenFunction1(value: /* props */ RouteComponentProps[Any] => Node): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setComponent(value: ComponentType[Any | RouteComponentProps[Any]]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    
+    inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setRender(value: /* props */ RouteComponentProps[Any] => Node): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+  }
 }
-

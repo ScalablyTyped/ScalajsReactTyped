@@ -1,0 +1,19 @@
+package typingsJapgolly.babylonjs.indexMod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@JSImport("babylonjs/index", "PhysicsRadialImpulseFalloff")
+@js.native
+object PhysicsRadialImpulseFalloff extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff & Double
+  ] = js.native
+  
+  /* 0 */ val Constant: typingsJapgolly.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Constant & Double = js.native
+  
+  /* 1 */ val Linear: typingsJapgolly.babylonjs.physicsPhysicsHelperMod.PhysicsRadialImpulseFalloff.Linear & Double = js.native
+}

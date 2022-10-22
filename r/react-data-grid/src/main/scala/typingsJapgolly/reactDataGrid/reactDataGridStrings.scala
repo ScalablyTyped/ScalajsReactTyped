@@ -1,69 +1,56 @@
 package typingsJapgolly.reactDataGrid
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDataGridStrings {
-  @js.native
-  sealed trait ASC extends js.Object
   
   @js.native
-  sealed trait DESC extends js.Object
+  sealed trait ASC extends StObject
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait DESC extends StObject
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait cellDrag extends js.Object
+  sealed trait NONE extends StObject
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait cellUpdate extends js.Object
+  sealed trait cellDrag extends StObject
+  inline def cellDrag: cellDrag = "cellDrag".asInstanceOf[cellDrag]
   
   @js.native
-  sealed trait changeRow extends js.Object
+  sealed trait cellUpdate extends StObject
+  inline def cellUpdate: cellUpdate = "cellUpdate".asInstanceOf[cellUpdate]
   
   @js.native
-  sealed trait columnFill extends js.Object
+  sealed trait changeRow extends StObject
+  inline def changeRow: changeRow = "changeRow".asInstanceOf[changeRow]
   
   @js.native
-  sealed trait copyPaste extends js.Object
+  sealed trait columnFill extends StObject
+  inline def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
   
   @js.native
-  sealed trait loopOverRow extends js.Object
+  sealed trait copyPaste extends StObject
+  inline def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
   
   @js.native
-  sealed trait multi extends js.Object
+  sealed trait loopOverRow extends StObject
+  inline def loopOverRow: loopOverRow = "loopOverRow".asInstanceOf[loopOverRow]
   
   @js.native
-  sealed trait none_ extends js.Object
+  sealed trait multi extends StObject
+  inline def multi: multi = "multi".asInstanceOf[multi]
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait none_ extends StObject
+  inline def none_ : none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def cellDrag: cellDrag = "cellDrag".asInstanceOf[cellDrag]
-  @scala.inline
-  def cellUpdate: cellUpdate = "cellUpdate".asInstanceOf[cellUpdate]
-  @scala.inline
-  def changeRow: changeRow = "changeRow".asInstanceOf[changeRow]
-  @scala.inline
-  def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
-  @scala.inline
-  def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
-  @scala.inline
-  def loopOverRow: loopOverRow = "loopOverRow".asInstanceOf[loopOverRow]
-  @scala.inline
-  def multi: multi = "multi".asInstanceOf[multi]
-  @scala.inline
-  def none_ : none_ = "none".asInstanceOf[none_]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
+  @js.native
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
 }
-

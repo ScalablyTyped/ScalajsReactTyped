@@ -1,14 +1,23 @@
 package typingsJapgolly.igniteUi.Infragistics
 
-import typingsJapgolly.igniteUi.ResponsiveModeSettings
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Infragistics.ResponsiveMode")
-@js.native
-class ResponsiveMode protected () extends js.Object {
-  def this(settings: ResponsiveModeSettings) = this()
-  def isActive(): Unit = js.native
+trait ResponsiveMode extends StObject {
+  
+  def isActive(): Unit
 }
-
+object ResponsiveMode {
+  
+  inline def apply(isActive: Callback): ResponsiveMode = {
+    val __obj = js.Dynamic.literal(isActive = isActive.toJsFn)
+    __obj.asInstanceOf[ResponsiveMode]
+  }
+  
+  extension [Self <: ResponsiveMode](x: Self) {
+    
+    inline def setIsActive(value: Callback): Self = StObject.set(x, "isActive", value.toJsFn)
+  }
+}

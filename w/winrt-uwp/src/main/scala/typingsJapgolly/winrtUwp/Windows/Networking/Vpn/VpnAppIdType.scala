@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnAppIdType extends js.Object
-
+sealed trait VpnAppIdType extends StObject
 /** Specifies the type of AppId understood by the VPN platform. */
 @JSGlobal("Windows.Networking.Vpn.VpnAppIdType")
 @js.native
-object VpnAppIdType extends js.Object {
+object VpnAppIdType extends StObject {
+  
   /** File path. */
   @js.native
-  sealed trait filePath extends VpnAppIdType
+  sealed trait filePath
+    extends StObject
+       with VpnAppIdType
   
   /** Fully qualified binary name (FQBN). */
   @js.native
-  sealed trait fullyQualifiedBinaryName extends VpnAppIdType
+  sealed trait fullyQualifiedBinaryName
+    extends StObject
+       with VpnAppIdType
   
   /** Package family name. */
   @js.native
-  sealed trait packageFamilyName extends VpnAppIdType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnAppIdType with Double] = js.native
-  /* 2 */ @js.native
-  object filePath extends TopLevel[filePath with Double]
-  
-  /* 1 */ @js.native
-  object fullyQualifiedBinaryName extends TopLevel[fullyQualifiedBinaryName with Double]
-  
-  /* 0 */ @js.native
-  object packageFamilyName extends TopLevel[packageFamilyName with Double]
-  
+  sealed trait packageFamilyName
+    extends StObject
+       with VpnAppIdType
 }
-

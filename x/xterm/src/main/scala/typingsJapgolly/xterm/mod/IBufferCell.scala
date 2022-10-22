@@ -1,14 +1,15 @@
 package typingsJapgolly.xterm.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single cell in the terminal's buffer.
   */
-trait IBufferCell extends js.Object {
+trait IBufferCell extends StObject {
+  
   /**
     * Gets a cell's background color number, this differs depending on what the
     * color mode of the cell is:
@@ -21,6 +22,7 @@ trait IBufferCell extends js.Object {
     *   (CSI 4 8 ; 2 ; Pi ; Pr ; Pg ; Pb)
     */
   def getBgColor(): Double
+  
   /**
     * Gets the number representation of the background color mode, this can be
     * used to perform quick comparisons of 2 cells to see if they're the same.
@@ -28,6 +30,7 @@ trait IBufferCell extends js.Object {
     * a cell is.
     */
   def getBgColorMode(): Double
+  
   /**
     * The character(s) within the cell. Examples of what this can contain:
     *
@@ -36,11 +39,13 @@ trait IBufferCell extends js.Object {
     * - An emoji
     */
   def getChars(): String
+  
   /**
     * Gets the UTF32 codepoint of single characters, if content is a combined
     * string it returns the codepoint of the last character in the string.
     */
   def getCode(): Double
+  
   /**
     * Gets a cell's foreground color number, this differs depending on what the
     * color mode of the cell is:
@@ -53,6 +58,7 @@ trait IBufferCell extends js.Object {
     *   (CSI 3 8 ; 2 ; Pi ; Pr ; Pg ; Pb)
     */
   def getFgColor(): Double
+  
   /**
     * Gets the number representation of the foreground color mode, this can be
     * used to perform quick comparisons of 2 cells to see if they're the same.
@@ -60,6 +66,7 @@ trait IBufferCell extends js.Object {
     * a cell is.
     */
   def getFgColorMode(): Double
+  
   /**
     * The width of the character. Some examples:
     *
@@ -68,39 +75,55 @@ trait IBufferCell extends js.Object {
     * - `0` for cells immediately following cells with a width of `2`.
     */
   def getWidth(): Double
+  
   /** Whether the cell has the default attribute (no color or style). */
   def isAttributeDefault(): Boolean
+  
   /** Whether the cell is using the default background color mode. */
   def isBgDefault(): Boolean
+  
   /** Whether the cell is using the palette background color mode. */
   def isBgPalette(): Boolean
+  
   /** Whether the cell is using the RGB background color mode. */
   def isBgRGB(): Boolean
-  /** Whether the cell has the inverse attribute (CSI 5 m). */
+  
+  /** Whether the cell has the blink attribute (CSI 5 m). */
   def isBlink(): Double
+  
   /** Whether the cell has the bold attribute (CSI 1 m). */
   def isBold(): Double
-  /** Whether the cell has the inverse attribute (CSI 2 m). */
+  
+  /** Whether the cell has the dim attribute (CSI 2 m). */
   def isDim(): Double
+  
   /** Whether the cell is using the default foreground color mode. */
   def isFgDefault(): Boolean
+  
   /** Whether the cell is using the palette foreground color mode. */
   def isFgPalette(): Boolean
+  
   /** Whether the cell is using the RGB foreground color mode. */
   def isFgRGB(): Boolean
+  
   /** Whether the cell has the inverse attribute (CSI 7 m). */
   def isInverse(): Double
-  /** Whether the cell has the inverse attribute (CSI 8 m). */
+  
+  /** Whether the cell has the invisible attribute (CSI 8 m). */
   def isInvisible(): Double
-  /** Whether the cell has the inverse attribute (CSI 3 m). */
+  
+  /** Whether the cell has the italic attribute (CSI 3 m). */
   def isItalic(): Double
+  
+  /** Whether the cell has the strikethrough attribute (CSI 9 m). */
+  def isStrikethrough(): Double
+  
   /** Whether the cell has the underline attribute (CSI 4 m). */
   def isUnderline(): Double
 }
-
 object IBufferCell {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getBgColor: CallbackTo[Double],
     getBgColorMode: CallbackTo[Double],
     getChars: CallbackTo[String],
@@ -121,31 +144,57 @@ object IBufferCell {
     isInverse: CallbackTo[Double],
     isInvisible: CallbackTo[Double],
     isItalic: CallbackTo[Double],
+    isStrikethrough: CallbackTo[Double],
     isUnderline: CallbackTo[Double]
   ): IBufferCell = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getBgColor")(getBgColor.toJsFn)
-    __obj.updateDynamic("getBgColorMode")(getBgColorMode.toJsFn)
-    __obj.updateDynamic("getChars")(getChars.toJsFn)
-    __obj.updateDynamic("getCode")(getCode.toJsFn)
-    __obj.updateDynamic("getFgColor")(getFgColor.toJsFn)
-    __obj.updateDynamic("getFgColorMode")(getFgColorMode.toJsFn)
-    __obj.updateDynamic("getWidth")(getWidth.toJsFn)
-    __obj.updateDynamic("isAttributeDefault")(isAttributeDefault.toJsFn)
-    __obj.updateDynamic("isBgDefault")(isBgDefault.toJsFn)
-    __obj.updateDynamic("isBgPalette")(isBgPalette.toJsFn)
-    __obj.updateDynamic("isBgRGB")(isBgRGB.toJsFn)
-    __obj.updateDynamic("isBlink")(isBlink.toJsFn)
-    __obj.updateDynamic("isBold")(isBold.toJsFn)
-    __obj.updateDynamic("isDim")(isDim.toJsFn)
-    __obj.updateDynamic("isFgDefault")(isFgDefault.toJsFn)
-    __obj.updateDynamic("isFgPalette")(isFgPalette.toJsFn)
-    __obj.updateDynamic("isFgRGB")(isFgRGB.toJsFn)
-    __obj.updateDynamic("isInverse")(isInverse.toJsFn)
-    __obj.updateDynamic("isInvisible")(isInvisible.toJsFn)
-    __obj.updateDynamic("isItalic")(isItalic.toJsFn)
-    __obj.updateDynamic("isUnderline")(isUnderline.toJsFn)
+    val __obj = js.Dynamic.literal(getBgColor = getBgColor.toJsFn, getBgColorMode = getBgColorMode.toJsFn, getChars = getChars.toJsFn, getCode = getCode.toJsFn, getFgColor = getFgColor.toJsFn, getFgColorMode = getFgColorMode.toJsFn, getWidth = getWidth.toJsFn, isAttributeDefault = isAttributeDefault.toJsFn, isBgDefault = isBgDefault.toJsFn, isBgPalette = isBgPalette.toJsFn, isBgRGB = isBgRGB.toJsFn, isBlink = isBlink.toJsFn, isBold = isBold.toJsFn, isDim = isDim.toJsFn, isFgDefault = isFgDefault.toJsFn, isFgPalette = isFgPalette.toJsFn, isFgRGB = isFgRGB.toJsFn, isInverse = isInverse.toJsFn, isInvisible = isInvisible.toJsFn, isItalic = isItalic.toJsFn, isStrikethrough = isStrikethrough.toJsFn, isUnderline = isUnderline.toJsFn)
     __obj.asInstanceOf[IBufferCell]
   }
+  
+  extension [Self <: IBufferCell](x: Self) {
+    
+    inline def setGetBgColor(value: CallbackTo[Double]): Self = StObject.set(x, "getBgColor", value.toJsFn)
+    
+    inline def setGetBgColorMode(value: CallbackTo[Double]): Self = StObject.set(x, "getBgColorMode", value.toJsFn)
+    
+    inline def setGetChars(value: CallbackTo[String]): Self = StObject.set(x, "getChars", value.toJsFn)
+    
+    inline def setGetCode(value: CallbackTo[Double]): Self = StObject.set(x, "getCode", value.toJsFn)
+    
+    inline def setGetFgColor(value: CallbackTo[Double]): Self = StObject.set(x, "getFgColor", value.toJsFn)
+    
+    inline def setGetFgColorMode(value: CallbackTo[Double]): Self = StObject.set(x, "getFgColorMode", value.toJsFn)
+    
+    inline def setGetWidth(value: CallbackTo[Double]): Self = StObject.set(x, "getWidth", value.toJsFn)
+    
+    inline def setIsAttributeDefault(value: CallbackTo[Boolean]): Self = StObject.set(x, "isAttributeDefault", value.toJsFn)
+    
+    inline def setIsBgDefault(value: CallbackTo[Boolean]): Self = StObject.set(x, "isBgDefault", value.toJsFn)
+    
+    inline def setIsBgPalette(value: CallbackTo[Boolean]): Self = StObject.set(x, "isBgPalette", value.toJsFn)
+    
+    inline def setIsBgRGB(value: CallbackTo[Boolean]): Self = StObject.set(x, "isBgRGB", value.toJsFn)
+    
+    inline def setIsBlink(value: CallbackTo[Double]): Self = StObject.set(x, "isBlink", value.toJsFn)
+    
+    inline def setIsBold(value: CallbackTo[Double]): Self = StObject.set(x, "isBold", value.toJsFn)
+    
+    inline def setIsDim(value: CallbackTo[Double]): Self = StObject.set(x, "isDim", value.toJsFn)
+    
+    inline def setIsFgDefault(value: CallbackTo[Boolean]): Self = StObject.set(x, "isFgDefault", value.toJsFn)
+    
+    inline def setIsFgPalette(value: CallbackTo[Boolean]): Self = StObject.set(x, "isFgPalette", value.toJsFn)
+    
+    inline def setIsFgRGB(value: CallbackTo[Boolean]): Self = StObject.set(x, "isFgRGB", value.toJsFn)
+    
+    inline def setIsInverse(value: CallbackTo[Double]): Self = StObject.set(x, "isInverse", value.toJsFn)
+    
+    inline def setIsInvisible(value: CallbackTo[Double]): Self = StObject.set(x, "isInvisible", value.toJsFn)
+    
+    inline def setIsItalic(value: CallbackTo[Double]): Self = StObject.set(x, "isItalic", value.toJsFn)
+    
+    inline def setIsStrikethrough(value: CallbackTo[Double]): Self = StObject.set(x, "isStrikethrough", value.toJsFn)
+    
+    inline def setIsUnderline(value: CallbackTo[Double]): Self = StObject.set(x, "isUnderline", value.toJsFn)
+  }
 }
-

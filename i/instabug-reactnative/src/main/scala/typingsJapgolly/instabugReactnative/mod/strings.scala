@@ -1,323 +1,411 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait strings extends js.Object
-
+sealed trait strings extends StObject
 @JSImport("instabug-reactnative", "strings")
 @js.native
-object strings extends js.Object {
-  @js.native
-  sealed trait addExtraScreenshot extends strings
-  
-  @js.native
-  sealed trait addImageFromGallery extends strings
-  
-  @js.native
-  sealed trait addVideoMessage extends strings
-  
-  @js.native
-  sealed trait addVoiceMessage extends strings
-  
-  @js.native
-  sealed trait audio extends strings
-  
-  @js.native
-  sealed trait audioRecordingPermissionDeniedMessage extends strings
-  
-  @js.native
-  sealed trait audioRecordingPermissionDeniedTitle extends strings
-  
-  @js.native
-  sealed trait cancelButtonText extends strings
-  
-  @js.native
-  sealed trait chatsHeaderTitle extends strings
-  
-  @js.native
-  sealed trait chatsNoConversationsHeadlineText extends strings
-  
-  @js.native
-  sealed trait collectingDataText extends strings
-  
-  @js.native
-  sealed trait commentFieldHintForBugReport extends strings
-  
-  @js.native
-  sealed trait commentFieldHintForFeedback extends strings
-  
-  @js.native
-  sealed trait commentFieldHintForQuestion extends strings
-  
-  @js.native
-  sealed trait conversationTextFieldHint extends strings
-  
-  @js.native
-  sealed trait conversationsHeaderTitle extends strings
-  
-  @js.native
-  sealed trait doneButtonText extends strings
-  
-  @js.native
-  sealed trait edgeSwipeStartHint extends strings
-  
-  @js.native
-  sealed trait emailFieldHint extends strings
-  
-  @js.native
-  sealed trait image extends strings
-  
-  @js.native
-  sealed trait invalidCommentMessage extends strings
-  
-  @js.native
-  sealed trait invalidCommentTitle extends strings
-  
-  @js.native
-  sealed trait invalidEmailMessage extends strings
-  
-  @js.native
-  sealed trait invalidEmailTitle extends strings
-  
-  @js.native
-  sealed trait invocationHeader extends strings
-  
-  @js.native
-  sealed trait messagesNotification extends strings
-  
-  @js.native
-  sealed trait messagesNotificationAndOthers extends strings
-  
-  @js.native
-  sealed trait microphonePermissionAlertSettingsButtonText extends strings
-  
-  @js.native
-  sealed trait okButtonText extends strings
-  
-  @js.native
-  sealed trait recordingMessageToHoldText extends strings
-  
-  @js.native
-  sealed trait recordingMessageToReleaseText extends strings
-  
-  @js.native
-  sealed trait reportBug extends strings
-  
-  @js.native
-  sealed trait reportFeedback extends strings
-  
-  @js.native
-  sealed trait reportQuestion extends strings
-  
-  @js.native
-  sealed trait screenshotHeaderTitle extends strings
-  
-  @js.native
-  sealed trait shakeHint extends strings
-  
-  @js.native
-  sealed trait startAlertText extends strings
-  
-  @js.native
-  sealed trait swipeHint extends strings
-  
-  @js.native
-  sealed trait talkToUs extends strings
-  
-  @js.native
-  sealed trait team extends strings
-  
-  @js.native
-  sealed trait thankYouAlertText extends strings
-  
-  @js.native
-  sealed trait thankYouText extends strings
-  
-  @js.native
-  sealed trait video extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaFinishStepContent extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaFinishStepTitle extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaHowToReportStepContent extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaHowToReportStepTitle extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaWelcomeStepContent extends strings
-  
-  @js.native
-  sealed trait welcomeMessageBetaWelcomeStepTitle extends strings
-  
-  @js.native
-  sealed trait welcomeMessageLiveWelcomeStepContent extends strings
-  
-  @js.native
-  sealed trait welcomeMessageLiveWelcomeStepTitle extends strings
+object strings extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[strings with Double] = js.native
-  /* 20 */ @js.native
-  object addExtraScreenshot extends TopLevel[addExtraScreenshot with Double]
+  def apply(value: Double): js.UndefOr[strings & Double] = js.native
   
-  /* 19 */ @js.native
-  object addImageFromGallery extends TopLevel[addImageFromGallery with Double]
+  @js.native
+  sealed trait addAttachmentButtonTitleStringName
+    extends StObject
+       with strings
+  /* 58 */ val addAttachmentButtonTitleStringName: typingsJapgolly.instabugReactnative.mod.strings.addAttachmentButtonTitleStringName & Double = js.native
   
-  /* 17 */ @js.native
-  object addVideoMessage extends TopLevel[addVideoMessage with Double]
+  @js.native
+  sealed trait addExtraScreenshot
+    extends StObject
+       with strings
+  /* 20 */ val addExtraScreenshot: typingsJapgolly.instabugReactnative.mod.strings.addExtraScreenshot & Double = js.native
   
-  /* 18 */ @js.native
-  object addVoiceMessage extends TopLevel[addVoiceMessage with Double]
+  @js.native
+  sealed trait addImageFromGallery
+    extends StObject
+       with strings
+  /* 19 */ val addImageFromGallery: typingsJapgolly.instabugReactnative.mod.strings.addImageFromGallery & Double = js.native
   
-  /* 33 */ @js.native
-  object audio extends TopLevel[audio with Double]
+  @js.native
+  sealed trait addVideoMessage
+    extends StObject
+       with strings
+  /* 17 */ val addVideoMessage: typingsJapgolly.instabugReactnative.mod.strings.addVideoMessage & Double = js.native
   
-  /* 22 */ @js.native
-  object audioRecordingPermissionDeniedMessage extends TopLevel[audioRecordingPermissionDeniedMessage with Double]
+  @js.native
+  sealed trait addVoiceMessage
+    extends StObject
+       with strings
+  /* 18 */ val addVoiceMessage: typingsJapgolly.instabugReactnative.mod.strings.addVoiceMessage & Double = js.native
   
-  /* 21 */ @js.native
-  object audioRecordingPermissionDeniedTitle extends TopLevel[audioRecordingPermissionDeniedTitle with Double]
+  @js.native
+  sealed trait audio
+    extends StObject
+       with strings
+  /* 31 */ val audio: typingsJapgolly.instabugReactnative.mod.strings.audio & Double = js.native
   
-  /* 31 */ @js.native
-  object cancelButtonText extends TopLevel[cancelButtonText with Double]
+  @js.native
+  sealed trait audioRecordingPermissionDeniedMessage
+    extends StObject
+       with strings
+  /* 22 */ val audioRecordingPermissionDeniedMessage: typingsJapgolly.instabugReactnative.mod.strings.audioRecordingPermissionDeniedMessage & Double = js.native
   
-  /* 36 */ @js.native
-  object chatsHeaderTitle extends TopLevel[chatsHeaderTitle with Double]
+  @js.native
+  sealed trait audioRecordingPermissionDeniedTitle
+    extends StObject
+       with strings
+  /* 21 */ val audioRecordingPermissionDeniedTitle: typingsJapgolly.instabugReactnative.mod.strings.audioRecordingPermissionDeniedTitle & Double = js.native
   
-  /* 28 */ @js.native
-  object chatsNoConversationsHeadlineText extends TopLevel[chatsNoConversationsHeadlineText with Double]
+  @js.native
+  sealed trait cancelButtonText
+    extends StObject
+       with strings
+  /* 29 */ val cancelButtonText: typingsJapgolly.instabugReactnative.mod.strings.cancelButtonText & Double = js.native
   
-  /* 41 */ @js.native
-  object collectingDataText extends TopLevel[collectingDataText with Double]
+  @js.native
+  sealed trait collectingDataText
+    extends StObject
+       with strings
+  /* 38 */ val collectingDataText: typingsJapgolly.instabugReactnative.mod.strings.collectingDataText & Double = js.native
   
-  /* 14 */ @js.native
-  object commentFieldHintForBugReport extends TopLevel[commentFieldHintForBugReport with Double]
+  @js.native
+  sealed trait commentFieldHintForBugReport
+    extends StObject
+       with strings
+  /* 13 */ val commentFieldHintForBugReport: typingsJapgolly.instabugReactnative.mod.strings.commentFieldHintForBugReport & Double = js.native
   
-  /* 15 */ @js.native
-  object commentFieldHintForFeedback extends TopLevel[commentFieldHintForFeedback with Double]
+  @js.native
+  sealed trait commentFieldHintForFeedback
+    extends StObject
+       with strings
+  /* 14 */ val commentFieldHintForFeedback: typingsJapgolly.instabugReactnative.mod.strings.commentFieldHintForFeedback & Double = js.native
   
-  /* 16 */ @js.native
-  object commentFieldHintForQuestion extends TopLevel[commentFieldHintForQuestion with Double]
+  @js.native
+  sealed trait commentFieldHintForQuestion
+    extends StObject
+       with strings
+  /* 15 */ val commentFieldHintForQuestion: typingsJapgolly.instabugReactnative.mod.strings.commentFieldHintForQuestion & Double = js.native
   
-  /* 40 */ @js.native
-  object conversationTextFieldHint extends TopLevel[conversationTextFieldHint with Double]
+  @js.native
+  sealed trait conversationTextFieldHint
+    extends StObject
+       with strings
+  /* 37 */ val conversationTextFieldHint: typingsJapgolly.instabugReactnative.mod.strings.conversationTextFieldHint & Double = js.native
   
-  /* 26 */ @js.native
-  object conversationsHeaderTitle extends TopLevel[conversationsHeaderTitle with Double]
+  @js.native
+  sealed trait conversationsHeaderTitle
+    extends StObject
+       with strings
+  /* 26 */ val conversationsHeaderTitle: typingsJapgolly.instabugReactnative.mod.strings.conversationsHeaderTitle & Double = js.native
   
-  /* 29 */ @js.native
-  object doneButtonText extends TopLevel[doneButtonText with Double]
+  @js.native
+  sealed trait discardAlertAction
+    extends StObject
+       with strings
+  /* 57 */ val discardAlertAction: typingsJapgolly.instabugReactnative.mod.strings.discardAlertAction & Double = js.native
   
-  /* 2 */ @js.native
-  object edgeSwipeStartHint extends TopLevel[edgeSwipeStartHint with Double]
+  @js.native
+  sealed trait discardAlertCancel
+    extends StObject
+       with strings
+  /* 56 */ val discardAlertCancel: typingsJapgolly.instabugReactnative.mod.strings.discardAlertCancel & Double = js.native
   
-  /* 13 */ @js.native
-  object emailFieldHint extends TopLevel[emailFieldHint with Double]
+  @js.native
+  sealed trait discardAlertMessage
+    extends StObject
+       with strings
+  /* 55 */ val discardAlertMessage: typingsJapgolly.instabugReactnative.mod.strings.discardAlertMessage & Double = js.native
   
-  /* 35 */ @js.native
-  object image extends TopLevel[image with Double]
+  @js.native
+  sealed trait discardAlertTitle
+    extends StObject
+       with strings
+  /* 54 */ val discardAlertTitle: typingsJapgolly.instabugReactnative.mod.strings.discardAlertTitle & Double = js.native
   
-  /* 6 */ @js.native
-  object invalidCommentMessage extends TopLevel[invalidCommentMessage with Double]
+  @js.native
+  sealed trait edgeSwipeStartHint
+    extends StObject
+       with strings
+  /* 2 */ val edgeSwipeStartHint: typingsJapgolly.instabugReactnative.mod.strings.edgeSwipeStartHint & Double = js.native
   
-  /* 7 */ @js.native
-  object invalidCommentTitle extends TopLevel[invalidCommentTitle with Double]
+  @js.native
+  sealed trait emailFieldHint
+    extends StObject
+       with strings
+  /* 12 */ val emailFieldHint: typingsJapgolly.instabugReactnative.mod.strings.emailFieldHint & Double = js.native
   
-  /* 4 */ @js.native
-  object invalidEmailMessage extends TopLevel[invalidEmailMessage with Double]
+  @js.native
+  sealed trait image
+    extends StObject
+       with strings
+  /* 33 */ val image: typingsJapgolly.instabugReactnative.mod.strings.image & Double = js.native
   
-  /* 5 */ @js.native
-  object invalidEmailTitle extends TopLevel[invalidEmailTitle with Double]
+  @js.native
+  sealed trait invalidCommentMessage
+    extends StObject
+       with strings
+  /* 6 */ val invalidCommentMessage: typingsJapgolly.instabugReactnative.mod.strings.invalidCommentMessage & Double = js.native
   
-  /* 8 */ @js.native
-  object invocationHeader extends TopLevel[invocationHeader with Double]
+  @js.native
+  sealed trait invalidCommentTitle
+    extends StObject
+       with strings
+  /* 7 */ val invalidCommentTitle: typingsJapgolly.instabugReactnative.mod.strings.invalidCommentTitle & Double = js.native
   
-  /* 38 */ @js.native
-  object messagesNotification extends TopLevel[messagesNotification with Double]
+  @js.native
+  sealed trait invalidEmailMessage
+    extends StObject
+       with strings
+  /* 4 */ val invalidEmailMessage: typingsJapgolly.instabugReactnative.mod.strings.invalidEmailMessage & Double = js.native
   
-  /* 39 */ @js.native
-  object messagesNotificationAndOthers extends TopLevel[messagesNotificationAndOthers with Double]
+  @js.native
+  sealed trait invalidEmailTitle
+    extends StObject
+       with strings
+  /* 5 */ val invalidEmailTitle: typingsJapgolly.instabugReactnative.mod.strings.invalidEmailTitle & Double = js.native
   
-  /* 23 */ @js.native
-  object microphonePermissionAlertSettingsButtonText extends TopLevel[microphonePermissionAlertSettingsButtonText with Double]
+  @js.native
+  sealed trait invocationHeader
+    extends StObject
+       with strings
+  /* 8 */ val invocationHeader: typingsJapgolly.instabugReactnative.mod.strings.invocationHeader & Double = js.native
   
-  /* 30 */ @js.native
-  object okButtonText extends TopLevel[okButtonText with Double]
+  @js.native
+  sealed trait messagesNotification
+    extends StObject
+       with strings
+  /* 35 */ val messagesNotification: typingsJapgolly.instabugReactnative.mod.strings.messagesNotification & Double = js.native
   
-  /* 24 */ @js.native
-  object recordingMessageToHoldText extends TopLevel[recordingMessageToHoldText with Double]
+  @js.native
+  sealed trait messagesNotificationAndOthers
+    extends StObject
+       with strings
+  /* 36 */ val messagesNotificationAndOthers: typingsJapgolly.instabugReactnative.mod.strings.messagesNotificationAndOthers & Double = js.native
   
-  /* 25 */ @js.native
-  object recordingMessageToReleaseText extends TopLevel[recordingMessageToReleaseText with Double]
+  @js.native
+  sealed trait microphonePermissionAlertSettingsButtonText
+    extends StObject
+       with strings
+  /* 23 */ val microphonePermissionAlertSettingsButtonText: typingsJapgolly.instabugReactnative.mod.strings.microphonePermissionAlertSettingsButtonText & Double = js.native
   
-  /* 11 */ @js.native
-  object reportBug extends TopLevel[reportBug with Double]
+  @js.native
+  sealed trait okButtonText
+    extends StObject
+       with strings
+  /* 28 */ val okButtonText: typingsJapgolly.instabugReactnative.mod.strings.okButtonText & Double = js.native
   
-  /* 12 */ @js.native
-  object reportFeedback extends TopLevel[reportFeedback with Double]
+  @js.native
+  sealed trait recordingMessageToHoldText
+    extends StObject
+       with strings
+  /* 24 */ val recordingMessageToHoldText: typingsJapgolly.instabugReactnative.mod.strings.recordingMessageToHoldText & Double = js.native
   
-  /* 10 */ @js.native
-  object reportQuestion extends TopLevel[reportQuestion with Double]
+  @js.native
+  sealed trait recordingMessageToReleaseText
+    extends StObject
+       with strings
+  /* 25 */ val recordingMessageToReleaseText: typingsJapgolly.instabugReactnative.mod.strings.recordingMessageToReleaseText & Double = js.native
   
-  /* 27 */ @js.native
-  object screenshotHeaderTitle extends TopLevel[screenshotHeaderTitle with Double]
+  @js.native
+  sealed trait reportBug
+    extends StObject
+       with strings
+  /* 10 */ val reportBug: typingsJapgolly.instabugReactnative.mod.strings.reportBug & Double = js.native
   
-  /* 0 */ @js.native
-  object shakeHint extends TopLevel[shakeHint with Double]
+  @js.native
+  sealed trait reportBugDescription
+    extends StObject
+       with strings
+  /* 50 */ val reportBugDescription: typingsJapgolly.instabugReactnative.mod.strings.reportBugDescription & Double = js.native
   
-  /* 3 */ @js.native
-  object startAlertText extends TopLevel[startAlertText with Double]
+  @js.native
+  sealed trait reportFeedback
+    extends StObject
+       with strings
+  /* 11 */ val reportFeedback: typingsJapgolly.instabugReactnative.mod.strings.reportFeedback & Double = js.native
   
-  /* 1 */ @js.native
-  object swipeHint extends TopLevel[swipeHint with Double]
+  @js.native
+  sealed trait reportFeedbackDescription
+    extends StObject
+       with strings
+  /* 51 */ val reportFeedbackDescription: typingsJapgolly.instabugReactnative.mod.strings.reportFeedbackDescription & Double = js.native
   
-  /* 9 */ @js.native
-  object talkToUs extends TopLevel[talkToUs with Double]
+  @js.native
+  sealed trait reportQuestion
+    extends StObject
+       with strings
+  /* 9 */ val reportQuestion: typingsJapgolly.instabugReactnative.mod.strings.reportQuestion & Double = js.native
   
-  /* 37 */ @js.native
-  object team extends TopLevel[team with Double]
+  @js.native
+  sealed trait reportQuestionDescription
+    extends StObject
+       with strings
+  /* 52 */ val reportQuestionDescription: typingsJapgolly.instabugReactnative.mod.strings.reportQuestionDescription & Double = js.native
   
-  /* 42 */ @js.native
-  object thankYouAlertText extends TopLevel[thankYouAlertText with Double]
+  @js.native
+  sealed trait reportReproStepsDisclaimerBody
+    extends StObject
+       with strings
+  /* 59 */ val reportReproStepsDisclaimerBody: typingsJapgolly.instabugReactnative.mod.strings.reportReproStepsDisclaimerBody & Double = js.native
   
-  /* 32 */ @js.native
-  object thankYouText extends TopLevel[thankYouText with Double]
+  @js.native
+  sealed trait reportReproStepsDisclaimerLink
+    extends StObject
+       with strings
+  /* 60 */ val reportReproStepsDisclaimerLink: typingsJapgolly.instabugReactnative.mod.strings.reportReproStepsDisclaimerLink & Double = js.native
   
-  /* 34 */ @js.native
-  object video extends TopLevel[video with Double]
+  @js.native
+  sealed trait reproStepsListDescription
+    extends StObject
+       with strings
+  /* 63 */ val reproStepsListDescription: typingsJapgolly.instabugReactnative.mod.strings.reproStepsListDescription & Double = js.native
   
-  /* 48 */ @js.native
-  object welcomeMessageBetaFinishStepContent extends TopLevel[welcomeMessageBetaFinishStepContent with Double]
+  @js.native
+  sealed trait reproStepsListEmptyStateDescription
+    extends StObject
+       with strings
+  /* 64 */ val reproStepsListEmptyStateDescription: typingsJapgolly.instabugReactnative.mod.strings.reproStepsListEmptyStateDescription & Double = js.native
   
-  /* 47 */ @js.native
-  object welcomeMessageBetaFinishStepTitle extends TopLevel[welcomeMessageBetaFinishStepTitle with Double]
+  @js.native
+  sealed trait reproStepsListHeader
+    extends StObject
+       with strings
+  /* 62 */ val reproStepsListHeader: typingsJapgolly.instabugReactnative.mod.strings.reproStepsListHeader & Double = js.native
   
-  /* 46 */ @js.native
-  object welcomeMessageBetaHowToReportStepContent extends TopLevel[welcomeMessageBetaHowToReportStepContent with Double]
+  @js.native
+  sealed trait reproStepsListItemTitle
+    extends StObject
+       with strings
+  /* 65 */ val reproStepsListItemTitle: typingsJapgolly.instabugReactnative.mod.strings.reproStepsListItemTitle & Double = js.native
   
-  /* 45 */ @js.native
-  object welcomeMessageBetaHowToReportStepTitle extends TopLevel[welcomeMessageBetaHowToReportStepTitle with Double]
+  @js.native
+  sealed trait reproStepsProgressDialogBody
+    extends StObject
+       with strings
+  /* 61 */ val reproStepsProgressDialogBody: typingsJapgolly.instabugReactnative.mod.strings.reproStepsProgressDialogBody & Double = js.native
   
-  /* 44 */ @js.native
-  object welcomeMessageBetaWelcomeStepContent extends TopLevel[welcomeMessageBetaWelcomeStepContent with Double]
+  @js.native
+  sealed trait requestFeatureDescription
+    extends StObject
+       with strings
+  /* 53 */ val requestFeatureDescription: typingsJapgolly.instabugReactnative.mod.strings.requestFeatureDescription & Double = js.native
   
-  /* 43 */ @js.native
-  object welcomeMessageBetaWelcomeStepTitle extends TopLevel[welcomeMessageBetaWelcomeStepTitle with Double]
+  @js.native
+  sealed trait screenshotHeaderTitle
+    extends StObject
+       with strings
+  /* 27 */ val screenshotHeaderTitle: typingsJapgolly.instabugReactnative.mod.strings.screenshotHeaderTitle & Double = js.native
   
-  /* 50 */ @js.native
-  object welcomeMessageLiveWelcomeStepContent extends TopLevel[welcomeMessageLiveWelcomeStepContent with Double]
+  @js.native
+  sealed trait shakeHint
+    extends StObject
+       with strings
+  /* 0 */ val shakeHint: typingsJapgolly.instabugReactnative.mod.strings.shakeHint & Double = js.native
   
-  /* 49 */ @js.native
-  object welcomeMessageLiveWelcomeStepTitle extends TopLevel[welcomeMessageLiveWelcomeStepTitle with Double]
+  @js.native
+  sealed trait startAlertText
+    extends StObject
+       with strings
+  /* 3 */ val startAlertText: typingsJapgolly.instabugReactnative.mod.strings.startAlertText & Double = js.native
   
+  @js.native
+  sealed trait surveysStoreRatingThanksSubtitle
+    extends StObject
+       with strings
+  /* 49 */ val surveysStoreRatingThanksSubtitle: typingsJapgolly.instabugReactnative.mod.strings.surveysStoreRatingThanksSubtitle & Double = js.native
+  
+  @js.native
+  sealed trait surveysStoreRatingThanksTitle
+    extends StObject
+       with strings
+  /* 48 */ val surveysStoreRatingThanksTitle: typingsJapgolly.instabugReactnative.mod.strings.surveysStoreRatingThanksTitle & Double = js.native
+  
+  @js.native
+  sealed trait swipeHint
+    extends StObject
+       with strings
+  /* 1 */ val swipeHint: typingsJapgolly.instabugReactnative.mod.strings.swipeHint & Double = js.native
+  
+  @js.native
+  sealed trait team
+    extends StObject
+       with strings
+  /* 34 */ val team: typingsJapgolly.instabugReactnative.mod.strings.team & Double = js.native
+  
+  @js.native
+  sealed trait thankYouAlertText
+    extends StObject
+       with strings
+  /* 39 */ val thankYouAlertText: typingsJapgolly.instabugReactnative.mod.strings.thankYouAlertText & Double = js.native
+  
+  @js.native
+  sealed trait thankYouText
+    extends StObject
+       with strings
+  /* 30 */ val thankYouText: typingsJapgolly.instabugReactnative.mod.strings.thankYouText & Double = js.native
+  
+  @js.native
+  sealed trait video
+    extends StObject
+       with strings
+  /* 32 */ val video: typingsJapgolly.instabugReactnative.mod.strings.video & Double = js.native
+  
+  @js.native
+  sealed trait videoPressRecord
+    extends StObject
+       with strings
+  /* 16 */ val videoPressRecord: typingsJapgolly.instabugReactnative.mod.strings.videoPressRecord & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaFinishStepContent
+    extends StObject
+       with strings
+  /* 45 */ val welcomeMessageBetaFinishStepContent: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaFinishStepContent & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaFinishStepTitle
+    extends StObject
+       with strings
+  /* 44 */ val welcomeMessageBetaFinishStepTitle: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaFinishStepTitle & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaHowToReportStepContent
+    extends StObject
+       with strings
+  /* 43 */ val welcomeMessageBetaHowToReportStepContent: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaHowToReportStepContent & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaHowToReportStepTitle
+    extends StObject
+       with strings
+  /* 42 */ val welcomeMessageBetaHowToReportStepTitle: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaHowToReportStepTitle & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaWelcomeStepContent
+    extends StObject
+       with strings
+  /* 41 */ val welcomeMessageBetaWelcomeStepContent: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaWelcomeStepContent & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageBetaWelcomeStepTitle
+    extends StObject
+       with strings
+  /* 40 */ val welcomeMessageBetaWelcomeStepTitle: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageBetaWelcomeStepTitle & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageLiveWelcomeStepContent
+    extends StObject
+       with strings
+  /* 47 */ val welcomeMessageLiveWelcomeStepContent: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageLiveWelcomeStepContent & Double = js.native
+  
+  @js.native
+  sealed trait welcomeMessageLiveWelcomeStepTitle
+    extends StObject
+       with strings
+  /* 46 */ val welcomeMessageLiveWelcomeStepTitle: typingsJapgolly.instabugReactnative.mod.strings.welcomeMessageLiveWelcomeStepTitle & Double = js.native
 }
-

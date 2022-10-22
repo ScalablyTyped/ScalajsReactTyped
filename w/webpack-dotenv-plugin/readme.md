@@ -10,15 +10,12 @@ Use dotenv with webpack.
 | ------------------ | :-------------: |
 | Full name          | webpack-dotenv-plugin |
 | Keywords           | webpack, dotenv, dot, env, environment, variables, plugin |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 188333 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 18139.666666666668 |
+| # stars            | 50.0 |
 
 ## Links
-- [Homepage](https://github.com/nwinch/webpack-dotenv-plugin#readme)
-- [Bugs](https://github.com/nwinch/webpack-dotenv-plugin/issues)
-- [Repository](https://github.com/nwinch/webpack-dotenv-plugin)
 - [Npm](https://www.npmjs.com/package/webpack-dotenv-plugin)
     
 

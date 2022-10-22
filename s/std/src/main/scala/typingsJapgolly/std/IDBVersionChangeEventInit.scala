@@ -1,30 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDBVersionChangeEventInit extends EventInit {
+trait IDBVersionChangeEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var newVersion: js.UndefOr[Double | Null] = js.undefined
+  
+  /* standard dom */
   var oldVersion: js.UndefOr[Double] = js.undefined
 }
-
 object IDBVersionChangeEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    newVersion: Int | Double = null,
-    oldVersion: Int | Double = null
-  ): IDBVersionChangeEventInit = {
+  
+  inline def apply(): IDBVersionChangeEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (newVersion != null) __obj.updateDynamic("newVersion")(newVersion.asInstanceOf[js.Any])
-    if (oldVersion != null) __obj.updateDynamic("oldVersion")(oldVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDBVersionChangeEventInit]
   }
+  
+  extension [Self <: IDBVersionChangeEventInit](x: Self) {
+    
+    inline def setNewVersion(value: Double): Self = StObject.set(x, "newVersion", value.asInstanceOf[js.Any])
+    
+    inline def setNewVersionNull: Self = StObject.set(x, "newVersion", null)
+    
+    inline def setNewVersionUndefined: Self = StObject.set(x, "newVersion", js.undefined)
+    
+    inline def setOldVersion(value: Double): Self = StObject.set(x, "oldVersion", value.asInstanceOf[js.Any])
+    
+    inline def setOldVersionUndefined: Self = StObject.set(x, "oldVersion", js.undefined)
+  }
 }
-

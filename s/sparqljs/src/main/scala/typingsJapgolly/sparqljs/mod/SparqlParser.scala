@@ -1,20 +1,22 @@
 package typingsJapgolly.sparqljs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SparqlParser extends js.Object {
+trait SparqlParser extends StObject {
+  
   def parse(query: String): SparqlQuery
 }
-
 object SparqlParser {
-  @scala.inline
-  def apply(parse: String => CallbackTo[SparqlQuery]): SparqlParser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("parse")(js.Any.fromFunction1((t0: java.lang.String) => parse(t0).runNow()))
+  
+  inline def apply(parse: String => SparqlQuery): SparqlParser = {
+    val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[SparqlParser]
   }
+  
+  extension [Self <: SparqlParser](x: Self) {
+    
+    inline def setParse(value: String => SparqlQuery): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+  }
 }
-

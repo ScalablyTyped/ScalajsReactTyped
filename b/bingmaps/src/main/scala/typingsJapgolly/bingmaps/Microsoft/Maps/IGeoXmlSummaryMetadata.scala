@@ -1,34 +1,46 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGeoXmlSummaryMetadata extends js.Object {
+trait IGeoXmlSummaryMetadata extends StObject {
+  
   /** The bounds of all the shapes and layers in the XML document. */
   var bounds: js.UndefOr[LocationRect] = js.undefined
+  
   /** The description of the content of the XML document. */
   var description: js.UndefOr[String] = js.undefined
+  
   /** Any additional metadata that the XML document may have. i.e. atom:author */
-  var metadata: js.UndefOr[IDictionary[_]] = js.undefined
+  var metadata: js.UndefOr[IDictionary[Any]] = js.undefined
+  
   /** The title or name of the content of the XML document. */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object IGeoXmlSummaryMetadata {
-  @scala.inline
-  def apply(
-    bounds: LocationRect = null,
-    description: String = null,
-    metadata: IDictionary[_] = null,
-    title: String = null
-  ): IGeoXmlSummaryMetadata = {
+  
+  inline def apply(): IGeoXmlSummaryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGeoXmlSummaryMetadata]
   }
+  
+  extension [Self <: IGeoXmlSummaryMetadata](x: Self) {
+    
+    inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setMetadata(value: IDictionary[Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

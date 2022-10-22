@@ -1,17 +1,16 @@
 package typingsJapgolly.protobufjs.minimalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs/minimal", "BufferReader")
 @js.native
-class BufferReader protected ()
+open class BufferReader protected ()
   extends typingsJapgolly.protobufjs.mod.BufferReader {
   /**
     * Constructs a new buffer reader instance.
     * @param buffer Buffer to read from
     */
-  def this(buffer: scala.scalajs.js.typedarray.Uint8Array) = this()
+  def this(buffer: js.typedarray.Uint8Array) = this()
 }
-

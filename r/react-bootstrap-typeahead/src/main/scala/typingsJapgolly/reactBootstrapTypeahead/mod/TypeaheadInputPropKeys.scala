@@ -1,11 +1,10 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.bsSize
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inputProps
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey
@@ -18,34 +17,28 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderToken
   - typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selected
 */
-trait TypeaheadInputPropKeys extends js.Object
-
+trait TypeaheadInputPropKeys extends StObject
 object TypeaheadInputPropKeys {
-  @scala.inline
-  def bsSize: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.bsSize = this.cast("bsSize")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def inputProps: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inputProps = this.cast("inputProps")
-  @scala.inline
-  def labelKey: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = this.cast("labelKey")
-  @scala.inline
-  def multiple: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.multiple = this.cast("multiple")
-  @scala.inline
-  def onBlur: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onBlur = this.cast("onBlur")
-  @scala.inline
-  def onChange: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onChange = this.cast("onChange")
-  @scala.inline
-  def onFocus: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onFocus = this.cast("onFocus")
-  @scala.inline
-  def onKeyDown: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onKeyDown = this.cast("onKeyDown")
-  @scala.inline
-  def placeholder: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.placeholder = this.cast("placeholder")
-  @scala.inline
-  def renderToken: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderToken = this.cast("renderToken")
-  @scala.inline
-  def selected: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selected = this.cast("selected")
+  
+  inline def disabled: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.disabled]
+  
+  inline def inputProps: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inputProps = "inputProps".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.inputProps]
+  
+  inline def labelKey: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey = "labelKey".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.labelKey]
+  
+  inline def multiple: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.multiple = "multiple".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.multiple]
+  
+  inline def onBlur: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onBlur = "onBlur".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onBlur]
+  
+  inline def onChange: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onChange = "onChange".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onChange]
+  
+  inline def onFocus: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onFocus = "onFocus".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onFocus]
+  
+  inline def onKeyDown: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onKeyDown = "onKeyDown".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.onKeyDown]
+  
+  inline def placeholder: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.placeholder = "placeholder".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.placeholder]
+  
+  inline def renderToken: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderToken = "renderToken".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.renderToken]
+  
+  inline def selected: typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selected = "selected".asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.selected]
 }
-

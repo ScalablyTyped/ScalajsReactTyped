@@ -1,98 +1,179 @@
 package typingsJapgolly.gijgo.Types
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatePickerSettings extends js.Object {
+trait DatePickerSettings extends StObject {
+  
   var calendarWeeks: js.UndefOr[Boolean] = js.undefined
+  
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var close: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var disableDates: js.UndefOr[js.Array[_] | js.Function] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
+  
+  var close: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
+  
+  var disableDates: js.UndefOr[js.Array[Any] | js.Function] = js.undefined
+  
   var disableDaysOfWeek: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var footer: js.UndefOr[Boolean] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var header: js.UndefOr[Boolean] = js.undefined
+  
   var icons: js.UndefOr[DatePickerIcons] = js.undefined
+  
   var iconsLibrary: js.UndefOr[String] = js.undefined
+  
   var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var maxDate: js.UndefOr[js.Date | String | js.Function] = js.undefined
+  
   var minDate: js.UndefOr[js.Date | String | js.Function] = js.undefined
+  
   var modal: js.UndefOr[Boolean] = js.undefined
-  var open: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
-  var select: js.UndefOr[js.Function2[/* e */ js.Any, /* type */ String, _]] = js.undefined
+  
+  var open: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
+  
+  var select: js.UndefOr[js.Function2[/* e */ Any, /* type */ String, Any]] = js.undefined
+  
   var selectOtherMonths: js.UndefOr[Boolean] = js.undefined
+  
   var showOnFocus: js.UndefOr[Boolean] = js.undefined
+  
   var showOtherMonths: js.UndefOr[Boolean] = js.undefined
+  
   var showRightIcon: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var uiLibrary: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
+  
   var weekStartDay: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object DatePickerSettings {
-  @scala.inline
-  def apply(
-    calendarWeeks: js.UndefOr[Boolean] = js.undefined,
-    change: /* e */ js.Any => CallbackTo[js.Any] = null,
-    close: /* e */ js.Any => CallbackTo[js.Any] = null,
-    disableDates: js.Array[_] | js.Function = null,
-    disableDaysOfWeek: js.Array[Double] = null,
-    footer: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    header: js.UndefOr[Boolean] = js.undefined,
-    icons: DatePickerIcons = null,
-    iconsLibrary: String = null,
-    keyboardNavigation: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    maxDate: js.Date | String | js.Function = null,
-    minDate: js.Date | String | js.Function = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    open: /* e */ js.Any => CallbackTo[js.Any] = null,
-    select: (/* e */ js.Any, /* type */ String) => CallbackTo[js.Any] = null,
-    selectOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    showOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showOtherMonths: js.UndefOr[Boolean] = js.undefined,
-    showRightIcon: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    uiLibrary: String = null,
-    value: String = null,
-    weekStartDay: Int | Double = null,
-    width: Int | Double = null
-  ): DatePickerSettings = {
+  
+  inline def apply(): DatePickerSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(calendarWeeks)) __obj.updateDynamic("calendarWeeks")(calendarWeeks.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ js.Any) => change(t0).runNow()))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1((t0: /* e */ js.Any) => close(t0).runNow()))
-    if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
-    if (disableDaysOfWeek != null) __obj.updateDynamic("disableDaysOfWeek")(disableDaysOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(header)) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (iconsLibrary != null) __obj.updateDynamic("iconsLibrary")(iconsLibrary.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardNavigation)) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1((t0: /* e */ js.Any) => open(t0).runNow()))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2((t0: /* e */ js.Any, t1: /* type */ java.lang.String) => select(t0, t1).runNow()))
-    if (!js.isUndefined(selectOtherMonths)) __obj.updateDynamic("selectOtherMonths")(selectOtherMonths.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnFocus)) __obj.updateDynamic("showOnFocus")(showOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRightIcon)) __obj.updateDynamic("showRightIcon")(showRightIcon.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (weekStartDay != null) __obj.updateDynamic("weekStartDay")(weekStartDay.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerSettings]
   }
+  
+  extension [Self <: DatePickerSettings](x: Self) {
+    
+    inline def setCalendarWeeks(value: Boolean): Self = StObject.set(x, "calendarWeeks", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarWeeksUndefined: Self = StObject.set(x, "calendarWeeks", js.undefined)
+    
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setClose(value: /* e */ Any => Any): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setDisableDates(value: js.Array[Any] | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    
+    inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
+    
+    inline def setDisableDatesVarargs(value: Any*): Self = StObject.set(x, "disableDates", js.Array(value*))
+    
+    inline def setDisableDaysOfWeek(value: js.Array[Double]): Self = StObject.set(x, "disableDaysOfWeek", value.asInstanceOf[js.Any])
+    
+    inline def setDisableDaysOfWeekUndefined: Self = StObject.set(x, "disableDaysOfWeek", js.undefined)
+    
+    inline def setDisableDaysOfWeekVarargs(value: Double*): Self = StObject.set(x, "disableDaysOfWeek", js.Array(value*))
+    
+    inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setIcons(value: DatePickerIcons): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsLibrary(value: String): Self = StObject.set(x, "iconsLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setIconsLibraryUndefined: Self = StObject.set(x, "iconsLibrary", js.undefined)
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setKeyboardNavigation(value: Boolean): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMaxDate(value: js.Date | String | js.Function): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    
+    inline def setMinDate(value: js.Date | String | js.Function): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    
+    inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+    
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    
+    inline def setOpen(value: /* e */ Any => Any): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setSelect(value: (/* e */ Any, /* type */ String) => Any): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
+    
+    inline def setSelectOtherMonths(value: Boolean): Self = StObject.set(x, "selectOtherMonths", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOtherMonthsUndefined: Self = StObject.set(x, "selectOtherMonths", js.undefined)
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setShowOnFocus(value: Boolean): Self = StObject.set(x, "showOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setShowOnFocusUndefined: Self = StObject.set(x, "showOnFocus", js.undefined)
+    
+    inline def setShowOtherMonths(value: Boolean): Self = StObject.set(x, "showOtherMonths", value.asInstanceOf[js.Any])
+    
+    inline def setShowOtherMonthsUndefined: Self = StObject.set(x, "showOtherMonths", js.undefined)
+    
+    inline def setShowRightIcon(value: Boolean): Self = StObject.set(x, "showRightIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowRightIconUndefined: Self = StObject.set(x, "showRightIcon", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWeekStartDay(value: Double): Self = StObject.set(x, "weekStartDay", value.asInstanceOf[js.Any])
+    
+    inline def setWeekStartDayUndefined: Self = StObject.set(x, "weekStartDay", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

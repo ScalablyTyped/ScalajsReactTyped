@@ -10,10 +10,10 @@ The lodash method `_.escapeRegExp` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.escaperegexp |
 | Keywords           | lodash-modularized, escaperegexp |
-| # releases         | 0 |
-| # dependents       | 152 |
-| # downloads        | 31490280 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8754120.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

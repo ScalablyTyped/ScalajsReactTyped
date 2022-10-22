@@ -11,9 +11,9 @@ An AMD loader plugin for detecting DOM ready. An AMD loader plugin for detecting
 | Full name          | requirejs-domready |
 | Keywords           | requirejs |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 90955 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4612.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/requirejs/domReady#readme)

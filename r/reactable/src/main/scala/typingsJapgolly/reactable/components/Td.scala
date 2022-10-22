@@ -1,40 +1,31 @@
 package typingsJapgolly.reactable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactable.mod.TdProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Td {
-  def apply(
-    column: String,
-    data: js.Any = null,
-    value: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TdProperties, typingsJapgolly.reactable.mod.Td, Unit, TdProperties] = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
   
-      if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactable.mod.TdProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactable.mod.Td](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactable.mod.TdProperties])(children: _*)
+  inline def apply(column: String): Builder = {
+    val __props = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TdProperties]))
   }
+  
   @JSImport("reactable", "Td")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactable.mod.Td] {
+    
+    inline def data(value: Any): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TdProperties): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

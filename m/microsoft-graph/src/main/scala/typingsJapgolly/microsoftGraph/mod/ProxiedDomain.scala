@@ -1,23 +1,34 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProxiedDomain extends js.Object {
+trait ProxiedDomain extends StObject {
+  
   // The IP address or FQDN
   var ipAddressOrFQDN: js.UndefOr[String] = js.undefined
+  
   // Proxy IP or FQDN
-  var proxy: js.UndefOr[String] = js.undefined
+  var proxy: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ProxiedDomain {
-  @scala.inline
-  def apply(ipAddressOrFQDN: String = null, proxy: String = null): ProxiedDomain = {
+  
+  inline def apply(): ProxiedDomain = {
     val __obj = js.Dynamic.literal()
-    if (ipAddressOrFQDN != null) __obj.updateDynamic("ipAddressOrFQDN")(ipAddressOrFQDN.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxiedDomain]
   }
+  
+  extension [Self <: ProxiedDomain](x: Self) {
+    
+    inline def setIpAddressOrFQDN(value: String): Self = StObject.set(x, "ipAddressOrFQDN", value.asInstanceOf[js.Any])
+    
+    inline def setIpAddressOrFQDNUndefined: Self = StObject.set(x, "ipAddressOrFQDN", js.undefined)
+    
+    inline def setProxy(value: NullableOption[String]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    
+    inline def setProxyNull: Self = StObject.set(x, "proxy", null)
+    
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+  }
 }
-

@@ -1,21 +1,28 @@
 package typingsJapgolly.dav.mod
 
-import typingsJapgolly.dav.davStrings.DAVColon
-import typingsJapgolly.dav.davStrings.httpColonSlashSlashappleDotcomSlashnsSlashicalSlash
-import typingsJapgolly.dav.davStrings.httpColonSlashSlashcalendarserverDotorgSlashnsSlash
-import typingsJapgolly.dav.davStrings.urnColonietfColonparamsColonxmlColonnsColoncaldav
-import typingsJapgolly.dav.davStrings.urnColonietfColonparamsColonxmlColonnsColoncarddav
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dav", "ns")
-@js.native
-object ns extends js.Object {
-  val CALDAV: urnColonietfColonparamsColonxmlColonnsColoncaldav = js.native
-  val CALDAV_APPLE: httpColonSlashSlashappleDotcomSlashnsSlashicalSlash = js.native
-  val CALENDAR_SERVER: httpColonSlashSlashcalendarserverDotorgSlashnsSlash = js.native
-  val CARDDAV: urnColonietfColonparamsColonxmlColonnsColoncarddav = js.native
-  val DAV: DAVColon = js.native
+object ns {
+  
+  @JSImport("dav", "ns.CALDAV")
+  @js.native
+  val CALDAV: /* "urn:ietf:params:xml:ns:caldav" */ String = js.native
+  
+  @JSImport("dav", "ns.CALDAV_APPLE")
+  @js.native
+  val CALDAV_APPLE: /* "http://apple.com/ns/ical/" */ String = js.native
+  
+  @JSImport("dav", "ns.CALENDAR_SERVER")
+  @js.native
+  val CALENDAR_SERVER: /* "http://calendarserver.org/ns/" */ String = js.native
+  
+  @JSImport("dav", "ns.CARDDAV")
+  @js.native
+  val CARDDAV: /* "urn:ietf:params:xml:ns:carddav" */ String = js.native
+  
+  @JSImport("dav", "ns.DAV")
+  @js.native
+  val DAV: /* "DAV:" */ String = js.native
 }
-

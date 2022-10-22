@@ -1,12 +1,14 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "ConnectionStrategy")
-@js.native
-object ConnectionStrategy extends js.Object {
-  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ Boolean = js.native
+object ConnectionStrategy {
+  
+  @JSImport("vscode-languageserver", "ConnectionStrategy")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def is(value: Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/common/connection.ConnectionStrategy */ Boolean]
 }
-

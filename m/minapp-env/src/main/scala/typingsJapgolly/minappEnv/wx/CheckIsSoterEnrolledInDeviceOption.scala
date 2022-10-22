@@ -5,11 +5,12 @@ import typingsJapgolly.minappEnv.Array
 import typingsJapgolly.minappEnv.minappEnvStrings.facial
 import typingsJapgolly.minappEnv.minappEnvStrings.fingerPrint
 import typingsJapgolly.minappEnv.minappEnvStrings.speech
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CheckIsSoterEnrolledInDeviceOption extends js.Object {
+trait CheckIsSoterEnrolledInDeviceOption extends StObject {
+  
   /** 认证方式
     *
     * 可选值：
@@ -17,27 +18,37 @@ trait CheckIsSoterEnrolledInDeviceOption extends js.Object {
     * - 'facial': 人脸识别（暂未支持）;
     * - 'speech': 声纹识别（暂未支持）; */
   var checkAuthMode: Array[fingerPrint | facial | speech]
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[CheckIsSoterEnrolledInDeviceCompleteCallback] = js.undefined
+  
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[CheckIsSoterEnrolledInDeviceFailCallback] = js.undefined
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[CheckIsSoterEnrolledInDeviceSuccessCallback] = js.undefined
 }
-
 object CheckIsSoterEnrolledInDeviceOption {
-  @scala.inline
-  def apply(
-    checkAuthMode: Array[fingerPrint | facial | speech],
-    complete: /* res */ GeneralCallbackResult => Callback = null,
-    fail: /* res */ GeneralCallbackResult => Callback = null,
-    success: /* result */ CheckIsSoterEnrolledInDeviceSuccessCallbackResult => Callback = null
-  ): CheckIsSoterEnrolledInDeviceOption = {
+  
+  inline def apply(checkAuthMode: Array[fingerPrint | facial | speech]): CheckIsSoterEnrolledInDeviceOption = {
     val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.minappEnv.wx.CheckIsSoterEnrolledInDeviceSuccessCallbackResult) => success(t0).runNow()))
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceOption]
   }
+  
+  extension [Self <: CheckIsSoterEnrolledInDeviceOption](x: Self) {
+    
+    inline def setCheckAuthMode(value: Array[fingerPrint | facial | speech]): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
+    
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setSuccess(value: /* result */ CheckIsSoterEnrolledInDeviceSuccessCallbackResult => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* result */ CheckIsSoterEnrolledInDeviceSuccessCallbackResult) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

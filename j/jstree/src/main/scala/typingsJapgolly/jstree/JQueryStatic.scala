@@ -1,10 +1,11 @@
 package typingsJapgolly.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryStatic extends js.Object {
+trait JQueryStatic extends StObject {
+  
   /**
     * holds all jstree related functions and variables,
     * including the actual class and methods to create,
@@ -13,19 +14,27 @@ trait JQueryStatic extends js.Object {
     * @type {JSTreeStatic}
     */
   var jstree: js.UndefOr[JSTreeStatic] = js.undefined
+  
   /**
     * helpers
     */
   var vakata: js.UndefOr[VakataStatic] = js.undefined
 }
-
 object JQueryStatic {
-  @scala.inline
-  def apply(jstree: JSTreeStatic = null, vakata: VakataStatic = null): JQueryStatic = {
+  
+  inline def apply(): JQueryStatic = {
     val __obj = js.Dynamic.literal()
-    if (jstree != null) __obj.updateDynamic("jstree")(jstree.asInstanceOf[js.Any])
-    if (vakata != null) __obj.updateDynamic("vakata")(vakata.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
+  
+  extension [Self <: JQueryStatic](x: Self) {
+    
+    inline def setJstree(value: JSTreeStatic): Self = StObject.set(x, "jstree", value.asInstanceOf[js.Any])
+    
+    inline def setJstreeUndefined: Self = StObject.set(x, "jstree", js.undefined)
+    
+    inline def setVakata(value: VakataStatic): Self = StObject.set(x, "vakata", value.asInstanceOf[js.Any])
+    
+    inline def setVakataUndefined: Self = StObject.set(x, "vakata", js.undefined)
+  }
 }
-

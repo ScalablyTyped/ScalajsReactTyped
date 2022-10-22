@@ -1,7 +1,7 @@
 
 # Scala.js typings for ipaddr_dot_js
 
-Typings are for version 1.9.0
+Typings are for version 2.0.1
 
 ## Library description:
 A library for manipulating IPv4 and IPv6 addresses in JavaScript.
@@ -10,10 +10,10 @@ A library for manipulating IPv4 and IPv6 addresses in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | ipaddr.js |
 | Keywords           | ip, ipv4, ipv6 |
-| # releases         | 7 |
-| # dependents       | 250 |
-| # downloads        | 495095865 |
-| # stars            | 18 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.11347562E8 |
+| # stars            | 468.0 |
 
 ## Links
 - [Homepage](https://github.com/whitequark/ipaddr.js#readme)

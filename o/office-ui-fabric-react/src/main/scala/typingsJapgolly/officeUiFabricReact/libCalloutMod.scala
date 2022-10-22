@@ -1,92 +1,186 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.focusTrapCalloutTypesMod.IFocusTrapCalloutProps
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`0`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`10`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`11`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`12`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`13`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`1`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`2`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`3`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`4`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`5`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`6`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`7`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`8`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactNumbers.`9`
+import typingsJapgolly.officeUiFabricReact.anon.BeakWidth
+import typingsJapgolly.officeUiFabricReact.libComponentsCalloutCalloutDottypesMod.ICalloutProps
+import typingsJapgolly.officeUiFabricReact.libComponentsCalloutFocusTrapCalloutDottypesMod.IFocusTrapCalloutProps
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`0`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`10`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`11`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`12`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`13`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`1`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`2`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`3`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`4`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`5`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`6`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`7`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`8`
+import typingsJapgolly.officeUiFabricReact.officeUiFabricReactInts.`9`
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Callout", JSImport.Namespace)
-@js.native
-object libCalloutMod extends js.Object {
-  @js.native
-  class Callout ()
-    extends typingsJapgolly.officeUiFabricReact.calloutCalloutMod.Callout
+object libCalloutMod {
   
-  val FocusTrapCallout: FunctionComponent[IFocusTrapCalloutProps] = js.native
+  @JSImport("office-ui-fabric-react/lib/Callout", "Callout")
   @js.native
-  object DirectionalHint extends js.Object {
+  open class Callout protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsCalloutMod.Callout {
+    def this(props: ICalloutProps) = this()
     /**
-      * Appear below the target element, aligning with the target element such that the callout tends toward the center of the screen.
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
       */
-    var bottomAutoEdge: `7` = js.native
+    def this(props: ICalloutProps, context: Any) = this()
+  }
+  
+  @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContent")
+  @js.native
+  val CalloutContent: FunctionComponent[ICalloutProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContentBase")
+  @js.native
+  open class CalloutContentBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsCalloutMod.CalloutContentBase {
+    def this(props: ICalloutProps) = this()
+  }
+  /* static members */
+  object CalloutContentBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContentBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Callout", "CalloutContentBase.defaultProps")
+    @js.native
+    def defaultProps: BeakWidth = js.native
+    inline def defaultProps_=(x: BeakWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
+  
+  object DirectionalHint {
+    
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Appear below the target element, aligning with the target element such that the callout tends toward
+      * the center of the screen.
+      */
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.bottomAutoEdge")
+    @js.native
+    def bottomAutoEdge: `7` = js.native
+    inline def bottomAutoEdge_=(x: `7`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomAutoEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear below the target element, with the centers of the callout and target aligning.
       */
-    var bottomCenter: `5` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.bottomCenter")
+    @js.native
+    def bottomCenter: `5` = js.native
+    inline def bottomCenter_=(x: `5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomCenter")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear below the target element, with the left edges of the callout and target aligning.
       */
-    var bottomLeftEdge: `4` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.bottomLeftEdge")
+    @js.native
+    def bottomLeftEdge: `4` = js.native
+    inline def bottomLeftEdge_=(x: `4`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomLeftEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear below the target element, with the right edges of the callout and target aligning.
       */
-    var bottomRightEdge: `6` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.bottomRightEdge")
+    @js.native
+    def bottomRightEdge: `6` = js.native
+    inline def bottomRightEdge_=(x: `6`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottomRightEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the left of the target element, with the bottom edges of the callout and target aligning.
       */
-    var leftBottomEdge: `10` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.leftBottomEdge")
+    @js.native
+    def leftBottomEdge: `10` = js.native
+    inline def leftBottomEdge_=(x: `10`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftBottomEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the left of the target element, with the centers of the callout and target aligning.
       */
-    var leftCenter: `9` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.leftCenter")
+    @js.native
+    def leftCenter: `9` = js.native
+    inline def leftCenter_=(x: `9`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftCenter")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the left of the target element, with the top edges of the callout and target aligning.
       */
-    var leftTopEdge: `8` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.leftTopEdge")
+    @js.native
+    def leftTopEdge: `8` = js.native
+    inline def leftTopEdge_=(x: `8`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("leftTopEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the right of the target element, with the bottom edges of the callout and target aligning.
       */
-    var rightBottomEdge: `13` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.rightBottomEdge")
+    @js.native
+    def rightBottomEdge: `13` = js.native
+    inline def rightBottomEdge_=(x: `13`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightBottomEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the right of the target element, with the centers of the callout and target aligning.
       */
-    var rightCenter: `12` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.rightCenter")
+    @js.native
+    def rightCenter: `12` = js.native
+    inline def rightCenter_=(x: `12`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightCenter")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear to the right of the target element, with the top edges of the callout and target aligning.
       */
-    var rightTopEdge: `11` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.rightTopEdge")
+    @js.native
+    def rightTopEdge: `11` = js.native
+    inline def rightTopEdge_=(x: `11`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rightTopEdge")(x.asInstanceOf[js.Any])
+    
     /**
-      * Appear above the target element, aligning with the target element such that the callout tends toward the center of the screen.
+      * Appear above the target element, aligning with the target element such that the callout tends toward
+      * the center of the screen.
       */
-    var topAutoEdge: `3` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.topAutoEdge")
+    @js.native
+    def topAutoEdge: `3` = js.native
+    inline def topAutoEdge_=(x: `3`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topAutoEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear above the target element, with the centers of the callout and target aligning.
       */
-    var topCenter: `1` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.topCenter")
+    @js.native
+    def topCenter: `1` = js.native
+    inline def topCenter_=(x: `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topCenter")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear above the target element, with the left edges of the callout and target aligning.
       */
-    var topLeftEdge: `0` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.topLeftEdge")
+    @js.native
+    def topLeftEdge: `0` = js.native
+    inline def topLeftEdge_=(x: `0`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topLeftEdge")(x.asInstanceOf[js.Any])
+    
     /**
       * Appear above the target element, with the right edges of the callout and target aligning.
       */
-    var topRightEdge: `2` = js.native
+    @JSImport("office-ui-fabric-react/lib/Callout", "DirectionalHint.topRightEdge")
+    @js.native
+    def topRightEdge: `2` = js.native
+    inline def topRightEdge_=(x: `2`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("topRightEdge")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Callout", "FocusTrapCallout")
+  @js.native
+  val FocusTrapCallout: FunctionComponent[IFocusTrapCalloutProps] = js.native
 }
-

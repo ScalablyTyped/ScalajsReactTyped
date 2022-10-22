@@ -1,7 +1,7 @@
 
 # Scala.js typings for dmg-builder
 
-Typings are for version 21.2.0
+Typings are for version 23.6.0
 
 ## Library description:
 Utilities to build DMG. Used by [electron-builder](https://github.com/electron-userland/electron-builder).
@@ -10,10 +10,10 @@ Utilities to build DMG. Used by [electron-builder](https://github.com/electron-u
 | ------------------ | :-------------: |
 | Full name          | dmg-builder |
 | Keywords           | - |
-| # releases         | 86 |
-| # dependents       | 6 |
-| # downloads        | 3860685 |
-| # stars            | 0 |
+| # releases         | 61 |
+| # dependents       | 0.0 |
+| # downloads        | 1022849.3333333334 |
+| # stars            | 12336.0 |
 
 ## Links
 - [Homepage](https://github.com/electron-userland/electron-builder)

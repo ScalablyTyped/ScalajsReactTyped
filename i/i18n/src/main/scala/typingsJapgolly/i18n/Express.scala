@@ -1,24 +1,14 @@
 package typingsJapgolly.i18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Express")
-@js.native
-object Express extends js.Object {
-  @js.native
-  trait Request extends i18nAPI {
-    var language: String = js.native
-    var languages: js.Array[String] = js.native
-    var region: String = js.native
-    var regions: js.Array[String] = js.native
-  }
+object Express {
   
-  @js.native
-  trait Response extends i18nAPI {
-    var locals: i18nAPI = js.native
-  }
+  // tslint:disable-next-line:no-empty-interface
+  type Request = i18nAPI
   
+  // tslint:disable-next-line:no-empty-interface
+  type Response = i18nAPI
 }
-

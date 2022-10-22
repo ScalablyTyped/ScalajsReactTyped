@@ -1,2513 +1,2084 @@
 package typingsJapgolly.sortablejs
 
 import typingsJapgolly.sortablejs.mod.Direction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortablejsStrings {
+  
+  @js.native
+  sealed trait accentColor extends StObject
+  inline def accentColor: accentColor = "accentColor".asInstanceOf[accentColor]
+  
+  @js.native
+  sealed trait alignContent extends StObject
+  inline def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
+  
+  @js.native
+  sealed trait alignItems extends StObject
+  inline def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
+  
+  @js.native
+  sealed trait alignSelf extends StObject
+  inline def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
+  
+  @js.native
+  sealed trait alignmentBaseline extends StObject
+  inline def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
+  
+  @js.native
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
+  
+  @js.native
+  sealed trait animation extends StObject
+  inline def animation: animation = "animation".asInstanceOf[animation]
+  
+  @js.native
+  sealed trait animationDelay extends StObject
+  inline def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
+  
   @js.native
-  sealed trait alignContent extends js.Object
+  sealed trait animationDirection extends StObject
+  inline def animationDirection: animationDirection = "animationDirection".asInstanceOf[animationDirection]
   
   @js.native
-  sealed trait alignItems extends js.Object
+  sealed trait animationDuration extends StObject
+  inline def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
   
   @js.native
-  sealed trait alignSelf extends js.Object
+  sealed trait animationFillMode extends StObject
+  inline def animationFillMode: animationFillMode = "animationFillMode".asInstanceOf[animationFillMode]
   
   @js.native
-  sealed trait alignmentBaseline extends js.Object
+  sealed trait animationIterationCount extends StObject
+  inline def animationIterationCount: animationIterationCount = "animationIterationCount".asInstanceOf[animationIterationCount]
   
   @js.native
-  sealed trait animation extends js.Object
+  sealed trait animationName extends StObject
+  inline def animationName: animationName = "animationName".asInstanceOf[animationName]
   
   @js.native
-  sealed trait animationDelay extends js.Object
+  sealed trait animationPlayState extends StObject
+  inline def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
   
   @js.native
-  sealed trait animationDirection extends js.Object
+  sealed trait animationTimingFunction extends StObject
+  inline def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
   
   @js.native
-  sealed trait animationDuration extends js.Object
+  sealed trait appearance extends StObject
+  inline def appearance: appearance = "appearance".asInstanceOf[appearance]
   
   @js.native
-  sealed trait animationFillMode extends js.Object
+  sealed trait aspectRatio extends StObject
+  inline def aspectRatio: aspectRatio = "aspectRatio".asInstanceOf[aspectRatio]
   
   @js.native
-  sealed trait animationIterationCount extends js.Object
+  sealed trait backfaceVisibility extends StObject
+  inline def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
   
   @js.native
-  sealed trait animationName extends js.Object
+  sealed trait background extends StObject
+  inline def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait animationPlayState extends js.Object
+  sealed trait backgroundAttachment extends StObject
+  inline def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
   
   @js.native
-  sealed trait animationTimingFunction extends js.Object
+  sealed trait backgroundBlendMode extends StObject
+  inline def backgroundBlendMode: backgroundBlendMode = "backgroundBlendMode".asInstanceOf[backgroundBlendMode]
   
   @js.native
-  sealed trait backfaceVisibility extends js.Object
+  sealed trait backgroundClip extends StObject
+  inline def backgroundClip: backgroundClip = "backgroundClip".asInstanceOf[backgroundClip]
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait backgroundColor extends StObject
+  inline def backgroundColor: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
   
   @js.native
-  sealed trait backgroundAttachment extends js.Object
+  sealed trait backgroundImage extends StObject
+  inline def backgroundImage: backgroundImage = "backgroundImage".asInstanceOf[backgroundImage]
   
   @js.native
-  sealed trait backgroundClip extends js.Object
+  sealed trait backgroundOrigin extends StObject
+  inline def backgroundOrigin: backgroundOrigin = "backgroundOrigin".asInstanceOf[backgroundOrigin]
   
   @js.native
-  sealed trait backgroundColor extends js.Object
+  sealed trait backgroundPosition extends StObject
+  inline def backgroundPosition: backgroundPosition = "backgroundPosition".asInstanceOf[backgroundPosition]
   
   @js.native
-  sealed trait backgroundImage extends js.Object
+  sealed trait backgroundPositionX extends StObject
+  inline def backgroundPositionX: backgroundPositionX = "backgroundPositionX".asInstanceOf[backgroundPositionX]
   
   @js.native
-  sealed trait backgroundOrigin extends js.Object
+  sealed trait backgroundPositionY extends StObject
+  inline def backgroundPositionY: backgroundPositionY = "backgroundPositionY".asInstanceOf[backgroundPositionY]
   
   @js.native
-  sealed trait backgroundPosition extends js.Object
+  sealed trait backgroundRepeat extends StObject
+  inline def backgroundRepeat: backgroundRepeat = "backgroundRepeat".asInstanceOf[backgroundRepeat]
   
   @js.native
-  sealed trait backgroundPositionX extends js.Object
+  sealed trait backgroundSize extends StObject
+  inline def backgroundSize: backgroundSize = "backgroundSize".asInstanceOf[backgroundSize]
   
   @js.native
-  sealed trait backgroundPositionY extends js.Object
+  sealed trait baselineShift extends StObject
+  inline def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
   
   @js.native
-  sealed trait backgroundRepeat extends js.Object
+  sealed trait blockSize extends StObject
+  inline def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
   
   @js.native
-  sealed trait backgroundSize extends js.Object
+  sealed trait border extends StObject
+  inline def border: border = "border".asInstanceOf[border]
   
   @js.native
-  sealed trait baselineShift extends js.Object
+  sealed trait borderBlock extends StObject
+  inline def borderBlock: borderBlock = "borderBlock".asInstanceOf[borderBlock]
   
   @js.native
-  sealed trait blockSize extends js.Object
+  sealed trait borderBlockColor extends StObject
+  inline def borderBlockColor: borderBlockColor = "borderBlockColor".asInstanceOf[borderBlockColor]
   
   @js.native
-  sealed trait border extends js.Object
+  sealed trait borderBlockEnd extends StObject
+  inline def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
   
   @js.native
-  sealed trait borderBlockEnd extends js.Object
+  sealed trait borderBlockEndColor extends StObject
+  inline def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
   
   @js.native
-  sealed trait borderBlockEndColor extends js.Object
+  sealed trait borderBlockEndStyle extends StObject
+  inline def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
   
   @js.native
-  sealed trait borderBlockEndStyle extends js.Object
+  sealed trait borderBlockEndWidth extends StObject
+  inline def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
   
   @js.native
-  sealed trait borderBlockEndWidth extends js.Object
+  sealed trait borderBlockStart extends StObject
+  inline def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
   
   @js.native
-  sealed trait borderBlockStart extends js.Object
+  sealed trait borderBlockStartColor extends StObject
+  inline def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
   
   @js.native
-  sealed trait borderBlockStartColor extends js.Object
+  sealed trait borderBlockStartStyle extends StObject
+  inline def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
   
   @js.native
-  sealed trait borderBlockStartStyle extends js.Object
+  sealed trait borderBlockStartWidth extends StObject
+  inline def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
   
   @js.native
-  sealed trait borderBlockStartWidth extends js.Object
+  sealed trait borderBlockStyle extends StObject
+  inline def borderBlockStyle: borderBlockStyle = "borderBlockStyle".asInstanceOf[borderBlockStyle]
   
   @js.native
-  sealed trait borderBottom extends js.Object
+  sealed trait borderBlockWidth extends StObject
+  inline def borderBlockWidth: borderBlockWidth = "borderBlockWidth".asInstanceOf[borderBlockWidth]
   
   @js.native
-  sealed trait borderBottomColor extends js.Object
+  sealed trait borderBottom extends StObject
+  inline def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
   
   @js.native
-  sealed trait borderBottomLeftRadius extends js.Object
+  sealed trait borderBottomColor extends StObject
+  inline def borderBottomColor: borderBottomColor = "borderBottomColor".asInstanceOf[borderBottomColor]
   
   @js.native
-  sealed trait borderBottomRightRadius extends js.Object
+  sealed trait borderBottomLeftRadius extends StObject
+  inline def borderBottomLeftRadius: borderBottomLeftRadius = "borderBottomLeftRadius".asInstanceOf[borderBottomLeftRadius]
   
   @js.native
-  sealed trait borderBottomStyle extends js.Object
+  sealed trait borderBottomRightRadius extends StObject
+  inline def borderBottomRightRadius: borderBottomRightRadius = "borderBottomRightRadius".asInstanceOf[borderBottomRightRadius]
   
   @js.native
-  sealed trait borderBottomWidth extends js.Object
+  sealed trait borderBottomStyle extends StObject
+  inline def borderBottomStyle: borderBottomStyle = "borderBottomStyle".asInstanceOf[borderBottomStyle]
   
   @js.native
-  sealed trait borderCollapse extends js.Object
+  sealed trait borderBottomWidth extends StObject
+  inline def borderBottomWidth: borderBottomWidth = "borderBottomWidth".asInstanceOf[borderBottomWidth]
   
   @js.native
-  sealed trait borderColor extends js.Object
+  sealed trait borderCollapse extends StObject
+  inline def borderCollapse: borderCollapse = "borderCollapse".asInstanceOf[borderCollapse]
   
   @js.native
-  sealed trait borderImage extends js.Object
+  sealed trait borderColor extends StObject
+  inline def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
   
   @js.native
-  sealed trait borderImageOutset extends js.Object
+  sealed trait borderEndEndRadius extends StObject
+  inline def borderEndEndRadius: borderEndEndRadius = "borderEndEndRadius".asInstanceOf[borderEndEndRadius]
   
   @js.native
-  sealed trait borderImageRepeat extends js.Object
+  sealed trait borderEndStartRadius extends StObject
+  inline def borderEndStartRadius: borderEndStartRadius = "borderEndStartRadius".asInstanceOf[borderEndStartRadius]
   
   @js.native
-  sealed trait borderImageSlice extends js.Object
+  sealed trait borderImage extends StObject
+  inline def borderImage: borderImage = "borderImage".asInstanceOf[borderImage]
   
   @js.native
-  sealed trait borderImageSource extends js.Object
+  sealed trait borderImageOutset extends StObject
+  inline def borderImageOutset: borderImageOutset = "borderImageOutset".asInstanceOf[borderImageOutset]
   
   @js.native
-  sealed trait borderImageWidth extends js.Object
+  sealed trait borderImageRepeat extends StObject
+  inline def borderImageRepeat: borderImageRepeat = "borderImageRepeat".asInstanceOf[borderImageRepeat]
   
   @js.native
-  sealed trait borderInlineEnd extends js.Object
+  sealed trait borderImageSlice extends StObject
+  inline def borderImageSlice: borderImageSlice = "borderImageSlice".asInstanceOf[borderImageSlice]
   
   @js.native
-  sealed trait borderInlineEndColor extends js.Object
+  sealed trait borderImageSource extends StObject
+  inline def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
   
   @js.native
-  sealed trait borderInlineEndStyle extends js.Object
+  sealed trait borderImageWidth extends StObject
+  inline def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
   
   @js.native
-  sealed trait borderInlineEndWidth extends js.Object
+  sealed trait borderInline extends StObject
+  inline def borderInline: borderInline = "borderInline".asInstanceOf[borderInline]
   
   @js.native
-  sealed trait borderInlineStart extends js.Object
+  sealed trait borderInlineColor extends StObject
+  inline def borderInlineColor: borderInlineColor = "borderInlineColor".asInstanceOf[borderInlineColor]
   
   @js.native
-  sealed trait borderInlineStartColor extends js.Object
+  sealed trait borderInlineEnd extends StObject
+  inline def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
   
   @js.native
-  sealed trait borderInlineStartStyle extends js.Object
+  sealed trait borderInlineEndColor extends StObject
+  inline def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
   
   @js.native
-  sealed trait borderInlineStartWidth extends js.Object
+  sealed trait borderInlineEndStyle extends StObject
+  inline def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
   
   @js.native
-  sealed trait borderLeft extends js.Object
+  sealed trait borderInlineEndWidth extends StObject
+  inline def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
   
   @js.native
-  sealed trait borderLeftColor extends js.Object
+  sealed trait borderInlineStart extends StObject
+  inline def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
   
   @js.native
-  sealed trait borderLeftStyle extends js.Object
+  sealed trait borderInlineStartColor extends StObject
+  inline def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
   
   @js.native
-  sealed trait borderLeftWidth extends js.Object
+  sealed trait borderInlineStartStyle extends StObject
+  inline def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
   
   @js.native
-  sealed trait borderRadius extends js.Object
+  sealed trait borderInlineStartWidth extends StObject
+  inline def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
   
   @js.native
-  sealed trait borderRight extends js.Object
+  sealed trait borderInlineStyle extends StObject
+  inline def borderInlineStyle: borderInlineStyle = "borderInlineStyle".asInstanceOf[borderInlineStyle]
   
   @js.native
-  sealed trait borderRightColor extends js.Object
+  sealed trait borderInlineWidth extends StObject
+  inline def borderInlineWidth: borderInlineWidth = "borderInlineWidth".asInstanceOf[borderInlineWidth]
   
   @js.native
-  sealed trait borderRightStyle extends js.Object
+  sealed trait borderLeft extends StObject
+  inline def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
   
   @js.native
-  sealed trait borderRightWidth extends js.Object
+  sealed trait borderLeftColor extends StObject
+  inline def borderLeftColor: borderLeftColor = "borderLeftColor".asInstanceOf[borderLeftColor]
   
   @js.native
-  sealed trait borderSpacing extends js.Object
+  sealed trait borderLeftStyle extends StObject
+  inline def borderLeftStyle: borderLeftStyle = "borderLeftStyle".asInstanceOf[borderLeftStyle]
   
   @js.native
-  sealed trait borderStyle extends js.Object
+  sealed trait borderLeftWidth extends StObject
+  inline def borderLeftWidth: borderLeftWidth = "borderLeftWidth".asInstanceOf[borderLeftWidth]
   
   @js.native
-  sealed trait borderTop extends js.Object
+  sealed trait borderRadius extends StObject
+  inline def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
   
   @js.native
-  sealed trait borderTopColor extends js.Object
+  sealed trait borderRight extends StObject
+  inline def borderRight: borderRight = "borderRight".asInstanceOf[borderRight]
   
   @js.native
-  sealed trait borderTopLeftRadius extends js.Object
+  sealed trait borderRightColor extends StObject
+  inline def borderRightColor: borderRightColor = "borderRightColor".asInstanceOf[borderRightColor]
   
   @js.native
-  sealed trait borderTopRightRadius extends js.Object
+  sealed trait borderRightStyle extends StObject
+  inline def borderRightStyle: borderRightStyle = "borderRightStyle".asInstanceOf[borderRightStyle]
   
   @js.native
-  sealed trait borderTopStyle extends js.Object
+  sealed trait borderRightWidth extends StObject
+  inline def borderRightWidth: borderRightWidth = "borderRightWidth".asInstanceOf[borderRightWidth]
   
   @js.native
-  sealed trait borderTopWidth extends js.Object
+  sealed trait borderSpacing extends StObject
+  inline def borderSpacing: borderSpacing = "borderSpacing".asInstanceOf[borderSpacing]
   
   @js.native
-  sealed trait borderWidth extends js.Object
+  sealed trait borderStartEndRadius extends StObject
+  inline def borderStartEndRadius: borderStartEndRadius = "borderStartEndRadius".asInstanceOf[borderStartEndRadius]
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait borderStartStartRadius extends StObject
+  inline def borderStartStartRadius: borderStartStartRadius = "borderStartStartRadius".asInstanceOf[borderStartStartRadius]
   
   @js.native
-  sealed trait boxShadow extends js.Object
+  sealed trait borderStyle extends StObject
+  inline def borderStyle: borderStyle = "borderStyle".asInstanceOf[borderStyle]
   
   @js.native
-  sealed trait boxSizing extends js.Object
+  sealed trait borderTop extends StObject
+  inline def borderTop: borderTop = "borderTop".asInstanceOf[borderTop]
   
   @js.native
-  sealed trait breakAfter extends js.Object
+  sealed trait borderTopColor extends StObject
+  inline def borderTopColor: borderTopColor = "borderTopColor".asInstanceOf[borderTopColor]
   
   @js.native
-  sealed trait breakBefore extends js.Object
+  sealed trait borderTopLeftRadius extends StObject
+  inline def borderTopLeftRadius: borderTopLeftRadius = "borderTopLeftRadius".asInstanceOf[borderTopLeftRadius]
   
   @js.native
-  sealed trait breakInside extends js.Object
+  sealed trait borderTopRightRadius extends StObject
+  inline def borderTopRightRadius: borderTopRightRadius = "borderTopRightRadius".asInstanceOf[borderTopRightRadius]
   
   @js.native
-  sealed trait bubbleScroll extends js.Object
+  sealed trait borderTopStyle extends StObject
+  inline def borderTopStyle: borderTopStyle = "borderTopStyle".asInstanceOf[borderTopStyle]
   
   @js.native
-  sealed trait captionSide extends js.Object
+  sealed trait borderTopWidth extends StObject
+  inline def borderTopWidth: borderTopWidth = "borderTopWidth".asInstanceOf[borderTopWidth]
   
   @js.native
-  sealed trait caretColor extends js.Object
+  sealed trait borderWidth extends StObject
+  inline def borderWidth: borderWidth = "borderWidth".asInstanceOf[borderWidth]
   
   @js.native
-  sealed trait chosenClass extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait boxShadow extends StObject
+  inline def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
   
   @js.native
-  sealed trait clip extends js.Object
+  sealed trait boxSizing extends StObject
+  inline def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
   
   @js.native
-  sealed trait clipPath extends js.Object
+  sealed trait breakAfter extends StObject
+  inline def breakAfter: breakAfter = "breakAfter".asInstanceOf[breakAfter]
   
   @js.native
-  sealed trait clipRule extends js.Object
+  sealed trait breakBefore extends StObject
+  inline def breakBefore: breakBefore = "breakBefore".asInstanceOf[breakBefore]
   
   @js.native
-  sealed trait clone extends js.Object
+  sealed trait breakInside extends StObject
+  inline def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait bubbleScroll extends StObject
+  inline def bubbleScroll: bubbleScroll = "bubbleScroll".asInstanceOf[bubbleScroll]
   
   @js.native
-  sealed trait colorInterpolation extends js.Object
+  sealed trait captionSide extends StObject
+  inline def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
   
   @js.native
-  sealed trait colorInterpolationFilters extends js.Object
+  sealed trait caretColor extends StObject
+  inline def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
   
   @js.native
-  sealed trait columnCount extends js.Object
+  sealed trait chosenClass extends StObject
+  inline def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
   
   @js.native
-  sealed trait columnFill extends js.Object
+  sealed trait clear extends StObject
+  inline def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait columnGap extends js.Object
+  sealed trait clip extends StObject
+  inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait columnRule extends js.Object
+  sealed trait clipPath extends StObject
+  inline def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
   
   @js.native
-  sealed trait columnRuleColor extends js.Object
+  sealed trait clipRule extends StObject
+  inline def clipRule: clipRule = "clipRule".asInstanceOf[clipRule]
   
   @js.native
-  sealed trait columnRuleStyle extends js.Object
+  sealed trait clone extends StObject
   
   @js.native
-  sealed trait columnRuleWidth extends js.Object
+  sealed trait color extends StObject
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait columnSpan extends js.Object
+  sealed trait colorInterpolation extends StObject
+  inline def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
   
   @js.native
-  sealed trait columnWidth extends js.Object
+  sealed trait colorInterpolationFilters extends StObject
+  inline def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
   
   @js.native
-  sealed trait columns extends js.Object
+  sealed trait colorScheme extends StObject
+  inline def colorScheme: colorScheme = "colorScheme".asInstanceOf[colorScheme]
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait columnCount extends StObject
+  inline def columnCount: columnCount = "columnCount".asInstanceOf[columnCount]
   
   @js.native
-  sealed trait continue extends js.Object
+  sealed trait columnFill extends StObject
+  inline def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
   
   @js.native
-  sealed trait counterIncrement extends js.Object
+  sealed trait columnGap extends StObject
+  inline def columnGap: columnGap = "columnGap".asInstanceOf[columnGap]
   
   @js.native
-  sealed trait counterReset extends js.Object
+  sealed trait columnRule extends StObject
+  inline def columnRule: columnRule = "columnRule".asInstanceOf[columnRule]
   
   @js.native
-  sealed trait cssFloat extends js.Object
+  sealed trait columnRuleColor extends StObject
+  inline def columnRuleColor: columnRuleColor = "columnRuleColor".asInstanceOf[columnRuleColor]
   
   @js.native
-  sealed trait cssText extends js.Object
+  sealed trait columnRuleStyle extends StObject
+  inline def columnRuleStyle: columnRuleStyle = "columnRuleStyle".asInstanceOf[columnRuleStyle]
   
   @js.native
-  sealed trait cursor extends js.Object
+  sealed trait columnRuleWidth extends StObject
+  inline def columnRuleWidth: columnRuleWidth = "columnRuleWidth".asInstanceOf[columnRuleWidth]
   
   @js.native
-  sealed trait dataIdAttr extends js.Object
+  sealed trait columnSpan extends StObject
+  inline def columnSpan: columnSpan = "columnSpan".asInstanceOf[columnSpan]
   
   @js.native
-  sealed trait delay extends js.Object
+  sealed trait columnWidth extends StObject
+  inline def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
   
   @js.native
-  sealed trait delayOnTouchOnly extends js.Object
+  sealed trait columns extends StObject
+  inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
-  sealed trait direction extends js.Object
+  sealed trait contain extends StObject
+  inline def contain: contain = "contain".asInstanceOf[contain]
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait display extends js.Object
+  sealed trait continue extends StObject
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait dominantBaseline extends js.Object
+  sealed trait counterIncrement extends StObject
+  inline def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
   
   @js.native
-  sealed trait dragClass extends js.Object
+  sealed trait counterReset extends StObject
+  inline def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
   
   @js.native
-  sealed trait draggable extends js.Object
+  sealed trait counterSet extends StObject
+  inline def counterSet: counterSet = "counterSet".asInstanceOf[counterSet]
   
   @js.native
-  sealed trait dragoverBubble extends js.Object
+  sealed trait cssFloat extends StObject
+  inline def cssFloat: cssFloat = "cssFloat".asInstanceOf[cssFloat]
   
   @js.native
-  sealed trait dropBubble extends js.Object
+  sealed trait cssText extends StObject
+  inline def cssText: cssText = "cssText".asInstanceOf[cssText]
   
   @js.native
-  sealed trait easing extends js.Object
+  sealed trait cursor extends StObject
+  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait emptyCells extends js.Object
+  sealed trait dataIdAttr extends StObject
+  inline def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
   
   @js.native
-  sealed trait emptyInsertThreshold extends js.Object
+  sealed trait delay extends StObject
+  inline def delay: delay = "delay".asInstanceOf[delay]
   
   @js.native
-  sealed trait enableBackground extends js.Object
+  sealed trait delayOnTouchOnly extends StObject
+  inline def delayOnTouchOnly: delayOnTouchOnly = "delayOnTouchOnly".asInstanceOf[delayOnTouchOnly]
   
   @js.native
-  sealed trait fallbackClass extends js.Object
+  sealed trait direction extends StObject
+  inline def direction: direction = "direction".asInstanceOf[direction]
   
   @js.native
-  sealed trait fallbackOffset extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait fallbackOnBody extends js.Object
+  sealed trait display extends StObject
+  inline def display: display = "display".asInstanceOf[display]
   
   @js.native
-  sealed trait fallbackTolerance extends js.Object
+  sealed trait dominantBaseline extends StObject
+  inline def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait dragClass extends StObject
+  inline def dragClass: dragClass = "dragClass".asInstanceOf[dragClass]
   
   @js.native
-  sealed trait fillOpacity extends js.Object
+  sealed trait draggable extends StObject
+  inline def draggable: draggable = "draggable".asInstanceOf[draggable]
   
   @js.native
-  sealed trait fillRule extends js.Object
+  sealed trait dragoverBubble extends StObject
+  inline def dragoverBubble: dragoverBubble = "dragoverBubble".asInstanceOf[dragoverBubble]
   
   @js.native
-  sealed trait filter extends js.Object
+  sealed trait dropBubble extends StObject
+  inline def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
   
   @js.native
-  sealed trait flex extends js.Object
+  sealed trait easing extends StObject
+  inline def easing: easing = "easing".asInstanceOf[easing]
   
   @js.native
-  sealed trait flexBasis extends js.Object
+  sealed trait emptyCells extends StObject
+  inline def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
   
   @js.native
-  sealed trait flexDirection extends js.Object
+  sealed trait emptyInsertThreshold extends StObject
+  inline def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
   
   @js.native
-  sealed trait flexFlow extends js.Object
+  sealed trait fallbackClass extends StObject
+  inline def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
   
   @js.native
-  sealed trait flexGrow extends js.Object
+  sealed trait fallbackOffset extends StObject
+  inline def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
   
   @js.native
-  sealed trait flexShrink extends js.Object
+  sealed trait fallbackOnBody extends StObject
+  inline def fallbackOnBody: fallbackOnBody = "fallbackOnBody".asInstanceOf[fallbackOnBody]
   
   @js.native
-  sealed trait flexWrap extends js.Object
+  sealed trait fallbackTolerance extends StObject
+  inline def fallbackTolerance: fallbackTolerance = "fallbackTolerance".asInstanceOf[fallbackTolerance]
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait floodColor extends js.Object
+  sealed trait fillOpacity extends StObject
+  inline def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
   
   @js.native
-  sealed trait floodOpacity extends js.Object
+  sealed trait fillRule extends StObject
+  inline def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait fontFamily extends js.Object
+  sealed trait flex extends StObject
+  inline def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
-  sealed trait fontFeatureSettings extends js.Object
+  sealed trait flexBasis extends StObject
+  inline def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
   
   @js.native
-  sealed trait fontKerning extends js.Object
+  sealed trait flexDirection extends StObject
+  inline def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
   
   @js.native
-  sealed trait fontSize extends js.Object
+  sealed trait flexFlow extends StObject
+  inline def flexFlow: flexFlow = "flexFlow".asInstanceOf[flexFlow]
   
   @js.native
-  sealed trait fontSizeAdjust extends js.Object
+  sealed trait flexGrow extends StObject
+  inline def flexGrow: flexGrow = "flexGrow".asInstanceOf[flexGrow]
   
   @js.native
-  sealed trait fontStretch extends js.Object
+  sealed trait flexShrink extends StObject
+  inline def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
   
   @js.native
-  sealed trait fontStyle extends js.Object
+  sealed trait flexWrap extends StObject
+  inline def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
   
   @js.native
-  sealed trait fontSynthesis extends js.Object
+  sealed trait float extends StObject
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait fontVariant extends js.Object
+  sealed trait floodColor extends StObject
+  inline def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
   
   @js.native
-  sealed trait fontVariantCaps extends js.Object
+  sealed trait floodOpacity extends StObject
+  inline def floodOpacity: floodOpacity = "floodOpacity".asInstanceOf[floodOpacity]
   
   @js.native
-  sealed trait fontVariantEastAsian extends js.Object
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
-  sealed trait fontVariantLigatures extends js.Object
+  sealed trait fontFamily extends StObject
+  inline def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
   
   @js.native
-  sealed trait fontVariantNumeric extends js.Object
+  sealed trait fontFeatureSettings extends StObject
+  inline def fontFeatureSettings: fontFeatureSettings = "fontFeatureSettings".asInstanceOf[fontFeatureSettings]
   
   @js.native
-  sealed trait fontVariantPosition extends js.Object
+  sealed trait fontKerning extends StObject
+  inline def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
   
   @js.native
-  sealed trait fontWeight extends js.Object
+  sealed trait fontOpticalSizing extends StObject
+  inline def fontOpticalSizing: fontOpticalSizing = "fontOpticalSizing".asInstanceOf[fontOpticalSizing]
   
   @js.native
-  sealed trait forceFallback extends js.Object
+  sealed trait fontSize extends StObject
+  inline def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
   
   @js.native
-  sealed trait gap extends js.Object
+  sealed trait fontSizeAdjust extends StObject
+  inline def fontSizeAdjust: fontSizeAdjust = "fontSizeAdjust".asInstanceOf[fontSizeAdjust]
   
   @js.native
-  sealed trait ghostClass extends js.Object
+  sealed trait fontStretch extends StObject
+  inline def fontStretch: fontStretch = "fontStretch".asInstanceOf[fontStretch]
   
   @js.native
-  sealed trait glyphOrientationHorizontal extends js.Object
+  sealed trait fontStyle extends StObject
+  inline def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
   
   @js.native
-  sealed trait glyphOrientationVertical extends js.Object
+  sealed trait fontSynthesis extends StObject
+  inline def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
   
   @js.native
-  sealed trait grid extends js.Object
+  sealed trait fontVariant extends StObject
+  inline def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
   
   @js.native
-  sealed trait gridArea extends js.Object
+  sealed trait fontVariantAlternates extends StObject
+  inline def fontVariantAlternates: fontVariantAlternates = "fontVariantAlternates".asInstanceOf[fontVariantAlternates]
   
   @js.native
-  sealed trait gridAutoColumns extends js.Object
+  sealed trait fontVariantCaps extends StObject
+  inline def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
   
   @js.native
-  sealed trait gridAutoFlow extends js.Object
+  sealed trait fontVariantEastAsian extends StObject
+  inline def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
   
   @js.native
-  sealed trait gridAutoRows extends js.Object
+  sealed trait fontVariantLigatures extends StObject
+  inline def fontVariantLigatures: fontVariantLigatures = "fontVariantLigatures".asInstanceOf[fontVariantLigatures]
   
   @js.native
-  sealed trait gridColumn extends js.Object
+  sealed trait fontVariantNumeric extends StObject
+  inline def fontVariantNumeric: fontVariantNumeric = "fontVariantNumeric".asInstanceOf[fontVariantNumeric]
   
   @js.native
-  sealed trait gridColumnEnd extends js.Object
+  sealed trait fontVariantPosition extends StObject
+  inline def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
   
   @js.native
-  sealed trait gridColumnGap extends js.Object
+  sealed trait fontVariationSettings extends StObject
+  inline def fontVariationSettings: fontVariationSettings = "fontVariationSettings".asInstanceOf[fontVariationSettings]
   
   @js.native
-  sealed trait gridColumnStart extends js.Object
+  sealed trait fontWeight extends StObject
+  inline def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
   
   @js.native
-  sealed trait gridGap extends js.Object
+  sealed trait forceFallback extends StObject
+  inline def forceFallback: forceFallback = "forceFallback".asInstanceOf[forceFallback]
   
   @js.native
-  sealed trait gridRow extends js.Object
+  sealed trait gap extends StObject
+  inline def gap: gap = "gap".asInstanceOf[gap]
   
   @js.native
-  sealed trait gridRowEnd extends js.Object
+  sealed trait ghostClass extends StObject
+  inline def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
   
   @js.native
-  sealed trait gridRowGap extends js.Object
+  sealed trait grid extends StObject
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait gridRowStart extends js.Object
+  sealed trait gridArea extends StObject
+  inline def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
   
   @js.native
-  sealed trait gridTemplate extends js.Object
+  sealed trait gridAutoColumns extends StObject
+  inline def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
   
   @js.native
-  sealed trait gridTemplateAreas extends js.Object
+  sealed trait gridAutoFlow extends StObject
+  inline def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
   
   @js.native
-  sealed trait gridTemplateColumns extends js.Object
+  sealed trait gridAutoRows extends StObject
+  inline def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
   
   @js.native
-  sealed trait gridTemplateRows extends js.Object
+  sealed trait gridColumn extends StObject
+  inline def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait gridColumnEnd extends StObject
+  inline def gridColumnEnd: gridColumnEnd = "gridColumnEnd".asInstanceOf[gridColumnEnd]
   
   @js.native
-  sealed trait handle extends js.Object
+  sealed trait gridColumnGap extends StObject
+  inline def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait gridColumnStart extends StObject
+  inline def gridColumnStart: gridColumnStart = "gridColumnStart".asInstanceOf[gridColumnStart]
   
   @js.native
-  sealed trait horizontal extends Direction
+  sealed trait gridGap extends StObject
+  inline def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
   
   @js.native
-  sealed trait hyphens extends js.Object
+  sealed trait gridRow extends StObject
+  inline def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait gridRowEnd extends StObject
+  inline def gridRowEnd: gridRowEnd = "gridRowEnd".asInstanceOf[gridRowEnd]
   
   @js.native
-  sealed trait imageOrientation extends js.Object
+  sealed trait gridRowGap extends StObject
+  inline def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
   
   @js.native
-  sealed trait imageRendering extends js.Object
+  sealed trait gridRowStart extends StObject
+  inline def gridRowStart: gridRowStart = "gridRowStart".asInstanceOf[gridRowStart]
   
   @js.native
-  sealed trait imeMode extends js.Object
+  sealed trait gridTemplate extends StObject
+  inline def gridTemplate: gridTemplate = "gridTemplate".asInstanceOf[gridTemplate]
   
   @js.native
-  sealed trait inlineSize extends js.Object
+  sealed trait gridTemplateAreas extends StObject
+  inline def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
   
   @js.native
-  sealed trait invertSwap extends js.Object
+  sealed trait gridTemplateColumns extends StObject
+  inline def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
   
   @js.native
-  sealed trait invertedSwapThreshold extends js.Object
+  sealed trait gridTemplateRows extends StObject
+  inline def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
   
   @js.native
-  sealed trait justifyContent extends js.Object
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait justifyItems extends js.Object
+  sealed trait handle extends StObject
+  inline def handle: handle = "handle".asInstanceOf[handle]
   
   @js.native
-  sealed trait justifySelf extends js.Object
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait kerning extends js.Object
+  sealed trait horizontal
+    extends StObject
+       with Direction
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait layoutGrid extends js.Object
+  sealed trait hyphens extends StObject
+  inline def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
   
   @js.native
-  sealed trait layoutGridChar extends js.Object
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait layoutGridLine extends js.Object
+  sealed trait imageOrientation extends StObject
+  inline def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
   
   @js.native
-  sealed trait layoutGridMode extends js.Object
+  sealed trait imageRendering extends StObject
+  inline def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
   
   @js.native
-  sealed trait layoutGridType extends js.Object
+  sealed trait inlineSize extends StObject
+  inline def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait inset extends StObject
+  inline def inset: inset = "inset".asInstanceOf[inset]
   
   @js.native
-  sealed trait length extends js.Object
+  sealed trait insetBlock extends StObject
+  inline def insetBlock: insetBlock = "insetBlock".asInstanceOf[insetBlock]
   
   @js.native
-  sealed trait letterSpacing extends js.Object
+  sealed trait insetBlockEnd extends StObject
+  inline def insetBlockEnd: insetBlockEnd = "insetBlockEnd".asInstanceOf[insetBlockEnd]
   
   @js.native
-  sealed trait lightingColor extends js.Object
+  sealed trait insetBlockStart extends StObject
+  inline def insetBlockStart: insetBlockStart = "insetBlockStart".asInstanceOf[insetBlockStart]
   
   @js.native
-  sealed trait lineBreak extends js.Object
+  sealed trait insetInline extends StObject
+  inline def insetInline: insetInline = "insetInline".asInstanceOf[insetInline]
   
   @js.native
-  sealed trait lineHeight extends js.Object
+  sealed trait insetInlineEnd extends StObject
+  inline def insetInlineEnd: insetInlineEnd = "insetInlineEnd".asInstanceOf[insetInlineEnd]
   
   @js.native
-  sealed trait listStyle extends js.Object
+  sealed trait insetInlineStart extends StObject
+  inline def insetInlineStart: insetInlineStart = "insetInlineStart".asInstanceOf[insetInlineStart]
   
   @js.native
-  sealed trait listStyleImage extends js.Object
+  sealed trait invertSwap extends StObject
+  inline def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
   
   @js.native
-  sealed trait listStylePosition extends js.Object
+  sealed trait invertedSwapThreshold extends StObject
+  inline def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
   
   @js.native
-  sealed trait listStyleType extends js.Object
+  sealed trait isolation extends StObject
+  inline def isolation: isolation = "isolation".asInstanceOf[isolation]
   
   @js.native
-  sealed trait margin extends js.Object
+  sealed trait justifyContent extends StObject
+  inline def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
   
   @js.native
-  sealed trait marginBlockEnd extends js.Object
+  sealed trait justifyItems extends StObject
+  inline def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
   
   @js.native
-  sealed trait marginBlockStart extends js.Object
+  sealed trait justifySelf extends StObject
+  inline def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
   
   @js.native
-  sealed trait marginBottom extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait marginInlineEnd extends js.Object
+  sealed trait length extends StObject
+  inline def length: length = "length".asInstanceOf[length]
   
   @js.native
-  sealed trait marginInlineStart extends js.Object
+  sealed trait letterSpacing extends StObject
+  inline def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
   
   @js.native
-  sealed trait marginLeft extends js.Object
+  sealed trait lightingColor extends StObject
+  inline def lightingColor: lightingColor = "lightingColor".asInstanceOf[lightingColor]
   
   @js.native
-  sealed trait marginRight extends js.Object
+  sealed trait lineBreak extends StObject
+  inline def lineBreak: lineBreak = "lineBreak".asInstanceOf[lineBreak]
   
   @js.native
-  sealed trait marginTop extends js.Object
+  sealed trait lineHeight extends StObject
+  inline def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
   
   @js.native
-  sealed trait marker extends js.Object
+  sealed trait listStyle extends StObject
+  inline def listStyle: listStyle = "listStyle".asInstanceOf[listStyle]
   
   @js.native
-  sealed trait markerEnd extends js.Object
+  sealed trait listStyleImage extends StObject
+  inline def listStyleImage: listStyleImage = "listStyleImage".asInstanceOf[listStyleImage]
   
   @js.native
-  sealed trait markerMid extends js.Object
+  sealed trait listStylePosition extends StObject
+  inline def listStylePosition: listStylePosition = "listStylePosition".asInstanceOf[listStylePosition]
   
   @js.native
-  sealed trait markerStart extends js.Object
+  sealed trait listStyleType extends StObject
+  inline def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
   
   @js.native
-  sealed trait mask extends js.Object
+  sealed trait margin extends StObject
+  inline def margin: margin = "margin".asInstanceOf[margin]
   
   @js.native
-  sealed trait maskComposite extends js.Object
+  sealed trait marginBlock extends StObject
+  inline def marginBlock: marginBlock = "marginBlock".asInstanceOf[marginBlock]
   
   @js.native
-  sealed trait maskImage extends js.Object
+  sealed trait marginBlockEnd extends StObject
+  inline def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
   
   @js.native
-  sealed trait maskPosition extends js.Object
+  sealed trait marginBlockStart extends StObject
+  inline def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
   
   @js.native
-  sealed trait maskRepeat extends js.Object
+  sealed trait marginBottom extends StObject
+  inline def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
   
   @js.native
-  sealed trait maskSize extends js.Object
+  sealed trait marginInline extends StObject
+  inline def marginInline: marginInline = "marginInline".asInstanceOf[marginInline]
   
   @js.native
-  sealed trait maskType extends js.Object
+  sealed trait marginInlineEnd extends StObject
+  inline def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
   
   @js.native
-  sealed trait maxBlockSize extends js.Object
+  sealed trait marginInlineStart extends StObject
+  inline def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
   
   @js.native
-  sealed trait maxHeight extends js.Object
+  sealed trait marginLeft extends StObject
+  inline def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
   
   @js.native
-  sealed trait maxInlineSize extends js.Object
+  sealed trait marginRight extends StObject
+  inline def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
   
   @js.native
-  sealed trait maxWidth extends js.Object
+  sealed trait marginTop extends StObject
+  inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
   
   @js.native
-  sealed trait minBlockSize extends js.Object
+  sealed trait marker extends StObject
+  inline def marker: marker = "marker".asInstanceOf[marker]
   
   @js.native
-  sealed trait minHeight extends js.Object
+  sealed trait markerEnd extends StObject
+  inline def markerEnd: markerEnd = "markerEnd".asInstanceOf[markerEnd]
   
   @js.native
-  sealed trait minInlineSize extends js.Object
+  sealed trait markerMid extends StObject
+  inline def markerMid: markerMid = "markerMid".asInstanceOf[markerMid]
   
   @js.native
-  sealed trait minWidth extends js.Object
+  sealed trait markerStart extends StObject
+  inline def markerStart: markerStart = "markerStart".asInstanceOf[markerStart]
   
   @js.native
-  sealed trait msContentZoomChaining extends js.Object
+  sealed trait mask extends StObject
+  inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait msContentZoomLimit extends js.Object
+  sealed trait maskClip extends StObject
+  inline def maskClip: maskClip = "maskClip".asInstanceOf[maskClip]
   
   @js.native
-  sealed trait msContentZoomLimitMax extends js.Object
+  sealed trait maskComposite extends StObject
+  inline def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
   
   @js.native
-  sealed trait msContentZoomLimitMin extends js.Object
+  sealed trait maskImage extends StObject
+  inline def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
   
   @js.native
-  sealed trait msContentZoomSnap extends js.Object
+  sealed trait maskMode extends StObject
+  inline def maskMode: maskMode = "maskMode".asInstanceOf[maskMode]
   
   @js.native
-  sealed trait msContentZoomSnapPoints extends js.Object
+  sealed trait maskOrigin extends StObject
+  inline def maskOrigin: maskOrigin = "maskOrigin".asInstanceOf[maskOrigin]
   
   @js.native
-  sealed trait msContentZoomSnapType extends js.Object
+  sealed trait maskPosition extends StObject
+  inline def maskPosition: maskPosition = "maskPosition".asInstanceOf[maskPosition]
   
   @js.native
-  sealed trait msContentZooming extends js.Object
+  sealed trait maskRepeat extends StObject
+  inline def maskRepeat: maskRepeat = "maskRepeat".asInstanceOf[maskRepeat]
   
   @js.native
-  sealed trait msFlowFrom extends js.Object
+  sealed trait maskSize extends StObject
+  inline def maskSize: maskSize = "maskSize".asInstanceOf[maskSize]
   
   @js.native
-  sealed trait msFlowInto extends js.Object
+  sealed trait maskType extends StObject
+  inline def maskType: maskType = "maskType".asInstanceOf[maskType]
   
   @js.native
-  sealed trait msFontFeatureSettings extends js.Object
+  sealed trait maxBlockSize extends StObject
+  inline def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
   
   @js.native
-  sealed trait msGridColumn extends js.Object
+  sealed trait maxHeight extends StObject
+  inline def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
   
   @js.native
-  sealed trait msGridColumnAlign extends js.Object
+  sealed trait maxInlineSize extends StObject
+  inline def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
   
   @js.native
-  sealed trait msGridColumnSpan extends js.Object
+  sealed trait maxWidth extends StObject
+  inline def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
   
   @js.native
-  sealed trait msGridColumns extends js.Object
+  sealed trait minBlockSize extends StObject
+  inline def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
   
   @js.native
-  sealed trait msGridRow extends js.Object
+  sealed trait minHeight extends StObject
+  inline def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
   
   @js.native
-  sealed trait msGridRowAlign extends js.Object
+  sealed trait minInlineSize extends StObject
+  inline def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
   
   @js.native
-  sealed trait msGridRowSpan extends js.Object
+  sealed trait minWidth extends StObject
+  inline def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   
   @js.native
-  sealed trait msGridRows extends js.Object
+  sealed trait mixBlendMode extends StObject
+  inline def mixBlendMode: mixBlendMode = "mixBlendMode".asInstanceOf[mixBlendMode]
   
   @js.native
-  sealed trait msHighContrastAdjust extends js.Object
+  sealed trait multiDrag extends StObject
+  inline def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
   
   @js.native
-  sealed trait msHyphenateLimitChars extends js.Object
+  sealed trait multiDragKey extends StObject
+  inline def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
   
   @js.native
-  sealed trait msHyphenateLimitLines extends js.Object
+  sealed trait objectFit extends StObject
+  inline def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
   
   @js.native
-  sealed trait msHyphenateLimitZone extends js.Object
+  sealed trait objectPosition extends StObject
+  inline def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
   
   @js.native
-  sealed trait msHyphens extends js.Object
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
   
   @js.native
-  sealed trait msImeAlign extends js.Object
+  sealed trait offsetDistance extends StObject
+  inline def offsetDistance: offsetDistance = "offsetDistance".asInstanceOf[offsetDistance]
   
   @js.native
-  sealed trait msOverflowStyle extends js.Object
+  sealed trait offsetPath extends StObject
+  inline def offsetPath: offsetPath = "offsetPath".asInstanceOf[offsetPath]
   
   @js.native
-  sealed trait msScrollChaining extends js.Object
+  sealed trait offsetRotate extends StObject
+  inline def offsetRotate: offsetRotate = "offsetRotate".asInstanceOf[offsetRotate]
   
   @js.native
-  sealed trait msScrollLimit extends js.Object
+  sealed trait onAdd extends StObject
+  inline def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
   
   @js.native
-  sealed trait msScrollLimitXMax extends js.Object
+  sealed trait onChange extends StObject
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait msScrollLimitXMin extends js.Object
+  sealed trait onChoose extends StObject
+  inline def onChoose: onChoose = "onChoose".asInstanceOf[onChoose]
   
   @js.native
-  sealed trait msScrollLimitYMax extends js.Object
+  sealed trait onClone extends StObject
+  inline def onClone: onClone = "onClone".asInstanceOf[onClone]
   
   @js.native
-  sealed trait msScrollLimitYMin extends js.Object
+  sealed trait onDeselect extends StObject
+  inline def onDeselect: onDeselect = "onDeselect".asInstanceOf[onDeselect]
   
   @js.native
-  sealed trait msScrollRails extends js.Object
+  sealed trait onEnd extends StObject
+  inline def onEnd: onEnd = "onEnd".asInstanceOf[onEnd]
   
   @js.native
-  sealed trait msScrollSnapPointsX extends js.Object
+  sealed trait onFilter extends StObject
+  inline def onFilter: onFilter = "onFilter".asInstanceOf[onFilter]
   
   @js.native
-  sealed trait msScrollSnapPointsY extends js.Object
+  sealed trait onMove extends StObject
+  inline def onMove: onMove = "onMove".asInstanceOf[onMove]
   
   @js.native
-  sealed trait msScrollSnapType extends js.Object
+  sealed trait onRemove extends StObject
+  inline def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
   
   @js.native
-  sealed trait msScrollSnapX extends js.Object
+  sealed trait onSelect extends StObject
+  inline def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   
   @js.native
-  sealed trait msScrollSnapY extends js.Object
+  sealed trait onSort extends StObject
+  inline def onSort: onSort = "onSort".asInstanceOf[onSort]
   
   @js.native
-  sealed trait msScrollTranslation extends js.Object
+  sealed trait onSpill extends StObject
+  inline def onSpill: onSpill = "onSpill".asInstanceOf[onSpill]
   
   @js.native
-  sealed trait msTextCombineHorizontal extends js.Object
+  sealed trait onStart extends StObject
+  inline def onStart: onStart = "onStart".asInstanceOf[onStart]
   
   @js.native
-  sealed trait msTextSizeAdjust extends js.Object
+  sealed trait onUnchoose extends StObject
+  inline def onUnchoose: onUnchoose = "onUnchoose".asInstanceOf[onUnchoose]
   
   @js.native
-  sealed trait msTouchAction extends js.Object
+  sealed trait onUpdate extends StObject
+  inline def onUpdate: onUpdate = "onUpdate".asInstanceOf[onUpdate]
   
   @js.native
-  sealed trait msTouchSelect extends js.Object
+  sealed trait opacity extends StObject
+  inline def opacity: opacity = "opacity".asInstanceOf[opacity]
   
   @js.native
-  sealed trait msUserSelect extends js.Object
+  sealed trait order extends StObject
+  inline def order: order = "order".asInstanceOf[order]
   
   @js.native
-  sealed trait msWrapFlow extends js.Object
+  sealed trait orphans extends StObject
+  inline def orphans: orphans = "orphans".asInstanceOf[orphans]
   
   @js.native
-  sealed trait msWrapMargin extends js.Object
+  sealed trait outline extends StObject
+  inline def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
-  sealed trait msWrapThrough extends js.Object
+  sealed trait outlineColor extends StObject
+  inline def outlineColor: outlineColor = "outlineColor".asInstanceOf[outlineColor]
   
   @js.native
-  sealed trait multiDrag extends js.Object
+  sealed trait outlineOffset extends StObject
+  inline def outlineOffset: outlineOffset = "outlineOffset".asInstanceOf[outlineOffset]
   
   @js.native
-  sealed trait multiDragKey extends js.Object
+  sealed trait outlineStyle extends StObject
+  inline def outlineStyle: outlineStyle = "outlineStyle".asInstanceOf[outlineStyle]
   
   @js.native
-  sealed trait objectFit extends js.Object
+  sealed trait outlineWidth extends StObject
+  inline def outlineWidth: outlineWidth = "outlineWidth".asInstanceOf[outlineWidth]
   
   @js.native
-  sealed trait objectPosition extends js.Object
+  sealed trait overflow extends StObject
+  inline def overflow: overflow = "overflow".asInstanceOf[overflow]
   
   @js.native
-  sealed trait opacity extends js.Object
+  sealed trait overflowAnchor extends StObject
+  inline def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
   
   @js.native
-  sealed trait order extends js.Object
+  sealed trait overflowWrap extends StObject
+  inline def overflowWrap: overflowWrap = "overflowWrap".asInstanceOf[overflowWrap]
   
   @js.native
-  sealed trait orphans extends js.Object
+  sealed trait overflowX extends StObject
+  inline def overflowX: overflowX = "overflowX".asInstanceOf[overflowX]
   
   @js.native
-  sealed trait outline extends js.Object
+  sealed trait overflowY extends StObject
+  inline def overflowY: overflowY = "overflowY".asInstanceOf[overflowY]
   
   @js.native
-  sealed trait outlineColor extends js.Object
+  sealed trait overscrollBehavior extends StObject
+  inline def overscrollBehavior: overscrollBehavior = "overscrollBehavior".asInstanceOf[overscrollBehavior]
   
   @js.native
-  sealed trait outlineOffset extends js.Object
+  sealed trait overscrollBehaviorBlock extends StObject
+  inline def overscrollBehaviorBlock: overscrollBehaviorBlock = "overscrollBehaviorBlock".asInstanceOf[overscrollBehaviorBlock]
   
   @js.native
-  sealed trait outlineStyle extends js.Object
+  sealed trait overscrollBehaviorInline extends StObject
+  inline def overscrollBehaviorInline: overscrollBehaviorInline = "overscrollBehaviorInline".asInstanceOf[overscrollBehaviorInline]
   
   @js.native
-  sealed trait outlineWidth extends js.Object
+  sealed trait overscrollBehaviorX extends StObject
+  inline def overscrollBehaviorX: overscrollBehaviorX = "overscrollBehaviorX".asInstanceOf[overscrollBehaviorX]
   
   @js.native
-  sealed trait overflow extends js.Object
+  sealed trait overscrollBehaviorY extends StObject
+  inline def overscrollBehaviorY: overscrollBehaviorY = "overscrollBehaviorY".asInstanceOf[overscrollBehaviorY]
   
   @js.native
-  sealed trait overflowAnchor extends js.Object
+  sealed trait padding extends StObject
+  inline def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
-  sealed trait overflowWrap extends js.Object
+  sealed trait paddingBlock extends StObject
+  inline def paddingBlock: paddingBlock = "paddingBlock".asInstanceOf[paddingBlock]
   
   @js.native
-  sealed trait overflowX extends js.Object
+  sealed trait paddingBlockEnd extends StObject
+  inline def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
   
   @js.native
-  sealed trait overflowY extends js.Object
+  sealed trait paddingBlockStart extends StObject
+  inline def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
   
   @js.native
-  sealed trait padding extends js.Object
+  sealed trait paddingBottom extends StObject
+  inline def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
   
   @js.native
-  sealed trait paddingBlockEnd extends js.Object
+  sealed trait paddingInline extends StObject
+  inline def paddingInline: paddingInline = "paddingInline".asInstanceOf[paddingInline]
   
   @js.native
-  sealed trait paddingBlockStart extends js.Object
+  sealed trait paddingInlineEnd extends StObject
+  inline def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
   
   @js.native
-  sealed trait paddingBottom extends js.Object
+  sealed trait paddingInlineStart extends StObject
+  inline def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
   
   @js.native
-  sealed trait paddingInlineEnd extends js.Object
+  sealed trait paddingLeft extends StObject
+  inline def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
   
   @js.native
-  sealed trait paddingInlineStart extends js.Object
+  sealed trait paddingRight extends StObject
+  inline def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
   
   @js.native
-  sealed trait paddingLeft extends js.Object
+  sealed trait paddingTop extends StObject
+  inline def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
   
   @js.native
-  sealed trait paddingRight extends js.Object
+  sealed trait pageBreakAfter extends StObject
+  inline def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
   
   @js.native
-  sealed trait paddingTop extends js.Object
+  sealed trait pageBreakBefore extends StObject
+  inline def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
   
   @js.native
-  sealed trait pageBreakAfter extends js.Object
+  sealed trait pageBreakInside extends StObject
+  inline def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
   
   @js.native
-  sealed trait pageBreakBefore extends js.Object
+  sealed trait paintOrder extends StObject
+  inline def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
   
   @js.native
-  sealed trait pageBreakInside extends js.Object
+  sealed trait parentRule extends StObject
+  inline def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
   
   @js.native
-  sealed trait paintOrder extends js.Object
+  sealed trait perspective extends StObject
+  inline def perspective: perspective = "perspective".asInstanceOf[perspective]
   
   @js.native
-  sealed trait parentRule extends js.Object
+  sealed trait perspectiveOrigin extends StObject
+  inline def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
   
   @js.native
-  sealed trait penAction extends js.Object
+  sealed trait placeContent extends StObject
+  inline def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
   
   @js.native
-  sealed trait perspective extends js.Object
+  sealed trait placeItems extends StObject
+  inline def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
   
   @js.native
-  sealed trait perspectiveOrigin extends js.Object
+  sealed trait placeSelf extends StObject
+  inline def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
   
   @js.native
-  sealed trait placeContent extends js.Object
+  sealed trait pointerEvents extends StObject
+  inline def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
   
   @js.native
-  sealed trait placeItems extends js.Object
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait placeSelf extends js.Object
+  sealed trait preventOnFilter extends StObject
+  inline def preventOnFilter: preventOnFilter = "preventOnFilter".asInstanceOf[preventOnFilter]
   
   @js.native
-  sealed trait pointerEvents extends js.Object
+  sealed trait printColorAdjust extends StObject
+  inline def printColorAdjust: printColorAdjust = "printColorAdjust".asInstanceOf[printColorAdjust]
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait quotes extends StObject
+  inline def quotes: quotes = "quotes".asInstanceOf[quotes]
   
   @js.native
-  sealed trait preventOnFilter extends js.Object
+  sealed trait removeCloneOnHide extends StObject
+  inline def removeCloneOnHide: removeCloneOnHide = "removeCloneOnHide".asInstanceOf[removeCloneOnHide]
   
   @js.native
-  sealed trait quotes extends js.Object
+  sealed trait removeOnSpill extends StObject
+  inline def removeOnSpill: removeOnSpill = "removeOnSpill".asInstanceOf[removeOnSpill]
   
   @js.native
-  sealed trait removeCloneOnHide extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait removeOnSpill extends js.Object
+  sealed trait revertOnSpill extends StObject
+  inline def revertOnSpill: revertOnSpill = "revertOnSpill".asInstanceOf[revertOnSpill]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait revertOnSpill extends js.Object
+  sealed trait rotate extends StObject
+  inline def rotate: rotate = "rotate".asInstanceOf[rotate]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait rowGap extends StObject
+  inline def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
   
   @js.native
-  sealed trait rotate extends js.Object
+  sealed trait rubyPosition extends StObject
+  inline def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   
   @js.native
-  sealed trait rowGap extends js.Object
+  sealed trait scale extends StObject
+  inline def scale: scale = "scale".asInstanceOf[scale]
   
   @js.native
-  sealed trait rubyAlign extends js.Object
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait rubyOverhang extends js.Object
+  sealed trait scrollBehavior extends StObject
+  inline def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
   
   @js.native
-  sealed trait rubyPosition extends js.Object
+  sealed trait scrollFn extends StObject
+  inline def scrollFn: scrollFn = "scrollFn".asInstanceOf[scrollFn]
   
   @js.native
-  sealed trait scale extends js.Object
+  sealed trait scrollMargin extends StObject
+  inline def scrollMargin: scrollMargin = "scrollMargin".asInstanceOf[scrollMargin]
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scrollMarginBlock extends StObject
+  inline def scrollMarginBlock: scrollMarginBlock = "scrollMarginBlock".asInstanceOf[scrollMarginBlock]
   
   @js.native
-  sealed trait scrollBehavior extends js.Object
+  sealed trait scrollMarginBlockEnd extends StObject
+  inline def scrollMarginBlockEnd: scrollMarginBlockEnd = "scrollMarginBlockEnd".asInstanceOf[scrollMarginBlockEnd]
   
   @js.native
-  sealed trait scrollSensitivity extends js.Object
+  sealed trait scrollMarginBlockStart extends StObject
+  inline def scrollMarginBlockStart: scrollMarginBlockStart = "scrollMarginBlockStart".asInstanceOf[scrollMarginBlockStart]
   
   @js.native
-  sealed trait scrollSpeed extends js.Object
+  sealed trait scrollMarginBottom extends StObject
+  inline def scrollMarginBottom: scrollMarginBottom = "scrollMarginBottom".asInstanceOf[scrollMarginBottom]
   
   @js.native
-  sealed trait selectedClass extends js.Object
+  sealed trait scrollMarginInline extends StObject
+  inline def scrollMarginInline: scrollMarginInline = "scrollMarginInline".asInstanceOf[scrollMarginInline]
   
   @js.native
-  sealed trait shapeRendering extends js.Object
+  sealed trait scrollMarginInlineEnd extends StObject
+  inline def scrollMarginInlineEnd: scrollMarginInlineEnd = "scrollMarginInlineEnd".asInstanceOf[scrollMarginInlineEnd]
   
   @js.native
-  sealed trait sort extends js.Object
+  sealed trait scrollMarginInlineStart extends StObject
+  inline def scrollMarginInlineStart: scrollMarginInlineStart = "scrollMarginInlineStart".asInstanceOf[scrollMarginInlineStart]
   
   @js.native
-  sealed trait stopColor extends js.Object
+  sealed trait scrollMarginLeft extends StObject
+  inline def scrollMarginLeft: scrollMarginLeft = "scrollMarginLeft".asInstanceOf[scrollMarginLeft]
   
   @js.native
-  sealed trait stopOpacity extends js.Object
+  sealed trait scrollMarginRight extends StObject
+  inline def scrollMarginRight: scrollMarginRight = "scrollMarginRight".asInstanceOf[scrollMarginRight]
   
   @js.native
-  sealed trait store extends js.Object
+  sealed trait scrollMarginTop extends StObject
+  inline def scrollMarginTop: scrollMarginTop = "scrollMarginTop".asInstanceOf[scrollMarginTop]
   
   @js.native
-  sealed trait stroke extends js.Object
+  sealed trait scrollPadding extends StObject
+  inline def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
   
   @js.native
-  sealed trait strokeDasharray extends js.Object
+  sealed trait scrollPaddingBlock extends StObject
+  inline def scrollPaddingBlock: scrollPaddingBlock = "scrollPaddingBlock".asInstanceOf[scrollPaddingBlock]
   
   @js.native
-  sealed trait strokeDashoffset extends js.Object
+  sealed trait scrollPaddingBlockEnd extends StObject
+  inline def scrollPaddingBlockEnd: scrollPaddingBlockEnd = "scrollPaddingBlockEnd".asInstanceOf[scrollPaddingBlockEnd]
   
   @js.native
-  sealed trait strokeLinecap extends js.Object
+  sealed trait scrollPaddingBlockStart extends StObject
+  inline def scrollPaddingBlockStart: scrollPaddingBlockStart = "scrollPaddingBlockStart".asInstanceOf[scrollPaddingBlockStart]
   
   @js.native
-  sealed trait strokeLinejoin extends js.Object
+  sealed trait scrollPaddingBottom extends StObject
+  inline def scrollPaddingBottom: scrollPaddingBottom = "scrollPaddingBottom".asInstanceOf[scrollPaddingBottom]
   
   @js.native
-  sealed trait strokeMiterlimit extends js.Object
+  sealed trait scrollPaddingInline extends StObject
+  inline def scrollPaddingInline: scrollPaddingInline = "scrollPaddingInline".asInstanceOf[scrollPaddingInline]
   
   @js.native
-  sealed trait strokeOpacity extends js.Object
+  sealed trait scrollPaddingInlineEnd extends StObject
+  inline def scrollPaddingInlineEnd: scrollPaddingInlineEnd = "scrollPaddingInlineEnd".asInstanceOf[scrollPaddingInlineEnd]
   
   @js.native
-  sealed trait strokeWidth extends js.Object
+  sealed trait scrollPaddingInlineStart extends StObject
+  inline def scrollPaddingInlineStart: scrollPaddingInlineStart = "scrollPaddingInlineStart".asInstanceOf[scrollPaddingInlineStart]
   
   @js.native
-  sealed trait swap extends js.Object
+  sealed trait scrollPaddingLeft extends StObject
+  inline def scrollPaddingLeft: scrollPaddingLeft = "scrollPaddingLeft".asInstanceOf[scrollPaddingLeft]
   
   @js.native
-  sealed trait swapClass extends js.Object
+  sealed trait scrollPaddingRight extends StObject
+  inline def scrollPaddingRight: scrollPaddingRight = "scrollPaddingRight".asInstanceOf[scrollPaddingRight]
   
   @js.native
-  sealed trait swapThreshold extends js.Object
+  sealed trait scrollPaddingTop extends StObject
+  inline def scrollPaddingTop: scrollPaddingTop = "scrollPaddingTop".asInstanceOf[scrollPaddingTop]
   
   @js.native
-  sealed trait tabSize extends js.Object
+  sealed trait scrollSensitivity extends StObject
+  inline def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
   
   @js.native
-  sealed trait tableLayout extends js.Object
+  sealed trait scrollSnapAlign extends StObject
+  inline def scrollSnapAlign: scrollSnapAlign = "scrollSnapAlign".asInstanceOf[scrollSnapAlign]
   
   @js.native
-  sealed trait textAlign extends js.Object
+  sealed trait scrollSnapStop extends StObject
+  inline def scrollSnapStop: scrollSnapStop = "scrollSnapStop".asInstanceOf[scrollSnapStop]
   
   @js.native
-  sealed trait textAlignLast extends js.Object
+  sealed trait scrollSnapType extends StObject
+  inline def scrollSnapType: scrollSnapType = "scrollSnapType".asInstanceOf[scrollSnapType]
   
   @js.native
-  sealed trait textAnchor extends js.Object
+  sealed trait scrollSpeed extends StObject
+  inline def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
   
   @js.native
-  sealed trait textCombineUpright extends js.Object
+  sealed trait scrollbarGutter extends StObject
+  inline def scrollbarGutter: scrollbarGutter = "scrollbarGutter".asInstanceOf[scrollbarGutter]
   
   @js.native
-  sealed trait textDecoration extends js.Object
+  sealed trait selectedClass extends StObject
+  inline def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
   
   @js.native
-  sealed trait textDecorationColor extends js.Object
+  sealed trait setData extends StObject
+  inline def setData: setData = "setData".asInstanceOf[setData]
   
   @js.native
-  sealed trait textDecorationLine extends js.Object
+  sealed trait shapeImageThreshold extends StObject
+  inline def shapeImageThreshold: shapeImageThreshold = "shapeImageThreshold".asInstanceOf[shapeImageThreshold]
   
   @js.native
-  sealed trait textDecorationStyle extends js.Object
+  sealed trait shapeMargin extends StObject
+  inline def shapeMargin: shapeMargin = "shapeMargin".asInstanceOf[shapeMargin]
   
   @js.native
-  sealed trait textEmphasis extends js.Object
+  sealed trait shapeOutside extends StObject
+  inline def shapeOutside: shapeOutside = "shapeOutside".asInstanceOf[shapeOutside]
   
   @js.native
-  sealed trait textEmphasisColor extends js.Object
+  sealed trait shapeRendering extends StObject
+  inline def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
   
   @js.native
-  sealed trait textEmphasisPosition extends js.Object
+  sealed trait sort extends StObject
+  inline def sort: sort = "sort".asInstanceOf[sort]
   
   @js.native
-  sealed trait textEmphasisStyle extends js.Object
+  sealed trait stopColor extends StObject
+  inline def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
   
   @js.native
-  sealed trait textIndent extends js.Object
+  sealed trait stopOpacity extends StObject
+  inline def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
   
   @js.native
-  sealed trait textJustify extends js.Object
+  sealed trait store extends StObject
+  inline def store: store = "store".asInstanceOf[store]
   
   @js.native
-  sealed trait textKashida extends js.Object
+  sealed trait stroke extends StObject
+  inline def stroke: stroke = "stroke".asInstanceOf[stroke]
   
   @js.native
-  sealed trait textKashidaSpace extends js.Object
+  sealed trait strokeDasharray extends StObject
+  inline def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
   
   @js.native
-  sealed trait textOrientation extends js.Object
+  sealed trait strokeDashoffset extends StObject
+  inline def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]
   
   @js.native
-  sealed trait textOverflow extends js.Object
+  sealed trait strokeLinecap extends StObject
+  inline def strokeLinecap: strokeLinecap = "strokeLinecap".asInstanceOf[strokeLinecap]
   
   @js.native
-  sealed trait textRendering extends js.Object
+  sealed trait strokeLinejoin extends StObject
+  inline def strokeLinejoin: strokeLinejoin = "strokeLinejoin".asInstanceOf[strokeLinejoin]
   
   @js.native
-  sealed trait textShadow extends js.Object
+  sealed trait strokeMiterlimit extends StObject
+  inline def strokeMiterlimit: strokeMiterlimit = "strokeMiterlimit".asInstanceOf[strokeMiterlimit]
   
   @js.native
-  sealed trait textTransform extends js.Object
+  sealed trait strokeOpacity extends StObject
+  inline def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
   
   @js.native
-  sealed trait textUnderlinePosition extends js.Object
+  sealed trait strokeWidth extends StObject
+  inline def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait swap extends StObject
+  inline def swap: swap = "swap".asInstanceOf[swap]
   
   @js.native
-  sealed trait touchAction extends js.Object
+  sealed trait swapClass extends StObject
+  inline def swapClass: swapClass = "swapClass".asInstanceOf[swapClass]
   
   @js.native
-  sealed trait touchStartThreshold extends js.Object
+  sealed trait swapThreshold extends StObject
+  inline def swapThreshold: swapThreshold = "swapThreshold".asInstanceOf[swapThreshold]
   
   @js.native
-  sealed trait transform extends js.Object
+  sealed trait tabSize extends StObject
+  inline def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
   
   @js.native
-  sealed trait transformBox extends js.Object
+  sealed trait tableLayout extends StObject
+  inline def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
   
   @js.native
-  sealed trait transformOrigin extends js.Object
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
   @js.native
-  sealed trait transformStyle extends js.Object
+  sealed trait textAlignLast extends StObject
+  inline def textAlignLast: textAlignLast = "textAlignLast".asInstanceOf[textAlignLast]
   
   @js.native
-  sealed trait transition extends js.Object
+  sealed trait textAnchor extends StObject
+  inline def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
   
   @js.native
-  sealed trait transitionDelay extends js.Object
+  sealed trait textCombineUpright extends StObject
+  inline def textCombineUpright: textCombineUpright = "textCombineUpright".asInstanceOf[textCombineUpright]
   
   @js.native
-  sealed trait transitionDuration extends js.Object
+  sealed trait textDecoration extends StObject
+  inline def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
   
   @js.native
-  sealed trait transitionProperty extends js.Object
+  sealed trait textDecorationColor extends StObject
+  inline def textDecorationColor: textDecorationColor = "textDecorationColor".asInstanceOf[textDecorationColor]
   
   @js.native
-  sealed trait transitionTimingFunction extends js.Object
+  sealed trait textDecorationLine extends StObject
+  inline def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
   
   @js.native
-  sealed trait translate extends js.Object
+  sealed trait textDecorationSkipInk extends StObject
+  inline def textDecorationSkipInk: textDecorationSkipInk = "textDecorationSkipInk".asInstanceOf[textDecorationSkipInk]
   
   @js.native
-  sealed trait unicodeBidi extends js.Object
+  sealed trait textDecorationStyle extends StObject
+  inline def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
   
   @js.native
-  sealed trait userSelect extends js.Object
+  sealed trait textDecorationThickness extends StObject
+  inline def textDecorationThickness: textDecorationThickness = "textDecorationThickness".asInstanceOf[textDecorationThickness]
   
   @js.native
-  sealed trait vertical extends Direction
+  sealed trait textEmphasis extends StObject
+  inline def textEmphasis: textEmphasis = "textEmphasis".asInstanceOf[textEmphasis]
   
   @js.native
-  sealed trait verticalAlign extends js.Object
+  sealed trait textEmphasisColor extends StObject
+  inline def textEmphasisColor: textEmphasisColor = "textEmphasisColor".asInstanceOf[textEmphasisColor]
   
   @js.native
-  sealed trait visibility extends js.Object
+  sealed trait textEmphasisPosition extends StObject
+  inline def textEmphasisPosition: textEmphasisPosition = "textEmphasisPosition".asInstanceOf[textEmphasisPosition]
   
   @js.native
-  sealed trait webkitAlignContent extends js.Object
+  sealed trait textEmphasisStyle extends StObject
+  inline def textEmphasisStyle: textEmphasisStyle = "textEmphasisStyle".asInstanceOf[textEmphasisStyle]
   
   @js.native
-  sealed trait webkitAlignItems extends js.Object
+  sealed trait textIndent extends StObject
+  inline def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
   
   @js.native
-  sealed trait webkitAlignSelf extends js.Object
+  sealed trait textOrientation extends StObject
+  inline def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
   
   @js.native
-  sealed trait webkitAnimation extends js.Object
+  sealed trait textOverflow extends StObject
+  inline def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
   
   @js.native
-  sealed trait webkitAnimationDelay extends js.Object
+  sealed trait textRendering extends StObject
+  inline def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
   
   @js.native
-  sealed trait webkitAnimationDirection extends js.Object
+  sealed trait textShadow extends StObject
+  inline def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
   
   @js.native
-  sealed trait webkitAnimationDuration extends js.Object
+  sealed trait textTransform extends StObject
+  inline def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
   
   @js.native
-  sealed trait webkitAnimationFillMode extends js.Object
+  sealed trait textUnderlineOffset extends StObject
+  inline def textUnderlineOffset: textUnderlineOffset = "textUnderlineOffset".asInstanceOf[textUnderlineOffset]
   
   @js.native
-  sealed trait webkitAnimationIterationCount extends js.Object
+  sealed trait textUnderlinePosition extends StObject
+  inline def textUnderlinePosition: textUnderlinePosition = "textUnderlinePosition".asInstanceOf[textUnderlinePosition]
   
   @js.native
-  sealed trait webkitAnimationName extends js.Object
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait webkitAnimationPlayState extends js.Object
+  sealed trait touchAction extends StObject
+  inline def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
   
   @js.native
-  sealed trait webkitAnimationTimingFunction extends js.Object
+  sealed trait touchStartThreshold extends StObject
+  inline def touchStartThreshold: touchStartThreshold = "touchStartThreshold".asInstanceOf[touchStartThreshold]
   
   @js.native
-  sealed trait webkitAppearance extends js.Object
+  sealed trait transform extends StObject
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
-  sealed trait webkitBackfaceVisibility extends js.Object
+  sealed trait transformBox extends StObject
+  inline def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
   
   @js.native
-  sealed trait webkitBackgroundClip extends js.Object
+  sealed trait transformOrigin extends StObject
+  inline def transformOrigin: transformOrigin = "transformOrigin".asInstanceOf[transformOrigin]
   
   @js.native
-  sealed trait webkitBackgroundOrigin extends js.Object
+  sealed trait transformStyle extends StObject
+  inline def transformStyle: transformStyle = "transformStyle".asInstanceOf[transformStyle]
   
   @js.native
-  sealed trait webkitBackgroundSize extends js.Object
+  sealed trait transition extends StObject
+  inline def transition: transition = "transition".asInstanceOf[transition]
   
   @js.native
-  sealed trait webkitBorderBottomLeftRadius extends js.Object
+  sealed trait transitionDelay extends StObject
+  inline def transitionDelay: transitionDelay = "transitionDelay".asInstanceOf[transitionDelay]
   
   @js.native
-  sealed trait webkitBorderBottomRightRadius extends js.Object
+  sealed trait transitionDuration extends StObject
+  inline def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
   
   @js.native
-  sealed trait webkitBorderImage extends js.Object
+  sealed trait transitionProperty extends StObject
+  inline def transitionProperty: transitionProperty = "transitionProperty".asInstanceOf[transitionProperty]
   
   @js.native
-  sealed trait webkitBorderRadius extends js.Object
+  sealed trait transitionTimingFunction extends StObject
+  inline def transitionTimingFunction: transitionTimingFunction = "transitionTimingFunction".asInstanceOf[transitionTimingFunction]
   
   @js.native
-  sealed trait webkitBorderTopLeftRadius extends js.Object
+  sealed trait translate extends StObject
+  inline def translate: translate = "translate".asInstanceOf[translate]
   
   @js.native
-  sealed trait webkitBorderTopRightRadius extends js.Object
+  sealed trait unicodeBidi extends StObject
+  inline def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
   
   @js.native
-  sealed trait webkitBoxAlign extends js.Object
+  sealed trait userSelect extends StObject
+  inline def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
   
   @js.native
-  sealed trait webkitBoxDirection extends js.Object
+  sealed trait vertical
+    extends StObject
+       with Direction
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait webkitBoxFlex extends js.Object
+  sealed trait verticalAlign extends StObject
+  inline def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
   
   @js.native
-  sealed trait webkitBoxOrdinalGroup extends js.Object
+  sealed trait visibility extends StObject
+  inline def visibility: visibility = "visibility".asInstanceOf[visibility]
   
   @js.native
-  sealed trait webkitBoxOrient extends js.Object
+  sealed trait webkitAlignContent extends StObject
+  inline def webkitAlignContent: webkitAlignContent = "webkitAlignContent".asInstanceOf[webkitAlignContent]
   
   @js.native
-  sealed trait webkitBoxPack extends js.Object
+  sealed trait webkitAlignItems extends StObject
+  inline def webkitAlignItems: webkitAlignItems = "webkitAlignItems".asInstanceOf[webkitAlignItems]
   
   @js.native
-  sealed trait webkitBoxShadow extends js.Object
+  sealed trait webkitAlignSelf extends StObject
+  inline def webkitAlignSelf: webkitAlignSelf = "webkitAlignSelf".asInstanceOf[webkitAlignSelf]
   
   @js.native
-  sealed trait webkitBoxSizing extends js.Object
+  sealed trait webkitAnimation extends StObject
+  inline def webkitAnimation: webkitAnimation = "webkitAnimation".asInstanceOf[webkitAnimation]
   
   @js.native
-  sealed trait webkitColumnBreakAfter extends js.Object
+  sealed trait webkitAnimationDelay extends StObject
+  inline def webkitAnimationDelay: webkitAnimationDelay = "webkitAnimationDelay".asInstanceOf[webkitAnimationDelay]
   
   @js.native
-  sealed trait webkitColumnBreakBefore extends js.Object
+  sealed trait webkitAnimationDirection extends StObject
+  inline def webkitAnimationDirection: webkitAnimationDirection = "webkitAnimationDirection".asInstanceOf[webkitAnimationDirection]
   
   @js.native
-  sealed trait webkitColumnBreakInside extends js.Object
+  sealed trait webkitAnimationDuration extends StObject
+  inline def webkitAnimationDuration: webkitAnimationDuration = "webkitAnimationDuration".asInstanceOf[webkitAnimationDuration]
   
   @js.native
-  sealed trait webkitColumnCount extends js.Object
+  sealed trait webkitAnimationFillMode extends StObject
+  inline def webkitAnimationFillMode: webkitAnimationFillMode = "webkitAnimationFillMode".asInstanceOf[webkitAnimationFillMode]
   
   @js.native
-  sealed trait webkitColumnGap extends js.Object
+  sealed trait webkitAnimationIterationCount extends StObject
+  inline def webkitAnimationIterationCount: webkitAnimationIterationCount = "webkitAnimationIterationCount".asInstanceOf[webkitAnimationIterationCount]
   
   @js.native
-  sealed trait webkitColumnRule extends js.Object
+  sealed trait webkitAnimationName extends StObject
+  inline def webkitAnimationName: webkitAnimationName = "webkitAnimationName".asInstanceOf[webkitAnimationName]
   
   @js.native
-  sealed trait webkitColumnRuleColor extends js.Object
+  sealed trait webkitAnimationPlayState extends StObject
+  inline def webkitAnimationPlayState: webkitAnimationPlayState = "webkitAnimationPlayState".asInstanceOf[webkitAnimationPlayState]
   
   @js.native
-  sealed trait webkitColumnRuleStyle extends js.Object
+  sealed trait webkitAnimationTimingFunction extends StObject
+  inline def webkitAnimationTimingFunction: webkitAnimationTimingFunction = "webkitAnimationTimingFunction".asInstanceOf[webkitAnimationTimingFunction]
   
   @js.native
-  sealed trait webkitColumnRuleWidth extends js.Object
+  sealed trait webkitAppearance extends StObject
+  inline def webkitAppearance: webkitAppearance = "webkitAppearance".asInstanceOf[webkitAppearance]
   
   @js.native
-  sealed trait webkitColumnSpan extends js.Object
+  sealed trait webkitBackfaceVisibility extends StObject
+  inline def webkitBackfaceVisibility: webkitBackfaceVisibility = "webkitBackfaceVisibility".asInstanceOf[webkitBackfaceVisibility]
   
   @js.native
-  sealed trait webkitColumnWidth extends js.Object
+  sealed trait webkitBackgroundClip extends StObject
+  inline def webkitBackgroundClip: webkitBackgroundClip = "webkitBackgroundClip".asInstanceOf[webkitBackgroundClip]
   
   @js.native
-  sealed trait webkitColumns extends js.Object
+  sealed trait webkitBackgroundOrigin extends StObject
+  inline def webkitBackgroundOrigin: webkitBackgroundOrigin = "webkitBackgroundOrigin".asInstanceOf[webkitBackgroundOrigin]
   
   @js.native
-  sealed trait webkitFilter extends js.Object
+  sealed trait webkitBackgroundSize extends StObject
+  inline def webkitBackgroundSize: webkitBackgroundSize = "webkitBackgroundSize".asInstanceOf[webkitBackgroundSize]
   
   @js.native
-  sealed trait webkitFlex extends js.Object
+  sealed trait webkitBorderBottomLeftRadius extends StObject
+  inline def webkitBorderBottomLeftRadius: webkitBorderBottomLeftRadius = "webkitBorderBottomLeftRadius".asInstanceOf[webkitBorderBottomLeftRadius]
   
   @js.native
-  sealed trait webkitFlexBasis extends js.Object
+  sealed trait webkitBorderBottomRightRadius extends StObject
+  inline def webkitBorderBottomRightRadius: webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius]
   
   @js.native
-  sealed trait webkitFlexDirection extends js.Object
+  sealed trait webkitBorderRadius extends StObject
+  inline def webkitBorderRadius: webkitBorderRadius = "webkitBorderRadius".asInstanceOf[webkitBorderRadius]
   
   @js.native
-  sealed trait webkitFlexFlow extends js.Object
+  sealed trait webkitBorderTopLeftRadius extends StObject
+  inline def webkitBorderTopLeftRadius: webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius]
   
   @js.native
-  sealed trait webkitFlexGrow extends js.Object
+  sealed trait webkitBorderTopRightRadius extends StObject
+  inline def webkitBorderTopRightRadius: webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius]
   
   @js.native
-  sealed trait webkitFlexShrink extends js.Object
+  sealed trait webkitBoxAlign extends StObject
+  inline def webkitBoxAlign: webkitBoxAlign = "webkitBoxAlign".asInstanceOf[webkitBoxAlign]
   
   @js.native
-  sealed trait webkitFlexWrap extends js.Object
+  sealed trait webkitBoxFlex extends StObject
+  inline def webkitBoxFlex: webkitBoxFlex = "webkitBoxFlex".asInstanceOf[webkitBoxFlex]
   
   @js.native
-  sealed trait webkitJustifyContent extends js.Object
+  sealed trait webkitBoxOrdinalGroup extends StObject
+  inline def webkitBoxOrdinalGroup: webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[webkitBoxOrdinalGroup]
   
   @js.native
-  sealed trait webkitLineClamp extends js.Object
+  sealed trait webkitBoxOrient extends StObject
+  inline def webkitBoxOrient: webkitBoxOrient = "webkitBoxOrient".asInstanceOf[webkitBoxOrient]
   
   @js.native
-  sealed trait webkitMask extends js.Object
+  sealed trait webkitBoxPack extends StObject
+  inline def webkitBoxPack: webkitBoxPack = "webkitBoxPack".asInstanceOf[webkitBoxPack]
   
   @js.native
-  sealed trait webkitMaskBoxImage extends js.Object
+  sealed trait webkitBoxShadow extends StObject
+  inline def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
   
   @js.native
-  sealed trait webkitMaskBoxImageOutset extends js.Object
+  sealed trait webkitBoxSizing extends StObject
+  inline def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
   
   @js.native
-  sealed trait webkitMaskBoxImageRepeat extends js.Object
+  sealed trait webkitFilter extends StObject
+  inline def webkitFilter: webkitFilter = "webkitFilter".asInstanceOf[webkitFilter]
   
   @js.native
-  sealed trait webkitMaskBoxImageSlice extends js.Object
+  sealed trait webkitFlex extends StObject
+  inline def webkitFlex: webkitFlex = "webkitFlex".asInstanceOf[webkitFlex]
   
   @js.native
-  sealed trait webkitMaskBoxImageSource extends js.Object
+  sealed trait webkitFlexBasis extends StObject
+  inline def webkitFlexBasis: webkitFlexBasis = "webkitFlexBasis".asInstanceOf[webkitFlexBasis]
   
   @js.native
-  sealed trait webkitMaskBoxImageWidth extends js.Object
+  sealed trait webkitFlexDirection extends StObject
+  inline def webkitFlexDirection: webkitFlexDirection = "webkitFlexDirection".asInstanceOf[webkitFlexDirection]
   
   @js.native
-  sealed trait webkitMaskClip extends js.Object
+  sealed trait webkitFlexFlow extends StObject
+  inline def webkitFlexFlow: webkitFlexFlow = "webkitFlexFlow".asInstanceOf[webkitFlexFlow]
   
   @js.native
-  sealed trait webkitMaskComposite extends js.Object
+  sealed trait webkitFlexGrow extends StObject
+  inline def webkitFlexGrow: webkitFlexGrow = "webkitFlexGrow".asInstanceOf[webkitFlexGrow]
   
   @js.native
-  sealed trait webkitMaskImage extends js.Object
+  sealed trait webkitFlexShrink extends StObject
+  inline def webkitFlexShrink: webkitFlexShrink = "webkitFlexShrink".asInstanceOf[webkitFlexShrink]
   
   @js.native
-  sealed trait webkitMaskOrigin extends js.Object
+  sealed trait webkitFlexWrap extends StObject
+  inline def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
   
   @js.native
-  sealed trait webkitMaskPosition extends js.Object
+  sealed trait webkitJustifyContent extends StObject
+  inline def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
   
   @js.native
-  sealed trait webkitMaskRepeat extends js.Object
+  sealed trait webkitLineClamp extends StObject
+  inline def webkitLineClamp: webkitLineClamp = "webkitLineClamp".asInstanceOf[webkitLineClamp]
   
   @js.native
-  sealed trait webkitMaskSize extends js.Object
+  sealed trait webkitMask extends StObject
+  inline def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
   
   @js.native
-  sealed trait webkitOrder extends js.Object
+  sealed trait webkitMaskBoxImage extends StObject
+  inline def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
   
   @js.native
-  sealed trait webkitPerspective extends js.Object
+  sealed trait webkitMaskBoxImageOutset extends StObject
+  inline def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
   
   @js.native
-  sealed trait webkitPerspectiveOrigin extends js.Object
+  sealed trait webkitMaskBoxImageRepeat extends StObject
+  inline def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
   
   @js.native
-  sealed trait webkitTapHighlightColor extends js.Object
+  sealed trait webkitMaskBoxImageSlice extends StObject
+  inline def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
   
   @js.native
-  sealed trait webkitTextFillColor extends js.Object
+  sealed trait webkitMaskBoxImageSource extends StObject
+  inline def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
   
   @js.native
-  sealed trait webkitTextSizeAdjust extends js.Object
+  sealed trait webkitMaskBoxImageWidth extends StObject
+  inline def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
   
   @js.native
-  sealed trait webkitTextStroke extends js.Object
+  sealed trait webkitMaskClip extends StObject
+  inline def webkitMaskClip: webkitMaskClip = "webkitMaskClip".asInstanceOf[webkitMaskClip]
   
   @js.native
-  sealed trait webkitTextStrokeColor extends js.Object
+  sealed trait webkitMaskComposite extends StObject
+  inline def webkitMaskComposite: webkitMaskComposite = "webkitMaskComposite".asInstanceOf[webkitMaskComposite]
   
   @js.native
-  sealed trait webkitTextStrokeWidth extends js.Object
+  sealed trait webkitMaskImage extends StObject
+  inline def webkitMaskImage: webkitMaskImage = "webkitMaskImage".asInstanceOf[webkitMaskImage]
   
   @js.native
-  sealed trait webkitTransform extends js.Object
+  sealed trait webkitMaskOrigin extends StObject
+  inline def webkitMaskOrigin: webkitMaskOrigin = "webkitMaskOrigin".asInstanceOf[webkitMaskOrigin]
   
   @js.native
-  sealed trait webkitTransformOrigin extends js.Object
+  sealed trait webkitMaskPosition extends StObject
+  inline def webkitMaskPosition: webkitMaskPosition = "webkitMaskPosition".asInstanceOf[webkitMaskPosition]
   
   @js.native
-  sealed trait webkitTransformStyle extends js.Object
+  sealed trait webkitMaskRepeat extends StObject
+  inline def webkitMaskRepeat: webkitMaskRepeat = "webkitMaskRepeat".asInstanceOf[webkitMaskRepeat]
   
   @js.native
-  sealed trait webkitTransition extends js.Object
+  sealed trait webkitMaskSize extends StObject
+  inline def webkitMaskSize: webkitMaskSize = "webkitMaskSize".asInstanceOf[webkitMaskSize]
   
   @js.native
-  sealed trait webkitTransitionDelay extends js.Object
+  sealed trait webkitOrder extends StObject
+  inline def webkitOrder: webkitOrder = "webkitOrder".asInstanceOf[webkitOrder]
   
   @js.native
-  sealed trait webkitTransitionDuration extends js.Object
+  sealed trait webkitPerspective extends StObject
+  inline def webkitPerspective: webkitPerspective = "webkitPerspective".asInstanceOf[webkitPerspective]
   
   @js.native
-  sealed trait webkitTransitionProperty extends js.Object
+  sealed trait webkitPerspectiveOrigin extends StObject
+  inline def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]
   
   @js.native
-  sealed trait webkitTransitionTimingFunction extends js.Object
+  sealed trait webkitTextFillColor extends StObject
+  inline def webkitTextFillColor: webkitTextFillColor = "webkitTextFillColor".asInstanceOf[webkitTextFillColor]
   
   @js.native
-  sealed trait webkitUserModify extends js.Object
+  sealed trait webkitTextSizeAdjust extends StObject
+  inline def webkitTextSizeAdjust: webkitTextSizeAdjust = "webkitTextSizeAdjust".asInstanceOf[webkitTextSizeAdjust]
   
   @js.native
-  sealed trait webkitUserSelect extends js.Object
+  sealed trait webkitTextStroke extends StObject
+  inline def webkitTextStroke: webkitTextStroke = "webkitTextStroke".asInstanceOf[webkitTextStroke]
   
   @js.native
-  sealed trait webkitWritingMode extends js.Object
+  sealed trait webkitTextStrokeColor extends StObject
+  inline def webkitTextStrokeColor: webkitTextStrokeColor = "webkitTextStrokeColor".asInstanceOf[webkitTextStrokeColor]
   
   @js.native
-  sealed trait whiteSpace extends js.Object
+  sealed trait webkitTextStrokeWidth extends StObject
+  inline def webkitTextStrokeWidth: webkitTextStrokeWidth = "webkitTextStrokeWidth".asInstanceOf[webkitTextStrokeWidth]
   
   @js.native
-  sealed trait widows extends js.Object
+  sealed trait webkitTransform extends StObject
+  inline def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait webkitTransformOrigin extends StObject
+  inline def webkitTransformOrigin: webkitTransformOrigin = "webkitTransformOrigin".asInstanceOf[webkitTransformOrigin]
   
   @js.native
-  sealed trait willChange extends js.Object
+  sealed trait webkitTransformStyle extends StObject
+  inline def webkitTransformStyle: webkitTransformStyle = "webkitTransformStyle".asInstanceOf[webkitTransformStyle]
   
   @js.native
-  sealed trait wordBreak extends js.Object
+  sealed trait webkitTransition extends StObject
+  inline def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
   
   @js.native
-  sealed trait wordSpacing extends js.Object
+  sealed trait webkitTransitionDelay extends StObject
+  inline def webkitTransitionDelay: webkitTransitionDelay = "webkitTransitionDelay".asInstanceOf[webkitTransitionDelay]
   
   @js.native
-  sealed trait wordWrap extends js.Object
+  sealed trait webkitTransitionDuration extends StObject
+  inline def webkitTransitionDuration: webkitTransitionDuration = "webkitTransitionDuration".asInstanceOf[webkitTransitionDuration]
   
   @js.native
-  sealed trait writingMode extends js.Object
+  sealed trait webkitTransitionProperty extends StObject
+  inline def webkitTransitionProperty: webkitTransitionProperty = "webkitTransitionProperty".asInstanceOf[webkitTransitionProperty]
   
   @js.native
-  sealed trait zIndex extends js.Object
+  sealed trait webkitTransitionTimingFunction extends StObject
+  inline def webkitTransitionTimingFunction: webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[webkitTransitionTimingFunction]
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait webkitUserSelect extends StObject
+  inline def webkitUserSelect: webkitUserSelect = "webkitUserSelect".asInstanceOf[webkitUserSelect]
   
-  @scala.inline
-  def alignContent: alignContent = "alignContent".asInstanceOf[alignContent]
-  @scala.inline
-  def alignItems: alignItems = "alignItems".asInstanceOf[alignItems]
-  @scala.inline
-  def alignSelf: alignSelf = "alignSelf".asInstanceOf[alignSelf]
-  @scala.inline
-  def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]
-  @scala.inline
-  def animation: animation = "animation".asInstanceOf[animation]
-  @scala.inline
-  def animationDelay: animationDelay = "animationDelay".asInstanceOf[animationDelay]
-  @scala.inline
-  def animationDirection: animationDirection = "animationDirection".asInstanceOf[animationDirection]
-  @scala.inline
-  def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
-  @scala.inline
-  def animationFillMode: animationFillMode = "animationFillMode".asInstanceOf[animationFillMode]
-  @scala.inline
-  def animationIterationCount: animationIterationCount = "animationIterationCount".asInstanceOf[animationIterationCount]
-  @scala.inline
-  def animationName: animationName = "animationName".asInstanceOf[animationName]
-  @scala.inline
-  def animationPlayState: animationPlayState = "animationPlayState".asInstanceOf[animationPlayState]
-  @scala.inline
-  def animationTimingFunction: animationTimingFunction = "animationTimingFunction".asInstanceOf[animationTimingFunction]
-  @scala.inline
-  def backfaceVisibility: backfaceVisibility = "backfaceVisibility".asInstanceOf[backfaceVisibility]
-  @scala.inline
-  def background: background = "background".asInstanceOf[background]
-  @scala.inline
-  def backgroundAttachment: backgroundAttachment = "backgroundAttachment".asInstanceOf[backgroundAttachment]
-  @scala.inline
-  def backgroundClip: backgroundClip = "backgroundClip".asInstanceOf[backgroundClip]
-  @scala.inline
-  def backgroundColor: backgroundColor = "backgroundColor".asInstanceOf[backgroundColor]
-  @scala.inline
-  def backgroundImage: backgroundImage = "backgroundImage".asInstanceOf[backgroundImage]
-  @scala.inline
-  def backgroundOrigin: backgroundOrigin = "backgroundOrigin".asInstanceOf[backgroundOrigin]
-  @scala.inline
-  def backgroundPosition: backgroundPosition = "backgroundPosition".asInstanceOf[backgroundPosition]
-  @scala.inline
-  def backgroundPositionX: backgroundPositionX = "backgroundPositionX".asInstanceOf[backgroundPositionX]
-  @scala.inline
-  def backgroundPositionY: backgroundPositionY = "backgroundPositionY".asInstanceOf[backgroundPositionY]
-  @scala.inline
-  def backgroundRepeat: backgroundRepeat = "backgroundRepeat".asInstanceOf[backgroundRepeat]
-  @scala.inline
-  def backgroundSize: backgroundSize = "backgroundSize".asInstanceOf[backgroundSize]
-  @scala.inline
-  def baselineShift: baselineShift = "baselineShift".asInstanceOf[baselineShift]
-  @scala.inline
-  def blockSize: blockSize = "blockSize".asInstanceOf[blockSize]
-  @scala.inline
-  def border: border = "border".asInstanceOf[border]
-  @scala.inline
-  def borderBlockEnd: borderBlockEnd = "borderBlockEnd".asInstanceOf[borderBlockEnd]
-  @scala.inline
-  def borderBlockEndColor: borderBlockEndColor = "borderBlockEndColor".asInstanceOf[borderBlockEndColor]
-  @scala.inline
-  def borderBlockEndStyle: borderBlockEndStyle = "borderBlockEndStyle".asInstanceOf[borderBlockEndStyle]
-  @scala.inline
-  def borderBlockEndWidth: borderBlockEndWidth = "borderBlockEndWidth".asInstanceOf[borderBlockEndWidth]
-  @scala.inline
-  def borderBlockStart: borderBlockStart = "borderBlockStart".asInstanceOf[borderBlockStart]
-  @scala.inline
-  def borderBlockStartColor: borderBlockStartColor = "borderBlockStartColor".asInstanceOf[borderBlockStartColor]
-  @scala.inline
-  def borderBlockStartStyle: borderBlockStartStyle = "borderBlockStartStyle".asInstanceOf[borderBlockStartStyle]
-  @scala.inline
-  def borderBlockStartWidth: borderBlockStartWidth = "borderBlockStartWidth".asInstanceOf[borderBlockStartWidth]
-  @scala.inline
-  def borderBottom: borderBottom = "borderBottom".asInstanceOf[borderBottom]
-  @scala.inline
-  def borderBottomColor: borderBottomColor = "borderBottomColor".asInstanceOf[borderBottomColor]
-  @scala.inline
-  def borderBottomLeftRadius: borderBottomLeftRadius = "borderBottomLeftRadius".asInstanceOf[borderBottomLeftRadius]
-  @scala.inline
-  def borderBottomRightRadius: borderBottomRightRadius = "borderBottomRightRadius".asInstanceOf[borderBottomRightRadius]
-  @scala.inline
-  def borderBottomStyle: borderBottomStyle = "borderBottomStyle".asInstanceOf[borderBottomStyle]
-  @scala.inline
-  def borderBottomWidth: borderBottomWidth = "borderBottomWidth".asInstanceOf[borderBottomWidth]
-  @scala.inline
-  def borderCollapse: borderCollapse = "borderCollapse".asInstanceOf[borderCollapse]
-  @scala.inline
-  def borderColor: borderColor = "borderColor".asInstanceOf[borderColor]
-  @scala.inline
-  def borderImage: borderImage = "borderImage".asInstanceOf[borderImage]
-  @scala.inline
-  def borderImageOutset: borderImageOutset = "borderImageOutset".asInstanceOf[borderImageOutset]
-  @scala.inline
-  def borderImageRepeat: borderImageRepeat = "borderImageRepeat".asInstanceOf[borderImageRepeat]
-  @scala.inline
-  def borderImageSlice: borderImageSlice = "borderImageSlice".asInstanceOf[borderImageSlice]
-  @scala.inline
-  def borderImageSource: borderImageSource = "borderImageSource".asInstanceOf[borderImageSource]
-  @scala.inline
-  def borderImageWidth: borderImageWidth = "borderImageWidth".asInstanceOf[borderImageWidth]
-  @scala.inline
-  def borderInlineEnd: borderInlineEnd = "borderInlineEnd".asInstanceOf[borderInlineEnd]
-  @scala.inline
-  def borderInlineEndColor: borderInlineEndColor = "borderInlineEndColor".asInstanceOf[borderInlineEndColor]
-  @scala.inline
-  def borderInlineEndStyle: borderInlineEndStyle = "borderInlineEndStyle".asInstanceOf[borderInlineEndStyle]
-  @scala.inline
-  def borderInlineEndWidth: borderInlineEndWidth = "borderInlineEndWidth".asInstanceOf[borderInlineEndWidth]
-  @scala.inline
-  def borderInlineStart: borderInlineStart = "borderInlineStart".asInstanceOf[borderInlineStart]
-  @scala.inline
-  def borderInlineStartColor: borderInlineStartColor = "borderInlineStartColor".asInstanceOf[borderInlineStartColor]
-  @scala.inline
-  def borderInlineStartStyle: borderInlineStartStyle = "borderInlineStartStyle".asInstanceOf[borderInlineStartStyle]
-  @scala.inline
-  def borderInlineStartWidth: borderInlineStartWidth = "borderInlineStartWidth".asInstanceOf[borderInlineStartWidth]
-  @scala.inline
-  def borderLeft: borderLeft = "borderLeft".asInstanceOf[borderLeft]
-  @scala.inline
-  def borderLeftColor: borderLeftColor = "borderLeftColor".asInstanceOf[borderLeftColor]
-  @scala.inline
-  def borderLeftStyle: borderLeftStyle = "borderLeftStyle".asInstanceOf[borderLeftStyle]
-  @scala.inline
-  def borderLeftWidth: borderLeftWidth = "borderLeftWidth".asInstanceOf[borderLeftWidth]
-  @scala.inline
-  def borderRadius: borderRadius = "borderRadius".asInstanceOf[borderRadius]
-  @scala.inline
-  def borderRight: borderRight = "borderRight".asInstanceOf[borderRight]
-  @scala.inline
-  def borderRightColor: borderRightColor = "borderRightColor".asInstanceOf[borderRightColor]
-  @scala.inline
-  def borderRightStyle: borderRightStyle = "borderRightStyle".asInstanceOf[borderRightStyle]
-  @scala.inline
-  def borderRightWidth: borderRightWidth = "borderRightWidth".asInstanceOf[borderRightWidth]
-  @scala.inline
-  def borderSpacing: borderSpacing = "borderSpacing".asInstanceOf[borderSpacing]
-  @scala.inline
-  def borderStyle: borderStyle = "borderStyle".asInstanceOf[borderStyle]
-  @scala.inline
-  def borderTop: borderTop = "borderTop".asInstanceOf[borderTop]
-  @scala.inline
-  def borderTopColor: borderTopColor = "borderTopColor".asInstanceOf[borderTopColor]
-  @scala.inline
-  def borderTopLeftRadius: borderTopLeftRadius = "borderTopLeftRadius".asInstanceOf[borderTopLeftRadius]
-  @scala.inline
-  def borderTopRightRadius: borderTopRightRadius = "borderTopRightRadius".asInstanceOf[borderTopRightRadius]
-  @scala.inline
-  def borderTopStyle: borderTopStyle = "borderTopStyle".asInstanceOf[borderTopStyle]
-  @scala.inline
-  def borderTopWidth: borderTopWidth = "borderTopWidth".asInstanceOf[borderTopWidth]
-  @scala.inline
-  def borderWidth: borderWidth = "borderWidth".asInstanceOf[borderWidth]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def boxShadow: boxShadow = "boxShadow".asInstanceOf[boxShadow]
-  @scala.inline
-  def boxSizing: boxSizing = "boxSizing".asInstanceOf[boxSizing]
-  @scala.inline
-  def breakAfter: breakAfter = "breakAfter".asInstanceOf[breakAfter]
-  @scala.inline
-  def breakBefore: breakBefore = "breakBefore".asInstanceOf[breakBefore]
-  @scala.inline
-  def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
-  @scala.inline
-  def bubbleScroll: bubbleScroll = "bubbleScroll".asInstanceOf[bubbleScroll]
-  @scala.inline
-  def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
-  @scala.inline
-  def caretColor: caretColor = "caretColor".asInstanceOf[caretColor]
-  @scala.inline
-  def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
-  def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
-  @scala.inline
-  def clipRule: clipRule = "clipRule".asInstanceOf[clipRule]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def colorInterpolation: colorInterpolation = "colorInterpolation".asInstanceOf[colorInterpolation]
-  @scala.inline
-  def colorInterpolationFilters: colorInterpolationFilters = "colorInterpolationFilters".asInstanceOf[colorInterpolationFilters]
-  @scala.inline
-  def columnCount: columnCount = "columnCount".asInstanceOf[columnCount]
-  @scala.inline
-  def columnFill: columnFill = "columnFill".asInstanceOf[columnFill]
-  @scala.inline
-  def columnGap: columnGap = "columnGap".asInstanceOf[columnGap]
-  @scala.inline
-  def columnRule: columnRule = "columnRule".asInstanceOf[columnRule]
-  @scala.inline
-  def columnRuleColor: columnRuleColor = "columnRuleColor".asInstanceOf[columnRuleColor]
-  @scala.inline
-  def columnRuleStyle: columnRuleStyle = "columnRuleStyle".asInstanceOf[columnRuleStyle]
-  @scala.inline
-  def columnRuleWidth: columnRuleWidth = "columnRuleWidth".asInstanceOf[columnRuleWidth]
-  @scala.inline
-  def columnSpan: columnSpan = "columnSpan".asInstanceOf[columnSpan]
-  @scala.inline
-  def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
-  @scala.inline
-  def columns: columns = "columns".asInstanceOf[columns]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def counterIncrement: counterIncrement = "counterIncrement".asInstanceOf[counterIncrement]
-  @scala.inline
-  def counterReset: counterReset = "counterReset".asInstanceOf[counterReset]
-  @scala.inline
-  def cssFloat: cssFloat = "cssFloat".asInstanceOf[cssFloat]
-  @scala.inline
-  def cssText: cssText = "cssText".asInstanceOf[cssText]
-  @scala.inline
-  def cursor: cursor = "cursor".asInstanceOf[cursor]
-  @scala.inline
-  def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
-  @scala.inline
-  def delay: delay = "delay".asInstanceOf[delay]
-  @scala.inline
-  def delayOnTouchOnly: delayOnTouchOnly = "delayOnTouchOnly".asInstanceOf[delayOnTouchOnly]
-  @scala.inline
-  def direction: direction = "direction".asInstanceOf[direction]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def display: display = "display".asInstanceOf[display]
-  @scala.inline
-  def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
-  @scala.inline
-  def dragClass: dragClass = "dragClass".asInstanceOf[dragClass]
-  @scala.inline
-  def draggable: draggable = "draggable".asInstanceOf[draggable]
-  @scala.inline
-  def dragoverBubble: dragoverBubble = "dragoverBubble".asInstanceOf[dragoverBubble]
-  @scala.inline
-  def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
-  @scala.inline
-  def easing: easing = "easing".asInstanceOf[easing]
-  @scala.inline
-  def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
-  @scala.inline
-  def emptyInsertThreshold: emptyInsertThreshold = "emptyInsertThreshold".asInstanceOf[emptyInsertThreshold]
-  @scala.inline
-  def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
-  @scala.inline
-  def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
-  @scala.inline
-  def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
-  @scala.inline
-  def fallbackOnBody: fallbackOnBody = "fallbackOnBody".asInstanceOf[fallbackOnBody]
-  @scala.inline
-  def fallbackTolerance: fallbackTolerance = "fallbackTolerance".asInstanceOf[fallbackTolerance]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
-  @scala.inline
-  def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def flex: flex = "flex".asInstanceOf[flex]
-  @scala.inline
-  def flexBasis: flexBasis = "flexBasis".asInstanceOf[flexBasis]
-  @scala.inline
-  def flexDirection: flexDirection = "flexDirection".asInstanceOf[flexDirection]
-  @scala.inline
-  def flexFlow: flexFlow = "flexFlow".asInstanceOf[flexFlow]
-  @scala.inline
-  def flexGrow: flexGrow = "flexGrow".asInstanceOf[flexGrow]
-  @scala.inline
-  def flexShrink: flexShrink = "flexShrink".asInstanceOf[flexShrink]
-  @scala.inline
-  def flexWrap: flexWrap = "flexWrap".asInstanceOf[flexWrap]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def floodColor: floodColor = "floodColor".asInstanceOf[floodColor]
-  @scala.inline
-  def floodOpacity: floodOpacity = "floodOpacity".asInstanceOf[floodOpacity]
-  @scala.inline
-  def font: font = "font".asInstanceOf[font]
-  @scala.inline
-  def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
-  @scala.inline
-  def fontFeatureSettings: fontFeatureSettings = "fontFeatureSettings".asInstanceOf[fontFeatureSettings]
-  @scala.inline
-  def fontKerning: fontKerning = "fontKerning".asInstanceOf[fontKerning]
-  @scala.inline
-  def fontSize: fontSize = "fontSize".asInstanceOf[fontSize]
-  @scala.inline
-  def fontSizeAdjust: fontSizeAdjust = "fontSizeAdjust".asInstanceOf[fontSizeAdjust]
-  @scala.inline
-  def fontStretch: fontStretch = "fontStretch".asInstanceOf[fontStretch]
-  @scala.inline
-  def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
-  @scala.inline
-  def fontSynthesis: fontSynthesis = "fontSynthesis".asInstanceOf[fontSynthesis]
-  @scala.inline
-  def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
-  @scala.inline
-  def fontVariantCaps: fontVariantCaps = "fontVariantCaps".asInstanceOf[fontVariantCaps]
-  @scala.inline
-  def fontVariantEastAsian: fontVariantEastAsian = "fontVariantEastAsian".asInstanceOf[fontVariantEastAsian]
-  @scala.inline
-  def fontVariantLigatures: fontVariantLigatures = "fontVariantLigatures".asInstanceOf[fontVariantLigatures]
-  @scala.inline
-  def fontVariantNumeric: fontVariantNumeric = "fontVariantNumeric".asInstanceOf[fontVariantNumeric]
-  @scala.inline
-  def fontVariantPosition: fontVariantPosition = "fontVariantPosition".asInstanceOf[fontVariantPosition]
-  @scala.inline
-  def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
-  @scala.inline
-  def forceFallback: forceFallback = "forceFallback".asInstanceOf[forceFallback]
-  @scala.inline
-  def gap: gap = "gap".asInstanceOf[gap]
-  @scala.inline
-  def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
-  @scala.inline
-  def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
-  @scala.inline
-  def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def gridArea: gridArea = "gridArea".asInstanceOf[gridArea]
-  @scala.inline
-  def gridAutoColumns: gridAutoColumns = "gridAutoColumns".asInstanceOf[gridAutoColumns]
-  @scala.inline
-  def gridAutoFlow: gridAutoFlow = "gridAutoFlow".asInstanceOf[gridAutoFlow]
-  @scala.inline
-  def gridAutoRows: gridAutoRows = "gridAutoRows".asInstanceOf[gridAutoRows]
-  @scala.inline
-  def gridColumn: gridColumn = "gridColumn".asInstanceOf[gridColumn]
-  @scala.inline
-  def gridColumnEnd: gridColumnEnd = "gridColumnEnd".asInstanceOf[gridColumnEnd]
-  @scala.inline
-  def gridColumnGap: gridColumnGap = "gridColumnGap".asInstanceOf[gridColumnGap]
-  @scala.inline
-  def gridColumnStart: gridColumnStart = "gridColumnStart".asInstanceOf[gridColumnStart]
-  @scala.inline
-  def gridGap: gridGap = "gridGap".asInstanceOf[gridGap]
-  @scala.inline
-  def gridRow: gridRow = "gridRow".asInstanceOf[gridRow]
-  @scala.inline
-  def gridRowEnd: gridRowEnd = "gridRowEnd".asInstanceOf[gridRowEnd]
-  @scala.inline
-  def gridRowGap: gridRowGap = "gridRowGap".asInstanceOf[gridRowGap]
-  @scala.inline
-  def gridRowStart: gridRowStart = "gridRowStart".asInstanceOf[gridRowStart]
-  @scala.inline
-  def gridTemplate: gridTemplate = "gridTemplate".asInstanceOf[gridTemplate]
-  @scala.inline
-  def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
-  @scala.inline
-  def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
-  @scala.inline
-  def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def handle: handle = "handle".asInstanceOf[handle]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def hyphens: hyphens = "hyphens".asInstanceOf[hyphens]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def imageOrientation: imageOrientation = "imageOrientation".asInstanceOf[imageOrientation]
-  @scala.inline
-  def imageRendering: imageRendering = "imageRendering".asInstanceOf[imageRendering]
-  @scala.inline
-  def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
-  @scala.inline
-  def inlineSize: inlineSize = "inlineSize".asInstanceOf[inlineSize]
-  @scala.inline
-  def invertSwap: invertSwap = "invertSwap".asInstanceOf[invertSwap]
-  @scala.inline
-  def invertedSwapThreshold: invertedSwapThreshold = "invertedSwapThreshold".asInstanceOf[invertedSwapThreshold]
-  @scala.inline
-  def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
-  @scala.inline
-  def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
-  @scala.inline
-  def justifySelf: justifySelf = "justifySelf".asInstanceOf[justifySelf]
-  @scala.inline
-  def kerning: kerning = "kerning".asInstanceOf[kerning]
-  @scala.inline
-  def layoutGrid: layoutGrid = "layoutGrid".asInstanceOf[layoutGrid]
-  @scala.inline
-  def layoutGridChar: layoutGridChar = "layoutGridChar".asInstanceOf[layoutGridChar]
-  @scala.inline
-  def layoutGridLine: layoutGridLine = "layoutGridLine".asInstanceOf[layoutGridLine]
-  @scala.inline
-  def layoutGridMode: layoutGridMode = "layoutGridMode".asInstanceOf[layoutGridMode]
-  @scala.inline
-  def layoutGridType: layoutGridType = "layoutGridType".asInstanceOf[layoutGridType]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def length: length = "length".asInstanceOf[length]
-  @scala.inline
-  def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
-  @scala.inline
-  def lightingColor: lightingColor = "lightingColor".asInstanceOf[lightingColor]
-  @scala.inline
-  def lineBreak: lineBreak = "lineBreak".asInstanceOf[lineBreak]
-  @scala.inline
-  def lineHeight: lineHeight = "lineHeight".asInstanceOf[lineHeight]
-  @scala.inline
-  def listStyle: listStyle = "listStyle".asInstanceOf[listStyle]
-  @scala.inline
-  def listStyleImage: listStyleImage = "listStyleImage".asInstanceOf[listStyleImage]
-  @scala.inline
-  def listStylePosition: listStylePosition = "listStylePosition".asInstanceOf[listStylePosition]
-  @scala.inline
-  def listStyleType: listStyleType = "listStyleType".asInstanceOf[listStyleType]
-  @scala.inline
-  def margin: margin = "margin".asInstanceOf[margin]
-  @scala.inline
-  def marginBlockEnd: marginBlockEnd = "marginBlockEnd".asInstanceOf[marginBlockEnd]
-  @scala.inline
-  def marginBlockStart: marginBlockStart = "marginBlockStart".asInstanceOf[marginBlockStart]
-  @scala.inline
-  def marginBottom: marginBottom = "marginBottom".asInstanceOf[marginBottom]
-  @scala.inline
-  def marginInlineEnd: marginInlineEnd = "marginInlineEnd".asInstanceOf[marginInlineEnd]
-  @scala.inline
-  def marginInlineStart: marginInlineStart = "marginInlineStart".asInstanceOf[marginInlineStart]
-  @scala.inline
-  def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
-  @scala.inline
-  def marginRight: marginRight = "marginRight".asInstanceOf[marginRight]
-  @scala.inline
-  def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
-  @scala.inline
-  def marker: marker = "marker".asInstanceOf[marker]
-  @scala.inline
-  def markerEnd: markerEnd = "markerEnd".asInstanceOf[markerEnd]
-  @scala.inline
-  def markerMid: markerMid = "markerMid".asInstanceOf[markerMid]
-  @scala.inline
-  def markerStart: markerStart = "markerStart".asInstanceOf[markerStart]
-  @scala.inline
-  def mask: mask = "mask".asInstanceOf[mask]
-  @scala.inline
-  def maskComposite: maskComposite = "maskComposite".asInstanceOf[maskComposite]
-  @scala.inline
-  def maskImage: maskImage = "maskImage".asInstanceOf[maskImage]
-  @scala.inline
-  def maskPosition: maskPosition = "maskPosition".asInstanceOf[maskPosition]
-  @scala.inline
-  def maskRepeat: maskRepeat = "maskRepeat".asInstanceOf[maskRepeat]
-  @scala.inline
-  def maskSize: maskSize = "maskSize".asInstanceOf[maskSize]
-  @scala.inline
-  def maskType: maskType = "maskType".asInstanceOf[maskType]
-  @scala.inline
-  def maxBlockSize: maxBlockSize = "maxBlockSize".asInstanceOf[maxBlockSize]
-  @scala.inline
-  def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
-  @scala.inline
-  def maxInlineSize: maxInlineSize = "maxInlineSize".asInstanceOf[maxInlineSize]
-  @scala.inline
-  def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
-  @scala.inline
-  def minBlockSize: minBlockSize = "minBlockSize".asInstanceOf[minBlockSize]
-  @scala.inline
-  def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
-  @scala.inline
-  def minInlineSize: minInlineSize = "minInlineSize".asInstanceOf[minInlineSize]
-  @scala.inline
-  def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
-  @scala.inline
-  def msContentZoomChaining: msContentZoomChaining = "msContentZoomChaining".asInstanceOf[msContentZoomChaining]
-  @scala.inline
-  def msContentZoomLimit: msContentZoomLimit = "msContentZoomLimit".asInstanceOf[msContentZoomLimit]
-  @scala.inline
-  def msContentZoomLimitMax: msContentZoomLimitMax = "msContentZoomLimitMax".asInstanceOf[msContentZoomLimitMax]
-  @scala.inline
-  def msContentZoomLimitMin: msContentZoomLimitMin = "msContentZoomLimitMin".asInstanceOf[msContentZoomLimitMin]
-  @scala.inline
-  def msContentZoomSnap: msContentZoomSnap = "msContentZoomSnap".asInstanceOf[msContentZoomSnap]
-  @scala.inline
-  def msContentZoomSnapPoints: msContentZoomSnapPoints = "msContentZoomSnapPoints".asInstanceOf[msContentZoomSnapPoints]
-  @scala.inline
-  def msContentZoomSnapType: msContentZoomSnapType = "msContentZoomSnapType".asInstanceOf[msContentZoomSnapType]
-  @scala.inline
-  def msContentZooming: msContentZooming = "msContentZooming".asInstanceOf[msContentZooming]
-  @scala.inline
-  def msFlowFrom: msFlowFrom = "msFlowFrom".asInstanceOf[msFlowFrom]
-  @scala.inline
-  def msFlowInto: msFlowInto = "msFlowInto".asInstanceOf[msFlowInto]
-  @scala.inline
-  def msFontFeatureSettings: msFontFeatureSettings = "msFontFeatureSettings".asInstanceOf[msFontFeatureSettings]
-  @scala.inline
-  def msGridColumn: msGridColumn = "msGridColumn".asInstanceOf[msGridColumn]
-  @scala.inline
-  def msGridColumnAlign: msGridColumnAlign = "msGridColumnAlign".asInstanceOf[msGridColumnAlign]
-  @scala.inline
-  def msGridColumnSpan: msGridColumnSpan = "msGridColumnSpan".asInstanceOf[msGridColumnSpan]
-  @scala.inline
-  def msGridColumns: msGridColumns = "msGridColumns".asInstanceOf[msGridColumns]
-  @scala.inline
-  def msGridRow: msGridRow = "msGridRow".asInstanceOf[msGridRow]
-  @scala.inline
-  def msGridRowAlign: msGridRowAlign = "msGridRowAlign".asInstanceOf[msGridRowAlign]
-  @scala.inline
-  def msGridRowSpan: msGridRowSpan = "msGridRowSpan".asInstanceOf[msGridRowSpan]
-  @scala.inline
-  def msGridRows: msGridRows = "msGridRows".asInstanceOf[msGridRows]
-  @scala.inline
-  def msHighContrastAdjust: msHighContrastAdjust = "msHighContrastAdjust".asInstanceOf[msHighContrastAdjust]
-  @scala.inline
-  def msHyphenateLimitChars: msHyphenateLimitChars = "msHyphenateLimitChars".asInstanceOf[msHyphenateLimitChars]
-  @scala.inline
-  def msHyphenateLimitLines: msHyphenateLimitLines = "msHyphenateLimitLines".asInstanceOf[msHyphenateLimitLines]
-  @scala.inline
-  def msHyphenateLimitZone: msHyphenateLimitZone = "msHyphenateLimitZone".asInstanceOf[msHyphenateLimitZone]
-  @scala.inline
-  def msHyphens: msHyphens = "msHyphens".asInstanceOf[msHyphens]
-  @scala.inline
-  def msImeAlign: msImeAlign = "msImeAlign".asInstanceOf[msImeAlign]
-  @scala.inline
-  def msOverflowStyle: msOverflowStyle = "msOverflowStyle".asInstanceOf[msOverflowStyle]
-  @scala.inline
-  def msScrollChaining: msScrollChaining = "msScrollChaining".asInstanceOf[msScrollChaining]
-  @scala.inline
-  def msScrollLimit: msScrollLimit = "msScrollLimit".asInstanceOf[msScrollLimit]
-  @scala.inline
-  def msScrollLimitXMax: msScrollLimitXMax = "msScrollLimitXMax".asInstanceOf[msScrollLimitXMax]
-  @scala.inline
-  def msScrollLimitXMin: msScrollLimitXMin = "msScrollLimitXMin".asInstanceOf[msScrollLimitXMin]
-  @scala.inline
-  def msScrollLimitYMax: msScrollLimitYMax = "msScrollLimitYMax".asInstanceOf[msScrollLimitYMax]
-  @scala.inline
-  def msScrollLimitYMin: msScrollLimitYMin = "msScrollLimitYMin".asInstanceOf[msScrollLimitYMin]
-  @scala.inline
-  def msScrollRails: msScrollRails = "msScrollRails".asInstanceOf[msScrollRails]
-  @scala.inline
-  def msScrollSnapPointsX: msScrollSnapPointsX = "msScrollSnapPointsX".asInstanceOf[msScrollSnapPointsX]
-  @scala.inline
-  def msScrollSnapPointsY: msScrollSnapPointsY = "msScrollSnapPointsY".asInstanceOf[msScrollSnapPointsY]
-  @scala.inline
-  def msScrollSnapType: msScrollSnapType = "msScrollSnapType".asInstanceOf[msScrollSnapType]
-  @scala.inline
-  def msScrollSnapX: msScrollSnapX = "msScrollSnapX".asInstanceOf[msScrollSnapX]
-  @scala.inline
-  def msScrollSnapY: msScrollSnapY = "msScrollSnapY".asInstanceOf[msScrollSnapY]
-  @scala.inline
-  def msScrollTranslation: msScrollTranslation = "msScrollTranslation".asInstanceOf[msScrollTranslation]
-  @scala.inline
-  def msTextCombineHorizontal: msTextCombineHorizontal = "msTextCombineHorizontal".asInstanceOf[msTextCombineHorizontal]
-  @scala.inline
-  def msTextSizeAdjust: msTextSizeAdjust = "msTextSizeAdjust".asInstanceOf[msTextSizeAdjust]
-  @scala.inline
-  def msTouchAction: msTouchAction = "msTouchAction".asInstanceOf[msTouchAction]
-  @scala.inline
-  def msTouchSelect: msTouchSelect = "msTouchSelect".asInstanceOf[msTouchSelect]
-  @scala.inline
-  def msUserSelect: msUserSelect = "msUserSelect".asInstanceOf[msUserSelect]
-  @scala.inline
-  def msWrapFlow: msWrapFlow = "msWrapFlow".asInstanceOf[msWrapFlow]
-  @scala.inline
-  def msWrapMargin: msWrapMargin = "msWrapMargin".asInstanceOf[msWrapMargin]
-  @scala.inline
-  def msWrapThrough: msWrapThrough = "msWrapThrough".asInstanceOf[msWrapThrough]
-  @scala.inline
-  def multiDrag: multiDrag = "multiDrag".asInstanceOf[multiDrag]
-  @scala.inline
-  def multiDragKey: multiDragKey = "multiDragKey".asInstanceOf[multiDragKey]
-  @scala.inline
-  def objectFit: objectFit = "objectFit".asInstanceOf[objectFit]
-  @scala.inline
-  def objectPosition: objectPosition = "objectPosition".asInstanceOf[objectPosition]
-  @scala.inline
-  def opacity: opacity = "opacity".asInstanceOf[opacity]
-  @scala.inline
-  def order: order = "order".asInstanceOf[order]
-  @scala.inline
-  def orphans: orphans = "orphans".asInstanceOf[orphans]
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
-  @scala.inline
-  def outlineColor: outlineColor = "outlineColor".asInstanceOf[outlineColor]
-  @scala.inline
-  def outlineOffset: outlineOffset = "outlineOffset".asInstanceOf[outlineOffset]
-  @scala.inline
-  def outlineStyle: outlineStyle = "outlineStyle".asInstanceOf[outlineStyle]
-  @scala.inline
-  def outlineWidth: outlineWidth = "outlineWidth".asInstanceOf[outlineWidth]
-  @scala.inline
-  def overflow: overflow = "overflow".asInstanceOf[overflow]
-  @scala.inline
-  def overflowAnchor: overflowAnchor = "overflowAnchor".asInstanceOf[overflowAnchor]
-  @scala.inline
-  def overflowWrap: overflowWrap = "overflowWrap".asInstanceOf[overflowWrap]
-  @scala.inline
-  def overflowX: overflowX = "overflowX".asInstanceOf[overflowX]
-  @scala.inline
-  def overflowY: overflowY = "overflowY".asInstanceOf[overflowY]
-  @scala.inline
-  def padding: padding = "padding".asInstanceOf[padding]
-  @scala.inline
-  def paddingBlockEnd: paddingBlockEnd = "paddingBlockEnd".asInstanceOf[paddingBlockEnd]
-  @scala.inline
-  def paddingBlockStart: paddingBlockStart = "paddingBlockStart".asInstanceOf[paddingBlockStart]
-  @scala.inline
-  def paddingBottom: paddingBottom = "paddingBottom".asInstanceOf[paddingBottom]
-  @scala.inline
-  def paddingInlineEnd: paddingInlineEnd = "paddingInlineEnd".asInstanceOf[paddingInlineEnd]
-  @scala.inline
-  def paddingInlineStart: paddingInlineStart = "paddingInlineStart".asInstanceOf[paddingInlineStart]
-  @scala.inline
-  def paddingLeft: paddingLeft = "paddingLeft".asInstanceOf[paddingLeft]
-  @scala.inline
-  def paddingRight: paddingRight = "paddingRight".asInstanceOf[paddingRight]
-  @scala.inline
-  def paddingTop: paddingTop = "paddingTop".asInstanceOf[paddingTop]
-  @scala.inline
-  def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
-  @scala.inline
-  def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
-  @scala.inline
-  def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
-  @scala.inline
-  def paintOrder: paintOrder = "paintOrder".asInstanceOf[paintOrder]
-  @scala.inline
-  def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
-  @scala.inline
-  def penAction: penAction = "penAction".asInstanceOf[penAction]
-  @scala.inline
-  def perspective: perspective = "perspective".asInstanceOf[perspective]
-  @scala.inline
-  def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
-  @scala.inline
-  def placeContent: placeContent = "placeContent".asInstanceOf[placeContent]
-  @scala.inline
-  def placeItems: placeItems = "placeItems".asInstanceOf[placeItems]
-  @scala.inline
-  def placeSelf: placeSelf = "placeSelf".asInstanceOf[placeSelf]
-  @scala.inline
-  def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
-  @scala.inline
-  def position: position = "position".asInstanceOf[position]
-  @scala.inline
-  def preventOnFilter: preventOnFilter = "preventOnFilter".asInstanceOf[preventOnFilter]
-  @scala.inline
-  def quotes: quotes = "quotes".asInstanceOf[quotes]
-  @scala.inline
-  def removeCloneOnHide: removeCloneOnHide = "removeCloneOnHide".asInstanceOf[removeCloneOnHide]
-  @scala.inline
-  def removeOnSpill: removeOnSpill = "removeOnSpill".asInstanceOf[removeOnSpill]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def revertOnSpill: revertOnSpill = "revertOnSpill".asInstanceOf[revertOnSpill]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
-  @scala.inline
-  def rowGap: rowGap = "rowGap".asInstanceOf[rowGap]
-  @scala.inline
-  def rubyAlign: rubyAlign = "rubyAlign".asInstanceOf[rubyAlign]
-  @scala.inline
-  def rubyOverhang: rubyOverhang = "rubyOverhang".asInstanceOf[rubyOverhang]
-  @scala.inline
-  def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
-  @scala.inline
-  def scale: scale = "scale".asInstanceOf[scale]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
-  @scala.inline
-  def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
-  @scala.inline
-  def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
-  @scala.inline
-  def selectedClass: selectedClass = "selectedClass".asInstanceOf[selectedClass]
-  @scala.inline
-  def shapeRendering: shapeRendering = "shapeRendering".asInstanceOf[shapeRendering]
-  @scala.inline
-  def sort: sort = "sort".asInstanceOf[sort]
-  @scala.inline
-  def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
-  @scala.inline
-  def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
-  @scala.inline
-  def store: store = "store".asInstanceOf[store]
-  @scala.inline
-  def stroke: stroke = "stroke".asInstanceOf[stroke]
-  @scala.inline
-  def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
-  @scala.inline
-  def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]
-  @scala.inline
-  def strokeLinecap: strokeLinecap = "strokeLinecap".asInstanceOf[strokeLinecap]
-  @scala.inline
-  def strokeLinejoin: strokeLinejoin = "strokeLinejoin".asInstanceOf[strokeLinejoin]
-  @scala.inline
-  def strokeMiterlimit: strokeMiterlimit = "strokeMiterlimit".asInstanceOf[strokeMiterlimit]
-  @scala.inline
-  def strokeOpacity: strokeOpacity = "strokeOpacity".asInstanceOf[strokeOpacity]
-  @scala.inline
-  def strokeWidth: strokeWidth = "strokeWidth".asInstanceOf[strokeWidth]
-  @scala.inline
-  def swap: swap = "swap".asInstanceOf[swap]
-  @scala.inline
-  def swapClass: swapClass = "swapClass".asInstanceOf[swapClass]
-  @scala.inline
-  def swapThreshold: swapThreshold = "swapThreshold".asInstanceOf[swapThreshold]
-  @scala.inline
-  def tabSize: tabSize = "tabSize".asInstanceOf[tabSize]
-  @scala.inline
-  def tableLayout: tableLayout = "tableLayout".asInstanceOf[tableLayout]
-  @scala.inline
-  def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
-  @scala.inline
-  def textAlignLast: textAlignLast = "textAlignLast".asInstanceOf[textAlignLast]
-  @scala.inline
-  def textAnchor: textAnchor = "textAnchor".asInstanceOf[textAnchor]
-  @scala.inline
-  def textCombineUpright: textCombineUpright = "textCombineUpright".asInstanceOf[textCombineUpright]
-  @scala.inline
-  def textDecoration: textDecoration = "textDecoration".asInstanceOf[textDecoration]
-  @scala.inline
-  def textDecorationColor: textDecorationColor = "textDecorationColor".asInstanceOf[textDecorationColor]
-  @scala.inline
-  def textDecorationLine: textDecorationLine = "textDecorationLine".asInstanceOf[textDecorationLine]
-  @scala.inline
-  def textDecorationStyle: textDecorationStyle = "textDecorationStyle".asInstanceOf[textDecorationStyle]
-  @scala.inline
-  def textEmphasis: textEmphasis = "textEmphasis".asInstanceOf[textEmphasis]
-  @scala.inline
-  def textEmphasisColor: textEmphasisColor = "textEmphasisColor".asInstanceOf[textEmphasisColor]
-  @scala.inline
-  def textEmphasisPosition: textEmphasisPosition = "textEmphasisPosition".asInstanceOf[textEmphasisPosition]
-  @scala.inline
-  def textEmphasisStyle: textEmphasisStyle = "textEmphasisStyle".asInstanceOf[textEmphasisStyle]
-  @scala.inline
-  def textIndent: textIndent = "textIndent".asInstanceOf[textIndent]
-  @scala.inline
-  def textJustify: textJustify = "textJustify".asInstanceOf[textJustify]
-  @scala.inline
-  def textKashida: textKashida = "textKashida".asInstanceOf[textKashida]
-  @scala.inline
-  def textKashidaSpace: textKashidaSpace = "textKashidaSpace".asInstanceOf[textKashidaSpace]
-  @scala.inline
-  def textOrientation: textOrientation = "textOrientation".asInstanceOf[textOrientation]
-  @scala.inline
-  def textOverflow: textOverflow = "textOverflow".asInstanceOf[textOverflow]
-  @scala.inline
-  def textRendering: textRendering = "textRendering".asInstanceOf[textRendering]
-  @scala.inline
-  def textShadow: textShadow = "textShadow".asInstanceOf[textShadow]
-  @scala.inline
-  def textTransform: textTransform = "textTransform".asInstanceOf[textTransform]
-  @scala.inline
-  def textUnderlinePosition: textUnderlinePosition = "textUnderlinePosition".asInstanceOf[textUnderlinePosition]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def touchAction: touchAction = "touchAction".asInstanceOf[touchAction]
-  @scala.inline
-  def touchStartThreshold: touchStartThreshold = "touchStartThreshold".asInstanceOf[touchStartThreshold]
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
-  @scala.inline
-  def transformBox: transformBox = "transformBox".asInstanceOf[transformBox]
-  @scala.inline
-  def transformOrigin: transformOrigin = "transformOrigin".asInstanceOf[transformOrigin]
-  @scala.inline
-  def transformStyle: transformStyle = "transformStyle".asInstanceOf[transformStyle]
-  @scala.inline
-  def transition: transition = "transition".asInstanceOf[transition]
-  @scala.inline
-  def transitionDelay: transitionDelay = "transitionDelay".asInstanceOf[transitionDelay]
-  @scala.inline
-  def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
-  @scala.inline
-  def transitionProperty: transitionProperty = "transitionProperty".asInstanceOf[transitionProperty]
-  @scala.inline
-  def transitionTimingFunction: transitionTimingFunction = "transitionTimingFunction".asInstanceOf[transitionTimingFunction]
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def unicodeBidi: unicodeBidi = "unicodeBidi".asInstanceOf[unicodeBidi]
-  @scala.inline
-  def userSelect: userSelect = "userSelect".asInstanceOf[userSelect]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def verticalAlign: verticalAlign = "verticalAlign".asInstanceOf[verticalAlign]
-  @scala.inline
-  def visibility: visibility = "visibility".asInstanceOf[visibility]
-  @scala.inline
-  def webkitAlignContent: webkitAlignContent = "webkitAlignContent".asInstanceOf[webkitAlignContent]
-  @scala.inline
-  def webkitAlignItems: webkitAlignItems = "webkitAlignItems".asInstanceOf[webkitAlignItems]
-  @scala.inline
-  def webkitAlignSelf: webkitAlignSelf = "webkitAlignSelf".asInstanceOf[webkitAlignSelf]
-  @scala.inline
-  def webkitAnimation: webkitAnimation = "webkitAnimation".asInstanceOf[webkitAnimation]
-  @scala.inline
-  def webkitAnimationDelay: webkitAnimationDelay = "webkitAnimationDelay".asInstanceOf[webkitAnimationDelay]
-  @scala.inline
-  def webkitAnimationDirection: webkitAnimationDirection = "webkitAnimationDirection".asInstanceOf[webkitAnimationDirection]
-  @scala.inline
-  def webkitAnimationDuration: webkitAnimationDuration = "webkitAnimationDuration".asInstanceOf[webkitAnimationDuration]
-  @scala.inline
-  def webkitAnimationFillMode: webkitAnimationFillMode = "webkitAnimationFillMode".asInstanceOf[webkitAnimationFillMode]
-  @scala.inline
-  def webkitAnimationIterationCount: webkitAnimationIterationCount = "webkitAnimationIterationCount".asInstanceOf[webkitAnimationIterationCount]
-  @scala.inline
-  def webkitAnimationName: webkitAnimationName = "webkitAnimationName".asInstanceOf[webkitAnimationName]
-  @scala.inline
-  def webkitAnimationPlayState: webkitAnimationPlayState = "webkitAnimationPlayState".asInstanceOf[webkitAnimationPlayState]
-  @scala.inline
-  def webkitAnimationTimingFunction: webkitAnimationTimingFunction = "webkitAnimationTimingFunction".asInstanceOf[webkitAnimationTimingFunction]
-  @scala.inline
-  def webkitAppearance: webkitAppearance = "webkitAppearance".asInstanceOf[webkitAppearance]
-  @scala.inline
-  def webkitBackfaceVisibility: webkitBackfaceVisibility = "webkitBackfaceVisibility".asInstanceOf[webkitBackfaceVisibility]
-  @scala.inline
-  def webkitBackgroundClip: webkitBackgroundClip = "webkitBackgroundClip".asInstanceOf[webkitBackgroundClip]
-  @scala.inline
-  def webkitBackgroundOrigin: webkitBackgroundOrigin = "webkitBackgroundOrigin".asInstanceOf[webkitBackgroundOrigin]
-  @scala.inline
-  def webkitBackgroundSize: webkitBackgroundSize = "webkitBackgroundSize".asInstanceOf[webkitBackgroundSize]
-  @scala.inline
-  def webkitBorderBottomLeftRadius: webkitBorderBottomLeftRadius = "webkitBorderBottomLeftRadius".asInstanceOf[webkitBorderBottomLeftRadius]
-  @scala.inline
-  def webkitBorderBottomRightRadius: webkitBorderBottomRightRadius = "webkitBorderBottomRightRadius".asInstanceOf[webkitBorderBottomRightRadius]
-  @scala.inline
-  def webkitBorderImage: webkitBorderImage = "webkitBorderImage".asInstanceOf[webkitBorderImage]
-  @scala.inline
-  def webkitBorderRadius: webkitBorderRadius = "webkitBorderRadius".asInstanceOf[webkitBorderRadius]
-  @scala.inline
-  def webkitBorderTopLeftRadius: webkitBorderTopLeftRadius = "webkitBorderTopLeftRadius".asInstanceOf[webkitBorderTopLeftRadius]
-  @scala.inline
-  def webkitBorderTopRightRadius: webkitBorderTopRightRadius = "webkitBorderTopRightRadius".asInstanceOf[webkitBorderTopRightRadius]
-  @scala.inline
-  def webkitBoxAlign: webkitBoxAlign = "webkitBoxAlign".asInstanceOf[webkitBoxAlign]
-  @scala.inline
-  def webkitBoxDirection: webkitBoxDirection = "webkitBoxDirection".asInstanceOf[webkitBoxDirection]
-  @scala.inline
-  def webkitBoxFlex: webkitBoxFlex = "webkitBoxFlex".asInstanceOf[webkitBoxFlex]
-  @scala.inline
-  def webkitBoxOrdinalGroup: webkitBoxOrdinalGroup = "webkitBoxOrdinalGroup".asInstanceOf[webkitBoxOrdinalGroup]
-  @scala.inline
-  def webkitBoxOrient: webkitBoxOrient = "webkitBoxOrient".asInstanceOf[webkitBoxOrient]
-  @scala.inline
-  def webkitBoxPack: webkitBoxPack = "webkitBoxPack".asInstanceOf[webkitBoxPack]
-  @scala.inline
-  def webkitBoxShadow: webkitBoxShadow = "webkitBoxShadow".asInstanceOf[webkitBoxShadow]
-  @scala.inline
-  def webkitBoxSizing: webkitBoxSizing = "webkitBoxSizing".asInstanceOf[webkitBoxSizing]
-  @scala.inline
-  def webkitColumnBreakAfter: webkitColumnBreakAfter = "webkitColumnBreakAfter".asInstanceOf[webkitColumnBreakAfter]
-  @scala.inline
-  def webkitColumnBreakBefore: webkitColumnBreakBefore = "webkitColumnBreakBefore".asInstanceOf[webkitColumnBreakBefore]
-  @scala.inline
-  def webkitColumnBreakInside: webkitColumnBreakInside = "webkitColumnBreakInside".asInstanceOf[webkitColumnBreakInside]
-  @scala.inline
-  def webkitColumnCount: webkitColumnCount = "webkitColumnCount".asInstanceOf[webkitColumnCount]
-  @scala.inline
-  def webkitColumnGap: webkitColumnGap = "webkitColumnGap".asInstanceOf[webkitColumnGap]
-  @scala.inline
-  def webkitColumnRule: webkitColumnRule = "webkitColumnRule".asInstanceOf[webkitColumnRule]
-  @scala.inline
-  def webkitColumnRuleColor: webkitColumnRuleColor = "webkitColumnRuleColor".asInstanceOf[webkitColumnRuleColor]
-  @scala.inline
-  def webkitColumnRuleStyle: webkitColumnRuleStyle = "webkitColumnRuleStyle".asInstanceOf[webkitColumnRuleStyle]
-  @scala.inline
-  def webkitColumnRuleWidth: webkitColumnRuleWidth = "webkitColumnRuleWidth".asInstanceOf[webkitColumnRuleWidth]
-  @scala.inline
-  def webkitColumnSpan: webkitColumnSpan = "webkitColumnSpan".asInstanceOf[webkitColumnSpan]
-  @scala.inline
-  def webkitColumnWidth: webkitColumnWidth = "webkitColumnWidth".asInstanceOf[webkitColumnWidth]
-  @scala.inline
-  def webkitColumns: webkitColumns = "webkitColumns".asInstanceOf[webkitColumns]
-  @scala.inline
-  def webkitFilter: webkitFilter = "webkitFilter".asInstanceOf[webkitFilter]
-  @scala.inline
-  def webkitFlex: webkitFlex = "webkitFlex".asInstanceOf[webkitFlex]
-  @scala.inline
-  def webkitFlexBasis: webkitFlexBasis = "webkitFlexBasis".asInstanceOf[webkitFlexBasis]
-  @scala.inline
-  def webkitFlexDirection: webkitFlexDirection = "webkitFlexDirection".asInstanceOf[webkitFlexDirection]
-  @scala.inline
-  def webkitFlexFlow: webkitFlexFlow = "webkitFlexFlow".asInstanceOf[webkitFlexFlow]
-  @scala.inline
-  def webkitFlexGrow: webkitFlexGrow = "webkitFlexGrow".asInstanceOf[webkitFlexGrow]
-  @scala.inline
-  def webkitFlexShrink: webkitFlexShrink = "webkitFlexShrink".asInstanceOf[webkitFlexShrink]
-  @scala.inline
-  def webkitFlexWrap: webkitFlexWrap = "webkitFlexWrap".asInstanceOf[webkitFlexWrap]
-  @scala.inline
-  def webkitJustifyContent: webkitJustifyContent = "webkitJustifyContent".asInstanceOf[webkitJustifyContent]
-  @scala.inline
-  def webkitLineClamp: webkitLineClamp = "webkitLineClamp".asInstanceOf[webkitLineClamp]
-  @scala.inline
-  def webkitMask: webkitMask = "webkitMask".asInstanceOf[webkitMask]
-  @scala.inline
-  def webkitMaskBoxImage: webkitMaskBoxImage = "webkitMaskBoxImage".asInstanceOf[webkitMaskBoxImage]
-  @scala.inline
-  def webkitMaskBoxImageOutset: webkitMaskBoxImageOutset = "webkitMaskBoxImageOutset".asInstanceOf[webkitMaskBoxImageOutset]
-  @scala.inline
-  def webkitMaskBoxImageRepeat: webkitMaskBoxImageRepeat = "webkitMaskBoxImageRepeat".asInstanceOf[webkitMaskBoxImageRepeat]
-  @scala.inline
-  def webkitMaskBoxImageSlice: webkitMaskBoxImageSlice = "webkitMaskBoxImageSlice".asInstanceOf[webkitMaskBoxImageSlice]
-  @scala.inline
-  def webkitMaskBoxImageSource: webkitMaskBoxImageSource = "webkitMaskBoxImageSource".asInstanceOf[webkitMaskBoxImageSource]
-  @scala.inline
-  def webkitMaskBoxImageWidth: webkitMaskBoxImageWidth = "webkitMaskBoxImageWidth".asInstanceOf[webkitMaskBoxImageWidth]
-  @scala.inline
-  def webkitMaskClip: webkitMaskClip = "webkitMaskClip".asInstanceOf[webkitMaskClip]
-  @scala.inline
-  def webkitMaskComposite: webkitMaskComposite = "webkitMaskComposite".asInstanceOf[webkitMaskComposite]
-  @scala.inline
-  def webkitMaskImage: webkitMaskImage = "webkitMaskImage".asInstanceOf[webkitMaskImage]
-  @scala.inline
-  def webkitMaskOrigin: webkitMaskOrigin = "webkitMaskOrigin".asInstanceOf[webkitMaskOrigin]
-  @scala.inline
-  def webkitMaskPosition: webkitMaskPosition = "webkitMaskPosition".asInstanceOf[webkitMaskPosition]
-  @scala.inline
-  def webkitMaskRepeat: webkitMaskRepeat = "webkitMaskRepeat".asInstanceOf[webkitMaskRepeat]
-  @scala.inline
-  def webkitMaskSize: webkitMaskSize = "webkitMaskSize".asInstanceOf[webkitMaskSize]
-  @scala.inline
-  def webkitOrder: webkitOrder = "webkitOrder".asInstanceOf[webkitOrder]
-  @scala.inline
-  def webkitPerspective: webkitPerspective = "webkitPerspective".asInstanceOf[webkitPerspective]
-  @scala.inline
-  def webkitPerspectiveOrigin: webkitPerspectiveOrigin = "webkitPerspectiveOrigin".asInstanceOf[webkitPerspectiveOrigin]
-  @scala.inline
-  def webkitTapHighlightColor: webkitTapHighlightColor = "webkitTapHighlightColor".asInstanceOf[webkitTapHighlightColor]
-  @scala.inline
-  def webkitTextFillColor: webkitTextFillColor = "webkitTextFillColor".asInstanceOf[webkitTextFillColor]
-  @scala.inline
-  def webkitTextSizeAdjust: webkitTextSizeAdjust = "webkitTextSizeAdjust".asInstanceOf[webkitTextSizeAdjust]
-  @scala.inline
-  def webkitTextStroke: webkitTextStroke = "webkitTextStroke".asInstanceOf[webkitTextStroke]
-  @scala.inline
-  def webkitTextStrokeColor: webkitTextStrokeColor = "webkitTextStrokeColor".asInstanceOf[webkitTextStrokeColor]
-  @scala.inline
-  def webkitTextStrokeWidth: webkitTextStrokeWidth = "webkitTextStrokeWidth".asInstanceOf[webkitTextStrokeWidth]
-  @scala.inline
-  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
-  @scala.inline
-  def webkitTransformOrigin: webkitTransformOrigin = "webkitTransformOrigin".asInstanceOf[webkitTransformOrigin]
-  @scala.inline
-  def webkitTransformStyle: webkitTransformStyle = "webkitTransformStyle".asInstanceOf[webkitTransformStyle]
-  @scala.inline
-  def webkitTransition: webkitTransition = "webkitTransition".asInstanceOf[webkitTransition]
-  @scala.inline
-  def webkitTransitionDelay: webkitTransitionDelay = "webkitTransitionDelay".asInstanceOf[webkitTransitionDelay]
-  @scala.inline
-  def webkitTransitionDuration: webkitTransitionDuration = "webkitTransitionDuration".asInstanceOf[webkitTransitionDuration]
-  @scala.inline
-  def webkitTransitionProperty: webkitTransitionProperty = "webkitTransitionProperty".asInstanceOf[webkitTransitionProperty]
-  @scala.inline
-  def webkitTransitionTimingFunction: webkitTransitionTimingFunction = "webkitTransitionTimingFunction".asInstanceOf[webkitTransitionTimingFunction]
-  @scala.inline
-  def webkitUserModify: webkitUserModify = "webkitUserModify".asInstanceOf[webkitUserModify]
-  @scala.inline
-  def webkitUserSelect: webkitUserSelect = "webkitUserSelect".asInstanceOf[webkitUserSelect]
-  @scala.inline
-  def webkitWritingMode: webkitWritingMode = "webkitWritingMode".asInstanceOf[webkitWritingMode]
-  @scala.inline
-  def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
-  @scala.inline
-  def widows: widows = "widows".asInstanceOf[widows]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def willChange: willChange = "willChange".asInstanceOf[willChange]
-  @scala.inline
-  def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
-  @scala.inline
-  def wordSpacing: wordSpacing = "wordSpacing".asInstanceOf[wordSpacing]
-  @scala.inline
-  def wordWrap: wordWrap = "wordWrap".asInstanceOf[wordWrap]
-  @scala.inline
-  def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
-  @scala.inline
-  def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  @js.native
+  sealed trait whiteSpace extends StObject
+  inline def whiteSpace: whiteSpace = "whiteSpace".asInstanceOf[whiteSpace]
+  
+  @js.native
+  sealed trait widows extends StObject
+  inline def widows: widows = "widows".asInstanceOf[widows]
+  
+  @js.native
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
+  
+  @js.native
+  sealed trait willChange extends StObject
+  inline def willChange: willChange = "willChange".asInstanceOf[willChange]
+  
+  @js.native
+  sealed trait wordBreak extends StObject
+  inline def wordBreak: wordBreak = "wordBreak".asInstanceOf[wordBreak]
+  
+  @js.native
+  sealed trait wordSpacing extends StObject
+  inline def wordSpacing: wordSpacing = "wordSpacing".asInstanceOf[wordSpacing]
+  
+  @js.native
+  sealed trait wordWrap extends StObject
+  inline def wordWrap: wordWrap = "wordWrap".asInstanceOf[wordWrap]
+  
+  @js.native
+  sealed trait writingMode extends StObject
+  inline def writingMode: writingMode = "writingMode".asInstanceOf[writingMode]
+  
+  @js.native
+  sealed trait zIndex extends StObject
+  inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
 }
-

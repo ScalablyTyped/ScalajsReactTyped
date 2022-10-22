@@ -1,20 +1,26 @@
 package typingsJapgolly.qlik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NxInfo extends js.Object {
+trait NxInfo extends StObject {
+  
   var qId: String
+  
   var qType: String
 }
-
 object NxInfo {
-  @scala.inline
-  def apply(qId: String, qType: String): NxInfo = {
-    val __obj = js.Dynamic.literal(qId = qId.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
   
+  inline def apply(qId: String, qType: String): NxInfo = {
+    val __obj = js.Dynamic.literal(qId = qId.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NxInfo]
   }
+  
+  extension [Self <: NxInfo](x: Self) {
+    
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+  }
 }
-

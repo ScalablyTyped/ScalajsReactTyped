@@ -1,62 +1,81 @@
 package typingsJapgolly.ionicCliFramework
 
 import typingsJapgolly.ionicCliFramework.definitionsMod.ValidationError
-import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.ERR_ICF_COMMAND_NOT_FOUND
-import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.ERR_ICF_INPUT_VALIDATION
-import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.ERR_ICF_IPC_MODULE_INACCESSIBLE
-import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.ERR_ICF_IPC_UNKNOWN_PROCEDURE
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ionic/cli-framework/errors", JSImport.Namespace)
-@js.native
-object errorsMod extends js.Object {
+object errorsMod {
+  
+  /* note: abstract class */ @JSImport("@ionic/cli-framework/errors", "BaseError")
   @js.native
-  abstract class BaseError protected () extends Error {
+  open class BaseError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
+    
     var code: js.UndefOr[String] = js.native
+    
     var error: js.UndefOr[js.Error] = js.native
+    
     var exitCode: js.UndefOr[Double] = js.native
+    
+    def inspect(): String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
+    
     @JSName("stack")
     var stack_BaseError: String = js.native
-    def inspect(): String = js.native
   }
   
+  @JSImport("@ionic/cli-framework/errors", "CommandNotFoundError")
   @js.native
-  class CommandNotFoundError protected () extends BaseError {
+  open class CommandNotFoundError protected () extends BaseError {
     def this(message: String, args: js.Array[String]) = this()
+    
     var args: js.Array[String] = js.native
+    
     @JSName("code")
     var code_CommandNotFoundError: String = js.native
-    @JSName("name")
-    val name_CommandNotFoundError: typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.CommandNotFoundError = js.native
   }
   
+  @JSImport("@ionic/cli-framework/errors", "ERROR_COMMAND_NOT_FOUND")
   @js.native
-  class IPCError () extends BaseError {
-    @JSName("name")
-    val name_IPCError: typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.IPCError = js.native
+  val ERROR_COMMAND_NOT_FOUND: /* "ERR_ICF_COMMAND_NOT_FOUND" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "ERROR_INPUT_VALIDATION")
+  @js.native
+  val ERROR_INPUT_VALIDATION: /* "ERR_ICF_INPUT_VALIDATION" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "ERROR_IPC_MODULE_INACCESSIBLE")
+  @js.native
+  val ERROR_IPC_MODULE_INACCESSIBLE: /* "ERR_ICF_IPC_MODULE_INACCESSIBLE" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "ERROR_IPC_UNKNOWN_PROCEDURE")
+  @js.native
+  val ERROR_IPC_UNKNOWN_PROCEDURE: /* "ERR_ICF_IPC_UNKNOWN_PROCEDURE" */ String = js.native
+  
+  @JSImport("@ionic/cli-framework/errors", "IPCError")
+  @js.native
+  open class IPCError protected () extends BaseError {
+    def this(message: String) = this()
   }
   
+  @JSImport("@ionic/cli-framework/errors", "InputValidationError")
   @js.native
-  class InputValidationError protected () extends BaseError {
+  open class InputValidationError protected () extends BaseError {
     def this(message: String, errors: js.Array[ValidationError]) = this()
+    
     @JSName("code")
     var code_InputValidationError: String = js.native
+    
     var errors: js.Array[ValidationError] = js.native
-    @JSName("name")
-    val name_InputValidationError: typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.InputValidationError = js.native
   }
-  
-  val ERROR_COMMAND_NOT_FOUND: ERR_ICF_COMMAND_NOT_FOUND = js.native
-  val ERROR_INPUT_VALIDATION: ERR_ICF_INPUT_VALIDATION = js.native
-  val ERROR_IPC_MODULE_INACCESSIBLE: ERR_ICF_IPC_MODULE_INACCESSIBLE = js.native
-  val ERROR_IPC_UNKNOWN_PROCEDURE: ERR_ICF_IPC_UNKNOWN_PROCEDURE = js.native
 }
-

@@ -10,10 +10,10 @@ The lodash method `_.compact` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.compact |
 | Keywords           | lodash-modularized, compact |
-| # releases         | 0 |
-| # dependents       | 156 |
-| # downloads        | 2982606 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1566228.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

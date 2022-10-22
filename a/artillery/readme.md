@@ -4,16 +4,16 @@
 Typings are for version 1.6
 
 ## Library description:
-Flexible and powerful toolkit for load and functional testing
+Modern performance testing toolkit for DevOps and SRE
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | artillery |
 | Keywords           | load testing, stress testing, benchmark, performance, blackbox testing |
-| # releases         | 18 |
-| # dependents       | 7 |
-| # downloads        | 841151 |
-| # stars            | 23 |
+| # releases         | 45 |
+| # dependents       | 0.0 |
+| # downloads        | 221547.66666666666 |
+| # stars            | 5836.0 |
 
 ## Links
 - [Homepage](https://github.com/artilleryio/artillery#readme)

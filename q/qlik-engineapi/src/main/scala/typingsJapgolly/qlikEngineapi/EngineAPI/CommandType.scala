@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JsonRequest
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DisableQlikViewSelectButton
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HaveStarField
 */
-trait CommandType extends js.Object
-
+trait CommandType extends StObject
 object CommandType {
-  @scala.inline
-  def DisableQlikViewSelectButton: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DisableQlikViewSelectButton = this.cast("DisableQlikViewSelectButton")
-  @scala.inline
-  def GetCustomCaption: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GetCustomCaption = this.cast("GetCustomCaption")
-  @scala.inline
-  def HaveStarField: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HaveStarField = this.cast("HaveStarField")
-  @scala.inline
-  def IsConnected: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IsConnected = this.cast("IsConnected")
-  @scala.inline
-  def JsonRequest: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JsonRequest = this.cast("JsonRequest")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DisableQlikViewSelectButton: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DisableQlikViewSelectButton = "DisableQlikViewSelectButton".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DisableQlikViewSelectButton]
+  
+  inline def GetCustomCaption: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GetCustomCaption = "GetCustomCaption".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.GetCustomCaption]
+  
+  inline def HaveStarField: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HaveStarField = "HaveStarField".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HaveStarField]
+  
+  inline def IsConnected: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IsConnected = "IsConnected".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IsConnected]
+  
+  inline def JsonRequest: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JsonRequest = "JsonRequest".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JsonRequest]
 }
-

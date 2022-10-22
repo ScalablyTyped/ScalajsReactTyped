@@ -1,17 +1,23 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "DateRangeType")
 @js.native
-object DateRangeType extends js.Object {
-  /* 0 */ val Day: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Day with Double = js.native
-  /* 2 */ val Month: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Month with Double = js.native
-  /* 1 */ val Week: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.Week with Double = js.native
-  /* 3 */ val WorkWeek: typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType.WorkWeek with Double = js.native
+object DateRangeType extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.dateValuesMod.DateRangeType with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType & Double
+  ] = js.native
+  
+  /* 0 */ val Day: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Day & Double = js.native
+  
+  /* 2 */ val Month: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Month & Double = js.native
+  
+  /* 1 */ val Week: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.Week & Double = js.native
+  
+  /* 3 */ val WorkWeek: typingsJapgolly.fluentuiDateTimeUtilities.libDateValuesDateValuesMod.DateRangeType.WorkWeek & Double = js.native
 }
-

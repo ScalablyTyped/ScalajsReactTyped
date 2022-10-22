@@ -1,39 +1,58 @@
 package typingsJapgolly.reactInstantsearchCore.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MenuExposed extends js.Object {
+trait MenuExposed extends StObject {
+  
   var attribute: String
+  
   var defaultRefinement: js.UndefOr[String] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var searchable: js.UndefOr[Boolean] = js.undefined
+  
   var showMore: js.UndefOr[Boolean] = js.undefined
+  
   var showMoreLimit: js.UndefOr[Double] = js.undefined
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
+  
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ Any, Any]] = js.undefined
 }
-
 object MenuExposed {
-  @scala.inline
-  def apply(
-    attribute: String,
-    defaultRefinement: String = null,
-    limit: Int | Double = null,
-    searchable: js.UndefOr[Boolean] = js.undefined,
-    showMore: js.UndefOr[Boolean] = js.undefined,
-    showMoreLimit: Int | Double = null,
-    transformItems: /* repeated */ js.Any => CallbackTo[js.Any] = null
-  ): MenuExposed = {
+  
+  inline def apply(attribute: String): MenuExposed = {
     val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any])
-    if (defaultRefinement != null) __obj.updateDynamic("defaultRefinement")(defaultRefinement.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMore)) __obj.updateDynamic("showMore")(showMore.asInstanceOf[js.Any])
-    if (showMoreLimit != null) __obj.updateDynamic("showMoreLimit")(showMoreLimit.asInstanceOf[js.Any])
-    if (transformItems != null) __obj.updateDynamic("transformItems")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => transformItems(t0).runNow()))
     __obj.asInstanceOf[MenuExposed]
   }
+  
+  extension [Self <: MenuExposed](x: Self) {
+    
+    inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRefinement(value: String): Self = StObject.set(x, "defaultRefinement", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultRefinementUndefined: Self = StObject.set(x, "defaultRefinement", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setSearchable(value: Boolean): Self = StObject.set(x, "searchable", value.asInstanceOf[js.Any])
+    
+    inline def setSearchableUndefined: Self = StObject.set(x, "searchable", js.undefined)
+    
+    inline def setShowMore(value: Boolean): Self = StObject.set(x, "showMore", value.asInstanceOf[js.Any])
+    
+    inline def setShowMoreLimit(value: Double): Self = StObject.set(x, "showMoreLimit", value.asInstanceOf[js.Any])
+    
+    inline def setShowMoreLimitUndefined: Self = StObject.set(x, "showMoreLimit", js.undefined)
+    
+    inline def setShowMoreUndefined: Self = StObject.set(x, "showMore", js.undefined)
+    
+    inline def setTransformItems(value: /* repeated */ Any => Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    
+    inline def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)
+  }
 }
-

@@ -1,12 +1,10 @@
 package typingsJapgolly.reactNativeFirebase
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-firebase/crashlytics", JSImport.Namespace)
-@js.native
-object crashlyticsMod extends js.Object {
+object crashlyticsMod {
+  
   type Crashlytics = typingsJapgolly.reactNativeFirebase.mod.RNFirebase.crashlytics.Crashlytics
 }
-

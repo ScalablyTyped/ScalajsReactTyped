@@ -1,30 +1,26 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "LocalOctetStringValueBlock")
 @js.native
-class LocalOctetStringValueBlock ()
-  extends LocalConstructedValueBlock
-     with ILocalHexBlock {
-  def this(params: LocalOctetStringValueBlockParams) = this()
+trait LocalOctetStringValueBlock
+  extends StObject
+     with LocalConstructedValueBlock {
+  
   var isConstructed: scala.Boolean = js.native
-  /* InferMemberOverrides */
-  override def fromBER(inputBuffer: scala.scalajs.js.typedarray.ArrayBuffer, inputOffset: Double, inputLength: Double): Unit with Double = js.native
-  /* InferMemberOverrides */
-  override def toBER(): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  /* InferMemberOverrides */
-  override def toBER(sizeOnly: scala.Boolean): scala.scalajs.js.typedarray.ArrayBuffer = js.native
+  
   /**
-    * Convertion for the block to JSON object
-    * 
-    * @returns {JsonLocalBaseBlock}
-    * 
-    * @memberOf LocalBaseBlock
+    * @deprecated since version 3.0.0
     */
-  /* InferMemberOverrides */
-  override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
+  @JSName("valueBeforeDecode")
+  var valueBeforeDecode_FLocalOctetStringValueBlock: js.typedarray.ArrayBuffer = js.native
+  
+  /**
+    * Binary data in ArrayBuffer representation
+    *
+    * @deprecated since version 3.0.0
+    */
+  var valueHex: js.typedarray.ArrayBuffer = js.native
 }
-

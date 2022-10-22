@@ -1,11 +1,24 @@
 package typingsJapgolly.kendoUi.kendo
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.history")
 @js.native
-object history extends TopLevel[History_]
-
+trait History
+  extends StObject
+     with Observable {
+  
+  def change(callback: js.Function): Unit = js.native
+  
+  var current: String = js.native
+  
+  def navigate(location: String): Unit = js.native
+  def navigate(location: String, silent: Boolean): Unit = js.native
+  
+  var root: String = js.native
+  
+  def start(options: js.Object): Unit = js.native
+  
+  def stop(): Unit = js.native
+}

@@ -3,66 +3,91 @@ package typingsJapgolly.dav.mod
 import typingsJapgolly.dav.davStrings.caldav
 import typingsJapgolly.dav.davStrings.carddav
 import typingsJapgolly.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateAccountOptions extends js.Object {
+trait CreateAccountOptions extends StObject {
+  
   /**
     * one of 'caldav' or 'carddav'. Defaults to 'caldav'.
     */
   var accountType: js.UndefOr[caldav | carddav] = js.undefined
+  
   /**
     * list of caldav filters to send with request.
     */
   var filters: js.UndefOr[js.Array[js.Object]] = js.undefined
+  
   /**
     *  whether or not to load dav collections.
     */
   var loadCollections: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * whether or not to load dav objects.
     */
   var loadObjects: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * request sandox.
     */
   var sandbox: js.UndefOr[Sandbox | js.Object] = js.undefined
+  
   /**
     *  some url for server (needn't be base url).
     */
   var server: String
+  
   /**
     * VTIMEZONE calendar object.
     */
   var timezone: js.UndefOr[String] = js.undefined
+  
   /**
     * request sender.
     */
   var xhr: js.UndefOr[Transport] = js.undefined
 }
-
 object CreateAccountOptions {
-  @scala.inline
-  def apply(
-    server: String,
-    accountType: caldav | carddav = null,
-    filters: js.Array[js.Object] = null,
-    loadCollections: js.UndefOr[Boolean] = js.undefined,
-    loadObjects: js.UndefOr[Boolean] = js.undefined,
-    sandbox: Sandbox | js.Object = null,
-    timezone: String = null,
-    xhr: Transport = null
-  ): CreateAccountOptions = {
+  
+  inline def apply(server: String): CreateAccountOptions = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
-    if (accountType != null) __obj.updateDynamic("accountType")(accountType.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadCollections)) __obj.updateDynamic("loadCollections")(loadCollections.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadObjects)) __obj.updateDynamic("loadObjects")(loadObjects.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountOptions]
   }
+  
+  extension [Self <: CreateAccountOptions](x: Self) {
+    
+    inline def setAccountType(value: caldav | carddav): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
+    
+    inline def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
+    
+    inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setLoadCollections(value: Boolean): Self = StObject.set(x, "loadCollections", value.asInstanceOf[js.Any])
+    
+    inline def setLoadCollectionsUndefined: Self = StObject.set(x, "loadCollections", js.undefined)
+    
+    inline def setLoadObjects(value: Boolean): Self = StObject.set(x, "loadObjects", value.asInstanceOf[js.Any])
+    
+    inline def setLoadObjectsUndefined: Self = StObject.set(x, "loadObjects", js.undefined)
+    
+    inline def setSandbox(value: Sandbox | js.Object): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

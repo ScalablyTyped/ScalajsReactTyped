@@ -11,9 +11,9 @@ Lets users sign their signatures
 | Full name          | react-native-signature-capture |
 | Keywords           | react-component, react-native, ios, signature |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 218247 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 38367.333333333336 |
+| # stars            | 909.0 |
 
 ## Links
 - [Homepage](https://github.com/RepairShopr/react-native-signature-capture#readme)

@@ -1,20 +1,22 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.oidMod.Oid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/tree-update", JSImport.Namespace)
-@js.native
-object treeUpdateMod extends js.Object {
+object treeUpdateMod {
+  
+  @JSImport("nodegit/tree-update", "TreeUpdate")
   @js.native
-  class TreeUpdate () extends js.Object {
+  open class TreeUpdate () extends StObject {
+    
     var action: Double = js.native
+    
     var filemode: Double = js.native
+    
     var id: Oid = js.native
+    
     var path: String = js.native
   }
-  
 }
-

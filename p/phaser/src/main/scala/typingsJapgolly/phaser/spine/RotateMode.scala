@@ -1,35 +1,27 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RotateMode extends js.Object
-
+sealed trait RotateMode extends StObject
 @JSGlobal("spine.RotateMode")
 @js.native
-object RotateMode extends js.Object {
-  @js.native
-  sealed trait Chain extends RotateMode
+object RotateMode extends StObject {
   
   @js.native
-  sealed trait ChainScale extends RotateMode
+  sealed trait Chain
+    extends StObject
+       with RotateMode
   
   @js.native
-  sealed trait Tangent extends RotateMode
+  sealed trait ChainScale
+    extends StObject
+       with RotateMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RotateMode with Double] = js.native
-  /* 1 */ @js.native
-  object Chain extends TopLevel[Chain with Double]
-  
-  /* 2 */ @js.native
-  object ChainScale extends TopLevel[ChainScale with Double]
-  
-  /* 0 */ @js.native
-  object Tangent extends TopLevel[Tangent with Double]
-  
+  @js.native
+  sealed trait Tangent
+    extends StObject
+       with RotateMode
 }
-

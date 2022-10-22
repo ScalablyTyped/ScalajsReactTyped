@@ -1,47 +1,51 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WatchFileKind extends js.Object
-
+sealed trait WatchFileKind extends StObject
 @JSImport("typescript", "WatchFileKind")
 @js.native
-object WatchFileKind extends js.Object {
-  @js.native
-  sealed trait DynamicPriorityPolling extends WatchFileKind
-  
-  @js.native
-  sealed trait FixedPollingInterval extends WatchFileKind
-  
-  @js.native
-  sealed trait PriorityPollingInterval extends WatchFileKind
-  
-  @js.native
-  sealed trait UseFsEvents extends WatchFileKind
-  
-  @js.native
-  sealed trait UseFsEventsOnParentDirectory extends WatchFileKind
+object WatchFileKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WatchFileKind with Double] = js.native
-  /* 2 */ @js.native
-  object DynamicPriorityPolling extends TopLevel[DynamicPriorityPolling with Double]
+  def apply(value: Double): js.UndefOr[WatchFileKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object FixedPollingInterval extends TopLevel[FixedPollingInterval with Double]
+  @js.native
+  sealed trait DynamicPriorityPolling
+    extends StObject
+       with WatchFileKind
+  /* 2 */ val DynamicPriorityPolling: typingsJapgolly.typescript.mod.WatchFileKind.DynamicPriorityPolling & Double = js.native
   
-  /* 1 */ @js.native
-  object PriorityPollingInterval extends TopLevel[PriorityPollingInterval with Double]
+  @js.native
+  sealed trait FixedChunkSizePolling
+    extends StObject
+       with WatchFileKind
+  /* 3 */ val FixedChunkSizePolling: typingsJapgolly.typescript.mod.WatchFileKind.FixedChunkSizePolling & Double = js.native
   
-  /* 3 */ @js.native
-  object UseFsEvents extends TopLevel[UseFsEvents with Double]
+  @js.native
+  sealed trait FixedPollingInterval
+    extends StObject
+       with WatchFileKind
+  /* 0 */ val FixedPollingInterval: typingsJapgolly.typescript.mod.WatchFileKind.FixedPollingInterval & Double = js.native
   
-  /* 4 */ @js.native
-  object UseFsEventsOnParentDirectory extends TopLevel[UseFsEventsOnParentDirectory with Double]
+  @js.native
+  sealed trait PriorityPollingInterval
+    extends StObject
+       with WatchFileKind
+  /* 1 */ val PriorityPollingInterval: typingsJapgolly.typescript.mod.WatchFileKind.PriorityPollingInterval & Double = js.native
   
+  @js.native
+  sealed trait UseFsEvents
+    extends StObject
+       with WatchFileKind
+  /* 4 */ val UseFsEvents: typingsJapgolly.typescript.mod.WatchFileKind.UseFsEvents & Double = js.native
+  
+  @js.native
+  sealed trait UseFsEventsOnParentDirectory
+    extends StObject
+       with WatchFileKind
+  /* 5 */ val UseFsEventsOnParentDirectory: typingsJapgolly.typescript.mod.WatchFileKind.UseFsEventsOnParentDirectory & Double = js.native
 }
-

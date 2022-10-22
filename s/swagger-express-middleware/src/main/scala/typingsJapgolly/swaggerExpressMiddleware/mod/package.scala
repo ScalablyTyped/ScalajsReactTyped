@@ -1,47 +1,78 @@
-package typingsJapgolly.swaggerExpressMiddleware
+package typingsJapgolly.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.express.mod.Application_
+import typingsJapgolly.express.mod.RequestHandler
+import typingsJapgolly.express.mod.Router
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CORSSignature = js.Function0[
-    typingsJapgolly.express.mod.RequestHandler[typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary]
-  ]
-  type DefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.SchemaObject]
-  type ExampleObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type HeaderObject = typingsJapgolly.swaggerExpressMiddleware.mod.ItemsObject
-  type HeadersObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.HeaderObject]
-  type MetadataSignature = js.Function1[
-    /* router */ js.UndefOr[typingsJapgolly.express.mod.Application_ | typingsJapgolly.express.mod.Router], 
-    typingsJapgolly.express.mod.RequestHandler[typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary]
-  ]
-  type MimeTypes = js.Array[java.lang.String]
-  type MockSignature = js.Function2[
-    /* router */ js.UndefOr[typingsJapgolly.express.mod.Application_ | typingsJapgolly.express.mod.Router], 
-    /* datastore */ js.UndefOr[js.Any], 
-    typingsJapgolly.express.mod.RequestHandler[typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary]
-  ]
-  type Parameters = js.Array[
-    typingsJapgolly.swaggerExpressMiddleware.mod.ParameterObject | typingsJapgolly.swaggerExpressMiddleware.mod.ReferenceObject
-  ]
-  type ParametersDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.ParameterObject]
-  type PathsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.PathItemObject | js.Any]
-  type ResponsesDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.ResponseObject]
-  type ScopesObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type SecurityDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.swaggerExpressMiddleware.mod.SecuritySchemeObject]
-  type SecurityRequirementObject = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-  type SwaggerMiddlewareConstructor = js.Function3[
-    /* apiDefinitionPathOrObject */ java.lang.String | typingsJapgolly.swaggerExpressMiddleware.mod.SwaggerObject, 
-    /* appOrRouter */ typingsJapgolly.express.mod.Application_ | typingsJapgolly.express.mod.Router, 
-    /* cb */ typingsJapgolly.swaggerExpressMiddleware.mod.SwaggerMiddlewareConstructorCallback, 
-    typingsJapgolly.swaggerExpressMiddleware.mod.SwaggerMiddleware
-  ]
-  type SwaggerMiddlewareConstructorCallback = js.Function4[
-    /* err */ js.Any, 
-    /* middleware */ typingsJapgolly.swaggerExpressMiddleware.mod.SwaggerMiddleware, 
-    /* api */ typingsJapgolly.swaggerExpressMiddleware.mod.SwaggerObject, 
-    /* parser */ typingsJapgolly.swaggerParser.mod.^, 
-    scala.Unit
-  ]
-}
+
+type CORSSignature = js.Function0[
+RequestHandler[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+  Any, 
+  Any, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+  Record[String, Any]
+]]
+
+type DefinitionsObject = StringDictionary[SchemaObject]
+
+type ExampleObject = StringDictionary[Any]
+
+type HeaderObject = ItemsObject
+
+type HeadersObject = StringDictionary[HeaderObject]
+
+type MetadataSignature = js.Function1[
+/* router */ js.UndefOr[Application_ | Router], 
+RequestHandler[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+  Any, 
+  Any, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+  Record[String, Any]
+]]
+
+type MimeTypes = js.Array[String]
+
+type MockSignature = js.Function2[
+/* router */ js.UndefOr[Application_ | Router], 
+/* datastore */ js.UndefOr[Any], 
+RequestHandler[
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+  Any, 
+  Any, 
+  /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+  Record[String, Any]
+]]
+
+type Parameters = js.Array[ParameterObject | ReferenceObject]
+
+type ParametersDefinitionsObject = StringDictionary[ParameterObject]
+
+type PathsObject = StringDictionary[PathItemObject | Any]
+
+type ResponsesDefinitionsObject = StringDictionary[ResponseObject]
+
+type ScopesObject = StringDictionary[Any]
+
+type SecurityDefinitionsObject = StringDictionary[SecuritySchemeObject]
+
+type SecurityRequirementObject = StringDictionary[js.Array[String]]
+
+type SwaggerMiddlewareConstructor = js.Function3[
+/* apiDefinitionPathOrObject */ String | SwaggerObject, 
+/* appOrRouter */ Application_ | Router, 
+/* cb */ SwaggerMiddlewareConstructorCallback, 
+SwaggerMiddleware]
+
+type SwaggerMiddlewareConstructorCallback = js.Function4[
+/* err */ Any, 
+/* middleware */ SwaggerMiddleware, 
+/* api */ SwaggerObject, 
+/* parser */ typingsJapgolly.swaggerParser.mod.^, 
+Unit]

@@ -3,16 +3,16 @@ package typingsJapgolly.azureArmResource.mod
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "ManagementLinkClient")
-@js.native
-object ManagementLinkClient extends js.Object {
+object ManagementLinkClient {
+  
+  @JSImport("azure-arm-resource", "ManagementLinkClient.default")
   @js.native
-  class ManagementLinkClient protected ()
-    extends typingsJapgolly.azureArmResource.managementLinkClientMod.ManagementLinkClient {
+  open class default protected ()
+    extends typingsJapgolly.azureArmResource.libLinkManagementLinkClientMod.default {
     /**
       * Initializes a new instance of the ManagementLinkClient class.
       * @constructor
@@ -48,11 +48,18 @@ object ManagementLinkClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
+  @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkClient")
   @js.native
-  class default protected ()
-    extends typingsJapgolly.azureArmResource.managementLinkClientMod.default {
+  open class ManagementLinkClient protected ()
+    extends typingsJapgolly.azureArmResource.libLinkManagementLinkClientMod.ManagementLinkClient {
     /**
       * Initializes a new instance of the ManagementLinkClient class.
       * @constructor
@@ -88,21 +95,26 @@ object ManagementLinkClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
-  @js.native
-  object ManagementLinkModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typingsJapgolly.msRestAzure.mod.BaseResource
+  object ManagementLinkModels {
     
+    @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkModels.BaseResource")
     @js.native
-    class CloudError protected ()
-      extends typingsJapgolly.azureArmResource.managementLinkClientMod.ManagementLinkModels.CloudError {
+    open class BaseResource ()
+      extends typingsJapgolly.azureArmResource.libLinkManagementLinkClientMod.ManagementLinkModels.BaseResource
+    
+    @JSImport("azure-arm-resource", "ManagementLinkClient.ManagementLinkModels.CloudError")
+    @js.native
+    open class CloudError protected ()
+      extends typingsJapgolly.azureArmResource.libLinkManagementLinkClientMod.ManagementLinkModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
-    
   }
-  
 }
-

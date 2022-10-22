@@ -1,14 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.AwaitExpression
-import typingsJapgolly.babelTypes.babelTypesStrings.BreakStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.ContinueStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.ReturnStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.ThrowStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.YieldExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.BreakStatement_
@@ -18,139 +12,44 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.YieldExpression_
   - typingsJapgolly.babelTypes.mod.AwaitExpression_
 */
-trait Terminatorless extends _Node
-
+trait Terminatorless
+  extends StObject
+     with _Node
 object Terminatorless {
-  @scala.inline
-  def YieldExpression_(
-    delegate: js.Any,
-    `type`: YieldExpression,
-    argument: Expression = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def AwaitExpression_(argument: Expression): typingsJapgolly.babelTypes.mod.AwaitExpression_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("AwaitExpression")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.AwaitExpression_]
   }
-  @scala.inline
-  def ThrowStatement_(
-    argument: Expression,
-    `type`: ThrowStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def BreakStatement_(): typingsJapgolly.babelTypes.mod.BreakStatement_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, label = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BreakStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.BreakStatement_]
   }
-  @scala.inline
-  def ContinueStatement_(
-    `type`: ContinueStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    label: Identifier_ = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def ContinueStatement_(): typingsJapgolly.babelTypes.mod.ContinueStatement_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, label = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ContinueStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ContinueStatement_]
   }
-  @scala.inline
-  def ReturnStatement_(
-    `type`: ReturnStatement,
-    argument: Expression = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (argument != null) __obj.updateDynamic("argument")(argument.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def ReturnStatement_(): typingsJapgolly.babelTypes.mod.ReturnStatement_ = {
+    val __obj = js.Dynamic.literal(argument = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ReturnStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ReturnStatement_]
   }
-  @scala.inline
-  def BreakStatement_(
-    `type`: BreakStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    label: Identifier_ = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def ThrowStatement_(argument: Expression): typingsJapgolly.babelTypes.mod.ThrowStatement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ThrowStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ThrowStatement_]
   }
-  @scala.inline
-  def AwaitExpression_(
-    argument: Expression,
-    `type`: AwaitExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): Terminatorless = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Terminatorless]
+  
+  inline def YieldExpression_(delegate: Boolean): typingsJapgolly.babelTypes.mod.YieldExpression_ = {
+    val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], argument = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("YieldExpression")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.YieldExpression_]
   }
 }
-

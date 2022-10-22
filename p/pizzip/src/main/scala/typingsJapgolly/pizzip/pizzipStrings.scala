@@ -1,60 +1,53 @@
 package typingsJapgolly.pizzip
 
 import typingsJapgolly.pizzip.mod.Compression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pizzipStrings {
-  @js.native
-  sealed trait DEFLATE extends Compression
   
   @js.native
-  sealed trait DOS extends js.Object
+  sealed trait DEFLATE
+    extends StObject
+       with Compression
+  inline def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
   
   @js.native
-  sealed trait STORE extends Compression
+  sealed trait DOS extends StObject
+  inline def DOS: DOS = "DOS".asInstanceOf[DOS]
   
   @js.native
-  sealed trait UNIX extends js.Object
+  sealed trait STORE
+    extends StObject
+       with Compression
+  inline def STORE: STORE = "STORE".asInstanceOf[STORE]
   
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait UNIX extends StObject
+  inline def UNIX: UNIX = "UNIX".asInstanceOf[UNIX]
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait arraybuffer extends StObject
+  inline def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait nodebuffer extends js.Object
+  sealed trait blob extends StObject
+  inline def blob: blob = "blob".asInstanceOf[blob]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait nodebuffer extends StObject
+  inline def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
   
   @js.native
-  sealed trait uint8array extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
-  @scala.inline
-  def DOS: DOS = "DOS".asInstanceOf[DOS]
-  @scala.inline
-  def STORE: STORE = "STORE".asInstanceOf[STORE]
-  @scala.inline
-  def UNIX: UNIX = "UNIX".asInstanceOf[UNIX]
-  @scala.inline
-  def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def blob: blob = "blob".asInstanceOf[blob]
-  @scala.inline
-  def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def uint8array: uint8array = "uint8array".asInstanceOf[uint8array]
+  @js.native
+  sealed trait uint8array extends StObject
+  inline def uint8array: uint8array = "uint8array".asInstanceOf[uint8array]
 }
-

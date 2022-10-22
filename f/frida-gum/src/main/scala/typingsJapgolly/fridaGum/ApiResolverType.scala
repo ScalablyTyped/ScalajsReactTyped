@@ -1,21 +1,17 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.module
   - typingsJapgolly.fridaGum.fridaGumStrings.objc
 */
-trait ApiResolverType extends js.Object
-
+trait ApiResolverType extends StObject
 object ApiResolverType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def module: typingsJapgolly.fridaGum.fridaGumStrings.module = this.cast("module")
-  @scala.inline
-  def objc: typingsJapgolly.fridaGum.fridaGumStrings.objc = this.cast("objc")
+  
+  inline def module: typingsJapgolly.fridaGum.fridaGumStrings.module = "module".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.module]
+  
+  inline def objc: typingsJapgolly.fridaGum.fridaGumStrings.objc = "objc".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.objc]
 }
-

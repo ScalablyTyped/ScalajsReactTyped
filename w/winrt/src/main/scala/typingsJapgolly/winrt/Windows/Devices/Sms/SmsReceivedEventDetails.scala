@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sms.SmsReceivedEventDetails")
-@js.native
-class SmsReceivedEventDetails () extends ISmsReceivedEventDetails {
-  /* CompleteClass */
-  override var deviceId: String = js.native
-  /* CompleteClass */
-  override var messageIndex: Double = js.native
+trait SmsReceivedEventDetails
+  extends StObject
+     with ISmsReceivedEventDetails
+object SmsReceivedEventDetails {
+  
+  inline def apply(deviceId: String, messageIndex: Double): SmsReceivedEventDetails = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], messageIndex = messageIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmsReceivedEventDetails]
+  }
 }
-

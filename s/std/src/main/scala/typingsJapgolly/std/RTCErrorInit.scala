@@ -1,35 +1,58 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCErrorInit extends js.Object {
+trait RTCErrorInit extends StObject {
+  
+  /* standard dom */
   var errorDetail: RTCErrorDetailType
+  
+  /* standard dom */
   var httpRequestStatusCode: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var receivedAlert: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var sctpCauseCode: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var sdpLineNumber: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var sentAlert: js.UndefOr[Double] = js.undefined
 }
-
 object RTCErrorInit {
-  @scala.inline
-  def apply(
-    errorDetail: RTCErrorDetailType,
-    httpRequestStatusCode: Int | Double = null,
-    receivedAlert: Int | Double = null,
-    sctpCauseCode: Int | Double = null,
-    sdpLineNumber: Int | Double = null,
-    sentAlert: Int | Double = null
-  ): RTCErrorInit = {
+  
+  inline def apply(errorDetail: RTCErrorDetailType): RTCErrorInit = {
     val __obj = js.Dynamic.literal(errorDetail = errorDetail.asInstanceOf[js.Any])
-    if (httpRequestStatusCode != null) __obj.updateDynamic("httpRequestStatusCode")(httpRequestStatusCode.asInstanceOf[js.Any])
-    if (receivedAlert != null) __obj.updateDynamic("receivedAlert")(receivedAlert.asInstanceOf[js.Any])
-    if (sctpCauseCode != null) __obj.updateDynamic("sctpCauseCode")(sctpCauseCode.asInstanceOf[js.Any])
-    if (sdpLineNumber != null) __obj.updateDynamic("sdpLineNumber")(sdpLineNumber.asInstanceOf[js.Any])
-    if (sentAlert != null) __obj.updateDynamic("sentAlert")(sentAlert.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCErrorInit]
   }
+  
+  extension [Self <: RTCErrorInit](x: Self) {
+    
+    inline def setErrorDetail(value: RTCErrorDetailType): Self = StObject.set(x, "errorDetail", value.asInstanceOf[js.Any])
+    
+    inline def setHttpRequestStatusCode(value: Double): Self = StObject.set(x, "httpRequestStatusCode", value.asInstanceOf[js.Any])
+    
+    inline def setHttpRequestStatusCodeUndefined: Self = StObject.set(x, "httpRequestStatusCode", js.undefined)
+    
+    inline def setReceivedAlert(value: Double): Self = StObject.set(x, "receivedAlert", value.asInstanceOf[js.Any])
+    
+    inline def setReceivedAlertUndefined: Self = StObject.set(x, "receivedAlert", js.undefined)
+    
+    inline def setSctpCauseCode(value: Double): Self = StObject.set(x, "sctpCauseCode", value.asInstanceOf[js.Any])
+    
+    inline def setSctpCauseCodeUndefined: Self = StObject.set(x, "sctpCauseCode", js.undefined)
+    
+    inline def setSdpLineNumber(value: Double): Self = StObject.set(x, "sdpLineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setSdpLineNumberUndefined: Self = StObject.set(x, "sdpLineNumber", js.undefined)
+    
+    inline def setSentAlert(value: Double): Self = StObject.set(x, "sentAlert", value.asInstanceOf[js.Any])
+    
+    inline def setSentAlertUndefined: Self = StObject.set(x, "sentAlert", js.undefined)
+  }
 }
-

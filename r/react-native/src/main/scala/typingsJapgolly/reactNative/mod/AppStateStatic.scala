@@ -1,34 +1,38 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppStateStatic extends js.Object {
-  var currentState: AppStateStatus
+trait AppStateStatic extends StObject {
+  
   /**
     * Add a handler to AppState changes by listening to the change event
     * type and providing the handler
     */
-  def addEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit
-  /**
-    * Remove a handler by passing the change event type and the handler
-    */
-  def removeEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): Unit
+  def addEventListener(`type`: AppStateEvent, listener: js.Function1[/* state */ AppStateStatus, Unit]): NativeEventSubscription
+  
+  var currentState: AppStateStatus
+  
+  var isAvailable: Boolean
 }
-
 object AppStateStatic {
-  @scala.inline
-  def apply(
-    addEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Callback,
+  
+  inline def apply(
+    addEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => NativeEventSubscription,
     currentState: AppStateStatus,
-    removeEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Callback
+    isAvailable: Boolean
   ): AppStateStatic = {
-    val __obj = js.Dynamic.literal(currentState = currentState.asInstanceOf[js.Any])
-    __obj.updateDynamic("addEventListener")(js.Any.fromFunction2((t0: typingsJapgolly.reactNative.mod.AppStateEvent, t1: js.Function1[/* state */ typingsJapgolly.reactNative.mod.AppStateStatus, scala.Unit]) => addEventListener(t0, t1).runNow()))
-    __obj.updateDynamic("removeEventListener")(js.Any.fromFunction2((t0: typingsJapgolly.reactNative.mod.AppStateEvent, t1: js.Function1[/* state */ typingsJapgolly.reactNative.mod.AppStateStatus, scala.Unit]) => removeEventListener(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), currentState = currentState.asInstanceOf[js.Any], isAvailable = isAvailable.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppStateStatic]
   }
+  
+  extension [Self <: AppStateStatic](x: Self) {
+    
+    inline def setAddEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => NativeEventSubscription): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    
+    inline def setCurrentState(value: AppStateStatus): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    
+    inline def setIsAvailable(value: Boolean): Self = StObject.set(x, "isAvailable", value.asInstanceOf[js.Any])
+  }
 }
-

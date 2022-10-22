@@ -1,62 +1,71 @@
 package typingsJapgolly.prex
 
-import typingsJapgolly.esfxCancelable.distMod.Cancelable
-import typingsJapgolly.prex.cancellationMod.AbortSignalLike
-import typingsJapgolly.prex.cancellationMod.VSCodeCancellationTokenLike
+import typingsJapgolly.esfxCancelable.mod.Cancelable
+import typingsJapgolly.prex.outLibCancellationMod.AbortSignalLike
+import typingsJapgolly.prex.outLibCancellationMod.VSCodeCancellationTokenLike
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prex", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("prex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("prex", "AsyncBoundedQueue")
   @js.native
   /**
     * Initializes a new instance of the AsyncProducerConsumerQueue class.
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncBoundedQueue[T] ()
-    extends typingsJapgolly.prex.boundedQueueMod.AsyncBoundedQueue[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+  open class AsyncBoundedQueue[T] ()
+    extends typingsJapgolly.prex.outLibBoundedQueueMod.AsyncBoundedQueue[T] {
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
+  @JSImport("prex", "AsyncQueue")
   @js.native
   /**
     * Initializes a new instance of the AsyncQueue class.
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncQueue[T] ()
-    extends typingsJapgolly.prex.queueMod.AsyncQueue[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+  open class AsyncQueue[T] ()
+    extends typingsJapgolly.prex.outLibQueueMod.AsyncQueue[T] {
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
+  @JSImport("prex", "AsyncStack")
   @js.native
   /**
     * Initializes a new instance of the AsyncStack class.
     *
     * @param iterable An optional iterable of values or promises.
     */
-  class AsyncStack[T] ()
-    extends typingsJapgolly.prex.stackMod.AsyncStack[T] {
-    def this(iterable: js.Iterable[T | js.Thenable[T]]) = this()
+  open class AsyncStack[T] ()
+    extends typingsJapgolly.prex.outLibStackMod.AsyncStack[T] {
+    def this(iterable: js.Iterable[T | PromiseLike[T]]) = this()
   }
   
+  @JSImport("prex", "AutoResetEvent")
   @js.native
   /**
     * Initializes a new instance of the AutoResetEvent class.
     *
     * @param initialState A value indicating whether to set the initial state to signaled.
     */
-  class AutoResetEvent ()
-    extends typingsJapgolly.prex.autoreseteventMod.AutoResetEvent {
+  open class AutoResetEvent ()
+    extends typingsJapgolly.prex.outLibAutoreseteventMod.AutoResetEvent {
     def this(initialState: Boolean) = this()
   }
   
+  @JSImport("prex", "Barrier")
   @js.native
-  class Barrier protected ()
-    extends typingsJapgolly.prex.barrierMod.Barrier {
+  open class Barrier protected ()
+    extends typingsJapgolly.prex.outLibBarrierMod.Barrier {
     /**
       * Initializes a new instance of the Barrier class.
       *
@@ -66,40 +75,89 @@ object mod extends js.Object {
     def this(participantCount: Double) = this()
     def this(
       participantCount: Double,
-      postPhaseAction: js.Function1[/* barrier */ typingsJapgolly.prex.barrierMod.Barrier, Unit | js.Thenable[Unit]]
+      postPhaseAction: js.Function1[
+            /* barrier */ typingsJapgolly.prex.outLibBarrierMod.Barrier, 
+            Unit | PromiseLike[Unit]
+          ]
     ) = this()
   }
   
+  @JSImport("prex", "CancelError")
   @js.native
-  class CancelError ()
-    extends typingsJapgolly.prex.cancellationMod.CancelError {
+  open class CancelError ()
+    extends typingsJapgolly.prex.outLibCancellationMod.CancelError {
     def this(message: String) = this()
   }
   
+  @JSImport("prex", "CancellationToken")
   @js.native
-  class CancellationToken ()
-    extends typingsJapgolly.prex.cancellationMod.CancellationToken
-  
-  @js.native
-  class CancellationTokenCountdown ()
-    extends typingsJapgolly.prex.cancellationMod.CancellationTokenCountdown {
-    def this(iterable: js.Iterable[typingsJapgolly.prex.cancellationMod.CancellationToken | Cancelable]) = this()
+  open class CancellationToken ()
+    extends typingsJapgolly.prex.outLibCancellationMod.CancellationToken
+  /* static members */
+  object CancellationToken {
+    
+    @JSImport("prex", "CancellationToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
+      * @param tokens An iterable of CancellationToken objects.
+      */
+    inline def all(tokens: js.Iterable[typingsJapgolly.prex.outLibCancellationMod.CancellationToken | Cancelable]): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(tokens.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
+    
+    /**
+      * A token that is already canceled.
+      */
+    @JSImport("prex", "CancellationToken.canceled")
+    @js.native
+    val canceled: typingsJapgolly.prex.outLibCancellationMod.CancellationToken = js.native
+    
+    inline def from(cancelable: Cancelable): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
+    inline def from(cancelable: AbortSignalLike): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
+    /**
+      * Adapts a CancellationToken-like primitive from a different library.
+      */
+    inline def from(cancelable: typingsJapgolly.prex.outLibCancellationMod.CancellationToken): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
+    inline def from(cancelable: VSCodeCancellationTokenLike): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
+    
+    /**
+      * A token which will never be canceled.
+      */
+    @JSImport("prex", "CancellationToken.none")
+    @js.native
+    val none: typingsJapgolly.prex.outLibCancellationMod.CancellationToken = js.native
+    
+    /**
+      * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
+      * @param tokens An iterable of CancellationToken objects.
+      */
+    inline def race(tokens: js.Iterable[typingsJapgolly.prex.outLibCancellationMod.CancellationToken | Cancelable]): typingsJapgolly.prex.outLibCancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(tokens.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.prex.outLibCancellationMod.CancellationToken]
   }
   
+  @JSImport("prex", "CancellationTokenCountdown")
+  @js.native
+  open class CancellationTokenCountdown ()
+    extends typingsJapgolly.prex.outLibCancellationMod.CancellationTokenCountdown {
+    def this(iterable: js.Iterable[typingsJapgolly.prex.outLibCancellationMod.CancellationToken | Cancelable]) = this()
+  }
+  
+  @JSImport("prex", "CancellationTokenSource")
   @js.native
   /**
     * Initializes a new instance of a CancellationTokenSource.
     *
     * @param linkedTokens An optional iterable of tokens to which to link this source.
     */
-  class CancellationTokenSource ()
-    extends typingsJapgolly.prex.cancellationMod.CancellationTokenSource {
-    def this(linkedTokens: js.Iterable[typingsJapgolly.prex.cancellationMod.CancellationToken | Cancelable]) = this()
+  open class CancellationTokenSource ()
+    extends typingsJapgolly.prex.outLibCancellationMod.CancellationTokenSource {
+    def this(linkedTokens: js.Iterable[typingsJapgolly.prex.outLibCancellationMod.CancellationToken | Cancelable]) = this()
   }
   
+  @JSImport("prex", "CountdownEvent")
   @js.native
-  class CountdownEvent protected ()
-    extends typingsJapgolly.prex.countdownMod.CountdownEvent {
+  open class CountdownEvent protected ()
+    extends typingsJapgolly.prex.outLibCountdownMod.CountdownEvent {
     /**
       * Initializes a new instance of the CountdownEvent class.
       *
@@ -108,35 +166,40 @@ object mod extends js.Object {
     def this(initialCount: Double) = this()
   }
   
+  @JSImport("prex", "Deferred")
   @js.native
   /**
     * Initializes a new instance of the Deferred class.
     */
-  class Deferred[T] ()
-    extends typingsJapgolly.prex.deferredMod.Deferred[T]
+  open class Deferred[T] ()
+    extends typingsJapgolly.prex.outLibDeferredMod.Deferred[T]
   
+  @JSImport("prex", "ManualResetEvent")
   @js.native
   /**
     * Initializes a new instance of the ManualResetEvent class.
     *
     * @param initialState A value indicating whether to set the initial state to signaled.
     */
-  class ManualResetEvent ()
-    extends typingsJapgolly.prex.manualreseteventMod.ManualResetEvent {
+  open class ManualResetEvent ()
+    extends typingsJapgolly.prex.outLibManualreseteventMod.ManualResetEvent {
     def this(initialState: Boolean) = this()
   }
   
+  @JSImport("prex", "Pulsar")
   @js.native
-  class Pulsar ()
-    extends typingsJapgolly.prex.pulsarMod.Pulsar
+  open class Pulsar ()
+    extends typingsJapgolly.prex.outLibPulsarMod.Pulsar
   
+  @JSImport("prex", "ReaderWriterLock")
   @js.native
-  class ReaderWriterLock ()
-    extends typingsJapgolly.prex.readerwriterlockMod.ReaderWriterLock
+  open class ReaderWriterLock ()
+    extends typingsJapgolly.prex.outLibReaderwriterlockMod.ReaderWriterLock
   
+  @JSImport("prex", "Semaphore")
   @js.native
-  class Semaphore protected ()
-    extends typingsJapgolly.prex.semaphoreMod.Semaphore {
+  open class Semaphore protected ()
+    extends typingsJapgolly.prex.outLibSemaphoreMod.Semaphore {
     /**
       * Initializes a new instance of the Semaphore class.
       *
@@ -147,44 +210,17 @@ object mod extends js.Object {
     def this(initialCount: Double, maxCount: Double) = this()
   }
   
-  def delay(msec: Double): js.Promise[Unit] = js.native
-  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = js.native
-  def delay(token: typingsJapgolly.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = js.native
-  def delay[T](msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  def delay[T](token: typingsJapgolly.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = js.native
-  def delay[T](token: typingsJapgolly.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  /* static members */
-  @js.native
-  object CancellationToken extends js.Object {
-    /**
-      * A token that is already canceled.
-      */
-    val canceled: typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * A token which will never be canceled.
-      */
-    val none: typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
-      * @param tokens An iterable of CancellationToken objects.
-      */
-    def all(tokens: js.Iterable[typingsJapgolly.prex.cancellationMod.CancellationToken | Cancelable]): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: Cancelable): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: AbortSignalLike): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Adapts a CancellationToken-like primitive from a different library.
-      */
-    def from(cancelable: typingsJapgolly.prex.cancellationMod.CancellationToken): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    def from(cancelable: VSCodeCancellationTokenLike): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-    /**
-      * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
-      * @param tokens An iterable of CancellationToken objects.
-      */
-    def race(tokens: js.Iterable[typingsJapgolly.prex.cancellationMod.CancellationToken | Cancelable]): typingsJapgolly.prex.cancellationMod.CancellationToken = js.native
-  }
-  
+  inline def delay(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def delay(token: Cancelable, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def delay(token: typingsJapgolly.prex.outLibCancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def delay[T](msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](msec: Double, value: PromiseLike[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](token: Cancelable, msec: Double, value: PromiseLike[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](token: typingsJapgolly.prex.outLibCancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def delay[T](
+    token: typingsJapgolly.prex.outLibCancellationMod.CancellationToken,
+    msec: Double,
+    value: PromiseLike[T]
+  ): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }
-

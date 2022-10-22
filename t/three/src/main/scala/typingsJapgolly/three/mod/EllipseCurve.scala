@@ -1,13 +1,13 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "EllipseCurve")
 @js.native
-class EllipseCurve protected ()
-  extends typingsJapgolly.three.curvesMod.EllipseCurve {
+open class EllipseCurve protected ()
+  extends typingsJapgolly.three.srcThreeMod.EllipseCurve {
   def this(
     aX: Double,
     aY: Double,
@@ -19,4 +19,3 @@ class EllipseCurve protected ()
     aRotation: Double
   ) = this()
 }
-

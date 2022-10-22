@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandPinLockState extends js.Object
-
+sealed trait MobileBroadbandPinLockState extends StObject
 /** Describes the possible PIN lock states of a mobile broadband PIN. */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandPinLockState")
 @js.native
-object MobileBroadbandPinLockState extends js.Object {
+object MobileBroadbandPinLockState extends StObject {
+  
   /** A PIN input is required. The MobileBroadbandPinType will contain more information on which PIN is needed. */
   @js.native
-  sealed trait pinRequired extends MobileBroadbandPinLockState
+  sealed trait pinRequired
+    extends StObject
+       with MobileBroadbandPinLockState
   
   /** An invalid PIN has been entered too often and a PIN Unblock Key (PUK) is needed to proceed. */
   @js.native
-  sealed trait pinUnblockKeyRequired extends MobileBroadbandPinLockState
+  sealed trait pinUnblockKeyRequired
+    extends StObject
+       with MobileBroadbandPinLockState
   
   /** The PIN lock state is unknown. */
   @js.native
-  sealed trait unknown extends MobileBroadbandPinLockState
+  sealed trait unknown
+    extends StObject
+       with MobileBroadbandPinLockState
   
   /** The PIN lock state is unlocked. */
   @js.native
-  sealed trait unlocked extends MobileBroadbandPinLockState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MobileBroadbandPinLockState with Double] = js.native
-  /* 2 */ @js.native
-  object pinRequired extends TopLevel[pinRequired with Double]
-  
-  /* 3 */ @js.native
-  object pinUnblockKeyRequired extends TopLevel[pinUnblockKeyRequired with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object unlocked extends TopLevel[unlocked with Double]
-  
+  sealed trait unlocked
+    extends StObject
+       with MobileBroadbandPinLockState
 }
-

@@ -1,38 +1,55 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransitionCallbacks extends js.Object {
-  var onEnter: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
-  var onEntered: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
-  var onEntering: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
-  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
-  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
-  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, _]] = js.undefined
+trait TransitionCallbacks extends StObject {
+  
+  var onEnter: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
+  
+  var onEntered: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
+  
+  var onEntering: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
+  
+  var onExit: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
+  
+  var onExited: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
+  
+  var onExiting: js.UndefOr[js.Function1[/* node */ HTMLElement, Any]] = js.undefined
 }
-
 object TransitionCallbacks {
-  @scala.inline
-  def apply(
-    onEnter: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntered: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntering: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExit: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExited: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExiting: /* node */ HTMLElement => CallbackTo[js.Any] = null
-  ): TransitionCallbacks = {
+  
+  inline def apply(): TransitionCallbacks = {
     val __obj = js.Dynamic.literal()
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEnter(t0).runNow()))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntered(t0).runNow()))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntering(t0).runNow()))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExit(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExited(t0).runNow()))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExiting(t0).runNow()))
     __obj.asInstanceOf[TransitionCallbacks]
   }
+  
+  extension [Self <: TransitionCallbacks](x: Self) {
+    
+    inline def setOnEnter(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onEnter", js.Any.fromFunction1(value))
+    
+    inline def setOnEnterUndefined: Self = StObject.set(x, "onEnter", js.undefined)
+    
+    inline def setOnEntered(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onEntered", js.Any.fromFunction1(value))
+    
+    inline def setOnEnteredUndefined: Self = StObject.set(x, "onEntered", js.undefined)
+    
+    inline def setOnEntering(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onEntering", js.Any.fromFunction1(value))
+    
+    inline def setOnEnteringUndefined: Self = StObject.set(x, "onEntering", js.undefined)
+    
+    inline def setOnExit(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExit", js.Any.fromFunction1(value))
+    
+    inline def setOnExitUndefined: Self = StObject.set(x, "onExit", js.undefined)
+    
+    inline def setOnExited(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExited", js.Any.fromFunction1(value))
+    
+    inline def setOnExitedUndefined: Self = StObject.set(x, "onExited", js.undefined)
+    
+    inline def setOnExiting(value: /* node */ HTMLElement => Any): Self = StObject.set(x, "onExiting", js.Any.fromFunction1(value))
+    
+    inline def setOnExitingUndefined: Self = StObject.set(x, "onExiting", js.undefined)
+  }
 }
-

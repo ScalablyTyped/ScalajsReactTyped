@@ -1,111 +1,109 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait publicKey extends js.Object
-
+sealed trait publicKey extends StObject
 /**
   * {@link https://tools.ietf.org/html/draft-ietf-openpgp-rfc4880bis-04#section-9.1|RFC4880bis-04, section 9.1}
   */
 @JSImport("openpgp", "enums.publicKey")
 @js.native
-object publicKey extends js.Object {
+object publicKey extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[publicKey & Double] = js.native
+  
   /**
     * Reserved for AEDH
     */
   @js.native
-  sealed trait aedh extends publicKey
+  sealed trait aedh
+    extends StObject
+       with publicKey
+  /* 23 */ val aedh: typingsJapgolly.openpgp.mod.enums.publicKey.aedh & Double = js.native
   
   /**
     * Reserved for AEDSA
     */
   @js.native
-  sealed trait aedsa extends publicKey
+  sealed trait aedsa
+    extends StObject
+       with publicKey
+  /* 24 */ val aedsa: typingsJapgolly.openpgp.mod.enums.publicKey.aedsa & Double = js.native
   
   /**
     * DSA (Sign only) [FIPS186] [HAC]
     */
   @js.native
-  sealed trait dsa extends publicKey
+  sealed trait dsa
+    extends StObject
+       with publicKey
+  /* 17 */ val dsa: typingsJapgolly.openpgp.mod.enums.publicKey.dsa & Double = js.native
   
   /**
     * ECDH (Encrypt only) [RFC6637]
     */
   @js.native
-  sealed trait ecdh extends publicKey
+  sealed trait ecdh
+    extends StObject
+       with publicKey
+  /* 18 */ val ecdh: typingsJapgolly.openpgp.mod.enums.publicKey.ecdh & Double = js.native
   
   /**
     * ECDSA (Sign only) [RFC6637]
     */
   @js.native
-  sealed trait ecdsa extends publicKey
+  sealed trait ecdsa
+    extends StObject
+       with publicKey
+  /* 19 */ val ecdsa: typingsJapgolly.openpgp.mod.enums.publicKey.ecdsa & Double = js.native
   
   /**
     * EdDSA (Sign only)
     * [ {@link https://tools.ietf.org/html/draft-koch-eddsa-for-openpgp-04|Draft RFC}]
     */
   @js.native
-  sealed trait eddsa extends publicKey
+  sealed trait eddsa
+    extends StObject
+       with publicKey
+  /* 22 */ val eddsa: typingsJapgolly.openpgp.mod.enums.publicKey.eddsa & Double = js.native
   
   /**
     * Elgamal (Encrypt only) [ELGAMAL] [HAC]
     */
   @js.native
-  sealed trait elgamal extends publicKey
+  sealed trait elgamal
+    extends StObject
+       with publicKey
+  /* 16 */ val elgamal: typingsJapgolly.openpgp.mod.enums.publicKey.elgamal & Double = js.native
   
   /**
     * RSA (Encrypt only) [HAC]
     */
   @js.native
-  sealed trait rsa_encrypt extends publicKey
+  sealed trait rsa_encrypt
+    extends StObject
+       with publicKey
+  /* 2 */ val rsa_encrypt: typingsJapgolly.openpgp.mod.enums.publicKey.rsa_encrypt & Double = js.native
   
   /**
     * RSA (Encrypt or Sign) [HAC]
     */
   @js.native
-  sealed trait rsa_encrypt_sign extends publicKey
+  sealed trait rsa_encrypt_sign
+    extends StObject
+       with publicKey
+  /* 1 */ val rsa_encrypt_sign: typingsJapgolly.openpgp.mod.enums.publicKey.rsa_encrypt_sign & Double = js.native
   
   /**
     * RSA (Sign only) [HAC]
     */
   @js.native
-  sealed trait rsa_sign extends publicKey
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[publicKey with Double] = js.native
-  /* 23 */ @js.native
-  object aedh extends TopLevel[aedh with Double]
-  
-  /* 24 */ @js.native
-  object aedsa extends TopLevel[aedsa with Double]
-  
-  /* 17 */ @js.native
-  object dsa extends TopLevel[dsa with Double]
-  
-  /* 18 */ @js.native
-  object ecdh extends TopLevel[ecdh with Double]
-  
-  /* 19 */ @js.native
-  object ecdsa extends TopLevel[ecdsa with Double]
-  
-  /* 22 */ @js.native
-  object eddsa extends TopLevel[eddsa with Double]
-  
-  /* 16 */ @js.native
-  object elgamal extends TopLevel[elgamal with Double]
-  
-  /* 2 */ @js.native
-  object rsa_encrypt extends TopLevel[rsa_encrypt with Double]
-  
-  /* 1 */ @js.native
-  object rsa_encrypt_sign extends TopLevel[rsa_encrypt_sign with Double]
-  
-  /* 3 */ @js.native
-  object rsa_sign extends TopLevel[rsa_sign with Double]
-  
+  sealed trait rsa_sign
+    extends StObject
+       with publicKey
+  /* 3 */ val rsa_sign: typingsJapgolly.openpgp.mod.enums.publicKey.rsa_sign & Double = js.native
 }
-

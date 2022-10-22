@@ -1,64 +1,111 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoggerOptions extends js.Object {
+trait LoggerOptions extends StObject {
+  
   var autoSendLogs: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * @deprecated since version 6.2. use filters instead.
     */
   var blacklist: js.UndefOr[js.Array[String]] = js.undefined
+  
   var callback: js.UndefOr[LoggerCallback] = js.undefined
+  
   var capture: js.UndefOr[Boolean] = js.undefined
+  
   var filters: js.UndefOr[Filter] = js.undefined
+  
   var level: js.UndefOr[js.Array[String] | String | Double] = js.undefined
+  
   var maxFileSize: js.UndefOr[Double] = js.undefined
+  
   var pkg: js.UndefOr[String] = js.undefined
+  
   var pretty: js.UndefOr[Boolean] = js.undefined
+  
   var stacktrace: js.UndefOr[Boolean] = js.undefined
+  
   var stringify: js.UndefOr[Boolean] = js.undefined
+  
   var tag: js.UndefOr[Tag] = js.undefined
+  
   /**
     * @deprecated since version 6.2. use filters instead.
     */
   var whitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object LoggerOptions {
-  @scala.inline
-  def apply(
-    autoSendLogs: js.UndefOr[Boolean] = js.undefined,
-    blacklist: js.Array[String] = null,
-    callback: (/* message */ String | js.Array[String], /* level */ String, /* package */ String) => Callback = null,
-    capture: js.UndefOr[Boolean] = js.undefined,
-    filters: Filter = null,
-    level: js.Array[String] | String | Double = null,
-    maxFileSize: Int | Double = null,
-    pkg: String = null,
-    pretty: js.UndefOr[Boolean] = js.undefined,
-    stacktrace: js.UndefOr[Boolean] = js.undefined,
-    stringify: js.UndefOr[Boolean] = js.undefined,
-    tag: Tag = null,
-    whitelist: js.Array[String] = null
-  ): LoggerOptions = {
+  
+  inline def apply(): LoggerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs.asInstanceOf[js.Any])
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3((t0: /* message */ java.lang.String | js.Array[java.lang.String], t1: /* level */ java.lang.String, t2: /* package */ java.lang.String) => callback(t0, t1, t2).runNow()))
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
-    if (pkg != null) __obj.updateDynamic("pkg")(pkg.asInstanceOf[js.Any])
-    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty.asInstanceOf[js.Any])
-    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoggerOptions]
   }
+  
+  extension [Self <: LoggerOptions](x: Self) {
+    
+    inline def setAutoSendLogs(value: Boolean): Self = StObject.set(x, "autoSendLogs", value.asInstanceOf[js.Any])
+    
+    inline def setAutoSendLogsUndefined: Self = StObject.set(x, "autoSendLogs", js.undefined)
+    
+    inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+    
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
+    
+    inline def setCallback(
+      value: (/* message */ String | js.Array[String], /* level */ String, /* package */ String) => Callback
+    ): Self = StObject.set(x, "callback", js.Any.fromFunction3((t0: /* message */ String | js.Array[String], t1: /* level */ String, t2: /* package */ String) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    
+    inline def setFilters(value: Filter): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setLevel(value: js.Array[String] | String | Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLevelVarargs(value: String*): Self = StObject.set(x, "level", js.Array(value*))
+    
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    
+    inline def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+    
+    inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+    
+    inline def setPretty(value: Boolean): Self = StObject.set(x, "pretty", value.asInstanceOf[js.Any])
+    
+    inline def setPrettyUndefined: Self = StObject.set(x, "pretty", js.undefined)
+    
+    inline def setStacktrace(value: Boolean): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+    
+    inline def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
+    
+    inline def setStringify(value: Boolean): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+    
+    inline def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
+    
+    inline def setTag(value: Tag): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    
+    inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+    
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
+  }
 }
-

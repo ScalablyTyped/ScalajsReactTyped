@@ -1,11 +1,14 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Reverb extends Effect {
+trait Reverb
+  extends StObject
+     with Effect {
+  
   /**
     *   Connect a source to the reverb, and assign reverb
     *   parameters.
@@ -22,6 +25,11 @@ trait Reverb extends Effect {
   def process(src: js.Object, seconds: Double): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double): Unit = js.native
   def process(src: js.Object, seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Double, decayRate: Unit, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Double): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Double, reverse: Boolean): Unit = js.native
+  def process(src: js.Object, seconds: Unit, decayRate: Unit, reverse: Boolean): Unit = js.native
+  
   /**
     *   Set the reverb settings. Similar to .process(),
     *   but without assigning a new input.
@@ -36,5 +44,8 @@ trait Reverb extends Effect {
   def set(seconds: Double): Unit = js.native
   def set(seconds: Double, decayRate: Double): Unit = js.native
   def set(seconds: Double, decayRate: Double, reverse: Boolean): Unit = js.native
+  def set(seconds: Double, decayRate: Unit, reverse: Boolean): Unit = js.native
+  def set(seconds: Unit, decayRate: Double): Unit = js.native
+  def set(seconds: Unit, decayRate: Double, reverse: Boolean): Unit = js.native
+  def set(seconds: Unit, decayRate: Unit, reverse: Boolean): Unit = js.native
 }
-

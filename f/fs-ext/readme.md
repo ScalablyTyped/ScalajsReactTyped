@@ -10,10 +10,10 @@ Extensions to core 'fs' module.
 | ------------------ | :-------------: |
 | Full name          | fs-ext |
 | Keywords           | fs, filesystem, flock, seek |
-| # releases         | 6 |
-| # dependents       | 61 |
-| # downloads        | 624200 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64979.333333333336 |
+| # stars            | 96.0 |
 
 ## Links
 - [Homepage](https://github.com/baudehlo/node-fs-ext/)

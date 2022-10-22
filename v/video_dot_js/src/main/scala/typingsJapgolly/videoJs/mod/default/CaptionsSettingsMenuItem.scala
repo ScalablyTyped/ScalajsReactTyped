@@ -1,16 +1,17 @@
 package typingsJapgolly.videoJs.mod.default
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
 import typingsJapgolly.videoJs.mod.videojs.CaptionSettingsMenuItem
 import typingsJapgolly.videoJs.mod.videojs.CaptionSettingsMenuItemOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "CaptionsSettingsMenuItem")
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+@JSImport("video.js", "default.CaptionsSettingsMenuItem")
 @js.native
-class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
+open class CaptionsSettingsMenuItem protected ()
+  extends StObject
+     with CaptionSettingsMenuItem {
   /**
     * Creates an instance of this class.
     *
@@ -23,23 +24,3 @@ class CaptionsSettingsMenuItem protected () extends CaptionSettingsMenuItem {
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
   def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: CaptionSettingsMenuItemOptions) = this()
 }
-
-@JSImport("video.js", "CaptionsSettingsMenuItem")
-@js.native
-object CaptionsSettingsMenuItem
-  extends /**
-  * Creates an instance of this class.
-  *
-  * @param player
-  *        The `Player` that this class should be attached to.
-  *
-  * @param [options]
-  *        The key/value store of player options.
-  */
-Instantiable1[/* player */ typingsJapgolly.videoJs.mod.videojs.Player, CaptionSettingsMenuItem]
-     with Instantiable2[
-      /* player */ typingsJapgolly.videoJs.mod.videojs.Player, 
-      /* options */ CaptionSettingsMenuItemOptions, 
-      CaptionSettingsMenuItem
-    ]
-

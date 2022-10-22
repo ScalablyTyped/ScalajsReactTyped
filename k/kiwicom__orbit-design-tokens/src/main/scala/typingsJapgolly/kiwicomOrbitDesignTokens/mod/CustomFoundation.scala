@@ -1,22 +1,31 @@
 package typingsJapgolly.kiwicomOrbitDesignTokens.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  palette  :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomPalette,   base  :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomBase}> */
-trait CustomFoundation extends js.Object {
+/* Inlined std.Partial<{  palette :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomPalette,   base :@kiwicom/orbit-design-tokens.@kiwicom/orbit-design-tokens.CustomBase}> */
+trait CustomFoundation extends StObject {
+  
   var base: js.UndefOr[CustomBase] = js.undefined
+  
   var palette: js.UndefOr[CustomPalette] = js.undefined
 }
-
 object CustomFoundation {
-  @scala.inline
-  def apply(base: CustomBase = null, palette: CustomPalette = null): CustomFoundation = {
+  
+  inline def apply(): CustomFoundation = {
     val __obj = js.Dynamic.literal()
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomFoundation]
   }
+  
+  extension [Self <: CustomFoundation](x: Self) {
+    
+    inline def setBase(value: CustomBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    
+    inline def setPalette(value: CustomPalette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+  }
 }
-

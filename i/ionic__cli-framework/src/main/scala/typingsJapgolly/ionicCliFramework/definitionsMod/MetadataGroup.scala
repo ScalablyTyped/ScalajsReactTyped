@@ -6,9 +6,9 @@ import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.deprecated
 import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.experimental
 import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.hidden
 import typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.paid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.advanced
@@ -18,22 +18,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.hidden
   - typingsJapgolly.ionicCliFramework.ionicCliFrameworkStrings.paid
 */
-trait MetadataGroup extends js.Object
-
+trait MetadataGroup extends StObject
 object MetadataGroup {
-  @scala.inline
-  def ADVANCED: advanced = this.cast("advanced")
-  @scala.inline
-  def BETA: beta = this.cast("beta")
-  @scala.inline
-  def DEPRECATED: deprecated = this.cast("deprecated")
-  @scala.inline
-  def EXPERIMENTAL: experimental = this.cast("experimental")
-  @scala.inline
-  def HIDDEN: hidden = this.cast("hidden")
-  @scala.inline
-  def PAID: paid = this.cast("paid")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ADVANCED: advanced = "advanced".asInstanceOf[advanced]
+  
+  inline def BETA: beta = "beta".asInstanceOf[beta]
+  
+  inline def DEPRECATED: deprecated = "deprecated".asInstanceOf[deprecated]
+  
+  inline def EXPERIMENTAL: experimental = "experimental".asInstanceOf[experimental]
+  
+  inline def HIDDEN: hidden = "hidden".asInstanceOf[hidden]
+  
+  inline def PAID: paid = "paid".asInstanceOf[paid]
 }
-

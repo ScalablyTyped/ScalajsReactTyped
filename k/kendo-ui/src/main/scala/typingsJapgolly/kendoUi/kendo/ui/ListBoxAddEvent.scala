@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxAddEvent extends ListBoxEvent {
-  var dataItems: js.UndefOr[js.Any] = js.undefined
-  var items: js.UndefOr[js.Any] = js.undefined
+trait ListBoxAddEvent
+  extends StObject
+     with ListBoxEvent {
+  
+  var dataItems: js.UndefOr[Any] = js.undefined
+  
+  var items: js.UndefOr[Any] = js.undefined
 }
-
 object ListBoxAddEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: ListBox,
-    dataItems: js.Any = null,
-    items: js.Any = null
-  ): ListBoxAddEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (dataItems != null) __obj.updateDynamic("dataItems")(dataItems.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: ListBox): ListBoxAddEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxAddEvent]
   }
+  
+  extension [Self <: ListBoxAddEvent](x: Self) {
+    
+    inline def setDataItems(value: Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
+    
+    inline def setDataItemsUndefined: Self = StObject.set(x, "dataItems", js.undefined)
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod.source
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * State of the source, one of 'undefined', 'loading', 'ready' or 'error'.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.openlayers.openlayersStrings.ready
   - typingsJapgolly.openlayers.openlayersStrings.error
 */
-trait State extends js.Object
-
+trait State extends StObject
 object State {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def error: typingsJapgolly.openlayers.openlayersStrings.error = this.cast("error")
-  @scala.inline
-  def loading: typingsJapgolly.openlayers.openlayersStrings.loading = this.cast("loading")
-  @scala.inline
-  def ready: typingsJapgolly.openlayers.openlayersStrings.ready = this.cast("ready")
-  @scala.inline
-  def undefined: typingsJapgolly.openlayers.openlayersStrings.undefined = this.cast("undefined")
+  
+  inline def error: typingsJapgolly.openlayers.openlayersStrings.error = "error".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.error]
+  
+  inline def loading: typingsJapgolly.openlayers.openlayersStrings.loading = "loading".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.loading]
+  
+  inline def ready: typingsJapgolly.openlayers.openlayersStrings.ready = "ready".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.ready]
+  
+  inline def undefined: typingsJapgolly.openlayers.openlayersStrings.undefined = "undefined".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.undefined]
 }
-

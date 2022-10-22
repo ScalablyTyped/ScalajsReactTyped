@@ -1,33 +1,51 @@
 package typingsJapgolly.waypoints
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WaypointOptionsBase extends js.Object {
+trait WaypointOptionsBase extends StObject {
+  
   var continuous: js.UndefOr[Boolean] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var group: js.UndefOr[String] = js.undefined
+  
   var horizontal: js.UndefOr[Boolean] = js.undefined
+  
   var offset: js.UndefOr[String | Double | js.Function0[Double]] = js.undefined
 }
-
 object WaypointOptionsBase {
-  @scala.inline
-  def apply(
-    continuous: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    offset: String | Double | js.Function0[Double] = null
-  ): WaypointOptionsBase = {
+  
+  inline def apply(): WaypointOptionsBase = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[WaypointOptionsBase]
   }
+  
+  extension [Self <: WaypointOptionsBase](x: Self) {
+    
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setOffset(value: String | Double | js.Function0[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetCallbackTo(value: CallbackTo[Double]): Self = StObject.set(x, "offset", value.toJsFn)
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

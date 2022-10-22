@@ -1,40 +1,56 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelSymbol3DProperties extends Symbol3DProperties {
+trait LabelSymbol3DProperties
+  extends StObject
+     with Symbol3DProperties {
+  
   /**
-    * Settings for adding a callout visualization to the symbol. Callouts are drawn from the point feature location that is being symbolized, to the vertical offset of the symbol. This property has no effect if [verticalOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset) is not set. At the moment only callouts of type `line` are supported. See [LineCallout3D](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-LineCallout3D.html).
+    * Settings for adding a callout visualization to the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#callout)
     */
   var callout: js.UndefOr[Callout3DProperties] = js.undefined
+  
   /**
-    * Shifts the symbol along the vertical world axis by a given height. The height is set in screen space units like points or pixels. For points displayed with a [callout](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#callout) `verticalOffset` should be set.
+    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#symbolLayers)
+    */
+  @JSName("symbolLayers")
+  var symbolLayers_LabelSymbol3DProperties: js.UndefOr[CollectionProperties[TextSymbol3DLayerProperties]] = js.undefined
+  
+  /**
+    * Shifts the symbol along the vertical world axis by a given height.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html#verticalOffset)
     */
   var verticalOffset: js.UndefOr[LabelSymbol3DVerticalOffsetProperties] = js.undefined
 }
-
 object LabelSymbol3DProperties {
-  @scala.inline
-  def apply(
-    callout: Callout3DProperties = null,
-    color: Color_ | js.Array[Double] | String = null,
-    styleOrigin: Symbol3DStyleOrigin = null,
-    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null,
-    verticalOffset: LabelSymbol3DVerticalOffsetProperties = null
-  ): LabelSymbol3DProperties = {
+  
+  inline def apply(): LabelSymbol3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (callout != null) __obj.updateDynamic("callout")(callout.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin.asInstanceOf[js.Any])
-    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
-    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelSymbol3DProperties]
   }
+  
+  extension [Self <: LabelSymbol3DProperties](x: Self) {
+    
+    inline def setCallout(value: Callout3DProperties): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+    
+    inline def setSymbolLayers(value: CollectionProperties[TextSymbol3DLayerProperties]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
+    
+    inline def setSymbolLayersVarargs(value: TextSymbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
+    
+    inline def setVerticalOffset(value: LabelSymbol3DVerticalOffsetProperties): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalOffsetUndefined: Self = StObject.set(x, "verticalOffset", js.undefined)
+  }
 }
-

@@ -1,19 +1,23 @@
 package typingsJapgolly.tcomb.mod
 
-import typingsJapgolly.tcomb.AnonIdentity
+import typingsJapgolly.tcomb.anon.KindName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Type[T]
   extends js.Function {
+  
+  def apply(value: T): T = js.native
+  
   var displayName: java.lang.String = js.native
+  
+  def is(x: scala.Any): /* is T */ scala.Boolean = js.native
   @JSName("is")
   var is_Original: TypeGuardPredicate[T] = js.native
-  var meta: AnonIdentity = js.native
+  
+  var meta: KindName = js.native
+  
   var t: T = js.native
-  def apply(value: T): T = js.native
-  def is(x: js.Any): /* is T */ scala.Boolean = js.native
 }
-

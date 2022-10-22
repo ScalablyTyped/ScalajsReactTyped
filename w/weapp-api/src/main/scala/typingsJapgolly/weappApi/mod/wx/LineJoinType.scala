@@ -1,24 +1,20 @@
 package typingsJapgolly.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weappApi.weappApiStrings.bevel
   - typingsJapgolly.weappApi.weappApiStrings.round
   - typingsJapgolly.weappApi.weappApiStrings.miter
 */
-trait LineJoinType extends js.Object
-
+trait LineJoinType extends StObject
 object LineJoinType {
-  @scala.inline
-  def bevel: typingsJapgolly.weappApi.weappApiStrings.bevel = this.cast("bevel")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def miter: typingsJapgolly.weappApi.weappApiStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typingsJapgolly.weappApi.weappApiStrings.round = this.cast("round")
+  
+  inline def bevel: typingsJapgolly.weappApi.weappApiStrings.bevel = "bevel".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.bevel]
+  
+  inline def miter: typingsJapgolly.weappApi.weappApiStrings.miter = "miter".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.miter]
+  
+  inline def round: typingsJapgolly.weappApi.weappApiStrings.round = "round".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.round]
 }
-

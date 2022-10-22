@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Imaging.BitmapCodecInformation")
-@js.native
-class BitmapCodecInformation () extends IBitmapCodecInformation {
-  /* CompleteClass */
-  override var codecId: String = js.native
-  /* CompleteClass */
-  override var fileExtensions: IVectorView[String] = js.native
-  /* CompleteClass */
-  override var friendlyName: String = js.native
-  /* CompleteClass */
-  override var mimeTypes: IVectorView[String] = js.native
+trait BitmapCodecInformation
+  extends StObject
+     with IBitmapCodecInformation
+object BitmapCodecInformation {
+  
+  inline def apply(
+    codecId: String,
+    fileExtensions: IVectorView[String],
+    friendlyName: String,
+    mimeTypes: IVectorView[String]
+  ): BitmapCodecInformation = {
+    val __obj = js.Dynamic.literal(codecId = codecId.asInstanceOf[js.Any], fileExtensions = fileExtensions.asInstanceOf[js.Any], friendlyName = friendlyName.asInstanceOf[js.Any], mimeTypes = mimeTypes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapCodecInformation]
+  }
 }
-

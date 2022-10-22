@@ -1,15 +1,31 @@
 package typingsJapgolly.vuex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActionObject[S, R] extends js.Object {
+trait ActionObject[S, R] extends StObject {
+  
+  def handler(injectee: ActionContext[S, R]): Any
+  def handler(injectee: ActionContext[S, R], payload: Any): Any
   @JSName("handler")
-  var handler_Original: ActionHandler[S, R] = js.native
-  var root: js.UndefOr[Boolean] = js.native
-  def handler(injectee: ActionContext[S, R]): js.Any = js.native
-  def handler(injectee: ActionContext[S, R], payload: js.Any): js.Any = js.native
+  var handler_Original: ActionHandler[S, R]
+  
+  var root: js.UndefOr[Boolean] = js.undefined
 }
-
+object ActionObject {
+  
+  inline def apply[S, R](handler: ActionHandler[S, R]): ActionObject[S, R] = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ActionObject[S, R]]
+  }
+  
+  extension [Self <: ActionObject[?, ?], S, R](x: Self & (ActionObject[S, R])) {
+    
+    inline def setHandler(value: ActionHandler[S, R]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+  }
+}

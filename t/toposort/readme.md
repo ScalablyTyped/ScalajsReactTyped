@@ -10,10 +10,10 @@ Topological sort of directed ascyclic graphs (like dependecy lists)
 | ------------------ | :-------------: |
 | Full name          | toposort |
 | Keywords           | topological, sort, sorting, graphs, graph, dependency, list, dependencies, acyclic |
-| # releases         | 4 |
-| # dependents       | 284 |
-| # downloads        | 156854334 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1420425333333332E7 |
+| # stars            | 269.0 |
 
 ## Links
 - [Homepage](https://github.com/marcelklehr/toposort#readme)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__html-entities
 
-Typings are for version 2.3
+Typings are for version 3.19.0
 
 ## Library description:
 HTML entity utilities for WordPress.
@@ -9,21 +9,22 @@ HTML entity utilities for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/html-entities |
-| Keywords           | wordpress, html, entities |
-| # releases         | 15 |
-| # dependents       | 6 |
-| # downloads        | 135656 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, html, entities |
+| # releases         | 49 |
+| # dependents       | 0.0 |
+| # downloads        | 126986.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/html-entities/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/html-entities/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fhtml-entities)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

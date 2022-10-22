@@ -1,0 +1,34 @@
+package typingsJapgolly.angularLocalize
+
+import typingsJapgolly.angularCompiler.mod.ParseErrorLevel
+import typingsJapgolly.angularCompiler.mod.ParseSourceSpan
+import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object toolsSrcTranslateTranslationFilesTranslationParsersTranslationParseErrorMod {
+  
+  @JSImport("@angular/localize/tools/src/translate/translation_files/translation_parsers/translation_parse_error", "TranslationParseError")
+  @js.native
+  open class TranslationParseError protected ()
+    extends StObject
+       with Error {
+    def this(span: ParseSourceSpan, msg: String) = this()
+    def this(span: ParseSourceSpan, msg: String, level: ParseErrorLevel) = this()
+    
+    var level: ParseErrorLevel = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var message: String = js.native
+    
+    var msg: String = js.native
+    
+    /* standard es5 */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    var span: ParseSourceSpan = js.native
+  }
+}

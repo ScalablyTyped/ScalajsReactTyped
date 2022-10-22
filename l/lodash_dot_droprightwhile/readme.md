@@ -10,10 +10,10 @@ The lodash method `_.dropRightWhile` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.droprightwhile |
 | Keywords           | lodash-modularized, droprightwhile |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 8056 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 126.66666666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

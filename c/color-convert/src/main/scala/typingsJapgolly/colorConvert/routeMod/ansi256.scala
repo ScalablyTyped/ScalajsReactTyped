@@ -1,6 +1,5 @@
 package typingsJapgolly.colorConvert.routeMod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.colorConvert.conversionsMod.ANSI16_
 import typingsJapgolly.colorConvert.conversionsMod.ANSI256_
 import typingsJapgolly.colorConvert.conversionsMod.APPLE_
@@ -16,61 +15,90 @@ import typingsJapgolly.colorConvert.conversionsMod.LAB_
 import typingsJapgolly.colorConvert.conversionsMod.LCH_
 import typingsJapgolly.colorConvert.conversionsMod.RGB_
 import typingsJapgolly.colorConvert.conversionsMod.XYZ_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ansi256 extends js.Object {
+trait ansi256 extends StObject {
+  
   def ansi16(from: ANSI256_): ANSI16_
+  
   def apple(from: ANSI256_): APPLE_
+  
   def cmyk(from: ANSI256_): CMYK_
+  
   def gray(from: ANSI256_): GRAY_
+  
   def hcg(from: ANSI256_): HCG_
+  
   def hex(from: ANSI256_): HEX_
+  
   def hsl(from: ANSI256_): HSL_
+  
   def hsv(from: ANSI256_): HSV_
+  
   def hwb(from: ANSI256_): HWB_
+  
   def keyword(from: ANSI256_): KEYWORD_
+  
   def lab(from: ANSI256_): LAB_
+  
   def lch(from: ANSI256_): LCH_
+  
   def rgb(from: ANSI256_): RGB_
+  
   def xyz(from: ANSI256_): XYZ_
 }
-
 object ansi256 {
-  @scala.inline
-  def apply(
-    ansi16: ANSI256_ => CallbackTo[ANSI16_],
-    apple: ANSI256_ => CallbackTo[APPLE_],
-    cmyk: ANSI256_ => CallbackTo[CMYK_],
-    gray: ANSI256_ => CallbackTo[GRAY_],
-    hcg: ANSI256_ => CallbackTo[HCG_],
-    hex: ANSI256_ => CallbackTo[HEX_],
-    hsl: ANSI256_ => CallbackTo[HSL_],
-    hsv: ANSI256_ => CallbackTo[HSV_],
-    hwb: ANSI256_ => CallbackTo[HWB_],
-    keyword: ANSI256_ => CallbackTo[KEYWORD_],
-    lab: ANSI256_ => CallbackTo[LAB_],
-    lch: ANSI256_ => CallbackTo[LCH_],
-    rgb: ANSI256_ => CallbackTo[RGB_],
-    xyz: ANSI256_ => CallbackTo[XYZ_]
+  
+  inline def apply(
+    ansi16: ANSI256_ => ANSI16_,
+    apple: ANSI256_ => APPLE_,
+    cmyk: ANSI256_ => CMYK_,
+    gray: ANSI256_ => GRAY_,
+    hcg: ANSI256_ => HCG_,
+    hex: ANSI256_ => HEX_,
+    hsl: ANSI256_ => HSL_,
+    hsv: ANSI256_ => HSV_,
+    hwb: ANSI256_ => HWB_,
+    keyword: ANSI256_ => KEYWORD_,
+    lab: ANSI256_ => LAB_,
+    lch: ANSI256_ => LCH_,
+    rgb: ANSI256_ => RGB_,
+    xyz: ANSI256_ => XYZ_
   ): ansi256 = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ansi16")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => ansi16(t0).runNow()))
-    __obj.updateDynamic("apple")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => apple(t0).runNow()))
-    __obj.updateDynamic("cmyk")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => cmyk(t0).runNow()))
-    __obj.updateDynamic("gray")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => gray(t0).runNow()))
-    __obj.updateDynamic("hcg")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => hcg(t0).runNow()))
-    __obj.updateDynamic("hex")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => hex(t0).runNow()))
-    __obj.updateDynamic("hsl")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => hsl(t0).runNow()))
-    __obj.updateDynamic("hsv")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => hsv(t0).runNow()))
-    __obj.updateDynamic("hwb")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => hwb(t0).runNow()))
-    __obj.updateDynamic("keyword")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => keyword(t0).runNow()))
-    __obj.updateDynamic("lab")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => lab(t0).runNow()))
-    __obj.updateDynamic("lch")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => lch(t0).runNow()))
-    __obj.updateDynamic("rgb")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => rgb(t0).runNow()))
-    __obj.updateDynamic("xyz")(js.Any.fromFunction1((t0: typingsJapgolly.colorConvert.conversionsMod.ANSI256_) => xyz(t0).runNow()))
+    val __obj = js.Dynamic.literal(ansi16 = js.Any.fromFunction1(ansi16), apple = js.Any.fromFunction1(apple), cmyk = js.Any.fromFunction1(cmyk), gray = js.Any.fromFunction1(gray), hcg = js.Any.fromFunction1(hcg), hex = js.Any.fromFunction1(hex), hsl = js.Any.fromFunction1(hsl), hsv = js.Any.fromFunction1(hsv), hwb = js.Any.fromFunction1(hwb), keyword = js.Any.fromFunction1(keyword), lab = js.Any.fromFunction1(lab), lch = js.Any.fromFunction1(lch), rgb = js.Any.fromFunction1(rgb), xyz = js.Any.fromFunction1(xyz))
     __obj.asInstanceOf[ansi256]
   }
+  
+  extension [Self <: ansi256](x: Self) {
+    
+    inline def setAnsi16(value: ANSI256_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
+    
+    inline def setApple(value: ANSI256_ => APPLE_): Self = StObject.set(x, "apple", js.Any.fromFunction1(value))
+    
+    inline def setCmyk(value: ANSI256_ => CMYK_): Self = StObject.set(x, "cmyk", js.Any.fromFunction1(value))
+    
+    inline def setGray(value: ANSI256_ => GRAY_): Self = StObject.set(x, "gray", js.Any.fromFunction1(value))
+    
+    inline def setHcg(value: ANSI256_ => HCG_): Self = StObject.set(x, "hcg", js.Any.fromFunction1(value))
+    
+    inline def setHex(value: ANSI256_ => HEX_): Self = StObject.set(x, "hex", js.Any.fromFunction1(value))
+    
+    inline def setHsl(value: ANSI256_ => HSL_): Self = StObject.set(x, "hsl", js.Any.fromFunction1(value))
+    
+    inline def setHsv(value: ANSI256_ => HSV_): Self = StObject.set(x, "hsv", js.Any.fromFunction1(value))
+    
+    inline def setHwb(value: ANSI256_ => HWB_): Self = StObject.set(x, "hwb", js.Any.fromFunction1(value))
+    
+    inline def setKeyword(value: ANSI256_ => KEYWORD_): Self = StObject.set(x, "keyword", js.Any.fromFunction1(value))
+    
+    inline def setLab(value: ANSI256_ => LAB_): Self = StObject.set(x, "lab", js.Any.fromFunction1(value))
+    
+    inline def setLch(value: ANSI256_ => LCH_): Self = StObject.set(x, "lch", js.Any.fromFunction1(value))
+    
+    inline def setRgb(value: ANSI256_ => RGB_): Self = StObject.set(x, "rgb", js.Any.fromFunction1(value))
+    
+    inline def setXyz(value: ANSI256_ => XYZ_): Self = StObject.set(x, "xyz", js.Any.fromFunction1(value))
+  }
 }
-

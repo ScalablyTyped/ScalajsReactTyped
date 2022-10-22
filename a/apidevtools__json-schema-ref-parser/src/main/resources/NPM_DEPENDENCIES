@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@apidevtools/json-schema-ref-parser" : "9.0.9"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@apidevtools/json-schema-ref-parser" : "9.0.9"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

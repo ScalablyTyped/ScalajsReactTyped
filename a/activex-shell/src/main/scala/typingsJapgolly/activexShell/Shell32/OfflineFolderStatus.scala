@@ -1,37 +1,33 @@
 package typingsJapgolly.activexShell.Shell32
 
-import typingsJapgolly.activexShell.activexShellNumbers.`-1`
-import typingsJapgolly.activexShell.activexShellNumbers.`0`
-import typingsJapgolly.activexShell.activexShellNumbers.`1`
-import typingsJapgolly.activexShell.activexShellNumbers.`2`
-import typingsJapgolly.activexShell.activexShellNumbers.`3`
+import typingsJapgolly.activexShell.activexShellInts.`-1`
+import typingsJapgolly.activexShell.activexShellInts.`0`
+import typingsJapgolly.activexShell.activexShellInts.`1`
+import typingsJapgolly.activexShell.activexShellInts.`2`
+import typingsJapgolly.activexShell.activexShellInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for Folder2.OfflineStatus */
-// tslint:disable-next-line no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexShell.activexShellNumbers.`3`
-  - typingsJapgolly.activexShell.activexShellNumbers.`-1`
-  - typingsJapgolly.activexShell.activexShellNumbers.`1`
-  - typingsJapgolly.activexShell.activexShellNumbers.`0`
-  - typingsJapgolly.activexShell.activexShellNumbers.`2`
+  - typingsJapgolly.activexShell.activexShellInts.`3`
+  - typingsJapgolly.activexShell.activexShellInts.`-1`
+  - typingsJapgolly.activexShell.activexShellInts.`1`
+  - typingsJapgolly.activexShell.activexShellInts.`0`
+  - typingsJapgolly.activexShell.activexShellInts.`2`
 */
-trait OfflineFolderStatus extends js.Object
-
+trait OfflineFolderStatus extends StObject
 object OfflineFolderStatus {
-  @scala.inline
-  def OFS_DIRTYCACHE: `3` = this.cast(3)
-  @scala.inline
-  def OFS_INACTIVE: `-1` = this.cast(-1)
-  @scala.inline
-  def OFS_OFFLINE: `1` = this.cast(1)
-  @scala.inline
-  def OFS_ONLINE: `0` = this.cast(0)
-  @scala.inline
-  def OFS_SERVERBACK: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def OFS_DIRTYCACHE: `3` = 3.asInstanceOf[`3`]
+  
+  inline def OFS_INACTIVE: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def OFS_OFFLINE: `1` = 1.asInstanceOf[`1`]
+  
+  inline def OFS_ONLINE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def OFS_SERVERBACK: `2` = 2.asInstanceOf[`2`]
 }
-

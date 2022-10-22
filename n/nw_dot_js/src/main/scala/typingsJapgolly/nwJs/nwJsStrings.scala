@@ -1,224 +1,180 @@
 package typingsJapgolly.nwJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nwJsStrings {
-  @js.native
-  sealed trait active extends js.Object
   
   @js.native
-  sealed trait added extends js.Object
+  sealed trait active extends StObject
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait added extends StObject
+  inline def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait checkbox extends StObject
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait `click ` extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait `click ` extends StObject
+  inline def `click `: `click ` = ("click ").asInstanceOf[`click `]
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait `devtools-closed` extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait `displayAdded ` extends js.Object
+  sealed trait `devtools-closed` extends StObject
+  inline def `devtools-closed`: `devtools-closed` = "devtools-closed".asInstanceOf[`devtools-closed`]
   
   @js.native
-  sealed trait displayBoundsChanged extends js.Object
+  sealed trait `displayAdded ` extends StObject
+  inline def `displayAdded `: `displayAdded ` = ("displayAdded ").asInstanceOf[`displayAdded `]
   
   @js.native
-  sealed trait `displayRemoved ` extends js.Object
+  sealed trait displayBoundsChanged extends StObject
+  inline def displayBoundsChanged: displayBoundsChanged = "displayBoundsChanged".asInstanceOf[displayBoundsChanged]
   
   @js.native
-  sealed trait `document-end` extends js.Object
+  sealed trait `displayRemoved ` extends StObject
+  inline def `displayRemoved `: `displayRemoved ` = ("displayRemoved ").asInstanceOf[`displayRemoved `]
   
   @js.native
-  sealed trait `document-start` extends js.Object
+  sealed trait `document-end` extends StObject
+  inline def `document-end`: `document-end` = "document-end".asInstanceOf[`document-end`]
   
   @js.native
-  sealed trait `enter-fullscreen` extends js.Object
+  sealed trait `document-start` extends StObject
+  inline def `document-start`: `document-start` = "document-start".asInstanceOf[`document-start`]
   
   @js.native
-  sealed trait evicted extends js.Object
+  sealed trait `enter-fullscreen` extends StObject
+  inline def `enter-fullscreen`: `enter-fullscreen` = "enter-fullscreen".asInstanceOf[`enter-fullscreen`]
   
   @js.native
-  sealed trait expired extends js.Object
+  sealed trait evicted extends StObject
+  inline def evicted: evicted = "evicted".asInstanceOf[evicted]
   
   @js.native
-  sealed trait expired_overwrite extends js.Object
+  sealed trait expired extends StObject
+  inline def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
-  sealed trait explicit extends js.Object
+  sealed trait expired_overwrite extends StObject
+  inline def expired_overwrite: expired_overwrite = "expired_overwrite".asInstanceOf[expired_overwrite]
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait explicit extends StObject
+  inline def explicit: explicit = "explicit".asInstanceOf[explicit]
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait failed extends StObject
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait lax extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait lax extends StObject
+  inline def lax: lax = "lax".asInstanceOf[lax]
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loaded extends StObject
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait maximize extends js.Object
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait minimize extends js.Object
+  sealed trait maximize extends StObject
+  inline def maximize: maximize = "maximize".asInstanceOf[maximize]
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait minimize extends StObject
+  inline def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
-  sealed trait namechanged extends js.Object
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait navigation extends js.Object
+  sealed trait namechanged extends StObject
+  inline def namechanged: namechanged = "namechanged".asInstanceOf[namechanged]
   
   @js.native
-  sealed trait `new-win-policy` extends js.Object
+  sealed trait navigation extends StObject
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
-  sealed trait no_restriction extends js.Object
+  sealed trait `new-win-policy` extends StObject
+  inline def `new-win-policy`: `new-win-policy` = "new-win-policy".asInstanceOf[`new-win-policy`]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait no_restriction extends StObject
+  inline def no_restriction: no_restriction = "no_restriction".asInstanceOf[no_restriction]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait orderchanged extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait overwrite extends js.Object
+  sealed trait orderchanged extends StObject
+  inline def orderchanged: orderchanged = "orderchanged".asInstanceOf[orderchanged]
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait overwrite extends StObject
+  inline def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
   
   @js.native
-  sealed trait reopen extends js.Object
+  sealed trait removed extends StObject
+  inline def removed: removed = "removed".asInstanceOf[removed]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait reopen extends StObject
+  inline def reopen: reopen = "reopen".asInstanceOf[reopen]
   
   @js.native
-  sealed trait restore extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait separator extends js.Object
+  sealed trait restore extends StObject
+  inline def restore: restore = "restore".asInstanceOf[restore]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait separator extends StObject
+  inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
-  sealed trait thumbnailchanged extends js.Object
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait thumbnailchanged extends StObject
+  inline def thumbnailchanged: thumbnailchanged = "thumbnailchanged".asInstanceOf[thumbnailchanged]
   
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
-  @scala.inline
-  def added: added = "added".asInstanceOf[added]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def `click `: `click ` = "click ".asInstanceOf[`click `]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def `devtools-closed`: `devtools-closed` = "devtools-closed".asInstanceOf[`devtools-closed`]
-  @scala.inline
-  def `displayAdded `: `displayAdded ` = "displayAdded ".asInstanceOf[`displayAdded `]
-  @scala.inline
-  def displayBoundsChanged: displayBoundsChanged = "displayBoundsChanged".asInstanceOf[displayBoundsChanged]
-  @scala.inline
-  def `displayRemoved `: `displayRemoved ` = "displayRemoved ".asInstanceOf[`displayRemoved `]
-  @scala.inline
-  def `document-end`: `document-end` = "document-end".asInstanceOf[`document-end`]
-  @scala.inline
-  def `document-start`: `document-start` = "document-start".asInstanceOf[`document-start`]
-  @scala.inline
-  def `enter-fullscreen`: `enter-fullscreen` = "enter-fullscreen".asInstanceOf[`enter-fullscreen`]
-  @scala.inline
-  def evicted: evicted = "evicted".asInstanceOf[evicted]
-  @scala.inline
-  def expired: expired = "expired".asInstanceOf[expired]
-  @scala.inline
-  def expired_overwrite: expired_overwrite = "expired_overwrite".asInstanceOf[expired_overwrite]
-  @scala.inline
-  def explicit: explicit = "explicit".asInstanceOf[explicit]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def lax: lax = "lax".asInstanceOf[lax]
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def maximize: maximize = "maximize".asInstanceOf[maximize]
-  @scala.inline
-  def minimize: minimize = "minimize".asInstanceOf[minimize]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def namechanged: namechanged = "namechanged".asInstanceOf[namechanged]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
-  @scala.inline
-  def `new-win-policy`: `new-win-policy` = "new-win-policy".asInstanceOf[`new-win-policy`]
-  @scala.inline
-  def no_restriction: no_restriction = "no_restriction".asInstanceOf[no_restriction]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def orderchanged: orderchanged = "orderchanged".asInstanceOf[orderchanged]
-  @scala.inline
-  def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
-  @scala.inline
-  def reopen: reopen = "reopen".asInstanceOf[reopen]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def restore: restore = "restore".asInstanceOf[restore]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def thumbnailchanged: thumbnailchanged = "thumbnailchanged".asInstanceOf[thumbnailchanged]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
+  @js.native
+  sealed trait zoom extends StObject
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.windows
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.iana
 */
-trait TimeZoneStandard extends js.Object
-
+trait TimeZoneStandard extends StObject
 object TimeZoneStandard {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def iana: typingsJapgolly.microsoftGraph.microsoftGraphStrings.iana = this.cast("iana")
-  @scala.inline
-  def windows: typingsJapgolly.microsoftGraph.microsoftGraphStrings.windows = this.cast("windows")
+  
+  inline def iana: typingsJapgolly.microsoftGraph.microsoftGraphStrings.iana = "iana".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.iana]
+  
+  inline def windows: typingsJapgolly.microsoftGraph.microsoftGraphStrings.windows = "windows".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.windows]
 }
-

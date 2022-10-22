@@ -1,34 +1,34 @@
 package typingsJapgolly.puppeteer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileChooser extends js.Object {
+@JSImport("puppeteer", "FileChooser")
+@js.native
+open class FileChooser () extends StObject {
+  
   /**
     * Accept the file chooser request with given paths.
-    * If some of the filePaths are relative paths, then they are resolved relative to the current working directory.
+    *
+    * @param filePaths - If some of the `filePaths` are relative paths, then
+    * they are resolved relative to the
+    * {@link https://nodejs.org/api/process.html#process_process_cwd | current working directory}.
     */
-  def accept(filePaths: js.Array[String]): js.Promise[Unit]
-  /** Closes the file chooser without selecting any files. */
-  def cancel(): js.Promise[Unit]
-  /** Whether file chooser allow for multiple file selection. */
-  def isMultiple(): Boolean
+  def accept(filePaths: js.Array[String]): js.Promise[Unit] = js.native
+  
+  /**
+    * Closes the file chooser without selecting any files.
+    */
+  def cancel(): Unit = js.native
+  
+  /* Excluded from this release type: __constructor */
+  /**
+    * Whether file chooser allow for
+    * {@link https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file#attr-multiple | multiple}
+    * file selection.
+    */
+  def isMultiple(): Boolean = js.native
+  
+  /* private */ var `private`: Any = js.native
 }
-
-object FileChooser {
-  @scala.inline
-  def apply(
-    accept: js.Array[String] => CallbackTo[js.Promise[Unit]],
-    cancel: CallbackTo[js.Promise[Unit]],
-    isMultiple: CallbackTo[Boolean]
-  ): FileChooser = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("accept")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => accept(t0).runNow()))
-    __obj.updateDynamic("cancel")(cancel.toJsFn)
-    __obj.updateDynamic("isMultiple")(isMultiple.toJsFn)
-    __obj.asInstanceOf[FileChooser]
-  }
-}
-

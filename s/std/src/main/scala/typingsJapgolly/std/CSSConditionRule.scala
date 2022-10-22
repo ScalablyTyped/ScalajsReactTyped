@@ -1,16 +1,15 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A single condition CSS at-rule, which consists of a condition and a statement block. It is a child of CSSGroupingRule. */
-trait CSSConditionRule extends CSSGroupingRule {
-  var conditionText: java.lang.String
-}
-
-@JSGlobal("CSSConditionRule")
 @js.native
-object CSSConditionRule extends Instantiable0[CSSConditionRule]
-
+trait CSSConditionRule
+  extends StObject
+     with CSSGroupingRule {
+  
+  /* standard dom */
+  val conditionText: java.lang.String = js.native
+}

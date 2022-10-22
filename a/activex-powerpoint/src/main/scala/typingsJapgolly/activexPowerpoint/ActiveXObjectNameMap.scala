@@ -1,21 +1,25 @@
 package typingsJapgolly.activexPowerpoint
 
 import typingsJapgolly.activexPowerpoint.PowerPoint.Application
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
+  
   @JSName("PowerPoint.Application")
   var PowerPointDotApplication: Application
 }
-
 object ActiveXObjectNameMap {
-  @scala.inline
-  def apply(PowerPointDotApplication: Application): ActiveXObjectNameMap = {
+  
+  inline def apply(PowerPointDotApplication: Application): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("PowerPoint.Application")(PowerPointDotApplication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
+  
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
+    
+    inline def setPowerPointDotApplication(value: Application): Self = StObject.set(x, "PowerPoint.Application", value.asInstanceOf[js.Any])
+  }
 }
-

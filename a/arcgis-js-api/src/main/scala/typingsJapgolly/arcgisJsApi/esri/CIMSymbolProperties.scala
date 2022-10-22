@@ -1,25 +1,31 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CIMSymbolProperties extends SymbolProperties {
+trait CIMSymbolProperties
+  extends StObject
+     with SymbolProperties {
+  
   /**
-    * The JSON payload of the CIM symbol
+    * The JSON payload of the [CIMSymbolReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#CIMSymbolReference).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-CIMSymbol.html#data)
     */
-  var data: js.UndefOr[js.Any] = js.undefined
+  var data: js.UndefOr[CIMSymbolReference] = js.undefined
 }
-
 object CIMSymbolProperties {
-  @scala.inline
-  def apply(color: Color_ | js.Array[Double] | String = null, data: js.Any = null): CIMSymbolProperties = {
+  
+  inline def apply(): CIMSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMSymbolProperties]
   }
+  
+  extension [Self <: CIMSymbolProperties](x: Self) {
+    
+    inline def setData(value: CIMSymbolReference): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+  }
 }
-

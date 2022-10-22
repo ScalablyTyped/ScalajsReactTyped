@@ -11,9 +11,9 @@ Check whether a value is "empty".
 | Full name          | is-empty |
 | Keywords           | array, check, empty, file, is, map, object, set, value |
 | # releases         | 1 |
-| # dependents       | 90 |
-| # downloads        | 5681997 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 765110.0 |
+| # stars            | 48.0 |
 
 ## Links
 - [Homepage](https://github.com/ianstormtaylor/is-empty#readme)

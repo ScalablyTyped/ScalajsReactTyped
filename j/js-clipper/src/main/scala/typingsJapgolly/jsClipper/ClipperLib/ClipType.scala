@@ -1,41 +1,32 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClipType extends js.Object
-
+sealed trait ClipType extends StObject
 @JSGlobal("ClipperLib.ClipType")
 @js.native
-object ClipType extends js.Object {
-  @js.native
-  sealed trait ctDifference extends ClipType
+object ClipType extends StObject {
   
   @js.native
-  sealed trait ctIntersection extends ClipType
+  sealed trait ctDifference
+    extends StObject
+       with ClipType
   
   @js.native
-  sealed trait ctUnion extends ClipType
+  sealed trait ctIntersection
+    extends StObject
+       with ClipType
   
   @js.native
-  sealed trait ctXor extends ClipType
+  sealed trait ctUnion
+    extends StObject
+       with ClipType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClipType with Double] = js.native
-  /* 2 */ @js.native
-  object ctDifference extends TopLevel[ctDifference with Double]
-  
-  /* 0 */ @js.native
-  object ctIntersection extends TopLevel[ctIntersection with Double]
-  
-  /* 1 */ @js.native
-  object ctUnion extends TopLevel[ctUnion with Double]
-  
-  /* 3 */ @js.native
-  object ctXor extends TopLevel[ctXor with Double]
-  
+  @js.native
+  sealed trait ctXor
+    extends StObject
+       with ClipType
 }
-

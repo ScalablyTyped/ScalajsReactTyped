@@ -1,35 +1,33 @@
 package typingsJapgolly.camljs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewScope extends js.Object
-
+sealed trait ViewScope extends StObject
 @JSImport("camljs", "ViewScope")
 @js.native
-object ViewScope extends js.Object {
-  @js.native
-  sealed trait FilesOnly extends ViewScope
-  
-  @js.native
-  sealed trait Recursive extends ViewScope
-  
-  @js.native
-  sealed trait RecursiveAll extends ViewScope
+object ViewScope extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewScope with Double] = js.native
-  /* 2 */ @js.native
-  object FilesOnly extends TopLevel[FilesOnly with Double]
+  def apply(value: Double): js.UndefOr[ViewScope & Double] = js.native
   
-  /* 0 */ @js.native
-  object Recursive extends TopLevel[Recursive with Double]
+  @js.native
+  sealed trait FilesOnly
+    extends StObject
+       with ViewScope
+  /* 2 */ val FilesOnly: typingsJapgolly.camljs.mod.ViewScope.FilesOnly & Double = js.native
   
-  /* 1 */ @js.native
-  object RecursiveAll extends TopLevel[RecursiveAll with Double]
+  @js.native
+  sealed trait Recursive
+    extends StObject
+       with ViewScope
+  /* 0 */ val Recursive: typingsJapgolly.camljs.mod.ViewScope.Recursive & Double = js.native
   
+  @js.native
+  sealed trait RecursiveAll
+    extends StObject
+       with ViewScope
+  /* 1 */ val RecursiveAll: typingsJapgolly.camljs.mod.ViewScope.RecursiveAll & Double = js.native
 }
-

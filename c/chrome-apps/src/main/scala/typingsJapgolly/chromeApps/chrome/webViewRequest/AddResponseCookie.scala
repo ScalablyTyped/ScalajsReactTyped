@@ -1,18 +1,32 @@
 package typingsJapgolly.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a cookie to the response or overrides a cookie, in case another cookie of the same name exists already.
   * Note that it is preferred to use the Cookies API because this is computationally less expensive.
   */
-@JSGlobal("chrome.webViewRequest.AddResponseCookie")
-@js.native
-class AddResponseCookie protected () extends OnRequestActions {
-  def this(parameters: AddCookie[ResponseCookie]) = this()
-  val instanceType: String = js.native
-  val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.AddResponseCookie = js.native
+trait AddResponseCookie
+  extends StObject
+     with OnRequestActions {
+  
+  val instanceType: String
+  
+  /* protected */ val typeGuard: typingsJapgolly.chromeApps.chromeAppsStrings.AddResponseCookie
 }
-
+object AddResponseCookie {
+  
+  inline def apply(instanceType: String): AddResponseCookie = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "AddResponseCookie")
+    __obj.asInstanceOf[AddResponseCookie]
+  }
+  
+  extension [Self <: AddResponseCookie](x: Self) {
+    
+    inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
+    
+    inline def setTypeGuard(value: typingsJapgolly.chromeApps.chromeAppsStrings.AddResponseCookie): Self = StObject.set(x, "typeGuard", value.asInstanceOf[js.Any])
+  }
+}

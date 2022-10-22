@@ -1,27 +1,32 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ageUtils extends js.Object {
+/**
+  * Provides utility functions for generating [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expressions intended for use in an [age renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createAgeRenderer).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html)
+  */
+trait ageUtils extends StObject {
+  
   /**
-    * Returns an [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression for visualizing the age of a feature based on a given start time and end time.
+    * Returns an [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression for visualizing the age of a feature based on a given start time and end time.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
-    *
-    * @param params See the table below for details of each parameter.
-    * @param params.layer The layer from which to generate age statistics for the given `startTime` and `endTime`.
-    * @param params.startTime The start time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `endTime` parameter must be a field name.
-    * @param params.endTime The end time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `startTime` parameter must be a field name.
-    * @param params.unit The desired units of the age result.  **Possible Values:** years | months | days | hours | minutes | seconds
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
     */
   def getAgeExpressions(params: ageUtilsGetAgeExpressionsParams): AgeExpressionsResult
 }
-
-@JSGlobal("__esri.ageUtils")
-@js.native
-object ageUtils extends TopLevel[ageUtils]
-
+object ageUtils {
+  
+  inline def apply(getAgeExpressions: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): ageUtils = {
+    val __obj = js.Dynamic.literal(getAgeExpressions = js.Any.fromFunction1(getAgeExpressions))
+    __obj.asInstanceOf[ageUtils]
+  }
+  
+  extension [Self <: ageUtils](x: Self) {
+    
+    inline def setGetAgeExpressions(value: ageUtilsGetAgeExpressionsParams => AgeExpressionsResult): Self = StObject.set(x, "getAgeExpressions", js.Any.fromFunction1(value))
+  }
+}

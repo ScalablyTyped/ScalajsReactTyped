@@ -1,21 +1,22 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.proxyOptionsMod.ProxyOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/proxy", JSImport.Namespace)
-@js.native
-object proxyMod extends js.Object {
-  @js.native
-  class Proxy () extends js.Object
+object proxyMod {
   
+  @JSImport("nodegit/proxy", "Proxy")
+  @js.native
+  open class Proxy () extends StObject
   /* static members */
-  @js.native
-  object Proxy extends js.Object {
-    def initOptions(opts: ProxyOptions, version: Double): Double = js.native
+  object Proxy {
+    
+    @JSImport("nodegit/proxy", "Proxy")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def initOptions(opts: ProxyOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
-  
 }
-

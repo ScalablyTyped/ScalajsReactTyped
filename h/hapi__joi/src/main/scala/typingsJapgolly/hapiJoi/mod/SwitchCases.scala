@@ -1,27 +1,37 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchCases extends js.Object {
+trait SwitchCases extends StObject {
+  
   /**
     * the required condition joi type.
     */
   var is: SchemaLike
+  
   /**
     * the alternative schema type if the condition is true.
     */
   var `then`: SchemaLike
 }
-
 object SwitchCases {
-  @scala.inline
-  def apply(is: SchemaLike = null, `then`: SchemaLike = null): SwitchCases = {
-    val __obj = js.Dynamic.literal()
-    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
-    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
+  
+  inline def apply(): SwitchCases = {
+    val __obj = js.Dynamic.literal(is = null)
+    __obj.updateDynamic("then")(null)
     __obj.asInstanceOf[SwitchCases]
   }
+  
+  extension [Self <: SwitchCases](x: Self) {
+    
+    inline def setIs(value: SchemaLike): Self = StObject.set(x, "is", value.asInstanceOf[js.Any])
+    
+    inline def setIsNull: Self = StObject.set(x, "is", null)
+    
+    inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    
+    inline def setThenNull: Self = StObject.set(x, "then", null)
+  }
 }
-

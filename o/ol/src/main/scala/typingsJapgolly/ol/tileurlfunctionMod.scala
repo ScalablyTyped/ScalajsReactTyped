@@ -1,19 +1,25 @@
 package typingsJapgolly.ol
 
-import typingsJapgolly.ol.olTileMod.UrlFunction
+import typingsJapgolly.ol.tileMod.UrlFunction
 import typingsJapgolly.ol.tilecoordMod.TileCoord
 import typingsJapgolly.ol.tilegridTileGridMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/tileurlfunction", JSImport.Namespace)
-@js.native
-object tileurlfunctionMod extends js.Object {
-  def createFromTemplate(template: String, tileGrid: default): UrlFunction = js.native
-  def createFromTemplates(templates: js.Array[String], tileGrid: default): UrlFunction = js.native
-  def createFromTileUrlFunctions(tileUrlFunctions: js.Array[UrlFunction]): UrlFunction = js.native
-  def expandUrl(url: String): js.Array[String] = js.native
-  def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typingsJapgolly.ol.projectionMod.default): String = js.native
+object tileurlfunctionMod {
+  
+  @JSImport("ol/tileurlfunction", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createFromTemplate(template: String, tileGrid: default): UrlFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromTemplate")(template.asInstanceOf[js.Any], tileGrid.asInstanceOf[js.Any])).asInstanceOf[UrlFunction]
+  
+  inline def createFromTemplates(templates: js.Array[String], tileGrid: default): UrlFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromTemplates")(templates.asInstanceOf[js.Any], tileGrid.asInstanceOf[js.Any])).asInstanceOf[UrlFunction]
+  
+  inline def createFromTileUrlFunctions(tileUrlFunctions: js.Array[UrlFunction]): UrlFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTileUrlFunctions")(tileUrlFunctions.asInstanceOf[js.Any]).asInstanceOf[UrlFunction]
+  
+  inline def expandUrl(url: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  inline def nullTileUrlFunction(tileCoord: TileCoord, pixelRatio: Double, projection: typingsJapgolly.ol.projProjectionMod.default): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("nullTileUrlFunction")(tileCoord.asInstanceOf[js.Any], pixelRatio.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }
-

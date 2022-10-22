@@ -1,7 +1,7 @@
 
 # Scala.js typings for tabbable
 
-Typings are for version 3.1
+Typings are for version 6.0.0
 
 ## Library description:
 Returns an array of all tabbable DOM nodes within a containing node.
@@ -10,21 +10,21 @@ Returns an array of all tabbable DOM nodes within a containing node.
 | ------------------ | :-------------: |
 | Full name          | tabbable |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 46 |
-| # downloads        | 11528776 |
-| # stars            | 2 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 4264701.333333333 |
+| # stars            | 375.0 |
 
 ## Links
-- [Homepage](https://github.com/davidtheclark/tabbable#readme)
-- [Bugs](https://github.com/davidtheclark/tabbable/issues)
-- [Repository](https://github.com/davidtheclark/tabbable)
+- [Homepage](https://github.com/focus-trap/tabbable#readme)
+- [Bugs](https://github.com/focus-trap/tabbable/issues)
+- [Repository](https://github.com/focus-trap/tabbable)
 - [Npm](https://www.npmjs.com/package/tabbable)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

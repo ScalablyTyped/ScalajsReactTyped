@@ -1,13 +1,25 @@
 package typingsJapgolly.typescriptServices.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "PullDeclGroup")
 @js.native
-class PullDeclGroup protected ()
-  extends typingsJapgolly.typescriptServices.TypeScript.PullDeclGroup {
+open class PullDeclGroup protected ()
+  extends StObject
+     with typingsJapgolly.typescriptServices.TypeScript.PullDeclGroup {
   def this(name: String) = this()
+  
+  /* private */ /* CompleteClass */
+  var _decls: Any = js.native
+  
+  /* CompleteClass */
+  override def addDecl(decl: typingsJapgolly.typescriptServices.TypeScript.PullDecl): Unit = js.native
+  
+  /* CompleteClass */
+  override def getDecls(): js.Array[typingsJapgolly.typescriptServices.TypeScript.PullDecl] = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
 }
-

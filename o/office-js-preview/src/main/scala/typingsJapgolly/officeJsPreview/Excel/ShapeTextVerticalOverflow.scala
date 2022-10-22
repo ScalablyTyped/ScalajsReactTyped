@@ -1,56 +1,48 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextVerticalOverflow extends js.Object
-
+sealed trait ShapeTextVerticalOverflow extends StObject
 /**
-  *
   * Specifies the vertical overflow for the text frame in a shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextVerticalOverflow")
 @js.native
-object ShapeTextVerticalOverflow extends js.Object {
+object ShapeTextVerticalOverflow extends StObject {
+  
   /**
-    *
     * Hide text that does not fit vertically within the text frame.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait clip extends ShapeTextVerticalOverflow
+  sealed trait clip
+    extends StObject
+       with ShapeTextVerticalOverflow
   
   /**
-    *
     * Hide text that does not fit vertically within the text frame, and add an ellipsis (...) at the end of the visible text.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait ellipsis extends ShapeTextVerticalOverflow
+  sealed trait ellipsis
+    extends StObject
+       with ShapeTextVerticalOverflow
   
   /**
-    *
     * Allow text to overflow the text frame vertically (can be from the top, bottom, or both depending on the text alignment).
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait overflow extends ShapeTextVerticalOverflow
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextVerticalOverflow with String] = js.native
-  /* "Clip" */ @js.native
-  object clip extends TopLevel[clip with String]
-  
-  /* "Ellipsis" */ @js.native
-  object ellipsis extends TopLevel[ellipsis with String]
-  
-  /* "Overflow" */ @js.native
-  object overflow extends TopLevel[overflow with String]
-  
+  sealed trait overflow
+    extends StObject
+       with ShapeTextVerticalOverflow
 }
-

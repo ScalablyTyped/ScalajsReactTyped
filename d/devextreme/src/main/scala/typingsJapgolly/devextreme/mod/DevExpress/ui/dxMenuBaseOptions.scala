@@ -1,141 +1,373 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonAddedItems
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonDelayName
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonEvent
-import typingsJapgolly.devextreme.AnonHide
-import typingsJapgolly.devextreme.AnonItemData
-import typingsJapgolly.devextreme.AnonItemElement
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.onClick
-import typingsJapgolly.devextreme.devextremeStrings.onHover
-import typingsJapgolly.devextreme.devextremeStrings.single_
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSourceOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.PointerEvent
+import org.scalajs.dom.TouchEvent
+import typingsJapgolly.devextreme.anon.DelayName
+import typingsJapgolly.devextreme.anon.Hide
+import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent.OptionChangedEventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.common.SingleOrNone
+import typingsJapgolly.devextreme.mod.DevExpress.common.SubmenuShowMode
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
+import typingsJapgolly.devextreme.mod.DevExpress.events.EventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.InitializedEventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.ItemInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.NativeEventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.CollectionWidget.SelectionChangedInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxMenuBaseOptions[T] extends HierarchicalCollectionWidgetOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
-  var animation: js.UndefOr[AnonHide] = js.undefined
-  /** Specifies the name of the CSS class to be applied to the root menu level and all submenus. */
+/* Inlined parent devextreme.devextreme.DevExpress.core.Skip<devextreme.devextreme.DevExpress.ui.HierarchicalCollectionWidgetOptions<TComponent, TItem, TKey>, 'dataSource'> */
+trait dxMenuBaseOptions[TComponent /* <: dxMenuBase[Any, TItem, TKey] */, TItem /* <: dxMenuBaseItem */, TKey] extends StObject {
+  
+  var accessKey: js.UndefOr[String] = js.undefined
+  
+  /**
+    * A Boolean value specifying whether or not the UI component changes its state when interacting with a user.
+    */
+  var activeStateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Configures UI component visibility animations. This object contains two fields: show and hide.
+    */
+  var animation: js.UndefOr[Hide] = js.undefined
+  
+  var bindingOptions: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  /**
+    * Specifies the name of the CSS class to be applied to the root menu level and all submenus.
+    */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Binds the widget to data. */
-  @JSName("dataSource")
-  var dataSource_dxMenuBaseOptions: js.UndefOr[String | js.Array[dxMenuBaseItem] | DataSource | DataSourceOptions] = js.undefined
-  /** Holds an array of menu items. */
-  @JSName("items")
-  var items_dxMenuBaseOptions: js.UndefOr[js.Array[dxMenuBaseItem]] = js.undefined
-  /** Specifies whether or not an item becomes selected if a user clicks it. */
-  var selectByClick: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the selection mode supported by the menu. */
-  var selectionMode: js.UndefOr[none | single_] = js.undefined
-  /** Specifies options of submenu showing and hiding. */
-  var showSubmenuMode: js.UndefOr[AnonDelayName | onClick | onHover] = js.undefined
-}
-
-object dxMenuBaseOptions {
-  @scala.inline
-  def apply[T](
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    animation: AnonHide = null,
-    bindingOptions: js.Any = null,
-    cssClass: String = null,
-    dataSource: String | js.Array[dxMenuBaseItem] | DataSource | DataSourceOptions = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledExpr: String | js.Function = null,
-    displayExpr: String | (js.Function1[/* item */ js.Any, String]) = null,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    itemHoldTimeout: Int | Double = null,
-    itemTemplate: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function3[
-      /* itemData */ js.Any, 
+  
+  /**
+    * Binds the UI component to data.
+    */
+  var dataSource: js.UndefOr[(DataSourceLike[TItem, TKey]) | Null] = js.undefined
+  
+  var disabled: js.UndefOr[Boolean] = js.undefined
+  
+  var disabledExpr: js.UndefOr[String | js.Function] = js.undefined
+  
+  var displayExpr: js.UndefOr[String | (js.Function1[/* item */ TItem, String])] = js.undefined
+  
+  var elementAttr: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
+  var focusStateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+  
+  var hint: js.UndefOr[String] = js.undefined
+  
+  var hoverStateEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  var itemHoldTimeout: js.UndefOr[Double] = js.undefined
+  
+  var itemTemplate: js.UndefOr[
+    template | (js.Function3[
+      /* itemData */ TItem, 
       /* itemIndex */ Double, 
-      /* itemElement */ dxElement, 
-      String | Element | JQuery
-    ]) = null,
-    items: js.Array[dxMenuBaseItem] = null,
-    itemsExpr: String | js.Function = null,
-    keyExpr: String | js.Function = null,
-    noDataText: String = null,
-    onContentReady: /* e */ AnonComponentElement[T] => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[T] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[T] => CallbackTo[js.Any] = null,
-    onItemClick: (js.Function1[/* e */ AnonEvent[T], _]) | String = null,
-    onItemContextMenu: /* e */ AnonEvent[T] => CallbackTo[js.Any] = null,
-    onItemHold: /* e */ AnonItemData[T] => CallbackTo[js.Any] = null,
-    onItemRendered: /* e */ AnonItemElement[T] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[T] => CallbackTo[js.Any] = null,
-    onSelectionChanged: /* e */ AnonAddedItems[T] => CallbackTo[js.Any] = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    selectByClick: js.UndefOr[Boolean] = js.undefined,
-    selectedExpr: String | js.Function = null,
-    selectedIndex: Int | Double = null,
-    selectedItem: js.Any = null,
-    selectedItemKeys: js.Array[_] = null,
-    selectedItems: js.Array[_] = null,
-    selectionMode: none | single_ = null,
-    showSubmenuMode: AnonDelayName | onClick | onHover = null,
-    tabIndex: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxMenuBaseOptions[T] = {
+      /* itemElement */ DxElement_[HTMLElement], 
+      String | UserDefinedElement[Element]
+    ])
+  ] = js.undefined
+  
+  /**
+    * Holds an array of menu items.
+    */
+  var items: js.UndefOr[js.Array[TItem]] = js.undefined
+  
+  var itemsExpr: js.UndefOr[String | js.Function] = js.undefined
+  
+  var keyExpr: js.UndefOr[String | js.Function] = js.undefined
+  
+  var noDataText: js.UndefOr[String] = js.undefined
+  
+  var onContentReady: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
+  var onDisposing: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
+  var onInitialized: js.UndefOr[js.Function1[/* e */ InitializedEventInfo[TComponent], Unit]] = js.undefined
+  
+  var onItemClick: js.UndefOr[
+    (js.Function1[
+      /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent]) & ItemInfo[TItem], 
+      Unit
+    ]) | String
+  ] = js.undefined
+  
+  var onItemContextMenu: js.UndefOr[
+    js.Function1[
+      /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem], 
+      Unit
+    ]
+  ] = js.undefined
+  
+  var onItemHold: js.UndefOr[
+    js.Function1[
+      /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem], 
+      Unit
+    ]
+  ] = js.undefined
+  
+  var onItemRendered: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & ItemInfo[TItem], Unit]] = js.undefined
+  
+  var onOptionChanged: js.UndefOr[js.Function1[/* e */ OptionChangedEventInfo[TComponent], Unit]] = js.undefined
+  
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & SelectionChangedInfo[TItem], Unit]] = js.undefined
+  
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies whether or not an item becomes selected if a user clicks it.
+    */
+  var selectByClick: js.UndefOr[Boolean] = js.undefined
+  
+  var selectedExpr: js.UndefOr[String | js.Function] = js.undefined
+  
+  var selectedIndex: js.UndefOr[Double] = js.undefined
+  
+  var selectedItem: js.UndefOr[TItem] = js.undefined
+  
+  var selectedItemKeys: js.UndefOr[js.Array[TKey]] = js.undefined
+  
+  var selectedItems: js.UndefOr[js.Array[TItem]] = js.undefined
+  
+  /**
+    * Specifies the selection mode supported by the menu.
+    */
+  var selectionMode: js.UndefOr[SingleOrNone] = js.undefined
+  
+  /**
+    * Specifies properties of submenu showing and hiding.
+    */
+  var showSubmenuMode: js.UndefOr[DelayName | SubmenuShowMode] = js.undefined
+  
+  var tabIndex: js.UndefOr[Double] = js.undefined
+  
+  var visible: js.UndefOr[Boolean] = js.undefined
+  
+  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
+}
+object dxMenuBaseOptions {
+  
+  inline def apply[TComponent /* <: dxMenuBase[Any, TItem, TKey] */, TItem /* <: dxMenuBaseItem */, TKey](): dxMenuBaseOptions[TComponent, TItem, TKey] = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledExpr != null) __obj.updateDynamic("disabledExpr")(disabledExpr.asInstanceOf[js.Any])
-    if (displayExpr != null) __obj.updateDynamic("displayExpr")(displayExpr.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (itemHoldTimeout != null) __obj.updateDynamic("itemHoldTimeout")(itemHoldTimeout.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsExpr != null) __obj.updateDynamic("itemsExpr")(itemsExpr.asInstanceOf[js.Any])
-    if (keyExpr != null) __obj.updateDynamic("keyExpr")(keyExpr.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[T]) => onContentReady(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[T]) => onDisposing(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[T]) => onInitialized(t0).runNow()))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick.asInstanceOf[js.Any])
-    if (onItemContextMenu != null) __obj.updateDynamic("onItemContextMenu")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonEvent[T]) => onItemContextMenu(t0).runNow()))
-    if (onItemHold != null) __obj.updateDynamic("onItemHold")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonItemData[T]) => onItemHold(t0).runNow()))
-    if (onItemRendered != null) __obj.updateDynamic("onItemRendered")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonItemElement[T]) => onItemRendered(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[T]) => onOptionChanged(t0).runNow()))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonAddedItems[T]) => onSelectionChanged(t0).runNow()))
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectByClick)) __obj.updateDynamic("selectByClick")(selectByClick.asInstanceOf[js.Any])
-    if (selectedExpr != null) __obj.updateDynamic("selectedExpr")(selectedExpr.asInstanceOf[js.Any])
-    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
-    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem.asInstanceOf[js.Any])
-    if (selectedItemKeys != null) __obj.updateDynamic("selectedItemKeys")(selectedItemKeys.asInstanceOf[js.Any])
-    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (showSubmenuMode != null) __obj.updateDynamic("showSubmenuMode")(showSubmenuMode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[dxMenuBaseOptions[T]]
+    __obj.asInstanceOf[dxMenuBaseOptions[TComponent, TItem, TKey]]
+  }
+  
+  extension [Self <: dxMenuBaseOptions[?, ?, ?], TComponent /* <: dxMenuBase[Any, TItem, TKey] */, TItem /* <: dxMenuBaseItem */, TKey](x: Self & (dxMenuBaseOptions[TComponent, TItem, TKey])) {
+    
+    inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+    
+    inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+    
+    inline def setActiveStateEnabled(value: Boolean): Self = StObject.set(x, "activeStateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setActiveStateEnabledUndefined: Self = StObject.set(x, "activeStateEnabled", js.undefined)
+    
+    inline def setAnimation(value: Hide): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setBindingOptions(value: StringDictionary[Any]): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setBindingOptionsUndefined: Self = StObject.set(x, "bindingOptions", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setDataSource(value: DataSourceLike[TItem, TKey]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceVarargs(value: TItem*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledExpr(value: String | js.Function): Self = StObject.set(x, "disabledExpr", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledExprUndefined: Self = StObject.set(x, "disabledExpr", js.undefined)
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDisplayExpr(value: String | (js.Function1[/* item */ TItem, String])): Self = StObject.set(x, "displayExpr", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayExprFunction1(value: /* item */ TItem => String): Self = StObject.set(x, "displayExpr", js.Any.fromFunction1(value))
+    
+    inline def setDisplayExprUndefined: Self = StObject.set(x, "displayExpr", js.undefined)
+    
+    inline def setElementAttr(value: StringDictionary[Any]): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    
+    inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
+    
+    inline def setFocusStateEnabled(value: Boolean): Self = StObject.set(x, "focusStateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setFocusStateEnabledUndefined: Self = StObject.set(x, "focusStateEnabled", js.undefined)
+    
+    inline def setHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "height", value.toJsFn)
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    
+    inline def setHoverStateEnabled(value: Boolean): Self = StObject.set(x, "hoverStateEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setHoverStateEnabledUndefined: Self = StObject.set(x, "hoverStateEnabled", js.undefined)
+    
+    inline def setItemHoldTimeout(value: Double): Self = StObject.set(x, "itemHoldTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setItemHoldTimeoutUndefined: Self = StObject.set(x, "itemHoldTimeout", js.undefined)
+    
+    inline def setItemTemplate(
+      value: template | (js.Function3[
+          /* itemData */ TItem, 
+          /* itemIndex */ Double, 
+          /* itemElement */ DxElement_[HTMLElement], 
+          String | UserDefinedElement[Element]
+        ])
+    ): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setItemTemplateFunction3(
+      value: (/* itemData */ TItem, /* itemIndex */ Double, /* itemElement */ DxElement_[HTMLElement]) => String | UserDefinedElement[Element]
+    ): Self = StObject.set(x, "itemTemplate", js.Any.fromFunction3(value))
+    
+    inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
+    
+    inline def setItems(value: js.Array[TItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsExpr(value: String | js.Function): Self = StObject.set(x, "itemsExpr", value.asInstanceOf[js.Any])
+    
+    inline def setItemsExprUndefined: Self = StObject.set(x, "itemsExpr", js.undefined)
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: TItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setKeyExpr(value: String | js.Function): Self = StObject.set(x, "keyExpr", value.asInstanceOf[js.Any])
+    
+    inline def setKeyExprUndefined: Self = StObject.set(x, "keyExpr", js.undefined)
+    
+    inline def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+    
+    inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+    
+    inline def setOnContentReady(value: /* e */ EventInfo[TComponent] => Callback): Self = StObject.set(x, "onContentReady", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnContentReadyUndefined: Self = StObject.set(x, "onContentReady", js.undefined)
+    
+    inline def setOnDisposing(value: /* e */ EventInfo[TComponent] => Callback): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
+    
+    inline def setOnInitialized(value: /* e */ InitializedEventInfo[TComponent] => Callback): Self = StObject.set(x, "onInitialized", js.Any.fromFunction1((t0: /* e */ InitializedEventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnInitializedUndefined: Self = StObject.set(x, "onInitialized", js.undefined)
+    
+    inline def setOnItemClick(
+      value: (js.Function1[
+          /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent]) & ItemInfo[TItem], 
+          Unit
+        ]) | String
+    ): Self = StObject.set(x, "onItemClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnItemClickFunction1(
+      value: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent]) & ItemInfo[TItem] => Callback
+    ): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1((t0: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent]) & ItemInfo[TItem]) => value(t0).runNow()))
+    
+    inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+    
+    inline def setOnItemContextMenu(
+      value: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem] => Callback
+    ): Self = StObject.set(x, "onItemContextMenu", js.Any.fromFunction1((t0: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem]) => value(t0).runNow()))
+    
+    inline def setOnItemContextMenuUndefined: Self = StObject.set(x, "onItemContextMenu", js.undefined)
+    
+    inline def setOnItemHold(
+      value: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem] => Callback
+    ): Self = StObject.set(x, "onItemHold", js.Any.fromFunction1((t0: /* e */ (NativeEventInfo[TComponent, MouseEvent | PointerEvent | TouchEvent]) & ItemInfo[TItem]) => value(t0).runNow()))
+    
+    inline def setOnItemHoldUndefined: Self = StObject.set(x, "onItemHold", js.undefined)
+    
+    inline def setOnItemRendered(value: /* e */ EventInfo[TComponent] & ItemInfo[TItem] => Callback): Self = StObject.set(x, "onItemRendered", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & ItemInfo[TItem]) => value(t0).runNow()))
+    
+    inline def setOnItemRenderedUndefined: Self = StObject.set(x, "onItemRendered", js.undefined)
+    
+    inline def setOnOptionChanged(value: /* e */ OptionChangedEventInfo[TComponent] => Callback): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1((t0: /* e */ OptionChangedEventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)
+    
+    inline def setOnSelectionChanged(value: /* e */ EventInfo[TComponent] & SelectionChangedInfo[TItem] => Callback): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & SelectionChangedInfo[TItem]) => value(t0).runNow()))
+    
+    inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+    
+    inline def setRtlEnabled(value: Boolean): Self = StObject.set(x, "rtlEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRtlEnabledUndefined: Self = StObject.set(x, "rtlEnabled", js.undefined)
+    
+    inline def setSelectByClick(value: Boolean): Self = StObject.set(x, "selectByClick", value.asInstanceOf[js.Any])
+    
+    inline def setSelectByClickUndefined: Self = StObject.set(x, "selectByClick", js.undefined)
+    
+    inline def setSelectedExpr(value: String | js.Function): Self = StObject.set(x, "selectedExpr", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedExprUndefined: Self = StObject.set(x, "selectedExpr", js.undefined)
+    
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+    
+    inline def setSelectedItem(value: TItem): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemKeys(value: js.Array[TKey]): Self = StObject.set(x, "selectedItemKeys", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemKeysUndefined: Self = StObject.set(x, "selectedItemKeys", js.undefined)
+    
+    inline def setSelectedItemKeysVarargs(value: TKey*): Self = StObject.set(x, "selectedItemKeys", js.Array(value*))
+    
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    
+    inline def setSelectedItems(value: js.Array[TItem]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+    
+    inline def setSelectedItemsVarargs(value: TItem*): Self = StObject.set(x, "selectedItems", js.Array(value*))
+    
+    inline def setSelectionMode(value: SingleOrNone): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setShowSubmenuMode(value: DelayName | SubmenuShowMode): Self = StObject.set(x, "showSubmenuMode", value.asInstanceOf[js.Any])
+    
+    inline def setShowSubmenuModeUndefined: Self = StObject.set(x, "showSubmenuMode", js.undefined)
+    
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "width", value.toJsFn)
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }
-

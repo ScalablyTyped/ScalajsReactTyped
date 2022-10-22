@@ -1,56 +1,45 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Script
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
-
+sealed trait EventType extends StObject
 /**
   * An enumeration denoting the type of triggered event.
   */
 @JSGlobal("GoogleAppsScript.Script.EventType")
 @js.native
-object EventType extends js.Object {
-  @js.native
-  sealed trait CLOCK extends EventType
+object EventType extends StObject {
   
   @js.native
-  sealed trait ON_CHANGE extends EventType
+  sealed trait CLOCK
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ON_EDIT extends EventType
+  sealed trait ON_CHANGE
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ON_EVENT_UPDATED extends EventType
+  sealed trait ON_EDIT
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ON_FORM_SUBMIT extends EventType
+  sealed trait ON_EVENT_UPDATED
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ON_OPEN extends EventType
+  sealed trait ON_FORM_SUBMIT
+    extends StObject
+       with EventType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EventType with Double] = js.native
-  /* 0 */ @js.native
-  object CLOCK extends TopLevel[CLOCK with Double]
-  
-  /* 4 */ @js.native
-  object ON_CHANGE extends TopLevel[ON_CHANGE with Double]
-  
-  /* 2 */ @js.native
-  object ON_EDIT extends TopLevel[ON_EDIT with Double]
-  
-  /* 5 */ @js.native
-  object ON_EVENT_UPDATED extends TopLevel[ON_EVENT_UPDATED with Double]
-  
-  /* 3 */ @js.native
-  object ON_FORM_SUBMIT extends TopLevel[ON_FORM_SUBMIT with Double]
-  
-  /* 1 */ @js.native
-  object ON_OPEN extends TopLevel[ON_OPEN with Double]
-  
+  @js.native
+  sealed trait ON_OPEN
+    extends StObject
+       with EventType
 }
-

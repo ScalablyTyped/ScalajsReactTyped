@@ -1,7 +1,7 @@
 
 # Scala.js typings for detox
 
-Typings are for version 14.5
+Typings are for version 19.12.6
 
 ## Library description:
 E2E tests and automation for mobile
@@ -10,10 +10,10 @@ E2E tests and automation for mobile
 | ------------------ | :-------------: |
 | Full name          | detox |
 | Keywords           | - |
-| # releases         | 132 |
-| # dependents       | 6 |
-| # downloads        | 2198697 |
-| # stars            | 0 |
+| # releases         | 194 |
+| # dependents       | 0.0 |
+| # downloads        | 619716.6666666666 |
+| # stars            | 9935.0 |
 
 ## Links
 - [Homepage](https://github.com/wix/Detox#readme)
@@ -24,7 +24,7 @@ E2E tests and automation for mobile
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

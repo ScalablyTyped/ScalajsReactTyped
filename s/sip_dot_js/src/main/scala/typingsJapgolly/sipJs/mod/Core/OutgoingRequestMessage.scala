@@ -1,53 +1,96 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.bodyMod.Body
-import typingsJapgolly.sipJs.outgoingRequestMessageMod.OutgoingRequestMessageOptions
+import typingsJapgolly.sipJs.libCoreMessagesBodyMod.Body
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMessageMod.OutgoingRequestMessageOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.OutgoingRequestMessage")
 @js.native
-class OutgoingRequestMessage protected ()
-  extends typingsJapgolly.sipJs.coreMod.OutgoingRequestMessage {
+open class OutgoingRequestMessage protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.OutgoingRequestMessage {
   def this(
     method: String,
-    ruri: typingsJapgolly.sipJs.uriMod.URI,
-    fromURI: typingsJapgolly.sipJs.uriMod.URI,
-    toURI: typingsJapgolly.sipJs.uriMod.URI
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI
   ) = this()
   def this(
     method: String,
-    ruri: typingsJapgolly.sipJs.uriMod.URI,
-    fromURI: typingsJapgolly.sipJs.uriMod.URI,
-    toURI: typingsJapgolly.sipJs.uriMod.URI,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
     options: OutgoingRequestMessageOptions
   ) = this()
   def this(
     method: String,
-    ruri: typingsJapgolly.sipJs.uriMod.URI,
-    fromURI: typingsJapgolly.sipJs.uriMod.URI,
-    toURI: typingsJapgolly.sipJs.uriMod.URI,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    options: Unit,
+    extraHeaders: js.Array[String]
+  ) = this()
+  def this(
+    method: String,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String]
   ) = this()
   def this(
     method: String,
-    ruri: typingsJapgolly.sipJs.uriMod.URI,
-    fromURI: typingsJapgolly.sipJs.uriMod.URI,
-    toURI: typingsJapgolly.sipJs.uriMod.URI,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    options: Unit,
+    extraHeaders: js.Array[String],
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    options: Unit,
+    extraHeaders: Unit,
+    body: Body
+  ) = this()
+  def this(
+    method: String,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
     options: OutgoingRequestMessageOptions,
     extraHeaders: js.Array[String],
     body: Body
   ) = this()
+  def this(
+    method: String,
+    ruri: typingsJapgolly.sipJs.libGrammarMod.URI,
+    fromURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    toURI: typingsJapgolly.sipJs.libGrammarMod.URI,
+    options: OutgoingRequestMessageOptions,
+    extraHeaders: Unit,
+    body: Body
+  ) = this()
 }
-
 /* static members */
-@JSImport("sip.js", "Core.OutgoingRequestMessage")
-@js.native
-object OutgoingRequestMessage extends js.Object {
+object OutgoingRequestMessage {
+  
+  @JSImport("sip.js", "Core.OutgoingRequestMessage")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Get a copy of the default options. */
-  var getDefaultOptions: js.Any = js.native
-  var makeNameAddrHeader: js.Any = js.native
+  @JSImport("sip.js", "Core.OutgoingRequestMessage.getDefaultOptions")
+  @js.native
+  def getDefaultOptions: Any = js.native
+  inline def getDefaultOptions_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDefaultOptions")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sip.js", "Core.OutgoingRequestMessage.makeNameAddrHeader")
+  @js.native
+  def makeNameAddrHeader: Any = js.native
+  inline def makeNameAddrHeader_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeNameAddrHeader")(x.asInstanceOf[js.Any])
 }
-

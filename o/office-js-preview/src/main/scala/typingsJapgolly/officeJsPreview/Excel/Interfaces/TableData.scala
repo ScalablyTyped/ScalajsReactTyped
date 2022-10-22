@@ -1,154 +1,218 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `table.toJSON()`. */
-trait TableData extends js.Object {
+trait TableData extends StObject {
+  
   /**
+    * Represents the `AutoFilter` object of the table.
     *
-    * Represents the AutoFilter object of the table. Read-Only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
+  
   /**
+    * Represents a collection of all the columns in the table.
     *
-    * Represents a collection of all the columns in the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var columns: js.UndefOr[js.Array[TableColumnData]] = js.undefined
+  
   /**
+    * Specifies if the first column contains special formatting.
     *
-    * Indicates whether the first column contains special formatting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightFirstColumn: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the last column contains special formatting.
     *
-    * Indicates whether the last column contains special formatting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var highlightLastColumn: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed.
     *
-    * Returns a value that uniquely identifies the table in a given workbook. The value of the identifier remains the same even when the table is renamed. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
+    * Returns a numeric ID.
     *
-    * Returns a numeric id.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var legacyId: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Name of the table.
+    
+    The set name of the table must follow the guidelines specified in the {@link https://support.microsoft.com/office/fbf49a4f-82a3-43eb-8ba2-44d21233b114 | Rename an Excel table} article.
     *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
+    * Represents a collection of all the rows in the table.
     *
-    * Represents a collection of all the rows in the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
+  
   /**
+    * Specifies if the columns show banded formatting in which odd columns are highlighted differently from even ones, to make reading the table easier.
     *
-    * Indicates whether the columns show banded formatting in which odd columns are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the rows show banded formatting in which odd rows are highlighted differently from even ones, to make reading the table easier.
     *
-    * Indicates whether the rows show banded formatting in which odd rows are highlighted differently from even ones to make reading the table easier.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showBandedRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
     *
-    * Indicates whether the filter buttons are visible at the top of each column header. Setting this is only allowed if the table contains a header row.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.3]
     */
   var showFilterButton: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the header row is visible. This value can be set to show or remove the header row.
     *
-    * Indicates whether the header row is visible or not. This value can be set to show or remove the header row.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showHeaders: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the total row is visible. This value can be set to show or remove the total row.
     *
-    * Indicates whether the total row is visible or not. This value can be set to show or remove the total row.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var showTotals: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the sorting for the table.
     *
-    * Represents the sorting for the table. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var sort: js.UndefOr[TableSortData] = js.undefined
+  
   /**
+    * Constant value that represents the table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
     *
-    * Constant value that represents the Table style. Possible values are: "TableStyleLight1" through "TableStyleLight21", "TableStyleMedium1" through "TableStyleMedium28", "TableStyleDark1" through "TableStyleDark11". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var style: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The style applied to the table.
+    *
+    * @remarks
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var tableStyle: js.UndefOr[TableStyleData] = js.undefined
 }
-
 object TableData {
-  @scala.inline
-  def apply(
-    autoFilter: AutoFilterData = null,
-    columns: js.Array[TableColumnData] = null,
-    highlightFirstColumn: js.UndefOr[Boolean] = js.undefined,
-    highlightLastColumn: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    legacyId: String = null,
-    name: String = null,
-    rows: js.Array[TableRowData] = null,
-    showBandedColumns: js.UndefOr[Boolean] = js.undefined,
-    showBandedRows: js.UndefOr[Boolean] = js.undefined,
-    showFilterButton: js.UndefOr[Boolean] = js.undefined,
-    showHeaders: js.UndefOr[Boolean] = js.undefined,
-    showTotals: js.UndefOr[Boolean] = js.undefined,
-    sort: TableSortData = null,
-    style: String = null
-  ): TableData = {
+  
+  inline def apply(): TableData = {
     val __obj = js.Dynamic.literal()
-    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (legacyId != null) __obj.updateDynamic("legacyId")(legacyId.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBandedColumns)) __obj.updateDynamic("showBandedColumns")(showBandedColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBandedRows)) __obj.updateDynamic("showBandedRows")(showBandedRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFilterButton)) __obj.updateDynamic("showFilterButton")(showFilterButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableData]
   }
+  
+  extension [Self <: TableData](x: Self) {
+    
+    inline def setAutoFilter(value: AutoFilterData): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFilterUndefined: Self = StObject.set(x, "autoFilter", js.undefined)
+    
+    inline def setColumns(value: js.Array[TableColumnData]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: TableColumnData*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setHighlightFirstColumn(value: Boolean): Self = StObject.set(x, "highlightFirstColumn", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightFirstColumnUndefined: Self = StObject.set(x, "highlightFirstColumn", js.undefined)
+    
+    inline def setHighlightLastColumn(value: Boolean): Self = StObject.set(x, "highlightLastColumn", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightLastColumnUndefined: Self = StObject.set(x, "highlightLastColumn", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLegacyId(value: String): Self = StObject.set(x, "legacyId", value.asInstanceOf[js.Any])
+    
+    inline def setLegacyIdUndefined: Self = StObject.set(x, "legacyId", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRows(value: js.Array[TableRowData]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setRowsVarargs(value: TableRowData*): Self = StObject.set(x, "rows", js.Array(value*))
+    
+    inline def setShowBandedColumns(value: Boolean): Self = StObject.set(x, "showBandedColumns", value.asInstanceOf[js.Any])
+    
+    inline def setShowBandedColumnsUndefined: Self = StObject.set(x, "showBandedColumns", js.undefined)
+    
+    inline def setShowBandedRows(value: Boolean): Self = StObject.set(x, "showBandedRows", value.asInstanceOf[js.Any])
+    
+    inline def setShowBandedRowsUndefined: Self = StObject.set(x, "showBandedRows", js.undefined)
+    
+    inline def setShowFilterButton(value: Boolean): Self = StObject.set(x, "showFilterButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowFilterButtonUndefined: Self = StObject.set(x, "showFilterButton", js.undefined)
+    
+    inline def setShowHeaders(value: Boolean): Self = StObject.set(x, "showHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setShowHeadersUndefined: Self = StObject.set(x, "showHeaders", js.undefined)
+    
+    inline def setShowTotals(value: Boolean): Self = StObject.set(x, "showTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowTotalsUndefined: Self = StObject.set(x, "showTotals", js.undefined)
+    
+    inline def setSort(value: TableSortData): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTableStyle(value: TableStyleData): Self = StObject.set(x, "tableStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTableStyleUndefined: Self = StObject.set(x, "tableStyle", js.undefined)
+  }
 }
-

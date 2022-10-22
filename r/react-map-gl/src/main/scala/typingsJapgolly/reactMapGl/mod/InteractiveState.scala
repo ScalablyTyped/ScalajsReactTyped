@@ -1,33 +1,48 @@
 package typingsJapgolly.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InteractiveState extends js.Object {
+trait InteractiveState extends StObject {
+  
   var startBearing: js.UndefOr[Double] = js.undefined
+  
   var startPanLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var startPitch: js.UndefOr[Double] = js.undefined
+  
   var startZoom: js.UndefOr[Double] = js.undefined
+  
   var startZoomLngLat: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
-
 object InteractiveState {
-  @scala.inline
-  def apply(
-    startBearing: Int | Double = null,
-    startPanLngLat: js.Tuple2[Double, Double] = null,
-    startPitch: Int | Double = null,
-    startZoom: Int | Double = null,
-    startZoomLngLat: js.Tuple2[Double, Double] = null
-  ): InteractiveState = {
+  
+  inline def apply(): InteractiveState = {
     val __obj = js.Dynamic.literal()
-    if (startBearing != null) __obj.updateDynamic("startBearing")(startBearing.asInstanceOf[js.Any])
-    if (startPanLngLat != null) __obj.updateDynamic("startPanLngLat")(startPanLngLat.asInstanceOf[js.Any])
-    if (startPitch != null) __obj.updateDynamic("startPitch")(startPitch.asInstanceOf[js.Any])
-    if (startZoom != null) __obj.updateDynamic("startZoom")(startZoom.asInstanceOf[js.Any])
-    if (startZoomLngLat != null) __obj.updateDynamic("startZoomLngLat")(startZoomLngLat.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveState]
   }
+  
+  extension [Self <: InteractiveState](x: Self) {
+    
+    inline def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
+    
+    inline def setStartBearingUndefined: Self = StObject.set(x, "startBearing", js.undefined)
+    
+    inline def setStartPanLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startPanLngLat", value.asInstanceOf[js.Any])
+    
+    inline def setStartPanLngLatUndefined: Self = StObject.set(x, "startPanLngLat", js.undefined)
+    
+    inline def setStartPitch(value: Double): Self = StObject.set(x, "startPitch", value.asInstanceOf[js.Any])
+    
+    inline def setStartPitchUndefined: Self = StObject.set(x, "startPitch", js.undefined)
+    
+    inline def setStartZoom(value: Double): Self = StObject.set(x, "startZoom", value.asInstanceOf[js.Any])
+    
+    inline def setStartZoomLngLat(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "startZoomLngLat", value.asInstanceOf[js.Any])
+    
+    inline def setStartZoomLngLatUndefined: Self = StObject.set(x, "startZoomLngLat", js.undefined)
+    
+    inline def setStartZoomUndefined: Self = StObject.set(x, "startZoom", js.undefined)
+  }
 }
-

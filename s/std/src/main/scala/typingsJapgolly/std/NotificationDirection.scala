@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.auto
   - typingsJapgolly.std.stdStrings.ltr
   - typingsJapgolly.std.stdStrings.rtl
 */
-trait NotificationDirection extends js.Object
-
+trait NotificationDirection extends StObject
 object NotificationDirection {
-  @scala.inline
-  def auto: typingsJapgolly.std.stdStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ltr: typingsJapgolly.std.stdStrings.ltr = this.cast("ltr")
-  @scala.inline
-  def rtl: typingsJapgolly.std.stdStrings.rtl = this.cast("rtl")
+  
+  inline def auto: typingsJapgolly.std.stdStrings.auto = "auto".asInstanceOf[typingsJapgolly.std.stdStrings.auto]
+  
+  inline def ltr: typingsJapgolly.std.stdStrings.ltr = "ltr".asInstanceOf[typingsJapgolly.std.stdStrings.ltr]
+  
+  inline def rtl: typingsJapgolly.std.stdStrings.rtl = "rtl".asInstanceOf[typingsJapgolly.std.stdStrings.rtl]
 }
-

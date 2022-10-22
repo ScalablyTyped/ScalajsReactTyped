@@ -2,11 +2,12 @@ package typingsJapgolly.phaser.spine
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Timeline extends js.Object {
+trait Timeline extends StObject {
+  
   @JSName("apply")
   def apply(
     skeleton: Skeleton,
@@ -17,19 +18,23 @@ trait Timeline extends js.Object {
     blend: MixBlend,
     direction: MixDirection
   ): Unit
+  
   def getPropertyId(): Double
 }
-
 object Timeline {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     apply: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Callback,
     getPropertyId: CallbackTo[Double]
   ): Timeline = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(js.Any.fromFunction7((t0: typingsJapgolly.phaser.spine.Skeleton, t1: scala.Double, t2: scala.Double, t3: js.Array[typingsJapgolly.phaser.spine.Event], t4: scala.Double, t5: typingsJapgolly.phaser.spine.MixBlend, t6: typingsJapgolly.phaser.spine.MixDirection) => apply(t0, t1, t2, t3, t4, t5, t6).runNow()))
-    __obj.updateDynamic("getPropertyId")(getPropertyId.toJsFn)
+    val __obj = js.Dynamic.literal(apply = js.Any.fromFunction7((t0: Skeleton, t1: Double, t2: Double, t3: js.Array[Event], t4: Double, t5: MixBlend, t6: MixDirection) => (apply(t0, t1, t2, t3, t4, t5, t6)).runNow()), getPropertyId = getPropertyId.toJsFn)
     __obj.asInstanceOf[Timeline]
   }
+  
+  extension [Self <: Timeline](x: Self) {
+    
+    inline def setApply(value: (Skeleton, Double, Double, js.Array[Event], Double, MixBlend, MixDirection) => Callback): Self = StObject.set(x, "apply", js.Any.fromFunction7((t0: Skeleton, t1: Double, t2: Double, t3: js.Array[Event], t4: Double, t5: MixBlend, t6: MixDirection) => (value(t0, t1, t2, t3, t4, t5, t6)).runNow()))
+    
+    inline def setGetPropertyId(value: CallbackTo[Double]): Self = StObject.set(x, "getPropertyId", value.toJsFn)
+  }
 }
-

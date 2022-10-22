@@ -2,38 +2,53 @@ package typingsJapgolly.reactBeautifulDnd.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SensorAPI extends js.Object {
-  var tryGetLock: TryGetLock
+trait SensorAPI extends StObject {
+  
   def canGetLock(id: DraggableId): Boolean
-  def findClosestDraggableId(event: Event_): DraggableId | Null
+  
+  def findClosestDraggableId(event: Event): DraggableId | Null
+  
   def findOptionsForDraggable(id: DraggableId): DraggableOptions | Null
+  
   def isLockClaimed(): Boolean
+  
+  var tryGetLock: TryGetLock
+  
   def tryReleaseLock(): Unit
 }
-
 object SensorAPI {
-  @scala.inline
-  def apply(
-    canGetLock: DraggableId => CallbackTo[Boolean],
-    findClosestDraggableId: Event_ => CallbackTo[DraggableId | Null],
-    findOptionsForDraggable: DraggableId => CallbackTo[DraggableOptions | Null],
+  
+  inline def apply(
+    canGetLock: DraggableId => Boolean,
+    findClosestDraggableId: Event => DraggableId | Null,
+    findOptionsForDraggable: DraggableId => DraggableOptions | Null,
     isLockClaimed: CallbackTo[Boolean],
-    tryGetLock: (/* draggableId */ DraggableId, /* forceStop */ js.UndefOr[js.Function0[Unit]], /* options */ js.UndefOr[TryGetLockOptions]) => CallbackTo[PreDragActions | Null],
+    tryGetLock: (/* draggableId */ DraggableId, /* forceStop */ js.UndefOr[js.Function0[Unit]], /* options */ js.UndefOr[TryGetLockOptions]) => PreDragActions | Null,
     tryReleaseLock: Callback
   ): SensorAPI = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canGetLock")(js.Any.fromFunction1((t0: typingsJapgolly.reactBeautifulDnd.mod.DraggableId) => canGetLock(t0).runNow()))
-    __obj.updateDynamic("findClosestDraggableId")(js.Any.fromFunction1((t0: typingsJapgolly.std.Event_) => findClosestDraggableId(t0).runNow()))
-    __obj.updateDynamic("findOptionsForDraggable")(js.Any.fromFunction1((t0: typingsJapgolly.reactBeautifulDnd.mod.DraggableId) => findOptionsForDraggable(t0).runNow()))
-    __obj.updateDynamic("isLockClaimed")(isLockClaimed.toJsFn)
-    __obj.updateDynamic("tryGetLock")(js.Any.fromFunction3((t0: /* draggableId */ typingsJapgolly.reactBeautifulDnd.mod.DraggableId, t1: /* forceStop */ js.UndefOr[js.Function0[scala.Unit]], t2: /* options */ js.UndefOr[typingsJapgolly.reactBeautifulDnd.mod.TryGetLockOptions]) => tryGetLock(t0, t1, t2).runNow()))
-    __obj.updateDynamic("tryReleaseLock")(tryReleaseLock.toJsFn)
+    val __obj = js.Dynamic.literal(canGetLock = js.Any.fromFunction1(canGetLock), findClosestDraggableId = js.Any.fromFunction1(findClosestDraggableId), findOptionsForDraggable = js.Any.fromFunction1(findOptionsForDraggable), isLockClaimed = isLockClaimed.toJsFn, tryGetLock = js.Any.fromFunction3(tryGetLock), tryReleaseLock = tryReleaseLock.toJsFn)
     __obj.asInstanceOf[SensorAPI]
   }
+  
+  extension [Self <: SensorAPI](x: Self) {
+    
+    inline def setCanGetLock(value: DraggableId => Boolean): Self = StObject.set(x, "canGetLock", js.Any.fromFunction1(value))
+    
+    inline def setFindClosestDraggableId(value: Event => DraggableId | Null): Self = StObject.set(x, "findClosestDraggableId", js.Any.fromFunction1(value))
+    
+    inline def setFindOptionsForDraggable(value: DraggableId => DraggableOptions | Null): Self = StObject.set(x, "findOptionsForDraggable", js.Any.fromFunction1(value))
+    
+    inline def setIsLockClaimed(value: CallbackTo[Boolean]): Self = StObject.set(x, "isLockClaimed", value.toJsFn)
+    
+    inline def setTryGetLock(
+      value: (/* draggableId */ DraggableId, /* forceStop */ js.UndefOr[js.Function0[Unit]], /* options */ js.UndefOr[TryGetLockOptions]) => PreDragActions | Null
+    ): Self = StObject.set(x, "tryGetLock", js.Any.fromFunction3(value))
+    
+    inline def setTryReleaseLock(value: Callback): Self = StObject.set(x, "tryReleaseLock", value.toJsFn)
+  }
 }
-

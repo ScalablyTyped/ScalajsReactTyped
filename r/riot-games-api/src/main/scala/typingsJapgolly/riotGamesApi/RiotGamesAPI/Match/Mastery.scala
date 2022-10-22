@@ -1,20 +1,26 @@
 package typingsJapgolly.riotGamesApi.RiotGamesAPI.Match
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Mastery extends js.Object {
+trait Mastery extends StObject {
+  
   var masteryId: Double
+  
   var rank: Double
 }
-
 object Mastery {
-  @scala.inline
-  def apply(masteryId: Double, rank: Double): Mastery = {
-    val __obj = js.Dynamic.literal(masteryId = masteryId.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
   
+  inline def apply(masteryId: Double, rank: Double): Mastery = {
+    val __obj = js.Dynamic.literal(masteryId = masteryId.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mastery]
   }
+  
+  extension [Self <: Mastery](x: Self) {
+    
+    inline def setMasteryId(value: Double): Self = StObject.set(x, "masteryId", value.asInstanceOf[js.Any])
+    
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+  }
 }
-

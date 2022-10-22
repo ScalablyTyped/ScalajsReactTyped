@@ -1,25 +1,27 @@
 package typingsJapgolly.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#authenticatorattestationresponse}
   */
-trait AuthenticatorAttestationResponse extends AuthenticatorResponse {
-  val attestationObject: scala.scalajs.js.typedarray.ArrayBuffer
-}
-
-object AuthenticatorAttestationResponse {
-  @scala.inline
-  def apply(
-    attestationObject: scala.scalajs.js.typedarray.ArrayBuffer,
-    clientDataJSON: scala.scalajs.js.typedarray.ArrayBuffer
-  ): AuthenticatorAttestationResponse = {
-    val __obj = js.Dynamic.literal(attestationObject = attestationObject.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any])
+trait AuthenticatorAttestationResponse
+  extends StObject
+     with AuthenticatorResponse {
   
+  val attestationObject: js.typedarray.ArrayBuffer
+}
+object AuthenticatorAttestationResponse {
+  
+  inline def apply(attestationObject: js.typedarray.ArrayBuffer, clientDataJSON: js.typedarray.ArrayBuffer): AuthenticatorAttestationResponse = {
+    val __obj = js.Dynamic.literal(attestationObject = attestationObject.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticatorAttestationResponse]
   }
+  
+  extension [Self <: AuthenticatorAttestationResponse](x: Self) {
+    
+    inline def setAttestationObject(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "attestationObject", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,20 +1,30 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppCatalogs extends Entity {
-  var teamsApps: js.UndefOr[js.Array[TeamsApp]] = js.undefined
+trait AppCatalogs
+  extends StObject
+     with Entity {
+  
+  var teamsApps: js.UndefOr[NullableOption[js.Array[TeamsApp]]] = js.undefined
 }
-
 object AppCatalogs {
-  @scala.inline
-  def apply(id: String = null, teamsApps: js.Array[TeamsApp] = null): AppCatalogs = {
+  
+  inline def apply(): AppCatalogs = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (teamsApps != null) __obj.updateDynamic("teamsApps")(teamsApps.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppCatalogs]
   }
+  
+  extension [Self <: AppCatalogs](x: Self) {
+    
+    inline def setTeamsApps(value: NullableOption[js.Array[TeamsApp]]): Self = StObject.set(x, "teamsApps", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsAppsNull: Self = StObject.set(x, "teamsApps", null)
+    
+    inline def setTeamsAppsUndefined: Self = StObject.set(x, "teamsApps", js.undefined)
+    
+    inline def setTeamsAppsVarargs(value: TeamsApp*): Self = StObject.set(x, "teamsApps", js.Array(value*))
+  }
 }
-

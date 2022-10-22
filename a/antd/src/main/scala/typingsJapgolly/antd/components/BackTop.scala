@@ -2,55 +2,46 @@ package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.antd.backTopMod.BackTopProps
-import typingsJapgolly.antd.backTopMod.default
+import org.scalajs.dom.Document
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libBackTopMod.BackTopProps
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.std.Window_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BackTop {
-  def apply(
-    className: String = null,
-    onClick: ReactMouseEventFrom[HTMLElement] => Callback = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    target: js.UndefOr[CallbackTo[HTMLElement | Window_]] = js.undefined,
-    visibilityHeight: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BackTopProps, default, Unit, BackTopProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    target.foreach(p => __obj.updateDynamic("target")(p.toJsFn))
-    if (visibilityHeight != null) __obj.updateDynamic("visibilityHeight")(visibilityHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.backTopMod.BackTopProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.backTopMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.backTopMod.BackTopProps])(children: _*)
-  }
-  @JSImport("antd/lib/back-top", JSImport.Default)
+  @JSImport("antd", "BackTop")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def target(value: CallbackTo[HTMLElement | Window | Document]): this.type = set("target", value.toJsFn)
+    
+    inline def visibilityHeight(value: Double): this.type = set("visibilityHeight", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: BackTop.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BackTopProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

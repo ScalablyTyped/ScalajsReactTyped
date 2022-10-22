@@ -23,58 +23,74 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ThreeSymbols2
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights1
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ThreeTrafficLights2
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.ThreeTriangles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `iconSetConditionalFormat.toJSON()`. */
-trait IconSetConditionalFormatData extends js.Object {
+trait IconSetConditionalFormatData extends StObject {
+  
   /**
+    * An array of criteria and icon sets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
     *
-    * An array of Criteria and IconSets for the rules and potential custom icons for conditional icons. Note that for the first criterion only the custom icon can be modified, while type, formula, and operator will be ignored when set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[js.Array[ConditionalIconCriterion]] = js.undefined
+  
   /**
+    * If `true`, reverses the icon orders for the icon set. Note that this cannot be set if custom icons are used.
     *
-    * If true, reverses the icon orders for the IconSet. Note that this cannot be set if custom icons are used.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var reverseIconOrder: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * If `true`, hides the values and only shows icons.
     *
-    * If true, hides the values and only shows icons.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var showIconOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * If set, displays the icon set option for the conditional format.
     *
-    * If set, displays the IconSet option for the conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var style: js.UndefOr[
     IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
   ] = js.undefined
 }
-
 object IconSetConditionalFormatData {
-  @scala.inline
-  def apply(
-    criteria: js.Array[ConditionalIconCriterion] = null,
-    reverseIconOrder: js.UndefOr[Boolean] = js.undefined,
-    showIconOnly: js.UndefOr[Boolean] = js.undefined,
-    style: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes = null
-  ): IconSetConditionalFormatData = {
+  
+  inline def apply(): IconSetConditionalFormatData = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverseIconOrder)) __obj.updateDynamic("reverseIconOrder")(reverseIconOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIconOnly)) __obj.updateDynamic("showIconOnly")(showIconOnly.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[IconSetConditionalFormatData]
   }
+  
+  extension [Self <: IconSetConditionalFormatData](x: Self) {
+    
+    inline def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    
+    inline def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value*))
+    
+    inline def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
+    
+    inline def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
+    
+    inline def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
+    
+    inline def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
+    
+    inline def setStyle(
+      value: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

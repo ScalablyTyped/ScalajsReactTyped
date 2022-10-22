@@ -1,32 +1,46 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonOption extends js.Object {
+trait ButtonOption extends StObject {
+  
   var holdtime: js.UndefOr[Double] = js.undefined
+  
   var invert: js.UndefOr[Boolean] = js.undefined
+  
   var isPulldown: js.UndefOr[Boolean] = js.undefined
+  
   var isPullup: js.UndefOr[Boolean] = js.undefined
+  
   var pin: Double | String
 }
-
 object ButtonOption {
-  @scala.inline
-  def apply(
-    pin: Double | String,
-    holdtime: Int | Double = null,
-    invert: js.UndefOr[Boolean] = js.undefined,
-    isPulldown: js.UndefOr[Boolean] = js.undefined,
-    isPullup: js.UndefOr[Boolean] = js.undefined
-  ): ButtonOption = {
+  
+  inline def apply(pin: Double | String): ButtonOption = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
-    if (holdtime != null) __obj.updateDynamic("holdtime")(holdtime.asInstanceOf[js.Any])
-    if (!js.isUndefined(invert)) __obj.updateDynamic("invert")(invert.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPulldown)) __obj.updateDynamic("isPulldown")(isPulldown.asInstanceOf[js.Any])
-    if (!js.isUndefined(isPullup)) __obj.updateDynamic("isPullup")(isPullup.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOption]
   }
+  
+  extension [Self <: ButtonOption](x: Self) {
+    
+    inline def setHoldtime(value: Double): Self = StObject.set(x, "holdtime", value.asInstanceOf[js.Any])
+    
+    inline def setHoldtimeUndefined: Self = StObject.set(x, "holdtime", js.undefined)
+    
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    
+    inline def setIsPulldown(value: Boolean): Self = StObject.set(x, "isPulldown", value.asInstanceOf[js.Any])
+    
+    inline def setIsPulldownUndefined: Self = StObject.set(x, "isPulldown", js.undefined)
+    
+    inline def setIsPullup(value: Boolean): Self = StObject.set(x, "isPullup", value.asInstanceOf[js.Any])
+    
+    inline def setIsPullupUndefined: Self = StObject.set(x, "isPullup", js.undefined)
+    
+    inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+  }
 }
-

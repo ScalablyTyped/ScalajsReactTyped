@@ -1,25 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxTrackBarOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxTrackBar")
+@JSImport("devextreme", "default.ui.dxTrackBar")
 @js.native
-class dxTrackBar protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.Editor {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(
-    element: JQuery,
-    options: dxTrackBarOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxTrackBar]
-  ) = this()
-  def this(
-    element: Element,
-    options: dxTrackBarOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.dxTrackBar]
-  ) = this()
-}
-
+open class dxTrackBar[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.Editor[TProperties]

@@ -1,36 +1,56 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartExplorer extends js.Object {
+trait ChartExplorer extends StObject {
+  
   var actions: js.UndefOr[js.Array[String]] = js.undefined
+  
   var axis: js.UndefOr[String] = js.undefined
+  
   var keepInBounds: js.UndefOr[Boolean] = js.undefined
+  
   var maxZoomIn: js.UndefOr[Double] = js.undefined
+  
   var maxZoomOut: js.UndefOr[Double] = js.undefined
+  
   var zoomDelta: js.UndefOr[Double] = js.undefined
 }
-
 object ChartExplorer {
-  @scala.inline
-  def apply(
-    actions: js.Array[String] = null,
-    axis: String = null,
-    keepInBounds: js.UndefOr[Boolean] = js.undefined,
-    maxZoomIn: Int | Double = null,
-    maxZoomOut: Int | Double = null,
-    zoomDelta: Int | Double = null
-  ): ChartExplorer = {
+  
+  inline def apply(): ChartExplorer = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInBounds)) __obj.updateDynamic("keepInBounds")(keepInBounds.asInstanceOf[js.Any])
-    if (maxZoomIn != null) __obj.updateDynamic("maxZoomIn")(maxZoomIn.asInstanceOf[js.Any])
-    if (maxZoomOut != null) __obj.updateDynamic("maxZoomOut")(maxZoomOut.asInstanceOf[js.Any])
-    if (zoomDelta != null) __obj.updateDynamic("zoomDelta")(zoomDelta.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartExplorer]
   }
+  
+  extension [Self <: ChartExplorer](x: Self) {
+    
+    inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setKeepInBounds(value: Boolean): Self = StObject.set(x, "keepInBounds", value.asInstanceOf[js.Any])
+    
+    inline def setKeepInBoundsUndefined: Self = StObject.set(x, "keepInBounds", js.undefined)
+    
+    inline def setMaxZoomIn(value: Double): Self = StObject.set(x, "maxZoomIn", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomInUndefined: Self = StObject.set(x, "maxZoomIn", js.undefined)
+    
+    inline def setMaxZoomOut(value: Double): Self = StObject.set(x, "maxZoomOut", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomOutUndefined: Self = StObject.set(x, "maxZoomOut", js.undefined)
+    
+    inline def setZoomDelta(value: Double): Self = StObject.set(x, "zoomDelta", value.asInstanceOf[js.Any])
+    
+    inline def setZoomDeltaUndefined: Self = StObject.set(x, "zoomDelta", js.undefined)
+  }
 }
-

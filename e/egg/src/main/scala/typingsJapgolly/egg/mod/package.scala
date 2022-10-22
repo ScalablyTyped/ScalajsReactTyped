@@ -1,41 +1,68 @@
-package typingsJapgolly.egg
+package typingsJapgolly.egg.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.egg.mod.^
+import typingsJapgolly.eggCore.mod.EggCore
+import typingsJapgolly.std.Exclude
+import typingsJapgolly.std.Pick
+import typingsJapgolly.urllib.mod.HttpClient
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type EggContextHttpClient = typingsJapgolly.urllib.mod.HttpClient[typingsJapgolly.urllib.mod.RequestOptions2]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.egg.eggStrings.local
-    - typingsJapgolly.egg.eggStrings.unittest
-    - typingsJapgolly.egg.eggStrings.prod
-    - java.lang.String
-  */
-  type EggEnvType = typingsJapgolly.egg.mod._EggEnvType | java.lang.String
-  type EggHttpClient = typingsJapgolly.urllib.mod.HttpClient[typingsJapgolly.urllib.mod.RequestOptions2]
-  type EggLoader = typingsJapgolly.eggCore.mod.EggLoader[
-    typingsJapgolly.eggCore.mod.EggCore[typingsJapgolly.eggCore.mod.PlainObject[js.Any]], 
-    js.Any
-  ]
-  type EggLoaderOptions = typingsJapgolly.eggCore.mod.EggLoaderOptions
-  type EggPluginItem = typingsJapgolly.egg.mod.IEggPluginItem | scala.Boolean
-  type IApplicationLocals = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type IContextLocals = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type IController = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type IMiddleware = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type IService = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type IgnoreItem = java.lang.String | js.RegExp | (js.Function1[/* ctx */ typingsJapgolly.egg.mod.Context, scala.Boolean])
-  type IgnoreOrMatch = typingsJapgolly.egg.mod.IgnoreItem | js.Array[typingsJapgolly.egg.mod.IgnoreItem]
-  type LoggerLevel = typingsJapgolly.eggLogger.mod.LoggerLevel
-  // plain object
-  type PlainObject[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type PowerPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ U in keyof T ]:? T[U] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias egg.egg.PowerPartial<T[U]> * / object : T[U]}
-    */ typingsJapgolly.egg.eggStrings.PowerPartial with js.Any
-  // Remove specific property from the specific class
-  type RemoveSpecProp[T, P] = typingsJapgolly.std.Pick[T, typingsJapgolly.std.Exclude[java.lang.String, P]]
-  type RequestArrayBody = js.Array[js.Any]
-  type RequestObjectBody = typingsJapgolly.egg.mod.PlainObject[js.Any]
-  type RouterPath = java.lang.String | js.RegExp
-}
+
+inline def start(): js.Promise[Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[Application]]
+inline def start(options: StartOptions): js.Promise[Application] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Application]]
+
+inline def startCluster(options: ClusterOptions, callback: js.Function1[/* repeated */ Any, Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startCluster")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+type EggContextHttpClient = HttpClient
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.egg.eggStrings.local
+  - typingsJapgolly.egg.eggStrings.unittest
+  - typingsJapgolly.egg.eggStrings.prod
+  - java.lang.String
+*/
+type EggEnvType = _EggEnvType | String
+
+type EggHttpClient = HttpClient
+
+type EggLoader = typingsJapgolly.eggCore.mod.EggLoader[
+EggCore[typingsJapgolly.eggCore.mod.PlainObject[Any]], 
+Any, 
+typingsJapgolly.eggCore.mod.EggLoaderOptions]
+
+type EggLoaderOptions = typingsJapgolly.eggCore.mod.EggLoaderOptions
+
+type EggLogger = typingsJapgolly.eggLogger.mod.EggLogger
+
+type EggPluginItem = IEggPluginItem | Boolean
+
+type IApplicationLocals = PlainObject[Any]
+
+type IContextLocals = PlainObject[Any]
+
+type IController = PlainObject[Any]
+
+type IMiddleware = PlainObject[Any]
+
+type IService = PlainObject[Any]
+
+type IgnoreItem = String | js.RegExp | (js.Function1[/* ctx */ Context[Any], Boolean])
+
+type IgnoreOrMatch = IgnoreItem | js.Array[IgnoreItem]
+
+type LoggerLevel = typingsJapgolly.eggLogger.mod.LoggerLevel
+
+// plain object
+type PlainObject[T] = StringDictionary[T]
+
+// Remove specific property from the specific class
+type RemoveSpecProp[T, P] = Pick[T, Exclude[/* keyof T */ String, P]]
+
+type RequestArrayBody = js.Array[Any]
+
+type RequestObjectBody = PlainObject[Any]
+
+type RouterPath = String | js.RegExp

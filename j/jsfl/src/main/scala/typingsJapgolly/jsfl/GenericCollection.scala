@@ -1,12 +1,12 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenericCollection[T] extends js.Object {
-  var elements: js.Array[T]
+trait GenericCollection[T] extends StObject {
+  
   def each(
     callback: js.Function3[
       /* element */ T, 
@@ -14,42 +14,63 @@ trait GenericCollection[T] extends js.Object {
       /* elements */ js.UndefOr[js.Array[T]], 
       Unit
     ]
-  ): js.Any
-  def randomize(info: js.Any): GenericCollection[T]
+  ): Any
+  
+  var elements: js.Array[T]
+  
+  def randomize(info: Any): GenericCollection[T]
+  
   def rename(pattern: String): GenericCollection[T]
+  
   def select(): GenericCollection[T]
+  
   def toGrid(x: Double, y: Double): GenericCollection[T]
+  
   def update(): GenericCollection[T]
 }
-
 object GenericCollection {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     each: js.Function3[
       /* element */ T, 
       /* index */ js.UndefOr[Double], 
       /* elements */ js.UndefOr[js.Array[T]], 
       Unit
-    ] => CallbackTo[js.Any],
+    ] => Any,
     elements: js.Array[T],
-    randomize: js.Any => CallbackTo[GenericCollection[T]],
-    rename: String => CallbackTo[GenericCollection[T]],
+    randomize: Any => GenericCollection[T],
+    rename: String => GenericCollection[T],
     select: CallbackTo[GenericCollection[T]],
-    toGrid: (Double, Double) => CallbackTo[GenericCollection[T]],
+    toGrid: (Double, Double) => GenericCollection[T],
     update: CallbackTo[GenericCollection[T]]
   ): GenericCollection[T] = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("each")(js.Any.fromFunction1((t0: js.Function3[
-  /* element */ T, 
-  /* index */ js.UndefOr[scala.Double], 
-  /* elements */ js.UndefOr[js.Array[T]], 
-  scala.Unit]) => each(t0).runNow()))
-    __obj.updateDynamic("randomize")(js.Any.fromFunction1((t0: js.Any) => randomize(t0).runNow()))
-    __obj.updateDynamic("rename")(js.Any.fromFunction1((t0: java.lang.String) => rename(t0).runNow()))
-    __obj.updateDynamic("select")(select.toJsFn)
-    __obj.updateDynamic("toGrid")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => toGrid(t0, t1).runNow()))
-    __obj.updateDynamic("update")(update.toJsFn)
+    val __obj = js.Dynamic.literal(each = js.Any.fromFunction1(each), elements = elements.asInstanceOf[js.Any], randomize = js.Any.fromFunction1(randomize), rename = js.Any.fromFunction1(rename), select = select.toJsFn, toGrid = js.Any.fromFunction2(toGrid), update = update.toJsFn)
     __obj.asInstanceOf[GenericCollection[T]]
   }
+  
+  extension [Self <: GenericCollection[?], T](x: Self & GenericCollection[T]) {
+    
+    inline def setEach(
+      value: js.Function3[
+          /* element */ T, 
+          /* index */ js.UndefOr[Double], 
+          /* elements */ js.UndefOr[js.Array[T]], 
+          Unit
+        ] => Any
+    ): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
+    
+    inline def setElements(value: js.Array[T]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    
+    inline def setElementsVarargs(value: T*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setRandomize(value: Any => GenericCollection[T]): Self = StObject.set(x, "randomize", js.Any.fromFunction1(value))
+    
+    inline def setRename(value: String => GenericCollection[T]): Self = StObject.set(x, "rename", js.Any.fromFunction1(value))
+    
+    inline def setSelect(value: CallbackTo[GenericCollection[T]]): Self = StObject.set(x, "select", value.toJsFn)
+    
+    inline def setToGrid(value: (Double, Double) => GenericCollection[T]): Self = StObject.set(x, "toGrid", js.Any.fromFunction2(value))
+    
+    inline def setUpdate(value: CallbackTo[GenericCollection[T]]): Self = StObject.set(x, "update", value.toJsFn)
+  }
 }
-

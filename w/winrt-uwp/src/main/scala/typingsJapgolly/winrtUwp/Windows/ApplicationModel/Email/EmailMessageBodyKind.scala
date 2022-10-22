@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMessageBodyKind extends js.Object
-
+sealed trait EmailMessageBodyKind extends StObject
 /** Defines the format of an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMessageBodyKind")
 @js.native
-object EmailMessageBodyKind extends js.Object {
+object EmailMessageBodyKind extends StObject {
+  
   /** The email message is formatted as HTML. */
   @js.native
-  sealed trait html extends EmailMessageBodyKind
+  sealed trait html
+    extends StObject
+       with EmailMessageBodyKind
   
   /** The email message is formatted as plain text. */
   @js.native
-  sealed trait plainText extends EmailMessageBodyKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMessageBodyKind with Double] = js.native
-  /* 0 */ @js.native
-  object html extends TopLevel[html with Double]
-  
-  /* 1 */ @js.native
-  object plainText extends TopLevel[plainText with Double]
-  
+  sealed trait plainText
+    extends StObject
+       with EmailMessageBodyKind
 }
-

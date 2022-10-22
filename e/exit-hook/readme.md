@@ -1,7 +1,7 @@
 
 # Scala.js typings for exit-hook
 
-Typings are for version 2.2.0
+Typings are for version 3.1.1
 
 ## Library description:
 Run some code when the process exits
@@ -9,11 +9,11 @@ Run some code when the process exits
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | exit-hook |
-| Keywords           | exit, quit, process, hook, graceful, handler, shutdown, sigterm, sigint, terminate, kill, stop, event, signal |
-| # releases         | 4 |
-| # dependents       | 113 |
-| # downloads        | 114517936 |
-| # stars            | 3 |
+| Keywords           | exit, quit, process, hook, graceful, handler, shutdown, sigterm, sigint, terminate, kill, stop, event, signal, async, asynchronous |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2954639666666666E7 |
+| # stars            | 164.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/exit-hook#readme)

@@ -1,20 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.System.TimeZoneSettings")
-@js.native
-abstract class TimeZoneSettings () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.System.TimeZoneSettings")
-@js.native
-object TimeZoneSettings extends js.Object {
-  var canChangeTimeZone: js.Any = js.native
-   /* unmapped type */ var changeTimeZoneByDisplayName: js.Any = js.native
-   /* unmapped type */ var currentTimeZoneDisplayName: js.Any = js.native
-   /* unmapped type */ var supportedTimeZoneDisplayNames: js.Any = js.native
-}
-
+trait TimeZoneSettings extends StObject

@@ -1,26 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientObjectContainer.FlashScriptCommand client event.
   */
-@JSGlobal("ASPxClientFlashScriptCommandEventArgs")
-@js.native
-class ASPxClientFlashScriptCommandEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientFlashScriptCommandEventArgs type with the specified settings.
-    */
-  def this(command: String, args: String) = this()
+trait ASPxClientFlashScriptCommandEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets arguments passed via the FSCommand action of the flash object.
     */
-  var args: String = js.native
+  var args: String
+  
   /**
     * Gets a command passed via the FSCommand action of the flash object.
     */
-  var command: String = js.native
+  var command: String
 }
-
+object ASPxClientFlashScriptCommandEventArgs {
+  
+  inline def apply(args: String, command: String): ASPxClientFlashScriptCommandEventArgs = {
+    val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFlashScriptCommandEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFlashScriptCommandEventArgs](x: Self) {
+    
+    inline def setArgs(value: String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+  }
+}

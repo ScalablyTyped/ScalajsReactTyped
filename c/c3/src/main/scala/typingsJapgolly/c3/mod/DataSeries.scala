@@ -1,22 +1,36 @@
 package typingsJapgolly.c3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSeries extends js.Object {
+trait DataSeries extends StObject {
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var id_org: js.UndefOr[String] = js.undefined
+  
   var values: js.Array[DataPoint]
 }
-
 object DataSeries {
-  @scala.inline
-  def apply(values: js.Array[DataPoint], id: String = null, id_org: String = null): DataSeries = {
+  
+  inline def apply(values: js.Array[DataPoint]): DataSeries = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (id_org != null) __obj.updateDynamic("id_org")(id_org.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSeries]
   }
+  
+  extension [Self <: DataSeries](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setId_org(value: String): Self = StObject.set(x, "id_org", value.asInstanceOf[js.Any])
+    
+    inline def setId_orgUndefined: Self = StObject.set(x, "id_org", js.undefined)
+    
+    inline def setValues(value: js.Array[DataPoint]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesVarargs(value: DataPoint*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

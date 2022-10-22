@@ -1,21 +1,24 @@
 package typingsJapgolly.webix.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.webix.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SingleRender extends js.Object {
-  var `type`: StringDictionary[js.Any] = js.native
-  def customize(obj: js.Any): Unit = js.native
-  def render(id: String, data: js.Any, `type`: String): Unit = js.native
-  def render(id: Double, data: js.Any, `type`: String): Unit = js.native
-  def sync(source: js.Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+trait SingleRender extends StObject {
+  
+  def customize(obj: Any): Unit = js.native
+  
+  def render(id: String, data: Any, `type`: String): Unit = js.native
+  def render(id: Double, data: Any, `type`: String): Unit = js.native
+  
+  def sync(source: Any, filter: WebixCallback, silent: Boolean): Unit = js.native
+  
+  var `type`: StringDictionary[Any] = js.native
 }
-
-@JSImport("webix", "SingleRender")
-@js.native
-object SingleRender extends TopLevel[SingleRender]
-
+object SingleRender {
+  
+  inline def apply: SingleRender = ^.asInstanceOf[js.Dynamic].selectDynamic("SingleRender").asInstanceOf[SingleRender]
+}

@@ -1,55 +1,63 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridGroupByGroupedColumn
-  extends /**
-	 * Option for IgGridGroupByGroupedColumn
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * [column](ui.iggrid#options:columns) object for the column that is grouped
-  	 *
-  	 */
-  var col: js.UndefOr[js.Any] = js.undefined
+    * [column](ui.iggrid#options:columns) object for the column that is grouped
+    *
+    */
+  var col: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * sort order - ascending or descending
-  	 *
-  	 */
-  var dir: js.UndefOr[js.Any] = js.undefined
+    * sort order - ascending or descending
+    *
+    */
+  var dir: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Key of the column that's grouped
-  	 */
+    * Key of the column that's grouped
+    */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Key of the columnLayout, if the grid is hierarchical
-  	 *
-  	 */
+    * Key of the columnLayout, if the grid is hierarchical
+    *
+    */
   var layout: js.UndefOr[String] = js.undefined
 }
-
 object IgGridGroupByGroupedColumn {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridGroupByGroupedColumn
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    col: js.Any = null,
-    dir: js.Any = null,
-    key: String = null,
-    layout: String = null
-  ): IgGridGroupByGroupedColumn = {
+  
+  inline def apply(): IgGridGroupByGroupedColumn = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (col != null) __obj.updateDynamic("col")(col.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupByGroupedColumn]
   }
+  
+  extension [Self <: IgGridGroupByGroupedColumn](x: Self) {
+    
+    inline def setCol(value: Any): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+    
+    inline def setColUndefined: Self = StObject.set(x, "col", js.undefined)
+    
+    inline def setDir(value: Any): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+  }
 }
-

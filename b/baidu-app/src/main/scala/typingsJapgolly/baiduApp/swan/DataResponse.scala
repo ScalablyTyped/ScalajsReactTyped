@@ -1,29 +1,36 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #region 基本参数
-trait DataResponse extends js.Object {
+trait DataResponse extends StObject {
+  
   /** 回调函数返回的内容 */
-  var data: String | scala.scalajs.js.typedarray.ArrayBuffer
-  var header: js.Any
+  var data: String | js.typedarray.ArrayBuffer
+  
+  var header: Any
+  
   var result: String
+  
   var statusCode: Double
 }
-
 object DataResponse {
-  @scala.inline
-  def apply(
-    data: String | scala.scalajs.js.typedarray.ArrayBuffer,
-    header: js.Any,
-    result: String,
-    statusCode: Double
-  ): DataResponse = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
   
+  inline def apply(data: String | js.typedarray.ArrayBuffer, header: Any, result: String, statusCode: Double): DataResponse = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataResponse]
   }
+  
+  extension [Self <: DataResponse](x: Self) {
+    
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+  }
 }
-

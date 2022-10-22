@@ -2,26 +2,27 @@ package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaneNavigateEvent extends PaneEvent {
+trait PaneNavigateEvent
+  extends StObject
+     with PaneEvent {
+  
   var url: js.UndefOr[JQuery] = js.undefined
 }
-
 object PaneNavigateEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Pane,
-    url: JQuery = null
-  ): PaneNavigateEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Pane): PaneNavigateEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneNavigateEvent]
   }
+  
+  extension [Self <: PaneNavigateEvent](x: Self) {
+    
+    inline def setUrl(value: JQuery): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

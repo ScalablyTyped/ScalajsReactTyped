@@ -1,39 +1,35 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassExpression
-  extends BaseClass
-     with Class
-     with Expression {
+  extends StObject
+     with BaseClass
+     with Class {
+  
   var id: js.UndefOr[Identifier | Null] = js.undefined
+  
   @JSName("type")
   var type_ClassExpression: typingsJapgolly.estree.estreeStrings.ClassExpression
 }
-
 object ClassExpression {
-  @scala.inline
-  def apply(
-    body: ClassBody,
-    `type`: typingsJapgolly.estree.estreeStrings.ClassExpression,
-    id: Identifier = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    superClass: Expression = null,
-    trailingComments: js.Array[Comment] = null
-  ): ClassExpression = {
+  
+  inline def apply(body: ClassBody): ClassExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (superClass != null) __obj.updateDynamic("superClass")(superClass.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[ClassExpression]
   }
+  
+  extension [Self <: ClassExpression](x: Self) {
+    
+    inline def setId(value: Identifier): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdNull: Self = StObject.set(x, "id", null)
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ClassExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

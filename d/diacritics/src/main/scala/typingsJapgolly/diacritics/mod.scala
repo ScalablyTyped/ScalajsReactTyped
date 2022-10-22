@@ -1,17 +1,19 @@
 package typingsJapgolly.diacritics
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.diacritics.anon.Base
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diacritics", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val replacementList: js.Array[AnonBase] = js.native
-  def remove(str: String): String = js.native
-  @js.native
-  object diacriticsMap extends /* key */ StringDictionary[String]
+object mod {
   
+  @JSImport("diacritics", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def remove(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("diacritics", "replacementList")
+  @js.native
+  val replacementList: js.Array[Base] = js.native
 }
-

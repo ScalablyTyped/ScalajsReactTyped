@@ -1,17 +1,45 @@
 package typingsJapgolly.w3cCssTypedObjectModelLevel1
 
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.DOMMatrix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CSSRotate")
-@js.native
-class CSSRotate protected () extends CSSTransformComponent {
-  def this(angle: CSSNumericValue) = this()
-  def this(x: CSSNumberish, y: CSSNumberish, z: CSSNumberish, angle: CSSNumericValue) = this()
-  var angle: CSSNumericValue = js.native
-  var x: CSSNumberish = js.native
-  var y: CSSNumberish = js.native
-  var z: CSSNumberish = js.native
+trait CSSRotate
+  extends StObject
+     with CSSTransformComponent {
+  
+  var angle: CSSNumericValue
+  
+  var x: CSSNumberOrNumeric
+  
+  var y: CSSNumberOrNumeric
+  
+  var z: CSSNumberOrNumeric
 }
-
+object CSSRotate {
+  
+  inline def apply(
+    angle: CSSNumericValue,
+    is2D: Boolean,
+    toMatrix: CallbackTo[DOMMatrix],
+    x: CSSNumberOrNumeric,
+    y: CSSNumberOrNumeric,
+    z: CSSNumberOrNumeric
+  ): CSSRotate = {
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], is2D = is2D.asInstanceOf[js.Any], toMatrix = toMatrix.toJsFn, x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CSSRotate]
+  }
+  
+  extension [Self <: CSSRotate](x: Self) {
+    
+    inline def setAngle(value: CSSNumericValue): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: CSSNumberOrNumeric): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: CSSNumberOrNumeric): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setZ(value: CSSNumberOrNumeric): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+  }
+}

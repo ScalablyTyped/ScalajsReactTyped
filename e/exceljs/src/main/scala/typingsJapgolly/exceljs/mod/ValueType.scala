@@ -1,59 +1,81 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.exceljsNumbers.`0`
-import typingsJapgolly.exceljs.exceljsNumbers.`10`
-import typingsJapgolly.exceljs.exceljsNumbers.`1`
-import typingsJapgolly.exceljs.exceljsNumbers.`2`
-import typingsJapgolly.exceljs.exceljsNumbers.`3`
-import typingsJapgolly.exceljs.exceljsNumbers.`4`
-import typingsJapgolly.exceljs.exceljsNumbers.`5`
-import typingsJapgolly.exceljs.exceljsNumbers.`6`
-import typingsJapgolly.exceljs.exceljsNumbers.`7`
-import typingsJapgolly.exceljs.exceljsNumbers.`8`
-import typingsJapgolly.exceljs.exceljsNumbers.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.exceljs.exceljsNumbers.`0`
-  - typingsJapgolly.exceljs.exceljsNumbers.`1`
-  - typingsJapgolly.exceljs.exceljsNumbers.`2`
-  - typingsJapgolly.exceljs.exceljsNumbers.`3`
-  - typingsJapgolly.exceljs.exceljsNumbers.`4`
-  - typingsJapgolly.exceljs.exceljsNumbers.`5`
-  - typingsJapgolly.exceljs.exceljsNumbers.`6`
-  - typingsJapgolly.exceljs.exceljsNumbers.`7`
-  - typingsJapgolly.exceljs.exceljsNumbers.`8`
-  - typingsJapgolly.exceljs.exceljsNumbers.`9`
-  - typingsJapgolly.exceljs.exceljsNumbers.`10`
-*/
-trait ValueType extends js.Object
-
-object ValueType {
-  @scala.inline
-  def Boolean: `9` = this.cast(9)
-  @scala.inline
-  def Date: `4` = this.cast(4)
-  @scala.inline
-  def Error: `10` = this.cast(10)
-  @scala.inline
-  def Formula: `6` = this.cast(6)
-  @scala.inline
-  def Hyperlink: `5` = this.cast(5)
-  @scala.inline
-  def Merge: `1` = this.cast(1)
-  @scala.inline
-  def Null: `0` = this.cast(0)
-  @scala.inline
-  def Number: `2` = this.cast(2)
-  @scala.inline
-  def RichText: `8` = this.cast(8)
-  @scala.inline
-  def SharedString: `7` = this.cast(7)
-  @scala.inline
-  def String: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@js.native
+sealed trait ValueType extends StObject
+@JSImport("exceljs", "ValueType")
+@js.native
+object ValueType extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ValueType & Double] = js.native
+  
+  @js.native
+  sealed trait Boolean
+    extends StObject
+       with ValueType
+  /* 9 */ val Boolean: typingsJapgolly.exceljs.mod.ValueType.Boolean & Double = js.native
+  
+  @js.native
+  sealed trait Date
+    extends StObject
+       with ValueType
+  /* 4 */ val Date: typingsJapgolly.exceljs.mod.ValueType.Date & Double = js.native
+  
+  @js.native
+  sealed trait Error
+    extends StObject
+       with ValueType
+  /* 10 */ val Error: typingsJapgolly.exceljs.mod.ValueType.Error & Double = js.native
+  
+  @js.native
+  sealed trait Formula
+    extends StObject
+       with ValueType
+  /* 6 */ val Formula: typingsJapgolly.exceljs.mod.ValueType.Formula & Double = js.native
+  
+  @js.native
+  sealed trait Hyperlink
+    extends StObject
+       with ValueType
+  /* 5 */ val Hyperlink: typingsJapgolly.exceljs.mod.ValueType.Hyperlink & Double = js.native
+  
+  @js.native
+  sealed trait Merge
+    extends StObject
+       with ValueType
+  /* 1 */ val Merge: typingsJapgolly.exceljs.mod.ValueType.Merge & Double = js.native
+  
+  @js.native
+  sealed trait Null
+    extends StObject
+       with ValueType
+  /* 0 */ val Null: typingsJapgolly.exceljs.mod.ValueType.Null & Double = js.native
+  
+  @js.native
+  sealed trait Number
+    extends StObject
+       with ValueType
+  /* 2 */ val Number: typingsJapgolly.exceljs.mod.ValueType.Number & Double = js.native
+  
+  @js.native
+  sealed trait RichText
+    extends StObject
+       with ValueType
+  /* 8 */ val RichText: typingsJapgolly.exceljs.mod.ValueType.RichText & Double = js.native
+  
+  @js.native
+  sealed trait SharedString
+    extends StObject
+       with ValueType
+  /* 7 */ val SharedString: typingsJapgolly.exceljs.mod.ValueType.SharedString & Double = js.native
+  
+  @js.native
+  sealed trait String
+    extends StObject
+       with ValueType
+  /* 3 */ val String: typingsJapgolly.exceljs.mod.ValueType.String & Double = js.native
 }
-

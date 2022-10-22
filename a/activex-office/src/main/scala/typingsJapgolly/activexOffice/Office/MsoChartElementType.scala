@@ -1,521 +1,517 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1000`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1001`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`100`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`101`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`102`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`103`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`104`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`105`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`106`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1100`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1101`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1200`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1201`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`200`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`201`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`202`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`203`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`204`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`205`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`206`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`207`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`208`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`209`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`210`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`211`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`300`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`301`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`302`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`303`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`304`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`305`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`306`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`308`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`309`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`310`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`311`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`312`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`313`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`314`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`315`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`316`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`317`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`318`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`319`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`320`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`321`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`322`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`323`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`324`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`325`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`326`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`327`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`328`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`329`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`330`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`331`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`332`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`333`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`334`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`335`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`336`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`337`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`338`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`339`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`340`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`341`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`342`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`343`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`344`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`345`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`346`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`347`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`348`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`349`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`350`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`351`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`352`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`353`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`354`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`355`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`356`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`357`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`358`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`359`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`360`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`361`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`362`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`363`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`364`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`365`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`366`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`367`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`368`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`369`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`370`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`371`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`372`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`373`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`374`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`375`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`376`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`377`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`378`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`379`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`500`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`501`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`502`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`600`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`601`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`602`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`603`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`604`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`700`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`701`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`702`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`703`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`800`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`801`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`802`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`803`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`804`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`900`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`901`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1000`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1001`
+import typingsJapgolly.activexOffice.activexOfficeInts.`100`
+import typingsJapgolly.activexOffice.activexOfficeInts.`101`
+import typingsJapgolly.activexOffice.activexOfficeInts.`102`
+import typingsJapgolly.activexOffice.activexOfficeInts.`103`
+import typingsJapgolly.activexOffice.activexOfficeInts.`104`
+import typingsJapgolly.activexOffice.activexOfficeInts.`105`
+import typingsJapgolly.activexOffice.activexOfficeInts.`106`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1100`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1101`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1200`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1201`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`200`
+import typingsJapgolly.activexOffice.activexOfficeInts.`201`
+import typingsJapgolly.activexOffice.activexOfficeInts.`202`
+import typingsJapgolly.activexOffice.activexOfficeInts.`203`
+import typingsJapgolly.activexOffice.activexOfficeInts.`204`
+import typingsJapgolly.activexOffice.activexOfficeInts.`205`
+import typingsJapgolly.activexOffice.activexOfficeInts.`206`
+import typingsJapgolly.activexOffice.activexOfficeInts.`207`
+import typingsJapgolly.activexOffice.activexOfficeInts.`208`
+import typingsJapgolly.activexOffice.activexOfficeInts.`209`
+import typingsJapgolly.activexOffice.activexOfficeInts.`210`
+import typingsJapgolly.activexOffice.activexOfficeInts.`211`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`300`
+import typingsJapgolly.activexOffice.activexOfficeInts.`301`
+import typingsJapgolly.activexOffice.activexOfficeInts.`302`
+import typingsJapgolly.activexOffice.activexOfficeInts.`303`
+import typingsJapgolly.activexOffice.activexOfficeInts.`304`
+import typingsJapgolly.activexOffice.activexOfficeInts.`305`
+import typingsJapgolly.activexOffice.activexOfficeInts.`306`
+import typingsJapgolly.activexOffice.activexOfficeInts.`308`
+import typingsJapgolly.activexOffice.activexOfficeInts.`309`
+import typingsJapgolly.activexOffice.activexOfficeInts.`310`
+import typingsJapgolly.activexOffice.activexOfficeInts.`311`
+import typingsJapgolly.activexOffice.activexOfficeInts.`312`
+import typingsJapgolly.activexOffice.activexOfficeInts.`313`
+import typingsJapgolly.activexOffice.activexOfficeInts.`314`
+import typingsJapgolly.activexOffice.activexOfficeInts.`315`
+import typingsJapgolly.activexOffice.activexOfficeInts.`316`
+import typingsJapgolly.activexOffice.activexOfficeInts.`317`
+import typingsJapgolly.activexOffice.activexOfficeInts.`318`
+import typingsJapgolly.activexOffice.activexOfficeInts.`319`
+import typingsJapgolly.activexOffice.activexOfficeInts.`320`
+import typingsJapgolly.activexOffice.activexOfficeInts.`321`
+import typingsJapgolly.activexOffice.activexOfficeInts.`322`
+import typingsJapgolly.activexOffice.activexOfficeInts.`323`
+import typingsJapgolly.activexOffice.activexOfficeInts.`324`
+import typingsJapgolly.activexOffice.activexOfficeInts.`325`
+import typingsJapgolly.activexOffice.activexOfficeInts.`326`
+import typingsJapgolly.activexOffice.activexOfficeInts.`327`
+import typingsJapgolly.activexOffice.activexOfficeInts.`328`
+import typingsJapgolly.activexOffice.activexOfficeInts.`329`
+import typingsJapgolly.activexOffice.activexOfficeInts.`330`
+import typingsJapgolly.activexOffice.activexOfficeInts.`331`
+import typingsJapgolly.activexOffice.activexOfficeInts.`332`
+import typingsJapgolly.activexOffice.activexOfficeInts.`333`
+import typingsJapgolly.activexOffice.activexOfficeInts.`334`
+import typingsJapgolly.activexOffice.activexOfficeInts.`335`
+import typingsJapgolly.activexOffice.activexOfficeInts.`336`
+import typingsJapgolly.activexOffice.activexOfficeInts.`337`
+import typingsJapgolly.activexOffice.activexOfficeInts.`338`
+import typingsJapgolly.activexOffice.activexOfficeInts.`339`
+import typingsJapgolly.activexOffice.activexOfficeInts.`340`
+import typingsJapgolly.activexOffice.activexOfficeInts.`341`
+import typingsJapgolly.activexOffice.activexOfficeInts.`342`
+import typingsJapgolly.activexOffice.activexOfficeInts.`343`
+import typingsJapgolly.activexOffice.activexOfficeInts.`344`
+import typingsJapgolly.activexOffice.activexOfficeInts.`345`
+import typingsJapgolly.activexOffice.activexOfficeInts.`346`
+import typingsJapgolly.activexOffice.activexOfficeInts.`347`
+import typingsJapgolly.activexOffice.activexOfficeInts.`348`
+import typingsJapgolly.activexOffice.activexOfficeInts.`349`
+import typingsJapgolly.activexOffice.activexOfficeInts.`350`
+import typingsJapgolly.activexOffice.activexOfficeInts.`351`
+import typingsJapgolly.activexOffice.activexOfficeInts.`352`
+import typingsJapgolly.activexOffice.activexOfficeInts.`353`
+import typingsJapgolly.activexOffice.activexOfficeInts.`354`
+import typingsJapgolly.activexOffice.activexOfficeInts.`355`
+import typingsJapgolly.activexOffice.activexOfficeInts.`356`
+import typingsJapgolly.activexOffice.activexOfficeInts.`357`
+import typingsJapgolly.activexOffice.activexOfficeInts.`358`
+import typingsJapgolly.activexOffice.activexOfficeInts.`359`
+import typingsJapgolly.activexOffice.activexOfficeInts.`360`
+import typingsJapgolly.activexOffice.activexOfficeInts.`361`
+import typingsJapgolly.activexOffice.activexOfficeInts.`362`
+import typingsJapgolly.activexOffice.activexOfficeInts.`363`
+import typingsJapgolly.activexOffice.activexOfficeInts.`364`
+import typingsJapgolly.activexOffice.activexOfficeInts.`365`
+import typingsJapgolly.activexOffice.activexOfficeInts.`366`
+import typingsJapgolly.activexOffice.activexOfficeInts.`367`
+import typingsJapgolly.activexOffice.activexOfficeInts.`368`
+import typingsJapgolly.activexOffice.activexOfficeInts.`369`
+import typingsJapgolly.activexOffice.activexOfficeInts.`370`
+import typingsJapgolly.activexOffice.activexOfficeInts.`371`
+import typingsJapgolly.activexOffice.activexOfficeInts.`372`
+import typingsJapgolly.activexOffice.activexOfficeInts.`373`
+import typingsJapgolly.activexOffice.activexOfficeInts.`374`
+import typingsJapgolly.activexOffice.activexOfficeInts.`375`
+import typingsJapgolly.activexOffice.activexOfficeInts.`376`
+import typingsJapgolly.activexOffice.activexOfficeInts.`377`
+import typingsJapgolly.activexOffice.activexOfficeInts.`378`
+import typingsJapgolly.activexOffice.activexOfficeInts.`379`
+import typingsJapgolly.activexOffice.activexOfficeInts.`500`
+import typingsJapgolly.activexOffice.activexOfficeInts.`501`
+import typingsJapgolly.activexOffice.activexOfficeInts.`502`
+import typingsJapgolly.activexOffice.activexOfficeInts.`600`
+import typingsJapgolly.activexOffice.activexOfficeInts.`601`
+import typingsJapgolly.activexOffice.activexOfficeInts.`602`
+import typingsJapgolly.activexOffice.activexOfficeInts.`603`
+import typingsJapgolly.activexOffice.activexOfficeInts.`604`
+import typingsJapgolly.activexOffice.activexOfficeInts.`700`
+import typingsJapgolly.activexOffice.activexOfficeInts.`701`
+import typingsJapgolly.activexOffice.activexOfficeInts.`702`
+import typingsJapgolly.activexOffice.activexOfficeInts.`703`
+import typingsJapgolly.activexOffice.activexOfficeInts.`800`
+import typingsJapgolly.activexOffice.activexOfficeInts.`801`
+import typingsJapgolly.activexOffice.activexOfficeInts.`802`
+import typingsJapgolly.activexOffice.activexOfficeInts.`803`
+import typingsJapgolly.activexOffice.activexOfficeInts.`804`
+import typingsJapgolly.activexOffice.activexOfficeInts.`900`
+import typingsJapgolly.activexOffice.activexOfficeInts.`901`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1200`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1201`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1100`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1101`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`210`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`209`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`211`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`202`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`204`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`203`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`206`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`200`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`205`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`207`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`201`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`208`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`500`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`501`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`502`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`700`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`702`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`703`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`701`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`104`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`103`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`106`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`100`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`101`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`105`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`102`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`804`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`801`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`802`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`800`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`803`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1000`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1001`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`374`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`375`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`373`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`348`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`351`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`349`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`372`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`301`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`302`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`305`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`300`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`303`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`304`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`350`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`334`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`333`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`335`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`332`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`356`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`357`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`355`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`352`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`353`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`354`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`306`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`308`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`311`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`309`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`310`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`330`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`329`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`331`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`328`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`378`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`379`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`377`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`358`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`361`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`359`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`376`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`313`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`314`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`317`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`312`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`315`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`316`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`360`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`342`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`341`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`343`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`340`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`366`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`367`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`365`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`362`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`363`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`364`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`319`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`320`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`323`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`318`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`321`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`322`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`338`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`337`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`339`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`336`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`346`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`345`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`347`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`344`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`368`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`371`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`369`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`327`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`324`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`325`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`326`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`370`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`602`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`601`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`603`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`604`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`600`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`900`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`901`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1200`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1201`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1100`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1101`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`210`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`209`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`211`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`202`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`204`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`203`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`206`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`200`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`205`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`207`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`201`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`208`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`500`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`501`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`502`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`700`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`702`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`703`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`701`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`104`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`103`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`106`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`100`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`101`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`105`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`102`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`804`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`801`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`802`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`800`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`803`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1000`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1001`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`374`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`375`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`373`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`348`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`351`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`349`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`372`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`301`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`302`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`305`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`300`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`303`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`304`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`350`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`334`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`333`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`335`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`332`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`356`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`357`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`355`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`352`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`353`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`354`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`306`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`308`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`311`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`309`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`310`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`330`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`329`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`331`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`328`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`378`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`379`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`377`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`358`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`361`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`359`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`376`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`313`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`314`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`317`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`312`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`315`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`316`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`360`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`342`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`341`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`343`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`340`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`366`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`367`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`365`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`362`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`363`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`364`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`319`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`320`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`323`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`318`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`321`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`322`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`338`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`337`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`339`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`336`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`346`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`345`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`347`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`344`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`368`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`371`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`369`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`327`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`324`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`325`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`326`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`370`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`602`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`601`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`603`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`604`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`600`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`900`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`901`
 */
-trait MsoChartElementType extends js.Object
-
+trait MsoChartElementType extends StObject
 object MsoChartElementType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoElementChartFloorNone: `1200` = this.cast(1200)
-  @scala.inline
-  def msoElementChartFloorShow: `1201` = this.cast(1201)
-  @scala.inline
-  def msoElementChartTitleAboveChart: `2` = this.cast(2)
-  @scala.inline
-  def msoElementChartTitleCenteredOverlay: `1` = this.cast(1)
-  @scala.inline
-  def msoElementChartTitleNone: `0` = this.cast(0)
-  @scala.inline
-  def msoElementChartWallNone: `1100` = this.cast(1100)
-  @scala.inline
-  def msoElementChartWallShow: `1101` = this.cast(1101)
-  @scala.inline
-  def msoElementDataLabelBestFit: `210` = this.cast(210)
-  @scala.inline
-  def msoElementDataLabelBottom: `209` = this.cast(209)
-  @scala.inline
-  def msoElementDataLabelCallout: `211` = this.cast(211)
-  @scala.inline
-  def msoElementDataLabelCenter: `202` = this.cast(202)
-  @scala.inline
-  def msoElementDataLabelInsideBase: `204` = this.cast(204)
-  @scala.inline
-  def msoElementDataLabelInsideEnd: `203` = this.cast(203)
-  @scala.inline
-  def msoElementDataLabelLeft: `206` = this.cast(206)
-  @scala.inline
-  def msoElementDataLabelNone: `200` = this.cast(200)
-  @scala.inline
-  def msoElementDataLabelOutSideEnd: `205` = this.cast(205)
-  @scala.inline
-  def msoElementDataLabelRight: `207` = this.cast(207)
-  @scala.inline
-  def msoElementDataLabelShow: `201` = this.cast(201)
-  @scala.inline
-  def msoElementDataLabelTop: `208` = this.cast(208)
-  @scala.inline
-  def msoElementDataTableNone: `500` = this.cast(500)
-  @scala.inline
-  def msoElementDataTableShow: `501` = this.cast(501)
-  @scala.inline
-  def msoElementDataTableWithLegendKeys: `502` = this.cast(502)
-  @scala.inline
-  def msoElementErrorBarNone: `700` = this.cast(700)
-  @scala.inline
-  def msoElementErrorBarPercentage: `702` = this.cast(702)
-  @scala.inline
-  def msoElementErrorBarStandardDeviation: `703` = this.cast(703)
-  @scala.inline
-  def msoElementErrorBarStandardError: `701` = this.cast(701)
-  @scala.inline
-  def msoElementLegendBottom: `104` = this.cast(104)
-  @scala.inline
-  def msoElementLegendLeft: `103` = this.cast(103)
-  @scala.inline
-  def msoElementLegendLeftOverlay: `106` = this.cast(106)
-  @scala.inline
-  def msoElementLegendNone: `100` = this.cast(100)
-  @scala.inline
-  def msoElementLegendRight: `101` = this.cast(101)
-  @scala.inline
-  def msoElementLegendRightOverlay: `105` = this.cast(105)
-  @scala.inline
-  def msoElementLegendTop: `102` = this.cast(102)
-  @scala.inline
-  def msoElementLineDropHiLoLine: `804` = this.cast(804)
-  @scala.inline
-  def msoElementLineDropLine: `801` = this.cast(801)
-  @scala.inline
-  def msoElementLineHiLoLine: `802` = this.cast(802)
-  @scala.inline
-  def msoElementLineNone: `800` = this.cast(800)
-  @scala.inline
-  def msoElementLineSeriesLine: `803` = this.cast(803)
-  @scala.inline
-  def msoElementPlotAreaNone: `1000` = this.cast(1000)
-  @scala.inline
-  def msoElementPlotAreaShow: `1001` = this.cast(1001)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisBillions: `374` = this.cast(374)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisLogScale: `375` = this.cast(375)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisMillions: `373` = this.cast(373)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisNone: `348` = this.cast(348)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisReverse: `351` = this.cast(351)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisShow: `349` = this.cast(349)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisThousands: `372` = this.cast(372)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleAdjacentToAxis: `301` = this.cast(301)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleBelowAxis: `302` = this.cast(302)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleHorizontal: `305` = this.cast(305)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleNone: `300` = this.cast(300)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleRotated: `303` = this.cast(303)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisTitleVertical: `304` = this.cast(304)
-  @scala.inline
-  def msoElementPrimaryCategoryAxisWithoutLabels: `350` = this.cast(350)
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMajor: `334` = this.cast(334)
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMinor: `333` = this.cast(333)
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesMinorMajor: `335` = this.cast(335)
-  @scala.inline
-  def msoElementPrimaryCategoryGridLinesNone: `332` = this.cast(332)
-  @scala.inline
-  def msoElementPrimaryValueAxisBillions: `356` = this.cast(356)
-  @scala.inline
-  def msoElementPrimaryValueAxisLogScale: `357` = this.cast(357)
-  @scala.inline
-  def msoElementPrimaryValueAxisMillions: `355` = this.cast(355)
-  @scala.inline
-  def msoElementPrimaryValueAxisNone: `352` = this.cast(352)
-  @scala.inline
-  def msoElementPrimaryValueAxisShow: `353` = this.cast(353)
-  @scala.inline
-  def msoElementPrimaryValueAxisThousands: `354` = this.cast(354)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleAdjacentToAxis: `306` = this.cast(306)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleBelowAxis: `308` = this.cast(308)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleHorizontal: `311` = this.cast(311)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleNone: `306` = this.cast(306)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleRotated: `309` = this.cast(309)
-  @scala.inline
-  def msoElementPrimaryValueAxisTitleVertical: `310` = this.cast(310)
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMajor: `330` = this.cast(330)
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMinor: `329` = this.cast(329)
-  @scala.inline
-  def msoElementPrimaryValueGridLinesMinorMajor: `331` = this.cast(331)
-  @scala.inline
-  def msoElementPrimaryValueGridLinesNone: `328` = this.cast(328)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisBillions: `378` = this.cast(378)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisLogScale: `379` = this.cast(379)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisMillions: `377` = this.cast(377)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisNone: `358` = this.cast(358)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisReverse: `361` = this.cast(361)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisShow: `359` = this.cast(359)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisThousands: `376` = this.cast(376)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleAdjacentToAxis: `313` = this.cast(313)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleBelowAxis: `314` = this.cast(314)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleHorizontal: `317` = this.cast(317)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleNone: `312` = this.cast(312)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleRotated: `315` = this.cast(315)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisTitleVertical: `316` = this.cast(316)
-  @scala.inline
-  def msoElementSecondaryCategoryAxisWithoutLabels: `360` = this.cast(360)
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMajor: `342` = this.cast(342)
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMinor: `341` = this.cast(341)
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesMinorMajor: `343` = this.cast(343)
-  @scala.inline
-  def msoElementSecondaryCategoryGridLinesNone: `340` = this.cast(340)
-  @scala.inline
-  def msoElementSecondaryValueAxisBillions: `366` = this.cast(366)
-  @scala.inline
-  def msoElementSecondaryValueAxisLogScale: `367` = this.cast(367)
-  @scala.inline
-  def msoElementSecondaryValueAxisMillions: `365` = this.cast(365)
-  @scala.inline
-  def msoElementSecondaryValueAxisNone: `362` = this.cast(362)
-  @scala.inline
-  def msoElementSecondaryValueAxisShow: `363` = this.cast(363)
-  @scala.inline
-  def msoElementSecondaryValueAxisThousands: `364` = this.cast(364)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleAdjacentToAxis: `319` = this.cast(319)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleBelowAxis: `320` = this.cast(320)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleHorizontal: `323` = this.cast(323)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleNone: `318` = this.cast(318)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleRotated: `321` = this.cast(321)
-  @scala.inline
-  def msoElementSecondaryValueAxisTitleVertical: `322` = this.cast(322)
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMajor: `338` = this.cast(338)
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMinor: `337` = this.cast(337)
-  @scala.inline
-  def msoElementSecondaryValueGridLinesMinorMajor: `339` = this.cast(339)
-  @scala.inline
-  def msoElementSecondaryValueGridLinesNone: `336` = this.cast(336)
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMajor: `346` = this.cast(346)
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMinor: `345` = this.cast(345)
-  @scala.inline
-  def msoElementSeriesAxisGridLinesMinorMajor: `347` = this.cast(347)
-  @scala.inline
-  def msoElementSeriesAxisGridLinesNone: `344` = this.cast(344)
-  @scala.inline
-  def msoElementSeriesAxisNone: `368` = this.cast(368)
-  @scala.inline
-  def msoElementSeriesAxisReverse: `371` = this.cast(371)
-  @scala.inline
-  def msoElementSeriesAxisShow: `369` = this.cast(369)
-  @scala.inline
-  def msoElementSeriesAxisTitleHorizontal: `327` = this.cast(327)
-  @scala.inline
-  def msoElementSeriesAxisTitleNone: `324` = this.cast(324)
-  @scala.inline
-  def msoElementSeriesAxisTitleRotated: `325` = this.cast(325)
-  @scala.inline
-  def msoElementSeriesAxisTitleVertical: `326` = this.cast(326)
-  @scala.inline
-  def msoElementSeriesAxisWithoutLabeling: `370` = this.cast(370)
-  @scala.inline
-  def msoElementTrendlineAddExponential: `602` = this.cast(602)
-  @scala.inline
-  def msoElementTrendlineAddLinear: `601` = this.cast(601)
-  @scala.inline
-  def msoElementTrendlineAddLinearForecast: `603` = this.cast(603)
-  @scala.inline
-  def msoElementTrendlineAddTwoPeriodMovingAverage: `604` = this.cast(604)
-  @scala.inline
-  def msoElementTrendlineNone: `600` = this.cast(600)
-  @scala.inline
-  def msoElementUpDownBarsNone: `900` = this.cast(900)
-  @scala.inline
-  def msoElementUpDownBarsShow: `901` = this.cast(901)
+  
+  inline def msoElementChartFloorNone: `1200` = 1200.asInstanceOf[`1200`]
+  
+  inline def msoElementChartFloorShow: `1201` = 1201.asInstanceOf[`1201`]
+  
+  inline def msoElementChartTitleAboveChart: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoElementChartTitleCenteredOverlay: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoElementChartTitleNone: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoElementChartWallNone: `1100` = 1100.asInstanceOf[`1100`]
+  
+  inline def msoElementChartWallShow: `1101` = 1101.asInstanceOf[`1101`]
+  
+  inline def msoElementDataLabelBestFit: `210` = 210.asInstanceOf[`210`]
+  
+  inline def msoElementDataLabelBottom: `209` = 209.asInstanceOf[`209`]
+  
+  inline def msoElementDataLabelCallout: `211` = 211.asInstanceOf[`211`]
+  
+  inline def msoElementDataLabelCenter: `202` = 202.asInstanceOf[`202`]
+  
+  inline def msoElementDataLabelInsideBase: `204` = 204.asInstanceOf[`204`]
+  
+  inline def msoElementDataLabelInsideEnd: `203` = 203.asInstanceOf[`203`]
+  
+  inline def msoElementDataLabelLeft: `206` = 206.asInstanceOf[`206`]
+  
+  inline def msoElementDataLabelNone: `200` = 200.asInstanceOf[`200`]
+  
+  inline def msoElementDataLabelOutSideEnd: `205` = 205.asInstanceOf[`205`]
+  
+  inline def msoElementDataLabelRight: `207` = 207.asInstanceOf[`207`]
+  
+  inline def msoElementDataLabelShow: `201` = 201.asInstanceOf[`201`]
+  
+  inline def msoElementDataLabelTop: `208` = 208.asInstanceOf[`208`]
+  
+  inline def msoElementDataTableNone: `500` = 500.asInstanceOf[`500`]
+  
+  inline def msoElementDataTableShow: `501` = 501.asInstanceOf[`501`]
+  
+  inline def msoElementDataTableWithLegendKeys: `502` = 502.asInstanceOf[`502`]
+  
+  inline def msoElementErrorBarNone: `700` = 700.asInstanceOf[`700`]
+  
+  inline def msoElementErrorBarPercentage: `702` = 702.asInstanceOf[`702`]
+  
+  inline def msoElementErrorBarStandardDeviation: `703` = 703.asInstanceOf[`703`]
+  
+  inline def msoElementErrorBarStandardError: `701` = 701.asInstanceOf[`701`]
+  
+  inline def msoElementLegendBottom: `104` = 104.asInstanceOf[`104`]
+  
+  inline def msoElementLegendLeft: `103` = 103.asInstanceOf[`103`]
+  
+  inline def msoElementLegendLeftOverlay: `106` = 106.asInstanceOf[`106`]
+  
+  inline def msoElementLegendNone: `100` = 100.asInstanceOf[`100`]
+  
+  inline def msoElementLegendRight: `101` = 101.asInstanceOf[`101`]
+  
+  inline def msoElementLegendRightOverlay: `105` = 105.asInstanceOf[`105`]
+  
+  inline def msoElementLegendTop: `102` = 102.asInstanceOf[`102`]
+  
+  inline def msoElementLineDropHiLoLine: `804` = 804.asInstanceOf[`804`]
+  
+  inline def msoElementLineDropLine: `801` = 801.asInstanceOf[`801`]
+  
+  inline def msoElementLineHiLoLine: `802` = 802.asInstanceOf[`802`]
+  
+  inline def msoElementLineNone: `800` = 800.asInstanceOf[`800`]
+  
+  inline def msoElementLineSeriesLine: `803` = 803.asInstanceOf[`803`]
+  
+  inline def msoElementPlotAreaNone: `1000` = 1000.asInstanceOf[`1000`]
+  
+  inline def msoElementPlotAreaShow: `1001` = 1001.asInstanceOf[`1001`]
+  
+  inline def msoElementPrimaryCategoryAxisBillions: `374` = 374.asInstanceOf[`374`]
+  
+  inline def msoElementPrimaryCategoryAxisLogScale: `375` = 375.asInstanceOf[`375`]
+  
+  inline def msoElementPrimaryCategoryAxisMillions: `373` = 373.asInstanceOf[`373`]
+  
+  inline def msoElementPrimaryCategoryAxisNone: `348` = 348.asInstanceOf[`348`]
+  
+  inline def msoElementPrimaryCategoryAxisReverse: `351` = 351.asInstanceOf[`351`]
+  
+  inline def msoElementPrimaryCategoryAxisShow: `349` = 349.asInstanceOf[`349`]
+  
+  inline def msoElementPrimaryCategoryAxisThousands: `372` = 372.asInstanceOf[`372`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleAdjacentToAxis: `301` = 301.asInstanceOf[`301`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleBelowAxis: `302` = 302.asInstanceOf[`302`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleHorizontal: `305` = 305.asInstanceOf[`305`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleNone: `300` = 300.asInstanceOf[`300`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleRotated: `303` = 303.asInstanceOf[`303`]
+  
+  inline def msoElementPrimaryCategoryAxisTitleVertical: `304` = 304.asInstanceOf[`304`]
+  
+  inline def msoElementPrimaryCategoryAxisWithoutLabels: `350` = 350.asInstanceOf[`350`]
+  
+  inline def msoElementPrimaryCategoryGridLinesMajor: `334` = 334.asInstanceOf[`334`]
+  
+  inline def msoElementPrimaryCategoryGridLinesMinor: `333` = 333.asInstanceOf[`333`]
+  
+  inline def msoElementPrimaryCategoryGridLinesMinorMajor: `335` = 335.asInstanceOf[`335`]
+  
+  inline def msoElementPrimaryCategoryGridLinesNone: `332` = 332.asInstanceOf[`332`]
+  
+  inline def msoElementPrimaryValueAxisBillions: `356` = 356.asInstanceOf[`356`]
+  
+  inline def msoElementPrimaryValueAxisLogScale: `357` = 357.asInstanceOf[`357`]
+  
+  inline def msoElementPrimaryValueAxisMillions: `355` = 355.asInstanceOf[`355`]
+  
+  inline def msoElementPrimaryValueAxisNone: `352` = 352.asInstanceOf[`352`]
+  
+  inline def msoElementPrimaryValueAxisShow: `353` = 353.asInstanceOf[`353`]
+  
+  inline def msoElementPrimaryValueAxisThousands: `354` = 354.asInstanceOf[`354`]
+  
+  inline def msoElementPrimaryValueAxisTitleAdjacentToAxis: `306` = 306.asInstanceOf[`306`]
+  
+  inline def msoElementPrimaryValueAxisTitleBelowAxis: `308` = 308.asInstanceOf[`308`]
+  
+  inline def msoElementPrimaryValueAxisTitleHorizontal: `311` = 311.asInstanceOf[`311`]
+  
+  inline def msoElementPrimaryValueAxisTitleNone: `306` = 306.asInstanceOf[`306`]
+  
+  inline def msoElementPrimaryValueAxisTitleRotated: `309` = 309.asInstanceOf[`309`]
+  
+  inline def msoElementPrimaryValueAxisTitleVertical: `310` = 310.asInstanceOf[`310`]
+  
+  inline def msoElementPrimaryValueGridLinesMajor: `330` = 330.asInstanceOf[`330`]
+  
+  inline def msoElementPrimaryValueGridLinesMinor: `329` = 329.asInstanceOf[`329`]
+  
+  inline def msoElementPrimaryValueGridLinesMinorMajor: `331` = 331.asInstanceOf[`331`]
+  
+  inline def msoElementPrimaryValueGridLinesNone: `328` = 328.asInstanceOf[`328`]
+  
+  inline def msoElementSecondaryCategoryAxisBillions: `378` = 378.asInstanceOf[`378`]
+  
+  inline def msoElementSecondaryCategoryAxisLogScale: `379` = 379.asInstanceOf[`379`]
+  
+  inline def msoElementSecondaryCategoryAxisMillions: `377` = 377.asInstanceOf[`377`]
+  
+  inline def msoElementSecondaryCategoryAxisNone: `358` = 358.asInstanceOf[`358`]
+  
+  inline def msoElementSecondaryCategoryAxisReverse: `361` = 361.asInstanceOf[`361`]
+  
+  inline def msoElementSecondaryCategoryAxisShow: `359` = 359.asInstanceOf[`359`]
+  
+  inline def msoElementSecondaryCategoryAxisThousands: `376` = 376.asInstanceOf[`376`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleAdjacentToAxis: `313` = 313.asInstanceOf[`313`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleBelowAxis: `314` = 314.asInstanceOf[`314`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleHorizontal: `317` = 317.asInstanceOf[`317`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleNone: `312` = 312.asInstanceOf[`312`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleRotated: `315` = 315.asInstanceOf[`315`]
+  
+  inline def msoElementSecondaryCategoryAxisTitleVertical: `316` = 316.asInstanceOf[`316`]
+  
+  inline def msoElementSecondaryCategoryAxisWithoutLabels: `360` = 360.asInstanceOf[`360`]
+  
+  inline def msoElementSecondaryCategoryGridLinesMajor: `342` = 342.asInstanceOf[`342`]
+  
+  inline def msoElementSecondaryCategoryGridLinesMinor: `341` = 341.asInstanceOf[`341`]
+  
+  inline def msoElementSecondaryCategoryGridLinesMinorMajor: `343` = 343.asInstanceOf[`343`]
+  
+  inline def msoElementSecondaryCategoryGridLinesNone: `340` = 340.asInstanceOf[`340`]
+  
+  inline def msoElementSecondaryValueAxisBillions: `366` = 366.asInstanceOf[`366`]
+  
+  inline def msoElementSecondaryValueAxisLogScale: `367` = 367.asInstanceOf[`367`]
+  
+  inline def msoElementSecondaryValueAxisMillions: `365` = 365.asInstanceOf[`365`]
+  
+  inline def msoElementSecondaryValueAxisNone: `362` = 362.asInstanceOf[`362`]
+  
+  inline def msoElementSecondaryValueAxisShow: `363` = 363.asInstanceOf[`363`]
+  
+  inline def msoElementSecondaryValueAxisThousands: `364` = 364.asInstanceOf[`364`]
+  
+  inline def msoElementSecondaryValueAxisTitleAdjacentToAxis: `319` = 319.asInstanceOf[`319`]
+  
+  inline def msoElementSecondaryValueAxisTitleBelowAxis: `320` = 320.asInstanceOf[`320`]
+  
+  inline def msoElementSecondaryValueAxisTitleHorizontal: `323` = 323.asInstanceOf[`323`]
+  
+  inline def msoElementSecondaryValueAxisTitleNone: `318` = 318.asInstanceOf[`318`]
+  
+  inline def msoElementSecondaryValueAxisTitleRotated: `321` = 321.asInstanceOf[`321`]
+  
+  inline def msoElementSecondaryValueAxisTitleVertical: `322` = 322.asInstanceOf[`322`]
+  
+  inline def msoElementSecondaryValueGridLinesMajor: `338` = 338.asInstanceOf[`338`]
+  
+  inline def msoElementSecondaryValueGridLinesMinor: `337` = 337.asInstanceOf[`337`]
+  
+  inline def msoElementSecondaryValueGridLinesMinorMajor: `339` = 339.asInstanceOf[`339`]
+  
+  inline def msoElementSecondaryValueGridLinesNone: `336` = 336.asInstanceOf[`336`]
+  
+  inline def msoElementSeriesAxisGridLinesMajor: `346` = 346.asInstanceOf[`346`]
+  
+  inline def msoElementSeriesAxisGridLinesMinor: `345` = 345.asInstanceOf[`345`]
+  
+  inline def msoElementSeriesAxisGridLinesMinorMajor: `347` = 347.asInstanceOf[`347`]
+  
+  inline def msoElementSeriesAxisGridLinesNone: `344` = 344.asInstanceOf[`344`]
+  
+  inline def msoElementSeriesAxisNone: `368` = 368.asInstanceOf[`368`]
+  
+  inline def msoElementSeriesAxisReverse: `371` = 371.asInstanceOf[`371`]
+  
+  inline def msoElementSeriesAxisShow: `369` = 369.asInstanceOf[`369`]
+  
+  inline def msoElementSeriesAxisTitleHorizontal: `327` = 327.asInstanceOf[`327`]
+  
+  inline def msoElementSeriesAxisTitleNone: `324` = 324.asInstanceOf[`324`]
+  
+  inline def msoElementSeriesAxisTitleRotated: `325` = 325.asInstanceOf[`325`]
+  
+  inline def msoElementSeriesAxisTitleVertical: `326` = 326.asInstanceOf[`326`]
+  
+  inline def msoElementSeriesAxisWithoutLabeling: `370` = 370.asInstanceOf[`370`]
+  
+  inline def msoElementTrendlineAddExponential: `602` = 602.asInstanceOf[`602`]
+  
+  inline def msoElementTrendlineAddLinear: `601` = 601.asInstanceOf[`601`]
+  
+  inline def msoElementTrendlineAddLinearForecast: `603` = 603.asInstanceOf[`603`]
+  
+  inline def msoElementTrendlineAddTwoPeriodMovingAverage: `604` = 604.asInstanceOf[`604`]
+  
+  inline def msoElementTrendlineNone: `600` = 600.asInstanceOf[`600`]
+  
+  inline def msoElementUpDownBarsNone: `900` = 900.asInstanceOf[`900`]
+  
+  inline def msoElementUpDownBarsShow: `901` = 901.asInstanceOf[`901`]
 }
-

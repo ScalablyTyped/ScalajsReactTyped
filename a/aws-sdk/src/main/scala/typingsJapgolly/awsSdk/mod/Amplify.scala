@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.amplifyMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsAmplifyMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Amplify")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Amplify ()
-  extends typingsJapgolly.awsSdk.allMod.Amplify {
+open class Amplify ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.Amplify {
   def this(options: ClientConfiguration) = this()
 }
-

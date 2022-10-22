@@ -1,20 +1,23 @@
 package typingsJapgolly.coreJs
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Map[K, V] extends js.Object {
-  def toJSON(): js.Any
+trait Map[K, V] extends StObject {
+  
+  def toJSON(): Any
 }
-
 object Map {
-  @scala.inline
-  def apply[K, V](toJSON: CallbackTo[js.Any]): Map[K, V] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("toJSON")(toJSON.toJsFn)
+  
+  inline def apply[K, V](toJSON: CallbackTo[Any]): Map[K, V] = {
+    val __obj = js.Dynamic.literal(toJSON = toJSON.toJsFn)
     __obj.asInstanceOf[Map[K, V]]
   }
+  
+  extension [Self <: Map[?, ?], K, V](x: Self & (Map[K, V])) {
+    
+    inline def setToJSON(value: CallbackTo[Any]): Self = StObject.set(x, "toJSON", value.toJsFn)
+  }
 }
-

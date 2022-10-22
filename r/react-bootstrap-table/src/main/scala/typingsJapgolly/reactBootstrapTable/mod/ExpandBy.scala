@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.row
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.column
 */
-trait ExpandBy extends js.Object
-
+trait ExpandBy extends StObject
 object ExpandBy {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def column: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.column = this.cast("column")
-  @scala.inline
-  def row: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.row = this.cast("row")
+  
+  inline def column: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.column = "column".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.column]
+  
+  inline def row: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.row = "row".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.row]
 }
-

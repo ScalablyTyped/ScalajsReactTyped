@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.navigator
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.rangeSelectorInput
   - typingsJapgolly.highcharts.highchartsStrings.traverseUpButton
 */
-trait AxisExtremesTriggerValue extends js.Object
-
+trait AxisExtremesTriggerValue extends StObject
 object AxisExtremesTriggerValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def navigator: typingsJapgolly.highcharts.highchartsStrings.navigator = this.cast("navigator")
-  @scala.inline
-  def pan: typingsJapgolly.highcharts.highchartsStrings.pan = this.cast("pan")
-  @scala.inline
-  def rangeSelectorButton: typingsJapgolly.highcharts.highchartsStrings.rangeSelectorButton = this.cast("rangeSelectorButton")
-  @scala.inline
-  def rangeSelectorInput: typingsJapgolly.highcharts.highchartsStrings.rangeSelectorInput = this.cast("rangeSelectorInput")
-  @scala.inline
-  def scrollbar: typingsJapgolly.highcharts.highchartsStrings.scrollbar = this.cast("scrollbar")
-  @scala.inline
-  def traverseUpButton: typingsJapgolly.highcharts.highchartsStrings.traverseUpButton = this.cast("traverseUpButton")
-  @scala.inline
-  def zoom: typingsJapgolly.highcharts.highchartsStrings.zoom = this.cast("zoom")
+  
+  inline def navigator: typingsJapgolly.highcharts.highchartsStrings.navigator = "navigator".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.navigator]
+  
+  inline def pan: typingsJapgolly.highcharts.highchartsStrings.pan = "pan".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.pan]
+  
+  inline def rangeSelectorButton: typingsJapgolly.highcharts.highchartsStrings.rangeSelectorButton = "rangeSelectorButton".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.rangeSelectorButton]
+  
+  inline def rangeSelectorInput: typingsJapgolly.highcharts.highchartsStrings.rangeSelectorInput = "rangeSelectorInput".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.rangeSelectorInput]
+  
+  inline def scrollbar: typingsJapgolly.highcharts.highchartsStrings.scrollbar = "scrollbar".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.scrollbar]
+  
+  inline def traverseUpButton: typingsJapgolly.highcharts.highchartsStrings.traverseUpButton = "traverseUpButton".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.traverseUpButton]
+  
+  inline def zoom: typingsJapgolly.highcharts.highchartsStrings.zoom = "zoom".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.zoom]
 }
-

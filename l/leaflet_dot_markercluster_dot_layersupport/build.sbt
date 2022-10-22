@@ -1,17 +1,15 @@
 organization := "org.scalablytyped.japgolly"
 name := "leaflet_dot_markercluster_dot_layersupport"
-version := "1.0-dt-20180214Z-4bdf09"
-scalaVersion := "2.13.1"
+version := "1.0-dt-20211202Z-45b277"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "geojson" % "7946.0-dt-20190925Z-98b022",
-  "org.scalablytyped.japgolly" %%% "leaflet" % "1.5-dt-20200227Z-3267a5",
-  "org.scalablytyped.japgolly" %%% "leaflet_dot_markercluster" % "1.4-dt-20191223Z-998fd3",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "geojson" % "7946.0-dt-20220713Z-3b0707",
+  "org.scalablytyped.japgolly" %%% "leaflet" % "1.9-dt-20221015Z-4a6cb7",
+  "org.scalablytyped.japgolly" %%% "leaflet_dot_markercluster" % "1.5-dt-20220627Z-0f50b2",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

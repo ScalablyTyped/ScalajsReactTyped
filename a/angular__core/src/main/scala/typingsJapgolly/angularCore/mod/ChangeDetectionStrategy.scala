@@ -1,22 +1,27 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChangeDetectionStrategy extends js.Object
-
+sealed trait ChangeDetectionStrategy extends StObject
 @JSImport("@angular/core", "ChangeDetectionStrategy")
 @js.native
-object ChangeDetectionStrategy extends js.Object {
+object ChangeDetectionStrategy extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ChangeDetectionStrategy & Double] = js.native
+  
   /**
     * Use the default `CheckAlways` strategy, in which change detection is automatic until
     * explicitly deactivated.
     */
   @js.native
-  sealed trait Default extends ChangeDetectionStrategy
+  sealed trait Default
+    extends StObject
+       with ChangeDetectionStrategy
+  /* 1 */ val Default: typingsJapgolly.angularCore.mod.ChangeDetectionStrategy.Default & Double = js.native
   
   /**
     * Use the `CheckOnce` strategy, meaning that automatic change detection is deactivated
@@ -25,15 +30,8 @@ object ChangeDetectionStrategy extends js.Object {
     * This strategy applies to all child directives and cannot be overridden.
     */
   @js.native
-  sealed trait OnPush extends ChangeDetectionStrategy
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChangeDetectionStrategy with Double] = js.native
-  /* 1 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 0 */ @js.native
-  object OnPush extends TopLevel[OnPush with Double]
-  
+  sealed trait OnPush
+    extends StObject
+       with ChangeDetectionStrategy
+  /* 0 */ val OnPush: typingsJapgolly.angularCore.mod.ChangeDetectionStrategy.OnPush & Double = js.native
 }
-

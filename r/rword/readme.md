@@ -1,7 +1,7 @@
 
 # Scala.js typings for rword
 
-Typings are for version 3.1.1
+Typings are for version 3.2.1
 
 ## Library description:
 A cryptographically secure random generator for real English words. Contains 370,000 words.
@@ -10,15 +10,15 @@ A cryptographically secure random generator for real English words. Contains 370
 | ------------------ | :-------------: |
 | Full name          | rword |
 | Keywords           | random, randomly, generate, generated, generator, words, word, english, real, cryptographically secure, csprng, cprng |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 12905 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9041.333333333334 |
+| # stars            | 102.0 |
 
 ## Links
-- [Homepage](https://github.com/Xyfir/rword#readme)
-- [Bugs](https://github.com/Xyfir/rword/issues)
-- [Repository](https://github.com/Xyfir/rword)
+- [Homepage](https://github.com/xyfir/rword#readme)
+- [Bugs](https://github.com/xyfir/rword/issues)
+- [Repository](https://github.com/xyfir/rword)
 - [Npm](https://www.npmjs.com/package/rword)
     
 

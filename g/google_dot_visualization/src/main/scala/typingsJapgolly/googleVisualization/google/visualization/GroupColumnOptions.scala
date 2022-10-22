@@ -1,33 +1,43 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GroupColumnOptions extends js.Object {
+trait GroupColumnOptions extends StObject {
+  
+  def aggregation(values: js.Array[Any]): Any
+  
   var column: Double
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var `type`: String
-  def aggregation(values: js.Array[_]): js.Any
 }
-
 object GroupColumnOptions {
-  @scala.inline
-  def apply(
-    aggregation: js.Array[js.Any] => CallbackTo[js.Any],
-    column: Double,
-    `type`: String,
-    id: String = null,
-    label: String = null
-  ): GroupColumnOptions = {
-    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any])
-    __obj.updateDynamic("aggregation")(js.Any.fromFunction1((t0: js.Array[js.Any]) => aggregation(t0).runNow()))
+  
+  inline def apply(aggregation: js.Array[Any] => Any, column: Double, `type`: String): GroupColumnOptions = {
+    val __obj = js.Dynamic.literal(aggregation = js.Any.fromFunction1(aggregation), column = column.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupColumnOptions]
   }
+  
+  extension [Self <: GroupColumnOptions](x: Self) {
+    
+    inline def setAggregation(value: js.Array[Any] => Any): Self = StObject.set(x, "aggregation", js.Any.fromFunction1(value))
+    
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

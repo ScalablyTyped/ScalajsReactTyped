@@ -1,24 +1,24 @@
 
 # Scala.js typings for email-templates
 
-Typings are for version 6.0
+Typings are for version 10.0
 
 ## Library description:
-Create, preview, and send custom email templates for Node.js. Highly configurable and supports automatic inline CSS, stylesheets, embedded images and fonts, and much more! Made for sending beautiful emails with Lad.
+Create, preview, and send custom email templates for Node.js. Highly configurable and supports automatic inline CSS, stylesheets, embedded images and fonts, and much more! Made for Forward Email and Lad.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | email-templates |
 | Keywords           | consolidate, email, engine, koa, lad, lass, mailchimp, mailgun, mandrill, moonmail, nodemailer, postmark, pug, sendgrid, template, templates, transport |
-| # releases         | 32 |
-| # dependents       | 132 |
-| # downloads        | 2469400 |
-| # stars            | 53 |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 384290.6666666667 |
+| # stars            | 3418.0 |
 
 ## Links
-- [Homepage](https://github.com/niftylettuce/email-templates)
-- [Bugs](https://github.com/niftylettuce/email-templates/issues)
-- [Repository](https://github.com/niftylettuce/email-templates)
+- [Homepage](https://github.com/forwardemail/email-templates)
+- [Bugs](https://github.com/forwardemail/email-templates/issues)
+- [Repository](https://github.com/forwardemail/email-templates)
 - [Npm](https://www.npmjs.com/package/email-templates)
     
 

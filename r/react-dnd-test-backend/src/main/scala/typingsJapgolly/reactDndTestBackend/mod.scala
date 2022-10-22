@@ -1,15 +1,22 @@
 package typingsJapgolly.reactDndTestBackend
 
-import typingsJapgolly.dndCore.interfacesMod.BackendFactory
+import typingsJapgolly.dndCore.distInterfacesMod.BackendFactory
+import typingsJapgolly.dndCore.distInterfacesMod.DragDropManager
+import typingsJapgolly.reactDndTestBackend.distTypesMod.TestBackendContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-dnd-test-backend", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val default: BackendFactory = js.native
-  def clearInstance(): Unit = js.native
-  def getInstance(): js.UndefOr[typingsJapgolly.reactDndTestBackend.testBackendMod.default] = js.native
+object mod {
+  
+  @JSImport("react-dnd-test-backend", "TestBackend")
+  @js.native
+  val TestBackend: BackendFactory = js.native
+  
+  @JSImport("react-dnd-test-backend", "TestBackendImpl")
+  @js.native
+  open class TestBackendImpl protected ()
+    extends typingsJapgolly.reactDndTestBackend.distTestBackendMod.TestBackendImpl {
+    def this(manager: DragDropManager, context: TestBackendContext) = this()
+  }
 }
-

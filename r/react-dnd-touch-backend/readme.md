@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd-touch-backend
 
-Typings are for version 9.5.1
+Typings are for version 16.0.1
 
 ## Library description:
 Touch backend for react-dnd
@@ -10,10 +10,10 @@ Touch backend for react-dnd
 | ------------------ | :-------------: |
 | Full name          | react-dnd-touch-backend |
 | Keywords           | - |
-| # releases         | 27 |
-| # dependents       | 44 |
-| # downloads        | 1925749 |
-| # stars            | 1 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 1043034.6666666666 |
+| # stars            | 17806.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dnd/react-dnd#readme)

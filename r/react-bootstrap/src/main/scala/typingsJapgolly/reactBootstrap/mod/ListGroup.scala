@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.listGroupMod.ListGroupProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "ListGroup")
 @js.native
-class ListGroup ()
-  extends Component[ListGroupProps, js.Object, js.Any]
-
+open class ListGroup ()
+  extends typingsJapgolly.reactBootstrap.libMod.ListGroup

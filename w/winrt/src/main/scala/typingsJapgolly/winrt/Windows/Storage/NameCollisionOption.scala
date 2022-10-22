@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NameCollisionOption extends js.Object
-
+sealed trait NameCollisionOption extends StObject
 @JSGlobal("Windows.Storage.NameCollisionOption")
 @js.native
-object NameCollisionOption extends js.Object {
-  @js.native
-  sealed trait failIfExists extends NameCollisionOption
+object NameCollisionOption extends StObject {
   
   @js.native
-  sealed trait generateUniqueName extends NameCollisionOption
+  sealed trait failIfExists
+    extends StObject
+       with NameCollisionOption
   
   @js.native
-  sealed trait replaceExisting extends NameCollisionOption
+  sealed trait generateUniqueName
+    extends StObject
+       with NameCollisionOption
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NameCollisionOption with Double] = js.native
-  /* 2 */ @js.native
-  object failIfExists extends TopLevel[failIfExists with Double]
-  
-  /* 0 */ @js.native
-  object generateUniqueName extends TopLevel[generateUniqueName with Double]
-  
-  /* 1 */ @js.native
-  object replaceExisting extends TopLevel[replaceExisting with Double]
-  
+  @js.native
+  sealed trait replaceExisting
+    extends StObject
+       with NameCollisionOption
 }
-

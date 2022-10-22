@@ -1,39 +1,53 @@
 package typingsJapgolly.webidl2.mod
 
-import typingsJapgolly.webidl2.webidl2Strings.`callback interface`
 import typingsJapgolly.webidl2.webidl2Strings.interface
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InterfaceType extends IDLRootType {
-  /** A list of extended attributes. */
-  var extAttrs: js.Array[ExtendedAttribute]
+trait InterfaceType
+  extends StObject
+     with AbstractContainer
+     with IDLRootType {
+  
   /** A string giving the name of an interface this one inherits from, null otherwise. */
   var inheritance: String | Null
-  /** An array of interface members (attributes, operations, etc.). Empty if there are none. */
-  var members: js.Array[IDLInterfaceMemberType]
-  /** The name of the interface */
-  var name: String
-  /** A boolean indicating whether it's a partial interface. */
-  var partial: Boolean
-  var `type`: interface | (`callback interface`)
+  
+  @JSName("members")
+  var members_InterfaceType: js.Array[IDLInterfaceMemberType]
+  
+  @JSName("parent")
+  var parent_InterfaceType: Null
+  
+  @JSName("type")
+  var type_InterfaceType: interface
 }
-
 object InterfaceType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     members: js.Array[IDLInterfaceMemberType],
     name: String,
-    partial: Boolean,
-    `type`: interface | (`callback interface`),
-    inheritance: String = null
+    parent: Null,
+    partial: Boolean
   ): InterfaceType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (inheritance != null) __obj.updateDynamic("inheritance")(inheritance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], inheritance = null)
+    __obj.updateDynamic("type")("interface")
     __obj.asInstanceOf[InterfaceType]
   }
+  
+  extension [Self <: InterfaceType](x: Self) {
+    
+    inline def setInheritance(value: String): Self = StObject.set(x, "inheritance", value.asInstanceOf[js.Any])
+    
+    inline def setInheritanceNull: Self = StObject.set(x, "inheritance", null)
+    
+    inline def setMembers(value: js.Array[IDLInterfaceMemberType]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: IDLInterfaceMemberType*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: interface): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

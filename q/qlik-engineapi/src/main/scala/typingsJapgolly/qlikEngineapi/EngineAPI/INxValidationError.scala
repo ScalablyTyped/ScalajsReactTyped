@@ -1,13 +1,14 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxValidationError...
   */
-trait INxValidationError extends js.Object {
+trait INxValidationError extends StObject {
+  
   /**
     * Context related to the error, from the user app domain.
     * It can be the identifier of an object, a field name, a table name.
@@ -15,12 +16,14 @@ trait INxValidationError extends js.Object {
     * String
     */
   var qContext: js.UndefOr[String] = js.undefined
+  
   /**
     * Error code.
     * This parameter is always displayed in case of error.
     * Integer
     */
   var qErrorCode: Double
+  
   /**
     * Internal information from the server.
     * This parameter is optional.
@@ -28,14 +31,23 @@ trait INxValidationError extends js.Object {
     */
   var qExtendedMessage: js.UndefOr[String] = js.undefined
 }
-
 object INxValidationError {
-  @scala.inline
-  def apply(qErrorCode: Double, qContext: String = null, qExtendedMessage: String = null): INxValidationError = {
+  
+  inline def apply(qErrorCode: Double): INxValidationError = {
     val __obj = js.Dynamic.literal(qErrorCode = qErrorCode.asInstanceOf[js.Any])
-    if (qContext != null) __obj.updateDynamic("qContext")(qContext.asInstanceOf[js.Any])
-    if (qExtendedMessage != null) __obj.updateDynamic("qExtendedMessage")(qExtendedMessage.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxValidationError]
   }
+  
+  extension [Self <: INxValidationError](x: Self) {
+    
+    inline def setQContext(value: String): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
+    
+    inline def setQContextUndefined: Self = StObject.set(x, "qContext", js.undefined)
+    
+    inline def setQErrorCode(value: Double): Self = StObject.set(x, "qErrorCode", value.asInstanceOf[js.Any])
+    
+    inline def setQExtendedMessage(value: String): Self = StObject.set(x, "qExtendedMessage", value.asInstanceOf[js.Any])
+    
+    inline def setQExtendedMessageUndefined: Self = StObject.set(x, "qExtendedMessage", js.undefined)
+  }
 }
-

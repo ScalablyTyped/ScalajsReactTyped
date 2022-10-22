@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsElliottWaveControlPointOptions extends js.Object {
-  var events: js.UndefOr[js.Any] = js.undefined
+trait AnnotationsElliottWaveControlPointOptions extends StObject {
+  
+  var events: js.UndefOr[Any] = js.undefined
 }
-
 object AnnotationsElliottWaveControlPointOptions {
-  @scala.inline
-  def apply(events: js.Any = null): AnnotationsElliottWaveControlPointOptions = {
+  
+  inline def apply(): AnnotationsElliottWaveControlPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsElliottWaveControlPointOptions]
   }
+  
+  extension [Self <: AnnotationsElliottWaveControlPointOptions](x: Self) {
+    
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+  }
 }
-

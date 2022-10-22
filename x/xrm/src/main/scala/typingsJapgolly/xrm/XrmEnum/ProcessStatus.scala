@@ -3,9 +3,9 @@ package typingsJapgolly.xrm.XrmEnum
 import typingsJapgolly.xrm.xrmStrings.aborted
 import typingsJapgolly.xrm.xrmStrings.active
 import typingsJapgolly.xrm.xrmStrings.finished
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Status for {@link ProcessFlow.Process.getStatus Process.getStatus()}.
@@ -16,16 +16,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.aborted
   - typingsJapgolly.xrm.xrmStrings.finished
 */
-trait ProcessStatus extends js.Object
-
+trait ProcessStatus extends StObject
 object ProcessStatus {
-  @scala.inline
-  def Aborted: aborted = this.cast("aborted")
-  @scala.inline
-  def Active: active = this.cast("active")
-  @scala.inline
-  def Finished: finished = this.cast("finished")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Aborted: aborted = "aborted".asInstanceOf[aborted]
+  
+  inline def Active: active = "active".asInstanceOf[active]
+  
+  inline def Finished: finished = "finished".asInstanceOf[finished]
 }
-

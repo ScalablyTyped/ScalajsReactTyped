@@ -1,32 +1,31 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.attribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AttributeNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
+  
   var content: String
+  
   var `type`: attribute
 }
-
 object AttributeNode {
-  @scala.inline
-  def apply(
-    content: String,
-    `type`: attribute,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): AttributeNode = {
+  
+  inline def apply(content: String): AttributeNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("attribute")
     __obj.asInstanceOf[AttributeNode]
   }
+  
+  extension [Self <: AttributeNode](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: attribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

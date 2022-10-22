@@ -1,28 +1,27 @@
 package typingsJapgolly.materialDrawer
 
-import typingsJapgolly.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation
+import typingsJapgolly.materialDrawer.anon.PartialMDCDrawerAdapter
+import typingsJapgolly.materialDrawer.dismissibleFoundationMod.MDCDismissibleDrawerFoundation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/drawer/modal/foundation", JSImport.Namespace)
-@js.native
-object modalFoundationMod extends js.Object {
+object modalFoundationMod {
+  
+  @JSImport("@material/drawer/modal/foundation", JSImport.Default)
   @js.native
-  class MDCModalDrawerFoundation () extends MDCDismissibleDrawerFoundation {
-    /**
-      * Called when drawer finishes close animation.
-      */
-    def closed(): Unit = js.native
+  open class default () extends MDCModalDrawerFoundation {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
+  }
+  
+  @JSImport("@material/drawer/modal/foundation", "MDCModalDrawerFoundation")
+  @js.native
+  open class MDCModalDrawerFoundation () extends MDCDismissibleDrawerFoundation {
+    def this(adapter: PartialMDCDrawerAdapter) = this()
+    
     /**
       * Handles click event on scrim.
       */
     def handleScrimClick(): Unit = js.native
-    /**
-      * Called when drawer finishes open animation.
-      */
-    def opened(): Unit = js.native
   }
-  
 }
-

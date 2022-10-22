@@ -1,32 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewConstraintsProperties extends Object {
+trait SceneViewConstraintsProperties
+  extends StObject
+     with Object {
+  
   /**
     * Specifies a constraint on the minimum and maximum allowed camera altitude.
-    * > **Known Limitations**  The `altitude` constraints works just in global WebScene. (Not in local WebScene)
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var altitude: js.UndefOr[SceneViewConstraintsAltitudeProperties] = js.undefined
+  
   /**
     * Specifies the near and far webgl clip distances.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var clipDistance: js.UndefOr[SceneViewConstraintsClipDistanceProperties] = js.undefined
-  /**
-    * When enabled, prevents the user from navigating below the surface in a local SceneView.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
-    */
-  var collision: js.UndefOr[SceneViewConstraintsCollision] = js.undefined
+  
   /**
     * Specifies a constraint on the amount of allowed tilting of the view.
     *
@@ -34,26 +31,29 @@ trait SceneViewConstraintsProperties extends Object {
     */
   var tilt: js.UndefOr[SceneViewConstraintsTiltProperties] = js.undefined
 }
-
 object SceneViewConstraintsProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    altitude: SceneViewConstraintsAltitudeProperties = null,
-    clipDistance: SceneViewConstraintsClipDistanceProperties = null,
-    collision: SceneViewConstraintsCollision = null,
-    tilt: SceneViewConstraintsTiltProperties = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SceneViewConstraintsProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (clipDistance != null) __obj.updateDynamic("clipDistance")(clipDistance.asInstanceOf[js.Any])
-    if (collision != null) __obj.updateDynamic("collision")(collision.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SceneViewConstraintsProperties]
   }
+  
+  extension [Self <: SceneViewConstraintsProperties](x: Self) {
+    
+    inline def setAltitude(value: SceneViewConstraintsAltitudeProperties): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    
+    inline def setAltitudeUndefined: Self = StObject.set(x, "altitude", js.undefined)
+    
+    inline def setClipDistance(value: SceneViewConstraintsClipDistanceProperties): Self = StObject.set(x, "clipDistance", value.asInstanceOf[js.Any])
+    
+    inline def setClipDistanceUndefined: Self = StObject.set(x, "clipDistance", js.undefined)
+    
+    inline def setTilt(value: SceneViewConstraintsTiltProperties): Self = StObject.set(x, "tilt", value.asInstanceOf[js.Any])
+    
+    inline def setTiltUndefined: Self = StObject.set(x, "tilt", js.undefined)
+  }
 }
-

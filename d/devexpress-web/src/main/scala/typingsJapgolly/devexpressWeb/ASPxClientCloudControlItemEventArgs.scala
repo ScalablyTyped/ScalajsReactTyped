@@ -1,34 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which involve clicking on the control's items.
   */
-@JSGlobal("ASPxClientCloudControlItemEventArgs")
-@js.native
-class ASPxClientCloudControlItemEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientCloudControlItemEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param name A string value that identifies the item related to the event.
-    * @param htmlElement An HTML object that contains the processed item.
-    * @param htmlEvent A DHTML event object that relates to the processed event.
-    */
-  def this(processOnServer: Boolean, name: String, htmlElement: js.Any, htmlEvent: js.Any) = this()
+trait ASPxClientCloudControlItemEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: Any
+  
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
+  
   /**
     * Gets the name that uniquely identifies the processed item.
     */
-  var name: js.Any = js.native
+  var name: Any
 }
-
+object ASPxClientCloudControlItemEventArgs {
+  
+  inline def apply(htmlElement: Any, htmlEvent: Any, name: Any, processOnServer: Boolean): ASPxClientCloudControlItemEventArgs = {
+    val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCloudControlItemEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCloudControlItemEventArgs](x: Self) {
+    
+    inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

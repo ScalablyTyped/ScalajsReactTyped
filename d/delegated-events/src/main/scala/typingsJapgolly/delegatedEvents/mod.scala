@@ -1,39 +1,45 @@
 package typingsJapgolly.delegatedEvents
 
-import org.scalajs.dom.raw.AnimationEvent
-import org.scalajs.dom.raw.DragEvent
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.ErrorEvent
-import org.scalajs.dom.raw.EventListenerOptions
-import org.scalajs.dom.raw.FocusEvent
-import org.scalajs.dom.raw.KeyboardEvent
-import org.scalajs.dom.raw.MouseEvent
-import org.scalajs.dom.raw.PointerEvent
-import org.scalajs.dom.raw.ProgressEvent
-import org.scalajs.dom.raw.TouchEvent
-import org.scalajs.dom.raw.TransitionEvent
-import org.scalajs.dom.raw.UIEvent
-import org.scalajs.dom.raw.WheelEvent
+import org.scalajs.dom.AnimationEvent
+import org.scalajs.dom.CompositionEvent
+import org.scalajs.dom.DragEvent
+import org.scalajs.dom.Element
+import org.scalajs.dom.ErrorEvent
+import org.scalajs.dom.Event
+import org.scalajs.dom.EventListenerOptions
+import org.scalajs.dom.FocusEvent
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.PointerEvent
+import org.scalajs.dom.ProgressEvent
+import org.scalajs.dom.TouchEvent
+import org.scalajs.dom.TransitionEvent
+import org.scalajs.dom.UIEvent
+import org.scalajs.dom.WheelEvent
+import typingsJapgolly.delegatedEvents.anon.CurrentTarget
+import typingsJapgolly.delegatedEvents.anon.CustomEventanycurrentTarg
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.abort
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.animationcancel
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.animationend
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.animationiteration
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.animationstart
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.auxclick
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.beforeinput
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.blur
-import typingsJapgolly.delegatedEvents.delegatedEventsStrings.cancel
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.canplay
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.canplaythrough
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.change
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.click
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.close
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.compositionend
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.compositionstart
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.compositionupdate
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.contextmenu
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.cuechange
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dblclick
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.drag
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragend
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragenter
-import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragexit
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragleave
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragover
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.dragstart
@@ -45,6 +51,7 @@ import typingsJapgolly.delegatedEvents.delegatedEventsStrings.error
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.focus
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.focusin
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.focusout
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.formdata
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.gotpointercapture
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.input
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.invalid
@@ -85,6 +92,7 @@ import typingsJapgolly.delegatedEvents.delegatedEventsStrings.seeking
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.select
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.selectionchange
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.selectstart
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.slotchange
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.stalled
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.submit
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.suspend
@@ -100,1850 +108,1310 @@ import typingsJapgolly.delegatedEvents.delegatedEventsStrings.transitionrun
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.transitionstart
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.volumechange
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.waiting
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.webkitanimationend
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.webkitanimationiteration
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.webkitanimationstart
+import typingsJapgolly.delegatedEvents.delegatedEventsStrings.webkittransitionend
 import typingsJapgolly.delegatedEvents.delegatedEventsStrings.wheel
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.FormDataEvent
 import typingsJapgolly.std.GlobalEventHandlers
+import typingsJapgolly.std.InputEvent
 import typingsJapgolly.std.SecurityPolicyViolationEvent
+import typingsJapgolly.std.SubmitEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("delegated-events", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def fire(target: Element, name: String): Boolean = js.native
-  def fire(target: Element, name: String, detail: js.Any): Boolean = js.native
-  def off(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
-  def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
-  def on(name: String, selector: String, listener: DelegatedEventListener): Unit = js.native
-  def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = js.native
-  @JSName("on")
-  def on_abort(
+object mod {
+  
+  @JSImport("delegated-events", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fire(target: Element, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def fire(target: Element, name: String, detail: Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def off(name: String, selector: String, listener: DelegatedEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def off(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("off")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on(name: String, selector: String, listener: DelegatedEventListener): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on(name: String, selector: String, listener: DelegatedEventListener, options: EventListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_abort(
     name: abort,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ UIEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_abort(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_abort(
     name: abort,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ UIEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationcancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_animationcancel(
     name: animationcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationcancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_animationcancel(
     name: animationcancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_animationend(
     name: animationend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_animationend(
     name: animationend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationiteration(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_animationiteration(
     name: animationiteration,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationiteration(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_animationiteration(
     name: animationiteration,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_animationstart(
     name: animationstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_animationstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_animationstart(
     name: animationstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ AnimationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ AnimationEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_auxclick(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_auxclick(
     name: auxclick,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_auxclick(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_auxclick(
     name: auxclick,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_blur(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_beforeinput(
+    name: beforeinput,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ InputEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_beforeinput(
+    name: beforeinput,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ InputEvent & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_blur(
     name: blur,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_blur(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_blur(
     name: blur,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_cancel(
-    name: cancel,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_cancel(
-    name: cancel,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_canplay(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_canplay(
     name: canplay,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_canplay(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_canplay(
     name: canplay,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_canplaythrough(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_canplaythrough(
     name: canplaythrough,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_canplaythrough(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_canplaythrough(
     name: canplaythrough,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_change(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_change(
     name: change,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_change(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_change(
     name: change,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_click(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_click(
     name: click,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_click(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_click(
     name: click,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_close(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_close(
     name: close,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_close(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_close(
     name: close,
     selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_compositionend(
+    name: compositionend,
+    selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_compositionend(
+    name: compositionend,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_contextmenu(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_compositionstart(
+    name: compositionstart,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_compositionstart(
+    name: compositionstart,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
+    ],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_compositionupdate(
+    name: compositionupdate,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_compositionupdate(
+    name: compositionupdate,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ CompositionEvent & CurrentTarget, 
+      Any
+    ],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_contextmenu(
     name: contextmenu,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_contextmenu(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_contextmenu(
     name: contextmenu,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_cuechange(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_cuechange(
     name: cuechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_cuechange(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_cuechange(
     name: cuechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dblclick(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dblclick(
     name: dblclick,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dblclick(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dblclick(
     name: dblclick,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_drag(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_drag(
     name: drag,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_drag(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_drag(
     name: drag,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dragend(
     name: dragend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragend(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dragend(
     name: dragend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragenter(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dragenter(
     name: dragenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragenter(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dragenter(
     name: dragenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragexit(
-    name: dragexit,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragexit(
-    name: dragexit,
-    selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragleave(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dragleave(
     name: dragleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragleave(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dragleave(
     name: dragleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragover(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dragover(
     name: dragover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragover(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dragover(
     name: dragover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_dragstart(
     name: dragstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_dragstart(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_dragstart(
     name: dragstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_drop(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_drop(
     name: drop,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_drop(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_drop(
     name: drop,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ DragEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ DragEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_durationchange(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_durationchange(
     name: durationchange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_durationchange(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_durationchange(
     name: durationchange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_emptied(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_emptied(
     name: emptied,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_emptied(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_emptied(
     name: emptied,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_ended(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_ended(
     name: ended,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_ended(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_ended(
     name: ended,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_error(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_error(
     name: error,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ErrorEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_error(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ ErrorEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_error(
     name: error,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ErrorEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ ErrorEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_focus(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_focus(
     name: focus,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_focus(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_focus(
     name: focus,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_focusin(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_focusin(
     name: focusin,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_focusin(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_focusin(
     name: focusin,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_focusout(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_focusout(
     name: focusout,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_focusout(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_focusout(
     name: focusout,
     selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ FocusEvent & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_formdata(
+    name: formdata,
+    selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ FocusEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FormDataEvent & CurrentTarget, 
+      Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_formdata(
+    name: formdata,
+    selector: String,
+    listener: js.ThisFunction1[
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ FormDataEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_gotpointercapture(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_gotpointercapture(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_gotpointercapture(
     name: gotpointercapture,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_input(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_input(
     name: input,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_input(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_input(
     name: input,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_invalid(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_invalid(
     name: invalid,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_invalid(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_invalid(
     name: invalid,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_keydown(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_keydown(
     name: keydown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_keydown(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_keydown(
     name: keydown,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_keypress(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_keypress(
     name: keypress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_keypress(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_keypress(
     name: keypress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_keyup(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_keyup(
     name: keyup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_keyup(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_keyup(
     name: keyup,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ KeyboardEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ KeyboardEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_load(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_load(
     name: load,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_load(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_load(
     name: load,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadeddata(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_loadeddata(
     name: loadeddata,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadeddata(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_loadeddata(
     name: loadeddata,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadedmetadata(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadedmetadata(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_loadedmetadata(
     name: loadedmetadata,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_loadstart(
     name: loadstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_loadstart(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_loadstart(
     name: loadstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_lostpointercapture(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_lostpointercapture(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_lostpointercapture(
     name: lostpointercapture,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mousedown(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mousedown(
     name: mousedown,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mousedown(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mousedown(
     name: mousedown,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseenter(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mouseenter(
     name: mouseenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseenter(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mouseenter(
     name: mouseenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseleave(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mouseleave(
     name: mouseleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseleave(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mouseleave(
     name: mouseleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mousemove(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mousemove(
     name: mousemove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mousemove(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mousemove(
     name: mousemove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseout(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mouseout(
     name: mouseout,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseout(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mouseout(
     name: mouseout,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseover(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mouseover(
     name: mouseover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseover(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mouseover(
     name: mouseover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseup(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_mouseup(
     name: mouseup,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_mouseup(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_mouseup(
     name: mouseup,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ MouseEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ MouseEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pause(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pause(
     name: pause,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pause(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pause(
     name: pause,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_play(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_play(
     name: play,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_play(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_play(
     name: play,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_playing(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_playing(
     name: playing,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_playing(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_playing(
     name: playing,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointercancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointercancel(
     name: pointercancel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointercancel(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointercancel(
     name: pointercancel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerdown(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerdown(
     name: pointerdown,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerdown(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerdown(
     name: pointerdown,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerenter(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerenter(
     name: pointerenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerenter(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerenter(
     name: pointerenter,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerleave(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerleave(
     name: pointerleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerleave(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerleave(
     name: pointerleave,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointermove(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointermove(
     name: pointermove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointermove(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointermove(
     name: pointermove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerout(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerout(
     name: pointerout,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerout(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerout(
     name: pointerout,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerover(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerover(
     name: pointerover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerover(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerover(
     name: pointerover,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerup(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_pointerup(
     name: pointerup,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_pointerup(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_pointerup(
     name: pointerup,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ PointerEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ PointerEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_progress(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_progress(
     name: progress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ProgressEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_progress(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_progress(
     name: progress,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ ProgressEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ ProgressEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_ratechange(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_ratechange(
     name: ratechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_ratechange(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_ratechange(
     name: ratechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_reset(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_reset(
     name: reset,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_reset(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_reset(
     name: reset,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_resize(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_resize(
     name: resize,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ UIEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_resize(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_resize(
     name: resize,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ UIEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ UIEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_scroll(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_scroll(
     name: scroll,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_scroll(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_scroll(
     name: scroll,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_securitypolicyviolation(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ SecurityPolicyViolationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ SecurityPolicyViolationEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_securitypolicyviolation(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_securitypolicyviolation(
     name: securitypolicyviolation,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ SecurityPolicyViolationEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ SecurityPolicyViolationEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_seeked(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_seeked(
     name: seeked,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_seeked(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_seeked(
     name: seeked,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_seeking(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_seeking(
     name: seeking,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_seeking(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_seeking(
     name: seeking,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_select(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_select(
     name: select,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_select(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_select(
     name: select,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_selectionchange(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_selectionchange(
     name: selectionchange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_selectionchange(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_selectionchange(
     name: selectionchange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_selectstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_selectstart(
     name: selectstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_selectstart(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_selectstart(
     name: selectstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_stalled(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_slotchange(
+    name: slotchange,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_slotchange(
+    name: slotchange,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_stalled(
     name: stalled,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_stalled(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_stalled(
     name: stalled,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_submit(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_submit(
     name: submit,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_submit(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ SubmitEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_submit(
     name: submit,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ SubmitEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_suspend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_suspend(
     name: suspend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_suspend(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_suspend(
     name: suspend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_timeupdate(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_timeupdate(
     name: timeupdate,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_timeupdate(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_timeupdate(
     name: timeupdate,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_toggle(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_toggle(
     name: toggle,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_toggle(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_toggle(
     name: toggle,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchcancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_touchcancel(
     name: touchcancel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchcancel(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_touchcancel(
     name: touchcancel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_touchend(
     name: touchend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchend(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_touchend(
     name: touchend,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchmove(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_touchmove(
     name: touchmove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchmove(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_touchmove(
     name: touchmove,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_touchstart(
     name: touchstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_touchstart(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_touchstart(
     name: touchstart,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TouchEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ TouchEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitioncancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_transitioncancel(
     name: transitioncancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitioncancel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_transitioncancel(
     name: transitioncancel,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_transitionend(
     name: transitionend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionend(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_transitionend(
     name: transitionend,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionrun(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_transitionrun(
     name: transitionrun,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionrun(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_transitionrun(
     name: transitionrun,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_transitionstart(
     name: transitionstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_transitionstart(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_transitionstart(
     name: transitionstart,
     selector: String,
     listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ TransitionEvent with AnonCurrentTarget, 
-      _
+      /* this */ GlobalEventHandlers & Element, 
+      /* ev */ TransitionEvent & CurrentTarget, 
+      Any
     ],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_volumechange(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_volumechange(
     name: volumechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_volumechange(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_volumechange(
     name: volumechange,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_waiting(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_waiting(
     name: waiting,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_waiting(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_waiting(
     name: waiting,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ Event_ with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("on")
-  def on_wheel(
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_webkitanimationend(
+    name: webkitanimationend,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_webkitanimationend(
+    name: webkitanimationend,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_webkitanimationiteration(
+    name: webkitanimationiteration,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_webkitanimationiteration(
+    name: webkitanimationiteration,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_webkitanimationstart(
+    name: webkitanimationstart,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_webkitanimationstart(
+    name: webkitanimationstart,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_webkittransitionend(
+    name: webkittransitionend,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_webkittransitionend(
+    name: webkittransitionend,
+    selector: String,
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ Event & CurrentTarget, Any],
+    options: EventListenerOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def on_wheel(
     name: wheel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ WheelEvent with AnonCurrentTarget, 
-      _
-    ]
-  ): Unit = js.native
-  @JSName("on")
-  def on_wheel(
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ WheelEvent & CurrentTarget, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def on_wheel(
     name: wheel,
     selector: String,
-    listener: js.ThisFunction1[
-      /* this */ GlobalEventHandlers with Element, 
-      /* ev */ WheelEvent with AnonCurrentTarget, 
-      _
-    ],
+    listener: js.ThisFunction1[/* this */ GlobalEventHandlers & Element, /* ev */ WheelEvent & CurrentTarget, Any],
     options: EventListenerOptions
-  ): Unit = js.native
-  type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEventanycurrentTarg, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(name.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  type DelegatedEventListener = js.ThisFunction1[/* this */ Element, /* ev */ CustomEventanycurrentTarg, Any]
 }
-

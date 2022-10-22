@@ -10,10 +10,10 @@ A React utility belt for function components and higher-order components
 | ------------------ | :-------------: |
 | Full name          | recompose |
 | Keywords           | react, higher-order, components, microcomponentization, toolkit, utilities, composition |
-| # releases         | 8 |
-| # dependents       | 1358 |
-| # downloads        | 78222849 |
-| # stars            | 17 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4824224.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/acdlite/recompose)

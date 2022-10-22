@@ -1,20 +1,19 @@
 organization := "org.scalablytyped.japgolly"
 name := "firebase__messaging"
-version := "0.6.4-ee4ad5"
-scalaVersion := "2.13.1"
+version := "0.9.19-a4173b"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "firebase__app-types" % "0.5.1-56434b",
-  "org.scalablytyped.japgolly" %%% "firebase__component" % "0.1.5-49254d",
-  "org.scalablytyped.japgolly" %%% "firebase__installations-types" % "0.3.1-0ffe9f",
-  "org.scalablytyped.japgolly" %%% "firebase__messaging-types" % "0.4.2-e2a952",
-  "org.scalablytyped.japgolly" %%% "firebase__util" % "0.2.40-0884a4",
-  "org.scalablytyped.japgolly" %%% "sinon" % "7.5-dt-20200225Z-52d6ed",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "firebase__app" % "0.8.2-bfba1f",
+  "org.scalablytyped.japgolly" %%% "firebase__app-types" % "0.8.0-d25a07",
+  "org.scalablytyped.japgolly" %%% "firebase__component" % "0.5.20-97e94a",
+  "org.scalablytyped.japgolly" %%% "firebase__logger" % "0.3.3-2bcaf2",
+  "org.scalablytyped.japgolly" %%% "firebase__util" % "1.7.2-2aee96",
+  "org.scalablytyped.japgolly" %%% "sinon" % "10.0-dt-20220720Z-30f991",
+  "org.scalablytyped.japgolly" %%% "sinonjs__fake-timers" % "8.1-dt-20220323Z-f8d735",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

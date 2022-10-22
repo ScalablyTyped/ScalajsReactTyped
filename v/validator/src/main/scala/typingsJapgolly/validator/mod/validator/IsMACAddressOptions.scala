@@ -1,10 +1,11 @@
 package typingsJapgolly.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IsMACAddressOptions extends js.Object {
+trait IsMACAddressOptions extends StObject {
+  
   /**
     * If `no_colons` is `true`, the validator will allow MAC addresses without the colons.
     * Also, it allows the use of hyphens or spaces.
@@ -15,13 +16,17 @@ trait IsMACAddressOptions extends js.Object {
     */
   var no_colons: js.UndefOr[Boolean] = js.undefined
 }
-
 object IsMACAddressOptions {
-  @scala.inline
-  def apply(no_colons: js.UndefOr[Boolean] = js.undefined): IsMACAddressOptions = {
+  
+  inline def apply(): IsMACAddressOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(no_colons)) __obj.updateDynamic("no_colons")(no_colons.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMACAddressOptions]
   }
+  
+  extension [Self <: IsMACAddressOptions](x: Self) {
+    
+    inline def setNo_colons(value: Boolean): Self = StObject.set(x, "no_colons", value.asInstanceOf[js.Any])
+    
+    inline def setNo_colonsUndefined: Self = StObject.set(x, "no_colons", js.undefined)
+  }
 }
-

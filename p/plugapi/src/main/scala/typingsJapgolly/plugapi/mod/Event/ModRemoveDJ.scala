@@ -1,21 +1,30 @@
 package typingsJapgolly.plugapi.mod.Event
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModRemoveDJ extends js.Object {
+trait ModRemoveDJ extends StObject {
+  
   var moderator: String
+  
   var userID: String
+  
   var username: String
 }
-
 object ModRemoveDJ {
-  @scala.inline
-  def apply(moderator: String, userID: String, username: String): ModRemoveDJ = {
-    val __obj = js.Dynamic.literal(moderator = moderator.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
   
+  inline def apply(moderator: String, userID: String, username: String): ModRemoveDJ = {
+    val __obj = js.Dynamic.literal(moderator = moderator.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModRemoveDJ]
   }
+  
+  extension [Self <: ModRemoveDJ](x: Self) {
+    
+    inline def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
+    
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+  }
 }
-

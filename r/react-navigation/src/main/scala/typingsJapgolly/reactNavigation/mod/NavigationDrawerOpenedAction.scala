@@ -1,22 +1,32 @@
 package typingsJapgolly.reactNavigation.mod
 
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashDRAWER_OPENED
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationDrawerOpenedAction extends NavigationDrawerAction {
+trait NavigationDrawerOpenedAction
+  extends StObject
+     with NavigationDrawerAction {
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var `type`: NavigationSlashDRAWER_OPENED
 }
-
 object NavigationDrawerOpenedAction {
-  @scala.inline
-  def apply(`type`: NavigationSlashDRAWER_OPENED, key: String = null): NavigationDrawerOpenedAction = {
+  
+  inline def apply(): NavigationDrawerOpenedAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/DRAWER_OPENED")
     __obj.asInstanceOf[NavigationDrawerOpenedAction]
   }
+  
+  extension [Self <: NavigationDrawerOpenedAction](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setType(value: NavigationSlashDRAWER_OPENED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ink
 
-Typings are for version 2.7.0
+Typings are for version 3.2.0
 
 ## Library description:
 React for CLI
@@ -10,10 +10,10 @@ React for CLI
 | ------------------ | :-------------: |
 | Full name          | ink |
 | Keywords           | react, cli, jsx, stdout, components, command-line, preact, redux, print, render, colors, text |
-| # releases         | 37 |
-| # dependents       | 355 |
-| # downloads        | 6428445 |
-| # stars            | 9 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 1605320.0 |
+| # stars            | 18726.0 |
 
 ## Links
 - [Homepage](https://github.com/vadimdemedes/ink#readme)

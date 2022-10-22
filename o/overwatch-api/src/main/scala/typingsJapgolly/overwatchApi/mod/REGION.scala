@@ -1,8 +1,8 @@
 package typingsJapgolly.overwatchApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.overwatchApi.overwatchApiStrings.us
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.overwatchApi.overwatchApiStrings.cn
   - typingsJapgolly.overwatchApi.overwatchApiStrings.global
 */
-trait REGION extends js.Object
-
+trait REGION extends StObject
 object REGION {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cn: typingsJapgolly.overwatchApi.overwatchApiStrings.cn = this.cast("cn")
-  @scala.inline
-  def eu: typingsJapgolly.overwatchApi.overwatchApiStrings.eu = this.cast("eu")
-  @scala.inline
-  def global: typingsJapgolly.overwatchApi.overwatchApiStrings.global = this.cast("global")
-  @scala.inline
-  def kr: typingsJapgolly.overwatchApi.overwatchApiStrings.kr = this.cast("kr")
-  @scala.inline
-  def us: typingsJapgolly.overwatchApi.overwatchApiStrings.us = this.cast("us")
+  
+  inline def cn: typingsJapgolly.overwatchApi.overwatchApiStrings.cn = "cn".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.cn]
+  
+  inline def eu: typingsJapgolly.overwatchApi.overwatchApiStrings.eu = "eu".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.eu]
+  
+  inline def global: typingsJapgolly.overwatchApi.overwatchApiStrings.global = "global".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.global]
+  
+  inline def kr: typingsJapgolly.overwatchApi.overwatchApiStrings.kr = "kr".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.kr]
+  
+  inline def us: typingsJapgolly.overwatchApi.overwatchApiStrings.us = "us".asInstanceOf[typingsJapgolly.overwatchApi.overwatchApiStrings.us]
 }
-

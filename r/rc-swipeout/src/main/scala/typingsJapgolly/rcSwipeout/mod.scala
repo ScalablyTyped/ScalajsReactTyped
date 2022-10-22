@@ -1,23 +1,28 @@
 package typingsJapgolly.rcSwipeout
 
+import typingsJapgolly.rcSwipeout.anon.AutoClose
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-swipeout", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default protected ()
-    extends typingsJapgolly.rcSwipeout.swipeoutMod.default {
-    def this(props: js.Any) = this()
-  }
+object mod {
   
+  @JSImport("rc-swipeout", JSImport.Default)
+  @js.native
+  open class default protected ()
+    extends typingsJapgolly.rcSwipeout.libSwipeoutMod.default {
+    def this(props: Any) = this()
+  }
   /* static members */
-  @js.native
-  object default extends js.Object {
-    var defaultProps: AnonAutoClose = js.native
+  object default {
+    
+    @JSImport("rc-swipeout", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rc-swipeout", "default.defaultProps")
+    @js.native
+    def defaultProps: AutoClose = js.native
+    inline def defaultProps_=(x: AutoClose): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
 }
-

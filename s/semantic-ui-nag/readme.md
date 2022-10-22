@@ -10,10 +10,10 @@ Single component release of nag
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-nag |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 56302 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3018.0 |
+| # stars            | 3.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

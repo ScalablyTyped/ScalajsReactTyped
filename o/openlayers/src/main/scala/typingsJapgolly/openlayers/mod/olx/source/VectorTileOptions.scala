@@ -1,7 +1,7 @@
 package typingsJapgolly.openlayers.mod.olx.source
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.openlayers.mod.Attribution
 import typingsJapgolly.openlayers.mod.AttributionLike
 import typingsJapgolly.openlayers.mod.ProjectionLike
 import typingsJapgolly.openlayers.mod.Tile
@@ -14,18 +14,26 @@ import typingsJapgolly.openlayers.mod.olx.LogoOptions
 import typingsJapgolly.openlayers.mod.proj.Projection
 import typingsJapgolly.openlayers.mod.source.State
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VectorTileOptions extends js.Object {
+trait VectorTileOptions extends StObject {
+  
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
   var cacheSize: js.UndefOr[Double] = js.undefined
+  
   var format: js.UndefOr[Feature] = js.undefined
+  
   var logo: js.UndefOr[String | LogoOptions] = js.undefined
+  
   var overlaps: js.UndefOr[Boolean] = js.undefined
+  
   var projection: ProjectionLike
+  
   var state: js.UndefOr[State] = js.undefined
+  
   var tileClass: js.UndefOr[
     js.Function6[
       /* n */ VectorTile, 
@@ -34,51 +42,91 @@ trait VectorTileOptions extends js.Object {
       /* s */ String, 
       /* feature */ Feature, 
       /* type */ TileLoadFunctionType, 
-      _
+      Any
     ]
   ] = js.undefined
+  
   var tileGrid: js.UndefOr[TileGrid] = js.undefined
+  
   var tileLoadFunction: js.UndefOr[TileLoadFunctionType] = js.undefined
+  
   var tileUrlFunction: js.UndefOr[TileUrlFunctionType] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var urls: js.UndefOr[js.Array[String]] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object VectorTileOptions {
-  @scala.inline
-  def apply(
-    attributions: AttributionLike = null,
-    cacheSize: Int | Double = null,
-    format: Feature = null,
-    logo: String | LogoOptions = null,
-    overlaps: js.UndefOr[Boolean] = js.undefined,
-    projection: ProjectionLike = null,
-    state: State = null,
-    tileClass: (/* n */ VectorTile, /* coords */ TileCoord, /* state */ typingsJapgolly.openlayers.mod.Tile.State, /* s */ String, /* feature */ Feature, /* type */ TileLoadFunctionType) => CallbackTo[js.Any] = null,
-    tileGrid: TileGrid = null,
-    tileLoadFunction: (/* tile */ Tile, /* url */ String) => Callback = null,
-    tileUrlFunction: (/* coords */ TileCoord, /* pixelRatio */ Double, /* proj */ Projection) => CallbackTo[String] = null,
-    url: String = null,
-    urls: js.Array[String] = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): VectorTileOptions = {
+  
+  inline def apply(): VectorTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (cacheSize != null) __obj.updateDynamic("cacheSize")(cacheSize.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlaps)) __obj.updateDynamic("overlaps")(overlaps.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tileClass != null) __obj.updateDynamic("tileClass")(js.Any.fromFunction6((t0: /* n */ typingsJapgolly.openlayers.mod.VectorTile, t1: /* coords */ typingsJapgolly.openlayers.mod.TileCoord, t2: /* state */ typingsJapgolly.openlayers.mod.Tile.State, t3: /* s */ java.lang.String, t4: /* feature */ typingsJapgolly.openlayers.mod.format.Feature, t5: /* type */ typingsJapgolly.openlayers.mod.TileLoadFunctionType) => tileClass(t0, t1, t2, t3, t4, t5).runNow()))
-    if (tileGrid != null) __obj.updateDynamic("tileGrid")(tileGrid.asInstanceOf[js.Any])
-    if (tileLoadFunction != null) __obj.updateDynamic("tileLoadFunction")(js.Any.fromFunction2((t0: /* tile */ typingsJapgolly.openlayers.mod.Tile, t1: /* url */ java.lang.String) => tileLoadFunction(t0, t1).runNow()))
-    if (tileUrlFunction != null) __obj.updateDynamic("tileUrlFunction")(js.Any.fromFunction3((t0: /* coords */ typingsJapgolly.openlayers.mod.TileCoord, t1: /* pixelRatio */ scala.Double, t2: /* proj */ typingsJapgolly.openlayers.mod.proj.Projection) => tileUrlFunction(t0, t1, t2).runNow()))
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileOptions]
   }
+  
+  extension [Self <: VectorTileOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])
+    
+    inline def setCacheSizeUndefined: Self = StObject.set(x, "cacheSize", js.undefined)
+    
+    inline def setFormat(value: Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLogo(value: String | LogoOptions): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setOverlaps(value: Boolean): Self = StObject.set(x, "overlaps", value.asInstanceOf[js.Any])
+    
+    inline def setOverlapsUndefined: Self = StObject.set(x, "overlaps", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTileClass(
+      value: (/* n */ VectorTile, /* coords */ TileCoord, /* state */ typingsJapgolly.openlayers.mod.Tile.State, /* s */ String, /* feature */ Feature, /* type */ TileLoadFunctionType) => Any
+    ): Self = StObject.set(x, "tileClass", js.Any.fromFunction6(value))
+    
+    inline def setTileClassUndefined: Self = StObject.set(x, "tileClass", js.undefined)
+    
+    inline def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    
+    inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+    
+    inline def setTileLoadFunction(value: (/* tile */ Tile, /* url */ String) => Callback): Self = StObject.set(x, "tileLoadFunction", js.Any.fromFunction2((t0: /* tile */ Tile, t1: /* url */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setTileLoadFunctionUndefined: Self = StObject.set(x, "tileLoadFunction", js.undefined)
+    
+    inline def setTileUrlFunction(value: (/* coords */ TileCoord, /* pixelRatio */ Double, /* proj */ Projection) => String): Self = StObject.set(x, "tileUrlFunction", js.Any.fromFunction3(value))
+    
+    inline def setTileUrlFunctionUndefined: Self = StObject.set(x, "tileUrlFunction", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUrls(value: js.Array[String]): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: String*): Self = StObject.set(x, "urls", js.Array(value*))
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

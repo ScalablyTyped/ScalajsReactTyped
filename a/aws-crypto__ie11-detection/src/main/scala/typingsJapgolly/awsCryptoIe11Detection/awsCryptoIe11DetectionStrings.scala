@@ -1,92 +1,103 @@
 package typingsJapgolly.awsCryptoIe11Detection
 
-import typingsJapgolly.awsCryptoIe11Detection.msSubtleCryptoMod.Ie11DigestAlgorithm
-import typingsJapgolly.awsCryptoIe11Detection.msSubtleCryptoMod.KeyUsage
-import typingsJapgolly.awsCryptoIe11Detection.msSubtleCryptoMod._Ie11EncryptionAlgorithm
+import typingsJapgolly.awsCryptoIe11Detection.buildMsSubtleCryptoMod.Ie11DigestAlgorithm
+import typingsJapgolly.awsCryptoIe11Detection.buildMsSubtleCryptoMod.KeyUsage
+import typingsJapgolly.awsCryptoIe11Detection.buildMsSubtleCryptoMod._Ie11EncryptionAlgorithm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsCryptoIe11DetectionStrings {
-  @js.native
-  sealed trait `AES-CBC` extends _Ie11EncryptionAlgorithm
   
   @js.native
-  sealed trait `AES-GCM` extends _Ie11EncryptionAlgorithm
+  sealed trait `AES-CBC`
+    extends StObject
+       with _Ie11EncryptionAlgorithm
+  inline def `AES-CBC`: `AES-CBC` = "AES-CBC".asInstanceOf[`AES-CBC`]
   
   @js.native
-  sealed trait HMAC extends js.Object
+  sealed trait `AES-GCM`
+    extends StObject
+       with _Ie11EncryptionAlgorithm
+  inline def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
   
   @js.native
-  sealed trait `RSA-OAEP` extends _Ie11EncryptionAlgorithm
+  sealed trait HMAC extends StObject
+  inline def HMAC: HMAC = "HMAC".asInstanceOf[HMAC]
   
   @js.native
-  sealed trait `RSAES-PKCS1-v1_5` extends js.Object
+  sealed trait `RSA-OAEP`
+    extends StObject
+       with _Ie11EncryptionAlgorithm
+  inline def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
   
   @js.native
-  sealed trait `SHA-1` extends Ie11DigestAlgorithm
+  sealed trait `RSAES-PKCS1-v1_5` extends StObject
+  inline def `RSAES-PKCS1-v1_5`: `RSAES-PKCS1-v1_5` = "RSAES-PKCS1-v1_5".asInstanceOf[`RSAES-PKCS1-v1_5`]
   
   @js.native
-  sealed trait `SHA-256` extends Ie11DigestAlgorithm
+  sealed trait `SHA-1`
+    extends StObject
+       with Ie11DigestAlgorithm
+  inline def `SHA-1`: `SHA-1` = "SHA-1".asInstanceOf[`SHA-1`]
   
   @js.native
-  sealed trait `SHA-384` extends Ie11DigestAlgorithm
+  sealed trait `SHA-256`
+    extends StObject
+       with Ie11DigestAlgorithm
+  inline def `SHA-256`: `SHA-256` = "SHA-256".asInstanceOf[`SHA-256`]
   
   @js.native
-  sealed trait decrypt extends KeyUsage
+  sealed trait `SHA-384`
+    extends StObject
+       with Ie11DigestAlgorithm
+  inline def `SHA-384`: `SHA-384` = "SHA-384".asInstanceOf[`SHA-384`]
   
   @js.native
-  sealed trait deriveBits extends KeyUsage
+  sealed trait decrypt
+    extends StObject
+       with KeyUsage
+  inline def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
   
   @js.native
-  sealed trait deriveKey extends KeyUsage
+  sealed trait derive
+    extends StObject
+       with KeyUsage
+  inline def derive: derive = "derive".asInstanceOf[derive]
   
   @js.native
-  sealed trait encrypt extends KeyUsage
+  sealed trait encrypt
+    extends StObject
+       with KeyUsage
+  inline def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
   
   @js.native
-  sealed trait sign extends KeyUsage
+  sealed trait importKey
+    extends StObject
+       with KeyUsage
+  inline def importKey: importKey = "importKey".asInstanceOf[importKey]
   
   @js.native
-  sealed trait unwrapKey extends KeyUsage
+  sealed trait sign
+    extends StObject
+       with KeyUsage
+  inline def sign: sign = "sign".asInstanceOf[sign]
   
   @js.native
-  sealed trait verify extends KeyUsage
+  sealed trait unwrapKey
+    extends StObject
+       with KeyUsage
+  inline def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
   
   @js.native
-  sealed trait wrapKey extends KeyUsage
+  sealed trait verify
+    extends StObject
+       with KeyUsage
+  inline def verify: verify = "verify".asInstanceOf[verify]
   
-  @scala.inline
-  def `AES-CBC`: `AES-CBC` = "AES-CBC".asInstanceOf[`AES-CBC`]
-  @scala.inline
-  def `AES-GCM`: `AES-GCM` = "AES-GCM".asInstanceOf[`AES-GCM`]
-  @scala.inline
-  def HMAC: HMAC = "HMAC".asInstanceOf[HMAC]
-  @scala.inline
-  def `RSA-OAEP`: `RSA-OAEP` = "RSA-OAEP".asInstanceOf[`RSA-OAEP`]
-  @scala.inline
-  def `RSAES-PKCS1-v1_5`: `RSAES-PKCS1-v1_5` = "RSAES-PKCS1-v1_5".asInstanceOf[`RSAES-PKCS1-v1_5`]
-  @scala.inline
-  def `SHA-1`: `SHA-1` = "SHA-1".asInstanceOf[`SHA-1`]
-  @scala.inline
-  def `SHA-256`: `SHA-256` = "SHA-256".asInstanceOf[`SHA-256`]
-  @scala.inline
-  def `SHA-384`: `SHA-384` = "SHA-384".asInstanceOf[`SHA-384`]
-  @scala.inline
-  def decrypt: decrypt = "decrypt".asInstanceOf[decrypt]
-  @scala.inline
-  def deriveBits: deriveBits = "deriveBits".asInstanceOf[deriveBits]
-  @scala.inline
-  def deriveKey: deriveKey = "deriveKey".asInstanceOf[deriveKey]
-  @scala.inline
-  def encrypt: encrypt = "encrypt".asInstanceOf[encrypt]
-  @scala.inline
-  def sign: sign = "sign".asInstanceOf[sign]
-  @scala.inline
-  def unwrapKey: unwrapKey = "unwrapKey".asInstanceOf[unwrapKey]
-  @scala.inline
-  def verify: verify = "verify".asInstanceOf[verify]
-  @scala.inline
-  def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
+  @js.native
+  sealed trait wrapKey
+    extends StObject
+       with KeyUsage
+  inline def wrapKey: wrapKey = "wrapKey".asInstanceOf[wrapKey]
 }
-

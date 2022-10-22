@@ -7,21 +7,41 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.expandedChanging
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.headerClick
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.itemClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapAccordion")
 @js.native
-class BootstrapAccordion () extends Control {
+trait BootstrapAccordion
+  extends StObject
+     with Control {
+  
   def collapseAll(): Unit = js.native
+  
   def expandAll(): Unit = js.native
+  
   def getActiveGroup(): BootstrapAccordionGroup | Null = js.native
+  
   def getGroup(index: Double): BootstrapAccordionGroup | Null = js.native
+  
   def getGroupByName(name: String): BootstrapAccordionGroup | Null = js.native
+  
   def getGroupCount(): Double = js.native
+  
   def getItemByName(name: String): BootstrapAccordionItem | Null = js.native
+  
   def getSelectedItem(): BootstrapAccordionItem | Null = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        AccordionGroupCancelEventArgs | AccordionGroupClickEventArgs | AccordionGroupEventArgs | AccordionItemEventArgs | BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_beginCallback(eventName: beginCallback): this.type = js.native
   @JSName("off")
@@ -71,6 +91,7 @@ class BootstrapAccordion () extends Control {
     eventName: itemClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[AccordionItemEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_beginCallback(
     eventName: beginCallback,
@@ -106,6 +127,7 @@ class BootstrapAccordion () extends Control {
     eventName: itemClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[AccordionItemEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_beginCallback(
     eventName: beginCallback,
@@ -141,7 +163,8 @@ class BootstrapAccordion () extends Control {
     eventName: itemClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[AccordionItemEventArgs], Unit]
   ): this.type = js.native
+  
   def setActiveGroup(group: BootstrapAccordionGroup): Unit = js.native
+  
   def setSelectedItem(item: BootstrapAccordionItem): Unit = js.native
 }
-

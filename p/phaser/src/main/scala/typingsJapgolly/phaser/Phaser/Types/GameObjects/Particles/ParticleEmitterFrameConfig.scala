@@ -1,38 +1,48 @@
 package typingsJapgolly.phaser.Phaser.Types.GameObjects.Particles
 
 import typingsJapgolly.phaser.Phaser.Textures.Frame
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParticleEmitterFrameConfig extends js.Object {
+trait ParticleEmitterFrameConfig extends StObject {
+  
   /**
     * Whether texture frames will be assigned consecutively (true) or at random (false).
     */
   var cycle: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * One or more texture frames.
     */
   var frames: js.UndefOr[Double | (js.Array[Double | Frame | String]) | String | Frame] = js.undefined
+  
   /**
     * The number of consecutive particles receiving each texture frame, when `cycle` is true.
     */
-  var quantity: js.UndefOr[integer] = js.undefined
+  var quantity: js.UndefOr[Double] = js.undefined
 }
-
 object ParticleEmitterFrameConfig {
-  @scala.inline
-  def apply(
-    cycle: js.UndefOr[Boolean] = js.undefined,
-    frames: Double | (js.Array[Double | Frame | String]) | String | Frame = null,
-    quantity: Int | Double = null
-  ): ParticleEmitterFrameConfig = {
+  
+  inline def apply(): ParticleEmitterFrameConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cycle)) __obj.updateDynamic("cycle")(cycle.asInstanceOf[js.Any])
-    if (frames != null) __obj.updateDynamic("frames")(frames.asInstanceOf[js.Any])
-    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterFrameConfig]
   }
+  
+  extension [Self <: ParticleEmitterFrameConfig](x: Self) {
+    
+    inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
+    
+    inline def setCycleUndefined: Self = StObject.set(x, "cycle", js.undefined)
+    
+    inline def setFrames(value: Double | (js.Array[Double | Frame | String]) | String | Frame): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    
+    inline def setFramesUndefined: Self = StObject.set(x, "frames", js.undefined)
+    
+    inline def setFramesVarargs(value: (Double | Frame | String)*): Self = StObject.set(x, "frames", js.Array(value*))
+    
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setQuantityUndefined: Self = StObject.set(x, "quantity", js.undefined)
+  }
 }
-

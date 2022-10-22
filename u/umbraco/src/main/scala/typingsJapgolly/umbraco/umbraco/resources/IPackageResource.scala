@@ -1,18 +1,19 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.packageInstallResource
   * @description handles data for package installations
   **/
-trait IPackageResource extends js.Object {
+trait IPackageResource extends StObject {
+  
   def cleanUp(_package: String): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.packageInstallResource#fetchPackage
@@ -34,6 +35,7 @@ trait IPackageResource extends js.Object {
     *
     */
   def fetch(id: String): String
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.packageInstallResource#createmanifest
@@ -58,26 +60,35 @@ trait IPackageResource extends js.Object {
     *
     */
   def `import`(_package: String): Double
+  
   def installData(_package: String): Unit
+  
   def installFiles(_package: String): Unit
 }
-
 object IPackageResource {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     cleanUp: String => Callback,
-    fetch: String => CallbackTo[String],
-    `import`: String => CallbackTo[Double],
+    fetch: String => String,
+    `import`: String => Double,
     installData: String => Callback,
     installFiles: String => Callback
   ): IPackageResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cleanUp")(js.Any.fromFunction1((t0: java.lang.String) => cleanUp(t0).runNow()))
-    __obj.updateDynamic("fetch")(js.Any.fromFunction1((t0: java.lang.String) => fetch(t0).runNow()))
-    __obj.updateDynamic("import")(js.Any.fromFunction1((t0: java.lang.String) => `import`(t0).runNow()))
-    __obj.updateDynamic("installData")(js.Any.fromFunction1((t0: java.lang.String) => installData(t0).runNow()))
-    __obj.updateDynamic("installFiles")(js.Any.fromFunction1((t0: java.lang.String) => installFiles(t0).runNow()))
+    val __obj = js.Dynamic.literal(cleanUp = js.Any.fromFunction1((t0: String) => cleanUp(t0).runNow()), fetch = js.Any.fromFunction1(fetch), installData = js.Any.fromFunction1((t0: String) => installData(t0).runNow()), installFiles = js.Any.fromFunction1((t0: String) => installFiles(t0).runNow()))
+    __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
     __obj.asInstanceOf[IPackageResource]
   }
+  
+  extension [Self <: IPackageResource](x: Self) {
+    
+    inline def setCleanUp(value: String => Callback): Self = StObject.set(x, "cleanUp", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setFetch(value: String => String): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+    
+    inline def setImport(value: String => Double): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+    
+    inline def setInstallData(value: String => Callback): Self = StObject.set(x, "installData", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setInstallFiles(value: String => Callback): Self = StObject.set(x, "installFiles", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
 }
-

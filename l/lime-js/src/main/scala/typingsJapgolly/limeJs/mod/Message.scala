@@ -1,33 +1,29 @@
 package typingsJapgolly.limeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Message extends Envelope {
-  var content: js.Any
+trait Message
+  extends StObject
+     with Envelope {
+  
+  var content: Any
+  
   var `type`: String
 }
-
 object Message {
-  @scala.inline
-  def apply(
-    content: js.Any,
-    `type`: String,
-    from: String = null,
-    id: String = null,
-    metadata: js.Any = null,
-    pp: String = null,
-    to: String = null
-  ): Message = {
+  
+  inline def apply(content: Any, `type`: String): Message = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (pp != null) __obj.updateDynamic("pp")(pp.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  
+  extension [Self <: Message](x: Self) {
+    
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

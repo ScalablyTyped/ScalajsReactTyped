@@ -1,15 +1,30 @@
 package typingsJapgolly.w3cWebUsb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("USBIsochronousInTransferPacket")
-@js.native
-class USBIsochronousInTransferPacket protected () extends js.Object {
-  def this(status: USBTransferStatus) = this()
-  def this(status: USBTransferStatus, data: scala.scalajs.js.typedarray.DataView) = this()
-  val data: js.UndefOr[scala.scalajs.js.typedarray.DataView] = js.native
-  val status: js.UndefOr[USBTransferStatus] = js.native
+trait USBIsochronousInTransferPacket extends StObject {
+  
+  val data: js.UndefOr[js.typedarray.DataView] = js.undefined
+  
+  val status: js.UndefOr[USBTransferStatus] = js.undefined
 }
-
+object USBIsochronousInTransferPacket {
+  
+  inline def apply(): USBIsochronousInTransferPacket = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[USBIsochronousInTransferPacket]
+  }
+  
+  extension [Self <: USBIsochronousInTransferPacket](x: Self) {
+    
+    inline def setData(value: js.typedarray.DataView): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setStatus(value: USBTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
+}

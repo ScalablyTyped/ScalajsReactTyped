@@ -10,10 +10,10 @@ Changes the case of all keys of an object
 | ------------------ | :-------------: |
 | Full name          | change-case-object |
 | Keywords           | camel, object, case, change, snake, param |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 135786 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26538.333333333332 |
+| # stars            | 9.0 |
 
 ## Links
 - [Homepage](https://github.com/BinaryThumb/change-case-object#readme)

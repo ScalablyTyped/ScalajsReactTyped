@@ -1,65 +1,50 @@
 package typingsJapgolly.reactNativeIndicators.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeIndicators.mod.SkypeIndicatorProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SkypeIndicator {
-  def apply(
-    animating: js.UndefOr[Boolean] = js.undefined,
-    animationDuration: Int | Double = null,
-    animationEasing: /* value */ Double => CallbackTo[Double] = null,
-    color: String = null,
-    count: Int | Double = null,
-    hidesWhenStopped: js.UndefOr[Boolean] = js.undefined,
-    interaction: js.UndefOr[Boolean] = js.undefined,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
-    size: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SkypeIndicatorProps, 
-    typingsJapgolly.reactNativeIndicators.mod.SkypeIndicator, 
-    Unit, 
-    SkypeIndicatorProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationEasing != null) __obj.updateDynamic("animationEasing")(js.Any.fromFunction1((t0: /* value */ scala.Double) => animationEasing(t0).runNow()))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidesWhenStopped)) __obj.updateDynamic("hidesWhenStopped")(hidesWhenStopped.asInstanceOf[js.Any])
-    if (!js.isUndefined(interaction)) __obj.updateDynamic("interaction")(interaction.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeIndicators.mod.SkypeIndicatorProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeIndicators.mod.SkypeIndicator](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeIndicators.mod.SkypeIndicatorProps])(children: _*)
-  }
   @JSImport("react-native-indicators", "SkypeIndicator")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeIndicators.mod.SkypeIndicator] {
+    
+    inline def animating(value: Boolean): this.type = set("animating", value.asInstanceOf[js.Any])
+    
+    inline def animationDuration(value: Double): this.type = set("animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def animationEasing(value: /* value */ Double => Double): this.type = set("animationEasing", js.Any.fromFunction1(value))
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def count(value: Double): this.type = set("count", value.asInstanceOf[js.Any])
+    
+    inline def hidesWhenStopped(value: Boolean): this.type = set("hidesWhenStopped", value.asInstanceOf[js.Any])
+    
+    inline def interaction(value: Boolean): this.type = set("interaction", value.asInstanceOf[js.Any])
+    
+    inline def maxScale(value: Double): this.type = set("maxScale", value.asInstanceOf[js.Any])
+    
+    inline def minScale(value: Double): this.type = set("minScale", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: SkypeIndicator.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SkypeIndicatorProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

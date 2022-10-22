@@ -2,36 +2,35 @@ package typingsJapgolly.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.sparqljs.sparqljsStrings.CONSTRUCT
-import typingsJapgolly.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ConstructQuery
-  extends Query
-     with BaseQuery {
+  extends StObject
+     with BaseQuery
+     with Query {
+  
   var queryType: CONSTRUCT
+  
   var template: js.UndefOr[js.Array[Triple]] = js.undefined
 }
-
 object ConstructQuery {
-  @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    queryType: CONSTRUCT,
-    `type`: query,
-    base: String = null,
-    template: js.Array[Triple] = null,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): ConstructQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+  
+  inline def apply(prefixes: StringDictionary[String]): ConstructQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "CONSTRUCT")
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[ConstructQuery]
   }
+  
+  extension [Self <: ConstructQuery](x: Self) {
+    
+    inline def setQueryType(value: CONSTRUCT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    
+    inline def setTemplate(value: js.Array[Triple]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTemplateVarargs(value: Triple*): Self = StObject.set(x, "template", js.Array(value*))
+  }
 }
-

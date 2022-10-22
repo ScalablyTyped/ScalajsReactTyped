@@ -1,22 +1,36 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetMessageActionsResponse extends js.Object {
+trait GetMessageActionsResponse extends StObject {
+  
   var data: js.Array[MessageAction]
+  
   var end: js.UndefOr[String] = js.undefined
+  
   var start: js.UndefOr[String] = js.undefined
 }
-
 object GetMessageActionsResponse {
-  @scala.inline
-  def apply(data: js.Array[MessageAction], end: String = null, start: String = null): GetMessageActionsResponse = {
+  
+  inline def apply(data: js.Array[MessageAction]): GetMessageActionsResponse = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetMessageActionsResponse]
   }
+  
+  extension [Self <: GetMessageActionsResponse](x: Self) {
+    
+    inline def setData(value: js.Array[MessageAction]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: MessageAction*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

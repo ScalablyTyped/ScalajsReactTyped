@@ -1,54 +1,39 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Object
-import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateWorkflowData extends Object {
+@js.native
+trait UpdateWorkflowData
+  extends StObject
+     with Accessor {
+  
   /**
-    * An array of features to be updated. This is only relevant when there are multiple candidates to update.
+    * An array of features to be updated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#candidates)
     */
-  var candidates: js.Array[Graphic]
+  var candidates: js.Array[Graphic] = js.native
+  
   /**
     * The object that matches the feature being updated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#editableItem)
     */
-  var editableItem: EditableItem
+  var editableItem: EditableItem = js.native
+  
   /**
-    * The edits used to keep track of a feature being modified.
+    * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being updated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#edits)
     */
-  var edits: Edits
+  var edits: Edits = js.native
+  
   /**
     * The associated [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) for this workflow.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Workflow.html#UpdateWorkflowData)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#viewModel)
     */
-  var viewModel: EditorViewModel
+  var viewModel: EditorViewModel = js.native
 }
-
-object UpdateWorkflowData {
-  @scala.inline
-  def apply(
-    candidates: js.Array[Graphic],
-    constructor: js.Function,
-    editableItem: EditableItem,
-    edits: Edits,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    viewModel: EditorViewModel
-  ): UpdateWorkflowData = {
-    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], editableItem = editableItem.asInstanceOf[js.Any], edits = edits.asInstanceOf[js.Any], viewModel = viewModel.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    __obj.asInstanceOf[UpdateWorkflowData]
-  }
-}
-

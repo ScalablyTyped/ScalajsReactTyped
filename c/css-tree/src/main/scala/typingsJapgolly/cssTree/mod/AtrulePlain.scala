@@ -1,34 +1,43 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AtrulePlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
+  
   var block: BlockPlain | Null
+  
   var name: String
+  
   var prelude: AtrulePreludePlain | Raw | Null
+  
   @JSName("type")
   var type_AtrulePlain: typingsJapgolly.cssTree.cssTreeStrings.Atrule
 }
-
 object AtrulePlain {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.Atrule,
-    block: BlockPlain = null,
-    loc: CssLocation = null,
-    prelude: AtrulePreludePlain | Raw = null
-  ): AtrulePlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (prelude != null) __obj.updateDynamic("prelude")(prelude.asInstanceOf[js.Any])
+  
+  inline def apply(name: String): AtrulePlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], block = null, prelude = null)
+    __obj.updateDynamic("type")("Atrule")
     __obj.asInstanceOf[AtrulePlain]
   }
+  
+  extension [Self <: AtrulePlain](x: Self) {
+    
+    inline def setBlock(value: BlockPlain): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPrelude(value: AtrulePreludePlain | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
+    
+    inline def setPreludeNull: Self = StObject.set(x, "prelude", null)
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.Atrule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

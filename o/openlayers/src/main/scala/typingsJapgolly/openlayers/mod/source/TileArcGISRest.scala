@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.olx.source.TileArcGISRestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -32,8 +32,9 @@ import scala.scalajs.js.annotation._
   *     options.
   * @api
   */
-class TileArcGISRest () extends TileImage {
+open class TileArcGISRest () extends TileImage {
   def this(opt_options: TileArcGISRestOptions) = this()
+  
   /**
     * Get the user-provided params, i.e. those passed to the constructor through
     * the "params" option, and possibly updated using the updateParams method.
@@ -41,6 +42,7 @@ class TileArcGISRest () extends TileImage {
     * @api
     */
   def getParams(): GlobalObject = js.native
+  
   /**
     * Update the user-provided params.
     * @param params Params.
@@ -48,4 +50,3 @@ class TileArcGISRest () extends TileImage {
     */
   def updateParams(params: GlobalObject): Unit = js.native
 }
-

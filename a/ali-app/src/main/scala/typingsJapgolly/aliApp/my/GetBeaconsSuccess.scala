@@ -1,27 +1,38 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetBeaconsSuccess extends js.Object {
+trait GetBeaconsSuccess extends StObject {
+  
   var beacons: js.Array[Beacon]
+  
   /**
-  		 * errorCode=0 ,接口调用成功
-  		 */
+    * errorCode=0 ,接口调用成功
+    */
   var errCode: String
+  
   /**
-  		 * ok
-  		 */
+    * ok
+    */
   var errMsg: String
 }
-
 object GetBeaconsSuccess {
-  @scala.inline
-  def apply(beacons: js.Array[Beacon], errCode: String, errMsg: String): GetBeaconsSuccess = {
-    val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(beacons: js.Array[Beacon], errCode: String, errMsg: String): GetBeaconsSuccess = {
+    val __obj = js.Dynamic.literal(beacons = beacons.asInstanceOf[js.Any], errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBeaconsSuccess]
   }
+  
+  extension [Self <: GetBeaconsSuccess](x: Self) {
+    
+    inline def setBeacons(value: js.Array[Beacon]): Self = StObject.set(x, "beacons", value.asInstanceOf[js.Any])
+    
+    inline def setBeaconsVarargs(value: Beacon*): Self = StObject.set(x, "beacons", js.Array(value*))
+    
+    inline def setErrCode(value: String): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

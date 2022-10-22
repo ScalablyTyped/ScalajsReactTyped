@@ -1,47 +1,24 @@
 package typingsJapgolly.storybookAddonKnobs.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.storybookAddonKnobs.textMod.TextTypeKnobValue
-import typingsJapgolly.storybookAddonKnobs.textMod.default
-import typingsJapgolly.storybookAddonKnobs.typesTypesMod.KnobControlConfig
-import typingsJapgolly.storybookAddonKnobs.typesTypesMod.KnobControlProps
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesMod.default.text
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesTextMod.TextTypeKnobValue
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesTypesMod.KnobControlConfig
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesTypesMod.KnobControlProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
-  def apply(
-    knob: KnobControlConfig[TextTypeKnobValue],
-    onChange: TextTypeKnobValue => CallbackTo[TextTypeKnobValue],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    KnobControlProps[TextTypeKnobValue], 
-    default, 
-    Unit, 
-    KnobControlProps[TextTypeKnobValue]
-  ] = {
-    val __obj = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.storybookAddonKnobs.textMod.TextTypeKnobValue) => onChange(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.storybookAddonKnobs.typesTypesMod.KnobControlProps[typingsJapgolly.storybookAddonKnobs.textMod.TextTypeKnobValue], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.storybookAddonKnobs.textMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.storybookAddonKnobs.typesTypesMod.KnobControlProps[typingsJapgolly.storybookAddonKnobs.textMod.TextTypeKnobValue]])(children: _*)
+  inline def apply(knob: KnobControlConfig[TextTypeKnobValue], onChange: TextTypeKnobValue => TextTypeKnobValue): Default[text] = {
+    val __props = js.Dynamic.literal(knob = knob.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
+    new Default[text](js.Array(this.component, __props.asInstanceOf[KnobControlProps[TextTypeKnobValue]]))
   }
-  @JSImport("@storybook/addon-knobs/dist/components/types/Text", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@storybook/addon-knobs/dist/components/types", "default.text")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: KnobControlProps[TextTypeKnobValue]): Default[text] = new Default[text](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

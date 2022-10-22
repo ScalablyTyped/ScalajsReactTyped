@@ -1,38 +1,31 @@
 package typingsJapgolly.glReact.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.glReact.mod.BusProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Bus {
-  def apply(
-    index: Double,
-    uniform: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Any = null
-  ): UnmountedWithRoot[BusProps, typingsJapgolly.glReact.mod.Bus, Unit, BusProps] = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (uniform != null) __obj.updateDynamic("uniform")(uniform.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.glReact.mod.BusProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.glReact.mod.Bus](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.glReact.mod.BusProps])
+  inline def apply(index: Double): Builder = {
+    val __props = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[BusProps]))
   }
+  
   @JSImport("gl-react", "Bus")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.glReact.mod.Bus] {
+    
+    inline def children(value: Any): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def uniform(value: String): this.type = set("uniform", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: BusProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

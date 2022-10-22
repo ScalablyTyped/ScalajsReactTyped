@@ -1,7 +1,7 @@
 
 # Scala.js typings for prism-react-renderer
 
-Typings are for version 1.0.2
+Typings are for version 1.3.5
 
 ## Library description:
 Renders highlighted Prism output using React
@@ -10,10 +10,10 @@ Renders highlighted Prism output using React
 | ------------------ | :-------------: |
 | Full name          | prism-react-renderer |
 | Keywords           | - |
-| # releases         | 19 |
-| # dependents       | 105 |
-| # downloads        | 1734831 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 1828764.3333333333 |
+| # stars            | 1445.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/prism-react-renderer#readme)

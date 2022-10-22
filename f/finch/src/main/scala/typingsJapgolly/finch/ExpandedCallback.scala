@@ -1,31 +1,42 @@
 package typingsJapgolly.finch
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExpandedCallback extends js.Object {
+trait ExpandedCallback extends StObject {
+  
   var load: js.UndefOr[FinchCallback] = js.undefined
+  
   var setup: js.UndefOr[FinchCallback] = js.undefined
+  
   var teardown: js.UndefOr[FinchCallback] = js.undefined
+  
   var unload: js.UndefOr[FinchCallback] = js.undefined
 }
-
 object ExpandedCallback {
-  @scala.inline
-  def apply(
-    load: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => CallbackTo[js.Any] = null,
-    setup: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => CallbackTo[js.Any] = null,
-    teardown: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => CallbackTo[js.Any] = null,
-    unload: (/* bindings */ js.UndefOr[js.Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => CallbackTo[js.Any] = null
-  ): ExpandedCallback = {
+  
+  inline def apply(): ExpandedCallback = {
     val __obj = js.Dynamic.literal()
-    if (load != null) __obj.updateDynamic("load")(js.Any.fromFunction2((t0: /* bindings */ js.UndefOr[js.Any], t1: /* childCallback */ js.UndefOr[js.Function0[scala.Unit]]) => load(t0, t1).runNow()))
-    if (setup != null) __obj.updateDynamic("setup")(js.Any.fromFunction2((t0: /* bindings */ js.UndefOr[js.Any], t1: /* childCallback */ js.UndefOr[js.Function0[scala.Unit]]) => setup(t0, t1).runNow()))
-    if (teardown != null) __obj.updateDynamic("teardown")(js.Any.fromFunction2((t0: /* bindings */ js.UndefOr[js.Any], t1: /* childCallback */ js.UndefOr[js.Function0[scala.Unit]]) => teardown(t0, t1).runNow()))
-    if (unload != null) __obj.updateDynamic("unload")(js.Any.fromFunction2((t0: /* bindings */ js.UndefOr[js.Any], t1: /* childCallback */ js.UndefOr[js.Function0[scala.Unit]]) => unload(t0, t1).runNow()))
     __obj.asInstanceOf[ExpandedCallback]
   }
+  
+  extension [Self <: ExpandedCallback](x: Self) {
+    
+    inline def setLoad(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
+    
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    
+    inline def setSetup(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "setup", js.Any.fromFunction2(value))
+    
+    inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+    
+    inline def setTeardown(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "teardown", js.Any.fromFunction2(value))
+    
+    inline def setTeardownUndefined: Self = StObject.set(x, "teardown", js.undefined)
+    
+    inline def setUnload(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "unload", js.Any.fromFunction2(value))
+    
+    inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
+  }
 }
-

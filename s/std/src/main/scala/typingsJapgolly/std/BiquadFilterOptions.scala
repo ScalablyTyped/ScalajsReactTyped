@@ -1,39 +1,55 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BiquadFilterOptions extends AudioNodeOptions {
+trait BiquadFilterOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var Q: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var detune: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var frequency: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var gain: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var `type`: js.UndefOr[BiquadFilterType] = js.undefined
 }
-
 object BiquadFilterOptions {
-  @scala.inline
-  def apply(
-    Q: Int | Double = null,
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    detune: Int | Double = null,
-    frequency: Int | Double = null,
-    gain: Int | Double = null,
-    `type`: BiquadFilterType = null
-  ): BiquadFilterOptions = {
+  
+  inline def apply(): BiquadFilterOptions = {
     val __obj = js.Dynamic.literal()
-    if (Q != null) __obj.updateDynamic("Q")(Q.asInstanceOf[js.Any])
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (detune != null) __obj.updateDynamic("detune")(detune.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
-    if (gain != null) __obj.updateDynamic("gain")(gain.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BiquadFilterOptions]
   }
+  
+  extension [Self <: BiquadFilterOptions](x: Self) {
+    
+    inline def setDetune(value: Double): Self = StObject.set(x, "detune", value.asInstanceOf[js.Any])
+    
+    inline def setDetuneUndefined: Self = StObject.set(x, "detune", js.undefined)
+    
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    
+    inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+    
+    inline def setQ(value: Double): Self = StObject.set(x, "Q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "Q", js.undefined)
+    
+    inline def setType(value: BiquadFilterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

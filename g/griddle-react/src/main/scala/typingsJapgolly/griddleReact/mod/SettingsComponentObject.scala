@@ -1,20 +1,28 @@
 package typingsJapgolly.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SettingsComponentObject extends js.Object {
-  var component: js.UndefOr[GriddleComponent[_]] = js.undefined
+trait SettingsComponentObject extends StObject {
+  
+  var component: js.UndefOr[GriddleComponent[Any]] = js.undefined
+  
   var order: Double
 }
-
 object SettingsComponentObject {
-  @scala.inline
-  def apply(order: Double, component: GriddleComponent[_] = null): SettingsComponentObject = {
+  
+  inline def apply(order: Double): SettingsComponentObject = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettingsComponentObject]
   }
+  
+  extension [Self <: SettingsComponentObject](x: Self) {
+    
+    inline def setComponent(value: GriddleComponent[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+  }
 }
-

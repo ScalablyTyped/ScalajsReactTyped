@@ -1,10 +1,9 @@
 package typingsJapgolly.paper.paper
 
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.SVGElement
+import org.scalajs.dom.SVGElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * A Project object in Paper.js is what usually is referred to as the
@@ -24,60 +23,21 @@ import scala.scalajs.js.annotation._
   * An array of all open projects is accessible through the
   * {@link PaperScope#projects} variable.
   */
-@JSGlobal("paper.Project")
 @js.native
-class Project protected () extends js.Object {
-  def this(element: String) = this()
-  def this(element: Size) = this()
-  /** 
-    * Creates a Paper.js project containing one empty {@link Layer}, referenced
-    * by {@link Project#activeLayer}.
-    * 
-    * Note that when working with PaperScript, a project is automatically
-    * created for us and the {@link PaperScope#project} variable points to it.
-    * 
-    * @param element - the HTML canvas element
-    * that should be used as the element for the view, or an ID string by which
-    * to find the element, or the size of the canvas to be created for usage in
-    * a web worker.
-    */
-  def this(element: HTMLCanvasElement) = this()
-  /** 
-    * The layer which is currently active. New items will be created on this
-    * layer by default.
-    */
-  val activeLayer: Layer = js.native
-  /** 
-    * The currently active path style. All selected items and newly
-    * created items will be styled with this style.
-    */
-  var currentStyle: Style = js.native
-  /** 
-    * The index of the project in the {@link PaperScope#projects} list.
-    */
-  val index: Double = js.native
-  /** 
-    * The layers contained within the project.
-    */
-  val layers: js.Array[Layer] = js.native
-  /** 
-    * The selected items contained within the project.
-    */
-  val selectedItems: js.Array[Item] = js.native
-  /** 
-    * The symbol definitions shared by all symbol items contained place ind
-    * project.
-    */
-  val symbolDefinitions: js.Array[SymbolDefinition] = js.native
-  /** 
-    * The reference to the project's view.
-    */
-  val view: View = js.native
+trait Project extends StObject {
+  
   /** 
     * Activates this project, so all newly created items will be placed
     * in it.
     */
   def activate(): Unit = js.native
+  
+  /** 
+    * The layer which is currently active. New items will be created on this
+    * layer by default.
+    */
+  val activeLayer: Layer = js.native
+  
   /** 
     * Adds the specified layer at the end of the this project's {@link #layers}
     * list.
@@ -87,14 +47,23 @@ class Project protected () extends js.Object {
     * @return the added layer, or `null` if adding was not possible
     */
   def addLayer(layer: Layer): Layer = js.native
+  
   /** 
     * Clears the project by removing all {@link Project#layers}.
     */
   def clear(): Unit = js.native
+  
+  /** 
+    * The currently active path style. All selected items and newly
+    * created items will be styled with this style.
+    */
+  var currentStyle: Style = js.native
+  
   /** 
     * Deselects all selected items in the project.
     */
   def deselectAll(): Unit = js.native
+  
   /** 
     * Exports (serializes) the project with all its layers and child items to a
     * JSON data object or string.
@@ -110,6 +79,7 @@ class Project protected () extends js.Object {
     */
   def exportJSON(): String = js.native
   def exportJSON(options: js.Object): String = js.native
+  
   /** 
     * Exports the project with all its layers and child items as an SVG DOM,
     * all contained in one top level SVG group node.
@@ -140,6 +110,7 @@ class Project protected () extends js.Object {
     */
   def exportSVG(): SVGElement | String = js.native
   def exportSVG(options: js.Object): SVGElement | String = js.native
+  
   def getItem(options: js.Function): Item = js.native
   /** 
     * Fetch the first item contained within the project whose properties
@@ -157,6 +128,7 @@ class Project protected () extends js.Object {
     * @return the first item in the project matching the given criteria
     */
   def getItem(options: js.Object): Item = js.native
+  
   def getItems(options: js.Function): js.Array[Item] = js.native
   /** 
     * Fetch items contained within the project whose properties match the
@@ -194,6 +166,7 @@ class Project protected () extends js.Object {
     * @return the list of matching items contained in the project
     */
   def getItems(options: js.Object): js.Array[Item] = js.native
+  
   /** 
     * Performs a hit-test on the items contained within the project at the
     * location of the specified point.
@@ -239,6 +212,7 @@ class Project protected () extends js.Object {
     */
   def hitTest(point: Point): HitResult = js.native
   def hitTest(point: Point, options: js.Object): HitResult = js.native
+  
   /** 
     * Performs a hit-test on the item and its children (if it is a {@link
     * Group} or {@link Layer}) at the location of the specified point,
@@ -256,6 +230,7 @@ class Project protected () extends js.Object {
     */
   def hitTestAll(point: Point): js.Array[HitResult] = js.native
   def hitTestAll(point: Point, options: js.Object): js.Array[HitResult] = js.native
+  
   /** 
     * Imports (deserializes) the stored JSON data into the project.
     * Note that the project is not cleared first. You can call
@@ -266,6 +241,7 @@ class Project protected () extends js.Object {
     * @return the imported item
     */
   def importJSON(json: String): Item = js.native
+  
   def importSVG(svg: String): Item = js.native
   def importSVG(svg: String, onLoad: js.Function): Item = js.native
   def importSVG(svg: String, options: js.Object): Item = js.native
@@ -298,7 +274,7 @@ class Project protected () extends js.Object {
     * @return the newly created Paper.js item containing the converted
     *     SVG content
     */
-  def importSVG(svg: typingsJapgolly.std.SVGElement): Item = js.native
+  def importSVG(svg: SVGElement): Item = js.native
   /** 
     * Imports the provided external SVG file, converts it into Paper.js items
     * and adds them to the active layer of this project.
@@ -314,8 +290,14 @@ class Project protected () extends js.Object {
     * @return the newly created Paper.js item containing the converted
     *     SVG content
     */
-  def importSVG(svg: typingsJapgolly.std.SVGElement, onLoad: js.Function): Item = js.native
-  def importSVG(svg: typingsJapgolly.std.SVGElement, options: js.Object): Item = js.native
+  def importSVG(svg: SVGElement, onLoad: js.Function): Item = js.native
+  def importSVG(svg: SVGElement, options: js.Object): Item = js.native
+  
+  /** 
+    * The index of the project in the {@link PaperScope#projects} list.
+    */
+  val index: Double = js.native
+  
   /** 
     * Inserts the specified layer at the specified index in this project's
     * {@link #layers} list.
@@ -326,18 +308,41 @@ class Project protected () extends js.Object {
     * @return the added layer, or `null` if adding was not possible
     */
   def insertLayer(index: Double, layer: Layer): Layer = js.native
+  
   /** 
     * Checks whether the project has any content or not.
     */
   def isEmpty(): Boolean = js.native
+  
+  /** 
+    * The layers contained within the project.
+    */
+  val layers: js.Array[Layer] = js.native
+  
   /** 
     * Removes this project from the {@link PaperScope#projects} list, and also
     * removes its view, if one was defined.
     */
   def remove(): Unit = js.native
+  
   /** 
     * Selects all items in the project.
     */
   def selectAll(): Unit = js.native
+  
+  /** 
+    * The selected items contained within the project.
+    */
+  val selectedItems: js.Array[Item] = js.native
+  
+  /** 
+    * The symbol definitions shared by all symbol items contained place ind
+    * project.
+    */
+  val symbolDefinitions: js.Array[SymbolDefinition] = js.native
+  
+  /** 
+    * The reference to the project's view.
+    */
+  val view: View = js.native
 }
-

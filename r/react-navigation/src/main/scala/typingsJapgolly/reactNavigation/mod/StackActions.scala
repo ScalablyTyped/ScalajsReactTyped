@@ -6,30 +6,52 @@ import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashPOP
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashPUSH
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
 import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashRESET
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation", "StackActions")
-@js.native
-object StackActions extends js.Object {
+object StackActions {
+  
+  @JSImport("react-navigation", "StackActions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-navigation", "StackActions.COMPLETE_TRANSITION")
+  @js.native
   val COMPLETE_TRANSITION: NavigationSlashCOMPLETE_TRANSITION = js.native
-  @JSName("POP")
+  
+  @JSImport("react-navigation", "StackActions.POP")
+  @js.native
   val POP_ : NavigationSlashPOP = js.native
+  
+  @JSImport("react-navigation", "StackActions.POP_TO_TOP")
+  @js.native
   val POP_TO_TOP: NavigationSlashPOP_TO_TOP = js.native
-  @JSName("PUSH")
+  
+  @JSImport("react-navigation", "StackActions.PUSH")
+  @js.native
   val PUSH_ : NavigationSlashPUSH = js.native
-  @JSName("REPLACE")
+  
+  @JSImport("react-navigation", "StackActions.REPLACE")
+  @js.native
   val REPLACE_ : NavigationSlashREPLACE = js.native
-  @JSName("RESET")
+  
+  @JSImport("react-navigation", "StackActions.RESET")
+  @js.native
   val RESET_ : NavigationSlashRESET = js.native
-  def completeTransition(): NavigationCompleteTransitionAction = js.native
-  def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = js.native
-  def pop(options: NavigationPopActionPayload): NavigationPopAction = js.native
-  def popToTop(): NavigationPopToTopAction = js.native
-  def popToTop(options: NavigationPopToTopActionPayload): NavigationPopToTopAction = js.native
-  def push(options: NavigationPushActionPayload): NavigationPushAction = js.native
-  def replace(options: NavigationReplaceActionPayload): NavigationReplaceAction = js.native
-  def reset(options: NavigationResetActionPayload): NavigationResetAction = js.native
+  
+  inline def completeTransition(): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")().asInstanceOf[NavigationCompleteTransitionAction]
+  inline def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")(payload.asInstanceOf[js.Any]).asInstanceOf[NavigationCompleteTransitionAction]
+  
+  inline def pop(): NavigationPopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[NavigationPopAction]
+  inline def pop(options: NavigationPopActionPayload): NavigationPopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPopAction]
+  
+  inline def popToTop(): NavigationPopToTopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[NavigationPopToTopAction]
+  inline def popToTop(options: NavigationPopToTopActionPayload): NavigationPopToTopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPopToTopAction]
+  
+  inline def push(options: NavigationPushActionPayload): NavigationPushAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPushAction]
+  
+  inline def replace(options: NavigationReplaceActionPayload): NavigationReplaceAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationReplaceAction]
+  
+  inline def reset(options: NavigationResetActionPayload): NavigationResetAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationResetAction]
 }
-

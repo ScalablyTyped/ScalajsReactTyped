@@ -10,10 +10,10 @@ The Coinbase API for Node.js
 | ------------------ | :-------------: |
 | Full name          | coinbase |
 | Keywords           | API, bitcoin, coinbase, real-time, payments |
-| # releases         | 3 |
-| # dependents       | 15 |
-| # downloads        | 46463 |
-| # stars            | 11 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14744.0 |
+| # stars            | 360.0 |
 
 ## Links
 - [Homepage](https://github.com/coinbase/coinbase-node)

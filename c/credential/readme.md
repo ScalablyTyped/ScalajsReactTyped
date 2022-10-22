@@ -11,14 +11,11 @@ Easy password hashing and verification in Node. Protects against brute force, ra
 | Full name          | credential |
 | Keywords           | password, passwords, hash, auth, authorization, authentication, security, login, sign in, salt, rainbow, brute, stretching, PBKDF2 |
 | # releases         | 1 |
-| # dependents       | 21 |
-| # downloads        | 60346 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 10366.333333333334 |
+| # stars            | 349.0 |
 
 ## Links
-- [Homepage](https://github.com/ericelliott/credential#readme)
-- [Bugs](https://github.com/ericelliott/credential/issues)
-- [Repository](https://github.com/ericelliott/credential)
 - [Npm](https://www.npmjs.com/package/credential)
     
 

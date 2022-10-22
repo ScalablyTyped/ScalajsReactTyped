@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TiffCompressionMode extends js.Object
-
+sealed trait TiffCompressionMode extends StObject
 /** Specifies the compression mode used for TIFF images. */
 @JSGlobal("Windows.Graphics.Imaging.TiffCompressionMode")
 @js.native
-object TiffCompressionMode extends js.Object {
+object TiffCompressionMode extends StObject {
+  
   /** The compression will be automatically selected. */
   @js.native
-  sealed trait automatic extends TiffCompressionMode
+  sealed trait automatic
+    extends StObject
+       with TiffCompressionMode
   
   /** CCITT3 compression will be applied. */
   @js.native
-  sealed trait ccitt3 extends TiffCompressionMode
+  sealed trait ccitt3
+    extends StObject
+       with TiffCompressionMode
   
   /** CCITT4compression will be applied. */
   @js.native
-  sealed trait ccitt4 extends TiffCompressionMode
+  sealed trait ccitt4
+    extends StObject
+       with TiffCompressionMode
   
   /** LZW compression will be applied. */
   @js.native
-  sealed trait lzw extends TiffCompressionMode
+  sealed trait lzw
+    extends StObject
+       with TiffCompressionMode
   
   /** LZWH Differencing compression will be applied. */
   @js.native
-  sealed trait lzwhDifferencing extends TiffCompressionMode
+  sealed trait lzwhDifferencing
+    extends StObject
+       with TiffCompressionMode
   
   /** No compression will be applied. */
   @js.native
-  sealed trait none extends TiffCompressionMode
+  sealed trait none
+    extends StObject
+       with TiffCompressionMode
   
   /** RLE compression will be applied. */
   @js.native
-  sealed trait rle extends TiffCompressionMode
+  sealed trait rle
+    extends StObject
+       with TiffCompressionMode
   
   /** ZIP compression will be applied. */
   @js.native
-  sealed trait zip extends TiffCompressionMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TiffCompressionMode with Double] = js.native
-  /* 0 */ @js.native
-  object automatic extends TopLevel[automatic with Double]
-  
-  /* 2 */ @js.native
-  object ccitt3 extends TopLevel[ccitt3 with Double]
-  
-  /* 3 */ @js.native
-  object ccitt4 extends TopLevel[ccitt4 with Double]
-  
-  /* 4 */ @js.native
-  object lzw extends TopLevel[lzw with Double]
-  
-  /* 7 */ @js.native
-  object lzwhDifferencing extends TopLevel[lzwhDifferencing with Double]
-  
-  /* 1 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object rle extends TopLevel[rle with Double]
-  
-  /* 6 */ @js.native
-  object zip extends TopLevel[zip with Double]
-  
+  sealed trait zip
+    extends StObject
+       with TiffCompressionMode
 }
-

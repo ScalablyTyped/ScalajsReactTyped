@@ -1,35 +1,42 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.mod.MoneyData
-import typingsJapgolly.mangopay2NodejsSdk.mod.eMoney.EMoneyData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsMoneyMod.money.EMoneyData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.EMoney")
 @js.native
-class EMoney protected () extends EMoneyData {
+open class EMoney protected ()
+  extends StObject
+     with EMoneyData {
   def this(data: EMoneyData) = this()
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
   /**
     * The amount of money that has been credited to this user
     */
   /* CompleteClass */
-  override var CreditedEMoney: MoneyData = js.native
+  var CreditedEMoney: MoneyData = js.native
+  
   /**
     * The amount of money that has been debited from this user
     */
   /* CompleteClass */
-  override var DebitedEMoney: MoneyData = js.native
+  var DebitedEMoney: MoneyData = js.native
+  
   /* CompleteClass */
-  override var Id: String = js.native
+  var Id: String = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
+  
   /**
     * The object owner's UserId
     */
   /* CompleteClass */
-  override var UserId: String = js.native
+  var UserId: String = js.native
 }
-

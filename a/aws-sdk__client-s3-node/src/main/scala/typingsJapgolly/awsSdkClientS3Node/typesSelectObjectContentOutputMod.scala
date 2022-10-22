@@ -1,24 +1,37 @@
 package typingsJapgolly.awsSdkClientS3Node
 
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
 import typingsJapgolly.awsSdkClientS3Node.typesSelectObjectContentEventStreamMod.UnmarshalledSelectObjectContentEventStream
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/SelectObjectContentOutput", JSImport.Namespace)
-@js.native
-object typesSelectObjectContentOutputMod extends js.Object {
-  @js.native
+object typesSelectObjectContentOutputMod {
+  
   trait SelectObjectContentOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
+    
     /**
       * _SelectObjectContentEventStream shape
       */
-    var Payload: js.UndefOr[UnmarshalledSelectObjectContentEventStream] = js.native
+    var Payload: js.UndefOr[UnmarshalledSelectObjectContentEventStream] = js.undefined
   }
-  
+  object SelectObjectContentOutput {
+    
+    inline def apply($metadata: ResponseMetadata): SelectObjectContentOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectObjectContentOutput]
+    }
+    
+    extension [Self <: SelectObjectContentOutput](x: Self) {
+      
+      inline def setPayload(value: UnmarshalledSelectObjectContentEventStream): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+      
+      inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    }
+  }
 }
-

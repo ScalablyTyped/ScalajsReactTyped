@@ -1,14 +1,16 @@
 package typingsJapgolly.mdurl
 
 import typingsJapgolly.mdurl.mod.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mdurl/parse", JSImport.Namespace)
-@js.native
-object parseMod extends js.Object {
-  def apply(input: String): Url = js.native
-  def apply(input: String, slashesDenoteHost: Boolean): Url = js.native
+object parseMod {
+  
+  inline def apply(input: String): Url = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Url]
+  inline def apply(input: String, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
+  
+  @JSImport("mdurl/parse", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,56 +1,65 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Midi
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrtUwp.Windows.Devices.Enumeration.DeviceInformation
-import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the Microsoft GS wavetable software synthesizer, included in Windows. This synthesizer provides a Roland GS sound set, which includes and extends the General MIDI sound set. */
-@JSGlobal("Windows.Devices.Midi.MidiSynthesizer")
-@js.native
-abstract class MidiSynthesizer () extends js.Object {
+trait MidiSynthesizer extends StObject {
+  
   /** Gets the audio output device being used by this instance of the Microsoft MIDI synthesizer. */
-  var audioDevice: DeviceInformation = js.native
-  /** Gets the device ID of the Microsoft MIDI synthesizer. Note that all instances of the synthesizer have the same ID. */
-  var deviceId: String = js.native
-  /** Gets or sets the output volume of this instance of the Microsoft MIDI synthesizer. */
-  var volume: Double = js.native
+  var audioDevice: DeviceInformation
+  
   /** Closes this instance of the Microsoft MIDI synthesizer. It is a best practice for the caller to use this method to clear resources used by the MIDI object. */
-  def close(): Unit = js.native
+  def close(): Unit
+  
+  /** Gets the device ID of the Microsoft MIDI synthesizer. Note that all instances of the synthesizer have the same ID. */
+  var deviceId: String
+  
   /**
     * Sends an array of bytes through the synthesizer's out port . This enables you to send your data as a byte array instead of as a defined MIDI message.
     * @param midiData The array of bytes to send.
     */
-  def sendBuffer(midiData: IBuffer): Unit = js.native
+  def sendBuffer(midiData: IBuffer): Unit
+  
   /**
     * Sends a MIDI message through the Microsoft MIDI synthesizer's out port .
     * @param midiMessage The MIDI message to send.
     */
-  def sendMessage(midiMessage: IMidiMessage): Unit = js.native
+  def sendMessage(midiMessage: IMidiMessage): Unit
+  
+  /** Gets or sets the output volume of this instance of the Microsoft MIDI synthesizer. */
+  var volume: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Midi.MidiSynthesizer")
-@js.native
-object MidiSynthesizer extends js.Object {
-  /**
-    * Creates a new instance of the Microsoft MIDI synthesizer that uses the system's default audio output device.
-    * @return An instance of the Windows MIDI synthesizer.
-    */
-  def createAsync(): IPromiseWithIAsyncOperation[MidiSynthesizer] = js.native
-  /**
-    * Creates a new instance of the Microsoft MIDI synthesizer with a specified audio output device.
-    * @param audioDevice The audio output device.
-    * @return An instance of the Microsoft MIDI synthesizer.
-    */
-  def createAsync(audioDevice: DeviceInformation): IPromiseWithIAsyncOperation[MidiSynthesizer] = js.native
-  /**
-    * Determines whether a particular device is an instance of the Microsoft MIDI synthesizer. When all MIDI out ports on the system are enumerated, this method can be used to identify which of them is the Microsoft MIDI synthesizer.
-    * @param midiDevice An object that represents the device in question.
-    * @return True if the device is the Microsoft MIDI synthesizer; otherwise, false.
-    */
-  def isSynthesizer(midiDevice: DeviceInformation): Boolean = js.native
+object MidiSynthesizer {
+  
+  inline def apply(
+    audioDevice: DeviceInformation,
+    close: Callback,
+    deviceId: String,
+    sendBuffer: IBuffer => Callback,
+    sendMessage: IMidiMessage => Callback,
+    volume: Double
+  ): MidiSynthesizer = {
+    val __obj = js.Dynamic.literal(audioDevice = audioDevice.asInstanceOf[js.Any], close = close.toJsFn, deviceId = deviceId.asInstanceOf[js.Any], sendBuffer = js.Any.fromFunction1((t0: IBuffer) => sendBuffer(t0).runNow()), sendMessage = js.Any.fromFunction1((t0: IMidiMessage) => sendMessage(t0).runNow()), volume = volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MidiSynthesizer]
+  }
+  
+  extension [Self <: MidiSynthesizer](x: Self) {
+    
+    inline def setAudioDevice(value: DeviceInformation): Self = StObject.set(x, "audioDevice", value.asInstanceOf[js.Any])
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setSendBuffer(value: IBuffer => Callback): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1((t0: IBuffer) => value(t0).runNow()))
+    
+    inline def setSendMessage(value: IMidiMessage => Callback): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1((t0: IMidiMessage) => value(t0).runNow()))
+    
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+  }
 }
-

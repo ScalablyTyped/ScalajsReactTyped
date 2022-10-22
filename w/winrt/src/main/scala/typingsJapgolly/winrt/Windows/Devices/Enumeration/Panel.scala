@@ -1,59 +1,47 @@
 package typingsJapgolly.winrt.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Panel extends js.Object
-
+sealed trait Panel extends StObject
 @JSGlobal("Windows.Devices.Enumeration.Panel")
 @js.native
-object Panel extends js.Object {
-  @js.native
-  sealed trait back extends Panel
+object Panel extends StObject {
   
   @js.native
-  sealed trait bottom extends Panel
+  sealed trait back
+    extends StObject
+       with Panel
   
   @js.native
-  sealed trait front extends Panel
+  sealed trait bottom
+    extends StObject
+       with Panel
   
   @js.native
-  sealed trait left extends Panel
+  sealed trait front
+    extends StObject
+       with Panel
   
   @js.native
-  sealed trait right extends Panel
+  sealed trait left
+    extends StObject
+       with Panel
   
   @js.native
-  sealed trait top extends Panel
+  sealed trait right
+    extends StObject
+       with Panel
   
   @js.native
-  sealed trait unknown extends Panel
+  sealed trait top
+    extends StObject
+       with Panel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Panel with Double] = js.native
-  /* 2 */ @js.native
-  object back extends TopLevel[back with Double]
-  
-  /* 4 */ @js.native
-  object bottom extends TopLevel[bottom with Double]
-  
-  /* 1 */ @js.native
-  object front extends TopLevel[front with Double]
-  
-  /* 5 */ @js.native
-  object left extends TopLevel[left with Double]
-  
-  /* 6 */ @js.native
-  object right extends TopLevel[right with Double]
-  
-  /* 3 */ @js.native
-  object top extends TopLevel[top with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with Panel
 }
-

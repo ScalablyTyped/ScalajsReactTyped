@@ -2,14 +2,16 @@ package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InputDecorator
-  extends Instantiable0[js.Any]
-     with Instantiable1[/* bindingPropertyName */ String, js.Any] {
+  extends StObject
+     with Instantiable0[Any]
+     with Instantiable1[/* bindingPropertyName */ String, Any] {
+  
   /**
     * Decorator that marks a class field as an input property and supplies configuration metadata.
     * The input property is bound to a DOM property in the template. During change detection,
@@ -53,9 +55,8 @@ trait InputDecorator
     * class App {}
     * ```
     *
-    * @see [Input and Output properties](guide/template-syntax#input-and-output-properties)
+    * @see [Input and Output properties](guide/inputs-outputs)
     */
-  def apply(): js.Any = js.native
-  def apply(bindingPropertyName: String): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(bindingPropertyName: String): Any = js.native
 }
-

@@ -1,160 +1,443 @@
 package typingsJapgolly.webpack.mod
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.webpack.mod.Options.Devtool
-import typingsJapgolly.webpack.mod.Options.Optimization
-import typingsJapgolly.webpack.mod.Options.Performance
+import typingsJapgolly.webpack.anon.File
 import typingsJapgolly.webpack.webpackBooleans.`false`
-import typingsJapgolly.webpack.webpackStrings.`async-node`
-import typingsJapgolly.webpack.webpackStrings.`electron-main`
-import typingsJapgolly.webpack.webpackStrings.`electron-preload`
-import typingsJapgolly.webpack.webpackStrings.`electron-renderer`
-import typingsJapgolly.webpack.webpackStrings.`node-webkit`
-import typingsJapgolly.webpack.webpackStrings.atom
+import typingsJapgolly.webpack.webpackStrings.`amd-require`
+import typingsJapgolly.webpack.webpackStrings.`commonjs-module`
+import typingsJapgolly.webpack.webpackStrings.`commonjs-static`
+import typingsJapgolly.webpack.webpackStrings.`errors-only`
+import typingsJapgolly.webpack.webpackStrings.`errors-warnings`
+import typingsJapgolly.webpack.webpackStrings.`import`
+import typingsJapgolly.webpack.webpackStrings.`node-commonjs`
+import typingsJapgolly.webpack.webpackStrings.`this`
+import typingsJapgolly.webpack.webpackStrings.`var`
+import typingsJapgolly.webpack.webpackStrings.amd
+import typingsJapgolly.webpack.webpackStrings.assign
+import typingsJapgolly.webpack.webpackStrings.commonjs
+import typingsJapgolly.webpack.webpackStrings.commonjs2
+import typingsJapgolly.webpack.webpackStrings.detailed
 import typingsJapgolly.webpack.webpackStrings.development
-import typingsJapgolly.webpack.webpackStrings.electron
-import typingsJapgolly.webpack.webpackStrings.node
+import typingsJapgolly.webpack.webpackStrings.global
+import typingsJapgolly.webpack.webpackStrings.jsonp
+import typingsJapgolly.webpack.webpackStrings.minimal
+import typingsJapgolly.webpack.webpackStrings.module
 import typingsJapgolly.webpack.webpackStrings.none
+import typingsJapgolly.webpack.webpackStrings.normal
 import typingsJapgolly.webpack.webpackStrings.production
-import typingsJapgolly.webpack.webpackStrings.web
-import typingsJapgolly.webpack.webpackStrings.webworker
+import typingsJapgolly.webpack.webpackStrings.promise
+import typingsJapgolly.webpack.webpackStrings.script
+import typingsJapgolly.webpack.webpackStrings.self
+import typingsJapgolly.webpack.webpackStrings.summary
+import typingsJapgolly.webpack.webpackStrings.system
+import typingsJapgolly.webpack.webpackStrings.umd
+import typingsJapgolly.webpack.webpackStrings.umd2
+import typingsJapgolly.webpack.webpackStrings.verbose
+import typingsJapgolly.webpack.webpackStrings.window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Configuration extends js.Object {
-  /** Set the value of require.amd and define.amd. */
-  var amd: js.UndefOr[StringDictionary[Boolean]] = js.undefined
-  /** Report the first error as a hard error instead of tolerating it. */
+/**
+  * Options object as provided by the user.
+  */
+trait Configuration extends StObject {
+  
+  /**
+  	 * Set the value of `require.amd` and `define.amd`. Or disable AMD support.
+  	 */
+  var amd: js.UndefOr[`false` | StringDictionary[Any]] = js.undefined
+  
+  /**
+  	 * Report the first error as a hard error instead of tolerating it.
+  	 */
   var bail: js.UndefOr[Boolean] = js.undefined
-  /** Cache generated modules and chunks to improve performance for multiple incremental builds. */
-  var cache: js.UndefOr[Boolean | js.Object] = js.undefined
+  
   /**
-    * The base directory (absolute path!) for resolving the `entry` option.
-    * If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
-    */
+  	 * Cache generated modules and chunks to improve performance for multiple incremental builds.
+  	 */
+  var cache: js.UndefOr[Boolean | FileCacheOptions | MemoryCacheOptions] = js.undefined
+  
+  /**
+  	 * The base directory (absolute path!) for resolving the `entry` option. If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
+  	 */
   var context: js.UndefOr[String] = js.undefined
-  /** Choose a style of source mapping to enhance the debugging process. These values can affect build and rebuild speed dramatically. */
-  var devtool: js.UndefOr[Devtool] = js.undefined
-  var entry: js.UndefOr[String | js.Array[String] | Entry | EntryFunc] = js.undefined
+  
   /**
-    * Specify dependencies that shouldn’t be resolved by webpack, but should become dependencies of the resulting bundle.
-    * The kind of the dependency depends on output.libraryTarget.
-    */
-  var externals: js.UndefOr[ExternalsElement | js.Array[ExternalsElement]] = js.undefined
-  /** Enable production optimizations or development hints. */
-  var mode: js.UndefOr[development | production | none] = js.undefined
-  /** Options affecting the normal modules (NormalModuleFactory) */
-  var module: js.UndefOr[Module] = js.undefined
-  /** Name of the configuration. Used when loading multiple configurations. */
-  var name: js.UndefOr[String] = js.undefined
-  /** Include polyfills or mocks for various node stuff */
-  var node: js.UndefOr[Node | `false`] = js.undefined
-  /** Optimization options */
-  var optimization: js.UndefOr[Optimization] = js.undefined
-  /** Options affecting the output. */
-  var output: js.UndefOr[Output] = js.undefined
-  /** Limit the number of parallel processed modules. Can be used to fine tune performance or to get more reliable profiling results */
-  var parallelism: js.UndefOr[Double] = js.undefined
-  /** Performance options */
-  var performance: js.UndefOr[Performance | `false`] = js.undefined
-  /** Add additional plugins to the compiler. */
-  var plugins: js.UndefOr[js.Array[Plugin]] = js.undefined
-  /** Capture timing information for each module. */
-  var profile: js.UndefOr[Boolean] = js.undefined
-  /** Load compiler state from a json file. */
-  var recordsInputPath: js.UndefOr[String] = js.undefined
-  /** Store compiler state to a json file. */
-  var recordsOutputPath: js.UndefOr[String] = js.undefined
-  /** Used for recordsInputPath and recordsOutputPath */
-  var recordsPath: js.UndefOr[String] = js.undefined
-  /** Options affecting the resolving of modules. */
-  var resolve: js.UndefOr[Resolve] = js.undefined
-  /** Like resolve but for loaders. */
-  var resolveLoader: js.UndefOr[ResolveLoader] = js.undefined
-  /** Stats options for logging  */
-  var stats: js.UndefOr[typingsJapgolly.webpack.mod.Options.Stats] = js.undefined
+  	 * References to other configurations to depend on.
+  	 */
+  var dependencies: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * - "web" Compile for usage in a browser-like environment (default).
-    * - "webworker" Compile as WebWorker.
-    * - "node" Compile for usage in a node.js-like environment (use require to load chunks).
-    * - "async-node" Compile for usage in a node.js-like environment (use fs and vm to load chunks async).
-    * - "node-webkit" Compile for usage in webkit, uses jsonp chunk loading but also supports builtin node.js modules plus require(“nw.gui”) (experimental)
-    * - "atom" Compile for usage in electron (formerly known as atom-shell), supports require for modules necessary to run Electron.
-    * - "electron-renderer" Compile for Electron for renderer process, providing a target using JsonpTemplatePlugin, FunctionModulePlugin for browser
-    *   environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
-    * - "electron-preload" Compile for Electron for renderer process, providing a target using NodeTemplatePlugin with asyncChunkLoading set to true,
-    *   FunctionModulePlugin for browser environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
-    * - "electron-main" Compile for Electron for main process.
-    * - "atom" Alias for electron-main.
-    * - "electron" Alias for electron-main.
-    */
-  var target: js.UndefOr[
-    web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-preload` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit])
+  	 * A developer tool to enhance debugging (false | eval | [inline-|hidden-|eval-][nosources-][cheap-[module-]]source-map).
+  	 */
+  var devtool: js.UndefOr[String | `false`] = js.undefined
+  
+  /**
+  	 * The entry point(s) of the compilation.
+  	 */
+  var entry: js.UndefOr[
+    String | (js.Function0[String | EntryObject | js.Array[String] | js.Promise[EntryStatic]]) | EntryObject | js.Array[String]
   ] = js.undefined
-  /** Enter watch mode, which rebuilds on file change. */
+  
+  /**
+  	 * Enables/Disables experiments (experimental features with relax SemVer compatibility).
+  	 */
+  var experiments: js.UndefOr[Experiments_] = js.undefined
+  
+  /**
+  	 * Specify dependencies that shouldn't be resolved by webpack, but should become dependencies of the resulting bundle. The kind of the dependency depends on `output.libraryTarget`.
+  	 */
+  var externals: js.UndefOr[
+    String | js.RegExp | js.Array[ExternalItem] | (ExternalItemObjectKnown & ExternalItemObjectUnknown) | (js.Function2[
+      /* data */ ExternalItemFunctionData, 
+      /* callback */ js.Function2[
+        /* err */ js.UndefOr[js.Error], 
+        /* result */ js.UndefOr[String | Boolean | js.Array[String] | StringDictionary[Any]], 
+        Unit
+      ], 
+      Unit
+    ]) | (js.Function1[/* data */ ExternalItemFunctionData, js.Promise[ExternalItemValue]])
+  ] = js.undefined
+  
+  /**
+  	 * Enable presets of externals for specific targets.
+  	 */
+  var externalsPresets: js.UndefOr[ExternalsPresets] = js.undefined
+  
+  /**
+  	 * Specifies the default type of externals ('amd*', 'umd*', 'system' and 'jsonp' depend on output.libraryTarget set to the same value).
+  	 */
+  var externalsType: js.UndefOr[
+    `import` | `var` | module | assign | `this` | window | self | global | commonjs | commonjs2 | `commonjs-module` | `commonjs-static` | amd | `amd-require` | umd | umd2 | jsonp | system | promise | script | `node-commonjs`
+  ] = js.undefined
+  
+  /**
+  	 * Ignore specific warnings.
+  	 */
+  var ignoreWarnings: js.UndefOr[
+    js.Array[
+      js.RegExp | File | (js.Function2[/* warning */ WebpackError, /* compilation */ Compilation, Boolean])
+    ]
+  ] = js.undefined
+  
+  /**
+  	 * Options for infrastructure level logging.
+  	 */
+  var infrastructureLogging: js.UndefOr[InfrastructureLogging] = js.undefined
+  
+  /**
+  	 * Custom values available in the loader context.
+  	 */
+  var loader: js.UndefOr[Loader] = js.undefined
+  
+  /**
+  	 * Enable production optimizations or development hints.
+  	 */
+  var mode: js.UndefOr[none | development | production] = js.undefined
+  
+  /**
+  	 * Options affecting the normal modules (`NormalModuleFactory`).
+  	 */
+  var module: js.UndefOr[ModuleOptions] = js.undefined
+  
+  /**
+  	 * Name of the configuration. Used when loading multiple configurations.
+  	 */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /**
+  	 * Include polyfills or mocks for various node stuff.
+  	 */
+  var node: js.UndefOr[`false` | NodeOptions] = js.undefined
+  
+  /**
+  	 * Enables/Disables integrated optimizations.
+  	 */
+  var optimization: js.UndefOr[Optimization] = js.undefined
+  
+  /**
+  	 * Options affecting the output of the compilation. `output` options tell webpack how to write the compiled files to disk.
+  	 */
+  var output: js.UndefOr[Output] = js.undefined
+  
+  /**
+  	 * The number of parallel processed modules in the compilation.
+  	 */
+  var parallelism: js.UndefOr[Double] = js.undefined
+  
+  /**
+  	 * Configuration for web performance recommendations.
+  	 */
+  var performance: js.UndefOr[`false` | PerformanceOptions] = js.undefined
+  
+  /**
+  	 * Add additional plugins to the compiler.
+  	 */
+  var plugins: js.UndefOr[
+    js.Array[
+      (js.ThisFunction1[/* this */ Compiler, /* compiler */ Compiler, Unit]) | WebpackPluginInstance
+    ]
+  ] = js.undefined
+  
+  /**
+  	 * Capture timing information for each module.
+  	 */
+  var profile: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+  	 * Store compiler state to a json file.
+  	 */
+  var recordsInputPath: js.UndefOr[String | `false`] = js.undefined
+  
+  /**
+  	 * Load compiler state from a json file.
+  	 */
+  var recordsOutputPath: js.UndefOr[String | `false`] = js.undefined
+  
+  /**
+  	 * Store/Load compiler state from/to a json file. This will result in persistent ids of modules and chunks. An absolute path is expected. `recordsPath` is used for `recordsInputPath` and `recordsOutputPath` if they left undefined.
+  	 */
+  var recordsPath: js.UndefOr[String | `false`] = js.undefined
+  
+  /**
+  	 * Options for the resolver.
+  	 */
+  var resolve: js.UndefOr[ResolveOptionsWebpackOptions] = js.undefined
+  
+  /**
+  	 * Options for the resolver when resolving loaders.
+  	 */
+  var resolveLoader: js.UndefOr[ResolveOptionsWebpackOptions] = js.undefined
+  
+  /**
+  	 * Options affecting how file system snapshots are created and validated.
+  	 */
+  var snapshot: js.UndefOr[SnapshotOptions] = js.undefined
+  
+  /**
+  	 * Stats options object or preset name.
+  	 */
+  var stats: js.UndefOr[
+    Boolean | StatsOptions | none | verbose | summary | `errors-only` | `errors-warnings` | minimal | normal | detailed
+  ] = js.undefined
+  
+  /**
+  	 * Environment to build for. An array of environments to build for all of them when possible.
+  	 */
+  var target: js.UndefOr[String | `false` | js.Array[String]] = js.undefined
+  
+  /**
+  	 * Enter watch mode, which rebuilds on file change.
+  	 */
   var watch: js.UndefOr[Boolean] = js.undefined
-  var watchOptions: js.UndefOr[typingsJapgolly.webpack.mod.Options.WatchOptions] = js.undefined
+  
+  /**
+  	 * Options for the watcher.
+  	 */
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
 }
-
 object Configuration {
-  @scala.inline
-  def apply(
-    amd: StringDictionary[Boolean] = null,
-    bail: js.UndefOr[Boolean] = js.undefined,
-    cache: Boolean | js.Object = null,
-    context: String = null,
-    devtool: Devtool = null,
-    entry: String | js.Array[String] | Entry | EntryFunc = null,
-    externals: ExternalsElement | js.Array[ExternalsElement] = null,
-    mode: development | production | none = null,
-    module: Module = null,
-    name: String = null,
-    node: Node | `false` = null,
-    optimization: Optimization = null,
-    output: Output = null,
-    parallelism: Int | Double = null,
-    performance: Performance | `false` = null,
-    plugins: js.Array[Plugin] = null,
-    profile: js.UndefOr[Boolean] = js.undefined,
-    recordsInputPath: String = null,
-    recordsOutputPath: String = null,
-    recordsPath: String = null,
-    resolve: Resolve = null,
-    resolveLoader: ResolveLoader = null,
-    stats: typingsJapgolly.webpack.mod.Options.Stats = null,
-    target: web | webworker | node | `async-node` | `node-webkit` | atom | electron | `electron-renderer` | `electron-preload` | `electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], Unit]) = null,
-    watch: js.UndefOr[Boolean] = js.undefined,
-    watchOptions: typingsJapgolly.webpack.mod.Options.WatchOptions = null
-  ): Configuration = {
+  
+  inline def apply(): Configuration = {
     val __obj = js.Dynamic.literal()
-    if (amd != null) __obj.updateDynamic("amd")(amd.asInstanceOf[js.Any])
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (devtool != null) __obj.updateDynamic("devtool")(devtool.asInstanceOf[js.Any])
-    if (entry != null) __obj.updateDynamic("entry")(entry.asInstanceOf[js.Any])
-    if (externals != null) __obj.updateDynamic("externals")(externals.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (optimization != null) __obj.updateDynamic("optimization")(optimization.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (parallelism != null) __obj.updateDynamic("parallelism")(parallelism.asInstanceOf[js.Any])
-    if (performance != null) __obj.updateDynamic("performance")(performance.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (!js.isUndefined(profile)) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
-    if (recordsInputPath != null) __obj.updateDynamic("recordsInputPath")(recordsInputPath.asInstanceOf[js.Any])
-    if (recordsOutputPath != null) __obj.updateDynamic("recordsOutputPath")(recordsOutputPath.asInstanceOf[js.Any])
-    if (recordsPath != null) __obj.updateDynamic("recordsPath")(recordsPath.asInstanceOf[js.Any])
-    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
-    if (resolveLoader != null) __obj.updateDynamic("resolveLoader")(resolveLoader.asInstanceOf[js.Any])
-    if (stats != null) __obj.updateDynamic("stats")(stats.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch.asInstanceOf[js.Any])
-    if (watchOptions != null) __obj.updateDynamic("watchOptions")(watchOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[Configuration]
   }
+  
+  extension [Self <: Configuration](x: Self) {
+    
+    inline def setAmd(value: `false` | StringDictionary[Any]): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
+    
+    inline def setAmdUndefined: Self = StObject.set(x, "amd", js.undefined)
+    
+    inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+    
+    inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+    
+    inline def setCache(value: Boolean | FileCacheOptions | MemoryCacheOptions): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value*))
+    
+    inline def setDevtool(value: String | `false`): Self = StObject.set(x, "devtool", value.asInstanceOf[js.Any])
+    
+    inline def setDevtoolUndefined: Self = StObject.set(x, "devtool", js.undefined)
+    
+    inline def setEntry(
+      value: String | (js.Function0[String | EntryObject | js.Array[String] | js.Promise[EntryStatic]]) | EntryObject | js.Array[String]
+    ): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    
+    inline def setEntryCallbackTo(value: CallbackTo[String | EntryObject | js.Array[String] | js.Promise[EntryStatic]]): Self = StObject.set(x, "entry", value.toJsFn)
+    
+    inline def setEntryUndefined: Self = StObject.set(x, "entry", js.undefined)
+    
+    inline def setEntryVarargs(value: String*): Self = StObject.set(x, "entry", js.Array(value*))
+    
+    inline def setExperiments(value: Experiments_): Self = StObject.set(x, "experiments", value.asInstanceOf[js.Any])
+    
+    inline def setExperimentsUndefined: Self = StObject.set(x, "experiments", js.undefined)
+    
+    inline def setExternals(
+      value: String | js.RegExp | js.Array[ExternalItem] | (ExternalItemObjectKnown & ExternalItemObjectUnknown) | (js.Function2[
+          /* data */ ExternalItemFunctionData, 
+          /* callback */ js.Function2[
+            /* err */ js.UndefOr[js.Error], 
+            /* result */ js.UndefOr[String | Boolean | js.Array[String] | StringDictionary[Any]], 
+            Unit
+          ], 
+          Unit
+        ]) | (js.Function1[/* data */ ExternalItemFunctionData, js.Promise[ExternalItemValue]])
+    ): Self = StObject.set(x, "externals", value.asInstanceOf[js.Any])
+    
+    inline def setExternalsFunction1(value: /* data */ ExternalItemFunctionData => js.Promise[ExternalItemValue]): Self = StObject.set(x, "externals", js.Any.fromFunction1(value))
+    
+    inline def setExternalsFunction2(
+      value: (/* data */ ExternalItemFunctionData, /* callback */ js.Function2[
+          /* err */ js.UndefOr[js.Error], 
+          /* result */ js.UndefOr[String | Boolean | js.Array[String] | StringDictionary[Any]], 
+          Unit
+        ]) => Callback
+    ): Self = StObject.set(x, "externals", js.Any.fromFunction2((t0: /* data */ ExternalItemFunctionData, t1: /* callback */ js.Function2[
+          /* err */ js.UndefOr[js.Error], 
+          /* result */ js.UndefOr[String | Boolean | js.Array[String] | StringDictionary[Any]], 
+          Unit
+        ]) => (value(t0, t1)).runNow()))
+    
+    inline def setExternalsPresets(value: ExternalsPresets): Self = StObject.set(x, "externalsPresets", value.asInstanceOf[js.Any])
+    
+    inline def setExternalsPresetsUndefined: Self = StObject.set(x, "externalsPresets", js.undefined)
+    
+    inline def setExternalsType(
+      value: `import` | `var` | module | assign | `this` | window | self | global | commonjs | commonjs2 | `commonjs-module` | `commonjs-static` | amd | `amd-require` | umd | umd2 | jsonp | system | promise | script | `node-commonjs`
+    ): Self = StObject.set(x, "externalsType", value.asInstanceOf[js.Any])
+    
+    inline def setExternalsTypeUndefined: Self = StObject.set(x, "externalsType", js.undefined)
+    
+    inline def setExternalsUndefined: Self = StObject.set(x, "externals", js.undefined)
+    
+    inline def setExternalsVarargs(value: ExternalItem*): Self = StObject.set(x, "externals", js.Array(value*))
+    
+    inline def setIgnoreWarnings(
+      value: js.Array[
+          js.RegExp | File | (js.Function2[/* warning */ WebpackError, /* compilation */ Compilation, Boolean])
+        ]
+    ): Self = StObject.set(x, "ignoreWarnings", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreWarningsUndefined: Self = StObject.set(x, "ignoreWarnings", js.undefined)
+    
+    inline def setIgnoreWarningsVarargs(
+      value: (js.RegExp | File | (js.Function2[/* warning */ WebpackError, /* compilation */ Compilation, Boolean]))*
+    ): Self = StObject.set(x, "ignoreWarnings", js.Array(value*))
+    
+    inline def setInfrastructureLogging(value: InfrastructureLogging): Self = StObject.set(x, "infrastructureLogging", value.asInstanceOf[js.Any])
+    
+    inline def setInfrastructureLoggingUndefined: Self = StObject.set(x, "infrastructureLogging", js.undefined)
+    
+    inline def setLoader(value: Loader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+    
+    inline def setMode(value: none | development | production): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setModule(value: ModuleOptions): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+    
+    inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNode(value: `false` | NodeOptions): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setOptimization(value: Optimization): Self = StObject.set(x, "optimization", value.asInstanceOf[js.Any])
+    
+    inline def setOptimizationUndefined: Self = StObject.set(x, "optimization", js.undefined)
+    
+    inline def setOutput(value: Output): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    
+    inline def setParallelism(value: Double): Self = StObject.set(x, "parallelism", value.asInstanceOf[js.Any])
+    
+    inline def setParallelismUndefined: Self = StObject.set(x, "parallelism", js.undefined)
+    
+    inline def setPerformance(value: `false` | PerformanceOptions): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    
+    inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
+    
+    inline def setPlugins(
+      value: js.Array[
+          (js.ThisFunction1[/* this */ Compiler, /* compiler */ Compiler, Unit]) | WebpackPluginInstance
+        ]
+    ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(
+      value: ((js.ThisFunction1[/* this */ Compiler, /* compiler */ Compiler, Unit]) | WebpackPluginInstance)*
+    ): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setProfile(value: Boolean): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    
+    inline def setRecordsInputPath(value: String | `false`): Self = StObject.set(x, "recordsInputPath", value.asInstanceOf[js.Any])
+    
+    inline def setRecordsInputPathUndefined: Self = StObject.set(x, "recordsInputPath", js.undefined)
+    
+    inline def setRecordsOutputPath(value: String | `false`): Self = StObject.set(x, "recordsOutputPath", value.asInstanceOf[js.Any])
+    
+    inline def setRecordsOutputPathUndefined: Self = StObject.set(x, "recordsOutputPath", js.undefined)
+    
+    inline def setRecordsPath(value: String | `false`): Self = StObject.set(x, "recordsPath", value.asInstanceOf[js.Any])
+    
+    inline def setRecordsPathUndefined: Self = StObject.set(x, "recordsPath", js.undefined)
+    
+    inline def setResolve(value: ResolveOptionsWebpackOptions): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+    
+    inline def setResolveLoader(value: ResolveOptionsWebpackOptions): Self = StObject.set(x, "resolveLoader", value.asInstanceOf[js.Any])
+    
+    inline def setResolveLoaderUndefined: Self = StObject.set(x, "resolveLoader", js.undefined)
+    
+    inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+    
+    inline def setSnapshot(value: SnapshotOptions): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    
+    inline def setStats(
+      value: Boolean | StatsOptions | none | verbose | summary | `errors-only` | `errors-warnings` | minimal | normal | detailed
+    ): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    
+    inline def setTarget(value: String | `false` | js.Array[String]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTargetVarargs(value: String*): Self = StObject.set(x, "target", js.Array(value*))
+    
+    inline def setWatch(value: Boolean): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    
+    inline def setWatchOptions(value: WatchOptions): Self = StObject.set(x, "watchOptions", value.asInstanceOf[js.Any])
+    
+    inline def setWatchOptionsUndefined: Self = StObject.set(x, "watchOptions", js.undefined)
+    
+    inline def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
+  }
 }
-

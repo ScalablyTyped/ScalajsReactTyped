@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.simpleDownload
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.bypassMode
 */
-trait WindowsDeliveryOptimizationMode extends js.Object
-
+trait WindowsDeliveryOptimizationMode extends StObject
 object WindowsDeliveryOptimizationMode {
-  @scala.inline
-  def bypassMode: typingsJapgolly.microsoftGraph.microsoftGraphStrings.bypassMode = this.cast("bypassMode")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def httpOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpOnly = this.cast("httpOnly")
-  @scala.inline
-  def httpWithInternetPeering: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering = this.cast("httpWithInternetPeering")
-  @scala.inline
-  def httpWithPeeringNat: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat = this.cast("httpWithPeeringNat")
-  @scala.inline
-  def httpWithPeeringPrivateGroup: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup = this.cast("httpWithPeeringPrivateGroup")
-  @scala.inline
-  def simpleDownload: typingsJapgolly.microsoftGraph.microsoftGraphStrings.simpleDownload = this.cast("simpleDownload")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def bypassMode: typingsJapgolly.microsoftGraph.microsoftGraphStrings.bypassMode = "bypassMode".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.bypassMode]
+  
+  inline def httpOnly: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpOnly = "httpOnly".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpOnly]
+  
+  inline def httpWithInternetPeering: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering = "httpWithInternetPeering".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithInternetPeering]
+  
+  inline def httpWithPeeringNat: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat = "httpWithPeeringNat".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringNat]
+  
+  inline def httpWithPeeringPrivateGroup: typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup = "httpWithPeeringPrivateGroup".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.httpWithPeeringPrivateGroup]
+  
+  inline def simpleDownload: typingsJapgolly.microsoftGraph.microsoftGraphStrings.simpleDownload = "simpleDownload".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.simpleDownload]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

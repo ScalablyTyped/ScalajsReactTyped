@@ -1,34 +1,48 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SignatureHelpProvider extends js.Object {
-  val signatureHelpRetriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
-  val signatureHelpTriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
+trait SignatureHelpProvider extends StObject {
+  
   /**
     * Provide help for the signature at the given position and document.
     */
   def provideSignatureHelp(model: ITextModel, position: Position, token: CancellationToken, context: SignatureHelpContext): ProviderResult[SignatureHelpResult]
+  
+  val signatureHelpRetriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
+  
+  val signatureHelpTriggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SignatureHelpProvider {
-  @scala.inline
-  def apply(
-    provideSignatureHelp: (ITextModel, Position, CancellationToken, SignatureHelpContext) => CallbackTo[ProviderResult[SignatureHelpResult]],
-    signatureHelpRetriggerCharacters: js.Array[String] = null,
-    signatureHelpTriggerCharacters: js.Array[String] = null
+  
+  inline def apply(
+    provideSignatureHelp: (ITextModel, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelpResult]
   ): SignatureHelpProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideSignatureHelp")(js.Any.fromFunction4((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Position, t2: typingsJapgolly.monacoEditor.mod.CancellationToken, t3: typingsJapgolly.monacoEditor.mod.languages.SignatureHelpContext) => provideSignatureHelp(t0, t1, t2, t3).runNow()))
-    if (signatureHelpRetriggerCharacters != null) __obj.updateDynamic("signatureHelpRetriggerCharacters")(signatureHelpRetriggerCharacters.asInstanceOf[js.Any])
-    if (signatureHelpTriggerCharacters != null) __obj.updateDynamic("signatureHelpTriggerCharacters")(signatureHelpTriggerCharacters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(provideSignatureHelp = js.Any.fromFunction4(provideSignatureHelp))
     __obj.asInstanceOf[SignatureHelpProvider]
   }
+  
+  extension [Self <: SignatureHelpProvider](x: Self) {
+    
+    inline def setProvideSignatureHelp(
+      value: (ITextModel, Position, CancellationToken, SignatureHelpContext) => ProviderResult[SignatureHelpResult]
+    ): Self = StObject.set(x, "provideSignatureHelp", js.Any.fromFunction4(value))
+    
+    inline def setSignatureHelpRetriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpRetriggerCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureHelpRetriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.undefined)
+    
+    inline def setSignatureHelpRetriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpRetriggerCharacters", js.Array(value*))
+    
+    inline def setSignatureHelpTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "signatureHelpTriggerCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureHelpTriggerCharactersUndefined: Self = StObject.set(x, "signatureHelpTriggerCharacters", js.undefined)
+    
+    inline def setSignatureHelpTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "signatureHelpTriggerCharacters", js.Array(value*))
+  }
 }
-

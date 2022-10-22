@@ -1,6 +1,5 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.Collection
 import typingsJapgolly.openlayers.mod.EventsConditionType
 import typingsJapgolly.openlayers.mod.Feature
@@ -9,52 +8,97 @@ import typingsJapgolly.openlayers.mod.SelectFilterFunction
 import typingsJapgolly.openlayers.mod.StyleFunction
 import typingsJapgolly.openlayers.mod.layer.Layer
 import typingsJapgolly.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectOptions extends js.Object {
+trait SelectOptions extends StObject {
+  
   var addCondition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var condition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var features: js.UndefOr[Collection[Feature]] = js.undefined
+  
   var filter: js.UndefOr[SelectFilterFunction] = js.undefined
+  
   var hitTolerance: js.UndefOr[Double] = js.undefined
+  
   var layers: js.UndefOr[js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])] = js.undefined
+  
   var multi: js.UndefOr[Boolean] = js.undefined
+  
   var removeCondition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
+  
   var toggleCondition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object SelectOptions {
-  @scala.inline
-  def apply(
-    addCondition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    condition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    features: Collection[Feature] = null,
-    filter: (/* feature */ Feature | typingsJapgolly.openlayers.mod.render.Feature, /* layer */ Layer) => CallbackTo[Boolean] = null,
-    hitTolerance: Int | Double = null,
-    layers: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean]) = null,
-    multi: js.UndefOr[Boolean] = js.undefined,
-    removeCondition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    style: Style | js.Array[Style] | StyleFunction = null,
-    toggleCondition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): SelectOptions = {
+  
+  inline def apply(): SelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (addCondition != null) __obj.updateDynamic("addCondition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => addCondition(t0).runNow()))
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => condition(t0).runNow()))
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.openlayers.mod.Feature | typingsJapgolly.openlayers.mod.render.Feature, t1: /* layer */ typingsJapgolly.openlayers.mod.layer.Layer) => filter(t0, t1).runNow()))
-    if (hitTolerance != null) __obj.updateDynamic("hitTolerance")(hitTolerance.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    if (removeCondition != null) __obj.updateDynamic("removeCondition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => removeCondition(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (toggleCondition != null) __obj.updateDynamic("toggleCondition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => toggleCondition(t0).runNow()))
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectOptions]
   }
+  
+  extension [Self <: SelectOptions](x: Self) {
+    
+    inline def setAddCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "addCondition", js.Any.fromFunction1(value))
+    
+    inline def setAddConditionUndefined: Self = StObject.set(x, "addCondition", js.undefined)
+    
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    inline def setFilter(
+      value: (/* feature */ Feature | typingsJapgolly.openlayers.mod.render.Feature, /* layer */ Layer) => Boolean
+    ): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
+    
+    inline def setLayers(value: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersFunction1(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layers", js.Any.fromFunction1(value))
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value*))
+    
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    
+    inline def setRemoveCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "removeCondition", js.Any.fromFunction1(value))
+    
+    inline def setRemoveConditionUndefined: Self = StObject.set(x, "removeCondition", js.undefined)
+    
+    inline def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleFunction2(
+      value: (/* feature */ Feature | typingsJapgolly.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
+    ): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
+    
+    inline def setToggleCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "toggleCondition", js.Any.fromFunction1(value))
+    
+    inline def setToggleConditionUndefined: Self = StObject.set(x, "toggleCondition", js.undefined)
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

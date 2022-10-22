@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GlyphType extends js.Object
-
+sealed trait GlyphType extends StObject
 /**
   * An enumeration of the supported glyph types.
   *
@@ -25,56 +23,45 @@ sealed trait GlyphType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.GlyphType")
 @js.native
-object GlyphType extends js.Object {
-  @js.native
-  sealed trait BULLET extends GlyphType
+object GlyphType extends StObject {
   
   @js.native
-  sealed trait HOLLOW_BULLET extends GlyphType
+  sealed trait BULLET
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait LATIN_LOWER extends GlyphType
+  sealed trait HOLLOW_BULLET
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait LATIN_UPPER extends GlyphType
+  sealed trait LATIN_LOWER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait NUMBER extends GlyphType
+  sealed trait LATIN_UPPER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait ROMAN_LOWER extends GlyphType
+  sealed trait NUMBER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait ROMAN_UPPER extends GlyphType
+  sealed trait ROMAN_LOWER
+    extends StObject
+       with GlyphType
   
   @js.native
-  sealed trait SQUARE_BULLET extends GlyphType
+  sealed trait ROMAN_UPPER
+    extends StObject
+       with GlyphType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GlyphType with Double] = js.native
-  /* 0 */ @js.native
-  object BULLET extends TopLevel[BULLET with Double]
-  
-  /* 1 */ @js.native
-  object HOLLOW_BULLET extends TopLevel[HOLLOW_BULLET with Double]
-  
-  /* 5 */ @js.native
-  object LATIN_LOWER extends TopLevel[LATIN_LOWER with Double]
-  
-  /* 4 */ @js.native
-  object LATIN_UPPER extends TopLevel[LATIN_UPPER with Double]
-  
-  /* 3 */ @js.native
-  object NUMBER extends TopLevel[NUMBER with Double]
-  
-  /* 7 */ @js.native
-  object ROMAN_LOWER extends TopLevel[ROMAN_LOWER with Double]
-  
-  /* 6 */ @js.native
-  object ROMAN_UPPER extends TopLevel[ROMAN_UPPER with Double]
-  
-  /* 2 */ @js.native
-  object SQUARE_BULLET extends TopLevel[SQUARE_BULLET with Double]
-  
+  @js.native
+  sealed trait SQUARE_BULLET
+    extends StObject
+       with GlyphType
 }
-

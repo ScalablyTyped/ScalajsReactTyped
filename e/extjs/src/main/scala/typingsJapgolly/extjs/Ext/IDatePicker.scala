@@ -1,249 +1,381 @@
 package typingsJapgolly.extjs.Ext
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDatePicker extends IComponent {
+trait IDatePicker
+  extends StObject
+     with IComponent {
+  
   /** [Config Option] (String) */
   var ariaTitle: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var ariaTitleDateFormat: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String[]) */
   var dayNames: js.UndefOr[Array] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var disableAnim: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var disabledCellCls: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String[]) */
   var disabledDates: js.UndefOr[Array] = js.undefined
+  
   /** [Config Option] (RegExp) */
   var disabledDatesRE: js.UndefOr[js.RegExp] = js.undefined
+  
   /** [Config Option] (String) */
   var disabledDatesText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Number[]) */
   var disabledDays: js.UndefOr[Array] = js.undefined
+  
   /** [Config Option] (String) */
   var disabledDaysText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var focusOnShow: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var format: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Method] Gets a single character to represent the day of the week
-  		* @param value Object
-  		* @returns String The character
-  		*/
-  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
+    * @param value Object
+    * @returns String The character
+    */
+  var getDayInitial: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], java.lang.String]] = js.undefined
+  
   /** [Method] Gets the current selected value of the date field
-  		* @returns Date The selected date
-  		*/
-  var getValue: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Date The selected date
+    */
+  var getValue: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.undefined
+  var handler: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Hides the month picker if it s visible
-  		* @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
+    * @returns Ext.picker.Date this
+    */
   var hideMonthPicker: js.UndefOr[
     js.Function1[/* animate */ js.UndefOr[Boolean], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Config Option] (Object) */
-  var keyNavConfig: js.UndefOr[js.Any] = js.undefined
+  var keyNavConfig: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var longDayFormat: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Date) */
-  var maxDate: js.UndefOr[js.Any] = js.undefined
+  var maxDate: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var maxText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Date) */
-  var minDate: js.UndefOr[js.Any] = js.undefined
+  var minDate: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var minText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String[]) */
   var monthNames: js.UndefOr[Array] = js.undefined
+  
   /** [Config Option] (String) */
   var monthYearFormat: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var monthYearText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var nextText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var prevText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.undefined
+  var scope: js.UndefOr[Any] = js.undefined
+  
   /** [Method] Sets the current value to today
-  		* @returns Ext.picker.Date this
-  		*/
+    * @returns Ext.picker.Date this
+    */
   var selectToday: js.UndefOr[js.Function0[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+  
   /** [Config Option] (String) */
   var selectedCls: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Method] Replaces any existing disabled dates with new values and refreshes the DatePicker
-  		* @param disabledDates String[]/RegExp An array of date strings (see the disabledDates config for details on supported values), or a JavaScript regular expression used to disable a pattern of dates.
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param disabledDates String[]/RegExp An array of date strings (see the disabledDates config for details on supported values), or a JavaScript regular expression used to disable a pattern of dates.
+    * @returns Ext.picker.Date this
+    */
   var setDisabledDates: js.UndefOr[
-    js.Function1[/* disabledDates */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]
+    js.Function1[/* disabledDates */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Replaces any existing disabled days by index 0 6 with new values and refreshes the DatePicker
-  		* @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param disabledDays Number[] An array of disabled day indexes. See the disabledDays config for details on supported values.
+    * @returns Ext.picker.Date this
+    */
   var setDisabledDays: js.UndefOr[
     js.Function1[/* disabledDays */ js.UndefOr[Array], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Replaces any existing maxDate with the new value and refreshes the DatePicker
-  		* @param value Date The maximum date that can be selected
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param value Date The maximum date that can be selected
+    * @returns Ext.picker.Date this
+    */
   var setMaxDate: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]
+    js.Function1[/* value */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Replaces any existing minDate with the new value and refreshes the DatePicker
-  		* @param value Date The minimum date that can be selected
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param value Date The minimum date that can be selected
+    * @returns Ext.picker.Date this
+    */
   var setMinDate: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]
+    js.Function1[/* value */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Sets the value of the date field
-  		* @param value Date The date to set
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param value Date The date to set
+    * @returns Ext.picker.Date this
+    */
   var setValue: js.UndefOr[
-    js.Function1[/* value */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]
+    js.Function1[/* value */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Show the month picker
-  		* @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
-  		* @returns Ext.picker.Date this
-  		*/
+    * @param animate Boolean Indicates whether to animate this action. If the animate parameter is not specified, the behavior will use disableAnim to determine whether to animate or not.
+    * @returns Ext.picker.Date this
+    */
   var showMonthPicker: js.UndefOr[
     js.Function1[/* animate */ js.UndefOr[Boolean], typingsJapgolly.extjs.Ext.picker.IDate]
   ] = js.undefined
+  
   /** [Method] Show the next month
-  		* @param e Object
-  		* @returns Ext.picker.Date this
-  		*/
-  var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+    * @param e Object
+    * @returns Ext.picker.Date this
+    */
+  var showNextMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+  
   /** [Method] Show the next year
-  		* @returns Ext.picker.Date this
-  		*/
+    * @returns Ext.picker.Date this
+    */
   var showNextYear: js.UndefOr[js.Function0[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+  
   /** [Method] Show the previous month
-  		* @param e Object
-  		* @returns Ext.picker.Date this
-  		*/
-  var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+    * @param e Object
+    * @returns Ext.picker.Date this
+    */
+  var showPrevMonth: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+  
   /** [Method] Show the previous year
-  		* @returns Ext.picker.Date this
-  		*/
+    * @returns Ext.picker.Date this
+    */
   var showPrevYear: js.UndefOr[js.Function0[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var showToday: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Number) */
   var startDay: js.UndefOr[Double] = js.undefined
+  
   /** [Config Option] (String) */
   var todayText: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var todayTip: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object IDatePicker {
-  @scala.inline
-  def apply(
-    IComponent: IComponent = null,
-    ariaTitle: java.lang.String = null,
-    ariaTitleDateFormat: java.lang.String = null,
-    dayNames: Array = null,
-    disableAnim: js.UndefOr[Boolean] = js.undefined,
-    disabledCellCls: java.lang.String = null,
-    disabledDates: Array = null,
-    disabledDatesRE: js.RegExp = null,
-    disabledDatesText: java.lang.String = null,
-    disabledDays: Array = null,
-    disabledDaysText: java.lang.String = null,
-    focusOnShow: js.UndefOr[Boolean] = js.undefined,
-    format: java.lang.String = null,
-    getDayInitial: /* value */ js.UndefOr[js.Any] => CallbackTo[java.lang.String] = null,
-    getValue: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    handler: js.Any = null,
-    hideMonthPicker: /* animate */ js.UndefOr[Boolean] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    keyNavConfig: js.Any = null,
-    longDayFormat: java.lang.String = null,
-    maxDate: js.Any = null,
-    maxText: java.lang.String = null,
-    minDate: js.Any = null,
-    minText: java.lang.String = null,
-    monthNames: Array = null,
-    monthYearFormat: java.lang.String = null,
-    monthYearText: java.lang.String = null,
-    nextText: java.lang.String = null,
-    prevText: java.lang.String = null,
-    scope: js.Any = null,
-    selectToday: js.UndefOr[CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined,
-    selectedCls: java.lang.String = null,
-    setDisabledDates: /* disabledDates */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    setDisabledDays: /* disabledDays */ js.UndefOr[Array] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    setMaxDate: /* value */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    setMinDate: /* value */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    setValue: /* value */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    showMonthPicker: /* animate */ js.UndefOr[Boolean] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    showNextMonth: /* e */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    showNextYear: js.UndefOr[CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined,
-    showPrevMonth: /* e */ js.UndefOr[js.Any] => CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate] = null,
-    showPrevYear: js.UndefOr[CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]] = js.undefined,
-    showToday: js.UndefOr[Boolean] = js.undefined,
-    startDay: Int | Double = null,
-    todayText: java.lang.String = null,
-    todayTip: java.lang.String = null
-  ): IDatePicker = {
+  
+  inline def apply(): IDatePicker = {
     val __obj = js.Dynamic.literal()
-    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (ariaTitle != null) __obj.updateDynamic("ariaTitle")(ariaTitle.asInstanceOf[js.Any])
-    if (ariaTitleDateFormat != null) __obj.updateDynamic("ariaTitleDateFormat")(ariaTitleDateFormat.asInstanceOf[js.Any])
-    if (dayNames != null) __obj.updateDynamic("dayNames")(dayNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableAnim)) __obj.updateDynamic("disableAnim")(disableAnim.asInstanceOf[js.Any])
-    if (disabledCellCls != null) __obj.updateDynamic("disabledCellCls")(disabledCellCls.asInstanceOf[js.Any])
-    if (disabledDates != null) __obj.updateDynamic("disabledDates")(disabledDates.asInstanceOf[js.Any])
-    if (disabledDatesRE != null) __obj.updateDynamic("disabledDatesRE")(disabledDatesRE.asInstanceOf[js.Any])
-    if (disabledDatesText != null) __obj.updateDynamic("disabledDatesText")(disabledDatesText.asInstanceOf[js.Any])
-    if (disabledDays != null) __obj.updateDynamic("disabledDays")(disabledDays.asInstanceOf[js.Any])
-    if (disabledDaysText != null) __obj.updateDynamic("disabledDaysText")(disabledDaysText.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusOnShow)) __obj.updateDynamic("focusOnShow")(focusOnShow.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getDayInitial != null) __obj.updateDynamic("getDayInitial")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => getDayInitial(t0).runNow()))
-    getValue.foreach(p => __obj.updateDynamic("getValue")(p.toJsFn))
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (hideMonthPicker != null) __obj.updateDynamic("hideMonthPicker")(js.Any.fromFunction1((t0: /* animate */ js.UndefOr[scala.Boolean]) => hideMonthPicker(t0).runNow()))
-    if (keyNavConfig != null) __obj.updateDynamic("keyNavConfig")(keyNavConfig.asInstanceOf[js.Any])
-    if (longDayFormat != null) __obj.updateDynamic("longDayFormat")(longDayFormat.asInstanceOf[js.Any])
-    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
-    if (maxText != null) __obj.updateDynamic("maxText")(maxText.asInstanceOf[js.Any])
-    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
-    if (minText != null) __obj.updateDynamic("minText")(minText.asInstanceOf[js.Any])
-    if (monthNames != null) __obj.updateDynamic("monthNames")(monthNames.asInstanceOf[js.Any])
-    if (monthYearFormat != null) __obj.updateDynamic("monthYearFormat")(monthYearFormat.asInstanceOf[js.Any])
-    if (monthYearText != null) __obj.updateDynamic("monthYearText")(monthYearText.asInstanceOf[js.Any])
-    if (nextText != null) __obj.updateDynamic("nextText")(nextText.asInstanceOf[js.Any])
-    if (prevText != null) __obj.updateDynamic("prevText")(prevText.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    selectToday.foreach(p => __obj.updateDynamic("selectToday")(p.toJsFn))
-    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls.asInstanceOf[js.Any])
-    if (setDisabledDates != null) __obj.updateDynamic("setDisabledDates")(js.Any.fromFunction1((t0: /* disabledDates */ js.UndefOr[js.Any]) => setDisabledDates(t0).runNow()))
-    if (setDisabledDays != null) __obj.updateDynamic("setDisabledDays")(js.Any.fromFunction1((t0: /* disabledDays */ js.UndefOr[typingsJapgolly.extjs.Ext.Array]) => setDisabledDays(t0).runNow()))
-    if (setMaxDate != null) __obj.updateDynamic("setMaxDate")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => setMaxDate(t0).runNow()))
-    if (setMinDate != null) __obj.updateDynamic("setMinDate")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => setMinDate(t0).runNow()))
-    if (setValue != null) __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => setValue(t0).runNow()))
-    if (showMonthPicker != null) __obj.updateDynamic("showMonthPicker")(js.Any.fromFunction1((t0: /* animate */ js.UndefOr[scala.Boolean]) => showMonthPicker(t0).runNow()))
-    if (showNextMonth != null) __obj.updateDynamic("showNextMonth")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => showNextMonth(t0).runNow()))
-    showNextYear.foreach(p => __obj.updateDynamic("showNextYear")(p.toJsFn))
-    if (showPrevMonth != null) __obj.updateDynamic("showPrevMonth")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => showPrevMonth(t0).runNow()))
-    showPrevYear.foreach(p => __obj.updateDynamic("showPrevYear")(p.toJsFn))
-    if (!js.isUndefined(showToday)) __obj.updateDynamic("showToday")(showToday.asInstanceOf[js.Any])
-    if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
-    if (todayText != null) __obj.updateDynamic("todayText")(todayText.asInstanceOf[js.Any])
-    if (todayTip != null) __obj.updateDynamic("todayTip")(todayTip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDatePicker]
   }
+  
+  extension [Self <: IDatePicker](x: Self) {
+    
+    inline def setAriaTitle(value: java.lang.String): Self = StObject.set(x, "ariaTitle", value.asInstanceOf[js.Any])
+    
+    inline def setAriaTitleDateFormat(value: java.lang.String): Self = StObject.set(x, "ariaTitleDateFormat", value.asInstanceOf[js.Any])
+    
+    inline def setAriaTitleDateFormatUndefined: Self = StObject.set(x, "ariaTitleDateFormat", js.undefined)
+    
+    inline def setAriaTitleUndefined: Self = StObject.set(x, "ariaTitle", js.undefined)
+    
+    inline def setDayNames(value: Array): Self = StObject.set(x, "dayNames", value.asInstanceOf[js.Any])
+    
+    inline def setDayNamesUndefined: Self = StObject.set(x, "dayNames", js.undefined)
+    
+    inline def setDisableAnim(value: Boolean): Self = StObject.set(x, "disableAnim", value.asInstanceOf[js.Any])
+    
+    inline def setDisableAnimUndefined: Self = StObject.set(x, "disableAnim", js.undefined)
+    
+    inline def setDisabledCellCls(value: java.lang.String): Self = StObject.set(x, "disabledCellCls", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledCellClsUndefined: Self = StObject.set(x, "disabledCellCls", js.undefined)
+    
+    inline def setDisabledDates(value: Array): Self = StObject.set(x, "disabledDates", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledDatesRE(value: js.RegExp): Self = StObject.set(x, "disabledDatesRE", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledDatesREUndefined: Self = StObject.set(x, "disabledDatesRE", js.undefined)
+    
+    inline def setDisabledDatesText(value: java.lang.String): Self = StObject.set(x, "disabledDatesText", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledDatesTextUndefined: Self = StObject.set(x, "disabledDatesText", js.undefined)
+    
+    inline def setDisabledDatesUndefined: Self = StObject.set(x, "disabledDates", js.undefined)
+    
+    inline def setDisabledDays(value: Array): Self = StObject.set(x, "disabledDays", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledDaysText(value: java.lang.String): Self = StObject.set(x, "disabledDaysText", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledDaysTextUndefined: Self = StObject.set(x, "disabledDaysText", js.undefined)
+    
+    inline def setDisabledDaysUndefined: Self = StObject.set(x, "disabledDays", js.undefined)
+    
+    inline def setFocusOnShow(value: Boolean): Self = StObject.set(x, "focusOnShow", value.asInstanceOf[js.Any])
+    
+    inline def setFocusOnShowUndefined: Self = StObject.set(x, "focusOnShow", js.undefined)
+    
+    inline def setFormat(value: java.lang.String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGetDayInitial(value: /* value */ js.UndefOr[Any] => java.lang.String): Self = StObject.set(x, "getDayInitial", js.Any.fromFunction1(value))
+    
+    inline def setGetDayInitialUndefined: Self = StObject.set(x, "getDayInitial", js.undefined)
+    
+    inline def setGetValue(value: CallbackTo[Any]): Self = StObject.set(x, "getValue", value.toJsFn)
+    
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    
+    inline def setHandler(value: Any): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    
+    inline def setHideMonthPicker(value: /* animate */ js.UndefOr[Boolean] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "hideMonthPicker", js.Any.fromFunction1(value))
+    
+    inline def setHideMonthPickerUndefined: Self = StObject.set(x, "hideMonthPicker", js.undefined)
+    
+    inline def setKeyNavConfig(value: Any): Self = StObject.set(x, "keyNavConfig", value.asInstanceOf[js.Any])
+    
+    inline def setKeyNavConfigUndefined: Self = StObject.set(x, "keyNavConfig", js.undefined)
+    
+    inline def setLongDayFormat(value: java.lang.String): Self = StObject.set(x, "longDayFormat", value.asInstanceOf[js.Any])
+    
+    inline def setLongDayFormatUndefined: Self = StObject.set(x, "longDayFormat", js.undefined)
+    
+    inline def setMaxDate(value: Any): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDateUndefined: Self = StObject.set(x, "maxDate", js.undefined)
+    
+    inline def setMaxText(value: java.lang.String): Self = StObject.set(x, "maxText", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTextUndefined: Self = StObject.set(x, "maxText", js.undefined)
+    
+    inline def setMinDate(value: Any): Self = StObject.set(x, "minDate", value.asInstanceOf[js.Any])
+    
+    inline def setMinDateUndefined: Self = StObject.set(x, "minDate", js.undefined)
+    
+    inline def setMinText(value: java.lang.String): Self = StObject.set(x, "minText", value.asInstanceOf[js.Any])
+    
+    inline def setMinTextUndefined: Self = StObject.set(x, "minText", js.undefined)
+    
+    inline def setMonthNames(value: Array): Self = StObject.set(x, "monthNames", value.asInstanceOf[js.Any])
+    
+    inline def setMonthNamesUndefined: Self = StObject.set(x, "monthNames", js.undefined)
+    
+    inline def setMonthYearFormat(value: java.lang.String): Self = StObject.set(x, "monthYearFormat", value.asInstanceOf[js.Any])
+    
+    inline def setMonthYearFormatUndefined: Self = StObject.set(x, "monthYearFormat", js.undefined)
+    
+    inline def setMonthYearText(value: java.lang.String): Self = StObject.set(x, "monthYearText", value.asInstanceOf[js.Any])
+    
+    inline def setMonthYearTextUndefined: Self = StObject.set(x, "monthYearText", js.undefined)
+    
+    inline def setNextText(value: java.lang.String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    
+    inline def setNextTextUndefined: Self = StObject.set(x, "nextText", js.undefined)
+    
+    inline def setPrevText(value: java.lang.String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
+    
+    inline def setPrevTextUndefined: Self = StObject.set(x, "prevText", js.undefined)
+    
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSelectToday(value: CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]): Self = StObject.set(x, "selectToday", value.toJsFn)
+    
+    inline def setSelectTodayUndefined: Self = StObject.set(x, "selectToday", js.undefined)
+    
+    inline def setSelectedCls(value: java.lang.String): Self = StObject.set(x, "selectedCls", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedClsUndefined: Self = StObject.set(x, "selectedCls", js.undefined)
+    
+    inline def setSetDisabledDates(value: /* disabledDates */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "setDisabledDates", js.Any.fromFunction1(value))
+    
+    inline def setSetDisabledDatesUndefined: Self = StObject.set(x, "setDisabledDates", js.undefined)
+    
+    inline def setSetDisabledDays(value: /* disabledDays */ js.UndefOr[Array] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "setDisabledDays", js.Any.fromFunction1(value))
+    
+    inline def setSetDisabledDaysUndefined: Self = StObject.set(x, "setDisabledDays", js.undefined)
+    
+    inline def setSetMaxDate(value: /* value */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMaxDate", js.Any.fromFunction1(value))
+    
+    inline def setSetMaxDateUndefined: Self = StObject.set(x, "setMaxDate", js.undefined)
+    
+    inline def setSetMinDate(value: /* value */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "setMinDate", js.Any.fromFunction1(value))
+    
+    inline def setSetMinDateUndefined: Self = StObject.set(x, "setMinDate", js.undefined)
+    
+    inline def setSetValue(value: /* value */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    
+    inline def setShowMonthPicker(value: /* animate */ js.UndefOr[Boolean] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "showMonthPicker", js.Any.fromFunction1(value))
+    
+    inline def setShowMonthPickerUndefined: Self = StObject.set(x, "showMonthPicker", js.undefined)
+    
+    inline def setShowNextMonth(value: /* e */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "showNextMonth", js.Any.fromFunction1(value))
+    
+    inline def setShowNextMonthUndefined: Self = StObject.set(x, "showNextMonth", js.undefined)
+    
+    inline def setShowNextYear(value: CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]): Self = StObject.set(x, "showNextYear", value.toJsFn)
+    
+    inline def setShowNextYearUndefined: Self = StObject.set(x, "showNextYear", js.undefined)
+    
+    inline def setShowPrevMonth(value: /* e */ js.UndefOr[Any] => typingsJapgolly.extjs.Ext.picker.IDate): Self = StObject.set(x, "showPrevMonth", js.Any.fromFunction1(value))
+    
+    inline def setShowPrevMonthUndefined: Self = StObject.set(x, "showPrevMonth", js.undefined)
+    
+    inline def setShowPrevYear(value: CallbackTo[typingsJapgolly.extjs.Ext.picker.IDate]): Self = StObject.set(x, "showPrevYear", value.toJsFn)
+    
+    inline def setShowPrevYearUndefined: Self = StObject.set(x, "showPrevYear", js.undefined)
+    
+    inline def setShowToday(value: Boolean): Self = StObject.set(x, "showToday", value.asInstanceOf[js.Any])
+    
+    inline def setShowTodayUndefined: Self = StObject.set(x, "showToday", js.undefined)
+    
+    inline def setStartDay(value: Double): Self = StObject.set(x, "startDay", value.asInstanceOf[js.Any])
+    
+    inline def setStartDayUndefined: Self = StObject.set(x, "startDay", js.undefined)
+    
+    inline def setTodayText(value: java.lang.String): Self = StObject.set(x, "todayText", value.asInstanceOf[js.Any])
+    
+    inline def setTodayTextUndefined: Self = StObject.set(x, "todayText", js.undefined)
+    
+    inline def setTodayTip(value: java.lang.String): Self = StObject.set(x, "todayTip", value.asInstanceOf[js.Any])
+    
+    inline def setTodayTipUndefined: Self = StObject.set(x, "todayTip", js.undefined)
+  }
 }
-

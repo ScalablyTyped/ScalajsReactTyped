@@ -1,22 +1,29 @@
 package typingsJapgolly.highcharts.mod
 
+import typingsJapgolly.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointStatesNormalOptionsObject extends js.Object {
+trait PointStatesNormalOptionsObject extends StObject {
+  
   /**
-    * Animation when returning to normal state after hovering.
+    * (Highcharts, Highstock) Animation when returning to normal state after
+    * hovering.
     */
-  var animation: js.UndefOr[Boolean | AnimationOptionsObject] = js.undefined
+  var animation: js.UndefOr[Boolean | PartialAnimationOptionsOb] = js.undefined
 }
-
 object PointStatesNormalOptionsObject {
-  @scala.inline
-  def apply(animation: Boolean | AnimationOptionsObject = null): PointStatesNormalOptionsObject = {
+  
+  inline def apply(): PointStatesNormalOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointStatesNormalOptionsObject]
   }
+  
+  extension [Self <: PointStatesNormalOptionsObject](x: Self) {
+    
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+  }
 }
-

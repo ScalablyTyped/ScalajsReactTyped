@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramSelectOptions extends js.Object {
+trait DiagramSelectOptions extends StObject {
+  
   var addToSelection: js.UndefOr[Boolean] = js.undefined
 }
-
 object DiagramSelectOptions {
-  @scala.inline
-  def apply(addToSelection: js.UndefOr[Boolean] = js.undefined): DiagramSelectOptions = {
+  
+  inline def apply(): DiagramSelectOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addToSelection)) __obj.updateDynamic("addToSelection")(addToSelection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSelectOptions]
   }
+  
+  extension [Self <: DiagramSelectOptions](x: Self) {
+    
+    inline def setAddToSelection(value: Boolean): Self = StObject.set(x, "addToSelection", value.asInstanceOf[js.Any])
+    
+    inline def setAddToSelectionUndefined: Self = StObject.set(x, "addToSelection", js.undefined)
+  }
 }
-

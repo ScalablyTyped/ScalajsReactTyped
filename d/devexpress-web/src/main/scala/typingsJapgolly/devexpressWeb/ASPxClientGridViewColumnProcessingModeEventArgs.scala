@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events  concerned with column processing, and that allow the event's processing to be passed to the server side.
   */
-@JSGlobal("ASPxClientGridViewColumnProcessingModeEventArgs")
-@js.native
-class ASPxClientGridViewColumnProcessingModeEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewColumnProcessingModeEventArgs class with the specified setting.
-    * @param column A ASPxClientGridViewColumn object representing the column related to the event.
-    */
-  def this(column: ASPxClientGridViewColumn) = this()
+trait ASPxClientGridViewColumnProcessingModeEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets a grid column related to the event.
     */
-  var column: ASPxClientGridViewColumn = js.native
+  var column: ASPxClientGridViewColumn
 }
-
+object ASPxClientGridViewColumnProcessingModeEventArgs {
+  
+  inline def apply(column: ASPxClientGridViewColumn, processOnServer: Boolean): ASPxClientGridViewColumnProcessingModeEventArgs = {
+    val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewColumnProcessingModeEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewColumnProcessingModeEventArgs](x: Self) {
+    
+    inline def setColumn(value: ASPxClientGridViewColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+  }
+}

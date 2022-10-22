@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.business
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.education
 */
-trait VppTokenAccountType extends js.Object
-
+trait VppTokenAccountType extends StObject
 object VppTokenAccountType {
-  @scala.inline
-  def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def education: typingsJapgolly.microsoftGraph.microsoftGraphStrings.education = this.cast("education")
+  
+  inline def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.business]
+  
+  inline def education: typingsJapgolly.microsoftGraph.microsoftGraphStrings.education = "education".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.education]
 }
-

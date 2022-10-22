@@ -1,9 +1,9 @@
 package typingsJapgolly.go.mod
 
-import org.scalajs.dom.raw.HTMLDivElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Palette extends the Diagram class to allow objects to be dragged and placed onto other Diagrams.
@@ -15,11 +15,10 @@ import scala.scalajs.js.annotation._
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Palette () extends Diagram {
+open class Palette () extends Diagram {
   /**
     * @param {HTMLDivElement} div A reference to a DIV in the DOM.
     */
   def this(div: HTMLDivElement) = this()
   def this(id: String) = this()
 }
-

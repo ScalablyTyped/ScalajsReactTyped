@@ -2,27 +2,32 @@ package typingsJapgolly.chromeApps
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HTMLElement extends js.Object {
+trait HTMLElement extends StObject {
+  
   /**
     * @requires Permissions: 'pointerLock'
     */
   def exitPointerLock(): Unit
+  
   /**
     * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
     */
   def exitrequestFullscreen(): Unit
+  
   /**
     * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
     */
   def requestFullscreen(): js.Promise[Unit]
+  
   /**
     * @requires Permissions: 'pointerLock'
     */
   def requestPointerLock(): Unit
+  
   /**
     * @requires Permissions: 'app.window.fullscreen', 'app.window.fullscreen.overrideEsc'
     * @description
@@ -39,23 +44,29 @@ trait HTMLElement extends js.Object {
     */
   def webkitRequestFullscreen(): Unit
 }
-
 object HTMLElement {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     exitPointerLock: Callback,
     exitrequestFullscreen: Callback,
     requestFullscreen: CallbackTo[js.Promise[Unit]],
     requestPointerLock: Callback,
     webkitRequestFullscreen: Callback
   ): HTMLElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("exitPointerLock")(exitPointerLock.toJsFn)
-    __obj.updateDynamic("exitrequestFullscreen")(exitrequestFullscreen.toJsFn)
-    __obj.updateDynamic("requestFullscreen")(requestFullscreen.toJsFn)
-    __obj.updateDynamic("requestPointerLock")(requestPointerLock.toJsFn)
-    __obj.updateDynamic("webkitRequestFullscreen")(webkitRequestFullscreen.toJsFn)
+    val __obj = js.Dynamic.literal(exitPointerLock = exitPointerLock.toJsFn, exitrequestFullscreen = exitrequestFullscreen.toJsFn, requestFullscreen = requestFullscreen.toJsFn, requestPointerLock = requestPointerLock.toJsFn, webkitRequestFullscreen = webkitRequestFullscreen.toJsFn)
     __obj.asInstanceOf[HTMLElement]
   }
+  
+  extension [Self <: HTMLElement](x: Self) {
+    
+    inline def setExitPointerLock(value: Callback): Self = StObject.set(x, "exitPointerLock", value.toJsFn)
+    
+    inline def setExitrequestFullscreen(value: Callback): Self = StObject.set(x, "exitrequestFullscreen", value.toJsFn)
+    
+    inline def setRequestFullscreen(value: CallbackTo[js.Promise[Unit]]): Self = StObject.set(x, "requestFullscreen", value.toJsFn)
+    
+    inline def setRequestPointerLock(value: Callback): Self = StObject.set(x, "requestPointerLock", value.toJsFn)
+    
+    inline def setWebkitRequestFullscreen(value: Callback): Self = StObject.set(x, "webkitRequestFullscreen", value.toJsFn)
+  }
 }
-

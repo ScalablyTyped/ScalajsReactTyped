@@ -1,25 +1,26 @@
 package typingsJapgolly.knockoutPreRendered
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutObservableFunctions[T] extends /* key */ StringDictionary[KnockoutBindingHandler] {
-  def equalityComparer(a: js.Any, b: js.Any): Boolean
+trait KnockoutObservableFunctions[T]
+  extends StObject
+     with // Ko specific
+/* key */ StringDictionary[KnockoutBindingHandler] {
+  
+  def equalityComparer(a: Any, b: Any): Boolean
 }
-
 object KnockoutObservableFunctions {
-  @scala.inline
-  def apply[T](
-    equalityComparer: (js.Any, js.Any) => CallbackTo[Boolean],
-    StringDictionary: /* key */ StringDictionary[KnockoutBindingHandler] = null
-  ): KnockoutObservableFunctions[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("equalityComparer")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => equalityComparer(t0, t1).runNow()))
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  
+  inline def apply[T](equalityComparer: (Any, Any) => Boolean): KnockoutObservableFunctions[T] = {
+    val __obj = js.Dynamic.literal(equalityComparer = js.Any.fromFunction2(equalityComparer))
     __obj.asInstanceOf[KnockoutObservableFunctions[T]]
   }
+  
+  extension [Self <: KnockoutObservableFunctions[?], T](x: Self & KnockoutObservableFunctions[T]) {
+    
+    inline def setEqualityComparer(value: (Any, Any) => Boolean): Self = StObject.set(x, "equalityComparer", js.Any.fromFunction2(value))
+  }
 }
-

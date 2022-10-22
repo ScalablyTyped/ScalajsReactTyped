@@ -1,12 +1,12 @@
 package typingsJapgolly.dynogels.mod.AWS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EnvironmentCredentials")
 @js.native
-class EnvironmentCredentials protected ()
+open class EnvironmentCredentials protected ()
   extends typingsJapgolly.awsSdk.mod.EnvironmentCredentials {
   /**
     * Creates a new EnvironmentCredentials class with a given variable prefix envPrefix.
@@ -14,4 +14,3 @@ class EnvironmentCredentials protected ()
     */
   def this(envPrefix: String) = this()
 }
-

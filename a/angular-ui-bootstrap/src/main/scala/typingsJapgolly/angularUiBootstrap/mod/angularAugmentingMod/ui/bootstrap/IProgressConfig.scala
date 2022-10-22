@@ -1,16 +1,18 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProgressConfig extends js.Object {
+trait IProgressConfig extends StObject {
+  
   /**
     * Whether bars use transitions to achieve the width change.
     *
     * @default: true
     */
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A number that specifies the total value of bars that is required.
     *
@@ -18,14 +20,21 @@ trait IProgressConfig extends js.Object {
     */
   var max: js.UndefOr[Double] = js.undefined
 }
-
 object IProgressConfig {
-  @scala.inline
-  def apply(animate: js.UndefOr[Boolean] = js.undefined, max: Int | Double = null): IProgressConfig = {
+  
+  inline def apply(): IProgressConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressConfig]
   }
+  
+  extension [Self <: IProgressConfig](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+  }
 }
-

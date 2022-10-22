@@ -1,20 +1,25 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponseOptions extends js.Object {
+trait ResponseOptions extends StObject {
+  
   /** the request number [1] */
   var request: js.UndefOr[Double] = js.undefined
 }
-
 object ResponseOptions {
-  @scala.inline
-  def apply(request: Int | Double = null): ResponseOptions = {
+  
+  inline def apply(): ResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseOptions]
   }
+  
+  extension [Self <: ResponseOptions](x: Self) {
+    
+    inline def setRequest(value: Double): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+  }
 }
-

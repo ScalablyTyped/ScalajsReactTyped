@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceCompliancePolicyAssignment extends Entity {
+trait DeviceCompliancePolicyAssignment
+  extends StObject
+     with Entity {
+  
   // Target for the compliance policy assignment.
-  var target: js.UndefOr[DeviceAndAppManagementAssignmentTarget] = js.undefined
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
-
 object DeviceCompliancePolicyAssignment {
-  @scala.inline
-  def apply(id: String = null, target: DeviceAndAppManagementAssignmentTarget = null): DeviceCompliancePolicyAssignment = {
+  
+  inline def apply(): DeviceCompliancePolicyAssignment = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceCompliancePolicyAssignment]
   }
+  
+  extension [Self <: DeviceCompliancePolicyAssignment](x: Self) {
+    
+    inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

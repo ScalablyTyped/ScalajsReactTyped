@@ -1,12 +1,12 @@
 package typingsJapgolly.cordovaPluginDeviceOrientation
 
-import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A CompassError object is returned to the onError callback function when an error occurs. */
-trait CompassError extends js.Object {
+trait CompassError extends StObject {
+  
   /**
     * One of the predefined error codes
     *     CompassError.COMPASS_INTERNAL_ERR
@@ -14,12 +14,15 @@ trait CompassError extends js.Object {
     */
   var code: Double
 }
-
-@JSGlobal("CompassError")
-@js.native
-object CompassError extends /** Constructor for CompassError object */
-Instantiable1[/* code */ Double, CompassError] {
-  var COMPASS_INTERNAL_ERR: Double = js.native
-  var COMPASS_NOT_SUPPORTED: Double = js.native
+object CompassError {
+  
+  inline def apply(code: Double): CompassError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassError]
+  }
+  
+  extension [Self <: CompassError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+  }
 }
-

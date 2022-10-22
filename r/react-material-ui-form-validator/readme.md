@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-material-ui-form-validator
 
-Typings are for version 2.0
+Typings are for version 2.1
 
 ## Library description:
-Simple validator for forms designed with material-ui v1/v3 components.
+Simple validator for forms designed with material-ui v1/v3/v4/v5 components.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-material-ui-form-validator |
 | Keywords           | material-ui, form, validation |
-| # releases         | 24 |
-| # dependents       | 5 |
-| # downloads        | 515830 |
-| # stars            | 3 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 99967.66666666667 |
+| # stars            | 317.0 |
 
 ## Links
 - [Homepage](https://github.com/NewOldMax/react-material-ui-form-validator#readme)

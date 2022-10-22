@@ -1,7 +1,7 @@
 
 # Scala.js typings for vue-class-component
 
-Typings are for version 7.2.3
+Typings are for version 7.2.6
 
 ## Library description:
 ES201X/TypeScript class decorator for Vue components
@@ -10,10 +10,10 @@ ES201X/TypeScript class decorator for Vue components
 | ------------------ | :-------------: |
 | Full name          | vue-class-component |
 | Keywords           | vue, class, babel, typescript |
-| # releases         | 10 |
-| # dependents       | 825 |
-| # downloads        | 7652908 |
-| # stars            | 6 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2296002.3333333335 |
+| # stars            | 5734.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue-class-component#readme)

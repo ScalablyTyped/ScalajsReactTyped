@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.close
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.open
   - typingsJapgolly.highcharts.highchartsStrings.y
 */
-trait OptionsOnKeyValue extends js.Object
-
+trait OptionsOnKeyValue extends StObject
 object OptionsOnKeyValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def close: typingsJapgolly.highcharts.highchartsStrings.close = this.cast("close")
-  @scala.inline
-  def high: typingsJapgolly.highcharts.highchartsStrings.high = this.cast("high")
-  @scala.inline
-  def low: typingsJapgolly.highcharts.highchartsStrings.low = this.cast("low")
-  @scala.inline
-  def open: typingsJapgolly.highcharts.highchartsStrings.open = this.cast("open")
-  @scala.inline
-  def y: typingsJapgolly.highcharts.highchartsStrings.y = this.cast("y")
+  
+  inline def close: typingsJapgolly.highcharts.highchartsStrings.close = "close".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.close]
+  
+  inline def high: typingsJapgolly.highcharts.highchartsStrings.high = "high".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.high]
+  
+  inline def low: typingsJapgolly.highcharts.highchartsStrings.low = "low".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.low]
+  
+  inline def open: typingsJapgolly.highcharts.highchartsStrings.open = "open".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.open]
+  
+  inline def y: typingsJapgolly.highcharts.highchartsStrings.y = "y".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.y]
 }
-

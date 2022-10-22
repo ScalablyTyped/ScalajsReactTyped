@@ -1,22 +1,27 @@
 package typingsJapgolly.ldapjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Filter extends js.Object {
+trait Filter extends StObject {
+  
+  def matches(obj: Any): Boolean
+  
   var `type`: String
-  def matches(obj: js.Any): Boolean
 }
-
 object Filter {
-  @scala.inline
-  def apply(matches: js.Any => CallbackTo[Boolean], `type`: String): Filter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("matches")(js.Any.fromFunction1((t0: js.Any) => matches(t0).runNow()))
+  
+  inline def apply(matches: Any => Boolean, `type`: String): Filter = {
+    val __obj = js.Dynamic.literal(matches = js.Any.fromFunction1(matches))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
+  
+  extension [Self <: Filter](x: Self) {
+    
+    inline def setMatches(value: Any => Boolean): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

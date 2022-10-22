@@ -1,17 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "level-ttl"
-version := "3.1-dt-20191216Z-58bdcd"
-scalaVersion := "2.13.1"
+version := "3.1-dt-20220317Z-25882b"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "abstract-leveldown" % "5.0-dt-20180913Z-e5bd14",
-  "org.scalablytyped.japgolly" %%% "levelup" % "4.3-dt-20200226Z-055e5f",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "abstract-leveldown" % "7.2-dt-20220329Z-aaa9a6",
+  "org.scalablytyped.japgolly" %%% "level-errors" % "3.0-dt-20211202Z-5b45e7",
+  "org.scalablytyped.japgolly" %%% "levelup" % "5.1-dt-20220717Z-ac45eb",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

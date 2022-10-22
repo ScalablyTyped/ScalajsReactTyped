@@ -1,19 +1,24 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapBinaryImageEventMap extends BootstrapClientEditEventMap {
+trait BootstrapBinaryImageEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
+  
   var beginCallback: BeginCallbackEventArgs
+  
   var callbackError: CallbackErrorEventArgs
+  
   var click: EditClickEventArgs
+  
   var endCallback: EndCallbackEventArgs
 }
-
 object BootstrapBinaryImageEventMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     beginCallback: BeginCallbackEventArgs,
     callbackError: CallbackErrorEventArgs,
     click: EditClickEventArgs,
@@ -25,8 +30,17 @@ object BootstrapBinaryImageEventMap {
     valueChanged: ProcessingModeEventArgs
   ): BootstrapBinaryImageEventMap = {
     val __obj = js.Dynamic.literal(beginCallback = beginCallback.asInstanceOf[js.Any], callbackError = callbackError.asInstanceOf[js.Any], click = click.asInstanceOf[js.Any], endCallback = endCallback.asInstanceOf[js.Any], gotFocus = gotFocus.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], lostFocus = lostFocus.asInstanceOf[js.Any], validation = validation.asInstanceOf[js.Any], valueChanged = valueChanged.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[BootstrapBinaryImageEventMap]
   }
+  
+  extension [Self <: BootstrapBinaryImageEventMap](x: Self) {
+    
+    inline def setBeginCallback(value: BeginCallbackEventArgs): Self = StObject.set(x, "beginCallback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackError(value: CallbackErrorEventArgs): Self = StObject.set(x, "callbackError", value.asInstanceOf[js.Any])
+    
+    inline def setClick(value: EditClickEventArgs): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setEndCallback(value: EndCallbackEventArgs): Self = StObject.set(x, "endCallback", value.asInstanceOf[js.Any])
+  }
 }
-

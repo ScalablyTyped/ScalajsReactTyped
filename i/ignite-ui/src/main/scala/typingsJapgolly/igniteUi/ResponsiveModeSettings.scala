@@ -1,40 +1,48 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ResponsiveModeSettings
-  extends /**
-	 * Option for ResponsiveModeSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
-  var maxHeight: js.UndefOr[js.Any] = js.undefined
-  var maxWidth: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
+  var maxHeight: js.UndefOr[Any] = js.undefined
+  
+  var maxWidth: js.UndefOr[Any] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
 }
-
 object ResponsiveModeSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for ResponsiveModeSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    maxHeight: js.Any = null,
-    maxWidth: js.Any = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null
-  ): ResponsiveModeSettings = {
+  
+  inline def apply(): ResponsiveModeSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveModeSettings]
   }
+  
+  extension [Self <: ResponsiveModeSettings](x: Self) {
+    
+    inline def setMaxHeight(value: Any): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Any): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+  }
 }
-

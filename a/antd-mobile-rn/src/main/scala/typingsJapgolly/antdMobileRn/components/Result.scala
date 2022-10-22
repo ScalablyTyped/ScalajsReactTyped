@@ -1,60 +1,73 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.ghost
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.primary
-import typingsJapgolly.antdMobileRn.resultIndexNativeMod.ResultNativeProps
-import typingsJapgolly.antdMobileRn.resultStyleIndexNativeMod.IResultStyle
+import typingsJapgolly.antdMobileRn.libResultIndexDotnativeMod.ResultNativeProps
+import typingsJapgolly.antdMobileRn.libResultStyleIndexDotnativeMod.IResultStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Result {
-  def apply(
-    buttonText: String = null,
-    buttonType: primary | ghost = null,
-    img: VdomNode = null,
-    imgUrl: String = null,
-    message: VdomNode = null,
-    onButtonClick: js.UndefOr[Callback] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    styles: IResultStyle = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ResultNativeProps, typingsJapgolly.antdMobileRn.mod.Result, Unit, ResultNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText.asInstanceOf[js.Any])
-    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.rawNode.asInstanceOf[js.Any])
-    if (imgUrl != null) __obj.updateDynamic("imgUrl")(imgUrl.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.rawNode.asInstanceOf[js.Any])
-    onButtonClick.foreach(p => __obj.updateDynamic("onButtonClick")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.resultIndexNativeMod.ResultNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.Result](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.resultIndexNativeMod.ResultNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "Result")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.Result] {
+    
+    inline def buttonText(value: String): this.type = set("buttonText", value.asInstanceOf[js.Any])
+    
+    inline def buttonType(value: primary | ghost): this.type = set("buttonType", value.asInstanceOf[js.Any])
+    
+    inline def img(value: VdomNode): this.type = set("img", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def imgNull: this.type = set("img", null)
+    
+    inline def imgUrl(value: String): this.type = set("imgUrl", value.asInstanceOf[js.Any])
+    
+    inline def imgVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("img", js.Array(value*))
+    
+    inline def imgVdomElement(value: VdomElement): this.type = set("img", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def message(value: VdomNode): this.type = set("message", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def messageNull: this.type = set("message", null)
+    
+    inline def messageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("message", js.Array(value*))
+    
+    inline def messageVdomElement(value: VdomElement): this.type = set("message", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onButtonClick(value: Callback): this.type = set("onButtonClick", value.toJsFn)
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: IResultStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Result.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ResultNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

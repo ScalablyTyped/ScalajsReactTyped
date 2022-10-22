@@ -1,44 +1,67 @@
 package typingsJapgolly.sigmajs.SigmaJs
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.sigmajs.AnonX
+import typingsJapgolly.sigmajs.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Camera extends js.Object {
+trait Camera extends StObject {
+  
   var angle: Double
+  
+  def cameraPosition(x: Double, y: Double): X
+  
+  def goTo(settings: StringDictionary[Any]): Unit
+  
+  def graphPosition(x: Double, y: Double): X
+  
   var ratio: Double
+  
   var readPrefix: String
+  
+  def settings(setting: String): Any
+  
   var x: Double
+  
   var y: Double
-  def cameraPosition(x: Double, y: Double): AnonX
-  def goTo(settings: StringDictionary[js.Any]): Unit
-  def graphPosition(x: Double, y: Double): AnonX
-  def settings(setting: String): js.Any
 }
-
 object Camera {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     angle: Double,
-    cameraPosition: (Double, Double) => CallbackTo[AnonX],
-    goTo: StringDictionary[js.Any] => Callback,
-    graphPosition: (Double, Double) => CallbackTo[AnonX],
+    cameraPosition: (Double, Double) => X,
+    goTo: StringDictionary[Any] => Callback,
+    graphPosition: (Double, Double) => X,
     ratio: Double,
     readPrefix: String,
-    settings: String => CallbackTo[js.Any],
+    settings: String => Any,
     x: Double,
     y: Double
   ): Camera = {
-    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], ratio = ratio.asInstanceOf[js.Any], readPrefix = readPrefix.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("cameraPosition")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => cameraPosition(t0, t1).runNow()))
-    __obj.updateDynamic("goTo")(js.Any.fromFunction1((t0: org.scalablytyped.runtime.StringDictionary[js.Any]) => goTo(t0).runNow()))
-    __obj.updateDynamic("graphPosition")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => graphPosition(t0, t1).runNow()))
-    __obj.updateDynamic("settings")(js.Any.fromFunction1((t0: java.lang.String) => settings(t0).runNow()))
+    val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], cameraPosition = js.Any.fromFunction2(cameraPosition), goTo = js.Any.fromFunction1((t0: StringDictionary[Any]) => goTo(t0).runNow()), graphPosition = js.Any.fromFunction2(graphPosition), ratio = ratio.asInstanceOf[js.Any], readPrefix = readPrefix.asInstanceOf[js.Any], settings = js.Any.fromFunction1(settings), x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[Camera]
   }
+  
+  extension [Self <: Camera](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setCameraPosition(value: (Double, Double) => X): Self = StObject.set(x, "cameraPosition", js.Any.fromFunction2(value))
+    
+    inline def setGoTo(value: StringDictionary[Any] => Callback): Self = StObject.set(x, "goTo", js.Any.fromFunction1((t0: StringDictionary[Any]) => value(t0).runNow()))
+    
+    inline def setGraphPosition(value: (Double, Double) => X): Self = StObject.set(x, "graphPosition", js.Any.fromFunction2(value))
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setReadPrefix(value: String): Self = StObject.set(x, "readPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setSettings(value: String => Any): Self = StObject.set(x, "settings", js.Any.fromFunction1(value))
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,6 +1,7 @@
 
 # Scala.js typings for easy-table
 
+Typings are for version 1.2.0
 
 ## Library description:
 Nice text table for the CLI
@@ -10,9 +11,9 @@ Nice text table for the CLI
 | Full name          | easy-table |
 | Keywords           | table, text, cli |
 | # releases         | 2 |
-| # dependents       | 257 |
-| # downloads        | 3758291 |
-| # stars            | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 2955951.3333333335 |
+| # stars            | 285.0 |
 
 ## Links
 - [Homepage](https://github.com/eldargab/easy-table#readme)
@@ -23,7 +24,7 @@ Nice text table for the CLI
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

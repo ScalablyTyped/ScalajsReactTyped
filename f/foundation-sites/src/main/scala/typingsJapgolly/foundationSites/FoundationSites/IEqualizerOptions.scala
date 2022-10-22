@@ -1,27 +1,36 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEqualizerOptions extends js.Object {
+trait IEqualizerOptions extends StObject {
+  
   var equalizeByRow: js.UndefOr[Boolean] = js.undefined
+  
   var equalizeOn: js.UndefOr[String] = js.undefined
+  
   var equalizeOnStack: js.UndefOr[Boolean] = js.undefined
 }
-
 object IEqualizerOptions {
-  @scala.inline
-  def apply(
-    equalizeByRow: js.UndefOr[Boolean] = js.undefined,
-    equalizeOn: String = null,
-    equalizeOnStack: js.UndefOr[Boolean] = js.undefined
-  ): IEqualizerOptions = {
+  
+  inline def apply(): IEqualizerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(equalizeByRow)) __obj.updateDynamic("equalizeByRow")(equalizeByRow.asInstanceOf[js.Any])
-    if (equalizeOn != null) __obj.updateDynamic("equalizeOn")(equalizeOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(equalizeOnStack)) __obj.updateDynamic("equalizeOnStack")(equalizeOnStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEqualizerOptions]
   }
+  
+  extension [Self <: IEqualizerOptions](x: Self) {
+    
+    inline def setEqualizeByRow(value: Boolean): Self = StObject.set(x, "equalizeByRow", value.asInstanceOf[js.Any])
+    
+    inline def setEqualizeByRowUndefined: Self = StObject.set(x, "equalizeByRow", js.undefined)
+    
+    inline def setEqualizeOn(value: String): Self = StObject.set(x, "equalizeOn", value.asInstanceOf[js.Any])
+    
+    inline def setEqualizeOnStack(value: Boolean): Self = StObject.set(x, "equalizeOnStack", value.asInstanceOf[js.Any])
+    
+    inline def setEqualizeOnStackUndefined: Self = StObject.set(x, "equalizeOnStack", js.undefined)
+    
+    inline def setEqualizeOnUndefined: Self = StObject.set(x, "equalizeOn", js.undefined)
+  }
 }
-

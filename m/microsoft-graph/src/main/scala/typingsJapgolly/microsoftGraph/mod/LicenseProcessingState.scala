@@ -1,19 +1,26 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LicenseProcessingState extends js.Object {
-  var state: js.UndefOr[String] = js.undefined
+trait LicenseProcessingState extends StObject {
+  
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object LicenseProcessingState {
-  @scala.inline
-  def apply(state: String = null): LicenseProcessingState = {
+  
+  inline def apply(): LicenseProcessingState = {
     val __obj = js.Dynamic.literal()
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseProcessingState]
   }
+  
+  extension [Self <: LicenseProcessingState](x: Self) {
+    
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

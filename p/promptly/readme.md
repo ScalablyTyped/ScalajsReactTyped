@@ -10,10 +10,10 @@ Simple command line prompting utility
 | ------------------ | :-------------: |
 | Full name          | promptly |
 | Keywords           | prompt, choose, choice, cli, command, line |
-| # releases         | 2 |
-| # dependents       | 245 |
-| # downloads        | 19918558 |
-| # stars            | 18 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5523909.333333333 |
+| # stars            | 147.0 |
 
 ## Links
 - [Homepage](https://github.com/moxystudio/node-promptly)

@@ -1,16 +1,10 @@
-package typingsJapgolly.winrt.Windows
+package typingsJapgolly.winrt.Windows.Storage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Storage {
-  type ApplicationDataSetVersionHandler = js.Function1[
-    /* setVersionRequest */ typingsJapgolly.winrt.Windows.Storage.SetVersionRequest, 
-    scala.Unit
-  ]
-  type StreamedFileDataRequestedHandler = js.Function1[
-    /* stream */ typingsJapgolly.winrt.Windows.Storage.StreamedFileDataRequest, 
-    scala.Unit
-  ]
-}
+
+type ApplicationDataSetVersionHandler = js.Function1[/* setVersionRequest */ SetVersionRequest, Unit]
+
+type StreamedFileDataRequestedHandler = js.Function1[/* stream */ StreamedFileDataRequest, Unit]

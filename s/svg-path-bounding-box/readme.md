@@ -11,9 +11,9 @@ SVG path bounding box calculator
 | Full name          | svg-path-bounding-box |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 353101 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23071.0 |
+| # stars            | 57.0 |
 
 ## Links
 - [Homepage](https://github.com/icons8/svg-path-bounding-box)

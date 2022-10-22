@@ -1,28 +1,30 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Effects
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio effect definition. */
-@JSGlobal("Windows.Media.Effects.AudioEffectDefinition")
-@js.native
-class AudioEffectDefinition protected () extends js.Object {
-  /**
-    * Creates a new AudioEffectDefinition object with the specified activatable class ID.
-    * @param activatableClassId The activatable class ID of the audio effect definition.
-    */
-  def this(activatableClassId: String) = this()
-  /**
-    * Creates a new AudioEffectDefinition object with the specified activatable class ID, configuring the object with the specified settings.
-    * @param activatableClassId The activatable class ID of the audio effect definition.
-    * @param props Configuration properties for the specified audio effect definition.
-    */
-  def this(activatableClassId: String, props: IPropertySet) = this()
+trait AudioEffectDefinition extends StObject {
+  
   /** The activatable class ID of the audio effect definition. */
-  var activatableClassId: String = js.native
+  var activatableClassId: String
+  
   /** The set of properties for configuring an AudioEffectDefinition object. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
 }
-
+object AudioEffectDefinition {
+  
+  inline def apply(activatableClassId: String, properties: IPropertySet): AudioEffectDefinition = {
+    val __obj = js.Dynamic.literal(activatableClassId = activatableClassId.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioEffectDefinition]
+  }
+  
+  extension [Self <: AudioEffectDefinition](x: Self) {
+    
+    inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+  }
+}

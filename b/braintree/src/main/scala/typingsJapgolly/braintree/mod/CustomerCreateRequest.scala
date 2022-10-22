@@ -1,57 +1,96 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomerCreateRequest extends js.Object {
+trait CustomerCreateRequest extends StObject {
+  
   var company: js.UndefOr[String] = js.undefined
+  
   var creditCard: js.UndefOr[CreditCardCreateRequest] = js.undefined
-  var customFields: js.UndefOr[js.Any] = js.undefined
+  
+  var customFields: js.UndefOr[Any] = js.undefined
+  
   var deviceData: js.UndefOr[String] = js.undefined
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var fax: js.UndefOr[String] = js.undefined
+  
   var firstName: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var lastName: js.UndefOr[String] = js.undefined
+  
   var paymentMethodNonce: js.UndefOr[String] = js.undefined
+  
   var phone: js.UndefOr[String] = js.undefined
+  
   var riskData: js.UndefOr[CustomerRiskData] = js.undefined
+  
   var website: js.UndefOr[String] = js.undefined
 }
-
 object CustomerCreateRequest {
-  @scala.inline
-  def apply(
-    company: String = null,
-    creditCard: CreditCardCreateRequest = null,
-    customFields: js.Any = null,
-    deviceData: String = null,
-    email: String = null,
-    fax: String = null,
-    firstName: String = null,
-    id: String = null,
-    lastName: String = null,
-    paymentMethodNonce: String = null,
-    phone: String = null,
-    riskData: CustomerRiskData = null,
-    website: String = null
-  ): CustomerCreateRequest = {
+  
+  inline def apply(): CustomerCreateRequest = {
     val __obj = js.Dynamic.literal()
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (creditCard != null) __obj.updateDynamic("creditCard")(creditCard.asInstanceOf[js.Any])
-    if (customFields != null) __obj.updateDynamic("customFields")(customFields.asInstanceOf[js.Any])
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (fax != null) __obj.updateDynamic("fax")(fax.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (paymentMethodNonce != null) __obj.updateDynamic("paymentMethodNonce")(paymentMethodNonce.asInstanceOf[js.Any])
-    if (phone != null) __obj.updateDynamic("phone")(phone.asInstanceOf[js.Any])
-    if (riskData != null) __obj.updateDynamic("riskData")(riskData.asInstanceOf[js.Any])
-    if (website != null) __obj.updateDynamic("website")(website.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerCreateRequest]
   }
+  
+  extension [Self <: CustomerCreateRequest](x: Self) {
+    
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    
+    inline def setCreditCard(value: CreditCardCreateRequest): Self = StObject.set(x, "creditCard", value.asInstanceOf[js.Any])
+    
+    inline def setCreditCardUndefined: Self = StObject.set(x, "creditCard", js.undefined)
+    
+    inline def setCustomFields(value: Any): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    
+    inline def setDeviceData(value: String): Self = StObject.set(x, "deviceData", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceDataUndefined: Self = StObject.set(x, "deviceData", js.undefined)
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setFax(value: String): Self = StObject.set(x, "fax", value.asInstanceOf[js.Any])
+    
+    inline def setFaxUndefined: Self = StObject.set(x, "fax", js.undefined)
+    
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    
+    inline def setPaymentMethodNonce(value: String): Self = StObject.set(x, "paymentMethodNonce", value.asInstanceOf[js.Any])
+    
+    inline def setPaymentMethodNonceUndefined: Self = StObject.set(x, "paymentMethodNonce", js.undefined)
+    
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    
+    inline def setRiskData(value: CustomerRiskData): Self = StObject.set(x, "riskData", value.asInstanceOf[js.Any])
+    
+    inline def setRiskDataUndefined: Self = StObject.set(x, "riskData", js.undefined)
+    
+    inline def setWebsite(value: String): Self = StObject.set(x, "website", value.asInstanceOf[js.Any])
+    
+    inline def setWebsiteUndefined: Self = StObject.set(x, "website", js.undefined)
+  }
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.parse.mod
 
+import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.parse.mod._Global_.Parse.Attributes
+import typingsJapgolly.parse.mod.global.Parse.Attributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new parse Parse.Query for the given Parse.Object subclass.
@@ -63,22 +64,30 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "Query")
 @js.native
-class Query[T /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */] protected ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.Query[T] {
+open class Query[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */] protected ()
+  extends typingsJapgolly.parse.mod.global.Parse.Query[T] {
   def this(objectClass: String) = this()
   def this(objectClass: Instantiable1[
-        /* args (repeated) */ js.Any, 
-        T | typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes]
+        /* args (repeated) */ Any, 
+        T | typingsJapgolly.parse.mod.global.Parse.Object[Attributes]
       ]) = this()
 }
-
-/* static members */
-@JSImport("parse", "Query")
-@js.native
-object Query extends js.Object {
-  def and[U /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */](args: typingsJapgolly.parse.mod._Global_.Parse.Query[U]*): typingsJapgolly.parse.mod._Global_.Parse.Query[U] = js.native
-  def fromJSON[U /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */](className: String, json: js.Any): typingsJapgolly.parse.mod._Global_.Parse.Query[U] = js.native
-  def nor[U /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */](args: typingsJapgolly.parse.mod._Global_.Parse.Query[U]*): typingsJapgolly.parse.mod._Global_.Parse.Query[U] = js.native
-  def or[U /* <: typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes] */](var_args: typingsJapgolly.parse.mod._Global_.Parse.Query[U]*): typingsJapgolly.parse.mod._Global_.Parse.Query[U] = js.native
+object Query {
+  
+  @JSImport("parse", "Query")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def and[U /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](args: typingsJapgolly.parse.mod.global.Parse.Query[U]*): typingsJapgolly.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typingsJapgolly.parse.mod.global.Parse.Query[U]]
+  
+  /* static member */
+  inline def fromJSON[U /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](className: String, json: Any): typingsJapgolly.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.parse.mod.global.Parse.Query[U]]
+  inline def fromJSON[U /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](className: Instantiable0[U], json: Any): typingsJapgolly.parse.mod.global.Parse.Query[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(className.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.parse.mod.global.Parse.Query[U]]
+  
+  /* static member */
+  inline def nor[U /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](args: typingsJapgolly.parse.mod.global.Parse.Query[U]*): typingsJapgolly.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("nor")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typingsJapgolly.parse.mod.global.Parse.Query[U]]
+  
+  /* static member */
+  inline def or[U /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](var_args: typingsJapgolly.parse.mod.global.Parse.Query[U]*): typingsJapgolly.parse.mod.global.Parse.Query[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("or")(var_args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[typingsJapgolly.parse.mod.global.Parse.Query[U]]
 }
-

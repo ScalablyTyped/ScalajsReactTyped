@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramSelectable extends js.Object {
+trait DiagramSelectable extends StObject {
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var multiple: js.UndefOr[Boolean] = js.undefined
+  
   var stroke: js.UndefOr[DiagramSelectableStroke] = js.undefined
 }
-
 object DiagramSelectable {
-  @scala.inline
-  def apply(
-    key: String = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    stroke: DiagramSelectableStroke = null
-  ): DiagramSelectable = {
+  
+  inline def apply(): DiagramSelectable = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramSelectable]
   }
+  
+  extension [Self <: DiagramSelectable](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    
+    inline def setStroke(value: DiagramSelectableStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

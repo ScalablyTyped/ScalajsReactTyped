@@ -1,50 +1,92 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebMapUpdateFromOptions extends Object {
+trait WebMapUpdateFromOptions
+  extends StObject
+     with Object {
+  
   /**
-    * When `true`, the thumbnail will not be updated for the webmap. Defaults to `false`.
+    * When `true`, the view's background will not be updated for the webmap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+    */
+  var backgroundExcluded: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, the view's scale will be updated for the webmap.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+    */
+  var scalePreserved: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, the thumbnail will not be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
   var thumbnailExcluded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
+    * The size of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
   var thumbnailSize: js.UndefOr[WebMapUpdateFromOptionsThumbnailSize] = js.undefined
+  
   /**
-    * When `true`, the initial viewpoint of the view will be updated for the webmap. Defaults to `false`.
+    * When `true`, the initial [viewpoint](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#viewpoint) of the view will not be updated for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
   var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When `true`, the webmap's [widgets](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets) property will not be updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
+    */
+  var widgetsExcluded: js.UndefOr[Boolean] = js.undefined
 }
-
 object WebMapUpdateFromOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    thumbnailExcluded: js.UndefOr[Boolean] = js.undefined,
-    thumbnailSize: WebMapUpdateFromOptionsThumbnailSize = null,
-    viewpointExcluded: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): WebMapUpdateFromOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(thumbnailExcluded)) __obj.updateDynamic("thumbnailExcluded")(thumbnailExcluded.asInstanceOf[js.Any])
-    if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewpointExcluded)) __obj.updateDynamic("viewpointExcluded")(viewpointExcluded.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[WebMapUpdateFromOptions]
   }
+  
+  extension [Self <: WebMapUpdateFromOptions](x: Self) {
+    
+    inline def setBackgroundExcluded(value: Boolean): Self = StObject.set(x, "backgroundExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundExcludedUndefined: Self = StObject.set(x, "backgroundExcluded", js.undefined)
+    
+    inline def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
+    
+    inline def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
+    
+    inline def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
+    
+    inline def setThumbnailSize(value: WebMapUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
+    
+    inline def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
+    
+    inline def setWidgetsExcluded(value: Boolean): Self = StObject.set(x, "widgetsExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setWidgetsExcludedUndefined: Self = StObject.set(x, "widgetsExcluded", js.undefined)
+  }
 }
-

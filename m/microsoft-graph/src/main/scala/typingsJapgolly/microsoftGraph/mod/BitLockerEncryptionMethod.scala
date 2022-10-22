@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc128
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes128
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes256
 */
-trait BitLockerEncryptionMethod extends js.Object
-
+trait BitLockerEncryptionMethod extends StObject
 object BitLockerEncryptionMethod {
-  @scala.inline
-  def aesCbc128: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc128 = this.cast("aesCbc128")
-  @scala.inline
-  def aesCbc256: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc256 = this.cast("aesCbc256")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xtsAes128: typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes128 = this.cast("xtsAes128")
-  @scala.inline
-  def xtsAes256: typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes256 = this.cast("xtsAes256")
+  
+  inline def aesCbc128: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc128 = "aesCbc128".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc128]
+  
+  inline def aesCbc256: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc256 = "aesCbc256".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.aesCbc256]
+  
+  inline def xtsAes128: typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes128 = "xtsAes128".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes128]
+  
+  inline def xtsAes256: typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes256 = "xtsAes256".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.xtsAes256]
 }
-

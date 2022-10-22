@@ -10,10 +10,10 @@ Typography for digital and software products using the Carbon Design System
 | ------------------ | :-------------: |
 | Full name          | @carbon/type |
 | Keywords           | eyeglass-module, ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 98 |
-| # dependents       | 7 |
-| # downloads        | 152815 |
-| # stars            | 0 |
+| # releases         | 82 |
+| # dependents       | 0.0 |
+| # downloads        | 243275.33333333334 |
+| # stars            | 5968.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

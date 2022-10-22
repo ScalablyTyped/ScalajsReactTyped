@@ -1,24 +1,20 @@
 package typingsJapgolly.activexWia.WIA
 
-import typingsJapgolly.activexWia.activexWiaNumbers.`131072`
-import typingsJapgolly.activexWia.activexWiaNumbers.`65536`
+import typingsJapgolly.activexWia.activexWiaInts.`131072`
+import typingsJapgolly.activexWia.activexWiaInts.`65536`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The WiaImageBias enumeration helps specify what type of data the image is intended to represent. */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWia.activexWiaNumbers.`131072`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`65536`
+  - typingsJapgolly.activexWia.activexWiaInts.`131072`
+  - typingsJapgolly.activexWia.activexWiaInts.`65536`
 */
-trait WiaImageBias extends js.Object
-
+trait WiaImageBias extends StObject
 object WiaImageBias {
-  @scala.inline
-  def MaximizeQuality: `131072` = this.cast(131072)
-  @scala.inline
-  def MinimizeSize: `65536` = this.cast(65536)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def MaximizeQuality: `131072` = 131072.asInstanceOf[`131072`]
+  
+  inline def MinimizeSize: `65536` = 65536.asInstanceOf[`65536`]
 }
-

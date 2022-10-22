@@ -1,46 +1,35 @@
 package typingsJapgolly.calidation.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.calidation.mod.Dictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.calidation.mod.FieldsConfig
 import typingsJapgolly.calidation.mod.Transforms
 import typingsJapgolly.calidation.mod.ValidationContext
 import typingsJapgolly.calidation.mod.ValidationProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Validation {
-  def apply(
-    config: FieldsConfig,
-    initialValues: Dictionary[_] = null,
-    transforms: Transforms = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ValidationContext => CallbackTo[Node]
-  ): UnmountedWithRoot[ValidationProps, typingsJapgolly.calidation.mod.Validation, Unit, ValidationProps] = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.calidation.mod.ValidationContext) => children(t0).runNow()))
-    if (initialValues != null) __obj.updateDynamic("initialValues")(initialValues.asInstanceOf[js.Any])
-    if (transforms != null) __obj.updateDynamic("transforms")(transforms.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.calidation.mod.ValidationProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.calidation.mod.Validation](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.calidation.mod.ValidationProps])
+  inline def apply[T /* <: js.Object */](children: ValidationContext[T] => Node, config: FieldsConfig[T]): Builder[T] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children), config = config.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ValidationProps[T]]))
   }
+  
   @JSImport("calidation", "Validation")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T /* <: js.Object */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.calidation.mod.Validation[T]] {
+    
+    inline def initialValues(value: T): this.type = set("initialValues", value.asInstanceOf[js.Any])
+    
+    inline def transforms(value: Transforms[T]): this.type = set("transforms", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T /* <: js.Object */](p: ValidationProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

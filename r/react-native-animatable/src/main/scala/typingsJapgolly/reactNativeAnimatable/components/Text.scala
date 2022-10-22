@@ -1,38 +1,37 @@
 package typingsJapgolly.reactNativeAnimatable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
 import typingsJapgolly.reactNative.mod.AccessibilityRole
 import typingsJapgolly.reactNative.mod.AccessibilityState
-import typingsJapgolly.reactNative.mod.AccessibilityStates
-import typingsJapgolly.reactNative.mod.AccessibilityTrait
+import typingsJapgolly.reactNative.mod.AccessibilityValue
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.ImageStyle
-import typingsJapgolly.reactNative.mod.LayoutChangeEvent
 import typingsJapgolly.reactNative.mod.NodeHandle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextProperties
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
+import typingsJapgolly.reactNative.reactNativeStrings.all_
 import typingsJapgolly.reactNative.reactNativeStrings.assertive
 import typingsJapgolly.reactNative.reactNativeStrings.auto
 import typingsJapgolly.reactNative.reactNativeStrings.balanced
-import typingsJapgolly.reactNative.reactNativeStrings.button
 import typingsJapgolly.reactNative.reactNativeStrings.clip
+import typingsJapgolly.reactNative.reactNativeStrings.email
+import typingsJapgolly.reactNative.reactNativeStrings.full
 import typingsJapgolly.reactNative.reactNativeStrings.head
 import typingsJapgolly.reactNative.reactNativeStrings.highQuality
+import typingsJapgolly.reactNative.reactNativeStrings.link
 import typingsJapgolly.reactNative.reactNativeStrings.middle
 import typingsJapgolly.reactNative.reactNativeStrings.no
 import typingsJapgolly.reactNative.reactNativeStrings.none
+import typingsJapgolly.reactNative.reactNativeStrings.normal_
+import typingsJapgolly.reactNative.reactNativeStrings.phoneNumber
 import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
 import typingsJapgolly.reactNative.reactNativeStrings.simple
 import typingsJapgolly.reactNative.reactNativeStrings.tail
 import typingsJapgolly.reactNative.reactNativeStrings.yes
@@ -43,132 +42,145 @@ import typingsJapgolly.reactNativeAnimatable.mod.Direction
 import typingsJapgolly.reactNativeAnimatable.mod.Easing
 import typingsJapgolly.reactNativeAnimatable.mod.TextCls
 import typingsJapgolly.reactNativeAnimatable.reactNativeAnimatableStrings.infinite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
-  def apply(
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    adjustsFontSizeToFit: js.UndefOr[Boolean] = js.undefined,
-    allowFontScaling: js.UndefOr[Boolean] = js.undefined,
-    animation: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle]) = null,
-    delay: Int | Double = null,
-    direction: Direction = null,
-    duration: Int | Double = null,
-    easing: Easing = null,
-    ellipsizeMode: head | middle | tail | clip = null,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    iterationCount: Double | infinite = null,
-    iterationDelay: Int | Double = null,
-    lineBreakMode: head | middle | tail | clip = null,
-    maxFontSizeMultiplier: Int | Double = null,
-    minimumFontScale: Int | Double = null,
-    nativeID: String = null,
-    numberOfLines: Int | Double = null,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onAnimationBegin: js.Function = null,
-    onAnimationEnd: js.Function = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTransitionBegin: /* property */ String => Callback = null,
-    onTransitionEnd: /* property */ String => Callback = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selectionColor: String = null,
-    style: StyleProp[TextStyle] = null,
-    suppressHighlighting: js.UndefOr[Boolean] = js.undefined,
-    testID: String = null,
-    textBreakStrategy: simple | highQuality | balanced = null,
-    transition: String | js.Array[String] = null,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AnimatableProperties[TextStyle] with TextProperties, 
-    TextCls, 
-    Unit, 
-    AnimatableProperties[TextStyle] with TextProperties
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easing != null) __obj.updateDynamic("easing")(easing.asInstanceOf[js.Any])
-    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (iterationCount != null) __obj.updateDynamic("iterationCount")(iterationCount.asInstanceOf[js.Any])
-    if (iterationDelay != null) __obj.updateDynamic("iterationDelay")(iterationDelay.asInstanceOf[js.Any])
-    if (lineBreakMode != null) __obj.updateDynamic("lineBreakMode")(lineBreakMode.asInstanceOf[js.Any])
-    if (maxFontSizeMultiplier != null) __obj.updateDynamic("maxFontSizeMultiplier")(maxFontSizeMultiplier.asInstanceOf[js.Any])
-    if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onAnimationBegin != null) __obj.updateDynamic("onAnimationBegin")(onAnimationBegin.asInstanceOf[js.Any])
-    if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(onAnimationEnd.asInstanceOf[js.Any])
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (onTransitionBegin != null) __obj.updateDynamic("onTransitionBegin")(js.Any.fromFunction1((t0: /* property */ java.lang.String) => onTransitionBegin(t0).runNow()))
-    if (onTransitionEnd != null) __obj.updateDynamic("onTransitionEnd")(js.Any.fromFunction1((t0: /* property */ java.lang.String) => onTransitionEnd(t0).runNow()))
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (textBreakStrategy != null) __obj.updateDynamic("textBreakStrategy")(textBreakStrategy.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeAnimatable.mod.AnimatableProperties[typingsJapgolly.reactNative.mod.TextStyle] with typingsJapgolly.reactNative.mod.TextProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeAnimatable.mod.TextCls](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeAnimatable.mod.AnimatableProperties[typingsJapgolly.reactNative.mod.TextStyle] with typingsJapgolly.reactNative.mod.TextProperties])(children: _*)
-  }
   @JSImport("react-native-animatable", "Text")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[TextCls] {
+    
+    inline def accessibilityActions(value: js.Array[AccessibilityActionInfo]): this.type = set("accessibilityActions", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActionsVarargs(value: AccessibilityActionInfo*): this.type = set("accessibilityActions", js.Array(value*))
+    
+    inline def accessibilityElementsHidden(value: Boolean): this.type = set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityHint(value: String): this.type = set("accessibilityHint", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityIgnoresInvertColors(value: Boolean): this.type = set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledBy(value: String | js.Array[String]): this.type = set("accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledByVarargs(value: String*): this.type = set("accessibilityLabelledBy", js.Array(value*))
+    
+    inline def accessibilityLanguage(value: String): this.type = set("accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLiveRegion(value: none | polite | assertive): this.type = set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityRole(value: AccessibilityRole): this.type = set("accessibilityRole", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityState(value: AccessibilityState): this.type = set("accessibilityState", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityValue(value: AccessibilityValue): this.type = set("accessibilityValue", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityViewIsModal(value: Boolean): this.type = set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    
+    inline def accessible(value: Boolean): this.type = set("accessible", value.asInstanceOf[js.Any])
+    
+    inline def adjustsFontSizeToFit(value: Boolean): this.type = set("adjustsFontSizeToFit", value.asInstanceOf[js.Any])
+    
+    inline def allowFontScaling(value: Boolean): this.type = set("allowFontScaling", value.asInstanceOf[js.Any])
+    
+    inline def android_hyphenationFrequency(value: normal_ | none | full): this.type = set("android_hyphenationFrequency", value.asInstanceOf[js.Any])
+    
+    inline def animation(value: Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def dataDetectorType(value: phoneNumber | link | email | none | all_): this.type = set("dataDetectorType", value.asInstanceOf[js.Any])
+    
+    inline def dataDetectorTypeNull: this.type = set("dataDetectorType", null)
+    
+    inline def delay(value: Double): this.type = set("delay", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: Direction): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def easing(value: Easing): this.type = set("easing", value.asInstanceOf[js.Any])
+    
+    inline def easingFunction1(value: /* t */ Double => Double): this.type = set("easing", js.Any.fromFunction1(value))
+    
+    inline def ellipsizeMode(value: head | middle | tail | clip): this.type = set("ellipsizeMode", value.asInstanceOf[js.Any])
+    
+    inline def importantForAccessibility(value: auto | yes | no | `no-hide-descendants`): this.type = set("importantForAccessibility", value.asInstanceOf[js.Any])
+    
+    inline def iterationCount(value: Double | infinite): this.type = set("iterationCount", value.asInstanceOf[js.Any])
+    
+    inline def iterationDelay(value: Double): this.type = set("iterationDelay", value.asInstanceOf[js.Any])
+    
+    inline def lineBreakMode(value: head | middle | tail | clip): this.type = set("lineBreakMode", value.asInstanceOf[js.Any])
+    
+    inline def maxFontSizeMultiplier(value: Double): this.type = set("maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    
+    inline def maxFontSizeMultiplierNull: this.type = set("maxFontSizeMultiplier", null)
+    
+    inline def minimumFontScale(value: Double): this.type = set("minimumFontScale", value.asInstanceOf[js.Any])
+    
+    inline def nativeID(value: String): this.type = set("nativeID", value.asInstanceOf[js.Any])
+    
+    inline def numberOfLines(value: Double): this.type = set("numberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def onAccessibilityAction(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onAccessibilityAction", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onAccessibilityEscape(value: Callback): this.type = set("onAccessibilityEscape", value.toJsFn)
+    
+    inline def onAccessibilityTap(value: Callback): this.type = set("onAccessibilityTap", value.toJsFn)
+    
+    inline def onAnimationBegin(value: js.Function): this.type = set("onAnimationBegin", value.asInstanceOf[js.Any])
+    
+    inline def onAnimationEnd(value: js.Function): this.type = set("onAnimationEnd", value.asInstanceOf[js.Any])
+    
+    inline def onLayout(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onLongPress(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onLongPress", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onMagicTap(value: Callback): this.type = set("onMagicTap", value.toJsFn)
+    
+    inline def onPress(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPressIn(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPressIn", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onPressOut(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onPressOut", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTextLayout(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onTextLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onTransitionBegin(value: /* property */ String => Callback): this.type = set("onTransitionBegin", js.Any.fromFunction1((t0: /* property */ String) => value(t0).runNow()))
+    
+    inline def onTransitionEnd(value: /* property */ String => Callback): this.type = set("onTransitionEnd", js.Any.fromFunction1((t0: /* property */ String) => value(t0).runNow()))
+    
+    inline def selectable(value: Boolean): this.type = set("selectable", value.asInstanceOf[js.Any])
+    
+    inline def selectionColor(value: ColorValue): this.type = set("selectionColor", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[TextStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def suppressHighlighting(value: Boolean): this.type = set("suppressHighlighting", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def textBreakStrategy(value: simple | highQuality | balanced): this.type = set("textBreakStrategy", value.asInstanceOf[js.Any])
+    
+    inline def transition(value: (/* keyof S */ String) | (js.Array[/* keyof S */ String])): this.type = set("transition", value.asInstanceOf[js.Any])
+    
+    inline def transitionVarargs(value: (/* keyof S */ String)*): this.type = set("transition", js.Array(value*))
+    
+    inline def useNativeDriver(value: Boolean): this.type = set("useNativeDriver", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Text.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AnimatableProperties[TextStyle] & TextProperties): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

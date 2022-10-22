@@ -1,19 +1,22 @@
 package typingsJapgolly.jimpPluginInvert
 
-import typingsJapgolly.jimpCore.etcMod.ImageCallback
+import typingsJapgolly.jimpCore.typesEtcMod.ImageCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@jimp/plugin-invert", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@jimp/plugin-invert", JSImport.Namespace)
   @js.native
-  trait Invert extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def default(): Invert = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Invert]
+  
+  @js.native
+  trait Invert extends StObject {
+    
     def invert(): this.type = js.native
     def invert(cb: ImageCallback[this.type]): this.type = js.native
   }
-  
-  def default(): Invert = js.native
 }
-

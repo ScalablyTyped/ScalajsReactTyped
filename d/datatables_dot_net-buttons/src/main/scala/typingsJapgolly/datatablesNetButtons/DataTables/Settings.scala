@@ -1,22 +1,29 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Settings extends js.Object {
+trait Settings extends StObject {
+  
   /**
     * Buttons extension options
     */
   var buttons: js.UndefOr[Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings] = js.undefined
 }
-
 object Settings {
-  @scala.inline
-  def apply(buttons: Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings = null): Settings = {
+  
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  
+  extension [Self <: Settings](x: Self) {
+    
+    inline def setButtons(value: Boolean | (js.Array[ButtonSettings | String]) | ButtonsSettings): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: (ButtonSettings | String)*): Self = StObject.set(x, "buttons", js.Array(value*))
+  }
 }
-

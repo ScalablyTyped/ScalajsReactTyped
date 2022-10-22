@@ -17,120 +17,136 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.png32
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.png8
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.svg
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.svgz
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PrintTemplateProperties extends js.Object {
+trait PrintTemplateProperties extends StObject {
+  
   /**
-    * When `false`, the attribution is not displayed on the printout. This only applies when the [layout](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layout) value is `map-only`. Reference our policies on [Licensing & Attribution](https://developers.arcgis.com/javascript/latest/guide/licensing/) for specific attribution requirements.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#attributionVisible)
+    * When `false`, the attribution is not displayed on the printout.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#attributionVisible)
     */
   var attributionVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Define the map width, height and dpi. Required when `layout = 'map-only'`. See the object specification table below for available options to set for exportOptions.
+    * Define the map width, height and dpi.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#exportOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#exportOptions)
     */
   var exportOptions: js.UndefOr[PrintTemplateExportOptions] = js.undefined
+  
   /**
-    * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering. By default they are removed to reduce the request size. Only applicable to custom print services which use the feature attributes, for example to display a table of features and their attributes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#forceFeatureAttributes)
+    * When true, the feature's attributes are included in feature collection layers even when they are not needed for rendering.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#forceFeatureAttributes)
     */
   var forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The output format for the printed map.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#format)
-    *
     * @default png32
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#format)
     */
   var format: js.UndefOr[pdf | png32 | png8 | jpg | gif | eps | svg | svgz] = js.undefined
+  
   /**
-    * The layout used for the print output. When the value is `map-only` or is empty, the output map does not contain any page layout surroundings (for example, title, legend, scale bar and so forth). The print service provides out-of-the-box templates listed in possible values. The server administrator can add additional templates to the print service.  Possible values are listed below:
-    *
-    * Value | Description
-    * | --- | ---
-    * map-only | Map does not contain any layout elements. Only map image is printed.
-    * a3-landscape | A3 Landscape
-    * a3-portrait | A3 Portrait
-    * a4-landscape | A4 Landscape
-    * a4-portrait | A4 Portrait
-    * letter-ansi-a-landscape | Letter ANSI A Landscape
-    * letter-ansi-a-portrait | Letter ANSI A Portrait
-    * tabloid-ansi-b-landscape| Tabloid ANSI B Landscape
-    * tabloid-ansi-b-portrait | Tabloid ANSI B Portrait
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layout)
+    * The layout used for the print output.
     *
     * @default map-only
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layout)
     */
   var layout: js.UndefOr[
     `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
   ] = js.undefined
+  
   /**
-    * Defines the layout elements. It's an object with the following properties:
+    * Defines the layout elements.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#layoutOptions)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#layoutOptions)
     */
   var layoutOptions: js.UndefOr[PrintTemplateLayoutOptions] = js.undefined
+  
   /**
-    * The optional map scale of the printed map. Only applies when `preserveScale = true`. If `outScale` is less than 1, then the printed map will use the scale of the input map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#outScale)
+    * The optional map scale of the printed map.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#outScale)
     */
   var outScale: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Define whether the printed map should preserve map scale or map extent. If `true`, the printed map will use the `outScale` property or default to the scale of the input map. If `false`, the printed map will use the same extent as the input map and thus scale might change.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#preserveScale)
+    * Define whether the printed map should preserve map scale or map extent.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#scalePreserved)
     */
-  var preserveScale: js.UndefOr[Boolean] = js.undefined
+  var scalePreserved: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * When `true`, labels will be shown on the layout.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-PrintTemplate.html#showLabels)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-PrintTemplate.html#showLabels)
     */
   var showLabels: js.UndefOr[Boolean] = js.undefined
 }
-
 object PrintTemplateProperties {
-  @scala.inline
-  def apply(
-    attributionVisible: js.UndefOr[Boolean] = js.undefined,
-    exportOptions: PrintTemplateExportOptions = null,
-    forceFeatureAttributes: js.UndefOr[Boolean] = js.undefined,
-    format: pdf | png32 | png8 | jpg | gif | eps | svg | svgz = null,
-    layout: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait` = null,
-    layoutOptions: PrintTemplateLayoutOptions = null,
-    outScale: Int | Double = null,
-    preserveScale: js.UndefOr[Boolean] = js.undefined,
-    showLabels: js.UndefOr[Boolean] = js.undefined
-  ): PrintTemplateProperties = {
+  
+  inline def apply(): PrintTemplateProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(attributionVisible)) __obj.updateDynamic("attributionVisible")(attributionVisible.asInstanceOf[js.Any])
-    if (exportOptions != null) __obj.updateDynamic("exportOptions")(exportOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFeatureAttributes)) __obj.updateDynamic("forceFeatureAttributes")(forceFeatureAttributes.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutOptions != null) __obj.updateDynamic("layoutOptions")(layoutOptions.asInstanceOf[js.Any])
-    if (outScale != null) __obj.updateDynamic("outScale")(outScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveScale)) __obj.updateDynamic("preserveScale")(preserveScale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrintTemplateProperties]
   }
+  
+  extension [Self <: PrintTemplateProperties](x: Self) {
+    
+    inline def setAttributionVisible(value: Boolean): Self = StObject.set(x, "attributionVisible", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionVisibleUndefined: Self = StObject.set(x, "attributionVisible", js.undefined)
+    
+    inline def setExportOptions(value: PrintTemplateExportOptions): Self = StObject.set(x, "exportOptions", value.asInstanceOf[js.Any])
+    
+    inline def setExportOptionsUndefined: Self = StObject.set(x, "exportOptions", js.undefined)
+    
+    inline def setForceFeatureAttributes(value: Boolean): Self = StObject.set(x, "forceFeatureAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setForceFeatureAttributesUndefined: Self = StObject.set(x, "forceFeatureAttributes", js.undefined)
+    
+    inline def setFormat(value: pdf | png32 | png8 | jpg | gif | eps | svg | svgz): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLayout(
+      value: `map-only` | `a3-landscape` | `a3-portrait` | `a4-landscape` | `a4-portrait` | `letter-ansi-a-landscape` | `letter-ansi-a-portrait` | `tabloid-ansi-b-landscape` | `tabloid-ansi-b-portrait`
+    ): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutOptions(value: PrintTemplateLayoutOptions): Self = StObject.set(x, "layoutOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutOptionsUndefined: Self = StObject.set(x, "layoutOptions", js.undefined)
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setOutScale(value: Double): Self = StObject.set(x, "outScale", value.asInstanceOf[js.Any])
+    
+    inline def setOutScaleUndefined: Self = StObject.set(x, "outScale", js.undefined)
+    
+    inline def setScalePreserved(value: Boolean): Self = StObject.set(x, "scalePreserved", value.asInstanceOf[js.Any])
+    
+    inline def setScalePreservedUndefined: Self = StObject.set(x, "scalePreserved", js.undefined)
+    
+    inline def setShowLabels(value: Boolean): Self = StObject.set(x, "showLabels", value.asInstanceOf[js.Any])
+    
+    inline def setShowLabelsUndefined: Self = StObject.set(x, "showLabels", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ A pure JS client for interacting with server-side RESTful resources. Think Resta
 | Full name          | restful.js |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 42509 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2073.0 |
+| # stars            | 973.0 |
 
 ## Links
 - [Homepage](https://github.com/marmelab/restful.js#readme)

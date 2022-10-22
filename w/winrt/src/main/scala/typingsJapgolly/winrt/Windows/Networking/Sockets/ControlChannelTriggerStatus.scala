@@ -1,59 +1,47 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControlChannelTriggerStatus extends js.Object
-
+sealed trait ControlChannelTriggerStatus extends StObject
 @JSGlobal("Windows.Networking.Sockets.ControlChannelTriggerStatus")
 @js.native
-object ControlChannelTriggerStatus extends js.Object {
-  @js.native
-  sealed trait hardwareSlotAllocated extends ControlChannelTriggerStatus
+object ControlChannelTriggerStatus extends StObject {
   
   @js.native
-  sealed trait hardwareSlotRequested extends ControlChannelTriggerStatus
+  sealed trait hardwareSlotAllocated
+    extends StObject
+       with ControlChannelTriggerStatus
   
   @js.native
-  sealed trait policyError extends ControlChannelTriggerStatus
+  sealed trait hardwareSlotRequested
+    extends StObject
+       with ControlChannelTriggerStatus
   
   @js.native
-  sealed trait serviceUnavailable extends ControlChannelTriggerStatus
+  sealed trait policyError
+    extends StObject
+       with ControlChannelTriggerStatus
   
   @js.native
-  sealed trait softwareSlotAllocated extends ControlChannelTriggerStatus
+  sealed trait serviceUnavailable
+    extends StObject
+       with ControlChannelTriggerStatus
   
   @js.native
-  sealed trait systemError extends ControlChannelTriggerStatus
+  sealed trait softwareSlotAllocated
+    extends StObject
+       with ControlChannelTriggerStatus
   
   @js.native
-  sealed trait transportDisconnected extends ControlChannelTriggerStatus
+  sealed trait systemError
+    extends StObject
+       with ControlChannelTriggerStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ControlChannelTriggerStatus with Double] = js.native
-  /* 2 */ @js.native
-  object hardwareSlotAllocated extends TopLevel[hardwareSlotAllocated with Double]
-  
-  /* 0 */ @js.native
-  object hardwareSlotRequested extends TopLevel[hardwareSlotRequested with Double]
-  
-  /* 3 */ @js.native
-  object policyError extends TopLevel[policyError with Double]
-  
-  /* 6 */ @js.native
-  object serviceUnavailable extends TopLevel[serviceUnavailable with Double]
-  
-  /* 1 */ @js.native
-  object softwareSlotAllocated extends TopLevel[softwareSlotAllocated with Double]
-  
-  /* 4 */ @js.native
-  object systemError extends TopLevel[systemError with Double]
-  
-  /* 5 */ @js.native
-  object transportDisconnected extends TopLevel[transportDisconnected with Double]
-  
+  @js.native
+  sealed trait transportDisconnected
+    extends StObject
+       with ControlChannelTriggerStatus
 }
-

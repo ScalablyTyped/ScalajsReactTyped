@@ -1,8 +1,8 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.cqrsDomain.cqrsDomainStrings.mongodb
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cqrsDomain.cqrsDomainStrings.azuretable
   - typingsJapgolly.cqrsDomain.cqrsDomainStrings.inmemory
 */
-trait SupportedDBTypes extends js.Object
-
+trait SupportedDBTypes extends StObject
 object SupportedDBTypes {
-  @scala.inline
-  def azuretable: typingsJapgolly.cqrsDomain.cqrsDomainStrings.azuretable = this.cast("azuretable")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def inmemory: typingsJapgolly.cqrsDomain.cqrsDomainStrings.inmemory = this.cast("inmemory")
-  @scala.inline
-  def mongodb: typingsJapgolly.cqrsDomain.cqrsDomainStrings.mongodb = this.cast("mongodb")
-  @scala.inline
-  def redis: typingsJapgolly.cqrsDomain.cqrsDomainStrings.redis = this.cast("redis")
-  @scala.inline
-  def tingodb: typingsJapgolly.cqrsDomain.cqrsDomainStrings.tingodb = this.cast("tingodb")
+  
+  inline def azuretable: typingsJapgolly.cqrsDomain.cqrsDomainStrings.azuretable = "azuretable".asInstanceOf[typingsJapgolly.cqrsDomain.cqrsDomainStrings.azuretable]
+  
+  inline def inmemory: typingsJapgolly.cqrsDomain.cqrsDomainStrings.inmemory = "inmemory".asInstanceOf[typingsJapgolly.cqrsDomain.cqrsDomainStrings.inmemory]
+  
+  inline def mongodb: typingsJapgolly.cqrsDomain.cqrsDomainStrings.mongodb = "mongodb".asInstanceOf[typingsJapgolly.cqrsDomain.cqrsDomainStrings.mongodb]
+  
+  inline def redis: typingsJapgolly.cqrsDomain.cqrsDomainStrings.redis = "redis".asInstanceOf[typingsJapgolly.cqrsDomain.cqrsDomainStrings.redis]
+  
+  inline def tingodb: typingsJapgolly.cqrsDomain.cqrsDomainStrings.tingodb = "tingodb".asInstanceOf[typingsJapgolly.cqrsDomain.cqrsDomainStrings.tingodb]
 }
-

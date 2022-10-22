@@ -1,20 +1,31 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.sliderMod.ISliderProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsSliderSliderMod.SliderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Slider")
 @js.native
-class Slider ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Slider
-
-/* static members */
-@JSImport("@blueprintjs/core", "Slider")
-@js.native
-object Slider extends js.Object {
-  var defaultProps: ISliderProps = js.native
-  var displayName: String = js.native
+open class Slider protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Slider {
+  def this(props: SliderProps) = this()
+  def this(props: SliderProps, context: Any) = this()
 }
-
+/* static members */
+object Slider {
+  
+  @JSImport("@blueprintjs/core", "Slider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Slider.defaultProps")
+  @js.native
+  def defaultProps: SliderProps = js.native
+  inline def defaultProps_=(x: SliderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Slider.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

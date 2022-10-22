@@ -1,10 +1,11 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeocodingResult extends js.Object {
+trait GeocodingResult extends StObject {
+  
   /**
     * is an array containing the separate components applicable to this address.
     *
@@ -18,7 +19,8 @@ trait GeocodingResult extends js.Object {
     *    over time for the same address. A component can change position in the array.
     *    The type of the component can change. A particular component may be missing in a later response.
     */
-  var address_components: js.Array[AddressComponent]
+  var address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]
+  
   /**
     * is a string containing the human-readable address of this location.
     *
@@ -33,8 +35,10 @@ trait GeocodingResult extends js.Object {
     * which the API response includes in addition to the formatted address field.
     */
   var formatted_address: String
+  
   /** address geometry. */
   var geometry: AddressGeometry
+  
   /**
     * indicates that the geocoder did not return an exact match for the original request,
     * though it was able to match part of the requested address.
@@ -47,8 +51,10 @@ trait GeocodingResult extends js.Object {
     * Suggestions triggered in this way will also be marked as a partial match.
     */
   var partial_match: Boolean
+  
   /** is a unique identifier that can be used with other Google APIs. */
   var place_id: String
+  
   /**
     * is an encoded location reference, derived from latitude and longitude coordinates,
     * that represents an area: 1/8000th of a degree by 1/8000th of a degree (about 14m x 14m at the equator) or smaller.
@@ -65,11 +71,13 @@ trait GeocodingResult extends js.Object {
     * @see [plus codes](https://plus.codes/)
     */
   var plus_code: PlusCode
+  
   /**
     * is an array denoting all the localities contained in a postal code.
     * This is only present when the result is a postal code that contains multiple localities.
     */
   var postcode_localities: js.Array[String]
+  
   /**
     * array indicates the type of the returned result.
     * This array contains a set of zero or more tags identifying the type of feature returned in the result.
@@ -78,11 +86,10 @@ trait GeocodingResult extends js.Object {
     */
   var types: js.Array[AddressType]
 }
-
 object GeocodingResult {
-  @scala.inline
-  def apply(
-    address_components: js.Array[AddressComponent],
+  
+  inline def apply(
+    address_components: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]],
     formatted_address: String,
     geometry: AddressGeometry,
     partial_match: Boolean,
@@ -92,8 +99,31 @@ object GeocodingResult {
     types: js.Array[AddressType]
   ): GeocodingResult = {
     val __obj = js.Dynamic.literal(address_components = address_components.asInstanceOf[js.Any], formatted_address = formatted_address.asInstanceOf[js.Any], geometry = geometry.asInstanceOf[js.Any], partial_match = partial_match.asInstanceOf[js.Any], place_id = place_id.asInstanceOf[js.Any], plus_code = plus_code.asInstanceOf[js.Any], postcode_localities = postcode_localities.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GeocodingResult]
   }
+  
+  extension [Self <: GeocodingResult](x: Self) {
+    
+    inline def setAddress_components(value: js.Array[AddressComponent[AddressType | GeocodingAddressComponentType]]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_componentsVarargs(value: (AddressComponent[AddressType | GeocodingAddressComponentType])*): Self = StObject.set(x, "address_components", js.Array(value*))
+    
+    inline def setFormatted_address(value: String): Self = StObject.set(x, "formatted_address", value.asInstanceOf[js.Any])
+    
+    inline def setGeometry(value: AddressGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
+    
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    
+    inline def setPlus_code(value: PlusCode): Self = StObject.set(x, "plus_code", value.asInstanceOf[js.Any])
+    
+    inline def setPostcode_localities(value: js.Array[String]): Self = StObject.set(x, "postcode_localities", value.asInstanceOf[js.Any])
+    
+    inline def setPostcode_localitiesVarargs(value: String*): Self = StObject.set(x, "postcode_localities", js.Array(value*))
+    
+    inline def setTypes(value: js.Array[AddressType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesVarargs(value: AddressType*): Self = StObject.set(x, "types", js.Array(value*))
+  }
 }
-

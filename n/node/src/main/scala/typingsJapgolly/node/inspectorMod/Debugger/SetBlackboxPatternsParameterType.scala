@@ -1,22 +1,27 @@
 package typingsJapgolly.node.inspectorMod.Debugger
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SetBlackboxPatternsParameterType extends js.Object {
+trait SetBlackboxPatternsParameterType extends StObject {
+  
   /**
     * Array of regexps that will be used to check script url for blackbox state.
     */
   var patterns: js.Array[String]
 }
-
 object SetBlackboxPatternsParameterType {
-  @scala.inline
-  def apply(patterns: js.Array[String]): SetBlackboxPatternsParameterType = {
-    val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
   
+  inline def apply(patterns: js.Array[String]): SetBlackboxPatternsParameterType = {
+    val __obj = js.Dynamic.literal(patterns = patterns.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBlackboxPatternsParameterType]
   }
+  
+  extension [Self <: SetBlackboxPatternsParameterType](x: Self) {
+    
+    inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    
+    inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value*))
+  }
 }
-

@@ -11,14 +11,11 @@ borderless text tables with alignment
 | Full name          | text-table |
 | Keywords           | text, table, align, ascii, rows, tabular |
 | # releases         | 1 |
-| # dependents       | 638 |
-| # downloads        | 296072952 |
-| # stars            | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 9.5506453E7 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/text-table)
-- [Bugs](https://github.com/substack/text-table/issues)
-- [Repository](https://github.com/substack/text-table)
 - [Npm](https://www.npmjs.com/package/text-table)
     
 

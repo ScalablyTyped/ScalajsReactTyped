@@ -1,15 +1,24 @@
 package typingsJapgolly.googlePicker.google.picker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@js.native
+sealed trait DocsViewMode extends StObject
 @JSGlobal("google.picker.DocsViewMode")
 @js.native
-object DocsViewMode extends js.Object {
+object DocsViewMode extends StObject {
+  
   // Display documents in a thumbnail grid.
-  var GRID: String = js.native
+  @js.native
+  sealed trait GRID
+    extends StObject
+       with DocsViewMode
+  
   // Display documents in a detailed list.
-  var LIST: String = js.native
+  @js.native
+  sealed trait LIST
+    extends StObject
+       with DocsViewMode
 }
-

@@ -1,63 +1,61 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseElevationLayerQueryElevationOptions extends Object {
+trait BaseElevationLayerQueryElevationOptions
+  extends StObject
+     with Object {
+  
   /**
-    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`). See the table below for more details on the different settings.
-    *
-    * demResolution          | Description
-    * -----------------------|-------------
-    * `auto`                 | Automatically chooses an appropriate resolution for each coordinate of the input geometry. The current implementation will try to use the finest available resolution given that the total required number of tile requests does not exceed a certain maximum amount (currently 20). Note that this may result in values being sampled from different resolutions.
-    * `finest-contiguous`    | Sample elevation from the finest available resolution (cell size) across the entire geometry.
-    * `{number}`             | Sample elevation from the resolution closest to the specified resolution (in meters).
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
+    * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
     *
     * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
     */
   var demResolution: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * The value to use when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
-    *
-    * @default 0
     */
   var noDataValue: js.UndefOr[Double] = js.undefined
+  
   /**
     * Indicates whether to return additional sample information for each coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
-    *
-    * @default false
     */
   var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseElevationLayerQueryElevationOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    demResolution: Double | String = null,
-    noDataValue: Int | Double = null,
-    returnSampleInfo: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): BaseElevationLayerQueryElevationOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (demResolution != null) __obj.updateDynamic("demResolution")(demResolution.asInstanceOf[js.Any])
-    if (noDataValue != null) __obj.updateDynamic("noDataValue")(noDataValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnSampleInfo)) __obj.updateDynamic("returnSampleInfo")(returnSampleInfo.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[BaseElevationLayerQueryElevationOptions]
   }
+  
+  extension [Self <: BaseElevationLayerQueryElevationOptions](x: Self) {
+    
+    inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
+    
+    inline def setDemResolutionUndefined: Self = StObject.set(x, "demResolution", js.undefined)
+    
+    inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
+    
+    inline def setNoDataValueUndefined: Self = StObject.set(x, "noDataValue", js.undefined)
+    
+    inline def setReturnSampleInfo(value: Boolean): Self = StObject.set(x, "returnSampleInfo", value.asInstanceOf[js.Any])
+    
+    inline def setReturnSampleInfoUndefined: Self = StObject.set(x, "returnSampleInfo", js.undefined)
+  }
 }
-

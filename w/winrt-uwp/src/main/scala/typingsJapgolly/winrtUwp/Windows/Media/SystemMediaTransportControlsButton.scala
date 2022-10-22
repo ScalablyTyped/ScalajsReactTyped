@@ -1,88 +1,73 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SystemMediaTransportControlsButton extends js.Object
-
+sealed trait SystemMediaTransportControlsButton extends StObject
 /** Defines values for the buttons on the SystemMediaTransportControls . */
 @JSGlobal("Windows.Media.SystemMediaTransportControlsButton")
 @js.native
-object SystemMediaTransportControlsButton extends js.Object {
+object SystemMediaTransportControlsButton extends StObject {
+  
   /** The channel down button. */
   @js.native
-  sealed trait channelDown extends SystemMediaTransportControlsButton
+  sealed trait channelDown
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The channel up button. */
   @js.native
-  sealed trait channelUp extends SystemMediaTransportControlsButton
+  sealed trait channelUp
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The fast forward button. */
   @js.native
-  sealed trait fastForward extends SystemMediaTransportControlsButton
+  sealed trait fastForward
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The next button. */
   @js.native
-  sealed trait next extends SystemMediaTransportControlsButton
+  sealed trait next
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The pause button. */
   @js.native
-  sealed trait pause extends SystemMediaTransportControlsButton
+  sealed trait pause
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The play button. */
   @js.native
-  sealed trait play extends SystemMediaTransportControlsButton
+  sealed trait play
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The previous button. */
   @js.native
-  sealed trait previous extends SystemMediaTransportControlsButton
+  sealed trait previous
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The record button. */
   @js.native
-  sealed trait record extends SystemMediaTransportControlsButton
+  sealed trait record
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The rewind button. */
   @js.native
-  sealed trait rewind extends SystemMediaTransportControlsButton
+  sealed trait rewind
+    extends StObject
+       with SystemMediaTransportControlsButton
   
   /** The stop button. */
   @js.native
-  sealed trait stop extends SystemMediaTransportControlsButton
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SystemMediaTransportControlsButton with Double] = js.native
-  /* 9 */ @js.native
-  object channelDown extends TopLevel[channelDown with Double]
-  
-  /* 8 */ @js.native
-  object channelUp extends TopLevel[channelUp with Double]
-  
-  /* 4 */ @js.native
-  object fastForward extends TopLevel[fastForward with Double]
-  
-  /* 6 */ @js.native
-  object next extends TopLevel[next with Double]
-  
-  /* 1 */ @js.native
-  object pause extends TopLevel[pause with Double]
-  
-  /* 0 */ @js.native
-  object play extends TopLevel[play with Double]
-  
-  /* 7 */ @js.native
-  object previous extends TopLevel[previous with Double]
-  
-  /* 3 */ @js.native
-  object record extends TopLevel[record with Double]
-  
-  /* 5 */ @js.native
-  object rewind extends TopLevel[rewind with Double]
-  
-  /* 2 */ @js.native
-  object stop extends TopLevel[stop with Double]
-  
+  sealed trait stop
+    extends StObject
+       with SystemMediaTransportControlsButton
 }
-

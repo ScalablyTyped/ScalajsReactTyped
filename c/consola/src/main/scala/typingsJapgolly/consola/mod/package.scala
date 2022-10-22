@@ -1,14 +1,17 @@
-package typingsJapgolly.consola
+package typingsJapgolly.consola.mod
 
+import typingsJapgolly.consola.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ConsolaMock = js.Function1[/* args */ js.Any, scala.Unit]
-  type ConsolaMockFn = js.Function2[
-    /* type */ java.lang.String, 
-    /* defaults */ typingsJapgolly.consola.mod.ConsolaLogObject, 
-    typingsJapgolly.consola.mod.ConsolaMock
-  ]
-}
+
+inline def default: Consola = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[Consola]
+
+type BrowserReporterOptions = js.Object
+
+type ConsolaMock = js.Function1[/* args */ Any, Unit]
+
+type ConsolaMockFn = js.Function2[/* type */ logType, /* defaults */ ConsolaLogObject, ConsolaMock]
+
+type Winston = Any

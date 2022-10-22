@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.host
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.relay
   - typingsJapgolly.std.stdStrings.srflx
 */
-trait RTCIceCandidateType extends js.Object
-
+trait RTCIceCandidateType extends StObject
 object RTCIceCandidateType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def host: typingsJapgolly.std.stdStrings.host = this.cast("host")
-  @scala.inline
-  def prflx: typingsJapgolly.std.stdStrings.prflx = this.cast("prflx")
-  @scala.inline
-  def relay: typingsJapgolly.std.stdStrings.relay = this.cast("relay")
-  @scala.inline
-  def srflx: typingsJapgolly.std.stdStrings.srflx = this.cast("srflx")
+  
+  inline def host: typingsJapgolly.std.stdStrings.host = "host".asInstanceOf[typingsJapgolly.std.stdStrings.host]
+  
+  inline def prflx: typingsJapgolly.std.stdStrings.prflx = "prflx".asInstanceOf[typingsJapgolly.std.stdStrings.prflx]
+  
+  inline def relay: typingsJapgolly.std.stdStrings.relay = "relay".asInstanceOf[typingsJapgolly.std.stdStrings.relay]
+  
+  inline def srflx: typingsJapgolly.std.stdStrings.srflx = "srflx".asInstanceOf[typingsJapgolly.std.stdStrings.srflx]
 }
-

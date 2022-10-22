@@ -1,34 +1,37 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ExportAllDeclaration
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with ModuleDeclaration {
+  
+  var exported: Identifier | Null
+  
   var source: Literal
+  
   @JSName("type")
   var type_ExportAllDeclaration: typingsJapgolly.estree.estreeStrings.ExportAllDeclaration
 }
-
 object ExportAllDeclaration {
-  @scala.inline
-  def apply(
-    source: Literal,
-    `type`: typingsJapgolly.estree.estreeStrings.ExportAllDeclaration,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ExportAllDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(source: Literal): ExportAllDeclaration = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], exported = null)
+    __obj.updateDynamic("type")("ExportAllDeclaration")
     __obj.asInstanceOf[ExportAllDeclaration]
   }
+  
+  extension [Self <: ExportAllDeclaration](x: Self) {
+    
+    inline def setExported(value: Identifier): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    
+    inline def setExportedNull: Self = StObject.set(x, "exported", null)
+    
+    inline def setSource(value: Literal): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ExportAllDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

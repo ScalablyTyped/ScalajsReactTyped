@@ -1,54 +1,74 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DomainDnsSrvRecord extends DomainDnsRecord {
+trait DomainDnsSrvRecord
+  extends StObject
+     with DomainDnsRecord {
+  
   // Value to use when configuring the Target property of the SRV record at the DNS host.
-  var nameTarget: js.UndefOr[String] = js.undefined
+  var nameTarget: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Value to use when configuring the port property of the SRV record at the DNS host.
-  var port: js.UndefOr[Double] = js.undefined
+  var port: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // Value to use when configuring the priority property of the SRV record at the DNS host.
-  var priority: js.UndefOr[Double] = js.undefined
+  var priority: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // Value to use when configuring the protocol property of the SRV record at the DNS host.
-  var protocol: js.UndefOr[String] = js.undefined
+  var protocol: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Value to use when configuring the service property of the SRV record at the DNS host.
-  var service: js.UndefOr[String] = js.undefined
+  var service: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Value to use when configuring the weight property of the SRV record at the DNS host.
-  var weight: js.UndefOr[Double] = js.undefined
+  var weight: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object DomainDnsSrvRecord {
-  @scala.inline
-  def apply(
-    id: String = null,
-    isOptional: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    nameTarget: String = null,
-    port: Int | Double = null,
-    priority: Int | Double = null,
-    protocol: String = null,
-    recordType: String = null,
-    service: String = null,
-    supportedService: String = null,
-    ttl: Int | Double = null,
-    weight: Int | Double = null
-  ): DomainDnsSrvRecord = {
+  
+  inline def apply(): DomainDnsSrvRecord = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOptional)) __obj.updateDynamic("isOptional")(isOptional.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (nameTarget != null) __obj.updateDynamic("nameTarget")(nameTarget.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
-    if (supportedService != null) __obj.updateDynamic("supportedService")(supportedService.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[DomainDnsSrvRecord]
   }
+  
+  extension [Self <: DomainDnsSrvRecord](x: Self) {
+    
+    inline def setNameTarget(value: NullableOption[String]): Self = StObject.set(x, "nameTarget", value.asInstanceOf[js.Any])
+    
+    inline def setNameTargetNull: Self = StObject.set(x, "nameTarget", null)
+    
+    inline def setNameTargetUndefined: Self = StObject.set(x, "nameTarget", js.undefined)
+    
+    inline def setPort(value: NullableOption[Double]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortNull: Self = StObject.set(x, "port", null)
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setPriority(value: NullableOption[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityNull: Self = StObject.set(x, "priority", null)
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setProtocol(value: NullableOption[String]): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolNull: Self = StObject.set(x, "protocol", null)
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    
+    inline def setService(value: NullableOption[String]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNull: Self = StObject.set(x, "service", null)
+    
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    
+    inline def setWeight(value: NullableOption[Double]): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightNull: Self = StObject.set(x, "weight", null)
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

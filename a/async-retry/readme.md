@@ -10,15 +10,15 @@ Retrying made simple, easy and async
 | ------------------ | :-------------: |
 | Full name          | async-retry |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 134 |
-| # downloads        | 27891696 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.9774078E7 |
+| # stars            | 1559.0 |
 
 ## Links
-- [Homepage](https://github.com/zeit/async-retry#readme)
-- [Bugs](https://github.com/zeit/async-retry/issues)
-- [Repository](https://github.com/zeit/async-retry)
+- [Homepage](https://github.com/vercel/async-retry#readme)
+- [Bugs](https://github.com/vercel/async-retry/issues)
+- [Repository](https://github.com/vercel/async-retry)
 - [Npm](https://www.npmjs.com/package/async-retry)
     
 

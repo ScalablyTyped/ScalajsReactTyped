@@ -1,21 +1,21 @@
 package typingsJapgolly.three.mod
 
+import org.scalajs.dom.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLTextures")
 @js.native
-class WebGLTextures protected ()
-  extends typingsJapgolly.three.webGLTexturesMod.WebGLTextures {
+open class WebGLTextures protected ()
+  extends typingsJapgolly.three.srcThreeMod.WebGLTextures {
   def this(
-    gl: js.Any,
-    extensions: js.Any,
-    state: js.Any,
-    properties: js.Any,
-    capabilities: js.Any,
-    paramThreeToGL: js.Function,
-    info: js.Any
+    gl: WebGLRenderingContext,
+    extensions: typingsJapgolly.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    state: typingsJapgolly.three.srcRenderersWebglWebGLStateMod.WebGLState,
+    properties: typingsJapgolly.three.srcRenderersWebglWebGLPropertiesMod.WebGLProperties,
+    capabilities: typingsJapgolly.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities,
+    utils: typingsJapgolly.three.srcRenderersWebglWebGLUtilsMod.WebGLUtils,
+    info: typingsJapgolly.three.srcRenderersWebglWebGLInfoMod.WebGLInfo
   ) = this()
 }
-

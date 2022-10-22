@@ -1,14 +1,13 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.AtToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.AtToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "PlaceholderSymbol")
 @js.native
-class PlaceholderSymbol protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.PlaceholderSymbol {
-  def this(placeholderToken: typingsJapgolly.grammarkdown.nodesMod.Token[AtToken]) = this()
+open class PlaceholderSymbol protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.PlaceholderSymbol {
+  def this(placeholderToken: typingsJapgolly.grammarkdown.distNodesMod.Token[AtToken]) = this()
 }
-

@@ -15,230 +15,125 @@ import typingsJapgolly.awsSdkClientXrayNode.typesPutTelemetryRecordsInputMod.Put
 import typingsJapgolly.awsSdkClientXrayNode.typesPutTraceSegmentsInputMod.PutTraceSegmentsInput
 import typingsJapgolly.awsSdkClientXrayNode.typesUpdateSamplingRuleInputMod.UpdateSamplingRuleInput
 import typingsJapgolly.awsSdkClientXrayNode.xrayconfigurationMod.XRayConfiguration
-import typingsJapgolly.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvableConfiguration
-import typingsJapgolly.awsSdkClientXrayNode.xrayconfigurationMod.XRayResolvedConfiguration
-import typingsJapgolly.awsSdkTypes.clientMod.ConfigurationPropertyDefinition
-import typingsJapgolly.awsSdkTypes.credentialsMod.Credentials
-import typingsJapgolly.awsSdkTypes.cryptoMod.HashConstructor
-import typingsJapgolly.awsSdkTypes.httpMod.HttpEndpoint
-import typingsJapgolly.awsSdkTypes.httpMod.HttpHandler
-import typingsJapgolly.awsSdkTypes.httpMod.HttpOptions
-import typingsJapgolly.awsSdkTypes.marshallerMod.RequestSerializer
-import typingsJapgolly.awsSdkTypes.middlewareMod.Terminalware
-import typingsJapgolly.awsSdkTypes.signatureMod.RequestSigner
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.ResponseParser
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.StreamCollector
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
-import typingsJapgolly.awsSdkTypes.utilMod.DelayDecider
-import typingsJapgolly.awsSdkTypes.utilMod.Encoder
-import typingsJapgolly.awsSdkTypes.utilMod.Provider
-import typingsJapgolly.awsSdkTypes.utilMod.RetryDecider
-import typingsJapgolly.awsSdkTypes.utilMod.UrlParser
-import typingsJapgolly.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/client-xray-node", "BatchGetTracesCommand")
   @js.native
-  class BatchGetTracesCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.batchGetTracesCommandMod.BatchGetTracesCommand {
+  open class BatchGetTracesCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsBatchGetTracesCommandMod.BatchGetTracesCommand {
     def this(input: BatchGetTracesInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "CreateSamplingRuleCommand")
   @js.native
-  class CreateSamplingRuleCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.createSamplingRuleCommandMod.CreateSamplingRuleCommand {
+  open class CreateSamplingRuleCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsCreateSamplingRuleCommandMod.CreateSamplingRuleCommand {
     def this(input: CreateSamplingRuleInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "DeleteSamplingRuleCommand")
   @js.native
-  class DeleteSamplingRuleCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.deleteSamplingRuleCommandMod.DeleteSamplingRuleCommand {
+  open class DeleteSamplingRuleCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsDeleteSamplingRuleCommandMod.DeleteSamplingRuleCommand {
     def this(input: DeleteSamplingRuleInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetEncryptionConfigCommand")
   @js.native
-  class GetEncryptionConfigCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getEncryptionConfigCommandMod.GetEncryptionConfigCommand {
+  open class GetEncryptionConfigCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetEncryptionConfigCommandMod.GetEncryptionConfigCommand {
     def this(input: GetEncryptionConfigInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetSamplingRulesCommand")
   @js.native
-  class GetSamplingRulesCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getSamplingRulesCommandMod.GetSamplingRulesCommand {
+  open class GetSamplingRulesCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetSamplingRulesCommandMod.GetSamplingRulesCommand {
     def this(input: GetSamplingRulesInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetSamplingStatisticSummariesCommand")
   @js.native
-  class GetSamplingStatisticSummariesCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getSamplingStatisticSummariesCommandMod.GetSamplingStatisticSummariesCommand {
+  open class GetSamplingStatisticSummariesCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetSamplingStatisticSummariesCommandMod.GetSamplingStatisticSummariesCommand {
     def this(input: GetSamplingStatisticSummariesInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetSamplingTargetsCommand")
   @js.native
-  class GetSamplingTargetsCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getSamplingTargetsCommandMod.GetSamplingTargetsCommand {
+  open class GetSamplingTargetsCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetSamplingTargetsCommandMod.GetSamplingTargetsCommand {
     def this(input: GetSamplingTargetsInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetServiceGraphCommand")
   @js.native
-  class GetServiceGraphCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getServiceGraphCommandMod.GetServiceGraphCommand {
+  open class GetServiceGraphCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetServiceGraphCommandMod.GetServiceGraphCommand {
     def this(input: GetServiceGraphInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetTraceGraphCommand")
   @js.native
-  class GetTraceGraphCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getTraceGraphCommandMod.GetTraceGraphCommand {
+  open class GetTraceGraphCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetTraceGraphCommandMod.GetTraceGraphCommand {
     def this(input: GetTraceGraphInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "GetTraceSummariesCommand")
   @js.native
-  class GetTraceSummariesCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.getTraceSummariesCommandMod.GetTraceSummariesCommand {
+  open class GetTraceSummariesCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsGetTraceSummariesCommandMod.GetTraceSummariesCommand {
     def this(input: GetTraceSummariesInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "PutEncryptionConfigCommand")
   @js.native
-  class PutEncryptionConfigCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.putEncryptionConfigCommandMod.PutEncryptionConfigCommand {
+  open class PutEncryptionConfigCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsPutEncryptionConfigCommandMod.PutEncryptionConfigCommand {
     def this(input: PutEncryptionConfigInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "PutTelemetryRecordsCommand")
   @js.native
-  class PutTelemetryRecordsCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.putTelemetryRecordsCommandMod.PutTelemetryRecordsCommand {
+  open class PutTelemetryRecordsCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsPutTelemetryRecordsCommandMod.PutTelemetryRecordsCommand {
     def this(input: PutTelemetryRecordsInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "PutTraceSegmentsCommand")
   @js.native
-  class PutTraceSegmentsCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.putTraceSegmentsCommandMod.PutTraceSegmentsCommand {
+  open class PutTraceSegmentsCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsPutTraceSegmentsCommandMod.PutTraceSegmentsCommand {
     def this(input: PutTraceSegmentsInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "UpdateSamplingRuleCommand")
   @js.native
-  class UpdateSamplingRuleCommand protected ()
-    extends typingsJapgolly.awsSdkClientXrayNode.updateSamplingRuleCommandMod.UpdateSamplingRuleCommand {
+  open class UpdateSamplingRuleCommand protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.commandsUpdateSamplingRuleCommandMod.UpdateSamplingRuleCommand {
     def this(input: UpdateSamplingRuleInput) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "XRay")
   @js.native
-  class XRay ()
-    extends typingsJapgolly.awsSdkClientXrayNode.xrayMod.XRay
+  open class XRay protected ()
+    extends typingsJapgolly.awsSdkClientXrayNode.xrayMod.XRay {
+    def this(configuration: XRayConfiguration) = this()
+  }
   
+  @JSImport("@aws-sdk/client-xray-node", "XRayClient")
   @js.native
-  class XRayClient protected ()
+  open class XRayClient protected ()
     extends typingsJapgolly.awsSdkClientXrayNode.xrayclientMod.XRayClient {
     def this(configuration: XRayConfiguration) = this()
   }
   
+  @JSImport("@aws-sdk/client-xray-node", "configurationProperties")
   @js.native
-  object configurationProperties extends js.Object {
-    val _user_injected_http_handler: ConfigurationPropertyDefinition[_, Boolean, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val base64Decoder: ConfigurationPropertyDefinition[js.UndefOr[Decoder], Decoder, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val base64Encoder: ConfigurationPropertyDefinition[js.UndefOr[Encoder], Encoder, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val bodyLengthChecker: ConfigurationPropertyDefinition[
-        js.Function1[/* body */ _, js.UndefOr[Double]], 
-        js.Function1[/* body */ _, js.UndefOr[Double]], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val credentials: ConfigurationPropertyDefinition[
-        js.UndefOr[Credentials | Provider[Credentials]], 
-        Provider[Credentials], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val delayDecider: ConfigurationPropertyDefinition[
-        js.UndefOr[DelayDecider], 
-        js.UndefOr[DelayDecider], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val endpoint: ConfigurationPropertyDefinition[
-        js.UndefOr[String | HttpEndpoint | Provider[HttpEndpoint]], 
-        Provider[HttpEndpoint], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val endpointProvider: ConfigurationPropertyDefinition[js.UndefOr[_], _, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val handler: ConfigurationPropertyDefinition[
-        js.UndefOr[Terminalware[_, Readable]], 
-        Terminalware[_, Readable], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val httpHandler: ConfigurationPropertyDefinition[
-        js.UndefOr[HttpHandler[Readable, HttpOptions]], 
-        HttpHandler[Readable, HttpOptions], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val maxRedirects: ConfigurationPropertyDefinition[js.UndefOr[Double], Double, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val maxRetries: ConfigurationPropertyDefinition[js.UndefOr[Double], Double, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val parser: ConfigurationPropertyDefinition[
-        ResponseParser[Readable], 
-        ResponseParser[Readable], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val profile: ConfigurationPropertyDefinition[
-        js.UndefOr[String], 
-        js.UndefOr[String], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val region: ConfigurationPropertyDefinition[
-        js.UndefOr[String | Provider[String]], 
-        Provider[String], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val retryDecider: ConfigurationPropertyDefinition[
-        js.UndefOr[RetryDecider], 
-        js.UndefOr[RetryDecider], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val serializer: ConfigurationPropertyDefinition[
-        Provider[RequestSerializer[Readable]], 
-        Provider[RequestSerializer[Readable]], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val sha256: ConfigurationPropertyDefinition[
-        js.UndefOr[HashConstructor], 
-        HashConstructor, 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val signer: ConfigurationPropertyDefinition[
-        js.UndefOr[RequestSigner], 
-        RequestSigner, 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val signingName: ConfigurationPropertyDefinition[js.UndefOr[String], String, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val sslEnabled: ConfigurationPropertyDefinition[js.UndefOr[Boolean], Boolean, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val streamCollector: ConfigurationPropertyDefinition[
-        js.UndefOr[StreamCollector[Readable]], 
-        StreamCollector[Readable], 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val urlParser: ConfigurationPropertyDefinition[
-        js.UndefOr[UrlParser], 
-        UrlParser, 
-        XRayResolvableConfiguration, 
-        XRayResolvedConfiguration
-      ] = js.native
-    val utf8Decoder: ConfigurationPropertyDefinition[js.UndefOr[Decoder], Decoder, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-    val utf8Encoder: ConfigurationPropertyDefinition[js.UndefOr[Encoder], Encoder, XRayResolvableConfiguration, XRayResolvedConfiguration] = js.native
-  }
-  
+  val configurationProperties: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.ConfigurationDefinition<XRayResolvableConfiguration, XRayResolvedConfiguration> */ Any = js.native
 }
-

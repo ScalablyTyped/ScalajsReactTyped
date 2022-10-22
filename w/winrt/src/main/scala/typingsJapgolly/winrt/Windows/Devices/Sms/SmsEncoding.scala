@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Devices.Sms
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmsEncoding extends js.Object
-
+sealed trait SmsEncoding extends StObject
 @JSGlobal("Windows.Devices.Sms.SmsEncoding")
 @js.native
-object SmsEncoding extends js.Object {
-  @js.native
-  sealed trait gsmSevenBit extends SmsEncoding
+object SmsEncoding extends StObject {
   
   @js.native
-  sealed trait optimal extends SmsEncoding
+  sealed trait gsmSevenBit
+    extends StObject
+       with SmsEncoding
   
   @js.native
-  sealed trait sevenBitAscii extends SmsEncoding
+  sealed trait optimal
+    extends StObject
+       with SmsEncoding
   
   @js.native
-  sealed trait unicode extends SmsEncoding
+  sealed trait sevenBitAscii
+    extends StObject
+       with SmsEncoding
   
   @js.native
-  sealed trait unknown extends SmsEncoding
+  sealed trait unicode
+    extends StObject
+       with SmsEncoding
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmsEncoding with Double] = js.native
-  /* 4 */ @js.native
-  object gsmSevenBit extends TopLevel[gsmSevenBit with Double]
-  
-  /* 1 */ @js.native
-  object optimal extends TopLevel[optimal with Double]
-  
-  /* 2 */ @js.native
-  object sevenBitAscii extends TopLevel[sevenBitAscii with Double]
-  
-  /* 3 */ @js.native
-  object unicode extends TopLevel[unicode with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  @js.native
+  sealed trait unknown
+    extends StObject
+       with SmsEncoding
 }
-

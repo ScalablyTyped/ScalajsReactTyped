@@ -1,12 +1,11 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the createAssociation mixin of the hasOne association.
   * @see HasOneCreateAssociationMixin
   */
-trait HasOneCreateAssociationMixinOptions extends js.Object
-
+trait HasOneCreateAssociationMixinOptions extends StObject

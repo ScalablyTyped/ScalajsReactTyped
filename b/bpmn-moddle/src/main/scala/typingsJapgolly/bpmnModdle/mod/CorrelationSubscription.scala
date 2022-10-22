@@ -1,12 +1,36 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CorrelationSubscription extends BaseElement {
-  var correlationKeyRef: CorrelationKey = js.native
-  var correlationPropertyBinding: js.Array[CorrelationKey] = js.native
+trait CorrelationSubscription
+  extends StObject
+     with BaseElement {
+  
+  var correlationKeyRef: CorrelationKey
+  
+  var correlationPropertyBinding: js.Array[CorrelationKey]
 }
-
+object CorrelationSubscription {
+  
+  inline def apply(
+    $parent: TypeDerived,
+    $type: ElementType,
+    correlationKeyRef: CorrelationKey,
+    correlationPropertyBinding: js.Array[CorrelationKey],
+    id: String
+  ): CorrelationSubscription = {
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], correlationKeyRef = correlationKeyRef.asInstanceOf[js.Any], correlationPropertyBinding = correlationPropertyBinding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CorrelationSubscription]
+  }
+  
+  extension [Self <: CorrelationSubscription](x: Self) {
+    
+    inline def setCorrelationKeyRef(value: CorrelationKey): Self = StObject.set(x, "correlationKeyRef", value.asInstanceOf[js.Any])
+    
+    inline def setCorrelationPropertyBinding(value: js.Array[CorrelationKey]): Self = StObject.set(x, "correlationPropertyBinding", value.asInstanceOf[js.Any])
+    
+    inline def setCorrelationPropertyBindingVarargs(value: CorrelationKey*): Self = StObject.set(x, "correlationPropertyBinding", js.Array(value*))
+  }
+}

@@ -1,23 +1,38 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorEventObject extends js.Object {
+trait ErrorEventObject extends StObject {
+  
   var detailedMessage: js.UndefOr[String] = js.undefined
+  
   var id: String
+  
   var message: String
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
 }
-
 object ErrorEventObject {
-  @scala.inline
-  def apply(id: String, message: String, detailedMessage: String = null, options: js.Any = null): ErrorEventObject = {
+  
+  inline def apply(id: String, message: String): ErrorEventObject = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
-    if (detailedMessage != null) __obj.updateDynamic("detailedMessage")(detailedMessage.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEventObject]
   }
+  
+  extension [Self <: ErrorEventObject](x: Self) {
+    
+    inline def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
+    
+    inline def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

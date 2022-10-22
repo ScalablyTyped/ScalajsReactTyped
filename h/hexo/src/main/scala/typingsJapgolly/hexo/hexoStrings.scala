@@ -1,154 +1,124 @@
 package typingsJapgolly.hexo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hexoStrings {
-  @js.native
-  sealed trait after_clean extends js.Object
   
   @js.native
-  sealed trait after_generate extends js.Object
+  sealed trait after_clean extends StObject
+  inline def after_clean: after_clean = "after_clean".asInstanceOf[after_clean]
   
   @js.native
-  sealed trait after_init extends js.Object
+  sealed trait after_generate extends StObject
+  inline def after_generate: after_generate = "after_generate".asInstanceOf[after_generate]
   
   @js.native
-  sealed trait after_post_render extends js.Object
+  sealed trait after_init extends StObject
+  inline def after_init: after_init = "after_init".asInstanceOf[after_init]
   
   @js.native
-  sealed trait after_renderColonhtml extends js.Object
+  sealed trait after_post_render extends StObject
+  inline def after_post_render: after_post_render = "after_post_render".asInstanceOf[after_post_render]
   
   @js.native
-  sealed trait before_exit extends js.Object
+  sealed trait after_renderColonhtml extends StObject
+  inline def after_renderColonhtml: after_renderColonhtml = "after_render:html".asInstanceOf[after_renderColonhtml]
   
   @js.native
-  sealed trait before_generate extends js.Object
+  sealed trait before_exit extends StObject
+  inline def before_exit: before_exit = "before_exit".asInstanceOf[before_exit]
   
   @js.native
-  sealed trait before_post_render extends js.Object
+  sealed trait before_generate extends StObject
+  inline def before_generate: before_generate = "before_generate".asInstanceOf[before_generate]
   
   @js.native
-  sealed trait categories extends js.Object
+  sealed trait before_post_render extends StObject
+  inline def before_post_render: before_post_render = "before_post_render".asInstanceOf[before_post_render]
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait categories extends StObject
+  inline def categories: categories = "categories".asInstanceOf[categories]
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait create extends StObject
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait deployAfter extends js.Object
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait deployBefore extends js.Object
+  sealed trait deployAfter extends StObject
+  inline def deployAfter: deployAfter = "deployAfter".asInstanceOf[deployAfter]
   
   @js.native
-  sealed trait exit extends js.Object
+  sealed trait deployBefore extends StObject
+  inline def deployBefore: deployBefore = "deployBefore".asInstanceOf[deployBefore]
   
   @js.native
-  sealed trait generateAfter extends js.Object
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
-  sealed trait generateBefore extends js.Object
+  sealed trait generateAfter extends StObject
+  inline def generateAfter: generateAfter = "generateAfter".asInstanceOf[generateAfter]
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait generateBefore extends StObject
+  inline def generateBefore: generateBefore = "generateBefore".asInstanceOf[generateBefore]
   
   @js.native
-  sealed trait new_post_path extends js.Object
+  sealed trait `new` extends StObject
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait pages extends js.Object
+  sealed trait new_post_path extends StObject
+  inline def new_post_path: new_post_path = "new_post_path".asInstanceOf[new_post_path]
   
   @js.native
-  sealed trait post_permalink extends js.Object
+  sealed trait pages extends StObject
+  inline def pages: pages = "pages".asInstanceOf[pages]
   
   @js.native
-  sealed trait posts extends js.Object
+  sealed trait post_permalink extends StObject
+  inline def post_permalink: post_permalink = "post_permalink".asInstanceOf[post_permalink]
   
   @js.native
-  sealed trait processAfter extends js.Object
+  sealed trait posts extends StObject
+  inline def posts: posts = "posts".asInstanceOf[posts]
   
   @js.native
-  sealed trait processBefore extends js.Object
+  sealed trait processAfter extends StObject
+  inline def processAfter: processAfter = "processAfter".asInstanceOf[processAfter]
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait processBefore extends StObject
+  inline def processBefore: processBefore = "processBefore".asInstanceOf[processBefore]
   
   @js.native
-  sealed trait server_middleware extends js.Object
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait skip extends js.Object
+  sealed trait server_middleware extends StObject
+  inline def server_middleware: server_middleware = "server_middleware".asInstanceOf[server_middleware]
   
   @js.native
-  sealed trait tags extends js.Object
+  sealed trait skip extends StObject
+  inline def skip: skip = "skip".asInstanceOf[skip]
   
   @js.native
-  sealed trait template_locals extends js.Object
+  sealed trait tags extends StObject
+  inline def tags: tags = "tags".asInstanceOf[tags]
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait template_locals extends StObject
+  inline def template_locals: template_locals = "template_locals".asInstanceOf[template_locals]
   
-  @scala.inline
-  def after_clean: after_clean = "after_clean".asInstanceOf[after_clean]
-  @scala.inline
-  def after_generate: after_generate = "after_generate".asInstanceOf[after_generate]
-  @scala.inline
-  def after_init: after_init = "after_init".asInstanceOf[after_init]
-  @scala.inline
-  def after_post_render: after_post_render = "after_post_render".asInstanceOf[after_post_render]
-  @scala.inline
-  def after_renderColonhtml: after_renderColonhtml = "after_render:html".asInstanceOf[after_renderColonhtml]
-  @scala.inline
-  def before_exit: before_exit = "before_exit".asInstanceOf[before_exit]
-  @scala.inline
-  def before_generate: before_generate = "before_generate".asInstanceOf[before_generate]
-  @scala.inline
-  def before_post_render: before_post_render = "before_post_render".asInstanceOf[before_post_render]
-  @scala.inline
-  def categories: categories = "categories".asInstanceOf[categories]
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def deployAfter: deployAfter = "deployAfter".asInstanceOf[deployAfter]
-  @scala.inline
-  def deployBefore: deployBefore = "deployBefore".asInstanceOf[deployBefore]
-  @scala.inline
-  def exit: exit = "exit".asInstanceOf[exit]
-  @scala.inline
-  def generateAfter: generateAfter = "generateAfter".asInstanceOf[generateAfter]
-  @scala.inline
-  def generateBefore: generateBefore = "generateBefore".asInstanceOf[generateBefore]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def new_post_path: new_post_path = "new_post_path".asInstanceOf[new_post_path]
-  @scala.inline
-  def pages: pages = "pages".asInstanceOf[pages]
-  @scala.inline
-  def post_permalink: post_permalink = "post_permalink".asInstanceOf[post_permalink]
-  @scala.inline
-  def posts: posts = "posts".asInstanceOf[posts]
-  @scala.inline
-  def processAfter: processAfter = "processAfter".asInstanceOf[processAfter]
-  @scala.inline
-  def processBefore: processBefore = "processBefore".asInstanceOf[processBefore]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def server_middleware: server_middleware = "server_middleware".asInstanceOf[server_middleware]
-  @scala.inline
-  def skip: skip = "skip".asInstanceOf[skip]
-  @scala.inline
-  def tags: tags = "tags".asInstanceOf[tags]
-  @scala.inline
-  def template_locals: template_locals = "template_locals".asInstanceOf[template_locals]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
+  @js.native
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
 }
-

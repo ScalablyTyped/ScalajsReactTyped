@@ -1,31 +1,25 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import typingsJapgolly.ionic.ionicStrings.managed
-import typingsJapgolly.ionic.ionicStrings.repo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.definitionsMod.RepoStarterTemplate
   - typingsJapgolly.ionic.definitionsMod.ManagedStarterTemplate
 */
-trait StarterTemplate extends js.Object
-
+trait StarterTemplate extends StObject
 object StarterTemplate {
-  @scala.inline
-  def RepoStarterTemplate(name: String, projectType: ProjectType, repo: String, `type`: repo, description: String = null): StarterTemplate = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StarterTemplate]
-  }
-  @scala.inline
-  def ManagedStarterTemplate(id: String, name: String, projectType: ProjectType, `type`: managed, description: String = null): StarterTemplate = {
+  
+  inline def ManagedStarterTemplate(id: String, name: String, projectType: ProjectType): typingsJapgolly.ionic.definitionsMod.ManagedStarterTemplate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[StarterTemplate]
+    __obj.updateDynamic("type")("managed")
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.ManagedStarterTemplate]
+  }
+  
+  inline def RepoStarterTemplate(name: String, projectType: ProjectType, repo: String): typingsJapgolly.ionic.definitionsMod.RepoStarterTemplate = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("repo")
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.RepoStarterTemplate]
   }
 }
-

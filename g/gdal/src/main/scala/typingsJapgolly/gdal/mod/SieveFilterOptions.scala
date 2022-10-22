@@ -1,30 +1,42 @@
 package typingsJapgolly.gdal.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SieveFilterOptions extends js.Object {
+trait SieveFilterOptions extends StObject {
+  
   var connectedness: js.UndefOr[Double] = js.undefined
+  
   var dst: RasterBand
+  
   var mask: js.UndefOr[RasterBand] = js.undefined
+  
   var src: RasterBand
+  
   var threshold: Double
 }
-
 object SieveFilterOptions {
-  @scala.inline
-  def apply(
-    dst: RasterBand,
-    src: RasterBand,
-    threshold: Double,
-    connectedness: Int | Double = null,
-    mask: RasterBand = null
-  ): SieveFilterOptions = {
+  
+  inline def apply(dst: RasterBand, src: RasterBand, threshold: Double): SieveFilterOptions = {
     val __obj = js.Dynamic.literal(dst = dst.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
-    if (connectedness != null) __obj.updateDynamic("connectedness")(connectedness.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[SieveFilterOptions]
   }
+  
+  extension [Self <: SieveFilterOptions](x: Self) {
+    
+    inline def setConnectedness(value: Double): Self = StObject.set(x, "connectedness", value.asInstanceOf[js.Any])
+    
+    inline def setConnectednessUndefined: Self = StObject.set(x, "connectedness", js.undefined)
+    
+    inline def setDst(value: RasterBand): Self = StObject.set(x, "dst", value.asInstanceOf[js.Any])
+    
+    inline def setMask(value: RasterBand): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    inline def setSrc(value: RasterBand): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+  }
 }
-

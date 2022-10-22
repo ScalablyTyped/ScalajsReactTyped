@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tailwindcss/typography" : "0.5.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tailwindcss/typography" : "0.5.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

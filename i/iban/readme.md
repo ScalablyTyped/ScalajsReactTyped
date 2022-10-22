@@ -1,7 +1,7 @@
 
 # Scala.js typings for iban
 
-Typings are for version 0.0.5
+Typings are for version 0.0.14
 
 ## Library description:
 A javascript library to validate, format and convert IBAN (International Bank Account Number) and BBAN (Basic Bank Account Number)
@@ -10,10 +10,10 @@ A javascript library to validate, format and convert IBAN (International Bank Ac
 | ------------------ | :-------------: |
 | Full name          | iban |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 38 |
-| # downloads        | 1790629 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 442237.6666666667 |
+| # stars            | 498.0 |
 
 ## Links
 - [Homepage](https://github.com/arhs/iban.js#readme)

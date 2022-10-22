@@ -2,13 +2,15 @@ package typingsJapgolly.materialUiStyles
 
 import typingsJapgolly.materialUiStyles.getStylesCreatorGetStylesCreatorMod.StylesCreator
 import typingsJapgolly.materialUiStyles.withStylesWithStylesMod.Styles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/styles/getStylesCreator", JSImport.Namespace)
-@js.native
-object getStylesCreatorMod extends js.Object {
-  def default[S /* <: Styles[_, _, String] */](style: S): StylesCreator[_, _, String] = js.native
+object getStylesCreatorMod {
+  
+  @JSImport("@material-ui/styles/getStylesCreator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[S /* <: Styles[Any, Any, String] */](style: S): StylesCreator[Any, Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[Any, Any, String]]
 }
-

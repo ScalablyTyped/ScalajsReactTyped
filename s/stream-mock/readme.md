@@ -10,10 +10,10 @@ Node stream mock module
 | ------------------ | :-------------: |
 | Full name          | stream-mock |
 | Keywords           | stream, mock, test, writable, readable |
-| # releases         | 13 |
-| # dependents       | 5 |
-| # downloads        | 435185 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 35144.666666666664 |
+| # stars            | 22.0 |
 
 ## Links
 - [Homepage](https://github.com/BastienAr/stream-mock#readme)

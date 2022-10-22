@@ -1,77 +1,134 @@
 package typingsJapgolly.dplayer.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DPlayerOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.undefined
+  
   var autoplay: js.UndefOr[Boolean] = js.undefined
+  
   var container: HTMLElement | Null
+  
   var contextmenu: js.UndefOr[js.Array[DPlayerContextMenuItem]] = js.undefined
+  
   var danmaku: js.UndefOr[DPlayerDanmaku] = js.undefined
+  
   var highlight: js.UndefOr[js.Array[DPlayerHighLightItem]] = js.undefined
+  
   var hotkey: js.UndefOr[Boolean] = js.undefined
+  
   var lang: js.UndefOr[Lang | String] = js.undefined
+  
   var live: js.UndefOr[Boolean] = js.undefined
+  
   var logo: js.UndefOr[String] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   var mutex: js.UndefOr[Boolean] = js.undefined
+  
   var preload: js.UndefOr[Preload] = js.undefined
+  
   var screenshot: js.UndefOr[Boolean] = js.undefined
+  
   var subtitle: js.UndefOr[DPlayerSubTitle] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
+  
   var video: js.UndefOr[DPlayerVideo] = js.undefined
+  
   var volume: js.UndefOr[Double] = js.undefined
 }
-
 object DPlayerOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    apiBackend: DPlayerAPIBackend = null,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    container: HTMLElement = null,
-    contextmenu: js.Array[DPlayerContextMenuItem] = null,
-    danmaku: DPlayerDanmaku = null,
-    highlight: js.Array[DPlayerHighLightItem] = null,
-    hotkey: js.UndefOr[Boolean] = js.undefined,
-    lang: Lang | String = null,
-    live: js.UndefOr[Boolean] = js.undefined,
-    logo: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    mutex: js.UndefOr[Boolean] = js.undefined,
-    preload: Preload = null,
-    screenshot: js.UndefOr[Boolean] = js.undefined,
-    subtitle: DPlayerSubTitle = null,
-    theme: String = null,
-    video: DPlayerVideo = null,
-    volume: Int | Double = null
-  ): DPlayerOptions = {
-    val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (apiBackend != null) __obj.updateDynamic("apiBackend")(apiBackend.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu.asInstanceOf[js.Any])
-    if (danmaku != null) __obj.updateDynamic("danmaku")(danmaku.asInstanceOf[js.Any])
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
-    if (!js.isUndefined(hotkey)) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live.asInstanceOf[js.Any])
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(mutex)) __obj.updateDynamic("mutex")(mutex.asInstanceOf[js.Any])
-    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+  
+  inline def apply(): DPlayerOptions = {
+    val __obj = js.Dynamic.literal(container = null)
     __obj.asInstanceOf[DPlayerOptions]
   }
+  
+  extension [Self <: DPlayerOptions](x: Self) {
+    
+    inline def setApiBackend(value: DPlayerAPIBackend): Self = StObject.set(x, "apiBackend", value.asInstanceOf[js.Any])
+    
+    inline def setApiBackendUndefined: Self = StObject.set(x, "apiBackend", js.undefined)
+    
+    inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+    
+    inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContextmenu(value: js.Array[DPlayerContextMenuItem]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
+    
+    inline def setContextmenuUndefined: Self = StObject.set(x, "contextmenu", js.undefined)
+    
+    inline def setContextmenuVarargs(value: DPlayerContextMenuItem*): Self = StObject.set(x, "contextmenu", js.Array(value*))
+    
+    inline def setDanmaku(value: DPlayerDanmaku): Self = StObject.set(x, "danmaku", value.asInstanceOf[js.Any])
+    
+    inline def setDanmakuUndefined: Self = StObject.set(x, "danmaku", js.undefined)
+    
+    inline def setHighlight(value: js.Array[DPlayerHighLightItem]): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    
+    inline def setHighlightVarargs(value: DPlayerHighLightItem*): Self = StObject.set(x, "highlight", js.Array(value*))
+    
+    inline def setHotkey(value: Boolean): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+    
+    inline def setHotkeyUndefined: Self = StObject.set(x, "hotkey", js.undefined)
+    
+    inline def setLang(value: Lang | String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setLive(value: Boolean): Self = StObject.set(x, "live", value.asInstanceOf[js.Any])
+    
+    inline def setLiveUndefined: Self = StObject.set(x, "live", js.undefined)
+    
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMutex(value: Boolean): Self = StObject.set(x, "mutex", value.asInstanceOf[js.Any])
+    
+    inline def setMutexUndefined: Self = StObject.set(x, "mutex", js.undefined)
+    
+    inline def setPreload(value: Preload): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+    
+    inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+    
+    inline def setScreenshot(value: Boolean): Self = StObject.set(x, "screenshot", value.asInstanceOf[js.Any])
+    
+    inline def setScreenshotUndefined: Self = StObject.set(x, "screenshot", js.undefined)
+    
+    inline def setSubtitle(value: DPlayerSubTitle): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setVideo(value: DPlayerVideo): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    
+    inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+  }
 }
-

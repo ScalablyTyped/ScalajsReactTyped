@@ -1,24 +1,20 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`0`
-  - typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`1`
-  - typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`2`
+  - typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`0`
+  - typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`1`
+  - typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`2`
 */
-trait View extends js.Object
-
+trait View extends StObject
 object View {
-  @scala.inline
-  def `0`: typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`1` = this.cast(1)
-  @scala.inline
-  def `2`: typingsJapgolly.googleCloudTasks.googleCloudTasksNumbers.`2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`0` = 0.asInstanceOf[typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`0`]
+  
+  inline def `1`: typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`1` = 1.asInstanceOf[typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`1`]
+  
+  inline def `2`: typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`2` = 2.asInstanceOf[typingsJapgolly.googleCloudTasks.googleCloudTasksInts.`2`]
 }
-

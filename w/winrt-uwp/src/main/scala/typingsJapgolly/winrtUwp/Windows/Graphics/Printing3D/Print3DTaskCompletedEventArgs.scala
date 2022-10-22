@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing3D
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the Completed event of the 3D print request. */
-@JSGlobal("Windows.Graphics.Printing3D.Print3DTaskCompletedEventArgs")
-@js.native
-abstract class Print3DTaskCompletedEventArgs () extends js.Object {
+trait Print3DTaskCompletedEventArgs extends StObject {
+  
   /** Gets the status of the 3D print request. */
-  var completion: Print3DTaskCompletion = js.native
+  var completion: Print3DTaskCompletion
+  
   /** Gets the type of error encountered during the 3D print request. */
-  var extendedStatus: Print3DTaskDetail = js.native
+  var extendedStatus: Print3DTaskDetail
 }
-
+object Print3DTaskCompletedEventArgs {
+  
+  inline def apply(completion: Print3DTaskCompletion, extendedStatus: Print3DTaskDetail): Print3DTaskCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(completion = completion.asInstanceOf[js.Any], extendedStatus = extendedStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Print3DTaskCompletedEventArgs]
+  }
+  
+  extension [Self <: Print3DTaskCompletedEventArgs](x: Self) {
+    
+    inline def setCompletion(value: Print3DTaskCompletion): Self = StObject.set(x, "completion", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedStatus(value: Print3DTaskDetail): Self = StObject.set(x, "extendedStatus", value.asInstanceOf[js.Any])
+  }
+}

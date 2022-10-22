@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IToastNotificationFactory extends js.Object {
+trait IToastNotificationFactory extends StObject {
+  
   def createToastNotification(content: XmlDocument): ToastNotification
 }
-
 object IToastNotificationFactory {
-  @scala.inline
-  def apply(createToastNotification: XmlDocument => CallbackTo[ToastNotification]): IToastNotificationFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createToastNotification")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument) => createToastNotification(t0).runNow()))
+  
+  inline def apply(createToastNotification: XmlDocument => ToastNotification): IToastNotificationFactory = {
+    val __obj = js.Dynamic.literal(createToastNotification = js.Any.fromFunction1(createToastNotification))
     __obj.asInstanceOf[IToastNotificationFactory]
   }
+  
+  extension [Self <: IToastNotificationFactory](x: Self) {
+    
+    inline def setCreateToastNotification(value: XmlDocument => ToastNotification): Self = StObject.set(x, "createToastNotification", js.Any.fromFunction1(value))
+  }
 }
-

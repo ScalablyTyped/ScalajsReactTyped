@@ -1,17 +1,20 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonDnAttributes
+import typingsJapgolly.ldapjs.anon.DnAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "ExtensibleFilter")
 @js.native
-class ExtensibleFilter protected () extends Filter {
-  def this(options: AnonDnAttributes) = this()
+open class ExtensibleFilter protected ()
+  extends StObject
+     with Filter {
+  def this(options: DnAttributes) = this()
+  
   /* CompleteClass */
-  override var `type`: String = js.native
+  override def matches(obj: Any): Boolean = js.native
+  
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  var `type`: String = js.native
 }
-

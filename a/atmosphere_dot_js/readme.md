@@ -10,10 +10,10 @@ Atmosphere client for Node.js
 | ------------------ | :-------------: |
 | Full name          | atmosphere.js |
 | Keywords           | atmosphere |
-| # releases         | 5 |
-| # dependents       | 6 |
-| # downloads        | 85068 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 9915.333333333334 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/Atmosphere/atmosphere-javascript)

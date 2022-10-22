@@ -1,13 +1,13 @@
 package typingsJapgolly.awsSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "Request")
 @js.native
-class Request[D, E] protected ()
-  extends typingsJapgolly.awsSdk.coreMod.Request[D, E] {
+open class Request[D, E] protected ()
+  extends typingsJapgolly.awsSdk.libCoreMod.Request[D, E] {
   /**
     * Creates a request for an operation on a given service with a set of input parameters.
     *
@@ -15,7 +15,6 @@ class Request[D, E] protected ()
     * @param {string} operation - The operation to perform on the service.
     * @param {object} params - Parameters to send to the operation.
     */
-  def this(service: typingsJapgolly.awsSdk.serviceMod.Service, operation: String) = this()
-  def this(service: typingsJapgolly.awsSdk.serviceMod.Service, operation: String, params: js.Any) = this()
+  def this(service: typingsJapgolly.awsSdk.libServiceMod.Service, operation: String) = this()
+  def this(service: typingsJapgolly.awsSdk.libServiceMod.Service, operation: String, params: Any) = this()
 }
-

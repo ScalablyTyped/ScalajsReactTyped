@@ -10,10 +10,10 @@ Detect support for emoji character sets.
 | ------------------ | :-------------: |
 | Full name          | detect-emoji-support |
 | Keywords           | detect, emoji, support |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 43958 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6733.666666666667 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/danalloway/detect-emoji-support#readme)

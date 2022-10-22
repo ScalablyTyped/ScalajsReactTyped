@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditRowInserting event.
   */
-@JSGlobal("ASPxClientGridViewBatchEditRowInsertingEventArgs")
-@js.native
-class ASPxClientGridViewBatchEditRowInsertingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewBatchEditRowInsertingEventArgs class.
-    * @param visibleIndex An integer value that specifies the processed row's visible index.
-    */
-  def this(visibleIndex: Double) = this()
+trait ASPxClientGridViewBatchEditRowInsertingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the processed row's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientGridViewBatchEditRowInsertingEventArgs {
+  
+  inline def apply(cancel: Boolean, visibleIndex: Double): ASPxClientGridViewBatchEditRowInsertingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowInsertingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewBatchEditRowInsertingEventArgs](x: Self) {
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

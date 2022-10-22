@@ -1,16 +1,19 @@
 package typingsJapgolly.lodashDecorators
 
-import typingsJapgolly.lodashDecorators.commonMod.LodashDecorator
+import typingsJapgolly.lodashDecorators.factoryCommonMod.LodashDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/afterAll", JSImport.Namespace)
-@js.native
-object afterAllMod extends js.Object {
-  @JSName("AfterAll")
-  def AfterAll_(n: Double): LodashDecorator = js.native
-  def afterAll(n: Double): LodashDecorator = js.native
-  def default(args: js.Any*): LodashDecorator = js.native
+object afterAllMod {
+  
+  @JSImport("lodash-decorators/afterAll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(args: Any*): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[LodashDecorator]
+  
+  inline def AfterAll_(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
+  
+  inline def afterAll(n: Double): LodashDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("afterAll")(n.asInstanceOf[js.Any]).asInstanceOf[LodashDecorator]
 }
-

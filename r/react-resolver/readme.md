@@ -10,15 +10,12 @@ Async-rendering & data-fetching for universal React applications
 | ------------------ | :-------------: |
 | Full name          | react-resolver |
 | Keywords           | async, decorator, lazy, load, react, resolve |
-| # releases         | 2 |
-| # dependents       | 9 |
-| # downloads        | 185146 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 11719.666666666666 |
+| # stars            | 1656.0 |
 
 ## Links
-- [Homepage](https://github.com/ericclemmons/react-resolver)
-- [Bugs](https://github.com/ericclemmons/react-resolver/issues)
-- [Repository](https://github.com/ericclemmons/react-resolver)
 - [Npm](https://www.npmjs.com/package/react-resolver)
     
 

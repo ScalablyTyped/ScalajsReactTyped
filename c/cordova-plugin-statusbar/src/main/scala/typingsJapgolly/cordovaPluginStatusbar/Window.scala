@@ -1,17 +1,18 @@
 package typingsJapgolly.cordovaPluginStatusbar
 
+import org.scalajs.dom.Event
 import typingsJapgolly.cordovaPluginStatusbar.cordovaPluginStatusbarStrings.statusTap
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Window extends js.Object {
+trait Window extends StObject {
+  
   var StatusBar: typingsJapgolly.cordovaPluginStatusbar.StatusBar = js.native
+  
   @JSName("addEventListener")
-  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event_, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_statusTap(`type`: statusTap, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
 }
-

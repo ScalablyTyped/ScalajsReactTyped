@@ -1,174 +1,140 @@
 package typingsJapgolly.kindOf
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kindOfStrings {
-  @js.native
-  sealed trait arguments extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait arguments extends StObject
+  inline def arguments: arguments = "arguments".asInstanceOf[arguments]
   
   @js.native
-  sealed trait arrayiterator extends js.Object
+  sealed trait array extends StObject
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait arrayiterator extends StObject
+  inline def arrayiterator: arrayiterator = "arrayiterator".asInstanceOf[arrayiterator]
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait boolean extends StObject
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait float32array extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait float64array extends js.Object
+  sealed trait float32array extends StObject
+  inline def float32array: float32array = "float32array".asInstanceOf[float32array]
   
   @js.native
-  sealed trait function extends js.Object
+  sealed trait float64array extends StObject
+  inline def float64array: float64array = "float64array".asInstanceOf[float64array]
   
   @js.native
-  sealed trait generator extends js.Object
+  sealed trait function extends StObject
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait generatorfunction extends js.Object
+  sealed trait generator extends StObject
+  inline def generator: generator = "generator".asInstanceOf[generator]
   
   @js.native
-  sealed trait int16array extends js.Object
+  sealed trait generatorfunction extends StObject
+  inline def generatorfunction: generatorfunction = "generatorfunction".asInstanceOf[generatorfunction]
   
   @js.native
-  sealed trait int32array extends js.Object
+  sealed trait int16array extends StObject
+  inline def int16array: int16array = "int16array".asInstanceOf[int16array]
   
   @js.native
-  sealed trait int8array extends js.Object
+  sealed trait int32array extends StObject
+  inline def int32array: int32array = "int32array".asInstanceOf[int32array]
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait int8array extends StObject
+  inline def int8array: int8array = "int8array".asInstanceOf[int8array]
   
   @js.native
-  sealed trait mapiterator extends js.Object
+  sealed trait map extends StObject
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait mapiterator extends StObject
+  inline def mapiterator: mapiterator = "mapiterator".asInstanceOf[mapiterator]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait `null` extends StObject
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait promise extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait regexp extends js.Object
+  sealed trait promise extends StObject
+  inline def promise: promise = "promise".asInstanceOf[promise]
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait regexp extends StObject
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait setiterator extends js.Object
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait setiterator extends StObject
+  inline def setiterator: setiterator = "setiterator".asInstanceOf[setiterator]
   
   @js.native
-  sealed trait stringiterator extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait stringiterator extends StObject
+  inline def stringiterator: stringiterator = "stringiterator".asInstanceOf[stringiterator]
   
   @js.native
-  sealed trait uint16array extends js.Object
+  sealed trait symbol extends StObject
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait uint32array extends js.Object
+  sealed trait uint16array extends StObject
+  inline def uint16array: uint16array = "uint16array".asInstanceOf[uint16array]
   
   @js.native
-  sealed trait uint8array extends js.Object
+  sealed trait uint32array extends StObject
+  inline def uint32array: uint32array = "uint32array".asInstanceOf[uint32array]
   
   @js.native
-  sealed trait uint8clampedarray extends js.Object
+  sealed trait uint8array extends StObject
+  inline def uint8array: uint8array = "uint8array".asInstanceOf[uint8array]
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait uint8clampedarray extends StObject
+  inline def uint8clampedarray: uint8clampedarray = "uint8clampedarray".asInstanceOf[uint8clampedarray]
   
   @js.native
-  sealed trait weakmap extends js.Object
+  sealed trait undefined extends StObject
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait weakset extends js.Object
+  sealed trait weakmap extends StObject
+  inline def weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
   
-  @scala.inline
-  def arguments: arguments = "arguments".asInstanceOf[arguments]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def arrayiterator: arrayiterator = "arrayiterator".asInstanceOf[arrayiterator]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def float32array: float32array = "float32array".asInstanceOf[float32array]
-  @scala.inline
-  def float64array: float64array = "float64array".asInstanceOf[float64array]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def generator: generator = "generator".asInstanceOf[generator]
-  @scala.inline
-  def generatorfunction: generatorfunction = "generatorfunction".asInstanceOf[generatorfunction]
-  @scala.inline
-  def int16array: int16array = "int16array".asInstanceOf[int16array]
-  @scala.inline
-  def int32array: int32array = "int32array".asInstanceOf[int32array]
-  @scala.inline
-  def int8array: int8array = "int8array".asInstanceOf[int8array]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def mapiterator: mapiterator = "mapiterator".asInstanceOf[mapiterator]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def promise: promise = "promise".asInstanceOf[promise]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def setiterator: setiterator = "setiterator".asInstanceOf[setiterator]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def stringiterator: stringiterator = "stringiterator".asInstanceOf[stringiterator]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def uint16array: uint16array = "uint16array".asInstanceOf[uint16array]
-  @scala.inline
-  def uint32array: uint32array = "uint32array".asInstanceOf[uint32array]
-  @scala.inline
-  def uint8array: uint8array = "uint8array".asInstanceOf[uint8array]
-  @scala.inline
-  def uint8clampedarray: uint8clampedarray = "uint8clampedarray".asInstanceOf[uint8clampedarray]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
-  @scala.inline
-  def weakmap: weakmap = "weakmap".asInstanceOf[weakmap]
-  @scala.inline
-  def weakset: weakset = "weakset".asInstanceOf[weakset]
+  @js.native
+  sealed trait weakset extends StObject
+  inline def weakset: weakset = "weakset".asInstanceOf[weakset]
 }
-

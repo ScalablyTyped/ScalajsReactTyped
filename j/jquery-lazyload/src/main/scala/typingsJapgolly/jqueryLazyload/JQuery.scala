@@ -2,15 +2,16 @@ package typingsJapgolly.jqueryLazyload
 
 import typingsJapgolly.jqueryLazyload.JQueryLazyLoad.Options
 import typingsJapgolly.jqueryLazyload.jqueryLazyloadStrings.load
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   def lazyload(): JQuery = js.native
   def lazyload(options: Options): JQuery = js.native
+  
   @JSName("on")
   def on_load(event: load, callback: js.Function1[/* options */ js.UndefOr[Options], Unit]): JQuery = js.native
 }
-

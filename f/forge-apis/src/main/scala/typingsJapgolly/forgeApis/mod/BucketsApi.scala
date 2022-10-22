@@ -1,14 +1,16 @@
 package typingsJapgolly.forgeApis.mod
 
-import typingsJapgolly.forgeApis.AnonLimit
-import typingsJapgolly.forgeApis.AnonXAdsRegion
+import typingsJapgolly.forgeApis.anon.Limit
+import typingsJapgolly.forgeApis.anon.XAdsRegion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "BucketsApi")
 @js.native
-class BucketsApi () extends js.Object {
+open class BucketsApi () extends StObject {
+  def this(apiClient: Any) = this()
+  
   /**
     * Use this endpoint to create a bucket. Buckets are arbitrary spaces created and owned by applications.
     * Bucket keys are globally unique across all regions, regardless of where they were created, and they
@@ -16,21 +18,23 @@ class BucketsApi () extends js.Object {
     */
   def createBucket(
     postBuckets: PostBucketsPayload,
-    opts: AnonXAdsRegion,
+    opts: XAdsRegion,
     oauth2Client: AuthClient,
     credentials: AuthToken
   ): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint will delete a bucket.
     */
   def deleteBucket(bucketKey: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint will return the details of a bucket.
     */
   def getBucketDetails(bucketKey: String, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  
   /**
     * This endpoint will return the buckets owned by the application. This endpoint supports pagination.
     */
-  def getBuckets(opts: AnonLimit, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
+  def getBuckets(opts: Limit, oauth2Client: AuthClient, credentials: AuthToken): js.Promise[ApiResponse] = js.native
 }
-

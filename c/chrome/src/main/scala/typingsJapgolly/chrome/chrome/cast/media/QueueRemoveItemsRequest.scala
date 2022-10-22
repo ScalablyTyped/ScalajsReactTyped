@@ -1,19 +1,28 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.media.QueueRemoveItemsRequest")
-@js.native
-class QueueRemoveItemsRequest protected () extends js.Object {
-  /**
-    * @param {!Array<number>}
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueRemoveItemsRequest
-    */
-  def this(itemIdsToRemove: js.Array[Double]) = this()
-  var customData: js.Object = js.native
-  var itemIds: js.Array[Double] = js.native
+trait QueueRemoveItemsRequest extends StObject {
+  
+  var customData: js.Object
+  
+  var itemIds: js.Array[Double]
 }
-
+object QueueRemoveItemsRequest {
+  
+  inline def apply(customData: js.Object, itemIds: js.Array[Double]): QueueRemoveItemsRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], itemIds = itemIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueueRemoveItemsRequest]
+  }
+  
+  extension [Self <: QueueRemoveItemsRequest](x: Self) {
+    
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    
+    inline def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
+    
+    inline def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value*))
+  }
+}

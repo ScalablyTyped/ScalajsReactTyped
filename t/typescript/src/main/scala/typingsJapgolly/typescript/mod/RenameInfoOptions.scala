@@ -1,19 +1,27 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RenameInfoOptions extends js.Object {
+/**
+  * @deprecated Use `UserPreferences` instead.
+  */
+trait RenameInfoOptions extends StObject {
+  
   val allowRenameOfImportPath: js.UndefOr[Boolean] = js.undefined
 }
-
 object RenameInfoOptions {
-  @scala.inline
-  def apply(allowRenameOfImportPath: js.UndefOr[Boolean] = js.undefined): RenameInfoOptions = {
+  
+  inline def apply(): RenameInfoOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowRenameOfImportPath)) __obj.updateDynamic("allowRenameOfImportPath")(allowRenameOfImportPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameInfoOptions]
   }
+  
+  extension [Self <: RenameInfoOptions](x: Self) {
+    
+    inline def setAllowRenameOfImportPath(value: Boolean): Self = StObject.set(x, "allowRenameOfImportPath", value.asInstanceOf[js.Any])
+    
+    inline def setAllowRenameOfImportPathUndefined: Self = StObject.set(x, "allowRenameOfImportPath", js.undefined)
+  }
 }
-

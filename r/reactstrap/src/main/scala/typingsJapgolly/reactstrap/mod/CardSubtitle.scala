@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.cardSubtitleMod.CardSubtitleProps
+import typingsJapgolly.reactstrap.typesLibCardSubtitleMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "CardSubtitle")
 @js.native
-class CardSubtitle[T] ()
-  extends Component[CardSubtitleProps, js.Object, js.Any]
-
+open class CardSubtitle () extends default

@@ -1,20 +1,23 @@
 package typingsJapgolly.base64Stream
 
+import typingsJapgolly.base64Stream.anon.TransformOptionsoutputEnc
 import typingsJapgolly.node.streamMod.Transform
+import typingsJapgolly.node.streamMod.TransformOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("base64-stream", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class Base64Decode () extends Transform
+object mod {
   
+  @JSImport("base64-stream", "Base64Decode")
   @js.native
-  class Base64Encode () extends Transform {
-    def this(options: TransformOptionslineLengt) = this()
+  open class Base64Decode () extends Transform {
+    def this(opts: TransformOptions) = this()
   }
   
+  @JSImport("base64-stream", "Base64Encode")
+  @js.native
+  open class Base64Encode () extends Transform {
+    def this(options: TransformOptionsoutputEnc) = this()
+  }
 }
-

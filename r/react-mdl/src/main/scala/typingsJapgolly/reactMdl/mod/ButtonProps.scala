@@ -1,41 +1,41 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ButtonProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends StObject
+     with HTMLProps[Any]
      with RippleComponent
      with CustomRenderedComponent {
+  
   var accent: js.UndefOr[Boolean] = js.undefined
+  
   var colored: js.UndefOr[Boolean] = js.undefined
+  
   var primary: js.UndefOr[Boolean] = js.undefined
 }
-
 object ButtonProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    CustomRenderedComponent: CustomRenderedComponent = null,
-    RippleComponent: RippleComponent = null,
-    accent: js.UndefOr[Boolean] = js.undefined,
-    colored: js.UndefOr[Boolean] = js.undefined,
-    primary: js.UndefOr[Boolean] = js.undefined
-  ): ButtonProps = {
+  
+  inline def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
-    if (!js.isUndefined(colored)) __obj.updateDynamic("colored")(colored.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
+  
+  extension [Self <: ButtonProps](x: Self) {
+    
+    inline def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    
+    inline def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
+    
+    inline def setColored(value: Boolean): Self = StObject.set(x, "colored", value.asInstanceOf[js.Any])
+    
+    inline def setColoredUndefined: Self = StObject.set(x, "colored", js.undefined)
+    
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+  }
 }
-

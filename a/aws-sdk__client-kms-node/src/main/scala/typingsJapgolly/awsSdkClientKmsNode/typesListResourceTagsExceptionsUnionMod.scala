@@ -1,0 +1,38 @@
+package typingsJapgolly.awsSdkClientKmsNode
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object typesListResourceTagsExceptionsUnionMod {
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException
+    - typingsJapgolly.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException
+    - typingsJapgolly.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException
+    - typingsJapgolly.awsSdkClientKmsNode.typesInvalidMarkerExceptionMod.InvalidMarkerException
+  */
+  trait ListResourceTagsExceptionsUnion extends StObject
+  object ListResourceTagsExceptionsUnion {
+    
+    inline def InvalidArnException(): typingsJapgolly.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException = {
+      val __obj = js.Dynamic.literal(name = "InvalidArnException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsNode.typesInvalidArnExceptionMod.InvalidArnException]
+    }
+    
+    inline def InvalidMarkerException(): typingsJapgolly.awsSdkClientKmsNode.typesInvalidMarkerExceptionMod.InvalidMarkerException = {
+      val __obj = js.Dynamic.literal(name = "InvalidMarkerException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsNode.typesInvalidMarkerExceptionMod.InvalidMarkerException]
+    }
+    
+    inline def KMSInternalException(): typingsJapgolly.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException = {
+      val __obj = js.Dynamic.literal(name = "KMSInternalException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsNode.typesKmsinternalexceptionMod.KMSInternalException]
+    }
+    
+    inline def NotFoundException(): typingsJapgolly.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException = {
+      val __obj = js.Dynamic.literal(name = "NotFoundException")
+      __obj.asInstanceOf[typingsJapgolly.awsSdkClientKmsNode.typesNotFoundExceptionMod.NotFoundException]
+    }
+  }
+}

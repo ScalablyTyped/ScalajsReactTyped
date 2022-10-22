@@ -1,23 +1,36 @@
 package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait User extends js.Object {
+trait User extends StObject {
+  
   val email: js.UndefOr[String] = js.undefined
+  
   val id: js.UndefOr[Double] = js.undefined
+  
   val name: js.UndefOr[String] = js.undefined
 }
-
 object User {
-  @scala.inline
-  def apply(email: String = null, id: Int | Double = null, name: String = null): User = {
+  
+  inline def apply(): User = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
+  
+  extension [Self <: User](x: Self) {
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

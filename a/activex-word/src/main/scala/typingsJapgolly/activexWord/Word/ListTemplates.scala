@@ -1,21 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.ListTemplates")
 @js.native
-class ListTemplates protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.ListTemplates_typekey")
-  var WordDotListTemplates_typekey: ListTemplates = js.native
+trait ListTemplates extends StObject {
+  
   def Add(): ListTemplate = js.native
-  def Add(OutlineNumbered: js.Any): ListTemplate = js.native
-  def Add(OutlineNumbered: js.Any, Name: js.Any): ListTemplate = js.native
-  def Item(Index: js.Any): ListTemplate = js.native
+  def Add(OutlineNumbered: Any): ListTemplate = js.native
+  def Add(OutlineNumbered: Any, Name: Any): ListTemplate = js.native
+  def Add(OutlineNumbered: Unit, Name: Any): ListTemplate = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  def Item(Index: Any): ListTemplate = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.ListTemplates_typekey")
+  var WordDotListTemplates_typekey: ListTemplates = js.native
 }
-

@@ -1,15 +1,16 @@
 package typingsJapgolly.transliteration
 
-import typingsJapgolly.transliteration.typesMod.SlugifyFunction
-import typingsJapgolly.transliteration.typesMod.TransliterateFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("transliteration", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val slugify: SlugifyFunction = js.native
-  val transliterate: TransliterateFunction = js.native
+object mod {
+  
+  @JSImport("transliteration", "slugify")
+  @js.native
+  val slugify: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SlugifyFunction */ Any = js.native
+  
+  @JSImport("transliteration", "transliterate")
+  @js.native
+  val transliterate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransliterateFunction */ Any = js.native
 }
-

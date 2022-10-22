@@ -1,12 +1,11 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonCertissuer
-import typingsJapgolly.jsrsasign.StringParamcertissuerstri
-import typingsJapgolly.jsrsasign.X500NameParamcertissuerst
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * X500Name ASN.1 structure class
@@ -41,12 +40,10 @@ import scala.scalajs.js.annotation._
   * // 2. construct by object
   * o = new KJUR.asn1.x509.X500Name({C: "US", O: "aaa", CN: "http://example.com/"});
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name")
-@js.native
-class X500Name protected () extends ASN1Object {
-  def this(params: AnonCertissuer) = this()
-  def this(params: StringParamcertissuerstri) = this()
-  def this(params: X500NameParamcertissuerst) = this()
+trait X500Name
+  extends StObject
+     with ASN1Object {
+  
   /**
     * set DN by LDAP(RFC 2253) distinguished name string
     * @param dnStr distinguished name by LDAP string (ex. O=aaa,C=US)
@@ -54,7 +51,8 @@ class X500Name protected () extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByLdapString("CN=foo@example.com,OU=bbb,O=aaa,C=US");
     */
-  def setByLdapString(dnStr: String): Unit = js.native
+  def setByLdapString(dnStr: String): Unit
+  
   /**
     * set DN by associative array
     * @param dnObj associative array of DN (ex. {C: "US", O: "aaa"})
@@ -62,7 +60,8 @@ class X500Name protected () extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByObject({C: "US", O: "aaa", CN="http://example.com/"1});
     */
-  def setByObject(dnObj: X500NameParam): Unit = js.native
+  def setByObject(dnObj: X500NameParam): Unit
+  
   /**
     * set DN by OpenSSL oneline distinguished name string
     * @param dnStr distinguished name by string (ex. /C=US/O=aaa)
@@ -70,42 +69,34 @@ class X500Name protected () extends ASN1Object {
     * name = new KJUR.asn1.x509.X500Name();
     * name.setByString("/C=US/O=aaa/OU=bbb/CN=foo@example.com");
     */
-  def setByString(dnStr: String): Unit = js.native
+  def setByString(dnStr: String): Unit
 }
-
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.X500Name")
-@js.native
-object X500Name extends js.Object {
-  /**
-    * convert LDAP(RFC 2253) distinguished name format string to OpenSSL oneline format
-    * @param s distinguished name string in LDAP(RFC 2253) format (ex. O=test,C=US)
-    * @return distinguished name string in OpenSSL oneline format (ex. /C=US/O=test)
-    * @description
-    * This static method converts a distinguished name string in
-    * LDAP(RFC 2253) format to OpenSSL oneline format.
-    * @see [jsrsasign wiki](https://github.com/kjur/jsrsasign/wiki/NOTE-distinguished-name-representation-in-jsrsasign):
-    * distinguished name string difference between OpenSSL oneline and LDAP(RFC 2253)
-    * @example
-    * KJUR.asn1.x509.X500Name.ldapToOneline('O=test,C=US') → '/C=US/O=test'
-    * KJUR.asn1.x509.X500Name.ldapToOneline('O=a\,a,C=US') → '/C=US/O=a,a'
-    * KJUR.asn1.x509.X500Name.ldapToOneline('O=a/a,C=US')  → '/C=US/O=a\/a'
-    */
-  def ldapToOneline(s: String): String = js.native
-  /**
-    * convert OpenSSL oneline distinguished name format string to LDAP(RFC 2253) format
-    * @param s distinguished name string in OpenSSL oneline format (ex. /C=US/O=test)
-    * @return distinguished name string in LDAP(RFC 2253) format (ex. O=test,C=US)
-    * @description
-    * This static method converts a distinguished name string in OpenSSL oneline
-    * format to LDAP(RFC 2253) format.
-    * @see [jsrsasign wiki](https://github.com/kjur/jsrsasign/wiki/NOTE-distinguished-name-representation-in-jsrsasign):
-    * distinguished name string difference between OpenSSL oneline and LDAP(RFC 2253)
-    *
-    * @example
-    * KJUR.asn1.x509.X500Name.onelineToLDAP("/C=US/O=test") → 'O=test,C=US'
-    * KJUR.asn1.x509.X500Name.onelineToLDAP("/C=US/O=a,a") → 'O=a\,a,C=US'
-    */
-  def onelineToLDAP(s: String): String = js.native
+object X500Name {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String,
+    setByLdapString: String => Callback,
+    setByObject: X500NameParam => Callback,
+    setByString: String => Callback
+  ): X500Name = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByLdapString = js.Any.fromFunction1((t0: String) => setByLdapString(t0).runNow()), setByObject = js.Any.fromFunction1((t0: X500NameParam) => setByObject(t0).runNow()), setByString = js.Any.fromFunction1((t0: String) => setByString(t0).runNow()), params = null)
+    __obj.asInstanceOf[X500Name]
+  }
+  
+  extension [Self <: X500Name](x: Self) {
+    
+    inline def setSetByLdapString(value: String => Callback): Self = StObject.set(x, "setByLdapString", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    
+    inline def setSetByObject(value: X500NameParam => Callback): Self = StObject.set(x, "setByObject", js.Any.fromFunction1((t0: X500NameParam) => value(t0).runNow()))
+    
+    inline def setSetByString(value: String => Callback): Self = StObject.set(x, "setByString", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
 }
-

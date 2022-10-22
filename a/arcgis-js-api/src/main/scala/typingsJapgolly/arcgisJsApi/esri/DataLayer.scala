@@ -1,65 +1,71 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`envelope-intersects`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`index-intersects`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.contains
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.crosses
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.envelope
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.intersects
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.layer
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.overlaps
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.relation
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.touches
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.within
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DataLayer
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
-    * The geometry to apply to the spatial filter. The spatial relationship as specified by [spatialRelationship](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship) is applied to this geometry while performing the query.
+    * If true, restricted network elements should be considered when finding network locations.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#geometry)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#doNotLocateOnRestrictedElements)
+    */
+  var doNotLocateOnRestrictedElements: Boolean = js.native
+  
+  /**
+    * The geometry to apply to the spatial filter.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometry)
     */
   var geometry: Geometry_ = js.native
+  
+  /**
+    * The type of geometry specified by the [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometry) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometryType)
+    */
+  var geometryType: point | polyline | polygon | envelope | multipoint = js.native
+  
   /**
     * The name of the data layer in the map service that is being referenced.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#name)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#name)
     */
   var name: String = js.native
+  
   /**
     * The spatial relationship to be applied on the input geometry while performing the query.
     *
-    * Possible Value | Description
-    * ---------------|------------
-    * intersects | Part of a feature from feature class 1 is contained in a feature from feature class 2.
-    * contains | Part or all of a feature from feature class 1 is contained within a feature from feature class 2.
-    * crosses | The feature from feature class 1 crosses a feature from feature class 2.
-    * envelope-intersects | The envelope of feature class 1 intersects with the envelope of feature class 2.
-    * index-intersects | The envelope of the query feature class intersects the index entry for the target feature class.
-    * overlaps | Features from feature class 1 overlap features in feature class 2.
-    * touches | The feature from feature class 1 touches the border of a feature from feature class 2.
-    * within | The feature from feature class 1 is completely enclosed by the feature from feature class 2.
-    * relation | Allows specification of any relationship defined using the [Shape Comparison Language](http://resources.esri.com/help/9.3/arcgisengine/dotnet/concepts_start.htm#40de6491-9b2d-440d-848b-2609efcd46b1.htm).
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#spatialRelationship)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#spatialRelationship)
     */
   var spatialRelationship: intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation = js.native
+  
   var `type`: layer = js.native
+  
   /**
-    * A where clause for the query. Any legal SQL where clause operating on the fields in the layer is allowed.
+    * A where clause for the query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-DataLayer.html#where)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#where)
     */
   var where: String = js.native
 }
-
-@JSGlobal("__esri.DataLayer")
-@js.native
-object DataLayer extends TopLevel[DataLayerConstructor]
-

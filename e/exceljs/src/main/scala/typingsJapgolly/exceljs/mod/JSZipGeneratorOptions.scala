@@ -1,26 +1,34 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.AnonLevel
+import typingsJapgolly.exceljs.anon.Level
 import typingsJapgolly.exceljs.exceljsStrings.DEFLATE
 import typingsJapgolly.exceljs.exceljsStrings.STORE
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSZipGeneratorOptions extends js.Object {
+trait JSZipGeneratorOptions extends StObject {
+  
   /**
   	 * @default DEFLATE
   	 */
   var compression: STORE | DEFLATE
-  var compressionOptions: Null | AnonLevel
+  
+  var compressionOptions: Null | Level
 }
-
 object JSZipGeneratorOptions {
-  @scala.inline
-  def apply(compression: STORE | DEFLATE, compressionOptions: AnonLevel = null): JSZipGeneratorOptions = {
-    val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any])
-    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions.asInstanceOf[js.Any])
+  
+  inline def apply(compression: STORE | DEFLATE): JSZipGeneratorOptions = {
+    val __obj = js.Dynamic.literal(compression = compression.asInstanceOf[js.Any], compressionOptions = null)
     __obj.asInstanceOf[JSZipGeneratorOptions]
   }
+  
+  extension [Self <: JSZipGeneratorOptions](x: Self) {
+    
+    inline def setCompression(value: STORE | DEFLATE): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionOptions(value: Level): Self = StObject.set(x, "compressionOptions", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionOptionsNull: Self = StObject.set(x, "compressionOptions", null)
+  }
 }
-

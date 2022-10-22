@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth.Advertisement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BluetoothLEAdvertisementType extends js.Object
-
+sealed trait BluetoothLEAdvertisementType extends StObject
 /** Specifies the different types of Bluetooth LE advertisement payloads. */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementType")
 @js.native
-object BluetoothLEAdvertisementType extends js.Object {
+object BluetoothLEAdvertisementType extends StObject {
+  
   /** The advertisement is directed and indicates that the device is connectable but not scannable. This advertisement type cannot carry data. */
   @js.native
-  sealed trait connectableDirected extends BluetoothLEAdvertisementType
+  sealed trait connectableDirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is connectable and scannable. This advertisement type can carry data. */
   @js.native
-  sealed trait connectableUndirected extends BluetoothLEAdvertisementType
+  sealed trait connectableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is not connectable nor scannable. This advertisement type can carry data. */
   @js.native
-  sealed trait nonConnectableUndirected extends BluetoothLEAdvertisementType
+  sealed trait nonConnectableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** This advertisement is a scan response to a scan request issued for a scannable advertisement. This advertisement type can carry data. */
   @js.native
-  sealed trait scanResponse extends BluetoothLEAdvertisementType
+  sealed trait scanResponse
+    extends StObject
+       with BluetoothLEAdvertisementType
   
   /** The advertisement is undirected and indicates that the device is scannable but not connectable. This advertisement type can carry data. */
   @js.native
-  sealed trait scannableUndirected extends BluetoothLEAdvertisementType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BluetoothLEAdvertisementType with Double] = js.native
-  /* 1 */ @js.native
-  object connectableDirected extends TopLevel[connectableDirected with Double]
-  
-  /* 0 */ @js.native
-  object connectableUndirected extends TopLevel[connectableUndirected with Double]
-  
-  /* 3 */ @js.native
-  object nonConnectableUndirected extends TopLevel[nonConnectableUndirected with Double]
-  
-  /* 4 */ @js.native
-  object scanResponse extends TopLevel[scanResponse with Double]
-  
-  /* 2 */ @js.native
-  object scannableUndirected extends TopLevel[scannableUndirected with Double]
-  
+  sealed trait scannableUndirected
+    extends StObject
+       with BluetoothLEAdvertisementType
 }
-

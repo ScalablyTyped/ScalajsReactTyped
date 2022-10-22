@@ -1,25 +1,36 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 选择城市 https://docs.alipay.com/mini/api/ui-city
-trait City extends js.Object {
-  	// 城市名
+trait City extends StObject {
+  
+  // 城市名
   var adCode: String
+  
   var city: String
-  	// 行政区划代码
+  
+  // 行政区划代码
   var spell: js.UndefOr[String] = js.undefined
 }
-
 object City {
-  @scala.inline
-  def apply(adCode: String, city: String, spell: String = null): City = {
+  
+  inline def apply(adCode: String, city: String): City = {
     val __obj = js.Dynamic.literal(adCode = adCode.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any])
-    if (spell != null) __obj.updateDynamic("spell")(spell.asInstanceOf[js.Any])
     __obj.asInstanceOf[City]
   }
+  
+  extension [Self <: City](x: Self) {
+    
+    inline def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setSpell(value: String): Self = StObject.set(x, "spell", value.asInstanceOf[js.Any])
+    
+    inline def setSpellUndefined: Self = StObject.set(x, "spell", js.undefined)
+  }
 }
-

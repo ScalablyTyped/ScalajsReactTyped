@@ -11,9 +11,9 @@ Test if a string is a North American Number Plan (phone) number.
 | Full name          | nanp |
 | Keywords           | nanp, phone, number, regex |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 3747 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 579.3333333333334 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/weisjohn/nanp)

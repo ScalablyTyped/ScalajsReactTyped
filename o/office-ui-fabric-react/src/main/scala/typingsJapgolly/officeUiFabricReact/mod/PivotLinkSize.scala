@@ -1,15 +1,19 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "PivotLinkSize")
 @js.native
-object PivotLinkSize extends js.Object {
-  /* 1 */ val large: typingsJapgolly.officeUiFabricReact.pivotTypesMod.PivotLinkSize.large with Double = js.native
-  /* 0 */ val normal: typingsJapgolly.officeUiFabricReact.pivotTypesMod.PivotLinkSize.normal with Double = js.native
+object PivotLinkSize extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.pivotTypesMod.PivotLinkSize with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize & Double
+  ] = js.native
+  
+  /* 1 */ val large: typingsJapgolly.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize.large & Double = js.native
+  
+  /* 0 */ val normal: typingsJapgolly.officeUiFabricReact.libComponentsPivotPivotDottypesMod.PivotLinkSize.normal & Double = js.native
 }
-

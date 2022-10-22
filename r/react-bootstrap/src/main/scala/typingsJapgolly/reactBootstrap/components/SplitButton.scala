@@ -1,55 +1,51 @@
 package typingsJapgolly.reactBootstrap.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactBootstrap.libSplitButtonMod.SplitButtonProps
 import typingsJapgolly.reactBootstrap.mod.Sizes
-import typingsJapgolly.reactBootstrap.splitButtonMod.SplitButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SplitButton {
-  def apply(
-    id: String,
-    bsSize: Sizes = null,
-    bsStyle: String = null,
-    dropdownTitle: js.Any = null,
-    dropup: js.UndefOr[Boolean] = js.undefined,
-    pullRight: js.UndefOr[Boolean] = js.undefined,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SplitButtonProps, 
-    typingsJapgolly.reactBootstrap.mod.SplitButton, 
-    Unit, 
-    SplitButtonProps
-  ] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
-      if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle.asInstanceOf[js.Any])
-    if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrap.splitButtonMod.SplitButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrap.mod.SplitButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrap.splitButtonMod.SplitButtonProps])(children: _*)
+  inline def apply(id: String): Builder = {
+    val __props = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SplitButtonProps]))
   }
+  
   @JSImport("react-bootstrap", "SplitButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrap.mod.SplitButton] {
+    
+    inline def bsSize(value: Sizes): this.type = set("bsSize", value.asInstanceOf[js.Any])
+    
+    inline def bsStyle(value: String): this.type = set("bsStyle", value.asInstanceOf[js.Any])
+    
+    inline def dropdownTitle(value: Any): this.type = set("dropdownTitle", value.asInstanceOf[js.Any])
+    
+    inline def dropup(value: Boolean): this.type = set("dropup", value.asInstanceOf[js.Any])
+    
+    inline def pullRight(value: Boolean): this.type = set("pullRight", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SplitButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

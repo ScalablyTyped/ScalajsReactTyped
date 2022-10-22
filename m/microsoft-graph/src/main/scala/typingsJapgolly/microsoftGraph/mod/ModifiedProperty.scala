@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModifiedProperty extends js.Object {
+trait ModifiedProperty extends StObject {
+  
   // Indicates the property name of the target attribute that was changed.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates the updated value for the propery.
-  var newValue: js.UndefOr[String] = js.undefined
+  var newValue: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates the previous value (before the update) for the property.
-  var oldValue: js.UndefOr[String] = js.undefined
+  var oldValue: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ModifiedProperty {
-  @scala.inline
-  def apply(displayName: String = null, newValue: String = null, oldValue: String = null): ModifiedProperty = {
+  
+  inline def apply(): ModifiedProperty = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifiedProperty]
   }
+  
+  extension [Self <: ModifiedProperty](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setNewValue(value: NullableOption[String]): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    
+    inline def setNewValueNull: Self = StObject.set(x, "newValue", null)
+    
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    
+    inline def setOldValue(value: NullableOption[String]): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValueNull: Self = StObject.set(x, "oldValue", null)
+    
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+  }
 }
-

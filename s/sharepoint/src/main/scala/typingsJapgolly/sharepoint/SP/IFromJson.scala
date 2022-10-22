@@ -1,24 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IFromJson extends js.Object {
-  def customFromJson(initValue: js.Any): Boolean
-  def fromJson(initValue: js.Any): Unit
+trait IFromJson extends StObject {
+  
+  def customFromJson(initValue: Any): Boolean
+  
+  def fromJson(initValue: Any): Unit
 }
-
 object IFromJson {
-  @scala.inline
-  def apply(customFromJson: js.Any => CallbackTo[Boolean], fromJson: js.Any => Callback): IFromJson = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("customFromJson")(js.Any.fromFunction1((t0: js.Any) => customFromJson(t0).runNow()))
-    __obj.updateDynamic("fromJson")(js.Any.fromFunction1((t0: js.Any) => fromJson(t0).runNow()))
+  
+  inline def apply(customFromJson: Any => Boolean, fromJson: Any => Callback): IFromJson = {
+    val __obj = js.Dynamic.literal(customFromJson = js.Any.fromFunction1(customFromJson), fromJson = js.Any.fromFunction1((t0: Any) => fromJson(t0).runNow()))
     __obj.asInstanceOf[IFromJson]
   }
+  
+  extension [Self <: IFromJson](x: Self) {
+    
+    inline def setCustomFromJson(value: Any => Boolean): Self = StObject.set(x, "customFromJson", js.Any.fromFunction1(value))
+    
+    inline def setFromJson(value: Any => Callback): Self = StObject.set(x, "fromJson", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

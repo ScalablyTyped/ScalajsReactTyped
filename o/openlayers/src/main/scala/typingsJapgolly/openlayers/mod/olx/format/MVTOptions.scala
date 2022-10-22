@@ -3,45 +3,67 @@ package typingsJapgolly.openlayers.mod.olx.format
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.openlayers.mod.geom.Geometry
 import typingsJapgolly.openlayers.mod.geom.GeometryType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MVTOptions extends js.Object {
+trait MVTOptions extends StObject {
+  
   var featureClass: js.UndefOr[
-    (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], _]) | (js.Function4[
+    (js.Function1[/* geom */ Geometry | StringDictionary[Any], Any]) | (js.Function4[
       /* geom */ GeometryType, 
       /* arg2 */ js.Array[Double], 
       /* arg3 */ js.Array[js.Array[Double] | Double], 
-      /* arg4 */ StringDictionary[js.Any], 
-      _
+      /* arg4 */ StringDictionary[Any], 
+      Any
     ])
   ] = js.undefined
+  
   var geometryName: js.UndefOr[String] = js.undefined
+  
   var layerName: js.UndefOr[String] = js.undefined
+  
   var layers: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object MVTOptions {
-  @scala.inline
-  def apply(
-    featureClass: (js.Function1[/* geom */ Geometry | StringDictionary[js.Any], _]) | (js.Function4[
-      /* geom */ GeometryType, 
-      /* arg2 */ js.Array[Double], 
-      /* arg3 */ js.Array[js.Array[Double] | Double], 
-      /* arg4 */ StringDictionary[js.Any], 
-      _
-    ]) = null,
-    geometryName: String = null,
-    layerName: String = null,
-    layers: js.Array[String] = null
-  ): MVTOptions = {
+  
+  inline def apply(): MVTOptions = {
     val __obj = js.Dynamic.literal()
-    if (featureClass != null) __obj.updateDynamic("featureClass")(featureClass.asInstanceOf[js.Any])
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
-    if (layerName != null) __obj.updateDynamic("layerName")(layerName.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVTOptions]
   }
+  
+  extension [Self <: MVTOptions](x: Self) {
+    
+    inline def setFeatureClass(
+      value: (js.Function1[/* geom */ Geometry | StringDictionary[Any], Any]) | (js.Function4[
+          /* geom */ GeometryType, 
+          /* arg2 */ js.Array[Double], 
+          /* arg3 */ js.Array[js.Array[Double] | Double], 
+          /* arg4 */ StringDictionary[Any], 
+          Any
+        ])
+    ): Self = StObject.set(x, "featureClass", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureClassFunction1(value: /* geom */ Geometry | StringDictionary[Any] => Any): Self = StObject.set(x, "featureClass", js.Any.fromFunction1(value))
+    
+    inline def setFeatureClassFunction4(
+      value: (/* geom */ GeometryType, /* arg2 */ js.Array[Double], /* arg3 */ js.Array[js.Array[Double] | Double], /* arg4 */ StringDictionary[Any]) => Any
+    ): Self = StObject.set(x, "featureClass", js.Any.fromFunction4(value))
+    
+    inline def setFeatureClassUndefined: Self = StObject.set(x, "featureClass", js.undefined)
+    
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+    
+    inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+    
+    inline def setLayerNameUndefined: Self = StObject.set(x, "layerName", js.undefined)
+    
+    inline def setLayers(value: js.Array[String]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    
+    inline def setLayersVarargs(value: String*): Self = StObject.set(x, "layers", js.Array(value*))
+  }
 }
-

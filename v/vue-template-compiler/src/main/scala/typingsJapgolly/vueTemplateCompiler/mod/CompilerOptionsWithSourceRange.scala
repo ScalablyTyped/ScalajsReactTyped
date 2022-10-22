@@ -1,33 +1,26 @@
 package typingsJapgolly.vueTemplateCompiler.mod
 
-import typingsJapgolly.std.Record
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
-import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.condense
-import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.preserve
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompilerOptionsWithSourceRange extends CompilerOptions {
+trait CompilerOptionsWithSourceRange
+  extends StObject
+     with CompilerOptions {
+  
   @JSName("outputSourceRange")
   var outputSourceRange_CompilerOptionsWithSourceRange: `true`
 }
-
 object CompilerOptionsWithSourceRange {
-  @scala.inline
-  def apply(
-    outputSourceRange: `true`,
-    directives: Record[String, DirectiveFunction] = null,
-    modules: js.Array[ModuleOptions] = null,
-    preserveWhitespace: js.UndefOr[Boolean] = js.undefined,
-    whitespace: preserve | condense = null
-  ): CompilerOptionsWithSourceRange = {
-    val __obj = js.Dynamic.literal(outputSourceRange = outputSourceRange.asInstanceOf[js.Any])
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
+  
+  inline def apply(): CompilerOptionsWithSourceRange = {
+    val __obj = js.Dynamic.literal(outputSourceRange = true)
     __obj.asInstanceOf[CompilerOptionsWithSourceRange]
   }
+  
+  extension [Self <: CompilerOptionsWithSourceRange](x: Self) {
+    
+    inline def setOutputSourceRange(value: `true`): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
+  }
 }
-

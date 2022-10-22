@@ -1,25 +1,19 @@
 package typingsJapgolly.baseui
 
-import typingsJapgolly.baseui.blockMod.BlockProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.FC
+import typingsJapgolly.baseui.aspectRatioBoxAspectRatioBoxBodyMod.AspectRatioBoxBodyComponentType
+import typingsJapgolly.baseui.aspectRatioBoxAspectRatioBoxMod.AspectRatioCoxComponentType
+import typingsJapgolly.baseui.baseuiStrings.div
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("baseui/aspect-ratio-box", JSImport.Namespace)
-@js.native
-object aspectRatioBoxMod extends js.Object {
-  @js.native
-  class AspectRatioBox ()
-    extends Component[AspectRatioBoxProps, js.Object, js.Any]
+object aspectRatioBoxMod {
   
+  @JSImport("baseui/aspect-ratio-box", "AspectRatioBox")
   @js.native
-  trait AspectRatioBoxProps extends BlockProps {
-    /** Aspect ratio is width divided by height. */
-    var aspectRatio: js.UndefOr[Double] = js.native
-  }
+  val AspectRatioBox: AspectRatioCoxComponentType[div] = js.native
   
-  val AspectRatioBoxBody: FC[BlockProps] = js.native
+  @JSImport("baseui/aspect-ratio-box", "AspectRatioBoxBody")
+  @js.native
+  val AspectRatioBoxBody: AspectRatioBoxBodyComponentType[div] = js.native
 }
-

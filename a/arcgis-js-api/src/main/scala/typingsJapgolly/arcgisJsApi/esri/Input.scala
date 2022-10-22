@@ -1,12 +1,14 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Input extends Accessor {
+trait Input
+  extends StObject
+     with Accessor {
+  
   /**
     * Gamepad input specific configuration settings.
     *
@@ -14,8 +16,3 @@ trait Input extends Accessor {
     */
   val gamepad: GamepadSettings = js.native
 }
-
-@JSGlobal("__esri.Input")
-@js.native
-object Input extends TopLevel[InputConstructor]
-

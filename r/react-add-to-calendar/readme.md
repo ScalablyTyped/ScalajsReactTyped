@@ -10,10 +10,10 @@ A simple and reusable add to calendar button component for React
 | ------------------ | :-------------: |
 | Full name          | react-add-to-calendar |
 | Keywords           | react, add-to-calendar, calendar, event, react-component |
-| # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 273714 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 41873.666666666664 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/jasonsalzman/react-add-to-calendar)

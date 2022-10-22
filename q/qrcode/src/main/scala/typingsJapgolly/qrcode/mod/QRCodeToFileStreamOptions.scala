@@ -1,45 +1,36 @@
 package typingsJapgolly.qrcode.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.qrcode.AnonDark
-import typingsJapgolly.qrcode.AnonDeflateLevel
-import typingsJapgolly.qrcode.qrcodeStrings.png
+import typingsJapgolly.qrcode.anon.DeflateLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QRCodeToFileStreamOptions extends QRCodeRenderersOptions {
-  var rendererOpts: js.UndefOr[AnonDeflateLevel] = js.undefined
+trait QRCodeToFileStreamOptions
+  extends StObject
+     with QRCodeRenderersOptions {
+  
+  var rendererOpts: js.UndefOr[DeflateLevel] = js.undefined
+  
   /**
-    * Output format. Only png supported for file stream
+    * Output format. Only png supported for file stream.
     */
-  var `type`: js.UndefOr[png] = js.undefined
+  var `type`: js.UndefOr[QRCodeFileStreamType] = js.undefined
 }
-
 object QRCodeToFileStreamOptions {
-  @scala.inline
-  def apply(
-    color: AnonDark = null,
-    errorCorrectionLevel: QRCodeErrorCorrectionLevel = null,
-    margin: Int | Double = null,
-    rendererOpts: AnonDeflateLevel = null,
-    scale: Int | Double = null,
-    toSJISFunc: /* codePoint */ String => CallbackTo[Double] = null,
-    `type`: png = null,
-    version: Int | Double = null,
-    width: Int | Double = null
-  ): QRCodeToFileStreamOptions = {
+  
+  inline def apply(): QRCodeToFileStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (rendererOpts != null) __obj.updateDynamic("rendererOpts")(rendererOpts.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(js.Any.fromFunction1((t0: /* codePoint */ java.lang.String) => toSJISFunc(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRCodeToFileStreamOptions]
   }
+  
+  extension [Self <: QRCodeToFileStreamOptions](x: Self) {
+    
+    inline def setRendererOpts(value: DeflateLevel): Self = StObject.set(x, "rendererOpts", value.asInstanceOf[js.Any])
+    
+    inline def setRendererOptsUndefined: Self = StObject.set(x, "rendererOpts", js.undefined)
+    
+    inline def setType(value: QRCodeFileStreamType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

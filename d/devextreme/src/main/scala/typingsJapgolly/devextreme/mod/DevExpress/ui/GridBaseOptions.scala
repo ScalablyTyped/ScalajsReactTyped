@@ -1,355 +1,751 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAllowDropInsideItem
-import typingsJapgolly.devextreme.AnonAllowedPageSizes
-import typingsJapgolly.devextreme.AnonApplyFilter
-import typingsJapgolly.devextreme.AnonAscendingText
-import typingsJapgolly.devextreme.AnonBrokenRules
-import typingsJapgolly.devextreme.AnonCancelComponent
-import typingsJapgolly.devextreme.AnonComponentData
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonCurrentDeselectedRowKeys
-import typingsJapgolly.devextreme.AnonCustomLoad
-import typingsJapgolly.devextreme.AnonCustomizeText
-import typingsJapgolly.devextreme.AnonDataElement
-import typingsJapgolly.devextreme.AnonEditOnKeyPress
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonElementKey
-import typingsJapgolly.devextreme.AnonEmptyPanelText
-import typingsJapgolly.devextreme.AnonEnabled
-import typingsJapgolly.devextreme.AnonError
-import typingsJapgolly.devextreme.AnonFormOptions
-import typingsJapgolly.devextreme.AnonHandled
-import typingsJapgolly.devextreme.AnonHeight
-import typingsJapgolly.devextreme.AnonHighlightCaseSensitive
-import typingsJapgolly.devextreme.AnonIndicatorSrc
-import typingsJapgolly.devextreme.AnonKey
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.AnonNewData
-import typingsJapgolly.devextreme.AnonPromise
-import typingsJapgolly.devextreme.AnonToolbarOptions
-import typingsJapgolly.devextreme.devextremeStrings.auto
-import typingsJapgolly.devextreme.devextremeStrings.nextColumn
-import typingsJapgolly.devextreme.devextremeStrings.widget
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource
-import typingsJapgolly.devextreme.mod.DevExpress.data.DataSourceOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.KeyboardEvent
+import typingsJapgolly.devextreme.mod.DevExpress.common.Mode
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.ColumnChooser
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.ColumnFixing
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.FilterRow
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.HeaderFilter
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.KeyboardNavigation
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.LoadPanel
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.Pager
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.SearchPanel
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.Sorting
+import typingsJapgolly.devextreme.mod.DevExpress.common.grids.StateStoring
+import typingsJapgolly.devextreme.mod.DevExpress.data.DataSource.DataSourceLike
+import typingsJapgolly.devextreme.mod.DevExpress.events.Cancelable
+import typingsJapgolly.devextreme.mod.DevExpress.events.EventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.events.NativeEventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.AdaptiveDetailRowPreparingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ColumnResizeMode
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.DataChangeInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.DataErrorOccurredInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.EditingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.FilterPanel
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.KeyDownInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.NewRowInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.PagingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowDragging
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowInsertedInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowInsertingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowKeyInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowRemovedInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowRemovingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowUpdatedInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowUpdatingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.RowValidatingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.SavingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ScrollingBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionBase
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.SelectionChangedInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDataGrid.ToolbarPreparingInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPopup.Properties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridBaseOptions[T] extends WidgetOptions[T] {
-  /** Specifies whether a user can reorder columns. */
+trait GridBaseOptions[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey]
+  extends StObject
+     with WidgetOptions[TComponent] {
+  
+  /**
+    * Specifies whether a user can reorder columns.
+    */
   var allowColumnReordering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether a user can resize columns. */
+  
+  /**
+    * Specifies whether a user can resize columns.
+    */
   var allowColumnResizing: js.UndefOr[Boolean] = js.undefined
-  /** Automatically scrolls to the focused row when the focusedRowKey is changed. */
+  
+  /**
+    * Automatically scrolls to the focused row when the focusedRowKey is changed.
+    */
   var autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether data should be cached. */
+  
+  /**
+    * Specifies whether data should be cached.
+    */
   var cacheEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Enables a hint that appears when a user hovers the mouse pointer over a cell with truncated content. */
+  
+  /**
+    * Enables a hint that appears when a user hovers the mouse pointer over a cell with truncated content.
+    */
   var cellHintEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether columns should adjust their widths to the content. */
+  
+  /**
+    * Specifies whether columns should adjust their widths to the content.
+    */
   var columnAutoWidth: js.UndefOr[Boolean] = js.undefined
-  /** Configures the column chooser. */
-  var columnChooser: js.UndefOr[AnonEmptyPanelText] = js.undefined
-  /** Configures column fixing. */
-  var columnFixing: js.UndefOr[AnonEnabled] = js.undefined
-  /** Specifies whether the widget should hide columns to adapt to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is "widget". */
+  
+  /**
+    * Configures the column chooser.
+    */
+  var columnChooser: js.UndefOr[ColumnChooser] = js.undefined
+  
+  /**
+    * Configures column fixing.
+    */
+  var columnFixing: js.UndefOr[ColumnFixing] = js.undefined
+  
+  /**
+    * Specifies whether the UI component should hide columns to adapt to the screen or container size. Ignored if allowColumnResizing is true and columnResizingMode is &apos;widget&apos;.
+    */
   var columnHidingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the minimum width of columns. */
+  
+  /**
+    * Specifies the minimum width of columns.
+    */
   var columnMinWidth: js.UndefOr[Double] = js.undefined
-  /** Specifies how the widget resizes columns. Applies only if allowColumnResizing is true. */
-  var columnResizingMode: js.UndefOr[nextColumn | widget] = js.undefined
-  /** Specifies the width for all data columns. Has a lower priority than the column.width option. */
-  var columnWidth: js.UndefOr[Double] = js.undefined
-  /** Overridden. */
-  var columns: js.UndefOr[js.Array[GridBaseColumn | String]] = js.undefined
-  /** Binds the widget to data. */
-  var dataSource: js.UndefOr[String | js.Array[_] | DataSource | DataSourceOptions] = js.undefined
-  /** Specifies the format in which date-time values should be sent to the server. Use it only if you do not specify the dataSource at design time. */
+  
+  /**
+    * Specifies how the UI component resizes columns. Applies only if allowColumnResizing is true.
+    */
+  var columnResizingMode: js.UndefOr[ColumnResizeMode] = js.undefined
+  
+  /**
+    * Specifies the width for all data columns. Has a lower priority than the column.width property.
+    */
+  var columnWidth: js.UndefOr[Double | Mode] = js.undefined
+  
+  /**
+    * Overridden.
+    */
+  var columns: js.UndefOr[js.Array[ColumnBase[TRowData] | String]] = js.undefined
+  
+  /**
+    * Binds the UI component to data.
+    */
+  var dataSource: js.UndefOr[(DataSourceLike[TRowData, TKey]) | Null] = js.undefined
+  
+  /**
+    * Specifies the format in which date-time values should be sent to the server.
+    */
   var dateSerializationFormat: js.UndefOr[String] = js.undefined
-  /** Overriden. */
-  var editing: js.UndefOr[GridBaseEditing] = js.undefined
-  /** Indicates whether to show the error row. */
+  
+  /**
+    * Overriden.
+    */
+  var editing: js.UndefOr[EditingBase[TRowData, TKey]] = js.undefined
+  
+  /**
+    * Indicates whether to show the error row.
+    */
   var errorRowEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures the integrated filter builder. */
+  
+  /**
+    * Configures the integrated filter builder.
+    */
   var filterBuilder: js.UndefOr[dxFilterBuilderOptions] = js.undefined
-  /** Configures the popup in which the integrated filter builder is shown. */
-  var filterBuilderPopup: js.UndefOr[dxPopupOptions[dxPopup]] = js.undefined
-  /** Configures the filter panel. */
-  var filterPanel: js.UndefOr[AnonCustomizeText[T]] = js.undefined
-  /** Configures the filter row. */
-  var filterRow: js.UndefOr[AnonApplyFilter] = js.undefined
-  /** Specifies whether to synchronize the filter row, header filter, and filter builder. The synchronized filter expression is stored in the filterValue option. */
-  var filterSyncEnabled: js.UndefOr[Boolean | auto] = js.undefined
-  /** Specifies a filter expression. */
-  var filterValue: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  /** Specifies the index of the column focused initially or currently in the data row area. */
+  
+  /**
+    * Configures the popup in which the integrated filter builder is shown.
+    */
+  var filterBuilderPopup: js.UndefOr[Properties] = js.undefined
+  
+  /**
+    * Configures the filter panel.
+    */
+  var filterPanel: js.UndefOr[FilterPanel[TComponent, TRowData, TKey]] = js.undefined
+  
+  /**
+    * Configures the filter row.
+    */
+  var filterRow: js.UndefOr[FilterRow] = js.undefined
+  
+  /**
+    * Specifies whether to synchronize the filter row, header filter, and filter builder. The synchronized filter expression is stored in the filterValue property.
+    */
+  var filterSyncEnabled: js.UndefOr[Boolean | Mode] = js.undefined
+  
+  /**
+    * Specifies a filter expression.
+    */
+  var filterValue: js.UndefOr[String | js.Array[Any] | js.Function] = js.undefined
+  
+  /**
+    * The index of the column that contains the focused data cell. This index is taken from the columns array.
+    */
   var focusedColumnIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies whether the focused row feature is enabled. */
+  
+  /**
+    * Specifies whether the focused row feature is enabled.
+    */
   var focusedRowEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the initially or currently focused grid row's index. Use it when focusedRowEnabled is true. */
+  
+  /**
+    * Specifies or indicates the focused data row&apos;s index.
+    */
   var focusedRowIndex: js.UndefOr[Double] = js.undefined
-  /** Specifies initially or currently focused grid row's key. Use it when focusedRowEnabled is true. */
-  var focusedRowKey: js.UndefOr[js.Any] = js.undefined
-  /** Configures the header filter feature. */
-  var headerFilter: js.UndefOr[AnonHeight] = js.undefined
-  /** Specifies whether to highlight rows and cells with edited data. repaintChangesOnly should be true. */
+  
+  /**
+    * Specifies initially or currently focused grid row&apos;s key.
+    */
+  var focusedRowKey: js.UndefOr[TKey] = js.undefined
+  
+  /**
+    * Configures the header filter feature.
+    */
+  var headerFilter: js.UndefOr[HeaderFilter] = js.undefined
+  
+  /**
+    * Specifies whether to highlight rows and cells with edited data. repaintChangesOnly should be true.
+    */
   var highlightChanges: js.UndefOr[Boolean] = js.undefined
-  /** Configures keyboard navigation. */
-  var keyboardNavigation: js.UndefOr[AnonEditOnKeyPress] = js.undefined
-  /** Configures the load panel. */
-  var loadPanel: js.UndefOr[AnonIndicatorSrc] = js.undefined
-  /** Specifies text shown when the widget does not display any data. */
+  
+  /**
+    * Configures keyboard navigation.
+    */
+  var keyboardNavigation: js.UndefOr[KeyboardNavigation] = js.undefined
+  
+  /**
+    * Configures the load panel.
+    */
+  var loadPanel: js.UndefOr[LoadPanel] = js.undefined
+  
+  /**
+    * Specifies a text string shown when the widget does not display any data.
+    */
   var noDataText: js.UndefOr[String] = js.undefined
-  /** A function that is executed before an adaptive detail row is rendered. */
-  var onAdaptiveDetailRowPreparing: js.UndefOr[js.Function1[/* e */ AnonFormOptions[T], _]] = js.undefined
-  /** A function that is executed when an error occurs in the data source. */
-  var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ AnonError[T], _]] = js.undefined
-  /** A function that is executed before a new row is added to the widget. */
-  var onInitNewRow: js.UndefOr[js.Function1[/* e */ AnonPromise[T], _]] = js.undefined
-  /** A function that is executed when the widget is in focus and a key has been pressed down. */
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ AnonHandled[T], _]] = js.undefined
-  /** A function that is executed after a row is collapsed. */
-  var onRowCollapsed: js.UndefOr[js.Function1[/* e */ AnonKey[T], _]] = js.undefined
-  /** A function that is executed before a row is collapsed. */
-  var onRowCollapsing: js.UndefOr[js.Function1[/* e */ AnonCancelComponent[T], _]] = js.undefined
-  /** A function that is executed after a row is expanded. */
-  var onRowExpanded: js.UndefOr[js.Function1[/* e */ AnonKey[T], _]] = js.undefined
-  /** A function that is executed before a row is expanded. */
-  var onRowExpanding: js.UndefOr[js.Function1[/* e */ AnonCancelComponent[T], _]] = js.undefined
-  /** A function that is executed after a new row has been inserted into the data source. */
-  var onRowInserted: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a new row is inserted into the data source. */
-  var onRowInserting: js.UndefOr[js.Function1[/* e */ AnonDataElement[T], _]] = js.undefined
-  /** A function that is executed after a row has been removed from the data source. */
-  var onRowRemoved: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a row is removed from the data source. */
-  var onRowRemoving: js.UndefOr[js.Function1[/* e */ AnonElementKey[T], _]] = js.undefined
-  /** A function that is executed after a row has been updated in the data source. */
-  var onRowUpdated: js.UndefOr[js.Function1[/* e */ AnonComponentData[T], _]] = js.undefined
-  /** A function that is executed before a row is updated in the data source. */
-  var onRowUpdating: js.UndefOr[js.Function1[/* e */ AnonNewData[T], _]] = js.undefined
-  /** A function that is executed after cells in a row are validated against validation rules. */
-  var onRowValidating: js.UndefOr[js.Function1[/* e */ AnonBrokenRules[T], _]] = js.undefined
-  /** A function that is executed after selecting a row or clearing its selection. */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonCurrentDeselectedRowKeys[T], _]] = js.undefined
-  /** A function that is executed before the toolbar is created. */
-  var onToolbarPreparing: js.UndefOr[js.Function1[/* e */ AnonToolbarOptions[T], _]] = js.undefined
-  /** Configures the pager. */
-  var pager: js.UndefOr[AnonAllowedPageSizes] = js.undefined
-  /** Configures paging. */
-  var paging: js.UndefOr[GridBasePaging] = js.undefined
-  /** Specifies whether to render the filter row, command columns, and columns with showEditorAlways set to true after other elements. */
+  
+  /**
+    * A function that is executed before an adaptive detail row is rendered.
+    */
+  var onAdaptiveDetailRowPreparing: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & AdaptiveDetailRowPreparingInfo, Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed when an error occurs in the data source.
+    */
+  var onDataErrorOccurred: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & DataErrorOccurredInfo, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after row changes are discarded.
+    */
+  var onEditCanceled: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed when the edit operation is canceled, but row changes are not yet discarded.
+    */
+  var onEditCanceling: js.UndefOr[
+    js.Function1[
+      /* e */ Cancelable & EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]), 
+      Unit
+    ]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before a new row is added to the UI component.
+    */
+  var onInitNewRow: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & NewRowInfo[TRowData], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed when the UI component is in focus and a key has been pressed down.
+    */
+  var onKeyDown: js.UndefOr[
+    js.Function1[/* e */ (NativeEventInfo[TComponent, KeyboardEvent]) & KeyDownInfo, Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after a row is collapsed.
+    */
+  var onRowCollapsed: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & RowKeyInfo[TKey], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before a row is collapsed.
+    */
+  var onRowCollapsing: js.UndefOr[
+    js.Function1[/* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey], Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after a row is expanded.
+    */
+  var onRowExpanded: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & RowKeyInfo[TKey], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before a row is expanded.
+    */
+  var onRowExpanding: js.UndefOr[
+    js.Function1[/* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey], Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after a new row has been inserted into the data source.
+    */
+  var onRowInserted: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowInsertedInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before a new row is inserted into the data source.
+    */
+  var onRowInserting: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & RowInsertingInfo[TRowData], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after a row has been removed from the data source.
+    */
+  var onRowRemoved: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowRemovedInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before a row is removed from the data source.
+    */
+  var onRowRemoving: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowRemovingInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after a row has been updated in the data source.
+    */
+  var onRowUpdated: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowUpdatedInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before a row is updated in the data source.
+    */
+  var onRowUpdating: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowUpdatingInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after cells in a row are validated against validation rules.
+    */
+  var onRowValidating: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (RowValidatingInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed after row changes are saved.
+    */
+  var onSaved: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before pending row changes are saved.
+    */
+  var onSaving: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & (SavingInfo[TRowData, TKey]), Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after selecting a row or clearing its selection.
+    */
+  var onSelectionChanged: js.UndefOr[
+    js.Function1[/* e */ EventInfo[TComponent] & (SelectionChangedInfo[TRowData, TKey]), Unit]
+  ] = js.undefined
+  
+  /**
+    * A function that is executed before the toolbar is created.
+    */
+  var onToolbarPreparing: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent] & ToolbarPreparingInfo, Unit]] = js.undefined
+  
+  /**
+    * Configures the pager.
+    */
+  var pager: js.UndefOr[Pager] = js.undefined
+  
+  /**
+    * Configures paging.
+    */
+  var paging: js.UndefOr[PagingBase] = js.undefined
+  
+  /**
+    * Specifies whether to render the filter row, command columns, and columns with showEditorAlways set to true after other elements.
+    */
   var renderAsync: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to repaint only those cells whose data changed. */
+  
+  /**
+    * Specifies whether to repaint only those cells whose data changed.
+    */
   var repaintChangesOnly: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether rows should be shaded differently. */
+  
+  /**
+    * Specifies whether rows should be shaded differently.
+    */
   var rowAlternationEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Configures row reordering using drag and drop gestures. */
-  var rowDragging: js.UndefOr[AnonAllowDropInsideItem] = js.undefined
-  /** Overridden. A configuration object specifying scrolling options. */
-  var scrolling: js.UndefOr[GridBaseScrolling] = js.undefined
-  /** Configures the search panel. */
-  var searchPanel: js.UndefOr[AnonHighlightCaseSensitive] = js.undefined
-  /** Allows you to select rows or determine which rows are selected. */
-  var selectedRowKeys: js.UndefOr[js.Array[_]] = js.undefined
-  /** Overridden. */
-  var selection: js.UndefOr[GridBaseSelection] = js.undefined
-  /** Specifies whether the outer borders of the widget are visible. */
+  
+  /**
+    * Configures row reordering using drag and drop gestures.
+    */
+  var rowDragging: js.UndefOr[RowDragging[TComponent, TRowData, TKey]] = js.undefined
+  
+  /**
+    * 
+    */
+  var scrolling: js.UndefOr[ScrollingBase] = js.undefined
+  
+  /**
+    * Configures the search panel.
+    */
+  var searchPanel: js.UndefOr[SearchPanel] = js.undefined
+  
+  /**
+    * Allows you to select rows or determine which rows are selected.
+    */
+  var selectedRowKeys: js.UndefOr[js.Array[TKey]] = js.undefined
+  
+  /**
+    * 
+    */
+  var selection: js.UndefOr[SelectionBase] = js.undefined
+  
+  /**
+    * Specifies whether the outer borders of the UI component are visible.
+    */
   var showBorders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether column headers are visible. */
+  
+  /**
+    * Specifies whether column headers are visible.
+    */
   var showColumnHeaders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether vertical lines that separate one column from another are visible. */
+  
+  /**
+    * Specifies whether vertical lines that separate one column from another are visible.
+    */
   var showColumnLines: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether horizontal lines that separate one row from another are visible. */
+  
+  /**
+    * Specifies whether horizontal lines that separate one row from another are visible.
+    */
   var showRowLines: js.UndefOr[Boolean] = js.undefined
-  /** Configures runtime sorting. */
-  var sorting: js.UndefOr[AnonAscendingText] = js.undefined
-  /** Configures state storing. */
-  var stateStoring: js.UndefOr[AnonCustomLoad] = js.undefined
-  /** Specifies whether to enable two-way data binding. */
+  
+  /**
+    * Configures runtime sorting.
+    */
+  var sorting: js.UndefOr[Sorting] = js.undefined
+  
+  /**
+    * Configures state storing.
+    */
+  var stateStoring: js.UndefOr[StateStoring] = js.undefined
+  
+  /**
+    * 
+    */
+  var syncLookupFilterValues: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies whether to enable two-way data binding.
+    */
   var twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether text that does not fit into a column should be wrapped. */
+  
+  /**
+    * Specifies whether text that does not fit into a column should be wrapped.
+    */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object GridBaseOptions {
-  @scala.inline
-  def apply[T](
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    allowColumnReordering: js.UndefOr[Boolean] = js.undefined,
-    allowColumnResizing: js.UndefOr[Boolean] = js.undefined,
-    autoNavigateToFocusedRow: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    cacheEnabled: js.UndefOr[Boolean] = js.undefined,
-    cellHintEnabled: js.UndefOr[Boolean] = js.undefined,
-    columnAutoWidth: js.UndefOr[Boolean] = js.undefined,
-    columnChooser: AnonEmptyPanelText = null,
-    columnFixing: AnonEnabled = null,
-    columnHidingEnabled: js.UndefOr[Boolean] = js.undefined,
-    columnMinWidth: Int | Double = null,
-    columnResizingMode: nextColumn | widget = null,
-    columnWidth: Int | Double = null,
-    columns: js.Array[GridBaseColumn | String] = null,
-    dataSource: String | js.Array[_] | DataSource | DataSourceOptions = null,
-    dateSerializationFormat: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editing: GridBaseEditing = null,
-    elementAttr: js.Any = null,
-    errorRowEnabled: js.UndefOr[Boolean] = js.undefined,
-    filterBuilder: dxFilterBuilderOptions = null,
-    filterBuilderPopup: dxPopupOptions[dxPopup] = null,
-    filterPanel: AnonCustomizeText[T] = null,
-    filterRow: AnonApplyFilter = null,
-    filterSyncEnabled: Boolean | auto = null,
-    filterValue: String | js.Array[_] | js.Function = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    focusedColumnIndex: Int | Double = null,
-    focusedRowEnabled: js.UndefOr[Boolean] = js.undefined,
-    focusedRowIndex: Int | Double = null,
-    focusedRowKey: js.Any = null,
-    headerFilter: AnonHeight = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    highlightChanges: js.UndefOr[Boolean] = js.undefined,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    keyboardNavigation: AnonEditOnKeyPress = null,
-    loadPanel: AnonIndicatorSrc = null,
-    noDataText: String = null,
-    onAdaptiveDetailRowPreparing: /* e */ AnonFormOptions[T] => CallbackTo[js.Any] = null,
-    onContentReady: /* e */ AnonComponentElement[T] => CallbackTo[js.Any] = null,
-    onDataErrorOccurred: /* e */ AnonError[T] => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[T] => CallbackTo[js.Any] = null,
-    onInitNewRow: /* e */ AnonPromise[T] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[T] => CallbackTo[js.Any] = null,
-    onKeyDown: /* e */ AnonHandled[T] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[T] => CallbackTo[js.Any] = null,
-    onRowCollapsed: /* e */ AnonKey[T] => CallbackTo[js.Any] = null,
-    onRowCollapsing: /* e */ AnonCancelComponent[T] => CallbackTo[js.Any] = null,
-    onRowExpanded: /* e */ AnonKey[T] => CallbackTo[js.Any] = null,
-    onRowExpanding: /* e */ AnonCancelComponent[T] => CallbackTo[js.Any] = null,
-    onRowInserted: /* e */ AnonComponentData[T] => CallbackTo[js.Any] = null,
-    onRowInserting: /* e */ AnonDataElement[T] => CallbackTo[js.Any] = null,
-    onRowRemoved: /* e */ AnonComponentData[T] => CallbackTo[js.Any] = null,
-    onRowRemoving: /* e */ AnonElementKey[T] => CallbackTo[js.Any] = null,
-    onRowUpdated: /* e */ AnonComponentData[T] => CallbackTo[js.Any] = null,
-    onRowUpdating: /* e */ AnonNewData[T] => CallbackTo[js.Any] = null,
-    onRowValidating: /* e */ AnonBrokenRules[T] => CallbackTo[js.Any] = null,
-    onSelectionChanged: /* e */ AnonCurrentDeselectedRowKeys[T] => CallbackTo[js.Any] = null,
-    onToolbarPreparing: /* e */ AnonToolbarOptions[T] => CallbackTo[js.Any] = null,
-    pager: AnonAllowedPageSizes = null,
-    paging: GridBasePaging = null,
-    renderAsync: js.UndefOr[Boolean] = js.undefined,
-    repaintChangesOnly: js.UndefOr[Boolean] = js.undefined,
-    rowAlternationEnabled: js.UndefOr[Boolean] = js.undefined,
-    rowDragging: AnonAllowDropInsideItem = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrolling: GridBaseScrolling = null,
-    searchPanel: AnonHighlightCaseSensitive = null,
-    selectedRowKeys: js.Array[_] = null,
-    selection: GridBaseSelection = null,
-    showBorders: js.UndefOr[Boolean] = js.undefined,
-    showColumnHeaders: js.UndefOr[Boolean] = js.undefined,
-    showColumnLines: js.UndefOr[Boolean] = js.undefined,
-    showRowLines: js.UndefOr[Boolean] = js.undefined,
-    sorting: AnonAscendingText = null,
-    stateStoring: AnonCustomLoad = null,
-    tabIndex: Int | Double = null,
-    twoWayBindingEnabled: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null,
-    wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
-  ): GridBaseOptions[T] = {
+  
+  inline def apply[TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey](): GridBaseOptions[TComponent, TRowData, TKey] = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowColumnReordering)) __obj.updateDynamic("allowColumnReordering")(allowColumnReordering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowColumnResizing)) __obj.updateDynamic("allowColumnResizing")(allowColumnResizing.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoNavigateToFocusedRow)) __obj.updateDynamic("autoNavigateToFocusedRow")(autoNavigateToFocusedRow.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(cacheEnabled)) __obj.updateDynamic("cacheEnabled")(cacheEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellHintEnabled)) __obj.updateDynamic("cellHintEnabled")(cellHintEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnAutoWidth)) __obj.updateDynamic("columnAutoWidth")(columnAutoWidth.asInstanceOf[js.Any])
-    if (columnChooser != null) __obj.updateDynamic("columnChooser")(columnChooser.asInstanceOf[js.Any])
-    if (columnFixing != null) __obj.updateDynamic("columnFixing")(columnFixing.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidingEnabled)) __obj.updateDynamic("columnHidingEnabled")(columnHidingEnabled.asInstanceOf[js.Any])
-    if (columnMinWidth != null) __obj.updateDynamic("columnMinWidth")(columnMinWidth.asInstanceOf[js.Any])
-    if (columnResizingMode != null) __obj.updateDynamic("columnResizingMode")(columnResizingMode.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dateSerializationFormat != null) __obj.updateDynamic("dateSerializationFormat")(dateSerializationFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (editing != null) __obj.updateDynamic("editing")(editing.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(errorRowEnabled)) __obj.updateDynamic("errorRowEnabled")(errorRowEnabled.asInstanceOf[js.Any])
-    if (filterBuilder != null) __obj.updateDynamic("filterBuilder")(filterBuilder.asInstanceOf[js.Any])
-    if (filterBuilderPopup != null) __obj.updateDynamic("filterBuilderPopup")(filterBuilderPopup.asInstanceOf[js.Any])
-    if (filterPanel != null) __obj.updateDynamic("filterPanel")(filterPanel.asInstanceOf[js.Any])
-    if (filterRow != null) __obj.updateDynamic("filterRow")(filterRow.asInstanceOf[js.Any])
-    if (filterSyncEnabled != null) __obj.updateDynamic("filterSyncEnabled")(filterSyncEnabled.asInstanceOf[js.Any])
-    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (focusedColumnIndex != null) __obj.updateDynamic("focusedColumnIndex")(focusedColumnIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusedRowEnabled)) __obj.updateDynamic("focusedRowEnabled")(focusedRowEnabled.asInstanceOf[js.Any])
-    if (focusedRowIndex != null) __obj.updateDynamic("focusedRowIndex")(focusedRowIndex.asInstanceOf[js.Any])
-    if (focusedRowKey != null) __obj.updateDynamic("focusedRowKey")(focusedRowKey.asInstanceOf[js.Any])
-    if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(highlightChanges)) __obj.updateDynamic("highlightChanges")(highlightChanges.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (keyboardNavigation != null) __obj.updateDynamic("keyboardNavigation")(keyboardNavigation.asInstanceOf[js.Any])
-    if (loadPanel != null) __obj.updateDynamic("loadPanel")(loadPanel.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onAdaptiveDetailRowPreparing != null) __obj.updateDynamic("onAdaptiveDetailRowPreparing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonFormOptions[T]) => onAdaptiveDetailRowPreparing(t0).runNow()))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[T]) => onContentReady(t0).runNow()))
-    if (onDataErrorOccurred != null) __obj.updateDynamic("onDataErrorOccurred")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonError[T]) => onDataErrorOccurred(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[T]) => onDisposing(t0).runNow()))
-    if (onInitNewRow != null) __obj.updateDynamic("onInitNewRow")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonPromise[T]) => onInitNewRow(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[T]) => onInitialized(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonHandled[T]) => onKeyDown(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[T]) => onOptionChanged(t0).runNow()))
-    if (onRowCollapsed != null) __obj.updateDynamic("onRowCollapsed")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonKey[T]) => onRowCollapsed(t0).runNow()))
-    if (onRowCollapsing != null) __obj.updateDynamic("onRowCollapsing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCancelComponent[T]) => onRowCollapsing(t0).runNow()))
-    if (onRowExpanded != null) __obj.updateDynamic("onRowExpanded")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonKey[T]) => onRowExpanded(t0).runNow()))
-    if (onRowExpanding != null) __obj.updateDynamic("onRowExpanding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCancelComponent[T]) => onRowExpanding(t0).runNow()))
-    if (onRowInserted != null) __obj.updateDynamic("onRowInserted")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentData[T]) => onRowInserted(t0).runNow()))
-    if (onRowInserting != null) __obj.updateDynamic("onRowInserting")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonDataElement[T]) => onRowInserting(t0).runNow()))
-    if (onRowRemoved != null) __obj.updateDynamic("onRowRemoved")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentData[T]) => onRowRemoved(t0).runNow()))
-    if (onRowRemoving != null) __obj.updateDynamic("onRowRemoving")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementKey[T]) => onRowRemoving(t0).runNow()))
-    if (onRowUpdated != null) __obj.updateDynamic("onRowUpdated")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentData[T]) => onRowUpdated(t0).runNow()))
-    if (onRowUpdating != null) __obj.updateDynamic("onRowUpdating")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonNewData[T]) => onRowUpdating(t0).runNow()))
-    if (onRowValidating != null) __obj.updateDynamic("onRowValidating")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonBrokenRules[T]) => onRowValidating(t0).runNow()))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCurrentDeselectedRowKeys[T]) => onSelectionChanged(t0).runNow()))
-    if (onToolbarPreparing != null) __obj.updateDynamic("onToolbarPreparing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonToolbarOptions[T]) => onToolbarPreparing(t0).runNow()))
-    if (pager != null) __obj.updateDynamic("pager")(pager.asInstanceOf[js.Any])
-    if (paging != null) __obj.updateDynamic("paging")(paging.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAsync)) __obj.updateDynamic("renderAsync")(renderAsync.asInstanceOf[js.Any])
-    if (!js.isUndefined(repaintChangesOnly)) __obj.updateDynamic("repaintChangesOnly")(repaintChangesOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowAlternationEnabled)) __obj.updateDynamic("rowAlternationEnabled")(rowAlternationEnabled.asInstanceOf[js.Any])
-    if (rowDragging != null) __obj.updateDynamic("rowDragging")(rowDragging.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (searchPanel != null) __obj.updateDynamic("searchPanel")(searchPanel.asInstanceOf[js.Any])
-    if (selectedRowKeys != null) __obj.updateDynamic("selectedRowKeys")(selectedRowKeys.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnHeaders)) __obj.updateDynamic("showColumnHeaders")(showColumnHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnLines)) __obj.updateDynamic("showColumnLines")(showColumnLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowLines)) __obj.updateDynamic("showRowLines")(showRowLines.asInstanceOf[js.Any])
-    if (sorting != null) __obj.updateDynamic("sorting")(sorting.asInstanceOf[js.Any])
-    if (stateStoring != null) __obj.updateDynamic("stateStoring")(stateStoring.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(twoWayBindingEnabled)) __obj.updateDynamic("twoWayBindingEnabled")(twoWayBindingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
-    __obj.asInstanceOf[GridBaseOptions[T]]
+    __obj.asInstanceOf[GridBaseOptions[TComponent, TRowData, TKey]]
+  }
+  
+  extension [Self <: GridBaseOptions[?, ?, ?], TComponent /* <: GridBase[TRowData, TKey] */, TRowData, TKey](x: Self & (GridBaseOptions[TComponent, TRowData, TKey])) {
+    
+    inline def setAllowColumnReordering(value: Boolean): Self = StObject.set(x, "allowColumnReordering", value.asInstanceOf[js.Any])
+    
+    inline def setAllowColumnReorderingUndefined: Self = StObject.set(x, "allowColumnReordering", js.undefined)
+    
+    inline def setAllowColumnResizing(value: Boolean): Self = StObject.set(x, "allowColumnResizing", value.asInstanceOf[js.Any])
+    
+    inline def setAllowColumnResizingUndefined: Self = StObject.set(x, "allowColumnResizing", js.undefined)
+    
+    inline def setAutoNavigateToFocusedRow(value: Boolean): Self = StObject.set(x, "autoNavigateToFocusedRow", value.asInstanceOf[js.Any])
+    
+    inline def setAutoNavigateToFocusedRowUndefined: Self = StObject.set(x, "autoNavigateToFocusedRow", js.undefined)
+    
+    inline def setCacheEnabled(value: Boolean): Self = StObject.set(x, "cacheEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setCacheEnabledUndefined: Self = StObject.set(x, "cacheEnabled", js.undefined)
+    
+    inline def setCellHintEnabled(value: Boolean): Self = StObject.set(x, "cellHintEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setCellHintEnabledUndefined: Self = StObject.set(x, "cellHintEnabled", js.undefined)
+    
+    inline def setColumnAutoWidth(value: Boolean): Self = StObject.set(x, "columnAutoWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnAutoWidthUndefined: Self = StObject.set(x, "columnAutoWidth", js.undefined)
+    
+    inline def setColumnChooser(value: ColumnChooser): Self = StObject.set(x, "columnChooser", value.asInstanceOf[js.Any])
+    
+    inline def setColumnChooserUndefined: Self = StObject.set(x, "columnChooser", js.undefined)
+    
+    inline def setColumnFixing(value: ColumnFixing): Self = StObject.set(x, "columnFixing", value.asInstanceOf[js.Any])
+    
+    inline def setColumnFixingUndefined: Self = StObject.set(x, "columnFixing", js.undefined)
+    
+    inline def setColumnHidingEnabled(value: Boolean): Self = StObject.set(x, "columnHidingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setColumnHidingEnabledUndefined: Self = StObject.set(x, "columnHidingEnabled", js.undefined)
+    
+    inline def setColumnMinWidth(value: Double): Self = StObject.set(x, "columnMinWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnMinWidthUndefined: Self = StObject.set(x, "columnMinWidth", js.undefined)
+    
+    inline def setColumnResizingMode(value: ColumnResizeMode): Self = StObject.set(x, "columnResizingMode", value.asInstanceOf[js.Any])
+    
+    inline def setColumnResizingModeUndefined: Self = StObject.set(x, "columnResizingMode", js.undefined)
+    
+    inline def setColumnWidth(value: Double | Mode): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setColumns(value: js.Array[ColumnBase[TRowData] | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: (ColumnBase[TRowData] | String)*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setDataSource(value: DataSourceLike[TRowData, TKey]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceVarargs(value: TRowData*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
+    inline def setDateSerializationFormat(value: String): Self = StObject.set(x, "dateSerializationFormat", value.asInstanceOf[js.Any])
+    
+    inline def setDateSerializationFormatUndefined: Self = StObject.set(x, "dateSerializationFormat", js.undefined)
+    
+    inline def setEditing(value: EditingBase[TRowData, TKey]): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    
+    inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+    
+    inline def setErrorRowEnabled(value: Boolean): Self = StObject.set(x, "errorRowEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setErrorRowEnabledUndefined: Self = StObject.set(x, "errorRowEnabled", js.undefined)
+    
+    inline def setFilterBuilder(value: dxFilterBuilderOptions): Self = StObject.set(x, "filterBuilder", value.asInstanceOf[js.Any])
+    
+    inline def setFilterBuilderPopup(value: Properties): Self = StObject.set(x, "filterBuilderPopup", value.asInstanceOf[js.Any])
+    
+    inline def setFilterBuilderPopupUndefined: Self = StObject.set(x, "filterBuilderPopup", js.undefined)
+    
+    inline def setFilterBuilderUndefined: Self = StObject.set(x, "filterBuilder", js.undefined)
+    
+    inline def setFilterPanel(value: FilterPanel[TComponent, TRowData, TKey]): Self = StObject.set(x, "filterPanel", value.asInstanceOf[js.Any])
+    
+    inline def setFilterPanelUndefined: Self = StObject.set(x, "filterPanel", js.undefined)
+    
+    inline def setFilterRow(value: FilterRow): Self = StObject.set(x, "filterRow", value.asInstanceOf[js.Any])
+    
+    inline def setFilterRowUndefined: Self = StObject.set(x, "filterRow", js.undefined)
+    
+    inline def setFilterSyncEnabled(value: Boolean | Mode): Self = StObject.set(x, "filterSyncEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setFilterSyncEnabledUndefined: Self = StObject.set(x, "filterSyncEnabled", js.undefined)
+    
+    inline def setFilterValue(value: String | js.Array[Any] | js.Function): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
+    
+    inline def setFilterValueUndefined: Self = StObject.set(x, "filterValue", js.undefined)
+    
+    inline def setFilterValueVarargs(value: Any*): Self = StObject.set(x, "filterValue", js.Array(value*))
+    
+    inline def setFocusedColumnIndex(value: Double): Self = StObject.set(x, "focusedColumnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedColumnIndexUndefined: Self = StObject.set(x, "focusedColumnIndex", js.undefined)
+    
+    inline def setFocusedRowEnabled(value: Boolean): Self = StObject.set(x, "focusedRowEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedRowEnabledUndefined: Self = StObject.set(x, "focusedRowEnabled", js.undefined)
+    
+    inline def setFocusedRowIndex(value: Double): Self = StObject.set(x, "focusedRowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedRowIndexUndefined: Self = StObject.set(x, "focusedRowIndex", js.undefined)
+    
+    inline def setFocusedRowKey(value: TKey): Self = StObject.set(x, "focusedRowKey", value.asInstanceOf[js.Any])
+    
+    inline def setFocusedRowKeyUndefined: Self = StObject.set(x, "focusedRowKey", js.undefined)
+    
+    inline def setHeaderFilter(value: HeaderFilter): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
+    
+    inline def setHighlightChanges(value: Boolean): Self = StObject.set(x, "highlightChanges", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightChangesUndefined: Self = StObject.set(x, "highlightChanges", js.undefined)
+    
+    inline def setKeyboardNavigation(value: KeyboardNavigation): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+    
+    inline def setLoadPanel(value: LoadPanel): Self = StObject.set(x, "loadPanel", value.asInstanceOf[js.Any])
+    
+    inline def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
+    
+    inline def setNoDataText(value: String): Self = StObject.set(x, "noDataText", value.asInstanceOf[js.Any])
+    
+    inline def setNoDataTextUndefined: Self = StObject.set(x, "noDataText", js.undefined)
+    
+    inline def setOnAdaptiveDetailRowPreparing(value: /* e */ EventInfo[TComponent] & AdaptiveDetailRowPreparingInfo => Callback): Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & AdaptiveDetailRowPreparingInfo) => value(t0).runNow()))
+    
+    inline def setOnAdaptiveDetailRowPreparingUndefined: Self = StObject.set(x, "onAdaptiveDetailRowPreparing", js.undefined)
+    
+    inline def setOnDataErrorOccurred(value: /* e */ EventInfo[TComponent] & DataErrorOccurredInfo => Callback): Self = StObject.set(x, "onDataErrorOccurred", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & DataErrorOccurredInfo) => value(t0).runNow()))
+    
+    inline def setOnDataErrorOccurredUndefined: Self = StObject.set(x, "onDataErrorOccurred", js.undefined)
+    
+    inline def setOnEditCanceled(value: /* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onEditCanceled", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnEditCanceledUndefined: Self = StObject.set(x, "onEditCanceled", js.undefined)
+    
+    inline def setOnEditCanceling(value: /* e */ Cancelable & EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onEditCanceling", js.Any.fromFunction1((t0: /* e */ Cancelable & EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnEditCancelingUndefined: Self = StObject.set(x, "onEditCanceling", js.undefined)
+    
+    inline def setOnInitNewRow(value: /* e */ EventInfo[TComponent] & NewRowInfo[TRowData] => Callback): Self = StObject.set(x, "onInitNewRow", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & NewRowInfo[TRowData]) => value(t0).runNow()))
+    
+    inline def setOnInitNewRowUndefined: Self = StObject.set(x, "onInitNewRow", js.undefined)
+    
+    inline def setOnKeyDown(value: /* e */ (NativeEventInfo[TComponent, KeyboardEvent]) & KeyDownInfo => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: /* e */ (NativeEventInfo[TComponent, KeyboardEvent]) & KeyDownInfo) => value(t0).runNow()))
+    
+    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    
+    inline def setOnRowCollapsed(value: /* e */ EventInfo[TComponent] & RowKeyInfo[TKey] => Callback): Self = StObject.set(x, "onRowCollapsed", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & RowKeyInfo[TKey]) => value(t0).runNow()))
+    
+    inline def setOnRowCollapsedUndefined: Self = StObject.set(x, "onRowCollapsed", js.undefined)
+    
+    inline def setOnRowCollapsing(value: /* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey] => Callback): Self = StObject.set(x, "onRowCollapsing", js.Any.fromFunction1((t0: /* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey]) => value(t0).runNow()))
+    
+    inline def setOnRowCollapsingUndefined: Self = StObject.set(x, "onRowCollapsing", js.undefined)
+    
+    inline def setOnRowExpanded(value: /* e */ EventInfo[TComponent] & RowKeyInfo[TKey] => Callback): Self = StObject.set(x, "onRowExpanded", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & RowKeyInfo[TKey]) => value(t0).runNow()))
+    
+    inline def setOnRowExpandedUndefined: Self = StObject.set(x, "onRowExpanded", js.undefined)
+    
+    inline def setOnRowExpanding(value: /* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey] => Callback): Self = StObject.set(x, "onRowExpanding", js.Any.fromFunction1((t0: /* e */ Cancelable & EventInfo[TComponent] & RowKeyInfo[TKey]) => value(t0).runNow()))
+    
+    inline def setOnRowExpandingUndefined: Self = StObject.set(x, "onRowExpanding", js.undefined)
+    
+    inline def setOnRowInserted(value: /* e */ EventInfo[TComponent] & (RowInsertedInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowInserted", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowInsertedInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowInsertedUndefined: Self = StObject.set(x, "onRowInserted", js.undefined)
+    
+    inline def setOnRowInserting(value: /* e */ EventInfo[TComponent] & RowInsertingInfo[TRowData] => Callback): Self = StObject.set(x, "onRowInserting", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & RowInsertingInfo[TRowData]) => value(t0).runNow()))
+    
+    inline def setOnRowInsertingUndefined: Self = StObject.set(x, "onRowInserting", js.undefined)
+    
+    inline def setOnRowRemoved(value: /* e */ EventInfo[TComponent] & (RowRemovedInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowRemoved", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowRemovedInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowRemovedUndefined: Self = StObject.set(x, "onRowRemoved", js.undefined)
+    
+    inline def setOnRowRemoving(value: /* e */ EventInfo[TComponent] & (RowRemovingInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowRemoving", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowRemovingInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowRemovingUndefined: Self = StObject.set(x, "onRowRemoving", js.undefined)
+    
+    inline def setOnRowUpdated(value: /* e */ EventInfo[TComponent] & (RowUpdatedInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowUpdated", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowUpdatedInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowUpdatedUndefined: Self = StObject.set(x, "onRowUpdated", js.undefined)
+    
+    inline def setOnRowUpdating(value: /* e */ EventInfo[TComponent] & (RowUpdatingInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowUpdating", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowUpdatingInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowUpdatingUndefined: Self = StObject.set(x, "onRowUpdating", js.undefined)
+    
+    inline def setOnRowValidating(value: /* e */ EventInfo[TComponent] & (RowValidatingInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onRowValidating", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (RowValidatingInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnRowValidatingUndefined: Self = StObject.set(x, "onRowValidating", js.undefined)
+    
+    inline def setOnSaved(value: /* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onSaved", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (DataChangeInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnSavedUndefined: Self = StObject.set(x, "onSaved", js.undefined)
+    
+    inline def setOnSaving(value: /* e */ EventInfo[TComponent] & (SavingInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onSaving", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (SavingInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnSavingUndefined: Self = StObject.set(x, "onSaving", js.undefined)
+    
+    inline def setOnSelectionChanged(value: /* e */ EventInfo[TComponent] & (SelectionChangedInfo[TRowData, TKey]) => Callback): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & (SelectionChangedInfo[TRowData, TKey])) => value(t0).runNow()))
+    
+    inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+    
+    inline def setOnToolbarPreparing(value: /* e */ EventInfo[TComponent] & ToolbarPreparingInfo => Callback): Self = StObject.set(x, "onToolbarPreparing", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent] & ToolbarPreparingInfo) => value(t0).runNow()))
+    
+    inline def setOnToolbarPreparingUndefined: Self = StObject.set(x, "onToolbarPreparing", js.undefined)
+    
+    inline def setPager(value: Pager): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    
+    inline def setPaging(value: PagingBase): Self = StObject.set(x, "paging", value.asInstanceOf[js.Any])
+    
+    inline def setPagingUndefined: Self = StObject.set(x, "paging", js.undefined)
+    
+    inline def setRenderAsync(value: Boolean): Self = StObject.set(x, "renderAsync", value.asInstanceOf[js.Any])
+    
+    inline def setRenderAsyncUndefined: Self = StObject.set(x, "renderAsync", js.undefined)
+    
+    inline def setRepaintChangesOnly(value: Boolean): Self = StObject.set(x, "repaintChangesOnly", value.asInstanceOf[js.Any])
+    
+    inline def setRepaintChangesOnlyUndefined: Self = StObject.set(x, "repaintChangesOnly", js.undefined)
+    
+    inline def setRowAlternationEnabled(value: Boolean): Self = StObject.set(x, "rowAlternationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setRowAlternationEnabledUndefined: Self = StObject.set(x, "rowAlternationEnabled", js.undefined)
+    
+    inline def setRowDragging(value: RowDragging[TComponent, TRowData, TKey]): Self = StObject.set(x, "rowDragging", value.asInstanceOf[js.Any])
+    
+    inline def setRowDraggingUndefined: Self = StObject.set(x, "rowDragging", js.undefined)
+    
+    inline def setScrolling(value: ScrollingBase): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+    
+    inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+    
+    inline def setSearchPanel(value: SearchPanel): Self = StObject.set(x, "searchPanel", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPanelUndefined: Self = StObject.set(x, "searchPanel", js.undefined)
+    
+    inline def setSelectedRowKeys(value: js.Array[TKey]): Self = StObject.set(x, "selectedRowKeys", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRowKeysUndefined: Self = StObject.set(x, "selectedRowKeys", js.undefined)
+    
+    inline def setSelectedRowKeysVarargs(value: TKey*): Self = StObject.set(x, "selectedRowKeys", js.Array(value*))
+    
+    inline def setSelection(value: SelectionBase): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    
+    inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
+    
+    inline def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
+    
+    inline def setShowColumnHeaders(value: Boolean): Self = StObject.set(x, "showColumnHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setShowColumnHeadersUndefined: Self = StObject.set(x, "showColumnHeaders", js.undefined)
+    
+    inline def setShowColumnLines(value: Boolean): Self = StObject.set(x, "showColumnLines", value.asInstanceOf[js.Any])
+    
+    inline def setShowColumnLinesUndefined: Self = StObject.set(x, "showColumnLines", js.undefined)
+    
+    inline def setShowRowLines(value: Boolean): Self = StObject.set(x, "showRowLines", value.asInstanceOf[js.Any])
+    
+    inline def setShowRowLinesUndefined: Self = StObject.set(x, "showRowLines", js.undefined)
+    
+    inline def setSorting(value: Sorting): Self = StObject.set(x, "sorting", value.asInstanceOf[js.Any])
+    
+    inline def setSortingUndefined: Self = StObject.set(x, "sorting", js.undefined)
+    
+    inline def setStateStoring(value: StateStoring): Self = StObject.set(x, "stateStoring", value.asInstanceOf[js.Any])
+    
+    inline def setStateStoringUndefined: Self = StObject.set(x, "stateStoring", js.undefined)
+    
+    inline def setSyncLookupFilterValues(value: Boolean): Self = StObject.set(x, "syncLookupFilterValues", value.asInstanceOf[js.Any])
+    
+    inline def setSyncLookupFilterValuesUndefined: Self = StObject.set(x, "syncLookupFilterValues", js.undefined)
+    
+    inline def setTwoWayBindingEnabled(value: Boolean): Self = StObject.set(x, "twoWayBindingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setTwoWayBindingEnabledUndefined: Self = StObject.set(x, "twoWayBindingEnabled", js.undefined)
+    
+    inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
   }
 }
-

@@ -1,7 +1,7 @@
 package typingsJapgolly.oracleOraclejet.ojbuttonMod
 
-import org.scalajs.dom.raw.CustomEvent
-import typingsJapgolly.oracleOraclejet.mod.JetElementCustomEvent
+import org.scalajs.dom.CustomEvent
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.all
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.chroming
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.chromingChanged
@@ -19,82 +19,59 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.oneTabstop
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.outlined
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.value
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.valueChanged
-import typingsJapgolly.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
+trait ojButtonsetOne
+  extends StObject
+     with ojButtonset[ojButtonsetOneSettableProperties] {
+  
+  def addEventListener(`type`: chromingChanged, listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any]): Unit = js.native
+  def addEventListener(
+    `type`: chromingChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  def addEventListener(`type`: displayChanged, listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any]): Unit = js.native
+  def addEventListener(
+    `type`: displayChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  def addEventListener(
+    `type`: focusManagementChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: focusManagementChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  def addEventListener(`type`: valueChanged, listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any]): Unit = js.native
+  def addEventListener(
+    `type`: valueChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(`type`: disabledChanged, listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_disabledChanged(
+    `type`: disabledChanged,
+    listener: js.ThisFunction1[/* this */ HTMLElement, CustomEvent, Any],
+    useCapture: Boolean
+  ): Unit = js.native
+  
   var chroming: full | half | outlined = js.native
+  
   var disabled: Boolean = js.native
+  
   var display: all | icons = js.native
+  
   var focusManagement: oneTabstop | none = js.native
-  var onChromingChanged: (js.Function1[CustomEvent, _]) | Null = js.native
-  var onDisabledChanged: (js.Function1[CustomEvent, _]) | Null = js.native
-  var onDisplayChanged: (js.Function1[CustomEvent, _]) | Null = js.native
-  var onFocusManagementChanged: (js.Function1[CustomEvent, _]) | Null = js.native
-  var onValueChanged: (js.Function1[CustomEvent, _]) | Null = js.native
-  var value: js.Any = js.native
-  def addEventListener(
-    `type`: chromingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _]
-  ): Unit = js.native
-  def addEventListener(
-    `type`: chromingChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[full | half | outlined], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  def addEventListener(
-    `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _]
-  ): Unit = js.native
-  def addEventListener(
-    `type`: displayChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[all | icons], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  def addEventListener(
-    `type`: focusManagementChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], _]
-  ): Unit = js.native
-  def addEventListener(
-    `type`: focusManagementChanged,
-    listener: js.ThisFunction1[/* this */ HTMLElement, /* ev */ JetElementCustomEvent[oneTabstop | none], _],
-    useCapture: Boolean
-  ): Unit = js.native
-  def addEventListener(
-    `type`: valueChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[
-        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
-      ], 
-      _
-    ]
-  ): Unit = js.native
-  def addEventListener(
-    `type`: valueChanged,
-    listener: js.ThisFunction1[
-      /* this */ HTMLElement, 
-      /* ev */ JetElementCustomEvent[
-        /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disabledChanged(
-    `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ org.scalajs.dom.raw.HTMLElement, CustomEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disabledChanged(
-    `type`: disabledChanged,
-    listener: js.ThisFunction1[/* this */ org.scalajs.dom.raw.HTMLElement, CustomEvent, _],
-    useCapture: Boolean
-  ): Unit = js.native
+  
   @JSName("getProperty")
   def getProperty_chroming(property: chroming): full | half | outlined = js.native
   @JSName("getProperty")
@@ -105,17 +82,26 @@ trait ojButtonsetOne extends ojButtonset[ojButtonsetOneSettableProperties] {
   def getProperty_focusManagement(property: focusManagement): oneTabstop | none = js.native
   @JSName("getProperty")
   def getProperty_value(property: value): /* import warning: importer.ImportType#apply Failed type conversion: @oracle/oraclejet.@oracle/oraclejet/ojbutton.ojButtonsetOne['value'] */ js.Any = js.native
+  
+  var onChromingChanged: (js.Function1[CustomEvent, Any]) | Null = js.native
+  
+  var onDisabledChanged: (js.Function1[CustomEvent, Any]) | Null = js.native
+  
+  var onDisplayChanged: (js.Function1[CustomEvent, Any]) | Null = js.native
+  
+  var onFocusManagementChanged: (js.Function1[CustomEvent, Any]) | Null = js.native
+  
+  var onValueChanged: (js.Function1[CustomEvent, Any]) | Null = js.native
+  
   def setProperties(properties: ojButtonsetOneSettablePropertiesLenient): Unit = js.native
-  def setProperty(property: chroming, value: full): Unit = js.native
-  def setProperty(property: chroming, value: half): Unit = js.native
-  def setProperty(property: chroming, value: outlined): Unit = js.native
-  def setProperty(property: display, value: all): Unit = js.native
-  def setProperty(property: display, value: icons): Unit = js.native
-  def setProperty(property: focusManagement, value: none): Unit = js.native
-  def setProperty(property: focusManagement, value: oneTabstop): Unit = js.native
+  
+  def setProperty(property: chroming, value: full | half | outlined): Unit = js.native
+  def setProperty(property: display, value: all | icons): Unit = js.native
+  def setProperty(property: focusManagement, value: oneTabstop | none): Unit = js.native
   @JSName("setProperty")
   def setProperty_disabled(property: disabled, value: Boolean): Unit = js.native
   @JSName("setProperty")
-  def setProperty_value(property: value, value: js.Any): Unit = js.native
+  def setProperty_value(property: value, value: Any): Unit = js.native
+  
+  var value: Any = js.native
 }
-

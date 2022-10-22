@@ -1,26 +1,31 @@
 package typingsJapgolly.bson.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CalculateObjectSizeOptions extends js.Object {
-  /** {default:true}, ignore undefined fields. */
+/* Inlined std.Pick<bson.bson.SerializeOptions, 'serializeFunctions' | 'ignoreUndefined'> */
+trait CalculateObjectSizeOptions extends StObject {
+  
   var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
-  /** {default:false}, serialize the javascript functions */
+  
   var serializeFunctions: js.UndefOr[Boolean] = js.undefined
 }
-
 object CalculateObjectSizeOptions {
-  @scala.inline
-  def apply(
-    ignoreUndefined: js.UndefOr[Boolean] = js.undefined,
-    serializeFunctions: js.UndefOr[Boolean] = js.undefined
-  ): CalculateObjectSizeOptions = {
+  
+  inline def apply(): CalculateObjectSizeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
-    if (!js.isUndefined(serializeFunctions)) __obj.updateDynamic("serializeFunctions")(serializeFunctions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculateObjectSizeOptions]
   }
+  
+  extension [Self <: CalculateObjectSizeOptions](x: Self) {
+    
+    inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+    
+    inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+    
+    inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+  }
 }
-

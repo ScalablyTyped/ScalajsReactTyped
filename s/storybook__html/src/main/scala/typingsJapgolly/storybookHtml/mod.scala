@@ -1,29 +1,64 @@
 package typingsJapgolly.storybookHtml
 
 import typingsJapgolly.node.NodeModule
-import typingsJapgolly.storybookAddons.typesMod.DecoratorFunction
-import typingsJapgolly.storybookAddons.typesMod.Loadable
-import typingsJapgolly.storybookAddons.typesMod.Parameters
-import typingsJapgolly.storybookAddons.typesMod.StoryApi
-import typingsJapgolly.storybookHtml.typesMod.IStorybookSection
-import typingsJapgolly.storybookHtml.typesMod.StoryFnHtmlReturnType
+import typingsJapgolly.storybookAddons.distTs3Dot9TypesMod.DecoratorFunction
+import typingsJapgolly.storybookAddons.distTs3Dot9TypesMod.Loadable
+import typingsJapgolly.storybookAddons.distTs3Dot9TypesMod.Parameters
+import typingsJapgolly.storybookAddons.distTs3Dot9TypesMod.StoryApi
+import typingsJapgolly.storybookHtml.distTs3Dot9ClientPreviewTypesMod.IStorybookSection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/html", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@storybook/html", "addDecorator")
+  @js.native
   val addDecorator: js.Function1[
-    /* decorator */ DecoratorFunction[StoryFnHtmlReturnType], 
-    StoryApi[StoryFnHtmlReturnType]
+    /* decorator */ DecoratorFunction[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/html.@storybook/html/dist/ts3.9/client/preview/types-6-0.HtmlFramework['storyResult'] */ js.Any
+    ], 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/html.@storybook/html/dist/ts3.9/client/preview/types-6-0.HtmlFramework['storyResult'] */ js.Any
+    ]
   ] = js.native
-  val addParameters: js.Function1[/* parameter */ Parameters, StoryApi[StoryFnHtmlReturnType]] = js.native
+  
+  @JSImport("@storybook/html", "addParameters")
+  @js.native
+  val addParameters: js.Function1[
+    /* parameter */ Parameters, 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/html.@storybook/html/dist/ts3.9/client/preview/types-6-0.HtmlFramework['storyResult'] */ js.Any
+    ]
+  ] = js.native
+  
+  @JSImport("@storybook/html", "configure")
+  @js.native
   val configure: js.Function2[/* loader */ Loadable, /* module */ NodeModule, Unit] = js.native
+  
+  @JSImport("@storybook/html", "forceReRender")
+  @js.native
   val forceReRender: js.Function0[Unit] = js.native
+  
+  @JSImport("@storybook/html", "getStorybook")
+  @js.native
   val getStorybook: js.Function0[js.Array[IStorybookSection]] = js.native
-  val raw: js.Function0[js.Any] = js.native
-  val setAddon: js.Function1[/* addon */ js.Any, Unit] = js.native
-  val storiesOf: js.Function2[/* kind */ String, /* module */ NodeModule, StoryApi[StoryFnHtmlReturnType]] = js.native
+  
+  @JSImport("@storybook/html", "raw")
+  @js.native
+  val raw: js.Function0[Any] = js.native
+  
+  @JSImport("@storybook/html", "setAddon")
+  @js.native
+  val setAddon: js.Function1[/* addon */ Any, Unit] = js.native
+  
+  @JSImport("@storybook/html", "storiesOf")
+  @js.native
+  val storiesOf: js.Function2[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryKind */ /* kind */ Any, 
+    /* module */ NodeModule, 
+    StoryApi[
+      /* import warning: importer.ImportType#apply Failed type conversion: @storybook/html.@storybook/html/dist/ts3.9/client/preview/types-6-0.HtmlFramework['storyResult'] */ js.Any
+    ]
+  ] = js.native
 }
-

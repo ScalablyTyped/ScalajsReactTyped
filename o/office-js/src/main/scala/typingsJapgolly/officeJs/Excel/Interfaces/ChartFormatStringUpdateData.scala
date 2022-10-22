@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartFormatString object, for use in `chartFormatString.set({ ... })`. */
-trait ChartFormatStringUpdateData extends js.Object {
+trait ChartFormatStringUpdateData extends StObject {
+  
   /**
+    * Represents the font attributes, such as font name, font size, and color of a chart characters object.
     *
-    * Represents the font attributes, such as font name, font size, color, etc. of chart characters object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
 }
-
 object ChartFormatStringUpdateData {
-  @scala.inline
-  def apply(font: ChartFontUpdateData = null): ChartFormatStringUpdateData = {
+  
+  inline def apply(): ChartFormatStringUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartFormatStringUpdateData]
   }
+  
+  extension [Self <: ChartFormatStringUpdateData](x: Self) {
+    
+    inline def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+  }
 }
-

@@ -1,27 +1,40 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WhenSchemaOptions extends js.Object {
+trait WhenSchemaOptions extends StObject {
+  
   /**
     * the alternative schema type if the condition is false. Required if then is missing.
     */
   var otherwise: js.UndefOr[SchemaLike] = js.undefined
+  
   /**
     * the alternative schema type if the condition is true. Required if otherwise is missing.
     */
   var `then`: js.UndefOr[SchemaLike] = js.undefined
 }
-
 object WhenSchemaOptions {
-  @scala.inline
-  def apply(otherwise: SchemaLike = null, `then`: SchemaLike = null): WhenSchemaOptions = {
+  
+  inline def apply(): WhenSchemaOptions = {
     val __obj = js.Dynamic.literal()
-    if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
-    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WhenSchemaOptions]
   }
+  
+  extension [Self <: WhenSchemaOptions](x: Self) {
+    
+    inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
+    
+    inline def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
+    
+    inline def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
+    
+    inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    
+    inline def setThenNull: Self = StObject.set(x, "then", null)
+    
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+  }
 }
-

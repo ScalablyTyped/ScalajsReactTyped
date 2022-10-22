@@ -1,64 +1,66 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.devextremeStrings.EqualssignEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.EqualssignEqualssignEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.ExclamationmarkEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.ExclamationmarkEqualssignEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.Greaterthansign
-import typingsJapgolly.devextreme.devextremeStrings.GreaterthansignEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.Lessthansign
-import typingsJapgolly.devextreme.devextremeStrings.LessthansignEqualssign
-import typingsJapgolly.devextreme.devextremeStrings.async
 import typingsJapgolly.devextreme.devextremeStrings.compare
-import typingsJapgolly.devextreme.devextremeStrings.custom
-import typingsJapgolly.devextreme.devextremeStrings.email
-import typingsJapgolly.devextreme.devextremeStrings.numeric
-import typingsJapgolly.devextreme.devextremeStrings.pattern
-import typingsJapgolly.devextreme.devextremeStrings.range
-import typingsJapgolly.devextreme.devextremeStrings.required
-import typingsJapgolly.devextreme.devextremeStrings.stringLength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompareRule extends js.Object {
-  /** Specifies the function whose return value is used for comparison with the validated value. */
-  var comparisonTarget: js.UndefOr[js.Function0[_]] = js.undefined
-  /** Specifies the operator to be used for comparing the validated value with the target. */
-  var comparisonType: js.UndefOr[
-    ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | EqualssignEqualssign | EqualssignEqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign
-  ] = js.undefined
-  /** If set to true, empty values are valid. */
+trait CompareRule
+  extends StObject
+     with ValidationRule {
+  
+  /**
+    * Specifies the function whose return value is used for comparison with the validated value.
+    */
+  var comparisonTarget: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  /**
+    * Specifies the operator to be used for comparing the validated value with the target.
+    */
+  var comparisonType: js.UndefOr[ComparisonOperator] = js.undefined
+  
+  /**
+    * If set to true, empty values are valid.
+    */
   var ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the message that is shown if the rule is broken. */
+  
+  /**
+    * Specifies the message that is shown if the rule is broken.
+    */
   var message: js.UndefOr[String] = js.undefined
-  /** Indicates whether or not the rule should be always checked for the target value or only when the target value changes. */
-  var reevaluate: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the rule type. Set it to "compare" to use the CompareRule. */
-  var `type`: js.UndefOr[
-    required | numeric | range | stringLength | custom | compare | pattern | email | async
-  ] = js.undefined
+  
+  /**
+    * Specifies the rule type. Set it to &apos;compare&apos; to use the CompareRule.
+    */
+  var `type`: compare
 }
-
 object CompareRule {
-  @scala.inline
-  def apply(
-    comparisonTarget: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    comparisonType: ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | EqualssignEqualssign | EqualssignEqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign = null,
-    ignoreEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    message: String = null,
-    reevaluate: js.UndefOr[Boolean] = js.undefined,
-    `type`: required | numeric | range | stringLength | custom | compare | pattern | email | async = null
-  ): CompareRule = {
+  
+  inline def apply(): CompareRule = {
     val __obj = js.Dynamic.literal()
-    comparisonTarget.foreach(p => __obj.updateDynamic("comparisonTarget")(p.toJsFn))
-    if (comparisonType != null) __obj.updateDynamic("comparisonType")(comparisonType.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEmptyValue)) __obj.updateDynamic("ignoreEmptyValue")(ignoreEmptyValue.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (!js.isUndefined(reevaluate)) __obj.updateDynamic("reevaluate")(reevaluate.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("compare")
     __obj.asInstanceOf[CompareRule]
   }
+  
+  extension [Self <: CompareRule](x: Self) {
+    
+    inline def setComparisonTarget(value: CallbackTo[Any]): Self = StObject.set(x, "comparisonTarget", value.toJsFn)
+    
+    inline def setComparisonTargetUndefined: Self = StObject.set(x, "comparisonTarget", js.undefined)
+    
+    inline def setComparisonType(value: ComparisonOperator): Self = StObject.set(x, "comparisonType", value.asInstanceOf[js.Any])
+    
+    inline def setComparisonTypeUndefined: Self = StObject.set(x, "comparisonType", js.undefined)
+    
+    inline def setIgnoreEmptyValue(value: Boolean): Self = StObject.set(x, "ignoreEmptyValue", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreEmptyValueUndefined: Self = StObject.set(x, "ignoreEmptyValue", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setType(value: compare): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

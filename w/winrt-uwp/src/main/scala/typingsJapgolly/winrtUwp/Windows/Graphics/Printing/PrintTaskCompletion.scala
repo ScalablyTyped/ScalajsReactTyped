@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintTaskCompletion extends js.Object
-
+sealed trait PrintTaskCompletion extends StObject
 /** Specifies the completion status of a print task. */
 @JSGlobal("Windows.Graphics.Printing.PrintTaskCompletion")
 @js.native
-object PrintTaskCompletion extends js.Object {
+object PrintTaskCompletion extends StObject {
+  
   /** An abandoned print task. */
   @js.native
-  sealed trait abandoned extends PrintTaskCompletion
+  sealed trait abandoned
+    extends StObject
+       with PrintTaskCompletion
   
   /** A canceled print task. */
   @js.native
-  sealed trait canceled extends PrintTaskCompletion
+  sealed trait canceled
+    extends StObject
+       with PrintTaskCompletion
   
   /** A failed print task. */
   @js.native
-  sealed trait failed extends PrintTaskCompletion
+  sealed trait failed
+    extends StObject
+       with PrintTaskCompletion
   
   /** A submitted print task. */
   @js.native
-  sealed trait submitted extends PrintTaskCompletion
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintTaskCompletion with Double] = js.native
-  /* 0 */ @js.native
-  object abandoned extends TopLevel[abandoned with Double]
-  
-  /* 1 */ @js.native
-  object canceled extends TopLevel[canceled with Double]
-  
-  /* 2 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 3 */ @js.native
-  object submitted extends TopLevel[submitted with Double]
-  
+  sealed trait submitted
+    extends StObject
+       with PrintTaskCompletion
 }
-

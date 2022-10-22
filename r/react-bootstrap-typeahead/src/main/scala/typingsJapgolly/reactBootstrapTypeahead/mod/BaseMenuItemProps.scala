@@ -1,30 +1,28 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
 import typingsJapgolly.reactBootstrapTypeahead.reactBootstrapTypeaheadStrings.li
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BaseMenuItemProps
-  extends AllHTMLAttributes[li]
-     with ClassAttributes[li] {
+  extends StObject
+     with HTMLProps[li] {
+  
   var active: js.UndefOr[Boolean] = js.undefined
 }
-
 object BaseMenuItemProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[li] = null,
-    ClassAttributes: ClassAttributes[li] = null,
-    active: js.UndefOr[Boolean] = js.undefined
-  ): BaseMenuItemProps = {
+  
+  inline def apply(): BaseMenuItemProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseMenuItemProps]
   }
+  
+  extension [Self <: BaseMenuItemProps](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+  }
 }
-

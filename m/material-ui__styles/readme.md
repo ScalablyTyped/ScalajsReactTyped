@@ -1,26 +1,8 @@
 
 # Scala.js typings for material-ui__styles
 
-Typings are for version 4.9.0
+Typings are for version 4.11.5
 
-## Library description:
-Material-UI Styles - The styling solution of Material-UI.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @material-ui/styles |
-| Keywords           | react, react-component, material design, material-ui, styles |
-| # releases         | 44 |
-| # dependents       | 340 |
-| # downloads        | 18090086 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/mui-org/material-ui/tree/master/packages/material-ui-styles)
-- [Bugs](https://github.com/mui-org/material-ui/issues)
-- [Repository](https://github.com/mui-org/material-ui)
-- [Npm](https://www.npmjs.com/package/%40material-ui%2Fstyles)
-    
 
 
 ## Note

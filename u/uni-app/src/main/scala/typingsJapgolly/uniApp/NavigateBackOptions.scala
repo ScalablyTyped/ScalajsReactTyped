@@ -10,15 +10,17 @@ import typingsJapgolly.uniApp.uniAppStrings.`zoom-fade-in`
 import typingsJapgolly.uniApp.uniAppStrings.`zoom-in`
 import typingsJapgolly.uniApp.uniAppStrings.auto
 import typingsJapgolly.uniApp.uniAppStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigateBackOptions extends js.Object {
+trait NavigateBackOptions extends StObject {
+  
   /**
     * 窗口关闭动画的持续时间，单位为 ms
     */
   var animationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
     * 窗口关闭的动画类型
     * - auto: 自动选择动画效果
@@ -35,24 +37,33 @@ trait NavigateBackOptions extends js.Object {
   var animationType: js.UndefOr[
     auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
   ] = js.undefined
+  
   /**
     * 返回的页面数，如果 delta 大于现有页面数，则返回到首页
     */
   var delta: js.UndefOr[Double] = js.undefined
 }
-
 object NavigateBackOptions {
-  @scala.inline
-  def apply(
-    animationDuration: Int | Double = null,
-    animationType: auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out` = null,
-    delta: Int | Double = null
-  ): NavigateBackOptions = {
+  
+  inline def apply(): NavigateBackOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
-    if (delta != null) __obj.updateDynamic("delta")(delta.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateBackOptions]
   }
+  
+  extension [Self <: NavigateBackOptions](x: Self) {
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setAnimationType(
+      value: auto | none | `slide-out-right` | `slide-out-left` | `slide-out-top` | `slide-out-bottom` | `fade-out` | `zoom-in` | `zoom-fade-in` | `pop-out`
+    ): Self = StObject.set(x, "animationType", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationTypeUndefined: Self = StObject.set(x, "animationType", js.undefined)
+    
+    inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaUndefined: Self = StObject.set(x, "delta", js.undefined)
+  }
 }
-

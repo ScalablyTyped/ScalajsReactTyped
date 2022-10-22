@@ -1,16 +1,16 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import typingsJapgolly.apolloProtobufjs.mod.util.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@apollo/protobufjs", "rpc")
-@js.native
-object rpc extends js.Object {
+object rpc {
+  
   /** An RPC service as returned by {@link Service#create}. */
+  @JSImport("@apollo/protobufjs", "rpc.Service")
   @js.native
-  class Service protected () extends EventEmitter {
+  open class Service protected () extends EventEmitter {
     /**
       * Constructs a new RPC service instance.
       * @param rpcImpl RPC implementation
@@ -20,12 +20,8 @@ object rpc extends js.Object {
     def this(rpcImpl: RPCImpl) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
     def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
-    /** Whether requests are length-delimited. */
-    var requestDelimited: Boolean = js.native
-    /** Whether responses are length-delimited. */
-    var responseDelimited: Boolean = js.native
-    /** RPC implementation. Becomes `null` once the service is ended. */
-    var rpcImpl: RPCImpl | Null = js.native
+    def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
+    
     /**
       * Ends this service and emits the `end` event.
       * @param [endedByRPC=false] Whether the service has been ended by the RPC implementation.
@@ -33,6 +29,13 @@ object rpc extends js.Object {
       */
     def end(): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
     def end(endedByRPC: Boolean): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
+    
+    /** Whether requests are length-delimited. */
+    var requestDelimited: Boolean = js.native
+    
+    /** Whether responses are length-delimited. */
+    var responseDelimited: Boolean = js.native
+    
     /**
       * Calls a service method through {@link rpc.Service#rpcImpl|rpcImpl}.
       * @param method Reflected or static method
@@ -45,30 +48,19 @@ object rpc extends js.Object {
       method: Method,
       requestCtor: Constructor[TReq],
       responseCtor: Constructor[TRes],
-      request: TReq,
-      callback: ServiceMethodCallback[TRes]
-    ): Unit = js.native
-    def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
-      method: Method,
-      requestCtor: Constructor[TReq],
-      responseCtor: Constructor[TRes],
-      request: Properties[TReq],
+      request: Properties[TReq] | TReq,
       callback: ServiceMethodCallback[TRes]
     ): Unit = js.native
     def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
       method: ServiceMethod[TReq, TRes],
       requestCtor: Constructor[TReq],
       responseCtor: Constructor[TRes],
-      request: TReq,
+      request: Properties[TReq] | TReq,
       callback: ServiceMethodCallback[TRes]
     ): Unit = js.native
-    def rpcCall[TReq /* <: Message[TReq] */, TRes /* <: Message[TRes] */](
-      method: ServiceMethod[TReq, TRes],
-      requestCtor: Constructor[TReq],
-      responseCtor: Constructor[TRes],
-      request: Properties[TReq],
-      callback: ServiceMethodCallback[TRes]
-    ): Unit = js.native
+    
+    /** RPC implementation. Becomes `null` once the service is ended. */
+    var rpcImpl: RPCImpl | Null = js.native
   }
   
   /**
@@ -82,6 +74,7 @@ object rpc extends js.Object {
     /* callback */ js.UndefOr[ServiceMethodCallback[TRes]], 
     js.Promise[Message[TRes]]
   ]
+  
   /**
     * A service method callback as used by {@link rpc.ServiceMethod|ServiceMethod}.
     *
@@ -91,4 +84,3 @@ object rpc extends js.Object {
     */
   type ServiceMethodCallback[TRes /* <: Message[TRes] */] = js.Function2[/* error */ js.Error | Null, /* response */ js.UndefOr[TRes], Unit]
 }
-

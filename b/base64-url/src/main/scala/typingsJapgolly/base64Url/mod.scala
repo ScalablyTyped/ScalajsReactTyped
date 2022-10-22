@@ -1,17 +1,22 @@
 package typingsJapgolly.base64Url
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("base64-url", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def decode(value: String): String = js.native
-  def decode(value: String, encoding: String): String = js.native
-  def encode(value: String): String = js.native
-  def encode(value: String, encoding: String): String = js.native
-  def escape(value: String): String = js.native
-  def unescape(value: String): String = js.native
+object mod {
+  
+  @JSImport("base64-url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def decode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def decode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def encode(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(value: String, encoding: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(value.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def escape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def unescape(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(value.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

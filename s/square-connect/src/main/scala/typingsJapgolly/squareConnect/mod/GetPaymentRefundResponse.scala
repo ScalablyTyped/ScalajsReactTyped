@@ -1,19 +1,20 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "GetPaymentRefundResponse")
 @js.native
-class GetPaymentRefundResponse () extends js.Object {
+open class GetPaymentRefundResponse () extends StObject {
+  
   /**
     * Information on errors encountered during the request.
     */
   var errors: js.UndefOr[js.Array[js.Error]] = js.native
+  
   /**
     * The requested `PaymentRefund`.
     */
   var refund: js.UndefOr[PaymentRefund] = js.native
 }
-

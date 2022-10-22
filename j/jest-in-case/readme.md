@@ -11,9 +11,9 @@ Jest utility for creating variations of the same test
 | Full name          | jest-in-case |
 | Keywords           | jest, test, testing |
 | # releases         | 1 |
-| # dependents       | 8 |
-| # downloads        | 394495 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 105016.0 |
+| # stars            | 997.0 |
 
 ## Links
 - [Homepage](https://github.com/thinkmill/jest-in-case#readme)

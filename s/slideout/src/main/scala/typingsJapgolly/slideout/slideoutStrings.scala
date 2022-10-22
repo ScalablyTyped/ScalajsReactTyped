@@ -1,55 +1,59 @@
 package typingsJapgolly.slideout
 
 import typingsJapgolly.slideout.mod.Events
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slideoutStrings {
-  @js.native
-  sealed trait beforeclose extends Events
   
   @js.native
-  sealed trait beforeopen extends Events
+  sealed trait beforeclose
+    extends StObject
+       with Events
+  inline def beforeclose: beforeclose = "beforeclose".asInstanceOf[beforeclose]
   
   @js.native
-  sealed trait close extends Events
+  sealed trait beforeopen
+    extends StObject
+       with Events
+  inline def beforeopen: beforeopen = "beforeopen".asInstanceOf[beforeopen]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait close
+    extends StObject
+       with Events
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait open extends Events
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait open
+    extends StObject
+       with Events
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait translate extends Events
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait translateend extends Events
+  sealed trait translate
+    extends StObject
+       with Events
+  inline def translate: translate = "translate".asInstanceOf[translate]
   
   @js.native
-  sealed trait translatestart extends Events
+  sealed trait translateend
+    extends StObject
+       with Events
+  inline def translateend: translateend = "translateend".asInstanceOf[translateend]
   
-  @scala.inline
-  def beforeclose: beforeclose = "beforeclose".asInstanceOf[beforeclose]
-  @scala.inline
-  def beforeopen: beforeopen = "beforeopen".asInstanceOf[beforeopen]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def translateend: translateend = "translateend".asInstanceOf[translateend]
-  @scala.inline
-  def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
+  @js.native
+  sealed trait translatestart
+    extends StObject
+       with Events
+  inline def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
 }
-

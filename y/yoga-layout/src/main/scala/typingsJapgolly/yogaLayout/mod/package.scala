@@ -1,9 +1,9 @@
-package typingsJapgolly.yogaLayout
+package typingsJapgolly.yogaLayout.mod
 
+import typingsJapgolly.yogaLayout.yogaLayoutInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type YogaExperimentalFeature = typingsJapgolly.yogaLayout.yogaLayoutNumbers.`0`
-}
+
+type YogaExperimentalFeature = `0`

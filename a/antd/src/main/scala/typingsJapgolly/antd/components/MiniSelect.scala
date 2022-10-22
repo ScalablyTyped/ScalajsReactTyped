@@ -1,38 +1,18 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.miniSelectMod.default
+import typingsJapgolly.antd.libSelectMod.SelectProps
+import typingsJapgolly.rcSelect.libSelectMod.DefaultOptionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
 object MiniSelect {
-  def apply(
-    props: js.Any with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[js.Any with js.Object, default, Unit, js.Any with js.Object] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  js.Any with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.miniSelectMod.default](this.componentImport)
-    f(__obj.asInstanceOf[js.Any with js.Object])(children: _*)
-  }
-  @JSImport("antd/lib/pagination/MiniSelect", JSImport.Default)
+  @JSImport("antd/lib/pagination/Select", "MiniSelect")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: MiniSelect.type): SharedBuilder_SelectProps144951122 = new SharedBuilder_SelectProps144951122(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SelectProps[Any, DefaultOptionType]): SharedBuilder_SelectProps144951122 = new SharedBuilder_SelectProps144951122(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

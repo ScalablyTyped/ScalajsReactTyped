@@ -1,213 +1,347 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`hide-children`
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hide
+import typingsJapgolly.arcgisJsApi.anon.FeatureReductionClusterPr
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GeoJSONLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
+     with BlendLayerProperties
+     with OrderedLayerProperties
      with ScaleRangeLayerProperties
-     with TemporalLayerProperties {
+     with FeatureEffectLayerProperties {
+  
   /**
     * Copyright information for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
+  
   /**
-    * The SQL where clause used to filter features on the client. Only the features that satisfy the definition expression are displayed in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html). Definition expressions may be set when a layer is constructed prior to it loading in the view or after it has been added to the map. If the definition expression is set after the layer has been added to the map, the view will automatically refresh itself to display the features that satisfy the new definition expression.
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#customParameters)
+    */
+  var customParameters: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * The SQL where clause used to filter features on the client.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#definitionExpression)
     */
   var definitionExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * The name of the layer's primary display field. The value of this property matches the name of one of the fields of the layer.
+    * The name of the layer's primary display field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#displayField)
     */
   var displayField: js.UndefOr[String] = js.undefined
+  
   /**
-    * Specifies how graphics are placed on the vertical axis (z). This property may only be used in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). See the [ElevationInfo sample](https://developers.arcgis.com/javascript/latest/sample-code/scene-elevationinfo/index.html) for an example of how this property may be used.
+    * Indicates if the layer is editable.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#editingEnabled)
+    */
+  var editingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#elevationInfo)
     */
   var elevationInfo: js.UndefOr[GeoJSONLayerElevationInfo] = js.undefined
+  
   /**
-    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  There are two types of feature reduction: `selection` and `cluster`.
-    *   * [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen. This has been available since version 4.4.
-    *   * [Cluster](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionCluster.html) spatially groups points in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) into _clusters_. The size of each cluster is proportional to the number of features within the cluster. This has been available since version 4.14.
+    * Configures the method for reducing the number of point features in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
+  var featureReduction: js.UndefOr[
+    FeatureReductionClusterPr | typingsJapgolly.arcgisJsApi.anon.FeatureReductionSelection
+  ] = js.undefined
+  
   /**
     * An array of fields in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#fields)
     */
   var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
+  
   /**
-    * The geometry type of features in the layer. All features must be of the same type.
+    * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#geometryType)
     */
   var geometryType: js.UndefOr[point | polygon | polyline | multipoint] = js.undefined
+  
   /**
-    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html). Use this property to specify labeling properties for the layer such as label expression, placement, and size.  Multiple Label classes with different `where` clauses can be used to define several labels with varying styles on the same feature. Likewise, multiple label classes may be used to label different types of features (for example blue labels for lakes and green labels for parks).
-    * > **Known Limitations**
-    *   * Currently only one [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) is supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#labelingInfo)
     */
   var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
+  
   /**
-    * Indicates whether to display labels for this layer. If `true`, labels will appear as defined in the [labelingInfo](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#labelingInfo) property.
-    * > **Known Limitations**
-    *   * Currently 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) only support one [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html) per feature.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#labelsVisible)
+    * Indicates whether to display labels for this layer.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#labelsVisible)
     */
   var labelsVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicates whether the layer will be included in the legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#legendEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#legendEnabled)
     */
   var legendEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#fields) containing a unique value or identifier for each feature in the layer. `id` property of the feature object in the GeoJSON will be used as ObjectID. If `id` property is not present and `objectIDField` is not specified, `ObjectID` field will be generated for each feature.
+    * The name of a [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#fields) containing a unique value or identifier for each feature in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#objectIdField)
     */
   var objectIdField: js.UndefOr[String] = js.undefined
+  
   /**
-    * Indicates whether to display popups when features in the layer are clicked. The layer needs to have a [popupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupTemplate) to define what information should be displayed in the popup. Alternatively, a default popup template may be automatically used if [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
+    * An array of field names from the geoJSON file to include with each feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupEnabled)
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#outFields)
+    */
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Indicates whether to display popups when features in the layer are clicked.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupEnabled)
     */
   var popupEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The popup template for the layer. When set on the layer, the `popupTemplate` allows users to access attributes and display their values in the [view's popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#popup) when a feature is selected using text and/or charts. See the [PopupTemplate sample](https://developers.arcgis.com/javascript/latest/sample-code/intro-popuptemplate/index.html) for an example of how [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) interacts with a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html).  A default popup template is automatically used if no `popupTemplate` has been defined when [Popup.defaultPopupTemplateEnabled](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#defaultPopupTemplateEnabled) is set to `true`.
+    * The popup template for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#popupTemplate)
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  
   /**
-    * The renderer assigned to the layer. The renderer defines how to visualize each feature in the layer. Depending on the renderer type, features may be visualized with the same symbol, or with varying symbols based on the values of provided attribute fields or functions. If not specified, a default renderer will be generated based on the geometry type.
+    * Refresh interval of the layer in minutes.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#refreshInterval)
+    */
+  var refreshInterval: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#renderer)
     */
   var renderer: js.UndefOr[RendererProperties] = js.undefined
+  
   /**
-    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). When `true`, screen sized objects such as [icons](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html), [labels](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LabelSymbol3D.html) or [callouts](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-callouts-Callout3D.html) integrate better in the 3D scene by applying a certain perspective projection to the sizing of features. This only applies when using a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).  `layer.screenSizePerspectiveEnabled = true`  ![screen-size-perspective](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols-screenSize-perspective.png)  `layer.screenSizePerspectiveEnabled = false`  ![no-screen-size-perspective](https://developers.arcgis.com/javascript/assets/img/apiref/symbols/symbols-no-screenSize-perspective.png)
-    * > **Known Limitations**  Screen size perspective is currently not optimized for situations where the camera is very near the ground, or for scenes with point features located far from the ground surface. In these cases it may be better to turn off screen size perspective. As screen size perspective changes the size based on distance to the camera, it should be set to false when using {@link module:esri/renderers/Renderer#SizeVisualVariable size visual variables}.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#screenSizePerspectiveEnabled)
+    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#screenSizePerspectiveEnabled)
     */
   var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The spatial reference of the layer. The default value is WGS84. This property can be set explicitly to project the longitude and latitude coordinates when the layer parses the GeoJSON file. While not required, explicitly setting the spatial reference of the layer will improve the performance when projecting to a spatial reference other than the one used by the coordinates in the raw data.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#spatialReference)
+    * The spatial reference of the layer.
     *
     * @default SpatialReference.WGS84
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * An array of feature templates defined in the layer. See [ArcGIS Pro subtypes document](https://pro.arcgis.com/en/pro-app/help/data/geodatabases/overview/an-overview-of-subtypes.htm).
+    * An array of feature templates defined in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#templates)
     */
   var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
+  
+  /**
+    * The layer's time extent.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#timeExtent)
+    */
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
+  
+  /**
+    * TimeInfo provides information such as date fields that store [start](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#startField) and [end](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#endField) time for each feature and the [fullTimeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TimeInfo.html#fullTimeExtent) for the layer.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#timeInfo)
+    */
+  var timeInfo: js.UndefOr[TimeInfoProperties] = js.undefined
+  
+  /**
+    * A temporary offset of the time data based on a certain [TimeInterval](https://developers.arcgis.com/javascript/latest/api-reference/esri-TimeInterval.html).
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#timeOffset)
+    */
+  var timeOffset: js.UndefOr[TimeIntervalProperties] = js.undefined
+  
   /**
     * The URL of the GeoJSON file.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#url)
     */
   var url: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Determines if the layer will update its temporal data based on the view's [timeExtent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#timeExtent).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#useViewTime)
+    */
+  var useViewTime: js.UndefOr[Boolean] = js.undefined
 }
-
 object GeoJSONLayerProperties {
-  @scala.inline
-  def apply(
-    copyright: String = null,
-    definitionExpression: String = null,
-    displayField: String = null,
-    elevationInfo: GeoJSONLayerElevationInfo = null,
-    featureReduction: FeatureReductionClusterProperties | FeatureReductionSelectionProperties = null,
-    fields: js.Array[FieldProperties] = null,
-    fullExtent: ExtentProperties = null,
-    geometryType: point | polygon | polyline | multipoint = null,
-    id: String = null,
-    labelingInfo: js.Array[LabelClassProperties] = null,
-    labelsVisible: js.UndefOr[Boolean] = js.undefined,
-    legendEnabled: js.UndefOr[Boolean] = js.undefined,
-    listMode: show | hide | `hide-children` = null,
-    maxScale: Int | Double = null,
-    minScale: Int | Double = null,
-    objectIdField: String = null,
-    opacity: Int | Double = null,
-    popupEnabled: js.UndefOr[Boolean] = js.undefined,
-    popupTemplate: PopupTemplateProperties = null,
-    renderer: RendererProperties = null,
-    screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined,
-    spatialReference: SpatialReferenceProperties = null,
-    templates: js.Array[FeatureTemplateProperties] = null,
-    timeExtent: TimeExtentProperties = null,
-    timeInfo: TimeInfoProperties = null,
-    timeOffset: TimeIntervalProperties = null,
-    title: String = null,
-    url: String = null,
-    useViewTime: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GeoJSONLayerProperties = {
+  
+  inline def apply(): GeoJSONLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (definitionExpression != null) __obj.updateDynamic("definitionExpression")(definitionExpression.asInstanceOf[js.Any])
-    if (displayField != null) __obj.updateDynamic("displayField")(displayField.asInstanceOf[js.Any])
-    if (elevationInfo != null) __obj.updateDynamic("elevationInfo")(elevationInfo.asInstanceOf[js.Any])
-    if (featureReduction != null) __obj.updateDynamic("featureReduction")(featureReduction.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (labelingInfo != null) __obj.updateDynamic("labelingInfo")(labelingInfo.asInstanceOf[js.Any])
-    if (!js.isUndefined(labelsVisible)) __obj.updateDynamic("labelsVisible")(labelsVisible.asInstanceOf[js.Any])
-    if (!js.isUndefined(legendEnabled)) __obj.updateDynamic("legendEnabled")(legendEnabled.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (maxScale != null) __obj.updateDynamic("maxScale")(maxScale.asInstanceOf[js.Any])
-    if (minScale != null) __obj.updateDynamic("minScale")(minScale.asInstanceOf[js.Any])
-    if (objectIdField != null) __obj.updateDynamic("objectIdField")(objectIdField.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(popupEnabled)) __obj.updateDynamic("popupEnabled")(popupEnabled.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(screenSizePerspectiveEnabled)) __obj.updateDynamic("screenSizePerspectiveEnabled")(screenSizePerspectiveEnabled.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (templates != null) __obj.updateDynamic("templates")(templates.asInstanceOf[js.Any])
-    if (timeExtent != null) __obj.updateDynamic("timeExtent")(timeExtent.asInstanceOf[js.Any])
-    if (timeInfo != null) __obj.updateDynamic("timeInfo")(timeInfo.asInstanceOf[js.Any])
-    if (timeOffset != null) __obj.updateDynamic("timeOffset")(timeOffset.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useViewTime)) __obj.updateDynamic("useViewTime")(useViewTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeoJSONLayerProperties]
   }
+  
+  extension [Self <: GeoJSONLayerProperties](x: Self) {
+    
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    
+    inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
+    
+    inline def setCustomParametersUndefined: Self = StObject.set(x, "customParameters", js.undefined)
+    
+    inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
+    
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    
+    inline def setEditingEnabled(value: Boolean): Self = StObject.set(x, "editingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setEditingEnabledUndefined: Self = StObject.set(x, "editingEnabled", js.undefined)
+    
+    inline def setElevationInfo(value: GeoJSONLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    
+    inline def setFeatureReduction(value: FeatureReductionClusterPr | typingsJapgolly.arcgisJsApi.anon.FeatureReductionSelection): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
+    
+    inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setGeometryType(value: point | polygon | polyline | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    
+    inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    
+    inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
+    
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value*))
+    
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    
+    inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
+    
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
+    
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+    
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    
+    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
+    
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setTemplates(value: js.Array[FeatureTemplateProperties]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    
+    inline def setTemplatesVarargs(value: FeatureTemplateProperties*): Self = StObject.set(x, "templates", js.Array(value*))
+    
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    
+    inline def setTimeInfo(value: TimeInfoProperties): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTimeInfoUndefined: Self = StObject.set(x, "timeInfo", js.undefined)
+    
+    inline def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
+    
+    inline def setUseViewTimeUndefined: Self = StObject.set(x, "useViewTime", js.undefined)
+  }
 }
-

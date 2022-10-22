@@ -1,53 +1,51 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactType extends js.Object
-
+sealed trait ContactType extends StObject
 @JSImport("evernote", "Types.ContactType")
 @js.native
-object ContactType extends js.Object {
-  @js.native
-  sealed trait EMAIL extends ContactType
-  
-  @js.native
-  sealed trait EVERNOTE extends ContactType
-  
-  @js.native
-  sealed trait FACEBOOK extends ContactType
-  
-  @js.native
-  sealed trait LINKEDIN extends ContactType
-  
-  @js.native
-  sealed trait SMS extends ContactType
-  
-  @js.native
-  sealed trait TWITTER extends ContactType
+object ContactType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactType with Double] = js.native
-  /* 4 */ @js.native
-  object EMAIL extends TopLevel[EMAIL with Double]
+  def apply(value: Double): js.UndefOr[ContactType & Double] = js.native
   
-  /* 1 */ @js.native
-  object EVERNOTE extends TopLevel[EVERNOTE with Double]
+  @js.native
+  sealed trait EMAIL
+    extends StObject
+       with ContactType
+  /* 4 */ val EMAIL: typingsJapgolly.evernote.mod.Types.ContactType.EMAIL & Double = js.native
   
-  /* 3 */ @js.native
-  object FACEBOOK extends TopLevel[FACEBOOK with Double]
+  @js.native
+  sealed trait EVERNOTE
+    extends StObject
+       with ContactType
+  /* 1 */ val EVERNOTE: typingsJapgolly.evernote.mod.Types.ContactType.EVERNOTE & Double = js.native
   
-  /* 6 */ @js.native
-  object LINKEDIN extends TopLevel[LINKEDIN with Double]
+  @js.native
+  sealed trait FACEBOOK
+    extends StObject
+       with ContactType
+  /* 3 */ val FACEBOOK: typingsJapgolly.evernote.mod.Types.ContactType.FACEBOOK & Double = js.native
   
-  /* 2 */ @js.native
-  object SMS extends TopLevel[SMS with Double]
+  @js.native
+  sealed trait LINKEDIN
+    extends StObject
+       with ContactType
+  /* 6 */ val LINKEDIN: typingsJapgolly.evernote.mod.Types.ContactType.LINKEDIN & Double = js.native
   
-  /* 5 */ @js.native
-  object TWITTER extends TopLevel[TWITTER with Double]
+  @js.native
+  sealed trait SMS
+    extends StObject
+       with ContactType
+  /* 2 */ val SMS: typingsJapgolly.evernote.mod.Types.ContactType.SMS & Double = js.native
   
+  @js.native
+  sealed trait TWITTER
+    extends StObject
+       with ContactType
+  /* 5 */ val TWITTER: typingsJapgolly.evernote.mod.Types.ContactType.TWITTER & Double = js.native
 }
-

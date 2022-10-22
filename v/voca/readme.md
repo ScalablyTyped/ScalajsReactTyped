@@ -10,10 +10,10 @@ The ultimate JavaScript string library
 | ------------------ | :-------------: |
 | Full name          | voca |
 | Keywords           | string, sprintf, trim, truncate, pad, slugify, latinise, escape, word, wrap, case, strip |
-| # releases         | 1 |
-| # dependents       | 67 |
-| # downloads        | 1902309 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 489554.3333333333 |
+| # stars            | 3462.0 |
 
 ## Links
 - [Homepage](https://vocajs.com)

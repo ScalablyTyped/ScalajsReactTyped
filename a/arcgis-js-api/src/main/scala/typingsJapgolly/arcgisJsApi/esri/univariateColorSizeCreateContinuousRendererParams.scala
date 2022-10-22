@@ -1,175 +1,258 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`2d`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`3d-flat`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric-uniform`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`3d-volumetric`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.above
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.below
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait univariateColorSizeCreateContinuousRendererParams extends Object {
-  /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
-    *
-    * @default gray
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
+trait univariateColorSizeCreateContinuousRendererParams
+  extends StObject
+     with Object {
+  
   /**
     * Options for configuring the color portion of the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var colorOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsColorOptions] = js.undefined
+  
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value and features that do not fall within the configured data range.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization. This property is ignored if a `valueExpression` is used.
+    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var field: js.UndefOr[String] = js.undefined
+  
   /**
     * The layer for which the visual variable is generated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
   /**
-    * A custom maximum value set by the user. Use this in conjunction with `minValue` to generate statistics between lower and upper bounds. This will be the uppermost stop in the returned visual variables.
+    * Provides options for configuring the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) representing the renderer generated from this method.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var legendOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsLegendOptions] = js.undefined
+  
+  /**
+    * A custom maximum value set by the user.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   /**
-    * A custom minimum value set by the user. Use this in conjunction with `maxValue` to generate statistics between lower and upper bounds. This will be the lowest stop in the returned visual variables.
+    * A custom minimum value set by the user.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var minValue: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The name of the field to normalize the values of the given `field`. Providing a normalization field helps minimize some visualization errors and standardizes the data so all features are visualized with minimal bias due to area differences or count variation. This option is commonly used when visualizing densities.
+    * The name of the field to normalize the values of the given `field`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var normalizationField: js.UndefOr[String] = js.undefined
+  
   /**
-    * Indicates whether symbol sizes should vary based on view scale. When set, a valid [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) instance must be provided in the `view` parameter. This option is not supported for 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * Allows for cancelable requests.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
+  /**
+    * Indicates whether symbol sizes should vary based on view scale.
     *
-    * @default false
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Options for configuring the size portion of the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var sizeOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsSizeOptions] = js.undefined
+  
   /**
     * A SQL expression evaluating to a number.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var sqlExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * A SQL where clause used to filter features for the statistics query. For example, this is useful in situations where you want to avoid dividing by zero as is the case with creating a predominance visualization.
+    * A SQL where clause used to filter features for the statistics query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var sqlWhere: js.UndefOr[String] = js.undefined
+  
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. If statistics for the field have already been generated, then pass the object here to avoid making a second statistics query to the server.
+    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
+  
   /**
-    * The type of symbol to generate. This depends on the view in which you are working and the desired visualization. Possible values are described below.
+    * Options for setting symbols for the `above-and-below` theme.
     *
-    * | Value | Description |
-    * | ----- | ----------- |
-    * | 2d | Generates a visualization using 2D symbols such as [SimpleMarkerSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleMarkerSymbol.html), [SimpleLineSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleLineSymbol.html), or [SimpleFillSymbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-SimpleFillSymbol.html). Use this option if generating a visualization for data in a [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). |
-    * | 3d-flat | Generates a visualization using 3D symbols with flat symbol layers such as [IconSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-IconSymbol3DLayer.html), [LineSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-LineSymbol3DLayer.html), or [FillSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-FillSymbol3DLayer.html). Use this option if generating a 2D visualization for data in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). |
-    * | 3d-volumetric | Generates a visualization using 3D symbols with volumetric symbol layers such as [ObjectSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html), [PathSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-PathSymbol3DLayer.html), or [ExtrudeSymbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ExtrudeSymbol3DLayer.html). Use this option if generating a 3D visualization for data in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and only the symbol's height should be variable, for example with cylinders. A SceneView instance must be provided to the `view` parameter if this option is used. |
-    * | 3d-volumetric-uniform | Generates a visualization using uniformly sized 3D symbols with volumetric symbol layers. Use this option if generating a 3D visualization for data in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and the symbol should be sizes uniformly, for example with spheres. A SceneView instance must be provided to the `view` parameter if this option is used. |
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var symbolOptions: js.UndefOr[univariateColorSizeCreateContinuousRendererParamsSymbolOptions] = js.undefined
+  
+  /**
+    * The type of symbol to generate.
     *
     * @default 2d
-    */
-  var symbolType: js.UndefOr[String] = js.undefined
-  /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number. This expression can reference field values using the `$feature` global variable. This property overrides the `field` property and therefore is used instead of an input `field` value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
+  
+  /**
+    * Sets the size stops and colors based on meaningful data values.
+    *
+    * @default high-to-low
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
+    */
+  var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below`] = js.undefined
+  
+  /**
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var valueExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * Text describing the value returned from the `valueExpression`. This is used by the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget.
+    * Text describing the value returned from the `valueExpression`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-univariateColorSize.html#createContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-univariateColorSize.html#createContinuousRenderer)
     */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
+  
   /**
-    * The view where the input layer is rendered. This method inspects the view's background (i.e. basemap, web map background, or view container) to determine optimal colors for the output renderer. This parameter should always be set in practice, but if not provided this method will assume the generated renderer will display on a light background. This parameter is required when creating renderers using a `valueExpression` or for renderers intended for display in a SceneView.
+    * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
   var view: js.UndefOr[View] = js.undefined
 }
-
 object univariateColorSizeCreateContinuousRendererParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    basemap: String | Basemap = null,
-    colorOptions: univariateColorSizeCreateContinuousRendererParamsColorOptions = null,
-    defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined,
-    field: String = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    normalizationField: String = null,
-    sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
-    sizeOptions: univariateColorSizeCreateContinuousRendererParamsSizeOptions = null,
-    sqlExpression: String = null,
-    sqlWhere: String = null,
-    statistics: SummaryStatisticsResult = null,
-    symbolType: String = null,
-    valueExpression: String = null,
-    valueExpressionTitle: String = null,
-    view: View = null
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): univariateColorSizeCreateContinuousRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultSymbolEnabled)) __obj.updateDynamic("defaultSymbolEnabled")(defaultSymbolEnabled.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
-    if (!js.isUndefined(sizeOptimizationEnabled)) __obj.updateDynamic("sizeOptimizationEnabled")(sizeOptimizationEnabled.asInstanceOf[js.Any])
-    if (sizeOptions != null) __obj.updateDynamic("sizeOptions")(sizeOptions.asInstanceOf[js.Any])
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (symbolType != null) __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParams]
   }
+  
+  extension [Self <: univariateColorSizeCreateContinuousRendererParams](x: Self) {
+    
+    inline def setColorOptions(value: univariateColorSizeCreateContinuousRendererParamsColorOptions): Self = StObject.set(x, "colorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setColorOptionsUndefined: Self = StObject.set(x, "colorOptions", js.undefined)
+    
+    inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
+    
+    inline def setSizeOptions(value: univariateColorSizeCreateContinuousRendererParamsSizeOptions): Self = StObject.set(x, "sizeOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSizeOptionsUndefined: Self = StObject.set(x, "sizeOptions", js.undefined)
+    
+    inline def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
+    
+    inline def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
+    
+    inline def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
+    
+    inline def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
+    
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    
+    inline def setSymbolOptions(value: univariateColorSizeCreateContinuousRendererParamsSymbolOptions): Self = StObject.set(x, "symbolOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolOptionsUndefined: Self = StObject.set(x, "symbolOptions", js.undefined)
+    
+    inline def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    
+    inline def setTheme(value: `high-to-low` | above | below | `above-and-below`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

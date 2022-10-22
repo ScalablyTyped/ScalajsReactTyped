@@ -1,43 +1,29 @@
 package typingsJapgolly.blueprintjsTable.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsTable.loadableContentMod.ILoadableContentProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmCommonLoadableContentMod.ILoadableContentProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LoadableContent {
-  def apply(
-    loading: Boolean,
-    variableLength: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ILoadableContentProps, 
-    typingsJapgolly.blueprintjsTable.loadableContentMod.LoadableContent, 
-    Unit, 
-    ILoadableContentProps
-  ] = {
-    val __obj = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(variableLength)) __obj.updateDynamic("variableLength")(variableLength.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.loadableContentMod.ILoadableContentProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.loadableContentMod.LoadableContent](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.loadableContentMod.ILoadableContentProps])(children: _*)
+  inline def apply(loading: Boolean): Builder = {
+    val __props = js.Dynamic.literal(loading = loading.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ILoadableContentProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/common/loadableContent", "LoadableContent")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmCommonLoadableContentMod.LoadableContent] {
+    
+    inline def variableLength(value: Boolean): this.type = set("variableLength", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ILoadableContentProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

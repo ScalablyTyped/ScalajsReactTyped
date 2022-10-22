@@ -1,55 +1,46 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.AnonExpand
 import typingsJapgolly.officeJs.Excel.Interfaces.RowColumnPivotHierarchyData
 import typingsJapgolly.officeJs.Excel.Interfaces.RowColumnPivotHierarchyLoadOptions
 import typingsJapgolly.officeJs.Excel.Interfaces.RowColumnPivotHierarchyUpdateData
 import typingsJapgolly.officeJs.OfficeExtension.ClientObject
 import typingsJapgolly.officeJs.OfficeExtension.UpdateOptions
+import typingsJapgolly.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the Excel RowColumnPivotHierarchy.
   *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-@JSGlobal("Excel.RowColumnPivotHierarchy")
 @js.native
-class RowColumnPivotHierarchy () extends ClientObject {
+trait RowColumnPivotHierarchy
+  extends StObject
+     with ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_RowColumnPivotHierarchy: RequestContext = js.native
+  
   /**
-    *
     * Returns the PivotFields associated with the RowColumnPivotHierarchy.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val fields: PivotFieldCollection = js.native
+  
   /**
+    * ID of the RowColumnPivotHierarchy.
     *
-    * Id of the RowColumnPivotHierarchy.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   val id: String = js.native
-  /**
-    *
-    * Name of the RowColumnPivotHierarchy.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var name: String = js.native
-  /**
-    *
-    * Position of the RowColumnPivotHierarchy.
-    *
-    * [Api set: ExcelApi 1.8]
-    */
-  var position: Double = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -57,17 +48,28 @@ class RowColumnPivotHierarchy () extends ClientObject {
     */
   def load(): RowColumnPivotHierarchy = js.native
   def load(options: RowColumnPivotHierarchyLoadOptions): RowColumnPivotHierarchy = js.native
-  def load(propertyNamesAndPaths: AnonExpand): RowColumnPivotHierarchy = js.native
+  def load(propertyNamesAndPaths: Expand): RowColumnPivotHierarchy = js.native
   def load(propertyNames: String): RowColumnPivotHierarchy = js.native
   def load(propertyNames: js.Array[String]): RowColumnPivotHierarchy = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
+  
+  /**
+    * Name of the RowColumnPivotHierarchy.
     *
     * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  var name: String = js.native
+  
+  /**
+    * Position of the RowColumnPivotHierarchy.
     *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.RowColumnPivotHierarchy): void`
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  var position: Double = js.native
+  
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -75,17 +77,18 @@ class RowColumnPivotHierarchy () extends ClientObject {
   def set(properties: RowColumnPivotHierarchyUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: RowColumnPivotHierarchy): Unit = js.native
+  
   /**
-    *
     * Reset the RowColumnPivotHierarchy back to its default values.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   def setToDefault(): Unit = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.RowColumnPivotHierarchy object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.RowColumnPivotHierarchyData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): RowColumnPivotHierarchyData = js.native
 }
-

@@ -1,37 +1,42 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SelectionCollectionSettings
-  extends /**
-	 * Option for SelectionCollectionSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var multipleSelection: js.UndefOr[Boolean] = js.undefined
-  var owner: js.UndefOr[js.Any] = js.undefined
+  
+  var owner: js.UndefOr[Any] = js.undefined
+  
   var subscribers: js.UndefOr[SelectionCollectionSettingsSubscribers] = js.undefined
 }
-
 object SelectionCollectionSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for SelectionCollectionSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    multipleSelection: js.UndefOr[Boolean] = js.undefined,
-    owner: js.Any = null,
-    subscribers: SelectionCollectionSettingsSubscribers = null
-  ): SelectionCollectionSettings = {
+  
+  inline def apply(): SelectionCollectionSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(multipleSelection)) __obj.updateDynamic("multipleSelection")(multipleSelection.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (subscribers != null) __obj.updateDynamic("subscribers")(subscribers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionCollectionSettings]
   }
+  
+  extension [Self <: SelectionCollectionSettings](x: Self) {
+    
+    inline def setMultipleSelection(value: Boolean): Self = StObject.set(x, "multipleSelection", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleSelectionUndefined: Self = StObject.set(x, "multipleSelection", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSubscribers(value: SelectionCollectionSettingsSubscribers): Self = StObject.set(x, "subscribers", value.asInstanceOf[js.Any])
+    
+    inline def setSubscribersUndefined: Self = StObject.set(x, "subscribers", js.undefined)
+  }
 }
-

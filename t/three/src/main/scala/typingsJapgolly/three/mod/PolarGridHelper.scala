@@ -1,118 +1,28 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcUtilsMod.ColorRepresentation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PolarGridHelper")
 @js.native
-class PolarGridHelper protected ()
-  extends typingsJapgolly.three.polarGridHelperMod.PolarGridHelper {
-  def this(radius: Double, radials: Double, circles: Double, divisions: Double) = this()
-  def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: String) = this()
-  def this(radius: Double, radials: Double, circles: Double, divisions: Double, color1: Double) = this()
+open class PolarGridHelper protected ()
+  extends typingsJapgolly.three.srcThreeMod.PolarGridHelper {
+  /**
+    * @param [radius=10]
+    * @param [radials=16]
+    * @param [circles=8]
+    * @param [divisions=64]
+    * @param [color1=0x444444]
+    * @param [color2=0x888888]
+    */
   def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: typingsJapgolly.three.colorMod.Color
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: String
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: Double
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: js.UndefOr[scala.Nothing],
-    color2: typingsJapgolly.three.colorMod.Color
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: String,
-    color2: String
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: String,
-    color2: Double
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: String,
-    color2: typingsJapgolly.three.colorMod.Color
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: Double,
-    color2: String
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: Double,
-    color2: Double
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: Double,
-    color2: typingsJapgolly.three.colorMod.Color
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: typingsJapgolly.three.colorMod.Color,
-    color2: String
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: typingsJapgolly.three.colorMod.Color,
-    color2: Double
-  ) = this()
-  def this(
-    radius: Double,
-    radials: Double,
-    circles: Double,
-    divisions: Double,
-    color1: typingsJapgolly.three.colorMod.Color,
-    color2: typingsJapgolly.three.colorMod.Color
+    radius: js.UndefOr[Double],
+    radials: js.UndefOr[Double],
+    circles: js.UndefOr[Double],
+    divisions: js.UndefOr[Double],
+    color1: js.UndefOr[ColorRepresentation],
+    color2: js.UndefOr[ColorRepresentation]
   ) = this()
 }
-

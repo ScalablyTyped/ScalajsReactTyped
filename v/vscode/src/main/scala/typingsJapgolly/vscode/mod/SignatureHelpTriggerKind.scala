@@ -1,44 +1,42 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SignatureHelpTriggerKind extends js.Object
-
+sealed trait SignatureHelpTriggerKind extends StObject
 @JSImport("vscode", "SignatureHelpTriggerKind")
 @js.native
-object SignatureHelpTriggerKind extends js.Object {
-  /**
-  		 * Signature help was triggered by the cursor moving or by the document content changing.
-  		 */
-  @js.native
-  sealed trait ContentChange extends SignatureHelpTriggerKind
-  
-  /**
-  		 * Signature help was invoked manually by the user or by a command.
-  		 */
-  @js.native
-  sealed trait Invoke extends SignatureHelpTriggerKind
-  
-  /**
-  		 * Signature help was triggered by a trigger character.
-  		 */
-  @js.native
-  sealed trait TriggerCharacter extends SignatureHelpTriggerKind
+object SignatureHelpTriggerKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind with Double] = js.native
-  /* 3 */ @js.native
-  object ContentChange extends TopLevel[ContentChange with Double]
+  def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object Invoke extends TopLevel[Invoke with Double]
+  /**
+    * Signature help was triggered by the cursor moving or by the document content changing.
+    */
+  @js.native
+  sealed trait ContentChange
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 3 */ val ContentChange: typingsJapgolly.vscode.mod.SignatureHelpTriggerKind.ContentChange & Double = js.native
   
-  /* 2 */ @js.native
-  object TriggerCharacter extends TopLevel[TriggerCharacter with Double]
+  /**
+    * Signature help was invoked manually by the user or by a command.
+    */
+  @js.native
+  sealed trait Invoke
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 1 */ val Invoke: typingsJapgolly.vscode.mod.SignatureHelpTriggerKind.Invoke & Double = js.native
   
+  /**
+    * Signature help was triggered by a trigger character.
+    */
+  @js.native
+  sealed trait TriggerCharacter
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 2 */ val TriggerCharacter: typingsJapgolly.vscode.mod.SignatureHelpTriggerKind.TriggerCharacter & Double = js.native
 }
-

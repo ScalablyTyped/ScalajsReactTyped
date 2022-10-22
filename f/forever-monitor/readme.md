@@ -10,15 +10,15 @@ Core forever process monitor
 | ------------------ | :-------------: |
 | Full name          | forever-monitor |
 | Keywords           | fault tolerant, sysadmin, tools |
-| # releases         | 0 |
-| # dependents       | 170 |
-| # downloads        | 7872239 |
-| # stars            | 28 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 831261.6666666666 |
+| # stars            | 1137.0 |
 
 ## Links
-- [Homepage](https://github.com/nodejitsu/forever-monitor#readme)
-- [Bugs](https://github.com/nodejitsu/forever-monitor/issues)
-- [Repository](https://github.com/nodejitsu/forever-monitor)
+- [Homepage](https://github.com/foreversd/forever-monitor#readme)
+- [Bugs](https://github.com/foreversd/forever-monitor/issues)
+- [Repository](https://github.com/foreversd/forever-monitor)
 - [Npm](https://www.npmjs.com/package/forever-monitor)
     
 

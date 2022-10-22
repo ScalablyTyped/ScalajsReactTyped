@@ -1,27 +1,28 @@
 package typingsJapgolly.parse.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.parse.mod._Global_.Parse.Attributes
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.AfterDeleteRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.AfterFindRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.AfterSaveRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.BeforeDeleteRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.BeforeFindRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.BeforeSaveRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.FunctionRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.HTTPOptions
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.HttpResponse
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.JobRequest
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.Params
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.RunOptions
-import typingsJapgolly.parse.mod._Global_.Parse.Cloud.TriggerRequest
-import typingsJapgolly.parse.parseStrings.define
-import typingsJapgolly.parse.parseStrings.run
-import typingsJapgolly.std.Parameters
+import typingsJapgolly.parse.anon.Instantiable
+import typingsJapgolly.parse.mod.global.Parse.Attributes
+import typingsJapgolly.parse.mod.global.Parse.Cloud.AfterDeleteRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.AfterFindRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.AfterSaveRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.BeforeDeleteRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.BeforeFindRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.BeforeSaveRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.FileTriggerRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.FunctionRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.HTTPOptions
+import typingsJapgolly.parse.mod.global.Parse.Cloud.HttpResponse
+import typingsJapgolly.parse.mod.global.Parse.Cloud.JobRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.Params
+import typingsJapgolly.parse.mod.global.Parse.Cloud.RunOptions
+import typingsJapgolly.parse.mod.global.Parse.Cloud.TriggerRequest
+import typingsJapgolly.parse.mod.global.Parse.Cloud.Validator
+import typingsJapgolly.std.PromiseLike
 import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains functions for calling and declaring
@@ -30,44 +31,416 @@ import scala.scalajs.js.annotation._
   *   Some functions are only available from Cloud Code.
   * </em></strong></p>
   */
-@JSImport("parse", "Cloud")
-@js.native
-object Cloud extends js.Object {
+object Cloud {
+  
+  @JSImport("parse", "Cloud")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
     *
     *     import Buffer = require("buffer").Buffer;
     */
-  var HTTPOptions: Instantiable0[typingsJapgolly.parse.mod._Global_.Parse.Cloud.HTTPOptions] = js.native
-  def afterDelete(arg1: js.Any): Unit = js.native
-  def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
-  def afterFind(arg1: js.Any): Unit = js.native
-  def afterFind(arg1: js.Any, func: js.Function1[/* request */ AfterFindRequest, _]): Unit = js.native
-  def afterSave(arg1: js.Any): Unit = js.native
-  def afterSave(arg1: js.Any, func: js.Function1[/* request */ AfterSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
-  def beforeDelete(arg1: js.Any): Unit = js.native
-  def beforeDelete(arg1: js.Any, func: js.Function1[/* request */ BeforeDeleteRequest, js.Promise[Unit] | Unit]): Unit = js.native
-  def beforeFind(arg1: js.Any): Unit = js.native
-  def beforeFind(
-    arg1: js.Any,
+  @JSImport("parse", "Cloud.HTTPOptions")
+  @js.native
+  def HTTPOptions: Instantiable0[typingsJapgolly.parse.mod.global.Parse.Cloud.HTTPOptions] = js.native
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("parse", "Cloud.HTTPOptions")
+  @js.native
+  open class HTTPOptionsCls ()
+    extends StObject
+       with HTTPOptions {
+    
+    /**
+      * The url to send the request to.
+      */
+    /* CompleteClass */
+    var url: String = js.native
+  }
+  
+  inline def HTTPOptions_=(x: Instantiable0[HTTPOptions]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HTTPOptions")(x.asInstanceOf[js.Any])
+  
+  // Read preference describes how MongoDB driver route read operations to the members of a replica set.
+  @JSImport("parse", "Cloud.ReadPreferenceOption")
+  @js.native
+  object ReadPreferenceOption extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: String): js.UndefOr[typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption & String] = js.native
+    
+    /* "NEAREST" */ val Nearest: typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Nearest & String = js.native
+    
+    /* "PRIMARY" */ val Primary: typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Primary & String = js.native
+    
+    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred & String = js.native
+    
+    /* "SECONDARY" */ val Secondary: typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption.Secondary & String = js.native
+    
+    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typingsJapgolly.parse.mod.global.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred & String = js.native
+  }
+  
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")().asInstanceOf[Unit]
+  inline def afterDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterDeleteFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterFindRequest[T], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterFindRequest[T], Any], validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: js.Function1[/* request */ AfterFindRequest[T], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterFindRequest[T], Any],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")().asInstanceOf[Unit]
+  inline def afterLogin(
     func: js.Function1[
-      /* request */ BeforeFindRequest, 
-      (js.Promise[
-        typingsJapgolly.parse.mod._Global_.Parse.Query[typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes]] | Unit
-      ]) | typingsJapgolly.parse.mod._Global_.Parse.Query[typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes]] | Unit
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.User[Attributes]], 
+      PromiseLike[Unit] | Unit
     ]
-  ): Unit = js.native
-  def beforeLogin(): Unit = js.native
-  def beforeLogin(func: js.Function1[/* request */ TriggerRequest, _]): Unit = js.native
-  def beforeSave(arg1: js.Any): Unit = js.native
-  def beforeSave(arg1: js.Any, func: js.Function1[/* request */ BeforeSaveRequest, js.Promise[Unit] | Unit]): Unit = js.native
-  def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], _]): Unit = js.native
-  @JSName("define")
-  def define_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ define with Parameters[T], 
-    _
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.User[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.User[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogin(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogin")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterLogout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")().asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.Session[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.Session[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.Session[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterLogout(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterLogout")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ AfterSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def afterSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")().asInstanceOf[Unit]
+  inline def afterSaveFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def afterSaveFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def afterSaveFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("afterSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeDeleteRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDelete[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDelete")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def beforeDeleteFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")().asInstanceOf[Unit]
+  inline def beforeDeleteFile(func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(
+    func: js.Function1[/* request */ FileTriggerRequest, PromiseLike[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeDeleteFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeDeleteFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[
+      /* request */ BeforeFindRequest[T], 
+      (js.Promise[typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit]) | typingsJapgolly.parse.mod.global.Parse.Query[T] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeFind[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeFind")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def beforeLogin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")().asInstanceOf[Unit]
+  inline def beforeLogin(
+    func: js.Function1[
+      /* request */ TriggerRequest[typingsJapgolly.parse.mod.global.Parse.User[Attributes]], 
+      PromiseLike[Unit] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: String,
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: String, func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: js.Function1[/* request */ BeforeSaveRequest[T], js.Promise[Unit] | Unit],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](
+    arg1: Instantiable[T],
+    func: Unit,
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSave[T /* <: typingsJapgolly.parse.mod.global.Parse.Object[Attributes] */](arg1: Instantiable[T], func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSave")(arg1.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def beforeSaveFile(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")().asInstanceOf[Unit]
+  inline def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      PromiseLike[typingsJapgolly.parse.mod.global.Parse.File] | Unit
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      PromiseLike[typingsJapgolly.parse.mod.global.Parse.File] | Unit
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(
+    func: js.Function1[
+      /* request */ FileTriggerRequest, 
+      PromiseLike[typingsJapgolly.parse.mod.global.Parse.File] | Unit
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(func: Unit, validator: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def beforeSaveFile(func: Unit, validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("beforeSaveFile")(func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define(
+    name: String,
+    func: js.Function1[/* request */ FunctionRequest[Params], Any],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define(name: String, func: js.Function1[/* request */ FunctionRequest[Params], Any], validator: Validator): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
+    Any
   ] */](
     name: String,
     func: js.Function1[
@@ -76,75 +449,108 @@ object Cloud extends js.Object {
       ], 
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
-  ): Unit = js.native
-  @JSName("define")
-  def define_T_Function0Wildcard[T /* <: js.Function0[_] */](
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
+    Any
+  ] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+      ], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
+    Any
+  ] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[
+        /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
+      ], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def define_T[T /* <: js.Function0[Any] */](
     name: String,
     func: js.Function1[
       /* request */ FunctionRequest[js.Object], 
       js.Promise[ReturnType[T]] | ReturnType[T]
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_T[T /* <: js.Function0[Any] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[js.Object], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: js.Function1[/* request */ FunctionRequest[Params], Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def define_T[T /* <: js.Function0[Any] */](
+    name: String,
+    func: js.Function1[
+      /* request */ FunctionRequest[js.Object], 
+      js.Promise[ReturnType[T]] | ReturnType[T]
+    ],
+    validator: Validator
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Gets job status by Id
     * @param jobStatusId The Id of Job Status.
     * @returns Status of Job.
     */
-  def getJobStatus(jobStatusId: String): js.Promise[typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes]] = js.native
+  inline def getJobStatus(jobStatusId: String): js.Promise[typingsJapgolly.parse.mod.global.Parse.Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobStatus")(jobStatusId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.parse.mod.global.Parse.Object[Attributes]]]
+  
   /**
     * Gets data for the current set of cloud jobs.
     * @returns A promise that will be resolved with the result of the function.
     */
-  def getJobsData(): js.Promise[typingsJapgolly.parse.mod._Global_.Parse.Object[Attributes]] = js.native
-  def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = js.native
-  def job(name: String): HttpResponse = js.native
-  def job(name: String, func: js.Function1[/* request */ JobRequest, js.Promise[Unit] | Unit]): HttpResponse = js.native
-  def run(name: String): js.Promise[_] = js.native
-  def run(name: String, data: Params): js.Promise[_] = js.native
-  def run(name: String, data: Params, options: RunOptions): js.Promise[_] = js.native
-  def run[T /* <: js.Function0[_] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = js.native
-  @JSName("run")
-  def run_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with Parameters[T], 
-    _
+  inline def getJobsData(): js.Promise[typingsJapgolly.parse.mod.global.Parse.Object[Attributes]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJobsData")().asInstanceOf[js.Promise[typingsJapgolly.parse.mod.global.Parse.Object[Attributes]]]
+  
+  inline def httpRequest(options: HTTPOptions): js.Promise[HttpResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("httpRequest")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HttpResponse]]
+  
+  inline def job(name: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
+  inline def job(name: String, func: js.Function1[/* request */ JobRequest[Params], js.Promise[Unit] | Unit]): HttpResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("job")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[HttpResponse]
+  
+  inline def run(name: String): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Unit, options: RunOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Params): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run(name: String, data: Params, options: RunOptions): js.Promise[Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Any]]
+  inline def run[T /* <: js.Function0[Any] */](name: String, data: Null, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  
+  inline def run_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
+    Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any
-  ): js.Promise[ReturnType[T]] = js.native
-  @JSName("run")
-  def run_0[T /* <: js.Function1[
-    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]}
-    */ /* param */ run with Parameters[T], 
-    _
+  ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  inline def run_0[T /* <: js.Function1[
+    /* import warning: importer.ImportType#apply Failed type conversion: {[ P in keyof std.Parameters<T>[0] ]: std.Parameters<T>[0][P]} */ /* param */ js.Any, 
+    Any
   ] */](
     name: String,
     data: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<T>[0] */ js.Any,
     options: RunOptions
-  ): js.Promise[ReturnType[T]] = js.native
-  @JSName("run")
-  def run_T_Function0Wildcard[T /* <: js.Function0[_] */](name: String): js.Promise[ReturnType[T]] = js.native
+  ): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  
+  inline def run_T[T /* <: js.Function0[Any] */](name: String): js.Promise[ReturnType[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType[T]]]
+  inline def run_T[T /* <: js.Function0[Any] */](name: String, data: Unit, options: RunOptions): js.Promise[ReturnType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType[T]]]
+  
   /**
     * Starts a given cloud job, which will process asynchronously.
     * @param jobName The function name.
     * @param data The parameters to send to the cloud function.
     * @returns A promise that will be resolved with the jobStatusId of the job.
     */
-  def startJob(jobName: String, data: js.Any): js.Promise[String] = js.native
-  def useMasterKey(): Unit = js.native
-  // Read preference describes how MongoDB driver route read operations to the members of a replica set.
-  @js.native
-  object ReadPreferenceOption extends js.Object {
-    /* "NEAREST" */ val Nearest: typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Nearest with String = js.native
-    /* "PRIMARY" */ val Primary: typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Primary with String = js.native
-    /* "PRIMARY_PREFERRED" */ val PrimaryPreferred: typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.PrimaryPreferred with String = js.native
-    /* "SECONDARY" */ val Secondary: typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.Secondary with String = js.native
-    /* "SECONDARY_PREFERRED" */ val SecondaryPreferred: typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption.SecondaryPreferred with String = js.native
-    @JSBracketAccess
-    def apply(value: String): js.UndefOr[typingsJapgolly.parse.mod._Global_.Parse.Cloud.ReadPreferenceOption with String] = js.native
-  }
+  inline def startJob(jobName: String, data: Any): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("startJob")(jobName.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
+  inline def useMasterKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useMasterKey")().asInstanceOf[Unit]
 }
-

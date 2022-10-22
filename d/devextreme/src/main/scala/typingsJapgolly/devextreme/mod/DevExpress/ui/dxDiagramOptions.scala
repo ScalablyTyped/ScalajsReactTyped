@@ -1,178 +1,394 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAllowEditImage
-import typingsJapgolly.devextreme.AnonAutoLayout
-import typingsJapgolly.devextreme.AnonCollapsible
-import typingsJapgolly.devextreme.AnonCommands
-import typingsJapgolly.devextreme.AnonComponentDxDiagram
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonElementItems
-import typingsJapgolly.devextreme.AnonFromExpr
-import typingsJapgolly.devextreme.AnonGroups
-import typingsJapgolly.devextreme.AnonItem
-import typingsJapgolly.devextreme.AnonItemsValue
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.AnonProxyUrl
-import typingsJapgolly.devextreme.AnonVisible
-import typingsJapgolly.devextreme.AnonWidth
-import typingsJapgolly.devextreme.devextremeStrings.cm
-import typingsJapgolly.devextreme.devextremeStrings.disabled
-import typingsJapgolly.devextreme.devextremeStrings.fitContent
-import typingsJapgolly.devextreme.devextremeStrings.fitWidth
-import typingsJapgolly.devextreme.devextremeStrings.in
-import typingsJapgolly.devextreme.devextremeStrings.landscape
-import typingsJapgolly.devextreme.devextremeStrings.portrait
-import typingsJapgolly.devextreme.devextremeStrings.px
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.SVGElement
+import typingsJapgolly.devextreme.anon.AllowAddShape
+import typingsJapgolly.devextreme.anon.AllowEditImage
+import typingsJapgolly.devextreme.anon.AutoLayout
+import typingsJapgolly.devextreme.anon.Category
+import typingsJapgolly.devextreme.anon.Commands
+import typingsJapgolly.devextreme.anon.ConnectorLineEnd
+import typingsJapgolly.devextreme.anon.CustomDataExpr
+import typingsJapgolly.devextreme.anon.FileName
+import typingsJapgolly.devextreme.anon.Items
+import typingsJapgolly.devextreme.anon.ShapeIconsPerRow
+import typingsJapgolly.devextreme.anon.Tabs
+import typingsJapgolly.devextreme.anon.Visible
+import typingsJapgolly.devextreme.anon.Width
+import typingsJapgolly.devextreme.mod.DevExpress.common.PageOrientation
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.CustomCommandEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.CustomShapeTemplateData
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.CustomShapeToolboxTemplateData
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.DiagramAutoZoomMode
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.DiagramUnits
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.ItemClickEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.ItemDblClickEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.RequestEditOperationEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.RequestLayoutUpdateEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram.SelectionChangedEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxDiagramOptions extends WidgetOptions[dxDiagram] {
-  /** Specifies whether the Diagram widget automatically zooms the work area. */
-  var autoZoom: js.UndefOr[fitContent | fitWidth | disabled] = js.undefined
-  /** Configures the context menu's settings. */
-  var contextMenu: js.UndefOr[AnonCommands] = js.undefined
-  /** Provide access to an array of custom shapes. */
-  var customShapes: js.UndefOr[js.Array[AnonAllowEditImage]] = js.undefined
-  /** Allows you to bind the collection of diagram edges to a data source. */
-  var edges: js.UndefOr[AnonFromExpr] = js.undefined
-  /** Configures export settings. */
-  var export: js.UndefOr[AnonProxyUrl] = js.undefined
-  /** Specifies whether or not to display the widget in full-screen mode. */
+trait dxDiagramOptions
+  extends StObject
+     with WidgetOptions[dxDiagram] {
+  
+  /**
+    * Specifies how the Diagram UI component automatically zooms the work area.
+    */
+  var autoZoomMode: js.UndefOr[DiagramAutoZoomMode] = js.undefined
+  
+  /**
+    * Configures the context menu&apos;s settings.
+    */
+  var contextMenu: js.UndefOr[Commands] = js.undefined
+  
+  /**
+    * Configures the context toolbox&apos;s settings.
+    */
+  var contextToolbox: js.UndefOr[Category] = js.undefined
+  
+  /**
+    * Specifies a custom template for shapes.
+    */
+  var customShapeTemplate: js.UndefOr[
+    template | (js.Function2[/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData, Any])
+  ] = js.undefined
+  
+  /**
+    * Specifies a custom template for shapes in the toolbox.
+    */
+  var customShapeToolboxTemplate: js.UndefOr[
+    template | (js.Function2[
+      /* container */ DxElement_[SVGElement], 
+      /* data */ CustomShapeToolboxTemplateData, 
+      Any
+    ])
+  ] = js.undefined
+  
+  /**
+    * Provide access to an array of custom shapes.
+    */
+  var customShapes: js.UndefOr[js.Array[AllowEditImage]] = js.undefined
+  
+  /**
+    * Configures default item properties.
+    */
+  var defaultItemProperties: js.UndefOr[ConnectorLineEnd] = js.undefined
+  
+  /**
+    * Allows you to bind the collection of diagram edges to a data source. For more information, see the Data Binding section.
+    */
+  var edges: js.UndefOr[CustomDataExpr] = js.undefined
+  
+  /**
+    * Specifies which editing operations a user can perform.
+    */
+  var editing: js.UndefOr[AllowAddShape] = js.undefined
+  
+  /**
+    * Configures export settings.
+    */
+  var `export`: js.UndefOr[FileName] = js.undefined
+  
+  /**
+    * Specifies whether or not to display the UI component in full-screen mode.
+    */
   var fullScreen: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the grid pitch. */
-  var gridSize: js.UndefOr[Double | AnonItemsValue] = js.undefined
-  /** Allows you to bind the collection of diagram nodes to a data source. */
-  var nodes: js.UndefOr[AnonAutoLayout] = js.undefined
-  /** A function that is executed when the diagram's data changes. */
-  var onDataChanged: js.UndefOr[js.Function1[/* e */ AnonComponentDxDiagram, _]] = js.undefined
-  /** A function that is executed after a shape or connector is clicked. */
-  var onItemClick: js.UndefOr[js.Function1[/* e */ AnonItem, _]] = js.undefined
-  /** A function that is executed after a shape or connector is double-clicked. */
-  var onItemDblClick: js.UndefOr[js.Function1[/* e */ AnonItem, _]] = js.undefined
-  /** A function that is executed after the selection is changed in the Diagram. */
-  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ AnonElementItems, _]] = js.undefined
-  /** Specifies the color of a diagram page. */
+  
+  /**
+    * Specifies the grid pitch.
+    */
+  var gridSize: js.UndefOr[Double | Items] = js.undefined
+  
+  /**
+    * Indicates whether diagram content has been changed.
+    */
+  var hasChanges: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Configures the history toolbar&apos;s settings.
+    */
+  var historyToolbar: js.UndefOr[Visible] = js.undefined
+  
+  /**
+    * Configures the main toolbar settings.
+    */
+  var mainToolbar: js.UndefOr[Visible] = js.undefined
+  
+  /**
+    * Allows you to bind the collection of diagram nodes to a data source. For more information, see the Data Binding section.
+    */
+  var nodes: js.UndefOr[AutoLayout] = js.undefined
+  
+  /**
+    * A function that is executed after a custom command item was clicked and allows you to implement the custom command&apos;s logic.
+    */
+  var onCustomCommand: js.UndefOr[js.Function1[/* e */ CustomCommandEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after a shape or connector is clicked.
+    */
+  var onItemClick: js.UndefOr[js.Function1[/* e */ ItemClickEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after a shape or connector is double-clicked.
+    */
+  var onItemDblClick: js.UndefOr[js.Function1[/* e */ ItemDblClickEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that allows you to prohibit an edit operation at run time.
+    */
+  var onRequestEditOperation: js.UndefOr[js.Function1[/* e */ RequestEditOperationEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after diagram data is reloaded and allows you to specify whether or not the UI component should update the diagram layout.
+    */
+  var onRequestLayoutUpdate: js.UndefOr[js.Function1[/* e */ RequestLayoutUpdateEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after the selection is changed in the Diagram.
+    */
+  var onSelectionChanged: js.UndefOr[js.Function1[/* e */ SelectionChangedEvent, Unit]] = js.undefined
+  
+  /**
+    * Specifies the color of a diagram page.
+    */
   var pageColor: js.UndefOr[String] = js.undefined
-  /** Specifies the page orientation. */
-  var pageOrientation: js.UndefOr[portrait | landscape] = js.undefined
-  /** Specifies a size of pages. */
-  var pageSize: js.UndefOr[AnonWidth] = js.undefined
-  /** Provides access to Properties panel settings. */
-  var propertiesPanel: js.UndefOr[AnonCollapsible] = js.undefined
-  /** Specifies whether the diagram is read-only. */
+  
+  /**
+    * Specifies the page orientation.
+    */
+  var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
+  
+  /**
+    * Specifies a size of pages.
+    */
+  var pageSize: js.UndefOr[Width] = js.undefined
+  
+  /**
+    * Configures the Properties panel settings.
+    */
+  var propertiesPanel: js.UndefOr[Tabs] = js.undefined
+  
+  /**
+    * Specifies whether the diagram is read-only.
+    */
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether grid lines are visible. */
+  
+  /**
+    * Specifies whether grid lines are visible.
+    */
   var showGrid: js.UndefOr[Boolean] = js.undefined
-  /** Switch the Diagram widget to simple view mode. */
+  
+  /**
+    * Switch the Diagram UI component to simple view mode.
+    */
   var simpleView: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether diagram elements should snap to grid lines. */
+  
+  /**
+    * Specifies whether diagram elements should snap to grid lines.
+    */
   var snapToGrid: js.UndefOr[Boolean] = js.undefined
-  /** Provides access to toolbar settings. */
-  var toolbar: js.UndefOr[AnonVisible] = js.undefined
-  /** Provides access to toolbox settings. */
-  var toolbox: js.UndefOr[AnonGroups] = js.undefined
-  /** Specifies the unit for measurement options (for example, defaultHeight, gridSize, leftExpr). */
-  var units: js.UndefOr[in | cm | px] = js.undefined
-  /** Specifies the measurement unit that is displayed in user interface elements. */
-  var viewUnits: js.UndefOr[in | cm | px] = js.undefined
-  /** Specifies the zoom level. */
-  var zoomLevel: js.UndefOr[Double | AnonItemsValue] = js.undefined
+  
+  /**
+    * Configures the toolbox settings.
+    */
+  var toolbox: js.UndefOr[ShapeIconsPerRow] = js.undefined
+  
+  /**
+    * Specifies the measurement unit for size properties.
+    */
+  var units: js.UndefOr[DiagramUnits] = js.undefined
+  
+  /**
+    * Specifies whether or not the UI component uses native scrolling.
+    */
+  var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Configures the view toolbar settings.
+    */
+  var viewToolbar: js.UndefOr[Visible] = js.undefined
+  
+  /**
+    * Specifies the measurement unit that is displayed in user interface elements.
+    */
+  var viewUnits: js.UndefOr[DiagramUnits] = js.undefined
+  
+  /**
+    * Specifies the zoom level.
+    */
+  var zoomLevel: js.UndefOr[Double | Items] = js.undefined
 }
-
 object dxDiagramOptions {
-  @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    autoZoom: fitContent | fitWidth | disabled = null,
-    bindingOptions: js.Any = null,
-    contextMenu: AnonCommands = null,
-    customShapes: js.Array[AnonAllowEditImage] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    edges: AnonFromExpr = null,
-    elementAttr: js.Any = null,
-    export: AnonProxyUrl = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    fullScreen: js.UndefOr[Boolean] = js.undefined,
-    gridSize: Double | AnonItemsValue = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    nodes: AnonAutoLayout = null,
-    onContentReady: /* e */ AnonComponentElement[dxDiagram] => CallbackTo[js.Any] = null,
-    onDataChanged: /* e */ AnonComponentDxDiagram => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[dxDiagram] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[dxDiagram] => CallbackTo[js.Any] = null,
-    onItemClick: /* e */ AnonItem => CallbackTo[js.Any] = null,
-    onItemDblClick: /* e */ AnonItem => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[dxDiagram] => CallbackTo[js.Any] = null,
-    onSelectionChanged: /* e */ AnonElementItems => CallbackTo[js.Any] = null,
-    pageColor: String = null,
-    pageOrientation: portrait | landscape = null,
-    pageSize: AnonWidth = null,
-    propertiesPanel: AnonCollapsible = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    showGrid: js.UndefOr[Boolean] = js.undefined,
-    simpleView: js.UndefOr[Boolean] = js.undefined,
-    snapToGrid: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
-    toolbar: AnonVisible = null,
-    toolbox: AnonGroups = null,
-    units: in | cm | px = null,
-    viewUnits: in | cm | px = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null,
-    zoomLevel: Double | AnonItemsValue = null
-  ): dxDiagramOptions = {
+  
+  inline def apply(): dxDiagramOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (autoZoom != null) __obj.updateDynamic("autoZoom")(autoZoom.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu.asInstanceOf[js.Any])
-    if (customShapes != null) __obj.updateDynamic("customShapes")(customShapes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (gridSize != null) __obj.updateDynamic("gridSize")(gridSize.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram]) => onContentReady(t0).runNow()))
-    if (onDataChanged != null) __obj.updateDynamic("onDataChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentDxDiagram) => onDataChanged(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram]) => onDisposing(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram]) => onInitialized(t0).runNow()))
-    if (onItemClick != null) __obj.updateDynamic("onItemClick")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonItem) => onItemClick(t0).runNow()))
-    if (onItemDblClick != null) __obj.updateDynamic("onItemDblClick")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonItem) => onItemDblClick(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[typingsJapgolly.devextreme.mod.DevExpress.ui.dxDiagram]) => onOptionChanged(t0).runNow()))
-    if (onSelectionChanged != null) __obj.updateDynamic("onSelectionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementItems) => onSelectionChanged(t0).runNow()))
-    if (pageColor != null) __obj.updateDynamic("pageColor")(pageColor.asInstanceOf[js.Any])
-    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
-    if (propertiesPanel != null) __obj.updateDynamic("propertiesPanel")(propertiesPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid.asInstanceOf[js.Any])
-    if (!js.isUndefined(simpleView)) __obj.updateDynamic("simpleView")(simpleView.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToGrid)) __obj.updateDynamic("snapToGrid")(snapToGrid.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (toolbox != null) __obj.updateDynamic("toolbox")(toolbox.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (viewUnits != null) __obj.updateDynamic("viewUnits")(viewUnits.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxDiagramOptions]
   }
+  
+  extension [Self <: dxDiagramOptions](x: Self) {
+    
+    inline def setAutoZoomMode(value: DiagramAutoZoomMode): Self = StObject.set(x, "autoZoomMode", value.asInstanceOf[js.Any])
+    
+    inline def setAutoZoomModeUndefined: Self = StObject.set(x, "autoZoomMode", js.undefined)
+    
+    inline def setContextMenu(value: Commands): Self = StObject.set(x, "contextMenu", value.asInstanceOf[js.Any])
+    
+    inline def setContextMenuUndefined: Self = StObject.set(x, "contextMenu", js.undefined)
+    
+    inline def setContextToolbox(value: Category): Self = StObject.set(x, "contextToolbox", value.asInstanceOf[js.Any])
+    
+    inline def setContextToolboxUndefined: Self = StObject.set(x, "contextToolbox", js.undefined)
+    
+    inline def setCustomShapeTemplate(
+      value: template | (js.Function2[/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData, Any])
+    ): Self = StObject.set(x, "customShapeTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setCustomShapeTemplateFunction2(value: (/* container */ DxElement_[SVGElement], /* data */ CustomShapeTemplateData) => Any): Self = StObject.set(x, "customShapeTemplate", js.Any.fromFunction2(value))
+    
+    inline def setCustomShapeTemplateUndefined: Self = StObject.set(x, "customShapeTemplate", js.undefined)
+    
+    inline def setCustomShapeToolboxTemplate(
+      value: template | (js.Function2[
+          /* container */ DxElement_[SVGElement], 
+          /* data */ CustomShapeToolboxTemplateData, 
+          Any
+        ])
+    ): Self = StObject.set(x, "customShapeToolboxTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setCustomShapeToolboxTemplateFunction2(value: (/* container */ DxElement_[SVGElement], /* data */ CustomShapeToolboxTemplateData) => Any): Self = StObject.set(x, "customShapeToolboxTemplate", js.Any.fromFunction2(value))
+    
+    inline def setCustomShapeToolboxTemplateUndefined: Self = StObject.set(x, "customShapeToolboxTemplate", js.undefined)
+    
+    inline def setCustomShapes(value: js.Array[AllowEditImage]): Self = StObject.set(x, "customShapes", value.asInstanceOf[js.Any])
+    
+    inline def setCustomShapesUndefined: Self = StObject.set(x, "customShapes", js.undefined)
+    
+    inline def setCustomShapesVarargs(value: AllowEditImage*): Self = StObject.set(x, "customShapes", js.Array(value*))
+    
+    inline def setDefaultItemProperties(value: ConnectorLineEnd): Self = StObject.set(x, "defaultItemProperties", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultItemPropertiesUndefined: Self = StObject.set(x, "defaultItemProperties", js.undefined)
+    
+    inline def setEdges(value: CustomDataExpr): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    
+    inline def setEditing(value: AllowAddShape): Self = StObject.set(x, "editing", value.asInstanceOf[js.Any])
+    
+    inline def setEditingUndefined: Self = StObject.set(x, "editing", js.undefined)
+    
+    inline def setExport(value: FileName): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+    
+    inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
+    
+    inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    
+    inline def setGridSize(value: Double | Items): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    
+    inline def setHasChanges(value: Boolean): Self = StObject.set(x, "hasChanges", value.asInstanceOf[js.Any])
+    
+    inline def setHasChangesUndefined: Self = StObject.set(x, "hasChanges", js.undefined)
+    
+    inline def setHistoryToolbar(value: Visible): Self = StObject.set(x, "historyToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setHistoryToolbarUndefined: Self = StObject.set(x, "historyToolbar", js.undefined)
+    
+    inline def setMainToolbar(value: Visible): Self = StObject.set(x, "mainToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setMainToolbarUndefined: Self = StObject.set(x, "mainToolbar", js.undefined)
+    
+    inline def setNodes(value: AutoLayout): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    
+    inline def setOnCustomCommand(value: /* e */ CustomCommandEvent => Callback): Self = StObject.set(x, "onCustomCommand", js.Any.fromFunction1((t0: /* e */ CustomCommandEvent) => value(t0).runNow()))
+    
+    inline def setOnCustomCommandUndefined: Self = StObject.set(x, "onCustomCommand", js.undefined)
+    
+    inline def setOnItemClick(value: /* e */ ItemClickEvent => Callback): Self = StObject.set(x, "onItemClick", js.Any.fromFunction1((t0: /* e */ ItemClickEvent) => value(t0).runNow()))
+    
+    inline def setOnItemClickUndefined: Self = StObject.set(x, "onItemClick", js.undefined)
+    
+    inline def setOnItemDblClick(value: /* e */ ItemDblClickEvent => Callback): Self = StObject.set(x, "onItemDblClick", js.Any.fromFunction1((t0: /* e */ ItemDblClickEvent) => value(t0).runNow()))
+    
+    inline def setOnItemDblClickUndefined: Self = StObject.set(x, "onItemDblClick", js.undefined)
+    
+    inline def setOnRequestEditOperation(value: /* e */ RequestEditOperationEvent => Callback): Self = StObject.set(x, "onRequestEditOperation", js.Any.fromFunction1((t0: /* e */ RequestEditOperationEvent) => value(t0).runNow()))
+    
+    inline def setOnRequestEditOperationUndefined: Self = StObject.set(x, "onRequestEditOperation", js.undefined)
+    
+    inline def setOnRequestLayoutUpdate(value: /* e */ RequestLayoutUpdateEvent => Callback): Self = StObject.set(x, "onRequestLayoutUpdate", js.Any.fromFunction1((t0: /* e */ RequestLayoutUpdateEvent) => value(t0).runNow()))
+    
+    inline def setOnRequestLayoutUpdateUndefined: Self = StObject.set(x, "onRequestLayoutUpdate", js.undefined)
+    
+    inline def setOnSelectionChanged(value: /* e */ SelectionChangedEvent => Callback): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1((t0: /* e */ SelectionChangedEvent) => value(t0).runNow()))
+    
+    inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+    
+    inline def setPageColor(value: String): Self = StObject.set(x, "pageColor", value.asInstanceOf[js.Any])
+    
+    inline def setPageColorUndefined: Self = StObject.set(x, "pageColor", js.undefined)
+    
+    inline def setPageOrientation(value: PageOrientation): Self = StObject.set(x, "pageOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setPageOrientationUndefined: Self = StObject.set(x, "pageOrientation", js.undefined)
+    
+    inline def setPageSize(value: Width): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    
+    inline def setPropertiesPanel(value: Tabs): Self = StObject.set(x, "propertiesPanel", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesPanelUndefined: Self = StObject.set(x, "propertiesPanel", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setShowGrid(value: Boolean): Self = StObject.set(x, "showGrid", value.asInstanceOf[js.Any])
+    
+    inline def setShowGridUndefined: Self = StObject.set(x, "showGrid", js.undefined)
+    
+    inline def setSimpleView(value: Boolean): Self = StObject.set(x, "simpleView", value.asInstanceOf[js.Any])
+    
+    inline def setSimpleViewUndefined: Self = StObject.set(x, "simpleView", js.undefined)
+    
+    inline def setSnapToGrid(value: Boolean): Self = StObject.set(x, "snapToGrid", value.asInstanceOf[js.Any])
+    
+    inline def setSnapToGridUndefined: Self = StObject.set(x, "snapToGrid", js.undefined)
+    
+    inline def setToolbox(value: ShapeIconsPerRow): Self = StObject.set(x, "toolbox", value.asInstanceOf[js.Any])
+    
+    inline def setToolboxUndefined: Self = StObject.set(x, "toolbox", js.undefined)
+    
+    inline def setUnits(value: DiagramUnits): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    
+    inline def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
+    
+    inline def setViewToolbar(value: Visible): Self = StObject.set(x, "viewToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setViewToolbarUndefined: Self = StObject.set(x, "viewToolbar", js.undefined)
+    
+    inline def setViewUnits(value: DiagramUnits): Self = StObject.set(x, "viewUnits", value.asInstanceOf[js.Any])
+    
+    inline def setViewUnitsUndefined: Self = StObject.set(x, "viewUnits", js.undefined)
+    
+    inline def setZoomLevel(value: Double | Items): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    
+    inline def setZoomLevelUndefined: Self = StObject.set(x, "zoomLevel", js.undefined)
+  }
 }
-

@@ -1,24 +1,42 @@
 package typingsJapgolly.angularForms.mod
 
-import typingsJapgolly.angularCore.mod.OnChanges
 import typingsJapgolly.angularCore.mod.SimpleChanges
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.anon.Maxlength
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "MaxLengthValidator")
 @js.native
-class MaxLengthValidator ()
-  extends Validator
-     with OnChanges {
-  var _createValidator: js.Any = js.native
-  var _onChange: js.Any = js.native
-  var _validator: js.Any = js.native
+open class MaxLengthValidator ()
+  extends StObject
+     with AbstractValidatorDirective {
+  
+  /* private */ /* CompleteClass */
+  var _onChange: Any = js.native
+  
+  /* private */ /* CompleteClass */
+  var _validator: Any = js.native
+  
   /**
     * @description
-    * Tracks changes to the the maximum length bound to this directive.
+    * Determines whether this validator should be active or not based on an input.
+    * Base class implementation checks whether an input is defined (if the value is different from
+    * `null` and `undefined`). Validator classes that extend this base class can override this
+    * function with the logic specific to a particular validator directive.
     */
-  var maxlength: String = js.native
+  /* CompleteClass */
+  override def enabled(input: Any): Boolean = js.native
+  
+  /**
+    * @description
+    * Tracks changes to the minimum length bound to this directive.
+    */
+  var maxlength: String | Double | Null = js.native
+  
   /**
     * A callback method that is invoked immediately after the
     * default change detector has checked data-bound properties
@@ -28,14 +46,12 @@ class MaxLengthValidator ()
     */
   /* CompleteClass */
   override def ngOnChanges(changes: SimpleChanges): Unit = js.native
-  /**
-    * @description
-    * Registers a callback function to call when the validator inputs change.
-    *
-    * @param fn The callback function
-    */
+  
+  /** @nodoc */
+  /* CompleteClass */
   @JSName("registerOnValidatorChange")
-  def registerOnValidatorChange_MMaxLengthValidator(fn: js.Function0[Unit]): Unit = js.native
+  override def registerOnValidatorChange_MAbstractValidatorDirective(fn: js.Function0[Unit]): Unit = js.native
+  
   /**
     * @description
     * Method that performs synchronous validation against the provided control.
@@ -46,6 +62,42 @@ class MaxLengthValidator ()
     * otherwise null.
     */
   /* CompleteClass */
-  override def validate(control: AbstractControl): ValidationErrors | Null = js.native
+  override def validate(control: AbstractControl[Any, Any]): ValidationErrors | Null = js.native
 }
-
+/* static members */
+object MaxLengthValidator {
+  
+  @JSImport("@angular/forms", "MaxLengthValidator")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "MaxLengthValidator.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    MaxLengthValidator, 
+    /* [maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel] */ String, 
+    scala.Nothing, 
+    Maxlength, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      MaxLengthValidator, 
+      /* [maxlength][formControlName],[maxlength][formControl],[maxlength][ngModel] */ String, 
+      scala.Nothing, 
+      Maxlength, 
+      js.Object, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "MaxLengthValidator.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[MaxLengthValidator, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[MaxLengthValidator, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

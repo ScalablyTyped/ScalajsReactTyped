@@ -1,9 +1,9 @@
-package typingsJapgolly.webgme
+package typingsJapgolly.webgme.global
 
+import typingsJapgolly.webgme.Global_.WebGmeGlobal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Global {
-  type StateHandler = js.Function2[/* model */ js.Any, /* change */ java.lang.String, scala.Unit]
-}
+
+inline def WebGMEGlobal: WebGmeGlobal = js.Dynamic.global.selectDynamic("WebGMEGlobal").asInstanceOf[WebGmeGlobal]

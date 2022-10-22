@@ -1,7 +1,7 @@
 
 # Scala.js typings for date-arithmetic
 
-Typings are for version v3.1.0
+Typings are for version 4.1
 
 ## Library description:
 simple date math util
@@ -10,10 +10,10 @@ simple date math util
 | ------------------ | :-------------: |
 | Full name          | date-arithmetic |
 | Keywords           | moment, date, math |
-| # releases         | 2 |
-| # dependents       | 164 |
-| # downloads        | 4828395 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 894638.6666666666 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/jquense/date-math)

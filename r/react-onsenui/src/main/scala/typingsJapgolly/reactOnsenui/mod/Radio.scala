@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameDefaultChecked
+import typingsJapgolly.reactOnsenui.anon.DefaultChecked
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Radio")
 @js.native
-class Radio ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameDefaultChecked, js.Any, js.Any]
-
+open class Radio protected () extends Component[DefaultChecked, Any] {
+  def this(props: HTMLAttributesidclassName & DefaultChecked) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & DefaultChecked, context: Any) = this()
+}

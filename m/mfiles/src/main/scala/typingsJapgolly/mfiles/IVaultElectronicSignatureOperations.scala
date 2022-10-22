@@ -1,37 +1,49 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultElectronicSignatureOperations extends js.Object {
+trait IVaultElectronicSignatureOperations extends StObject {
+  
   def AddEmptySignature(ObjVer: IObjVer, SignatureIdentifier: String): IObjectVersionAndProperties
+  
   def AddEmptySignatures(ObjVer: IObjVer): IObjectVersionAndProperties
+  
   def DisconnectSignature(ObjVer: IObjVer, SignatureIdentifier: String): IObjectVersionAndProperties
+  
   def DisconnectSignatureEx(ObjVer: IObjVer, SignatureIdentifier: String, InvalidateDisconnectedSignatures: Boolean): IObjectVersionAndProperties
+  
   def DisconnectSignatures(ObjVer: IObjVer): IObjectVersionAndProperties
+  
   def DisconnectSignaturesEx(ObjVer: IObjVer, InvalidateDisconnectedSignatures: Boolean): IObjectVersionAndProperties
 }
-
 object IVaultElectronicSignatureOperations {
-  @scala.inline
-  def apply(
-    AddEmptySignature: (IObjVer, String) => CallbackTo[IObjectVersionAndProperties],
-    AddEmptySignatures: IObjVer => CallbackTo[IObjectVersionAndProperties],
-    DisconnectSignature: (IObjVer, String) => CallbackTo[IObjectVersionAndProperties],
-    DisconnectSignatureEx: (IObjVer, String, Boolean) => CallbackTo[IObjectVersionAndProperties],
-    DisconnectSignatures: IObjVer => CallbackTo[IObjectVersionAndProperties],
-    DisconnectSignaturesEx: (IObjVer, Boolean) => CallbackTo[IObjectVersionAndProperties]
+  
+  inline def apply(
+    AddEmptySignature: (IObjVer, String) => IObjectVersionAndProperties,
+    AddEmptySignatures: IObjVer => IObjectVersionAndProperties,
+    DisconnectSignature: (IObjVer, String) => IObjectVersionAndProperties,
+    DisconnectSignatureEx: (IObjVer, String, Boolean) => IObjectVersionAndProperties,
+    DisconnectSignatures: IObjVer => IObjectVersionAndProperties,
+    DisconnectSignaturesEx: (IObjVer, Boolean) => IObjectVersionAndProperties
   ): IVaultElectronicSignatureOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("AddEmptySignature")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.IObjVer, t1: java.lang.String) => AddEmptySignature(t0, t1).runNow()))
-    __obj.updateDynamic("AddEmptySignatures")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IObjVer) => AddEmptySignatures(t0).runNow()))
-    __obj.updateDynamic("DisconnectSignature")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.IObjVer, t1: java.lang.String) => DisconnectSignature(t0, t1).runNow()))
-    __obj.updateDynamic("DisconnectSignatureEx")(js.Any.fromFunction3((t0: typingsJapgolly.mfiles.IObjVer, t1: java.lang.String, t2: scala.Boolean) => DisconnectSignatureEx(t0, t1, t2).runNow()))
-    __obj.updateDynamic("DisconnectSignatures")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IObjVer) => DisconnectSignatures(t0).runNow()))
-    __obj.updateDynamic("DisconnectSignaturesEx")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.IObjVer, t1: scala.Boolean) => DisconnectSignaturesEx(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(AddEmptySignature = js.Any.fromFunction2(AddEmptySignature), AddEmptySignatures = js.Any.fromFunction1(AddEmptySignatures), DisconnectSignature = js.Any.fromFunction2(DisconnectSignature), DisconnectSignatureEx = js.Any.fromFunction3(DisconnectSignatureEx), DisconnectSignatures = js.Any.fromFunction1(DisconnectSignatures), DisconnectSignaturesEx = js.Any.fromFunction2(DisconnectSignaturesEx))
     __obj.asInstanceOf[IVaultElectronicSignatureOperations]
   }
+  
+  extension [Self <: IVaultElectronicSignatureOperations](x: Self) {
+    
+    inline def setAddEmptySignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignature", js.Any.fromFunction2(value))
+    
+    inline def setAddEmptySignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "AddEmptySignatures", js.Any.fromFunction1(value))
+    
+    inline def setDisconnectSignature(value: (IObjVer, String) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignature", js.Any.fromFunction2(value))
+    
+    inline def setDisconnectSignatureEx(value: (IObjVer, String, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatureEx", js.Any.fromFunction3(value))
+    
+    inline def setDisconnectSignatures(value: IObjVer => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignatures", js.Any.fromFunction1(value))
+    
+    inline def setDisconnectSignaturesEx(value: (IObjVer, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "DisconnectSignaturesEx", js.Any.fromFunction2(value))
+  }
 }
-

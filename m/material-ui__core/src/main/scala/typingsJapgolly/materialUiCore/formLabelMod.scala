@@ -1,26 +1,33 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.formLabelFormLabelMod.FormLabelProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.formLabelFormLabelMod.FormLabelTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.label
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/FormLabel", JSImport.Namespace)
-@js.native
-object formLabelMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[FormLabelProps, ComponentState, js.Any] {
-    def this(props: FormLabelProps) = this()
-    def this(props: FormLabelProps, context: js.Any) = this()
-  }
+object formLabelMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Checkboxes](https://mui.com/components/checkboxes/)
+    * - [Radio Buttons](https://mui.com/components/radio-buttons/)
+    * - [Switches](https://mui.com/components/switches/)
+    *
+    * API:
+    *
+    * - [FormLabel API](https://mui.com/api/form-label/)
+    */
+  @JSImport("@material-ui/core/FormLabel", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[FormLabelProps]]
+  val default: OverridableComponent[FormLabelTypeMap[js.Object, label]] = js.native
   
+  type _To = OverridableComponent[FormLabelTypeMap[js.Object, label]]
+  
+  /* This means you don't have to write `default`, but can instead just say `formLabelMod.foo` */
+  override def _to: OverridableComponent[FormLabelTypeMap[js.Object, label]] = default
 }
-

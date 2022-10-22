@@ -1,7 +1,7 @@
 
 # Scala.js typings for graphviz
 
-Typings are for version 0.0.8
+Typings are for version 0.0
 
 ## Library description:
 Node.js interface to the GraphViz graphing tool
@@ -10,10 +10,10 @@ Node.js interface to the GraphViz graphing tool
 | ------------------ | :-------------: |
 | Full name          | graphviz |
 | Keywords           | graphviz, dot |
-| # releases         | 2 |
-| # dependents       | 53 |
-| # downloads        | 4340417 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1961112.0 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](http://algorithmique.net/)

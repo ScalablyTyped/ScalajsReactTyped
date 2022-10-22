@@ -1,59 +1,55 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisType extends js.Object
-
+sealed trait ChartAxisType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisType")
 @js.native
-object ChartAxisType extends js.Object {
+object ChartAxisType extends StObject {
+  
   /**
-    *
     * Axis displays categories.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait category extends ChartAxisType
-  
-  @js.native
-  sealed trait invalid extends ChartAxisType
+  sealed trait category
+    extends StObject
+       with ChartAxisType
   
   /**
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
+  @js.native
+  sealed trait invalid
+    extends StObject
+       with ChartAxisType
+  
+  /**
     * Axis displays data series.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait series extends ChartAxisType
+  sealed trait series
+    extends StObject
+       with ChartAxisType
   
   /**
-    *
     * Axis displays values.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.7]
     */
   @js.native
-  sealed trait value extends ChartAxisType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisType with String] = js.native
-  /* "Category" */ @js.native
-  object category extends TopLevel[category with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "Series" */ @js.native
-  object series extends TopLevel[series with String]
-  
-  /* "Value" */ @js.native
-  object value extends TopLevel[value with String]
-  
+  sealed trait value
+    extends StObject
+       with ChartAxisType
 }
-

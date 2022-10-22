@@ -1,0 +1,26 @@
+package typingsJapgolly.devtoolsProtocol.mod.Protocol.Audits
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite
+*/
+trait BlockedByResponseReason extends StObject
+object BlockedByResponseReason {
+  
+  inline def CoepFrameResourceNeedsCoepHeader: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader = "CoepFrameResourceNeedsCoepHeader".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoepFrameResourceNeedsCoepHeader]
+  
+  inline def CoopSandboxedIFrameCannotNavigateToCoopPage: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage = "CoopSandboxedIFrameCannotNavigateToCoopPage".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CoopSandboxedIFrameCannotNavigateToCoopPage]
+  
+  inline def CorpNotSameOrigin: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin = "CorpNotSameOrigin".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOrigin]
+  
+  inline def CorpNotSameOriginAfterDefaultedToSameOriginByCoep: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep = "CorpNotSameOriginAfterDefaultedToSameOriginByCoep".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameOriginAfterDefaultedToSameOriginByCoep]
+  
+  inline def CorpNotSameSite: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite = "CorpNotSameSite".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.CorpNotSameSite]
+}

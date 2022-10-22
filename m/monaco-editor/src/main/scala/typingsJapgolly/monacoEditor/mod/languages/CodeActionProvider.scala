@@ -1,28 +1,45 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Range
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CodeActionProvider extends js.Object {
+trait CodeActionProvider extends StObject {
+  
   /**
     * Provide commands for the given document and range.
     */
-  def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): CodeActionList | js.Promise[CodeActionList]
+  def provideCodeActions(model: ITextModel, range: Range, context: CodeActionContext, token: CancellationToken): ProviderResult[CodeActionList]
+  
+  /**
+    * Given a code action fill in the edit. Will only invoked when missing.
+    */
+  var resolveCodeAction: js.UndefOr[
+    js.Function2[
+      /* codeAction */ CodeAction, 
+      /* token */ CancellationToken, 
+      ProviderResult[CodeAction]
+    ]
+  ] = js.undefined
 }
-
 object CodeActionProvider {
-  @scala.inline
-  def apply(
-    provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => CallbackTo[CodeActionList | js.Promise[CodeActionList]]
+  
+  inline def apply(
+    provideCodeActions: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]
   ): CodeActionProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideCodeActions")(js.Any.fromFunction4((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Range, t2: typingsJapgolly.monacoEditor.mod.languages.CodeActionContext, t3: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideCodeActions(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(provideCodeActions = js.Any.fromFunction4(provideCodeActions))
     __obj.asInstanceOf[CodeActionProvider]
   }
+  
+  extension [Self <: CodeActionProvider](x: Self) {
+    
+    inline def setProvideCodeActions(value: (ITextModel, Range, CodeActionContext, CancellationToken) => ProviderResult[CodeActionList]): Self = StObject.set(x, "provideCodeActions", js.Any.fromFunction4(value))
+    
+    inline def setResolveCodeAction(value: (/* codeAction */ CodeAction, /* token */ CancellationToken) => ProviderResult[CodeAction]): Self = StObject.set(x, "resolveCodeAction", js.Any.fromFunction2(value))
+    
+    inline def setResolveCodeActionUndefined: Self = StObject.set(x, "resolveCodeAction", js.undefined)
+  }
 }
-

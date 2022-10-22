@@ -1,7 +1,7 @@
 
 # Scala.js typings for mapbox__mapbox-sdk
 
-Typings are for version 0.6
+Typings are for version 0.13
 
 ## Library description:
 JS SDK for accessing Mapbox APIs
@@ -10,10 +10,10 @@ JS SDK for accessing Mapbox APIs
 | ------------------ | :-------------: |
 | Full name          | @mapbox/mapbox-sdk |
 | Keywords           | mapbox, sdk, api, map, style, tileset, dataset, search, navigation |
-| # releases         | 16 |
-| # dependents       | 5 |
-| # downloads        | 625517 |
-| # stars            | 0 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 544431.0 |
+| # stars            | 574.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/mapbox-sdk-js#readme)

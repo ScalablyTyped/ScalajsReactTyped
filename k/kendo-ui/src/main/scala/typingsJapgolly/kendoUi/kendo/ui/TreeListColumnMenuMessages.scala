@@ -1,39 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListColumnMenuMessages extends js.Object {
+trait TreeListColumnMenuMessages extends StObject {
+  
   var columns: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
   var lock: js.UndefOr[String] = js.undefined
+  
   var settings: js.UndefOr[String] = js.undefined
+  
   var sortAscending: js.UndefOr[String] = js.undefined
+  
   var sortDescending: js.UndefOr[String] = js.undefined
+  
   var unlock: js.UndefOr[String] = js.undefined
 }
-
 object TreeListColumnMenuMessages {
-  @scala.inline
-  def apply(
-    columns: String = null,
-    filter: String = null,
-    lock: String = null,
-    settings: String = null,
-    sortAscending: String = null,
-    sortDescending: String = null,
-    unlock: String = null
-  ): TreeListColumnMenuMessages = {
+  
+  inline def apply(): TreeListColumnMenuMessages = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (lock != null) __obj.updateDynamic("lock")(lock.asInstanceOf[js.Any])
-    if (settings != null) __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
-    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
-    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending.asInstanceOf[js.Any])
-    if (unlock != null) __obj.updateDynamic("unlock")(unlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnMenuMessages]
   }
+  
+  extension [Self <: TreeListColumnMenuMessages](x: Self) {
+    
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setLock(value: String): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    
+    inline def setLockUndefined: Self = StObject.set(x, "lock", js.undefined)
+    
+    inline def setSettings(value: String): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    
+    inline def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+    
+    inline def setSortAscendingUndefined: Self = StObject.set(x, "sortAscending", js.undefined)
+    
+    inline def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+    
+    inline def setSortDescendingUndefined: Self = StObject.set(x, "sortDescending", js.undefined)
+    
+    inline def setUnlock(value: String): Self = StObject.set(x, "unlock", value.asInstanceOf[js.Any])
+    
+    inline def setUnlockUndefined: Self = StObject.set(x, "unlock", js.undefined)
+  }
 }
-

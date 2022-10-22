@@ -1,29 +1,24 @@
 package typingsJapgolly.grommetIcons
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grommetIconsStrings {
-  @js.native
-  sealed trait large extends js.Object
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait medium extends StObject
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait xlarge extends js.Object
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
   
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  @js.native
+  sealed trait xlarge extends StObject
+  inline def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
 }
-

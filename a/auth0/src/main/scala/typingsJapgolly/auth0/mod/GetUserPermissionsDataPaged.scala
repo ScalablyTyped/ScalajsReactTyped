@@ -1,20 +1,24 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetUserPermissionsDataPaged extends GetUserPermissionsData {
+trait GetUserPermissionsDataPaged
+  extends StObject
+     with GetUserPermissionsData {
+  
   var include_totals: Boolean
 }
-
 object GetUserPermissionsDataPaged {
-  @scala.inline
-  def apply(id: String, include_totals: Boolean, page: Int | Double = null, per_page: Int | Double = null): GetUserPermissionsDataPaged = {
+  
+  inline def apply(id: String, include_totals: Boolean): GetUserPermissionsDataPaged = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], include_totals = include_totals.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserPermissionsDataPaged]
   }
+  
+  extension [Self <: GetUserPermissionsDataPaged](x: Self) {
+    
+    inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
+  }
 }
-

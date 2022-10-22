@@ -1,15 +1,16 @@
 package typingsJapgolly.yearDays
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("year-days", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): Double = js.native
-  def apply(yearOrDate: Double): Double = js.native
-  def apply(yearOrDate: Date): Double = js.native
+object mod {
+  
+  @JSImport("year-days", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Double]
+  inline def default(yearOrDate: js.Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(yearOrDate.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(yearOrDate: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(yearOrDate.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // | 'chrome://extension-icon/'; // Doesn't need permission yet?
 /* Rewritten from type alias, can be one of: 
@@ -20,5 +20,6 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.chromeApps.chromeAppsStrings.wallpaper
   - typingsJapgolly.chromeApps.chrome.runtime.FileSystemPermission
 */
-trait ChromeOSOnlyPermissions extends Permission
-
+trait ChromeOSOnlyPermissions
+  extends StObject
+     with Permission

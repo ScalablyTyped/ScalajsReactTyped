@@ -1,24 +1,20 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.baiduApp.baiduAppStrings.bevel
   - typingsJapgolly.baiduApp.baiduAppStrings.round
   - typingsJapgolly.baiduApp.baiduAppStrings.miter
 */
-trait LineJoinType extends js.Object
-
+trait LineJoinType extends StObject
 object LineJoinType {
-  @scala.inline
-  def bevel: typingsJapgolly.baiduApp.baiduAppStrings.bevel = this.cast("bevel")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def miter: typingsJapgolly.baiduApp.baiduAppStrings.miter = this.cast("miter")
-  @scala.inline
-  def round: typingsJapgolly.baiduApp.baiduAppStrings.round = this.cast("round")
+  
+  inline def bevel: typingsJapgolly.baiduApp.baiduAppStrings.bevel = "bevel".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.bevel]
+  
+  inline def miter: typingsJapgolly.baiduApp.baiduAppStrings.miter = "miter".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.miter]
+  
+  inline def round: typingsJapgolly.baiduApp.baiduAppStrings.round = "round".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.round]
 }
-

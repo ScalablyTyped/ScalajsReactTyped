@@ -1,29 +1,24 @@
 package typingsJapgolly.doubleclickGpt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object doubleclickGptStrings {
-  @js.native
-  sealed trait slotRenderEnded extends js.Object
   
   @js.native
-  sealed trait slotRequested extends js.Object
+  sealed trait slotRenderEnded extends StObject
+  inline def slotRenderEnded: slotRenderEnded = "slotRenderEnded".asInstanceOf[slotRenderEnded]
   
   @js.native
-  sealed trait slotResponseReceived extends js.Object
+  sealed trait slotRequested extends StObject
+  inline def slotRequested: slotRequested = "slotRequested".asInstanceOf[slotRequested]
   
   @js.native
-  sealed trait slotVisibilityChanged extends js.Object
+  sealed trait slotResponseReceived extends StObject
+  inline def slotResponseReceived: slotResponseReceived = "slotResponseReceived".asInstanceOf[slotResponseReceived]
   
-  @scala.inline
-  def slotRenderEnded: slotRenderEnded = "slotRenderEnded".asInstanceOf[slotRenderEnded]
-  @scala.inline
-  def slotRequested: slotRequested = "slotRequested".asInstanceOf[slotRequested]
-  @scala.inline
-  def slotResponseReceived: slotResponseReceived = "slotResponseReceived".asInstanceOf[slotResponseReceived]
-  @scala.inline
-  def slotVisibilityChanged: slotVisibilityChanged = "slotVisibilityChanged".asInstanceOf[slotVisibilityChanged]
+  @js.native
+  sealed trait slotVisibilityChanged extends StObject
+  inline def slotVisibilityChanged: slotVisibilityChanged = "slotVisibilityChanged".asInstanceOf[slotVisibilityChanged]
 }
-

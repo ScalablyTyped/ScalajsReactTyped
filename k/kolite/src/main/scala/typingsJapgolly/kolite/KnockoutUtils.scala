@@ -1,20 +1,22 @@
 package typingsJapgolly.kolite
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutUtils extends js.Object {
-  def wrapAccessor(accessor: js.Any): js.Function
+trait KnockoutUtils extends StObject {
+  
+  def wrapAccessor(accessor: Any): js.Function
 }
-
 object KnockoutUtils {
-  @scala.inline
-  def apply(wrapAccessor: js.Any => CallbackTo[js.Function]): KnockoutUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("wrapAccessor")(js.Any.fromFunction1((t0: js.Any) => wrapAccessor(t0).runNow()))
+  
+  inline def apply(wrapAccessor: Any => js.Function): KnockoutUtils = {
+    val __obj = js.Dynamic.literal(wrapAccessor = js.Any.fromFunction1(wrapAccessor))
     __obj.asInstanceOf[KnockoutUtils]
   }
+  
+  extension [Self <: KnockoutUtils](x: Self) {
+    
+    inline def setWrapAccessor(value: Any => js.Function): Self = StObject.set(x, "wrapAccessor", js.Any.fromFunction1(value))
+  }
 }
-

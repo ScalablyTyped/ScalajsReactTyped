@@ -10,10 +10,10 @@ AngularJS module for interacting with RESTful server-side data sources
 | ------------------ | :-------------: |
 | Full name          | angular-resource |
 | Keywords           | angular, framework, browser, rest, client-side |
-| # releases         | 14 |
-| # dependents       | 170 |
-| # downloads        | 5353125 |
-| # stars            | 14 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 571928.0 |
+| # stars            | 59430.0 |
 
 ## Links
 - [Homepage](http://angularjs.org)

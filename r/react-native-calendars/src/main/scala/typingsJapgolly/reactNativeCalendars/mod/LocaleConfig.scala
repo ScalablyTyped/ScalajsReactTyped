@@ -1,20 +1,19 @@
 package typingsJapgolly.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.reactNativeCalendars.anon.Today
 import typingsJapgolly.xdate.mod.XDate
-import typingsJapgolly.xdate.mod.^
-import typingsJapgolly.xdate.mod.formattersInfo
-import typingsJapgolly.xdate.mod.localeDetail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-calendars", "LocaleConfig")
 @js.native
 //------------
 //Constructors
 //------------
-class LocaleConfig () extends ^ {
+open class LocaleConfig ()
+  extends typingsJapgolly.xdate.mod.^ {
   /**
     * constructor
     * @param {string} [dateString] - formatted date string
@@ -52,7 +51,11 @@ class LocaleConfig () extends ^ {
   def this(year: Double, month: Double, date: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double, minutes: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Double) = this()
   def this(year: Double, month: Double, date: Double, hours: Double, minutes: Double, seconds: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Double, minutes: Unit, seconds: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Double, seconds: Double) = this()
+  def this(year: Double, month: Double, date: Double, hours: Unit, minutes: Unit, seconds: Double) = this()
   def this(
     year: Double,
     month: Double,
@@ -60,6 +63,69 @@ class LocaleConfig () extends ^ {
     hours: Double,
     minutes: Double,
     seconds: Double,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
     milliseconds: Double
   ) = this()
   def this(
@@ -72,59 +138,172 @@ class LocaleConfig () extends ^ {
     milliseconds: Double,
     utcmode: Boolean
   ) = this()
-}
-
-/* static members */
-@JSImport("react-native-calendars", "LocaleConfig")
-@js.native
-object LocaleConfig extends js.Object {
-  var defaultLocale: String = js.native
-  var formatters: formattersInfo = js.native
-  var locales: StringDictionary[localeDetail] = js.native
-  /*
-    *Returns a milliseconds time since the epoch for the given UTC date
-    */
-  def UTC(
+  def this(
     year: Double,
     month: Double,
     date: Double,
     hours: Double,
     minutes: Double,
     seconds: Double,
-    milliseconds: Double
-  ): XDate = js.native
-  def UTC(year: Double, month: Double, day: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double): Double = js.native
-  def UTC(year: Double, month: Double, day: Double, hours: Double, minutes: Double, seconds: Double): Double = js.native
-  @JSName("UTC")
-  def UTC_Double(
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
     year: Double,
     month: Double,
-    day: Double,
+    date: Double,
     hours: Double,
     minutes: Double,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
     seconds: Double,
-    ms: Double
-  ): Double = js.native
-  //------------
-  //Static function
-  //------------
-  /*
-    *Returns the number of days in the given month
-    */
-  def getDaysInMonth(year: Double, month: Double): Double = js.native
-  /*
-    *Returns the current date, as milliseconds since the epoch. You'll probably want to use new XDate() instead.
-    */
-  def now(): Double = js.native
-  /*
-    *Parses a date-string and returns milliseconds since the epoch. You'll probably want to use new XDate(dateString) instead.
-    */
-  def parse(dateString: String): Double = js.native
-  /*
-    *Returns the current date with time cleared, as an XDate object
-    */
-  def today(): XDate = js.native
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Double,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Double,
+    seconds: Unit,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Double,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Double,
+    utcmode: Boolean
+  ) = this()
+  def this(
+    year: Double,
+    month: Double,
+    date: Double,
+    hours: Unit,
+    minutes: Unit,
+    seconds: Unit,
+    milliseconds: Unit,
+    utcmode: Boolean
+  ) = this()
 }
-
+/* static members */
+object LocaleConfig {
+  
+  @JSImport("react-native-calendars", "LocaleConfig")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-calendars", "LocaleConfig.locales")
+  @js.native
+  def locales: StringDictionary[
+    (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof XDateLocaleConfig.locales * / any[string] */ js.Any) & Today
+  ] = js.native
+  inline def locales_=(
+    x: StringDictionary[
+      (/* import warning: importer.ImportType#apply Failed type conversion: / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof XDateLocaleConfig.locales * / any[string] */ js.Any) & Today
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("locales")(x.asInstanceOf[js.Any])
+}

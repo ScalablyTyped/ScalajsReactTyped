@@ -1,38 +1,58 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MotorOption extends js.Object {
+trait MotorOption extends StObject {
+  
   var address: js.UndefOr[Double] = js.undefined
-  var bits: js.UndefOr[js.Any] = js.undefined
+  
+  var bits: js.UndefOr[Any] = js.undefined
+  
   var controller: js.UndefOr[String] = js.undefined
+  
   var current: js.UndefOr[SensorOption] = js.undefined
+  
   var invertPWM: js.UndefOr[Boolean] = js.undefined
+  
   var pins: MotorPins
-  var register: js.UndefOr[js.Any] = js.undefined
+  
+  var register: js.UndefOr[Any] = js.undefined
 }
-
 object MotorOption {
-  @scala.inline
-  def apply(
-    pins: MotorPins,
-    address: Int | Double = null,
-    bits: js.Any = null,
-    controller: String = null,
-    current: SensorOption = null,
-    invertPWM: js.UndefOr[Boolean] = js.undefined,
-    register: js.Any = null
-  ): MotorOption = {
+  
+  inline def apply(pins: MotorPins): MotorOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (bits != null) __obj.updateDynamic("bits")(bits.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertPWM)) __obj.updateDynamic("invertPWM")(invertPWM.asInstanceOf[js.Any])
-    if (register != null) __obj.updateDynamic("register")(register.asInstanceOf[js.Any])
     __obj.asInstanceOf[MotorOption]
   }
+  
+  extension [Self <: MotorOption](x: Self) {
+    
+    inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setBits(value: Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    
+    inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setCurrent(value: SensorOption): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    
+    inline def setInvertPWM(value: Boolean): Self = StObject.set(x, "invertPWM", value.asInstanceOf[js.Any])
+    
+    inline def setInvertPWMUndefined: Self = StObject.set(x, "invertPWM", js.undefined)
+    
+    inline def setPins(value: MotorPins): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    
+    inline def setRegister(value: Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    
+    inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+  }
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.pathfinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Finder extends js.Object {
+trait Finder extends StObject {
+  
   def findPath(startX: Double, startY: Double, endX: Double, endY: Double, matrix: Grid): js.Array[js.Array[Double]]
 }
-
 object Finder {
-  @scala.inline
-  def apply(findPath: (Double, Double, Double, Double, Grid) => CallbackTo[js.Array[js.Array[Double]]]): Finder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("findPath")(js.Any.fromFunction5((t0: scala.Double, t1: scala.Double, t2: scala.Double, t3: scala.Double, t4: typingsJapgolly.pathfinding.mod.Grid) => findPath(t0, t1, t2, t3, t4).runNow()))
+  
+  inline def apply(findPath: (Double, Double, Double, Double, Grid) => js.Array[js.Array[Double]]): Finder = {
+    val __obj = js.Dynamic.literal(findPath = js.Any.fromFunction5(findPath))
     __obj.asInstanceOf[Finder]
   }
+  
+  extension [Self <: Finder](x: Self) {
+    
+    inline def setFindPath(value: (Double, Double, Double, Double, Grid) => js.Array[js.Array[Double]]): Self = StObject.set(x, "findPath", js.Any.fromFunction5(value))
+  }
 }
-

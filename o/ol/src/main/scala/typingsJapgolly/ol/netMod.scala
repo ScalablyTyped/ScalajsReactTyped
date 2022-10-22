@@ -1,19 +1,22 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/net", JSImport.Namespace)
-@js.native
-object netMod extends js.Object {
-  def jsonp(url: String, callback: js.Function0[Unit]): Unit = js.native
-  def jsonp(url: String, callback: js.Function0[Unit], opt_errback: js.Function0[Unit]): Unit = js.native
-  def jsonp(
+object netMod {
+  
+  @JSImport("ol/net", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def jsonp(url: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def jsonp(url: String, callback: js.Function0[Unit], opt_errback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opt_errback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def jsonp(
     url: String,
     callback: js.Function0[Unit],
     opt_errback: js.Function0[Unit],
     opt_callbackParam: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opt_errback.asInstanceOf[js.Any], opt_callbackParam.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def jsonp(url: String, callback: js.Function0[Unit], opt_errback: Unit, opt_callbackParam: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("jsonp")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], opt_errback.asInstanceOf[js.Any], opt_callbackParam.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

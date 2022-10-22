@@ -1,19 +1,29 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolColorProviderMod.DocumentColorParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.textDocumentSlashdocumentColor
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.DocumentColorParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDotcolorProviderMod.DocumentColorRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "DocumentColorRequest")
-@js.native
-object DocumentColorRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
+object DocumentColorRequest {
+  
+  @JSImport("vscode-languageclient", "DocumentColorRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "DocumentColorRequest.method")
+  @js.native
+  val method: textDocumentSlashdocumentColor = js.native
+  
+  @JSImport("vscode-languageclient", "DocumentColorRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     DocumentColorParams, 
     js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.ColorInformation], 
+    js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.ColorInformation], 
     Unit, 
-    TextDocumentRegistrationOptions
+    DocumentColorRegistrationOptions
   ] = js.native
 }
-

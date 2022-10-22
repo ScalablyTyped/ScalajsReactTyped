@@ -9,12 +9,13 @@ import typingsJapgolly.agoraRtcSdk.agoraRtcSdkStrings.other
 import typingsJapgolly.agoraRtcSdk.agoraRtcSdkStrings.unknown
 import typingsJapgolly.agoraRtcSdk.agoraRtcSdkStrings.wifi
 import typingsJapgolly.agoraRtcSdk.agoraRtcSdkStrings.wimax
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**  Statistics of the system network. */
-trait NetworkStats extends js.Object {
+trait NetworkStats extends StObject {
+  
   /**
     * Network type.
     *
@@ -30,13 +31,15 @@ trait NetworkStats extends js.Object {
     */
   var NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED
 }
-
 object NetworkStats {
-  @scala.inline
-  def apply(NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): NetworkStats = {
-    val __obj = js.Dynamic.literal(NetworkType = NetworkType.asInstanceOf[js.Any])
   
+  inline def apply(NetworkType: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): NetworkStats = {
+    val __obj = js.Dynamic.literal(NetworkType = NetworkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkStats]
   }
+  
+  extension [Self <: NetworkStats](x: Self) {
+    
+    inline def setNetworkType(value: bluetooth | cellular | ethernet | none | wifi | wimax | other | unknown | UNSUPPORTED): Self = StObject.set(x, "NetworkType", value.asInstanceOf[js.Any])
+  }
 }
-

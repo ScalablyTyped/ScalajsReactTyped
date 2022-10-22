@@ -1,13 +1,22 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.InitializedParams
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.initialized
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.InitializedParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "InitializedNotification")
-@js.native
-object InitializedNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType[InitializedParams, Unit] = js.native
+object InitializedNotification {
+  
+  @JSImport("vscode-languageserver", "InitializedNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "InitializedNotification.method")
+  @js.native
+  val method: initialized = js.native
+  
+  @JSImport("vscode-languageserver", "InitializedNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType[InitializedParams, Unit] = js.native
 }
-

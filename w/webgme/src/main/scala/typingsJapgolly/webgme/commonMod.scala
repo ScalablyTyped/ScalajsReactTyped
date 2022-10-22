@@ -1,15 +1,22 @@
 package typingsJapgolly.webgme
 
+import typingsJapgolly.webgme.GmeCommon.NodeId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webgme/common", JSImport.Namespace)
-@js.native
-object commonMod extends js.Object {
-  @js.native
-  class Pointer ()
-    extends typingsJapgolly.webgme.GmeCommon.Pointer
+object commonMod {
   
+  @JSImport("webgme/common", "Pointer")
+  @js.native
+  open class Pointer ()
+    extends StObject
+       with typingsJapgolly.webgme.GmeCommon.Pointer {
+    
+    /* CompleteClass */
+    var from: NodeId = js.native
+    
+    /* CompleteClass */
+    var to: NodeId = js.native
+  }
 }
-

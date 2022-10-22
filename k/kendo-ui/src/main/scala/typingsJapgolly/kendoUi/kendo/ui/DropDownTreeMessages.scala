@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownTreeMessages extends js.Object {
+trait DropDownTreeMessages extends StObject {
+  
   var clear: js.UndefOr[String] = js.undefined
+  
   var deleteTag: js.UndefOr[String] = js.undefined
+  
   var singleTag: js.UndefOr[String] = js.undefined
 }
-
 object DropDownTreeMessages {
-  @scala.inline
-  def apply(clear: String = null, deleteTag: String = null, singleTag: String = null): DropDownTreeMessages = {
+  
+  inline def apply(): DropDownTreeMessages = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (deleteTag != null) __obj.updateDynamic("deleteTag")(deleteTag.asInstanceOf[js.Any])
-    if (singleTag != null) __obj.updateDynamic("singleTag")(singleTag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownTreeMessages]
   }
+  
+  extension [Self <: DropDownTreeMessages](x: Self) {
+    
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    
+    inline def setDeleteTag(value: String): Self = StObject.set(x, "deleteTag", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteTagUndefined: Self = StObject.set(x, "deleteTag", js.undefined)
+    
+    inline def setSingleTag(value: String): Self = StObject.set(x, "singleTag", value.asInstanceOf[js.Any])
+    
+    inline def setSingleTagUndefined: Self = StObject.set(x, "singleTag", js.undefined)
+  }
 }
-

@@ -8,6 +8,7 @@ import typingsJapgolly.phaser.Phaser.Scenes.SceneManager
 import typingsJapgolly.phaser.Phaser.Scenes.Systems
 import typingsJapgolly.phaser.Phaser.Structs.Set
 import typingsJapgolly.phaser.Phaser.Textures.TextureManager
+import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.AsepriteFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.AtlasJSONFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.AudioFileConfig
@@ -23,6 +24,7 @@ import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.ImageFrameConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.JSONFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.MultiAtlasFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.MultiScriptFileConfig
+import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.OBJFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.PackFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.PluginFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.SVGFileConfig
@@ -39,10 +41,9 @@ import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.UnityAtlasFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.VideoFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.XMLFileConfig
 import typingsJapgolly.phaser.Phaser.Types.Loader.XHRSettingsObject
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Loader handles loading all external content such as Images, Sounds, Texture Atlases and data files.
@@ -69,135 +70,11 @@ import scala.scalajs.js.annotation._
   * when it's instantiated. You can create your own custom file types by extending either the File or MultiFile classes.
   * See those files for more details.
   */
-@JSGlobal("Phaser.Loader.LoaderPlugin")
 @js.native
-class LoaderPlugin protected () extends EventEmitter {
-  /**
-    * 
-    * @param scene The Scene which owns this Loader instance.
-    */
-  def this(scene: Scene) = this()
-  /**
-    * If you want to append a URL before the path of any asset you can set this here.
-    * 
-    * Useful if allowing the asset base url to be configured outside of the game code.
-    * 
-    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setBaseURL()` and it'll do it for you.
-    */
-  var baseURL: String = js.native
-  /**
-    * A reference to the global Cache Manager.
-    */
-  var cacheManager: CacheManager = js.native
-  /**
-    * The crossOrigin value applied to loaded images. Very often this needs to be set to 'anonymous'.
-    */
-  var crossOrigin: String = js.native
-  /**
-    * Files are stored in this Set while they're in the process of being loaded.
-    * 
-    * Upon a successful load they are moved to the `queue` Set.
-    * 
-    * By the end of the load process this Set will be empty.
-    */
-  var inflight: Set[File] = js.native
-  /**
-    * Files are placed in this Set when they're added to the Loader via `addFile`.
-    * 
-    * They are moved to the `inflight` Set when they start loading, and assuming a successful
-    * load, to the `queue` Set for further processing.
-    * 
-    * By the end of the load process this Set will be empty.
-    */
-  var list: Set[File] = js.native
-  /**
-    * The number of concurrent / parallel resources to try and fetch at once.
-    * 
-    * Old browsers limit 6 requests per domain; modern ones, especially those with HTTP/2 don't limit it at all.
-    * 
-    * The default is 32 but you can change this in your Game Config, or by changing this property before the Loader starts.
-    */
-  var maxParallelDownloads: integer = js.native
-  /**
-    * The value of `path`, if set, is placed before any _relative_ file path given. For example:
-    * 
-    * ```javascript
-    * this.load.path = "images/sprites/";
-    * this.load.image("ball", "ball.png");
-    * this.load.image("tree", "level1/oaktree.png");
-    * this.load.image("boom", "http://server.com/explode.png");
-    * ```
-    * 
-    * Would load the `ball` file from `images/sprites/ball.png` and the tree from
-    * `images/sprites/level1/oaktree.png` but the file `boom` would load from the URL
-    * given as it's an absolute URL.
-    * 
-    * Please note that the path is added before the filename but *after* the baseURL (if set.)
-    * 
-    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setPath()` and it'll do it for you.
-    */
-  var path: String = js.native
-  /**
-    * An optional prefix that is automatically prepended to the start of every file key.
-    * If prefix was `MENU.` and you load an image with the key 'Background' the resulting key would be `MENU.Background`.
-    * You can set this directly, or call `Loader.setPrefix()`. It will then affect every file added to the Loader
-    * from that point on. It does _not_ change any file already in the load queue.
-    */
-  var prefix: String = js.native
-  /**
-    * The progress of the current load queue, as a float value between 0 and 1.
-    * This is updated automatically as files complete loading.
-    * Note that it is possible for this value to go down again if you add content to the current load queue during a load.
-    */
-  var progress: Double = js.native
-  /**
-    * Files are stored in this Set while they're being processed.
-    * 
-    * If the process is successful they are moved to their final destination, which could be
-    * a Cache or the Texture Manager.
-    * 
-    * At the end of the load process this Set will be empty.
-    */
-  var queue: Set[File] = js.native
-  /**
-    * The Scene which owns this Loader instance.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the global Scene Manager.
-    */
-  var sceneManager: SceneManager = js.native
-  /**
-    * The current state of the Loader.
-    */
-  val state: integer = js.native
-  /**
-    * A reference to the Scene Systems.
-    */
-  var systems: Systems = js.native
-  /**
-    * A reference to the global Texture Manager.
-    */
-  var textureManager: TextureManager = js.native
-  /**
-    * The total number of files that successfully loaded during the most recent load.
-    * This value is reset when you call `Loader.start`.
-    */
-  var totalComplete: integer = js.native
-  /**
-    * The total number of files that failed to load during the most recent load.
-    * This value is reset when you call `Loader.start`.
-    */
-  var totalFailed: integer = js.native
-  /**
-    * The total number of files to load. It may not always be accurate because you may add to the Loader during the process
-    * of loading, especially if you load a Pack File. Therefore this value can change, but in most cases remains static.
-    */
-  var totalToLoad: integer = js.native
-  /**
-    * xhr specific global settings (can be overridden on a per-file basis)
-    */
-  var xhr: XHRSettingsObject = js.native
+trait LoaderPlugin
+  extends StObject
+     with EventEmitter {
+  
   def addFile(file: js.Array[File]): Unit = js.native
   /**
     * Adds a file, or array of files, into the load queue.
@@ -212,6 +89,7 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param file The file, or array of files, to be added to the load queue.
     */
   def addFile(file: File): Unit = js.native
+  
   /**
     * Takes a well formed, fully parsed pack file object and adds its entries into the load queue. Usually you do not call
     * this method directly, but instead use `Loader.pack` and supply a path to a JSON file that holds the
@@ -220,11 +98,12 @@ class LoaderPlugin protected () extends EventEmitter {
     * You can also provide an optional key. If you do then it will only add the entries from that part of the pack into
     * to the load queue. If not specified it will add all entries it finds. For more details about the pack file format
     * see the `LoaderPlugin.pack` method.
-    * @param data The Pack File data to be parsed and each entry of it to added to the load queue.
+    * @param pack The Pack File data to be parsed and each entry of it to added to the load queue.
     * @param packKey An optional key to use from the pack file data.
     */
-  def addPack(data: js.Any): Boolean = js.native
-  def addPack(data: js.Any, packKey: String): Boolean = js.native
+  def addPack(pack: Any): Boolean = js.native
+  def addPack(pack: Any, packKey: String): Boolean = js.native
+  
   /**
     * Adds an Animation JSON Data file, or array of Animation JSON files, to the current load queue.
     * 
@@ -315,18 +194,158 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param dataKey When the Animation JSON file loads only this property will be stored in the Cache and used to create animation data.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def animation(key: String): LoaderPlugin = js.native
-  def animation(key: String, url: String): LoaderPlugin = js.native
-  def animation(key: String, url: String, dataKey: String): LoaderPlugin = js.native
-  def animation(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def animation(key: js.Array[JSONFileConfig]): LoaderPlugin = js.native
-  def animation(key: js.Array[JSONFileConfig], url: String): LoaderPlugin = js.native
-  def animation(key: js.Array[JSONFileConfig], url: String, dataKey: String): LoaderPlugin = js.native
-  def animation(key: js.Array[JSONFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def animation(key: JSONFileConfig): LoaderPlugin = js.native
-  def animation(key: JSONFileConfig, url: String): LoaderPlugin = js.native
-  def animation(key: JSONFileConfig, url: String, dataKey: String): LoaderPlugin = js.native
-  def animation(key: JSONFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def animation(key: String): this.type = js.native
+  def animation(key: String, url: String): this.type = js.native
+  def animation(key: String, url: String, dataKey: String): this.type = js.native
+  def animation(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: String, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: String, url: Unit, dataKey: String): this.type = js.native
+  def animation(key: String, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: String, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig]): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: String): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: String, dataKey: String): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: Unit, dataKey: String): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: js.Array[JSONFileConfig], url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: JSONFileConfig): this.type = js.native
+  def animation(key: JSONFileConfig, url: String): this.type = js.native
+  def animation(key: JSONFileConfig, url: String, dataKey: String): this.type = js.native
+  def animation(key: JSONFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: JSONFileConfig, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: JSONFileConfig, url: Unit, dataKey: String): this.type = js.native
+  def animation(key: JSONFileConfig, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def animation(key: JSONFileConfig, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * Aseprite is a powerful animated sprite editor and pixel art tool.
+    * 
+    * You can find more details at https://www.aseprite.org/
+    * 
+    * Adds a JSON based Aseprite Animation, or array of animations, to the current load queue.
+    * 
+    * You can call this method from within your Scene's `preload`, along with any other files you wish to load:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.aseprite('gladiator', 'images/Gladiator.png', 'images/Gladiator.json');
+    * }
+    * ```
+    * 
+    * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
+    * or if it's already running, when the next free load slot becomes available. This happens automatically if you
+    * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
+    * it means you cannot use the file immediately after calling this method, but must wait for the file to complete.
+    * The typical flow for a Phaser Scene is that you load assets in the Scene's `preload` method and then when the
+    * Scene's `create` method is called you are guaranteed that all of those assets are ready for use and have been
+    * loaded.
+    * 
+    * If you call this from outside of `preload` then you are responsible for starting the Loader afterwards and monitoring
+    * its events to know when it's safe to use the asset. Please see the Phaser.Loader.LoaderPlugin class for more details.
+    * 
+    * To export a compatible JSON file in Aseprite, please do the following:
+    * 
+    * 1. Go to "File - Export Sprite Sheet"
+    * 
+    * 2. On the **Layout** tab:
+    * 2a. Set the "Sheet type" to "Packed"
+    * 2b. Set the "Constraints" to "None"
+    * 2c. Check the "Merge Duplicates" checkbox
+    * 
+    * 3. On the **Sprite** tab:
+    * 3a. Set "Layers" to "Visible layers"
+    * 3b. Set "Frames" to "All frames", unless you only wish to export a sub-set of tags
+    * 
+    * 4. On the **Borders** tab:
+    * 4a. Check the "Trim Sprite" and "Trim Cells" options
+    * 4b. Ensure "Border Padding", "Spacing" and "Inner Padding" are all > 0 (1 is usually enough)
+    * 
+    * 5. On the **Output** tab:
+    * 5a. Check "Output File", give your image a name and make sure you choose "png files" as the file type
+    * 5b. Check "JSON Data" and give your json file a name
+    * 5c. The JSON Data type can be either a Hash or Array, Phaser doesn't mind.
+    * 5d. Make sure "Tags" is checked in the Meta options
+    * 5e. In the "Item Filename" input box, make sure it says just "{frame}" and nothing more.
+    * 
+    * 6. Click export
+    * 
+    * This was tested with Aseprite 1.2.25.
+    * 
+    * This will export a png and json file which you can load using the Aseprite Loader, i.e.:
+    * 
+    * Phaser can load all common image types: png, jpg, gif and any other format the browser can natively handle.
+    * 
+    * The key must be a unique String. It is used to add the file to the global Texture Manager upon a successful load.
+    * The key should be unique both in terms of files being loaded and files already present in the Texture Manager.
+    * Loading a file using a key that is already taken will result in a warning. If you wish to replace an existing file
+    * then remove it from the Texture Manager first, before loading a new one.
+    * 
+    * Instead of passing arguments you can pass a configuration object, such as:
+    * 
+    * ```javascript
+    * this.load.aseprite({
+    *     key: 'gladiator',
+    *     textureURL: 'images/Gladiator.png',
+    *     atlasURL: 'images/Gladiator.json'
+    * });
+    * ```
+    * 
+    * See the documentation for `Phaser.Types.Loader.FileTypes.AsepriteFileConfig` for more details.
+    * 
+    * Instead of passing a URL for the JSON data you can also pass in a well formed JSON object instead.
+    * 
+    * Once loaded, you can call this method from within a Scene with the 'atlas' key:
+    * 
+    * ```javascript
+    * this.anims.createFromAseprite('paladin');
+    * ```
+    * 
+    * Any animations defined in the JSON will now be available to use in Phaser and you play them
+    * via their Tag name. For example, if you have an animation called 'War Cry' on your Aseprite timeline,
+    * you can play it in Phaser using that Tag name:
+    * 
+    * ```javascript
+    * this.add.sprite(400, 300).play('War Cry');
+    * ```
+    * 
+    * When calling this method you can optionally provide an array of tag names, and only those animations
+    * will be created. For example:
+    * 
+    * ```javascript
+    * this.anims.createFromAseprite('paladin', [ 'step', 'War Cry', 'Magnum Break' ]);
+    * ```
+    * 
+    * This will only create the 3 animations defined. Note that the tag names are case-sensitive.
+    * 
+    * If you have specified a prefix in the loader, via `Loader.setPrefix` then this value will be prepended to this files
+    * key. For example, if the prefix was `MENU.` and the key was `Background` the final key will be `MENU.Background` and
+    * this is what you would use to retrieve the image from the Texture Manager.
+    * 
+    * The URL can be relative or absolute. If the URL is relative the `Loader.baseURL` and `Loader.path` values will be prepended to it.
+    * 
+    * If the URL isn't specified the Loader will take the key and create a filename from that. For example if the key is "alien"
+    * and no URL is given then the Loader will set the URL to be "alien.png". It will always add `.png` as the extension, although
+    * this can be overridden if using an object instead of method arguments. If you do not desire this action then provide a URL.
+    * 
+    * Note: The ability to load this type of file will only be available if the Aseprite File type has been built into Phaser.
+    * It is available in the default build but can be excluded from custom builds.
+    * @param key The key to use for this file, or a file configuration object, or array of them.
+    * @param textureURL The absolute or relative URL to load the texture image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
+    * @param atlasURL The absolute or relative URL to load the texture atlas json data file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, a well formed JSON object.
+    * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
+    * @param atlasXhrSettings An XHR Settings configuration object for the atlas json file. Used in replacement of the Loaders default XHR Settings.
+    */
+  def aseprite(
+    key: String | AsepriteFileConfig | js.Array[AsepriteFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    atlasURL: js.UndefOr[js.Object | String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
   /**
     * Adds a JSON based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -421,93 +440,18 @@ class LoaderPlugin protected () extends EventEmitter {
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
     * @param textureURL The absolute or relative URL to load the texture image file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
-    * @param atlasURL The absolute or relative URL to load the texture atlas json data file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json".
+    * @param atlasURL The absolute or relative URL to load the texture atlas json data file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, a well formed JSON object.
     * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
     * @param atlasXhrSettings An XHR Settings configuration object for the atlas json file. Used in replacement of the Loaders default XHR Settings.
     */
-  def atlas(key: String): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: String): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: String, atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
   def atlas(
-    key: String,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlas(key: String, textureURL: js.Array[String], atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def atlas(
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(key: js.Array[AtlasJSONFileConfig]): LoaderPlugin = js.native
-  def atlas(key: js.Array[AtlasJSONFileConfig], textureURL: String): LoaderPlugin = js.native
-  def atlas(key: js.Array[AtlasJSONFileConfig], textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlas(
-    key: js.Array[AtlasJSONFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(
-    key: js.Array[AtlasJSONFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(key: js.Array[AtlasJSONFileConfig], textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlas(key: js.Array[AtlasJSONFileConfig], textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlas(
-    key: js.Array[AtlasJSONFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(
-    key: js.Array[AtlasJSONFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(key: AtlasJSONFileConfig): LoaderPlugin = js.native
-  def atlas(key: AtlasJSONFileConfig, textureURL: String): LoaderPlugin = js.native
-  def atlas(key: AtlasJSONFileConfig, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlas(
-    key: AtlasJSONFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(
-    key: AtlasJSONFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(key: AtlasJSONFileConfig, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlas(key: AtlasJSONFileConfig, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlas(
-    key: AtlasJSONFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlas(
-    key: AtlasJSONFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | AtlasJSONFileConfig | js.Array[AtlasJSONFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    atlasURL: js.UndefOr[js.Object | String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
   /**
     * Adds an XML based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -602,89 +546,14 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
     * @param atlasXhrSettings An XHR Settings configuration object for the atlas xml file. Used in replacement of the Loaders default XHR Settings.
     */
-  def atlasXML(key: String): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: String): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: String, atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
   def atlasXML(
-    key: String,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(key: String, textureURL: js.Array[String], atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def atlasXML(
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(key: js.Array[AtlasXMLFileConfig]): LoaderPlugin = js.native
-  def atlasXML(key: js.Array[AtlasXMLFileConfig], textureURL: String): LoaderPlugin = js.native
-  def atlasXML(key: js.Array[AtlasXMLFileConfig], textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(
-    key: js.Array[AtlasXMLFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(
-    key: js.Array[AtlasXMLFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(key: js.Array[AtlasXMLFileConfig], textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlasXML(key: js.Array[AtlasXMLFileConfig], textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(
-    key: js.Array[AtlasXMLFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(
-    key: js.Array[AtlasXMLFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(key: AtlasXMLFileConfig): LoaderPlugin = js.native
-  def atlasXML(key: AtlasXMLFileConfig, textureURL: String): LoaderPlugin = js.native
-  def atlasXML(key: AtlasXMLFileConfig, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(
-    key: AtlasXMLFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(
-    key: AtlasXMLFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(key: AtlasXMLFileConfig, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def atlasXML(key: AtlasXMLFileConfig, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def atlasXML(
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def atlasXML(
-    key: AtlasXMLFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | AtlasXMLFileConfig | js.Array[AtlasXMLFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    atlasURL: js.UndefOr[String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
   /**
     * Adds an Audio or HTML5Audio file, or array of audio files, to the current load queue.
     * 
@@ -736,32 +605,53 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param config An object containing an `instances` property for HTML5Audio. Defaults to 1.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def audio(key: String): LoaderPlugin = js.native
-  def audio(key: String, urls: String): LoaderPlugin = js.native
-  def audio(key: String, urls: String, config: js.Any): LoaderPlugin = js.native
-  def audio(key: String, urls: String, config: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def audio(key: String, urls: js.Array[String]): LoaderPlugin = js.native
-  def audio(key: String, urls: js.Array[String], config: js.Any): LoaderPlugin = js.native
-  def audio(key: String, urls: js.Array[String], config: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig]): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: js.Any): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: String, config: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String]): LoaderPlugin = js.native
-  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String], config: js.Any): LoaderPlugin = js.native
+  def audio(key: String): this.type = js.native
+  def audio(key: String, urls: String): this.type = js.native
+  def audio(key: String, urls: String, config: Any): this.type = js.native
+  def audio(key: String, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: js.Array[String]): this.type = js.native
+  def audio(key: String, urls: js.Array[String], config: Any): this.type = js.native
+  def audio(key: String, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: Unit, config: Any): this.type = js.native
+  def audio(key: String, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: String, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig]): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String]): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: js.Array[String], config: Any): this.type = js.native
   def audio(
     key: js.Array[AudioFileConfig],
     urls: js.Array[String],
-    config: js.Any,
+    config: Any,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: String): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: String, config: js.Any): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: String, config: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String]): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any): LoaderPlugin = js.native
-  def audio(key: AudioFileConfig, urls: js.Array[String], config: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  ): this.type = js.native
+  def audio(
+    key: js.Array[AudioFileConfig],
+    urls: js.Array[String],
+    config: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: js.Array[AudioFileConfig], urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String, config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: String, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String]): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String], config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: js.Array[String], config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: Unit, config: Any): this.type = js.native
+  def audio(key: AudioFileConfig, urls: Unit, config: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def audio(key: AudioFileConfig, urls: Unit, config: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a JSON based Audio Sprite, or array of audio sprites, to the current load queue.
     * 
@@ -855,116 +745,24 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param audioXhrSettings An XHR Settings configuration object for the audio file. Used in replacement of the Loaders default XHR Settings.
     * @param jsonXhrSettings An XHR Settings configuration object for the json file. Used in replacement of the Loaders default XHR Settings.
     */
-  def audioSprite(key: String, jsonURL: String): LoaderPlugin = js.native
-  def audioSprite(key: String, jsonURL: String, audioURL: String): LoaderPlugin = js.native
-  def audioSprite(key: String, jsonURL: String, audioURL: String, audioConfig: js.Any): LoaderPlugin = js.native
   def audioSprite(
-    key: String,
+    key: String | AudioSpriteFileConfig | js.Array[AudioSpriteFileConfig],
     jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: String,
-    jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(key: String, jsonURL: String, audioURL: js.Array[String]): LoaderPlugin = js.native
-  def audioSprite(key: String, jsonURL: String, audioURL: js.Array[String], audioConfig: js.Any): LoaderPlugin = js.native
-  def audioSprite(
-    key: String,
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: String,
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(key: js.Array[AudioSpriteFileConfig], jsonURL: String): LoaderPlugin = js.native
-  def audioSprite(key: js.Array[AudioSpriteFileConfig], jsonURL: String, audioURL: String): LoaderPlugin = js.native
-  def audioSprite(key: js.Array[AudioSpriteFileConfig], jsonURL: String, audioURL: String, audioConfig: js.Any): LoaderPlugin = js.native
-  def audioSprite(
-    key: js.Array[AudioSpriteFileConfig],
-    jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: js.Array[AudioSpriteFileConfig],
-    jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(key: js.Array[AudioSpriteFileConfig], jsonURL: String, audioURL: js.Array[String]): LoaderPlugin = js.native
-  def audioSprite(
-    key: js.Array[AudioSpriteFileConfig],
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: js.Array[AudioSpriteFileConfig],
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: js.Array[AudioSpriteFileConfig],
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(key: AudioSpriteFileConfig, jsonURL: String): LoaderPlugin = js.native
-  def audioSprite(key: AudioSpriteFileConfig, jsonURL: String, audioURL: String): LoaderPlugin = js.native
-  def audioSprite(key: AudioSpriteFileConfig, jsonURL: String, audioURL: String, audioConfig: js.Any): LoaderPlugin = js.native
-  def audioSprite(
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: String,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(key: AudioSpriteFileConfig, jsonURL: String, audioURL: js.Array[String]): LoaderPlugin = js.native
-  def audioSprite(key: AudioSpriteFileConfig, jsonURL: String, audioURL: js.Array[String], audioConfig: js.Any): LoaderPlugin = js.native
-  def audioSprite(
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def audioSprite(
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Array[String],
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    audioURL: js.UndefOr[String | js.Array[String]],
+    audioConfig: js.UndefOr[Any],
+    audioXhrSettings: js.UndefOr[XHRSettingsObject],
+    jsonXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
+  /**
+    * If you want to append a URL before the path of any asset you can set this here.
+    * 
+    * Useful if allowing the asset base url to be configured outside of the game code.
+    * 
+    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setBaseURL()` and it'll do it for you.
+    */
+  var baseURL: String = js.native
+  
   /**
     * Adds a Binary file, or array of Binary files, to the current load queue.
     * 
@@ -1027,18 +825,31 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param dataType Optional type to cast the binary file to once loaded. For example, `Uint8Array`.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def binary(key: String): LoaderPlugin = js.native
-  def binary(key: String, url: String): LoaderPlugin = js.native
-  def binary(key: String, url: String, dataType: js.Any): LoaderPlugin = js.native
-  def binary(key: String, url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def binary(key: js.Array[BinaryFileConfig]): LoaderPlugin = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: String): LoaderPlugin = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: js.Any): LoaderPlugin = js.native
-  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def binary(key: BinaryFileConfig): LoaderPlugin = js.native
-  def binary(key: BinaryFileConfig, url: String): LoaderPlugin = js.native
-  def binary(key: BinaryFileConfig, url: String, dataType: js.Any): LoaderPlugin = js.native
-  def binary(key: BinaryFileConfig, url: String, dataType: js.Any, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def binary(key: String): this.type = js.native
+  def binary(key: String, url: String): this.type = js.native
+  def binary(key: String, url: String, dataType: Any): this.type = js.native
+  def binary(key: String, url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: String, url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: String, url: Unit, dataType: Any): this.type = js.native
+  def binary(key: String, url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: String, url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig]): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Any): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Any): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: js.Array[BinaryFileConfig], url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String, dataType: Any): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig, url: String, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig, url: Unit, dataType: Any): this.type = js.native
+  def binary(key: BinaryFileConfig, url: Unit, dataType: Any, xhrSettings: XHRSettingsObject): this.type = js.native
+  def binary(key: BinaryFileConfig, url: Unit, dataType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an XML based Bitmap Font, or array of fonts, to the current load queue.
     * 
@@ -1131,94 +942,24 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param textureXhrSettings An XHR Settings configuration object for the font image file. Used in replacement of the Loaders default XHR Settings.
     * @param fontDataXhrSettings An XHR Settings configuration object for the font data xml file. Used in replacement of the Loaders default XHR Settings.
     */
-  def bitmapFont(key: String): LoaderPlugin = js.native
-  def bitmapFont(key: String, textureURL: String): LoaderPlugin = js.native
-  def bitmapFont(key: String, textureURL: String, fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(key: String, textureURL: String, fontDataURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
   def bitmapFont(
-    key: String,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(key: String, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def bitmapFont(key: String, textureURL: js.Array[String], fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(
-    key: String,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(
-    key: String,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(key: js.Array[BitmapFontFileConfig]): LoaderPlugin = js.native
-  def bitmapFont(key: js.Array[BitmapFontFileConfig], textureURL: String): LoaderPlugin = js.native
-  def bitmapFont(key: js.Array[BitmapFontFileConfig], textureURL: String, fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(
-    key: js.Array[BitmapFontFileConfig],
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(
-    key: js.Array[BitmapFontFileConfig],
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(key: js.Array[BitmapFontFileConfig], textureURL: js.Array[String]): LoaderPlugin = js.native
-  def bitmapFont(key: js.Array[BitmapFontFileConfig], textureURL: js.Array[String], fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(
-    key: js.Array[BitmapFontFileConfig],
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(
-    key: js.Array[BitmapFontFileConfig],
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(key: BitmapFontFileConfig): LoaderPlugin = js.native
-  def bitmapFont(key: BitmapFontFileConfig, textureURL: String): LoaderPlugin = js.native
-  def bitmapFont(key: BitmapFontFileConfig, textureURL: String, fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(
-    key: BitmapFontFileConfig,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(
-    key: BitmapFontFileConfig,
-    textureURL: String,
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(key: BitmapFontFileConfig, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def bitmapFont(key: BitmapFontFileConfig, textureURL: js.Array[String], fontDataURL: String): LoaderPlugin = js.native
-  def bitmapFont(
-    key: BitmapFontFileConfig,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def bitmapFont(
-    key: BitmapFontFileConfig,
-    textureURL: js.Array[String],
-    fontDataURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    fontDataXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | BitmapFontFileConfig | js.Array[BitmapFontFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    fontDataURL: js.UndefOr[String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    fontDataXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
+  /**
+    * A reference to the global Cache Manager.
+    */
+  var cacheManager: CacheManager = js.native
+  
+  /**
+    * The crossOrigin value applied to loaded images. Very often this needs to be set to 'anonymous'.
+    */
+  var crossOrigin: String = js.native
+  
   /**
     * Adds a CSS file, or array of CSS files, to the current load queue.
     * 
@@ -1268,15 +1009,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.css`, i.e. if `key` was "alien" then the URL will be "alien.css".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def css(key: String): LoaderPlugin = js.native
-  def css(key: String, url: String): LoaderPlugin = js.native
-  def css(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def css(key: js.Array[CSSFileConfig]): LoaderPlugin = js.native
-  def css(key: js.Array[CSSFileConfig], url: String): LoaderPlugin = js.native
-  def css(key: js.Array[CSSFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def css(key: CSSFileConfig): LoaderPlugin = js.native
-  def css(key: CSSFileConfig, url: String): LoaderPlugin = js.native
-  def css(key: CSSFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def css(key: String): this.type = js.native
+  def css(key: String, url: String): this.type = js.native
+  def css(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def css(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def css(key: js.Array[CSSFileConfig]): this.type = js.native
+  def css(key: js.Array[CSSFileConfig], url: String): this.type = js.native
+  def css(key: js.Array[CSSFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def css(key: js.Array[CSSFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def css(key: CSSFileConfig): this.type = js.native
+  def css(key: CSSFileConfig, url: String): this.type = js.native
+  def css(key: CSSFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def css(key: CSSFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * An internal method that is called automatically by the File when it has finished processing.
     * 
@@ -1286,11 +1031,13 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param file The file that has finished processing.
     */
   def fileProcessComplete(file: File): Unit = js.native
+  
   /**
     * Adds a File into the pending-deletion queue.
     * @param file The File to be queued for deletion when the Loader completes.
     */
   def flagForRemoval(file: File): Unit = js.native
+  
   /**
     * Adds a GLSL file, or array of GLSL files, to the current load queue.
     * In Phaser 3 GLSL files are just plain Text files at the current moment in time.
@@ -1354,18 +1101,31 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param shaderType The type of shader. Either `fragment` for a fragment shader, or `vertex` for a vertex shader. This is ignored if you load a shader bundle. Default 'fragment'.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def glsl(key: String): LoaderPlugin = js.native
-  def glsl(key: String, url: String): LoaderPlugin = js.native
-  def glsl(key: String, url: String, shaderType: String): LoaderPlugin = js.native
-  def glsl(key: String, url: String, shaderType: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def glsl(key: js.Array[GLSLFileConfig]): LoaderPlugin = js.native
-  def glsl(key: js.Array[GLSLFileConfig], url: String): LoaderPlugin = js.native
-  def glsl(key: js.Array[GLSLFileConfig], url: String, shaderType: String): LoaderPlugin = js.native
-  def glsl(key: js.Array[GLSLFileConfig], url: String, shaderType: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def glsl(key: GLSLFileConfig): LoaderPlugin = js.native
-  def glsl(key: GLSLFileConfig, url: String): LoaderPlugin = js.native
-  def glsl(key: GLSLFileConfig, url: String, shaderType: String): LoaderPlugin = js.native
-  def glsl(key: GLSLFileConfig, url: String, shaderType: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def glsl(key: String): this.type = js.native
+  def glsl(key: String, url: String): this.type = js.native
+  def glsl(key: String, url: String, shaderType: String): this.type = js.native
+  def glsl(key: String, url: String, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: String, url: String, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: String, url: Unit, shaderType: String): this.type = js.native
+  def glsl(key: String, url: Unit, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: String, url: Unit, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig]): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: String): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: String, shaderType: String): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: String, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: String, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: Unit, shaderType: String): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: Unit, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: js.Array[GLSLFileConfig], url: Unit, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: GLSLFileConfig): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: String): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: String, shaderType: String): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: String, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: String, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: Unit, shaderType: String): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: Unit, shaderType: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def glsl(key: GLSLFileConfig, url: Unit, shaderType: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an HTML file, or array of HTML files, to the current load queue.
     * 
@@ -1426,15 +1186,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.html`, i.e. if `key` was "alien" then the URL will be "alien.html".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def html(key: String): LoaderPlugin = js.native
-  def html(key: String, url: String): LoaderPlugin = js.native
-  def html(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def html(key: js.Array[HTMLFileConfig]): LoaderPlugin = js.native
-  def html(key: js.Array[HTMLFileConfig], url: String): LoaderPlugin = js.native
-  def html(key: js.Array[HTMLFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def html(key: HTMLFileConfig): LoaderPlugin = js.native
-  def html(key: HTMLFileConfig, url: String): LoaderPlugin = js.native
-  def html(key: HTMLFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def html(key: String): this.type = js.native
+  def html(key: String, url: String): this.type = js.native
+  def html(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def html(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def html(key: js.Array[HTMLFileConfig]): this.type = js.native
+  def html(key: js.Array[HTMLFileConfig], url: String): this.type = js.native
+  def html(key: js.Array[HTMLFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def html(key: js.Array[HTMLFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def html(key: HTMLFileConfig): this.type = js.native
+  def html(key: HTMLFileConfig, url: String): this.type = js.native
+  def html(key: HTMLFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def html(key: HTMLFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an HTML File, or array of HTML Files, to the current load queue. When the files are loaded they
     * will be rendered to textures and stored in the Texture Manager.
@@ -1509,33 +1273,127 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param height The height of the texture the HTML will be rendered to. Default 512.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def htmlTexture(key: String): LoaderPlugin = js.native
-  def htmlTexture(key: String, url: String): LoaderPlugin = js.native
-  def htmlTexture(key: String, url: String, width: integer): LoaderPlugin = js.native
-  def htmlTexture(key: String, url: String, width: integer, height: integer): LoaderPlugin = js.native
-  def htmlTexture(key: String, url: String, width: integer, height: integer, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig]): LoaderPlugin = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String): LoaderPlugin = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: integer): LoaderPlugin = js.native
-  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: integer, height: integer): LoaderPlugin = js.native
+  def htmlTexture(key: String): this.type = js.native
+  def htmlTexture(key: String, url: String): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: String, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: String, url: Unit, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig]): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Double): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Double, height: Double): this.type = js.native
   def htmlTexture(
     key: js.Array[HTMLTextureFileConfig],
     url: String,
-    width: integer,
-    height: integer,
+    width: Double,
+    height: Double,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def htmlTexture(key: HTMLTextureFileConfig): LoaderPlugin = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String): LoaderPlugin = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: integer): LoaderPlugin = js.native
-  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: integer, height: integer): LoaderPlugin = js.native
+  ): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Double,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Unit,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: String,
+    width: Unit,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Double, height: Double): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: Unit,
+    width: Double,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: Unit,
+    width: Double,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: js.Array[HTMLTextureFileConfig], url: Unit, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: Unit,
+    width: Unit,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(
+    key: js.Array[HTMLTextureFileConfig],
+    url: Unit,
+    width: Unit,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Double, height: Double): this.type = js.native
   def htmlTexture(
     key: HTMLTextureFileConfig,
     url: String,
-    width: integer,
-    height: integer,
+    width: Double,
+    height: Double,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+  ): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: String,
+    width: Double,
+    height: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: String,
+    width: Unit,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: String, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double, height: Double): this.type = js.native
+  def htmlTexture(
+    key: HTMLTextureFileConfig,
+    url: Unit,
+    width: Double,
+    height: Double,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Double, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Double): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Double, xhrSettings: XHRSettingsObject): this.type = js.native
+  def htmlTexture(key: HTMLTextureFileConfig, url: Unit, width: Unit, height: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an Image, or array of Images, to the current load queue.
     * 
@@ -1620,29 +1478,44 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.png`, i.e. if `key` was "alien" then the URL will be "alien.png".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def image(key: String): LoaderPlugin = js.native
-  def image(key: String, url: String): LoaderPlugin = js.native
-  def image(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def image(key: String, url: js.Array[String]): LoaderPlugin = js.native
-  def image(key: String, url: js.Array[String], xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def image(key: js.Array[ImageFileConfig]): LoaderPlugin = js.native
-  def image(key: js.Array[ImageFileConfig], url: String): LoaderPlugin = js.native
-  def image(key: js.Array[ImageFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def image(key: js.Array[ImageFileConfig], url: js.Array[String]): LoaderPlugin = js.native
-  def image(key: js.Array[ImageFileConfig], url: js.Array[String], xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def image(key: ImageFileConfig): LoaderPlugin = js.native
-  def image(key: ImageFileConfig, url: String): LoaderPlugin = js.native
-  def image(key: ImageFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def image(key: ImageFileConfig, url: js.Array[String]): LoaderPlugin = js.native
-  def image(key: ImageFileConfig, url: js.Array[String], xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def image(key: String): this.type = js.native
+  def image(key: String, url: String): this.type = js.native
+  def image(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: String, url: js.Array[String]): this.type = js.native
+  def image(key: String, url: js.Array[String], xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: js.Array[ImageFileConfig]): this.type = js.native
+  def image(key: js.Array[ImageFileConfig], url: String): this.type = js.native
+  def image(key: js.Array[ImageFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: js.Array[ImageFileConfig], url: js.Array[String]): this.type = js.native
+  def image(key: js.Array[ImageFileConfig], url: js.Array[String], xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: js.Array[ImageFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: ImageFileConfig): this.type = js.native
+  def image(key: ImageFileConfig, url: String): this.type = js.native
+  def image(key: ImageFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: ImageFileConfig, url: js.Array[String]): this.type = js.native
+  def image(key: ImageFileConfig, url: js.Array[String], xhrSettings: XHRSettingsObject): this.type = js.native
+  def image(key: ImageFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * Files are stored in this Set while they're in the process of being loaded.
+    * 
+    * Upon a successful load they are moved to the `queue` Set.
+    * 
+    * By the end of the load process this Set will be empty.
+    */
+  var inflight: Set[File] = js.native
+  
   /**
     * Is the Loader actively loading, or processing loaded files?
     */
   def isLoading(): Boolean = js.native
+  
   /**
     * Is the Loader ready to start a new load?
     */
   def isReady(): Boolean = js.native
+  
   /**
     * Adds a JSON file, or array of JSON files, to the current load queue.
     * 
@@ -1718,28 +1591,64 @@ class LoaderPlugin protected () extends EventEmitter {
     * Note: The ability to load this type of file will only be available if the JSON File type has been built into Phaser.
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
-    * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json".
+    * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, can be a fully formed JSON Object.
     * @param dataKey When the JSON file loads only this property will be stored in the Cache.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def json(key: String): LoaderPlugin = js.native
-  def json(key: String, url: String): LoaderPlugin = js.native
-  def json(key: String, url: String, dataKey: String): LoaderPlugin = js.native
-  def json(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def json(key: js.Array[JSONFileConfig]): LoaderPlugin = js.native
-  def json(key: js.Array[JSONFileConfig], url: String): LoaderPlugin = js.native
-  def json(key: js.Array[JSONFileConfig], url: String, dataKey: String): LoaderPlugin = js.native
-  def json(key: js.Array[JSONFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def json(key: JSONFileConfig): LoaderPlugin = js.native
-  def json(key: JSONFileConfig, url: String): LoaderPlugin = js.native
-  def json(key: JSONFileConfig, url: String, dataKey: String): LoaderPlugin = js.native
-  def json(key: JSONFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def json(key: String): this.type = js.native
+  def json(key: String, url: String): this.type = js.native
+  def json(key: String, url: String, dataKey: String): this.type = js.native
+  def json(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: String, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: String, url: js.Object): this.type = js.native
+  def json(key: String, url: js.Object, dataKey: String): this.type = js.native
+  def json(key: String, url: js.Object, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: String, url: js.Object, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: String, url: Unit, dataKey: String): this.type = js.native
+  def json(key: String, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: String, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig]): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: String): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: String, dataKey: String): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: js.Object): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: js.Object, dataKey: String): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: js.Object, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: js.Object, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: Unit, dataKey: String): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: js.Array[JSONFileConfig], url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig): this.type = js.native
+  def json(key: JSONFileConfig, url: String): this.type = js.native
+  def json(key: JSONFileConfig, url: String, dataKey: String): this.type = js.native
+  def json(key: JSONFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig, url: js.Object): this.type = js.native
+  def json(key: JSONFileConfig, url: js.Object, dataKey: String): this.type = js.native
+  def json(key: JSONFileConfig, url: js.Object, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig, url: js.Object, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig, url: Unit, dataKey: String): this.type = js.native
+  def json(key: JSONFileConfig, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def json(key: JSONFileConfig, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Checks the key and type of the given file to see if it will conflict with anything already
     * in a Cache, the Texture Manager, or the list or inflight queues.
     * @param file The file to check the key of.
     */
   def keyExists(file: File): Boolean = js.native
+  
+  /**
+    * Files are placed in this Set when they're added to the Loader via `addFile`.
+    * 
+    * They are moved to the `inflight` Set when they start loading, and assuming a successful
+    * load, to the `queue` Set for further processing.
+    * 
+    * By the end of the load process this Set will be empty.
+    */
+  var list: Set[File] = js.native
+  
   /**
     * Called at the end when the load queue is exhausted and all files have either loaded or errored.
     * By this point every loaded file will now be in its associated cache and ready for use.
@@ -1747,6 +1656,16 @@ class LoaderPlugin protected () extends EventEmitter {
     * Also clears down the Sets, puts progress to 1 and clears the deletion queue.
     */
   def loadComplete(): Unit = js.native
+  
+  /**
+    * The number of concurrent / parallel resources to try and fetch at once.
+    * 
+    * Old browsers limit 6 requests per domain; modern ones, especially those with HTTP/2 don't limit it at all.
+    * 
+    * The default is 32 but you can change this in your Game Config, or by changing this property before the Loader starts.
+    */
+  var maxParallelDownloads: Double = js.native
+  
   /**
     * Adds a Multi Texture Atlas, or array of multi atlases, to the current load queue.
     * 
@@ -1823,33 +1742,151 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param baseURL Optional Base URL to use when loading the textures defined in the atlas data.
     * @param atlasXhrSettings An XHR Settings configuration object for the atlas json file. Used in replacement of the Loaders default XHR Settings.
     */
-  def multiatlas(key: String): LoaderPlugin = js.native
-  def multiatlas(key: String, atlasURL: String): LoaderPlugin = js.native
-  def multiatlas(key: String, atlasURL: String, path: String): LoaderPlugin = js.native
-  def multiatlas(key: String, atlasURL: String, path: String, baseURL: String): LoaderPlugin = js.native
-  def multiatlas(key: String, atlasURL: String, path: String, baseURL: String, atlasXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def multiatlas(key: js.Array[MultiAtlasFileConfig]): LoaderPlugin = js.native
-  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String): LoaderPlugin = js.native
-  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String, path: String): LoaderPlugin = js.native
-  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String, path: String, baseURL: String): LoaderPlugin = js.native
+  def multiatlas(key: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: String, baseURL: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: String, baseURL: String, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: String, baseURL: Unit, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: Unit, baseURL: String, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: String, path: Unit, baseURL: Unit, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: String, baseURL: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: String, baseURL: String, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: String, baseURL: Unit, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: Unit, baseURL: String, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: String, atlasURL: Unit, path: Unit, baseURL: Unit, atlasXhrSettings: XHRSettingsObject): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig]): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String, path: String): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String, path: String, baseURL: String): this.type = js.native
   def multiatlas(
     key: js.Array[MultiAtlasFileConfig],
     atlasURL: String,
     path: String,
     baseURL: String,
     atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def multiatlas(key: MultiAtlasFileConfig): LoaderPlugin = js.native
-  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String): LoaderPlugin = js.native
-  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String, path: String): LoaderPlugin = js.native
-  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String, path: String, baseURL: String): LoaderPlugin = js.native
+  ): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: String,
+    path: String,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: String, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: String,
+    path: Unit,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: String,
+    path: Unit,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: Unit, path: String): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: Unit, path: String, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: Unit,
+    path: String,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: Unit,
+    path: String,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: js.Array[MultiAtlasFileConfig], atlasURL: Unit, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: Unit,
+    path: Unit,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: js.Array[MultiAtlasFileConfig],
+    atlasURL: Unit,
+    path: Unit,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String, path: String): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String, path: String, baseURL: String): this.type = js.native
   def multiatlas(
     key: MultiAtlasFileConfig,
     atlasURL: String,
     path: String,
     baseURL: String,
     atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+  ): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: String,
+    path: String,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: String, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: String,
+    path: Unit,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: String,
+    path: Unit,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: Unit, path: String): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: Unit, path: String, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: Unit,
+    path: String,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: Unit,
+    path: String,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(key: MultiAtlasFileConfig, atlasURL: Unit, path: Unit, baseURL: String): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: Unit,
+    path: Unit,
+    baseURL: String,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def multiatlas(
+    key: MultiAtlasFileConfig,
+    atlasURL: Unit,
+    path: Unit,
+    baseURL: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  
   /**
     * An internal method called automatically by the XHRLoader belong to a File.
     * 
@@ -1859,6 +1896,187 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param success `true` if the file loaded successfully, otherwise `false`.
     */
   def nextFile(file: File, success: Boolean): Unit = js.native
+  
+  /**
+    * Adds a Wavefront OBJ file, or array of OBJ files, to the current load queue.
+    * 
+    * Note: You should ensure your 3D package has triangulated the OBJ file prior to export.
+    * 
+    * You can call this method from within your Scene's `preload`, along with any other files you wish to load:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.obj('ufo', 'files/spaceship.obj');
+    * }
+    * ```
+    * 
+    * You can optionally also load a Wavefront Material file as well, by providing the 3rd parameter:
+    * 
+    * ```javascript
+    * function preload ()
+    * {
+    *     this.load.obj('ufo', 'files/spaceship.obj', 'files/spaceship.mtl');
+    * }
+    * ```
+    * 
+    * If given, the material will be parsed and stored along with the obj data in the cache.
+    * 
+    * The file is **not** loaded right away. It is added to a queue ready to be loaded either when the loader starts,
+    * or if it's already running, when the next free load slot becomes available. This happens automatically if you
+    * are calling this from within the Scene's `preload` method, or a related callback. Because the file is queued
+    * it means you cannot use the file immediately after calling this method, but must wait for the file to complete.
+    * The typical flow for a Phaser Scene is that you load assets in the Scene's `preload` method and then when the
+    * Scene's `create` method is called you are guaranteed that all of those assets are ready for use and have been
+    * loaded.
+    * 
+    * The key must be a unique String. It is used to add the file to the global OBJ Cache upon a successful load.
+    * The key should be unique both in terms of files being loaded and files already present in the OBJ Cache.
+    * Loading a file using a key that is already taken will result in a warning. If you wish to replace an existing file
+    * then remove it from the OBJ Cache first, before loading a new one.
+    * 
+    * Instead of passing arguments you can pass a configuration object, such as:
+    * 
+    * ```javascript
+    * this.load.obj({
+    *     key: 'ufo',
+    *     url: 'files/spaceship.obj',
+    *     matURL: 'files/spaceship.mtl',
+    *     flipUV: true
+    * });
+    * ```
+    * 
+    * See the documentation for `Phaser.Types.Loader.FileTypes.OBJFileConfig` for more details.
+    * 
+    * Once the file has finished loading you can access it from its Cache using its key:
+    * 
+    * ```javascript
+    * this.load.obj('ufo', 'files/spaceship.obj');
+    * // and later in your game ...
+    * var data = this.cache.obj.get('ufo');
+    * ```
+    * 
+    * If you have specified a prefix in the loader, via `Loader.setPrefix` then this value will be prepended to this files
+    * key. For example, if the prefix was `LEVEL1.` and the key was `Story` the final key will be `LEVEL1.Story` and
+    * this is what you would use to retrieve the obj from the OBJ Cache.
+    * 
+    * The URL can be relative or absolute. If the URL is relative the `Loader.baseURL` and `Loader.path` values will be prepended to it.
+    * 
+    * If the URL isn't specified the Loader will take the key and create a filename from that. For example if the key is "story"
+    * and no URL is given then the Loader will set the URL to be "story.obj". It will always add `.obj` as the extension, although
+    * this can be overridden if using an object instead of method arguments. If you do not desire this action then provide a URL.
+    * 
+    * Note: The ability to load this type of file will only be available if the OBJ File type has been built into Phaser.
+    * It is available in the default build but can be excluded from custom builds.
+    * @param key The key to use for this file, or a file configuration object, or array of them.
+    * @param objURL The absolute or relative URL to load the obj file from. If undefined or `null` it will be set to `<key>.obj`, i.e. if `key` was "alien" then the URL will be "alien.obj".
+    * @param matURL Optional absolute or relative URL to load the obj material file from.
+    * @param flipUV Flip the UV coordinates stored in the model data?
+    * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
+    */
+  def obj(key: String): this.type = js.native
+  def obj(key: String, objURL: String): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: String, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: String, objURL: Unit, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig]): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: String,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: Unit,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: String,
+    matURL: Unit,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: String,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: js.Array[OBJFileConfig], objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: Unit,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(
+    key: js.Array[OBJFileConfig],
+    objURL: Unit,
+    matURL: Unit,
+    flipUV: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: OBJFileConfig): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(
+    key: OBJFileConfig,
+    objURL: String,
+    matURL: String,
+    flipUV: Boolean,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: String, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: String, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Boolean): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Boolean, xhrSettings: XHRSettingsObject): this.type = js.native
+  def obj(key: OBJFileConfig, objURL: Unit, matURL: Unit, flipUV: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a JSON File Pack, or array of packs, to the current load queue.
     * 
@@ -1875,7 +2093,7 @@ class LoaderPlugin protected () extends EventEmitter {
     * Here is a small example:
     * 
     * ```json
-    * { 
+    * {
     *    "test1": {
     *        "files": [
     *            {
@@ -1971,18 +2189,51 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param dataKey When the JSON file loads only this property will be stored in the Cache.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def pack(key: String): LoaderPlugin = js.native
-  def pack(key: String, url: String): LoaderPlugin = js.native
-  def pack(key: String, url: String, dataKey: String): LoaderPlugin = js.native
-  def pack(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def pack(key: js.Array[PackFileConfig]): LoaderPlugin = js.native
-  def pack(key: js.Array[PackFileConfig], url: String): LoaderPlugin = js.native
-  def pack(key: js.Array[PackFileConfig], url: String, dataKey: String): LoaderPlugin = js.native
-  def pack(key: js.Array[PackFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def pack(key: PackFileConfig): LoaderPlugin = js.native
-  def pack(key: PackFileConfig, url: String): LoaderPlugin = js.native
-  def pack(key: PackFileConfig, url: String, dataKey: String): LoaderPlugin = js.native
-  def pack(key: PackFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def pack(key: String): this.type = js.native
+  def pack(key: String, url: String): this.type = js.native
+  def pack(key: String, url: String, dataKey: String): this.type = js.native
+  def pack(key: String, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: String, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: String, url: Unit, dataKey: String): this.type = js.native
+  def pack(key: String, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: String, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: js.Array[PackFileConfig]): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: String): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: String, dataKey: String): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: Unit, dataKey: String): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: js.Array[PackFileConfig], url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: PackFileConfig): this.type = js.native
+  def pack(key: PackFileConfig, url: String): this.type = js.native
+  def pack(key: PackFileConfig, url: String, dataKey: String): this.type = js.native
+  def pack(key: PackFileConfig, url: String, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: PackFileConfig, url: String, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: PackFileConfig, url: Unit, dataKey: String): this.type = js.native
+  def pack(key: PackFileConfig, url: Unit, dataKey: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def pack(key: PackFileConfig, url: Unit, dataKey: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * The value of `path`, if set, is placed before any _relative_ file path given. For example:
+    * 
+    * ```javascript
+    * this.load.path = "images/sprites/";
+    * this.load.image("ball", "ball.png");
+    * this.load.image("tree", "level1/oaktree.png");
+    * this.load.image("boom", "http://server.com/explode.png");
+    * ```
+    * 
+    * Would load the `ball` file from `images/sprites/ball.png` and the tree from
+    * `images/sprites/level1/oaktree.png` but the file `boom` would load from the URL
+    * given as it's an absolute URL.
+    * 
+    * Please note that the path is added before the filename but *after* the baseURL (if set.)
+    * 
+    * If you set this property directly then it _must_ end with a "/". Alternatively, call `setPath()` and it'll do it for you.
+    */
+  var path: String = js.native
+  
   /**
     * Adds a Plugin Script file, or array of plugin files, to the current load queue.
     * 
@@ -2035,57 +2286,39 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param mapping If this plugin is to be injected into the Scene, this is the property key used.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def plugin(key: String): LoaderPlugin = js.native
-  def plugin(key: String, url: String): LoaderPlugin = js.native
-  def plugin(key: String, url: String, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: String, url: String, start: Boolean, mapping: String): LoaderPlugin = js.native
-  def plugin(key: String, url: String, start: Boolean, mapping: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def plugin(key: String, url: js.Function): LoaderPlugin = js.native
-  def plugin(key: String, url: js.Function, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: String, url: js.Function, start: Boolean, mapping: String): LoaderPlugin = js.native
-  def plugin(key: String, url: js.Function, start: Boolean, mapping: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig]): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: String): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: String, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: String, start: Boolean, mapping: String): LoaderPlugin = js.native
   def plugin(
-    key: js.Array[PluginFileConfig],
-    url: String,
-    start: Boolean,
-    mapping: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: js.Function): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: js.Function, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: js.Array[PluginFileConfig], url: js.Function, start: Boolean, mapping: String): LoaderPlugin = js.native
-  def plugin(
-    key: js.Array[PluginFileConfig],
-    url: js.Function,
-    start: Boolean,
-    mapping: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: String): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: String, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: String, start: Boolean, mapping: String): LoaderPlugin = js.native
-  def plugin(
-    key: PluginFileConfig,
-    url: String,
-    start: Boolean,
-    mapping: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: js.Function): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: js.Function, start: Boolean): LoaderPlugin = js.native
-  def plugin(key: PluginFileConfig, url: js.Function, start: Boolean, mapping: String): LoaderPlugin = js.native
-  def plugin(
-    key: PluginFileConfig,
-    url: js.Function,
-    start: Boolean,
-    mapping: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | PluginFileConfig | js.Array[PluginFileConfig],
+    url: js.UndefOr[String | js.Function],
+    start: js.UndefOr[Boolean],
+    mapping: js.UndefOr[String],
+    xhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
+  /**
+    * An optional prefix that is automatically prepended to the start of every file key.
+    * If prefix was `MENU.` and you load an image with the key 'Background' the resulting key would be `MENU.Background`.
+    * You can set this directly, or call `Loader.setPrefix()`. It will then affect every file added to the Loader
+    * from that point on. It does _not_ change any file already in the load queue.
+    */
+  var prefix: String = js.native
+  
+  /**
+    * The progress of the current load queue, as a float value between 0 and 1.
+    * This is updated automatically as files complete loading.
+    * Note that it is possible for this value to go down again if you add content to the current load queue during a load.
+    */
+  var progress: Double = js.native
+  
+  /**
+    * Files are stored in this Set while they're being processed.
+    * 
+    * If the process is successful they are moved to their final destination, which could be
+    * a Cache or the Texture Manager.
+    * 
+    * At the end of the load process this Set will be empty.
+    */
+  var queue: Set[File] = js.native
+  
   /**
     * Resets the Loader.
     * 
@@ -2094,6 +2327,7 @@ class LoaderPlugin protected () extends EventEmitter {
     * Warning: If the Loader is currently downloading files, or has files in its queue, they will be aborted.
     */
   def reset(): Unit = js.native
+  
   /**
     * Causes the browser to save the given data as a file to its default Downloads folder.
     * 
@@ -2103,9 +2337,11 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param filename The filename to save the file as. Default file.json.
     * @param filetype The file type to use when saving the file. Defaults to JSON. Default application/json.
     */
-  def save(data: js.Any): LoaderPlugin = js.native
-  def save(data: js.Any, filename: String): LoaderPlugin = js.native
-  def save(data: js.Any, filename: String, filetype: String): LoaderPlugin = js.native
+  def save(data: Any): this.type = js.native
+  def save(data: Any, filename: String): this.type = js.native
+  def save(data: Any, filename: String, filetype: String): this.type = js.native
+  def save(data: Any, filename: Unit, filetype: String): this.type = js.native
+  
   /**
     * Converts the given JSON data into a file that the browser then prompts you to download so you can save it locally.
     * 
@@ -2113,8 +2349,14 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param data The JSON data, ready parsed.
     * @param filename The name to save the JSON file as. Default file.json.
     */
-  def saveJSON(data: js.Any): LoaderPlugin = js.native
-  def saveJSON(data: js.Any, filename: String): LoaderPlugin = js.native
+  def saveJSON(data: Any): this.type = js.native
+  def saveJSON(data: Any, filename: String): this.type = js.native
+  
+  /**
+    * The Scene which owns this Loader instance.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Adds an external Scene file, or array of Scene files, to the current load queue.
     * 
@@ -2203,15 +2445,24 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.js`, i.e. if `key` was "alien" then the URL will be "alien.js".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def sceneFile(key: String): LoaderPlugin = js.native
-  def sceneFile(key: String, url: String): LoaderPlugin = js.native
-  def sceneFile(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def sceneFile(key: js.Array[SceneFileConfig]): LoaderPlugin = js.native
-  def sceneFile(key: js.Array[SceneFileConfig], url: String): LoaderPlugin = js.native
-  def sceneFile(key: js.Array[SceneFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def sceneFile(key: SceneFileConfig): LoaderPlugin = js.native
-  def sceneFile(key: SceneFileConfig, url: String): LoaderPlugin = js.native
-  def sceneFile(key: SceneFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def sceneFile(key: String): this.type = js.native
+  def sceneFile(key: String, url: String): this.type = js.native
+  def sceneFile(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def sceneFile(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def sceneFile(key: js.Array[SceneFileConfig]): this.type = js.native
+  def sceneFile(key: js.Array[SceneFileConfig], url: String): this.type = js.native
+  def sceneFile(key: js.Array[SceneFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def sceneFile(key: js.Array[SceneFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def sceneFile(key: SceneFileConfig): this.type = js.native
+  def sceneFile(key: SceneFileConfig, url: String): this.type = js.native
+  def sceneFile(key: SceneFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def sceneFile(key: SceneFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the global Scene Manager.
+    */
+  /* protected */ var sceneManager: SceneManager = js.native
+  
   /**
     * Adds a Scene Plugin Script file, or array of plugin files, to the current load queue.
     * 
@@ -2264,57 +2515,14 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param sceneKey If this plugin is to be added to the Scene, this is the property key for it.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def scenePlugin(key: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: String, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: String, systemKey: String, sceneKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: String, systemKey: String, sceneKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: js.Function): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: js.Function, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: js.Function, systemKey: String, sceneKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: String, url: js.Function, systemKey: String, sceneKey: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig]): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: String): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: String, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: String, systemKey: String, sceneKey: String): LoaderPlugin = js.native
   def scenePlugin(
-    key: js.Array[ScenePluginFileConfig],
-    url: String,
-    systemKey: String,
-    sceneKey: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: js.Function): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: js.Function, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: js.Array[ScenePluginFileConfig], url: js.Function, systemKey: String, sceneKey: String): LoaderPlugin = js.native
-  def scenePlugin(
-    key: js.Array[ScenePluginFileConfig],
-    url: js.Function,
-    systemKey: String,
-    sceneKey: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: String): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: String, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: String, systemKey: String, sceneKey: String): LoaderPlugin = js.native
-  def scenePlugin(
-    key: ScenePluginFileConfig,
-    url: String,
-    systemKey: String,
-    sceneKey: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: js.Function): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: js.Function, systemKey: String): LoaderPlugin = js.native
-  def scenePlugin(key: ScenePluginFileConfig, url: js.Function, systemKey: String, sceneKey: String): LoaderPlugin = js.native
-  def scenePlugin(
-    key: ScenePluginFileConfig,
-    url: js.Function,
-    systemKey: String,
-    sceneKey: String,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | ScenePluginFileConfig | js.Array[ScenePluginFileConfig],
+    url: js.UndefOr[String | js.Function],
+    systemKey: js.UndefOr[String],
+    sceneKey: js.UndefOr[String],
+    xhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
   /**
     * Adds a Script file, or array of Script files, to the current load queue.
     * 
@@ -2365,15 +2573,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.js`, i.e. if `key` was "alien" then the URL will be "alien.js".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def script(key: String): LoaderPlugin = js.native
-  def script(key: String, url: String): LoaderPlugin = js.native
-  def script(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def script(key: js.Array[ScriptFileConfig]): LoaderPlugin = js.native
-  def script(key: js.Array[ScriptFileConfig], url: String): LoaderPlugin = js.native
-  def script(key: js.Array[ScriptFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def script(key: ScriptFileConfig): LoaderPlugin = js.native
-  def script(key: ScriptFileConfig, url: String): LoaderPlugin = js.native
-  def script(key: ScriptFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def script(key: String): this.type = js.native
+  def script(key: String, url: String): this.type = js.native
+  def script(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig]): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: String): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: js.Array[ScriptFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig): this.type = js.native
+  def script(key: ScriptFileConfig, url: String): this.type = js.native
+  def script(key: ScriptFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def script(key: ScriptFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an array of Script files to the current load queue.
     * 
@@ -2442,28 +2654,56 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param extension The default file extension to use if no url is provided. Default 'js'.
     * @param xhrSettings Extra XHR Settings specifically for these files.
     */
-  def scripts(key: String): LoaderPlugin = js.native
-  def scripts(key: String, url: js.Array[String]): LoaderPlugin = js.native
-  def scripts(key: String, url: js.Array[String], extension: String): LoaderPlugin = js.native
-  def scripts(key: String, url: js.Array[String], extension: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def scripts(key: js.Array[MultiScriptFileConfig]): LoaderPlugin = js.native
-  def scripts(key: js.Array[MultiScriptFileConfig], url: js.Array[String]): LoaderPlugin = js.native
-  def scripts(key: js.Array[MultiScriptFileConfig], url: js.Array[String], extension: String): LoaderPlugin = js.native
+  def scripts(key: String): this.type = js.native
+  def scripts(key: String, url: js.Array[String]): this.type = js.native
+  def scripts(key: String, url: js.Array[String], `extension`: String): this.type = js.native
+  def scripts(key: String, url: js.Array[String], `extension`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: String, url: js.Array[String], `extension`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: String, url: Unit, `extension`: String): this.type = js.native
+  def scripts(key: String, url: Unit, `extension`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: String, url: Unit, `extension`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: js.Array[MultiScriptFileConfig]): this.type = js.native
+  def scripts(key: js.Array[MultiScriptFileConfig], url: js.Array[String]): this.type = js.native
+  def scripts(key: js.Array[MultiScriptFileConfig], url: js.Array[String], `extension`: String): this.type = js.native
   def scripts(
     key: js.Array[MultiScriptFileConfig],
     url: js.Array[String],
-    extension: String,
+    `extension`: String,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def scripts(key: MultiScriptFileConfig): LoaderPlugin = js.native
-  def scripts(key: MultiScriptFileConfig, url: js.Array[String]): LoaderPlugin = js.native
-  def scripts(key: MultiScriptFileConfig, url: js.Array[String], extension: String): LoaderPlugin = js.native
+  ): this.type = js.native
+  def scripts(
+    key: js.Array[MultiScriptFileConfig],
+    url: js.Array[String],
+    `extension`: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def scripts(key: js.Array[MultiScriptFileConfig], url: Unit, `extension`: String): this.type = js.native
+  def scripts(
+    key: js.Array[MultiScriptFileConfig],
+    url: Unit,
+    `extension`: String,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def scripts(key: js.Array[MultiScriptFileConfig], url: Unit, `extension`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: MultiScriptFileConfig): this.type = js.native
+  def scripts(key: MultiScriptFileConfig, url: js.Array[String]): this.type = js.native
+  def scripts(key: MultiScriptFileConfig, url: js.Array[String], `extension`: String): this.type = js.native
   def scripts(
     key: MultiScriptFileConfig,
     url: js.Array[String],
-    extension: String,
+    `extension`: String,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+  ): this.type = js.native
+  def scripts(
+    key: MultiScriptFileConfig,
+    url: js.Array[String],
+    `extension`: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def scripts(key: MultiScriptFileConfig, url: Unit, `extension`: String): this.type = js.native
+  def scripts(key: MultiScriptFileConfig, url: Unit, `extension`: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def scripts(key: MultiScriptFileConfig, url: Unit, `extension`: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * If you want to append a URL before the path of any asset you can set this here.
     * 
@@ -2473,8 +2713,9 @@ class LoaderPlugin protected () extends EventEmitter {
     * file _already_ being loaded. To reset it, call this method with no arguments.
     * @param url The URL to use. Leave empty to reset.
     */
-  def setBaseURL(): LoaderPlugin = js.native
-  def setBaseURL(url: String): LoaderPlugin = js.native
+  def setBaseURL(): this.type = js.native
+  def setBaseURL(url: String): this.type = js.native
+  
   /**
     * Sets the Cross Origin Resource Sharing value used when loading files.
     * 
@@ -2486,8 +2727,9 @@ class LoaderPlugin protected () extends EventEmitter {
     * For more details about CORs see https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     * @param crossOrigin The value to use for the `crossOrigin` property in the load request.
     */
-  def setCORS(): LoaderPlugin = js.native
-  def setCORS(crossOrigin: String): LoaderPlugin = js.native
+  def setCORS(): this.type = js.native
+  def setCORS(crossOrigin: String): this.type = js.native
+  
   /**
     * The value of `path`, if set, is placed before any _relative_ file path given. For example:
     * 
@@ -2508,8 +2750,9 @@ class LoaderPlugin protected () extends EventEmitter {
     * file _already_ in the load queue. To reset it, call this method with no arguments.
     * @param path The path to use. Leave empty to reset.
     */
-  def setPath(): LoaderPlugin = js.native
-  def setPath(path: String): LoaderPlugin = js.native
+  def setPath(): this.type = js.native
+  def setPath(path: String): this.type = js.native
+  
   /**
     * An optional prefix that is automatically prepended to the start of every file key.
     * 
@@ -2519,10 +2762,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * file _already_ in the load queue. To reset it, call this method with no arguments.
     * @param prefix The prefix to use. Leave empty to reset.
     */
-  def setPrefix(): LoaderPlugin = js.native
-  def setPrefix(prefix: String): LoaderPlugin = js.native
+  def setPrefix(): this.type = js.native
+  def setPrefix(prefix: String): this.type = js.native
+  
   def spine(key: String, jsonURL: String, atlasURL: String): LoaderPlugin = js.native
   def spine(key: String, jsonURL: String, atlasURL: String, preMultipliedAlpha: Boolean): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
   def spine(
     key: String,
     jsonURL: String,
@@ -2535,6 +2787,29 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: String,
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
@@ -2545,6 +2820,14 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: js.Array[String],
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Boolean,
     textureXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
   def spine(
@@ -2555,8 +2838,39 @@ class LoaderPlugin protected () extends EventEmitter {
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: String,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
   def spine(key: js.Array[SpineFileConfig], jsonURL: String, atlasURL: String): LoaderPlugin = js.native
   def spine(key: js.Array[SpineFileConfig], jsonURL: String, atlasURL: String, preMultipliedAlpha: Boolean): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
   def spine(
     key: js.Array[SpineFileConfig],
     jsonURL: String,
@@ -2569,6 +2883,29 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: String,
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
@@ -2584,6 +2921,14 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: js.Array[String],
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Boolean,
     textureXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
   def spine(
@@ -2594,8 +2939,39 @@ class LoaderPlugin protected () extends EventEmitter {
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: js.Array[SpineFileConfig],
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
   def spine(key: SpineFileConfig, jsonURL: String, atlasURL: String): LoaderPlugin = js.native
   def spine(key: SpineFileConfig, jsonURL: String, atlasURL: String, preMultipliedAlpha: Boolean): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
   def spine(
     key: SpineFileConfig,
     jsonURL: String,
@@ -2608,6 +2984,29 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: String,
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: String,
+    preMultipliedAlpha: Unit,
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
@@ -2618,6 +3017,14 @@ class LoaderPlugin protected () extends EventEmitter {
     jsonURL: String,
     atlasURL: js.Array[String],
     preMultipliedAlpha: Boolean,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Boolean,
     textureXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
   def spine(
@@ -2628,6 +3035,30 @@ class LoaderPlugin protected () extends EventEmitter {
     textureXhrSettings: XHRSettingsObject,
     atlasXhrSettings: XHRSettingsObject
   ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: Unit,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  def spine(
+    key: SpineFileConfig,
+    jsonURL: String,
+    atlasURL: js.Array[String],
+    preMultipliedAlpha: Unit,
+    textureXhrSettings: XHRSettingsObject,
+    atlasXhrSettings: XHRSettingsObject
+  ): LoaderPlugin = js.native
+  
   /**
     * Adds a Sprite Sheet Image, or array of Sprite Sheet Images, to the current load queue.
     * 
@@ -2729,28 +3160,56 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param frameConfig The frame configuration object. At a minimum it should have a `frameWidth` property.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def spritesheet(key: String): LoaderPlugin = js.native
-  def spritesheet(key: String, url: String): LoaderPlugin = js.native
-  def spritesheet(key: String, url: String, frameConfig: ImageFrameConfig): LoaderPlugin = js.native
-  def spritesheet(key: String, url: String, frameConfig: ImageFrameConfig, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def spritesheet(key: js.Array[SpriteSheetFileConfig]): LoaderPlugin = js.native
-  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: String): LoaderPlugin = js.native
-  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: String, frameConfig: ImageFrameConfig): LoaderPlugin = js.native
+  def spritesheet(key: String): this.type = js.native
+  def spritesheet(key: String, url: String): this.type = js.native
+  def spritesheet(key: String, url: String, frameConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: String, url: String, frameConfig: ImageFrameConfig): this.type = js.native
+  def spritesheet(key: String, url: String, frameConfig: ImageFrameConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: String, url: Unit, frameConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: String, url: Unit, frameConfig: ImageFrameConfig): this.type = js.native
+  def spritesheet(key: String, url: Unit, frameConfig: ImageFrameConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: js.Array[SpriteSheetFileConfig]): this.type = js.native
+  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: String): this.type = js.native
+  def spritesheet(
+    key: js.Array[SpriteSheetFileConfig],
+    url: String,
+    frameConfig: Unit,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: String, frameConfig: ImageFrameConfig): this.type = js.native
   def spritesheet(
     key: js.Array[SpriteSheetFileConfig],
     url: String,
     frameConfig: ImageFrameConfig,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def spritesheet(key: SpriteSheetFileConfig): LoaderPlugin = js.native
-  def spritesheet(key: SpriteSheetFileConfig, url: String): LoaderPlugin = js.native
-  def spritesheet(key: SpriteSheetFileConfig, url: String, frameConfig: ImageFrameConfig): LoaderPlugin = js.native
+  ): this.type = js.native
+  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: Unit, frameConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: js.Array[SpriteSheetFileConfig], url: Unit, frameConfig: ImageFrameConfig): this.type = js.native
+  def spritesheet(
+    key: js.Array[SpriteSheetFileConfig],
+    url: Unit,
+    frameConfig: ImageFrameConfig,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig, url: String): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig, url: String, frameConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig, url: String, frameConfig: ImageFrameConfig): this.type = js.native
   def spritesheet(
     key: SpriteSheetFileConfig,
     url: String,
     frameConfig: ImageFrameConfig,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+  ): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig, url: Unit, frameConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def spritesheet(key: SpriteSheetFileConfig, url: Unit, frameConfig: ImageFrameConfig): this.type = js.native
+  def spritesheet(
+    key: SpriteSheetFileConfig,
+    url: Unit,
+    frameConfig: ImageFrameConfig,
+    xhrSettings: XHRSettingsObject
+  ): this.type = js.native
+  
   /**
     * Starts the Loader running. This will reset the progress and totals and then emit a `start` event.
     * If there is nothing in the queue the Loader will immediately complete, otherwise it will start
@@ -2763,6 +3222,12 @@ class LoaderPlugin protected () extends EventEmitter {
     * If the Loader is already running this method will simply return.
     */
   def start(): Unit = js.native
+  
+  /**
+    * The current state of the Loader.
+    */
+  val state: Double = js.native
+  
   /**
     * Adds an SVG File, or array of SVG Files, to the current load queue. When the files are loaded they
     * will be rendered to bitmap textures and stored in the Texture Manager.
@@ -2873,23 +3338,41 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param svgConfig The svg size configuration object.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def svg(key: String): LoaderPlugin = js.native
-  def svg(key: String, url: String): LoaderPlugin = js.native
-  def svg(key: String, url: String, svgConfig: SVGSizeConfig): LoaderPlugin = js.native
-  def svg(key: String, url: String, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def svg(key: js.Array[SVGFileConfig]): LoaderPlugin = js.native
-  def svg(key: js.Array[SVGFileConfig], url: String): LoaderPlugin = js.native
-  def svg(key: js.Array[SVGFileConfig], url: String, svgConfig: SVGSizeConfig): LoaderPlugin = js.native
+  def svg(key: String): this.type = js.native
+  def svg(key: String, url: String): this.type = js.native
+  def svg(key: String, url: String, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: String, url: String, svgConfig: SVGSizeConfig): this.type = js.native
+  def svg(key: String, url: String, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: String, url: Unit, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: String, url: Unit, svgConfig: SVGSizeConfig): this.type = js.native
+  def svg(key: String, url: Unit, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig]): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: String): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: String, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: String, svgConfig: SVGSizeConfig): this.type = js.native
   def svg(
     key: js.Array[SVGFileConfig],
     url: String,
     svgConfig: SVGSizeConfig,
     xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def svg(key: SVGFileConfig): LoaderPlugin = js.native
-  def svg(key: SVGFileConfig, url: String): LoaderPlugin = js.native
-  def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig): LoaderPlugin = js.native
-  def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  ): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: Unit, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: Unit, svgConfig: SVGSizeConfig): this.type = js.native
+  def svg(key: js.Array[SVGFileConfig], url: Unit, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: SVGFileConfig): this.type = js.native
+  def svg(key: SVGFileConfig, url: String): this.type = js.native
+  def svg(key: SVGFileConfig, url: String, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig): this.type = js.native
+  def svg(key: SVGFileConfig, url: String, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: SVGFileConfig, url: Unit, svgConfig: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def svg(key: SVGFileConfig, url: Unit, svgConfig: SVGSizeConfig): this.type = js.native
+  def svg(key: SVGFileConfig, url: Unit, svgConfig: SVGSizeConfig, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the Scene Systems.
+    */
+  var systems: Systems = js.native
+  
   /**
     * Adds a Text file, or array of Text files, to the current load queue.
     * 
@@ -2950,15 +3433,24 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.txt`, i.e. if `key` was "alien" then the URL will be "alien.txt".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def text(key: String): LoaderPlugin = js.native
-  def text(key: String, url: String): LoaderPlugin = js.native
-  def text(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def text(key: js.Array[TextFileConfig]): LoaderPlugin = js.native
-  def text(key: js.Array[TextFileConfig], url: String): LoaderPlugin = js.native
-  def text(key: js.Array[TextFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def text(key: TextFileConfig): LoaderPlugin = js.native
-  def text(key: TextFileConfig, url: String): LoaderPlugin = js.native
-  def text(key: TextFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def text(key: String): this.type = js.native
+  def text(key: String, url: String): this.type = js.native
+  def text(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def text(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def text(key: js.Array[TextFileConfig]): this.type = js.native
+  def text(key: js.Array[TextFileConfig], url: String): this.type = js.native
+  def text(key: js.Array[TextFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def text(key: js.Array[TextFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def text(key: TextFileConfig): this.type = js.native
+  def text(key: TextFileConfig, url: String): this.type = js.native
+  def text(key: TextFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def text(key: TextFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * A reference to the global Texture Manager.
+    */
+  var textureManager: TextureManager = js.native
+  
   /**
     * Adds a CSV Tilemap file, or array of CSV files, to the current load queue.
     * 
@@ -3021,15 +3513,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.csv`, i.e. if `key` was "alien" then the URL will be "alien.csv".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def tilemapCSV(key: String): LoaderPlugin = js.native
-  def tilemapCSV(key: String, url: String): LoaderPlugin = js.native
-  def tilemapCSV(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapCSV(key: js.Array[TilemapCSVFileConfig]): LoaderPlugin = js.native
-  def tilemapCSV(key: js.Array[TilemapCSVFileConfig], url: String): LoaderPlugin = js.native
-  def tilemapCSV(key: js.Array[TilemapCSVFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapCSV(key: TilemapCSVFileConfig): LoaderPlugin = js.native
-  def tilemapCSV(key: TilemapCSVFileConfig, url: String): LoaderPlugin = js.native
-  def tilemapCSV(key: TilemapCSVFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def tilemapCSV(key: String): this.type = js.native
+  def tilemapCSV(key: String, url: String): this.type = js.native
+  def tilemapCSV(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapCSV(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapCSV(key: js.Array[TilemapCSVFileConfig]): this.type = js.native
+  def tilemapCSV(key: js.Array[TilemapCSVFileConfig], url: String): this.type = js.native
+  def tilemapCSV(key: js.Array[TilemapCSVFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapCSV(key: js.Array[TilemapCSVFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapCSV(key: TilemapCSVFileConfig): this.type = js.native
+  def tilemapCSV(key: TilemapCSVFileConfig, url: String): this.type = js.native
+  def tilemapCSV(key: TilemapCSVFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapCSV(key: TilemapCSVFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds an Impact.js Tilemap file, or array of map files, to the current load queue.
     * 
@@ -3092,15 +3588,19 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def tilemapImpact(key: String): LoaderPlugin = js.native
-  def tilemapImpact(key: String, url: String): LoaderPlugin = js.native
-  def tilemapImpact(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapImpact(key: js.Array[TilemapImpactFileConfig]): LoaderPlugin = js.native
-  def tilemapImpact(key: js.Array[TilemapImpactFileConfig], url: String): LoaderPlugin = js.native
-  def tilemapImpact(key: js.Array[TilemapImpactFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapImpact(key: TilemapImpactFileConfig): LoaderPlugin = js.native
-  def tilemapImpact(key: TilemapImpactFileConfig, url: String): LoaderPlugin = js.native
-  def tilemapImpact(key: TilemapImpactFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def tilemapImpact(key: String): this.type = js.native
+  def tilemapImpact(key: String, url: String): this.type = js.native
+  def tilemapImpact(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapImpact(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapImpact(key: js.Array[TilemapImpactFileConfig]): this.type = js.native
+  def tilemapImpact(key: js.Array[TilemapImpactFileConfig], url: String): this.type = js.native
+  def tilemapImpact(key: js.Array[TilemapImpactFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapImpact(key: js.Array[TilemapImpactFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapImpact(key: TilemapImpactFileConfig): this.type = js.native
+  def tilemapImpact(key: TilemapImpactFileConfig, url: String): this.type = js.native
+  def tilemapImpact(key: TilemapImpactFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapImpact(key: TilemapImpactFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
   /**
     * Adds a Tiled JSON Tilemap file, or array of map files, to the current load queue.
     * 
@@ -3160,18 +3660,46 @@ class LoaderPlugin protected () extends EventEmitter {
     * Note: The ability to load this type of file will only be available if the Tilemap JSON File type has been built into Phaser.
     * It is available in the default build but can be excluded from custom builds.
     * @param key The key to use for this file, or a file configuration object, or array of them.
-    * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json".
+    * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.json`, i.e. if `key` was "alien" then the URL will be "alien.json". Or, a well formed JSON object.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def tilemapTiledJSON(key: String): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: String, url: String): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig]): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: String): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: TilemapJSONFileConfig): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: String): LoaderPlugin = js.native
-  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def tilemapTiledJSON(key: String): this.type = js.native
+  def tilemapTiledJSON(key: String, url: String): this.type = js.native
+  def tilemapTiledJSON(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: String, url: js.Object): this.type = js.native
+  def tilemapTiledJSON(key: String, url: js.Object, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig]): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: String): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: js.Object): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: js.Object, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: js.Array[TilemapJSONFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: String): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: js.Object): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: js.Object, xhrSettings: XHRSettingsObject): this.type = js.native
+  def tilemapTiledJSON(key: TilemapJSONFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  
+  /**
+    * The total number of files that successfully loaded during the most recent load.
+    * This value is reset when you call `Loader.start`.
+    */
+  var totalComplete: Double = js.native
+  
+  /**
+    * The total number of files that failed to load during the most recent load.
+    * This value is reset when you call `Loader.start`.
+    */
+  var totalFailed: Double = js.native
+  
+  /**
+    * The total number of files to load. It may not always be accurate because you may add to the Loader during the process
+    * of loading, especially if you load a Pack File. Therefore this value can change, but in most cases remains static.
+    */
+  var totalToLoad: Double = js.native
+  
   /**
     * Adds a Unity YAML based Texture Atlas, or array of atlases, to the current load queue.
     * 
@@ -3265,99 +3793,26 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param textureXhrSettings An XHR Settings configuration object for the atlas image file. Used in replacement of the Loaders default XHR Settings.
     * @param atlasXhrSettings An XHR Settings configuration object for the atlas data file. Used in replacement of the Loaders default XHR Settings.
     */
-  def unityAtlas(key: String): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: String): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: String, atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
   def unityAtlas(
-    key: String,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(key: String, textureURL: js.Array[String], atlasURL: String, textureXhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def unityAtlas(
-    key: String,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(key: js.Array[UnityAtlasFileConfig]): LoaderPlugin = js.native
-  def unityAtlas(key: js.Array[UnityAtlasFileConfig], textureURL: String): LoaderPlugin = js.native
-  def unityAtlas(key: js.Array[UnityAtlasFileConfig], textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(
-    key: js.Array[UnityAtlasFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(
-    key: js.Array[UnityAtlasFileConfig],
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(key: js.Array[UnityAtlasFileConfig], textureURL: js.Array[String]): LoaderPlugin = js.native
-  def unityAtlas(key: js.Array[UnityAtlasFileConfig], textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(
-    key: js.Array[UnityAtlasFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(
-    key: js.Array[UnityAtlasFileConfig],
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(key: UnityAtlasFileConfig): LoaderPlugin = js.native
-  def unityAtlas(key: UnityAtlasFileConfig, textureURL: String): LoaderPlugin = js.native
-  def unityAtlas(key: UnityAtlasFileConfig, textureURL: String, atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(
-    key: UnityAtlasFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(
-    key: UnityAtlasFileConfig,
-    textureURL: String,
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(key: UnityAtlasFileConfig, textureURL: js.Array[String]): LoaderPlugin = js.native
-  def unityAtlas(key: UnityAtlasFileConfig, textureURL: js.Array[String], atlasURL: String): LoaderPlugin = js.native
-  def unityAtlas(
-    key: UnityAtlasFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def unityAtlas(
-    key: UnityAtlasFileConfig,
-    textureURL: js.Array[String],
-    atlasURL: String,
-    textureXhrSettings: XHRSettingsObject,
-    atlasXhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | UnityAtlasFileConfig | js.Array[UnityAtlasFileConfig],
+    textureURL: js.UndefOr[String | js.Array[String]],
+    atlasURL: js.UndefOr[String],
+    textureXhrSettings: js.UndefOr[XHRSettingsObject],
+    atlasXhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
   /**
     * Called automatically during the load process.
     */
   def update(): Unit = js.native
+  
   /**
     * Called automatically during the load process.
     * It updates the `progress` value and then emits a progress event, which you can use to
     * display a loading bar in your game.
     */
   def updateProgress(): Unit = js.native
+  
   /**
     * Adds a Video file, or array of video files, to the current load queue.
     * 
@@ -3414,87 +3869,20 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param noAudio Does the video have an audio track? If not you can enable auto-playing on it. Default false.
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def video(key: String): LoaderPlugin = js.native
-  def video(key: String, urls: String): LoaderPlugin = js.native
-  def video(key: String, urls: String, loadEvent: String): LoaderPlugin = js.native
-  def video(key: String, urls: String, loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(key: String, urls: String, loadEvent: String, asBlob: Boolean, noAudio: Boolean): LoaderPlugin = js.native
   def video(
-    key: String,
-    urls: String,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def video(key: String, urls: js.Array[String]): LoaderPlugin = js.native
-  def video(key: String, urls: js.Array[String], loadEvent: String): LoaderPlugin = js.native
-  def video(key: String, urls: js.Array[String], loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(key: String, urls: js.Array[String], loadEvent: String, asBlob: Boolean, noAudio: Boolean): LoaderPlugin = js.native
-  def video(
-    key: String,
-    urls: js.Array[String],
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig]): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: String): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: String, loadEvent: String): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: String, loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: String, loadEvent: String, asBlob: Boolean, noAudio: Boolean): LoaderPlugin = js.native
-  def video(
-    key: js.Array[VideoFileConfig],
-    urls: String,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: js.Array[String]): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: js.Array[String], loadEvent: String): LoaderPlugin = js.native
-  def video(key: js.Array[VideoFileConfig], urls: js.Array[String], loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(
-    key: js.Array[VideoFileConfig],
-    urls: js.Array[String],
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean
-  ): LoaderPlugin = js.native
-  def video(
-    key: js.Array[VideoFileConfig],
-    urls: js.Array[String],
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def video(key: VideoFileConfig): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: String): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: String, loadEvent: String): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: String, loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: String, loadEvent: String, asBlob: Boolean, noAudio: Boolean): LoaderPlugin = js.native
-  def video(
-    key: VideoFileConfig,
-    urls: String,
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: js.Array[String]): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: js.Array[String], loadEvent: String): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: js.Array[String], loadEvent: String, asBlob: Boolean): LoaderPlugin = js.native
-  def video(key: VideoFileConfig, urls: js.Array[String], loadEvent: String, asBlob: Boolean, noAudio: Boolean): LoaderPlugin = js.native
-  def video(
-    key: VideoFileConfig,
-    urls: js.Array[String],
-    loadEvent: String,
-    asBlob: Boolean,
-    noAudio: Boolean,
-    xhrSettings: XHRSettingsObject
-  ): LoaderPlugin = js.native
+    key: String | VideoFileConfig | js.Array[VideoFileConfig],
+    urls: js.UndefOr[String | js.Array[String]],
+    loadEvent: js.UndefOr[String],
+    asBlob: js.UndefOr[Boolean],
+    noAudio: js.UndefOr[Boolean],
+    xhrSettings: js.UndefOr[XHRSettingsObject]
+  ): this.type = js.native
+  
+  /**
+    * xhr specific global settings (can be overridden on a per-file basis)
+    */
+  var xhr: XHRSettingsObject = js.native
+  
   /**
     * Adds an XML file, or array of XML files, to the current load queue.
     * 
@@ -3555,14 +3943,16 @@ class LoaderPlugin protected () extends EventEmitter {
     * @param url The absolute or relative URL to load this file from. If undefined or `null` it will be set to `<key>.xml`, i.e. if `key` was "alien" then the URL will be "alien.xml".
     * @param xhrSettings An XHR Settings configuration object. Used in replacement of the Loaders default XHR Settings.
     */
-  def xml(key: String): LoaderPlugin = js.native
-  def xml(key: String, url: String): LoaderPlugin = js.native
-  def xml(key: String, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def xml(key: js.Array[XMLFileConfig]): LoaderPlugin = js.native
-  def xml(key: js.Array[XMLFileConfig], url: String): LoaderPlugin = js.native
-  def xml(key: js.Array[XMLFileConfig], url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
-  def xml(key: XMLFileConfig): LoaderPlugin = js.native
-  def xml(key: XMLFileConfig, url: String): LoaderPlugin = js.native
-  def xml(key: XMLFileConfig, url: String, xhrSettings: XHRSettingsObject): LoaderPlugin = js.native
+  def xml(key: String): this.type = js.native
+  def xml(key: String, url: String): this.type = js.native
+  def xml(key: String, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def xml(key: String, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def xml(key: js.Array[XMLFileConfig]): this.type = js.native
+  def xml(key: js.Array[XMLFileConfig], url: String): this.type = js.native
+  def xml(key: js.Array[XMLFileConfig], url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def xml(key: js.Array[XMLFileConfig], url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
+  def xml(key: XMLFileConfig): this.type = js.native
+  def xml(key: XMLFileConfig, url: String): this.type = js.native
+  def xml(key: XMLFileConfig, url: String, xhrSettings: XHRSettingsObject): this.type = js.native
+  def xml(key: XMLFileConfig, url: Unit, xhrSettings: XHRSettingsObject): this.type = js.native
 }
-

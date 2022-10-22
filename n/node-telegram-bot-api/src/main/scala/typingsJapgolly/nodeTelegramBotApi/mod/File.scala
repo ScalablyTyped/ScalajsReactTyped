@@ -1,20 +1,26 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait File extends FileBase {
+trait File
+  extends StObject
+     with FileBase {
+  
   var file_path: js.UndefOr[String] = js.undefined
 }
-
 object File {
-  @scala.inline
-  def apply(file_id: String, file_path: String = null, file_size: Int | Double = null): File = {
-    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any])
-    if (file_path != null) __obj.updateDynamic("file_path")(file_path.asInstanceOf[js.Any])
-    if (file_size != null) __obj.updateDynamic("file_size")(file_size.asInstanceOf[js.Any])
+  
+  inline def apply(file_id: String, file_unique_id: String): File = {
+    val __obj = js.Dynamic.literal(file_id = file_id.asInstanceOf[js.Any], file_unique_id = file_unique_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[File]
   }
+  
+  extension [Self <: File](x: Self) {
+    
+    inline def setFile_path(value: String): Self = StObject.set(x, "file_path", value.asInstanceOf[js.Any])
+    
+    inline def setFile_pathUndefined: Self = StObject.set(x, "file_path", js.undefined)
+  }
 }
-

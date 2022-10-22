@@ -1,20 +1,22 @@
 package typingsJapgolly.arrayPrototypeFlatmap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("array.prototype.flatmap/implementation", JSImport.Namespace)
-@js.native
-object implementationMod extends js.Object {
-  def apply[A, B, T /* <: js.UndefOr[js.Object] */](
-    xs: js.Array[A],
-    fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], Array[B]]
-  ): Array[B] = js.native
-  def apply[A, B, T /* <: js.UndefOr[js.Object] */](
-    xs: js.Array[A],
-    fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], Array[B]],
+object implementationMod {
+  
+  inline def apply[A, B, T /* <: js.UndefOr[js.Object] */](
+    xs: ReadonlyArray[A],
+    fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], ReadonlyArray[B]]
+  ): Array[B] = (^.asInstanceOf[js.Dynamic].apply(xs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Array[B]]
+  inline def apply[A, B, T /* <: js.UndefOr[js.Object] */](
+    xs: ReadonlyArray[A],
+    fn: js.ThisFunction3[/* this */ T, /* x */ A, /* index */ Double, /* array */ Array[A], ReadonlyArray[B]],
     thisArg: T
-  ): Array[B] = js.native
+  ): Array[B] = (^.asInstanceOf[js.Dynamic].apply(xs.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Array[B]]
+  
+  @JSImport("array.prototype.flatmap/implementation", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

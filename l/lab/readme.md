@@ -10,10 +10,10 @@ Test utility
 | ------------------ | :-------------: |
 | Full name          | lab |
 | Keywords           | test |
-| # releases         | 28 |
-| # dependents       | 48 |
-| # downloads        | 978912 |
-| # stars            | 46 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 28383.0 |
+| # stars            | 740.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/lab#readme)

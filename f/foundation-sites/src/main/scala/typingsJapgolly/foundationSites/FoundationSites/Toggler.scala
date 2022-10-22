@@ -1,23 +1,24 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/toggler.html#javascript-reference
-trait Toggler extends js.Object {
-  def destroy(): Unit
+// https://get.foundation/sites/docs/toggler.html#javascript-reference
+trait Toggler extends StObject {
+  
   def toggle(): Unit
 }
-
 object Toggler {
-  @scala.inline
-  def apply(destroy: Callback, toggle: Callback): Toggler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.updateDynamic("toggle")(toggle.toJsFn)
+  
+  inline def apply(toggle: Callback): Toggler = {
+    val __obj = js.Dynamic.literal(toggle = toggle.toJsFn)
     __obj.asInstanceOf[Toggler]
   }
+  
+  extension [Self <: Toggler](x: Self) {
+    
+    inline def setToggle(value: Callback): Self = StObject.set(x, "toggle", value.toJsFn)
+  }
 }
-

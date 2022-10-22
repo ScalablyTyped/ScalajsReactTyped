@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlobPropertyBag extends js.Object {
+trait BlobPropertyBag extends StObject {
+  
+  /* standard dom */
   var endings: js.UndefOr[EndingType] = js.undefined
+  
+  /* standard dom */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object BlobPropertyBag {
-  @scala.inline
-  def apply(endings: EndingType = null, `type`: java.lang.String = null): BlobPropertyBag = {
+  
+  inline def apply(): BlobPropertyBag = {
     val __obj = js.Dynamic.literal()
-    if (endings != null) __obj.updateDynamic("endings")(endings.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobPropertyBag]
   }
+  
+  extension [Self <: BlobPropertyBag](x: Self) {
+    
+    inline def setEndings(value: EndingType): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
+    
+    inline def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
+    
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,131 +1,126 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait packet extends js.Object
-
+sealed trait packet extends StObject
 /**
   * A list of packet types and numeric tags associated with them.
   */
 @JSImport("openpgp", "enums.packet")
 @js.native
-object packet extends js.Object {
-  @js.native
-  sealed trait compressed extends packet
-  
-  @js.native
-  sealed trait literal extends packet
-  
-  @js.native
-  sealed trait marker extends packet
-  
-  @js.native
-  sealed trait modificationDetectionCode extends packet
-  
-  @js.native
-  sealed trait onePassSignature extends packet
-  
-  @js.native
-  sealed trait publicKey extends packet
-  
-  @js.native
-  sealed trait publicKeyEncryptedSessionKey extends packet
-  
-  @js.native
-  sealed trait publicSubkey extends packet
-  
-  @js.native
-  sealed trait secretKey extends packet
-  
-  @js.native
-  sealed trait secretSubkey extends packet
-  
-  @js.native
-  sealed trait signature extends packet
-  
-  @js.native
-  sealed trait symEncryptedAEADProtected extends packet
-  
-  @js.native
-  sealed trait symEncryptedIntegrityProtected extends packet
-  
-  @js.native
-  sealed trait symEncryptedSessionKey extends packet
-  
-  @js.native
-  sealed trait symmetricallyEncrypted extends packet
-  
-  @js.native
-  sealed trait trust extends packet
-  
-  @js.native
-  sealed trait userAttribute extends packet
-  
-  @js.native
-  sealed trait userid extends packet
+object packet extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[packet with Double] = js.native
-  /* 8 */ @js.native
-  object compressed extends TopLevel[compressed with Double]
+  def apply(value: Double): js.UndefOr[packet & Double] = js.native
   
-  /* 11 */ @js.native
-  object literal
-    extends TopLevel[typingsJapgolly.openpgp.mod.enums.packet.literal with Double]
+  @js.native
+  sealed trait compressed
+    extends StObject
+       with packet
+  /* 8 */ val compressed: typingsJapgolly.openpgp.mod.enums.packet.compressed & Double = js.native
   
-  /* 10 */ @js.native
-  object marker extends TopLevel[marker with Double]
+  @js.native
+  sealed trait literal
+    extends StObject
+       with packet
+  /* 11 */ val literal: typingsJapgolly.openpgp.mod.enums.packet.literal & Double = js.native
   
-  /* 19 */ @js.native
-  object modificationDetectionCode extends TopLevel[modificationDetectionCode with Double]
+  @js.native
+  sealed trait marker
+    extends StObject
+       with packet
+  /* 10 */ val marker: typingsJapgolly.openpgp.mod.enums.packet.marker & Double = js.native
   
-  /* 4 */ @js.native
-  object onePassSignature extends TopLevel[onePassSignature with Double]
+  @js.native
+  sealed trait modificationDetectionCode
+    extends StObject
+       with packet
+  /* 19 */ val modificationDetectionCode: typingsJapgolly.openpgp.mod.enums.packet.modificationDetectionCode & Double = js.native
   
-  /* 6 */ @js.native
-  object publicKey
-    extends TopLevel[typingsJapgolly.openpgp.mod.enums.packet.publicKey with Double]
+  @js.native
+  sealed trait onePassSignature
+    extends StObject
+       with packet
+  /* 4 */ val onePassSignature: typingsJapgolly.openpgp.mod.enums.packet.onePassSignature & Double = js.native
   
-  /* 1 */ @js.native
-  object publicKeyEncryptedSessionKey extends TopLevel[publicKeyEncryptedSessionKey with Double]
+  @js.native
+  sealed trait publicKey
+    extends StObject
+       with packet
+  /* 6 */ val publicKey: typingsJapgolly.openpgp.mod.enums.packet.publicKey & Double = js.native
   
-  /* 14 */ @js.native
-  object publicSubkey extends TopLevel[publicSubkey with Double]
+  @js.native
+  sealed trait publicKeyEncryptedSessionKey
+    extends StObject
+       with packet
+  /* 1 */ val publicKeyEncryptedSessionKey: typingsJapgolly.openpgp.mod.enums.packet.publicKeyEncryptedSessionKey & Double = js.native
   
-  /* 5 */ @js.native
-  object secretKey extends TopLevel[secretKey with Double]
+  @js.native
+  sealed trait publicSubkey
+    extends StObject
+       with packet
+  /* 14 */ val publicSubkey: typingsJapgolly.openpgp.mod.enums.packet.publicSubkey & Double = js.native
   
-  /* 7 */ @js.native
-  object secretSubkey extends TopLevel[secretSubkey with Double]
+  @js.native
+  sealed trait secretKey
+    extends StObject
+       with packet
+  /* 5 */ val secretKey: typingsJapgolly.openpgp.mod.enums.packet.secretKey & Double = js.native
   
-  /* 2 */ @js.native
-  object signature
-    extends TopLevel[typingsJapgolly.openpgp.mod.enums.packet.signature with Double]
+  @js.native
+  sealed trait secretSubkey
+    extends StObject
+       with packet
+  /* 7 */ val secretSubkey: typingsJapgolly.openpgp.mod.enums.packet.secretSubkey & Double = js.native
   
-  /* 20 */ @js.native
-  object symEncryptedAEADProtected extends TopLevel[symEncryptedAEADProtected with Double]
+  @js.native
+  sealed trait signature
+    extends StObject
+       with packet
+  /* 2 */ val signature: typingsJapgolly.openpgp.mod.enums.packet.signature & Double = js.native
   
-  /* 18 */ @js.native
-  object symEncryptedIntegrityProtected extends TopLevel[symEncryptedIntegrityProtected with Double]
+  @js.native
+  sealed trait symEncryptedAEADProtected
+    extends StObject
+       with packet
+  /* 20 */ val symEncryptedAEADProtected: typingsJapgolly.openpgp.mod.enums.packet.symEncryptedAEADProtected & Double = js.native
   
-  /* 3 */ @js.native
-  object symEncryptedSessionKey extends TopLevel[symEncryptedSessionKey with Double]
+  @js.native
+  sealed trait symEncryptedIntegrityProtected
+    extends StObject
+       with packet
+  /* 18 */ val symEncryptedIntegrityProtected: typingsJapgolly.openpgp.mod.enums.packet.symEncryptedIntegrityProtected & Double = js.native
   
-  /* 9 */ @js.native
-  object symmetricallyEncrypted extends TopLevel[symmetricallyEncrypted with Double]
+  @js.native
+  sealed trait symEncryptedSessionKey
+    extends StObject
+       with packet
+  /* 3 */ val symEncryptedSessionKey: typingsJapgolly.openpgp.mod.enums.packet.symEncryptedSessionKey & Double = js.native
   
-  /* 12 */ @js.native
-  object trust extends TopLevel[trust with Double]
+  @js.native
+  sealed trait symmetricallyEncrypted
+    extends StObject
+       with packet
+  /* 9 */ val symmetricallyEncrypted: typingsJapgolly.openpgp.mod.enums.packet.symmetricallyEncrypted & Double = js.native
   
-  /* 17 */ @js.native
-  object userAttribute extends TopLevel[userAttribute with Double]
+  @js.native
+  sealed trait trust
+    extends StObject
+       with packet
+  /* 12 */ val trust: typingsJapgolly.openpgp.mod.enums.packet.trust & Double = js.native
   
-  /* 13 */ @js.native
-  object userid extends TopLevel[userid with Double]
+  @js.native
+  sealed trait userAttribute
+    extends StObject
+       with packet
+  /* 17 */ val userAttribute: typingsJapgolly.openpgp.mod.enums.packet.userAttribute & Double = js.native
   
+  @js.native
+  sealed trait userid
+    extends StObject
+       with packet
+  /* 13 */ val userid: typingsJapgolly.openpgp.mod.enums.packet.userid & Double = js.native
 }
-

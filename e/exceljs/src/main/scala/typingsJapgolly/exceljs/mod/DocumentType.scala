@@ -1,14 +1,21 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.exceljsNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object DocumentType {
-  @scala.inline
-  def Xlsx: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@js.native
+sealed trait DocumentType extends StObject
+@JSImport("exceljs", "DocumentType")
+@js.native
+object DocumentType extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[DocumentType & Double] = js.native
+  
+  @js.native
+  sealed trait Xlsx
+    extends StObject
+       with DocumentType
+  /* 1 */ val Xlsx: typingsJapgolly.exceljs.mod.DocumentType.Xlsx & Double = js.native
 }
-

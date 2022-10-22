@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StorageDeleteOption extends js.Object
-
+sealed trait StorageDeleteOption extends StObject
 @JSGlobal("Windows.Storage.StorageDeleteOption")
 @js.native
-object StorageDeleteOption extends js.Object {
-  @js.native
-  sealed trait default extends StorageDeleteOption
+object StorageDeleteOption extends StObject {
   
   @js.native
-  sealed trait permanentDelete extends StorageDeleteOption
+  sealed trait default
+    extends StObject
+       with StorageDeleteOption
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StorageDeleteOption with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object permanentDelete extends TopLevel[permanentDelete with Double]
-  
+  @js.native
+  sealed trait permanentDelete
+    extends StObject
+       with StorageDeleteOption
 }
-

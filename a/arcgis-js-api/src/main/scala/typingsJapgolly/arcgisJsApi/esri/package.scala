@@ -1,1099 +1,836 @@
-package typingsJapgolly.arcgisJsApi
+package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.Instantiable1
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.average
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.compact
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.extent
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.max
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.min
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.thumb
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.tick
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.value
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.wide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object esri {
-  type AfterInterceptorCallback = js.Function1[/* response */ typingsJapgolly.arcgisJsApi.esri.RequestResponse, scala.Unit]
-  type BarCreatedFunction = js.Function2[/* index */ scala.Double, /* element */ js.Any, scala.Unit]
-  type BaseDynamicLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseDynamicLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type BaseDynamicLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseDynamicLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type BaseDynamicLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseDynamicLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type BaseElevationLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseElevationLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type BaseElevationLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseElevationLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type BaseElevationLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseElevationLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type BaseTileLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseTileLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type BaseTileLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseTileLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type BaseTileLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BaseTileLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type BasemapLayerListTriggerActionEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BasemapLayerListTriggerActionEvent, 
-    scala.Unit
-  ]
-  type BasemapToggleToggleEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.BasemapToggleToggleEvent, scala.Unit]
-  type BeforeInterceptorCallback = js.Function1[/* params */ js.Any, js.Any]
-  type BingMapsLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BingMapsLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type BingMapsLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BingMapsLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type BingMapsLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BingMapsLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type BookmarksSelectBookmarkEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BookmarksSelectBookmarkEvent, 
-    scala.Unit
-  ]
-  type BuildingSceneLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BuildingSceneLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type BuildingSceneLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BuildingSceneLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type BuildingSceneLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.BuildingSceneLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type CSVLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.CSVLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type CSVLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.CSVLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type CSVLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.CSVLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderMinChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedColorSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedColorSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderMinChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ClassedSizeSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ClassedSizeSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type ClosestFacilityTaskProperties = typingsJapgolly.arcgisJsApi.esri.TaskProperties
-  type CollectionAfterAddEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionAfterEvent[T], scala.Unit]
-  type CollectionAfterChangesEventHandler[T] = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.CollectionAfterChangesEvent[T], 
-    scala.Unit
-  ]
-  type CollectionAfterRemoveEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionAfterEvent[T], scala.Unit]
-  type CollectionBeforeAddEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionBeforeEvent[T], scala.Unit]
-  type CollectionBeforeChangesEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionBeforeEvent[T], scala.Unit]
-  type CollectionBeforeRemoveEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionBeforeEvent[T], scala.Unit]
-  type CollectionChangeEventHandler[T] = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CollectionChangeEvent[T], scala.Unit]
-  type CollectionProperties[T] = js.Array[T] | typingsJapgolly.arcgisJsApi.esri.Collection[T]
-  type ColorSizeSliderMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSizeSliderMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderMinChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSizeSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSizeSliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type ColorSizeSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSizeSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSizeSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSliderMaxChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderMaxChangeEvent, scala.Unit]
-  type ColorSliderMinChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderMinChangeEvent, scala.Unit]
-  type ColorSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSliderThumbDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderThumbDragEvent, scala.Unit]
-  type ColorSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type ColorSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ColorSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type Constructor[T] = org.scalablytyped.runtime.Instantiable1[/* params (repeated) */ js.Any, T]
-  type CredentialDestroyEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.CredentialDestroyEvent, scala.Unit]
-  type CredentialTokenChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.CredentialTokenChangeEvent, 
-    scala.Unit
-  ]
-  type DataLineCreatedFunction = js.Function3[
-    /* lineElement */ js.Any, 
-    /* labelElement */ js.UndefOr[js.Any], 
-    /* index */ js.UndefOr[scala.Double], 
-    scala.Unit
-  ]
-  type DateProperties = scala.Double | java.lang.String | js.Date
-  type EasingFunction = js.Function2[/* t */ scala.Double, /* duration */ scala.Double, scala.Double]
-  type ElevationLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ElevationLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type ElevationLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ElevationLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type ElevationLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ElevationLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type ElevationSamplerChangedEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ElevationSamplerChangedEvent, 
-    scala.Unit
-  ]
-  type EventAttachedCallback = js.Function4[
-    /* target */ js.UndefOr[js.Any], 
-    /* propName */ js.UndefOr[java.lang.String], 
-    /* obj */ js.UndefOr[typingsJapgolly.arcgisJsApi.esri.Accessor], 
-    /* eventName */ js.UndefOr[java.lang.String], 
-    scala.Unit
-  ]
-  type EventHandler = js.Function1[/* event */ js.Any, scala.Unit]
-  type Executor = js.Function2[
-    /* resolve */ typingsJapgolly.arcgisJsApi.esri.ResolveCallback, 
-    /* reject */ typingsJapgolly.arcgisJsApi.esri.RejectCallback, 
-    scala.Unit
-  ]
-  type FeatureFormSubmitEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.FeatureFormSubmitEvent, scala.Unit]
-  type FeatureFormValueChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureFormValueChangeEvent, 
-    scala.Unit
-  ]
-  type FeatureFormViewModelSubmitEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureFormViewModelSubmitEvent, 
-    scala.Unit
-  ]
-  type FeatureFormViewModelValueChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureFormViewModelValueChangeEvent, 
-    scala.Unit
-  ]
-  type FeatureLayerEditsEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.FeatureLayerEditsEvent, scala.Unit]
-  type FeatureLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type FeatureLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type FeatureLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type FeatureTemplatesSelectEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureTemplatesSelectEvent, 
-    scala.Unit
-  ]
-  type FeatureTemplatesViewModelSelectEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.FeatureTemplatesViewModelSelectEvent, 
-    scala.Unit
-  ]
-  type FilterFunction = js.Function1[/* filterName */ js.Any, scala.Boolean]
-  type FilterPredicateCallback = js.Function2[/* value */ js.Any, /* index */ scala.Double, js.Promise[js.Any]]
-  type GeoJSONLayerEditsEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.GeoJSONLayerEditsEvent, scala.Unit]
-  type GeoJSONLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoJSONLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type GeoJSONLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoJSONLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type GeoJSONLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoJSONLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type GeoRSSLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoRSSLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type GeoRSSLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoRSSLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type GeoRSSLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GeoRSSLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type GeoRSSLayerViewProperties = typingsJapgolly.arcgisJsApi.esri.LayerViewProperties
-  type GeometryServiceProperties = typingsJapgolly.arcgisJsApi.esri.TaskProperties
-  type GetHeader = js.Function1[/* headerName */ java.lang.String, java.lang.String]
-  type GetResultsHandler = js.Function1[
-    /* params */ js.Any, 
-    js.Promise[js.Array[typingsJapgolly.arcgisJsApi.esri.SearchResult]]
-  ]
-  type GetSuggestionsParameters = js.Function1[
-    /* params */ js.Any, 
-    js.Promise[js.Array[typingsJapgolly.arcgisJsApi.esri.SuggestResult]]
-  ]
-  type GoToOverride = js.Function2[
-    /* view */ typingsJapgolly.arcgisJsApi.esri.MapView | typingsJapgolly.arcgisJsApi.esri.SceneView, 
-    /* goToParameters */ js.Any, 
-    scala.Unit
-  ]
-  /* Rewritten from type alias, can be one of: 
-    - js.Array[
-  scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
-    - typingsJapgolly.arcgisJsApi.esri.Geometry_
-    - typingsJapgolly.arcgisJsApi.esri.Collection[
-  typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
-    - typingsJapgolly.arcgisJsApi.esri.Graphic
-    - typingsJapgolly.arcgisJsApi.esri.Viewpoint
-    - js.Any
-  */
-  type GoToTarget2D = typingsJapgolly.arcgisJsApi.esri._GoToTarget2D | (js.Array[
-    scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic
-  ]) | (typingsJapgolly.arcgisJsApi.esri.Collection[
-    typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic
-  ]) | js.Any
-  /* Rewritten from type alias, can be one of: 
-    - js.Array[
-  scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
-    - typingsJapgolly.arcgisJsApi.esri.Geometry_
-    - typingsJapgolly.arcgisJsApi.esri.Collection[
-  typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
-    - typingsJapgolly.arcgisJsApi.esri.Graphic
-    - typingsJapgolly.arcgisJsApi.esri.Camera
-    - typingsJapgolly.arcgisJsApi.esri.Viewpoint
-    - js.Any
-  */
-  type GoToTarget3D = typingsJapgolly.arcgisJsApi.esri._GoToTarget3D | (js.Array[
-    scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic
-  ]) | (typingsJapgolly.arcgisJsApi.esri.Collection[
-    typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic
-  ]) | js.Any
-  type GraphicsLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GraphicsLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type GraphicsLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GraphicsLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type GraphicsLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GraphicsLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type GraphicsLayerViewProperties = typingsJapgolly.arcgisJsApi.esri.LayerViewProperties
-  type GroupByFunction = js.Function1[/* grouping */ js.Any, java.lang.String | js.Any]
-  type GroupLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GroupLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type GroupLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GroupLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type GroupLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.GroupLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type HandlerCallback = js.Function5[
-    /* authorizeParams */ js.Any, 
-    /* authorizeUrl */ java.lang.String, 
-    /* oAuthInfo */ typingsJapgolly.arcgisJsApi.esri.OAuthInfo, 
-    /* resourceUrl */ java.lang.String, 
-    /* serverInfo */ typingsJapgolly.arcgisJsApi.esri.ServerInfo, 
-    scala.Unit
-  ]
-  type HeatmapSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HeatmapSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type HeatmapSliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HeatmapSliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type HeatmapSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HeatmapSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type HeatmapSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HeatmapSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderMaxChangeEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderMinChangeEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderSegmentDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderSegmentDragEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type HistogramRangeSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.HistogramRangeSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type HomeGoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.HomeGoEvent, scala.Unit]
-  type HomeViewModelGoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.HomeViewModelGoEvent, scala.Unit]
-  type IdentityManagerCredentialCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.IdentityManagerCredentialCreateEvent, 
-    scala.Unit
-  ]
-  type IdentityManagerDialogCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.IdentityManagerDialogCreateEvent, 
-    scala.Unit
-  ]
-  type ImageServiceIdentifyTask = typingsJapgolly.arcgisJsApi.esri.Task
-  type ImageServiceIdentifyTaskProperties = typingsJapgolly.arcgisJsApi.esri.TaskProperties
-  type ImageryLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ImageryLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type ImageryLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ImageryLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type ImageryLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ImageryLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type InheritedDomainProperties = typingsJapgolly.arcgisJsApi.esri.DomainProperties
-  type InputParser = js.Function3[
-    /* value */ java.lang.String, 
-    /* type */ js.UndefOr[
-      typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.average | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.min | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.max | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.tick | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.value
-    ], 
-    /* index */ js.UndefOr[scala.Double], 
-    scala.Double
-  ]
-  type IntegratedMeshLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.IntegratedMeshLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type IntegratedMeshLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.IntegratedMeshLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type IntegratedMeshLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.IntegratedMeshLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type ItemCallback[T] = js.Function2[/* item */ T, /* index */ scala.Double, scala.Unit]
-  type ItemCompareCallback[T] = js.Function2[/* firstItem */ T, /* secondItem */ T, scala.Double]
-  type ItemMapCallback[T, R] = js.Function2[/* item */ T, /* index */ scala.Double, R]
-  type ItemReduceCallback[T, R] = js.Function3[/* previousValue */ R, /* currentValue */ T, /* index */ scala.Double, R]
-  type ItemTestCallback[T] = js.Function2[/* item */ T, /* index */ scala.Double, scala.Boolean]
-  type KMLLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.KMLLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type KMLLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.KMLLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type KMLLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.KMLLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type KMLLayerViewProperties = typingsJapgolly.arcgisJsApi.esri.LayerViewProperties
-  type LabelFormatter = js.Function3[
-    /* value */ scala.Double, 
-    /* type */ js.UndefOr[java.lang.String], 
-    /* index */ js.UndefOr[scala.Double], 
-    java.lang.String
-  ]
-  type LayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.LayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type LayerLayerviewCreateEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.LayerLayerviewCreateEvent, scala.Unit]
-  type LayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.LayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type LayerListTriggerActionEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.LayerListTriggerActionEvent, 
-    scala.Unit
-  ]
-  type LayerListViewModelTriggerActionEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.LayerListViewModelTriggerActionEvent, 
-    scala.Unit
-  ]
-  type LineSymbol3DProperties = typingsJapgolly.arcgisJsApi.esri.Symbol3DProperties
-  type ListItemCreatedHandler = js.Function1[/* event */ js.Any, scala.Unit]
-  type LocateLocateErrorEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.LocateLocateErrorEvent, scala.Unit]
-  type LocateLocateEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.LocateLocateEvent, scala.Unit]
-  type LocateViewModelLocateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.LocateViewModelLocateErrorEvent, 
-    scala.Unit
-  ]
-  type MapImageLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapImageLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type MapImageLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapImageLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type MapImageLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapImageLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type MapNotesLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapNotesLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type MapNotesLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapNotesLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type MapNotesLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapNotesLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type MapViewBlurEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewBlurEvent, scala.Unit]
-  type MapViewClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewClickEvent, scala.Unit]
-  type MapViewDoubleClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewDoubleClickEvent, scala.Unit]
-  type MapViewDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewDragEvent, scala.Unit]
-  type MapViewFocusEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewFocusEvent, scala.Unit]
-  type MapViewHoldEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewHoldEvent, scala.Unit]
-  type MapViewImmediateClickEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapViewImmediateClickEvent, 
-    scala.Unit
-  ]
-  type MapViewKeyDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewKeyDownEvent, scala.Unit]
-  type MapViewKeyUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewKeyUpEvent, scala.Unit]
-  type MapViewLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapViewLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type MapViewLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapViewLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type MapViewLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MapViewLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type MapViewMouseWheelEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewMouseWheelEvent, scala.Unit]
-  type MapViewPointerDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewPointerDownEvent, scala.Unit]
-  type MapViewPointerEnterEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewPointerEnterEvent, scala.Unit]
-  type MapViewPointerLeaveEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewPointerLeaveEvent, scala.Unit]
-  type MapViewPointerMoveEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewPointerMoveEvent, scala.Unit]
-  type MapViewPointerUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewPointerUpEvent, scala.Unit]
-  type MapViewResizeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.MapViewResizeEvent, scala.Unit]
-  type MeshSymbol3DProperties = typingsJapgolly.arcgisJsApi.esri.Symbol3DProperties
-  type MultipointDrawActionCursorUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionCursorUpdateEvent, 
-    scala.Unit
-  ]
-  type MultipointDrawActionDrawCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionDrawCompleteEvent, 
-    scala.Unit
-  ]
-  type MultipointDrawActionProperties = typingsJapgolly.arcgisJsApi.esri.DrawActionProperties
-  type MultipointDrawActionRedoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionRedoEvent, 
-    scala.Unit
-  ]
-  type MultipointDrawActionUndoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionUndoEvent, 
-    scala.Unit
-  ]
-  type MultipointDrawActionVertexAddEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionVertexAddEvent, 
-    scala.Unit
-  ]
-  type MultipointDrawActionVertexRemoveEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.MultipointDrawActionVertexRemoveEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderMaxChangeEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderMinChangeEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderThumbDragEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type OpacitySliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpacitySliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type OpenStreetMapLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpenStreetMapLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type OpenStreetMapLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpenStreetMapLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type OpenStreetMapLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.OpenStreetMapLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type OpenStreetMapLayerProperties = typingsJapgolly.arcgisJsApi.esri.WebTileLayerProperties
-  type PhaseCallback = js.Function1[/* event */ js.UndefOr[typingsJapgolly.arcgisJsApi.esri.PhaseEvent], scala.Unit]
-  type PointCloudLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PointCloudLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type PointCloudLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PointCloudLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type PointCloudLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PointCloudLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type PointCloudLayerViewProperties = typingsJapgolly.arcgisJsApi.esri.LayerViewProperties
-  type PointDrawActionCursorUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PointDrawActionCursorUpdateEvent, 
-    scala.Unit
-  ]
-  type PointDrawActionDrawCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PointDrawActionDrawCompleteEvent, 
-    scala.Unit
-  ]
-  type PointDrawActionProperties = typingsJapgolly.arcgisJsApi.esri.DrawActionProperties
-  type PolygonDrawActionCursorUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionCursorUpdateEvent, 
-    scala.Unit
-  ]
-  type PolygonDrawActionDrawCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionDrawCompleteEvent, 
-    scala.Unit
-  ]
-  type PolygonDrawActionRedoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionRedoEvent, 
-    scala.Unit
-  ]
-  type PolygonDrawActionUndoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionUndoEvent, 
-    scala.Unit
-  ]
-  type PolygonDrawActionVertexAddEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionVertexAddEvent, 
-    scala.Unit
-  ]
-  type PolygonDrawActionVertexRemoveEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolygonDrawActionVertexRemoveEvent, 
-    scala.Unit
-  ]
-  type PolygonSymbol3DProperties = typingsJapgolly.arcgisJsApi.esri.Symbol3DProperties
-  type PolylineDrawActionCursorUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionCursorUpdateEvent, 
-    scala.Unit
-  ]
-  type PolylineDrawActionDrawCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionDrawCompleteEvent, 
-    scala.Unit
-  ]
-  type PolylineDrawActionRedoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionRedoEvent, 
-    scala.Unit
-  ]
-  type PolylineDrawActionUndoEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionUndoEvent, 
-    scala.Unit
-  ]
-  type PolylineDrawActionVertexAddEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionVertexAddEvent, 
-    scala.Unit
-  ]
-  type PolylineDrawActionVertexRemoveEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PolylineDrawActionVertexRemoveEvent, 
-    scala.Unit
-  ]
-  type PopupTriggerActionEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.PopupTriggerActionEvent, scala.Unit]
-  type PopupViewModelTriggerActionEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.PopupViewModelTriggerActionEvent, 
-    scala.Unit
-  ]
-  type RejectCallback = js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit]
-  type RenderContextCallback = js.Function1[
-    /* context */ js.UndefOr[typingsJapgolly.arcgisJsApi.esri.RenderContext], 
-    scala.Unit
-  ]
-  type ResolveCallback = js.Function1[/* value */ js.UndefOr[js.Any | js.Promise[js.Any]], scala.Unit]
-  type RouteTaskProperties = typingsJapgolly.arcgisJsApi.esri.TaskProperties
-  type SceneLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type SceneLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type SceneLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type SceneViewBlurEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewBlurEvent, scala.Unit]
-  type SceneViewClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewClickEvent, scala.Unit]
-  type SceneViewDoubleClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewDoubleClickEvent, scala.Unit]
-  type SceneViewDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewDragEvent, scala.Unit]
-  type SceneViewFocusEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewFocusEvent, scala.Unit]
-  type SceneViewHoldEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewHoldEvent, scala.Unit]
-  type SceneViewImmediateClickEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewImmediateClickEvent, 
-    scala.Unit
-  ]
-  type SceneViewKeyDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewKeyDownEvent, scala.Unit]
-  type SceneViewKeyUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewKeyUpEvent, scala.Unit]
-  type SceneViewLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type SceneViewLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type SceneViewLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type SceneViewMouseWheelEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewMouseWheelEvent, scala.Unit]
-  type SceneViewPointerDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewPointerDownEvent, scala.Unit]
-  type SceneViewPointerEnterEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewPointerEnterEvent, 
-    scala.Unit
-  ]
-  type SceneViewPointerLeaveEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewPointerLeaveEvent, 
-    scala.Unit
-  ]
-  type SceneViewPointerMoveEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewPointerMoveEvent, scala.Unit]
-  type SceneViewPointerUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewPointerUpEvent, scala.Unit]
-  type SceneViewResizeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SceneViewResizeEvent, scala.Unit]
-  type SearchSearchBlurEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSearchBlurEvent, scala.Unit]
-  type SearchSearchClearEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSearchClearEvent, scala.Unit]
-  type SearchSearchCompleteEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSearchCompleteEvent, scala.Unit]
-  type SearchSearchFocusEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSearchFocusEvent, scala.Unit]
-  type SearchSearchStartEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSearchStartEvent, scala.Unit]
-  type SearchSelectResultEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSelectResultEvent, scala.Unit]
-  type SearchSuggestCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchSuggestCompleteEvent, 
-    scala.Unit
-  ]
-  type SearchSuggestStartEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SearchSuggestStartEvent, scala.Unit]
-  type SearchViewModelSearchClearEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSearchClearEvent, 
-    scala.Unit
-  ]
-  type SearchViewModelSearchCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSearchCompleteEvent, 
-    scala.Unit
-  ]
-  type SearchViewModelSearchStartEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSearchStartEvent, 
-    scala.Unit
-  ]
-  type SearchViewModelSelectResultEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSelectResultEvent, 
-    scala.Unit
-  ]
-  type SearchViewModelSuggestCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSuggestCompleteEvent, 
-    scala.Unit
-  ]
-  type SearchViewModelSuggestStartEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SearchViewModelSuggestStartEvent, 
-    scala.Unit
-  ]
-  type SegmentDrawActionCursorUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SegmentDrawActionCursorUpdateEvent, 
-    scala.Unit
-  ]
-  type SegmentDrawActionDrawCompleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SegmentDrawActionDrawCompleteEvent, 
-    scala.Unit
-  ]
-  type SegmentDrawActionVertexAddEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SegmentDrawActionVertexAddEvent, 
-    scala.Unit
-  ]
-  type ServiceAreaTaskProperties = typingsJapgolly.arcgisJsApi.esri.TaskProperties
-  type SizeSliderMaxChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderMaxChangeEvent, scala.Unit]
-  type SizeSliderMinChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderMinChangeEvent, scala.Unit]
-  type SizeSliderThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderThumbChangeEvent, 
-    scala.Unit
-  ]
-  type SizeSliderThumbDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderThumbDragEvent, scala.Unit]
-  type SizeSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type SizeSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SizeSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type SketchCreateEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchCreateEvent, scala.Unit]
-  type SketchDeleteEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchDeleteEvent, scala.Unit]
-  type SketchRedoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchRedoEvent, scala.Unit]
-  type SketchUndoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchUndoEvent, scala.Unit]
-  type SketchUpdateEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchUpdateEvent, scala.Unit]
-  type SketchViewModelCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SketchViewModelCreateEvent, 
-    scala.Unit
-  ]
-  type SketchViewModelDeleteEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SketchViewModelDeleteEvent, 
-    scala.Unit
-  ]
-  type SketchViewModelRedoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchViewModelRedoEvent, scala.Unit]
-  type SketchViewModelUndoEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SketchViewModelUndoEvent, scala.Unit]
-  type SketchViewModelUpdateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SketchViewModelUpdateEvent, 
-    scala.Unit
-  ]
-  type SliderLabelFormatter = js.Function3[
-    /* value */ scala.Double, 
-    /* type */ js.UndefOr[
-      typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.average | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.min | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.max | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.tick | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.value
-    ], 
-    /* index */ js.UndefOr[scala.Double], 
-    java.lang.String
-  ]
-  type SliderMaxChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SliderMaxChangeEvent, scala.Unit]
-  type SliderMinChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SliderMinChangeEvent, scala.Unit]
-  type SliderSegmentDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SliderSegmentDragEvent, scala.Unit]
-  type SliderThumbChangeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SliderThumbChangeEvent, scala.Unit]
-  type SliderThumbDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.SliderThumbDragEvent, scala.Unit]
-  type SliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type SliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderBaseLabelFormatter = js.Function3[
-    /* value */ scala.Double, 
-    /* type */ js.UndefOr[
-      typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.average | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.min | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.max | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.value
-    ], 
-    /* index */ js.UndefOr[scala.Double], 
-    java.lang.String
-  ]
-  type SmartMappingSliderBaseMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderBaseMaxChangeEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderBaseMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderBaseMinChangeEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderBaseThumbChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderBaseThumbChangeEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderBaseThumbDragEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderBaseThumbDragEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderViewModelMaxChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderViewModelMaxChangeEvent, 
-    scala.Unit
-  ]
-  type SmartMappingSliderViewModelMinChangeEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.SmartMappingSliderViewModelMinChangeEvent, 
-    scala.Unit
-  ]
-  type SpinnerViewModel = typingsJapgolly.arcgisJsApi.esri.Accessor
-  type StreamLayerEditsEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.StreamLayerEditsEvent, scala.Unit]
-  type StreamLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.StreamLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type StreamLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.StreamLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type StreamLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.StreamLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type StreamLayerViewDataReceivedEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.StreamLayerViewDataReceivedEvent, 
-    scala.Unit
-  ]
-  type StreamLayerViewProperties = typingsJapgolly.arcgisJsApi.esri.LayerViewProperties
-  type ThumbCreatedFunction = js.Function4[
-    /* index */ scala.Double, 
-    /* value */ scala.Double, 
-    /* thumbElement */ org.scalajs.dom.raw.HTMLElement, 
-    /* labelElement */ js.UndefOr[org.scalajs.dom.raw.HTMLElement], 
-    scala.Unit
-  ]
-  type TickCreatedFunction = js.Function3[
-    /* value */ scala.Double, 
-    /* tickElement */ org.scalajs.dom.raw.HTMLElement, 
-    /* labelElement */ js.UndefOr[org.scalajs.dom.raw.HTMLElement], 
-    scala.Unit
-  ]
-  type TileLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.TileLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type TileLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.TileLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type TileLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.TileLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type TrackTrackErrorEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.TrackTrackErrorEvent, scala.Unit]
-  type TrackTrackEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.TrackTrackEvent, scala.Unit]
-  type TrackViewModelTrackErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.TrackViewModelTrackErrorEvent, 
-    scala.Unit
-  ]
-  type TrackViewModelTrackEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.TrackViewModelTrackEvent, scala.Unit]
-  type UnknownLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnknownLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type UnknownLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnknownLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type UnknownLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnknownLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type UnknownLayerProperties = typingsJapgolly.arcgisJsApi.esri.LayerProperties
-  type UnsupportedLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnsupportedLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type UnsupportedLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnsupportedLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type UnsupportedLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.UnsupportedLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type UnsupportedLayerProperties = typingsJapgolly.arcgisJsApi.esri.LayerProperties
-  type VectorTileLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.VectorTileLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type VectorTileLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.VectorTileLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type VectorTileLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.VectorTileLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type ViewBlurEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewBlurEvent, scala.Unit]
-  type ViewClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewClickEvent, scala.Unit]
-  type ViewDoubleClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewDoubleClickEvent, scala.Unit]
-  type ViewDragEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewDragEvent, scala.Unit]
-  type ViewFocusEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewFocusEvent, scala.Unit]
-  type ViewHoldEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewHoldEvent, scala.Unit]
-  type ViewImmediateClickEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewImmediateClickEvent, scala.Unit]
-  type ViewKeyDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewKeyDownEvent, scala.Unit]
-  type ViewKeyUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewKeyUpEvent, scala.Unit]
-  type ViewLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.ViewLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type ViewLayerviewCreateEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewLayerviewCreateEvent, scala.Unit]
-  type ViewLayerviewDestroyEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewLayerviewDestroyEvent, scala.Unit]
-  type ViewMouseWheelEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewMouseWheelEvent, scala.Unit]
-  type ViewPointerDownEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewPointerDownEvent, scala.Unit]
-  type ViewPointerEnterEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewPointerEnterEvent, scala.Unit]
-  type ViewPointerLeaveEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewPointerLeaveEvent, scala.Unit]
-  type ViewPointerMoveEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewPointerMoveEvent, scala.Unit]
-  type ViewPointerUpEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewPointerUpEvent, scala.Unit]
-  type ViewResizeEventHandler = js.Function1[/* event */ typingsJapgolly.arcgisJsApi.esri.ViewResizeEvent, scala.Unit]
-  type WMSLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMSLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type WMSLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMSLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type WMSLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMSLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type WMTSLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMTSLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type WMTSLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMTSLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type WMTSLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WMTSLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type WatchCallback = js.Function4[
-    /* newValue */ js.Any, 
-    /* oldValue */ js.Any, 
-    /* propertyName */ java.lang.String, 
-    /* target */ typingsJapgolly.arcgisJsApi.esri.Accessor, 
-    scala.Unit
-  ]
-  type WebTileLayerLayerviewCreateErrorEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WebTileLayerLayerviewCreateErrorEvent, 
-    scala.Unit
-  ]
-  type WebTileLayerLayerviewCreateEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WebTileLayerLayerviewCreateEvent, 
-    scala.Unit
-  ]
-  type WebTileLayerLayerviewDestroyEventHandler = js.Function1[
-    /* event */ typingsJapgolly.arcgisJsApi.esri.WebTileLayerLayerviewDestroyEvent, 
-    scala.Unit
-  ]
-  type contentAttachmentsContent = typingsJapgolly.arcgisJsApi.esri.AttachmentsContent
-  type contentFieldsContent = typingsJapgolly.arcgisJsApi.esri.FieldsContent
-  type contentMediaContent = typingsJapgolly.arcgisJsApi.esri.MediaContent
-  type contentTextContent = typingsJapgolly.arcgisJsApi.esri.TextContent
-  type geometryExtent = typingsJapgolly.arcgisJsApi.esri.Extent
-  type geometryMesh = typingsJapgolly.arcgisJsApi.esri.Mesh
-  type geometryMultipoint = typingsJapgolly.arcgisJsApi.esri.Multipoint
-  type geometryPoint = typingsJapgolly.arcgisJsApi.esri.Point
-  type geometryPolygon = typingsJapgolly.arcgisJsApi.esri.Polygon
-  type geometryPolyline = typingsJapgolly.arcgisJsApi.esri.Polyline
-  type geometrySpatialReference = typingsJapgolly.arcgisJsApi.esri.SpatialReference
-  type pointCloudRenderersPointCloudClassBreaksRenderer = typingsJapgolly.arcgisJsApi.esri.PointCloudClassBreaksRenderer
-  type pointCloudRenderersPointCloudRGBRenderer = typingsJapgolly.arcgisJsApi.esri.PointCloudRGBRenderer
-  type pointCloudRenderersPointCloudStretchRenderer = typingsJapgolly.arcgisJsApi.esri.PointCloudStretchRenderer
-  type pointCloudRenderersPointCloudUniqueValueRenderer = typingsJapgolly.arcgisJsApi.esri.PointCloudUniqueValueRenderer
-  type rasterRenderersClassBreaksRenderer = typingsJapgolly.arcgisJsApi.esri.ClassBreaksRenderer
-  type rasterRenderersRasterStretchRenderer = typingsJapgolly.arcgisJsApi.esri.RasterStretchRenderer
-  type rasterRenderersUniqueValueRenderer = typingsJapgolly.arcgisJsApi.esri.UniqueValueRenderer
-  type renderersClassBreaksRenderer = typingsJapgolly.arcgisJsApi.esri.ClassBreaksRenderer
-  type renderersDotDensityRenderer = typingsJapgolly.arcgisJsApi.esri.DotDensityRenderer
-  type renderersHeatmapRenderer = typingsJapgolly.arcgisJsApi.esri.HeatmapRenderer
-  type renderersSimpleRenderer = typingsJapgolly.arcgisJsApi.esri.SimpleRenderer
-  type renderersUniqueValueRenderer = typingsJapgolly.arcgisJsApi.esri.UniqueValueRenderer
-  type symbolsCIMSymbol = typingsJapgolly.arcgisJsApi.esri.CIMSymbol
-  type symbolsExtrudeSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.ExtrudeSymbol3DLayer
-  type symbolsFillSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.FillSymbol3DLayer
-  type symbolsFont = typingsJapgolly.arcgisJsApi.esri.Font
-  type symbolsIconSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.IconSymbol3DLayer
-  type symbolsLabelSymbol3D = typingsJapgolly.arcgisJsApi.esri.LabelSymbol3D
-  type symbolsLineSymbol3D = typingsJapgolly.arcgisJsApi.esri.LineSymbol3D
-  type symbolsLineSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.LineSymbol3DLayer
-  type symbolsMeshSymbol3D = typingsJapgolly.arcgisJsApi.esri.MeshSymbol3D
-  type symbolsObjectSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.ObjectSymbol3DLayer
-  type symbolsPathSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.PathSymbol3DLayer
-  type symbolsPictureFillSymbol = typingsJapgolly.arcgisJsApi.esri.PictureFillSymbol
-  type symbolsPictureMarkerSymbol = typingsJapgolly.arcgisJsApi.esri.PictureMarkerSymbol
-  type symbolsPointSymbol3D = typingsJapgolly.arcgisJsApi.esri.PointSymbol3D
-  type symbolsPolygonSymbol3D = typingsJapgolly.arcgisJsApi.esri.PolygonSymbol3D
-  type symbolsSimpleFillSymbol = typingsJapgolly.arcgisJsApi.esri.SimpleFillSymbol
-  type symbolsSimpleLineSymbol = typingsJapgolly.arcgisJsApi.esri.SimpleLineSymbol
-  type symbolsSimpleMarkerSymbol = typingsJapgolly.arcgisJsApi.esri.SimpleMarkerSymbol
-  type symbolsTextSymbol = typingsJapgolly.arcgisJsApi.esri.TextSymbol
-  type symbolsTextSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.TextSymbol3DLayer
-  type symbolsWaterSymbol3DLayer = typingsJapgolly.arcgisJsApi.esri.WaterSymbol3DLayer
-  type symbolsWebStyleSymbol = typingsJapgolly.arcgisJsApi.esri.WebStyleSymbol
-}
+
+type AfterInterceptorCallback = js.Function1[/* response */ RequestResponse, scala.Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.acres
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ares
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hectares
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-feet`
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-meters`
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-yards`
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-kilometers`
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`square-miles`
+  - scala.Double
+*/
+type ArealUnits = _ArealUnits | Double
+
+type BarCreatedFunction = js.Function2[/* index */ Double, /* element */ Any, scala.Unit]
+
+type BarcodeScannerInputProperties = TextInputProperties
+
+type BaseDynamicLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type BaseDynamicLayerLayerviewCreateEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewCreateEvent, scala.Unit]
+
+type BaseDynamicLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BaseDynamicLayerLayerviewDestroyEvent, scala.Unit]
+
+type BaseDynamicLayerRefreshEventHandler = js.Function1[/* event */ BaseDynamicLayerRefreshEvent, scala.Unit]
+
+type BaseTileLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BaseTileLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type BaseTileLayerLayerviewCreateEventHandler = js.Function1[/* event */ BaseTileLayerLayerviewCreateEvent, scala.Unit]
+
+type BaseTileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BaseTileLayerLayerviewDestroyEvent, scala.Unit]
+
+type BaseTileLayerRefreshEventHandler = js.Function1[/* event */ BaseTileLayerRefreshEvent, scala.Unit]
+
+type BasemapFilter = js.Function3[/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap], Boolean]
+
+type BasemapLayerListTriggerActionEventHandler = js.Function1[/* event */ BasemapLayerListTriggerActionEvent, scala.Unit]
+
+type BasemapToggleToggleEventHandler = js.Function1[/* event */ BasemapToggleToggleEvent, scala.Unit]
+
+type BeforeInterceptorCallback = js.Function1[/* params */ Any, Any]
+
+type BingMapsLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type BingMapsLayerLayerviewCreateEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewCreateEvent, scala.Unit]
+
+type BingMapsLayerLayerviewDestroyEventHandler = js.Function1[/* event */ BingMapsLayerLayerviewDestroyEvent, scala.Unit]
+
+type BingMapsLayerRefreshEventHandler = js.Function1[/* event */ BingMapsLayerRefreshEvent, scala.Unit]
+
+type BookmarksBookmarkEditEventHandler = js.Function1[/* event */ BookmarksBookmarkEditEvent, scala.Unit]
+
+type BookmarksBookmarkSelectEventHandler = js.Function1[/* event */ BookmarksBookmarkSelectEvent, scala.Unit]
+
+type BuildingSceneLayerViewProperties = LayerViewProperties
+
+type ButtonMenuItemClickFunction = js.Function1[/* event */ Any, scala.Unit]
+
+type CSVLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ CSVLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type CSVLayerLayerviewCreateEventHandler = js.Function1[/* event */ CSVLayerLayerviewCreateEvent, scala.Unit]
+
+type CSVLayerLayerviewDestroyEventHandler = js.Function1[/* event */ CSVLayerLayerviewDestroyEvent, scala.Unit]
+
+type CSVLayerRefreshEventHandler = js.Function1[/* event */ CSVLayerRefreshEvent, scala.Unit]
+
+type CollectionAfterAddEventHandler[T] = js.Function1[/* event */ CollectionAfterEvent[T], scala.Unit]
+
+type CollectionAfterChangesEventHandler[T] = js.Function1[/* event */ CollectionAfterChangesEvent[T], scala.Unit]
+
+type CollectionAfterRemoveEventHandler[T] = js.Function1[/* event */ CollectionAfterEvent[T], scala.Unit]
+
+type CollectionBeforeAddEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+
+type CollectionBeforeChangesEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+
+type CollectionBeforeRemoveEventHandler[T] = js.Function1[/* event */ CollectionBeforeEvent[T], scala.Unit]
+
+type CollectionChangeEventHandler[T] = js.Function1[/* event */ CollectionChangeEvent[T], scala.Unit]
+
+type CollectionProperties[T] = js.Array[T] | Collection[T]
+
+type Constructor[T] = Instantiable1[/* params (repeated) */ Any, T]
+
+type CreateWorkflowProperties = WorkflowProperties
+
+type CredentialDestroyEventHandler = js.Function1[/* event */ CredentialDestroyEvent, scala.Unit]
+
+type CredentialTokenChangeEventHandler = js.Function1[/* event */ CredentialTokenChangeEvent, scala.Unit]
+
+type DataLineCreatedFunction = js.Function3[
+/* lineElement */ Any, 
+/* labelElement */ js.UndefOr[Any], 
+/* index */ js.UndefOr[Double], 
+scala.Unit]
+
+type DateLabelFormatter = js.Function4[
+/* value */ js.Date | js.Array[js.Date], 
+/* type */ js.UndefOr[min | max | extent], 
+/* element */ js.UndefOr[HTMLElement], 
+/* layout */ js.UndefOr[compact | wide], 
+scala.Unit]
+
+type DatePickerViewModelProperties = DateTimeElementViewModelProperties
+
+type DateProperties = Double | String | js.Date
+
+type EasingFunction = js.Function2[/* t */ Double, /* duration */ Double, Double]
+
+type Effect = js.Array[Any] | String
+
+type ElevationProfileLineGroundProperties = ElevationProfileLineProperties
+
+type ElevationProfileLineInputProperties = ElevationProfileLineProperties
+
+type ElevationSamplerChangedEventHandler = js.Function1[/* event */ ElevationSamplerChangedEvent, scala.Unit]
+
+type ErrorCallback = js.Function1[/* error */ Error, scala.Unit]
+
+type EventAttachedCallback = js.Function4[
+/* target */ js.UndefOr[Any], 
+/* propName */ js.UndefOr[String], 
+/* obj */ js.UndefOr[Accessor], 
+/* eventName */ js.UndefOr[String], 
+scala.Unit]
+
+type EventHandler = js.Function1[/* event */ Any, scala.Unit]
+
+type Executor = js.Function2[/* resolve */ ResolveCallback, /* reject */ RejectCallback, scala.Unit]
+
+type FeatureEffectEffect = js.Array[Any] | String
+
+type FeatureFormSubmitEventHandler = js.Function1[/* event */ FeatureFormSubmitEvent, scala.Unit]
+
+type FeatureFormValueChangeEventHandler = js.Function1[/* event */ FeatureFormValueChangeEvent, scala.Unit]
+
+type FeatureFormViewModelSubmitEventHandler = js.Function1[/* event */ FeatureFormViewModelSubmitEvent, scala.Unit]
+
+type FeatureFormViewModelValueChangeEventHandler = js.Function1[/* event */ FeatureFormViewModelValueChangeEvent, scala.Unit]
+
+type FeatureLayerEditsEventHandler = js.Function1[/* event */ FeatureLayerEditsEvent, scala.Unit]
+
+type FeatureLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ FeatureLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type FeatureLayerLayerviewCreateEventHandler = js.Function1[/* event */ FeatureLayerLayerviewCreateEvent, scala.Unit]
+
+type FeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ FeatureLayerLayerviewDestroyEvent, scala.Unit]
+
+type FeatureLayerRefreshEventHandler = js.Function1[/* event */ FeatureLayerRefreshEvent, scala.Unit]
+
+type FeatureTableSelectionChangeEventHandler = js.Function1[/* event */ FeatureTableSelectionChangeEvent, scala.Unit]
+
+type FeatureTemplatesSelectEventHandler = js.Function1[/* event */ FeatureTemplatesSelectEvent, scala.Unit]
+
+type FeatureTemplatesViewModelSelectEventHandler = js.Function1[/* event */ FeatureTemplatesViewModelSelectEvent, scala.Unit]
+
+type FetchMessageBundle = js.Function2[/* bundleId */ String, /* locale */ String, js.Promise[Any]]
+
+type FilterFunction = js.Function1[/* filterName */ Any, Boolean]
+
+type FilterPredicateCallback = js.Function2[/* value */ Any, /* index */ Double, js.Promise[Any]]
+
+type GeoJSONLayerEditsEventHandler = js.Function1[/* event */ GeoJSONLayerEditsEvent, scala.Unit]
+
+type GeoJSONLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type GeoJSONLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewCreateEvent, scala.Unit]
+
+type GeoJSONLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoJSONLayerLayerviewDestroyEvent, scala.Unit]
+
+type GeoJSONLayerRefreshEventHandler = js.Function1[/* event */ GeoJSONLayerRefreshEvent, scala.Unit]
+
+type GeoRSSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type GeoRSSLayerLayerviewCreateEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewCreateEvent, scala.Unit]
+
+type GeoRSSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ GeoRSSLayerLayerviewDestroyEvent, scala.Unit]
+
+type GeoRSSLayerRefreshEventHandler = js.Function1[/* event */ GeoRSSLayerRefreshEvent, scala.Unit]
+
+type GeoRSSLayerViewProperties = LayerViewProperties
+
+type GetHeader = js.Function1[/* headerName */ String, String]
+
+type GetResultsHandler = js.Function1[/* params */ Any, js.Promise[js.Array[SearchResult]]]
+
+type GetSuggestionsParameters = js.Function1[/* params */ Any, js.Promise[js.Array[SuggestResult]]]
+
+type GoToOverride = js.Function2[/* view */ MapView | SceneView, /* goToParameters */ Any, scala.Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - js.Array[
+scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
+  - typingsJapgolly.arcgisJsApi.esri.Geometry_
+  - typingsJapgolly.arcgisJsApi.esri.Collection[
+typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
+  - typingsJapgolly.arcgisJsApi.esri.Graphic
+  - typingsJapgolly.arcgisJsApi.esri.Viewpoint
+  - scala.Any
+*/
+type GoToTarget2D = _GoToTarget2D | (js.Array[Double | Geometry_ | Graphic]) | (Collection[Geometry_ | Graphic]) | Any
+
+/* Rewritten from type alias, can be one of: 
+  - js.Array[
+scala.Double | typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
+  - typingsJapgolly.arcgisJsApi.esri.Geometry_
+  - typingsJapgolly.arcgisJsApi.esri.Collection[
+typingsJapgolly.arcgisJsApi.esri.Geometry_ | typingsJapgolly.arcgisJsApi.esri.Graphic]
+  - typingsJapgolly.arcgisJsApi.esri.Graphic
+  - typingsJapgolly.arcgisJsApi.esri.Camera
+  - typingsJapgolly.arcgisJsApi.esri.Viewpoint
+  - scala.Any
+*/
+type GoToTarget3D = _GoToTarget3D | (js.Array[Double | Geometry_ | Graphic]) | (Collection[Geometry_ | Graphic]) | Any
+
+type GraphicsLayerViewProperties = LayerViewProperties
+
+type GroupByFunction = js.Function1[/* grouping */ Any, String | Any]
+
+type GroupColumnProperties = ColumnProperties
+
+type HandlerCallback = js.Function5[
+/* authorizeParams */ Any, 
+/* authorizeUrl */ String, 
+/* oAuthInfo */ OAuthInfo, 
+/* resourceUrl */ String, 
+/* serverInfo */ ServerInfo, 
+scala.Unit]
+
+type HeatmapSliderThumbChangeEventHandler = js.Function1[/* event */ HeatmapSliderThumbChangeEvent, scala.Unit]
+
+type HeatmapSliderThumbDragEventHandler = js.Function1[/* event */ HeatmapSliderThumbDragEvent, scala.Unit]
+
+type HistogramRangeSliderMaxChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderMaxChangeEvent, scala.Unit]
+
+type HistogramRangeSliderMinChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderMinChangeEvent, scala.Unit]
+
+type HistogramRangeSliderSegmentDragEventHandler = js.Function1[/* event */ HistogramRangeSliderSegmentDragEvent, scala.Unit]
+
+type HistogramRangeSliderThumbChangeEventHandler = js.Function1[/* event */ HistogramRangeSliderThumbChangeEvent, scala.Unit]
+
+type HistogramRangeSliderThumbDragEventHandler = js.Function1[/* event */ HistogramRangeSliderThumbDragEvent, scala.Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arcgisJsApi.esri.Layer
+  - typingsJapgolly.arcgisJsApi.esri.Graphic
+  - typingsJapgolly.arcgisJsApi.esri.Collection[
+typingsJapgolly.arcgisJsApi.esri.Graphic | typingsJapgolly.arcgisJsApi.esri.Layer]
+  - js.Array[
+typingsJapgolly.arcgisJsApi.esri.Graphic | typingsJapgolly.arcgisJsApi.esri.Layer]
+*/
+type HitTestItem = _HitTestItem | (Collection[Graphic | Layer]) | (js.Array[Graphic | Layer])
+
+type HomeGoEventHandler = js.Function1[/* event */ HomeGoEvent, scala.Unit]
+
+type HomeViewModelGoEventHandler = js.Function1[/* event */ HomeViewModelGoEvent, scala.Unit]
+
+type IdentityManagerCredentialCreateEventHandler = js.Function1[/* event */ IdentityManagerCredentialCreateEvent, scala.Unit]
+
+type IdentityManagerDialogCreateEventHandler = js.Function1[/* event */ IdentityManagerDialogCreateEvent, scala.Unit]
+
+type ImageryLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ ImageryLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type ImageryLayerLayerviewCreateEventHandler = js.Function1[/* event */ ImageryLayerLayerviewCreateEvent, scala.Unit]
+
+type ImageryLayerLayerviewDestroyEventHandler = js.Function1[/* event */ ImageryLayerLayerviewDestroyEvent, scala.Unit]
+
+type ImageryLayerRefreshEventHandler = js.Function1[/* event */ ImageryLayerRefreshEvent, scala.Unit]
+
+type InheritedDomainProperties = DomainProperties
+
+type InputCreatedFunction = js.Function3[
+/* inputElement */ Any, 
+/* type */ max | min | thumb, 
+/* thumbIndex */ js.UndefOr[Double], 
+scala.Unit]
+
+type InputParser = js.Function3[
+/* value */ String, 
+/* type */ js.UndefOr[average | min | max | tick | value], 
+/* index */ js.UndefOr[Double], 
+Double]
+
+type ItemCallback[T] = js.Function2[/* item */ T, /* index */ Double, scala.Unit]
+
+type ItemCompareCallback[T] = js.Function2[/* firstItem */ T, /* secondItem */ T, Double]
+
+type ItemMapCallback[T, R] = js.Function2[/* item */ T, /* index */ Double, R]
+
+type ItemReduceCallback[T, R] = js.Function3[/* previousValue */ R, /* currentValue */ T, /* index */ Double, R]
+
+type ItemTestCallback[T] = js.Function2[/* item */ T, /* index */ Double, Boolean]
+
+type KMLLayerViewProperties = LayerViewProperties
+
+type LabelFormatter = js.Function3[
+/* value */ Double, 
+/* type */ js.UndefOr[String], 
+/* index */ js.UndefOr[Double], 
+String]
+
+type LayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ LayerLayerviewCreateErrorEvent, scala.Unit]
+
+type LayerLayerviewCreateEventHandler = js.Function1[/* event */ LayerLayerviewCreateEvent, scala.Unit]
+
+type LayerLayerviewDestroyEventHandler = js.Function1[/* event */ LayerLayerviewDestroyEvent, scala.Unit]
+
+type LayerListListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
+
+type LayerListTriggerActionEventHandler = js.Function1[/* event */ LayerListTriggerActionEvent, scala.Unit]
+
+type LayerListViewModelTriggerActionEventHandler = js.Function1[/* event */ LayerListViewModelTriggerActionEvent, scala.Unit]
+
+type LightingProperties = websceneSunLightingProperties
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.meters_
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.feet_
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.kilometers_
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miles_
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
+  - typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.yards
+  - scala.Double
+*/
+type LinearUnits = _LinearUnits | Double
+
+type ListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
+
+type LocaleChangeCallback = js.Function1[/* newLocale */ String, scala.Unit]
+
+type LocateLocateErrorEventHandler = js.Function1[/* event */ LocateLocateErrorEvent, scala.Unit]
+
+type LocateLocateEventHandler = js.Function1[/* event */ LocateLocateEvent, scala.Unit]
+
+type LocateViewModelLocateErrorEventHandler = js.Function1[/* event */ LocateViewModelLocateErrorEvent, scala.Unit]
+
+type MapImageLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ MapImageLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type MapImageLayerLayerviewCreateEventHandler = js.Function1[/* event */ MapImageLayerLayerviewCreateEvent, scala.Unit]
+
+type MapImageLayerLayerviewDestroyEventHandler = js.Function1[/* event */ MapImageLayerLayerviewDestroyEvent, scala.Unit]
+
+type MapImageLayerRefreshEventHandler = js.Function1[/* event */ MapImageLayerRefreshEvent, scala.Unit]
+
+type MultipointDrawActionCursorUpdateEventHandler = js.Function1[/* event */ MultipointDrawActionCursorUpdateEvent, scala.Unit]
+
+type MultipointDrawActionDrawCompleteEventHandler = js.Function1[/* event */ MultipointDrawActionDrawCompleteEvent, scala.Unit]
+
+type MultipointDrawActionProperties = DrawActionProperties
+
+type MultipointDrawActionRedoEventHandler = js.Function1[/* event */ MultipointDrawActionRedoEvent, scala.Unit]
+
+type MultipointDrawActionUndoEventHandler = js.Function1[/* event */ MultipointDrawActionUndoEvent, scala.Unit]
+
+type MultipointDrawActionVertexAddEventHandler = js.Function1[/* event */ MultipointDrawActionVertexAddEvent, scala.Unit]
+
+type MultipointDrawActionVertexRemoveEventHandler = js.Function1[/* event */ MultipointDrawActionVertexRemoveEvent, scala.Unit]
+
+type OGCFeatureLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ OGCFeatureLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type OGCFeatureLayerLayerviewCreateEventHandler = js.Function1[/* event */ OGCFeatureLayerLayerviewCreateEvent, scala.Unit]
+
+type OGCFeatureLayerLayerviewDestroyEventHandler = js.Function1[/* event */ OGCFeatureLayerLayerviewDestroyEvent, scala.Unit]
+
+type OGCFeatureLayerRefreshEventHandler = js.Function1[/* event */ OGCFeatureLayerRefreshEvent, scala.Unit]
+
+type OpenStreetMapLayerProperties = WebTileLayerProperties
+
+type PhaseCallback = js.Function1[/* event */ js.UndefOr[PhaseEvent], scala.Unit]
+
+type PixelFilterFunction = js.Function1[/* pixelData */ PixelData, scala.Unit]
+
+type PointCloudLayerViewProperties = LayerViewProperties
+
+type PointDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PointDrawActionCursorUpdateEvent, scala.Unit]
+
+type PointDrawActionDrawCompleteEventHandler = js.Function1[/* event */ PointDrawActionDrawCompleteEvent, scala.Unit]
+
+type PointDrawActionProperties = DrawActionProperties
+
+type PolygonDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PolygonDrawActionCursorUpdateEvent, scala.Unit]
+
+type PolygonDrawActionDrawCompleteEventHandler = js.Function1[/* event */ PolygonDrawActionDrawCompleteEvent, scala.Unit]
+
+type PolygonDrawActionRedoEventHandler = js.Function1[/* event */ PolygonDrawActionRedoEvent, scala.Unit]
+
+type PolygonDrawActionUndoEventHandler = js.Function1[/* event */ PolygonDrawActionUndoEvent, scala.Unit]
+
+type PolygonDrawActionVertexAddEventHandler = js.Function1[/* event */ PolygonDrawActionVertexAddEvent, scala.Unit]
+
+type PolygonDrawActionVertexRemoveEventHandler = js.Function1[/* event */ PolygonDrawActionVertexRemoveEvent, scala.Unit]
+
+type PolylineDrawActionCursorUpdateEventHandler = js.Function1[/* event */ PolylineDrawActionCursorUpdateEvent, scala.Unit]
+
+type PolylineDrawActionDrawCompleteEventHandler = js.Function1[/* event */ PolylineDrawActionDrawCompleteEvent, scala.Unit]
+
+type PolylineDrawActionRedoEventHandler = js.Function1[/* event */ PolylineDrawActionRedoEvent, scala.Unit]
+
+type PolylineDrawActionUndoEventHandler = js.Function1[/* event */ PolylineDrawActionUndoEvent, scala.Unit]
+
+type PolylineDrawActionVertexAddEventHandler = js.Function1[/* event */ PolylineDrawActionVertexAddEvent, scala.Unit]
+
+type PolylineDrawActionVertexRemoveEventHandler = js.Function1[/* event */ PolylineDrawActionVertexRemoveEvent, scala.Unit]
+
+type PopupTemplateContentCreator = js.Function1[/* graphic */ Graphic, String | HTMLElement | Widget_ | js.Promise[Any]]
+
+type PopupTemplateContentDestroyer = js.Function1[/* graphic */ Graphic, scala.Unit]
+
+type PopupTriggerActionEventHandler = js.Function1[/* event */ PopupTriggerActionEvent, scala.Unit]
+
+type PopupViewModelTriggerActionEventHandler = js.Function1[/* event */ PopupViewModelTriggerActionEvent, scala.Unit]
+
+type PrintCompleteEventHandler = js.Function1[/* event */ PrintCompleteEvent, scala.Unit]
+
+type PrintSubmitEventHandler = js.Function1[/* event */ PrintSubmitEvent, scala.Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.arcgisJsApi.esri.Graphic
+  - typingsJapgolly.arcgisJsApi.esri.Geometry_
+  - typingsJapgolly.arcgisJsApi.esri.FeatureSet
+  - typingsJapgolly.arcgisJsApi.esri.FeatureLayer
+  - typingsJapgolly.arcgisJsApi.esri.WebMap
+  - java.lang.String
+  - scala.Double
+  - scala.Boolean
+  - js.Date
+  - scala.Any
+  - js.Array[scala.Any]
+*/
+type ProfileVariableInstanceType = _ProfileVariableInstanceType | js.Array[Any] | String | Double | Boolean | js.Date | Any
+
+type QueryElevation = js.Function2[
+/* geometry */ Point | Multipoint | Polyline, 
+/* options */ js.UndefOr[Any], 
+js.Promise[ElevationLayerElevationQueryResult]]
+
+type RejectCallback = js.Function1[/* error */ js.UndefOr[Any], scala.Unit]
+
+type RenderContextCallback = js.Function1[/* context */ js.UndefOr[RenderContext], scala.Unit]
+
+type ResolveCallback = js.Function1[/* value */ js.UndefOr[Any | js.Promise[Any]], scala.Unit]
+
+/* Rewritten from type alias, can be one of: 
+  - scala.Double
+  - java.lang.String
+  - js.Date
+  - scala.Boolean
+  - typingsJapgolly.arcgisJsApi.esri.Graphic
+  - typingsJapgolly.arcgisJsApi.esri.Geometry_
+  - scala.Any
+  - js.Array[scala.Any]
+*/
+type ResultType = _ResultType | js.Array[Any] | Double | String | js.Date | Boolean | Any
+
+type SceneModificationsProperties = CollectionPropertiesBase[SceneModificationProperties]
+
+type SearchSearchBlurEventHandler = js.Function1[/* event */ SearchSearchBlurEvent, scala.Unit]
+
+type SearchSearchClearEventHandler = js.Function1[/* event */ SearchSearchClearEvent, scala.Unit]
+
+type SearchSearchCompleteEventHandler = js.Function1[/* event */ SearchSearchCompleteEvent, scala.Unit]
+
+type SearchSearchFocusEventHandler = js.Function1[/* event */ SearchSearchFocusEvent, scala.Unit]
+
+type SearchSearchStartEventHandler = js.Function1[/* event */ SearchSearchStartEvent, scala.Unit]
+
+type SearchSelectResultEventHandler = js.Function1[/* event */ SearchSelectResultEvent, scala.Unit]
+
+type SearchSuggestCompleteEventHandler = js.Function1[/* event */ SearchSuggestCompleteEvent, scala.Unit]
+
+type SearchSuggestStartEventHandler = js.Function1[/* event */ SearchSuggestStartEvent, scala.Unit]
+
+type SearchViewModelSearchClearEventHandler = js.Function1[/* event */ SearchViewModelSearchClearEvent, scala.Unit]
+
+type SearchViewModelSearchCompleteEventHandler = js.Function1[/* event */ SearchViewModelSearchCompleteEvent, scala.Unit]
+
+type SearchViewModelSearchStartEventHandler = js.Function1[/* event */ SearchViewModelSearchStartEvent, scala.Unit]
+
+type SearchViewModelSelectResultEventHandler = js.Function1[/* event */ SearchViewModelSelectResultEvent, scala.Unit]
+
+type SearchViewModelSuggestCompleteEventHandler = js.Function1[/* event */ SearchViewModelSuggestCompleteEvent, scala.Unit]
+
+type SearchViewModelSuggestStartEventHandler = js.Function1[/* event */ SearchViewModelSuggestStartEvent, scala.Unit]
+
+type SegmentDrawActionCursorUpdateEventHandler = js.Function1[/* event */ SegmentDrawActionCursorUpdateEvent, scala.Unit]
+
+type SegmentDrawActionDrawCompleteEventHandler = js.Function1[/* event */ SegmentDrawActionDrawCompleteEvent, scala.Unit]
+
+type SegmentDrawActionVertexAddEventHandler = js.Function1[/* event */ SegmentDrawActionVertexAddEvent, scala.Unit]
+
+type SketchCreateEventHandler = js.Function1[/* event */ SketchCreateEvent, scala.Unit]
+
+type SketchDeleteEventHandler = js.Function1[/* event */ SketchDeleteEvent, scala.Unit]
+
+type SketchRedoEventHandler = js.Function1[/* event */ SketchRedoEvent, scala.Unit]
+
+type SketchUndoEventHandler = js.Function1[/* event */ SketchUndoEvent, scala.Unit]
+
+type SketchUpdateEventHandler = js.Function1[/* event */ SketchUpdateEvent, scala.Unit]
+
+type SketchViewModelCreateEventHandler = js.Function1[/* event */ SketchViewModelCreateEvent, scala.Unit]
+
+type SketchViewModelDeleteEventHandler = js.Function1[/* event */ SketchViewModelDeleteEvent, scala.Unit]
+
+type SketchViewModelRedoEventHandler = js.Function1[/* event */ SketchViewModelRedoEvent, scala.Unit]
+
+type SketchViewModelUndoEventHandler = js.Function1[/* event */ SketchViewModelUndoEvent, scala.Unit]
+
+type SketchViewModelUpdateEventHandler = js.Function1[/* event */ SketchViewModelUpdateEvent, scala.Unit]
+
+type SliderLabelFormatter = js.Function3[
+/* value */ Double, 
+/* type */ js.UndefOr[average | min | max | tick | value], 
+/* index */ js.UndefOr[Double], 
+String]
+
+type SliderMaxChangeEventHandler = js.Function1[/* event */ SliderMaxChangeEvent, scala.Unit]
+
+type SliderMaxClickEventHandler = js.Function1[/* event */ SliderMaxClickEvent, scala.Unit]
+
+type SliderMinChangeEventHandler = js.Function1[/* event */ SliderMinChangeEvent, scala.Unit]
+
+type SliderMinClickEventHandler = js.Function1[/* event */ SliderMinClickEvent, scala.Unit]
+
+type SliderSegmentClickEventHandler = js.Function1[/* event */ SliderSegmentClickEvent, scala.Unit]
+
+type SliderSegmentDragEventHandler = js.Function1[/* event */ SliderSegmentDragEvent, scala.Unit]
+
+type SliderThumbChangeEventHandler = js.Function1[/* event */ SliderThumbChangeEvent, scala.Unit]
+
+type SliderThumbClickEventHandler = js.Function1[/* event */ SliderThumbClickEvent, scala.Unit]
+
+type SliderThumbDragEventHandler = js.Function1[/* event */ SliderThumbDragEvent, scala.Unit]
+
+type SliderTickClickEventHandler = js.Function1[/* event */ SliderTickClickEvent, scala.Unit]
+
+type SliderTrackClickEventHandler = js.Function1[/* event */ SliderTrackClickEvent, scala.Unit]
+
+type SliderViewModelMaxChangeEventHandler = js.Function1[/* event */ SliderViewModelMaxChangeEvent, scala.Unit]
+
+type SliderViewModelMinChangeEventHandler = js.Function1[/* event */ SliderViewModelMinChangeEvent, scala.Unit]
+
+type SmartMappingSliderBaseLabelFormatter = js.Function3[
+/* value */ Double, 
+/* type */ js.UndefOr[average | min | max | value], 
+/* index */ js.UndefOr[Double], 
+String]
+
+type SmartMappingSliderBaseMaxChangeEventHandler = js.Function1[/* event */ SmartMappingSliderBaseMaxChangeEvent, scala.Unit]
+
+type SmartMappingSliderBaseMinChangeEventHandler = js.Function1[/* event */ SmartMappingSliderBaseMinChangeEvent, scala.Unit]
+
+type SmartMappingSliderBaseSegmentDragEventHandler = js.Function1[/* event */ SmartMappingSliderBaseSegmentDragEvent, scala.Unit]
+
+type SmartMappingSliderBaseThumbChangeEventHandler = js.Function1[/* event */ SmartMappingSliderBaseThumbChangeEvent, scala.Unit]
+
+type SmartMappingSliderBaseThumbDragEventHandler = js.Function1[/* event */ SmartMappingSliderBaseThumbDragEvent, scala.Unit]
+
+type StreamLayerViewDataReceivedEventHandler = js.Function1[/* event */ StreamLayerViewDataReceivedEvent, scala.Unit]
+
+type StreamLayerViewUpdateRateEventHandler = js.Function1[/* event */ StreamLayerViewUpdateRateEvent, scala.Unit]
+
+type SubtypeGroupLayerEditsEventHandler = js.Function1[/* event */ SubtypeGroupLayerEditsEvent, scala.Unit]
+
+type SubtypeGroupLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ SubtypeGroupLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type SubtypeGroupLayerLayerviewCreateEventHandler = js.Function1[/* event */ SubtypeGroupLayerLayerviewCreateEvent, scala.Unit]
+
+type SubtypeGroupLayerLayerviewDestroyEventHandler = js.Function1[/* event */ SubtypeGroupLayerLayerviewDestroyEvent, scala.Unit]
+
+type SubtypeGroupLayerRefreshEventHandler = js.Function1[/* event */ SubtypeGroupLayerRefreshEvent, scala.Unit]
+
+type TableListListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
+
+type TableListTriggerActionEventHandler = js.Function1[/* event */ TableListTriggerActionEvent, scala.Unit]
+
+type TableListViewModelListItemCreatedHandler = js.Function1[/* event */ Any, scala.Unit]
+
+type TableListViewModelTriggerActionEventHandler = js.Function1[/* event */ TableListViewModelTriggerActionEvent, scala.Unit]
+
+type TextAreaInputProperties = TextInputProperties
+
+type TextBoxInputProperties = TextInputProperties
+
+type ThumbCreatedFunction = js.Function4[
+/* index */ Double, 
+/* value */ Double, 
+/* thumbElement */ HTMLElement, 
+/* labelElement */ js.UndefOr[HTMLElement], 
+scala.Unit]
+
+type TickCreatedFunction = js.Function3[
+/* value */ Double, 
+/* tickElement */ HTMLElement, 
+/* labelElement */ js.UndefOr[HTMLElement], 
+scala.Unit]
+
+type TileLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ TileLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type TileLayerLayerviewCreateEventHandler = js.Function1[/* event */ TileLayerLayerviewCreateEvent, scala.Unit]
+
+type TileLayerLayerviewDestroyEventHandler = js.Function1[/* event */ TileLayerLayerviewDestroyEvent, scala.Unit]
+
+type TileLayerRefreshEventHandler = js.Function1[/* event */ TileLayerRefreshEvent, scala.Unit]
+
+type TimePickerViewModelProperties = DateTimeElementViewModelProperties
+
+type TimeSliderTriggerActionEventHandler = js.Function1[/* event */ TimeSliderTriggerActionEvent, scala.Unit]
+
+type TimeSliderViewModelTriggerActionEventHandler = js.Function1[/* event */ TimeSliderViewModelTriggerActionEvent, scala.Unit]
+
+type TrackTrackErrorEventHandler = js.Function1[/* event */ TrackTrackErrorEvent, scala.Unit]
+
+type TrackTrackEventHandler = js.Function1[/* event */ TrackTrackEvent, scala.Unit]
+
+type TrackViewModelTrackErrorEventHandler = js.Function1[/* event */ TrackViewModelTrackErrorEvent, scala.Unit]
+
+type TrackViewModelTrackEventHandler = js.Function1[/* event */ TrackViewModelTrackEvent, scala.Unit]
+
+type UnknownLayerProperties = LayerProperties
+
+type UnsupportedLayerProperties = LayerProperties
+
+type UpdateBasemapsCallback = js.Function1[/* items */ js.Array[Basemap], js.Array[Basemap]]
+
+type UpdateWorkflowProperties = WorkflowProperties
+
+type UtilityNetworkTraceAddFlagCompleteEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagCompleteEvent, scala.Unit]
+
+type UtilityNetworkTraceAddFlagErrorEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagErrorEvent, scala.Unit]
+
+type UtilityNetworkTraceAddFlagEventHandler = js.Function1[/* event */ UtilityNetworkTraceAddFlagEvent, scala.Unit]
+
+type ViewBlurEventHandler = js.Function1[/* event */ ViewBlurEvent, scala.Unit]
+
+type ViewClickEventHandler = js.Function1[/* event */ ViewClickEvent, scala.Unit]
+
+type ViewDoubleClickEventHandler = js.Function1[/* event */ ViewDoubleClickEvent, scala.Unit]
+
+type ViewDragEventHandler = js.Function1[/* event */ ViewDragEvent, scala.Unit]
+
+type ViewFocusEventHandler = js.Function1[/* event */ ViewFocusEvent, scala.Unit]
+
+type ViewHoldEventHandler = js.Function1[/* event */ ViewHoldEvent, scala.Unit]
+
+type ViewImmediateClickEventHandler = js.Function1[/* event */ ViewImmediateClickEvent, scala.Unit]
+
+type ViewImmediateDoubleClickEventHandler = js.Function1[/* event */ ViewImmediateDoubleClickEvent, scala.Unit]
+
+type ViewKeyDownEventHandler = js.Function1[/* event */ ViewKeyDownEvent, scala.Unit]
+
+type ViewKeyUpEventHandler = js.Function1[/* event */ ViewKeyUpEvent, scala.Unit]
+
+type ViewLayerviewCreateErrorEventHandler = js.Function1[/* event */ ViewLayerviewCreateErrorEvent, scala.Unit]
+
+type ViewLayerviewCreateEventHandler = js.Function1[/* event */ ViewLayerviewCreateEvent, scala.Unit]
+
+type ViewLayerviewDestroyEventHandler = js.Function1[/* event */ ViewLayerviewDestroyEvent, scala.Unit]
+
+type ViewMouseWheelEventHandler = js.Function1[/* event */ ViewMouseWheelEvent, scala.Unit]
+
+type ViewPointerDownEventHandler = js.Function1[/* event */ ViewPointerDownEvent, scala.Unit]
+
+type ViewPointerEnterEventHandler = js.Function1[/* event */ ViewPointerEnterEvent, scala.Unit]
+
+type ViewPointerLeaveEventHandler = js.Function1[/* event */ ViewPointerLeaveEvent, scala.Unit]
+
+type ViewPointerMoveEventHandler = js.Function1[/* event */ ViewPointerMoveEvent, scala.Unit]
+
+type ViewPointerUpEventHandler = js.Function1[/* event */ ViewPointerUpEvent, scala.Unit]
+
+type ViewResizeEventHandler = js.Function1[/* event */ ViewResizeEvent, scala.Unit]
+
+type WFSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WFSLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type WFSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WFSLayerLayerviewCreateEvent, scala.Unit]
+
+type WFSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WFSLayerLayerviewDestroyEvent, scala.Unit]
+
+type WFSLayerRefreshEventHandler = js.Function1[/* event */ WFSLayerRefreshEvent, scala.Unit]
+
+type WMSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WMSLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type WMSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WMSLayerLayerviewCreateEvent, scala.Unit]
+
+type WMSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WMSLayerLayerviewDestroyEvent, scala.Unit]
+
+type WMSLayerRefreshEventHandler = js.Function1[/* event */ WMSLayerRefreshEvent, scala.Unit]
+
+type WMTSLayerLayerviewCreateErrorEventHandler = js.Function1[/* event */ WMTSLayerLayerviewCreateErrorEvent, scala.Unit]
+
+type WMTSLayerLayerviewCreateEventHandler = js.Function1[/* event */ WMTSLayerLayerviewCreateEvent, scala.Unit]
+
+type WMTSLayerLayerviewDestroyEventHandler = js.Function1[/* event */ WMTSLayerLayerviewDestroyEvent, scala.Unit]
+
+type WMTSLayerRefreshEventHandler = js.Function1[/* event */ WMTSLayerRefreshEvent, scala.Unit]
+
+type WatchCallback = js.Function4[
+/* newValue */ Any, 
+/* oldValue */ Any, 
+/* propertyName */ String, 
+/* target */ Accessor, 
+scala.Unit]
+
+type contentAttachmentsContent = AttachmentsContent
+
+type contentCustomContent = CustomContent
+
+type contentExpressionContent = ExpressionContent
+
+type contentFieldsContent = FieldsContent
+
+type contentMediaContent = MediaContent
+
+type contentTextContent = TextContent
+
+type geometryExtent = Extent
+
+type geometryMesh = Mesh
+
+type geometryMultipoint = Multipoint
+
+type geometryPoint = Point
+
+type geometryPolygon = Polygon
+
+type geometryPolyline = Polyline
+
+type geometrySpatialReference = SpatialReference
+
+type inputsBarcodeScannerInput = BarcodeScannerInput
+
+type inputsDateTimePickerInput = DateTimePickerInput
+
+type inputsTextAreaInput = TextAreaInput
+
+type inputsTextBoxInput = TextBoxInput
+
+type pointCloudRenderersPointCloudClassBreaksRenderer = PointCloudClassBreaksRenderer
+
+type pointCloudRenderersPointCloudRGBRenderer = PointCloudRGBRenderer
+
+type pointCloudRenderersPointCloudStretchRenderer = PointCloudStretchRenderer
+
+type pointCloudRenderersPointCloudUniqueValueRenderer = PointCloudUniqueValueRenderer
+
+type rasterRenderersClassBreaksRenderer = ClassBreaksRenderer
+
+type rasterRenderersFlowRenderer = FlowRenderer
+
+type rasterRenderersRasterColormapRenderer = RasterColormapRenderer
+
+type rasterRenderersRasterShadedReliefRenderer = RasterShadedReliefRenderer
+
+type rasterRenderersRasterStretchRenderer = RasterStretchRenderer
+
+type rasterRenderersUniqueValueRenderer = UniqueValueRenderer
+
+type rasterRenderersVectorFieldRenderer = VectorFieldRenderer
+
+type renderersClassBreaksRenderer = ClassBreaksRenderer
+
+type renderersDictionaryRenderer = DictionaryRenderer
+
+type renderersDotDensityRenderer = DotDensityRenderer
+
+type renderersHeatmapRenderer = HeatmapRenderer
+
+type renderersPieChartRenderer = PieChartRenderer
+
+type renderersSimpleRenderer = SimpleRenderer
+
+type renderersUniqueValueRenderer = UniqueValueRenderer
+
+type symbolsCIMSymbol = CIMSymbol
+
+type symbolsExtrudeSymbol3DLayer = ExtrudeSymbol3DLayer
+
+type symbolsFillSymbol3DLayer = FillSymbol3DLayer
+
+type symbolsFont = Font
+
+type symbolsIconSymbol3DLayer = IconSymbol3DLayer
+
+type symbolsLabelSymbol3D = LabelSymbol3D
+
+type symbolsLineSymbol3D = LineSymbol3D
+
+type symbolsLineSymbol3DLayer = LineSymbol3DLayer
+
+type symbolsMeshSymbol3D = MeshSymbol3D
+
+type symbolsObjectSymbol3DLayer = ObjectSymbol3DLayer
+
+type symbolsPathSymbol3DLayer = PathSymbol3DLayer
+
+type symbolsPictureFillSymbol = PictureFillSymbol
+
+type symbolsPictureMarkerSymbol = PictureMarkerSymbol
+
+type symbolsPointSymbol3D = PointSymbol3D
+
+type symbolsPolygonSymbol3D = PolygonSymbol3D
+
+type symbolsSimpleFillSymbol = SimpleFillSymbol
+
+type symbolsSimpleLineSymbol = SimpleLineSymbol
+
+type symbolsSimpleMarkerSymbol = SimpleMarkerSymbol
+
+type symbolsTextSymbol = TextSymbol
+
+type symbolsTextSymbol3DLayer = TextSymbol3DLayer
+
+type symbolsWaterSymbol3DLayer = WaterSymbol3DLayer
+
+type symbolsWebStyleSymbol = WebStyleSymbol

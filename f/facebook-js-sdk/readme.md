@@ -3,6 +3,24 @@
 
 Typings are for version 3.3
 
+## Library description:
+Simple JavaScript SDK to interact with Facebook API.
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | facebook-js-sdk |
+| Keywords           | - |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 2016.0 |
+| # stars            | 1.0 |
+
+## Links
+- [Homepage](https://github.com/sohaibilyas/facebook-js-sdk#readme)
+- [Bugs](https://github.com/sohaibilyas/facebook-js-sdk/issues)
+- [Repository](https://github.com/sohaibilyas/facebook-js-sdk)
+- [Npm](https://www.npmjs.com/package/facebook-js-sdk)
+    
 
 
 ## Note

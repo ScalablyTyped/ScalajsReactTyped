@@ -1,18 +1,17 @@
 package typingsJapgolly.extjs.Ext.grid
 
 import typingsJapgolly.extjs.Ext.view.ITable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IView extends ITable
-
+trait IView
+  extends StObject
+     with ITable
 object IView {
-  @scala.inline
-  def apply(ITable: ITable = null): IView = {
+  
+  inline def apply(): IView = {
     val __obj = js.Dynamic.literal()
-    if (ITable != null) js.Dynamic.global.Object.assign(__obj, ITable)
     __obj.asInstanceOf[IView]
   }
 }
-

@@ -10,10 +10,10 @@ Make a dump of the V8 heap for later inspection.
 | ------------------ | :-------------: |
 | Full name          | heapdump |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 85 |
-| # downloads        | 4074676 |
-| # stars            | 41 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1669880.6666666667 |
+| # stars            | 2346.0 |
 
 ## Links
 - [Homepage](https://github.com/bnoordhuis/node-heapdump)

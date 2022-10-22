@@ -1,56 +1,34 @@
 package typingsJapgolly.styledComponents.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty
-import typingsJapgolly.styledComponents.styledComponentsMod.DefaultTheme
-import typingsJapgolly.styledComponents.styledComponentsMod.ThemeProviderProps
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactChild
+import typingsJapgolly.styledComponents.nativeDistModelsThemeProviderMod.Props
+import typingsJapgolly.styledComponents.nativeDistModelsThemeProviderMod.ThemeArgument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ThemeProvider {
-  def apply(
-    theme: AnyIfEmpty[AnyIfEmpty[DefaultTheme]] | (js.Function1[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]]),
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ThemeProviderProps[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]], 
-    typingsJapgolly.styledComponents.styledComponentsMod.ThemeProvider, 
-    Unit, 
-    ThemeProviderProps[AnyIfEmpty[AnyIfEmpty[DefaultTheme]], AnyIfEmpty[AnyIfEmpty[DefaultTheme]]]
-  ] = {
-    val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.styledComponents.styledComponentsMod.ThemeProviderProps[
-    typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[
-      typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[typingsJapgolly.styledComponents.styledComponentsMod.DefaultTheme]
-    ], 
-    typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[
-      typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[typingsJapgolly.styledComponents.styledComponentsMod.DefaultTheme]
-    ]
-  ], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.styledComponents.styledComponentsMod.ThemeProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.styledComponents.styledComponentsMod.ThemeProviderProps[
-  typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[
-    typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[typingsJapgolly.styledComponents.styledComponentsMod.DefaultTheme]
-  ], 
-  typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[
-    typingsJapgolly.styledComponents.styledComponentsMod.AnyIfEmpty[typingsJapgolly.styledComponents.styledComponentsMod.DefaultTheme]
-  ]]])(children: _*)
+  inline def apply(theme: ThemeArgument): Builder = {
+    val __props = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
-  @JSImport("styled-components", "ThemeProvider")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("styled-components/native/dist", "ThemeProvider")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: ReactChild): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

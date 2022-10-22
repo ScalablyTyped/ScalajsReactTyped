@@ -1,60 +1,83 @@
 package typingsJapgolly.pako.mod
 
-import typingsJapgolly.pako.pakoNumbers.`-1`
-import typingsJapgolly.pako.pakoNumbers.`0`
-import typingsJapgolly.pako.pakoNumbers.`1`
-import typingsJapgolly.pako.pakoNumbers.`2`
-import typingsJapgolly.pako.pakoNumbers.`3`
-import typingsJapgolly.pako.pakoNumbers.`4`
-import typingsJapgolly.pako.pakoNumbers.`5`
-import typingsJapgolly.pako.pakoNumbers.`6`
-import typingsJapgolly.pako.pakoNumbers.`7`
-import typingsJapgolly.pako.pakoNumbers.`8`
-import typingsJapgolly.pako.pakoNumbers.`9`
-import typingsJapgolly.pako.pakoStrings.string
+import typingsJapgolly.pako.pakoInts.`-1`
+import typingsJapgolly.pako.pakoInts.`0`
+import typingsJapgolly.pako.pakoInts.`1`
+import typingsJapgolly.pako.pakoInts.`2`
+import typingsJapgolly.pako.pakoInts.`3`
+import typingsJapgolly.pako.pakoInts.`4`
+import typingsJapgolly.pako.pakoInts.`5`
+import typingsJapgolly.pako.pakoInts.`6`
+import typingsJapgolly.pako.pakoInts.`7`
+import typingsJapgolly.pako.pakoInts.`8`
+import typingsJapgolly.pako.pakoInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeflateOptions extends js.Object {
+trait DeflateOptions extends StObject {
+  
   var chunkSize: js.UndefOr[Double] = js.undefined
-  var dictionary: js.UndefOr[js.Any] = js.undefined
+  
+  var dictionary: js.UndefOr[Any] = js.undefined
+  
   var gzip: js.UndefOr[Boolean] = js.undefined
+  
   var header: js.UndefOr[Header] = js.undefined
+  
   var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
+  
   var memLevel: js.UndefOr[Double] = js.undefined
+  
   var raw: js.UndefOr[Boolean] = js.undefined
+  
   var strategy: js.UndefOr[StrategyValues] = js.undefined
-  var to: js.UndefOr[string] = js.undefined
+  
   var windowBits: js.UndefOr[Double] = js.undefined
 }
-
 object DeflateOptions {
-  @scala.inline
-  def apply(
-    chunkSize: Int | Double = null,
-    dictionary: js.Any = null,
-    gzip: js.UndefOr[Boolean] = js.undefined,
-    header: Header = null,
-    level: `-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` = null,
-    memLevel: Int | Double = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    strategy: StrategyValues = null,
-    to: string = null,
-    windowBits: Int | Double = null
-  ): DeflateOptions = {
+  
+  inline def apply(): DeflateOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (dictionary != null) __obj.updateDynamic("dictionary")(dictionary.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (strategy != null) __obj.updateDynamic("strategy")(strategy.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
-    if (windowBits != null) __obj.updateDynamic("windowBits")(windowBits.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeflateOptions]
   }
+  
+  extension [Self <: DeflateOptions](x: Self) {
+    
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    
+    inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
+    
+    inline def setDictionaryUndefined: Self = StObject.set(x, "dictionary", js.undefined)
+    
+    inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+    
+    inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+    
+    inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setLevel(value: `-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMemLevel(value: Double): Self = StObject.set(x, "memLevel", value.asInstanceOf[js.Any])
+    
+    inline def setMemLevelUndefined: Self = StObject.set(x, "memLevel", js.undefined)
+    
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setStrategy(value: StrategyValues): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    
+    inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+    
+    inline def setWindowBits(value: Double): Self = StObject.set(x, "windowBits", value.asInstanceOf[js.Any])
+    
+    inline def setWindowBitsUndefined: Self = StObject.set(x, "windowBits", js.undefined)
+  }
 }
-

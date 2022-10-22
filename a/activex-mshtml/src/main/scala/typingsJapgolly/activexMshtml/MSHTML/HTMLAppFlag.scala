@@ -1,35 +1,31 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
 */
-trait HTMLAppFlag extends js.Object
-
+trait HTMLAppFlag extends StObject
 object HTMLAppFlag {
-  @scala.inline
-  def HTMLAppFlag0: `0` = this.cast(0)
-  @scala.inline
-  def HTMLAppFlag1: `1` = this.cast(1)
-  @scala.inline
-  def HTMLAppFlagNo: `0` = this.cast(0)
-  @scala.inline
-  def HTMLAppFlagOff: `0` = this.cast(0)
-  @scala.inline
-  def HTMLAppFlagOn: `1` = this.cast(1)
-  @scala.inline
-  def HTMLAppFlagYes: `1` = this.cast(1)
-  @scala.inline
-  def HTMLAppFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HTMLAppFlag0: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLAppFlag1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLAppFlagNo: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLAppFlagOff: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLAppFlagOn: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLAppFlagYes: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLAppFlag_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

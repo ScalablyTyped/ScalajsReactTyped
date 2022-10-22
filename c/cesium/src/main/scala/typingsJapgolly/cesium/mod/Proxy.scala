@@ -1,20 +1,17 @@
 package typingsJapgolly.cesium.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Proxy extends js.Object {
-  def getURL(resource: String): String
+@JSImport("cesium", "Proxy")
+@js.native
+open class Proxy () extends StObject {
+  
+  /**
+    * Get the final URL to use to request a given resource.
+    * @param resource - The resource to request.
+    * @returns proxied resource
+    */
+  def getURL(resource: String): String = js.native
 }
-
-object Proxy {
-  @scala.inline
-  def apply(getURL: String => CallbackTo[String]): Proxy = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getURL")(js.Any.fromFunction1((t0: java.lang.String) => getURL(t0).runNow()))
-    __obj.asInstanceOf[Proxy]
-  }
-}
-

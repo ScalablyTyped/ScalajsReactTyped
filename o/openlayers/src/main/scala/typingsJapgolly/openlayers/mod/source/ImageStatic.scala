@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.ImageStaticOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.ImageStatic")
 @js.native
-class ImageStatic protected () extends Image {
+open class ImageStatic protected () extends Image {
   /**
     * @classdesc
     * A layer source for displaying a single, static image.
@@ -24,4 +24,3 @@ class ImageStatic protected () extends Image {
     */
   def this(options: ImageStaticOptions) = this()
 }
-

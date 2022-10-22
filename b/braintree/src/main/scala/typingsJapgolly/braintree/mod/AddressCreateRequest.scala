@@ -1,56 +1,94 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddressCreateRequest extends js.Object {
+trait AddressCreateRequest extends StObject {
+  
   var company: js.UndefOr[String] = js.undefined
+  
   var countryCodeAlpha2: js.UndefOr[String] = js.undefined
+  
   var countryCodeAlpha3: js.UndefOr[String] = js.undefined
+  
   var countryCodeNumeric: js.UndefOr[String] = js.undefined
+  
   var countryName: js.UndefOr[String] = js.undefined
+  
   var customerId: String
+  
   var extendedAddress: js.UndefOr[String] = js.undefined
+  
   var firstName: js.UndefOr[String] = js.undefined
+  
   var lastName: js.UndefOr[String] = js.undefined
+  
   var locality: js.UndefOr[String] = js.undefined
+  
   var postalCode: js.UndefOr[String] = js.undefined
+  
   var region: js.UndefOr[String] = js.undefined
+  
   var streetAddress: js.UndefOr[String] = js.undefined
 }
-
 object AddressCreateRequest {
-  @scala.inline
-  def apply(
-    customerId: String,
-    company: String = null,
-    countryCodeAlpha2: String = null,
-    countryCodeAlpha3: String = null,
-    countryCodeNumeric: String = null,
-    countryName: String = null,
-    extendedAddress: String = null,
-    firstName: String = null,
-    lastName: String = null,
-    locality: String = null,
-    postalCode: String = null,
-    region: String = null,
-    streetAddress: String = null
-  ): AddressCreateRequest = {
+  
+  inline def apply(customerId: String): AddressCreateRequest = {
     val __obj = js.Dynamic.literal(customerId = customerId.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (countryCodeAlpha2 != null) __obj.updateDynamic("countryCodeAlpha2")(countryCodeAlpha2.asInstanceOf[js.Any])
-    if (countryCodeAlpha3 != null) __obj.updateDynamic("countryCodeAlpha3")(countryCodeAlpha3.asInstanceOf[js.Any])
-    if (countryCodeNumeric != null) __obj.updateDynamic("countryCodeNumeric")(countryCodeNumeric.asInstanceOf[js.Any])
-    if (countryName != null) __obj.updateDynamic("countryName")(countryName.asInstanceOf[js.Any])
-    if (extendedAddress != null) __obj.updateDynamic("extendedAddress")(extendedAddress.asInstanceOf[js.Any])
-    if (firstName != null) __obj.updateDynamic("firstName")(firstName.asInstanceOf[js.Any])
-    if (lastName != null) __obj.updateDynamic("lastName")(lastName.asInstanceOf[js.Any])
-    if (locality != null) __obj.updateDynamic("locality")(locality.asInstanceOf[js.Any])
-    if (postalCode != null) __obj.updateDynamic("postalCode")(postalCode.asInstanceOf[js.Any])
-    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
-    if (streetAddress != null) __obj.updateDynamic("streetAddress")(streetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddressCreateRequest]
   }
+  
+  extension [Self <: AddressCreateRequest](x: Self) {
+    
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    
+    inline def setCountryCodeAlpha2(value: String): Self = StObject.set(x, "countryCodeAlpha2", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeAlpha2Undefined: Self = StObject.set(x, "countryCodeAlpha2", js.undefined)
+    
+    inline def setCountryCodeAlpha3(value: String): Self = StObject.set(x, "countryCodeAlpha3", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeAlpha3Undefined: Self = StObject.set(x, "countryCodeAlpha3", js.undefined)
+    
+    inline def setCountryCodeNumeric(value: String): Self = StObject.set(x, "countryCodeNumeric", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeNumericUndefined: Self = StObject.set(x, "countryCodeNumeric", js.undefined)
+    
+    inline def setCountryName(value: String): Self = StObject.set(x, "countryName", value.asInstanceOf[js.Any])
+    
+    inline def setCountryNameUndefined: Self = StObject.set(x, "countryName", js.undefined)
+    
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedAddress(value: String): Self = StObject.set(x, "extendedAddress", value.asInstanceOf[js.Any])
+    
+    inline def setExtendedAddressUndefined: Self = StObject.set(x, "extendedAddress", js.undefined)
+    
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    
+    inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+    
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    
+    inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    
+    inline def setStreetAddress(value: String): Self = StObject.set(x, "streetAddress", value.asInstanceOf[js.Any])
+    
+    inline def setStreetAddressUndefined: Self = StObject.set(x, "streetAddress", js.undefined)
+  }
 }
-

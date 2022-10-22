@@ -2,67 +2,91 @@ package typingsJapgolly.blocks
 
 import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.blocks.anon.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // App.View
 /////////////////////////////////////////
 trait ViewPrototype
-  extends /* propertyName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propertyName */ StringDictionary[Any] {
+  
   /**
-  	 * Override the init method to perform actions when the View is first created and shown on the page
-  	 */
+    * Override the init method to perform actions when the View is first created and shown on the page
+    */
   var init: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * Determines if the view is visible
-  	 */
+    * Determines if the view is visible
+    */
   var isActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   var navigateTo: js.UndefOr[js.Function] = js.undefined
-  var options: js.UndefOr[AnonRoute] = js.undefined
-  var parentView: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Route] = js.undefined
+  
+  var parentView: js.UndefOr[Any] = js.undefined
+  
   /**
     * Override the ready method to perform actions when the DOM is ready and
     * all data-query have been executed.
-  	 */
+    */
   var ready: js.UndefOr[js.Function] = js.undefined
+  
   /**
-  	 * Routes to a specific URL and actives the appropriate views associated with the URL
-  	 * 
-  	 * @param name Name of the route
-  	 */
+    * Routes to a specific URL and actives the appropriate views associated with the URL
+    * 
+    * @param name Name of the route
+    */
   var route: js.UndefOr[js.Function1[/* name */ String, this.type]] = js.undefined
+  
   /**
-  	 * Override the routed method to perform actions when the View have routing and routing mechanism actives it.
-  	 */
+    * Override the routed method to perform actions when the View have routing and routing mechanism actives it.
+    */
   var routed: js.UndefOr[js.Function] = js.undefined
 }
-
 object ViewPrototype {
-  @scala.inline
-  def apply(
-    StringDictionary: /* propertyName */ StringDictionary[js.Any] = null,
-    init: js.Function = null,
-    isActive: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    navigateTo: js.Function = null,
-    options: AnonRoute = null,
-    parentView: js.Any = null,
-    ready: js.Function = null,
-    route: /* name */ String => CallbackTo[ViewPrototype] = null,
-    routed: js.Function = null
-  ): ViewPrototype = {
+  
+  inline def apply(): ViewPrototype = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (init != null) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
-    isActive.foreach(p => __obj.updateDynamic("isActive")(p.toJsFn))
-    if (navigateTo != null) __obj.updateDynamic("navigateTo")(navigateTo.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (parentView != null) __obj.updateDynamic("parentView")(parentView.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(ready.asInstanceOf[js.Any])
-    if (route != null) __obj.updateDynamic("route")(js.Any.fromFunction1((t0: /* name */ java.lang.String) => route(t0).runNow()))
-    if (routed != null) __obj.updateDynamic("routed")(routed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPrototype]
   }
+  
+  extension [Self <: ViewPrototype](x: Self) {
+    
+    inline def setInit(value: js.Function): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setIsActive(value: CallbackTo[Boolean]): Self = StObject.set(x, "isActive", value.toJsFn)
+    
+    inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+    
+    inline def setNavigateTo(value: js.Function): Self = StObject.set(x, "navigateTo", value.asInstanceOf[js.Any])
+    
+    inline def setNavigateToUndefined: Self = StObject.set(x, "navigateTo", js.undefined)
+    
+    inline def setOptions(value: Route): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setParentView(value: Any): Self = StObject.set(x, "parentView", value.asInstanceOf[js.Any])
+    
+    inline def setParentViewUndefined: Self = StObject.set(x, "parentView", js.undefined)
+    
+    inline def setReady(value: js.Function): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
+    
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    
+    inline def setRoute(value: /* name */ String => ViewPrototype): Self = StObject.set(x, "route", js.Any.fromFunction1(value))
+    
+    inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+    
+    inline def setRouted(value: js.Function): Self = StObject.set(x, "routed", value.asInstanceOf[js.Any])
+    
+    inline def setRoutedUndefined: Self = StObject.set(x, "routed", js.undefined)
+  }
 }
-

@@ -1,52 +1,48 @@
 package typingsJapgolly.emojiMart.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.emojiMart.categoryMod.Props
-import typingsJapgolly.emojiMart.categoryMod.default
-import typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiData
-import typingsJapgolly.emojiMart.sharedPropsMod.CategoryName
-import typingsJapgolly.emojiMart.sharedPropsMod.EmojiProps
-import typingsJapgolly.emojiMart.sharedPropsMod.I18n
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.emojiMart.distEsComponentsCategoryMod.Props
+import typingsJapgolly.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiData
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.CategoryName
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.EmojiProps
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.I18n
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Category {
-  def apply(
+  
+  inline def apply(
     emojiProps: EmojiProps,
     i18n: I18n,
     id: CategoryName,
     name: String,
     native: Boolean,
-    perLine: Double,
-    emojis: js.Array[String | EmojiData] = null,
-    hasStickyPosition: js.UndefOr[Boolean] = js.undefined,
-    recent: js.Array[String] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(emojiProps = emojiProps.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], perLine = perLine.asInstanceOf[js.Any])
-  
-      if (emojis != null) __obj.updateDynamic("emojis")(emojis.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasStickyPosition)) __obj.updateDynamic("hasStickyPosition")(hasStickyPosition.asInstanceOf[js.Any])
-    if (recent != null) __obj.updateDynamic("recent")(recent.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.emojiMart.categoryMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.emojiMart.categoryMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.emojiMart.categoryMod.Props])(children: _*)
+    perLine: Double
+  ): Builder = {
+    val __props = js.Dynamic.literal(emojiProps = emojiProps.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], perLine = perLine.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
-  @JSImport("emoji-mart/dist-es/components/category", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("emoji-mart/dist-es/components", "Category")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.emojiMart.distEsComponentsMod.Category] {
+    
+    inline def emojis(value: js.Array[String | EmojiData]): this.type = set("emojis", value.asInstanceOf[js.Any])
+    
+    inline def emojisVarargs(value: (String | EmojiData)*): this.type = set("emojis", js.Array(value*))
+    
+    inline def hasStickyPosition(value: Boolean): this.type = set("hasStickyPosition", value.asInstanceOf[js.Any])
+    
+    inline def recent(value: js.Array[String]): this.type = set("recent", value.asInstanceOf[js.Any])
+    
+    inline def recentVarargs(value: String*): this.type = set("recent", js.Array(value*))
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

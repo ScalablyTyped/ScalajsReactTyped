@@ -1,30 +1,34 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiACLEntry object
   */
-@JSGlobal("KiiCloud.KiiACLEntry")
-@js.native
-class KiiACLEntry () extends js.Object {
+trait KiiACLEntry extends StObject {
+  
   /**
     * Get the action that is being permitted/restricted in this entry
     *
     */
-  def getAction(): KiiACLAction = js.native
+  def getAction(): KiiACLAction
+  
   /**
     * Get whether or not the action is being permitted to the subject
     *
     */
-  def getGrant(): Boolean = js.native
+  def getGrant(): Boolean
+  
   /**
     * Get the subject that is being permitted/restricted in this entry
     *
     */
-  def getSubject[T /* <: KiiACLSubject */](): T = js.native
+  def getSubject[T /* <: KiiACLSubject */](): T
+  
   /**
     * The action that is being permitted/restricted. Possible values:
     * <br><br>
@@ -41,7 +45,8 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not one of the permitted values
     */
-  def setAction(value: KiiACLAction): Unit = js.native
+  def setAction(value: KiiACLAction): Unit
+  
   /**
     * Set whether or not the action is being permitted to the subject
     *
@@ -49,7 +54,8 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not a boolean type
     */
-  def setGrant(value: Boolean): Unit = js.native
+  def setGrant(value: Boolean): Unit
+  
   /**
     * Set the subject to which the action/grant is being applied
     *
@@ -57,29 +63,34 @@ class KiiACLEntry () extends js.Object {
     *
     * @throws If the value is not one of the permitted values
     */
-  def setSubject(subject: KiiACLSubject): Unit = js.native
+  def setSubject(subject: KiiACLSubject): Unit
 }
-
-/* static members */
-@JSGlobal("KiiCloud.KiiACLEntry")
-@js.native
-object KiiACLEntry extends js.Object {
-  /**
-    * Create a KiiACLEntry object with a subject and action
-    *
-    * The entry will not be applied on the server until the KiiACL object is
-    * explicitly saved. This method simply returns a working KiiACLEntry with
-    * a specified subject and action.
-    *
-    * @param Subject to which the action/grant is being applied
-    * @param action One of the specified KiiACLAction values the
-    *   permissions is being applied to
-    *
-    * @return A KiiACLEntry object with the specified attributes
-    *
-    * @throws If specified subject is invalid.
-    * @throws If the specified action is invalid.
-    */
-  def entryWithSubject(Subject: KiiACLSubject, action: KiiACLAction): KiiACLEntry = js.native
+object KiiACLEntry {
+  
+  inline def apply(
+    getAction: CallbackTo[KiiACLAction],
+    getGrant: CallbackTo[Boolean],
+    getSubject: CallbackTo[Any],
+    setAction: KiiACLAction => Callback,
+    setGrant: Boolean => Callback,
+    setSubject: KiiACLSubject => Callback
+  ): KiiACLEntry = {
+    val __obj = js.Dynamic.literal(getAction = getAction.toJsFn, getGrant = getGrant.toJsFn, getSubject = getSubject.toJsFn, setAction = js.Any.fromFunction1((t0: KiiACLAction) => setAction(t0).runNow()), setGrant = js.Any.fromFunction1((t0: Boolean) => setGrant(t0).runNow()), setSubject = js.Any.fromFunction1((t0: KiiACLSubject) => setSubject(t0).runNow()))
+    __obj.asInstanceOf[KiiACLEntry]
+  }
+  
+  extension [Self <: KiiACLEntry](x: Self) {
+    
+    inline def setGetAction(value: CallbackTo[KiiACLAction]): Self = StObject.set(x, "getAction", value.toJsFn)
+    
+    inline def setGetGrant(value: CallbackTo[Boolean]): Self = StObject.set(x, "getGrant", value.toJsFn)
+    
+    inline def setGetSubject(value: CallbackTo[Any]): Self = StObject.set(x, "getSubject", value.toJsFn)
+    
+    inline def setSetAction(value: KiiACLAction => Callback): Self = StObject.set(x, "setAction", js.Any.fromFunction1((t0: KiiACLAction) => value(t0).runNow()))
+    
+    inline def setSetGrant(value: Boolean => Callback): Self = StObject.set(x, "setGrant", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setSetSubject(value: KiiACLSubject => Callback): Self = StObject.set(x, "setSubject", js.Any.fromFunction1((t0: KiiACLSubject) => value(t0).runNow()))
+  }
 }
-

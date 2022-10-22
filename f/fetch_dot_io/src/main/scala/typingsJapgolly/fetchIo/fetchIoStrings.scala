@@ -1,55 +1,57 @@
 package typingsJapgolly.fetchIo
 
 import typingsJapgolly.fetchIo.mod.TMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchIoStrings {
-  @js.native
-  sealed trait delete extends TMethod
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait delete
+    extends StObject
+       with TMethod
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait get extends TMethod
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait head extends TMethod
+  sealed trait get
+    extends StObject
+       with TMethod
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait head
+    extends StObject
+       with TMethod
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait options extends TMethod
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait post extends TMethod
+  sealed trait options
+    extends StObject
+       with TMethod
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait put extends TMethod
+  sealed trait post
+    extends StObject
+       with TMethod
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait urlencoded extends js.Object
+  sealed trait put
+    extends StObject
+       with TMethod
+  inline def put: put = "put".asInstanceOf[put]
   
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def urlencoded: urlencoded = "urlencoded".asInstanceOf[urlencoded]
+  @js.native
+  sealed trait urlencoded extends StObject
+  inline def urlencoded: urlencoded = "urlencoded".asInstanceOf[urlencoded]
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.asana.mod.auth
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.asana.mod.auth.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait App extends js.Object {
-  var asanaBaseUrl: String = js.native
-  var scope: String = js.native
+trait App extends StObject {
+  
   /**
     * @param {String} code An authorization code obtained via `asanaAuthorizeUrl`.
     * @param {Object} options  Overrides to the app's defaults
@@ -23,6 +22,7 @@ trait App extends js.Object {
     */
   def accessTokenFromCode(code: String): typingsJapgolly.bluebird.mod.^[Credentials] = js.native
   def accessTokenFromCode(code: String, options: AsanaAuthorizeUrlOptions): typingsJapgolly.bluebird.mod.^[Credentials] = js.native
+  
   /**
     * @param {String} refreshToken A refresh token obtained via Oauth.
     * @param {Object} options Overrides to the app's defaults
@@ -35,6 +35,7 @@ trait App extends js.Object {
     * @return
     */
   def accessTokenFromRefreshToken(refreshToken: String, options: AsanaAuthorizeUrlOptions): typingsJapgolly.bluebird.mod.^[Credentials] = js.native
+  
   /**
     * @param {Object} options  Overrides to the app's defaults
     * @option {String} asanaBaseUrl
@@ -45,6 +46,9 @@ trait App extends js.Object {
     */
   def asanaAuthorizeUrl(): String = js.native
   def asanaAuthorizeUrl(options: AsanaAuthorizeUrlOptions): String = js.native
+  
+  var asanaBaseUrl: String = js.native
+  
   /**
     * @param {Object} options  Overrides to the app's defaults
     * @option {String} asanaBaseUrl
@@ -55,9 +59,10 @@ trait App extends js.Object {
     */
   def asanaTokenUrl(): String = js.native
   def asanaTokenUrl(options: AsanaAuthorizeUrlOptions): String = js.native
+  
+  var scope: String = js.native
 }
-
-@JSImport("asana", "auth.App")
-@js.native
-object App extends TopLevel[AppStatic]
-
+object App {
+  
+  inline def apply: AppStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("App").asInstanceOf[AppStatic]
+}

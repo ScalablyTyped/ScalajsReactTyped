@@ -22,71 +22,87 @@ import typingsJapgolly.officeJs.officeJsStrings.SemiGray75
 import typingsJapgolly.officeJs.officeJsStrings.Solid
 import typingsJapgolly.officeJs.officeJsStrings.Up
 import typingsJapgolly.officeJs.officeJsStrings.Vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeFill.toJSON()`. */
-trait RangeFillData extends js.Object {
+trait RangeFillData extends StObject {
+  
   /**
+    * HTML color code representing the color of the background, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange")
     *
-    * HTML color code representing the color of the background, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange")
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
+    * The pattern of a range. See `Excel.FillPattern` for details. LinearGradient and RectangularGradient are not supported.
+    A `null` value indicates that the entire range doesn't have a uniform pattern setting.
     *
-    * Gets or sets the pattern of a Range. See Excel.FillPattern for details. LinearGradient and RectangularGradient are not supported.
-    A null value indicates that the entire range doesn't have uniform pattern setting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[
     FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
   ] = js.undefined
+  
   /**
+    * The HTML color code representing the color of the range pattern, in the form #RRGGBB (e.g., "FFA500"), or as a named HTML color (e.g., "orange").
     *
-    * Sets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    Gets HTML color code representing the color of the Range pattern, of the form #RRGGBB (e.g. "FFA500").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies a double that lightens or darkens a pattern color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `patternTintAndShade` settings.
     *
-    * Returns or sets a double that lightens or darkens a pattern color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the pattern tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies a double that lightens or darkens a color for the range fill. The value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
+    A `null` value indicates that the range doesn't have uniform `tintAndShade` settings.
     *
-    * Returns or sets a double that lightens or darkens a color for Range Fill, the value is between -1 (darkest) and 1 (brightest), with 0 for the original color.
-    If the tintAndShades are not uniform, null will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Double] = js.undefined
 }
-
 object RangeFillData {
-  @scala.inline
-  def apply(
-    color: String = null,
-    pattern: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient = null,
-    patternColor: String = null,
-    patternTintAndShade: Int | Double = null,
-    tintAndShade: Int | Double = null
-  ): RangeFillData = {
+  
+  inline def apply(): RangeFillData = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (patternColor != null) __obj.updateDynamic("patternColor")(patternColor.asInstanceOf[js.Any])
-    if (patternTintAndShade != null) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeFillData]
   }
+  
+  extension [Self <: RangeFillData](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setPattern(
+      value: FillPattern | None | Solid | Gray50 | Gray75 | Gray25 | Horizontal | Vertical | Down | Up | Checker | SemiGray75 | LightHorizontal | LightVertical | LightDown | LightUp | Grid | CrissCross | Gray16 | Gray8 | LinearGradient | RectangularGradient
+    ): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColor(value: String): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
+    
+    inline def setPatternTintAndShade(value: Double): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+  }
 }
-

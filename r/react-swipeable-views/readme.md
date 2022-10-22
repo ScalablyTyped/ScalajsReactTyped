@@ -10,10 +10,10 @@ A React component for swipeable views
 | ------------------ | :-------------: |
 | Full name          | react-swipeable-views |
 | Keywords           | react, component, swipe, swipeable |
-| # releases         | 12 |
-| # dependents       | 146 |
-| # downloads        | 5392048 |
-| # stars            | 11 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1148976.0 |
+| # stars            | 4196.0 |
 
 ## Links
 - [Homepage](https://github.com/oliviertassinari/react-swipeable-views#readme)

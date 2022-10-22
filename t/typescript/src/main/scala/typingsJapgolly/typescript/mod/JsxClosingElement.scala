@@ -1,15 +1,19 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JsxClosingElement extends Node {
+trait JsxClosingElement
+  extends StObject
+     with Node {
+  
   @JSName("kind")
-  var kind_JsxClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingElement = js.native
+  val kind_JsxClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingElement = js.native
+  
   @JSName("parent")
-  var parent_JsxClosingElement: JsxElement = js.native
-  var tagName: JsxTagNameExpression = js.native
+  val parent_JsxClosingElement: JsxElement = js.native
+  
+  val tagName: JsxTagNameExpression = js.native
 }
-

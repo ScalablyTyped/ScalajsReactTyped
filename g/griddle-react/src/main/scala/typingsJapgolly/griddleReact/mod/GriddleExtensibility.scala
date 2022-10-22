@@ -1,42 +1,66 @@
 package typingsJapgolly.griddleReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GriddleExtensibility extends js.Object {
+trait GriddleExtensibility extends StObject {
+  
   var components: js.UndefOr[GriddleComponents] = js.undefined
+  
   var events: js.UndefOr[GriddleEvents] = js.undefined
+  
   var listeners: js.UndefOr[PropertyBag[Listener]] = js.undefined
+  
   var reducer: js.UndefOr[PropertyBag[Reducer]] = js.undefined
+  
   var renderProperties: js.UndefOr[GriddleRenderProperties] = js.undefined
+  
   var selectors: js.UndefOr[PropertyBag[Selector]] = js.undefined
+  
   var settingsComponentObjects: js.UndefOr[PropertyBag[SettingsComponentObject]] = js.undefined
+  
   var styleConfig: js.UndefOr[GriddleStyleConfig] = js.undefined
 }
-
 object GriddleExtensibility {
-  @scala.inline
-  def apply(
-    components: GriddleComponents = null,
-    events: GriddleEvents = null,
-    listeners: PropertyBag[Listener] = null,
-    reducer: PropertyBag[Reducer] = null,
-    renderProperties: GriddleRenderProperties = null,
-    selectors: PropertyBag[Selector] = null,
-    settingsComponentObjects: PropertyBag[SettingsComponentObject] = null,
-    styleConfig: GriddleStyleConfig = null
-  ): GriddleExtensibility = {
+  
+  inline def apply(): GriddleExtensibility = {
     val __obj = js.Dynamic.literal()
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
-    if (reducer != null) __obj.updateDynamic("reducer")(reducer.asInstanceOf[js.Any])
-    if (renderProperties != null) __obj.updateDynamic("renderProperties")(renderProperties.asInstanceOf[js.Any])
-    if (selectors != null) __obj.updateDynamic("selectors")(selectors.asInstanceOf[js.Any])
-    if (settingsComponentObjects != null) __obj.updateDynamic("settingsComponentObjects")(settingsComponentObjects.asInstanceOf[js.Any])
-    if (styleConfig != null) __obj.updateDynamic("styleConfig")(styleConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[GriddleExtensibility]
   }
+  
+  extension [Self <: GriddleExtensibility](x: Self) {
+    
+    inline def setComponents(value: GriddleComponents): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+    
+    inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+    
+    inline def setEvents(value: GriddleEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setListeners(value: PropertyBag[Listener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    
+    inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+    
+    inline def setReducer(value: PropertyBag[Reducer]): Self = StObject.set(x, "reducer", value.asInstanceOf[js.Any])
+    
+    inline def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
+    
+    inline def setRenderProperties(value: GriddleRenderProperties): Self = StObject.set(x, "renderProperties", value.asInstanceOf[js.Any])
+    
+    inline def setRenderPropertiesUndefined: Self = StObject.set(x, "renderProperties", js.undefined)
+    
+    inline def setSelectors(value: PropertyBag[Selector]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    
+    inline def setSettingsComponentObjects(value: PropertyBag[SettingsComponentObject]): Self = StObject.set(x, "settingsComponentObjects", value.asInstanceOf[js.Any])
+    
+    inline def setSettingsComponentObjectsUndefined: Self = StObject.set(x, "settingsComponentObjects", js.undefined)
+    
+    inline def setStyleConfig(value: GriddleStyleConfig): Self = StObject.set(x, "styleConfig", value.asInstanceOf[js.Any])
+    
+    inline def setStyleConfigUndefined: Self = StObject.set(x, "styleConfig", js.undefined)
+  }
 }
-

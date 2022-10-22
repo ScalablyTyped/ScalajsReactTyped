@@ -1,42 +1,46 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticationExtensionsClientInputs extends js.Object {
+trait AuthenticationExtensionsClientInputs extends StObject {
+  
+  /* standard dom */
   var appid: js.UndefOr[java.lang.String] = js.undefined
-  var authnSel: js.UndefOr[AuthenticatorSelectionList] = js.undefined
-  var exts: js.UndefOr[scala.Boolean] = js.undefined
-  var loc: js.UndefOr[scala.Boolean] = js.undefined
-  var txAuthGeneric: js.UndefOr[txAuthGenericArg] = js.undefined
-  var txAuthSimple: js.UndefOr[java.lang.String] = js.undefined
-  var uvi: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
+  var appidExclude: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
+  var credProps: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var uvm: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object AuthenticationExtensionsClientInputs {
-  @scala.inline
-  def apply(
-    appid: java.lang.String = null,
-    authnSel: AuthenticatorSelectionList = null,
-    exts: js.UndefOr[scala.Boolean] = js.undefined,
-    loc: js.UndefOr[scala.Boolean] = js.undefined,
-    txAuthGeneric: txAuthGenericArg = null,
-    txAuthSimple: java.lang.String = null,
-    uvi: js.UndefOr[scala.Boolean] = js.undefined,
-    uvm: js.UndefOr[scala.Boolean] = js.undefined
-  ): AuthenticationExtensionsClientInputs = {
+  
+  inline def apply(): AuthenticationExtensionsClientInputs = {
     val __obj = js.Dynamic.literal()
-    if (appid != null) __obj.updateDynamic("appid")(appid.asInstanceOf[js.Any])
-    if (authnSel != null) __obj.updateDynamic("authnSel")(authnSel.asInstanceOf[js.Any])
-    if (!js.isUndefined(exts)) __obj.updateDynamic("exts")(exts.asInstanceOf[js.Any])
-    if (!js.isUndefined(loc)) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (txAuthGeneric != null) __obj.updateDynamic("txAuthGeneric")(txAuthGeneric.asInstanceOf[js.Any])
-    if (txAuthSimple != null) __obj.updateDynamic("txAuthSimple")(txAuthSimple.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvi)) __obj.updateDynamic("uvi")(uvi.asInstanceOf[js.Any])
-    if (!js.isUndefined(uvm)) __obj.updateDynamic("uvm")(uvm.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthenticationExtensionsClientInputs]
   }
+  
+  extension [Self <: AuthenticationExtensionsClientInputs](x: Self) {
+    
+    inline def setAppid(value: java.lang.String): Self = StObject.set(x, "appid", value.asInstanceOf[js.Any])
+    
+    inline def setAppidExclude(value: java.lang.String): Self = StObject.set(x, "appidExclude", value.asInstanceOf[js.Any])
+    
+    inline def setAppidExcludeUndefined: Self = StObject.set(x, "appidExclude", js.undefined)
+    
+    inline def setAppidUndefined: Self = StObject.set(x, "appid", js.undefined)
+    
+    inline def setCredProps(value: scala.Boolean): Self = StObject.set(x, "credProps", value.asInstanceOf[js.Any])
+    
+    inline def setCredPropsUndefined: Self = StObject.set(x, "credProps", js.undefined)
+    
+    inline def setUvm(value: scala.Boolean): Self = StObject.set(x, "uvm", value.asInstanceOf[js.Any])
+    
+    inline def setUvmUndefined: Self = StObject.set(x, "uvm", js.undefined)
+  }
 }
-

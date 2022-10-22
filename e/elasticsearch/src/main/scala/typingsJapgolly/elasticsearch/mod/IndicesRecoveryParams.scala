@@ -1,41 +1,44 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IndicesRecoveryParams extends GenericParams {
+trait IndicesRecoveryParams
+  extends StObject
+     with GenericParams {
+  
   var activeOnly: js.UndefOr[Boolean] = js.undefined
+  
   var detailed: js.UndefOr[Boolean] = js.undefined
+  
   var human: js.UndefOr[Boolean] = js.undefined
+  
   var index: NameList
 }
-
 object IndicesRecoveryParams {
-  @scala.inline
-  def apply(
-    index: NameList,
-    activeOnly: js.UndefOr[Boolean] = js.undefined,
-    body: js.Any = null,
-    detailed: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    human: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): IndicesRecoveryParams = {
+  
+  inline def apply(index: NameList): IndicesRecoveryParams = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeOnly)) __obj.updateDynamic("activeOnly")(activeOnly.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(human)) __obj.updateDynamic("human")(human.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesRecoveryParams]
   }
+  
+  extension [Self <: IndicesRecoveryParams](x: Self) {
+    
+    inline def setActiveOnly(value: Boolean): Self = StObject.set(x, "activeOnly", value.asInstanceOf[js.Any])
+    
+    inline def setActiveOnlyUndefined: Self = StObject.set(x, "activeOnly", js.undefined)
+    
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+    
+    inline def setHuman(value: Boolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    
+    inline def setHumanUndefined: Self = StObject.set(x, "human", js.undefined)
+    
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value*))
+  }
 }
-

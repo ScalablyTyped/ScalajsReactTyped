@@ -4,14 +4,16 @@ import typingsJapgolly.minappEnv.minappEnvStrings.easeIn
 import typingsJapgolly.minappEnv.minappEnvStrings.easeInOut
 import typingsJapgolly.minappEnv.minappEnvStrings.easeOut
 import typingsJapgolly.minappEnv.minappEnvStrings.linear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 动画效果 */
-trait AnimationOption extends js.Object {
+trait AnimationOption extends StObject {
+  
   /** 动画变化时间，单位 ms */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /** 动画变化方式
     *
     * 可选值：
@@ -21,14 +23,21 @@ trait AnimationOption extends js.Object {
     * - 'easeInOut': 动画以低速开始和结束; */
   var timingFunc: js.UndefOr[linear | easeIn | easeOut | easeInOut] = js.undefined
 }
-
 object AnimationOption {
-  @scala.inline
-  def apply(duration: Int | Double = null, timingFunc: linear | easeIn | easeOut | easeInOut = null): AnimationOption = {
+  
+  inline def apply(): AnimationOption = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (timingFunc != null) __obj.updateDynamic("timingFunc")(timingFunc.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOption]
   }
+  
+  extension [Self <: AnimationOption](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setTimingFunc(value: linear | easeIn | easeOut | easeInOut): Self = StObject.set(x, "timingFunc", value.asInstanceOf[js.Any])
+    
+    inline def setTimingFuncUndefined: Self = StObject.set(x, "timingFunc", js.undefined)
+  }
 }
-

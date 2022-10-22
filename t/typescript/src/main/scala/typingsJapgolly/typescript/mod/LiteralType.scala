@@ -1,19 +1,23 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LiteralType extends Type {
+trait LiteralType
+  extends StObject
+     with Type {
+  
   var freshType: LiteralType
+  
   var regularType: LiteralType
+  
   var value: java.lang.String | Double | PseudoBigInt
 }
-
 object LiteralType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     flags: TypeFlags,
     freshType: LiteralType,
     getApparentProperties: CallbackTo[js.Array[Symbol]],
@@ -26,11 +30,12 @@ object LiteralType {
     getNonNullableType: CallbackTo[Type],
     getNumberIndexType: CallbackTo[js.UndefOr[Type]],
     getProperties: CallbackTo[js.Array[Symbol]],
-    getProperty: java.lang.String => CallbackTo[js.UndefOr[Symbol]],
+    getProperty: java.lang.String => js.UndefOr[Symbol],
     getStringIndexType: CallbackTo[js.UndefOr[Type]],
     getSymbol: CallbackTo[js.UndefOr[Symbol]],
     isClass: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
     isClassOrInterface: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
+    isIndexType: CallbackTo[/* is typescript.typescript.IndexType */ Boolean],
     isIntersection: CallbackTo[/* is typescript.typescript.IntersectionType */ Boolean],
     isLiteral: CallbackTo[/* is typescript.typescript.LiteralType */ Boolean],
     isNumberLiteral: CallbackTo[/* is typescript.typescript.NumberLiteralType */ Boolean],
@@ -40,38 +45,18 @@ object LiteralType {
     isUnionOrIntersection: CallbackTo[/* is typescript.typescript.UnionOrIntersectionType */ Boolean],
     regularType: LiteralType,
     symbol: Symbol,
-    value: java.lang.String | Double | PseudoBigInt,
-    aliasSymbol: Symbol = null,
-    aliasTypeArguments: js.Array[Type] = null,
-    pattern: DestructuringPattern = null
+    value: java.lang.String | Double | PseudoBigInt
   ): LiteralType = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], freshType = freshType.asInstanceOf[js.Any], regularType = regularType.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("getApparentProperties")(getApparentProperties.toJsFn)
-    __obj.updateDynamic("getBaseTypes")(getBaseTypes.toJsFn)
-    __obj.updateDynamic("getCallSignatures")(getCallSignatures.toJsFn)
-    __obj.updateDynamic("getConstraint")(getConstraint.toJsFn)
-    __obj.updateDynamic("getConstructSignatures")(getConstructSignatures.toJsFn)
-    __obj.updateDynamic("getDefault")(getDefault.toJsFn)
-    __obj.updateDynamic("getFlags")(getFlags.toJsFn)
-    __obj.updateDynamic("getNonNullableType")(getNonNullableType.toJsFn)
-    __obj.updateDynamic("getNumberIndexType")(getNumberIndexType.toJsFn)
-    __obj.updateDynamic("getProperties")(getProperties.toJsFn)
-    __obj.updateDynamic("getProperty")(js.Any.fromFunction1((t0: java.lang.String) => getProperty(t0).runNow()))
-    __obj.updateDynamic("getStringIndexType")(getStringIndexType.toJsFn)
-    __obj.updateDynamic("getSymbol")(getSymbol.toJsFn)
-    __obj.updateDynamic("isClass")(isClass.toJsFn)
-    __obj.updateDynamic("isClassOrInterface")(isClassOrInterface.toJsFn)
-    __obj.updateDynamic("isIntersection")(isIntersection.toJsFn)
-    __obj.updateDynamic("isLiteral")(isLiteral.toJsFn)
-    __obj.updateDynamic("isNumberLiteral")(isNumberLiteral.toJsFn)
-    __obj.updateDynamic("isStringLiteral")(isStringLiteral.toJsFn)
-    __obj.updateDynamic("isTypeParameter")(isTypeParameter.toJsFn)
-    __obj.updateDynamic("isUnion")(isUnion.toJsFn)
-    __obj.updateDynamic("isUnionOrIntersection")(isUnionOrIntersection.toJsFn)
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], freshType = freshType.asInstanceOf[js.Any], getApparentProperties = getApparentProperties.toJsFn, getBaseTypes = getBaseTypes.toJsFn, getCallSignatures = getCallSignatures.toJsFn, getConstraint = getConstraint.toJsFn, getConstructSignatures = getConstructSignatures.toJsFn, getDefault = getDefault.toJsFn, getFlags = getFlags.toJsFn, getNonNullableType = getNonNullableType.toJsFn, getNumberIndexType = getNumberIndexType.toJsFn, getProperties = getProperties.toJsFn, getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = getStringIndexType.toJsFn, getSymbol = getSymbol.toJsFn, isClass = isClass.toJsFn, isClassOrInterface = isClassOrInterface.toJsFn, isIndexType = isIndexType.toJsFn, isIntersection = isIntersection.toJsFn, isLiteral = isLiteral.toJsFn, isNumberLiteral = isNumberLiteral.toJsFn, isStringLiteral = isStringLiteral.toJsFn, isTypeParameter = isTypeParameter.toJsFn, isUnion = isUnion.toJsFn, isUnionOrIntersection = isUnionOrIntersection.toJsFn, regularType = regularType.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LiteralType]
   }
+  
+  extension [Self <: LiteralType](x: Self) {
+    
+    inline def setFreshType(value: LiteralType): Self = StObject.set(x, "freshType", value.asInstanceOf[js.Any])
+    
+    inline def setRegularType(value: LiteralType): Self = StObject.set(x, "regularType", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: java.lang.String | Double | PseudoBigInt): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

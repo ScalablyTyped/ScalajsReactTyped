@@ -1,42 +1,53 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZoomViewModelProperties extends js.Object {
+trait ZoomViewModelProperties extends StObject {
+  
   /**
     * Indicates if the view can zoom in.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#canZoomIn)
     */
   var canZoomIn: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Indicates if the view can zoom out.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#canZoomOut)
     */
   var canZoomOut: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The view from which to operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Zoom-ZoomViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
 }
-
 object ZoomViewModelProperties {
-  @scala.inline
-  def apply(
-    canZoomIn: js.UndefOr[Boolean] = js.undefined,
-    canZoomOut: js.UndefOr[Boolean] = js.undefined,
-    view: MapViewProperties | SceneViewProperties = null
-  ): ZoomViewModelProperties = {
+  
+  inline def apply(): ZoomViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(canZoomIn)) __obj.updateDynamic("canZoomIn")(canZoomIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(canZoomOut)) __obj.updateDynamic("canZoomOut")(canZoomOut.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomViewModelProperties]
   }
+  
+  extension [Self <: ZoomViewModelProperties](x: Self) {
+    
+    inline def setCanZoomIn(value: Boolean): Self = StObject.set(x, "canZoomIn", value.asInstanceOf[js.Any])
+    
+    inline def setCanZoomInUndefined: Self = StObject.set(x, "canZoomIn", js.undefined)
+    
+    inline def setCanZoomOut(value: Boolean): Self = StObject.set(x, "canZoomOut", value.asInstanceOf[js.Any])
+    
+    inline def setCanZoomOutUndefined: Self = StObject.set(x, "canZoomOut", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

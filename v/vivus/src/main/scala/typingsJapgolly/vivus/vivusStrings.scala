@@ -1,69 +1,56 @@
 package typingsJapgolly.vivus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vivusStrings {
-  @js.native
-  sealed trait autostart extends js.Object
   
   @js.native
-  sealed trait delayed extends js.Object
+  sealed trait autostart extends StObject
+  inline def autostart: autostart = "autostart".asInstanceOf[autostart]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait delayed extends StObject
+  inline def delayed: delayed = "delayed".asInstanceOf[delayed]
   
   @js.native
-  sealed trait inViewport extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait inViewport extends StObject
+  inline def inViewport: inViewport = "inViewport".asInstanceOf[inViewport]
   
   @js.native
-  sealed trait oneByOne extends js.Object
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait oneByOne extends StObject
+  inline def oneByOne: oneByOne = "oneByOne".asInstanceOf[oneByOne]
   
   @js.native
-  sealed trait scenario extends js.Object
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait `scenario-sync` extends js.Object
+  sealed trait scenario extends StObject
+  inline def scenario: scenario = "scenario".asInstanceOf[scenario]
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait `scenario-sync` extends StObject
+  inline def `scenario-sync`: `scenario-sync` = "scenario-sync".asInstanceOf[`scenario-sync`]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
-  @scala.inline
-  def autostart: autostart = "autostart".asInstanceOf[autostart]
-  @scala.inline
-  def delayed: delayed = "delayed".asInstanceOf[delayed]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def inViewport: inViewport = "inViewport".asInstanceOf[inViewport]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def oneByOne: oneByOne = "oneByOne".asInstanceOf[oneByOne]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def scenario: scenario = "scenario".asInstanceOf[scenario]
-  @scala.inline
-  def `scenario-sync`: `scenario-sync` = "scenario-sync".asInstanceOf[`scenario-sync`]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  @js.native
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }
-

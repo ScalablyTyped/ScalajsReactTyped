@@ -1,15 +1,36 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("InfoPath.DocReturnEventObject")
-@js.native
-class DocReturnEventObject protected () extends js.Object {
-  @JSName("InfoPath.DocReturnEventObject_typekey")
-  var InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject = js.native
-  var ReturnStatus: Boolean = js.native
-  val XDocument: _XDocument = js.native
+trait DocReturnEventObject extends StObject {
+  
+  /* private */ @JSName("InfoPath.DocReturnEventObject_typekey")
+  var InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject
+  
+  var ReturnStatus: Boolean
+  
+  val XDocument: _XDocument
 }
-
+object DocReturnEventObject {
+  
+  inline def apply(
+    InfoPathDotDocReturnEventObject_typekey: DocReturnEventObject,
+    ReturnStatus: Boolean,
+    XDocument: _XDocument
+  ): DocReturnEventObject = {
+    val __obj = js.Dynamic.literal(ReturnStatus = ReturnStatus.asInstanceOf[js.Any], XDocument = XDocument.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.DocReturnEventObject_typekey")(InfoPathDotDocReturnEventObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocReturnEventObject]
+  }
+  
+  extension [Self <: DocReturnEventObject](x: Self) {
+    
+    inline def setInfoPathDotDocReturnEventObject_typekey(value: DocReturnEventObject): Self = StObject.set(x, "InfoPath.DocReturnEventObject_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+  }
+}

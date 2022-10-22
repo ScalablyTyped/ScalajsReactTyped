@@ -1,21 +1,17 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A
 */
-trait ExportStateType extends js.Object
-
+trait ExportStateType extends StObject
 object ExportStateType {
-  @scala.inline
-  def A: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A = this.cast("A")
-  @scala.inline
-  def P: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P = this.cast("P")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def A: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A = "A".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.A]
+  
+  inline def P: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P = "P".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.P]
 }
-

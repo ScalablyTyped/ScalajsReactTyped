@@ -1,16 +1,18 @@
 package typingsJapgolly.evernote.mod.Types
 
-import typingsJapgolly.evernote.AnonIncludeAccount
+import typingsJapgolly.evernote.anon.IncludeAccount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.SavedSearchScope")
 @js.native
-class SavedSearchScope () extends js.Object {
-  def this(args: AnonIncludeAccount) = this()
+open class SavedSearchScope () extends StObject {
+  def this(args: IncludeAccount) = this()
+  
   var includeAccount: js.UndefOr[Boolean] = js.native
+  
   var includeBusinessLinkedNotebooks: js.UndefOr[Boolean] = js.native
+  
   var includePersonalLinkedNotebooks: js.UndefOr[Boolean] = js.native
 }
-

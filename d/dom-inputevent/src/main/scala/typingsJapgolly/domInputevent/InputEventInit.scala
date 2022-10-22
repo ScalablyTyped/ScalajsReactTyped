@@ -1,36 +1,35 @@
 package typingsJapgolly.domInputevent
 
 import typingsJapgolly.std.UIEventInit
-import typingsJapgolly.std.Window_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InputEventInit extends UIEventInit {
+trait InputEventInit
+  extends StObject
+     with UIEventInit {
+  
   var data: js.UndefOr[String | Null] = js.undefined
+  
   var isComposing: js.UndefOr[Boolean] = js.undefined
 }
-
 object InputEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    data: String = null,
-    detail: Int | Double = null,
-    isComposing: js.UndefOr[Boolean] = js.undefined,
-    view: Window_ = null
-  ): InputEventInit = {
+  
+  inline def apply(): InputEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (!js.isUndefined(isComposing)) __obj.updateDynamic("isComposing")(isComposing.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputEventInit]
   }
+  
+  extension [Self <: InputEventInit](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+    
+    inline def setIsComposingUndefined: Self = StObject.set(x, "isComposing", js.undefined)
+  }
 }
-

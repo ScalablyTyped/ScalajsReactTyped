@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MenuType extends js.Object
-
+sealed trait MenuType extends StObject
 @JSGlobal("ej.MenuType")
 @js.native
-object MenuType extends js.Object {
-  //string
-  @js.native
-  sealed trait ContextMenu extends MenuType
+object MenuType extends StObject {
   
   //string
   @js.native
-  sealed trait NormalMenu extends MenuType
+  sealed trait ContextMenu
+    extends StObject
+       with MenuType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MenuType with Double] = js.native
-  /* 0 */ @js.native
-  object ContextMenu extends TopLevel[ContextMenu with Double]
-  
-  /* 1 */ @js.native
-  object NormalMenu extends TopLevel[NormalMenu with Double]
-  
+  //string
+  @js.native
+  sealed trait NormalMenu
+    extends StObject
+       with MenuType
 }
-

@@ -1,54 +1,62 @@
 package typingsJapgolly.flowdoc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowdocStrings {
-  @js.native
-  sealed trait DIAMOND extends NodeType
   
   @js.native
-  sealed trait DOCUMENT extends NodeType
+  sealed trait DIAMOND
+    extends StObject
+       with NodeType
+  inline def DIAMOND: DIAMOND = "DIAMOND".asInstanceOf[DIAMOND]
   
   @js.native
-  sealed trait ELLIPSE extends NodeType
+  sealed trait DOCUMENT
+    extends StObject
+       with NodeType
+  inline def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
   
   @js.native
-  sealed trait HOTSPOT extends NodeType
+  sealed trait ELLIPSE
+    extends StObject
+       with NodeType
+  inline def ELLIPSE: ELLIPSE = "ELLIPSE".asInstanceOf[ELLIPSE]
   
   @js.native
-  sealed trait IMAGE extends NodeType
+  sealed trait HOTSPOT
+    extends StObject
+       with NodeType
+  inline def HOTSPOT: HOTSPOT = "HOTSPOT".asInstanceOf[HOTSPOT]
   
   @js.native
-  sealed trait LAYER extends NodeType
+  sealed trait IMAGE
+    extends StObject
+       with NodeType
+  inline def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
   
   @js.native
-  sealed trait PAGE extends NodeType
+  sealed trait LAYER
+    extends StObject
+       with NodeType
+  inline def LAYER: LAYER = "LAYER".asInstanceOf[LAYER]
   
   @js.native
-  sealed trait RECT extends NodeType
+  sealed trait PAGE
+    extends StObject
+       with NodeType
+  inline def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
   
   @js.native
-  sealed trait SCREEN extends NodeType
+  sealed trait RECT
+    extends StObject
+       with NodeType
+  inline def RECT: RECT = "RECT".asInstanceOf[RECT]
   
-  @scala.inline
-  def DIAMOND: DIAMOND = "DIAMOND".asInstanceOf[DIAMOND]
-  @scala.inline
-  def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
-  @scala.inline
-  def ELLIPSE: ELLIPSE = "ELLIPSE".asInstanceOf[ELLIPSE]
-  @scala.inline
-  def HOTSPOT: HOTSPOT = "HOTSPOT".asInstanceOf[HOTSPOT]
-  @scala.inline
-  def IMAGE: IMAGE = "IMAGE".asInstanceOf[IMAGE]
-  @scala.inline
-  def LAYER: LAYER = "LAYER".asInstanceOf[LAYER]
-  @scala.inline
-  def PAGE: PAGE = "PAGE".asInstanceOf[PAGE]
-  @scala.inline
-  def RECT: RECT = "RECT".asInstanceOf[RECT]
-  @scala.inline
-  def SCREEN: SCREEN = "SCREEN".asInstanceOf[SCREEN]
+  @js.native
+  sealed trait SCREEN
+    extends StObject
+       with NodeType
+  inline def SCREEN: SCREEN = "SCREEN".asInstanceOf[SCREEN]
 }
-

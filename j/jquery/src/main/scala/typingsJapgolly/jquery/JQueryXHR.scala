@@ -1,47 +1,31 @@
 package typingsJapgolly.jquery
 
-import typingsJapgolly.jquery.JQuery_.Ajax.ErrorTextStatus
-import typingsJapgolly.jquery.JQuery_.Ajax.StatusCodeCallbacks
-import typingsJapgolly.jquery.JQuery_.Ajax.SuccessTextStatus
-import typingsJapgolly.jquery.JQuery_.Deferred.CallbackBase
-import typingsJapgolly.jquery.JQuery_.PromiseBase
-import typingsJapgolly.jquery.JQuery_.Thenable
-import typingsJapgolly.jquery.JQuery_.TypeOrArray
-import typingsJapgolly.jquery.JQuery_._Promise
-import typingsJapgolly.jquery.JQuery_.jqXHR
-import typingsJapgolly.jquery.jqueryStrings.Promise
+import org.scalajs.dom.Document
+import typingsJapgolly.jquery.JQuery.Ajax.ErrorTextStatus
+import typingsJapgolly.jquery.JQuery.Ajax.StatusCodeCallbacks
+import typingsJapgolly.jquery.JQuery.Ajax.SuccessTextStatus
+import typingsJapgolly.jquery.JQuery.Deferred.CallbackBase
+import typingsJapgolly.jquery.JQuery.PromiseBase
+import typingsJapgolly.jquery.JQuery.Thenable
+import typingsJapgolly.jquery.JQuery.TypeOrArray
+import typingsJapgolly.jquery.JQuery.jqXHR
 import typingsJapgolly.jquery.jqueryStrings.pending
 import typingsJapgolly.jquery.jqueryStrings.rejected
 import typingsJapgolly.jquery.jqueryStrings.resolved
-import typingsJapgolly.std.Document_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
 /* Inlined parent jquery.JQuery.jqXHR<any> */
 @js.native
-trait JQueryXHR extends js.Object {
-  @JSName("abort")
-  var abort_Original: js.Function0[Unit] = js.native
-  @JSName("getAllResponseHeaders")
-  var getAllResponseHeaders_Original: js.Function0[String] = js.native
-  @JSName("getResponseHeader")
-  var getResponseHeader_Original: js.Function1[/* name */ String, String | Null] = js.native
-  @JSName("overrideMimeType")
-  var overrideMimeType_Original: js.Function1[/* mime */ String, Unit] = js.native
-  var readyState: Double = js.native
-  var responseJSON: js.UndefOr[js.Any] = js.native
-  var responseText: String = js.native
-  var responseXML: js.UndefOr[Document_] = js.native
-  @JSName("setRequestHeader")
-  var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
-  var status: Double = js.native
-  var statusText: String = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: Promise = js.native
+trait JQueryXHR extends StObject {
+  
   def abort(): Unit = js.native
   def abort(statusText: String): Unit = js.native
+  @JSName("abort")
+  var abort_Original: js.Function0[Unit] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
     * @param alwaysCallback A function, or array of functions, that is called when the Deferred is resolved or rejected.
@@ -57,28 +41,23 @@ trait JQueryXHR extends js.Object {
     */
   def always(
     alwaysCallback: TypeOrArray[
-      CallbackBase[_ | jqXHR[_], SuccessTextStatus | ErrorTextStatus, jqXHR[_] | String, scala.Nothing]
+      CallbackBase[
+        Any | jqXHR[Any], 
+        SuccessTextStatus | ErrorTextStatus, 
+        jqXHR[Any] | String, 
+        scala.Nothing
+      ]
     ],
     alwaysCallbacks: (TypeOrArray[
-      CallbackBase[_ | jqXHR[_], SuccessTextStatus | ErrorTextStatus, jqXHR[_] | String, scala.Nothing]
+      CallbackBase[
+        Any | jqXHR[Any], 
+        SuccessTextStatus | ErrorTextStatus, 
+        jqXHR[Any] | String, 
+        scala.Nothing
+      ]
     ])*
   ): this.type = js.native
-  /**
-    * Attaches a callback for only the rejection of the Promise.
-    * @param onrejected The callback to execute when the Promise is rejected.
-    * @returns A Promise for the completion of the callback.
-    */
-  def `catch`[TResult](): _Promise[_ | TResult] = js.native
-  def `catch`[TResult](onrejected: js.Function1[/* reason */ js.Any, TResult | js.Thenable[TResult]]): _Promise[_ | TResult] = js.native
-  def `catch`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
-    failFilter: js.Function4[
-      /* t */ jqXHR[_], 
-      /* u */ ErrorTextStatus, 
-      /* v */ String, 
-      /* repeated */ scala.Nothing, 
-      (PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF]) | Thenable[ARF] | ARF
-    ]
-  ): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  
   // #endregion
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -96,8 +75,17 @@ trait JQueryXHR extends js.Object {
     } );
   ```
     */
-  @JSName("catch")
-  def catch_ARFAJFANFBRFBJFBNFCRFCJFCNFRRFRJFRNF_PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  def `catch`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  def `catch`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
+    failFilter: js.Function4[
+      /* t */ jqXHR[Any], 
+      /* u */ ErrorTextStatus, 
+      /* v */ String, 
+      /* repeated */ scala.Nothing, 
+      (PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF]) | Thenable[ARF] | ARF
+    ]
+  ): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is resolved.
     * @param doneCallback A function, or array of functions, that are called when the Deferred is resolved.
@@ -159,9 +147,10 @@ trait JQueryXHR extends js.Object {
   ```
     */
   def done(
-    doneCallback: TypeOrArray[CallbackBase[_, SuccessTextStatus, jqXHR[_], scala.Nothing]],
-    doneCallbacks: (TypeOrArray[CallbackBase[_, SuccessTextStatus, jqXHR[_], scala.Nothing]])*
+    doneCallback: TypeOrArray[CallbackBase[Any, SuccessTextStatus, jqXHR[Any], scala.Nothing]],
+    doneCallbacks: (TypeOrArray[CallbackBase[Any, SuccessTextStatus, jqXHR[Any], scala.Nothing]])*
   ): this.type = js.native
+  
   /**
     * Add handlers to be called when the Deferred object is rejected.
     * @param failCallback A function, or array of functions, that are called when the Deferred is rejected.
@@ -180,12 +169,22 @@ trait JQueryXHR extends js.Object {
   ```
     */
   def fail(
-    failCallback: TypeOrArray[CallbackBase[jqXHR[_], ErrorTextStatus, String, scala.Nothing]],
-    failCallbacks: (TypeOrArray[CallbackBase[jqXHR[_], ErrorTextStatus, String, scala.Nothing]])*
+    failCallback: TypeOrArray[CallbackBase[jqXHR[Any], ErrorTextStatus, String, scala.Nothing]],
+    failCallbacks: (TypeOrArray[CallbackBase[jqXHR[Any], ErrorTextStatus, String, scala.Nothing]])*
   ): this.type = js.native
+  
   def getAllResponseHeaders(): String = js.native
+  @JSName("getAllResponseHeaders")
+  var getAllResponseHeaders_Original: js.Function0[String] = js.native
+  
   def getResponseHeader(name: String): String | Null = js.native
+  @JSName("getResponseHeader")
+  var getResponseHeader_Original: js.Function1[/* name */ String, String | Null] = js.native
+  
   def overrideMimeType(mime: String): Unit = js.native
+  @JSName("overrideMimeType")
+  var overrideMimeType_Original: js.Function1[/* mime */ String, Unit] = js.native
+  
   /**
     * Utility method to filter and/or chain Deferreds.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -251,9 +250,9 @@ trait JQueryXHR extends js.Object {
     */
   def pipe[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ]
@@ -298,7 +297,7 @@ trait JQueryXHR extends js.Object {
   def pipe[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -367,14 +366,14 @@ trait JQueryXHR extends js.Object {
     */
   def pipe[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -433,9 +432,9 @@ trait JQueryXHR extends js.Object {
     */
   def pipe[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
@@ -501,7 +500,7 @@ trait JQueryXHR extends js.Object {
   def pipe[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -581,14 +580,14 @@ trait JQueryXHR extends js.Object {
     */
   def pipe[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -615,6 +614,7 @@ trait JQueryXHR extends js.Object {
     RJD | RJF | RJP, 
     RND | RNF | RNP
   ] = js.native
+  
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
     * @param progressCallback A function, or array of functions, to be called when the Deferred generates progress notifications.
@@ -627,6 +627,7 @@ trait JQueryXHR extends js.Object {
     progressCallback: TypeOrArray[CallbackBase[scala.Nothing, scala.Nothing, scala.Nothing, scala.Nothing]],
     progressCallbacks: (TypeOrArray[CallbackBase[scala.Nothing, scala.Nothing, scala.Nothing, scala.Nothing]])*
   ): this.type = js.native
+  
   /**
     * Return a Deferred's Promise object.
     * @see \`{@link https://api.jquery.com/deferred.promise/ }\`
@@ -701,32 +702,53 @@ trait JQueryXHR extends js.Object {
   );
   ```
     */
-  def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+  def promise[TTarget /* <: js.Object */](target: TTarget): this.type & TTarget = js.native
+  
+  var readyState: Double = js.native
+  
+  var responseJSON: js.UndefOr[Any] = js.native
+  
+  var responseText: String = js.native
+  
+  var responseXML: js.UndefOr[Document | Null] = js.native
+  
   def setRequestHeader(name: String, value: String): Unit = js.native
+  @JSName("setRequestHeader")
+  var setRequestHeader_Original: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
+  
   /**
     * Determine the current state of a Deferred object.
     * @see \`{@link https://api.jquery.com/deferred.state/ }\`
     * @since 1.7
     */
   def state(): pending | resolved | rejected = js.native
-  def statusCode(map: StatusCodeCallbacks[_]): Unit = js.native
+  
+  var status: Double = js.native
+  
+  def statusCode(map: StatusCodeCallbacks[Any]): Unit = js.native
+  
+  var statusText: String = js.native
+  
   /**
-    * Attaches callbacks for the resolution and/or rejection of the Promise.
-    * @param onfulfilled The callback to execute when the Promise is resolved.
-    * @param onrejected The callback to execute when the Promise is rejected.
-    * @returns A Promise for the completion of which ever callback is executed.
+    * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
+    * @param doneFilter An optional function that is called when the Deferred is resolved.
+    * @param failFilter An optional function that is called when the Deferred is rejected.
+    * @param progressFilter An optional function that is called when progress notifications are sent to the Deferred.
+    * @see \`{@link https://api.jquery.com/deferred.then/ }\`
+    * @since 1.8
+    * @example ​ ````Chain tasks:
+  ```javascript
+  var request = $.ajax( url, { dataType: "json" } ),
+    chained = request.then(function( data ) {
+    return $.ajax( url2, { data: { user: data.userId } } );
+    });
+  ​
+  chained.done(function( data ) {
+    // data retrieved from url2 as provided by the first request
+  });
+  ```
     */
-  def `then`[TResult1, TResult2](): _Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.UndefOr[scala.Nothing],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): _Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](
-    onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): _Promise[TResult1 | TResult2] = js.native
-  def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): _Promise[TResult1 | TResult2] = js.native
+  def `then`[ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](): PromiseBase[ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP] = js.native
   /**
     * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
     * @param doneFilter An optional function that is called when the Deferred is resolved.
@@ -781,9 +803,9 @@ trait JQueryXHR extends js.Object {
     */
   def `then`[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ]
@@ -822,7 +844,7 @@ trait JQueryXHR extends js.Object {
   def `then`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -916,14 +938,14 @@ trait JQueryXHR extends js.Object {
     */
   def `then`[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -997,9 +1019,9 @@ trait JQueryXHR extends js.Object {
     */
   def `then`[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
@@ -1059,7 +1081,7 @@ trait JQueryXHR extends js.Object {
   def `then`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -1165,14 +1187,14 @@ trait JQueryXHR extends js.Object {
     */
   def `then`[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND, ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: js.Function4[
-      /* t */ js.Any, 
+      /* t */ Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -1199,43 +1221,4 @@ trait JQueryXHR extends js.Object {
     RJD | RJF | RJP, 
     RND | RNF | RNP
   ] = js.native
-  /**
-    * Add handlers to be called when the Deferred object is resolved, rejected, or still in progress.
-    * @param doneFilter An optional function that is called when the Deferred is resolved.
-    * @param failFilter An optional function that is called when the Deferred is rejected.
-    * @param progressFilter An optional function that is called when progress notifications are sent to the Deferred.
-    * @see \`{@link https://api.jquery.com/deferred.then/ }\`
-    * @since 1.8
-    * @example ​ ````Chain tasks:
-  ```javascript
-  var request = $.ajax( url, { dataType: "json" } ),
-    chained = request.then(function( data ) {
-    return $.ajax( url2, { data: { user: data.userId } } );
-    });
-  ​
-  chained.done(function( data ) {
-    // data retrieved from url2 as provided by the first request
-  });
-  ```
-    */
-  @JSName("then")
-  def then_ARPAJPANPBRPBJPBNPCRPCJPCNPRRPRJPRNP_PromiseBase[ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](): PromiseBase[ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP] = js.native
-  /**
-    * Attaches callbacks for the resolution and/or rejection of the Promise.
-    * @param onfulfilled The callback to execute when the Promise is resolved.
-    * @param onrejected The callback to execute when the Promise is rejected.
-    * @returns A Promise for the completion of which ever callback is executed.
-    */
-  @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](): js.Thenable[TResult1 | TResult2] = js.native
-  @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]]): js.Thenable[TResult1 | TResult2] = js.native
-  @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](
-    onfulfilled: js.Function1[/* value */ js.Any, TResult1 | js.Thenable[TResult1]],
-    onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-  ): js.Thenable[TResult1 | TResult2] = js.native
-  @JSName("then")
-  def then_TResult1TResult2_Thenable[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Thenable[TResult1 | TResult2] = js.native
 }
-

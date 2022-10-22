@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotPriceenvelopesBottomLineOptions extends js.Object {
+trait PlotPriceenvelopesBottomLineOptions extends StObject {
+  
   var styles: js.UndefOr[PlotPriceenvelopesBottomLineStylesOptions] = js.undefined
 }
-
 object PlotPriceenvelopesBottomLineOptions {
-  @scala.inline
-  def apply(styles: PlotPriceenvelopesBottomLineStylesOptions = null): PlotPriceenvelopesBottomLineOptions = {
+  
+  inline def apply(): PlotPriceenvelopesBottomLineOptions = {
     val __obj = js.Dynamic.literal()
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPriceenvelopesBottomLineOptions]
   }
+  
+  extension [Self <: PlotPriceenvelopesBottomLineOptions](x: Self) {
+    
+    inline def setStyles(value: PlotPriceenvelopesBottomLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+  }
 }
-

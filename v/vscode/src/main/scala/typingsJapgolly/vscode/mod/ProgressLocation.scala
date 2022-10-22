@@ -1,46 +1,46 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ProgressLocation extends js.Object
-
+sealed trait ProgressLocation extends StObject
 @JSImport("vscode", "ProgressLocation")
 @js.native
-object ProgressLocation extends js.Object {
-  /**
-  		 * Show progress as notification with an optional cancel button. Supports to show infinite and discrete progress.
-  		 */
-  @js.native
-  sealed trait Notification extends ProgressLocation
-  
-  /**
-  		 * Show progress for the source control viewlet, as overlay for the icon and as progress bar
-  		 * inside the viewlet (when visible). Neither supports cancellation nor discrete progress.
-  		 */
-  @js.native
-  sealed trait SourceControl extends ProgressLocation
-  
-  /**
-  		 * Show progress in the status bar of the editor. Neither supports cancellation nor discrete progress.
-  		 */
-  @js.native
-  sealed trait Window extends ProgressLocation
+object ProgressLocation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ProgressLocation with Double] = js.native
-  /* 15 */ @js.native
-  object Notification extends TopLevel[Notification with Double]
+  def apply(value: Double): js.UndefOr[ProgressLocation & Double] = js.native
   
-  /* 1 */ @js.native
-  object SourceControl
-    extends TopLevel[typingsJapgolly.vscode.mod.ProgressLocation.SourceControl with Double]
+  /**
+    * Show progress as notification with an optional cancel button. Supports to show infinite and discrete
+    * progress but does not support rendering of icons.
+    */
+  @js.native
+  sealed trait Notification
+    extends StObject
+       with ProgressLocation
+  /* 15 */ val Notification: typingsJapgolly.vscode.mod.ProgressLocation.Notification & Double = js.native
   
-  /* 10 */ @js.native
-  object Window extends TopLevel[Window with Double]
+  /**
+    * Show progress for the source control viewlet, as overlay for the icon and as progress bar
+    * inside the viewlet (when visible). Neither supports cancellation nor discrete progress nor
+    * a label to describe the operation.
+    */
+  @js.native
+  sealed trait SourceControl
+    extends StObject
+       with ProgressLocation
+  /* 1 */ val SourceControl: typingsJapgolly.vscode.mod.ProgressLocation.SourceControl & Double = js.native
   
+  /**
+    * Show progress in the status bar of the editor. Neither supports cancellation nor discrete progress.
+    * Supports rendering of {@link ThemeIcon theme icons} via the `$(<name>)`-syntax in the progress label.
+    */
+  @js.native
+  sealed trait Window
+    extends StObject
+       with ProgressLocation
+  /* 10 */ val Window: typingsJapgolly.vscode.mod.ProgressLocation.Window & Double = js.native
 }
-

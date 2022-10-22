@@ -1,7 +1,7 @@
 
 # Scala.js typings for braintree-web
 
-Typings are for version v3.47.0
+Typings are for version 3.75
 
 ## Library description:
 A suite of tools for integrating Braintree in the browser
@@ -10,10 +10,10 @@ A suite of tools for integrating Braintree in the browser
 | ------------------ | :-------------: |
 | Full name          | braintree-web |
 | Keywords           | braintree, payments |
-| # releases         | 43 |
-| # dependents       | 22 |
-| # downloads        | 4163932 |
-| # stars            | 3 |
+| # releases         | 42 |
+| # dependents       | 0.0 |
+| # downloads        | 778711.6666666666 |
+| # stars            | 386.0 |
 
 ## Links
 - [Homepage](https://github.com/braintree/braintree-web)

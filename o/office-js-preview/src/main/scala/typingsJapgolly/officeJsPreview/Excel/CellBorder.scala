@@ -12,63 +12,77 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.SlantDashDot
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Thick
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Thin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents the properties of a single border returned by `getCellProperties`, `getRowProperties`, and `getColumnProperties`, or the border property input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
   *
-  * Represents the properties of a single border returned by `getCellProperties`, `getRowProperties`, and `getColumnProperties` or the border property input parameter of `setCellProperties`, `setRowProperties`, and `setColumnProperties`.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellBorder extends js.Object {
+trait CellBorder extends StObject {
+  
   /**
-    *
     * Represents the `color` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the `style` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[
     BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
   ] = js.undefined
+  
   /**
-    *
     * Represents the `tintAndShade` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[scala.Double] = js.undefined
+  
   /**
-    *
     * Represents the `weight` property of a single border.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var weight: js.UndefOr[BorderWeight | Hairline | Thin | Medium | Thick] = js.undefined
 }
-
 object CellBorder {
-  @scala.inline
-  def apply(
-    color: String = null,
-    style: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot = null,
-    tintAndShade: Int | scala.Double = null,
-    weight: BorderWeight | Hairline | Thin | Medium | Thick = null
-  ): CellBorder = {
+  
+  inline def apply(): CellBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tintAndShade != null) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellBorder]
   }
+  
+  extension [Self <: CellBorder](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setStyle(
+      value: BorderLineStyle | None | Continuous | Dash | DashDot | DashDotDot | Dot | Double | SlantDashDot
+    ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTintAndShade(value: scala.Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    
+    inline def setWeight(value: BorderWeight | Hairline | Thin | Medium | Thick): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

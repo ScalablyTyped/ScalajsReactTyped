@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.pagerItemMod.PagerItemProps
+import typingsJapgolly.reactBootstrap.libPageItemMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "PageItem")
 @js.native
-class PageItem ()
-  extends Component[PagerItemProps, js.Object, js.Any]
-
+open class PageItem () extends ^

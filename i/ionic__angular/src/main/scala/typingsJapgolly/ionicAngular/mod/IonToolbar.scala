@@ -3,14 +3,58 @@ package typingsJapgolly.ionicAngular.mod
 import typingsJapgolly.angularCore.mod.ChangeDetectorRef
 import typingsJapgolly.angularCore.mod.ElementRef
 import typingsJapgolly.angularCore.mod.NgZone
+import typingsJapgolly.angularCore.mod.ɵɵComponentDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.ionicAngular.anon.Mode
+import typingsJapgolly.ionicAngular.ionicAngularBooleans.`false`
+import typingsJapgolly.ionicAngular.ionicAngularStrings.Asterisk
+import typingsJapgolly.ionicAngular.ionicAngularStrings.`ion-toolbar`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "IonToolbar")
 @js.native
-class IonToolbar protected ()
-  extends typingsJapgolly.ionicAngular.distMod.IonToolbar {
-  def this(c: ChangeDetectorRef, r: ElementRef[_], z: NgZone) = this()
+open class IonToolbar protected ()
+  extends typingsJapgolly.ionicAngular.directivesProxiesMod.IonToolbar {
+  def this(c: ChangeDetectorRef, r: ElementRef[Any], z: NgZone) = this()
 }
-
+/* static members */
+object IonToolbar {
+  
+  @JSImport("@ionic/angular", "IonToolbar")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ionic/angular", "IonToolbar.\u0275cmp")
+  @js.native
+  def ɵcmp: ɵɵComponentDeclaration[
+    typingsJapgolly.ionicAngular.directivesProxiesMod.IonToolbar, 
+    `ion-toolbar`, 
+    scala.Nothing, 
+    Mode, 
+    js.Object, 
+    scala.Nothing, 
+    js.Array[Asterisk], 
+    `false`
+  ] = js.native
+  inline def ɵcmp_=(
+    x: ɵɵComponentDeclaration[
+      typingsJapgolly.ionicAngular.directivesProxiesMod.IonToolbar, 
+      `ion-toolbar`, 
+      scala.Nothing, 
+      Mode, 
+      js.Object, 
+      scala.Nothing, 
+      js.Array[Asterisk], 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275cmp")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@ionic/angular", "IonToolbar.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[typingsJapgolly.ionicAngular.directivesProxiesMod.IonToolbar, scala.Nothing] = js.native
+  inline def ɵfac_=(
+    x: ɵɵFactoryDeclaration[typingsJapgolly.ionicAngular.directivesProxiesMod.IonToolbar, scala.Nothing]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

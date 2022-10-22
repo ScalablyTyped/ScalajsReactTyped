@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -17,18 +17,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE
 */
-trait FrequencyModeType extends js.Object
-
+trait FrequencyModeType extends StObject
 object FrequencyModeType {
-  @scala.inline
-  def NX_FREQUENCY_NONE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = this.cast("NX_FREQUENCY_NONE")
-  @scala.inline
-  def NX_FREQUENCY_PERCENT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = this.cast("NX_FREQUENCY_PERCENT")
-  @scala.inline
-  def NX_FREQUENCY_RELATIVE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = this.cast("NX_FREQUENCY_RELATIVE")
-  @scala.inline
-  def NX_FREQUENCY_VALUE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = this.cast("NX_FREQUENCY_VALUE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def NX_FREQUENCY_NONE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE = "NX_FREQUENCY_NONE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_NONE]
+  
+  inline def NX_FREQUENCY_PERCENT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT = "NX_FREQUENCY_PERCENT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_PERCENT]
+  
+  inline def NX_FREQUENCY_RELATIVE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE = "NX_FREQUENCY_RELATIVE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_RELATIVE]
+  
+  inline def NX_FREQUENCY_VALUE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE = "NX_FREQUENCY_VALUE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NX_FREQUENCY_VALUE]
 }
-

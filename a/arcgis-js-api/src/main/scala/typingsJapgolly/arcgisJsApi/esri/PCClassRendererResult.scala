@@ -1,33 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PCClassRendererResult extends Object {
+trait PCClassRendererResult
+  extends StObject
+     with Object {
+  
   /**
-    * The renderer object configured to represent the class codes in the point cloud. Set this object on the input layer's `renderer` property to update its visualization.
+    * The renderer object configured to represent the class codes in the point cloud.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-type.html#PCClassRendererResult)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#PCClassRendererResult)
     */
   var renderer: PointCloudUniqueValueRenderer
 }
-
 object PCClassRendererResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     renderer: PointCloudUniqueValueRenderer
   ): PCClassRendererResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], renderer = renderer.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), renderer = renderer.asInstanceOf[js.Any])
     __obj.asInstanceOf[PCClassRendererResult]
   }
+  
+  extension [Self <: PCClassRendererResult](x: Self) {
+    
+    inline def setRenderer(value: PointCloudUniqueValueRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,654 +1,572 @@
 package typingsJapgolly.antdMobileRn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antdMobileRnStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait URL extends StObject
+  inline def URL: URL = "URL".asInstanceOf[URL]
+  
+  @js.native
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
+  
+  @js.native
+  sealed trait addressCity extends StObject
+  inline def addressCity: addressCity = "addressCity".asInstanceOf[addressCity]
+  
+  @js.native
+  sealed trait addressCityAndState extends StObject
+  inline def addressCityAndState: addressCityAndState = "addressCityAndState".asInstanceOf[addressCityAndState]
+  
+  @js.native
+  sealed trait addressState extends StObject
+  inline def addressState: addressState = "addressState".asInstanceOf[addressState]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait android extends StObject
+  inline def android: android = "android".asInstanceOf[android]
+  
+  @js.native
+  sealed trait around extends StObject
+  inline def around: around = "around".asInstanceOf[around]
+  
+  @js.native
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
+  
   @js.native
-  sealed trait ActionSheet extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `ActionSheet example` extends js.Object
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait Icon extends js.Object
+  sealed trait bankCard extends StObject
+  inline def bankCard: bankCard = "bankCard".asInstanceOf[bankCard]
   
   @js.native
-  sealed trait `Icon Example` extends js.Object
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait List extends js.Object
+  sealed trait between extends StObject
+  inline def between: between = "between".asInstanceOf[between]
   
   @js.native
-  sealed trait `List Example` extends js.Object
+  sealed trait `birthdate-day` extends StObject
+  inline def `birthdate-day`: `birthdate-day` = "birthdate-day".asInstanceOf[`birthdate-day`]
   
   @js.native
-  sealed trait Popover extends js.Object
+  sealed trait `birthdate-full` extends StObject
+  inline def `birthdate-full`: `birthdate-full` = "birthdate-full".asInstanceOf[`birthdate-full`]
   
   @js.native
-  sealed trait `Popover example` extends js.Object
+  sealed trait `birthdate-month` extends StObject
+  inline def `birthdate-month`: `birthdate-month` = "birthdate-month".asInstanceOf[`birthdate-month`]
   
   @js.native
-  sealed trait Tabs extends js.Object
+  sealed trait `birthdate-year` extends StObject
+  inline def `birthdate-year`: `birthdate-year` = "birthdate-year".asInstanceOf[`birthdate-year`]
   
   @js.native
-  sealed trait `Tabs example` extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait URL extends js.Object
+  sealed trait `box-none` extends StObject
+  inline def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait `box-only` extends StObject
+  inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait addressCity extends js.Object
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait addressCityAndState extends js.Object
+  sealed trait `cc-csc` extends StObject
+  inline def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
   
   @js.native
-  sealed trait addressState extends js.Object
+  sealed trait `cc-exp` extends StObject
+  inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait `cc-exp-day` extends StObject
+  inline def `cc-exp-day`: `cc-exp-day` = "cc-exp-day".asInstanceOf[`cc-exp-day`]
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait `cc-exp-month` extends StObject
+  inline def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
   
   @js.native
-  sealed trait around extends js.Object
+  sealed trait `cc-exp-year` extends StObject
+  inline def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
   
   @js.native
-  sealed trait assertive extends js.Object
+  sealed trait `cc-number` extends StObject
+  inline def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait balanced extends js.Object
+  sealed trait characters extends StObject
+  inline def characters: characters = "characters".asInstanceOf[characters]
   
   @js.native
-  sealed trait bankCard extends js.Object
+  sealed trait closable extends StObject
+  inline def closable: closable = "closable".asInstanceOf[closable]
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait column extends StObject
+  inline def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait `column-reverse` extends StObject
+  inline def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait countryName extends StObject
+  inline def countryName: countryName = "countryName".asInstanceOf[countryName]
   
   @js.native
-  sealed trait `box-none` extends js.Object
+  sealed trait creditCardNumber extends StObject
+  inline def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
   
   @js.native
-  sealed trait `box-only` extends js.Object
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `cc-csc` extends js.Object
+  sealed trait datetime extends StObject
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait `cc-exp` extends js.Object
+  sealed trait digit extends StObject
+  inline def digit: digit = "digit".asInstanceOf[digit]
   
   @js.native
-  sealed trait `cc-exp-month` extends js.Object
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait `cc-exp-year` extends js.Object
+  sealed trait email extends StObject
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `cc-number` extends js.Object
+  sealed trait emailAddress extends StObject
+  inline def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait empty extends StObject
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
-  sealed trait characters extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait closable extends js.Object
+  sealed trait familyName extends StObject
+  inline def familyName: familyName = "familyName".asInstanceOf[familyName]
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait fixed extends StObject
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait `column-reverse` extends js.Object
+  sealed trait fullStreetAddress extends StObject
+  inline def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
   
   @js.native
-  sealed trait countryName extends js.Object
+  sealed trait gender extends StObject
+  inline def gender: gender = "gender".asInstanceOf[gender]
   
   @js.native
-  sealed trait creditCardNumber extends js.Object
+  sealed trait ghost extends StObject
+  inline def ghost: ghost = "ghost".asInstanceOf[ghost]
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait givenName extends StObject
+  inline def givenName: givenName = "givenName".asInstanceOf[givenName]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait highQuality extends StObject
+  inline def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait ios extends StObject
+  inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait digit extends js.Object
+  sealed trait jobTitle extends StObject
+  inline def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait emailAddress extends js.Object
+  sealed trait lg extends StObject
+  inline def lg: lg = "lg".asInstanceOf[lg]
   
   @js.native
-  sealed trait empty extends js.Object
+  sealed trait light extends StObject
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait familyName extends js.Object
+  sealed trait location extends StObject
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait `login-password` extends StObject
+  inline def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
   
   @js.native
-  sealed trait fullStreetAddress extends js.Object
+  sealed trait md extends StObject
+  inline def md: md = "md".asInstanceOf[md]
   
   @js.native
-  sealed trait ghost extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait givenName extends js.Object
+  sealed trait middleName extends StObject
+  inline def middleName: middleName = "middleName".asInstanceOf[middleName]
   
   @js.native
-  sealed trait highQuality extends js.Object
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait `name-family` extends StObject
+  inline def `name-family`: `name-family` = "name-family".asInstanceOf[`name-family`]
   
   @js.native
-  sealed trait jobTitle extends js.Object
+  sealed trait `name-given` extends StObject
+  inline def `name-given`: `name-given` = "name-given".asInstanceOf[`name-given`]
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait `name-middle` extends StObject
+  inline def `name-middle`: `name-middle` = "name-middle".asInstanceOf[`name-middle`]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait `name-middle-initial` extends StObject
+  inline def `name-middle-initial`: `name-middle-initial` = "name-middle-initial".asInstanceOf[`name-middle-initial`]
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait `name-prefix` extends StObject
+  inline def `name-prefix`: `name-prefix` = "name-prefix".asInstanceOf[`name-prefix`]
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait `name-suffix` extends StObject
+  inline def `name-suffix`: `name-suffix` = "name-suffix".asInstanceOf[`name-suffix`]
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait namePrefix extends StObject
+  inline def namePrefix: namePrefix = "namePrefix".asInstanceOf[namePrefix]
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait nameSuffix extends StObject
+  inline def nameSuffix: nameSuffix = "nameSuffix".asInstanceOf[nameSuffix]
   
   @js.native
-  sealed trait `login-password` extends js.Object
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait md extends js.Object
+  sealed trait newPassword extends StObject
+  inline def newPassword: newPassword = "newPassword".asInstanceOf[newPassword]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait nickname extends StObject
+  inline def nickname: nickname = "nickname".asInstanceOf[nickname]
   
   @js.native
-  sealed trait middleName extends js.Object
+  sealed trait no extends StObject
+  inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait `no-hide-descendants` extends StObject
+  inline def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait noExcludeDescendants extends StObject
+  inline def noExcludeDescendants: noExcludeDescendants = "noExcludeDescendants".asInstanceOf[noExcludeDescendants]
   
   @js.native
-  sealed trait namePrefix extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait nameSuffix extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait nowrap extends StObject
+  inline def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
   
   @js.native
-  sealed trait newPassword extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait nickname extends js.Object
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait oneTimeCode extends StObject
+  inline def oneTimeCode: oneTimeCode = "oneTimeCode".asInstanceOf[oneTimeCode]
   
   @js.native
-  sealed trait `no-hide-descendants` extends js.Object
+  sealed trait organizationName extends StObject
+  inline def organizationName: organizationName = "organizationName".asInstanceOf[organizationName]
   
   @js.native
-  sealed trait noExcludeDescendants extends js.Object
+  sealed trait password extends StObject
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait `password-new` extends StObject
+  inline def `password-new`: `password-new` = "password-new".asInstanceOf[`password-new`]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait phone extends StObject
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait nowrap extends js.Object
+  sealed trait pointer extends StObject
+  inline def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait `postal-address` extends StObject
+  inline def `postal-address`: `postal-address` = "postal-address".asInstanceOf[`postal-address`]
   
   @js.native
-  sealed trait oneTimeCode extends js.Object
+  sealed trait `postal-address-country` extends StObject
+  inline def `postal-address-country`: `postal-address-country` = "postal-address-country".asInstanceOf[`postal-address-country`]
   
   @js.native
-  sealed trait organizationName extends js.Object
+  sealed trait `postal-address-extended` extends StObject
+  inline def `postal-address-extended`: `postal-address-extended` = "postal-address-extended".asInstanceOf[`postal-address-extended`]
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait `postal-address-extended-postal-code` extends StObject
+  inline def `postal-address-extended-postal-code`: `postal-address-extended-postal-code` = "postal-address-extended-postal-code".asInstanceOf[`postal-address-extended-postal-code`]
   
   @js.native
-  sealed trait phone extends js.Object
+  sealed trait `postal-address-locality` extends StObject
+  inline def `postal-address-locality`: `postal-address-locality` = "postal-address-locality".asInstanceOf[`postal-address-locality`]
   
   @js.native
-  sealed trait pointer extends js.Object
+  sealed trait `postal-address-region` extends StObject
+  inline def `postal-address-region`: `postal-address-region` = "postal-address-region".asInstanceOf[`postal-address-region`]
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait `postal-code` extends StObject
+  inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
   @js.native
-  sealed trait `postal-code` extends js.Object
+  sealed trait postalCode extends StObject
+  inline def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
   
   @js.native
-  sealed trait postalCode extends js.Object
+  sealed trait primary extends StObject
+  inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait radiobutton_checked extends js.Object
+  sealed trait row extends StObject
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait radiobutton_unchecked extends js.Object
+  sealed trait `row-reverse` extends StObject
+  inline def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait `secure-text` extends StObject
+  inline def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait sentences extends StObject
+  inline def sentences: sentences = "sentences".asInstanceOf[sentences]
   
   @js.native
-  sealed trait `row-reverse` extends js.Object
+  sealed trait simple extends StObject
+  inline def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait `secure-text` extends js.Object
+  sealed trait sm extends StObject
+  inline def sm: sm = "sm".asInstanceOf[sm]
   
   @js.native
-  sealed trait sentences extends js.Object
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait simple extends js.Object
+  sealed trait `sms-otp` extends StObject
+  inline def `sms-otp`: `sms-otp` = "sms-otp".asInstanceOf[`sms-otp`]
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait `street-address` extends StObject
+  inline def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait streetAddressLine1 extends StObject
+  inline def streetAddressLine1: streetAddressLine1 = "streetAddressLine1".asInstanceOf[streetAddressLine1]
   
   @js.native
-  sealed trait `street-address` extends js.Object
+  sealed trait streetAddressLine2 extends StObject
+  inline def streetAddressLine2: streetAddressLine2 = "streetAddressLine2".asInstanceOf[streetAddressLine2]
   
   @js.native
-  sealed trait streetAddressLine1 extends js.Object
+  sealed trait stretch extends StObject
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait streetAddressLine2 extends js.Object
+  sealed trait sublocality extends StObject
+  inline def sublocality: sublocality = "sublocality".asInstanceOf[sublocality]
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait tel extends StObject
+  inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait sublocality extends js.Object
+  sealed trait `tel-country-code` extends StObject
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
   
   @js.native
-  sealed trait tel extends js.Object
+  sealed trait `tel-device` extends StObject
+  inline def `tel-device`: `tel-device` = "tel-device".asInstanceOf[`tel-device`]
   
   @js.native
-  sealed trait telephoneNumber extends js.Object
+  sealed trait `tel-national` extends StObject
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait telephoneNumber extends StObject
+  inline def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait time extends StObject
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait `unless-editing` extends js.Object
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait `unless-editing` extends StObject
+  inline def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
   
   @js.native
-  sealed trait username extends js.Object
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait username extends StObject
+  inline def username: username = "username".asInstanceOf[username]
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait `username-new` extends StObject
+  inline def `username-new`: `username-new` = "username-new".asInstanceOf[`username-new`]
   
   @js.native
-  sealed trait `while-editing` extends js.Object
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait words extends js.Object
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait wrap extends js.Object
+  sealed trait `while-editing` extends StObject
+  inline def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
   
   @js.native
-  sealed trait `wrap-reverse` extends js.Object
+  sealed trait words extends StObject
+  inline def words: words = "words".asInstanceOf[words]
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait wrap extends StObject
+  inline def wrap: wrap = "wrap".asInstanceOf[wrap]
   
   @js.native
-  sealed trait xs extends js.Object
+  sealed trait `wrap-reverse` extends StObject
+  inline def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
   
   @js.native
-  sealed trait xxs extends js.Object
+  sealed trait xl extends StObject
+  inline def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait xs extends StObject
+  inline def xs: xs = "xs".asInstanceOf[xs]
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait xxs extends StObject
+  inline def xxs: xxs = "xxs".asInstanceOf[xxs]
   
   @js.native
-  sealed trait yesExcludeDescendants extends js.Object
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
   
-  @scala.inline
-  def ActionSheet: ActionSheet = "ActionSheet".asInstanceOf[ActionSheet]
-  @scala.inline
-  def `ActionSheet example`: `ActionSheet example` = "ActionSheet example".asInstanceOf[`ActionSheet example`]
-  @scala.inline
-  def Icon: Icon = "Icon".asInstanceOf[Icon]
-  @scala.inline
-  def `Icon Example`: `Icon Example` = "Icon Example".asInstanceOf[`Icon Example`]
-  @scala.inline
-  def List: List = "List".asInstanceOf[List]
-  @scala.inline
-  def `List Example`: `List Example` = "List Example".asInstanceOf[`List Example`]
-  @scala.inline
-  def Popover: Popover = "Popover".asInstanceOf[Popover]
-  @scala.inline
-  def `Popover example`: `Popover example` = "Popover example".asInstanceOf[`Popover example`]
-  @scala.inline
-  def Tabs: Tabs = "Tabs".asInstanceOf[Tabs]
-  @scala.inline
-  def `Tabs example`: `Tabs example` = "Tabs example".asInstanceOf[`Tabs example`]
-  @scala.inline
-  def URL: URL = "URL".asInstanceOf[URL]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def addressCity: addressCity = "addressCity".asInstanceOf[addressCity]
-  @scala.inline
-  def addressCityAndState: addressCityAndState = "addressCityAndState".asInstanceOf[addressCityAndState]
-  @scala.inline
-  def addressState: addressState = "addressState".asInstanceOf[addressState]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def around: around = "around".asInstanceOf[around]
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def balanced: balanced = "balanced".asInstanceOf[balanced]
-  @scala.inline
-  def bankCard: bankCard = "bankCard".asInstanceOf[bankCard]
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def between: between = "between".asInstanceOf[between]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
-  @scala.inline
-  def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
-  @scala.inline
-  def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
-  @scala.inline
-  def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
-  @scala.inline
-  def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
-  @scala.inline
-  def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def characters: characters = "characters".asInstanceOf[characters]
-  @scala.inline
-  def closable: closable = "closable".asInstanceOf[closable]
-  @scala.inline
-  def column: column = "column".asInstanceOf[column]
-  @scala.inline
-  def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
-  @scala.inline
-  def countryName: countryName = "countryName".asInstanceOf[countryName]
-  @scala.inline
-  def creditCardNumber: creditCardNumber = "creditCardNumber".asInstanceOf[creditCardNumber]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def digit: digit = "digit".asInstanceOf[digit]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def familyName: familyName = "familyName".asInstanceOf[familyName]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
-  @scala.inline
-  def ghost: ghost = "ghost".asInstanceOf[ghost]
-  @scala.inline
-  def givenName: givenName = "givenName".asInstanceOf[givenName]
-  @scala.inline
-  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
-  def jobTitle: jobTitle = "jobTitle".asInstanceOf[jobTitle]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def lg: lg = "lg".asInstanceOf[lg]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def `login-password`: `login-password` = "login-password".asInstanceOf[`login-password`]
-  @scala.inline
-  def md: md = "md".asInstanceOf[md]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def middleName: middleName = "middleName".asInstanceOf[middleName]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def namePrefix: namePrefix = "namePrefix".asInstanceOf[namePrefix]
-  @scala.inline
-  def nameSuffix: nameSuffix = "nameSuffix".asInstanceOf[nameSuffix]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def newPassword: newPassword = "newPassword".asInstanceOf[newPassword]
-  @scala.inline
-  def nickname: nickname = "nickname".asInstanceOf[nickname]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
-  @scala.inline
-  def noExcludeDescendants: noExcludeDescendants = "noExcludeDescendants".asInstanceOf[noExcludeDescendants]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def nowrap: nowrap = "nowrap".asInstanceOf[nowrap]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def oneTimeCode: oneTimeCode = "oneTimeCode".asInstanceOf[oneTimeCode]
-  @scala.inline
-  def organizationName: organizationName = "organizationName".asInstanceOf[organizationName]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def pointer: pointer = "pointer".asInstanceOf[pointer]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
-  @scala.inline
-  def postalCode: postalCode = "postalCode".asInstanceOf[postalCode]
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
-  @scala.inline
-  def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  @scala.inline
-  def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
-  @scala.inline
-  def `secure-text`: `secure-text` = "secure-text".asInstanceOf[`secure-text`]
-  @scala.inline
-  def sentences: sentences = "sentences".asInstanceOf[sentences]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
-  @scala.inline
-  def sm: sm = "sm".asInstanceOf[sm]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
-  @scala.inline
-  def streetAddressLine1: streetAddressLine1 = "streetAddressLine1".asInstanceOf[streetAddressLine1]
-  @scala.inline
-  def streetAddressLine2: streetAddressLine2 = "streetAddressLine2".asInstanceOf[streetAddressLine2]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def sublocality: sublocality = "sublocality".asInstanceOf[sublocality]
-  @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
-  def telephoneNumber: telephoneNumber = "telephoneNumber".asInstanceOf[telephoneNumber]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `unless-editing`: `unless-editing` = "unless-editing".asInstanceOf[`unless-editing`]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def username: username = "username".asInstanceOf[username]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
-  @scala.inline
-  def words: words = "words".asInstanceOf[words]
-  @scala.inline
-  def wrap: wrap = "wrap".asInstanceOf[wrap]
-  @scala.inline
-  def `wrap-reverse`: `wrap-reverse` = "wrap-reverse".asInstanceOf[`wrap-reverse`]
-  @scala.inline
-  def xl: xl = "xl".asInstanceOf[xl]
-  @scala.inline
-  def xs: xs = "xs".asInstanceOf[xs]
-  @scala.inline
-  def xxs: xxs = "xxs".asInstanceOf[xxs]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
-  @scala.inline
-  def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
+  
+  @js.native
+  sealed trait yesExcludeDescendants extends StObject
+  inline def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
 }
-

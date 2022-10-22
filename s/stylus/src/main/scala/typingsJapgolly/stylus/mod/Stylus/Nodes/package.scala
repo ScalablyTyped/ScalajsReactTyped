@@ -1,9 +1,8 @@
-package typingsJapgolly.stylus.mod.Stylus
+package typingsJapgolly.stylus.mod.Stylus.Nodes
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Nodes {
-  type Number = typingsJapgolly.stylus.mod.Stylus.Nodes.Node
-}
+
+type Number = Node

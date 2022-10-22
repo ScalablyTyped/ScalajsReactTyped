@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.OperationCompletedEventArgs")
-@js.native
-class OperationCompletedEventArgs () extends IOperationCompletedEventArgs {
-  /* CompleteClass */
-  override var operation: DataPackageOperation = js.native
+trait OperationCompletedEventArgs
+  extends StObject
+     with IOperationCompletedEventArgs
+object OperationCompletedEventArgs {
+  
+  inline def apply(operation: DataPackageOperation): OperationCompletedEventArgs = {
+    val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OperationCompletedEventArgs]
+  }
 }
-

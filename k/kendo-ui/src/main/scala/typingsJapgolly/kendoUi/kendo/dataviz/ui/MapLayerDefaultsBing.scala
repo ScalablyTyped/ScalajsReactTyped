@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapLayerDefaultsBing extends js.Object {
+trait MapLayerDefaultsBing extends StObject {
+  
   var attribution: js.UndefOr[String] = js.undefined
+  
   var culture: js.UndefOr[String] = js.undefined
+  
   var imagerySet: js.UndefOr[String] = js.undefined
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
 }
-
 object MapLayerDefaultsBing {
-  @scala.inline
-  def apply(
-    attribution: String = null,
-    culture: String = null,
-    imagerySet: String = null,
-    key: String = null,
-    opacity: Int | Double = null
-  ): MapLayerDefaultsBing = {
+  
+  inline def apply(): MapLayerDefaultsBing = {
     val __obj = js.Dynamic.literal()
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLayerDefaultsBing]
   }
+  
+  extension [Self <: MapLayerDefaultsBing](x: Self) {
+    
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    
+    inline def setImagerySet(value: String): Self = StObject.set(x, "imagerySet", value.asInstanceOf[js.Any])
+    
+    inline def setImagerySetUndefined: Self = StObject.set(x, "imagerySet", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+  }
 }
-

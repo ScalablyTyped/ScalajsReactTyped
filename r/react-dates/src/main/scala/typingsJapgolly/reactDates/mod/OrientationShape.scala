@@ -1,22 +1,17 @@
 package typingsJapgolly.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// shpae/OrientationShape.js
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactDates.reactDatesStrings.horizontal
   - typingsJapgolly.reactDates.reactDatesStrings.vertical
 */
-trait OrientationShape extends js.Object
-
+trait OrientationShape extends StObject
 object OrientationShape {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def horizontal: typingsJapgolly.reactDates.reactDatesStrings.horizontal = this.cast("horizontal")
-  @scala.inline
-  def vertical: typingsJapgolly.reactDates.reactDatesStrings.vertical = this.cast("vertical")
+  
+  inline def horizontal: typingsJapgolly.reactDates.reactDatesStrings.horizontal = "horizontal".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.horizontal]
+  
+  inline def vertical: typingsJapgolly.reactDates.reactDatesStrings.vertical = "vertical".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.vertical]
 }
-

@@ -1,118 +1,140 @@
 package typingsJapgolly.pickadate.Pickadate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateKlassOptions extends KlassOptions {
-   // default 'picker__footer'
+trait DateKlassOptions
+  extends StObject
+     with KlassOptions {
+  
+  // default 'picker__footer'
   // Today & close buttons
   var buttonClose: js.UndefOr[String] = js.undefined
-   // default 'picker__button--close'
+  
+  // default 'picker__button--close'
   var buttonToday: js.UndefOr[String] = js.undefined
-   // default 'picker__weekday'
+  
+  // default 'picker__weekday'
   // Day states
   var day: js.UndefOr[String] = js.undefined
-   // default 'picker__day--outfocus'
+  
+  // default 'picker__day--outfocus'
   // The picker footer
   var footer: js.UndefOr[String] = js.undefined
+  
   // The picker header
   var header: js.UndefOr[String] = js.undefined
-   // default 'picker__day'
+  
+  // default 'picker__day'
   var infocus: js.UndefOr[String] = js.undefined
-   // default 'picker__nav--disabled'
+  
+  // default 'picker__nav--disabled'
   // Month & year labels
   var month: js.UndefOr[String] = js.undefined
-   // default 'picker__nav--next'
+  
+  // default 'picker__nav--next'
   var navDisabled: js.UndefOr[String] = js.undefined
-   // default 'picker__nav--prev'
+  
+  // default 'picker__nav--prev'
   var navNext: js.UndefOr[String] = js.undefined
-   // default 'picker__header'
+  
+  // default 'picker__header'
   // Month navigation
   var navPrev: js.UndefOr[String] = js.undefined
-   // default 'picker__day--infocus'
+  
+  // default 'picker__day--infocus'
   var outfocus: js.UndefOr[String] = js.undefined
-   // default 'picker__year'
+  
+  // default 'picker__year'
   // Month & year dropdowns
   var selectMonth: js.UndefOr[String] = js.undefined
-   // default 'picker__select--month'
+  
+  // default 'picker__select--month'
   var selectYear: js.UndefOr[String] = js.undefined
-   // default 'picker__select--year'
+  
+  // default 'picker__select--year'
   // Table of dates
   var table: js.UndefOr[String] = js.undefined
-   // default 'picker__table'
+  
+  // default 'picker__table'
   // Weekday labels
   var weekdays: js.UndefOr[String] = js.undefined
-   // default 'picker__month'
+  
+  // default 'picker__month'
   var year: js.UndefOr[String] = js.undefined
 }
-
 object DateKlassOptions {
-  @scala.inline
-  def apply(
-    active: String = null,
-    box: String = null,
-    buttonClear: String = null,
-    buttonClose: String = null,
-    buttonToday: String = null,
-    day: String = null,
-    disabled: String = null,
-    focused: String = null,
-    footer: String = null,
-    frame: String = null,
-    header: String = null,
-    highlighted: String = null,
-    holder: String = null,
-    infocus: String = null,
-    input: String = null,
-    month: String = null,
-    navDisabled: String = null,
-    navNext: String = null,
-    navPrev: String = null,
-    now: String = null,
-    opened: String = null,
-    outfocus: String = null,
-    picker: String = null,
-    selectMonth: String = null,
-    selectYear: String = null,
-    selected: String = null,
-    table: String = null,
-    weekdays: String = null,
-    wrap: String = null,
-    year: String = null
-  ): DateKlassOptions = {
+  
+  inline def apply(): DateKlassOptions = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (box != null) __obj.updateDynamic("box")(box.asInstanceOf[js.Any])
-    if (buttonClear != null) __obj.updateDynamic("buttonClear")(buttonClear.asInstanceOf[js.Any])
-    if (buttonClose != null) __obj.updateDynamic("buttonClose")(buttonClose.asInstanceOf[js.Any])
-    if (buttonToday != null) __obj.updateDynamic("buttonToday")(buttonToday.asInstanceOf[js.Any])
-    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (focused != null) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (highlighted != null) __obj.updateDynamic("highlighted")(highlighted.asInstanceOf[js.Any])
-    if (holder != null) __obj.updateDynamic("holder")(holder.asInstanceOf[js.Any])
-    if (infocus != null) __obj.updateDynamic("infocus")(infocus.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (navDisabled != null) __obj.updateDynamic("navDisabled")(navDisabled.asInstanceOf[js.Any])
-    if (navNext != null) __obj.updateDynamic("navNext")(navNext.asInstanceOf[js.Any])
-    if (navPrev != null) __obj.updateDynamic("navPrev")(navPrev.asInstanceOf[js.Any])
-    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
-    if (opened != null) __obj.updateDynamic("opened")(opened.asInstanceOf[js.Any])
-    if (outfocus != null) __obj.updateDynamic("outfocus")(outfocus.asInstanceOf[js.Any])
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (selectMonth != null) __obj.updateDynamic("selectMonth")(selectMonth.asInstanceOf[js.Any])
-    if (selectYear != null) __obj.updateDynamic("selectYear")(selectYear.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    if (year != null) __obj.updateDynamic("year")(year.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateKlassOptions]
   }
+  
+  extension [Self <: DateKlassOptions](x: Self) {
+    
+    inline def setButtonClose(value: String): Self = StObject.set(x, "buttonClose", value.asInstanceOf[js.Any])
+    
+    inline def setButtonCloseUndefined: Self = StObject.set(x, "buttonClose", js.undefined)
+    
+    inline def setButtonToday(value: String): Self = StObject.set(x, "buttonToday", value.asInstanceOf[js.Any])
+    
+    inline def setButtonTodayUndefined: Self = StObject.set(x, "buttonToday", js.undefined)
+    
+    inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+    
+    inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+    
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setInfocus(value: String): Self = StObject.set(x, "infocus", value.asInstanceOf[js.Any])
+    
+    inline def setInfocusUndefined: Self = StObject.set(x, "infocus", js.undefined)
+    
+    inline def setMonth(value: String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    
+    inline def setNavDisabled(value: String): Self = StObject.set(x, "navDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setNavDisabledUndefined: Self = StObject.set(x, "navDisabled", js.undefined)
+    
+    inline def setNavNext(value: String): Self = StObject.set(x, "navNext", value.asInstanceOf[js.Any])
+    
+    inline def setNavNextUndefined: Self = StObject.set(x, "navNext", js.undefined)
+    
+    inline def setNavPrev(value: String): Self = StObject.set(x, "navPrev", value.asInstanceOf[js.Any])
+    
+    inline def setNavPrevUndefined: Self = StObject.set(x, "navPrev", js.undefined)
+    
+    inline def setOutfocus(value: String): Self = StObject.set(x, "outfocus", value.asInstanceOf[js.Any])
+    
+    inline def setOutfocusUndefined: Self = StObject.set(x, "outfocus", js.undefined)
+    
+    inline def setSelectMonth(value: String): Self = StObject.set(x, "selectMonth", value.asInstanceOf[js.Any])
+    
+    inline def setSelectMonthUndefined: Self = StObject.set(x, "selectMonth", js.undefined)
+    
+    inline def setSelectYear(value: String): Self = StObject.set(x, "selectYear", value.asInstanceOf[js.Any])
+    
+    inline def setSelectYearUndefined: Self = StObject.set(x, "selectYear", js.undefined)
+    
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    
+    inline def setWeekdays(value: String): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+    
+    inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
+    
+    inline def setYear(value: String): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+    
+    inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+  }
 }
-

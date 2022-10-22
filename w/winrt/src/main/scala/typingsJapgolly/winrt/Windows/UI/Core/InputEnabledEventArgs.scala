@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.InputEnabledEventArgs")
-@js.native
-class InputEnabledEventArgs () extends IInputEnabledEventArgs {
-  /* CompleteClass */
-  override var handled: Boolean = js.native
-  /* CompleteClass */
-  override var inputEnabled: Boolean = js.native
+trait InputEnabledEventArgs
+  extends StObject
+     with IInputEnabledEventArgs
+object InputEnabledEventArgs {
+  
+  inline def apply(handled: Boolean, inputEnabled: Boolean): InputEnabledEventArgs = {
+    val __obj = js.Dynamic.literal(handled = handled.asInstanceOf[js.Any], inputEnabled = inputEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputEnabledEventArgs]
+  }
 }
-

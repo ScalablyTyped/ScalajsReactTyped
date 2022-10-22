@@ -1,13 +1,9 @@
-package typingsJapgolly
+package typingsJapgolly.javascriptAstar
 
+import typingsJapgolly.javascriptAstar.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object javascriptAstar {
-  type Heuristic = js.Function2[
-    /* pos0 */ typingsJapgolly.javascriptAstar.AnonX, 
-    /* pos1 */ typingsJapgolly.javascriptAstar.AnonX, 
-    scala.Double
-  ]
-}
+
+type Heuristic = js.Function2[/* pos0 */ X, /* pos1 */ X, Double]

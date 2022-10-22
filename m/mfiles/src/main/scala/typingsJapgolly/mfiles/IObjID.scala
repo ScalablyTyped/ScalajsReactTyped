@@ -2,24 +2,31 @@ package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IObjID extends js.Object {
-  var ID: Double
-  var Type: Double
+trait IObjID extends StObject {
+  
   def Clone(): IObjID
+  
   def CloneFrom(ObjID: IObjID): Unit
+  
+  var ID: Double
+  
   def Serialize(): js.Array[Double]
+  
   def SetIDs(ObjType: Double, ID: Double): Unit
+  
   def ToJSON(): String
+  
+  var Type: Double
+  
   def Unserialize(Bytes: js.Array[Double]): Unit
 }
-
 object IObjID {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Clone: CallbackTo[IObjID],
     CloneFrom: IObjID => Callback,
     ID: Double,
@@ -29,14 +36,26 @@ object IObjID {
     Type: Double,
     Unserialize: js.Array[Double] => Callback
   ): IObjID = {
-    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
-    __obj.updateDynamic("CloneFrom")(js.Any.fromFunction1((t0: typingsJapgolly.mfiles.IObjID) => CloneFrom(t0).runNow()))
-    __obj.updateDynamic("Serialize")(Serialize.toJsFn)
-    __obj.updateDynamic("SetIDs")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => SetIDs(t0, t1).runNow()))
-    __obj.updateDynamic("ToJSON")(ToJSON.toJsFn)
-    __obj.updateDynamic("Unserialize")(js.Any.fromFunction1((t0: js.Array[scala.Double]) => Unserialize(t0).runNow()))
+    val __obj = js.Dynamic.literal(Clone = Clone.toJsFn, CloneFrom = js.Any.fromFunction1((t0: IObjID) => CloneFrom(t0).runNow()), ID = ID.asInstanceOf[js.Any], Serialize = Serialize.toJsFn, SetIDs = js.Any.fromFunction2((t0: Double, t1: Double) => (SetIDs(t0, t1)).runNow()), ToJSON = ToJSON.toJsFn, Type = Type.asInstanceOf[js.Any], Unserialize = js.Any.fromFunction1((t0: js.Array[Double]) => Unserialize(t0).runNow()))
     __obj.asInstanceOf[IObjID]
   }
+  
+  extension [Self <: IObjID](x: Self) {
+    
+    inline def setClone(value: CallbackTo[IObjID]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setCloneFrom(value: IObjID => Callback): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1((t0: IObjID) => value(t0).runNow()))
+    
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    
+    inline def setSerialize(value: CallbackTo[js.Array[Double]]): Self = StObject.set(x, "Serialize", value.toJsFn)
+    
+    inline def setSetIDs(value: (Double, Double) => Callback): Self = StObject.set(x, "SetIDs", js.Any.fromFunction2((t0: Double, t1: Double) => (value(t0, t1)).runNow()))
+    
+    inline def setToJSON(value: CallbackTo[String]): Self = StObject.set(x, "ToJSON", value.toJsFn)
+    
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setUnserialize(value: js.Array[Double] => Callback): Self = StObject.set(x, "Unserialize", js.Any.fromFunction1((t0: js.Array[Double]) => value(t0).runNow()))
+  }
 }
-

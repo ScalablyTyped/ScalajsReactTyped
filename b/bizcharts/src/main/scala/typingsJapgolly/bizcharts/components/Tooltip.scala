@@ -1,80 +1,104 @@
 package typingsJapgolly.bizcharts.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.bizcharts.AnonStyle
-import typingsJapgolly.bizcharts.mod.PositionType
-import typingsJapgolly.bizcharts.mod.TooltipProps
-import typingsJapgolly.bizcharts.mod.triggerOnType
-import typingsJapgolly.react.mod.CSSProperties
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antvG2.antvG2Strings.bottom
+import typingsJapgolly.antvG2.antvG2Strings.left
+import typingsJapgolly.antvG2.antvG2Strings.right
+import typingsJapgolly.antvG2.antvG2Strings.top
+import typingsJapgolly.antvG2.libInterfaceMod.Datum
+import typingsJapgolly.antvG2.libInterfaceMod.TooltipCrosshairs
+import typingsJapgolly.antvG2.libInterfaceMod.TooltipDomStyles
+import typingsJapgolly.antvG2.libInterfaceMod.TooltipItem
+import typingsJapgolly.antvG2.libInterfaceMod.TooltipTitle
+import typingsJapgolly.bizcharts.bizchartsStrings.click
+import typingsJapgolly.bizcharts.bizchartsStrings.hover
+import typingsJapgolly.bizcharts.libComponentsTooltipMod.ITooltip
+import typingsJapgolly.bizcharts.libComponentsTooltipMod.ITooltipEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tooltip {
-  def apply(
-    containerTpl: String = null,
-    crosshairs: AnonStyle | Boolean = null,
-    enterable: js.UndefOr[Boolean] = js.undefined,
-    follow: js.UndefOr[Boolean] = js.undefined,
-    `g2-tooltip`: CSSProperties = null,
-    `g2-tooltip-list`: CSSProperties = null,
-    `g2-tooltip-list-item`: CSSProperties = null,
-    `g2-tooltip-marker`: CSSProperties = null,
-    `g2-tooltip-title`: CSSProperties = null,
-    htmlContent: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[js.Any]]) => CallbackTo[String] = null,
-    inPlot: js.UndefOr[Boolean] = js.undefined,
-    itemTpl: String = null,
-    offset: Int | Double = null,
-    position: PositionType = null,
-    shared: js.UndefOr[Boolean] = js.undefined,
-    showTitle: js.UndefOr[Boolean] = js.undefined,
-    title: String = null,
-    triggerOn: triggerOnType = null,
-    `type`: String = null,
-    useHtml: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, typingsJapgolly.bizcharts.mod.Tooltip, Unit, TooltipProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (containerTpl != null) __obj.updateDynamic("containerTpl")(containerTpl.asInstanceOf[js.Any])
-    if (crosshairs != null) __obj.updateDynamic("crosshairs")(crosshairs.asInstanceOf[js.Any])
-    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
-    if (`g2-tooltip` != null) __obj.updateDynamic("g2-tooltip")(`g2-tooltip`.asInstanceOf[js.Any])
-    if (`g2-tooltip-list` != null) __obj.updateDynamic("g2-tooltip-list")(`g2-tooltip-list`.asInstanceOf[js.Any])
-    if (`g2-tooltip-list-item` != null) __obj.updateDynamic("g2-tooltip-list-item")(`g2-tooltip-list-item`.asInstanceOf[js.Any])
-    if (`g2-tooltip-marker` != null) __obj.updateDynamic("g2-tooltip-marker")(`g2-tooltip-marker`.asInstanceOf[js.Any])
-    if (`g2-tooltip-title` != null) __obj.updateDynamic("g2-tooltip-title")(`g2-tooltip-title`.asInstanceOf[js.Any])
-    if (htmlContent != null) __obj.updateDynamic("htmlContent")(js.Any.fromFunction2((t0: /* title */ js.UndefOr[java.lang.String], t1: /* items */ js.UndefOr[js.Array[js.Any]]) => htmlContent(t0, t1).runNow()))
-    if (!js.isUndefined(inPlot)) __obj.updateDynamic("inPlot")(inPlot.asInstanceOf[js.Any])
-    if (itemTpl != null) __obj.updateDynamic("itemTpl")(itemTpl.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTitle)) __obj.updateDynamic("showTitle")(showTitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHtml)) __obj.updateDynamic("useHtml")(useHtml.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.bizcharts.mod.TooltipProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.bizcharts.mod.Tooltip](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.bizcharts.mod.TooltipProps])(children: _*)
-  }
   @JSImport("bizcharts", "Tooltip")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(
+      value: (/* title */ js.UndefOr[String], /* items */ js.UndefOr[js.Array[Any]], /* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => js.Object
+    ): this.type = set("children", js.Any.fromFunction4(value))
+    
+    inline def container(value: String | HTMLElement): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerTpl(value: String): this.type = set("containerTpl", value.asInstanceOf[js.Any])
+    
+    inline def crosshairs(value: TooltipCrosshairs): this.type = set("crosshairs", value.asInstanceOf[js.Any])
+    
+    inline def customContent(value: (/* title */ String, /* data */ js.Array[Any]) => String | HTMLElement): this.type = set("customContent", js.Any.fromFunction2(value))
+    
+    inline def customItems(value: /* originalItems */ js.Array[TooltipItem] => js.Array[TooltipItem]): this.type = set("customItems", js.Any.fromFunction1(value))
+    
+    inline def domStyles(value: TooltipDomStyles): this.type = set("domStyles", value.asInstanceOf[js.Any])
+    
+    inline def enterable(value: Boolean): this.type = set("enterable", value.asInstanceOf[js.Any])
+    
+    inline def follow(value: Boolean): this.type = set("follow", value.asInstanceOf[js.Any])
+    
+    inline def itemTpl(value: String): this.type = set("itemTpl", value.asInstanceOf[js.Any])
+    
+    inline def marker(value: js.Object): this.type = set("marker", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Double): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* e */ js.UndefOr[ITooltipEvent], /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* e */ js.UndefOr[ITooltipEvent], t1: /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => (value(t0, t1)).runNow()))
+    
+    inline def onHide(
+      value: (/* e */ js.UndefOr[ITooltipEvent], /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => Callback
+    ): this.type = set("onHide", js.Any.fromFunction2((t0: /* e */ js.UndefOr[ITooltipEvent], t1: /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => (value(t0, t1)).runNow()))
+    
+    inline def onShow(
+      value: (/* e */ js.UndefOr[ITooltipEvent], /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => Callback
+    ): this.type = set("onShow", js.Any.fromFunction2((t0: /* e */ js.UndefOr[ITooltipEvent], t1: /* chart */ js.UndefOr[typingsJapgolly.antvG2.libChartMod.Chart]) => (value(t0, t1)).runNow()))
+    
+    inline def position(value: top | bottom | left | right): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def reversed(value: Boolean): this.type = set("reversed", value.asInstanceOf[js.Any])
+    
+    inline def shared(value: Boolean): this.type = set("shared", value.asInstanceOf[js.Any])
+    
+    inline def showContent(value: Boolean | (js.Function1[/* datum */ Datum, Boolean])): this.type = set("showContent", value.asInstanceOf[js.Any])
+    
+    inline def showContentFunction1(value: /* datum */ Datum => Boolean): this.type = set("showContent", js.Any.fromFunction1(value))
+    
+    inline def showCrosshairs(value: Boolean): this.type = set("showCrosshairs", value.asInstanceOf[js.Any])
+    
+    inline def showDelay(value: Double): this.type = set("showDelay", value.asInstanceOf[js.Any])
+    
+    inline def showMarkers(value: Boolean): this.type = set("showMarkers", value.asInstanceOf[js.Any])
+    
+    inline def showNil(value: Boolean): this.type = set("showNil", value.asInstanceOf[js.Any])
+    
+    inline def showTitle(value: Boolean): this.type = set("showTitle", value.asInstanceOf[js.Any])
+    
+    inline def title(value: TooltipTitle): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleFunction2(value: (/* title */ String, /* datum */ Datum) => String): this.type = set("title", js.Any.fromFunction2(value))
+    
+    inline def triggerOn(value: hover | click): this.type = set("triggerOn", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Tooltip.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ITooltip): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

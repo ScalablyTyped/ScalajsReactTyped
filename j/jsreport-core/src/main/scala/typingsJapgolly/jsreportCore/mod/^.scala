@@ -1,14 +1,9 @@
 package typingsJapgolly.jsreportCore.mod
 
-import typingsJapgolly.jsreportCore.PartialConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsreport-core", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  def apply(): Reporter = js.native
-  def apply(config: PartialConfiguration): Reporter = js.native
-}
-
+object ^ extends StObject

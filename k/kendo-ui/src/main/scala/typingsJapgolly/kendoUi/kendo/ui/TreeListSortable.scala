@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListSortable extends js.Object {
+trait TreeListSortable extends StObject {
+  
   var allowUnsort: js.UndefOr[Boolean] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
 }
-
 object TreeListSortable {
-  @scala.inline
-  def apply(allowUnsort: js.UndefOr[Boolean] = js.undefined, mode: String = null): TreeListSortable = {
+  
+  inline def apply(): TreeListSortable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowUnsort)) __obj.updateDynamic("allowUnsort")(allowUnsort.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListSortable]
   }
+  
+  extension [Self <: TreeListSortable](x: Self) {
+    
+    inline def setAllowUnsort(value: Boolean): Self = StObject.set(x, "allowUnsort", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUnsortUndefined: Self = StObject.set(x, "allowUnsort", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

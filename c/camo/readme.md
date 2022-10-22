@@ -10,10 +10,10 @@ A class-based ES6 ODM for Mongo-like databases.
 | ------------------ | :-------------: |
 | Full name          | camo |
 | Keywords           | es6, odm, mongodb, nedb, nosql, document, model, schema, database, data, datastore, query, db |
-| # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 7124 |
-| # stars            | 6 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 390.0 |
+| # stars            | 553.0 |
 
 ## Links
 - [Homepage](https://github.com/scottwrobinson/camo)

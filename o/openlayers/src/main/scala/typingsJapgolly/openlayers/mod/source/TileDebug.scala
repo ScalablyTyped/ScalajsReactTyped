@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.TileDebugOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileDebug")
 @js.native
-class TileDebug protected () extends Tile {
+open class TileDebug protected () extends Tile {
   /**
     * @classdesc
     * A pseudo tile source, which does not fetch tiles from a server, but renders
@@ -32,4 +32,3 @@ class TileDebug protected () extends Tile {
     */
   def this(options: TileDebugOptions) = this()
 }
-

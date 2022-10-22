@@ -1,24 +1,20 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.all
   - typingsJapgolly.highcharts.highchartsStrings.disabled
   - typingsJapgolly.highcharts.highchartsStrings.one
 */
-trait OptionsLandmarkVerbosityValue extends js.Object
-
+trait OptionsLandmarkVerbosityValue extends StObject
 object OptionsLandmarkVerbosityValue {
-  @scala.inline
-  def all: typingsJapgolly.highcharts.highchartsStrings.all = this.cast("all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: typingsJapgolly.highcharts.highchartsStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def one: typingsJapgolly.highcharts.highchartsStrings.one = this.cast("one")
+  
+  inline def all: typingsJapgolly.highcharts.highchartsStrings.all = "all".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.all]
+  
+  inline def disabled: typingsJapgolly.highcharts.highchartsStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.disabled]
+  
+  inline def one: typingsJapgolly.highcharts.highchartsStrings.one = "one".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.one]
 }
-

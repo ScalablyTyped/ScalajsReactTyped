@@ -1,20 +1,23 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HostCancellationToken extends js.Object {
+trait HostCancellationToken extends StObject {
+  
   def isCancellationRequested(): Boolean
 }
-
 object HostCancellationToken {
-  @scala.inline
-  def apply(isCancellationRequested: CallbackTo[Boolean]): HostCancellationToken = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isCancellationRequested")(isCancellationRequested.toJsFn)
+  
+  inline def apply(isCancellationRequested: CallbackTo[Boolean]): HostCancellationToken = {
+    val __obj = js.Dynamic.literal(isCancellationRequested = isCancellationRequested.toJsFn)
     __obj.asInstanceOf[HostCancellationToken]
   }
+  
+  extension [Self <: HostCancellationToken](x: Self) {
+    
+    inline def setIsCancellationRequested(value: CallbackTo[Boolean]): Self = StObject.set(x, "isCancellationRequested", value.toJsFn)
+  }
 }
-

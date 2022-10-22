@@ -1,21 +1,23 @@
 package typingsJapgolly.sigmajs.SigmaJs
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Animation extends js.Object {
-  def camera(camera: Camera, target: StringDictionary[js.Any], options: StringDictionary[js.Any]): Double
+trait Animation extends StObject {
+  
+  def camera(camera: Camera, target: StringDictionary[Any], options: StringDictionary[Any]): Double
 }
-
 object Animation {
-  @scala.inline
-  def apply(camera: (Camera, StringDictionary[js.Any], StringDictionary[js.Any]) => CallbackTo[Double]): Animation = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("camera")(js.Any.fromFunction3((t0: typingsJapgolly.sigmajs.SigmaJs.Camera, t1: org.scalablytyped.runtime.StringDictionary[js.Any], t2: org.scalablytyped.runtime.StringDictionary[js.Any]) => camera(t0, t1, t2).runNow()))
+  
+  inline def apply(camera: (Camera, StringDictionary[Any], StringDictionary[Any]) => Double): Animation = {
+    val __obj = js.Dynamic.literal(camera = js.Any.fromFunction3(camera))
     __obj.asInstanceOf[Animation]
   }
+  
+  extension [Self <: Animation](x: Self) {
+    
+    inline def setCamera(value: (Camera, StringDictionary[Any], StringDictionary[Any]) => Double): Self = StObject.set(x, "camera", js.Any.fromFunction3(value))
+  }
 }
-

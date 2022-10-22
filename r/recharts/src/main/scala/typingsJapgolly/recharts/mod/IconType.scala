@@ -1,8 +1,8 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.recharts.rechartsStrings.plainline
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.recharts.rechartsStrings.triangle
   - typingsJapgolly.recharts.rechartsStrings.wye
 */
-trait IconType extends js.Object
-
+trait IconType extends StObject
 object IconType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def circle: typingsJapgolly.recharts.rechartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def cross: typingsJapgolly.recharts.rechartsStrings.cross = this.cast("cross")
-  @scala.inline
-  def diamond: typingsJapgolly.recharts.rechartsStrings.diamond = this.cast("diamond")
-  @scala.inline
-  def line: typingsJapgolly.recharts.rechartsStrings.line = this.cast("line")
-  @scala.inline
-  def plainline: typingsJapgolly.recharts.rechartsStrings.plainline = this.cast("plainline")
-  @scala.inline
-  def rect: typingsJapgolly.recharts.rechartsStrings.rect = this.cast("rect")
-  @scala.inline
-  def square: typingsJapgolly.recharts.rechartsStrings.square = this.cast("square")
-  @scala.inline
-  def star: typingsJapgolly.recharts.rechartsStrings.star = this.cast("star")
-  @scala.inline
-  def triangle: typingsJapgolly.recharts.rechartsStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def wye: typingsJapgolly.recharts.rechartsStrings.wye = this.cast("wye")
+  
+  inline def circle: typingsJapgolly.recharts.rechartsStrings.circle = "circle".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.circle]
+  
+  inline def cross: typingsJapgolly.recharts.rechartsStrings.cross = "cross".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.cross]
+  
+  inline def diamond: typingsJapgolly.recharts.rechartsStrings.diamond = "diamond".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.diamond]
+  
+  inline def line: typingsJapgolly.recharts.rechartsStrings.line = "line".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.line]
+  
+  inline def plainline: typingsJapgolly.recharts.rechartsStrings.plainline = "plainline".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.plainline]
+  
+  inline def rect: typingsJapgolly.recharts.rechartsStrings.rect = "rect".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.rect]
+  
+  inline def square: typingsJapgolly.recharts.rechartsStrings.square = "square".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.square]
+  
+  inline def star: typingsJapgolly.recharts.rechartsStrings.star = "star".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.star]
+  
+  inline def triangle: typingsJapgolly.recharts.rechartsStrings.triangle = "triangle".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.triangle]
+  
+  inline def wye: typingsJapgolly.recharts.rechartsStrings.wye = "wye".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.wye]
 }
-

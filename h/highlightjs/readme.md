@@ -10,10 +10,10 @@ Syntax highlighting for the Web
 | ------------------ | :-------------: |
 | Full name          | highlightjs |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 98 |
-| # downloads        | 764094 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 116219.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/highlightjs)

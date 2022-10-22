@@ -1,17 +1,19 @@
 package typingsJapgolly.backbone.mod
 
 import typingsJapgolly.jquery.JQueryXHR
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "ModelBase")
 @js.native
-class ModelBase () extends js.Object {
-  def parse(response: js.Any): js.Any = js.native
-  def parse(response: js.Any, options: js.Any): js.Any = js.native
-  def sync(arg: js.Any*): JQueryXHR = js.native
-  def toJSON(): js.Any = js.native
-  def toJSON(options: js.Any): js.Any = js.native
+open class ModelBase () extends StObject {
+  
+  def parse(response: Any): Any = js.native
+  def parse(response: Any, options: Any): Any = js.native
+  
+  def sync(arg: Any*): JQueryXHR = js.native
+  
+  def toJSON(): Any = js.native
+  def toJSON(options: Any): Any = js.native
 }
-

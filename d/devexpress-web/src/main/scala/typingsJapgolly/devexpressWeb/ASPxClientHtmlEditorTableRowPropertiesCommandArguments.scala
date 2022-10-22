@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.TABLEROWPROPERTIES_DIALOG_COMMAND command parameter.
   */
-@JSGlobal("ASPxClientHtmlEditorTableRowPropertiesCommandArguments")
-@js.native
-class ASPxClientHtmlEditorTableRowPropertiesCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorTableRowPropertiesCommandArguments class with specified settings.
-    * @param htmlEditor The html editor in which the target element is located.
-    * @param selectedElement The element currently selected in the HTML editor.
-    */
-  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorTableRowPropertiesCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
+  
   /**
     * Contains the style settings specifying the appearance of the specified table row.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
 }
-
+object ASPxClientHtmlEditorTableRowPropertiesCommandArguments {
+  
+  inline def apply(selectedElement: Any, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableRowPropertiesCommandArguments = {
+    val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesCommandArguments]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorTableRowPropertiesCommandArguments](x: Self) {
+    
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains details of a radio state change notification. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandRadioStateChange")
-@js.native
-abstract class MobileBroadbandRadioStateChange () extends js.Object {
+trait MobileBroadbandRadioStateChange extends StObject {
+  
   /** Gets the device ID of the device whose radio state changed. */
-  var deviceId: String = js.native
+  var deviceId: String
+  
   /** Gets the new state of the radio. */
-  var radioState: MobileBroadbandRadioState = js.native
+  var radioState: MobileBroadbandRadioState
 }
-
+object MobileBroadbandRadioStateChange {
+  
+  inline def apply(deviceId: String, radioState: MobileBroadbandRadioState): MobileBroadbandRadioStateChange = {
+    val __obj = js.Dynamic.literal(deviceId = deviceId.asInstanceOf[js.Any], radioState = radioState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandRadioStateChange]
+  }
+  
+  extension [Self <: MobileBroadbandRadioStateChange](x: Self) {
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setRadioState(value: MobileBroadbandRadioState): Self = StObject.set(x, "radioState", value.asInstanceOf[js.Any])
+  }
+}

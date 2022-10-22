@@ -1,59 +1,57 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EContentDownloadSourceType extends js.Object
-
+sealed trait EContentDownloadSourceType extends StObject
 @JSImport("steam-client", "EContentDownloadSourceType")
 @js.native
-object EContentDownloadSourceType extends js.Object {
-  @js.native
-  sealed trait CDN extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait CS extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait Invalid extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait LANPeer extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait LCS extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait Max extends EContentDownloadSourceType
-  
-  @js.native
-  sealed trait ProxyCache extends EContentDownloadSourceType
+object EContentDownloadSourceType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EContentDownloadSourceType with Double] = js.native
-  /* 2 */ @js.native
-  object CDN extends TopLevel[CDN with Double]
+  def apply(value: Double): js.UndefOr[EContentDownloadSourceType & Double] = js.native
   
-  /* 1 */ @js.native
-  object CS extends TopLevel[CS with Double]
+  @js.native
+  sealed trait CDN
+    extends StObject
+       with EContentDownloadSourceType
+  /* 2 */ val CDN: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.CDN & Double = js.native
   
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  @js.native
+  sealed trait CS
+    extends StObject
+       with EContentDownloadSourceType
+  /* 1 */ val CS: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.CS & Double = js.native
   
-  /* 5 */ @js.native
-  object LANPeer extends TopLevel[LANPeer with Double]
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with EContentDownloadSourceType
+  /* 0 */ val Invalid: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.Invalid & Double = js.native
   
-  /* 3 */ @js.native
-  object LCS extends TopLevel[LCS with Double]
+  @js.native
+  sealed trait LANPeer
+    extends StObject
+       with EContentDownloadSourceType
+  /* 5 */ val LANPeer: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.LANPeer & Double = js.native
   
-  /* 5 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait LCS
+    extends StObject
+       with EContentDownloadSourceType
+  /* 3 */ val LCS: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.LCS & Double = js.native
   
-  /* 4 */ @js.native
-  object ProxyCache extends TopLevel[ProxyCache with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EContentDownloadSourceType
+  /* 5 */ val Max: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.Max & Double = js.native
   
+  @js.native
+  sealed trait ProxyCache
+    extends StObject
+       with EContentDownloadSourceType
+  /* 4 */ val ProxyCache: typingsJapgolly.steamClient.mod.EContentDownloadSourceType.ProxyCache & Double = js.native
 }
-

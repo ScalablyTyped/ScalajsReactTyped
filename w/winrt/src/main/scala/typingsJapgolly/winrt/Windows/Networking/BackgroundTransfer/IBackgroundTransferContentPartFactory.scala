@@ -1,25 +1,29 @@
 package typingsJapgolly.winrt.Windows.Networking.BackgroundTransfer
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBackgroundTransferContentPartFactory extends js.Object {
+trait IBackgroundTransferContentPartFactory extends StObject {
+  
   def createWithName(name: String): BackgroundTransferContentPart
+  
   def createWithNameAndFileName(name: String, fileName: String): BackgroundTransferContentPart
 }
-
 object IBackgroundTransferContentPartFactory {
-  @scala.inline
-  def apply(
-    createWithName: String => CallbackTo[BackgroundTransferContentPart],
-    createWithNameAndFileName: (String, String) => CallbackTo[BackgroundTransferContentPart]
+  
+  inline def apply(
+    createWithName: String => BackgroundTransferContentPart,
+    createWithNameAndFileName: (String, String) => BackgroundTransferContentPart
   ): IBackgroundTransferContentPartFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWithName")(js.Any.fromFunction1((t0: java.lang.String) => createWithName(t0).runNow()))
-    __obj.updateDynamic("createWithNameAndFileName")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => createWithNameAndFileName(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(createWithName = js.Any.fromFunction1(createWithName), createWithNameAndFileName = js.Any.fromFunction2(createWithNameAndFileName))
     __obj.asInstanceOf[IBackgroundTransferContentPartFactory]
   }
+  
+  extension [Self <: IBackgroundTransferContentPartFactory](x: Self) {
+    
+    inline def setCreateWithName(value: String => BackgroundTransferContentPart): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
+    
+    inline def setCreateWithNameAndFileName(value: (String, String) => BackgroundTransferContentPart): Self = StObject.set(x, "createWithNameAndFileName", js.Any.fromFunction2(value))
+  }
 }
-

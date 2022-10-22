@@ -1,48 +1,55 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
-  extends /**
-	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * A caption for the dimension.
-  	 */
+    * A caption for the dimension.
+    */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * An array of hierarchy metadata objects.
-  	 */
+    * An array of hierarchy metadata objects.
+    */
   var hierarchies: js.UndefOr[
     js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]
   ] = js.undefined
+  
   /**
-  	 * Optional="false" A unique name for the dimension.
-  	 */
+    * Optional="false" A unique name for the dimension.
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    caption: String = null,
-    hierarchies: js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] = null,
-    name: String = null
-  ): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension = {
+  
+  inline def apply(): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (hierarchies != null) __obj.updateDynamic("hierarchies")(hierarchies.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension]
   }
+  
+  extension [Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setHierarchies(value: js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]): Self = StObject.set(x, "hierarchies", value.asInstanceOf[js.Any])
+    
+    inline def setHierarchiesUndefined: Self = StObject.set(x, "hierarchies", js.undefined)
+    
+    inline def setHierarchiesVarargs(value: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie*): Self = StObject.set(x, "hierarchies", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.fluentLangneg
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluentLangnegStrings {
-  @js.native
-  sealed trait filtering extends js.Object
   
   @js.native
-  sealed trait lookup extends js.Object
+  sealed trait filtering extends StObject
+  inline def filtering: filtering = "filtering".asInstanceOf[filtering]
   
   @js.native
-  sealed trait matching extends js.Object
+  sealed trait lookup extends StObject
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
-  @scala.inline
-  def filtering: filtering = "filtering".asInstanceOf[filtering]
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
-  @scala.inline
-  def matching: matching = "matching".asInstanceOf[matching]
+  @js.native
+  sealed trait matching extends StObject
+  inline def matching: matching = "matching".asInstanceOf[matching]
 }
-

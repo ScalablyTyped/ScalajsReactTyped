@@ -1,33 +1,49 @@
 package typingsJapgolly.fsExtra.mod
 
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadOptions extends js.Object {
-  var encoding: js.UndefOr[String] = js.undefined
+trait ReadOptions extends StObject {
+  
+  var encoding: js.UndefOr[BufferEncoding | String] = js.undefined
+  
   var flag: js.UndefOr[String] = js.undefined
+  
   var fs: js.UndefOr[js.Object] = js.undefined
-  var reviver: js.UndefOr[js.Any] = js.undefined
+  
+  var reviver: js.UndefOr[Any] = js.undefined
+  
   var throws: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReadOptions {
-  @scala.inline
-  def apply(
-    encoding: String = null,
-    flag: String = null,
-    fs: js.Object = null,
-    reviver: js.Any = null,
-    throws: js.UndefOr[Boolean] = js.undefined
-  ): ReadOptions = {
+  
+  inline def apply(): ReadOptions = {
     val __obj = js.Dynamic.literal()
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flag != null) __obj.updateDynamic("flag")(flag.asInstanceOf[js.Any])
-    if (fs != null) __obj.updateDynamic("fs")(fs.asInstanceOf[js.Any])
-    if (reviver != null) __obj.updateDynamic("reviver")(reviver.asInstanceOf[js.Any])
-    if (!js.isUndefined(throws)) __obj.updateDynamic("throws")(throws.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadOptions]
   }
+  
+  extension [Self <: ReadOptions](x: Self) {
+    
+    inline def setEncoding(value: BufferEncoding | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+    
+    inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+    
+    inline def setFs(value: js.Object): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+    
+    inline def setReviver(value: Any): Self = StObject.set(x, "reviver", value.asInstanceOf[js.Any])
+    
+    inline def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
+    
+    inline def setThrows(value: Boolean): Self = StObject.set(x, "throws", value.asInstanceOf[js.Any])
+    
+    inline def setThrowsUndefined: Self = StObject.set(x, "throws", js.undefined)
+  }
 }
-

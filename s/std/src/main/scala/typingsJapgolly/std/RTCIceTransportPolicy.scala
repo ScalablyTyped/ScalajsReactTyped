@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.all
   - typingsJapgolly.std.stdStrings.relay
 */
-trait RTCIceTransportPolicy extends js.Object
-
+trait RTCIceTransportPolicy extends StObject
 object RTCIceTransportPolicy {
-  @scala.inline
-  def all: typingsJapgolly.std.stdStrings.all = this.cast("all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def relay: typingsJapgolly.std.stdStrings.relay = this.cast("relay")
+  
+  inline def all: typingsJapgolly.std.stdStrings.all = "all".asInstanceOf[typingsJapgolly.std.stdStrings.all]
+  
+  inline def relay: typingsJapgolly.std.stdStrings.relay = "relay".asInstanceOf[typingsJapgolly.std.stdStrings.relay]
 }
-

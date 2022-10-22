@@ -1,13 +1,16 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PullInstantiatedSignatureSymbol")
 @js.native
-class PullInstantiatedSignatureSymbol protected () extends PullSignatureSymbol {
-  def this(rootSignature: PullSignatureSymbol, _typeParameterArgumentMap: TypeArgumentMap) = this()
-  var _typeParameterArgumentMap: js.Any = js.native
+trait PullInstantiatedSignatureSymbol
+  extends StObject
+     with PullSignatureSymbol {
+  
+  /* private */ var _typeParameterArgumentMap: Any = js.native
+  
+  /* InferMemberOverrides */
+  override def getIsSpecialized(): Boolean = js.native
 }
-

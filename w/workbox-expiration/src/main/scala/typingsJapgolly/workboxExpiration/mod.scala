@@ -2,25 +2,24 @@ package typingsJapgolly.workboxExpiration
 
 import typingsJapgolly.workboxExpiration.cacheExpirationMod.CacheExpirationConfig
 import typingsJapgolly.workboxExpiration.pluginMod.ExpirationPluginConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-expiration", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("workbox-expiration", "CacheExpiration")
   @js.native
-  class CacheExpiration protected ()
+  open class CacheExpiration protected ()
     extends typingsJapgolly.workboxExpiration.cacheExpirationMod.CacheExpiration {
     def this(cacheName: String) = this()
     def this(cacheName: String, config: CacheExpirationConfig) = this()
   }
   
+  @JSImport("workbox-expiration", "Plugin")
   @js.native
-  class Plugin ()
+  open class Plugin ()
     extends typingsJapgolly.workboxExpiration.pluginMod.Plugin {
     def this(config: ExpirationPluginConfig) = this()
   }
-  
 }
-

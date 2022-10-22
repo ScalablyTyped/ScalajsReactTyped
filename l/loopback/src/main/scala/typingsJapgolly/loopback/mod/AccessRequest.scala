@@ -1,8 +1,8 @@
 package typingsJapgolly.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to access protected resources.
@@ -16,22 +16,24 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "AccessRequest")
 @js.native
-class AccessRequest protected () extends js.Object {
+open class AccessRequest protected () extends StObject {
   def this(model: String, property: String, accessType: String, permission: String) = this()
+  
   /**
     * Does the given `ACL` apply to this `AccessRequest`
     * @param {ACL} acl
     */
   def exactlyMatches(acl: ACL): Unit = js.native
+  
   /**
     * Is the request for access allowed
     * @returns {boolean}
     */
   def isAllowed(): Boolean = js.native
+  
   /**
     * Does the request contain any wildcards
     * @returns {boolean}
     */
   def isWildcard(): Boolean = js.native
 }
-

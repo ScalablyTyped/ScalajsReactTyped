@@ -1,101 +1,116 @@
 package typingsJapgolly.nivoGeo.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.nivoGeo.PartialBox
-import typingsJapgolly.nivoGeo.PartialTheme
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoCore.mod.Theme
+import typingsJapgolly.nivoGeo.anon.PartialBox
 import typingsJapgolly.nivoGeo.mod.ChoroplethBoundFeature
-import typingsJapgolly.nivoGeo.mod.ChoroplethCommonProps
+import typingsJapgolly.nivoGeo.mod.ChoroplethProps
 import typingsJapgolly.nivoGeo.mod.ChoroplethTooltip
 import typingsJapgolly.nivoGeo.mod.DatumMatcher
 import typingsJapgolly.nivoGeo.mod.FeatureAccessor
 import typingsJapgolly.nivoGeo.mod.GeoProjectionType
+import typingsJapgolly.nivoLegends.distTypesTypesMod.LegendProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsiveChoropleth {
-  def apply(
-    data: js.Array[_],
-    domain: js.Array[Double],
-    features: js.Array[_],
-    borderColor: String | (FeatureAccessor[ChoroplethBoundFeature, Double]) = null,
-    borderWidth: Double | (FeatureAccessor[ChoroplethBoundFeature, Double]) = null,
-    colors: String | js.Array[String] | (FeatureAccessor[_, String]) = null,
-    enableGraticule: js.UndefOr[Boolean] = js.undefined,
-    fillColor: String | (FeatureAccessor[ChoroplethBoundFeature, String]) = null,
-    graticuleLineColor: String = null,
-    graticuleLineWidth: Int | Double = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    label: String | (FeatureAccessor[_, String]) = null,
-    margin: PartialBox = null,
-    `match`: String | DatumMatcher = null,
-    onClick: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[js.Any with Element]) => Callback = null,
-    onMouseEnter: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[js.Any with Element]) => Callback = null,
-    onMouseLeave: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[js.Any with Element]) => Callback = null,
-    onMouseMove: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[js.Any with Element]) => Callback = null,
-    projectionRotation: js.Tuple3[Double, Double, Double] = null,
-    projectionScale: Int | Double = null,
-    projectionTranslation: js.Tuple2[Double, Double] = null,
-    projectionType: GeoProjectionType = null,
-    theme: PartialTheme = null,
-    tooltip: ChoroplethTooltip = null,
-    unknownColor: String = null,
-    value: String | (FeatureAccessor[_, Double]) = null,
-    valueFormat: String | (FeatureAccessor[_, String | Double]) = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ChoroplethCommonProps, 
-    typingsJapgolly.nivoGeo.mod.ResponsiveChoropleth, 
-    Unit, 
-    ChoroplethCommonProps
-  ] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any])
   
-      if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGraticule)) __obj.updateDynamic("enableGraticule")(enableGraticule.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (graticuleLineColor != null) __obj.updateDynamic("graticuleLineColor")(graticuleLineColor.asInstanceOf[js.Any])
-    if (graticuleLineWidth != null) __obj.updateDynamic("graticuleLineWidth")(graticuleLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.nivoGeo.mod.ChoroplethBoundFeature, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onClick(t0, t1).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.nivoGeo.mod.ChoroplethBoundFeature, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onMouseEnter(t0, t1).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.nivoGeo.mod.ChoroplethBoundFeature, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onMouseLeave(t0, t1).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction2((t0: /* feature */ typingsJapgolly.nivoGeo.mod.ChoroplethBoundFeature, t1: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[js.Any with org.scalajs.dom.raw.Element]) => onMouseMove(t0, t1).runNow()))
-    if (projectionRotation != null) __obj.updateDynamic("projectionRotation")(projectionRotation.asInstanceOf[js.Any])
-    if (projectionScale != null) __obj.updateDynamic("projectionScale")(projectionScale.asInstanceOf[js.Any])
-    if (projectionTranslation != null) __obj.updateDynamic("projectionTranslation")(projectionTranslation.asInstanceOf[js.Any])
-    if (projectionType != null) __obj.updateDynamic("projectionType")(projectionType.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (unknownColor != null) __obj.updateDynamic("unknownColor")(unknownColor.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoGeo.mod.ChoroplethCommonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoGeo.mod.ResponsiveChoropleth](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoGeo.mod.ChoroplethCommonProps])(children: _*)
+  inline def apply(data: js.Array[Any], domain: js.Array[Double], features: js.Array[Any]): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ChoroplethProps]))
   }
+  
   @JSImport("@nivo/geo", "ResponsiveChoropleth")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.nivoGeo.mod.ResponsiveChoropleth] {
+    
+    inline def borderColor(value: String | (FeatureAccessor[ChoroplethBoundFeature, Double])): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderColorFunction1(value: ChoroplethBoundFeature => Double): this.type = set("borderColor", js.Any.fromFunction1(value))
+    
+    inline def borderWidth(value: Double | (FeatureAccessor[ChoroplethBoundFeature, Double])): this.type = set("borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def borderWidthFunction1(value: ChoroplethBoundFeature => Double): this.type = set("borderWidth", js.Any.fromFunction1(value))
+    
+    inline def colors(value: String | js.Array[String] | (FeatureAccessor[Any, String])): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: Any => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def enableGraticule(value: Boolean): this.type = set("enableGraticule", value.asInstanceOf[js.Any])
+    
+    inline def fillColor(value: String | (FeatureAccessor[ChoroplethBoundFeature, String])): this.type = set("fillColor", value.asInstanceOf[js.Any])
+    
+    inline def fillColorFunction1(value: ChoroplethBoundFeature => String): this.type = set("fillColor", js.Any.fromFunction1(value))
+    
+    inline def graticuleLineColor(value: String): this.type = set("graticuleLineColor", value.asInstanceOf[js.Any])
+    
+    inline def graticuleLineWidth(value: Double): this.type = set("graticuleLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String | (FeatureAccessor[Any, String])): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelFunction1(value: Any => String): this.type = set("label", js.Any.fromFunction1(value))
+    
+    inline def legends(value: js.Array[LegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: LegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def margin(value: PartialBox): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def `match`(value: String | DatumMatcher): this.type = set("match", value.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[Any & Element]) => Callback
+    ): this.type = set("onClick", js.Any.fromFunction2((t0: /* feature */ ChoroplethBoundFeature, t1: /* event */ ReactMouseEventFrom[Any & Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseEnter(
+      value: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[Any & Element]) => Callback
+    ): this.type = set("onMouseEnter", js.Any.fromFunction2((t0: /* feature */ ChoroplethBoundFeature, t1: /* event */ ReactMouseEventFrom[Any & Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseLeave(
+      value: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[Any & Element]) => Callback
+    ): this.type = set("onMouseLeave", js.Any.fromFunction2((t0: /* feature */ ChoroplethBoundFeature, t1: /* event */ ReactMouseEventFrom[Any & Element]) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseMove(
+      value: (/* feature */ ChoroplethBoundFeature, /* event */ ReactMouseEventFrom[Any & Element]) => Callback
+    ): this.type = set("onMouseMove", js.Any.fromFunction2((t0: /* feature */ ChoroplethBoundFeature, t1: /* event */ ReactMouseEventFrom[Any & Element]) => (value(t0, t1)).runNow()))
+    
+    inline def projectionRotation(value: js.Tuple3[Double, Double, Double]): this.type = set("projectionRotation", value.asInstanceOf[js.Any])
+    
+    inline def projectionScale(value: Double): this.type = set("projectionScale", value.asInstanceOf[js.Any])
+    
+    inline def projectionTranslation(value: js.Tuple2[Double, Double]): this.type = set("projectionTranslation", value.asInstanceOf[js.Any])
+    
+    inline def projectionType(value: GeoProjectionType): this.type = set("projectionType", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: ChoroplethTooltip): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def unknownColor(value: String): this.type = set("unknownColor", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String | (FeatureAccessor[Any, Double])): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueFormat(value: String | (FeatureAccessor[Any, String | Double])): this.type = set("valueFormat", value.asInstanceOf[js.Any])
+    
+    inline def valueFormatFunction1(value: Any => String | Double): this.type = set("valueFormat", js.Any.fromFunction1(value))
+    
+    inline def valueFunction1(value: Any => Double): this.type = set("value", js.Any.fromFunction1(value))
+  }
+  
+  def withProps(p: ChoroplethProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

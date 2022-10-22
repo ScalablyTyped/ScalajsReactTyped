@@ -10,10 +10,10 @@ A very polite lock file utility, which endeavors to not litter, and to wait pati
 | ------------------ | :-------------: |
 | Full name          | lockfile |
 | Keywords           | lockfile, lock, file, fs, O_EXCL |
-| # releases         | 2 |
-| # dependents       | 210 |
-| # downloads        | 30197866 |
-| # stars            | 13 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4263758.666666667 |
+| # stars            | 258.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/lockfile#readme)

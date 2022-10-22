@@ -1,13 +1,16 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/repeat", JSImport.Namespace)
-@js.native
-object operatorRepeatMod extends js.Object {
-  def repeat[T](): js.Any = js.native
-  def repeat[T](count: Double): js.Any = js.native
+object operatorRepeatMod {
+  
+  @JSImport("rxjs-compat/operator/repeat", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def repeat[T](): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")().asInstanceOf[Observable_[T]]
+  inline def repeat[T](count: Double): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(count.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
 }
-

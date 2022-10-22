@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.browserDefault
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowAlways
 */
-trait WebBrowserCookieSettings extends js.Object
-
+trait WebBrowserCookieSettings extends StObject
 object WebBrowserCookieSettings {
-  @scala.inline
-  def allowAlways: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowAlways = this.cast("allowAlways")
-  @scala.inline
-  def allowCurrentWebSite: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite = this.cast("allowCurrentWebSite")
-  @scala.inline
-  def allowFromWebsitesVisited: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited = this.cast("allowFromWebsitesVisited")
-  @scala.inline
-  def blockAlways: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAlways = this.cast("blockAlways")
-  @scala.inline
-  def browserDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.browserDefault = this.cast("browserDefault")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def allowAlways: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowAlways = "allowAlways".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowAlways]
+  
+  inline def allowCurrentWebSite: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite = "allowCurrentWebSite".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowCurrentWebSite]
+  
+  inline def allowFromWebsitesVisited: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited = "allowFromWebsitesVisited".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowFromWebsitesVisited]
+  
+  inline def blockAlways: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAlways = "blockAlways".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.blockAlways]
+  
+  inline def browserDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.browserDefault = "browserDefault".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.browserDefault]
 }
-

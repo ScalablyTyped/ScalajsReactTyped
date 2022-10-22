@@ -1,22 +1,28 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.ContentControls")
 @js.native
-class ContentControls protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.ContentControls_typekey")
-  var WordDotContentControls_typekey: ContentControls = js.native
+trait ContentControls extends StObject {
+  
   /** @param Word.WdContentControlType [Type=0] */
   def Add(): ContentControl = js.native
+  def Add(Type: Unit, Range: Any): ContentControl = js.native
   def Add(Type: WdContentControlType): ContentControl = js.native
-  def Add(Type: WdContentControlType, Range: js.Any): ContentControl = js.native
-  def Item(Index: js.Any): ContentControl = js.native
+  def Add(Type: WdContentControlType, Range: Any): ContentControl = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  def Item(Index: Any): ContentControl = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.ContentControls_typekey")
+  var WordDotContentControls_typekey: ContentControls = js.native
 }
-

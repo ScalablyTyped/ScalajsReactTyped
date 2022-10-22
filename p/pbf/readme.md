@@ -10,10 +10,10 @@ a low-level, lightweight protocol buffers implementation in JavaScript
 | ------------------ | :-------------: |
 | Full name          | pbf |
 | Keywords           | protocol, buffer, pbf, protobuf, binary, format, serialization, encoder, decoder |
-| # releases         | 3 |
-| # dependents       | 163 |
-| # downloads        | 10922548 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3885187.3333333335 |
+| # stars            | 722.0 |
 
 ## Links
 - [Homepage](https://github.com/mapbox/pbf)

@@ -1,8 +1,9 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`nautical-miles`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`us-feet`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.centimeters
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.decimeters
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.feet_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.imperial
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.inches
@@ -10,26 +11,32 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.kilometers_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.meters_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.metric
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.miles_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.millimeters
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.yards
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DistanceMeasurement2DProperties extends WidgetProperties {
+trait DistanceMeasurement2DProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
-    * Unit system (imperial, metric) or specific unit used for displaying the distance values.  **Possible Values:** metric | imperial | inches | feet | us-feet | yards | miles | nautical-miles | meters | kilometers
+    * Unit system (imperial, metric) or specific unit used for displaying the distance values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#unit)
     */
   var unit: js.UndefOr[
-    metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+    imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
   ] = js.undefined
+  
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
     *
@@ -37,49 +44,61 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
     */
   var unitOptions: js.UndefOr[
     js.Array[
-      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
+      imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
     ]
   ] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#view)
     */
   var view: js.UndefOr[MapViewProperties] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [DistanceMeasurement2DViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D-DistanceMeasurement2DViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#viewModel)
     */
-  var viewModel: js.UndefOr[DistanceMeasurement2DViewModel] = js.undefined
+  var viewModel: js.UndefOr[DistanceMeasurement2DViewModelProperties] = js.undefined
 }
-
 object DistanceMeasurement2DProperties {
-  @scala.inline
-  def apply(
-    container: String | HTMLElement = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    unit: metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_ = null,
-    unitOptions: js.Array[
-      metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-    ] = null,
-    view: MapViewProperties = null,
-    viewModel: DistanceMeasurement2DViewModel = null
-  ): DistanceMeasurement2DProperties = {
+  
+  inline def apply(): DistanceMeasurement2DProperties = {
     val __obj = js.Dynamic.literal()
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
-    if (unitOptions != null) __obj.updateDynamic("unitOptions")(unitOptions.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistanceMeasurement2DProperties]
   }
+  
+  extension [Self <: DistanceMeasurement2DProperties](x: Self) {
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setUnit(
+      value: imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
+    ): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setUnitOptions(
+      value: js.Array[
+          imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
+        ]
+    ): Self = StObject.set(x, "unitOptions", value.asInstanceOf[js.Any])
+    
+    inline def setUnitOptionsUndefined: Self = StObject.set(x, "unitOptions", js.undefined)
+    
+    inline def setUnitOptionsVarargs(
+      value: (imperial | metric | millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`)*
+    ): Self = StObject.set(x, "unitOptions", js.Array(value*))
+    
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    
+    inline def setView(value: MapViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: DistanceMeasurement2DViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

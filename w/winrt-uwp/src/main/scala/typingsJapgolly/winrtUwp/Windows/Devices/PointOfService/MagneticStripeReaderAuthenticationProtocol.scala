@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderAuthenticationProtocol extends js.Object
-
+sealed trait MagneticStripeReaderAuthenticationProtocol extends StObject
 /** Defines the constants that indicates the authentication protocol supported by the device. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderAuthenticationProtocol")
 @js.native
-object MagneticStripeReaderAuthenticationProtocol extends js.Object {
+object MagneticStripeReaderAuthenticationProtocol extends StObject {
+  
   /** The device supports challenge response protocol. */
   @js.native
-  sealed trait challengeResponse extends MagneticStripeReaderAuthenticationProtocol
+  sealed trait challengeResponse
+    extends StObject
+       with MagneticStripeReaderAuthenticationProtocol
   
   /** The device does not support device authentication. */
   @js.native
-  sealed trait none extends MagneticStripeReaderAuthenticationProtocol
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagneticStripeReaderAuthenticationProtocol with Double] = js.native
-  /* 1 */ @js.native
-  object challengeResponse extends TopLevel[challengeResponse with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  sealed trait none
+    extends StObject
+       with MagneticStripeReaderAuthenticationProtocol
 }
-

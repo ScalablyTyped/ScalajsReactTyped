@@ -1,31 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebSceneUpdateFromOptions extends Object {
+trait WebSceneUpdateFromOptions
+  extends StObject
+     with Object {
+  
   /**
     * Do not update the initial environment from the view, defaults to false.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
   var environmentExcluded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Do not update the thumbnail from the view. Defaults to true, unless viewpointExcluded is set to true.
+    * Do not update the thumbnail from the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
   var thumbnailExcluded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The size of the thumbnail. Defaults to 600x400 (ratio 1.5:1). Note that the thumbnail size may currently not be larger than the size of the view.
+    * The size of the thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#updateFrom)
     */
   var thumbnailSize: js.UndefOr[WebSceneUpdateFromOptionsThumbnailSize] = js.undefined
+  
   /**
     * Do not update the initial viewpoint from the view, defaults to false.
     *
@@ -33,26 +38,33 @@ trait WebSceneUpdateFromOptions extends Object {
     */
   var viewpointExcluded: js.UndefOr[Boolean] = js.undefined
 }
-
 object WebSceneUpdateFromOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    environmentExcluded: js.UndefOr[Boolean] = js.undefined,
-    thumbnailExcluded: js.UndefOr[Boolean] = js.undefined,
-    thumbnailSize: WebSceneUpdateFromOptionsThumbnailSize = null,
-    viewpointExcluded: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): WebSceneUpdateFromOptions = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (!js.isUndefined(environmentExcluded)) __obj.updateDynamic("environmentExcluded")(environmentExcluded.asInstanceOf[js.Any])
-    if (!js.isUndefined(thumbnailExcluded)) __obj.updateDynamic("thumbnailExcluded")(thumbnailExcluded.asInstanceOf[js.Any])
-    if (thumbnailSize != null) __obj.updateDynamic("thumbnailSize")(thumbnailSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(viewpointExcluded)) __obj.updateDynamic("viewpointExcluded")(viewpointExcluded.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[WebSceneUpdateFromOptions]
   }
+  
+  extension [Self <: WebSceneUpdateFromOptions](x: Self) {
+    
+    inline def setEnvironmentExcluded(value: Boolean): Self = StObject.set(x, "environmentExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentExcludedUndefined: Self = StObject.set(x, "environmentExcluded", js.undefined)
+    
+    inline def setThumbnailExcluded(value: Boolean): Self = StObject.set(x, "thumbnailExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailExcludedUndefined: Self = StObject.set(x, "thumbnailExcluded", js.undefined)
+    
+    inline def setThumbnailSize(value: WebSceneUpdateFromOptionsThumbnailSize): Self = StObject.set(x, "thumbnailSize", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailSizeUndefined: Self = StObject.set(x, "thumbnailSize", js.undefined)
+    
+    inline def setViewpointExcluded(value: Boolean): Self = StObject.set(x, "viewpointExcluded", value.asInstanceOf[js.Any])
+    
+    inline def setViewpointExcludedUndefined: Self = StObject.set(x, "viewpointExcluded", js.undefined)
+  }
 }
-

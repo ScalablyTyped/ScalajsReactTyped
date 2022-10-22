@@ -1,44 +1,36 @@
 package typingsJapgolly.parcelBundler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parcelBundlerStrings {
-  @js.native
-  sealed trait browser extends js.Object
   
   @js.native
-  sealed trait buildEnd extends js.Object
+  sealed trait browser extends StObject
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
-  sealed trait buildError extends js.Object
+  sealed trait buildEnd extends StObject
+  inline def buildEnd: buildEnd = "buildEnd".asInstanceOf[buildEnd]
   
   @js.native
-  sealed trait buildStart extends js.Object
+  sealed trait buildError extends StObject
+  inline def buildError: buildError = "buildError".asInstanceOf[buildError]
   
   @js.native
-  sealed trait bundled extends js.Object
+  sealed trait buildStart extends StObject
+  inline def buildStart: buildStart = "buildStart".asInstanceOf[buildStart]
   
   @js.native
-  sealed trait electron extends js.Object
+  sealed trait bundled extends StObject
+  inline def bundled: bundled = "bundled".asInstanceOf[bundled]
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait electron extends StObject
+  inline def electron: electron = "electron".asInstanceOf[electron]
   
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def buildEnd: buildEnd = "buildEnd".asInstanceOf[buildEnd]
-  @scala.inline
-  def buildError: buildError = "buildError".asInstanceOf[buildError]
-  @scala.inline
-  def buildStart: buildStart = "buildStart".asInstanceOf[buildStart]
-  @scala.inline
-  def bundled: bundled = "bundled".asInstanceOf[bundled]
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  @js.native
+  sealed trait node extends StObject
+  inline def node: node = "node".asInstanceOf[node]
 }
-

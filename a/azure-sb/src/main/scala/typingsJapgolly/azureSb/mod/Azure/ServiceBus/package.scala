@@ -1,30 +1,28 @@
-package typingsJapgolly.azureSb.mod.Azure
+package typingsJapgolly.azureSb.mod.Azure.ServiceBus
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.Base
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ServiceBus {
-  type DateString = java.lang.String
-  type Dictionary[T] = org.scalablytyped.runtime.StringDictionary[T]
-  type Duration = java.lang.String
-  type MessageOrName = typingsJapgolly.azureSb.mod.Azure.ServiceBus.Message | java.lang.String
-  type ReceiveSubscriptionMessageOptions = typingsJapgolly.azureSb.mod.Azure.ServiceBus.ReceiveQueueMessageOptions
-  type ResponseCallback = js.Function2[
-    /* error */ js.Error | scala.Null, 
-    /* response */ typingsJapgolly.azureSb.mod.Azure.ServiceBus.Response, 
-    scala.Unit
-  ]
-  type ResultAndResponseCallback = js.Function3[
-    /* error */ js.Error | scala.Null, 
-    /* result */ scala.Boolean | typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.Base | js.Array[typingsJapgolly.azureSb.mod.Azure.ServiceBus.Results.Models.Base], 
-    /* response */ typingsJapgolly.azureSb.mod.Azure.ServiceBus.Response, 
-    scala.Unit
-  ]
-  type TypedResultAndResponseCallback[T] = js.Function3[
-    /* error */ js.Error | scala.Null, 
-    /* result */ T, 
-    /* response */ typingsJapgolly.azureSb.mod.Azure.ServiceBus.Response, 
-    scala.Unit
-  ]
-}
+
+type DateString = String
+
+type Dictionary[T] = StringDictionary[T]
+
+type Duration = String
+
+type MessageOrName = Message | String
+
+type ReceiveSubscriptionMessageOptions = ReceiveQueueMessageOptions
+
+type ResponseCallback = js.Function2[/* error */ js.Error | Null, /* response */ Response, Unit]
+
+type ResultAndResponseCallback = js.Function3[
+/* error */ js.Error | Null, 
+/* result */ Boolean | Base | js.Array[Base], 
+/* response */ Response, 
+Unit]
+
+type TypedResultAndResponseCallback[T] = js.Function3[/* error */ js.Error | Null, /* result */ T, /* response */ Response, Unit]

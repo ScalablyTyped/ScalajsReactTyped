@@ -1,11 +1,10 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.configMod.APIVersions
-import typingsJapgolly.awsSdk.configMod.ConfigurationOptions
-import typingsJapgolly.awsSdk.configServicePlaceholdersMod.ConfigurationServicePlaceholders
+import typingsJapgolly.awsSdk.libConfigMod.APIVersions
+import typingsJapgolly.awsSdk.libConfigServicePlaceholdersMod.ConfigurationServicePlaceholders
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Config")
 @js.native
@@ -13,8 +12,7 @@ import scala.scalajs.js.annotation._
   * Creates a new configuration object.
   * This is the object that passes option data along to service requests, including credentials, security, region information, and some service specific settings.
   */
-class Config_ ()
+open class Config_ ()
   extends typingsJapgolly.awsSdk.mod.Config_ {
-  def this(options: ConfigurationOptions with ConfigurationServicePlaceholders with APIVersions) = this()
+  def this(options: typingsJapgolly.awsSdk.libConfigBaseMod.ConfigurationOptions & ConfigurationServicePlaceholders & APIVersions) = this()
 }
-

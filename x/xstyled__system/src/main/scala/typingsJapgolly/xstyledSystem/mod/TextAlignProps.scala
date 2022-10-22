@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.TextAlignProperty
+import typingsJapgolly.csstype.mod.Property.TextAlign
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextAlignProps extends js.Object {
-  val textAlign: js.UndefOr[ResponsiveValue[TextAlignProperty]] = js.undefined
+trait TextAlignProps extends StObject {
+  
+  val textAlign: js.UndefOr[ResponsiveValue[TextAlign]] = js.undefined
 }
-
 object TextAlignProps {
-  @scala.inline
-  def apply(textAlign: ResponsiveValue[TextAlignProperty] = null): TextAlignProps = {
+  
+  inline def apply(): TextAlignProps = {
     val __obj = js.Dynamic.literal()
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAlignProps]
   }
+  
+  extension [Self <: TextAlignProps](x: Self) {
+    
+    inline def setTextAlign(value: ResponsiveValue[TextAlign]): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextAlignVarargs(value: TextAlign*): Self = StObject.set(x, "textAlign", js.Array(value*))
+  }
 }
-

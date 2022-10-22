@@ -1,50 +1,76 @@
 package typingsJapgolly.jqueryAjaxfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MochaSetupOptions extends js.Object {
+trait MochaSetupOptions extends StObject {
+  
   // bail on the first test failure
   var bail: js.UndefOr[Boolean] = js.undefined
+  
   //array of accepted globals
-  var globals: js.UndefOr[js.Array[_]] = js.undefined
+  var globals: js.UndefOr[js.Array[Any]] = js.undefined
+  
   // grep string or regexp to filter tests with
-  var grep: js.UndefOr[js.Any] = js.undefined
+  var grep: js.UndefOr[Any] = js.undefined
+  
   // ignore global leaks
   var ignoreLeaks: js.UndefOr[Boolean] = js.undefined
+  
   // reporter instance (function or string), defaults to `mocha.reporters.Spec`
-  var reporter: js.UndefOr[js.Any] = js.undefined
+  var reporter: js.UndefOr[Any] = js.undefined
+  
   //milliseconds to wait before considering a test slow
   var slow: js.UndefOr[Double] = js.undefined
+  
   // timeout in milliseconds
   var timeout: js.UndefOr[Double] = js.undefined
+  
   // ui name "bdd", "tdd", "exports" etc
   var ui: js.UndefOr[String] = js.undefined
 }
-
 object MochaSetupOptions {
-  @scala.inline
-  def apply(
-    bail: js.UndefOr[Boolean] = js.undefined,
-    globals: js.Array[_] = null,
-    grep: js.Any = null,
-    ignoreLeaks: js.UndefOr[Boolean] = js.undefined,
-    reporter: js.Any = null,
-    slow: Int | Double = null,
-    timeout: Int | Double = null,
-    ui: String = null
-  ): MochaSetupOptions = {
+  
+  inline def apply(): MochaSetupOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail.asInstanceOf[js.Any])
-    if (globals != null) __obj.updateDynamic("globals")(globals.asInstanceOf[js.Any])
-    if (grep != null) __obj.updateDynamic("grep")(grep.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (slow != null) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaSetupOptions]
   }
+  
+  extension [Self <: MochaSetupOptions](x: Self) {
+    
+    inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
+    
+    inline def setBailUndefined: Self = StObject.set(x, "bail", js.undefined)
+    
+    inline def setGlobals(value: js.Array[Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)
+    
+    inline def setGlobalsVarargs(value: Any*): Self = StObject.set(x, "globals", js.Array(value*))
+    
+    inline def setGrep(value: Any): Self = StObject.set(x, "grep", value.asInstanceOf[js.Any])
+    
+    inline def setGrepUndefined: Self = StObject.set(x, "grep", js.undefined)
+    
+    inline def setIgnoreLeaks(value: Boolean): Self = StObject.set(x, "ignoreLeaks", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreLeaksUndefined: Self = StObject.set(x, "ignoreLeaks", js.undefined)
+    
+    inline def setReporter(value: Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    
+    inline def setSlow(value: Double): Self = StObject.set(x, "slow", value.asInstanceOf[js.Any])
+    
+    inline def setSlowUndefined: Self = StObject.set(x, "slow", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUi(value: String): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+  }
 }
-

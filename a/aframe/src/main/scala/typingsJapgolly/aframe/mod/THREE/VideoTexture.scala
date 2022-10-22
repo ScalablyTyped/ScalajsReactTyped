@@ -1,19 +1,31 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import org.scalajs.dom.raw.HTMLVideoElement
-import typingsJapgolly.three.constantsMod.Mapping
-import typingsJapgolly.three.constantsMod.PixelFormat
-import typingsJapgolly.three.constantsMod.TextureDataType
-import typingsJapgolly.three.constantsMod.TextureFilter
-import typingsJapgolly.three.constantsMod.Wrapping
+import org.scalajs.dom.HTMLVideoElement
+import typingsJapgolly.three.srcConstantsMod.Mapping
+import typingsJapgolly.three.srcConstantsMod.PixelFormat
+import typingsJapgolly.three.srcConstantsMod.TextureDataType
+import typingsJapgolly.three.srcConstantsMod.TextureFilter
+import typingsJapgolly.three.srcConstantsMod.Wrapping
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.VideoTexture")
 @js.native
-class VideoTexture protected ()
+open class VideoTexture protected ()
   extends typingsJapgolly.three.mod.VideoTexture {
+  /**
+    * @param video
+    * @param [mapping=THREE.Texture.DEFAULT_MAPPING]
+    * @param [wrapS=THREE.ClampToEdgeWrapping]
+    * @param [wrapT=THREE.ClampToEdgeWrapping]
+    * @param [magFilter=THREE.LinearFilter]
+    * @param [minFilter=THREE.LinearFilter]
+    * @param [format=THREE.RGBAFormat]
+    * @param [type=THREE.UnsignedByteType]
+    * @param [anisotropy=1]
+    */
   def this(
     video: HTMLVideoElement,
     mapping: js.UndefOr[Mapping],
@@ -26,4 +38,3 @@ class VideoTexture protected ()
     anisotropy: js.UndefOr[Double]
   ) = this()
 }
-

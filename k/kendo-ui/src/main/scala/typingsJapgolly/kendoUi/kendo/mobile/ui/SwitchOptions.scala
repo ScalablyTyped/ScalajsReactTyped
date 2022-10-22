@@ -1,37 +1,55 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchOptions extends js.Object {
+trait SwitchOptions extends StObject {
+  
   var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.undefined
+  
   var checked: js.UndefOr[Boolean] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var offLabel: js.UndefOr[String] = js.undefined
+  
   var onLabel: js.UndefOr[String] = js.undefined
 }
-
 object SwitchOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ SwitchChangeEvent => Callback = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    offLabel: String = null,
-    onLabel: String = null
-  ): SwitchOptions = {
+  
+  inline def apply(): SwitchOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.SwitchChangeEvent) => change(t0).runNow()))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (offLabel != null) __obj.updateDynamic("offLabel")(offLabel.asInstanceOf[js.Any])
-    if (onLabel != null) __obj.updateDynamic("onLabel")(onLabel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOptions]
   }
+  
+  extension [Self <: SwitchOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ SwitchChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ SwitchChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOffLabel(value: String): Self = StObject.set(x, "offLabel", value.asInstanceOf[js.Any])
+    
+    inline def setOffLabelUndefined: Self = StObject.set(x, "offLabel", js.undefined)
+    
+    inline def setOnLabel(value: String): Self = StObject.set(x, "onLabel", value.asInstanceOf[js.Any])
+    
+    inline def setOnLabelUndefined: Self = StObject.set(x, "onLabel", js.undefined)
+  }
 }
-

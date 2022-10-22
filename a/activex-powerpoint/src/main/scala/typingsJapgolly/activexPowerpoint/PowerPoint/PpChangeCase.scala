@@ -1,35 +1,31 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
 */
-trait PpChangeCase extends js.Object
-
+trait PpChangeCase extends StObject
 object PpChangeCase {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppCaseLower: `2` = this.cast(2)
-  @scala.inline
-  def ppCaseSentence: `1` = this.cast(1)
-  @scala.inline
-  def ppCaseTitle: `4` = this.cast(4)
-  @scala.inline
-  def ppCaseToggle: `5` = this.cast(5)
-  @scala.inline
-  def ppCaseUpper: `3` = this.cast(3)
+  
+  inline def ppCaseLower: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppCaseSentence: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppCaseTitle: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppCaseToggle: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppCaseUpper: `3` = 3.asInstanceOf[`3`]
 }
-

@@ -1,32 +1,28 @@
 package typingsJapgolly.activexMsxml2.MSXML2
 
-import typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`0`
-import typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`1`
-import typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`2`
-import typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`3`
+import typingsJapgolly.activexMsxml2.activexMsxml2Ints.`0`
+import typingsJapgolly.activexMsxml2.activexMsxml2Ints.`1`
+import typingsJapgolly.activexMsxml2.activexMsxml2Ints.`2`
+import typingsJapgolly.activexMsxml2.activexMsxml2Ints.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Schema Object Model Process Contents */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`2`
-  - typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`0`
-  - typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`1`
-  - typingsJapgolly.activexMsxml2.activexMsxml2Numbers.`3`
+  - typingsJapgolly.activexMsxml2.activexMsxml2Ints.`2`
+  - typingsJapgolly.activexMsxml2.activexMsxml2Ints.`0`
+  - typingsJapgolly.activexMsxml2.activexMsxml2Ints.`1`
+  - typingsJapgolly.activexMsxml2.activexMsxml2Ints.`3`
 */
-trait _SCHEMAPROCESSCONTENTS extends js.Object
-
+trait _SCHEMAPROCESSCONTENTS extends StObject
 object _SCHEMAPROCESSCONTENTS {
-  @scala.inline
-  def SCHEMAPROCESSCONTENTS_LAX: `2` = this.cast(2)
-  @scala.inline
-  def SCHEMAPROCESSCONTENTS_NONE: `0` = this.cast(0)
-  @scala.inline
-  def SCHEMAPROCESSCONTENTS_SKIP: `1` = this.cast(1)
-  @scala.inline
-  def SCHEMAPROCESSCONTENTS_STRICT: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def SCHEMAPROCESSCONTENTS_LAX: `2` = 2.asInstanceOf[`2`]
+  
+  inline def SCHEMAPROCESSCONTENTS_NONE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def SCHEMAPROCESSCONTENTS_SKIP: `1` = 1.asInstanceOf[`1`]
+  
+  inline def SCHEMAPROCESSCONTENTS_STRICT: `3` = 3.asInstanceOf[`3`]
 }
-

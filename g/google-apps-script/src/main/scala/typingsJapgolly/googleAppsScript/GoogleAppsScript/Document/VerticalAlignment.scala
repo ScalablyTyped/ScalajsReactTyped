@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalAlignment extends js.Object
-
+sealed trait VerticalAlignment extends StObject
 /**
   * An enumeration of the supported vertical alignment types.
   *
@@ -29,26 +27,20 @@ sealed trait VerticalAlignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.VerticalAlignment")
 @js.native
-object VerticalAlignment extends js.Object {
-  @js.native
-  sealed trait BOTTOM extends VerticalAlignment
+object VerticalAlignment extends StObject {
   
   @js.native
-  sealed trait CENTER extends VerticalAlignment
+  sealed trait BOTTOM
+    extends StObject
+       with VerticalAlignment
   
   @js.native
-  sealed trait TOP extends VerticalAlignment
+  sealed trait CENTER
+    extends StObject
+       with VerticalAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VerticalAlignment with Double] = js.native
-  /* 0 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
-  
-  /* 1 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
-  
-  /* 2 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
-  
+  @js.native
+  sealed trait TOP
+    extends StObject
+       with VerticalAlignment
 }
-

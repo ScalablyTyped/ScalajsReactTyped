@@ -10,15 +10,12 @@ QR Code Generator implementation in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | qrcode-generator |
 | Keywords           | qr, qrcode, generator |
-| # releases         | 6 |
-| # dependents       | 51 |
-| # downloads        | 356431 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 277044.6666666667 |
+| # stars            | 1790.0 |
 
 ## Links
-- [Homepage](https://github.com/kazuhikoarase/qrcode-generator#readme)
-- [Bugs](https://github.com/kazuhikoarase/qrcode-generator/issues)
-- [Repository](https://github.com/kazuhikoarase/qrcode-generator)
 - [Npm](https://www.npmjs.com/package/qrcode-generator)
     
 

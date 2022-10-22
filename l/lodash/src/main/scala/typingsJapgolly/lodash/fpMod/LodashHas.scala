@@ -2,14 +2,14 @@ package typingsJapgolly.lodash.fpMod
 
 import typingsJapgolly.lodash.mod.PropertyPath
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashHas extends js.Object {
+trait LodashHas extends StObject {
+  
   def apply(path: PropertyPath): LodashHas1x1 = js.native
   def apply[T](path: PropertyPath, `object`: T): Boolean = js.native
   def apply[T](path: __, `object`: T): LodashHas1x2 = js.native
 }
-

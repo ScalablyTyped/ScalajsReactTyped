@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4135`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4135`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4142`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4135`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4142`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4135`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4142`
 */
-trait XlPageBreak extends js.Object
-
+trait XlPageBreak extends StObject
 object XlPageBreak {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlPageBreakAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlPageBreakManual: `-4135` = this.cast(-4135)
-  @scala.inline
-  def xlPageBreakNone: `-4142` = this.cast(-4142)
+  
+  inline def xlPageBreakAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlPageBreakManual: `-4135` = -4135.asInstanceOf[`-4135`]
+  
+  inline def xlPageBreakNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }
-

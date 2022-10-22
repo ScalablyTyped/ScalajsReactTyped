@@ -1,30 +1,39 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookProperties extends js.Object {
+trait WorkbookProperties extends StObject {
+  
   /** Name of Document Module in associated VBA Project */
   var CodeName: js.UndefOr[String] = js.undefined
+  
   /** Worksheet Epoch (1904 if true, 1900 if false) */
   var date1904: js.UndefOr[Boolean] = js.undefined
+  
   /** Warn or strip personally identifying info on save */
   var filterPrivacy: js.UndefOr[Boolean] = js.undefined
 }
-
 object WorkbookProperties {
-  @scala.inline
-  def apply(
-    CodeName: String = null,
-    date1904: js.UndefOr[Boolean] = js.undefined,
-    filterPrivacy: js.UndefOr[Boolean] = js.undefined
-  ): WorkbookProperties = {
+  
+  inline def apply(): WorkbookProperties = {
     val __obj = js.Dynamic.literal()
-    if (CodeName != null) __obj.updateDynamic("CodeName")(CodeName.asInstanceOf[js.Any])
-    if (!js.isUndefined(date1904)) __obj.updateDynamic("date1904")(date1904.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterPrivacy)) __obj.updateDynamic("filterPrivacy")(filterPrivacy.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookProperties]
   }
+  
+  extension [Self <: WorkbookProperties](x: Self) {
+    
+    inline def setCodeName(value: String): Self = StObject.set(x, "CodeName", value.asInstanceOf[js.Any])
+    
+    inline def setCodeNameUndefined: Self = StObject.set(x, "CodeName", js.undefined)
+    
+    inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
+    
+    inline def setDate1904Undefined: Self = StObject.set(x, "date1904", js.undefined)
+    
+    inline def setFilterPrivacy(value: Boolean): Self = StObject.set(x, "filterPrivacy", value.asInstanceOf[js.Any])
+    
+    inline def setFilterPrivacyUndefined: Self = StObject.set(x, "filterPrivacy", js.undefined)
+  }
 }
-

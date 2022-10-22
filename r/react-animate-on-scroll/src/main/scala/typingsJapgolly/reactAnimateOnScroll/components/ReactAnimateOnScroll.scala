@@ -1,56 +1,52 @@
 package typingsJapgolly.reactAnimateOnScroll.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactAnimateOnScroll.mod.ScrollAnimationProps
+import typingsJapgolly.reactAnimateOnScroll.mod.VisibleType
 import typingsJapgolly.reactAnimateOnScroll.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactAnimateOnScroll {
-  def apply(
-    animateIn: String = null,
-    animateOnce: js.UndefOr[Boolean] = js.undefined,
-    animateOut: String = null,
-    className: String = null,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    initiallyVisible: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    scrollableParentSelector: String = null,
-    style: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ScrollAnimationProps, default, Unit, ScrollAnimationProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animateIn != null) __obj.updateDynamic("animateIn")(animateIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(animateOnce)) __obj.updateDynamic("animateOnce")(animateOnce.asInstanceOf[js.Any])
-    if (animateOut != null) __obj.updateDynamic("animateOut")(animateOut.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(initiallyVisible)) __obj.updateDynamic("initiallyVisible")(initiallyVisible.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (scrollableParentSelector != null) __obj.updateDynamic("scrollableParentSelector")(scrollableParentSelector.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAnimateOnScroll.mod.ScrollAnimationProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAnimateOnScroll.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAnimateOnScroll.mod.ScrollAnimationProps])(children: _*)
-  }
   @JSImport("react-animate-on-scroll", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def afterAnimatedIn(value: /* visibile */ VisibleType => js.UndefOr[js.Object]): this.type = set("afterAnimatedIn", js.Any.fromFunction1(value))
+    
+    inline def afterAnimatedOut(value: /* visibile */ VisibleType => js.UndefOr[js.Object]): this.type = set("afterAnimatedOut", js.Any.fromFunction1(value))
+    
+    inline def animateIn(value: String): this.type = set("animateIn", value.asInstanceOf[js.Any])
+    
+    inline def animateOnce(value: Boolean): this.type = set("animateOnce", value.asInstanceOf[js.Any])
+    
+    inline def animateOut(value: String): this.type = set("animateOut", value.asInstanceOf[js.Any])
+    
+    inline def animatePreScroll(value: Boolean): this.type = set("animatePreScroll", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def delay(value: Double): this.type = set("delay", value.asInstanceOf[js.Any])
+    
+    inline def duration(value: Double): this.type = set("duration", value.asInstanceOf[js.Any])
+    
+    inline def initiallyVisible(value: Boolean): this.type = set("initiallyVisible", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Double): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def scrollableParentSelector(value: String): this.type = set("scrollableParentSelector", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactAnimateOnScroll.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ScrollAnimationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

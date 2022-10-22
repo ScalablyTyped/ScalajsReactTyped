@@ -1,39 +1,35 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSTypeParameterInstantiation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TSTypeParameterInstantiation_
-  extends BaseNode
-     with _Node {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSTypeParameterInstantiation_
+  extends StObject
+     with BaseNode
+     with TypeScript {
+  
   var params: js.Array[TSType]
+  
   @JSName("type")
   var type_TSTypeParameterInstantiation_ : TSTypeParameterInstantiation
 }
-
 object TSTypeParameterInstantiation_ {
-  @scala.inline
-  def apply(
-    params: js.Array[TSType],
-    `type`: TSTypeParameterInstantiation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TSTypeParameterInstantiation_ = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(params: js.Array[TSType]): TSTypeParameterInstantiation_ = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeParameterInstantiation")
     __obj.asInstanceOf[TSTypeParameterInstantiation_]
   }
+  
+  extension [Self <: TSTypeParameterInstantiation_](x: Self) {
+    
+    inline def setParams(value: js.Array[TSType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsVarargs(value: TSType*): Self = StObject.set(x, "params", js.Array(value*))
+    
+    inline def setType(value: TSTypeParameterInstantiation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

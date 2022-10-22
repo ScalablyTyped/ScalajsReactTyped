@@ -1,20 +1,46 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.ScopeId
-  * @classdesc The scope for a variable.
-  * @param {string} name - The variable name.
-  * @property {string} name The variable name.
+  * The scope for a variable.
   */
 @JSImport("playcanvas", "ScopeId")
 @js.native
-class ScopeId protected ()
-  extends typingsJapgolly.playcanvas.pc.ScopeId {
+open class ScopeId protected () extends StObject {
+  /**
+    * Create a new ScopeId instance.
+    *
+    * @param {string} name - The variable name.
+    */
   def this(name: String) = this()
+  
+  /**
+    * Get variable value.
+    *
+    * @returns {*} The value.
+    */
+  def getValue(): Any = js.native
+  
+  /**
+    * The variable name.
+    *
+    * @type {string}
+    */
+  var name: String = js.native
+  
+  /**
+    * Set variable value.
+    *
+    * @param {*} value - The value.
+    */
+  def setValue(value: Any): Unit = js.native
+  
+  def toJSON(key: Any): Any = js.native
+  
+  var value: Any = js.native
+  
+  var versionObject: VersionedObject = js.native
 }
-

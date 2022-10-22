@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-shell
 
-Typings are for version 0.7.1
+Typings are for version 0.8.0
 
 ## Library description:
 A handy command line interface for gulp
@@ -10,10 +10,10 @@ A handy command line interface for gulp
 | ------------------ | :-------------: |
 | Full name          | gulp-shell |
 | Keywords           | gulpplugin, gulp, shell, command |
-| # releases         | 3 |
-| # dependents       | 385 |
-| # downloads        | 4744866 |
-| # stars            | 83 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 314870.0 |
+| # stars            | 478.0 |
 
 ## Links
 - [Homepage](https://github.com/sun-zheng-an/gulp-shell)

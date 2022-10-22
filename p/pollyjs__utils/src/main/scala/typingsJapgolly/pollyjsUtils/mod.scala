@@ -1,105 +1,104 @@
 package typingsJapgolly.pollyjsUtils
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pollyjs/utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  sealed trait ACTIONS extends js.Object
+object mod {
   
   @js.native
-  sealed trait EXPIRY_STRATEGIES extends js.Object
-  
+  sealed trait ACTIONS extends StObject
+  @JSImport("@pollyjs/utils", "ACTIONS")
   @js.native
-  sealed trait MODES extends js.Object
-  
-  @js.native
-  object ACTIONS extends js.Object {
-    @js.native
-    sealed trait INTERCEPT extends ACTIONS
-    
-    @js.native
-    sealed trait PASSTHROUGH extends ACTIONS
-    
-    @js.native
-    sealed trait RECORD extends ACTIONS
-    
-    @js.native
-    sealed trait REPLAY extends ACTIONS
+  object ACTIONS extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ACTIONS with String] = js.native
-    /* "intercept" */ @js.native
-    object INTERCEPT extends TopLevel[INTERCEPT with String]
+    def apply(value: String): js.UndefOr[ACTIONS & String] = js.native
     
-    /* "passthrough" */ @js.native
-    object PASSTHROUGH extends TopLevel[PASSTHROUGH with String]
+    @js.native
+    sealed trait INTERCEPT
+      extends StObject
+         with ACTIONS
+    /* "intercept" */ val INTERCEPT: typingsJapgolly.pollyjsUtils.mod.ACTIONS.INTERCEPT & String = js.native
     
-    /* "record" */ @js.native
-    object RECORD extends TopLevel[RECORD with String]
+    @js.native
+    sealed trait PASSTHROUGH
+      extends StObject
+         with ACTIONS
+    /* "passthrough" */ val PASSTHROUGH: typingsJapgolly.pollyjsUtils.mod.ACTIONS.PASSTHROUGH & String = js.native
     
-    /* "replay" */ @js.native
-    object REPLAY extends TopLevel[REPLAY with String]
+    @js.native
+    sealed trait RECORD
+      extends StObject
+         with ACTIONS
+    /* "record" */ val RECORD: typingsJapgolly.pollyjsUtils.mod.ACTIONS.RECORD & String = js.native
     
+    @js.native
+    sealed trait REPLAY
+      extends StObject
+         with ACTIONS
+    /* "replay" */ val REPLAY: typingsJapgolly.pollyjsUtils.mod.ACTIONS.REPLAY & String = js.native
   }
   
   @js.native
-  object EXPIRY_STRATEGIES extends js.Object {
-    @js.native
-    sealed trait ERROR extends EXPIRY_STRATEGIES
-    
-    @js.native
-    sealed trait RECORD extends EXPIRY_STRATEGIES
-    
-    @js.native
-    sealed trait WARN extends EXPIRY_STRATEGIES
+  sealed trait EXPIRY_STRATEGIES extends StObject
+  @JSImport("@pollyjs/utils", "EXPIRY_STRATEGIES")
+  @js.native
+  object EXPIRY_STRATEGIES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[EXPIRY_STRATEGIES with String] = js.native
-    /* "error" */ @js.native
-    object ERROR extends TopLevel[ERROR with String]
+    def apply(value: String): js.UndefOr[EXPIRY_STRATEGIES & String] = js.native
     
-    /* "record" */ @js.native
-    object RECORD extends TopLevel[RECORD with String]
+    @js.native
+    sealed trait ERROR
+      extends StObject
+         with EXPIRY_STRATEGIES
+    /* "error" */ val ERROR: typingsJapgolly.pollyjsUtils.mod.EXPIRY_STRATEGIES.ERROR & String = js.native
     
-    /* "warn" */ @js.native
-    object WARN extends TopLevel[WARN with String]
+    @js.native
+    sealed trait RECORD
+      extends StObject
+         with EXPIRY_STRATEGIES
+    /* "record" */ val RECORD: typingsJapgolly.pollyjsUtils.mod.EXPIRY_STRATEGIES.RECORD & String = js.native
     
+    @js.native
+    sealed trait WARN
+      extends StObject
+         with EXPIRY_STRATEGIES
+    /* "warn" */ val WARN: typingsJapgolly.pollyjsUtils.mod.EXPIRY_STRATEGIES.WARN & String = js.native
   }
   
   @js.native
-  object MODES extends js.Object {
-    @js.native
-    sealed trait PASSTHROUGH extends MODES
-    
-    @js.native
-    sealed trait RECORD extends MODES
-    
-    @js.native
-    sealed trait REPLAY extends MODES
-    
-    @js.native
-    sealed trait STOPPED extends MODES
+  sealed trait MODES extends StObject
+  @JSImport("@pollyjs/utils", "MODES")
+  @js.native
+  object MODES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MODES with String] = js.native
-    /* "passthrough" */ @js.native
-    object PASSTHROUGH extends TopLevel[PASSTHROUGH with String]
+    def apply(value: String): js.UndefOr[MODES & String] = js.native
     
-    /* "record" */ @js.native
-    object RECORD extends TopLevel[RECORD with String]
+    @js.native
+    sealed trait PASSTHROUGH
+      extends StObject
+         with MODES
+    /* "passthrough" */ val PASSTHROUGH: typingsJapgolly.pollyjsUtils.mod.MODES.PASSTHROUGH & String = js.native
     
-    /* "replay" */ @js.native
-    object REPLAY extends TopLevel[REPLAY with String]
+    @js.native
+    sealed trait RECORD
+      extends StObject
+         with MODES
+    /* "record" */ val RECORD: typingsJapgolly.pollyjsUtils.mod.MODES.RECORD & String = js.native
     
-    /* "stopped" */ @js.native
-    object STOPPED extends TopLevel[STOPPED with String]
+    @js.native
+    sealed trait REPLAY
+      extends StObject
+         with MODES
+    /* "replay" */ val REPLAY: typingsJapgolly.pollyjsUtils.mod.MODES.REPLAY & String = js.native
     
+    @js.native
+    sealed trait STOPPED
+      extends StObject
+         with MODES
+    /* "stopped" */ val STOPPED: typingsJapgolly.pollyjsUtils.mod.MODES.STOPPED & String = js.native
   }
-  
 }
-

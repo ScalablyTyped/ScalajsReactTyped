@@ -3,47 +3,82 @@ package typingsJapgolly.node.netMod
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.node.NodeJS.ErrnoException
 import typingsJapgolly.node.dnsMod.LookupOneOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TcpSocketConnectOpts
-  extends ConnectOpts
+  extends StObject
+     with ConnectOpts
      with SocketConnectOpts {
+  
   var family: js.UndefOr[Double] = js.undefined
+  
   var hints: js.UndefOr[Double] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
+  
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
+  
+  var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
+  
   var localAddress: js.UndefOr[String] = js.undefined
+  
   var localPort: js.UndefOr[Double] = js.undefined
+  
   var lookup: js.UndefOr[LookupFunction] = js.undefined
+  
+  var noDelay: js.UndefOr[Boolean] = js.undefined
+  
   var port: Double
 }
-
 object TcpSocketConnectOpts {
-  @scala.inline
-  def apply(
-    port: Double,
-    family: Int | Double = null,
-    hints: Int | Double = null,
-    host: String = null,
-    localAddress: String = null,
-    localPort: Int | Double = null,
-    lookup: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Callback = null,
-    onread: OnReadOpts = null
-  ): TcpSocketConnectOpts = {
+  
+  inline def apply(port: Double): TcpSocketConnectOpts = {
     val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (localPort != null) __obj.updateDynamic("localPort")(localPort.asInstanceOf[js.Any])
-    if (lookup != null) __obj.updateDynamic("lookup")(js.Any.fromFunction3((t0: /* hostname */ java.lang.String, t1: /* options */ typingsJapgolly.node.dnsMod.LookupOneOptions, t2: /* callback */ js.Function3[
-  /* err */ typingsJapgolly.node.NodeJS.ErrnoException | scala.Null, 
-  /* address */ java.lang.String, 
-  /* family */ scala.Double, 
-  scala.Unit]) => lookup(t0, t1, t2).runNow()))
-    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpSocketConnectOpts]
   }
+  
+  extension [Self <: TcpSocketConnectOpts](x: Self) {
+    
+    inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setHints(value: Double): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
+    
+    inline def setHintsUndefined: Self = StObject.set(x, "hints", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelay(value: Double): Self = StObject.set(x, "keepAliveInitialDelay", value.asInstanceOf[js.Any])
+    
+    inline def setKeepAliveInitialDelayUndefined: Self = StObject.set(x, "keepAliveInitialDelay", js.undefined)
+    
+    inline def setKeepAliveUndefined: Self = StObject.set(x, "keepAlive", js.undefined)
+    
+    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+    
+    inline def setLocalPort(value: Double): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+    
+    inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+    
+    inline def setLookup(
+      value: (/* hostname */ String, /* options */ LookupOneOptions, /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => Callback
+    ): Self = StObject.set(x, "lookup", js.Any.fromFunction3((t0: /* hostname */ String, t1: /* options */ LookupOneOptions, t2: /* callback */ js.Function3[/* err */ ErrnoException | Null, /* address */ String, /* family */ Double, Unit]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+    
+    inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+    
+    inline def setNoDelayUndefined: Self = StObject.set(x, "noDelay", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+  }
 }
-

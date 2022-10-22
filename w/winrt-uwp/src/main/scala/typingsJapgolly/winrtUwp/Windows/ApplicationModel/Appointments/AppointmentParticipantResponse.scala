@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AppointmentParticipantResponse extends js.Object
-
+sealed trait AppointmentParticipantResponse extends StObject
 /** Specifies the response from a participant concerning an appointment invitation. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentParticipantResponse")
 @js.native
-object AppointmentParticipantResponse extends js.Object {
+object AppointmentParticipantResponse extends StObject {
+  
   /** The participant accepted the appointment invitation. */
   @js.native
-  sealed trait accepted extends AppointmentParticipantResponse
+  sealed trait accepted
+    extends StObject
+       with AppointmentParticipantResponse
   
   /** The participant declined the appointment invitation. */
   @js.native
-  sealed trait declined extends AppointmentParticipantResponse
+  sealed trait declined
+    extends StObject
+       with AppointmentParticipantResponse
   
   /** No response. */
   @js.native
-  sealed trait none extends AppointmentParticipantResponse
+  sealed trait none
+    extends StObject
+       with AppointmentParticipantResponse
   
   /** The participant might attend the appointment. */
   @js.native
-  sealed trait tentative extends AppointmentParticipantResponse
+  sealed trait tentative
+    extends StObject
+       with AppointmentParticipantResponse
   
   /** The response is unknown. */
   @js.native
-  sealed trait unknown extends AppointmentParticipantResponse
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AppointmentParticipantResponse with Double] = js.native
-  /* 2 */ @js.native
-  object accepted extends TopLevel[accepted with Double]
-  
-  /* 3 */ @js.native
-  object declined extends TopLevel[declined with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object tentative extends TopLevel[tentative with Double]
-  
-  /* 4 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with AppointmentParticipantResponse
 }
-

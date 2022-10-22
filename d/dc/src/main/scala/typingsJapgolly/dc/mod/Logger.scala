@@ -1,37 +1,50 @@
 package typingsJapgolly.dc.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Logger extends js.Object {
-  var enableDebugLog: Boolean
+trait Logger extends StObject {
+  
   def annotate(fn: js.Function, msg: String): Logger
+  
   def debug(msg: String): Logger
+  
   def deprecate(fn: js.Function, msg: String): Unit
+  
+  var enableDebugLog: Boolean
+  
   def warn(msg: String): Logger
+  
   def warnOnce(msg: String): Logger
 }
-
 object Logger {
-  @scala.inline
-  def apply(
-    annotate: (js.Function, String) => CallbackTo[Logger],
-    debug: String => CallbackTo[Logger],
+  
+  inline def apply(
+    annotate: (js.Function, String) => Logger,
+    debug: String => Logger,
     deprecate: (js.Function, String) => Callback,
     enableDebugLog: Boolean,
-    warn: String => CallbackTo[Logger],
-    warnOnce: String => CallbackTo[Logger]
+    warn: String => Logger,
+    warnOnce: String => Logger
   ): Logger = {
-    val __obj = js.Dynamic.literal(enableDebugLog = enableDebugLog.asInstanceOf[js.Any])
-    __obj.updateDynamic("annotate")(js.Any.fromFunction2((t0: js.Function, t1: java.lang.String) => annotate(t0, t1).runNow()))
-    __obj.updateDynamic("debug")(js.Any.fromFunction1((t0: java.lang.String) => debug(t0).runNow()))
-    __obj.updateDynamic("deprecate")(js.Any.fromFunction2((t0: js.Function, t1: java.lang.String) => deprecate(t0, t1).runNow()))
-    __obj.updateDynamic("warn")(js.Any.fromFunction1((t0: java.lang.String) => warn(t0).runNow()))
-    __obj.updateDynamic("warnOnce")(js.Any.fromFunction1((t0: java.lang.String) => warnOnce(t0).runNow()))
+    val __obj = js.Dynamic.literal(annotate = js.Any.fromFunction2(annotate), debug = js.Any.fromFunction1(debug), deprecate = js.Any.fromFunction2((t0: js.Function, t1: String) => (deprecate(t0, t1)).runNow()), enableDebugLog = enableDebugLog.asInstanceOf[js.Any], warn = js.Any.fromFunction1(warn), warnOnce = js.Any.fromFunction1(warnOnce))
     __obj.asInstanceOf[Logger]
   }
+  
+  extension [Self <: Logger](x: Self) {
+    
+    inline def setAnnotate(value: (js.Function, String) => Logger): Self = StObject.set(x, "annotate", js.Any.fromFunction2(value))
+    
+    inline def setDebug(value: String => Logger): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    
+    inline def setDeprecate(value: (js.Function, String) => Callback): Self = StObject.set(x, "deprecate", js.Any.fromFunction2((t0: js.Function, t1: String) => (value(t0, t1)).runNow()))
+    
+    inline def setEnableDebugLog(value: Boolean): Self = StObject.set(x, "enableDebugLog", value.asInstanceOf[js.Any])
+    
+    inline def setWarn(value: String => Logger): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    
+    inline def setWarnOnce(value: String => Logger): Self = StObject.set(x, "warnOnce", js.Any.fromFunction1(value))
+  }
 }
-

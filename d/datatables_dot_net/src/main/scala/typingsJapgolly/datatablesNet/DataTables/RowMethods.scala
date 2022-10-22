@@ -1,20 +1,17 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalajs.dom.Node
 import typingsJapgolly.datatablesNet.JQuery
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowMethods
-  extends CoreMethods
+  extends StObject
+     with CoreMethods
      with CommonRowMethod {
-  /**
-    * Order Methods / object
-    */
-  @JSName("child")
-  var child_Original: RowChildMethodModel = js.native
+  
   /**
     * Get the child row(s) that have been set for a parent row
     */
@@ -35,10 +32,10 @@ trait RowMethods
   def child(data: String, className: String): RowChildMethods = js.native
   def child(data: js.Array[String | Double | JQuery]): RowChildMethods = js.native
   def child(data: js.Array[String | Double | JQuery], className: String): RowChildMethods = js.native
-  def child(data: JQuery): RowChildMethods = js.native
-  def child(data: JQuery, className: String): RowChildMethods = js.native
   def child(data: Node): RowChildMethods = js.native
   def child(data: Node, className: String): RowChildMethods = js.native
+  def child(data: JQuery): RowChildMethods = js.native
+  def child(data: JQuery, className: String): RowChildMethods = js.native
   /**
     * Get the child row(s) that have been set for a parent row
     *
@@ -49,16 +46,28 @@ trait RowMethods
     */
   def child(showRemove: Boolean): RowChildMethods = js.native
   /**
+    * Order Methods / object
+    */
+  @JSName("child")
+  var child_Original: RowChildMethodModel = js.native
+  
+  /**
     * Get the data for the selected row
     */
-  def data(): js.Array[_] | js.Object = js.native
+  def data(): js.Array[Any] | js.Object = js.native
   /**
     * Set the data for the selected row
     *
     * @param d Data to use for the row.
     */
-  def data(d: js.Array[_]): Api = js.native
+  def data(d: js.Array[Any]): Api = js.native
   def data(d: js.Object): Api = js.native
+  
+  /**
+    * Deselects this row.
+    */
+  def deselect(): Api = js.native
+  
   /**
     * Get the id of the selected row. Since: 1.10.8
     *
@@ -68,17 +77,24 @@ trait RowMethods
     */
   def id(): String = js.native
   def id(hash: Boolean): String = js.native
+  
   /**
     * Get the row index of the row column.
     */
   def index(): Double = js.native
+  
   /**
     * Obtain the tr node for the selected row
     */
-  def node(): org.scalajs.dom.raw.Node = js.native
+  def node(): Node = js.native
+  
   /**
     * Delete the selected row from the DataTable.
     */
-  def remove(): org.scalajs.dom.raw.Node = js.native
+  def remove(): Node = js.native
+  
+  /**
+    * Selects this row.
+    */
+  def select(): Api = js.native
 }
-

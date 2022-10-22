@@ -1,15 +1,24 @@
-package typingsJapgolly.chessboardjs
+package typingsJapgolly.chessboardjs.mod
 
+import typingsJapgolly.chessboardjs.chessboardjsStrings.fen
+import typingsJapgolly.chessboardjs.chessboardjsStrings.flip
+import typingsJapgolly.chessboardjs.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type BoardPositionType = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ P in chessboardjs.chessboardjs.Square ]:? chessboardjs.chessboardjs.Piece}
-    */ typingsJapgolly.chessboardjs.chessboardjsStrings.BoardPositionType with js.Any
-  type Callback = js.Function0[scala.Unit]
-  type OrientationFlipType = typingsJapgolly.chessboardjs.chessboardjsStrings.flip
-  type PositionFenType = typingsJapgolly.chessboardjs.chessboardjsStrings.fen
-  type PositionType = typingsJapgolly.chessboardjs.chessboardjsStrings.start | java.lang.String | typingsJapgolly.chessboardjs.mod.BoardPositionType
-}
+
+inline def ChessBoard: ChessBoardFactory = ^.asInstanceOf[js.Dynamic].selectDynamic("ChessBoard").asInstanceOf[ChessBoardFactory]
+
+type Callback = js.Function0[Unit]
+
+type OrientationFlipType = flip
+
+type PositionFenType = fen
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.chessboardjs.chessboardjsStrings.start
+  - java.lang.String
+  - typingsJapgolly.chessboardjs.mod.BoardPositionType
+*/
+type PositionType = _PositionType | String

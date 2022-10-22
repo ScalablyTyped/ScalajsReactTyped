@@ -1,7 +1,7 @@
 
 # Scala.js typings for copy-to-clipboard
 
-Typings are for version 3.2.1
+Typings are for version 3.3.2
 
 ## Library description:
 Copy stuff into clipboard using JS with fallbacks
@@ -10,10 +10,10 @@ Copy stuff into clipboard using JS with fallbacks
 | ------------------ | :-------------: |
 | Full name          | copy-to-clipboard |
 | Keywords           | clipboard, copy, browser |
-| # releases         | 4 |
-| # dependents       | 264 |
-| # downloads        | 48819666 |
-| # stars            | 15 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1065075666666668E7 |
+| # stars            | 1007.0 |
 
 ## Links
 - [Homepage](https://github.com/sudodoki/copy-to-clipboard#readme)

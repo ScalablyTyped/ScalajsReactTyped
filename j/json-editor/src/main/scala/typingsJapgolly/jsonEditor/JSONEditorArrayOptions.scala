@@ -1,60 +1,81 @@
 package typingsJapgolly.jsonEditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorArrayOptions extends js.Object {
+trait JSONEditorArrayOptions extends StObject {
+  
   /**
     * If set to true, the editor will start collapsed
     */
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the "add row" button will be hidden
     */
   var disable_array_add: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, all of the "delete" buttons will be hidden
     */
   var disable_array_delete: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, just the "delete all rows" button will be hidden
     */
   var disable_array_delete_all_rows: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, just the "delete last row" buttons will be hidden
     */
   var disable_array_delete_last_row: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the "move up/down" buttons will be hidden
     */
   var disable_array_reorder: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If set to true, the collapse button will be hidden
     */
   var disable_collapse: js.UndefOr[Boolean] = js.undefined
 }
-
 object JSONEditorArrayOptions {
-  @scala.inline
-  def apply(
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    disable_array_add: js.UndefOr[Boolean] = js.undefined,
-    disable_array_delete: js.UndefOr[Boolean] = js.undefined,
-    disable_array_delete_all_rows: js.UndefOr[Boolean] = js.undefined,
-    disable_array_delete_last_row: js.UndefOr[Boolean] = js.undefined,
-    disable_array_reorder: js.UndefOr[Boolean] = js.undefined,
-    disable_collapse: js.UndefOr[Boolean] = js.undefined
-  ): JSONEditorArrayOptions = {
+  
+  inline def apply(): JSONEditorArrayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete_all_rows)) __obj.updateDynamic("disable_array_delete_all_rows")(disable_array_delete_all_rows.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_delete_last_row)) __obj.updateDynamic("disable_array_delete_last_row")(disable_array_delete_last_row.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder.asInstanceOf[js.Any])
-    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorArrayOptions]
   }
+  
+  extension [Self <: JSONEditorArrayOptions](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setDisable_array_add(value: Boolean): Self = StObject.set(x, "disable_array_add", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_array_addUndefined: Self = StObject.set(x, "disable_array_add", js.undefined)
+    
+    inline def setDisable_array_delete(value: Boolean): Self = StObject.set(x, "disable_array_delete", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_array_deleteUndefined: Self = StObject.set(x, "disable_array_delete", js.undefined)
+    
+    inline def setDisable_array_delete_all_rows(value: Boolean): Self = StObject.set(x, "disable_array_delete_all_rows", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_array_delete_all_rowsUndefined: Self = StObject.set(x, "disable_array_delete_all_rows", js.undefined)
+    
+    inline def setDisable_array_delete_last_row(value: Boolean): Self = StObject.set(x, "disable_array_delete_last_row", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_array_delete_last_rowUndefined: Self = StObject.set(x, "disable_array_delete_last_row", js.undefined)
+    
+    inline def setDisable_array_reorder(value: Boolean): Self = StObject.set(x, "disable_array_reorder", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_array_reorderUndefined: Self = StObject.set(x, "disable_array_reorder", js.undefined)
+    
+    inline def setDisable_collapse(value: Boolean): Self = StObject.set(x, "disable_collapse", value.asInstanceOf[js.Any])
+    
+    inline def setDisable_collapseUndefined: Self = StObject.set(x, "disable_collapse", js.undefined)
+  }
 }
-

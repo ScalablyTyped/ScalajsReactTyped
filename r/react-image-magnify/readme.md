@@ -10,10 +10,10 @@ A responsive image zoom component designed for shopping sites.
 | ------------------ | :-------------: |
 | Full name          | react-image-magnify |
 | Keywords           | react, image, photo, picture, zoom, enlarge, magnify, expand, lens, detail, ecommerce, store, shopping, product |
-| # releases         | 20 |
-| # dependents       | 6 |
-| # downloads        | 529844 |
-| # stars            | 4 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 169576.66666666666 |
+| # stars            | 508.0 |
 
 ## Links
 - [Homepage](https://github.com/ethanselzer/react-image-magnify)

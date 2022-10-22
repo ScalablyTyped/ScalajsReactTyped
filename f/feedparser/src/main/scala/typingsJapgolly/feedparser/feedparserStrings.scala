@@ -1,25 +1,27 @@
 package typingsJapgolly.feedparser
 
 import typingsJapgolly.feedparser.mod.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedparserStrings {
-  @js.native
-  sealed trait atom extends Type
   
   @js.native
-  sealed trait rdf extends Type
+  sealed trait atom
+    extends StObject
+       with Type
+  inline def atom: atom = "atom".asInstanceOf[atom]
   
   @js.native
-  sealed trait rss extends Type
+  sealed trait rdf
+    extends StObject
+       with Type
+  inline def rdf: rdf = "rdf".asInstanceOf[rdf]
   
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
-  @scala.inline
-  def rdf: rdf = "rdf".asInstanceOf[rdf]
-  @scala.inline
-  def rss: rss = "rss".asInstanceOf[rss]
+  @js.native
+  sealed trait rss
+    extends StObject
+       with Type
+  inline def rss: rss = "rss".asInstanceOf[rss]
 }
-

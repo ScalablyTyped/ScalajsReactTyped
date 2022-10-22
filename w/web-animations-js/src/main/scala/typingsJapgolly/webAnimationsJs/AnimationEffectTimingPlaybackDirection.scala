@@ -1,8 +1,8 @@
 package typingsJapgolly.webAnimationsJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.normal
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.alternate
   - typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse`
 */
-trait AnimationEffectTimingPlaybackDirection extends js.Object
-
+trait AnimationEffectTimingPlaybackDirection extends StObject
 object AnimationEffectTimingPlaybackDirection {
-  @scala.inline
-  def alternate: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.alternate = this.cast("alternate")
-  @scala.inline
-  def `alternate-reverse`: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse` = this.cast("alternate-reverse")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def normal: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.normal = this.cast("normal")
-  @scala.inline
-  def reverse: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.reverse = this.cast("reverse")
+  
+  inline def alternate: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.alternate = "alternate".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.alternate]
+  
+  inline def `alternate-reverse`: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.`alternate-reverse`]
+  
+  inline def normal: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.normal = "normal".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.normal]
+  
+  inline def reverse: typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.reverse = "reverse".asInstanceOf[typingsJapgolly.webAnimationsJs.webAnimationsJsStrings.reverse]
 }
-

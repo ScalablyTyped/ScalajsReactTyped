@@ -1,19 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ElementAccessExpression
-  extends MemberExpression
+  extends StObject
+     with MemberExpression
+     with AccessExpression
      with BindingOrAssignmentElementTarget
      with DeclarationName
-     with _BindingOrAssignmentElement {
-  var argumentExpression: Expression = js.native
-  var expression: LeftHandSideExpression = js.native
+     with _ArrayBindingOrAssignmentElement {
+  
+  val argumentExpression: Expression = js.native
+  
+  val expression: LeftHandSideExpression = js.native
+  
   @JSName("kind")
-  var kind_ElementAccessExpression: typingsJapgolly.typescript.mod.SyntaxKind.ElementAccessExpression = js.native
-  var questionDotToken: js.UndefOr[QuestionDotToken] = js.native
+  val kind_ElementAccessExpression: typingsJapgolly.typescript.mod.SyntaxKind.ElementAccessExpression = js.native
+  
+  val questionDotToken: js.UndefOr[QuestionDotToken] = js.native
 }
-

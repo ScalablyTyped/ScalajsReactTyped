@@ -1,25 +1,19 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Payment Request API interface enables a web page to update the details of a PaymentRequest in response to a user action. */
+/**
+  * This Payment Request API interface enables a web page to update the details of a PaymentRequest in response to a user action.
+  * Available only in secure contexts.
+  */
 @js.native
-trait PaymentRequestUpdateEvent extends Event_ {
-  def updateWith(detailsPromise: js.Promise[PaymentDetailsUpdate]): Unit = js.native
+trait PaymentRequestUpdateEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   def updateWith(detailsPromise: PaymentDetailsUpdate): Unit = js.native
+  def updateWith(detailsPromise: PromiseLike[PaymentDetailsUpdate]): Unit = js.native
 }
-
-@JSGlobal("PaymentRequestUpdateEvent")
-@js.native
-object PaymentRequestUpdateEvent
-  extends Instantiable1[/* type */ java.lang.String, PaymentRequestUpdateEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ PaymentRequestUpdateEventInit, 
-      PaymentRequestUpdateEvent
-    ]
-

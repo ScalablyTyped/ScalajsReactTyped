@@ -1,13 +1,16 @@
 package typingsJapgolly.asana.mod.auth
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("asana", "auth.OauthError")
 @js.native
-class OauthErrorCls protected () extends Error {
+open class OauthErrorCls protected ()
+  extends StObject
+     with Error {
   /**
     * @param options {Object} A data blob parsed from a query string or JSON
     * response from the Asana API
@@ -17,9 +20,12 @@ class OauthErrorCls protected () extends Error {
     * @constructor
     */
   def this(options: OauthErrorOptions) = this()
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
+  var name: String = js.native
 }
-

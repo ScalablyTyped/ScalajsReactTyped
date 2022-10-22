@@ -1,16 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "BaseSlots")
 @js.native
-object BaseSlots extends js.Object {
-  /* 1 */ val backgroundColor: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.BaseSlots.backgroundColor with Double = js.native
-  /* 2 */ val foregroundColor: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.BaseSlots.foregroundColor with Double = js.native
-  /* 0 */ val primaryColor: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.BaseSlots.primaryColor with Double = js.native
+object BaseSlots extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.BaseSlots with Double] = js.native
+  def apply(value: Double): js.UndefOr[
+    typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots & Double
+  ] = js.native
+  
+  /* 1 */ val backgroundColor: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.backgroundColor & Double = js.native
+  
+  /* 2 */ val foregroundColor: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.foregroundColor & Double = js.native
+  
+  /* 0 */ val primaryColor: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.BaseSlots.primaryColor & Double = js.native
 }
-

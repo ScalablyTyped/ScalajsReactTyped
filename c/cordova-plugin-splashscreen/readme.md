@@ -1,7 +1,7 @@
 
 # Scala.js typings for cordova-plugin-splashscreen
 
-Typings are for version 5.0.3
+Typings are for version 6.0.2
 
 ## Library description:
 Cordova Splashscreen Plugin
@@ -9,14 +9,14 @@ Cordova Splashscreen Plugin
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cordova-plugin-splashscreen |
-| Keywords           | cordova, splashscreen, ecosystem:cordova, cordova-android, cordova-ios, cordova-windows |
+| Keywords           | cordova, splashscreen, ecosystem:cordova, cordova-android, cordova-windows, cordova-browser |
 | # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 3073585 |
-| # stars            | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 196196.0 |
+| # stars            | 627.0 |
 
 ## Links
-- [Homepage](https://cordova.apache.org/)
+- [Homepage](https://github.com/apache/cordova-plugin-splashscreen#readme)
 - [Bugs](https://github.com/apache/cordova-plugin-splashscreen/issues)
 - [Repository](https://github.com/apache/cordova-plugin-splashscreen)
 - [Npm](https://www.npmjs.com/package/cordova-plugin-splashscreen)

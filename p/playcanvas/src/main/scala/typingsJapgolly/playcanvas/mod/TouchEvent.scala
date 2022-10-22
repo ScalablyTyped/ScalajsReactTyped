@@ -1,25 +1,26 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.TouchEvent
-  * @classdesc A Event corresponding to touchstart, touchend, touchmove or touchcancel. TouchEvent wraps the standard
-  * browser event and provides lists of {@link pc.Touch} objects.
-  * @description Create a new TouchEvent from an existing browser event.
-  * @param {pc.TouchDevice} device - The source device of the touch events.
-  * @param {TouchEvent} event - The original browser TouchEvent.
-  * @property {Element} element The target Element that the event was fired from.
-  * @property {pc.Touch[]} touches A list of all touches currently in contact with the device.
-  * @property {pc.Touch[]} changedTouches A list of touches that have changed since the last event.
+  * A Event corresponding to touchstart, touchend, touchmove or touchcancel. TouchEvent wraps the
+  * standard browser event and provides lists of {@link Touch} objects.
   */
 @JSImport("playcanvas", "TouchEvent")
 @js.native
-class TouchEvent protected ()
-  extends typingsJapgolly.playcanvas.pc.TouchEvent {
-  def this(device: typingsJapgolly.playcanvas.pc.TouchDevice, event: typingsJapgolly.playcanvas.pc.TouchEvent) = this()
+open class TouchEvent protected ()
+  extends StObject
+     with TouchEvent1 {
+  /**
+    * Create a new TouchEvent instance. It is created from an existing browser event.
+    *
+    * @param {TouchDevice} device - The source device of the touch events.
+    * @param {globalThis.TouchEvent} event - The original browser TouchEvent.
+    */
+  def this(
+    device: TouchDevice,
+    event: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify globalThis.TouchEvent */ Any
+  ) = this()
 }
-

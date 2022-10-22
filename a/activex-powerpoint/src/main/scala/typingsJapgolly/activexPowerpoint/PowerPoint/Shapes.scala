@@ -10,24 +10,17 @@ import typingsJapgolly.activexOffice.Office.MsoTextOrientation
 import typingsJapgolly.activexOffice.Office.MsoTriState
 import typingsJapgolly.activexOffice.Office.SmartArtLayout
 import typingsJapgolly.activexOffice.Office.XlChartType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.Shapes")
 @js.native
-class Shapes protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val HasTitle: MsoTriState = js.native
-  val Parent: js.Any = js.native
-  val Placeholders: typingsJapgolly.activexPowerpoint.PowerPoint.Placeholders = js.native
-  @JSName("PowerPoint.Shapes_typekey")
-  var PowerPointDotShapes_typekey: Shapes = js.native
-  val Title: Shape = js.native
+trait Shapes extends StObject {
+  
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   /**
     * @param Office.XlChartType [Type=-1]
     * @param number [Left=-1]
@@ -36,11 +29,38 @@ class Shapes protected () extends js.Object {
     * @param number [Height=-1]
     */
   def AddChart(): Shape = js.native
+  def AddChart(Type: Unit, Left: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: Unit, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
   def AddChart(Type: XlChartType): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddChart(Type: XlChartType, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   /**
     * @param number [Left=1.25]
     * @param number [Top=1.25]
@@ -52,11 +72,28 @@ class Shapes protected () extends js.Object {
   def AddComment(Left: Double, Top: Double): Shape = js.native
   def AddComment(Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddComment(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddComment(Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
-  def AddCurve(SafeArrayOfPoints: js.Any): Shape = js.native
+  
+  def AddCurve(SafeArrayOfPoints: Any): Shape = js.native
+  
   def AddDiagram(Type: MsoDiagramType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
+  
   /**
     * @param number [Left=0]
     * @param number [Top=0]
@@ -68,6 +105,18 @@ class Shapes protected () extends js.Object {
   def AddMediaObject(FileName: String, Left: Double, Top: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObject(FileName: String, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   /**
     * @param Office.MsoTriState [LinkToFile=0]
     * @param Office.MsoTriState [SaveWithDocument=-1]
@@ -85,6 +134,7 @@ class Shapes protected () extends js.Object {
     Width: js.UndefOr[Double],
     Height: js.UndefOr[Double]
   ): Shape = js.native
+  
   /**
     * @param number [Left=0]
     * @param number [Top=0]
@@ -96,6 +146,18 @@ class Shapes protected () extends js.Object {
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddMediaObjectFromEmbedTag(EmbedTag: String, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   /**
     * @param number [Left=0]
     * @param number [Top=0]
@@ -122,6 +184,7 @@ class Shapes protected () extends js.Object {
     IconLabel: js.UndefOr[String],
     Link: js.UndefOr[MsoTriState]
   ): Shape = js.native
+  
   /**
     * @param number [Width=-1]
     * @param number [Height=-1]
@@ -150,6 +213,16 @@ class Shapes protected () extends js.Object {
     Width: Double,
     Height: Double
   ): Shape = js.native
+  def AddPicture(
+    FileName: String,
+    LinkToFile: MsoTriState,
+    SaveWithDocument: MsoTriState,
+    Left: Double,
+    Top: Double,
+    Width: Unit,
+    Height: Double
+  ): Shape = js.native
+  
   /**
     * @param number [Left=-1]
     * @param number [Top=-1]
@@ -161,8 +234,22 @@ class Shapes protected () extends js.Object {
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
-  def AddPolyline(SafeArrayOfPoints: js.Any): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddPlaceholder(Type: PpPlaceholderType, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
+  def AddPolyline(SafeArrayOfPoints: Any): Shape = js.native
+  
   def AddShape(Type: MsoAutoShapeType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   /**
     * @param number [Left=-1]
     * @param number [Top=-1]
@@ -174,6 +261,18 @@ class Shapes protected () extends js.Object {
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   /**
     * @param number [Left=-1]
     * @param number [Top=-1]
@@ -185,6 +284,18 @@ class Shapes protected () extends js.Object {
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Double): Shape = js.native
   def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Double, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Double, Width: Unit, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Double, Height: Double): Shape = js.native
+  def AddTable(NumRows: Double, NumColumns: Double, Left: Unit, Top: Unit, Width: Unit, Height: Double): Shape = js.native
+  
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,
     Text: String,
@@ -195,11 +306,27 @@ class Shapes protected () extends js.Object {
     Left: Double,
     Top: Double
   ): Shape = js.native
+  
   def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
+  
   def AddTitle(): Shape = js.native
+  
+  val Application: Any = js.native
+  
   def BuildFreeform(EditingType: MsoEditingType, X1: Double, Y1: Double): FreeformBuilder = js.native
-  def Item(Index: js.Any): Shape = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  val HasTitle: MsoTriState = js.native
+  
+  def Item(Index: Any): Shape = js.native
+  
+  val Parent: Any = js.native
+  
   def Paste(): ShapeRange = js.native
+  
   /**
     * @param PowerPoint.PpPasteDataType [DataType=0]
     * @param Office.MsoTriState [DisplayAsIcon=0]
@@ -216,8 +343,16 @@ class Shapes protected () extends js.Object {
     IconLabel: js.UndefOr[String],
     Link: js.UndefOr[MsoTriState]
   ): ShapeRange = js.native
+  
+  val Placeholders: typingsJapgolly.activexPowerpoint.PowerPoint.Placeholders = js.native
+  
+  /* private */ @JSName("PowerPoint.Shapes_typekey")
+  var PowerPointDotShapes_typekey: Shapes = js.native
+  
   def Range(): ShapeRange = js.native
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: Any): ShapeRange = js.native
+  
   def SelectAll(): Unit = js.native
+  
+  val Title: Shape = js.native
 }
-

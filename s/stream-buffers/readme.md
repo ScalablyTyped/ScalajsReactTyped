@@ -10,10 +10,10 @@ Buffer-backed Streams for reading and writing.
 | ------------------ | :-------------: |
 | Full name          | stream-buffers |
 | Keywords           | memory streams, streams, buffer streams |
-| # releases         | 2 |
-| # dependents       | 255 |
-| # downloads        | 26409806 |
-| # stars            | 15 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8379980.333333333 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/samcday/node-stream-buffer#readme)

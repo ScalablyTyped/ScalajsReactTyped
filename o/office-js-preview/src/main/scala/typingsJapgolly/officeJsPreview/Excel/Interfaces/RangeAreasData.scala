@@ -1,120 +1,157 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `rangeAreas.toJSON()`. */
-trait RangeAreasData extends js.Object {
+trait RangeAreasData extends StObject {
+  
   /**
+    * Returns the `RangeAreas` reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g., "Sheet1!A1:B4, Sheet1!D1:D4").
     *
-    * Returns the RageAreas reference in A1-style. Address value will contain the worksheet name for each rectangular block of cells (e.g. "Sheet1!A1:B4, Sheet1!D1:D4"). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
+    * Returns the `RangeAreas` reference in the user locale.
     *
-    * Returns the RageAreas reference in the user locale. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
+  
   /**
+    * Returns the number of rectangular ranges that comprise this `RangeAreas` object.
     *
-    * Returns the number of rectangular ranges that comprise this RangeAreas object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var areaCount: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Returns a collection of rectangular ranges that comprise this `RangeAreas` object.
     *
-    * Returns a collection of rectangular ranges that comprise this RangeAreas object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var areas: js.UndefOr[js.Array[RangeData]] = js.undefined
+  
   /**
+    * Returns the number of cells in the `RangeAreas` object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647).
     *
-    * Returns the number of cells in the RangeAreas object, summing up the cell counts of all of the individual rectangular ranges. Returns -1 if the cell count exceeds 2^31-1 (2,147,483,647). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var cellCount: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Returns a collection of conditional formats that intersect with any cells in this `RangeAreas` object.
     *
-    * Returns a collection of ConditionalFormats that intersect with any cells in this RangeAreas object. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var conditionalFormats: js.UndefOr[js.Array[ConditionalFormatData]] = js.undefined
+  
   /**
+    * Returns a data validation object for all ranges in the `RangeAreas`.
     *
-    * Returns a dataValidation object for all ranges in the RangeAreas.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var dataValidation: js.UndefOr[DataValidationData] = js.undefined
+  
   /**
+    * Returns a `RangeFormat` object, encapsulating the font, fill, borders, alignment, and other properties for all ranges in the `RangeAreas` object.
     *
-    * Returns a rangeFormat object, encapsulating the the font, fill, borders, alignment, and other properties for all ranges in the RangeAreas object. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[RangeFormatData] = js.undefined
+  
   /**
+    * Specifies if all the ranges on this `RangeAreas` object represent entire columns (e.g., "A:C, Q:Z").
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire columns (e.g., "A:C, Q:Z"). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isEntireColumn: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if all the ranges on this `RangeAreas` object represent entire rows (e.g., "1:3, 5:7").
     *
-    * Indicates whether all the ranges on this RangeAreas object represent entire rows (e.g., "1:3, 5:7"). Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var isEntireRow: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Represents the style for all ranges in this `RangeAreas` object.
+    If the styles of the cells are inconsistent, `null` will be returned.
+    For custom styles, the style name will be returned. For built-in styles, a string representing a value in the `BuiltInStyle` enum will be returned.
     *
-    * Represents the style for all ranges in this RangeAreas object.
-    If the styles of the cells are inconsistent, null will be returned.
-    For custom styles, the style name will be returned. For built-in styles, a string representing a value in the BuiltInStyle enum will be returned.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[String] = js.undefined
 }
-
 object RangeAreasData {
-  @scala.inline
-  def apply(
-    address: String = null,
-    addressLocal: String = null,
-    areaCount: Int | Double = null,
-    areas: js.Array[RangeData] = null,
-    cellCount: Int | Double = null,
-    conditionalFormats: js.Array[ConditionalFormatData] = null,
-    dataValidation: DataValidationData = null,
-    format: RangeFormatData = null,
-    isEntireColumn: js.UndefOr[Boolean] = js.undefined,
-    isEntireRow: js.UndefOr[Boolean] = js.undefined,
-    style: String = null
-  ): RangeAreasData = {
+  
+  inline def apply(): RangeAreasData = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (areaCount != null) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
-    if (areas != null) __obj.updateDynamic("areas")(areas.asInstanceOf[js.Any])
-    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
-    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats.asInstanceOf[js.Any])
-    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeAreasData]
   }
+  
+  extension [Self <: RangeAreasData](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setAreaCount(value: Double): Self = StObject.set(x, "areaCount", value.asInstanceOf[js.Any])
+    
+    inline def setAreaCountUndefined: Self = StObject.set(x, "areaCount", js.undefined)
+    
+    inline def setAreas(value: js.Array[RangeData]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
+    
+    inline def setAreasUndefined: Self = StObject.set(x, "areas", js.undefined)
+    
+    inline def setAreasVarargs(value: RangeData*): Self = StObject.set(x, "areas", js.Array(value*))
+    
+    inline def setCellCount(value: Double): Self = StObject.set(x, "cellCount", value.asInstanceOf[js.Any])
+    
+    inline def setCellCountUndefined: Self = StObject.set(x, "cellCount", js.undefined)
+    
+    inline def setConditionalFormats(value: js.Array[ConditionalFormatData]): Self = StObject.set(x, "conditionalFormats", value.asInstanceOf[js.Any])
+    
+    inline def setConditionalFormatsUndefined: Self = StObject.set(x, "conditionalFormats", js.undefined)
+    
+    inline def setConditionalFormatsVarargs(value: ConditionalFormatData*): Self = StObject.set(x, "conditionalFormats", js.Array(value*))
+    
+    inline def setDataValidation(value: DataValidationData): Self = StObject.set(x, "dataValidation", value.asInstanceOf[js.Any])
+    
+    inline def setDataValidationUndefined: Self = StObject.set(x, "dataValidation", js.undefined)
+    
+    inline def setFormat(value: RangeFormatData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setIsEntireColumn(value: Boolean): Self = StObject.set(x, "isEntireColumn", value.asInstanceOf[js.Any])
+    
+    inline def setIsEntireColumnUndefined: Self = StObject.set(x, "isEntireColumn", js.undefined)
+    
+    inline def setIsEntireRow(value: Boolean): Self = StObject.set(x, "isEntireRow", value.asInstanceOf[js.Any])
+    
+    inline def setIsEntireRowUndefined: Self = StObject.set(x, "isEntireRow", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

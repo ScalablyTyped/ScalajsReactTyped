@@ -1,30 +1,30 @@
 
 # Scala.js typings for socket_dot_io-client
 
-Typings are for version 1.4.5
+Typings are for version 4.5.3
 
 ## Library description:
-[![Build Status](https://secure.travis-ci.org/socketio/socket.io-client.svg?branch=master)](http://travis-ci.org/socketio/socket.io-client) [![Dependency Status](https://david-dm.org/socketio/socket.io-client.svg)](https://david-dm.org/socketio/socket.io-
+Realtime application framework client
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socket.io-client |
 | Keywords           | realtime, framework, websocket, tcp, events, client |
-| # releases         | 5 |
-| # dependents       | 3221 |
-| # downloads        | 160128012 |
-| # stars            | 111 |
+| # releases         | 32 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8070387E7 |
+| # stars            | 9908.0 |
 
 ## Links
-- [Homepage](https://github.com/Automattic/socket.io-client#readme)
-- [Bugs](https://github.com/Automattic/socket.io-client/issues)
-- [Repository](https://github.com/Automattic/socket.io-client)
+- [Homepage](https://github.com/socketio/socket.io-client#readme)
+- [Bugs](https://github.com/socketio/socket.io-client/issues)
+- [Repository](https://github.com/socketio/socket.io-client)
 - [Npm](https://www.npmjs.com/package/socket.io-client)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

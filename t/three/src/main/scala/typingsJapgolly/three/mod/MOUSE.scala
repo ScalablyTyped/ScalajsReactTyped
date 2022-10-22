@@ -1,19 +1,25 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "MOUSE")
 @js.native
-object MOUSE extends js.Object {
-  /* 4 */ val DOLLY: typingsJapgolly.three.constantsMod.MOUSE.DOLLY with Double = js.native
-  /* 0 */ val LEFT: typingsJapgolly.three.constantsMod.MOUSE.LEFT with Double = js.native
-  /* 1 */ val MIDDLE: typingsJapgolly.three.constantsMod.MOUSE.MIDDLE with Double = js.native
-  /* 5 */ val PAN: typingsJapgolly.three.constantsMod.MOUSE.PAN with Double = js.native
-  /* 2 */ val RIGHT: typingsJapgolly.three.constantsMod.MOUSE.RIGHT with Double = js.native
-  /* 3 */ val ROTATE: typingsJapgolly.three.constantsMod.MOUSE.ROTATE with Double = js.native
+object MOUSE extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.three.constantsMod.MOUSE with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.three.srcConstantsMod.MOUSE & Double] = js.native
+  
+  /* 1 */ val DOLLY: typingsJapgolly.three.srcConstantsMod.MOUSE.DOLLY & Double = js.native
+  
+  /* 0 */ val LEFT: typingsJapgolly.three.srcConstantsMod.MOUSE.LEFT & Double = js.native
+  
+  /* 1 */ val MIDDLE: typingsJapgolly.three.srcConstantsMod.MOUSE.MIDDLE & Double = js.native
+  
+  /* 2 */ val PAN: typingsJapgolly.three.srcConstantsMod.MOUSE.PAN & Double = js.native
+  
+  /* 2 */ val RIGHT: typingsJapgolly.three.srcConstantsMod.MOUSE.RIGHT & Double = js.native
+  
+  /* 0 */ val ROTATE: typingsJapgolly.three.srcConstantsMod.MOUSE.ROTATE & Double = js.native
 }
-

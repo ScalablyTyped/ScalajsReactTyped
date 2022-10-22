@@ -1,32 +1,33 @@
 package typingsJapgolly.protractor.mod
 
-import typingsJapgolly.protractor.locatorsMod.Locator
+import typingsJapgolly.protractor.builtLocatorsMod.Locator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "ElementFinder")
 @js.native
-class ElementFinder protected ()
-  extends typingsJapgolly.protractor.elementMod.ElementFinder {
+open class ElementFinder protected ()
+  extends typingsJapgolly.protractor.builtElementMod.ElementFinder {
   def this(
-    browser_ : typingsJapgolly.protractor.browserMod.ProtractorBrowser,
-    elementArrayFinder: typingsJapgolly.protractor.elementMod.ElementArrayFinder
+    browser_ : typingsJapgolly.protractor.builtBrowserMod.ProtractorBrowser,
+    elementArrayFinder: typingsJapgolly.protractor.builtElementMod.ElementArrayFinder
   ) = this()
 }
-
 /* static members */
-@JSImport("protractor", "ElementFinder")
-@js.native
-object ElementFinder extends js.Object {
-  def fromWebElement_(
-    browser: typingsJapgolly.protractor.browserMod.ProtractorBrowser,
+object ElementFinder {
+  
+  @JSImport("protractor", "ElementFinder")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromWebElement_(
+    browser: typingsJapgolly.protractor.builtBrowserMod.ProtractorBrowser,
     webElem: typingsJapgolly.seleniumWebdriver.mod.WebElement
-  ): typingsJapgolly.protractor.elementMod.ElementFinder = js.native
-  def fromWebElement_(
-    browser: typingsJapgolly.protractor.browserMod.ProtractorBrowser,
+  ): typingsJapgolly.protractor.builtElementMod.ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.protractor.builtElementMod.ElementFinder]
+  inline def fromWebElement_(
+    browser: typingsJapgolly.protractor.builtBrowserMod.ProtractorBrowser,
     webElem: typingsJapgolly.seleniumWebdriver.mod.WebElement,
     locator: Locator
-  ): typingsJapgolly.protractor.elementMod.ElementFinder = js.native
+  ): typingsJapgolly.protractor.builtElementMod.ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any], locator.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.protractor.builtElementMod.ElementFinder]
 }
-

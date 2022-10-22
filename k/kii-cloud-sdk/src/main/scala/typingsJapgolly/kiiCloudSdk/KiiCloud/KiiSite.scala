@@ -1,53 +1,42 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KiiSite extends js.Object
-
+sealed trait KiiSite extends StObject
 @JSGlobal("KiiCloud.KiiSite")
 @js.native
-object KiiSite extends js.Object {
-  @js.native
-  sealed trait CN extends KiiSite
+object KiiSite extends StObject {
   
   @js.native
-  sealed trait CN3 extends KiiSite
+  sealed trait CN
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait EU extends KiiSite
+  sealed trait CN3
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait JP extends KiiSite
+  sealed trait EU
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait SG extends KiiSite
+  sealed trait JP
+    extends StObject
+       with KiiSite
   
   @js.native
-  sealed trait US extends KiiSite
+  sealed trait SG
+    extends StObject
+       with KiiSite
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KiiSite with Double] = js.native
-  /* 2 */ @js.native
-  object CN extends TopLevel[CN with Double]
-  
-  /* 4 */ @js.native
-  object CN3 extends TopLevel[CN3 with Double]
-  
-  /* 5 */ @js.native
-  object EU extends TopLevel[EU with Double]
-  
-  /* 1 */ @js.native
-  object JP extends TopLevel[JP with Double]
-  
-  /* 3 */ @js.native
-  object SG extends TopLevel[SG with Double]
-  
-  /* 0 */ @js.native
-  object US extends TopLevel[US with Double]
-  
+  @js.native
+  sealed trait US
+    extends StObject
+       with KiiSite
 }
-

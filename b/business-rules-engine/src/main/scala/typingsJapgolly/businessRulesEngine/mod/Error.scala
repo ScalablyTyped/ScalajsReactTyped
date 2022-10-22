@@ -1,15 +1,18 @@
 package typingsJapgolly.businessRulesEngine.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("business-rules-engine", "Error")
 @js.native
-class Error () extends IError {
+open class Error ()
+  extends StObject
+     with IError {
+  
   /* CompleteClass */
-  override var ErrorMessage: String = js.native
+  var ErrorMessage: String = js.native
+  
   /* CompleteClass */
-  override var HasError: Boolean = js.native
+  var HasError: Boolean = js.native
 }
-

@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the MVCxClientScheduler.ToolTipDisplaying event.
   */
-@JSGlobal("MVCxClientSchedulerToolTipDisplayingEventArgs")
-@js.native
-class MVCxClientSchedulerToolTipDisplayingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes new instance of the MVCxClientSchedulerToolTipDisplayingEventArgs class with the specified settings.
-    * @param toolTip A MVCxClientSchedulerTemplateToolTip object that is a tooltip.
-    * @param data An ASPxClientSchedulerToolTipData object that is the tooltip data.
-    */
-  def this(toolTip: MVCxClientSchedulerTemplateToolTip, data: ASPxClientSchedulerToolTipData) = this()
+trait MVCxClientSchedulerToolTipDisplayingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets information about the tooltip related to the event.
     */
-  var data: ASPxClientSchedulerToolTipData = js.native
+  var data: ASPxClientSchedulerToolTipData
+  
   /**
     * Gets the tooltip related to the event.
     */
-  var toolTip: MVCxClientSchedulerTemplateToolTip = js.native
+  var toolTip: MVCxClientSchedulerTemplateToolTip
 }
-
+object MVCxClientSchedulerToolTipDisplayingEventArgs {
+  
+  inline def apply(data: ASPxClientSchedulerToolTipData, toolTip: MVCxClientSchedulerTemplateToolTip): MVCxClientSchedulerToolTipDisplayingEventArgs = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], toolTip = toolTip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MVCxClientSchedulerToolTipDisplayingEventArgs]
+  }
+  
+  extension [Self <: MVCxClientSchedulerToolTipDisplayingEventArgs](x: Self) {
+    
+    inline def setData(value: ASPxClientSchedulerToolTipData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setToolTip(value: MVCxClientSchedulerTemplateToolTip): Self = StObject.set(x, "toolTip", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.stepfunctionsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsStepfunctionsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.StepFunctions")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class StepFunctions ()
+open class StepFunctions ()
   extends typingsJapgolly.awsSdk.mod.StepFunctions {
   def this(options: ClientConfiguration) = this()
 }
-

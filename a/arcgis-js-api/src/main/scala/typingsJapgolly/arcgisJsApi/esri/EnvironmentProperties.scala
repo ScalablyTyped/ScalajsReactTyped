@@ -1,56 +1,95 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.CloudyWeatherPropertiesty
+import typingsJapgolly.arcgisJsApi.anon.FoggyWeatherPropertiestyp
+import typingsJapgolly.arcgisJsApi.anon.RainyWeatherPropertiestyp
+import typingsJapgolly.arcgisJsApi.anon.SnowyWeatherPropertiestyp
+import typingsJapgolly.arcgisJsApi.anon.SunLightingPropertiestype
+import typingsJapgolly.arcgisJsApi.anon.SunnyWeatherPropertiestyp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnvironmentProperties extends js.Object {
+trait EnvironmentProperties extends StObject {
+  
   /**
-    * Specifies whether the atmosphere should be displayed. Typically this consists of haze and sky.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#atmosphereEnabled)
+    * Specifies whether the atmosphere should be displayed.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#atmosphereEnabled)
     */
   var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed. The default value of `null` displays a single, fully opaque, black color.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#background)
+    * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#background)
     */
   var background: js.UndefOr[BackgroundProperties] = js.undefined
+  
   /**
     * Settings for defining the lighting of the scene.
     *
+    * @default SunLighting
+    *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#lighting)
     */
-  var lighting: js.UndefOr[LightingProperties] = js.undefined
+  var lighting: js.UndefOr[
+    SunLightingPropertiestype | typingsJapgolly.arcgisJsApi.anon.VirtualLightingProperties
+  ] = js.undefined
+  
   /**
     * Specifies whether stars should be displayed in the sky.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#starsEnabled)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#starsEnabled)
     */
   var starsEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates the type of weather visualization in the scene.
+    *
+    * @default SunnyWeather
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Environment.html#weather)
+    */
+  var weather: js.UndefOr[
+    SunnyWeatherPropertiestyp | CloudyWeatherPropertiesty | RainyWeatherPropertiestyp | SnowyWeatherPropertiestyp | FoggyWeatherPropertiestyp
+  ] = js.undefined
 }
-
 object EnvironmentProperties {
-  @scala.inline
-  def apply(
-    atmosphereEnabled: js.UndefOr[Boolean] = js.undefined,
-    background: BackgroundProperties = null,
-    lighting: LightingProperties = null,
-    starsEnabled: js.UndefOr[Boolean] = js.undefined
-  ): EnvironmentProperties = {
+  
+  inline def apply(): EnvironmentProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(atmosphereEnabled)) __obj.updateDynamic("atmosphereEnabled")(atmosphereEnabled.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (lighting != null) __obj.updateDynamic("lighting")(lighting.asInstanceOf[js.Any])
-    if (!js.isUndefined(starsEnabled)) __obj.updateDynamic("starsEnabled")(starsEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvironmentProperties]
   }
+  
+  extension [Self <: EnvironmentProperties](x: Self) {
+    
+    inline def setAtmosphereEnabled(value: Boolean): Self = StObject.set(x, "atmosphereEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAtmosphereEnabledUndefined: Self = StObject.set(x, "atmosphereEnabled", js.undefined)
+    
+    inline def setBackground(value: BackgroundProperties): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setLighting(value: SunLightingPropertiestype | typingsJapgolly.arcgisJsApi.anon.VirtualLightingProperties): Self = StObject.set(x, "lighting", value.asInstanceOf[js.Any])
+    
+    inline def setLightingUndefined: Self = StObject.set(x, "lighting", js.undefined)
+    
+    inline def setStarsEnabled(value: Boolean): Self = StObject.set(x, "starsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setStarsEnabledUndefined: Self = StObject.set(x, "starsEnabled", js.undefined)
+    
+    inline def setWeather(
+      value: SunnyWeatherPropertiestyp | CloudyWeatherPropertiesty | RainyWeatherPropertiestyp | SnowyWeatherPropertiestyp | FoggyWeatherPropertiestyp
+    ): Self = StObject.set(x, "weather", value.asInstanceOf[js.Any])
+    
+    inline def setWeatherUndefined: Self = StObject.set(x, "weather", js.undefined)
+  }
 }
-

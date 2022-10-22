@@ -1,63 +1,84 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocatorAddressesToLocationsParams extends Object {
+trait locatorAddressesToLocationsParams
+  extends StObject
+     with Object {
+  
   /**
-    * The input addresses in the format supported by the geocode service. If the service supports 'Single Line Input' the input addresses will be in the following format:
-    * ```js
-    * {
-    *   "OBJECTID": 0,
-    *   "Single Line Input":"77 Main St, Plymouth, NH 03264"
-    * }
-    * ```
+    * The input addresses in the format supported by the geocode service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressesToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
     */
-  var addresses: js.Array[_]
+  var addresses: js.Array[Any]
+  
   /**
-    * Limit result to one or more categories. For example, "Populated Place" or "Scandinavian Food". Only applies to the World Geocode Service. See [Category filtering (World Geocoding Service)](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm#ESRI_SECTION1_502B3FE2028145D7B189C25B1A00E17B) for more information.
+    * Limit result to one or more categories.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressesToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * Limits the results to only search in the country provided. For example `US` for United States or `SE` for Sweden. Only applies to the World Geocode Service. See the [World Geocoding Service documentation](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm) for more information.
+    * Limits the results to only search in the country provided.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressesToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
     */
   var countryCode: js.UndefOr[String] = js.undefined
+  
   /**
     * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressesToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
     */
   var locationType: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The spatial reference of the output geometries.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressesToLocations)
+    */
+  var outSpatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
-
-object LocatorAddressesToLocationsParams {
-  @scala.inline
-  def apply(
-    addresses: js.Array[_],
+object locatorAddressesToLocationsParams {
+  
+  inline def apply(
+    addresses: js.Array[Any],
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    categories: js.Array[String] = null,
-    countryCode: String = null,
-    locationType: String = null
-  ): LocatorAddressesToLocationsParams = {
-    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LocatorAddressesToLocationsParams]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
+  ): locatorAddressesToLocationsParams = {
+    val __obj = js.Dynamic.literal(addresses = addresses.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.asInstanceOf[locatorAddressesToLocationsParams]
+  }
+  
+  extension [Self <: locatorAddressesToLocationsParams](x: Self) {
+    
+    inline def setAddresses(value: js.Array[Any]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
+    
+    inline def setAddressesVarargs(value: Any*): Self = StObject.set(x, "addresses", js.Array(value*))
+    
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    
+    inline def setOutSpatialReference(value: SpatialReference): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
   }
 }
-

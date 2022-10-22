@@ -1,10 +1,13 @@
 package typingsJapgolly.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IsNumericOptions extends js.Object {
+trait IsNumericOptions extends StObject {
+  
+  var locale: js.UndefOr[AlphaLocale] = js.undefined
+  
   /**
     * If `no_symbols` is true, the validator will reject numeric strings that feature a symbol (e.g. `+`, `-`, or `.`).
     *
@@ -12,13 +15,21 @@ trait IsNumericOptions extends js.Object {
     */
   var no_symbols: js.UndefOr[Boolean] = js.undefined
 }
-
 object IsNumericOptions {
-  @scala.inline
-  def apply(no_symbols: js.UndefOr[Boolean] = js.undefined): IsNumericOptions = {
+  
+  inline def apply(): IsNumericOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(no_symbols)) __obj.updateDynamic("no_symbols")(no_symbols.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsNumericOptions]
   }
+  
+  extension [Self <: IsNumericOptions](x: Self) {
+    
+    inline def setLocale(value: AlphaLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setNo_symbols(value: Boolean): Self = StObject.set(x, "no_symbols", value.asInstanceOf[js.Any])
+    
+    inline def setNo_symbolsUndefined: Self = StObject.set(x, "no_symbols", js.undefined)
+  }
 }
-

@@ -5,22 +5,28 @@ import typingsJapgolly.sketchapp.sketchappStrings.path
 import typingsJapgolly.sketchapp.sketchappStrings.rectangle
 import typingsJapgolly.sketchapp.sketchappStrings.shapePath
 import typingsJapgolly.sketchapp.sketchappStrings.triangle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchMSPathLayer extends SketchMSLayer {
+trait SketchMSPathLayer
+  extends StObject
+     with SketchMSLayer {
+  
   @JSName("_class")
   var _class_SketchMSPathLayer: path | shapePath | rectangle | oval | triangle
+  
   var edited: Boolean
+  
   var isClosed: Boolean
+  
   var pointRadiusBehaviour: Double
+  
   var points: js.Array[SketchMSPoint]
 }
-
 object SketchMSPathLayer {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     _class: path | shapePath | rectangle | oval | triangle,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
@@ -44,14 +50,24 @@ object SketchMSPathLayer {
     resizingType: SketchMSLayerResizingType,
     rotation: Double,
     shouldBreakMaskChain: Boolean,
-    style: SketchMSStyle,
-    css: String = null,
-    layers: js.Array[SketchMSLayer] = null
+    style: SketchMSStyle
   ): SketchMSPathLayer = {
     val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], booleanOperation = booleanOperation.asInstanceOf[js.Any], clippingMaskMode = clippingMaskMode.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], edited = edited.asInstanceOf[js.Any], exportOptions = exportOptions.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasClippingMask = hasClippingMask.asInstanceOf[js.Any], isClosed = isClosed.asInstanceOf[js.Any], isFixedToViewport = isFixedToViewport.asInstanceOf[js.Any], isFlippedHorizontal = isFlippedHorizontal.asInstanceOf[js.Any], isFlippedVertical = isFlippedVertical.asInstanceOf[js.Any], isLocked = isLocked.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], layerListExpandedType = layerListExpandedType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameIsFixed = nameIsFixed.asInstanceOf[js.Any], pointRadiusBehaviour = pointRadiusBehaviour.asInstanceOf[js.Any], points = points.asInstanceOf[js.Any], resizingConstraint = resizingConstraint.asInstanceOf[js.Any], resizingType = resizingType.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], shouldBreakMaskChain = shouldBreakMaskChain.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSPathLayer]
   }
+  
+  extension [Self <: SketchMSPathLayer](x: Self) {
+    
+    inline def setEdited(value: Boolean): Self = StObject.set(x, "edited", value.asInstanceOf[js.Any])
+    
+    inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
+    
+    inline def setPointRadiusBehaviour(value: Double): Self = StObject.set(x, "pointRadiusBehaviour", value.asInstanceOf[js.Any])
+    
+    inline def setPoints(value: js.Array[SketchMSPoint]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    
+    inline def setPointsVarargs(value: SketchMSPoint*): Self = StObject.set(x, "points", js.Array(value*))
+    
+    inline def set_class(value: path | shapePath | rectangle | oval | triangle): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+  }
 }
-

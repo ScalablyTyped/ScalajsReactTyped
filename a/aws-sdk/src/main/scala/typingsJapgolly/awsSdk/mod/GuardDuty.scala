@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.guarddutyMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsGuarddutyMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "GuardDuty")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class GuardDuty ()
-  extends typingsJapgolly.awsSdk.allMod.GuardDuty {
+open class GuardDuty ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.GuardDuty {
   def this(options: ClientConfiguration) = this()
 }
-

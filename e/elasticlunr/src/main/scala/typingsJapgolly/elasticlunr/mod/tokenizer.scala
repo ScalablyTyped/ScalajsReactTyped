@@ -1,18 +1,29 @@
 package typingsJapgolly.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("elasticlunr", "tokenizer")
-@js.native
-object tokenizer extends js.Object {
+object tokenizer {
+  
+  inline def apply(): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[String]]
+  inline def apply(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @JSImport("elasticlunr", "tokenizer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("elasticlunr", "tokenizer.defaultSeperator")
+  @js.native
   val defaultSeperator: js.RegExp = js.native
+  
+  inline def getSeperator(): js.RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeperator")().asInstanceOf[js.RegExp]
+  
+  inline def resetSeperator(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetSeperator")().asInstanceOf[Unit]
+  
+  @JSImport("elasticlunr", "tokenizer.seperator")
+  @js.native
   val seperator: js.RegExp = js.native
-  def apply(): js.Array[String] = js.native
-  def apply(str: String): js.Array[String] = js.native
-  def getSeperator(): js.RegExp = js.native
-  def resetSeperator(): Unit = js.native
-  def setSeperator(sep: js.RegExp): Unit = js.native
+  
+  inline def setSeperator(sep: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSeperator")(sep.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

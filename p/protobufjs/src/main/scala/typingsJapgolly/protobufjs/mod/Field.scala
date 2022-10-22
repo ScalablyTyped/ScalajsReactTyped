@@ -19,14 +19,13 @@ import typingsJapgolly.protobufjs.protobufjsStrings.sint64
 import typingsJapgolly.protobufjs.protobufjsStrings.string
 import typingsJapgolly.protobufjs.protobufjsStrings.uint32
 import typingsJapgolly.protobufjs.protobufjsStrings.uint64
-import typingsJapgolly.std.Uint8Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Field")
 @js.native
-class Field protected () extends FieldBase {
+open class Field protected () extends FieldBase {
   /**
     * Constructs a new message field instance. Note that {@link MapField|map fields} have their own class.
     * @param name Unique name within its namespace
@@ -38,57 +37,118 @@ class Field protected () extends FieldBase {
     */
   def this(name: String, id: Double, `type`: String) = this()
   def this(name: String, id: Double, `type`: String, rule: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: StringDictionary[Any]) = this()
   def this(name: String, id: Double, `type`: String, rule: String, extend: String) = this()
-  def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[js.Any]) = this()
-  def this(name: String, id: Double, `type`: String, rule: StringDictionary[js.Any], extend: String) = this()
+  def this(name: String, id: Double, `type`: String, rule: String, extend: StringDictionary[Any]) = this()
+  def this(name: String, id: Double, `type`: String, rule: StringDictionary[Any], extend: String) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any]
+    rule: StringDictionary[Any],
+    extend: StringDictionary[Any]
   ) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: String) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: StringDictionary[Any]) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: String,
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
     rule: String,
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
+    rule: String,
+    extend: Unit,
+    options: StringDictionary[Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[Any],
     extend: String,
-    options: StringDictionary[js.Any]
+    options: StringDictionary[Any]
   ) = this()
   def this(
     name: String,
     id: Double,
     `type`: String,
-    rule: StringDictionary[js.Any],
-    extend: StringDictionary[js.Any],
-    options: StringDictionary[js.Any]
+    rule: StringDictionary[Any],
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
   ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: StringDictionary[Any],
+    extend: Unit,
+    options: StringDictionary[Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: String,
+    options: StringDictionary[Any]
+  ) = this()
+  def this(
+    name: String,
+    id: Double,
+    `type`: String,
+    rule: Unit,
+    extend: StringDictionary[Any],
+    options: StringDictionary[Any]
+  ) = this()
+  def this(name: String, id: Double, `type`: String, rule: Unit, extend: Unit, options: StringDictionary[Any]) = this()
+  
   /** Determines whether this field is packed. Only relevant when repeated and working with proto2. */
   val packed: Boolean = js.native
 }
-
 /* static members */
-@JSImport("protobufjs", "Field")
-@js.native
-object Field extends js.Object {
+object Field {
+  
+  @JSImport("protobufjs", "Field")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: optional | required | repeated
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: optional | required | repeated,
+    defaultValue: T
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](
+    fieldId: Double,
+    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes,
+    fieldRule: Unit,
+    defaultValue: T
+  ): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -97,134 +157,10 @@ object Field extends js.Object {
     * @param [defaultValue] Default value
     * @returns Decorator function
     */
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: optional
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: optional,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: optional,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: repeated
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: repeated,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: repeated,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: required
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: String
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: js.Object | bool | bytes | double | fixed32 | fixed64 | float | int32 | int64 | sfixed32 | sfixed64 | sint32 | sint64 | string | uint32 | uint64,
-    fieldRule: required,
-    defaultValue: js.Array[Boolean | Buffer | Double | Long | String | Uint8Array]
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Boolean
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Double
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Long
-  ): FieldDecorator = js.native
-  def d(
-    fieldId: Double,
-    fieldType: double | float | int32 | uint32 | sint32 | fixed32 | sfixed32 | int64 | uint64 | sint64 | fixed64 | sfixed64 | string | bool | bytes | js.Object,
-    fieldRule: required,
-    defaultValue: Uint8Array
-  ): FieldDecorator = js.native
-  def d[T /* <: Message[T] */](fieldId: Double, fieldType: String): FieldDecorator = js.native
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: optional | required | repeated, defaultValue: T): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Double | (js.Array[Boolean | js.typedarray.Uint8Array | Double | Long | String]) | Long | String | Boolean | js.typedarray.Uint8Array */](fieldId: Double, fieldType: js.Object, fieldRule: Unit, defaultValue: T): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
   /**
     * Field decorator (TypeScript).
     * @param fieldId Field id
@@ -232,19 +168,9 @@ object Field extends js.Object {
     * @param [fieldRule="optional"] Field rule
     * @returns Decorator function
     */
-  def d[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = js.native
-  @JSName("d")
-  def d_optional[T /* <: Message[T] */](fieldId: Double, fieldType: String, fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
-  def d_optional[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional): FieldDecorator = js.native
-  @JSName("d")
-  def d_repeated[T /* <: Message[T] */](fieldId: Double, fieldType: String, fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
-  def d_repeated[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: repeated): FieldDecorator = js.native
-  @JSName("d")
-  def d_required[T /* <: Message[T] */](fieldId: Double, fieldType: String, fieldRule: required): FieldDecorator = js.native
-  @JSName("d")
-  def d_required[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: required): FieldDecorator = js.native
+  inline def d[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T]): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  inline def d[T /* <: Message[T] */](fieldId: Double, fieldType: Constructor[T], fieldRule: optional | required | repeated): FieldDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("d")(fieldId.asInstanceOf[js.Any], fieldType.asInstanceOf[js.Any], fieldRule.asInstanceOf[js.Any])).asInstanceOf[FieldDecorator]
+  
   /**
     * Constructs a field from a field descriptor.
     * @param name Field name
@@ -252,6 +178,5 @@ object Field extends js.Object {
     * @returns Created field
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IField): Field = js.native
+  inline def fromJSON(name: String, json: IField): Field = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Field]
 }
-

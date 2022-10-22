@@ -1,11 +1,75 @@
 package typingsJapgolly.pinkyswear
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("pinkySwear")
-@js.native
-object pinkySwear extends TopLevel[PinkySwearStatic]
-
+object PinkySwear {
+  
+  @js.native
+  trait GenericPromise[T]
+    extends StObject
+       with Promise {
+    
+    /**
+      * Fulfill or reject the promise.
+      *
+      * @param fulfilled true to fulfill promise, false to reject
+      * @param value Value with which to fulfill or reject the promise
+      */
+    def apply(fulfilled: Boolean, value: T): Boolean = js.native
+    
+    /**
+      * onFulfilled is called when or if the promise is resolved.
+      * onRejected is called when or if the promise is rejected.
+      *
+      * @param onFulfilled Called when or if the promise is resolved.
+      * @param onRejected Called when or if the promise is rejected.
+      * @returns PinkySwear.GenericPromise
+      */
+    @JSName("then")
+    def then_G_GenericPromise[G](): GenericPromise[G] = js.native
+    @JSName("then")
+    def then_G_GenericPromise[G](onFulfilled: js.Function1[/* value */ T, G | GenericPromise[G]]): GenericPromise[G] = js.native
+    @JSName("then")
+    def then_G_GenericPromise[G](
+      onFulfilled: js.Function1[/* value */ T, G | GenericPromise[G]],
+      onRejected: js.Function1[(/* value */ T) | (/* error */ js.TypeError), Unit]
+    ): GenericPromise[G] = js.native
+    @JSName("then")
+    def then_G_GenericPromise[G](onFulfilled: Unit, onRejected: js.Function1[(/* value */ T) | (/* error */ js.TypeError), Unit]): GenericPromise[G] = js.native
+  }
+  
+  @js.native
+  trait Promise extends StObject {
+    
+    /**
+      * Get the promise's current state; true if fulfilled, false if rejected, and undefined, otherwise.
+      */
+    def apply(): Boolean = js.native
+    /**
+      * Fulfill or reject the promise.
+      *
+      * @param fulfilled true to fulfill promise, false to reject
+      * @param values Value(s) with which to fulfill or reject the promise
+      * @returns PinkySwear.Promise
+      */
+    def apply(fulfilled: Boolean, values: Any*): Promise = js.native
+    
+    /**
+      * onFulfilled is called when or if the promise is resolved.
+      * onRejected is called when or if the promise is rejected.
+      *
+      * @param onFulfilled Called when or if the promise is resolved.
+      * @param onRejected Called when or if the promise is rejected.
+      * @returns PinkySwear.Promise
+      */
+    def `then`(): Promise = js.native
+    def `then`(onFulfilled: js.Function1[/* repeated */ Any, this.type | Unit | Any]): Promise = js.native
+    def `then`(
+      onFulfilled: js.Function1[/* repeated */ Any, this.type | Unit | Any],
+      onRejected: js.Function1[/* repeated */ Any, Unit]
+    ): Promise = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* repeated */ Any, Unit]): Promise = js.native
+  }
+}

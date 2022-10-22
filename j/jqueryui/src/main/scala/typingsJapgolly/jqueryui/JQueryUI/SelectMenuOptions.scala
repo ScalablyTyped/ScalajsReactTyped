@@ -1,48 +1,57 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // SelectMenu //////////////////////////////////////////////////
-trait SelectMenuOptions extends SelectMenuEvents {
+trait SelectMenuOptions
+  extends StObject
+     with SelectMenuEvents {
+  
   var appendTo: js.UndefOr[String] = js.undefined
+  
+  var classes: js.UndefOr[SelectMenuClasses] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
+  
+  var icons: js.UndefOr[Any] = js.undefined
+  
   var position: js.UndefOr[JQueryPositionOptions] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object SelectMenuOptions {
-  @scala.inline
-  def apply(
-    appendTo: String = null,
-    change: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    close: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focus: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    icons: js.Any = null,
-    open: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    position: JQueryPositionOptions = null,
-    select: (/* event */ JQueryEventObject, /* ui */ SelectMenuUIParams) => Callback = null,
-    width: Int | Double = null
-  ): SelectMenuOptions = {
+  
+  inline def apply(): SelectMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => change(t0, t1).runNow()))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => close(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => create(t0, t1).runNow()))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => focus(t0, t1).runNow()))
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => open(t0, t1).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.SelectMenuUIParams) => select(t0, t1).runNow()))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectMenuOptions]
   }
+  
+  extension [Self <: SelectMenuOptions](x: Self) {
+    
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setClasses(value: SelectMenuClasses): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setPosition(value: JQueryPositionOptions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ Fast and efficient in-memory rate-limit for Node, used to alleviate severe DOS a
 | Full name          | fast-ratelimit |
 | Keywords           | ratelimit, rate-limit, rate, limit, attack, flood, security, dos, ddos |
 | # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 20754 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1164.0 |
+| # stars            | 98.0 |
 
 ## Links
 - [Homepage](https://github.com/valeriansaliou/node-fast-ratelimit)

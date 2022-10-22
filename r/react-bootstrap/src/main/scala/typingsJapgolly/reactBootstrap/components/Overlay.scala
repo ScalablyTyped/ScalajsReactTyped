@@ -1,68 +1,60 @@
 package typingsJapgolly.reactBootstrap.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ReactInstance
-import typingsJapgolly.reactBootstrap.overlayMod.OverlayProps
+import typingsJapgolly.reactBootstrap.libOverlayMod.OverlayProps
+import typingsJapgolly.reactBootstrap.reactBootstrapStrings.bottom
+import typingsJapgolly.reactBootstrap.reactBootstrapStrings.left
+import typingsJapgolly.reactBootstrap.reactBootstrapStrings.right
+import typingsJapgolly.reactBootstrap.reactBootstrapStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Overlay {
-  def apply(
-    animation: js.Any = null,
-    container: js.Any = null,
-    containerPadding: Int | Double = null,
-    onEnter: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntered: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onEntering: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExit: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExited: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onExiting: /* node */ HTMLElement => CallbackTo[js.Any] = null,
-    onHide: js.Function = null,
-    placement: String = null,
-    rootClose: js.UndefOr[Boolean] = js.undefined,
-    shouldUpdatePosition: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    target: js.Function | ReactInstance = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[OverlayProps, typingsJapgolly.reactBootstrap.mod.Overlay, Unit, OverlayProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerPadding != null) __obj.updateDynamic("containerPadding")(containerPadding.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEnter(t0).runNow()))
-    if (onEntered != null) __obj.updateDynamic("onEntered")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntered(t0).runNow()))
-    if (onEntering != null) __obj.updateDynamic("onEntering")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onEntering(t0).runNow()))
-    if (onExit != null) __obj.updateDynamic("onExit")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExit(t0).runNow()))
-    if (onExited != null) __obj.updateDynamic("onExited")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExited(t0).runNow()))
-    if (onExiting != null) __obj.updateDynamic("onExiting")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => onExiting(t0).runNow()))
-    if (onHide != null) __obj.updateDynamic("onHide")(onHide.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(rootClose)) __obj.updateDynamic("rootClose")(rootClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldUpdatePosition)) __obj.updateDynamic("shouldUpdatePosition")(shouldUpdatePosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrap.overlayMod.OverlayProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrap.mod.Overlay](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrap.overlayMod.OverlayProps])(children: _*)
-  }
   @JSImport("react-bootstrap", "Overlay")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrap.mod.Overlay] {
+    
+    inline def animation(value: Any): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def container(value: Any): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerPadding(value: Double): this.type = set("containerPadding", value.asInstanceOf[js.Any])
+    
+    inline def onEnter(value: /* node */ HTMLElement => Any): this.type = set("onEnter", js.Any.fromFunction1(value))
+    
+    inline def onEntered(value: /* node */ HTMLElement => Any): this.type = set("onEntered", js.Any.fromFunction1(value))
+    
+    inline def onEntering(value: /* node */ HTMLElement => Any): this.type = set("onEntering", js.Any.fromFunction1(value))
+    
+    inline def onExit(value: /* node */ HTMLElement => Any): this.type = set("onExit", js.Any.fromFunction1(value))
+    
+    inline def onExited(value: /* node */ HTMLElement => Any): this.type = set("onExited", js.Any.fromFunction1(value))
+    
+    inline def onExiting(value: /* node */ HTMLElement => Any): this.type = set("onExiting", js.Any.fromFunction1(value))
+    
+    inline def onHide(value: js.Function): this.type = set("onHide", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: top | right | bottom | left): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def rootClose(value: Boolean): this.type = set("rootClose", value.asInstanceOf[js.Any])
+    
+    inline def shouldUpdatePosition(value: Boolean): this.type = set("shouldUpdatePosition", value.asInstanceOf[js.Any])
+    
+    inline def show(value: Boolean): this.type = set("show", value.asInstanceOf[js.Any])
+    
+    inline def target(value: js.Function | ReactInstance): this.type = set("target", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Overlay.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: OverlayProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,10 +1,12 @@
-package typingsJapgolly.oracleOraclejet
+package typingsJapgolly.oracleOraclejet.ojbuttonMod
 
+import typingsJapgolly.oracleOraclejet.mod.baseComponentEventMap
+import typingsJapgolly.oracleOraclejet.mod.baseComponentSettableProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ojbuttonMod {
-  type ojButtonsetEventMap[SP /* <: typingsJapgolly.oracleOraclejet.ojbuttonMod.ojButtonsetSettableProperties */] = typingsJapgolly.oracleOraclejet.mod.baseComponentEventMap[SP]
-  type ojButtonsetSettableProperties = typingsJapgolly.oracleOraclejet.mod.baseComponentSettableProperties
-}
+
+type ojButtonsetEventMap[SP /* <: ojButtonsetSettableProperties */] = baseComponentEventMap[SP]
+
+type ojButtonsetSettableProperties = baseComponentSettableProperties

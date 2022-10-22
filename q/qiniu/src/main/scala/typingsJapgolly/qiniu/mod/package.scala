@@ -1,14 +1,12 @@
-package typingsJapgolly.qiniu
+package typingsJapgolly.qiniu.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type callback = js.Function3[
-    /* e */ js.UndefOr[js.Error], 
-    /* respBody */ js.UndefOr[js.Any], 
-    /* respInfo */ js.UndefOr[js.Any], 
-    scala.Unit
-  ]
-}
+
+type callback = js.Function3[
+/* e */ js.UndefOr[js.Error], 
+/* respBody */ js.UndefOr[Any], 
+/* respInfo */ js.UndefOr[Any], 
+Unit]

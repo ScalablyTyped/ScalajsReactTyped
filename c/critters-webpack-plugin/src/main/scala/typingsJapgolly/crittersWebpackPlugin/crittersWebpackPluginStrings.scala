@@ -1,49 +1,95 @@
 package typingsJapgolly.crittersWebpackPlugin
 
+import typingsJapgolly.crittersWebpackPlugin.mod.Critters.KeyframeStrategy
+import typingsJapgolly.crittersWebpackPlugin.mod.Critters.LogLevel
+import typingsJapgolly.crittersWebpackPlugin.mod.Critters.PreloadStrategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crittersWebpackPluginStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait all
+    extends StObject
+       with KeyframeStrategy
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait critical extends js.Object
+  sealed trait body
+    extends StObject
+       with PreloadStrategy
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait `js-lazy` extends js.Object
+  sealed trait critical
+    extends StObject
+       with KeyframeStrategy
+  inline def critical: critical = "critical".asInstanceOf[critical]
   
   @js.native
-  sealed trait js_ extends js.Object
+  sealed trait debug
+    extends StObject
+       with LogLevel
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait error
+    extends StObject
+       with LogLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait info
+    extends StObject
+       with LogLevel
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait swap extends js.Object
+  sealed trait `js-lazy`
+    extends StObject
+       with PreloadStrategy
+  inline def `js-lazy`: `js-lazy` = "js-lazy".asInstanceOf[`js-lazy`]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def critical: critical = "critical".asInstanceOf[critical]
-  @scala.inline
-  def `js-lazy`: `js-lazy` = "js-lazy".asInstanceOf[`js-lazy`]
-  @scala.inline
-  def js_ : js_ = "js".asInstanceOf[js_]
-  @scala.inline
-  def media: media = "media".asInstanceOf[media]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def swap: swap = "swap".asInstanceOf[swap]
+  @js.native
+  sealed trait js_
+    extends StObject
+       with PreloadStrategy
+  inline def js_ : js_ = "js".asInstanceOf[js_]
+  
+  @js.native
+  sealed trait media
+    extends StObject
+       with PreloadStrategy
+  inline def media: media = "media".asInstanceOf[media]
+  
+  @js.native
+  sealed trait none
+    extends StObject
+       with KeyframeStrategy
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait silent
+    extends StObject
+       with LogLevel
+  inline def silent: silent = "silent".asInstanceOf[silent]
+  
+  @js.native
+  sealed trait swap
+    extends StObject
+       with PreloadStrategy
+  inline def swap: swap = "swap".asInstanceOf[swap]
+  
+  @js.native
+  sealed trait trace
+    extends StObject
+       with LogLevel
+  inline def trace: trace = "trace".asInstanceOf[trace]
+  
+  @js.native
+  sealed trait warn
+    extends StObject
+       with LogLevel
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

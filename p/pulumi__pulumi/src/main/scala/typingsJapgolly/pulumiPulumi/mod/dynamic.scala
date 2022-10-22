@@ -3,15 +3,15 @@ package typingsJapgolly.pulumiPulumi.mod
 import typingsJapgolly.pulumiPulumi.dynamicMod.ResourceProvider
 import typingsJapgolly.pulumiPulumi.outputMod.Inputs
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi", "dynamic")
-@js.native
-object dynamic extends js.Object {
+object dynamic {
+  
+  /* note: abstract class */ @JSImport("@pulumi/pulumi", "dynamic.Resource")
   @js.native
-  abstract class Resource protected ()
+  open class Resource protected ()
     extends typingsJapgolly.pulumiPulumi.dynamicMod.Resource {
     /**
       * Creates a new dynamic resource.
@@ -25,6 +25,4 @@ object dynamic extends js.Object {
     def this(provider: ResourceProvider, name: String, props: Inputs) = this()
     def this(provider: ResourceProvider, name: String, props: Inputs, opts: CustomResourceOptions) = this()
   }
-  
 }
-

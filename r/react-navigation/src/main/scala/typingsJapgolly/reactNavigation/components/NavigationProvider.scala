@@ -1,37 +1,22 @@
 package typingsJapgolly.reactNavigation.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNavigation.AnonValue
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactNavigation.anon.Value
 import typingsJapgolly.reactNavigation.mod.NavigationProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavigationProvider {
-  def apply(
-    value: NavigationProp[_],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AnonValue, typingsJapgolly.reactNavigation.mod.NavigationProvider, Unit, AnonValue] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNavigation.AnonValue, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNavigation.mod.NavigationProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNavigation.AnonValue])(children: _*)
+  inline def apply(value: NavigationProp[Any]): Default[js.Object] = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[Value]))
   }
+  
   @JSImport("react-navigation", "NavigationProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: Value): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

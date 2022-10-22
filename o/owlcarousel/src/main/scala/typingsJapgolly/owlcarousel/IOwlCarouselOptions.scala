@@ -1,162 +1,311 @@
 package typingsJapgolly.owlcarousel
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IOwlCarouselOptions extends js.Object {
+trait IOwlCarouselOptions extends StObject {
+  
   var addClassActive: js.UndefOr[Boolean] = js.undefined
-  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
+  var afterInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
+  var afterLazyLoad: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
+  var afterMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
+  var afterUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
   var autoHeight: js.UndefOr[Boolean] = js.undefined
-  var autoPlay: js.UndefOr[js.Any] = js.undefined
+  
+  var autoPlay: js.UndefOr[Any] = js.undefined
+  
   var baseClass: js.UndefOr[String] = js.undefined
-  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
-  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  var beforeInit: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
+  var beforeMove: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
   // callbacks
-  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  var beforeUpdate: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
   var dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined
+  
   // options
   var items: js.UndefOr[Double] = js.undefined
-  var itemsCustom: js.UndefOr[js.Any] = js.undefined
+  
+  var itemsCustom: js.UndefOr[Any] = js.undefined
+  
   var itemsDesktop: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var itemsDesktopSmall: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var itemsMobile: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var itemsScaleUp: js.UndefOr[Boolean] = js.undefined
+  
   var itemsTablet: js.UndefOr[js.Array[Double]] = js.undefined
-  var itemsTabletSmall: js.UndefOr[js.Any] = js.undefined
-  var jsonPath: js.UndefOr[js.Any] = js.undefined
-  var jsonSuccess: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
-  var lazyEffect: js.UndefOr[js.Any] = js.undefined
+  
+  var itemsTabletSmall: js.UndefOr[Any] = js.undefined
+  
+  var jsonPath: js.UndefOr[Any] = js.undefined
+  
+  var jsonSuccess: js.UndefOr[js.Function1[/* data */ Any, Unit]] = js.undefined
+  
+  var lazyEffect: js.UndefOr[Any] = js.undefined
+  
   var lazyFollow: js.UndefOr[Boolean] = js.undefined
+  
   var lazyLoad: js.UndefOr[Boolean] = js.undefined
+  
   var loop: js.UndefOr[Boolean] = js.undefined
+  
   var mouseDrag: js.UndefOr[Boolean] = js.undefined
+  
   var nav: js.UndefOr[Boolean] = js.undefined
+  
   var navigation: js.UndefOr[Boolean] = js.undefined
-  var navigationText: js.UndefOr[js.Any] = js.undefined
+  
+  var navigationText: js.UndefOr[Any] = js.undefined
+  
   var pagination: js.UndefOr[Boolean] = js.undefined
+  
   var paginationNumbers: js.UndefOr[Boolean] = js.undefined
+  
   var paginationSpeed: js.UndefOr[Double] = js.undefined
+  
   var responsive: js.UndefOr[Boolean] = js.undefined
+  
   var responsiveBaseWidth: js.UndefOr[JQuery | String] = js.undefined
+  
   var responsiveRefreshRate: js.UndefOr[Double] = js.undefined
+  
   var rewindNav: js.UndefOr[Boolean] = js.undefined
+  
   var rewindSpeed: js.UndefOr[Double] = js.undefined
+  
   var scrollPerPage: js.UndefOr[Boolean] = js.undefined
+  
   var singleItem: js.UndefOr[Boolean] = js.undefined
+  
   var slideSpeed: js.UndefOr[Double] = js.undefined
-  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  var startDragging: js.UndefOr[js.Function1[/* params */ js.UndefOr[Any], Unit]] = js.undefined
+  
   var stopOnHover: js.UndefOr[Boolean] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
+  
   var touchDrag: js.UndefOr[Boolean] = js.undefined
-  var transitionStyle: js.UndefOr[js.Any] = js.undefined
+  
+  var transitionStyle: js.UndefOr[Any] = js.undefined
 }
-
 object IOwlCarouselOptions {
-  @scala.inline
-  def apply(
-    addClassActive: js.UndefOr[Boolean] = js.undefined,
-    afterAction: /* params */ js.UndefOr[js.Any] => Callback = null,
-    afterInit: /* params */ js.UndefOr[js.Any] => Callback = null,
-    afterLazyLoad: /* params */ js.UndefOr[js.Any] => Callback = null,
-    afterMove: /* params */ js.UndefOr[js.Any] => Callback = null,
-    afterUpdate: /* params */ js.UndefOr[js.Any] => Callback = null,
-    autoHeight: js.UndefOr[Boolean] = js.undefined,
-    autoPlay: js.Any = null,
-    baseClass: String = null,
-    beforeInit: /* params */ js.UndefOr[js.Any] => Callback = null,
-    beforeMove: /* params */ js.UndefOr[js.Any] => Callback = null,
-    beforeUpdate: /* params */ js.UndefOr[js.Any] => Callback = null,
-    dragBeforeAnimFinish: js.UndefOr[Boolean] = js.undefined,
-    items: Int | Double = null,
-    itemsCustom: js.Any = null,
-    itemsDesktop: js.Array[Double] = null,
-    itemsDesktopSmall: js.Array[Double] = null,
-    itemsMobile: js.Array[Double] = null,
-    itemsScaleUp: js.UndefOr[Boolean] = js.undefined,
-    itemsTablet: js.Array[Double] = null,
-    itemsTabletSmall: js.Any = null,
-    jsonPath: js.Any = null,
-    jsonSuccess: /* data */ js.Any => Callback = null,
-    lazyEffect: js.Any = null,
-    lazyFollow: js.UndefOr[Boolean] = js.undefined,
-    lazyLoad: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    mouseDrag: js.UndefOr[Boolean] = js.undefined,
-    nav: js.UndefOr[Boolean] = js.undefined,
-    navigation: js.UndefOr[Boolean] = js.undefined,
-    navigationText: js.Any = null,
-    pagination: js.UndefOr[Boolean] = js.undefined,
-    paginationNumbers: js.UndefOr[Boolean] = js.undefined,
-    paginationSpeed: Int | Double = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    responsiveBaseWidth: JQuery | String = null,
-    responsiveRefreshRate: Int | Double = null,
-    rewindNav: js.UndefOr[Boolean] = js.undefined,
-    rewindSpeed: Int | Double = null,
-    scrollPerPage: js.UndefOr[Boolean] = js.undefined,
-    singleItem: js.UndefOr[Boolean] = js.undefined,
-    slideSpeed: Int | Double = null,
-    startDragging: /* params */ js.UndefOr[js.Any] => Callback = null,
-    stopOnHover: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null,
-    touchDrag: js.UndefOr[Boolean] = js.undefined,
-    transitionStyle: js.Any = null
-  ): IOwlCarouselOptions = {
+  
+  inline def apply(): IOwlCarouselOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(addClassActive)) __obj.updateDynamic("addClassActive")(addClassActive.asInstanceOf[js.Any])
-    if (afterAction != null) __obj.updateDynamic("afterAction")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => afterAction(t0).runNow()))
-    if (afterInit != null) __obj.updateDynamic("afterInit")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => afterInit(t0).runNow()))
-    if (afterLazyLoad != null) __obj.updateDynamic("afterLazyLoad")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => afterLazyLoad(t0).runNow()))
-    if (afterMove != null) __obj.updateDynamic("afterMove")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => afterMove(t0).runNow()))
-    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => afterUpdate(t0).runNow()))
-    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight.asInstanceOf[js.Any])
-    if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay.asInstanceOf[js.Any])
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (beforeInit != null) __obj.updateDynamic("beforeInit")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => beforeInit(t0).runNow()))
-    if (beforeMove != null) __obj.updateDynamic("beforeMove")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => beforeMove(t0).runNow()))
-    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => beforeUpdate(t0).runNow()))
-    if (!js.isUndefined(dragBeforeAnimFinish)) __obj.updateDynamic("dragBeforeAnimFinish")(dragBeforeAnimFinish.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (itemsCustom != null) __obj.updateDynamic("itemsCustom")(itemsCustom.asInstanceOf[js.Any])
-    if (itemsDesktop != null) __obj.updateDynamic("itemsDesktop")(itemsDesktop.asInstanceOf[js.Any])
-    if (itemsDesktopSmall != null) __obj.updateDynamic("itemsDesktopSmall")(itemsDesktopSmall.asInstanceOf[js.Any])
-    if (itemsMobile != null) __obj.updateDynamic("itemsMobile")(itemsMobile.asInstanceOf[js.Any])
-    if (!js.isUndefined(itemsScaleUp)) __obj.updateDynamic("itemsScaleUp")(itemsScaleUp.asInstanceOf[js.Any])
-    if (itemsTablet != null) __obj.updateDynamic("itemsTablet")(itemsTablet.asInstanceOf[js.Any])
-    if (itemsTabletSmall != null) __obj.updateDynamic("itemsTabletSmall")(itemsTabletSmall.asInstanceOf[js.Any])
-    if (jsonPath != null) __obj.updateDynamic("jsonPath")(jsonPath.asInstanceOf[js.Any])
-    if (jsonSuccess != null) __obj.updateDynamic("jsonSuccess")(js.Any.fromFunction1((t0: /* data */ js.Any) => jsonSuccess(t0).runNow()))
-    if (lazyEffect != null) __obj.updateDynamic("lazyEffect")(lazyEffect.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyFollow)) __obj.updateDynamic("lazyFollow")(lazyFollow.asInstanceOf[js.Any])
-    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag.asInstanceOf[js.Any])
-    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation.asInstanceOf[js.Any])
-    if (navigationText != null) __obj.updateDynamic("navigationText")(navigationText.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (!js.isUndefined(paginationNumbers)) __obj.updateDynamic("paginationNumbers")(paginationNumbers.asInstanceOf[js.Any])
-    if (paginationSpeed != null) __obj.updateDynamic("paginationSpeed")(paginationSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (responsiveBaseWidth != null) __obj.updateDynamic("responsiveBaseWidth")(responsiveBaseWidth.asInstanceOf[js.Any])
-    if (responsiveRefreshRate != null) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(rewindNav)) __obj.updateDynamic("rewindNav")(rewindNav.asInstanceOf[js.Any])
-    if (rewindSpeed != null) __obj.updateDynamic("rewindSpeed")(rewindSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollPerPage)) __obj.updateDynamic("scrollPerPage")(scrollPerPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleItem)) __obj.updateDynamic("singleItem")(singleItem.asInstanceOf[js.Any])
-    if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
-    if (startDragging != null) __obj.updateDynamic("startDragging")(js.Any.fromFunction1((t0: /* params */ js.UndefOr[js.Any]) => startDragging(t0).runNow()))
-    if (!js.isUndefined(stopOnHover)) __obj.updateDynamic("stopOnHover")(stopOnHover.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag.asInstanceOf[js.Any])
-    if (transitionStyle != null) __obj.updateDynamic("transitionStyle")(transitionStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOwlCarouselOptions]
   }
+  
+  extension [Self <: IOwlCarouselOptions](x: Self) {
+    
+    inline def setAddClassActive(value: Boolean): Self = StObject.set(x, "addClassActive", value.asInstanceOf[js.Any])
+    
+    inline def setAddClassActiveUndefined: Self = StObject.set(x, "addClassActive", js.undefined)
+    
+    inline def setAfterAction(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterAction", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterActionUndefined: Self = StObject.set(x, "afterAction", js.undefined)
+    
+    inline def setAfterInit(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterInit", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterInitUndefined: Self = StObject.set(x, "afterInit", js.undefined)
+    
+    inline def setAfterLazyLoad(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterLazyLoad", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterLazyLoadUndefined: Self = StObject.set(x, "afterLazyLoad", js.undefined)
+    
+    inline def setAfterMove(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterMove", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterMoveUndefined: Self = StObject.set(x, "afterMove", js.undefined)
+    
+    inline def setAfterUpdate(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "afterUpdate", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    
+    inline def setAutoHeight(value: Boolean): Self = StObject.set(x, "autoHeight", value.asInstanceOf[js.Any])
+    
+    inline def setAutoHeightUndefined: Self = StObject.set(x, "autoHeight", js.undefined)
+    
+    inline def setAutoPlay(value: Any): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPlayUndefined: Self = StObject.set(x, "autoPlay", js.undefined)
+    
+    inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
+    
+    inline def setBaseClassUndefined: Self = StObject.set(x, "baseClass", js.undefined)
+    
+    inline def setBeforeInit(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "beforeInit", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBeforeInitUndefined: Self = StObject.set(x, "beforeInit", js.undefined)
+    
+    inline def setBeforeMove(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "beforeMove", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBeforeMoveUndefined: Self = StObject.set(x, "beforeMove", js.undefined)
+    
+    inline def setBeforeUpdate(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "beforeUpdate", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
+    
+    inline def setDragBeforeAnimFinish(value: Boolean): Self = StObject.set(x, "dragBeforeAnimFinish", value.asInstanceOf[js.Any])
+    
+    inline def setDragBeforeAnimFinishUndefined: Self = StObject.set(x, "dragBeforeAnimFinish", js.undefined)
+    
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsCustom(value: Any): Self = StObject.set(x, "itemsCustom", value.asInstanceOf[js.Any])
+    
+    inline def setItemsCustomUndefined: Self = StObject.set(x, "itemsCustom", js.undefined)
+    
+    inline def setItemsDesktop(value: js.Array[Double]): Self = StObject.set(x, "itemsDesktop", value.asInstanceOf[js.Any])
+    
+    inline def setItemsDesktopSmall(value: js.Array[Double]): Self = StObject.set(x, "itemsDesktopSmall", value.asInstanceOf[js.Any])
+    
+    inline def setItemsDesktopSmallUndefined: Self = StObject.set(x, "itemsDesktopSmall", js.undefined)
+    
+    inline def setItemsDesktopSmallVarargs(value: Double*): Self = StObject.set(x, "itemsDesktopSmall", js.Array(value*))
+    
+    inline def setItemsDesktopUndefined: Self = StObject.set(x, "itemsDesktop", js.undefined)
+    
+    inline def setItemsDesktopVarargs(value: Double*): Self = StObject.set(x, "itemsDesktop", js.Array(value*))
+    
+    inline def setItemsMobile(value: js.Array[Double]): Self = StObject.set(x, "itemsMobile", value.asInstanceOf[js.Any])
+    
+    inline def setItemsMobileUndefined: Self = StObject.set(x, "itemsMobile", js.undefined)
+    
+    inline def setItemsMobileVarargs(value: Double*): Self = StObject.set(x, "itemsMobile", js.Array(value*))
+    
+    inline def setItemsScaleUp(value: Boolean): Self = StObject.set(x, "itemsScaleUp", value.asInstanceOf[js.Any])
+    
+    inline def setItemsScaleUpUndefined: Self = StObject.set(x, "itemsScaleUp", js.undefined)
+    
+    inline def setItemsTablet(value: js.Array[Double]): Self = StObject.set(x, "itemsTablet", value.asInstanceOf[js.Any])
+    
+    inline def setItemsTabletSmall(value: Any): Self = StObject.set(x, "itemsTabletSmall", value.asInstanceOf[js.Any])
+    
+    inline def setItemsTabletSmallUndefined: Self = StObject.set(x, "itemsTabletSmall", js.undefined)
+    
+    inline def setItemsTabletUndefined: Self = StObject.set(x, "itemsTablet", js.undefined)
+    
+    inline def setItemsTabletVarargs(value: Double*): Self = StObject.set(x, "itemsTablet", js.Array(value*))
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setJsonPath(value: Any): Self = StObject.set(x, "jsonPath", value.asInstanceOf[js.Any])
+    
+    inline def setJsonPathUndefined: Self = StObject.set(x, "jsonPath", js.undefined)
+    
+    inline def setJsonSuccess(value: /* data */ Any => Callback): Self = StObject.set(x, "jsonSuccess", js.Any.fromFunction1((t0: /* data */ Any) => value(t0).runNow()))
+    
+    inline def setJsonSuccessUndefined: Self = StObject.set(x, "jsonSuccess", js.undefined)
+    
+    inline def setLazyEffect(value: Any): Self = StObject.set(x, "lazyEffect", value.asInstanceOf[js.Any])
+    
+    inline def setLazyEffectUndefined: Self = StObject.set(x, "lazyEffect", js.undefined)
+    
+    inline def setLazyFollow(value: Boolean): Self = StObject.set(x, "lazyFollow", value.asInstanceOf[js.Any])
+    
+    inline def setLazyFollowUndefined: Self = StObject.set(x, "lazyFollow", js.undefined)
+    
+    inline def setLazyLoad(value: Boolean): Self = StObject.set(x, "lazyLoad", value.asInstanceOf[js.Any])
+    
+    inline def setLazyLoadUndefined: Self = StObject.set(x, "lazyLoad", js.undefined)
+    
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setMouseDrag(value: Boolean): Self = StObject.set(x, "mouseDrag", value.asInstanceOf[js.Any])
+    
+    inline def setMouseDragUndefined: Self = StObject.set(x, "mouseDrag", js.undefined)
+    
+    inline def setNav(value: Boolean): Self = StObject.set(x, "nav", value.asInstanceOf[js.Any])
+    
+    inline def setNavUndefined: Self = StObject.set(x, "nav", js.undefined)
+    
+    inline def setNavigation(value: Boolean): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationText(value: Any): Self = StObject.set(x, "navigationText", value.asInstanceOf[js.Any])
+    
+    inline def setNavigationTextUndefined: Self = StObject.set(x, "navigationText", js.undefined)
+    
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    
+    inline def setPagination(value: Boolean): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationNumbers(value: Boolean): Self = StObject.set(x, "paginationNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationNumbersUndefined: Self = StObject.set(x, "paginationNumbers", js.undefined)
+    
+    inline def setPaginationSpeed(value: Double): Self = StObject.set(x, "paginationSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setPaginationSpeedUndefined: Self = StObject.set(x, "paginationSpeed", js.undefined)
+    
+    inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+    
+    inline def setResponsive(value: Boolean): Self = StObject.set(x, "responsive", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveBaseWidth(value: JQuery | String): Self = StObject.set(x, "responsiveBaseWidth", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveBaseWidthUndefined: Self = StObject.set(x, "responsiveBaseWidth", js.undefined)
+    
+    inline def setResponsiveRefreshRate(value: Double): Self = StObject.set(x, "responsiveRefreshRate", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveRefreshRateUndefined: Self = StObject.set(x, "responsiveRefreshRate", js.undefined)
+    
+    inline def setResponsiveUndefined: Self = StObject.set(x, "responsive", js.undefined)
+    
+    inline def setRewindNav(value: Boolean): Self = StObject.set(x, "rewindNav", value.asInstanceOf[js.Any])
+    
+    inline def setRewindNavUndefined: Self = StObject.set(x, "rewindNav", js.undefined)
+    
+    inline def setRewindSpeed(value: Double): Self = StObject.set(x, "rewindSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setRewindSpeedUndefined: Self = StObject.set(x, "rewindSpeed", js.undefined)
+    
+    inline def setScrollPerPage(value: Boolean): Self = StObject.set(x, "scrollPerPage", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPerPageUndefined: Self = StObject.set(x, "scrollPerPage", js.undefined)
+    
+    inline def setSingleItem(value: Boolean): Self = StObject.set(x, "singleItem", value.asInstanceOf[js.Any])
+    
+    inline def setSingleItemUndefined: Self = StObject.set(x, "singleItem", js.undefined)
+    
+    inline def setSlideSpeed(value: Double): Self = StObject.set(x, "slideSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setSlideSpeedUndefined: Self = StObject.set(x, "slideSpeed", js.undefined)
+    
+    inline def setStartDragging(value: /* params */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "startDragging", js.Any.fromFunction1((t0: /* params */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setStartDraggingUndefined: Self = StObject.set(x, "startDragging", js.undefined)
+    
+    inline def setStopOnHover(value: Boolean): Self = StObject.set(x, "stopOnHover", value.asInstanceOf[js.Any])
+    
+    inline def setStopOnHoverUndefined: Self = StObject.set(x, "stopOnHover", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setTouchDrag(value: Boolean): Self = StObject.set(x, "touchDrag", value.asInstanceOf[js.Any])
+    
+    inline def setTouchDragUndefined: Self = StObject.set(x, "touchDrag", js.undefined)
+    
+    inline def setTransitionStyle(value: Any): Self = StObject.set(x, "transitionStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionStyleUndefined: Self = StObject.set(x, "transitionStyle", js.undefined)
+  }
 }
-

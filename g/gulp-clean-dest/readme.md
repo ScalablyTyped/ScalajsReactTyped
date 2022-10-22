@@ -11,14 +11,11 @@ A gulp plugin for removing files from the dest directory prior to building
 | Full name          | gulp-clean-dest |
 | Keywords           | gulp, gulpplugin, delete, clean, remove, dest |
 | # releases         | 1 |
-| # dependents       | 2 |
-| # downloads        | 45602 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3823.6666666666665 |
+| # stars            | 2.0 |
 
 ## Links
-- [Homepage](https://github.com/clark800/gulp-clean-dest)
-- [Bugs](https://github.com/clark800/gulp-clean-dest/issues)
-- [Repository](https://github.com/clark800/gulp-clean-dest)
 - [Npm](https://www.npmjs.com/package/gulp-clean-dest)
     
 

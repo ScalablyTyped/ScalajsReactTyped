@@ -1,7 +1,7 @@
 
 # Scala.js typings for uuid
 
-Typings are for version 7.0
+Typings are for version 8.3
 
 ## Library description:
 RFC4122 (v1, v4, and v5) UUIDs
@@ -10,10 +10,10 @@ RFC4122 (v1, v4, and v5) UUIDs
 | ------------------ | :-------------: |
 | Full name          | uuid |
 | Keywords           | uuid, guid, rfc4122 |
-| # releases         | 5 |
-| # dependents       | 13638 |
-| # downloads        | 863386775 |
-| # stars            | 313 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 2.690896636666667E8 |
+| # stars            | 12616.0 |
 
 ## Links
 - [Homepage](https://github.com/uuidjs/uuid#readme)

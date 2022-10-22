@@ -1,41 +1,39 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IBGPosition extends js.Object
-
+sealed trait IBGPosition extends StObject
 @JSImport("instabug-reactnative", "IBGPosition")
 @js.native
-object IBGPosition extends js.Object {
-  @js.native
-  sealed trait bottomLeft extends IBGPosition
-  
-  @js.native
-  sealed trait bottomRight extends IBGPosition
-  
-  @js.native
-  sealed trait topLeft extends IBGPosition
-  
-  @js.native
-  sealed trait topRight extends IBGPosition
+object IBGPosition extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IBGPosition with Double] = js.native
-  /* 2 */ @js.native
-  object bottomLeft extends TopLevel[bottomLeft with Double]
+  def apply(value: Double): js.UndefOr[IBGPosition & Double] = js.native
   
-  /* 0 */ @js.native
-  object bottomRight extends TopLevel[bottomRight with Double]
+  @js.native
+  sealed trait bottomLeft
+    extends StObject
+       with IBGPosition
+  /* 2 */ val bottomLeft: typingsJapgolly.instabugReactnative.mod.IBGPosition.bottomLeft & Double = js.native
   
-  /* 3 */ @js.native
-  object topLeft extends TopLevel[topLeft with Double]
+  @js.native
+  sealed trait bottomRight
+    extends StObject
+       with IBGPosition
+  /* 0 */ val bottomRight: typingsJapgolly.instabugReactnative.mod.IBGPosition.bottomRight & Double = js.native
   
-  /* 1 */ @js.native
-  object topRight extends TopLevel[topRight with Double]
+  @js.native
+  sealed trait topLeft
+    extends StObject
+       with IBGPosition
+  /* 3 */ val topLeft: typingsJapgolly.instabugReactnative.mod.IBGPosition.topLeft & Double = js.native
   
+  @js.native
+  sealed trait topRight
+    extends StObject
+       with IBGPosition
+  /* 1 */ val topRight: typingsJapgolly.instabugReactnative.mod.IBGPosition.topRight & Double = js.native
 }
-

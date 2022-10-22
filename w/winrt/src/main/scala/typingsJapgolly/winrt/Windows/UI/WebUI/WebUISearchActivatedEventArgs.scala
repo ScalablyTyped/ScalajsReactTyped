@@ -4,26 +4,25 @@ import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ActivationKind
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ApplicationExecutionState
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.ISearchActivatedEventArgs
 import typingsJapgolly.winrt.Windows.ApplicationModel.Activation.SplashScreen
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.WebUI.WebUISearchActivatedEventArgs")
-@js.native
-class WebUISearchActivatedEventArgs ()
-  extends ISearchActivatedEventArgs
-     with IActivatedEventArgsDeferral {
-  /* CompleteClass */
-  override var activatedOperation: ActivatedOperation = js.native
-  /* CompleteClass */
-  override var kind: ActivationKind = js.native
-  /* CompleteClass */
-  override var language: String = js.native
-  /* CompleteClass */
-  override var previousExecutionState: ApplicationExecutionState = js.native
-  /* CompleteClass */
-  override var queryText: String = js.native
-  /* CompleteClass */
-  override var splashScreen: SplashScreen = js.native
+trait WebUISearchActivatedEventArgs
+  extends StObject
+     with ISearchActivatedEventArgs
+     with IActivatedEventArgsDeferral
+object WebUISearchActivatedEventArgs {
+  
+  inline def apply(
+    activatedOperation: ActivatedOperation,
+    kind: ActivationKind,
+    language: String,
+    previousExecutionState: ApplicationExecutionState,
+    queryText: String,
+    splashScreen: SplashScreen
+  ): WebUISearchActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(activatedOperation = activatedOperation.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], previousExecutionState = previousExecutionState.asInstanceOf[js.Any], queryText = queryText.asInstanceOf[js.Any], splashScreen = splashScreen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebUISearchActivatedEventArgs]
+  }
 }
-

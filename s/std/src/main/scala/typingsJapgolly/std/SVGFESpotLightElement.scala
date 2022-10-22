@@ -1,24 +1,60 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feSpotLight> element. */
 @js.native
-trait SVGFESpotLightElement extends SVGElement {
-  val limitingConeAngle: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val pointsAtX: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val pointsAtY: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val pointsAtZ: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val specularExponent: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val x: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val y: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val z: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
+trait SVGFESpotLightElement
+  extends StObject
+     with SVGElement {
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  
+  /* standard dom */
+  val limitingConeAngle: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val pointsAtX: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val pointsAtY: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val pointsAtZ: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  val specularExponent: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val x: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val y: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val z: org.scalajs.dom.SVGAnimatedNumber = js.native
 }
-
-@JSGlobal("SVGFESpotLightElement")
-@js.native
-object SVGFESpotLightElement extends Instantiable0[SVGFESpotLightElement]
-

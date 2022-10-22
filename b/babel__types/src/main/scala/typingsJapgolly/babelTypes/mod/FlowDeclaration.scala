@@ -1,25 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.CommonJS
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareClass
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareExportAllDeclaration
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareExportDeclaration
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareFunction
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareInterface
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareModule
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareModuleExports
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareOpaqueType
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareTypeAlias
-import typingsJapgolly.babelTypes.babelTypesStrings.DeclareVariable
-import typingsJapgolly.babelTypes.babelTypesStrings.ES
-import typingsJapgolly.babelTypes.babelTypesStrings.InterfaceDeclaration
-import typingsJapgolly.babelTypes.babelTypesStrings.OpaqueType
-import typingsJapgolly.babelTypes.babelTypesStrings.TypeAlias
-import typingsJapgolly.babelTypes.babelTypesStrings.`type`
-import typingsJapgolly.babelTypes.babelTypesStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.DeclareClass_
@@ -36,337 +19,89 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.OpaqueType_
   - typingsJapgolly.babelTypes.mod.TypeAlias_
 */
-trait FlowDeclaration extends _Node
-
+trait FlowDeclaration
+  extends StObject
+     with _Node
 object FlowDeclaration {
-  @scala.inline
-  def DeclareTypeAlias_(
-    id: Identifier_,
-    right: FlowType,
-    `type`: DeclareTypeAlias,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareClass_(body: ObjectTypeAnnotation_, id: Identifier_): typingsJapgolly.babelTypes.mod.DeclareClass_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareClass")
+    __obj.updateDynamic("extends")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareClass_]
   }
-  @scala.inline
-  def DeclareClass_(
-    body: ObjectTypeAnnotation_,
-    id: Identifier_,
-    `type`: DeclareClass,
-    end: Int | Double = null,
-    `extends`: js.Array[InterfaceExtends_] = null,
-    implements: js.Array[ClassImplements_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    mixins: js.Array[InterfaceExtends_] = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareExportAllDeclaration_(source: StringLiteral_): typingsJapgolly.babelTypes.mod.DeclareExportAllDeclaration_ = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareExportAllDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareExportAllDeclaration_]
   }
-  @scala.inline
-  def InterfaceDeclaration_(
-    body: ObjectTypeAnnotation_,
-    id: Identifier_,
-    `type`: InterfaceDeclaration,
-    end: Int | Double = null,
-    `extends`: js.Array[InterfaceExtends_] = null,
-    implements: js.Array[ClassImplements_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    mixins: js.Array[InterfaceExtends_] = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareExportDeclaration_(): typingsJapgolly.babelTypes.mod.DeclareExportDeclaration_ = {
+    val __obj = js.Dynamic.literal(declaration = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, source = null, specifiers = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareExportDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareExportDeclaration_]
   }
-  @scala.inline
-  def DeclareExportDeclaration_(
-    `type`: DeclareExportDeclaration,
-    declaration: Flow = null,
-    default: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    source: StringLiteral_ = null,
-    specifiers: js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_] = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareFunction_(id: Identifier_): typingsJapgolly.babelTypes.mod.DeclareFunction_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, predicate = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareFunction")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareFunction_]
   }
-  @scala.inline
-  def DeclareInterface_(
-    body: ObjectTypeAnnotation_,
-    id: Identifier_,
-    `type`: DeclareInterface,
-    end: Int | Double = null,
-    `extends`: js.Array[InterfaceExtends_] = null,
-    implements: js.Array[ClassImplements_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    mixins: js.Array[InterfaceExtends_] = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (implements != null) __obj.updateDynamic("implements")(implements.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareInterface_(body: ObjectTypeAnnotation_, id: Identifier_): typingsJapgolly.babelTypes.mod.DeclareInterface_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareInterface")
+    __obj.updateDynamic("extends")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareInterface_]
   }
-  @scala.inline
-  def DeclareModule_(
-    body: BlockStatement_,
-    id: Identifier_ | StringLiteral_,
-    `type`: DeclareModule,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    kind: CommonJS | ES = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (kind != null) __obj.updateDynamic("kind")(kind.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareModuleExports_(typeAnnotation: TypeAnnotation_): typingsJapgolly.babelTypes.mod.DeclareModuleExports_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareModuleExports")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareModuleExports_]
   }
-  @scala.inline
-  def OpaqueType_(
-    id: Identifier_,
-    impltype: FlowType,
-    `type`: OpaqueType,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    supertype: FlowType = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (supertype != null) __obj.updateDynamic("supertype")(supertype.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareModule_(body: BlockStatement_, id: Identifier_ | StringLiteral_): typingsJapgolly.babelTypes.mod.DeclareModule_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, innerComments = null, kind = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareModule")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareModule_]
   }
-  @scala.inline
-  def TypeAlias_(
-    id: Identifier_,
-    right: FlowType,
-    `type`: TypeAlias,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareOpaqueType_(id: Identifier_): typingsJapgolly.babelTypes.mod.DeclareOpaqueType_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, impltype = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareOpaqueType")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareOpaqueType_]
   }
-  @scala.inline
-  def DeclareOpaqueType_(
-    id: Identifier_,
-    `type`: DeclareOpaqueType,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    supertype: FlowType = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (supertype != null) __obj.updateDynamic("supertype")(supertype.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareTypeAlias_(id: Identifier_, right: FlowType): typingsJapgolly.babelTypes.mod.DeclareTypeAlias_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareTypeAlias")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareTypeAlias_]
   }
-  @scala.inline
-  def DeclareVariable_(
-    id: Identifier_,
-    `type`: DeclareVariable,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def DeclareVariable_(id: Identifier_): typingsJapgolly.babelTypes.mod.DeclareVariable_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareVariable")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DeclareVariable_]
   }
-  @scala.inline
-  def DeclareExportAllDeclaration_(
-    source: StringLiteral_,
-    `type`: DeclareExportAllDeclaration,
-    end: Int | Double = null,
-    exportKind: `type` | value = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (exportKind != null) __obj.updateDynamic("exportKind")(exportKind.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def InterfaceDeclaration_(body: ObjectTypeAnnotation_, id: Identifier_): typingsJapgolly.babelTypes.mod.InterfaceDeclaration_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], end = null, implements = null, innerComments = null, leadingComments = null, loc = null, mixins = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("InterfaceDeclaration")
+    __obj.updateDynamic("extends")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.InterfaceDeclaration_]
   }
-  @scala.inline
-  def DeclareModuleExports_(
-    `type`: DeclareModuleExports,
-    typeAnnotation: TypeAnnotation_,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def OpaqueType_(id: Identifier_, impltype: FlowType): typingsJapgolly.babelTypes.mod.OpaqueType_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = impltype.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("OpaqueType")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.OpaqueType_]
   }
-  @scala.inline
-  def DeclareFunction_(
-    id: Identifier_,
-    `type`: DeclareFunction,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    predicate: DeclaredPredicate_ = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowDeclaration = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (predicate != null) __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowDeclaration]
+  
+  inline def TypeAlias_(id: Identifier_, right: FlowType): typingsJapgolly.babelTypes.mod.TypeAlias_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TypeAlias")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TypeAlias_]
   }
 }
-

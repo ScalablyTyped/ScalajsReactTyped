@@ -10,15 +10,12 @@ File system persister for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/persister-fs |
 | Keywords           | polly, pollyjs, record, replay, fs, file |
-| # releases         | 19 |
-| # dependents       | 3 |
-| # downloads        | 224547 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 297459.3333333333 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fpersister-fs)
     
 

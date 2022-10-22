@@ -1,15 +1,19 @@
 package typingsJapgolly.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("seen", "ShaderUtils")
-@js.native
-object ShaderUtils extends js.Object {
-  def applyAmbient(c: Color, light: Light): Unit = js.native
-  def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point): Unit = js.native
-  def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = js.native
-  def applyDiffuseAndSpecular(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = js.native
+object ShaderUtils {
+  
+  @JSImport("seen", "ShaderUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def applyAmbient(c: Color, light: Light): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAmbient")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyDiffuse(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuse")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def applyDiffuseAndSpecular(c: Color, light: Light, lightNormal: Point, surfaceNormal: Point, material: Material): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDiffuseAndSpecular")(c.asInstanceOf[js.Any], light.asInstanceOf[js.Any], lightNormal.asInstanceOf[js.Any], surfaceNormal.asInstanceOf[js.Any], material.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

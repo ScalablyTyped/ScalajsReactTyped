@@ -1,48 +1,50 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTileManagerSplitterOptionsEvents
-  extends /**
-	 * Option for IgTileManagerSplitterOptionsEvents
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Event fired after collapsing is performed. Not cancellable.
-  	 *
-  	 *                     Function takes arguments evt and ui.
-  	 *                     Use ui.owner to get a reference to the splitter instance.
-  	 *                     Use ui.index to get an index of collased panel.
-  	 */
-  var collapsed: js.UndefOr[js.Any] = js.undefined
+    * Event fired after collapsing is performed. Not cancellable.
+    *
+    *                     Function takes arguments evt and ui.
+    *                     Use ui.owner to get a reference to the splitter instance.
+    *                     Use ui.index to get an index of collased panel.
+    */
+  var collapsed: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Event fired after expanding is performed. Not cancellable.
-  	 *
-  	 *                     Function takes arguments evt and ui.
-  	 *                     Use ui.owner to get a reference to the splitter instance.
-  	 *                     Use ui.index to get an index of expanded panel.
-  	 */
-  var expanded: js.UndefOr[js.Any] = js.undefined
+    * Event fired after expanding is performed. Not cancellable.
+    *
+    *                     Function takes arguments evt and ui.
+    *                     Use ui.owner to get a reference to the splitter instance.
+    *                     Use ui.index to get an index of expanded panel.
+    */
+  var expanded: js.UndefOr[Any] = js.undefined
 }
-
 object IgTileManagerSplitterOptionsEvents {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgTileManagerSplitterOptionsEvents
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    collapsed: js.Any = null,
-    expanded: js.Any = null
-  ): IgTileManagerSplitterOptionsEvents = {
+  
+  inline def apply(): IgTileManagerSplitterOptionsEvents = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManagerSplitterOptionsEvents]
   }
+  
+  extension [Self <: IgTileManagerSplitterOptionsEvents](x: Self) {
+    
+    inline def setCollapsed(value: Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setExpanded(value: Any): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+  }
 }
-

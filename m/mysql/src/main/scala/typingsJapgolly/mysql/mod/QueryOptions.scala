@@ -1,19 +1,23 @@
 package typingsJapgolly.mysql.mod
 
+import typingsJapgolly.mysql.anon.UntypedFieldInfotypestrin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryOptions extends js.Object {
+trait QueryOptions extends StObject {
+  
   /**
     * Either a boolean or string. If true, tables will be nested objects. If string (e.g. '_'), tables will be
     * nested as tableName_fieldName
     */
-  var nestTables: js.UndefOr[js.Any] = js.undefined
+  var nestTables: js.UndefOr[Any] = js.undefined
+  
   /**
     * The SQL for the query
     */
   var sql: String
+  
   /**
     * Every operation takes an optional inactivity timeout option. This allows you to specify appropriate timeouts for
     * operations. It is important to note that these timeouts are not part of the MySQL protocol, and rather timeout
@@ -21,6 +25,7 @@ trait QueryOptions extends js.Object {
     * destroyed and no further operations can be performed.
     */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
     * to disable type casting, but you can currently do so on either the connection or query level. (Default: true)
@@ -42,27 +47,39 @@ trait QueryOptions extends js.Object {
     * You can find which field function you need to use by looking at: RowDataPacket.prototype._typeCast
     */
   var typeCast: js.UndefOr[TypeCast] = js.undefined
+  
   /**
     * Values for template query
     */
-  var values: js.UndefOr[js.Any] = js.undefined
+  var values: js.UndefOr[Any] = js.undefined
 }
-
 object QueryOptions {
-  @scala.inline
-  def apply(
-    sql: String,
-    nestTables: js.Any = null,
-    timeout: Int | Double = null,
-    typeCast: TypeCast = null,
-    values: js.Any = null
-  ): QueryOptions = {
+  
+  inline def apply(sql: String): QueryOptions = {
     val __obj = js.Dynamic.literal(sql = sql.asInstanceOf[js.Any])
-    if (nestTables != null) __obj.updateDynamic("nestTables")(nestTables.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (typeCast != null) __obj.updateDynamic("typeCast")(typeCast.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryOptions]
   }
+  
+  extension [Self <: QueryOptions](x: Self) {
+    
+    inline def setNestTables(value: Any): Self = StObject.set(x, "nestTables", value.asInstanceOf[js.Any])
+    
+    inline def setNestTablesUndefined: Self = StObject.set(x, "nestTables", js.undefined)
+    
+    inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+    
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    
+    inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+    
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+  }
 }
-

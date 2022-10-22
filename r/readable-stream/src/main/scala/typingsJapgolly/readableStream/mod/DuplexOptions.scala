@@ -1,173 +1,322 @@
 package typingsJapgolly.readableStream.mod
 
-import typingsJapgolly.readableStream.AnonChunk
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import typingsJapgolly.readableStream.anon.Chunk
+import typingsJapgolly.readableStream.anon.Encoding
 import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_duplex ====
-/* Inlined readable-stream.readable-stream.ReadableOptions & readable-stream.readable-stream.WritableOptions & {  allowHalfOpen ? :boolean,   readable ? :boolean,   writable ? :boolean,   read ? :(this : readable-stream.readable-stream.Duplex, size : number): void,   write ? :(this : readable-stream.readable-stream.Duplex, chunk : any, encoding : string, callback : (error ? : std.Error | null): void): void,   writev ? :(this : readable-stream.readable-stream.Duplex, chunks : std.Array<{  chunk  :any,   encoding  :string}>, callback : (error ? : std.Error | null): void): void,   final ? :(this : readable-stream.readable-stream.Duplex, callback : (error ? : std.Error | null): void): void,   destroy ? :(this : readable-stream.readable-stream.Duplex, error : std.Error | null, callback : (error : std.Error | null): void): void} */
-trait DuplexOptions extends js.Object {
+/* Inlined readable-stream.readable-stream.ReadableOptions & readable-stream.readable-stream.WritableOptions & {  allowHalfOpen :boolean | undefined,   readable :boolean | undefined,   writable :boolean | undefined,   read :(this : readable-stream.readable-stream.Duplex, size : number): void | undefined,   write :(this : readable-stream.readable-stream.Duplex, chunk : any, encoding : node.buffer.<global>.BufferEncoding, callback : (error : std.Error | null | undefined): void): void | undefined,   writev :(this : readable-stream.readable-stream.Duplex, chunks : std.Array<{  chunk :any,   encoding :node.buffer.<global>.BufferEncoding}>, callback : (error : std.Error | null | undefined): void): void | undefined,   final :(this : readable-stream.readable-stream.Duplex, callback : (error : std.Error | null | undefined): void): void | undefined,   destroy :(this : readable-stream.readable-stream.Duplex, error : std.Error | null, callback : (error : std.Error | null): void): void | undefined} */
+trait DuplexOptions extends StObject {
+  
   var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
+  
   var decodeStrings: js.UndefOr[Boolean] = js.undefined
-  var defaultEncoding: js.UndefOr[String] = js.undefined
-  var destroy: js.UndefOr[
-    (js.ThisFunction2[
-      /* this */ _Readable, 
+  
+  var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
+  
+  var destroy: (js.UndefOr[
+    js.ThisFunction2[
+      /* this */ IReadable, 
       /* error */ js.Error | Null, 
       /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
-    ]) with (js.ThisFunction2[
-      /* this */ Writable, 
+    ]
+  ]) & (js.UndefOr[
+    js.ThisFunction2[
+      /* this */ IWritable, 
       /* error */ js.Error | Null, 
       /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
-    ]) with (js.ThisFunction2[
+    ]
+  ]) & (js.UndefOr[
+    js.ThisFunction2[
       /* this */ Duplex, 
       /* error */ js.Error | Null, 
       /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
-    ])
-  ] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var `final`: js.UndefOr[
-    (js.ThisFunction1[
-      /* this */ Writable, 
+    ]
+  ])
+  
+  var encoding: js.UndefOr[BufferEncoding] = js.undefined
+  
+  var `final`: (js.UndefOr[
+    js.ThisFunction1[
+      /* this */ IWritable, 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ]) with (js.ThisFunction1[
+    ]
+  ]) & (js.UndefOr[
+    js.ThisFunction1[
       /* this */ Duplex, 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ])
-  ] = js.undefined
+    ]
+  ])
+  
   var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   var objectMode: js.UndefOr[Boolean] = js.undefined
-  var read: js.UndefOr[
-    (js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]) with (js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit])
-  ] = js.undefined
+  
+  var read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
+  
   var readable: js.UndefOr[Boolean] = js.undefined
+  
   var readableHighWaterMark: js.UndefOr[Double] = js.undefined
+  
   var readableObjectMode: js.UndefOr[Boolean] = js.undefined
+  
   var writable: js.UndefOr[Boolean] = js.undefined
+  
   var writableHighWaterMark: js.UndefOr[Double] = js.undefined
+  
   var writableObjectMode: js.UndefOr[Boolean] = js.undefined
-  var write: js.UndefOr[
-    (js.ThisFunction3[
-      /* this */ Writable, 
-      /* chunk */ js.Any, 
-      /* encoding */ String, 
+  
+  var write: (js.UndefOr[
+    js.ThisFunction3[
+      /* this */ IWritable, 
+      /* chunk */ Any, 
+      /* encoding */ BufferEncoding | String, 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ]) with (js.ThisFunction3[
+    ]
+  ]) & (js.UndefOr[
+    js.ThisFunction3[
       /* this */ Duplex, 
-      /* chunk */ js.Any, 
-      /* encoding */ String, 
+      /* chunk */ Any, 
+      /* encoding */ BufferEncoding, 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ])
-  ] = js.undefined
-  var writev: js.UndefOr[
-    (js.ThisFunction2[
-      /* this */ Writable, 
-      /* chunk */ ArrayLike[AnonChunk], 
+    ]
+  ])
+  
+  var writev: (js.UndefOr[
+    js.ThisFunction2[
+      /* this */ IWritable, 
+      /* chunk */ ArrayLike[Chunk], 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ]) with (js.ThisFunction2[
+    ]
+  ]) & (js.UndefOr[
+    js.ThisFunction2[
       /* this */ Duplex, 
-      /* chunks */ js.Array[AnonChunk], 
+      /* chunks */ js.Array[Encoding], 
       /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
       Unit
-    ])
-  ] = js.undefined
+    ]
+  ])
 }
-
 object DuplexOptions {
-  @scala.inline
-  def apply(
-    allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
-    decodeStrings: js.UndefOr[Boolean] = js.undefined,
-    defaultEncoding: String = null,
-    destroy: (js.ThisFunction2[
-      /* this */ _Readable, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ]) with (js.ThisFunction2[
-      /* this */ Writable, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ]) with (js.ThisFunction2[
-      /* this */ Duplex, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ]) = null,
-    encoding: String = null,
-    `final`: (js.ThisFunction1[
-      /* this */ Writable, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) with (js.ThisFunction1[
-      /* this */ Duplex, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) = null,
-    highWaterMark: Int | Double = null,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    read: (js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]) with (js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]) = null,
-    readable: js.UndefOr[Boolean] = js.undefined,
-    readableHighWaterMark: Int | Double = null,
-    readableObjectMode: js.UndefOr[Boolean] = js.undefined,
-    writable: js.UndefOr[Boolean] = js.undefined,
-    writableHighWaterMark: Int | Double = null,
-    writableObjectMode: js.UndefOr[Boolean] = js.undefined,
-    write: (js.ThisFunction3[
-      /* this */ Writable, 
-      /* chunk */ js.Any, 
-      /* encoding */ String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) with (js.ThisFunction3[
-      /* this */ Duplex, 
-      /* chunk */ js.Any, 
-      /* encoding */ String, 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) = null,
-    writev: (js.ThisFunction2[
-      /* this */ Writable, 
-      /* chunk */ ArrayLike[AnonChunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) with (js.ThisFunction2[
-      /* this */ Duplex, 
-      /* chunks */ js.Array[AnonChunk], 
-      /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
-      Unit
-    ]) = null
+  
+  inline def apply(
+    destroy: (js.UndefOr[
+      js.ThisFunction2[
+        /* this */ IReadable, 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+        Unit
+      ]
+    ]) & (js.UndefOr[
+      js.ThisFunction2[
+        /* this */ IWritable, 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+        Unit
+      ]
+    ]) & (js.UndefOr[
+      js.ThisFunction2[
+        /* this */ Duplex, 
+        /* error */ js.Error | Null, 
+        /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+        Unit
+      ]
+    ]),
+    `final`: (js.UndefOr[
+      js.ThisFunction1[
+        /* this */ IWritable, 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ]) & (js.UndefOr[
+      js.ThisFunction1[
+        /* this */ Duplex, 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ]),
+    read: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]]),
+    write: (js.UndefOr[
+      js.ThisFunction3[
+        /* this */ IWritable, 
+        /* chunk */ Any, 
+        /* encoding */ BufferEncoding | String, 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ]) & (js.UndefOr[
+      js.ThisFunction3[
+        /* this */ Duplex, 
+        /* chunk */ Any, 
+        /* encoding */ BufferEncoding, 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ]),
+    writev: (js.UndefOr[
+      js.ThisFunction2[
+        /* this */ IWritable, 
+        /* chunk */ ArrayLike[Chunk], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ]) & (js.UndefOr[
+      js.ThisFunction2[
+        /* this */ Duplex, 
+        /* chunks */ js.Array[Encoding], 
+        /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+        Unit
+      ]
+    ])
   ): DuplexOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings.asInstanceOf[js.Any])
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (`final` != null) __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
-    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
-    if (writableHighWaterMark != null) __obj.updateDynamic("writableHighWaterMark")(writableHighWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(writableObjectMode)) __obj.updateDynamic("writableObjectMode")(writableObjectMode.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
-    if (writev != null) __obj.updateDynamic("writev")(writev.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(destroy = destroy.asInstanceOf[js.Any], read = read.asInstanceOf[js.Any], write = write.asInstanceOf[js.Any], writev = writev.asInstanceOf[js.Any])
+    __obj.updateDynamic("final")(`final`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DuplexOptions]
   }
+  
+  extension [Self <: DuplexOptions](x: Self) {
+    
+    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    
+    inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
+    
+    inline def setDecodeStringsUndefined: Self = StObject.set(x, "decodeStrings", js.undefined)
+    
+    inline def setDefaultEncoding(value: BufferEncoding): Self = StObject.set(x, "defaultEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultEncodingUndefined: Self = StObject.set(x, "defaultEncoding", js.undefined)
+    
+    inline def setDestroy(
+      value: (js.UndefOr[
+          js.ThisFunction2[
+            /* this */ IReadable, 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+            Unit
+          ]
+        ]) & (js.UndefOr[
+          js.ThisFunction2[
+            /* this */ IWritable, 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+            Unit
+          ]
+        ]) & (js.UndefOr[
+          js.ThisFunction2[
+            /* this */ Duplex, 
+            /* error */ js.Error | Null, 
+            /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+            Unit
+          ]
+        ])
+    ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFinal(
+      value: (js.UndefOr[
+          js.ThisFunction1[
+            /* this */ IWritable, 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ]) & (js.UndefOr[
+          js.ThisFunction1[
+            /* this */ Duplex, 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ])
+    ): Self = StObject.set(x, "final", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setObjectMode(value: Boolean): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
+    
+    inline def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
+    
+    inline def setRead(
+      value: (js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]]) & (js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]])
+    ): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    
+    inline def setReadableHighWaterMark(value: Double): Self = StObject.set(x, "readableHighWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setReadableHighWaterMarkUndefined: Self = StObject.set(x, "readableHighWaterMark", js.undefined)
+    
+    inline def setReadableObjectMode(value: Boolean): Self = StObject.set(x, "readableObjectMode", value.asInstanceOf[js.Any])
+    
+    inline def setReadableObjectModeUndefined: Self = StObject.set(x, "readableObjectMode", js.undefined)
+    
+    inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+    
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    
+    inline def setWritableHighWaterMark(value: Double): Self = StObject.set(x, "writableHighWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setWritableHighWaterMarkUndefined: Self = StObject.set(x, "writableHighWaterMark", js.undefined)
+    
+    inline def setWritableObjectMode(value: Boolean): Self = StObject.set(x, "writableObjectMode", value.asInstanceOf[js.Any])
+    
+    inline def setWritableObjectModeUndefined: Self = StObject.set(x, "writableObjectMode", js.undefined)
+    
+    inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+    
+    inline def setWrite(
+      value: (js.UndefOr[
+          js.ThisFunction3[
+            /* this */ IWritable, 
+            /* chunk */ Any, 
+            /* encoding */ BufferEncoding | String, 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ]) & (js.UndefOr[
+          js.ThisFunction3[
+            /* this */ Duplex, 
+            /* chunk */ Any, 
+            /* encoding */ BufferEncoding, 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ])
+    ): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    
+    inline def setWritev(
+      value: (js.UndefOr[
+          js.ThisFunction2[
+            /* this */ IWritable, 
+            /* chunk */ ArrayLike[Chunk], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ]) & (js.UndefOr[
+          js.ThisFunction2[
+            /* this */ Duplex, 
+            /* chunks */ js.Array[Encoding], 
+            /* callback */ js.Function1[/* error */ js.UndefOr[js.Error | Null], Unit], 
+            Unit
+          ]
+        ])
+    ): Self = StObject.set(x, "writev", value.asInstanceOf[js.Any])
+  }
 }
-

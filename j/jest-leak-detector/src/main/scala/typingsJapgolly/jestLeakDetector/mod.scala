@@ -1,19 +1,63 @@
 package typingsJapgolly.jestLeakDetector
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jest-leak-detector", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("jest-leak-detector", JSImport.Default)
   @js.native
-  class default protected () extends js.Object {
-    def this(value: js.Any) = this()
-    var _isReferenceBeingHeld: js.Any = js.native
-    var _runGarbageCollector: js.Any = js.native
-    def isLeaking(): Boolean = js.native
+  open class default protected ()
+    extends StObject
+       with LeakDetector {
+    def this(value: Any) = this()
+    
+    /* private */ /* CompleteClass */
+    override val _finalizationRegistry: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var _isReferenceBeingHeld: Any = js.native
+    
+    /* private */ /* CompleteClass */
+    var _runGarbageCollector: Any = js.native
+    
+    /* CompleteClass */
+    override def isLeaking(): js.Promise[Boolean] = js.native
   }
   
+  trait LeakDetector extends StObject {
+    
+    /* private */ val _finalizationRegistry: Any
+    
+    /* private */ var _isReferenceBeingHeld: Any
+    
+    /* private */ var _runGarbageCollector: Any
+    
+    def isLeaking(): js.Promise[Boolean]
+  }
+  object LeakDetector {
+    
+    inline def apply(
+      _finalizationRegistry: Any,
+      _isReferenceBeingHeld: Any,
+      _runGarbageCollector: Any,
+      isLeaking: CallbackTo[js.Promise[Boolean]]
+    ): LeakDetector = {
+      val __obj = js.Dynamic.literal(_finalizationRegistry = _finalizationRegistry.asInstanceOf[js.Any], _isReferenceBeingHeld = _isReferenceBeingHeld.asInstanceOf[js.Any], _runGarbageCollector = _runGarbageCollector.asInstanceOf[js.Any], isLeaking = isLeaking.toJsFn)
+      __obj.asInstanceOf[LeakDetector]
+    }
+    
+    extension [Self <: LeakDetector](x: Self) {
+      
+      inline def setIsLeaking(value: CallbackTo[js.Promise[Boolean]]): Self = StObject.set(x, "isLeaking", value.toJsFn)
+      
+      inline def set_finalizationRegistry(value: Any): Self = StObject.set(x, "_finalizationRegistry", value.asInstanceOf[js.Any])
+      
+      inline def set_isReferenceBeingHeld(value: Any): Self = StObject.set(x, "_isReferenceBeingHeld", value.asInstanceOf[js.Any])
+      
+      inline def set_runGarbageCollector(value: Any): Self = StObject.set(x, "_runGarbageCollector", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

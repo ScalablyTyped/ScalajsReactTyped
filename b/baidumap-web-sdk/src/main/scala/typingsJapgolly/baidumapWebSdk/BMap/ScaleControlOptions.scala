@@ -1,21 +1,30 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScaleControlOptions extends js.Object {
+trait ScaleControlOptions extends StObject {
+  
   var anchor: js.UndefOr[ControlAnchor] = js.undefined
+  
   var offset: js.UndefOr[Size] = js.undefined
 }
-
 object ScaleControlOptions {
-  @scala.inline
-  def apply(anchor: Int | Double = null, offset: Size = null): ScaleControlOptions = {
+  
+  inline def apply(): ScaleControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScaleControlOptions]
   }
+  
+  extension [Self <: ScaleControlOptions](x: Self) {
+    
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

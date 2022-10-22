@@ -10,10 +10,10 @@ Memoize promise-returning functions. Includes cache expire and prefetch.
 | ------------------ | :-------------: |
 | Full name          | promise-memoize |
 | Keywords           | promise, memoize, cache |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 243607 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 29063.0 |
+| # stars            | 56.0 |
 
 ## Links
 - [Homepage](https://github.com/nodeca/promise-memoize#readme)

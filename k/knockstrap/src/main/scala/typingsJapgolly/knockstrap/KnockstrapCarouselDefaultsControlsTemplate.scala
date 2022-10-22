@@ -1,24 +1,28 @@
 package typingsJapgolly.knockstrap
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockstrapCarouselDefaultsControlsTemplate extends KnockstrapDefaultsTemplateBase {
-  def dataConverter(value: js.Any): KnockstrapCarouselDefaultsIdDataConverted
+trait KnockstrapCarouselDefaultsControlsTemplate
+  extends StObject
+     with KnockstrapDefaultsTemplateBase {
+  
+  def dataConverter(value: Any): KnockstrapCarouselDefaultsIdDataConverted
 }
-
 object KnockstrapCarouselDefaultsControlsTemplate {
-  @scala.inline
-  def apply(
-    dataConverter: js.Any => CallbackTo[KnockstrapCarouselDefaultsIdDataConverted],
+  
+  inline def apply(
+    dataConverter: Any => KnockstrapCarouselDefaultsIdDataConverted,
     name: String,
     templateEngine: KnockstrapStringTemplateEngine
   ): KnockstrapCarouselDefaultsControlsTemplate = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], templateEngine = templateEngine.asInstanceOf[js.Any])
-    __obj.updateDynamic("dataConverter")(js.Any.fromFunction1((t0: js.Any) => dataConverter(t0).runNow()))
+    val __obj = js.Dynamic.literal(dataConverter = js.Any.fromFunction1(dataConverter), name = name.asInstanceOf[js.Any], templateEngine = templateEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapCarouselDefaultsControlsTemplate]
   }
+  
+  extension [Self <: KnockstrapCarouselDefaultsControlsTemplate](x: Self) {
+    
+    inline def setDataConverter(value: Any => KnockstrapCarouselDefaultsIdDataConverted): Self = StObject.set(x, "dataConverter", js.Any.fromFunction1(value))
+  }
 }
-

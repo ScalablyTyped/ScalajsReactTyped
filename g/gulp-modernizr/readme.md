@@ -10,15 +10,15 @@ Gulp wrapper for custom Modernizr builds
 | ------------------ | :-------------: |
 | Full name          | gulp-modernizr |
 | Keywords           | gulpplugin, gulp, modernizr, customizr |
-| # releases         | 13 |
-| # dependents       | 22 |
-| # downloads        | 250983 |
-| # stars            | 19 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 17427.333333333332 |
+| # stars            | 114.0 |
 
 ## Links
-- [Homepage](https://github.com/rejas/gulp-modernizr#readme)
-- [Bugs](https://github.com/rejas/gulp-modernizr/issues)
-- [Repository](https://github.com/rejas/gulp-modernizr)
+- [Homepage](https://github.com/Modernizr/gulp-modernizr#readme)
+- [Bugs](https://github.com/Modernizr/gulp-modernizr/issues)
+- [Repository](https://github.com/Modernizr/gulp-modernizr)
 - [Npm](https://www.npmjs.com/package/gulp-modernizr)
     
 

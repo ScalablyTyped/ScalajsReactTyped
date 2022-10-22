@@ -1,7 +1,7 @@
 
 # Scala.js typings for stringify-object
 
-Typings are for version 3.2
+Typings are for version 4.0
 
 ## Library description:
 Stringify an object/array like JSON.stringify just without all the double-quotes
@@ -10,10 +10,10 @@ Stringify an object/array like JSON.stringify just without all the double-quotes
 | ------------------ | :-------------: |
 | Full name          | stringify-object |
 | Keywords           | object, stringify, pretty, print, dump, format, type, json |
-| # releases         | 3 |
-| # dependents       | 244 |
-| # downloads        | 121682807 |
-| # stars            | 10 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9874405666666668E7 |
+| # stars            | 275.0 |
 
 ## Links
 - [Homepage](https://github.com/yeoman/stringify-object#readme)

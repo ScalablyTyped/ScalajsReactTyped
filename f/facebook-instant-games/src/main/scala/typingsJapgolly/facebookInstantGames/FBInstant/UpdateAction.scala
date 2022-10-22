@@ -1,8 +1,8 @@
 package typingsJapgolly.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the type of the update action to perform.
@@ -14,14 +14,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CUSTOM
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD
 */
-trait UpdateAction extends js.Object
-
+trait UpdateAction extends StObject
 object UpdateAction {
-  @scala.inline
-  def CUSTOM: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CUSTOM = this.cast("CUSTOM")
-  @scala.inline
-  def LEADERBOARD: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD = this.cast("LEADERBOARD")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CUSTOM: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CUSTOM = "CUSTOM".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CUSTOM]
+  
+  inline def LEADERBOARD: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD = "LEADERBOARD".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD]
 }
-

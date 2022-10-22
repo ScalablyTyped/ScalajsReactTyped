@@ -1,30 +1,49 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the size and coordinates of a rectangle.
   */
-@JSGlobal("Rectangle")
-@js.native
-class Rectangle () extends js.Object {
+trait Rectangle extends StObject {
+  
   /**
     * Gets the rectangle's height.
     */
-  var height: Double = js.native
+  var height: Double
+  
   /**
     * Gets the rectangle's width.
     */
-  var width: Double = js.native
+  var width: Double
+  
   /**
     * Gets the x-coordinate of the upper-left corner of the rectangle.
     */
-  var x: Double = js.native
+  var x: Double
+  
   /**
     * Gets the y-coordinate of the upper-left corner of the rectangle.
     */
-  var y: Double = js.native
+  var y: Double
 }
-
+object Rectangle {
+  
+  inline def apply(height: Double, width: Double, x: Double, y: Double): Rectangle = {
+    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Rectangle]
+  }
+  
+  extension [Self <: Rectangle](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+  }
+}

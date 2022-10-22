@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedTextLineAlignment extends js.Object
-
+sealed trait TimedTextLineAlignment extends StObject
 /** Specifies the alignment of a TimedTextLine relative to the TimedTextRegion in which it is displayed. */
 @JSGlobal("Windows.Media.Core.TimedTextLineAlignment")
 @js.native
-object TimedTextLineAlignment extends js.Object {
+object TimedTextLineAlignment extends StObject {
+  
   /** The text line is aligned in the center of the region. */
   @js.native
-  sealed trait center extends TimedTextLineAlignment
+  sealed trait center
+    extends StObject
+       with TimedTextLineAlignment
   
   /** The text line is aligned in the direction of the end of the text. */
   @js.native
-  sealed trait end extends TimedTextLineAlignment
+  sealed trait end
+    extends StObject
+       with TimedTextLineAlignment
   
   /** The text line is aligned in the direction of the start of the text. */
   @js.native
-  sealed trait start extends TimedTextLineAlignment
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextLineAlignment with Double] = js.native
-  /* 2 */ @js.native
-  object center extends TopLevel[center with Double]
-  
-  /* 1 */ @js.native
-  object end extends TopLevel[end with Double]
-  
-  /* 0 */ @js.native
-  object start extends TopLevel[start with Double]
-  
+  sealed trait start
+    extends StObject
+       with TimedTextLineAlignment
 }
-

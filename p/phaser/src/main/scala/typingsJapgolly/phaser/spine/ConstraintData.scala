@@ -1,15 +1,30 @@
 package typingsJapgolly.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.ConstraintData")
-@js.native
-abstract class ConstraintData protected () extends js.Object {
-  def this(name: String, order: Double, skinRequired: Boolean) = this()
-  var name: String = js.native
-  var order: Double = js.native
-  var skinRequired: Boolean = js.native
+trait ConstraintData extends StObject {
+  
+  var name: String
+  
+  var order: Double
+  
+  var skinRequired: Boolean
 }
-
+object ConstraintData {
+  
+  inline def apply(name: String, order: Double, skinRequired: Boolean): ConstraintData = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any], skinRequired = skinRequired.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConstraintData]
+  }
+  
+  extension [Self <: ConstraintData](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setSkinRequired(value: Boolean): Self = StObject.set(x, "skinRequired", value.asInstanceOf[js.Any])
+  }
+}

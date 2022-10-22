@@ -1,60 +1,114 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRevealOptions extends js.Object {
+trait IRevealOptions extends StObject {
+  
+  var additionalOverlayClasses: js.UndefOr[String] = js.undefined
+  
   var animationIn: js.UndefOr[String] = js.undefined
+  
   var animationOut: js.UndefOr[String] = js.undefined
-  var btmOffsetPct: js.UndefOr[Double] = js.undefined
+  
+  var appendTo: js.UndefOr[String] = js.undefined
+  
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  
   var closeOnEsc: js.UndefOr[Boolean] = js.undefined
+  
   var deepLink: js.UndefOr[Boolean] = js.undefined
+  
   var fullScreen: js.UndefOr[Boolean] = js.undefined
-  var hOffset: js.UndefOr[Double] = js.undefined
+  
+  var hOffset: js.UndefOr[Double | String] = js.undefined
+  
   var hideDelay: js.UndefOr[Double] = js.undefined
+  
   var multipleOpened: js.UndefOr[Boolean] = js.undefined
+  
   var overlay: js.UndefOr[Boolean] = js.undefined
+  
   var resetOnClose: js.UndefOr[Boolean] = js.undefined
+  
   var showDelay: js.UndefOr[Double] = js.undefined
-  var vOffset: js.UndefOr[Double] = js.undefined
+  
+  var updateHistory: js.UndefOr[Boolean] = js.undefined
+  
+  var vOffset: js.UndefOr[Double | String] = js.undefined
 }
-
 object IRevealOptions {
-  @scala.inline
-  def apply(
-    animationIn: String = null,
-    animationOut: String = null,
-    btmOffsetPct: Int | Double = null,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    deepLink: js.UndefOr[Boolean] = js.undefined,
-    fullScreen: js.UndefOr[Boolean] = js.undefined,
-    hOffset: Int | Double = null,
-    hideDelay: Int | Double = null,
-    multipleOpened: js.UndefOr[Boolean] = js.undefined,
-    overlay: js.UndefOr[Boolean] = js.undefined,
-    resetOnClose: js.UndefOr[Boolean] = js.undefined,
-    showDelay: Int | Double = null,
-    vOffset: Int | Double = null
-  ): IRevealOptions = {
+  
+  inline def apply(): IRevealOptions = {
     val __obj = js.Dynamic.literal()
-    if (animationIn != null) __obj.updateDynamic("animationIn")(animationIn.asInstanceOf[js.Any])
-    if (animationOut != null) __obj.updateDynamic("animationOut")(animationOut.asInstanceOf[js.Any])
-    if (btmOffsetPct != null) __obj.updateDynamic("btmOffsetPct")(btmOffsetPct.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(deepLink)) __obj.updateDynamic("deepLink")(deepLink.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullScreen)) __obj.updateDynamic("fullScreen")(fullScreen.asInstanceOf[js.Any])
-    if (hOffset != null) __obj.updateDynamic("hOffset")(hOffset.asInstanceOf[js.Any])
-    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleOpened)) __obj.updateDynamic("multipleOpened")(multipleOpened.asInstanceOf[js.Any])
-    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(resetOnClose)) __obj.updateDynamic("resetOnClose")(resetOnClose.asInstanceOf[js.Any])
-    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
-    if (vOffset != null) __obj.updateDynamic("vOffset")(vOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRevealOptions]
   }
+  
+  extension [Self <: IRevealOptions](x: Self) {
+    
+    inline def setAdditionalOverlayClasses(value: String): Self = StObject.set(x, "additionalOverlayClasses", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalOverlayClassesUndefined: Self = StObject.set(x, "additionalOverlayClasses", js.undefined)
+    
+    inline def setAnimationIn(value: String): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
+    
+    inline def setAnimationOut(value: String): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
+    
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    
+    inline def setCloseOnEsc(value: Boolean): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+    
+    inline def setDeepLink(value: Boolean): Self = StObject.set(x, "deepLink", value.asInstanceOf[js.Any])
+    
+    inline def setDeepLinkUndefined: Self = StObject.set(x, "deepLink", js.undefined)
+    
+    inline def setFullScreen(value: Boolean): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullScreenUndefined: Self = StObject.set(x, "fullScreen", js.undefined)
+    
+    inline def setHOffset(value: Double | String): Self = StObject.set(x, "hOffset", value.asInstanceOf[js.Any])
+    
+    inline def setHOffsetUndefined: Self = StObject.set(x, "hOffset", js.undefined)
+    
+    inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+    
+    inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+    
+    inline def setMultipleOpened(value: Boolean): Self = StObject.set(x, "multipleOpened", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleOpenedUndefined: Self = StObject.set(x, "multipleOpened", js.undefined)
+    
+    inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    
+    inline def setResetOnClose(value: Boolean): Self = StObject.set(x, "resetOnClose", value.asInstanceOf[js.Any])
+    
+    inline def setResetOnCloseUndefined: Self = StObject.set(x, "resetOnClose", js.undefined)
+    
+    inline def setShowDelay(value: Double): Self = StObject.set(x, "showDelay", value.asInstanceOf[js.Any])
+    
+    inline def setShowDelayUndefined: Self = StObject.set(x, "showDelay", js.undefined)
+    
+    inline def setUpdateHistory(value: Boolean): Self = StObject.set(x, "updateHistory", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateHistoryUndefined: Self = StObject.set(x, "updateHistory", js.undefined)
+    
+    inline def setVOffset(value: Double | String): Self = StObject.set(x, "vOffset", value.asInstanceOf[js.Any])
+    
+    inline def setVOffsetUndefined: Self = StObject.set(x, "vOffset", js.undefined)
+  }
 }
-

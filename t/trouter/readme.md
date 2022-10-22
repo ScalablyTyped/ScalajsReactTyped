@@ -10,10 +10,10 @@ Typings are for version 3.1
 | ------------------ | :-------------: |
 | Full name          | trouter |
 | Keywords           | route, router, routing |
-| # releases         | 8 |
-| # dependents       | 8 |
-| # downloads        | 412706 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 632505.0 |
+| # stars            | 534.0 |
 
 ## Links
 - [Homepage](https://github.com/lukeed/trouter#readme)

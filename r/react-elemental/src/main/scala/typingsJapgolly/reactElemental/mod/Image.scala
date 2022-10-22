@@ -1,12 +1,17 @@
 package typingsJapgolly.reactElemental.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-elemental", "Image")
 @js.native
-class Image ()
-  extends Component[ImageProps, ImageState, js.Any]
-
+open class Image protected () extends Component[ImageProps, ImageState, Any] {
+  def this(props: ImageProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ImageProps, context: Any) = this()
+}

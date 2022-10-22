@@ -1,22 +1,32 @@
 package typingsJapgolly.sequelize.mod
 
 import typingsJapgolly.sequelize.sequelizeStrings.`primary key`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddPrimaryKeyConstraintOptions extends AddConstraintOptions {
+trait AddPrimaryKeyConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var `type`: `primary key`
 }
-
 object AddPrimaryKeyConstraintOptions {
-  @scala.inline
-  def apply(`type`: `primary key`, name: String = null): AddPrimaryKeyConstraintOptions = {
+  
+  inline def apply(): AddPrimaryKeyConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("primary key")
     __obj.asInstanceOf[AddPrimaryKeyConstraintOptions]
   }
+  
+  extension [Self <: AddPrimaryKeyConstraintOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: `primary key`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

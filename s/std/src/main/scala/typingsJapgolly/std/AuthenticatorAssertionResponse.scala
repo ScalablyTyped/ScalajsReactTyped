@@ -1,17 +1,42 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthenticatorAssertionResponse extends AuthenticatorResponse {
-  val authenticatorData: scala.scalajs.js.typedarray.ArrayBuffer
-  val signature: scala.scalajs.js.typedarray.ArrayBuffer
-  val userHandle: scala.scalajs.js.typedarray.ArrayBuffer | Null
+/** Available only in secure contexts. */
+trait AuthenticatorAssertionResponse
+  extends StObject
+     with AuthenticatorResponse {
+  
+  /* standard dom */
+  val authenticatorData: js.typedarray.ArrayBuffer
+  
+  /* standard dom */
+  val signature: js.typedarray.ArrayBuffer
+  
+  /* standard dom */
+  val userHandle: js.typedarray.ArrayBuffer | Null
 }
-
-@JSGlobal("AuthenticatorAssertionResponse")
-@js.native
-object AuthenticatorAssertionResponse extends Instantiable0[AuthenticatorAssertionResponse]
-
+object AuthenticatorAssertionResponse {
+  
+  inline def apply(
+    authenticatorData: js.typedarray.ArrayBuffer,
+    clientDataJSON: js.typedarray.ArrayBuffer,
+    signature: js.typedarray.ArrayBuffer
+  ): AuthenticatorAssertionResponse = {
+    val __obj = js.Dynamic.literal(authenticatorData = authenticatorData.asInstanceOf[js.Any], clientDataJSON = clientDataJSON.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any], userHandle = null)
+    __obj.asInstanceOf[AuthenticatorAssertionResponse]
+  }
+  
+  extension [Self <: AuthenticatorAssertionResponse](x: Self) {
+    
+    inline def setAuthenticatorData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "authenticatorData", value.asInstanceOf[js.Any])
+    
+    inline def setSignature(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    
+    inline def setUserHandle(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "userHandle", value.asInstanceOf[js.Any])
+    
+    inline def setUserHandleNull: Self = StObject.set(x, "userHandle", null)
+  }
+}

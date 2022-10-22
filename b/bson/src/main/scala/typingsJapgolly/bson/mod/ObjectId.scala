@@ -1,73 +1,56 @@
 package typingsJapgolly.bson.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.bson.bsonStrings.ObjectID
+import typingsJapgolly.buffer.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bson", "ObjectId")
-@js.native
 /**
-  * Create a new ObjectId instance
-  * @param {(string|number|ObjectId)} id Can be a 24 byte hex string, 12 byte binary string or a Number.
+  * A class representation of the BSON ObjectId type.
+  * @public
+  * @category BSONType
   */
-class ObjectId () extends js.Object {
-  def this(id: String) = this()
-  def this(id: scala.Double) = this()
-  def this(id: ObjectId) = this()
-  /** The generation time of this ObjectId instance */
-  var generationTime: scala.Double = js.native
-  def equals(otherID: String): Boolean = js.native
+@js.native
+trait ObjectId extends StObject {
+  
+  var _bsontype: ObjectID = js.native
+  
   /**
     * Compares the equality of this ObjectId with `otherID`.
-    * @param {ObjectId|string} otherID ObjectId instance to compare against.
-    * @return {boolean} the result of comparing two ObjectId's
-    */
-  def equals(otherID: ObjectId): Boolean = js.native
-  /**
-    * Returns the generation date (accurate up to the second) that this ID was generated.
-    * @return {Date} the generation date
-    */
-  def getTimestamp(): js.Date = js.native
-  /**
-    * Return the ObjectId id as a 24 byte hex string representation
-    * @return {string} return the 24 byte hex string representation.
-    */
-  def toHexString(): String = js.native
-}
-
-/* static members */
-@JSImport("bson", "ObjectId")
-@js.native
-object ObjectId extends js.Object {
-  /** If true cache the hex string representation of ObjectId */
-  var cacheHexString: js.UndefOr[Boolean] = js.native
-  /**
-    * Creates an ObjectId from a hex string representation of an ObjectId.
-    * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
-    * @return {ObjectId} return the created ObjectId
-    */
-  def createFromHexString(hexString: String): ObjectId = js.native
-  /**
-    * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
-    * @param {number} time an integer number representing a number of seconds.
-    * @return {ObjectId} return the created ObjectId
-    */
-  def createFromTime(time: scala.Double): ObjectId = js.native
-  /**
-    * Generate a 12 byte id string used in ObjectId's
-    * @param {number} time optional parameter allowing to pass in a second based timestamp.
-    * @return {string} return the 12 byte id binary string.
-    */
-  def generate(): Buffer = js.native
-  def generate(time: scala.Double): Buffer = js.native
-  /**
-    * Checks if a value is a valid bson ObjectId
     *
-    * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
+    * @param otherId - ObjectId instance to compare against.
     */
-  def isValid(id: String): Boolean = js.native
-  def isValid(id: scala.Double): Boolean = js.native
-  def isValid(id: ObjectId): Boolean = js.native
+  def equals(otherId: String): Boolean = js.native
+  def equals(otherId: ObjectId): Boolean = js.native
+  def equals(otherId: ObjectIdLike): Boolean = js.native
+  
+  /**
+    * The generation time of this ObjectId instance
+    * @deprecated Please use getTimestamp / createFromTime which returns an int32 epoch
+    */
+  def generationTime: scala.Double = js.native
+  def generationTime_=(value: scala.Double): Unit = js.native
+  
+  /** Returns the generation date (accurate up to the second) that this ID was generated. */
+  def getTimestamp(): js.Date = js.native
+  
+  /**
+    * The ObjectId bytes
+    * @readonly
+    */
+  def id: Buffer = js.native
+  def id_=(value: Buffer): Unit = js.native
+  
+  /* Excluded from this release type: toExtendedJSON */
+  /* Excluded from this release type: fromExtendedJSON */
+  def inspect(): String = js.native
+  
+  /** Returns the ObjectId id as a 24 character hex string representation */
+  def toHexString(): String = js.native
+  
+  /** Converts to its JSON the 24 character hex string representation. */
+  def toJSON(): String = js.native
+  
+  def toString(format: String): String = js.native
 }
-

@@ -1,49 +1,79 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnFilterableCell extends js.Object {
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+trait GridColumnFilterableCell extends StObject {
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var dataTextField: js.UndefOr[String] = js.undefined
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var inputWidth: js.UndefOr[Double] = js.undefined
+  
   var minLength: js.UndefOr[Double] = js.undefined
+  
   var operator: js.UndefOr[String] = js.undefined
+  
   var showOperators: js.UndefOr[Boolean] = js.undefined
+  
   var suggestionOperator: js.UndefOr[String] = js.undefined
+  
   var template: js.UndefOr[js.Function] = js.undefined
 }
-
 object GridColumnFilterableCell {
-  @scala.inline
-  def apply(
-    dataSource: js.Any | DataSource = null,
-    dataTextField: String = null,
-    delay: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    inputWidth: Int | Double = null,
-    minLength: Int | Double = null,
-    operator: String = null,
-    showOperators: js.UndefOr[Boolean] = js.undefined,
-    suggestionOperator: String = null,
-    template: js.Function = null
-  ): GridColumnFilterableCell = {
+  
+  inline def apply(): GridColumnFilterableCell = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOperators)) __obj.updateDynamic("showOperators")(showOperators.asInstanceOf[js.Any])
-    if (suggestionOperator != null) __obj.updateDynamic("suggestionOperator")(suggestionOperator.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnFilterableCell]
   }
+  
+  extension [Self <: GridColumnFilterableCell](x: Self) {
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setShowOperators(value: Boolean): Self = StObject.set(x, "showOperators", value.asInstanceOf[js.Any])
+    
+    inline def setShowOperatorsUndefined: Self = StObject.set(x, "showOperators", js.undefined)
+    
+    inline def setSuggestionOperator(value: String): Self = StObject.set(x, "suggestionOperator", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestionOperatorUndefined: Self = StObject.set(x, "suggestionOperator", js.undefined)
+    
+    inline def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+  }
 }
-

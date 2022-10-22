@@ -1,15 +1,15 @@
-package typingsJapgolly.ebml
+package typingsJapgolly.ebml.mod
 
+import typingsJapgolly.ebml.ebmlStrings.end
+import typingsJapgolly.ebml.ebmlStrings.start
+import typingsJapgolly.ebml.ebmlStrings.tag
+import typingsJapgolly.ebml.mod.^
+import typingsJapgolly.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Decoder = typingsJapgolly.ebml.mod.Decoder_
-  type Encoder = typingsJapgolly.ebml.mod.Encoder_
-  type StateAndTagData = js.Tuple2[
-    typingsJapgolly.ebml.ebmlStrings.tag | typingsJapgolly.ebml.ebmlStrings.start | typingsJapgolly.ebml.ebmlStrings.end, 
-    typingsJapgolly.ebml.mod.Tag[js.Any] | typingsJapgolly.ebml.mod.TagMetadata
-  ]
-  type Tag[T /* <: typingsJapgolly.ebml.mod.TagType */] = typingsJapgolly.ebml.mod.Tag_[T]
-}
+
+inline def schema: Map[Double, EBMLTagSchema] = ^.asInstanceOf[js.Dynamic].selectDynamic("schema").asInstanceOf[Map[Double, EBMLTagSchema]]
+
+type StateAndTagData = js.Tuple2[tag | start | end, Tag[Any] | TagMetadata]

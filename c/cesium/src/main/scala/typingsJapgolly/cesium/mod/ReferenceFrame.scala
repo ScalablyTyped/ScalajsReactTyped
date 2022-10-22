@@ -1,29 +1,33 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReferenceFrame extends js.Object
-
+sealed trait ReferenceFrame extends StObject
 @JSImport("cesium", "ReferenceFrame")
 @js.native
-object ReferenceFrame extends js.Object {
-  @js.native
-  sealed trait FIXED extends ReferenceFrame
-  
-  @js.native
-  sealed trait INERTIAL extends ReferenceFrame
+object ReferenceFrame extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReferenceFrame with Double] = js.native
-  /* 0 */ @js.native
-  object FIXED extends TopLevel[FIXED with Double]
+  def apply(value: Double): js.UndefOr[ReferenceFrame & Double] = js.native
   
-  /* 1 */ @js.native
-  object INERTIAL extends TopLevel[INERTIAL with Double]
+  /**
+    * The fixed frame.
+    */
+  @js.native
+  sealed trait FIXED
+    extends StObject
+       with ReferenceFrame
+  /* 0 */ val FIXED: typingsJapgolly.cesium.mod.ReferenceFrame.FIXED & Double = js.native
   
+  /**
+    * The inertial frame.
+    */
+  @js.native
+  sealed trait INERTIAL
+    extends StObject
+       with ReferenceFrame
+  /* 1 */ val INERTIAL: typingsJapgolly.cesium.mod.ReferenceFrame.INERTIAL & Double = js.native
 }
-

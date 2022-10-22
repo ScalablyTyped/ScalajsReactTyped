@@ -1,12 +1,13 @@
 package typingsJapgolly.phaser.Phaser.Loader.FileTypes
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.phaser.Phaser.Loader.File
 import typingsJapgolly.phaser.Phaser.Loader.LoaderPlugin
 import typingsJapgolly.phaser.Phaser.Loader.MultiFile
-import typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes.AudioSpriteFileConfig
-import typingsJapgolly.phaser.Phaser.Types.Loader.XHRSettingsObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Audio Sprite File suitable for loading by the Loader.
@@ -15,68 +16,42 @@ import scala.scalajs.js.annotation._
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#audioSprite.
   */
-@JSGlobal("Phaser.Loader.FileTypes.AudioSpriteFile")
-@js.native
-class AudioSpriteFile protected () extends MultiFile {
-  /**
-    * 
-    * @param loader A reference to the Loader that is responsible for this file.
-    * @param key The key to use for this file, or a file configuration object.
-    * @param jsonURL The absolute or relative URL to load the json file from. Or a well formed JSON object to use instead.
-    * @param audioURL The absolute or relative URL to load the audio file from. If empty it will be obtained by parsing the JSON file.
-    * @param audioConfig The audio configuration options.
-    * @param audioXhrSettings An XHR Settings configuration object for the audio file. Used in replacement of the Loaders default XHR Settings.
-    * @param jsonXhrSettings An XHR Settings configuration object for the json file. Used in replacement of the Loaders default XHR Settings.
-    */
-  def this(loader: LoaderPlugin, key: String, jsonURL: String) = this()
-  def this(loader: LoaderPlugin, key: AudioSpriteFileConfig, jsonURL: String) = this()
-  def this(loader: LoaderPlugin, key: String, jsonURL: String, audioURL: js.Object) = this()
-  def this(loader: LoaderPlugin, key: AudioSpriteFileConfig, jsonURL: String, audioURL: js.Object) = this()
-  def this(loader: LoaderPlugin, key: String, jsonURL: String, audioURL: js.Object, audioConfig: js.Any) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: String,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ) = this()
-  def this(
-    loader: LoaderPlugin,
-    key: AudioSpriteFileConfig,
-    jsonURL: String,
-    audioURL: js.Object,
-    audioConfig: js.Any,
-    audioXhrSettings: XHRSettingsObject,
-    jsonXhrSettings: XHRSettingsObject
-  ) = this()
+trait AudioSpriteFile
+  extends StObject
+     with MultiFile {
+  
   /**
     * Adds this file to its target cache upon successful loading and processing.
     */
-  def addToCache(): Unit = js.native
+  def addToCache(): Unit
 }
-
+object AudioSpriteFile {
+  
+  inline def apply(
+    addToCache: Callback,
+    addToMultiFile: File => MultiFile,
+    baseURL: String,
+    complete: Boolean,
+    config: Any,
+    failed: Double,
+    files: js.Array[File],
+    isReadyToProcess: CallbackTo[Boolean],
+    key: String,
+    loader: LoaderPlugin,
+    onFileComplete: File => Callback,
+    onFileFailed: File => Callback,
+    path: String,
+    pending: Double,
+    prefix: String,
+    `type`: String
+  ): AudioSpriteFile = {
+    val __obj = js.Dynamic.literal(addToCache = addToCache.toJsFn, addToMultiFile = js.Any.fromFunction1(addToMultiFile), baseURL = baseURL.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any], isReadyToProcess = isReadyToProcess.toJsFn, key = key.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], onFileComplete = js.Any.fromFunction1((t0: File) => onFileComplete(t0).runNow()), onFileFailed = js.Any.fromFunction1((t0: File) => onFileFailed(t0).runNow()), path = path.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioSpriteFile]
+  }
+  
+  extension [Self <: AudioSpriteFile](x: Self) {
+    
+    inline def setAddToCache(value: Callback): Self = StObject.set(x, "addToCache", value.toJsFn)
+  }
+}

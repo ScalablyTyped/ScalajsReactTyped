@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-icons
 
-Typings are for version 3.9.0
+Typings are for version 4.6.0
 
 ## Library description:
 SVG React icons of popular icon packs using ES6 imports
@@ -10,10 +10,10 @@ SVG React icons of popular icon packs using ES6 imports
 | ------------------ | :-------------: |
 | Full name          | react-icons |
 | Keywords           | - |
-| # releases         | 26 |
-| # dependents       | 676 |
-| # downloads        | 17716029 |
-| # stars            | 28 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 4340174.333333333 |
+| # stars            | 8043.0 |
 
 ## Links
 - [Homepage](https://github.com/react-icons/react-icons#readme)

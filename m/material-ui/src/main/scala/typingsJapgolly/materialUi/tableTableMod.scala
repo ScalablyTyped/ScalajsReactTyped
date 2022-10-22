@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.Table.TableProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Table/Table", JSImport.Namespace)
-@js.native
-object tableTableMod extends js.Object {
-  @js.native
-  class Table ()
-    extends Component[TableProps, js.Object, js.Any]
+object tableTableMod {
   
+  @JSImport("material-ui/Table/Table", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[TableProps, js.Object, js.Any]
+  open class default () extends Table
   
+  @JSImport("material-ui/Table/Table", "Table")
+  @js.native
+  open class Table ()
+    extends Component[TableProps, js.Object, Any]
 }
-

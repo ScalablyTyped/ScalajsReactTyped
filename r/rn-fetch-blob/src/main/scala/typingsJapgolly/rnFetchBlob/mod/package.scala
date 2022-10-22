@@ -1,9 +1,12 @@
-package typingsJapgolly.rnFetchBlob
+package typingsJapgolly.rnFetchBlob.mod
 
+import typingsJapgolly.rnFetchBlob.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type RNFetchBlob = typingsJapgolly.rnFetchBlob.mod.RNFetchBlobStatic
-}
+
+inline def default: RNFetchBlobStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[RNFetchBlobStatic]
+
+inline def RNFetchBlob: RNFetchBlobStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("RNFetchBlob").asInstanceOf[RNFetchBlobStatic]
+type RNFetchBlob = RNFetchBlobStatic

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaPlayerMedia extends js.Object {
+trait MediaPlayerMedia extends StObject {
+  
   var source: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object MediaPlayerMedia {
-  @scala.inline
-  def apply(source: String = null, title: String = null): MediaPlayerMedia = {
+  
+  inline def apply(): MediaPlayerMedia = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaPlayerMedia]
   }
+  
+  extension [Self <: MediaPlayerMedia](x: Self) {
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

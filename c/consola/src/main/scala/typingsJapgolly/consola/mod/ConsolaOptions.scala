@@ -1,47 +1,76 @@
 package typingsJapgolly.consola.mod
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.consola.anon.typeinlogTypeConsolaLogOb
+import typingsJapgolly.node.NodeJS.WritableStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsolaOptions extends js.Object {
+trait ConsolaOptions extends StObject {
+  
   var async: js.UndefOr[Boolean] = js.undefined
+  
   var defaults: js.UndefOr[ConsolaLogObject] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
+  
+  var level: js.UndefOr[LogLevel] = js.undefined
+  
   var mockFn: js.UndefOr[ConsolaMockFn] = js.undefined
+  
   var reporters: js.UndefOr[js.Array[ConsolaReporter]] = js.undefined
-  var stderr: js.UndefOr[js.Any] = js.undefined
-  var stdout: js.UndefOr[js.Any] = js.undefined
+  
+  var stderr: js.UndefOr[WritableStream] = js.undefined
+  
+  var stdout: js.UndefOr[WritableStream] = js.undefined
+  
   var throttle: js.UndefOr[Double] = js.undefined
-  var types: js.UndefOr[StringDictionary[ConsolaLogObject]] = js.undefined
+  
+  var types: js.UndefOr[typeinlogTypeConsolaLogOb] = js.undefined
 }
-
 object ConsolaOptions {
-  @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    defaults: ConsolaLogObject = null,
-    level: Int | Double = null,
-    mockFn: (/* type */ String, /* defaults */ ConsolaLogObject) => CallbackTo[ConsolaMock] = null,
-    reporters: js.Array[ConsolaReporter] = null,
-    stderr: js.Any = null,
-    stdout: js.Any = null,
-    throttle: Int | Double = null,
-    types: StringDictionary[ConsolaLogObject] = null
-  ): ConsolaOptions = {
+  
+  inline def apply(): ConsolaOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (defaults != null) __obj.updateDynamic("defaults")(defaults.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (mockFn != null) __obj.updateDynamic("mockFn")(js.Any.fromFunction2((t0: /* type */ java.lang.String, t1: /* defaults */ typingsJapgolly.consola.mod.ConsolaLogObject) => mockFn(t0, t1).runNow()))
-    if (reporters != null) __obj.updateDynamic("reporters")(reporters.asInstanceOf[js.Any])
-    if (stderr != null) __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
-    if (stdout != null) __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
-    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
-    if (types != null) __obj.updateDynamic("types")(types.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaOptions]
   }
+  
+  extension [Self <: ConsolaOptions](x: Self) {
+    
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setDefaults(value: ConsolaLogObject): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultsUndefined: Self = StObject.set(x, "defaults", js.undefined)
+    
+    inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMockFn(value: (/* type */ logType, /* defaults */ ConsolaLogObject) => ConsolaMock): Self = StObject.set(x, "mockFn", js.Any.fromFunction2(value))
+    
+    inline def setMockFnUndefined: Self = StObject.set(x, "mockFn", js.undefined)
+    
+    inline def setReporters(value: js.Array[ConsolaReporter]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+    
+    inline def setReportersUndefined: Self = StObject.set(x, "reporters", js.undefined)
+    
+    inline def setReportersVarargs(value: ConsolaReporter*): Self = StObject.set(x, "reporters", js.Array(value*))
+    
+    inline def setStderr(value: WritableStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+    
+    inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+    
+    inline def setStdout(value: WritableStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+    
+    inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+    
+    inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+    
+    inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+    
+    inline def setTypes(value: typeinlogTypeConsolaLogOb): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+  }
 }
-

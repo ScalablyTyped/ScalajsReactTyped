@@ -1,38 +1,77 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SharedInsight extends Entity {
-  var lastShared: js.UndefOr[SharingDetail] = js.undefined
-  var lastSharedMethod: js.UndefOr[Entity] = js.undefined
-  var resource: js.UndefOr[Entity] = js.undefined
-  var resourceReference: js.UndefOr[ResourceReference] = js.undefined
-  var resourceVisualization: js.UndefOr[ResourceVisualization] = js.undefined
-  var sharingHistory: js.UndefOr[js.Array[SharingDetail]] = js.undefined
+trait SharedInsight
+  extends StObject
+     with Entity {
+  
+  // Details about the shared item. Read only.
+  var lastShared: js.UndefOr[NullableOption[SharingDetail]] = js.undefined
+  
+  var lastSharedMethod: js.UndefOr[NullableOption[Entity]] = js.undefined
+  
+  /**
+    * Used for navigating to the item that was shared. For file attachments, the type is fileAttachment. For linked
+    * attachments, the type is driveItem.
+    */
+  var resource: js.UndefOr[NullableOption[Entity]] = js.undefined
+  
+  // Reference properties of the shared document, such as the url and type of the document. Read-only
+  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.undefined
+  
+  // Properties that you can use to visualize the document in your experience. Read-only
+  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.undefined
+  
+  var sharingHistory: js.UndefOr[NullableOption[js.Array[SharingDetail]]] = js.undefined
 }
-
 object SharedInsight {
-  @scala.inline
-  def apply(
-    id: String = null,
-    lastShared: SharingDetail = null,
-    lastSharedMethod: Entity = null,
-    resource: Entity = null,
-    resourceReference: ResourceReference = null,
-    resourceVisualization: ResourceVisualization = null,
-    sharingHistory: js.Array[SharingDetail] = null
-  ): SharedInsight = {
+  
+  inline def apply(): SharedInsight = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastShared != null) __obj.updateDynamic("lastShared")(lastShared.asInstanceOf[js.Any])
-    if (lastSharedMethod != null) __obj.updateDynamic("lastSharedMethod")(lastSharedMethod.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
-    if (resourceReference != null) __obj.updateDynamic("resourceReference")(resourceReference.asInstanceOf[js.Any])
-    if (resourceVisualization != null) __obj.updateDynamic("resourceVisualization")(resourceVisualization.asInstanceOf[js.Any])
-    if (sharingHistory != null) __obj.updateDynamic("sharingHistory")(sharingHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedInsight]
   }
+  
+  extension [Self <: SharedInsight](x: Self) {
+    
+    inline def setLastShared(value: NullableOption[SharingDetail]): Self = StObject.set(x, "lastShared", value.asInstanceOf[js.Any])
+    
+    inline def setLastSharedMethod(value: NullableOption[Entity]): Self = StObject.set(x, "lastSharedMethod", value.asInstanceOf[js.Any])
+    
+    inline def setLastSharedMethodNull: Self = StObject.set(x, "lastSharedMethod", null)
+    
+    inline def setLastSharedMethodUndefined: Self = StObject.set(x, "lastSharedMethod", js.undefined)
+    
+    inline def setLastSharedNull: Self = StObject.set(x, "lastShared", null)
+    
+    inline def setLastSharedUndefined: Self = StObject.set(x, "lastShared", js.undefined)
+    
+    inline def setResource(value: NullableOption[Entity]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNull: Self = StObject.set(x, "resource", null)
+    
+    inline def setResourceReference(value: NullableOption[ResourceReference]): Self = StObject.set(x, "resourceReference", value.asInstanceOf[js.Any])
+    
+    inline def setResourceReferenceNull: Self = StObject.set(x, "resourceReference", null)
+    
+    inline def setResourceReferenceUndefined: Self = StObject.set(x, "resourceReference", js.undefined)
+    
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    
+    inline def setResourceVisualization(value: NullableOption[ResourceVisualization]): Self = StObject.set(x, "resourceVisualization", value.asInstanceOf[js.Any])
+    
+    inline def setResourceVisualizationNull: Self = StObject.set(x, "resourceVisualization", null)
+    
+    inline def setResourceVisualizationUndefined: Self = StObject.set(x, "resourceVisualization", js.undefined)
+    
+    inline def setSharingHistory(value: NullableOption[js.Array[SharingDetail]]): Self = StObject.set(x, "sharingHistory", value.asInstanceOf[js.Any])
+    
+    inline def setSharingHistoryNull: Self = StObject.set(x, "sharingHistory", null)
+    
+    inline def setSharingHistoryUndefined: Self = StObject.set(x, "sharingHistory", js.undefined)
+    
+    inline def setSharingHistoryVarargs(value: SharingDetail*): Self = StObject.set(x, "sharingHistory", js.Array(value*))
+  }
 }
-

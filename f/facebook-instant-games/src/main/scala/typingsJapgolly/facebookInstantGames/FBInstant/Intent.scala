@@ -1,8 +1,8 @@
 package typingsJapgolly.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INVITE
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.SHARE
 */
-trait Intent extends js.Object
-
+trait Intent extends StObject
 object Intent {
-  @scala.inline
-  def CHALLENGE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE = this.cast("CHALLENGE")
-  @scala.inline
-  def INVITE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INVITE = this.cast("INVITE")
-  @scala.inline
-  def REQUEST: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.REQUEST = this.cast("REQUEST")
-  @scala.inline
-  def SHARE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.SHARE = this.cast("SHARE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CHALLENGE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE = "CHALLENGE".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.CHALLENGE]
+  
+  inline def INVITE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INVITE = "INVITE".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.INVITE]
+  
+  inline def REQUEST: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.REQUEST = "REQUEST".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.REQUEST]
+  
+  inline def SHARE: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.SHARE = "SHARE".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.SHARE]
 }
-

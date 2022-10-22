@@ -1,24 +1,32 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonAntLocale
-import typingsJapgolly.antdMobileRn.AnonOnBlur
-import typingsJapgolly.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps
-import typingsJapgolly.antdMobileRn.searchBarIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.AntLocale
+import typingsJapgolly.antdMobileRn.anon.OnBlur
+import typingsJapgolly.antdMobileRn.libSearchBarIndexDotnativeMod.SearchBarNativeProps
+import typingsJapgolly.antdMobileRn.libSearchBarIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "SearchBar")
 @js.native
-class SearchBar protected () extends default {
+open class SearchBar protected () extends default {
   def this(props: SearchBarNativeProps) = this()
 }
-
 /* static members */
-@JSImport("antd-mobile-rn", "SearchBar")
-@js.native
-object SearchBar extends js.Object {
-  var contextTypes: AnonAntLocale = js.native
-  var defaultProps: AnonOnBlur = js.native
+object SearchBar {
+  
+  @JSImport("antd-mobile-rn", "SearchBar")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "SearchBar.contextTypes")
+  @js.native
+  def contextTypes: AntLocale = js.native
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "SearchBar.defaultProps")
+  @js.native
+  def defaultProps: OnBlur = js.native
+  inline def defaultProps_=(x: OnBlur): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

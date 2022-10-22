@@ -4,16 +4,16 @@
 Typings are for version 1.4
 
 ## Library description:
-Javascript date range picker - lightweight, no jQuery
+Javascript date range picker - lightweight, no jQuery - (Unmaintained)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | lightpick |
 | Keywords           | datepicker, date, daterange, date, picker, range |
-| # releases         | 48 |
-| # dependents       | 3 |
-| # downloads        | 62920 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14897.333333333334 |
+| # stars            | 216.0 |
 
 ## Links
 - [Homepage](https://github.com/wakirin/lightpick#readme)

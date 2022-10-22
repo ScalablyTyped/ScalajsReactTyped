@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-leaflet
 
-Typings are for version 2.5
+Typings are for version 2.8
 
 ## Library description:
 React components for Leaflet maps
@@ -10,13 +10,13 @@ React components for Leaflet maps
 | ------------------ | :-------------: |
 | Full name          | react-leaflet |
 | Keywords           | react-component, react, leaflet, map |
-| # releases         | 24 |
-| # dependents       | 132 |
-| # downloads        | 2407566 |
-| # stars            | 3 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 1023487.0 |
+| # stars            | 4289.0 |
 
 ## Links
-- [Homepage](https://github.com/PaulLeCam/react-leaflet)
+- [Homepage](https://react-leaflet.js.org)
 - [Bugs](https://github.com/PaulLeCam/react-leaflet/issues)
 - [Repository](https://github.com/PaulLeCam/react-leaflet)
 - [Npm](https://www.npmjs.com/package/react-leaflet)

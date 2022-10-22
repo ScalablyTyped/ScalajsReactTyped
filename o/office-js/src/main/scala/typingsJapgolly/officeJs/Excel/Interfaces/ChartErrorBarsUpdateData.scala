@@ -10,65 +10,80 @@ import typingsJapgolly.officeJs.officeJsStrings.Percent
 import typingsJapgolly.officeJs.officeJsStrings.PlusValues
 import typingsJapgolly.officeJs.officeJsStrings.StDev
 import typingsJapgolly.officeJs.officeJsStrings.StError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartErrorBars object, for use in `chartErrorBars.set({ ... })`. */
-trait ChartErrorBarsUpdateData extends js.Object {
+trait ChartErrorBarsUpdateData extends StObject {
+  
   /**
+    * Specifies if error bars have an end style cap.
     *
-    * Specifies whether or not the error bars have an end style cap.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var endStyleCap: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Specifies the formatting type of the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var format: js.UndefOr[ChartErrorBarsFormatUpdateData] = js.undefined
+  
   /**
-    *
     * Specifies which parts of the error bars to include.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var include: js.UndefOr[ChartErrorBarsInclude | Both | MinusValues | PlusValues] = js.undefined
+  
   /**
-    *
     * The type of range marked by the error bars.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom] = js.undefined
+  
   /**
+    * Specifies whether the error bars are displayed.
     *
-    * Specifies whether or not the error bars are displayed.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object ChartErrorBarsUpdateData {
-  @scala.inline
-  def apply(
-    endStyleCap: js.UndefOr[Boolean] = js.undefined,
-    format: ChartErrorBarsFormatUpdateData = null,
-    include: ChartErrorBarsInclude | Both | MinusValues | PlusValues = null,
-    `type`: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): ChartErrorBarsUpdateData = {
+  
+  inline def apply(): ChartErrorBarsUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartErrorBarsUpdateData]
   }
+  
+  extension [Self <: ChartErrorBarsUpdateData](x: Self) {
+    
+    inline def setEndStyleCap(value: Boolean): Self = StObject.set(x, "endStyleCap", value.asInstanceOf[js.Any])
+    
+    inline def setEndStyleCapUndefined: Self = StObject.set(x, "endStyleCap", js.undefined)
+    
+    inline def setFormat(value: ChartErrorBarsFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setInclude(value: ChartErrorBarsInclude | Both | MinusValues | PlusValues): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setType(value: ChartErrorBarsType | FixedValue | Percent | StDev | StError | Custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

@@ -1,34 +1,35 @@
 package typingsJapgolly.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistogramConfiguration extends js.Object {
-  var aggregator: js.UndefOr[Aggregator] = js.undefined
+trait HistogramConfiguration[T /* <: String */]
+  extends StObject
+     with MetricConfiguration[T] {
+  
   var buckets: js.UndefOr[js.Array[Double]] = js.undefined
-  var help: String
-  var labelNames: js.UndefOr[js.Array[String]] = js.undefined
-  var name: String
-  var registers: js.UndefOr[js.Array[Registry]] = js.undefined
+  
+  @JSName("collect")
+  var collect_HistogramConfiguration: js.UndefOr[CollectFunction[Histogram[T]]] = js.undefined
 }
-
 object HistogramConfiguration {
-  @scala.inline
-  def apply(
-    help: String,
-    name: String,
-    aggregator: Aggregator = null,
-    buckets: js.Array[Double] = null,
-    labelNames: js.Array[String] = null,
-    registers: js.Array[Registry] = null
-  ): HistogramConfiguration = {
+  
+  inline def apply[T /* <: String */](help: String, name: String): HistogramConfiguration[T] = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator.asInstanceOf[js.Any])
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames.asInstanceOf[js.Any])
-    if (registers != null) __obj.updateDynamic("registers")(registers.asInstanceOf[js.Any])
-    __obj.asInstanceOf[HistogramConfiguration]
+    __obj.asInstanceOf[HistogramConfiguration[T]]
+  }
+  
+  extension [Self <: HistogramConfiguration[?], T /* <: String */](x: Self & HistogramConfiguration[T]) {
+    
+    inline def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    
+    inline def setBucketsVarargs(value: Double*): Self = StObject.set(x, "buckets", js.Array(value*))
+    
+    inline def setCollect(value: CollectFunction[Histogram[T]]): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
+    
+    inline def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
   }
 }
-

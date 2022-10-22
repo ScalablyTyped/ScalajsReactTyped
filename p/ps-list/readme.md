@@ -1,7 +1,7 @@
 
 # Scala.js typings for ps-list
 
-Typings are for version 6.3.0
+Typings are for version 8.1.0
 
 ## Library description:
 Get running processes
@@ -10,10 +10,10 @@ Get running processes
 | ------------------ | :-------------: |
 | Full name          | ps-list |
 | Keywords           | ps, proc, process, processes, list, running, tasklist |
-| # releases         | 8 |
-| # dependents       | 35 |
-| # downloads        | 7210187 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5762022.666666667 |
+| # stars            | 230.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/ps-list#readme)

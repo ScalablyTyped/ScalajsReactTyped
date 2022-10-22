@@ -1,7 +1,7 @@
 
 # Scala.js typings for muibox
 
-Typings are for version 1.0
+Typings are for version 1.3
 
 ## Library description:
 Promise-based dialog boxes (alert, confirm, prompt) using Material-UI
@@ -10,10 +10,10 @@ Promise-based dialog boxes (alert, confirm, prompt) using Material-UI
 | ------------------ | :-------------: |
 | Full name          | muibox |
 | Keywords           | react, material, material-design, material-ui, mui, dialog, modal |
-| # releases         | 9 |
-| # dependents       | 0 |
-| # downloads        | 3408 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 2769.0 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/chunkai1312/muibox#readme)

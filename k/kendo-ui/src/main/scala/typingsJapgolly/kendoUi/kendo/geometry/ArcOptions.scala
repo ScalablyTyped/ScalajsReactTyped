@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.geometry
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcOptions extends js.Object {
+trait ArcOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ArcOptions {
-  @scala.inline
-  def apply(name: String = null): ArcOptions = {
+  
+  inline def apply(): ArcOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcOptions]
   }
+  
+  extension [Self <: ArcOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

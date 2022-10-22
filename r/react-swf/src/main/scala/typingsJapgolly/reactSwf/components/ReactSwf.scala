@@ -1,71 +1,62 @@
 package typingsJapgolly.reactSwf.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactSwf.mod.^
 import typingsJapgolly.reactSwf.mod.rswf.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactSwf {
-  def apply(
-    src: String,
-    align: String = null,
-    allowFullScreen: js.UndefOr[Boolean] = js.undefined,
-    base: String = null,
-    bgcolor: String = null,
-    flashVars: js.Object | String = null,
-    fullScreenAspectRatio: String = null,
-    height: Int | Double = null,
-    id: String = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    menu: js.UndefOr[Boolean] = js.undefined,
-    play: js.UndefOr[Boolean] = js.undefined,
-    pluginspage: String = null,
-    quality: String = null,
-    salign: String = null,
-    scale: String = null,
-    width: Int | Double = null,
-    wmode: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, ^, Unit, Props] = {
-    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFullScreen)) __obj.updateDynamic("allowFullScreen")(allowFullScreen.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (bgcolor != null) __obj.updateDynamic("bgcolor")(bgcolor.asInstanceOf[js.Any])
-    if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars.asInstanceOf[js.Any])
-    if (fullScreenAspectRatio != null) __obj.updateDynamic("fullScreenAspectRatio")(fullScreenAspectRatio.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
-    if (pluginspage != null) __obj.updateDynamic("pluginspage")(pluginspage.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (salign != null) __obj.updateDynamic("salign")(salign.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSwf.mod.rswf.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSwf.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSwf.mod.rswf.Props])(children: _*)
+  inline def apply(src: String): Builder = {
+    val __props = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("react-swf", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^] {
+    
+    inline def align(value: String): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def allowFullScreen(value: Boolean): this.type = set("allowFullScreen", value.asInstanceOf[js.Any])
+    
+    inline def base(value: String): this.type = set("base", value.asInstanceOf[js.Any])
+    
+    inline def bgcolor(value: String): this.type = set("bgcolor", value.asInstanceOf[js.Any])
+    
+    inline def flashVars(value: js.Object | String): this.type = set("flashVars", value.asInstanceOf[js.Any])
+    
+    inline def fullScreenAspectRatio(value: String): this.type = set("fullScreenAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def loop(value: Boolean): this.type = set("loop", value.asInstanceOf[js.Any])
+    
+    inline def menu(value: Boolean): this.type = set("menu", value.asInstanceOf[js.Any])
+    
+    inline def play(value: Boolean): this.type = set("play", value.asInstanceOf[js.Any])
+    
+    inline def pluginspage(value: String): this.type = set("pluginspage", value.asInstanceOf[js.Any])
+    
+    inline def quality(value: String): this.type = set("quality", value.asInstanceOf[js.Any])
+    
+    inline def salign(value: String): this.type = set("salign", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: String): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def wmode(value: String): this.type = set("wmode", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

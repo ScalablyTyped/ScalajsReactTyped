@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.DialogProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Dialog", JSImport.Namespace)
-@js.native
-object dialogMod extends js.Object {
-  @js.native
-  class Dialog ()
-    extends Component[DialogProps, js.Object, js.Any]
+object dialogMod {
   
+  @JSImport("material-ui/Dialog", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DialogProps, js.Object, js.Any]
+  open class default () extends Dialog
   
+  @JSImport("material-ui/Dialog", "Dialog")
+  @js.native
+  open class Dialog ()
+    extends Component[DialogProps, js.Object, Any]
 }
-

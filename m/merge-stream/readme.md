@@ -10,10 +10,10 @@ Create a stream that emits events from multiple other streams
 | ------------------ | :-------------: |
 | Full name          | merge-stream |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 561 |
-| # downloads        | 243441401 |
-| # stars            | 57 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.403772733333333E7 |
+| # stars            | 207.0 |
 
 ## Links
 - [Homepage](https://github.com/grncdr/merge-stream#readme)

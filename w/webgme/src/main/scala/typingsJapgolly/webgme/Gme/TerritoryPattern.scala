@@ -1,8 +1,8 @@
 package typingsJapgolly.webgme.Gme
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pattern is a filter for nodes to load/watch.
@@ -13,16 +13,19 @@ import scala.scalajs.js.annotation._
   * hierarchy to load.
   * It can be set to any positive integer [0, Inf).
   */
-trait TerritoryPattern extends js.Object {
+trait TerritoryPattern extends StObject {
+  
   var children: Double
 }
-
 object TerritoryPattern {
-  @scala.inline
-  def apply(children: Double): TerritoryPattern = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
+  inline def apply(children: Double): TerritoryPattern = {
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerritoryPattern]
   }
+  
+  extension [Self <: TerritoryPattern](x: Self) {
+    
+    inline def setChildren(value: Double): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+  }
 }
-

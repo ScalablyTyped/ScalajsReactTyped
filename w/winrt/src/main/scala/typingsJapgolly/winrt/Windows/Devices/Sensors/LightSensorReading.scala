@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.LightSensorReading")
-@js.native
-class LightSensorReading () extends ILightSensorReading {
-  /* CompleteClass */
-  override var illuminanceInLux: Double = js.native
-  /* CompleteClass */
-  override var timestamp: js.Date = js.native
+trait LightSensorReading
+  extends StObject
+     with ILightSensorReading
+object LightSensorReading {
+  
+  inline def apply(illuminanceInLux: Double, timestamp: js.Date): LightSensorReading = {
+    val __obj = js.Dynamic.literal(illuminanceInLux = illuminanceInLux.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LightSensorReading]
+  }
 }
-

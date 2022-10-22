@@ -1,34 +1,32 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrayExpression
-  extends BaseNode
-     with Expression {
-  var elements: js.Array[Expression | SpreadElement]
+  extends StObject
+     with BaseNode {
+  
+  var elements: js.Array[Expression | SpreadElement | Null]
+  
   @JSName("type")
   var type_ArrayExpression: typingsJapgolly.estree.estreeStrings.ArrayExpression
 }
-
 object ArrayExpression {
-  @scala.inline
-  def apply(
-    elements: js.Array[Expression | SpreadElement],
-    `type`: typingsJapgolly.estree.estreeStrings.ArrayExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ArrayExpression = {
+  
+  inline def apply(elements: js.Array[Expression | SpreadElement | Null]): ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayExpression")
     __obj.asInstanceOf[ArrayExpression]
   }
+  
+  extension [Self <: ArrayExpression](x: Self) {
+    
+    inline def setElements(value: js.Array[Expression | SpreadElement | Null]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    
+    inline def setElementsVarargs(value: (Expression | SpreadElement | Null)*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ArrayExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

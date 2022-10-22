@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactAnnotationStoreAccessType extends js.Object
-
+sealed trait ContactAnnotationStoreAccessType extends StObject
 /** Specifies if the app can read and write all annotations or only those belonging to the app itself. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactAnnotationStoreAccessType")
 @js.native
-object ContactAnnotationStoreAccessType extends js.Object {
+object ContactAnnotationStoreAccessType extends StObject {
+  
   /** All contact annotations. */
   @js.native
-  sealed trait allAnnotationsReadWrite extends ContactAnnotationStoreAccessType
+  sealed trait allAnnotationsReadWrite
+    extends StObject
+       with ContactAnnotationStoreAccessType
   
   /** Only local app contact annotations. */
   @js.native
-  sealed trait appAnnotationsReadWrite extends ContactAnnotationStoreAccessType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactAnnotationStoreAccessType with Double] = js.native
-  /* 1 */ @js.native
-  object allAnnotationsReadWrite extends TopLevel[allAnnotationsReadWrite with Double]
-  
-  /* 0 */ @js.native
-  object appAnnotationsReadWrite extends TopLevel[appAnnotationsReadWrite with Double]
-  
+  sealed trait appAnnotationsReadWrite
+    extends StObject
+       with ContactAnnotationStoreAccessType
 }
-

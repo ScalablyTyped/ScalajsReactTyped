@@ -1,25 +1,27 @@
 package typingsJapgolly.vscode.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UriHandler extends js.Object {
+trait UriHandler extends StObject {
+  
   /**
-  		 * Handle the provided system-wide [uri](#Uri).
-  		 *
-  		 * @see [window.registerUriHandler](#window.registerUriHandler).
-  		 */
+    * Handle the provided system-wide {@link Uri}.
+    *
+    * @see {@link window.registerUriHandler}.
+    */
   def handleUri(uri: Uri): ProviderResult[Unit]
 }
-
 object UriHandler {
-  @scala.inline
-  def apply(handleUri: Uri => CallbackTo[ProviderResult[Unit]]): UriHandler = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handleUri")(js.Any.fromFunction1((t0: typingsJapgolly.vscode.mod.Uri) => handleUri(t0).runNow()))
+  
+  inline def apply(handleUri: Uri => ProviderResult[Unit]): UriHandler = {
+    val __obj = js.Dynamic.literal(handleUri = js.Any.fromFunction1(handleUri))
     __obj.asInstanceOf[UriHandler]
   }
+  
+  extension [Self <: UriHandler](x: Self) {
+    
+    inline def setHandleUri(value: Uri => ProviderResult[Unit]): Self = StObject.set(x, "handleUri", js.Any.fromFunction1(value))
+  }
 }
-

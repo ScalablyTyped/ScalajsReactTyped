@@ -1,25 +1,66 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("InfoPath.SignatureLineObject")
-@js.native
-class SignatureLineObject protected () extends js.Object {
-  val Id: String = js.native
-  @JSName("InfoPath.SignatureLineObject_typekey")
-  var InfoPathDotSignatureLineObject_typekey: SignatureLineObject = js.native
-  val Signature: SignatureObject = js.native
-  val SignatureAppearanceType: XdSignatureAppearanceType = js.native
-  var SuggestedSigner: String = js.native
-  var SuggestedSignerEmailAddress: String = js.native
-  var SuggestedSignerTitle: String = js.native
+trait SignatureLineObject extends StObject {
+  
+  val Id: String
+  
+  /* private */ @JSName("InfoPath.SignatureLineObject_typekey")
+  var InfoPathDotSignatureLineObject_typekey: SignatureLineObject
+  
   def Sign(
     bstrImageURL: String,
     bstrSuggestedSigner: String,
     bstrSuggestedSignerTitle: String,
     bstrSuggestedSignerEmailAddress: String
-  ): Boolean = js.native
+  ): Boolean
+  
+  val Signature: SignatureObject
+  
+  val SignatureAppearanceType: XdSignatureAppearanceType
+  
+  var SuggestedSigner: String
+  
+  var SuggestedSignerEmailAddress: String
+  
+  var SuggestedSignerTitle: String
 }
-
+object SignatureLineObject {
+  
+  inline def apply(
+    Id: String,
+    InfoPathDotSignatureLineObject_typekey: SignatureLineObject,
+    Sign: (String, String, String, String) => Boolean,
+    Signature: SignatureObject,
+    SignatureAppearanceType: XdSignatureAppearanceType,
+    SuggestedSigner: String,
+    SuggestedSignerEmailAddress: String,
+    SuggestedSignerTitle: String
+  ): SignatureLineObject = {
+    val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Sign = js.Any.fromFunction4(Sign), Signature = Signature.asInstanceOf[js.Any], SignatureAppearanceType = SignatureAppearanceType.asInstanceOf[js.Any], SuggestedSigner = SuggestedSigner.asInstanceOf[js.Any], SuggestedSignerEmailAddress = SuggestedSignerEmailAddress.asInstanceOf[js.Any], SuggestedSignerTitle = SuggestedSignerTitle.asInstanceOf[js.Any])
+    __obj.updateDynamic("InfoPath.SignatureLineObject_typekey")(InfoPathDotSignatureLineObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SignatureLineObject]
+  }
+  
+  extension [Self <: SignatureLineObject](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    
+    inline def setInfoPathDotSignatureLineObject_typekey(value: SignatureLineObject): Self = StObject.set(x, "InfoPath.SignatureLineObject_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSign(value: (String, String, String, String) => Boolean): Self = StObject.set(x, "Sign", js.Any.fromFunction4(value))
+    
+    inline def setSignature(value: SignatureObject): Self = StObject.set(x, "Signature", value.asInstanceOf[js.Any])
+    
+    inline def setSignatureAppearanceType(value: XdSignatureAppearanceType): Self = StObject.set(x, "SignatureAppearanceType", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedSigner(value: String): Self = StObject.set(x, "SuggestedSigner", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedSignerEmailAddress(value: String): Self = StObject.set(x, "SuggestedSignerEmailAddress", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestedSignerTitle(value: String): Self = StObject.set(x, "SuggestedSignerTitle", value.asInstanceOf[js.Any])
+  }
+}

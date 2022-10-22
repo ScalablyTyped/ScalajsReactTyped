@@ -1,34 +1,28 @@
 package typingsJapgolly.serviceWorkerMock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceWorkerMockStrings {
-  @js.native
-  sealed trait fetch extends js.Object
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait fetch extends StObject
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
   @js.native
-  sealed trait notificationclick extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait notificationclose extends js.Object
+  sealed trait notificationclick extends StObject
+  inline def notificationclick: notificationclick = "notificationclick".asInstanceOf[notificationclick]
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait notificationclose extends StObject
+  inline def notificationclose: notificationclose = "notificationclose".asInstanceOf[notificationclose]
   
-  @scala.inline
-  def fetch: fetch = "fetch".asInstanceOf[fetch]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def notificationclick: notificationclick = "notificationclick".asInstanceOf[notificationclick]
-  @scala.inline
-  def notificationclose: notificationclose = "notificationclose".asInstanceOf[notificationclose]
-  @scala.inline
-  def push: push = "push".asInstanceOf[push]
+  @js.native
+  sealed trait push extends StObject
+  inline def push: push = "push".asInstanceOf[push]
 }
-

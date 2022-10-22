@@ -1,10 +1,9 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Shape object is a subclass of the Element object. The Shape object provides more precise control
@@ -13,25 +12,39 @@ import scala.scalajs.js.annotation._
   * All Shape methods and properties that change a shape or any of its subordinate parts must be placed between
   * shape.beginEdit() and shape.endEdit() calls to function correctly.
   */
-trait FlashShape extends FlashOval {
-  var contours: js.Array[FlashContour]
-  var edges: js.Array[FlashEdge]
-  var isDrawingObject: Boolean
-  var isGroup: Boolean
-  var isOvalObject: Boolean
-  var isRectangleObject: Boolean
-  var members: js.Array[FlashShape]
-  var numCubicSegments: Double
-  var vertices: js.Array[FlashVertex]
+trait FlashShape
+  extends StObject
+     with FlashOval {
+  
   def beginEdit(): Unit
+  
+  var contours: js.Array[FlashContour]
+  
   def deleteEdge(index: Double): Unit
+  
+  var edges: js.Array[FlashEdge]
+  
   def endEdit(): Unit
+  
   def getCubicSegmentPoints(cubicSegmentIndex: Double): js.Array[FlashPoint]
+  
+  var isDrawingObject: Boolean
+  
+  var isGroup: Boolean
+  
+  var isOvalObject: Boolean
+  
+  var isRectangleObject: Boolean
+  
+  var members: js.Array[FlashShape]
+  
+  var numCubicSegments: Double
+  
+  var vertices: js.Array[FlashVertex]
 }
-
 object FlashShape {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     beginEdit: Callback,
     closePath: Boolean,
     contours: js.Array[FlashContour],
@@ -39,7 +52,7 @@ object FlashShape {
     edges: js.Array[FlashEdge],
     endAngle: Double,
     endEdit: Callback,
-    getCubicSegmentPoints: Double => CallbackTo[js.Array[FlashPoint]],
+    getCubicSegmentPoints: Double => js.Array[FlashPoint],
     innerRadius: Double,
     isDrawingObject: Boolean,
     isGroup: Boolean,
@@ -50,12 +63,44 @@ object FlashShape {
     startAngle: Double,
     vertices: js.Array[FlashVertex]
   ): FlashShape = {
-    val __obj = js.Dynamic.literal(closePath = closePath.asInstanceOf[js.Any], contours = contours.asInstanceOf[js.Any], edges = edges.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], isDrawingObject = isDrawingObject.asInstanceOf[js.Any], isGroup = isGroup.asInstanceOf[js.Any], isOvalObject = isOvalObject.asInstanceOf[js.Any], isRectangleObject = isRectangleObject.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], numCubicSegments = numCubicSegments.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
-    __obj.updateDynamic("beginEdit")(beginEdit.toJsFn)
-    __obj.updateDynamic("deleteEdge")(js.Any.fromFunction1((t0: scala.Double) => deleteEdge(t0).runNow()))
-    __obj.updateDynamic("endEdit")(endEdit.toJsFn)
-    __obj.updateDynamic("getCubicSegmentPoints")(js.Any.fromFunction1((t0: scala.Double) => getCubicSegmentPoints(t0).runNow()))
+    val __obj = js.Dynamic.literal(beginEdit = beginEdit.toJsFn, closePath = closePath.asInstanceOf[js.Any], contours = contours.asInstanceOf[js.Any], deleteEdge = js.Any.fromFunction1((t0: Double) => deleteEdge(t0).runNow()), edges = edges.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], endEdit = endEdit.toJsFn, getCubicSegmentPoints = js.Any.fromFunction1(getCubicSegmentPoints), innerRadius = innerRadius.asInstanceOf[js.Any], isDrawingObject = isDrawingObject.asInstanceOf[js.Any], isGroup = isGroup.asInstanceOf[js.Any], isOvalObject = isOvalObject.asInstanceOf[js.Any], isRectangleObject = isRectangleObject.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], numCubicSegments = numCubicSegments.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], vertices = vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashShape]
   }
+  
+  extension [Self <: FlashShape](x: Self) {
+    
+    inline def setBeginEdit(value: Callback): Self = StObject.set(x, "beginEdit", value.toJsFn)
+    
+    inline def setContours(value: js.Array[FlashContour]): Self = StObject.set(x, "contours", value.asInstanceOf[js.Any])
+    
+    inline def setContoursVarargs(value: FlashContour*): Self = StObject.set(x, "contours", js.Array(value*))
+    
+    inline def setDeleteEdge(value: Double => Callback): Self = StObject.set(x, "deleteEdge", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setEdges(value: js.Array[FlashEdge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesVarargs(value: FlashEdge*): Self = StObject.set(x, "edges", js.Array(value*))
+    
+    inline def setEndEdit(value: Callback): Self = StObject.set(x, "endEdit", value.toJsFn)
+    
+    inline def setGetCubicSegmentPoints(value: Double => js.Array[FlashPoint]): Self = StObject.set(x, "getCubicSegmentPoints", js.Any.fromFunction1(value))
+    
+    inline def setIsDrawingObject(value: Boolean): Self = StObject.set(x, "isDrawingObject", value.asInstanceOf[js.Any])
+    
+    inline def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
+    
+    inline def setIsOvalObject(value: Boolean): Self = StObject.set(x, "isOvalObject", value.asInstanceOf[js.Any])
+    
+    inline def setIsRectangleObject(value: Boolean): Self = StObject.set(x, "isRectangleObject", value.asInstanceOf[js.Any])
+    
+    inline def setMembers(value: js.Array[FlashShape]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: FlashShape*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setNumCubicSegments(value: Double): Self = StObject.set(x, "numCubicSegments", value.asInstanceOf[js.Any])
+    
+    inline def setVertices(value: js.Array[FlashVertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesVarargs(value: FlashVertex*): Self = StObject.set(x, "vertices", js.Array(value*))
+  }
 }
-

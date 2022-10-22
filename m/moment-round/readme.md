@@ -11,9 +11,9 @@ Date rounding for Moment.js
 | Full name          | moment-round |
 | Keywords           | moment, moment.js, date, round |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 191075 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24041.666666666668 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/WebDevTmas/moment-round)

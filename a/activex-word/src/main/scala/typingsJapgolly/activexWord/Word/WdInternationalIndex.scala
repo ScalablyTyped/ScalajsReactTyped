@@ -1,55 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`17`
-import typingsJapgolly.activexWord.activexWordNumbers.`18`
-import typingsJapgolly.activexWord.activexWordNumbers.`19`
-import typingsJapgolly.activexWord.activexWordNumbers.`20`
-import typingsJapgolly.activexWord.activexWordNumbers.`21`
-import typingsJapgolly.activexWord.activexWordNumbers.`22`
-import typingsJapgolly.activexWord.activexWordNumbers.`23`
-import typingsJapgolly.activexWord.activexWordNumbers.`24`
-import typingsJapgolly.activexWord.activexWordNumbers.`25`
-import typingsJapgolly.activexWord.activexWordNumbers.`26`
+import typingsJapgolly.activexWord.activexWordInts.`17`
+import typingsJapgolly.activexWord.activexWordInts.`18`
+import typingsJapgolly.activexWord.activexWordInts.`19`
+import typingsJapgolly.activexWord.activexWordInts.`20`
+import typingsJapgolly.activexWord.activexWordInts.`21`
+import typingsJapgolly.activexWord.activexWordInts.`22`
+import typingsJapgolly.activexWord.activexWordInts.`23`
+import typingsJapgolly.activexWord.activexWordInts.`24`
+import typingsJapgolly.activexWord.activexWordInts.`25`
+import typingsJapgolly.activexWord.activexWordInts.`26`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`21`
-  - typingsJapgolly.activexWord.activexWordNumbers.`20`
-  - typingsJapgolly.activexWord.activexWordNumbers.`25`
-  - typingsJapgolly.activexWord.activexWordNumbers.`18`
-  - typingsJapgolly.activexWord.activexWordNumbers.`22`
-  - typingsJapgolly.activexWord.activexWordNumbers.`23`
-  - typingsJapgolly.activexWord.activexWordNumbers.`17`
-  - typingsJapgolly.activexWord.activexWordNumbers.`26`
-  - typingsJapgolly.activexWord.activexWordNumbers.`19`
-  - typingsJapgolly.activexWord.activexWordNumbers.`24`
+  - typingsJapgolly.activexWord.activexWordInts.`21`
+  - typingsJapgolly.activexWord.activexWordInts.`20`
+  - typingsJapgolly.activexWord.activexWordInts.`25`
+  - typingsJapgolly.activexWord.activexWordInts.`18`
+  - typingsJapgolly.activexWord.activexWordInts.`22`
+  - typingsJapgolly.activexWord.activexWordInts.`23`
+  - typingsJapgolly.activexWord.activexWordInts.`17`
+  - typingsJapgolly.activexWord.activexWordInts.`26`
+  - typingsJapgolly.activexWord.activexWordInts.`19`
+  - typingsJapgolly.activexWord.activexWordInts.`24`
 */
-trait WdInternationalIndex extends js.Object
-
+trait WdInternationalIndex extends StObject
 object WdInternationalIndex {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wd24HourClock: `21` = this.cast(21)
-  @scala.inline
-  def wdCurrencyCode: `20` = this.cast(20)
-  @scala.inline
-  def wdDateSeparator: `25` = this.cast(25)
-  @scala.inline
-  def wdDecimalSeparator: `18` = this.cast(18)
-  @scala.inline
-  def wdInternationalAM: `22` = this.cast(22)
-  @scala.inline
-  def wdInternationalPM: `23` = this.cast(23)
-  @scala.inline
-  def wdListSeparator: `17` = this.cast(17)
-  @scala.inline
-  def wdProductLanguageID: `26` = this.cast(26)
-  @scala.inline
-  def wdThousandsSeparator: `19` = this.cast(19)
-  @scala.inline
-  def wdTimeSeparator: `24` = this.cast(24)
+  
+  inline def wd24HourClock: `21` = 21.asInstanceOf[`21`]
+  
+  inline def wdCurrencyCode: `20` = 20.asInstanceOf[`20`]
+  
+  inline def wdDateSeparator: `25` = 25.asInstanceOf[`25`]
+  
+  inline def wdDecimalSeparator: `18` = 18.asInstanceOf[`18`]
+  
+  inline def wdInternationalAM: `22` = 22.asInstanceOf[`22`]
+  
+  inline def wdInternationalPM: `23` = 23.asInstanceOf[`23`]
+  
+  inline def wdListSeparator: `17` = 17.asInstanceOf[`17`]
+  
+  inline def wdProductLanguageID: `26` = 26.asInstanceOf[`26`]
+  
+  inline def wdThousandsSeparator: `19` = 19.asInstanceOf[`19`]
+  
+  inline def wdTimeSeparator: `24` = 24.asInstanceOf[`24`]
 }
-

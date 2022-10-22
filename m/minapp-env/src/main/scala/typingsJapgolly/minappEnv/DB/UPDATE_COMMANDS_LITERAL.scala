@@ -1,65 +1,52 @@
 package typingsJapgolly.minappEnv.DB
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UPDATE_COMMANDS_LITERAL extends js.Object
-
+sealed trait UPDATE_COMMANDS_LITERAL extends StObject
 @JSGlobal("DB.UPDATE_COMMANDS_LITERAL")
 @js.native
-object UPDATE_COMMANDS_LITERAL extends js.Object {
-  @js.native
-  sealed trait INC extends UPDATE_COMMANDS_LITERAL
+object UPDATE_COMMANDS_LITERAL extends StObject {
   
   @js.native
-  sealed trait MUL extends UPDATE_COMMANDS_LITERAL
+  sealed trait INC
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait POP extends UPDATE_COMMANDS_LITERAL
+  sealed trait MUL
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait PUSH extends UPDATE_COMMANDS_LITERAL
+  sealed trait POP
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait REMOVE extends UPDATE_COMMANDS_LITERAL
+  sealed trait PUSH
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait SET extends UPDATE_COMMANDS_LITERAL
+  sealed trait REMOVE
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait SHIFT extends UPDATE_COMMANDS_LITERAL
+  sealed trait SET
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
   @js.native
-  sealed trait UNSHIFT extends UPDATE_COMMANDS_LITERAL
+  sealed trait SHIFT
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[UPDATE_COMMANDS_LITERAL with String] = js.native
-  /* "inc" */ @js.native
-  object INC extends TopLevel[INC with String]
-  
-  /* "mul" */ @js.native
-  object MUL extends TopLevel[MUL with String]
-  
-  /* "pop" */ @js.native
-  object POP extends TopLevel[POP with String]
-  
-  /* "push" */ @js.native
-  object PUSH extends TopLevel[PUSH with String]
-  
-  /* "remove" */ @js.native
-  object REMOVE extends TopLevel[REMOVE with String]
-  
-  /* "set" */ @js.native
-  object SET extends TopLevel[SET with String]
-  
-  /* "shift" */ @js.native
-  object SHIFT extends TopLevel[SHIFT with String]
-  
-  /* "unshift" */ @js.native
-  object UNSHIFT extends TopLevel[UNSHIFT with String]
-  
+  @js.native
+  sealed trait UNSHIFT
+    extends StObject
+       with UPDATE_COMMANDS_LITERAL
 }
-

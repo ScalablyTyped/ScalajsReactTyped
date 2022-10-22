@@ -1,43 +1,70 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.reactNativeMaterialUi.AnonMessage
+import typingsJapgolly.reactNativeMaterialUi.anon.Message
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SnackbarProps extends js.Object {
+trait SnackbarProps extends StObject {
+  
   var actionText: js.UndefOr[String] = js.undefined
+  
   var bottomNavigation: Boolean
+  
   var button: js.UndefOr[ButtonProps] = js.undefined
+  
   var message: String
+  
   var onActionPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[AnonMessage] = js.undefined
-  var timeout: Double
-  var visible: Boolean
+  
   def onRequestClose(): Unit
+  
+  var style: js.UndefOr[Message] = js.undefined
+  
+  var timeout: Double
+  
+  var visible: Boolean
 }
-
 object SnackbarProps {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bottomNavigation: Boolean,
     message: String,
     onRequestClose: Callback,
     timeout: Double,
-    visible: Boolean,
-    actionText: String = null,
-    button: ButtonProps = null,
-    onActionPress: js.UndefOr[Callback] = js.undefined,
-    style: AnonMessage = null
+    visible: Boolean
   ): SnackbarProps = {
-    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
-    __obj.updateDynamic("onRequestClose")(onRequestClose.toJsFn)
-    if (actionText != null) __obj.updateDynamic("actionText")(actionText.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    onActionPress.foreach(p => __obj.updateDynamic("onActionPress")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bottomNavigation = bottomNavigation.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], onRequestClose = onRequestClose.toJsFn, timeout = timeout.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnackbarProps]
   }
+  
+  extension [Self <: SnackbarProps](x: Self) {
+    
+    inline def setActionText(value: String): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
+    
+    inline def setActionTextUndefined: Self = StObject.set(x, "actionText", js.undefined)
+    
+    inline def setBottomNavigation(value: Boolean): Self = StObject.set(x, "bottomNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setButton(value: ButtonProps): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setOnActionPress(value: Callback): Self = StObject.set(x, "onActionPress", value.toJsFn)
+    
+    inline def setOnActionPressUndefined: Self = StObject.set(x, "onActionPress", js.undefined)
+    
+    inline def setOnRequestClose(value: Callback): Self = StObject.set(x, "onRequestClose", value.toJsFn)
+    
+    inline def setStyle(value: Message): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
 }
-

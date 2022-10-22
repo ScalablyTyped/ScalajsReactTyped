@@ -1,20 +1,26 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IIPInformation extends js.Object {
+trait IIPInformation extends StObject {
+  
   var networkAdapter: NetworkAdapter
+  
   var prefixLength: Double
 }
-
 object IIPInformation {
-  @scala.inline
-  def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IIPInformation = {
-    val __obj = js.Dynamic.literal(networkAdapter = networkAdapter.asInstanceOf[js.Any], prefixLength = prefixLength.asInstanceOf[js.Any])
   
+  inline def apply(networkAdapter: NetworkAdapter, prefixLength: Double): IIPInformation = {
+    val __obj = js.Dynamic.literal(networkAdapter = networkAdapter.asInstanceOf[js.Any], prefixLength = prefixLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[IIPInformation]
   }
+  
+  extension [Self <: IIPInformation](x: Self) {
+    
+    inline def setNetworkAdapter(value: NetworkAdapter): Self = StObject.set(x, "networkAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixLength(value: Double): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
+  }
 }
-

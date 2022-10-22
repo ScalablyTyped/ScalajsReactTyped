@@ -1,16 +1,17 @@
 package typingsJapgolly.athenajs.mod
 
-import typingsJapgolly.athenajs.Anon0
+import typingsJapgolly.athenajs.anon.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("athenajs", "_FX")
 @js.native
 /**
   * Creates the FX class, adding the linear easing
   */
-class _FX () extends js.Object {
+open class _FX () extends StObject {
+  
   /**
     * Add a new easing function for other objects to use
     *
@@ -26,10 +27,12 @@ class _FX () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   /**
     * Add a new Effect
     */
-  def addFX(fxName: String, FxClass: Anon0): Unit = js.native
+  def addFX(fxName: String, FxClass: `0`): Unit = js.native
+  
   /**
     * Retrieves an easing function
     *
@@ -42,10 +45,10 @@ class _FX () extends js.Object {
     /* d */ js.UndefOr[Double], 
     Unit
   ] = js.native
+  
   /**
     * Retrieve an effect Class by its name
     *
     */
   def getEffect(fxName: String): Effect = js.native
 }
-

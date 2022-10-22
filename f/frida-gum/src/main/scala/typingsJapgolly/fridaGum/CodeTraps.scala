@@ -1,21 +1,17 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.default
   - typingsJapgolly.fridaGum.fridaGumStrings.all
 */
-trait CodeTraps extends js.Object
-
+trait CodeTraps extends StObject
 object CodeTraps {
-  @scala.inline
-  def all: typingsJapgolly.fridaGum.fridaGumStrings.all = this.cast("all")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def default: typingsJapgolly.fridaGum.fridaGumStrings.default = this.cast("default")
+  
+  inline def default: typingsJapgolly.fridaGum.fridaGumStrings.default = "default".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.default]
+  
+  inline def all: typingsJapgolly.fridaGum.fridaGumStrings.all = "all".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.all]
 }
-

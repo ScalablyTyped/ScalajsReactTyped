@@ -1,50 +1,40 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AuthType extends js.Object
-
+sealed trait AuthType extends StObject
 /**
   * An enum that defines the authentication types that can be set for a connector.
   */
 @JSGlobal("GoogleAppsScript.Data_Studio.AuthType")
 @js.native
-object AuthType extends js.Object {
-  @js.native
-  sealed trait KEY extends AuthType
+object AuthType extends StObject {
   
   @js.native
-  sealed trait NONE extends AuthType
+  sealed trait KEY
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait OAUTH2 extends AuthType
+  sealed trait NONE
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait USER_PASS extends AuthType
+  sealed trait OAUTH2
+    extends StObject
+       with AuthType
   
   @js.native
-  sealed trait USER_TOKEN extends AuthType
+  sealed trait USER_PASS
+    extends StObject
+       with AuthType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AuthType with Double] = js.native
-  /* 3 */ @js.native
-  object KEY extends TopLevel[KEY with Double]
-  
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 1 */ @js.native
-  object OAUTH2 extends TopLevel[OAUTH2 with Double]
-  
-  /* 2 */ @js.native
-  object USER_PASS extends TopLevel[USER_PASS with Double]
-  
-  /* 4 */ @js.native
-  object USER_TOKEN extends TopLevel[USER_TOKEN with Double]
-  
+  @js.native
+  sealed trait USER_TOKEN
+    extends StObject
+       with AuthType
 }
-

@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.Xrm.Controls
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for controls.
@@ -12,8 +12,10 @@ import scala.scalajs.js.annotation._
   * @see {@link UiElement}
   */
 trait Control
-  extends UiLabelElement
+  extends StObject
+     with UiLabelElement
      with UiCanGetVisibleElement {
+  
   /**
     * Gets the controls type.
     * @returns The control type.<BR><BR>
@@ -26,12 +28,13 @@ trait Control
     * * webresource
     * * notes
     * * timercontrol
-    * * kbsearch (CRM Online Only, use parature.d.ts)
+    * * kbsearch
     * * quickform (see ui.QuickForm)
     * * customcontrol: <namespace>.<name> (A custom control for mobile phone and tablet clients).
     * * customsubgrid: <namespace>.<name> (A custom dataset control for mobile phone and tablet clients).
     */
   def getControlType(): ControlType | String
+  
   /**
     * Gets the name of the control on the form.
     * @returns The name of the control.
@@ -47,16 +50,16 @@ trait Control
     *              header_process_<attribute name>.
     */
   def getName(): String
+  
   /**
     * Gets a reference to the Section parent of the control.
     * @returns The parent Section.
     */
   def getParent(): Section
 }
-
 object Control {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getControlType: CallbackTo[ControlType | String],
     getLabel: CallbackTo[String],
     getName: CallbackTo[String],
@@ -64,14 +67,16 @@ object Control {
     getVisible: CallbackTo[Boolean],
     setLabel: String => Callback
   ): Control = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
+    val __obj = js.Dynamic.literal(getControlType = getControlType.toJsFn, getLabel = getLabel.toJsFn, getName = getName.toJsFn, getParent = getParent.toJsFn, getVisible = getVisible.toJsFn, setLabel = js.Any.fromFunction1((t0: String) => setLabel(t0).runNow()))
     __obj.asInstanceOf[Control]
   }
+  
+  extension [Self <: Control](x: Self) {
+    
+    inline def setGetControlType(value: CallbackTo[ControlType | String]): Self = StObject.set(x, "getControlType", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetParent(value: CallbackTo[Section]): Self = StObject.set(x, "getParent", value.toJsFn)
+  }
 }
-

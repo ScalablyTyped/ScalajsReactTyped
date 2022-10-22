@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.stringType
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.booleanType
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.tokenType
 */
-trait MdmAppConfigKeyType extends js.Object
-
+trait MdmAppConfigKeyType extends StObject
 object MdmAppConfigKeyType {
-  @scala.inline
-  def booleanType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.booleanType = this.cast("booleanType")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def integerType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.integerType = this.cast("integerType")
-  @scala.inline
-  def realType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.realType = this.cast("realType")
-  @scala.inline
-  def stringType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.stringType = this.cast("stringType")
-  @scala.inline
-  def tokenType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tokenType = this.cast("tokenType")
+  
+  inline def booleanType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.booleanType = "booleanType".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.booleanType]
+  
+  inline def integerType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.integerType = "integerType".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.integerType]
+  
+  inline def realType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.realType = "realType".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.realType]
+  
+  inline def stringType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.stringType = "stringType".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.stringType]
+  
+  inline def tokenType: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tokenType = "tokenType".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.tokenType]
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@testing-library/user-event" : "14.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@testing-library/user-event" : "14.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

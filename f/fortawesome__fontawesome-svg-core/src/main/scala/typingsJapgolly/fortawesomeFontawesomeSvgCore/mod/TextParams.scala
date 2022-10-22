@@ -1,29 +1,26 @@
 package typingsJapgolly.fortawesomeFontawesomeSvgCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextParams extends Params {
+trait TextParams
+  extends StObject
+     with Params {
+  
   var transform: js.UndefOr[Transform] = js.undefined
 }
-
 object TextParams {
-  @scala.inline
-  def apply(
-    attributes: Attributes = null,
-    classes: String | js.Array[String] = null,
-    styles: Styles = null,
-    title: String = null,
-    transform: Transform = null
-  ): TextParams = {
+  
+  inline def apply(): TextParams = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextParams]
   }
+  
+  extension [Self <: TextParams](x: Self) {
+    
+    inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+  }
 }
-

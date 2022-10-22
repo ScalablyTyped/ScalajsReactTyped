@@ -1,19 +1,21 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "ChangeDetectorRef")
+/* note: abstract class */ @JSImport("@angular/core", "ChangeDetectorRef")
 @js.native
-abstract class ChangeDetectorRef () extends js.Object {
+open class ChangeDetectorRef () extends StObject {
+  
   /**
     * Checks the change detector and its children, and throws if any changes are detected.
     *
     * Use in development mode to verify that running change detection doesn't introduce
-    * other changes.
+    * other changes. Calling it in production mode is a noop.
     */
   def checkNoChanges(): Unit = js.native
+  
   /**
     * Detaches this view from the change-detection tree.
     * A detached view is  not checked until it is reattached.
@@ -27,6 +29,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     */
   def detach(): Unit = js.native
+  
   /**
     * Checks this view and its children. Use in combination with {@link ChangeDetectorRef#detach
     * detach}
@@ -37,6 +40,7 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     */
   def detectChanges(): Unit = js.native
+  
   /**
     * When a view uses the {@link ChangeDetectionStrategy#OnPush OnPush} (checkOnce)
     * change detection strategy, explicitly marks the view as changed so that
@@ -44,12 +48,13 @@ abstract class ChangeDetectorRef () extends js.Object {
     *
     * Components are normally marked as dirty (in need of rerendering) when inputs
     * have changed or events have fired in the view. Call this method to ensure that
-    * a component is checked even if these triggers have not occured.
+    * a component is checked even if these triggers have not occurred.
     *
     * <!-- TODO: Add a link to a chapter on OnPush components -->
     *
     */
   def markForCheck(): Unit = js.native
+  
   /**
     * Re-attaches the previously detached view to the change detection tree.
     * Views are attached to the tree by default.
@@ -59,4 +64,3 @@ abstract class ChangeDetectorRef () extends js.Object {
     */
   def reattach(): Unit = js.native
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.turbolinks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object turbolinksStrings {
-  @js.native
-  sealed trait advance extends js.Object
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait advance extends StObject
+  inline def advance: advance = "advance".asInstanceOf[advance]
   
-  @scala.inline
-  def advance: advance = "advance".asInstanceOf[advance]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }
-

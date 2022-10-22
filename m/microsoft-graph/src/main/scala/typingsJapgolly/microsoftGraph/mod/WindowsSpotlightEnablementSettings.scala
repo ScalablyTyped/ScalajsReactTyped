@@ -1,24 +1,20 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.enabled
 */
-trait WindowsSpotlightEnablementSettings extends js.Object
-
+trait WindowsSpotlightEnablementSettings extends StObject
 object WindowsSpotlightEnablementSettings {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def enabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enabled = this.cast("enabled")
-  @scala.inline
-  def notConfigured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured = this.cast("notConfigured")
+  
+  inline def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled]
+  
+  inline def enabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.enabled = "enabled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.enabled]
+  
+  inline def notConfigured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured = "notConfigured".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notConfigured]
 }
-

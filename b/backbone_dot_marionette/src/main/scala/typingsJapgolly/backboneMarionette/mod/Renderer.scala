@@ -1,12 +1,15 @@
 package typingsJapgolly.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("backbone.marionette", "Renderer")
-@js.native
-object Renderer extends js.Object {
+object Renderer {
+  
+  @JSImport("backbone.marionette", "Renderer")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     *  This method returns a string containing the result of applying the
     * template using the data object as the context.
@@ -18,6 +21,5 @@ object Renderer extends js.Object {
     * that returns valid HTML as a string from the data parameter passed to
     * the function.
     */
-  def render(template: js.Any, data: js.Any): String = js.native
+  inline def render(template: Any, data: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

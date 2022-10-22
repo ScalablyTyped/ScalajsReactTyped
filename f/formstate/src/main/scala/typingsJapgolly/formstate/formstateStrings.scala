@@ -1,24 +1,20 @@
 package typingsJapgolly.formstate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formstateStrings {
-  @js.native
-  sealed trait array extends js.Object
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait array extends StObject
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait map extends StObject
+  inline def map: map = "map".asInstanceOf[map]
   
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
+  @js.native
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
 }
-

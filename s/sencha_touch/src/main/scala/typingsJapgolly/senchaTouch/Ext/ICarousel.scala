@@ -2,149 +2,215 @@ package typingsJapgolly.senchaTouch.Ext
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICarousel extends IContainer {
+trait ICarousel
+  extends StObject
+     with IContainer {
+  
   /** [Config Option] (String) */
   var direction: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Method] Returns the index of the currently active card
-  		* @returns Number The index of the currently active card.
-  		*/
+    * @returns Number The index of the currently active card.
+    */
   var getActiveIndex: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of animation
-  		* @returns Object
-  		*/
-  var getAnimation: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getAnimation: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of bufferSize
-  		* @returns Number
-  		*/
+    * @returns Number
+    */
   var getBufferSize: js.UndefOr[js.Function0[Double]] = js.undefined
+  
   /** [Method] Returns the value of direction
-  		* @returns String
-  		*/
+    * @returns String
+    */
   var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
+  
   /** [Method] Returns the value of directionLock
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var getDirectionLock: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns the value of indicator
-  		* @returns any
-  		*/
-  var getIndicator: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns any
+    */
+  var getIndicator: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of itemConfig
-  		* @returns Object
-  		*/
-  var getItemConfig: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getItemConfig: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Method] Returns the value of itemLength
-  		* @returns Object
-  		*/
-  var getItemLength: js.UndefOr[js.Function0[_]] = js.undefined
+    * @returns Object
+    */
+  var getItemLength: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var indicator: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] Returns true when direction is horizontal
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isHorizontal: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Returns true when direction is vertical
-  		* @returns Boolean
-  		*/
+    * @returns Boolean
+    */
   var isVertical: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   /** [Method] Switches to the next card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var next: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Method] Switches to the previous card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var prev: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Method] Switches to the previous card
-  		* @returns Ext.carousel.Carousel this
-  		*/
+    * @returns Ext.carousel.Carousel this
+    */
   var previous: js.UndefOr[js.Function0[this.type]] = js.undefined
+  
   /** [Method] Sets the value of animation
-  		* @param animation Object The new value.
-  		*/
-  var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param animation Object The new value.
+    */
+  var setAnimation: js.UndefOr[js.Function1[/* animation */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of bufferSize
-  		* @param bufferSize Number The new value.
-  		*/
+    * @param bufferSize Number The new value.
+    */
   var setBufferSize: js.UndefOr[js.Function1[/* bufferSize */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Method] Sets the value of direction
-  		* @param direction String The new value.
-  		*/
+    * @param direction String The new value.
+    */
   var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
+  
   /** [Method] Sets the value of directionLock
-  		* @param directionLock Boolean The new value.
-  		*/
+    * @param directionLock Boolean The new value.
+    */
   var setDirectionLock: js.UndefOr[js.Function1[/* directionLock */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of indicator
-  		* @param indicator Boolean The new value.
-  		*/
+    * @param indicator Boolean The new value.
+    */
   var setIndicator: js.UndefOr[js.Function1[/* indicator */ js.UndefOr[Boolean], Unit]] = js.undefined
+  
   /** [Method] Sets the value of itemConfig
-  		* @param itemConfig Object The new value.
-  		*/
-  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param itemConfig Object The new value.
+    */
+  var setItemConfig: js.UndefOr[js.Function1[/* itemConfig */ js.UndefOr[Any], Unit]] = js.undefined
+  
   /** [Method] Sets the value of itemLength
-  		* @param itemLength Object The new value.
-  		*/
-  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[js.Any], Unit]] = js.undefined
+    * @param itemLength Object The new value.
+    */
+  var setItemLength: js.UndefOr[js.Function1[/* itemLength */ js.UndefOr[Any], Unit]] = js.undefined
 }
-
 object ICarousel {
-  @scala.inline
-  def apply(
-    IContainer: IContainer = null,
-    direction: java.lang.String = null,
-    getActiveIndex: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getAnimation: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getBufferSize: js.UndefOr[CallbackTo[Double]] = js.undefined,
-    getDirection: js.UndefOr[CallbackTo[java.lang.String]] = js.undefined,
-    getDirectionLock: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    getIndicator: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getItemConfig: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    getItemLength: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    indicator: js.UndefOr[Boolean] = js.undefined,
-    isHorizontal: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    isVertical: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    next: js.UndefOr[CallbackTo[ICarousel]] = js.undefined,
-    prev: js.UndefOr[CallbackTo[ICarousel]] = js.undefined,
-    previous: js.UndefOr[CallbackTo[ICarousel]] = js.undefined,
-    setAnimation: /* animation */ js.UndefOr[js.Any] => Callback = null,
-    setBufferSize: /* bufferSize */ js.UndefOr[Double] => Callback = null,
-    setDirection: /* direction */ js.UndefOr[java.lang.String] => Callback = null,
-    setDirectionLock: /* directionLock */ js.UndefOr[Boolean] => Callback = null,
-    setIndicator: /* indicator */ js.UndefOr[Boolean] => Callback = null,
-    setItemConfig: /* itemConfig */ js.UndefOr[js.Any] => Callback = null,
-    setItemLength: /* itemLength */ js.UndefOr[js.Any] => Callback = null
-  ): ICarousel = {
+  
+  inline def apply(): ICarousel = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    getActiveIndex.foreach(p => __obj.updateDynamic("getActiveIndex")(p.toJsFn))
-    getAnimation.foreach(p => __obj.updateDynamic("getAnimation")(p.toJsFn))
-    getBufferSize.foreach(p => __obj.updateDynamic("getBufferSize")(p.toJsFn))
-    getDirection.foreach(p => __obj.updateDynamic("getDirection")(p.toJsFn))
-    getDirectionLock.foreach(p => __obj.updateDynamic("getDirectionLock")(p.toJsFn))
-    getIndicator.foreach(p => __obj.updateDynamic("getIndicator")(p.toJsFn))
-    getItemConfig.foreach(p => __obj.updateDynamic("getItemConfig")(p.toJsFn))
-    getItemLength.foreach(p => __obj.updateDynamic("getItemLength")(p.toJsFn))
-    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator.asInstanceOf[js.Any])
-    isHorizontal.foreach(p => __obj.updateDynamic("isHorizontal")(p.toJsFn))
-    isVertical.foreach(p => __obj.updateDynamic("isVertical")(p.toJsFn))
-    next.foreach(p => __obj.updateDynamic("next")(p.toJsFn))
-    prev.foreach(p => __obj.updateDynamic("prev")(p.toJsFn))
-    previous.foreach(p => __obj.updateDynamic("previous")(p.toJsFn))
-    if (setAnimation != null) __obj.updateDynamic("setAnimation")(js.Any.fromFunction1((t0: /* animation */ js.UndefOr[js.Any]) => setAnimation(t0).runNow()))
-    if (setBufferSize != null) __obj.updateDynamic("setBufferSize")(js.Any.fromFunction1((t0: /* bufferSize */ js.UndefOr[scala.Double]) => setBufferSize(t0).runNow()))
-    if (setDirection != null) __obj.updateDynamic("setDirection")(js.Any.fromFunction1((t0: /* direction */ js.UndefOr[java.lang.String]) => setDirection(t0).runNow()))
-    if (setDirectionLock != null) __obj.updateDynamic("setDirectionLock")(js.Any.fromFunction1((t0: /* directionLock */ js.UndefOr[scala.Boolean]) => setDirectionLock(t0).runNow()))
-    if (setIndicator != null) __obj.updateDynamic("setIndicator")(js.Any.fromFunction1((t0: /* indicator */ js.UndefOr[scala.Boolean]) => setIndicator(t0).runNow()))
-    if (setItemConfig != null) __obj.updateDynamic("setItemConfig")(js.Any.fromFunction1((t0: /* itemConfig */ js.UndefOr[js.Any]) => setItemConfig(t0).runNow()))
-    if (setItemLength != null) __obj.updateDynamic("setItemLength")(js.Any.fromFunction1((t0: /* itemLength */ js.UndefOr[js.Any]) => setItemLength(t0).runNow()))
     __obj.asInstanceOf[ICarousel]
   }
+  
+  extension [Self <: ICarousel](x: Self) {
+    
+    inline def setDirection(value: java.lang.String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setGetActiveIndex(value: CallbackTo[Double]): Self = StObject.set(x, "getActiveIndex", value.toJsFn)
+    
+    inline def setGetActiveIndexUndefined: Self = StObject.set(x, "getActiveIndex", js.undefined)
+    
+    inline def setGetAnimation(value: CallbackTo[Any]): Self = StObject.set(x, "getAnimation", value.toJsFn)
+    
+    inline def setGetAnimationUndefined: Self = StObject.set(x, "getAnimation", js.undefined)
+    
+    inline def setGetBufferSize(value: CallbackTo[Double]): Self = StObject.set(x, "getBufferSize", value.toJsFn)
+    
+    inline def setGetBufferSizeUndefined: Self = StObject.set(x, "getBufferSize", js.undefined)
+    
+    inline def setGetDirection(value: CallbackTo[java.lang.String]): Self = StObject.set(x, "getDirection", value.toJsFn)
+    
+    inline def setGetDirectionLock(value: CallbackTo[Boolean]): Self = StObject.set(x, "getDirectionLock", value.toJsFn)
+    
+    inline def setGetDirectionLockUndefined: Self = StObject.set(x, "getDirectionLock", js.undefined)
+    
+    inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
+    
+    inline def setGetIndicator(value: CallbackTo[Any]): Self = StObject.set(x, "getIndicator", value.toJsFn)
+    
+    inline def setGetIndicatorUndefined: Self = StObject.set(x, "getIndicator", js.undefined)
+    
+    inline def setGetItemConfig(value: CallbackTo[Any]): Self = StObject.set(x, "getItemConfig", value.toJsFn)
+    
+    inline def setGetItemConfigUndefined: Self = StObject.set(x, "getItemConfig", js.undefined)
+    
+    inline def setGetItemLength(value: CallbackTo[Any]): Self = StObject.set(x, "getItemLength", value.toJsFn)
+    
+    inline def setGetItemLengthUndefined: Self = StObject.set(x, "getItemLength", js.undefined)
+    
+    inline def setIndicator(value: Boolean): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorUndefined: Self = StObject.set(x, "indicator", js.undefined)
+    
+    inline def setIsHorizontal(value: CallbackTo[Boolean]): Self = StObject.set(x, "isHorizontal", value.toJsFn)
+    
+    inline def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
+    
+    inline def setIsVertical(value: CallbackTo[Boolean]): Self = StObject.set(x, "isVertical", value.toJsFn)
+    
+    inline def setIsVerticalUndefined: Self = StObject.set(x, "isVertical", js.undefined)
+    
+    inline def setNext(value: CallbackTo[ICarousel]): Self = StObject.set(x, "next", value.toJsFn)
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
+    inline def setPrev(value: CallbackTo[ICarousel]): Self = StObject.set(x, "prev", value.toJsFn)
+    
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    
+    inline def setPrevious(value: CallbackTo[ICarousel]): Self = StObject.set(x, "previous", value.toJsFn)
+    
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    
+    inline def setSetAnimation(value: /* animation */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setAnimation", js.Any.fromFunction1((t0: /* animation */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetAnimationUndefined: Self = StObject.set(x, "setAnimation", js.undefined)
+    
+    inline def setSetBufferSize(value: /* bufferSize */ js.UndefOr[Double] => Callback): Self = StObject.set(x, "setBufferSize", js.Any.fromFunction1((t0: /* bufferSize */ js.UndefOr[Double]) => value(t0).runNow()))
+    
+    inline def setSetBufferSizeUndefined: Self = StObject.set(x, "setBufferSize", js.undefined)
+    
+    inline def setSetDirection(value: /* direction */ js.UndefOr[java.lang.String] => Callback): Self = StObject.set(x, "setDirection", js.Any.fromFunction1((t0: /* direction */ js.UndefOr[java.lang.String]) => value(t0).runNow()))
+    
+    inline def setSetDirectionLock(value: /* directionLock */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setDirectionLock", js.Any.fromFunction1((t0: /* directionLock */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetDirectionLockUndefined: Self = StObject.set(x, "setDirectionLock", js.undefined)
+    
+    inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+    
+    inline def setSetIndicator(value: /* indicator */ js.UndefOr[Boolean] => Callback): Self = StObject.set(x, "setIndicator", js.Any.fromFunction1((t0: /* indicator */ js.UndefOr[Boolean]) => value(t0).runNow()))
+    
+    inline def setSetIndicatorUndefined: Self = StObject.set(x, "setIndicator", js.undefined)
+    
+    inline def setSetItemConfig(value: /* itemConfig */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setItemConfig", js.Any.fromFunction1((t0: /* itemConfig */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetItemConfigUndefined: Self = StObject.set(x, "setItemConfig", js.undefined)
+    
+    inline def setSetItemLength(value: /* itemLength */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "setItemLength", js.Any.fromFunction1((t0: /* itemLength */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setSetItemLengthUndefined: Self = StObject.set(x, "setItemLength", js.undefined)
+  }
 }
-

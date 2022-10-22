@@ -1,47 +1,39 @@
 package typingsJapgolly.microsoftAjax.Sys.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MouseButton extends js.Object
-
+sealed trait MouseButton extends StObject
 /**
   * Describes mouse button locations.
   */
 @JSGlobal("Sys.UI.MouseButton")
 @js.native
-object MouseButton extends js.Object {
+object MouseButton extends StObject {
+  
   /**
     * Represents the left mouse button.
     */
   @js.native
-  sealed trait leftButton extends MouseButton
+  sealed trait leftButton
+    extends StObject
+       with MouseButton
   
   /**
     * Represents the middle mouse button.
     */
   @js.native
-  sealed trait middleButton extends MouseButton
+  sealed trait middleButton
+    extends StObject
+       with MouseButton
   
   /**
     * Represents the right mouse button.
     */
   @js.native
-  sealed trait rightButton extends MouseButton
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MouseButton with Double] = js.native
-  /* 0 */ @js.native
-  object leftButton extends TopLevel[leftButton with Double]
-  
-  /* 1 */ @js.native
-  object middleButton extends TopLevel[middleButton with Double]
-  
-  /* 2 */ @js.native
-  object rightButton extends TopLevel[rightButton with Double]
-  
+  sealed trait rightButton
+    extends StObject
+       with MouseButton
 }
-

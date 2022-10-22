@@ -1,13 +1,21 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "SplitInterpolation")
 @js.native
-class SplitInterpolation protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.SplitInterpolation {
-  def this(strings: js.Array[String], expressions: js.Array[String], offsets: js.Array[Double]) = this()
+open class SplitInterpolation protected () extends StObject {
+  def this(
+    strings: js.Array[InterpolationPiece],
+    expressions: js.Array[InterpolationPiece],
+    offsets: js.Array[Double]
+  ) = this()
+  
+  var expressions: js.Array[InterpolationPiece] = js.native
+  
+  var offsets: js.Array[Double] = js.native
+  
+  var strings: js.Array[InterpolationPiece] = js.native
 }
-

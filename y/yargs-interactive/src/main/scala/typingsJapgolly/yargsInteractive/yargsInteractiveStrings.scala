@@ -1,74 +1,60 @@
 package typingsJapgolly.yargsInteractive
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yargsInteractiveStrings {
-  @js.native
-  sealed trait always extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait confirm extends js.Object
+  sealed trait checkbox extends StObject
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait editor extends js.Object
+  sealed trait confirm extends StObject
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait editor extends StObject
+  inline def editor: editor = "editor".asInstanceOf[editor]
   
   @js.native
-  sealed trait `if-empty` extends js.Object
+  sealed trait expand extends StObject
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait `if-no-arg` extends js.Object
+  sealed trait `if-empty` extends StObject
+  inline def `if-empty`: `if-empty` = "if-empty".asInstanceOf[`if-empty`]
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait `if-no-arg` extends StObject
+  inline def `if-no-arg`: `if-no-arg` = "if-no-arg".asInstanceOf[`if-no-arg`]
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait input extends StObject
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait rawlist extends js.Object
+  sealed trait password extends StObject
+  inline def password: password = "password".asInstanceOf[password]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
-  @scala.inline
-  def editor: editor = "editor".asInstanceOf[editor]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def `if-empty`: `if-empty` = "if-empty".asInstanceOf[`if-empty`]
-  @scala.inline
-  def `if-no-arg`: `if-no-arg` = "if-no-arg".asInstanceOf[`if-no-arg`]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
+  @js.native
+  sealed trait rawlist extends StObject
+  inline def rawlist: rawlist = "rawlist".asInstanceOf[rawlist]
 }
-

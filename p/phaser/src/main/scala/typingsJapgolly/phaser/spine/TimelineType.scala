@@ -1,107 +1,87 @@
 package typingsJapgolly.phaser.spine
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimelineType extends js.Object
-
+sealed trait TimelineType extends StObject
 @JSGlobal("spine.TimelineType")
 @js.native
-object TimelineType extends js.Object {
-  @js.native
-  sealed trait attachment extends TimelineType
+object TimelineType extends StObject {
   
   @js.native
-  sealed trait color extends TimelineType
+  sealed trait attachment
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait deform extends TimelineType
+  sealed trait color
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait drawOrder extends TimelineType
+  sealed trait deform
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait event extends TimelineType
+  sealed trait drawOrder
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait ikConstraint extends TimelineType
+  sealed trait event
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintMix extends TimelineType
+  sealed trait ikConstraint
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintPosition extends TimelineType
+  sealed trait pathConstraintMix
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait pathConstraintSpacing extends TimelineType
+  sealed trait pathConstraintPosition
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait rotate extends TimelineType
+  sealed trait pathConstraintSpacing
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait scale extends TimelineType
+  sealed trait rotate
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait shear extends TimelineType
+  sealed trait scale
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait transformConstraint extends TimelineType
+  sealed trait shear
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait translate extends TimelineType
+  sealed trait transformConstraint
+    extends StObject
+       with TimelineType
   
   @js.native
-  sealed trait twoColor extends TimelineType
+  sealed trait translate
+    extends StObject
+       with TimelineType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimelineType with Double] = js.native
-  /* 4 */ @js.native
-  object attachment extends TopLevel[attachment with Double]
-  
-  /* 5 */ @js.native
-  object color extends TopLevel[color with Double]
-  
-  /* 6 */ @js.native
-  object deform extends TopLevel[deform with Double]
-  
-  /* 8 */ @js.native
-  object drawOrder extends TopLevel[drawOrder with Double]
-  
-  /* 7 */ @js.native
-  object event extends TopLevel[event with Double]
-  
-  /* 9 */ @js.native
-  object ikConstraint extends TopLevel[ikConstraint with Double]
-  
-  /* 13 */ @js.native
-  object pathConstraintMix extends TopLevel[pathConstraintMix with Double]
-  
-  /* 11 */ @js.native
-  object pathConstraintPosition extends TopLevel[pathConstraintPosition with Double]
-  
-  /* 12 */ @js.native
-  object pathConstraintSpacing extends TopLevel[pathConstraintSpacing with Double]
-  
-  /* 0 */ @js.native
-  object rotate extends TopLevel[rotate with Double]
-  
-  /* 2 */ @js.native
-  object scale extends TopLevel[scale with Double]
-  
-  /* 3 */ @js.native
-  object shear extends TopLevel[shear with Double]
-  
-  /* 10 */ @js.native
-  object transformConstraint extends TopLevel[transformConstraint with Double]
-  
-  /* 1 */ @js.native
-  object translate extends TopLevel[translate with Double]
-  
-  /* 14 */ @js.native
-  object twoColor extends TopLevel[twoColor with Double]
-  
+  @js.native
+  sealed trait twoColor
+    extends StObject
+       with TimelineType
 }
-

@@ -1,29 +1,33 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.manual
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SceneViewConstraintsClipDistanceProperties extends Object {
+trait SceneViewConstraintsClipDistanceProperties
+  extends StObject
+     with Object {
+  
   /**
     * The far clip distance.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var far: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Specifies the mode of the constraint which is either `auto` or `manual`. In `auto` mode, the near and far clip distance values are automatically determined. In `manual` mode, the near and far clip distance values are user defined, constant values. Note that the mode automatically changes to `manual` whenever the `near` or `far` property is set.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
+    * Specifies the mode of the constraint which is either `auto` or `manual`.
     *
     * @default auto
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#constraints)
     */
   var mode: js.UndefOr[auto | manual] = js.undefined
+  
   /**
     * The near clip distance.
     *
@@ -31,24 +35,29 @@ trait SceneViewConstraintsClipDistanceProperties extends Object {
     */
   var near: js.UndefOr[Double] = js.undefined
 }
-
 object SceneViewConstraintsClipDistanceProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    far: Int | Double = null,
-    mode: auto | manual = null,
-    near: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SceneViewConstraintsClipDistanceProperties = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (far != null) __obj.updateDynamic("far")(far.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (near != null) __obj.updateDynamic("near")(near.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SceneViewConstraintsClipDistanceProperties]
   }
+  
+  extension [Self <: SceneViewConstraintsClipDistanceProperties](x: Self) {
+    
+    inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
+    
+    inline def setFarUndefined: Self = StObject.set(x, "far", js.undefined)
+    
+    inline def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setNear(value: Double): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
+    
+    inline def setNearUndefined: Self = StObject.set(x, "near", js.undefined)
+  }
 }
-

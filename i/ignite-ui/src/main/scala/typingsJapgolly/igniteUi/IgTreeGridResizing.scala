@@ -2,81 +2,103 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTreeGridResizing
-  extends /**
-	 * Option for igTreeGridResizing
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Resize the column to the size of the longest currently visible cell value.
-  	 *
-  	 */
+    * Resize the column to the size of the longest currently visible cell value.
+    *
+    */
   var allowDoubleClickToResize: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Event fired after the resizing has been executed and results are rendered
-  	 */
+    * Event fired after the resizing has been executed and results are rendered
+    */
   var columnResized: js.UndefOr[ColumnResizedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a resizing operation is executed.
-  	 */
+    * Event fired before a resizing operation is executed.
+    */
   var columnResizing: js.UndefOr[ColumnResizingEvent] = js.undefined
+  
   /**
-  	 * Event fired(only when columnFixing is enabled) when trying to resize column in fixed area so total width of unfixed area to be less than minimalVisibleAreaWidth(option defined in columnFixing)
-  	 */
+    * Event fired(only when columnFixing is enabled) when trying to resize column in fixed area so total width of unfixed area to be less than minimalVisibleAreaWidth(option defined in columnFixing)
+    */
   var columnResizingRefused: js.UndefOr[ColumnResizingRefusedEvent] = js.undefined
+  
   /**
-  	 * A list of column settings that specifies resizing options on a per column basis.
-  	 *
-  	 */
+    * A list of column settings that specifies resizing options on a per column basis.
+    *
+    */
   var columnSettings: js.UndefOr[js.Array[IgGridResizingColumnSetting]] = js.undefined
+  
   /**
-  	 * Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately.
-  	 *
-  	 */
+    * Specifies whether the resizing should be deferred until the user finishes resizing or applied immediately.
+    *
+    */
   var deferredResizing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * The width in pixels of the resizing handle which is position at the right side of each resizeable column header.
-  	 *
-  	 */
+    * The width in pixels of the resizing handle which is position at the right side of each resizeable column header.
+    *
+    */
   var handleThreshold: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
-  	 */
+    * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
+    */
   var inherit: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgTreeGridResizing {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igTreeGridResizing
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowDoubleClickToResize: js.UndefOr[Boolean] = js.undefined,
-    columnResized: (/* event */ Event_, /* ui */ ColumnResizedEventUIParam) => Callback = null,
-    columnResizing: (/* event */ Event_, /* ui */ ColumnResizingEventUIParam) => Callback = null,
-    columnResizingRefused: (/* event */ Event_, /* ui */ ColumnResizingRefusedEventUIParam) => Callback = null,
-    columnSettings: js.Array[IgGridResizingColumnSetting] = null,
-    deferredResizing: js.UndefOr[Boolean] = js.undefined,
-    handleThreshold: Int | Double = null,
-    inherit: js.UndefOr[Boolean] = js.undefined
-  ): IgTreeGridResizing = {
+  
+  inline def apply(): IgTreeGridResizing = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowDoubleClickToResize)) __obj.updateDynamic("allowDoubleClickToResize")(allowDoubleClickToResize.asInstanceOf[js.Any])
-    if (columnResized != null) __obj.updateDynamic("columnResized")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ColumnResizedEventUIParam) => columnResized(t0, t1).runNow()))
-    if (columnResizing != null) __obj.updateDynamic("columnResizing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ColumnResizingEventUIParam) => columnResizing(t0, t1).runNow()))
-    if (columnResizingRefused != null) __obj.updateDynamic("columnResizingRefused")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ColumnResizingRefusedEventUIParam) => columnResizingRefused(t0, t1).runNow()))
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferredResizing)) __obj.updateDynamic("deferredResizing")(deferredResizing.asInstanceOf[js.Any])
-    if (handleThreshold != null) __obj.updateDynamic("handleThreshold")(handleThreshold.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridResizing]
   }
+  
+  extension [Self <: IgTreeGridResizing](x: Self) {
+    
+    inline def setAllowDoubleClickToResize(value: Boolean): Self = StObject.set(x, "allowDoubleClickToResize", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDoubleClickToResizeUndefined: Self = StObject.set(x, "allowDoubleClickToResize", js.undefined)
+    
+    inline def setColumnResized(value: (/* event */ Event, /* ui */ ColumnResizedEventUIParam) => Callback): Self = StObject.set(x, "columnResized", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ColumnResizedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setColumnResizedUndefined: Self = StObject.set(x, "columnResized", js.undefined)
+    
+    inline def setColumnResizing(value: (/* event */ Event, /* ui */ ColumnResizingEventUIParam) => Callback): Self = StObject.set(x, "columnResizing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ColumnResizingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setColumnResizingRefused(value: (/* event */ Event, /* ui */ ColumnResizingRefusedEventUIParam) => Callback): Self = StObject.set(x, "columnResizingRefused", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ColumnResizingRefusedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setColumnResizingRefusedUndefined: Self = StObject.set(x, "columnResizingRefused", js.undefined)
+    
+    inline def setColumnResizingUndefined: Self = StObject.set(x, "columnResizing", js.undefined)
+    
+    inline def setColumnSettings(value: js.Array[IgGridResizingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    
+    inline def setColumnSettingsVarargs(value: IgGridResizingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
+    
+    inline def setDeferredResizing(value: Boolean): Self = StObject.set(x, "deferredResizing", value.asInstanceOf[js.Any])
+    
+    inline def setDeferredResizingUndefined: Self = StObject.set(x, "deferredResizing", js.undefined)
+    
+    inline def setHandleThreshold(value: Double): Self = StObject.set(x, "handleThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setHandleThresholdUndefined: Self = StObject.set(x, "handleThreshold", js.undefined)
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+  }
 }
-

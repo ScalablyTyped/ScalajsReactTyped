@@ -1,25 +1,27 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Http
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Add or delete an HttpCookie or view the cookies associated with an app. */
-@JSGlobal("Windows.Web.Http.HttpCookieManager")
 @js.native
-abstract class HttpCookieManager () extends js.Object {
+trait HttpCookieManager extends StObject {
+  
   /**
     * Delete an HttpCookie from the cookies associated with an app.
     * @param cookie The HttpCookie to delete.
     */
   def deleteCookie(cookie: HttpCookie): Unit = js.native
+  
   /**
     * Gets an HttpCookieCollection that contains the HttpCookie instances that are associated with a specific URI.
     * @param uri The URI of the HttpCookie instances desired.
     * @return The HttpCookieCollection that contains the HttpCookie instances that are associated with a specific URI.
     */
   def getCookies(uri: Uri): HttpCookieCollection = js.native
+  
   /**
     * Add or change an HttpCookie in the cookies associated with an app that is sent on future requests.
     * @param cookie The HttpCookie to change or add.
@@ -34,4 +36,3 @@ abstract class HttpCookieManager () extends js.Object {
     */
   def setCookie(cookie: HttpCookie, thirdParty: Boolean): Boolean = js.native
 }
-

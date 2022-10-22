@@ -1,21 +1,17 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PRICING
   - typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PRICING
 */
-trait PricingType extends js.Object
-
+trait PricingType extends StObject
 object PricingType {
-  @scala.inline
-  def FIXED_PRICING: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PRICING = this.cast("FIXED_PRICING")
-  @scala.inline
-  def VARIABLE_PRICING: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PRICING = this.cast("VARIABLE_PRICING")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FIXED_PRICING: typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PRICING = "FIXED_PRICING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FIXED_PRICING]
+  
+  inline def VARIABLE_PRICING: typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PRICING = "VARIABLE_PRICING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VARIABLE_PRICING]
 }
-

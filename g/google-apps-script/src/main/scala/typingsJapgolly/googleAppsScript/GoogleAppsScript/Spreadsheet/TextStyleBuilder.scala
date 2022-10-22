@@ -2,46 +2,68 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for text styles.
   */
-trait TextStyleBuilder extends js.Object {
+trait TextStyleBuilder extends StObject {
+  
   def build(): TextStyle
+  
   def setBold(bold: Boolean): TextStyleBuilder
+  
   def setFontFamily(fontFamily: String): TextStyleBuilder
+  
   def setFontSize(fontSize: Integer): TextStyleBuilder
+  
   def setForegroundColor(cssString: String): TextStyleBuilder
+  
+  def setForegroundColorObject(color: Color): TextStyleBuilder
+  
   def setItalic(italic: Boolean): TextStyleBuilder
+  
   def setStrikethrough(strikethrough: Boolean): TextStyleBuilder
+  
   def setUnderline(underline: Boolean): TextStyleBuilder
 }
-
 object TextStyleBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     build: CallbackTo[TextStyle],
-    setBold: Boolean => CallbackTo[TextStyleBuilder],
-    setFontFamily: String => CallbackTo[TextStyleBuilder],
-    setFontSize: Integer => CallbackTo[TextStyleBuilder],
-    setForegroundColor: String => CallbackTo[TextStyleBuilder],
-    setItalic: Boolean => CallbackTo[TextStyleBuilder],
-    setStrikethrough: Boolean => CallbackTo[TextStyleBuilder],
-    setUnderline: Boolean => CallbackTo[TextStyleBuilder]
+    setBold: Boolean => TextStyleBuilder,
+    setFontFamily: String => TextStyleBuilder,
+    setFontSize: Integer => TextStyleBuilder,
+    setForegroundColor: String => TextStyleBuilder,
+    setForegroundColorObject: Color => TextStyleBuilder,
+    setItalic: Boolean => TextStyleBuilder,
+    setStrikethrough: Boolean => TextStyleBuilder,
+    setUnderline: Boolean => TextStyleBuilder
   ): TextStyleBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setBold")(js.Any.fromFunction1((t0: scala.Boolean) => setBold(t0).runNow()))
-    __obj.updateDynamic("setFontFamily")(js.Any.fromFunction1((t0: java.lang.String) => setFontFamily(t0).runNow()))
-    __obj.updateDynamic("setFontSize")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setFontSize(t0).runNow()))
-    __obj.updateDynamic("setForegroundColor")(js.Any.fromFunction1((t0: java.lang.String) => setForegroundColor(t0).runNow()))
-    __obj.updateDynamic("setItalic")(js.Any.fromFunction1((t0: scala.Boolean) => setItalic(t0).runNow()))
-    __obj.updateDynamic("setStrikethrough")(js.Any.fromFunction1((t0: scala.Boolean) => setStrikethrough(t0).runNow()))
-    __obj.updateDynamic("setUnderline")(js.Any.fromFunction1((t0: scala.Boolean) => setUnderline(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, setBold = js.Any.fromFunction1(setBold), setFontFamily = js.Any.fromFunction1(setFontFamily), setFontSize = js.Any.fromFunction1(setFontSize), setForegroundColor = js.Any.fromFunction1(setForegroundColor), setForegroundColorObject = js.Any.fromFunction1(setForegroundColorObject), setItalic = js.Any.fromFunction1(setItalic), setStrikethrough = js.Any.fromFunction1(setStrikethrough), setUnderline = js.Any.fromFunction1(setUnderline))
     __obj.asInstanceOf[TextStyleBuilder]
   }
+  
+  extension [Self <: TextStyleBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[TextStyle]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetBold(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setBold", js.Any.fromFunction1(value))
+    
+    inline def setSetFontFamily(value: String => TextStyleBuilder): Self = StObject.set(x, "setFontFamily", js.Any.fromFunction1(value))
+    
+    inline def setSetFontSize(value: Integer => TextStyleBuilder): Self = StObject.set(x, "setFontSize", js.Any.fromFunction1(value))
+    
+    inline def setSetForegroundColor(value: String => TextStyleBuilder): Self = StObject.set(x, "setForegroundColor", js.Any.fromFunction1(value))
+    
+    inline def setSetForegroundColorObject(value: Color => TextStyleBuilder): Self = StObject.set(x, "setForegroundColorObject", js.Any.fromFunction1(value))
+    
+    inline def setSetItalic(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setItalic", js.Any.fromFunction1(value))
+    
+    inline def setSetStrikethrough(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setStrikethrough", js.Any.fromFunction1(value))
+    
+    inline def setSetUnderline(value: Boolean => TextStyleBuilder): Self = StObject.set(x, "setUnderline", js.Any.fromFunction1(value))
+  }
 }
-

@@ -10,10 +10,10 @@ a dependency injector for node.js
 | ------------------ | :-------------: |
 | Full name          | forge-di |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 1 |
-| # downloads        | 2527 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 152.66666666666666 |
+| # stars            | 28.0 |
 
 ## Links
 - [Homepage](https://github.com/nkohari/forge#readme)

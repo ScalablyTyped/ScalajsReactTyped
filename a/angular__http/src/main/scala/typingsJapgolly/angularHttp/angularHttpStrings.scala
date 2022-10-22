@@ -1,24 +1,16 @@
 package typingsJapgolly.angularHttp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularHttpStrings {
-  @js.native
-  sealed trait __ng_jsonp__ extends js.Object
   
   @js.native
-  sealed trait `iso-8859` extends js.Object
+  sealed trait `iso-8859` extends StObject
+  inline def `iso-8859`: `iso-8859` = "iso-8859".asInstanceOf[`iso-8859`]
   
   @js.native
-  sealed trait legacy extends js.Object
-  
-  @scala.inline
-  def __ng_jsonp__ : __ng_jsonp__ = "__ng_jsonp__".asInstanceOf[__ng_jsonp__]
-  @scala.inline
-  def `iso-8859`: `iso-8859` = "iso-8859".asInstanceOf[`iso-8859`]
-  @scala.inline
-  def legacy: legacy = "legacy".asInstanceOf[legacy]
+  sealed trait legacy extends StObject
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
 }
-

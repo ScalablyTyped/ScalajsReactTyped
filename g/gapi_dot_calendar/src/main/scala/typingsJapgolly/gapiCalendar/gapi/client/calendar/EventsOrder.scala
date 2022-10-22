@@ -1,8 +1,8 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // The order of the events returned in the result. Optional. The default is an unspecified, stable order.
 // Acceptable values are:
@@ -10,14 +10,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.startTime
   - typingsJapgolly.gapiCalendar.gapiCalendarStrings.updated
 */
-trait EventsOrder extends js.Object
-
+trait EventsOrder extends StObject
 object EventsOrder {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def startTime: typingsJapgolly.gapiCalendar.gapiCalendarStrings.startTime = this.cast("startTime")
-  @scala.inline
-  def updated: typingsJapgolly.gapiCalendar.gapiCalendarStrings.updated = this.cast("updated")
+  
+  inline def startTime: typingsJapgolly.gapiCalendar.gapiCalendarStrings.startTime = "startTime".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.startTime]
+  
+  inline def updated: typingsJapgolly.gapiCalendar.gapiCalendarStrings.updated = "updated".asInstanceOf[typingsJapgolly.gapiCalendar.gapiCalendarStrings.updated]
 }
-

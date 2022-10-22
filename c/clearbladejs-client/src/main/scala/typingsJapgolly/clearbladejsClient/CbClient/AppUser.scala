@@ -1,27 +1,37 @@
 package typingsJapgolly.clearbladejsClient.CbClient
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AppUser extends js.Object {
+trait AppUser extends StObject {
+  
   var URI: String
-  var callTimeout: Double
-  var endpoint: String
-  var systemKey: String
-  var systemSecret: String
-  var user: APIUser
+  
   def allUsers(query: Query, callback: CbCallback): Unit
+  
+  var callTimeout: Double
+  
   def count(query: Query, callback: CbCallback): Unit
+  
+  var endpoint: String
+  
   def getUser(callback: CbCallback): Unit
+  
   def setPassword(old_password: String, new_password: String, callback: CbCallback): Unit
+  
   def setUser(data: js.Object, callback: CbCallback): Unit
+  
+  var systemKey: String
+  
+  var systemSecret: String
+  
+  var user: APIUser
 }
-
 object AppUser {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     URI: String,
     allUsers: (Query, CbCallback) => Callback,
     callTimeout: Double,
@@ -34,13 +44,32 @@ object AppUser {
     systemSecret: String,
     user: APIUser
   ): AppUser = {
-    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], callTimeout = callTimeout.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any], systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
-    __obj.updateDynamic("allUsers")(js.Any.fromFunction2((t0: typingsJapgolly.clearbladejsClient.CbClient.Query, t1: typingsJapgolly.clearbladejsClient.CbClient.CbCallback) => allUsers(t0, t1).runNow()))
-    __obj.updateDynamic("count")(js.Any.fromFunction2((t0: typingsJapgolly.clearbladejsClient.CbClient.Query, t1: typingsJapgolly.clearbladejsClient.CbClient.CbCallback) => count(t0, t1).runNow()))
-    __obj.updateDynamic("getUser")(js.Any.fromFunction1((t0: typingsJapgolly.clearbladejsClient.CbClient.CbCallback) => getUser(t0).runNow()))
-    __obj.updateDynamic("setPassword")(js.Any.fromFunction3((t0: java.lang.String, t1: java.lang.String, t2: typingsJapgolly.clearbladejsClient.CbClient.CbCallback) => setPassword(t0, t1, t2).runNow()))
-    __obj.updateDynamic("setUser")(js.Any.fromFunction2((t0: js.Object, t1: typingsJapgolly.clearbladejsClient.CbClient.CbCallback) => setUser(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any], allUsers = js.Any.fromFunction2((t0: Query, t1: CbCallback) => (allUsers(t0, t1)).runNow()), callTimeout = callTimeout.asInstanceOf[js.Any], count = js.Any.fromFunction2((t0: Query, t1: CbCallback) => (count(t0, t1)).runNow()), endpoint = endpoint.asInstanceOf[js.Any], getUser = js.Any.fromFunction1((t0: CbCallback) => getUser(t0).runNow()), setPassword = js.Any.fromFunction3((t0: String, t1: String, t2: CbCallback) => (setPassword(t0, t1, t2)).runNow()), setUser = js.Any.fromFunction2((t0: js.Object, t1: CbCallback) => (setUser(t0, t1)).runNow()), systemKey = systemKey.asInstanceOf[js.Any], systemSecret = systemSecret.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppUser]
   }
+  
+  extension [Self <: AppUser](x: Self) {
+    
+    inline def setAllUsers(value: (Query, CbCallback) => Callback): Self = StObject.set(x, "allUsers", js.Any.fromFunction2((t0: Query, t1: CbCallback) => (value(t0, t1)).runNow()))
+    
+    inline def setCallTimeout(value: Double): Self = StObject.set(x, "callTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: (Query, CbCallback) => Callback): Self = StObject.set(x, "count", js.Any.fromFunction2((t0: Query, t1: CbCallback) => (value(t0, t1)).runNow()))
+    
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    
+    inline def setGetUser(value: CbCallback => Callback): Self = StObject.set(x, "getUser", js.Any.fromFunction1((t0: CbCallback) => value(t0).runNow()))
+    
+    inline def setSetPassword(value: (String, String, CbCallback) => Callback): Self = StObject.set(x, "setPassword", js.Any.fromFunction3((t0: String, t1: String, t2: CbCallback) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setSetUser(value: (js.Object, CbCallback) => Callback): Self = StObject.set(x, "setUser", js.Any.fromFunction2((t0: js.Object, t1: CbCallback) => (value(t0, t1)).runNow()))
+    
+    inline def setSystemKey(value: String): Self = StObject.set(x, "systemKey", value.asInstanceOf[js.Any])
+    
+    inline def setSystemSecret(value: String): Self = StObject.set(x, "systemSecret", value.asInstanceOf[js.Any])
+    
+    inline def setURI(value: String): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: APIUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
 }
-

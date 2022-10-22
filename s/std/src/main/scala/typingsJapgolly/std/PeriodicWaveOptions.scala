@@ -1,26 +1,38 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PeriodicWaveOptions extends PeriodicWaveConstraints {
-  var imag: js.UndefOr[js.Array[Double] | scala.scalajs.js.typedarray.Float32Array] = js.undefined
-  var real: js.UndefOr[js.Array[Double] | scala.scalajs.js.typedarray.Float32Array] = js.undefined
+trait PeriodicWaveOptions
+  extends StObject
+     with PeriodicWaveConstraints {
+  
+  /* standard dom */
+  var imag: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array] = js.undefined
+  
+  /* standard dom */
+  var real: js.UndefOr[js.Array[Double] | js.typedarray.Float32Array] = js.undefined
 }
-
 object PeriodicWaveOptions {
-  @scala.inline
-  def apply(
-    disableNormalization: js.UndefOr[scala.Boolean] = js.undefined,
-    imag: js.Array[Double] | scala.scalajs.js.typedarray.Float32Array = null,
-    real: js.Array[Double] | scala.scalajs.js.typedarray.Float32Array = null
-  ): PeriodicWaveOptions = {
+  
+  inline def apply(): PeriodicWaveOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableNormalization)) __obj.updateDynamic("disableNormalization")(disableNormalization.asInstanceOf[js.Any])
-    if (imag != null) __obj.updateDynamic("imag")(imag.asInstanceOf[js.Any])
-    if (real != null) __obj.updateDynamic("real")(real.asInstanceOf[js.Any])
     __obj.asInstanceOf[PeriodicWaveOptions]
   }
+  
+  extension [Self <: PeriodicWaveOptions](x: Self) {
+    
+    inline def setImag(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+    
+    inline def setImagUndefined: Self = StObject.set(x, "imag", js.undefined)
+    
+    inline def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value*))
+    
+    inline def setReal(value: js.Array[Double] | js.typedarray.Float32Array): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+    
+    inline def setRealUndefined: Self = StObject.set(x, "real", js.undefined)
+    
+    inline def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value*))
+  }
 }
-

@@ -1,39 +1,46 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VerifyOptions extends js.Object {
+trait VerifyOptions extends StObject {
+  
   /**
     * A token retrieved from the verification link contained in the abuse@ verification email.
     *
     */
   var abuse_at_token: js.UndefOr[String] = js.undefined
+  
   /**
     * Request an email with a verification link to be sent to the sending domain’s abuse@ mailbox.
     *
     */
   var abuse_at_verify: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Request verification of CNAME record
     */
   var cname_verify: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Request verification of DKIM record
     *
     */
   var dkim_verify: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A token retrieved from the verification link contained in the postmaster@ verification email.
     *
     */
   var postmaster_at_token: js.UndefOr[String] = js.undefined
+  
   /**
     * Request an email with a verification link to be sent to the sending domain’s postmaster@ mailbox.
     *
     */
   var postmaster_at_verify: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Request verification of SPF record
     *
@@ -41,27 +48,41 @@ trait VerifyOptions extends js.Object {
     */
   var spf_verify: js.UndefOr[Boolean] = js.undefined
 }
-
 object VerifyOptions {
-  @scala.inline
-  def apply(
-    abuse_at_token: String = null,
-    abuse_at_verify: js.UndefOr[Boolean] = js.undefined,
-    cname_verify: js.UndefOr[Boolean] = js.undefined,
-    dkim_verify: js.UndefOr[Boolean] = js.undefined,
-    postmaster_at_token: String = null,
-    postmaster_at_verify: js.UndefOr[Boolean] = js.undefined,
-    spf_verify: js.UndefOr[Boolean] = js.undefined
-  ): VerifyOptions = {
+  
+  inline def apply(): VerifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (abuse_at_token != null) __obj.updateDynamic("abuse_at_token")(abuse_at_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(abuse_at_verify)) __obj.updateDynamic("abuse_at_verify")(abuse_at_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(cname_verify)) __obj.updateDynamic("cname_verify")(cname_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(dkim_verify)) __obj.updateDynamic("dkim_verify")(dkim_verify.asInstanceOf[js.Any])
-    if (postmaster_at_token != null) __obj.updateDynamic("postmaster_at_token")(postmaster_at_token.asInstanceOf[js.Any])
-    if (!js.isUndefined(postmaster_at_verify)) __obj.updateDynamic("postmaster_at_verify")(postmaster_at_verify.asInstanceOf[js.Any])
-    if (!js.isUndefined(spf_verify)) __obj.updateDynamic("spf_verify")(spf_verify.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerifyOptions]
   }
+  
+  extension [Self <: VerifyOptions](x: Self) {
+    
+    inline def setAbuse_at_token(value: String): Self = StObject.set(x, "abuse_at_token", value.asInstanceOf[js.Any])
+    
+    inline def setAbuse_at_tokenUndefined: Self = StObject.set(x, "abuse_at_token", js.undefined)
+    
+    inline def setAbuse_at_verify(value: Boolean): Self = StObject.set(x, "abuse_at_verify", value.asInstanceOf[js.Any])
+    
+    inline def setAbuse_at_verifyUndefined: Self = StObject.set(x, "abuse_at_verify", js.undefined)
+    
+    inline def setCname_verify(value: Boolean): Self = StObject.set(x, "cname_verify", value.asInstanceOf[js.Any])
+    
+    inline def setCname_verifyUndefined: Self = StObject.set(x, "cname_verify", js.undefined)
+    
+    inline def setDkim_verify(value: Boolean): Self = StObject.set(x, "dkim_verify", value.asInstanceOf[js.Any])
+    
+    inline def setDkim_verifyUndefined: Self = StObject.set(x, "dkim_verify", js.undefined)
+    
+    inline def setPostmaster_at_token(value: String): Self = StObject.set(x, "postmaster_at_token", value.asInstanceOf[js.Any])
+    
+    inline def setPostmaster_at_tokenUndefined: Self = StObject.set(x, "postmaster_at_token", js.undefined)
+    
+    inline def setPostmaster_at_verify(value: Boolean): Self = StObject.set(x, "postmaster_at_verify", value.asInstanceOf[js.Any])
+    
+    inline def setPostmaster_at_verifyUndefined: Self = StObject.set(x, "postmaster_at_verify", js.undefined)
+    
+    inline def setSpf_verify(value: Boolean): Self = StObject.set(x, "spf_verify", value.asInstanceOf[js.Any])
+    
+    inline def setSpf_verifyUndefined: Self = StObject.set(x, "spf_verify", js.undefined)
+  }
 }
-

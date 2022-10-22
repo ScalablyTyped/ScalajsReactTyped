@@ -11,9 +11,9 @@ socket.io with a wildcard event
 | Full name          | socketio-wildcard |
 | Keywords           | socket.io, websocket |
 | # releases         | 0 |
-| # dependents       | 46 |
-| # downloads        | 1060728 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 291630.3333333333 |
+| # stars            | 195.0 |
 
 ## Links
 - [Homepage](https://github.com/hden/socketio-wildcard)

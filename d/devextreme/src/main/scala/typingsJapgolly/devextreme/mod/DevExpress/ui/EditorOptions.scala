@@ -1,95 +1,112 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonJQueryEvent
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.devextremeStrings.always
-import typingsJapgolly.devextreme.devextremeStrings.auto
-import typingsJapgolly.devextreme.devextremeStrings.invalid
-import typingsJapgolly.devextreme.devextremeStrings.pending
-import typingsJapgolly.devextreme.devextremeStrings.valid
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Event
+import typingsJapgolly.devextreme.mod.DevExpress.common.EditorStyle
+import typingsJapgolly.devextreme.mod.DevExpress.common.ValidationMessageMode
+import typingsJapgolly.devextreme.mod.DevExpress.common.ValidationStatus
+import typingsJapgolly.devextreme.mod.DevExpress.events.NativeEventInfo
+import typingsJapgolly.devextreme.mod.DevExpress.ui.Editor.ValueChangedInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorOptions[T] extends WidgetOptions[T] {
-  /** Specifies or indicates whether the editor's value is valid. */
+trait EditorOptions[TComponent]
+  extends StObject
+     with WidgetOptions[TComponent] {
+  
+  /**
+    * Specifies or indicates whether the editor&apos;s value is valid.
+    */
   var isValid: js.UndefOr[Boolean] = js.undefined
-  /** A function that is executed after the widget's value is changed. */
-  var onValueChanged: js.UndefOr[js.Function1[/* e */ AnonJQueryEvent[T], _]] = js.undefined
-  /** Specifies whether the editor is read-only. */
+  
+  /**
+    * A function that is executed after the UI component&apos;s value is changed.
+    */
+  var onValueChanged: js.UndefOr[
+    js.Function1[/* e */ (NativeEventInfo[TComponent, Event]) & ValueChangedInfo, Unit]
+  ] = js.undefined
+  
+  /**
+    * Specifies whether the editor is read-only.
+    */
   var readOnly: js.UndefOr[Boolean] = js.undefined
-  /** Information on the broken validation rule. Contains the first item from the validationErrors array. */
-  var validationError: js.UndefOr[js.Any] = js.undefined
-  /** An array of the validation rules that failed. */
-  var validationErrors: js.UndefOr[js.Array[_]] = js.undefined
-  /** Specifies how the message about the validation rules that are not satisfied by this editor's value is displayed. */
-  var validationMessageMode: js.UndefOr[always | auto] = js.undefined
-  /** Indicates or specifies the current validation status. */
-  var validationStatus: js.UndefOr[valid | invalid | pending] = js.undefined
-  /** Specifies the widget's value. */
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  /**
+    * 
+    */
+  var stylingMode: js.UndefOr[EditorStyle] = js.undefined
+  
+  /**
+    * Information on the broken validation rule. Contains the first item from the validationErrors array.
+    */
+  var validationError: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * An array of the validation rules that failed.
+    */
+  var validationErrors: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
+    * Specifies how the message about the validation rules that are not satisfied by this editor&apos;s value is displayed.
+    */
+  var validationMessageMode: js.UndefOr[ValidationMessageMode] = js.undefined
+  
+  /**
+    * Indicates or specifies the current validation status.
+    */
+  var validationStatus: js.UndefOr[ValidationStatus] = js.undefined
+  
+  /**
+    * Specifies the UI component&apos;s value.
+    */
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object EditorOptions {
-  @scala.inline
-  def apply[T](
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    onContentReady: /* e */ AnonComponentElement[T] => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[T] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[T] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[T] => CallbackTo[js.Any] = null,
-    onValueChanged: /* e */ AnonJQueryEvent[T] => CallbackTo[js.Any] = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
-    validationError: js.Any = null,
-    validationErrors: js.Array[_] = null,
-    validationMessageMode: always | auto = null,
-    validationStatus: valid | invalid | pending = null,
-    value: js.Any = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): EditorOptions[T] = {
+  
+  inline def apply[TComponent](): EditorOptions[TComponent] = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[T]) => onContentReady(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[T]) => onDisposing(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[T]) => onInitialized(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[T]) => onOptionChanged(t0).runNow()))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonJQueryEvent[T]) => onValueChanged(t0).runNow()))
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (validationError != null) __obj.updateDynamic("validationError")(validationError.asInstanceOf[js.Any])
-    if (validationErrors != null) __obj.updateDynamic("validationErrors")(validationErrors.asInstanceOf[js.Any])
-    if (validationMessageMode != null) __obj.updateDynamic("validationMessageMode")(validationMessageMode.asInstanceOf[js.Any])
-    if (validationStatus != null) __obj.updateDynamic("validationStatus")(validationStatus.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[EditorOptions[T]]
+    __obj.asInstanceOf[EditorOptions[TComponent]]
+  }
+  
+  extension [Self <: EditorOptions[?], TComponent](x: Self & EditorOptions[TComponent]) {
+    
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    
+    inline def setOnValueChanged(value: /* e */ (NativeEventInfo[TComponent, Event]) & ValueChangedInfo => Callback): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1((t0: /* e */ (NativeEventInfo[TComponent, Event]) & ValueChangedInfo) => value(t0).runNow()))
+    
+    inline def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setStylingMode(value: EditorStyle): Self = StObject.set(x, "stylingMode", value.asInstanceOf[js.Any])
+    
+    inline def setStylingModeUndefined: Self = StObject.set(x, "stylingMode", js.undefined)
+    
+    inline def setValidationError(value: Any): Self = StObject.set(x, "validationError", value.asInstanceOf[js.Any])
+    
+    inline def setValidationErrorUndefined: Self = StObject.set(x, "validationError", js.undefined)
+    
+    inline def setValidationErrors(value: js.Array[Any]): Self = StObject.set(x, "validationErrors", value.asInstanceOf[js.Any])
+    
+    inline def setValidationErrorsUndefined: Self = StObject.set(x, "validationErrors", js.undefined)
+    
+    inline def setValidationErrorsVarargs(value: Any*): Self = StObject.set(x, "validationErrors", js.Array(value*))
+    
+    inline def setValidationMessageMode(value: ValidationMessageMode): Self = StObject.set(x, "validationMessageMode", value.asInstanceOf[js.Any])
+    
+    inline def setValidationMessageModeUndefined: Self = StObject.set(x, "validationMessageMode", js.undefined)
+    
+    inline def setValidationStatus(value: ValidationStatus): Self = StObject.set(x, "validationStatus", value.asInstanceOf[js.Any])
+    
+    inline def setValidationStatusUndefined: Self = StObject.set(x, "validationStatus", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.msRest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ms-rest", "ApiKeyCredentials")
 @js.native
@@ -12,8 +12,11 @@ import scala.scalajs.js.annotation._
   * @param {object} [inHeader]  A key value pair of the header parameters that need to be applied to the request.
   * @param {object} [inQuery]   A key value pair of the query parameters that need to be applied to the request.
   */
-class ApiKeyCredentials () extends ServiceClientCredentials {
+open class ApiKeyCredentials ()
+  extends StObject
+     with ServiceClientCredentials {
   def this(options: ApiKeyCredentialOptions) = this()
+  
   /**
     * Signs a request with the Authentication header.
     *
@@ -23,4 +26,3 @@ class ApiKeyCredentials () extends ServiceClientCredentials {
   /* CompleteClass */
   override def signRequest(webResource: WebResource, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
 }
-

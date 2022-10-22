@@ -1,65 +1,81 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatColorCriterionType extends js.Object
-
+sealed trait ConditionalFormatColorCriterionType extends StObject
 /**
+  * Represents the types of color criterion for conditional formatting.
   *
-  * Represents the types of conditional format values.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatColorCriterionType")
 @js.native
-object ConditionalFormatColorCriterionType extends js.Object {
+object ConditionalFormatColorCriterionType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait formula extends ConditionalFormatColorCriterionType
+  sealed trait formula
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait highestValue extends ConditionalFormatColorCriterionType
+  sealed trait highestValue
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalFormatColorCriterionType
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lowestValue extends ConditionalFormatColorCriterionType
+  sealed trait lowestValue
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait number extends ConditionalFormatColorCriterionType
+  sealed trait number
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percent extends ConditionalFormatColorCriterionType
+  sealed trait percent
+    extends StObject
+       with ConditionalFormatColorCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percentile extends ConditionalFormatColorCriterionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalFormatColorCriterionType with String] = js.native
-  /* "Formula" */ @js.native
-  object formula extends TopLevel[formula with String]
-  
-  /* "HighestValue" */ @js.native
-  object highestValue extends TopLevel[highestValue with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "LowestValue" */ @js.native
-  object lowestValue extends TopLevel[lowestValue with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
-  
-  /* "Percentile" */ @js.native
-  object percentile extends TopLevel[percentile with String]
-  
+  sealed trait percentile
+    extends StObject
+       with ConditionalFormatColorCriterionType
 }
-

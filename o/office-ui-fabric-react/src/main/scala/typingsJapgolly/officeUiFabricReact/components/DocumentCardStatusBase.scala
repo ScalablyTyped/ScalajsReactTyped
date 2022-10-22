@@ -1,57 +1,51 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatus
-import typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps
-import typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusStyleProps
-import typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDottypesMod.IDocumentCardStatus
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDottypesMod.IDocumentCardStatusProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDottypesMod.IDocumentCardStatusStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDottypesMod.IDocumentCardStatusStyles
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentCardStatusBase {
-  def apply(
-    status: String,
-    className: String = null,
-    componentRef: IRefObject[IDocumentCardStatus] = null,
-    statusIcon: String = null,
-    styles: IStyleFunctionOrObject[IDocumentCardStatusStyleProps, IDocumentCardStatusStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDocumentCardStatusProps, 
-    typingsJapgolly.officeUiFabricReact.documentCardStatusBaseMod.DocumentCardStatusBase, 
-    Unit, 
-    IDocumentCardStatusProps
-  ] = {
-    val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (statusIcon != null) __obj.updateDynamic("statusIcon")(statusIcon.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.documentCardStatusBaseMod.DocumentCardStatusBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.documentCardStatusTypesMod.IDocumentCardStatusProps])(children: _*)
+  inline def apply(status: String): Builder = {
+    val __props = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDocumentCardStatusProps]))
   }
+  
   @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardStatus.base", "DocumentCardStatusBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardStatusDotbaseMod.DocumentCardStatusBase
+        ] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDocumentCardStatus]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDocumentCardStatus | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDocumentCardStatus | Null) => value(t0).runNow()))
+    
+    inline def statusIcon(value: String): this.type = set("statusIcon", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IDocumentCardStatusStyleProps, IDocumentCardStatusStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDocumentCardStatusStyleProps => DeepPartial[IDocumentCardStatusStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDocumentCardStatusProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

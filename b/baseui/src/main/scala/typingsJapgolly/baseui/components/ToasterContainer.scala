@@ -1,55 +1,40 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.ReadonlyToasterProps
-import typingsJapgolly.baseui.baseuiStrings.bottom
-import typingsJapgolly.baseui.baseuiStrings.bottomLeft
-import typingsJapgolly.baseui.baseuiStrings.bottomRight
-import typingsJapgolly.baseui.baseuiStrings.top
-import typingsJapgolly.baseui.baseuiStrings.topLeft
-import typingsJapgolly.baseui.baseuiStrings.topRight
-import typingsJapgolly.baseui.toastMod.ToasterOverrides
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.PartialToasterProps
+import typingsJapgolly.baseui.toastTypesMod.PlacementType
+import typingsJapgolly.baseui.toastTypesMod.ToasterOverrides
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ToasterContainer {
-  def apply(
-    autoHideDuration: Int | Double = null,
-    overrides: ToasterOverrides = null,
-    placement: topLeft | topRight | bottomLeft | bottomRight | bottom | top = null,
-    usePortal: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ReadonlyToasterProps, 
-    typingsJapgolly.baseui.toastMod.ToasterContainer, 
-    Unit, 
-    ReadonlyToasterProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.ReadonlyToasterProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.toastMod.ToasterContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.ReadonlyToasterProps])(children: _*)
-  }
   @JSImport("baseui/toast", "ToasterContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.toastMod.ToasterContainer] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def autoHideDuration(value: Double): this.type = set("autoHideDuration", value.asInstanceOf[js.Any])
+    
+    inline def closeable(value: Boolean): this.type = set("closeable", value.asInstanceOf[js.Any])
+    
+    inline def overrides(value: ToasterOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: PlacementType): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def resetAutoHideTimerOnUpdate(value: Boolean): this.type = set("resetAutoHideTimerOnUpdate", value.asInstanceOf[js.Any])
+    
+    inline def usePortal(value: Boolean): this.type = set("usePortal", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ToasterContainer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PartialToasterProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

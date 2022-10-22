@@ -1,19 +1,16 @@
 package typingsJapgolly.mdns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mdnsStrings {
-  @js.native
-  sealed trait serviceDown extends js.Object
   
   @js.native
-  sealed trait serviceUp extends js.Object
+  sealed trait serviceDown extends StObject
+  inline def serviceDown: serviceDown = "serviceDown".asInstanceOf[serviceDown]
   
-  @scala.inline
-  def serviceDown: serviceDown = "serviceDown".asInstanceOf[serviceDown]
-  @scala.inline
-  def serviceUp: serviceUp = "serviceUp".asInstanceOf[serviceUp]
+  @js.native
+  sealed trait serviceUp extends StObject
+  inline def serviceUp: serviceUp = "serviceUp".asInstanceOf[serviceUp]
 }
-

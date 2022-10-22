@@ -1,14 +1,13 @@
 package typingsJapgolly.promiseRetry
 
 import typingsJapgolly.retry.mod.OperationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-retry", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
+object mod {
+  
+  inline def apply[ResolutionType](options: OperationOptions, retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], retryableFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
   /**
     * Wrap all functions of the object with retry. The params can be entered in either order, just like in the original library.
     *
@@ -16,8 +15,13 @@ object mod extends js.Object {
     * @param options The options for how long/often to retry the function for.
     * @returns The Promise resolved by the input retryableFn, or rejected (if not retried) from its catch block.
     */
-  def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = js.native
-  def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = js.native
+  inline def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType]): js.Promise[ResolutionType] = ^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ResolutionType]]
+  inline def apply[ResolutionType](retryableFn: RetryableFn[ResolutionType], options: OperationOptions): js.Promise[ResolutionType] = (^.asInstanceOf[js.Dynamic].apply(retryableFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResolutionType]]
+  
+  @JSImport("promise-retry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * A function that is retryable, by having implicitly-bound params for both an error handler and an attempt number.
     *
@@ -28,9 +32,8 @@ object mod extends js.Object {
     * @returns A Promise for anything (eg. a HTTP response).
     */
   type RetryableFn[ResolutionType] = js.Function2[
-    /* retry */ js.Function1[/* error */ js.Any, scala.Nothing], 
+    /* retry */ js.Function1[/* error */ Any, scala.Nothing], 
     /* attempt */ Double, 
     js.Promise[ResolutionType]
   ]
 }
-

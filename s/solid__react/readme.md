@@ -10,10 +10,10 @@ Efficiently build Solid apps and components with React
 | ------------------ | :-------------: |
 | Full name          | @solid/react |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 3 |
-| # downloads        | 3347 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 187.33333333333334 |
+| # stars            | 119.0 |
 
 ## Links
 - [Homepage](https://github.com/solid/react-components#readme)

@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.LeftProperty
+import typingsJapgolly.csstype.mod.Property.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LeftProps[TLength] extends js.Object {
-  val left: js.UndefOr[ResponsiveValue[LeftProperty[TLength]]] = js.undefined
+trait LeftProps[TLength] extends StObject {
+  
+  val left: js.UndefOr[ResponsiveValue[Left[TLength]]] = js.undefined
 }
-
 object LeftProps {
-  @scala.inline
-  def apply[TLength](left: ResponsiveValue[LeftProperty[TLength]] = null): LeftProps[TLength] = {
+  
+  inline def apply[TLength](): LeftProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeftProps[TLength]]
   }
+  
+  extension [Self <: LeftProps[?], TLength](x: Self & LeftProps[TLength]) {
+    
+    inline def setLeft(value: ResponsiveValue[Left[TLength]]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLeftVarargs(value: Left[TLength]*): Self = StObject.set(x, "left", js.Array(value*))
+  }
 }
-

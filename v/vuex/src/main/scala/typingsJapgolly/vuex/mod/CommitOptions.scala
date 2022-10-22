@@ -1,21 +1,30 @@
 package typingsJapgolly.vuex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommitOptions extends js.Object {
+trait CommitOptions extends StObject {
+  
   var root: js.UndefOr[Boolean] = js.undefined
+  
   var silent: js.UndefOr[Boolean] = js.undefined
 }
-
 object CommitOptions {
-  @scala.inline
-  def apply(root: js.UndefOr[Boolean] = js.undefined, silent: js.UndefOr[Boolean] = js.undefined): CommitOptions = {
+  
+  inline def apply(): CommitOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommitOptions]
   }
+  
+  extension [Self <: CommitOptions](x: Self) {
+    
+    inline def setRoot(value: Boolean): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+  }
 }
-

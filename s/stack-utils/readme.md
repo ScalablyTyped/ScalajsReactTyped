@@ -1,7 +1,7 @@
 
 # Scala.js typings for stack-utils
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Captures and cleans stack traces
@@ -10,10 +10,10 @@ Captures and cleans stack traces
 | ------------------ | :-------------: |
 | Full name          | stack-utils |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 63 |
-| # downloads        | 190531235 |
-| # stars            | 3 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 7.891824466666667E7 |
+| # stars            | 170.0 |
 
 ## Links
 - [Homepage](https://github.com/tapjs/stack-utils#readme)

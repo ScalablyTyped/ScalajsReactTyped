@@ -1,20 +1,22 @@
 package typingsJapgolly.vexflow.mod.Flow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.BoundingBox")
 @js.native
-class BoundingBox protected ()
-  extends typingsJapgolly.vexflow.Vex.Flow.BoundingBox {
+open class BoundingBox protected ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.Flow.BoundingBox {
   def this(x: Double, y: Double, w: Double, h: Double) = this()
 }
-
-/* static members */
-@JSImport("vexflow", "Flow.BoundingBox")
-@js.native
-object BoundingBox extends js.Object {
-  def copy(that: typingsJapgolly.vexflow.Vex.Flow.BoundingBox): typingsJapgolly.vexflow.Vex.Flow.BoundingBox = js.native
+object BoundingBox {
+  
+  @JSImport("vexflow", "Flow.BoundingBox")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def copy(that: typingsJapgolly.vexflow.Vex.Flow.BoundingBox): typingsJapgolly.vexflow.Vex.Flow.BoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(that.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vexflow.Vex.Flow.BoundingBox]
 }
-

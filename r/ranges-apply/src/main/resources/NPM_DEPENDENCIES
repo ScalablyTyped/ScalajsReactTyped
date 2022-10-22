@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ranges-apply" : "6.2.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ranges-apply" : "6.2.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

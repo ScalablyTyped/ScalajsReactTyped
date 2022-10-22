@@ -2,31 +2,45 @@ package typingsJapgolly.hystrixjs.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HystrixConfig_ extends js.Object {
+trait HystrixConfig_ extends StObject {
+  
   def circuitBreakerErrorThresholdPercentage(): Double
+  
   def circuitBreakerForceClosed(): Boolean
+  
   def circuitBreakerForceOpened(): Boolean
+  
   def circuitBreakerRequestVolumeThreshold(): Double
+  
   def circuitBreakerRequestVolumeThresholdForceOverride(): Boolean
+  
   def circuitBreakerRequestVolumeThresholdOverride(): Double
+  
   def circuitBreakerSleepWindowInMilliseconds(): Double
+  
   def executionTimeoutInMilliseconds(): Double
+  
   def init(properties: HystrixProperties): Unit
+  
   def metricsPercentileWindowBuckets(): Double
+  
   def metricsPercentileWindowInMilliseconds(): Double
+  
   def metricsStatisticalWindowBuckets(): Double
+  
   def metricsStatisticalWindowInMilliseconds(): Double
+  
   def requestVolumeRejectionThreshold(): Double
+  
   def resetProperties(): Unit
 }
-
 object HystrixConfig_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     circuitBreakerErrorThresholdPercentage: CallbackTo[Double],
     circuitBreakerForceClosed: CallbackTo[Boolean],
     circuitBreakerForceOpened: CallbackTo[Boolean],
@@ -43,23 +57,40 @@ object HystrixConfig_ {
     requestVolumeRejectionThreshold: CallbackTo[Double],
     resetProperties: Callback
   ): HystrixConfig_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage.toJsFn)
-    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed.toJsFn)
-    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened.toJsFn)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold.toJsFn)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThresholdForceOverride")(circuitBreakerRequestVolumeThresholdForceOverride.toJsFn)
-    __obj.updateDynamic("circuitBreakerRequestVolumeThresholdOverride")(circuitBreakerRequestVolumeThresholdOverride.toJsFn)
-    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds.toJsFn)
-    __obj.updateDynamic("executionTimeoutInMilliseconds")(executionTimeoutInMilliseconds.toJsFn)
-    __obj.updateDynamic("init")(js.Any.fromFunction1((t0: typingsJapgolly.hystrixjs.mod.HystrixProperties) => init(t0).runNow()))
-    __obj.updateDynamic("metricsPercentileWindowBuckets")(metricsPercentileWindowBuckets.toJsFn)
-    __obj.updateDynamic("metricsPercentileWindowInMilliseconds")(metricsPercentileWindowInMilliseconds.toJsFn)
-    __obj.updateDynamic("metricsStatisticalWindowBuckets")(metricsStatisticalWindowBuckets.toJsFn)
-    __obj.updateDynamic("metricsStatisticalWindowInMilliseconds")(metricsStatisticalWindowInMilliseconds.toJsFn)
-    __obj.updateDynamic("requestVolumeRejectionThreshold")(requestVolumeRejectionThreshold.toJsFn)
-    __obj.updateDynamic("resetProperties")(resetProperties.toJsFn)
+    val __obj = js.Dynamic.literal(circuitBreakerErrorThresholdPercentage = circuitBreakerErrorThresholdPercentage.toJsFn, circuitBreakerForceClosed = circuitBreakerForceClosed.toJsFn, circuitBreakerForceOpened = circuitBreakerForceOpened.toJsFn, circuitBreakerRequestVolumeThreshold = circuitBreakerRequestVolumeThreshold.toJsFn, circuitBreakerRequestVolumeThresholdForceOverride = circuitBreakerRequestVolumeThresholdForceOverride.toJsFn, circuitBreakerRequestVolumeThresholdOverride = circuitBreakerRequestVolumeThresholdOverride.toJsFn, circuitBreakerSleepWindowInMilliseconds = circuitBreakerSleepWindowInMilliseconds.toJsFn, executionTimeoutInMilliseconds = executionTimeoutInMilliseconds.toJsFn, init = js.Any.fromFunction1((t0: HystrixProperties) => init(t0).runNow()), metricsPercentileWindowBuckets = metricsPercentileWindowBuckets.toJsFn, metricsPercentileWindowInMilliseconds = metricsPercentileWindowInMilliseconds.toJsFn, metricsStatisticalWindowBuckets = metricsStatisticalWindowBuckets.toJsFn, metricsStatisticalWindowInMilliseconds = metricsStatisticalWindowInMilliseconds.toJsFn, requestVolumeRejectionThreshold = requestVolumeRejectionThreshold.toJsFn, resetProperties = resetProperties.toJsFn)
     __obj.asInstanceOf[HystrixConfig_]
   }
+  
+  extension [Self <: HystrixConfig_](x: Self) {
+    
+    inline def setCircuitBreakerErrorThresholdPercentage(value: CallbackTo[Double]): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", value.toJsFn)
+    
+    inline def setCircuitBreakerForceClosed(value: CallbackTo[Boolean]): Self = StObject.set(x, "circuitBreakerForceClosed", value.toJsFn)
+    
+    inline def setCircuitBreakerForceOpened(value: CallbackTo[Boolean]): Self = StObject.set(x, "circuitBreakerForceOpened", value.toJsFn)
+    
+    inline def setCircuitBreakerRequestVolumeThreshold(value: CallbackTo[Double]): Self = StObject.set(x, "circuitBreakerRequestVolumeThreshold", value.toJsFn)
+    
+    inline def setCircuitBreakerRequestVolumeThresholdForceOverride(value: CallbackTo[Boolean]): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdForceOverride", value.toJsFn)
+    
+    inline def setCircuitBreakerRequestVolumeThresholdOverride(value: CallbackTo[Double]): Self = StObject.set(x, "circuitBreakerRequestVolumeThresholdOverride", value.toJsFn)
+    
+    inline def setCircuitBreakerSleepWindowInMilliseconds(value: CallbackTo[Double]): Self = StObject.set(x, "circuitBreakerSleepWindowInMilliseconds", value.toJsFn)
+    
+    inline def setExecutionTimeoutInMilliseconds(value: CallbackTo[Double]): Self = StObject.set(x, "executionTimeoutInMilliseconds", value.toJsFn)
+    
+    inline def setInit(value: HystrixProperties => Callback): Self = StObject.set(x, "init", js.Any.fromFunction1((t0: HystrixProperties) => value(t0).runNow()))
+    
+    inline def setMetricsPercentileWindowBuckets(value: CallbackTo[Double]): Self = StObject.set(x, "metricsPercentileWindowBuckets", value.toJsFn)
+    
+    inline def setMetricsPercentileWindowInMilliseconds(value: CallbackTo[Double]): Self = StObject.set(x, "metricsPercentileWindowInMilliseconds", value.toJsFn)
+    
+    inline def setMetricsStatisticalWindowBuckets(value: CallbackTo[Double]): Self = StObject.set(x, "metricsStatisticalWindowBuckets", value.toJsFn)
+    
+    inline def setMetricsStatisticalWindowInMilliseconds(value: CallbackTo[Double]): Self = StObject.set(x, "metricsStatisticalWindowInMilliseconds", value.toJsFn)
+    
+    inline def setRequestVolumeRejectionThreshold(value: CallbackTo[Double]): Self = StObject.set(x, "requestVolumeRejectionThreshold", value.toJsFn)
+    
+    inline def setResetProperties(value: Callback): Self = StObject.set(x, "resetProperties", value.toJsFn)
+  }
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraContextStopRecordResult extends js.Object {
+trait CameraContextStopRecordResult extends StObject {
+  
   /**
     * 封面图片文件的临时路径
     */
   var tempThumbPath: js.UndefOr[String] = js.undefined
+  
   /**
     * 视频的文件的临时路径
     */
   var tempVideoPath: js.UndefOr[String] = js.undefined
 }
-
 object CameraContextStopRecordResult {
-  @scala.inline
-  def apply(tempThumbPath: String = null, tempVideoPath: String = null): CameraContextStopRecordResult = {
+  
+  inline def apply(): CameraContextStopRecordResult = {
     val __obj = js.Dynamic.literal()
-    if (tempThumbPath != null) __obj.updateDynamic("tempThumbPath")(tempThumbPath.asInstanceOf[js.Any])
-    if (tempVideoPath != null) __obj.updateDynamic("tempVideoPath")(tempVideoPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraContextStopRecordResult]
   }
+  
+  extension [Self <: CameraContextStopRecordResult](x: Self) {
+    
+    inline def setTempThumbPath(value: String): Self = StObject.set(x, "tempThumbPath", value.asInstanceOf[js.Any])
+    
+    inline def setTempThumbPathUndefined: Self = StObject.set(x, "tempThumbPath", js.undefined)
+    
+    inline def setTempVideoPath(value: String): Self = StObject.set(x, "tempVideoPath", value.asInstanceOf[js.Any])
+    
+    inline def setTempVideoPathUndefined: Self = StObject.set(x, "tempVideoPath", js.undefined)
+  }
 }
-

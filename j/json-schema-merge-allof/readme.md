@@ -10,10 +10,10 @@ Simplify your schema by combining allOf into the root schema, safely.
 | ------------------ | :-------------: |
 | Full name          | json-schema-merge-allof |
 | Keywords           | json, schema, jsonschema |
-| # releases         | 2 |
-| # dependents       | 15 |
-| # downloads        | 192704 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 936197.3333333334 |
+| # stars            | 74.0 |
 
 ## Links
 - [Homepage](https://github.com/mokkabonna/json-schema-merge-allof#readme)

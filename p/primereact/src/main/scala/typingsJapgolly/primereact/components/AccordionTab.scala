@@ -1,52 +1,63 @@
 package typingsJapgolly.primereact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.primereact.accordionMod.AccordionTabProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.primereact.accordionAccordionMod.AccordionTabHeaderTemplateType
+import typingsJapgolly.primereact.accordionAccordionMod.AccordionTabProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AccordionTab {
-  def apply(
-    contentClassName: String = null,
-    contentStyle: js.Object = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    header: js.Any = null,
-    headerClassName: String = null,
-    headerStyle: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AccordionTabProps, 
-    typingsJapgolly.primereact.mod.AccordionTab, 
-    Unit, 
-    AccordionTabProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
-    if (contentStyle != null) __obj.updateDynamic("contentStyle")(contentStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName.asInstanceOf[js.Any])
-    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.primereact.accordionMod.AccordionTabProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.primereact.mod.AccordionTab](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.primereact.accordionMod.AccordionTabProps])(children: _*)
-  }
-  @JSImport("primereact/accordion", "AccordionTab")
+  @JSImport("primereact", "AccordionTab")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.primereact.mod.AccordionTab] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def contentClassName(value: String): this.type = set("contentClassName", value.asInstanceOf[js.Any])
+    
+    inline def contentStyle(value: js.Object): this.type = set("contentStyle", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def header(value: VdomNode): this.type = set("header", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def headerClassName(value: String): this.type = set("headerClassName", value.asInstanceOf[js.Any])
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerStyle(value: js.Object): this.type = set("headerStyle", value.asInstanceOf[js.Any])
+    
+    inline def headerTemplate(value: AccordionTabHeaderTemplateType): this.type = set("headerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def headerTemplateFunction1(value: /* props */ AccordionTabProps => Node): this.type = set("headerTemplate", js.Any.fromFunction1(value))
+    
+    inline def headerTemplateNull: this.type = set("headerTemplate", null)
+    
+    inline def headerTemplateVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("headerTemplate", js.Array(value*))
+    
+    inline def headerTemplateVdomElement(value: VdomElement): this.type = set("headerTemplate", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: AccordionTab.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AccordionTabProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

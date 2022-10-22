@@ -1,18 +1,153 @@
 package typingsJapgolly.d3Scale
 
+import typingsJapgolly.d3Scale.anon.Name
+import typingsJapgolly.d3Scale.anon.ToString
+import typingsJapgolly.d3Scale.anon.ValueOf
 import typingsJapgolly.d3Scale.d3ScaleStrings.`implicit`
 import typingsJapgolly.d3Time.mod.CountableTimeInterval
 import typingsJapgolly.d3Time.mod.TimeInterval_
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-scale", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("d3-scale", JSImport.Namespace)
   @js.native
-  trait ScaleBand_[Domain /* <: AnonToString */] extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def scaleBand[Domain /* <: ToString */](): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")().asInstanceOf[ScaleBand_[Domain]]
+  inline def scaleBand[Domain /* <: ToString */](domain: js.Iterable[Domain], range: js.Iterable[NumberValue]): ScaleBand_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleBand_[Domain]]
+  inline def scaleBand[Domain /* <: ToString */](range: js.Iterable[NumberValue]): ScaleBand_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleBand")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleBand_[Domain]]
+  
+  inline def scaleDiverging[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDiverging[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDiverging[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Iterable[Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDiverging[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDiverging[Output, Unknown](interpolator: js.Iterable[Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDiverging")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  inline def scaleDivergingLog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingLog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  inline def scaleDivergingPow[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingPow[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  inline def scaleDivergingSqrt[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingSqrt[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  inline def scaleDivergingSymlog[Output, Unknown](): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")().asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingSymlog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  inline def scaleDivergingSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleDiverging_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleDivergingSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleDiverging_[Output, Unknown]]
+  
+  inline def scaleIdentity[Unknown](): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")().asInstanceOf[ScaleIdentity_[Unknown]]
+  inline def scaleIdentity[Unknown](range: js.Iterable[NumberValue]): ScaleIdentity_[Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleIdentity")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleIdentity_[Unknown]]
+  
+  object scaleImplicit {
+    
+    @JSImport("d3-scale", "scaleImplicit")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("d3-scale", "scaleImplicit.name")
+    @js.native
+    def name: `implicit` = js.native
+    inline def name_=(x: `implicit`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+  }
+  
+  inline def scaleLinear[Range, Output, Unknown](): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")().asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  inline def scaleLinear[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  inline def scaleLinear[Range, Output, Unknown](range: js.Iterable[Range]): ScaleLinear_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLinear")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLinear_[Range, Output, Unknown]]
+  
+  inline def scaleLog[Range, Output, Unknown](): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")().asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  inline def scaleLog[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  inline def scaleLog[Range, Output, Unknown](range: js.Iterable[Range]): ScaleLogarithmic[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleLog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleLogarithmic[Range, Output, Unknown]]
+  
+  inline def scaleOrdinal[Range](): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  inline def scaleOrdinal[Range](range: js.Iterable[Range]): ScaleOrdinal_[String, Range, scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[String, Range, scala.Nothing]]
+  inline def scaleOrdinal[Domain /* <: ToString */, Range, Unknown](domain: js.Iterable[Domain], range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  
+  inline def scaleOrdinal_DomainRangeUnknown[Domain /* <: ToString */, Range, Unknown](): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")().asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  inline def scaleOrdinal_DomainRangeUnknown[Domain /* <: ToString */, Range, Unknown](range: js.Iterable[Range]): ScaleOrdinal_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleOrdinal")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleOrdinal_[Domain, Range, Unknown]]
+  
+  inline def scalePoint[Domain /* <: ToString */](): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")().asInstanceOf[ScalePoint_[Domain]]
+  inline def scalePoint[Domain /* <: ToString */](domain: js.Iterable[Domain], range: js.Iterable[NumberValue]): ScalePoint_[Domain] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePoint_[Domain]]
+  inline def scalePoint[Domain /* <: ToString */](range: js.Iterable[NumberValue]): ScalePoint_[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePoint")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePoint_[Domain]]
+  
+  inline def scalePow[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  inline def scalePow[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  inline def scalePow[Range, Output, Unknown](range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scalePow")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  
+  inline def scaleQuantile[Range, Unknown](): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")().asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  inline def scaleQuantile[Range, Unknown](domain: js.Iterable[js.UndefOr[NumberValue | Null]], range: js.Iterable[Range]): ScaleQuantile_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  inline def scaleQuantile[Range, Unknown](range: js.Iterable[Range]): ScaleQuantile_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantile")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantile_[Range, Unknown]]
+  
+  inline def scaleQuantize[Range, Unknown](): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")().asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  inline def scaleQuantize[Range, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleQuantize_[Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  inline def scaleQuantize[Range, Unknown](range: js.Iterable[Range]): ScaleQuantize_[Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleQuantize")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleQuantize_[Range, Unknown]]
+  
+  inline def scaleRadial[Range, Unknown](): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")().asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  inline def scaleRadial[Range, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  inline def scaleRadial[Range, Unknown](range: js.Iterable[Range]): ScaleRadial_[Range, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleRadial")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleRadial_[Range, Range, Unknown]]
+  
+  inline def scaleSequential[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequential[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequential[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Iterable[Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequential[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequential[Output, Unknown](interpolator: js.Iterable[Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequential")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  
+  inline def scaleSequentialLog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialLog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialLog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialLog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  
+  inline def scaleSequentialPow[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialPow[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialPow[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialPow")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  
+  inline def scaleSequentialQuantile[Output, Unknown](): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")().asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  inline def scaleSequentialQuantile[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  inline def scaleSequentialQuantile[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequentialQuantile_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialQuantile")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequentialQuantile_[Output, Unknown]]
+  
+  inline def scaleSequentialSqrt[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialSqrt[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialSqrt[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSqrt")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  
+  inline def scaleSequentialSymlog[Output, Unknown](): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")().asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialSymlog[Output, Unknown](domain: js.Iterable[NumberValue], interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(domain.asInstanceOf[js.Any], interpolator.asInstanceOf[js.Any])).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  inline def scaleSequentialSymlog[Output, Unknown](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSequentialSymlog")(interpolator.asInstanceOf[js.Any]).asInstanceOf[ScaleSequential_[Output, Unknown]]
+  
+  inline def scaleSqrt[Range, Output, Unknown](): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")().asInstanceOf[ScalePower[Range, Output, Unknown]]
+  inline def scaleSqrt[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  inline def scaleSqrt[Range, Output, Unknown](range: js.Iterable[Range]): ScalePower[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSqrt")(range.asInstanceOf[js.Any]).asInstanceOf[ScalePower[Range, Output, Unknown]]
+  
+  inline def scaleSymlog[Range, Output, Unknown](): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")().asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  inline def scaleSymlog[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  inline def scaleSymlog[Range, Output, Unknown](range: js.Iterable[Range]): ScaleSymLog_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleSymlog")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleSymLog_[Range, Output, Unknown]]
+  
+  inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")().asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](domain: js.Iterable[Domain], range: js.Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  inline def scaleThreshold[Domain /* <: Double | String | js.Date */, Range, Unknown](range: js.Iterable[Range]): ScaleThreshold_[Domain, Range, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleThreshold")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleThreshold_[Domain, Range, Unknown]]
+  
+  inline def scaleTime[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  inline def scaleTime[Range, Output, Unknown](domain: js.Iterable[js.Date | NumberValue], range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  inline def scaleTime[Range, Output, Unknown](range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTime")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  
+  inline def scaleUtc[Range, Output, Unknown](): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")().asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  inline def scaleUtc[Range, Output, Unknown](domain: js.Iterable[NumberValue], range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(domain.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  inline def scaleUtc[Range, Output, Unknown](range: js.Iterable[Range]): ScaleTime_[Range, Output, Unknown] = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleUtc")(range.asInstanceOf[js.Any]).asInstanceOf[ScaleTime_[Range, Output, Unknown]]
+  
+  inline def tickFormat(start: Double, stop: Double, count: Double): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
+  inline def tickFormat(start: Double, stop: Double, count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tickFormat")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], count.asInstanceOf[js.Any], specifier.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* d */ NumberValue, String]]
+  
+  type InterpolatorFactory[T, U] = js.Function2[/* a */ T, /* b */ T, js.Function1[/* t */ Double, U]]
+  
+  type NumberValue = Double | ValueOf
+  
+  @js.native
+  trait ScaleBand_[Domain /* <: ToString */] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the start of the corresponding band derived from the output range.
       * If the given value is not in the scale’s domain, returns undefined.
@@ -20,6 +155,7 @@ object mod extends js.Object {
       * @param x  A value from the domain.
       */
     def apply(x: Domain): js.UndefOr[Double] = js.native
+    
     /**
       * Returns the current alignment which defaults to 0.5.
       */
@@ -30,32 +166,36 @@ object mod extends js.Object {
       * The default is 0.5.
       *
       * The alignment determines how any leftover unused space in the range is distributed.
-      * A value of 0.5 indicates that the leftover space should be equally distributed before the first band and after the last band;
+      * A value of 0.5 indicates that the outer patter should be equally distributed before the first band and after the last band;
       * i.e., the bands should be centered within the range. A value of 0 or 1 may be used to shift the bands to one side, say to position them adjacent to an axis.
       *
       * @param align Value for alignment setting in [0, 1] interval.
       */
     def align(align: Double): this.type = js.native
+    
     /**
       * Returns the width of each band.
       */
     def bandwidth(): Double = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns to scale's current domain
       */
     def domain(): js.Array[Domain] = js.native
     /**
       * Sets the domain to the specified array of values. The first element in domain will be mapped to the first band, the second domain value to the second band, and so on.
-      * Domain values are stored internally in a map from stringified value to index; the resulting index is then used to determine the band.
-      * Thus, a band scale’s values must be coercible to a string, and the stringified version of the domain value uniquely identifies the corresponding band.
+      * Domain values are stored internally in an InternMap from primitive value to index; the resulting index is then used to determine the band.
+      * Thus, a band scale’s values must be coercible to a primitive value, and the primitive domain value uniquely identifies the corresponding band.
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[Domain]): this.type = js.native
+    def domain(domain: js.Iterable[Domain]): this.type = js.native
+    
     /**
       * Returns the inner padding.
       */
@@ -66,6 +206,7 @@ object mod extends js.Object {
       * @param padding Value for inner and outer padding in [0, 1] interval.
       */
     def padding(padding: Double): this.type = js.native
+    
     /**
       * Returns the current inner padding which defaults to 0.
       */
@@ -79,6 +220,7 @@ object mod extends js.Object {
       * @param padding Value for inner padding in [0, 1] interval.
       */
     def paddingInner(padding: Double): this.type = js.native
+    
     /**
       * Returns the current outer padding which defaults to 0.
       */
@@ -92,6 +234,7 @@ object mod extends js.Object {
       * @param padding Value for outer padding in [0, 1] interval.
       */
     def paddingOuter(padding: Double): this.type = js.native
+    
     /**
       * Returns the scale’s current range, which defaults to [0, 1].
       */
@@ -102,7 +245,8 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def range(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Sets the scale’s range to the specified two-element array of numbers while also enabling rounding.
       * If the elements in the given array are not numbers, they will be coerced to numbers.
@@ -111,7 +255,8 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def rangeRound(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns the current rounding status for the scale: enabled (= true) or disabled (= false).
       */
@@ -125,6 +270,7 @@ object mod extends js.Object {
       * @param round Enable rounding (= true), disable rounding (= false).
       */
     def round(round: Boolean): this.type = js.native
+    
     /**
       * Returns the distance between the starts of adjacent bands.
       */
@@ -132,7 +278,8 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ScaleContinuousNumeric[Range, Output] extends js.Object {
+  trait ScaleContinuousNumeric[Range, Output, Unknown] extends StObject {
+    
     /**
       * Given a value from the domain, returns the corresponding value from the range, subject to interpolation, if any.
       *
@@ -142,8 +289,8 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the domain.
       */
-    def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: NumberValue): Output | Unknown = js.native
+    
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -157,10 +304,12 @@ object mod extends js.Object {
       * @param clamp A flag to enable (true) or disable (false) clamping.
       */
     def clamp(clamp: Boolean): this.type = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current domain.
       */
@@ -176,7 +325,8 @@ object mod extends js.Object {
       *
       * @param domain Array of numeric domain values.
       */
-    def domain(domain: js.Array[Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Given a value from the range, returns the corresponding value from the domain. Inversion is useful for interaction,
       * say to determine the data value corresponding to the position of the mouse.
@@ -191,8 +341,8 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the range.
       */
-    def invert(value: Double): Double = js.native
-    def invert(value: AnonValueOf): Double = js.native
+    def invert(value: NumberValue): Double = js.native
+    
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -209,6 +359,7 @@ object mod extends js.Object {
       */
     def nice(): this.type = js.native
     def nice(count: Double): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current range.
       */
@@ -221,7 +372,8 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
     /**
       * Sets the scale’s range to the specified array of values while also setting the scale’s interpolator to interpolateRound.
       *
@@ -233,7 +385,8 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def rangeRound(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns a number format function suitable for displaying a tick value, automatically computing the appropriate precision based on the fixed interval between tick values.
       * The specified count should have the same value as the count that is used to generate the tick values.
@@ -243,9 +396,11 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -262,7 +417,8 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ScaleDiverging_[Output] extends js.Object {
+  trait ScaleDiverging_[Output, Unknown] extends StObject {
+    
     /**
       * Given a value from the domain, returns the corresponding value subject to interpolation.
       *
@@ -270,8 +426,8 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the domain.
       */
-    def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: NumberValue): Output | Unknown = js.native
+    
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -285,10 +441,12 @@ object mod extends js.Object {
       * @param clamp A flag to enable (true) or disable (false) clamping.
       */
     def clamp(clamp: Boolean): this.type = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current domain.
       */
@@ -300,7 +458,8 @@ object mod extends js.Object {
       *
       * @param domain Array of three numeric domain values.
       */
-    def domain(domain: js.Tuple3[Double | AnonValueOf, Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns the scale’s current interpolator.
       */
@@ -313,10 +472,42 @@ object mod extends js.Object {
       */
     @JSName("interpolator")
     def interpolator_This(): this.type = js.native
+    
+    /**
+      * See continuous.range.
+      */
+    def range(): js.Function0[js.Tuple3[Output, Output, Output]] = js.native
+    /**
+      * See continuous.range.
+      * The given two-element array is converted to an interpolator function using d3.interpolate and d3.piecewise.
+      *
+      * @param range Range values.
+      */
+    def range(range: js.Iterable[Output]): this.type = js.native
+    
+    /**
+      * See continuous.rangeRound.
+      * If range is specified, implicitly uses d3.interpolateRound as the interpolator.
+      *
+      * @param range Range values.
+      */
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleDiverging_[Output, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleIdentity_ extends js.Object {
+  trait ScaleIdentity_[Unknown] extends StObject {
+    
     /**
       * Given a value from the domain, returns the corresponding value from the range, subject to interpolation, if any.
       *
@@ -326,12 +517,13 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the domain.
       */
-    def apply(value: Double): Double = js.native
-    def apply(value: AnonValueOf): Double = js.native
+    def apply(value: NumberValue): Double | Unknown = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
-    def copy(): ScaleIdentity_ = js.native
+    def copy(): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current domain.
       */
@@ -347,7 +539,8 @@ object mod extends js.Object {
       *
       * @param domain Array of numeric domain values.
       */
-    def domain(domain: js.Array[Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Given a value from the range, returns the corresponding value from the domain. Inversion is useful for interaction,
       * say to determine the data value corresponding to the position of the mouse.
@@ -362,8 +555,8 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the range.
       */
-    def invert(value: Double): Double = js.native
-    def invert(value: AnonValueOf): Double = js.native
+    def invert(value: NumberValue): Double = js.native
+    
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -380,6 +573,7 @@ object mod extends js.Object {
       */
     def nice(): this.type = js.native
     def nice(count: Double): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current range.
       */
@@ -392,7 +586,8 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns a number format function suitable for displaying a tick value, automatically computing the appropriate precision based on the fixed interval between tick values.
       * The specified count should have the same value as the count that is used to generate the tick values.
@@ -402,9 +597,11 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -418,14 +615,28 @@ object mod extends js.Object {
       */
     def ticks(): js.Array[Double] = js.native
     def ticks(count: Double): js.Array[Double] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleIdentity_[NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleLinear_[Range, Output] extends ScaleContinuousNumeric[Range, Output] {
+  trait ScaleLinear_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
+    
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[Any, Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -454,11 +665,25 @@ object mod extends js.Object {
       * @param interpolate An interpolation factory. The generics for Range and Output of the scale must correspond to the interpolation factory applied to the scale.
       */
     @JSName("interpolate")
-    def interpolate_NewOutput_ScaleLinear_[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleLinear_[Range, NewOutput] = js.native
+    def interpolate_NewOutput_ScaleLinear_[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleLinear_[Range, NewOutput, Unknown] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleLinear_[Range, Output, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleLogarithmic[Range, Output] extends ScaleContinuousNumeric[Range, Output] {
+  trait ScaleLogarithmic[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
+    
     /**
       * Returns the current base, which defaults to 10.
       */
@@ -467,10 +692,11 @@ object mod extends js.Object {
       * Sets the base for this logarithmic scale to the specified value.
       */
     def base(base: Double): this.type = js.native
+    
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[Any, Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -499,11 +725,23 @@ object mod extends js.Object {
       * @param interpolate An interpolation factory. The generics for Range and Output of the scale must correspond to the interpolation factory applied to the scale.
       */
     @JSName("interpolate")
-    def interpolate_NewOutput_ScaleLogarithmic[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleLogarithmic[Range, NewOutput] = js.native
+    def interpolate_NewOutput_ScaleLogarithmic[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleLogarithmic[Range, NewOutput, Unknown] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleLogarithmic[Range, Output, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleOrdinal_[Domain /* <: AnonToString */, Range] extends js.Object {
+  trait ScaleOrdinal_[Domain /* <: ToString */, Range, Unknown] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the corresponding value in the output range.
       * If the given value is not in the scale’s domain, returns the unknown; or, if the unknown value is implicit (the default),
@@ -512,11 +750,13 @@ object mod extends js.Object {
       *
       * @param x A value from the domain.
       */
-    def apply(x: Domain): Range = js.native
+    def apply(x: Domain): Range | Unknown = js.native
+    
     /**
       * Returns an exact copy of this ordinal scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns the scale's current domain.
       */
@@ -527,8 +767,8 @@ object mod extends js.Object {
       * The first element in domain will be mapped to the first element in the range,
       * the second domain value to the second range value, and so on.
       *
-      * Domain values are stored internally in a map from stringified value to index; the resulting index is then used to retrieve a value from the range.
-      * Thus, an ordinal scale’s values must be coercible to a string, and the stringified version of the domain value uniquely identifies the corresponding range value.
+      * Domain values are stored internally in an InternMap from primitive value to index; the resulting index is then used to retrieve a value from the range.
+      * Thus, an ordinal scale’s values must be coercible to a primitive value, and the primitive domain value uniquely identifies the corresponding range value.
       *
       * Setting the domain on an ordinal scale is optional if the unknown value is implicit (the default).
       * In this case, the domain will be inferred implicitly from usage by assigning each unique value passed to the scale a new value from the range.
@@ -536,7 +776,8 @@ object mod extends js.Object {
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[Domain]): this.type = js.native
+    def domain(domain: js.Iterable[Domain]): this.type = js.native
+    
     /**
       * Returns the scale's current range.
       */
@@ -550,23 +791,24 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
     /**
       * Returns the current unknown value, which defaults to "implicit".
       */
-    def unknown(): Range | AnonName = js.native
+    def unknown(): UnknownReturnType[Unknown, Name] = js.native
     /**
       * Sets the output value of the scale for unknown input values and returns this scale.
       * The implicit value enables implicit domain construction. scaleImplicit can be used as a convenience to set the implicit value.
       *
       * @param value Unknown value to be used or scaleImplicit to set implicit scale generation.
       */
-    def unknown(value: Range): this.type = js.native
-    def unknown(value: AnonName): this.type = js.native
+    def unknown[NewUnknown](value: NewUnknown): /* import warning: importer.ImportType#apply Failed type conversion: NewUnknown extends {  name :'implicit'} ? d3-scale.d3-scale.ScaleOrdinal<Domain, Range, never> : d3-scale.d3-scale.ScaleOrdinal<Domain, Range, NewUnknown> */ js.Any = js.native
   }
   
   @js.native
-  trait ScalePoint_[Domain /* <: AnonToString */] extends js.Object {
+  trait ScalePoint_[Domain /* <: ToString */] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the corresponding point derived from the output range.
       * If the given value is not in the scale’s domain, returns undefined.
@@ -574,6 +816,7 @@ object mod extends js.Object {
       * @param x  A value from the domain.
       */
     def apply(x: Domain): js.UndefOr[Double] = js.native
+    
     /**
       * Returns the current alignment which defaults to 0.5.
       */
@@ -590,26 +833,30 @@ object mod extends js.Object {
       * @param align Value for alignment setting in [0, 1] interval.
       */
     def align(align: Double): this.type = js.native
+    
     /**
       * Return 0.
       */
     def bandwidth(): Double = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns the scale's current domain.
       */
     def domain(): js.Array[Domain] = js.native
     /**
       * Sets the domain to the specified array of values. The first element in domain will be mapped to the first point, the second domain value to the second point, and so on.
-      * Domain values are stored internally in a map from stringified value to index; the resulting index is then used to determine the point.
-      * Thus, a point scale’s values must be coercible to a string, and the stringified version of the domain value uniquely identifies the corresponding point.
+      * Domain values are stored internally in an InternMap from primitive value to index; the resulting index is then used to determine the point.
+      * Thus, a point scale’s values must be coercible to a primitive value, and the primitive domain value uniquely identifies the corresponding point.
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[Domain]): this.type = js.native
+    def domain(domain: js.Iterable[Domain]): this.type = js.native
+    
     /**
       * Returns the current outer padding which defaults to 0.
       * The outer padding determines the ratio of the range that is reserved for blank space
@@ -627,6 +874,7 @@ object mod extends js.Object {
       * @param padding Value for outer padding in [0, 1] interval.
       */
     def padding(padding: Double): this.type = js.native
+    
     /**
       * Returns the scale’s current range, which defaults to [0, 1].
       */
@@ -638,7 +886,8 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def range(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def range(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Sets the scale’s range to the specified two-element array of numbers while also enabling rounding.
       * If the elements in the given array are not numbers, they will be coerced to numbers.
@@ -647,7 +896,8 @@ object mod extends js.Object {
       *
       * @param range A two-element array of numeric values.
       */
-    def rangeRound(range: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns the current rounding status for the scale: enabled (= true) or disabled (= false).
       */
@@ -661,6 +911,7 @@ object mod extends js.Object {
       * @param round Enable rounding (= true), disable rounding (= false).
       */
     def round(round: Boolean): this.type = js.native
+    
     /**
       * Returns the distance between the starts of adjacent points.
       */
@@ -668,7 +919,10 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait ScalePower[Range, Output] extends ScaleContinuousNumeric[Range, Output] {
+  trait ScalePower[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
+    
     /**
       * If exponent is not specified, returns the current exponent, which defaults to 1.
       * (Note that this is effectively a linear scale until you set a different exponent.)
@@ -679,10 +933,11 @@ object mod extends js.Object {
       * (Note that this is effectively a linear scale until you set a different exponent.)
       */
     def exponent(exponent: Double): this.type = js.native
+    
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[Any, Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -711,22 +966,35 @@ object mod extends js.Object {
       * @param interpolate An interpolation factory. The generics for Range and Output of the scale must correspond to the interpolation factory applied to the scale.
       */
     @JSName("interpolate")
-    def interpolate_NewOutput_ScalePower[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScalePower[Range, NewOutput] = js.native
+    def interpolate_NewOutput_ScalePower[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScalePower[Range, NewOutput, Unknown] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScalePower[Range, Output, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleQuantile_[Range] extends js.Object {
+  trait ScaleQuantile_[Range, Unknown] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the corresponding value in the output range.
       *
       * @param value A numeric value in the input domain.
       */
-    def apply(value: Double): Range = js.native
-    def apply(value: AnonValueOf): Range = js.native
+    def apply(value: NumberValue): Range | Unknown = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns the scale’s current domain.
       */
@@ -739,7 +1007,8 @@ object mod extends js.Object {
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[js.UndefOr[Double | AnonValueOf | Null]]): this.type = js.native
+    def domain(domain: js.Iterable[js.UndefOr[NumberValue | Null]]): this.type = js.native
+    
     /**
       * Returns the extent of values in the domain [x0, x1] for the corresponding value in the range: the inverse of quantile.
       * This method is useful for interaction, say to determine the value in the domain that corresponds to the pixel location under the mouse.
@@ -747,6 +1016,7 @@ object mod extends js.Object {
       * @param value A value from the range.
       */
     def invertExtent(value: Range): js.Tuple2[Double, Double] = js.native
+    
     /**
       * Returns the quantile thresholds. If the range contains n discrete values, the returned array will contain n - 1 thresholds.
       * Values less than the first threshold are considered in the first quantile;
@@ -754,6 +1024,7 @@ object mod extends js.Object {
       * Internally, the thresholds array is used with bisect to find the output quantile associated with the given input value.
       */
     def quantiles(): js.Array[Double] = js.native
+    
     /**
       * Returns the current range.
       */
@@ -766,20 +1037,33 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleQuantile_[Range, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleQuantize_[Range] extends js.Object {
+  trait ScaleQuantize_[Range, Unknown] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the corresponding value in the output range.
       */
-    def apply(value: Double): Range = js.native
-    def apply(value: AnonValueOf): Range = js.native
+    def apply(value: NumberValue): Range | Unknown = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns the scale’s current domain.
       */
@@ -790,7 +1074,8 @@ object mod extends js.Object {
       *
       * @param domain A two-element array of numeric values defining the domain.
       */
-    def domain(domain: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns the extent of values in the domain [x0, x1] for the corresponding value in the range: the inverse of quantize.
       * This method is useful for interaction, say to determine the value in the domain that corresponds to the pixel location under the mouse.
@@ -800,6 +1085,7 @@ object mod extends js.Object {
       * @param value A value from the range.
       */
     def invertExtent(value: Range): js.Tuple2[Double, Double] = js.native
+    
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
@@ -814,6 +1100,7 @@ object mod extends js.Object {
       */
     def nice(): this.type = js.native
     def nice(count: Double): this.type = js.native
+    
     /**
       * Returns the scale’s current range.
       */
@@ -823,7 +1110,13 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
+    /**
+      * Returns the array of computed thresholds within the domain.
+      */
+    def thresholds(): js.Array[Double] = js.native
+    
     /**
       * Returns a number format function suitable for displaying a tick value, automatically computing the appropriate precision based on the fixed interval between tick values.
       * The specified count should have the same value as the count that is used to generate the tick values.
@@ -833,9 +1126,11 @@ object mod extends js.Object {
       * If specifier uses the format type "s", the scale will return a SI-prefix format based on the largest value in the domain.
       * If the specifier already specifies a precision, this method is equivalent to locale.format.
       */
-    def tickFormat(): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
-    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ Double | AnonValueOf, String] = js.native
+    def tickFormat(): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Double, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ NumberValue, String] = js.native
+    
     /**
       * Returns approximately count representative values from the scale’s domain.
       *
@@ -849,10 +1144,39 @@ object mod extends js.Object {
       */
     def ticks(): js.Array[Double] = js.native
     def ticks(count: Double): js.Array[Double] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleQuantize_[Range, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleSequential_[Output] extends js.Object {
+  trait ScaleRadial_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleRadial_[Range, Output, NewUnknown] = js.native
+  }
+  
+  @js.native
+  trait ScaleSequentialBase[Output, Unknown] extends StObject {
+    
     /**
       * Given a value from the domain, returns the corresponding value from the output range, subject to interpolation.
       *
@@ -860,8 +1184,8 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the domain.
       */
-    def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+    def apply(value: NumberValue): Output | Unknown = js.native
+    
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -875,10 +1199,12 @@ object mod extends js.Object {
       * @param clamp A flag to enable (true) or disable (false) clamping.
       */
     def clamp(clamp: Boolean): this.type = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
-    def copy(): ScaleSequential_[Output] = js.native
+    def copy(): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current domain.
       */
@@ -889,7 +1215,34 @@ object mod extends js.Object {
       *
       * @param domain A two-element array of numeric domain values.
       */
-    def domain(domain: js.Tuple2[Double | AnonValueOf, Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[NumberValue]): this.type = js.native
+    
+    /**
+      * See continuous.range.
+      */
+    def range(): js.Function0[js.Tuple2[Output, Output]] = js.native
+    /**
+      * See continuous.range.
+      * The given two-element array is converted to an interpolator function using d3.interpolate.
+      *
+      * @param range Range values.
+      */
+    def range(range: js.Iterable[Output]): this.type = js.native
+    
+    /**
+      * See continuous.rangeRound.
+      * If range is specified, implicitly uses d3.interpolateRound as the interpolator.
+      *
+      * @param range Range values.
+      */
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+  }
+  
+  @js.native
+  trait ScaleSequentialQuantile_[Output, Unknown]
+    extends StObject
+       with ScaleSequentialBase[Output, Unknown] {
+    
     /**
       * Returns the current interpolator underlying the scale.
       */
@@ -908,21 +1261,105 @@ object mod extends js.Object {
       * @param interpolator An interpolator function mapping a value from the [0, 1] interval to an output value.
       */
     @JSName("interpolator")
-    def interpolator_NewOutput_ScaleSequential_[NewOutput](interpolator: js.Function1[/* t */ Double, NewOutput]): ScaleSequential_[NewOutput] = js.native
+    def interpolator_NewOutput_ScaleSequentialQuantile_[NewOutput](interpolator: js.Function1[/* t */ Double, NewOutput]): ScaleSequentialQuantile_[NewOutput, Unknown] = js.native
+    
+    /**
+      * Returns an array of n + 1 quantiles.
+      * For example, if n = 4, returns an array of five numbers: the minimum value, the first quartile, the median, the third quartile, and the maximum.
+      */
+    def quantiles(): js.Array[Double] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleSequentialQuantile_[Output, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleThreshold_[Domain /* <: Double | String | js.Date */, Range] extends js.Object {
+  trait ScaleSequential_[Output, Unknown]
+    extends StObject
+       with ScaleSequentialBase[Output, Unknown] {
+    
+    /**
+      * Returns the current interpolator underlying the scale.
+      */
+    def interpolator(): js.Function1[/* t */ Double, Output] = js.native
+    /**
+      * Sets the scale’s interpolator to the specified function.
+      *
+      * @param interpolator An interpolator function mapping a value from the [0, 1] interval to an output value.
+      */
+    def interpolator(interpolator: js.Function1[/* t */ Double, Output]): this.type = js.native
+    /**
+      * Sets the scale’s interpolator to the specified function.
+      *
+      * The generic corresponds to a the new output type of the scale. The output type of the scale is determined by the output type of the interpolator function.
+      *
+      * @param interpolator An interpolator function mapping a value from the [0, 1] interval to an output value.
+      */
+    @JSName("interpolator")
+    def interpolator_NewOutput_ScaleSequential_[NewOutput](interpolator: js.Function1[/* t */ Double, NewOutput]): ScaleSequential_[NewOutput, Unknown] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleSequential_[Output, NewUnknown] = js.native
+  }
+  
+  @js.native
+  trait ScaleSymLog_[Range, Output, Unknown]
+    extends StObject
+       with ScaleContinuousNumeric[Range, Output, Unknown] {
+    
+    /**
+      * Returns the current constant, which defaults to 1.
+      */
+    def constant(): Double = js.native
+    /**
+      * Sets the symlog constant to the specified number and returns this scale;
+      * otherwise returns the current value of the symlog constant, which defaults to 1. See “A bi-symmetric log transformation for wide-range data” by Webber for more.
+      */
+    def constant(constant: Double): this.type = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleSymLog_[Range, Output, NewUnknown] = js.native
+  }
+  
+  @js.native
+  trait ScaleThreshold_[Domain /* <: Double | String | js.Date */, Range, Unknown] extends StObject {
+    
     /**
       * Given a value in the input domain, returns the corresponding value in the output range.
       *
       * @param value A domain value.
       */
-    def apply(value: Domain): Range = js.native
+    def apply(value: Domain): Range | Unknown = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns the scale’s current domain.
       */
@@ -936,7 +1373,8 @@ object mod extends js.Object {
       *
       * @param domain Array of domain values.
       */
-    def domain(domain: js.Array[Domain]): this.type = js.native
+    def domain(domain: js.Iterable[Domain]): this.type = js.native
+    
     /**
       * Returns the extent of values in the domain [x0, x1] for the corresponding value in the range, representing the inverse mapping from range to domain.
       * This method is useful for interaction, say to determine the value in the domain that corresponds to the pixel location under the mouse.
@@ -944,6 +1382,7 @@ object mod extends js.Object {
       * @param value A range value.
       */
     def invertExtent(value: Range): js.Tuple2[js.UndefOr[Domain], js.UndefOr[Domain]] = js.native
+    
     /**
       * Returns the scale’s current range.
       */
@@ -955,13 +1394,23 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleThreshold_[Domain, Range, NewUnknown] = js.native
   }
   
   @js.native
-  trait ScaleTime_[Range, Output] extends js.Object {
-    def apply(value: Double): Output = js.native
-    def apply(value: AnonValueOf): Output = js.native
+  trait ScaleTime_[Range, Output, Unknown] extends StObject {
+    
     /**
       * Given a value from the domain, returns the corresponding value from the range, subject to interpolation, if any.
       *
@@ -971,7 +1420,9 @@ object mod extends js.Object {
       *
       * @param value A temporal value from the domain. If the value is not a Date, it will be coerced to Date.
       */
-    def apply(value: Date): Output = js.native
+    def apply(value: js.Date): Output | Unknown = js.native
+    def apply(value: NumberValue): Output | Unknown = js.native
+    
     /**
       * Returns whether or not the scale currently clamps values to within the range.
       */
@@ -985,10 +1436,12 @@ object mod extends js.Object {
       * @param clamp A flag to enable (true) or disable (false) clamping.
       */
     def clamp(clamp: Boolean): this.type = js.native
+    
     /**
       * Returns an exact copy of this scale. Changes to this scale will not affect the returned scale, and vice versa.
       */
     def copy(): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current domain.
       */
@@ -1004,11 +1457,12 @@ object mod extends js.Object {
       *
       * @param domain Array of temporal domain values. Numeric values will be coerced to dates.
       */
-    def domain(domain: js.Array[js.Date | Double | AnonValueOf]): this.type = js.native
+    def domain(domain: js.Iterable[js.Date | NumberValue]): this.type = js.native
+    
     /**
       * Returns the scale’s current interpolator factory, which defaults to interpolate.
       */
-    def interpolate(): InterpolatorFactory[_, _] = js.native
+    def interpolate(): InterpolatorFactory[Any, Any] = js.native
     /**
       * Sets the scale’s range interpolator factory. This interpolator factory is used to create interpolators for each adjacent pair of values from the range;
       * these interpolators then map a normalized domain parameter t in [0, 1] to the corresponding value in the range.
@@ -1037,7 +1491,8 @@ object mod extends js.Object {
       * @param interpolate An interpolation factory. The generics for Range and Output of the scale must correspond to the interpolation factory applied to the scale.
       */
     @JSName("interpolate")
-    def interpolate_NewOutput_ScaleTime_[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleTime_[Range, NewOutput] = js.native
+    def interpolate_NewOutput_ScaleTime_[NewOutput](interpolate: InterpolatorFactory[Range, NewOutput]): ScaleTime_[Range, NewOutput, Unknown] = js.native
+    
     /**
       * Given a value from the range, returns the corresponding value from the domain. Inversion is useful for interaction,
       * say to determine the data value corresponding to the position of the mouse.
@@ -1051,22 +1506,13 @@ object mod extends js.Object {
       *
       * @param value A numeric value from the range.
       */
-    def invert(value: Double): js.Date = js.native
-    def invert(value: AnonValueOf): js.Date = js.native
+    def invert(value: NumberValue): js.Date = js.native
+    
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
       *
-      * Nicing is useful if the domain is computed from data, say using extent, and may be irregular.
-      * For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14].
-      * If the domain has more than two values, nicing the domain only affects the first and last value.
-      */
-    def nice(): this.type = js.native
-    /**
-      * Extends the domain so that it starts and ends on nice round values.
-      * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
-      *
-      * A tick count argument allows greater control over the step size used to extend the bounds, guaranteeing that the returned ticks will exactly cover the domain.
+      * An optional count argument allows greater control over the step size used to extend the bounds, guaranteeing that the returned ticks will exactly cover the domain.
       *
       * Nicing is useful if the domain is computed from data, say using extent, and may be irregular.
       * For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14].
@@ -1074,23 +1520,25 @@ object mod extends js.Object {
       *
       * @param count Expected number of ticks.
       */
+    def nice(): this.type = js.native
     def nice(count: Double): this.type = js.native
     /**
       * Extends the domain so that it starts and ends on nice round values.
       * This method typically modifies the scale’s domain, and may only extend the bounds to the nearest round value.
       *
-      * a time interval may be specified to explicitly set the ticks. If an interval is specified, an optional step may also be specified to skip some ticks.
-      * For example, time.nice(d3.timeSecond, 10) will extend the domain to an even ten seconds (0, 10, 20, etc.).
+      * A time interval may be specified to explicitly set the ticks.
+      * If an interval is specified, an optional step may also be specified to skip some ticks.
+      * For example, time.nice(d3.timeSecond.every(10)) will extend the domain to an even ten seconds (0, 10, 20, etc.).
+      * See time.ticks and interval.every for further detail.
       *
       * Nicing is useful if the domain is computed from data, say using extent, and may be irregular.
       * For example, for a domain of [2009-07-13T00:02, 2009-07-13T23:48], the nice domain is [2009-07-13, 2009-07-14].
       * If the domain has more than two values, nicing the domain only affects the first and last value.
       *
       * @param interval A time interval to specify the expected ticks.
-      * @param step An optional step number to be applied to the time interval when considering ticks.
       */
     def nice(interval: CountableTimeInterval): this.type = js.native
-    def nice(interval: CountableTimeInterval, step: Double): this.type = js.native
+    
     /**
       * Returns a copy of the scale’s current range.
       */
@@ -1103,7 +1551,8 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def range(range: js.Array[Range]): this.type = js.native
+    def range(range: js.Iterable[Range]): this.type = js.native
+    
     /**
       * Sets the scale’s range to the specified array of values while also setting the scale’s interpolator to interpolateRound.
       *
@@ -1115,7 +1564,8 @@ object mod extends js.Object {
       *
       * @param range Array of range values.
       */
-    def rangeRound(range: js.Array[Double | AnonValueOf]): this.type = js.native
+    def rangeRound(range: js.Iterable[NumberValue]): this.type = js.native
+    
     /**
       * Returns a time format function suitable for displaying tick values.
       *
@@ -1133,18 +1583,16 @@ object mod extends js.Object {
       * Although somewhat unusual, this default behavior has the benefit of providing both local and global context:
       * for example, formatting a sequence of ticks as [11 PM, Mon 07, 01 AM] reveals information about hours, dates, and day simultaneously,
       * rather than just the hours [11 PM, 12 AM, 01 AM].
-      */
-    def tickFormat(): js.Function1[/* d */ js.Date, String] = js.native
-    /**
-      * Returns a time format function suitable for displaying tick values.
       *
       * The specified count is currently ignored, but is accepted for consistency with other scales such as continuous.tickFormat.
       *
       * @param count Expected number of ticks. (Currently ignored)
       * @param specifier An optional valid date format specifier string (see d3-time-format).
       */
+    def tickFormat(): js.Function1[/* d */ js.Date, String] = js.native
     def tickFormat(count: Double): js.Function1[/* d */ js.Date, String] = js.native
     def tickFormat(count: Double, specifier: String): js.Function1[/* d */ js.Date, String] = js.native
+    def tickFormat(count: Unit, specifier: String): js.Function1[/* d */ js.Date, String] = js.native
     /**
       * Returns a time format function suitable for displaying tick values.
       *
@@ -1155,25 +1603,18 @@ object mod extends js.Object {
       */
     def tickFormat(interval: TimeInterval_): js.Function1[/* d */ js.Date, String] = js.native
     def tickFormat(interval: TimeInterval_, specifier: String): js.Function1[/* d */ js.Date, String] = js.native
+    
     /**
       * Returns representative dates from the scale’s domain. The returned tick values are uniformly-spaced (mostly),
       * have sensible values (such as every day at midnight), and are guaranteed to be within the extent of the domain.
       * Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
       *
-      * Without specifying a count or time interval to control the number of ticks returned, a default count of 10 is used.
+      * An optional count may be specified to affect how many ticks are generated. If count is not specified, it defaults to 10.
       * The specified count is only a hint; the scale may return more or fewer values depending on the domain.
-      */
-    def ticks(): js.Array[js.Date] = js.native
-    /**
-      * Returns representative dates from the scale’s domain. The returned tick values are uniformly-spaced (mostly),
-      * have sensible values (such as every day at midnight), and are guaranteed to be within the extent of the domain.
-      * Ticks are often used to display reference lines, or tick marks, in conjunction with the visualized data.
-      *
-      * The specified count controls the number of ticks to be returned. The specified count is only a hint;
-      * the scale may return more or fewer values depending on the domain.
       *
       * @param count Expected number of ticks.
       */
+    def ticks(): js.Array[js.Date] = js.native
     def ticks(count: Double): js.Array[js.Date] = js.native
     /**
       * Returns representative dates from the scale’s domain. The returned tick values are uniformly-spaced (mostly),
@@ -1186,67 +1627,26 @@ object mod extends js.Object {
       * @param interval A time interval to specify the expected ticks.
       */
     def ticks(interval: TimeInterval_): js.Array[js.Date] = js.native
+    
+    /**
+      * Returns the current unknown value, which defaults to undefined.
+      */
+    def unknown(): UnknownReturnType[Unknown, Unit] = js.native
+    /**
+      * Sets the output value of the scale for undefined (or NaN) input values and returns this scale.
+      *
+      * @param value The output value of the scale for undefined (or NaN) input values.
+      */
+    def unknown[NewUnknown](value: NewUnknown): ScaleTime_[Range, Output, NewUnknown] = js.native
   }
   
-  def scaleBand(): ScaleBand_[String] = js.native
-  @JSName("scaleBand")
-  def scaleBand_Domain_AnonToString[Domain /* <: AnonToString */](): ScaleBand_[Domain] = js.native
-  def scaleDiverging[T](interpolator: js.Function1[/* t */ Double, T]): ScaleDiverging_[T] = js.native
-  def scaleIdentity(): ScaleIdentity_ = js.native
-  def scaleLinear(): ScaleLinear_[Double, Double] = js.native
-  @JSName("scaleLinear")
-  def scaleLinear_Output[Output](): ScaleLinear_[Output, Output] = js.native
-  @JSName("scaleLinear")
-  def scaleLinear_RangeOutput[Range, Output](): ScaleLinear_[Range, Output] = js.native
-  def scaleLog(): ScaleLogarithmic[Double, Double] = js.native
-  @JSName("scaleLog")
-  def scaleLog_Output[Output](): ScaleLogarithmic[Output, Output] = js.native
-  @JSName("scaleLog")
-  def scaleLog_RangeOutput[Range, Output](): ScaleLogarithmic[Range, Output] = js.native
-  def scaleOrdinal[Range](): ScaleOrdinal_[String, Range] = js.native
-  def scaleOrdinal[Range](range: js.Array[Range]): ScaleOrdinal_[String, Range] = js.native
-  @JSName("scaleOrdinal")
-  def scaleOrdinal_Domain_AnonToStringRange[Domain /* <: AnonToString */, Range](): ScaleOrdinal_[Domain, Range] = js.native
-  @JSName("scaleOrdinal")
-  def scaleOrdinal_Domain_AnonToStringRange[Domain /* <: AnonToString */, Range](range: js.Array[Range]): ScaleOrdinal_[Domain, Range] = js.native
-  def scalePoint(): ScalePoint_[String] = js.native
-  @JSName("scalePoint")
-  def scalePoint_Domain_AnonToString[Domain /* <: AnonToString */](): ScalePoint_[Domain] = js.native
-  def scalePow(): ScalePower[Double, Double] = js.native
-  @JSName("scalePow")
-  def scalePow_Output[Output](): ScalePower[Output, Output] = js.native
-  @JSName("scalePow")
-  def scalePow_RangeOutput[Range, Output](): ScalePower[Range, Output] = js.native
-  def scaleQuantile(): ScaleQuantile_[Double] = js.native
-  @JSName("scaleQuantile")
-  def scaleQuantile_Range[Range](): ScaleQuantile_[Range] = js.native
-  def scaleQuantize(): ScaleQuantize_[Double] = js.native
-  @JSName("scaleQuantize")
-  def scaleQuantize_Range[Range](): ScaleQuantize_[Range] = js.native
-  def scaleSequential[Output](interpolator: js.Function1[/* t */ Double, Output]): ScaleSequential_[Output] = js.native
-  def scaleSqrt(): ScalePower[Double, Double] = js.native
-  @JSName("scaleSqrt")
-  def scaleSqrt_Output[Output](): ScalePower[Output, Output] = js.native
-  @JSName("scaleSqrt")
-  def scaleSqrt_RangeOutput[Range, Output](): ScalePower[Range, Output] = js.native
-  def scaleThreshold(): ScaleThreshold_[Double, Double] = js.native
-  @JSName("scaleThreshold")
-  def scaleThreshold_Domain_UnionDoubleStringDateRange[Domain /* <: Double | String | js.Date */, Range](): ScaleThreshold_[Domain, Range] = js.native
-  def scaleTime(): ScaleTime_[Double, Double] = js.native
-  @JSName("scaleTime")
-  def scaleTime_Output[Output](): ScaleTime_[Output, Output] = js.native
-  @JSName("scaleTime")
-  def scaleTime_RangeOutput[Range, Output](): ScaleTime_[Range, Output] = js.native
-  def scaleUtc(): ScaleTime_[Double, Double] = js.native
-  @JSName("scaleUtc")
-  def scaleUtc_Output[Output](): ScaleTime_[Output, Output] = js.native
-  @JSName("scaleUtc")
-  def scaleUtc_RangeOutput[Range, Output](): ScaleTime_[Range, Output] = js.native
+  /** NOTE: Conditional type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/conditional-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    [Unknown] extends [never] ? DefaultUnknown : Unknown
+    }}}
+    */
   @js.native
-  object scaleImplicit extends js.Object {
-    var name: `implicit` = js.native
-  }
-  
-  type InterpolatorFactory[T, U] = js.Function2[/* a */ T, /* b */ T, js.Function1[/* t */ Double, U]]
+  trait UnknownReturnType[Unknown, DefaultUnknown] extends StObject
 }
-

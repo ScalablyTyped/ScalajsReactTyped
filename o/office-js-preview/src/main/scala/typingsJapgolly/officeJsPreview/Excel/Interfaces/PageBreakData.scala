@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pageBreak.toJSON()`. */
-trait PageBreakData extends js.Object {
+trait PageBreakData extends StObject {
+  
   /**
+    * Specifies the column index for the page break.
     *
-    * Represents the column index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var columnIndex: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the row index for the page break.
     *
-    * Represents the row index for the page break
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
 }
-
 object PageBreakData {
-  @scala.inline
-  def apply(columnIndex: Int | Double = null, rowIndex: Int | Double = null): PageBreakData = {
+  
+  inline def apply(): PageBreakData = {
     val __obj = js.Dynamic.literal()
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageBreakData]
   }
+  
+  extension [Self <: PageBreakData](x: Self) {
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+  }
 }
-

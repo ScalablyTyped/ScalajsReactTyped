@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the PageCollection object, for use in "pageCollection.set({ ... })". */
-trait PageCollectionUpdateData extends js.Object {
+/** An interface for updating data on the PageCollection object, for use in `pageCollection.set({ ... })`. */
+trait PageCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[PageData]] = js.undefined
 }
-
 object PageCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[PageData] = null): PageCollectionUpdateData = {
+  
+  inline def apply(): PageCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageCollectionUpdateData]
   }
+  
+  extension [Self <: PageCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[PageData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: PageData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

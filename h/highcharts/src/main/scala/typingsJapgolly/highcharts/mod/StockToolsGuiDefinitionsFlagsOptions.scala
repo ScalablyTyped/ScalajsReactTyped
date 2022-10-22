@@ -1,37 +1,54 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockToolsGuiDefinitionsFlagsOptions extends js.Object {
+trait StockToolsGuiDefinitionsFlagsOptions extends StObject {
+  
   var flagCirclepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagCirclepinOptions] = js.undefined
+  
   var flagDiamondpin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions] = js.undefined
+  
   var flagSimplepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSimplepinOptions] = js.undefined
+  
   var flagSquarepin: js.UndefOr[StockToolsGuiDefinitionsFlagsFlagSquarepinOptions] = js.undefined
+  
   /**
     * (Highstock) A collection of strings pointing to config options for the
     * items.
     */
-  var items: js.UndefOr[js.Array[_]] = js.undefined
+  var items: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object StockToolsGuiDefinitionsFlagsOptions {
-  @scala.inline
-  def apply(
-    flagCirclepin: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions = null,
-    flagDiamondpin: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions = null,
-    flagSimplepin: StockToolsGuiDefinitionsFlagsFlagSimplepinOptions = null,
-    flagSquarepin: StockToolsGuiDefinitionsFlagsFlagSquarepinOptions = null,
-    items: js.Array[_] = null
-  ): StockToolsGuiDefinitionsFlagsOptions = {
+  
+  inline def apply(): StockToolsGuiDefinitionsFlagsOptions = {
     val __obj = js.Dynamic.literal()
-    if (flagCirclepin != null) __obj.updateDynamic("flagCirclepin")(flagCirclepin.asInstanceOf[js.Any])
-    if (flagDiamondpin != null) __obj.updateDynamic("flagDiamondpin")(flagDiamondpin.asInstanceOf[js.Any])
-    if (flagSimplepin != null) __obj.updateDynamic("flagSimplepin")(flagSimplepin.asInstanceOf[js.Any])
-    if (flagSquarepin != null) __obj.updateDynamic("flagSquarepin")(flagSquarepin.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockToolsGuiDefinitionsFlagsOptions]
   }
+  
+  extension [Self <: StockToolsGuiDefinitionsFlagsOptions](x: Self) {
+    
+    inline def setFlagCirclepin(value: StockToolsGuiDefinitionsFlagsFlagCirclepinOptions): Self = StObject.set(x, "flagCirclepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagCirclepinUndefined: Self = StObject.set(x, "flagCirclepin", js.undefined)
+    
+    inline def setFlagDiamondpin(value: StockToolsGuiDefinitionsFlagsFlagDiamondpinOptions): Self = StObject.set(x, "flagDiamondpin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagDiamondpinUndefined: Self = StObject.set(x, "flagDiamondpin", js.undefined)
+    
+    inline def setFlagSimplepin(value: StockToolsGuiDefinitionsFlagsFlagSimplepinOptions): Self = StObject.set(x, "flagSimplepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagSimplepinUndefined: Self = StObject.set(x, "flagSimplepin", js.undefined)
+    
+    inline def setFlagSquarepin(value: StockToolsGuiDefinitionsFlagsFlagSquarepinOptions): Self = StObject.set(x, "flagSquarepin", value.asInstanceOf[js.Any])
+    
+    inline def setFlagSquarepinUndefined: Self = StObject.set(x, "flagSquarepin", js.undefined)
+    
+    inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: Any*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

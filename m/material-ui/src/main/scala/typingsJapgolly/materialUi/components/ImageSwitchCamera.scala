@@ -1,14 +1,17 @@
 package typingsJapgolly.materialUi.components
 
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ImageSwitchCamera
-  extends SharedApply_SvgIconProps_1100155871[typingsJapgolly.materialUi.svgIconsMod.ImageSwitchCamera] {
+object ImageSwitchCamera {
+  
   @JSImport("material-ui/svg-icons", "ImageSwitchCamera")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ImageSwitchCamera.type): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImageSwitchCamera] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImageSwitchCamera](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImageSwitchCamera] = new SharedBuilder_SvgIconProps_115160895[typingsJapgolly.materialUi.svgIconsMod.ImageSwitchCamera](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

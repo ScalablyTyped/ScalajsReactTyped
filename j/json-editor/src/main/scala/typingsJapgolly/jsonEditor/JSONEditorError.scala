@@ -1,21 +1,30 @@
 package typingsJapgolly.jsonEditor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSONEditorError extends js.Object {
+trait JSONEditorError extends StObject {
+  
   var message: String
+  
   var path: String
+  
   var property: String
 }
-
 object JSONEditorError {
-  @scala.inline
-  def apply(message: String, path: String, property: String): JSONEditorError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
   
+  inline def apply(message: String, path: String, property: String): JSONEditorError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONEditorError]
   }
+  
+  extension [Self <: JSONEditorError](x: Self) {
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+  }
 }
-

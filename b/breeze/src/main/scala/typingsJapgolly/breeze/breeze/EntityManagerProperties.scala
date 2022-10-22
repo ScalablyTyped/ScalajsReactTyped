@@ -1,39 +1,60 @@
 package typingsJapgolly.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EntityManagerProperties extends js.Object {
+trait EntityManagerProperties extends StObject {
+  
   var dataService: js.UndefOr[DataService] = js.undefined
+  
   var keyGeneratorCtor: js.UndefOr[js.Function] = js.undefined
+  
   var metadataStore: js.UndefOr[MetadataStore] = js.undefined
+  
   var queryOptions: js.UndefOr[QueryOptions] = js.undefined
+  
   var saveOptions: js.UndefOr[SaveOptions] = js.undefined
+  
   var serviceName: js.UndefOr[String] = js.undefined
+  
   var validationOptions: js.UndefOr[ValidationOptions] = js.undefined
 }
-
 object EntityManagerProperties {
-  @scala.inline
-  def apply(
-    dataService: DataService = null,
-    keyGeneratorCtor: js.Function = null,
-    metadataStore: MetadataStore = null,
-    queryOptions: QueryOptions = null,
-    saveOptions: SaveOptions = null,
-    serviceName: String = null,
-    validationOptions: ValidationOptions = null
-  ): EntityManagerProperties = {
+  
+  inline def apply(): EntityManagerProperties = {
     val __obj = js.Dynamic.literal()
-    if (dataService != null) __obj.updateDynamic("dataService")(dataService.asInstanceOf[js.Any])
-    if (keyGeneratorCtor != null) __obj.updateDynamic("keyGeneratorCtor")(keyGeneratorCtor.asInstanceOf[js.Any])
-    if (metadataStore != null) __obj.updateDynamic("metadataStore")(metadataStore.asInstanceOf[js.Any])
-    if (queryOptions != null) __obj.updateDynamic("queryOptions")(queryOptions.asInstanceOf[js.Any])
-    if (saveOptions != null) __obj.updateDynamic("saveOptions")(saveOptions.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (validationOptions != null) __obj.updateDynamic("validationOptions")(validationOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityManagerProperties]
   }
+  
+  extension [Self <: EntityManagerProperties](x: Self) {
+    
+    inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    
+    inline def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
+    
+    inline def setKeyGeneratorCtor(value: js.Function): Self = StObject.set(x, "keyGeneratorCtor", value.asInstanceOf[js.Any])
+    
+    inline def setKeyGeneratorCtorUndefined: Self = StObject.set(x, "keyGeneratorCtor", js.undefined)
+    
+    inline def setMetadataStore(value: MetadataStore): Self = StObject.set(x, "metadataStore", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataStoreUndefined: Self = StObject.set(x, "metadataStore", js.undefined)
+    
+    inline def setQueryOptions(value: QueryOptions): Self = StObject.set(x, "queryOptions", value.asInstanceOf[js.Any])
+    
+    inline def setQueryOptionsUndefined: Self = StObject.set(x, "queryOptions", js.undefined)
+    
+    inline def setSaveOptions(value: SaveOptions): Self = StObject.set(x, "saveOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSaveOptionsUndefined: Self = StObject.set(x, "saveOptions", js.undefined)
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    
+    inline def setValidationOptions(value: ValidationOptions): Self = StObject.set(x, "validationOptions", value.asInstanceOf[js.Any])
+    
+    inline def setValidationOptionsUndefined: Self = StObject.set(x, "validationOptions", js.undefined)
+  }
 }
-

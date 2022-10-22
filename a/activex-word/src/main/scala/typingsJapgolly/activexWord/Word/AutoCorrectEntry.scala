@@ -1,22 +1,72 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.AutoCorrectEntry")
-@js.native
-class AutoCorrectEntry protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val Index: Double = js.native
-  var Name: String = js.native
-  val Parent: js.Any = js.native
-  val RichText: Boolean = js.native
-  var Value: String = js.native
-  @JSName("Word.AutoCorrectEntry_typekey")
-  var WordDotAutoCorrectEntry_typekey: AutoCorrectEntry = js.native
-  def Apply(Range: Range): Unit = js.native
-  def Delete(): Unit = js.native
+trait AutoCorrectEntry extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  def Apply(Range: Range): Unit
+  
+  val Creator: Double
+  
+  def Delete(): Unit
+  
+  val Index: Double
+  
+  var Name: String
+  
+  val Parent: Any
+  
+  val RichText: Boolean
+  
+  var Value: String
+  
+  /* private */ @JSName("Word.AutoCorrectEntry_typekey")
+  var WordDotAutoCorrectEntry_typekey: AutoCorrectEntry
 }
-
+object AutoCorrectEntry {
+  
+  inline def apply(
+    Application: Application,
+    Apply: Range => Callback,
+    Creator: Double,
+    Delete: Callback,
+    Index: Double,
+    Name: String,
+    Parent: Any,
+    RichText: Boolean,
+    Value: String,
+    WordDotAutoCorrectEntry_typekey: AutoCorrectEntry
+  ): AutoCorrectEntry = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Apply = js.Any.fromFunction1((t0: Range) => Apply(t0).runNow()), Creator = Creator.asInstanceOf[js.Any], Delete = Delete.toJsFn, Index = Index.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], RichText = RichText.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.AutoCorrectEntry_typekey")(WordDotAutoCorrectEntry_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutoCorrectEntry]
+  }
+  
+  extension [Self <: AutoCorrectEntry](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setApply(value: Range => Callback): Self = StObject.set(x, "Apply", js.Any.fromFunction1((t0: Range) => value(t0).runNow()))
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: Callback): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRichText(value: Boolean): Self = StObject.set(x, "RichText", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotAutoCorrectEntry_typekey(value: AutoCorrectEntry): Self = StObject.set(x, "Word.AutoCorrectEntry_typekey", value.asInstanceOf[js.Any])
+  }
+}

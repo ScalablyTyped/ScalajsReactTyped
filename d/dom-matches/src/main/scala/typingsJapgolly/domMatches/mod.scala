@@ -1,15 +1,17 @@
 package typingsJapgolly.domMatches
 
-import typingsJapgolly.std.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dom-matches", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(element: js.UndefOr[scala.Nothing], selector: String): Boolean = js.native
-  def apply(element: Null, selector: String): Boolean = js.native
-  def apply(element: Element, selector: String): Boolean = js.native
+object mod {
+  
+  inline def apply(element: Element, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(element: Null, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(element: Unit, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("dom-matches", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

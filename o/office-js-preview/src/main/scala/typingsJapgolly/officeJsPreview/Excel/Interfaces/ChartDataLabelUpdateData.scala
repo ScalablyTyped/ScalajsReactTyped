@@ -17,195 +17,254 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.None
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.OutsideEnd
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Right
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartDataLabel object, for use in `chartDataLabel.set({ ... })`. */
-trait ChartDataLabelUpdateData extends js.Object {
+trait ChartDataLabelUpdateData extends StObject {
+  
   /**
+    * Specifies if the data label automatically generates appropriate text based on context.
     *
-    * Boolean value representing if data label automatically generates appropriate text based on context.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var autoText: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Represents the format of chart data label.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var format: js.UndefOr[ChartDataLabelFormatUpdateData] = js.undefined
+  
   /**
-    *
     * String value that represents the formula of chart data label using A1-style notation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var formula: js.UndefOr[String] = js.undefined
+  
   /**
+    * Represents the horizontal alignment for chart data label. See `Excel.ChartTextHorizontalAlignment` for details.
+    This property is valid only when `TextOrientation` of data label is -90, 90, or 180.
     *
-    * Represents the horizontal alignment for chart data label. See Excel.ChartTextHorizontalAlignment for details.
-    This property is valid only when TextOrientation of data label is -90, 90, or 180.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var horizontalAlignment: js.UndefOr[ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed] = js.undefined
+  
   /**
+    * Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Value is `null` if the chart data label is not visible.
     *
-    * Represents the distance, in points, from the left edge of chart data label to the left edge of chart area. Null if chart data label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
     *
-    * Boolean value representing if the number format is linked to the cells (so that the number format changes in the labels when it changes in the cells).
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * String value that represents the format code for data label.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var numberFormat: js.UndefOr[String] = js.undefined
+  
   /**
+    * Value that represents the position of the data label. See `Excel.ChartDataLabelPosition` for details.
     *
-    * DataLabelPosition value that represents the position of the data label. See Excel.ChartDataLabelPosition for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var position: js.UndefOr[
     ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout
   ] = js.undefined
+  
   /**
-    *
     * String representing the separator used for the data label on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var separator: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the data label bubble size is visible.
     *
-    * Boolean value representing if the data label bubble size is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showBubbleSize: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the data label category name is visible.
     *
-    * Boolean value representing if the data label category name is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showCategoryName: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the data label legend key is visible.
     *
-    * Boolean value representing if the data label legend key is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showLegendKey: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the data label percentage is visible.
     *
-    * Boolean value representing if the data label percentage is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showPercentage: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the data label series name is visible.
     *
-    * Boolean value representing if the data label series name is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showSeriesName: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the data label value is visible.
     *
-    * Boolean value representing if the data label value is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var showValue: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * String representing the text of the data label on a chart.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var text: js.UndefOr[String] = js.undefined
+  
   /**
+    * Represents the angle to which the text is oriented for the chart data label. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
     *
-    * Represents the angle to which the text is oriented for the chart data label. The value should be an integer either from -90 to 90, or 180 for vertically-oriented text.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the distance, in points, from the top edge of chart data label to the top of chart area. Value is `null` if the chart data label is not visible.
     *
-    * Represents the distance, in points, from the top edge of chart data label to the top of chart area. Null if chart data label is not visible.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the vertical alignment of chart data label. See `Excel.ChartTextVerticalAlignment` for details.
+    This property is valid only when `TextOrientation` of data label is 0.
     *
-    * Represents the vertical alignment of chart data label. See Excel.ChartTextVerticalAlignment for details.
-    This property is valid only when TextOrientation of data label is 0.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var verticalAlignment: js.UndefOr[ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed] = js.undefined
 }
-
 object ChartDataLabelUpdateData {
-  @scala.inline
-  def apply(
-    autoText: js.UndefOr[Boolean] = js.undefined,
-    format: ChartDataLabelFormatUpdateData = null,
-    formula: String = null,
-    horizontalAlignment: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed = null,
-    left: Int | Double = null,
-    linkNumberFormat: js.UndefOr[Boolean] = js.undefined,
-    numberFormat: String = null,
-    position: ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout = null,
-    separator: String = null,
-    showBubbleSize: js.UndefOr[Boolean] = js.undefined,
-    showCategoryName: js.UndefOr[Boolean] = js.undefined,
-    showLegendKey: js.UndefOr[Boolean] = js.undefined,
-    showPercentage: js.UndefOr[Boolean] = js.undefined,
-    showSeriesName: js.UndefOr[Boolean] = js.undefined,
-    showValue: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    textOrientation: Int | Double = null,
-    top: Int | Double = null,
-    verticalAlignment: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed = null
-  ): ChartDataLabelUpdateData = {
+  
+  inline def apply(): ChartDataLabelUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat.asInstanceOf[js.Any])
-    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBubbleSize)) __obj.updateDynamic("showBubbleSize")(showBubbleSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCategoryName)) __obj.updateDynamic("showCategoryName")(showCategoryName.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLegendKey)) __obj.updateDynamic("showLegendKey")(showLegendKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPercentage)) __obj.updateDynamic("showPercentage")(showPercentage.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSeriesName)) __obj.updateDynamic("showSeriesName")(showSeriesName.asInstanceOf[js.Any])
-    if (!js.isUndefined(showValue)) __obj.updateDynamic("showValue")(showValue.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartDataLabelUpdateData]
   }
+  
+  extension [Self <: ChartDataLabelUpdateData](x: Self) {
+    
+    inline def setAutoText(value: Boolean): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+    
+    inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+    
+    inline def setFormat(value: ChartDataLabelFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    
+    inline def setHorizontalAlignment(value: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
+    
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    
+    inline def setPosition(
+      value: ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setShowBubbleSize(value: Boolean): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
+    
+    inline def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
+    
+    inline def setShowCategoryName(value: Boolean): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
+    
+    inline def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
+    
+    inline def setShowLegendKey(value: Boolean): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
+    
+    inline def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
+    
+    inline def setShowPercentage(value: Boolean): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
+    
+    inline def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
+    
+    inline def setShowSeriesName(value: Boolean): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
+    
+    inline def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
+    
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    
+    inline def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextOrientation(value: Double): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setVerticalAlignment(value: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+  }
 }
-

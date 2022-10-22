@@ -1,7 +1,7 @@
 
 # Scala.js typings for jpeg-js
 
-Typings are for version 0.3.7
+Typings are for version 0.4.4
 
 ## Library description:
 A pure javascript JPEG encoder and decoder
@@ -11,9 +11,9 @@ A pure javascript JPEG encoder and decoder
 | Full name          | jpeg-js |
 | Keywords           | jpeg, jpg, encoder, decoder, codec, image, javascript, js |
 | # releases         | 4 |
-| # dependents       | 138 |
-| # downloads        | 44860936 |
-| # stars            | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4287628333333334E7 |
+| # stars            | 500.0 |
 
 ## Links
 - [Homepage](https://github.com/eugeneware/jpeg-js#readme)

@@ -1,24 +1,37 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonLeft
+import typingsJapgolly.devextreme.anon.BottomColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartCommonPaneSettings extends js.Object {
-  /** Specifies the color of the pane's background. */
+trait dxChartCommonPaneSettings extends StObject {
+  
+  /**
+    * Specifies the color of the pane&apos;s background.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Configures the pane border. */
-  var border: js.UndefOr[AnonLeft] = js.undefined
+  
+  /**
+    * Configures the pane border.
+    */
+  var border: js.UndefOr[BottomColor] = js.undefined
 }
-
 object dxChartCommonPaneSettings {
-  @scala.inline
-  def apply(backgroundColor: String = null, border: AnonLeft = null): dxChartCommonPaneSettings = {
+  
+  inline def apply(): dxChartCommonPaneSettings = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonPaneSettings]
   }
+  
+  extension [Self <: dxChartCommonPaneSettings](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorder(value: BottomColor): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+  }
 }
-

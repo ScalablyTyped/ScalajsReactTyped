@@ -1,38 +1,34 @@
 package typingsJapgolly.xrm.XrmEnum
 
-import typingsJapgolly.xrm.xrmNumbers.`0`
-import typingsJapgolly.xrm.xrmNumbers.`1`
-import typingsJapgolly.xrm.xrmNumbers.`2`
-import typingsJapgolly.xrm.xrmNumbers.`3`
-import typingsJapgolly.xrm.xrmNumbers.`4`
+import typingsJapgolly.xrm.xrmInts.`0`
+import typingsJapgolly.xrm.xrmInts.`1`
+import typingsJapgolly.xrm.xrmInts.`2`
+import typingsJapgolly.xrm.xrmInts.`3`
+import typingsJapgolly.xrm.xrmInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Enumeration of grid control context resolutions.
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.xrm.xrmNumbers.`0`
-  - typingsJapgolly.xrm.xrmNumbers.`1`
-  - typingsJapgolly.xrm.xrmNumbers.`2`
-  - typingsJapgolly.xrm.xrmNumbers.`3`
-  - typingsJapgolly.xrm.xrmNumbers.`4`
+  - typingsJapgolly.xrm.xrmInts.`0`
+  - typingsJapgolly.xrm.xrmInts.`1`
+  - typingsJapgolly.xrm.xrmInts.`2`
+  - typingsJapgolly.xrm.xrmInts.`3`
+  - typingsJapgolly.xrm.xrmInts.`4`
 */
-trait GridControlContext extends js.Object
-
+trait GridControlContext extends StObject
 object GridControlContext {
-  @scala.inline
-  def FormContextRelated: `4` = this.cast(4)
-  @scala.inline
-  def FormContextUnrelated: `3` = this.cast(3)
-  @scala.inline
-  def RibbonContextForm: `1` = this.cast(1)
-  @scala.inline
-  def RibbonContextListing: `2` = this.cast(2)
-  @scala.inline
-  def Unknown: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FormContextRelated: `4` = 4.asInstanceOf[`4`]
+  
+  inline def FormContextUnrelated: `3` = 3.asInstanceOf[`3`]
+  
+  inline def RibbonContextForm: `1` = 1.asInstanceOf[`1`]
+  
+  inline def RibbonContextListing: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Unknown: `0` = 0.asInstanceOf[`0`]
 }
-

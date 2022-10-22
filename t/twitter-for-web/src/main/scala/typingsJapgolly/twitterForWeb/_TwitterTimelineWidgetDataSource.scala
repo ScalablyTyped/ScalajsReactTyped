@@ -1,64 +1,49 @@
 package typingsJapgolly.twitterForWeb
 
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.collection
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.likes
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.list
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.profile
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _TwitterTimelineWidgetDataSource extends js.Object
-
+trait _TwitterTimelineWidgetDataSource extends StObject
 object _TwitterTimelineWidgetDataSource {
-  @scala.inline
-  def AnonSourceType(sourceType: profile, userId: String): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def Id(id: String): typingsJapgolly.twitterForWeb.anon.Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "list")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.Id]
   }
-  @scala.inline
-  def TwitterTimelineWidgetUrlDataSource(sourceType: url, url: String): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def OwnerScreenName(ownerScreenName: String, slug: String): typingsJapgolly.twitterForWeb.anon.OwnerScreenName = {
+    val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = "list")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.OwnerScreenName]
   }
-  @scala.inline
-  def AnonScreenNameSourceType(screenName: String, sourceType: likes): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def ScreenName(screenName: String): typingsJapgolly.twitterForWeb.anon.ScreenName = {
+    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "profile")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.ScreenName]
   }
-  @scala.inline
-  def TwitterTimelineWidgetCollectionDataSource(id: String, sourceType: collection): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def ScreenNameSourceType(screenName: String): typingsJapgolly.twitterForWeb.anon.ScreenNameSourceType = {
+    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = "likes")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.ScreenNameSourceType]
   }
-  @scala.inline
-  def AnonScreenName(screenName: String, sourceType: profile): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(screenName = screenName.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def SourceType(userId: String): typingsJapgolly.twitterForWeb.anon.SourceType = {
+    val __obj = js.Dynamic.literal(sourceType = "profile", userId = userId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.SourceType]
   }
-  @scala.inline
-  def AnonOwnerScreenName(ownerScreenName: String, slug: String, sourceType: list): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def TwitterTimelineWidgetCollectionDataSource(id: String): typingsJapgolly.twitterForWeb.TwitterTimelineWidgetCollectionDataSource = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "collection")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.TwitterTimelineWidgetCollectionDataSource]
   }
-  @scala.inline
-  def AnonId(id: String, sourceType: list): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def TwitterTimelineWidgetUrlDataSource(url: String): typingsJapgolly.twitterForWeb.TwitterTimelineWidgetUrlDataSource = {
+    val __obj = js.Dynamic.literal(sourceType = "url", url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.TwitterTimelineWidgetUrlDataSource]
   }
-  @scala.inline
-  def AnonUserId(sourceType: likes, userId: String): _TwitterTimelineWidgetDataSource = {
-    val __obj = js.Dynamic.literal(sourceType = sourceType.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[_TwitterTimelineWidgetDataSource]
+  inline def UserId(userId: String): typingsJapgolly.twitterForWeb.anon.UserId = {
+    val __obj = js.Dynamic.literal(sourceType = "likes", userId = userId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.UserId]
   }
 }
-

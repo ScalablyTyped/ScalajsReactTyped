@@ -1,19 +1,23 @@
 package typingsJapgolly.openpgp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "eme")
-@js.native
-object eme extends js.Object {
+object eme {
+  
+  @JSImport("openpgp", "eme")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Decode a EME-PKCS1-v1_5 padded message
     * @see
     * @param EM encoded message, an octet string
     * @returns message, an octet string
     */
-  def decode(EM: String): String = js.native
+  inline def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Create a EME-PKCS1-v1_5 padded message
     * @see
@@ -21,6 +25,5 @@ object eme extends js.Object {
     * @param k the length in octets of the key modulus
     * @returns EME-PKCS1 padded message
     */
-  def encode(M: String, k: Integer): js.Promise[String] = js.native
+  inline def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }
-

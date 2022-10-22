@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "ignore" : "3.3.10"
+      "ignore" : "5.2.0"
     }
   ],
   "test-dependencies" : [
     {
-      "ignore" : "3.3.10"
+      "ignore" : "5.2.0"
     }
   ],
   "compile-devDependencies" : [

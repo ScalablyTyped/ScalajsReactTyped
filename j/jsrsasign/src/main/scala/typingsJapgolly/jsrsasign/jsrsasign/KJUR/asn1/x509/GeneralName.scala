@@ -1,8 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GeneralName ASN.1 structure class
@@ -45,11 +47,23 @@ import scala.scalajs.js.annotation._
   * gn = new KJUR.asn1.x509.GeneralName({certissuer: certPEM});
   * gn = new KJUR.asn1.x509.GeneralName({certsubj:   certPEM});
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.GeneralName")
-@js.native
-class GeneralName () extends js.Object {
-  def this(params: GeneralNameParam) = this()
-  def getEncodedHex(): String = js.native
-  def setByParam(params: js.Array[String]): Unit = js.native
+trait GeneralName extends StObject {
+  
+  def getEncodedHex(): String
+  
+  def setByParam(params: js.Array[String]): Unit
 }
-
+object GeneralName {
+  
+  inline def apply(getEncodedHex: CallbackTo[String], setByParam: js.Array[String] => Callback): GeneralName = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, setByParam = js.Any.fromFunction1((t0: js.Array[String]) => setByParam(t0).runNow()))
+    __obj.asInstanceOf[GeneralName]
+  }
+  
+  extension [Self <: GeneralName](x: Self) {
+    
+    inline def setGetEncodedHex(value: CallbackTo[String]): Self = StObject.set(x, "getEncodedHex", value.toJsFn)
+    
+    inline def setSetByParam(value: js.Array[String] => Callback): Self = StObject.set(x, "setByParam", js.Any.fromFunction1((t0: js.Array[String]) => value(t0).runNow()))
+  }
+}

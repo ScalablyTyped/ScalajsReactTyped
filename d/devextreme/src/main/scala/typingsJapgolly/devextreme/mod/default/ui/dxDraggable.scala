@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.DOMComponent
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxDraggableOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxDraggable")
+@JSImport("devextreme", "default.ui.dxDraggable")
 @js.native
-class dxDraggable protected () extends DOMComponent {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxDraggableOptions) = this()
-  def this(element: Element, options: dxDraggableOptions) = this()
-}
-
+open class dxDraggable ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxDraggable

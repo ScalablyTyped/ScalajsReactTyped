@@ -1,14 +1,18 @@
 package typingsJapgolly.reactColor.components
 
-import typingsJapgolly.reactColor.materialMod.default
+import typingsJapgolly.reactColor.libComponentsMaterialMaterialMod.MaterialPickerProps
+import typingsJapgolly.reactColor.libComponentsMaterialMaterialMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Material extends SharedApply_MaterialPickerProps1930692968[default] {
+object Material {
+  
   @JSImport("react-color/lib/components/material/Material", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Material.type): SharedBuilder_MaterialPickerProps_738352354[default] = new SharedBuilder_MaterialPickerProps_738352354[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MaterialPickerProps): SharedBuilder_MaterialPickerProps_738352354[default] = new SharedBuilder_MaterialPickerProps_738352354[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

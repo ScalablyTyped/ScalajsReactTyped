@@ -1,17 +1,19 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.TransitionHookScope")
 @js.native
-object TransitionHookScope extends js.Object {
-  /* 1 */ val STATE: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookScope.STATE with Double = js.native
-  /* 0 */ val TRANSITION: typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookScope.TRANSITION with Double = js.native
+object TransitionHookScope extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionHookScope with Double
+    typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookScope & Double
   ] = js.native
+  
+  /* 1 */ val STATE: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.STATE & Double = js.native
+  
+  /* 0 */ val TRANSITION: typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionHookScope.TRANSITION & Double = js.native
 }
-

@@ -9,9 +9,9 @@ import typingsJapgolly.angular.angularStrings.lowercase
 import typingsJapgolly.angular.angularStrings.number
 import typingsJapgolly.angular.angularStrings.orderBy
 import typingsJapgolly.angular.angularStrings.uppercase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $filter - $filterProvider - service in module ng
@@ -21,7 +21,8 @@ import scala.scalajs.js.annotation._
   * see https://docs.angularjs.org/api/ng/service/$filter
   */
 @js.native
-trait IFilterService extends js.Object {
+trait IFilterService extends StObject {
+  
   def apply(name: currency): IFilterCurrency = js.native
   def apply(name: date): IFilterDate = js.native
   def apply(name: filter): IFilterFilter = js.native
@@ -39,4 +40,3 @@ trait IFilterService extends js.Object {
     */
   def apply[T](name: String): T = js.native
 }
-

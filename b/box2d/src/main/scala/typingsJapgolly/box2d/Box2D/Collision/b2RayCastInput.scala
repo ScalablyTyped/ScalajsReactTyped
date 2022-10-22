@@ -1,33 +1,40 @@
 package typingsJapgolly.box2d.Box2D.Collision
 
 import typingsJapgolly.box2d.Box2D.Common.Math.b2Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Box2D.Collision.b2RayCastInput")
-@js.native
-/**
-		* Creates a new ray cast input.
-		* @param p1 Start point of the ray, default = null.
-		* @param p2 End point of the ray, default = null.
-		* @param maxFraction Truncate the ray to reach up to this fraction from p1 to p2.
-		**/
-class b2RayCastInput () extends js.Object {
-  def this(p1: b2Vec2) = this()
-  def this(p1: b2Vec2, p2: b2Vec2) = this()
-  def this(p1: b2Vec2, p2: b2Vec2, maxFraction: Double) = this()
+trait b2RayCastInput extends StObject {
+  
   /**
-  		* Truncate the ray to reach up to this fraction from p1 to p2
-  		**/
-  var maxFraction: Double = js.native
+    * Truncate the ray to reach up to this fraction from p1 to p2
+    **/
+  var maxFraction: Double
+  
   /**
-  		* The start point of the ray.
-  		**/
-  var p1: b2Vec2 = js.native
+    * The start point of the ray.
+    **/
+  var p1: b2Vec2
+  
   /**
-  		* The end point of the ray.
-  		**/
-  var p2: b2Vec2 = js.native
+    * The end point of the ray.
+    **/
+  var p2: b2Vec2
 }
-
+object b2RayCastInput {
+  
+  inline def apply(maxFraction: Double, p1: b2Vec2, p2: b2Vec2): b2RayCastInput = {
+    val __obj = js.Dynamic.literal(maxFraction = maxFraction.asInstanceOf[js.Any], p1 = p1.asInstanceOf[js.Any], p2 = p2.asInstanceOf[js.Any])
+    __obj.asInstanceOf[b2RayCastInput]
+  }
+  
+  extension [Self <: b2RayCastInput](x: Self) {
+    
+    inline def setMaxFraction(value: Double): Self = StObject.set(x, "maxFraction", value.asInstanceOf[js.Any])
+    
+    inline def setP1(value: b2Vec2): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
+    
+    inline def setP2(value: b2Vec2): Self = StObject.set(x, "p2", value.asInstanceOf[js.Any])
+  }
+}

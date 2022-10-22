@@ -1,66 +1,65 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.nodesMod.PrimarySymbol
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.CloseBracketToken
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.HereKeyword
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.NoKeyword
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
+import typingsJapgolly.grammarkdown.distNodesMod.PrimarySymbol
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.CloseBracketToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.HereKeyword
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.NoKeyword
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.OpenBracketToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "NoSymbolHereAssertion")
 @js.native
-class NoSymbolHereAssertion protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.NoSymbolHereAssertion {
+open class NoSymbolHereAssertion protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.NoSymbolHereAssertion {
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[HereKeyword]
-  ) = this()
-  def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
-    hereKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[HereKeyword]
+    hereKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[HereKeyword]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: js.UndefOr[scala.Nothing],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
+    symbols: Unit,
+    hereKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[HereKeyword]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
-    symbols: js.UndefOr[scala.Nothing],
-    hereKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[HereKeyword],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
-  ) = this()
-  def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
-    hereKeyword: js.UndefOr[scala.Nothing],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    hereKeyword: Unit,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
   def this(
-    openBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[OpenBracketToken],
-    noKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[NoKeyword],
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
     symbols: js.Array[PrimarySymbol],
-    hereKeyword: typingsJapgolly.grammarkdown.nodesMod.Token[HereKeyword],
-    closeBracketToken: typingsJapgolly.grammarkdown.nodesMod.Token[CloseBracketToken]
+    hereKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[HereKeyword],
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
+  ) = this()
+  def this(
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
+    symbols: Unit,
+    hereKeyword: Unit,
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
+  ) = this()
+  def this(
+    openBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[OpenBracketToken],
+    noKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[NoKeyword],
+    symbols: Unit,
+    hereKeyword: typingsJapgolly.grammarkdown.distNodesMod.Token[HereKeyword],
+    closeBracketToken: typingsJapgolly.grammarkdown.distNodesMod.Token[CloseBracketToken]
   ) = this()
 }
-

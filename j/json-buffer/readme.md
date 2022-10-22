@@ -10,10 +10,10 @@ JSON parse & stringify that supports binary via bops & base64
 | ------------------ | :-------------: |
 | Full name          | json-buffer |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 49 |
-| # downloads        | 86201499 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.3222668E7 |
+| # stars            | 40.0 |
 
 ## Links
 - [Homepage](https://github.com/dominictarr/json-buffer)

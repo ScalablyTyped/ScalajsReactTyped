@@ -1,19 +1,29 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentPositionParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.TextDocumentRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.HoverParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.HoverRegistrationOptions
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashhover
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "HoverRequest")
-@js.native
-object HoverRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
-    TextDocumentPositionParams, 
+object HoverRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "HoverRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "HoverRequest.method")
+  @js.native
+  val method: textDocumentSlashhover = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "HoverRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
+    HoverParams, 
     typingsJapgolly.vscodeLanguageserverTypes.mod.Hover | Null, 
+    scala.Nothing, 
     Unit, 
-    TextDocumentRegistrationOptions
+    HoverRegistrationOptions
   ] = js.native
 }
-

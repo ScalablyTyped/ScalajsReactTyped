@@ -1,26 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GamepadEventInit extends EventInit {
-  var gamepad: org.scalajs.dom.experimental.gamepad.Gamepad
+trait GamepadEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var gamepad: org.scalajs.dom.Gamepad
 }
-
 object GamepadEventInit {
-  @scala.inline
-  def apply(
-    gamepad: org.scalajs.dom.experimental.gamepad.Gamepad,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): GamepadEventInit = {
+  
+  inline def apply(gamepad: org.scalajs.dom.Gamepad): GamepadEventInit = {
     val __obj = js.Dynamic.literal(gamepad = gamepad.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[GamepadEventInit]
   }
+  
+  extension [Self <: GamepadEventInit](x: Self) {
+    
+    inline def setGamepad(value: org.scalajs.dom.Gamepad): Self = StObject.set(x, "gamepad", value.asInstanceOf[js.Any])
+  }
 }
-

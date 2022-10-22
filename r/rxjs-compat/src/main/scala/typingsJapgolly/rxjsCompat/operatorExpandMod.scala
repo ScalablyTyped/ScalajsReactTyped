@@ -1,62 +1,41 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.ObservableInput
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/expand", JSImport.Namespace)
-@js.native
-object operatorExpandMod extends js.Object {
-  def expand[T](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
-    ]
-  ): js.Any = js.native
-  def expand[T](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
-    ],
-    concurrent: Double
-  ): js.Any = js.native
-  def expand[T](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<T> */ _
-    ],
+object operatorExpandMod {
+  
+  @JSImport("rxjs-compat/operator/expand", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]]): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def expand[T](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]], concurrent: Double): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  inline def expand[T](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
     concurrent: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSName("expand")
-  def expand_TR[T, R](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
-    ]
-  ): js.Any = js.native
-  @JSName("expand")
-  def expand_TR[T, R](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
-    ],
-    concurrent: Double
-  ): js.Any = js.native
-  @JSName("expand")
-  def expand_TR[T, R](
-    project: js.Function2[
-      /* value */ T, 
-      /* index */ Double, 
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObservableInput<R> */ _
-    ],
+    scheduler: SchedulerLike
+  ): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  inline def expand[T](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[T]],
+    concurrent: Unit,
+    scheduler: SchedulerLike
+  ): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  
+  inline def expand_TR[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]]): Observable_[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any]).asInstanceOf[Observable_[R]]
+  inline def expand_TR[T, R](project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]], concurrent: Double): Observable_[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any])).asInstanceOf[Observable_[R]]
+  inline def expand_TR[T, R](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
     concurrent: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+    scheduler: SchedulerLike
+  ): Observable_[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[R]]
+  inline def expand_TR[T, R](
+    project: js.Function2[/* value */ T, /* index */ Double, ObservableInput[R]],
+    concurrent: Unit,
+    scheduler: SchedulerLike
+  ): Observable_[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("expand")(project.asInstanceOf[js.Any], concurrent.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[R]]
 }
-

@@ -1,26 +1,30 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.ArrayLike
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SunLight extends Object {
+trait SunLight
+  extends StObject
+     with Object {
+  
   /**
     * The ambient light color and intensity.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
     */
   var ambient: ColorAndIntensity
+  
   /**
     * The diffuse light color and intensity.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
     */
   var diffuse: ColorAndIntensity
+  
   /**
     * The incident light direction in render coordinates.
     *
@@ -28,21 +32,26 @@ trait SunLight extends Object {
     */
   var direction: ArrayLike[Double]
 }
-
 object SunLight {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ambient: ColorAndIntensity,
     constructor: js.Function,
     diffuse: ColorAndIntensity,
     direction: ArrayLike[Double],
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SunLight = {
-    val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(ambient = ambient.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], diffuse = diffuse.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SunLight]
   }
+  
+  extension [Self <: SunLight](x: Self) {
+    
+    inline def setAmbient(value: ColorAndIntensity): Self = StObject.set(x, "ambient", value.asInstanceOf[js.Any])
+    
+    inline def setDiffuse(value: ColorAndIntensity): Self = StObject.set(x, "diffuse", value.asInstanceOf[js.Any])
+    
+    inline def setDirection(value: ArrayLike[Double]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+  }
 }
-

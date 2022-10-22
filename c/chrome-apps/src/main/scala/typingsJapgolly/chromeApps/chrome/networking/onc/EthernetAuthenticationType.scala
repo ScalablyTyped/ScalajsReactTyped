@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.None
   - typingsJapgolly.chromeApps.chromeAppsStrings.`8021X`
 */
-trait EthernetAuthenticationType extends js.Object
-
+trait EthernetAuthenticationType extends StObject
 object EthernetAuthenticationType {
-  @scala.inline
-  def `8021X`: typingsJapgolly.chromeApps.chromeAppsStrings.`8021X` = this.cast("8021X")
-  @scala.inline
-  def None: typingsJapgolly.chromeApps.chromeAppsStrings.None = this.cast("None")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `8021X`: typingsJapgolly.chromeApps.chromeAppsStrings.`8021X` = "8021X".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.`8021X`]
+  
+  inline def None: typingsJapgolly.chromeApps.chromeAppsStrings.None = "None".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.None]
 }
-

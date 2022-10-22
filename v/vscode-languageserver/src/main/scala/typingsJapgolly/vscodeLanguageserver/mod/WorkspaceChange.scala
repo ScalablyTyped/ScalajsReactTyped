@@ -1,13 +1,12 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver", "WorkspaceChange")
 @js.native
-class WorkspaceChange ()
+open class WorkspaceChange ()
   extends typingsJapgolly.vscodeLanguageserverProtocol.mod.WorkspaceChange {
   def this(workspaceEdit: typingsJapgolly.vscodeLanguageserverTypes.mod.WorkspaceEdit) = this()
 }
-

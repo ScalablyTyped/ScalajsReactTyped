@@ -1,41 +1,32 @@
 package typingsJapgolly.chromecastCafSender.cast.framework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CastState extends js.Object
-
+sealed trait CastState extends StObject
 @JSGlobal("cast.framework.CastState")
 @js.native
-object CastState extends js.Object {
-  @js.native
-  sealed trait CONNECTED extends CastState
+object CastState extends StObject {
   
   @js.native
-  sealed trait CONNECTING extends CastState
+  sealed trait CONNECTED
+    extends StObject
+       with CastState
   
   @js.native
-  sealed trait NOT_CONNECTED extends CastState
+  sealed trait CONNECTING
+    extends StObject
+       with CastState
   
   @js.native
-  sealed trait NO_DEVICES_AVAILABLE extends CastState
+  sealed trait NOT_CONNECTED
+    extends StObject
+       with CastState
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CastState with String] = js.native
-  /* "CONNECTED" */ @js.native
-  object CONNECTED extends TopLevel[CONNECTED with String]
-  
-  /* "CONNECTING" */ @js.native
-  object CONNECTING extends TopLevel[CONNECTING with String]
-  
-  /* "NOT_CONNECTED" */ @js.native
-  object NOT_CONNECTED extends TopLevel[NOT_CONNECTED with String]
-  
-  /* "NO_DEVICES_AVAILABLE" */ @js.native
-  object NO_DEVICES_AVAILABLE extends TopLevel[NO_DEVICES_AVAILABLE with String]
-  
+  @js.native
+  sealed trait NO_DEVICES_AVAILABLE
+    extends StObject
+       with CastState
 }
-

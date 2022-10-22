@@ -1,17 +1,19 @@
 package typingsJapgolly.knockoutValidation
 
-import typingsJapgolly.knockout.KnockoutObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KnockoutStatic extends js.Object {
+trait KnockoutStatic extends StObject {
+  
+  def applyBindingsWithValidation(viewModel: Any): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Any): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Any, options: KnockoutValidationConfiguration): Unit = js.native
+  def applyBindingsWithValidation(viewModel: Any, rootNode: Unit, options: KnockoutValidationConfiguration): Unit = js.native
+  
+  def validatedObservable[T](): Any = js.native
+  def validatedObservable[T](initialValue: T): Any = js.native
+  
   var validation: KnockoutValidationStatic = js.native
-  def applyBindingsWithValidation(viewModel: js.Any): Unit = js.native
-  def applyBindingsWithValidation(viewModel: js.Any, rootNode: js.Any): Unit = js.native
-  def applyBindingsWithValidation(viewModel: js.Any, rootNode: js.Any, options: KnockoutValidationConfiguration): Unit = js.native
-  def validatedObservable[T](): KnockoutObservable[T] = js.native
-  def validatedObservable[T](initialValue: T): KnockoutObservable[T] = js.native
 }
-

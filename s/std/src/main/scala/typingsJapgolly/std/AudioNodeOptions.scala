@@ -1,27 +1,39 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AudioNodeOptions extends js.Object {
+trait AudioNodeOptions extends StObject {
+  
+  /* standard dom */
   var channelCount: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var channelCountMode: js.UndefOr[ChannelCountMode] = js.undefined
+  
+  /* standard dom */
   var channelInterpretation: js.UndefOr[ChannelInterpretation] = js.undefined
 }
-
 object AudioNodeOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null
-  ): AudioNodeOptions = {
+  
+  inline def apply(): AudioNodeOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AudioNodeOptions]
   }
+  
+  extension [Self <: AudioNodeOptions](x: Self) {
+    
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCountMode(value: ChannelCountMode): Self = StObject.set(x, "channelCountMode", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCountModeUndefined: Self = StObject.set(x, "channelCountMode", js.undefined)
+    
+    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+    
+    inline def setChannelInterpretation(value: ChannelInterpretation): Self = StObject.set(x, "channelInterpretation", value.asInstanceOf[js.Any])
+    
+    inline def setChannelInterpretationUndefined: Self = StObject.set(x, "channelInterpretation", js.undefined)
+  }
 }
-

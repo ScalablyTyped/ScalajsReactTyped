@@ -1,26 +1,46 @@
 package typingsJapgolly.webix.webix
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseEvents extends js.Object {
+trait MouseEvents extends StObject {
+  
+  def on_click(args: Any*): Any
   @JSName("on_click")
-  var on_click_Original: WebixCallback = js.native
-  var on_context: StringDictionary[js.Any] = js.native
+  var on_click_Original: WebixCallback
+  
+  var on_context: StringDictionary[Any]
+  
+  def on_dblclick(args: Any*): Any
   @JSName("on_dblclick")
-  var on_dblclick_Original: WebixCallback = js.native
+  var on_dblclick_Original: WebixCallback
+  
+  def on_mouse_move(args: Any*): Any
   @JSName("on_mouse_move")
-  var on_mouse_move_Original: WebixCallback = js.native
-  def on_click(args: js.Any*): js.Any = js.native
-  def on_dblclick(args: js.Any*): js.Any = js.native
-  def on_mouse_move(args: js.Any*): js.Any = js.native
+  var on_mouse_move_Original: WebixCallback
 }
-
-@JSGlobal("webix.MouseEvents")
-@js.native
-object MouseEvents extends TopLevel[MouseEvents]
-
+object MouseEvents {
+  
+  inline def apply(
+    on_click: WebixCallback,
+    on_context: StringDictionary[Any],
+    on_dblclick: WebixCallback,
+    on_mouse_move: WebixCallback
+  ): MouseEvents = {
+    val __obj = js.Dynamic.literal(on_click = on_click.asInstanceOf[js.Any], on_context = on_context.asInstanceOf[js.Any], on_dblclick = on_dblclick.asInstanceOf[js.Any], on_mouse_move = on_mouse_move.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseEvents]
+  }
+  
+  extension [Self <: MouseEvents](x: Self) {
+    
+    inline def setOn_click(value: WebixCallback): Self = StObject.set(x, "on_click", value.asInstanceOf[js.Any])
+    
+    inline def setOn_context(value: StringDictionary[Any]): Self = StObject.set(x, "on_context", value.asInstanceOf[js.Any])
+    
+    inline def setOn_dblclick(value: WebixCallback): Self = StObject.set(x, "on_dblclick", value.asInstanceOf[js.Any])
+    
+    inline def setOn_mouse_move(value: WebixCallback): Self = StObject.set(x, "on_mouse_move", value.asInstanceOf[js.Any])
+  }
+}

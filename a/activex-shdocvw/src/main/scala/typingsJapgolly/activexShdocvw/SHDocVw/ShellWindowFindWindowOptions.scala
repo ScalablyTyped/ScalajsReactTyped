@@ -1,29 +1,25 @@
 package typingsJapgolly.activexShdocvw.SHDocVw
 
-import typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`1`
-import typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`2`
-import typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`4`
+import typingsJapgolly.activexShdocvw.activexShdocvwInts.`1`
+import typingsJapgolly.activexShdocvw.activexShdocvwInts.`2`
+import typingsJapgolly.activexShdocvw.activexShdocvwInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Options for ShellWindows FindWindow */
-// tslint:disable-next-line no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`4`
-  - typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`2`
-  - typingsJapgolly.activexShdocvw.activexShdocvwNumbers.`1`
+  - typingsJapgolly.activexShdocvw.activexShdocvwInts.`4`
+  - typingsJapgolly.activexShdocvw.activexShdocvwInts.`2`
+  - typingsJapgolly.activexShdocvw.activexShdocvwInts.`1`
 */
-trait ShellWindowFindWindowOptions extends js.Object
-
+trait ShellWindowFindWindowOptions extends StObject
 object ShellWindowFindWindowOptions {
-  @scala.inline
-  def SWFO_COOKIEPASSED: `4` = this.cast(4)
-  @scala.inline
-  def SWFO_INCLUDEPENDING: `2` = this.cast(2)
-  @scala.inline
-  def SWFO_NEEDDISPATCH: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def SWFO_COOKIEPASSED: `4` = 4.asInstanceOf[`4`]
+  
+  inline def SWFO_INCLUDEPENDING: `2` = 2.asInstanceOf[`2`]
+  
+  inline def SWFO_NEEDDISPATCH: `1` = 1.asInstanceOf[`1`]
 }
-

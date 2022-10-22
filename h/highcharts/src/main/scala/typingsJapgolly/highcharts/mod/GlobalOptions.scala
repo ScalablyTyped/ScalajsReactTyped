@@ -1,23 +1,28 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlobalOptions extends js.Object {
+trait GlobalOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path to the pattern image
     * required by VML browsers in order to draw radial gradients.
     */
   var VMLRadialGradientURL: js.UndefOr[String] = js.undefined
 }
-
 object GlobalOptions {
-  @scala.inline
-  def apply(VMLRadialGradientURL: String = null): GlobalOptions = {
+  
+  inline def apply(): GlobalOptions = {
     val __obj = js.Dynamic.literal()
-    if (VMLRadialGradientURL != null) __obj.updateDynamic("VMLRadialGradientURL")(VMLRadialGradientURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlobalOptions]
   }
+  
+  extension [Self <: GlobalOptions](x: Self) {
+    
+    inline def setVMLRadialGradientURL(value: String): Self = StObject.set(x, "VMLRadialGradientURL", value.asInstanceOf[js.Any])
+    
+    inline def setVMLRadialGradientURLUndefined: Self = StObject.set(x, "VMLRadialGradientURL", js.undefined)
+  }
 }
-

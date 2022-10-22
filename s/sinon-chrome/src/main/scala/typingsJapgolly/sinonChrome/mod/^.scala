@@ -1,14 +1,9 @@
 package typingsJapgolly.sinonChrome.mod
 
-import typingsJapgolly.sinon.mod.SinonSpy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sinon-chrome", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var csi: SinonSpy = js.native
-  var loadTimes: SinonSpy = js.native
-}
-
+object ^ extends StObject

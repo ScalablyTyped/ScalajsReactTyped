@@ -1,22 +1,21 @@
 package typingsJapgolly.azureArmResource.mod
 
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "ManagementGroupsModels")
-@js.native
-object ManagementGroupsModels extends js.Object {
-  @js.native
-  class BaseResource ()
-    extends typingsJapgolly.msRestAzure.mod.BaseResource
+object ManagementGroupsModels {
   
+  @JSImport("azure-arm-resource", "ManagementGroupsModels.BaseResource")
   @js.native
-  class CloudError protected ()
-    extends typingsJapgolly.azureArmResource.managementModelsMod.CloudError {
+  open class BaseResource ()
+    extends typingsJapgolly.azureArmResource.libManagementModelsMod.BaseResource
+  
+  @JSImport("azure-arm-resource", "ManagementGroupsModels.CloudError")
+  @js.native
+  open class CloudError protected ()
+    extends typingsJapgolly.azureArmResource.libManagementModelsMod.CloudError {
     def this(parameters: CloudErrorParameters) = this()
   }
-  
 }
-

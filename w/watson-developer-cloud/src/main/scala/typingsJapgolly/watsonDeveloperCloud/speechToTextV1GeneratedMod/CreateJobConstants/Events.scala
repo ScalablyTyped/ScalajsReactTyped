@@ -1,42 +1,40 @@
 package typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Events extends js.Object
-
+sealed trait Events extends StObject
 /** If the job includes a callback URL, a comma-separated list of notification events to which to subscribe. Valid events are * `recognitions.started` generates a callback notification when the service begins to process the job. * `recognitions.completed` generates a callback notification when the job is complete. You must use the **Check a job** method to retrieve the results before they time out or are deleted. * `recognitions.completed_with_results` generates a callback notification when the job is complete. The notification includes the results of the request. * `recognitions.failed` generates a callback notification if the service experiences an error while processing the job. The `recognitions.completed` and `recognitions.completed_with_results` events are incompatible. You can specify only of the two events. If the job includes a callback URL, omit the parameter to subscribe to the default events: `recognitions.started`, `recognitions.completed`, and `recognitions.failed`. If the job does not include a callback URL, omit the parameter. */
 @JSImport("watson-developer-cloud/speech-to-text/v1-generated", "CreateJobConstants.Events")
 @js.native
-object Events extends js.Object {
-  @js.native
-  sealed trait RECOGNITIONS_COMPLETED extends Events
-  
-  @js.native
-  sealed trait RECOGNITIONS_COMPLETED_WITH_RESULTS extends Events
-  
-  @js.native
-  sealed trait RECOGNITIONS_FAILED extends Events
-  
-  @js.native
-  sealed trait RECOGNITIONS_STARTED extends Events
+object Events extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Events with String] = js.native
-  /* "recognitions.completed" */ @js.native
-  object RECOGNITIONS_COMPLETED extends TopLevel[RECOGNITIONS_COMPLETED with String]
+  def apply(value: String): js.UndefOr[Events & String] = js.native
   
-  /* "recognitions.completed_with_results" */ @js.native
-  object RECOGNITIONS_COMPLETED_WITH_RESULTS extends TopLevel[RECOGNITIONS_COMPLETED_WITH_RESULTS with String]
+  @js.native
+  sealed trait RECOGNITIONS_COMPLETED
+    extends StObject
+       with Events
+  /* "recognitions.completed" */ val RECOGNITIONS_COMPLETED: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED & String = js.native
   
-  /* "recognitions.failed" */ @js.native
-  object RECOGNITIONS_FAILED extends TopLevel[RECOGNITIONS_FAILED with String]
+  @js.native
+  sealed trait RECOGNITIONS_COMPLETED_WITH_RESULTS
+    extends StObject
+       with Events
+  /* "recognitions.completed_with_results" */ val RECOGNITIONS_COMPLETED_WITH_RESULTS: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_COMPLETED_WITH_RESULTS & String = js.native
   
-  /* "recognitions.started" */ @js.native
-  object RECOGNITIONS_STARTED extends TopLevel[RECOGNITIONS_STARTED with String]
+  @js.native
+  sealed trait RECOGNITIONS_FAILED
+    extends StObject
+       with Events
+  /* "recognitions.failed" */ val RECOGNITIONS_FAILED: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_FAILED & String = js.native
   
+  @js.native
+  sealed trait RECOGNITIONS_STARTED
+    extends StObject
+       with Events
+  /* "recognitions.started" */ val RECOGNITIONS_STARTED: typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod.CreateJobConstants.Events.RECOGNITIONS_STARTED & String = js.native
 }
-

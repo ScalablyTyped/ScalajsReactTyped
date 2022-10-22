@@ -1,14 +1,13 @@
-package typingsJapgolly.kafkaNode
+package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.NumberDictionary
+import typingsJapgolly.kafkaNode.anon.Host
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type BrokerMetadataResponse = org.scalablytyped.runtime.NumberDictionary[typingsJapgolly.kafkaNode.AnonHost]
-  type CustomPartitioner = js.Function2[
-    /* partitions */ js.Array[scala.Double], 
-    /* key */ java.lang.String | typingsJapgolly.node.Buffer, 
-    scala.Double
-  ]
-}
+
+type BrokerMetadataResponse = NumberDictionary[Host]
+
+type CustomPartitioner = js.Function2[/* partitions */ js.Array[Double], /* key */ String | Buffer, Double]

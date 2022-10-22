@@ -1,31 +1,26 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.MaskedTextBox")
 @js.native
-class MaskedTextBox protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: MaskedTextBoxOptions) = this()
+trait MaskedTextBox
+  extends StObject
+     with Widget {
+  
+  def enable(enable: Boolean): Unit = js.native
+  
   @JSName("options")
   var options_MaskedTextBox: MaskedTextBoxOptions = js.native
-  var wrapper: JQuery = js.native
-  def enable(enable: Boolean): Unit = js.native
+  
   def raw(): String = js.native
+  
   def readonly(readonly: Boolean): Unit = js.native
+  
   def value(): String = js.native
   def value(value: String): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.MaskedTextBox")
-@js.native
-object MaskedTextBox extends js.Object {
-  var fn: MaskedTextBox = js.native
-  def extend(proto: js.Object): MaskedTextBox = js.native
-}
-

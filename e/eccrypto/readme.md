@@ -11,9 +11,9 @@ JavaScript Elliptic curve cryptography library
 | Full name          | eccrypto |
 | Keywords           | ecc, ecdsa, ecdh, ecies, crypto, cryptography, secp256k1, K-256, elliptic, curve |
 | # releases         | 4 |
-| # dependents       | 43 |
-| # downloads        | 120412 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 69467.0 |
+| # stars            | 249.0 |
 
 ## Links
 - [Homepage](https://github.com/bitchan/eccrypto)

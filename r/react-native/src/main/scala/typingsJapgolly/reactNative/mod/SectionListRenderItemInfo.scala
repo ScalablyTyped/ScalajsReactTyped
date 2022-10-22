@@ -1,20 +1,25 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.AnonHighlight
+import typingsJapgolly.reactNative.anon.Highlight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SectionListRenderItemInfo[ItemT] extends ListRenderItemInfo[ItemT] {
-  var section: SectionListData[ItemT]
-}
-
-object SectionListRenderItemInfo {
-  @scala.inline
-  def apply[ItemT](index: Double, item: ItemT, section: SectionListData[ItemT], separators: AnonHighlight): SectionListRenderItemInfo[ItemT] = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
+trait SectionListRenderItemInfo[ItemT, SectionT]
+  extends StObject
+     with ListRenderItemInfo[ItemT] {
   
-    __obj.asInstanceOf[SectionListRenderItemInfo[ItemT]]
+  var section: SectionListData[ItemT, SectionT]
+}
+object SectionListRenderItemInfo {
+  
+  inline def apply[ItemT, SectionT](index: Double, item: ItemT, section: SectionListData[ItemT, SectionT], separators: Highlight): SectionListRenderItemInfo[ItemT, SectionT] = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], section = section.asInstanceOf[js.Any], separators = separators.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SectionListRenderItemInfo[ItemT, SectionT]]
+  }
+  
+  extension [Self <: SectionListRenderItemInfo[?, ?], ItemT, SectionT](x: Self & (SectionListRenderItemInfo[ItemT, SectionT])) {
+    
+    inline def setSection(value: SectionListData[ItemT, SectionT]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
   }
 }
-

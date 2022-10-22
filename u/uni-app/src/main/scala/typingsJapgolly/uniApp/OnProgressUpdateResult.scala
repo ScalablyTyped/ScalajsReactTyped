@@ -1,36 +1,45 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnProgressUpdateResult extends js.Object {
+trait OnProgressUpdateResult extends StObject {
+  
   /**
     * 上传进度百分比
     */
   var progress: js.UndefOr[Double] = js.undefined
+  
   /**
     * 预期需要上传的数据总长度，单位 Bytes
     */
   var totalBytesExpectedToSend: js.UndefOr[Double] = js.undefined
+  
   /**
     * 已经上传的数据长度，单位 Bytes
     */
   var totalBytesSent: js.UndefOr[Double] = js.undefined
 }
-
 object OnProgressUpdateResult {
-  @scala.inline
-  def apply(
-    progress: Int | Double = null,
-    totalBytesExpectedToSend: Int | Double = null,
-    totalBytesSent: Int | Double = null
-  ): OnProgressUpdateResult = {
+  
+  inline def apply(): OnProgressUpdateResult = {
     val __obj = js.Dynamic.literal()
-    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
-    if (totalBytesExpectedToSend != null) __obj.updateDynamic("totalBytesExpectedToSend")(totalBytesExpectedToSend.asInstanceOf[js.Any])
-    if (totalBytesSent != null) __obj.updateDynamic("totalBytesSent")(totalBytesSent.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnProgressUpdateResult]
   }
+  
+  extension [Self <: OnProgressUpdateResult](x: Self) {
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    
+    inline def setTotalBytesExpectedToSend(value: Double): Self = StObject.set(x, "totalBytesExpectedToSend", value.asInstanceOf[js.Any])
+    
+    inline def setTotalBytesExpectedToSendUndefined: Self = StObject.set(x, "totalBytesExpectedToSend", js.undefined)
+    
+    inline def setTotalBytesSent(value: Double): Self = StObject.set(x, "totalBytesSent", value.asInstanceOf[js.Any])
+    
+    inline def setTotalBytesSentUndefined: Self = StObject.set(x, "totalBytesSent", js.undefined)
+  }
 }
-

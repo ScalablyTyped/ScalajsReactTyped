@@ -1,40 +1,39 @@
 package typingsJapgolly.markJs
 
 import typingsJapgolly.markJs.mod.MarkAccuracy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markJsStrings {
-  @js.native
-  sealed trait complementary extends MarkAccuracy
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait complementary
+    extends StObject
+       with MarkAccuracy
+  inline def complementary: complementary = "complementary".asInstanceOf[complementary]
   
   @js.native
-  sealed trait enabled extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait exactly extends MarkAccuracy
+  sealed trait enabled extends StObject
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
-  sealed trait partially extends MarkAccuracy
+  sealed trait exactly
+    extends StObject
+       with MarkAccuracy
+  inline def exactly: exactly = "exactly".asInstanceOf[exactly]
   
   @js.native
-  sealed trait withSpaces extends js.Object
+  sealed trait partially
+    extends StObject
+       with MarkAccuracy
+  inline def partially: partially = "partially".asInstanceOf[partially]
   
-  @scala.inline
-  def complementary: complementary = "complementary".asInstanceOf[complementary]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def enabled: enabled = "enabled".asInstanceOf[enabled]
-  @scala.inline
-  def exactly: exactly = "exactly".asInstanceOf[exactly]
-  @scala.inline
-  def partially: partially = "partially".asInstanceOf[partially]
-  @scala.inline
-  def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
+  @js.native
+  sealed trait withSpaces extends StObject
+  inline def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
 }
-

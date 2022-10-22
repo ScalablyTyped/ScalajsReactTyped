@@ -1,24 +1,20 @@
 package typingsJapgolly.opentok.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.opentok.opentokStrings.subscriber
   - typingsJapgolly.opentok.opentokStrings.publisher
   - typingsJapgolly.opentok.opentokStrings.moderator
 */
-trait Role extends js.Object
-
+trait Role extends StObject
 object Role {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def moderator: typingsJapgolly.opentok.opentokStrings.moderator = this.cast("moderator")
-  @scala.inline
-  def publisher: typingsJapgolly.opentok.opentokStrings.publisher = this.cast("publisher")
-  @scala.inline
-  def subscriber: typingsJapgolly.opentok.opentokStrings.subscriber = this.cast("subscriber")
+  
+  inline def moderator: typingsJapgolly.opentok.opentokStrings.moderator = "moderator".asInstanceOf[typingsJapgolly.opentok.opentokStrings.moderator]
+  
+  inline def publisher: typingsJapgolly.opentok.opentokStrings.publisher = "publisher".asInstanceOf[typingsJapgolly.opentok.opentokStrings.publisher]
+  
+  inline def subscriber: typingsJapgolly.opentok.opentokStrings.subscriber = "subscriber".asInstanceOf[typingsJapgolly.opentok.opentokStrings.subscriber]
 }
-

@@ -1,141 +1,181 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.drawer
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.floating
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExpandProperties extends WidgetProperties {
+trait ExpandProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
     * Automatically collapses the expand widget instance when the view's viewpoint updates.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#autoCollapse)
     */
   var autoCollapse: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When true, the Expand widget will close after the Escape key is pressed when the keyboard focus is within its content.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#closeOnEsc)
+    */
+  var closeOnEsc: js.UndefOr[Boolean | js.Function] = js.undefined
+  
   /**
     * Icon font used to style the Expand button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseIconClass)
     */
   var collapseIconClass: js.UndefOr[String] = js.undefined
+  
   /**
     * Tooltip to display to indicate Expand widget can be collapsed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
-    *
     * @default "Collapse" (English locale)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#collapseTooltip)
     */
   var collapseTooltip: js.UndefOr[String] = js.undefined
+  
   /**
     * The content to display within the expanded Expand widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content)
     */
   var content: js.UndefOr[Node | String | WidgetProperties] = js.undefined
+  
   /**
-    * Icon font used to style the Expand button. Will automatically use the [content's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#content) iconClass if it has one.
+    * Icon font used to style the Expand button.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandIconClass)
     */
   var expandIconClass: js.UndefOr[String] = js.undefined
+  
   /**
     * Tooltip to display to indicate Expand widget can be expanded.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
-    *
     * @default "Expand" (English locale)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expandTooltip)
     */
   var expandTooltip: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates whether the widget is currently expanded or not.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#expanded)
     */
   var expanded: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * This value associates two or more Expand widget instances with each other, allowing one instance to auto collapse when another instance in the same group is expanded. For auto collapsing to take effect, all instances of the group must be included in the [view.ui](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#ui).  For example, if you place multiple Expand instances in the top-left of the view's ui, you can assign them to a group called `top-left`. If one Expand instance is expanded and the user clicks on a different instance in the `top-left` group, then the first instance is collapsed, allowing the content of the second instance to be fully visible.
+    * This value associates two or more Expand widget instances with each other, allowing one instance to auto collapse when another instance in the same group is expanded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#group)
     */
   var group: js.UndefOr[String] = js.undefined
+  
   /**
-    * A number to display at the corner of the widget to indicate the number of, for example, open issues or unread notices.  ![expand widget icon number](https://developers.arcgis.com/javascript/assets/img/apiref/widgets/expand-with-iconnumber.png)
+    * A number to display at the corner of the widget to indicate the number of, for example, open issues or unread notices.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#iconNumber)
     */
   var iconNumber: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The mode in which the widget displays. These modes are listed below.
-    *
-    * mode | description
-    * ---------------|------------
-    * auto | This is the default mode. It is responsive to browser size changes and will update based on whether the widget is viewed in a desktop or mobile application.
-    * floating | Use this mode if you wish to always display the widget as floating regardless of browser size.
-    * drawer | Use this mode if you wish to always display the widget in a panel regardless of browser size.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
+    * The mode in which the widget displays.
     *
     * @default "auto"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#mode)
     */
-  var mode: js.UndefOr[String] = js.undefined
+  var mode: js.UndefOr[auto | floating | drawer] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [ExpandViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand-ExpandViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Expand.html#viewModel)
     */
   var viewModel: js.UndefOr[ExpandViewModelProperties] = js.undefined
 }
-
 object ExpandProperties {
-  @scala.inline
-  def apply(
-    autoCollapse: js.UndefOr[Boolean] = js.undefined,
-    collapseIconClass: String = null,
-    collapseTooltip: String = null,
-    container: String | HTMLElement = null,
-    content: Node | String | WidgetProperties = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    expandIconClass: String = null,
-    expandTooltip: String = null,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    group: String = null,
-    iconNumber: Int | Double = null,
-    id: String = null,
-    label: String = null,
-    mode: String = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: ExpandViewModelProperties = null
-  ): ExpandProperties = {
+  
+  inline def apply(): ExpandProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoCollapse)) __obj.updateDynamic("autoCollapse")(autoCollapse.asInstanceOf[js.Any])
-    if (collapseIconClass != null) __obj.updateDynamic("collapseIconClass")(collapseIconClass.asInstanceOf[js.Any])
-    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (expandIconClass != null) __obj.updateDynamic("expandIconClass")(expandIconClass.asInstanceOf[js.Any])
-    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (iconNumber != null) __obj.updateDynamic("iconNumber")(iconNumber.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandProperties]
   }
+  
+  extension [Self <: ExpandProperties](x: Self) {
+    
+    inline def setAutoCollapse(value: Boolean): Self = StObject.set(x, "autoCollapse", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCollapseUndefined: Self = StObject.set(x, "autoCollapse", js.undefined)
+    
+    inline def setCloseOnEsc(value: Boolean | js.Function): Self = StObject.set(x, "closeOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnEscUndefined: Self = StObject.set(x, "closeOnEsc", js.undefined)
+    
+    inline def setCollapseIconClass(value: String): Self = StObject.set(x, "collapseIconClass", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseIconClassUndefined: Self = StObject.set(x, "collapseIconClass", js.undefined)
+    
+    inline def setCollapseTooltip(value: String): Self = StObject.set(x, "collapseTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseTooltipUndefined: Self = StObject.set(x, "collapseTooltip", js.undefined)
+    
+    inline def setContent(value: Node | String | WidgetProperties): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setExpandIconClass(value: String): Self = StObject.set(x, "expandIconClass", value.asInstanceOf[js.Any])
+    
+    inline def setExpandIconClassUndefined: Self = StObject.set(x, "expandIconClass", js.undefined)
+    
+    inline def setExpandTooltip(value: String): Self = StObject.set(x, "expandTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setExpandTooltipUndefined: Self = StObject.set(x, "expandTooltip", js.undefined)
+    
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setIconNumber(value: Double): Self = StObject.set(x, "iconNumber", value.asInstanceOf[js.Any])
+    
+    inline def setIconNumberUndefined: Self = StObject.set(x, "iconNumber", js.undefined)
+    
+    inline def setMode(value: auto | floating | drawer): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: ExpandViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

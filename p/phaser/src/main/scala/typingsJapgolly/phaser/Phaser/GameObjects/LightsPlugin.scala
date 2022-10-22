@@ -2,9 +2,9 @@ package typingsJapgolly.phaser.Phaser.GameObjects
 
 import typingsJapgolly.phaser.Phaser.Scene
 import typingsJapgolly.phaser.Phaser.Scenes.Systems
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Scene plugin that provides a {@link Phaser.GameObjects.LightsManager} for the Light2D pipeline.
@@ -26,26 +26,26 @@ import scala.scalajs.js.annotation._
   * ```javascript
   * sprite.setPipeline('Light2D');
   * ```
+  * 
+  * Note that you cannot use this pipeline on Graphics Game Objects or Shape Game Objects.
   */
-@JSGlobal("Phaser.GameObjects.LightsPlugin")
 @js.native
-class LightsPlugin protected () extends LightsManager {
-  /**
-    * 
-    * @param scene The Scene that this Lights Plugin belongs to.
-    */
-  def this(scene: Scene) = this()
-  /**
-    * A reference to the Scene that this Lights Plugin belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene's systems.
-    */
-  var systems: Systems = js.native
+trait LightsPlugin
+  extends StObject
+     with LightsManager {
+  
   /**
     * Boot the Lights Plugin.
     */
   def boot(): Unit = js.native
+  
+  /**
+    * A reference to the Scene that this Lights Plugin belongs to.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * A reference to the Scene's systems.
+    */
+  var systems: Systems = js.native
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.opentypeJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Point extends js.Object {
+trait Point extends StObject {
+  
   var lastPointOfContour: js.UndefOr[Boolean] = js.undefined
 }
-
 object Point {
-  @scala.inline
-  def apply(lastPointOfContour: js.UndefOr[Boolean] = js.undefined): Point = {
+  
+  inline def apply(): Point = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(lastPointOfContour)) __obj.updateDynamic("lastPointOfContour")(lastPointOfContour.asInstanceOf[js.Any])
     __obj.asInstanceOf[Point]
   }
+  
+  extension [Self <: Point](x: Self) {
+    
+    inline def setLastPointOfContour(value: Boolean): Self = StObject.set(x, "lastPointOfContour", value.asInstanceOf[js.Any])
+    
+    inline def setLastPointOfContourUndefined: Self = StObject.set(x, "lastPointOfContour", js.undefined)
+  }
 }
-

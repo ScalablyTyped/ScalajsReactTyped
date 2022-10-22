@@ -1,28 +1,34 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.sharepoint.AnonBottom
+import typingsJapgolly.sharepoint.anon.Bottom
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IEditActorCellContext extends js.Object {
-  var cellExpandSpace: AnonBottom
+trait IEditActorCellContext extends StObject {
+  
+  def SetCurrentValue(value: Any): Unit
+  
+  var cellExpandSpace: Bottom
+  
   var column: ColumnInfo
+  
   var field: GridField
+  
   var fieldKey: String
+  
   var originalValue: IValue
+  
   var propType: IPropertyType
+  
   var record: IRecord
-  def SetCurrentValue(value: js.Any): Unit
 }
-
 object IEditActorCellContext {
-  @scala.inline
-  def apply(
-    SetCurrentValue: js.Any => Callback,
-    cellExpandSpace: AnonBottom,
+  
+  inline def apply(
+    SetCurrentValue: Any => Callback,
+    cellExpandSpace: Bottom,
     column: ColumnInfo,
     field: GridField,
     fieldKey: String,
@@ -30,9 +36,26 @@ object IEditActorCellContext {
     propType: IPropertyType,
     record: IRecord
   ): IEditActorCellContext = {
-    val __obj = js.Dynamic.literal(cellExpandSpace = cellExpandSpace.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
-    __obj.updateDynamic("SetCurrentValue")(js.Any.fromFunction1((t0: js.Any) => SetCurrentValue(t0).runNow()))
+    val __obj = js.Dynamic.literal(SetCurrentValue = js.Any.fromFunction1((t0: Any) => SetCurrentValue(t0).runNow()), cellExpandSpace = cellExpandSpace.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], fieldKey = fieldKey.asInstanceOf[js.Any], originalValue = originalValue.asInstanceOf[js.Any], propType = propType.asInstanceOf[js.Any], record = record.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditActorCellContext]
   }
+  
+  extension [Self <: IEditActorCellContext](x: Self) {
+    
+    inline def setCellExpandSpace(value: Bottom): Self = StObject.set(x, "cellExpandSpace", value.asInstanceOf[js.Any])
+    
+    inline def setColumn(value: ColumnInfo): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setField(value: GridField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldKey(value: String): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalValue(value: IValue): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    
+    inline def setPropType(value: IPropertyType): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
+    
+    inline def setRecord(value: IRecord): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    
+    inline def setSetCurrentValue(value: Any => Callback): Self = StObject.set(x, "SetCurrentValue", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

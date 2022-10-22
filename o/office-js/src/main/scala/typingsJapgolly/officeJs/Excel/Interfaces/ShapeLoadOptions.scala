@@ -1,201 +1,353 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a generic shape object in the worksheet. A shape could be a geometric shape, a line, a group of shapes, etc.
   To learn more about the shape object model, read {@link https://docs.microsoft.com/office/dev/add-ins/excel/excel-add-ins-shapes | Work with shapes using the Excel JavaScript API}.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait ShapeLoadOptions extends js.Object {
+trait ShapeLoadOptions extends StObject {
+  
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the alternative description text for a `Shape` object.
     *
-    * Returns or sets the alternative description text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var altTextDescription: js.UndefOr[Boolean] = js.native
+  var altTextDescription: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the alternative title text for a `Shape` object.
     *
-    * Returns or sets the alternative title text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var altTextTitle: js.UndefOr[Boolean] = js.native
+  var altTextTitle: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Returns the number of connection sites on this shape.
     *
-    * Returns the number of connection sites on this shape. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var connectionSiteCount: js.UndefOr[Boolean] = js.native
+  var connectionSiteCount: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Gets the display name of the shape. A newly created shape has a generated name
+    that is localized and may not match its `name`. In this scenario, you can use
+    this API to get the name that is displayed in the UI.
     *
+    * @remarks
+    * [Api set: ExcelApi 1.15]
+    */
+  var displayName: js.UndefOr[Boolean] = js.undefined
+  
+  /**
     * Returns the fill formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[ShapeFillLoadOptions] = js.native
+  var fill: js.UndefOr[ShapeFillLoadOptions] = js.undefined
+  
   /**
-    *
     * Returns the geometric shape associated with the shape. An error will be thrown if the shape type is not "GeometricShape".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.native
+  var geometricShape: js.UndefOr[GeometricShapeLoadOptions] = js.undefined
+  
   /**
+    * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
     *
-    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var geometricShapeType: js.UndefOr[Boolean] = js.native
+  var geometricShapeType: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Returns the shape group associated with the shape. An error will be thrown if the shape type is not "GroupShape".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var group: js.UndefOr[ShapeGroupLoadOptions] = js.native
+  var group: js.UndefOr[ShapeGroupLoadOptions] = js.undefined
+  
   /**
+    * Specifies the height, in points, of the shape.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
-    * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the shape identifier.
     *
-    * Represents the shape identifier. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Returns the image associated with the shape. An error will be thrown if the shape type is not "Image".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var image: js.UndefOr[ImageLoadOptions] = js.native
+  var image: js.UndefOr[ImageLoadOptions] = js.undefined
+  
   /**
-    *
     * The distance, in points, from the left side of the shape to the left side of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
-    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var level: js.UndefOr[Boolean] = js.native
+  var level: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    *
     * Returns the line associated with the shape. An error will be thrown if the shape type is not "Line".
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var line: js.UndefOr[LineLoadOptions] = js.native
+  var line: js.UndefOr[LineLoadOptions] = js.undefined
+  
   /**
-    *
     * Returns the line formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.native
+  var lineFormat: js.UndefOr[ShapeLineFormatLoadOptions] = js.undefined
+  
   /**
+    * Specifies if the aspect ratio of this shape is locked.
     *
-    * Specifies whether or not the aspect ratio of this shape is locked.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the name of the shape.
     *
-    * Represents the name of the shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the parent group of this shape.
     *
-    * Represents the parent group of this shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var parentGroup: js.UndefOr[ShapeLoadOptions] = js.native
+  var parentGroup: js.UndefOr[ShapeLoadOptions] = js.undefined
+  
   /**
-    *
     * Represents how the object is attached to the cells below it.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
-  var placement: js.UndefOr[Boolean] = js.native
+  var placement: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the rotation, in degrees, of the shape.
     *
-    * Represents the rotation, in degrees, of the shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var rotation: js.UndefOr[Boolean] = js.native
+  var rotation: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Returns the text frame object of this shape.
     *
-    * Returns the text frame object of this shape. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var textFrame: js.UndefOr[TextFrameLoadOptions] = js.native
+  var textFrame: js.UndefOr[TextFrameLoadOptions] = js.undefined
+  
   /**
-    *
     * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Returns the type of this shape. See `Excel.ShapeType` for details.
     *
-    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies if the shape is visible.
     *
-    * Represents the visibility of this shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the width, in points, of the shape.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
-    * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
     *
-    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
-  var zOrderPosition: js.UndefOr[Boolean] = js.native
+  var zOrderPosition: js.UndefOr[Boolean] = js.undefined
 }
-
+object ShapeLoadOptions {
+  
+  inline def apply(): ShapeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ShapeLoadOptions]
+  }
+  
+  extension [Self <: ShapeLoadOptions](x: Self) {
+    
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    
+    inline def setAltTextDescription(value: Boolean): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
+    
+    inline def setAltTextTitle(value: Boolean): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
+    
+    inline def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
+    
+    inline def setConnectionSiteCount(value: Boolean): Self = StObject.set(x, "connectionSiteCount", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionSiteCountUndefined: Self = StObject.set(x, "connectionSiteCount", js.undefined)
+    
+    inline def setDisplayName(value: Boolean): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setFill(value: ShapeFillLoadOptions): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setGeometricShape(value: GeometricShapeLoadOptions): Self = StObject.set(x, "geometricShape", value.asInstanceOf[js.Any])
+    
+    inline def setGeometricShapeType(value: Boolean): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
+    
+    inline def setGeometricShapeTypeUndefined: Self = StObject.set(x, "geometricShapeType", js.undefined)
+    
+    inline def setGeometricShapeUndefined: Self = StObject.set(x, "geometricShape", js.undefined)
+    
+    inline def setGroup(value: ShapeGroupLoadOptions): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setImage(value: ImageLoadOptions): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLevel(value: Boolean): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLine(value: LineLoadOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineFormat(value: ShapeLineFormatLoadOptions): Self = StObject.set(x, "lineFormat", value.asInstanceOf[js.Any])
+    
+    inline def setLineFormatUndefined: Self = StObject.set(x, "lineFormat", js.undefined)
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    
+    inline def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
+    
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setParentGroup(value: ShapeLoadOptions): Self = StObject.set(x, "parentGroup", value.asInstanceOf[js.Any])
+    
+    inline def setParentGroupUndefined: Self = StObject.set(x, "parentGroup", js.undefined)
+    
+    inline def setPlacement(value: Boolean): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setRotation(value: Boolean): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setTextFrame(value: TextFrameLoadOptions): Self = StObject.set(x, "textFrame", value.asInstanceOf[js.Any])
+    
+    inline def setTextFrameUndefined: Self = StObject.set(x, "textFrame", js.undefined)
+    
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZOrderPosition(value: Boolean): Self = StObject.set(x, "zOrderPosition", value.asInstanceOf[js.Any])
+    
+    inline def setZOrderPositionUndefined: Self = StObject.set(x, "zOrderPosition", js.undefined)
+  }
+}

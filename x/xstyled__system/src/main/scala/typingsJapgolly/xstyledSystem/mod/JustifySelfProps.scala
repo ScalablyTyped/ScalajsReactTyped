@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.JustifySelfProperty
+import typingsJapgolly.csstype.mod.Property.JustifySelf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JustifySelfProps extends js.Object {
-  val justifySelf: js.UndefOr[ResponsiveValue[JustifySelfProperty]] = js.undefined
+trait JustifySelfProps extends StObject {
+  
+  val justifySelf: js.UndefOr[ResponsiveValue[JustifySelf]] = js.undefined
 }
-
 object JustifySelfProps {
-  @scala.inline
-  def apply(justifySelf: ResponsiveValue[JustifySelfProperty] = null): JustifySelfProps = {
+  
+  inline def apply(): JustifySelfProps = {
     val __obj = js.Dynamic.literal()
-    if (justifySelf != null) __obj.updateDynamic("justifySelf")(justifySelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[JustifySelfProps]
   }
+  
+  extension [Self <: JustifySelfProps](x: Self) {
+    
+    inline def setJustifySelf(value: ResponsiveValue[JustifySelf]): Self = StObject.set(x, "justifySelf", value.asInstanceOf[js.Any])
+    
+    inline def setJustifySelfUndefined: Self = StObject.set(x, "justifySelf", js.undefined)
+    
+    inline def setJustifySelfVarargs(value: JustifySelf*): Self = StObject.set(x, "justifySelf", js.Array(value*))
+  }
 }
-

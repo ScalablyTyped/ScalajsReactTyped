@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the popup control's cancellable client events, such as the ASPxClientPopupControlBase.Closing.
   */
-@JSGlobal("ASPxClientPopupWindowCancelEventArgs")
-@js.native
-class ASPxClientPopupWindowCancelEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientPopupWindowCancelEventArgs class with the specified settings.
-    * @param window An ASPxClientPopupWindow object that is a popup window related to the generated event.
-    * @param closeReason One of the ASPxClientPopupControlCloseReason enumeration values that specifies the reason the popup window is about to close.
-    */
-  def this(window: ASPxClientPopupWindow, closeReason: ASPxClientPopupControlCloseReason) = this()
+trait ASPxClientPopupWindowCancelEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the value that identifies the reason the popup window is about to close.
     */
-  var closeReason: ASPxClientPopupControlCloseReason = js.native
+  var closeReason: ASPxClientPopupControlCloseReason
+  
   /**
     * Gets the popup window object related to the event.
     */
-  var window: ASPxClientPopupWindow = js.native
+  var window: ASPxClientPopupWindow
 }
-
+object ASPxClientPopupWindowCancelEventArgs {
+  
+  inline def apply(cancel: Boolean, closeReason: ASPxClientPopupControlCloseReason, window: ASPxClientPopupWindow): ASPxClientPopupWindowCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], closeReason = closeReason.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientPopupWindowCancelEventArgs]
+  }
+  
+  extension [Self <: ASPxClientPopupWindowCancelEventArgs](x: Self) {
+    
+    inline def setCloseReason(value: ASPxClientPopupControlCloseReason): Self = StObject.set(x, "closeReason", value.asInstanceOf[js.Any])
+    
+    inline def setWindow(value: ASPxClientPopupWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+  }
+}

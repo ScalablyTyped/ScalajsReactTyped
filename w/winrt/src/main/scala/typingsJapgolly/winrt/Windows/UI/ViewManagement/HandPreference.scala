@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HandPreference extends js.Object
-
+sealed trait HandPreference extends StObject
 @JSGlobal("Windows.UI.ViewManagement.HandPreference")
 @js.native
-object HandPreference extends js.Object {
-  @js.native
-  sealed trait leftHanded extends HandPreference
+object HandPreference extends StObject {
   
   @js.native
-  sealed trait rightHanded extends HandPreference
+  sealed trait leftHanded
+    extends StObject
+       with HandPreference
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HandPreference with Double] = js.native
-  /* 0 */ @js.native
-  object leftHanded extends TopLevel[leftHanded with Double]
-  
-  /* 1 */ @js.native
-  object rightHanded extends TopLevel[rightHanded with Double]
-  
+  @js.native
+  sealed trait rightHanded
+    extends StObject
+       with HandPreference
 }
-

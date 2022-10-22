@@ -1,20 +1,17 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feDiffuseLighting> element. */
 @js.native
 trait SVGFEDiffuseLightingElement
-  extends SVGElement
+  extends StObject
+     with SVGElement
      with SVGFilterPrimitiveStandardAttributes {
-  val diffuseConstant: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val in1: org.scalajs.dom.raw.SVGAnimatedString = js.native
-  val kernelUnitLengthX: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val kernelUnitLengthY: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
-  val surfaceScale: org.scalajs.dom.raw.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
@@ -25,19 +22,31 @@ trait SVGFEDiffuseLightingElement
     listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
+  
+  /* standard dom */
+  val diffuseConstant: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val in1: org.scalajs.dom.SVGAnimatedString = js.native
+  
+  /* standard dom */
+  val kernelUnitLengthX: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
+  val kernelUnitLengthY: org.scalajs.dom.SVGAnimatedNumber = js.native
+  
+  /* standard dom */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  
+  /* standard dom */
+  val surfaceScale: org.scalajs.dom.SVGAnimatedNumber = js.native
 }
-
-@JSGlobal("SVGFEDiffuseLightingElement")
-@js.native
-object SVGFEDiffuseLightingElement extends Instantiable0[SVGFEDiffuseLightingElement]
-

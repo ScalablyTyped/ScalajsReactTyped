@@ -1,17 +1,30 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait storage extends js.Object {
+trait storage extends StObject {
+  
   var cookie: typingsJapgolly.webix.webix.cookie
+  
   var local: typingsJapgolly.webix.webix.local
+  
   var session: typingsJapgolly.webix.webix.session
 }
-
-@JSGlobal("webix.storage")
-@js.native
-object storage extends TopLevel[storage]
-
+object storage {
+  
+  inline def apply(cookie: cookie, local: local, session: session): storage = {
+    val __obj = js.Dynamic.literal(cookie = cookie.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
+    __obj.asInstanceOf[storage]
+  }
+  
+  extension [Self <: storage](x: Self) {
+    
+    inline def setCookie(value: cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    
+    inline def setLocal(value: local): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setSession(value: session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,36 +1,51 @@
 package typingsJapgolly.hapiJoi.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RuleArgs extends js.Object {
-  var assert: js.UndefOr[(js.Function1[/* value */ js.Any, Boolean]) | AnySchema] = js.undefined
+trait RuleArgs extends StObject {
+  
+  var assert: js.UndefOr[(js.Function1[/* value */ Any, Boolean]) | AnySchema] = js.undefined
+  
   var message: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   /**
     * Undocumented properties
     */
-  var normalize: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
+  var normalize: js.UndefOr[js.Function1[/* value */ Any, Any]] = js.undefined
+  
   var ref: js.UndefOr[Boolean] = js.undefined
 }
-
 object RuleArgs {
-  @scala.inline
-  def apply(
-    name: String,
-    assert: (js.Function1[/* value */ js.Any, Boolean]) | AnySchema = null,
-    message: String = null,
-    normalize: /* value */ js.Any => CallbackTo[js.Any] = null,
-    ref: js.UndefOr[Boolean] = js.undefined
-  ): RuleArgs = {
+  
+  inline def apply(name: String): RuleArgs = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (assert != null) __obj.updateDynamic("assert")(assert.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (normalize != null) __obj.updateDynamic("normalize")(js.Any.fromFunction1((t0: /* value */ js.Any) => normalize(t0).runNow()))
-    if (!js.isUndefined(ref)) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleArgs]
   }
+  
+  extension [Self <: RuleArgs](x: Self) {
+    
+    inline def setAssert(value: (js.Function1[/* value */ Any, Boolean]) | AnySchema): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
+    
+    inline def setAssertFunction1(value: /* value */ Any => Boolean): Self = StObject.set(x, "assert", js.Any.fromFunction1(value))
+    
+    inline def setAssertUndefined: Self = StObject.set(x, "assert", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNormalize(value: /* value */ Any => Any): Self = StObject.set(x, "normalize", js.Any.fromFunction1(value))
+    
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    
+    inline def setRef(value: Boolean): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+  }
 }
-

@@ -1,23 +1,26 @@
 package typingsJapgolly.emberString
 
-import typingsJapgolly.emberTemplate.handlebarsMod.SafeString
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@ember/string", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def camelize(str: String): String = js.native
-  def capitalize(str: String): String = js.native
-  def classify(str: String): String = js.native
-  def dasherize(str: String): String = js.native
-  def decamelize(str: String): String = js.native
-  def htmlSafe(str: String): SafeString = js.native
-  def isHTMLSafe(str: js.Any): /* is @ember/template.@ember/template/-private/handlebars.SafeString */ Boolean = js.native
-  def loc(template: String): String = js.native
-  def loc(template: String, args: js.Array[String]): String = js.native
-  def underscore(str: String): String = js.native
-  def w(str: String): js.Array[String] = js.native
+object mod {
+  
+  @JSImport("@ember/string", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def camelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def classify(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classify")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def dasherize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dasherize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def decamelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decamelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def underscore(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("underscore")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def w(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("w")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }
-

@@ -1,26 +1,34 @@
 package typingsJapgolly.reactNativeFetchBlob.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-fetch-blob", "RNFetchBlobSession")
 @js.native
-class RNFetchBlobSession protected () extends js.Object {
+open class RNFetchBlobSession protected () extends StObject {
   def this(name: String, list: js.Array[String]) = this()
-  var name: String = js.native
+  
   def add(path: String): RNFetchBlobSession = js.native
+  
   def dispose(): js.Promise[Unit] = js.native
+  
   def list(): js.Array[String] = js.native
+  
+  var name: String = js.native
+  
   def remove(path: String): RNFetchBlobSession = js.native
 }
-
 /* static members */
-@JSImport("react-native-fetch-blob", "RNFetchBlobSession")
-@js.native
-object RNFetchBlobSession extends js.Object {
-  def getSession(name: String): js.Any = js.native
-  def removeSession(name: String): Unit = js.native
-  def setSession(name: String): Unit = js.native
+object RNFetchBlobSession {
+  
+  @JSImport("react-native-fetch-blob", "RNFetchBlobSession")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getSession(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSession")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def removeSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setSession(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSession")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

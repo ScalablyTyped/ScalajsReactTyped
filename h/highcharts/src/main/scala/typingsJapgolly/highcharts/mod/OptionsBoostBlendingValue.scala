@@ -1,24 +1,20 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.add
   - typingsJapgolly.highcharts.highchartsStrings.darken
   - typingsJapgolly.highcharts.highchartsStrings.multiply
 */
-trait OptionsBoostBlendingValue extends js.Object
-
+trait OptionsBoostBlendingValue extends StObject
 object OptionsBoostBlendingValue {
-  @scala.inline
-  def add: typingsJapgolly.highcharts.highchartsStrings.add = this.cast("add")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def darken: typingsJapgolly.highcharts.highchartsStrings.darken = this.cast("darken")
-  @scala.inline
-  def multiply: typingsJapgolly.highcharts.highchartsStrings.multiply = this.cast("multiply")
+  
+  inline def add: typingsJapgolly.highcharts.highchartsStrings.add = "add".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.add]
+  
+  inline def darken: typingsJapgolly.highcharts.highchartsStrings.darken = "darken".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.darken]
+  
+  inline def multiply: typingsJapgolly.highcharts.highchartsStrings.multiply = "multiply".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.multiply]
 }
-

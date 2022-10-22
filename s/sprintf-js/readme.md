@@ -10,10 +10,10 @@ JavaScript sprintf implementation
 | ------------------ | :-------------: |
 | Full name          | sprintf-js |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 852 |
-| # downloads        | 553981865 |
-| # stars            | 39 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2937931133333333E8 |
+| # stars            | 2004.0 |
 
 ## Links
 - [Homepage](https://github.com/alexei/sprintf.js#readme)

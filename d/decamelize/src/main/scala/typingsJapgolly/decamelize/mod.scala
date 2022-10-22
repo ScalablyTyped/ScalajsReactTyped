@@ -1,49 +1,64 @@
 package typingsJapgolly.decamelize
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("decamelize", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function decamelize(string: string, separator?: string): string;
-  // export = decamelize;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Convert a camelized string into a lowercased one with a custom separator: `unicornRainbow` → `unicorn_rainbow`.
-  	@param string - The camelcase string to decamelize.
-  	@param separator - The separator to use to put in between the words from `string`. Default: `'_'`.
-  	@example
-  	```
-  	import decamelize = require('decamelize');
-  	decamelize('unicornRainbow');
-  	//=> 'unicorn_rainbow'
-  	decamelize('unicornRainbow', '-');
-  	//=> 'unicorn-rainbow'
-  	```
-  	*/
-  def apply(string: String): String = js.native
-  def apply(string: String, separator: String): String = js.native
-  /**
-  	Convert a camelized string into a lowercased one with a custom separator: `unicornRainbow` → `unicorn_rainbow`.
-  	@param string - The camelcase string to decamelize.
-  	@param separator - The separator to use to put in between the words from `string`. Default: `'_'`.
-  	@example
-  	```
-  	import decamelize = require('decamelize');
-  	decamelize('unicornRainbow');
-  	//=> 'unicorn_rainbow'
-  	decamelize('unicornRainbow', '-');
-  	//=> 'unicorn-rainbow'
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function decamelize(string: string, separator?: string): string;
-  // export = decamelize;
-  def default(string: String): String = js.native
-  def default(string: String, separator: String): String = js.native
+object mod {
+  
+  @JSImport("decamelize", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  trait Options extends StObject {
+    
+    /**
+    	Preserve sequences of uppercase characters.
+    	@default false
+    	@example
+    	```
+    	import decamelize from 'decamelize';
+    	decamelize('testGUILabel');
+    	//=> 'test_gui_label'
+    	decamelize('testGUILabel', {preserveConsecutiveUppercase: true});
+    	//=> 'test_GUI_label'
+    	```
+    	*/
+    val preserveConsecutiveUppercase: js.UndefOr[Boolean] = js.undefined
+    
+    /**
+    	Character or string inserted to separate words in `string`.
+    	@default '_'
+    	@example
+    	```
+    	import decamelize from 'decamelize';
+    	decamelize('unicornRainbow');
+    	//=> 'unicorn_rainbow'
+    	decamelize('unicornRainbow', {separator: '-'});
+    	//=> 'unicorn-rainbow'
+    	```
+    	*/
+    val separator: js.UndefOr[String] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setPreserveConsecutiveUppercase(value: Boolean): Self = StObject.set(x, "preserveConsecutiveUppercase", value.asInstanceOf[js.Any])
+      
+      inline def setPreserveConsecutiveUppercaseUndefined: Self = StObject.set(x, "preserveConsecutiveUppercase", js.undefined)
+      
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    }
+  }
 }
-

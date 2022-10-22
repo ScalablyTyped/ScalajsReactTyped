@@ -1,15 +1,16 @@
 package typingsJapgolly.reactNativeFirebase.mod
 
 import typingsJapgolly.reactNativeFirebase.mod.RNFirebase.Analytics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type AdmobModule = FirebaseModuleAndStatics<RNFirebase.admob.AdMob>;
 /* Inlined react-native-firebase.react-native-firebase.FirebaseModuleAndStatics<react-native-firebase.react-native-firebase.RNFirebase.Analytics, {}> */
 @js.native
-trait AnalyticsModule extends js.Object {
-  var nativeModuleExists: Boolean = js.native
+trait AnalyticsModule extends StObject {
+  
   def apply(): Analytics = js.native
+  
+  var nativeModuleExists: Boolean = js.native
 }
-

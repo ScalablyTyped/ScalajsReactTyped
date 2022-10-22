@@ -1,49 +1,47 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.AnonLabel
-import typingsJapgolly.antDesignPro.radarMod.IRadarProps
-import typingsJapgolly.antDesignPro.radarMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.libChartsRadarMod.IRadarProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Radar {
-  def apply(
-    data: js.Array[AnonLabel],
-    height: Double,
-    hasLegend: js.UndefOr[Boolean] = js.undefined,
-    padding: js.Tuple4[Double, Double, Double, Double] = null,
-    style: CSSProperties = null,
-    title: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IRadarProps, default, Unit, IRadarProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(hasLegend)) __obj.updateDynamic("hasLegend")(hasLegend.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.radarMod.IRadarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.radarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.radarMod.IRadarProps])(children: _*)
+  inline def apply(data: js.Array[typingsJapgolly.antDesignPro.anon.Label], height: Double): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IRadarProps]))
   }
-  @JSImport("ant-design-pro/lib/Charts/Radar", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("ant-design-pro/lib/Charts", "Radar")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.libChartsMod.Radar] {
+    
+    inline def hasLegend(value: Boolean): this.type = set("hasLegend", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: js.Tuple4[Double, Double, Double, Double]): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IRadarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

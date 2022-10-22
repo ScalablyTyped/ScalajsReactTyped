@@ -1,23 +1,39 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RsaOtherPrimesInfo extends js.Object {
+trait RsaOtherPrimesInfo extends StObject {
+  
+  /* standard dom */
   var d: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var r: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var t: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object RsaOtherPrimesInfo {
-  @scala.inline
-  def apply(d: java.lang.String = null, r: java.lang.String = null, t: java.lang.String = null): RsaOtherPrimesInfo = {
+  
+  inline def apply(): RsaOtherPrimesInfo = {
     val __obj = js.Dynamic.literal()
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
-    if (t != null) __obj.updateDynamic("t")(t.asInstanceOf[js.Any])
     __obj.asInstanceOf[RsaOtherPrimesInfo]
   }
+  
+  extension [Self <: RsaOtherPrimesInfo](x: Self) {
+    
+    inline def setD(value: java.lang.String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    
+    inline def setR(value: java.lang.String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    
+    inline def setT(value: java.lang.String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    
+    inline def setTUndefined: Self = StObject.set(x, "t", js.undefined)
+  }
 }
-

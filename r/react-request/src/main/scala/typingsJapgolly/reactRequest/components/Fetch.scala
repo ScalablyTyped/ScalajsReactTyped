@@ -1,84 +1,80 @@
 package typingsJapgolly.reactRequest.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.experimental.AbortSignal
-import org.scalajs.dom.experimental.ReferrerPolicy
-import org.scalajs.dom.experimental.RequestCache
-import org.scalajs.dom.experimental.RequestCredentials
-import org.scalajs.dom.experimental.RequestMode
-import org.scalajs.dom.experimental.RequestRedirect
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.AbortSignal
+import org.scalajs.dom.ReferrerPolicy
+import org.scalajs.dom.RequestCache
+import org.scalajs.dom.RequestCredentials
+import org.scalajs.dom.RequestMode
+import org.scalajs.dom.RequestRedirect
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactRequest.mod.FetchProps
 import typingsJapgolly.reactRequest.mod.FetchResponse
 import typingsJapgolly.reactRequest.mod.RenderProps
 import typingsJapgolly.reactRequest.mod.ResponseType
 import typingsJapgolly.std.BodyInit
 import typingsJapgolly.std.HeadersInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Fetch {
-  def apply[T](
-    url: String,
-    afterFetch: /* args */ FetchResponse[T] => Callback = null,
-    body: BodyInit = null,
-    cache: RequestCache = null,
-    credentials: RequestCredentials = null,
-    headers: HeadersInit = null,
-    integrity: String = null,
-    keepalive: js.UndefOr[Boolean] = js.undefined,
-    `lazy`: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    mode: RequestMode = null,
-    redirect: RequestRedirect = null,
-    referrer: String = null,
-    referrerPolicy: ReferrerPolicy = null,
-    responseType: ResponseType = null,
-    signal: AbortSignal = null,
-    transformData: /* data */ js.Any => CallbackTo[T] = null,
-    window: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* renderProps */ RenderProps[T] => CallbackTo[Node] = null
-  ): UnmountedWithRoot[FetchProps[T], typingsJapgolly.reactRequest.mod.Fetch[T], Unit, FetchProps[T]] = {
-    val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* renderProps */ typingsJapgolly.reactRequest.mod.RenderProps[T]) => children(t0).runNow()))
-    if (afterFetch != null) __obj.updateDynamic("afterFetch")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.reactRequest.mod.FetchResponse[T]) => afterFetch(t0).runNow()))
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (integrity != null) __obj.updateDynamic("integrity")(integrity.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive.asInstanceOf[js.Any])
-    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
-    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy.asInstanceOf[js.Any])
-    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
-    if (signal != null) __obj.updateDynamic("signal")(signal.asInstanceOf[js.Any])
-    if (transformData != null) __obj.updateDynamic("transformData")(js.Any.fromFunction1((t0: /* data */ js.Any) => transformData(t0).runNow()))
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRequest.mod.FetchProps[T], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactRequest.mod.Fetch[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRequest.mod.FetchProps[T]])
+  inline def apply[T](url: String): Builder[T] = {
+    val __props = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[FetchProps[T]]))
   }
+  
   @JSImport("react-request", "Fetch")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactRequest.mod.Fetch[T]] {
+    
+    inline def afterFetch(value: /* args */ FetchResponse[T] => Callback): this.type = set("afterFetch", js.Any.fromFunction1((t0: /* args */ FetchResponse[T]) => value(t0).runNow()))
+    
+    inline def body(value: BodyInit): this.type = set("body", value.asInstanceOf[js.Any])
+    
+    inline def bodyNull: this.type = set("body", null)
+    
+    inline def cache(value: RequestCache): this.type = set("cache", value.asInstanceOf[js.Any])
+    
+    inline def children(value: /* renderProps */ RenderProps[T] => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def credentials(value: RequestCredentials): this.type = set("credentials", value.asInstanceOf[js.Any])
+    
+    inline def headers(value: HeadersInit): this.type = set("headers", value.asInstanceOf[js.Any])
+    
+    inline def headersVarargs(value: (js.Tuple2[String, String])*): this.type = set("headers", js.Array(value*))
+    
+    inline def integrity(value: String): this.type = set("integrity", value.asInstanceOf[js.Any])
+    
+    inline def keepalive(value: Boolean): this.type = set("keepalive", value.asInstanceOf[js.Any])
+    
+    inline def `lazy`(value: Boolean): this.type = set("lazy", value.asInstanceOf[js.Any])
+    
+    inline def method(value: String): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: RequestMode): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def redirect(value: RequestRedirect): this.type = set("redirect", value.asInstanceOf[js.Any])
+    
+    inline def referrer(value: String): this.type = set("referrer", value.asInstanceOf[js.Any])
+    
+    inline def referrerPolicy(value: ReferrerPolicy): this.type = set("referrerPolicy", value.asInstanceOf[js.Any])
+    
+    inline def responseType(value: ResponseType): this.type = set("responseType", value.asInstanceOf[js.Any])
+    
+    inline def signal(value: AbortSignal): this.type = set("signal", value.asInstanceOf[js.Any])
+    
+    inline def signalNull: this.type = set("signal", null)
+    
+    inline def transformData(value: /* data */ Any => T): this.type = set("transformData", js.Any.fromFunction1(value))
+  }
+  
+  def withProps[T](p: FetchProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

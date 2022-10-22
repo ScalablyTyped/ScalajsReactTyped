@@ -1,39 +1,64 @@
 package typingsJapgolly.devextreme.mod.default
 
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxValidationGroupResult
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxValidationGroup.ValidationResult
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "validationEngine")
+@JSImport("devextreme", "default.validationEngine")
 @js.native
-class validationEngine ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.validationEngine
-
+open class validationEngine ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.validationEngine
 /* static members */
-@JSImport("devextreme", "validationEngine")
-@js.native
-object validationEngine extends js.Object {
-  /** Gets the default validation group. */
-  def getGroupConfig(): js.Any = js.native
-  /** Gets a validation group with a specific key. */
-  def getGroupConfig(group: String): js.Any = js.native
-  def getGroupConfig(group: js.Any): js.Any = js.native
-  /** Registers all the Validator objects extending fields of the specified ViewModel. */
-  def registerModelForValidation(model: js.Any): Unit = js.native
-  /** Resets the values and validation result of the editors that belong to the default validation group. */
-  def resetGroup(): Unit = js.native
-  /** Resets the values and validation result of the editors that belong to the specified validation group. */
-  def resetGroup(group: String): Unit = js.native
-  def resetGroup(group: js.Any): Unit = js.native
-  /** Unregisters all the Validator objects extending fields of the specified ViewModel. */
-  def unregisterModelForValidation(model: js.Any): Unit = js.native
-  /** Validates editors from the default validation group. */
-  def validateGroup(): dxValidationGroupResult = js.native
-  /** Validates editors from a specific validation group. */
-  def validateGroup(group: String): dxValidationGroupResult = js.native
-  def validateGroup(group: js.Any): dxValidationGroupResult = js.native
-  /** Validates a view model. */
-  def validateModel(model: js.Any): js.Any = js.native
+object validationEngine {
+  
+  @JSImport("devextreme", "default.validationEngine")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Gets the default validation group.
+    */
+  inline def getGroupConfig(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupConfig")().asInstanceOf[Any]
+  /**
+    * Gets a validation group with a specific key.
+    */
+  inline def getGroupConfig(group: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupConfig")(group.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getGroupConfig(group: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroupConfig")(group.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /**
+    * Registers all the Validator objects extending fields of the specified ViewModel.
+    */
+  inline def registerModelForValidation(model: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerModelForValidation")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Resets the values and validation result of the editors that belong to the default validation group.
+    */
+  inline def resetGroup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGroup")().asInstanceOf[Unit]
+  /**
+    * Resets the values and validation result of the editors that belong to the specified validation group.
+    */
+  inline def resetGroup(group: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGroup")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetGroup(group: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGroup")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Unregisters all the Validator objects extending fields of the specified ViewModel.
+    */
+  inline def unregisterModelForValidation(model: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterModelForValidation")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  /**
+    * Validates editors from the default validation group.
+    */
+  inline def validateGroup(): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validateGroup")().asInstanceOf[ValidationResult]
+  /**
+    * Validates editors from a specific validation group.
+    */
+  inline def validateGroup(group: String): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validateGroup")(group.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
+  inline def validateGroup(group: Any): ValidationResult = ^.asInstanceOf[js.Dynamic].applyDynamic("validateGroup")(group.asInstanceOf[js.Any]).asInstanceOf[ValidationResult]
+  
+  /**
+    * Validates a view model.
+    */
+  inline def validateModel(model: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("validateModel")(model.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

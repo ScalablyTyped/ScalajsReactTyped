@@ -4,320 +4,359 @@ import typingsJapgolly.jsforce.bulkMod.BulkLoadOperation
 import typingsJapgolly.jsforce.describeResultMod.ExtraTypeInfo
 import typingsJapgolly.jsforce.describeResultMod.FieldType
 import typingsJapgolly.jsforce.describeResultMod.SOAPType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsforceStrings {
-  @js.native
-  sealed trait ASC extends js.Object
   
   @js.native
-  sealed trait DESC extends js.Object
+  sealed trait ASC extends StObject
+  inline def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait Parallel extends js.Object
+  sealed trait DESC extends StObject
+  inline def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait Promise extends js.Object
+  sealed trait Parallel extends StObject
+  inline def Parallel: Parallel = "Parallel".asInstanceOf[Parallel]
   
   @js.native
-  sealed trait Restricted extends js.Object
+  sealed trait Promise extends StObject
+  inline def Promise: Promise = "Promise".asInstanceOf[Promise]
   
   @js.native
-  sealed trait SObject extends js.Object
+  sealed trait Restricted extends StObject
+  inline def Restricted: Restricted = "Restricted".asInstanceOf[Restricted]
   
   @js.native
-  sealed trait Serial extends js.Object
+  sealed trait Serial extends StObject
+  inline def Serial: Serial = "Serial".asInstanceOf[Serial]
   
   @js.native
-  sealed trait Unrestricted extends js.Object
+  sealed trait Unrestricted extends StObject
+  inline def Unrestricted: Unrestricted = "Unrestricted".asInstanceOf[Unrestricted]
   
   @js.native
-  sealed trait address extends FieldType
+  sealed trait address
+    extends StObject
+       with FieldType
+  inline def address: address = "address".asInstanceOf[address]
   
   @js.native
-  sealed trait anyType extends FieldType
+  sealed trait anyType
+    extends StObject
+       with FieldType
+  inline def anyType: anyType = "anyType".asInstanceOf[anyType]
   
   @js.native
-  sealed trait base64 extends FieldType
+  sealed trait base64
+    extends StObject
+       with FieldType
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait boolean extends FieldType
+  sealed trait boolean
+    extends StObject
+       with FieldType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait combobox extends FieldType
+  sealed trait combobox
+    extends StObject
+       with FieldType
+  inline def combobox: combobox = "combobox".asInstanceOf[combobox]
   
   @js.native
-  sealed trait complexvalue extends FieldType
+  sealed trait complexvalue
+    extends StObject
+       with FieldType
+  inline def complexvalue: complexvalue = "complexvalue".asInstanceOf[complexvalue]
   
   @js.native
-  sealed trait currency extends FieldType
+  sealed trait currency
+    extends StObject
+       with FieldType
+  inline def currency: currency = "currency".asInstanceOf[currency]
   
   @js.native
-  sealed trait date extends FieldType
+  sealed trait date
+    extends StObject
+       with FieldType
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait datetime extends FieldType
+  sealed trait datetime
+    extends StObject
+       with FieldType
+  inline def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait delete extends BulkLoadOperation
+  sealed trait delete
+    extends StObject
+       with BulkLoadOperation
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait double extends FieldType
+  sealed trait double
+    extends StObject
+       with FieldType
+  inline def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait email extends FieldType
+  sealed trait email
+    extends StObject
+       with FieldType
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait encryptedstring extends FieldType
+  sealed trait encryptedstring
+    extends StObject
+       with FieldType
+  inline def encryptedstring: encryptedstring = "encryptedstring".asInstanceOf[encryptedstring]
   
   @js.native
-  sealed trait externallookup extends ExtraTypeInfo
+  sealed trait externallookup
+    extends StObject
+       with ExtraTypeInfo
+  inline def externallookup: externallookup = "externallookup".asInstanceOf[externallookup]
   
   @js.native
-  sealed trait hardDelete extends BulkLoadOperation
+  sealed trait hardDelete
+    extends StObject
+       with BulkLoadOperation
+  inline def hardDelete: hardDelete = "hardDelete".asInstanceOf[hardDelete]
   
   @js.native
-  sealed trait id extends FieldType
+  sealed trait id
+    extends StObject
+       with FieldType
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait imageurl extends ExtraTypeInfo
+  sealed trait imageurl
+    extends StObject
+       with ExtraTypeInfo
+  inline def imageurl: imageurl = "imageurl".asInstanceOf[imageurl]
   
   @js.native
-  sealed trait indirectlookup extends ExtraTypeInfo
+  sealed trait indirectlookup
+    extends StObject
+       with ExtraTypeInfo
+  inline def indirectlookup: indirectlookup = "indirectlookup".asInstanceOf[indirectlookup]
   
   @js.native
-  sealed trait insert extends BulkLoadOperation
+  sealed trait insert
+    extends StObject
+       with BulkLoadOperation
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait int extends FieldType
+  sealed trait int
+    extends StObject
+       with FieldType
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait location extends FieldType
+  sealed trait location
+    extends StObject
+       with FieldType
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait multipicklist extends FieldType
+  sealed trait multipicklist
+    extends StObject
+       with FieldType
+  inline def multipicklist: multipicklist = "multipicklist".asInstanceOf[multipicklist]
   
   @js.native
-  sealed trait percent extends FieldType
+  sealed trait percent
+    extends StObject
+       with FieldType
+  inline def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait personname extends ExtraTypeInfo
+  sealed trait personname
+    extends StObject
+       with ExtraTypeInfo
+  inline def personname: personname = "personname".asInstanceOf[personname]
   
   @js.native
-  sealed trait phone extends FieldType
+  sealed trait phone
+    extends StObject
+       with FieldType
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
-  sealed trait picklist extends FieldType
+  sealed trait picklist
+    extends StObject
+       with FieldType
+  inline def picklist: picklist = "picklist".asInstanceOf[picklist]
   
   @js.native
-  sealed trait plaintextarea extends ExtraTypeInfo
+  sealed trait plaintextarea
+    extends StObject
+       with ExtraTypeInfo
+  inline def plaintextarea: plaintextarea = "plaintextarea".asInstanceOf[plaintextarea]
   
   @js.native
-  sealed trait reference extends FieldType
+  sealed trait reference
+    extends StObject
+       with FieldType
+  inline def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait richtextarea extends ExtraTypeInfo
+  sealed trait richtextarea
+    extends StObject
+       with ExtraTypeInfo
+  inline def richtextarea: richtextarea = "richtextarea".asInstanceOf[richtextarea]
   
   @js.native
-  sealed trait string extends FieldType
+  sealed trait string
+    extends StObject
+       with FieldType
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait switchablepersonname extends ExtraTypeInfo
+  sealed trait switchablepersonname
+    extends StObject
+       with ExtraTypeInfo
+  inline def switchablepersonname: switchablepersonname = "switchablepersonname".asInstanceOf[switchablepersonname]
   
   @js.native
-  sealed trait textarea extends FieldType
+  sealed trait textarea
+    extends StObject
+       with FieldType
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait time extends FieldType
+  sealed trait time
+    extends StObject
+       with FieldType
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait tnsColonID extends SOAPType
+  sealed trait tnsColonID
+    extends StObject
+       with SOAPType
+  inline def tnsColonID: tnsColonID = "tns:ID".asInstanceOf[tnsColonID]
   
   @js.native
-  sealed trait update extends BulkLoadOperation
+  sealed trait update
+    extends StObject
+       with BulkLoadOperation
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait upsert extends BulkLoadOperation
+  sealed trait upsert
+    extends StObject
+       with BulkLoadOperation
+  inline def upsert: upsert = "upsert".asInstanceOf[upsert]
   
   @js.native
-  sealed trait url extends FieldType
+  sealed trait url
+    extends StObject
+       with FieldType
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait urnColonJunctionIdListNames extends SOAPType
+  sealed trait urnColonJunctionIdListNames
+    extends StObject
+       with SOAPType
+  inline def urnColonJunctionIdListNames: urnColonJunctionIdListNames = "urn:JunctionIdListNames".asInstanceOf[urnColonJunctionIdListNames]
   
   @js.native
-  sealed trait urnColonRecordTypesSupported extends SOAPType
+  sealed trait urnColonRecordTypesSupported
+    extends StObject
+       with SOAPType
+  inline def urnColonRecordTypesSupported: urnColonRecordTypesSupported = "urn:RecordTypesSupported".asInstanceOf[urnColonRecordTypesSupported]
   
   @js.native
-  sealed trait urnColonRelationshipReferenceTo extends SOAPType
+  sealed trait urnColonRelationshipReferenceTo
+    extends StObject
+       with SOAPType
+  inline def urnColonRelationshipReferenceTo: urnColonRelationshipReferenceTo = "urn:RelationshipReferenceTo".asInstanceOf[urnColonRelationshipReferenceTo]
   
   @js.native
-  sealed trait urnColonSearchLayoutButtonsDisplayed extends SOAPType
+  sealed trait urnColonSearchLayoutButtonsDisplayed
+    extends StObject
+       with SOAPType
+  inline def urnColonSearchLayoutButtonsDisplayed: urnColonSearchLayoutButtonsDisplayed = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[urnColonSearchLayoutButtonsDisplayed]
   
   @js.native
-  sealed trait urnColonSearchLayoutFieldsDisplayed extends SOAPType
+  sealed trait urnColonSearchLayoutFieldsDisplayed
+    extends StObject
+       with SOAPType
+  inline def urnColonSearchLayoutFieldsDisplayed: urnColonSearchLayoutFieldsDisplayed = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[urnColonSearchLayoutFieldsDisplayed]
   
   @js.native
-  sealed trait urnColonaddress extends SOAPType
+  sealed trait urnColonaddress
+    extends StObject
+       with SOAPType
+  inline def urnColonaddress: urnColonaddress = "urn:address".asInstanceOf[urnColonaddress]
   
   @js.native
-  sealed trait urnColonlocation extends SOAPType
+  sealed trait urnColonlocation
+    extends StObject
+       with SOAPType
+  inline def urnColonlocation: urnColonlocation = "urn:location".asInstanceOf[urnColonlocation]
   
   @js.native
-  sealed trait xsdColonanyType extends SOAPType
+  sealed trait xsdColonanyType
+    extends StObject
+       with SOAPType
+  inline def xsdColonanyType: xsdColonanyType = "xsd:anyType".asInstanceOf[xsdColonanyType]
   
   @js.native
-  sealed trait xsdColonbase64Binary extends SOAPType
+  sealed trait xsdColonbase64Binary
+    extends StObject
+       with SOAPType
+  inline def xsdColonbase64Binary: xsdColonbase64Binary = "xsd:base64Binary".asInstanceOf[xsdColonbase64Binary]
   
   @js.native
-  sealed trait xsdColonboolean extends SOAPType
+  sealed trait xsdColonboolean
+    extends StObject
+       with SOAPType
+  inline def xsdColonboolean: xsdColonboolean = "xsd:boolean".asInstanceOf[xsdColonboolean]
   
   @js.native
-  sealed trait xsdColondate extends SOAPType
+  sealed trait xsdColondate
+    extends StObject
+       with SOAPType
+  inline def xsdColondate: xsdColondate = "xsd:date".asInstanceOf[xsdColondate]
   
   @js.native
-  sealed trait xsdColondateTime extends SOAPType
+  sealed trait xsdColondateTime
+    extends StObject
+       with SOAPType
+  inline def xsdColondateTime: xsdColondateTime = "xsd:dateTime".asInstanceOf[xsdColondateTime]
   
   @js.native
-  sealed trait xsdColondouble extends SOAPType
+  sealed trait xsdColondouble
+    extends StObject
+       with SOAPType
+  inline def xsdColondouble: xsdColondouble = "xsd:double".asInstanceOf[xsdColondouble]
   
   @js.native
-  sealed trait xsdColonint extends SOAPType
+  sealed trait xsdColonint
+    extends StObject
+       with SOAPType
+  inline def xsdColonint: xsdColonint = "xsd:int".asInstanceOf[xsdColonint]
   
   @js.native
-  sealed trait xsdColonstring extends SOAPType
+  sealed trait xsdColonstring
+    extends StObject
+       with SOAPType
+  inline def xsdColonstring: xsdColonstring = "xsd:string".asInstanceOf[xsdColonstring]
   
   @js.native
-  sealed trait xsdColontime extends SOAPType
-  
-  @scala.inline
-  def ASC: ASC = "ASC".asInstanceOf[ASC]
-  @scala.inline
-  def DESC: DESC = "DESC".asInstanceOf[DESC]
-  @scala.inline
-  def Parallel: Parallel = "Parallel".asInstanceOf[Parallel]
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def Restricted: Restricted = "Restricted".asInstanceOf[Restricted]
-  @scala.inline
-  def SObject: SObject = "SObject".asInstanceOf[SObject]
-  @scala.inline
-  def Serial: Serial = "Serial".asInstanceOf[Serial]
-  @scala.inline
-  def Unrestricted: Unrestricted = "Unrestricted".asInstanceOf[Unrestricted]
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def anyType: anyType = "anyType".asInstanceOf[anyType]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def combobox: combobox = "combobox".asInstanceOf[combobox]
-  @scala.inline
-  def complexvalue: complexvalue = "complexvalue".asInstanceOf[complexvalue]
-  @scala.inline
-  def currency: currency = "currency".asInstanceOf[currency]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def datetime: datetime = "datetime".asInstanceOf[datetime]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def double: double = "double".asInstanceOf[double]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def encryptedstring: encryptedstring = "encryptedstring".asInstanceOf[encryptedstring]
-  @scala.inline
-  def externallookup: externallookup = "externallookup".asInstanceOf[externallookup]
-  @scala.inline
-  def hardDelete: hardDelete = "hardDelete".asInstanceOf[hardDelete]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def imageurl: imageurl = "imageurl".asInstanceOf[imageurl]
-  @scala.inline
-  def indirectlookup: indirectlookup = "indirectlookup".asInstanceOf[indirectlookup]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def multipicklist: multipicklist = "multipicklist".asInstanceOf[multipicklist]
-  @scala.inline
-  def percent: percent = "percent".asInstanceOf[percent]
-  @scala.inline
-  def personname: personname = "personname".asInstanceOf[personname]
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
-  @scala.inline
-  def picklist: picklist = "picklist".asInstanceOf[picklist]
-  @scala.inline
-  def plaintextarea: plaintextarea = "plaintextarea".asInstanceOf[plaintextarea]
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def richtextarea: richtextarea = "richtextarea".asInstanceOf[richtextarea]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def switchablepersonname: switchablepersonname = "switchablepersonname".asInstanceOf[switchablepersonname]
-  @scala.inline
-  def textarea: textarea = "textarea".asInstanceOf[textarea]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def tnsColonID: tnsColonID = "tns:ID".asInstanceOf[tnsColonID]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def upsert: upsert = "upsert".asInstanceOf[upsert]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def urnColonJunctionIdListNames: urnColonJunctionIdListNames = "urn:JunctionIdListNames".asInstanceOf[urnColonJunctionIdListNames]
-  @scala.inline
-  def urnColonRecordTypesSupported: urnColonRecordTypesSupported = "urn:RecordTypesSupported".asInstanceOf[urnColonRecordTypesSupported]
-  @scala.inline
-  def urnColonRelationshipReferenceTo: urnColonRelationshipReferenceTo = "urn:RelationshipReferenceTo".asInstanceOf[urnColonRelationshipReferenceTo]
-  @scala.inline
-  def urnColonSearchLayoutButtonsDisplayed: urnColonSearchLayoutButtonsDisplayed = "urn:SearchLayoutButtonsDisplayed".asInstanceOf[urnColonSearchLayoutButtonsDisplayed]
-  @scala.inline
-  def urnColonSearchLayoutFieldsDisplayed: urnColonSearchLayoutFieldsDisplayed = "urn:SearchLayoutFieldsDisplayed".asInstanceOf[urnColonSearchLayoutFieldsDisplayed]
-  @scala.inline
-  def urnColonaddress: urnColonaddress = "urn:address".asInstanceOf[urnColonaddress]
-  @scala.inline
-  def urnColonlocation: urnColonlocation = "urn:location".asInstanceOf[urnColonlocation]
-  @scala.inline
-  def xsdColonanyType: xsdColonanyType = "xsd:anyType".asInstanceOf[xsdColonanyType]
-  @scala.inline
-  def xsdColonbase64Binary: xsdColonbase64Binary = "xsd:base64Binary".asInstanceOf[xsdColonbase64Binary]
-  @scala.inline
-  def xsdColonboolean: xsdColonboolean = "xsd:boolean".asInstanceOf[xsdColonboolean]
-  @scala.inline
-  def xsdColondate: xsdColondate = "xsd:date".asInstanceOf[xsdColondate]
-  @scala.inline
-  def xsdColondateTime: xsdColondateTime = "xsd:dateTime".asInstanceOf[xsdColondateTime]
-  @scala.inline
-  def xsdColondouble: xsdColondouble = "xsd:double".asInstanceOf[xsdColondouble]
-  @scala.inline
-  def xsdColonint: xsdColonint = "xsd:int".asInstanceOf[xsdColonint]
-  @scala.inline
-  def xsdColonstring: xsdColonstring = "xsd:string".asInstanceOf[xsdColonstring]
-  @scala.inline
-  def xsdColontime: xsdColontime = "xsd:time".asInstanceOf[xsdColontime]
+  sealed trait xsdColontime
+    extends StObject
+       with SOAPType
+  inline def xsdColontime: xsdColontime = "xsd:time".asInstanceOf[xsdColontime]
 }
-

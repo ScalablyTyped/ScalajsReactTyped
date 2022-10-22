@@ -1,48 +1,98 @@
 package typingsJapgolly.storybookChannelWebsocket
 
-import typingsJapgolly.std.Event_
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Event
 import typingsJapgolly.storybookChannels.mod.Channel
 import typingsJapgolly.storybookChannels.mod.ChannelHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/channel-websocket", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait CreateChannelArgs extends js.Object {
-    var async: Boolean = js.native
-    @JSName("onError")
-    var onError_Original: OnError = js.native
-    var url: String = js.native
-    def onError(message: Event_): Unit = js.native
-  }
+object mod {
   
+  @JSImport("@storybook/channel-websocket", JSImport.Namespace)
   @js.native
-  class WebsocketTransport protected () extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUrlAsyncOnError.asInstanceOf[js.Any]).asInstanceOf[Channel]
+  
+  @JSImport("@storybook/channel-websocket", "WebsocketTransport")
+  @js.native
+  open class WebsocketTransport protected () extends StObject {
     def this(hasUrlOnError: WebsocketTransportArgs) = this()
-    var buffer: js.Any = js.native
-    var connect: js.Any = js.native
-    var flush: js.Any = js.native
-    var handler: js.Any = js.native
-    var isReady: js.Any = js.native
-    var sendLater: js.Any = js.native
-    var sendNow: js.Any = js.native
-    var socket: js.Any = js.native
-    def send(event: js.Any): Unit = js.native
+    
+    /* private */ var buffer: Any = js.native
+    
+    /* private */ var connect: Any = js.native
+    
+    /* private */ var flush: Any = js.native
+    
+    /* private */ var handler: Any = js.native
+    
+    /* private */ var isReady: Any = js.native
+    
+    def send(event: Any): Unit = js.native
+    
+    /* private */ var sendLater: Any = js.native
+    
+    /* private */ var sendNow: Any = js.native
+    
     def setHandler(handler: ChannelHandler): Unit = js.native
+    
+    /* private */ var socket: Any = js.native
   }
   
-  @js.native
-  trait WebsocketTransportArgs extends js.Object {
+  trait CreateChannelArgs extends StObject {
+    
+    var async: js.UndefOr[Boolean] = js.undefined
+    
+    var onError: js.UndefOr[OnError] = js.undefined
+    
+    var url: String
+  }
+  object CreateChannelArgs {
+    
+    inline def apply(url: String): CreateChannelArgs = {
+      val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[CreateChannelArgs]
+    }
+    
+    extension [Self <: CreateChannelArgs](x: Self) {
+      
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      
+      inline def setOnError(value: /* message */ Event => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: /* message */ Event) => value(t0).runNow()))
+      
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  type OnError = js.Function1[/* message */ Event, Unit]
+  
+  trait WebsocketTransportArgs extends StObject {
+    
+    def onError(message: Event): Unit
     @JSName("onError")
-    var onError_Original: OnError = js.native
-    var url: String = js.native
-    def onError(message: Event_): Unit = js.native
+    var onError_Original: OnError
+    
+    var url: String
   }
-  
-  def default(hasUrlAsyncOnError: CreateChannelArgs): Channel = js.native
-  type OnError = js.Function1[/* message */ Event_, Unit]
+  object WebsocketTransportArgs {
+    
+    inline def apply(onError: /* message */ Event => Callback, url: String): WebsocketTransportArgs = {
+      val __obj = js.Dynamic.literal(onError = js.Any.fromFunction1((t0: /* message */ Event) => onError(t0).runNow()), url = url.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebsocketTransportArgs]
+    }
+    
+    extension [Self <: WebsocketTransportArgs](x: Self) {
+      
+      inline def setOnError(value: /* message */ Event => Callback): Self = StObject.set(x, "onError", js.Any.fromFunction1((t0: /* message */ Event) => value(t0).runNow()))
+      
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

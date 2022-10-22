@@ -1,44 +1,40 @@
 package typingsJapgolly.cswAasJs.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.cswAasJs.realmRoleMod.RealmRoleProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.cswAasJs.distComponentsAuthorizationRealmRoleMod.RealmRoleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RealmRole {
-  def apply(
-    realmRole: String,
-    error: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    RealmRoleProps, 
-    MountedWithRawType[RealmRoleProps, js.Object, RawMounted[RealmRoleProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(realmRole = realmRole.asInstanceOf[js.Any])
   
-      if (error != null) __obj.updateDynamic("error")(error.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.cswAasJs.realmRoleMod.RealmRoleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.cswAasJs.realmRoleMod.RealmRoleProps])(children: _*)
+  inline def apply(realmRole: String): Builder = {
+    val __props = js.Dynamic.literal(realmRole = realmRole.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RealmRoleProps]))
   }
-  @JSImport("csw-aas-js/dist/components/authorization/RealmRole", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("csw-aas-js", "RealmRole")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def error(value: VdomNode): this.type = set("error", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def errorNull: this.type = set("error", null)
+    
+    inline def errorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("error", js.Array(value*))
+    
+    inline def errorVdomElement(value: VdomElement): this.type = set("error", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RealmRoleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

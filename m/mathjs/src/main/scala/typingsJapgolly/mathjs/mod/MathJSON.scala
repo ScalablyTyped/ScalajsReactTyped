@@ -1,23 +1,38 @@
 package typingsJapgolly.mathjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MathJSON extends js.Object {
+trait MathJSON extends StObject {
+  
   var fixPrefix: js.UndefOr[Boolean] = js.undefined
+  
   var mathjs: js.UndefOr[String] = js.undefined
+  
   var unit: String
+  
   var value: Double
 }
-
 object MathJSON {
-  @scala.inline
-  def apply(unit: String, value: Double, fixPrefix: js.UndefOr[Boolean] = js.undefined, mathjs: String = null): MathJSON = {
+  
+  inline def apply(unit: String, value: Double): MathJSON = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixPrefix)) __obj.updateDynamic("fixPrefix")(fixPrefix.asInstanceOf[js.Any])
-    if (mathjs != null) __obj.updateDynamic("mathjs")(mathjs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MathJSON]
   }
+  
+  extension [Self <: MathJSON](x: Self) {
+    
+    inline def setFixPrefix(value: Boolean): Self = StObject.set(x, "fixPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setFixPrefixUndefined: Self = StObject.set(x, "fixPrefix", js.undefined)
+    
+    inline def setMathjs(value: String): Self = StObject.set(x, "mathjs", value.asInstanceOf[js.Any])
+    
+    inline def setMathjsUndefined: Self = StObject.set(x, "mathjs", js.undefined)
+    
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

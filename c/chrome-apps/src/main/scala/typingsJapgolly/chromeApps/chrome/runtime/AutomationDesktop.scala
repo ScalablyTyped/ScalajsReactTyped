@@ -1,21 +1,31 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
 import typingsJapgolly.chromeApps.chromeAppsBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AutomationDesktop extends _AutomationOptions {
+trait AutomationDesktop
+  extends StObject
+     with _AutomationOptions {
+  
   var desktop: `true`
+  
   var interact: js.UndefOr[`true`] = js.undefined
 }
-
 object AutomationDesktop {
-  @scala.inline
-  def apply(desktop: `true`, interact: `true` = null): AutomationDesktop = {
-    val __obj = js.Dynamic.literal(desktop = desktop.asInstanceOf[js.Any])
-    if (interact != null) __obj.updateDynamic("interact")(interact.asInstanceOf[js.Any])
+  
+  inline def apply(): AutomationDesktop = {
+    val __obj = js.Dynamic.literal(desktop = true)
     __obj.asInstanceOf[AutomationDesktop]
   }
+  
+  extension [Self <: AutomationDesktop](x: Self) {
+    
+    inline def setDesktop(value: `true`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    
+    inline def setInteract(value: `true`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
+    
+    inline def setInteractUndefined: Self = StObject.set(x, "interact", js.undefined)
+  }
 }
-

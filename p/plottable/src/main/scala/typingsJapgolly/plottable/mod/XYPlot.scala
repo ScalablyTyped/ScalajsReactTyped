@@ -1,8 +1,8 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "XYPlot")
 @js.native
@@ -13,14 +13,22 @@ import scala.scalajs.js.annotation._
   * @param {Scale} xScale The x scale to use.
   * @param {Scale} yScale The y scale to use.
   */
-class XYPlot[X, Y] ()
-  extends typingsJapgolly.plottable.xyPlotMod.XYPlot[X, Y]
-
+open class XYPlot[X, Y] ()
+  extends typingsJapgolly.plottable.buildSrcPlotsXyPlotMod.XYPlot[X, Y]
 /* static members */
-@JSImport("plottable", "XYPlot")
-@js.native
-object XYPlot extends js.Object {
-  var _X_KEY: String = js.native
-  var _Y_KEY: String = js.native
+object XYPlot {
+  
+  @JSImport("plottable", "XYPlot")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("plottable", "XYPlot._X_KEY")
+  @js.native
+  def _X_KEY: String = js.native
+  inline def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
+  
+  @JSImport("plottable", "XYPlot._Y_KEY")
+  @js.native
+  def _Y_KEY: String = js.native
+  inline def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
 }
-

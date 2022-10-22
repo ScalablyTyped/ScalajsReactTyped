@@ -1,101 +1,71 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import typingsJapgolly.std.stdStrings.shippingaddresschange
-import typingsJapgolly.std.stdStrings.shippingoptionchange
+import typingsJapgolly.std.stdStrings.paymentmethodchange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This Payment Request API interface is the primary access point into the API, and lets web content and apps accept payments from the end user. */
+/**
+  * This Payment Request API interface is the primary access point into the API, and lets web content and apps accept payments from the end user.
+  * Available only in secure contexts.
+  */
 @js.native
-trait PaymentRequest extends EventTarget {
-  val id: java.lang.String = js.native
-  var onshippingaddresschange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onshippingoptionchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val shippingAddress: PaymentAddress | Null = js.native
-  val shippingOption: java.lang.String | Null = js.native
-  val shippingType: PaymentShippingType | Null = js.native
+trait PaymentRequest
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   def abort(): js.Promise[Unit] = js.native
+  
+  /* standard dom */
   @JSName("addEventListener")
-  def addEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  def addEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_shippingoptionchange(
-    `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_shippingoptionchange(
-    `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
   def canMakePayment(): js.Promise[scala.Boolean] = js.native
+  
+  /* standard dom */
+  val id: java.lang.String = js.native
+  
+  /* standard dom */
+  var onpaymentmethodchange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
-  def removeEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  def removeEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def removeEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_paymentmethodchange(
+    `type`: paymentmethodchange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_shippingaddresschange(
-    `type`: shippingaddresschange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_shippingoptionchange(`type`: shippingoptionchange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_shippingoptionchange(
-    `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_shippingoptionchange(
-    `type`: shippingoptionchange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
   def show(): js.Promise[PaymentResponse] = js.native
+  def show(detailsPromise: PaymentDetailsUpdate): js.Promise[PaymentResponse] = js.native
+  def show(detailsPromise: PromiseLike[PaymentDetailsUpdate]): js.Promise[PaymentResponse] = js.native
 }
-
-@JSGlobal("PaymentRequest")
-@js.native
-object PaymentRequest
-  extends Instantiable2[
-      /* methodData */ js.Array[PaymentMethodData], 
-      /* details */ PaymentDetailsInit, 
-      PaymentRequest
-    ]
-     with Instantiable3[
-      /* methodData */ js.Array[PaymentMethodData], 
-      /* details */ PaymentDetailsInit, 
-      /* options */ PaymentOptions, 
-      PaymentRequest
-    ]
-

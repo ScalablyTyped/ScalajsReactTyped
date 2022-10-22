@@ -1,22 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorProps extends js.Object {
+trait ColorProps extends StObject {
+  
   // Clash with HTMLAttributes interface declared in React module
   // that includes a non-standard HTML attribute `color?: string`.
-  // Type here should be `ResponsiveValue<CSS.ColorProperty>`.
-  val color: js.UndefOr[js.Any] = js.undefined
+  // Type here should be `ResponsiveValue<CSS.Property.Color>`.
+  val color: js.UndefOr[Any] = js.undefined
 }
-
 object ColorProps {
-  @scala.inline
-  def apply(color: js.Any = null): ColorProps = {
+  
+  inline def apply(): ColorProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorProps]
   }
+  
+  extension [Self <: ColorProps](x: Self) {
+    
+    inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+  }
 }
-

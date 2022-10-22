@@ -10,15 +10,15 @@ evaluate statically-analyzable expressions
 | ------------------ | :-------------: |
 | Full name          | static-eval |
 | Keywords           | static, eval, expression, esprima, ast, abstract, syntax, tree, analysis |
-| # releases         | 4 |
-| # dependents       | 47 |
-| # downloads        | 38375614 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8005992.0 |
+| # stars            | 161.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/static-eval)
-- [Bugs](https://github.com/substack/static-eval/issues)
-- [Repository](https://github.com/substack/static-eval)
+- [Homepage](https://github.com/browserify/static-eval)
+- [Bugs](https://github.com/browserify/static-eval/issues)
+- [Repository](https://github.com/browserify/static-eval)
 - [Npm](https://www.npmjs.com/package/static-eval)
     
 

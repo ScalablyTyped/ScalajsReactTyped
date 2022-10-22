@@ -1,32 +1,61 @@
 package typingsJapgolly.asn1js.mod
 
+import typingsJapgolly.pvtsutils.mod.BufferSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalConstructedValueBlockParams extends LocalBaseBlockParams {
+/* Inlined parent asn1js.asn1js.ValueBlockParams */
+/* Inlined parent std.Partial<asn1js.asn1js.ILocalConstructedValueBlock> */
+trait LocalConstructedValueBlockParams extends StObject {
+  
+  var blockLength: js.UndefOr[Double] = js.undefined
+  
+  var error: js.UndefOr[String] = js.undefined
+  
   var isIndefiniteForm: js.UndefOr[scala.Boolean] = js.undefined
-  var value: js.UndefOr[LocalValueBlock] = js.undefined
+  
+  var value: js.UndefOr[js.Array[ConstructedItem]] = js.undefined
+  
+  var valueBeforeDecode: js.UndefOr[BufferSource] = js.undefined
+  
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object LocalConstructedValueBlockParams {
-  @scala.inline
-  def apply(
-    blockLength: Int | Double = null,
-    error: String = null,
-    isIndefiniteForm: js.UndefOr[scala.Boolean] = js.undefined,
-    value: LocalValueBlock = null,
-    valueBeforeDecode: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    warnings: js.Array[String] = null
-  ): LocalConstructedValueBlockParams = {
+  
+  inline def apply(): LocalConstructedValueBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIndefiniteForm)) __obj.updateDynamic("isIndefiniteForm")(isIndefiniteForm.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalConstructedValueBlockParams]
   }
+  
+  extension [Self <: LocalConstructedValueBlockParams](x: Self) {
+    
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    
+    inline def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setIsIndefiniteForm(value: scala.Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
+    
+    inline def setIsIndefiniteFormUndefined: Self = StObject.set(x, "isIndefiniteForm", js.undefined)
+    
+    inline def setValue(value: js.Array[ConstructedItem]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueBeforeDecode(value: BufferSource): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+    
+    inline def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setValueVarargs(value: ConstructedItem*): Self = StObject.set(x, "value", js.Array(value*))
+    
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
+  }
 }
-

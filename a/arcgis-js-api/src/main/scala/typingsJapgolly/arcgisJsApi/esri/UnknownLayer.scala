@@ -1,18 +1,15 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnknownLayer extends Layer {
+trait UnknownLayer
+  extends StObject
+     with Layer {
+  
   @JSName("type")
   val type_UnknownLayer: unknown = js.native
 }
-
-@JSGlobal("__esri.UnknownLayer")
-@js.native
-object UnknownLayer extends TopLevel[UnknownLayerConstructor]
-

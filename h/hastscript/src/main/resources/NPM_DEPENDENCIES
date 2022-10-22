@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hastscript" : "7.0.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hastscript" : "7.0.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

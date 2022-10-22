@@ -2,9 +2,9 @@ package typingsJapgolly.umbraco.umbraco.services
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -23,18 +23,8 @@ import scala.scalajs.js.annotation._
   * Section navigation and search, and maintain their state for the entire application lifetime
   *
   */
-trait INotificationsService extends js.Object {
-  /**
-    * @ngdoc property
-    * @name umbraco.services.notificationsService#current
-    * @propertyOf umbraco.services.notificationsService
-    *
-    * @description
-    * Returns an array of current notifications to display
-    *
-    * @returns {string} returns an array
-    */
-  var current: js.Array[String]
+trait INotificationsService extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#add
@@ -53,7 +43,21 @@ trait INotificationsService extends js.Object {
     * @returns {Object} args notification object
     */
   def add(item: INotificationItem): INotification
-  def addView(view: String, args: js.Any*): Unit
+  
+  def addView(view: String, args: Any*): Unit
+  
+  /**
+    * @ngdoc property
+    * @name umbraco.services.notificationsService#current
+    * @propertyOf umbraco.services.notificationsService
+    *
+    * @description
+    * Returns an array of current notifications to display
+    *
+    * @returns {string} returns an array
+    */
+  var current: js.Array[String]
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#error
@@ -68,6 +72,7 @@ trait INotificationsService extends js.Object {
     * @returns {Object} notification object
     */
   def error(headline: String, message: String): INotification
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#getCurrent
@@ -77,7 +82,9 @@ trait INotificationsService extends js.Object {
     * Method to return all notifications from the notifcations collection
     */
   def getCurrent(): js.Array[INotification]
+  
   def hasView(view: String): Boolean
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#warning
@@ -93,6 +100,7 @@ trait INotificationsService extends js.Object {
     * @returns {Object} notification object
     */
   def info(headline: String, message: String): INotification
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#remove
@@ -104,6 +112,7 @@ trait INotificationsService extends js.Object {
     * @param {Int} index index where the notication should be removed from
     */
   def remove(index: Double): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#removeAll
@@ -113,6 +122,7 @@ trait INotificationsService extends js.Object {
     * Removes all notifications from the notifcations collection
     */
   def removeAll(): Unit
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#showNotification
@@ -124,6 +134,7 @@ trait INotificationsService extends js.Object {
     * @returns {Object} args notification object
     */
   def showNotification(args: INotificationArgs): INotification
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#success
@@ -138,6 +149,7 @@ trait INotificationsService extends js.Object {
     * @returns {Object} notification object
     */
   def success(headline: String, message: String): INotification
+  
   /**
     * @ngdoc method
     * @name umbraco.services.notificationsService#warning
@@ -154,36 +166,52 @@ trait INotificationsService extends js.Object {
     */
   def warning(headline: String, message: String): INotification
 }
-
 object INotificationsService {
-  @scala.inline
-  def apply(
-    add: INotificationItem => CallbackTo[INotification],
-    addView: (String, /* repeated */ js.Any) => Callback,
+  
+  inline def apply(
+    add: INotificationItem => INotification,
+    addView: (String, /* repeated */ Any) => Callback,
     current: js.Array[String],
-    error: (String, String) => CallbackTo[INotification],
+    error: (String, String) => INotification,
     getCurrent: CallbackTo[js.Array[INotification]],
-    hasView: String => CallbackTo[Boolean],
-    info: (String, String) => CallbackTo[INotification],
+    hasView: String => Boolean,
+    info: (String, String) => INotification,
     remove: Double => Callback,
     removeAll: Callback,
-    showNotification: INotificationArgs => CallbackTo[INotification],
-    success: (String, String) => CallbackTo[INotification],
-    warning: (String, String) => CallbackTo[INotification]
+    showNotification: INotificationArgs => INotification,
+    success: (String, String) => INotification,
+    warning: (String, String) => INotification
   ): INotificationsService = {
-    val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any])
-    __obj.updateDynamic("add")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.INotificationItem) => add(t0).runNow()))
-    __obj.updateDynamic("addView")(js.Any.fromFunction2((t0: java.lang.String, t1: /* repeated */ js.Any) => addView(t0, t1).runNow()))
-    __obj.updateDynamic("error")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => error(t0, t1).runNow()))
-    __obj.updateDynamic("getCurrent")(getCurrent.toJsFn)
-    __obj.updateDynamic("hasView")(js.Any.fromFunction1((t0: java.lang.String) => hasView(t0).runNow()))
-    __obj.updateDynamic("info")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => info(t0, t1).runNow()))
-    __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: scala.Double) => remove(t0).runNow()))
-    __obj.updateDynamic("removeAll")(removeAll.toJsFn)
-    __obj.updateDynamic("showNotification")(js.Any.fromFunction1((t0: typingsJapgolly.umbraco.umbraco.services.INotificationArgs) => showNotification(t0).runNow()))
-    __obj.updateDynamic("success")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => success(t0, t1).runNow()))
-    __obj.updateDynamic("warning")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => warning(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), addView = js.Any.fromFunction2((t0: String, t1: /* repeated */ Any) => (addView(t0, t1)).runNow()), current = current.asInstanceOf[js.Any], error = js.Any.fromFunction2(error), getCurrent = getCurrent.toJsFn, hasView = js.Any.fromFunction1(hasView), info = js.Any.fromFunction2(info), remove = js.Any.fromFunction1((t0: Double) => remove(t0).runNow()), removeAll = removeAll.toJsFn, showNotification = js.Any.fromFunction1(showNotification), success = js.Any.fromFunction2(success), warning = js.Any.fromFunction2(warning))
     __obj.asInstanceOf[INotificationsService]
   }
+  
+  extension [Self <: INotificationsService](x: Self) {
+    
+    inline def setAdd(value: INotificationItem => INotification): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    
+    inline def setAddView(value: (String, /* repeated */ Any) => Callback): Self = StObject.set(x, "addView", js.Any.fromFunction2((t0: String, t1: /* repeated */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setCurrent(value: js.Array[String]): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentVarargs(value: String*): Self = StObject.set(x, "current", js.Array(value*))
+    
+    inline def setError(value: (String, String) => INotification): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
+    
+    inline def setGetCurrent(value: CallbackTo[js.Array[INotification]]): Self = StObject.set(x, "getCurrent", value.toJsFn)
+    
+    inline def setHasView(value: String => Boolean): Self = StObject.set(x, "hasView", js.Any.fromFunction1(value))
+    
+    inline def setInfo(value: (String, String) => INotification): Self = StObject.set(x, "info", js.Any.fromFunction2(value))
+    
+    inline def setRemove(value: Double => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setRemoveAll(value: Callback): Self = StObject.set(x, "removeAll", value.toJsFn)
+    
+    inline def setShowNotification(value: INotificationArgs => INotification): Self = StObject.set(x, "showNotification", js.Any.fromFunction1(value))
+    
+    inline def setSuccess(value: (String, String) => INotification): Self = StObject.set(x, "success", js.Any.fromFunction2(value))
+    
+    inline def setWarning(value: (String, String) => INotification): Self = StObject.set(x, "warning", js.Any.fromFunction2(value))
+  }
 }
-

@@ -1,31 +1,41 @@
 package typingsJapgolly.ionic.definitionsMod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.ionic.AnonReq
+import typingsJapgolly.ionic.anon.Req
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IClient extends js.Object {
+trait IClient extends StObject {
+  
   var config: IConfig
+  
   def `do`(req: SuperAgentRequest): js.Promise[APIResponseSuccess]
-  def make(method: HttpMethod, path: String): js.Promise[AnonReq]
+  
+  def make(method: HttpMethod, path: String): js.Promise[Req]
+  
   def paginate[T /* <: Response[js.Array[js.Object]] */](args: PaginateArgs[T]): IPaginator[T, PaginatorState]
 }
-
 object IClient {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     config: IConfig,
-    `do`: SuperAgentRequest => CallbackTo[js.Promise[APIResponseSuccess]],
-    make: (HttpMethod, String) => CallbackTo[js.Promise[AnonReq]],
-    paginate: PaginateArgs[js.Any] => CallbackTo[IPaginator[js.Any, PaginatorState]]
+    `do`: SuperAgentRequest => js.Promise[APIResponseSuccess],
+    make: (HttpMethod, String) => js.Promise[Req],
+    paginate: PaginateArgs[Any] => IPaginator[Any, PaginatorState]
   ): IClient = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
-    __obj.updateDynamic("do")(js.Any.fromFunction1((t0: typingsJapgolly.ionic.definitionsMod.SuperAgentRequest) => `do`(t0).runNow()))
-    __obj.updateDynamic("make")(js.Any.fromFunction2((t0: typingsJapgolly.ionic.definitionsMod.HttpMethod, t1: java.lang.String) => make(t0, t1).runNow()))
-    __obj.updateDynamic("paginate")(js.Any.fromFunction1((t0: typingsJapgolly.ionic.definitionsMod.PaginateArgs[js.Any]) => paginate(t0).runNow()))
+    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], make = js.Any.fromFunction2(make), paginate = js.Any.fromFunction1(paginate))
+    __obj.updateDynamic("do")(js.Any.fromFunction1(`do`))
     __obj.asInstanceOf[IClient]
   }
+  
+  extension [Self <: IClient](x: Self) {
+    
+    inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setDo(value: SuperAgentRequest => js.Promise[APIResponseSuccess]): Self = StObject.set(x, "do", js.Any.fromFunction1(value))
+    
+    inline def setMake(value: (HttpMethod, String) => js.Promise[Req]): Self = StObject.set(x, "make", js.Any.fromFunction2(value))
+    
+    inline def setPaginate(value: PaginateArgs[Any] => IPaginator[Any, PaginatorState]): Self = StObject.set(x, "paginate", js.Any.fromFunction1(value))
+  }
 }
-

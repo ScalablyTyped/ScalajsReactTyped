@@ -1,39 +1,32 @@
 package typingsJapgolly.sinonTest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sinonTestStrings {
-  @js.native
-  sealed trait clock extends js.Object
   
   @js.native
-  sealed trait mock extends js.Object
+  sealed trait clock extends StObject
+  inline def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
-  sealed trait requests extends js.Object
+  sealed trait mock extends StObject
+  inline def mock: mock = "mock".asInstanceOf[mock]
   
   @js.native
-  sealed trait server extends js.Object
+  sealed trait requests extends StObject
+  inline def requests: requests = "requests".asInstanceOf[requests]
   
   @js.native
-  sealed trait spy extends js.Object
+  sealed trait server extends StObject
+  inline def server: server = "server".asInstanceOf[server]
   
   @js.native
-  sealed trait stub extends js.Object
+  sealed trait spy extends StObject
+  inline def spy: spy = "spy".asInstanceOf[spy]
   
-  @scala.inline
-  def clock: clock = "clock".asInstanceOf[clock]
-  @scala.inline
-  def mock: mock = "mock".asInstanceOf[mock]
-  @scala.inline
-  def requests: requests = "requests".asInstanceOf[requests]
-  @scala.inline
-  def server: server = "server".asInstanceOf[server]
-  @scala.inline
-  def spy: spy = "spy".asInstanceOf[spy]
-  @scala.inline
-  def stub: stub = "stub".asInstanceOf[stub]
+  @js.native
+  sealed trait stub extends StObject
+  inline def stub: stub = "stub".asInstanceOf[stub]
 }
-

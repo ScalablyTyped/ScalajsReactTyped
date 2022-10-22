@@ -1,19 +1,19 @@
 
 # Scala.js typings for getopts
 
-Typings are for version 2.2.5
+Typings are for version 2.3.0
 
 ## Library description:
-Parse CLI options, better.
+Parse CLI arguments.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | getopts |
-| Keywords           | getopts, cli, argv, flags, yargs, options, minimist, cli-parser |
-| # releases         | 16 |
-| # dependents       | 64 |
-| # downloads        | 6791339 |
-| # stars            | 5 |
+| Keywords           | cli, argv, flags, parse, getopts, minimist, cli-parser |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4104297.0 |
+| # stars            | 620.0 |
 
 ## Links
 - [Homepage](https://github.com/jorgebucaran/getopts#readme)

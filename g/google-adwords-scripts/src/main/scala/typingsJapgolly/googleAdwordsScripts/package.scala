@@ -1,9 +1,9 @@
-package typingsJapgolly
+package typingsJapgolly.googleAdwordsScripts
 
+import typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST_AND_LIST
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object googleAdwordsScripts {
-  type CriterionTypeGroup = typingsJapgolly.googleAdwordsScripts.googleAdwordsScriptsStrings.USER_INTEREST_AND_LIST
-}
+
+type CriterionTypeGroup = USER_INTEREST_AND_LIST

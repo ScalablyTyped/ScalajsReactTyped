@@ -1,19 +1,19 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Utf8StringParams extends js.Object {
-  var value: js.UndefOr[String] = js.undefined
-}
-
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.asn1js.mod.LocalStringValueBlockParams because Already inherited
+- typingsJapgolly.asn1js.mod.BaseBlockParams because Already inherited
+- typingsJapgolly.asn1js.mod.LocalSimpleStringBlockParams because var conflicts: blockLength, error, idBlock, lenBlock, name, optional, primitiveSchema, value, valueBeforeDecode, valueHex, warnings. Inlined  */ trait Utf8StringParams
+  extends StObject
+     with BaseStringBlockParams
 object Utf8StringParams {
-  @scala.inline
-  def apply(value: String = null): Utf8StringParams = {
+  
+  inline def apply(): Utf8StringParams = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utf8StringParams]
   }
 }
-

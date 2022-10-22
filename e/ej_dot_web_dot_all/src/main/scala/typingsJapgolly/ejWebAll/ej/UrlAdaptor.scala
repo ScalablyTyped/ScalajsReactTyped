@@ -1,25 +1,32 @@
 package typingsJapgolly.ejWebAll.ej
 
-import typingsJapgolly.ejWebAll.AnonContentType
-import typingsJapgolly.ejWebAll.AnonData
-import typingsJapgolly.ejWebAll.AnonType
-import typingsJapgolly.ejWebAll.AnonUrl
+import typingsJapgolly.ejWebAll.anon.Data
+import typingsJapgolly.ejWebAll.anon.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.UrlAdaptor")
 @js.native
-class UrlAdaptor () extends Adaptor {
-  def batchRequest(dm: DataManager, changes: Changes, e: js.Any): Unit = js.native
-  def beforeSend(dm: DataManager, request: js.Any): Unit = js.native
-  def beforeSend(dm: DataManager, request: js.Any, settings: js.Any): Unit = js.native
-  def getFiltersFrom(data: js.Any, query: Query): Predicate = js.native
-  def insert(dm: DataManager, data: js.Any, tableName: String): AnonData = js.native
-  def onAggregates(e: js.Any): Unit = js.native
-  def onGroup(e: js.Any): Unit = js.native
-  def processQuery(dm: DataManager, query: Query, hierarchyFilters: js.Any): AnonContentType = js.native
-  def remove(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonType = js.native
-  def update(dm: DataManager, keyField: String, value: js.Any, tableName: String): AnonUrl = js.native
+trait UrlAdaptor
+  extends StObject
+     with Adaptor {
+  
+  def batchRequest(dm: DataManager, changes: Changes, e: Any): Unit = js.native
+  
+  def beforeSend(dm: DataManager, request: Any): Unit = js.native
+  def beforeSend(dm: DataManager, request: Any, settings: Any): Unit = js.native
+  
+  def getFiltersFrom(data: Any, query: Query): Predicate = js.native
+  
+  def insert(dm: DataManager, data: Any, tableName: String): Data = js.native
+  
+  def onAggregates(e: Any): Unit = js.native
+  
+  def onGroup(e: Any): Unit = js.native
+  
+  def processQuery(dm: DataManager, query: Query, hierarchyFilters: Any): typingsJapgolly.ejWebAll.anon.ContentType = js.native
+  
+  def remove(dm: DataManager, keyField: String, value: Any, tableName: String): typingsJapgolly.ejWebAll.anon.Type = js.native
+  
+  def update(dm: DataManager, keyField: String, value: Any, tableName: String): Url = js.native
 }
-

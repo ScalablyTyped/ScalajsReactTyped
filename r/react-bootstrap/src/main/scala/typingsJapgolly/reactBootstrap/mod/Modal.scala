@@ -1,24 +1,72 @@
 package typingsJapgolly.reactBootstrap.mod
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.reactBootstrap.modalBodyMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Modal")
 @js.native
-class Modal ()
+open class Modal ()
   extends typingsJapgolly.reactBootstrap.libMod.Modal
-
-/* static members */
-@JSImport("react-bootstrap", "Modal")
-@js.native
-object Modal extends js.Object {
-  var Body: Instantiable0[^] = js.native
-  var Dialog: Instantiable0[typingsJapgolly.reactBootstrap.modalDialogMod.^] = js.native
-  var Footer: Instantiable0[typingsJapgolly.reactBootstrap.modalFooterMod.^] = js.native
-  var Header: Instantiable0[typingsJapgolly.reactBootstrap.modalHeaderMod.^] = js.native
-  var Title: Instantiable0[typingsJapgolly.reactBootstrap.modalTitleMod.^] = js.native
+object Modal {
+  
+  @JSImport("react-bootstrap", "Modal")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Modal.Body")
+  @js.native
+  open class Body ()
+    extends typingsJapgolly.reactBootstrap.libModalBodyMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Modal.Body")
+  @js.native
+  def Body: Instantiable0[typingsJapgolly.reactBootstrap.libModalBodyMod.^] = js.native
+  inline def Body_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libModalBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Modal.Dialog")
+  @js.native
+  open class Dialog ()
+    extends typingsJapgolly.reactBootstrap.libModalDialogMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Modal.Dialog")
+  @js.native
+  def Dialog: Instantiable0[typingsJapgolly.reactBootstrap.libModalDialogMod.^] = js.native
+  inline def Dialog_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libModalDialogMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dialog")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Modal.Footer")
+  @js.native
+  open class Footer ()
+    extends typingsJapgolly.reactBootstrap.libModalFooterMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Modal.Footer")
+  @js.native
+  def Footer: Instantiable0[typingsJapgolly.reactBootstrap.libModalFooterMod.^] = js.native
+  inline def Footer_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libModalFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Modal.Header")
+  @js.native
+  open class Header ()
+    extends typingsJapgolly.reactBootstrap.libModalHeaderMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Modal.Header")
+  @js.native
+  def Header: Instantiable0[typingsJapgolly.reactBootstrap.libModalHeaderMod.^] = js.native
+  inline def Header_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libModalHeaderMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap", "Modal.Title")
+  @js.native
+  open class Title ()
+    extends typingsJapgolly.reactBootstrap.libModalTitleMod.^
+  /* static member */
+  @JSImport("react-bootstrap", "Modal.Title")
+  @js.native
+  def Title: Instantiable0[typingsJapgolly.reactBootstrap.libModalTitleMod.^] = js.native
+  inline def Title_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libModalTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
 }
-

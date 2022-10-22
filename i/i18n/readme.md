@@ -1,7 +1,7 @@
 
 # Scala.js typings for i18n
 
-Typings are for version 0.8
+Typings are for version 0.13
 
 ## Library description:
 lightweight translation module with dynamic json storage
@@ -10,10 +10,10 @@ lightweight translation module with dynamic json storage
 | ------------------ | :-------------: |
 | Full name          | i18n |
 | Keywords           | template, i18n, l10n |
-| # releases         | 2 |
-| # dependents       | 314 |
-| # downloads        | 6378976 |
-| # stars            | 93 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1028527.6666666666 |
+| # stars            | 2956.0 |
 
 ## Links
 - [Homepage](http://github.com/mashpie/i18n-node)

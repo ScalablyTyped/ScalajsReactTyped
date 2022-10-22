@@ -1,90 +1,136 @@
 package typingsJapgolly.linq4js
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Linq4JS")
-@js.native
-object Linq4JS extends js.Object {
-  @js.native
-  class EvaluateCommand protected () extends js.Object {
-    def this(command: String, identifier: String*) = this()
-    var Command: String = js.native
-    var Finder: Array[js.RegExp] = js.native
-    var SplitRegex: Array[js.RegExp] = js.native
-  }
+object Linq4JS {
   
   @js.native
-  class EvaluateCommandResult protected () extends js.Object {
-    def this(cmd: String, fn: String) = this()
-    var Command: String = js.native
-    var DynamicFunction: String = js.native
-  }
-  
+  sealed trait OrderDirection extends StObject
+  @JSGlobal("Linq4JS.OrderDirection")
   @js.native
-  class GeneratedEntity () extends js.Object {
-    var Id: Double = js.native
-    var _GeneratedId_ : Double = js.native
-  }
-  
-  @js.native
-  class Helper () extends js.Object
-  
-  @js.native
-  sealed trait OrderDirection extends js.Object
-  
-  @js.native
-  class OrderEntry protected () extends js.Object {
-    def this(_direction: OrderDirection, _valueSelector: js.Function1[/* item */ js.Any, _]) = this()
-    var Direction: OrderDirection = js.native
-    def ValueSelector(item: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  class SelectEntry protected () extends js.Object {
-    def this(n: String, p: String) = this()
-    var name: String = js.native
-    var property: String = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object Helper extends js.Object {
-    var Commands: Array[EvaluateCommand] = js.native
-    var ConvertStringFunction: js.Any = js.native
-    def ConvertFunction[T](testFunction: T): T = js.native
-    def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean): T = js.native
-    def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean, noBracketReplace: Boolean): T = js.native
-    def ConvertFunction[T](testFunction: String): T = js.native
-    def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean): T = js.native
-    def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean, noBracketReplace: Boolean): T = js.native
-    def CreateArrayData(array: Array[_]): Unit = js.native
-    def CreateArrayData(array: Array[_], value: js.Any): Unit = js.native
-    def MatchCommand(cmd: String): EvaluateCommandResult = js.native
-    def NonEnumerable(name: String, value: js.Function): Unit = js.native
-    def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, _], a: T, b: T, invert: Boolean): Double = js.native
-    def SplitCommand(command: String): Array[String] = js.native
-  }
-  
-  @js.native
-  object OrderDirection extends js.Object {
-    @js.native
-    sealed trait Ascending extends OrderDirection
+  object OrderDirection extends StObject {
     
     @js.native
-    sealed trait Descending extends OrderDirection
+    sealed trait Ascending
+      extends StObject
+         with OrderDirection
     
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OrderDirection with Double] = js.native
-    /* 0 */ @js.native
-    object Ascending extends TopLevel[Ascending with Double]
-    
-    /* 1 */ @js.native
-    object Descending extends TopLevel[Descending with Double]
-    
+    @js.native
+    sealed trait Descending
+      extends StObject
+         with OrderDirection
   }
   
+  trait EvaluateCommand extends StObject {
+    
+    var Command: String
+    
+    var Finder: Array[js.RegExp]
+    
+    var SplitRegex: Array[js.RegExp]
+  }
+  object EvaluateCommand {
+    
+    inline def apply(Command: String, Finder: Array[js.RegExp], SplitRegex: Array[js.RegExp]): EvaluateCommand = {
+      val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], Finder = Finder.asInstanceOf[js.Any], SplitRegex = SplitRegex.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EvaluateCommand]
+    }
+    
+    extension [Self <: EvaluateCommand](x: Self) {
+      
+      inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+      
+      inline def setFinder(value: Array[js.RegExp]): Self = StObject.set(x, "Finder", value.asInstanceOf[js.Any])
+      
+      inline def setSplitRegex(value: Array[js.RegExp]): Self = StObject.set(x, "SplitRegex", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait EvaluateCommandResult extends StObject {
+    
+    var Command: String
+    
+    var DynamicFunction: String
+  }
+  object EvaluateCommandResult {
+    
+    inline def apply(Command: String, DynamicFunction: String): EvaluateCommandResult = {
+      val __obj = js.Dynamic.literal(Command = Command.asInstanceOf[js.Any], DynamicFunction = DynamicFunction.asInstanceOf[js.Any])
+      __obj.asInstanceOf[EvaluateCommandResult]
+    }
+    
+    extension [Self <: EvaluateCommandResult](x: Self) {
+      
+      inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+      
+      inline def setDynamicFunction(value: String): Self = StObject.set(x, "DynamicFunction", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait GeneratedEntity extends StObject {
+    
+    var Id: Double
+    
+    var _GeneratedId_ : Double
+  }
+  object GeneratedEntity {
+    
+    inline def apply(Id: Double, _GeneratedId_ : Double): GeneratedEntity = {
+      val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], _GeneratedId_ = _GeneratedId_.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GeneratedEntity]
+    }
+    
+    extension [Self <: GeneratedEntity](x: Self) {
+      
+      inline def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      
+      inline def set_GeneratedId_(value: Double): Self = StObject.set(x, "_GeneratedId_", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait Helper extends StObject
+  
+  trait OrderEntry extends StObject {
+    
+    var Direction: OrderDirection
+    
+    def ValueSelector(item: Any): Any
+  }
+  object OrderEntry {
+    
+    inline def apply(Direction: OrderDirection, ValueSelector: Any => Any): OrderEntry = {
+      val __obj = js.Dynamic.literal(Direction = Direction.asInstanceOf[js.Any], ValueSelector = js.Any.fromFunction1(ValueSelector))
+      __obj.asInstanceOf[OrderEntry]
+    }
+    
+    extension [Self <: OrderEntry](x: Self) {
+      
+      inline def setDirection(value: OrderDirection): Self = StObject.set(x, "Direction", value.asInstanceOf[js.Any])
+      
+      inline def setValueSelector(value: Any => Any): Self = StObject.set(x, "ValueSelector", js.Any.fromFunction1(value))
+    }
+  }
+  
+  trait SelectEntry extends StObject {
+    
+    var name: String
+    
+    var property: String
+  }
+  object SelectEntry {
+    
+    inline def apply(name: String, property: String): SelectEntry = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
+      __obj.asInstanceOf[SelectEntry]
+    }
+    
+    extension [Self <: SelectEntry](x: Self) {
+      
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

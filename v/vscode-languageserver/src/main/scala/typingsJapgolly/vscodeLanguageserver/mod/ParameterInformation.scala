@@ -1,21 +1,34 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "ParameterInformation")
-@js.native
-object ParameterInformation extends js.Object {
+object ParameterInformation {
+  
+  @JSImport("vscode-languageserver", "ParameterInformation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new parameter information literal.
     *
     * @param label A label string.
     * @param documentation A doc string.
     */
-  def create(label: String): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
-  def create(label: String, documentation: String): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
-  def create(label: js.Tuple2[Double, Double]): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
-  def create(label: js.Tuple2[Double, Double], documentation: String): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = js.native
+  inline def create(label: String): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(label: String, documentation: String): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(
+    label: js.Tuple2[
+      typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger, 
+      typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger
+    ]
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation]
+  inline def create(
+    label: js.Tuple2[
+      typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger, 
+      typingsJapgolly.vscodeLanguageserverTypes.mod.uinteger
+    ],
+    documentation: String
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(label.asInstanceOf[js.Any], documentation.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.ParameterInformation]
 }
-

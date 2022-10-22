@@ -10,10 +10,10 @@ Get the diff from objectA to objectB
 | ------------------ | :-------------: |
 | Full name          | object-diff |
 | Keywords           | object, diff, patch |
-| # releases         | 0 |
-| # dependents       | 23 |
-| # downloads        | 687653 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121395.0 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/srcagency/object-diff#readme)

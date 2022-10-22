@@ -1,20 +1,40 @@
 package typingsJapgolly.meteor.meteorMod.Meteor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Error
-  extends typingsJapgolly.std.Error {
+  extends StObject
+     with typingsJapgolly.std.Error {
+  
   var details: js.UndefOr[String] = js.undefined
+  
   var error: String | Double
+  
   var reason: js.UndefOr[String] = js.undefined
 }
-
-/** User **/
-/** Error **/
-@JSImport("meteor/meteor", "Meteor.Error")
-@js.native
-object Error extends TopLevel[ErrorStatic]
-
+object Error {
+  
+  /** User **/
+  /** Error **/
+  /**
+    * This class represents a symbolic error thrown by a method.
+    */
+  @JSImport("meteor/meteor", "Meteor.Error")
+  @js.native
+  val ^ : ErrorStatic = js.native
+  
+  extension [Self <: Error](x: Self) {
+    
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+  }
+}

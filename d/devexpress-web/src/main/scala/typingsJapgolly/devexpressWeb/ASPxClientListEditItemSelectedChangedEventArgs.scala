@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientListEdit.SelectedIndexChanged event.
   */
-@JSGlobal("ASPxClientListEditItemSelectedChangedEventArgs")
-@js.native
-class ASPxClientListEditItemSelectedChangedEventArgs protected () extends ASPxClientProcessingModeEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientListEditItemSelectedChangedEventArgs class with the specified settings.
-    * @param index An integer value that specifies the index of an item.
-    * @param isSelected true if an item is selected; otherwise, false.
-    */
-  def this(index: Double, isSelected: Boolean) = this()
+trait ASPxClientListEditItemSelectedChangedEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
+  
   /**
     * Gets the index of the item related to the event.
     */
-  var index: Double = js.native
+  var index: Double
+  
   /**
     * Gets whether the item has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
 }
-
+object ASPxClientListEditItemSelectedChangedEventArgs {
+  
+  inline def apply(index: Double, isSelected: Boolean, processOnServer: Boolean): ASPxClientListEditItemSelectedChangedEventArgs = {
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientListEditItemSelectedChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientListEditItemSelectedChangedEventArgs](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+  }
+}

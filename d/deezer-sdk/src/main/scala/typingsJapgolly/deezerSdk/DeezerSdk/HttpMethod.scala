@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See:\
@@ -14,16 +14,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.POST
   - typingsJapgolly.deezerSdk.deezerSdkStrings.DELETE
 */
-trait HttpMethod extends js.Object
-
+trait HttpMethod extends StObject
 object HttpMethod {
-  @scala.inline
-  def DELETE: typingsJapgolly.deezerSdk.deezerSdkStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.deezerSdk.deezerSdkStrings.GET = this.cast("GET")
-  @scala.inline
-  def POST: typingsJapgolly.deezerSdk.deezerSdkStrings.POST = this.cast("POST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DELETE: typingsJapgolly.deezerSdk.deezerSdkStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.deezerSdk.deezerSdkStrings.GET = "GET".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.GET]
+  
+  inline def POST: typingsJapgolly.deezerSdk.deezerSdkStrings.POST = "POST".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.POST]
 }
-

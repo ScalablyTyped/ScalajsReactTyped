@@ -1,25 +1,30 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAxisData...
   */
-trait INxAxisData extends js.Object {
+trait INxAxisData extends StObject {
+  
   /**
     * List of Axis data.
     */
   var qAxis: js.Array[INxAxisTicks]
 }
-
 object INxAxisData {
-  @scala.inline
-  def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
-    val __obj = js.Dynamic.literal(qAxis = qAxis.asInstanceOf[js.Any])
   
+  inline def apply(qAxis: js.Array[INxAxisTicks]): INxAxisData = {
+    val __obj = js.Dynamic.literal(qAxis = qAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAxisData]
   }
+  
+  extension [Self <: INxAxisData](x: Self) {
+    
+    inline def setQAxis(value: js.Array[INxAxisTicks]): Self = StObject.set(x, "qAxis", value.asInstanceOf[js.Any])
+    
+    inline def setQAxisVarargs(value: INxAxisTicks*): Self = StObject.set(x, "qAxis", js.Array(value*))
+  }
 }
-

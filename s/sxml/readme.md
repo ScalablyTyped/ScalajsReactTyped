@@ -1,7 +1,7 @@
 
 # Scala.js typings for sxml
 
-Typings are for version 1.0.3
+Typings are for version 1.0.4
 
 ## Library description:
 Simple XML
@@ -10,15 +10,12 @@ Simple XML
 | ------------------ | :-------------: |
 | Full name          | sxml |
 | Keywords           | xml |
-| # releases         | 18 |
-| # dependents       | 1 |
-| # downloads        | 8523 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3643.0 |
+| # stars            | 13.0 |
 
 ## Links
-- [Homepage](https://github.com/samchon/sxml)
-- [Bugs](https://github.com/samchon/sxml/issues)
-- [Repository](https://github.com/samchon/sxml)
 - [Npm](https://www.npmjs.com/package/sxml)
     
 

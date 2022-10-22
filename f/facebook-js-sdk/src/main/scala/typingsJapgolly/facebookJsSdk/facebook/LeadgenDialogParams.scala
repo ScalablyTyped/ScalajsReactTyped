@@ -2,32 +2,38 @@ package typingsJapgolly.facebookJsSdk.facebook
 
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.lead_gen
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LeadgenDialogParams extends DialogParams {
+trait LeadgenDialogParams
+  extends StObject
+     with DialogParams {
+  
   var account_id: String
+  
   @JSName("display")
   var display_LeadgenDialogParams: popup
+  
   var method: lead_gen
+  
   var page_id: String
 }
-
 object LeadgenDialogParams {
-  @scala.inline
-  def apply(
-    account_id: String,
-    display: popup,
-    method: lead_gen,
-    page_id: String,
-    app_id: String = null,
-    redirect_uri: String = null
-  ): LeadgenDialogParams = {
-    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], page_id = page_id.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+  
+  inline def apply(account_id: String, page_id: String): LeadgenDialogParams = {
+    val __obj = js.Dynamic.literal(account_id = account_id.asInstanceOf[js.Any], display = "popup", method = "lead_gen", page_id = page_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LeadgenDialogParams]
   }
+  
+  extension [Self <: LeadgenDialogParams](x: Self) {
+    
+    inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: lead_gen): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setPage_id(value: String): Self = StObject.set(x, "page_id", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,51 +1,40 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorLength
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.inside
-import typingsJapgolly.devextreme.devextremeStrings.outside
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxCircularGauge.CircularGaugeElementOrientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxCircularGaugeScale extends BaseGaugeScale {
-  /** Specifies common options for scale labels. */
+trait dxCircularGaugeScale
+  extends StObject
+     with BaseGaugeScale {
+  
+  /**
+    * Specifies common properties for scale labels.
+    */
   @JSName("label")
   var label_dxCircularGaugeScale: js.UndefOr[dxCircularGaugeScaleLabel] = js.undefined
-  /** Specifies the orientation of scale ticks. */
-  var orientation: js.UndefOr[center | inside | outside] = js.undefined
+  
+  /**
+    * Specifies the orientation of scale ticks.
+    */
+  var orientation: js.UndefOr[CircularGaugeElementOrientation] = js.undefined
 }
-
 object dxCircularGaugeScale {
-  @scala.inline
-  def apply(
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    customMinorTicks: js.Array[Double] = null,
-    customTicks: js.Array[Double] = null,
-    endValue: Int | Double = null,
-    label: dxCircularGaugeScaleLabel = null,
-    minorTick: AnonColorLength = null,
-    minorTickInterval: Int | Double = null,
-    orientation: center | inside | outside = null,
-    scaleDivisionFactor: Int | Double = null,
-    startValue: Int | Double = null,
-    tick: AnonColorLength = null,
-    tickInterval: Int | Double = null
-  ): dxCircularGaugeScale = {
+  
+  inline def apply(): dxCircularGaugeScale = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (customMinorTicks != null) __obj.updateDynamic("customMinorTicks")(customMinorTicks.asInstanceOf[js.Any])
-    if (customTicks != null) __obj.updateDynamic("customTicks")(customTicks.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (scaleDivisionFactor != null) __obj.updateDynamic("scaleDivisionFactor")(scaleDivisionFactor.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxCircularGaugeScale]
   }
+  
+  extension [Self <: dxCircularGaugeScale](x: Self) {
+    
+    inline def setLabel(value: dxCircularGaugeScaleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setOrientation(value: CircularGaugeElementOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+  }
 }
-

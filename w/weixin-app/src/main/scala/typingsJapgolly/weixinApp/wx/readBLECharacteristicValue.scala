@@ -1,16 +1,53 @@
 package typingsJapgolly.weixinApp.wx
 
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.weixinApp.anon.characteristiccharacteris
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("wx.readBLECharacteristicValue")
-@js.native
-object readBLECharacteristicValue extends js.Object {
+trait ReadBLECharacteristicValue
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /**
-  	 * 读取低功耗蓝牙设备的特征值的二进制数据值。
-  	 * 注意：必须设备的特征值支持read才可以成功调用，具体参照 characteristic 的 properties 属性
-  	 */
-  def apply(options: ReadBLECharacteristicValue_): Unit = js.native
+    * 蓝牙特征值的 uuid
+    */
+  var characteristicId: String
+  
+  /**
+    * 蓝牙设备 id，参考 device 对象
+    */
+  var deviceId: String
+  
+  /**
+    * 蓝牙特征值对应服务的 uuid
+    */
+  var serviceId: String
+  
+  @JSName("success")
+  def success_MReadBLECharacteristicValue(res: characteristiccharacteris): Unit
 }
-
+object ReadBLECharacteristicValue {
+  
+  inline def apply(
+    characteristicId: String,
+    deviceId: String,
+    serviceId: String,
+    success: characteristiccharacteris => Callback
+  ): ReadBLECharacteristicValue = {
+    val __obj = js.Dynamic.literal(characteristicId = characteristicId.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], serviceId = serviceId.asInstanceOf[js.Any], success = js.Any.fromFunction1((t0: characteristiccharacteris) => success(t0).runNow()))
+    __obj.asInstanceOf[ReadBLECharacteristicValue]
+  }
+  
+  extension [Self <: ReadBLECharacteristicValue](x: Self) {
+    
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: characteristiccharacteris => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: characteristiccharacteris) => value(t0).runNow()))
+  }
+}

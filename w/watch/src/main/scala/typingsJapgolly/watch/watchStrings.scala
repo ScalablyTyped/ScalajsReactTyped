@@ -1,24 +1,20 @@
 package typingsJapgolly.watch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object watchStrings {
-  @js.native
-  sealed trait changed extends js.Object
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait changed extends StObject
+  inline def changed: changed = "changed".asInstanceOf[changed]
   
   @js.native
-  sealed trait removed extends js.Object
+  sealed trait created extends StObject
+  inline def created: created = "created".asInstanceOf[created]
   
-  @scala.inline
-  def changed: changed = "changed".asInstanceOf[changed]
-  @scala.inline
-  def created: created = "created".asInstanceOf[created]
-  @scala.inline
-  def removed: removed = "removed".asInstanceOf[removed]
+  @js.native
+  sealed trait removed extends StObject
+  inline def removed: removed = "removed".asInstanceOf[removed]
 }
-

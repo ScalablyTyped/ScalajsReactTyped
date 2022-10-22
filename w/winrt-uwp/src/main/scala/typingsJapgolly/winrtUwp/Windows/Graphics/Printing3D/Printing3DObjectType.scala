@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing3D
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Printing3DObjectType extends js.Object
-
+sealed trait Printing3DObjectType extends StObject
 /** Specifies the function of the object in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DObjectType")
 @js.native
-object Printing3DObjectType extends js.Object {
+object Printing3DObjectType extends StObject {
+  
   /** Functions as a core component of the 3D model. */
   @js.native
-  sealed trait model extends Printing3DObjectType
+  sealed trait model
+    extends StObject
+       with Printing3DObjectType
   
   /** Functions in some other capacity. */
   @js.native
-  sealed trait others extends Printing3DObjectType
+  sealed trait others
+    extends StObject
+       with Printing3DObjectType
   
   /** Functions as a support object. */
   @js.native
-  sealed trait support extends Printing3DObjectType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Printing3DObjectType with Double] = js.native
-  /* 0 */ @js.native
-  object model extends TopLevel[model with Double]
-  
-  /* 2 */ @js.native
-  object others extends TopLevel[others with Double]
-  
-  /* 1 */ @js.native
-  object support extends TopLevel[support with Double]
-  
+  sealed trait support
+    extends StObject
+       with Printing3DObjectType
 }
-

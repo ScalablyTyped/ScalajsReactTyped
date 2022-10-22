@@ -1,10 +1,10 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
 import typingsJapgolly.seleniumWebdriver.chromeMod.ServiceBuilder
-import typingsJapgolly.seleniumWebdriver.loggingMod.Preferences
+import typingsJapgolly.seleniumWebdriver.libLoggingMod.Preferences
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Builder")
 @js.native
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   */
-class Builder () extends js.Object {
+open class Builder () extends StObject {
+  
   /**
     * Creates a new WebDriver client based on this builder's current
     * configuration.
@@ -27,6 +28,7 @@ class Builder () extends js.Object {
     * @throws {Error} If the current configuration is invalid.
     */
   def build(): ThenableWebDriver = js.native
+  
   // endregion
   // region Methods
   /**
@@ -36,6 +38,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def disableEnvironmentOverrides(): Builder = js.native
+  
   /**
     * Configures the target browser for clients created by this instance.
     * Any calls to {@link #withCapabilities} after this function will
@@ -56,41 +59,50 @@ class Builder () extends js.Object {
   def forBrowser(name: String): Builder = js.native
   def forBrowser(name: String, opt_version: String): Builder = js.native
   def forBrowser(name: String, opt_version: String, opt_platform: String): Builder = js.native
+  def forBrowser(name: String, opt_version: Unit, opt_platform: String): Builder = js.native
+  
   /**
     * Returns the base set of capabilities this instance is currently configured
     * to use.
     * @return {!Capabilities} The current capabilities for this builder.
     */
-  def getCapabilities(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  def getCapabilities(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = js.native
+  
   /**
     * @return {chrome.Options} the Chrome specific options currently configured
     *     for this builder.
     */
   def getChromeOptions(): typingsJapgolly.seleniumWebdriver.chromeMod.Options = js.native
+  
   /**
     * @return {firefox.Options} the Firefox specific options currently configured
     *     for this instance.
     */
   def getFirefoxOptions(): typingsJapgolly.seleniumWebdriver.firefoxMod.Options = js.native
+  
   /**
     * @return {http.Agent} The http agent used for each request
     */
-  def getHttpAgent(): js.Any | Null = js.native
+  def getHttpAgent(): Any | Null = js.native
+  
   /**
     * @return {safari.Options} the Safari specific options currently configured
     *     for this instance.
     */
   def getSafariOptions(): typingsJapgolly.seleniumWebdriver.safariMod.Options = js.native
+  
   /**
     * @return {string} The URL of the WebDriver server this instance is
     *     configured to use.
     */
   def getServerUrl(): String = js.native
+  
   /**
     * @return {?string} The URL of the proxy server to use for the WebDriver's
     *    HTTP connections, or `null` if not set.
     */
   def getWebDriverProxy(): String | Null = js.native
+  
   /**
     * Sets the default action to take with an unexpected alert before returning
     * an error.
@@ -100,6 +112,7 @@ class Builder () extends js.Object {
     */
   def setAlertBehavior(): Builder = js.native
   def setAlertBehavior(behavior: String): Builder = js.native
+  
   /**
     * Sets Chrome-specific options for drivers created by this builder. Any
     * logging or proxy settings defined on the given options will take precedence
@@ -110,6 +123,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setChromeOptions(options: typingsJapgolly.seleniumWebdriver.chromeMod.Options): Builder = js.native
+  
   /**
     * Sets the service builder to use for managing the chromedriver child process
     * when creating new Chrome sessions.
@@ -118,6 +132,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setChromeService(service: ServiceBuilder): Builder = js.native
+  
   /**
     * Set {@linkplain edge.Options options} specific to Microsoft's Edge browser
     * for drivers created by this builder. Any proxy settings defined on the
@@ -128,6 +143,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setEdgeOptions(options: typingsJapgolly.seleniumWebdriver.edgeMod.Options): Builder = js.native
+  
   /**
     * Sets the {@link edge.ServiceBuilder} to use to manage the
     * MicrosoftEdgeDriver child process when creating sessions locally.
@@ -136,6 +152,7 @@ class Builder () extends js.Object {
     * @return {!Builder} a self reference.
     */
   def setEdgeService(service: typingsJapgolly.seleniumWebdriver.edgeMod.ServiceBuilder): Builder = js.native
+  
   /**
     * Sets Firefox-specific options for drivers created by this builder. Any
     * logging or proxy settings defined on the given options will take precedence
@@ -146,6 +163,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setFirefoxOptions(options: typingsJapgolly.seleniumWebdriver.firefoxMod.Options): Builder = js.native
+  
   /**
     * Sets the {@link firefox.ServiceBuilder} to use to manage the geckodriver
     * child process when creating Firefox sessions locally.
@@ -154,6 +172,7 @@ class Builder () extends js.Object {
     * @return {!Builder} a self reference.
     */
   def setFirefoxService(service: typingsJapgolly.seleniumWebdriver.firefoxMod.ServiceBuilder): Builder = js.native
+  
   /**
     * Set Internet Explorer specific {@linkplain ie.Options options} for drivers
     * created by this builder. Any proxy settings defined on the given options
@@ -163,6 +182,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setIeOptions(options: typingsJapgolly.seleniumWebdriver.ieMod.Options): Builder = js.native
+  
   /**
     * Sets the {@link ie.ServiceBuilder} to use to manage the geckodriver
     * child process when creating IE sessions locally.
@@ -171,6 +191,7 @@ class Builder () extends js.Object {
     * @return {!Builder} a self reference.
     */
   def setIeService(service: typingsJapgolly.seleniumWebdriver.ieMod.ServiceBuilder): Builder = js.native
+  
   def setLoggingPrefs(prefs: js.Object): Builder = js.native
   /**
     * Sets the logging preferences for the created session. Preferences may be
@@ -180,6 +201,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setLoggingPrefs(prefs: Preferences): Builder = js.native
+  
   /**
     * Sets the proxy configuration to use for WebDriver clients created by this
     * builder. Any calls to {@link #withCapabilities} after this function will
@@ -188,6 +210,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setProxy(config: ProxyConfig): Builder = js.native
+  
   /**
     * Sets Safari specific {@linkplain safari.Options options} for drivers
     * created by this builder. Any logging settings defined on the given options
@@ -197,6 +220,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def setSafariOptions(options: typingsJapgolly.seleniumWebdriver.safariMod.Options): Builder = js.native
+  
   /**
     * Sets the http agent to use for each request.
     * If this method is not called, the Builder will use http.globalAgent by
@@ -205,7 +229,8 @@ class Builder () extends js.Object {
     * @param {http.Agent} agent The agent to use for each request.
     * @return {!Builder} A self reference.
     */
-  def usingHttpAgent(agent: js.Any): Builder = js.native
+  def usingHttpAgent(agent: Any): Builder = js.native
+  
   /**
     * Sets the URL of a remote WebDriver server to use. Once a remote URL has
     * been specified, the builder direct all new clients to that server. If this
@@ -219,6 +244,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def usingServer(url: String): Builder = js.native
+  
   /**
     * Sets the URL of the proxy to use for the WebDriver's HTTP connections.
     * If this method is never called, the Builder will create a connection
@@ -228,6 +254,7 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def usingWebDriverProxy(proxy: String): Builder = js.native
+  
   /**
     * Sets the desired capabilities when requesting a new session. This will
     * overwrite any previously set capabilities.
@@ -236,6 +263,5 @@ class Builder () extends js.Object {
     * @return {!Builder} A self reference.
     */
   def withCapabilities(capabilities: js.Object): Builder = js.native
-  def withCapabilities(capabilities: typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities): Builder = js.native
+  def withCapabilities(capabilities: typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities): Builder = js.native
 }
-

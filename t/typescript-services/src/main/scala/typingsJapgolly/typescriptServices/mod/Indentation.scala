@@ -3,31 +3,39 @@ package typingsJapgolly.typescriptServices.mod
 import typingsJapgolly.typescriptServices.FormattingOptions
 import typingsJapgolly.typescriptServices.TypeScript.ISyntaxToken
 import typingsJapgolly.typescriptServices.TypeScript.ISyntaxTrivia
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "Indentation")
-@js.native
-object Indentation extends js.Object {
-  def columnForEndOfToken(
+object Indentation {
+  
+  @JSImport("typescript-services", "Indentation")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def columnForEndOfToken(
     token: ISyntaxToken,
     syntaxInformationMap: typingsJapgolly.typescriptServices.TypeScript.SyntaxInformationMap,
     options: FormattingOptions
-  ): Double = js.native
-  def columnForPositionInString(input: String, position: Double, options: FormattingOptions): Double = js.native
-  def columnForStartOfFirstTokenInLineContainingToken(
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("columnForEndOfToken")(token.asInstanceOf[js.Any], syntaxInformationMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def columnForPositionInString(input: String, position: Double, options: FormattingOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("columnForPositionInString")(input.asInstanceOf[js.Any], position.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def columnForStartOfFirstTokenInLineContainingToken(
     token: ISyntaxToken,
     syntaxInformationMap: typingsJapgolly.typescriptServices.TypeScript.SyntaxInformationMap,
     options: FormattingOptions
-  ): Double = js.native
-  def columnForStartOfToken(
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("columnForStartOfFirstTokenInLineContainingToken")(token.asInstanceOf[js.Any], syntaxInformationMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def columnForStartOfToken(
     token: ISyntaxToken,
     syntaxInformationMap: typingsJapgolly.typescriptServices.TypeScript.SyntaxInformationMap,
     options: FormattingOptions
-  ): Double = js.native
-  def firstNonWhitespacePosition(value: String): Double = js.native
-  def indentationString(column: Double, options: FormattingOptions): String = js.native
-  def indentationTrivia(column: Double, options: FormattingOptions): ISyntaxTrivia = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("columnForStartOfToken")(token.asInstanceOf[js.Any], syntaxInformationMap.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def firstNonWhitespacePosition(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("firstNonWhitespacePosition")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def indentationString(column: Double, options: FormattingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("indentationString")(column.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def indentationTrivia(column: Double, options: FormattingOptions): ISyntaxTrivia = (^.asInstanceOf[js.Dynamic].applyDynamic("indentationTrivia")(column.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ISyntaxTrivia]
 }
-

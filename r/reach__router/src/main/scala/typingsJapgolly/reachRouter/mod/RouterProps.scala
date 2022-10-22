@@ -1,31 +1,43 @@
 package typingsJapgolly.reachRouter.mod
 
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouterProps extends js.Object {
+trait RouterProps extends StObject {
+  
   var basepath: js.UndefOr[String] = js.undefined
+  
   var component: js.UndefOr[ComponentType[js.Object] | String] = js.undefined
-  var location: js.UndefOr[WindowLocation] = js.undefined
+  
+  var location: js.UndefOr[WindowLocation[Any]] = js.undefined
+  
   var primary: js.UndefOr[Boolean] = js.undefined
 }
-
 object RouterProps {
-  @scala.inline
-  def apply(
-    basepath: String = null,
-    component: ComponentType[js.Object] | String = null,
-    location: WindowLocation = null,
-    primary: js.UndefOr[Boolean] = js.undefined
-  ): RouterProps = {
+  
+  inline def apply(): RouterProps = {
     val __obj = js.Dynamic.literal()
-    if (basepath != null) __obj.updateDynamic("basepath")(basepath.asInstanceOf[js.Any])
-    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterProps]
   }
+  
+  extension [Self <: RouterProps](x: Self) {
+    
+    inline def setBasepath(value: String): Self = StObject.set(x, "basepath", value.asInstanceOf[js.Any])
+    
+    inline def setBasepathUndefined: Self = StObject.set(x, "basepath", js.undefined)
+    
+    inline def setComponent(value: ComponentType[js.Object] | String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    
+    inline def setLocation(value: WindowLocation[Any]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+  }
 }
-

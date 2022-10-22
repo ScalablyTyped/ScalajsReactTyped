@@ -1,21 +1,39 @@
 package typingsJapgolly.aureliaTemplating.mod
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.HTMLTemplateElement
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IStaticViewStrategyConfig extends js.Object {
-  var dependencies: js.UndefOr[js.Array[js.Function] | js.Object] = js.undefined
+trait IStaticViewStrategyConfig extends StObject {
+  
+  var dependencies: js.UndefOr[
+    js.Array[js.Function] | (js.Function0[js.Array[(js.Promise[Record[String, js.Function]]) | js.Function]])
+  ] = js.undefined
+  
   var template: String | HTMLTemplateElement
 }
-
 object IStaticViewStrategyConfig {
-  @scala.inline
-  def apply(template: String | HTMLTemplateElement, dependencies: js.Array[js.Function] | js.Object = null): IStaticViewStrategyConfig = {
+  
+  inline def apply(template: String | HTMLTemplateElement): IStaticViewStrategyConfig = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStaticViewStrategyConfig]
   }
+  
+  extension [Self <: IStaticViewStrategyConfig](x: Self) {
+    
+    inline def setDependencies(
+      value: js.Array[js.Function] | (js.Function0[js.Array[(js.Promise[Record[String, js.Function]]) | js.Function]])
+    ): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    
+    inline def setDependenciesCallbackTo(value: CallbackTo[js.Array[(js.Promise[Record[String, js.Function]]) | js.Function]]): Self = StObject.set(x, "dependencies", value.toJsFn)
+    
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    
+    inline def setDependenciesVarargs(value: js.Function*): Self = StObject.set(x, "dependencies", js.Array(value*))
+    
+    inline def setTemplate(value: String | HTMLTemplateElement): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+  }
 }
-

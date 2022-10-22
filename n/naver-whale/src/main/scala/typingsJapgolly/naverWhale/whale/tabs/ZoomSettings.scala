@@ -1,16 +1,18 @@
 package typingsJapgolly.naverWhale.whale.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZoomSettings extends js.Object {
+trait ZoomSettings extends StObject {
+  
   /**
     * Optional.
     * Used to return the default zoom level for the current tab in calls to tabs.getZoomSettings.
     * @since Chrome 43.
     */
   var defaultZoomFactor: js.UndefOr[Double] = js.undefined
+  
   /**
     * Optional.
     * Defines how zoom changes are handled, i.e. which entity is responsible for the actual scaling of the page; defaults to "automatic".
@@ -19,6 +21,7 @@ trait ZoomSettings extends js.Object {
     * "disabled": Disables all zooming in the tab. The tab will revert to the default zoom level, and all attempted zoom changes will be ignored.
     */
   var mode: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional.
     * Defines whether zoom changes will persist for the page's origin, or only take effect in this tab; defaults to per-origin when in automatic mode, and per-tab otherwise.
@@ -27,15 +30,25 @@ trait ZoomSettings extends js.Object {
     */
   var scope: js.UndefOr[String] = js.undefined
 }
-
 object ZoomSettings {
-  @scala.inline
-  def apply(defaultZoomFactor: Int | Double = null, mode: String = null, scope: String = null): ZoomSettings = {
+  
+  inline def apply(): ZoomSettings = {
     val __obj = js.Dynamic.literal()
-    if (defaultZoomFactor != null) __obj.updateDynamic("defaultZoomFactor")(defaultZoomFactor.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomSettings]
   }
+  
+  extension [Self <: ZoomSettings](x: Self) {
+    
+    inline def setDefaultZoomFactor(value: Double): Self = StObject.set(x, "defaultZoomFactor", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultZoomFactorUndefined: Self = StObject.set(x, "defaultZoomFactor", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+  }
 }
-

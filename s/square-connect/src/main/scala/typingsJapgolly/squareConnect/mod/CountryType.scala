@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.ZZ
@@ -256,510 +256,506 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.ZM
   - typingsJapgolly.squareConnect.squareConnectStrings.ZW
 */
-trait CountryType extends js.Object
-
+trait CountryType extends StObject
 object CountryType {
-  @scala.inline
-  def AD: typingsJapgolly.squareConnect.squareConnectStrings.AD = this.cast("AD")
-  @scala.inline
-  def AE: typingsJapgolly.squareConnect.squareConnectStrings.AE = this.cast("AE")
-  @scala.inline
-  def AF: typingsJapgolly.squareConnect.squareConnectStrings.AF = this.cast("AF")
-  @scala.inline
-  def AG: typingsJapgolly.squareConnect.squareConnectStrings.AG = this.cast("AG")
-  @scala.inline
-  def AI: typingsJapgolly.squareConnect.squareConnectStrings.AI = this.cast("AI")
-  @scala.inline
-  def AL: typingsJapgolly.squareConnect.squareConnectStrings.AL = this.cast("AL")
-  @scala.inline
-  def AM: typingsJapgolly.squareConnect.squareConnectStrings.AM = this.cast("AM")
-  @scala.inline
-  def AO: typingsJapgolly.squareConnect.squareConnectStrings.AO = this.cast("AO")
-  @scala.inline
-  def AQ: typingsJapgolly.squareConnect.squareConnectStrings.AQ = this.cast("AQ")
-  @scala.inline
-  def AR: typingsJapgolly.squareConnect.squareConnectStrings.AR = this.cast("AR")
-  @scala.inline
-  def AS: typingsJapgolly.squareConnect.squareConnectStrings.AS = this.cast("AS")
-  @scala.inline
-  def AT: typingsJapgolly.squareConnect.squareConnectStrings.AT = this.cast("AT")
-  @scala.inline
-  def AU: typingsJapgolly.squareConnect.squareConnectStrings.AU = this.cast("AU")
-  @scala.inline
-  def AW: typingsJapgolly.squareConnect.squareConnectStrings.AW = this.cast("AW")
-  @scala.inline
-  def AX: typingsJapgolly.squareConnect.squareConnectStrings.AX = this.cast("AX")
-  @scala.inline
-  def AZ: typingsJapgolly.squareConnect.squareConnectStrings.AZ = this.cast("AZ")
-  @scala.inline
-  def BA: typingsJapgolly.squareConnect.squareConnectStrings.BA = this.cast("BA")
-  @scala.inline
-  def BB: typingsJapgolly.squareConnect.squareConnectStrings.BB = this.cast("BB")
-  @scala.inline
-  def BD: typingsJapgolly.squareConnect.squareConnectStrings.BD = this.cast("BD")
-  @scala.inline
-  def BE: typingsJapgolly.squareConnect.squareConnectStrings.BE = this.cast("BE")
-  @scala.inline
-  def BF: typingsJapgolly.squareConnect.squareConnectStrings.BF = this.cast("BF")
-  @scala.inline
-  def BG: typingsJapgolly.squareConnect.squareConnectStrings.BG = this.cast("BG")
-  @scala.inline
-  def BH: typingsJapgolly.squareConnect.squareConnectStrings.BH = this.cast("BH")
-  @scala.inline
-  def BI: typingsJapgolly.squareConnect.squareConnectStrings.BI = this.cast("BI")
-  @scala.inline
-  def BJ: typingsJapgolly.squareConnect.squareConnectStrings.BJ = this.cast("BJ")
-  @scala.inline
-  def BL: typingsJapgolly.squareConnect.squareConnectStrings.BL = this.cast("BL")
-  @scala.inline
-  def BM: typingsJapgolly.squareConnect.squareConnectStrings.BM = this.cast("BM")
-  @scala.inline
-  def BN: typingsJapgolly.squareConnect.squareConnectStrings.BN = this.cast("BN")
-  @scala.inline
-  def BO: typingsJapgolly.squareConnect.squareConnectStrings.BO = this.cast("BO")
-  @scala.inline
-  def BQ: typingsJapgolly.squareConnect.squareConnectStrings.BQ = this.cast("BQ")
-  @scala.inline
-  def BR: typingsJapgolly.squareConnect.squareConnectStrings.BR = this.cast("BR")
-  @scala.inline
-  def BS: typingsJapgolly.squareConnect.squareConnectStrings.BS = this.cast("BS")
-  @scala.inline
-  def BT: typingsJapgolly.squareConnect.squareConnectStrings.BT = this.cast("BT")
-  @scala.inline
-  def BV: typingsJapgolly.squareConnect.squareConnectStrings.BV = this.cast("BV")
-  @scala.inline
-  def BW: typingsJapgolly.squareConnect.squareConnectStrings.BW = this.cast("BW")
-  @scala.inline
-  def BY: typingsJapgolly.squareConnect.squareConnectStrings.BY = this.cast("BY")
-  @scala.inline
-  def BZ: typingsJapgolly.squareConnect.squareConnectStrings.BZ = this.cast("BZ")
-  @scala.inline
-  def CA: typingsJapgolly.squareConnect.squareConnectStrings.CA = this.cast("CA")
-  @scala.inline
-  def CC: typingsJapgolly.squareConnect.squareConnectStrings.CC = this.cast("CC")
-  @scala.inline
-  def CD: typingsJapgolly.squareConnect.squareConnectStrings.CD = this.cast("CD")
-  @scala.inline
-  def CF: typingsJapgolly.squareConnect.squareConnectStrings.CF = this.cast("CF")
-  @scala.inline
-  def CG: typingsJapgolly.squareConnect.squareConnectStrings.CG = this.cast("CG")
-  @scala.inline
-  def CH: typingsJapgolly.squareConnect.squareConnectStrings.CH = this.cast("CH")
-  @scala.inline
-  def CI: typingsJapgolly.squareConnect.squareConnectStrings.CI = this.cast("CI")
-  @scala.inline
-  def CK: typingsJapgolly.squareConnect.squareConnectStrings.CK = this.cast("CK")
-  @scala.inline
-  def CL: typingsJapgolly.squareConnect.squareConnectStrings.CL = this.cast("CL")
-  @scala.inline
-  def CM: typingsJapgolly.squareConnect.squareConnectStrings.CM = this.cast("CM")
-  @scala.inline
-  def CN: typingsJapgolly.squareConnect.squareConnectStrings.CN = this.cast("CN")
-  @scala.inline
-  def CO: typingsJapgolly.squareConnect.squareConnectStrings.CO = this.cast("CO")
-  @scala.inline
-  def CR: typingsJapgolly.squareConnect.squareConnectStrings.CR = this.cast("CR")
-  @scala.inline
-  def CU: typingsJapgolly.squareConnect.squareConnectStrings.CU = this.cast("CU")
-  @scala.inline
-  def CV: typingsJapgolly.squareConnect.squareConnectStrings.CV = this.cast("CV")
-  @scala.inline
-  def CW: typingsJapgolly.squareConnect.squareConnectStrings.CW = this.cast("CW")
-  @scala.inline
-  def CX: typingsJapgolly.squareConnect.squareConnectStrings.CX = this.cast("CX")
-  @scala.inline
-  def CY: typingsJapgolly.squareConnect.squareConnectStrings.CY = this.cast("CY")
-  @scala.inline
-  def CZ: typingsJapgolly.squareConnect.squareConnectStrings.CZ = this.cast("CZ")
-  @scala.inline
-  def DE: typingsJapgolly.squareConnect.squareConnectStrings.DE = this.cast("DE")
-  @scala.inline
-  def DJ: typingsJapgolly.squareConnect.squareConnectStrings.DJ = this.cast("DJ")
-  @scala.inline
-  def DK: typingsJapgolly.squareConnect.squareConnectStrings.DK = this.cast("DK")
-  @scala.inline
-  def DM: typingsJapgolly.squareConnect.squareConnectStrings.DM = this.cast("DM")
-  @scala.inline
-  def DO: typingsJapgolly.squareConnect.squareConnectStrings.DO = this.cast("DO")
-  @scala.inline
-  def DZ: typingsJapgolly.squareConnect.squareConnectStrings.DZ = this.cast("DZ")
-  @scala.inline
-  def EC: typingsJapgolly.squareConnect.squareConnectStrings.EC = this.cast("EC")
-  @scala.inline
-  def EE: typingsJapgolly.squareConnect.squareConnectStrings.EE = this.cast("EE")
-  @scala.inline
-  def EG: typingsJapgolly.squareConnect.squareConnectStrings.EG = this.cast("EG")
-  @scala.inline
-  def EH: typingsJapgolly.squareConnect.squareConnectStrings.EH = this.cast("EH")
-  @scala.inline
-  def ER: typingsJapgolly.squareConnect.squareConnectStrings.ER = this.cast("ER")
-  @scala.inline
-  def ES: typingsJapgolly.squareConnect.squareConnectStrings.ES = this.cast("ES")
-  @scala.inline
-  def ET: typingsJapgolly.squareConnect.squareConnectStrings.ET = this.cast("ET")
-  @scala.inline
-  def FI: typingsJapgolly.squareConnect.squareConnectStrings.FI = this.cast("FI")
-  @scala.inline
-  def FJ: typingsJapgolly.squareConnect.squareConnectStrings.FJ = this.cast("FJ")
-  @scala.inline
-  def FK: typingsJapgolly.squareConnect.squareConnectStrings.FK = this.cast("FK")
-  @scala.inline
-  def FM: typingsJapgolly.squareConnect.squareConnectStrings.FM = this.cast("FM")
-  @scala.inline
-  def FO: typingsJapgolly.squareConnect.squareConnectStrings.FO = this.cast("FO")
-  @scala.inline
-  def FR: typingsJapgolly.squareConnect.squareConnectStrings.FR = this.cast("FR")
-  @scala.inline
-  def GA: typingsJapgolly.squareConnect.squareConnectStrings.GA = this.cast("GA")
-  @scala.inline
-  def GB: typingsJapgolly.squareConnect.squareConnectStrings.GB = this.cast("GB")
-  @scala.inline
-  def GD: typingsJapgolly.squareConnect.squareConnectStrings.GD = this.cast("GD")
-  @scala.inline
-  def GE: typingsJapgolly.squareConnect.squareConnectStrings.GE = this.cast("GE")
-  @scala.inline
-  def GF: typingsJapgolly.squareConnect.squareConnectStrings.GF = this.cast("GF")
-  @scala.inline
-  def GG: typingsJapgolly.squareConnect.squareConnectStrings.GG = this.cast("GG")
-  @scala.inline
-  def GH: typingsJapgolly.squareConnect.squareConnectStrings.GH = this.cast("GH")
-  @scala.inline
-  def GI: typingsJapgolly.squareConnect.squareConnectStrings.GI = this.cast("GI")
-  @scala.inline
-  def GL: typingsJapgolly.squareConnect.squareConnectStrings.GL = this.cast("GL")
-  @scala.inline
-  def GM: typingsJapgolly.squareConnect.squareConnectStrings.GM = this.cast("GM")
-  @scala.inline
-  def GN: typingsJapgolly.squareConnect.squareConnectStrings.GN = this.cast("GN")
-  @scala.inline
-  def GP: typingsJapgolly.squareConnect.squareConnectStrings.GP = this.cast("GP")
-  @scala.inline
-  def GQ: typingsJapgolly.squareConnect.squareConnectStrings.GQ = this.cast("GQ")
-  @scala.inline
-  def GR: typingsJapgolly.squareConnect.squareConnectStrings.GR = this.cast("GR")
-  @scala.inline
-  def GS: typingsJapgolly.squareConnect.squareConnectStrings.GS = this.cast("GS")
-  @scala.inline
-  def GT: typingsJapgolly.squareConnect.squareConnectStrings.GT = this.cast("GT")
-  @scala.inline
-  def GU: typingsJapgolly.squareConnect.squareConnectStrings.GU = this.cast("GU")
-  @scala.inline
-  def GW: typingsJapgolly.squareConnect.squareConnectStrings.GW = this.cast("GW")
-  @scala.inline
-  def GY: typingsJapgolly.squareConnect.squareConnectStrings.GY = this.cast("GY")
-  @scala.inline
-  def HK: typingsJapgolly.squareConnect.squareConnectStrings.HK = this.cast("HK")
-  @scala.inline
-  def HM: typingsJapgolly.squareConnect.squareConnectStrings.HM = this.cast("HM")
-  @scala.inline
-  def HN: typingsJapgolly.squareConnect.squareConnectStrings.HN = this.cast("HN")
-  @scala.inline
-  def HR: typingsJapgolly.squareConnect.squareConnectStrings.HR = this.cast("HR")
-  @scala.inline
-  def HT: typingsJapgolly.squareConnect.squareConnectStrings.HT = this.cast("HT")
-  @scala.inline
-  def HU: typingsJapgolly.squareConnect.squareConnectStrings.HU = this.cast("HU")
-  @scala.inline
-  def ID: typingsJapgolly.squareConnect.squareConnectStrings.ID = this.cast("ID")
-  @scala.inline
-  def IE: typingsJapgolly.squareConnect.squareConnectStrings.IE = this.cast("IE")
-  @scala.inline
-  def IL: typingsJapgolly.squareConnect.squareConnectStrings.IL = this.cast("IL")
-  @scala.inline
-  def IM: typingsJapgolly.squareConnect.squareConnectStrings.IM = this.cast("IM")
-  @scala.inline
-  def IN: typingsJapgolly.squareConnect.squareConnectStrings.IN = this.cast("IN")
-  @scala.inline
-  def IO: typingsJapgolly.squareConnect.squareConnectStrings.IO = this.cast("IO")
-  @scala.inline
-  def IQ: typingsJapgolly.squareConnect.squareConnectStrings.IQ = this.cast("IQ")
-  @scala.inline
-  def IR: typingsJapgolly.squareConnect.squareConnectStrings.IR = this.cast("IR")
-  @scala.inline
-  def IS: typingsJapgolly.squareConnect.squareConnectStrings.IS = this.cast("IS")
-  @scala.inline
-  def IT: typingsJapgolly.squareConnect.squareConnectStrings.IT = this.cast("IT")
-  @scala.inline
-  def JE: typingsJapgolly.squareConnect.squareConnectStrings.JE = this.cast("JE")
-  @scala.inline
-  def JM: typingsJapgolly.squareConnect.squareConnectStrings.JM = this.cast("JM")
-  @scala.inline
-  def JO: typingsJapgolly.squareConnect.squareConnectStrings.JO = this.cast("JO")
-  @scala.inline
-  def JP: typingsJapgolly.squareConnect.squareConnectStrings.JP = this.cast("JP")
-  @scala.inline
-  def KE: typingsJapgolly.squareConnect.squareConnectStrings.KE = this.cast("KE")
-  @scala.inline
-  def KG: typingsJapgolly.squareConnect.squareConnectStrings.KG = this.cast("KG")
-  @scala.inline
-  def KH: typingsJapgolly.squareConnect.squareConnectStrings.KH = this.cast("KH")
-  @scala.inline
-  def KI: typingsJapgolly.squareConnect.squareConnectStrings.KI = this.cast("KI")
-  @scala.inline
-  def KM: typingsJapgolly.squareConnect.squareConnectStrings.KM = this.cast("KM")
-  @scala.inline
-  def KN: typingsJapgolly.squareConnect.squareConnectStrings.KN = this.cast("KN")
-  @scala.inline
-  def KP: typingsJapgolly.squareConnect.squareConnectStrings.KP = this.cast("KP")
-  @scala.inline
-  def KR: typingsJapgolly.squareConnect.squareConnectStrings.KR = this.cast("KR")
-  @scala.inline
-  def KW: typingsJapgolly.squareConnect.squareConnectStrings.KW = this.cast("KW")
-  @scala.inline
-  def KY: typingsJapgolly.squareConnect.squareConnectStrings.KY = this.cast("KY")
-  @scala.inline
-  def KZ: typingsJapgolly.squareConnect.squareConnectStrings.KZ = this.cast("KZ")
-  @scala.inline
-  def LA: typingsJapgolly.squareConnect.squareConnectStrings.LA = this.cast("LA")
-  @scala.inline
-  def LB: typingsJapgolly.squareConnect.squareConnectStrings.LB = this.cast("LB")
-  @scala.inline
-  def LC: typingsJapgolly.squareConnect.squareConnectStrings.LC = this.cast("LC")
-  @scala.inline
-  def LI: typingsJapgolly.squareConnect.squareConnectStrings.LI = this.cast("LI")
-  @scala.inline
-  def LK: typingsJapgolly.squareConnect.squareConnectStrings.LK = this.cast("LK")
-  @scala.inline
-  def LR: typingsJapgolly.squareConnect.squareConnectStrings.LR = this.cast("LR")
-  @scala.inline
-  def LS: typingsJapgolly.squareConnect.squareConnectStrings.LS = this.cast("LS")
-  @scala.inline
-  def LT: typingsJapgolly.squareConnect.squareConnectStrings.LT = this.cast("LT")
-  @scala.inline
-  def LU: typingsJapgolly.squareConnect.squareConnectStrings.LU = this.cast("LU")
-  @scala.inline
-  def LV: typingsJapgolly.squareConnect.squareConnectStrings.LV = this.cast("LV")
-  @scala.inline
-  def LY: typingsJapgolly.squareConnect.squareConnectStrings.LY = this.cast("LY")
-  @scala.inline
-  def MA: typingsJapgolly.squareConnect.squareConnectStrings.MA = this.cast("MA")
-  @scala.inline
-  def MC: typingsJapgolly.squareConnect.squareConnectStrings.MC = this.cast("MC")
-  @scala.inline
-  def MD: typingsJapgolly.squareConnect.squareConnectStrings.MD = this.cast("MD")
-  @scala.inline
-  def ME: typingsJapgolly.squareConnect.squareConnectStrings.ME = this.cast("ME")
-  @scala.inline
-  def MF: typingsJapgolly.squareConnect.squareConnectStrings.MF = this.cast("MF")
-  @scala.inline
-  def MG: typingsJapgolly.squareConnect.squareConnectStrings.MG = this.cast("MG")
-  @scala.inline
-  def MH: typingsJapgolly.squareConnect.squareConnectStrings.MH = this.cast("MH")
-  @scala.inline
-  def MK: typingsJapgolly.squareConnect.squareConnectStrings.MK = this.cast("MK")
-  @scala.inline
-  def ML: typingsJapgolly.squareConnect.squareConnectStrings.ML = this.cast("ML")
-  @scala.inline
-  def MM: typingsJapgolly.squareConnect.squareConnectStrings.MM = this.cast("MM")
-  @scala.inline
-  def MN: typingsJapgolly.squareConnect.squareConnectStrings.MN = this.cast("MN")
-  @scala.inline
-  def MO: typingsJapgolly.squareConnect.squareConnectStrings.MO = this.cast("MO")
-  @scala.inline
-  def MP: typingsJapgolly.squareConnect.squareConnectStrings.MP = this.cast("MP")
-  @scala.inline
-  def MQ: typingsJapgolly.squareConnect.squareConnectStrings.MQ = this.cast("MQ")
-  @scala.inline
-  def MR: typingsJapgolly.squareConnect.squareConnectStrings.MR = this.cast("MR")
-  @scala.inline
-  def MS: typingsJapgolly.squareConnect.squareConnectStrings.MS = this.cast("MS")
-  @scala.inline
-  def MT: typingsJapgolly.squareConnect.squareConnectStrings.MT = this.cast("MT")
-  @scala.inline
-  def MU: typingsJapgolly.squareConnect.squareConnectStrings.MU = this.cast("MU")
-  @scala.inline
-  def MV: typingsJapgolly.squareConnect.squareConnectStrings.MV = this.cast("MV")
-  @scala.inline
-  def MW: typingsJapgolly.squareConnect.squareConnectStrings.MW = this.cast("MW")
-  @scala.inline
-  def MX: typingsJapgolly.squareConnect.squareConnectStrings.MX = this.cast("MX")
-  @scala.inline
-  def MY: typingsJapgolly.squareConnect.squareConnectStrings.MY = this.cast("MY")
-  @scala.inline
-  def MZ: typingsJapgolly.squareConnect.squareConnectStrings.MZ = this.cast("MZ")
-  @scala.inline
-  def NA: typingsJapgolly.squareConnect.squareConnectStrings.NA = this.cast("NA")
-  @scala.inline
-  def NC: typingsJapgolly.squareConnect.squareConnectStrings.NC = this.cast("NC")
-  @scala.inline
-  def NE: typingsJapgolly.squareConnect.squareConnectStrings.NE = this.cast("NE")
-  @scala.inline
-  def NF: typingsJapgolly.squareConnect.squareConnectStrings.NF = this.cast("NF")
-  @scala.inline
-  def NG: typingsJapgolly.squareConnect.squareConnectStrings.NG = this.cast("NG")
-  @scala.inline
-  def NI: typingsJapgolly.squareConnect.squareConnectStrings.NI = this.cast("NI")
-  @scala.inline
-  def NL: typingsJapgolly.squareConnect.squareConnectStrings.NL = this.cast("NL")
-  @scala.inline
-  def NO: typingsJapgolly.squareConnect.squareConnectStrings.NO = this.cast("NO")
-  @scala.inline
-  def NP: typingsJapgolly.squareConnect.squareConnectStrings.NP = this.cast("NP")
-  @scala.inline
-  def NR: typingsJapgolly.squareConnect.squareConnectStrings.NR = this.cast("NR")
-  @scala.inline
-  def NU: typingsJapgolly.squareConnect.squareConnectStrings.NU = this.cast("NU")
-  @scala.inline
-  def NZ: typingsJapgolly.squareConnect.squareConnectStrings.NZ = this.cast("NZ")
-  @scala.inline
-  def OM: typingsJapgolly.squareConnect.squareConnectStrings.OM = this.cast("OM")
-  @scala.inline
-  def PA: typingsJapgolly.squareConnect.squareConnectStrings.PA = this.cast("PA")
-  @scala.inline
-  def PE: typingsJapgolly.squareConnect.squareConnectStrings.PE = this.cast("PE")
-  @scala.inline
-  def PF: typingsJapgolly.squareConnect.squareConnectStrings.PF = this.cast("PF")
-  @scala.inline
-  def PG: typingsJapgolly.squareConnect.squareConnectStrings.PG = this.cast("PG")
-  @scala.inline
-  def PH: typingsJapgolly.squareConnect.squareConnectStrings.PH = this.cast("PH")
-  @scala.inline
-  def PK: typingsJapgolly.squareConnect.squareConnectStrings.PK = this.cast("PK")
-  @scala.inline
-  def PL: typingsJapgolly.squareConnect.squareConnectStrings.PL = this.cast("PL")
-  @scala.inline
-  def PM: typingsJapgolly.squareConnect.squareConnectStrings.PM = this.cast("PM")
-  @scala.inline
-  def PN: typingsJapgolly.squareConnect.squareConnectStrings.PN = this.cast("PN")
-  @scala.inline
-  def PR: typingsJapgolly.squareConnect.squareConnectStrings.PR = this.cast("PR")
-  @scala.inline
-  def PS: typingsJapgolly.squareConnect.squareConnectStrings.PS = this.cast("PS")
-  @scala.inline
-  def PT: typingsJapgolly.squareConnect.squareConnectStrings.PT = this.cast("PT")
-  @scala.inline
-  def PW: typingsJapgolly.squareConnect.squareConnectStrings.PW = this.cast("PW")
-  @scala.inline
-  def PY: typingsJapgolly.squareConnect.squareConnectStrings.PY = this.cast("PY")
-  @scala.inline
-  def QA: typingsJapgolly.squareConnect.squareConnectStrings.QA = this.cast("QA")
-  @scala.inline
-  def RE: typingsJapgolly.squareConnect.squareConnectStrings.RE = this.cast("RE")
-  @scala.inline
-  def RO: typingsJapgolly.squareConnect.squareConnectStrings.RO = this.cast("RO")
-  @scala.inline
-  def RS: typingsJapgolly.squareConnect.squareConnectStrings.RS = this.cast("RS")
-  @scala.inline
-  def RU: typingsJapgolly.squareConnect.squareConnectStrings.RU = this.cast("RU")
-  @scala.inline
-  def RW: typingsJapgolly.squareConnect.squareConnectStrings.RW = this.cast("RW")
-  @scala.inline
-  def SA: typingsJapgolly.squareConnect.squareConnectStrings.SA = this.cast("SA")
-  @scala.inline
-  def SB: typingsJapgolly.squareConnect.squareConnectStrings.SB = this.cast("SB")
-  @scala.inline
-  def SC: typingsJapgolly.squareConnect.squareConnectStrings.SC = this.cast("SC")
-  @scala.inline
-  def SD: typingsJapgolly.squareConnect.squareConnectStrings.SD = this.cast("SD")
-  @scala.inline
-  def SE: typingsJapgolly.squareConnect.squareConnectStrings.SE = this.cast("SE")
-  @scala.inline
-  def SG: typingsJapgolly.squareConnect.squareConnectStrings.SG = this.cast("SG")
-  @scala.inline
-  def SH: typingsJapgolly.squareConnect.squareConnectStrings.SH = this.cast("SH")
-  @scala.inline
-  def SI: typingsJapgolly.squareConnect.squareConnectStrings.SI = this.cast("SI")
-  @scala.inline
-  def SJ: typingsJapgolly.squareConnect.squareConnectStrings.SJ = this.cast("SJ")
-  @scala.inline
-  def SK: typingsJapgolly.squareConnect.squareConnectStrings.SK = this.cast("SK")
-  @scala.inline
-  def SL: typingsJapgolly.squareConnect.squareConnectStrings.SL = this.cast("SL")
-  @scala.inline
-  def SM: typingsJapgolly.squareConnect.squareConnectStrings.SM = this.cast("SM")
-  @scala.inline
-  def SN: typingsJapgolly.squareConnect.squareConnectStrings.SN = this.cast("SN")
-  @scala.inline
-  def SO: typingsJapgolly.squareConnect.squareConnectStrings.SO = this.cast("SO")
-  @scala.inline
-  def SR: typingsJapgolly.squareConnect.squareConnectStrings.SR = this.cast("SR")
-  @scala.inline
-  def SS: typingsJapgolly.squareConnect.squareConnectStrings.SS = this.cast("SS")
-  @scala.inline
-  def ST: typingsJapgolly.squareConnect.squareConnectStrings.ST = this.cast("ST")
-  @scala.inline
-  def SV: typingsJapgolly.squareConnect.squareConnectStrings.SV = this.cast("SV")
-  @scala.inline
-  def SX: typingsJapgolly.squareConnect.squareConnectStrings.SX = this.cast("SX")
-  @scala.inline
-  def SY: typingsJapgolly.squareConnect.squareConnectStrings.SY = this.cast("SY")
-  @scala.inline
-  def SZ: typingsJapgolly.squareConnect.squareConnectStrings.SZ = this.cast("SZ")
-  @scala.inline
-  def TC: typingsJapgolly.squareConnect.squareConnectStrings.TC = this.cast("TC")
-  @scala.inline
-  def TD: typingsJapgolly.squareConnect.squareConnectStrings.TD = this.cast("TD")
-  @scala.inline
-  def TF: typingsJapgolly.squareConnect.squareConnectStrings.TF = this.cast("TF")
-  @scala.inline
-  def TG: typingsJapgolly.squareConnect.squareConnectStrings.TG = this.cast("TG")
-  @scala.inline
-  def TH: typingsJapgolly.squareConnect.squareConnectStrings.TH = this.cast("TH")
-  @scala.inline
-  def TJ: typingsJapgolly.squareConnect.squareConnectStrings.TJ = this.cast("TJ")
-  @scala.inline
-  def TK: typingsJapgolly.squareConnect.squareConnectStrings.TK = this.cast("TK")
-  @scala.inline
-  def TL: typingsJapgolly.squareConnect.squareConnectStrings.TL = this.cast("TL")
-  @scala.inline
-  def TM: typingsJapgolly.squareConnect.squareConnectStrings.TM = this.cast("TM")
-  @scala.inline
-  def TN: typingsJapgolly.squareConnect.squareConnectStrings.TN = this.cast("TN")
-  @scala.inline
-  def TO: typingsJapgolly.squareConnect.squareConnectStrings.TO = this.cast("TO")
-  @scala.inline
-  def TR: typingsJapgolly.squareConnect.squareConnectStrings.TR = this.cast("TR")
-  @scala.inline
-  def TT: typingsJapgolly.squareConnect.squareConnectStrings.TT = this.cast("TT")
-  @scala.inline
-  def TV: typingsJapgolly.squareConnect.squareConnectStrings.TV = this.cast("TV")
-  @scala.inline
-  def TW: typingsJapgolly.squareConnect.squareConnectStrings.TW = this.cast("TW")
-  @scala.inline
-  def TZ: typingsJapgolly.squareConnect.squareConnectStrings.TZ = this.cast("TZ")
-  @scala.inline
-  def UA: typingsJapgolly.squareConnect.squareConnectStrings.UA = this.cast("UA")
-  @scala.inline
-  def UG: typingsJapgolly.squareConnect.squareConnectStrings.UG = this.cast("UG")
-  @scala.inline
-  def UM: typingsJapgolly.squareConnect.squareConnectStrings.UM = this.cast("UM")
-  @scala.inline
-  def US: typingsJapgolly.squareConnect.squareConnectStrings.US = this.cast("US")
-  @scala.inline
-  def UY: typingsJapgolly.squareConnect.squareConnectStrings.UY = this.cast("UY")
-  @scala.inline
-  def UZ: typingsJapgolly.squareConnect.squareConnectStrings.UZ = this.cast("UZ")
-  @scala.inline
-  def VA: typingsJapgolly.squareConnect.squareConnectStrings.VA = this.cast("VA")
-  @scala.inline
-  def VC: typingsJapgolly.squareConnect.squareConnectStrings.VC = this.cast("VC")
-  @scala.inline
-  def VE: typingsJapgolly.squareConnect.squareConnectStrings.VE = this.cast("VE")
-  @scala.inline
-  def VG: typingsJapgolly.squareConnect.squareConnectStrings.VG = this.cast("VG")
-  @scala.inline
-  def VI: typingsJapgolly.squareConnect.squareConnectStrings.VI = this.cast("VI")
-  @scala.inline
-  def VN: typingsJapgolly.squareConnect.squareConnectStrings.VN = this.cast("VN")
-  @scala.inline
-  def VU: typingsJapgolly.squareConnect.squareConnectStrings.VU = this.cast("VU")
-  @scala.inline
-  def WF: typingsJapgolly.squareConnect.squareConnectStrings.WF = this.cast("WF")
-  @scala.inline
-  def WS: typingsJapgolly.squareConnect.squareConnectStrings.WS = this.cast("WS")
-  @scala.inline
-  def YE: typingsJapgolly.squareConnect.squareConnectStrings.YE = this.cast("YE")
-  @scala.inline
-  def YT: typingsJapgolly.squareConnect.squareConnectStrings.YT = this.cast("YT")
-  @scala.inline
-  def ZA: typingsJapgolly.squareConnect.squareConnectStrings.ZA = this.cast("ZA")
-  @scala.inline
-  def ZM: typingsJapgolly.squareConnect.squareConnectStrings.ZM = this.cast("ZM")
-  @scala.inline
-  def ZW: typingsJapgolly.squareConnect.squareConnectStrings.ZW = this.cast("ZW")
-  @scala.inline
-  def ZZ: typingsJapgolly.squareConnect.squareConnectStrings.ZZ = this.cast("ZZ")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AD: typingsJapgolly.squareConnect.squareConnectStrings.AD = "AD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AD]
+  
+  inline def AE: typingsJapgolly.squareConnect.squareConnectStrings.AE = "AE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AE]
+  
+  inline def AF: typingsJapgolly.squareConnect.squareConnectStrings.AF = "AF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AF]
+  
+  inline def AG: typingsJapgolly.squareConnect.squareConnectStrings.AG = "AG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AG]
+  
+  inline def AI: typingsJapgolly.squareConnect.squareConnectStrings.AI = "AI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AI]
+  
+  inline def AL: typingsJapgolly.squareConnect.squareConnectStrings.AL = "AL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AL]
+  
+  inline def AM: typingsJapgolly.squareConnect.squareConnectStrings.AM = "AM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AM]
+  
+  inline def AO: typingsJapgolly.squareConnect.squareConnectStrings.AO = "AO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AO]
+  
+  inline def AQ: typingsJapgolly.squareConnect.squareConnectStrings.AQ = "AQ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AQ]
+  
+  inline def AR: typingsJapgolly.squareConnect.squareConnectStrings.AR = "AR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AR]
+  
+  inline def AS: typingsJapgolly.squareConnect.squareConnectStrings.AS = "AS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AS]
+  
+  inline def AT: typingsJapgolly.squareConnect.squareConnectStrings.AT = "AT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AT]
+  
+  inline def AU: typingsJapgolly.squareConnect.squareConnectStrings.AU = "AU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AU]
+  
+  inline def AW: typingsJapgolly.squareConnect.squareConnectStrings.AW = "AW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AW]
+  
+  inline def AX: typingsJapgolly.squareConnect.squareConnectStrings.AX = "AX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AX]
+  
+  inline def AZ: typingsJapgolly.squareConnect.squareConnectStrings.AZ = "AZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AZ]
+  
+  inline def BA: typingsJapgolly.squareConnect.squareConnectStrings.BA = "BA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BA]
+  
+  inline def BB: typingsJapgolly.squareConnect.squareConnectStrings.BB = "BB".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BB]
+  
+  inline def BD: typingsJapgolly.squareConnect.squareConnectStrings.BD = "BD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BD]
+  
+  inline def BE: typingsJapgolly.squareConnect.squareConnectStrings.BE = "BE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BE]
+  
+  inline def BF: typingsJapgolly.squareConnect.squareConnectStrings.BF = "BF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BF]
+  
+  inline def BG: typingsJapgolly.squareConnect.squareConnectStrings.BG = "BG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BG]
+  
+  inline def BH: typingsJapgolly.squareConnect.squareConnectStrings.BH = "BH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BH]
+  
+  inline def BI: typingsJapgolly.squareConnect.squareConnectStrings.BI = "BI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BI]
+  
+  inline def BJ: typingsJapgolly.squareConnect.squareConnectStrings.BJ = "BJ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BJ]
+  
+  inline def BL: typingsJapgolly.squareConnect.squareConnectStrings.BL = "BL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BL]
+  
+  inline def BM: typingsJapgolly.squareConnect.squareConnectStrings.BM = "BM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BM]
+  
+  inline def BN: typingsJapgolly.squareConnect.squareConnectStrings.BN = "BN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BN]
+  
+  inline def BO: typingsJapgolly.squareConnect.squareConnectStrings.BO = "BO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BO]
+  
+  inline def BQ: typingsJapgolly.squareConnect.squareConnectStrings.BQ = "BQ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BQ]
+  
+  inline def BR: typingsJapgolly.squareConnect.squareConnectStrings.BR = "BR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BR]
+  
+  inline def BS: typingsJapgolly.squareConnect.squareConnectStrings.BS = "BS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BS]
+  
+  inline def BT: typingsJapgolly.squareConnect.squareConnectStrings.BT = "BT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BT]
+  
+  inline def BV: typingsJapgolly.squareConnect.squareConnectStrings.BV = "BV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BV]
+  
+  inline def BW: typingsJapgolly.squareConnect.squareConnectStrings.BW = "BW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BW]
+  
+  inline def BY: typingsJapgolly.squareConnect.squareConnectStrings.BY = "BY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BY]
+  
+  inline def BZ: typingsJapgolly.squareConnect.squareConnectStrings.BZ = "BZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BZ]
+  
+  inline def CA: typingsJapgolly.squareConnect.squareConnectStrings.CA = "CA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CA]
+  
+  inline def CC: typingsJapgolly.squareConnect.squareConnectStrings.CC = "CC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CC]
+  
+  inline def CD: typingsJapgolly.squareConnect.squareConnectStrings.CD = "CD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CD]
+  
+  inline def CF: typingsJapgolly.squareConnect.squareConnectStrings.CF = "CF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CF]
+  
+  inline def CG: typingsJapgolly.squareConnect.squareConnectStrings.CG = "CG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CG]
+  
+  inline def CH: typingsJapgolly.squareConnect.squareConnectStrings.CH = "CH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CH]
+  
+  inline def CI: typingsJapgolly.squareConnect.squareConnectStrings.CI = "CI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CI]
+  
+  inline def CK: typingsJapgolly.squareConnect.squareConnectStrings.CK = "CK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CK]
+  
+  inline def CL: typingsJapgolly.squareConnect.squareConnectStrings.CL = "CL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CL]
+  
+  inline def CM: typingsJapgolly.squareConnect.squareConnectStrings.CM = "CM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CM]
+  
+  inline def CN: typingsJapgolly.squareConnect.squareConnectStrings.CN = "CN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CN]
+  
+  inline def CO: typingsJapgolly.squareConnect.squareConnectStrings.CO = "CO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CO]
+  
+  inline def CR: typingsJapgolly.squareConnect.squareConnectStrings.CR = "CR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CR]
+  
+  inline def CU: typingsJapgolly.squareConnect.squareConnectStrings.CU = "CU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CU]
+  
+  inline def CV: typingsJapgolly.squareConnect.squareConnectStrings.CV = "CV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CV]
+  
+  inline def CW: typingsJapgolly.squareConnect.squareConnectStrings.CW = "CW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CW]
+  
+  inline def CX: typingsJapgolly.squareConnect.squareConnectStrings.CX = "CX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CX]
+  
+  inline def CY: typingsJapgolly.squareConnect.squareConnectStrings.CY = "CY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CY]
+  
+  inline def CZ: typingsJapgolly.squareConnect.squareConnectStrings.CZ = "CZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CZ]
+  
+  inline def DE: typingsJapgolly.squareConnect.squareConnectStrings.DE = "DE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DE]
+  
+  inline def DJ: typingsJapgolly.squareConnect.squareConnectStrings.DJ = "DJ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DJ]
+  
+  inline def DK: typingsJapgolly.squareConnect.squareConnectStrings.DK = "DK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DK]
+  
+  inline def DM: typingsJapgolly.squareConnect.squareConnectStrings.DM = "DM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DM]
+  
+  inline def DO: typingsJapgolly.squareConnect.squareConnectStrings.DO = "DO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DO]
+  
+  inline def DZ: typingsJapgolly.squareConnect.squareConnectStrings.DZ = "DZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DZ]
+  
+  inline def EC: typingsJapgolly.squareConnect.squareConnectStrings.EC = "EC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EC]
+  
+  inline def EE: typingsJapgolly.squareConnect.squareConnectStrings.EE = "EE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EE]
+  
+  inline def EG: typingsJapgolly.squareConnect.squareConnectStrings.EG = "EG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EG]
+  
+  inline def EH: typingsJapgolly.squareConnect.squareConnectStrings.EH = "EH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EH]
+  
+  inline def ER: typingsJapgolly.squareConnect.squareConnectStrings.ER = "ER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ER]
+  
+  inline def ES: typingsJapgolly.squareConnect.squareConnectStrings.ES = "ES".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ES]
+  
+  inline def ET: typingsJapgolly.squareConnect.squareConnectStrings.ET = "ET".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ET]
+  
+  inline def FI: typingsJapgolly.squareConnect.squareConnectStrings.FI = "FI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FI]
+  
+  inline def FJ: typingsJapgolly.squareConnect.squareConnectStrings.FJ = "FJ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FJ]
+  
+  inline def FK: typingsJapgolly.squareConnect.squareConnectStrings.FK = "FK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FK]
+  
+  inline def FM: typingsJapgolly.squareConnect.squareConnectStrings.FM = "FM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FM]
+  
+  inline def FO: typingsJapgolly.squareConnect.squareConnectStrings.FO = "FO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FO]
+  
+  inline def FR: typingsJapgolly.squareConnect.squareConnectStrings.FR = "FR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FR]
+  
+  inline def GA: typingsJapgolly.squareConnect.squareConnectStrings.GA = "GA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GA]
+  
+  inline def GB: typingsJapgolly.squareConnect.squareConnectStrings.GB = "GB".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GB]
+  
+  inline def GD: typingsJapgolly.squareConnect.squareConnectStrings.GD = "GD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GD]
+  
+  inline def GE: typingsJapgolly.squareConnect.squareConnectStrings.GE = "GE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GE]
+  
+  inline def GF: typingsJapgolly.squareConnect.squareConnectStrings.GF = "GF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GF]
+  
+  inline def GG: typingsJapgolly.squareConnect.squareConnectStrings.GG = "GG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GG]
+  
+  inline def GH: typingsJapgolly.squareConnect.squareConnectStrings.GH = "GH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GH]
+  
+  inline def GI: typingsJapgolly.squareConnect.squareConnectStrings.GI = "GI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GI]
+  
+  inline def GL: typingsJapgolly.squareConnect.squareConnectStrings.GL = "GL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GL]
+  
+  inline def GM: typingsJapgolly.squareConnect.squareConnectStrings.GM = "GM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GM]
+  
+  inline def GN: typingsJapgolly.squareConnect.squareConnectStrings.GN = "GN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GN]
+  
+  inline def GP: typingsJapgolly.squareConnect.squareConnectStrings.GP = "GP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GP]
+  
+  inline def GQ: typingsJapgolly.squareConnect.squareConnectStrings.GQ = "GQ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GQ]
+  
+  inline def GR: typingsJapgolly.squareConnect.squareConnectStrings.GR = "GR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GR]
+  
+  inline def GS: typingsJapgolly.squareConnect.squareConnectStrings.GS = "GS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GS]
+  
+  inline def GT: typingsJapgolly.squareConnect.squareConnectStrings.GT = "GT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GT]
+  
+  inline def GU: typingsJapgolly.squareConnect.squareConnectStrings.GU = "GU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GU]
+  
+  inline def GW: typingsJapgolly.squareConnect.squareConnectStrings.GW = "GW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GW]
+  
+  inline def GY: typingsJapgolly.squareConnect.squareConnectStrings.GY = "GY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GY]
+  
+  inline def HK: typingsJapgolly.squareConnect.squareConnectStrings.HK = "HK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HK]
+  
+  inline def HM: typingsJapgolly.squareConnect.squareConnectStrings.HM = "HM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HM]
+  
+  inline def HN: typingsJapgolly.squareConnect.squareConnectStrings.HN = "HN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HN]
+  
+  inline def HR: typingsJapgolly.squareConnect.squareConnectStrings.HR = "HR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HR]
+  
+  inline def HT: typingsJapgolly.squareConnect.squareConnectStrings.HT = "HT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HT]
+  
+  inline def HU: typingsJapgolly.squareConnect.squareConnectStrings.HU = "HU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.HU]
+  
+  inline def ID: typingsJapgolly.squareConnect.squareConnectStrings.ID = "ID".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ID]
+  
+  inline def IE: typingsJapgolly.squareConnect.squareConnectStrings.IE = "IE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IE]
+  
+  inline def IL: typingsJapgolly.squareConnect.squareConnectStrings.IL = "IL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IL]
+  
+  inline def IM: typingsJapgolly.squareConnect.squareConnectStrings.IM = "IM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IM]
+  
+  inline def IN: typingsJapgolly.squareConnect.squareConnectStrings.IN = "IN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IN]
+  
+  inline def IO: typingsJapgolly.squareConnect.squareConnectStrings.IO = "IO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IO]
+  
+  inline def IQ: typingsJapgolly.squareConnect.squareConnectStrings.IQ = "IQ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IQ]
+  
+  inline def IR: typingsJapgolly.squareConnect.squareConnectStrings.IR = "IR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IR]
+  
+  inline def IS: typingsJapgolly.squareConnect.squareConnectStrings.IS = "IS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IS]
+  
+  inline def IT: typingsJapgolly.squareConnect.squareConnectStrings.IT = "IT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IT]
+  
+  inline def JE: typingsJapgolly.squareConnect.squareConnectStrings.JE = "JE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.JE]
+  
+  inline def JM: typingsJapgolly.squareConnect.squareConnectStrings.JM = "JM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.JM]
+  
+  inline def JO: typingsJapgolly.squareConnect.squareConnectStrings.JO = "JO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.JO]
+  
+  inline def JP: typingsJapgolly.squareConnect.squareConnectStrings.JP = "JP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.JP]
+  
+  inline def KE: typingsJapgolly.squareConnect.squareConnectStrings.KE = "KE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KE]
+  
+  inline def KG: typingsJapgolly.squareConnect.squareConnectStrings.KG = "KG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KG]
+  
+  inline def KH: typingsJapgolly.squareConnect.squareConnectStrings.KH = "KH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KH]
+  
+  inline def KI: typingsJapgolly.squareConnect.squareConnectStrings.KI = "KI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KI]
+  
+  inline def KM: typingsJapgolly.squareConnect.squareConnectStrings.KM = "KM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KM]
+  
+  inline def KN: typingsJapgolly.squareConnect.squareConnectStrings.KN = "KN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KN]
+  
+  inline def KP: typingsJapgolly.squareConnect.squareConnectStrings.KP = "KP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KP]
+  
+  inline def KR: typingsJapgolly.squareConnect.squareConnectStrings.KR = "KR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KR]
+  
+  inline def KW: typingsJapgolly.squareConnect.squareConnectStrings.KW = "KW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KW]
+  
+  inline def KY: typingsJapgolly.squareConnect.squareConnectStrings.KY = "KY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KY]
+  
+  inline def KZ: typingsJapgolly.squareConnect.squareConnectStrings.KZ = "KZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.KZ]
+  
+  inline def LA: typingsJapgolly.squareConnect.squareConnectStrings.LA = "LA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LA]
+  
+  inline def LB: typingsJapgolly.squareConnect.squareConnectStrings.LB = "LB".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LB]
+  
+  inline def LC: typingsJapgolly.squareConnect.squareConnectStrings.LC = "LC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LC]
+  
+  inline def LI: typingsJapgolly.squareConnect.squareConnectStrings.LI = "LI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LI]
+  
+  inline def LK: typingsJapgolly.squareConnect.squareConnectStrings.LK = "LK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LK]
+  
+  inline def LR: typingsJapgolly.squareConnect.squareConnectStrings.LR = "LR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LR]
+  
+  inline def LS: typingsJapgolly.squareConnect.squareConnectStrings.LS = "LS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LS]
+  
+  inline def LT: typingsJapgolly.squareConnect.squareConnectStrings.LT = "LT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LT]
+  
+  inline def LU: typingsJapgolly.squareConnect.squareConnectStrings.LU = "LU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LU]
+  
+  inline def LV: typingsJapgolly.squareConnect.squareConnectStrings.LV = "LV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LV]
+  
+  inline def LY: typingsJapgolly.squareConnect.squareConnectStrings.LY = "LY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LY]
+  
+  inline def MA: typingsJapgolly.squareConnect.squareConnectStrings.MA = "MA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MA]
+  
+  inline def MC: typingsJapgolly.squareConnect.squareConnectStrings.MC = "MC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MC]
+  
+  inline def MD: typingsJapgolly.squareConnect.squareConnectStrings.MD = "MD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MD]
+  
+  inline def ME: typingsJapgolly.squareConnect.squareConnectStrings.ME = "ME".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ME]
+  
+  inline def MF: typingsJapgolly.squareConnect.squareConnectStrings.MF = "MF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MF]
+  
+  inline def MG: typingsJapgolly.squareConnect.squareConnectStrings.MG = "MG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MG]
+  
+  inline def MH: typingsJapgolly.squareConnect.squareConnectStrings.MH = "MH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MH]
+  
+  inline def MK: typingsJapgolly.squareConnect.squareConnectStrings.MK = "MK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MK]
+  
+  inline def ML: typingsJapgolly.squareConnect.squareConnectStrings.ML = "ML".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ML]
+  
+  inline def MM: typingsJapgolly.squareConnect.squareConnectStrings.MM = "MM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MM]
+  
+  inline def MN: typingsJapgolly.squareConnect.squareConnectStrings.MN = "MN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MN]
+  
+  inline def MO: typingsJapgolly.squareConnect.squareConnectStrings.MO = "MO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MO]
+  
+  inline def MP: typingsJapgolly.squareConnect.squareConnectStrings.MP = "MP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MP]
+  
+  inline def MQ: typingsJapgolly.squareConnect.squareConnectStrings.MQ = "MQ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MQ]
+  
+  inline def MR: typingsJapgolly.squareConnect.squareConnectStrings.MR = "MR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MR]
+  
+  inline def MS: typingsJapgolly.squareConnect.squareConnectStrings.MS = "MS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MS]
+  
+  inline def MT: typingsJapgolly.squareConnect.squareConnectStrings.MT = "MT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MT]
+  
+  inline def MU: typingsJapgolly.squareConnect.squareConnectStrings.MU = "MU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MU]
+  
+  inline def MV: typingsJapgolly.squareConnect.squareConnectStrings.MV = "MV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MV]
+  
+  inline def MW: typingsJapgolly.squareConnect.squareConnectStrings.MW = "MW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MW]
+  
+  inline def MX: typingsJapgolly.squareConnect.squareConnectStrings.MX = "MX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MX]
+  
+  inline def MY: typingsJapgolly.squareConnect.squareConnectStrings.MY = "MY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MY]
+  
+  inline def MZ: typingsJapgolly.squareConnect.squareConnectStrings.MZ = "MZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MZ]
+  
+  inline def NA: typingsJapgolly.squareConnect.squareConnectStrings.NA = "NA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NA]
+  
+  inline def NC: typingsJapgolly.squareConnect.squareConnectStrings.NC = "NC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NC]
+  
+  inline def NE: typingsJapgolly.squareConnect.squareConnectStrings.NE = "NE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NE]
+  
+  inline def NF: typingsJapgolly.squareConnect.squareConnectStrings.NF = "NF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NF]
+  
+  inline def NG: typingsJapgolly.squareConnect.squareConnectStrings.NG = "NG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NG]
+  
+  inline def NI: typingsJapgolly.squareConnect.squareConnectStrings.NI = "NI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NI]
+  
+  inline def NL: typingsJapgolly.squareConnect.squareConnectStrings.NL = "NL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NL]
+  
+  inline def NO: typingsJapgolly.squareConnect.squareConnectStrings.NO = "NO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NO]
+  
+  inline def NP: typingsJapgolly.squareConnect.squareConnectStrings.NP = "NP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NP]
+  
+  inline def NR: typingsJapgolly.squareConnect.squareConnectStrings.NR = "NR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NR]
+  
+  inline def NU: typingsJapgolly.squareConnect.squareConnectStrings.NU = "NU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NU]
+  
+  inline def NZ: typingsJapgolly.squareConnect.squareConnectStrings.NZ = "NZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NZ]
+  
+  inline def OM: typingsJapgolly.squareConnect.squareConnectStrings.OM = "OM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.OM]
+  
+  inline def PA: typingsJapgolly.squareConnect.squareConnectStrings.PA = "PA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PA]
+  
+  inline def PE: typingsJapgolly.squareConnect.squareConnectStrings.PE = "PE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PE]
+  
+  inline def PF: typingsJapgolly.squareConnect.squareConnectStrings.PF = "PF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PF]
+  
+  inline def PG: typingsJapgolly.squareConnect.squareConnectStrings.PG = "PG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PG]
+  
+  inline def PH: typingsJapgolly.squareConnect.squareConnectStrings.PH = "PH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PH]
+  
+  inline def PK: typingsJapgolly.squareConnect.squareConnectStrings.PK = "PK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PK]
+  
+  inline def PL: typingsJapgolly.squareConnect.squareConnectStrings.PL = "PL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PL]
+  
+  inline def PM: typingsJapgolly.squareConnect.squareConnectStrings.PM = "PM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PM]
+  
+  inline def PN: typingsJapgolly.squareConnect.squareConnectStrings.PN = "PN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PN]
+  
+  inline def PR: typingsJapgolly.squareConnect.squareConnectStrings.PR = "PR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PR]
+  
+  inline def PS: typingsJapgolly.squareConnect.squareConnectStrings.PS = "PS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PS]
+  
+  inline def PT: typingsJapgolly.squareConnect.squareConnectStrings.PT = "PT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PT]
+  
+  inline def PW: typingsJapgolly.squareConnect.squareConnectStrings.PW = "PW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PW]
+  
+  inline def PY: typingsJapgolly.squareConnect.squareConnectStrings.PY = "PY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PY]
+  
+  inline def QA: typingsJapgolly.squareConnect.squareConnectStrings.QA = "QA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.QA]
+  
+  inline def RE: typingsJapgolly.squareConnect.squareConnectStrings.RE = "RE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RE]
+  
+  inline def RO: typingsJapgolly.squareConnect.squareConnectStrings.RO = "RO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RO]
+  
+  inline def RS: typingsJapgolly.squareConnect.squareConnectStrings.RS = "RS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RS]
+  
+  inline def RU: typingsJapgolly.squareConnect.squareConnectStrings.RU = "RU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RU]
+  
+  inline def RW: typingsJapgolly.squareConnect.squareConnectStrings.RW = "RW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RW]
+  
+  inline def SA: typingsJapgolly.squareConnect.squareConnectStrings.SA = "SA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SA]
+  
+  inline def SB: typingsJapgolly.squareConnect.squareConnectStrings.SB = "SB".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SB]
+  
+  inline def SC: typingsJapgolly.squareConnect.squareConnectStrings.SC = "SC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SC]
+  
+  inline def SD: typingsJapgolly.squareConnect.squareConnectStrings.SD = "SD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SD]
+  
+  inline def SE: typingsJapgolly.squareConnect.squareConnectStrings.SE = "SE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SE]
+  
+  inline def SG: typingsJapgolly.squareConnect.squareConnectStrings.SG = "SG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SG]
+  
+  inline def SH: typingsJapgolly.squareConnect.squareConnectStrings.SH = "SH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SH]
+  
+  inline def SI: typingsJapgolly.squareConnect.squareConnectStrings.SI = "SI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SI]
+  
+  inline def SJ: typingsJapgolly.squareConnect.squareConnectStrings.SJ = "SJ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SJ]
+  
+  inline def SK: typingsJapgolly.squareConnect.squareConnectStrings.SK = "SK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SK]
+  
+  inline def SL: typingsJapgolly.squareConnect.squareConnectStrings.SL = "SL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SL]
+  
+  inline def SM: typingsJapgolly.squareConnect.squareConnectStrings.SM = "SM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SM]
+  
+  inline def SN: typingsJapgolly.squareConnect.squareConnectStrings.SN = "SN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SN]
+  
+  inline def SO: typingsJapgolly.squareConnect.squareConnectStrings.SO = "SO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SO]
+  
+  inline def SR: typingsJapgolly.squareConnect.squareConnectStrings.SR = "SR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SR]
+  
+  inline def SS: typingsJapgolly.squareConnect.squareConnectStrings.SS = "SS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SS]
+  
+  inline def ST: typingsJapgolly.squareConnect.squareConnectStrings.ST = "ST".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ST]
+  
+  inline def SV: typingsJapgolly.squareConnect.squareConnectStrings.SV = "SV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SV]
+  
+  inline def SX: typingsJapgolly.squareConnect.squareConnectStrings.SX = "SX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SX]
+  
+  inline def SY: typingsJapgolly.squareConnect.squareConnectStrings.SY = "SY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SY]
+  
+  inline def SZ: typingsJapgolly.squareConnect.squareConnectStrings.SZ = "SZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SZ]
+  
+  inline def TC: typingsJapgolly.squareConnect.squareConnectStrings.TC = "TC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TC]
+  
+  inline def TD: typingsJapgolly.squareConnect.squareConnectStrings.TD = "TD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TD]
+  
+  inline def TF: typingsJapgolly.squareConnect.squareConnectStrings.TF = "TF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TF]
+  
+  inline def TG: typingsJapgolly.squareConnect.squareConnectStrings.TG = "TG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TG]
+  
+  inline def TH: typingsJapgolly.squareConnect.squareConnectStrings.TH = "TH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TH]
+  
+  inline def TJ: typingsJapgolly.squareConnect.squareConnectStrings.TJ = "TJ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TJ]
+  
+  inline def TK: typingsJapgolly.squareConnect.squareConnectStrings.TK = "TK".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TK]
+  
+  inline def TL: typingsJapgolly.squareConnect.squareConnectStrings.TL = "TL".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TL]
+  
+  inline def TM: typingsJapgolly.squareConnect.squareConnectStrings.TM = "TM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TM]
+  
+  inline def TN: typingsJapgolly.squareConnect.squareConnectStrings.TN = "TN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TN]
+  
+  inline def TO: typingsJapgolly.squareConnect.squareConnectStrings.TO = "TO".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TO]
+  
+  inline def TR: typingsJapgolly.squareConnect.squareConnectStrings.TR = "TR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TR]
+  
+  inline def TT: typingsJapgolly.squareConnect.squareConnectStrings.TT = "TT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TT]
+  
+  inline def TV: typingsJapgolly.squareConnect.squareConnectStrings.TV = "TV".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TV]
+  
+  inline def TW: typingsJapgolly.squareConnect.squareConnectStrings.TW = "TW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TW]
+  
+  inline def TZ: typingsJapgolly.squareConnect.squareConnectStrings.TZ = "TZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.TZ]
+  
+  inline def UA: typingsJapgolly.squareConnect.squareConnectStrings.UA = "UA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UA]
+  
+  inline def UG: typingsJapgolly.squareConnect.squareConnectStrings.UG = "UG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UG]
+  
+  inline def UM: typingsJapgolly.squareConnect.squareConnectStrings.UM = "UM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UM]
+  
+  inline def US: typingsJapgolly.squareConnect.squareConnectStrings.US = "US".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.US]
+  
+  inline def UY: typingsJapgolly.squareConnect.squareConnectStrings.UY = "UY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UY]
+  
+  inline def UZ: typingsJapgolly.squareConnect.squareConnectStrings.UZ = "UZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UZ]
+  
+  inline def VA: typingsJapgolly.squareConnect.squareConnectStrings.VA = "VA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VA]
+  
+  inline def VC: typingsJapgolly.squareConnect.squareConnectStrings.VC = "VC".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VC]
+  
+  inline def VE: typingsJapgolly.squareConnect.squareConnectStrings.VE = "VE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VE]
+  
+  inline def VG: typingsJapgolly.squareConnect.squareConnectStrings.VG = "VG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VG]
+  
+  inline def VI: typingsJapgolly.squareConnect.squareConnectStrings.VI = "VI".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VI]
+  
+  inline def VN: typingsJapgolly.squareConnect.squareConnectStrings.VN = "VN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VN]
+  
+  inline def VU: typingsJapgolly.squareConnect.squareConnectStrings.VU = "VU".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VU]
+  
+  inline def WF: typingsJapgolly.squareConnect.squareConnectStrings.WF = "WF".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.WF]
+  
+  inline def WS: typingsJapgolly.squareConnect.squareConnectStrings.WS = "WS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.WS]
+  
+  inline def YE: typingsJapgolly.squareConnect.squareConnectStrings.YE = "YE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.YE]
+  
+  inline def YT: typingsJapgolly.squareConnect.squareConnectStrings.YT = "YT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.YT]
+  
+  inline def ZA: typingsJapgolly.squareConnect.squareConnectStrings.ZA = "ZA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ZA]
+  
+  inline def ZM: typingsJapgolly.squareConnect.squareConnectStrings.ZM = "ZM".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ZM]
+  
+  inline def ZW: typingsJapgolly.squareConnect.squareConnectStrings.ZW = "ZW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ZW]
+  
+  inline def ZZ: typingsJapgolly.squareConnect.squareConnectStrings.ZZ = "ZZ".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ZZ]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ionic__utils-terminal
 
-Typings are for version 1.1.2
+Typings are for version 2.3.3
 
 ## Library description:
 Terminal utils for NodeJS
@@ -10,10 +10,10 @@ Terminal utils for NodeJS
 | ------------------ | :-------------: |
 | Full name          | @ionic/utils-terminal |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 5 |
-| # downloads        | 2047006 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 937576.6666666666 |
+| # stars            | 1984.0 |
 
 ## Links
 - [Homepage](https://ionicframework.com/)

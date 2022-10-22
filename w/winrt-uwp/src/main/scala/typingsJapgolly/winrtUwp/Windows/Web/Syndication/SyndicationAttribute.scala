@@ -1,26 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Syndication
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom attribute not defined in the specification. */
-@JSGlobal("Windows.Web.Syndication.SyndicationAttribute")
-@js.native
-/** Creates a new SyndicationAttribute object. */
-class SyndicationAttribute () extends js.Object {
-  /**
-    * Creates a new SyndicationAttribute object with the specified Name, Namespace, and Value property values.
-    * @param attributeName The name of the attribute.
-    * @param attributeNamespace The namespace of the attribute.
-    * @param attributeValue The value of the attribute.
-    */
-  def this(attributeName: String, attributeNamespace: String, attributeValue: String) = this()
+trait SyndicationAttribute extends StObject {
+  
   /** Gets the name of the syndication attribute. */
-  var name: String = js.native
+  var name: String
+  
   /** Gets the namespace of the attribute. */
-  var namespace: String = js.native
+  var namespace: String
+  
   /** Gets or sets the value of the attribute. */
-  var value: String = js.native
+  var value: String
 }
-
+object SyndicationAttribute {
+  
+  inline def apply(name: String, namespace: String, value: String): SyndicationAttribute = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SyndicationAttribute]
+  }
+  
+  extension [Self <: SyndicationAttribute](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

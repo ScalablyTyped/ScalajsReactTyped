@@ -1,34 +1,27 @@
 package typingsJapgolly.awsSdkJsonBuilder
 
-import typingsJapgolly.awsSdkTypes.marshallerMod.BodySerializer
-import typingsJapgolly.awsSdkTypes.marshallerMod.BodySerializerBuildOptions
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
-import typingsJapgolly.awsSdkTypes.utilMod.Encoder
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Decoder
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/json-builder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class JsonBuilder protected () extends BodySerializer[String] {
-    def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
-    val base64Encoder: js.Any = js.native
-    var format: js.Any = js.native
-    val utf8Decoder: js.Any = js.native
-    /**
-      * Converts the provided `input` into the serialized format described in the
-      * provided `shape`.
-      *
-      * @param options Modeled and user-provided operation input to serialize.
-      *
-      * @throws if a node in the input cannot be converted into the type
-      *          specified by the serialization model
-      */
-    /* CompleteClass */
-    override def build(options: BodySerializerBuildOptions): String = js.native
-  }
+object mod {
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @JSImport("@aws-sdk/json-builder", "JsonBuilder")
+  @js.native
+  open class JsonBuilder protected () extends StObject {
+    def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
+    
+    /* private */ val base64Encoder: Any = js.native
+    
+    def build(
+      hasOperationMemberInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
+    ): String = js.native
+    
+    /* private */ var format: Any = js.native
+    
+    /* private */ val utf8Decoder: Any = js.native
+  }
 }
-

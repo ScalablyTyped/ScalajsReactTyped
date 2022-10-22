@@ -1,51 +1,51 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ForOfStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ForOfStatement_
-  extends BlockParent
+  extends StObject
      with BaseNode
+     with BlockParent
      with For
      with ForXStatement
      with Loop
      with Scopable
+     with Standardized
      with Statement {
+  
   var await: Boolean
+  
   var body: Statement
+  
   var left: VariableDeclaration_ | LVal
+  
   var right: Expression
+  
   @JSName("type")
   var type_ForOfStatement_ : ForOfStatement
 }
-
 object ForOfStatement_ {
-  @scala.inline
-  def apply(
-    await: Boolean,
-    body: Statement,
-    left: VariableDeclaration_ | LVal,
-    right: Expression,
-    `type`: ForOfStatement,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): ForOfStatement_ = {
-    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(await: Boolean, body: Statement, left: VariableDeclaration_ | LVal, right: Expression): ForOfStatement_ = {
+    val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ForOfStatement")
     __obj.asInstanceOf[ForOfStatement_]
   }
+  
+  extension [Self <: ForOfStatement_](x: Self) {
+    
+    inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+    
+    inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setLeft(value: VariableDeclaration_ | LVal): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ForOfStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

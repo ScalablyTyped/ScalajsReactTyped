@@ -1,12 +1,9 @@
 package typingsJapgolly.bizcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bizcharts", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var AxisTile: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify G2.AxisTile */ js.Any = js.native
-}
-
+object ^ extends StObject

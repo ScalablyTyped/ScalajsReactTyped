@@ -1,44 +1,35 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.lg
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.md
 import typingsJapgolly.antdMobileRn.antdMobileRnStrings.sm
-import typingsJapgolly.antdMobileRn.wingBlankIndexNativeMod.WingBlankProps
+import typingsJapgolly.antdMobileRn.libWingBlankIndexDotnativeMod.WingBlankProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WingBlank {
-  def apply(
-    size: sm | md | lg = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[WingBlankProps, typingsJapgolly.antdMobileRn.mod.WingBlank, Unit, WingBlankProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.wingBlankIndexNativeMod.WingBlankProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.WingBlank](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.wingBlankIndexNativeMod.WingBlankProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "WingBlank")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.WingBlank] {
+    
+    inline def size(value: sm | md | lg): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: WingBlank.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: WingBlankProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

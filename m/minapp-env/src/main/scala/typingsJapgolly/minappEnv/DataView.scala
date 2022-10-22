@@ -1,17 +1,18 @@
 package typingsJapgolly.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataView extends js.Object {
+trait DataView extends StObject {
+  
   val buffer: ArrayBuffer = js.native
+  
   val byteLength: Double = js.native
+  
   val byteOffset: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.DataView = js.native
+  
   /**
     * Gets the Float32 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -19,6 +20,7 @@ trait DataView extends js.Object {
     */
   def getFloat32(byteOffset: Double): Double = js.native
   def getFloat32(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Float64 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -26,6 +28,7 @@ trait DataView extends js.Object {
     */
   def getFloat64(byteOffset: Double): Double = js.native
   def getFloat64(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Int16 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -33,6 +36,7 @@ trait DataView extends js.Object {
     */
   def getInt16(byteOffset: Double): Double = js.native
   def getInt16(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Int32 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -40,12 +44,14 @@ trait DataView extends js.Object {
     */
   def getInt32(byteOffset: Double): Double = js.native
   def getInt32(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Int8 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
     * @param byteOffset The place in the buffer at which the value should be retrieved.
     */
   def getInt8(byteOffset: Double): Double = js.native
+  
   /**
     * Gets the Uint16 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -53,6 +59,7 @@ trait DataView extends js.Object {
     */
   def getUint16(byteOffset: Double): Double = js.native
   def getUint16(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Uint32 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
@@ -60,12 +67,14 @@ trait DataView extends js.Object {
     */
   def getUint32(byteOffset: Double): Double = js.native
   def getUint32(byteOffset: Double, littleEndian: scala.Boolean): Double = js.native
+  
   /**
     * Gets the Uint8 value at the specified byte offset from the start of the view. There is
     * no alignment constraint; multi-byte values may be fetched from any offset.
     * @param byteOffset The place in the buffer at which the value should be retrieved.
     */
   def getUint8(byteOffset: Double): Double = js.native
+  
   /**
     * Stores an Float32 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -75,6 +84,7 @@ trait DataView extends js.Object {
     */
   def setFloat32(byteOffset: Double, value: Double): Unit = js.native
   def setFloat32(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Float64 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -84,6 +94,7 @@ trait DataView extends js.Object {
     */
   def setFloat64(byteOffset: Double, value: Double): Unit = js.native
   def setFloat64(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Int16 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -93,6 +104,7 @@ trait DataView extends js.Object {
     */
   def setInt16(byteOffset: Double, value: Double): Unit = js.native
   def setInt16(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Int32 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -102,12 +114,14 @@ trait DataView extends js.Object {
     */
   def setInt32(byteOffset: Double, value: Double): Unit = js.native
   def setInt32(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Int8 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
     * @param value The value to set.
     */
   def setInt8(byteOffset: Double, value: Double): Unit = js.native
+  
   /**
     * Stores an Uint16 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -117,6 +131,7 @@ trait DataView extends js.Object {
     */
   def setUint16(byteOffset: Double, value: Double): Unit = js.native
   def setUint16(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Uint32 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
@@ -126,15 +141,14 @@ trait DataView extends js.Object {
     */
   def setUint32(byteOffset: Double, value: Double): Unit = js.native
   def setUint32(byteOffset: Double, value: Double, littleEndian: scala.Boolean): Unit = js.native
+  
   /**
     * Stores an Uint8 value at the specified byte offset from the start of the view.
     * @param byteOffset The place in the buffer at which the value should be set.
     * @param value The value to set.
     */
   def setUint8(byteOffset: Double, value: Double): Unit = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.DataView = js.native
 }
-
-@JSGlobal("DataView")
-@js.native
-object DataView extends TopLevel[DataViewConstructor]
-

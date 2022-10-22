@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.overlayTriggerMod.OverlayTriggerProps
+import typingsJapgolly.reactBootstrap.libOverlayTriggerMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "OverlayTrigger")
 @js.native
-class OverlayTrigger ()
-  extends Component[OverlayTriggerProps, js.Object, js.Any]
-
+open class OverlayTrigger () extends ^

@@ -1,23 +1,32 @@
 package typingsJapgolly.ssh2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientErrorExtensions extends js.Object {
+trait ClientErrorExtensions extends StObject {
+  
   /** Additional detail for 'client-ssh' messages. */
   var description: js.UndefOr[String] = js.undefined
+  
   /** Indicates 'client-socket' for socket-level errors and 'client-ssh' for SSH disconnection messages. */
   var level: js.UndefOr[String] = js.undefined
 }
-
 object ClientErrorExtensions {
-  @scala.inline
-  def apply(description: String = null, level: String = null): ClientErrorExtensions = {
+  
+  inline def apply(): ClientErrorExtensions = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientErrorExtensions]
   }
+  
+  extension [Self <: ClientErrorExtensions](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+  }
 }
-

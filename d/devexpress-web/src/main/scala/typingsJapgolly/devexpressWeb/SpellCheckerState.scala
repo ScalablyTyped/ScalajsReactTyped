@@ -1,47 +1,39 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpellCheckerState extends js.Object
-
+sealed trait SpellCheckerState extends StObject
 /**
   * Lists values specifying the spell checking state.
   */
 @JSGlobal("SpellCheckerState")
 @js.native
-object SpellCheckerState extends js.Object {
+object SpellCheckerState extends StObject {
+  
   /**
     * Spell checking is disabled.
     */
   @js.native
-  sealed trait Disabled extends SpellCheckerState
+  sealed trait Disabled
+    extends StObject
+       with SpellCheckerState
   
   /**
     * Spell checking is completed.
     */
   @js.native
-  sealed trait Done extends SpellCheckerState
+  sealed trait Done
+    extends StObject
+       with SpellCheckerState
   
   /**
     * Spell checking is in progress.
     */
   @js.native
-  sealed trait InProgress extends SpellCheckerState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpellCheckerState with Double] = js.native
-  /* 0 */ @js.native
-  object Disabled extends TopLevel[Disabled with Double]
-  
-  /* 2 */ @js.native
-  object Done extends TopLevel[Done with Double]
-  
-  /* 1 */ @js.native
-  object InProgress extends TopLevel[InProgress with Double]
-  
+  sealed trait InProgress
+    extends StObject
+       with SpellCheckerState
 }
-

@@ -1,20 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.media.QueueReorderItemsRequest")
-@js.native
-class QueueReorderItemsRequest protected () extends js.Object {
-  /**
-    * @param {!Array<number>}
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.QueueReorderItemsRequest
-    */
-  def this(itemIdsToReorder: js.Array[Double]) = this()
-  var customData: js.Object = js.native
-  var insertBefore: Double = js.native
-  var itemIds: js.Array[Double] = js.native
+trait QueueReorderItemsRequest extends StObject {
+  
+  var customData: js.Object
+  
+  var insertBefore: Double
+  
+  var itemIds: js.Array[Double]
 }
-
+object QueueReorderItemsRequest {
+  
+  inline def apply(customData: js.Object, insertBefore: Double, itemIds: js.Array[Double]): QueueReorderItemsRequest = {
+    val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], insertBefore = insertBefore.asInstanceOf[js.Any], itemIds = itemIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueueReorderItemsRequest]
+  }
+  
+  extension [Self <: QueueReorderItemsRequest](x: Self) {
+    
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    
+    inline def setInsertBefore(value: Double): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+    
+    inline def setItemIds(value: js.Array[Double]): Self = StObject.set(x, "itemIds", value.asInstanceOf[js.Any])
+    
+    inline def setItemIdsVarargs(value: Double*): Self = StObject.set(x, "itemIds", js.Array(value*))
+  }
+}

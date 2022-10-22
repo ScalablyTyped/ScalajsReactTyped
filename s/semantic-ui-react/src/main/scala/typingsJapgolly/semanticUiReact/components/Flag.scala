@@ -1,44 +1,32 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.flagFlagMod.FlagNameValues
-import typingsJapgolly.semanticUiReact.flagFlagMod.FlagProps
-import typingsJapgolly.semanticUiReact.flagMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsElementsFlagFlagMod.FlagNameValues
+import typingsJapgolly.semanticUiReact.distCommonjsElementsFlagFlagMod.FlagProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Flag {
-  def apply(
-    name: FlagNameValues,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FlagProps, default, Unit, FlagProps] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.flagFlagMod.FlagProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.flagMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.flagFlagMod.FlagProps])(children: _*)
+  inline def apply(name: FlagNameValues): Builder = {
+    val __props = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[FlagProps]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Flag", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("semantic-ui-react", "Flag")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Flag] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: FlagProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,34 +1,46 @@
 package typingsJapgolly.frctlFractal.mod
 
-import typingsJapgolly.frctlFractal.AnonAuthor
+import typingsJapgolly.frctlFractal.anon.Author
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FractalConfig extends js.Object {
-  var project: js.UndefOr[AnonAuthor] = js.undefined
+trait FractalConfig extends StObject {
+  
+  var project: js.UndefOr[Author] = js.undefined
+  
   @JSName("project.author")
   var projectDotauthor: js.UndefOr[String] = js.undefined
+  
   @JSName("project.title")
   var projectDottitle: js.UndefOr[String] = js.undefined
+  
   @JSName("project.version")
   var projectDotversion: js.UndefOr[String] = js.undefined
 }
-
 object FractalConfig {
-  @scala.inline
-  def apply(
-    project: AnonAuthor = null,
-    projectDotauthor: String = null,
-    projectDottitle: String = null,
-    projectDotversion: String = null
-  ): FractalConfig = {
+  
+  inline def apply(): FractalConfig = {
     val __obj = js.Dynamic.literal()
-    if (project != null) __obj.updateDynamic("project")(project.asInstanceOf[js.Any])
-    if (projectDotauthor != null) __obj.updateDynamic("project.author")(projectDotauthor.asInstanceOf[js.Any])
-    if (projectDottitle != null) __obj.updateDynamic("project.title")(projectDottitle.asInstanceOf[js.Any])
-    if (projectDotversion != null) __obj.updateDynamic("project.version")(projectDotversion.asInstanceOf[js.Any])
     __obj.asInstanceOf[FractalConfig]
   }
+  
+  extension [Self <: FractalConfig](x: Self) {
+    
+    inline def setProject(value: Author): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    
+    inline def setProjectDotauthor(value: String): Self = StObject.set(x, "project.author", value.asInstanceOf[js.Any])
+    
+    inline def setProjectDotauthorUndefined: Self = StObject.set(x, "project.author", js.undefined)
+    
+    inline def setProjectDottitle(value: String): Self = StObject.set(x, "project.title", value.asInstanceOf[js.Any])
+    
+    inline def setProjectDottitleUndefined: Self = StObject.set(x, "project.title", js.undefined)
+    
+    inline def setProjectDotversion(value: String): Self = StObject.set(x, "project.version", value.asInstanceOf[js.Any])
+    
+    inline def setProjectDotversionUndefined: Self = StObject.set(x, "project.version", js.undefined)
+    
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+  }
 }
-

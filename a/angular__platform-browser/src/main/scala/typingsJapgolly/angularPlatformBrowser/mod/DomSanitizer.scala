@@ -2,13 +2,16 @@ package typingsJapgolly.angularPlatformBrowser.mod
 
 import typingsJapgolly.angularCore.mod.Sanitizer
 import typingsJapgolly.angularCore.mod.SecurityContext
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵInjectableDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/platform-browser", "DomSanitizer")
+/* note: abstract class */ @JSImport("@angular/platform-browser", "DomSanitizer")
 @js.native
-abstract class DomSanitizer () extends Sanitizer {
+open class DomSanitizer () extends Sanitizer {
+  
   /**
     * Bypass security and trust the given value to be safe HTML. Only use this when the bound HTML
     * is unsafe (e.g. contains `<script>` tags) and the code should be executed. The sanitizer will
@@ -18,6 +21,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustHtml(value: String): SafeHtml = js.native
+  
   /**
     * Bypass security and trust the given value to be a safe resource URL, i.e. a location that may
     * be used to load executable code from, like `<script src>`, or `<iframe src>`.
@@ -26,6 +30,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustResourceUrl(value: String): SafeResourceUrl = js.native
+  
   /**
     * Bypass security and trust the given value to be safe JavaScript.
     *
@@ -33,6 +38,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustScript(value: String): SafeScript = js.native
+  
   /**
     * Bypass security and trust the given value to be safe style value (CSS).
     *
@@ -40,6 +46,7 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustStyle(value: String): SafeStyle = js.native
+  
   /**
     * Bypass security and trust the given value to be a safe style URL, i.e. a value that can be used
     * in hyperlinks or `<img src>`.
@@ -48,14 +55,23 @@ abstract class DomSanitizer () extends Sanitizer {
     * security risks!
     */
   def bypassSecurityTrustUrl(value: String): SafeUrl = js.native
-  /**
-    * Sanitizes a value for use in the given SecurityContext.
-    *
-    * If value is trusted for the context, this method will unwrap the contained safe value and use
-    * it directly. Otherwise, value will be sanitized to be safe in the given context, for example
-    * by replacing URLs that have an unsafe protocol part (such as `javascript:`). The implementation
-    * is responsible to make sure that the value can definitely be safely used in the given context.
-    */
+  
   def sanitize(context: SecurityContext, value: SafeValue): String | Null = js.native
 }
-
+/* static members */
+object DomSanitizer {
+  
+  @JSImport("@angular/platform-browser", "DomSanitizer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/platform-browser", "DomSanitizer.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[DomSanitizer, scala.Nothing] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[DomSanitizer, scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/platform-browser", "DomSanitizer.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[DomSanitizer] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[DomSanitizer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+}

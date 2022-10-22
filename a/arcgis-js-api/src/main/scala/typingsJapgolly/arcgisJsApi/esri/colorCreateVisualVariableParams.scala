@@ -1,163 +1,210 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`above-and-below`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`centered-on`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`high-to-low`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.above
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.below
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.extremes
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorCreateVisualVariableParams extends Object {
+trait colorCreateVisualVariableParams
+  extends StObject
+     with Object {
+  
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
+    * In authoring apps, the user may select a pre-defined color scheme.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
-    *
-    * @default gray
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  /**
-    * In authoring apps, the user may select a pre-defined color scheme. Pass the scheme object to this property to avoid getting one based on a `theme` and the `basemap`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
+  
   /**
-    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization. This property is ignored if a `valueExpression` is used.
+    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var field: js.UndefOr[String] = js.undefined
+  
   /**
     * The layer for which the visual variable is generated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
   /**
-    * Provides options for setting a title to a field when an expression is provided instead of a field name. This title will represent the field in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
+    * Provides options for setting a title to a field when an expression is provided instead of a field name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var legendOptions: js.UndefOr[colorCreateVisualVariableParamsLegendOptions] = js.undefined
+  
   /**
-    * A custom maximum value set by the user. Use this in conjunction with `minValue` to generate statistics between lower and upper bounds. This will be the uppermost stop in the returned color visual variable.
+    * A custom maximum value set by the user.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   /**
-    * A custom minimum value set by the user. Use this in conjunction with `maxValue` to generate statistics between lower and upper bounds. This will be the lowest stop in the returned color visual variable.
+    * A custom minimum value set by the user.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var minValue: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The name of the field to normalize the values of the given `field`. Providing a normalization field helps minimize some visualization errors and standardizes the data so all features are visualized with minimal bias due to area differences or count variation. This option is commonly used when visualizing densities.
+    * The name of the field to normalize the values of the given `field`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var normalizationField: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Allows for cancelable requests.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   /**
     * A SQL expression evaluating to a number.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var sqlExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * A SQL where clause used to filter features for the statistics query. For example, this is useful in situations where you want to avoid dividing by zero as is the case with creating a predominance visualization.
+    * A SQL where clause used to filter features for the statistics query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var sqlWhere: js.UndefOr[String] = js.undefined
+  
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. If statistics for the field have already been generated, then pass the object here to avoid making a second statistics query to the server.
+    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
+  
   /**
-    * Determines which values will be emphasized in the continuous ramp and the map. Possible values are listed below.
+    * Determines which values will be emphasized in the continuous ramp and the map.
     *
-    * | Value | Description | Example |
-    * | ----- | ----------- | ------- |
-    * | high-to-low | High values are emphasized with strong colors. | ![high-to-low](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-high-to-low.png) |
-    * | above-and-below | Values centered around a given point (e.g. the average) are visualized with weak colors while other values are emphasized with strong colors. | ![above-and-below](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-above-and-below.png) |
-    * | centered-on | Values centered around a given point (e.g. the average) are emphasized with strong colors while other values are visualized with weak colors. | ![centered-on](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-centered-on.png) |
-    * | extremes | High and low values are emphasized with strong colors. All others are visualized with weak colors. | ![extremes](https://developers.arcgis.com/javascript/assets/img/apiref/renderers/sm-extremes.png) |
+    * @default high-to-low
     *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
-  var theme: js.UndefOr[String] = js.undefined
+  var theme: js.UndefOr[`high-to-low` | above | below | `above-and-below` | `centered-on` | extremes] = js.undefined
+  
   /**
-    * An [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expression that returns a number. This expression can reference field values using the `$feature` global variable. This property overrides the `field` property and therefore is used instead of an input `field` value.
+    * An [Arcade](https://developers.arcgis.com/javascript/latest/arcade/) expression following the specification defined by the [Arcade Visualization Profile](https://developers.arcgis.com/javascript/latest/arcade/#visualization).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var valueExpression: js.UndefOr[String] = js.undefined
+  
   /**
-    * Text describing the value returned from the `valueExpression`. This is used by the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget.
+    * Text describing the value returned from the `valueExpression`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var valueExpressionTitle: js.UndefOr[String] = js.undefined
+  
   /**
-    * The view where the input layer is rendered. This method inspects the view's background (i.e. basemap, web map background, or view container) to determine optimal colors for the output renderer. This parameter should always be set in practice, but if not provided this method will assume the generated renderer will display on a light background. This parameter is required when creating renderers using a `valueExpression` or for renderers intended for display in a SceneView.
+    * The view where the input layer is rendered.
     *
     * [Read more...](global.html)
     */
   var view: js.UndefOr[View] = js.undefined
+  
   /**
-    * Indicates if the size units of the symbols will be in meters. This should be `true` when generating visualizations with 3D volumetric symbology, except for layers with a `mesh` geometry type. A `view` must be provided if this property is set to `true`.
+    * Indicates if the size units of the symbols will be in meters.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createVisualVariable)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createVisualVariable)
     */
   var worldScale: js.UndefOr[Boolean] = js.undefined
 }
-
 object colorCreateVisualVariableParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    basemap: String | Basemap = null,
-    colorScheme: ColorScheme = null,
-    field: String = null,
-    legendOptions: colorCreateVisualVariableParamsLegendOptions = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    normalizationField: String = null,
-    sqlExpression: String = null,
-    sqlWhere: String = null,
-    statistics: SummaryStatisticsResult = null,
-    theme: String = null,
-    valueExpression: String = null,
-    valueExpressionTitle: String = null,
-    view: View = null,
-    worldScale: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): colorCreateVisualVariableParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (normalizationField != null) __obj.updateDynamic("normalizationField")(normalizationField.asInstanceOf[js.Any])
-    if (sqlExpression != null) __obj.updateDynamic("sqlExpression")(sqlExpression.asInstanceOf[js.Any])
-    if (sqlWhere != null) __obj.updateDynamic("sqlWhere")(sqlWhere.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (valueExpression != null) __obj.updateDynamic("valueExpression")(valueExpression.asInstanceOf[js.Any])
-    if (valueExpressionTitle != null) __obj.updateDynamic("valueExpressionTitle")(valueExpressionTitle.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(worldScale)) __obj.updateDynamic("worldScale")(worldScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[colorCreateVisualVariableParams]
   }
+  
+  extension [Self <: colorCreateVisualVariableParams](x: Self) {
+    
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptions(value: colorCreateVisualVariableParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
+    
+    inline def setNormalizationFieldUndefined: Self = StObject.set(x, "normalizationField", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setSqlExpression(value: String): Self = StObject.set(x, "sqlExpression", value.asInstanceOf[js.Any])
+    
+    inline def setSqlExpressionUndefined: Self = StObject.set(x, "sqlExpression", js.undefined)
+    
+    inline def setSqlWhere(value: String): Self = StObject.set(x, "sqlWhere", value.asInstanceOf[js.Any])
+    
+    inline def setSqlWhereUndefined: Self = StObject.set(x, "sqlWhere", js.undefined)
+    
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    
+    inline def setTheme(value: `high-to-low` | above | below | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setValueExpression(value: String): Self = StObject.set(x, "valueExpression", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitle(value: String): Self = StObject.set(x, "valueExpressionTitle", value.asInstanceOf[js.Any])
+    
+    inline def setValueExpressionTitleUndefined: Self = StObject.set(x, "valueExpressionTitle", js.undefined)
+    
+    inline def setValueExpressionUndefined: Self = StObject.set(x, "valueExpression", js.undefined)
+    
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWorldScale(value: Boolean): Self = StObject.set(x, "worldScale", value.asInstanceOf[js.Any])
+    
+    inline def setWorldScaleUndefined: Self = StObject.set(x, "worldScale", js.undefined)
+  }
 }
-

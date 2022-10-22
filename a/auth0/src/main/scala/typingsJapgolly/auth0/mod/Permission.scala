@@ -1,30 +1,42 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Permission extends js.Object {
+trait Permission extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var permission_name: js.UndefOr[String] = js.undefined
+  
   var resource_server_identifier: js.UndefOr[String] = js.undefined
+  
   var resource_server_name: js.UndefOr[String] = js.undefined
 }
-
 object Permission {
-  @scala.inline
-  def apply(
-    description: String = null,
-    permission_name: String = null,
-    resource_server_identifier: String = null,
-    resource_server_name: String = null
-  ): Permission = {
+  
+  inline def apply(): Permission = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (permission_name != null) __obj.updateDynamic("permission_name")(permission_name.asInstanceOf[js.Any])
-    if (resource_server_identifier != null) __obj.updateDynamic("resource_server_identifier")(resource_server_identifier.asInstanceOf[js.Any])
-    if (resource_server_name != null) __obj.updateDynamic("resource_server_name")(resource_server_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
+  
+  extension [Self <: Permission](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setPermission_name(value: String): Self = StObject.set(x, "permission_name", value.asInstanceOf[js.Any])
+    
+    inline def setPermission_nameUndefined: Self = StObject.set(x, "permission_name", js.undefined)
+    
+    inline def setResource_server_identifier(value: String): Self = StObject.set(x, "resource_server_identifier", value.asInstanceOf[js.Any])
+    
+    inline def setResource_server_identifierUndefined: Self = StObject.set(x, "resource_server_identifier", js.undefined)
+    
+    inline def setResource_server_name(value: String): Self = StObject.set(x, "resource_server_name", value.asInstanceOf[js.Any])
+    
+    inline def setResource_server_nameUndefined: Self = StObject.set(x, "resource_server_name", js.undefined)
+  }
 }
-

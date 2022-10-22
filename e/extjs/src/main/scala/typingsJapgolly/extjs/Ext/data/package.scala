@@ -1,22 +1,38 @@
-package typingsJapgolly.extjs.Ext
+package typingsJapgolly.extjs.Ext.data
 
+import typingsJapgolly.extjs.Ext.IBase
+import typingsJapgolly.extjs.Ext.data.proxy.IWebStorage
+import typingsJapgolly.extjs.Ext.util.IMixedCollection
+import typingsJapgolly.extjs.Ext.util.IObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object data {
-  type IDirectStore = typingsJapgolly.extjs.Ext.data.IStore
-  type IGroup = typingsJapgolly.extjs.Ext.util.IObservable
-  type IJsonP = typingsJapgolly.extjs.Ext.IBase
-  type IJsonPStore = typingsJapgolly.extjs.Ext.data.IStore
-  type IJsonStore = typingsJapgolly.extjs.Ext.data.IStore
-  type ILocalStorageProxy = typingsJapgolly.extjs.Ext.data.proxy.IWebStorage
-  type ISessionStorageProxy = typingsJapgolly.extjs.Ext.data.proxy.IWebStorage
-  type ISortTypes = typingsJapgolly.extjs.Ext.IBase
-  type IStoreManager = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type IStoreMgr = typingsJapgolly.extjs.Ext.util.IMixedCollection
-  type ITreeModel = typingsJapgolly.extjs.Ext.data.IModel
-  type ITypes = typingsJapgolly.extjs.Ext.IBase
-  type IValidations = typingsJapgolly.extjs.Ext.IBase
-  type IXmlStore = typingsJapgolly.extjs.Ext.data.IStore
-}
+
+type IDirectStore = IStore
+
+type IGroup = IObservable
+
+type IJsonP = IBase
+
+type IJsonPStore = IStore
+
+type IJsonStore = IStore
+
+type ILocalStorageProxy = IWebStorage
+
+type ISessionStorageProxy = IWebStorage
+
+type ISortTypes = IBase
+
+type IStoreManager = IMixedCollection
+
+type IStoreMgr = IMixedCollection
+
+type ITreeModel = IModel
+
+type ITypes = IBase
+
+type IValidations = IBase
+
+type IXmlStore = IStore

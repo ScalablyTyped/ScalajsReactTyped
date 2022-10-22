@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SheetType extends js.Object
-
+sealed trait SheetType extends StObject
 /**
   * The different types of sheets that can exist in a spreadsheet.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.SheetType")
 @js.native
-object SheetType extends js.Object {
-  @js.native
-  sealed trait GRID extends SheetType
+object SheetType extends StObject {
   
   @js.native
-  sealed trait OBJECT extends SheetType
+  sealed trait GRID
+    extends StObject
+       with SheetType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SheetType with Double] = js.native
-  /* 0 */ @js.native
-  object GRID extends TopLevel[GRID with Double]
-  
-  /* 1 */ @js.native
-  object OBJECT extends TopLevel[OBJECT with Double]
-  
+  @js.native
+  sealed trait OBJECT
+    extends StObject
+       with SheetType
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.geometry
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.geometry.Transformation")
 @js.native
-class Transformation () extends Observable_ {
-  var options: TransformationOptions = js.native
+trait Transformation
+  extends StObject
+     with Observable {
+  
   def equals(other: Transformation): Boolean = js.native
+  
   def matrix(): Matrix = js.native
+  
   def multiply(transformation: Transformation): Transformation = js.native
-  def rotate(angle: Double, center: js.Any): Transformation = js.native
+  
+  var options: TransformationOptions = js.native
+  
+  def rotate(angle: Double, center: Any): Transformation = js.native
   def rotate(angle: Double, center: Point): Transformation = js.native
+  
   def scale(scaleX: Double, scaleY: Double): Transformation = js.native
+  
   def translate(x: Double, y: Double): Transformation = js.native
 }
-

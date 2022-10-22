@@ -4,16 +4,16 @@
 Typings are for version 1.2
 
 ## Library description:
-convert koa legacy generator-based middleware to promise-based middleware
+convert modern Koa legacy generator-based middleware to promise-based middleware
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | koa-convert |
-| Keywords           | koa, middleware, convert |
-| # releases         | 0 |
-| # dependents       | 279 |
-| # downloads        | 14674739 |
-| # stars            | 16 |
+| Keywords           | koa, middleware, convert, back, generator, promise, generator-based-middleware, promise-based-middleware, support |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 4942062.0 |
+| # stars            | 251.0 |
 
 ## Links
 - [Homepage](https://github.com/gyson/koa-convert#readme)

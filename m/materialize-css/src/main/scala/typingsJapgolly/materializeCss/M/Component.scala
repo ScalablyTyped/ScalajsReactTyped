@@ -1,22 +1,29 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.std.Partial
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.Component")
-@js.native
-abstract class Component[TOptions] protected () extends ComponentBase[TOptions] {
-  /**
-    * Construct component instance and set everything up
-    */
-  def this(elem: Element) = this()
-  def this(elem: Element, options: Partial[TOptions]) = this()
+trait Component[TOptions]
+  extends StObject
+     with ComponentBase[TOptions] {
+  
   /**
     * Destroy plugin instance and teardown
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
 }
-
+object Component {
+  
+  inline def apply[TOptions](destroy: Callback, el: Element, options: TOptions): Component[TOptions] = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Component[TOptions]]
+  }
+  
+  extension [Self <: Component[?], TOptions](x: Self & Component[TOptions]) {
+    
+    inline def setDestroy(value: Callback): Self = StObject.set(x, "destroy", value.toJsFn)
+  }
+}

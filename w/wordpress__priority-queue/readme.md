@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__priority-queue
 
-Typings are for version 1.2
+Typings are for version 2.19.0
 
 ## Library description:
 Generic browser priority queue.
@@ -9,14 +9,14 @@ Generic browser priority queue.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/priority-queue |
-| Keywords           | wordpress, browser, async |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 147450 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, browser, async |
+| # releases         | 50 |
+| # dependents       | 0.0 |
+| # downloads        | 158670.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/priority-queue/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/priority-queue/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fpriority-queue)
@@ -24,7 +24,7 @@ Generic browser priority queue.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

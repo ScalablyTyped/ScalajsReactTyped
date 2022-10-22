@@ -1,69 +1,56 @@
 package typingsJapgolly.dateFp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFpStrings {
-  @js.native
-  sealed trait date extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait day extends StObject
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait hours extends js.Object
+  sealed trait days extends StObject
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
-  sealed trait milliseconds extends js.Object
+  sealed trait hours extends StObject
+  inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait minutes extends js.Object
+  sealed trait milliseconds extends StObject
+  inline def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait minutes extends StObject
+  inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait month extends StObject
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait seconds extends js.Object
+  sealed trait months extends StObject
+  inline def months: months = "months".asInstanceOf[months]
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait seconds extends StObject
+  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait week extends StObject
+  inline def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait year extends StObject
+  inline def year: year = "year".asInstanceOf[year]
   
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
-  @scala.inline
-  def minutes: minutes = "minutes".asInstanceOf[minutes]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def months: months = "months".asInstanceOf[months]
-  @scala.inline
-  def seconds: seconds = "seconds".asInstanceOf[seconds]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
-  @scala.inline
-  def years: years = "years".asInstanceOf[years]
+  @js.native
+  sealed trait years extends StObject
+  inline def years: years = "years".asInstanceOf[years]
 }
-

@@ -1,42 +1,70 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.spinnerTypesMod.ISpinnerProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.ISpinnerProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Spinner", JSImport.Namespace)
-@js.native
-object libSpinnerMod extends js.Object {
-  @js.native
-  class SpinnerBase ()
-    extends typingsJapgolly.officeUiFabricReact.spinnerMod.SpinnerBase
+object libSpinnerMod {
   
+  @JSImport("office-ui-fabric-react/lib/Spinner", "Spinner")
+  @js.native
   val Spinner: FunctionComponent[ISpinnerProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerBase")
+  @js.native
+  open class SpinnerBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSpinnerMod.SpinnerBase {
+    def this(props: ISpinnerProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ISpinnerProps, context: Any) = this()
+  }
   /* static members */
-  @js.native
-  object SpinnerBase extends js.Object {
-    var defaultProps: ISpinnerProps = js.native
+  object SpinnerBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerBase.defaultProps")
+    @js.native
+    def defaultProps: ISpinnerProps = js.native
+    inline def defaultProps_=(x: ISpinnerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerSize")
   @js.native
-  object SpinnerSize extends js.Object {
-    /* 3 */ val large: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerSize.large with Double = js.native
-    /* 2 */ val medium: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerSize.medium with Double = js.native
-    /* 1 */ val small: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerSize.small with Double = js.native
-    /* 0 */ val xSmall: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerSize.xSmall with Double = js.native
+  object SpinnerSize extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize & Double
+      ] = js.native
+    
+    /* 3 */ val large: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.large & Double = js.native
+    
+    /* 2 */ val medium: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.medium & Double = js.native
+    
+    /* 1 */ val small: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.small & Double = js.native
+    
+    /* 0 */ val xSmall: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerSize.xSmall & Double = js.native
   }
   
+  @JSImport("office-ui-fabric-react/lib/Spinner", "SpinnerType")
   @js.native
-  object SpinnerType extends js.Object {
-    /* 1 */ val large: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerType.large with Double = js.native
-    /* 0 */ val normal: typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerType.normal with Double = js.native
+  object SpinnerType extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.spinnerTypesMod.SpinnerType with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType & Double
+      ] = js.native
+    
+    /* 1 */ val large: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType.large & Double = js.native
+    
+    /* 0 */ val normal: typingsJapgolly.officeUiFabricReact.libComponentsSpinnerSpinnerDottypesMod.SpinnerType.normal & Double = js.native
   }
-  
 }
-

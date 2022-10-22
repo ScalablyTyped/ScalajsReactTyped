@@ -1,21 +1,30 @@
 package typingsJapgolly.preact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Attributes extends js.Object {
+trait Attributes extends StObject {
+  
   var jsx: js.UndefOr[Boolean] = js.undefined
+  
   var key: js.UndefOr[Key] = js.undefined
 }
-
 object Attributes {
-  @scala.inline
-  def apply(jsx: js.UndefOr[Boolean] = js.undefined, key: Key = null): Attributes = {
+  
+  inline def apply(): Attributes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(jsx)) __obj.updateDynamic("jsx")(jsx.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
+  
+  extension [Self <: Attributes](x: Self) {
+    
+    inline def setJsx(value: Boolean): Self = StObject.set(x, "jsx", value.asInstanceOf[js.Any])
+    
+    inline def setJsxUndefined: Self = StObject.set(x, "jsx", js.undefined)
+    
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+  }
 }
-

@@ -1,10 +1,12 @@
-package typingsJapgolly.mfiles
+package typingsJapgolly.mfiles.MFiles
 
+import typingsJapgolly.mfiles.mfilesInts.`-1000000`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object MFiles {
-  type MFBuiltInMetadataStructureItemID = typingsJapgolly.mfiles.mfilesNumbers.`-1000000`
-  type MFFormattingType = typingsJapgolly.mfiles.mfilesNumbers.`0`
-}
+
+type MFBuiltInMetadataStructureItemID = `-1000000`
+
+type MFFormattingType = `0`

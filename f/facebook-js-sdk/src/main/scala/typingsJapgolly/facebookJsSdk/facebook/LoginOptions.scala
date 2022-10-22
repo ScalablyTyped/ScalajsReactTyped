@@ -3,34 +3,49 @@ package typingsJapgolly.facebookJsSdk.facebook
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.reauthenticate
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.reauthorize
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.rerequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoginOptions extends js.Object {
+trait LoginOptions extends StObject {
+  
   var auth_type: js.UndefOr[reauthenticate | reauthorize | rerequest] = js.undefined
+  
   var enable_profile_selector: js.UndefOr[Boolean] = js.undefined
+  
   var profile_selector_ids: js.UndefOr[String] = js.undefined
+  
   var return_scopes: js.UndefOr[Boolean] = js.undefined
+  
   var scope: js.UndefOr[String] = js.undefined
 }
-
 object LoginOptions {
-  @scala.inline
-  def apply(
-    auth_type: reauthenticate | reauthorize | rerequest = null,
-    enable_profile_selector: js.UndefOr[Boolean] = js.undefined,
-    profile_selector_ids: String = null,
-    return_scopes: js.UndefOr[Boolean] = js.undefined,
-    scope: String = null
-  ): LoginOptions = {
+  
+  inline def apply(): LoginOptions = {
     val __obj = js.Dynamic.literal()
-    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable_profile_selector)) __obj.updateDynamic("enable_profile_selector")(enable_profile_selector.asInstanceOf[js.Any])
-    if (profile_selector_ids != null) __obj.updateDynamic("profile_selector_ids")(profile_selector_ids.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_scopes)) __obj.updateDynamic("return_scopes")(return_scopes.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoginOptions]
   }
+  
+  extension [Self <: LoginOptions](x: Self) {
+    
+    inline def setAuth_type(value: reauthenticate | reauthorize | rerequest): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
+    
+    inline def setEnable_profile_selector(value: Boolean): Self = StObject.set(x, "enable_profile_selector", value.asInstanceOf[js.Any])
+    
+    inline def setEnable_profile_selectorUndefined: Self = StObject.set(x, "enable_profile_selector", js.undefined)
+    
+    inline def setProfile_selector_ids(value: String): Self = StObject.set(x, "profile_selector_ids", value.asInstanceOf[js.Any])
+    
+    inline def setProfile_selector_idsUndefined: Self = StObject.set(x, "profile_selector_ids", js.undefined)
+    
+    inline def setReturn_scopes(value: Boolean): Self = StObject.set(x, "return_scopes", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_scopesUndefined: Self = StObject.set(x, "return_scopes", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+  }
 }
-

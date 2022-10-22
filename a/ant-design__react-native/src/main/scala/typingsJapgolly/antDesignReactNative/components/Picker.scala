@@ -1,113 +1,118 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue
-import typingsJapgolly.antDesignReactNative.pickerMod.PickerProps
-import typingsJapgolly.antDesignReactNative.pickerMod.default
-import typingsJapgolly.antDesignReactNative.pickerPropsTypeMod.PickerData
-import typingsJapgolly.antDesignReactNative.pickerStyleMod.PickerStyle
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.libPickerCascaderCascaderTypesMod.CascaderValue
+import typingsJapgolly.antDesignReactNative.libPickerMod.PickerProps
+import typingsJapgolly.antDesignReactNative.libPickerPropsTypeMod.PickerData
+import typingsJapgolly.antDesignReactNative.libPickerStyleMod.PickerStyle
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.reactNative.mod.StyleProp
+import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Picker {
-  def apply(
-    data: js.Array[js.Array[PickerData] | PickerData],
-    WrapComponent: js.Any = null,
-    actionTextActiveOpacity: Int | Double = null,
-    actionTextUnderlayColor: String = null,
-    cascade: js.UndefOr[Boolean] = js.undefined,
-    cols: Int | Double = null,
-    content: Element | String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dismissText: String | Element = null,
-    extra: String = null,
-    format: /* values */ js.Array[String] => CallbackTo[String] = null,
-    indicatorStyle: StyleProp[ViewStyle] = null,
-    itemStyle: StyleProp[ViewStyle] = null,
-    maskTransitionName: String = null,
-    okText: String | Element = null,
-    onChange: /* date */ js.UndefOr[CascaderValue] => Callback = null,
-    onDismiss: js.UndefOr[Callback] = js.undefined,
-    onOk: /* value */ js.UndefOr[js.Any] => Callback = null,
-    onPickerChange: /* value */ CascaderValue => Callback = null,
-    onVisibleChange: /* visible */ Boolean => Callback = null,
-    picker: js.Any = null,
-    pickerPrefixCls: String = null,
-    pickerValueChangeProp: String = null,
-    pickerValueProp: String = null,
-    popupPrefixCls: String = null,
-    popupTransitionName: String = null,
-    style: js.Any = null,
-    styles: Partial[PickerStyle] = null,
-    title: String | Element = null,
-    transitionName: String = null,
-    triggerType: String = null,
-    value: js.Array[String | Double] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    wrapStyle: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PickerProps, default, Unit, PickerProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (WrapComponent != null) __obj.updateDynamic("WrapComponent")(WrapComponent.asInstanceOf[js.Any])
-    if (actionTextActiveOpacity != null) __obj.updateDynamic("actionTextActiveOpacity")(actionTextActiveOpacity.asInstanceOf[js.Any])
-    if (actionTextUnderlayColor != null) __obj.updateDynamic("actionTextUnderlayColor")(actionTextUnderlayColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dismissText != null) __obj.updateDynamic("dismissText")(dismissText.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1((t0: /* values */ js.Array[java.lang.String]) => format(t0).runNow()))
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName.asInstanceOf[js.Any])
-    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* date */ js.UndefOr[typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue]) => onChange(t0).runNow()))
-    onDismiss.foreach(p => __obj.updateDynamic("onDismiss")(p.toJsFn))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => onOk(t0).runNow()))
-    if (onPickerChange != null) __obj.updateDynamic("onPickerChange")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.antDesignReactNative.cascaderTypesMod.CascaderValue) => onPickerChange(t0).runNow()))
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onVisibleChange(t0).runNow()))
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (pickerPrefixCls != null) __obj.updateDynamic("pickerPrefixCls")(pickerPrefixCls.asInstanceOf[js.Any])
-    if (pickerValueChangeProp != null) __obj.updateDynamic("pickerValueChangeProp")(pickerValueChangeProp.asInstanceOf[js.Any])
-    if (pickerValueProp != null) __obj.updateDynamic("pickerValueProp")(pickerValueProp.asInstanceOf[js.Any])
-    if (popupPrefixCls != null) __obj.updateDynamic("popupPrefixCls")(popupPrefixCls.asInstanceOf[js.Any])
-    if (popupTransitionName != null) __obj.updateDynamic("popupTransitionName")(popupTransitionName.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.pickerMod.PickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.pickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.pickerMod.PickerProps])(children: _*)
+  inline def apply(data: js.Array[js.Array[PickerData] | PickerData]): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PickerProps]))
   }
-  @JSImport("@ant-design/react-native/lib/picker", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "Picker")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Picker] {
+    
+    inline def WrapComponent(value: Any): this.type = set("WrapComponent", value.asInstanceOf[js.Any])
+    
+    inline def actionTextActiveOpacity(value: Double): this.type = set("actionTextActiveOpacity", value.asInstanceOf[js.Any])
+    
+    inline def actionTextUnderlayColor(value: String): this.type = set("actionTextUnderlayColor", value.asInstanceOf[js.Any])
+    
+    inline def cascade(value: Boolean): this.type = set("cascade", value.asInstanceOf[js.Any])
+    
+    inline def cols(value: Double): this.type = set("cols", value.asInstanceOf[js.Any])
+    
+    inline def content(value: Element | String): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def dismissText(value: String | Element): this.type = set("dismissText", value.asInstanceOf[js.Any])
+    
+    inline def dismissTextVdomElement(value: VdomElement): this.type = set("dismissText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def extra(value: String): this.type = set("extra", value.asInstanceOf[js.Any])
+    
+    inline def format(value: /* values */ js.Array[String] => String): this.type = set("format", js.Any.fromFunction1(value))
+    
+    inline def indicatorStyle(value: StyleProp[ViewStyle]): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyleNull: this.type = set("indicatorStyle", null)
+    
+    inline def itemStyle(value: StyleProp[TextStyle]): this.type = set("itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def itemStyleNull: this.type = set("itemStyle", null)
+    
+    inline def maskTransitionName(value: String): this.type = set("maskTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def okText(value: String | Element): this.type = set("okText", value.asInstanceOf[js.Any])
+    
+    inline def okTextVdomElement(value: VdomElement): this.type = set("okText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* date */ js.UndefOr[CascaderValue] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* date */ js.UndefOr[CascaderValue]) => value(t0).runNow()))
+    
+    inline def onDismiss(value: Callback): this.type = set("onDismiss", value.toJsFn)
+    
+    inline def onOk(value: /* value */ js.UndefOr[Any] => Callback): this.type = set("onOk", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def onPickerChange(value: /* value */ CascaderValue => Callback): this.type = set("onPickerChange", js.Any.fromFunction1((t0: /* value */ CascaderValue) => value(t0).runNow()))
+    
+    inline def onVisibleChange(value: /* visible */ Boolean => Callback): this.type = set("onVisibleChange", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def picker(value: Any): this.type = set("picker", value.asInstanceOf[js.Any])
+    
+    inline def pickerPrefixCls(value: String): this.type = set("pickerPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def pickerValueChangeProp(value: String): this.type = set("pickerValueChangeProp", value.asInstanceOf[js.Any])
+    
+    inline def pickerValueProp(value: String): this.type = set("pickerValueProp", value.asInstanceOf[js.Any])
+    
+    inline def popupPrefixCls(value: String): this.type = set("popupPrefixCls", value.asInstanceOf[js.Any])
+    
+    inline def popupTransitionName(value: String): this.type = set("popupTransitionName", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: Partial[PickerStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String | Element): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+    
+    inline def triggerType(value: String): this.type = set("triggerType", value.asInstanceOf[js.Any])
+    
+    inline def value(value: js.Array[String | Double]): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueVarargs(value: (String | Double)*): this.type = set("value", js.Array(value*))
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+    
+    inline def wrapStyle(value: CSSProperties): this.type = set("wrapStyle", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

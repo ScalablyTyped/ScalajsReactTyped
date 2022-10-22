@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4135`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4135`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4105`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4135`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4105`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4135`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
 */
-trait XlCalculation extends js.Object
-
+trait XlCalculation extends StObject
 object XlCalculation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlCalculationAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlCalculationManual: `-4135` = this.cast(-4135)
-  @scala.inline
-  def xlCalculationSemiautomatic: `2` = this.cast(2)
+  
+  inline def xlCalculationAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlCalculationManual: `-4135` = -4135.asInstanceOf[`-4135`]
+  
+  inline def xlCalculationSemiautomatic: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unavailable
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.high
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notSet
 */
-trait DeviceThreatProtectionLevel extends js.Object
-
+trait DeviceThreatProtectionLevel extends StObject
 object DeviceThreatProtectionLevel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = this.cast("high")
-  @scala.inline
-  def low: typingsJapgolly.microsoftGraph.microsoftGraphStrings.low = this.cast("low")
-  @scala.inline
-  def medium: typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium = this.cast("medium")
-  @scala.inline
-  def notSet: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notSet = this.cast("notSet")
-  @scala.inline
-  def secured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.secured = this.cast("secured")
-  @scala.inline
-  def unavailable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unavailable = this.cast("unavailable")
+  
+  inline def high: typingsJapgolly.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.high]
+  
+  inline def low: typingsJapgolly.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.low]
+  
+  inline def medium: typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.medium]
+  
+  inline def notSet: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notSet = "notSet".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notSet]
+  
+  inline def secured: typingsJapgolly.microsoftGraph.microsoftGraphStrings.secured = "secured".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.secured]
+  
+  inline def unavailable: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unavailable = "unavailable".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.unavailable]
 }
-

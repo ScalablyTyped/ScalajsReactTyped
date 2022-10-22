@@ -2,15 +2,16 @@ package typingsJapgolly.heremaps.H.map
 
 import typingsJapgolly.heremaps.H.map.ViewModel.ILookAtData
 import typingsJapgolly.heremaps.H.util.kinetics.IKinetics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Control interface defines method which are used for direct view or camera manipulation
   */
 @js.native
-trait IControl extends js.Object {
+trait IControl extends StObject {
+  
   /**
     * This method triggers single control action on engine. This will trigger an animation which will start modification of the view's or camera's properties according to values begin set.
     * Modification will occur at every frame. The speed values are measure by 'levels per frame' were 1 level cooresponds to a distance to next zoom level.
@@ -42,6 +43,7 @@ trait IControl extends js.Object {
     zoom: Double,
     opt_timestamp: Double
   ): Unit = js.native
+  
   /**
     * This method ends current control, which will stop ongoing animation triggered by the startControl method. This method can prevent kinetics as well as it can adjust the final view if
     * the adjust function is being passed.
@@ -52,6 +54,8 @@ trait IControl extends js.Object {
   def endControl(): Unit = js.native
   def endControl(opt_preventKinetics: Boolean): Unit = js.native
   def endControl(opt_preventKinetics: Boolean, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
+  def endControl(opt_preventKinetics: Unit, opt_adjustView: js.Function1[/* data */ ILookAtData, Unit]): Unit = js.native
+  
   /**
     * This method starts control action for camera. This action allows to control camera animation and movement according to provided values in the H.map.IControl#control function
     * @param opt_kinetics {H.util.kinetics.IKinetics=} - kinetics settings
@@ -59,8 +63,11 @@ trait IControl extends js.Object {
     * @param opt_atY {number=} - control starts at y screen coordinate
     */
   def startControl(): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Double): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Double, opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: Unit, opt_atX: Unit, opt_atY: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double): Unit = js.native
   def startControl(opt_kinetics: IKinetics, opt_atX: Double, opt_atY: Double): Unit = js.native
+  def startControl(opt_kinetics: IKinetics, opt_atX: Unit, opt_atY: Double): Unit = js.native
 }
-

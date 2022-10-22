@@ -1,55 +1,80 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.breadcrumbBreadcrumbMod.BreadcrumbProps
-import typingsJapgolly.antd.breadcrumbBreadcrumbMod.Route
-import typingsJapgolly.antd.breadcrumbMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.antd.anon.`0`
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbItemMod.BreadcrumbItemProps
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbMod.BreadcrumbProps
+import typingsJapgolly.antd.libBreadcrumbBreadcrumbMod.Route
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Breadcrumb {
-  def apply(
-    className: String = null,
-    itemRender: (/* route */ Route, /* params */ js.Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => CallbackTo[Node] = null,
-    params: js.Any = null,
-    prefixCls: String = null,
-    routes: js.Array[Route] = null,
-    separator: VdomNode = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BreadcrumbProps, default, Unit, BreadcrumbProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (itemRender != null) __obj.updateDynamic("itemRender")(js.Any.fromFunction4((t0: /* route */ typingsJapgolly.antd.breadcrumbBreadcrumbMod.Route, t1: /* params */ js.Any, t2: /* routes */ js.Array[typingsJapgolly.antd.breadcrumbBreadcrumbMod.Route], t3: /* paths */ js.Array[java.lang.String]) => itemRender(t0, t1, t2, t3).runNow()))
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.rawNode.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.breadcrumbBreadcrumbMod.BreadcrumbProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.breadcrumbMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.breadcrumbBreadcrumbMod.BreadcrumbProps])(children: _*)
+  object Item {
+    
+    @JSImport("antd", "Breadcrumb.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Item.type): SharedBuilder_BreadcrumbItemProps_603766034 = new SharedBuilder_BreadcrumbItemProps_603766034(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: BreadcrumbItemProps): SharedBuilder_BreadcrumbItemProps_603766034 = new SharedBuilder_BreadcrumbItemProps_603766034(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("antd/lib/breadcrumb", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Separator {
+    
+    @JSImport("antd", "Breadcrumb.Separator")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Separator.type): Default[js.Object] = new Default[js.Object](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: `0`): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("antd", "Breadcrumb")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def itemRender(
+      value: (/* route */ Route, /* params */ Any, /* routes */ js.Array[Route], /* paths */ js.Array[String]) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("itemRender", js.Any.fromFunction4(value))
+    
+    inline def params(value: Any): this.type = set("params", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def routes(value: js.Array[Route]): this.type = set("routes", value.asInstanceOf[js.Any])
+    
+    inline def routesVarargs(value: Route*): this.type = set("routes", js.Array(value*))
+    
+    inline def separator(value: VdomNode): this.type = set("separator", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def separatorNull: this.type = set("separator", null)
+    
+    inline def separatorVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("separator", js.Array(value*))
+    
+    inline def separatorVdomElement(value: VdomElement): this.type = set("separator", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Breadcrumb.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BreadcrumbProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

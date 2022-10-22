@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.toolbarToolbarMod.ToolbarProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.toolbarToolbarMod.ToolbarTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Toolbar", JSImport.Namespace)
-@js.native
-object toolbarMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ToolbarProps, ComponentState, js.Any] {
-    def this(props: ToolbarProps) = this()
-    def this(props: ToolbarProps, context: js.Any) = this()
-  }
+object toolbarMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [App Bar](https://mui.com/components/app-bar/)
+    *
+    * API:
+    *
+    * - [Toolbar API](https://mui.com/api/toolbar/)
+    */
+  @JSImport("@material-ui/core/Toolbar", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[ToolbarProps]]
+  val default: OverridableComponent[ToolbarTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[ToolbarTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `toolbarMod.foo` */
+  override def _to: OverridableComponent[ToolbarTypeMap[js.Object, div]] = default
 }
-

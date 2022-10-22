@@ -1,33 +1,50 @@
 package typingsJapgolly.mochaPhantomjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MochaPhantomJSOptions extends js.Object {
-  var cookies: js.UndefOr[js.Array[_]] = js.undefined
+trait MochaPhantomJSOptions extends StObject {
+  
+  var cookies: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var file: js.UndefOr[String] = js.undefined
-  var headers: js.UndefOr[js.Any] = js.undefined
+  
+  var headers: js.UndefOr[Any] = js.undefined
+  
   var timeout: js.UndefOr[Double] = js.undefined
+  
   var viewportSize: js.UndefOr[Double] = js.undefined
 }
-
 object MochaPhantomJSOptions {
-  @scala.inline
-  def apply(
-    cookies: js.Array[_] = null,
-    file: String = null,
-    headers: js.Any = null,
-    timeout: Int | Double = null,
-    viewportSize: Int | Double = null
-  ): MochaPhantomJSOptions = {
+  
+  inline def apply(): MochaPhantomJSOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookies != null) __obj.updateDynamic("cookies")(cookies.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (viewportSize != null) __obj.updateDynamic("viewportSize")(viewportSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[MochaPhantomJSOptions]
   }
+  
+  extension [Self <: MochaPhantomJSOptions](x: Self) {
+    
+    inline def setCookies(value: js.Array[Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    
+    inline def setCookiesUndefined: Self = StObject.set(x, "cookies", js.undefined)
+    
+    inline def setCookiesVarargs(value: Any*): Self = StObject.set(x, "cookies", js.Array(value*))
+    
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setViewportSize(value: Double): Self = StObject.set(x, "viewportSize", value.asInstanceOf[js.Any])
+    
+    inline def setViewportSizeUndefined: Self = StObject.set(x, "viewportSize", js.undefined)
+  }
 }
-

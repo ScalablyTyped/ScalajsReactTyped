@@ -2,15 +2,17 @@ package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.angularCore.AnonProvidedIn
+import typingsJapgolly.angularCore.anon.ProvidedIn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InjectableDecorator
-  extends Instantiable0[Injectable]
-     with Instantiable1[/* options */ AnonProvidedIn with InjectableProvider, Injectable] {
+  extends StObject
+     with Instantiable0[Injectable]
+     with Instantiable1[/* options */ ProvidedIn & InjectableProvider, Injectable] {
+  
   /**
     * Decorator that marks a class as available to be
     * provided and injected as a dependency.
@@ -31,6 +33,5 @@ trait InjectableDecorator
     *
     */
   def apply(): TypeDecorator = js.native
-  def apply(options: AnonProvidedIn with InjectableProvider): TypeDecorator = js.native
+  def apply(options: ProvidedIn & InjectableProvider): TypeDecorator = js.native
 }
-

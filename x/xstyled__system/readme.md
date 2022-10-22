@@ -1,24 +1,24 @@
 
 # Scala.js typings for xstyled__system
 
-Typings are for version 1.14
+Typings are for version 1.19
 
 ## Library description:
-Modern style system for styled-components & emotion.
+xstyled system utilities.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @xstyled/system |
-| Keywords           | emotion, styled-components, css, system, styled-system |
-| # releases         | 27 |
-| # dependents       | 32 |
-| # downloads        | 48458 |
-| # stars            | 0 |
+| Keywords           | emotion, styled-components, css, system, styled-system, tailwindcss |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 75768.0 |
+| # stars            | 2042.0 |
 
 ## Links
 - [Homepage](https://xstyled.dev)
-- [Bugs](https://github.com/smooth-code/xstyled/issues)
-- [Repository](https://github.com/smooth-code/xstyled)
+- [Bugs](https://github.com/gregberge/xstyled/issues)
+- [Repository](https://github.com/gregberge/xstyled/tree/master)
 - [Npm](https://www.npmjs.com/package/%40xstyled%2Fsystem)
     
 

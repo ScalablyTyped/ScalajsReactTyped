@@ -1,7 +1,7 @@
 
 # Scala.js typings for swap-case
 
-Typings are for version 1.1.2
+Typings are for version 2.0.2
 
 ## Library description:
 Transform a string by swapping every character from upper to lower case, or lower to upper case
@@ -10,10 +10,10 @@ Transform a string by swapping every character from upper to lower case, or lowe
 | ------------------ | :-------------: |
 | Full name          | swap-case |
 | Keywords           | swap, case, invert, convert, transform, lower, upper |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 40904007 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2397004666666666E7 |
+| # stars            | 1767.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/swap-case#readme)

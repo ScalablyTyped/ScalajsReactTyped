@@ -1,10 +1,11 @@
-package typingsJapgolly.flowdoc
+package typingsJapgolly.flowdoc.Flow
 
+import typingsJapgolly.flowdoc.flowdocInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Flow {
-  type SchemaVersion = typingsJapgolly.flowdoc.flowdocNumbers.`1`
-  type URLAsset = java.lang.String
-}
+
+type SchemaVersion = `1`
+
+type URLAsset = String

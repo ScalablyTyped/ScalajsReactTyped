@@ -1,19 +1,57 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.DiagramNodes")
-@js.native
-class DiagramNodes protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.DiagramNodes_typekey")
-  var PowerPointDotDiagramNodes_typekey: DiagramNodes = js.native
-  def Item(Index: js.Any): DiagramNode = js.native
-  def SelectAll(): Unit = js.native
+trait DiagramNodes extends StObject {
+  
+  val Application: Any
+  
+  val Count: Double
+  
+  val Creator: Double
+  
+  def Item(Index: Any): DiagramNode
+  
+  val Parent: Any
+  
+  /* private */ @JSName("PowerPoint.DiagramNodes_typekey")
+  var PowerPointDotDiagramNodes_typekey: DiagramNodes
+  
+  def SelectAll(): Unit
 }
-
+object DiagramNodes {
+  
+  inline def apply(
+    Application: Any,
+    Count: Double,
+    Creator: Double,
+    Item: Any => DiagramNode,
+    Parent: Any,
+    PowerPointDotDiagramNodes_typekey: DiagramNodes,
+    SelectAll: Callback
+  ): DiagramNodes = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], SelectAll = SelectAll.toJsFn)
+    __obj.updateDynamic("PowerPoint.DiagramNodes_typekey")(PowerPointDotDiagramNodes_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DiagramNodes]
+  }
+  
+  extension [Self <: DiagramNodes](x: Self) {
+    
+    inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Any => DiagramNode): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotDiagramNodes_typekey(value: DiagramNodes): Self = StObject.set(x, "PowerPoint.DiagramNodes_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSelectAll(value: Callback): Self = StObject.set(x, "SelectAll", value.toJsFn)
+  }
+}

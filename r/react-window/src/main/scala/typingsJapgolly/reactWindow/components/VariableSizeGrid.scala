@@ -1,103 +1,100 @@
 package typingsJapgolly.reactWindow.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.react.mod.Key
-import typingsJapgolly.reactWindow.AnonColumnIndex
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.reactWindow.anon.ColumnIndex
 import typingsJapgolly.reactWindow.mod.CSSDirection
 import typingsJapgolly.reactWindow.mod.GridChildComponentProps
 import typingsJapgolly.reactWindow.mod.GridOnItemsRenderedProps
 import typingsJapgolly.reactWindow.mod.GridOnScrollProps
 import typingsJapgolly.reactWindow.mod.ReactElementType
 import typingsJapgolly.reactWindow.mod.VariableSizeGridProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object VariableSizeGrid {
-  def apply(
+  
+  inline def apply[T](
+    children: ComponentType[GridChildComponentProps[T]],
     columnCount: Double,
+    columnWidth: Double => Double,
     height: Double,
     rowCount: Double,
-    width: Double,
-    columnWidth: Double => CallbackTo[Double],
-    rowHeight: Double => CallbackTo[Double],
-    className: String = null,
-    direction: CSSDirection = null,
-    estimatedColumnWidth: Int | Double = null,
-    estimatedRowHeight: Int | Double = null,
-    initialScrollLeft: Int | Double = null,
-    initialScrollTop: Int | Double = null,
-    innerElementType: ReactElementType = null,
-    innerRef: Ref = null,
-    innerTagName: String = null,
-    itemData: js.Any = null,
-    itemKey: /* params */ AnonColumnIndex => CallbackTo[Key] = null,
-    onItemsRendered: /* props */ GridOnItemsRenderedProps => CallbackTo[js.Any] = null,
-    onScroll: /* props */ GridOnScrollProps => CallbackTo[js.Any] = null,
-    outerElementType: ReactElementType = null,
-    outerRef: Ref = null,
-    outerTagName: String = null,
-    overscanColumnCount: Int | Double = null,
-    overscanColumnsCount: Int | Double = null,
-    overscanCount: Int | Double = null,
-    overscanRowCount: Int | Double = null,
-    overscanRowsCount: Int | Double = null,
-    style: CSSProperties = null,
-    useIsScrolling: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[japgolly.scalajs.react.Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ComponentType[GridChildComponentProps]
-  ): UnmountedWithRoot[
-    VariableSizeGridProps, 
-    typingsJapgolly.reactWindow.mod.VariableSizeGrid, 
-    Unit, 
-    VariableSizeGridProps
-  ] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("columnWidth")(js.Any.fromFunction1((t0: scala.Double) => columnWidth(t0).runNow()))
-    __obj.updateDynamic("rowHeight")(js.Any.fromFunction1((t0: scala.Double) => rowHeight(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (estimatedColumnWidth != null) __obj.updateDynamic("estimatedColumnWidth")(estimatedColumnWidth.asInstanceOf[js.Any])
-    if (estimatedRowHeight != null) __obj.updateDynamic("estimatedRowHeight")(estimatedRowHeight.asInstanceOf[js.Any])
-    if (initialScrollLeft != null) __obj.updateDynamic("initialScrollLeft")(initialScrollLeft.asInstanceOf[js.Any])
-    if (initialScrollTop != null) __obj.updateDynamic("initialScrollTop")(initialScrollTop.asInstanceOf[js.Any])
-    if (innerElementType != null) __obj.updateDynamic("innerElementType")(innerElementType.asInstanceOf[js.Any])
-    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    if (innerTagName != null) __obj.updateDynamic("innerTagName")(innerTagName.asInstanceOf[js.Any])
-    if (itemData != null) __obj.updateDynamic("itemData")(itemData.asInstanceOf[js.Any])
-    if (itemKey != null) __obj.updateDynamic("itemKey")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.reactWindow.AnonColumnIndex) => itemKey(t0).runNow()))
-    if (onItemsRendered != null) __obj.updateDynamic("onItemsRendered")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactWindow.mod.GridOnItemsRenderedProps) => onItemsRendered(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactWindow.mod.GridOnScrollProps) => onScroll(t0).runNow()))
-    if (outerElementType != null) __obj.updateDynamic("outerElementType")(outerElementType.asInstanceOf[js.Any])
-    if (outerRef != null) __obj.updateDynamic("outerRef")(outerRef.asInstanceOf[js.Any])
-    if (outerTagName != null) __obj.updateDynamic("outerTagName")(outerTagName.asInstanceOf[js.Any])
-    if (overscanColumnCount != null) __obj.updateDynamic("overscanColumnCount")(overscanColumnCount.asInstanceOf[js.Any])
-    if (overscanColumnsCount != null) __obj.updateDynamic("overscanColumnsCount")(overscanColumnsCount.asInstanceOf[js.Any])
-    if (overscanCount != null) __obj.updateDynamic("overscanCount")(overscanCount.asInstanceOf[js.Any])
-    if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
-    if (overscanRowsCount != null) __obj.updateDynamic("overscanRowsCount")(overscanRowsCount.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(useIsScrolling)) __obj.updateDynamic("useIsScrolling")(useIsScrolling.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactWindow.mod.VariableSizeGridProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactWindow.mod.VariableSizeGrid](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactWindow.mod.VariableSizeGridProps])
+    rowHeight: Double => Double,
+    width: Double
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any], columnCount = columnCount.asInstanceOf[js.Any], columnWidth = js.Any.fromFunction1(columnWidth), height = height.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rowHeight = js.Any.fromFunction1(rowHeight), width = width.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[VariableSizeGridProps[T]]))
   }
+  
   @JSImport("react-window", "VariableSizeGrid")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactWindow.mod.VariableSizeGrid[T]] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: CSSDirection): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def estimatedColumnWidth(value: Double): this.type = set("estimatedColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def estimatedRowHeight(value: Double): this.type = set("estimatedRowHeight", value.asInstanceOf[js.Any])
+    
+    inline def initialScrollLeft(value: Double): this.type = set("initialScrollLeft", value.asInstanceOf[js.Any])
+    
+    inline def initialScrollTop(value: Double): this.type = set("initialScrollTop", value.asInstanceOf[js.Any])
+    
+    inline def innerElementType(value: ReactElementType): this.type = set("innerElementType", value.asInstanceOf[js.Any])
+    
+    inline def innerRef(value: Ref[Any]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: Any | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+    
+    inline def innerTagName(value: String): this.type = set("innerTagName", value.asInstanceOf[js.Any])
+    
+    inline def itemData(value: T): this.type = set("itemData", value.asInstanceOf[js.Any])
+    
+    inline def itemKey(value: /* params */ ColumnIndex[T] => Key): this.type = set("itemKey", js.Any.fromFunction1(value))
+    
+    inline def onItemsRendered(value: /* props */ GridOnItemsRenderedProps => Any): this.type = set("onItemsRendered", js.Any.fromFunction1(value))
+    
+    inline def onScroll(value: /* props */ GridOnScrollProps => Any): this.type = set("onScroll", js.Any.fromFunction1(value))
+    
+    inline def outerElementType(value: ReactElementType): this.type = set("outerElementType", value.asInstanceOf[js.Any])
+    
+    inline def outerRef(value: Ref[Any]): this.type = set("outerRef", value.asInstanceOf[js.Any])
+    
+    inline def outerRefFunction1(value: Any | Null => Callback): this.type = set("outerRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def outerRefNull: this.type = set("outerRef", null)
+    
+    inline def outerTagName(value: String): this.type = set("outerTagName", value.asInstanceOf[js.Any])
+    
+    inline def overscanColumnCount(value: Double): this.type = set("overscanColumnCount", value.asInstanceOf[js.Any])
+    
+    inline def overscanColumnsCount(value: Double): this.type = set("overscanColumnsCount", value.asInstanceOf[js.Any])
+    
+    inline def overscanCount(value: Double): this.type = set("overscanCount", value.asInstanceOf[js.Any])
+    
+    inline def overscanRowCount(value: Double): this.type = set("overscanRowCount", value.asInstanceOf[js.Any])
+    
+    inline def overscanRowsCount(value: Double): this.type = set("overscanRowsCount", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def useIsScrolling(value: Boolean): this.type = set("useIsScrolling", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: VariableSizeGridProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

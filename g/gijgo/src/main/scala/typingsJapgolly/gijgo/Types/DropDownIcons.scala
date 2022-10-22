@@ -1,20 +1,25 @@
 package typingsJapgolly.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DropDown
-trait DropDownIcons extends js.Object {
+trait DropDownIcons extends StObject {
+  
   var dropdown: js.UndefOr[String] = js.undefined
 }
-
 object DropDownIcons {
-  @scala.inline
-  def apply(dropdown: String = null): DropDownIcons = {
+  
+  inline def apply(): DropDownIcons = {
     val __obj = js.Dynamic.literal()
-    if (dropdown != null) __obj.updateDynamic("dropdown")(dropdown.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownIcons]
   }
+  
+  extension [Self <: DropDownIcons](x: Self) {
+    
+    inline def setDropdown(value: String): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+  }
 }
-

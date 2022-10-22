@@ -1,22 +1,28 @@
 package typingsJapgolly.systeminformation.mod.Systeminformation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChassisData extends js.Object {
+trait ChassisData extends StObject {
+  
   var assetTag: String
+  
   var manufacturer: String
+  
   var model: String
+  
   var serial: String
+  
   var sku: String
+  
   var `type`: String
+  
   var version: String
 }
-
 object ChassisData {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     assetTag: String,
     manufacturer: String,
     model: String,
@@ -29,5 +35,21 @@ object ChassisData {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChassisData]
   }
+  
+  extension [Self <: ChassisData](x: Self) {
+    
+    inline def setAssetTag(value: String): Self = StObject.set(x, "assetTag", value.asInstanceOf[js.Any])
+    
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

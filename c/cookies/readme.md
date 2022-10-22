@@ -10,10 +10,10 @@ Cookies, optionally signed using Keygrip.
 | ------------------ | :-------------: |
 | Full name          | cookies |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 366 |
-| # downloads        | 26286207 |
-| # stars            | 40 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6841498.0 |
+| # stars            | 1200.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/cookies#readme)

@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISymmetricKeyAlgorithmProviderStatics extends js.Object {
+trait ISymmetricKeyAlgorithmProviderStatics extends StObject {
+  
   def openAlgorithm(algorithm: String): SymmetricKeyAlgorithmProvider
 }
-
 object ISymmetricKeyAlgorithmProviderStatics {
-  @scala.inline
-  def apply(openAlgorithm: String => CallbackTo[SymmetricKeyAlgorithmProvider]): ISymmetricKeyAlgorithmProviderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("openAlgorithm")(js.Any.fromFunction1((t0: java.lang.String) => openAlgorithm(t0).runNow()))
+  
+  inline def apply(openAlgorithm: String => SymmetricKeyAlgorithmProvider): ISymmetricKeyAlgorithmProviderStatics = {
+    val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
     __obj.asInstanceOf[ISymmetricKeyAlgorithmProviderStatics]
   }
+  
+  extension [Self <: ISymmetricKeyAlgorithmProviderStatics](x: Self) {
+    
+    inline def setOpenAlgorithm(value: String => SymmetricKeyAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
+  }
 }
-

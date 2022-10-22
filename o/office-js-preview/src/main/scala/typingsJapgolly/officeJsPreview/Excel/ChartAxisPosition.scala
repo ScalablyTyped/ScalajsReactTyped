@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisPosition extends js.Object
-
+sealed trait ChartAxisPosition extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisPosition")
 @js.native
-object ChartAxisPosition extends js.Object {
+object ChartAxisPosition extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait automatic extends ChartAxisPosition
+  sealed trait automatic
+    extends StObject
+       with ChartAxisPosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait custom extends ChartAxisPosition
+  sealed trait custom
+    extends StObject
+       with ChartAxisPosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait maximum extends ChartAxisPosition
+  sealed trait maximum
+    extends StObject
+       with ChartAxisPosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait minimum extends ChartAxisPosition
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisPosition with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "Maximum" */ @js.native
-  object maximum extends TopLevel[maximum with String]
-  
-  /* "Minimum" */ @js.native
-  object minimum extends TopLevel[minimum with String]
-  
+  sealed trait minimum
+    extends StObject
+       with ChartAxisPosition
 }
-

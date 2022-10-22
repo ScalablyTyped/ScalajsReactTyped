@@ -1,20 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Diagnostics
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents advanced settings that you can use to configure a LoggingChannel object. */
-@JSGlobal("Windows.Foundation.Diagnostics.LoggingChannelOptions")
-@js.native
-/** Creates a LoggingChannelOptions object with all options set to default values. */
-class LoggingChannelOptions () extends js.Object {
-  /**
-    * Creates a LoggingChannelOptions object with all properties set to default values except for the specified group.
-    * @param group The group identifier.
-    */
-  def this(group: String) = this()
+trait LoggingChannelOptions extends StObject {
+  
   /** Gets or sets the channel group identifier. */
-  var group: String = js.native
+  var group: String
 }
-
+object LoggingChannelOptions {
+  
+  inline def apply(group: String): LoggingChannelOptions = {
+    val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoggingChannelOptions]
+  }
+  
+  extension [Self <: LoggingChannelOptions](x: Self) {
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+  }
+}

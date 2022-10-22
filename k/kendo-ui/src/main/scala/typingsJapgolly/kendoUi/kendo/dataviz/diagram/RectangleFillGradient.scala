@@ -1,36 +1,56 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RectangleFillGradient extends js.Object {
-  var center: js.UndefOr[js.Any] = js.undefined
-  var end: js.UndefOr[js.Any] = js.undefined
+trait RectangleFillGradient extends StObject {
+  
+  var center: js.UndefOr[Any] = js.undefined
+  
+  var end: js.UndefOr[Any] = js.undefined
+  
   var radius: js.UndefOr[Double] = js.undefined
-  var start: js.UndefOr[js.Any] = js.undefined
+  
+  var start: js.UndefOr[Any] = js.undefined
+  
   var stops: js.UndefOr[js.Array[RectangleFillGradientStop]] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object RectangleFillGradient {
-  @scala.inline
-  def apply(
-    center: js.Any = null,
-    end: js.Any = null,
-    radius: Int | Double = null,
-    start: js.Any = null,
-    stops: js.Array[RectangleFillGradientStop] = null,
-    `type`: String = null
-  ): RectangleFillGradient = {
+  
+  inline def apply(): RectangleFillGradient = {
     val __obj = js.Dynamic.literal()
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (stops != null) __obj.updateDynamic("stops")(stops.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectangleFillGradient]
   }
+  
+  extension [Self <: RectangleFillGradient](x: Self) {
+    
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setEnd(value: Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setStart(value: Any): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStops(value: js.Array[RectangleFillGradientStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    
+    inline def setStopsVarargs(value: RectangleFillGradientStop*): Self = StObject.set(x, "stops", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

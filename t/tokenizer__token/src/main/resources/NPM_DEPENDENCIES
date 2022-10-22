@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@tokenizer/token" : "0.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@tokenizer/token" : "0.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

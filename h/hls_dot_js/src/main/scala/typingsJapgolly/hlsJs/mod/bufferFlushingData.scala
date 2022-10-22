@@ -1,21 +1,39 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// interface bufferEosData {}
-trait bufferFlushingData extends js.Object {
-  var endOffset: Double
-  var startOffset: Double
-}
-
-object bufferFlushingData {
-  @scala.inline
-  def apply(endOffset: Double, startOffset: Double): bufferFlushingData = {
-    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
+trait BufferFlushingData extends StObject {
   
-    __obj.asInstanceOf[bufferFlushingData]
+  var endOffset: Double
+  
+  var endOffsetSubtitles: js.UndefOr[Double] = js.undefined
+  
+  var startOffset: Double
+  
+  var `type`: SourceBufferName | Null
+}
+object BufferFlushingData {
+  
+  inline def apply(endOffset: Double, startOffset: Double): BufferFlushingData = {
+    val __obj = js.Dynamic.literal(endOffset = endOffset.asInstanceOf[js.Any], startOffset = startOffset.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(null)
+    __obj.asInstanceOf[BufferFlushingData]
+  }
+  
+  extension [Self <: BufferFlushingData](x: Self) {
+    
+    inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
+    
+    inline def setEndOffsetSubtitles(value: Double): Self = StObject.set(x, "endOffsetSubtitles", value.asInstanceOf[js.Any])
+    
+    inline def setEndOffsetSubtitlesUndefined: Self = StObject.set(x, "endOffsetSubtitles", js.undefined)
+    
+    inline def setStartOffset(value: Double): Self = StObject.set(x, "startOffset", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: SourceBufferName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
   }
 }
-

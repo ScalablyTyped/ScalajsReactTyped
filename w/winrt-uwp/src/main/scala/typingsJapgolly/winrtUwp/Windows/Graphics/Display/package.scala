@@ -1,10 +1,10 @@
-package typingsJapgolly.winrtUwp.Windows.Graphics
+package typingsJapgolly.winrtUwp.Windows.Graphics.Display
 
+import typingsJapgolly.winrtUwp.Windows.WinRTEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Display {
-  /** Represents a method that handles display property events. */
-  type DisplayPropertiesEventHandler = js.Function1[/* ev */ typingsJapgolly.winrtUwp.Windows.WinRTEvent[js.Any], scala.Unit]
-}
+
+/** Represents a method that handles display property events. */
+type DisplayPropertiesEventHandler = js.Function1[/* ev */ WinRTEvent[Any], Unit]

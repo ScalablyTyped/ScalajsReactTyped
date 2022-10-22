@@ -1,24 +1,20 @@
 package typingsJapgolly.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.never
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.always
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.controllable
 */
-trait RedEyeReduction extends js.Object
-
+trait RedEyeReduction extends StObject
 object RedEyeReduction {
-  @scala.inline
-  def always: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.always = this.cast("always")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def controllable: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.controllable = this.cast("controllable")
-  @scala.inline
-  def never: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.never = this.cast("never")
+  
+  inline def always: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.always = "always".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.always]
+  
+  inline def controllable: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.controllable = "controllable".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.controllable]
+  
+  inline def never: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.never = "never".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.never]
 }
-

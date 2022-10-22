@@ -1,38 +1,53 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendLayerProperties extends js.Object {
+trait LegendLayerProperties extends StObject {
+  
   /**
     * The id of the operational layer to include in the printout's legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html#layerId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#layerId)
     */
   var layerId: js.UndefOr[String] = js.undefined
+  
   /**
     * The ids of the sublayers to include in the printout's legend.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html#subLayerIds)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#subLayerIds)
     */
   var subLayerIds: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * The title of the feature layer. Use this property to modify feature layer name in the legend for the printout.
+    * The title of the feature layer.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-LegendLayer.html#title)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-LegendLayer.html#title)
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object LegendLayerProperties {
-  @scala.inline
-  def apply(layerId: String = null, subLayerIds: js.Array[String] = null, title: String = null): LegendLayerProperties = {
+  
+  inline def apply(): LegendLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (layerId != null) __obj.updateDynamic("layerId")(layerId.asInstanceOf[js.Any])
-    if (subLayerIds != null) __obj.updateDynamic("subLayerIds")(subLayerIds.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendLayerProperties]
   }
+  
+  extension [Self <: LegendLayerProperties](x: Self) {
+    
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    
+    inline def setSubLayerIds(value: js.Array[String]): Self = StObject.set(x, "subLayerIds", value.asInstanceOf[js.Any])
+    
+    inline def setSubLayerIdsUndefined: Self = StObject.set(x, "subLayerIds", js.undefined)
+    
+    inline def setSubLayerIdsVarargs(value: String*): Self = StObject.set(x, "subLayerIds", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

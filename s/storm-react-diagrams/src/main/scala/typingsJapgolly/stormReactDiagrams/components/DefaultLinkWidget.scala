@@ -1,61 +1,45 @@
 package typingsJapgolly.stormReactDiagrams.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.stormReactDiagrams.defaultLinkModelMod.DefaultLinkModel
-import typingsJapgolly.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkProps
-import typingsJapgolly.stormReactDiagrams.diagramEngineMod.DiagramEngine
-import typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsModelsDefaultLinkModelMod.DefaultLinkModel
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultLinkWidgetMod.DefaultLinkProps
+import typingsJapgolly.stormReactDiagrams.distSrcDiagramEngineMod.DiagramEngine
+import typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DefaultLinkWidget {
-  def apply(
-    diagramEngine: DiagramEngine,
-    link: DefaultLinkModel,
-    baseClass: String = null,
-    className: String = null,
-    color: String = null,
-    extraProps: js.Any = null,
-    pointAdded: (/* point */ PointModel, /* event */ MouseEvent) => CallbackTo[js.Any] = null,
-    smooth: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    DefaultLinkProps, 
-    typingsJapgolly.stormReactDiagrams.mod.DefaultLinkWidget, 
-    Unit, 
-    DefaultLinkProps
-  ] = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
   
-      if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    if (pointAdded != null) __obj.updateDynamic("pointAdded")(js.Any.fromFunction2((t0: /* point */ typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel, t1: /* event */ org.scalajs.dom.raw.MouseEvent) => pointAdded(t0, t1).runNow()))
-    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.stormReactDiagrams.mod.DefaultLinkWidget](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkProps])(children: _*)
+  inline def apply(diagramEngine: DiagramEngine, link: DefaultLinkModel): Builder = {
+    val __props = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DefaultLinkProps]))
   }
+  
   @JSImport("storm-react-diagrams", "DefaultLinkWidget")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.stormReactDiagrams.mod.DefaultLinkWidget] {
+    
+    inline def baseClass(value: String): this.type = set("baseClass", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def extraProps(value: Any): this.type = set("extraProps", value.asInstanceOf[js.Any])
+    
+    inline def pointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => Any): this.type = set("pointAdded", js.Any.fromFunction2(value))
+    
+    inline def smooth(value: Boolean): this.type = set("smooth", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DefaultLinkProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

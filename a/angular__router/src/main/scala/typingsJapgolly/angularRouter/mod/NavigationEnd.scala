@@ -1,12 +1,13 @@
 package typingsJapgolly.angularRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "NavigationEnd")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "NavigationEnd")
 @js.native
-class NavigationEnd protected () extends RouterEvent {
+open class NavigationEnd protected () extends RouterEvent {
   def this(
     /** @docsNotRequired */
   id: Double,
@@ -15,7 +16,9 @@ class NavigationEnd protected () extends RouterEvent {
     /** @docsNotRequired */
   urlAfterRedirects: String
   ) = this()
+  
+  val `type`: String | Double = js.native
+  
   /** @docsNotRequired */
   var urlAfterRedirects: String = js.native
 }
-

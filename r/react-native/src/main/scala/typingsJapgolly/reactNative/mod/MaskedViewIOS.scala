@@ -1,13 +1,12 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "MaskedViewIOS")
+- Dropped new (args : ...any): react-native.react-native.NativeMethods */ @JSImport("react-native", "MaskedViewIOS")
 @js.native
-class MaskedViewIOS ()
-  extends Component[MaskedViewIOSProps, js.Object, js.Any]
-
+open class MaskedViewIOS ()
+  extends Component[MaskedViewIOSProps, js.Object, Any]

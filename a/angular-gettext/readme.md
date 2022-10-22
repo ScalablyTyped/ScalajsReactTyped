@@ -10,15 +10,13 @@ Gettext support for Angular.js
 | ------------------ | :-------------: |
 | Full name          | angular-gettext |
 | Keywords           | angular, gettext |
-| # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 518905 |
-| # stars            | 5 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 45102.333333333336 |
+| # stars            | 654.0 |
 
 ## Links
 - [Homepage](http://angular-gettext.rocketeer.be/)
-- [Bugs](https://github.com/rubenv/angular-gettext/issues)
-- [Repository](https://github.com/rubenv/angular-gettext)
 - [Npm](https://www.npmjs.com/package/angular-gettext)
     
 

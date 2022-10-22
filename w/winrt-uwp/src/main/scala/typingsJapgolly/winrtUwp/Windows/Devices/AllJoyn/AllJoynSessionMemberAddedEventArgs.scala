@@ -1,19 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a peer that was added to a session. */
-@JSGlobal("Windows.Devices.AllJoyn.AllJoynSessionMemberAddedEventArgs")
-@js.native
-class AllJoynSessionMemberAddedEventArgs protected () extends js.Object {
-  /**
-    * Generates an object that contains information about the remote app added to the session.
-    * @param uniqueName The unique Consumer name.
-    */
-  def this(uniqueName: String) = this()
+trait AllJoynSessionMemberAddedEventArgs extends StObject {
+  
   /** The unique bus name of the remote app new to the session. */
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
-
+object AllJoynSessionMemberAddedEventArgs {
+  
+  inline def apply(uniqueName: String): AllJoynSessionMemberAddedEventArgs = {
+    val __obj = js.Dynamic.literal(uniqueName = uniqueName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AllJoynSessionMemberAddedEventArgs]
+  }
+  
+  extension [Self <: AllJoynSessionMemberAddedEventArgs](x: Self) {
+    
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+  }
+}

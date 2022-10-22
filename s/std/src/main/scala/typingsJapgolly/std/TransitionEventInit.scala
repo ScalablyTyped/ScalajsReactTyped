@@ -1,33 +1,41 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransitionEventInit extends EventInit {
+trait TransitionEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var elapsedTime: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object TransitionEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    elapsedTime: Int | Double = null,
-    propertyName: java.lang.String = null,
-    pseudoElement: java.lang.String = null
-  ): TransitionEventInit = {
+  
+  inline def apply(): TransitionEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (elapsedTime != null) __obj.updateDynamic("elapsedTime")(elapsedTime.asInstanceOf[js.Any])
-    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
-    if (pseudoElement != null) __obj.updateDynamic("pseudoElement")(pseudoElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionEventInit]
   }
+  
+  extension [Self <: TransitionEventInit](x: Self) {
+    
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    
+    inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+    
+    inline def setPropertyName(value: java.lang.String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyNameUndefined: Self = StObject.set(x, "propertyName", js.undefined)
+    
+    inline def setPseudoElement(value: java.lang.String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
+    
+    inline def setPseudoElementUndefined: Self = StObject.set(x, "pseudoElement", js.undefined)
+  }
 }
-

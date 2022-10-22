@@ -1,7 +1,7 @@
 
 # Scala.js typings for apollo__protobufjs
 
-Typings are for version 1.0.3
+Typings are for version 1.2.6
 
 ## Library description:
 Protocol Buffers for JavaScript (& TypeScript).
@@ -10,10 +10,10 @@ Protocol Buffers for JavaScript (& TypeScript).
 | ------------------ | :-------------: |
 | Full name          | @apollo/protobufjs |
 | Keywords           | protobuf, protocol-buffers, serialization, typescript |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 1487116 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 7431502.0 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/apollographql/protobuf.js)

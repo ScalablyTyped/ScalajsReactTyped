@@ -1,21 +1,30 @@
 package typingsJapgolly.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanel extends js.Object {
+trait IPanel extends StObject {
+  
   var format: IFormat
+  
   var margins: IMargins
+  
   var transparent: Boolean
 }
-
 object IPanel {
-  @scala.inline
-  def apply(format: IFormat, margins: IMargins, transparent: Boolean): IPanel = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
   
+  inline def apply(format: IFormat, margins: IMargins, transparent: Boolean): IPanel = {
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], margins = margins.asInstanceOf[js.Any], transparent = transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPanel]
   }
+  
+  extension [Self <: IPanel](x: Self) {
+    
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+  }
 }
-

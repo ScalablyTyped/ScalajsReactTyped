@@ -1,15 +1,19 @@
 package typingsJapgolly.activexAccess.Access
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Entities extends js.Object {
+trait Entities extends StObject {
+  
+  def apply(Index: Any): Entity = js.native
+  
   val Count: Double = js.native
-  val Parent: js.Any = js.native
-  def apply(Index: js.Any): Entity = js.native
+  
   def IsMemberSafe(dispid: Double): Boolean = js.native
-  def Item(Index: js.Any): Entity = js.native
+  
+  def Item(Index: Any): Entity = js.native
+  
+  val Parent: Any = js.native
 }
-

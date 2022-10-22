@@ -1,61 +1,62 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DirectionsLastRoute extends Object {
+trait DirectionsLastRoute
+  extends StObject
+     with RouteLayerSolveResult {
+  
   /**
-    * Array of graphics representing the point barriers. For a list of properties returned for each barrier, see the [barriers](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/barriers.htm) help documentation.
+    * Collection of point barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var barriers: js.Array[Graphic]
+  @JSName("pointBarriers")
+  var pointBarriers_DirectionsLastRoute: Collection[PointBarrier]
+  
   /**
-    * An array of messages serialized to JSON.
+    * Collection of polygon barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var messages: js.Array[DirectionsLastRouteMessages]
+  @JSName("polygonBarriers")
+  var polygonBarriers_DirectionsLastRoute: Collection[PolygonBarrier]
+  
   /**
-    * Array of graphics representing the polygon barriers. For a list of properties returned for each barrier, see the [barriers](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/barriers.htm) help documentation.
+    * Collection of polyline barriers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
     */
-  var polygonBarriers: js.Array[Graphic]
-  /**
-    * Array of graphics representing the polygon barriers. For a list of properties returned for each barrier, see the [barriers](https://desktop.arcgis.com/en/arcmap/latest/extensions/network-analyst/barriers.htm) help documentation.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
-    */
-  var polylineBarriers: js.Array[Graphic]
-  /**
-    * An array of [RouteResults](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions.html#lastRoute)
-    */
-  var routeResults: RouteResult
+  @JSName("polylineBarriers")
+  var polylineBarriers_DirectionsLastRoute: Collection[PolylineBarrier]
 }
-
 object DirectionsLastRoute {
-  @scala.inline
-  def apply(
-    barriers: js.Array[Graphic],
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    messages: js.Array[DirectionsLastRouteMessages],
-    polygonBarriers: js.Array[Graphic],
-    polylineBarriers: js.Array[Graphic],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    routeResults: RouteResult
+    directionLines: Collection[DirectionLine],
+    directionPoints: Collection[DirectionPoint],
+    hasOwnProperty: PropertyKey => Boolean,
+    pointBarriers: Collection[PointBarrier],
+    polygonBarriers: Collection[PolygonBarrier],
+    polylineBarriers: Collection[PolylineBarrier],
+    propertyIsEnumerable: PropertyKey => Boolean,
+    routeInfo: RouteInfo,
+    stops: Collection[Stop]
   ): DirectionsLastRoute = {
-    val __obj = js.Dynamic.literal(barriers = barriers.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], routeResults = routeResults.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], directionLines = directionLines.asInstanceOf[js.Any], directionPoints = directionPoints.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), pointBarriers = pointBarriers.asInstanceOf[js.Any], polygonBarriers = polygonBarriers.asInstanceOf[js.Any], polylineBarriers = polylineBarriers.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), routeInfo = routeInfo.asInstanceOf[js.Any], stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsLastRoute]
   }
+  
+  extension [Self <: DirectionsLastRoute](x: Self) {
+    
+    inline def setPointBarriers(value: Collection[PointBarrier]): Self = StObject.set(x, "pointBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolygonBarriers(value: Collection[PolygonBarrier]): Self = StObject.set(x, "polygonBarriers", value.asInstanceOf[js.Any])
+    
+    inline def setPolylineBarriers(value: Collection[PolylineBarrier]): Self = StObject.set(x, "polylineBarriers", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,31 +1,39 @@
 package typingsJapgolly.knockoutPreRendered
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutMemoization extends js.Object {
+trait KnockoutMemoization extends StObject {
+  
   def memoize(callback: js.Function0[String]): String
+  
   def parseMemoText(memoText: String): String
-  def unmemoize(memoId: String, callbackParams: js.Array[_]): Boolean
-  def unmemoizeDomNodeAndDescendants(domNode: js.Any, extraCallbackParamsArray: js.Array[_]): Boolean
+  
+  def unmemoize(memoId: String, callbackParams: js.Array[Any]): Boolean
+  
+  def unmemoizeDomNodeAndDescendants(domNode: Any, extraCallbackParamsArray: js.Array[Any]): Boolean
 }
-
 object KnockoutMemoization {
-  @scala.inline
-  def apply(
-    memoize: js.Function0[String] => CallbackTo[String],
-    parseMemoText: String => CallbackTo[String],
-    unmemoize: (String, js.Array[js.Any]) => CallbackTo[Boolean],
-    unmemoizeDomNodeAndDescendants: (js.Any, js.Array[js.Any]) => CallbackTo[Boolean]
+  
+  inline def apply(
+    memoize: js.Function0[String] => String,
+    parseMemoText: String => String,
+    unmemoize: (String, js.Array[Any]) => Boolean,
+    unmemoizeDomNodeAndDescendants: (Any, js.Array[Any]) => Boolean
   ): KnockoutMemoization = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("memoize")(js.Any.fromFunction1((t0: js.Function0[java.lang.String]) => memoize(t0).runNow()))
-    __obj.updateDynamic("parseMemoText")(js.Any.fromFunction1((t0: java.lang.String) => parseMemoText(t0).runNow()))
-    __obj.updateDynamic("unmemoize")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Array[js.Any]) => unmemoize(t0, t1).runNow()))
-    __obj.updateDynamic("unmemoizeDomNodeAndDescendants")(js.Any.fromFunction2((t0: js.Any, t1: js.Array[js.Any]) => unmemoizeDomNodeAndDescendants(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(memoize = js.Any.fromFunction1(memoize), parseMemoText = js.Any.fromFunction1(parseMemoText), unmemoize = js.Any.fromFunction2(unmemoize), unmemoizeDomNodeAndDescendants = js.Any.fromFunction2(unmemoizeDomNodeAndDescendants))
     __obj.asInstanceOf[KnockoutMemoization]
   }
+  
+  extension [Self <: KnockoutMemoization](x: Self) {
+    
+    inline def setMemoize(value: js.Function0[String] => String): Self = StObject.set(x, "memoize", js.Any.fromFunction1(value))
+    
+    inline def setParseMemoText(value: String => String): Self = StObject.set(x, "parseMemoText", js.Any.fromFunction1(value))
+    
+    inline def setUnmemoize(value: (String, js.Array[Any]) => Boolean): Self = StObject.set(x, "unmemoize", js.Any.fromFunction2(value))
+    
+    inline def setUnmemoizeDomNodeAndDescendants(value: (Any, js.Array[Any]) => Boolean): Self = StObject.set(x, "unmemoizeDomNodeAndDescendants", js.Any.fromFunction2(value))
+  }
 }
-

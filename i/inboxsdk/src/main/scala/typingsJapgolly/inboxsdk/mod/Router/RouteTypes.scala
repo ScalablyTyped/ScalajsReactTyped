@@ -1,8 +1,8 @@
 package typingsJapgolly.inboxsdk.mod.Router
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.inboxsdk.inboxsdkStrings.LIST
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.inboxsdk.inboxsdkStrings.CUSTOM
   - typingsJapgolly.inboxsdk.inboxsdkStrings.UNKNOWN
 */
-trait RouteTypes extends js.Object
-
+trait RouteTypes extends StObject
 object RouteTypes {
-  @scala.inline
-  def CHAT: typingsJapgolly.inboxsdk.inboxsdkStrings.CHAT = this.cast("CHAT")
-  @scala.inline
-  def CUSTOM: typingsJapgolly.inboxsdk.inboxsdkStrings.CUSTOM = this.cast("CUSTOM")
-  @scala.inline
-  def LIST: typingsJapgolly.inboxsdk.inboxsdkStrings.LIST = this.cast("LIST")
-  @scala.inline
-  def SETTINGS: typingsJapgolly.inboxsdk.inboxsdkStrings.SETTINGS = this.cast("SETTINGS")
-  @scala.inline
-  def THREAD: typingsJapgolly.inboxsdk.inboxsdkStrings.THREAD = this.cast("THREAD")
-  @scala.inline
-  def UNKNOWN: typingsJapgolly.inboxsdk.inboxsdkStrings.UNKNOWN = this.cast("UNKNOWN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CHAT: typingsJapgolly.inboxsdk.inboxsdkStrings.CHAT = "CHAT".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.CHAT]
+  
+  inline def CUSTOM: typingsJapgolly.inboxsdk.inboxsdkStrings.CUSTOM = "CUSTOM".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.CUSTOM]
+  
+  inline def LIST: typingsJapgolly.inboxsdk.inboxsdkStrings.LIST = "LIST".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.LIST]
+  
+  inline def SETTINGS: typingsJapgolly.inboxsdk.inboxsdkStrings.SETTINGS = "SETTINGS".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.SETTINGS]
+  
+  inline def THREAD: typingsJapgolly.inboxsdk.inboxsdkStrings.THREAD = "THREAD".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.THREAD]
+  
+  inline def UNKNOWN: typingsJapgolly.inboxsdk.inboxsdkStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typingsJapgolly.inboxsdk.inboxsdkStrings.UNKNOWN]
 }
-

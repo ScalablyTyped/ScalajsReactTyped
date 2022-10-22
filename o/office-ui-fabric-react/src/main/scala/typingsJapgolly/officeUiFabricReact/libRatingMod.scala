@@ -1,34 +1,47 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.ratingTypesMod.IRatingProps
+import typingsJapgolly.officeUiFabricReact.libComponentsRatingRatingDottypesMod.IRatingProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/Rating", JSImport.Namespace)
-@js.native
-object libRatingMod extends js.Object {
+object libRatingMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Rating", "Rating")
   @js.native
-  class RatingBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.ratingMod.RatingBase {
+  val Rating: FunctionComponent[IRatingProps] = js.native
+  
+  @JSImport("office-ui-fabric-react/lib/Rating", "RatingBase")
+  @js.native
+  open class RatingBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsRatingMod.RatingBase {
     def this(props: IRatingProps) = this()
   }
-  
-  val Rating: FunctionComponent[IRatingProps] = js.native
   /* static members */
-  @js.native
-  object RatingBase extends js.Object {
-    var defaultProps: IRatingProps = js.native
+  object RatingBase {
+    
+    @JSImport("office-ui-fabric-react/lib/Rating", "RatingBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/Rating", "RatingBase.defaultProps")
+    @js.native
+    def defaultProps: IRatingProps = js.native
+    inline def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("office-ui-fabric-react/lib/Rating", "RatingSize")
   @js.native
-  object RatingSize extends js.Object {
-    /* 1 */ val Large: typingsJapgolly.officeUiFabricReact.ratingTypesMod.RatingSize.Large with Double = js.native
-    /* 0 */ val Small: typingsJapgolly.officeUiFabricReact.ratingTypesMod.RatingSize.Small with Double = js.native
+  object RatingSize extends StObject {
+    
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.officeUiFabricReact.ratingTypesMod.RatingSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[
+        typingsJapgolly.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize & Double
+      ] = js.native
+    
+    /* 1 */ val Large: typingsJapgolly.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize.Large & Double = js.native
+    
+    /* 0 */ val Small: typingsJapgolly.officeUiFabricReact.libComponentsRatingRatingDottypesMod.RatingSize.Small & Double = js.native
   }
-  
 }
-

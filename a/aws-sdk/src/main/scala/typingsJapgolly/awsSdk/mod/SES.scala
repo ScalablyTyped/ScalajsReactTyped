@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.sesMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsSesMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "SES")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SES ()
-  extends typingsJapgolly.awsSdk.allMod.SES {
+open class SES ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.SES {
   def this(options: ClientConfiguration) = this()
 }
-

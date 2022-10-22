@@ -1,21 +1,17 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.documentdb.documentdbStrings.Consistent
   - typingsJapgolly.documentdb.documentdbStrings.Lazy
 */
-trait IndexingMode extends js.Object
-
+trait IndexingMode extends StObject
 object IndexingMode {
-  @scala.inline
-  def Consistent: typingsJapgolly.documentdb.documentdbStrings.Consistent = this.cast("Consistent")
-  @scala.inline
-  def Lazy: typingsJapgolly.documentdb.documentdbStrings.Lazy = this.cast("Lazy")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Consistent: typingsJapgolly.documentdb.documentdbStrings.Consistent = "Consistent".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.Consistent]
+  
+  inline def Lazy: typingsJapgolly.documentdb.documentdbStrings.Lazy = "Lazy".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.Lazy]
 }
-

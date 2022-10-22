@@ -1,25 +1,34 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartParallelAxesLabelsLevelsOptions extends js.Object {
+trait ChartParallelAxesLabelsLevelsOptions extends StObject {
+  
   /**
     * (Gantt) Specify the level which the options within this object applies
     * to.
     */
   var level: js.UndefOr[Double] = js.undefined
+  
   var style: js.UndefOr[CSSObject] = js.undefined
 }
-
 object ChartParallelAxesLabelsLevelsOptions {
-  @scala.inline
-  def apply(level: Int | Double = null, style: CSSObject = null): ChartParallelAxesLabelsLevelsOptions = {
+  
+  inline def apply(): ChartParallelAxesLabelsLevelsOptions = {
     val __obj = js.Dynamic.literal()
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesLabelsLevelsOptions]
   }
+  
+  extension [Self <: ChartParallelAxesLabelsLevelsOptions](x: Self) {
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

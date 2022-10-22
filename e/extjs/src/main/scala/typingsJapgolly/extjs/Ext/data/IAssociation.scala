@@ -1,92 +1,87 @@
 package typingsJapgolly.extjs.Ext.data
 
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.extjs.Ext.Array
 import typingsJapgolly.extjs.Ext.IBase
-import typingsJapgolly.extjs.Ext.IClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAssociation extends IBase {
+trait IAssociation
+  extends StObject
+     with IBase {
+  
   /** [Config Option] (String) */
   var associatedModel: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var associatedName: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var associationKey: js.UndefOr[String] = js.undefined
+  
   /** [Method] Get a specialized reader for reading associated data
-  		* @returns Ext.data.reader.Reader The reader, null if not supplied
-  		*/
+    * @returns Ext.data.reader.Reader The reader, null if not supplied
+    */
   var getReader: js.UndefOr[js.Function0[typingsJapgolly.extjs.Ext.data.reader.IReader]] = js.undefined
+  
   /** [Config Option] (String) */
   var model: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var ownerModel: js.UndefOr[String] = js.undefined
+  
   /** [Property] (String) */
   var ownerName: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var primaryKey: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (Ext.data.reader.Reader) */
   var reader: js.UndefOr[typingsJapgolly.extjs.Ext.data.reader.IReader] = js.undefined
 }
-
 object IAssociation {
-  @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    associatedModel: String = null,
-    associatedName: String = null,
-    associationKey: String = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    config: js.Any = null,
-    extend: String = null,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getReader: js.UndefOr[CallbackTo[typingsJapgolly.extjs.Ext.data.reader.IReader]] = js.undefined,
-    inheritableStatics: js.Any = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[IAssociation] = null,
-    mixins: js.Any = null,
-    model: String = null,
-    ownerModel: String = null,
-    ownerName: String = null,
-    primaryKey: String = null,
-    reader: typingsJapgolly.extjs.Ext.data.reader.IReader = null,
-    requires: Array = null,
-    self: IClass = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IAssociation = {
+  
+  inline def apply(): IAssociation = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (associatedModel != null) __obj.updateDynamic("associatedModel")(associatedModel.asInstanceOf[js.Any])
-    if (associatedName != null) __obj.updateDynamic("associatedName")(associatedName.asInstanceOf[js.Any])
-    if (associationKey != null) __obj.updateDynamic("associationKey")(associationKey.asInstanceOf[js.Any])
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getReader.foreach(p => __obj.updateDynamic("getReader")(p.toJsFn))
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (ownerModel != null) __obj.updateDynamic("ownerModel")(ownerModel.asInstanceOf[js.Any])
-    if (ownerName != null) __obj.updateDynamic("ownerName")(ownerName.asInstanceOf[js.Any])
-    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey.asInstanceOf[js.Any])
-    if (reader != null) __obj.updateDynamic("reader")(reader.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAssociation]
   }
+  
+  extension [Self <: IAssociation](x: Self) {
+    
+    inline def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
+    
+    inline def setAssociatedModelUndefined: Self = StObject.set(x, "associatedModel", js.undefined)
+    
+    inline def setAssociatedName(value: String): Self = StObject.set(x, "associatedName", value.asInstanceOf[js.Any])
+    
+    inline def setAssociatedNameUndefined: Self = StObject.set(x, "associatedName", js.undefined)
+    
+    inline def setAssociationKey(value: String): Self = StObject.set(x, "associationKey", value.asInstanceOf[js.Any])
+    
+    inline def setAssociationKeyUndefined: Self = StObject.set(x, "associationKey", js.undefined)
+    
+    inline def setGetReader(value: CallbackTo[typingsJapgolly.extjs.Ext.data.reader.IReader]): Self = StObject.set(x, "getReader", value.toJsFn)
+    
+    inline def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
+    
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    
+    inline def setOwnerModel(value: String): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerModelUndefined: Self = StObject.set(x, "ownerModel", js.undefined)
+    
+    inline def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
+    
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    
+    inline def setReader(value: typingsJapgolly.extjs.Ext.data.reader.IReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    
+    inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
+  }
 }
-

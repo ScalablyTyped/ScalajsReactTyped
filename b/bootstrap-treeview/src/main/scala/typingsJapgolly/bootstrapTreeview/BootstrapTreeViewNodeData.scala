@@ -1,51 +1,89 @@
 package typingsJapgolly.bootstrapTreeview
 
+import typingsJapgolly.bootstrapTreeview.anon.Checked
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapTreeViewNodeData extends js.Object {
+trait BootstrapTreeViewNodeData extends StObject {
+  
   var backColor: js.UndefOr[String] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var href: js.UndefOr[String] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var nodeId: js.UndefOr[Double] = js.undefined
+  
   var nodes: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.undefined
+  
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   var selectedIcon: js.UndefOr[String] = js.undefined
-  var state: js.UndefOr[AnonChecked] = js.undefined
+  
+  var state: js.UndefOr[Checked] = js.undefined
+  
   var tags: js.UndefOr[js.Array[String]] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object BootstrapTreeViewNodeData {
-  @scala.inline
-  def apply(
-    backColor: String = null,
-    color: String = null,
-    href: String = null,
-    icon: String = null,
-    nodeId: Int | Double = null,
-    nodes: js.Array[BootstrapTreeViewNodeData] = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selectedIcon: String = null,
-    state: AnonChecked = null,
-    tags: js.Array[String] = null,
-    text: String = null
-  ): BootstrapTreeViewNodeData = {
+  
+  inline def apply(): BootstrapTreeViewNodeData = {
     val __obj = js.Dynamic.literal()
-    if (backColor != null) __obj.updateDynamic("backColor")(backColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapTreeViewNodeData]
   }
+  
+  extension [Self <: BootstrapTreeViewNodeData](x: Self) {
+    
+    inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setNodeId(value: Double): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    
+    inline def setNodes(value: js.Array[BootstrapTreeViewNodeData]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    
+    inline def setNodesVarargs(value: BootstrapTreeViewNodeData*): Self = StObject.set(x, "nodes", js.Array(value*))
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setSelectedIcon(value: String): Self = StObject.set(x, "selectedIcon", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedIconUndefined: Self = StObject.set(x, "selectedIcon", js.undefined)
+    
+    inline def setState(value: Checked): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

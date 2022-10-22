@@ -1,20 +1,22 @@
 package typingsJapgolly.cordovaPluginCamera
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin provides an API for taking pictures and for choosing images from the system's image library.
   */
 @js.native
-trait Camera extends js.Object {
+trait Camera extends StObject {
+  
   /**
     * Removes intermediate photos taken by the camera from temporary storage.
     * @param onSuccess Success callback, that called when cleanup succeeds.
     * @param onError Error callback, that get an error message.
     */
   def cleanup(onSuccess: js.Function0[Unit], onError: js.Function1[/* message */ String, Unit]): Unit = js.native
+  
   /**
     * Takes a photo using the camera, or retrieves a photo from the device's image gallery.
     * @param cameraSuccess Success callback, that get the image
@@ -32,17 +34,3 @@ trait Camera extends js.Object {
     cameraOptions: CameraOptions
   ): Unit = js.native
 }
-
-@JSGlobal("Camera")
-@js.native
-object Camera extends js.Object {
-  // Camera constants, defined in Camera plugin
-  var DestinationType: AnonDATAURL = js.native
-  var Direction: AnonBACK = js.native
-  var EncodingType: AnonJPEG = js.native
-  var MediaType: AnonALLMEDIA = js.native
-  var PictureSourceType: AnonCAMERA = js.native
-  // Used only on iOS
-  var PopoverArrowDirection: AnonARROWANY = js.native
-}
-

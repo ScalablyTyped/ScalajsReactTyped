@@ -1,11 +1,12 @@
 package typingsJapgolly.officeJsPreview.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "comment.toJSON()". */
-trait CommentData extends js.Object {
+/** An interface describing the data returned by calling `comment.toJSON()`. */
+trait CommentData extends StObject {
+  
   /**
     *
     * A string that specifies the name of the author of the comment.
@@ -13,6 +14,7 @@ trait CommentData extends js.Object {
     * [Api set:  1.1]
     */
   var author: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * A string that specifies the date when the comment was created.
@@ -20,6 +22,7 @@ trait CommentData extends js.Object {
     * [Api set:  1.1]
     */
   var date: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * A string that contains the comment text.
@@ -28,15 +31,25 @@ trait CommentData extends js.Object {
     */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object CommentData {
-  @scala.inline
-  def apply(author: String = null, date: String = null, text: String = null): CommentData = {
+  
+  inline def apply(): CommentData = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentData]
   }
+  
+  extension [Self <: CommentData](x: Self) {
+    
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

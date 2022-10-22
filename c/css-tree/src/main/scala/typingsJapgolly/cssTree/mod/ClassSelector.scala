@@ -1,29 +1,32 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ClassSelector
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
+  
   var name: String
+  
   @JSName("type")
   var type_ClassSelector: typingsJapgolly.cssTree.cssTreeStrings.ClassSelector
 }
-
 object ClassSelector {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.ClassSelector,
-    loc: CssLocation = null
-  ): ClassSelector = {
+  
+  inline def apply(name: String): ClassSelector = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassSelector")
     __obj.asInstanceOf[ClassSelector]
   }
+  
+  extension [Self <: ClassSelector](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.ClassSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

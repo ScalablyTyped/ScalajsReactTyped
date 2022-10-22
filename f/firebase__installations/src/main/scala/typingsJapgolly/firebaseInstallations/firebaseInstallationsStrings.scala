@@ -1,70 +1,55 @@
 package typingsJapgolly.firebaseInstallations
 
-import typingsJapgolly.firebaseInstallations.errorsMod.ErrorCode
+import typingsJapgolly.firebaseInstallations.distEsmSrcUtilErrorsMod.ErrorCode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseInstallationsStrings {
-  @js.native
-  sealed trait FIS_v2 extends js.Object
   
   @js.native
-  sealed trait Installations extends js.Object
+  sealed trait `app-offline`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `app-offline`: `app-offline` = "app-offline".asInstanceOf[`app-offline`]
   
   @js.native
-  sealed trait _empty extends js.Object
+  sealed trait `delete-pending-registration`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `delete-pending-registration`: `delete-pending-registration` = "delete-pending-registration".asInstanceOf[`delete-pending-registration`]
   
   @js.native
-  sealed trait `app-offline` extends ErrorCode
+  sealed trait heartbeat extends StObject
+  inline def heartbeat: heartbeat = "heartbeat".asInstanceOf[heartbeat]
   
   @js.native
-  sealed trait `delete-pending-registration` extends ErrorCode
+  sealed trait `installation-not-found`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `installation-not-found`: `installation-not-found` = "installation-not-found".asInstanceOf[`installation-not-found`]
   
   @js.native
-  sealed trait httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1 extends js.Object
+  sealed trait `missing-app-config-values`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
   
   @js.native
-  sealed trait `installation-not-found` extends ErrorCode
+  sealed trait `not-registered`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `not-registered`: `not-registered` = "not-registered".asInstanceOf[`not-registered`]
   
   @js.native
-  sealed trait installations_ extends js.Object
-  
-  @js.native
-  sealed trait `missing-app-config-values` extends ErrorCode
-  
-  @js.native
-  sealed trait `not-registered` extends ErrorCode
-  
-  @js.native
-  sealed trait `platform-logger` extends js.Object
-  
-  @js.native
-  sealed trait `request-failed` extends ErrorCode
-  
-  @scala.inline
-  def FIS_v2: FIS_v2 = "FIS_v2".asInstanceOf[FIS_v2]
-  @scala.inline
-  def Installations: Installations = "Installations".asInstanceOf[Installations]
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
-  @scala.inline
-  def `app-offline`: `app-offline` = "app-offline".asInstanceOf[`app-offline`]
-  @scala.inline
-  def `delete-pending-registration`: `delete-pending-registration` = "delete-pending-registration".asInstanceOf[`delete-pending-registration`]
-  @scala.inline
-  def httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1: httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1 = "https://firebaseinstallations.googleapis.com/v1".asInstanceOf[httpsColonSlashSlashfirebaseinstallationsDotgoogleapisDotcomSlashv1]
-  @scala.inline
-  def `installation-not-found`: `installation-not-found` = "installation-not-found".asInstanceOf[`installation-not-found`]
-  @scala.inline
-  def installations_ : installations_ = "installations".asInstanceOf[installations_]
-  @scala.inline
-  def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
-  @scala.inline
-  def `not-registered`: `not-registered` = "not-registered".asInstanceOf[`not-registered`]
-  @scala.inline
-  def `platform-logger`: `platform-logger` = "platform-logger".asInstanceOf[`platform-logger`]
-  @scala.inline
-  def `request-failed`: `request-failed` = "request-failed".asInstanceOf[`request-failed`]
+  sealed trait `request-failed`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseInstallations.distSrcUtilErrorsMod.ErrorCode
+  inline def `request-failed`: `request-failed` = "request-failed".asInstanceOf[`request-failed`]
 }
-

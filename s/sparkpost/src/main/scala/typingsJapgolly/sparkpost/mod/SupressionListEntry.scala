@@ -8,14 +8,17 @@ import typingsJapgolly.sparkpost.sparkpostStrings.`Spam Complaint`
 import typingsJapgolly.sparkpost.sparkpostStrings.`Unsubscribe Link`
 import typingsJapgolly.sparkpost.sparkpostStrings.non_transactional
 import typingsJapgolly.sparkpost.sparkpostStrings.transactional
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SupressionListEntry extends js.Object {
+trait SupressionListEntry extends StObject {
+  
   var created: String
+  
   /** Short explanation of the suppression */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * Whether the recipient requested to not receive any non-transactional messages
     * Not required if a valid type is passed
@@ -23,11 +26,13 @@ trait SupressionListEntry extends js.Object {
     * @deprecated Available, but deprecated in favor of type
     */
   var non_transactional: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Email address to be suppressed
     *
     */
   var recipient: String
+  
   /**
     * Source responsible for inserting the list entry
     *
@@ -37,6 +42,7 @@ trait SupressionListEntry extends js.Object {
   var source: js.UndefOr[
     (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance
   ] = js.undefined
+  
   /**
     * Whether the recipient requested to not receive any transactional messages
     * Not required if a valid type is passed
@@ -44,30 +50,47 @@ trait SupressionListEntry extends js.Object {
     * @deprecated Available, but deprecated in favor of type
     */
   var transactional: js.UndefOr[Boolean] = js.undefined
+  
   /** Type of suppression record: transactional or non_transactional */
   var `type`: js.UndefOr[transactional | non_transactional] = js.undefined
+  
   var updated: String
 }
-
 object SupressionListEntry {
-  @scala.inline
-  def apply(
-    created: String,
-    recipient: String,
-    updated: String,
-    description: String = null,
-    non_transactional: js.UndefOr[Boolean] = js.undefined,
-    source: (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance = null,
-    transactional: js.UndefOr[Boolean] = js.undefined,
-    `type`: transactional | non_transactional = null
-  ): SupressionListEntry = {
+  
+  inline def apply(created: String, recipient: String, updated: String): SupressionListEntry = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(non_transactional)) __obj.updateDynamic("non_transactional")(non_transactional.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(transactional)) __obj.updateDynamic("transactional")(transactional.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SupressionListEntry]
   }
+  
+  extension [Self <: SupressionListEntry](x: Self) {
+    
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setNon_transactional(value: Boolean): Self = StObject.set(x, "non_transactional", value.asInstanceOf[js.Any])
+    
+    inline def setNon_transactionalUndefined: Self = StObject.set(x, "non_transactional", js.undefined)
+    
+    inline def setRecipient(value: String): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    
+    inline def setSource(
+      value: (`Spam Complaint`) | (`List Unsubscribe`) | (`Bounce Rule`) | (`Unsubscribe Link`) | (`Manually Added`) | Compliance
+    ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setTransactional(value: Boolean): Self = StObject.set(x, "transactional", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionalUndefined: Self = StObject.set(x, "transactional", js.undefined)
+    
+    inline def setType(value: transactional | non_transactional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+  }
 }
-

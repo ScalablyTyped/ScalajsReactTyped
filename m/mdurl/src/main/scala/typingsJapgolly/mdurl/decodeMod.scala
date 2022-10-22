@@ -1,15 +1,23 @@
 package typingsJapgolly.mdurl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mdurl/decode", JSImport.Namespace)
-@js.native
-object decodeMod extends js.Object {
+object decodeMod {
+  
+  inline def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(input: String, exclude: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], exclude.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("mdurl/decode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("mdurl/decode", "componentChars")
+  @js.native
   val componentChars: String = js.native
+  
+  @JSImport("mdurl/decode", "defaultChars")
+  @js.native
   val defaultChars: String = js.native
-  def apply(input: String): String = js.native
-  def apply(input: String, exclude: String): String = js.native
 }
-

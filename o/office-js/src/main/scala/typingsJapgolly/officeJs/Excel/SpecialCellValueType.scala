@@ -1,185 +1,166 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpecialCellValueType extends js.Object
-
+sealed trait SpecialCellValueType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.SpecialCellValueType")
 @js.native
-object SpecialCellValueType extends js.Object {
-  /**
-    *
-    * Cells that have errors, true/false, numeric, or a string value.
-    *
-    */
-  @js.native
-  sealed trait all extends SpecialCellValueType
+object SpecialCellValueType extends StObject {
   
   /**
-    *
+    * Cells that have errors, boolean, numeric, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
+  @js.native
+  sealed trait all
+    extends StObject
+       with SpecialCellValueType
+  
+  /**
     * Cells that have errors.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errors extends SpecialCellValueType
+  sealed trait errors
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, or a true/false value.
-    *
+    * Cells that have errors or boolean values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsLogical extends SpecialCellValueType
+  sealed trait errorsLogical
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, true/false, or a numeric value.
-    *
+    * Cells that have errors, boolean, or numeric values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsLogicalNumber extends SpecialCellValueType
+  sealed trait errorsLogicalNumber
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, true/false, or a string value.
-    *
+    * Cells that have errors, boolean, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsLogicalText extends SpecialCellValueType
+  sealed trait errorsLogicalText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, numeric, or a string value.
-    *
+    * Cells that have errors, numeric, or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsNumberText extends SpecialCellValueType
+  sealed trait errorsNumberText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, or a numeric value.
-    *
+    * Cells that have errors or numeric values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsNumbers extends SpecialCellValueType
+  sealed trait errorsNumbers
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have errors, or a string value.
-    *
+    * Cells that have errors or string values.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait errorsText extends SpecialCellValueType
+  sealed trait errorsText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have a true/false value.
-    *
+    * Cells that have a boolean value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait logical extends SpecialCellValueType
+  sealed trait logical
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have a true/false, or a numeric value.
-    *
+    * Cells that have a boolean or numeric value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait logicalNumbers extends SpecialCellValueType
+  sealed trait logicalNumbers
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have a true/false, numeric, or a string value.
-    *
+    * Cells that have a boolean, numeric, or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait logicalNumbersText extends SpecialCellValueType
+  sealed trait logicalNumbersText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have a true/false, or a string value.
-    *
+    * Cells that have a boolean or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait logicalText extends SpecialCellValueType
+  sealed trait logicalText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
     * Cells that have a numeric value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait numbers extends SpecialCellValueType
+  sealed trait numbers
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
-    * Cells that have a numeric, or a string value.
-    *
+    * Cells that have a numeric or string value.
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait numbersText extends SpecialCellValueType
+  sealed trait numbersText
+    extends StObject
+       with SpecialCellValueType
   
   /**
-    *
     * Cells that have a string value.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait text extends SpecialCellValueType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SpecialCellValueType with String] = js.native
-  /* "All" */ @js.native
-  object all extends TopLevel[all with String]
-  
-  /* "Errors" */ @js.native
-  object errors extends TopLevel[errors with String]
-  
-  /* "ErrorsLogical" */ @js.native
-  object errorsLogical extends TopLevel[errorsLogical with String]
-  
-  /* "ErrorsLogicalNumber" */ @js.native
-  object errorsLogicalNumber extends TopLevel[errorsLogicalNumber with String]
-  
-  /* "ErrorsLogicalText" */ @js.native
-  object errorsLogicalText extends TopLevel[errorsLogicalText with String]
-  
-  /* "ErrorsNumberText" */ @js.native
-  object errorsNumberText extends TopLevel[errorsNumberText with String]
-  
-  /* "ErrorsNumbers" */ @js.native
-  object errorsNumbers extends TopLevel[errorsNumbers with String]
-  
-  /* "ErrorsText" */ @js.native
-  object errorsText extends TopLevel[errorsText with String]
-  
-  /* "Logical" */ @js.native
-  object logical extends TopLevel[logical with String]
-  
-  /* "LogicalNumbers" */ @js.native
-  object logicalNumbers extends TopLevel[logicalNumbers with String]
-  
-  /* "LogicalNumbersText" */ @js.native
-  object logicalNumbersText extends TopLevel[logicalNumbersText with String]
-  
-  /* "LogicalText" */ @js.native
-  object logicalText extends TopLevel[logicalText with String]
-  
-  /* "Numbers" */ @js.native
-  object numbers extends TopLevel[numbers with String]
-  
-  /* "NumbersText" */ @js.native
-  object numbersText extends TopLevel[numbersText with String]
-  
-  /* "Text" */ @js.native
-  object text extends TopLevel[text with String]
-  
+  sealed trait text
+    extends StObject
+       with SpecialCellValueType
 }
-

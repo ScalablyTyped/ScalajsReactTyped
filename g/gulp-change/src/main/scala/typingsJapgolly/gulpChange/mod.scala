@@ -1,15 +1,19 @@
 package typingsJapgolly.gulpChange
 
 import typingsJapgolly.eventStream.mod.MapStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-change", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(transformer: ChangeFunction): MapStream = js.native
-  type Callback = js.Function2[/* err */ js.Any, /* content */ String, js.Any]
+object mod {
+  
+  inline def apply(transformer: ChangeFunction): MapStream = ^.asInstanceOf[js.Dynamic].apply(transformer.asInstanceOf[js.Any]).asInstanceOf[MapStream]
+  
+  @JSImport("gulp-change", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type Callback = js.Function2[/* err */ Any, /* content */ String, Any]
+  
   type ChangeFunction = js.Function2[/* content */ String, /* callback */ Callback, String | Unit]
 }
-

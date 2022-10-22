@@ -10,10 +10,10 @@ A Jest matcher to test if a value is one of many (like enums)
 | ------------------ | :-------------: |
 | Full name          | jest-matcher-one-of |
 | Keywords           | jest, matcher, test, tests, testing, tdd |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 19112 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3154.0 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/d4nyll/jest-matcher-one-of#readme)

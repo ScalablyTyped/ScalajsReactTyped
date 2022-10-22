@@ -1,12 +1,12 @@
 package typingsJapgolly.zoneJs
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.node.NodeJS.Global
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("global")
-@js.native
-object global extends TopLevel[Global]
-
+object global {
+  
+  @JSGlobal("Zone")
+  @js.native
+  val Zone: ZoneType = js.native
+}

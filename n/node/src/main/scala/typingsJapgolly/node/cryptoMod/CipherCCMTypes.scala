@@ -1,8 +1,8 @@
 package typingsJapgolly.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.node.nodeStrings.`aes-128-ccm`
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.node.nodeStrings.`aes-256-ccm`
   - typingsJapgolly.node.nodeStrings.`chacha20-poly1305`
 */
-trait CipherCCMTypes extends js.Object
-
+trait CipherCCMTypes extends StObject
 object CipherCCMTypes {
-  @scala.inline
-  def `aes-128-ccm`: typingsJapgolly.node.nodeStrings.`aes-128-ccm` = this.cast("aes-128-ccm")
-  @scala.inline
-  def `aes-192-ccm`: typingsJapgolly.node.nodeStrings.`aes-192-ccm` = this.cast("aes-192-ccm")
-  @scala.inline
-  def `aes-256-ccm`: typingsJapgolly.node.nodeStrings.`aes-256-ccm` = this.cast("aes-256-ccm")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `chacha20-poly1305`: typingsJapgolly.node.nodeStrings.`chacha20-poly1305` = this.cast("chacha20-poly1305")
+  
+  inline def `aes-128-ccm`: typingsJapgolly.node.nodeStrings.`aes-128-ccm` = "aes-128-ccm".asInstanceOf[typingsJapgolly.node.nodeStrings.`aes-128-ccm`]
+  
+  inline def `aes-192-ccm`: typingsJapgolly.node.nodeStrings.`aes-192-ccm` = "aes-192-ccm".asInstanceOf[typingsJapgolly.node.nodeStrings.`aes-192-ccm`]
+  
+  inline def `aes-256-ccm`: typingsJapgolly.node.nodeStrings.`aes-256-ccm` = "aes-256-ccm".asInstanceOf[typingsJapgolly.node.nodeStrings.`aes-256-ccm`]
+  
+  inline def `chacha20-poly1305`: typingsJapgolly.node.nodeStrings.`chacha20-poly1305` = "chacha20-poly1305".asInstanceOf[typingsJapgolly.node.nodeStrings.`chacha20-poly1305`]
 }
-

@@ -10,15 +10,15 @@ A smaller version of caniuse-db, with only the essentials!
 | ------------------ | :-------------: |
 | Full name          | caniuse-lite |
 | Keywords           | support, css, js, html5, svg |
-| # releases         | 178 |
-| # dependents       | 96 |
-| # downloads        | 455113083 |
-| # stars            | 4 |
+| # releases         | 232 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4807762266666666E8 |
+| # stars            | 421.0 |
 
 ## Links
-- [Homepage](https://github.com/ben-eb/caniuse-lite#readme)
-- [Bugs](https://github.com/ben-eb/caniuse-lite/issues)
-- [Repository](https://github.com/ben-eb/caniuse-lite)
+- [Homepage](https://github.com/browserslist/caniuse-lite#readme)
+- [Bugs](https://github.com/browserslist/caniuse-lite/issues)
+- [Repository](https://github.com/browserslist/caniuse-lite)
 - [Npm](https://www.npmjs.com/package/caniuse-lite)
     
 

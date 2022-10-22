@@ -1,21 +1,25 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.shimmerTypesMod.IShimmerProps
+import typingsJapgolly.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.IShimmerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ShimmerBase")
 @js.native
-class ShimmerBase protected ()
+open class ShimmerBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libShimmerMod.ShimmerBase {
   def this(props: IShimmerProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "ShimmerBase")
-@js.native
-object ShimmerBase extends js.Object {
-  var defaultProps: IShimmerProps = js.native
+object ShimmerBase {
+  
+  @JSImport("office-ui-fabric-react", "ShimmerBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "ShimmerBase.defaultProps")
+  @js.native
+  def defaultProps: IShimmerProps = js.native
+  inline def defaultProps_=(x: IShimmerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ele  --> Cy.Singular
@@ -11,23 +11,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Singular[TOut, TIn]
-  extends CollectionIteration[TIn, TOut]
-     with CollectionGraphManipulation
-     with CollectionEvents
-     with CollectionData
-     with CollectionPosition
-     with CollectionTraversing
-     with CollectionLayout
-     with CollectionSelection
-     with CollectionStyle
-     with CollectionAnimation
-     with CollectionComparision
-     with CollectionBuildingFiltering[TIn, TOut]
-     with CollectionAlgorithms
+  extends StObject
+     with Collection[TOut, TIn]
      with SingularGraphManipulation
      with SingularData
      with SingularPosition
      with SingularSelection
      with SingularStyle
      with SingularAnimation
-

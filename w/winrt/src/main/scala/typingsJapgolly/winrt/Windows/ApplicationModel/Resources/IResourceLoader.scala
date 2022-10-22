@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Resources
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IResourceLoader extends js.Object {
+trait IResourceLoader extends StObject {
+  
   def getString(resource: String): String
 }
-
 object IResourceLoader {
-  @scala.inline
-  def apply(getString: String => CallbackTo[String]): IResourceLoader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getString")(js.Any.fromFunction1((t0: java.lang.String) => getString(t0).runNow()))
+  
+  inline def apply(getString: String => String): IResourceLoader = {
+    val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString))
     __obj.asInstanceOf[IResourceLoader]
   }
+  
+  extension [Self <: IResourceLoader](x: Self) {
+    
+    inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThreadRowAttachmentIconDescriptorBase extends js.Object {
+trait ThreadRowAttachmentIconDescriptorBase extends StObject {
+  
   var tooltip: js.UndefOr[String] = js.undefined
 }
-
 object ThreadRowAttachmentIconDescriptorBase {
-  @scala.inline
-  def apply(tooltip: String = null): ThreadRowAttachmentIconDescriptorBase = {
+  
+  inline def apply(): ThreadRowAttachmentIconDescriptorBase = {
     val __obj = js.Dynamic.literal()
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThreadRowAttachmentIconDescriptorBase]
   }
+  
+  extension [Self <: ThreadRowAttachmentIconDescriptorBase](x: Self) {
+    
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+  }
 }
-

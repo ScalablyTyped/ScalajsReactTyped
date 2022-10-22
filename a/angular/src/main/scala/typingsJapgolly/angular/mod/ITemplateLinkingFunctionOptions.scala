@@ -1,30 +1,39 @@
 package typingsJapgolly.angular.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.angular.AnonInstance
 import typingsJapgolly.angular.JQuery
+import typingsJapgolly.angular.anon.Instance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITemplateLinkingFunctionOptions extends js.Object {
+trait ITemplateLinkingFunctionOptions extends StObject {
+  
   var futureParentElement: js.UndefOr[JQuery] = js.undefined
+  
   var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.undefined
-  var transcludeControllers: js.UndefOr[StringDictionary[AnonInstance]] = js.undefined
+  
+  var transcludeControllers: js.UndefOr[StringDictionary[Instance]] = js.undefined
 }
-
 object ITemplateLinkingFunctionOptions {
-  @scala.inline
-  def apply(
-    futureParentElement: JQuery = null,
-    parentBoundTranscludeFn: ITranscludeFunction = null,
-    transcludeControllers: StringDictionary[AnonInstance] = null
-  ): ITemplateLinkingFunctionOptions = {
+  
+  inline def apply(): ITemplateLinkingFunctionOptions = {
     val __obj = js.Dynamic.literal()
-    if (futureParentElement != null) __obj.updateDynamic("futureParentElement")(futureParentElement.asInstanceOf[js.Any])
-    if (parentBoundTranscludeFn != null) __obj.updateDynamic("parentBoundTranscludeFn")(parentBoundTranscludeFn.asInstanceOf[js.Any])
-    if (transcludeControllers != null) __obj.updateDynamic("transcludeControllers")(transcludeControllers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITemplateLinkingFunctionOptions]
   }
+  
+  extension [Self <: ITemplateLinkingFunctionOptions](x: Self) {
+    
+    inline def setFutureParentElement(value: JQuery): Self = StObject.set(x, "futureParentElement", value.asInstanceOf[js.Any])
+    
+    inline def setFutureParentElementUndefined: Self = StObject.set(x, "futureParentElement", js.undefined)
+    
+    inline def setParentBoundTranscludeFn(value: ITranscludeFunction): Self = StObject.set(x, "parentBoundTranscludeFn", value.asInstanceOf[js.Any])
+    
+    inline def setParentBoundTranscludeFnUndefined: Self = StObject.set(x, "parentBoundTranscludeFn", js.undefined)
+    
+    inline def setTranscludeControllers(value: StringDictionary[Instance]): Self = StObject.set(x, "transcludeControllers", value.asInstanceOf[js.Any])
+    
+    inline def setTranscludeControllersUndefined: Self = StObject.set(x, "transcludeControllers", js.undefined)
+  }
 }
-

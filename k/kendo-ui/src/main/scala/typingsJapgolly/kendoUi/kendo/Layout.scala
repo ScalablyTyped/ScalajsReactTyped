@@ -1,15 +1,17 @@
 package typingsJapgolly.kendoUi.kendo
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.Layout")
 @js.native
-class Layout () extends View {
+trait Layout
+  extends StObject
+     with View {
+  
   var containers: StringDictionary[ViewContainer] = js.native
+  
   def showIn(selector: String, view: View): Unit = js.native
   def showIn(selector: String, view: View, transitionClass: String): Unit = js.native
 }
-

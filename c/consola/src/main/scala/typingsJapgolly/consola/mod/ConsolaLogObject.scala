@@ -1,36 +1,64 @@
 package typingsJapgolly.consola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsolaLogObject extends js.Object {
+trait ConsolaLogObject extends StObject {
+  
   var additional: js.UndefOr[String | js.Array[String]] = js.undefined
-  var args: js.UndefOr[js.Array[_]] = js.undefined
-  var level: js.UndefOr[Double] = js.undefined
+  
+  var args: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var date: js.UndefOr[js.Date] = js.undefined
+  
+  var level: js.UndefOr[LogLevel] = js.undefined
+  
   var message: js.UndefOr[String] = js.undefined
+  
   var tag: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  
+  var `type`: js.UndefOr[logType] = js.undefined
 }
-
 object ConsolaLogObject {
-  @scala.inline
-  def apply(
-    additional: String | js.Array[String] = null,
-    args: js.Array[_] = null,
-    level: Int | Double = null,
-    message: String = null,
-    tag: String = null,
-    `type`: String = null
-  ): ConsolaLogObject = {
+  
+  inline def apply(): ConsolaLogObject = {
     val __obj = js.Dynamic.literal()
-    if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConsolaLogObject]
   }
+  
+  extension [Self <: ConsolaLogObject](x: Self) {
+    
+    inline def setAdditional(value: String | js.Array[String]): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+    
+    inline def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
+    
+    inline def setAdditionalVarargs(value: String*): Self = StObject.set(x, "additional", js.Array(value*))
+    
+    inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setArgsVarargs(value: Any*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    
+    inline def setType(value: logType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

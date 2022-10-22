@@ -1,28 +1,36 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WidthHeight extends js.Object {
+trait WidthHeight extends StObject {
+  
   /**
     * The height.
     */
-  var height: js.UndefOr[integer] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * The width.
     */
-  var width: js.UndefOr[integer] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
 }
-
 object WidthHeight {
-  @scala.inline
-  def apply(height: Int | Double = null, width: Int | Double = null): WidthHeight = {
+  
+  inline def apply(): WidthHeight = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidthHeight]
   }
+  
+  extension [Self <: WidthHeight](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

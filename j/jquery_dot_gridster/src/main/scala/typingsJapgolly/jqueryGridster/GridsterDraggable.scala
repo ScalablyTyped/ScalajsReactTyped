@@ -1,44 +1,69 @@
 package typingsJapgolly.jqueryGridster
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import typingsJapgolly.jqueryGridster.anon.Helper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridsterDraggable extends js.Object {
+trait GridsterDraggable extends StObject {
+  
   var distance: js.UndefOr[Double] = js.undefined
-  var drag: js.UndefOr[js.Function2[/* event */ Event_, /* ui */ GridsterUi, Unit]] = js.undefined
+  
+  var drag: js.UndefOr[js.Function2[/* event */ Event, /* ui */ GridsterUi, Unit]] = js.undefined
+  
   var handle: js.UndefOr[String] = js.undefined
-  var items: js.UndefOr[js.Any] = js.undefined
+  
+  var items: js.UndefOr[Any] = js.undefined
+  
   var limit: js.UndefOr[Boolean] = js.undefined
+  
   var offset_left: js.UndefOr[Double] = js.undefined
-  var start: js.UndefOr[js.Function2[/* event */ Event_, /* ui */ AnonHelper, Unit]] = js.undefined
-  var stop: js.UndefOr[js.Function2[/* event */ Event_, /* ui */ AnonHelper, Unit]] = js.undefined
+  
+  var start: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.undefined
+  
+  var stop: js.UndefOr[js.Function2[/* event */ Event, /* ui */ Helper, Unit]] = js.undefined
 }
-
 object GridsterDraggable {
-  @scala.inline
-  def apply(
-    distance: Int | Double = null,
-    drag: (/* event */ Event_, /* ui */ GridsterUi) => Callback = null,
-    handle: String = null,
-    items: js.Any = null,
-    limit: js.UndefOr[Boolean] = js.undefined,
-    offset_left: Int | Double = null,
-    start: (/* event */ Event_, /* ui */ AnonHelper) => Callback = null,
-    stop: (/* event */ Event_, /* ui */ AnonHelper) => Callback = null
-  ): GridsterDraggable = {
+  
+  inline def apply(): GridsterDraggable = {
     val __obj = js.Dynamic.literal()
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.jqueryGridster.GridsterUi) => drag(t0, t1).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset_left != null) __obj.updateDynamic("offset_left")(offset_left.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.jqueryGridster.AnonHelper) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.jqueryGridster.AnonHelper) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[GridsterDraggable]
   }
+  
+  extension [Self <: GridsterDraggable](x: Self) {
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setDrag(value: (/* event */ Event, /* ui */ GridsterUi) => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ GridsterUi) => (value(t0, t1)).runNow()))
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    
+    inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setLimit(value: Boolean): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOffset_left(value: Double): Self = StObject.set(x, "offset_left", value.asInstanceOf[js.Any])
+    
+    inline def setOffset_leftUndefined: Self = StObject.set(x, "offset_left", js.undefined)
+    
+    inline def setStart(value: (/* event */ Event, /* ui */ Helper) => Callback): Self = StObject.set(x, "start", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ Helper) => (value(t0, t1)).runNow()))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: (/* event */ Event, /* ui */ Helper) => Callback): Self = StObject.set(x, "stop", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ Helper) => (value(t0, t1)).runNow()))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+  }
 }
-

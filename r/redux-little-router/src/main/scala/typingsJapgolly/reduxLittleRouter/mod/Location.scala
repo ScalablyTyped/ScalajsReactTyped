@@ -1,52 +1,70 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Location extends HistoryLocation {
+trait Location
+  extends StObject
+     with HistoryLocation {
+  
   var basename: js.UndefOr[String] = js.undefined
+  
   var options: js.UndefOr[LocationOptions] = js.undefined
+  
   var params: js.UndefOr[Params] = js.undefined
+  
   var previous: js.UndefOr[Location] = js.undefined
+  
   var query: js.UndefOr[Query] = js.undefined
+  
   var queue: js.UndefOr[js.Array[Location]] = js.undefined
-  var result: js.UndefOr[ObjectLiteral[_]] = js.undefined
+  
+  var result: js.UndefOr[ObjectLiteral[Any]] = js.undefined
+  
   var routes: js.UndefOr[Routes] = js.undefined
 }
-
 object Location {
-  @scala.inline
-  def apply(
-    basename: String = null,
-    hash: String = null,
-    key: String = null,
-    options: LocationOptions = null,
-    params: Params = null,
-    pathname: String = null,
-    previous: Location = null,
-    query: Query = null,
-    queue: js.Array[Location] = null,
-    result: ObjectLiteral[_] = null,
-    routes: Routes = null,
-    search: String = null,
-    state: ObjectLiteral[_] = null
-  ): Location = {
+  
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
-    if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
-    if (pathname != null) __obj.updateDynamic("pathname")(pathname.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
+  
+  extension [Self <: Location](x: Self) {
+    
+    inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+    
+    inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+    
+    inline def setOptions(value: LocationOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    
+    inline def setPrevious(value: Location): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+    
+    inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setQueue(value: js.Array[Location]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    
+    inline def setQueueVarargs(value: Location*): Self = StObject.set(x, "queue", js.Array(value*))
+    
+    inline def setResult(value: ObjectLiteral[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    
+    inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+  }
 }
-

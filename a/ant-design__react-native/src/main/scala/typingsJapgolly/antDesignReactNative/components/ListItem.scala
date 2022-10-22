@@ -1,13 +1,12 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings._empty
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.android
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.bottom
@@ -18,72 +17,80 @@ import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.ios
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.middle
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.top
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.up
-import typingsJapgolly.antDesignReactNative.listItemMod.ListItemProps
-import typingsJapgolly.antDesignReactNative.listItemMod.default
-import typingsJapgolly.antDesignReactNative.listStyleMod.ListStyle
-import typingsJapgolly.reactNative.mod.NodeHandle
+import typingsJapgolly.antDesignReactNative.libListListItemMod.ListItemProps
+import typingsJapgolly.antDesignReactNative.libListListItemMod.default
+import typingsJapgolly.antDesignReactNative.libListStyleMod.ListStyle
+import typingsJapgolly.reactNative.mod.GestureResponderEvent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItem {
-  def apply(
-    activeStyle: StyleProp[ViewStyle] = null,
-    align: top | middle | bottom = null,
-    arrow: horizontal | down | up | empty | _empty = null,
-    delayLongPress: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    error: js.UndefOr[Boolean] = js.undefined,
-    extra: VdomNode = null,
-    multipleLine: js.UndefOr[Boolean] = js.undefined,
-    onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressIn: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressOut: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    platform: android | ios = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: Partial[ListStyle] = null,
-    thumb: VdomNode = null,
-    wrap: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListItemProps, default, Unit, ListItemProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (activeStyle != null) __obj.updateDynamic("activeStyle")(activeStyle.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (arrow != null) __obj.updateDynamic("arrow")(arrow.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleLine)) __obj.updateDynamic("multipleLine")(multipleLine.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressIn(t0).runNow()))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressOut(t0).runNow()))
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (thumb != null) __obj.updateDynamic("thumb")(thumb.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.listItemMod.ListItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.listItemMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.listItemMod.ListItemProps])(children: _*)
-  }
   @JSImport("@ant-design/react-native/lib/list/ListItem", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def activeStyle(value: StyleProp[ViewStyle]): this.type = set("activeStyle", value.asInstanceOf[js.Any])
+    
+    inline def activeStyleNull: this.type = set("activeStyle", null)
+    
+    inline def align(value: top | middle | bottom): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def arrow(value: horizontal | down | up | empty | _empty): this.type = set("arrow", value.asInstanceOf[js.Any])
+    
+    inline def delayLongPress(value: Double): this.type = set("delayLongPress", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def multipleLine(value: Boolean): this.type = set("multipleLine", value.asInstanceOf[js.Any])
+    
+    inline def onLongPress(value: /* event */ GestureResponderEvent => Callback): this.type = set("onLongPress", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onPress(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onPressIn(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPressIn", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onPressOut(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPressOut", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def platform(value: android | ios): this.type = set("platform", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[ListStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def thumb(value: VdomNode): this.type = set("thumb", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def thumbNull: this.type = set("thumb", null)
+    
+    inline def thumbVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("thumb", js.Array(value*))
+    
+    inline def thumbVdomElement(value: VdomElement): this.type = set("thumb", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def wrap(value: Boolean): this.type = set("wrap", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ListItem.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ListItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,15 +1,19 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionMatrix")
 @js.native
-class QuestionMatrix protected () extends QuestionMatrixModel {
+open class QuestionMatrix protected () extends QuestionMatrixModel {
   def this(name: String) = this()
-  var koVisibleColumns: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ko.ObservableArray<any> */ js.Any = js.native
-  var koVisibleRows: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ko.ObservableArray<MatrixRowModel> */ js.Any = js.native
-  def getItemCss(row: js.Any, column: js.Any): String = js.native
+  
+  var _implementor: QuestionImplementor = js.native
+  
+  var koVisibleColumns: Any = js.native
+  
+  var koVisibleRows: Any = js.native
+  
+  /* protected */ def onMatrixRowCreated(row: Any): Unit = js.native
 }
-

@@ -1,15 +1,20 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PullPrimitiveTypeSymbol")
 @js.native
-class PullPrimitiveTypeSymbol protected () extends PullTypeSymbol {
-  def this(name: String) = this()
+trait PullPrimitiveTypeSymbol
+  extends StObject
+     with PullTypeSymbol {
+  
+  /* InferMemberOverrides */
+  override def getIsSpecialized(): Boolean = js.native
+  
   def isNull(): Boolean = js.native
+  
   def isStringConstant(): Boolean = js.native
+  
   def isUndefined(): Boolean = js.native
 }
-

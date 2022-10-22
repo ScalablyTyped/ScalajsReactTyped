@@ -1,30 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Playback
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a marker at specific location in a media stream time-line. */
-@JSGlobal("Windows.Media.Playback.PlaybackMediaMarker")
-@js.native
-class PlaybackMediaMarker protected () extends js.Object {
-  /**
-    * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline.
-    * @param value The media marker's offset into the media timeline.
-    */
-  def this(value: Double) = this()
-  /**
-    * Initializes a new instance of the PlaybackMediaMarker class with the specified offset into the media timeline, type string, and text.
-    * @param value The media marker's offset into the media timeline.
-    * @param mediaMarketType The type of the media marker.
-    * @param text The text of the media marker.
-    */
-  def this(value: Double, mediaMarketType: String, text: String) = this()
+trait PlaybackMediaMarker extends StObject {
+  
   /** Gets the type of the media marker. */
-  var mediaMarkerType: String = js.native
+  var mediaMarkerType: String
+  
   /** Gets the text associated with the marker. */
-  var text: String = js.native
+  var text: String
+  
   /** Gets the offset in the media timeline where the marker occurs. */
-  var time: Double = js.native
+  var time: Double
 }
-
+object PlaybackMediaMarker {
+  
+  inline def apply(mediaMarkerType: String, text: String, time: Double): PlaybackMediaMarker = {
+    val __obj = js.Dynamic.literal(mediaMarkerType = mediaMarkerType.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlaybackMediaMarker]
+  }
+  
+  extension [Self <: PlaybackMediaMarker](x: Self) {
+    
+    inline def setMediaMarkerType(value: String): Self = StObject.set(x, "mediaMarkerType", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+  }
+}

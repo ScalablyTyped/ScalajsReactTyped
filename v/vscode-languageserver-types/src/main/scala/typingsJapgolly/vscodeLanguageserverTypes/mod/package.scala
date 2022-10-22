@@ -1,17 +1,47 @@
-package typingsJapgolly.vscodeLanguageserverTypes
+package typingsJapgolly.vscodeLanguageserverTypes.mod
 
+import typingsJapgolly.vscodeLanguageserverTypes.anon.Language
+import typingsJapgolly.vscodeLanguageserverTypes.mod.^
+import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type CodeActionKind = java.lang.String
-  type CompletionItemTag = typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-  type Declaration = typingsJapgolly.vscodeLanguageserverTypes.mod.Location | js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.Location]
-  type DeclarationLink = typingsJapgolly.vscodeLanguageserverTypes.mod.LocationLink
-  type Definition = typingsJapgolly.vscodeLanguageserverTypes.mod.Location | js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.Location]
-  type DefinitionLink = typingsJapgolly.vscodeLanguageserverTypes.mod.LocationLink
-  type DocumentUri = java.lang.String
-  type MarkedString = java.lang.String | typingsJapgolly.vscodeLanguageserverTypes.AnonLanguage
-  type SymbolTag = typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-}
+
+type ChangeAnnotationIdentifier = String
+
+type CodeActionKind = String
+
+type CompletionItemTag = `1`
+
+type DocumentUri = String
+
+inline def EOL: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("EOL").asInstanceOf[js.Array[String]]
+
+type FoldingRangeKind = String
+
+type MarkedString = String | Language
+
+type SymbolTag = `1`
+
+type URI = String
+
+type integer = Double
+
+type uinteger = Double
+
+type Declaration = Location | js.Array[Location]
+
+type DeclarationLink = LocationLink
+
+type Definition = Location | js.Array[Location]
+
+type DefinitionLink = LocationLink
+
+type LSPAny = Any
+
+type LSPArray = js.Array[Any]
+
+type LSPObject = js.Object
+
+type decimal = Double

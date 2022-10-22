@@ -1,41 +1,47 @@
 package typingsJapgolly.fabric.fabricImplMod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUtilArray extends js.Object {
+trait IUtilArray extends StObject {
+  
   /**
-  	 * Invokes method on all items in a given array
-  	 * @param array Array to iterate over
-  	 * @param method Name of a method to invoke
-  	 */
-  def invoke(array: js.Array[_], method: String): js.Array[_]
+    * Invokes method on all items in a given array
+    * @param array Array to iterate over
+    * @param method Name of a method to invoke
+    */
+  def invoke(array: js.Array[Any], method: String): js.Array[Any]
+  
   /**
-  	 * Finds maximum value in array (not necessarily "first" one)
-  	 * @param array Array to iterate over
-  	 */
-  def max(array: js.Array[_], byProperty: String): js.Any
+    * Finds maximum value in array (not necessarily "first" one)
+    * @param array Array to iterate over
+    */
+  def max(array: js.Array[Any], byProperty: String): Any
+  
   /**
-  	 * Finds minimum value in array (not necessarily "first" one)
-  	 * @param array Array to iterate over
-  	 */
-  def min(array: js.Array[_], byProperty: String): js.Any
+    * Finds minimum value in array (not necessarily "first" one)
+    * @param array Array to iterate over
+    */
+  def min(array: js.Array[Any], byProperty: String): Any
 }
-
 object IUtilArray {
-  @scala.inline
-  def apply(
-    invoke: (js.Array[js.Any], String) => CallbackTo[js.Array[js.Any]],
-    max: (js.Array[js.Any], String) => CallbackTo[js.Any],
-    min: (js.Array[js.Any], String) => CallbackTo[js.Any]
+  
+  inline def apply(
+    invoke: (js.Array[Any], String) => js.Array[Any],
+    max: (js.Array[Any], String) => Any,
+    min: (js.Array[Any], String) => Any
   ): IUtilArray = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("invoke")(js.Any.fromFunction2((t0: js.Array[js.Any], t1: java.lang.String) => invoke(t0, t1).runNow()))
-    __obj.updateDynamic("max")(js.Any.fromFunction2((t0: js.Array[js.Any], t1: java.lang.String) => max(t0, t1).runNow()))
-    __obj.updateDynamic("min")(js.Any.fromFunction2((t0: js.Array[js.Any], t1: java.lang.String) => min(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(invoke = js.Any.fromFunction2(invoke), max = js.Any.fromFunction2(max), min = js.Any.fromFunction2(min))
     __obj.asInstanceOf[IUtilArray]
   }
+  
+  extension [Self <: IUtilArray](x: Self) {
+    
+    inline def setInvoke(value: (js.Array[Any], String) => js.Array[Any]): Self = StObject.set(x, "invoke", js.Any.fromFunction2(value))
+    
+    inline def setMax(value: (js.Array[Any], String) => Any): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
+    
+    inline def setMin(value: (js.Array[Any], String) => Any): Self = StObject.set(x, "min", js.Any.fromFunction2(value))
+  }
 }
-

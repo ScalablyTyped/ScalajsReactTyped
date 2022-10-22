@@ -1,39 +1,32 @@
 package typingsJapgolly.cytoscape.mod
 
 import typingsJapgolly.cytoscape.cytoscapeStrings.blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.cytoscape.mod.ExportOptions because Already inherited
-- typingsJapgolly.cytoscape.mod.ExportBlobOptions because var conflicts: bg, full, maxHeight, maxWidth, scale. Inlined output */ trait ExportJpgBlobOptions extends ExportJpgOptions {
+- typingsJapgolly.cytoscape.mod.ExportBlobOptions because var conflicts: bg, full, maxHeight, maxWidth, scale. Inlined output */ trait ExportJpgBlobOptions
+  extends StObject
+     with ExportJpgOptions {
+  
   /**
     * output Whether the output should be 'base64uri' (default), 'base64', or 'blob'.
     */
   var output: js.UndefOr[blob] = js.undefined
 }
-
 object ExportJpgBlobOptions {
-  @scala.inline
-  def apply(
-    bg: String = null,
-    full: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    output: blob = null,
-    quality: Int | Double = null,
-    scale: Int | Double = null
-  ): ExportJpgBlobOptions = {
+  
+  inline def apply(): ExportJpgBlobOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportJpgBlobOptions]
   }
+  
+  extension [Self <: ExportJpgBlobOptions](x: Self) {
+    
+    inline def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+  }
 }
-

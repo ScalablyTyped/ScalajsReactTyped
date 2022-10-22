@@ -1,30 +1,31 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait HexLiteral
-  extends AssemblyItem
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with AssemblyItem {
+  
   @JSName("type")
   var type_HexLiteral: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral
+  
   var value: String
 }
-
 object HexLiteral {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral,
-    value: String,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): HexLiteral = {
+  
+  inline def apply(value: String): HexLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("HexLiteral")
     __obj.asInstanceOf[HexLiteral]
   }
+  
+  extension [Self <: HexLiteral](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

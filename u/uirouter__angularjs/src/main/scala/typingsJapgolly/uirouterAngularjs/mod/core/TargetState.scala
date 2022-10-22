@@ -1,15 +1,15 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
-import typingsJapgolly.uirouterCore.paramsInterfaceMod.RawParams
-import typingsJapgolly.uirouterCore.stateInterfaceMod.StateOrName
-import typingsJapgolly.uirouterCore.transitionInterfaceMod.TransitionOptions
+import typingsJapgolly.uirouterCore.libParamsInterfaceMod.RawParams
+import typingsJapgolly.uirouterCore.libStateInterfaceMod.StateOrName
+import typingsJapgolly.uirouterCore.libTransitionInterfaceMod.TransitionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.TargetState")
 @js.native
-class TargetState protected ()
+open class TargetState protected ()
   extends typingsJapgolly.uirouterCore.mod.TargetState {
   /**
     * The TargetState constructor
@@ -23,30 +23,37 @@ class TargetState protected ()
     * @param _params Parameters for the target state
     * @param _options Transition options.
     *
-    * @internalapi
+    * @internal
     */
   def this(
-    _stateRegistry: typingsJapgolly.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typingsJapgolly.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName
   ) = this()
   def this(
-    _stateRegistry: typingsJapgolly.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typingsJapgolly.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName,
     _params: RawParams
   ) = this()
   def this(
-    _stateRegistry: typingsJapgolly.uirouterCore.stateRegistryMod.StateRegistry,
+    _stateRegistry: typingsJapgolly.uirouterCore.libStateStateRegistryMod.StateRegistry,
+    _identifier: StateOrName,
+    _params: Unit,
+    _options: TransitionOptions
+  ) = this()
+  def this(
+    _stateRegistry: typingsJapgolly.uirouterCore.libStateStateRegistryMod.StateRegistry,
     _identifier: StateOrName,
     _params: RawParams,
     _options: TransitionOptions
   ) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "core.TargetState")
-@js.native
-object TargetState extends js.Object {
+object TargetState {
+  
+  @JSImport("@uirouter/angularjs", "core.TargetState")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Returns true if the object has a state property that might be a state or state name */
-  def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = js.native
+  inline def isDef(obj: Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDef")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ Boolean]
 }
-

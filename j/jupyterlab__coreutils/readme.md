@@ -1,7 +1,7 @@
 
 # Scala.js typings for jupyterlab__coreutils
 
-Typings are for version 3.2.0
+Typings are for version 5.4.8
 
 ## Library description:
 JupyterLab - Core Utilities
@@ -10,10 +10,10 @@ JupyterLab - Core Utilities
 | ------------------ | :-------------: |
 | Full name          | @jupyterlab/coreutils |
 | Keywords           | - |
-| # releases         | 61 |
-| # dependents       | 201 |
-| # downloads        | 1559613 |
-| # stars            | 0 |
+| # releases         | 133 |
+| # dependents       | 0.0 |
+| # downloads        | 325323.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/jupyterlab/jupyterlab)

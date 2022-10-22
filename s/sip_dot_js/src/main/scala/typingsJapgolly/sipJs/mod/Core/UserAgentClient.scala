@@ -1,25 +1,24 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.outgoingRequestMod.OutgoingRequestDelegate
-import typingsJapgolly.sipJs.userAgentClientMod.ClientTransactionConstructor
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMod.OutgoingRequestDelegate
+import typingsJapgolly.sipJs.libCoreUserAgentsUserAgentClientMod.ClientTransactionConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.UserAgentClient")
 @js.native
-class UserAgentClient protected ()
-  extends typingsJapgolly.sipJs.coreMod.UserAgentClient {
+open class UserAgentClient protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.UserAgentClient {
   def this(
     transactionConstructor: ClientTransactionConstructor,
-    core: typingsJapgolly.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage
+    core: typingsJapgolly.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage
   ) = this()
   def this(
     transactionConstructor: ClientTransactionConstructor,
-    core: typingsJapgolly.sipJs.userAgentCoreMod.UserAgentCore,
-    message: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage,
+    core: typingsJapgolly.sipJs.libCoreUserAgentCoreMod.UserAgentCore,
+    message: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
     delegate: OutgoingRequestDelegate
   ) = this()
 }
-

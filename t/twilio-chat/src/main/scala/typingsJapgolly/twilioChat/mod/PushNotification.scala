@@ -1,39 +1,52 @@
 package typingsJapgolly.twilioChat.mod
 
-import typingsJapgolly.twilioChat.pushnotificationMod.PushNotification.Descriptor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @classdesc Push notification representation within Chat Client
-  * @property {String} [action] - Notification action (`click_action` in FCM/GCM terms and `category` in APN terms)
-  * @property {Number} [badge] - Number for the badge
-  * @property {String} body - Notification text
-  * @property {PushNotification#ChatData} data - Additional Chat data
-  * @property {String} [sound] - Notification sound
-  * @property {String} [title] - Notification title
-  * @property {PushNotification#NotificationType} type - Notification type
+  * Push notification for a Conversations client.
   */
 @JSImport("twilio-chat", "PushNotification")
 @js.native
-class PushNotification protected ()
-  extends typingsJapgolly.twilioChat.pushnotificationMod.PushNotification {
+open class PushNotification protected () extends StObject {
   /**
-    * Chat push notification type
-    * @typedef {('twilio.channel.new_message' | 'twilio.channel.added_to_channel'
-    | 'twilio.channel.invited_to_channel'  | 'twilio.channel.removed_from_channel')} PushNotification#NotificationType
+    * @internal
     */
+  def this(data: PushNotificationDescriptor) = this()
+  
   /**
-    * Additional Chat data for given Push Notification
-    * @typedef {Object} PushNotification#ChatData
-    * @property {String} [channelSid] - SID of Channel
-    * @property {Number} [messageIndex] - Index of Message in Channel
-    * @property {String} [messageSid] - SID of Message
+    * Notification action (`click_action` in FCM/GCM terms and `category` in APN terms).
     */
+  val action: String = js.native
+  
   /**
-    * @param {PushNotification.Descriptor} data - initial data for PushNotification
+    * Number of the badge.
     */
-  def this(data: Descriptor) = this()
+  val badge: Double = js.native
+  
+  /**
+    * Text of the notification.
+    */
+  val body: String = js.native
+  
+  /**
+    * Additional data of the conversation.
+    */
+  val data: PushNotificationData = js.native
+  
+  /**
+    * Sound of the notification.
+    */
+  val sound: String = js.native
+  
+  /**
+    * Title of the notification.
+    */
+  val title: String = js.native
+  
+  /**
+    * Type of the notification.
+    */
+  val `type`: PushNotificationType = js.native
 }
-

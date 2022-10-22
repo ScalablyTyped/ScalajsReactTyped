@@ -1,22 +1,24 @@
 package typingsJapgolly.mobservableReact
 
-import japgolly.scalajs.react.raw.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.Element
 import typingsJapgolly.react.mod.ClassicComponentClass
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ReactElement
-import typingsJapgolly.react.mod.StatelessComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobservable-react", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def observer[P](clazz: ClassicComponentClass[P]): ClassicComponentClass[P] = js.native
-  def observer[P](clazz: ComponentClass[P, ComponentState]): ComponentClassP[P with js.Object] = js.native
-  def observer[P](clazz: StatelessComponent[P]): ClassicComponentClass[P] = js.native
-  def observer[P](renderFunction: js.Function1[/* props */ P, ReactElement]): ClassicComponentClass[P] = js.native
-  def observer[TFunction /* <: ComponentClassP[js.Object] */](target: TFunction): TFunction = js.native
+object mod {
+  
+  @JSImport("mobservable-react", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def observer[P](clazz: ComponentClassP[P & js.Object]): ComponentClassP[P & js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ComponentClassP[P & js.Object]]
+  inline def observer[P](
+    clazz: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify React.StatelessComponent<P> */ Any
+  ): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  inline def observer[P](clazz: ClassicComponentClass[P]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(clazz.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  inline def observer[P](renderFunction: js.Function1[/* props */ P, Element]): ClassicComponentClass[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(renderFunction.asInstanceOf[js.Any]).asInstanceOf[ClassicComponentClass[P]]
+  
+  inline def observer_TFunction_TFunction[TFunction /* <: ComponentClassP[Any & js.Object] */](target: TFunction): TFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(target.asInstanceOf[js.Any]).asInstanceOf[TFunction]
 }
-

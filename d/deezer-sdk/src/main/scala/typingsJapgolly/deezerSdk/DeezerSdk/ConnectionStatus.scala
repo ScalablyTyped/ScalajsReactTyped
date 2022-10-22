@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/getloginstatus | DZ.getLoginStatus}
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.unknown
   - typingsJapgolly.deezerSdk.deezerSdkStrings.not_authorized
 */
-trait ConnectionStatus extends js.Object
-
+trait ConnectionStatus extends StObject
 object ConnectionStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def connected: typingsJapgolly.deezerSdk.deezerSdkStrings.connected = this.cast("connected")
-  @scala.inline
-  def notConnected: typingsJapgolly.deezerSdk.deezerSdkStrings.notConnected = this.cast("notConnected")
-  @scala.inline
-  def not_authorized: typingsJapgolly.deezerSdk.deezerSdkStrings.not_authorized = this.cast("not_authorized")
-  @scala.inline
-  def unknown: typingsJapgolly.deezerSdk.deezerSdkStrings.unknown = this.cast("unknown")
+  
+  inline def connected: typingsJapgolly.deezerSdk.deezerSdkStrings.connected = "connected".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.connected]
+  
+  inline def notConnected: typingsJapgolly.deezerSdk.deezerSdkStrings.notConnected = "notConnected".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.notConnected]
+  
+  inline def not_authorized: typingsJapgolly.deezerSdk.deezerSdkStrings.not_authorized = "not_authorized".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.not_authorized]
+  
+  inline def unknown: typingsJapgolly.deezerSdk.deezerSdkStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.unknown]
 }
-

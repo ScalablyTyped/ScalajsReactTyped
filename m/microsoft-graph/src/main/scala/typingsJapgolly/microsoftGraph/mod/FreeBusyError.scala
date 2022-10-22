@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FreeBusyError extends js.Object {
+trait FreeBusyError extends StObject {
+  
   // Describes the error.
-  var message: js.UndefOr[String] = js.undefined
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The response code from querying for the availability of the user, distribution list, or resource.
-  var responseCode: js.UndefOr[String] = js.undefined
+  var responseCode: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object FreeBusyError {
-  @scala.inline
-  def apply(message: String = null, responseCode: String = null): FreeBusyError = {
+  
+  inline def apply(): FreeBusyError = {
     val __obj = js.Dynamic.literal()
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FreeBusyError]
   }
+  
+  extension [Self <: FreeBusyError](x: Self) {
+    
+    inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setResponseCode(value: NullableOption[String]): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    
+    inline def setResponseCodeNull: Self = StObject.set(x, "responseCode", null)
+    
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+  }
 }
-

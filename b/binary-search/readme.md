@@ -10,15 +10,12 @@ tiny binary search function with comparators
 | ------------------ | :-------------: |
 | Full name          | binary-search |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 80 |
-| # downloads        | 3255996 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1114527.0 |
+| # stars            | 78.0 |
 
 ## Links
-- [Homepage](https://github.com/darkskyapp/binary-search#readme)
-- [Bugs](https://github.com/darkskyapp/binary-search/issues)
-- [Repository](https://github.com/darkskyapp/binary-search)
 - [Npm](https://www.npmjs.com/package/binary-search)
     
 

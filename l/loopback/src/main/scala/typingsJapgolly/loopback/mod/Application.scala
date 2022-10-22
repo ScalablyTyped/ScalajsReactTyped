@@ -1,9 +1,9 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonApns
+import typingsJapgolly.loopback.anon.Apns
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Manage client applications and organize their users
@@ -48,30 +48,45 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Application")
 @js.native
-class Application () extends PersistedModel {
+open class Application protected () extends PersistedModel {
+  def this(data: Any) = this()
+  
   var anonymousAllowed: Boolean = js.native
+  
   var authenticationEnabled: Boolean = js.native
+  
   var authenticationSchemes: js.Array[String] = js.native
+  
   /** The OAuth 2.0 code/token callback URL. */
   var callBackUrl: js.Array[String] = js.native
+  
   /** Date Application object was created.  Default: current date. */
   var created: js.Date = js.native
+  
   /** Text description */
   var description: String = js.native
+  
   /** E-mail address */
   var email: String = js.native
+  
   /** Whether the e-mail is verified. */
   var emailVerified: String = js.native
+  
   /** string Icon image URL. */
   var icon: String = js.native
+  
   /** Generated ID. */
   var id: String = js.native
+  
   /** modified Date Application object was modified.  Default: current date. */
   var modified: js.Date = js.native
+  
   /** Name; required. */
   var name: String = js.native
+  
   /** User ID of the developer who registers the application. */
   var owner: String = js.native
+  
   /**
     * pushSettings.apns APNS configuration, see the options
     *   below and also
@@ -89,24 +104,28 @@ class Application () extends PersistedModel {
     *  pushSettings.apns.feedbackOptions.interval (APNS).
     *  pushSettings.gcm.serverApiKey: Google Cloud Messaging API key.
     */
-  var pushSetings: AnonApns = js.native
-  /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
-  var status: String = js.native
-  /** OAuth 2.0  application URL. */
-  var url: String = js.native
+  var pushSetings: Apns = js.native
+  
   /**
     * Reset keys for a given application by the appId
     * @param {Any} appId
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resetKeys(appId: js.Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  def resetKeys(appId: Any, callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  
+  /** Status of the application; Either `production`, `sandbox` (default), or `disabled`. */
+  var status: String = js.native
+  
+  /** OAuth 2.0  application URL. */
+  var url: String = js.native
 }
-
-/* static members */
-@JSImport("loopback", "Application")
-@js.native
-object Application extends js.Object {
+object Application {
+  
+  @JSImport("loopback", "Application")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Authenticate the application id and key
     * @param {Any} appId
@@ -120,7 +139,9 @@ object Application extends js.Object {
     * - windowsKey
     * - masterKe
     */
-  def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ js.Error, /* matched */ String, Unit]): Unit = js.native
+  /* static member */
+  inline def authenticate(appId: Any, key: String, callback: js.Function2[/* err */ js.Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Register a new application
     * @param {string} owner Owner's user ID.
@@ -128,12 +149,14 @@ object Application extends js.Object {
     * @param {any} options  Other options
     * @param {() => void} callback  Callback function
     */
-  def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def register(owner: String, name: String, options: Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Reset keys for the application instance
     * @callback {() => void} callback
     * @param {Error} err
     */
-  def resetKeys(callback: js.Function1[/* err */ js.Error, Unit]): Unit = js.native
+  /* static member */
+  inline def resetKeys(callback: js.Function1[/* err */ js.Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

@@ -1,83 +1,93 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectRow[TRow /* <: js.Object */] extends js.Object {
+trait SelectRow[TRow /* <: js.Object */] extends StObject {
+  
   /**
-  	 * You can assign the background color of row which be selected.
-  	 * If your requirement is much complex, you can assign a function to bgColor that
-  	 * returns a css color string.
-  	 */
+    * You can assign the background color of row which be selected.
+    * If your requirement is much complex, you can assign a function to bgColor that
+    * returns a css color string.
+    */
   var bgColor: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.undefined
+  
   /**
-  	 * You can assign the class name of selected rows. This can either be a string, or a function that takes two
-  	 * arguments: row and isSelect.
-  	 *   `row`: The current row data.
-  	 *   `isSelect`: Flag indicating whether this particular row is selected.
-  	 */
+    * You can assign the class name of selected rows. This can either be a string, or a function that takes two
+    * arguments: row and isSelect.
+    *   `row`: The current row data.
+    *   `isSelect`: Flag indicating whether this particular row is selected.
+    */
   var className: js.UndefOr[String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])] = js.undefined
+  
   /**
-  	 * If true, clicking the row will trigger expanding the row. Default is false.
-  	 */
+    * If true, clicking the row will trigger expanding the row. Default is false.
+    */
   var clickToExpand: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * If true, clicking the row will trigger selection on that row, default is false.
-  	 */
+    * If true, clicking the row will trigger selection on that row, default is false.
+    */
   var clickToSelect: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * If true, clicking the row will trigger selection on that row and also trigger cell editing if you enabled cell edit. Default is false.
-  	 */
+    * If true, clicking the row will trigger selection on that row and also trigger cell editing if you enabled cell edit. Default is false.
+    */
   var clickToSelectAndEditCell: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * You can change the width of the selection column by columnWidth (include units).
-  	 */
+    * You can change the width of the selection column by columnWidth (include units).
+    */
   var columnWidth: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Function that returns a component to customize the display of the selection checkbox or radio button with.
-  	 */
+    * Function that returns a component to customize the display of the selection checkbox or radio button with.
+    */
   var customComponent: js.UndefOr[js.Function1[/* props */ CustomSelectProps, String | Element]] = js.undefined
+  
   /**
-  	 * If true, the radio/checkbox column will be hidden.
-  	 * You can enable this attribute if you enable clickToSelect and you don't want to show the selection column.
-  	 */
+    * If true, the radio/checkbox column will be hidden.
+    * You can enable this attribute if you enable clickToSelect and you don't want to show the selection column.
+    */
   var hideSelectColumn: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specify whether the selection column uses single(radio) or multiple(checkbox) selection modes. Required.
-  	 */
+    * Specify whether the selection column uses single(radio) or multiple(checkbox) selection modes. Required.
+    */
   var mode: SelectRowMode
+  
   /**
-  	 * Accept a custom callback function, if a row be selected or unselected, this function will be called.
-  	 * This callback function takes four arguments: row, isSelected, event, and rowIndex:
-  	 *   `row`: is the row data which you wanted to select or unselect.
-  	 *   `isSelected`: it's a boolean value means "whether or not that row will be selected?".
-  	 *   `event`: The event target object.
-  	 *   `rowIndex`: the index number for the row.
-  	 * If the return value of this (function) is false, the select or deselect action will not be applied.
-  	 */
+    * Accept a custom callback function, if a row be selected or unselected, this function will be called.
+    * This callback function takes four arguments: row, isSelected, event, and rowIndex:
+    *   `row`: is the row data which you wanted to select or unselect.
+    *   `isSelected`: it's a boolean value means "whether or not that row will be selected?".
+    *   `event`: The event target object.
+    *   `rowIndex`: the index number for the row.
+    * If the return value of this (function) is false, the select or deselect action will not be applied.
+    */
   var onSelect: js.UndefOr[
     js.Function4[
       /* row */ TRow, 
       /* isSelected */ Boolean, 
-      /* event */ js.Any, 
+      /* event */ Any, 
       /* rowIndex */ Double, 
       Boolean | Unit
     ]
   ] = js.undefined
+  
   /**
-  	 * Accept a custom callback function, if click select all checkbox, this function will be called. This callback
-  	 * function taking two arguments: isSelected, rows.
-  	 * isSelectedis a boolean value which means "whether or not that row will be selected?".
-  	 * rows is the rows which be selected or unselected.
-  	 *
-  	 * Tips:
-  	 * If the return value of this function is false, the select all or deselect all action will not be applied.
-  	 * If return value of this function is an array of rowkeys, this array will be applied as selection row when
-  	 * select all triggers. It's useful when you have a validation to filter some rows on selecting all.
-  	 */
+    * Accept a custom callback function, if click select all checkbox, this function will be called. This callback
+    * function taking two arguments: isSelected, rows.
+    * isSelectedis a boolean value which means "whether or not that row will be selected?".
+    * rows is the rows which be selected or unselected.
+    *
+    * Tips:
+    * If the return value of this function is false, the select all or deselect all action will not be applied.
+    * If return value of this function is an array of rowkeys, this array will be applied as selection row when
+    * select all triggers. It's useful when you have a validation to filter some rows on selecting all.
+    */
   var onSelectAll: js.UndefOr[
     js.Function2[
       /* isSelected */ Boolean, 
@@ -85,60 +95,105 @@ trait SelectRow[TRow /* <: js.Object */] extends js.Object {
       Boolean | (js.Array[Double | String])
     ]
   ] = js.undefined
+  
   /**
-  	 * Only unselect visible rows.
-  	 */
+    * Only unselect visible rows.
+    */
   var onlyUnselectVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Give an array data to perform which rows you want to be selected when table loading.
-  	 * The content of array should be the rowkeys for the rows that you want to be selected.
-  	 */
+    * Give an array data to perform which rows you want to be selected when table loading.
+    * The content of array should be the rowkeys for the rows that you want to be selected.
+    */
   var selected: js.UndefOr[js.Array[Double | String]] = js.undefined
+  
   /**
-  	 * Default is false, if enabled, there will be a button on top of table for toggling selected rows only.
-  	 */
+    * Default is false, if enabled, there will be a button on top of table for toggling selected rows only.
+    */
   var showOnlySelected: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Provide a list of unselectable row keys.
-  	 */
+    * Provide a list of unselectable row keys.
+    */
   var unselectable: js.UndefOr[js.Array[Double | String]] = js.undefined
 }
-
 object SelectRow {
-  @scala.inline
-  def apply[TRow /* <: js.Object */](
-    mode: SelectRowMode,
-    bgColor: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String]) = null,
-    className: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String]) = null,
-    clickToExpand: js.UndefOr[Boolean] = js.undefined,
-    clickToSelect: js.UndefOr[Boolean] = js.undefined,
-    clickToSelectAndEditCell: js.UndefOr[Boolean] = js.undefined,
-    columnWidth: String = null,
-    customComponent: /* props */ CustomSelectProps => CallbackTo[String | Element] = null,
-    hideSelectColumn: js.UndefOr[Boolean] = js.undefined,
-    onSelect: (/* row */ TRow, /* isSelected */ Boolean, /* event */ js.Any, /* rowIndex */ Double) => CallbackTo[Boolean | Unit] = null,
-    onSelectAll: (/* isSelected */ Boolean, /* rows */ js.Array[TRow]) => CallbackTo[Boolean | (js.Array[Double | String])] = null,
-    onlyUnselectVisible: js.UndefOr[Boolean] = js.undefined,
-    selected: js.Array[Double | String] = null,
-    showOnlySelected: js.UndefOr[Boolean] = js.undefined,
-    unselectable: js.Array[Double | String] = null
-  ): SelectRow[TRow] = {
+  
+  inline def apply[TRow /* <: js.Object */](mode: SelectRowMode): SelectRow[TRow] = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToExpand)) __obj.updateDynamic("clickToExpand")(clickToExpand.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToSelect)) __obj.updateDynamic("clickToSelect")(clickToSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToSelectAndEditCell)) __obj.updateDynamic("clickToSelectAndEditCell")(clickToSelectAndEditCell.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (customComponent != null) __obj.updateDynamic("customComponent")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactBootstrapTable.mod.CustomSelectProps) => customComponent(t0).runNow()))
-    if (!js.isUndefined(hideSelectColumn)) __obj.updateDynamic("hideSelectColumn")(hideSelectColumn.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction4((t0: /* row */ TRow, t1: /* isSelected */ scala.Boolean, t2: /* event */ js.Any, t3: /* rowIndex */ scala.Double) => onSelect(t0, t1, t2, t3).runNow()))
-    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(js.Any.fromFunction2((t0: /* isSelected */ scala.Boolean, t1: /* rows */ js.Array[TRow]) => onSelectAll(t0, t1).runNow()))
-    if (!js.isUndefined(onlyUnselectVisible)) __obj.updateDynamic("onlyUnselectVisible")(onlyUnselectVisible.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOnlySelected)) __obj.updateDynamic("showOnlySelected")(showOnlySelected.asInstanceOf[js.Any])
-    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectRow[TRow]]
   }
+  
+  extension [Self <: SelectRow[?], TRow /* <: js.Object */](x: Self & SelectRow[TRow]) {
+    
+    inline def setBgColor(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    
+    inline def setBgColorFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))
+    
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    
+    inline def setClassName(value: String | (js.Function2[/* row */ TRow, /* isSelect */ Boolean, String])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameFunction2(value: (/* row */ TRow, /* isSelect */ Boolean) => String): Self = StObject.set(x, "className", js.Any.fromFunction2(value))
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setClickToExpand(value: Boolean): Self = StObject.set(x, "clickToExpand", value.asInstanceOf[js.Any])
+    
+    inline def setClickToExpandUndefined: Self = StObject.set(x, "clickToExpand", js.undefined)
+    
+    inline def setClickToSelect(value: Boolean): Self = StObject.set(x, "clickToSelect", value.asInstanceOf[js.Any])
+    
+    inline def setClickToSelectAndEditCell(value: Boolean): Self = StObject.set(x, "clickToSelectAndEditCell", value.asInstanceOf[js.Any])
+    
+    inline def setClickToSelectAndEditCellUndefined: Self = StObject.set(x, "clickToSelectAndEditCell", js.undefined)
+    
+    inline def setClickToSelectUndefined: Self = StObject.set(x, "clickToSelect", js.undefined)
+    
+    inline def setColumnWidth(value: String): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setCustomComponent(value: /* props */ CustomSelectProps => String | Element): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
+    
+    inline def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)
+    
+    inline def setHideSelectColumn(value: Boolean): Self = StObject.set(x, "hideSelectColumn", value.asInstanceOf[js.Any])
+    
+    inline def setHideSelectColumnUndefined: Self = StObject.set(x, "hideSelectColumn", js.undefined)
+    
+    inline def setMode(value: SelectRowMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setOnSelect(
+      value: (/* row */ TRow, /* isSelected */ Boolean, /* event */ Any, /* rowIndex */ Double) => Boolean | Unit
+    ): Self = StObject.set(x, "onSelect", js.Any.fromFunction4(value))
+    
+    inline def setOnSelectAll(
+      value: (/* isSelected */ Boolean, /* rows */ js.Array[TRow]) => Boolean | (js.Array[Double | String])
+    ): Self = StObject.set(x, "onSelectAll", js.Any.fromFunction2(value))
+    
+    inline def setOnSelectAllUndefined: Self = StObject.set(x, "onSelectAll", js.undefined)
+    
+    inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+    
+    inline def setOnlyUnselectVisible(value: Boolean): Self = StObject.set(x, "onlyUnselectVisible", value.asInstanceOf[js.Any])
+    
+    inline def setOnlyUnselectVisibleUndefined: Self = StObject.set(x, "onlyUnselectVisible", js.undefined)
+    
+    inline def setSelected(value: js.Array[Double | String]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setSelectedVarargs(value: (Double | String)*): Self = StObject.set(x, "selected", js.Array(value*))
+    
+    inline def setShowOnlySelected(value: Boolean): Self = StObject.set(x, "showOnlySelected", value.asInstanceOf[js.Any])
+    
+    inline def setShowOnlySelectedUndefined: Self = StObject.set(x, "showOnlySelected", js.undefined)
+    
+    inline def setUnselectable(value: js.Array[Double | String]): Self = StObject.set(x, "unselectable", value.asInstanceOf[js.Any])
+    
+    inline def setUnselectableUndefined: Self = StObject.set(x, "unselectable", js.undefined)
+    
+    inline def setUnselectableVarargs(value: (Double | String)*): Self = StObject.set(x, "unselectable", js.Array(value*))
+  }
 }
-

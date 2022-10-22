@@ -1,36 +1,46 @@
 package typingsJapgolly.divaJs
 
+import org.scalajs.dom.Event
 import typingsJapgolly.divaJs.interfacesMod.Offset
 import typingsJapgolly.divaJs.viewerCoreMod.default
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diva.js/handlers", JSImport.Namespace)
-@js.native
-object handlersMod extends js.Object {
+object handlersMod {
+  
+  @JSImport("diva.js/handlers", "DocumentHandler")
   @js.native
-  class DocumentHandler protected () extends ViewHandler {
+  open class DocumentHandler protected ()
+    extends StObject
+       with ViewHandler {
     def this(viewerCore: default) = this()
-    def onPinch(event: Event_, coords: Offset, startDistance: Double, endDistance: Double): Unit = js.native
+    
+    def onPinch(event: Event, coords: Offset, startDistance: Double, endDistance: Double): Unit = js.native
   }
   
+  @JSImport("diva.js/handlers", "GridHandler")
   @js.native
-  class GridHandler protected () extends ViewHandler {
+  open class GridHandler protected ()
+    extends StObject
+       with ViewHandler {
     def this(viewerCore: default) = this()
+    
     def onPinch(): Unit = js.native
   }
   
   @js.native
-  trait ViewHandler extends js.Object {
+  trait ViewHandler extends StObject {
+    
     var _viewerCore: default = js.native
-    def onDoubleClick(event: Event_, coords: Offset): Unit = js.native
+    
+    def onDoubleClick(event: Event, coords: Offset): Unit = js.native
+    
     def onViewDidLoad(): Unit = js.native
+    
     def onViewDidUpdate(renderedPages: js.Array[Double]): Unit = js.native
     def onViewDidUpdate(renderedPages: js.Array[Double], targetPage: Double): Unit = js.native
+    
     def onViewWillLoad(): Unit = js.native
   }
-  
 }
-

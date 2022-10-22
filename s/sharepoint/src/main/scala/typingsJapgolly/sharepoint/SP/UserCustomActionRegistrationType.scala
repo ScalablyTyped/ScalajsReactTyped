@@ -1,47 +1,37 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserCustomActionRegistrationType extends js.Object
-
+sealed trait UserCustomActionRegistrationType extends StObject
 @JSGlobal("SP.UserCustomActionRegistrationType")
 @js.native
-object UserCustomActionRegistrationType extends js.Object {
-  @js.native
-  sealed trait contentType extends UserCustomActionRegistrationType
+object UserCustomActionRegistrationType extends StObject {
   
   @js.native
-  sealed trait fileType extends UserCustomActionRegistrationType
+  sealed trait contentType
+    extends StObject
+       with UserCustomActionRegistrationType
   
   @js.native
-  sealed trait list extends UserCustomActionRegistrationType
+  sealed trait fileType
+    extends StObject
+       with UserCustomActionRegistrationType
   
   @js.native
-  sealed trait none extends UserCustomActionRegistrationType
+  sealed trait list
+    extends StObject
+       with UserCustomActionRegistrationType
   
   @js.native
-  sealed trait progId extends UserCustomActionRegistrationType
+  sealed trait none
+    extends StObject
+       with UserCustomActionRegistrationType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserCustomActionRegistrationType with Double] = js.native
-  /* 2 */ @js.native
-  object contentType extends TopLevel[contentType with Double]
-  
-  /* 4 */ @js.native
-  object fileType extends TopLevel[fileType with Double]
-  
-  /* 1 */ @js.native
-  object list extends TopLevel[list with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object progId extends TopLevel[progId with Double]
-  
+  @js.native
+  sealed trait progId
+    extends StObject
+       with UserCustomActionRegistrationType
 }
-

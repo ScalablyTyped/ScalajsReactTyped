@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -13,22 +13,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.declined
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notResponded
 */
-trait ResponseType extends js.Object
-
+trait ResponseType extends StObject
 object ResponseType {
-  @scala.inline
-  def accepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.accepted = this.cast("accepted")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def declined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.declined = this.cast("declined")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def notResponded: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notResponded = this.cast("notResponded")
-  @scala.inline
-  def organizer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.organizer = this.cast("organizer")
-  @scala.inline
-  def tentativelyAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = this.cast("tentativelyAccepted")
+  
+  inline def accepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.accepted = "accepted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.accepted]
+  
+  inline def declined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.declined = "declined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.declined]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def notResponded: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notResponded = "notResponded".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notResponded]
+  
+  inline def organizer: typingsJapgolly.microsoftGraph.microsoftGraphStrings.organizer = "organizer".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.organizer]
+  
+  inline def tentativelyAccepted: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tentativelyAccepted = "tentativelyAccepted".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.tentativelyAccepted]
 }
-

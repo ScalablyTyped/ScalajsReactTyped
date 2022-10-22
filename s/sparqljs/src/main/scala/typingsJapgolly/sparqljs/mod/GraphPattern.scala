@@ -1,23 +1,37 @@
 package typingsJapgolly.sparqljs.mod
 
 import typingsJapgolly.sparqljs.sparqljsStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.sparqljs.mod.Pattern because Already inherited */ trait GraphPattern extends BlockPattern {
-  var name: Term
-  @JSName("type")
-  var type_GraphPattern: graph
+trait GraphPattern
+  extends StObject
+     with BlockPattern
+     with _Expression {
+  
+  var name: IriTerm
+  
+  var patterns: js.Array[Pattern]
+  
+  var `type`: graph
 }
-
 object GraphPattern {
-  @scala.inline
-  def apply(name: Term, patterns: js.Array[Pattern], `type`: graph): GraphPattern = {
+  
+  inline def apply(name: IriTerm, patterns: js.Array[Pattern]): GraphPattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphPattern]
   }
+  
+  extension [Self <: GraphPattern](x: Self) {
+    
+    inline def setName(value: IriTerm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPatterns(value: js.Array[Pattern]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+    
+    inline def setPatternsVarargs(value: Pattern*): Self = StObject.set(x, "patterns", js.Array(value*))
+    
+    inline def setType(value: graph): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

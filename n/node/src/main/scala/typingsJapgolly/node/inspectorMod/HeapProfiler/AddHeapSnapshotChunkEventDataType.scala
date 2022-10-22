@@ -1,19 +1,22 @@
 package typingsJapgolly.node.inspectorMod.HeapProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddHeapSnapshotChunkEventDataType extends js.Object {
+trait AddHeapSnapshotChunkEventDataType extends StObject {
+  
   var chunk: String
 }
-
 object AddHeapSnapshotChunkEventDataType {
-  @scala.inline
-  def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
-    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
   
+  inline def apply(chunk: String): AddHeapSnapshotChunkEventDataType = {
+    val __obj = js.Dynamic.literal(chunk = chunk.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddHeapSnapshotChunkEventDataType]
   }
+  
+  extension [Self <: AddHeapSnapshotChunkEventDataType](x: Self) {
+    
+    inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+  }
 }
-

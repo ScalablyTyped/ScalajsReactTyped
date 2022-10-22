@@ -1,54 +1,17 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.cardMetaMod.CardMetaProps
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.semanticUiReactStrings.center
-import typingsJapgolly.semanticUiReact.semanticUiReactStrings.left
-import typingsJapgolly.semanticUiReact.semanticUiReactStrings.right
+import typingsJapgolly.semanticUiReact.distCommonjsViewsCardCardMetaMod.CardMetaProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CardMeta {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    textAlign: center | left | right = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    CardMetaProps, 
-    MountedWithRawType[CardMetaProps, js.Object, RawMounted[CardMetaProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.cardMetaMod.CardMetaProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.cardMetaMod.CardMetaProps])(children: _*)
-  }
-  @JSImport("semantic-ui-react/dist/commonjs/views/Card/CardMeta", JSImport.Default)
+  @JSImport("semantic-ui-react", "CardMeta")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: CardMeta.type): SharedBuilder_CardMetaProps_2106210004 = new SharedBuilder_CardMetaProps_2106210004(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardMetaProps): SharedBuilder_CardMetaProps_2106210004 = new SharedBuilder_CardMetaProps_2106210004(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -11,9 +11,9 @@ Simple hh:mm:ss time formatting utility
 | Full name          | hh-mm-ss |
 | Keywords           | time format, hours, minutes, seconds, miliseconds, hh:mm:ss |
 | # releases         | 1 |
-| # dependents       | 18 |
-| # downloads        | 254999 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 16299.333333333334 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/Goldob/hh-mm-ss#readme)

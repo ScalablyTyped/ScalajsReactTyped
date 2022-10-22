@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeHueApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightGroup
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.Luminaire
   - typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightSource
 */
-trait LightGroupType extends js.Object
-
+trait LightGroupType extends StObject
 object LightGroupType {
-  @scala.inline
-  def LightGroup: typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightGroup = this.cast("LightGroup")
-  @scala.inline
-  def LightSource: typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightSource = this.cast("LightSource")
-  @scala.inline
-  def Luminaire: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Luminaire = this.cast("Luminaire")
-  @scala.inline
-  def Room: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Room = this.cast("Room")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def LightGroup: typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightGroup = "LightGroup".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightGroup]
+  
+  inline def LightSource: typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightSource = "LightSource".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.LightSource]
+  
+  inline def Luminaire: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Luminaire = "Luminaire".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Luminaire]
+  
+  inline def Room: typingsJapgolly.nodeHueApi.nodeHueApiStrings.Room = "Room".asInstanceOf[typingsJapgolly.nodeHueApi.nodeHueApiStrings.Room]
 }
-

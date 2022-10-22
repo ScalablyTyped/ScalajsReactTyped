@@ -1,24 +1,24 @@
 package typingsJapgolly.samchonFramework.mod.templates
 
-import typingsJapgolly.samchon.iclientdriverMod.IClientDriver
-import typingsJapgolly.samchon.idistributedserverMod.IDistributedServer
-import typingsJapgolly.samchon.invokeMod.Invoke
+import typingsJapgolly.samchon.protocolCommunicatorIclientdriverMod.IClientDriver
+import typingsJapgolly.samchon.protocolInvokeInvokeMod.Invoke
+import typingsJapgolly.samchon.templatesDistributedInterfacesIdistributedserverMod.IDistributedServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon-framework", "templates.distributed")
-@js.native
-object distributed extends js.Object {
+object distributed {
+  
+  @JSImport("samchon-framework", "templates.distributed.DSInvokeHistory")
   @js.native
-  class DSInvokeHistory protected ()
+  open class DSInvokeHistory protected ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DSInvokeHistory {
     /**
       * Construct from a DistributedSystem.
       *
       * @param system The {@link DistributedSystem} object who sent the {@link Invoke} message.
       */
-    def this(system: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem) = this()
+    def this(system: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem) = this()
     /**
       * Initilizer Constructor.
       *
@@ -28,86 +28,101 @@ object distributed extends js.Object {
       * @param weight Weight of resource which indicates how heavy this {@link Invoke} message is.
       */
     def this(
-      system: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem,
-      process: typingsJapgolly.samchon.distributedProcessMod.DistributedProcess,
+      system: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem,
+      process: typingsJapgolly.samchon.templatesDistributedDistributedProcessMod.DistributedProcess,
       invoke: Invoke,
       weight: Double
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedClientArray[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedClientArray[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedClientArray[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedClientArrayMediator[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedClientArrayMediator[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedClientArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedProcess")
   @js.native
-  abstract class DistributedProcess protected ()
+  open class DistributedProcess protected ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedProcess {
     /**
       * Constrct from parent {@link DistributedSystemArray} object.
       *
       * @param systemArray The parent {@link DistributedSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.distributedSystemArrayMod.DistributedSystemArray[typingsJapgolly.samchon.distributedSystemMod.DistributedSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesDistributedDistributedSystemArrayMod.DistributedSystemArray[
+            typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem
+          ]) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedServer")
   @js.native
-  abstract class DistributedServer protected ()
+  open class DistributedServer protected ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedServer {
     /**
       * Construct from parent {@link DistributedSystemArray}.
       *
       * @param systemArray The parent {@link DistributedSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.distributedSystemArrayMod.DistributedSystemArray[typingsJapgolly.samchon.distributedSystemMod.DistributedSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesDistributedDistributedSystemArrayMod.DistributedSystemArray[
+            typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem
+          ]) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedServerArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedServerArray[System /* <: IDistributedServer */] ()
+  open class DistributedServerArray[System /* <: IDistributedServer */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedServerArray[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedServerArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedServerArrayMediator[System /* <: IDistributedServer */] ()
+  open class DistributedServerArrayMediator[System /* <: IDistributedServer */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedServerArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedServerClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedServerClientArray[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedServerClientArray[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedServerClientArray[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedServerClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedServerClientArrayMediator[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedServerClientArrayMediator[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedServerClientArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedSystem")
   @js.native
-  abstract class DistributedSystem protected ()
+  open class DistributedSystem protected ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedSystem {
     /**
       * Construct from parent {@link DistributedSystemArray}.
       *
       * @param systemArray The parent {@link DistributedSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.distributedSystemArrayMod.DistributedSystemArray[typingsJapgolly.samchon.distributedSystemMod.DistributedSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesDistributedDistributedSystemArrayMod.DistributedSystemArray[
+            typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem
+          ]) = this()
     /**
       * Constrct from parent {@link DistributedSystemArray} and communicator.
       *
@@ -115,24 +130,26 @@ object distributed extends js.Object {
       * @param communicator A communicator communicates with remote, the external system.
       */
     def this(
-      systemArray: typingsJapgolly.samchon.distributedSystemArrayMod.DistributedSystemArray[typingsJapgolly.samchon.distributedSystemMod.DistributedSystem],
+      systemArray: typingsJapgolly.samchon.templatesDistributedDistributedSystemArrayMod.DistributedSystemArray[
+            typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem
+          ],
       communicator: IClientDriver
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedSystemArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedSystemArray[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedSystemArray[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedSystemArray[System]
   
+  /* note: abstract class */ @JSImport("samchon-framework", "templates.distributed.DistributedSystemArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class DistributedSystemArrayMediator[System /* <: typingsJapgolly.samchon.distributedSystemMod.DistributedSystem */] ()
+  open class DistributedSystemArrayMediator[System /* <: typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem */] ()
     extends typingsJapgolly.samchon.mod.templates.distributed.DistributedSystemArrayMediator[System]
-  
 }
-

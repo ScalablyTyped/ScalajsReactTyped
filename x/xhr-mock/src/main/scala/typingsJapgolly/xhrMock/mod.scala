@@ -1,34 +1,58 @@
 package typingsJapgolly.xhrMock
 
-import typingsJapgolly.xhrMock.typesMod.MockFunction
-import typingsJapgolly.xhrMock.typesMod.MockObject
-import typingsJapgolly.xhrMock.xhrmockMod.XHRMock
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.std.XMLHttpRequest
+import typingsJapgolly.xhrMock.libMockRequestMod.default
+import typingsJapgolly.xhrMock.libTypesMod.MockFunction
+import typingsJapgolly.xhrMock.libTypesMod.MockObject
+import typingsJapgolly.xhrMock.libXhrmockMod.XHRMock
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xhr-mock", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class MockRequest ()
-    extends typingsJapgolly.xhrMock.mockRequestMod.MockRequest
+object mod {
   
+  @JSImport("xhr-mock", JSImport.Namespace)
   @js.native
-  class MockResponse ()
-    extends typingsJapgolly.xhrMock.mockResponseMod.MockResponse
+  val ^ : js.Any = js.native
   
-  val default: XHRMock = js.native
-  def delay(mock: MockFunction): MockFunction = js.native
-  def delay(mock: MockFunction, ms: Double): MockFunction = js.native
-  def delay(mock: MockObject): MockFunction = js.native
-  def delay(mock: MockObject, ms: Double): MockFunction = js.native
-  def once(mock: MockFunction): MockFunction = js.native
-  def once(mock: MockObject): MockFunction = js.native
-  def proxy(
-    req: typingsJapgolly.xhrMock.mockRequestMod.default,
-    res: typingsJapgolly.xhrMock.mockResponseMod.default
-  ): js.Promise[typingsJapgolly.xhrMock.mockResponseMod.default] = js.native
-  def sequence(mocks: js.Array[MockFunction | MockObject]): MockFunction = js.native
+  object default extends Shortcut {
+    
+    @JSImport("xhr-mock", JSImport.Default)
+    @js.native
+    val ^ : XHRMock = js.native
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("xhr-mock", "default.RealXMLHttpRequest")
+    @js.native
+    open class RealXMLHttpRequest ()
+      extends StObject
+         with XMLHttpRequest
+    
+    type _To = XHRMock
+    
+    /* This means you don't have to write `^`, but can instead just say `default.foo` */
+    override def _to: XHRMock = ^
+  }
+  
+  @JSImport("xhr-mock", "MockRequest")
+  @js.native
+  open class MockRequest () extends default
+  
+  @JSImport("xhr-mock", "MockResponse")
+  @js.native
+  open class MockResponse ()
+    extends typingsJapgolly.xhrMock.libMockResponseMod.default
+  
+  inline def delay(mock: MockFunction): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
+  inline def delay(mock: MockFunction, ms: Double): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(mock.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
+  inline def delay(mock: MockObject): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
+  inline def delay(mock: MockObject, ms: Double): MockFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(mock.asInstanceOf[js.Any], ms.asInstanceOf[js.Any])).asInstanceOf[MockFunction]
+  
+  inline def once(mock: MockFunction): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
+  inline def once(mock: MockObject): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("once")(mock.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
+  
+  inline def proxy(req: default, res: typingsJapgolly.xhrMock.libMockResponseMod.default): js.Promise[typingsJapgolly.xhrMock.libMockResponseMod.default] = (^.asInstanceOf[js.Dynamic].applyDynamic("proxy")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.xhrMock.libMockResponseMod.default]]
+  
+  inline def sequence(mocks: js.Array[MockFunction | MockObject]): MockFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(mocks.asInstanceOf[js.Any]).asInstanceOf[MockFunction]
 }
-

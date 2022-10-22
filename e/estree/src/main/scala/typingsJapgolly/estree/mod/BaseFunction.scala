@@ -1,41 +1,46 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseFunction extends BaseNode {
+trait BaseFunction
+  extends StObject
+     with BaseNode {
+  
   var async: js.UndefOr[Boolean] = js.undefined
+  
   // The body is either BlockStatement or Expression because arrow functions
   // can have a body that's either. FunctionDeclarations and
   // FunctionExpressions have only BlockStatement bodies.
   var body: BlockStatement | Expression
+  
   var generator: js.UndefOr[Boolean] = js.undefined
+  
   var params: js.Array[Pattern]
 }
-
 object BaseFunction {
-  @scala.inline
-  def apply(
-    body: BlockStatement | Expression,
-    params: js.Array[Pattern],
-    `type`: String,
-    async: js.UndefOr[Boolean] = js.undefined,
-    generator: js.UndefOr[Boolean] = js.undefined,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): BaseFunction = {
+  
+  inline def apply(body: BlockStatement | Expression, params: js.Array[Pattern], `type`: String): BaseFunction = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseFunction]
   }
+  
+  extension [Self <: BaseFunction](x: Self) {
+    
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setBody(value: BlockStatement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+    
+    inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
+    
+    inline def setParams(value: js.Array[Pattern]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value*))
+  }
 }
-

@@ -1,69 +1,84 @@
 package typingsJapgolly.officeJs.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.fill` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesFillLoadOptions extends js.Object {
+trait CellPropertiesFillLoadOptions extends StObject {
+  
   /**
+    * Specifies whether to load the `color` property.
     *
-    * Specifies whether to load on the `color` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `pattern` property.
     *
-    * Specifies whether to load on the `pattern` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var pattern: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `patternColor` property.
     *
-    * Specifies whether to load on the `patternColor` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternColor: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `patternTintAndShade` property.
     *
-    * Specifies whether to load on the `patternTintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var patternTintAndShade: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `tintAndShade` property.
     *
-    * Specifies whether to load on the `tintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
 }
-
 object CellPropertiesFillLoadOptions {
-  @scala.inline
-  def apply(
-    color: js.UndefOr[Boolean] = js.undefined,
-    pattern: js.UndefOr[Boolean] = js.undefined,
-    patternColor: js.UndefOr[Boolean] = js.undefined,
-    patternTintAndShade: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: js.UndefOr[Boolean] = js.undefined
-  ): CellPropertiesFillLoadOptions = {
+  
+  inline def apply(): CellPropertiesFillLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(pattern)) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternColor)) __obj.updateDynamic("patternColor")(patternColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(patternTintAndShade)) __obj.updateDynamic("patternTintAndShade")(patternTintAndShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFillLoadOptions]
   }
+  
+  extension [Self <: CellPropertiesFillLoadOptions](x: Self) {
+    
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setPattern(value: Boolean): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColor(value: Boolean): Self = StObject.set(x, "patternColor", value.asInstanceOf[js.Any])
+    
+    inline def setPatternColorUndefined: Self = StObject.set(x, "patternColor", js.undefined)
+    
+    inline def setPatternTintAndShade(value: Boolean): Self = StObject.set(x, "patternTintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setPatternTintAndShadeUndefined: Self = StObject.set(x, "patternTintAndShade", js.undefined)
+    
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    
+    inline def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+  }
 }
-

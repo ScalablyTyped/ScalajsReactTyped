@@ -1,7 +1,7 @@
 
 # Scala.js typings for assert
 
-Typings are for version 1.4
+Typings are for version 1.5
 
 ## Library description:
 The assert module from Node.js, for the browser.
@@ -10,10 +10,10 @@ The assert module from Node.js, for the browser.
 | ------------------ | :-------------: |
 | Full name          | assert |
 | Keywords           | assert, browser |
-| # releases         | 3 |
-| # dependents       | 1138 |
-| # downloads        | 307546967 |
-| # stars            | 74 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6258845666666664E7 |
+| # stars            | 272.0 |
 
 ## Links
 - [Homepage](https://github.com/browserify/commonjs-assert)

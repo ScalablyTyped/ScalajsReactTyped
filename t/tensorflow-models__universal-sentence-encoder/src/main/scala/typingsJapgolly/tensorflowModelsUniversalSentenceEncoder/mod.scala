@@ -1,33 +1,95 @@
 package typingsJapgolly.tensorflowModelsUniversalSentenceEncoder
 
-import typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Vocabulary
+import typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Vocabulary
+import typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distUseQnaMod.UniversalSentenceEncoderQnA
 import typingsJapgolly.tensorflowTfjsConverter.mod.GraphModel
-import typingsJapgolly.tensorflowTfjsCore.tensorMod.Tensor2D
+import typingsJapgolly.tensorflowTfjsCore.distIoTypesMod.IOHandler
+import typingsJapgolly.tensorflowTfjsCore.distTensorMod.Tensor2D
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow-models/universal-sentence-encoder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", JSImport.Namespace)
   @js.native
-  class Tokenizer protected ()
-    extends typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer {
+  val ^ : js.Any = js.native
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "Tokenizer")
+  @js.native
+  open class Tokenizer protected ()
+    extends typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Tokenizer {
     def this(vocabulary: Vocabulary) = this()
+    def this(vocabulary: Vocabulary, reservedSymbolsCount: Double) = this()
   }
   
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "UniversalSentenceEncoder")
   @js.native
-  class UniversalSentenceEncoder () extends js.Object {
-    var model: js.Any = js.native
-    var tokenizer: js.Any = js.native
+  open class UniversalSentenceEncoder () extends StObject {
+    
     def embed(inputs: String): js.Promise[Tensor2D] = js.native
+    /**
+      *
+      * Returns a 2D Tensor of shape [input.length, 512] that contains the
+      * Universal Sentence Encoder embeddings for each input.
+      *
+      * @param inputs A string or an array of strings to embed.
+      */
     def embed(inputs: js.Array[String]): js.Promise[Tensor2D] = js.native
+    
     def load(): js.Promise[Unit] = js.native
-    def loadModel(): js.Promise[GraphModel] = js.native
+    def load(config: LoadConfig): js.Promise[Unit] = js.native
+    
+    def loadModel(): js.Promise[GraphModel[String | IOHandler]] = js.native
+    def loadModel(modelUrl: String): js.Promise[GraphModel[String | IOHandler]] = js.native
+    
+    /* private */ var model: Any = js.native
+    
+    /* private */ var tokenizer: Any = js.native
   }
   
-  def load(): js.Promise[UniversalSentenceEncoder] = js.native
-  def loadTokenizer(): js.Promise[typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = js.native
-  def loadTokenizer(pathToVocabulary: String): js.Promise[typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.tokenizerMod.Tokenizer] = js.native
+  inline def load(): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[UniversalSentenceEncoder]]
+  inline def load(config: LoadConfig): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[UniversalSentenceEncoder]]
+  
+  inline def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
+  
+  inline def loadTokenizer(): js.Promise[
+    typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Tokenizer
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")().asInstanceOf[js.Promise[
+    typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Tokenizer
+  ]]
+  inline def loadTokenizer(pathToVocabulary: String): js.Promise[
+    typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Tokenizer
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadTokenizer")(pathToVocabulary.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+    typingsJapgolly.tensorflowModelsUniversalSentenceEncoder.distTokenizerMod.Tokenizer
+  ]]
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", "version")
+  @js.native
+  val version: /* "1.3.3" */ String = js.native
+  
+  trait LoadConfig extends StObject {
+    
+    var modelUrl: js.UndefOr[String] = js.undefined
+    
+    var vocabUrl: js.UndefOr[String] = js.undefined
+  }
+  object LoadConfig {
+    
+    inline def apply(): LoadConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[LoadConfig]
+    }
+    
+    extension [Self <: LoadConfig](x: Self) {
+      
+      inline def setModelUrl(value: String): Self = StObject.set(x, "modelUrl", value.asInstanceOf[js.Any])
+      
+      inline def setModelUrlUndefined: Self = StObject.set(x, "modelUrl", js.undefined)
+      
+      inline def setVocabUrl(value: String): Self = StObject.set(x, "vocabUrl", value.asInstanceOf[js.Any])
+      
+      inline def setVocabUrlUndefined: Self = StObject.set(x, "vocabUrl", js.undefined)
+    }
+  }
 }
-

@@ -1,13 +1,13 @@
 package typingsJapgolly.onHeaders
 
+import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("on-headers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * This will add the listener to fire when headers are emitted for res.
     * The listener is passed the response object as its context (this).
@@ -21,6 +21,12 @@ object mod extends js.Object {
     * @param listener Function to call prior to headers being emitted,
     *        the response object is passed as this context.
     */
-  def apply(res: ServerResponse, listener: js.ThisFunction0[/* this */ ServerResponse, Unit]): Unit = js.native
+  inline def apply(
+    res: ServerResponse[IncomingMessage],
+    listener: js.ThisFunction0[/* this */ ServerResponse[IncomingMessage], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(res.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("on-headers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

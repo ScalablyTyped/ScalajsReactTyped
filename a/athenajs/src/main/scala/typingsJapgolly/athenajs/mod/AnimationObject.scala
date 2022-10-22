@@ -1,30 +1,43 @@
 package typingsJapgolly.athenajs.mod
 
-import typingsJapgolly.athenajs.AnonHeight
+import typingsJapgolly.athenajs.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationObject extends js.Object {
+trait AnimationObject extends StObject {
+  
   var frameDuration: js.UndefOr[Double] = js.undefined
-  var frames: js.Array[AnonHeight]
+  
+  var frames: js.Array[Height]
+  
   var loop: js.UndefOr[Double] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
 }
-
 object AnimationObject {
-  @scala.inline
-  def apply(
-    frames: js.Array[AnonHeight],
-    frameDuration: Int | Double = null,
-    loop: Int | Double = null,
-    speed: Int | Double = null
-  ): AnimationObject = {
+  
+  inline def apply(frames: js.Array[Height]): AnimationObject = {
     val __obj = js.Dynamic.literal(frames = frames.asInstanceOf[js.Any])
-    if (frameDuration != null) __obj.updateDynamic("frameDuration")(frameDuration.asInstanceOf[js.Any])
-    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationObject]
   }
+  
+  extension [Self <: AnimationObject](x: Self) {
+    
+    inline def setFrameDuration(value: Double): Self = StObject.set(x, "frameDuration", value.asInstanceOf[js.Any])
+    
+    inline def setFrameDurationUndefined: Self = StObject.set(x, "frameDuration", js.undefined)
+    
+    inline def setFrames(value: js.Array[Height]): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
+    
+    inline def setFramesVarargs(value: Height*): Self = StObject.set(x, "frames", js.Array(value*))
+    
+    inline def setLoop(value: Double): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    
+    inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+  }
 }
-

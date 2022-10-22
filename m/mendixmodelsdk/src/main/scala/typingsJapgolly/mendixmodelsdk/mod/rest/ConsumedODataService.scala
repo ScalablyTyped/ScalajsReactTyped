@@ -1,23 +1,25 @@
 package typingsJapgolly.mendixmodelsdk.mod.rest
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typingsJapgolly.mendixmodelsdk.restMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenRestMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/consumed-odata-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/consumed-odata-service-properties relevant section in reference guide}
   *
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+  *
+  * @ignore
   *
   * In version 7.18.0: introduced
   */
 @JSImport("mendixmodelsdk", "rest.ConsumedODataService")
 @js.native
-class ConsumedODataService protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.rest.ConsumedODataService {
+open class ConsumedODataService protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.rest.ConsumedODataService {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -26,17 +28,28 @@ class ConsumedODataService protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "rest.ConsumedODataService")
-@js.native
-object ConsumedODataService extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object ConsumedODataService {
+  
+  @JSImport("mendixmodelsdk", "rest.ConsumedODataService")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ConsumedODataService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
-  def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.restMod.rest.ConsumedODataService = js.native
+  /* static member */
+  inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenRestMod.rest.ConsumedODataService]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "rest.ConsumedODataService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "rest.ConsumedODataService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

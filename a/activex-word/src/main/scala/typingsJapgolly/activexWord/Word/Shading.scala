@@ -1,21 +1,66 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Shading")
-@js.native
-class Shading protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  var BackgroundPatternColor: WdColor = js.native
-  var BackgroundPatternColorIndex: WdColorIndex = js.native
-  val Creator: Double = js.native
-  var ForegroundPatternColor: WdColor = js.native
-  var ForegroundPatternColorIndex: WdColorIndex = js.native
-  val Parent: js.Any = js.native
-  var Texture: WdTextureIndex = js.native
-  @JSName("Word.Shading_typekey")
-  var WordDotShading_typekey: Shading = js.native
+trait Shading extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  var BackgroundPatternColor: WdColor
+  
+  var BackgroundPatternColorIndex: WdColorIndex
+  
+  val Creator: Double
+  
+  var ForegroundPatternColor: WdColor
+  
+  var ForegroundPatternColorIndex: WdColorIndex
+  
+  val Parent: Any
+  
+  var Texture: WdTextureIndex
+  
+  /* private */ @JSName("Word.Shading_typekey")
+  var WordDotShading_typekey: Shading
 }
-
+object Shading {
+  
+  inline def apply(
+    Application: Application,
+    BackgroundPatternColor: WdColor,
+    BackgroundPatternColorIndex: WdColorIndex,
+    Creator: Double,
+    ForegroundPatternColor: WdColor,
+    ForegroundPatternColorIndex: WdColorIndex,
+    Parent: Any,
+    Texture: WdTextureIndex,
+    WordDotShading_typekey: Shading
+  ): Shading = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], BackgroundPatternColor = BackgroundPatternColor.asInstanceOf[js.Any], BackgroundPatternColorIndex = BackgroundPatternColorIndex.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], ForegroundPatternColor = ForegroundPatternColor.asInstanceOf[js.Any], ForegroundPatternColorIndex = ForegroundPatternColorIndex.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Texture = Texture.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.Shading_typekey")(WordDotShading_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Shading]
+  }
+  
+  extension [Self <: Shading](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPatternColor(value: WdColor): Self = StObject.set(x, "BackgroundPatternColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "BackgroundPatternColorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setForegroundPatternColor(value: WdColor): Self = StObject.set(x, "ForegroundPatternColor", value.asInstanceOf[js.Any])
+    
+    inline def setForegroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "ForegroundPatternColorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setTexture(value: WdTextureIndex): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotShading_typekey(value: Shading): Self = StObject.set(x, "Word.Shading_typekey", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,21 +1,27 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Implemented by elements that support attributes that position individual text glyphs. It is inherited by SVGTextElement, SVGTSpanElement, SVGTRefElement and SVGAltGlyphElement. */
 @js.native
-trait SVGTextPositioningElement extends SVGTextContentElement {
-  val dx: org.scalajs.dom.raw.SVGAnimatedLengthList = js.native
-  val dy: org.scalajs.dom.raw.SVGAnimatedLengthList = js.native
-  val rotate: org.scalajs.dom.raw.SVGAnimatedNumberList = js.native
-  val x: org.scalajs.dom.raw.SVGAnimatedLengthList = js.native
-  val y: org.scalajs.dom.raw.SVGAnimatedLengthList = js.native
+trait SVGTextPositioningElement
+  extends StObject
+     with SVGTextContentElement {
+  
+  /* standard dom */
+  val dx: org.scalajs.dom.SVGAnimatedLengthList = js.native
+  
+  /* standard dom */
+  val dy: org.scalajs.dom.SVGAnimatedLengthList = js.native
+  
+  /* standard dom */
+  val rotate: org.scalajs.dom.SVGAnimatedNumberList = js.native
+  
+  /* standard dom */
+  val x: org.scalajs.dom.SVGAnimatedLengthList = js.native
+  
+  /* standard dom */
+  val y: org.scalajs.dom.SVGAnimatedLengthList = js.native
 }
-
-@JSGlobal("SVGTextPositioningElement")
-@js.native
-object SVGTextPositioningElement extends Instantiable0[SVGTextPositioningElement]
-

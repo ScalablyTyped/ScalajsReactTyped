@@ -1,49 +1,56 @@
 package typingsJapgolly.qrcodeGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qrcodeGeneratorStrings {
-  @js.native
-  sealed trait Alphanumeric extends Mode
   
   @js.native
-  sealed trait Byte extends Mode
+  sealed trait Alphanumeric
+    extends StObject
+       with Mode
+  inline def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
   
   @js.native
-  sealed trait H extends ErrorCorrectionLevel
+  sealed trait Byte
+    extends StObject
+       with Mode
+  inline def Byte: Byte = "Byte".asInstanceOf[Byte]
   
   @js.native
-  sealed trait Kanji extends Mode
+  sealed trait H
+    extends StObject
+       with ErrorCorrectionLevel
+  inline def H: H = "H".asInstanceOf[H]
   
   @js.native
-  sealed trait L extends ErrorCorrectionLevel
+  sealed trait Kanji
+    extends StObject
+       with Mode
+  inline def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
   
   @js.native
-  sealed trait M extends ErrorCorrectionLevel
+  sealed trait L
+    extends StObject
+       with ErrorCorrectionLevel
+  inline def L: L = "L".asInstanceOf[L]
   
   @js.native
-  sealed trait Numeric extends Mode
+  sealed trait M
+    extends StObject
+       with ErrorCorrectionLevel
+  inline def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait Q extends ErrorCorrectionLevel
+  sealed trait Numeric
+    extends StObject
+       with Mode
+  inline def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
   
-  @scala.inline
-  def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]
-  @scala.inline
-  def Byte: Byte = "Byte".asInstanceOf[Byte]
-  @scala.inline
-  def H: H = "H".asInstanceOf[H]
-  @scala.inline
-  def Kanji: Kanji = "Kanji".asInstanceOf[Kanji]
-  @scala.inline
-  def L: L = "L".asInstanceOf[L]
-  @scala.inline
-  def M: M = "M".asInstanceOf[M]
-  @scala.inline
-  def Numeric: Numeric = "Numeric".asInstanceOf[Numeric]
-  @scala.inline
-  def Q: Q = "Q".asInstanceOf[Q]
+  @js.native
+  sealed trait Q
+    extends StObject
+       with ErrorCorrectionLevel
+  inline def Q: Q = "Q".asInstanceOf[Q]
 }
-

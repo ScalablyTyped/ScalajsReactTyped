@@ -10,10 +10,10 @@ react native percentage circle and also be a progress bar
 | ------------------ | :-------------: |
 | Full name          | react-native-percentage-circle |
 | Keywords           | percentage, circle, progress, bar |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 25573 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 510.6666666666667 |
+| # stars            | 314.0 |
 
 ## Links
 - [Homepage](https://github.com/JackPu/react-native-percentage-circle#readme)

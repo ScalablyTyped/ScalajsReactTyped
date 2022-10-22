@@ -1,48 +1,40 @@
 package typingsJapgolly.reactLeafletSidebarv2.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactLeafletSidebarv2.mod.Icon
 import typingsJapgolly.reactLeafletSidebarv2.mod.Position
 import typingsJapgolly.reactLeafletSidebarv2.mod.SidebarProps
 import typingsJapgolly.reactLeafletSidebarv2.mod.TabType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Sidebar {
-  def apply(
-    collapsed: Boolean,
-    id: String,
-    position: Position,
-    selected: String,
-    closeIcon: Icon = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onOpen: /* id */ String => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: TabType
-  ): UnmountedWithRoot[SidebarProps, typingsJapgolly.reactLeafletSidebarv2.mod.Sidebar, Unit, SidebarProps] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
   
-      if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    if (onOpen != null) __obj.updateDynamic("onOpen")(js.Any.fromFunction1((t0: /* id */ java.lang.String) => onOpen(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLeafletSidebarv2.mod.SidebarProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactLeafletSidebarv2.mod.Sidebar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLeafletSidebarv2.mod.SidebarProps])
+  inline def apply(children: TabType, collapsed: Boolean, id: String, position: Position, selected: String): Builder = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any], collapsed = collapsed.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SidebarProps]))
   }
+  
   @JSImport("react-leaflet-sidebarv2", "Sidebar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactLeafletSidebarv2.mod.Sidebar] {
+    
+    inline def closeIcon(value: Icon): this.type = set("closeIcon", value.asInstanceOf[js.Any])
+    
+    inline def closeIconVdomElement(value: VdomElement): this.type = set("closeIcon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onOpen(value: /* id */ String => Callback): this.type = set("onOpen", js.Any.fromFunction1((t0: /* id */ String) => value(t0).runNow()))
+  }
+  
+  def withProps(p: SidebarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

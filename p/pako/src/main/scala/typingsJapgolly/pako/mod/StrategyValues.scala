@@ -1,47 +1,14 @@
 package typingsJapgolly.pako.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait StrategyValues extends js.Object
-
-@JSImport("pako", "StrategyValues")
-@js.native
-object StrategyValues extends js.Object {
-  @js.native
-  sealed trait Z_DEFAULT_STRATEGY extends StrategyValues
-  
-  @js.native
-  sealed trait Z_FILTERED extends StrategyValues
-  
-  @js.native
-  sealed trait Z_FIXED extends StrategyValues
-  
-  @js.native
-  sealed trait Z_HUFFMAN_ONLY extends StrategyValues
-  
-  @js.native
-  sealed trait Z_RLE extends StrategyValues
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StrategyValues with Double] = js.native
-  /* 0 */ @js.native
-  object Z_DEFAULT_STRATEGY extends TopLevel[Z_DEFAULT_STRATEGY with Double]
-  
-  /* 1 */ @js.native
-  object Z_FILTERED extends TopLevel[Z_FILTERED with Double]
-  
-  /* 4 */ @js.native
-  object Z_FIXED extends TopLevel[Z_FIXED with Double]
-  
-  /* 2 */ @js.native
-  object Z_HUFFMAN_ONLY extends TopLevel[Z_HUFFMAN_ONLY with Double]
-  
-  /* 3 */ @js.native
-  object Z_RLE extends TopLevel[Z_RLE with Double]
-  
-}
-
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.pako.mod.constants.Z_FILTERED
+  - typingsJapgolly.pako.mod.constants.Z_HUFFMAN_ONLY
+  - typingsJapgolly.pako.mod.constants.Z_RLE
+  - typingsJapgolly.pako.mod.constants.Z_FIXED
+  - typingsJapgolly.pako.mod.constants.Z_DEFAULT_STRATEGY
+*/
+trait StrategyValues extends StObject

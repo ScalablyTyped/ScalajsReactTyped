@@ -1,20 +1,46 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.webix.webix.ui.baseview
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait markup extends js.Object {
-  var attribute: js.Any
-  var dataTag: js.Any
-  var namespace: js.Any
+trait markup extends StObject {
+  
+  var attribute: Any
+  
+  var dataTag: Any
+  
   def init(node: String, target: String): baseview
-  def parse(data: js.Any, datatype: String): Unit
+  
+  var namespace: Any
+  
+  def parse(data: Any, datatype: String): Unit
 }
-
-@JSGlobal("webix.markup")
-@js.native
-object markup extends TopLevel[markup]
-
+object markup {
+  
+  inline def apply(
+    attribute: Any,
+    dataTag: Any,
+    init: (String, String) => baseview,
+    namespace: Any,
+    parse: (Any, String) => Callback
+  ): markup = {
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], dataTag = dataTag.asInstanceOf[js.Any], init = js.Any.fromFunction2(init), namespace = namespace.asInstanceOf[js.Any], parse = js.Any.fromFunction2((t0: Any, t1: String) => (parse(t0, t1)).runNow()))
+    __obj.asInstanceOf[markup]
+  }
+  
+  extension [Self <: markup](x: Self) {
+    
+    inline def setAttribute(value: Any): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+    
+    inline def setDataTag(value: Any): Self = StObject.set(x, "dataTag", value.asInstanceOf[js.Any])
+    
+    inline def setInit(value: (String, String) => baseview): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+    
+    inline def setNamespace(value: Any): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setParse(value: (Any, String) => Callback): Self = StObject.set(x, "parse", js.Any.fromFunction2((t0: Any, t1: String) => (value(t0, t1)).runNow()))
+  }
+}

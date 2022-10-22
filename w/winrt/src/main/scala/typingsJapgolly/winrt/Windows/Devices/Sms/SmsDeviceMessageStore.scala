@@ -4,22 +4,23 @@ import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncAction
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sms.SmsDeviceMessageStore")
-@js.native
-class SmsDeviceMessageStore () extends ISmsDeviceMessageStore {
-  /* CompleteClass */
-  override var maxMessages: Double = js.native
-  /* CompleteClass */
-  override def deleteMessageAsync(messageId: Double): IAsyncAction = js.native
-  /* CompleteClass */
-  override def deleteMessagesAsync(messageFilter: SmsMessageFilter): IAsyncAction = js.native
-  /* CompleteClass */
-  override def getMessageAsync(messageId: Double): IAsyncOperation[ISmsMessage] = js.native
-  /* CompleteClass */
-  override def getMessagesAsync(messageFilter: SmsMessageFilter): IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double] = js.native
+trait SmsDeviceMessageStore
+  extends StObject
+     with ISmsDeviceMessageStore
+object SmsDeviceMessageStore {
+  
+  inline def apply(
+    deleteMessageAsync: Double => IAsyncAction,
+    deleteMessagesAsync: SmsMessageFilter => IAsyncAction,
+    getMessageAsync: Double => IAsyncOperation[ISmsMessage],
+    getMessagesAsync: SmsMessageFilter => IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double],
+    maxMessages: Double
+  ): SmsDeviceMessageStore = {
+    val __obj = js.Dynamic.literal(deleteMessageAsync = js.Any.fromFunction1(deleteMessageAsync), deleteMessagesAsync = js.Any.fromFunction1(deleteMessagesAsync), getMessageAsync = js.Any.fromFunction1(getMessageAsync), getMessagesAsync = js.Any.fromFunction1(getMessagesAsync), maxMessages = maxMessages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmsDeviceMessageStore]
+  }
 }
-

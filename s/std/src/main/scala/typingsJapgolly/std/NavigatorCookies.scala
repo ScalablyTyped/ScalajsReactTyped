@@ -1,19 +1,23 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigatorCookies extends js.Object {
+trait NavigatorCookies extends StObject {
+  
+  /* standard dom */
   val cookieEnabled: scala.Boolean
 }
-
 object NavigatorCookies {
-  @scala.inline
-  def apply(cookieEnabled: scala.Boolean): NavigatorCookies = {
-    val __obj = js.Dynamic.literal(cookieEnabled = cookieEnabled.asInstanceOf[js.Any])
   
+  inline def apply(cookieEnabled: scala.Boolean): NavigatorCookies = {
+    val __obj = js.Dynamic.literal(cookieEnabled = cookieEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigatorCookies]
   }
+  
+  extension [Self <: NavigatorCookies](x: Self) {
+    
+    inline def setCookieEnabled(value: scala.Boolean): Self = StObject.set(x, "cookieEnabled", value.asInstanceOf[js.Any])
+  }
 }
-

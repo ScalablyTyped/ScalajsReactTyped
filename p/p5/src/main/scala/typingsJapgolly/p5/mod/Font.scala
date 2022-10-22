@@ -1,19 +1,20 @@
 package typingsJapgolly.p5.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Font extends js.Object {
+trait Font extends StObject {
+  
   /**
     *   Underlying opentype font implementation
     */
-  var font: js.Any = js.native
+  var font: Any = js.native
+  
   /**
     *   Returns a tight bounding box for the given text
-    *   string using this font (currently only supports
-    *   single lines)
+    *   string using this font
     *   @param line a line of text
     *   @param x x-position
     *   @param y y-position
@@ -28,6 +29,8 @@ trait Font extends js.Object {
   def textBounds(line: String, x: Double, y: Double): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double): js.Object = js.native
   def textBounds(line: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Object = js.native
+  def textBounds(line: String, x: Double, y: Double, fontSize: Unit, options: js.Object): js.Object = js.native
+  
   /**
     *   Computes an array of points following the path for
     *   specified text
@@ -52,7 +55,6 @@ trait Font extends js.Object {
     *   @return an array of points, each with x, y, alpha
     *   (the path angle)
     */
-  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double): js.Array[_] = js.native
-  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Array[_] = js.native
+  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double): js.Array[Any] = js.native
+  def textToPoints(txt: String, x: Double, y: Double, fontSize: Double, options: js.Object): js.Array[Any] = js.native
 }
-

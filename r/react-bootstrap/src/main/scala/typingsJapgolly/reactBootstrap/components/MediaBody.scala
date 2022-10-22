@@ -1,39 +1,18 @@
 package typingsJapgolly.reactBootstrap.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ReactType
-import typingsJapgolly.reactBootstrap.mediaBodyMod.MediaBodyProps
-import typingsJapgolly.reactBootstrap.mediaBodyMod.^
+import typingsJapgolly.reactBootstrap.libMediaBodyMod.MediaBodyProps
+import typingsJapgolly.reactBootstrap.libMediaBodyMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MediaBody {
-  def apply(
-    componentClass: ReactType[_] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MediaBodyProps, ^, Unit, MediaBodyProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrap.mediaBodyMod.MediaBodyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrap.mediaBodyMod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrap.mediaBodyMod.MediaBodyProps])(children: _*)
-  }
   @JSImport("react-bootstrap/lib/MediaBody", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: MediaBody.type): SharedBuilder_MediaBodyProps_1242228535[^] = new SharedBuilder_MediaBodyProps_1242228535[^](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MediaBodyProps): SharedBuilder_MediaBodyProps_1242228535[^] = new SharedBuilder_MediaBodyProps_1242228535[^](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

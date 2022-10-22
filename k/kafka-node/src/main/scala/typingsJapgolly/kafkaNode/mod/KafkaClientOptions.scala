@@ -1,51 +1,84 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KafkaClientOptions extends js.Object {
+trait KafkaClientOptions extends StObject {
+  
   var autoConnect: js.UndefOr[Boolean] = js.undefined
+  
   var clientId: js.UndefOr[String] = js.undefined
+  
   var connectRetryOptions: js.UndefOr[RetryOptions] = js.undefined
+  
   var connectTimeout: js.UndefOr[Double] = js.undefined
+  
   var idleConnection: js.UndefOr[Double] = js.undefined
+  
   var kafkaHost: js.UndefOr[String] = js.undefined
+  
   var maxAsyncRequests: js.UndefOr[Double] = js.undefined
+  
   var reconnectOnIdle: js.UndefOr[Boolean] = js.undefined
+  
   var requestTimeout: js.UndefOr[Double] = js.undefined
-  var sasl: js.UndefOr[js.Any] = js.undefined
-  var sslOptions: js.UndefOr[js.Any] = js.undefined
+  
+  var sasl: js.UndefOr[Any] = js.undefined
+  
+  var sslOptions: js.UndefOr[Any] = js.undefined
 }
-
 object KafkaClientOptions {
-  @scala.inline
-  def apply(
-    autoConnect: js.UndefOr[Boolean] = js.undefined,
-    clientId: String = null,
-    connectRetryOptions: RetryOptions = null,
-    connectTimeout: Int | Double = null,
-    idleConnection: Int | Double = null,
-    kafkaHost: String = null,
-    maxAsyncRequests: Int | Double = null,
-    reconnectOnIdle: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
-    sasl: js.Any = null,
-    sslOptions: js.Any = null
-  ): KafkaClientOptions = {
+  
+  inline def apply(): KafkaClientOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (connectRetryOptions != null) __obj.updateDynamic("connectRetryOptions")(connectRetryOptions.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (idleConnection != null) __obj.updateDynamic("idleConnection")(idleConnection.asInstanceOf[js.Any])
-    if (kafkaHost != null) __obj.updateDynamic("kafkaHost")(kafkaHost.asInstanceOf[js.Any])
-    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(reconnectOnIdle)) __obj.updateDynamic("reconnectOnIdle")(reconnectOnIdle.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (sasl != null) __obj.updateDynamic("sasl")(sasl.asInstanceOf[js.Any])
-    if (sslOptions != null) __obj.updateDynamic("sslOptions")(sslOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[KafkaClientOptions]
   }
+  
+  extension [Self <: KafkaClientOptions](x: Self) {
+    
+    inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
+    
+    inline def setAutoConnectUndefined: Self = StObject.set(x, "autoConnect", js.undefined)
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setConnectRetryOptions(value: RetryOptions): Self = StObject.set(x, "connectRetryOptions", value.asInstanceOf[js.Any])
+    
+    inline def setConnectRetryOptionsUndefined: Self = StObject.set(x, "connectRetryOptions", js.undefined)
+    
+    inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    
+    inline def setIdleConnection(value: Double): Self = StObject.set(x, "idleConnection", value.asInstanceOf[js.Any])
+    
+    inline def setIdleConnectionUndefined: Self = StObject.set(x, "idleConnection", js.undefined)
+    
+    inline def setKafkaHost(value: String): Self = StObject.set(x, "kafkaHost", value.asInstanceOf[js.Any])
+    
+    inline def setKafkaHostUndefined: Self = StObject.set(x, "kafkaHost", js.undefined)
+    
+    inline def setMaxAsyncRequests(value: Double): Self = StObject.set(x, "maxAsyncRequests", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAsyncRequestsUndefined: Self = StObject.set(x, "maxAsyncRequests", js.undefined)
+    
+    inline def setReconnectOnIdle(value: Boolean): Self = StObject.set(x, "reconnectOnIdle", value.asInstanceOf[js.Any])
+    
+    inline def setReconnectOnIdleUndefined: Self = StObject.set(x, "reconnectOnIdle", js.undefined)
+    
+    inline def setRequestTimeout(value: Double): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+    
+    inline def setSasl(value: Any): Self = StObject.set(x, "sasl", value.asInstanceOf[js.Any])
+    
+    inline def setSaslUndefined: Self = StObject.set(x, "sasl", js.undefined)
+    
+    inline def setSslOptions(value: Any): Self = StObject.set(x, "sslOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSslOptionsUndefined: Self = StObject.set(x, "sslOptions", js.undefined)
+  }
 }
-

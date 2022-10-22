@@ -1,56 +1,61 @@
 package typingsJapgolly.searchParams
 
-import typingsJapgolly.searchParams.encodeMod.arrayFormat
-import typingsJapgolly.searchParams.encodeMod.booleanFormat
-import typingsJapgolly.searchParams.encodeMod.nullFormat
+import typingsJapgolly.searchParams.distEncodeMod.arrayFormat
+import typingsJapgolly.searchParams.distEncodeMod.booleanFormat
+import typingsJapgolly.searchParams.distEncodeMod.nullFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchParamsStrings {
-  @js.native
-  sealed trait brackets extends arrayFormat
   
   @js.native
-  sealed trait default extends nullFormat
+  sealed trait default
+    extends StObject
+       with nullFormat
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `empty-true` extends booleanFormat
+  sealed trait brackets
+    extends StObject
+       with arrayFormat
+  inline def brackets: brackets = "brackets".asInstanceOf[brackets]
   
   @js.native
-  sealed trait hidden extends nullFormat
+  sealed trait `empty-true`
+    extends StObject
+       with booleanFormat
+  inline def `empty-true`: `empty-true` = "empty-true".asInstanceOf[`empty-true`]
   
   @js.native
-  sealed trait index extends arrayFormat
+  sealed trait hidden
+    extends StObject
+       with nullFormat
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
+  
+  @js.native
+  sealed trait index
+    extends StObject
+       with arrayFormat
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
   sealed trait none
-    extends arrayFormat
+    extends StObject
+       with arrayFormat
        with booleanFormat
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait string
-    extends booleanFormat
+    extends StObject
+       with booleanFormat
        with nullFormat
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait unicode extends booleanFormat
-  
-  @scala.inline
-  def brackets: brackets = "brackets".asInstanceOf[brackets]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def `empty-true`: `empty-true` = "empty-true".asInstanceOf[`empty-true`]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def unicode: unicode = "unicode".asInstanceOf[unicode]
+  sealed trait unicode
+    extends StObject
+       with booleanFormat
+  inline def unicode: unicode = "unicode".asInstanceOf[unicode]
 }
-

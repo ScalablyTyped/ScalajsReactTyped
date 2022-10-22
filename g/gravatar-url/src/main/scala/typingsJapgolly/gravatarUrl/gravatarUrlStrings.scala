@@ -1,64 +1,52 @@
 package typingsJapgolly.gravatarUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gravatarUrlStrings {
-  @js.native
-  sealed trait `404` extends js.Object
   
   @js.native
-  sealed trait blank extends js.Object
+  sealed trait `404` extends StObject
+  inline def `404`: `404` = "404".asInstanceOf[`404`]
   
   @js.native
-  sealed trait g extends js.Object
+  sealed trait blank extends StObject
+  inline def blank: blank = "blank".asInstanceOf[blank]
   
   @js.native
-  sealed trait identicon extends js.Object
+  sealed trait g extends StObject
+  inline def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait mm extends js.Object
+  sealed trait identicon extends StObject
+  inline def identicon: identicon = "identicon".asInstanceOf[identicon]
   
   @js.native
-  sealed trait monsterid extends js.Object
+  sealed trait mm extends StObject
+  inline def mm: mm = "mm".asInstanceOf[mm]
   
   @js.native
-  sealed trait pg extends js.Object
+  sealed trait monsterid extends StObject
+  inline def monsterid: monsterid = "monsterid".asInstanceOf[monsterid]
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait pg extends StObject
+  inline def pg: pg = "pg".asInstanceOf[pg]
   
   @js.native
-  sealed trait retro extends js.Object
+  sealed trait r extends StObject
+  inline def r: r = "r".asInstanceOf[r]
   
   @js.native
-  sealed trait wavatar extends js.Object
+  sealed trait retro extends StObject
+  inline def retro: retro = "retro".asInstanceOf[retro]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait wavatar extends StObject
+  inline def wavatar: wavatar = "wavatar".asInstanceOf[wavatar]
   
-  @scala.inline
-  def `404`: `404` = "404".asInstanceOf[`404`]
-  @scala.inline
-  def blank: blank = "blank".asInstanceOf[blank]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def identicon: identicon = "identicon".asInstanceOf[identicon]
-  @scala.inline
-  def mm: mm = "mm".asInstanceOf[mm]
-  @scala.inline
-  def monsterid: monsterid = "monsterid".asInstanceOf[monsterid]
-  @scala.inline
-  def pg: pg = "pg".asInstanceOf[pg]
-  @scala.inline
-  def r: r = "r".asInstanceOf[r]
-  @scala.inline
-  def retro: retro = "retro".asInstanceOf[retro]
-  @scala.inline
-  def wavatar: wavatar = "wavatar".asInstanceOf[wavatar]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  @js.native
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
 }
-

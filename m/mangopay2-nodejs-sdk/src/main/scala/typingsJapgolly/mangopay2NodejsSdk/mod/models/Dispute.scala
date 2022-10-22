@@ -1,86 +1,100 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.PartialDisputeData
-import typingsJapgolly.mangopay2NodejsSdk.mod.MoneyData
-import typingsJapgolly.mangopay2NodejsSdk.mod.Timestamp
-import typingsJapgolly.mangopay2NodejsSdk.mod.dispute.DisputeData
-import typingsJapgolly.mangopay2NodejsSdk.mod.dispute.DisputeStatus
-import typingsJapgolly.mangopay2NodejsSdk.mod.transaction.TransactionType
+import typingsJapgolly.mangopay2NodejsSdk.anon.PartialDisputeData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeStatus
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsMoneyMod.money.MoneyData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsTransactionMod.transaction.TransactionType
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.Timestamp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.Dispute")
 @js.native
-class Dispute protected ()
+open class Dispute protected ()
   extends EntityBase[DisputeData]
      with DisputeData {
   def this(data: PartialDisputeData) = this()
+  
   /**
     * The deadline by which you must contest the dispute (if you wish to contest it)
     */
   /* CompleteClass */
-  override var ContestDeadlineDate: Timestamp = js.native
+  var ContestDeadlineDate: Timestamp = js.native
+  
   /**
     * The amount you wish to contest
     */
   /* CompleteClass */
-  override var ContestedFunds: MoneyData = js.native
+  var ContestedFunds: MoneyData = js.native
+  
   /* CompleteClass */
-  override var CreationDate: Double = js.native
+  var CreationDate: Double = js.native
+  
   /**
     * Info about the reason for the dispute
     */
   /* CompleteClass */
-  override var DisputeReason: typingsJapgolly.mangopay2NodejsSdk.mod.dispute.DisputeReason = js.native
+  var DisputeReason: typingsJapgolly.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeReason = js.native
+  
   /**
     * The type of dispute
     */
   /* CompleteClass */
-  override var DisputeType: typingsJapgolly.mangopay2NodejsSdk.mod.dispute.DisputeType = js.native
+  var DisputeType: typingsJapgolly.mangopay2NodejsSdk.typingsModelsDisputeMod.dispute.DisputeType = js.native
+  
   /**
     * The amount of funds that were disputed
     */
   /* CompleteClass */
-  override var DisputedFunds: MoneyData = js.native
+  var DisputedFunds: MoneyData = js.native
+  
   /* CompleteClass */
-  override var Id: String = js.native
+  var Id: String = js.native
+  
   /**
     * The initial transaction ID
     */
   /* CompleteClass */
-  override var InitialTransactionId: String = js.native
+  var InitialTransactionId: String = js.native
+  
   /**
     * The initial transaction type
     */
   /* CompleteClass */
-  override var InitialTransactionType: TransactionType = js.native
+  var InitialTransactionType: TransactionType = js.native
+  
   /**
     * The ID of the associated repudiation transaction
     */
   /* CompleteClass */
-  override var RepudiationId: String = js.native
+  var RepudiationId: String = js.native
+  
   /**
     * The result code
     */
   /* CompleteClass */
-  override var ResultCode: String = js.native
+  var ResultCode: String = js.native
+  
   /**
     * A verbal explanation of the ResultCode
     */
   /* CompleteClass */
-  override var ResultMessage: String = js.native
+  var ResultMessage: String = js.native
+  
   /**
     * The status of the dispute
     */
   /* CompleteClass */
-  override var Status: DisputeStatus = js.native
+  var Status: DisputeStatus = js.native
+  
   /**
     * Used to communicate information about the dispute status to you
     */
   /* CompleteClass */
-  override var StatusMessage: String = js.native
+  var StatusMessage: String = js.native
+  
   /* CompleteClass */
-  override var Tag: String = js.native
+  var Tag: String = js.native
 }
-

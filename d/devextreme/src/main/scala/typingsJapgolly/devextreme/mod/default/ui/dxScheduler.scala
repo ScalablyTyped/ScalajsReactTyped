@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxSchedulerOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxScheduler")
+@JSImport("devextreme", "default.ui.dxScheduler")
 @js.native
-class dxScheduler protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxScheduler {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxSchedulerOptions) = this()
-  def this(element: Element, options: dxSchedulerOptions) = this()
-}
-
+open class dxScheduler ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxScheduler

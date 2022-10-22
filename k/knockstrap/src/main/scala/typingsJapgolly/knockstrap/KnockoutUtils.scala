@@ -1,22 +1,26 @@
 package typingsJapgolly.knockstrap
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutUtils extends js.Object {
+trait KnockoutUtils extends StObject {
+  
   def uniqueId(prefix: String): String
-  def unwrapProperties(wrappedProperies: js.Any): js.Any
+  
+  def unwrapProperties(wrappedProperies: Any): Any
 }
-
 object KnockoutUtils {
-  @scala.inline
-  def apply(uniqueId: String => CallbackTo[String], unwrapProperties: js.Any => CallbackTo[js.Any]): KnockoutUtils = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("uniqueId")(js.Any.fromFunction1((t0: java.lang.String) => uniqueId(t0).runNow()))
-    __obj.updateDynamic("unwrapProperties")(js.Any.fromFunction1((t0: js.Any) => unwrapProperties(t0).runNow()))
+  
+  inline def apply(uniqueId: String => String, unwrapProperties: Any => Any): KnockoutUtils = {
+    val __obj = js.Dynamic.literal(uniqueId = js.Any.fromFunction1(uniqueId), unwrapProperties = js.Any.fromFunction1(unwrapProperties))
     __obj.asInstanceOf[KnockoutUtils]
   }
+  
+  extension [Self <: KnockoutUtils](x: Self) {
+    
+    inline def setUniqueId(value: String => String): Self = StObject.set(x, "uniqueId", js.Any.fromFunction1(value))
+    
+    inline def setUnwrapProperties(value: Any => Any): Self = StObject.set(x, "unwrapProperties", js.Any.fromFunction1(value))
+  }
 }
-

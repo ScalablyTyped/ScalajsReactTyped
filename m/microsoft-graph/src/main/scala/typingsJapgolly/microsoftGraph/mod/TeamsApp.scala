@@ -1,36 +1,58 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TeamsApp extends Entity {
+trait TeamsApp
+  extends StObject
+     with Entity {
+  
   // The details for each version of the app.
-  var appDefinitions: js.UndefOr[js.Array[TeamsAppDefinition]] = js.undefined
+  var appDefinitions: js.UndefOr[NullableOption[js.Array[TeamsAppDefinition]]] = js.undefined
+  
   // The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
-  var displayName: js.UndefOr[String] = js.undefined
-  // The method of distribution for the app.
-  var distributionMethod: js.UndefOr[TeamsAppDistributionMethod] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The method of distribution for the app. Read-only.
+  var distributionMethod: js.UndefOr[NullableOption[TeamsAppDistributionMethod]] = js.undefined
+  
   // The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  var externalId: js.UndefOr[String] = js.undefined
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object TeamsApp {
-  @scala.inline
-  def apply(
-    appDefinitions: js.Array[TeamsAppDefinition] = null,
-    displayName: String = null,
-    distributionMethod: TeamsAppDistributionMethod = null,
-    externalId: String = null,
-    id: String = null
-  ): TeamsApp = {
+  
+  inline def apply(): TeamsApp = {
     val __obj = js.Dynamic.literal()
-    if (appDefinitions != null) __obj.updateDynamic("appDefinitions")(appDefinitions.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (distributionMethod != null) __obj.updateDynamic("distributionMethod")(distributionMethod.asInstanceOf[js.Any])
-    if (externalId != null) __obj.updateDynamic("externalId")(externalId.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsApp]
   }
+  
+  extension [Self <: TeamsApp](x: Self) {
+    
+    inline def setAppDefinitions(value: NullableOption[js.Array[TeamsAppDefinition]]): Self = StObject.set(x, "appDefinitions", value.asInstanceOf[js.Any])
+    
+    inline def setAppDefinitionsNull: Self = StObject.set(x, "appDefinitions", null)
+    
+    inline def setAppDefinitionsUndefined: Self = StObject.set(x, "appDefinitions", js.undefined)
+    
+    inline def setAppDefinitionsVarargs(value: TeamsAppDefinition*): Self = StObject.set(x, "appDefinitions", js.Array(value*))
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setDistributionMethod(value: NullableOption[TeamsAppDistributionMethod]): Self = StObject.set(x, "distributionMethod", value.asInstanceOf[js.Any])
+    
+    inline def setDistributionMethodNull: Self = StObject.set(x, "distributionMethod", null)
+    
+    inline def setDistributionMethodUndefined: Self = StObject.set(x, "distributionMethod", js.undefined)
+    
+    inline def setExternalId(value: NullableOption[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    
+    inline def setExternalIdNull: Self = StObject.set(x, "externalId", null)
+    
+    inline def setExternalIdUndefined: Self = StObject.set(x, "externalId", js.undefined)
+  }
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownCancelClickedEventUIParam extends js.Object {
+trait DropDownCancelClickedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key for which Cancel button is clicked.
-  	 */
+    * Gets the column key for which Cancel button is clicked.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the igGridSummaries widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igGridSummaries widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object DropDownCancelClickedEventUIParam {
-  @scala.inline
-  def apply(columnKey: String = null, owner: js.Any = null): DropDownCancelClickedEventUIParam = {
+  
+  inline def apply(): DropDownCancelClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownCancelClickedEventUIParam]
   }
+  
+  extension [Self <: DropDownCancelClickedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

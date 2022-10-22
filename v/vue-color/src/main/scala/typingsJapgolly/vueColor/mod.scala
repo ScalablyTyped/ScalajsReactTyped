@@ -1,34 +1,52 @@
 package typingsJapgolly.vueColor
 
-import typingsJapgolly.vue.vueMod.Vue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-color", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class Chrome () extends Vue
+object mod {
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Chrome")
   @js.native
-  class Compact () extends Vue
+  open class Chrome () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Compact")
   @js.native
-  class Material () extends Vue
+  open class Compact () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Material")
   @js.native
-  class Photoshop () extends Vue
+  open class Material () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Photoshop")
   @js.native
-  class Sketch () extends Vue
+  open class Photoshop () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Sketch")
   @js.native
-  class Slider () extends Vue
+  open class Sketch () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Slider")
   @js.native
-  class Swatches () extends Vue
+  open class Slider () extends StObject
   
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Swatches")
+  @js.native
+  open class Swatches () extends StObject
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue * / any */ @JSImport("vue-color", "Twitter")
+  @js.native
+  open class Twitter () extends StObject
+  
+  @JSImport("vue-color", "version")
+  @js.native
   val version: String = js.native
 }
-

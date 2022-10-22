@@ -1,0 +1,35 @@
+package typingsJapgolly.pulumiKubernetes.typesOutputMod.apps.v1
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * Spec to control the desired behavior of daemon set rolling update.
+  */
+trait RollingUpdateDaemonSetPatch extends StObject {
+  
+  /**
+    * The maximum number of nodes with an existing available DaemonSet pod that can have an updated DaemonSet pod during during an update. Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up to a minimum of 1. Default value is 0. Example: when this is set to 30%, at most 30% of the total number of nodes that should be running the daemon pod (i.e. status.desiredNumberScheduled) can have their a new pod created before the old pod is marked as deleted. The update starts by launching new pods on 30% of nodes. Once an updated pod is available (Ready for at least minReadySeconds) the old DaemonSet pod on that node is marked deleted. If the old pod becomes unavailable for any reason (Ready transitions to false, is evicted, or is drained) an updated pod is immediatedly created on that node without considering surge limits. Allowing surge implies the possibility that the resources consumed by the daemonset on any given node can double if the readiness check fails, and so resource intensive daemonsets should take into account that they may cause evictions during disruption.
+    */
+  var maxSurge: Double | String
+  
+  /**
+    * The maximum number of DaemonSet pods that can be unavailable during the update. Value can be an absolute number (ex: 5) or a percentage of total number of DaemonSet pods at the start of the update (ex: 10%). Absolute number is calculated from percentage by rounding up. This cannot be 0 if MaxSurge is 0 Default value is 1. Example: when this is set to 30%, at most 30% of the total number of nodes that should be running the daemon pod (i.e. status.desiredNumberScheduled) can have their pods stopped for an update at any given time. The update starts by stopping at most 30% of those DaemonSet pods and then brings up new DaemonSet pods in their place. Once the new pods are available, it then proceeds onto other DaemonSet pods, thus ensuring that at least 70% of original number of DaemonSet pods are available at all times during the update.
+    */
+  var maxUnavailable: Double | String
+}
+object RollingUpdateDaemonSetPatch {
+  
+  inline def apply(maxSurge: Double | String, maxUnavailable: Double | String): RollingUpdateDaemonSetPatch = {
+    val __obj = js.Dynamic.literal(maxSurge = maxSurge.asInstanceOf[js.Any], maxUnavailable = maxUnavailable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RollingUpdateDaemonSetPatch]
+  }
+  
+  extension [Self <: RollingUpdateDaemonSetPatch](x: Self) {
+    
+    inline def setMaxSurge(value: Double | String): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUnavailable(value: Double | String): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+  }
+}

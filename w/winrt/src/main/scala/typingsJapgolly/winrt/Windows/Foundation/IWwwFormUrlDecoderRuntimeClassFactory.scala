@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWwwFormUrlDecoderRuntimeClassFactory extends js.Object {
+trait IWwwFormUrlDecoderRuntimeClassFactory extends StObject {
+  
   def createWwwFormUrlDecoder(query: String): WwwFormUrlDecoder
 }
-
 object IWwwFormUrlDecoderRuntimeClassFactory {
-  @scala.inline
-  def apply(createWwwFormUrlDecoder: String => CallbackTo[WwwFormUrlDecoder]): IWwwFormUrlDecoderRuntimeClassFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createWwwFormUrlDecoder")(js.Any.fromFunction1((t0: java.lang.String) => createWwwFormUrlDecoder(t0).runNow()))
+  
+  inline def apply(createWwwFormUrlDecoder: String => WwwFormUrlDecoder): IWwwFormUrlDecoderRuntimeClassFactory = {
+    val __obj = js.Dynamic.literal(createWwwFormUrlDecoder = js.Any.fromFunction1(createWwwFormUrlDecoder))
     __obj.asInstanceOf[IWwwFormUrlDecoderRuntimeClassFactory]
   }
+  
+  extension [Self <: IWwwFormUrlDecoderRuntimeClassFactory](x: Self) {
+    
+    inline def setCreateWwwFormUrlDecoder(value: String => WwwFormUrlDecoder): Self = StObject.set(x, "createWwwFormUrlDecoder", js.Any.fromFunction1(value))
+  }
 }
-

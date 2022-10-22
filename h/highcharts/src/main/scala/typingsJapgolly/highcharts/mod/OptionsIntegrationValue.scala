@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.euler
   - typingsJapgolly.highcharts.highchartsStrings.verlet
 */
-trait OptionsIntegrationValue extends js.Object
-
+trait OptionsIntegrationValue extends StObject
 object OptionsIntegrationValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def euler: typingsJapgolly.highcharts.highchartsStrings.euler = this.cast("euler")
-  @scala.inline
-  def verlet: typingsJapgolly.highcharts.highchartsStrings.verlet = this.cast("verlet")
+  
+  inline def euler: typingsJapgolly.highcharts.highchartsStrings.euler = "euler".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.euler]
+  
+  inline def verlet: typingsJapgolly.highcharts.highchartsStrings.verlet = "verlet".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.verlet]
 }
-

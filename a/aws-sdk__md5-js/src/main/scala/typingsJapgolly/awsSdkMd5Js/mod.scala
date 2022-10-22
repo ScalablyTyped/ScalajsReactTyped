@@ -1,22 +1,28 @@
 package typingsJapgolly.awsSdkMd5Js
 
-import typingsJapgolly.awsSdkTypes.cryptoMod.Hash
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.Hash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/md5-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class Md5 () extends Hash {
-    var buffer: js.Any = js.native
-    var bufferLength: js.Any = js.native
-    var bytesHashed: js.Any = js.native
-    var finished: js.Any = js.native
-    var hashBuffer: js.Any = js.native
-    var state: js.Any = js.native
-  }
+object mod {
   
+  @JSImport("@aws-sdk/md5-js", "Md5")
+  @js.native
+  open class Md5 ()
+    extends StObject
+       with Hash {
+    
+    /* private */ var buffer: Any = js.native
+    
+    /* private */ var bufferLength: Any = js.native
+    
+    /* private */ var bytesHashed: Any = js.native
+    
+    /* private */ var finished: Any = js.native
+    
+    /* private */ var hashBuffer: Any = js.native
+    
+    /* private */ var state: Any = js.native
+  }
 }
-

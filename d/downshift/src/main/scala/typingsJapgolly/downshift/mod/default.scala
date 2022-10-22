@@ -1,22 +1,24 @@
 package typingsJapgolly.downshift.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.downshift.anon.BlurButton
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("downshift", JSImport.Default)
 @js.native
-class default protected ()
-  extends Component[DownshiftProps[js.Any], ComponentState, js.Any] {
-  def this(props: DownshiftProps[_]) = this()
-  def this(props: DownshiftProps[_], context: js.Any) = this()
+open class default[Item] ()
+  extends Component[DownshiftProps[Item], js.Object, Any]
+/* static members */
+object default {
+  
+  @JSImport("downshift", JSImport.Default)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("downshift", "default.stateChangeTypes")
+  @js.native
+  def stateChangeTypes: BlurButton = js.native
+  inline def stateChangeTypes_=(x: BlurButton): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stateChangeTypes")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("downshift", JSImport.Default)
-@js.native
-object default
-  extends TopLevel[DownshiftInterface[js.Any]]
-

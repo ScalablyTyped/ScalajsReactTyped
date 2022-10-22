@@ -1,113 +1,186 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonIndent
-import typingsJapgolly.devextreme.devextremeStrings.Bright
-import typingsJapgolly.devextreme.devextremeStrings.Carmine
-import typingsJapgolly.devextreme.devextremeStrings.Default
-import typingsJapgolly.devextreme.devextremeStrings.Material
-import typingsJapgolly.devextreme.devextremeStrings.Ocean
-import typingsJapgolly.devextreme.devextremeStrings.Office
-import typingsJapgolly.devextreme.devextremeStrings.Pastel
-import typingsJapgolly.devextreme.devextremeStrings.Soft
-import typingsJapgolly.devextreme.devextremeStrings.Vintage
-import typingsJapgolly.devextreme.devextremeStrings.Violet
-import typingsJapgolly.devextreme.devextremeStrings.`Dark Moon`
-import typingsJapgolly.devextreme.devextremeStrings.`Dark Violet`
-import typingsJapgolly.devextreme.devextremeStrings.`Green Mist`
-import typingsJapgolly.devextreme.devextremeStrings.`Harmony Light`
-import typingsJapgolly.devextreme.devextremeStrings.`Soft Blue`
-import typingsJapgolly.devextreme.devextremeStrings.`Soft Pastel`
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.top
+import typingsJapgolly.devextreme.anon.CustomizeText
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalEdge
+import typingsJapgolly.devextreme.mod.DevExpress.common.VerticalEdge
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.Palette
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonIndicator extends js.Object {
-  /** Specifies the length of an arrow for the indicator of the textCloud type in pixels. */
+trait CommonIndicator extends StObject {
+  
+  /**
+    * Specifies the length of an arrow for the indicator of the textCloud type in pixels.
+    */
   var arrowLength: js.UndefOr[Double] = js.undefined
-  /** Specifies the background color for the indicator of the rangeBar type. */
+  
+  /**
+    * Specifies the background color for the indicator of the rangeBar type.
+    */
   var backgroundColor: js.UndefOr[String] = js.undefined
-  /** Specifies the base value for the indicator of the rangeBar type. */
+  
+  /**
+    * Specifies the base value for the indicator of the rangeBar type.
+    */
   var baseValue: js.UndefOr[Double] = js.undefined
-  /** Specifies a radius small enough for the indicator to begin adapting. */
+  
+  /**
+    * Specifies a radius small enough for the indicator to begin adapting.
+    */
   var beginAdaptingAtRadius: js.UndefOr[Double] = js.undefined
-  /** Specifies a color of the indicator. */
+  
+  /**
+    * Specifies a color of the indicator.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation option is "vertical". */
-  var horizontalOrientation: js.UndefOr[left | right] = js.undefined
-  /** Specifies the distance between the needle and the center of a gauge for the indicator of a needle-like type. */
+  
+  /**
+    * Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation property is &apos;vertical&apos;.
+    */
+  var horizontalOrientation: js.UndefOr[HorizontalEdge] = js.undefined
+  
+  /**
+    * Specifies the distance between the needle and the center of a gauge for the indicator of a needle-like type.
+    */
   var indentFromCenter: js.UndefOr[Double] = js.undefined
-  /** Specifies the indicator length. */
+  
+  /**
+    * Specifies the indicator length.
+    */
   var length: js.UndefOr[Double] = js.undefined
-  /** Specifies the distance between the indicator and the invisible scale line. */
+  
+  /**
+    * Specifies the distance between the indicator and the invisible scale line.
+    */
   var offset: js.UndefOr[Double] = js.undefined
-  /** Sets the palette to be used to colorize indicators differently. */
-  var palette: js.UndefOr[
-    js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office
-  ] = js.undefined
-  /** Specifies the second color for the indicator of the twoColorNeedle type. */
+  
+  /**
+    * Sets the palette to be used to colorize indicators differently.
+    */
+  var palette: js.UndefOr[js.Array[String] | Palette] = js.undefined
+  
+  /**
+    * Specifies the second color for the indicator of the twoColorNeedle type.
+    */
   var secondColor: js.UndefOr[String] = js.undefined
-  /** Specifies the length of a twoNeedleColor type indicator tip as a percentage. */
+  
+  /**
+    * Specifies the length of a twoNeedleColor type indicator tip as a percentage.
+    */
   var secondFraction: js.UndefOr[Double] = js.undefined
-  /** Specifies the range bar size for an indicator of the rangeBar type. */
+  
+  /**
+    * Specifies the range bar size for an indicator of the rangeBar type.
+    */
   var size: js.UndefOr[Double] = js.undefined
-  /** Specifies the inner diameter in pixels, so that the spindle has the shape of a ring. */
+  
+  /**
+    * Specifies the inner diameter in pixels, so that the spindle has the shape of a ring.
+    */
   var spindleGapSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the spindle's diameter in pixels for the indicator of a needle-like type. */
+  
+  /**
+    * Specifies the spindle&apos;s diameter in pixels for the indicator of a needle-like type.
+    */
   var spindleSize: js.UndefOr[Double] = js.undefined
-  /** Specifies the appearance of the text displayed in an indicator of the rangeBar type. */
-  var text: js.UndefOr[AnonIndent] = js.undefined
-  /** Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation option is "horizontal". */
-  var verticalOrientation: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies the width of an indicator in pixels. */
+  
+  /**
+    * Specifies the appearance of the text displayed in an indicator of the rangeBar type.
+    */
+  var text: js.UndefOr[CustomizeText] = js.undefined
+  
+  /**
+    * Specifies the orientation of the rangeBar indicator. Applies only if the geometry.orientation property is &apos;horizontal&apos;.
+    */
+  var verticalOrientation: js.UndefOr[VerticalEdge] = js.undefined
+  
+  /**
+    * Specifies the width of an indicator in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object CommonIndicator {
-  @scala.inline
-  def apply(
-    arrowLength: Int | Double = null,
-    backgroundColor: String = null,
-    baseValue: Int | Double = null,
-    beginAdaptingAtRadius: Int | Double = null,
-    color: String = null,
-    horizontalOrientation: left | right = null,
-    indentFromCenter: Int | Double = null,
-    length: Int | Double = null,
-    offset: Int | Double = null,
-    palette: js.Array[String] | Bright | Default | (`Harmony Light`) | Ocean | Pastel | Soft | (`Soft Pastel`) | Vintage | Violet | Carmine | (`Dark Moon`) | (`Dark Violet`) | (`Green Mist`) | (`Soft Blue`) | Material | Office = null,
-    secondColor: String = null,
-    secondFraction: Int | Double = null,
-    size: Int | Double = null,
-    spindleGapSize: Int | Double = null,
-    spindleSize: Int | Double = null,
-    text: AnonIndent = null,
-    verticalOrientation: bottom | top = null,
-    width: Int | Double = null
-  ): CommonIndicator = {
+  
+  inline def apply(): CommonIndicator = {
     val __obj = js.Dynamic.literal()
-    if (arrowLength != null) __obj.updateDynamic("arrowLength")(arrowLength.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (baseValue != null) __obj.updateDynamic("baseValue")(baseValue.asInstanceOf[js.Any])
-    if (beginAdaptingAtRadius != null) __obj.updateDynamic("beginAdaptingAtRadius")(beginAdaptingAtRadius.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (horizontalOrientation != null) __obj.updateDynamic("horizontalOrientation")(horizontalOrientation.asInstanceOf[js.Any])
-    if (indentFromCenter != null) __obj.updateDynamic("indentFromCenter")(indentFromCenter.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (palette != null) __obj.updateDynamic("palette")(palette.asInstanceOf[js.Any])
-    if (secondColor != null) __obj.updateDynamic("secondColor")(secondColor.asInstanceOf[js.Any])
-    if (secondFraction != null) __obj.updateDynamic("secondFraction")(secondFraction.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (spindleGapSize != null) __obj.updateDynamic("spindleGapSize")(spindleGapSize.asInstanceOf[js.Any])
-    if (spindleSize != null) __obj.updateDynamic("spindleSize")(spindleSize.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalOrientation != null) __obj.updateDynamic("verticalOrientation")(verticalOrientation.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonIndicator]
   }
+  
+  extension [Self <: CommonIndicator](x: Self) {
+    
+    inline def setArrowLength(value: Double): Self = StObject.set(x, "arrowLength", value.asInstanceOf[js.Any])
+    
+    inline def setArrowLengthUndefined: Self = StObject.set(x, "arrowLength", js.undefined)
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBaseValue(value: Double): Self = StObject.set(x, "baseValue", value.asInstanceOf[js.Any])
+    
+    inline def setBaseValueUndefined: Self = StObject.set(x, "baseValue", js.undefined)
+    
+    inline def setBeginAdaptingAtRadius(value: Double): Self = StObject.set(x, "beginAdaptingAtRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBeginAdaptingAtRadiusUndefined: Self = StObject.set(x, "beginAdaptingAtRadius", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setHorizontalOrientation(value: HorizontalEdge): Self = StObject.set(x, "horizontalOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalOrientationUndefined: Self = StObject.set(x, "horizontalOrientation", js.undefined)
+    
+    inline def setIndentFromCenter(value: Double): Self = StObject.set(x, "indentFromCenter", value.asInstanceOf[js.Any])
+    
+    inline def setIndentFromCenterUndefined: Self = StObject.set(x, "indentFromCenter", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPalette(value: js.Array[String] | Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    
+    inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+    
+    inline def setPaletteVarargs(value: String*): Self = StObject.set(x, "palette", js.Array(value*))
+    
+    inline def setSecondColor(value: String): Self = StObject.set(x, "secondColor", value.asInstanceOf[js.Any])
+    
+    inline def setSecondColorUndefined: Self = StObject.set(x, "secondColor", js.undefined)
+    
+    inline def setSecondFraction(value: Double): Self = StObject.set(x, "secondFraction", value.asInstanceOf[js.Any])
+    
+    inline def setSecondFractionUndefined: Self = StObject.set(x, "secondFraction", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSpindleGapSize(value: Double): Self = StObject.set(x, "spindleGapSize", value.asInstanceOf[js.Any])
+    
+    inline def setSpindleGapSizeUndefined: Self = StObject.set(x, "spindleGapSize", js.undefined)
+    
+    inline def setSpindleSize(value: Double): Self = StObject.set(x, "spindleSize", value.asInstanceOf[js.Any])
+    
+    inline def setSpindleSizeUndefined: Self = StObject.set(x, "spindleSize", js.undefined)
+    
+    inline def setText(value: CustomizeText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerticalOrientation(value: VerticalEdge): Self = StObject.set(x, "verticalOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalOrientationUndefined: Self = StObject.set(x, "verticalOrientation", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

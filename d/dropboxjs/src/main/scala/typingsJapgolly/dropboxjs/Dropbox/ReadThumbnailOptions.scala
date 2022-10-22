@@ -1,33 +1,38 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadThumbnailOptions extends ThumbnailUrlOptions {
+trait ReadThumbnailOptions
+  extends StObject
+     with ThumbnailUrlOptions {
+  
   var arrayBuffer: js.UndefOr[Boolean] = js.undefined
+  
   var blob: js.UndefOr[Boolean] = js.undefined
+  
   var buffer: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReadThumbnailOptions {
-  @scala.inline
-  def apply(
-    arrayBuffer: js.UndefOr[Boolean] = js.undefined,
-    blob: js.UndefOr[Boolean] = js.undefined,
-    buffer: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    png: js.UndefOr[Boolean] = js.undefined,
-    size: String = null
-  ): ReadThumbnailOptions = {
+  
+  inline def apply(): ReadThumbnailOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrayBuffer)) __obj.updateDynamic("arrayBuffer")(arrayBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(blob)) __obj.updateDynamic("blob")(blob.asInstanceOf[js.Any])
-    if (!js.isUndefined(buffer)) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadThumbnailOptions]
   }
+  
+  extension [Self <: ReadThumbnailOptions](x: Self) {
+    
+    inline def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
+    
+    inline def setBlob(value: Boolean): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    
+    inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+  }
 }
-

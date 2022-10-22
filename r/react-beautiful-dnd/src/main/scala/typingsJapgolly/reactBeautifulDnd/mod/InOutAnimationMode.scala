@@ -1,24 +1,20 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.none
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.open
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.close
 */
-trait InOutAnimationMode extends js.Object
-
+trait InOutAnimationMode extends StObject
 object InOutAnimationMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def close: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.close = this.cast("close")
-  @scala.inline
-  def none: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.none = this.cast("none")
-  @scala.inline
-  def open: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.open = this.cast("open")
+  
+  inline def close: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.close = "close".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.close]
+  
+  inline def none: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.none = "none".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.none]
+  
+  inline def open: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.open = "open".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.open]
 }
-

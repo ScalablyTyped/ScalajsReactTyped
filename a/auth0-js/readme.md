@@ -1,7 +1,7 @@
 
 # Scala.js typings for auth0-js
 
-Typings are for version 9.12
+Typings are for version 9.14
 
 ## Library description:
 Auth0 headless browser sdk
@@ -10,10 +10,10 @@ Auth0 headless browser sdk
 | ------------------ | :-------------: |
 | Full name          | auth0-js |
 | Keywords           | auth0, auth, openid, authentication, jwt, browser |
-| # releases         | 45 |
-| # dependents       | 157 |
-| # downloads        | 7045708 |
-| # stars            | 8 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 849364.0 |
+| # stars            | 887.0 |
 
 ## Links
 - [Homepage](https://github.com/auth0/auth0.js#readme)

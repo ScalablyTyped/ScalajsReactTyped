@@ -1,36 +1,134 @@
 package typingsJapgolly.activexExcel.Excel
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.Legend")
-@js.native
-class Legend protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  var AutoScaleFont: js.Any = js.native
-  val Border: typingsJapgolly.activexExcel.Excel.Border = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.Legend_typekey")
-  var ExcelDotLegend_typekey: Legend = js.native
-  val Fill: ChartFillFormat = js.native
-  val Font: typingsJapgolly.activexExcel.Excel.Font = js.native
-  val Format: ChartFormat = js.native
-  var Height: Double = js.native
-  var IncludeInLayout: Boolean = js.native
-  val Interior: typingsJapgolly.activexExcel.Excel.Interior = js.native
-  var Left: Double = js.native
+trait Legend extends StObject {
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application
+  
+  var AutoScaleFont: Any
+  
+  val Border: typingsJapgolly.activexExcel.Excel.Border
+  
+  def Clear(): Any
+  
+  val Creator: XlCreator
+  
+  def Delete(): Any
+  
+  /* private */ @JSName("Excel.Legend_typekey")
+  var ExcelDotLegend_typekey: Legend
+  
+  val Fill: ChartFillFormat
+  
+  val Font: typingsJapgolly.activexExcel.Excel.Font
+  
+  val Format: ChartFormat
+  
+  var Height: Double
+  
+  var IncludeInLayout: Boolean
+  
+  val Interior: typingsJapgolly.activexExcel.Excel.Interior
+  
+  var Left: Double
+  
+  def LegendEntries(Index: Double): LegendEntry
   @JSName("LegendEntries")
-  var LegendEntries_Original: LegendEntries with (js.Function1[/* Index */ Double, LegendEntry]) = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  var Position: XlLegendPosition = js.native
-  var Shadow: Boolean = js.native
-  var Top: Double = js.native
-  var Width: Double = js.native
-  def Clear(): js.Any = js.native
-  def Delete(): js.Any = js.native
-  def LegendEntries(Index: Double): LegendEntry = js.native
-  def Select(): js.Any = js.native
+  var LegendEntries_Original: LegendEntries & (js.Function1[/* Index */ Double, LegendEntry])
+  
+  val Name: String
+  
+  val Parent: Any
+  
+  var Position: XlLegendPosition
+  
+  def Select(): Any
+  
+  var Shadow: Boolean
+  
+  var Top: Double
+  
+  var Width: Double
 }
-
+object Legend {
+  
+  inline def apply(
+    Application: Application,
+    AutoScaleFont: Any,
+    Border: Border,
+    Clear: CallbackTo[Any],
+    Creator: XlCreator,
+    Delete: CallbackTo[Any],
+    ExcelDotLegend_typekey: Legend,
+    Fill: ChartFillFormat,
+    Font: Font,
+    Format: ChartFormat,
+    Height: Double,
+    IncludeInLayout: Boolean,
+    Interior: Interior,
+    Left: Double,
+    LegendEntries: LegendEntries & (js.Function1[/* Index */ Double, LegendEntry]),
+    Name: String,
+    Parent: Any,
+    Position: XlLegendPosition,
+    Select: CallbackTo[Any],
+    Shadow: Boolean,
+    Top: Double,
+    Width: Double
+  ): Legend = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoScaleFont = AutoScaleFont.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], Clear = Clear.toJsFn, Creator = Creator.asInstanceOf[js.Any], Delete = Delete.toJsFn, Fill = Fill.asInstanceOf[js.Any], Font = Font.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], IncludeInLayout = IncludeInLayout.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Left = Left.asInstanceOf[js.Any], LegendEntries = LegendEntries.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Position = Position.asInstanceOf[js.Any], Select = Select.toJsFn, Shadow = Shadow.asInstanceOf[js.Any], Top = Top.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.Legend_typekey")(ExcelDotLegend_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Legend]
+  }
+  
+  extension [Self <: Legend](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setAutoScaleFont(value: Any): Self = StObject.set(x, "AutoScaleFont", value.asInstanceOf[js.Any])
+    
+    inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    
+    inline def setClear(value: CallbackTo[Any]): Self = StObject.set(x, "Clear", value.toJsFn)
+    
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setDelete(value: CallbackTo[Any]): Self = StObject.set(x, "Delete", value.toJsFn)
+    
+    inline def setExcelDotLegend_typekey(value: Legend): Self = StObject.set(x, "Excel.Legend_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeInLayout(value: Boolean): Self = StObject.set(x, "IncludeInLayout", value.asInstanceOf[js.Any])
+    
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    
+    inline def setLegendEntries(value: LegendEntries & (js.Function1[/* Index */ Double, LegendEntry])): Self = StObject.set(x, "LegendEntries", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: XlLegendPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    
+    inline def setSelect(value: CallbackTo[Any]): Self = StObject.set(x, "Select", value.toJsFn)
+    
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+  }
+}

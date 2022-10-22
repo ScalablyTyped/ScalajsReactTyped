@@ -1,29 +1,34 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
-import typingsJapgolly.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDrawingManagerOptions extends IDrawingToolOptions {
+trait IDrawingManagerOptions
+  extends StObject
+     with IDrawingToolOptions {
+  
   /** The fill color used for pushpins and polygons. */
   var fillColor: js.UndefOr[String | Color] = js.undefined
+  
   /** The stroke color used for polylines and polygons. */
   var strokeColor: js.UndefOr[String | Color] = js.undefined
 }
-
 object IDrawingManagerOptions {
-  @scala.inline
-  def apply(
-    drawingBarActions: DrawingBarAction = null,
-    fillColor: String | Color = null,
-    strokeColor: String | Color = null
-  ): IDrawingManagerOptions = {
+  
+  inline def apply(): IDrawingManagerOptions = {
     val __obj = js.Dynamic.literal()
-    if (drawingBarActions != null) __obj.updateDynamic("drawingBarActions")(drawingBarActions.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDrawingManagerOptions]
   }
+  
+  extension [Self <: IDrawingManagerOptions](x: Self) {
+    
+    inline def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setStrokeColor(value: String | Color): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+  }
 }
-

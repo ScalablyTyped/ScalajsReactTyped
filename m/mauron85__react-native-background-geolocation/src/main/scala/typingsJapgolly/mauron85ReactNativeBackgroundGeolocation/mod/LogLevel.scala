@@ -1,0 +1,26 @@
+package typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TRACE
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.DEBUG
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.INFO
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WARN
+  - typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ERROR
+*/
+trait LogLevel extends StObject
+object LogLevel {
+  
+  inline def DEBUG: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.DEBUG = "DEBUG".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.DEBUG]
+  
+  inline def ERROR: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ERROR = "ERROR".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.ERROR]
+  
+  inline def INFO: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.INFO = "INFO".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.INFO]
+  
+  inline def TRACE: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TRACE = "TRACE".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.TRACE]
+  
+  inline def WARN: typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WARN = "WARN".asInstanceOf[typingsJapgolly.mauron85ReactNativeBackgroundGeolocation.mauron85ReactNativeBackgroundGeolocationStrings.WARN]
+}

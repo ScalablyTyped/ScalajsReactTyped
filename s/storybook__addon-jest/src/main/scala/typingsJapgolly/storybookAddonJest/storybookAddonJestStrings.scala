@@ -1,34 +1,20 @@
 package typingsJapgolly.storybookAddonJest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookAddonJestStrings {
-  @js.native
-  sealed trait kind extends js.Object
   
   @js.native
-  sealed trait storyName extends js.Object
+  sealed trait kind extends StObject
+  inline def kind: kind = "kind".asInstanceOf[kind]
   
   @js.native
-  sealed trait storybookjsSlashtest extends js.Object
+  sealed trait storyName extends StObject
+  inline def storyName: storyName = "storyName".asInstanceOf[storyName]
   
   @js.native
-  sealed trait test extends js.Object
-  
-  @js.native
-  sealed trait tests extends js.Object
-  
-  @scala.inline
-  def kind: kind = "kind".asInstanceOf[kind]
-  @scala.inline
-  def storyName: storyName = "storyName".asInstanceOf[storyName]
-  @scala.inline
-  def storybookjsSlashtest: storybookjsSlashtest = "storybookjs/test".asInstanceOf[storybookjsSlashtest]
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
-  @scala.inline
-  def tests: tests = "tests".asInstanceOf[tests]
+  sealed trait tests extends StObject
+  inline def tests: tests = "tests".asInstanceOf[tests]
 }
-

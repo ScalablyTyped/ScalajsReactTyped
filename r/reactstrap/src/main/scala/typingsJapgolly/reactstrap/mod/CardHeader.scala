@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.cardHeaderMod.CardHeaderProps
+import typingsJapgolly.reactstrap.typesLibCardHeaderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "CardHeader")
 @js.native
-class CardHeader[T] ()
-  extends Component[CardHeaderProps, js.Object, js.Any]
-
+open class CardHeader () extends default

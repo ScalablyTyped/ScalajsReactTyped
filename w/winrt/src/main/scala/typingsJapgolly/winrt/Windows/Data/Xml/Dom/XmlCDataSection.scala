@@ -1,81 +1,54 @@
 package typingsJapgolly.winrt.Windows.Data.Xml.Dom
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Data.Xml.Dom.XmlCDataSection")
-@js.native
-class XmlCDataSection () extends IXmlText {
-  /* CompleteClass */
-  override var attributes: XmlNamedNodeMap = js.native
-  /* CompleteClass */
-  override var childNodes: XmlNodeList = js.native
-  /* CompleteClass */
-  override var data: String = js.native
-  /* CompleteClass */
-  override var firstChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var innerText: String = js.native
-  /* CompleteClass */
-  override var lastChild: IXmlNode = js.native
-  /* CompleteClass */
-  override var length: Double = js.native
-  /* CompleteClass */
-  override var localName: js.Any = js.native
-  /* CompleteClass */
-  override var namespaceUri: js.Any = js.native
-  /* CompleteClass */
-  override var nextSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override var nodeName: String = js.native
-  /* CompleteClass */
-  override var nodeType: NodeType = js.native
-  /* CompleteClass */
-  override var nodeValue: js.Any = js.native
-  /* CompleteClass */
-  override var ownerDocument: XmlDocument = js.native
-  /* CompleteClass */
-  override var parentNode: IXmlNode = js.native
-  /* CompleteClass */
-  override var prefix: js.Any = js.native
-  /* CompleteClass */
-  override var previousSibling: IXmlNode = js.native
-  /* CompleteClass */
-  override def appendChild(newChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def appendData(data: String): Unit = js.native
-  /* CompleteClass */
-  override def cloneNode(deep: Boolean): IXmlNode = js.native
-  /* CompleteClass */
-  override def deleteData(offset: Double, count: Double): Unit = js.native
-  /* CompleteClass */
-  override def getXml(): String = js.native
-  /* CompleteClass */
-  override def hasChildNodes(): Boolean = js.native
-  /* CompleteClass */
-  override def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def insertData(offset: Double, data: String): Unit = js.native
-  /* CompleteClass */
-  override def normalize(): Unit = js.native
-  /* CompleteClass */
-  override def removeChild(childNode: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
-  /* CompleteClass */
-  override def replaceData(offset: Double, count: Double, data: String): Unit = js.native
-  /* CompleteClass */
-  override def selectNodes(xpath: String): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
-  /* CompleteClass */
-  override def selectSingleNode(xpath: String): IXmlNode = js.native
-  /* CompleteClass */
-  override def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
-  /* CompleteClass */
-  override def splitText(offset: Double): IXmlText = js.native
-  /* CompleteClass */
-  override def substringData(offset: Double, count: Double): String = js.native
+trait XmlCDataSection
+  extends StObject
+     with IXmlCDataSection
+object XmlCDataSection {
+  
+  inline def apply(
+    appendChild: IXmlNode => IXmlNode,
+    appendData: String => Callback,
+    attributes: XmlNamedNodeMap,
+    childNodes: XmlNodeList,
+    cloneNode: Boolean => IXmlNode,
+    data: String,
+    deleteData: (Double, Double) => Callback,
+    firstChild: IXmlNode,
+    getXml: CallbackTo[String],
+    hasChildNodes: CallbackTo[Boolean],
+    innerText: String,
+    insertBefore: (IXmlNode, IXmlNode) => IXmlNode,
+    insertData: (Double, String) => Callback,
+    lastChild: IXmlNode,
+    length: Double,
+    localName: Any,
+    namespaceUri: Any,
+    nextSibling: IXmlNode,
+    nodeName: String,
+    nodeType: NodeType,
+    nodeValue: Any,
+    normalize: Callback,
+    ownerDocument: XmlDocument,
+    parentNode: IXmlNode,
+    prefix: Any,
+    previousSibling: IXmlNode,
+    removeChild: IXmlNode => IXmlNode,
+    replaceChild: (IXmlNode, IXmlNode) => IXmlNode,
+    replaceData: (Double, Double, String) => Callback,
+    selectNodes: String => XmlNodeList,
+    selectNodesNS: (String, Any) => XmlNodeList,
+    selectSingleNode: String => IXmlNode,
+    selectSingleNodeNS: (String, Any) => IXmlNode,
+    splitText: Double => IXmlText,
+    substringData: (Double, Double) => String
+  ): XmlCDataSection = {
+    val __obj = js.Dynamic.literal(appendChild = js.Any.fromFunction1(appendChild), appendData = js.Any.fromFunction1((t0: String) => appendData(t0).runNow()), attributes = attributes.asInstanceOf[js.Any], childNodes = childNodes.asInstanceOf[js.Any], cloneNode = js.Any.fromFunction1(cloneNode), data = data.asInstanceOf[js.Any], deleteData = js.Any.fromFunction2((t0: Double, t1: Double) => (deleteData(t0, t1)).runNow()), firstChild = firstChild.asInstanceOf[js.Any], getXml = getXml.toJsFn, hasChildNodes = hasChildNodes.toJsFn, innerText = innerText.asInstanceOf[js.Any], insertBefore = js.Any.fromFunction2(insertBefore), insertData = js.Any.fromFunction2((t0: Double, t1: String) => (insertData(t0, t1)).runNow()), lastChild = lastChild.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], localName = localName.asInstanceOf[js.Any], namespaceUri = namespaceUri.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], normalize = normalize.toJsFn, ownerDocument = ownerDocument.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any], removeChild = js.Any.fromFunction1(removeChild), replaceChild = js.Any.fromFunction2(replaceChild), replaceData = js.Any.fromFunction3((t0: Double, t1: Double, t2: String) => (replaceData(t0, t1, t2)).runNow()), selectNodes = js.Any.fromFunction1(selectNodes), selectNodesNS = js.Any.fromFunction2(selectNodesNS), selectSingleNode = js.Any.fromFunction1(selectSingleNode), selectSingleNodeNS = js.Any.fromFunction2(selectSingleNodeNS), splitText = js.Any.fromFunction1(splitText), substringData = js.Any.fromFunction2(substringData))
+    __obj.asInstanceOf[XmlCDataSection]
+  }
 }
-

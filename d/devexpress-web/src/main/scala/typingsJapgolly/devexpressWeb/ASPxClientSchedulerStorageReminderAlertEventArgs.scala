@@ -1,27 +1,32 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSchedulerStorageControl.ReminderAlert event.
   */
-@JSGlobal("ASPxClientSchedulerStorageReminderAlertEventArgs")
-@js.native
-class ASPxClientSchedulerStorageReminderAlertEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSchedulerStorageReminderAlertEventArgs class.
-    * @param completedNotifications An array of ASPxClientReminderAlertNotification objects.
-    * @param previousNotifications An array of ASPxClientReminderAlertNotification objects.
-    */
-  def this(
-    completedNotifications: js.Array[ASPxClientReminderAlertNotification],
-    previousNotifications: js.Array[ASPxClientReminderAlertNotification]
-  ) = this()
+trait ASPxClientSchedulerStorageReminderAlertEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Returns an array of currently triggered reminders.
     */
-  var alertNotifications: js.Array[ASPxClientReminderAlertNotification] = js.native
+  var alertNotifications: js.Array[ASPxClientReminderAlertNotification]
 }
-
+object ASPxClientSchedulerStorageReminderAlertEventArgs {
+  
+  inline def apply(alertNotifications: js.Array[ASPxClientReminderAlertNotification]): ASPxClientSchedulerStorageReminderAlertEventArgs = {
+    val __obj = js.Dynamic.literal(alertNotifications = alertNotifications.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSchedulerStorageReminderAlertEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSchedulerStorageReminderAlertEventArgs](x: Self) {
+    
+    inline def setAlertNotifications(value: js.Array[ASPxClientReminderAlertNotification]): Self = StObject.set(x, "alertNotifications", value.asInstanceOf[js.Any])
+    
+    inline def setAlertNotificationsVarargs(value: ASPxClientReminderAlertNotification*): Self = StObject.set(x, "alertNotifications", js.Array(value*))
+  }
+}

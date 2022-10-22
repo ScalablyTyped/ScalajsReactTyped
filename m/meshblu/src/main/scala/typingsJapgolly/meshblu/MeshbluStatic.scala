@@ -1,27 +1,29 @@
 package typingsJapgolly.meshblu
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.meshblu.Meshblu.Connection
 import typingsJapgolly.meshblu.Meshblu.ConnectionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MeshbluStatic extends js.Object {
+trait MeshbluStatic extends StObject {
+  
   /**
-  	 * Establish a secure socket.io connection to Meshblu.
-  	 * @param opt
-  	 * @returns A Meshblu Connection.
-  	 */
+    * Establish a secure socket.io connection to Meshblu.
+    * @param opt
+    * @returns A Meshblu Connection.
+    */
   def createConnection(opt: ConnectionOptions): Connection
 }
-
 object MeshbluStatic {
-  @scala.inline
-  def apply(createConnection: ConnectionOptions => CallbackTo[Connection]): MeshbluStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createConnection")(js.Any.fromFunction1((t0: typingsJapgolly.meshblu.Meshblu.ConnectionOptions) => createConnection(t0).runNow()))
+  
+  inline def apply(createConnection: ConnectionOptions => Connection): MeshbluStatic = {
+    val __obj = js.Dynamic.literal(createConnection = js.Any.fromFunction1(createConnection))
     __obj.asInstanceOf[MeshbluStatic]
   }
+  
+  extension [Self <: MeshbluStatic](x: Self) {
+    
+    inline def setCreateConnection(value: ConnectionOptions => Connection): Self = StObject.set(x, "createConnection", js.Any.fromFunction1(value))
+  }
 }
-

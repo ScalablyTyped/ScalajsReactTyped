@@ -11,9 +11,9 @@ Lightweight full-text search engine in Javascript for browser search and offline
 | Full name          | elasticlunr |
 | Keywords           | search, text retrieval, offline search, full text search |
 | # releases         | 1 |
-| # dependents       | 39 |
-| # downloads        | 688297 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 250708.33333333334 |
+| # stars            | 1854.0 |
 
 ## Links
 - [Homepage](http://weixsong.github.io)

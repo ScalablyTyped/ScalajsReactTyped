@@ -1,21 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.round
   - typingsJapgolly.highcharts.highchartsStrings.square
 */
-trait OptionsLinecapValue extends js.Object
-
+trait OptionsLinecapValue extends StObject
 object OptionsLinecapValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def round: typingsJapgolly.highcharts.highchartsStrings.round = this.cast("round")
-  @scala.inline
-  def square: typingsJapgolly.highcharts.highchartsStrings.square = this.cast("square")
+  
+  inline def round: typingsJapgolly.highcharts.highchartsStrings.round = "round".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.round]
+  
+  inline def square: typingsJapgolly.highcharts.highchartsStrings.square = "square".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.square]
 }
-

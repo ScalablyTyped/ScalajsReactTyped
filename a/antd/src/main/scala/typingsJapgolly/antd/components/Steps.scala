@@ -1,10 +1,7 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.default
 import typingsJapgolly.antd.antdStrings.error
 import typingsJapgolly.antd.antdStrings.finish
@@ -15,58 +12,58 @@ import typingsJapgolly.antd.antdStrings.small
 import typingsJapgolly.antd.antdStrings.vertical
 import typingsJapgolly.antd.antdStrings.wait
 import typingsJapgolly.antd.libStepsMod.StepsProps
+import typingsJapgolly.rcSteps.anon.Description
+import typingsJapgolly.rcSteps.libStepsMod.ProgressDotRender
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Steps {
-  def apply(
-    className: String = null,
-    current: Int | Double = null,
-    direction: horizontal | vertical = null,
-    iconPrefix: String = null,
-    initial: Int | Double = null,
-    labelPlacement: horizontal | vertical = null,
-    onChange: /* current */ Double => Callback = null,
-    prefixCls: String = null,
-    progressDot: Boolean | js.Function = null,
-    size: default | small = null,
-    status: wait | process | finish | error = null,
-    style: CSSProperties = null,
-    `type`: default | navigation = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StepsProps, typingsJapgolly.antd.libStepsMod.default, Unit, StepsProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix.asInstanceOf[js.Any])
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* current */ scala.Double) => onChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (progressDot != null) __obj.updateDynamic("progressDot")(progressDot.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.libStepsMod.StepsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.libStepsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.libStepsMod.StepsProps])(children: _*)
-  }
-  @JSImport("antd/lib/steps", JSImport.Default)
+  @JSImport("antd", "Steps")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: horizontal | vertical): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def iconPrefix(value: String): this.type = set("iconPrefix", value.asInstanceOf[js.Any])
+    
+    inline def initial(value: Double): this.type = set("initial", value.asInstanceOf[js.Any])
+    
+    inline def labelPlacement(value: horizontal | vertical): this.type = set("labelPlacement", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* current */ Double => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* current */ Double) => value(t0).runNow()))
+    
+    inline def percent(value: Double): this.type = set("percent", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def progressDot(value: Boolean | ProgressDotRender): this.type = set("progressDot", value.asInstanceOf[js.Any])
+    
+    inline def progressDotFunction2(value: (/* iconDot */ Any, /* info */ Description) => japgolly.scalajs.react.facade.React.Node): this.type = set("progressDot", js.Any.fromFunction2(value))
+    
+    inline def responsive(value: Boolean): this.type = set("responsive", value.asInstanceOf[js.Any])
+    
+    inline def size(value: default | small): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: wait | process | finish | error): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: default | navigation): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Steps.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StepsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

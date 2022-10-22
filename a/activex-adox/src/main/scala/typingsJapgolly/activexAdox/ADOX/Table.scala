@@ -3,35 +3,84 @@ package typingsJapgolly.activexAdox.ADOX
 import typingsJapgolly.activexAdodb.ADODB.Properties
 import typingsJapgolly.activexAdodb.ADODB.Property
 import typingsJapgolly.std.VarDate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ADOX.Table")
-@js.native
-class Table protected () extends js.Object {
-  @JSName("ADOX.Table_typekey")
-  var ADOXDotTable_typekey: Table = js.native
+trait Table extends StObject {
+  
+  /* private */ @JSName("ADOX.Table_typekey")
+  var ADOXDotTable_typekey: Table
+  
+  def Columns(Item: String): Column
+  def Columns(Item: Double): Column
   @JSName("Columns")
-  val Columns_Original: Columns = js.native
-  val DateCreated: VarDate = js.native
-  val DateModified: VarDate = js.native
+  val Columns_Original: Columns
+  
+  val DateCreated: VarDate
+  
+  val DateModified: VarDate
+  
+  def Indexes(Item: String): Index
+  def Indexes(Item: Double): Index
   @JSName("Indexes")
-  val Indexes_Original: Indexes = js.native
+  val Indexes_Original: Indexes
+  
+  def Keys(Item: String): Key
+  def Keys(Item: Double): Key
   @JSName("Keys")
-  val Keys_Original: Keys = js.native
-  var Name: String = js.native
-  var ParentCatalog: Catalog = js.native
+  val Keys_Original: Keys
+  
+  var Name: String
+  
+  var ParentCatalog: Catalog
+  
+  def Properties(Index: String): Property
+  def Properties(Index: Double): Property
   @JSName("Properties")
-  val Properties_Original: Properties = js.native
-  val Type: String = js.native
-  def Columns(Item: String): Column = js.native
-  def Columns(Item: Double): Column = js.native
-  def Indexes(Item: String): Index = js.native
-  def Indexes(Item: Double): Index = js.native
-  def Keys(Item: String): Key = js.native
-  def Keys(Item: Double): Key = js.native
-  def Properties(Index: String): Property = js.native
-  def Properties(Index: Double): Property = js.native
+  val Properties_Original: Properties
+  
+  val Type: String
 }
-
+object Table {
+  
+  inline def apply(
+    ADOXDotTable_typekey: Table,
+    Columns: Columns,
+    DateCreated: VarDate,
+    DateModified: VarDate,
+    Indexes: Indexes,
+    Keys: Keys,
+    Name: String,
+    ParentCatalog: Catalog,
+    Properties: Properties,
+    Type: String
+  ): Table = {
+    val __obj = js.Dynamic.literal(Columns = Columns.asInstanceOf[js.Any], DateCreated = DateCreated.asInstanceOf[js.Any], DateModified = DateModified.asInstanceOf[js.Any], Indexes = Indexes.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], ParentCatalog = ParentCatalog.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("ADOX.Table_typekey")(ADOXDotTable_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Table]
+  }
+  
+  extension [Self <: Table](x: Self) {
+    
+    inline def setADOXDotTable_typekey(value: Table): Self = StObject.set(x, "ADOX.Table_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setColumns(value: Columns): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
+    
+    inline def setDateCreated(value: VarDate): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    
+    inline def setDateModified(value: VarDate): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    
+    inline def setIndexes(value: Indexes): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
+    
+    inline def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParentCatalog(value: Catalog): Self = StObject.set(x, "ParentCatalog", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
+}

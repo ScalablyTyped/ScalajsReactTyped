@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.accordionMod.AccordionProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Accordion")
 @js.native
-class Accordion ()
-  extends Component[AccordionProps, js.Object, js.Any]
-
+open class Accordion ()
+  extends typingsJapgolly.reactBootstrap.libMod.Accordion

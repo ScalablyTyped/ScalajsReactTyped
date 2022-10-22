@@ -10,10 +10,10 @@ minimalistic-assert ===
 | ------------------ | :-------------: |
 | Full name          | minimalistic-assert |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 73 |
-| # downloads        | 301058402 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6271018E7 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/calvinmetcalf/minimalistic-assert)

@@ -1,21 +1,25 @@
 package typingsJapgolly.nodegit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Giterr")
 @js.native
-class Giterr ()
+open class Giterr ()
   extends typingsJapgolly.nodegit.gitErrMod.Giterr
-
 /* static members */
-@JSImport("nodegit", "Giterr")
-@js.native
-object Giterr extends js.Object {
-  def errClear(): Unit = js.native
-  def errLast(): typingsJapgolly.nodegit.errorMod.Error = js.native
-  def errSetOom(): Unit = js.native
-  def errSetString(errorClass: Double, string: String): Unit = js.native
+object Giterr {
+  
+  @JSImport("nodegit", "Giterr")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def errClear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errClear")().asInstanceOf[Unit]
+  
+  inline def errLast(): typingsJapgolly.nodegit.errorMod.Error = ^.asInstanceOf[js.Dynamic].applyDynamic("errLast")().asInstanceOf[typingsJapgolly.nodegit.errorMod.Error]
+  
+  inline def errSetOom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errSetOom")().asInstanceOf[Unit]
+  
+  inline def errSetString(errorClass: Double, string: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errSetString")(errorClass.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

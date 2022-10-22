@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rdflib" : "2.2.20"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rdflib" : "2.2.20"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

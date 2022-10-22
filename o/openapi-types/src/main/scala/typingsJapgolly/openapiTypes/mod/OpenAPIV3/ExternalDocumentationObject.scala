@@ -1,20 +1,28 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExternalDocumentationObject extends js.Object {
+trait ExternalDocumentationObject extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var url: String
 }
-
 object ExternalDocumentationObject {
-  @scala.inline
-  def apply(url: String, description: String = null): ExternalDocumentationObject = {
+  
+  inline def apply(url: String): ExternalDocumentationObject = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExternalDocumentationObject]
   }
+  
+  extension [Self <: ExternalDocumentationObject](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

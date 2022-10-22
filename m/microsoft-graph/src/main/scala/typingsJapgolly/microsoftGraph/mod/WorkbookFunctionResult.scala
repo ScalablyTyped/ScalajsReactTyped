@@ -1,22 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookFunctionResult extends Entity {
-  var error: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+trait WorkbookFunctionResult
+  extends StObject
+     with Entity {
+  
+  var error: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var value: js.UndefOr[NullableOption[Any]] = js.undefined
 }
-
 object WorkbookFunctionResult {
-  @scala.inline
-  def apply(error: String = null, id: String = null, value: js.Any = null): WorkbookFunctionResult = {
+  
+  inline def apply(): WorkbookFunctionResult = {
     val __obj = js.Dynamic.literal()
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookFunctionResult]
   }
+  
+  extension [Self <: WorkbookFunctionResult](x: Self) {
+    
+    inline def setError(value: NullableOption[String]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorNull: Self = StObject.set(x, "error", null)
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setValue(value: NullableOption[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

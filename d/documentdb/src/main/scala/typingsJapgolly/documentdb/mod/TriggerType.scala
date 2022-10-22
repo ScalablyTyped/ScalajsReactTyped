@@ -2,9 +2,9 @@ package typingsJapgolly.documentdb.mod
 
 import typingsJapgolly.documentdb.documentdbStrings.post_
 import typingsJapgolly.documentdb.documentdbStrings.pre_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.documentdb.documentdbStrings.Pre
@@ -12,18 +12,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.documentdb.documentdbStrings.pre_
   - typingsJapgolly.documentdb.documentdbStrings.post_
 */
-trait TriggerType extends js.Object
-
+trait TriggerType extends StObject
 object TriggerType {
-  @scala.inline
-  def Post: typingsJapgolly.documentdb.documentdbStrings.Post = this.cast("Post")
-  @scala.inline
-  def Pre: typingsJapgolly.documentdb.documentdbStrings.Pre = this.cast("Pre")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def post: post_ = this.cast("post")
-  @scala.inline
-  def pre: pre_ = this.cast("pre")
+  
+  inline def Post: typingsJapgolly.documentdb.documentdbStrings.Post = "Post".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.Post]
+  
+  inline def Pre: typingsJapgolly.documentdb.documentdbStrings.Pre = "Pre".asInstanceOf[typingsJapgolly.documentdb.documentdbStrings.Pre]
+  
+  inline def post: post_ = "post".asInstanceOf[post_]
+  
+  inline def pre: pre_ = "pre".asInstanceOf[pre_]
 }
-

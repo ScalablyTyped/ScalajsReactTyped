@@ -1,22 +1,27 @@
 package typingsJapgolly.monacoEditor.mod.editor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IOverlayWidgetPosition extends js.Object {
+trait IOverlayWidgetPosition extends StObject {
+  
   /**
     * The position preference for the overlay widget.
     */
   var preference: OverlayWidgetPositionPreference | Null
 }
-
 object IOverlayWidgetPosition {
-  @scala.inline
-  def apply(preference: OverlayWidgetPositionPreference = null): IOverlayWidgetPosition = {
-    val __obj = js.Dynamic.literal()
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
+  
+  inline def apply(): IOverlayWidgetPosition = {
+    val __obj = js.Dynamic.literal(preference = null)
     __obj.asInstanceOf[IOverlayWidgetPosition]
   }
+  
+  extension [Self <: IOverlayWidgetPosition](x: Self) {
+    
+    inline def setPreference(value: OverlayWidgetPositionPreference): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceNull: Self = StObject.set(x, "preference", null)
+  }
 }
-

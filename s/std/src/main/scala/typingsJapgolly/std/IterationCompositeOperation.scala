@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.accumulate
   - typingsJapgolly.std.stdStrings.replace
 */
-trait IterationCompositeOperation extends js.Object
-
+trait IterationCompositeOperation extends StObject
 object IterationCompositeOperation {
-  @scala.inline
-  def accumulate: typingsJapgolly.std.stdStrings.accumulate = this.cast("accumulate")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def replace: typingsJapgolly.std.stdStrings.replace = this.cast("replace")
+  
+  inline def accumulate: typingsJapgolly.std.stdStrings.accumulate = "accumulate".asInstanceOf[typingsJapgolly.std.stdStrings.accumulate]
+  
+  inline def replace: typingsJapgolly.std.stdStrings.replace = "replace".asInstanceOf[typingsJapgolly.std.stdStrings.replace]
 }
-

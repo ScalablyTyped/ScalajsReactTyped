@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Data Table to be used in charts. A DataTable can come from sources such as Google
@@ -10,5 +10,4 @@ import scala.scalajs.js.annotation._
   * methods: a DataTable can be passed around, but not manipulated directly.
   */
 // tslint:disable-next-line: no-empty-interface
-trait DataTable extends js.Object
-
+trait DataTable extends StObject

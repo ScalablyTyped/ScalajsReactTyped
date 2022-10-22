@@ -1,29 +1,28 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait AssemblyLiteral
-  extends AssemblyExpression
-     with BaseASTNode {
+trait AssemblyLiteral
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with AssemblyExpression {
+  
   @JSName("type")
   var type_AssemblyLiteral: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral
 }
-
 object AssemblyLiteral {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): AssemblyLiteral = {
+  
+  inline def apply(): AssemblyLiteral = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyLiteral")
     __obj.asInstanceOf[AssemblyLiteral]
   }
+  
+  extension [Self <: AssemblyLiteral](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.AssemblyLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

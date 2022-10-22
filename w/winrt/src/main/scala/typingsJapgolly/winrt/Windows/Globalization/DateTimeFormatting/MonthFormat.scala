@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Globalization.DateTimeFormatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MonthFormat extends js.Object
-
+sealed trait MonthFormat extends StObject
 @JSGlobal("Windows.Globalization.DateTimeFormatting.MonthFormat")
 @js.native
-object MonthFormat extends js.Object {
-  @js.native
-  sealed trait abbreviated extends MonthFormat
+object MonthFormat extends StObject {
   
   @js.native
-  sealed trait default extends MonthFormat
+  sealed trait default
+    extends StObject
+       with MonthFormat
   
   @js.native
-  sealed trait full extends MonthFormat
+  sealed trait abbreviated
+    extends StObject
+       with MonthFormat
   
   @js.native
-  sealed trait none extends MonthFormat
+  sealed trait full
+    extends StObject
+       with MonthFormat
   
   @js.native
-  sealed trait numeric extends MonthFormat
+  sealed trait none
+    extends StObject
+       with MonthFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MonthFormat with Double] = js.native
-  /* 2 */ @js.native
-  object abbreviated extends TopLevel[abbreviated with Double]
-  
-  /* 1 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 3 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 4 */ @js.native
-  object numeric extends TopLevel[numeric with Double]
-  
+  @js.native
+  sealed trait numeric
+    extends StObject
+       with MonthFormat
 }
-

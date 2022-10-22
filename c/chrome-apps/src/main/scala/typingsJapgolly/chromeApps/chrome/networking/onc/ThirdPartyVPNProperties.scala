@@ -1,22 +1,30 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThirdPartyVPNProperties extends js.Object {
+trait ThirdPartyVPNProperties extends StObject {
+  
   /** ID of the third-party VPN provider extension. */
   var ExtensionID: String
+  
   /** The VPN provider name. */
   var ProviderName: js.UndefOr[String] = js.undefined
 }
-
 object ThirdPartyVPNProperties {
-  @scala.inline
-  def apply(ExtensionID: String, ProviderName: String = null): ThirdPartyVPNProperties = {
+  
+  inline def apply(ExtensionID: String): ThirdPartyVPNProperties = {
     val __obj = js.Dynamic.literal(ExtensionID = ExtensionID.asInstanceOf[js.Any])
-    if (ProviderName != null) __obj.updateDynamic("ProviderName")(ProviderName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThirdPartyVPNProperties]
   }
+  
+  extension [Self <: ThirdPartyVPNProperties](x: Self) {
+    
+    inline def setExtensionID(value: String): Self = StObject.set(x, "ExtensionID", value.asInstanceOf[js.Any])
+    
+    inline def setProviderName(value: String): Self = StObject.set(x, "ProviderName", value.asInstanceOf[js.Any])
+    
+    inline def setProviderNameUndefined: Self = StObject.set(x, "ProviderName", js.undefined)
+  }
 }
-

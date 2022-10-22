@@ -1,156 +1,334 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Message extends js.Object {
+trait Message extends StObject {
+  
   var animation: js.UndefOr[Animation] = js.undefined
+  
   var audio: js.UndefOr[Audio] = js.undefined
+  
   var author_signature: js.UndefOr[String] = js.undefined
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var caption_entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
+  
   var channel_chat_created: js.UndefOr[Boolean] = js.undefined
+  
   var chat: Chat
+  
   var connected_website: js.UndefOr[String] = js.undefined
+  
   var contact: js.UndefOr[Contact] = js.undefined
+  
   var date: Double
+  
   var delete_chat_photo: js.UndefOr[Boolean] = js.undefined
+  
+  var dice: js.UndefOr[Dice] = js.undefined
+  
   var document: js.UndefOr[Document] = js.undefined
+  
   var edit_date: js.UndefOr[Double] = js.undefined
+  
   var entities: js.UndefOr[js.Array[MessageEntity]] = js.undefined
+  
   var forward_date: js.UndefOr[Double] = js.undefined
+  
   var forward_from: js.UndefOr[User] = js.undefined
+  
   var forward_from_chat: js.UndefOr[Chat] = js.undefined
+  
   var forward_from_message_id: js.UndefOr[Double] = js.undefined
+  
   var forward_sender_name: js.UndefOr[String] = js.undefined
+  
   var forward_signature: js.UndefOr[String] = js.undefined
+  
   var from: js.UndefOr[User] = js.undefined
+  
   var game: js.UndefOr[Game] = js.undefined
+  
   var group_chat_created: js.UndefOr[Boolean] = js.undefined
+  
+  var has_protected_content: js.UndefOr[Boolean] = js.undefined
+  
   var invoice: js.UndefOr[Invoice] = js.undefined
+  
+  var is_automatic_forward: js.UndefOr[Boolean] = js.undefined
+  
   var left_chat_member: js.UndefOr[User] = js.undefined
+  
   var location: js.UndefOr[Location] = js.undefined
+  
   var media_group_id: js.UndefOr[String] = js.undefined
+  
   var message_id: Double
+  
   var migrate_from_chat_id: js.UndefOr[Double] = js.undefined
+  
   var migrate_to_chat_id: js.UndefOr[Double] = js.undefined
+  
   var new_chat_members: js.UndefOr[js.Array[User]] = js.undefined
+  
   var new_chat_photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
+  
   var new_chat_title: js.UndefOr[String] = js.undefined
+  
   var passport_data: js.UndefOr[PassportData] = js.undefined
+  
   var photo: js.UndefOr[js.Array[PhotoSize]] = js.undefined
+  
   var pinned_message: js.UndefOr[Message] = js.undefined
+  
   var poll: js.UndefOr[Poll] = js.undefined
+  
   var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
+  
   var reply_to_message: js.UndefOr[Message] = js.undefined
+  
+  var sender_chat: js.UndefOr[Chat] = js.undefined
+  
   var sticker: js.UndefOr[Sticker] = js.undefined
+  
   var successful_payment: js.UndefOr[SuccessfulPayment] = js.undefined
+  
   var supergroup_chat_created: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var venue: js.UndefOr[Venue] = js.undefined
+  
   var video: js.UndefOr[Video] = js.undefined
+  
   var video_note: js.UndefOr[VideoNote] = js.undefined
+  
   var voice: js.UndefOr[Voice] = js.undefined
+  
+  var web_app_data: js.UndefOr[WebAppData] = js.undefined
 }
-
 object Message {
-  @scala.inline
-  def apply(
-    chat: Chat,
-    date: Double,
-    message_id: Double,
-    animation: Animation = null,
-    audio: Audio = null,
-    author_signature: String = null,
-    caption: String = null,
-    caption_entities: js.Array[MessageEntity] = null,
-    channel_chat_created: js.UndefOr[Boolean] = js.undefined,
-    connected_website: String = null,
-    contact: Contact = null,
-    delete_chat_photo: js.UndefOr[Boolean] = js.undefined,
-    document: Document = null,
-    edit_date: Int | Double = null,
-    entities: js.Array[MessageEntity] = null,
-    forward_date: Int | Double = null,
-    forward_from: User = null,
-    forward_from_chat: Chat = null,
-    forward_from_message_id: Int | Double = null,
-    forward_sender_name: String = null,
-    forward_signature: String = null,
-    from: User = null,
-    game: Game = null,
-    group_chat_created: js.UndefOr[Boolean] = js.undefined,
-    invoice: Invoice = null,
-    left_chat_member: User = null,
-    location: Location = null,
-    media_group_id: String = null,
-    migrate_from_chat_id: Int | Double = null,
-    migrate_to_chat_id: Int | Double = null,
-    new_chat_members: js.Array[User] = null,
-    new_chat_photo: js.Array[PhotoSize] = null,
-    new_chat_title: String = null,
-    passport_data: PassportData = null,
-    photo: js.Array[PhotoSize] = null,
-    pinned_message: Message = null,
-    poll: Poll = null,
-    reply_markup: InlineKeyboardMarkup = null,
-    reply_to_message: Message = null,
-    sticker: Sticker = null,
-    successful_payment: SuccessfulPayment = null,
-    supergroup_chat_created: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    venue: Venue = null,
-    video: Video = null,
-    video_note: VideoNote = null,
-    voice: Voice = null
-  ): Message = {
+  
+  inline def apply(chat: Chat, date: Double, message_id: Double): Message = {
     val __obj = js.Dynamic.literal(chat = chat.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (author_signature != null) __obj.updateDynamic("author_signature")(author_signature.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (caption_entities != null) __obj.updateDynamic("caption_entities")(caption_entities.asInstanceOf[js.Any])
-    if (!js.isUndefined(channel_chat_created)) __obj.updateDynamic("channel_chat_created")(channel_chat_created.asInstanceOf[js.Any])
-    if (connected_website != null) __obj.updateDynamic("connected_website")(connected_website.asInstanceOf[js.Any])
-    if (contact != null) __obj.updateDynamic("contact")(contact.asInstanceOf[js.Any])
-    if (!js.isUndefined(delete_chat_photo)) __obj.updateDynamic("delete_chat_photo")(delete_chat_photo.asInstanceOf[js.Any])
-    if (document != null) __obj.updateDynamic("document")(document.asInstanceOf[js.Any])
-    if (edit_date != null) __obj.updateDynamic("edit_date")(edit_date.asInstanceOf[js.Any])
-    if (entities != null) __obj.updateDynamic("entities")(entities.asInstanceOf[js.Any])
-    if (forward_date != null) __obj.updateDynamic("forward_date")(forward_date.asInstanceOf[js.Any])
-    if (forward_from != null) __obj.updateDynamic("forward_from")(forward_from.asInstanceOf[js.Any])
-    if (forward_from_chat != null) __obj.updateDynamic("forward_from_chat")(forward_from_chat.asInstanceOf[js.Any])
-    if (forward_from_message_id != null) __obj.updateDynamic("forward_from_message_id")(forward_from_message_id.asInstanceOf[js.Any])
-    if (forward_sender_name != null) __obj.updateDynamic("forward_sender_name")(forward_sender_name.asInstanceOf[js.Any])
-    if (forward_signature != null) __obj.updateDynamic("forward_signature")(forward_signature.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (game != null) __obj.updateDynamic("game")(game.asInstanceOf[js.Any])
-    if (!js.isUndefined(group_chat_created)) __obj.updateDynamic("group_chat_created")(group_chat_created.asInstanceOf[js.Any])
-    if (invoice != null) __obj.updateDynamic("invoice")(invoice.asInstanceOf[js.Any])
-    if (left_chat_member != null) __obj.updateDynamic("left_chat_member")(left_chat_member.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (media_group_id != null) __obj.updateDynamic("media_group_id")(media_group_id.asInstanceOf[js.Any])
-    if (migrate_from_chat_id != null) __obj.updateDynamic("migrate_from_chat_id")(migrate_from_chat_id.asInstanceOf[js.Any])
-    if (migrate_to_chat_id != null) __obj.updateDynamic("migrate_to_chat_id")(migrate_to_chat_id.asInstanceOf[js.Any])
-    if (new_chat_members != null) __obj.updateDynamic("new_chat_members")(new_chat_members.asInstanceOf[js.Any])
-    if (new_chat_photo != null) __obj.updateDynamic("new_chat_photo")(new_chat_photo.asInstanceOf[js.Any])
-    if (new_chat_title != null) __obj.updateDynamic("new_chat_title")(new_chat_title.asInstanceOf[js.Any])
-    if (passport_data != null) __obj.updateDynamic("passport_data")(passport_data.asInstanceOf[js.Any])
-    if (photo != null) __obj.updateDynamic("photo")(photo.asInstanceOf[js.Any])
-    if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message.asInstanceOf[js.Any])
-    if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (reply_to_message != null) __obj.updateDynamic("reply_to_message")(reply_to_message.asInstanceOf[js.Any])
-    if (sticker != null) __obj.updateDynamic("sticker")(sticker.asInstanceOf[js.Any])
-    if (successful_payment != null) __obj.updateDynamic("successful_payment")(successful_payment.asInstanceOf[js.Any])
-    if (!js.isUndefined(supergroup_chat_created)) __obj.updateDynamic("supergroup_chat_created")(supergroup_chat_created.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (venue != null) __obj.updateDynamic("venue")(venue.asInstanceOf[js.Any])
-    if (video != null) __obj.updateDynamic("video")(video.asInstanceOf[js.Any])
-    if (video_note != null) __obj.updateDynamic("video_note")(video_note.asInstanceOf[js.Any])
-    if (voice != null) __obj.updateDynamic("voice")(voice.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
+  
+  extension [Self <: Message](x: Self) {
+    
+    inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAudio(value: Audio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    
+    inline def setAuthor_signature(value: String): Self = StObject.set(x, "author_signature", value.asInstanceOf[js.Any])
+    
+    inline def setAuthor_signatureUndefined: Self = StObject.set(x, "author_signature", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setCaption_entities(value: js.Array[MessageEntity]): Self = StObject.set(x, "caption_entities", value.asInstanceOf[js.Any])
+    
+    inline def setCaption_entitiesUndefined: Self = StObject.set(x, "caption_entities", js.undefined)
+    
+    inline def setCaption_entitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "caption_entities", js.Array(value*))
+    
+    inline def setChannel_chat_created(value: Boolean): Self = StObject.set(x, "channel_chat_created", value.asInstanceOf[js.Any])
+    
+    inline def setChannel_chat_createdUndefined: Self = StObject.set(x, "channel_chat_created", js.undefined)
+    
+    inline def setChat(value: Chat): Self = StObject.set(x, "chat", value.asInstanceOf[js.Any])
+    
+    inline def setConnected_website(value: String): Self = StObject.set(x, "connected_website", value.asInstanceOf[js.Any])
+    
+    inline def setConnected_websiteUndefined: Self = StObject.set(x, "connected_website", js.undefined)
+    
+    inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    
+    inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDelete_chat_photo(value: Boolean): Self = StObject.set(x, "delete_chat_photo", value.asInstanceOf[js.Any])
+    
+    inline def setDelete_chat_photoUndefined: Self = StObject.set(x, "delete_chat_photo", js.undefined)
+    
+    inline def setDice(value: Dice): Self = StObject.set(x, "dice", value.asInstanceOf[js.Any])
+    
+    inline def setDiceUndefined: Self = StObject.set(x, "dice", js.undefined)
+    
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    
+    inline def setEdit_date(value: Double): Self = StObject.set(x, "edit_date", value.asInstanceOf[js.Any])
+    
+    inline def setEdit_dateUndefined: Self = StObject.set(x, "edit_date", js.undefined)
+    
+    inline def setEntities(value: js.Array[MessageEntity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    
+    inline def setEntitiesVarargs(value: MessageEntity*): Self = StObject.set(x, "entities", js.Array(value*))
+    
+    inline def setForward_date(value: Double): Self = StObject.set(x, "forward_date", value.asInstanceOf[js.Any])
+    
+    inline def setForward_dateUndefined: Self = StObject.set(x, "forward_date", js.undefined)
+    
+    inline def setForward_from(value: User): Self = StObject.set(x, "forward_from", value.asInstanceOf[js.Any])
+    
+    inline def setForward_fromUndefined: Self = StObject.set(x, "forward_from", js.undefined)
+    
+    inline def setForward_from_chat(value: Chat): Self = StObject.set(x, "forward_from_chat", value.asInstanceOf[js.Any])
+    
+    inline def setForward_from_chatUndefined: Self = StObject.set(x, "forward_from_chat", js.undefined)
+    
+    inline def setForward_from_message_id(value: Double): Self = StObject.set(x, "forward_from_message_id", value.asInstanceOf[js.Any])
+    
+    inline def setForward_from_message_idUndefined: Self = StObject.set(x, "forward_from_message_id", js.undefined)
+    
+    inline def setForward_sender_name(value: String): Self = StObject.set(x, "forward_sender_name", value.asInstanceOf[js.Any])
+    
+    inline def setForward_sender_nameUndefined: Self = StObject.set(x, "forward_sender_name", js.undefined)
+    
+    inline def setForward_signature(value: String): Self = StObject.set(x, "forward_signature", value.asInstanceOf[js.Any])
+    
+    inline def setForward_signatureUndefined: Self = StObject.set(x, "forward_signature", js.undefined)
+    
+    inline def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setGame(value: Game): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+    
+    inline def setGameUndefined: Self = StObject.set(x, "game", js.undefined)
+    
+    inline def setGroup_chat_created(value: Boolean): Self = StObject.set(x, "group_chat_created", value.asInstanceOf[js.Any])
+    
+    inline def setGroup_chat_createdUndefined: Self = StObject.set(x, "group_chat_created", js.undefined)
+    
+    inline def setHas_protected_content(value: Boolean): Self = StObject.set(x, "has_protected_content", value.asInstanceOf[js.Any])
+    
+    inline def setHas_protected_contentUndefined: Self = StObject.set(x, "has_protected_content", js.undefined)
+    
+    inline def setInvoice(value: Invoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
+    
+    inline def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
+    
+    inline def setIs_automatic_forward(value: Boolean): Self = StObject.set(x, "is_automatic_forward", value.asInstanceOf[js.Any])
+    
+    inline def setIs_automatic_forwardUndefined: Self = StObject.set(x, "is_automatic_forward", js.undefined)
+    
+    inline def setLeft_chat_member(value: User): Self = StObject.set(x, "left_chat_member", value.asInstanceOf[js.Any])
+    
+    inline def setLeft_chat_memberUndefined: Self = StObject.set(x, "left_chat_member", js.undefined)
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMedia_group_id(value: String): Self = StObject.set(x, "media_group_id", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_group_idUndefined: Self = StObject.set(x, "media_group_id", js.undefined)
+    
+    inline def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    
+    inline def setMigrate_from_chat_id(value: Double): Self = StObject.set(x, "migrate_from_chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setMigrate_from_chat_idUndefined: Self = StObject.set(x, "migrate_from_chat_id", js.undefined)
+    
+    inline def setMigrate_to_chat_id(value: Double): Self = StObject.set(x, "migrate_to_chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setMigrate_to_chat_idUndefined: Self = StObject.set(x, "migrate_to_chat_id", js.undefined)
+    
+    inline def setNew_chat_members(value: js.Array[User]): Self = StObject.set(x, "new_chat_members", value.asInstanceOf[js.Any])
+    
+    inline def setNew_chat_membersUndefined: Self = StObject.set(x, "new_chat_members", js.undefined)
+    
+    inline def setNew_chat_membersVarargs(value: User*): Self = StObject.set(x, "new_chat_members", js.Array(value*))
+    
+    inline def setNew_chat_photo(value: js.Array[PhotoSize]): Self = StObject.set(x, "new_chat_photo", value.asInstanceOf[js.Any])
+    
+    inline def setNew_chat_photoUndefined: Self = StObject.set(x, "new_chat_photo", js.undefined)
+    
+    inline def setNew_chat_photoVarargs(value: PhotoSize*): Self = StObject.set(x, "new_chat_photo", js.Array(value*))
+    
+    inline def setNew_chat_title(value: String): Self = StObject.set(x, "new_chat_title", value.asInstanceOf[js.Any])
+    
+    inline def setNew_chat_titleUndefined: Self = StObject.set(x, "new_chat_title", js.undefined)
+    
+    inline def setPassport_data(value: PassportData): Self = StObject.set(x, "passport_data", value.asInstanceOf[js.Any])
+    
+    inline def setPassport_dataUndefined: Self = StObject.set(x, "passport_data", js.undefined)
+    
+    inline def setPhoto(value: js.Array[PhotoSize]): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    
+    inline def setPhotoVarargs(value: PhotoSize*): Self = StObject.set(x, "photo", js.Array(value*))
+    
+    inline def setPinned_message(value: Message): Self = StObject.set(x, "pinned_message", value.asInstanceOf[js.Any])
+    
+    inline def setPinned_messageUndefined: Self = StObject.set(x, "pinned_message", js.undefined)
+    
+    inline def setPoll(value: Poll): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    
+    inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+    
+    inline def setReply_markup(value: InlineKeyboardMarkup): Self = StObject.set(x, "reply_markup", value.asInstanceOf[js.Any])
+    
+    inline def setReply_markupUndefined: Self = StObject.set(x, "reply_markup", js.undefined)
+    
+    inline def setReply_to_message(value: Message): Self = StObject.set(x, "reply_to_message", value.asInstanceOf[js.Any])
+    
+    inline def setReply_to_messageUndefined: Self = StObject.set(x, "reply_to_message", js.undefined)
+    
+    inline def setSender_chat(value: Chat): Self = StObject.set(x, "sender_chat", value.asInstanceOf[js.Any])
+    
+    inline def setSender_chatUndefined: Self = StObject.set(x, "sender_chat", js.undefined)
+    
+    inline def setSticker(value: Sticker): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
+    
+    inline def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
+    
+    inline def setSuccessful_payment(value: SuccessfulPayment): Self = StObject.set(x, "successful_payment", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessful_paymentUndefined: Self = StObject.set(x, "successful_payment", js.undefined)
+    
+    inline def setSupergroup_chat_created(value: Boolean): Self = StObject.set(x, "supergroup_chat_created", value.asInstanceOf[js.Any])
+    
+    inline def setSupergroup_chat_createdUndefined: Self = StObject.set(x, "supergroup_chat_created", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVenue(value: Venue): Self = StObject.set(x, "venue", value.asInstanceOf[js.Any])
+    
+    inline def setVenueUndefined: Self = StObject.set(x, "venue", js.undefined)
+    
+    inline def setVideo(value: Video): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    
+    inline def setVideo_note(value: VideoNote): Self = StObject.set(x, "video_note", value.asInstanceOf[js.Any])
+    
+    inline def setVideo_noteUndefined: Self = StObject.set(x, "video_note", js.undefined)
+    
+    inline def setVoice(value: Voice): Self = StObject.set(x, "voice", value.asInstanceOf[js.Any])
+    
+    inline def setVoiceUndefined: Self = StObject.set(x, "voice", js.undefined)
+    
+    inline def setWeb_app_data(value: WebAppData): Self = StObject.set(x, "web_app_data", value.asInstanceOf[js.Any])
+    
+    inline def setWeb_app_dataUndefined: Self = StObject.set(x, "web_app_data", js.undefined)
+  }
 }
-

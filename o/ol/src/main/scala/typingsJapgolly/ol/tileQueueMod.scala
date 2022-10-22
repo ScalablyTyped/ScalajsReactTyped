@@ -1,32 +1,49 @@
 package typingsJapgolly.ol
 
 import typingsJapgolly.ol.coordinateMod.Coordinate
+import typingsJapgolly.ol.pluggableMapMod.FrameState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/TileQueue", JSImport.Namespace)
-@js.native
-object tileQueueMod extends js.Object {
+object tileQueueMod {
+  
+  @JSImport("ol/TileQueue", JSImport.Namespace)
   @js.native
-  trait TileQueue
-    extends typingsJapgolly.ol.priorityQueueMod.default[js.Any] {
-    def getTilesLoading(): Double = js.native
-    /* protected */ def handleTileChange(event: typingsJapgolly.ol.eventMod.default): Unit = js.native
-    def loadMoreTiles(maxTotalLoading: Double, maxNewLoads: Double): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("ol/TileQueue", JSImport.Default)
+  @js.native
+  open class default protected () extends TileQueue {
+    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[Any]) = this()
   }
   
-  @js.native
-  class default protected () extends TileQueue {
-    def this(tilePriorityFunction: PriorityFunction, tileChangeCallback: js.Function0[_]) = this()
-  }
+  inline def getTilePriority(
+    frameState: FrameState,
+    tile: typingsJapgolly.ol.tileMod.default,
+    tileSourceKey: String,
+    tileCenter: Coordinate,
+    tileResolution: Double
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTilePriority")(frameState.asInstanceOf[js.Any], tile.asInstanceOf[js.Any], tileSourceKey.asInstanceOf[js.Any], tileCenter.asInstanceOf[js.Any], tileResolution.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   type PriorityFunction = js.Function4[
-    /* p0 */ typingsJapgolly.ol.olTileMod.default, 
+    /* p0 */ typingsJapgolly.ol.tileMod.default, 
     /* p1 */ String, 
     /* p2 */ Coordinate, 
     /* p3 */ Double, 
     Double
   ]
+  
+  @js.native
+  trait TileQueue
+    extends typingsJapgolly.ol.structsPriorityQueueMod.default[Any] {
+    
+    def enqueue(element: js.Array[Any]): Boolean = js.native
+    
+    def getTilesLoading(): Double = js.native
+    
+    /* protected */ def handleTileChange(event: typingsJapgolly.ol.eventsEventMod.default): Unit = js.native
+    
+    def loadMoreTiles(maxTotalLoading: Double, maxNewLoads: Double): Unit = js.native
+  }
 }
-

@@ -10,10 +10,10 @@ Decorators for HapiJS routes using ES6 classes
 | ------------------ | :-------------: |
 | Full name          | hapi-decorators |
 | Keywords           | decorators, hapijs, hapi, controller |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 6948 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3933.6666666666665 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/knownasilya/hapi-decorators#readme)

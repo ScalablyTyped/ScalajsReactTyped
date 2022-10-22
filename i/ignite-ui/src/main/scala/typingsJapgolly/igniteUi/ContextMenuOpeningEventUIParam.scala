@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextMenuOpeningEventUIParam extends js.Object {
+trait ContextMenuOpeningEventUIParam extends StObject {
+  
   /**
-  	 * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
-  	 */
+    * Get the [area](ig.spreadsheet.SpreadsheetContextMenuArea) for which the menu is being displayed.
+    */
   var menuArea: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the spreadsheet widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ContextMenuOpeningEventUIParam {
-  @scala.inline
-  def apply(menuArea: String = null, owner: js.Any = null): ContextMenuOpeningEventUIParam = {
+  
+  inline def apply(): ContextMenuOpeningEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (menuArea != null) __obj.updateDynamic("menuArea")(menuArea.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuOpeningEventUIParam]
   }
+  
+  extension [Self <: ContextMenuOpeningEventUIParam](x: Self) {
+    
+    inline def setMenuArea(value: String): Self = StObject.set(x, "menuArea", value.asInstanceOf[js.Any])
+    
+    inline def setMenuAreaUndefined: Self = StObject.set(x, "menuArea", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -2,195 +2,227 @@ package typingsJapgolly.evaporate
 
 import typingsJapgolly.evaporate.mod.AddOverrideOptionKeys
 import typingsJapgolly.evaporate.mod.ImmutableOptionKeys
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object evaporateStrings {
-  @js.native
-  sealed trait `2` extends js.Object
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `2` extends StObject
+  inline def `2`: `2` = "2".asInstanceOf[`2`]
   
   @js.native
-  sealed trait abortCompletionThrottlingMs extends AddOverrideOptionKeys
+  sealed trait `4` extends StObject
+  inline def `4`: `4` = "4".asInstanceOf[`4`]
   
   @js.native
-  sealed trait allowS3ExistenceOptimization extends ImmutableOptionKeys
+  sealed trait abortCompletionThrottlingMs
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def abortCompletionThrottlingMs: abortCompletionThrottlingMs = "abortCompletionThrottlingMs".asInstanceOf[abortCompletionThrottlingMs]
   
   @js.native
-  sealed trait awsRegion extends ImmutableOptionKeys
+  sealed trait allowS3ExistenceOptimization
+    extends StObject
+       with ImmutableOptionKeys
+  inline def allowS3ExistenceOptimization: allowS3ExistenceOptimization = "allowS3ExistenceOptimization".asInstanceOf[allowS3ExistenceOptimization]
   
   @js.native
-  sealed trait awsSignatureVersion extends ImmutableOptionKeys
+  sealed trait awsRegion
+    extends StObject
+       with ImmutableOptionKeys
+  inline def awsRegion: awsRegion = "awsRegion".asInstanceOf[awsRegion]
   
   @js.native
-  sealed trait aws_key extends AddOverrideOptionKeys
+  sealed trait awsSignatureVersion
+    extends StObject
+       with ImmutableOptionKeys
+  inline def awsSignatureVersion: awsSignatureVersion = "awsSignatureVersion".asInstanceOf[awsSignatureVersion]
   
   @js.native
-  sealed trait aws_url extends AddOverrideOptionKeys
+  sealed trait aws_key
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def aws_key: aws_key = "aws_key".asInstanceOf[aws_key]
   
   @js.native
-  sealed trait bucket extends AddOverrideOptionKeys
+  sealed trait aws_url
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def aws_url: aws_url = "aws_url".asInstanceOf[aws_url]
   
   @js.native
-  sealed trait cloudfront extends ImmutableOptionKeys
+  sealed trait bucket
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def bucket: bucket = "bucket".asInstanceOf[bucket]
   
   @js.native
-  sealed trait computeContentMd5 extends ImmutableOptionKeys
+  sealed trait cloudfront
+    extends StObject
+       with ImmutableOptionKeys
+  inline def cloudfront: cloudfront = "cloudfront".asInstanceOf[cloudfront]
   
   @js.native
-  sealed trait cryptoHexEncodedHash256 extends ImmutableOptionKeys
+  sealed trait computeContentMd5
+    extends StObject
+       with ImmutableOptionKeys
+  inline def computeContentMd5: computeContentMd5 = "computeContentMd5".asInstanceOf[computeContentMd5]
   
   @js.native
-  sealed trait cryptoMd5Method extends ImmutableOptionKeys
+  sealed trait cryptoHexEncodedHash256
+    extends StObject
+       with ImmutableOptionKeys
+  inline def cryptoHexEncodedHash256: cryptoHexEncodedHash256 = "cryptoHexEncodedHash256".asInstanceOf[cryptoHexEncodedHash256]
   
   @js.native
-  sealed trait customAuthMethod extends AddOverrideOptionKeys
+  sealed trait cryptoMd5Method
+    extends StObject
+       with ImmutableOptionKeys
+  inline def cryptoMd5Method: cryptoMd5Method = "cryptoMd5Method".asInstanceOf[cryptoMd5Method]
   
   @js.native
-  sealed trait encodeFilename extends ImmutableOptionKeys
+  sealed trait customAuthMethod
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def customAuthMethod: customAuthMethod = "customAuthMethod".asInstanceOf[customAuthMethod]
   
   @js.native
-  sealed trait evaporateChanged extends ImmutableOptionKeys
+  sealed trait encodeFilename
+    extends StObject
+       with ImmutableOptionKeys
+  inline def encodeFilename: encodeFilename = "encodeFilename".asInstanceOf[encodeFilename]
   
   @js.native
-  sealed trait localTimeOffset extends AddOverrideOptionKeys
+  sealed trait evaporateChanged
+    extends StObject
+       with ImmutableOptionKeys
+  inline def evaporateChanged: evaporateChanged = "evaporateChanged".asInstanceOf[evaporateChanged]
   
   @js.native
-  sealed trait logging extends ImmutableOptionKeys
+  sealed trait localTimeOffset
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def localTimeOffset: localTimeOffset = "localTimeOffset".asInstanceOf[localTimeOffset]
   
   @js.native
-  sealed trait maxConcurrentParts extends ImmutableOptionKeys
+  sealed trait logging
+    extends StObject
+       with ImmutableOptionKeys
+  inline def logging: logging = "logging".asInstanceOf[logging]
   
   @js.native
-  sealed trait maxFileSize extends AddOverrideOptionKeys
+  sealed trait maxConcurrentParts
+    extends StObject
+       with ImmutableOptionKeys
+  inline def maxConcurrentParts: maxConcurrentParts = "maxConcurrentParts".asInstanceOf[maxConcurrentParts]
   
   @js.native
-  sealed trait maxRetryBackoffSecs extends AddOverrideOptionKeys
+  sealed trait maxFileSize
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def maxFileSize: maxFileSize = "maxFileSize".asInstanceOf[maxFileSize]
   
   @js.native
-  sealed trait mockLocalStorage extends AddOverrideOptionKeys
+  sealed trait maxRetryBackoffSecs
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def maxRetryBackoffSecs: maxRetryBackoffSecs = "maxRetryBackoffSecs".asInstanceOf[maxRetryBackoffSecs]
   
   @js.native
-  sealed trait onlyRetryForSameFileName extends ImmutableOptionKeys
+  sealed trait mockLocalStorage
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def mockLocalStorage: mockLocalStorage = "mockLocalStorage".asInstanceOf[mockLocalStorage]
   
   @js.native
-  sealed trait partSize extends AddOverrideOptionKeys
+  sealed trait onlyRetryForSameFileName
+    extends StObject
+       with ImmutableOptionKeys
+  inline def onlyRetryForSameFileName: onlyRetryForSameFileName = "onlyRetryForSameFileName".asInstanceOf[onlyRetryForSameFileName]
   
   @js.native
-  sealed trait progressIntervalMS extends AddOverrideOptionKeys
+  sealed trait partSize
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def partSize: partSize = "partSize".asInstanceOf[partSize]
   
   @js.native
-  sealed trait readableStreamPartMethod extends AddOverrideOptionKeys
+  sealed trait progressIntervalMS
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def progressIntervalMS: progressIntervalMS = "progressIntervalMS".asInstanceOf[progressIntervalMS]
   
   @js.native
-  sealed trait readableStreams extends AddOverrideOptionKeys
+  sealed trait readableStreamPartMethod
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def readableStreamPartMethod: readableStreamPartMethod = "readableStreamPartMethod".asInstanceOf[readableStreamPartMethod]
   
   @js.native
-  sealed trait retryBackoffPower extends AddOverrideOptionKeys
+  sealed trait readableStreams
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def readableStreams: readableStreams = "readableStreams".asInstanceOf[readableStreams]
   
   @js.native
-  sealed trait s3Acceleration extends AddOverrideOptionKeys
+  sealed trait retryBackoffPower
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def retryBackoffPower: retryBackoffPower = "retryBackoffPower".asInstanceOf[retryBackoffPower]
   
   @js.native
-  sealed trait s3FileCacheHoursAgo extends AddOverrideOptionKeys
+  sealed trait s3Acceleration
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def s3Acceleration: s3Acceleration = "s3Acceleration".asInstanceOf[s3Acceleration]
   
   @js.native
-  sealed trait sendCanonicalRequestToSignerUrl extends AddOverrideOptionKeys
+  sealed trait s3FileCacheHoursAgo
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def s3FileCacheHoursAgo: s3FileCacheHoursAgo = "s3FileCacheHoursAgo".asInstanceOf[s3FileCacheHoursAgo]
   
   @js.native
-  sealed trait signHeaders extends AddOverrideOptionKeys
+  sealed trait sendCanonicalRequestToSignerUrl
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def sendCanonicalRequestToSignerUrl: sendCanonicalRequestToSignerUrl = "sendCanonicalRequestToSignerUrl".asInstanceOf[sendCanonicalRequestToSignerUrl]
   
   @js.native
-  sealed trait signParams extends AddOverrideOptionKeys
+  sealed trait signHeaders
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def signHeaders: signHeaders = "signHeaders".asInstanceOf[signHeaders]
   
   @js.native
-  sealed trait signResponseHandler extends AddOverrideOptionKeys
+  sealed trait signParams
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def signParams: signParams = "signParams".asInstanceOf[signParams]
   
   @js.native
-  sealed trait signerUrl extends AddOverrideOptionKeys
+  sealed trait signResponseHandler
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def signResponseHandler: signResponseHandler = "signResponseHandler".asInstanceOf[signResponseHandler]
   
   @js.native
-  sealed trait timeUrl extends ImmutableOptionKeys
+  sealed trait signerUrl
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def signerUrl: signerUrl = "signerUrl".asInstanceOf[signerUrl]
   
   @js.native
-  sealed trait xhrWithCredentials extends AddOverrideOptionKeys
+  sealed trait timeUrl
+    extends StObject
+       with ImmutableOptionKeys
+  inline def timeUrl: timeUrl = "timeUrl".asInstanceOf[timeUrl]
   
-  @scala.inline
-  def `2`: `2` = "2".asInstanceOf[`2`]
-  @scala.inline
-  def `4`: `4` = "4".asInstanceOf[`4`]
-  @scala.inline
-  def abortCompletionThrottlingMs: abortCompletionThrottlingMs = "abortCompletionThrottlingMs".asInstanceOf[abortCompletionThrottlingMs]
-  @scala.inline
-  def allowS3ExistenceOptimization: allowS3ExistenceOptimization = "allowS3ExistenceOptimization".asInstanceOf[allowS3ExistenceOptimization]
-  @scala.inline
-  def awsRegion: awsRegion = "awsRegion".asInstanceOf[awsRegion]
-  @scala.inline
-  def awsSignatureVersion: awsSignatureVersion = "awsSignatureVersion".asInstanceOf[awsSignatureVersion]
-  @scala.inline
-  def aws_key: aws_key = "aws_key".asInstanceOf[aws_key]
-  @scala.inline
-  def aws_url: aws_url = "aws_url".asInstanceOf[aws_url]
-  @scala.inline
-  def bucket: bucket = "bucket".asInstanceOf[bucket]
-  @scala.inline
-  def cloudfront: cloudfront = "cloudfront".asInstanceOf[cloudfront]
-  @scala.inline
-  def computeContentMd5: computeContentMd5 = "computeContentMd5".asInstanceOf[computeContentMd5]
-  @scala.inline
-  def cryptoHexEncodedHash256: cryptoHexEncodedHash256 = "cryptoHexEncodedHash256".asInstanceOf[cryptoHexEncodedHash256]
-  @scala.inline
-  def cryptoMd5Method: cryptoMd5Method = "cryptoMd5Method".asInstanceOf[cryptoMd5Method]
-  @scala.inline
-  def customAuthMethod: customAuthMethod = "customAuthMethod".asInstanceOf[customAuthMethod]
-  @scala.inline
-  def encodeFilename: encodeFilename = "encodeFilename".asInstanceOf[encodeFilename]
-  @scala.inline
-  def evaporateChanged: evaporateChanged = "evaporateChanged".asInstanceOf[evaporateChanged]
-  @scala.inline
-  def localTimeOffset: localTimeOffset = "localTimeOffset".asInstanceOf[localTimeOffset]
-  @scala.inline
-  def logging: logging = "logging".asInstanceOf[logging]
-  @scala.inline
-  def maxConcurrentParts: maxConcurrentParts = "maxConcurrentParts".asInstanceOf[maxConcurrentParts]
-  @scala.inline
-  def maxFileSize: maxFileSize = "maxFileSize".asInstanceOf[maxFileSize]
-  @scala.inline
-  def maxRetryBackoffSecs: maxRetryBackoffSecs = "maxRetryBackoffSecs".asInstanceOf[maxRetryBackoffSecs]
-  @scala.inline
-  def mockLocalStorage: mockLocalStorage = "mockLocalStorage".asInstanceOf[mockLocalStorage]
-  @scala.inline
-  def onlyRetryForSameFileName: onlyRetryForSameFileName = "onlyRetryForSameFileName".asInstanceOf[onlyRetryForSameFileName]
-  @scala.inline
-  def partSize: partSize = "partSize".asInstanceOf[partSize]
-  @scala.inline
-  def progressIntervalMS: progressIntervalMS = "progressIntervalMS".asInstanceOf[progressIntervalMS]
-  @scala.inline
-  def readableStreamPartMethod: readableStreamPartMethod = "readableStreamPartMethod".asInstanceOf[readableStreamPartMethod]
-  @scala.inline
-  def readableStreams: readableStreams = "readableStreams".asInstanceOf[readableStreams]
-  @scala.inline
-  def retryBackoffPower: retryBackoffPower = "retryBackoffPower".asInstanceOf[retryBackoffPower]
-  @scala.inline
-  def s3Acceleration: s3Acceleration = "s3Acceleration".asInstanceOf[s3Acceleration]
-  @scala.inline
-  def s3FileCacheHoursAgo: s3FileCacheHoursAgo = "s3FileCacheHoursAgo".asInstanceOf[s3FileCacheHoursAgo]
-  @scala.inline
-  def sendCanonicalRequestToSignerUrl: sendCanonicalRequestToSignerUrl = "sendCanonicalRequestToSignerUrl".asInstanceOf[sendCanonicalRequestToSignerUrl]
-  @scala.inline
-  def signHeaders: signHeaders = "signHeaders".asInstanceOf[signHeaders]
-  @scala.inline
-  def signParams: signParams = "signParams".asInstanceOf[signParams]
-  @scala.inline
-  def signResponseHandler: signResponseHandler = "signResponseHandler".asInstanceOf[signResponseHandler]
-  @scala.inline
-  def signerUrl: signerUrl = "signerUrl".asInstanceOf[signerUrl]
-  @scala.inline
-  def timeUrl: timeUrl = "timeUrl".asInstanceOf[timeUrl]
-  @scala.inline
-  def xhrWithCredentials: xhrWithCredentials = "xhrWithCredentials".asInstanceOf[xhrWithCredentials]
+  @js.native
+  sealed trait xhrWithCredentials
+    extends StObject
+       with AddOverrideOptionKeys
+  inline def xhrWithCredentials: xhrWithCredentials = "xhrWithCredentials".asInstanceOf[xhrWithCredentials]
 }
-

@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "semantic-ui-react" : "0.88.2"
+      "semantic-ui-react" : "2.1.3"
     }
   ],
   "test-dependencies" : [
     {
-      "semantic-ui-react" : "0.88.2"
+      "semantic-ui-react" : "2.1.3"
     }
   ],
   "compile-devDependencies" : [

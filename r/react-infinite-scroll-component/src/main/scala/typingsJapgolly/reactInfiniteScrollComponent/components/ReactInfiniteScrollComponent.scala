@@ -1,73 +1,98 @@
 package typingsJapgolly.reactInfiniteScrollComponent.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.CallbackTo
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactInfiniteScrollComponent.mod.InfiniteScrollProps
-import typingsJapgolly.reactInfiniteScrollComponent.mod.^
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.reactInfiniteScrollComponent.mod.Props
+import typingsJapgolly.reactInfiniteScrollComponent.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactInfiniteScrollComponent {
-  def apply(
-    dataLength: Double,
-    hasMore: Boolean,
-    next: Callback,
-    className: String = null,
-    endMessage: VdomNode = null,
-    hasChildren: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    initialScrollY: Int | Double = null,
-    loader: VdomNode = null,
-    onScroll: js.UndefOr[Callback] = js.undefined,
-    pullDownToRefresh: js.UndefOr[Boolean] = js.undefined,
-    pullDownToRefreshContent: VdomNode = null,
-    pullDownToRefreshThreshold: Int | Double = null,
-    refreshFunction: js.UndefOr[Callback] = js.undefined,
-    releaseToRefreshContent: VdomNode = null,
-    scrollThreshold: Double | String = null,
-    scrollableTarget: Node | String = null,
-    style: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[InfiniteScrollProps, ^, Unit, InfiniteScrollProps] = {
-    val __obj = js.Dynamic.literal(dataLength = dataLength.asInstanceOf[js.Any], hasMore = hasMore.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("next")(next.toJsFn)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (initialScrollY != null) __obj.updateDynamic("initialScrollY")(initialScrollY.asInstanceOf[js.Any])
-    if (loader != null) __obj.updateDynamic("loader")(loader.rawNode.asInstanceOf[js.Any])
-    onScroll.foreach(p => __obj.updateDynamic("onScroll")(p.toJsFn))
-    if (!js.isUndefined(pullDownToRefresh)) __obj.updateDynamic("pullDownToRefresh")(pullDownToRefresh.asInstanceOf[js.Any])
-    if (pullDownToRefreshContent != null) __obj.updateDynamic("pullDownToRefreshContent")(pullDownToRefreshContent.rawNode.asInstanceOf[js.Any])
-    if (pullDownToRefreshThreshold != null) __obj.updateDynamic("pullDownToRefreshThreshold")(pullDownToRefreshThreshold.asInstanceOf[js.Any])
-    refreshFunction.foreach(p => __obj.updateDynamic("refreshFunction")(p.toJsFn))
-    if (releaseToRefreshContent != null) __obj.updateDynamic("releaseToRefreshContent")(releaseToRefreshContent.rawNode.asInstanceOf[js.Any])
-    if (scrollThreshold != null) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])
-    if (scrollableTarget != null) __obj.updateDynamic("scrollableTarget")(scrollableTarget.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactInfiniteScrollComponent.mod.InfiniteScrollProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactInfiniteScrollComponent.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactInfiniteScrollComponent.mod.InfiniteScrollProps])(children: _*)
+  inline def apply(dataLength: Double, hasMore: Boolean, next: CallbackTo[Any]): Builder = {
+    val __props = js.Dynamic.literal(dataLength = dataLength.asInstanceOf[js.Any], hasMore = hasMore.asInstanceOf[js.Any], next = next.toJsFn)
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
-  @JSImport("react-infinite-scroll-component", JSImport.Namespace)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-infinite-scroll-component", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def endMessage(value: VdomNode): this.type = set("endMessage", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def endMessageNull: this.type = set("endMessage", null)
+    
+    inline def endMessageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("endMessage", js.Array(value*))
+    
+    inline def endMessageVdomElement(value: VdomElement): this.type = set("endMessage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def hasChildren(value: Boolean): this.type = set("hasChildren", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double | String): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def initialScrollY(value: Double): this.type = set("initialScrollY", value.asInstanceOf[js.Any])
+    
+    inline def inverse(value: Boolean): this.type = set("inverse", value.asInstanceOf[js.Any])
+    
+    inline def loader(value: VdomNode): this.type = set("loader", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def loaderNull: this.type = set("loader", null)
+    
+    inline def loaderVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("loader", js.Array(value*))
+    
+    inline def loaderVdomElement(value: VdomElement): this.type = set("loader", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onScroll(value: /* e */ MouseEvent => Any): this.type = set("onScroll", js.Any.fromFunction1(value))
+    
+    inline def pullDownToRefresh(value: Boolean): this.type = set("pullDownToRefresh", value.asInstanceOf[js.Any])
+    
+    inline def pullDownToRefreshContent(value: VdomNode): this.type = set("pullDownToRefreshContent", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def pullDownToRefreshContentNull: this.type = set("pullDownToRefreshContent", null)
+    
+    inline def pullDownToRefreshContentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("pullDownToRefreshContent", js.Array(value*))
+    
+    inline def pullDownToRefreshContentVdomElement(value: VdomElement): this.type = set("pullDownToRefreshContent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def pullDownToRefreshThreshold(value: Double): this.type = set("pullDownToRefreshThreshold", value.asInstanceOf[js.Any])
+    
+    inline def refreshFunction(value: CallbackTo[Any]): this.type = set("refreshFunction", value.toJsFn)
+    
+    inline def releaseToRefreshContent(value: VdomNode): this.type = set("releaseToRefreshContent", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def releaseToRefreshContentNull: this.type = set("releaseToRefreshContent", null)
+    
+    inline def releaseToRefreshContentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("releaseToRefreshContent", js.Array(value*))
+    
+    inline def releaseToRefreshContentVdomElement(value: VdomElement): this.type = set("releaseToRefreshContent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def scrollThreshold(value: Double | String): this.type = set("scrollThreshold", value.asInstanceOf[js.Any])
+    
+    inline def scrollableTarget(value: VdomNode): this.type = set("scrollableTarget", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def scrollableTargetNull: this.type = set("scrollableTarget", null)
+    
+    inline def scrollableTargetVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("scrollableTarget", js.Array(value*))
+    
+    inline def scrollableTargetVdomElement(value: VdomElement): this.type = set("scrollableTarget", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

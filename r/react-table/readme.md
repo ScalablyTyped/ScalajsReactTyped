@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-table
 
-Typings are for version 7.0
+Typings are for version 7.7
 
 ## Library description:
 Hooks for building lightweight, fast and extendable datagrids for React
@@ -10,15 +10,13 @@ Hooks for building lightweight, fast and extendable datagrids for React
 | ------------------ | :-------------: |
 | Full name          | react-table |
 | Keywords           | react, table, react-table, datagrid |
-| # releases         | 97 |
-| # dependents       | 251 |
-| # downloads        | 12455853 |
-| # stars            | 18 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 4916286.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/tannerlinsley/react-table#readme)
-- [Bugs](https://github.com/tannerlinsley/react-table/issues)
-- [Repository](https://github.com/tannerlinsley/react-table)
+- [Homepage](https://react-table.tanstack.com/)
 - [Npm](https://www.npmjs.com/package/react-table)
     
 

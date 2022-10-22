@@ -1,48 +1,76 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonElementEvent
-import typingsJapgolly.devextreme.devextremeStrings.back
-import typingsJapgolly.devextreme.devextremeStrings.danger
-import typingsJapgolly.devextreme.devextremeStrings.default_
-import typingsJapgolly.devextreme.devextremeStrings.normal
-import typingsJapgolly.devextreme.devextremeStrings.success
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.PointerEvent
+import typingsJapgolly.devextreme.mod.DevExpress.common.ButtonStyle
+import typingsJapgolly.devextreme.mod.DevExpress.common.ButtonType
+import typingsJapgolly.devextreme.mod.DevExpress.events.NativeEventInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxActionSheetItem extends CollectionWidgetItem {
-  /** Specifies the icon to be displayed on the action sheet button. */
+trait dxActionSheetItem[TKey]
+  extends StObject
+     with CollectionWidgetItem {
+  
+  /**
+    * Specifies the icon to be displayed on the action sheet button.
+    */
   var icon: js.UndefOr[String] = js.undefined
-  /** A handler for the click event raised for the button representing the given action sheet button. */
-  var onClick: js.UndefOr[(js.Function1[/* e */ AnonElementEvent, _]) | String] = js.undefined
-  /** Specifies the type of the button that represents an action sheet item. */
-  var `type`: js.UndefOr[back | danger | default_ | normal | success] = js.undefined
+  
+  /**
+    * A handler for the click event raised for the button representing the given action sheet button.
+    */
+  var onClick: js.UndefOr[
+    (js.Function1[
+      /* e */ NativeEventInfo[dxActionSheet[this.type, TKey], MouseEvent | PointerEvent], 
+      Unit
+    ]) | String
+  ] = js.undefined
+  
+  /**
+    * Specifies which style to apply to the button that is an action sheet item.
+    */
+  var stylingMode: js.UndefOr[ButtonStyle] = js.undefined
+  
+  /**
+    * Specifies the type of the button that is an action sheet item.
+    */
+  var `type`: js.UndefOr[ButtonType] = js.undefined
 }
-
 object dxActionSheetItem {
-  @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    onClick: (js.Function1[/* e */ AnonElementEvent, _]) | String = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    `type`: back | danger | default_ | normal | success = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxActionSheetItem = {
+  
+  inline def apply[TKey](): dxActionSheetItem[TKey] = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    __obj.asInstanceOf[dxActionSheetItem]
+    __obj.asInstanceOf[dxActionSheetItem[TKey]]
+  }
+  
+  extension [Self <: dxActionSheetItem[?], TKey](x: Self & dxActionSheetItem[TKey]) {
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setOnClick(
+      value: (js.Function1[
+          /* e */ NativeEventInfo[dxActionSheet[dxActionSheetItem[TKey], TKey], MouseEvent | PointerEvent], 
+          Unit
+        ]) | String
+    ): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnClickFunction1(
+      value: /* e */ NativeEventInfo[dxActionSheet[dxActionSheetItem[TKey], TKey], MouseEvent | PointerEvent] => Callback
+    ): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: /* e */ NativeEventInfo[dxActionSheet[dxActionSheetItem[TKey], TKey], MouseEvent | PointerEvent]) => value(t0).runNow()))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setStylingMode(value: ButtonStyle): Self = StObject.set(x, "stylingMode", value.asInstanceOf[js.Any])
+    
+    inline def setStylingModeUndefined: Self = StObject.set(x, "stylingMode", js.undefined)
+    
+    inline def setType(value: ButtonType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }
-

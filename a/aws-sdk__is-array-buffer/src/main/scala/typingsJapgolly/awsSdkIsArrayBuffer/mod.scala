@@ -1,12 +1,14 @@
 package typingsJapgolly.awsSdkIsArrayBuffer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/is-array-buffer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isArrayBuffer(arg: js.Any): /* is std.ArrayBuffer */ Boolean = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/is-array-buffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isArrayBuffer(arg: Any): /* is std.ArrayBuffer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBuffer")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.ArrayBuffer */ Boolean]
 }
-

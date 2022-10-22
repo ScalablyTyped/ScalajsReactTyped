@@ -1,21 +1,27 @@
 package typingsJapgolly.thrift.mod
 
 import typingsJapgolly.thrift.mod.Thrift.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TSet extends js.Object {
+trait TSet extends StObject {
+  
   var etype: Type
+  
   var size: Double
 }
-
 object TSet {
-  @scala.inline
-  def apply(etype: Type, size: Double): TSet = {
-    val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
   
+  inline def apply(etype: Type, size: Double): TSet = {
+    val __obj = js.Dynamic.literal(etype = etype.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[TSet]
   }
+  
+  extension [Self <: TSet](x: Self) {
+    
+    inline def setEtype(value: Type): Self = StObject.set(x, "etype", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+  }
 }
-

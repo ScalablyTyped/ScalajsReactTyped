@@ -1,66 +1,78 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`lower-left`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`upper-left`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.edit
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.view
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait QueryQuantizationParameters extends Object {
+trait QueryQuantizationParameters
+  extends StObject
+     with Object {
+  
   /**
-    * An extent defining the quantization grid bounds. Its [SpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html) matches the input geometry spatial reference if one is specified for the query. Otherwise, the extent will be in the layer's spatial reference.
+    * An extent defining the quantization grid bounds.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
     */
   var extent: js.UndefOr[Extent] = js.undefined
+  
   /**
     * Geometry coordinates are optimized for viewing and displaying of data.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
     */
   var mode: js.UndefOr[view | edit] = js.undefined
+  
   /**
     * The integer's coordinates will be returned relative to the origin position defined by this property value.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
-    *
     * @default upper-left
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
     */
   var originPosition: js.UndefOr[`upper-left` | `lower-left`] = js.undefined
+  
   /**
-    * The size of one pixel in the units of the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference). This number is used to convert coordinates to integers by building a grid with a resolution matching the tolerance. Each coordinate is then snapped to one pixel on the grid. Consecutive coordinates snapped to the same pixel are removed for reducing the overall response size. The units of tolerance will match the units of [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#outSpatialReference). If `outSpatialReference` is not specified, then tolerance is assumed to be in the units of the spatial reference of the layer. If tolerance is not specified, the [maxAllowableOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#maxAllowableOffset) is used. If tolerance and `maxAllowableOffset` are not specified, a grid of 10,000 * 10,000 grid is used by default.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#quantizationParameters)
+    * The size of one pixel in the units of the [outSpatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#outSpatialReference).
     *
     * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Query.html#quantizationParameters)
     */
   var tolerance: js.UndefOr[Double] = js.undefined
 }
-
 object QueryQuantizationParameters {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    extent: Extent = null,
-    mode: view | edit = null,
-    originPosition: `upper-left` | `lower-left` = null,
-    tolerance: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): QueryQuantizationParameters = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (originPosition != null) __obj.updateDynamic("originPosition")(originPosition.asInstanceOf[js.Any])
-    if (tolerance != null) __obj.updateDynamic("tolerance")(tolerance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[QueryQuantizationParameters]
   }
+  
+  extension [Self <: QueryQuantizationParameters](x: Self) {
+    
+    inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setMode(value: view | edit): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setOriginPosition(value: `upper-left` | `lower-left`): Self = StObject.set(x, "originPosition", value.asInstanceOf[js.Any])
+    
+    inline def setOriginPositionUndefined: Self = StObject.set(x, "originPosition", js.undefined)
+    
+    inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
+    
+    inline def setToleranceUndefined: Self = StObject.set(x, "tolerance", js.undefined)
+  }
 }
-

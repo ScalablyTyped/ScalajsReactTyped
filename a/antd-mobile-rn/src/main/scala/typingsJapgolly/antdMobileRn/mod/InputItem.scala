@@ -1,19 +1,23 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonClear
-import typingsJapgolly.antdMobileRn.inputItemIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.Clear
+import typingsJapgolly.antdMobileRn.libInputItemIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "InputItem")
 @js.native
-class InputItem () extends default
-
+open class InputItem () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "InputItem")
-@js.native
-object InputItem extends js.Object {
-  var defaultProps: AnonClear = js.native
+object InputItem {
+  
+  @JSImport("antd-mobile-rn", "InputItem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "InputItem.defaultProps")
+  @js.native
+  def defaultProps: Clear = js.native
+  inline def defaultProps_=(x: Clear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

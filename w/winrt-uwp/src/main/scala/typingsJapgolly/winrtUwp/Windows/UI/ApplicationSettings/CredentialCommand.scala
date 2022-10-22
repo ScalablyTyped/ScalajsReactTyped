@@ -1,31 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.UI.ApplicationSettings
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrtUwp.Windows.Security.Credentials.PasswordCredential
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Deprecated. Represents a command for changing web account credentials in the account settings pane. */
-@JSGlobal("Windows.UI.ApplicationSettings.CredentialCommand")
-@js.native
-class CredentialCommand protected () extends js.Object {
-  /**
-    * Initializes a new instance of the CredentialCommand class with a PasswordCredential object.
-    * @param passwordCredential The password credential.
-    */
-  def this(passwordCredential: PasswordCredential) = this()
-  /**
-    * Initializes a new instance of the CredentialCommand class with a PasswordCredential object and a CredentialCommandCredentialDeletedHandler delegate.
-    * @param passwordCredential The password credential.
-    * @param deleted The delegate that handles credential deletion.
-    */
-  def this(passwordCredential: PasswordCredential, deleted: CredentialCommandCredentialDeletedHandler) = this()
+trait CredentialCommand extends StObject {
+  
+  /** Gets the delegate that's invoked by the account settings pane when the user deletes a credential. */
+  def credentialDeleted(command: CredentialCommand): Unit
   /** Gets the delegate that's invoked by the account settings pane when the user deletes a credential. */
   @JSName("credentialDeleted")
-  var credentialDeleted_Original: CredentialCommandCredentialDeletedHandler = js.native
+  var credentialDeleted_Original: CredentialCommandCredentialDeletedHandler
+  
   /** Gets the password credential that the current command applies to. */
-  var passwordCredential: PasswordCredential = js.native
-  /** Gets the delegate that's invoked by the account settings pane when the user deletes a credential. */
-  def credentialDeleted(command: CredentialCommand): Unit = js.native
+  var passwordCredential: PasswordCredential
 }
-
+object CredentialCommand {
+  
+  inline def apply(
+    credentialDeleted: /* command */ CredentialCommand => Callback,
+    passwordCredential: PasswordCredential
+  ): CredentialCommand = {
+    val __obj = js.Dynamic.literal(credentialDeleted = js.Any.fromFunction1((t0: /* command */ CredentialCommand) => credentialDeleted(t0).runNow()), passwordCredential = passwordCredential.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CredentialCommand]
+  }
+  
+  extension [Self <: CredentialCommand](x: Self) {
+    
+    inline def setCredentialDeleted(value: /* command */ CredentialCommand => Callback): Self = StObject.set(x, "credentialDeleted", js.Any.fromFunction1((t0: /* command */ CredentialCommand) => value(t0).runNow()))
+    
+    inline def setPasswordCredential(value: PasswordCredential): Self = StObject.set(x, "passwordCredential", value.asInstanceOf[js.Any])
+  }
+}

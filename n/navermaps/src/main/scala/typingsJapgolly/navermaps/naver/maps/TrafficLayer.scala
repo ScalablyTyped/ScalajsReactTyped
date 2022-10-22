@@ -1,15 +1,17 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("naver.maps.TrafficLayer")
 @js.native
-class TrafficLayer () extends LabelLayer {
-  def this(option: TrafficLayerOptions) = this()
-  var name: String = js.native
+trait TrafficLayer
+  extends StObject
+     with Layer {
+  
   def endAutoRefresh(): Unit = js.native
+  
+  var name: String = js.native
+  
   def startAutoRefresh(): Unit = js.native
 }
-

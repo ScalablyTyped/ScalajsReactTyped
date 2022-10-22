@@ -1,35 +1,25 @@
 package typingsJapgolly.materialRadio
 
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialRadio.adapterMod.MDCRadioAdapter
+import typingsJapgolly.materialRadio.anon.PartialMDCRadioAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/radio/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/radio/foundation", JSImport.Default)
   @js.native
-  trait MDCRadioFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCRadioAdapter] {
-    def getValue(): String = js.native
-    def isChecked(): Boolean = js.native
-    def isDisabled(): Boolean = js.native
-    def setChecked(checked: Boolean): Unit = js.native
+  open class default () extends MDCRadioFoundation {
+    def this(adapter: PartialMDCRadioAdapter) = this()
+  }
+  
+  @JSImport("@material/radio/foundation", "MDCRadioFoundation")
+  @js.native
+  open class MDCRadioFoundation () extends MDCFoundation[MDCRadioAdapter] {
+    def this(adapter: PartialMDCRadioAdapter) = this()
+    
     def setDisabled(disabled: Boolean): Unit = js.native
-    def setValue(): Unit = js.native
-    def setValue(value: String): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCRadioFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialRadio.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCRadioAdapter = js.native
-    val strings: typingsJapgolly.materialRadio.constantsMod.strings = js.native
-  }
-  
 }
-

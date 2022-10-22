@@ -1,19 +1,22 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CheckboxColumnOption extends js.Object {
+trait CheckboxColumnOption extends StObject {
+  
   var actionOnCheckbox: ActionOnCellCheckboxCheck
 }
-
 object CheckboxColumnOption {
-  @scala.inline
-  def apply(actionOnCheckbox: ActionOnCellCheckboxCheck): CheckboxColumnOption = {
-    val __obj = js.Dynamic.literal(actionOnCheckbox = actionOnCheckbox.asInstanceOf[js.Any])
   
+  inline def apply(actionOnCheckbox: ActionOnCellCheckboxCheck): CheckboxColumnOption = {
+    val __obj = js.Dynamic.literal(actionOnCheckbox = actionOnCheckbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[CheckboxColumnOption]
   }
+  
+  extension [Self <: CheckboxColumnOption](x: Self) {
+    
+    inline def setActionOnCheckbox(value: ActionOnCellCheckboxCheck): Self = StObject.set(x, "actionOnCheckbox", value.asInstanceOf[js.Any])
+  }
 }
-

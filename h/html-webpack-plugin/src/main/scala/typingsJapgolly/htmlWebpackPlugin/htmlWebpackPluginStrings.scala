@@ -1,44 +1,40 @@
 package typingsJapgolly.htmlWebpackPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlWebpackPluginStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait dependency extends js.Object
+  sealed trait blocking extends StObject
+  inline def blocking: blocking = "blocking".asInstanceOf[blocking]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait body extends StObject
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait defer extends StObject
+  inline def defer: defer = "defer".asInstanceOf[defer]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def body: body = "body".asInstanceOf[body]
-  @scala.inline
-  def dependency: dependency = "dependency".asInstanceOf[dependency]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  @js.native
+  sealed trait manual extends StObject
+  inline def manual: manual = "manual".asInstanceOf[manual]
+  
+  @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
 }
-

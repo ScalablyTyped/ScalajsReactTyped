@@ -1,119 +1,96 @@
 package typingsJapgolly.regexpp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regexppStrings {
-  @js.native
-  sealed trait Alternative extends js.Object
   
   @js.native
-  sealed trait Assertion extends js.Object
+  sealed trait Alternative extends StObject
+  inline def Alternative: Alternative = "Alternative".asInstanceOf[Alternative]
   
   @js.native
-  sealed trait Backreference extends js.Object
+  sealed trait Assertion extends StObject
+  inline def Assertion: Assertion = "Assertion".asInstanceOf[Assertion]
   
   @js.native
-  sealed trait CapturingGroup extends js.Object
+  sealed trait Backreference extends StObject
+  inline def Backreference: Backreference = "Backreference".asInstanceOf[Backreference]
   
   @js.native
-  sealed trait Character extends js.Object
+  sealed trait CapturingGroup extends StObject
+  inline def CapturingGroup: CapturingGroup = "CapturingGroup".asInstanceOf[CapturingGroup]
   
   @js.native
-  sealed trait CharacterClass extends js.Object
+  sealed trait Character extends StObject
+  inline def Character: Character = "Character".asInstanceOf[Character]
   
   @js.native
-  sealed trait CharacterClassRange extends js.Object
+  sealed trait CharacterClass extends StObject
+  inline def CharacterClass: CharacterClass = "CharacterClass".asInstanceOf[CharacterClass]
   
   @js.native
-  sealed trait CharacterSet extends js.Object
+  sealed trait CharacterClassRange extends StObject
+  inline def CharacterClassRange: CharacterClassRange = "CharacterClassRange".asInstanceOf[CharacterClassRange]
   
   @js.native
-  sealed trait Flags extends js.Object
+  sealed trait CharacterSet extends StObject
+  inline def CharacterSet: CharacterSet = "CharacterSet".asInstanceOf[CharacterSet]
   
   @js.native
-  sealed trait Group extends js.Object
+  sealed trait Flags extends StObject
+  inline def Flags: Flags = "Flags".asInstanceOf[Flags]
   
   @js.native
-  sealed trait Pattern extends js.Object
+  sealed trait Group extends StObject
+  inline def Group: Group = "Group".asInstanceOf[Group]
   
   @js.native
-  sealed trait Quantifier extends js.Object
+  sealed trait Pattern extends StObject
+  inline def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
   
   @js.native
-  sealed trait RegExpLiteral extends js.Object
+  sealed trait Quantifier extends StObject
+  inline def Quantifier: Quantifier = "Quantifier".asInstanceOf[Quantifier]
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait RegExpLiteral extends StObject
+  inline def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
   
   @js.native
-  sealed trait digit extends js.Object
+  sealed trait any extends StObject
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait digit extends StObject
+  inline def digit: digit = "digit".asInstanceOf[digit]
   
   @js.native
-  sealed trait lookahead extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait lookbehind extends js.Object
+  sealed trait lookahead extends StObject
+  inline def lookahead: lookahead = "lookahead".asInstanceOf[lookahead]
   
   @js.native
-  sealed trait property extends js.Object
+  sealed trait lookbehind extends StObject
+  inline def lookbehind: lookbehind = "lookbehind".asInstanceOf[lookbehind]
   
   @js.native
-  sealed trait space extends js.Object
+  sealed trait property extends StObject
+  inline def property: property = "property".asInstanceOf[property]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait space extends StObject
+  inline def space: space = "space".asInstanceOf[space]
   
   @js.native
-  sealed trait word extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
-  @scala.inline
-  def Alternative: Alternative = "Alternative".asInstanceOf[Alternative]
-  @scala.inline
-  def Assertion: Assertion = "Assertion".asInstanceOf[Assertion]
-  @scala.inline
-  def Backreference: Backreference = "Backreference".asInstanceOf[Backreference]
-  @scala.inline
-  def CapturingGroup: CapturingGroup = "CapturingGroup".asInstanceOf[CapturingGroup]
-  @scala.inline
-  def Character: Character = "Character".asInstanceOf[Character]
-  @scala.inline
-  def CharacterClass: CharacterClass = "CharacterClass".asInstanceOf[CharacterClass]
-  @scala.inline
-  def CharacterClassRange: CharacterClassRange = "CharacterClassRange".asInstanceOf[CharacterClassRange]
-  @scala.inline
-  def CharacterSet: CharacterSet = "CharacterSet".asInstanceOf[CharacterSet]
-  @scala.inline
-  def Flags: Flags = "Flags".asInstanceOf[Flags]
-  @scala.inline
-  def Group: Group = "Group".asInstanceOf[Group]
-  @scala.inline
-  def Pattern: Pattern = "Pattern".asInstanceOf[Pattern]
-  @scala.inline
-  def Quantifier: Quantifier = "Quantifier".asInstanceOf[Quantifier]
-  @scala.inline
-  def RegExpLiteral: RegExpLiteral = "RegExpLiteral".asInstanceOf[RegExpLiteral]
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def digit: digit = "digit".asInstanceOf[digit]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def lookahead: lookahead = "lookahead".asInstanceOf[lookahead]
-  @scala.inline
-  def lookbehind: lookbehind = "lookbehind".asInstanceOf[lookbehind]
-  @scala.inline
-  def property: property = "property".asInstanceOf[property]
-  @scala.inline
-  def space: space = "space".asInstanceOf[space]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def word: word = "word".asInstanceOf[word]
+  @js.native
+  sealed trait word extends StObject
+  inline def word: word = "word".asInstanceOf[word]
 }
-

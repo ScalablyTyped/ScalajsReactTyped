@@ -1,10 +1,7 @@
 package typingsJapgolly.reactNativeMaterialDesignSearchbar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.ReturnKeyType
 import typingsJapgolly.reactNative.mod.ReturnKeyTypeAndroid
 import typingsJapgolly.reactNative.mod.ReturnKeyTypeIOS
@@ -12,76 +9,70 @@ import typingsJapgolly.reactNative.mod.TextInputProps
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNativeMaterialDesignSearchbar.mod.SearchBarProps
 import typingsJapgolly.reactNativeMaterialDesignSearchbar.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeMaterialDesignSearchbar {
-  def apply(
-    height: Double,
-    alwaysShowBackButton: js.UndefOr[Boolean] = js.undefined,
-    autoCorrect: js.UndefOr[Boolean] = js.undefined,
-    iconBackName: String = null,
-    iconCloseName: String = null,
-    iconColor: String = null,
-    iconPadding: Int | Double = null,
-    iconSearchName: String = null,
-    iconSize: Int | Double = null,
-    inputProps: TextInputProps = null,
-    inputStyle: TextStyle = null,
-    onBackPress: js.UndefOr[Callback] = js.undefined,
-    onBlur: js.UndefOr[Callback] = js.undefined,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onEndEditing: js.UndefOr[Callback] = js.undefined,
-    onFocus: js.UndefOr[Callback] = js.undefined,
-    onSearchChange: /* text */ String => Callback = null,
-    onSubmitEditing: js.UndefOr[Callback] = js.undefined,
-    padding: Int | Double = null,
-    placeholder: String = null,
-    placeholderColor: String = null,
-    returnKeyType: ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS = null,
-    textStyle: TextStyle = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SearchBarProps, default, Unit, SearchBarProps] = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(alwaysShowBackButton)) __obj.updateDynamic("alwaysShowBackButton")(alwaysShowBackButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCorrect)) __obj.updateDynamic("autoCorrect")(autoCorrect.asInstanceOf[js.Any])
-    if (iconBackName != null) __obj.updateDynamic("iconBackName")(iconBackName.asInstanceOf[js.Any])
-    if (iconCloseName != null) __obj.updateDynamic("iconCloseName")(iconCloseName.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (iconPadding != null) __obj.updateDynamic("iconPadding")(iconPadding.asInstanceOf[js.Any])
-    if (iconSearchName != null) __obj.updateDynamic("iconSearchName")(iconSearchName.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    onBackPress.foreach(p => __obj.updateDynamic("onBackPress")(p.toJsFn))
-    onBlur.foreach(p => __obj.updateDynamic("onBlur")(p.toJsFn))
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onEndEditing.foreach(p => __obj.updateDynamic("onEndEditing")(p.toJsFn))
-    onFocus.foreach(p => __obj.updateDynamic("onFocus")(p.toJsFn))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => onSearchChange(t0).runNow()))
-    onSubmitEditing.foreach(p => __obj.updateDynamic("onSubmitEditing")(p.toJsFn))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (placeholderColor != null) __obj.updateDynamic("placeholderColor")(placeholderColor.asInstanceOf[js.Any])
-    if (returnKeyType != null) __obj.updateDynamic("returnKeyType")(returnKeyType.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialDesignSearchbar.mod.SearchBarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialDesignSearchbar.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialDesignSearchbar.mod.SearchBarProps])(children: _*)
+  inline def apply(height: Double): Builder = {
+    val __props = js.Dynamic.literal(height = height.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SearchBarProps]))
   }
+  
   @JSImport("react-native-material-design-searchbar", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def alwaysShowBackButton(value: Boolean): this.type = set("alwaysShowBackButton", value.asInstanceOf[js.Any])
+    
+    inline def autoCorrect(value: Boolean): this.type = set("autoCorrect", value.asInstanceOf[js.Any])
+    
+    inline def iconBackName(value: String): this.type = set("iconBackName", value.asInstanceOf[js.Any])
+    
+    inline def iconCloseName(value: String): this.type = set("iconCloseName", value.asInstanceOf[js.Any])
+    
+    inline def iconColor(value: String): this.type = set("iconColor", value.asInstanceOf[js.Any])
+    
+    inline def iconPadding(value: Double): this.type = set("iconPadding", value.asInstanceOf[js.Any])
+    
+    inline def iconSearchName(value: String): this.type = set("iconSearchName", value.asInstanceOf[js.Any])
+    
+    inline def iconSize(value: Double): this.type = set("iconSize", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: TextInputProps): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def inputStyle(value: TextStyle): this.type = set("inputStyle", value.asInstanceOf[js.Any])
+    
+    inline def onBackPress(value: Callback): this.type = set("onBackPress", value.toJsFn)
+    
+    inline def onBlur(value: Callback): this.type = set("onBlur", value.toJsFn)
+    
+    inline def onClose(value: Callback): this.type = set("onClose", value.toJsFn)
+    
+    inline def onEndEditing(value: Callback): this.type = set("onEndEditing", value.toJsFn)
+    
+    inline def onFocus(value: Callback): this.type = set("onFocus", value.toJsFn)
+    
+    inline def onSearchChange(value: /* text */ String => Callback): this.type = set("onSearchChange", js.Any.fromFunction1((t0: /* text */ String) => value(t0).runNow()))
+    
+    inline def onSubmitEditing(value: Callback): this.type = set("onSubmitEditing", value.toJsFn)
+    
+    inline def padding(value: Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def placeholderColor(value: String): this.type = set("placeholderColor", value.asInstanceOf[js.Any])
+    
+    inline def returnKeyType(value: ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS): this.type = set("returnKeyType", value.asInstanceOf[js.Any])
+    
+    inline def textStyle(value: TextStyle): this.type = set("textStyle", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SearchBarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

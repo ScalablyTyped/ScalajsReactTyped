@@ -1,51 +1,79 @@
 package typingsJapgolly.openlayers.mod.olx.source
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.openlayers.mod.Attribution
 import typingsJapgolly.openlayers.mod.AttributionLike
 import typingsJapgolly.openlayers.mod.Extent_
 import typingsJapgolly.openlayers.mod.ProjectionLike
 import typingsJapgolly.openlayers.mod.format.Feature
 import typingsJapgolly.openlayers.mod.geom.Point
 import typingsJapgolly.openlayers.mod.source.Vector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClusterOptions extends js.Object {
+trait ClusterOptions extends StObject {
+  
   var attributions: js.UndefOr[AttributionLike] = js.undefined
+  
   var distance: js.UndefOr[Double] = js.undefined
+  
   var extent: js.UndefOr[Extent_] = js.undefined
+  
   var format: js.UndefOr[Feature] = js.undefined
+  
   var geometryFunction: js.UndefOr[js.Function1[/* feature */ typingsJapgolly.openlayers.mod.Feature, Point]] = js.undefined
+  
   var logo: js.UndefOr[String] = js.undefined
+  
   var projection: js.UndefOr[ProjectionLike] = js.undefined
+  
   var source: Vector
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object ClusterOptions {
-  @scala.inline
-  def apply(
-    source: Vector,
-    attributions: AttributionLike = null,
-    distance: Int | Double = null,
-    extent: Extent_ = null,
-    format: Feature = null,
-    geometryFunction: /* feature */ typingsJapgolly.openlayers.mod.Feature => CallbackTo[Point] = null,
-    logo: String = null,
-    projection: ProjectionLike = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): ClusterOptions = {
+  
+  inline def apply(source: Vector): ClusterOptions = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (attributions != null) __obj.updateDynamic("attributions")(attributions.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (geometryFunction != null) __obj.updateDynamic("geometryFunction")(js.Any.fromFunction1((t0: /* feature */ typingsJapgolly.openlayers.mod.Feature) => geometryFunction(t0).runNow()))
-    if (logo != null) __obj.updateDynamic("logo")(logo.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterOptions]
   }
+  
+  extension [Self <: ClusterOptions](x: Self) {
+    
+    inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+    
+    inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+    
+    inline def setAttributionsVarargs(value: (Attribution | String)*): Self = StObject.set(x, "attributions", js.Array(value*))
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setExtent(value: Extent_): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setFormat(value: Feature): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGeometryFunction(value: /* feature */ typingsJapgolly.openlayers.mod.Feature => Point): Self = StObject.set(x, "geometryFunction", js.Any.fromFunction1(value))
+    
+    inline def setGeometryFunctionUndefined: Self = StObject.set(x, "geometryFunction", js.undefined)
+    
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

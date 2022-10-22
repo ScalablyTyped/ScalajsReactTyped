@@ -2,40 +2,68 @@ package typingsJapgolly.reactEmailEditor.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EmailEditorProps extends js.Object {
+trait EmailEditorProps extends StObject {
+  
   val appearance: js.UndefOr[AppearanceConfig] = js.undefined
-  val minHeight: js.UndefOr[Double] = js.undefined
+  
+  val minHeight: js.UndefOr[Double | String] = js.undefined
+  
+  /** @deprecated Use **onReady** instead */
   var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   val options: js.UndefOr[UnlayerOptions] = js.undefined
+  
   val projectId: js.UndefOr[Double] = js.undefined
+  
   val style: js.UndefOr[CSSProperties] = js.undefined
+  
   val tools: js.UndefOr[ToolsConfig] = js.undefined
 }
-
 object EmailEditorProps {
-  @scala.inline
-  def apply(
-    appearance: AppearanceConfig = null,
-    minHeight: Int | Double = null,
-    onLoad: js.UndefOr[Callback] = js.undefined,
-    options: UnlayerOptions = null,
-    projectId: Int | Double = null,
-    style: CSSProperties = null,
-    tools: ToolsConfig = null
-  ): EmailEditorProps = {
+  
+  inline def apply(): EmailEditorProps = {
     val __obj = js.Dynamic.literal()
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    onLoad.foreach(p => __obj.updateDynamic("onLoad")(p.toJsFn))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
     __obj.asInstanceOf[EmailEditorProps]
   }
+  
+  extension [Self <: EmailEditorProps](x: Self) {
+    
+    inline def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    
+    inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    
+    inline def setMinHeight(value: Double | String): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setOnLoad(value: Callback): Self = StObject.set(x, "onLoad", value.toJsFn)
+    
+    inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+    
+    inline def setOnReady(value: Callback): Self = StObject.set(x, "onReady", value.toJsFn)
+    
+    inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+    
+    inline def setOptions(value: UnlayerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTools(value: ToolsConfig): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+  }
 }
-

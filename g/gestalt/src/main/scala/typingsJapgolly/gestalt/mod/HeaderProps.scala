@@ -1,82 +1,113 @@
 package typingsJapgolly.gestalt.mod
 
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import typingsJapgolly.gestalt.gestaltNumbers.`1`
-import typingsJapgolly.gestalt.gestaltNumbers.`2`
-import typingsJapgolly.gestalt.gestaltNumbers.`3`
-import typingsJapgolly.gestalt.gestaltNumbers.`4`
-import typingsJapgolly.gestalt.gestaltNumbers.`5`
-import typingsJapgolly.gestalt.gestaltNumbers.`6`
-import typingsJapgolly.gestalt.gestaltStrings.blue
+import typingsJapgolly.gestalt.gestaltInts.`1`
+import typingsJapgolly.gestalt.gestaltInts.`2`
+import typingsJapgolly.gestalt.gestaltInts.`3`
+import typingsJapgolly.gestalt.gestaltInts.`4`
+import typingsJapgolly.gestalt.gestaltInts.`5`
+import typingsJapgolly.gestalt.gestaltInts.`6`
+import typingsJapgolly.gestalt.gestaltStrings.`100`
+import typingsJapgolly.gestalt.gestaltStrings.`200`
+import typingsJapgolly.gestalt.gestaltStrings.`300`
+import typingsJapgolly.gestalt.gestaltStrings.`400`
+import typingsJapgolly.gestalt.gestaltStrings.`500`
+import typingsJapgolly.gestalt.gestaltStrings.`600`
 import typingsJapgolly.gestalt.gestaltStrings.breakWord
-import typingsJapgolly.gestalt.gestaltStrings.darkGray
-import typingsJapgolly.gestalt.gestaltStrings.eggplant
-import typingsJapgolly.gestalt.gestaltStrings.gray
-import typingsJapgolly.gestalt.gestaltStrings.green
-import typingsJapgolly.gestalt.gestaltStrings.lg
-import typingsJapgolly.gestalt.gestaltStrings.lightGray
-import typingsJapgolly.gestalt.gestaltStrings.maroon
-import typingsJapgolly.gestalt.gestaltStrings.md
-import typingsJapgolly.gestalt.gestaltStrings.midnight
-import typingsJapgolly.gestalt.gestaltStrings.navy
+import typingsJapgolly.gestalt.gestaltStrings.center
+import typingsJapgolly.gestalt.gestaltStrings.dark
+import typingsJapgolly.gestalt.gestaltStrings.default
+import typingsJapgolly.gestalt.gestaltStrings.end
+import typingsJapgolly.gestalt.gestaltStrings.error
+import typingsJapgolly.gestalt.gestaltStrings.forceLeft
+import typingsJapgolly.gestalt.gestaltStrings.forceRight
+import typingsJapgolly.gestalt.gestaltStrings.inverse
+import typingsJapgolly.gestalt.gestaltStrings.light
+import typingsJapgolly.gestalt.gestaltStrings.none
 import typingsJapgolly.gestalt.gestaltStrings.normal
-import typingsJapgolly.gestalt.gestaltStrings.olive
-import typingsJapgolly.gestalt.gestaltStrings.orange
-import typingsJapgolly.gestalt.gestaltStrings.orchid
-import typingsJapgolly.gestalt.gestaltStrings.pine
-import typingsJapgolly.gestalt.gestaltStrings.purple
-import typingsJapgolly.gestalt.gestaltStrings.red
-import typingsJapgolly.gestalt.gestaltStrings.sm
-import typingsJapgolly.gestalt.gestaltStrings.watermelon
-import typingsJapgolly.gestalt.gestaltStrings.white
-import typingsJapgolly.gestalt.gestaltStrings.xl
-import typingsJapgolly.gestalt.gestaltStrings.xs
+import typingsJapgolly.gestalt.gestaltStrings.shopping
+import typingsJapgolly.gestalt.gestaltStrings.start
+import typingsJapgolly.gestalt.gestaltStrings.subtle
+import typingsJapgolly.gestalt.gestaltStrings.success
+import typingsJapgolly.gestalt.gestaltStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeaderProps extends js.Object {
-  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
+trait HeaderProps extends StObject {
+  
+  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | none] = js.undefined
+  
+  var align: js.UndefOr[start | end | center | forceLeft | forceRight] = js.undefined
+  
   var children: js.UndefOr[Node] = js.undefined
-  var color: js.UndefOr[
-    blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.undefined
+  
+  var color: js.UndefOr[default | subtle | success | error | warning | shopping | inverse | light | dark] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
-  var lgSize: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
-  var mdSize: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
+  
+  var lineClamp: js.UndefOr[Double] = js.undefined
+  
   var overflow: js.UndefOr[normal | breakWord] = js.undefined
-  var size: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
-  var smSize: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
+  
+  var size: js.UndefOr[`100` | `200` | `300` | `400` | `500` | `600`] = js.undefined
+  
   var truncate: js.UndefOr[Boolean] = js.undefined
 }
-
 object HeaderProps {
-  @scala.inline
-  def apply(
-    accessibilityLevel: `1` | `2` | `3` | `4` | `5` | `6` = null,
-    children: VdomNode = null,
-    color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
-    id: String = null,
-    lgSize: xs | sm | md | lg | xl = null,
-    mdSize: xs | sm | md | lg | xl = null,
-    overflow: normal | breakWord = null,
-    size: xs | sm | md | lg | xl = null,
-    smSize: xs | sm | md | lg | xl = null,
-    truncate: js.UndefOr[Boolean] = js.undefined
-  ): HeaderProps = {
+  
+  inline def apply(): HeaderProps = {
     val __obj = js.Dynamic.literal()
-    if (accessibilityLevel != null) __obj.updateDynamic("accessibilityLevel")(accessibilityLevel.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lgSize != null) __obj.updateDynamic("lgSize")(lgSize.asInstanceOf[js.Any])
-    if (mdSize != null) __obj.updateDynamic("mdSize")(mdSize.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (smSize != null) __obj.updateDynamic("smSize")(smSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderProps]
   }
+  
+  extension [Self <: HeaderProps](x: Self) {
+    
+    inline def setAccessibilityLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | none): Self = StObject.set(x, "accessibilityLevel", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityLevelUndefined: Self = StObject.set(x, "accessibilityLevel", js.undefined)
+    
+    inline def setAlign(value: start | end | center | forceLeft | forceRight): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setColor(value: default | subtle | success | error | warning | shopping | inverse | light | dark): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLineClamp(value: Double): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
+    
+    inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
+    
+    inline def setOverflow(value: normal | breakWord): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setSize(value: `100` | `200` | `300` | `400` | `500` | `600`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+    
+    inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+  }
 }
-

@@ -1,23 +1,22 @@
 package typingsJapgolly.jsforce.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("jsforce", "StreamingExtension")
-@js.native
-object StreamingExtension extends js.Object {
+object StreamingExtension {
+  
+  @JSImport("jsforce", "StreamingExtension.AuthFailure")
   @js.native
-  class AuthFailure protected ()
+  open class AuthFailure protected ()
     extends typingsJapgolly.jsforce.streamingMod.StreamingExtension.AuthFailure {
-    def this(failureCallback: js.Function0[_]) = this()
+    def this(failureCallback: js.Function0[Any]) = this()
   }
   
+  @JSImport("jsforce", "StreamingExtension.Replay")
   @js.native
-  class Replay protected ()
+  open class Replay protected ()
     extends typingsJapgolly.jsforce.streamingMod.StreamingExtension.Replay {
     def this(channel: String, replayId: Double) = this()
   }
-  
 }
-

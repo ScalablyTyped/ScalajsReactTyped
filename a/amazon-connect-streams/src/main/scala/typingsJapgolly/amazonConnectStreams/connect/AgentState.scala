@@ -1,45 +1,42 @@
 package typingsJapgolly.amazonConnectStreams.connect
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * An object containing the current Agent state
-  */
-trait AgentState extends js.Object {
-  /**
-    * A relative local state duration. To get the actual duration of the state relative
-    * to the current time, use agent.getStateDuration().
-    */
-  var duration: js.UndefOr[Double] = js.undefined
-  /**
-    * Indicates whether the agent is currently muted.
-    */
-  var muted: js.UndefOr[Boolean] = js.undefined
-  /**
-    * The name of the agent's current availability state.
-    */
-  var name: String
-  /**
-    * The agent's current availability state type, as per the AgentStateType enumeration.
-    */
-  var `type`: AgentStateType
+/** An object containing the current Agent state. */
+trait AgentState extends StObject {
+  
+  /** The agent's current state ARN. */
+  val agentStateARN: String | Null
+  
+  /** The name of the agent's current availability state. */
+  val name: String
+  
+  /** Indicates when the state was set. */
+  val startTimestamp: js.Date
+  
+  /** The agent's current availability state type, as per the `AgentStateType` enumeration. */
+  val `type`: AgentStateType
 }
-
 object AgentState {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: AgentStateType,
-    duration: Int | Double = null,
-    muted: js.UndefOr[Boolean] = js.undefined
-  ): AgentState = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  
+  inline def apply(name: String, startTimestamp: js.Date, `type`: AgentStateType): AgentState = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], startTimestamp = startTimestamp.asInstanceOf[js.Any], agentStateARN = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentState]
   }
+  
+  extension [Self <: AgentState](x: Self) {
+    
+    inline def setAgentStateARN(value: String): Self = StObject.set(x, "agentStateARN", value.asInstanceOf[js.Any])
+    
+    inline def setAgentStateARNNull: Self = StObject.set(x, "agentStateARN", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimestamp(value: js.Date): Self = StObject.set(x, "startTimestamp", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: AgentStateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

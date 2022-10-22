@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowPersonalToWork
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.noRestrictions
 */
-trait AndroidWorkProfileCrossProfileDataSharingType extends js.Object
-
+trait AndroidWorkProfileCrossProfileDataSharingType extends StObject
 object AndroidWorkProfileCrossProfileDataSharingType {
-  @scala.inline
-  def allowPersonalToWork: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowPersonalToWork = this.cast("allowPersonalToWork")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
-  @scala.inline
-  def noRestrictions: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noRestrictions = this.cast("noRestrictions")
-  @scala.inline
-  def preventAny: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preventAny = this.cast("preventAny")
+  
+  inline def allowPersonalToWork: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowPersonalToWork = "allowPersonalToWork".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowPersonalToWork]
+  
+  inline def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
+  inline def noRestrictions: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noRestrictions = "noRestrictions".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.noRestrictions]
+  
+  inline def preventAny: typingsJapgolly.microsoftGraph.microsoftGraphStrings.preventAny = "preventAny".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.preventAny]
 }
-

@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChatRenderMessageSender extends js.Object {
+trait ChatRenderMessageSender extends StObject {
+  
   var iconUrl: js.UndefOr[String] = js.undefined
-  var id: js.UndefOr[js.Any] = js.undefined
+  
+  var id: js.UndefOr[Any] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ChatRenderMessageSender {
-  @scala.inline
-  def apply(iconUrl: String = null, id: js.Any = null, name: String = null): ChatRenderMessageSender = {
+  
+  inline def apply(): ChatRenderMessageSender = {
     val __obj = js.Dynamic.literal()
-    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderMessageSender]
   }
+  
+  extension [Self <: ChatRenderMessageSender](x: Self) {
+    
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

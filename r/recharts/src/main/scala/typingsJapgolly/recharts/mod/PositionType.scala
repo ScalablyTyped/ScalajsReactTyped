@@ -1,8 +1,8 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.recharts.rechartsStrings.top
@@ -23,47 +23,49 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.recharts.rechartsStrings.insideEnd
   - typingsJapgolly.recharts.rechartsStrings.end
   - typingsJapgolly.recharts.rechartsStrings.center
+  - typingsJapgolly.recharts.rechartsStrings.centerTop
+  - typingsJapgolly.recharts.rechartsStrings.centerBottom
 */
-trait PositionType extends js.Object
-
+trait PositionType extends StObject
 object PositionType {
-  @scala.inline
-  def bottom: typingsJapgolly.recharts.rechartsStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.recharts.rechartsStrings.center = this.cast("center")
-  @scala.inline
-  def end: typingsJapgolly.recharts.rechartsStrings.end = this.cast("end")
-  @scala.inline
-  def inside: typingsJapgolly.recharts.rechartsStrings.inside = this.cast("inside")
-  @scala.inline
-  def insideBottom: typingsJapgolly.recharts.rechartsStrings.insideBottom = this.cast("insideBottom")
-  @scala.inline
-  def insideBottomLeft: typingsJapgolly.recharts.rechartsStrings.insideBottomLeft = this.cast("insideBottomLeft")
-  @scala.inline
-  def insideBottomRight: typingsJapgolly.recharts.rechartsStrings.insideBottomRight = this.cast("insideBottomRight")
-  @scala.inline
-  def insideEnd: typingsJapgolly.recharts.rechartsStrings.insideEnd = this.cast("insideEnd")
-  @scala.inline
-  def insideLeft: typingsJapgolly.recharts.rechartsStrings.insideLeft = this.cast("insideLeft")
-  @scala.inline
-  def insideRight: typingsJapgolly.recharts.rechartsStrings.insideRight = this.cast("insideRight")
-  @scala.inline
-  def insideStart: typingsJapgolly.recharts.rechartsStrings.insideStart = this.cast("insideStart")
-  @scala.inline
-  def insideTop: typingsJapgolly.recharts.rechartsStrings.insideTop = this.cast("insideTop")
-  @scala.inline
-  def insideTopLeft: typingsJapgolly.recharts.rechartsStrings.insideTopLeft = this.cast("insideTopLeft")
-  @scala.inline
-  def insideTopRight: typingsJapgolly.recharts.rechartsStrings.insideTopRight = this.cast("insideTopRight")
-  @scala.inline
-  def left: typingsJapgolly.recharts.rechartsStrings.left = this.cast("left")
-  @scala.inline
-  def outside: typingsJapgolly.recharts.rechartsStrings.outside = this.cast("outside")
-  @scala.inline
-  def right: typingsJapgolly.recharts.rechartsStrings.right = this.cast("right")
-  @scala.inline
-  def top: typingsJapgolly.recharts.rechartsStrings.top = this.cast("top")
+  
+  inline def bottom: typingsJapgolly.recharts.rechartsStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.bottom]
+  
+  inline def center: typingsJapgolly.recharts.rechartsStrings.center = "center".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.center]
+  
+  inline def centerBottom: typingsJapgolly.recharts.rechartsStrings.centerBottom = "centerBottom".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.centerBottom]
+  
+  inline def centerTop: typingsJapgolly.recharts.rechartsStrings.centerTop = "centerTop".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.centerTop]
+  
+  inline def end: typingsJapgolly.recharts.rechartsStrings.end = "end".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.end]
+  
+  inline def inside: typingsJapgolly.recharts.rechartsStrings.inside = "inside".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.inside]
+  
+  inline def insideBottom: typingsJapgolly.recharts.rechartsStrings.insideBottom = "insideBottom".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideBottom]
+  
+  inline def insideBottomLeft: typingsJapgolly.recharts.rechartsStrings.insideBottomLeft = "insideBottomLeft".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideBottomLeft]
+  
+  inline def insideBottomRight: typingsJapgolly.recharts.rechartsStrings.insideBottomRight = "insideBottomRight".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideBottomRight]
+  
+  inline def insideEnd: typingsJapgolly.recharts.rechartsStrings.insideEnd = "insideEnd".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideEnd]
+  
+  inline def insideLeft: typingsJapgolly.recharts.rechartsStrings.insideLeft = "insideLeft".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideLeft]
+  
+  inline def insideRight: typingsJapgolly.recharts.rechartsStrings.insideRight = "insideRight".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideRight]
+  
+  inline def insideStart: typingsJapgolly.recharts.rechartsStrings.insideStart = "insideStart".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideStart]
+  
+  inline def insideTop: typingsJapgolly.recharts.rechartsStrings.insideTop = "insideTop".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideTop]
+  
+  inline def insideTopLeft: typingsJapgolly.recharts.rechartsStrings.insideTopLeft = "insideTopLeft".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideTopLeft]
+  
+  inline def insideTopRight: typingsJapgolly.recharts.rechartsStrings.insideTopRight = "insideTopRight".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.insideTopRight]
+  
+  inline def left: typingsJapgolly.recharts.rechartsStrings.left = "left".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.left]
+  
+  inline def outside: typingsJapgolly.recharts.rechartsStrings.outside = "outside".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.outside]
+  
+  inline def right: typingsJapgolly.recharts.rechartsStrings.right = "right".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.right]
+  
+  inline def top: typingsJapgolly.recharts.rechartsStrings.top = "top".asInstanceOf[typingsJapgolly.recharts.rechartsStrings.top]
 }
-

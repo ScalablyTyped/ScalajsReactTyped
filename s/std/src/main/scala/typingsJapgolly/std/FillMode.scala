@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.auto
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.forwards
   - typingsJapgolly.std.stdStrings.none
 */
-trait FillMode extends js.Object
-
+trait FillMode extends StObject
 object FillMode {
-  @scala.inline
-  def auto: typingsJapgolly.std.stdStrings.auto = this.cast("auto")
-  @scala.inline
-  def backwards: typingsJapgolly.std.stdStrings.backwards = this.cast("backwards")
-  @scala.inline
-  def both: typingsJapgolly.std.stdStrings.both = this.cast("both")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def forwards: typingsJapgolly.std.stdStrings.forwards = this.cast("forwards")
-  @scala.inline
-  def none: typingsJapgolly.std.stdStrings.none = this.cast("none")
+  
+  inline def auto: typingsJapgolly.std.stdStrings.auto = "auto".asInstanceOf[typingsJapgolly.std.stdStrings.auto]
+  
+  inline def backwards: typingsJapgolly.std.stdStrings.backwards = "backwards".asInstanceOf[typingsJapgolly.std.stdStrings.backwards]
+  
+  inline def both: typingsJapgolly.std.stdStrings.both = "both".asInstanceOf[typingsJapgolly.std.stdStrings.both]
+  
+  inline def forwards: typingsJapgolly.std.stdStrings.forwards = "forwards".asInstanceOf[typingsJapgolly.std.stdStrings.forwards]
+  
+  inline def none: typingsJapgolly.std.stdStrings.none = "none".asInstanceOf[typingsJapgolly.std.stdStrings.none]
 }
-

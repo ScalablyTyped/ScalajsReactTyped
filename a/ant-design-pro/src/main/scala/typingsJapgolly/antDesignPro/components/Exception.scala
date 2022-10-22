@@ -1,63 +1,79 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.AnonHref
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.anon.Href
 import typingsJapgolly.antDesignPro.antDesignProStrings.`403`
 import typingsJapgolly.antDesignPro.antDesignProStrings.`404`
 import typingsJapgolly.antDesignPro.antDesignProStrings.`500`
-import typingsJapgolly.antDesignPro.exceptionMod.ExceptionProps
-import typingsJapgolly.antDesignPro.exceptionMod.default
+import typingsJapgolly.antDesignPro.libExceptionMod.ExceptionProps
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Exception {
-  def apply(
-    actions: VdomNode = null,
-    backText: VdomNode = null,
-    className: String = null,
-    desc: VdomNode = null,
-    img: String = null,
-    linkElement: String | ComponentType[AnonHref] = null,
-    redirect: String = null,
-    style: CSSProperties = null,
-    title: VdomNode = null,
-    `type`: `403` | `404` | `500` = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ExceptionProps[AnonHref], default, Unit, ExceptionProps[AnonHref]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (actions != null) __obj.updateDynamic("actions")(actions.rawNode.asInstanceOf[js.Any])
-    if (backText != null) __obj.updateDynamic("backText")(backText.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (desc != null) __obj.updateDynamic("desc")(desc.rawNode.asInstanceOf[js.Any])
-    if (img != null) __obj.updateDynamic("img")(img.asInstanceOf[js.Any])
-    if (linkElement != null) __obj.updateDynamic("linkElement")(linkElement.asInstanceOf[js.Any])
-    if (redirect != null) __obj.updateDynamic("redirect")(redirect.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.rawNode.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.exceptionMod.ExceptionProps[typingsJapgolly.antDesignPro.AnonHref], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.exceptionMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.exceptionMod.ExceptionProps[typingsJapgolly.antDesignPro.AnonHref]])(children: _*)
-  }
-  @JSImport("ant-design-pro/lib/Exception", JSImport.Default)
+  @JSImport("ant-design-pro", "Exception")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.Exception] {
+    
+    inline def actions(value: VdomNode): this.type = set("actions", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def actionsNull: this.type = set("actions", null)
+    
+    inline def actionsVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("actions", js.Array(value*))
+    
+    inline def actionsVdomElement(value: VdomElement): this.type = set("actions", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def backText(value: VdomNode): this.type = set("backText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def backTextNull: this.type = set("backText", null)
+    
+    inline def backTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("backText", js.Array(value*))
+    
+    inline def backTextVdomElement(value: VdomElement): this.type = set("backText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def desc(value: VdomNode): this.type = set("desc", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def descNull: this.type = set("desc", null)
+    
+    inline def descVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("desc", js.Array(value*))
+    
+    inline def descVdomElement(value: VdomElement): this.type = set("desc", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def img(value: String): this.type = set("img", value.asInstanceOf[js.Any])
+    
+    inline def linkElement(value: String | ComponentType[Href]): this.type = set("linkElement", value.asInstanceOf[js.Any])
+    
+    inline def redirect(value: String): this.type = set("redirect", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def `type`(value: `403` | `404` | `500`): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Exception.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ExceptionProps[Href]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

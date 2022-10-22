@@ -1,14 +1,10 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.map
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.dataviz.map.layer")
-@js.native
-object layer extends js.Object {
-  @js.native
-  class Shape () extends js.Object
+object layer {
   
+  trait Shape extends StObject
 }
-

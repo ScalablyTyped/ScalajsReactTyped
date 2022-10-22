@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VideoDeviceCharacteristic extends js.Object
-
+sealed trait VideoDeviceCharacteristic extends StObject
 @JSGlobal("Windows.Media.Capture.VideoDeviceCharacteristic")
 @js.native
-object VideoDeviceCharacteristic extends js.Object {
-  @js.native
-  sealed trait allStreamsIdentical extends VideoDeviceCharacteristic
+object VideoDeviceCharacteristic extends StObject {
   
   @js.native
-  sealed trait allStreamsIndependent extends VideoDeviceCharacteristic
+  sealed trait allStreamsIdentical
+    extends StObject
+       with VideoDeviceCharacteristic
   
   @js.native
-  sealed trait previewPhotoStreamsIdentical extends VideoDeviceCharacteristic
+  sealed trait allStreamsIndependent
+    extends StObject
+       with VideoDeviceCharacteristic
   
   @js.native
-  sealed trait previewRecordStreamsIdentical extends VideoDeviceCharacteristic
+  sealed trait previewPhotoStreamsIdentical
+    extends StObject
+       with VideoDeviceCharacteristic
   
   @js.native
-  sealed trait recordPhotoStreamsIdentical extends VideoDeviceCharacteristic
+  sealed trait previewRecordStreamsIdentical
+    extends StObject
+       with VideoDeviceCharacteristic
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VideoDeviceCharacteristic with Double] = js.native
-  /* 4 */ @js.native
-  object allStreamsIdentical extends TopLevel[allStreamsIdentical with Double]
-  
-  /* 0 */ @js.native
-  object allStreamsIndependent extends TopLevel[allStreamsIndependent with Double]
-  
-  /* 2 */ @js.native
-  object previewPhotoStreamsIdentical extends TopLevel[previewPhotoStreamsIdentical with Double]
-  
-  /* 1 */ @js.native
-  object previewRecordStreamsIdentical extends TopLevel[previewRecordStreamsIdentical with Double]
-  
-  /* 3 */ @js.native
-  object recordPhotoStreamsIdentical extends TopLevel[recordPhotoStreamsIdentical with Double]
-  
+  @js.native
+  sealed trait recordPhotoStreamsIdentical
+    extends StObject
+       with VideoDeviceCharacteristic
 }
-

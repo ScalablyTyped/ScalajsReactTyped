@@ -1,60 +1,32 @@
 package typingsJapgolly.nightwatch.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nightwatch.mod.NightwatchTestFunctions
   - typingsJapgolly.nightwatch.mod.NightwatchTestHooks
 */
-trait NightwatchTests extends js.Object
-
+trait NightwatchTests extends StObject
 object NightwatchTests {
-  @scala.inline
-  def NightwatchTestFunctions(
-    `@disabled`: js.UndefOr[Boolean] = js.undefined,
-    `@tags`: String | js.Array[String] = null,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    after: NightwatchTestHook = null,
-    afterEach: NightwatchTestHook = null,
-    before: NightwatchTestHook = null,
-    beforeEach: NightwatchTestHook = null
-  ): NightwatchTests = {
+  
+  inline def NightwatchTestFunctions(): typingsJapgolly.nightwatch.mod.NightwatchTestFunctions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(`@disabled`)) __obj.updateDynamic("@disabled")(`@disabled`.asInstanceOf[js.Any])
-    if (`@tags` != null) __obj.updateDynamic("@tags")(`@tags`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NightwatchTests]
+    __obj.asInstanceOf[typingsJapgolly.nightwatch.mod.NightwatchTestFunctions]
   }
-  @scala.inline
-  def NightwatchTestHooks(
-    abortOnAssertionFailure: js.UndefOr[Boolean] = js.undefined,
-    after: NightwatchTestHook = null,
-    afterEach: NightwatchTestHook = null,
-    asyncHookTimeout: Int | Double = null,
-    before: NightwatchTestHook = null,
-    beforeEach: NightwatchTestHook = null,
-    throwOnMultipleElementsReturned: js.UndefOr[Boolean] = js.undefined,
-    waitForConditionPollInterval: Int | Double = null,
-    waitForConditionTimeout: Int | Double = null
-  ): NightwatchTests = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(abortOnAssertionFailure)) __obj.updateDynamic("abortOnAssertionFailure")(abortOnAssertionFailure.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (afterEach != null) __obj.updateDynamic("afterEach")(afterEach.asInstanceOf[js.Any])
-    if (asyncHookTimeout != null) __obj.updateDynamic("asyncHookTimeout")(asyncHookTimeout.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (beforeEach != null) __obj.updateDynamic("beforeEach")(beforeEach.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwOnMultipleElementsReturned)) __obj.updateDynamic("throwOnMultipleElementsReturned")(throwOnMultipleElementsReturned.asInstanceOf[js.Any])
-    if (waitForConditionPollInterval != null) __obj.updateDynamic("waitForConditionPollInterval")(waitForConditionPollInterval.asInstanceOf[js.Any])
-    if (waitForConditionTimeout != null) __obj.updateDynamic("waitForConditionTimeout")(waitForConditionTimeout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NightwatchTests]
+  
+  inline def NightwatchTestHooks(
+    afterTestCase: Any => js.Promise[Unit],
+    afterTestSuite: Any => js.Promise[Unit],
+    beforeTestCase: Any => js.Promise[Unit],
+    beforeTestSuite: Any => js.Promise[Unit],
+    onBrowserNavigate: Any => js.Promise[Unit],
+    onBrowserQuit: Any => js.Promise[Unit],
+    reporter: (Any, Any) => Callback
+  ): typingsJapgolly.nightwatch.mod.NightwatchTestHooks = {
+    val __obj = js.Dynamic.literal(afterTestCase = js.Any.fromFunction1(afterTestCase), afterTestSuite = js.Any.fromFunction1(afterTestSuite), beforeTestCase = js.Any.fromFunction1(beforeTestCase), beforeTestSuite = js.Any.fromFunction1(beforeTestSuite), onBrowserNavigate = js.Any.fromFunction1(onBrowserNavigate), onBrowserQuit = js.Any.fromFunction1(onBrowserQuit), reporter = js.Any.fromFunction2((t0: Any, t1: Any) => (reporter(t0, t1)).runNow()))
+    __obj.asInstanceOf[typingsJapgolly.nightwatch.mod.NightwatchTestHooks]
   }
 }
-

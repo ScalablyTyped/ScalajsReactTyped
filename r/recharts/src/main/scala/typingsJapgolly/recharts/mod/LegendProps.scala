@@ -1,86 +1,148 @@
 package typingsJapgolly.recharts.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.recharts.AnonWidth
-import typingsJapgolly.recharts.PartialMargin
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.recharts.anon.Height
+import typingsJapgolly.recharts.anon.PartialMargin
 import typingsJapgolly.recharts.rechartsStrings.bottom
 import typingsJapgolly.recharts.rechartsStrings.center
 import typingsJapgolly.recharts.rechartsStrings.left
 import typingsJapgolly.recharts.rechartsStrings.middle
 import typingsJapgolly.recharts.rechartsStrings.right
 import typingsJapgolly.recharts.rechartsStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendProps extends js.Object {
+trait LegendProps extends StObject {
+  
   var align: js.UndefOr[left | center | right] = js.undefined
+  
   var chartHeight: js.UndefOr[Double] = js.undefined
+  
   var chartWidth: js.UndefOr[Double] = js.undefined
+  
   var content: js.UndefOr[Element | ContentRenderer[LegendProps]] = js.undefined
+  
   var formatter: js.UndefOr[LegendValueFormatter] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var iconSize: js.UndefOr[Double] = js.undefined
+  
   var iconType: js.UndefOr[IconType] = js.undefined
+  
   var layout: js.UndefOr[LayoutType] = js.undefined
+  
   var margin: js.UndefOr[PartialMargin] = js.undefined
+  
   var onBBoxUpdate: js.UndefOr[BBoxUpdateCallback] = js.undefined
+  
   var onClick: js.UndefOr[RechartsFunction] = js.undefined
+  
   var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
+  
   var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
+  
   var payload: js.UndefOr[js.Array[LegendPayload]] = js.undefined
+  
   var verticalAlign: js.UndefOr[top | middle | bottom] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
+  
   var wrapperStyle: js.UndefOr[js.Object] = js.undefined
 }
-
 object LegendProps {
-  @scala.inline
-  def apply(
-    align: left | center | right = null,
-    chartHeight: Int | Double = null,
-    chartWidth: Int | Double = null,
-    content: Element | ContentRenderer[LegendProps] = null,
-    formatter: (/* value */ js.UndefOr[
-      /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
-    ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => CallbackTo[js.Any] = null,
-    height: Int | Double = null,
-    iconSize: Int | Double = null,
-    iconType: IconType = null,
-    layout: LayoutType = null,
-    margin: PartialMargin = null,
-    onBBoxUpdate: /* box */ AnonWidth => Callback = null,
-    onClick: /* repeated */ js.Any => Callback = null,
-    onMouseEnter: /* repeated */ js.Any => Callback = null,
-    onMouseLeave: /* repeated */ js.Any => Callback = null,
-    payload: js.Array[LegendPayload] = null,
-    verticalAlign: top | middle | bottom = null,
-    width: Int | Double = null,
-    wrapperStyle: js.Object = null
-  ): LegendProps = {
+  
+  inline def apply(): LegendProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (chartHeight != null) __obj.updateDynamic("chartHeight")(chartHeight.asInstanceOf[js.Any])
-    if (chartWidth != null) __obj.updateDynamic("chartWidth")(chartWidth.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (formatter != null) __obj.updateDynamic("formatter")(js.Any.fromFunction3((t0: /* value */ js.UndefOr[
-  /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any], t1: /* entry */ js.UndefOr[typingsJapgolly.recharts.mod.LegendPayload], t2: /* i */ js.UndefOr[scala.Double]) => formatter(t0, t1, t2).runNow()))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (iconType != null) __obj.updateDynamic("iconType")(iconType.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onBBoxUpdate != null) __obj.updateDynamic("onBBoxUpdate")(js.Any.fromFunction1((t0: /* box */ typingsJapgolly.recharts.AnonWidth) => onBBoxUpdate(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onClick(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onMouseLeave(t0).runNow()))
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendProps]
   }
+  
+  extension [Self <: LegendProps](x: Self) {
+    
+    inline def setAlign(value: left | center | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setChartHeight(value: Double): Self = StObject.set(x, "chartHeight", value.asInstanceOf[js.Any])
+    
+    inline def setChartHeightUndefined: Self = StObject.set(x, "chartHeight", js.undefined)
+    
+    inline def setChartWidth(value: Double): Self = StObject.set(x, "chartWidth", value.asInstanceOf[js.Any])
+    
+    inline def setChartWidthUndefined: Self = StObject.set(x, "chartWidth", js.undefined)
+    
+    inline def setContent(value: Element | ContentRenderer[LegendProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentFunction1(value: LegendProps => Node): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setContentVdomElement(value: VdomElement): Self = StObject.set(x, "content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setFormatter(
+      value: (/* value */ js.UndefOr[
+          /* import warning: importer.ImportType#apply Failed type conversion: recharts.recharts.LegendPayload['value'] */ js.Any
+        ], /* entry */ js.UndefOr[LegendPayload], /* i */ js.UndefOr[Double]) => Any
+    ): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setIconSize(value: Double): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    
+    inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    
+    inline def setIconType(value: IconType): Self = StObject.set(x, "iconType", value.asInstanceOf[js.Any])
+    
+    inline def setIconTypeUndefined: Self = StObject.set(x, "iconType", js.undefined)
+    
+    inline def setLayout(value: LayoutType): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setMargin(value: PartialMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setOnBBoxUpdate(value: /* box */ Height => Callback): Self = StObject.set(x, "onBBoxUpdate", js.Any.fromFunction1((t0: /* box */ Height) => value(t0).runNow()))
+    
+    inline def setOnBBoxUpdateUndefined: Self = StObject.set(x, "onBBoxUpdate", js.undefined)
+    
+    inline def setOnClick(value: RechartsFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setOnMouseEnter(value: RechartsFunction): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
+    
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    
+    inline def setOnMouseLeave(value: RechartsFunction): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
+    
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setPayload(value: js.Array[LegendPayload]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setPayloadVarargs(value: LegendPayload*): Self = StObject.set(x, "payload", js.Array(value*))
+    
+    inline def setVerticalAlign(value: top | middle | bottom): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWrapperStyle(value: js.Object): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+    
+    inline def setWrapperStyleUndefined: Self = StObject.set(x, "wrapperStyle", js.undefined)
+  }
 }
-

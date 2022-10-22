@@ -1,22 +1,17 @@
 package typingsJapgolly.reactDates.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// shapes/FocusedInputShape.js
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactDates.reactDatesStrings.startDate
   - typingsJapgolly.reactDates.reactDatesStrings.endDate
 */
-trait FocusedInputShape extends js.Object
-
+trait FocusedInputShape extends StObject
 object FocusedInputShape {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def endDate: typingsJapgolly.reactDates.reactDatesStrings.endDate = this.cast("endDate")
-  @scala.inline
-  def startDate: typingsJapgolly.reactDates.reactDatesStrings.startDate = this.cast("startDate")
+  
+  inline def endDate: typingsJapgolly.reactDates.reactDatesStrings.endDate = "endDate".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.endDate]
+  
+  inline def startDate: typingsJapgolly.reactDates.reactDatesStrings.startDate = "startDate".asInstanceOf[typingsJapgolly.reactDates.reactDatesStrings.startDate]
 }
-

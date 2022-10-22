@@ -1,42 +1,27 @@
 package typingsJapgolly.reactHelmetAsync.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.PropsWithChildren
 import typingsJapgolly.reactHelmetAsync.mod.ProviderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HelmetProvider {
-  def apply(
-    context: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ProviderProps, 
-    typingsJapgolly.reactHelmetAsync.mod.HelmetProvider, 
-    Unit, 
-    ProviderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactHelmetAsync.mod.ProviderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactHelmetAsync.mod.HelmetProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactHelmetAsync.mod.ProviderProps])(children: _*)
-  }
   @JSImport("react-helmet-async", "HelmetProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactHelmetAsync.mod.HelmetProvider] {
+    
+    inline def context(value: js.Object): this.type = set("context", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: HelmetProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PropsWithChildren[ProviderProps]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

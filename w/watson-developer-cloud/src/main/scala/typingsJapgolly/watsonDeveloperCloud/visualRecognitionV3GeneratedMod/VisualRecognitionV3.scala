@@ -1,18 +1,19 @@
 package typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
-import typingsJapgolly.ibmCloudSdkCore.helperMod.FileObject
+import typingsJapgolly.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typingsJapgolly.ibmCloudSdkCore.mod.BaseService
-import typingsJapgolly.node.Buffer
 import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Visual Recognition service uses deep learning algorithms to identify scenes, objects, and faces  in images you upload to the service. You can create and train a custom classifier to identify subjects that suit your needs.
   */
 @js.native
 trait VisualRecognitionV3 extends BaseService {
+  
   /*************************
     * general
     ************************/
@@ -58,9 +59,11 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def classify(): js.Promise[_] | Unit = js.native
-  def classify(params: ClassifyParams): js.Promise[_] | Unit = js.native
-  def classify(params: ClassifyParams, callback: Callback[ClassifiedImages]): js.Promise[_] | Unit = js.native
+  def classify(): js.Promise[Any] | Unit = js.native
+  def classify(params: Unit, callback: Callback[ClassifiedImages]): js.Promise[Any] | Unit = js.native
+  def classify(params: ClassifyParams): js.Promise[Any] | Unit = js.native
+  def classify(params: ClassifyParams, callback: Callback[ClassifiedImages]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * custom
     ************************/
@@ -96,8 +99,9 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createClassifier(params: CreateClassifierParams): js.Promise[_] | Unit = js.native
-  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams): js.Promise[Any] | Unit = js.native
+  def createClassifier(params: CreateClassifierParams, callback: Callback[Classifier]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Delete a classifier.
     *
@@ -107,8 +111,9 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteClassifier(params: DeleteClassifierParams): js.Promise[_] | Unit = js.native
-  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams): js.Promise[Any] | Unit = js.native
+  def deleteClassifier(params: DeleteClassifierParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * userData
     ************************/
@@ -128,8 +133,9 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteUserData(params: DeleteUserDataParams): js.Promise[_] | Unit = js.native
-  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams): js.Promise[Any] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * face
     ************************/
@@ -170,9 +176,11 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def detectFaces(): js.Promise[_] | Unit = js.native
-  def detectFaces(params: DetectFacesParams): js.Promise[_] | Unit = js.native
-  def detectFaces(params: DetectFacesParams, callback: Callback[DetectedFaces]): js.Promise[_] | Unit = js.native
+  def detectFaces(): js.Promise[Any] | Unit = js.native
+  def detectFaces(params: Unit, callback: Callback[DetectedFaces]): js.Promise[Any] | Unit = js.native
+  def detectFaces(params: DetectFacesParams): js.Promise[Any] | Unit = js.native
+  def detectFaces(params: DetectFacesParams, callback: Callback[DetectedFaces]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Retrieve classifier details.
     *
@@ -184,8 +192,9 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getClassifier(params: GetClassifierParams): js.Promise[_] | Unit = js.native
-  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def getClassifier(params: GetClassifierParams): js.Promise[Any] | Unit = js.native
+  def getClassifier(params: GetClassifierParams, callback: Callback[Classifier]): js.Promise[Any] | Unit = js.native
+  
   /*************************
     * coreML
     ************************/
@@ -201,8 +210,9 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getCoreMlModel(params: GetCoreMlModelParams): js.Promise[_] | Unit = js.native
-  def getCoreMlModel(params: GetCoreMlModelParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[_] | Unit = js.native
+  def getCoreMlModel(params: GetCoreMlModelParams): js.Promise[Any] | Unit = js.native
+  def getCoreMlModel(params: GetCoreMlModelParams, callback: Callback[ReadableStream | FileObject | Buffer]): js.Promise[Any] | Unit = js.native
+  
   /**
     * Retrieve a list of classifiers.
     *
@@ -213,9 +223,15 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listClassifiers(): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams): js.Promise[_] | Unit = js.native
-  def listClassifiers(params: ListClassifiersParams, callback: Callback[Classifiers]): js.Promise[_] | Unit = js.native
+  def listClassifiers(): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: Unit, callback: Callback[Classifiers]): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams): js.Promise[Any] | Unit = js.native
+  def listClassifiers(params: ListClassifiersParams, callback: Callback[Classifiers]): js.Promise[Any] | Unit = js.native
+  
+  var name: String = js.native
+  
+  var serviceVersion: String = js.native
+  
   /**
     * Update a classifier.
     *
@@ -253,7 +269,6 @@ trait VisualRecognitionV3 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateClassifier(params: UpdateClassifierParams): js.Promise[_] | Unit = js.native
-  def updateClassifier(params: UpdateClassifierParams, callback: Callback[Classifier]): js.Promise[_] | Unit = js.native
+  def updateClassifier(params: UpdateClassifierParams): js.Promise[Any] | Unit = js.native
+  def updateClassifier(params: UpdateClassifierParams, callback: Callback[Classifier]): js.Promise[Any] | Unit = js.native
 }
-

@@ -1,30 +1,33 @@
 package typingsJapgolly.escpos.mod
 
-import typingsJapgolly.escpos.AnonColors
-import typingsJapgolly.escpos.AnonData
-import typingsJapgolly.escpos.AnonHeight
-import typingsJapgolly.std.Error
+import typingsJapgolly.escpos.anon.Colors
+import typingsJapgolly.escpos.anon.Data
+import typingsJapgolly.escpos.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Image")
 @js.native
-class Image protected () extends js.Object {
-  def this(pixels: js.Any) = this()
-  def size(): AnonColors = js.native
-  def toBitmap(): AnonData = js.native
-  def toBitmap(density: Double): AnonData = js.native
-  def toRaster(): AnonHeight = js.native
+open class Image protected () extends StObject {
+  def this(pixels: Any) = this()
+  
+  def size(): Colors = js.native
+  
+  def toBitmap(): Data = js.native
+  def toBitmap(density: Double): Data = js.native
+  
+  def toRaster(): Height = js.native
 }
-
 /* static members */
-@JSImport("escpos", "Image")
-@js.native
-object Image extends js.Object {
-  def load(url: String): Unit = js.native
-  def load(url: String, callback: js.Function1[/* result */ this.type | Error, Unit]): Unit = js.native
-  def load(url: String, `type`: MIME_TYPE): Unit = js.native
-  def load(url: String, `type`: MIME_TYPE, callback: js.Function1[/* result */ this.type | js.Error, Unit]): Unit = js.native
+object Image {
+  
+  @JSImport("escpos", "Image")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def load(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def load(url: String, callback: js.Function1[/* result */ this.type | js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def load(url: String, `type`: MIME_TYPE): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def load(url: String, `type`: MIME_TYPE, callback: js.Function1[/* result */ this.type | js.Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(url.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

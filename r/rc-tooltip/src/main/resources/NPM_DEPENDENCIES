@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-tooltip" : "5.2.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-tooltip" : "5.2.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

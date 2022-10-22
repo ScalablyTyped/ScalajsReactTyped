@@ -1,219 +1,176 @@
 package typingsJapgolly.activexAdodb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexAdodbStrings {
-  @js.native
-  sealed trait BeginTransComplete extends js.Object
   
   @js.native
-  sealed trait Collect extends js.Object
+  sealed trait BeginTransComplete extends StObject
+  inline def BeginTransComplete: BeginTransComplete = "BeginTransComplete".asInstanceOf[BeginTransComplete]
   
   @js.native
-  sealed trait CommitTransComplete extends js.Object
+  sealed trait Collect extends StObject
+  inline def Collect: Collect = "Collect".asInstanceOf[Collect]
   
   @js.native
-  sealed trait ConnectComplete extends js.Object
+  sealed trait CommitTransComplete extends StObject
+  inline def CommitTransComplete: CommitTransComplete = "CommitTransComplete".asInstanceOf[CommitTransComplete]
   
   @js.native
-  sealed trait ConnectionString extends js.Object
+  sealed trait ConnectComplete extends StObject
+  inline def ConnectComplete: ConnectComplete = "ConnectComplete".asInstanceOf[ConnectComplete]
   
   @js.native
-  sealed trait CursorType extends js.Object
+  sealed trait ConnectionString extends StObject
+  inline def ConnectionString: ConnectionString = "ConnectionString".asInstanceOf[ConnectionString]
   
   @js.native
-  sealed trait Disconnect extends js.Object
+  sealed trait CursorType extends StObject
+  inline def CursorType: CursorType = "CursorType".asInstanceOf[CursorType]
   
   @js.native
-  sealed trait EndOfRecordset extends js.Object
+  sealed trait Disconnect extends StObject
+  inline def Disconnect: Disconnect = "Disconnect".asInstanceOf[Disconnect]
   
   @js.native
-  sealed trait ExecuteComplete extends js.Object
+  sealed trait EndOfRecordset extends StObject
+  inline def EndOfRecordset: EndOfRecordset = "EndOfRecordset".asInstanceOf[EndOfRecordset]
   
   @js.native
-  sealed trait FetchComplete extends js.Object
+  sealed trait ExecuteComplete extends StObject
+  inline def ExecuteComplete: ExecuteComplete = "ExecuteComplete".asInstanceOf[ExecuteComplete]
   
   @js.native
-  sealed trait FetchProgress extends js.Object
+  sealed trait FetchComplete extends StObject
+  inline def FetchComplete: FetchComplete = "FetchComplete".asInstanceOf[FetchComplete]
   
   @js.native
-  sealed trait FieldChangeComplete extends js.Object
+  sealed trait FetchProgress extends StObject
+  inline def FetchProgress: FetchProgress = "FetchProgress".asInstanceOf[FetchProgress]
   
   @js.native
-  sealed trait Fields extends js.Object
+  sealed trait FieldChangeComplete extends StObject
+  inline def FieldChangeComplete: FieldChangeComplete = "FieldChangeComplete".asInstanceOf[FieldChangeComplete]
   
   @js.native
-  sealed trait InfoMessage extends js.Object
+  sealed trait Fields extends StObject
+  inline def Fields: Fields = "Fields".asInstanceOf[Fields]
   
   @js.native
-  sealed trait LockType extends js.Object
+  sealed trait InfoMessage extends StObject
+  inline def InfoMessage: InfoMessage = "InfoMessage".asInstanceOf[InfoMessage]
   
   @js.native
-  sealed trait MaxProgress extends js.Object
+  sealed trait LockType extends StObject
+  inline def LockType: LockType = "LockType".asInstanceOf[LockType]
   
   @js.native
-  sealed trait MoveComplete extends js.Object
+  sealed trait MaxProgress extends StObject
+  inline def MaxProgress: MaxProgress = "MaxProgress".asInstanceOf[MaxProgress]
   
   @js.native
-  sealed trait Options extends js.Object
+  sealed trait MoveComplete extends StObject
+  inline def MoveComplete: MoveComplete = "MoveComplete".asInstanceOf[MoveComplete]
   
   @js.native
-  sealed trait Password extends js.Object
+  sealed trait Options extends StObject
+  inline def Options: Options = "Options".asInstanceOf[Options]
   
   @js.native
-  sealed trait Progress extends js.Object
+  sealed trait Password extends StObject
+  inline def Password: Password = "Password".asInstanceOf[Password]
   
   @js.native
-  sealed trait RecordChangeComplete extends js.Object
+  sealed trait Progress extends StObject
+  inline def Progress: Progress = "Progress".asInstanceOf[Progress]
   
   @js.native
-  sealed trait RecordsAffected extends js.Object
+  sealed trait RecordChangeComplete extends StObject
+  inline def RecordChangeComplete: RecordChangeComplete = "RecordChangeComplete".asInstanceOf[RecordChangeComplete]
   
   @js.native
-  sealed trait RecordsetChangeComplete extends js.Object
+  sealed trait RecordsAffected extends StObject
+  inline def RecordsAffected: RecordsAffected = "RecordsAffected".asInstanceOf[RecordsAffected]
   
   @js.native
-  sealed trait RollbackTransComplete extends js.Object
+  sealed trait RecordsetChangeComplete extends StObject
+  inline def RecordsetChangeComplete: RecordsetChangeComplete = "RecordsetChangeComplete".asInstanceOf[RecordsetChangeComplete]
   
   @js.native
-  sealed trait Source extends js.Object
+  sealed trait RollbackTransComplete extends StObject
+  inline def RollbackTransComplete: RollbackTransComplete = "RollbackTransComplete".asInstanceOf[RollbackTransComplete]
   
   @js.native
-  sealed trait TransactionLevel extends js.Object
+  sealed trait Source extends StObject
+  inline def Source: Source = "Source".asInstanceOf[Source]
   
   @js.native
-  sealed trait UserID extends js.Object
+  sealed trait TransactionLevel extends StObject
+  inline def TransactionLevel: TransactionLevel = "TransactionLevel".asInstanceOf[TransactionLevel]
   
   @js.native
-  sealed trait WillChangeField extends js.Object
+  sealed trait UserID extends StObject
+  inline def UserID: UserID = "UserID".asInstanceOf[UserID]
   
   @js.native
-  sealed trait WillChangeRecord extends js.Object
+  sealed trait WillChangeField extends StObject
+  inline def WillChangeField: WillChangeField = "WillChangeField".asInstanceOf[WillChangeField]
   
   @js.native
-  sealed trait WillChangeRecordset extends js.Object
+  sealed trait WillChangeRecord extends StObject
+  inline def WillChangeRecord: WillChangeRecord = "WillChangeRecord".asInstanceOf[WillChangeRecord]
   
   @js.native
-  sealed trait WillConnect extends js.Object
+  sealed trait WillChangeRecordset extends StObject
+  inline def WillChangeRecordset: WillChangeRecordset = "WillChangeRecordset".asInstanceOf[WillChangeRecordset]
   
   @js.native
-  sealed trait WillExecute extends js.Object
+  sealed trait WillConnect extends StObject
+  inline def WillConnect: WillConnect = "WillConnect".asInstanceOf[WillConnect]
   
   @js.native
-  sealed trait WillMove extends js.Object
+  sealed trait WillExecute extends StObject
+  inline def WillExecute: WillExecute = "WillExecute".asInstanceOf[WillExecute]
   
   @js.native
-  sealed trait adReason extends js.Object
+  sealed trait WillMove extends StObject
+  inline def WillMove: WillMove = "WillMove".asInstanceOf[WillMove]
   
   @js.native
-  sealed trait adStatus extends js.Object
+  sealed trait adReason extends StObject
+  inline def adReason: adReason = "adReason".asInstanceOf[adReason]
   
   @js.native
-  sealed trait cFields extends js.Object
+  sealed trait adStatus extends StObject
+  inline def adStatus: adStatus = "adStatus".asInstanceOf[adStatus]
   
   @js.native
-  sealed trait cRecords extends js.Object
+  sealed trait cFields extends StObject
+  inline def cFields: cFields = "cFields".asInstanceOf[cFields]
   
   @js.native
-  sealed trait fMoreData extends js.Object
+  sealed trait cRecords extends StObject
+  inline def cRecords: cRecords = "cRecords".asInstanceOf[cRecords]
   
   @js.native
-  sealed trait pCommand extends js.Object
+  sealed trait fMoreData extends StObject
+  inline def fMoreData: fMoreData = "fMoreData".asInstanceOf[fMoreData]
   
   @js.native
-  sealed trait pConnection extends js.Object
+  sealed trait pCommand extends StObject
+  inline def pCommand: pCommand = "pCommand".asInstanceOf[pCommand]
   
   @js.native
-  sealed trait pError extends js.Object
+  sealed trait pConnection extends StObject
+  inline def pConnection: pConnection = "pConnection".asInstanceOf[pConnection]
   
   @js.native
-  sealed trait pRecordset extends js.Object
+  sealed trait pError extends StObject
+  inline def pError: pError = "pError".asInstanceOf[pError]
   
-  @scala.inline
-  def BeginTransComplete: BeginTransComplete = "BeginTransComplete".asInstanceOf[BeginTransComplete]
-  @scala.inline
-  def Collect: Collect = "Collect".asInstanceOf[Collect]
-  @scala.inline
-  def CommitTransComplete: CommitTransComplete = "CommitTransComplete".asInstanceOf[CommitTransComplete]
-  @scala.inline
-  def ConnectComplete: ConnectComplete = "ConnectComplete".asInstanceOf[ConnectComplete]
-  @scala.inline
-  def ConnectionString: ConnectionString = "ConnectionString".asInstanceOf[ConnectionString]
-  @scala.inline
-  def CursorType: CursorType = "CursorType".asInstanceOf[CursorType]
-  @scala.inline
-  def Disconnect: Disconnect = "Disconnect".asInstanceOf[Disconnect]
-  @scala.inline
-  def EndOfRecordset: EndOfRecordset = "EndOfRecordset".asInstanceOf[EndOfRecordset]
-  @scala.inline
-  def ExecuteComplete: ExecuteComplete = "ExecuteComplete".asInstanceOf[ExecuteComplete]
-  @scala.inline
-  def FetchComplete: FetchComplete = "FetchComplete".asInstanceOf[FetchComplete]
-  @scala.inline
-  def FetchProgress: FetchProgress = "FetchProgress".asInstanceOf[FetchProgress]
-  @scala.inline
-  def FieldChangeComplete: FieldChangeComplete = "FieldChangeComplete".asInstanceOf[FieldChangeComplete]
-  @scala.inline
-  def Fields: Fields = "Fields".asInstanceOf[Fields]
-  @scala.inline
-  def InfoMessage: InfoMessage = "InfoMessage".asInstanceOf[InfoMessage]
-  @scala.inline
-  def LockType: LockType = "LockType".asInstanceOf[LockType]
-  @scala.inline
-  def MaxProgress: MaxProgress = "MaxProgress".asInstanceOf[MaxProgress]
-  @scala.inline
-  def MoveComplete: MoveComplete = "MoveComplete".asInstanceOf[MoveComplete]
-  @scala.inline
-  def Options: Options = "Options".asInstanceOf[Options]
-  @scala.inline
-  def Password: Password = "Password".asInstanceOf[Password]
-  @scala.inline
-  def Progress: Progress = "Progress".asInstanceOf[Progress]
-  @scala.inline
-  def RecordChangeComplete: RecordChangeComplete = "RecordChangeComplete".asInstanceOf[RecordChangeComplete]
-  @scala.inline
-  def RecordsAffected: RecordsAffected = "RecordsAffected".asInstanceOf[RecordsAffected]
-  @scala.inline
-  def RecordsetChangeComplete: RecordsetChangeComplete = "RecordsetChangeComplete".asInstanceOf[RecordsetChangeComplete]
-  @scala.inline
-  def RollbackTransComplete: RollbackTransComplete = "RollbackTransComplete".asInstanceOf[RollbackTransComplete]
-  @scala.inline
-  def Source: Source = "Source".asInstanceOf[Source]
-  @scala.inline
-  def TransactionLevel: TransactionLevel = "TransactionLevel".asInstanceOf[TransactionLevel]
-  @scala.inline
-  def UserID: UserID = "UserID".asInstanceOf[UserID]
-  @scala.inline
-  def WillChangeField: WillChangeField = "WillChangeField".asInstanceOf[WillChangeField]
-  @scala.inline
-  def WillChangeRecord: WillChangeRecord = "WillChangeRecord".asInstanceOf[WillChangeRecord]
-  @scala.inline
-  def WillChangeRecordset: WillChangeRecordset = "WillChangeRecordset".asInstanceOf[WillChangeRecordset]
-  @scala.inline
-  def WillConnect: WillConnect = "WillConnect".asInstanceOf[WillConnect]
-  @scala.inline
-  def WillExecute: WillExecute = "WillExecute".asInstanceOf[WillExecute]
-  @scala.inline
-  def WillMove: WillMove = "WillMove".asInstanceOf[WillMove]
-  @scala.inline
-  def adReason: adReason = "adReason".asInstanceOf[adReason]
-  @scala.inline
-  def adStatus: adStatus = "adStatus".asInstanceOf[adStatus]
-  @scala.inline
-  def cFields: cFields = "cFields".asInstanceOf[cFields]
-  @scala.inline
-  def cRecords: cRecords = "cRecords".asInstanceOf[cRecords]
-  @scala.inline
-  def fMoreData: fMoreData = "fMoreData".asInstanceOf[fMoreData]
-  @scala.inline
-  def pCommand: pCommand = "pCommand".asInstanceOf[pCommand]
-  @scala.inline
-  def pConnection: pConnection = "pConnection".asInstanceOf[pConnection]
-  @scala.inline
-  def pError: pError = "pError".asInstanceOf[pError]
-  @scala.inline
-  def pRecordset: pRecordset = "pRecordset".asInstanceOf[pRecordset]
+  @js.native
+  sealed trait pRecordset extends StObject
+  inline def pRecordset: pRecordset = "pRecordset".asInstanceOf[pRecordset]
 }
-

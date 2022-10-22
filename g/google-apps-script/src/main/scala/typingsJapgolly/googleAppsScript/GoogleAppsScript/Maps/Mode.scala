@@ -1,44 +1,35 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Maps
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Mode extends js.Object
-
+sealed trait Mode extends StObject
 /**
   * An enum representing the mode of travel to use when finding directions.
   */
 @JSGlobal("GoogleAppsScript.Maps.Mode")
 @js.native
-object Mode extends js.Object {
-  @js.native
-  sealed trait BICYCLING extends Mode
+object Mode extends StObject {
   
   @js.native
-  sealed trait DRIVING extends Mode
+  sealed trait BICYCLING
+    extends StObject
+       with Mode
   
   @js.native
-  sealed trait TRANSIT extends Mode
+  sealed trait DRIVING
+    extends StObject
+       with Mode
   
   @js.native
-  sealed trait WALKING extends Mode
+  sealed trait TRANSIT
+    extends StObject
+       with Mode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Mode with Double] = js.native
-  /* 2 */ @js.native
-  object BICYCLING extends TopLevel[BICYCLING with Double]
-  
-  /* 0 */ @js.native
-  object DRIVING extends TopLevel[DRIVING with Double]
-  
-  /* 3 */ @js.native
-  object TRANSIT extends TopLevel[TRANSIT with Double]
-  
-  /* 1 */ @js.native
-  object WALKING extends TopLevel[WALKING with Double]
-  
+  @js.native
+  sealed trait WALKING
+    extends StObject
+       with Mode
 }
-

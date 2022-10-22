@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "mysql2" : "2.3.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "mysql2" : "2.3.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

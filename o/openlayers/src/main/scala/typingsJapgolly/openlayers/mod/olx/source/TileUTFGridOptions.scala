@@ -1,30 +1,42 @@
 package typingsJapgolly.openlayers.mod.olx.source
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TileUTFGridOptions extends js.Object {
+trait TileUTFGridOptions extends StObject {
+  
   var jsonp: js.UndefOr[Boolean] = js.undefined
+  
   var preemptive: js.UndefOr[Boolean] = js.undefined
+  
   var tileJSON: js.UndefOr[TileJSON] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object TileUTFGridOptions {
-  @scala.inline
-  def apply(
-    jsonp: js.UndefOr[Boolean] = js.undefined,
-    preemptive: js.UndefOr[Boolean] = js.undefined,
-    tileJSON: TileJSON = null,
-    url: String = null
-  ): TileUTFGridOptions = {
+  
+  inline def apply(): TileUTFGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(jsonp)) __obj.updateDynamic("jsonp")(jsonp.asInstanceOf[js.Any])
-    if (!js.isUndefined(preemptive)) __obj.updateDynamic("preemptive")(preemptive.asInstanceOf[js.Any])
-    if (tileJSON != null) __obj.updateDynamic("tileJSON")(tileJSON.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[TileUTFGridOptions]
   }
+  
+  extension [Self <: TileUTFGridOptions](x: Self) {
+    
+    inline def setJsonp(value: Boolean): Self = StObject.set(x, "jsonp", value.asInstanceOf[js.Any])
+    
+    inline def setJsonpUndefined: Self = StObject.set(x, "jsonp", js.undefined)
+    
+    inline def setPreemptive(value: Boolean): Self = StObject.set(x, "preemptive", value.asInstanceOf[js.Any])
+    
+    inline def setPreemptiveUndefined: Self = StObject.set(x, "preemptive", js.undefined)
+    
+    inline def setTileJSON(value: TileJSON): Self = StObject.set(x, "tileJSON", value.asInstanceOf[js.Any])
+    
+    inline def setTileJSONUndefined: Self = StObject.set(x, "tileJSON", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

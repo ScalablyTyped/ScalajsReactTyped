@@ -1,42 +1,64 @@
 package typingsJapgolly.pubnub.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistoryParameters extends js.Object {
+trait HistoryParameters extends StObject {
+  
   var channel: String
+  
   var count: Double
-   // timetoken
+  
+  // timetoken
   var end: js.UndefOr[String | Double] = js.undefined
-   // timetoken
+  
+  // timetoken
   var includeMeta: js.UndefOr[Boolean] = js.undefined
+  
   var includeTimetoken: js.UndefOr[Boolean] = js.undefined
+  
   var reverse: js.UndefOr[Boolean] = js.undefined
+  
   var start: js.UndefOr[String | Double] = js.undefined
+  
   var stringifiedTimeToken: js.UndefOr[Boolean] = js.undefined
 }
-
 object HistoryParameters {
-  @scala.inline
-  def apply(
-    channel: String,
-    count: Double,
-    end: String | Double = null,
-    includeMeta: js.UndefOr[Boolean] = js.undefined,
-    includeTimetoken: js.UndefOr[Boolean] = js.undefined,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    start: String | Double = null,
-    stringifiedTimeToken: js.UndefOr[Boolean] = js.undefined
-  ): HistoryParameters = {
+  
+  inline def apply(channel: String, count: Double): HistoryParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], count = count.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeMeta)) __obj.updateDynamic("includeMeta")(includeMeta.asInstanceOf[js.Any])
-    if (!js.isUndefined(includeTimetoken)) __obj.updateDynamic("includeTimetoken")(includeTimetoken.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringifiedTimeToken)) __obj.updateDynamic("stringifiedTimeToken")(stringifiedTimeToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryParameters]
   }
+  
+  extension [Self <: HistoryParameters](x: Self) {
+    
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setEnd(value: String | Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setIncludeMeta(value: Boolean): Self = StObject.set(x, "includeMeta", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeMetaUndefined: Self = StObject.set(x, "includeMeta", js.undefined)
+    
+    inline def setIncludeTimetoken(value: Boolean): Self = StObject.set(x, "includeTimetoken", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTimetokenUndefined: Self = StObject.set(x, "includeTimetoken", js.undefined)
+    
+    inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    
+    inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+    
+    inline def setStart(value: String | Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStringifiedTimeToken(value: Boolean): Self = StObject.set(x, "stringifiedTimeToken", value.asInstanceOf[js.Any])
+    
+    inline def setStringifiedTimeTokenUndefined: Self = StObject.set(x, "stringifiedTimeToken", js.undefined)
+  }
 }
-

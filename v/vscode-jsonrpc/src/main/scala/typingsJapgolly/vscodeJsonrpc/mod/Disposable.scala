@@ -1,12 +1,14 @@
 package typingsJapgolly.vscodeJsonrpc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-jsonrpc", "Disposable")
-@js.native
-object Disposable extends js.Object {
-  def create(func: js.Function0[Unit]): typingsJapgolly.vscodeJsonrpc.eventsMod.Disposable = js.native
+object Disposable {
+  
+  @JSImport("vscode-jsonrpc", "Disposable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(func: js.Function0[Unit]): typingsJapgolly.vscodeJsonrpc.libCommonDisposableMod.Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(func.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vscodeJsonrpc.libCommonDisposableMod.Disposable]
 }
-

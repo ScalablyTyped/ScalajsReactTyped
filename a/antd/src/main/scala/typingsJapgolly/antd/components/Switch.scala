@@ -1,69 +1,82 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.antd.switchMod.SwitchProps
-import typingsJapgolly.antd.switchMod.SwitchSize
-import typingsJapgolly.antd.switchMod.default
+import org.scalajs.dom.HTMLButtonElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libSwitchMod.SwitchProps
+import typingsJapgolly.antd.libSwitchMod.SwitchSize
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Switch {
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    checkedChildren: VdomNode = null,
-    className: String = null,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    onChange: (/* checked */ Boolean, /* event */ MouseEvent) => Callback = null,
-    onClick: (/* checked */ Boolean, /* event */ MouseEvent) => Callback = null,
-    prefixCls: String = null,
-    size: SwitchSize = null,
-    style: CSSProperties = null,
-    title: String = null,
-    unCheckedChildren: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SwitchProps, default, Unit, SwitchProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (checkedChildren != null) __obj.updateDynamic("checkedChildren")(checkedChildren.rawNode.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* checked */ scala.Boolean, t1: /* event */ org.scalajs.dom.raw.MouseEvent) => onChange(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* checked */ scala.Boolean, t1: /* event */ org.scalajs.dom.raw.MouseEvent) => onClick(t0, t1).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (unCheckedChildren != null) __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.switchMod.SwitchProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.switchMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.switchMod.SwitchProps])(children: _*)
-  }
-  @JSImport("antd/lib/switch", JSImport.Default)
+  @JSImport("antd", "Switch")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLElement] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def checkedChildren(value: VdomNode): this.type = set("checkedChildren", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def checkedChildrenNull: this.type = set("checkedChildren", null)
+    
+    inline def checkedChildrenVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("checkedChildren", js.Array(value*))
+    
+    inline def checkedChildrenVdomElement(value: VdomElement): this.type = set("checkedChildren", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: (/* checked */ Boolean, /* event */ ReactMouseEventFrom[HTMLButtonElement]) => Callback): this.type = set("onChange", js.Any.fromFunction2((t0: /* checked */ Boolean, t1: /* event */ ReactMouseEventFrom[HTMLButtonElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onClick(value: (/* checked */ Boolean, /* event */ ReactMouseEventFrom[HTMLButtonElement]) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* checked */ Boolean, t1: /* event */ ReactMouseEventFrom[HTMLButtonElement]) => (value(t0, t1)).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SwitchSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def unCheckedChildren(value: VdomNode): this.type = set("unCheckedChildren", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def unCheckedChildrenNull: this.type = set("unCheckedChildren", null)
+    
+    inline def unCheckedChildrenVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("unCheckedChildren", js.Array(value*))
+    
+    inline def unCheckedChildrenVdomElement(value: VdomElement): this.type = set("unCheckedChildren", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Switch.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SwitchProps & RefAttributes[HTMLElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

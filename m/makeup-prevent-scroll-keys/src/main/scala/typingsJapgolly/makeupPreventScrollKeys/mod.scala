@@ -1,13 +1,16 @@
 package typingsJapgolly.makeupPreventScrollKeys
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("makeup-prevent-scroll-keys", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def add(el: js.Any): Unit = js.native
-  def remove(el: js.Any): Unit = js.native
+object mod {
+  
+  @JSImport("makeup-prevent-scroll-keys", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def add(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def remove(el: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

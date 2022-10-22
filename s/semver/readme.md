@@ -1,7 +1,7 @@
 
 # Scala.js typings for semver
 
-Typings are for version 7.1
+Typings are for version 7.3
 
 ## Library description:
 The semantic version parser used by npm.
@@ -10,10 +10,10 @@ The semantic version parser used by npm.
 | ------------------ | :-------------: |
 | Full name          | semver |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 9865 |
-| # downloads        | 1560104098 |
-| # stars            | 176 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 8.001145296666666E8 |
+| # stars            | 4263.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/node-semver#readme)

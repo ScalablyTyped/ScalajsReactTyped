@@ -1,23 +1,36 @@
 package typingsJapgolly.reactOnsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var timing: js.UndefOr[String] = js.undefined
 }
-
 object AnimationOptions {
-  @scala.inline
-  def apply(delay: Int | Double = null, duration: Int | Double = null, timing: String = null): AnimationOptions = {
+  
+  inline def apply(): AnimationOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (timing != null) __obj.updateDynamic("timing")(timing.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
+  
+  extension [Self <: AnimationOptions](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setTiming(value: String): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    
+    inline def setTimingUndefined: Self = StObject.set(x, "timing", js.undefined)
+  }
 }
-

@@ -1,18 +1,18 @@
 package typingsJapgolly.mockFs
 
-import typingsJapgolly.mockFs.directoryMod.^
-import typingsJapgolly.mockFs.filesystemMod.DirectoryItems
-import typingsJapgolly.mockFs.filesystemMod.DirectoryOptions
-import typingsJapgolly.mockFs.filesystemMod.FileOptions
-import typingsJapgolly.mockFs.filesystemMod.Options
-import typingsJapgolly.mockFs.filesystemMod.SymlinkOptions
+import typingsJapgolly.mockFs.libFilesystemMod.DirectoryItem
+import typingsJapgolly.mockFs.libFilesystemMod.DirectoryItems
+import typingsJapgolly.mockFs.libFilesystemMod.DirectoryOptions
+import typingsJapgolly.mockFs.libFilesystemMod.FileOptions
+import typingsJapgolly.mockFs.libFilesystemMod.LoaderOptions
+import typingsJapgolly.mockFs.libFilesystemMod.Options
+import typingsJapgolly.mockFs.libFilesystemMod.SymlinkOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mock-fs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Swap out the fs bindings for a mock file system.
     *
@@ -26,31 +26,55 @@ object mod extends js.Object {
     * @param options.createTmp Create a directory for `os.tmpdir()` (defaults to
     *                          `true`).
     */
-  def apply(): Unit = js.native
-  def apply(config: DirectoryItems): Unit = js.native
-  def apply(config: DirectoryItems, options: Options): Unit = js.native
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(config: Unit, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(config: DirectoryItems): Unit = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(config: DirectoryItems, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("mock-fs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Temporarily bypass the mocked file system and load directly from the real file system.
+    *
+    * @example
+    * const filePath = '/path/file.json';
+    * const data = mock.bypass(() => fs.readFileSync(filePath, 'utf-8'));
+    */
+  inline def bypass[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("bypass")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  
   /**
     * Create a directory factory.
     */
-  def directory(): js.Function0[^] = js.native
-  def directory(config: DirectoryOptions): js.Function0[^] = js.native
+  inline def directory(): js.Function0[typingsJapgolly.mockFs.libDirectoryMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")().asInstanceOf[js.Function0[typingsJapgolly.mockFs.libDirectoryMod.^]]
+  inline def directory(config: DirectoryOptions): js.Function0[typingsJapgolly.mockFs.libDirectoryMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typingsJapgolly.mockFs.libDirectoryMod.^]]
+  
   /**
     * Create a file factory.
     */
-  def file(): js.Function0[typingsJapgolly.mockFs.fileMod.^] = js.native
-  def file(config: FileOptions): js.Function0[typingsJapgolly.mockFs.fileMod.^] = js.native
+  inline def file(): js.Function0[typingsJapgolly.mockFs.libFileMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")().asInstanceOf[js.Function0[typingsJapgolly.mockFs.libFileMod.^]]
+  inline def file(config: FileOptions): js.Function0[typingsJapgolly.mockFs.libFileMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typingsJapgolly.mockFs.libFileMod.^]]
+  
   /**
     * Get hold of the mocked filesystem's 'root'
     * If fs hasn't currently been replaced, this will return an empty object
     */
-  def getMockRoot(): ^  | js.Object = js.native
+  inline def getMockRoot(): typingsJapgolly.mockFs.libDirectoryMod.^ | js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getMockRoot")().asInstanceOf[typingsJapgolly.mockFs.libDirectoryMod.^ | js.Object]
+  
+  /**
+    * Load a real file/folder into the mock file system.
+    */
+  inline def load(path: String): DirectoryItem = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any]).asInstanceOf[DirectoryItem]
+  inline def load(path: String, options: LoaderOptions): DirectoryItem = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DirectoryItem]
+  
   /**
     * Restore the fs bindings for the real file system.
     */
-  def restore(): Unit = js.native
+  inline def restore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[Unit]
+  
   /**
     * Create a symbolic link factory.
     */
-  def symlink(config: SymlinkOptions): js.Function0[typingsJapgolly.mockFs.symlinkMod.^] = js.native
+  inline def symlink(config: SymlinkOptions): js.Function0[typingsJapgolly.mockFs.libSymlinkMod.^] = ^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[typingsJapgolly.mockFs.libSymlinkMod.^]]
 }
-

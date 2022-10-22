@@ -1,19 +1,19 @@
 package typingsJapgolly.mendixmodelsdk.mod.webservices
 
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
-import typingsJapgolly.mendixmodelsdk.webservicesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
+  * See: {@link https://docs.mendix.com/refguide/consumed-web-services relevant section in reference guide}
   */
 @JSImport("mendixmodelsdk", "webservices.ImportedWebService")
 @js.native
-class ImportedWebService protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.webservices.ImportedWebService {
+open class ImportedWebService protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.webservices.ImportedWebService {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -22,17 +22,28 @@ class ImportedWebService protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "webservices.ImportedWebService")
-@js.native
-object ImportedWebService extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object ImportedWebService {
+  
+  @JSImport("mendixmodelsdk", "webservices.ImportedWebService")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ImportedWebService unit in the SDK and on the server.
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
-  def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.webservicesMod.webservices.ImportedWebService = js.native
+  /* static member */
+  inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.webservices.ImportedWebService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenWebservicesMod.webservices.ImportedWebService]
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "webservices.ImportedWebService.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "webservices.ImportedWebService.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

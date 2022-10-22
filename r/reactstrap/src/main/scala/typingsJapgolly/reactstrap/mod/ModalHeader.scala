@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.modalHeaderMod.ModalHeaderProps
+import typingsJapgolly.reactstrap.typesLibModalHeaderMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "ModalHeader")
 @js.native
-class ModalHeader[T] ()
-  extends Component[ModalHeaderProps, js.Object, js.Any]
-
+open class ModalHeader () extends default

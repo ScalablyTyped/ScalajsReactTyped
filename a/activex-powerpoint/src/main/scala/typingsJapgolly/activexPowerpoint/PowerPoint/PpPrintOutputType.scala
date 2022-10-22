@@ -1,55 +1,51 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
 */
-trait PpPrintOutputType extends js.Object
-
+trait PpPrintOutputType extends StObject
 object PpPrintOutputType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppPrintOutputBuildSlides: `7` = this.cast(7)
-  @scala.inline
-  def ppPrintOutputFourSlideHandouts: `8` = this.cast(8)
-  @scala.inline
-  def ppPrintOutputNineSlideHandouts: `9` = this.cast(9)
-  @scala.inline
-  def ppPrintOutputNotesPages: `5` = this.cast(5)
-  @scala.inline
-  def ppPrintOutputOneSlideHandouts: `10` = this.cast(10)
-  @scala.inline
-  def ppPrintOutputOutline: `6` = this.cast(6)
-  @scala.inline
-  def ppPrintOutputSixSlideHandouts: `4` = this.cast(4)
-  @scala.inline
-  def ppPrintOutputSlides: `1` = this.cast(1)
-  @scala.inline
-  def ppPrintOutputThreeSlideHandouts: `3` = this.cast(3)
-  @scala.inline
-  def ppPrintOutputTwoSlideHandouts: `2` = this.cast(2)
+  
+  inline def ppPrintOutputBuildSlides: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ppPrintOutputFourSlideHandouts: `8` = 8.asInstanceOf[`8`]
+  
+  inline def ppPrintOutputNineSlideHandouts: `9` = 9.asInstanceOf[`9`]
+  
+  inline def ppPrintOutputNotesPages: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppPrintOutputOneSlideHandouts: `10` = 10.asInstanceOf[`10`]
+  
+  inline def ppPrintOutputOutline: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ppPrintOutputSixSlideHandouts: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppPrintOutputSlides: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppPrintOutputThreeSlideHandouts: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppPrintOutputTwoSlideHandouts: `2` = 2.asInstanceOf[`2`]
 }
-

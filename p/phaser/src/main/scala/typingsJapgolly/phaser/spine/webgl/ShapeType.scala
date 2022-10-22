@@ -1,35 +1,27 @@
 package typingsJapgolly.phaser.spine.webgl
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeType extends js.Object
-
+sealed trait ShapeType extends StObject
 @JSGlobal("spine.webgl.ShapeType")
 @js.native
-object ShapeType extends js.Object {
-  @js.native
-  sealed trait Filled extends ShapeType
+object ShapeType extends StObject {
   
   @js.native
-  sealed trait Line extends ShapeType
+  sealed trait Filled
+    extends StObject
+       with ShapeType
   
   @js.native
-  sealed trait Point extends ShapeType
+  sealed trait Line
+    extends StObject
+       with ShapeType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ShapeType with Double] = js.native
-  /* 4 */ @js.native
-  object Filled extends TopLevel[Filled with Double]
-  
-  /* 1 */ @js.native
-  object Line extends TopLevel[Line with Double]
-  
-  /* 0 */ @js.native
-  object Point extends TopLevel[Point with Double]
-  
+  @js.native
+  sealed trait Point
+    extends StObject
+       with ShapeType
 }
-

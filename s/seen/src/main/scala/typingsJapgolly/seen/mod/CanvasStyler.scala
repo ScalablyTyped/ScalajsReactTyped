@@ -1,19 +1,20 @@
 package typingsJapgolly.seen.mod
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import typingsJapgolly.seen.AnonFill
-import typingsJapgolly.seen.AnonStroke
+import org.scalajs.dom.CanvasRenderingContext2D
+import typingsJapgolly.seen.anon.Fill
+import typingsJapgolly.seen.anon.Stroke
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "CanvasStyler")
 @js.native
-class CanvasStyler protected () extends js.Object {
+open class CanvasStyler protected () extends StObject {
   def this(ctx: CanvasRenderingContext2D) = this()
+  
   def draw(): this.type = js.native
-  def draw(style: AnonStroke): this.type = js.native
+  def draw(style: Stroke): this.type = js.native
+  
   def fill(): this.type = js.native
-  def fill(style: AnonFill): this.type = js.native
+  def fill(style: Fill): this.type = js.native
 }
-

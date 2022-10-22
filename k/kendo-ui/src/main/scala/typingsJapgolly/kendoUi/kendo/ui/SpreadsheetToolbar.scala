@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetToolbar extends js.Object {
-  var data: js.UndefOr[Boolean | js.Any] = js.undefined
-  var home: js.UndefOr[Boolean | js.Any] = js.undefined
-  var insert: js.UndefOr[Boolean | js.Any] = js.undefined
+trait SpreadsheetToolbar extends StObject {
+  
+  var data: js.UndefOr[Boolean | Any] = js.undefined
+  
+  var home: js.UndefOr[Boolean | Any] = js.undefined
+  
+  var insert: js.UndefOr[Boolean | Any] = js.undefined
 }
-
 object SpreadsheetToolbar {
-  @scala.inline
-  def apply(data: Boolean | js.Any = null, home: Boolean | js.Any = null, insert: Boolean | js.Any = null): SpreadsheetToolbar = {
+  
+  inline def apply(): SpreadsheetToolbar = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (home != null) __obj.updateDynamic("home")(home.asInstanceOf[js.Any])
-    if (insert != null) __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetToolbar]
   }
+  
+  extension [Self <: SpreadsheetToolbar](x: Self) {
+    
+    inline def setData(value: Boolean | Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHome(value: Boolean | Any): Self = StObject.set(x, "home", value.asInstanceOf[js.Any])
+    
+    inline def setHomeUndefined: Self = StObject.set(x, "home", js.undefined)
+    
+    inline def setInsert(value: Boolean | Any): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+  }
 }
-

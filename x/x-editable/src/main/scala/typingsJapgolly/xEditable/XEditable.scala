@@ -1,61 +1,90 @@
 package typingsJapgolly.xEditable
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XEditable extends js.Object {
-  var options: XEditableOptions
+trait XEditable extends StObject {
+  
   def activate(): Unit
+  
   def destroy(): Unit
+  
   def disable(): Unit
+  
   def enable(): Unit
-  def getValue(isSingle: Boolean): js.Any
+  
+  def getValue(isSingle: Boolean): Any
+  
   def hide(): Unit
-  def option(key: js.Any, value: js.Any): Unit
-  def setValue(value: js.Any, convertStr: Boolean): Unit
+  
+  def option(key: Any, value: Any): Unit
+  
+  var options: XEditableOptions
+  
+  def setValue(value: Any, convertStr: Boolean): Unit
+  
   def show(closeAll: Boolean): Unit
+  
   def submit(options: XEditableSubmitOptions): Unit
+  
   def toggle(closeAll: Boolean): Unit
+  
   def toggleDisabled(): Unit
+  
   def validate(): Unit
 }
-
 object XEditable {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     activate: Callback,
     destroy: Callback,
     disable: Callback,
     enable: Callback,
-    getValue: Boolean => CallbackTo[js.Any],
+    getValue: Boolean => Any,
     hide: Callback,
-    option: (js.Any, js.Any) => Callback,
+    option: (Any, Any) => Callback,
     options: XEditableOptions,
-    setValue: (js.Any, Boolean) => Callback,
+    setValue: (Any, Boolean) => Callback,
     show: Boolean => Callback,
     submit: XEditableSubmitOptions => Callback,
     toggle: Boolean => Callback,
     toggleDisabled: Callback,
     validate: Callback
   ): XEditable = {
-    val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    __obj.updateDynamic("activate")(activate.toJsFn)
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.updateDynamic("disable")(disable.toJsFn)
-    __obj.updateDynamic("enable")(enable.toJsFn)
-    __obj.updateDynamic("getValue")(js.Any.fromFunction1((t0: scala.Boolean) => getValue(t0).runNow()))
-    __obj.updateDynamic("hide")(hide.toJsFn)
-    __obj.updateDynamic("option")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => option(t0, t1).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction2((t0: js.Any, t1: scala.Boolean) => setValue(t0, t1).runNow()))
-    __obj.updateDynamic("show")(js.Any.fromFunction1((t0: scala.Boolean) => show(t0).runNow()))
-    __obj.updateDynamic("submit")(js.Any.fromFunction1((t0: typingsJapgolly.xEditable.XEditableSubmitOptions) => submit(t0).runNow()))
-    __obj.updateDynamic("toggle")(js.Any.fromFunction1((t0: scala.Boolean) => toggle(t0).runNow()))
-    __obj.updateDynamic("toggleDisabled")(toggleDisabled.toJsFn)
-    __obj.updateDynamic("validate")(validate.toJsFn)
+    val __obj = js.Dynamic.literal(activate = activate.toJsFn, destroy = destroy.toJsFn, disable = disable.toJsFn, enable = enable.toJsFn, getValue = js.Any.fromFunction1(getValue), hide = hide.toJsFn, option = js.Any.fromFunction2((t0: Any, t1: Any) => (option(t0, t1)).runNow()), options = options.asInstanceOf[js.Any], setValue = js.Any.fromFunction2((t0: Any, t1: Boolean) => (setValue(t0, t1)).runNow()), show = js.Any.fromFunction1((t0: Boolean) => show(t0).runNow()), submit = js.Any.fromFunction1((t0: XEditableSubmitOptions) => submit(t0).runNow()), toggle = js.Any.fromFunction1((t0: Boolean) => toggle(t0).runNow()), toggleDisabled = toggleDisabled.toJsFn, validate = validate.toJsFn)
     __obj.asInstanceOf[XEditable]
   }
+  
+  extension [Self <: XEditable](x: Self) {
+    
+    inline def setActivate(value: Callback): Self = StObject.set(x, "activate", value.toJsFn)
+    
+    inline def setDestroy(value: Callback): Self = StObject.set(x, "destroy", value.toJsFn)
+    
+    inline def setDisable(value: Callback): Self = StObject.set(x, "disable", value.toJsFn)
+    
+    inline def setEnable(value: Callback): Self = StObject.set(x, "enable", value.toJsFn)
+    
+    inline def setGetValue(value: Boolean => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    
+    inline def setHide(value: Callback): Self = StObject.set(x, "hide", value.toJsFn)
+    
+    inline def setOption(value: (Any, Any) => Callback): Self = StObject.set(x, "option", js.Any.fromFunction2((t0: Any, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOptions(value: XEditableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setSetValue(value: (Any, Boolean) => Callback): Self = StObject.set(x, "setValue", js.Any.fromFunction2((t0: Any, t1: Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def setShow(value: Boolean => Callback): Self = StObject.set(x, "show", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setSubmit(value: XEditableSubmitOptions => Callback): Self = StObject.set(x, "submit", js.Any.fromFunction1((t0: XEditableSubmitOptions) => value(t0).runNow()))
+    
+    inline def setToggle(value: Boolean => Callback): Self = StObject.set(x, "toggle", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    
+    inline def setToggleDisabled(value: Callback): Self = StObject.set(x, "toggleDisabled", value.toJsFn)
+    
+    inline def setValidate(value: Callback): Self = StObject.set(x, "validate", value.toJsFn)
+  }
 }
-

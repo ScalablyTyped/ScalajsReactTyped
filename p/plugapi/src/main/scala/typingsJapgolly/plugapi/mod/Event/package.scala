@@ -1,12 +1,15 @@
-package typingsJapgolly.plugapi.mod
+package typingsJapgolly.plugapi.mod.Event
 
+import typingsJapgolly.plugapi.mod.User.User
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Event {
-  type Grab = scala.Double
-  type RoomJoin = java.lang.String
-  type UserJoin = typingsJapgolly.plugapi.mod.User.User
-  type UserLeave = typingsJapgolly.plugapi.mod.User.User
-}
+
+type Grab = Double
+
+type RoomJoin = String
+
+type UserJoin = User
+
+type UserLeave = User

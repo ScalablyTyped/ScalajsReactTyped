@@ -1,137 +1,135 @@
 package typingsJapgolly.inboxsdk.mod.Router
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NativeRouteIDs extends js.Object
-
+sealed trait NativeRouteIDs extends StObject
 @JSImport("inboxsdk", "Router.NativeRouteIDs")
 @js.native
-object NativeRouteIDs extends js.Object {
-  @js.native
-  sealed trait ALL_MAIL extends NativeRouteIDs
-  
-  @js.native
-  sealed trait ANY_LIST extends NativeRouteIDs
-  
-  @js.native
-  sealed trait CHAT extends NativeRouteIDs
-  
-  @js.native
-  sealed trait CHATS extends NativeRouteIDs
-  
-  @js.native
-  sealed trait CONTACT extends NativeRouteIDs
-  
-  @js.native
-  sealed trait CONTACTS extends NativeRouteIDs
-  
-  @js.native
-  sealed trait DONE extends NativeRouteIDs
-  
-  @js.native
-  sealed trait DRAFTS extends NativeRouteIDs
-  
-  @js.native
-  sealed trait IMPORTANT extends NativeRouteIDs
-  
-  @js.native
-  sealed trait INBOX extends NativeRouteIDs
-  
-  @js.native
-  sealed trait LABEL extends NativeRouteIDs
-  
-  @js.native
-  sealed trait REMINDERS extends NativeRouteIDs
-  
-  @js.native
-  sealed trait SEARCH extends NativeRouteIDs
-  
-  @js.native
-  sealed trait SENT extends NativeRouteIDs
-  
-  @js.native
-  sealed trait SETTINGS extends NativeRouteIDs
-  
-  @js.native
-  sealed trait SNOOZED extends NativeRouteIDs
-  
-  @js.native
-  sealed trait SPAM extends NativeRouteIDs
-  
-  @js.native
-  sealed trait STARRED extends NativeRouteIDs
-  
-  @js.native
-  sealed trait THREAD extends NativeRouteIDs
-  
-  @js.native
-  sealed trait TRASH extends NativeRouteIDs
+object NativeRouteIDs extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NativeRouteIDs with Double] = js.native
-  /* 1 */ @js.native
-  object ALL_MAIL extends TopLevel[ALL_MAIL with Double]
+  def apply(value: Double): js.UndefOr[NativeRouteIDs & Double] = js.native
   
-  /* 19 */ @js.native
-  object ANY_LIST extends TopLevel[ANY_LIST with Double]
+  @js.native
+  sealed trait ALL_MAIL
+    extends StObject
+       with NativeRouteIDs
+  /* 1 */ val ALL_MAIL: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.ALL_MAIL & Double = js.native
   
-  /* 15 */ @js.native
-  object CHAT extends TopLevel[CHAT with Double]
+  @js.native
+  sealed trait ANY_LIST
+    extends StObject
+       with NativeRouteIDs
+  /* 19 */ val ANY_LIST: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.ANY_LIST & Double = js.native
   
-  /* 14 */ @js.native
-  object CHATS extends TopLevel[CHATS with Double]
+  @js.native
+  sealed trait CHAT
+    extends StObject
+       with NativeRouteIDs
+  /* 15 */ val CHAT: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.CHAT & Double = js.native
   
-  /* 17 */ @js.native
-  object CONTACT extends TopLevel[CONTACT with Double]
+  @js.native
+  sealed trait CHATS
+    extends StObject
+       with NativeRouteIDs
+  /* 14 */ val CHATS: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.CHATS & Double = js.native
   
-  /* 16 */ @js.native
-  object CONTACTS extends TopLevel[CONTACTS with Double]
+  @js.native
+  sealed trait CONTACT
+    extends StObject
+       with NativeRouteIDs
+  /* 17 */ val CONTACT: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.CONTACT & Double = js.native
   
-  /* 6 */ @js.native
-  object DONE extends TopLevel[DONE with Double]
+  @js.native
+  sealed trait CONTACTS
+    extends StObject
+       with NativeRouteIDs
+  /* 16 */ val CONTACTS: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.CONTACTS & Double = js.native
   
-  /* 4 */ @js.native
-  object DRAFTS extends TopLevel[DRAFTS with Double]
+  @js.native
+  sealed trait DONE
+    extends StObject
+       with NativeRouteIDs
+  /* 6 */ val DONE: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.DONE & Double = js.native
   
-  /* 11 */ @js.native
-  object IMPORTANT extends TopLevel[IMPORTANT with Double]
+  @js.native
+  sealed trait DRAFTS
+    extends StObject
+       with NativeRouteIDs
+  /* 4 */ val DRAFTS: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.DRAFTS & Double = js.native
   
-  /* 0 */ @js.native
-  object INBOX extends TopLevel[INBOX with Double]
+  @js.native
+  sealed trait IMPORTANT
+    extends StObject
+       with NativeRouteIDs
+  /* 11 */ val IMPORTANT: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.IMPORTANT & Double = js.native
   
-  /* 8 */ @js.native
-  object LABEL extends TopLevel[LABEL with Double]
+  @js.native
+  sealed trait INBOX
+    extends StObject
+       with NativeRouteIDs
+  /* 0 */ val INBOX: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.INBOX & Double = js.native
   
-  /* 7 */ @js.native
-  object REMINDERS extends TopLevel[REMINDERS with Double]
+  @js.native
+  sealed trait LABEL
+    extends StObject
+       with NativeRouteIDs
+  /* 8 */ val LABEL: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.LABEL & Double = js.native
   
-  /* 12 */ @js.native
-  object SEARCH extends TopLevel[SEARCH with Double]
+  @js.native
+  sealed trait REMINDERS
+    extends StObject
+       with NativeRouteIDs
+  /* 7 */ val REMINDERS: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.REMINDERS & Double = js.native
   
-  /* 2 */ @js.native
-  object SENT extends TopLevel[SENT with Double]
+  @js.native
+  sealed trait SEARCH
+    extends StObject
+       with NativeRouteIDs
+  /* 12 */ val SEARCH: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.SEARCH & Double = js.native
   
-  /* 18 */ @js.native
-  object SETTINGS extends TopLevel[SETTINGS with Double]
+  @js.native
+  sealed trait SENT
+    extends StObject
+       with NativeRouteIDs
+  /* 2 */ val SENT: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.SENT & Double = js.native
   
-  /* 5 */ @js.native
-  object SNOOZED extends TopLevel[SNOOZED with Double]
+  @js.native
+  sealed trait SETTINGS
+    extends StObject
+       with NativeRouteIDs
+  /* 18 */ val SETTINGS: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.SETTINGS & Double = js.native
   
-  /* 10 */ @js.native
-  object SPAM extends TopLevel[SPAM with Double]
+  @js.native
+  sealed trait SNOOZED
+    extends StObject
+       with NativeRouteIDs
+  /* 5 */ val SNOOZED: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.SNOOZED & Double = js.native
   
-  /* 3 */ @js.native
-  object STARRED extends TopLevel[STARRED with Double]
+  @js.native
+  sealed trait SPAM
+    extends StObject
+       with NativeRouteIDs
+  /* 10 */ val SPAM: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.SPAM & Double = js.native
   
-  /* 13 */ @js.native
-  object THREAD extends TopLevel[THREAD with Double]
+  @js.native
+  sealed trait STARRED
+    extends StObject
+       with NativeRouteIDs
+  /* 3 */ val STARRED: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.STARRED & Double = js.native
   
-  /* 9 */ @js.native
-  object TRASH extends TopLevel[TRASH with Double]
+  @js.native
+  sealed trait THREAD
+    extends StObject
+       with NativeRouteIDs
+  /* 13 */ val THREAD: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.THREAD & Double = js.native
   
+  @js.native
+  sealed trait TRASH
+    extends StObject
+       with NativeRouteIDs
+  /* 9 */ val TRASH: typingsJapgolly.inboxsdk.mod.Router.NativeRouteIDs.TRASH & Double = js.native
 }
-

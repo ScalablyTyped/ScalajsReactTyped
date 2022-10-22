@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait configRequestProxyRules extends Object {
+trait configRequestProxyRules
+  extends StObject
+     with Object {
+  
   /**
     * The URL of the proxy.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#request)
     */
   var proxyUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * URL prefix for resources that need to be accessed through a specific proxy.
     *
@@ -21,22 +24,25 @@ trait configRequestProxyRules extends Object {
     */
   var urlPrefix: js.UndefOr[String] = js.undefined
 }
-
 object configRequestProxyRules {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    proxyUrl: String = null,
-    urlPrefix: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): configRequestProxyRules = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (proxyUrl != null) __obj.updateDynamic("proxyUrl")(proxyUrl.asInstanceOf[js.Any])
-    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[configRequestProxyRules]
   }
+  
+  extension [Self <: configRequestProxyRules](x: Self) {
+    
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    
+    inline def setUrlPrefix(value: String): Self = StObject.set(x, "urlPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setUrlPrefixUndefined: Self = StObject.set(x, "urlPrefix", js.undefined)
+  }
 }
-

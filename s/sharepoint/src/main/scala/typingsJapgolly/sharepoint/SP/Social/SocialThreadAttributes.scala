@@ -1,54 +1,43 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialThreadAttributes extends js.Object
-
+sealed trait SocialThreadAttributes extends StObject
 /** Specifies properties of the thread. */
 @JSGlobal("SP.Social.SocialThreadAttributes")
 @js.native
-object SocialThreadAttributes extends js.Object {
-  @js.native
-  sealed trait canLock extends SocialThreadAttributes
+object SocialThreadAttributes extends StObject {
   
   @js.native
-  sealed trait canReply extends SocialThreadAttributes
+  sealed trait canLock
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait isDigest extends SocialThreadAttributes
+  sealed trait canReply
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait isLocked extends SocialThreadAttributes
+  sealed trait isDigest
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait none extends SocialThreadAttributes
+  sealed trait isLocked
+    extends StObject
+       with SocialThreadAttributes
   
   @js.native
-  sealed trait replyLimitReached extends SocialThreadAttributes
+  sealed trait none
+    extends StObject
+       with SocialThreadAttributes
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialThreadAttributes with Double] = js.native
-  /* 3 */ @js.native
-  object canLock extends TopLevel[canLock with Double]
-  
-  /* 2 */ @js.native
-  object canReply extends TopLevel[canReply with Double]
-  
-  /* 1 */ @js.native
-  object isDigest extends TopLevel[isDigest with Double]
-  
-  /* 4 */ @js.native
-  object isLocked extends TopLevel[isLocked with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 5 */ @js.native
-  object replyLimitReached extends TopLevel[replyLimitReached with Double]
-  
+  @js.native
+  sealed trait replyLimitReached
+    extends StObject
+       with SocialThreadAttributes
 }
-

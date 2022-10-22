@@ -1,44 +1,41 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.CatchClause
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait CatchClause_
-  extends BlockParent
+  extends StObject
      with BaseNode
-     with Scopable {
+     with BlockParent
+     with Scopable
+     with Standardized {
+  
   var body: BlockStatement_
+  
   var param: Identifier_ | ArrayPattern_ | ObjectPattern_ | Null
+  
   @JSName("type")
   var type_CatchClause_ : CatchClause
 }
-
 object CatchClause_ {
-  @scala.inline
-  def apply(
-    body: BlockStatement_,
-    `type`: CatchClause,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    param: Identifier_ | ArrayPattern_ | ObjectPattern_ = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): CatchClause_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(body: BlockStatement_): CatchClause_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, param = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[CatchClause_]
   }
+  
+  extension [Self <: CatchClause_](x: Self) {
+    
+    inline def setBody(value: BlockStatement_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setParam(value: Identifier_ | ArrayPattern_ | ObjectPattern_): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    
+    inline def setParamNull: Self = StObject.set(x, "param", null)
+    
+    inline def setType(value: CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

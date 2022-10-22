@@ -1,36 +1,49 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SortedEventUIParam extends js.Object {
+trait SortedEventUIParam extends StObject {
+  
   /**
-  	 * Gets an array of the tuple indices and sort directions that were actually applied to the table view.
-  	 */
-  var appliedSortDirections: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets an array of the tuple indices and sort directions that were actually applied to the table view.
+    */
+  var appliedSortDirections: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets a reference to the pivot grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the pivot grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets an array of the tuple indices and sort directions that were passed to the table view.
-  	 */
-  var sortDirections: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets an array of the tuple indices and sort directions that were passed to the table view.
+    */
+  var sortDirections: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object SortedEventUIParam {
-  @scala.inline
-  def apply(
-    appliedSortDirections: js.Array[_] = null,
-    owner: js.Any = null,
-    sortDirections: js.Array[_] = null
-  ): SortedEventUIParam = {
+  
+  inline def apply(): SortedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (appliedSortDirections != null) __obj.updateDynamic("appliedSortDirections")(appliedSortDirections.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (sortDirections != null) __obj.updateDynamic("sortDirections")(sortDirections.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortedEventUIParam]
   }
+  
+  extension [Self <: SortedEventUIParam](x: Self) {
+    
+    inline def setAppliedSortDirections(value: js.Array[Any]): Self = StObject.set(x, "appliedSortDirections", value.asInstanceOf[js.Any])
+    
+    inline def setAppliedSortDirectionsUndefined: Self = StObject.set(x, "appliedSortDirections", js.undefined)
+    
+    inline def setAppliedSortDirectionsVarargs(value: Any*): Self = StObject.set(x, "appliedSortDirections", js.Array(value*))
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setSortDirections(value: js.Array[Any]): Self = StObject.set(x, "sortDirections", value.asInstanceOf[js.Any])
+    
+    inline def setSortDirectionsUndefined: Self = StObject.set(x, "sortDirections", js.undefined)
+    
+    inline def setSortDirectionsVarargs(value: Any*): Self = StObject.set(x, "sortDirections", js.Array(value*))
+  }
 }
-

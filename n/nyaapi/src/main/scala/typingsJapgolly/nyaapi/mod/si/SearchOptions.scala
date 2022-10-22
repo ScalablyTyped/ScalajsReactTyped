@@ -2,40 +2,65 @@ package typingsJapgolly.nyaapi.mod.si
 
 import typingsJapgolly.nyaapi.nyaapiStrings.asc
 import typingsJapgolly.nyaapi.nyaapiStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchOptions extends js.Object {
-  var category: js.UndefOr[Category] = js.undefined
+trait SearchOptions extends StObject {
+  
+  var category: js.UndefOr[
+    /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Category * / any */ String
+  ] = js.undefined
+  
   var direction: js.UndefOr[asc | desc] = js.undefined
+  
   var filter: js.UndefOr[Filter] = js.undefined
+  
   var n: js.UndefOr[Double] = js.undefined
+  
   var p: js.UndefOr[Double] = js.undefined
+  
   var sort: js.UndefOr[String] = js.undefined
+  
   var term: js.UndefOr[String] = js.undefined
 }
-
 object SearchOptions {
-  @scala.inline
-  def apply(
-    category: Category = null,
-    direction: asc | desc = null,
-    filter: Filter = null,
-    n: Int | Double = null,
-    p: Int | Double = null,
-    sort: String = null,
-    term: String = null
-  ): SearchOptions = {
+  
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
-    if (p != null) __obj.updateDynamic("p")(p.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (term != null) __obj.updateDynamic("term")(term.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
+  
+  extension [Self <: SearchOptions](x: Self) {
+    
+    inline def setCategory(
+      value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Category * / any */ String
+    ): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setFilter(value: Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    
+    inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    
+    inline def setTermUndefined: Self = StObject.set(x, "term", js.undefined)
+  }
 }
-

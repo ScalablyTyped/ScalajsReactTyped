@@ -1,33 +1,45 @@
 package typingsJapgolly.phaser.Phaser.Types.Loader.FileTypes
 
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SVGSizeConfig extends js.Object {
+trait SVGSizeConfig extends StObject {
+  
   /**
     * An optional height. The SVG will be resized to this size before being rendered to a texture.
     */
-  var height: js.UndefOr[integer] = js.undefined
+  var height: js.UndefOr[Double] = js.undefined
+  
   /**
     * An optional scale. If given it overrides the width / height properties. The SVG is scaled by the scale factor before being rendered to a texture.
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * An optional width. The SVG will be resized to this size before being rendered to a texture.
     */
-  var width: js.UndefOr[integer] = js.undefined
+  var width: js.UndefOr[Double] = js.undefined
 }
-
 object SVGSizeConfig {
-  @scala.inline
-  def apply(height: Int | Double = null, scale: Int | Double = null, width: Int | Double = null): SVGSizeConfig = {
+  
+  inline def apply(): SVGSizeConfig = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGSizeConfig]
   }
+  
+  extension [Self <: SVGSizeConfig](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

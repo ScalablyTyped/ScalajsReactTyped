@@ -1,24 +1,36 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
 import typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.settings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ?Das selbe wie Appearance?
-trait ISettings extends js.Object {
+trait ISettings extends StObject {
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var uses: settings
 }
-
 object ISettings {
-  @scala.inline
-  def apply(uses: settings, max: Int | Double = null, min: Int | Double = null): ISettings = {
-    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+  
+  inline def apply(): ISettings = {
+    val __obj = js.Dynamic.literal(uses = "settings")
     __obj.asInstanceOf[ISettings]
   }
+  
+  extension [Self <: ISettings](x: Self) {
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setUses(value: settings): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+  }
 }
-

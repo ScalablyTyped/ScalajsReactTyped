@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaCategory extends js.Object
-
+sealed trait MediaCategory extends StObject
 /** Defines values for types of media categories. */
 @JSGlobal("Windows.Media.Capture.MediaCategory")
 @js.native
-object MediaCategory extends js.Object {
+object MediaCategory extends StObject {
+  
   /** Media is intended for real-time communications. */
   @js.native
-  sealed trait communications extends MediaCategory
+  sealed trait communications
+    extends StObject
+       with MediaCategory
   
   /** Media is game chat. */
   @js.native
-  sealed trait gameChat extends MediaCategory
+  sealed trait gameChat
+    extends StObject
+       with MediaCategory
   
   /** General media. */
   @js.native
-  sealed trait media extends MediaCategory
+  sealed trait media
+    extends StObject
+       with MediaCategory
   
   /** Media category is other. */
   @js.native
-  sealed trait other extends MediaCategory
+  sealed trait other
+    extends StObject
+       with MediaCategory
   
   /** Media is speech. */
   @js.native
-  sealed trait speech extends MediaCategory
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaCategory with Double] = js.native
-  /* 1 */ @js.native
-  object communications extends TopLevel[communications with Double]
-  
-  /* 3 */ @js.native
-  object gameChat extends TopLevel[gameChat with Double]
-  
-  /* 2 */ @js.native
-  object media extends TopLevel[media with Double]
-  
-  /* 0 */ @js.native
-  object other extends TopLevel[other with Double]
-  
-  /* 4 */ @js.native
-  object speech extends TopLevel[speech with Double]
-  
+  sealed trait speech
+    extends StObject
+       with MediaCategory
 }
-

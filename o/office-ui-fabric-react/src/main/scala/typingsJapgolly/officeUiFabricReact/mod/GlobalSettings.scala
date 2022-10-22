@@ -1,24 +1,28 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.uifabricUtilities.globalSettingsMod.IChangeEventCallback
+import typingsJapgolly.uifabricUtilities.libGlobalSettingsMod.IChangeEventCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "GlobalSettings")
 @js.native
-class GlobalSettings ()
-  extends typingsJapgolly.officeUiFabricReact.utilitiesMod.GlobalSettings
-
+open class GlobalSettings ()
+  extends typingsJapgolly.officeUiFabricReact.libUtilitiesMod.GlobalSettings
 /* static members */
-@JSImport("office-ui-fabric-react", "GlobalSettings")
-@js.native
-object GlobalSettings extends js.Object {
-  def addChangeListener(cb: IChangeEventCallback): Unit = js.native
-  def getValue[T](key: String): T = js.native
-  def getValue[T](key: String, defaultValue: T): T = js.native
-  def getValue[T](key: String, defaultValue: js.Function0[T]): T = js.native
-  def removeChangeListener(cb: IChangeEventCallback): Unit = js.native
-  def setValue[T](key: String, value: T): T = js.native
+object GlobalSettings {
+  
+  @JSImport("office-ui-fabric-react", "GlobalSettings")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def addChangeListener(cb: IChangeEventCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def getValue[T](key: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def getValue[T](key: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def getValue[T](key: String, defaultValue: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def removeChangeListener(cb: IChangeEventCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChangeListener")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setValue[T](key: String, value: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("setValue")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
 }
-

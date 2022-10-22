@@ -10,10 +10,10 @@ BezierEasing provides Cubic Bezier Curve easing which generalizes easing functio
 | ------------------ | :-------------: |
 | Full name          | bezier-easing |
 | Keywords           | cubic-bezier, bezier, easing, interpolation, animation, timing, timing-function |
-| # releases         | 2 |
-| # dependents       | 122 |
-| # downloads        | 4579997 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1205581.3333333333 |
+| # stars            | 1526.0 |
 
 ## Links
 - [Homepage](https://github.com/gre/bezier-easing#readme)

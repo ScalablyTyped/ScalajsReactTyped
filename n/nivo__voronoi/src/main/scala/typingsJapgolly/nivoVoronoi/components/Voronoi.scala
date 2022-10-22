@@ -1,81 +1,64 @@
 package typingsJapgolly.nivoVoronoi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.nivoCore.mod.Box
-import typingsJapgolly.nivoCore.mod.Dimensions
 import typingsJapgolly.nivoCore.mod.Theme
-import typingsJapgolly.nivoVoronoi.mod.VoronoiCustomLayer
-import typingsJapgolly.nivoVoronoi.mod.VoronoiDatum
-import typingsJapgolly.nivoVoronoi.mod.VoronoiDomain
-import typingsJapgolly.nivoVoronoi.mod.VoronoiProps
-import typingsJapgolly.nivoVoronoi.nivoVoronoiStrings.bounds
-import typingsJapgolly.nivoVoronoi.nivoVoronoiStrings.cells
-import typingsJapgolly.nivoVoronoi.nivoVoronoiStrings.links
-import typingsJapgolly.nivoVoronoi.nivoVoronoiStrings.points
+import typingsJapgolly.nivoVoronoi.anon.PartialOmitVoronoiSvgProp
+import typingsJapgolly.nivoVoronoi.distTypesTypesMod.VoronoiDatum
+import typingsJapgolly.nivoVoronoi.distTypesTypesMod.VoronoiDomain
+import typingsJapgolly.nivoVoronoi.distTypesTypesMod.VoronoiLayer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Voronoi {
-  def apply(
-    data: js.Array[VoronoiDatum],
-    height: Double,
-    width: Double,
-    cellLineColor: String = null,
-    cellLineWidth: Int | Double = null,
-    enableCells: js.UndefOr[Boolean] = js.undefined,
-    enableLinks: js.UndefOr[Boolean] = js.undefined,
-    enablePoints: js.UndefOr[Boolean] = js.undefined,
-    layers: js.Array[links | cells | points | bounds | VoronoiCustomLayer] = null,
-    linkLineColor: String = null,
-    linkLineWidth: Int | Double = null,
-    margin: Box = null,
-    pointColor: String = null,
-    pointSize: Int | Double = null,
-    theme: Theme = null,
-    xDomain: VoronoiDomain = null,
-    yDomain: VoronoiDomain = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    VoronoiProps with Dimensions, 
-    typingsJapgolly.nivoVoronoi.mod.Voronoi, 
-    Unit, 
-    VoronoiProps with Dimensions
-  ] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
   
-      if (cellLineColor != null) __obj.updateDynamic("cellLineColor")(cellLineColor.asInstanceOf[js.Any])
-    if (cellLineWidth != null) __obj.updateDynamic("cellLineWidth")(cellLineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCells)) __obj.updateDynamic("enableCells")(enableCells.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(enablePoints)) __obj.updateDynamic("enablePoints")(enablePoints.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (linkLineColor != null) __obj.updateDynamic("linkLineColor")(linkLineColor.asInstanceOf[js.Any])
-    if (linkLineWidth != null) __obj.updateDynamic("linkLineWidth")(linkLineWidth.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (pointColor != null) __obj.updateDynamic("pointColor")(pointColor.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (xDomain != null) __obj.updateDynamic("xDomain")(xDomain.asInstanceOf[js.Any])
-    if (yDomain != null) __obj.updateDynamic("yDomain")(yDomain.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoVoronoi.mod.VoronoiProps with typingsJapgolly.nivoCore.mod.Dimensions, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoVoronoi.mod.Voronoi](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoVoronoi.mod.VoronoiProps with typingsJapgolly.nivoCore.mod.Dimensions])(children: _*)
+  inline def apply(data: js.Array[VoronoiDatum], height: Double, width: Double): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PartialOmitVoronoiSvgProp]))
   }
+  
   @JSImport("@nivo/voronoi", "Voronoi")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def cellLineColor(value: String): this.type = set("cellLineColor", value.asInstanceOf[js.Any])
+    
+    inline def cellLineWidth(value: Double): this.type = set("cellLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def enableCells(value: Boolean): this.type = set("enableCells", value.asInstanceOf[js.Any])
+    
+    inline def enableLinks(value: Boolean): this.type = set("enableLinks", value.asInstanceOf[js.Any])
+    
+    inline def enablePoints(value: Boolean): this.type = set("enablePoints", value.asInstanceOf[js.Any])
+    
+    inline def layers(value: js.Array[VoronoiLayer]): this.type = set("layers", value.asInstanceOf[js.Any])
+    
+    inline def layersVarargs(value: VoronoiLayer*): this.type = set("layers", js.Array(value*))
+    
+    inline def linkLineColor(value: String): this.type = set("linkLineColor", value.asInstanceOf[js.Any])
+    
+    inline def linkLineWidth(value: Double): this.type = set("linkLineWidth", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def pointColor(value: String): this.type = set("pointColor", value.asInstanceOf[js.Any])
+    
+    inline def pointSize(value: Double): this.type = set("pointSize", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def xDomain(value: VoronoiDomain): this.type = set("xDomain", value.asInstanceOf[js.Any])
+    
+    inline def yDomain(value: VoronoiDomain): this.type = set("yDomain", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PartialOmitVoronoiSvgProp): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

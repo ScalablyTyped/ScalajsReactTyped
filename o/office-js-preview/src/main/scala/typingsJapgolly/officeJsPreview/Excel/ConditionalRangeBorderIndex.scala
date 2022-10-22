@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalRangeBorderIndex extends js.Object
-
+sealed trait ConditionalRangeBorderIndex extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalRangeBorderIndex")
 @js.native
-object ConditionalRangeBorderIndex extends js.Object {
+object ConditionalRangeBorderIndex extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait edgeBottom extends ConditionalRangeBorderIndex
+  sealed trait edgeBottom
+    extends StObject
+       with ConditionalRangeBorderIndex
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait edgeLeft extends ConditionalRangeBorderIndex
+  sealed trait edgeLeft
+    extends StObject
+       with ConditionalRangeBorderIndex
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait edgeRight extends ConditionalRangeBorderIndex
+  sealed trait edgeRight
+    extends StObject
+       with ConditionalRangeBorderIndex
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait edgeTop extends ConditionalRangeBorderIndex
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalRangeBorderIndex with String] = js.native
-  /* "EdgeBottom" */ @js.native
-  object edgeBottom extends TopLevel[edgeBottom with String]
-  
-  /* "EdgeLeft" */ @js.native
-  object edgeLeft extends TopLevel[edgeLeft with String]
-  
-  /* "EdgeRight" */ @js.native
-  object edgeRight extends TopLevel[edgeRight with String]
-  
-  /* "EdgeTop" */ @js.native
-  object edgeTop extends TopLevel[edgeTop with String]
-  
+  sealed trait edgeTop
+    extends StObject
+       with ConditionalRangeBorderIndex
 }
-

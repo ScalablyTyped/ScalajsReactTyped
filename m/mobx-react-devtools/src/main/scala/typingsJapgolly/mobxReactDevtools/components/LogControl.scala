@@ -1,14 +1,16 @@
 package typingsJapgolly.mobxReactDevtools.components
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object LogControl
-  extends SharedApply_Object_1928072692[typingsJapgolly.mobxReactDevtools.mod.LogControl] {
+object LogControl {
+  
   @JSImport("mobx-react-devtools", "LogControl")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: LogControl.type): SharedBuilder_Object_159303587[typingsJapgolly.mobxReactDevtools.mod.LogControl] = new SharedBuilder_Object_159303587[typingsJapgolly.mobxReactDevtools.mod.LogControl](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: js.Object): SharedBuilder_Object_159303587[typingsJapgolly.mobxReactDevtools.mod.LogControl] = new SharedBuilder_Object_159303587[typingsJapgolly.mobxReactDevtools.mod.LogControl](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

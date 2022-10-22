@@ -1,39 +1,40 @@
 package typingsJapgolly.d3Fetch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object d3FetchStrings {
-  @js.native
-  sealed trait a extends js.Object
   
   @js.native
-  sealed trait async extends js.Object
+  sealed trait a extends StObject
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait async extends StObject
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
-  sealed trait fullscreenchange extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends js.Object
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait fullscreenchange extends StObject
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
-  @scala.inline
-  def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  @js.native
+  sealed trait httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml extends StObject
+  inline def httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml: httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml = "http://www.w3.org/1999/xhtml".asInstanceOf[httpColonSlashSlashwwwDotw3DotorgSlash1999Slashxhtml]
+  
+  @js.native
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  
+  @js.native
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }
-

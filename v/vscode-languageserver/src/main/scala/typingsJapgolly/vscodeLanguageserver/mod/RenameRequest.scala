@@ -1,19 +1,29 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.RenameParams
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.RenameRegistrationOptions
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.textDocumentSlashrename
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.RenameParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.RenameRegistrationOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "RenameRequest")
-@js.native
-object RenameRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[
+object RenameRequest {
+  
+  @JSImport("vscode-languageserver", "RenameRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "RenameRequest.method")
+  @js.native
+  val method: textDocumentSlashrename = js.native
+  
+  @JSImport("vscode-languageserver", "RenameRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[
     RenameParams, 
     typingsJapgolly.vscodeLanguageserverTypes.mod.WorkspaceEdit | Null, 
+    scala.Nothing, 
     Unit, 
     RenameRegistrationOptions
   ] = js.native
 }
-

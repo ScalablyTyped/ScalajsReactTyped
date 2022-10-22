@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Pickers.Provider
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileSelectionMode extends js.Object
-
+sealed trait FileSelectionMode extends StObject
 @JSGlobal("Windows.Storage.Pickers.Provider.FileSelectionMode")
 @js.native
-object FileSelectionMode extends js.Object {
-  @js.native
-  sealed trait multiple extends FileSelectionMode
+object FileSelectionMode extends StObject {
   
   @js.native
-  sealed trait single extends FileSelectionMode
+  sealed trait multiple
+    extends StObject
+       with FileSelectionMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileSelectionMode with Double] = js.native
-  /* 1 */ @js.native
-  object multiple extends TopLevel[multiple with Double]
-  
-  /* 0 */ @js.native
-  object single extends TopLevel[single with Double]
-  
+  @js.native
+  sealed trait single
+    extends StObject
+       with FileSelectionMode
 }
-

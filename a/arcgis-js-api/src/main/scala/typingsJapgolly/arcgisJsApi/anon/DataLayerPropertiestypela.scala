@@ -1,0 +1,110 @@
+package typingsJapgolly.arcgisJsApi.anon
+
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`envelope-intersects`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`index-intersects`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.contains
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.crosses
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.envelope
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.intersects
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.layer
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.overlaps
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.relation
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.touches
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.within
+import typingsJapgolly.arcgisJsApi.esri.GeometryProperties
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Inlined arcgis-js-api.__esri.DataLayerProperties & {  type :'layer'} */
+trait DataLayerPropertiestypela extends StObject {
+  
+  /**
+    * If true, restricted network elements should be considered when finding network locations.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#doNotLocateOnRestrictedElements)
+    */
+  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The geometry to apply to the spatial filter.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometry)
+    */
+  var geometry: js.UndefOr[GeometryProperties] = js.undefined
+  
+  /**
+    * The type of geometry specified by the [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometry) property.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#geometryType)
+    */
+  var geometryType: js.UndefOr[point | polyline | polygon | envelope | multipoint] = js.undefined
+  
+  /**
+    * The name of the data layer in the map service that is being referenced.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#name)
+    */
+  var name: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The spatial relationship to be applied on the input geometry while performing the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#spatialRelationship)
+    */
+  var spatialRelationship: js.UndefOr[
+    intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
+  ] = js.undefined
+  
+  var `type`: js.UndefOr[layer] & layer
+  
+  /**
+    * A where clause for the query.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-DataLayer.html#where)
+    */
+  var where: js.UndefOr[String] = js.undefined
+}
+object DataLayerPropertiestypela {
+  
+  inline def apply(`type`: js.UndefOr[layer] & layer): DataLayerPropertiestypela = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataLayerPropertiestypela]
+  }
+  
+  extension [Self <: DataLayerPropertiestypela](x: Self) {
+    
+    inline def setDoNotLocateOnRestrictedElements(value: Boolean): Self = StObject.set(x, "doNotLocateOnRestrictedElements", value.asInstanceOf[js.Any])
+    
+    inline def setDoNotLocateOnRestrictedElementsUndefined: Self = StObject.set(x, "doNotLocateOnRestrictedElements", js.undefined)
+    
+    inline def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryType(value: point | polyline | polygon | envelope | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSpatialRelationship(
+      value: intersects | contains | crosses | `envelope-intersects` | `index-intersects` | overlaps | touches | within | relation
+    ): Self = StObject.set(x, "spatialRelationship", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialRelationshipUndefined: Self = StObject.set(x, "spatialRelationship", js.undefined)
+    
+    inline def setType(value: js.UndefOr[layer] & layer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+  }
+}

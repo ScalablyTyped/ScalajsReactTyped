@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TimedTextWrapping extends js.Object
-
+sealed trait TimedTextWrapping extends StObject
 /** Specifies the wrapping behavior of timed text. */
 @JSGlobal("Windows.Media.Core.TimedTextWrapping")
 @js.native
-object TimedTextWrapping extends js.Object {
+object TimedTextWrapping extends StObject {
+  
   /** The text is not wrapped. */
   @js.native
-  sealed trait noWrap extends TimedTextWrapping
+  sealed trait noWrap
+    extends StObject
+       with TimedTextWrapping
   
   /** The text is wrapped. */
   @js.native
-  sealed trait wrap extends TimedTextWrapping
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TimedTextWrapping with Double] = js.native
-  /* 0 */ @js.native
-  object noWrap extends TopLevel[noWrap with Double]
-  
-  /* 1 */ @js.native
-  object wrap extends TopLevel[wrap with Double]
-  
+  sealed trait wrap
+    extends StObject
+       with TimedTextWrapping
 }
-

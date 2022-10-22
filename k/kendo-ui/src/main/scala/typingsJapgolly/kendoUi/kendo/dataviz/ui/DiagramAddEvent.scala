@@ -3,29 +3,33 @@ package typingsJapgolly.kendoUi.kendo.dataviz.ui
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.kendo.dataviz.diagram.Connection
 import typingsJapgolly.kendoUi.kendo.dataviz.diagram.Shape
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramAddEvent extends DiagramEvent {
+trait DiagramAddEvent
+  extends StObject
+     with DiagramEvent {
+  
   var connection: js.UndefOr[Connection] = js.undefined
+  
   var shape: js.UndefOr[Shape] = js.undefined
 }
-
 object DiagramAddEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Diagram,
-    connection: Connection = null,
-    shape: Shape = null
-  ): DiagramAddEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Diagram): DiagramAddEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramAddEvent]
   }
+  
+  extension [Self <: DiagramAddEvent](x: Self) {
+    
+    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+  }
 }
-

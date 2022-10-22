@@ -1,25 +1,40 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Response extends js.Object {
-  var cancel: js.UndefOr[Boolean] = js.undefined
+trait Response extends StObject {
+  
   /**
-    * The original request is prevented from being sent or completed and is instead
-    * redirected to the given URL.
+    * `false` should be passed in if the dialog is canceled. If the `pairingKind` is
+    * `confirm` or `confirmPin`, this value should indicate if the pairing is
+    * confirmed.  If the `pairingKind` is `providePin` the value should be `true` when
+    * a value is provided.
     */
-  var redirectURL: js.UndefOr[String] = js.undefined
+  var confirmed: Boolean
+  
+  /**
+    * When the `pairingKind` is `providePin` this value should be the required pin for
+    * the Bluetooth device.
+    */
+  var pin: js.UndefOr[String | Null] = js.undefined
 }
-
 object Response {
-  @scala.inline
-  def apply(cancel: js.UndefOr[Boolean] = js.undefined, redirectURL: String = null): Response = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (redirectURL != null) __obj.updateDynamic("redirectURL")(redirectURL.asInstanceOf[js.Any])
+  
+  inline def apply(confirmed: Boolean): Response = {
+    val __obj = js.Dynamic.literal(confirmed = confirmed.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
+  
+  extension [Self <: Response](x: Self) {
+    
+    inline def setConfirmed(value: Boolean): Self = StObject.set(x, "confirmed", value.asInstanceOf[js.Any])
+    
+    inline def setPin(value: String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
+    
+    inline def setPinNull: Self = StObject.set(x, "pin", null)
+    
+    inline def setPinUndefined: Self = StObject.set(x, "pin", js.undefined)
+  }
 }
-

@@ -1,63 +1,74 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridResizingColumnSetting
-  extends /**
-	 * Option for IgGridResizingColumnSetting
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Enables disables resizing for the column.
-  	 *
-  	 */
+    * Enables disables resizing for the column.
+    *
+    */
   var allowResizing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Column index. Can be used in place of column key. the preferred way of populating a column setting is to always use the column keys as identifiers.
-  	 *
-  	 */
+    * Column index. Can be used in place of column key. the preferred way of populating a column setting is to always use the column keys as identifiers.
+    *
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Column key. this is a required property in every column setting if columnIndex is not set.
-  	 *
-  	 */
+    * Column key. this is a required property in every column setting if columnIndex is not set.
+    *
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Maximum column width in pixels or percents.
-  	 *
-  	 */
+    * Maximum column width in pixels or percents.
+    *
+    */
   var maximumWidth: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Minimum column width in pixels or percents.
-  	 *
-  	 */
+    * Minimum column width in pixels or percents.
+    *
+    */
   var minimumWidth: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgGridResizingColumnSetting {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridResizingColumnSetting
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowResizing: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
-    columnKey: String = null,
-    maximumWidth: String | Double = null,
-    minimumWidth: String | Double = null
-  ): IgGridResizingColumnSetting = {
+  
+  inline def apply(): IgGridResizingColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (maximumWidth != null) __obj.updateDynamic("maximumWidth")(maximumWidth.asInstanceOf[js.Any])
-    if (minimumWidth != null) __obj.updateDynamic("minimumWidth")(minimumWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridResizingColumnSetting]
   }
+  
+  extension [Self <: IgGridResizingColumnSetting](x: Self) {
+    
+    inline def setAllowResizing(value: Boolean): Self = StObject.set(x, "allowResizing", value.asInstanceOf[js.Any])
+    
+    inline def setAllowResizingUndefined: Self = StObject.set(x, "allowResizing", js.undefined)
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setMaximumWidth(value: String | Double): Self = StObject.set(x, "maximumWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaximumWidthUndefined: Self = StObject.set(x, "maximumWidth", js.undefined)
+    
+    inline def setMinimumWidth(value: String | Double): Self = StObject.set(x, "minimumWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinimumWidthUndefined: Self = StObject.set(x, "minimumWidth", js.undefined)
+  }
 }
-

@@ -3,9 +3,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify spreadsheet groups. Groups are an association between an interval of contiguous
@@ -20,19 +20,25 @@ import scala.scalajs.js.annotation._
   * set visible, though individual rows or columns can be hidden or set visible irrespective of the
   * collapsed state.
   */
-trait Group extends js.Object {
+trait Group extends StObject {
+  
   def collapse(): Group
+  
   def expand(): Group
+  
   def getControlIndex(): Integer
+  
   def getDepth(): Integer
+  
   def getRange(): Range
+  
   def isCollapsed(): Boolean
+  
   def remove(): Unit
 }
-
 object Group {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     collapse: CallbackTo[Group],
     expand: CallbackTo[Group],
     getControlIndex: CallbackTo[Integer],
@@ -41,15 +47,24 @@ object Group {
     isCollapsed: CallbackTo[Boolean],
     remove: Callback
   ): Group = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("collapse")(collapse.toJsFn)
-    __obj.updateDynamic("expand")(expand.toJsFn)
-    __obj.updateDynamic("getControlIndex")(getControlIndex.toJsFn)
-    __obj.updateDynamic("getDepth")(getDepth.toJsFn)
-    __obj.updateDynamic("getRange")(getRange.toJsFn)
-    __obj.updateDynamic("isCollapsed")(isCollapsed.toJsFn)
-    __obj.updateDynamic("remove")(remove.toJsFn)
+    val __obj = js.Dynamic.literal(collapse = collapse.toJsFn, expand = expand.toJsFn, getControlIndex = getControlIndex.toJsFn, getDepth = getDepth.toJsFn, getRange = getRange.toJsFn, isCollapsed = isCollapsed.toJsFn, remove = remove.toJsFn)
     __obj.asInstanceOf[Group]
   }
+  
+  extension [Self <: Group](x: Self) {
+    
+    inline def setCollapse(value: CallbackTo[Group]): Self = StObject.set(x, "collapse", value.toJsFn)
+    
+    inline def setExpand(value: CallbackTo[Group]): Self = StObject.set(x, "expand", value.toJsFn)
+    
+    inline def setGetControlIndex(value: CallbackTo[Integer]): Self = StObject.set(x, "getControlIndex", value.toJsFn)
+    
+    inline def setGetDepth(value: CallbackTo[Integer]): Self = StObject.set(x, "getDepth", value.toJsFn)
+    
+    inline def setGetRange(value: CallbackTo[Range]): Self = StObject.set(x, "getRange", value.toJsFn)
+    
+    inline def setIsCollapsed(value: CallbackTo[Boolean]): Self = StObject.set(x, "isCollapsed", value.toJsFn)
+    
+    inline def setRemove(value: Callback): Self = StObject.set(x, "remove", value.toJsFn)
+  }
 }
-

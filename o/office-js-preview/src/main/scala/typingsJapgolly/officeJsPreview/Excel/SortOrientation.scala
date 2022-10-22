@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SortOrientation extends js.Object
-
+sealed trait SortOrientation extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.SortOrientation")
 @js.native
-object SortOrientation extends js.Object {
+object SortOrientation extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait columns extends SortOrientation
+  sealed trait columns
+    extends StObject
+       with SortOrientation
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait rows extends SortOrientation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SortOrientation with String] = js.native
-  /* "Columns" */ @js.native
-  object columns extends TopLevel[columns with String]
-  
-  /* "Rows" */ @js.native
-  object rows extends TopLevel[rows with String]
-  
+  sealed trait rows
+    extends StObject
+       with SortOrientation
 }
-

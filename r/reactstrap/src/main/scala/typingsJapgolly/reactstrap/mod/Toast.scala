@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.toastMod.ToastProps
+import typingsJapgolly.reactstrap.typesLibToastMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "Toast")
 @js.native
-class Toast[T] ()
-  extends Component[ToastProps, js.Object, js.Any]
-
+open class Toast () extends default

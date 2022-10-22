@@ -1,54 +1,69 @@
 package typingsJapgolly.dateArithmetic
 
+import typingsJapgolly.dateArithmetic.mod.Unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateArithmeticStrings {
-  @js.native
-  sealed trait century extends Unit
   
   @js.native
-  sealed trait day extends Unit
+  sealed trait century
+    extends StObject
+       with Unit
+  inline def century: century = "century".asInstanceOf[century]
   
   @js.native
-  sealed trait decade extends Unit
+  sealed trait day
+    extends StObject
+       with Unit
+  inline def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait hours extends Unit
+  sealed trait decade
+    extends StObject
+       with Unit
+  inline def decade: decade = "decade".asInstanceOf[decade]
   
   @js.native
-  sealed trait minutes extends Unit
+  sealed trait hours
+    extends StObject
+       with Unit
+  inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
-  sealed trait month extends Unit
+  sealed trait milliseconds
+    extends StObject
+       with Unit
+  inline def milliseconds: milliseconds = "milliseconds".asInstanceOf[milliseconds]
   
   @js.native
-  sealed trait second extends Unit
+  sealed trait minutes
+    extends StObject
+       with Unit
+  inline def minutes: minutes = "minutes".asInstanceOf[minutes]
   
   @js.native
-  sealed trait week extends Unit
+  sealed trait month
+    extends StObject
+       with Unit
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait year extends Unit
+  sealed trait seconds
+    extends StObject
+       with Unit
+  inline def seconds: seconds = "seconds".asInstanceOf[seconds]
   
-  @scala.inline
-  def century: century = "century".asInstanceOf[century]
-  @scala.inline
-  def day: day = "day".asInstanceOf[day]
-  @scala.inline
-  def decade: decade = "decade".asInstanceOf[decade]
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
-  @scala.inline
-  def minutes: minutes = "minutes".asInstanceOf[minutes]
-  @scala.inline
-  def month: month = "month".asInstanceOf[month]
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
-  @scala.inline
-  def week: week = "week".asInstanceOf[week]
-  @scala.inline
-  def year: year = "year".asInstanceOf[year]
+  @js.native
+  sealed trait week
+    extends StObject
+       with Unit
+  inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with Unit
+  inline def year: year = "year".asInstanceOf[year]
 }
-

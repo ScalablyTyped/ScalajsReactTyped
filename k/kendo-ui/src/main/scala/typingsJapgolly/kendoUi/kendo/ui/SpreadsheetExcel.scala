@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetExcel extends js.Object {
+trait SpreadsheetExcel extends StObject {
+  
   var fileName: js.UndefOr[String] = js.undefined
+  
   var forceProxy: js.UndefOr[Boolean] = js.undefined
+  
   var proxyURL: js.UndefOr[String] = js.undefined
 }
-
 object SpreadsheetExcel {
-  @scala.inline
-  def apply(fileName: String = null, forceProxy: js.UndefOr[Boolean] = js.undefined, proxyURL: String = null): SpreadsheetExcel = {
+  
+  inline def apply(): SpreadsheetExcel = {
     val __obj = js.Dynamic.literal()
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetExcel]
   }
+  
+  extension [Self <: SpreadsheetExcel](x: Self) {
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+  }
 }
-

@@ -1,31 +1,31 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterator
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IKeyValuePair
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IMap
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IMapView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Imaging.BitmapPropertySet")
-@js.native
-class BitmapPropertySet () extends IMap[String, BitmapTypedValue] {
-  /* CompleteClass */
-  override var size: Double = js.native
-  /* CompleteClass */
-  override def clear(): Unit = js.native
-  /* CompleteClass */
-  override def first(): IIterator[IKeyValuePair[String, BitmapTypedValue]] = js.native
-  /* CompleteClass */
-  override def getView(): IMapView[String, BitmapTypedValue] = js.native
-  /* CompleteClass */
-  override def hasKey(key: String): Boolean = js.native
-  /* CompleteClass */
-  override def insert(key: String, value: BitmapTypedValue): Boolean = js.native
-  /* CompleteClass */
-  override def lookup(key: String): BitmapTypedValue = js.native
-  /* CompleteClass */
-  override def remove(key: String): Unit = js.native
+trait BitmapPropertySet
+  extends StObject
+     with IMap[String, BitmapTypedValue]
+object BitmapPropertySet {
+  
+  inline def apply(
+    clear: Callback,
+    first: CallbackTo[IIterator[IKeyValuePair[String, BitmapTypedValue]]],
+    getView: CallbackTo[IMapView[String, BitmapTypedValue]],
+    hasKey: String => Boolean,
+    insert: (String, BitmapTypedValue) => Boolean,
+    lookup: String => BitmapTypedValue,
+    remove: String => Callback,
+    size: Double
+  ): BitmapPropertySet = {
+    val __obj = js.Dynamic.literal(clear = clear.toJsFn, first = first.toJsFn, getView = getView.toJsFn, hasKey = js.Any.fromFunction1(hasKey), insert = js.Any.fromFunction2(insert), lookup = js.Any.fromFunction1(lookup), remove = js.Any.fromFunction1((t0: String) => remove(t0).runNow()), size = size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapPropertySet]
+  }
 }
-

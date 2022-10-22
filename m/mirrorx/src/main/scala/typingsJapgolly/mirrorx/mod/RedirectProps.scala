@@ -1,37 +1,56 @@
 package typingsJapgolly.mirrorx.mod
 
-import typingsJapgolly.history.mod.LocationDescriptor
-import typingsJapgolly.history.mod.LocationState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RedirectProps extends js.Object {
+trait RedirectProps extends StObject {
+  
   var exact: js.UndefOr[Boolean] = js.undefined
+  
   var from: js.UndefOr[String] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
+  
   var push: js.UndefOr[Boolean] = js.undefined
+  
   var strict: js.UndefOr[Boolean] = js.undefined
-  var to: LocationDescriptor[LocationState]
+  
+  var to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
 }
-
 object RedirectProps {
-  @scala.inline
-  def apply(
-    to: LocationDescriptor[LocationState],
-    exact: js.UndefOr[Boolean] = js.undefined,
-    from: String = null,
-    path: String = null,
-    push: js.UndefOr[Boolean] = js.undefined,
-    strict: js.UndefOr[Boolean] = js.undefined
+  
+  inline def apply(
+    to: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
   ): RedirectProps = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(push)) __obj.updateDynamic("push")(push.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps]
   }
+  
+  extension [Self <: RedirectProps](x: Self) {
+    
+    inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    
+    inline def setPushUndefined: Self = StObject.set(x, "push", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    
+    inline def setTo(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptor */ Any
+    ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+  }
 }
-

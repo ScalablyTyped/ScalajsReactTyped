@@ -1,22 +1,39 @@
 package typingsJapgolly.fridaGum
 
+import typingsJapgolly.fridaGum.anon.Type
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArmBaseOperand extends js.Object {
-  var shift: js.UndefOr[AnonType] = js.undefined
+trait ArmBaseOperand extends StObject {
+  
+  var access: OperandAccess
+  
+  var shift: js.UndefOr[Type] = js.undefined
+  
   var subtracted: Boolean
+  
   var vectorIndex: js.UndefOr[Double] = js.undefined
 }
-
 object ArmBaseOperand {
-  @scala.inline
-  def apply(subtracted: Boolean, shift: AnonType = null, vectorIndex: Int | Double = null): ArmBaseOperand = {
-    val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any])
-    if (shift != null) __obj.updateDynamic("shift")(shift.asInstanceOf[js.Any])
-    if (vectorIndex != null) __obj.updateDynamic("vectorIndex")(vectorIndex.asInstanceOf[js.Any])
+  
+  inline def apply(access: OperandAccess, subtracted: Boolean): ArmBaseOperand = {
+    val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], subtracted = subtracted.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArmBaseOperand]
   }
+  
+  extension [Self <: ArmBaseOperand](x: Self) {
+    
+    inline def setAccess(value: OperandAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    
+    inline def setShift(value: Type): Self = StObject.set(x, "shift", value.asInstanceOf[js.Any])
+    
+    inline def setShiftUndefined: Self = StObject.set(x, "shift", js.undefined)
+    
+    inline def setSubtracted(value: Boolean): Self = StObject.set(x, "subtracted", value.asInstanceOf[js.Any])
+    
+    inline def setVectorIndex(value: Double): Self = StObject.set(x, "vectorIndex", value.asInstanceOf[js.Any])
+    
+    inline def setVectorIndexUndefined: Self = StObject.set(x, "vectorIndex", js.undefined)
+  }
 }
-

@@ -1,14 +1,17 @@
 package typingsJapgolly.graphqlDeduplicator
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("graphql-deduplicator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def deflate(response: js.Object): StringDictionary[js.Any] = js.native
-  def inflate(response: js.Object): StringDictionary[js.Any] = js.native
+object mod {
+  
+  @JSImport("graphql-deduplicator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def deflate(response: js.Object): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("deflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
+  
+  inline def inflate(response: js.Object): StringDictionary[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("inflate")(response.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Any]]
 }
-

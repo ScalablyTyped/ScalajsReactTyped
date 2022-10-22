@@ -1,94 +1,76 @@
 package typingsJapgolly.pendoIoBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pendoIoBrowserStrings {
-  @js.native
-  sealed trait No extends js.Object
   
   @js.native
-  sealed trait Yes extends js.Object
+  sealed trait No extends StObject
+  inline def No: No = "No".asInstanceOf[No]
   
   @js.native
-  sealed trait api extends js.Object
+  sealed trait Yes extends StObject
+  inline def Yes: Yes = "Yes".asInstanceOf[Yes]
   
   @js.native
-  sealed trait automatic extends js.Object
+  sealed trait api extends StObject
+  inline def api: api = "api".asInstanceOf[api]
   
   @js.native
-  sealed trait badge extends js.Object
+  sealed trait automatic extends StObject
+  inline def automatic: automatic = "automatic".asInstanceOf[automatic]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait badge extends StObject
+  inline def badge: badge = "badge".asInstanceOf[badge]
   
   @js.native
-  sealed trait desktop extends js.Object
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait desktop extends StObject
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
   
   @js.native
-  sealed trait dom extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait draft extends js.Object
+  sealed trait dom extends StObject
+  inline def dom: dom = "dom".asInstanceOf[dom]
   
   @js.native
-  sealed trait element extends js.Object
+  sealed trait draft extends StObject
+  inline def draft: draft = "draft".asInstanceOf[draft]
   
   @js.native
-  sealed trait launcher extends js.Object
+  sealed trait element extends StObject
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait mobile extends js.Object
+  sealed trait launcher extends StObject
+  inline def launcher: launcher = "launcher".asInstanceOf[launcher]
   
   @js.native
-  sealed trait programatic extends js.Object
+  sealed trait mobile extends StObject
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
-  sealed trait published extends js.Object
+  sealed trait programatic extends StObject
+  inline def programatic: programatic = "programatic".asInstanceOf[programatic]
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait published extends StObject
+  inline def published: published = "published".asInstanceOf[published]
   
   @js.native
-  sealed trait staged extends js.Object
+  sealed trait reload extends StObject
+  inline def reload: reload = "reload".asInstanceOf[reload]
   
-  @scala.inline
-  def No: No = "No".asInstanceOf[No]
-  @scala.inline
-  def Yes: Yes = "Yes".asInstanceOf[Yes]
-  @scala.inline
-  def api: api = "api".asInstanceOf[api]
-  @scala.inline
-  def automatic: automatic = "automatic".asInstanceOf[automatic]
-  @scala.inline
-  def badge: badge = "badge".asInstanceOf[badge]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def dom: dom = "dom".asInstanceOf[dom]
-  @scala.inline
-  def draft: draft = "draft".asInstanceOf[draft]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def launcher: launcher = "launcher".asInstanceOf[launcher]
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
-  @scala.inline
-  def programatic: programatic = "programatic".asInstanceOf[programatic]
-  @scala.inline
-  def published: published = "published".asInstanceOf[published]
-  @scala.inline
-  def reload: reload = "reload".asInstanceOf[reload]
-  @scala.inline
-  def staged: staged = "staged".asInstanceOf[staged]
+  @js.native
+  sealed trait staged extends StObject
+  inline def staged: staged = "staged".asInstanceOf[staged]
 }
-

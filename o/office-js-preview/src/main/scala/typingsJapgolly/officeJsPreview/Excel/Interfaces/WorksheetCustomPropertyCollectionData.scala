@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheetCustomPropertyCollection.toJSON()`. */
-trait WorksheetCustomPropertyCollectionData extends js.Object {
+trait WorksheetCustomPropertyCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[WorksheetCustomPropertyData]] = js.undefined
 }
-
 object WorksheetCustomPropertyCollectionData {
-  @scala.inline
-  def apply(items: js.Array[WorksheetCustomPropertyData] = null): WorksheetCustomPropertyCollectionData = {
+  
+  inline def apply(): WorksheetCustomPropertyCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetCustomPropertyCollectionData]
   }
+  
+  extension [Self <: WorksheetCustomPropertyCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: WorksheetCustomPropertyData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

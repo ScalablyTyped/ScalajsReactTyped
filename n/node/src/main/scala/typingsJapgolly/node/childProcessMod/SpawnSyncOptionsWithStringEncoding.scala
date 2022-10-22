@@ -1,53 +1,26 @@
 package typingsJapgolly.node.childProcessMod
 
-import typingsJapgolly.node.BufferEncoding
-import typingsJapgolly.node.NodeJS.ArrayBufferView
-import typingsJapgolly.node.NodeJS.ProcessEnv
-import typingsJapgolly.node.NodeJS.Signals
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpawnSyncOptionsWithStringEncoding extends SpawnSyncOptions {
+trait SpawnSyncOptionsWithStringEncoding
+  extends StObject
+     with SpawnSyncOptions {
+  
   @JSName("encoding")
   var encoding_SpawnSyncOptionsWithStringEncoding: BufferEncoding
 }
-
 object SpawnSyncOptionsWithStringEncoding {
-  @scala.inline
-  def apply(
-    encoding: BufferEncoding,
-    argv0: String = null,
-    cwd: String = null,
-    env: ProcessEnv = null,
-    gid: Int | Double = null,
-    input: String | ArrayBufferView = null,
-    killSignal: Signals | Double = null,
-    maxBuffer: Int | Double = null,
-    serialization: SerializationType = null,
-    shell: Boolean | String = null,
-    stdio: StdioOptions = null,
-    timeout: Int | Double = null,
-    uid: Int | Double = null,
-    windowsHide: js.UndefOr[Boolean] = js.undefined,
-    windowsVerbatimArguments: js.UndefOr[Boolean] = js.undefined
-  ): SpawnSyncOptionsWithStringEncoding = {
+  
+  inline def apply(encoding: BufferEncoding): SpawnSyncOptionsWithStringEncoding = {
     val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-    if (argv0 != null) __obj.updateDynamic("argv0")(argv0.asInstanceOf[js.Any])
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (killSignal != null) __obj.updateDynamic("killSignal")(killSignal.asInstanceOf[js.Any])
-    if (maxBuffer != null) __obj.updateDynamic("maxBuffer")(maxBuffer.asInstanceOf[js.Any])
-    if (serialization != null) __obj.updateDynamic("serialization")(serialization.asInstanceOf[js.Any])
-    if (shell != null) __obj.updateDynamic("shell")(shell.asInstanceOf[js.Any])
-    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpawnSyncOptionsWithStringEncoding]
   }
+  
+  extension [Self <: SpawnSyncOptionsWithStringEncoding](x: Self) {
+    
+    inline def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+  }
 }
-

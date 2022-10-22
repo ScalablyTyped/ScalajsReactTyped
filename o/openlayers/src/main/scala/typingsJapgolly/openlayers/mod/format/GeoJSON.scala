@@ -1,16 +1,16 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalajs.dom.Document
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.geom.Geometry
 import typingsJapgolly.openlayers.mod.olx.format.GeoJSONOptions
 import typingsJapgolly.openlayers.mod.olx.format.ReadOptions
 import typingsJapgolly.openlayers.mod.olx.format.WriteOptions
 import typingsJapgolly.openlayers.mod.proj.Projection
-import typingsJapgolly.std.Document_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -28,12 +28,11 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api stable
   */
-class GeoJSON () extends JSONFeature {
+open class GeoJSON () extends JSONFeature {
   def this(opt_options: GeoJSONOptions) = this()
+  
   def readFeature(source: String): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   /**
     * Read a feature from a GeoJSON Feature source.  Only works for Feature,
     * use `readFeatures` to read FeatureCollection source.
@@ -43,14 +42,15 @@ class GeoJSON () extends JSONFeature {
     * @return Feature.
     * @api stable
     */
-  def readFeature(source: Document_): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: Document_, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  
   def readFeatures(source: String): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   /**
     * Read all features from a GeoJSON source.  Works with both Feature and
     * FeatureCollection sources.
@@ -60,14 +60,15 @@ class GeoJSON () extends JSONFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  
   def readGeometry(source: String): Geometry = js.native
   def readGeometry(source: String, opt_options: ReadOptions): Geometry = js.native
-  def readGeometry(source: GlobalObject): Geometry = js.native
-  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
   /**
     * Read a geometry from a GeoJSON source.
     *
@@ -76,12 +77,14 @@ class GeoJSON () extends JSONFeature {
     * @return Geometry.
     * @api stable
     */
-  def readGeometry(source: Document_): Geometry = js.native
-  def readGeometry(source: Document_, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: Document): Geometry = js.native
+  def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: GlobalObject): Geometry = js.native
+  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
+  
   def readProjection(source: String): Projection = js.native
-  def readProjection(source: GlobalObject): Projection = js.native
   /**
     * Read the projection from a GeoJSON source.
     *
@@ -89,8 +92,10 @@ class GeoJSON () extends JSONFeature {
     * @return Projection.
     * @api stable
     */
-  def readProjection(source: Document_): Projection = js.native
+  def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
+  def readProjection(source: GlobalObject): Projection = js.native
+  
   /**
     * Encode a feature as a GeoJSON Feature string.
     *
@@ -101,6 +106,7 @@ class GeoJSON () extends JSONFeature {
     */
   def writeFeature(feature: typingsJapgolly.openlayers.mod.Feature): String = js.native
   def writeFeature(feature: typingsJapgolly.openlayers.mod.Feature, opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode a feature as a GeoJSON Feature object.
     *
@@ -111,6 +117,7 @@ class GeoJSON () extends JSONFeature {
     */
   def writeFeatureObject(feature: typingsJapgolly.openlayers.mod.Feature): GeoJSONFeature = js.native
   def writeFeatureObject(feature: typingsJapgolly.openlayers.mod.Feature, opt_options: WriteOptions): GeoJSONFeature = js.native
+  
   /**
     * Encode an array of features as GeoJSON.
     *
@@ -121,6 +128,7 @@ class GeoJSON () extends JSONFeature {
     */
   def writeFeatures(features: js.Array[typingsJapgolly.openlayers.mod.Feature]): String = js.native
   def writeFeatures(features: js.Array[typingsJapgolly.openlayers.mod.Feature], opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode an array of features as a GeoJSON object.
     *
@@ -131,6 +139,7 @@ class GeoJSON () extends JSONFeature {
     */
   def writeFeaturesObject(features: js.Array[typingsJapgolly.openlayers.mod.Feature]): GeoJSONFeatureCollection = js.native
   def writeFeaturesObject(features: js.Array[typingsJapgolly.openlayers.mod.Feature], opt_options: WriteOptions): GeoJSONFeatureCollection = js.native
+  
   /**
     * Encode a geometry as a GeoJSON string.
     *
@@ -141,6 +150,7 @@ class GeoJSON () extends JSONFeature {
     */
   def writeGeometry(geometry: Geometry): String = js.native
   def writeGeometry(geometry: Geometry, opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode a geometry as a GeoJSON object.
     *
@@ -152,4 +162,3 @@ class GeoJSON () extends JSONFeature {
   def writeGeometryObject(geometry: Geometry): GeoJSONGeometry | GeoJSONGeometryCollection = js.native
   def writeGeometryObject(geometry: Geometry, opt_options: WriteOptions): GeoJSONGeometry | GeoJSONGeometryCollection = js.native
 }
-

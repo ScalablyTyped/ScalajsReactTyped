@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PageSizeChangedEventUIParam extends js.Object {
+trait PageSizeChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to GridPaging.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridPaging.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the current page size.
-  	 */
+    * Gets the current page size.
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
 }
-
 object PageSizeChangedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, pageSize: Int | Double = null): PageSizeChangedEventUIParam = {
+  
+  inline def apply(): PageSizeChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageSizeChangedEventUIParam]
   }
+  
+  extension [Self <: PageSizeChangedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+  }
 }
-

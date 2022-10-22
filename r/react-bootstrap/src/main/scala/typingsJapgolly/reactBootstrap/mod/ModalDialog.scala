@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.modalDialogMod.ModalDialogProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "ModalDialog")
 @js.native
-class ModalDialog ()
-  extends Component[ModalDialogProps, js.Object, js.Any]
-
+open class ModalDialog ()
+  extends typingsJapgolly.reactBootstrap.libMod.ModalDialog

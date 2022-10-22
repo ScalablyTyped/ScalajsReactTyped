@@ -1,89 +1,138 @@
 package typingsJapgolly.gatsbyImage.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gatsbyImage.AnonWasCached
-import typingsJapgolly.gatsbyImage.gatsbyImageStrings.`lazy`
-import typingsJapgolly.gatsbyImage.gatsbyImageStrings.auto
-import typingsJapgolly.gatsbyImage.gatsbyImageStrings.eager
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gatsbyImage.anon.WasCached
 import typingsJapgolly.gatsbyImage.mod.FixedObject
 import typingsJapgolly.gatsbyImage.mod.FluidObject
-import typingsJapgolly.gatsbyImage.mod.GatsbyImageProps
 import typingsJapgolly.gatsbyImage.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GatsbyImage {
-  def apply(
-    Tag: String = null,
-    alt: String = null,
-    backgroundColor: String | Boolean = null,
-    className: String | js.Object = null,
-    critical: js.UndefOr[Boolean] = js.undefined,
-    crossOrigin: String | Boolean = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    durationFadeIn: Int | Double = null,
-    fadeIn: js.UndefOr[Boolean] = js.undefined,
-    fixed: FixedObject | js.Array[FixedObject] = null,
-    fluid: FluidObject | js.Array[FluidObject] = null,
-    imgStyle: js.Object = null,
-    itemProp: String = null,
-    loading: auto | `lazy` | eager = null,
-    onError: /* event */ js.Any => Callback = null,
-    onLoad: js.UndefOr[Callback] = js.undefined,
-    onStartLoad: /* param */ AnonWasCached => Callback = null,
-    placeholderClassName: String = null,
-    placeholderStyle: js.Object = null,
-    resolutions: FixedObject = null,
-    sizes: FluidObject = null,
-    style: js.Object = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GatsbyImageProps, default, Unit, GatsbyImageProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (Tag != null) __obj.updateDynamic("Tag")(Tag.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(critical)) __obj.updateDynamic("critical")(critical.asInstanceOf[js.Any])
-    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (durationFadeIn != null) __obj.updateDynamic("durationFadeIn")(durationFadeIn.asInstanceOf[js.Any])
-    if (!js.isUndefined(fadeIn)) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
-    if (fixed != null) __obj.updateDynamic("fixed")(fixed.asInstanceOf[js.Any])
-    if (fluid != null) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
-    if (imgStyle != null) __obj.updateDynamic("imgStyle")(imgStyle.asInstanceOf[js.Any])
-    if (itemProp != null) __obj.updateDynamic("itemProp")(itemProp.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* event */ js.Any) => onError(t0).runNow()))
-    onLoad.foreach(p => __obj.updateDynamic("onLoad")(p.toJsFn))
-    if (onStartLoad != null) __obj.updateDynamic("onStartLoad")(js.Any.fromFunction1((t0: /* param */ typingsJapgolly.gatsbyImage.AnonWasCached) => onStartLoad(t0).runNow()))
-    if (placeholderClassName != null) __obj.updateDynamic("placeholderClassName")(placeholderClassName.asInstanceOf[js.Any])
-    if (placeholderStyle != null) __obj.updateDynamic("placeholderStyle")(placeholderStyle.asInstanceOf[js.Any])
-    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions.asInstanceOf[js.Any])
-    if (sizes != null) __obj.updateDynamic("sizes")(sizes.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gatsbyImage.mod.GatsbyImageProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gatsbyImage.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gatsbyImage.mod.GatsbyImageProps])(children: _*)
+  object GatsbyImageFixedProps {
+    
+    inline def apply(fixed: FixedObject | js.Array[FixedObject]): Builder = {
+      val __props = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
+      new Builder(js.Array(this.component, __props.asInstanceOf[typingsJapgolly.gatsbyImage.mod.GatsbyImageFixedProps]))
+    }
+    
+    @JSImport("gatsby-image", JSImport.Default)
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[default] {
+      
+      inline def Tag(value: String): this.type = set("Tag", value.asInstanceOf[js.Any])
+      
+      inline def alt(value: String): this.type = set("alt", value.asInstanceOf[js.Any])
+      
+      inline def backgroundColor(value: String | Boolean): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String | js.Object): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def critical(value: Boolean): this.type = set("critical", value.asInstanceOf[js.Any])
+      
+      inline def crossOrigin(value: String | Boolean): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def draggable(value: Boolean): this.type = set("draggable", value.asInstanceOf[js.Any])
+      
+      inline def durationFadeIn(value: Double): this.type = set("durationFadeIn", value.asInstanceOf[js.Any])
+      
+      inline def fadeIn(value: Boolean): this.type = set("fadeIn", value.asInstanceOf[js.Any])
+      
+      inline def imgStyle(value: js.Object): this.type = set("imgStyle", value.asInstanceOf[js.Any])
+      
+      inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
+      
+      inline def loading(value: /* template literal string: auto */ String): this.type = set("loading", value.asInstanceOf[js.Any])
+      
+      inline def onError(value: /* event */ Any => Callback): this.type = set("onError", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+      
+      inline def onLoad(value: Callback): this.type = set("onLoad", value.toJsFn)
+      
+      inline def onStartLoad(value: /* param */ WasCached => Callback): this.type = set("onStartLoad", js.Any.fromFunction1((t0: /* param */ WasCached) => value(t0).runNow()))
+      
+      inline def placeholderClassName(value: String): this.type = set("placeholderClassName", value.asInstanceOf[js.Any])
+      
+      inline def placeholderStyle(value: js.Object): this.type = set("placeholderStyle", value.asInstanceOf[js.Any])
+      
+      inline def resolutions(value: FixedObject): this.type = set("resolutions", value.asInstanceOf[js.Any])
+      
+      inline def sizes(value: FluidObject): this.type = set("sizes", value.asInstanceOf[js.Any])
+      
+      inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: typingsJapgolly.gatsbyImage.mod.GatsbyImageFixedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("gatsby-image", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object GatsbyImageFluidProps {
+    
+    inline def apply(fluid: FluidObject | js.Array[FluidObject]): Builder = {
+      val __props = js.Dynamic.literal(fluid = fluid.asInstanceOf[js.Any])
+      new Builder(js.Array(this.component, __props.asInstanceOf[typingsJapgolly.gatsbyImage.mod.GatsbyImageFluidProps]))
+    }
+    
+    @JSImport("gatsby-image", JSImport.Default)
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[default] {
+      
+      inline def Tag(value: String): this.type = set("Tag", value.asInstanceOf[js.Any])
+      
+      inline def alt(value: String): this.type = set("alt", value.asInstanceOf[js.Any])
+      
+      inline def backgroundColor(value: String | Boolean): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String | js.Object): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def critical(value: Boolean): this.type = set("critical", value.asInstanceOf[js.Any])
+      
+      inline def crossOrigin(value: String | Boolean): this.type = set("crossOrigin", value.asInstanceOf[js.Any])
+      
+      inline def draggable(value: Boolean): this.type = set("draggable", value.asInstanceOf[js.Any])
+      
+      inline def durationFadeIn(value: Double): this.type = set("durationFadeIn", value.asInstanceOf[js.Any])
+      
+      inline def fadeIn(value: Boolean): this.type = set("fadeIn", value.asInstanceOf[js.Any])
+      
+      inline def imgStyle(value: js.Object): this.type = set("imgStyle", value.asInstanceOf[js.Any])
+      
+      inline def itemProp(value: String): this.type = set("itemProp", value.asInstanceOf[js.Any])
+      
+      inline def loading(value: /* template literal string: auto */ String): this.type = set("loading", value.asInstanceOf[js.Any])
+      
+      inline def onError(value: /* event */ Any => Callback): this.type = set("onError", js.Any.fromFunction1((t0: /* event */ Any) => value(t0).runNow()))
+      
+      inline def onLoad(value: Callback): this.type = set("onLoad", value.toJsFn)
+      
+      inline def onStartLoad(value: /* param */ WasCached => Callback): this.type = set("onStartLoad", js.Any.fromFunction1((t0: /* param */ WasCached) => value(t0).runNow()))
+      
+      inline def placeholderClassName(value: String): this.type = set("placeholderClassName", value.asInstanceOf[js.Any])
+      
+      inline def placeholderStyle(value: js.Object): this.type = set("placeholderStyle", value.asInstanceOf[js.Any])
+      
+      inline def resolutions(value: FixedObject): this.type = set("resolutions", value.asInstanceOf[js.Any])
+      
+      inline def sizes(value: FluidObject): this.type = set("sizes", value.asInstanceOf[js.Any])
+      
+      inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    }
+    
+    def withProps(p: typingsJapgolly.gatsbyImage.mod.GatsbyImageFluidProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
 }
-

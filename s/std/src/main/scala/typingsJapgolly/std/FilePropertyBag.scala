@@ -1,21 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilePropertyBag extends BlobPropertyBag {
+trait FilePropertyBag
+  extends StObject
+     with BlobPropertyBag {
+  
+  /* standard dom */
   var lastModified: js.UndefOr[Double] = js.undefined
 }
-
 object FilePropertyBag {
-  @scala.inline
-  def apply(endings: EndingType = null, lastModified: Int | Double = null, `type`: java.lang.String = null): FilePropertyBag = {
+  
+  inline def apply(): FilePropertyBag = {
     val __obj = js.Dynamic.literal()
-    if (endings != null) __obj.updateDynamic("endings")(endings.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePropertyBag]
   }
+  
+  extension [Self <: FilePropertyBag](x: Self) {
+    
+    inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+  }
 }
-

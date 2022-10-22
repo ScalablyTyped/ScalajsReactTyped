@@ -1,25 +1,20 @@
 package typingsJapgolly.std
 
-import typingsJapgolly.std.stdStrings.readonly_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.std.stdStrings.readonly_
+  - typingsJapgolly.std.stdStrings.readonly
   - typingsJapgolly.std.stdStrings.readwrite
   - typingsJapgolly.std.stdStrings.versionchange
 */
-trait IDBTransactionMode extends js.Object
-
+trait IDBTransactionMode extends StObject
 object IDBTransactionMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def readonly: readonly_ = this.cast("readonly")
-  @scala.inline
-  def readwrite: typingsJapgolly.std.stdStrings.readwrite = this.cast("readwrite")
-  @scala.inline
-  def versionchange: typingsJapgolly.std.stdStrings.versionchange = this.cast("versionchange")
+  
+  inline def readonly: typingsJapgolly.std.stdStrings.readonly = "readonly".asInstanceOf[typingsJapgolly.std.stdStrings.readonly]
+  
+  inline def readwrite: typingsJapgolly.std.stdStrings.readwrite = "readwrite".asInstanceOf[typingsJapgolly.std.stdStrings.readwrite]
+  
+  inline def versionchange: typingsJapgolly.std.stdStrings.versionchange = "versionchange".asInstanceOf[typingsJapgolly.std.stdStrings.versionchange]
 }
-

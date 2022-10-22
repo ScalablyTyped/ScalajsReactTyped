@@ -1,14 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait YieldExpression extends Expression {
-  var asteriskToken: js.UndefOr[AsteriskToken] = js.native
-  var expression: js.UndefOr[Expression] = js.native
+trait YieldExpression
+  extends StObject
+     with Expression {
+  
+  val asteriskToken: js.UndefOr[AsteriskToken] = js.native
+  
+  val expression: js.UndefOr[Expression] = js.native
+  
   @JSName("kind")
-  var kind_YieldExpression: typingsJapgolly.typescript.mod.SyntaxKind.YieldExpression = js.native
+  val kind_YieldExpression: typingsJapgolly.typescript.mod.SyntaxKind.YieldExpression = js.native
 }
-

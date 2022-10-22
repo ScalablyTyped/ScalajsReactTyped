@@ -1,12 +1,14 @@
 package typingsJapgolly.estree.ESTree
 
 import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeAnnotation extends Node {
-  var typeAnnotation: org.scalajs.dom.raw.Node = js.native
+trait TypeAnnotation
+  extends StObject
+     with Node {
+  
+  var typeAnnotation: org.scalajs.dom.Node = js.native
 }
-

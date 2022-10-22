@@ -1,77 +1,99 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalCellValueOperator extends js.Object
-
+sealed trait ConditionalCellValueOperator extends StObject
 /**
-  *
   * Represents the operator of the text conditional format type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalCellValueOperator")
 @js.native
-object ConditionalCellValueOperator extends js.Object {
+object ConditionalCellValueOperator extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait between extends ConditionalCellValueOperator
+  sealed trait between
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait equalTo extends ConditionalCellValueOperator
+  sealed trait equalTo
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait greaterThan extends ConditionalCellValueOperator
+  sealed trait greaterThan
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait greaterThanOrEqual extends ConditionalCellValueOperator
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalCellValueOperator
+  sealed trait invalid
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lessThan extends ConditionalCellValueOperator
+  sealed trait lessThan
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait lessThanOrEqual extends ConditionalCellValueOperator
+  sealed trait lessThanOrEqual
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait notBetween extends ConditionalCellValueOperator
+  sealed trait notBetween
+    extends StObject
+       with ConditionalCellValueOperator
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait notEqualTo extends ConditionalCellValueOperator
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalCellValueOperator with String] = js.native
-  /* "Between" */ @js.native
-  object between extends TopLevel[between with String]
-  
-  /* "EqualTo" */ @js.native
-  object equalTo extends TopLevel[equalTo with String]
-  
-  /* "GreaterThan" */ @js.native
-  object greaterThan extends TopLevel[greaterThan with String]
-  
-  /* "GreaterThanOrEqual" */ @js.native
-  object greaterThanOrEqual extends TopLevel[greaterThanOrEqual with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "LessThan" */ @js.native
-  object lessThan extends TopLevel[lessThan with String]
-  
-  /* "LessThanOrEqual" */ @js.native
-  object lessThanOrEqual extends TopLevel[lessThanOrEqual with String]
-  
-  /* "NotBetween" */ @js.native
-  object notBetween extends TopLevel[notBetween with String]
-  
-  /* "NotEqualTo" */ @js.native
-  object notEqualTo extends TopLevel[notEqualTo with String]
-  
+  sealed trait notEqualTo
+    extends StObject
+       with ConditionalCellValueOperator
 }
-

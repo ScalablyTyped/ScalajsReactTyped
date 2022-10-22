@@ -1,198 +1,572 @@
 package typingsJapgolly.csstype.mod
 
+import typingsJapgolly.csstype.mod.Property.AlignmentBaseline
+import typingsJapgolly.csstype.mod.Property.BaselineShift
+import typingsJapgolly.csstype.mod.Property.Clip
+import typingsJapgolly.csstype.mod.Property.ClipPath
+import typingsJapgolly.csstype.mod.Property.ClipRule
+import typingsJapgolly.csstype.mod.Property.Color
+import typingsJapgolly.csstype.mod.Property.ColorInterpolation
+import typingsJapgolly.csstype.mod.Property.ColorRendering
+import typingsJapgolly.csstype.mod.Property.Cursor
+import typingsJapgolly.csstype.mod.Property.Direction
+import typingsJapgolly.csstype.mod.Property.Display
+import typingsJapgolly.csstype.mod.Property.DominantBaseline
+import typingsJapgolly.csstype.mod.Property.Fill
+import typingsJapgolly.csstype.mod.Property.FillOpacity
+import typingsJapgolly.csstype.mod.Property.FillRule
+import typingsJapgolly.csstype.mod.Property.Filter
+import typingsJapgolly.csstype.mod.Property.FloodColor
+import typingsJapgolly.csstype.mod.Property.FloodOpacity
+import typingsJapgolly.csstype.mod.Property.Font
+import typingsJapgolly.csstype.mod.Property.FontFamily
+import typingsJapgolly.csstype.mod.Property.FontSize
+import typingsJapgolly.csstype.mod.Property.FontSizeAdjust
+import typingsJapgolly.csstype.mod.Property.FontStretch
+import typingsJapgolly.csstype.mod.Property.FontStyle
+import typingsJapgolly.csstype.mod.Property.FontVariant
+import typingsJapgolly.csstype.mod.Property.FontWeight
+import typingsJapgolly.csstype.mod.Property.GlyphOrientationVertical
+import typingsJapgolly.csstype.mod.Property.ImageRendering
+import typingsJapgolly.csstype.mod.Property.LetterSpacing
+import typingsJapgolly.csstype.mod.Property.LightingColor
+import typingsJapgolly.csstype.mod.Property.LineHeight
+import typingsJapgolly.csstype.mod.Property.Marker
+import typingsJapgolly.csstype.mod.Property.MarkerEnd
+import typingsJapgolly.csstype.mod.Property.MarkerMid
+import typingsJapgolly.csstype.mod.Property.MarkerStart
+import typingsJapgolly.csstype.mod.Property.Mask
+import typingsJapgolly.csstype.mod.Property.Opacity
+import typingsJapgolly.csstype.mod.Property.Overflow
+import typingsJapgolly.csstype.mod.Property.PaintOrder
+import typingsJapgolly.csstype.mod.Property.PointerEvents
+import typingsJapgolly.csstype.mod.Property.ShapeRendering
+import typingsJapgolly.csstype.mod.Property.StopColor
+import typingsJapgolly.csstype.mod.Property.StopOpacity
+import typingsJapgolly.csstype.mod.Property.Stroke
+import typingsJapgolly.csstype.mod.Property.StrokeDasharray
+import typingsJapgolly.csstype.mod.Property.StrokeDashoffset
+import typingsJapgolly.csstype.mod.Property.StrokeLinecap
+import typingsJapgolly.csstype.mod.Property.StrokeLinejoin
+import typingsJapgolly.csstype.mod.Property.StrokeMiterlimit
+import typingsJapgolly.csstype.mod.Property.StrokeOpacity
+import typingsJapgolly.csstype.mod.Property.StrokeWidth
+import typingsJapgolly.csstype.mod.Property.TextAnchor
+import typingsJapgolly.csstype.mod.Property.TextDecoration
+import typingsJapgolly.csstype.mod.Property.TextRendering
+import typingsJapgolly.csstype.mod.Property.UnicodeBidi
+import typingsJapgolly.csstype.mod.Property.VectorEffect
+import typingsJapgolly.csstype.mod.Property.Visibility
+import typingsJapgolly.csstype.mod.Property.WhiteSpace
+import typingsJapgolly.csstype.mod.Property.WordSpacing
+import typingsJapgolly.csstype.mod.Property.WritingMode
+import typingsJapgolly.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SvgPropertiesFallback[TLength] extends js.Object {
-  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
-  var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.undefined
-  var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.undefined
-  var clipPath: js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]] = js.undefined
-  var clipRule: js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]] = js.undefined
-  var color: js.UndefOr[ColorProperty | js.Array[ColorProperty]] = js.undefined
-  var colorInterpolation: js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]] = js.undefined
-  var colorRendering: js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]] = js.undefined
-  var cursor: js.UndefOr[CursorProperty | js.Array[CursorProperty]] = js.undefined
-  var direction: js.UndefOr[DirectionProperty | js.Array[DirectionProperty]] = js.undefined
-  var display: js.UndefOr[DisplayProperty | js.Array[DisplayProperty]] = js.undefined
-  var dominantBaseline: js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]] = js.undefined
-  var fill: js.UndefOr[FillProperty | js.Array[FillProperty]] = js.undefined
-  var fillOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var fillRule: js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]] = js.undefined
-  var filter: js.UndefOr[FilterProperty | js.Array[FilterProperty]] = js.undefined
-  var floodColor: js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]] = js.undefined
-  var floodOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
-  var fontFamily: js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]] = js.undefined
-  var fontSize: js.UndefOr[FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]] = js.undefined
-  var fontSizeAdjust: js.UndefOr[FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]] = js.undefined
-  var fontStretch: js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]] = js.undefined
-  var fontStyle: js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]] = js.undefined
-  var fontVariant: js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]] = js.undefined
-  var fontWeight: js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]] = js.undefined
-  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]] = js.undefined
-  var imageRendering: js.UndefOr[ImageRenderingProperty | js.Array[ImageRenderingProperty]] = js.undefined
-  var letterSpacing: js.UndefOr[LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]] = js.undefined
-  var lightingColor: js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]] = js.undefined
-  var lineHeight: js.UndefOr[LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]] = js.undefined
-  var marker: js.UndefOr[MarkerProperty | js.Array[MarkerProperty]] = js.undefined
-  var markerEnd: js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]] = js.undefined
-  var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.undefined
-  var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.undefined
-  var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
-  var opacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var overflow: js.UndefOr[OverflowProperty | js.Array[OverflowProperty]] = js.undefined
-  var paintOrder: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.undefined
-  var pointerEvents: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.undefined
-  var shapeRendering: js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]] = js.undefined
-  var stopColor: js.UndefOr[StopColorProperty | js.Array[StopColorProperty]] = js.undefined
-  var stopOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var stroke: js.UndefOr[StrokeProperty | js.Array[StrokeProperty]] = js.undefined
-  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]] = js.undefined
-  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]] = js.undefined
-  var strokeLinecap: js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]] = js.undefined
-  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]] = js.undefined
-  var strokeMiterlimit: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
-  var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.undefined
-  var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.undefined
-  var textDecoration: js.UndefOr[TextDecorationProperty | js.Array[TextDecorationProperty]] = js.undefined
-  var textRendering: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.undefined
-  var unicodeBidi: js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]] = js.undefined
-  var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
-  var visibility: js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]] = js.undefined
-  var whiteSpace: js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]] = js.undefined
-  var wordSpacing: js.UndefOr[WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]] = js.undefined
-  var writingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
+/* Inlined csstype.csstype.Fallback<csstype.csstype.SvgProperties<TLength, TTime>> */
+trait SvgPropertiesFallback[TLength, TTime] extends StObject {
+  
+  var alignmentBaseline: js.UndefOr[AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]] = js.undefined
+  
+  var baselineShift: js.UndefOr[
+    BaselineShift[TLength] | js.Array[NonNullable[js.UndefOr[BaselineShift[TLength]]]]
+  ] = js.undefined
+  
+  var clip: js.UndefOr[Clip | js.Array[NonNullable[js.UndefOr[Clip]]]] = js.undefined
+  
+  var clipPath: js.UndefOr[ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]] = js.undefined
+  
+  var clipRule: js.UndefOr[ClipRule | js.Array[NonNullable[js.UndefOr[ClipRule]]]] = js.undefined
+  
+  var color: js.UndefOr[Color | js.Array[NonNullable[js.UndefOr[Color]]]] = js.undefined
+  
+  var colorInterpolation: js.UndefOr[ColorInterpolation | js.Array[NonNullable[js.UndefOr[ColorInterpolation]]]] = js.undefined
+  
+  var colorRendering: js.UndefOr[ColorRendering | js.Array[NonNullable[js.UndefOr[ColorRendering]]]] = js.undefined
+  
+  var cursor: js.UndefOr[Cursor | js.Array[NonNullable[js.UndefOr[Cursor]]]] = js.undefined
+  
+  var direction: js.UndefOr[Direction | js.Array[NonNullable[js.UndefOr[Direction]]]] = js.undefined
+  
+  var display: js.UndefOr[Display | js.Array[NonNullable[js.UndefOr[Display]]]] = js.undefined
+  
+  var dominantBaseline: js.UndefOr[DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]] = js.undefined
+  
+  var fill: js.UndefOr[Fill | js.Array[NonNullable[js.UndefOr[Fill]]]] = js.undefined
+  
+  var fillOpacity: js.UndefOr[FillOpacity | js.Array[NonNullable[js.UndefOr[FillOpacity]]]] = js.undefined
+  
+  var fillRule: js.UndefOr[FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]] = js.undefined
+  
+  var filter: js.UndefOr[Filter | js.Array[NonNullable[js.UndefOr[Filter]]]] = js.undefined
+  
+  var floodColor: js.UndefOr[FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]] = js.undefined
+  
+  var floodOpacity: js.UndefOr[FloodOpacity | js.Array[NonNullable[js.UndefOr[FloodOpacity]]]] = js.undefined
+  
+  var font: js.UndefOr[Font | js.Array[NonNullable[js.UndefOr[Font]]]] = js.undefined
+  
+  var fontFamily: js.UndefOr[FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]] = js.undefined
+  
+  var fontSize: js.UndefOr[FontSize[TLength] | js.Array[NonNullable[js.UndefOr[FontSize[TLength]]]]] = js.undefined
+  
+  var fontSizeAdjust: js.UndefOr[FontSizeAdjust | js.Array[NonNullable[js.UndefOr[FontSizeAdjust]]]] = js.undefined
+  
+  var fontStretch: js.UndefOr[FontStretch | js.Array[NonNullable[js.UndefOr[FontStretch]]]] = js.undefined
+  
+  var fontStyle: js.UndefOr[FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]] = js.undefined
+  
+  var fontVariant: js.UndefOr[FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]] = js.undefined
+  
+  var fontWeight: js.UndefOr[FontWeight | js.Array[NonNullable[js.UndefOr[FontWeight]]]] = js.undefined
+  
+  var glyphOrientationVertical: js.UndefOr[
+    GlyphOrientationVertical | js.Array[NonNullable[js.UndefOr[GlyphOrientationVertical]]]
+  ] = js.undefined
+  
+  var imageRendering: js.UndefOr[ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]] = js.undefined
+  
+  var letterSpacing: js.UndefOr[
+    LetterSpacing[TLength] | js.Array[NonNullable[js.UndefOr[LetterSpacing[TLength]]]]
+  ] = js.undefined
+  
+  var lightingColor: js.UndefOr[LightingColor | js.Array[NonNullable[js.UndefOr[LightingColor]]]] = js.undefined
+  
+  var lineHeight: js.UndefOr[LineHeight[TLength] | js.Array[NonNullable[js.UndefOr[LineHeight[TLength]]]]] = js.undefined
+  
+  var marker: js.UndefOr[Marker | js.Array[NonNullable[js.UndefOr[Marker]]]] = js.undefined
+  
+  var markerEnd: js.UndefOr[MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]] = js.undefined
+  
+  var markerMid: js.UndefOr[MarkerMid | js.Array[NonNullable[js.UndefOr[MarkerMid]]]] = js.undefined
+  
+  var markerStart: js.UndefOr[MarkerStart | js.Array[NonNullable[js.UndefOr[MarkerStart]]]] = js.undefined
+  
+  var mask: js.UndefOr[Mask[TLength] | js.Array[NonNullable[js.UndefOr[Mask[TLength]]]]] = js.undefined
+  
+  var opacity: js.UndefOr[Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]] = js.undefined
+  
+  var overflow: js.UndefOr[Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]] = js.undefined
+  
+  var paintOrder: js.UndefOr[PaintOrder | js.Array[NonNullable[js.UndefOr[PaintOrder]]]] = js.undefined
+  
+  var pointerEvents: js.UndefOr[PointerEvents | js.Array[NonNullable[js.UndefOr[PointerEvents]]]] = js.undefined
+  
+  var shapeRendering: js.UndefOr[ShapeRendering | js.Array[NonNullable[js.UndefOr[ShapeRendering]]]] = js.undefined
+  
+  var stopColor: js.UndefOr[StopColor | js.Array[NonNullable[js.UndefOr[StopColor]]]] = js.undefined
+  
+  var stopOpacity: js.UndefOr[StopOpacity | js.Array[NonNullable[js.UndefOr[StopOpacity]]]] = js.undefined
+  
+  var stroke: js.UndefOr[Stroke | js.Array[NonNullable[js.UndefOr[Stroke]]]] = js.undefined
+  
+  var strokeDasharray: js.UndefOr[
+    StrokeDasharray[TLength] | js.Array[NonNullable[js.UndefOr[StrokeDasharray[TLength]]]]
+  ] = js.undefined
+  
+  var strokeDashoffset: js.UndefOr[
+    StrokeDashoffset[TLength] | js.Array[NonNullable[js.UndefOr[StrokeDashoffset[TLength]]]]
+  ] = js.undefined
+  
+  var strokeLinecap: js.UndefOr[StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]] = js.undefined
+  
+  var strokeLinejoin: js.UndefOr[StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]] = js.undefined
+  
+  var strokeMiterlimit: js.UndefOr[StrokeMiterlimit | js.Array[NonNullable[js.UndefOr[StrokeMiterlimit]]]] = js.undefined
+  
+  var strokeOpacity: js.UndefOr[StrokeOpacity | js.Array[NonNullable[js.UndefOr[StrokeOpacity]]]] = js.undefined
+  
+  var strokeWidth: js.UndefOr[StrokeWidth[TLength] | js.Array[NonNullable[js.UndefOr[StrokeWidth[TLength]]]]] = js.undefined
+  
+  var textAnchor: js.UndefOr[TextAnchor | js.Array[NonNullable[js.UndefOr[TextAnchor]]]] = js.undefined
+  
+  var textDecoration: js.UndefOr[
+    TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]
+  ] = js.undefined
+  
+  var textRendering: js.UndefOr[TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]] = js.undefined
+  
+  var unicodeBidi: js.UndefOr[UnicodeBidi | js.Array[NonNullable[js.UndefOr[UnicodeBidi]]]] = js.undefined
+  
+  var vectorEffect: js.UndefOr[VectorEffect | js.Array[NonNullable[js.UndefOr[VectorEffect]]]] = js.undefined
+  
+  var visibility: js.UndefOr[Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]] = js.undefined
+  
+  var whiteSpace: js.UndefOr[WhiteSpace | js.Array[NonNullable[js.UndefOr[WhiteSpace]]]] = js.undefined
+  
+  var wordSpacing: js.UndefOr[WordSpacing[TLength] | js.Array[NonNullable[js.UndefOr[WordSpacing[TLength]]]]] = js.undefined
+  
+  var writingMode: js.UndefOr[WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]] = js.undefined
 }
-
 object SvgPropertiesFallback {
-  @scala.inline
-  def apply[TLength](
-    alignmentBaseline: AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty] = null,
-    baselineShift: BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]] = null,
-    clip: ClipProperty | js.Array[ClipProperty] = null,
-    clipPath: ClipPathProperty | js.Array[ClipPathProperty] = null,
-    clipRule: ClipRuleProperty | js.Array[ClipRuleProperty] = null,
-    color: ColorProperty | js.Array[ColorProperty] = null,
-    colorInterpolation: ColorInterpolationProperty | js.Array[ColorInterpolationProperty] = null,
-    colorRendering: ColorRenderingProperty | js.Array[ColorRenderingProperty] = null,
-    cursor: CursorProperty | js.Array[CursorProperty] = null,
-    direction: DirectionProperty | js.Array[DirectionProperty] = null,
-    display: DisplayProperty | js.Array[DisplayProperty] = null,
-    dominantBaseline: DominantBaselineProperty | js.Array[DominantBaselineProperty] = null,
-    fill: FillProperty | js.Array[FillProperty] = null,
-    fillOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    fillRule: FillRuleProperty | js.Array[FillRuleProperty] = null,
-    filter: FilterProperty | js.Array[FilterProperty] = null,
-    floodColor: FloodColorProperty | js.Array[FloodColorProperty] = null,
-    floodOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    font: FontProperty | js.Array[FontProperty] = null,
-    fontFamily: FontFamilyProperty | js.Array[FontFamilyProperty] = null,
-    fontSize: FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]] = null,
-    fontSizeAdjust: FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty] = null,
-    fontStretch: FontStretchProperty | js.Array[FontStretchProperty] = null,
-    fontStyle: FontStyleProperty | js.Array[FontStyleProperty] = null,
-    fontVariant: FontVariantProperty | js.Array[FontVariantProperty] = null,
-    fontWeight: FontWeightProperty | js.Array[FontWeightProperty] = null,
-    glyphOrientationVertical: GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty] = null,
-    imageRendering: ImageRenderingProperty | js.Array[ImageRenderingProperty] = null,
-    letterSpacing: LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]] = null,
-    lightingColor: LightingColorProperty | js.Array[LightingColorProperty] = null,
-    lineHeight: LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]] = null,
-    marker: MarkerProperty | js.Array[MarkerProperty] = null,
-    markerEnd: MarkerEndProperty | js.Array[MarkerEndProperty] = null,
-    markerMid: MarkerMidProperty | js.Array[MarkerMidProperty] = null,
-    markerStart: MarkerStartProperty | js.Array[MarkerStartProperty] = null,
-    mask: MaskProperty[TLength] | js.Array[MaskProperty[TLength]] = null,
-    opacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    overflow: OverflowProperty | js.Array[OverflowProperty] = null,
-    paintOrder: PaintOrderProperty | js.Array[PaintOrderProperty] = null,
-    pointerEvents: PointerEventsProperty | js.Array[PointerEventsProperty] = null,
-    shapeRendering: ShapeRenderingProperty | js.Array[ShapeRenderingProperty] = null,
-    stopColor: StopColorProperty | js.Array[StopColorProperty] = null,
-    stopOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    stroke: StrokeProperty | js.Array[StrokeProperty] = null,
-    strokeDasharray: StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]] = null,
-    strokeDashoffset: StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]] = null,
-    strokeLinecap: StrokeLinecapProperty | js.Array[StrokeLinecapProperty] = null,
-    strokeLinejoin: StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty] = null,
-    strokeMiterlimit: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    strokeOpacity: GlobalsNumber | js.Array[GlobalsNumber] = null,
-    strokeWidth: StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]] = null,
-    textAnchor: TextAnchorProperty | js.Array[TextAnchorProperty] = null,
-    textDecoration: TextDecorationProperty | js.Array[TextDecorationProperty] = null,
-    textRendering: TextRenderingProperty | js.Array[TextRenderingProperty] = null,
-    unicodeBidi: UnicodeBidiProperty | js.Array[UnicodeBidiProperty] = null,
-    vectorEffect: VectorEffectProperty | js.Array[VectorEffectProperty] = null,
-    visibility: VisibilityProperty | js.Array[VisibilityProperty] = null,
-    whiteSpace: WhiteSpaceProperty | js.Array[WhiteSpaceProperty] = null,
-    wordSpacing: WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]] = null,
-    writingMode: WritingModeProperty | js.Array[WritingModeProperty] = null
-  ): SvgPropertiesFallback[TLength] = {
+  
+  inline def apply[TLength, TTime](): SvgPropertiesFallback[TLength, TTime] = {
     val __obj = js.Dynamic.literal()
-    if (alignmentBaseline != null) __obj.updateDynamic("alignmentBaseline")(alignmentBaseline.asInstanceOf[js.Any])
-    if (baselineShift != null) __obj.updateDynamic("baselineShift")(baselineShift.asInstanceOf[js.Any])
-    if (clip != null) __obj.updateDynamic("clip")(clip.asInstanceOf[js.Any])
-    if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (colorInterpolation != null) __obj.updateDynamic("colorInterpolation")(colorInterpolation.asInstanceOf[js.Any])
-    if (colorRendering != null) __obj.updateDynamic("colorRendering")(colorRendering.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (dominantBaseline != null) __obj.updateDynamic("dominantBaseline")(dominantBaseline.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (floodColor != null) __obj.updateDynamic("floodColor")(floodColor.asInstanceOf[js.Any])
-    if (floodOpacity != null) __obj.updateDynamic("floodOpacity")(floodOpacity.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontSizeAdjust != null) __obj.updateDynamic("fontSizeAdjust")(fontSizeAdjust.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (glyphOrientationVertical != null) __obj.updateDynamic("glyphOrientationVertical")(glyphOrientationVertical.asInstanceOf[js.Any])
-    if (imageRendering != null) __obj.updateDynamic("imageRendering")(imageRendering.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (lightingColor != null) __obj.updateDynamic("lightingColor")(lightingColor.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (paintOrder != null) __obj.updateDynamic("paintOrder")(paintOrder.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (shapeRendering != null) __obj.updateDynamic("shapeRendering")(shapeRendering.asInstanceOf[js.Any])
-    if (stopColor != null) __obj.updateDynamic("stopColor")(stopColor.asInstanceOf[js.Any])
-    if (stopOpacity != null) __obj.updateDynamic("stopOpacity")(stopOpacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (textRendering != null) __obj.updateDynamic("textRendering")(textRendering.asInstanceOf[js.Any])
-    if (unicodeBidi != null) __obj.updateDynamic("unicodeBidi")(unicodeBidi.asInstanceOf[js.Any])
-    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
-    if (whiteSpace != null) __obj.updateDynamic("whiteSpace")(whiteSpace.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
-    if (writingMode != null) __obj.updateDynamic("writingMode")(writingMode.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SvgPropertiesFallback[TLength]]
+    __obj.asInstanceOf[SvgPropertiesFallback[TLength, TTime]]
+  }
+  
+  extension [Self <: SvgPropertiesFallback[?, ?], TLength, TTime](x: Self & (SvgPropertiesFallback[TLength, TTime])) {
+    
+    inline def setAlignmentBaseline(value: AlignmentBaseline | js.Array[NonNullable[js.UndefOr[AlignmentBaseline]]]): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
+    
+    inline def setAlignmentBaselineVarargs(value: NonNullable[js.UndefOr[AlignmentBaseline]]*): Self = StObject.set(x, "alignmentBaseline", js.Array(value*))
+    
+    inline def setBaselineShift(value: BaselineShift[TLength] | js.Array[NonNullable[js.UndefOr[BaselineShift[TLength]]]]): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
+    
+    inline def setBaselineShiftVarargs(value: NonNullable[js.UndefOr[BaselineShift[TLength]]]*): Self = StObject.set(x, "baselineShift", js.Array(value*))
+    
+    inline def setClip(value: Clip | js.Array[NonNullable[js.UndefOr[Clip]]]): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    
+    inline def setClipPath(value: ClipPath | js.Array[NonNullable[js.UndefOr[ClipPath]]]): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+    
+    inline def setClipPathUndefined: Self = StObject.set(x, "clipPath", js.undefined)
+    
+    inline def setClipPathVarargs(value: NonNullable[js.UndefOr[ClipPath]]*): Self = StObject.set(x, "clipPath", js.Array(value*))
+    
+    inline def setClipRule(value: ClipRule | js.Array[NonNullable[js.UndefOr[ClipRule]]]): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
+    
+    inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
+    
+    inline def setClipRuleVarargs(value: NonNullable[js.UndefOr[ClipRule]]*): Self = StObject.set(x, "clipRule", js.Array(value*))
+    
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    
+    inline def setClipVarargs(value: NonNullable[js.UndefOr[Clip]]*): Self = StObject.set(x, "clip", js.Array(value*))
+    
+    inline def setColor(value: Color | js.Array[NonNullable[js.UndefOr[Color]]]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorInterpolation(value: ColorInterpolation | js.Array[NonNullable[js.UndefOr[ColorInterpolation]]]): Self = StObject.set(x, "colorInterpolation", value.asInstanceOf[js.Any])
+    
+    inline def setColorInterpolationUndefined: Self = StObject.set(x, "colorInterpolation", js.undefined)
+    
+    inline def setColorInterpolationVarargs(value: NonNullable[js.UndefOr[ColorInterpolation]]*): Self = StObject.set(x, "colorInterpolation", js.Array(value*))
+    
+    inline def setColorRendering(value: ColorRendering | js.Array[NonNullable[js.UndefOr[ColorRendering]]]): Self = StObject.set(x, "colorRendering", value.asInstanceOf[js.Any])
+    
+    inline def setColorRenderingUndefined: Self = StObject.set(x, "colorRendering", js.undefined)
+    
+    inline def setColorRenderingVarargs(value: NonNullable[js.UndefOr[ColorRendering]]*): Self = StObject.set(x, "colorRendering", js.Array(value*))
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: NonNullable[js.UndefOr[Color]]*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setCursor(value: Cursor | js.Array[NonNullable[js.UndefOr[Cursor]]]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setCursorVarargs(value: NonNullable[js.UndefOr[Cursor]]*): Self = StObject.set(x, "cursor", js.Array(value*))
+    
+    inline def setDirection(value: Direction | js.Array[NonNullable[js.UndefOr[Direction]]]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setDirectionVarargs(value: NonNullable[js.UndefOr[Direction]]*): Self = StObject.set(x, "direction", js.Array(value*))
+    
+    inline def setDisplay(value: Display | js.Array[NonNullable[js.UndefOr[Display]]]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setDisplayVarargs(value: NonNullable[js.UndefOr[Display]]*): Self = StObject.set(x, "display", js.Array(value*))
+    
+    inline def setDominantBaseline(value: DominantBaseline | js.Array[NonNullable[js.UndefOr[DominantBaseline]]]): Self = StObject.set(x, "dominantBaseline", value.asInstanceOf[js.Any])
+    
+    inline def setDominantBaselineUndefined: Self = StObject.set(x, "dominantBaseline", js.undefined)
+    
+    inline def setDominantBaselineVarargs(value: NonNullable[js.UndefOr[DominantBaseline]]*): Self = StObject.set(x, "dominantBaseline", js.Array(value*))
+    
+    inline def setFill(value: Fill | js.Array[NonNullable[js.UndefOr[Fill]]]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacity(value: FillOpacity | js.Array[NonNullable[js.UndefOr[FillOpacity]]]): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setFillOpacityVarargs(value: NonNullable[js.UndefOr[FillOpacity]]*): Self = StObject.set(x, "fillOpacity", js.Array(value*))
+    
+    inline def setFillRule(value: FillRule | js.Array[NonNullable[js.UndefOr[FillRule]]]): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    
+    inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+    
+    inline def setFillRuleVarargs(value: NonNullable[js.UndefOr[FillRule]]*): Self = StObject.set(x, "fillRule", js.Array(value*))
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFillVarargs(value: NonNullable[js.UndefOr[Fill]]*): Self = StObject.set(x, "fill", js.Array(value*))
+    
+    inline def setFilter(value: Filter | js.Array[NonNullable[js.UndefOr[Filter]]]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFilterVarargs(value: NonNullable[js.UndefOr[Filter]]*): Self = StObject.set(x, "filter", js.Array(value*))
+    
+    inline def setFloodColor(value: FloodColor | js.Array[NonNullable[js.UndefOr[FloodColor]]]): Self = StObject.set(x, "floodColor", value.asInstanceOf[js.Any])
+    
+    inline def setFloodColorUndefined: Self = StObject.set(x, "floodColor", js.undefined)
+    
+    inline def setFloodColorVarargs(value: NonNullable[js.UndefOr[FloodColor]]*): Self = StObject.set(x, "floodColor", js.Array(value*))
+    
+    inline def setFloodOpacity(value: FloodOpacity | js.Array[NonNullable[js.UndefOr[FloodOpacity]]]): Self = StObject.set(x, "floodOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFloodOpacityUndefined: Self = StObject.set(x, "floodOpacity", js.undefined)
+    
+    inline def setFloodOpacityVarargs(value: NonNullable[js.UndefOr[FloodOpacity]]*): Self = StObject.set(x, "floodOpacity", js.Array(value*))
+    
+    inline def setFont(value: Font | js.Array[NonNullable[js.UndefOr[Font]]]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamily(value: FontFamily | js.Array[NonNullable[js.UndefOr[FontFamily]]]): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontFamilyVarargs(value: NonNullable[js.UndefOr[FontFamily]]*): Self = StObject.set(x, "fontFamily", js.Array(value*))
+    
+    inline def setFontSize(value: FontSize[TLength] | js.Array[NonNullable[js.UndefOr[FontSize[TLength]]]]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeAdjust(value: FontSizeAdjust | js.Array[NonNullable[js.UndefOr[FontSizeAdjust]]]): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
+    
+    inline def setFontSizeAdjustVarargs(value: NonNullable[js.UndefOr[FontSizeAdjust]]*): Self = StObject.set(x, "fontSizeAdjust", js.Array(value*))
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontSizeVarargs(value: NonNullable[js.UndefOr[FontSize[TLength]]]*): Self = StObject.set(x, "fontSize", js.Array(value*))
+    
+    inline def setFontStretch(value: FontStretch | js.Array[NonNullable[js.UndefOr[FontStretch]]]): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
+    
+    inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
+    
+    inline def setFontStretchVarargs(value: NonNullable[js.UndefOr[FontStretch]]*): Self = StObject.set(x, "fontStretch", js.Array(value*))
+    
+    inline def setFontStyle(value: FontStyle | js.Array[NonNullable[js.UndefOr[FontStyle]]]): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    
+    inline def setFontStyleVarargs(value: NonNullable[js.UndefOr[FontStyle]]*): Self = StObject.set(x, "fontStyle", js.Array(value*))
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFontVarargs(value: NonNullable[js.UndefOr[Font]]*): Self = StObject.set(x, "font", js.Array(value*))
+    
+    inline def setFontVariant(value: FontVariant | js.Array[NonNullable[js.UndefOr[FontVariant]]]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+    
+    inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+    
+    inline def setFontVariantVarargs(value: NonNullable[js.UndefOr[FontVariant]]*): Self = StObject.set(x, "fontVariant", js.Array(value*))
+    
+    inline def setFontWeight(value: FontWeight | js.Array[NonNullable[js.UndefOr[FontWeight]]]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    
+    inline def setFontWeightVarargs(value: NonNullable[js.UndefOr[FontWeight]]*): Self = StObject.set(x, "fontWeight", js.Array(value*))
+    
+    inline def setGlyphOrientationVertical(value: GlyphOrientationVertical | js.Array[NonNullable[js.UndefOr[GlyphOrientationVertical]]]): Self = StObject.set(x, "glyphOrientationVertical", value.asInstanceOf[js.Any])
+    
+    inline def setGlyphOrientationVerticalUndefined: Self = StObject.set(x, "glyphOrientationVertical", js.undefined)
+    
+    inline def setGlyphOrientationVerticalVarargs(value: NonNullable[js.UndefOr[GlyphOrientationVertical]]*): Self = StObject.set(x, "glyphOrientationVertical", js.Array(value*))
+    
+    inline def setImageRendering(value: ImageRendering | js.Array[NonNullable[js.UndefOr[ImageRendering]]]): Self = StObject.set(x, "imageRendering", value.asInstanceOf[js.Any])
+    
+    inline def setImageRenderingUndefined: Self = StObject.set(x, "imageRendering", js.undefined)
+    
+    inline def setImageRenderingVarargs(value: NonNullable[js.UndefOr[ImageRendering]]*): Self = StObject.set(x, "imageRendering", js.Array(value*))
+    
+    inline def setLetterSpacing(value: LetterSpacing[TLength] | js.Array[NonNullable[js.UndefOr[LetterSpacing[TLength]]]]): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    
+    inline def setLetterSpacingVarargs(value: NonNullable[js.UndefOr[LetterSpacing[TLength]]]*): Self = StObject.set(x, "letterSpacing", js.Array(value*))
+    
+    inline def setLightingColor(value: LightingColor | js.Array[NonNullable[js.UndefOr[LightingColor]]]): Self = StObject.set(x, "lightingColor", value.asInstanceOf[js.Any])
+    
+    inline def setLightingColorUndefined: Self = StObject.set(x, "lightingColor", js.undefined)
+    
+    inline def setLightingColorVarargs(value: NonNullable[js.UndefOr[LightingColor]]*): Self = StObject.set(x, "lightingColor", js.Array(value*))
+    
+    inline def setLineHeight(value: LineHeight[TLength] | js.Array[NonNullable[js.UndefOr[LineHeight[TLength]]]]): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setLineHeightVarargs(value: NonNullable[js.UndefOr[LineHeight[TLength]]]*): Self = StObject.set(x, "lineHeight", js.Array(value*))
+    
+    inline def setMarker(value: Marker | js.Array[NonNullable[js.UndefOr[Marker]]]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerEnd(value: MarkerEnd | js.Array[NonNullable[js.UndefOr[MarkerEnd]]]): Self = StObject.set(x, "markerEnd", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerEndUndefined: Self = StObject.set(x, "markerEnd", js.undefined)
+    
+    inline def setMarkerEndVarargs(value: NonNullable[js.UndefOr[MarkerEnd]]*): Self = StObject.set(x, "markerEnd", js.Array(value*))
+    
+    inline def setMarkerMid(value: MarkerMid | js.Array[NonNullable[js.UndefOr[MarkerMid]]]): Self = StObject.set(x, "markerMid", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerMidUndefined: Self = StObject.set(x, "markerMid", js.undefined)
+    
+    inline def setMarkerMidVarargs(value: NonNullable[js.UndefOr[MarkerMid]]*): Self = StObject.set(x, "markerMid", js.Array(value*))
+    
+    inline def setMarkerStart(value: MarkerStart | js.Array[NonNullable[js.UndefOr[MarkerStart]]]): Self = StObject.set(x, "markerStart", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerStartUndefined: Self = StObject.set(x, "markerStart", js.undefined)
+    
+    inline def setMarkerStartVarargs(value: NonNullable[js.UndefOr[MarkerStart]]*): Self = StObject.set(x, "markerStart", js.Array(value*))
+    
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    
+    inline def setMarkerVarargs(value: NonNullable[js.UndefOr[Marker]]*): Self = StObject.set(x, "marker", js.Array(value*))
+    
+    inline def setMask(value: Mask[TLength] | js.Array[NonNullable[js.UndefOr[Mask[TLength]]]]): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    inline def setMaskVarargs(value: NonNullable[js.UndefOr[Mask[TLength]]]*): Self = StObject.set(x, "mask", js.Array(value*))
+    
+    inline def setOpacity(value: Opacity | js.Array[NonNullable[js.UndefOr[Opacity]]]): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOpacityVarargs(value: NonNullable[js.UndefOr[Opacity]]*): Self = StObject.set(x, "opacity", js.Array(value*))
+    
+    inline def setOverflow(value: Overflow | js.Array[NonNullable[js.UndefOr[Overflow]]]): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+    
+    inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+    
+    inline def setOverflowVarargs(value: NonNullable[js.UndefOr[Overflow]]*): Self = StObject.set(x, "overflow", js.Array(value*))
+    
+    inline def setPaintOrder(value: PaintOrder | js.Array[NonNullable[js.UndefOr[PaintOrder]]]): Self = StObject.set(x, "paintOrder", value.asInstanceOf[js.Any])
+    
+    inline def setPaintOrderUndefined: Self = StObject.set(x, "paintOrder", js.undefined)
+    
+    inline def setPaintOrderVarargs(value: NonNullable[js.UndefOr[PaintOrder]]*): Self = StObject.set(x, "paintOrder", js.Array(value*))
+    
+    inline def setPointerEvents(value: PointerEvents | js.Array[NonNullable[js.UndefOr[PointerEvents]]]): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    
+    inline def setPointerEventsVarargs(value: NonNullable[js.UndefOr[PointerEvents]]*): Self = StObject.set(x, "pointerEvents", js.Array(value*))
+    
+    inline def setShapeRendering(value: ShapeRendering | js.Array[NonNullable[js.UndefOr[ShapeRendering]]]): Self = StObject.set(x, "shapeRendering", value.asInstanceOf[js.Any])
+    
+    inline def setShapeRenderingUndefined: Self = StObject.set(x, "shapeRendering", js.undefined)
+    
+    inline def setShapeRenderingVarargs(value: NonNullable[js.UndefOr[ShapeRendering]]*): Self = StObject.set(x, "shapeRendering", js.Array(value*))
+    
+    inline def setStopColor(value: StopColor | js.Array[NonNullable[js.UndefOr[StopColor]]]): Self = StObject.set(x, "stopColor", value.asInstanceOf[js.Any])
+    
+    inline def setStopColorUndefined: Self = StObject.set(x, "stopColor", js.undefined)
+    
+    inline def setStopColorVarargs(value: NonNullable[js.UndefOr[StopColor]]*): Self = StObject.set(x, "stopColor", js.Array(value*))
+    
+    inline def setStopOpacity(value: StopOpacity | js.Array[NonNullable[js.UndefOr[StopOpacity]]]): Self = StObject.set(x, "stopOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStopOpacityUndefined: Self = StObject.set(x, "stopOpacity", js.undefined)
+    
+    inline def setStopOpacityVarargs(value: NonNullable[js.UndefOr[StopOpacity]]*): Self = StObject.set(x, "stopOpacity", js.Array(value*))
+    
+    inline def setStroke(value: Stroke | js.Array[NonNullable[js.UndefOr[Stroke]]]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharray(value: StrokeDasharray[TLength] | js.Array[NonNullable[js.UndefOr[StrokeDasharray[TLength]]]]): Self = StObject.set(x, "strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDasharrayUndefined: Self = StObject.set(x, "strokeDasharray", js.undefined)
+    
+    inline def setStrokeDasharrayVarargs(value: NonNullable[js.UndefOr[StrokeDasharray[TLength]]]*): Self = StObject.set(x, "strokeDasharray", js.Array(value*))
+    
+    inline def setStrokeDashoffset(value: StrokeDashoffset[TLength] | js.Array[NonNullable[js.UndefOr[StrokeDashoffset[TLength]]]]): Self = StObject.set(x, "strokeDashoffset", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeDashoffsetUndefined: Self = StObject.set(x, "strokeDashoffset", js.undefined)
+    
+    inline def setStrokeDashoffsetVarargs(value: NonNullable[js.UndefOr[StrokeDashoffset[TLength]]]*): Self = StObject.set(x, "strokeDashoffset", js.Array(value*))
+    
+    inline def setStrokeLinecap(value: StrokeLinecap | js.Array[NonNullable[js.UndefOr[StrokeLinecap]]]): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+    
+    inline def setStrokeLinecapVarargs(value: NonNullable[js.UndefOr[StrokeLinecap]]*): Self = StObject.set(x, "strokeLinecap", js.Array(value*))
+    
+    inline def setStrokeLinejoin(value: StrokeLinejoin | js.Array[NonNullable[js.UndefOr[StrokeLinejoin]]]): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
+    
+    inline def setStrokeLinejoinVarargs(value: NonNullable[js.UndefOr[StrokeLinejoin]]*): Self = StObject.set(x, "strokeLinejoin", js.Array(value*))
+    
+    inline def setStrokeMiterlimit(value: StrokeMiterlimit | js.Array[NonNullable[js.UndefOr[StrokeMiterlimit]]]): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+    
+    inline def setStrokeMiterlimitVarargs(value: NonNullable[js.UndefOr[StrokeMiterlimit]]*): Self = StObject.set(x, "strokeMiterlimit", js.Array(value*))
+    
+    inline def setStrokeOpacity(value: StrokeOpacity | js.Array[NonNullable[js.UndefOr[StrokeOpacity]]]): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeOpacityVarargs(value: NonNullable[js.UndefOr[StrokeOpacity]]*): Self = StObject.set(x, "strokeOpacity", js.Array(value*))
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeVarargs(value: NonNullable[js.UndefOr[Stroke]]*): Self = StObject.set(x, "stroke", js.Array(value*))
+    
+    inline def setStrokeWidth(value: StrokeWidth[TLength] | js.Array[NonNullable[js.UndefOr[StrokeWidth[TLength]]]]): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    
+    inline def setStrokeWidthVarargs(value: NonNullable[js.UndefOr[StrokeWidth[TLength]]]*): Self = StObject.set(x, "strokeWidth", js.Array(value*))
+    
+    inline def setTextAnchor(value: TextAnchor | js.Array[NonNullable[js.UndefOr[TextAnchor]]]): Self = StObject.set(x, "textAnchor", value.asInstanceOf[js.Any])
+    
+    inline def setTextAnchorUndefined: Self = StObject.set(x, "textAnchor", js.undefined)
+    
+    inline def setTextAnchorVarargs(value: NonNullable[js.UndefOr[TextAnchor]]*): Self = StObject.set(x, "textAnchor", js.Array(value*))
+    
+    inline def setTextDecoration(value: TextDecoration[TLength] | js.Array[NonNullable[js.UndefOr[TextDecoration[TLength]]]]): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    
+    inline def setTextDecorationVarargs(value: NonNullable[js.UndefOr[TextDecoration[TLength]]]*): Self = StObject.set(x, "textDecoration", js.Array(value*))
+    
+    inline def setTextRendering(value: TextRendering | js.Array[NonNullable[js.UndefOr[TextRendering]]]): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+    
+    inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
+    
+    inline def setTextRenderingVarargs(value: NonNullable[js.UndefOr[TextRendering]]*): Self = StObject.set(x, "textRendering", js.Array(value*))
+    
+    inline def setUnicodeBidi(value: UnicodeBidi | js.Array[NonNullable[js.UndefOr[UnicodeBidi]]]): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
+    
+    inline def setUnicodeBidiVarargs(value: NonNullable[js.UndefOr[UnicodeBidi]]*): Self = StObject.set(x, "unicodeBidi", js.Array(value*))
+    
+    inline def setVectorEffect(value: VectorEffect | js.Array[NonNullable[js.UndefOr[VectorEffect]]]): Self = StObject.set(x, "vectorEffect", value.asInstanceOf[js.Any])
+    
+    inline def setVectorEffectUndefined: Self = StObject.set(x, "vectorEffect", js.undefined)
+    
+    inline def setVectorEffectVarargs(value: NonNullable[js.UndefOr[VectorEffect]]*): Self = StObject.set(x, "vectorEffect", js.Array(value*))
+    
+    inline def setVisibility(value: Visibility | js.Array[NonNullable[js.UndefOr[Visibility]]]): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    
+    inline def setVisibilityVarargs(value: NonNullable[js.UndefOr[Visibility]]*): Self = StObject.set(x, "visibility", js.Array(value*))
+    
+    inline def setWhiteSpace(value: WhiteSpace | js.Array[NonNullable[js.UndefOr[WhiteSpace]]]): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
+    
+    inline def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
+    
+    inline def setWhiteSpaceVarargs(value: NonNullable[js.UndefOr[WhiteSpace]]*): Self = StObject.set(x, "whiteSpace", js.Array(value*))
+    
+    inline def setWordSpacing(value: WordSpacing[TLength] | js.Array[NonNullable[js.UndefOr[WordSpacing[TLength]]]]): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
+    
+    inline def setWordSpacingVarargs(value: NonNullable[js.UndefOr[WordSpacing[TLength]]]*): Self = StObject.set(x, "wordSpacing", js.Array(value*))
+    
+    inline def setWritingMode(value: WritingMode | js.Array[NonNullable[js.UndefOr[WritingMode]]]): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
+    
+    inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
+    
+    inline def setWritingModeVarargs(value: NonNullable[js.UndefOr[WritingMode]]*): Self = StObject.set(x, "writingMode", js.Array(value*))
   }
 }
-

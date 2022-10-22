@@ -1,49 +1,75 @@
 package typingsJapgolly.sparkpost.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateWebhook extends js.Object {
+trait UpdateWebhook extends StObject {
+  
   var active: js.UndefOr[Boolean] = js.undefined
+  
   /** Object containing credentials needed to make authorized POST requests to target */
-  var auth_credentials: js.UndefOr[js.Any] = js.undefined
+  var auth_credentials: js.UndefOr[Any] = js.undefined
+  
   /** Object containing details needed to request authorization credentials, as necessary */
-  var auth_request_details: js.UndefOr[js.Any] = js.undefined
+  var auth_request_details: js.UndefOr[Any] = js.undefined
+  
   /** Authentication token to present in the X-MessageSystems-Webhook-Token header of POST requests to target */
   var auth_token: js.UndefOr[String] = js.undefined
+  
   /** Type of authentication to be used during POST requests to target */
   var auth_type: js.UndefOr[String] = js.undefined
+  
   /** Array of event types this webhook will receive */
   var events: js.UndefOr[js.Array[String]] = js.undefined
+  
   /** User-friendly name for webhook */
   var name: js.UndefOr[String] = js.undefined
+  
   /** URL of the target to which to POST event batches */
   var target: js.UndefOr[String] = js.undefined
 }
-
 object UpdateWebhook {
-  @scala.inline
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    auth_credentials: js.Any = null,
-    auth_request_details: js.Any = null,
-    auth_token: String = null,
-    auth_type: String = null,
-    events: js.Array[String] = null,
-    name: String = null,
-    target: String = null
-  ): UpdateWebhook = {
+  
+  inline def apply(): UpdateWebhook = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (auth_credentials != null) __obj.updateDynamic("auth_credentials")(auth_credentials.asInstanceOf[js.Any])
-    if (auth_request_details != null) __obj.updateDynamic("auth_request_details")(auth_request_details.asInstanceOf[js.Any])
-    if (auth_token != null) __obj.updateDynamic("auth_token")(auth_token.asInstanceOf[js.Any])
-    if (auth_type != null) __obj.updateDynamic("auth_type")(auth_type.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateWebhook]
   }
+  
+  extension [Self <: UpdateWebhook](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setAuth_credentials(value: Any): Self = StObject.set(x, "auth_credentials", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_credentialsUndefined: Self = StObject.set(x, "auth_credentials", js.undefined)
+    
+    inline def setAuth_request_details(value: Any): Self = StObject.set(x, "auth_request_details", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_request_detailsUndefined: Self = StObject.set(x, "auth_request_details", js.undefined)
+    
+    inline def setAuth_token(value: String): Self = StObject.set(x, "auth_token", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_tokenUndefined: Self = StObject.set(x, "auth_token", js.undefined)
+    
+    inline def setAuth_type(value: String): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_typeUndefined: Self = StObject.set(x, "auth_type", js.undefined)
+    
+    inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

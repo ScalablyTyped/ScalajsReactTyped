@@ -1,52 +1,32 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.selectMod.OnChangeParams
-import typingsJapgolly.baseui.selectMod.SelectOverrides
-import typingsJapgolly.baseui.selectMod.State
-import typingsJapgolly.baseui.selectMod.StatefulContainerProps
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.baseui.selectTypesMod.OnChangeParams
+import typingsJapgolly.baseui.selectTypesMod.SelectOverrides
+import typingsJapgolly.baseui.selectTypesMod.SelectProps
+import typingsJapgolly.baseui.selectTypesMod.State
+import typingsJapgolly.baseui.selectTypesMod.StatefulContainerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulSelectContainer {
-  def apply(
-    initialState: State = null,
-    onChange: /* params */ OnChangeParams => CallbackTo[js.Any] = null,
-    overrides: SelectOverrides = null,
-    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State) => CallbackTo[State] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    StatefulContainerProps, 
-    typingsJapgolly.baseui.selectMod.StatefulSelectContainer, 
-    Unit, 
-    StatefulContainerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.baseui.selectMod.OnChangeParams) => onChange(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: /* stateType */ java.lang.String, t1: /* nextState */ typingsJapgolly.baseui.selectMod.State, t2: /* currentState */ typingsJapgolly.baseui.selectMod.State) => stateReducer(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.selectMod.StatefulContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.selectMod.StatefulSelectContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.selectMod.StatefulContainerProps])(children: _*)
+  inline def apply(
+    children: SelectProps => Node,
+    initialState: State,
+    onChange: OnChangeParams => Any,
+    overrides: SelectOverrides,
+    stateReducer: (/* stateType */ String, /* nextState */ State, /* currentState */ State) => State
+  ): Default[typingsJapgolly.baseui.selectMod.StatefulSelectContainer] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children), initialState = initialState.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange), overrides = overrides.asInstanceOf[js.Any], stateReducer = js.Any.fromFunction3(stateReducer))
+    new Default[typingsJapgolly.baseui.selectMod.StatefulSelectContainer](js.Array(this.component, __props.asInstanceOf[StatefulContainerProps]))
   }
+  
   @JSImport("baseui/select", "StatefulSelectContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: StatefulContainerProps): Default[typingsJapgolly.baseui.selectMod.StatefulSelectContainer] = new Default[typingsJapgolly.baseui.selectMod.StatefulSelectContainer](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

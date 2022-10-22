@@ -1,61 +1,92 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.raw.React.Node
-import typingsJapgolly.std.Event_
+import japgolly.scalajs.react.facade.React.Node
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadProps<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadInputPropKeys> */
-trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends js.Object {
-  var bsSize: js.UndefOr[TypeaheadBsSizes] = js.undefined
+trait TypeaheadInputProps[T /* <: TypeaheadModel */] extends StObject {
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var inputProps: js.UndefOr[InputProps] = js.undefined
+  
   var labelKey: js.UndefOr[TypeaheadLabelKey[T]] = js.undefined
+  
   var multiple: js.UndefOr[Boolean] = js.undefined
-  var onBlur: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  
+  var onBlur: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
+  
   var onChange: js.UndefOr[js.Function1[/* selected */ js.Array[T], Unit]] = js.undefined
-  var onFocus: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
-  var onKeyDown: js.UndefOr[js.Function1[/* e */ Event_, Unit]] = js.undefined
+  
+  var onFocus: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
+  
+  var onKeyDown: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
+  
   var renderToken: js.UndefOr[
-    js.Function3[/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double, Node]
+    js.Function3[/* selectedItem */ T, /* props */ TokenProps, /* index */ Double, Node]
   ] = js.undefined
+  
   var selected: js.UndefOr[js.Array[T]] = js.undefined
 }
-
 object TypeaheadInputProps {
-  @scala.inline
-  def apply[T /* <: TypeaheadModel */](
-    bsSize: TypeaheadBsSizes = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    inputProps: InputProps = null,
-    labelKey: TypeaheadLabelKey[T] = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    onBlur: /* e */ Event_ => Callback = null,
-    onChange: /* selected */ js.Array[T] => Callback = null,
-    onFocus: /* e */ Event_ => Callback = null,
-    onKeyDown: /* e */ Event_ => Callback = null,
-    placeholder: String = null,
-    renderToken: (/* selectedItem */ T, /* props */ TypeaheadMenuProps[T], /* index */ Double) => CallbackTo[Node] = null,
-    selected: js.Array[T] = null
-  ): TypeaheadInputProps[T] = {
+  
+  inline def apply[T /* <: TypeaheadModel */](): TypeaheadInputProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (labelKey != null) __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* selected */ js.Array[T]) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onFocus(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onKeyDown(t0).runNow()))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (renderToken != null) __obj.updateDynamic("renderToken")(js.Any.fromFunction3((t0: /* selectedItem */ T, t1: /* props */ typingsJapgolly.reactBootstrapTypeahead.mod.TypeaheadMenuProps[T], t2: /* index */ scala.Double) => renderToken(t0, t1, t2).runNow()))
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadInputProps[T]]
   }
+  
+  extension [Self <: TypeaheadInputProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadInputProps[T]) {
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setInputProps(value: InputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    
+    inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+    
+    inline def setLabelKey(value: TypeaheadLabelKey[T]): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
+    
+    inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
+    
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    
+    inline def setOnBlur(value: /* e */ Event => Callback): Self = StObject.set(x, "onBlur", js.Any.fromFunction1((t0: /* e */ Event) => value(t0).runNow()))
+    
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    
+    inline def setOnChange(value: /* selected */ js.Array[T] => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction1((t0: /* selected */ js.Array[T]) => value(t0).runNow()))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnFocus(value: /* e */ Event => Callback): Self = StObject.set(x, "onFocus", js.Any.fromFunction1((t0: /* e */ Event) => value(t0).runNow()))
+    
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    
+    inline def setOnKeyDown(value: /* e */ Event => Callback): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1((t0: /* e */ Event) => value(t0).runNow()))
+    
+    inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setRenderToken(value: (/* selectedItem */ T, /* props */ TokenProps, /* index */ Double) => Node): Self = StObject.set(x, "renderToken", js.Any.fromFunction3(value))
+    
+    inline def setRenderTokenUndefined: Self = StObject.set(x, "renderToken", js.undefined)
+    
+    inline def setSelected(value: js.Array[T]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setSelectedVarargs(value: T*): Self = StObject.set(x, "selected", js.Array(value*))
+  }
 }
-

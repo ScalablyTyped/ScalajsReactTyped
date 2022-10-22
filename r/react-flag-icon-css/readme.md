@@ -10,10 +10,10 @@ React SVG country flags component
 | ------------------ | :-------------: |
 | Full name          | react-flag-icon-css |
 | Keywords           | flag-icon, flag-icon-css, flag-icons, react, react-css-modules |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 413087 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 51068.666666666664 |
+| # stars            | 86.0 |
 
 ## Links
 - [Homepage](https://github.com/matteocng/react-flag-icon-css#readme)

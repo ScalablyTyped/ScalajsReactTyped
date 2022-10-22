@@ -1,43 +1,59 @@
 package typingsJapgolly.mongodb.mod
 
-import typingsJapgolly.mongodb.mongodbStrings.majority
+import typingsJapgolly.bson.mod.Document
+import typingsJapgolly.bson.mod.ObjectId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridFSBucketWriteStreamOptions extends WriteConcern {
-  /**
-    * The chunk size to use, in bytes
-    */
+trait GridFSBucketWriteStreamOptions
+  extends StObject
+     with WriteConcernOptions {
+  
+  /** Array of strings to store in the file document's `aliases` field */
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /** Overwrite this bucket's chunkSizeBytes for this file */
   var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * Default false; If true, disables adding an md5 field to file data
-    */
-  var disableMD5: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Custom file id for the GridFS file.
-    */
-  var id: js.UndefOr[GridFSBucketWriteStreamId] = js.undefined
+  
+  /** String to store in the file document's `contentType` field */
+  var contentType: js.UndefOr[String] = js.undefined
+  
+  /** Custom file id for the GridFS file. */
+  var id: js.UndefOr[ObjectId] = js.undefined
+  
+  /** Object to store in the file document's `metadata` field */
+  var metadata: js.UndefOr[Document] = js.undefined
 }
-
 object GridFSBucketWriteStreamOptions {
-  @scala.inline
-  def apply(
-    chunkSizeBytes: Int | scala.Double = null,
-    disableMD5: js.UndefOr[Boolean] = js.undefined,
-    id: GridFSBucketWriteStreamId = null,
-    j: js.UndefOr[Boolean] = js.undefined,
-    w: scala.Double | majority | String = null,
-    wtimeout: Int | scala.Double = null
-  ): GridFSBucketWriteStreamOptions = {
+  
+  inline def apply(): GridFSBucketWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (chunkSizeBytes != null) __obj.updateDynamic("chunkSizeBytes")(chunkSizeBytes.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableMD5)) __obj.updateDynamic("disableMD5")(disableMD5.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(j)) __obj.updateDynamic("j")(j.asInstanceOf[js.Any])
-    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
-    if (wtimeout != null) __obj.updateDynamic("wtimeout")(wtimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]
   }
+  
+  extension [Self <: GridFSBucketWriteStreamOptions](x: Self) {
+    
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
+    inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setId(value: ObjectId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setMetadata(value: Document): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+  }
 }
-

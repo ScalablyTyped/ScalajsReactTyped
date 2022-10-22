@@ -18,100 +18,182 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.star
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.top
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.triangleUp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojthematicmap.ojThematicMapMarkerSettableProperties> */
 trait ojThematicMapMarkerSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var borderColor: js.UndefOr[String] = js.undefined
+  
   var borderStyle: js.UndefOr[solid | none] = js.undefined
+  
   var borderWidth: js.UndefOr[Double] = js.undefined
+  
   var categories: js.UndefOr[js.Array[String]] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var labelPosition: js.UndefOr[bottom | center | top] = js.undefined
+  
   var labelStyle: js.UndefOr[js.Object] = js.undefined
+  
   var location: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var rotation: js.UndefOr[Double] = js.undefined
+  
   var selectable: js.UndefOr[auto | off] = js.undefined
+  
   var shape: js.UndefOr[
     circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
   ] = js.undefined
+  
   var shortDesc: js.UndefOr[String] = js.undefined
+  
   var source: js.UndefOr[String] = js.undefined
+  
   var sourceHover: js.UndefOr[String] = js.undefined
+  
   var sourceHoverSelected: js.UndefOr[String] = js.undefined
+  
   var sourceSelected: js.UndefOr[String] = js.undefined
+  
   var svgClassName: js.UndefOr[String] = js.undefined
+  
   var svgStyle: js.UndefOr[js.Object] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
-  var x: js.UndefOr[Double] = js.undefined
-  var y: js.UndefOr[Double] = js.undefined
+  
+  var x: js.UndefOr[Double | Null] = js.undefined
+  
+  var y: js.UndefOr[Double | Null] = js.undefined
 }
-
 object ojThematicMapMarkerSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    borderColor: String = null,
-    borderStyle: solid | none = null,
-    borderWidth: Int | Double = null,
-    categories: js.Array[String] = null,
-    color: String = null,
-    height: Int | Double = null,
-    label: String = null,
-    labelPosition: bottom | center | top = null,
-    labelStyle: js.Object = null,
-    location: String = null,
-    opacity: Int | Double = null,
-    rotation: Int | Double = null,
-    selectable: auto | off = null,
-    shape: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String = null,
-    shortDesc: String = null,
-    source: String = null,
-    sourceHover: String = null,
-    sourceHoverSelected: String = null,
-    sourceSelected: String = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    value: Int | Double = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): ojThematicMapMarkerSettablePropertiesLenient = {
+  
+  inline def apply(): ojThematicMapMarkerSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (sourceHover != null) __obj.updateDynamic("sourceHover")(sourceHover.asInstanceOf[js.Any])
-    if (sourceHoverSelected != null) __obj.updateDynamic("sourceHoverSelected")(sourceHoverSelected.asInstanceOf[js.Any])
-    if (sourceSelected != null) __obj.updateDynamic("sourceSelected")(sourceSelected.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojThematicMapMarkerSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojThematicMapMarkerSettablePropertiesLenient](x: Self) {
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderStyle(value: solid | none): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
+    
+    inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+    
+    inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+    
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPosition(value: bottom | center | top): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    
+    inline def setLabelStyle(value: js.Object): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setSelectable(value: auto | off): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setShape(
+      value: circle | diamond | ellipse | human | plus | rectangle | square | star | triangleDown | triangleUp | String
+    ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setShortDesc(value: String): Self = StObject.set(x, "shortDesc", value.asInstanceOf[js.Any])
+    
+    inline def setShortDescUndefined: Self = StObject.set(x, "shortDesc", js.undefined)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceHover(value: String): Self = StObject.set(x, "sourceHover", value.asInstanceOf[js.Any])
+    
+    inline def setSourceHoverSelected(value: String): Self = StObject.set(x, "sourceHoverSelected", value.asInstanceOf[js.Any])
+    
+    inline def setSourceHoverSelectedUndefined: Self = StObject.set(x, "sourceHoverSelected", js.undefined)
+    
+    inline def setSourceHoverUndefined: Self = StObject.set(x, "sourceHover", js.undefined)
+    
+    inline def setSourceSelected(value: String): Self = StObject.set(x, "sourceSelected", value.asInstanceOf[js.Any])
+    
+    inline def setSourceSelectedUndefined: Self = StObject.set(x, "sourceSelected", js.undefined)
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXNull: Self = StObject.set(x, "x", null)
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYNull: Self = StObject.set(x, "y", null)
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

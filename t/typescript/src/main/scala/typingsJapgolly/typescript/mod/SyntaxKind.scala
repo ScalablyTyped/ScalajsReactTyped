@@ -1,2651 +1,2608 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SyntaxKind extends js.Object
-
+sealed trait SyntaxKind extends StObject
 @JSImport("typescript", "SyntaxKind")
 @js.native
-object SyntaxKind extends js.Object {
+object SyntaxKind extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[SyntaxKind & Double] = js.native
+  
   @js.native
   sealed trait AbstractKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 126 */ val AbstractKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AbstractKeyword & Double = js.native
+  
+  @js.native
+  sealed trait AmpersandAmpersandEqualsToken
+    extends StObject
+       with SyntaxKind
+       with CompoundAssignmentOperator
+       with LogicalOrCoalescingAssignmentOperator
+  /* 76 */ val AmpersandAmpersandEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.AmpersandAmpersandEqualsToken & Double = js.native
   
   @js.native
   sealed trait AmpersandAmpersandToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with LogicalOperator
+       with PunctuationSyntaxKind
+  /* 55 */ val AmpersandAmpersandToken: typingsJapgolly.typescript.mod.SyntaxKind.AmpersandAmpersandToken & Double = js.native
   
   @js.native
   sealed trait AmpersandEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 73 */ val AmpersandEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.AmpersandEqualsToken & Double = js.native
   
   @js.native
   sealed trait AmpersandToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with BitwiseOperator
+       with PunctuationSyntaxKind
+  /* 50 */ val AmpersandToken: typingsJapgolly.typescript.mod.SyntaxKind.AmpersandToken & Double = js.native
   
   @js.native
   sealed trait AnyKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 130 */ val AnyKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AnyKeyword & Double = js.native
   
   @js.native
-  sealed trait ArrayBindingPattern extends SyntaxKind
+  sealed trait ArrayBindingPattern
+    extends StObject
+       with SyntaxKind
+  /* 202 */ val ArrayBindingPattern: typingsJapgolly.typescript.mod.SyntaxKind.ArrayBindingPattern & Double = js.native
   
   @js.native
-  sealed trait ArrayLiteralExpression extends SyntaxKind
+  sealed trait ArrayLiteralExpression
+    extends StObject
+       with SyntaxKind
+  /* 204 */ val ArrayLiteralExpression: typingsJapgolly.typescript.mod.SyntaxKind.ArrayLiteralExpression & Double = js.native
   
   @js.native
-  sealed trait ArrayType extends SyntaxKind
+  sealed trait ArrayType
+    extends StObject
+       with SyntaxKind
+  /* 183 */ val ArrayType: typingsJapgolly.typescript.mod.SyntaxKind.ArrayType & Double = js.native
   
   @js.native
-  sealed trait ArrowFunction extends SyntaxKind
+  sealed trait ArrowFunction
+    extends StObject
+       with SyntaxKind
+  /* 214 */ val ArrowFunction: typingsJapgolly.typescript.mod.SyntaxKind.ArrowFunction & Double = js.native
   
   @js.native
-  sealed trait AsExpression extends SyntaxKind
+  sealed trait AsExpression
+    extends StObject
+       with SyntaxKind
+  /* 229 */ val AsExpression: typingsJapgolly.typescript.mod.SyntaxKind.AsExpression & Double = js.native
   
   @js.native
   sealed trait AsKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 127 */ val AsKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AsKeyword & Double = js.native
+  
+  @js.native
+  sealed trait AssertClause
+    extends StObject
+       with SyntaxKind
+  /* 293 */ val AssertClause: typingsJapgolly.typescript.mod.SyntaxKind.AssertClause & Double = js.native
+  
+  @js.native
+  sealed trait AssertEntry
+    extends StObject
+       with SyntaxKind
+  /* 294 */ val AssertEntry: typingsJapgolly.typescript.mod.SyntaxKind.AssertEntry & Double = js.native
+  
+  @js.native
+  sealed trait AssertKeyword
+    extends StObject
+       with SyntaxKind
+       with KeywordSyntaxKind
+  /* 129 */ val AssertKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AssertKeyword & Double = js.native
   
   @js.native
   sealed trait AssertsKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 128 */ val AssertsKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AssertsKeyword & Double = js.native
   
   @js.native
   sealed trait AsteriskAsteriskEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 67 */ val AsteriskAsteriskEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.AsteriskAsteriskEqualsToken & Double = js.native
   
   @js.native
-  sealed trait AsteriskAsteriskToken extends SyntaxKind
+  sealed trait AsteriskAsteriskToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 42 */ val AsteriskAsteriskToken: typingsJapgolly.typescript.mod.SyntaxKind.AsteriskAsteriskToken & Double = js.native
   
   @js.native
   sealed trait AsteriskEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 66 */ val AsteriskEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.AsteriskEqualsToken & Double = js.native
   
   @js.native
   sealed trait AsteriskToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
        with MultiplicativeOperator
+       with PunctuationSyntaxKind
+  /* 41 */ val AsteriskToken: typingsJapgolly.typescript.mod.SyntaxKind.AsteriskToken & Double = js.native
   
   @js.native
   sealed trait AsyncKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 131 */ val AsyncKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AsyncKeyword & Double = js.native
   
   @js.native
   sealed trait AtToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 59 */ val AtToken: typingsJapgolly.typescript.mod.SyntaxKind.AtToken & Double = js.native
   
   @js.native
-  sealed trait AwaitExpression extends SyntaxKind
+  sealed trait AwaitExpression
+    extends StObject
+       with SyntaxKind
+  /* 218 */ val AwaitExpression: typingsJapgolly.typescript.mod.SyntaxKind.AwaitExpression & Double = js.native
   
   @js.native
   sealed trait AwaitKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 132 */ val AwaitKeyword: typingsJapgolly.typescript.mod.SyntaxKind.AwaitKeyword & Double = js.native
   
   /** Only the JSDoc scanner produces BacktickToken. The normal scanner produces NoSubstitutionTemplateLiteral and related kinds. */
   @js.native
   sealed trait BacktickToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 61 */ val BacktickToken: typingsJapgolly.typescript.mod.SyntaxKind.BacktickToken & Double = js.native
+  
+  @js.native
+  sealed trait BarBarEqualsToken
+    extends StObject
+       with SyntaxKind
+       with CompoundAssignmentOperator
+       with LogicalOrCoalescingAssignmentOperator
+  /* 75 */ val BarBarEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.BarBarEqualsToken & Double = js.native
   
   @js.native
   sealed trait BarBarToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with LogicalOperator
+       with PunctuationSyntaxKind
+  /* 56 */ val BarBarToken: typingsJapgolly.typescript.mod.SyntaxKind.BarBarToken & Double = js.native
   
   @js.native
   sealed trait BarEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 74 */ val BarEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.BarEqualsToken & Double = js.native
   
   @js.native
   sealed trait BarToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with BitwiseOperator
+       with PunctuationSyntaxKind
+  /* 51 */ val BarToken: typingsJapgolly.typescript.mod.SyntaxKind.BarToken & Double = js.native
   
   @js.native
   sealed trait BigIntKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 158 */ val BigIntKeyword: typingsJapgolly.typescript.mod.SyntaxKind.BigIntKeyword & Double = js.native
   
   @js.native
-  sealed trait BigIntLiteral extends SyntaxKind
+  sealed trait BigIntLiteral
+    extends StObject
+       with SyntaxKind
+       with LiteralSyntaxKind
+  /* 9 */ val BigIntLiteral: typingsJapgolly.typescript.mod.SyntaxKind.BigIntLiteral & Double = js.native
   
   @js.native
-  sealed trait BinaryExpression extends SyntaxKind
+  sealed trait BinaryExpression
+    extends StObject
+       with SyntaxKind
+  /* 221 */ val BinaryExpression: typingsJapgolly.typescript.mod.SyntaxKind.BinaryExpression & Double = js.native
   
   @js.native
-  sealed trait BindingElement extends SyntaxKind
+  sealed trait BindingElement
+    extends StObject
+       with SyntaxKind
+  /* 203 */ val BindingElement: typingsJapgolly.typescript.mod.SyntaxKind.BindingElement & Double = js.native
   
   @js.native
-  sealed trait Block extends SyntaxKind
+  sealed trait Block
+    extends StObject
+       with SyntaxKind
+  /* 235 */ val Block: typingsJapgolly.typescript.mod.SyntaxKind.Block & Double = js.native
   
   @js.native
   sealed trait BooleanKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 133 */ val BooleanKeyword: typingsJapgolly.typescript.mod.SyntaxKind.BooleanKeyword & Double = js.native
   
   @js.native
   sealed trait BreakKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 81 */ val BreakKeyword: typingsJapgolly.typescript.mod.SyntaxKind.BreakKeyword & Double = js.native
   
   @js.native
-  sealed trait BreakStatement extends SyntaxKind
+  sealed trait BreakStatement
+    extends StObject
+       with SyntaxKind
+  /* 246 */ val BreakStatement: typingsJapgolly.typescript.mod.SyntaxKind.BreakStatement & Double = js.native
   
   @js.native
-  sealed trait Bundle extends SyntaxKind
+  sealed trait Bundle
+    extends StObject
+       with SyntaxKind
+  /* 306 */ val Bundle: typingsJapgolly.typescript.mod.SyntaxKind.Bundle & Double = js.native
   
   @js.native
-  sealed trait CallExpression extends SyntaxKind
+  sealed trait CallExpression
+    extends StObject
+       with SyntaxKind
+  /* 208 */ val CallExpression: typingsJapgolly.typescript.mod.SyntaxKind.CallExpression & Double = js.native
   
   @js.native
-  sealed trait CallSignature extends SyntaxKind
+  sealed trait CallSignature
+    extends StObject
+       with SyntaxKind
+  /* 174 */ val CallSignature: typingsJapgolly.typescript.mod.SyntaxKind.CallSignature & Double = js.native
   
   @js.native
   sealed trait CaretEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 78 */ val CaretEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.CaretEqualsToken & Double = js.native
   
   @js.native
   sealed trait CaretToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with BitwiseOperator
+       with PunctuationSyntaxKind
+  /* 52 */ val CaretToken: typingsJapgolly.typescript.mod.SyntaxKind.CaretToken & Double = js.native
   
   @js.native
-  sealed trait CaseBlock extends SyntaxKind
+  sealed trait CaseBlock
+    extends StObject
+       with SyntaxKind
+  /* 263 */ val CaseBlock: typingsJapgolly.typescript.mod.SyntaxKind.CaseBlock & Double = js.native
   
   @js.native
-  sealed trait CaseClause extends SyntaxKind
+  sealed trait CaseClause
+    extends StObject
+       with SyntaxKind
+  /* 289 */ val CaseClause: typingsJapgolly.typescript.mod.SyntaxKind.CaseClause & Double = js.native
   
   @js.native
   sealed trait CaseKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 82 */ val CaseKeyword: typingsJapgolly.typescript.mod.SyntaxKind.CaseKeyword & Double = js.native
   
   @js.native
-  sealed trait CatchClause extends SyntaxKind
+  sealed trait CatchClause
+    extends StObject
+       with SyntaxKind
+  /* 292 */ val CatchClause: typingsJapgolly.typescript.mod.SyntaxKind.CatchClause & Double = js.native
   
   @js.native
   sealed trait CatchKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 83 */ val CatchKeyword: typingsJapgolly.typescript.mod.SyntaxKind.CatchKeyword & Double = js.native
   
   @js.native
-  sealed trait ClassDeclaration extends SyntaxKind
+  sealed trait ClassDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 257 */ val ClassDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ClassDeclaration & Double = js.native
   
   @js.native
-  sealed trait ClassExpression extends SyntaxKind
+  sealed trait ClassExpression
+    extends StObject
+       with SyntaxKind
+  /* 226 */ val ClassExpression: typingsJapgolly.typescript.mod.SyntaxKind.ClassExpression & Double = js.native
   
   @js.native
   sealed trait ClassKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 84 */ val ClassKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ClassKeyword & Double = js.native
+  
+  @js.native
+  sealed trait ClassStaticBlockDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 170 */ val ClassStaticBlockDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ClassStaticBlockDeclaration & Double = js.native
   
   @js.native
   sealed trait CloseBraceToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 19 */ val CloseBraceToken: typingsJapgolly.typescript.mod.SyntaxKind.CloseBraceToken & Double = js.native
   
   @js.native
   sealed trait CloseBracketToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 23 */ val CloseBracketToken: typingsJapgolly.typescript.mod.SyntaxKind.CloseBracketToken & Double = js.native
   
   @js.native
-  sealed trait CloseParenToken extends SyntaxKind
+  sealed trait CloseParenToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 21 */ val CloseParenToken: typingsJapgolly.typescript.mod.SyntaxKind.CloseParenToken & Double = js.native
   
   @js.native
-  sealed trait ColonToken extends SyntaxKind
+  sealed trait ColonToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 58 */ val ColonToken: typingsJapgolly.typescript.mod.SyntaxKind.ColonToken & Double = js.native
   
   @js.native
-  sealed trait CommaListExpression extends SyntaxKind
+  sealed trait CommaListExpression
+    extends StObject
+       with SyntaxKind
+  /* 351 */ val CommaListExpression: typingsJapgolly.typescript.mod.SyntaxKind.CommaListExpression & Double = js.native
   
   @js.native
   sealed trait CommaToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
        with _BinaryOperator
+  /* 27 */ val CommaToken: typingsJapgolly.typescript.mod.SyntaxKind.CommaToken & Double = js.native
   
   @js.native
-  sealed trait ComputedPropertyName extends SyntaxKind
+  sealed trait ComputedPropertyName
+    extends StObject
+       with SyntaxKind
+  /* 162 */ val ComputedPropertyName: typingsJapgolly.typescript.mod.SyntaxKind.ComputedPropertyName & Double = js.native
   
   @js.native
-  sealed trait ConditionalExpression extends SyntaxKind
+  sealed trait ConditionalExpression
+    extends StObject
+       with SyntaxKind
+  /* 222 */ val ConditionalExpression: typingsJapgolly.typescript.mod.SyntaxKind.ConditionalExpression & Double = js.native
   
   @js.native
-  sealed trait ConditionalType extends SyntaxKind
+  sealed trait ConditionalType
+    extends StObject
+       with SyntaxKind
+  /* 189 */ val ConditionalType: typingsJapgolly.typescript.mod.SyntaxKind.ConditionalType & Double = js.native
   
   @js.native
   sealed trait ConflictMarkerTrivia
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JsxTokenSyntaxKind
+       with TriviaSyntaxKind
+  /* 7 */ val ConflictMarkerTrivia: typingsJapgolly.typescript.mod.SyntaxKind.ConflictMarkerTrivia & Double = js.native
   
   @js.native
   sealed trait ConstKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 85 */ val ConstKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ConstKeyword & Double = js.native
   
   @js.native
-  sealed trait ConstructSignature extends SyntaxKind
+  sealed trait ConstructSignature
+    extends StObject
+       with SyntaxKind
+  /* 175 */ val ConstructSignature: typingsJapgolly.typescript.mod.SyntaxKind.ConstructSignature & Double = js.native
   
   @js.native
-  sealed trait Constructor extends SyntaxKind
+  sealed trait Constructor
+    extends StObject
+       with SyntaxKind
+  /* 171 */ val Constructor: typingsJapgolly.typescript.mod.SyntaxKind.Constructor & Double = js.native
   
   @js.native
   sealed trait ConstructorKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 134 */ val ConstructorKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ConstructorKeyword & Double = js.native
   
   @js.native
-  sealed trait ConstructorType extends SyntaxKind
+  sealed trait ConstructorType
+    extends StObject
+       with SyntaxKind
+  /* 180 */ val ConstructorType: typingsJapgolly.typescript.mod.SyntaxKind.ConstructorType & Double = js.native
   
   @js.native
   sealed trait ContinueKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 86 */ val ContinueKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ContinueKeyword & Double = js.native
   
   @js.native
-  sealed trait ContinueStatement extends SyntaxKind
+  sealed trait ContinueStatement
+    extends StObject
+       with SyntaxKind
+  /* 245 */ val ContinueStatement: typingsJapgolly.typescript.mod.SyntaxKind.ContinueStatement & Double = js.native
   
   @js.native
-  sealed trait Count extends SyntaxKind
+  sealed trait Count
+    extends StObject
+       with SyntaxKind
+  /* 355 */ val Count: typingsJapgolly.typescript.mod.SyntaxKind.Count & Double = js.native
   
   @js.native
   sealed trait DebuggerKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 87 */ val DebuggerKeyword: typingsJapgolly.typescript.mod.SyntaxKind.DebuggerKeyword & Double = js.native
   
   @js.native
-  sealed trait DebuggerStatement extends SyntaxKind
+  sealed trait DebuggerStatement
+    extends StObject
+       with SyntaxKind
+  /* 253 */ val DebuggerStatement: typingsJapgolly.typescript.mod.SyntaxKind.DebuggerStatement & Double = js.native
   
   @js.native
   sealed trait DeclareKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 135 */ val DeclareKeyword: typingsJapgolly.typescript.mod.SyntaxKind.DeclareKeyword & Double = js.native
   
   @js.native
-  sealed trait Decorator extends SyntaxKind
+  sealed trait Decorator
+    extends StObject
+       with SyntaxKind
+  /* 165 */ val Decorator: typingsJapgolly.typescript.mod.SyntaxKind.Decorator & Double = js.native
   
   @js.native
-  sealed trait DefaultClause extends SyntaxKind
+  sealed trait DefaultClause
+    extends StObject
+       with SyntaxKind
+  /* 290 */ val DefaultClause: typingsJapgolly.typescript.mod.SyntaxKind.DefaultClause & Double = js.native
   
   @js.native
   sealed trait DefaultKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 88 */ val DefaultKeyword: typingsJapgolly.typescript.mod.SyntaxKind.DefaultKeyword & Double = js.native
   
   @js.native
-  sealed trait DeleteExpression extends SyntaxKind
+  sealed trait DeleteExpression
+    extends StObject
+       with SyntaxKind
+  /* 215 */ val DeleteExpression: typingsJapgolly.typescript.mod.SyntaxKind.DeleteExpression & Double = js.native
   
   @js.native
   sealed trait DeleteKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 89 */ val DeleteKeyword: typingsJapgolly.typescript.mod.SyntaxKind.DeleteKeyword & Double = js.native
   
   @js.native
   sealed trait DoKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 90 */ val DoKeyword: typingsJapgolly.typescript.mod.SyntaxKind.DoKeyword & Double = js.native
   
   @js.native
-  sealed trait DoStatement extends SyntaxKind
+  sealed trait DoStatement
+    extends StObject
+       with SyntaxKind
+  /* 240 */ val DoStatement: typingsJapgolly.typescript.mod.SyntaxKind.DoStatement & Double = js.native
   
   @js.native
-  sealed trait DotDotDotToken extends SyntaxKind
+  sealed trait DotDotDotToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 25 */ val DotDotDotToken: typingsJapgolly.typescript.mod.SyntaxKind.DotDotDotToken & Double = js.native
   
   @js.native
   sealed trait DotToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 24 */ val DotToken: typingsJapgolly.typescript.mod.SyntaxKind.DotToken & Double = js.native
   
   @js.native
-  sealed trait ElementAccessExpression extends SyntaxKind
+  sealed trait ElementAccessExpression
+    extends StObject
+       with SyntaxKind
+  /* 207 */ val ElementAccessExpression: typingsJapgolly.typescript.mod.SyntaxKind.ElementAccessExpression & Double = js.native
   
   @js.native
   sealed trait ElseKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 91 */ val ElseKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ElseKeyword & Double = js.native
   
   @js.native
-  sealed trait EmptyStatement extends SyntaxKind
+  sealed trait EmptyStatement
+    extends StObject
+       with SyntaxKind
+  /* 236 */ val EmptyStatement: typingsJapgolly.typescript.mod.SyntaxKind.EmptyStatement & Double = js.native
   
   @js.native
-  sealed trait EndOfDeclarationMarker extends SyntaxKind
+  sealed trait EndOfDeclarationMarker
+    extends StObject
+       with SyntaxKind
+  /* 353 */ val EndOfDeclarationMarker: typingsJapgolly.typescript.mod.SyntaxKind.EndOfDeclarationMarker & Double = js.native
   
   @js.native
   sealed trait EndOfFileToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
        with JsxTokenSyntaxKind
+       with TokenSyntaxKind
+  /* 1 */ val EndOfFileToken: typingsJapgolly.typescript.mod.SyntaxKind.EndOfFileToken & Double = js.native
   
   @js.native
-  sealed trait EnumDeclaration extends SyntaxKind
+  sealed trait EnumDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 260 */ val EnumDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.EnumDeclaration & Double = js.native
   
   @js.native
   sealed trait EnumKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 92 */ val EnumKeyword: typingsJapgolly.typescript.mod.SyntaxKind.EnumKeyword & Double = js.native
   
   @js.native
-  sealed trait EnumMember extends SyntaxKind
+  sealed trait EnumMember
+    extends StObject
+       with SyntaxKind
+  /* 299 */ val EnumMember: typingsJapgolly.typescript.mod.SyntaxKind.EnumMember & Double = js.native
   
   @js.native
   sealed trait EqualsEqualsEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with EqualityOperator
+       with PunctuationSyntaxKind
+  /* 36 */ val EqualsEqualsEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.EqualsEqualsEqualsToken & Double = js.native
   
   @js.native
   sealed trait EqualsEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with EqualityOperator
+       with PunctuationSyntaxKind
+  /* 34 */ val EqualsEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.EqualsEqualsToken & Double = js.native
   
   @js.native
-  sealed trait EqualsGreaterThanToken extends SyntaxKind
+  sealed trait EqualsGreaterThanToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 38 */ val EqualsGreaterThanToken: typingsJapgolly.typescript.mod.SyntaxKind.EqualsGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait EqualsToken
-    extends AssignmentOperator
+    extends StObject
        with SyntaxKind
+       with AssignmentOperator
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 63 */ val EqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.EqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationEqualsEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with EqualityOperator
+       with PunctuationSyntaxKind
+  /* 37 */ val ExclamationEqualsEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.ExclamationEqualsEqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with EqualityOperator
+       with PunctuationSyntaxKind
+  /* 35 */ val ExclamationEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.ExclamationEqualsToken & Double = js.native
   
   @js.native
   sealed trait ExclamationToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 53 */ val ExclamationToken: typingsJapgolly.typescript.mod.SyntaxKind.ExclamationToken & Double = js.native
   
   @js.native
-  sealed trait ExportAssignment extends SyntaxKind
+  sealed trait ExportAssignment
+    extends StObject
+       with SyntaxKind
+  /* 271 */ val ExportAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ExportAssignment & Double = js.native
   
   @js.native
-  sealed trait ExportDeclaration extends SyntaxKind
+  sealed trait ExportDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 272 */ val ExportDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ExportDeclaration & Double = js.native
   
   @js.native
   sealed trait ExportKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 93 */ val ExportKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ExportKeyword & Double = js.native
   
   @js.native
-  sealed trait ExportSpecifier extends SyntaxKind
+  sealed trait ExportSpecifier
+    extends StObject
+       with SyntaxKind
+  /* 275 */ val ExportSpecifier: typingsJapgolly.typescript.mod.SyntaxKind.ExportSpecifier & Double = js.native
   
   @js.native
-  sealed trait ExpressionStatement extends SyntaxKind
+  sealed trait ExpressionStatement
+    extends StObject
+       with SyntaxKind
+  /* 238 */ val ExpressionStatement: typingsJapgolly.typescript.mod.SyntaxKind.ExpressionStatement & Double = js.native
   
   @js.native
-  sealed trait ExpressionWithTypeArguments extends SyntaxKind
+  sealed trait ExpressionWithTypeArguments
+    extends StObject
+       with SyntaxKind
+  /* 228 */ val ExpressionWithTypeArguments: typingsJapgolly.typescript.mod.SyntaxKind.ExpressionWithTypeArguments & Double = js.native
   
   @js.native
   sealed trait ExtendsKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 94 */ val ExtendsKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ExtendsKeyword & Double = js.native
   
   @js.native
-  sealed trait ExternalModuleReference extends SyntaxKind
+  sealed trait ExternalModuleReference
+    extends StObject
+       with SyntaxKind
+  /* 277 */ val ExternalModuleReference: typingsJapgolly.typescript.mod.SyntaxKind.ExternalModuleReference & Double = js.native
   
   @js.native
   sealed trait FalseKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 95 */ val FalseKeyword: typingsJapgolly.typescript.mod.SyntaxKind.FalseKeyword & Double = js.native
   
   @js.native
   sealed trait FinallyKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 96 */ val FinallyKeyword: typingsJapgolly.typescript.mod.SyntaxKind.FinallyKeyword & Double = js.native
   
   @js.native
-  sealed trait FirstAssignment extends SyntaxKind
+  sealed trait FirstAssignment
+    extends StObject
+       with SyntaxKind
+  /* 63 */ val FirstAssignment: typingsJapgolly.typescript.mod.SyntaxKind.FirstAssignment & Double = js.native
   
   @js.native
-  sealed trait FirstBinaryOperator extends SyntaxKind
+  sealed trait FirstBinaryOperator
+    extends StObject
+       with SyntaxKind
+  /* 29 */ val FirstBinaryOperator: typingsJapgolly.typescript.mod.SyntaxKind.FirstBinaryOperator & Double = js.native
   
   @js.native
-  sealed trait FirstCompoundAssignment extends SyntaxKind
+  sealed trait FirstCompoundAssignment
+    extends StObject
+       with SyntaxKind
+  /* 64 */ val FirstCompoundAssignment: typingsJapgolly.typescript.mod.SyntaxKind.FirstCompoundAssignment & Double = js.native
   
   @js.native
-  sealed trait FirstFutureReservedWord extends SyntaxKind
+  sealed trait FirstFutureReservedWord
+    extends StObject
+       with SyntaxKind
+  /* 117 */ val FirstFutureReservedWord: typingsJapgolly.typescript.mod.SyntaxKind.FirstFutureReservedWord & Double = js.native
   
   @js.native
-  sealed trait FirstJSDocNode extends SyntaxKind
+  sealed trait FirstJSDocNode
+    extends StObject
+       with SyntaxKind
+  /* 309 */ val FirstJSDocNode: typingsJapgolly.typescript.mod.SyntaxKind.FirstJSDocNode & Double = js.native
   
   @js.native
-  sealed trait FirstJSDocTagNode extends SyntaxKind
+  sealed trait FirstJSDocTagNode
+    extends StObject
+       with SyntaxKind
+  /* 327 */ val FirstJSDocTagNode: typingsJapgolly.typescript.mod.SyntaxKind.FirstJSDocTagNode & Double = js.native
   
   @js.native
-  sealed trait FirstKeyword extends SyntaxKind
+  sealed trait FirstKeyword
+    extends StObject
+       with SyntaxKind
+  /* 81 */ val FirstKeyword: typingsJapgolly.typescript.mod.SyntaxKind.FirstKeyword & Double = js.native
   
   @js.native
-  sealed trait FirstLiteralToken extends SyntaxKind
+  sealed trait FirstLiteralToken
+    extends StObject
+       with SyntaxKind
+  /* 8 */ val FirstLiteralToken: typingsJapgolly.typescript.mod.SyntaxKind.FirstLiteralToken & Double = js.native
   
   @js.native
-  sealed trait FirstNode extends SyntaxKind
+  sealed trait FirstNode
+    extends StObject
+       with SyntaxKind
+  /* 161 */ val FirstNode: typingsJapgolly.typescript.mod.SyntaxKind.FirstNode & Double = js.native
   
   @js.native
-  sealed trait FirstPunctuation extends SyntaxKind
+  sealed trait FirstPunctuation
+    extends StObject
+       with SyntaxKind
+  /* 18 */ val FirstPunctuation: typingsJapgolly.typescript.mod.SyntaxKind.FirstPunctuation & Double = js.native
   
   @js.native
-  sealed trait FirstReservedWord extends SyntaxKind
+  sealed trait FirstReservedWord
+    extends StObject
+       with SyntaxKind
+  /* 81 */ val FirstReservedWord: typingsJapgolly.typescript.mod.SyntaxKind.FirstReservedWord & Double = js.native
   
   @js.native
-  sealed trait FirstStatement extends SyntaxKind
+  sealed trait FirstStatement
+    extends StObject
+       with SyntaxKind
+  /* 237 */ val FirstStatement: typingsJapgolly.typescript.mod.SyntaxKind.FirstStatement & Double = js.native
   
   @js.native
-  sealed trait FirstTemplateToken extends SyntaxKind
+  sealed trait FirstTemplateToken
+    extends StObject
+       with SyntaxKind
+  /* 14 */ val FirstTemplateToken: typingsJapgolly.typescript.mod.SyntaxKind.FirstTemplateToken & Double = js.native
   
   @js.native
-  sealed trait FirstToken extends SyntaxKind
+  sealed trait FirstToken
+    extends StObject
+       with SyntaxKind
+  /* 0 */ val FirstToken: typingsJapgolly.typescript.mod.SyntaxKind.FirstToken & Double = js.native
   
   @js.native
-  sealed trait FirstTriviaToken extends SyntaxKind
+  sealed trait FirstTriviaToken
+    extends StObject
+       with SyntaxKind
+  /* 2 */ val FirstTriviaToken: typingsJapgolly.typescript.mod.SyntaxKind.FirstTriviaToken & Double = js.native
   
   @js.native
-  sealed trait FirstTypeNode extends SyntaxKind
+  sealed trait FirstTypeNode
+    extends StObject
+       with SyntaxKind
+  /* 177 */ val FirstTypeNode: typingsJapgolly.typescript.mod.SyntaxKind.FirstTypeNode & Double = js.native
   
   @js.native
-  sealed trait ForInStatement extends SyntaxKind
+  sealed trait ForInStatement
+    extends StObject
+       with SyntaxKind
+  /* 243 */ val ForInStatement: typingsJapgolly.typescript.mod.SyntaxKind.ForInStatement & Double = js.native
   
   @js.native
   sealed trait ForKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 97 */ val ForKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ForKeyword & Double = js.native
   
   @js.native
-  sealed trait ForOfStatement extends SyntaxKind
+  sealed trait ForOfStatement
+    extends StObject
+       with SyntaxKind
+  /* 244 */ val ForOfStatement: typingsJapgolly.typescript.mod.SyntaxKind.ForOfStatement & Double = js.native
   
   @js.native
-  sealed trait ForStatement extends SyntaxKind
+  sealed trait ForStatement
+    extends StObject
+       with SyntaxKind
+  /* 242 */ val ForStatement: typingsJapgolly.typescript.mod.SyntaxKind.ForStatement & Double = js.native
   
   @js.native
   sealed trait FromKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 156 */ val FromKeyword: typingsJapgolly.typescript.mod.SyntaxKind.FromKeyword & Double = js.native
   
   @js.native
-  sealed trait FunctionDeclaration extends SyntaxKind
+  sealed trait FunctionDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 256 */ val FunctionDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.FunctionDeclaration & Double = js.native
   
   @js.native
-  sealed trait FunctionExpression extends SyntaxKind
+  sealed trait FunctionExpression
+    extends StObject
+       with SyntaxKind
+  /* 213 */ val FunctionExpression: typingsJapgolly.typescript.mod.SyntaxKind.FunctionExpression & Double = js.native
   
   @js.native
   sealed trait FunctionKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 98 */ val FunctionKeyword: typingsJapgolly.typescript.mod.SyntaxKind.FunctionKeyword & Double = js.native
   
   @js.native
-  sealed trait FunctionType extends SyntaxKind
+  sealed trait FunctionType
+    extends StObject
+       with SyntaxKind
+  /* 179 */ val FunctionType: typingsJapgolly.typescript.mod.SyntaxKind.FunctionType & Double = js.native
   
   @js.native
-  sealed trait GetAccessor extends SyntaxKind
+  sealed trait GetAccessor
+    extends StObject
+       with SyntaxKind
+  /* 172 */ val GetAccessor: typingsJapgolly.typescript.mod.SyntaxKind.GetAccessor & Double = js.native
   
   @js.native
   sealed trait GetKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 136 */ val GetKeyword: typingsJapgolly.typescript.mod.SyntaxKind.GetKeyword & Double = js.native
   
   @js.native
   sealed trait GlobalKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 157 */ val GlobalKeyword: typingsJapgolly.typescript.mod.SyntaxKind.GlobalKeyword & Double = js.native
   
   @js.native
   sealed trait GreaterThanEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
        with RelationalOperator
+  /* 33 */ val GreaterThanEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 71 */ val GreaterThanGreaterThanEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 72 */ val GreaterThanGreaterThanGreaterThanEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanGreaterThanToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
        with ShiftOperator
+  /* 49 */ val GreaterThanGreaterThanGreaterThanToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanGreaterThanToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
        with ShiftOperator
+  /* 48 */ val GreaterThanGreaterThanToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanGreaterThanToken & Double = js.native
   
   @js.native
   sealed trait GreaterThanToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
        with RelationalOperator
+  /* 31 */ val GreaterThanToken: typingsJapgolly.typescript.mod.SyntaxKind.GreaterThanToken & Double = js.native
+  
+  /** Only the JSDoc scanner produces HashToken. The normal scanner produces PrivateIdentifier. */
+  @js.native
+  sealed trait HashToken
+    extends StObject
+       with SyntaxKind
+       with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 62 */ val HashToken: typingsJapgolly.typescript.mod.SyntaxKind.HashToken & Double = js.native
   
   @js.native
-  sealed trait HeritageClause extends SyntaxKind
+  sealed trait HeritageClause
+    extends StObject
+       with SyntaxKind
+  /* 291 */ val HeritageClause: typingsJapgolly.typescript.mod.SyntaxKind.HeritageClause & Double = js.native
   
   @js.native
   sealed trait Identifier
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with TokenSyntaxKind
+  /* 79 */ val Identifier: typingsJapgolly.typescript.mod.SyntaxKind.Identifier & Double = js.native
   
   @js.native
   sealed trait IfKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 99 */ val IfKeyword: typingsJapgolly.typescript.mod.SyntaxKind.IfKeyword & Double = js.native
   
   @js.native
-  sealed trait IfStatement extends SyntaxKind
+  sealed trait IfStatement
+    extends StObject
+       with SyntaxKind
+  /* 239 */ val IfStatement: typingsJapgolly.typescript.mod.SyntaxKind.IfStatement & Double = js.native
   
   @js.native
   sealed trait ImplementsKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 117 */ val ImplementsKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ImplementsKeyword & Double = js.native
   
   @js.native
-  sealed trait ImportClause extends SyntaxKind
+  sealed trait ImportClause
+    extends StObject
+       with SyntaxKind
+  /* 267 */ val ImportClause: typingsJapgolly.typescript.mod.SyntaxKind.ImportClause & Double = js.native
   
   @js.native
-  sealed trait ImportDeclaration extends SyntaxKind
+  sealed trait ImportDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 266 */ val ImportDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ImportDeclaration & Double = js.native
   
   @js.native
-  sealed trait ImportEqualsDeclaration extends SyntaxKind
+  sealed trait ImportEqualsDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 265 */ val ImportEqualsDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ImportEqualsDeclaration & Double = js.native
   
   @js.native
   sealed trait ImportKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 100 */ val ImportKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ImportKeyword & Double = js.native
   
   @js.native
-  sealed trait ImportSpecifier extends SyntaxKind
+  sealed trait ImportSpecifier
+    extends StObject
+       with SyntaxKind
+  /* 270 */ val ImportSpecifier: typingsJapgolly.typescript.mod.SyntaxKind.ImportSpecifier & Double = js.native
   
   @js.native
-  sealed trait ImportType extends SyntaxKind
+  sealed trait ImportType
+    extends StObject
+       with SyntaxKind
+  /* 200 */ val ImportType: typingsJapgolly.typescript.mod.SyntaxKind.ImportType & Double = js.native
+  
+  @js.native
+  sealed trait ImportTypeAssertionContainer
+    extends StObject
+       with SyntaxKind
+  /* 295 */ val ImportTypeAssertionContainer: typingsJapgolly.typescript.mod.SyntaxKind.ImportTypeAssertionContainer & Double = js.native
   
   @js.native
   sealed trait InKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
        with RelationalOperator
+  /* 101 */ val InKeyword: typingsJapgolly.typescript.mod.SyntaxKind.InKeyword & Double = js.native
   
   @js.native
-  sealed trait IndexSignature extends SyntaxKind
+  sealed trait IndexSignature
+    extends StObject
+       with SyntaxKind
+  /* 176 */ val IndexSignature: typingsJapgolly.typescript.mod.SyntaxKind.IndexSignature & Double = js.native
   
   @js.native
-  sealed trait IndexedAccessType extends SyntaxKind
+  sealed trait IndexedAccessType
+    extends StObject
+       with SyntaxKind
+  /* 194 */ val IndexedAccessType: typingsJapgolly.typescript.mod.SyntaxKind.IndexedAccessType & Double = js.native
   
   @js.native
   sealed trait InferKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 137 */ val InferKeyword: typingsJapgolly.typescript.mod.SyntaxKind.InferKeyword & Double = js.native
   
   @js.native
-  sealed trait InferType extends SyntaxKind
+  sealed trait InferType
+    extends StObject
+       with SyntaxKind
+  /* 190 */ val InferType: typingsJapgolly.typescript.mod.SyntaxKind.InferType & Double = js.native
   
   @js.native
-  sealed trait InputFiles extends SyntaxKind
+  sealed trait InputFiles
+    extends StObject
+       with SyntaxKind
+  /* 308 */ val InputFiles: typingsJapgolly.typescript.mod.SyntaxKind.InputFiles & Double = js.native
   
   @js.native
   sealed trait InstanceOfKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
        with RelationalOperator
+  /* 102 */ val InstanceOfKeyword: typingsJapgolly.typescript.mod.SyntaxKind.InstanceOfKeyword & Double = js.native
   
   @js.native
-  sealed trait InterfaceDeclaration extends SyntaxKind
+  sealed trait InterfaceDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 258 */ val InterfaceDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.InterfaceDeclaration & Double = js.native
   
   @js.native
   sealed trait InterfaceKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 118 */ val InterfaceKeyword: typingsJapgolly.typescript.mod.SyntaxKind.InterfaceKeyword & Double = js.native
   
   @js.native
-  sealed trait IntersectionType extends SyntaxKind
+  sealed trait IntersectionType
+    extends StObject
+       with SyntaxKind
+  /* 188 */ val IntersectionType: typingsJapgolly.typescript.mod.SyntaxKind.IntersectionType & Double = js.native
+  
+  @js.native
+  sealed trait IntrinsicKeyword
+    extends StObject
+       with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 138 */ val IntrinsicKeyword: typingsJapgolly.typescript.mod.SyntaxKind.IntrinsicKeyword & Double = js.native
   
   @js.native
   sealed trait IsKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 139 */ val IsKeyword: typingsJapgolly.typescript.mod.SyntaxKind.IsKeyword & Double = js.native
   
   @js.native
-  sealed trait JSDocAllType extends SyntaxKind
+  sealed trait JSDoc
+    extends StObject
+       with SyntaxKind
+  /* 320 */ val JSDoc: typingsJapgolly.typescript.mod.SyntaxKind.JSDoc & Double = js.native
   
   @js.native
-  sealed trait JSDocAugmentsTag extends SyntaxKind
+  sealed trait JSDocAllType
+    extends StObject
+       with SyntaxKind
+  /* 312 */ val JSDocAllType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocAllType & Double = js.native
   
   @js.native
-  sealed trait JSDocAuthorTag extends SyntaxKind
+  sealed trait JSDocAugmentsTag
+    extends StObject
+       with SyntaxKind
+  /* 328 */ val JSDocAugmentsTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocAugmentsTag & Double = js.native
   
   @js.native
-  sealed trait JSDocCallbackTag extends SyntaxKind
+  sealed trait JSDocAuthorTag
+    extends StObject
+       with SyntaxKind
+  /* 330 */ val JSDocAuthorTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocAuthorTag & Double = js.native
   
   @js.native
-  sealed trait JSDocClassTag extends SyntaxKind
+  sealed trait JSDocCallbackTag
+    extends StObject
+       with SyntaxKind
+  /* 338 */ val JSDocCallbackTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocCallbackTag & Double = js.native
   
   @js.native
-  sealed trait JSDocComment extends SyntaxKind
+  sealed trait JSDocClassTag
+    extends StObject
+       with SyntaxKind
+  /* 332 */ val JSDocClassTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocClassTag & Double = js.native
+  
+  /** @deprecated Use SyntaxKind.JSDoc */
+  @js.native
+  sealed trait JSDocComment
+    extends StObject
+       with SyntaxKind
+  /* 320 */ val JSDocComment: typingsJapgolly.typescript.mod.SyntaxKind.JSDocComment & Double = js.native
   
   @js.native
-  sealed trait JSDocEnumTag extends SyntaxKind
+  sealed trait JSDocDeprecatedTag
+    extends StObject
+       with SyntaxKind
+  /* 331 */ val JSDocDeprecatedTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocDeprecatedTag & Double = js.native
   
   @js.native
-  sealed trait JSDocFunctionType extends SyntaxKind
+  sealed trait JSDocEnumTag
+    extends StObject
+       with SyntaxKind
+  /* 339 */ val JSDocEnumTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocEnumTag & Double = js.native
   
   @js.native
-  sealed trait JSDocNamepathType extends SyntaxKind
+  sealed trait JSDocFunctionType
+    extends StObject
+       with SyntaxKind
+  /* 317 */ val JSDocFunctionType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocFunctionType & Double = js.native
   
   @js.native
-  sealed trait JSDocNonNullableType extends SyntaxKind
+  sealed trait JSDocImplementsTag
+    extends StObject
+       with SyntaxKind
+  /* 329 */ val JSDocImplementsTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocImplementsTag & Double = js.native
   
   @js.native
-  sealed trait JSDocNullableType extends SyntaxKind
+  sealed trait JSDocLink
+    extends StObject
+       with SyntaxKind
+  /* 324 */ val JSDocLink: typingsJapgolly.typescript.mod.SyntaxKind.JSDocLink & Double = js.native
   
   @js.native
-  sealed trait JSDocOptionalType extends SyntaxKind
+  sealed trait JSDocLinkCode
+    extends StObject
+       with SyntaxKind
+  /* 325 */ val JSDocLinkCode: typingsJapgolly.typescript.mod.SyntaxKind.JSDocLinkCode & Double = js.native
   
   @js.native
-  sealed trait JSDocParameterTag extends SyntaxKind
+  sealed trait JSDocLinkPlain
+    extends StObject
+       with SyntaxKind
+  /* 326 */ val JSDocLinkPlain: typingsJapgolly.typescript.mod.SyntaxKind.JSDocLinkPlain & Double = js.native
   
   @js.native
-  sealed trait JSDocPrivateTag extends SyntaxKind
+  sealed trait JSDocMemberName
+    extends StObject
+       with SyntaxKind
+  /* 311 */ val JSDocMemberName: typingsJapgolly.typescript.mod.SyntaxKind.JSDocMemberName & Double = js.native
   
   @js.native
-  sealed trait JSDocPropertyTag extends SyntaxKind
+  sealed trait JSDocNameReference
+    extends StObject
+       with SyntaxKind
+  /* 310 */ val JSDocNameReference: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNameReference & Double = js.native
   
   @js.native
-  sealed trait JSDocProtectedTag extends SyntaxKind
+  sealed trait JSDocNamepathType
+    extends StObject
+       with SyntaxKind
+  /* 319 */ val JSDocNamepathType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNamepathType & Double = js.native
   
   @js.native
-  sealed trait JSDocPublicTag extends SyntaxKind
+  sealed trait JSDocNonNullableType
+    extends StObject
+       with SyntaxKind
+  /* 315 */ val JSDocNonNullableType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNonNullableType & Double = js.native
   
   @js.native
-  sealed trait JSDocReadonlyTag extends SyntaxKind
+  sealed trait JSDocNullableType
+    extends StObject
+       with SyntaxKind
+  /* 314 */ val JSDocNullableType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNullableType & Double = js.native
   
   @js.native
-  sealed trait JSDocReturnTag extends SyntaxKind
+  sealed trait JSDocOptionalType
+    extends StObject
+       with SyntaxKind
+  /* 316 */ val JSDocOptionalType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocOptionalType & Double = js.native
   
   @js.native
-  sealed trait JSDocSignature extends SyntaxKind
+  sealed trait JSDocOverrideTag
+    extends StObject
+       with SyntaxKind
+  /* 337 */ val JSDocOverrideTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocOverrideTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTag extends SyntaxKind
+  sealed trait JSDocParameterTag
+    extends StObject
+       with SyntaxKind
+  /* 340 */ val JSDocParameterTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocParameterTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTemplateTag extends SyntaxKind
+  sealed trait JSDocPrivateTag
+    extends StObject
+       with SyntaxKind
+  /* 334 */ val JSDocPrivateTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocPrivateTag & Double = js.native
   
   @js.native
-  sealed trait JSDocThisTag extends SyntaxKind
+  sealed trait JSDocPropertyTag
+    extends StObject
+       with SyntaxKind
+  /* 347 */ val JSDocPropertyTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocPropertyTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTypeExpression extends SyntaxKind
+  sealed trait JSDocProtectedTag
+    extends StObject
+       with SyntaxKind
+  /* 335 */ val JSDocProtectedTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocProtectedTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTypeLiteral extends SyntaxKind
+  sealed trait JSDocPublicTag
+    extends StObject
+       with SyntaxKind
+  /* 333 */ val JSDocPublicTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocPublicTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTypeTag extends SyntaxKind
+  sealed trait JSDocReadonlyTag
+    extends StObject
+       with SyntaxKind
+  /* 336 */ val JSDocReadonlyTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocReadonlyTag & Double = js.native
   
   @js.native
-  sealed trait JSDocTypedefTag extends SyntaxKind
+  sealed trait JSDocReturnTag
+    extends StObject
+       with SyntaxKind
+  /* 341 */ val JSDocReturnTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocReturnTag & Double = js.native
   
   @js.native
-  sealed trait JSDocUnknownType extends SyntaxKind
+  sealed trait JSDocSeeTag
+    extends StObject
+       with SyntaxKind
+  /* 346 */ val JSDocSeeTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocSeeTag & Double = js.native
   
   @js.native
-  sealed trait JSDocVariadicType extends SyntaxKind
+  sealed trait JSDocSignature
+    extends StObject
+       with SyntaxKind
+  /* 323 */ val JSDocSignature: typingsJapgolly.typescript.mod.SyntaxKind.JSDocSignature & Double = js.native
   
   @js.native
-  sealed trait JsxAttribute extends SyntaxKind
+  sealed trait JSDocTag
+    extends StObject
+       with SyntaxKind
+  /* 327 */ val JSDocTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTag & Double = js.native
   
   @js.native
-  sealed trait JsxAttributes extends SyntaxKind
+  sealed trait JSDocTemplateTag
+    extends StObject
+       with SyntaxKind
+  /* 344 */ val JSDocTemplateTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTemplateTag & Double = js.native
   
   @js.native
-  sealed trait JsxClosingElement extends SyntaxKind
+  sealed trait JSDocText
+    extends StObject
+       with SyntaxKind
+  /* 321 */ val JSDocText: typingsJapgolly.typescript.mod.SyntaxKind.JSDocText & Double = js.native
   
   @js.native
-  sealed trait JsxClosingFragment extends SyntaxKind
+  sealed trait JSDocThisTag
+    extends StObject
+       with SyntaxKind
+  /* 342 */ val JSDocThisTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocThisTag & Double = js.native
   
   @js.native
-  sealed trait JsxElement extends SyntaxKind
+  sealed trait JSDocTypeExpression
+    extends StObject
+       with SyntaxKind
+  /* 309 */ val JSDocTypeExpression: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeExpression & Double = js.native
   
   @js.native
-  sealed trait JsxExpression extends SyntaxKind
+  sealed trait JSDocTypeLiteral
+    extends StObject
+       with SyntaxKind
+  /* 322 */ val JSDocTypeLiteral: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeLiteral & Double = js.native
   
   @js.native
-  sealed trait JsxFragment extends SyntaxKind
+  sealed trait JSDocTypeTag
+    extends StObject
+       with SyntaxKind
+  /* 343 */ val JSDocTypeTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeTag & Double = js.native
   
   @js.native
-  sealed trait JsxOpeningElement extends SyntaxKind
+  sealed trait JSDocTypedefTag
+    extends StObject
+       with SyntaxKind
+  /* 345 */ val JSDocTypedefTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypedefTag & Double = js.native
   
   @js.native
-  sealed trait JsxOpeningFragment extends SyntaxKind
+  sealed trait JSDocUnknownType
+    extends StObject
+       with SyntaxKind
+  /* 313 */ val JSDocUnknownType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocUnknownType & Double = js.native
   
   @js.native
-  sealed trait JsxSelfClosingElement extends SyntaxKind
+  sealed trait JSDocVariadicType
+    extends StObject
+       with SyntaxKind
+  /* 318 */ val JSDocVariadicType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocVariadicType & Double = js.native
   
   @js.native
-  sealed trait JsxSpreadAttribute extends SyntaxKind
+  sealed trait JsxAttribute
+    extends StObject
+       with SyntaxKind
+  /* 285 */ val JsxAttribute: typingsJapgolly.typescript.mod.SyntaxKind.JsxAttribute & Double = js.native
+  
+  @js.native
+  sealed trait JsxAttributes
+    extends StObject
+       with SyntaxKind
+  /* 286 */ val JsxAttributes: typingsJapgolly.typescript.mod.SyntaxKind.JsxAttributes & Double = js.native
+  
+  @js.native
+  sealed trait JsxClosingElement
+    extends StObject
+       with SyntaxKind
+  /* 281 */ val JsxClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingElement & Double = js.native
+  
+  @js.native
+  sealed trait JsxClosingFragment
+    extends StObject
+       with SyntaxKind
+  /* 284 */ val JsxClosingFragment: typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingFragment & Double = js.native
+  
+  @js.native
+  sealed trait JsxElement
+    extends StObject
+       with SyntaxKind
+  /* 278 */ val JsxElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxElement & Double = js.native
+  
+  @js.native
+  sealed trait JsxExpression
+    extends StObject
+       with SyntaxKind
+  /* 288 */ val JsxExpression: typingsJapgolly.typescript.mod.SyntaxKind.JsxExpression & Double = js.native
+  
+  @js.native
+  sealed trait JsxFragment
+    extends StObject
+       with SyntaxKind
+  /* 282 */ val JsxFragment: typingsJapgolly.typescript.mod.SyntaxKind.JsxFragment & Double = js.native
+  
+  @js.native
+  sealed trait JsxOpeningElement
+    extends StObject
+       with SyntaxKind
+  /* 280 */ val JsxOpeningElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningElement & Double = js.native
+  
+  @js.native
+  sealed trait JsxOpeningFragment
+    extends StObject
+       with SyntaxKind
+  /* 283 */ val JsxOpeningFragment: typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningFragment & Double = js.native
+  
+  @js.native
+  sealed trait JsxSelfClosingElement
+    extends StObject
+       with SyntaxKind
+  /* 279 */ val JsxSelfClosingElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxSelfClosingElement & Double = js.native
+  
+  @js.native
+  sealed trait JsxSpreadAttribute
+    extends StObject
+       with SyntaxKind
+  /* 287 */ val JsxSpreadAttribute: typingsJapgolly.typescript.mod.SyntaxKind.JsxSpreadAttribute & Double = js.native
   
   @js.native
   sealed trait JsxText
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JsxTokenSyntaxKind
+       with LiteralSyntaxKind
+  /* 11 */ val JsxText: typingsJapgolly.typescript.mod.SyntaxKind.JsxText & Double = js.native
   
   @js.native
   sealed trait JsxTextAllWhiteSpaces
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JsxTokenSyntaxKind
+       with LiteralSyntaxKind
+  /* 12 */ val JsxTextAllWhiteSpaces: typingsJapgolly.typescript.mod.SyntaxKind.JsxTextAllWhiteSpaces & Double = js.native
   
   @js.native
   sealed trait KeyOfKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 140 */ val KeyOfKeyword: typingsJapgolly.typescript.mod.SyntaxKind.KeyOfKeyword & Double = js.native
   
   @js.native
-  sealed trait LabeledStatement extends SyntaxKind
+  sealed trait LabeledStatement
+    extends StObject
+       with SyntaxKind
+  /* 250 */ val LabeledStatement: typingsJapgolly.typescript.mod.SyntaxKind.LabeledStatement & Double = js.native
   
   @js.native
-  sealed trait LastAssignment extends SyntaxKind
+  sealed trait LastAssignment
+    extends StObject
+       with SyntaxKind
+  /* 78 */ val LastAssignment: typingsJapgolly.typescript.mod.SyntaxKind.LastAssignment & Double = js.native
   
   @js.native
-  sealed trait LastBinaryOperator extends SyntaxKind
+  sealed trait LastBinaryOperator
+    extends StObject
+       with SyntaxKind
+  /* 78 */ val LastBinaryOperator: typingsJapgolly.typescript.mod.SyntaxKind.LastBinaryOperator & Double = js.native
   
   @js.native
-  sealed trait LastCompoundAssignment extends SyntaxKind
+  sealed trait LastCompoundAssignment
+    extends StObject
+       with SyntaxKind
+  /* 78 */ val LastCompoundAssignment: typingsJapgolly.typescript.mod.SyntaxKind.LastCompoundAssignment & Double = js.native
   
   @js.native
-  sealed trait LastFutureReservedWord extends SyntaxKind
+  sealed trait LastFutureReservedWord
+    extends StObject
+       with SyntaxKind
+  /* 125 */ val LastFutureReservedWord: typingsJapgolly.typescript.mod.SyntaxKind.LastFutureReservedWord & Double = js.native
   
   @js.native
-  sealed trait LastJSDocNode extends SyntaxKind
+  sealed trait LastJSDocNode
+    extends StObject
+       with SyntaxKind
+  /* 347 */ val LastJSDocNode: typingsJapgolly.typescript.mod.SyntaxKind.LastJSDocNode & Double = js.native
   
   @js.native
-  sealed trait LastJSDocTagNode extends SyntaxKind
+  sealed trait LastJSDocTagNode
+    extends StObject
+       with SyntaxKind
+  /* 347 */ val LastJSDocTagNode: typingsJapgolly.typescript.mod.SyntaxKind.LastJSDocTagNode & Double = js.native
   
   @js.native
-  sealed trait LastKeyword extends SyntaxKind
+  sealed trait LastKeyword
+    extends StObject
+       with SyntaxKind
+  /* 160 */ val LastKeyword: typingsJapgolly.typescript.mod.SyntaxKind.LastKeyword & Double = js.native
   
   @js.native
-  sealed trait LastLiteralToken extends SyntaxKind
+  sealed trait LastLiteralToken
+    extends StObject
+       with SyntaxKind
+  /* 14 */ val LastLiteralToken: typingsJapgolly.typescript.mod.SyntaxKind.LastLiteralToken & Double = js.native
   
   @js.native
-  sealed trait LastPunctuation extends SyntaxKind
+  sealed trait LastPunctuation
+    extends StObject
+       with SyntaxKind
+  /* 78 */ val LastPunctuation: typingsJapgolly.typescript.mod.SyntaxKind.LastPunctuation & Double = js.native
   
   @js.native
-  sealed trait LastReservedWord extends SyntaxKind
+  sealed trait LastReservedWord
+    extends StObject
+       with SyntaxKind
+  /* 116 */ val LastReservedWord: typingsJapgolly.typescript.mod.SyntaxKind.LastReservedWord & Double = js.native
   
   @js.native
-  sealed trait LastStatement extends SyntaxKind
+  sealed trait LastStatement
+    extends StObject
+       with SyntaxKind
+  /* 253 */ val LastStatement: typingsJapgolly.typescript.mod.SyntaxKind.LastStatement & Double = js.native
   
   @js.native
-  sealed trait LastTemplateToken extends SyntaxKind
+  sealed trait LastTemplateToken
+    extends StObject
+       with SyntaxKind
+  /* 17 */ val LastTemplateToken: typingsJapgolly.typescript.mod.SyntaxKind.LastTemplateToken & Double = js.native
   
   @js.native
-  sealed trait LastToken extends SyntaxKind
+  sealed trait LastToken
+    extends StObject
+       with SyntaxKind
+  /* 160 */ val LastToken: typingsJapgolly.typescript.mod.SyntaxKind.LastToken & Double = js.native
   
   @js.native
-  sealed trait LastTriviaToken extends SyntaxKind
+  sealed trait LastTriviaToken
+    extends StObject
+       with SyntaxKind
+  /* 7 */ val LastTriviaToken: typingsJapgolly.typescript.mod.SyntaxKind.LastTriviaToken & Double = js.native
   
   @js.native
-  sealed trait LastTypeNode extends SyntaxKind
+  sealed trait LastTypeNode
+    extends StObject
+       with SyntaxKind
+  /* 200 */ val LastTypeNode: typingsJapgolly.typescript.mod.SyntaxKind.LastTypeNode & Double = js.native
   
   @js.native
   sealed trait LessThanEqualsToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
        with RelationalOperator
+  /* 32 */ val LessThanEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.LessThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait LessThanLessThanEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 70 */ val LessThanLessThanEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.LessThanLessThanEqualsToken & Double = js.native
   
   @js.native
   sealed trait LessThanLessThanToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
        with ShiftOperator
+  /* 47 */ val LessThanLessThanToken: typingsJapgolly.typescript.mod.SyntaxKind.LessThanLessThanToken & Double = js.native
   
   @js.native
   sealed trait LessThanSlashToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JsxTokenSyntaxKind
+       with PunctuationSyntaxKind
+  /* 30 */ val LessThanSlashToken: typingsJapgolly.typescript.mod.SyntaxKind.LessThanSlashToken & Double = js.native
   
   @js.native
   sealed trait LessThanToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
        with JsxTokenSyntaxKind
+       with PunctuationSyntaxKind
        with RelationalOperator
+  /* 29 */ val LessThanToken: typingsJapgolly.typescript.mod.SyntaxKind.LessThanToken & Double = js.native
   
   @js.native
   sealed trait LetKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 119 */ val LetKeyword: typingsJapgolly.typescript.mod.SyntaxKind.LetKeyword & Double = js.native
   
   @js.native
-  sealed trait LiteralType extends SyntaxKind
+  sealed trait LiteralType
+    extends StObject
+       with SyntaxKind
+  /* 196 */ val LiteralType: typingsJapgolly.typescript.mod.SyntaxKind.LiteralType & Double = js.native
   
   @js.native
-  sealed trait MappedType extends SyntaxKind
+  sealed trait MappedType
+    extends StObject
+       with SyntaxKind
+  /* 195 */ val MappedType: typingsJapgolly.typescript.mod.SyntaxKind.MappedType & Double = js.native
   
   @js.native
-  sealed trait MergeDeclarationMarker extends SyntaxKind
+  sealed trait MergeDeclarationMarker
+    extends StObject
+       with SyntaxKind
+  /* 352 */ val MergeDeclarationMarker: typingsJapgolly.typescript.mod.SyntaxKind.MergeDeclarationMarker & Double = js.native
   
   @js.native
-  sealed trait MetaProperty extends SyntaxKind
+  sealed trait MetaProperty
+    extends StObject
+       with SyntaxKind
+  /* 231 */ val MetaProperty: typingsJapgolly.typescript.mod.SyntaxKind.MetaProperty & Double = js.native
   
   @js.native
-  sealed trait MethodDeclaration extends SyntaxKind
+  sealed trait MethodDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 169 */ val MethodDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.MethodDeclaration & Double = js.native
   
   @js.native
-  sealed trait MethodSignature extends SyntaxKind
+  sealed trait MethodSignature
+    extends StObject
+       with SyntaxKind
+  /* 168 */ val MethodSignature: typingsJapgolly.typescript.mod.SyntaxKind.MethodSignature & Double = js.native
   
   @js.native
   sealed trait MinusEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 65 */ val MinusEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.MinusEqualsToken & Double = js.native
   
   @js.native
   sealed trait MinusMinusToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with PostfixUnaryOperator
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 46 */ val MinusMinusToken: typingsJapgolly.typescript.mod.SyntaxKind.MinusMinusToken & Double = js.native
   
   @js.native
   sealed trait MinusToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with AdditiveOperator
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 40 */ val MinusToken: typingsJapgolly.typescript.mod.SyntaxKind.MinusToken & Double = js.native
   
   @js.native
-  sealed trait MissingDeclaration extends SyntaxKind
+  sealed trait MissingDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 276 */ val MissingDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.MissingDeclaration & Double = js.native
   
   @js.native
-  sealed trait ModuleBlock extends SyntaxKind
+  sealed trait ModuleBlock
+    extends StObject
+       with SyntaxKind
+  /* 262 */ val ModuleBlock: typingsJapgolly.typescript.mod.SyntaxKind.ModuleBlock & Double = js.native
   
   @js.native
-  sealed trait ModuleDeclaration extends SyntaxKind
+  sealed trait ModuleDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 261 */ val ModuleDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.ModuleDeclaration & Double = js.native
   
   @js.native
   sealed trait ModuleKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 141 */ val ModuleKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ModuleKeyword & Double = js.native
   
   @js.native
   sealed trait MultiLineCommentTrivia
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with CommentKind
+       with TriviaSyntaxKind
+  /* 3 */ val MultiLineCommentTrivia: typingsJapgolly.typescript.mod.SyntaxKind.MultiLineCommentTrivia & Double = js.native
   
   @js.native
-  sealed trait NamedExports extends SyntaxKind
+  sealed trait NamedExports
+    extends StObject
+       with SyntaxKind
+  /* 273 */ val NamedExports: typingsJapgolly.typescript.mod.SyntaxKind.NamedExports & Double = js.native
   
   @js.native
-  sealed trait NamedImports extends SyntaxKind
+  sealed trait NamedImports
+    extends StObject
+       with SyntaxKind
+  /* 269 */ val NamedImports: typingsJapgolly.typescript.mod.SyntaxKind.NamedImports & Double = js.native
   
   @js.native
-  sealed trait NamespaceExport extends SyntaxKind
+  sealed trait NamedTupleMember
+    extends StObject
+       with SyntaxKind
+  /* 197 */ val NamedTupleMember: typingsJapgolly.typescript.mod.SyntaxKind.NamedTupleMember & Double = js.native
   
   @js.native
-  sealed trait NamespaceExportDeclaration extends SyntaxKind
+  sealed trait NamespaceExport
+    extends StObject
+       with SyntaxKind
+  /* 274 */ val NamespaceExport: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceExport & Double = js.native
   
   @js.native
-  sealed trait NamespaceImport extends SyntaxKind
+  sealed trait NamespaceExportDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 264 */ val NamespaceExportDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceExportDeclaration & Double = js.native
+  
+  @js.native
+  sealed trait NamespaceImport
+    extends StObject
+       with SyntaxKind
+  /* 268 */ val NamespaceImport: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceImport & Double = js.native
   
   @js.native
   sealed trait NamespaceKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 142 */ val NamespaceKeyword: typingsJapgolly.typescript.mod.SyntaxKind.NamespaceKeyword & Double = js.native
   
   @js.native
   sealed trait NeverKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 143 */ val NeverKeyword: typingsJapgolly.typescript.mod.SyntaxKind.NeverKeyword & Double = js.native
   
   @js.native
-  sealed trait NewExpression extends SyntaxKind
+  sealed trait NewExpression
+    extends StObject
+       with SyntaxKind
+  /* 209 */ val NewExpression: typingsJapgolly.typescript.mod.SyntaxKind.NewExpression & Double = js.native
   
   @js.native
   sealed trait NewKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 103 */ val NewKeyword: typingsJapgolly.typescript.mod.SyntaxKind.NewKeyword & Double = js.native
   
   @js.native
   sealed trait NewLineTrivia
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with TriviaSyntaxKind
+  /* 4 */ val NewLineTrivia: typingsJapgolly.typescript.mod.SyntaxKind.NewLineTrivia & Double = js.native
   
   @js.native
-  sealed trait NoSubstitutionTemplateLiteral extends SyntaxKind
+  sealed trait NoSubstitutionTemplateLiteral
+    extends StObject
+       with SyntaxKind
+       with LiteralSyntaxKind
+  /* 14 */ val NoSubstitutionTemplateLiteral: typingsJapgolly.typescript.mod.SyntaxKind.NoSubstitutionTemplateLiteral & Double = js.native
   
   @js.native
-  sealed trait NonNullExpression extends SyntaxKind
+  sealed trait NonNullExpression
+    extends StObject
+       with SyntaxKind
+  /* 230 */ val NonNullExpression: typingsJapgolly.typescript.mod.SyntaxKind.NonNullExpression & Double = js.native
   
   @js.native
-  sealed trait NotEmittedStatement extends SyntaxKind
+  sealed trait NotEmittedStatement
+    extends StObject
+       with SyntaxKind
+  /* 349 */ val NotEmittedStatement: typingsJapgolly.typescript.mod.SyntaxKind.NotEmittedStatement & Double = js.native
   
   @js.native
   sealed trait NullKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 104 */ val NullKeyword: typingsJapgolly.typescript.mod.SyntaxKind.NullKeyword & Double = js.native
   
   @js.native
   sealed trait NumberKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 147 */ val NumberKeyword: typingsJapgolly.typescript.mod.SyntaxKind.NumberKeyword & Double = js.native
   
   @js.native
-  sealed trait NumericLiteral extends SyntaxKind
+  sealed trait NumericLiteral
+    extends StObject
+       with SyntaxKind
+       with LiteralSyntaxKind
+  /* 8 */ val NumericLiteral: typingsJapgolly.typescript.mod.SyntaxKind.NumericLiteral & Double = js.native
   
   @js.native
-  sealed trait ObjectBindingPattern extends SyntaxKind
+  sealed trait ObjectBindingPattern
+    extends StObject
+       with SyntaxKind
+  /* 201 */ val ObjectBindingPattern: typingsJapgolly.typescript.mod.SyntaxKind.ObjectBindingPattern & Double = js.native
   
   @js.native
   sealed trait ObjectKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 148 */ val ObjectKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ObjectKeyword & Double = js.native
   
   @js.native
-  sealed trait ObjectLiteralExpression extends SyntaxKind
+  sealed trait ObjectLiteralExpression
+    extends StObject
+       with SyntaxKind
+  /* 205 */ val ObjectLiteralExpression: typingsJapgolly.typescript.mod.SyntaxKind.ObjectLiteralExpression & Double = js.native
   
   @js.native
   sealed trait OfKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 160 */ val OfKeyword: typingsJapgolly.typescript.mod.SyntaxKind.OfKeyword & Double = js.native
   
   @js.native
-  sealed trait OmittedExpression extends SyntaxKind
+  sealed trait OmittedExpression
+    extends StObject
+       with SyntaxKind
+  /* 227 */ val OmittedExpression: typingsJapgolly.typescript.mod.SyntaxKind.OmittedExpression & Double = js.native
   
   @js.native
   sealed trait OpenBraceToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
        with JsxTokenSyntaxKind
+       with PunctuationSyntaxKind
+  /* 18 */ val OpenBraceToken: typingsJapgolly.typescript.mod.SyntaxKind.OpenBraceToken & Double = js.native
   
   @js.native
   sealed trait OpenBracketToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with PunctuationSyntaxKind
+  /* 22 */ val OpenBracketToken: typingsJapgolly.typescript.mod.SyntaxKind.OpenBracketToken & Double = js.native
   
   @js.native
-  sealed trait OpenParenToken extends SyntaxKind
+  sealed trait OpenParenToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 20 */ val OpenParenToken: typingsJapgolly.typescript.mod.SyntaxKind.OpenParenToken & Double = js.native
   
   @js.native
-  sealed trait OptionalType extends SyntaxKind
+  sealed trait OptionalType
+    extends StObject
+       with SyntaxKind
+  /* 185 */ val OptionalType: typingsJapgolly.typescript.mod.SyntaxKind.OptionalType & Double = js.native
+  
+  @js.native
+  sealed trait OutKeyword
+    extends StObject
+       with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 144 */ val OutKeyword: typingsJapgolly.typescript.mod.SyntaxKind.OutKeyword & Double = js.native
+  
+  @js.native
+  sealed trait OverrideKeyword
+    extends StObject
+       with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 159 */ val OverrideKeyword: typingsJapgolly.typescript.mod.SyntaxKind.OverrideKeyword & Double = js.native
   
   @js.native
   sealed trait PackageKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 120 */ val PackageKeyword: typingsJapgolly.typescript.mod.SyntaxKind.PackageKeyword & Double = js.native
   
   @js.native
-  sealed trait Parameter extends SyntaxKind
+  sealed trait Parameter
+    extends StObject
+       with SyntaxKind
+  /* 164 */ val Parameter: typingsJapgolly.typescript.mod.SyntaxKind.Parameter & Double = js.native
   
   @js.native
-  sealed trait ParenthesizedExpression extends SyntaxKind
+  sealed trait ParenthesizedExpression
+    extends StObject
+       with SyntaxKind
+  /* 212 */ val ParenthesizedExpression: typingsJapgolly.typescript.mod.SyntaxKind.ParenthesizedExpression & Double = js.native
   
   @js.native
-  sealed trait ParenthesizedType extends SyntaxKind
+  sealed trait ParenthesizedType
+    extends StObject
+       with SyntaxKind
+  /* 191 */ val ParenthesizedType: typingsJapgolly.typescript.mod.SyntaxKind.ParenthesizedType & Double = js.native
   
   @js.native
-  sealed trait PartiallyEmittedExpression extends SyntaxKind
+  sealed trait PartiallyEmittedExpression
+    extends StObject
+       with SyntaxKind
+  /* 350 */ val PartiallyEmittedExpression: typingsJapgolly.typescript.mod.SyntaxKind.PartiallyEmittedExpression & Double = js.native
   
   @js.native
   sealed trait PercentEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 69 */ val PercentEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.PercentEqualsToken & Double = js.native
   
   @js.native
   sealed trait PercentToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with MultiplicativeOperator
+       with PunctuationSyntaxKind
+  /* 44 */ val PercentToken: typingsJapgolly.typescript.mod.SyntaxKind.PercentToken & Double = js.native
   
   @js.native
   sealed trait PlusEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 64 */ val PlusEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.PlusEqualsToken & Double = js.native
   
   @js.native
   sealed trait PlusPlusToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with PostfixUnaryOperator
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 45 */ val PlusPlusToken: typingsJapgolly.typescript.mod.SyntaxKind.PlusPlusToken & Double = js.native
   
   @js.native
   sealed trait PlusToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with AdditiveOperator
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 39 */ val PlusToken: typingsJapgolly.typescript.mod.SyntaxKind.PlusToken & Double = js.native
   
   @js.native
-  sealed trait PostfixUnaryExpression extends SyntaxKind
+  sealed trait PostfixUnaryExpression
+    extends StObject
+       with SyntaxKind
+  /* 220 */ val PostfixUnaryExpression: typingsJapgolly.typescript.mod.SyntaxKind.PostfixUnaryExpression & Double = js.native
   
   @js.native
-  sealed trait PrefixUnaryExpression extends SyntaxKind
+  sealed trait PrefixUnaryExpression
+    extends StObject
+       with SyntaxKind
+  /* 219 */ val PrefixUnaryExpression: typingsJapgolly.typescript.mod.SyntaxKind.PrefixUnaryExpression & Double = js.native
   
   @js.native
-  sealed trait PrivateIdentifier extends SyntaxKind
+  sealed trait PrivateIdentifier
+    extends StObject
+       with SyntaxKind
+  /* 80 */ val PrivateIdentifier: typingsJapgolly.typescript.mod.SyntaxKind.PrivateIdentifier & Double = js.native
   
   @js.native
   sealed trait PrivateKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 121 */ val PrivateKeyword: typingsJapgolly.typescript.mod.SyntaxKind.PrivateKeyword & Double = js.native
   
   @js.native
-  sealed trait PropertyAccessExpression extends SyntaxKind
+  sealed trait PropertyAccessExpression
+    extends StObject
+       with SyntaxKind
+  /* 206 */ val PropertyAccessExpression: typingsJapgolly.typescript.mod.SyntaxKind.PropertyAccessExpression & Double = js.native
   
   @js.native
-  sealed trait PropertyAssignment extends SyntaxKind
+  sealed trait PropertyAssignment
+    extends StObject
+       with SyntaxKind
+  /* 296 */ val PropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.PropertyAssignment & Double = js.native
   
   @js.native
-  sealed trait PropertyDeclaration extends SyntaxKind
+  sealed trait PropertyDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 167 */ val PropertyDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.PropertyDeclaration & Double = js.native
   
   @js.native
-  sealed trait PropertySignature extends SyntaxKind
+  sealed trait PropertySignature
+    extends StObject
+       with SyntaxKind
+  /* 166 */ val PropertySignature: typingsJapgolly.typescript.mod.SyntaxKind.PropertySignature & Double = js.native
   
   @js.native
   sealed trait ProtectedKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 122 */ val ProtectedKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ProtectedKeyword & Double = js.native
   
   @js.native
   sealed trait PublicKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 123 */ val PublicKeyword: typingsJapgolly.typescript.mod.SyntaxKind.PublicKeyword & Double = js.native
   
   @js.native
-  sealed trait QualifiedName extends SyntaxKind
+  sealed trait QualifiedName
+    extends StObject
+       with SyntaxKind
+  /* 161 */ val QualifiedName: typingsJapgolly.typescript.mod.SyntaxKind.QualifiedName & Double = js.native
   
   @js.native
-  sealed trait QuestionDotToken extends SyntaxKind
+  sealed trait QuestionDotToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 28 */ val QuestionDotToken: typingsJapgolly.typescript.mod.SyntaxKind.QuestionDotToken & Double = js.native
+  
+  @js.native
+  sealed trait QuestionQuestionEqualsToken
+    extends StObject
+       with SyntaxKind
+       with CompoundAssignmentOperator
+       with LogicalOrCoalescingAssignmentOperator
+  /* 77 */ val QuestionQuestionEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.QuestionQuestionEqualsToken & Double = js.native
   
   @js.native
   sealed trait QuestionQuestionToken
-    extends _AssignmentOperatorOrHigher
+    extends StObject
        with SyntaxKind
+       with PunctuationSyntaxKind
+       with _AssignmentOperatorOrHigher
+  /* 60 */ val QuestionQuestionToken: typingsJapgolly.typescript.mod.SyntaxKind.QuestionQuestionToken & Double = js.native
   
   @js.native
-  sealed trait QuestionToken extends SyntaxKind
+  sealed trait QuestionToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 57 */ val QuestionToken: typingsJapgolly.typescript.mod.SyntaxKind.QuestionToken & Double = js.native
   
   @js.native
   sealed trait ReadonlyKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 145 */ val ReadonlyKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ReadonlyKeyword & Double = js.native
   
   @js.native
-  sealed trait RegularExpressionLiteral extends SyntaxKind
+  sealed trait RegularExpressionLiteral
+    extends StObject
+       with SyntaxKind
+       with LiteralSyntaxKind
+  /* 13 */ val RegularExpressionLiteral: typingsJapgolly.typescript.mod.SyntaxKind.RegularExpressionLiteral & Double = js.native
   
   @js.native
   sealed trait RequireKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 146 */ val RequireKeyword: typingsJapgolly.typescript.mod.SyntaxKind.RequireKeyword & Double = js.native
   
   @js.native
-  sealed trait RestType extends SyntaxKind
+  sealed trait RestType
+    extends StObject
+       with SyntaxKind
+  /* 186 */ val RestType: typingsJapgolly.typescript.mod.SyntaxKind.RestType & Double = js.native
   
   @js.native
   sealed trait ReturnKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 105 */ val ReturnKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ReturnKeyword & Double = js.native
   
   @js.native
-  sealed trait ReturnStatement extends SyntaxKind
+  sealed trait ReturnStatement
+    extends StObject
+       with SyntaxKind
+  /* 247 */ val ReturnStatement: typingsJapgolly.typescript.mod.SyntaxKind.ReturnStatement & Double = js.native
   
   @js.native
-  sealed trait SemicolonClassElement extends SyntaxKind
+  sealed trait SemicolonClassElement
+    extends StObject
+       with SyntaxKind
+  /* 234 */ val SemicolonClassElement: typingsJapgolly.typescript.mod.SyntaxKind.SemicolonClassElement & Double = js.native
   
   @js.native
-  sealed trait SemicolonToken extends SyntaxKind
+  sealed trait SemicolonToken
+    extends StObject
+       with SyntaxKind
+       with PunctuationSyntaxKind
+  /* 26 */ val SemicolonToken: typingsJapgolly.typescript.mod.SyntaxKind.SemicolonToken & Double = js.native
   
   @js.native
-  sealed trait SetAccessor extends SyntaxKind
+  sealed trait SetAccessor
+    extends StObject
+       with SyntaxKind
+  /* 173 */ val SetAccessor: typingsJapgolly.typescript.mod.SyntaxKind.SetAccessor & Double = js.native
   
   @js.native
   sealed trait SetKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 149 */ val SetKeyword: typingsJapgolly.typescript.mod.SyntaxKind.SetKeyword & Double = js.native
   
   @js.native
-  sealed trait ShebangTrivia extends SyntaxKind
+  sealed trait ShebangTrivia
+    extends StObject
+       with SyntaxKind
+       with TriviaSyntaxKind
+  /* 6 */ val ShebangTrivia: typingsJapgolly.typescript.mod.SyntaxKind.ShebangTrivia & Double = js.native
   
   @js.native
-  sealed trait ShorthandPropertyAssignment extends SyntaxKind
+  sealed trait ShorthandPropertyAssignment
+    extends StObject
+       with SyntaxKind
+  /* 297 */ val ShorthandPropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.ShorthandPropertyAssignment & Double = js.native
   
   @js.native
   sealed trait SingleLineCommentTrivia
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with CommentKind
+       with TriviaSyntaxKind
+  /* 2 */ val SingleLineCommentTrivia: typingsJapgolly.typescript.mod.SyntaxKind.SingleLineCommentTrivia & Double = js.native
   
   @js.native
   sealed trait SlashEqualsToken
-    extends CompoundAssignmentOperator
+    extends StObject
        with SyntaxKind
+       with CompoundAssignmentOperator
+       with PunctuationSyntaxKind
+  /* 68 */ val SlashEqualsToken: typingsJapgolly.typescript.mod.SyntaxKind.SlashEqualsToken & Double = js.native
   
   @js.native
   sealed trait SlashToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with MultiplicativeOperator
+       with PunctuationSyntaxKind
+  /* 43 */ val SlashToken: typingsJapgolly.typescript.mod.SyntaxKind.SlashToken & Double = js.native
   
   @js.native
-  sealed trait SourceFile extends SyntaxKind
+  sealed trait SourceFile
+    extends StObject
+       with SyntaxKind
+  /* 305 */ val SourceFile: typingsJapgolly.typescript.mod.SyntaxKind.SourceFile & Double = js.native
   
   @js.native
-  sealed trait SpreadAssignment extends SyntaxKind
+  sealed trait SpreadAssignment
+    extends StObject
+       with SyntaxKind
+  /* 298 */ val SpreadAssignment: typingsJapgolly.typescript.mod.SyntaxKind.SpreadAssignment & Double = js.native
   
   @js.native
-  sealed trait SpreadElement extends SyntaxKind
+  sealed trait SpreadElement
+    extends StObject
+       with SyntaxKind
+  /* 225 */ val SpreadElement: typingsJapgolly.typescript.mod.SyntaxKind.SpreadElement & Double = js.native
   
   @js.native
   sealed trait StaticKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with ModifierSyntaxKind
+  /* 124 */ val StaticKeyword: typingsJapgolly.typescript.mod.SyntaxKind.StaticKeyword & Double = js.native
   
   @js.native
   sealed trait StringKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 150 */ val StringKeyword: typingsJapgolly.typescript.mod.SyntaxKind.StringKeyword & Double = js.native
   
   @js.native
-  sealed trait StringLiteral extends SyntaxKind
+  sealed trait StringLiteral
+    extends StObject
+       with SyntaxKind
+       with LiteralSyntaxKind
+  /* 10 */ val StringLiteral: typingsJapgolly.typescript.mod.SyntaxKind.StringLiteral & Double = js.native
   
   @js.native
   sealed trait SuperKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 106 */ val SuperKeyword: typingsJapgolly.typescript.mod.SyntaxKind.SuperKeyword & Double = js.native
   
   @js.native
   sealed trait SwitchKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 107 */ val SwitchKeyword: typingsJapgolly.typescript.mod.SyntaxKind.SwitchKeyword & Double = js.native
   
   @js.native
-  sealed trait SwitchStatement extends SyntaxKind
+  sealed trait SwitchStatement
+    extends StObject
+       with SyntaxKind
+  /* 249 */ val SwitchStatement: typingsJapgolly.typescript.mod.SyntaxKind.SwitchStatement & Double = js.native
   
   @js.native
   sealed trait SymbolKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 151 */ val SymbolKeyword: typingsJapgolly.typescript.mod.SyntaxKind.SymbolKeyword & Double = js.native
   
   @js.native
-  sealed trait SyntaxList extends SyntaxKind
+  sealed trait SyntaxList
+    extends StObject
+       with SyntaxKind
+  /* 348 */ val SyntaxList: typingsJapgolly.typescript.mod.SyntaxKind.SyntaxList & Double = js.native
   
   @js.native
-  sealed trait SyntheticExpression extends SyntaxKind
+  sealed trait SyntheticExpression
+    extends StObject
+       with SyntaxKind
+  /* 232 */ val SyntheticExpression: typingsJapgolly.typescript.mod.SyntaxKind.SyntheticExpression & Double = js.native
   
   @js.native
-  sealed trait SyntheticReferenceExpression extends SyntaxKind
+  sealed trait SyntheticReferenceExpression
+    extends StObject
+       with SyntaxKind
+  /* 354 */ val SyntheticReferenceExpression: typingsJapgolly.typescript.mod.SyntaxKind.SyntheticReferenceExpression & Double = js.native
   
   @js.native
-  sealed trait TaggedTemplateExpression extends SyntaxKind
+  sealed trait TaggedTemplateExpression
+    extends StObject
+       with SyntaxKind
+  /* 210 */ val TaggedTemplateExpression: typingsJapgolly.typescript.mod.SyntaxKind.TaggedTemplateExpression & Double = js.native
   
   @js.native
-  sealed trait TemplateExpression extends SyntaxKind
+  sealed trait TemplateExpression
+    extends StObject
+       with SyntaxKind
+  /* 223 */ val TemplateExpression: typingsJapgolly.typescript.mod.SyntaxKind.TemplateExpression & Double = js.native
   
   @js.native
-  sealed trait TemplateHead extends SyntaxKind
+  sealed trait TemplateHead
+    extends StObject
+       with SyntaxKind
+       with PseudoLiteralSyntaxKind
+  /* 15 */ val TemplateHead: typingsJapgolly.typescript.mod.SyntaxKind.TemplateHead & Double = js.native
   
   @js.native
-  sealed trait TemplateMiddle extends SyntaxKind
+  sealed trait TemplateLiteralType
+    extends StObject
+       with SyntaxKind
+  /* 198 */ val TemplateLiteralType: typingsJapgolly.typescript.mod.SyntaxKind.TemplateLiteralType & Double = js.native
   
   @js.native
-  sealed trait TemplateSpan extends SyntaxKind
+  sealed trait TemplateLiteralTypeSpan
+    extends StObject
+       with SyntaxKind
+  /* 199 */ val TemplateLiteralTypeSpan: typingsJapgolly.typescript.mod.SyntaxKind.TemplateLiteralTypeSpan & Double = js.native
   
   @js.native
-  sealed trait TemplateTail extends SyntaxKind
+  sealed trait TemplateMiddle
+    extends StObject
+       with SyntaxKind
+       with PseudoLiteralSyntaxKind
+  /* 16 */ val TemplateMiddle: typingsJapgolly.typescript.mod.SyntaxKind.TemplateMiddle & Double = js.native
+  
+  @js.native
+  sealed trait TemplateSpan
+    extends StObject
+       with SyntaxKind
+  /* 233 */ val TemplateSpan: typingsJapgolly.typescript.mod.SyntaxKind.TemplateSpan & Double = js.native
+  
+  @js.native
+  sealed trait TemplateTail
+    extends StObject
+       with SyntaxKind
+       with PseudoLiteralSyntaxKind
+  /* 17 */ val TemplateTail: typingsJapgolly.typescript.mod.SyntaxKind.TemplateTail & Double = js.native
   
   @js.native
   sealed trait ThisKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 108 */ val ThisKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ThisKeyword & Double = js.native
   
   @js.native
-  sealed trait ThisType extends SyntaxKind
+  sealed trait ThisType
+    extends StObject
+       with SyntaxKind
+  /* 192 */ val ThisType: typingsJapgolly.typescript.mod.SyntaxKind.ThisType & Double = js.native
   
   @js.native
   sealed trait ThrowKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 109 */ val ThrowKeyword: typingsJapgolly.typescript.mod.SyntaxKind.ThrowKeyword & Double = js.native
   
   @js.native
-  sealed trait ThrowStatement extends SyntaxKind
+  sealed trait ThrowStatement
+    extends StObject
+       with SyntaxKind
+  /* 251 */ val ThrowStatement: typingsJapgolly.typescript.mod.SyntaxKind.ThrowStatement & Double = js.native
   
   @js.native
   sealed trait TildeToken
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with PrefixUnaryOperator
+       with PunctuationSyntaxKind
+  /* 54 */ val TildeToken: typingsJapgolly.typescript.mod.SyntaxKind.TildeToken & Double = js.native
   
   @js.native
   sealed trait TrueKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 110 */ val TrueKeyword: typingsJapgolly.typescript.mod.SyntaxKind.TrueKeyword & Double = js.native
   
   @js.native
   sealed trait TryKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 111 */ val TryKeyword: typingsJapgolly.typescript.mod.SyntaxKind.TryKeyword & Double = js.native
   
   @js.native
-  sealed trait TryStatement extends SyntaxKind
+  sealed trait TryStatement
+    extends StObject
+       with SyntaxKind
+  /* 252 */ val TryStatement: typingsJapgolly.typescript.mod.SyntaxKind.TryStatement & Double = js.native
   
   @js.native
-  sealed trait TupleType extends SyntaxKind
+  sealed trait TupleType
+    extends StObject
+       with SyntaxKind
+  /* 184 */ val TupleType: typingsJapgolly.typescript.mod.SyntaxKind.TupleType & Double = js.native
   
   @js.native
-  sealed trait TypeAliasDeclaration extends SyntaxKind
+  sealed trait TypeAliasDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 259 */ val TypeAliasDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.TypeAliasDeclaration & Double = js.native
   
   @js.native
-  sealed trait TypeAssertionExpression extends SyntaxKind
+  sealed trait TypeAssertionExpression
+    extends StObject
+       with SyntaxKind
+  /* 211 */ val TypeAssertionExpression: typingsJapgolly.typescript.mod.SyntaxKind.TypeAssertionExpression & Double = js.native
   
   @js.native
   sealed trait TypeKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 152 */ val TypeKeyword: typingsJapgolly.typescript.mod.SyntaxKind.TypeKeyword & Double = js.native
   
   @js.native
-  sealed trait TypeLiteral extends SyntaxKind
+  sealed trait TypeLiteral
+    extends StObject
+       with SyntaxKind
+  /* 182 */ val TypeLiteral: typingsJapgolly.typescript.mod.SyntaxKind.TypeLiteral & Double = js.native
   
   @js.native
-  sealed trait TypeOfExpression extends SyntaxKind
+  sealed trait TypeOfExpression
+    extends StObject
+       with SyntaxKind
+  /* 216 */ val TypeOfExpression: typingsJapgolly.typescript.mod.SyntaxKind.TypeOfExpression & Double = js.native
   
   @js.native
   sealed trait TypeOfKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 112 */ val TypeOfKeyword: typingsJapgolly.typescript.mod.SyntaxKind.TypeOfKeyword & Double = js.native
   
   @js.native
-  sealed trait TypeOperator extends SyntaxKind
+  sealed trait TypeOperator
+    extends StObject
+       with SyntaxKind
+  /* 193 */ val TypeOperator: typingsJapgolly.typescript.mod.SyntaxKind.TypeOperator & Double = js.native
   
   @js.native
-  sealed trait TypeParameter extends SyntaxKind
+  sealed trait TypeParameter
+    extends StObject
+       with SyntaxKind
+  /* 163 */ val TypeParameter: typingsJapgolly.typescript.mod.SyntaxKind.TypeParameter & Double = js.native
   
   @js.native
-  sealed trait TypePredicate extends SyntaxKind
+  sealed trait TypePredicate
+    extends StObject
+       with SyntaxKind
+  /* 177 */ val TypePredicate: typingsJapgolly.typescript.mod.SyntaxKind.TypePredicate & Double = js.native
   
   @js.native
-  sealed trait TypeQuery extends SyntaxKind
+  sealed trait TypeQuery
+    extends StObject
+       with SyntaxKind
+  /* 181 */ val TypeQuery: typingsJapgolly.typescript.mod.SyntaxKind.TypeQuery & Double = js.native
   
   @js.native
-  sealed trait TypeReference extends SyntaxKind
+  sealed trait TypeReference
+    extends StObject
+       with SyntaxKind
+  /* 178 */ val TypeReference: typingsJapgolly.typescript.mod.SyntaxKind.TypeReference & Double = js.native
   
   @js.native
   sealed trait UndefinedKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 153 */ val UndefinedKeyword: typingsJapgolly.typescript.mod.SyntaxKind.UndefinedKeyword & Double = js.native
   
   @js.native
-  sealed trait UnionType extends SyntaxKind
+  sealed trait UnionType
+    extends StObject
+       with SyntaxKind
+  /* 187 */ val UnionType: typingsJapgolly.typescript.mod.SyntaxKind.UnionType & Double = js.native
   
   @js.native
   sealed trait UniqueKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 154 */ val UniqueKeyword: typingsJapgolly.typescript.mod.SyntaxKind.UniqueKeyword & Double = js.native
   
   @js.native
   sealed trait Unknown
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with TokenSyntaxKind
+  /* 0 */ val Unknown: typingsJapgolly.typescript.mod.SyntaxKind.Unknown & Double = js.native
   
   @js.native
   sealed trait UnknownKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 155 */ val UnknownKeyword: typingsJapgolly.typescript.mod.SyntaxKind.UnknownKeyword & Double = js.native
   
   @js.native
-  sealed trait UnparsedInternalText extends SyntaxKind
+  sealed trait UnparsedInternalText
+    extends StObject
+       with SyntaxKind
+  /* 303 */ val UnparsedInternalText: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedInternalText & Double = js.native
   
   @js.native
-  sealed trait UnparsedPrepend extends SyntaxKind
+  sealed trait UnparsedPrepend
+    extends StObject
+       with SyntaxKind
+  /* 301 */ val UnparsedPrepend: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrepend & Double = js.native
   
   @js.native
-  sealed trait UnparsedPrologue extends SyntaxKind
+  sealed trait UnparsedPrologue
+    extends StObject
+       with SyntaxKind
+  /* 300 */ val UnparsedPrologue: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrologue & Double = js.native
   
   @js.native
-  sealed trait UnparsedSource extends SyntaxKind
+  sealed trait UnparsedSource
+    extends StObject
+       with SyntaxKind
+  /* 307 */ val UnparsedSource: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedSource & Double = js.native
   
   @js.native
-  sealed trait UnparsedSyntheticReference extends SyntaxKind
+  sealed trait UnparsedSyntheticReference
+    extends StObject
+       with SyntaxKind
+  /* 304 */ val UnparsedSyntheticReference: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedSyntheticReference & Double = js.native
   
   @js.native
-  sealed trait UnparsedText extends SyntaxKind
+  sealed trait UnparsedText
+    extends StObject
+       with SyntaxKind
+  /* 302 */ val UnparsedText: typingsJapgolly.typescript.mod.SyntaxKind.UnparsedText & Double = js.native
   
   @js.native
   sealed trait VarKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 113 */ val VarKeyword: typingsJapgolly.typescript.mod.SyntaxKind.VarKeyword & Double = js.native
   
   @js.native
-  sealed trait VariableDeclaration extends SyntaxKind
+  sealed trait VariableDeclaration
+    extends StObject
+       with SyntaxKind
+  /* 254 */ val VariableDeclaration: typingsJapgolly.typescript.mod.SyntaxKind.VariableDeclaration & Double = js.native
   
   @js.native
-  sealed trait VariableDeclarationList extends SyntaxKind
+  sealed trait VariableDeclarationList
+    extends StObject
+       with SyntaxKind
+  /* 255 */ val VariableDeclarationList: typingsJapgolly.typescript.mod.SyntaxKind.VariableDeclarationList & Double = js.native
   
   @js.native
-  sealed trait VariableStatement extends SyntaxKind
+  sealed trait VariableStatement
+    extends StObject
+       with SyntaxKind
+  /* 237 */ val VariableStatement: typingsJapgolly.typescript.mod.SyntaxKind.VariableStatement & Double = js.native
   
   @js.native
-  sealed trait VoidExpression extends SyntaxKind
+  sealed trait VoidExpression
+    extends StObject
+       with SyntaxKind
+  /* 217 */ val VoidExpression: typingsJapgolly.typescript.mod.SyntaxKind.VoidExpression & Double = js.native
   
   @js.native
   sealed trait VoidKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+       with KeywordTypeSyntaxKind
+  /* 114 */ val VoidKeyword: typingsJapgolly.typescript.mod.SyntaxKind.VoidKeyword & Double = js.native
   
   @js.native
   sealed trait WhileKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 115 */ val WhileKeyword: typingsJapgolly.typescript.mod.SyntaxKind.WhileKeyword & Double = js.native
   
   @js.native
-  sealed trait WhileStatement extends SyntaxKind
+  sealed trait WhileStatement
+    extends StObject
+       with SyntaxKind
+  /* 241 */ val WhileStatement: typingsJapgolly.typescript.mod.SyntaxKind.WhileStatement & Double = js.native
   
   @js.native
   sealed trait WhitespaceTrivia
-    extends SyntaxKind
+    extends StObject
+       with SyntaxKind
        with JSDocSyntaxKind
+       with TriviaSyntaxKind
+  /* 5 */ val WhitespaceTrivia: typingsJapgolly.typescript.mod.SyntaxKind.WhitespaceTrivia & Double = js.native
   
   @js.native
   sealed trait WithKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
+       with KeywordSyntaxKind
+  /* 116 */ val WithKeyword: typingsJapgolly.typescript.mod.SyntaxKind.WithKeyword & Double = js.native
   
   @js.native
-  sealed trait WithStatement extends SyntaxKind
+  sealed trait WithStatement
+    extends StObject
+       with SyntaxKind
+  /* 248 */ val WithStatement: typingsJapgolly.typescript.mod.SyntaxKind.WithStatement & Double = js.native
   
   @js.native
-  sealed trait YieldExpression extends SyntaxKind
+  sealed trait YieldExpression
+    extends StObject
+       with SyntaxKind
+  /* 224 */ val YieldExpression: typingsJapgolly.typescript.mod.SyntaxKind.YieldExpression & Double = js.native
   
   @js.native
   sealed trait YieldKeyword
-    extends KeywordSyntaxKind
+    extends StObject
        with SyntaxKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SyntaxKind with Double] = js.native
-  /* 122 */ @js.native
-  object AbstractKeyword extends TopLevel[AbstractKeyword with Double]
-  
-  /* 55 */ @js.native
-  object AmpersandAmpersandToken extends TopLevel[AmpersandAmpersandToken with Double]
-  
-  /* 72 */ @js.native
-  object AmpersandEqualsToken extends TopLevel[AmpersandEqualsToken with Double]
-  
-  /* 50 */ @js.native
-  object AmpersandToken extends TopLevel[AmpersandToken with Double]
-  
-  /* 125 */ @js.native
-  object AnyKeyword extends TopLevel[AnyKeyword with Double]
-  
-  /* 190 */ @js.native
-  object ArrayBindingPattern
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ArrayBindingPattern with Double]
-  
-  /* 192 */ @js.native
-  object ArrayLiteralExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ArrayLiteralExpression with Double]
-  
-  /* 174 */ @js.native
-  object ArrayType extends TopLevel[ArrayType with Double]
-  
-  /* 202 */ @js.native
-  object ArrowFunction
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ArrowFunction with Double]
-  
-  /* 217 */ @js.native
-  object AsExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.AsExpression with Double]
-  
-  /* 123 */ @js.native
-  object AsKeyword extends TopLevel[AsKeyword with Double]
-  
-  /* 124 */ @js.native
-  object AssertsKeyword extends TopLevel[AssertsKeyword with Double]
-  
-  /* 66 */ @js.native
-  object AsteriskAsteriskEqualsToken extends TopLevel[AsteriskAsteriskEqualsToken with Double]
-  
-  /* 42 */ @js.native
-  object AsteriskAsteriskToken extends TopLevel[AsteriskAsteriskToken with Double]
-  
-  /* 65 */ @js.native
-  object AsteriskEqualsToken extends TopLevel[AsteriskEqualsToken with Double]
-  
-  /* 41 */ @js.native
-  object AsteriskToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.AsteriskToken with Double]
-  
-  /* 126 */ @js.native
-  object AsyncKeyword extends TopLevel[AsyncKeyword with Double]
-  
-  /* 59 */ @js.native
-  object AtToken extends TopLevel[AtToken with Double]
-  
-  /* 206 */ @js.native
-  object AwaitExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.AwaitExpression with Double]
-  
-  /* 127 */ @js.native
-  object AwaitKeyword extends TopLevel[AwaitKeyword with Double]
-  
-  /* 61 */ @js.native
-  object BacktickToken extends TopLevel[BacktickToken with Double]
-  
-  /* 56 */ @js.native
-  object BarBarToken extends TopLevel[BarBarToken with Double]
-  
-  /* 73 */ @js.native
-  object BarEqualsToken extends TopLevel[BarEqualsToken with Double]
-  
-  /* 51 */ @js.native
-  object BarToken extends TopLevel[BarToken with Double]
-  
-  /* 151 */ @js.native
-  object BigIntKeyword extends TopLevel[BigIntKeyword with Double]
-  
-  /* 9 */ @js.native
-  object BigIntLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.BigIntLiteral with Double]
-  
-  /* 209 */ @js.native
-  object BinaryExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.BinaryExpression with Double]
-  
-  /* 191 */ @js.native
-  object BindingElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.BindingElement with Double]
-  
-  /* 223 */ @js.native
-  object Block
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.Block with Double]
-  
-  /* 128 */ @js.native
-  object BooleanKeyword extends TopLevel[BooleanKeyword with Double]
-  
-  /* 77 */ @js.native
-  object BreakKeyword extends TopLevel[BreakKeyword with Double]
-  
-  /* 234 */ @js.native
-  object BreakStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.BreakStatement with Double]
-  
-  /* 291 */ @js.native
-  object Bundle
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.Bundle with Double]
-  
-  /* 196 */ @js.native
-  object CallExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.CallExpression with Double]
-  
-  /* 165 */ @js.native
-  object CallSignature extends TopLevel[CallSignature with Double]
-  
-  /* 74 */ @js.native
-  object CaretEqualsToken extends TopLevel[CaretEqualsToken with Double]
-  
-  /* 52 */ @js.native
-  object CaretToken extends TopLevel[CaretToken with Double]
-  
-  /* 251 */ @js.native
-  object CaseBlock
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.CaseBlock with Double]
-  
-  /* 277 */ @js.native
-  object CaseClause
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.CaseClause with Double]
-  
-  /* 78 */ @js.native
-  object CaseKeyword extends TopLevel[CaseKeyword with Double]
-  
-  /* 280 */ @js.native
-  object CatchClause
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.CatchClause with Double]
-  
-  /* 79 */ @js.native
-  object CatchKeyword extends TopLevel[CatchKeyword with Double]
-  
-  /* 245 */ @js.native
-  object ClassDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ClassDeclaration with Double]
-  
-  /* 214 */ @js.native
-  object ClassExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ClassExpression with Double]
-  
-  /* 80 */ @js.native
-  object ClassKeyword extends TopLevel[ClassKeyword with Double]
-  
-  /* 19 */ @js.native
-  object CloseBraceToken extends TopLevel[CloseBraceToken with Double]
-  
-  /* 23 */ @js.native
-  object CloseBracketToken extends TopLevel[CloseBracketToken with Double]
-  
-  /* 21 */ @js.native
-  object CloseParenToken extends TopLevel[CloseParenToken with Double]
-  
-  /* 58 */ @js.native
-  object ColonToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ColonToken with Double]
-  
-  /* 326 */ @js.native
-  object CommaListExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.CommaListExpression with Double]
-  
-  /* 27 */ @js.native
-  object CommaToken extends TopLevel[CommaToken with Double]
-  
-  /* 154 */ @js.native
-  object ComputedPropertyName
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ComputedPropertyName with Double]
-  
-  /* 210 */ @js.native
-  object ConditionalExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ConditionalExpression with Double]
-  
-  /* 180 */ @js.native
-  object ConditionalType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ConditionalType with Double]
-  
-  /* 7 */ @js.native
-  object ConflictMarkerTrivia extends TopLevel[ConflictMarkerTrivia with Double]
-  
-  /* 81 */ @js.native
-  object ConstKeyword extends TopLevel[ConstKeyword with Double]
-  
-  /* 166 */ @js.native
-  object ConstructSignature extends TopLevel[ConstructSignature with Double]
-  
-  /* 162 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
-  
-  /* 129 */ @js.native
-  object ConstructorKeyword extends TopLevel[ConstructorKeyword with Double]
-  
-  /* 171 */ @js.native
-  object ConstructorType extends TopLevel[ConstructorType with Double]
-  
-  /* 82 */ @js.native
-  object ContinueKeyword extends TopLevel[ContinueKeyword with Double]
-  
-  /* 233 */ @js.native
-  object ContinueStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ContinueStatement with Double]
-  
-  /* 330 */ @js.native
-  object Count extends TopLevel[Count with Double]
-  
-  /* 83 */ @js.native
-  object DebuggerKeyword extends TopLevel[DebuggerKeyword with Double]
-  
-  /* 241 */ @js.native
-  object DebuggerStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DebuggerStatement with Double]
-  
-  /* 130 */ @js.native
-  object DeclareKeyword extends TopLevel[DeclareKeyword with Double]
-  
-  /* 157 */ @js.native
-  object Decorator
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.Decorator with Double]
-  
-  /* 278 */ @js.native
-  object DefaultClause
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DefaultClause with Double]
-  
-  /* 84 */ @js.native
-  object DefaultKeyword extends TopLevel[DefaultKeyword with Double]
-  
-  /* 203 */ @js.native
-  object DeleteExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DeleteExpression with Double]
-  
-  /* 85 */ @js.native
-  object DeleteKeyword extends TopLevel[DeleteKeyword with Double]
-  
-  /* 86 */ @js.native
-  object DoKeyword extends TopLevel[DoKeyword with Double]
-  
-  /* 228 */ @js.native
-  object DoStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DoStatement with Double]
-  
-  /* 25 */ @js.native
-  object DotDotDotToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DotDotDotToken with Double]
-  
-  /* 24 */ @js.native
-  object DotToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.DotToken with Double]
-  
-  /* 195 */ @js.native
-  object ElementAccessExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ElementAccessExpression with Double]
-  
-  /* 87 */ @js.native
-  object ElseKeyword extends TopLevel[ElseKeyword with Double]
-  
-  /* 224 */ @js.native
-  object EmptyStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EmptyStatement with Double]
-  
-  /* 328 */ @js.native
-  object EndOfDeclarationMarker extends TopLevel[EndOfDeclarationMarker with Double]
-  
-  /* 1 */ @js.native
-  object EndOfFileToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EndOfFileToken with Double]
-  
-  /* 248 */ @js.native
-  object EnumDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EnumDeclaration with Double]
-  
-  /* 88 */ @js.native
-  object EnumKeyword extends TopLevel[EnumKeyword with Double]
-  
-  /* 284 */ @js.native
-  object EnumMember
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EnumMember with Double]
-  
-  /* 36 */ @js.native
-  object EqualsEqualsEqualsToken extends TopLevel[EqualsEqualsEqualsToken with Double]
-  
-  /* 34 */ @js.native
-  object EqualsEqualsToken extends TopLevel[EqualsEqualsToken with Double]
-  
-  /* 38 */ @js.native
-  object EqualsGreaterThanToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EqualsGreaterThanToken with Double]
-  
-  /* 62 */ @js.native
-  object EqualsToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.EqualsToken with Double]
-  
-  /* 37 */ @js.native
-  object ExclamationEqualsEqualsToken extends TopLevel[ExclamationEqualsEqualsToken with Double]
-  
-  /* 35 */ @js.native
-  object ExclamationEqualsToken extends TopLevel[ExclamationEqualsToken with Double]
-  
-  /* 53 */ @js.native
-  object ExclamationToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExclamationToken with Double]
-  
-  /* 259 */ @js.native
-  object ExportAssignment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExportAssignment with Double]
-  
-  /* 260 */ @js.native
-  object ExportDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExportDeclaration with Double]
-  
-  /* 89 */ @js.native
-  object ExportKeyword extends TopLevel[ExportKeyword with Double]
-  
-  /* 263 */ @js.native
-  object ExportSpecifier
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExportSpecifier with Double]
-  
-  /* 226 */ @js.native
-  object ExpressionStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExpressionStatement with Double]
-  
-  /* 216 */ @js.native
-  object ExpressionWithTypeArguments
-    extends TopLevel[
-          typingsJapgolly.typescript.mod.SyntaxKind.ExpressionWithTypeArguments with Double
-        ]
-  
-  /* 90 */ @js.native
-  object ExtendsKeyword extends TopLevel[ExtendsKeyword with Double]
-  
-  /* 265 */ @js.native
-  object ExternalModuleReference
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ExternalModuleReference with Double]
-  
-  /* 91 */ @js.native
-  object FalseKeyword extends TopLevel[FalseKeyword with Double]
-  
-  /* 92 */ @js.native
-  object FinallyKeyword extends TopLevel[FinallyKeyword with Double]
-  
-  /* 62 */ @js.native
-  object FirstAssignment extends TopLevel[FirstAssignment with Double]
-  
-  /* 29 */ @js.native
-  object FirstBinaryOperator extends TopLevel[FirstBinaryOperator with Double]
-  
-  /* 63 */ @js.native
-  object FirstCompoundAssignment extends TopLevel[FirstCompoundAssignment with Double]
-  
-  /* 113 */ @js.native
-  object FirstFutureReservedWord extends TopLevel[FirstFutureReservedWord with Double]
-  
-  /* 294 */ @js.native
-  object FirstJSDocNode extends TopLevel[FirstJSDocNode with Double]
-  
-  /* 306 */ @js.native
-  object FirstJSDocTagNode extends TopLevel[FirstJSDocTagNode with Double]
-  
-  /* 77 */ @js.native
-  object FirstKeyword extends TopLevel[FirstKeyword with Double]
-  
-  /* 8 */ @js.native
-  object FirstLiteralToken extends TopLevel[FirstLiteralToken with Double]
-  
-  /* 153 */ @js.native
-  object FirstNode extends TopLevel[FirstNode with Double]
-  
-  /* 18 */ @js.native
-  object FirstPunctuation extends TopLevel[FirstPunctuation with Double]
-  
-  /* 77 */ @js.native
-  object FirstReservedWord extends TopLevel[FirstReservedWord with Double]
-  
-  /* 225 */ @js.native
-  object FirstStatement extends TopLevel[FirstStatement with Double]
-  
-  /* 14 */ @js.native
-  object FirstTemplateToken extends TopLevel[FirstTemplateToken with Double]
-  
-  /* 0 */ @js.native
-  object FirstToken extends TopLevel[FirstToken with Double]
-  
-  /* 2 */ @js.native
-  object FirstTriviaToken extends TopLevel[FirstTriviaToken with Double]
-  
-  /* 168 */ @js.native
-  object FirstTypeNode extends TopLevel[FirstTypeNode with Double]
-  
-  /* 231 */ @js.native
-  object ForInStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ForInStatement with Double]
-  
-  /* 93 */ @js.native
-  object ForKeyword extends TopLevel[ForKeyword with Double]
-  
-  /* 232 */ @js.native
-  object ForOfStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ForOfStatement with Double]
-  
-  /* 230 */ @js.native
-  object ForStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ForStatement with Double]
-  
-  /* 149 */ @js.native
-  object FromKeyword extends TopLevel[FromKeyword with Double]
-  
-  /* 244 */ @js.native
-  object FunctionDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.FunctionDeclaration with Double]
-  
-  /* 201 */ @js.native
-  object FunctionExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.FunctionExpression with Double]
-  
-  /* 94 */ @js.native
-  object FunctionKeyword extends TopLevel[FunctionKeyword with Double]
-  
-  /* 170 */ @js.native
-  object FunctionType extends TopLevel[FunctionType with Double]
-  
-  /* 163 */ @js.native
-  object GetAccessor extends TopLevel[GetAccessor with Double]
-  
-  /* 131 */ @js.native
-  object GetKeyword extends TopLevel[GetKeyword with Double]
-  
-  /* 150 */ @js.native
-  object GlobalKeyword extends TopLevel[GlobalKeyword with Double]
-  
-  /* 33 */ @js.native
-  object GreaterThanEqualsToken extends TopLevel[GreaterThanEqualsToken with Double]
-  
-  /* 70 */ @js.native
-  object GreaterThanGreaterThanEqualsToken extends TopLevel[GreaterThanGreaterThanEqualsToken with Double]
-  
-  /* 71 */ @js.native
-  object GreaterThanGreaterThanGreaterThanEqualsToken extends TopLevel[GreaterThanGreaterThanGreaterThanEqualsToken with Double]
-  
-  /* 49 */ @js.native
-  object GreaterThanGreaterThanGreaterThanToken extends TopLevel[GreaterThanGreaterThanGreaterThanToken with Double]
-  
-  /* 48 */ @js.native
-  object GreaterThanGreaterThanToken extends TopLevel[GreaterThanGreaterThanToken with Double]
-  
-  /* 31 */ @js.native
-  object GreaterThanToken extends TopLevel[GreaterThanToken with Double]
-  
-  /* 279 */ @js.native
-  object HeritageClause
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.HeritageClause with Double]
-  
-  /* 75 */ @js.native
-  object Identifier
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.Identifier with Double]
-  
-  /* 95 */ @js.native
-  object IfKeyword extends TopLevel[IfKeyword with Double]
-  
-  /* 227 */ @js.native
-  object IfStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.IfStatement with Double]
-  
-  /* 113 */ @js.native
-  object ImplementsKeyword extends TopLevel[ImplementsKeyword with Double]
-  
-  /* 255 */ @js.native
-  object ImportClause
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ImportClause with Double]
-  
-  /* 254 */ @js.native
-  object ImportDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ImportDeclaration with Double]
-  
-  /* 253 */ @js.native
-  object ImportEqualsDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ImportEqualsDeclaration with Double]
-  
-  /* 96 */ @js.native
-  object ImportKeyword extends TopLevel[ImportKeyword with Double]
-  
-  /* 258 */ @js.native
-  object ImportSpecifier
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ImportSpecifier with Double]
-  
-  /* 188 */ @js.native
-  object ImportType extends TopLevel[ImportType with Double]
-  
-  /* 97 */ @js.native
-  object InKeyword extends TopLevel[InKeyword with Double]
-  
-  /* 167 */ @js.native
-  object IndexSignature extends TopLevel[IndexSignature with Double]
-  
-  /* 185 */ @js.native
-  object IndexedAccessType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.IndexedAccessType with Double]
-  
-  /* 132 */ @js.native
-  object InferKeyword extends TopLevel[InferKeyword with Double]
-  
-  /* 181 */ @js.native
-  object InferType extends TopLevel[InferType with Double]
-  
-  /* 293 */ @js.native
-  object InputFiles
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.InputFiles with Double]
-  
-  /* 98 */ @js.native
-  object InstanceOfKeyword extends TopLevel[InstanceOfKeyword with Double]
-  
-  /* 246 */ @js.native
-  object InterfaceDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.InterfaceDeclaration with Double]
-  
-  /* 114 */ @js.native
-  object InterfaceKeyword extends TopLevel[InterfaceKeyword with Double]
-  
-  /* 179 */ @js.native
-  object IntersectionType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.IntersectionType with Double]
-  
-  /* 133 */ @js.native
-  object IsKeyword extends TopLevel[IsKeyword with Double]
-  
-  /* 295 */ @js.native
-  object JSDocAllType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocAllType with Double]
-  
-  /* 307 */ @js.native
-  object JSDocAugmentsTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocAugmentsTag with Double]
-  
-  /* 308 */ @js.native
-  object JSDocAuthorTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocAuthorTag with Double]
-  
-  /* 314 */ @js.native
-  object JSDocCallbackTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocCallbackTag with Double]
-  
-  /* 309 */ @js.native
-  object JSDocClassTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocClassTag with Double]
-  
-  /* 303 */ @js.native
-  object JSDocComment extends TopLevel[JSDocComment with Double]
-  
-  /* 315 */ @js.native
-  object JSDocEnumTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocEnumTag with Double]
-  
-  /* 300 */ @js.native
-  object JSDocFunctionType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocFunctionType with Double]
-  
-  /* 302 */ @js.native
-  object JSDocNamepathType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocNamepathType with Double]
-  
-  /* 298 */ @js.native
-  object JSDocNonNullableType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocNonNullableType with Double]
-  
-  /* 297 */ @js.native
-  object JSDocNullableType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocNullableType with Double]
-  
-  /* 299 */ @js.native
-  object JSDocOptionalType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocOptionalType with Double]
-  
-  /* 316 */ @js.native
-  object JSDocParameterTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocParameterTag with Double]
-  
-  /* 311 */ @js.native
-  object JSDocPrivateTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocPrivateTag with Double]
-  
-  /* 322 */ @js.native
-  object JSDocPropertyTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocPropertyTag with Double]
-  
-  /* 312 */ @js.native
-  object JSDocProtectedTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocProtectedTag with Double]
-  
-  /* 310 */ @js.native
-  object JSDocPublicTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocPublicTag with Double]
-  
-  /* 313 */ @js.native
-  object JSDocReadonlyTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocReadonlyTag with Double]
-  
-  /* 317 */ @js.native
-  object JSDocReturnTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocReturnTag with Double]
-  
-  /* 305 */ @js.native
-  object JSDocSignature
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocSignature with Double]
-  
-  /* 306 */ @js.native
-  object JSDocTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTag with Double]
-  
-  /* 320 */ @js.native
-  object JSDocTemplateTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTemplateTag with Double]
-  
-  /* 318 */ @js.native
-  object JSDocThisTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocThisTag with Double]
-  
-  /* 294 */ @js.native
-  object JSDocTypeExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeExpression with Double]
-  
-  /* 304 */ @js.native
-  object JSDocTypeLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeLiteral with Double]
-  
-  /* 319 */ @js.native
-  object JSDocTypeTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypeTag with Double]
-  
-  /* 321 */ @js.native
-  object JSDocTypedefTag
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocTypedefTag with Double]
-  
-  /* 296 */ @js.native
-  object JSDocUnknownType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocUnknownType with Double]
-  
-  /* 301 */ @js.native
-  object JSDocVariadicType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JSDocVariadicType with Double]
-  
-  /* 273 */ @js.native
-  object JsxAttribute
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxAttribute with Double]
-  
-  /* 274 */ @js.native
-  object JsxAttributes
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxAttributes with Double]
-  
-  /* 269 */ @js.native
-  object JsxClosingElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingElement with Double]
-  
-  /* 272 */ @js.native
-  object JsxClosingFragment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxClosingFragment with Double]
-  
-  /* 266 */ @js.native
-  object JsxElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxElement with Double]
-  
-  /* 276 */ @js.native
-  object JsxExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxExpression with Double]
-  
-  /* 270 */ @js.native
-  object JsxFragment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxFragment with Double]
-  
-  /* 268 */ @js.native
-  object JsxOpeningElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningElement with Double]
-  
-  /* 271 */ @js.native
-  object JsxOpeningFragment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxOpeningFragment with Double]
-  
-  /* 267 */ @js.native
-  object JsxSelfClosingElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxSelfClosingElement with Double]
-  
-  /* 275 */ @js.native
-  object JsxSpreadAttribute
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxSpreadAttribute with Double]
-  
-  /* 11 */ @js.native
-  object JsxText
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.JsxText with Double]
-  
-  /* 12 */ @js.native
-  object JsxTextAllWhiteSpaces extends TopLevel[JsxTextAllWhiteSpaces with Double]
-  
-  /* 134 */ @js.native
-  object KeyOfKeyword extends TopLevel[KeyOfKeyword with Double]
-  
-  /* 238 */ @js.native
-  object LabeledStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.LabeledStatement with Double]
-  
-  /* 74 */ @js.native
-  object LastAssignment extends TopLevel[LastAssignment with Double]
-  
-  /* 74 */ @js.native
-  object LastBinaryOperator extends TopLevel[LastBinaryOperator with Double]
-  
-  /* 74 */ @js.native
-  object LastCompoundAssignment extends TopLevel[LastCompoundAssignment with Double]
-  
-  /* 121 */ @js.native
-  object LastFutureReservedWord extends TopLevel[LastFutureReservedWord with Double]
-  
-  /* 322 */ @js.native
-  object LastJSDocNode extends TopLevel[LastJSDocNode with Double]
-  
-  /* 322 */ @js.native
-  object LastJSDocTagNode extends TopLevel[LastJSDocTagNode with Double]
-  
-  /* 152 */ @js.native
-  object LastKeyword extends TopLevel[LastKeyword with Double]
-  
-  /* 14 */ @js.native
-  object LastLiteralToken extends TopLevel[LastLiteralToken with Double]
-  
-  /* 74 */ @js.native
-  object LastPunctuation extends TopLevel[LastPunctuation with Double]
-  
-  /* 112 */ @js.native
-  object LastReservedWord extends TopLevel[LastReservedWord with Double]
-  
-  /* 241 */ @js.native
-  object LastStatement extends TopLevel[LastStatement with Double]
-  
-  /* 17 */ @js.native
-  object LastTemplateToken extends TopLevel[LastTemplateToken with Double]
-  
-  /* 152 */ @js.native
-  object LastToken extends TopLevel[LastToken with Double]
-  
-  /* 7 */ @js.native
-  object LastTriviaToken extends TopLevel[LastTriviaToken with Double]
-  
-  /* 188 */ @js.native
-  object LastTypeNode extends TopLevel[LastTypeNode with Double]
-  
-  /* 32 */ @js.native
-  object LessThanEqualsToken extends TopLevel[LessThanEqualsToken with Double]
-  
-  /* 69 */ @js.native
-  object LessThanLessThanEqualsToken extends TopLevel[LessThanLessThanEqualsToken with Double]
-  
-  /* 47 */ @js.native
-  object LessThanLessThanToken extends TopLevel[LessThanLessThanToken with Double]
-  
-  /* 30 */ @js.native
-  object LessThanSlashToken extends TopLevel[LessThanSlashToken with Double]
-  
-  /* 29 */ @js.native
-  object LessThanToken extends TopLevel[LessThanToken with Double]
-  
-  /* 115 */ @js.native
-  object LetKeyword extends TopLevel[LetKeyword with Double]
-  
-  /* 187 */ @js.native
-  object LiteralType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.LiteralType with Double]
-  
-  /* 186 */ @js.native
-  object MappedType extends TopLevel[MappedType with Double]
-  
-  /* 327 */ @js.native
-  object MergeDeclarationMarker extends TopLevel[MergeDeclarationMarker with Double]
-  
-  /* 219 */ @js.native
-  object MetaProperty
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.MetaProperty with Double]
-  
-  /* 161 */ @js.native
-  object MethodDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.MethodDeclaration with Double]
-  
-  /* 160 */ @js.native
-  object MethodSignature
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.MethodSignature with Double]
-  
-  /* 64 */ @js.native
-  object MinusEqualsToken extends TopLevel[MinusEqualsToken with Double]
-  
-  /* 46 */ @js.native
-  object MinusMinusToken extends TopLevel[MinusMinusToken with Double]
-  
-  /* 40 */ @js.native
-  object MinusToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.MinusToken with Double]
-  
-  /* 264 */ @js.native
-  object MissingDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.MissingDeclaration with Double]
-  
-  /* 250 */ @js.native
-  object ModuleBlock
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ModuleBlock with Double]
-  
-  /* 249 */ @js.native
-  object ModuleDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ModuleDeclaration with Double]
-  
-  /* 135 */ @js.native
-  object ModuleKeyword extends TopLevel[ModuleKeyword with Double]
-  
-  /* 3 */ @js.native
-  object MultiLineCommentTrivia extends TopLevel[MultiLineCommentTrivia with Double]
-  
-  /* 261 */ @js.native
-  object NamedExports
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NamedExports with Double]
-  
-  /* 257 */ @js.native
-  object NamedImports
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NamedImports with Double]
-  
-  /* 262 */ @js.native
-  object NamespaceExport
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NamespaceExport with Double]
-  
-  /* 252 */ @js.native
-  object NamespaceExportDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NamespaceExportDeclaration with Double]
-  
-  /* 256 */ @js.native
-  object NamespaceImport
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NamespaceImport with Double]
-  
-  /* 136 */ @js.native
-  object NamespaceKeyword extends TopLevel[NamespaceKeyword with Double]
-  
-  /* 137 */ @js.native
-  object NeverKeyword extends TopLevel[NeverKeyword with Double]
-  
-  /* 197 */ @js.native
-  object NewExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NewExpression with Double]
-  
-  /* 99 */ @js.native
-  object NewKeyword extends TopLevel[NewKeyword with Double]
-  
-  /* 4 */ @js.native
-  object NewLineTrivia extends TopLevel[NewLineTrivia with Double]
-  
-  /* 14 */ @js.native
-  object NoSubstitutionTemplateLiteral
-    extends TopLevel[
-          typingsJapgolly.typescript.mod.SyntaxKind.NoSubstitutionTemplateLiteral with Double
-        ]
-  
-  /* 218 */ @js.native
-  object NonNullExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NonNullExpression with Double]
-  
-  /* 324 */ @js.native
-  object NotEmittedStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NotEmittedStatement with Double]
-  
-  /* 100 */ @js.native
-  object NullKeyword extends TopLevel[NullKeyword with Double]
-  
-  /* 140 */ @js.native
-  object NumberKeyword extends TopLevel[NumberKeyword with Double]
-  
-  /* 8 */ @js.native
-  object NumericLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.NumericLiteral with Double]
-  
-  /* 189 */ @js.native
-  object ObjectBindingPattern
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ObjectBindingPattern with Double]
-  
-  /* 141 */ @js.native
-  object ObjectKeyword extends TopLevel[ObjectKeyword with Double]
-  
-  /* 193 */ @js.native
-  object ObjectLiteralExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ObjectLiteralExpression with Double]
-  
-  /* 152 */ @js.native
-  object OfKeyword extends TopLevel[OfKeyword with Double]
-  
-  /* 215 */ @js.native
-  object OmittedExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.OmittedExpression with Double]
-  
-  /* 18 */ @js.native
-  object OpenBraceToken extends TopLevel[OpenBraceToken with Double]
-  
-  /* 22 */ @js.native
-  object OpenBracketToken extends TopLevel[OpenBracketToken with Double]
-  
-  /* 20 */ @js.native
-  object OpenParenToken extends TopLevel[OpenParenToken with Double]
-  
-  /* 176 */ @js.native
-  object OptionalType extends TopLevel[OptionalType with Double]
-  
-  /* 116 */ @js.native
-  object PackageKeyword extends TopLevel[PackageKeyword with Double]
-  
-  /* 156 */ @js.native
-  object Parameter extends TopLevel[Parameter with Double]
-  
-  /* 200 */ @js.native
-  object ParenthesizedExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ParenthesizedExpression with Double]
-  
-  /* 182 */ @js.native
-  object ParenthesizedType extends TopLevel[ParenthesizedType with Double]
-  
-  /* 325 */ @js.native
-  object PartiallyEmittedExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PartiallyEmittedExpression with Double]
-  
-  /* 68 */ @js.native
-  object PercentEqualsToken extends TopLevel[PercentEqualsToken with Double]
-  
-  /* 44 */ @js.native
-  object PercentToken extends TopLevel[PercentToken with Double]
-  
-  /* 63 */ @js.native
-  object PlusEqualsToken extends TopLevel[PlusEqualsToken with Double]
-  
-  /* 45 */ @js.native
-  object PlusPlusToken extends TopLevel[PlusPlusToken with Double]
-  
-  /* 39 */ @js.native
-  object PlusToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PlusToken with Double]
-  
-  /* 208 */ @js.native
-  object PostfixUnaryExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PostfixUnaryExpression with Double]
-  
-  /* 207 */ @js.native
-  object PrefixUnaryExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PrefixUnaryExpression with Double]
-  
-  /* 76 */ @js.native
-  object PrivateIdentifier
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PrivateIdentifier with Double]
-  
-  /* 117 */ @js.native
-  object PrivateKeyword extends TopLevel[PrivateKeyword with Double]
-  
-  /* 194 */ @js.native
-  object PropertyAccessExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PropertyAccessExpression with Double]
-  
-  /* 281 */ @js.native
-  object PropertyAssignment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PropertyAssignment with Double]
-  
-  /* 159 */ @js.native
-  object PropertyDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PropertyDeclaration with Double]
-  
-  /* 158 */ @js.native
-  object PropertySignature
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.PropertySignature with Double]
-  
-  /* 118 */ @js.native
-  object ProtectedKeyword extends TopLevel[ProtectedKeyword with Double]
-  
-  /* 119 */ @js.native
-  object PublicKeyword extends TopLevel[PublicKeyword with Double]
-  
-  /* 153 */ @js.native
-  object QualifiedName
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.QualifiedName with Double]
-  
-  /* 28 */ @js.native
-  object QuestionDotToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.QuestionDotToken with Double]
-  
-  /* 60 */ @js.native
-  object QuestionQuestionToken extends TopLevel[QuestionQuestionToken with Double]
-  
-  /* 57 */ @js.native
-  object QuestionToken
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.QuestionToken with Double]
-  
-  /* 138 */ @js.native
-  object ReadonlyKeyword extends TopLevel[ReadonlyKeyword with Double]
-  
-  /* 13 */ @js.native
-  object RegularExpressionLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.RegularExpressionLiteral with Double]
-  
-  /* 139 */ @js.native
-  object RequireKeyword extends TopLevel[RequireKeyword with Double]
-  
-  /* 177 */ @js.native
-  object RestType extends TopLevel[RestType with Double]
-  
-  /* 101 */ @js.native
-  object ReturnKeyword extends TopLevel[ReturnKeyword with Double]
-  
-  /* 235 */ @js.native
-  object ReturnStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ReturnStatement with Double]
-  
-  /* 222 */ @js.native
-  object SemicolonClassElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SemicolonClassElement with Double]
-  
-  /* 26 */ @js.native
-  object SemicolonToken extends TopLevel[SemicolonToken with Double]
-  
-  /* 164 */ @js.native
-  object SetAccessor extends TopLevel[SetAccessor with Double]
-  
-  /* 142 */ @js.native
-  object SetKeyword extends TopLevel[SetKeyword with Double]
-  
-  /* 6 */ @js.native
-  object ShebangTrivia extends TopLevel[ShebangTrivia with Double]
-  
-  /* 282 */ @js.native
-  object ShorthandPropertyAssignment
-    extends TopLevel[
-          typingsJapgolly.typescript.mod.SyntaxKind.ShorthandPropertyAssignment with Double
-        ]
-  
-  /* 2 */ @js.native
-  object SingleLineCommentTrivia extends TopLevel[SingleLineCommentTrivia with Double]
-  
-  /* 67 */ @js.native
-  object SlashEqualsToken extends TopLevel[SlashEqualsToken with Double]
-  
-  /* 43 */ @js.native
-  object SlashToken extends TopLevel[SlashToken with Double]
-  
-  /* 290 */ @js.native
-  object SourceFile
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SourceFile with Double]
-  
-  /* 283 */ @js.native
-  object SpreadAssignment
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SpreadAssignment with Double]
-  
-  /* 213 */ @js.native
-  object SpreadElement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SpreadElement with Double]
-  
-  /* 120 */ @js.native
-  object StaticKeyword extends TopLevel[StaticKeyword with Double]
-  
-  /* 143 */ @js.native
-  object StringKeyword extends TopLevel[StringKeyword with Double]
-  
-  /* 10 */ @js.native
-  object StringLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.StringLiteral with Double]
-  
-  /* 102 */ @js.native
-  object SuperKeyword extends TopLevel[SuperKeyword with Double]
-  
-  /* 103 */ @js.native
-  object SwitchKeyword extends TopLevel[SwitchKeyword with Double]
-  
-  /* 237 */ @js.native
-  object SwitchStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SwitchStatement with Double]
-  
-  /* 144 */ @js.native
-  object SymbolKeyword extends TopLevel[SymbolKeyword with Double]
-  
-  /* 323 */ @js.native
-  object SyntaxList
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SyntaxList with Double]
-  
-  /* 220 */ @js.native
-  object SyntheticExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.SyntheticExpression with Double]
-  
-  /* 329 */ @js.native
-  object SyntheticReferenceExpression extends TopLevel[SyntheticReferenceExpression with Double]
-  
-  /* 198 */ @js.native
-  object TaggedTemplateExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TaggedTemplateExpression with Double]
-  
-  /* 211 */ @js.native
-  object TemplateExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TemplateExpression with Double]
-  
-  /* 15 */ @js.native
-  object TemplateHead
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TemplateHead with Double]
-  
-  /* 16 */ @js.native
-  object TemplateMiddle
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TemplateMiddle with Double]
-  
-  /* 221 */ @js.native
-  object TemplateSpan
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TemplateSpan with Double]
-  
-  /* 17 */ @js.native
-  object TemplateTail
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TemplateTail with Double]
-  
-  /* 104 */ @js.native
-  object ThisKeyword extends TopLevel[ThisKeyword with Double]
-  
-  /* 183 */ @js.native
-  object ThisType extends TopLevel[ThisType with Double]
-  
-  /* 105 */ @js.native
-  object ThrowKeyword extends TopLevel[ThrowKeyword with Double]
-  
-  /* 239 */ @js.native
-  object ThrowStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.ThrowStatement with Double]
-  
-  /* 54 */ @js.native
-  object TildeToken extends TopLevel[TildeToken with Double]
-  
-  /* 106 */ @js.native
-  object TrueKeyword extends TopLevel[TrueKeyword with Double]
-  
-  /* 107 */ @js.native
-  object TryKeyword extends TopLevel[TryKeyword with Double]
-  
-  /* 240 */ @js.native
-  object TryStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TryStatement with Double]
-  
-  /* 175 */ @js.native
-  object TupleType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TupleType with Double]
-  
-  /* 247 */ @js.native
-  object TypeAliasDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TypeAliasDeclaration with Double]
-  
-  /* 199 */ @js.native
-  object TypeAssertionExpression extends TopLevel[TypeAssertionExpression with Double]
-  
-  /* 145 */ @js.native
-  object TypeKeyword extends TopLevel[TypeKeyword with Double]
-  
-  /* 173 */ @js.native
-  object TypeLiteral extends TopLevel[TypeLiteral with Double]
-  
-  /* 204 */ @js.native
-  object TypeOfExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TypeOfExpression with Double]
-  
-  /* 108 */ @js.native
-  object TypeOfKeyword extends TopLevel[TypeOfKeyword with Double]
-  
-  /* 184 */ @js.native
-  object TypeOperator extends TopLevel[TypeOperator with Double]
-  
-  /* 155 */ @js.native
-  object TypeParameter
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TypeParameter with Double]
-  
-  /* 168 */ @js.native
-  object TypePredicate
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TypePredicate with Double]
-  
-  /* 172 */ @js.native
-  object TypeQuery extends TopLevel[TypeQuery with Double]
-  
-  /* 169 */ @js.native
-  object TypeReference
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.TypeReference with Double]
-  
-  /* 146 */ @js.native
-  object UndefinedKeyword extends TopLevel[UndefinedKeyword with Double]
-  
-  /* 178 */ @js.native
-  object UnionType
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.UnionType with Double]
-  
-  /* 147 */ @js.native
-  object UniqueKeyword extends TopLevel[UniqueKeyword with Double]
-  
-  /* 0 */ @js.native
-  object Unknown extends TopLevel[Unknown with Double]
-  
-  /* 148 */ @js.native
-  object UnknownKeyword extends TopLevel[UnknownKeyword with Double]
-  
-  /* 288 */ @js.native
-  object UnparsedInternalText extends TopLevel[UnparsedInternalText with Double]
-  
-  /* 286 */ @js.native
-  object UnparsedPrepend
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrepend with Double]
-  
-  /* 285 */ @js.native
-  object UnparsedPrologue
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.UnparsedPrologue with Double]
-  
-  /* 292 */ @js.native
-  object UnparsedSource
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.UnparsedSource with Double]
-  
-  /* 289 */ @js.native
-  object UnparsedSyntheticReference
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.UnparsedSyntheticReference with Double]
-  
-  /* 287 */ @js.native
-  object UnparsedText extends TopLevel[UnparsedText with Double]
-  
-  /* 109 */ @js.native
-  object VarKeyword extends TopLevel[VarKeyword with Double]
-  
-  /* 242 */ @js.native
-  object VariableDeclaration
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.VariableDeclaration with Double]
-  
-  /* 243 */ @js.native
-  object VariableDeclarationList
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.VariableDeclarationList with Double]
-  
-  /* 225 */ @js.native
-  object VariableStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.VariableStatement with Double]
-  
-  /* 205 */ @js.native
-  object VoidExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.VoidExpression with Double]
-  
-  /* 110 */ @js.native
-  object VoidKeyword extends TopLevel[VoidKeyword with Double]
-  
-  /* 111 */ @js.native
-  object WhileKeyword extends TopLevel[WhileKeyword with Double]
-  
-  /* 229 */ @js.native
-  object WhileStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.WhileStatement with Double]
-  
-  /* 5 */ @js.native
-  object WhitespaceTrivia extends TopLevel[WhitespaceTrivia with Double]
-  
-  /* 112 */ @js.native
-  object WithKeyword extends TopLevel[WithKeyword with Double]
-  
-  /* 236 */ @js.native
-  object WithStatement
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.WithStatement with Double]
-  
-  /* 212 */ @js.native
-  object YieldExpression
-    extends TopLevel[typingsJapgolly.typescript.mod.SyntaxKind.YieldExpression with Double]
-  
-  /* 121 */ @js.native
-  object YieldKeyword extends TopLevel[YieldKeyword with Double]
-  
+       with KeywordSyntaxKind
+  /* 125 */ val YieldKeyword: typingsJapgolly.typescript.mod.SyntaxKind.YieldKeyword & Double = js.native
 }
-

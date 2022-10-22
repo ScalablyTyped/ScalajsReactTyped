@@ -1,14 +1,14 @@
 package typingsJapgolly.postmark.mod
 
-import typingsJapgolly.postmark.accountClientMod.default
-import typingsJapgolly.postmark.modelsMod.ClientOptions.Configuration
+import typingsJapgolly.postmark.distClientAccountClientMod.default
+import typingsJapgolly.postmark.distClientModelsMod.ClientOptions.Configuration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("postmark", "AdminClient")
 @js.native
-class AdminClient protected () extends default {
+open class AdminClient protected () extends default {
   /**
     * Create a new AccountClient
     * @param accountToken The account token that should be used with requests.
@@ -17,4 +17,3 @@ class AdminClient protected () extends default {
   def this(accountToken: String) = this()
   def this(accountToken: String, configOptions: Configuration) = this()
 }
-

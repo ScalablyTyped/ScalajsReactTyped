@@ -1,32 +1,33 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ValueNode
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with AnyValueNode {
+  
   var nodes: js.Array[ValueNodeType]
+  
   var `type`: value
 }
-
 object ValueNode {
-  @scala.inline
-  def apply(
-    nodes: js.Array[ValueNodeType],
-    `type`: value,
-    after: String = null,
-    before: String = null,
-    name: String = null
-  ): ValueNode = {
+  
+  inline def apply(nodes: js.Array[ValueNodeType]): ValueNode = {
     val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("value")
     __obj.asInstanceOf[ValueNode]
   }
+  
+  extension [Self <: ValueNode](x: Self) {
+    
+    inline def setNodes(value: js.Array[ValueNodeType]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesVarargs(value: ValueNodeType*): Self = StObject.set(x, "nodes", js.Array(value*))
+    
+    inline def setType(value: value): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

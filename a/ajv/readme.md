@@ -1,7 +1,7 @@
 
 # Scala.js typings for ajv
 
-Typings are for version 6.11.0
+Typings are for version 8.11.0
 
 ## Library description:
 Another JSON Schema Validator
@@ -10,15 +10,15 @@ Another JSON Schema Validator
 | ------------------ | :-------------: |
 | Full name          | ajv |
 | Keywords           | JSON, schema, validator, validation, jsonschema, json-schema, json-schema-validator, json-schema-validation |
-| # releases         | 25 |
-| # dependents       | 2719 |
-| # downloads        | 1118376387 |
-| # stars            | 101 |
+| # releases         | 62 |
+| # dependents       | 0.0 |
+| # downloads        | 2.854892856666667E8 |
+| # stars            | 11304.0 |
 
 ## Links
-- [Homepage](https://github.com/epoberezkin/ajv)
-- [Bugs](https://github.com/epoberezkin/ajv/issues)
-- [Repository](https://github.com/epoberezkin/ajv)
+- [Homepage](https://ajv.js.org)
+- [Bugs](https://github.com/ajv-validator/ajv/issues)
+- [Repository](https://github.com/ajv-validator/ajv)
 - [Npm](https://www.npmjs.com/package/ajv)
     
 

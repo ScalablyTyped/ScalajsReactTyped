@@ -1,6 +1,7 @@
 
 # Scala.js typings for flexslider
 
+Typings are for version 2.7
 
 ## Library description:
 An awesome, fully responsive jQuery slider toolkit.
@@ -9,10 +10,10 @@ An awesome, fully responsive jQuery slider toolkit.
 | ------------------ | :-------------: |
 | Full name          | flexslider |
 | Keywords           | flexslider, jquery, slider, woocommerce, automattic |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 235726 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19476.333333333332 |
+| # stars            | 4942.0 |
 
 ## Links
 - [Homepage](https://github.com/woocommerce/FlexSlider#readme)

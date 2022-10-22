@@ -10,10 +10,10 @@ React package for DOM factory methods.
 | ------------------ | :-------------: |
 | Full name          | react-dom-factories |
 | Keywords           | react |
-| # releases         | 1 |
-| # dependents       | 105 |
-| # downloads        | 7595428 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1334687.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://facebook.github.io/react/)

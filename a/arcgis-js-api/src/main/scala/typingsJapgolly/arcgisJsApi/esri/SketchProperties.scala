@@ -1,117 +1,178 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalajs.dom.raw.HTMLElement
+import typingsJapgolly.arcgisJsApi.anon.MapViewPropertiestype2d
+import typingsJapgolly.arcgisJsApi.anon.SceneViewPropertiestype3d
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.continuous
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.horizontal
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.single
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.update
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SketchProperties extends WidgetProperties {
+trait SketchProperties
+  extends StObject
+     with WidgetProperties {
+  
   /**
     * Property controlling the visibility and order of create tool buttons.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
-    *
     * @default ["point", "polyline", "polygon", "rectangle", "circle"]
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#availableCreateTools)
     */
   var availableCreateTools: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed. By default, the user will be able to continuously create graphics with same geometry types.  **Possible Values:**
-    *
-    * Value | Description |
-    * ----- | ----------- |
-    * continuous | This is the default. Users can continue creating graphics with same geometry types.
-    * single | User can create a single graphic with the specified geometry type. User must choose an operation once the graphic is created.
-    * update | The graphic will be selected for an [update](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) operation once the `create` operation is completed.
-    *
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
+    * Defines the default behavior once the [create](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#create) operation is completed.
     *
     * @default continuous
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#creationMode)
     */
   var creationMode: js.UndefOr[single | continuous | update] = js.undefined
+  
   /**
     * Default create options set for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultCreateOptions)
     */
   var defaultCreateOptions: js.UndefOr[SketchDefaultCreateOptions] = js.undefined
+  
   /**
-    * Default update options set for the Sketch widget. Update options set on this property will be overwritten if the update options are changed when [update()](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#update) method is called.
+    * Default update options set for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#defaultUpdateOptions)
     */
   var defaultUpdateOptions: js.UndefOr[SketchDefaultUpdateOptions] = js.undefined
+  
   /**
     * The Sketch widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#iconClass)
     */
   var iconClass: js.UndefOr[String] = js.undefined
+  
   /**
-    * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget. The Sketch widget adds new [graphics](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) to this layer or can only update graphics stored in this layer.
+    * Options to configure the labels shown next to each segment of the geometry being created or updated.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#labelOptions)
+    */
+  var labelOptions: js.UndefOr[SketchLabelOptionsProperties] = js.undefined
+  
+  /**
+    * The [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html) associated with the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layer)
     */
   var layer: js.UndefOr[GraphicsLayerProperties] = js.undefined
+  
   /**
     * Determines the layout/orientation of the Sketch widget.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
-    *
     * @default horizontal
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#layout)
     */
   var layout: js.UndefOr[vertical | horizontal] = js.undefined
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html). Set this to link the Sketch widget to a specific view.
+    * The [SnappingOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-interactive-snapping-SnappingOptions.html) for sketching.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#snappingOptions)
+    */
+  var snappingOptions: js.UndefOr[SnappingOptionsProperties] = js.undefined
+  
+  /**
+    * Options to configure the tooltip shown next to the cursor when creating or updating graphics.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#tooltipOptions)
+    */
+  var tooltipOptions: js.UndefOr[SketchTooltipOptionsProperties] = js.undefined
+  
+  /**
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
+  var view: js.UndefOr[MapViewPropertiestype2d | SceneViewPropertiestype3d] = js.undefined
+  
   /**
-    * The view model for the Sketch widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [SketchViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch-SketchViewModel.html) class to access all properties and methods on the Sketch widget.
+    * The view model for the Sketch widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#viewModel)
     */
   var viewModel: js.UndefOr[SketchViewModelProperties] = js.undefined
+  
+  /**
+    * The visible elements that are displayed within the widget.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#visibleElements)
+    */
+  var visibleElements: js.UndefOr[SketchVisibleElements] = js.undefined
 }
-
 object SketchProperties {
-  @scala.inline
-  def apply(
-    availableCreateTools: js.Array[String] = null,
-    container: String | HTMLElement = null,
-    creationMode: single | continuous | update = null,
-    defaultCreateOptions: SketchDefaultCreateOptions = null,
-    defaultUpdateOptions: SketchDefaultUpdateOptions = null,
-    destroyed: js.UndefOr[Boolean] = js.undefined,
-    iconClass: String = null,
-    id: String = null,
-    label: String = null,
-    layer: GraphicsLayerProperties = null,
-    layout: vertical | horizontal = null,
-    view: MapViewProperties | SceneViewProperties = null,
-    viewModel: SketchViewModelProperties = null
-  ): SketchProperties = {
+  
+  inline def apply(): SketchProperties = {
     val __obj = js.Dynamic.literal()
-    if (availableCreateTools != null) __obj.updateDynamic("availableCreateTools")(availableCreateTools.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (creationMode != null) __obj.updateDynamic("creationMode")(creationMode.asInstanceOf[js.Any])
-    if (defaultCreateOptions != null) __obj.updateDynamic("defaultCreateOptions")(defaultCreateOptions.asInstanceOf[js.Any])
-    if (defaultUpdateOptions != null) __obj.updateDynamic("defaultUpdateOptions")(defaultUpdateOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(destroyed)) __obj.updateDynamic("destroyed")(destroyed.asInstanceOf[js.Any])
-    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchProperties]
   }
+  
+  extension [Self <: SketchProperties](x: Self) {
+    
+    inline def setAvailableCreateTools(value: js.Array[String]): Self = StObject.set(x, "availableCreateTools", value.asInstanceOf[js.Any])
+    
+    inline def setAvailableCreateToolsUndefined: Self = StObject.set(x, "availableCreateTools", js.undefined)
+    
+    inline def setAvailableCreateToolsVarargs(value: String*): Self = StObject.set(x, "availableCreateTools", js.Array(value*))
+    
+    inline def setCreationMode(value: single | continuous | update): Self = StObject.set(x, "creationMode", value.asInstanceOf[js.Any])
+    
+    inline def setCreationModeUndefined: Self = StObject.set(x, "creationMode", js.undefined)
+    
+    inline def setDefaultCreateOptions(value: SketchDefaultCreateOptions): Self = StObject.set(x, "defaultCreateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCreateOptionsUndefined: Self = StObject.set(x, "defaultCreateOptions", js.undefined)
+    
+    inline def setDefaultUpdateOptions(value: SketchDefaultUpdateOptions): Self = StObject.set(x, "defaultUpdateOptions", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUpdateOptionsUndefined: Self = StObject.set(x, "defaultUpdateOptions", js.undefined)
+    
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    
+    inline def setLabelOptions(value: SketchLabelOptionsProperties): Self = StObject.set(x, "labelOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLabelOptionsUndefined: Self = StObject.set(x, "labelOptions", js.undefined)
+    
+    inline def setLayer(value: GraphicsLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setLayout(value: vertical | horizontal): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setSnappingOptions(value: SnappingOptionsProperties): Self = StObject.set(x, "snappingOptions", value.asInstanceOf[js.Any])
+    
+    inline def setSnappingOptionsUndefined: Self = StObject.set(x, "snappingOptions", js.undefined)
+    
+    inline def setTooltipOptions(value: SketchTooltipOptionsProperties): Self = StObject.set(x, "tooltipOptions", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipOptionsUndefined: Self = StObject.set(x, "tooltipOptions", js.undefined)
+    
+    inline def setView(value: MapViewPropertiestype2d | SceneViewPropertiestype3d): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewModel(value: SketchViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setVisibleElements(value: SketchVisibleElements): Self = StObject.set(x, "visibleElements", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleElementsUndefined: Self = StObject.set(x, "visibleElements", js.undefined)
+  }
 }
-

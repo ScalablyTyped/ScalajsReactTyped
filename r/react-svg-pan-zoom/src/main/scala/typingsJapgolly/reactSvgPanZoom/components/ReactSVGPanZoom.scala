@@ -1,104 +1,105 @@
 package typingsJapgolly.reactSvgPanZoom.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Component
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Component
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.react.mod.StatelessComponent
-import typingsJapgolly.reactSvgPanZoom.AnonBackground
-import typingsJapgolly.reactSvgPanZoom.AnonPosition
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.reactSvgPanZoom.anon.Background
+import typingsJapgolly.reactSvgPanZoom.anon.Position
 import typingsJapgolly.reactSvgPanZoom.mod.Props
 import typingsJapgolly.reactSvgPanZoom.mod.Tool
 import typingsJapgolly.reactSvgPanZoom.mod.Value
 import typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent
+import typingsJapgolly.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactSVGPanZoom {
-  def apply(
+  
+  inline def apply(
     height: Double,
-    tool: Tool,
-    width: Double,
     onChangeTool: Tool => Callback,
     onChangeValue: Value => Callback,
-    SVGBackground: String = null,
-    background: String = null,
-    className: String = null,
-    customMiniature: Element | ComponentType[js.Object] = null,
-    customToolbar: (Component[js.Object, js.Object]) | StatelessComponent[_] = null,
-    detectAutoPan: js.UndefOr[Boolean] = js.undefined,
-    detectPinchGesture: js.UndefOr[Boolean] = js.undefined,
-    detectWheel: js.UndefOr[Boolean] = js.undefined,
-    disableDoubleClickZoomWithToolAuto: js.UndefOr[Boolean] = js.undefined,
-    miniatureProps: AnonBackground = null,
-    modifierKeys: js.Array[String] = null,
-    onClick: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onDoubleClick: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onMouseDown: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onMouseMove: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onMouseUp: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onPan: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    onZoom: /* event */ ViewerMouseEvent[js.Any] => Callback = null,
-    preventPanOutside: js.UndefOr[Boolean] = js.undefined,
-    scaleFactor: Int | Double = null,
-    scaleFactorMax: Int | Double = null,
-    scaleFactorMin: Int | Double = null,
-    scaleFactorOnWheel: Int | Double = null,
-    style: js.Object = null,
-    toolbarProps: AnonPosition = null,
-    value: Value = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, typingsJapgolly.reactSvgPanZoom.mod.ReactSVGPanZoom, Unit, Props] = {
-    val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("onChangeTool")(js.Any.fromFunction1((t0: typingsJapgolly.reactSvgPanZoom.mod.Tool) => onChangeTool(t0).runNow()))
-    __obj.updateDynamic("onChangeValue")(js.Any.fromFunction1((t0: typingsJapgolly.reactSvgPanZoom.mod.Value) => onChangeValue(t0).runNow()))
-    if (SVGBackground != null) __obj.updateDynamic("SVGBackground")(SVGBackground.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customMiniature != null) __obj.updateDynamic("customMiniature")(customMiniature.asInstanceOf[js.Any])
-    if (customToolbar != null) __obj.updateDynamic("customToolbar")(customToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectAutoPan)) __obj.updateDynamic("detectAutoPan")(detectAutoPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectPinchGesture)) __obj.updateDynamic("detectPinchGesture")(detectPinchGesture.asInstanceOf[js.Any])
-    if (!js.isUndefined(detectWheel)) __obj.updateDynamic("detectWheel")(detectWheel.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleClickZoomWithToolAuto)) __obj.updateDynamic("disableDoubleClickZoomWithToolAuto")(disableDoubleClickZoomWithToolAuto.asInstanceOf[js.Any])
-    if (miniatureProps != null) __obj.updateDynamic("miniatureProps")(miniatureProps.asInstanceOf[js.Any])
-    if (modifierKeys != null) __obj.updateDynamic("modifierKeys")(modifierKeys.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onClick(t0).runNow()))
-    if (onDoubleClick != null) __obj.updateDynamic("onDoubleClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onDoubleClick(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onMouseDown(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onMouseMove(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onMouseUp(t0).runNow()))
-    if (onPan != null) __obj.updateDynamic("onPan")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onPan(t0).runNow()))
-    if (onZoom != null) __obj.updateDynamic("onZoom")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactSvgPanZoom.mod.ViewerMouseEvent[js.Any]) => onZoom(t0).runNow()))
-    if (!js.isUndefined(preventPanOutside)) __obj.updateDynamic("preventPanOutside")(preventPanOutside.asInstanceOf[js.Any])
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
-    if (scaleFactorMax != null) __obj.updateDynamic("scaleFactorMax")(scaleFactorMax.asInstanceOf[js.Any])
-    if (scaleFactorMin != null) __obj.updateDynamic("scaleFactorMin")(scaleFactorMin.asInstanceOf[js.Any])
-    if (scaleFactorOnWheel != null) __obj.updateDynamic("scaleFactorOnWheel")(scaleFactorOnWheel.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (toolbarProps != null) __obj.updateDynamic("toolbarProps")(toolbarProps.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSvgPanZoom.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSvgPanZoom.mod.ReactSVGPanZoom](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSvgPanZoom.mod.Props])(children: _*)
+    tool: Tool,
+    width: Double
+  ): Builder = {
+    val __props = js.Dynamic.literal(height = height.asInstanceOf[js.Any], onChangeTool = js.Any.fromFunction1((t0: Tool) => onChangeTool(t0).runNow()), onChangeValue = js.Any.fromFunction1((t0: Value) => onChangeValue(t0).runNow()), tool = tool.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("react-svg-pan-zoom", "ReactSVGPanZoom")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSvgPanZoom.mod.ReactSVGPanZoom] {
+    
+    inline def SVGBackground(value: String): this.type = set("SVGBackground", value.asInstanceOf[js.Any])
+    
+    inline def background(value: String): this.type = set("background", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def customMiniature(value: Element | ComponentType[js.Object]): this.type = set("customMiniature", value.asInstanceOf[js.Any])
+    
+    inline def customMiniatureVdomElement(value: VdomElement): this.type = set("customMiniature", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def customToolbar(value: (Component[Any & js.Object, js.Object]) | FunctionComponent[Any]): this.type = set("customToolbar", value.asInstanceOf[js.Any])
+    
+    inline def defaultTool(value: Exclude[Tool, /* "auto" */ String]): this.type = set("defaultTool", value.asInstanceOf[js.Any])
+    
+    inline def detectAutoPan(value: Boolean): this.type = set("detectAutoPan", value.asInstanceOf[js.Any])
+    
+    inline def detectPinchGesture(value: Boolean): this.type = set("detectPinchGesture", value.asInstanceOf[js.Any])
+    
+    inline def detectWheel(value: Boolean): this.type = set("detectWheel", value.asInstanceOf[js.Any])
+    
+    inline def disableDoubleClickZoomWithToolAuto(value: Boolean): this.type = set("disableDoubleClickZoomWithToolAuto", value.asInstanceOf[js.Any])
+    
+    inline def miniatureProps(value: Background): this.type = set("miniatureProps", value.asInstanceOf[js.Any])
+    
+    inline def modifierKeys(value: js.Array[String]): this.type = set("modifierKeys", value.asInstanceOf[js.Any])
+    
+    inline def modifierKeysVarargs(value: String*): this.type = set("modifierKeys", js.Array(value*))
+    
+    inline def onClick(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onDoubleClick(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onDoubleClick", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onMouseDown(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onMouseMove(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onMouseMove", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onMouseUp(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onPan(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onPan", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def onZoom(value: /* event */ ViewerMouseEvent[Any] => Callback): this.type = set("onZoom", js.Any.fromFunction1((t0: /* event */ ViewerMouseEvent[Any]) => value(t0).runNow()))
+    
+    inline def preventPanOutside(value: Boolean): this.type = set("preventPanOutside", value.asInstanceOf[js.Any])
+    
+    inline def scaleFactor(value: Double): this.type = set("scaleFactor", value.asInstanceOf[js.Any])
+    
+    inline def scaleFactorMax(value: Double): this.type = set("scaleFactorMax", value.asInstanceOf[js.Any])
+    
+    inline def scaleFactorMin(value: Double): this.type = set("scaleFactorMin", value.asInstanceOf[js.Any])
+    
+    inline def scaleFactorOnWheel(value: Double): this.type = set("scaleFactorOnWheel", value.asInstanceOf[js.Any])
+    
+    inline def style(value: js.Object): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def toolbarProps(value: Position): this.type = set("toolbarProps", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Value): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def valueNull: this.type = set("value", null)
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

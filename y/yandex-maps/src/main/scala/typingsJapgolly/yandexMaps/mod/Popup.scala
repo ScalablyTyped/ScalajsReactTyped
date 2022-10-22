@@ -1,17 +1,20 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Popup")
 @js.native
-class Popup[T] protected () extends IPopup[T] {
+open class Popup[T] protected ()
+  extends StObject
+     with IPopup[T] {
   def this(map: Map_) = this()
   def this(map: Map_, options: IPopupOptions) = this()
+  
   /* CompleteClass */
-  override var events: IEventManager = js.native
+  var events: IEventManager[js.Object] = js.native
+  
   /* CompleteClass */
-  override var options: IOptionManager = js.native
+  var options: IOptionManager = js.native
 }
-

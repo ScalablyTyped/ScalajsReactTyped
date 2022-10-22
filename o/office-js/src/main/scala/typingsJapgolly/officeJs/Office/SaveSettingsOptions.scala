@@ -1,30 +1,41 @@
 package typingsJapgolly.officeJs.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for saving settings.
   */
-trait SaveSettingsOptions extends js.Object {
+trait SaveSettingsOptions extends StObject {
+  
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.undefined
+  var asyncContext: js.UndefOr[Any] = js.undefined
+  
   /**
-    * Indicates whether the setting will be replaced if stale.
+    * **Warning**: This setting has been deprecated and should not be used. It has no effect on most platforms and will cause errors if set to `false` in Excel on the web.
+    * 
+    * @deprecated `overwriteIfStale` is no longer supported.
     */
   var overwriteIfStale: js.UndefOr[Boolean] = js.undefined
 }
-
 object SaveSettingsOptions {
-  @scala.inline
-  def apply(asyncContext: js.Any = null, overwriteIfStale: js.UndefOr[Boolean] = js.undefined): SaveSettingsOptions = {
+  
+  inline def apply(): SaveSettingsOptions = {
     val __obj = js.Dynamic.literal()
-    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwriteIfStale)) __obj.updateDynamic("overwriteIfStale")(overwriteIfStale.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveSettingsOptions]
   }
+  
+  extension [Self <: SaveSettingsOptions](x: Self) {
+    
+    inline def setAsyncContext(value: Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    
+    inline def setOverwriteIfStale(value: Boolean): Self = StObject.set(x, "overwriteIfStale", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteIfStaleUndefined: Self = StObject.set(x, "overwriteIfStale", js.undefined)
+  }
 }
-

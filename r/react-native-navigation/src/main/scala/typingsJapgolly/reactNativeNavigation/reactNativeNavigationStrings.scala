@@ -1,347 +1,550 @@
 package typingsJapgolly.reactNativeNavigation
 
-import typingsJapgolly.reactNativeNavigation.optionsMod.FontWeight
-import typingsJapgolly.reactNativeNavigation.optionsMod.LayoutOrientation
-import typingsJapgolly.reactNativeNavigation.optionsMod.SystemItemIcon
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesComponentEventsMod.ComponentType
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontStyle
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontWeight
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesOptionsMod.FontWeightIOS
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesOptionsMod.LayoutOrientation
+import typingsJapgolly.reactNativeNavigation.libDistSrcInterfacesOptionsMod.SystemItemIcon
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeNavigationStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait `100`
+    extends StObject
+       with FontWeight
+  inline def `100`: `100` = "100".asInstanceOf[`100`]
+  
+  @js.native
+  sealed trait `200`
+    extends StObject
+       with FontWeight
+  inline def `200`: `200` = "200".asInstanceOf[`200`]
+  
+  @js.native
+  sealed trait `300`
+    extends StObject
+       with FontWeight
+  inline def `300`: `300` = "300".asInstanceOf[`300`]
+  
+  @js.native
+  sealed trait `400`
+    extends StObject
+       with FontWeight
+  inline def `400`: `400` = "400".asInstanceOf[`400`]
+  
+  @js.native
+  sealed trait `500`
+    extends StObject
+       with FontWeight
+  inline def `500`: `500` = "500".asInstanceOf[`500`]
+  
+  @js.native
+  sealed trait `600`
+    extends StObject
+       with FontWeight
+  inline def `600`: `600` = "600".asInstanceOf[`600`]
+  
+  @js.native
+  sealed trait `700`
+    extends StObject
+       with FontWeight
+  inline def `700`: `700` = "700".asInstanceOf[`700`]
+  
+  @js.native
+  sealed trait `800`
+    extends StObject
+       with FontWeight
+  inline def `800`: `800` = "800".asInstanceOf[`800`]
+  
+  @js.native
+  sealed trait `900`
+    extends StObject
+       with FontWeight
+  inline def `900`: `900` = "900".asInstanceOf[`900`]
+  
+  @js.native
+  sealed trait Component
+    extends StObject
+       with ComponentType
+  inline def Component: Component = "Component".asInstanceOf[Component]
+  
+  @js.native
+  sealed trait TopBarBackground
+    extends StObject
+       with ComponentType
+  inline def TopBarBackground: TopBarBackground = "TopBarBackground".asInstanceOf[TopBarBackground]
+  
+  @js.native
+  sealed trait TopBarButton
+    extends StObject
+       with ComponentType
+  inline def TopBarButton: TopBarButton = "TopBarButton".asInstanceOf[TopBarButton]
+  
+  @js.native
+  sealed trait TopBarTitle
+    extends StObject
+       with ComponentType
+  inline def TopBarTitle: TopBarTitle = "TopBarTitle".asInstanceOf[TopBarTitle]
+  
+  @js.native
+  sealed trait accelerate extends StObject
+  inline def accelerate: accelerate = "accelerate".asInstanceOf[accelerate]
+  
+  @js.native
+  sealed trait accelerateDecelerate extends StObject
+  inline def accelerateDecelerate: accelerateDecelerate = "accelerateDecelerate".asInstanceOf[accelerateDecelerate]
+  
+  @js.native
+  sealed trait action
+    extends StObject
+       with SystemItemIcon
+  inline def action: action = "action".asInstanceOf[action]
+  
+  @js.native
+  sealed trait add
+    extends StObject
+       with SystemItemIcon
+  inline def add: add = "add".asInstanceOf[add]
+  
+  @js.native
+  sealed trait afterInitialTab extends StObject
+  inline def afterInitialTab: afterInitialTab = "afterInitialTab".asInstanceOf[afterInitialTab]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait alwaysHide extends StObject
+  inline def alwaysHide: alwaysHide = "alwaysHide".asInstanceOf[alwaysHide]
+  
+  @js.native
+  sealed trait alwaysShow extends StObject
+  inline def alwaysShow: alwaysShow = "alwaysShow".asInstanceOf[alwaysShow]
+  
+  @js.native
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait bezel extends StObject
+  inline def bezel: bezel = "bezel".asInstanceOf[bezel]
+  
+  @js.native
+  sealed trait black
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def black: black = "black".asInstanceOf[black]
+  
+  @js.native
+  sealed trait bold
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def bold: bold = "bold".asInstanceOf[bold]
+  
+  @js.native
+  sealed trait bookmarks
+    extends StObject
+       with SystemItemIcon
+  inline def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
+  
+  @js.native
+  sealed trait camera
+    extends StObject
+       with SystemItemIcon
+  inline def camera: camera = "camera".asInstanceOf[camera]
+  
+  @js.native
+  sealed trait cancel
+    extends StObject
+       with SystemItemIcon
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
+  
+  @js.native
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait compose
+    extends StObject
+       with SystemItemIcon
+  inline def compose: compose = "compose".asInstanceOf[compose]
+  
   @js.native
-  sealed trait accelerate extends js.Object
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait action extends SystemItemIcon
+  sealed trait decelerate extends StObject
+  inline def decelerate: decelerate = "decelerate".asInstanceOf[decelerate]
   
   @js.native
-  sealed trait add extends SystemItemIcon
+  sealed trait decelerateAccelerate extends StObject
+  inline def decelerateAccelerate: decelerateAccelerate = "decelerateAccelerate".asInstanceOf[decelerateAccelerate]
   
   @js.native
-  sealed trait afterInitialTab extends js.Object
+  sealed trait demibold
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def demibold: demibold = "demibold".asInstanceOf[demibold]
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait destructive extends StObject
+  inline def destructive: destructive = "destructive".asInstanceOf[destructive]
   
   @js.native
-  sealed trait alwaysHide extends js.Object
+  sealed trait done
+    extends StObject
+       with SystemItemIcon
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait alwaysShow extends js.Object
+  sealed trait edit
+    extends StObject
+       with SystemItemIcon
+  inline def edit: edit = "edit".asInstanceOf[edit]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait entireScreen extends StObject
+  inline def entireScreen: entireScreen = "entireScreen".asInstanceOf[entireScreen]
   
   @js.native
-  sealed trait bezel extends js.Object
+  sealed trait exit extends StObject
+  inline def exit: exit = "exit".asInstanceOf[exit]
   
   @js.native
-  sealed trait black extends FontWeight
+  sealed trait extrabold
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def extrabold: extrabold = "extrabold".asInstanceOf[extrabold]
   
   @js.native
-  sealed trait bold extends FontWeight
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait bookmarks extends SystemItemIcon
+  sealed trait fastForward
+    extends StObject
+       with SystemItemIcon
+  inline def fastForward: fastForward = "fastForward".asInstanceOf[fastForward]
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait fastOutSlowIn extends StObject
+  inline def fastOutSlowIn: fastOutSlowIn = "fastOutSlowIn".asInstanceOf[fastOutSlowIn]
   
   @js.native
-  sealed trait camera extends SystemItemIcon
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait cancel extends SystemItemIcon
+  sealed trait first extends StObject
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait fixedSpace
+    extends StObject
+       with SystemItemIcon
+  inline def fixedSpace: fixedSpace = "fixedSpace".asInstanceOf[fixedSpace]
   
   @js.native
-  sealed trait compose extends SystemItemIcon
+  sealed trait flexibleSpace
+    extends StObject
+       with SystemItemIcon
+  inline def flexibleSpace: flexibleSpace = "flexibleSpace".asInstanceOf[flexibleSpace]
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait generic extends StObject
+  inline def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
-  sealed trait decelerate extends js.Object
+  sealed trait heavy
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def heavy: heavy = "heavy".asInstanceOf[heavy]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait destructive extends js.Object
+  sealed trait ifRoom extends StObject
+  inline def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
   
   @js.native
-  sealed trait done extends SystemItemIcon
+  sealed trait italic
+    extends StObject
+       with FontStyle
+  inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait edit extends SystemItemIcon
+  sealed trait landscape
+    extends StObject
+       with LayoutOrientation
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait entireScreen extends js.Object
+  sealed trait leading extends StObject
+  inline def leading: leading = "leading".asInstanceOf[leading]
   
   @js.native
-  sealed trait fastForward extends SystemItemIcon
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait light
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait fixedSpace extends SystemItemIcon
+  sealed trait linear extends StObject
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait flexibleSpace extends SystemItemIcon
+  sealed trait locale extends StObject
+  inline def locale: locale = "locale".asInstanceOf[locale]
   
   @js.native
-  sealed trait heavy extends FontWeight
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait medium
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait ifRoom extends js.Object
+  sealed trait mini extends StObject
+  inline def mini: mini = "mini".asInstanceOf[mini]
   
   @js.native
-  sealed trait landscape extends LayoutOrientation
+  sealed trait minimal extends StObject
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait leading extends js.Object
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait light extends FontWeight
+  sealed trait normal
+    extends StObject
+       with FontStyle
+       with FontWeight
+       with FontWeightIOS
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait onSwitchToTab extends StObject
+  inline def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
   
   @js.native
-  sealed trait medium extends FontWeight
+  sealed trait organize
+    extends StObject
+       with SystemItemIcon
+  inline def organize: organize = "organize".asInstanceOf[organize]
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait overlay extends StObject
+  inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait onSwitchToTab extends js.Object
+  sealed trait overshoot extends StObject
+  inline def overshoot: overshoot = "overshoot".asInstanceOf[overshoot]
   
   @js.native
-  sealed trait organize extends SystemItemIcon
+  sealed trait pause
+    extends StObject
+       with SystemItemIcon
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait overlay extends js.Object
+  sealed trait play
+    extends StObject
+       with SystemItemIcon
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait pause extends SystemItemIcon
+  sealed trait portrait
+    extends StObject
+       with LayoutOrientation
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
   
   @js.native
-  sealed trait play extends SystemItemIcon
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait portrait extends LayoutOrientation
+  sealed trait redo
+    extends StObject
+       with SystemItemIcon
+  inline def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
-  sealed trait redo extends SystemItemIcon
+  sealed trait refresh
+    extends StObject
+       with SystemItemIcon
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait refresh extends SystemItemIcon
+  sealed trait regular
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait regular extends FontWeight
+  sealed trait reply
+    extends StObject
+       with SystemItemIcon
+  inline def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
-  sealed trait reply extends SystemItemIcon
+  sealed trait rewind
+    extends StObject
+       with SystemItemIcon
+  inline def rewind: rewind = "rewind".asInstanceOf[rewind]
   
   @js.native
-  sealed trait rewind extends SystemItemIcon
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait save
+    extends StObject
+       with SystemItemIcon
+  inline def save: save = "save".asInstanceOf[save]
   
   @js.native
-  sealed trait save extends SystemItemIcon
+  sealed trait search
+    extends StObject
+       with SystemItemIcon
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait search extends SystemItemIcon
+  sealed trait selected extends StObject
+  inline def selected: selected = "selected".asInstanceOf[selected]
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait semibold
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def semibold: semibold = "semibold".asInstanceOf[semibold]
   
   @js.native
-  sealed trait semibold extends FontWeight
+  sealed trait sensor
+    extends StObject
+       with LayoutOrientation
+  inline def sensor: sensor = "sensor".asInstanceOf[sensor]
   
   @js.native
-  sealed trait sharedElement extends js.Object
+  sealed trait sensorLandscape
+    extends StObject
+       with LayoutOrientation
+  inline def sensorLandscape: sensorLandscape = "sensorLandscape".asInstanceOf[sensorLandscape]
   
   @js.native
-  sealed trait showWhenActive extends js.Object
+  sealed trait sensorPortrait
+    extends StObject
+       with LayoutOrientation
+  inline def sensorPortrait: sensorPortrait = "sensorPortrait".asInstanceOf[sensorPortrait]
   
   @js.native
-  sealed trait stop extends SystemItemIcon
+  sealed trait showWhenActive extends StObject
+  inline def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
   
   @js.native
-  sealed trait thin extends FontWeight
+  sealed trait showWhenActiveForce extends StObject
+  inline def showWhenActiveForce: showWhenActiveForce = "showWhenActiveForce".asInstanceOf[showWhenActiveForce]
   
   @js.native
-  sealed trait together extends js.Object
+  sealed trait sidebar extends StObject
+  inline def sidebar: sidebar = "sidebar".asInstanceOf[sidebar]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait trailing extends js.Object
+  sealed trait spring extends StObject
+  inline def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait trash extends SystemItemIcon
+  sealed trait stop
+    extends StObject
+       with SystemItemIcon
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait ultraLight extends FontWeight
+  sealed trait thin
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def thin: thin = "thin".asInstanceOf[thin]
   
   @js.native
-  sealed trait undo extends SystemItemIcon
+  sealed trait together extends StObject
+  inline def together: together = "together".asInstanceOf[together]
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait trailing extends StObject
+  inline def trailing: trailing = "trailing".asInstanceOf[trailing]
   
   @js.native
-  sealed trait withText extends js.Object
+  sealed trait trash
+    extends StObject
+       with SystemItemIcon
+  inline def trash: trash = "trash".asInstanceOf[trash]
   
-  @scala.inline
-  def accelerate: accelerate = "accelerate".asInstanceOf[accelerate]
-  @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def afterInitialTab: afterInitialTab = "afterInitialTab".asInstanceOf[afterInitialTab]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def alwaysHide: alwaysHide = "alwaysHide".asInstanceOf[alwaysHide]
-  @scala.inline
-  def alwaysShow: alwaysShow = "alwaysShow".asInstanceOf[alwaysShow]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bezel: bezel = "bezel".asInstanceOf[bezel]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def compose: compose = "compose".asInstanceOf[compose]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def decelerate: decelerate = "decelerate".asInstanceOf[decelerate]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def destructive: destructive = "destructive".asInstanceOf[destructive]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def edit: edit = "edit".asInstanceOf[edit]
-  @scala.inline
-  def entireScreen: entireScreen = "entireScreen".asInstanceOf[entireScreen]
-  @scala.inline
-  def fastForward: fastForward = "fastForward".asInstanceOf[fastForward]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def fixedSpace: fixedSpace = "fixedSpace".asInstanceOf[fixedSpace]
-  @scala.inline
-  def flexibleSpace: flexibleSpace = "flexibleSpace".asInstanceOf[flexibleSpace]
-  @scala.inline
-  def heavy: heavy = "heavy".asInstanceOf[heavy]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def ifRoom: ifRoom = "ifRoom".asInstanceOf[ifRoom]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def leading: leading = "leading".asInstanceOf[leading]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def onSwitchToTab: onSwitchToTab = "onSwitchToTab".asInstanceOf[onSwitchToTab]
-  @scala.inline
-  def organize: organize = "organize".asInstanceOf[organize]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def redo: redo = "redo".asInstanceOf[redo]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def regular: regular = "regular".asInstanceOf[regular]
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
-  @scala.inline
-  def rewind: rewind = "rewind".asInstanceOf[rewind]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
-  @scala.inline
-  def save: save = "save".asInstanceOf[save]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def semibold: semibold = "semibold".asInstanceOf[semibold]
-  @scala.inline
-  def sharedElement: sharedElement = "sharedElement".asInstanceOf[sharedElement]
-  @scala.inline
-  def showWhenActive: showWhenActive = "showWhenActive".asInstanceOf[showWhenActive]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def thin: thin = "thin".asInstanceOf[thin]
-  @scala.inline
-  def together: together = "together".asInstanceOf[together]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def trailing: trailing = "trailing".asInstanceOf[trailing]
-  @scala.inline
-  def trash: trash = "trash".asInstanceOf[trash]
-  @scala.inline
-  def ultraLight: ultraLight = "ultraLight".asInstanceOf[ultraLight]
-  @scala.inline
-  def undo: undo = "undo".asInstanceOf[undo]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
-  @scala.inline
-  def withText: withText = "withText".asInstanceOf[withText]
+  @js.native
+  sealed trait ultrabold
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def ultrabold: ultrabold = "ultrabold".asInstanceOf[ultrabold]
+  
+  @js.native
+  sealed trait ultralight
+    extends StObject
+       with FontWeight
+       with FontWeightIOS
+  inline def ultralight: ultralight = "ultralight".asInstanceOf[ultralight]
+  
+  @js.native
+  sealed trait undo
+    extends StObject
+       with SystemItemIcon
+  inline def undo: undo = "undo".asInstanceOf[undo]
+  
+  @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
+  
+  @js.native
+  sealed trait withText extends StObject
+  inline def withText: withText = "withText".asInstanceOf[withText]
 }
-

@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage.Search
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FolderDepth extends js.Object
-
+sealed trait FolderDepth extends StObject
 @JSGlobal("Windows.Storage.Search.FolderDepth")
 @js.native
-object FolderDepth extends js.Object {
-  @js.native
-  sealed trait deep extends FolderDepth
+object FolderDepth extends StObject {
   
   @js.native
-  sealed trait shallow extends FolderDepth
+  sealed trait deep
+    extends StObject
+       with FolderDepth
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FolderDepth with Double] = js.native
-  /* 1 */ @js.native
-  object deep extends TopLevel[deep with Double]
-  
-  /* 0 */ @js.native
-  object shallow extends TopLevel[shallow with Double]
-  
+  @js.native
+  sealed trait shallow
+    extends StObject
+       with FolderDepth
 }
-

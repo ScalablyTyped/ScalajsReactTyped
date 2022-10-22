@@ -1,39 +1,26 @@
 package typingsJapgolly.rrc.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rrc.LocationDescriptorObjectL
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.rrc.anon.Pathname
 import typingsJapgolly.rrc.mod.RouteConfiguration
 import typingsJapgolly.rrc.mod.SwitchProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ConfigSwitch {
-  def apply(
-    location: LocationDescriptorObjectL,
-    routes: js.Array[RouteConfiguration],
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SwitchProps, typingsJapgolly.rrc.mod.ConfigSwitch, Unit, SwitchProps] = {
-    val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
   
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rrc.mod.SwitchProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rrc.mod.ConfigSwitch](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rrc.mod.SwitchProps])(children: _*)
+  inline def apply(
+    location: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify H.LocationDescriptorObject */ Any) & Pathname,
+    routes: js.Array[RouteConfiguration]
+  ): Default[typingsJapgolly.rrc.mod.ConfigSwitch] = {
+    val __props = js.Dynamic.literal(location = location.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.rrc.mod.ConfigSwitch](js.Array(this.component, __props.asInstanceOf[SwitchProps]))
   }
+  
   @JSImport("rrc", "ConfigSwitch")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: SwitchProps): Default[typingsJapgolly.rrc.mod.ConfigSwitch] = new Default[typingsJapgolly.rrc.mod.ConfigSwitch](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

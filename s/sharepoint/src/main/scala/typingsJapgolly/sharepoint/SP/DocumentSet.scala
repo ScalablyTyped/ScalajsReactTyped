@@ -1,20 +1,10 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.DocumentSet")
-@js.native
-object DocumentSet extends js.Object {
-  @js.native
-  class DocumentSet () extends ClientObject
+object DocumentSet {
   
-  /* static members */
-  @js.native
-  object DocumentSet extends js.Object {
-    def create(context: ClientContext, parentFolder: Folder, name: String, ctid: ContentTypeId): StringResult = js.native
-  }
-  
+  type DocumentSet = ClientObject
 }
-

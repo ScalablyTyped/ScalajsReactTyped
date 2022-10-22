@@ -1,17 +1,21 @@
 package typingsJapgolly.chromeApps.chrome.fileSystemProvider
 
 import typingsJapgolly.chromeApps.chrome.double
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EntryMetadata extends js.Object {
+trait EntryMetadata extends StObject {
+  
   /** True if it is a directory. Must be provided if requested in options */
   var isDirectory: js.UndefOr[Boolean] = js.undefined
+  
   /** Mime type for the entry.  */
   var mimeType: js.UndefOr[String] = js.undefined
+  
   /** The last modified time of this entry. */
   var modificationTime: js.UndefOr[js.Date] = js.undefined
+  
   /**
     * Name of this entry (not full path name).
     * Must not contain '/'.
@@ -19,8 +23,10 @@ trait EntryMetadata extends js.Object {
     * Must be provided if requested in options.
     **/
   var name: js.UndefOr[String] = js.undefined
+  
   /** File size in bytes. Must be provided if requested in options. */
   var size: js.UndefOr[double] = js.undefined
+  
   /**
     * Thumbnail image as a data URI in either PNG, JPEG or WEBP format, at most 32 KB in size.
     * Optional, but can be provided only when explicitly requested
@@ -28,25 +34,37 @@ trait EntryMetadata extends js.Object {
     */
   var thumbnail: js.UndefOr[String] = js.undefined
 }
-
 object EntryMetadata {
-  @scala.inline
-  def apply(
-    isDirectory: js.UndefOr[Boolean] = js.undefined,
-    mimeType: String = null,
-    modificationTime: js.Date = null,
-    name: String = null,
-    size: Int | Double = null,
-    thumbnail: String = null
-  ): EntryMetadata = {
+  
+  inline def apply(): EntryMetadata = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isDirectory)) __obj.updateDynamic("isDirectory")(isDirectory.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
-    if (modificationTime != null) __obj.updateDynamic("modificationTime")(modificationTime.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryMetadata]
   }
+  
+  extension [Self <: EntryMetadata](x: Self) {
+    
+    inline def setIsDirectory(value: Boolean): Self = StObject.set(x, "isDirectory", value.asInstanceOf[js.Any])
+    
+    inline def setIsDirectoryUndefined: Self = StObject.set(x, "isDirectory", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    
+    inline def setModificationTime(value: js.Date): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    
+    inline def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+  }
 }
-

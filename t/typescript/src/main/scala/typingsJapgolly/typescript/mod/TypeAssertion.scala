@@ -1,17 +1,20 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.TypeAssertionExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeAssertion
-  extends UnaryExpression
+  extends StObject
+     with UnaryExpression
      with AssertionExpression {
-  var expression: UnaryExpression = js.native
+  
+  val expression: UnaryExpression = js.native
+  
   @JSName("kind")
-  var kind_TypeAssertion: TypeAssertionExpression = js.native
-  var `type`: TypeNode = js.native
+  val kind_TypeAssertion: TypeAssertionExpression = js.native
+  
+  val `type`: TypeNode = js.native
 }
-

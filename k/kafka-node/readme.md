@@ -10,10 +10,10 @@ Client for Apache Kafka v0.9.x, v0.10.x and v0.11.x
 | ------------------ | :-------------: |
 | Full name          | kafka-node |
 | Keywords           | kafka, consumer, producer, broker |
-| # releases         | 20 |
-| # dependents       | 243 |
-| # downloads        | 3214447 |
-| # stars            | 44 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2129082.0 |
+| # stars            | 2611.0 |
 
 ## Links
 - [Homepage](https://github.com/SOHU-Co/kafka-node#readme)

@@ -10,10 +10,10 @@ Download website to a local directory (including all css, images, js, etc.)
 | ------------------ | :-------------: |
 | Full name          | website-scraper |
 | Keywords           | scrape, scraper, download, web, url, page, site, html, css, image, js |
-| # releases         | 11 |
-| # dependents       | 20 |
-| # downloads        | 148199 |
-| # stars            | 23 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 142236.66666666666 |
+| # stars            | 1270.0 |
 
 ## Links
 - [Homepage](https://github.com/website-scraper/node-website-scraper)

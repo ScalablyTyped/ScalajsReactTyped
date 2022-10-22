@@ -1,19 +1,18 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
-import org.scalajs.dom.raw.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("google.visualization.Timeline")
 @js.native
-class Timeline protected () extends js.Object {
-  def this(element: Element) = this()
+trait Timeline extends StObject {
+  
   def clearChart(): Unit = js.native
+  
   def draw(data: DataTable): Unit = js.native
   def draw(data: DataTable, options: TimelineOptions): Unit = js.native
   def draw(data: DataView): Unit = js.native
   def draw(data: DataView, options: TimelineOptions): Unit = js.native
-  def getSelection(): js.Array[VisualizationSelectionArray] = js.native
+  
+  def getSelection(): js.Array[ChartSelection] = js.native
 }
-

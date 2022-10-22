@@ -1,19 +1,19 @@
 
 # Scala.js typings for ajv-keywords
 
-Typings are for version 3.4
+Typings are for version 5.1.0
 
 ## Library description:
-Custom JSON-Schema keywords for Ajv validator
+Additional JSON-Schema keywords for Ajv JSON validator
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | ajv-keywords |
 | Keywords           | JSON-Schema, ajv, keywords |
-| # releases         | 6 |
-| # dependents       | 205 |
-| # downloads        | 456930254 |
-| # stars            | 7 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1902630366666667E8 |
+| # stars            | 223.0 |
 
 ## Links
 - [Homepage](https://github.com/epoberezkin/ajv-keywords#readme)
@@ -24,7 +24,7 @@ Custom JSON-Schema keywords for Ajv validator
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

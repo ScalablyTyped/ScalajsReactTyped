@@ -1,51 +1,70 @@
-package typingsJapgolly.reactBeautifulDnd
+package typingsJapgolly.reactBeautifulDnd.mod
 
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.reactBeautifulDnd.mod.^
+import typingsJapgolly.reactBeautifulDnd.reactBeautifulDndBooleans.`true`
+import typingsJapgolly.std.Exclude
+import typingsJapgolly.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Announce = js.Function1[/* message */ java.lang.String, scala.Unit]
-  type ContextId = typingsJapgolly.reactBeautifulDnd.mod.Id
-  type DisplacementMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactBeautifulDnd.mod.Displacement]
-  type DraggableChildrenFn = js.Function3[
-    /* provided */ typingsJapgolly.reactBeautifulDnd.mod.DraggableProvided, 
-    /* snapshot */ typingsJapgolly.reactBeautifulDnd.mod.DraggableStateSnapshot, 
-    /* rubric */ typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric, 
-    japgolly.scalajs.react.raw.React.Element
-  ]
-  type DraggableDimensionMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactBeautifulDnd.mod.DraggableDimension]
-  type DraggableId = typingsJapgolly.reactBeautifulDnd.mod.Id
-  type DraggableIdMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndBooleans.`true`]
-  type DroppableDimensionMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactBeautifulDnd.mod.DroppableDimension]
-  type DroppableId = typingsJapgolly.reactBeautifulDnd.mod.Id
-  type DroppableIdMap = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndBooleans.`true`]
-  type ElementId = typingsJapgolly.reactBeautifulDnd.mod.Id
-  type Id = java.lang.String
-  type Omit[T, K /* <: java.lang.String */] = typingsJapgolly.std.Pick[T, typingsJapgolly.std.Exclude[java.lang.String, K]]
-  type OnBeforeCaptureResponder = js.Function1[/* before */ typingsJapgolly.reactBeautifulDnd.mod.BeforeCapture, scala.Unit]
-  type OnBeforeDragStartResponder = js.Function1[/* start */ typingsJapgolly.reactBeautifulDnd.mod.DragStart, scala.Unit]
-  type OnDragEndResponder = js.Function2[
-    /* result */ typingsJapgolly.reactBeautifulDnd.mod.DropResult, 
-    /* provided */ typingsJapgolly.reactBeautifulDnd.mod.ResponderProvided, 
-    scala.Unit
-  ]
-  type OnDragStartResponder = js.Function2[
-    /* start */ typingsJapgolly.reactBeautifulDnd.mod.DragStart, 
-    /* provided */ typingsJapgolly.reactBeautifulDnd.mod.ResponderProvided, 
-    scala.Unit
-  ]
-  type OnDragUpdateResponder = js.Function2[
-    /* update */ typingsJapgolly.reactBeautifulDnd.mod.DragUpdate, 
-    /* provided */ typingsJapgolly.reactBeautifulDnd.mod.ResponderProvided, 
-    scala.Unit
-  ]
-  type Sensor = js.Function1[/* api */ typingsJapgolly.reactBeautifulDnd.mod.SensorAPI, scala.Unit]
-  type TryGetLock = js.Function3[
-    /* draggableId */ typingsJapgolly.reactBeautifulDnd.mod.DraggableId, 
-    /* forceStop */ js.UndefOr[js.Function0[scala.Unit]], 
-    /* options */ js.UndefOr[typingsJapgolly.reactBeautifulDnd.mod.TryGetLockOptions], 
-    typingsJapgolly.reactBeautifulDnd.mod.PreDragActions | scala.Null
-  ]
-  type TypeId = typingsJapgolly.reactBeautifulDnd.mod.Id
-}
+
+inline def resetServerContext(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetServerContext")().asInstanceOf[Unit]
+
+inline def useKeyboardSensor: Sensor = ^.asInstanceOf[js.Dynamic].selectDynamic("useKeyboardSensor").asInstanceOf[Sensor]
+
+inline def useMouseSensor: Sensor = ^.asInstanceOf[js.Dynamic].selectDynamic("useMouseSensor").asInstanceOf[Sensor]
+
+inline def useTouchSensor: Sensor = ^.asInstanceOf[js.Dynamic].selectDynamic("useTouchSensor").asInstanceOf[Sensor]
+
+type Announce = js.Function1[/* message */ String, Unit]
+
+type ContextId = Id
+
+type DisplacementMap = StringDictionary[Displacement]
+
+type DraggableChildrenFn = js.Function3[
+/* provided */ DraggableProvided, 
+/* snapshot */ DraggableStateSnapshot, 
+/* rubric */ DraggableRubric, 
+Element]
+
+type DraggableDimensionMap = StringDictionary[DraggableDimension]
+
+type DraggableId = Id
+
+type DraggableIdMap = StringDictionary[`true`]
+
+type DroppableDimensionMap = StringDictionary[DroppableDimension]
+
+type DroppableId = Id
+
+type DroppableIdMap = StringDictionary[`true`]
+
+type ElementId = Id
+
+type Id = String
+
+type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
+
+type OnBeforeCaptureResponder = js.Function1[/* before */ BeforeCapture, Unit]
+
+type OnBeforeDragStartResponder = js.Function1[/* start */ DragStart, Unit]
+
+type OnDragEndResponder = js.Function2[/* result */ DropResult, /* provided */ ResponderProvided, Unit]
+
+type OnDragStartResponder = js.Function2[/* start */ DragStart, /* provided */ ResponderProvided, Unit]
+
+type OnDragUpdateResponder = js.Function2[/* update */ DragUpdate, /* provided */ ResponderProvided, Unit]
+
+type Sensor = js.Function1[/* api */ SensorAPI, Unit]
+
+type TryGetLock = js.Function3[
+/* draggableId */ DraggableId, 
+/* forceStop */ js.UndefOr[js.Function0[Unit]], 
+/* options */ js.UndefOr[TryGetLockOptions], 
+PreDragActions | Null]
+
+type TypeId = Id

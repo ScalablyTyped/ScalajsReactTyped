@@ -1,62 +1,52 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonEventAny
-import typingsJapgolly.baseui.AnonNextPage
-import typingsJapgolly.baseui.baseuiStrings.change_
-import typingsJapgolly.baseui.paginationMod.Labels
-import typingsJapgolly.baseui.paginationMod.PaginationOverrides
-import typingsJapgolly.baseui.paginationMod.State
-import typingsJapgolly.baseui.paginationMod.StatefulPaginationProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.EventAny
+import typingsJapgolly.baseui.anon.NextPage
+import typingsJapgolly.baseui.baseuiStrings.changePage
+import typingsJapgolly.baseui.paginationTypesMod.Labels
+import typingsJapgolly.baseui.paginationTypesMod.PaginationOverrides
+import typingsJapgolly.baseui.paginationTypesMod.Size
+import typingsJapgolly.baseui.paginationTypesMod.StatefulContainerState
+import typingsJapgolly.baseui.paginationTypesMod.StatefulPaginationProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulPagination {
-  def apply(
-    numPages: Double,
-    initialState: State = null,
-    labels: Labels = null,
-    onNextClick: /* args */ AnonEventAny => CallbackTo[js.Any] = null,
-    onPageChange: /* args */ AnonNextPage => CallbackTo[js.Any] = null,
-    onPrevClick: /* args */ AnonEventAny => CallbackTo[js.Any] = null,
-    overrides: PaginationOverrides = null,
-    stateReducer: (change_, /* changes */ State, /* currentState */ State) => CallbackTo[State] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    StatefulPaginationProps, 
-    MountedWithRawType[StatefulPaginationProps, js.Object, RawMounted[StatefulPaginationProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(numPages = numPages.asInstanceOf[js.Any])
   
-      if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (onNextClick != null) __obj.updateDynamic("onNextClick")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonEventAny) => onNextClick(t0).runNow()))
-    if (onPageChange != null) __obj.updateDynamic("onPageChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonNextPage) => onPageChange(t0).runNow()))
-    if (onPrevClick != null) __obj.updateDynamic("onPrevClick")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonEventAny) => onPrevClick(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.change_, t1: /* changes */ typingsJapgolly.baseui.paginationMod.State, t2: /* currentState */ typingsJapgolly.baseui.paginationMod.State) => stateReducer(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.paginationMod.StatefulPaginationProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.paginationMod.StatefulPaginationProps])(children: _*)
+  inline def apply(numPages: Double): Builder = {
+    val __props = js.Dynamic.literal(numPages = numPages.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StatefulPaginationProps]))
   }
+  
   @JSImport("baseui/pagination", "StatefulPagination")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def initialState(value: StatefulContainerState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def labels(value: Labels): this.type = set("labels", value.asInstanceOf[js.Any])
+    
+    inline def onNextClick(value: /* a */ EventAny => Any): this.type = set("onNextClick", js.Any.fromFunction1(value))
+    
+    inline def onPageChange(value: /* a */ NextPage => Any): this.type = set("onPageChange", js.Any.fromFunction1(value))
+    
+    inline def onPrevClick(value: /* a */ EventAny => Any): this.type = set("onPrevClick", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: PaginationOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Size): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def stateReducer(
+      value: (changePage, /* changes */ StatefulContainerState, /* currentState */ StatefulContainerState) => StatefulContainerState
+    ): this.type = set("stateReducer", js.Any.fromFunction3(value))
+  }
+  
+  def withProps(p: StatefulPaginationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

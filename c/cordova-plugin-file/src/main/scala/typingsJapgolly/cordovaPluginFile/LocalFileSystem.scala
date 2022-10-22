@@ -1,29 +1,22 @@
 package typingsJapgolly.cordovaPluginFile
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LocalFileSystem extends js.Object
-
+sealed trait LocalFileSystem extends StObject
 @JSGlobal("LocalFileSystem")
 @js.native
-object LocalFileSystem extends js.Object {
-  @js.native
-  sealed trait PERSISTENT extends LocalFileSystem
+object LocalFileSystem extends StObject {
   
   @js.native
-  sealed trait TEMPORARY extends LocalFileSystem
+  sealed trait PERSISTENT
+    extends StObject
+       with LocalFileSystem
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LocalFileSystem with Double] = js.native
-  /* 1 */ @js.native
-  object PERSISTENT extends TopLevel[PERSISTENT with Double]
-  
-  /* 0 */ @js.native
-  object TEMPORARY extends TopLevel[TEMPORARY with Double]
-  
+  @js.native
+  sealed trait TEMPORARY
+    extends StObject
+       with LocalFileSystem
 }
-

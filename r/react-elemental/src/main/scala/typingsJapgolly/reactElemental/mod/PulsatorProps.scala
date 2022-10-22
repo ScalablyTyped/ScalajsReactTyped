@@ -1,34 +1,49 @@
 package typingsJapgolly.reactElemental.mod
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PulsatorProps extends js.Object {
+trait PulsatorProps extends StObject {
+  
   val color: js.UndefOr[String] = js.undefined
+  
   val inactive: js.UndefOr[Boolean] = js.undefined
+  
   val size: js.UndefOr[PulsatorSize] = js.undefined
+  
   val style: js.UndefOr[CSSProperties] = js.undefined
+  
   val transparent: js.UndefOr[Boolean] = js.undefined
 }
-
 object PulsatorProps {
-  @scala.inline
-  def apply(
-    color: String = null,
-    inactive: js.UndefOr[Boolean] = js.undefined,
-    size: PulsatorSize = null,
-    style: CSSProperties = null,
-    transparent: js.UndefOr[Boolean] = js.undefined
-  ): PulsatorProps = {
+  
+  inline def apply(): PulsatorProps = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PulsatorProps]
   }
+  
+  extension [Self <: PulsatorProps](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setInactive(value: Boolean): Self = StObject.set(x, "inactive", value.asInstanceOf[js.Any])
+    
+    inline def setInactiveUndefined: Self = StObject.set(x, "inactive", js.undefined)
+    
+    inline def setSize(value: PulsatorSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+  }
 }
-

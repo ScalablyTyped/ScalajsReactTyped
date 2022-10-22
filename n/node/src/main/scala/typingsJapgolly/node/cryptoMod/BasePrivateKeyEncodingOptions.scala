@@ -1,22 +1,34 @@
 package typingsJapgolly.node.cryptoMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends js.Object {
+trait BasePrivateKeyEncodingOptions[T /* <: KeyFormat */] extends StObject {
+  
   var cipher: js.UndefOr[String] = js.undefined
+  
   var format: T
+  
   var passphrase: js.UndefOr[String] = js.undefined
 }
-
 object BasePrivateKeyEncodingOptions {
-  @scala.inline
-  def apply[T /* <: KeyFormat */](format: T, cipher: String = null, passphrase: String = null): BasePrivateKeyEncodingOptions[T] = {
+  
+  inline def apply[T /* <: KeyFormat */](format: T): BasePrivateKeyEncodingOptions[T] = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (cipher != null) __obj.updateDynamic("cipher")(cipher.asInstanceOf[js.Any])
-    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePrivateKeyEncodingOptions[T]]
   }
+  
+  extension [Self <: BasePrivateKeyEncodingOptions[?], T /* <: KeyFormat */](x: Self & BasePrivateKeyEncodingOptions[T]) {
+    
+    inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+    
+    inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+    
+    inline def setFormat(value: T): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+    
+    inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+  }
 }
-

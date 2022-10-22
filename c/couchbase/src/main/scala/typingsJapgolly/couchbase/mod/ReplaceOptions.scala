@@ -1,31 +1,29 @@
 package typingsJapgolly.couchbase.mod
 
-import typingsJapgolly.couchbase.mod.Bucket.CAS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReplaceOptions extends AppendOptions {
+trait ReplaceOptions
+  extends StObject
+     with AppendOptions {
+  
   /**
     * Set the initial expiration time for the document. A value of 0 represents never expiring.
     */
   var expiry: js.UndefOr[Double] = js.undefined
 }
-
 object ReplaceOptions {
-  @scala.inline
-  def apply(
-    cas: CAS = null,
-    expiry: Int | Double = null,
-    persist_to: Int | Double = null,
-    replicate_to: Int | Double = null
-  ): ReplaceOptions = {
+  
+  inline def apply(): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (cas != null) __obj.updateDynamic("cas")(cas.asInstanceOf[js.Any])
-    if (expiry != null) __obj.updateDynamic("expiry")(expiry.asInstanceOf[js.Any])
-    if (persist_to != null) __obj.updateDynamic("persist_to")(persist_to.asInstanceOf[js.Any])
-    if (replicate_to != null) __obj.updateDynamic("replicate_to")(replicate_to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReplaceOptions]
   }
+  
+  extension [Self <: ReplaceOptions](x: Self) {
+    
+    inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
+    
+    inline def setExpiryUndefined: Self = StObject.set(x, "expiry", js.undefined)
+  }
 }
-

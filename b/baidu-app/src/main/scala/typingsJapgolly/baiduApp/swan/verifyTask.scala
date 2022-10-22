@@ -1,22 +1,31 @@
 package typingsJapgolly.baiduApp.swan
 
-import typingsJapgolly.baiduApp.AnonResult
+import typingsJapgolly.baiduApp.anon.Result
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait verifyTask extends js.Object {
-  var data: AnonResult
+trait verifyTask extends StObject {
+  
+  var data: Result
+  
   var errmsg: String
+  
   var errno: String
 }
-
 object verifyTask {
-  @scala.inline
-  def apply(data: AnonResult, errmsg: String, errno: String): verifyTask = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
   
+  inline def apply(data: Result, errmsg: String, errno: String): verifyTask = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any], errno = errno.asInstanceOf[js.Any])
     __obj.asInstanceOf[verifyTask]
   }
+  
+  extension [Self <: verifyTask](x: Self) {
+    
+    inline def setData(value: Result): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setErrmsg(value: String): Self = StObject.set(x, "errmsg", value.asInstanceOf[js.Any])
+    
+    inline def setErrno(value: String): Self = StObject.set(x, "errno", value.asInstanceOf[js.Any])
+  }
 }
-

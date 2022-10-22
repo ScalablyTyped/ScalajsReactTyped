@@ -1,41 +1,51 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.baseSelectedItemsListTypesMod.IBaseSelectedItemsListProps
-import typingsJapgolly.officeUiFabricReact.selectedPeopleListMod.IExtendedPersonaProps
-import typingsJapgolly.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleItemProps
-import typingsJapgolly.officeUiFabricReact.selectedPeopleListMod.ISelectedPeopleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListBaseSelectedItemsListDottypesMod.IBaseSelectedItemsListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleItemProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListSelectedPeopleListSelectedPeopleListMod.ISelectedPeopleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/SelectedItemsList", JSImport.Namespace)
-@js.native
-object libSelectedItemsListMod extends js.Object {
-  @js.native
-  class BasePeopleSelectedItemsList ()
-    extends typingsJapgolly.officeUiFabricReact.baseSelectedItemsListMod.BaseSelectedItemsList[IExtendedPersonaProps, ISelectedPeopleProps]
+object libSelectedItemsListMod {
   
+  @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "BasePeopleSelectedItemsList")
   @js.native
-  class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
-    extends typingsJapgolly.officeUiFabricReact.selectedItemsListMod.BaseSelectedItemsList[T, P] {
+  open class BasePeopleSelectedItemsList protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListMod.BasePeopleSelectedItemsList {
+    def this(basePickerProps: ISelectedPeopleProps) = this()
+  }
+  
+  @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "BaseSelectedItemsList")
+  @js.native
+  open class BaseSelectedItemsList[T, P /* <: IBaseSelectedItemsListProps[T] */] protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListMod.BaseSelectedItemsList[T, P] {
     def this(basePickerProps: P) = this()
   }
   
+  @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "ExtendedSelectedItem")
   @js.native
-  class ExtendedSelectedItem protected ()
-    extends typingsJapgolly.officeUiFabricReact.selectedItemsListMod.ExtendedSelectedItem {
+  open class ExtendedSelectedItem protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListMod.ExtendedSelectedItem {
     def this(props: ISelectedPeopleItemProps) = this()
   }
   
+  @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList")
   @js.native
-  class SelectedPeopleList ()
-    extends typingsJapgolly.officeUiFabricReact.selectedItemsListMod.SelectedPeopleList
-  
-  /* static members */
-  @js.native
-  object SelectedPeopleList extends js.Object {
-    var defaultProps: js.Any = js.native
+  open class SelectedPeopleList protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsSelectedItemsListMod.SelectedPeopleList {
+    def this(basePickerProps: ISelectedPeopleProps) = this()
   }
-  
+  /* static members */
+  object SelectedPeopleList {
+    
+    @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList.defaultProps")
+    @js.native
+    def defaultProps: Any = js.native
+    inline def defaultProps_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
 }
-

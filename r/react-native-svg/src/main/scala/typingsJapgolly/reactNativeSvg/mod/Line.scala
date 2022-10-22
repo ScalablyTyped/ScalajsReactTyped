@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeSvg.mod
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
+import typingsJapgolly.reactNativeSvg.anon.X1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg", "Line")
 @js.native
-class Line protected ()
-  extends Component[LineProps, ComponentState, js.Any] {
-  def this(props: LineProps) = this()
-  def this(props: LineProps, context: js.Any) = this()
+open class Line ()
+  extends typingsJapgolly.reactNativeSvg.libTypescriptReactNativeSVGMod.Line
+/* static members */
+object Line {
+  
+  @JSImport("react-native-svg", "Line")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-native-svg", "Line.defaultProps")
+  @js.native
+  def defaultProps: X1 = js.native
+  inline def defaultProps_=(x: X1): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-native-svg", "Line.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
 }
-
-@JSImport("react-native-svg", "Line")
-@js.native
-object Line extends TopLevel[ComponentClass[LineProps, ComponentState]]
-

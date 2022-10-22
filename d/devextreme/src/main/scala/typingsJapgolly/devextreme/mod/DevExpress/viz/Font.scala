@@ -1,38 +1,63 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Font extends js.Object {
-  /** Specifies font color. */
+trait Font extends StObject {
+  
+  /**
+    * Specifies font color.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies font family. */
+  
+  /**
+    * Specifies font family.
+    */
   var family: js.UndefOr[String] = js.undefined
-  /** Specifies font opacity. */
+  
+  /**
+    * Specifies font opacity.
+    */
   var opacity: js.UndefOr[Double] = js.undefined
-  /** Specifies font size. */
+  
+  /**
+    * Specifies font size.
+    */
   var size: js.UndefOr[String | Double] = js.undefined
-  /** Specifies font weight. Accepts values from 100 to 900 in increments of 100. Higher values increase boldness. */
+  
+  /**
+    * Specifies font weight. Accepts values from 100 to 900 in increments of 100. Higher values increase boldness.
+    */
   var weight: js.UndefOr[Double] = js.undefined
 }
-
 object Font {
-  @scala.inline
-  def apply(
-    color: String = null,
-    family: String = null,
-    opacity: Int | Double = null,
-    size: String | Double = null,
-    weight: Int | Double = null
-  ): Font = {
+  
+  inline def apply(): Font = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[Font]
   }
+  
+  extension [Self <: Font](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

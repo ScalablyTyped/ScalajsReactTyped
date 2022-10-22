@@ -1,63 +1,90 @@
 package typingsJapgolly.sparqljs.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.sparqljs.AnonDefault
-import typingsJapgolly.sparqljs.sparqljsStrings.Asterisk
+import typingsJapgolly.sparqljs.anon.Default
 import typingsJapgolly.sparqljs.sparqljsStrings.SELECT
-import typingsJapgolly.sparqljs.sparqljsStrings.query
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SelectQuery
-  extends Query
+  extends StObject
      with BaseQuery
-     with Pattern {
+     with Pattern
+     with Query {
+  
   var distinct: js.UndefOr[Boolean] = js.undefined
-  var from: js.UndefOr[AnonDefault] = js.undefined
+  
+  var from: js.UndefOr[Default] = js.undefined
+  
   var group: js.UndefOr[js.Array[Grouping]] = js.undefined
+  
   var having: js.UndefOr[js.Array[Expression]] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var order: js.UndefOr[js.Array[Ordering]] = js.undefined
+  
   var queryType: SELECT
+  
   var reduced: js.UndefOr[Boolean] = js.undefined
-  var variables: js.Array[Asterisk | Variable]
+  
+  var variables: js.Array[Variable | Wildcard]
 }
-
 object SelectQuery {
-  @scala.inline
-  def apply(
-    prefixes: StringDictionary[String],
-    queryType: SELECT,
-    `type`: query,
-    variables: js.Array[Asterisk | Variable],
-    base: String = null,
-    distinct: js.UndefOr[Boolean] = js.undefined,
-    from: AnonDefault = null,
-    group: js.Array[Grouping] = null,
-    having: js.Array[Expression] = null,
-    limit: Int | Double = null,
-    offset: Int | Double = null,
-    order: js.Array[Ordering] = null,
-    reduced: js.UndefOr[Boolean] = js.undefined,
-    values: js.Array[ValuePatternRow] = null,
-    where: js.Array[Pattern] = null
-  ): SelectQuery = {
-    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = queryType.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
-    if (having != null) __obj.updateDynamic("having")(having.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(reduced)) __obj.updateDynamic("reduced")(reduced.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+  
+  inline def apply(prefixes: StringDictionary[String], variables: js.Array[Variable | Wildcard]): SelectQuery = {
+    val __obj = js.Dynamic.literal(prefixes = prefixes.asInstanceOf[js.Any], queryType = "SELECT", variables = variables.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query")
     __obj.asInstanceOf[SelectQuery]
   }
+  
+  extension [Self <: SelectQuery](x: Self) {
+    
+    inline def setDistinct(value: Boolean): Self = StObject.set(x, "distinct", value.asInstanceOf[js.Any])
+    
+    inline def setDistinctUndefined: Self = StObject.set(x, "distinct", js.undefined)
+    
+    inline def setFrom(value: Default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setGroup(value: js.Array[Grouping]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    
+    inline def setGroupVarargs(value: Grouping*): Self = StObject.set(x, "group", js.Array(value*))
+    
+    inline def setHaving(value: js.Array[Expression]): Self = StObject.set(x, "having", value.asInstanceOf[js.Any])
+    
+    inline def setHavingUndefined: Self = StObject.set(x, "having", js.undefined)
+    
+    inline def setHavingVarargs(value: Expression*): Self = StObject.set(x, "having", js.Array(value*))
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOrder(value: js.Array[Ordering]): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setOrderVarargs(value: Ordering*): Self = StObject.set(x, "order", js.Array(value*))
+    
+    inline def setQueryType(value: SELECT): Self = StObject.set(x, "queryType", value.asInstanceOf[js.Any])
+    
+    inline def setReduced(value: Boolean): Self = StObject.set(x, "reduced", value.asInstanceOf[js.Any])
+    
+    inline def setReducedUndefined: Self = StObject.set(x, "reduced", js.undefined)
+    
+    inline def setVariables(value: js.Array[Variable | Wildcard]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+    
+    inline def setVariablesVarargs(value: (Variable | Wildcard)*): Self = StObject.set(x, "variables", js.Array(value*))
+  }
 }
-

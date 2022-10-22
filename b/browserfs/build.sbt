@@ -1,18 +1,17 @@
 organization := "org.scalablytyped.japgolly"
 name := "browserfs"
-version := "1.4.3-3396b6"
-scalaVersion := "2.13.1"
+version := "1.4.3-15b756"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "dropboxjs" % "0.0-unknown-dt-20200226Z-790c01",
-  "org.scalablytyped.japgolly" %%% "filesystem" % "0.0-unknown-dt-20200225Z-0f8483",
-  "org.scalablytyped.japgolly" %%% "filewriter" % "0.0-unknown-dt-20200226Z-cf4459",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "buffer" % "6.0.3-40f891",
+  "org.scalablytyped.japgolly" %%% "dropboxjs" % "0.0-unknown-dt-20220818Z-bca1e1",
+  "org.scalablytyped.japgolly" %%% "filesystem" % "0.0-unknown-dt-20220818Z-6a0c2c",
+  "org.scalablytyped.japgolly" %%% "filewriter" % "0.0-unknown-dt-20220818Z-a124df",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,77 +1,62 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkEncryptionType extends js.Object
-
+sealed trait NetworkEncryptionType extends StObject
 @JSGlobal("Windows.Networking.Connectivity.NetworkEncryptionType")
 @js.native
-object NetworkEncryptionType extends js.Object {
-  @js.native
-  sealed trait ccmp extends NetworkEncryptionType
+object NetworkEncryptionType extends StObject {
   
   @js.native
-  sealed trait ihv extends NetworkEncryptionType
+  sealed trait ccmp
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait none extends NetworkEncryptionType
+  sealed trait ihv
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait rsnUseGroup extends NetworkEncryptionType
+  sealed trait none
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait tkip extends NetworkEncryptionType
+  sealed trait rsnUseGroup
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait unknown extends NetworkEncryptionType
+  sealed trait tkip
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait wep extends NetworkEncryptionType
+  sealed trait unknown
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait wep104 extends NetworkEncryptionType
+  sealed trait wep
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait wep40 extends NetworkEncryptionType
+  sealed trait wep104
+    extends StObject
+       with NetworkEncryptionType
   
   @js.native
-  sealed trait wpaUseGroup extends NetworkEncryptionType
+  sealed trait wep40
+    extends StObject
+       with NetworkEncryptionType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkEncryptionType with Double] = js.native
-  /* 6 */ @js.native
-  object ccmp extends TopLevel[ccmp with Double]
-  
-  /* 9 */ @js.native
-  object ihv extends TopLevel[ihv with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 8 */ @js.native
-  object rsnUseGroup extends TopLevel[rsnUseGroup with Double]
-  
-  /* 5 */ @js.native
-  object tkip extends TopLevel[tkip with Double]
-  
-  /* 1 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 2 */ @js.native
-  object wep extends TopLevel[wep with Double]
-  
-  /* 4 */ @js.native
-  object wep104 extends TopLevel[wep104 with Double]
-  
-  /* 3 */ @js.native
-  object wep40 extends TopLevel[wep40 with Double]
-  
-  /* 7 */ @js.native
-  object wpaUseGroup extends TopLevel[wpaUseGroup with Double]
-  
+  @js.native
+  sealed trait wpaUseGroup
+    extends StObject
+       with NetworkEncryptionType
 }
-

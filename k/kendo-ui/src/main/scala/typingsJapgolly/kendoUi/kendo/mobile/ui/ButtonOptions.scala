@@ -1,37 +1,55 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonOptions extends js.Object {
+trait ButtonOptions extends StObject {
+  
   var badge: js.UndefOr[String] = js.undefined
+  
   var click: js.UndefOr[js.Function1[/* e */ ButtonClickEvent, Unit]] = js.undefined
+  
   var clickOn: js.UndefOr[String] = js.undefined
+  
   var enable: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ButtonOptions {
-  @scala.inline
-  def apply(
-    badge: String = null,
-    click: /* e */ ButtonClickEvent => Callback = null,
-    clickOn: String = null,
-    enable: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    name: String = null
-  ): ButtonOptions = {
+  
+  inline def apply(): ButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.ButtonClickEvent) => click(t0).runNow()))
-    if (clickOn != null) __obj.updateDynamic("clickOn")(clickOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
+  
+  extension [Self <: ButtonOptions](x: Self) {
+    
+    inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setClick(value: /* e */ ButtonClickEvent => Callback): Self = StObject.set(x, "click", js.Any.fromFunction1((t0: /* e */ ButtonClickEvent) => value(t0).runNow()))
+    
+    inline def setClickOn(value: String): Self = StObject.set(x, "clickOn", value.asInstanceOf[js.Any])
+    
+    inline def setClickOnUndefined: Self = StObject.set(x, "clickOn", js.undefined)
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
+    
+    inline def setEnableUndefined: Self = StObject.set(x, "enable", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

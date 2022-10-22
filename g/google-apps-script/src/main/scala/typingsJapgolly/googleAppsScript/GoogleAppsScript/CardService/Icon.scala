@@ -1,206 +1,170 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Icon extends js.Object
-
+sealed trait Icon extends StObject
 /**
   * Predefined icons that can be used in various UI objects, such as ImageButton or KeyValue widgets.
   */
 @JSGlobal("GoogleAppsScript.Card_Service.Icon")
 @js.native
-object Icon extends js.Object {
-  @js.native
-  sealed trait AIRPLANE extends Icon
+object Icon extends StObject {
   
   @js.native
-  sealed trait BOOKMARK extends Icon
+  sealed trait AIRPLANE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait BUS extends Icon
+  sealed trait BOOKMARK
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait CAR extends Icon
+  sealed trait BUS
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait CLOCK extends Icon
+  sealed trait CAR
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait CONFIRMATION_NUMBER_ICON extends Icon
+  sealed trait CLOCK
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait DESCRIPTION extends Icon
+  sealed trait CONFIRMATION_NUMBER_ICON
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait DOLLAR extends Icon
+  sealed trait DESCRIPTION
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait EMAIL extends Icon
+  sealed trait DOLLAR
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait EVENT_PERFORMER extends Icon
+  sealed trait EMAIL
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait EVENT_SEAT extends Icon
+  sealed trait EVENT_PERFORMER
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait FLIGHT_ARRIVAL extends Icon
+  sealed trait EVENT_SEAT
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait FLIGHT_DEPARTURE extends Icon
+  sealed trait FLIGHT_ARRIVAL
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait HOTEL extends Icon
+  sealed trait FLIGHT_DEPARTURE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait HOTEL_ROOM_TYPE extends Icon
+  sealed trait HOTEL
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait INVITE extends Icon
+  sealed trait HOTEL_ROOM_TYPE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait MAP_PIN extends Icon
+  sealed trait INVITE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait MEMBERSHIP extends Icon
+  sealed trait MAP_PIN
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait MULTIPLE_PEOPLE extends Icon
+  sealed trait MEMBERSHIP
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait NONE extends Icon
+  sealed trait MULTIPLE_PEOPLE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait OFFER extends Icon
+  sealed trait NONE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait PERSON extends Icon
+  sealed trait OFFER
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait PHONE extends Icon
+  sealed trait PERSON
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait RESTAURANT_ICON extends Icon
+  sealed trait PHONE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait SHOPPING_CART extends Icon
+  sealed trait RESTAURANT_ICON
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait STAR extends Icon
+  sealed trait SHOPPING_CART
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait STORE extends Icon
+  sealed trait STAR
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait TICKET extends Icon
+  sealed trait STORE
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait TRAIN extends Icon
+  sealed trait TICKET
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait VIDEO_CAMERA extends Icon
+  sealed trait TRAIN
+    extends StObject
+       with Icon
   
   @js.native
-  sealed trait VIDEO_PLAY extends Icon
+  sealed trait VIDEO_CAMERA
+    extends StObject
+       with Icon
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Icon with Double] = js.native
-  /* 1 */ @js.native
-  object AIRPLANE extends TopLevel[AIRPLANE with Double]
-  
-  /* 2 */ @js.native
-  object BOOKMARK extends TopLevel[BOOKMARK with Double]
-  
-  /* 3 */ @js.native
-  object BUS extends TopLevel[BUS with Double]
-  
-  /* 4 */ @js.native
-  object CAR extends TopLevel[CAR with Double]
-  
-  /* 5 */ @js.native
-  object CLOCK extends TopLevel[CLOCK with Double]
-  
-  /* 6 */ @js.native
-  object CONFIRMATION_NUMBER_ICON extends TopLevel[CONFIRMATION_NUMBER_ICON with Double]
-  
-  /* 8 */ @js.native
-  object DESCRIPTION extends TopLevel[DESCRIPTION with Double]
-  
-  /* 7 */ @js.native
-  object DOLLAR extends TopLevel[DOLLAR with Double]
-  
-  /* 9 */ @js.native
-  object EMAIL extends TopLevel[EMAIL with Double]
-  
-  /* 10 */ @js.native
-  object EVENT_PERFORMER extends TopLevel[EVENT_PERFORMER with Double]
-  
-  /* 11 */ @js.native
-  object EVENT_SEAT extends TopLevel[EVENT_SEAT with Double]
-  
-  /* 12 */ @js.native
-  object FLIGHT_ARRIVAL extends TopLevel[FLIGHT_ARRIVAL with Double]
-  
-  /* 13 */ @js.native
-  object FLIGHT_DEPARTURE extends TopLevel[FLIGHT_DEPARTURE with Double]
-  
-  /* 14 */ @js.native
-  object HOTEL extends TopLevel[HOTEL with Double]
-  
-  /* 15 */ @js.native
-  object HOTEL_ROOM_TYPE extends TopLevel[HOTEL_ROOM_TYPE with Double]
-  
-  /* 16 */ @js.native
-  object INVITE extends TopLevel[INVITE with Double]
-  
-  /* 17 */ @js.native
-  object MAP_PIN extends TopLevel[MAP_PIN with Double]
-  
-  /* 18 */ @js.native
-  object MEMBERSHIP extends TopLevel[MEMBERSHIP with Double]
-  
-  /* 19 */ @js.native
-  object MULTIPLE_PEOPLE extends TopLevel[MULTIPLE_PEOPLE with Double]
-  
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 20 */ @js.native
-  object OFFER extends TopLevel[OFFER with Double]
-  
-  /* 21 */ @js.native
-  object PERSON extends TopLevel[PERSON with Double]
-  
-  /* 22 */ @js.native
-  object PHONE extends TopLevel[PHONE with Double]
-  
-  /* 23 */ @js.native
-  object RESTAURANT_ICON extends TopLevel[RESTAURANT_ICON with Double]
-  
-  /* 24 */ @js.native
-  object SHOPPING_CART extends TopLevel[SHOPPING_CART with Double]
-  
-  /* 25 */ @js.native
-  object STAR extends TopLevel[STAR with Double]
-  
-  /* 26 */ @js.native
-  object STORE extends TopLevel[STORE with Double]
-  
-  /* 27 */ @js.native
-  object TICKET extends TopLevel[TICKET with Double]
-  
-  /* 28 */ @js.native
-  object TRAIN extends TopLevel[TRAIN with Double]
-  
-  /* 29 */ @js.native
-  object VIDEO_CAMERA extends TopLevel[VIDEO_CAMERA with Double]
-  
-  /* 30 */ @js.native
-  object VIDEO_PLAY extends TopLevel[VIDEO_PLAY with Double]
-  
+  @js.native
+  sealed trait VIDEO_PLAY
+    extends StObject
+       with Icon
 }
-

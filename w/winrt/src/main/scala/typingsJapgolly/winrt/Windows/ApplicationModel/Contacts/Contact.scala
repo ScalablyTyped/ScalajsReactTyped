@@ -2,18 +2,17 @@ package typingsJapgolly.winrt.Windows.ApplicationModel.Contacts
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Contacts.Contact")
-@js.native
-class Contact () extends IContact {
-  /* CompleteClass */
-  override var fields: IVector[IContactField] = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var thumbnail: IRandomAccessStreamReference = js.native
+trait Contact
+  extends StObject
+     with IContact
+object Contact {
+  
+  inline def apply(fields: IVector[IContactField], name: String, thumbnail: IRandomAccessStreamReference): Contact = {
+    val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Contact]
+  }
 }
-

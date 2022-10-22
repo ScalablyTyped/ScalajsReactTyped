@@ -2,31 +2,35 @@ package typingsJapgolly.arcgisJsApi.esri
 
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.global
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.local
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait websceneInitialViewPropertiesProperties extends js.Object {
+trait websceneInitialViewPropertiesProperties extends StObject {
+  
   /**
     * The initial environment settings of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#environment)
     */
   var environment: js.UndefOr[EnvironmentProperties] = js.undefined
+  
   /**
-    * The spatial reference of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html). This indicates the [Projected Coordinate System](https://developers.arcgis.com/rest/services-reference/projected-coordinate-systems.htm) or the [Geographic Coordinate System](https://developers.arcgis.com/rest/services-reference/geographic-coordinate-systems.htm) used to locate geographic features in the map. In a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) the following [supported coordinate systems](esri-views-SceneView.html#supported-coordinate-systems) are available.
+    * The spatial reference of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#spatialReference)
     */
   var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * The viewing mode of the scene. Global scenes allow the user to navigate the globe. Local scenes allow for navigation and feature display in a particular "localized" area. Users may also navigate the view's camera below the surface of a basemap in local scenes.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
+    * The viewing mode of the scene.
     *
     * @default global
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-InitialViewProperties.html#viewingMode)
     */
   var viewingMode: js.UndefOr[global | local] = js.undefined
+  
   /**
     * The initial viewpoint of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).
     *
@@ -34,21 +38,29 @@ trait websceneInitialViewPropertiesProperties extends js.Object {
     */
   var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
 }
-
 object websceneInitialViewPropertiesProperties {
-  @scala.inline
-  def apply(
-    environment: EnvironmentProperties = null,
-    spatialReference: SpatialReferenceProperties = null,
-    viewingMode: global | local = null,
-    viewpoint: ViewpointProperties = null
-  ): websceneInitialViewPropertiesProperties = {
+  
+  inline def apply(): websceneInitialViewPropertiesProperties = {
     val __obj = js.Dynamic.literal()
-    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
-    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference.asInstanceOf[js.Any])
-    if (viewingMode != null) __obj.updateDynamic("viewingMode")(viewingMode.asInstanceOf[js.Any])
-    if (viewpoint != null) __obj.updateDynamic("viewpoint")(viewpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[websceneInitialViewPropertiesProperties]
   }
+  
+  extension [Self <: websceneInitialViewPropertiesProperties](x: Self) {
+    
+    inline def setEnvironment(value: EnvironmentProperties): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    
+    inline def setViewingMode(value: global | local): Self = StObject.set(x, "viewingMode", value.asInstanceOf[js.Any])
+    
+    inline def setViewingModeUndefined: Self = StObject.set(x, "viewingMode", js.undefined)
+    
+    inline def setViewpoint(value: ViewpointProperties): Self = StObject.set(x, "viewpoint", value.asInstanceOf[js.Any])
+    
+    inline def setViewpointUndefined: Self = StObject.set(x, "viewpoint", js.undefined)
+  }
 }
-

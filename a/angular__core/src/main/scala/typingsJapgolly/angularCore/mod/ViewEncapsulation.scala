@@ -1,67 +1,50 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewEncapsulation extends js.Object
-
+sealed trait ViewEncapsulation extends StObject
 @JSImport("@angular/core", "ViewEncapsulation")
 @js.native
-object ViewEncapsulation extends js.Object {
+object ViewEncapsulation extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ViewEncapsulation & Double] = js.native
+  
   /**
-    * Emulate `Native` scoping of styles by adding an attribute containing surrogate id to the Host
-    * Element and pre-processing the style rules provided via {@link Component#styles styles} or
-    * {@link Component#styleUrls styleUrls}, and adding the new Host Element attribute to all
-    * selectors.
+    * Emulates a native Shadow DOM encapsulation behavior by adding a specific attribute to the
+    * component's host element and applying the same attribute to all the CSS selectors provided
+    * via {@link Component#styles styles} or {@link Component#styleUrls styleUrls}.
     *
     * This is the default option.
     */
   @js.native
-  sealed trait Emulated extends ViewEncapsulation
+  sealed trait Emulated
+    extends StObject
+       with ViewEncapsulation
+  /* 0 */ val Emulated: typingsJapgolly.angularCore.mod.ViewEncapsulation.Emulated & Double = js.native
   
   /**
-    * @deprecated v6.1.0 - use {ViewEncapsulation.ShadowDom} instead.
-    * Use the native encapsulation mechanism of the renderer.
-    *
-    * For the DOM this means using the deprecated [Shadow DOM
-    * v0](https://w3c.github.io/webcomponents/spec/shadow/) and
-    * creating a ShadowRoot for Component's Host Element.
+    * Doesn't provide any sort of CSS style encapsulation, meaning that all the styles provided
+    * via {@link Component#styles styles} or {@link Component#styleUrls styleUrls} are applicable
+    * to any HTML element of the application regardless of their host Component.
     */
   @js.native
-  sealed trait Native extends ViewEncapsulation
+  sealed trait None
+    extends StObject
+       with ViewEncapsulation
+  /* 2 */ val None: typingsJapgolly.angularCore.mod.ViewEncapsulation.None & Double = js.native
   
   /**
-    * Don't provide any template or style encapsulation.
+    * Uses the browser's native Shadow DOM API to encapsulate CSS styles, meaning that it creates
+    * a ShadowRoot for the component's host element which is then used to encapsulate
+    * all the Component's styling.
     */
   @js.native
-  sealed trait None extends ViewEncapsulation
-  
-  /**
-    * Use Shadow DOM to encapsulate styles.
-    *
-    * For the DOM this means using modern [Shadow
-    * DOM](https://w3c.github.io/webcomponents/spec/shadow/) and
-    * creating a ShadowRoot for Component's Host Element.
-    */
-  @js.native
-  sealed trait ShadowDom extends ViewEncapsulation
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewEncapsulation with Double] = js.native
-  /* 0 */ @js.native
-  object Emulated extends TopLevel[Emulated with Double]
-  
-  /* 1 */ @js.native
-  object Native extends TopLevel[Native with Double]
-  
-  /* 2 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 3 */ @js.native
-  object ShadowDom extends TopLevel[ShadowDom with Double]
-  
+  sealed trait ShadowDom
+    extends StObject
+       with ViewEncapsulation
+  /* 3 */ val ShadowDom: typingsJapgolly.angularCore.mod.ViewEncapsulation.ShadowDom & Double = js.native
 }
-

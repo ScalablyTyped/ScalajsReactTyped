@@ -1,25 +1,32 @@
 package typingsJapgolly.jasmine.jasmine
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsApiReporter
-  extends Reporter
-     with Instantiable0[js.Any] {
+  extends StObject
+     with CustomReporter
+     with Instantiable0[scala.Any] {
+  
+  def executionTime(): Double = js.native
+  
   var finished: Boolean = js.native
-  var messages: js.Any = js.native
-  var result: js.Any = js.native
-  var runDetails: RunDetails = js.native
+  
+  var runDetails: JasmineDoneInfo = js.native
+  
+  def specResults(index: Double, length: Double): js.Array[SpecResult] = js.native
+  
+  def specs(): js.Array[SpecResult] = js.native
+  
   var started: Boolean = js.native
-  def log(str: js.Any): js.Any = js.native
-  def results(): js.Any = js.native
-  def resultsForSpec(specId: js.Any): js.Any = js.native
-  def resultsForSpecs(specIds: js.Any): js.Any = js.native
-  def suites(): js.Array[Suite] = js.native
-  def summarizeResult_(result: js.Any): js.Any = js.native
-  def summarize_(suiteOrSpec: SuiteOrSpec): js.Any = js.native
+  
+  def status(): String = js.native
+  
+  def suiteResults(index: Double, length: Double): js.Array[SuiteResult] = js.native
+  
+  def suites(): StringDictionary[SuiteResult] = js.native
 }
-

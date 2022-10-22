@@ -1,731 +1,727 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`0`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`100`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`101`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`102`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`103`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`104`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`105`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`106`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`107`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`108`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`109`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`10`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`110`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`111`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`112`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`113`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`114`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`115`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`116`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`117`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`118`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`119`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`11`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`120`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`121`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`122`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`123`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`124`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`125`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`126`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`127`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`128`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`129`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`12`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`130`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`131`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`132`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`133`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`134`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`135`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`136`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`137`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`138`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`139`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`13`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`140`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`141`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`142`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`143`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`144`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`145`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`146`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`147`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`148`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`149`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`14`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`150`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`151`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`152`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`153`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`154`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`155`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`156`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`157`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`158`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`159`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`15`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`160`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`161`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`162`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`163`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`164`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`165`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`166`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`167`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`168`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`169`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`16`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`170`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`171`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`172`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`173`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`174`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`175`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`176`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`177`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`178`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`17`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`18`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`19`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`20`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`21`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`22`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`23`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`24`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`25`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`26`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`27`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`28`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`29`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`30`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`31`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`32`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`33`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`34`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`35`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`36`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`37`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`38`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`39`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`40`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`41`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`42`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`43`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`44`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`45`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`46`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`47`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`48`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`49`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`50`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`51`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`52`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`53`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`54`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`55`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`56`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`57`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`58`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`59`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`5`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`60`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`61`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`62`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`63`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`64`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`65`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`66`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`67`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`68`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`69`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`6`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`70`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`71`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`72`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`73`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`74`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`75`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`76`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`77`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`78`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`79`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`7`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`80`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`81`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`82`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`83`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`84`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`85`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`86`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`87`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`88`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`89`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`8`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`90`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`91`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`92`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`93`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`94`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`95`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`96`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`97`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`98`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`99`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`9`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`0`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`100`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`101`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`102`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`103`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`104`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`105`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`106`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`107`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`108`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`109`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`10`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`110`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`111`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`112`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`113`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`114`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`115`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`116`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`117`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`118`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`119`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`11`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`120`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`121`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`122`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`123`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`124`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`125`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`126`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`127`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`128`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`129`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`12`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`130`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`131`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`132`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`133`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`134`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`135`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`136`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`137`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`138`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`139`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`13`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`140`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`141`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`142`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`143`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`144`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`145`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`146`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`147`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`148`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`149`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`14`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`150`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`151`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`152`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`153`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`154`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`155`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`156`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`157`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`158`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`159`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`15`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`160`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`161`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`162`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`163`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`164`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`165`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`166`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`167`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`168`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`169`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`16`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`170`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`171`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`172`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`173`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`174`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`175`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`176`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`177`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`178`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`17`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`18`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`19`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`20`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`21`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`22`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`23`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`24`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`25`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`26`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`27`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`28`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`29`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`30`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`31`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`32`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`33`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`34`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`35`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`36`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`37`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`38`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`39`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`40`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`41`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`42`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`43`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`44`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`45`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`46`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`47`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`48`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`49`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`50`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`51`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`52`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`53`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`54`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`55`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`56`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`57`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`58`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`59`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`5`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`60`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`61`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`62`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`63`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`64`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`65`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`66`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`67`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`68`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`69`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`6`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`70`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`71`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`72`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`73`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`74`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`75`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`76`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`77`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`78`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`79`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`7`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`80`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`81`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`82`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`83`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`84`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`85`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`86`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`87`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`88`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`89`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`8`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`90`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`91`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`92`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`93`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`94`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`95`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`96`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`97`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`98`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`99`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`131`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`33`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`35`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`32`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`34`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`85`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`59`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`109`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`58`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`53`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`134`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`133`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`52`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`117`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`60`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`135`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`68`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`67`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`66`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`50`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`51`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`132`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`119`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`23`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`25`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`24`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`172`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`139`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`98`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`97`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`94`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`171`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`87`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`102`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`101`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`104`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`103`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`159`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`158`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`169`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`167`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`170`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`168`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`89`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`151`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`150`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`152`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`149`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`148`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`142`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`140`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`127`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`124`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`125`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`123`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`126`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`138`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`137`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`9`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`77`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`75`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`107`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`10`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`130`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`129`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`118`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`61`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`22`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`48`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`47`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`49`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`64`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`65`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`78`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`81`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`80`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`21`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`43`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`44`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`42`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`45`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`46`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`13`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`62`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`63`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`128`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`175`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`174`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`73`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`54`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`178`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`176`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`177`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`57`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`160`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`95`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`96`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`5`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`6`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`55`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`72`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`71`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`82`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`146`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`144`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`147`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`145`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`70`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`69`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`40`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`83`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`84`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`41`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`91`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`93`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`92`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`90`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`86`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`26`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`110`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`111`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`112`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`113`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`114`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`115`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`27`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`116`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`31`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`30`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`29`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`28`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`166`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`164`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`161`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`162`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`163`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`165`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`88`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`156`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`154`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`155`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`153`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`143`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`141`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`122`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`106`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`121`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`105`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`120`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`39`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`136`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`76`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`74`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`36`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`37`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`38`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`18`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`11`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`108`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`20`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`7`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`173`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`17`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`19`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`79`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`14`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`0`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`12`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`99`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`100`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`15`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`16`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`157`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`8`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`56`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`131`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`33`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`35`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`32`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`34`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`85`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`59`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`109`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`58`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`53`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`134`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`133`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`52`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`117`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`60`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`135`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`68`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`67`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`66`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`50`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`51`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`132`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`119`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`23`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`25`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`24`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`172`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`139`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`98`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`97`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`94`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`171`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`87`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`102`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`101`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`104`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`103`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`159`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`158`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`169`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`167`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`170`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`168`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`89`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`151`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`150`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`152`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`149`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`148`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`142`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`140`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`127`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`124`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`125`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`123`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`126`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`138`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`137`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`9`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`77`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`75`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`107`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`10`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`130`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`129`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`118`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`61`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`22`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`48`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`47`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`49`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`64`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`65`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`78`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`81`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`80`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`21`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`43`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`44`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`42`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`45`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`46`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`13`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`62`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`63`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`128`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`175`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`174`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`73`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`54`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`178`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`176`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`177`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`57`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`160`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`95`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`96`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`5`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`6`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`55`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`72`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`71`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`82`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`146`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`144`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`147`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`145`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`70`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`69`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`40`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`83`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`84`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`41`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`91`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`93`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`92`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`90`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`86`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`26`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`110`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`111`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`112`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`113`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`114`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`115`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`27`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`116`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`31`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`30`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`29`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`28`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`166`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`164`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`161`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`162`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`163`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`165`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`88`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`156`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`154`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`155`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`153`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`143`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`141`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`122`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`106`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`121`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`105`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`120`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`39`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`136`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`76`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`74`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`36`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`37`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`38`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`18`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`11`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`108`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`20`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`7`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`173`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`17`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`19`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`79`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`14`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`0`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`12`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`99`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`100`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`15`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`16`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`157`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`8`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`56`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`3`
 */
-trait CommandIds extends js.Object
-
+trait CommandIds extends StObject
 object CommandIds {
-  @scala.inline
-  def AddWordToDictionary: `131` = this.cast(131)
-  @scala.inline
-  def AlignTextCenter: `33` = this.cast(33)
-  @scala.inline
-  def AlignTextJustify: `35` = this.cast(35)
-  @scala.inline
-  def AlignTextLeft: `32` = this.cast(32)
-  @scala.inline
-  def AlignTextRight: `34` = this.cast(34)
-  @scala.inline
-  def ClearAutoSpace: `85` = this.cast(85)
-  @scala.inline
-  def ClearBulletedList: `59` = this.cast(59)
-  @scala.inline
-  def ClearFontFormatting: `109` = this.cast(109)
-  @scala.inline
-  def ClearNumberedList: `58` = this.cast(58)
-  @scala.inline
-  def Close: `4` = this.cast(4)
-  @scala.inline
-  def Copy: `53` = this.cast(53)
-  @scala.inline
-  def CorrectAllOfMisspelledWord: `134` = this.cast(134)
-  @scala.inline
-  def CorrectMisspelledWord: `133` = this.cast(133)
-  @scala.inline
-  def Cut: `52` = this.cast(52)
-  @scala.inline
-  def DecreaseFontSizeBy2: `117` = this.cast(117)
-  @scala.inline
-  def DecreaseIndent: `60` = this.cast(60)
-  @scala.inline
-  def DeleteMisspelledWord: `135` = this.cast(135)
-  @scala.inline
-  def DeleteSelectedColumns: `68` = this.cast(68)
-  @scala.inline
-  def DeleteSelectedRows: `67` = this.cast(67)
-  @scala.inline
-  def DeleteSelectedTable: `66` = this.cast(66)
-  @scala.inline
-  def DrawTable: `50` = this.cast(50)
-  @scala.inline
-  def EraseTable: `51` = this.cast(51)
-  @scala.inline
-  def FindNextMisspelledWord: `132` = this.cast(132)
-  @scala.inline
-  def FindReplaceFindNext: `119` = this.cast(119)
-  @scala.inline
-  def FormatPainterApplyFormatting: `23` = this.cast(23)
-  @scala.inline
-  def FormatPainterApplyFormattingPersistent: `25` = this.cast(25)
-  @scala.inline
-  def FormatPainterCopyFormatting: `24` = this.cast(24)
-  @scala.inline
-  def FormatPainterCopyFormattingPersistent: `172` = this.cast(172)
-  @scala.inline
-  def GetCurrentMisspelledWord: `139` = this.cast(139)
-  @scala.inline
-  def GetDefaultFontColor: `98` = this.cast(98)
-  @scala.inline
-  def GetDefaultHighlightColor: `97` = this.cast(97)
-  @scala.inline
-  def GetFindReplaceOptionSearchDirection: `94` = this.cast(94)
-  @scala.inline
-  def GetFindReplaceState: `171` = this.cast(171)
-  @scala.inline
-  def GetFindString: `87` = this.cast(87)
-  @scala.inline
-  def GetFontAvailableByIndex: `102` = this.cast(102)
-  @scala.inline
-  def GetFontSizeAvailableByIndex: `104` = this.cast(104)
-  @scala.inline
-  def GetFontSizesAvailableCount: `103` = this.cast(103)
-  @scala.inline
-  def GetFontsAvailableCount: `101` = this.cast(101)
-  @scala.inline
-  def GetHyperlinkAddress: `159` = this.cast(159)
-  @scala.inline
-  def GetHyperlinkDisplayText: `158` = this.cast(158)
-  @scala.inline
-  def GetPictureAlternativeText: `169` = this.cast(169)
-  @scala.inline
-  def GetPictureHeight: `167` = this.cast(167)
-  @scala.inline
-  def GetPictureTextWrapping: `170` = this.cast(170)
-  @scala.inline
-  def GetPictureWidth: `168` = this.cast(168)
-  @scala.inline
-  def GetReplaceWithString: `89` = this.cast(89)
-  @scala.inline
-  def GetSelectedCellBottomPadding: `151` = this.cast(151)
-  @scala.inline
-  def GetSelectedCellLeftPadding: `150` = this.cast(150)
-  @scala.inline
-  def GetSelectedCellRightPadding: `152` = this.cast(152)
-  @scala.inline
-  def GetSelectedCellTopPadding: `149` = this.cast(149)
-  @scala.inline
-  def GetSelectedCellVerticalAlignment: `148` = this.cast(148)
-  @scala.inline
-  def GetSelectedColumnWidth: `142` = this.cast(142)
-  @scala.inline
-  def GetSelectedRowHeight: `140` = this.cast(140)
-  @scala.inline
-  def GetSelectedTextBackgroundColor: `127` = this.cast(127)
-  @scala.inline
-  def GetSelectedTextFont: `124` = this.cast(124)
-  @scala.inline
-  def GetSelectedTextFontColor: `125` = this.cast(125)
-  @scala.inline
-  def GetSelectedTextFontSize: `123` = this.cast(123)
-  @scala.inline
-  def GetSelectedTextHighlightColor: `126` = this.cast(126)
-  @scala.inline
-  def GetSpellingSuggestion: `138` = this.cast(138)
-  @scala.inline
-  def GetSpellingSuggestionsCount: `137` = this.cast(137)
-  @scala.inline
-  def GetSubmitButtonCaption: `9` = this.cast(9)
-  @scala.inline
-  def GetTableDirection: `77` = this.cast(77)
-  @scala.inline
-  def GetTableHorizontalAlignment: `75` = this.cast(75)
-  @scala.inline
-  def GotoFirstErrorOnView: `107` = this.cast(107)
-  @scala.inline
-  def GotoNextErrorOnView: `10` = this.cast(10)
-  @scala.inline
-  def IgnoreAllOfMisspelledWord: `130` = this.cast(130)
-  @scala.inline
-  def IgnoreMisspelledWord: `129` = this.cast(129)
-  @scala.inline
-  def IncreaseFontSizeBy2: `118` = this.cast(118)
-  @scala.inline
-  def IncreaseIndent: `61` = this.cast(61)
-  @scala.inline
-  def InsertBulletedList: `22` = this.cast(22)
-  @scala.inline
-  def InsertBulletedListEmptyCircle: `48` = this.cast(48)
-  @scala.inline
-  def InsertBulletedListSolidCircle: `47` = this.cast(47)
-  @scala.inline
-  def InsertBulletedListSolidSquare: `49` = this.cast(49)
-  @scala.inline
-  def InsertColumnLeft: `64` = this.cast(64)
-  @scala.inline
-  def InsertColumnRight: `65` = this.cast(65)
-  @scala.inline
-  def InsertHorizontalLine: `78` = this.cast(78)
-  @scala.inline
-  def InsertHyperlink: `81` = this.cast(81)
-  @scala.inline
-  def InsertImage: `80` = this.cast(80)
-  @scala.inline
-  def InsertNumberedList: `21` = this.cast(21)
-  @scala.inline
-  def InsertNumberedListAlphaLowercase: `43` = this.cast(43)
-  @scala.inline
-  def InsertNumberedListAlphaUppercase: `44` = this.cast(44)
-  @scala.inline
-  def InsertNumberedListDecimal: `42` = this.cast(42)
-  @scala.inline
-  def InsertNumberedListRomanLowercase: `45` = this.cast(45)
-  @scala.inline
-  def InsertNumberedListRomanUppercase: `46` = this.cast(46)
-  @scala.inline
-  def InsertPictureFromFile: `13` = this.cast(13)
-  @scala.inline
-  def InsertRowAbove: `62` = this.cast(62)
-  @scala.inline
-  def InsertRowBelow: `63` = this.cast(63)
-  @scala.inline
-  def InsertTable: `128` = this.cast(128)
-  @scala.inline
-  def IsFormDirectionLeftToRight: `175` = this.cast(175)
-  @scala.inline
-  def IsFormDirectionRightToLeft: `174` = this.cast(174)
-  @scala.inline
-  def MergeCells: `73` = this.cast(73)
-  @scala.inline
-  def Paste: `54` = this.cast(54)
-  @scala.inline
-  def PasteAsText: `178` = this.cast(178)
-  @scala.inline
-  def PasteKeepSourceFormatting: `176` = this.cast(176)
-  @scala.inline
-  def PasteMatchDestination: `177` = this.cast(177)
-  @scala.inline
-  def Redo: `57` = this.cast(57)
-  @scala.inline
-  def RemoveHyperlink: `160` = this.cast(160)
-  @scala.inline
-  def Replace: `95` = this.cast(95)
-  @scala.inline
-  def ReplaceAll: `96` = this.cast(96)
-  @scala.inline
-  def Save: `5` = this.cast(5)
-  @scala.inline
-  def SaveAs: `6` = this.cast(6)
-  @scala.inline
-  def SelectAll: `55` = this.cast(55)
-  @scala.inline
-  def SelectCell: `72` = this.cast(72)
-  @scala.inline
-  def SelectColumns: `71` = this.cast(71)
-  @scala.inline
-  def SelectHyperlink: `82` = this.cast(82)
-  @scala.inline
-  def SelectNextColumn: `146` = this.cast(146)
-  @scala.inline
-  def SelectNextRow: `144` = this.cast(144)
-  @scala.inline
-  def SelectPreviousColumn: `147` = this.cast(147)
-  @scala.inline
-  def SelectPreviousRow: `145` = this.cast(145)
-  @scala.inline
-  def SelectRows: `70` = this.cast(70)
-  @scala.inline
-  def SelectTable: `69` = this.cast(69)
-  @scala.inline
-  def Set15LineSpacing: `40` = this.cast(40)
-  @scala.inline
-  def SetAutoSpaceBetweenAsianAndLatinText: `83` = this.cast(83)
-  @scala.inline
-  def SetAutoSpaceBetweenAsianTextAndNumbers: `84` = this.cast(84)
-  @scala.inline
-  def SetDoubleLineSpacing: `41` = this.cast(41)
-  @scala.inline
-  def SetFindReplaceOptionMatchCase: `91` = this.cast(91)
-  @scala.inline
-  def SetFindReplaceOptionSearchDirection: `93` = this.cast(93)
-  @scala.inline
-  def SetFindReplaceOptionUseWildcards: `92` = this.cast(92)
-  @scala.inline
-  def SetFindReplaceOptionWholeWordOnly: `90` = this.cast(90)
-  @scala.inline
-  def SetFindString: `86` = this.cast(86)
-  @scala.inline
-  def SetFontFormattingBold: `26` = this.cast(26)
-  @scala.inline
-  def SetFontFormattingHeading1: `110` = this.cast(110)
-  @scala.inline
-  def SetFontFormattingHeading2: `111` = this.cast(111)
-  @scala.inline
-  def SetFontFormattingHeading3: `112` = this.cast(112)
-  @scala.inline
-  def SetFontFormattingHeading4: `113` = this.cast(113)
-  @scala.inline
-  def SetFontFormattingHeading5: `114` = this.cast(114)
-  @scala.inline
-  def SetFontFormattingHeading6: `115` = this.cast(115)
-  @scala.inline
-  def SetFontFormattingItalic: `27` = this.cast(27)
-  @scala.inline
-  def SetFontFormattingNormal: `116` = this.cast(116)
-  @scala.inline
-  def SetFontFormattingStrikethrough: `31` = this.cast(31)
-  @scala.inline
-  def SetFontFormattingSubscript: `30` = this.cast(30)
-  @scala.inline
-  def SetFontFormattingSuperscript: `29` = this.cast(29)
-  @scala.inline
-  def SetFontFormattingUnderline: `28` = this.cast(28)
-  @scala.inline
-  def SetPictureAlternativeText: `166` = this.cast(166)
-  @scala.inline
-  def SetPictureHeight: `164` = this.cast(164)
-  @scala.inline
-  def SetPictureInlineWithText: `161` = this.cast(161)
-  @scala.inline
-  def SetPictureToLeftOfText: `162` = this.cast(162)
-  @scala.inline
-  def SetPictureToRightOfText: `163` = this.cast(163)
-  @scala.inline
-  def SetPictureWidth: `165` = this.cast(165)
-  @scala.inline
-  def SetReplaceWithString: `88` = this.cast(88)
-  @scala.inline
-  def SetSelectedCellAlignmentBottom: `156` = this.cast(156)
-  @scala.inline
-  def SetSelectedCellAlignmentMiddle: `154` = this.cast(154)
-  @scala.inline
-  def SetSelectedCellAlignmentTop: `155` = this.cast(155)
-  @scala.inline
-  def SetSelectedCellPadding: `153` = this.cast(153)
-  @scala.inline
-  def SetSelectedColumnWidth: `143` = this.cast(143)
-  @scala.inline
-  def SetSelectedRowHeight: `141` = this.cast(141)
-  @scala.inline
-  def SetSelectedTextBackgroundColor: `122` = this.cast(122)
-  @scala.inline
-  def SetSelectedTextFont: `106` = this.cast(106)
-  @scala.inline
-  def SetSelectedTextFontColor: `121` = this.cast(121)
-  @scala.inline
-  def SetSelectedTextFontSize: `105` = this.cast(105)
-  @scala.inline
-  def SetSelectedTextHighlightColor: `120` = this.cast(120)
-  @scala.inline
-  def SetSingleLineSpacing: `39` = this.cast(39)
-  @scala.inline
-  def SetSpellingOptionCheckAsYouType: `136` = this.cast(136)
-  @scala.inline
-  def SetTableDirection: `76` = this.cast(76)
-  @scala.inline
-  def SetTableHorizontalAlignment: `74` = this.cast(74)
-  @scala.inline
-  def SetTextDirectionDefault: `36` = this.cast(36)
-  @scala.inline
-  def SetTextDirectionLeftToRight: `37` = this.cast(37)
-  @scala.inline
-  def SetTextDirectionRightToLeft: `38` = this.cast(38)
-  @scala.inline
-  def ShowBordersShadingDialog: `18` = this.cast(18)
-  @scala.inline
-  def ShowCurrentErrorMessage: `11` = this.cast(11)
-  @scala.inline
-  def ShowDigitalSignaturesDialog: `108` = this.cast(108)
-  @scala.inline
-  def ShowEditHyperlinkDialog: `20` = this.cast(20)
-  @scala.inline
-  def ShowExportToExcelDialog: `7` = this.cast(7)
-  @scala.inline
-  def ShowExportToPDFXPSDialog: `173` = this.cast(173)
-  @scala.inline
-  def ShowExportToWebDialog: `2` = this.cast(2)
-  @scala.inline
-  def ShowFormatPictureDialog: `17` = this.cast(17)
-  @scala.inline
-  def ShowImportFormDataDialog: `1` = this.cast(1)
-  @scala.inline
-  def ShowInsertHyperlinkDialog: `19` = this.cast(19)
-  @scala.inline
-  def ShowInsertSymbolDialog: `79` = this.cast(79)
-  @scala.inline
-  def ShowInsertTableDialog: `14` = this.cast(14)
-  @scala.inline
-  def ShowMergeFormDialog: `0` = this.cast(0)
-  @scala.inline
-  def ShowSetLanguageDialog: `12` = this.cast(12)
-  @scala.inline
-  def ShowSetSelectedTextFontColorDialog: `99` = this.cast(99)
-  @scala.inline
-  def ShowSetSelectedTextHighlightColorDialog: `100` = this.cast(100)
-  @scala.inline
-  def ShowSplitCellsDialog: `15` = this.cast(15)
-  @scala.inline
-  def ShowTablePropertiesDialog: `16` = this.cast(16)
-  @scala.inline
-  def SplitCells: `157` = this.cast(157)
-  @scala.inline
-  def Submit: `8` = this.cast(8)
-  @scala.inline
-  def Undo: `56` = this.cast(56)
-  @scala.inline
-  def WorkOffline: `3` = this.cast(3)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AddWordToDictionary: `131` = 131.asInstanceOf[`131`]
+  
+  inline def AlignTextCenter: `33` = 33.asInstanceOf[`33`]
+  
+  inline def AlignTextJustify: `35` = 35.asInstanceOf[`35`]
+  
+  inline def AlignTextLeft: `32` = 32.asInstanceOf[`32`]
+  
+  inline def AlignTextRight: `34` = 34.asInstanceOf[`34`]
+  
+  inline def ClearAutoSpace: `85` = 85.asInstanceOf[`85`]
+  
+  inline def ClearBulletedList: `59` = 59.asInstanceOf[`59`]
+  
+  inline def ClearFontFormatting: `109` = 109.asInstanceOf[`109`]
+  
+  inline def ClearNumberedList: `58` = 58.asInstanceOf[`58`]
+  
+  inline def Close: `4` = 4.asInstanceOf[`4`]
+  
+  inline def Copy: `53` = 53.asInstanceOf[`53`]
+  
+  inline def CorrectAllOfMisspelledWord: `134` = 134.asInstanceOf[`134`]
+  
+  inline def CorrectMisspelledWord: `133` = 133.asInstanceOf[`133`]
+  
+  inline def Cut: `52` = 52.asInstanceOf[`52`]
+  
+  inline def DecreaseFontSizeBy2: `117` = 117.asInstanceOf[`117`]
+  
+  inline def DecreaseIndent: `60` = 60.asInstanceOf[`60`]
+  
+  inline def DeleteMisspelledWord: `135` = 135.asInstanceOf[`135`]
+  
+  inline def DeleteSelectedColumns: `68` = 68.asInstanceOf[`68`]
+  
+  inline def DeleteSelectedRows: `67` = 67.asInstanceOf[`67`]
+  
+  inline def DeleteSelectedTable: `66` = 66.asInstanceOf[`66`]
+  
+  inline def DrawTable: `50` = 50.asInstanceOf[`50`]
+  
+  inline def EraseTable: `51` = 51.asInstanceOf[`51`]
+  
+  inline def FindNextMisspelledWord: `132` = 132.asInstanceOf[`132`]
+  
+  inline def FindReplaceFindNext: `119` = 119.asInstanceOf[`119`]
+  
+  inline def FormatPainterApplyFormatting: `23` = 23.asInstanceOf[`23`]
+  
+  inline def FormatPainterApplyFormattingPersistent: `25` = 25.asInstanceOf[`25`]
+  
+  inline def FormatPainterCopyFormatting: `24` = 24.asInstanceOf[`24`]
+  
+  inline def FormatPainterCopyFormattingPersistent: `172` = 172.asInstanceOf[`172`]
+  
+  inline def GetCurrentMisspelledWord: `139` = 139.asInstanceOf[`139`]
+  
+  inline def GetDefaultFontColor: `98` = 98.asInstanceOf[`98`]
+  
+  inline def GetDefaultHighlightColor: `97` = 97.asInstanceOf[`97`]
+  
+  inline def GetFindReplaceOptionSearchDirection: `94` = 94.asInstanceOf[`94`]
+  
+  inline def GetFindReplaceState: `171` = 171.asInstanceOf[`171`]
+  
+  inline def GetFindString: `87` = 87.asInstanceOf[`87`]
+  
+  inline def GetFontAvailableByIndex: `102` = 102.asInstanceOf[`102`]
+  
+  inline def GetFontSizeAvailableByIndex: `104` = 104.asInstanceOf[`104`]
+  
+  inline def GetFontSizesAvailableCount: `103` = 103.asInstanceOf[`103`]
+  
+  inline def GetFontsAvailableCount: `101` = 101.asInstanceOf[`101`]
+  
+  inline def GetHyperlinkAddress: `159` = 159.asInstanceOf[`159`]
+  
+  inline def GetHyperlinkDisplayText: `158` = 158.asInstanceOf[`158`]
+  
+  inline def GetPictureAlternativeText: `169` = 169.asInstanceOf[`169`]
+  
+  inline def GetPictureHeight: `167` = 167.asInstanceOf[`167`]
+  
+  inline def GetPictureTextWrapping: `170` = 170.asInstanceOf[`170`]
+  
+  inline def GetPictureWidth: `168` = 168.asInstanceOf[`168`]
+  
+  inline def GetReplaceWithString: `89` = 89.asInstanceOf[`89`]
+  
+  inline def GetSelectedCellBottomPadding: `151` = 151.asInstanceOf[`151`]
+  
+  inline def GetSelectedCellLeftPadding: `150` = 150.asInstanceOf[`150`]
+  
+  inline def GetSelectedCellRightPadding: `152` = 152.asInstanceOf[`152`]
+  
+  inline def GetSelectedCellTopPadding: `149` = 149.asInstanceOf[`149`]
+  
+  inline def GetSelectedCellVerticalAlignment: `148` = 148.asInstanceOf[`148`]
+  
+  inline def GetSelectedColumnWidth: `142` = 142.asInstanceOf[`142`]
+  
+  inline def GetSelectedRowHeight: `140` = 140.asInstanceOf[`140`]
+  
+  inline def GetSelectedTextBackgroundColor: `127` = 127.asInstanceOf[`127`]
+  
+  inline def GetSelectedTextFont: `124` = 124.asInstanceOf[`124`]
+  
+  inline def GetSelectedTextFontColor: `125` = 125.asInstanceOf[`125`]
+  
+  inline def GetSelectedTextFontSize: `123` = 123.asInstanceOf[`123`]
+  
+  inline def GetSelectedTextHighlightColor: `126` = 126.asInstanceOf[`126`]
+  
+  inline def GetSpellingSuggestion: `138` = 138.asInstanceOf[`138`]
+  
+  inline def GetSpellingSuggestionsCount: `137` = 137.asInstanceOf[`137`]
+  
+  inline def GetSubmitButtonCaption: `9` = 9.asInstanceOf[`9`]
+  
+  inline def GetTableDirection: `77` = 77.asInstanceOf[`77`]
+  
+  inline def GetTableHorizontalAlignment: `75` = 75.asInstanceOf[`75`]
+  
+  inline def GotoFirstErrorOnView: `107` = 107.asInstanceOf[`107`]
+  
+  inline def GotoNextErrorOnView: `10` = 10.asInstanceOf[`10`]
+  
+  inline def IgnoreAllOfMisspelledWord: `130` = 130.asInstanceOf[`130`]
+  
+  inline def IgnoreMisspelledWord: `129` = 129.asInstanceOf[`129`]
+  
+  inline def IncreaseFontSizeBy2: `118` = 118.asInstanceOf[`118`]
+  
+  inline def IncreaseIndent: `61` = 61.asInstanceOf[`61`]
+  
+  inline def InsertBulletedList: `22` = 22.asInstanceOf[`22`]
+  
+  inline def InsertBulletedListEmptyCircle: `48` = 48.asInstanceOf[`48`]
+  
+  inline def InsertBulletedListSolidCircle: `47` = 47.asInstanceOf[`47`]
+  
+  inline def InsertBulletedListSolidSquare: `49` = 49.asInstanceOf[`49`]
+  
+  inline def InsertColumnLeft: `64` = 64.asInstanceOf[`64`]
+  
+  inline def InsertColumnRight: `65` = 65.asInstanceOf[`65`]
+  
+  inline def InsertHorizontalLine: `78` = 78.asInstanceOf[`78`]
+  
+  inline def InsertHyperlink: `81` = 81.asInstanceOf[`81`]
+  
+  inline def InsertImage: `80` = 80.asInstanceOf[`80`]
+  
+  inline def InsertNumberedList: `21` = 21.asInstanceOf[`21`]
+  
+  inline def InsertNumberedListAlphaLowercase: `43` = 43.asInstanceOf[`43`]
+  
+  inline def InsertNumberedListAlphaUppercase: `44` = 44.asInstanceOf[`44`]
+  
+  inline def InsertNumberedListDecimal: `42` = 42.asInstanceOf[`42`]
+  
+  inline def InsertNumberedListRomanLowercase: `45` = 45.asInstanceOf[`45`]
+  
+  inline def InsertNumberedListRomanUppercase: `46` = 46.asInstanceOf[`46`]
+  
+  inline def InsertPictureFromFile: `13` = 13.asInstanceOf[`13`]
+  
+  inline def InsertRowAbove: `62` = 62.asInstanceOf[`62`]
+  
+  inline def InsertRowBelow: `63` = 63.asInstanceOf[`63`]
+  
+  inline def InsertTable: `128` = 128.asInstanceOf[`128`]
+  
+  inline def IsFormDirectionLeftToRight: `175` = 175.asInstanceOf[`175`]
+  
+  inline def IsFormDirectionRightToLeft: `174` = 174.asInstanceOf[`174`]
+  
+  inline def MergeCells: `73` = 73.asInstanceOf[`73`]
+  
+  inline def Paste: `54` = 54.asInstanceOf[`54`]
+  
+  inline def PasteAsText: `178` = 178.asInstanceOf[`178`]
+  
+  inline def PasteKeepSourceFormatting: `176` = 176.asInstanceOf[`176`]
+  
+  inline def PasteMatchDestination: `177` = 177.asInstanceOf[`177`]
+  
+  inline def Redo: `57` = 57.asInstanceOf[`57`]
+  
+  inline def RemoveHyperlink: `160` = 160.asInstanceOf[`160`]
+  
+  inline def Replace: `95` = 95.asInstanceOf[`95`]
+  
+  inline def ReplaceAll: `96` = 96.asInstanceOf[`96`]
+  
+  inline def Save: `5` = 5.asInstanceOf[`5`]
+  
+  inline def SaveAs: `6` = 6.asInstanceOf[`6`]
+  
+  inline def SelectAll: `55` = 55.asInstanceOf[`55`]
+  
+  inline def SelectCell: `72` = 72.asInstanceOf[`72`]
+  
+  inline def SelectColumns: `71` = 71.asInstanceOf[`71`]
+  
+  inline def SelectHyperlink: `82` = 82.asInstanceOf[`82`]
+  
+  inline def SelectNextColumn: `146` = 146.asInstanceOf[`146`]
+  
+  inline def SelectNextRow: `144` = 144.asInstanceOf[`144`]
+  
+  inline def SelectPreviousColumn: `147` = 147.asInstanceOf[`147`]
+  
+  inline def SelectPreviousRow: `145` = 145.asInstanceOf[`145`]
+  
+  inline def SelectRows: `70` = 70.asInstanceOf[`70`]
+  
+  inline def SelectTable: `69` = 69.asInstanceOf[`69`]
+  
+  inline def Set15LineSpacing: `40` = 40.asInstanceOf[`40`]
+  
+  inline def SetAutoSpaceBetweenAsianAndLatinText: `83` = 83.asInstanceOf[`83`]
+  
+  inline def SetAutoSpaceBetweenAsianTextAndNumbers: `84` = 84.asInstanceOf[`84`]
+  
+  inline def SetDoubleLineSpacing: `41` = 41.asInstanceOf[`41`]
+  
+  inline def SetFindReplaceOptionMatchCase: `91` = 91.asInstanceOf[`91`]
+  
+  inline def SetFindReplaceOptionSearchDirection: `93` = 93.asInstanceOf[`93`]
+  
+  inline def SetFindReplaceOptionUseWildcards: `92` = 92.asInstanceOf[`92`]
+  
+  inline def SetFindReplaceOptionWholeWordOnly: `90` = 90.asInstanceOf[`90`]
+  
+  inline def SetFindString: `86` = 86.asInstanceOf[`86`]
+  
+  inline def SetFontFormattingBold: `26` = 26.asInstanceOf[`26`]
+  
+  inline def SetFontFormattingHeading1: `110` = 110.asInstanceOf[`110`]
+  
+  inline def SetFontFormattingHeading2: `111` = 111.asInstanceOf[`111`]
+  
+  inline def SetFontFormattingHeading3: `112` = 112.asInstanceOf[`112`]
+  
+  inline def SetFontFormattingHeading4: `113` = 113.asInstanceOf[`113`]
+  
+  inline def SetFontFormattingHeading5: `114` = 114.asInstanceOf[`114`]
+  
+  inline def SetFontFormattingHeading6: `115` = 115.asInstanceOf[`115`]
+  
+  inline def SetFontFormattingItalic: `27` = 27.asInstanceOf[`27`]
+  
+  inline def SetFontFormattingNormal: `116` = 116.asInstanceOf[`116`]
+  
+  inline def SetFontFormattingStrikethrough: `31` = 31.asInstanceOf[`31`]
+  
+  inline def SetFontFormattingSubscript: `30` = 30.asInstanceOf[`30`]
+  
+  inline def SetFontFormattingSuperscript: `29` = 29.asInstanceOf[`29`]
+  
+  inline def SetFontFormattingUnderline: `28` = 28.asInstanceOf[`28`]
+  
+  inline def SetPictureAlternativeText: `166` = 166.asInstanceOf[`166`]
+  
+  inline def SetPictureHeight: `164` = 164.asInstanceOf[`164`]
+  
+  inline def SetPictureInlineWithText: `161` = 161.asInstanceOf[`161`]
+  
+  inline def SetPictureToLeftOfText: `162` = 162.asInstanceOf[`162`]
+  
+  inline def SetPictureToRightOfText: `163` = 163.asInstanceOf[`163`]
+  
+  inline def SetPictureWidth: `165` = 165.asInstanceOf[`165`]
+  
+  inline def SetReplaceWithString: `88` = 88.asInstanceOf[`88`]
+  
+  inline def SetSelectedCellAlignmentBottom: `156` = 156.asInstanceOf[`156`]
+  
+  inline def SetSelectedCellAlignmentMiddle: `154` = 154.asInstanceOf[`154`]
+  
+  inline def SetSelectedCellAlignmentTop: `155` = 155.asInstanceOf[`155`]
+  
+  inline def SetSelectedCellPadding: `153` = 153.asInstanceOf[`153`]
+  
+  inline def SetSelectedColumnWidth: `143` = 143.asInstanceOf[`143`]
+  
+  inline def SetSelectedRowHeight: `141` = 141.asInstanceOf[`141`]
+  
+  inline def SetSelectedTextBackgroundColor: `122` = 122.asInstanceOf[`122`]
+  
+  inline def SetSelectedTextFont: `106` = 106.asInstanceOf[`106`]
+  
+  inline def SetSelectedTextFontColor: `121` = 121.asInstanceOf[`121`]
+  
+  inline def SetSelectedTextFontSize: `105` = 105.asInstanceOf[`105`]
+  
+  inline def SetSelectedTextHighlightColor: `120` = 120.asInstanceOf[`120`]
+  
+  inline def SetSingleLineSpacing: `39` = 39.asInstanceOf[`39`]
+  
+  inline def SetSpellingOptionCheckAsYouType: `136` = 136.asInstanceOf[`136`]
+  
+  inline def SetTableDirection: `76` = 76.asInstanceOf[`76`]
+  
+  inline def SetTableHorizontalAlignment: `74` = 74.asInstanceOf[`74`]
+  
+  inline def SetTextDirectionDefault: `36` = 36.asInstanceOf[`36`]
+  
+  inline def SetTextDirectionLeftToRight: `37` = 37.asInstanceOf[`37`]
+  
+  inline def SetTextDirectionRightToLeft: `38` = 38.asInstanceOf[`38`]
+  
+  inline def ShowBordersShadingDialog: `18` = 18.asInstanceOf[`18`]
+  
+  inline def ShowCurrentErrorMessage: `11` = 11.asInstanceOf[`11`]
+  
+  inline def ShowDigitalSignaturesDialog: `108` = 108.asInstanceOf[`108`]
+  
+  inline def ShowEditHyperlinkDialog: `20` = 20.asInstanceOf[`20`]
+  
+  inline def ShowExportToExcelDialog: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ShowExportToPDFXPSDialog: `173` = 173.asInstanceOf[`173`]
+  
+  inline def ShowExportToWebDialog: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ShowFormatPictureDialog: `17` = 17.asInstanceOf[`17`]
+  
+  inline def ShowImportFormDataDialog: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ShowInsertHyperlinkDialog: `19` = 19.asInstanceOf[`19`]
+  
+  inline def ShowInsertSymbolDialog: `79` = 79.asInstanceOf[`79`]
+  
+  inline def ShowInsertTableDialog: `14` = 14.asInstanceOf[`14`]
+  
+  inline def ShowMergeFormDialog: `0` = 0.asInstanceOf[`0`]
+  
+  inline def ShowSetLanguageDialog: `12` = 12.asInstanceOf[`12`]
+  
+  inline def ShowSetSelectedTextFontColorDialog: `99` = 99.asInstanceOf[`99`]
+  
+  inline def ShowSetSelectedTextHighlightColorDialog: `100` = 100.asInstanceOf[`100`]
+  
+  inline def ShowSplitCellsDialog: `15` = 15.asInstanceOf[`15`]
+  
+  inline def ShowTablePropertiesDialog: `16` = 16.asInstanceOf[`16`]
+  
+  inline def SplitCells: `157` = 157.asInstanceOf[`157`]
+  
+  inline def Submit: `8` = 8.asInstanceOf[`8`]
+  
+  inline def Undo: `56` = 56.asInstanceOf[`56`]
+  
+  inline def WorkOffline: `3` = 3.asInstanceOf[`3`]
 }
-

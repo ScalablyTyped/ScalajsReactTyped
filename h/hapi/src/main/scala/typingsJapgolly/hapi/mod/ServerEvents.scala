@@ -7,12 +7,17 @@ import typingsJapgolly.hapi.hapiStrings.route
 import typingsJapgolly.hapi.hapiStrings.start
 import typingsJapgolly.hapi.hapiStrings.stop
 import typingsJapgolly.podium.mod.Podium
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServerEvents extends Podium {
+trait ServerEvents
+  extends StObject
+     with Podium {
+  
+  @JSName("on")
+  def on_log(criteria: log, listener: LogEventHandler): Unit = js.native
   /**
     * Subscribe to an event where:
     * @param criteria - the subscription criteria which must be one of:
@@ -29,8 +34,6 @@ trait ServerEvents extends Podium {
     * See ['start' event](https://github.com/hapijs/hapi/blob/master/API.md#-start-event)
     * See ['stop' event](https://github.com/hapijs/hapi/blob/master/API.md#-stop-event)
     */
-  @JSName("on")
-  def on_log(criteria: log, listener: LogEventHandler): Unit = js.native
   @JSName("on")
   def on_log(criteria: ServerEventCriteria[log], listener: LogEventHandler): Unit = js.native
   @JSName("on")
@@ -53,6 +56,7 @@ trait ServerEvents extends Podium {
   def on_stop(criteria: stop, listener: StopEventHandler): Unit = js.native
   @JSName("on")
   def on_stop(criteria: ServerEventCriteria[stop], listener: StopEventHandler): Unit = js.native
+  
   /**
     * Same as calling server.events.on() with the count option set to 1.
     * @param criteria - the subscription criteria which must be one of:
@@ -62,8 +66,10 @@ trait ServerEvents extends Podium {
     * @return Return value: a promise that resolves when the event is emitted.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-await-servereventsoncecriteria)
     */
-  def once(criteria: String): js.Promise[_] = js.native
-  def once(criteria: ServerEventCriteria[String]): js.Promise[_] = js.native
+  def once(criteria: String): js.Promise[Any] = js.native
+  def once(criteria: ServerEventCriteria[String]): js.Promise[Any] = js.native
+  @JSName("once")
+  def once_log(criteria: log, listener: LogEventHandler): Unit = js.native
   /**
     * Same as calling [server.events.on()](https://github.com/hapijs/hapi/blob/master/API.md#server.events.on()) with the count option set to 1.
     * @param criteria - the subscription criteria which must be one of:
@@ -74,8 +80,6 @@ trait ServerEvents extends Podium {
     * @return Return value: none.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-servereventsoncecriteria-listener)
     */
-  @JSName("once")
-  def once_log(criteria: log, listener: LogEventHandler): Unit = js.native
   @JSName("once")
   def once_log(criteria: ServerEventCriteria[log], listener: LogEventHandler): Unit = js.native
   @JSName("once")
@@ -99,4 +103,3 @@ trait ServerEvents extends Podium {
   @JSName("once")
   def once_stop(criteria: ServerEventCriteria[stop], listener: StopEventHandler): Unit = js.native
 }
-

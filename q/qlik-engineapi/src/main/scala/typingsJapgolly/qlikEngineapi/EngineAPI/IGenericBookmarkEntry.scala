@@ -1,29 +1,35 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericBookmarkEntry...
   */
-trait IGenericBookmarkEntry extends js.Object {
+trait IGenericBookmarkEntry extends StObject {
+  
   /**
     * Information about the bookmark.
     */
   var qBookmark: INxBookmark
+  
   /**
     * Information about the properties of the bookmark.
     */
   var qProperties: IGenericBookmarkProperties
 }
-
 object IGenericBookmarkEntry {
-  @scala.inline
-  def apply(qBookmark: INxBookmark, qProperties: IGenericBookmarkProperties): IGenericBookmarkEntry = {
-    val __obj = js.Dynamic.literal(qBookmark = qBookmark.asInstanceOf[js.Any], qProperties = qProperties.asInstanceOf[js.Any])
   
+  inline def apply(qBookmark: INxBookmark, qProperties: IGenericBookmarkProperties): IGenericBookmarkEntry = {
+    val __obj = js.Dynamic.literal(qBookmark = qBookmark.asInstanceOf[js.Any], qProperties = qProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericBookmarkEntry]
   }
+  
+  extension [Self <: IGenericBookmarkEntry](x: Self) {
+    
+    inline def setQBookmark(value: INxBookmark): Self = StObject.set(x, "qBookmark", value.asInstanceOf[js.Any])
+    
+    inline def setQProperties(value: IGenericBookmarkProperties): Self = StObject.set(x, "qProperties", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,44 +1,62 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EBookInstallSummary extends Entity {
+trait EBookInstallSummary
+  extends StObject
+     with Entity {
+  
   // Number of Devices that have failed to install this book.
   var failedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of Users that have 1 or more device that failed to install this book.
   var failedUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of Devices that have successfully installed this book.
   var installedDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of Users whose devices have all succeeded to install this book.
   var installedUserCount: js.UndefOr[Double] = js.undefined
+  
   // Number of Devices that does not have this book installed.
   var notInstalledDeviceCount: js.UndefOr[Double] = js.undefined
+  
   // Number of Users that did not install this book.
   var notInstalledUserCount: js.UndefOr[Double] = js.undefined
 }
-
 object EBookInstallSummary {
-  @scala.inline
-  def apply(
-    failedDeviceCount: Int | Double = null,
-    failedUserCount: Int | Double = null,
-    id: String = null,
-    installedDeviceCount: Int | Double = null,
-    installedUserCount: Int | Double = null,
-    notInstalledDeviceCount: Int | Double = null,
-    notInstalledUserCount: Int | Double = null
-  ): EBookInstallSummary = {
+  
+  inline def apply(): EBookInstallSummary = {
     val __obj = js.Dynamic.literal()
-    if (failedDeviceCount != null) __obj.updateDynamic("failedDeviceCount")(failedDeviceCount.asInstanceOf[js.Any])
-    if (failedUserCount != null) __obj.updateDynamic("failedUserCount")(failedUserCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (installedDeviceCount != null) __obj.updateDynamic("installedDeviceCount")(installedDeviceCount.asInstanceOf[js.Any])
-    if (installedUserCount != null) __obj.updateDynamic("installedUserCount")(installedUserCount.asInstanceOf[js.Any])
-    if (notInstalledDeviceCount != null) __obj.updateDynamic("notInstalledDeviceCount")(notInstalledDeviceCount.asInstanceOf[js.Any])
-    if (notInstalledUserCount != null) __obj.updateDynamic("notInstalledUserCount")(notInstalledUserCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[EBookInstallSummary]
   }
+  
+  extension [Self <: EBookInstallSummary](x: Self) {
+    
+    inline def setFailedDeviceCount(value: Double): Self = StObject.set(x, "failedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setFailedDeviceCountUndefined: Self = StObject.set(x, "failedDeviceCount", js.undefined)
+    
+    inline def setFailedUserCount(value: Double): Self = StObject.set(x, "failedUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setFailedUserCountUndefined: Self = StObject.set(x, "failedUserCount", js.undefined)
+    
+    inline def setInstalledDeviceCount(value: Double): Self = StObject.set(x, "installedDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setInstalledDeviceCountUndefined: Self = StObject.set(x, "installedDeviceCount", js.undefined)
+    
+    inline def setInstalledUserCount(value: Double): Self = StObject.set(x, "installedUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setInstalledUserCountUndefined: Self = StObject.set(x, "installedUserCount", js.undefined)
+    
+    inline def setNotInstalledDeviceCount(value: Double): Self = StObject.set(x, "notInstalledDeviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setNotInstalledDeviceCountUndefined: Self = StObject.set(x, "notInstalledDeviceCount", js.undefined)
+    
+    inline def setNotInstalledUserCount(value: Double): Self = StObject.set(x, "notInstalledUserCount", value.asInstanceOf[js.Any])
+    
+    inline def setNotInstalledUserCountUndefined: Self = StObject.set(x, "notInstalledUserCount", js.undefined)
+  }
 }
-

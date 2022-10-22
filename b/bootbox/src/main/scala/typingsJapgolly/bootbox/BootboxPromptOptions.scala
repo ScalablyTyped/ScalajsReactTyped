@@ -1,77 +1,78 @@
 package typingsJapgolly.bootbox
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.bootbox.bootboxStrings.`extra-large`
-import typingsJapgolly.bootbox.bootboxStrings.checkbox
-import typingsJapgolly.bootbox.bootboxStrings.date
-import typingsJapgolly.bootbox.bootboxStrings.email
-import typingsJapgolly.bootbox.bootboxStrings.large
-import typingsJapgolly.bootbox.bootboxStrings.lg
-import typingsJapgolly.bootbox.bootboxStrings.number
-import typingsJapgolly.bootbox.bootboxStrings.password
-import typingsJapgolly.bootbox.bootboxStrings.radio
-import typingsJapgolly.bootbox.bootboxStrings.range
-import typingsJapgolly.bootbox.bootboxStrings.select
-import typingsJapgolly.bootbox.bootboxStrings.sm
-import typingsJapgolly.bootbox.bootboxStrings.small
-import typingsJapgolly.bootbox.bootboxStrings.text
-import typingsJapgolly.bootbox.bootboxStrings.textarea
-import typingsJapgolly.bootbox.bootboxStrings.time
-import typingsJapgolly.bootbox.bootboxStrings.xl
+import org.scalajs.dom.DocumentFragment
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Text
+import typingsJapgolly.bootbox.anon.Group
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Bootbox options available for prompt modals */
-trait BootboxPromptOptions extends BootboxBaseOptions[String] {
+trait BootboxPromptOptions
+  extends StObject
+     with BootboxBaseOptions[String] {
+  
   @JSName("buttons")
   var buttons_BootboxPromptOptions: js.UndefOr[BootboxConfirmPromptButtonMap] = js.undefined
-  var inputOptions: js.UndefOr[js.Array[AnonGroup]] = js.undefined
-  var inputType: js.UndefOr[
-    text | textarea | email | select | checkbox | date | time | number | password | radio | range
+  
+  @JSName("callback")
+  def callback_MBootboxPromptOptions(result: String): Any
+  
+  var inputOptions: js.UndefOr[js.Array[Group]] = js.undefined
+  
+  var inputType: js.UndefOr[BootboxInputType] = js.undefined
+  
+  var message: js.UndefOr[
+    JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ] = js.undefined
+  
   @JSName("title")
   var title_BootboxPromptOptions: String
+  
   var value: js.UndefOr[String] = js.undefined
-  @JSName("callback")
-  def callback_MBootboxPromptOptions(result: String): js.Any
 }
-
 object BootboxPromptOptions {
-  @scala.inline
-  def apply(
-    callback: String => CallbackTo[js.Any],
-    title: String,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxConfirmPromptButtonMap = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    inputOptions: js.Array[AnonGroup] = null,
-    inputType: text | textarea | email | select | checkbox | date | time | number | password | radio | range = null,
-    locale: String = null,
-    onEscape: js.Function0[_] | Boolean = null,
-    scrollable: js.UndefOr[Boolean] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: small | sm | large | lg | `extra-large` | xl = null,
-    value: String = null
-  ): BootboxPromptOptions = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: java.lang.String) => callback(t0).runNow()))
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (inputOptions != null) __obj.updateDynamic("inputOptions")(inputOptions.asInstanceOf[js.Any])
-    if (inputType != null) __obj.updateDynamic("inputType")(inputType.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollable)) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  
+  inline def apply(callback: String => Any, title: String): BootboxPromptOptions = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootboxPromptOptions]
   }
+  
+  extension [Self <: BootboxPromptOptions](x: Self) {
+    
+    inline def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setCallback(value: String => Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    
+    inline def setInputOptions(value: js.Array[Group]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+    
+    inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
+    
+    inline def setInputOptionsVarargs(value: Group*): Self = StObject.set(x, "inputOptions", js.Array(value*))
+    
+    inline def setInputType(value: BootboxInputType): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
+    
+    inline def setInputTypeUndefined: Self = StObject.set(x, "inputType", js.undefined)
+    
+    inline def setMessage(
+      value: JQuery[HTMLElement] | js.Array[Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
+    ): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageFunction2(value: (/* index */ Double, /* html */ String) => String | Element | JQuery[HTMLElement]): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setMessageVarargs(value: Any*): Self = StObject.set(x, "message", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

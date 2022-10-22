@@ -1,27 +1,32 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendContactOptions extends SendBasicOptions {
+trait SendContactOptions
+  extends StObject
+     with SendBasicOptions {
+  
   var last_name: js.UndefOr[String] = js.undefined
+  
+  var vcard: js.UndefOr[String] = js.undefined
 }
-
 object SendContactOptions {
-  @scala.inline
-  def apply(
-    disable_notification: js.UndefOr[Boolean] = js.undefined,
-    last_name: String = null,
-    reply_markup: InlineKeyboardMarkup | ReplyKeyboardMarkup | ReplyKeyboardRemove | ForceReply = null,
-    reply_to_message_id: Int | Double = null
-  ): SendContactOptions = {
+  
+  inline def apply(): SendContactOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable_notification)) __obj.updateDynamic("disable_notification")(disable_notification.asInstanceOf[js.Any])
-    if (last_name != null) __obj.updateDynamic("last_name")(last_name.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
-    if (reply_to_message_id != null) __obj.updateDynamic("reply_to_message_id")(reply_to_message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendContactOptions]
   }
+  
+  extension [Self <: SendContactOptions](x: Self) {
+    
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    
+    inline def setVcard(value: String): Self = StObject.set(x, "vcard", value.asInstanceOf[js.Any])
+    
+    inline def setVcardUndefined: Self = StObject.set(x, "vcard", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.unknown
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.azdata.azdataStrings.dead
   - typingsJapgolly.azdata.azdataStrings.connected
 */
-trait KernelStatus extends js.Object
-
+trait KernelStatus extends StObject
 object KernelStatus {
-  @scala.inline
-  def busy: typingsJapgolly.azdata.azdataStrings.busy = this.cast("busy")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def connected: typingsJapgolly.azdata.azdataStrings.connected = this.cast("connected")
-  @scala.inline
-  def dead: typingsJapgolly.azdata.azdataStrings.dead = this.cast("dead")
-  @scala.inline
-  def idle: typingsJapgolly.azdata.azdataStrings.idle = this.cast("idle")
-  @scala.inline
-  def reconnecting: typingsJapgolly.azdata.azdataStrings.reconnecting = this.cast("reconnecting")
-  @scala.inline
-  def restarting: typingsJapgolly.azdata.azdataStrings.restarting = this.cast("restarting")
-  @scala.inline
-  def starting: typingsJapgolly.azdata.azdataStrings.starting = this.cast("starting")
-  @scala.inline
-  def unknown: typingsJapgolly.azdata.azdataStrings.unknown = this.cast("unknown")
+  
+  inline def busy: typingsJapgolly.azdata.azdataStrings.busy = "busy".asInstanceOf[typingsJapgolly.azdata.azdataStrings.busy]
+  
+  inline def connected: typingsJapgolly.azdata.azdataStrings.connected = "connected".asInstanceOf[typingsJapgolly.azdata.azdataStrings.connected]
+  
+  inline def dead: typingsJapgolly.azdata.azdataStrings.dead = "dead".asInstanceOf[typingsJapgolly.azdata.azdataStrings.dead]
+  
+  inline def idle: typingsJapgolly.azdata.azdataStrings.idle = "idle".asInstanceOf[typingsJapgolly.azdata.azdataStrings.idle]
+  
+  inline def reconnecting: typingsJapgolly.azdata.azdataStrings.reconnecting = "reconnecting".asInstanceOf[typingsJapgolly.azdata.azdataStrings.reconnecting]
+  
+  inline def restarting: typingsJapgolly.azdata.azdataStrings.restarting = "restarting".asInstanceOf[typingsJapgolly.azdata.azdataStrings.restarting]
+  
+  inline def starting: typingsJapgolly.azdata.azdataStrings.starting = "starting".asInstanceOf[typingsJapgolly.azdata.azdataStrings.starting]
+  
+  inline def unknown: typingsJapgolly.azdata.azdataStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.azdata.azdataStrings.unknown]
 }
-

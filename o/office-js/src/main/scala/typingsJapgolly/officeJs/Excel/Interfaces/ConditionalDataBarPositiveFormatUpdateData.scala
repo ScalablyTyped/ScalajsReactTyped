@@ -1,47 +1,56 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalDataBarPositiveFormat object, for use in `conditionalDataBarPositiveFormat.set({ ... })`. */
-trait ConditionalDataBarPositiveFormatUpdateData extends js.Object {
+trait ConditionalDataBarPositiveFormatUpdateData extends StObject {
+  
   /**
+    * HTML color code representing the color of the border line, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
+    Value is "" (an empty string) if no border is present or set.
     *
-    * HTML color code representing the color of the border line, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    "" (empty string) if no border is present or set.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var borderColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * HTML color code representing the fill color, in the form #RRGGBB (e.g., "FFA500") or as a named HTML color (e.g., "orange").
     *
-    * HTML color code representing the fill color, of the form #RRGGBB (e.g. "FFA500") or as a named HTML color (e.g. "orange").
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var fillColor: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies if the data bar has a gradient.
     *
-    * Boolean representation of whether or not the DataBar has a gradient.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var gradientFill: js.UndefOr[Boolean] = js.undefined
 }
-
 object ConditionalDataBarPositiveFormatUpdateData {
-  @scala.inline
-  def apply(
-    borderColor: String = null,
-    fillColor: String = null,
-    gradientFill: js.UndefOr[Boolean] = js.undefined
-  ): ConditionalDataBarPositiveFormatUpdateData = {
+  
+  inline def apply(): ConditionalDataBarPositiveFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(gradientFill)) __obj.updateDynamic("gradientFill")(gradientFill.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalDataBarPositiveFormatUpdateData]
   }
+  
+  extension [Self <: ConditionalDataBarPositiveFormatUpdateData](x: Self) {
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setGradientFill(value: Boolean): Self = StObject.set(x, "gradientFill", value.asInstanceOf[js.Any])
+    
+    inline def setGradientFillUndefined: Self = StObject.set(x, "gradientFill", js.undefined)
+  }
 }
-

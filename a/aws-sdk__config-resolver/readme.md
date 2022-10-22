@@ -1,20 +1,24 @@
 
 # Scala.js typings for aws-sdk__config-resolver
 
-Typings are for version 0.1.0-preview.1
+Typings are for version 3.188.0
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/config-resolver/latest.svg)](https://www.npmjs.com/package/@aws-sdk/config-resolver) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/config-resolver.svg)](https://www.npmjs.com/package/@aws-sd
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/config-resolver |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 556 |
-| # downloads        | 38711 |
-| # stars            | 0 |
+| # releases         | 81 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6906802E7 |
+| # stars            | 1888.0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/config-resolver)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fconfig-resolver)
     
 

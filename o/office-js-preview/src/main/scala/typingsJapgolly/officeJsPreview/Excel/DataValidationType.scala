@@ -1,133 +1,118 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataValidationType extends js.Object
-
+sealed trait DataValidationType extends StObject
 /**
+  * Represents the data validation type enum.
   *
-  * Represents Data validation type enum.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.DataValidationType")
 @js.native
-object DataValidationType extends js.Object {
-  /**
-    *
-    * Custom data validation type
-    *
-    */
-  @js.native
-  sealed trait custom extends DataValidationType
+object DataValidationType extends StObject {
   
   /**
-    *
-    * Date data validation type
-    *
+    * The custom data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait date extends DataValidationType
+  sealed trait custom
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * Decimal data validation type
-    *
+    * The date data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait decimal extends DataValidationType
+  sealed trait date
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
-    *
+    * The decimal data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait inconsistent extends DataValidationType
+  sealed trait decimal
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * List data validation type
-    *
+    * Inconsistent means that the range has inconsistent data validation, indicating that there are different rules on different cells.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait list extends DataValidationType
+  sealed trait inconsistent
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * MixedCriteria means that the range has data validation present on some but not all cells
-    *
+    * The list data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait mixedCriteria extends DataValidationType
+  sealed trait list
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * None means allow any value and so there is no data validation in the range.
-    *
+    * Mixed criteria means that the range has data validation present on some but not all cells.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait none extends DataValidationType
+  sealed trait mixedCriteria
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * Text length data validation type
-    *
+    * None means allow any value, indicating that there is no data validation in the range.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait textLength extends DataValidationType
+  sealed trait none
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * Time data validation type
-    *
+    * The text length data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait time extends DataValidationType
+  sealed trait textLength
+    extends StObject
+       with DataValidationType
   
   /**
-    *
-    * Whole number data validation type
-    *
+    * The time data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
     */
   @js.native
-  sealed trait wholeNumber extends DataValidationType
+  sealed trait time
+    extends StObject
+       with DataValidationType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DataValidationType with String] = js.native
-  /* "Custom" */ @js.native
-  object custom extends TopLevel[custom with String]
-  
-  /* "Date" */ @js.native
-  object date extends TopLevel[date with String]
-  
-  /* "Decimal" */ @js.native
-  object decimal extends TopLevel[decimal with String]
-  
-  /* "Inconsistent" */ @js.native
-  object inconsistent extends TopLevel[inconsistent with String]
-  
-  /* "List" */ @js.native
-  object list extends TopLevel[list with String]
-  
-  /* "MixedCriteria" */ @js.native
-  object mixedCriteria extends TopLevel[mixedCriteria with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "TextLength" */ @js.native
-  object textLength extends TopLevel[textLength with String]
-  
-  /* "Time" */ @js.native
-  object time extends TopLevel[time with String]
-  
-  /* "WholeNumber" */ @js.native
-  object wholeNumber extends TopLevel[wholeNumber with String]
-  
+  /**
+    * The whole number data validation type.
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
+  @js.native
+  sealed trait wholeNumber
+    extends StObject
+       with DataValidationType
 }
-

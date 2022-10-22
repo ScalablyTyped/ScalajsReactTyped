@@ -1,20 +1,22 @@
 package typingsJapgolly.typescript.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResolveProjectReferencePathHost extends js.Object {
+trait ResolveProjectReferencePathHost extends StObject {
+  
   def fileExists(fileName: java.lang.String): Boolean
 }
-
 object ResolveProjectReferencePathHost {
-  @scala.inline
-  def apply(fileExists: java.lang.String => CallbackTo[Boolean]): ResolveProjectReferencePathHost = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fileExists")(js.Any.fromFunction1((t0: java.lang.String) => fileExists(t0).runNow()))
+  
+  inline def apply(fileExists: java.lang.String => Boolean): ResolveProjectReferencePathHost = {
+    val __obj = js.Dynamic.literal(fileExists = js.Any.fromFunction1(fileExists))
     __obj.asInstanceOf[ResolveProjectReferencePathHost]
   }
+  
+  extension [Self <: ResolveProjectReferencePathHost](x: Self) {
+    
+    inline def setFileExists(value: java.lang.String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+  }
 }
-

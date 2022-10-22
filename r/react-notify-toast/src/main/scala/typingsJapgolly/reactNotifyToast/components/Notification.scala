@@ -1,14 +1,17 @@
 package typingsJapgolly.reactNotifyToast.components
 
+import typingsJapgolly.reactNotifyToast.mod.NotificationProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Notification
-  extends SharedApply_NotificationProps_580851021[typingsJapgolly.reactNotifyToast.mod.Notification] {
+object Notification {
+  
   @JSImport("react-notify-toast", "Notification")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Notification.type): SharedBuilder_NotificationProps347379641[typingsJapgolly.reactNotifyToast.mod.Notification] = new SharedBuilder_NotificationProps347379641[typingsJapgolly.reactNotifyToast.mod.Notification](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: NotificationProps): SharedBuilder_NotificationProps347379641[typingsJapgolly.reactNotifyToast.mod.Notification] = new SharedBuilder_NotificationProps347379641[typingsJapgolly.reactNotifyToast.mod.Notification](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

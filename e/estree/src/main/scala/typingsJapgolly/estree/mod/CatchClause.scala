@@ -1,37 +1,36 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CatchClause
-  extends BaseNode
-     with Node {
+  extends StObject
+     with BaseNode {
+  
   var body: BlockStatement
+  
   var param: Pattern | Null
+  
   @JSName("type")
   var type_CatchClause: typingsJapgolly.estree.estreeStrings.CatchClause
 }
-
 object CatchClause {
-  @scala.inline
-  def apply(
-    body: BlockStatement,
-    `type`: typingsJapgolly.estree.estreeStrings.CatchClause,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    param: Pattern = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): CatchClause = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (param != null) __obj.updateDynamic("param")(param.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(body: BlockStatement): CatchClause = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], param = null)
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[CatchClause]
   }
+  
+  extension [Self <: CatchClause](x: Self) {
+    
+    inline def setBody(value: BlockStatement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setParam(value: Pattern): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    
+    inline def setParamNull: Self = StObject.set(x, "param", null)
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.CatchClause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

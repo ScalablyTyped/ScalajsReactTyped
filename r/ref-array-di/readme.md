@@ -10,10 +10,10 @@ Create C "array" instances on top of Buffers
 | ------------------ | :-------------: |
 | Full name          | ref-array-di |
 | Keywords           | array, ref |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 17751 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13793.666666666666 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/node-ffi-napi/ref-array-di#readme)

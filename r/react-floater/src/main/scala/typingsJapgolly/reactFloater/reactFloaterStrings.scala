@@ -1,111 +1,143 @@
 package typingsJapgolly.reactFloater
 
-import typingsJapgolly.reactFloater.mod.Action
-import typingsJapgolly.reactFloater.mod.Placement
+import typingsJapgolly.reactFloater.libTypesMod.Action
+import typingsJapgolly.reactFloater.libTypesMod.Statuses
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactFloaterStrings {
-  @js.native
-  sealed trait auto extends Placement
   
   @js.native
-  sealed trait bottom extends Placement
+  sealed trait applyStyles extends StObject
+  inline def applyStyles: applyStyles = "applyStyles".asInstanceOf[applyStyles]
   
   @js.native
-  sealed trait `bottom-end` extends Placement
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
-  sealed trait `bottom-start` extends Placement
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait center extends Placement
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait close extends Action
+  sealed trait close
+    extends StObject
+       with Action
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait floater extends js.Object
+  sealed trait closing
+    extends StObject
+       with Statuses
+  inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait component extends StObject
+  inline def component: component = "component".asInstanceOf[component]
   
   @js.native
-  sealed trait left extends Placement
+  sealed trait computeStyles extends StObject
+  inline def computeStyles: computeStyles = "computeStyles".asInstanceOf[computeStyles]
   
   @js.native
-  sealed trait `left-end` extends Placement
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait `left-start` extends Placement
+  sealed trait error
+    extends StObject
+       with Statuses
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait open extends Action
+  sealed trait eventListeners extends StObject
+  inline def eventListeners: eventListeners = "eventListeners".asInstanceOf[eventListeners]
   
   @js.native
-  sealed trait right extends Placement
+  sealed trait flip extends StObject
+  inline def flip: flip = "flip".asInstanceOf[flip]
   
   @js.native
-  sealed trait `right-end` extends Placement
+  sealed trait floater extends StObject
+  inline def floater: floater = "floater".asInstanceOf[floater]
   
   @js.native
-  sealed trait `right-start` extends Placement
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait top extends Placement
+  sealed trait hover extends StObject
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait `top-end` extends Placement
+  sealed trait idle
+    extends StObject
+       with Statuses
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait `top-start` extends Placement
+  sealed trait init
+    extends StObject
+       with Statuses
+  inline def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait wrapper extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-end`: `bottom-end` = "bottom-end".asInstanceOf[`bottom-end`]
-  @scala.inline
-  def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def floater: floater = "floater".asInstanceOf[floater]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
-  @scala.inline
-  def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
-  @scala.inline
-  def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
-  @scala.inline
-  def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
-  @scala.inline
-  def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
+  @js.native
+  sealed trait offset extends StObject
+  inline def offset: offset = "offset".asInstanceOf[offset]
+  
+  @js.native
+  sealed trait open
+    extends StObject
+       with Action
+       with Statuses
+  inline def open: open = "open".asInstanceOf[open]
+  
+  @js.native
+  sealed trait opening
+    extends StObject
+       with Statuses
+  inline def opening: opening = "opening".asInstanceOf[opening]
+  
+  @js.native
+  sealed trait popperOffsets extends StObject
+  inline def popperOffsets: popperOffsets = "popperOffsets".asInstanceOf[popperOffsets]
+  
+  @js.native
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
+  
+  @js.native
+  sealed trait preventOverflow extends StObject
+  inline def preventOverflow: preventOverflow = "preventOverflow".asInstanceOf[preventOverflow]
+  
+  @js.native
+  sealed trait render
+    extends StObject
+       with Statuses
+  inline def render: render = "render".asInstanceOf[render]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait wrapper extends StObject
+  inline def wrapper: wrapper = "wrapper".asInstanceOf[wrapper]
 }
-

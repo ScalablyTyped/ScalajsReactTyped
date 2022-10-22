@@ -1,7 +1,7 @@
 
 # Scala.js typings for xss
 
-Typings are for version 1.0.6
+Typings are for version 1.0.14
 
 ## Library description:
 Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whitelist
@@ -10,10 +10,10 @@ Sanitize untrusted HTML (to prevent XSS) with a configuration specified by a Whi
 | ------------------ | :-------------: |
 | Full name          | xss |
 | Keywords           | sanitization, xss, sanitize, sanitisation, input, security, escape, encode, filter, validator, html, injection, whitelist |
-| # releases         | 9 |
-| # dependents       | 204 |
-| # downloads        | 3836205 |
-| # stars            | 28 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1280671333333334E7 |
+| # stars            | 4625.0 |
 
 ## Links
 - [Homepage](https://github.com/leizongmin/js-xss)

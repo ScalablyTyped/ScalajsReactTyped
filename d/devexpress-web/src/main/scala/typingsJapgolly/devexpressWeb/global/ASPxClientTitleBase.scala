@@ -1,0 +1,39 @@
+package typingsJapgolly.devexpressWeb.global
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/**
+  * Represents the base for ASPxClientChartTitle and ASPxClientSeriesTitle classes.
+  */
+@JSGlobal("ASPxClientTitleBase")
+@js.native
+open class ASPxClientTitleBase ()
+  extends StObject
+     with typingsJapgolly.devexpressWeb.ASPxClientTitleBase {
+  
+  /**
+    * Gets the alignment of the title.
+    */
+  /* CompleteClass */
+  var alignment: String = js.native
+  
+  /**
+    * Gets the chart that owns the current chart element.
+    */
+  /* CompleteClass */
+  var chart: typingsJapgolly.devexpressWeb.ASPxClientWebChart = js.native
+  
+  /**
+    * Gets a value that specifies to which edges of a parent element the title should be docked.
+    */
+  /* CompleteClass */
+  var dock: String = js.native
+  
+  /**
+    * Gets the lines of text within a title.
+    */
+  /* CompleteClass */
+  var lines: js.Array[String] = js.native
+}

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterDialogFilterAddingEventUIParam extends js.Object {
+trait FilterDialogFilterAddingEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to filters table body DOM element.
-  	 */
+    * Gets reference to filters table body DOM element.
+    */
   var filtersTableBody: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets reference to GridFiltering.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to GridFiltering.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object FilterDialogFilterAddingEventUIParam {
-  @scala.inline
-  def apply(filtersTableBody: String = null, owner: js.Any = null): FilterDialogFilterAddingEventUIParam = {
+  
+  inline def apply(): FilterDialogFilterAddingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (filtersTableBody != null) __obj.updateDynamic("filtersTableBody")(filtersTableBody.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterDialogFilterAddingEventUIParam]
   }
+  
+  extension [Self <: FilterDialogFilterAddingEventUIParam](x: Self) {
+    
+    inline def setFiltersTableBody(value: String): Self = StObject.set(x, "filtersTableBody", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersTableBodyUndefined: Self = StObject.set(x, "filtersTableBody", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

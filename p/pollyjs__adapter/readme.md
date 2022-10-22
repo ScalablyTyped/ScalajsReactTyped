@@ -1,7 +1,7 @@
 
 # Scala.js typings for pollyjs__adapter
 
-Typings are for version 3.0
+Typings are for version 4.3
 
 ## Library description:
 Extendable base adapter class used by @pollyjs
@@ -10,15 +10,12 @@ Extendable base adapter class used by @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter |
 | Keywords           | polly, pollyjs, adapter |
-| # releases         | 24 |
-| # dependents       | 6 |
-| # downloads        | 474719 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 332875.6666666667 |
+| # stars            | 9730.0 |
 
 ## Links
-- [Homepage](https://github.com/netflix/pollyjs#readme)
-- [Bugs](https://github.com/netflix/pollyjs/issues)
-- [Repository](https://github.com/netflix/pollyjs)
 - [Npm](https://www.npmjs.com/package/%40pollyjs%2Fadapter)
     
 

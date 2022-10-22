@@ -1,20 +1,25 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.PivotItems")
 @js.native
-class PivotItems protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.PivotItems_typekey")
-  var ExcelDotPivotItems_typekey: PivotItems = js.native
-  val Parent: PivotField = js.native
+trait PivotItems extends StObject {
+  
   def Add(Name: String): Unit = js.native
-  def Item(Index: String): js.Any = js.native
-  def Item(Index: Double): js.Any = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
+  /* private */ @JSName("Excel.PivotItems_typekey")
+  var ExcelDotPivotItems_typekey: PivotItems = js.native
+  
+  def Item(Index: String): Any = js.native
+  def Item(Index: Double): Any = js.native
+  
+  val Parent: PivotField = js.native
 }
-

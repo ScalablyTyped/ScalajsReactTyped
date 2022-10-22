@@ -1,37 +1,67 @@
 package typingsJapgolly.jasmineAjax
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JasmineAjaxResponse extends js.Object {
+trait JasmineAjaxResponse extends StObject {
+  
   var contentType: js.UndefOr[String] = js.undefined
+  
   var response: js.UndefOr[String] = js.undefined
+  
   var responseHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
+  
+  var responseJSON: js.UndefOr[Any] = js.undefined
+  
   var responseText: js.UndefOr[String] = js.undefined
+  
+  var responseURL: js.UndefOr[String] = js.undefined
+  
   var status: js.UndefOr[Double] = js.undefined
+  
   var statusText: js.UndefOr[String] = js.undefined
 }
-
 object JasmineAjaxResponse {
-  @scala.inline
-  def apply(
-    contentType: String = null,
-    response: String = null,
-    responseHeaders: StringDictionary[String] = null,
-    responseText: String = null,
-    status: Int | Double = null,
-    statusText: String = null
-  ): JasmineAjaxResponse = {
+  
+  inline def apply(): JasmineAjaxResponse = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
     __obj.asInstanceOf[JasmineAjaxResponse]
   }
+  
+  extension [Self <: JasmineAjaxResponse](x: Self) {
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setResponse(value: String): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeaders(value: StringDictionary[String]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    
+    inline def setResponseJSON(value: Any): Self = StObject.set(x, "responseJSON", value.asInstanceOf[js.Any])
+    
+    inline def setResponseJSONUndefined: Self = StObject.set(x, "responseJSON", js.undefined)
+    
+    inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+    
+    inline def setResponseURL(value: String): Self = StObject.set(x, "responseURL", value.asInstanceOf[js.Any])
+    
+    inline def setResponseURLUndefined: Self = StObject.set(x, "responseURL", js.undefined)
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    
+    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+  }
 }
-

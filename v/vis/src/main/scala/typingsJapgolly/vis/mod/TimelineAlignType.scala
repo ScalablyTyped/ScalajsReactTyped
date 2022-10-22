@@ -1,8 +1,8 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.vis.visStrings.auto
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.vis.visStrings.left
   - typingsJapgolly.vis.visStrings.right
 */
-trait TimelineAlignType extends js.Object
-
+trait TimelineAlignType extends StObject
 object TimelineAlignType {
-  @scala.inline
-  def auto: typingsJapgolly.vis.visStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.vis.visStrings.center = this.cast("center")
-  @scala.inline
-  def left: typingsJapgolly.vis.visStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.vis.visStrings.right = this.cast("right")
+  
+  inline def auto: typingsJapgolly.vis.visStrings.auto = "auto".asInstanceOf[typingsJapgolly.vis.visStrings.auto]
+  
+  inline def center: typingsJapgolly.vis.visStrings.center = "center".asInstanceOf[typingsJapgolly.vis.visStrings.center]
+  
+  inline def left: typingsJapgolly.vis.visStrings.left = "left".asInstanceOf[typingsJapgolly.vis.visStrings.left]
+  
+  inline def right: typingsJapgolly.vis.visStrings.right = "right".asInstanceOf[typingsJapgolly.vis.visStrings.right]
 }
-

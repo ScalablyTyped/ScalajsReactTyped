@@ -4,16 +4,16 @@
 Typings are for version 1.12
 
 ## Library description:
-inspired by iscroll, and it has a better scroll perfermance
+Full-featured BetterScroll
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | better-scroll |
-| Keywords           | scroll, iscroll, javascript, ios |
-| # releases         | 49 |
-| # dependents       | 308 |
-| # downloads        | 499203 |
-| # stars            | 22 |
+| Keywords           | scroll, iscroll, javascript, typescript, ios |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 57621.333333333336 |
+| # stars            | 15784.0 |
 
 ## Links
 - [Homepage](https://github.com/ustbhuangyi/better-scroll)

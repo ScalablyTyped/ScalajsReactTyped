@@ -1,102 +1,85 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Wallet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletBarcodeSymbology extends js.Object
-
+sealed trait WalletBarcodeSymbology extends StObject
 /** Represents the barcode symbology types that are supported for a WalletItem . */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletBarcodeSymbology")
 @js.native
-object WalletBarcodeSymbology extends js.Object {
+object WalletBarcodeSymbology extends StObject {
+  
   /** Uses the Aztec barcode symbology. */
   @js.native
-  sealed trait aztec extends WalletBarcodeSymbology
+  sealed trait aztec
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the Code 128 barcode symbology. */
   @js.native
-  sealed trait code128 extends WalletBarcodeSymbology
+  sealed trait code128
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the Code 39 barcode symbology. */
   @js.native
-  sealed trait code39 extends WalletBarcodeSymbology
+  sealed trait code39
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses a custom bar code symbology. */
   @js.native
-  sealed trait custom extends WalletBarcodeSymbology
+  sealed trait custom
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the EAN-13 barcode symbology. */
   @js.native
-  sealed trait ean13 extends WalletBarcodeSymbology
+  sealed trait ean13
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the EAN-8 barcode symbology. */
   @js.native
-  sealed trait ean8 extends WalletBarcodeSymbology
+  sealed trait ean8
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Invalid barcode type. */
   @js.native
-  sealed trait invalid extends WalletBarcodeSymbology
+  sealed trait invalid
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the ITF barcode symbology. */
   @js.native
-  sealed trait itf extends WalletBarcodeSymbology
+  sealed trait itf
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the PDF417 barcode symbology. */
   @js.native
-  sealed trait pdf417 extends WalletBarcodeSymbology
+  sealed trait pdf417
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the QR Code barcode symbology. */
   @js.native
-  sealed trait qr extends WalletBarcodeSymbology
+  sealed trait qr
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the UPC-A barcode symbology. */
   @js.native
-  sealed trait upca extends WalletBarcodeSymbology
+  sealed trait upca
+    extends StObject
+       with WalletBarcodeSymbology
   
   /** Uses the UPC-E barcode symbology. */
   @js.native
-  sealed trait upce extends WalletBarcodeSymbology
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WalletBarcodeSymbology with Double] = js.native
-  /* 10 */ @js.native
-  object aztec extends TopLevel[aztec with Double]
-  
-  /* 7 */ @js.native
-  object code128 extends TopLevel[code128 with Double]
-  
-  /* 6 */ @js.native
-  object code39 extends TopLevel[code39 with Double]
-  
-  /* 11 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 3 */ @js.native
-  object ean13 extends TopLevel[ean13 with Double]
-  
-  /* 4 */ @js.native
-  object ean8 extends TopLevel[ean8 with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 5 */ @js.native
-  object itf extends TopLevel[itf with Double]
-  
-  /* 9 */ @js.native
-  object pdf417 extends TopLevel[pdf417 with Double]
-  
-  /* 8 */ @js.native
-  object qr extends TopLevel[qr with Double]
-  
-  /* 1 */ @js.native
-  object upca extends TopLevel[upca with Double]
-  
-  /* 2 */ @js.native
-  object upce extends TopLevel[upce with Double]
-  
+  sealed trait upce
+    extends StObject
+       with WalletBarcodeSymbology
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "rc-tree" : "5.7.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "rc-tree" : "5.7.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

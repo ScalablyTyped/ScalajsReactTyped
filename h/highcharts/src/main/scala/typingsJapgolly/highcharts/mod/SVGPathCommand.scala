@@ -10,9 +10,9 @@ import typingsJapgolly.highcharts.highchartsStrings.s_
 import typingsJapgolly.highcharts.highchartsStrings.t_
 import typingsJapgolly.highcharts.highchartsStrings.v_
 import typingsJapgolly.highcharts.highchartsStrings.z_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.a_
@@ -36,50 +36,46 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.V
   - typingsJapgolly.highcharts.highchartsStrings.Z
 */
-trait SVGPathCommand extends js.Object
-
+trait SVGPathCommand extends StObject
 object SVGPathCommand {
-  @scala.inline
-  def A: typingsJapgolly.highcharts.highchartsStrings.A = this.cast("A")
-  @scala.inline
-  def C: typingsJapgolly.highcharts.highchartsStrings.C = this.cast("C")
-  @scala.inline
-  def H: typingsJapgolly.highcharts.highchartsStrings.H = this.cast("H")
-  @scala.inline
-  def L: typingsJapgolly.highcharts.highchartsStrings.L = this.cast("L")
-  @scala.inline
-  def M: typingsJapgolly.highcharts.highchartsStrings.M = this.cast("M")
-  @scala.inline
-  def Q: typingsJapgolly.highcharts.highchartsStrings.Q = this.cast("Q")
-  @scala.inline
-  def S: typingsJapgolly.highcharts.highchartsStrings.S = this.cast("S")
-  @scala.inline
-  def T: typingsJapgolly.highcharts.highchartsStrings.T = this.cast("T")
-  @scala.inline
-  def V: typingsJapgolly.highcharts.highchartsStrings.V = this.cast("V")
-  @scala.inline
-  def Z: typingsJapgolly.highcharts.highchartsStrings.Z = this.cast("Z")
-  @scala.inline
-  def a: a_ = this.cast("a")
-  @scala.inline
-  def c: c_ = this.cast("c")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def h: h_ = this.cast("h")
-  @scala.inline
-  def l: l_ = this.cast("l")
-  @scala.inline
-  def m: m_ = this.cast("m")
-  @scala.inline
-  def q: q_ = this.cast("q")
-  @scala.inline
-  def s: s_ = this.cast("s")
-  @scala.inline
-  def t: t_ = this.cast("t")
-  @scala.inline
-  def v: v_ = this.cast("v")
-  @scala.inline
-  def z: z_ = this.cast("z")
+  
+  inline def A: typingsJapgolly.highcharts.highchartsStrings.A = "A".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.A]
+  
+  inline def C: typingsJapgolly.highcharts.highchartsStrings.C = "C".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.C]
+  
+  inline def H: typingsJapgolly.highcharts.highchartsStrings.H = "H".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.H]
+  
+  inline def L: typingsJapgolly.highcharts.highchartsStrings.L = "L".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.L]
+  
+  inline def M: typingsJapgolly.highcharts.highchartsStrings.M = "M".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.M]
+  
+  inline def Q: typingsJapgolly.highcharts.highchartsStrings.Q = "Q".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.Q]
+  
+  inline def S: typingsJapgolly.highcharts.highchartsStrings.S = "S".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.S]
+  
+  inline def T: typingsJapgolly.highcharts.highchartsStrings.T = "T".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.T]
+  
+  inline def V: typingsJapgolly.highcharts.highchartsStrings.V = "V".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.V]
+  
+  inline def Z: typingsJapgolly.highcharts.highchartsStrings.Z = "Z".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.Z]
+  
+  inline def a: a_ = "a".asInstanceOf[a_]
+  
+  inline def c: c_ = "c".asInstanceOf[c_]
+  
+  inline def h: h_ = "h".asInstanceOf[h_]
+  
+  inline def l: l_ = "l".asInstanceOf[l_]
+  
+  inline def m: m_ = "m".asInstanceOf[m_]
+  
+  inline def q: q_ = "q".asInstanceOf[q_]
+  
+  inline def s: s_ = "s".asInstanceOf[s_]
+  
+  inline def t: t_ = "t".asInstanceOf[t_]
+  
+  inline def v: v_ = "v".asInstanceOf[v_]
+  
+  inline def z: z_ = "z".asInstanceOf[z_]
 }
-

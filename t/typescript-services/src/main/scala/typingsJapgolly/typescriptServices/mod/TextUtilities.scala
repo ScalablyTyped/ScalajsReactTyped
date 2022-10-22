@@ -1,16 +1,21 @@
 package typingsJapgolly.typescriptServices.mod
 
 import typingsJapgolly.typescriptServices.TypeScript.TextUtilities.ICharacterSequence
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "TextUtilities")
-@js.native
-object TextUtilities extends js.Object {
-  def getLengthOfLineBreak(text: ICharacterSequence, index: Double): Double = js.native
-  def getLengthOfLineBreakSlow(text: ICharacterSequence, index: Double, c: Double): Double = js.native
-  def isAnyLineBreakCharacter(c: Double): Boolean = js.native
-  def parseLineStarts(text: ICharacterSequence): js.Array[Double] = js.native
+object TextUtilities {
+  
+  @JSImport("typescript-services", "TextUtilities")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getLengthOfLineBreak(text: ICharacterSequence, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreak")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getLengthOfLineBreakSlow(text: ICharacterSequence, index: Double, c: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreakSlow")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def isAnyLineBreakCharacter(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyLineBreakCharacter")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def parseLineStarts(text: ICharacterSequence): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLineStarts")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }
-

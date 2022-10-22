@@ -1,41 +1,39 @@
 package typingsJapgolly.azdata.mod.nb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NotebookChangeKind extends js.Object
-
+sealed trait NotebookChangeKind extends StObject
 @JSImport("azdata", "nb.NotebookChangeKind")
 @js.native
-object NotebookChangeKind extends js.Object {
-  @js.native
-  sealed trait CellExecuted extends NotebookChangeKind
-  
-  @js.native
-  sealed trait ContentUpdated extends NotebookChangeKind
-  
-  @js.native
-  sealed trait MetadataUpdated extends NotebookChangeKind
-  
-  @js.native
-  sealed trait Save extends NotebookChangeKind
+object NotebookChangeKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NotebookChangeKind with Double] = js.native
-  /* 3 */ @js.native
-  object CellExecuted extends TopLevel[CellExecuted with Double]
+  def apply(value: Double): js.UndefOr[NotebookChangeKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object ContentUpdated extends TopLevel[ContentUpdated with Double]
+  @js.native
+  sealed trait CellExecuted
+    extends StObject
+       with NotebookChangeKind
+  /* 3 */ val CellExecuted: typingsJapgolly.azdata.mod.nb.NotebookChangeKind.CellExecuted & Double = js.native
   
-  /* 1 */ @js.native
-  object MetadataUpdated extends TopLevel[MetadataUpdated with Double]
+  @js.native
+  sealed trait ContentUpdated
+    extends StObject
+       with NotebookChangeKind
+  /* 0 */ val ContentUpdated: typingsJapgolly.azdata.mod.nb.NotebookChangeKind.ContentUpdated & Double = js.native
   
-  /* 2 */ @js.native
-  object Save extends TopLevel[Save with Double]
+  @js.native
+  sealed trait MetadataUpdated
+    extends StObject
+       with NotebookChangeKind
+  /* 1 */ val MetadataUpdated: typingsJapgolly.azdata.mod.nb.NotebookChangeKind.MetadataUpdated & Double = js.native
   
+  @js.native
+  sealed trait Save
+    extends StObject
+       with NotebookChangeKind
+  /* 2 */ val Save: typingsJapgolly.azdata.mod.nb.NotebookChangeKind.Save & Double = js.native
 }
-

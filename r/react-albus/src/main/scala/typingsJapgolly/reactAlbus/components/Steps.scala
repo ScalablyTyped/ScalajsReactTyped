@@ -1,38 +1,32 @@
 package typingsJapgolly.reactAlbus.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactAlbus.mod.StepObject
 import typingsJapgolly.reactAlbus.mod.StepsProps
+import typingsJapgolly.std.NonNullable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Steps {
-  def apply(
-    step: StepObject = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StepsProps, typingsJapgolly.reactAlbus.mod.Steps, Unit, StepsProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAlbus.mod.StepsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAlbus.mod.Steps](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAlbus.mod.StepsProps])(children: _*)
+  inline def apply(children: NonNullable[Node]): Builder = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StepsProps]))
   }
+  
   @JSImport("react-albus", "Steps")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def step(value: StepObject): this.type = set("step", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: StepsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

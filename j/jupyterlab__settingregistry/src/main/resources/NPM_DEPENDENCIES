@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@jupyterlab/settingregistry" : "3.4.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@jupyterlab/settingregistry" : "3.4.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

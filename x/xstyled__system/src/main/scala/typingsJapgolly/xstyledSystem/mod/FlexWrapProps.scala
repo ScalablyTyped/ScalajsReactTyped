@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.FlexWrapProperty
+import typingsJapgolly.csstype.mod.Property.FlexWrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlexWrapProps extends js.Object {
-  val flexWrap: js.UndefOr[ResponsiveValue[FlexWrapProperty]] = js.undefined
+trait FlexWrapProps extends StObject {
+  
+  val flexWrap: js.UndefOr[ResponsiveValue[FlexWrap]] = js.undefined
 }
-
 object FlexWrapProps {
-  @scala.inline
-  def apply(flexWrap: ResponsiveValue[FlexWrapProperty] = null): FlexWrapProps = {
+  
+  inline def apply(): FlexWrapProps = {
     val __obj = js.Dynamic.literal()
-    if (flexWrap != null) __obj.updateDynamic("flexWrap")(flexWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexWrapProps]
   }
+  
+  extension [Self <: FlexWrapProps](x: Self) {
+    
+    inline def setFlexWrap(value: ResponsiveValue[FlexWrap]): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+    
+    inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+    
+    inline def setFlexWrapVarargs(value: FlexWrap*): Self = StObject.set(x, "flexWrap", js.Array(value*))
+  }
 }
-

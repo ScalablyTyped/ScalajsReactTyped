@@ -1,36 +1,32 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.JSXText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSXText_
-  extends Node
+  extends StObject
+     with Node
      with JSX {
+  
   @JSName("type")
   var type_JSXText_ : JSXText
+  
   var value: String
 }
-
 object JSXText_ {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: JSXText,
-    value: String,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSXText_ = {
+  
+  inline def apply(end: Double, loc: SourceLocation, start: Double, value: String): JSXText_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[JSXText_]
   }
+  
+  extension [Self <: JSXText_](x: Self) {
+    
+    inline def setType(value: JSXText): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

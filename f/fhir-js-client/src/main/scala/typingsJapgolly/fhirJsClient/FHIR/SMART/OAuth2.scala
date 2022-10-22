@@ -1,25 +1,23 @@
 package typingsJapgolly.fhirJsClient.FHIR.SMART
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SMART on FHIR OAuth2 authorization helper methods and settings
   */
 @js.native
-trait OAuth2 extends js.Object {
-  /**
-    * Settings to drive the JS client browser behaviour
-    */
-  var settings: Settings = js.native
+trait OAuth2 extends StObject {
+  
   /**
     * Initiate the OAuth2 authorization workflow
     * @param params OAuth2 Configuration
     * @param errback Method which is triggered when an error occurs during the OAuth2 authorization workflow
     */
   def authorize(params: OAuth2Configuration): Unit = js.native
-  def authorize(params: OAuth2Configuration, errback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  def authorize(params: OAuth2Configuration, errback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+  
   /**
     * Handles the OAuth2 redirect
     * If the URL contains the code parameter, it will complete the token call and pass the SMART client to the callback method
@@ -30,8 +28,10 @@ trait OAuth2 extends js.Object {
   def ready(callback: js.Function1[/* smart */ SMARTClient, Unit]): Unit = js.native
   def ready(
     callback: js.Function1[/* smart */ SMARTClient, Unit],
-    errback: js.Function1[/* repeated */ js.Any, Unit]
+    errback: js.Function1[/* repeated */ Any, Unit]
   ): Unit = js.native
+  def ready(callback: Unit, errback: js.Function1[/* repeated */ Any, Unit]): Unit = js.native
+  
   /**
     * Resolves the Authorization type of the FHIR server. Can be used to identify if a server supports SMART on FHIR.
     * @param fhirServiceUrl FHIR Server Base URL
@@ -45,5 +45,10 @@ trait OAuth2 extends js.Object {
     callback: js.Function1[/* type */ String, Unit],
     errBack: js.Function1[/* type */ String, Unit]
   ): Unit = js.native
+  def resolveAuthType(fhirServiceUrl: String, callback: Unit, errBack: js.Function1[/* type */ String, Unit]): Unit = js.native
+  
+  /**
+    * Settings to drive the JS client browser behaviour
+    */
+  var settings: Settings = js.native
 }
-

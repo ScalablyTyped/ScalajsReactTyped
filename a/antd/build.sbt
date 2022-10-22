@@ -1,30 +1,53 @@
 organization := "org.scalablytyped.japgolly"
 name := "antd"
-version := "4.0.0-fc0bcd"
-scalaVersion := "2.13.1"
+version := "4.23.6-89705f"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "ant-design__react-slick" % "0.25.5-a336d6",
-  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
-  "org.scalablytyped.japgolly" %%% "dayjs" % "1.8.20-57075e",
-  "org.scalablytyped.japgolly" %%% "moment" % "2.24.0-8e4e98",
-  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
-  "org.scalablytyped.japgolly" %%% "rc-field-form" % "1.0.1-e6c838",
-  "org.scalablytyped.japgolly" %%% "rc-mentions" % "1.0.1-ed2d85",
-  "org.scalablytyped.japgolly" %%% "rc-menu" % "8.0.2-e30cf1",
-  "org.scalablytyped.japgolly" %%% "rc-notification" % "4.0.0-6485ea",
-  "org.scalablytyped.japgolly" %%% "rc-picker" % "1.1.2-d03f09",
-  "org.scalablytyped.japgolly" %%% "rc-select" % "v5.9.0-dt-20200226Z-23661a",
-  "org.scalablytyped.japgolly" %%% "rc-table" % "7.0.0-eef346",
-  "org.scalablytyped.japgolly" %%% "rc-tree" % "1.11-dt-20190212Z-d3c4ce",
-  "org.scalablytyped.japgolly" %%% "rc-tree-select" % "3.0.2-39c888",
-  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
-  "org.scalablytyped.japgolly" %%% "scroll-into-view-if-needed" % "2.2.22-6119fe",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "ant-design__icons" % "4.7.0-45ea6a",
+  "org.scalablytyped.japgolly" %%% "ant-design__icons-svg" % "4.2.1-19a588",
+  "org.scalablytyped.japgolly" %%% "ant-design__react-slick" % "0.29.2-8d3dd4",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "dayjs" % "1.11.5-cb7bfd",
+  "org.scalablytyped.japgolly" %%% "memoize-one" % "6.0.0-1d9c34",
+  "org.scalablytyped.japgolly" %%% "moment" % "2.29.4-49fb6c",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20220407Z-2e1de8",
+  "org.scalablytyped.japgolly" %%% "rc-cascader" % "3.7.0-5968ff",
+  "org.scalablytyped.japgolly" %%% "rc-component__portal" % "1.0.0-9-13e859",
+  "org.scalablytyped.japgolly" %%% "rc-dialog" % "9.0.0-68815f",
+  "org.scalablytyped.japgolly" %%% "rc-drawer" % "6.0.0-a1be45",
+  "org.scalablytyped.japgolly" %%% "rc-field-form" % "1.27.2-694319",
+  "org.scalablytyped.japgolly" %%% "rc-image" % "5.9.0-4702f9",
+  "org.scalablytyped.japgolly" %%% "rc-input" % "0.1.2-9cbbc4",
+  "org.scalablytyped.japgolly" %%% "rc-input-number" % "7.3.9-aa6c45",
+  "org.scalablytyped.japgolly" %%% "rc-mentions" % "1.10.0-76ba3d",
+  "org.scalablytyped.japgolly" %%% "rc-menu" % "9.6.4-93bfe0",
+  "org.scalablytyped.japgolly" %%% "rc-motion" % "2.6.2-bc92e1",
+  "org.scalablytyped.japgolly" %%% "rc-pagination" % "3.1.17-bc0428",
+  "org.scalablytyped.japgolly" %%% "rc-picker" % "2.6.11-bc7ec4",
+  "org.scalablytyped.japgolly" %%% "rc-rate" % "2.9.2-7f6e0d",
+  "org.scalablytyped.japgolly" %%% "rc-segmented" % "2.1.0-bed095",
+  "org.scalablytyped.japgolly" %%% "rc-select" % "14.1.13-a3235d",
+  "org.scalablytyped.japgolly" %%% "rc-slider" % "10.0.1-852376",
+  "org.scalablytyped.japgolly" %%% "rc-steps" % "5.0.0-alpha.0-031045",
+  "org.scalablytyped.japgolly" %%% "rc-table" % "7.27.2-e83e1a",
+  "org.scalablytyped.japgolly" %%% "rc-tabs" % "12.2.1-e72a88",
+  "org.scalablytyped.japgolly" %%% "rc-textarea" % "0.4.5-493970",
+  "org.scalablytyped.japgolly" %%% "rc-tooltip" % "5.2.2-a1b612",
+  "org.scalablytyped.japgolly" %%% "rc-tree" % "5.7.0-488636",
+  "org.scalablytyped.japgolly" %%% "rc-tree-select" % "5.5.0-884b68",
+  "org.scalablytyped.japgolly" %%% "rc-trigger" % "5.3.1-954195",
+  "org.scalablytyped.japgolly" %%% "rc-upload" % "4.3.4-1c0b21",
+  "org.scalablytyped.japgolly" %%% "rc-util" % "5.24.4-3924ca",
+  "org.scalablytyped.japgolly" %%% "rc-virtual-list" % "3.4.8-e60a6f",
+  "org.scalablytyped.japgolly" %%% "react" % "18.0-dt-20220922Z-c9da7d",
+  "org.scalablytyped.japgolly" %%% "react-dom" % "18.0-dt-20220819Z-74fd4f",
+  "org.scalablytyped.japgolly" %%% "scheduler" % "0.16-dt-20211202Z-ea969a",
+  "org.scalablytyped.japgolly" %%% "scroll-into-view-if-needed" % "2.2.29-35719b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

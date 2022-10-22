@@ -1,9 +1,11 @@
-package typingsJapgolly.procfsStats
+package typingsJapgolly.procfsStats.mod
 
+import typingsJapgolly.procfsStats.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type Callback[Value] = js.Function2[/* error */ js.Any, /* value */ Value, scala.Unit]
-}
+
+inline def apply(pid: Double): StatStatic = ^.asInstanceOf[js.Dynamic].apply(pid.asInstanceOf[js.Any]).asInstanceOf[StatStatic]
+
+type Callback[Value] = js.Function2[/* error */ Any, /* value */ Value, Unit]

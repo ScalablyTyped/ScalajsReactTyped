@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThumbDragStartEventUIParam extends js.Object {
+trait ThumbDragStartEventUIParam extends StObject {
+  
   /**
-  	 * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
-  	 */
+    * Gets which axis is being used to scroll - horizontal(true) or vertical(false).
+    */
   var horizontal: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the igScroll.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the igScroll.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ThumbDragStartEventUIParam {
-  @scala.inline
-  def apply(horizontal: js.UndefOr[Boolean] = js.undefined, owner: js.Any = null): ThumbDragStartEventUIParam = {
+  
+  inline def apply(): ThumbDragStartEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbDragStartEventUIParam]
   }
+  
+  extension [Self <: ThumbDragStartEventUIParam](x: Self) {
+    
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

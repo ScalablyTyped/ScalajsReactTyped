@@ -1,10 +1,11 @@
 package typingsJapgolly.validator.mod.validator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IsMobilePhoneOptions extends js.Object {
+trait IsMobilePhoneOptions extends StObject {
+  
   /**
     * If this is set to `true`, the mobile phone number must be supplied with the country code and therefore must start with `+`.
     *
@@ -12,13 +13,17 @@ trait IsMobilePhoneOptions extends js.Object {
     */
   var strictMode: js.UndefOr[Boolean] = js.undefined
 }
-
 object IsMobilePhoneOptions {
-  @scala.inline
-  def apply(strictMode: js.UndefOr[Boolean] = js.undefined): IsMobilePhoneOptions = {
+  
+  inline def apply(): IsMobilePhoneOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(strictMode)) __obj.updateDynamic("strictMode")(strictMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsMobilePhoneOptions]
   }
+  
+  extension [Self <: IsMobilePhoneOptions](x: Self) {
+    
+    inline def setStrictMode(value: Boolean): Self = StObject.set(x, "strictMode", value.asInstanceOf[js.Any])
+    
+    inline def setStrictModeUndefined: Self = StObject.set(x, "strictMode", js.undefined)
+  }
 }
-

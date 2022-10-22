@@ -1,19 +1,25 @@
 package typingsJapgolly.vuex.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MutationPayload extends Payload {
-  var payload: js.Any
+trait MutationPayload
+  extends StObject
+     with Payload {
+  
+  var payload: Any
 }
-
 object MutationPayload {
-  @scala.inline
-  def apply(payload: js.Any, `type`: String): MutationPayload = {
+  
+  inline def apply(payload: Any, `type`: String): MutationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationPayload]
   }
+  
+  extension [Self <: MutationPayload](x: Self) {
+    
+    inline def setPayload(value: Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+  }
 }
-

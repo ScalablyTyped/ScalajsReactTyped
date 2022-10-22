@@ -1,23 +1,27 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.exceljsNumbers.`1`
-import typingsJapgolly.exceljs.exceljsNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.exceljs.exceljsNumbers.`1`
-  - typingsJapgolly.exceljs.exceljsNumbers.`2`
-*/
-trait ReadingOrder extends js.Object
-
-object ReadingOrder {
-  @scala.inline
-  def LeftToRight: `1` = this.cast(1)
-  @scala.inline
-  def RightToLeft: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+@js.native
+sealed trait ReadingOrder extends StObject
+@JSImport("exceljs", "ReadingOrder")
+@js.native
+object ReadingOrder extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[ReadingOrder & Double] = js.native
+  
+  @js.native
+  sealed trait LeftToRight
+    extends StObject
+       with ReadingOrder
+  /* 1 */ val LeftToRight: typingsJapgolly.exceljs.mod.ReadingOrder.LeftToRight & Double = js.native
+  
+  @js.native
+  sealed trait RightToLeft
+    extends StObject
+       with ReadingOrder
+  /* 2 */ val RightToLeft: typingsJapgolly.exceljs.mod.ReadingOrder.RightToLeft & Double = js.native
 }
-

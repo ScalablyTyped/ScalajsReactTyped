@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.map
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerTooltipAnimation extends js.Object {
+trait MarkerTooltipAnimation extends StObject {
+  
   var close: js.UndefOr[MarkerTooltipAnimationClose] = js.undefined
+  
   var open: js.UndefOr[MarkerTooltipAnimationOpen] = js.undefined
 }
-
 object MarkerTooltipAnimation {
-  @scala.inline
-  def apply(close: MarkerTooltipAnimationClose = null, open: MarkerTooltipAnimationOpen = null): MarkerTooltipAnimation = {
+  
+  inline def apply(): MarkerTooltipAnimation = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerTooltipAnimation]
   }
+  
+  extension [Self <: MarkerTooltipAnimation](x: Self) {
+    
+    inline def setClose(value: MarkerTooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setOpen(value: MarkerTooltipAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+  }
 }
-

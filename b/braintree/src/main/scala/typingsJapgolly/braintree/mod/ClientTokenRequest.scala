@@ -1,31 +1,43 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonFailOnDuplicatePaymentMethod
+import typingsJapgolly.braintree.anon.FailOnDuplicatePaymentMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientTokenRequest extends js.Object {
+trait ClientTokenRequest extends StObject {
+  
   var customerId: js.UndefOr[String] = js.undefined
+  
   var merchantAccountId: js.UndefOr[String] = js.undefined
-  var options: js.UndefOr[AnonFailOnDuplicatePaymentMethod] = js.undefined
+  
+  var options: js.UndefOr[FailOnDuplicatePaymentMethod] = js.undefined
+  
   var version: js.UndefOr[String] = js.undefined
 }
-
 object ClientTokenRequest {
-  @scala.inline
-  def apply(
-    customerId: String = null,
-    merchantAccountId: String = null,
-    options: AnonFailOnDuplicatePaymentMethod = null,
-    version: String = null
-  ): ClientTokenRequest = {
+  
+  inline def apply(): ClientTokenRequest = {
     val __obj = js.Dynamic.literal()
-    if (customerId != null) __obj.updateDynamic("customerId")(customerId.asInstanceOf[js.Any])
-    if (merchantAccountId != null) __obj.updateDynamic("merchantAccountId")(merchantAccountId.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientTokenRequest]
   }
+  
+  extension [Self <: ClientTokenRequest](x: Self) {
+    
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    
+    inline def setMerchantAccountId(value: String): Self = StObject.set(x, "merchantAccountId", value.asInstanceOf[js.Any])
+    
+    inline def setMerchantAccountIdUndefined: Self = StObject.set(x, "merchantAccountId", js.undefined)
+    
+    inline def setOptions(value: FailOnDuplicatePaymentMethod): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

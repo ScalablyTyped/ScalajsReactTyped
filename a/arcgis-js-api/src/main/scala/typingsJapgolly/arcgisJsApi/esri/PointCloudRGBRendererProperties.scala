@@ -1,10 +1,13 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointCloudRGBRendererProperties extends PointCloudRendererProperties {
+trait PointCloudRGBRendererProperties
+  extends StObject
+     with PointCloudRendererProperties {
+  
   /**
     * The name of the field containing RGB values used to drive the visualization.
     *
@@ -12,21 +15,17 @@ trait PointCloudRGBRendererProperties extends PointCloudRendererProperties {
     */
   var field: js.UndefOr[String] = js.undefined
 }
-
 object PointCloudRGBRendererProperties {
-  @scala.inline
-  def apply(
-    colorModulation: PointCloudRendererColorModulation = null,
-    field: String = null,
-    pointSizeAlgorithm: PointCloudRendererPointSizeAlgorithm = null,
-    pointsPerInch: Int | Double = null
-  ): PointCloudRGBRendererProperties = {
+  
+  inline def apply(): PointCloudRGBRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (colorModulation != null) __obj.updateDynamic("colorModulation")(colorModulation.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (pointSizeAlgorithm != null) __obj.updateDynamic("pointSizeAlgorithm")(pointSizeAlgorithm.asInstanceOf[js.Any])
-    if (pointsPerInch != null) __obj.updateDynamic("pointsPerInch")(pointsPerInch.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointCloudRGBRendererProperties]
   }
+  
+  extension [Self <: PointCloudRGBRendererProperties](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

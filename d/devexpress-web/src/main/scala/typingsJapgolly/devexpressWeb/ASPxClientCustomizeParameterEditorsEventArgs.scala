@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.CustomizeParameterEditors and ASPxClientReportDesigner.CustomizeParameterEditors events.
   */
-@JSGlobal("ASPxClientCustomizeParameterEditorsEventArgs")
-@js.native
-class ASPxClientCustomizeParameterEditorsEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * For internal use. Initializes a new instance of the ASPxClientCustomizeParameterEditorsEventArgs class with the specified settings.
-    * @param parameter An IParameterDescriptor object.
-    * @param info An ISerializationInfo object.
-    */
-  def this(parameter: ASPxDesignerElementParameterDescriptor, info: ASPxDesignerElementSerializationInfo) = this()
+trait ASPxClientCustomizeParameterEditorsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Provides access to an object that stores information required to serialize a parameter editor.
     */
-  var info: ASPxDesignerElementSerializationInfo = js.native
+  var info: ASPxDesignerElementSerializationInfo
+  
   /**
     * Provides access to an object that stores information about a parameter.
     */
-  var parameter: ASPxDesignerElementParameterDescriptor = js.native
+  var parameter: ASPxDesignerElementParameterDescriptor
 }
-
+object ASPxClientCustomizeParameterEditorsEventArgs {
+  
+  inline def apply(info: ASPxDesignerElementSerializationInfo, parameter: ASPxDesignerElementParameterDescriptor): ASPxClientCustomizeParameterEditorsEventArgs = {
+    val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCustomizeParameterEditorsEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCustomizeParameterEditorsEventArgs](x: Self) {
+    
+    inline def setInfo(value: ASPxDesignerElementSerializationInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+  }
+}

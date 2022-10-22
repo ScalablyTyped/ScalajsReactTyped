@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "string-strip-html" : "11.6.14"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "string-strip-html" : "11.6.14"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

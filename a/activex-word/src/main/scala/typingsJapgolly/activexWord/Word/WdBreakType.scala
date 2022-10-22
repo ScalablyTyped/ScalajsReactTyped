@@ -1,55 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
 */
-trait WdBreakType extends js.Object
-
+trait WdBreakType extends StObject
 object WdBreakType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdColumnBreak: `8` = this.cast(8)
-  @scala.inline
-  def wdLineBreak: `6` = this.cast(6)
-  @scala.inline
-  def wdLineBreakClearLeft: `9` = this.cast(9)
-  @scala.inline
-  def wdLineBreakClearRight: `10` = this.cast(10)
-  @scala.inline
-  def wdPageBreak: `7` = this.cast(7)
-  @scala.inline
-  def wdSectionBreakContinuous: `3` = this.cast(3)
-  @scala.inline
-  def wdSectionBreakEvenPage: `4` = this.cast(4)
-  @scala.inline
-  def wdSectionBreakNextPage: `2` = this.cast(2)
-  @scala.inline
-  def wdSectionBreakOddPage: `5` = this.cast(5)
-  @scala.inline
-  def wdTextWrappingBreak: `11` = this.cast(11)
+  
+  inline def wdColumnBreak: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdLineBreak: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdLineBreakClearLeft: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdLineBreakClearRight: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdPageBreak: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdSectionBreakContinuous: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdSectionBreakEvenPage: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdSectionBreakNextPage: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdSectionBreakOddPage: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdTextWrappingBreak: `11` = 11.asInstanceOf[`11`]
 }
-

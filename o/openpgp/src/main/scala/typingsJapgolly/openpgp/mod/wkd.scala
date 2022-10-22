@@ -1,26 +1,26 @@
 package typingsJapgolly.openpgp.mod
 
-import typingsJapgolly.openpgp.AnonErr
+import typingsJapgolly.openpgp.anon.Email
+import typingsJapgolly.openpgp.anon.Err
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openpgp", "wkd")
-@js.native
-object wkd extends js.Object {
+object wkd {
+  
+  @JSImport("openpgp", "wkd.WKD")
   @js.native
   /**
     * Initialize the WKD client
     */
-  class WKD () extends js.Object {
+  open class WKD () extends StObject {
+    
     /**
       * Search for a public key using Web Key Directory protocol.
       * @param options.email User's email.
       * @param options.rawBytes Returns Uint8Array instead of parsed key.
       * @returns The public key.
       */
-    def lookup(): js.Promise[scala.scalajs.js.typedarray.Uint8Array | AnonErr] = js.native
+    def lookup(options: Email): js.Promise[js.typedarray.Uint8Array | Err] = js.native
   }
-  
 }
-

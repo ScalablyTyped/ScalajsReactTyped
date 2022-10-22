@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-display-name
 
-Typings are for version 0.2.4
+Typings are for version 0.2.5
 
 ## Library description:
 utility to return a react components display name
@@ -10,10 +10,10 @@ utility to return a react components display name
 | ------------------ | :-------------: |
 | Full name          | react-display-name |
 | Keywords           | react, redux, getDisplayName |
-| # releases         | 3 |
-| # dependents       | 143 |
-| # downloads        | 5657017 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1409259.3333333333 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/jurassix/react-display-name#readme)

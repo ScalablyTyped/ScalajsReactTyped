@@ -1,24 +1,55 @@
-package typingsJapgolly.papaparse
+package typingsJapgolly.papaparse.mod
 
+import org.scalajs.dom.File
+import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.streamMod.Duplex
+import typingsJapgolly.papaparse.anon.Download
+import typingsJapgolly.papaparse.anon.Worker
+import typingsJapgolly.papaparse.mod.^
+import typingsJapgolly.papaparse.papaparseStrings.Informationseparatorone
+import typingsJapgolly.papaparse.papaparseStrings.Informationseparatortwo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  // The possible values for the ParseConfig property delimitersToGuess
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.papaparse.papaparseStrings.Comma
-    - typingsJapgolly.papaparse.papaparseStrings.Charactertabulation
-    - typingsJapgolly.papaparse.papaparseStrings.Verticalline
-    - typingsJapgolly.papaparse.papaparseStrings.Semicolon
-    - typingsJapgolly.papaparse.mod.RECORD_SEP_TYPE
-    - typingsJapgolly.papaparse.mod.UNIT_SEP_TYPE
-  */
-  type GuessableDelimiters = typingsJapgolly.papaparse.mod._GuessableDelimiters | typingsJapgolly.papaparse.mod.RECORD_SEP_TYPE | typingsJapgolly.papaparse.mod.UNIT_SEP_TYPE
-  // When passed to Papa Parse a Readable stream is returned.
-  type NODE_STREAM_INPUT_TYPE = typingsJapgolly.papaparse.papaparseNumbers.`1`
-  // The true delimiter. Invisible. ASCII code 30. Should be doing the job we strangely rely upon commas and tabs for.
-  type RECORD_SEP_TYPE = typingsJapgolly.papaparse.papaparseStrings.Informationseparatortwo
-  // Also sometimes used as a delimiting character. ASCII code 31.
-  type UNIT_SEP_TYPE = typingsJapgolly.papaparse.papaparseStrings.Informationseparatorone
-}
+
+inline def BAD_DELIMITERS: js.Array[String] = ^.asInstanceOf[js.Dynamic].selectDynamic("BAD_DELIMITERS").asInstanceOf[js.Array[String]]
+
+inline def DefaultDelimiter: String = ^.asInstanceOf[js.Dynamic].selectDynamic("DefaultDelimiter").asInstanceOf[String]
+inline def DefaultDelimiter_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultDelimiter")(x.asInstanceOf[js.Any])
+
+inline def LocalChunkSize: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("LocalChunkSize").asInstanceOf[Double]
+inline def LocalChunkSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocalChunkSize")(x.asInstanceOf[js.Any])
+
+inline def NODE_STREAM_INPUT: js.Symbol = ^.asInstanceOf[js.Dynamic].selectDynamic("NODE_STREAM_INPUT").asInstanceOf[js.Symbol]
+
+inline def RECORD_SEP: Informationseparatortwo = ^.asInstanceOf[js.Dynamic].selectDynamic("RECORD_SEP").asInstanceOf[Informationseparatortwo]
+
+inline def RemoteChunkSize: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("RemoteChunkSize").asInstanceOf[Double]
+inline def RemoteChunkSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RemoteChunkSize")(x.asInstanceOf[js.Any])
+
+inline def UNIT_SEP: Informationseparatorone = ^.asInstanceOf[js.Dynamic].selectDynamic("UNIT_SEP").asInstanceOf[Informationseparatorone]
+
+inline def WORKERS_SUPPORTED: Boolean = ^.asInstanceOf[js.Dynamic].selectDynamic("WORKERS_SUPPORTED").asInstanceOf[Boolean]
+
+inline def parse(stream: js.Symbol): Duplex = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any]).asInstanceOf[Duplex]
+inline def parse(stream: js.Symbol, config: ParseConfig[Any, Unit]): Duplex = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stream.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Duplex]
+inline def parse[T](csvString: String): ParseResult[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any]).asInstanceOf[ParseResult[T]]
+inline def parse[T](csvString: String, config: ParseWorkerConfig[T] & Download & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](csvString: String, config: (ParseConfig[T, Unit]) & Worker): ParseResult[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(csvString.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ParseResult[T]]
+inline def parse[T](file: File, config: ParseLocalConfig[T, File]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](file: ReadableStream, config: ParseLocalConfig[T, ReadableStream]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(file.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](source: String, config: ParseRemoteConfig[T] & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](source: LocalFile, config: (ParseConfig[T, Unit]) & Worker & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](source: LocalFile, config: ParseRemoteConfig[T] & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](source: LocalFile, config: ParseWorkerConfig[T] & Download & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse[T](url: String, config: ParseRemoteConfig[T]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def parse_T_Unit[T](source: String, config: (ParseConfig[T, Unit]) & Worker & (ParseLocalConfig[T, LocalFile])): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def unparse[T](data: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def unparse[T](data: js.Array[T], config: UnparseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+inline def unparse[T](data: UnparseObject[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+inline def unparse[T](data: UnparseObject[T], config: UnparseConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+
+type LocalFile = File | ReadableStream

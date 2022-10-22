@@ -1,23 +1,23 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.DataPlanStatus")
-@js.native
-class DataPlanStatus () extends IDataPlanStatus {
-  /* CompleteClass */
-  override var dataLimitInMegabytes: Double = js.native
-  /* CompleteClass */
-  override var dataPlanUsage: DataPlanUsage = js.native
-  /* CompleteClass */
-  override var inboundBitsPerSecond: Double = js.native
-  /* CompleteClass */
-  override var maxTransferSizeInMegabytes: Double = js.native
-  /* CompleteClass */
-  override var nextBillingCycle: js.Date = js.native
-  /* CompleteClass */
-  override var outboundBitsPerSecond: Double = js.native
+trait DataPlanStatus
+  extends StObject
+     with IDataPlanStatus
+object DataPlanStatus {
+  
+  inline def apply(
+    dataLimitInMegabytes: Double,
+    dataPlanUsage: DataPlanUsage,
+    inboundBitsPerSecond: Double,
+    maxTransferSizeInMegabytes: Double,
+    nextBillingCycle: js.Date,
+    outboundBitsPerSecond: Double
+  ): DataPlanStatus = {
+    val __obj = js.Dynamic.literal(dataLimitInMegabytes = dataLimitInMegabytes.asInstanceOf[js.Any], dataPlanUsage = dataPlanUsage.asInstanceOf[js.Any], inboundBitsPerSecond = inboundBitsPerSecond.asInstanceOf[js.Any], maxTransferSizeInMegabytes = maxTransferSizeInMegabytes.asInstanceOf[js.Any], nextBillingCycle = nextBillingCycle.asInstanceOf[js.Any], outboundBitsPerSecond = outboundBitsPerSecond.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPlanStatus]
+  }
 }
-

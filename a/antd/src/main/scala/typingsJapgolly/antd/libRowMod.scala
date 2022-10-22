@@ -1,21 +1,22 @@
 package typingsJapgolly.antd
 
-import typingsJapgolly.antd.libGridMod.Row
+import org.scalablytyped.runtime.Shortcut
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.antd.libGridRowMod.RowProps
+import typingsJapgolly.react.mod.ForwardRefExoticComponent
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("antd/lib/row", JSImport.Namespace)
-@js.native
-object libRowMod extends js.Object {
-  @js.native
-  class default () extends Row
+object libRowMod extends Shortcut {
   
-  /* static members */
+  @JSImport("antd/lib/row", JSImport.Default)
   @js.native
-  object default extends js.Object {
-    var defaultProps: AnonGutter = js.native
-  }
+  val default: ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]] = js.native
   
+  type _To = ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]]
+  
+  /* This means you don't have to write `default`, but can instead just say `libRowMod.foo` */
+  override def _to: ForwardRefExoticComponent[RowProps & RefAttributes[HTMLDivElement]] = default
 }
-

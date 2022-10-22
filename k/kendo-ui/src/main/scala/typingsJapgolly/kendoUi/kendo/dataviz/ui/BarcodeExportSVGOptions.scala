@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarcodeExportSVGOptions extends js.Object {
+trait BarcodeExportSVGOptions extends StObject {
+  
   var raw: js.UndefOr[Boolean] = js.undefined
 }
-
 object BarcodeExportSVGOptions {
-  @scala.inline
-  def apply(raw: js.UndefOr[Boolean] = js.undefined): BarcodeExportSVGOptions = {
+  
+  inline def apply(): BarcodeExportSVGOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeExportSVGOptions]
   }
+  
+  extension [Self <: BarcodeExportSVGOptions](x: Self) {
+    
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+  }
 }
-

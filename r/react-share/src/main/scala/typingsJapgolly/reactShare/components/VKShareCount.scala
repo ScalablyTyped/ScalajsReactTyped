@@ -1,13 +1,20 @@
 package typingsJapgolly.reactShare.components
 
+import typingsJapgolly.reactShare.anon.OmitHTMLAttributesHTMLSpa
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object VKShareCount extends SharedApply_ShareCountComponentProps1035723537 {
+object VKShareCount {
+  
+  inline def apply(url: String): SharedBuilder_OmitHTMLAttributesHTMLSpa1262211358 = {
+    val __props = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
+    new SharedBuilder_OmitHTMLAttributesHTMLSpa1262211358(js.Array(this.component, __props.asInstanceOf[OmitHTMLAttributesHTMLSpa]))
+  }
+  
   @JSImport("react-share", "VKShareCount")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: OmitHTMLAttributesHTMLSpa): SharedBuilder_OmitHTMLAttributesHTMLSpa1262211358 = new SharedBuilder_OmitHTMLAttributesHTMLSpa1262211358(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

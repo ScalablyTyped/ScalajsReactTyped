@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.cloudwatcheventsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsCloudwatcheventsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CloudWatchEvents")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CloudWatchEvents ()
-  extends typingsJapgolly.awsSdk.allMod.CloudWatchEvents {
+open class CloudWatchEvents ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.CloudWatchEvents {
   def this(options: ClientConfiguration) = this()
 }
-

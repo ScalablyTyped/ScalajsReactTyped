@@ -1,29 +1,22 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EdgeSide extends js.Object
-
+sealed trait EdgeSide extends StObject
 @JSGlobal("ClipperLib.EdgeSide")
 @js.native
-object EdgeSide extends js.Object {
-  @js.native
-  sealed trait esLeft extends EdgeSide
+object EdgeSide extends StObject {
   
   @js.native
-  sealed trait esRight extends EdgeSide
+  sealed trait esLeft
+    extends StObject
+       with EdgeSide
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EdgeSide with Double] = js.native
-  /* 0 */ @js.native
-  object esLeft extends TopLevel[esLeft with Double]
-  
-  /* 1 */ @js.native
-  object esRight extends TopLevel[esRight with Double]
-  
+  @js.native
+  sealed trait esRight
+    extends StObject
+       with EdgeSide
 }
-

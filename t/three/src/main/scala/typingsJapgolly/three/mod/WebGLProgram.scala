@@ -1,21 +1,16 @@
 package typingsJapgolly.three.mod
 
-import typingsJapgolly.three.webGLRendererMod.WebGLRendererParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLProgram")
 @js.native
-class WebGLProgram protected ()
-  extends typingsJapgolly.three.webGLProgramMod.WebGLProgram {
+open class WebGLProgram protected ()
+  extends typingsJapgolly.three.srcThreeMod.WebGLProgram {
   def this(
-    renderer: typingsJapgolly.three.webGLRendererMod.WebGLRenderer,
-    extensions: typingsJapgolly.three.webGLExtensionsMod.WebGLExtensions,
-    code: String,
-    material: typingsJapgolly.three.shaderMaterialMod.ShaderMaterial,
-    shader: typingsJapgolly.three.webGLShaderMod.WebGLShader,
-    parameters: WebGLRendererParameters
+    renderer: typingsJapgolly.three.srcRenderersWebGLRendererMod.WebGLRenderer,
+    cacheKey: String,
+    parameters: js.Object
   ) = this()
 }
-

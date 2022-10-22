@@ -1,32 +1,46 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.FilesUploading event.
   */
-@JSGlobal("ASPxClientFileManagerFilesUploadingEventArgs")
-@js.native
-class ASPxClientFileManagerFilesUploadingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerFilesUploadingEventArgs object with the specified parameters.
-    * @param folder A string value specifying the folder path.
-    * @param fileNames An array of string values that are the file names.
-    */
-  def this(folder: String, fileNames: js.Array[String]) = this()
+trait ASPxClientFileManagerFilesUploadingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
+  
   /**
     * Gets the names of files selected for upload.
     */
-  var fileNames: js.Array[String] = js.native
+  var fileNames: js.Array[String]
+  
   /**
     * Gets the path to the folder where files are being uploaded.
     */
-  var folder: String = js.native
+  var folder: String
 }
-
+object ASPxClientFileManagerFilesUploadingEventArgs {
+  
+  inline def apply(cancel: Boolean, fileNames: js.Array[String], folder: String): ASPxClientFileManagerFilesUploadingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerFilesUploadingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerFilesUploadingEventArgs](x: Self) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setFileNames(value: js.Array[String]): Self = StObject.set(x, "fileNames", value.asInstanceOf[js.Any])
+    
+    inline def setFileNamesVarargs(value: String*): Self = StObject.set(x, "fileNames", js.Array(value*))
+    
+    inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,20 +1,31 @@
 package typingsJapgolly.react.mod
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClassAttributes[T] extends Attributes {
+trait ClassAttributes[T]
+  extends StObject
+     with Attributes {
+  
   var ref: js.UndefOr[LegacyRef[T]] = js.undefined
 }
-
 object ClassAttributes {
-  @scala.inline
-  def apply[T](key: Key = null, ref: LegacyRef[T] = null): ClassAttributes[T] = {
+  
+  inline def apply[T](): ClassAttributes[T] = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassAttributes[T]]
   }
+  
+  extension [Self <: ClassAttributes[?], T](x: Self & ClassAttributes[T]) {
+    
+    inline def setRef(value: LegacyRef[T]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefFunction1(value: T | Null => Callback): Self = StObject.set(x, "ref", js.Any.fromFunction1((t0: T | Null) => value(t0).runNow()))
+    
+    inline def setRefNull: Self = StObject.set(x, "ref", null)
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+  }
 }
-

@@ -9,10 +9,10 @@ Knockout bindings to Twitter Bootstrap 3
 | ------------------ | :-------------: |
 | Full name          | knockstrap |
 | Keywords           | knockout, bootstrap, knockstrap, custom, bindings, library, templates |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 16786 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1524.6666666666667 |
+| # stars            | 144.0 |
 
 ## Links
 - [Homepage](http://faulknercs.github.io/Knockstrap/)

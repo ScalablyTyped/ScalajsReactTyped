@@ -1,26 +1,8 @@
 
 # Scala.js typings for ant-design__icons
 
-Typings are for version 2.1.1
+Typings are for version 4.7.0
 
-## Library description:
-Ant Design Icons
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @ant-design/icons |
-| Keywords           | - |
-| # releases         | 84 |
-| # dependents       | 148 |
-| # downloads        | 9198978 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://github.com/ant-design/ant-design-icons#readme)
-- [Bugs](https://github.com/ant-design/ant-design-icons/issues)
-- [Repository](https://github.com/ant-design/ant-design-icons)
-- [Npm](https://www.npmjs.com/package/%40ant-design%2Ficons)
-    
 
 
 ## Note

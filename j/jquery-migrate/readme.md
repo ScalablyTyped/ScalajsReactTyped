@@ -1,7 +1,7 @@
 
 # Scala.js typings for jquery-migrate
 
-Typings are for version 3.1
+Typings are for version 3.3
 
 ## Library description:
 Migrate older jQuery code to jQuery 3.0+
@@ -10,10 +10,10 @@ Migrate older jQuery code to jQuery 3.0+
 | ------------------ | :-------------: |
 | Full name          | jquery-migrate |
 | Keywords           | jquery, javascript, browser, plugin, migrate |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 2442539 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 509849.6666666667 |
+| # stars            | 1837.0 |
 
 ## Links
 - [Homepage](https://github.com/jquery/jquery-migrate)

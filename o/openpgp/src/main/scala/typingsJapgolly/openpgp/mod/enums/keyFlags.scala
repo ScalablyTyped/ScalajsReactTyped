@@ -1,85 +1,83 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait keyFlags extends js.Object
-
+sealed trait keyFlags extends StObject
 /**
   * Key flags
   */
 @JSImport("openpgp", "enums.keyFlags")
 @js.native
-object keyFlags extends js.Object {
+object keyFlags extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[keyFlags & Double] = js.native
+  
   /**
     * 0x20 - This key may be used for authentication.
     */
   @js.native
-  sealed trait authentication extends keyFlags
+  sealed trait authentication
+    extends StObject
+       with keyFlags
+  /* 32 */ val authentication: typingsJapgolly.openpgp.mod.enums.keyFlags.authentication & Double = js.native
   
   /**
     * 0x01 - This key may be used to certify other keys.
     */
   @js.native
-  sealed trait certify_keys extends keyFlags
+  sealed trait certify_keys
+    extends StObject
+       with keyFlags
+  /* 1 */ val certify_keys: typingsJapgolly.openpgp.mod.enums.keyFlags.certify_keys & Double = js.native
   
   /**
     * 0x04 - This key may be used to encrypt communications.
     */
   @js.native
-  sealed trait encrypt_communication extends keyFlags
+  sealed trait encrypt_communication
+    extends StObject
+       with keyFlags
+  /* 4 */ val encrypt_communication: typingsJapgolly.openpgp.mod.enums.keyFlags.encrypt_communication & Double = js.native
   
   /**
     * 0x08 - This key may be used to encrypt storage.
     */
   @js.native
-  sealed trait encrypt_storage extends keyFlags
+  sealed trait encrypt_storage
+    extends StObject
+       with keyFlags
+  /* 8 */ val encrypt_storage: typingsJapgolly.openpgp.mod.enums.keyFlags.encrypt_storage & Double = js.native
   
   /**
     * 0x80 - The private component of this key may be in the
     * possession of more than one person.
     */
   @js.native
-  sealed trait shared_private_key extends keyFlags
+  sealed trait shared_private_key
+    extends StObject
+       with keyFlags
+  /* 128 */ val shared_private_key: typingsJapgolly.openpgp.mod.enums.keyFlags.shared_private_key & Double = js.native
   
   /**
     * 0x02 - This key may be used to sign data.
     */
   @js.native
-  sealed trait sign_data extends keyFlags
+  sealed trait sign_data
+    extends StObject
+       with keyFlags
+  /* 2 */ val sign_data: typingsJapgolly.openpgp.mod.enums.keyFlags.sign_data & Double = js.native
   
   /**
     * 0x10 - The private component of this key may have been split
     * by a secret-sharing mechanism.
     */
   @js.native
-  sealed trait split_private_key extends keyFlags
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[keyFlags with Double] = js.native
-  /* 32 */ @js.native
-  object authentication extends TopLevel[authentication with Double]
-  
-  /* 1 */ @js.native
-  object certify_keys extends TopLevel[certify_keys with Double]
-  
-  /* 4 */ @js.native
-  object encrypt_communication extends TopLevel[encrypt_communication with Double]
-  
-  /* 8 */ @js.native
-  object encrypt_storage extends TopLevel[encrypt_storage with Double]
-  
-  /* 128 */ @js.native
-  object shared_private_key extends TopLevel[shared_private_key with Double]
-  
-  /* 2 */ @js.native
-  object sign_data extends TopLevel[sign_data with Double]
-  
-  /* 16 */ @js.native
-  object split_private_key extends TopLevel[split_private_key with Double]
-  
+  sealed trait split_private_key
+    extends StObject
+       with keyFlags
+  /* 16 */ val split_private_key: typingsJapgolly.openpgp.mod.enums.keyFlags.split_private_key & Double = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings._empty
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.`strict-origin-when-cross-origin`
   - typingsJapgolly.std.stdStrings.`unsafe-url`
 */
-trait ReferrerPolicy extends js.Object
-
+trait ReferrerPolicy extends StObject
 object ReferrerPolicy {
-  @scala.inline
-  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `no-referrer`: typingsJapgolly.std.stdStrings.`no-referrer` = this.cast("no-referrer")
-  @scala.inline
-  def `no-referrer-when-downgrade`: typingsJapgolly.std.stdStrings.`no-referrer-when-downgrade` = this.cast("no-referrer-when-downgrade")
-  @scala.inline
-  def origin: typingsJapgolly.std.stdStrings.origin = this.cast("origin")
-  @scala.inline
-  def `origin-when-cross-origin`: typingsJapgolly.std.stdStrings.`origin-when-cross-origin` = this.cast("origin-when-cross-origin")
-  @scala.inline
-  def `same-origin`: typingsJapgolly.std.stdStrings.`same-origin` = this.cast("same-origin")
-  @scala.inline
-  def `strict-origin`: typingsJapgolly.std.stdStrings.`strict-origin` = this.cast("strict-origin")
-  @scala.inline
-  def `strict-origin-when-cross-origin`: typingsJapgolly.std.stdStrings.`strict-origin-when-cross-origin` = this.cast("strict-origin-when-cross-origin")
-  @scala.inline
-  def `unsafe-url`: typingsJapgolly.std.stdStrings.`unsafe-url` = this.cast("unsafe-url")
+  
+  inline def _empty: typingsJapgolly.std.stdStrings._empty = "".asInstanceOf[typingsJapgolly.std.stdStrings._empty]
+  
+  inline def `no-referrer`: typingsJapgolly.std.stdStrings.`no-referrer` = "no-referrer".asInstanceOf[typingsJapgolly.std.stdStrings.`no-referrer`]
+  
+  inline def `no-referrer-when-downgrade`: typingsJapgolly.std.stdStrings.`no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[typingsJapgolly.std.stdStrings.`no-referrer-when-downgrade`]
+  
+  inline def origin: typingsJapgolly.std.stdStrings.origin = "origin".asInstanceOf[typingsJapgolly.std.stdStrings.origin]
+  
+  inline def `origin-when-cross-origin`: typingsJapgolly.std.stdStrings.`origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[typingsJapgolly.std.stdStrings.`origin-when-cross-origin`]
+  
+  inline def `same-origin`: typingsJapgolly.std.stdStrings.`same-origin` = "same-origin".asInstanceOf[typingsJapgolly.std.stdStrings.`same-origin`]
+  
+  inline def `strict-origin`: typingsJapgolly.std.stdStrings.`strict-origin` = "strict-origin".asInstanceOf[typingsJapgolly.std.stdStrings.`strict-origin`]
+  
+  inline def `strict-origin-when-cross-origin`: typingsJapgolly.std.stdStrings.`strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[typingsJapgolly.std.stdStrings.`strict-origin-when-cross-origin`]
+  
+  inline def `unsafe-url`: typingsJapgolly.std.stdStrings.`unsafe-url` = "unsafe-url".asInstanceOf[typingsJapgolly.std.stdStrings.`unsafe-url`]
 }
-

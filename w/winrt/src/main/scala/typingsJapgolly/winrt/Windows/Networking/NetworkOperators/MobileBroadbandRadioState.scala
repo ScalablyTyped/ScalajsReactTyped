@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandRadioState extends js.Object
-
+sealed trait MobileBroadbandRadioState extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandRadioState")
 @js.native
-object MobileBroadbandRadioState extends js.Object {
-  @js.native
-  sealed trait off extends MobileBroadbandRadioState
+object MobileBroadbandRadioState extends StObject {
   
   @js.native
-  sealed trait on extends MobileBroadbandRadioState
+  sealed trait off
+    extends StObject
+       with MobileBroadbandRadioState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MobileBroadbandRadioState with Double] = js.native
-  /* 0 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
+  @js.native
+  sealed trait on
+    extends StObject
+       with MobileBroadbandRadioState
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PolyFillType extends js.Object
-
+sealed trait PolyFillType extends StObject
 @JSGlobal("ClipperLib.PolyFillType")
 @js.native
-object PolyFillType extends js.Object {
-  @js.native
-  sealed trait pftEvenOdd extends PolyFillType
+object PolyFillType extends StObject {
   
   @js.native
-  sealed trait pftNegative extends PolyFillType
+  sealed trait pftEvenOdd
+    extends StObject
+       with PolyFillType
   
   @js.native
-  sealed trait pftNonZero extends PolyFillType
+  sealed trait pftNegative
+    extends StObject
+       with PolyFillType
   
   @js.native
-  sealed trait pftPositive extends PolyFillType
+  sealed trait pftNonZero
+    extends StObject
+       with PolyFillType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PolyFillType with Double] = js.native
-  /* 0 */ @js.native
-  object pftEvenOdd extends TopLevel[pftEvenOdd with Double]
-  
-  /* 3 */ @js.native
-  object pftNegative extends TopLevel[pftNegative with Double]
-  
-  /* 1 */ @js.native
-  object pftNonZero extends TopLevel[pftNonZero with Double]
-  
-  /* 2 */ @js.native
-  object pftPositive extends TopLevel[pftPositive with Double]
-  
+  @js.native
+  sealed trait pftPositive
+    extends StObject
+       with PolyFillType
 }
-

@@ -1,25 +1,34 @@
 package typingsJapgolly.remarkable.libMod
 
 import typingsJapgolly.remarkable.remarkableStrings.text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait TextToken extends TagToken {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.remarkable.libMod._Token because Already inherited */ trait TextToken
+  extends StObject
+     with TagToken {
+  
   var content: js.UndefOr[String] = js.undefined
+  
   @JSName("type")
   var type_TextToken: text
 }
-
 object TextToken {
-  @scala.inline
-  def apply(level: Double, `type`: text, content: String = null, lines: js.Tuple2[Double, Double] = null): TextToken = {
+  
+  inline def apply(level: Double): TextToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[TextToken]
   }
+  
+  extension [Self <: TextToken](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

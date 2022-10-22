@@ -1,33 +1,26 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.ResolvedCompletionEntry")
-@js.native
-class ResolvedCompletionEntry protected () extends CachedCompletionEntryDetails {
-  def this(
-    name: String,
+trait ResolvedCompletionEntry
+  extends StObject
+     with CachedCompletionEntryDetails
+object ResolvedCompletionEntry {
+  
+  inline def apply(
+    docComment: String,
+    fullSymbolName: String,
+    isResolved: CallbackTo[Boolean],
     kind: String,
     kindModifiers: String,
-    `type`: String,
-    fullSymbolName: String,
-    docComment: String
-  ) = this()
-  /* CompleteClass */
-  override var docComment: String = js.native
-  /* CompleteClass */
-  override var fullSymbolName: String = js.native
-  /* CompleteClass */
-  override var kind: String = js.native
-  /* CompleteClass */
-  override var kindModifiers: String = js.native
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var `type`: String = js.native
-  /* CompleteClass */
-  override def isResolved(): Boolean = js.native
+    name: String,
+    `type`: String
+  ): ResolvedCompletionEntry = {
+    val __obj = js.Dynamic.literal(docComment = docComment.asInstanceOf[js.Any], fullSymbolName = fullSymbolName.asInstanceOf[js.Any], isResolved = isResolved.toJsFn, kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResolvedCompletionEntry]
+  }
 }
-

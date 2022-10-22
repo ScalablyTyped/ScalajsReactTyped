@@ -1,35 +1,39 @@
 package typingsJapgolly.glReactDom
 
 import typingsJapgolly.glReactDom.glviewdomMod.SupportedImage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glReactDomStrings {
-  @js.native
-  sealed trait imageSlashbmp extends SupportedImage
   
   @js.native
-  sealed trait imageSlashico extends SupportedImage
+  sealed trait imageSlashbmp
+    extends StObject
+       with SupportedImage
+  inline def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   
   @js.native
-  sealed trait imageSlashjpeg extends SupportedImage
+  sealed trait imageSlashico
+    extends StObject
+       with SupportedImage
+  inline def imageSlashico: imageSlashico = "image/ico".asInstanceOf[imageSlashico]
   
   @js.native
-  sealed trait imageSlashpng extends SupportedImage
+  sealed trait imageSlashjpeg
+    extends StObject
+       with SupportedImage
+  inline def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
   
   @js.native
-  sealed trait imageSlashwebp extends SupportedImage
+  sealed trait imageSlashpng
+    extends StObject
+       with SupportedImage
+  inline def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
   
-  @scala.inline
-  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
-  @scala.inline
-  def imageSlashico: imageSlashico = "image/ico".asInstanceOf[imageSlashico]
-  @scala.inline
-  def imageSlashjpeg: imageSlashjpeg = "image/jpeg".asInstanceOf[imageSlashjpeg]
-  @scala.inline
-  def imageSlashpng: imageSlashpng = "image/png".asInstanceOf[imageSlashpng]
-  @scala.inline
-  def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
+  @js.native
+  sealed trait imageSlashwebp
+    extends StObject
+       with SupportedImage
+  inline def imageSlashwebp: imageSlashwebp = "image/webp".asInstanceOf[imageSlashwebp]
 }
-

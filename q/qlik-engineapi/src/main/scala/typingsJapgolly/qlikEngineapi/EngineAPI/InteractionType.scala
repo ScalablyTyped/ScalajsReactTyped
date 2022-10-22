@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -17,18 +17,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_BREAK
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_END
 */
-trait InteractionType extends js.Object
-
+trait InteractionType extends StObject
 object InteractionType {
-  @scala.inline
-  def IT_BREAK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = this.cast("IT_BREAK")
-  @scala.inline
-  def IT_END: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_END = this.cast("IT_END")
-  @scala.inline
-  def IT_MSGBOX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = this.cast("IT_MSGBOX")
-  @scala.inline
-  def IT_SCRIPTLINE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = this.cast("IT_SCRIPTLINE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def IT_BREAK: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_BREAK = "IT_BREAK".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_BREAK]
+  
+  inline def IT_END: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_END = "IT_END".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_END]
+  
+  inline def IT_MSGBOX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX = "IT_MSGBOX".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_MSGBOX]
+  
+  inline def IT_SCRIPTLINE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE = "IT_SCRIPTLINE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.IT_SCRIPTLINE]
 }
-

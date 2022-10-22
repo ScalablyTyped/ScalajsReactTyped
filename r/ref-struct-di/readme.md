@@ -10,10 +10,10 @@ Create ABI-compliant "struct" instances on top of Buffers
 | ------------------ | :-------------: |
 | Full name          | ref-struct-di |
 | Keywords           | struct, ref, abi, c, c++, ffi |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 233539 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 115744.33333333333 |
+| # stars            | 13.0 |
 
 ## Links
 - [Homepage](https://github.com/node-ffi-napi/ref-struct-di#readme)

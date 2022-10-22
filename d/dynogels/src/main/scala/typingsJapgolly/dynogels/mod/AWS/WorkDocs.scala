@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.workdocsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsWorkdocsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.WorkDocs")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class WorkDocs ()
+open class WorkDocs ()
   extends typingsJapgolly.awsSdk.mod.WorkDocs {
   def this(options: ClientConfiguration) = this()
 }
-

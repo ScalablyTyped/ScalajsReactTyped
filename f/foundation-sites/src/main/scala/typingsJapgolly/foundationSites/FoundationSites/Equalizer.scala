@@ -1,36 +1,41 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/equalizer.html#javascript-reference
-trait Equalizer extends js.Object {
-  def applyHeight(heights: js.Array[_]): Unit
-  def applyHeightByRow(groups: js.Array[_]): Unit
-  def destroy(): Unit
-  def getHeights(cb: js.Function): js.Array[_]
-  def getHeightsByRow(cb: js.Function): js.Array[_]
+// https://get.foundation/sites/docs/equalizer.html#javascript-reference
+trait Equalizer extends StObject {
+  
+  def applyHeight(heights: js.Array[Any]): Unit
+  
+  def applyHeightByRow(groups: js.Array[Any]): Unit
+  
+  def getHeights(cb: js.Function): js.Array[Any]
+  
+  def getHeightsByRow(cb: js.Function): js.Array[Any]
 }
-
 object Equalizer {
-  @scala.inline
-  def apply(
-    applyHeight: js.Array[js.Any] => Callback,
-    applyHeightByRow: js.Array[js.Any] => Callback,
-    destroy: Callback,
-    getHeights: js.Function => CallbackTo[js.Array[js.Any]],
-    getHeightsByRow: js.Function => CallbackTo[js.Array[js.Any]]
+  
+  inline def apply(
+    applyHeight: js.Array[Any] => Callback,
+    applyHeightByRow: js.Array[Any] => Callback,
+    getHeights: js.Function => js.Array[Any],
+    getHeightsByRow: js.Function => js.Array[Any]
   ): Equalizer = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("applyHeight")(js.Any.fromFunction1((t0: js.Array[js.Any]) => applyHeight(t0).runNow()))
-    __obj.updateDynamic("applyHeightByRow")(js.Any.fromFunction1((t0: js.Array[js.Any]) => applyHeightByRow(t0).runNow()))
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.updateDynamic("getHeights")(js.Any.fromFunction1((t0: js.Function) => getHeights(t0).runNow()))
-    __obj.updateDynamic("getHeightsByRow")(js.Any.fromFunction1((t0: js.Function) => getHeightsByRow(t0).runNow()))
+    val __obj = js.Dynamic.literal(applyHeight = js.Any.fromFunction1((t0: js.Array[Any]) => applyHeight(t0).runNow()), applyHeightByRow = js.Any.fromFunction1((t0: js.Array[Any]) => applyHeightByRow(t0).runNow()), getHeights = js.Any.fromFunction1(getHeights), getHeightsByRow = js.Any.fromFunction1(getHeightsByRow))
     __obj.asInstanceOf[Equalizer]
   }
+  
+  extension [Self <: Equalizer](x: Self) {
+    
+    inline def setApplyHeight(value: js.Array[Any] => Callback): Self = StObject.set(x, "applyHeight", js.Any.fromFunction1((t0: js.Array[Any]) => value(t0).runNow()))
+    
+    inline def setApplyHeightByRow(value: js.Array[Any] => Callback): Self = StObject.set(x, "applyHeightByRow", js.Any.fromFunction1((t0: js.Array[Any]) => value(t0).runNow()))
+    
+    inline def setGetHeights(value: js.Function => js.Array[Any]): Self = StObject.set(x, "getHeights", js.Any.fromFunction1(value))
+    
+    inline def setGetHeightsByRow(value: js.Function => js.Array[Any]): Self = StObject.set(x, "getHeightsByRow", js.Any.fromFunction1(value))
+  }
 }
-

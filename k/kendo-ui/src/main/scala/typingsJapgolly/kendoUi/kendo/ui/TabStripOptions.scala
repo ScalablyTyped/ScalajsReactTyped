@@ -2,79 +2,139 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TabStripOptions extends js.Object {
+trait TabStripOptions extends StObject {
+  
   var activate: js.UndefOr[js.Function1[/* e */ TabStripActivateEvent, Unit]] = js.undefined
+  
   var animation: js.UndefOr[Boolean | TabStripAnimation] = js.undefined
+  
   var collapsible: js.UndefOr[Boolean] = js.undefined
+  
   var contentLoad: js.UndefOr[js.Function1[/* e */ TabStripContentLoadEvent, Unit]] = js.undefined
-  var contentUrls: js.UndefOr[js.Any] = js.undefined
+  
+  var contentUrls: js.UndefOr[Any] = js.undefined
+  
   var dataContentField: js.UndefOr[String] = js.undefined
+  
   var dataContentUrlField: js.UndefOr[String] = js.undefined
+  
   var dataImageUrlField: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var dataSpriteCssClass: js.UndefOr[String] = js.undefined
+  
   var dataTextField: js.UndefOr[String] = js.undefined
+  
   var dataUrlField: js.UndefOr[String] = js.undefined
+  
   var error: js.UndefOr[js.Function1[/* e */ TabStripErrorEvent, Unit]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean | TabStripScrollable] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ TabStripSelectEvent, Unit]] = js.undefined
+  
   var show: js.UndefOr[js.Function1[/* e */ TabStripShowEvent, Unit]] = js.undefined
+  
   var tabPosition: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object TabStripOptions {
-  @scala.inline
-  def apply(
-    activate: /* e */ TabStripActivateEvent => Callback = null,
-    animation: Boolean | TabStripAnimation = null,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    contentLoad: /* e */ TabStripContentLoadEvent => Callback = null,
-    contentUrls: js.Any = null,
-    dataContentField: String = null,
-    dataContentUrlField: String = null,
-    dataImageUrlField: String = null,
-    dataSource: js.Any | DataSource = null,
-    dataSpriteCssClass: String = null,
-    dataTextField: String = null,
-    dataUrlField: String = null,
-    error: /* e */ TabStripErrorEvent => Callback = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    scrollable: Boolean | TabStripScrollable = null,
-    select: /* e */ TabStripSelectEvent => Callback = null,
-    show: /* e */ TabStripShowEvent => Callback = null,
-    tabPosition: String = null,
-    value: String = null
-  ): TabStripOptions = {
+  
+  inline def apply(): TabStripOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TabStripActivateEvent) => activate(t0).runNow()))
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (contentLoad != null) __obj.updateDynamic("contentLoad")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TabStripContentLoadEvent) => contentLoad(t0).runNow()))
-    if (contentUrls != null) __obj.updateDynamic("contentUrls")(contentUrls.asInstanceOf[js.Any])
-    if (dataContentField != null) __obj.updateDynamic("dataContentField")(dataContentField.asInstanceOf[js.Any])
-    if (dataContentUrlField != null) __obj.updateDynamic("dataContentUrlField")(dataContentUrlField.asInstanceOf[js.Any])
-    if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSpriteCssClass != null) __obj.updateDynamic("dataSpriteCssClass")(dataSpriteCssClass.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TabStripErrorEvent) => error(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TabStripSelectEvent) => select(t0).runNow()))
-    if (show != null) __obj.updateDynamic("show")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TabStripShowEvent) => show(t0).runNow()))
-    if (tabPosition != null) __obj.updateDynamic("tabPosition")(tabPosition.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabStripOptions]
   }
+  
+  extension [Self <: TabStripOptions](x: Self) {
+    
+    inline def setActivate(value: /* e */ TabStripActivateEvent => Callback): Self = StObject.set(x, "activate", js.Any.fromFunction1((t0: /* e */ TabStripActivateEvent) => value(t0).runNow()))
+    
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    
+    inline def setAnimation(value: Boolean | TabStripAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    
+    inline def setContentLoad(value: /* e */ TabStripContentLoadEvent => Callback): Self = StObject.set(x, "contentLoad", js.Any.fromFunction1((t0: /* e */ TabStripContentLoadEvent) => value(t0).runNow()))
+    
+    inline def setContentLoadUndefined: Self = StObject.set(x, "contentLoad", js.undefined)
+    
+    inline def setContentUrls(value: Any): Self = StObject.set(x, "contentUrls", value.asInstanceOf[js.Any])
+    
+    inline def setContentUrlsUndefined: Self = StObject.set(x, "contentUrls", js.undefined)
+    
+    inline def setDataContentField(value: String): Self = StObject.set(x, "dataContentField", value.asInstanceOf[js.Any])
+    
+    inline def setDataContentFieldUndefined: Self = StObject.set(x, "dataContentField", js.undefined)
+    
+    inline def setDataContentUrlField(value: String): Self = StObject.set(x, "dataContentUrlField", value.asInstanceOf[js.Any])
+    
+    inline def setDataContentUrlFieldUndefined: Self = StObject.set(x, "dataContentUrlField", js.undefined)
+    
+    inline def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
+    
+    inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSpriteCssClass(value: String): Self = StObject.set(x, "dataSpriteCssClass", value.asInstanceOf[js.Any])
+    
+    inline def setDataSpriteCssClassUndefined: Self = StObject.set(x, "dataSpriteCssClass", js.undefined)
+    
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    
+    inline def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
+    
+    inline def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
+    
+    inline def setError(value: /* e */ TabStripErrorEvent => Callback): Self = StObject.set(x, "error", js.Any.fromFunction1((t0: /* e */ TabStripErrorEvent) => value(t0).runNow()))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setScrollable(value: Boolean | TabStripScrollable): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSelect(value: /* e */ TabStripSelectEvent => Callback): Self = StObject.set(x, "select", js.Any.fromFunction1((t0: /* e */ TabStripSelectEvent) => value(t0).runNow()))
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setShow(value: /* e */ TabStripShowEvent => Callback): Self = StObject.set(x, "show", js.Any.fromFunction1((t0: /* e */ TabStripShowEvent) => value(t0).runNow()))
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setTabPosition(value: String): Self = StObject.set(x, "tabPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTabPositionUndefined: Self = StObject.set(x, "tabPosition", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,25 +1,26 @@
 package typingsJapgolly.cassanknex.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LimitableQueryBuilder extends js.Object {
+trait LimitableQueryBuilder extends StObject {
+  
   def limit(limit: Double): this.type
+  
   def limitPerPartition(limit: Double): this.type
 }
-
 object LimitableQueryBuilder {
-  @scala.inline
-  def apply(
-    limit: Double => CallbackTo[LimitableQueryBuilder],
-    limitPerPartition: Double => CallbackTo[LimitableQueryBuilder]
-  ): LimitableQueryBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("limit")(js.Any.fromFunction1((t0: scala.Double) => limit(t0).runNow()))
-    __obj.updateDynamic("limitPerPartition")(js.Any.fromFunction1((t0: scala.Double) => limitPerPartition(t0).runNow()))
+  
+  inline def apply(limit: Double => LimitableQueryBuilder, limitPerPartition: Double => LimitableQueryBuilder): LimitableQueryBuilder = {
+    val __obj = js.Dynamic.literal(limit = js.Any.fromFunction1(limit), limitPerPartition = js.Any.fromFunction1(limitPerPartition))
     __obj.asInstanceOf[LimitableQueryBuilder]
   }
+  
+  extension [Self <: LimitableQueryBuilder](x: Self) {
+    
+    inline def setLimit(value: Double => LimitableQueryBuilder): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
+    
+    inline def setLimitPerPartition(value: Double => LimitableQueryBuilder): Self = StObject.set(x, "limitPerPartition", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,21 +1,18 @@
 package typingsJapgolly.locutus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("locutus/c", JSImport.Namespace)
-@js.native
-object cMod extends js.Object {
-  @js.native
-  object math extends js.Object {
-    @js.native
-    object abs extends js.Object {
-      def apply(): js.Any = js.native
-      def apply(mixedNumber: js.Any): js.Any = js.native
-    }
-    
-  }
+object cMod {
   
+  object math {
+    
+    @JSImport("locutus/c", "math")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def abs(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")().asInstanceOf[Any]
+    inline def abs(mixedNumber: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(mixedNumber.asInstanceOf[js.Any]).asInstanceOf[Any]
+  }
 }
-

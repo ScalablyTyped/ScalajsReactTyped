@@ -1,31 +1,43 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
 import typingsJapgolly.openlayers.mod.ProjectionLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WriteOptions extends js.Object {
+trait WriteOptions extends StObject {
+  
   var dataProjection: ProjectionLike
+  
   var decimals: js.UndefOr[Double] = js.undefined
+  
   var featureProjection: js.UndefOr[ProjectionLike] = js.undefined
+  
   var rightHanded: js.UndefOr[Boolean] = js.undefined
 }
-
 object WriteOptions {
-  @scala.inline
-  def apply(
-    dataProjection: ProjectionLike = null,
-    decimals: Int | Double = null,
-    featureProjection: ProjectionLike = null,
-    rightHanded: js.UndefOr[Boolean] = js.undefined
-  ): WriteOptions = {
+  
+  inline def apply(): WriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataProjection != null) __obj.updateDynamic("dataProjection")(dataProjection.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (featureProjection != null) __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightHanded)) __obj.updateDynamic("rightHanded")(rightHanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[WriteOptions]
   }
+  
+  extension [Self <: WriteOptions](x: Self) {
+    
+    inline def setDataProjection(value: ProjectionLike): Self = StObject.set(x, "dataProjection", value.asInstanceOf[js.Any])
+    
+    inline def setDataProjectionUndefined: Self = StObject.set(x, "dataProjection", js.undefined)
+    
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setFeatureProjection(value: ProjectionLike): Self = StObject.set(x, "featureProjection", value.asInstanceOf[js.Any])
+    
+    inline def setFeatureProjectionUndefined: Self = StObject.set(x, "featureProjection", js.undefined)
+    
+    inline def setRightHanded(value: Boolean): Self = StObject.set(x, "rightHanded", value.asInstanceOf[js.Any])
+    
+    inline def setRightHandedUndefined: Self = StObject.set(x, "rightHanded", js.undefined)
+  }
 }
-

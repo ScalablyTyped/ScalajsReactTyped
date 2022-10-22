@@ -1,29 +1,24 @@
 package typingsJapgolly.libnpmsearch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libnpmsearchStrings {
-  @js.native
-  sealed trait maintenance extends js.Object
   
   @js.native
-  sealed trait optimal extends js.Object
+  sealed trait maintenance extends StObject
+  inline def maintenance: maintenance = "maintenance".asInstanceOf[maintenance]
   
   @js.native
-  sealed trait popularity extends js.Object
+  sealed trait optimal extends StObject
+  inline def optimal: optimal = "optimal".asInstanceOf[optimal]
   
   @js.native
-  sealed trait quality extends js.Object
+  sealed trait popularity extends StObject
+  inline def popularity: popularity = "popularity".asInstanceOf[popularity]
   
-  @scala.inline
-  def maintenance: maintenance = "maintenance".asInstanceOf[maintenance]
-  @scala.inline
-  def optimal: optimal = "optimal".asInstanceOf[optimal]
-  @scala.inline
-  def popularity: popularity = "popularity".asInstanceOf[popularity]
-  @scala.inline
-  def quality: quality = "quality".asInstanceOf[quality]
+  @js.native
+  sealed trait quality extends StObject
+  inline def quality: quality = "quality".asInstanceOf[quality]
 }
-

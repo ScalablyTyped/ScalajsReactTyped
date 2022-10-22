@@ -1,57 +1,41 @@
 package typingsJapgolly.reactBreadcrumbsDynamic.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Breadcrumbs {
-  def apply(
-    container: String | Element | js.Object = null,
-    containerProps: js.Object = null,
-    duplicateProps: js.Object = null,
-    finalItem: String | Element | js.Object = null,
-    finalProps: js.Object = null,
-    item: String | Element | js.Object = null,
-    renameProps: js.Object = null,
-    separator: String | Element | js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    BreadcrumbsProps, 
-    typingsJapgolly.reactBreadcrumbsDynamic.mod.Breadcrumbs, 
-    Unit, 
-    BreadcrumbsProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (containerProps != null) __obj.updateDynamic("containerProps")(containerProps.asInstanceOf[js.Any])
-    if (duplicateProps != null) __obj.updateDynamic("duplicateProps")(duplicateProps.asInstanceOf[js.Any])
-    if (finalItem != null) __obj.updateDynamic("finalItem")(finalItem.asInstanceOf[js.Any])
-    if (finalProps != null) __obj.updateDynamic("finalProps")(finalProps.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (renameProps != null) __obj.updateDynamic("renameProps")(renameProps.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBreadcrumbsDynamic.mod.Breadcrumbs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBreadcrumbsDynamic.mod.BreadcrumbsProps])(children: _*)
-  }
   @JSImport("react-breadcrumbs-dynamic", "Breadcrumbs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBreadcrumbsDynamic.mod.Breadcrumbs] {
+    
+    inline def container(value: String | Element | js.Object): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerProps(value: js.Object): this.type = set("containerProps", value.asInstanceOf[js.Any])
+    
+    inline def duplicateProps(value: js.Object): this.type = set("duplicateProps", value.asInstanceOf[js.Any])
+    
+    inline def finalItem(value: String | Element | js.Object): this.type = set("finalItem", value.asInstanceOf[js.Any])
+    
+    inline def finalProps(value: js.Object): this.type = set("finalProps", value.asInstanceOf[js.Any])
+    
+    inline def item(value: String | Element | js.Object): this.type = set("item", value.asInstanceOf[js.Any])
+    
+    inline def renameProps(value: js.Object): this.type = set("renameProps", value.asInstanceOf[js.Any])
+    
+    inline def separator(value: String | Element | js.Object): this.type = set("separator", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Breadcrumbs.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BreadcrumbsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

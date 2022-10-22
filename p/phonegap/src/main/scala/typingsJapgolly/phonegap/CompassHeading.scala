@@ -1,30 +1,42 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompassHeading extends js.Object {
+trait CompassHeading extends StObject {
+  
   var headingAccuracy: js.UndefOr[Double] = js.undefined
+  
   var magneticHeading: js.UndefOr[Double] = js.undefined
+  
   var timestamp: js.UndefOr[Double] = js.undefined
+  
   var trueHeading: js.UndefOr[Double] = js.undefined
 }
-
 object CompassHeading {
-  @scala.inline
-  def apply(
-    headingAccuracy: Int | Double = null,
-    magneticHeading: Int | Double = null,
-    timestamp: Int | Double = null,
-    trueHeading: Int | Double = null
-  ): CompassHeading = {
+  
+  inline def apply(): CompassHeading = {
     val __obj = js.Dynamic.literal()
-    if (headingAccuracy != null) __obj.updateDynamic("headingAccuracy")(headingAccuracy.asInstanceOf[js.Any])
-    if (magneticHeading != null) __obj.updateDynamic("magneticHeading")(magneticHeading.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (trueHeading != null) __obj.updateDynamic("trueHeading")(trueHeading.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassHeading]
   }
+  
+  extension [Self <: CompassHeading](x: Self) {
+    
+    inline def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
+    
+    inline def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
+    
+    inline def setMagneticHeadingUndefined: Self = StObject.set(x, "magneticHeading", js.undefined)
+    
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    
+    inline def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
+    
+    inline def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
+  }
 }
-

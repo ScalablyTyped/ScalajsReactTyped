@@ -1,7 +1,7 @@
 
 # Scala.js typings for safe-buffer
 
-Typings are for version 5.1.2
+Typings are for version 5.2.1
 
 ## Library description:
 Safer Node.js Buffer API
@@ -10,10 +10,10 @@ Safer Node.js Buffer API
 | ------------------ | :-------------: |
 | Full name          | safe-buffer |
 | Keywords           | buffer, buffer allocate, node security, safe, safe-buffer, security, uninitialized |
-| # releases         | 3 |
-| # dependents       | 878 |
-| # downloads        | 945475015 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.43983448E8 |
+| # stars            | 323.0 |
 
 ## Links
 - [Homepage](https://github.com/feross/safe-buffer)

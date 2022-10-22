@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientHtmlEditor.CommandExecuting event.
   */
-@JSGlobal("ASPxClientHtmlEditorCommandExecutingEventArgs")
-@js.native
-class ASPxClientHtmlEditorCommandExecutingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorCommandExecutingEventArgs object with the specified settings.
-    * @param commandName A string value that identifies the command currently being executed. Initializes the ASPxClientHtmlEditorCommandExecutingEventArgs.commandName property.
-    * @param parameter An object that contains the command specific information needed for handling the command execution. Initializes the ASPxClientHtmlEditorCommandExecutingEventArgs.parameter property.
-    */
-  def this(commandName: String, parameter: js.Any) = this()
+trait ASPxClientHtmlEditorCommandExecutingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
+  
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: js.Any = js.native
+  var parameter: Any
 }
-
+object ASPxClientHtmlEditorCommandExecutingEventArgs {
+  
+  inline def apply(cancel: Boolean, commandName: String, parameter: Any): ASPxClientHtmlEditorCommandExecutingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], commandName = commandName.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandExecutingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorCommandExecutingEventArgs](x: Self) {
+    
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    
+    inline def setParameter(value: Any): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+  }
+}

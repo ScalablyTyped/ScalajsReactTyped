@@ -1,41 +1,55 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
-import typingsJapgolly.ibmCloudSdkCore.helperMod.FileObject
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.ibmCloudSdkCore.esLibHelperMod.FileObject
 import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ClassifyElementsConstants.FileContentType
 import typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod.ClassifyElementsConstants.Model
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `classifyElements` operation. */
-trait ClassifyElementsParams extends js.Object {
+trait ClassifyElementsParams extends StObject {
+  
   /** The document to classify. */
   var file: ReadableStream | FileObject | Buffer
+  
   /** The content type of file. */
   var file_content_type: js.UndefOr[FileContentType | String] = js.undefined
+  
   var headers: js.UndefOr[js.Object] = js.undefined
+  
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
   var model: js.UndefOr[Model | String] = js.undefined
+  
   var return_response: js.UndefOr[Boolean] = js.undefined
 }
-
 object ClassifyElementsParams {
-  @scala.inline
-  def apply(
-    file: ReadableStream | FileObject | Buffer,
-    file_content_type: FileContentType | String = null,
-    headers: js.Object = null,
-    model: Model | String = null,
-    return_response: js.UndefOr[Boolean] = js.undefined
-  ): ClassifyElementsParams = {
+  
+  inline def apply(file: ReadableStream | FileObject | Buffer): ClassifyElementsParams = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
-    if (file_content_type != null) __obj.updateDynamic("file_content_type")(file_content_type.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyElementsParams]
   }
+  
+  extension [Self <: ClassifyElementsParams](x: Self) {
+    
+    inline def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFile_content_type(value: FileContentType | String): Self = StObject.set(x, "file_content_type", value.asInstanceOf[js.Any])
+    
+    inline def setFile_content_typeUndefined: Self = StObject.set(x, "file_content_type", js.undefined)
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setModel(value: Model | String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+  }
 }
-

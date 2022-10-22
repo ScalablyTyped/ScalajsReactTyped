@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.OK
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.INVALID_REQUEST
   - typingsJapgolly.googleMaps.googleMapsStrings.UNKNOWN_ERROR
 */
-trait SearchResponseStatus extends js.Object
-
+trait SearchResponseStatus extends StObject
 object SearchResponseStatus {
-  @scala.inline
-  def INVALID_REQUEST: typingsJapgolly.googleMaps.googleMapsStrings.INVALID_REQUEST = this.cast("INVALID_REQUEST")
-  @scala.inline
-  def OK: typingsJapgolly.googleMaps.googleMapsStrings.OK = this.cast("OK")
-  @scala.inline
-  def OVER_QUERY_LIMIT: typingsJapgolly.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT = this.cast("OVER_QUERY_LIMIT")
-  @scala.inline
-  def REQUEST_DENIED: typingsJapgolly.googleMaps.googleMapsStrings.REQUEST_DENIED = this.cast("REQUEST_DENIED")
-  @scala.inline
-  def UNKNOWN_ERROR: typingsJapgolly.googleMaps.googleMapsStrings.UNKNOWN_ERROR = this.cast("UNKNOWN_ERROR")
-  @scala.inline
-  def ZERO_RESULTS: typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS = this.cast("ZERO_RESULTS")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def INVALID_REQUEST: typingsJapgolly.googleMaps.googleMapsStrings.INVALID_REQUEST = "INVALID_REQUEST".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.INVALID_REQUEST]
+  
+  inline def OK: typingsJapgolly.googleMaps.googleMapsStrings.OK = "OK".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.OK]
+  
+  inline def OVER_QUERY_LIMIT: typingsJapgolly.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT = "OVER_QUERY_LIMIT".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.OVER_QUERY_LIMIT]
+  
+  inline def REQUEST_DENIED: typingsJapgolly.googleMaps.googleMapsStrings.REQUEST_DENIED = "REQUEST_DENIED".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.REQUEST_DENIED]
+  
+  inline def UNKNOWN_ERROR: typingsJapgolly.googleMaps.googleMapsStrings.UNKNOWN_ERROR = "UNKNOWN_ERROR".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.UNKNOWN_ERROR]
+  
+  inline def ZERO_RESULTS: typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ZERO_RESULTS]
 }
-

@@ -1,30 +1,42 @@
 package typingsJapgolly.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextMapCodecOptions extends js.Object {
+trait TextMapCodecOptions extends StObject {
+  
   var baggagePrefix: js.UndefOr[String] = js.undefined
+  
   var contextKey: js.UndefOr[String] = js.undefined
+  
   var metrics: js.UndefOr[MetricsFactory] = js.undefined
+  
   var urlEncoding: js.UndefOr[Boolean] = js.undefined
 }
-
 object TextMapCodecOptions {
-  @scala.inline
-  def apply(
-    baggagePrefix: String = null,
-    contextKey: String = null,
-    metrics: MetricsFactory = null,
-    urlEncoding: js.UndefOr[Boolean] = js.undefined
-  ): TextMapCodecOptions = {
+  
+  inline def apply(): TextMapCodecOptions = {
     val __obj = js.Dynamic.literal()
-    if (baggagePrefix != null) __obj.updateDynamic("baggagePrefix")(baggagePrefix.asInstanceOf[js.Any])
-    if (contextKey != null) __obj.updateDynamic("contextKey")(contextKey.asInstanceOf[js.Any])
-    if (metrics != null) __obj.updateDynamic("metrics")(metrics.asInstanceOf[js.Any])
-    if (!js.isUndefined(urlEncoding)) __obj.updateDynamic("urlEncoding")(urlEncoding.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextMapCodecOptions]
   }
+  
+  extension [Self <: TextMapCodecOptions](x: Self) {
+    
+    inline def setBaggagePrefix(value: String): Self = StObject.set(x, "baggagePrefix", value.asInstanceOf[js.Any])
+    
+    inline def setBaggagePrefixUndefined: Self = StObject.set(x, "baggagePrefix", js.undefined)
+    
+    inline def setContextKey(value: String): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
+    
+    inline def setContextKeyUndefined: Self = StObject.set(x, "contextKey", js.undefined)
+    
+    inline def setMetrics(value: MetricsFactory): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    
+    inline def setUrlEncoding(value: Boolean): Self = StObject.set(x, "urlEncoding", value.asInstanceOf[js.Any])
+    
+    inline def setUrlEncodingUndefined: Self = StObject.set(x, "urlEncoding", js.undefined)
+  }
 }
-

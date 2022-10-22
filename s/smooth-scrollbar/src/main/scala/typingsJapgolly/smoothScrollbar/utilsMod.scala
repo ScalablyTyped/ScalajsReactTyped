@@ -1,33 +1,43 @@
 package typingsJapgolly.smoothScrollbar
 
-import org.scalajs.dom.raw.EventTarget
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.Touch
-import typingsJapgolly.smoothScrollbar.eventHubMod.EventHandler
-import typingsJapgolly.smoothScrollbar.scrollbarMod.Scrollbar
+import org.scalajs.dom.EventTarget
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Touch
+import typingsJapgolly.smoothScrollbar.anon.XY
+import typingsJapgolly.smoothScrollbar.interfacesScrollbarMod.Scrollbar
+import typingsJapgolly.smoothScrollbar.utilsEventHubMod.EventHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/utils", JSImport.Namespace)
-@js.native
-object utilsMod extends js.Object {
-  @js.native
-  class TouchRecord ()
-    extends typingsJapgolly.smoothScrollbar.touchRecordMod.TouchRecord
+object utilsMod {
   
+  @JSImport("smooth-scrollbar/utils", JSImport.Namespace)
   @js.native
-  class Tracker protected ()
-    extends typingsJapgolly.smoothScrollbar.touchRecordMod.Tracker {
+  val ^ : js.Any = js.native
+  
+  @JSImport("smooth-scrollbar/utils", "TouchRecord")
+  @js.native
+  open class TouchRecord ()
+    extends typingsJapgolly.smoothScrollbar.utilsTouchRecordMod.TouchRecord
+  
+  @JSImport("smooth-scrollbar/utils", "Tracker")
+  @js.native
+  open class Tracker protected ()
+    extends typingsJapgolly.smoothScrollbar.utilsTouchRecordMod.Tracker {
     def this(touch: Touch) = this()
   }
   
-  def clearEventsOn(scrollbar: Scrollbar): Unit = js.native
-  def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = js.native
-  def getPointerData(evt: js.Any): js.Any = js.native
-  def getPosition(evt: js.Any): AnonXY = js.native
-  def isOneOf(a: js.Any): Boolean = js.native
-  def isOneOf(a: js.Any, b: js.Array[_]): Boolean = js.native
-  def setStyle(elem: HTMLElement, styles: js.Any): Unit = js.native
+  inline def clearEventsOn(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearEventsOn")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def eventScope(scrollbar: Scrollbar): js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("eventScope")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* elem */ EventTarget, /* events */ String, /* fn */ EventHandler, Unit]]
+  
+  inline def getPointerData(evt: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPointerData")(evt.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def getPosition(evt: Any): XY = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(evt.asInstanceOf[js.Any]).asInstanceOf[XY]
+  
+  inline def isOneOf(a: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOneOf(a: Any, b: js.Array[Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def setStyle(elem: HTMLElement, styles: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

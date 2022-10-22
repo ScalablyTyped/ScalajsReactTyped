@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.mod.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterLoad
@@ -19,36 +19,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onValues
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait toolbarEventName extends js.Object
-
+trait toolbarEventName extends StObject
 object toolbarEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = this.cast("onAfterLoad")
-  @scala.inline
-  def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = this.cast("onAfterScroll")
-  @scala.inline
-  def onAfterValidation: typingsJapgolly.webix.webixStrings.onAfterValidation = this.cast("onAfterValidation")
-  @scala.inline
-  def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = this.cast("onBeforeLoad")
-  @scala.inline
-  def onBeforeValidate: typingsJapgolly.webix.webixStrings.onBeforeValidate = this.cast("onBeforeValidate")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onChange: typingsJapgolly.webix.webixStrings.onChange = this.cast("onChange")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = this.cast("onLoadError")
-  @scala.inline
-  def onValidationError: typingsJapgolly.webix.webixStrings.onValidationError = this.cast("onValidationError")
-  @scala.inline
-  def onValidationSuccess: typingsJapgolly.webix.webixStrings.onValidationSuccess = this.cast("onValidationSuccess")
-  @scala.inline
-  def onValues: typingsJapgolly.webix.webixStrings.onValues = this.cast("onValues")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterLoad: typingsJapgolly.webix.webixStrings.onAfterLoad = "onAfterLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterLoad]
+  
+  inline def onAfterScroll: typingsJapgolly.webix.webixStrings.onAfterScroll = "onAfterScroll".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterScroll]
+  
+  inline def onAfterValidation: typingsJapgolly.webix.webixStrings.onAfterValidation = "onAfterValidation".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterValidation]
+  
+  inline def onBeforeLoad: typingsJapgolly.webix.webixStrings.onBeforeLoad = "onBeforeLoad".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeLoad]
+  
+  inline def onBeforeValidate: typingsJapgolly.webix.webixStrings.onBeforeValidate = "onBeforeValidate".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforeValidate]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onChange: typingsJapgolly.webix.webixStrings.onChange = "onChange".asInstanceOf[typingsJapgolly.webix.webixStrings.onChange]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onLoadError: typingsJapgolly.webix.webixStrings.onLoadError = "onLoadError".asInstanceOf[typingsJapgolly.webix.webixStrings.onLoadError]
+  
+  inline def onValidationError: typingsJapgolly.webix.webixStrings.onValidationError = "onValidationError".asInstanceOf[typingsJapgolly.webix.webixStrings.onValidationError]
+  
+  inline def onValidationSuccess: typingsJapgolly.webix.webixStrings.onValidationSuccess = "onValidationSuccess".asInstanceOf[typingsJapgolly.webix.webixStrings.onValidationSuccess]
+  
+  inline def onValues: typingsJapgolly.webix.webixStrings.onValues = "onValues".asInstanceOf[typingsJapgolly.webix.webixStrings.onValues]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileSystemObjectType extends js.Object
-
+sealed trait FileSystemObjectType extends StObject
 @JSGlobal("SP.FileSystemObjectType")
 @js.native
-object FileSystemObjectType extends js.Object {
-  @js.native
-  sealed trait file extends FileSystemObjectType
+object FileSystemObjectType extends StObject {
   
   @js.native
-  sealed trait folder extends FileSystemObjectType
+  sealed trait file
+    extends StObject
+       with FileSystemObjectType
   
   @js.native
-  sealed trait invalid extends FileSystemObjectType
+  sealed trait folder
+    extends StObject
+       with FileSystemObjectType
   
   @js.native
-  sealed trait web extends FileSystemObjectType
+  sealed trait invalid
+    extends StObject
+       with FileSystemObjectType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileSystemObjectType with Double] = js.native
-  /* 1 */ @js.native
-  object file extends TopLevel[file with Double]
-  
-  /* 2 */ @js.native
-  object folder extends TopLevel[folder with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 3 */ @js.native
-  object web extends TopLevel[web with Double]
-  
+  @js.native
+  sealed trait web
+    extends StObject
+       with FileSystemObjectType
 }
-

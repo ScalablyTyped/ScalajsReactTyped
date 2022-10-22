@@ -1,7 +1,7 @@
 
 # Scala.js typings for address
 
-Typings are for version 1.1.2
+Typings are for version 1.2.1
 
 ## Library description:
 Get current machine IP, MAC and DNS servers.
@@ -10,10 +10,10 @@ Get current machine IP, MAC and DNS servers.
 | ------------------ | :-------------: |
 | Full name          | address |
 | Keywords           | address, ip, ipv4, mac |
-| # releases         | 4 |
-| # dependents       | 387 |
-| # downloads        | 157699100 |
-| # stars            | 9 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7641002333333336E7 |
+| # stars            | 201.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/address#readme)

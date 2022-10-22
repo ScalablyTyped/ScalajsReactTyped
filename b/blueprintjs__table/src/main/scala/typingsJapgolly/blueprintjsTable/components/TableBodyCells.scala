@@ -1,65 +1,51 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typingsJapgolly.blueprintjsTable.gridMod.Grid
-import typingsJapgolly.blueprintjsTable.rectMod.Rect
-import typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.BATCH
-import typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.NONE
-import typingsJapgolly.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typingsJapgolly.blueprintjsTable.libEsmCommonGridMod.Grid
+import typingsJapgolly.blueprintjsTable.libEsmCommonRectMod.Rect
+import typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH
+import typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.NONE
+import typingsJapgolly.blueprintjsTable.libEsmTableBodyCellsMod.ITableBodyCellsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBodyCells {
-  def apply(
+  
+  inline def apply(
+    cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[Element],
     columnIndexEnd: Double,
     columnIndexStart: Double,
     grid: Grid,
     loading: Boolean,
     rowIndexEnd: Double,
     rowIndexStart: Double,
-    viewportRect: Rect,
-    cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => CallbackTo[Element],
-    className: String = null,
-    focusedCell: IFocusedCellCoordinates = null,
-    onCompleteRender: js.UndefOr[Callback] = js.undefined,
-    renderMode: BATCH | NONE = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITableBodyCellsProps, 
-    typingsJapgolly.blueprintjsTable.tableBodyCellsMod.TableBodyCells, 
-    Unit, 
-    ITableBodyCellsProps
-  ] = {
-    val __obj = js.Dynamic.literal(columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("cellRenderer")(js.Any.fromFunction2((t0: /* rowIndex */ scala.Double, t1: /* columnIndex */ scala.Double) => cellRenderer(t0, t1).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    onCompleteRender.foreach(p => __obj.updateDynamic("onCompleteRender")(p.toJsFn))
-    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.tableBodyCellsMod.TableBodyCells](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.tableBodyCellsMod.ITableBodyCellsProps])(children: _*)
+    viewportRect: Rect
+  ): Builder = {
+    val __props = js.Dynamic.literal(cellRenderer = js.Any.fromFunction2(cellRenderer), columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITableBodyCellsProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/tableBodyCells", "TableBodyCells")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmTableBodyCellsMod.TableBodyCells] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def focusedCell(value: FocusedCellCoordinates): this.type = set("focusedCell", value.asInstanceOf[js.Any])
+    
+    inline def onCompleteRender(value: Callback): this.type = set("onCompleteRender", value.toJsFn)
+    
+    inline def renderMode(value: BATCH | NONE): this.type = set("renderMode", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ITableBodyCellsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

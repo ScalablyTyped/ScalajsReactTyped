@@ -1,16 +1,28 @@
 package typingsJapgolly.typescript.mod
 
+import typingsJapgolly.typescript.mod.ModuleKind.CommonJS
+import typingsJapgolly.typescript.mod.ModuleKind.ESNext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Stored map from non-relative module name to a table: directory -> result of module lookup in this directory
-  * We support only non-relative module names because resolution of relative module names is usually more deterministic and thus less expensive.
-  */
 @js.native
-trait NonRelativeModuleNameResolutionCache extends js.Object {
+trait NonRelativeModuleNameResolutionCache
+  extends StObject
+     with PackageJsonInfoCache {
+  
   def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String): PerModuleNameCache = js.native
-  def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, redirectedReference: ResolvedProjectReference): PerModuleNameCache = js.native
+  def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, mode: Unit, redirectedReference: ResolvedProjectReference): PerModuleNameCache = js.native
+  def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, mode: CommonJS): PerModuleNameCache = js.native
+  def getOrCreateCacheForModuleName(
+    nonRelativeModuleName: java.lang.String,
+    mode: CommonJS,
+    redirectedReference: ResolvedProjectReference
+  ): PerModuleNameCache = js.native
+  def getOrCreateCacheForModuleName(nonRelativeModuleName: java.lang.String, mode: ESNext): PerModuleNameCache = js.native
+  def getOrCreateCacheForModuleName(
+    nonRelativeModuleName: java.lang.String,
+    mode: ESNext,
+    redirectedReference: ResolvedProjectReference
+  ): PerModuleNameCache = js.native
 }
-

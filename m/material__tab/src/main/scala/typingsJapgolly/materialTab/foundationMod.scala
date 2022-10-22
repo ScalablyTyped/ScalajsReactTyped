@@ -1,42 +1,52 @@
 package typingsJapgolly.materialTab
 
+import org.scalajs.dom.DOMRect
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialTab.adapterMod.MDCTabAdapter
-import typingsJapgolly.std.Event_
+import typingsJapgolly.materialTab.anon.PartialMDCTabAdapter
+import typingsJapgolly.materialTab.typesMod.MDCTabDimensions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/tab/foundation", JSImport.Default)
   @js.native
-  trait MDCTabFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCTabAdapter] {
+  open class default () extends MDCTabFoundation {
+    def this(adapter: PartialMDCTabAdapter) = this()
+  }
+  
+  @JSImport("@material/tab/foundation", "MDCTabFoundation")
+  @js.native
+  open class MDCTabFoundation () extends MDCFoundation[MDCTabAdapter] {
+    def this(adapter: PartialMDCTabAdapter) = this()
+    
     /**
       * Activates the Tab
       */
     def activate(): Unit = js.native
+    def activate(previousIndicatorClientRect: DOMRect): Unit = js.native
+    
+    /**
+      * Returns the dimensions of the Tab
+      */
+    def computeDimensions(): MDCTabDimensions = js.native
+    
     /**
       * Deactivates the Tab
       */
     def deactivate(): Unit = js.native
-    def handleTransitionEnd(evt: Event_): Unit = js.native
-    /**
-      * Returns the Tab's active state
-      */
+    
+    /* private */ var focusOnActivate: Any = js.native
+    
+    def handleClick(): Unit = js.native
+    
     def isActive(): Boolean = js.native
+    
+    /**
+      * Sets whether the tab should focus itself when activated
+      */
+    def setFocusOnActivate(focusOnActivate: Boolean): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCTabFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialTab.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTabAdapter = js.native
-    val strings: typingsJapgolly.materialTab.constantsMod.strings = js.native
-  }
-  
 }
-

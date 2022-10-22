@@ -1,7 +1,7 @@
 
 # Scala.js typings for gulp-typescript
 
-Typings are for version 5.0.1
+Typings are for version 6.0.0-alpha.1
 
 ## Library description:
 A typescript compiler for gulp with incremental compilation support.
@@ -10,10 +10,10 @@ A typescript compiler for gulp with incremental compilation support.
 | ------------------ | :-------------: |
 | Full name          | gulp-typescript |
 | Keywords           | typescript, gulpplugin, incremental compilation, ts, tsc, compile, compiler, transpile |
-| # releases         | 13 |
-| # dependents       | 491 |
-| # downloads        | 6252853 |
-| # stars            | 78 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 714481.6666666666 |
+| # stars            | 771.0 |
 
 ## Links
 - [Homepage](https://github.com/ivogabe/gulp-typescript)

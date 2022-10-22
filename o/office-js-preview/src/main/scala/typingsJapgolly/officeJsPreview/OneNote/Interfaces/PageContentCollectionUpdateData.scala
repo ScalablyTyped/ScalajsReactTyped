@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the PageContentCollection object, for use in "pageContentCollection.set({ ... })". */
-trait PageContentCollectionUpdateData extends js.Object {
+/** An interface for updating data on the PageContentCollection object, for use in `pageContentCollection.set({ ... })`. */
+trait PageContentCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[PageContentData]] = js.undefined
 }
-
 object PageContentCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[PageContentData] = null): PageContentCollectionUpdateData = {
+  
+  inline def apply(): PageContentCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageContentCollectionUpdateData]
   }
+  
+  extension [Self <: PageContentCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[PageContentData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: PageContentData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

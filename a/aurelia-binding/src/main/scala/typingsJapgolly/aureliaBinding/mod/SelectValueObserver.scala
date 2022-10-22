@@ -1,17 +1,19 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "SelectValueObserver")
 @js.native
-class SelectValueObserver protected () extends InternalPropertyObserver {
+open class SelectValueObserver protected ()
+  extends StObject
+     with InternalPropertyObserver {
   def this(element: Element, handler: EventSubscriber, observerLocator: ObserverLocator) = this()
+  
   /**
     * Handle underlying checkbox element change events
     */
-  def handleEvent(): js.Any = js.native
+  def handleEvent(): Any = js.native
 }
-

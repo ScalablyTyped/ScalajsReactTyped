@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaSourceState extends js.Object
-
+sealed trait MediaSourceState extends StObject
 /** Specifies the state of a MediaSource . */
 @JSGlobal("Windows.Media.Core.MediaSourceState")
 @js.native
-object MediaSourceState extends js.Object {
+object MediaSourceState extends StObject {
+  
   /** The MediaSource has been closed. */
   @js.native
-  sealed trait closed extends MediaSourceState
+  sealed trait closed
+    extends StObject
+       with MediaSourceState
   
   /** The MediaSource failed to open the associated media content. */
   @js.native
-  sealed trait failed extends MediaSourceState
+  sealed trait failed
+    extends StObject
+       with MediaSourceState
   
   /** The MediaSource has been initialized. */
   @js.native
-  sealed trait initial extends MediaSourceState
+  sealed trait initial
+    extends StObject
+       with MediaSourceState
   
   /** The MediaSource has successfully opened the associated media content. */
   @js.native
-  sealed trait opened extends MediaSourceState
+  sealed trait opened
+    extends StObject
+       with MediaSourceState
   
   /** The MediaSource is in the process of opening the associated media content. */
   @js.native
-  sealed trait opening extends MediaSourceState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaSourceState with Double] = js.native
-  /* 4 */ @js.native
-  object closed extends TopLevel[closed with Double]
-  
-  /* 3 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 0 */ @js.native
-  object initial extends TopLevel[initial with Double]
-  
-  /* 2 */ @js.native
-  object opened extends TopLevel[opened with Double]
-  
-  /* 1 */ @js.native
-  object opening extends TopLevel[opening with Double]
-  
+  sealed trait opening
+    extends StObject
+       with MediaSourceState
 }
-

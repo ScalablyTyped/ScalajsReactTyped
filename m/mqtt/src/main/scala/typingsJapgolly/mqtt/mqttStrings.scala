@@ -1,69 +1,84 @@
 package typingsJapgolly.mqtt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mqttStrings {
-  @js.native
-  sealed trait error extends js.Object
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait mqtt extends js.Object
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait mqtts extends js.Object
+  sealed trait disconnect extends StObject
+  inline def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
   
   @js.native
-  sealed trait packetreceive extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait packetsend extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait ssl extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait tcp extends js.Object
+  sealed trait mqtt extends StObject
+  inline def mqtt: mqtt = "mqtt".asInstanceOf[mqtt]
   
   @js.native
-  sealed trait ws extends js.Object
+  sealed trait mqtts extends StObject
+  inline def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
   
   @js.native
-  sealed trait wss extends js.Object
+  sealed trait offline extends StObject
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
-  sealed trait wx extends js.Object
+  sealed trait outgoingEmpty extends StObject
+  inline def outgoingEmpty: outgoingEmpty = "outgoingEmpty".asInstanceOf[outgoingEmpty]
   
   @js.native
-  sealed trait wxs extends js.Object
+  sealed trait packetreceive extends StObject
+  inline def packetreceive: packetreceive = "packetreceive".asInstanceOf[packetreceive]
   
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def mqtt: mqtt = "mqtt".asInstanceOf[mqtt]
-  @scala.inline
-  def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
-  @scala.inline
-  def packetreceive: packetreceive = "packetreceive".asInstanceOf[packetreceive]
-  @scala.inline
-  def packetsend: packetsend = "packetsend".asInstanceOf[packetsend]
-  @scala.inline
-  def ssl: ssl = "ssl".asInstanceOf[ssl]
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
-  @scala.inline
-  def ws: ws = "ws".asInstanceOf[ws]
-  @scala.inline
-  def wss: wss = "wss".asInstanceOf[wss]
-  @scala.inline
-  def wx: wx = "wx".asInstanceOf[wx]
-  @scala.inline
-  def wxs: wxs = "wxs".asInstanceOf[wxs]
+  @js.native
+  sealed trait packetsend extends StObject
+  inline def packetsend: packetsend = "packetsend".asInstanceOf[packetsend]
+  
+  @js.native
+  sealed trait reconnect extends StObject
+  inline def reconnect: reconnect = "reconnect".asInstanceOf[reconnect]
+  
+  @js.native
+  sealed trait ssl extends StObject
+  inline def ssl: ssl = "ssl".asInstanceOf[ssl]
+  
+  @js.native
+  sealed trait tcp extends StObject
+  inline def tcp: tcp = "tcp".asInstanceOf[tcp]
+  
+  @js.native
+  sealed trait ws extends StObject
+  inline def ws: ws = "ws".asInstanceOf[ws]
+  
+  @js.native
+  sealed trait wss extends StObject
+  inline def wss: wss = "wss".asInstanceOf[wss]
+  
+  @js.native
+  sealed trait wx extends StObject
+  inline def wx: wx = "wx".asInstanceOf[wx]
+  
+  @js.native
+  sealed trait wxs extends StObject
+  inline def wxs: wxs = "wxs".asInstanceOf[wxs]
 }
-

@@ -1,31 +1,42 @@
 package typingsJapgolly.hooker
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IHookerOptions extends js.Object {
+trait IHookerOptions extends StObject {
+  
   var once: js.UndefOr[Boolean] = js.undefined
+  
   var passName: js.UndefOr[Boolean] = js.undefined
+  
   var post: js.UndefOr[HookerPostHookFunction] = js.undefined
+  
   var pre: js.UndefOr[HookerPreHookFunction] = js.undefined
 }
-
 object IHookerOptions {
-  @scala.inline
-  def apply(
-    once: js.UndefOr[Boolean] = js.undefined,
-    passName: js.UndefOr[Boolean] = js.undefined,
-    post: (/* result */ js.Any, /* repeated */ js.Any) => CallbackTo[IHookerPostHookResult | Unit] = null,
-    pre: /* repeated */ js.Any => CallbackTo[IHookerPreHookResult | Unit] = null
-  ): IHookerOptions = {
+  
+  inline def apply(): IHookerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
-    if (!js.isUndefined(passName)) __obj.updateDynamic("passName")(passName.asInstanceOf[js.Any])
-    if (post != null) __obj.updateDynamic("post")(js.Any.fromFunction2((t0: /* result */ js.Any, t1: /* repeated */ js.Any) => post(t0, t1).runNow()))
-    if (pre != null) __obj.updateDynamic("pre")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => pre(t0).runNow()))
     __obj.asInstanceOf[IHookerOptions]
   }
+  
+  extension [Self <: IHookerOptions](x: Self) {
+    
+    inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    
+    inline def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+    
+    inline def setPassName(value: Boolean): Self = StObject.set(x, "passName", value.asInstanceOf[js.Any])
+    
+    inline def setPassNameUndefined: Self = StObject.set(x, "passName", js.undefined)
+    
+    inline def setPost(value: HookerPostHookFunction): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    
+    inline def setPre(value: HookerPreHookFunction): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+  }
 }
-

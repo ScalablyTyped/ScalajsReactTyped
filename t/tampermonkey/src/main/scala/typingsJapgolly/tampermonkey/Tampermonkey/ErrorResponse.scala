@@ -1,29 +1,32 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
-import typingsJapgolly.std.Document_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorResponse extends ResponseBase {
+trait ErrorResponse
+  extends StObject
+     with ResponseBase {
+  
   val error: String
 }
-
 object ErrorResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     error: String,
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,
-    statusText: String,
-    responseXML: Document_ = null
+    statusText: String
   ): ErrorResponse = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-    if (responseXML != null) __obj.updateDynamic("responseXML")(responseXML.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], responseXML = null)
     __obj.asInstanceOf[ErrorResponse]
   }
+  
+  extension [Self <: ErrorResponse](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

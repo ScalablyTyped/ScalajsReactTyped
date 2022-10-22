@@ -2,16 +2,17 @@ package typingsJapgolly.draftJs.mod
 
 import typingsJapgolly.draftJs.mod.Draft.Model.Constants.DraftBlockType
 import typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.DraftInlineStyle
-import typingsJapgolly.immutable.Immutable.List
-import typingsJapgolly.immutable.Immutable.Map
+import typingsJapgolly.immutable.mod.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("draft-js", "ContentBlock")
 @js.native
-class ContentBlock ()
-  extends typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.ContentBlock {
+open class ContentBlock ()
+  extends StObject
+     with typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.ContentBlock {
+  
   /**
     * Execute a callback for every contiguous range of entities within the block.
     */
@@ -23,6 +24,7 @@ class ContentBlock ()
     ],
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit]
   ): Unit = js.native
+  
   /**
     * Execute a callback for every contiguous range of styles within the block.
     */
@@ -34,23 +36,31 @@ class ContentBlock ()
     ],
     callback: js.Function2[/* start */ Double, /* end */ Double, Unit]
   ): Unit = js.native
+  
   /* CompleteClass */
-  override def getCharacterList(): List[typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata] = js.native
+  override def getCharacterList(): typingsJapgolly.immutable.mod.List[typingsJapgolly.draftJs.mod.Draft.Model.ImmutableData.CharacterMetadata] = js.native
+  
   /* CompleteClass */
-  override def getData(): Map[_, _] = js.native
+  override def getData(): Map[Any, Any] = js.native
+  
   /* CompleteClass */
   override def getDepth(): Double = js.native
+  
   /* CompleteClass */
   override def getEntityAt(offset: Double): String = js.native
+  
   /* CompleteClass */
   override def getInlineStyleAt(offset: Double): DraftInlineStyle = js.native
+  
   /* CompleteClass */
   override def getKey(): String = js.native
+  
   /* CompleteClass */
   override def getLength(): Double = js.native
+  
   /* CompleteClass */
   override def getText(): String = js.native
+  
   /* CompleteClass */
   override def getType(): DraftBlockType = js.native
 }
-

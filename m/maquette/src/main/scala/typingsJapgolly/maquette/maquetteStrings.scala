@@ -1,45 +1,49 @@
 package typingsJapgolly.maquette
 
-import typingsJapgolly.maquette.interfacesMod.PerformanceLoggerEvent
+import typingsJapgolly.maquette.distInterfacesMod.PerformanceLoggerEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maquetteStrings {
-  @js.native
-  sealed trait `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` extends js.Object
   
   @js.native
-  sealed trait domEvent extends PerformanceLoggerEvent
+  sealed trait `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` extends StObject
+  inline def `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`: `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` = ("Hint: do not use `className`, use `class` instead").asInstanceOf[`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`]
   
   @js.native
-  sealed trait domEventProcessed extends PerformanceLoggerEvent
+  sealed trait domEvent
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def domEvent: domEvent = "domEvent".asInstanceOf[domEvent]
   
   @js.native
-  sealed trait patched extends PerformanceLoggerEvent
+  sealed trait domEventProcessed
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def domEventProcessed: domEventProcessed = "domEventProcessed".asInstanceOf[domEventProcessed]
   
   @js.native
-  sealed trait renderDone extends PerformanceLoggerEvent
+  sealed trait patched
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def patched: patched = "patched".asInstanceOf[patched]
   
   @js.native
-  sealed trait renderStart extends PerformanceLoggerEvent
+  sealed trait renderDone
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def renderDone: renderDone = "renderDone".asInstanceOf[renderDone]
   
   @js.native
-  sealed trait rendered extends PerformanceLoggerEvent
+  sealed trait renderStart
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def renderStart: renderStart = "renderStart".asInstanceOf[renderStart]
   
-  @scala.inline
-  def `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`: `HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead` = "Hint: do not use `className`, use `class` instead".asInstanceOf[`HintColon do not use GraveaccentclassNameGraveaccentComma use GraveaccentclassGraveaccent instead`]
-  @scala.inline
-  def domEvent: domEvent = "domEvent".asInstanceOf[domEvent]
-  @scala.inline
-  def domEventProcessed: domEventProcessed = "domEventProcessed".asInstanceOf[domEventProcessed]
-  @scala.inline
-  def patched: patched = "patched".asInstanceOf[patched]
-  @scala.inline
-  def renderDone: renderDone = "renderDone".asInstanceOf[renderDone]
-  @scala.inline
-  def renderStart: renderStart = "renderStart".asInstanceOf[renderStart]
-  @scala.inline
-  def rendered: rendered = "rendered".asInstanceOf[rendered]
+  @js.native
+  sealed trait rendered
+    extends StObject
+       with PerformanceLoggerEvent
+  inline def rendered: rendered = "rendered".asInstanceOf[rendered]
 }
-

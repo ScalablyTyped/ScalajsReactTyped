@@ -1,8 +1,8 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 //  Query Interface
@@ -14,24 +14,33 @@ import scala.scalajs.js.annotation._
   * Most of the methods accept options and use only the logger property of the options. That's why the most used
   * interface type for options in a method is separated here as another interface.
   */
-trait QueryInterfaceOptions extends js.Object {
+trait QueryInterfaceOptions extends StObject {
+  
   /**
     * A function that gets executed while running the query to log the sql.
     */
   var logging: js.UndefOr[Boolean | js.Function] = js.undefined
+  
   /**
     * An optional transaction to perform this query in
     */
   var transaction: js.UndefOr[Transaction] = js.undefined
 }
-
 object QueryInterfaceOptions {
-  @scala.inline
-  def apply(logging: Boolean | js.Function = null, transaction: Transaction = null): QueryInterfaceOptions = {
+  
+  inline def apply(): QueryInterfaceOptions = {
     val __obj = js.Dynamic.literal()
-    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (transaction != null) __obj.updateDynamic("transaction")(transaction.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryInterfaceOptions]
   }
+  
+  extension [Self <: QueryInterfaceOptions](x: Self) {
+    
+    inline def setLogging(value: Boolean | js.Function): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    
+    inline def setTransaction(value: Transaction): Self = StObject.set(x, "transaction", value.asInstanceOf[js.Any])
+    
+    inline def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
+  }
 }
-

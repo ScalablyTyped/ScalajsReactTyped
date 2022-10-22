@@ -3,55 +3,63 @@ package typingsJapgolly.bootstrapMenu
 import typingsJapgolly.bootstrapMenu.mod.BootstrapMenuEvent
 import typingsJapgolly.bootstrapMenu.mod.BootstrapMenuPosition
 import typingsJapgolly.bootstrapMenu.mod.BootstrapMenuSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapMenuStrings {
-  @js.native
-  sealed trait aboveLeft extends BootstrapMenuPosition
   
   @js.native
-  sealed trait aboveRight extends BootstrapMenuPosition
+  sealed trait aboveLeft
+    extends StObject
+       with BootstrapMenuPosition
+  inline def aboveLeft: aboveLeft = "aboveLeft".asInstanceOf[aboveLeft]
   
   @js.native
-  sealed trait belowLeft extends BootstrapMenuPosition
+  sealed trait aboveRight
+    extends StObject
+       with BootstrapMenuPosition
+  inline def aboveRight: aboveRight = "aboveRight".asInstanceOf[aboveRight]
   
   @js.native
-  sealed trait belowRight extends BootstrapMenuPosition
+  sealed trait belowLeft
+    extends StObject
+       with BootstrapMenuPosition
+  inline def belowLeft: belowLeft = "belowLeft".asInstanceOf[belowLeft]
   
   @js.native
-  sealed trait click extends BootstrapMenuEvent
+  sealed trait belowRight
+    extends StObject
+       with BootstrapMenuPosition
+  inline def belowRight: belowRight = "belowRight".asInstanceOf[belowRight]
   
   @js.native
-  sealed trait element extends BootstrapMenuSource
+  sealed trait click
+    extends StObject
+       with BootstrapMenuEvent
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait hover extends BootstrapMenuEvent
+  sealed trait element
+    extends StObject
+       with BootstrapMenuSource
+  inline def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait mouse extends BootstrapMenuSource
+  sealed trait hover
+    extends StObject
+       with BootstrapMenuEvent
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait `right-click` extends BootstrapMenuEvent
+  sealed trait mouse
+    extends StObject
+       with BootstrapMenuSource
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
-  @scala.inline
-  def aboveLeft: aboveLeft = "aboveLeft".asInstanceOf[aboveLeft]
-  @scala.inline
-  def aboveRight: aboveRight = "aboveRight".asInstanceOf[aboveRight]
-  @scala.inline
-  def belowLeft: belowLeft = "belowLeft".asInstanceOf[belowLeft]
-  @scala.inline
-  def belowRight: belowRight = "belowRight".asInstanceOf[belowRight]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def element: element = "element".asInstanceOf[element]
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
-  @scala.inline
-  def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
+  @js.native
+  sealed trait `right-click`
+    extends StObject
+       with BootstrapMenuEvent
+  inline def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
 }
-

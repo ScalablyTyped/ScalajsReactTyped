@@ -1,19 +1,23 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Permissions extends js.Object {
-  def query(permissionDesc: DevicePermissionDescriptor): js.Promise[PermissionStatus] = js.native
-  def query(permissionDesc: MidiPermissionDescriptor): js.Promise[PermissionStatus] = js.native
-  def query(permissionDesc: PermissionDescriptor): js.Promise[PermissionStatus] = js.native
-  def query(permissionDesc: PushPermissionDescriptor): js.Promise[PermissionStatus] = js.native
+trait Permissions extends StObject {
+  
+  /* standard dom */
+  def query(permissionDesc: PermissionDescriptor): js.Promise[PermissionStatus]
 }
-
-@JSGlobal("Permissions")
-@js.native
-object Permissions extends Instantiable0[Permissions]
-
+object Permissions {
+  
+  inline def apply(query: PermissionDescriptor => js.Promise[PermissionStatus]): Permissions = {
+    val __obj = js.Dynamic.literal(query = js.Any.fromFunction1(query))
+    __obj.asInstanceOf[Permissions]
+  }
+  
+  extension [Self <: Permissions](x: Self) {
+    
+    inline def setQuery(value: PermissionDescriptor => js.Promise[PermissionStatus]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+  }
+}

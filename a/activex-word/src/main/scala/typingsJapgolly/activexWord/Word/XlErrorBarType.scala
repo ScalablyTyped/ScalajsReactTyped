@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-4114`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4155`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
+import typingsJapgolly.activexWord.activexWordInts.`-4114`
+import typingsJapgolly.activexWord.activexWordInts.`-4155`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4114`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4155`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`-4114`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`-4155`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
 */
-trait XlErrorBarType extends js.Object
-
+trait XlErrorBarType extends StObject
 object XlErrorBarType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlErrorBarTypeCustom: `-4114` = this.cast(-4114)
-  @scala.inline
-  def xlErrorBarTypeFixedValue: `1` = this.cast(1)
-  @scala.inline
-  def xlErrorBarTypePercent: `2` = this.cast(2)
-  @scala.inline
-  def xlErrorBarTypeStDev: `-4155` = this.cast(-4155)
-  @scala.inline
-  def xlErrorBarTypeStError: `4` = this.cast(4)
+  
+  inline def xlErrorBarTypeCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
+  inline def xlErrorBarTypeFixedValue: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlErrorBarTypePercent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlErrorBarTypeStDev: `-4155` = -4155.asInstanceOf[`-4155`]
+  
+  inline def xlErrorBarTypeStError: `4` = 4.asInstanceOf[`4`]
 }
-

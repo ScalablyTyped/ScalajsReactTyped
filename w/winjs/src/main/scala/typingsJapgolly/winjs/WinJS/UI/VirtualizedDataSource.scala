@@ -1,24 +1,15 @@
 package typingsJapgolly.winjs.WinJS.UI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base class for a custom IListDataSource.
   **/
-@JSGlobal("WinJS.UI.VirtualizedDataSource")
 @js.native
-class VirtualizedDataSource[T] protected () extends js.Object {
-  //#region Constructors
-  /**
-    * Initializes the VirtualizedDataSource base class of a custom data source.
-    * @constructor
-    * @param listDataAdapter The object that supplies data to the VirtualizedDataSource.
-    * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
-    **/
-  def this(listDataAdapter: IListDataAdapter[T]) = this()
-  def this(listDataAdapter: IListDataAdapter[T], options: js.Any) = this()
+trait VirtualizedDataSource[T] extends StObject {
+  
   //#endregion Constructors
   //#region Events
   //#endregion Events
@@ -31,13 +22,15 @@ class VirtualizedDataSource[T] protected () extends js.Object {
     **/
   def addEventListener(eventName: String, eventHandler: js.Function): Unit = js.native
   def addEventListener(eventName: String, eventHandler: js.Function, useCapture: Boolean): Unit = js.native
+  
   /**
     * Raises an event of the specified type and with additional properties.
     * @param type The type (name) of the event.
     * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
     * @returns true if preventDefault was called on the event, otherwise false.
     **/
-  def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = js.native
+  def dispatchEvent(`type`: String, eventProperties: Any): Boolean = js.native
+  
   /**
     * Removes an event handler that the addEventListener method registered.
     * @param eventName The name of the event that the event handler is registered for. See the VirtualizedDataSource object page for a list of events.
@@ -47,16 +40,3 @@ class VirtualizedDataSource[T] protected () extends js.Object {
   def removeEventListener(eventName: String, eventCallback: js.Function): Unit = js.native
   def removeEventListener(eventName: String, eventCallback: js.Function, useCapture: Boolean): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("WinJS.UI.VirtualizedDataSource")
-@js.native
-object VirtualizedDataSource extends js.Object {
-  //#endregion Methods
-  //#region Properties
-  /**
-    * Indicates that the object is compatibile with declarative processing.
-    **/
-  var supportedForProcessing: Boolean = js.native
-}
-

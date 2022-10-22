@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Field names used for requesting contact information in a payment request.
@@ -14,20 +14,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.postalAddress
   - typingsJapgolly.applepayjs.applepayjsStrings.phoneticName
 */
-trait ApplePayContactField extends js.Object
-
+trait ApplePayContactField extends StObject
 object ApplePayContactField {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def email: typingsJapgolly.applepayjs.applepayjsStrings.email = this.cast("email")
-  @scala.inline
-  def name: typingsJapgolly.applepayjs.applepayjsStrings.name = this.cast("name")
-  @scala.inline
-  def phone: typingsJapgolly.applepayjs.applepayjsStrings.phone = this.cast("phone")
-  @scala.inline
-  def phoneticName: typingsJapgolly.applepayjs.applepayjsStrings.phoneticName = this.cast("phoneticName")
-  @scala.inline
-  def postalAddress: typingsJapgolly.applepayjs.applepayjsStrings.postalAddress = this.cast("postalAddress")
+  
+  inline def email: typingsJapgolly.applepayjs.applepayjsStrings.email = "email".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.email]
+  
+  inline def name: typingsJapgolly.applepayjs.applepayjsStrings.name = "name".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.name]
+  
+  inline def phone: typingsJapgolly.applepayjs.applepayjsStrings.phone = "phone".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.phone]
+  
+  inline def phoneticName: typingsJapgolly.applepayjs.applepayjsStrings.phoneticName = "phoneticName".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.phoneticName]
+  
+  inline def postalAddress: typingsJapgolly.applepayjs.applepayjsStrings.postalAddress = "postalAddress".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.postalAddress]
 }
-

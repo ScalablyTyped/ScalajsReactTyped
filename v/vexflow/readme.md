@@ -1,22 +1,22 @@
 
 # Scala.js typings for vexflow
 
-Typings are for version v1.2.88
+Typings are for version v1.2.93
 
 ## Library description:
-A JavaScript library for rendering music notation and guitar tablature
+A JavaScript library for rendering music notation and guitar tablature.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | vexflow |
-| Keywords           | music, notation, guitar, tablature |
-| # releases         | 5 |
-| # dependents       | 12 |
-| # downloads        | 22301 |
-| # stars            | 0 |
+| Keywords           | music, notation, piano, guitar, tablature |
+| # releases         | 11 |
+| # dependents       | 0.0 |
+| # downloads        | 8294.333333333334 |
+| # stars            | 3401.0 |
 
 ## Links
-- [Homepage](http://vexflow.com)
+- [Homepage](https://vexflow.com/)
 - [Bugs](https://github.com/0xfe/vexflow/issues)
 - [Repository](https://github.com/0xfe/vexflow)
 - [Npm](https://www.npmjs.com/package/vexflow)

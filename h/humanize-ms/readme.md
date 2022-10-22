@@ -10,10 +10,10 @@ transform humanize time to ms
 | ------------------ | :-------------: |
 | Full name          | humanize-ms |
 | Keywords           | humanize, ms |
-| # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 74984765 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.9416948333333332E7 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/node-modules/humanize-ms#readme)

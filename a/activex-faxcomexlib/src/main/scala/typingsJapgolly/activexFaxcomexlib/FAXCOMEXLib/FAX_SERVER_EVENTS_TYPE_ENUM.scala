@@ -1,60 +1,56 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`128`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`256`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`512`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`128`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`256`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`512`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+import typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line:no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`8`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`4`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`256`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`128`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`32`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`1`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`512`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`0`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`64`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`2`
-  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibNumbers.`16`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`8`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`4`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`256`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`128`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`32`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`1`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`512`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`0`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`64`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`2`
+  - typingsJapgolly.activexFaxcomexlib.activexFaxcomexlibInts.`16`
 */
-trait FAX_SERVER_EVENTS_TYPE_ENUM extends js.Object
-
+trait FAX_SERVER_EVENTS_TYPE_ENUM extends StObject
 object FAX_SERVER_EVENTS_TYPE_ENUM {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fsetACTIVITY: `8` = this.cast(8)
-  @scala.inline
-  def fsetCONFIG: `4` = this.cast(4)
-  @scala.inline
-  def fsetDEVICE_STATUS: `256` = this.cast(256)
-  @scala.inline
-  def fsetFXSSVC_ENDED: `128` = this.cast(128)
-  @scala.inline
-  def fsetINCOMING_CALL: `512` = this.cast(512)
-  @scala.inline
-  def fsetIN_ARCHIVE: `32` = this.cast(32)
-  @scala.inline
-  def fsetIN_QUEUE: `1` = this.cast(1)
-  @scala.inline
-  def fsetNONE: `0` = this.cast(0)
-  @scala.inline
-  def fsetOUT_ARCHIVE: `64` = this.cast(64)
-  @scala.inline
-  def fsetOUT_QUEUE: `2` = this.cast(2)
-  @scala.inline
-  def fsetQUEUE_STATE: `16` = this.cast(16)
+  
+  inline def fsetACTIVITY: `8` = 8.asInstanceOf[`8`]
+  
+  inline def fsetCONFIG: `4` = 4.asInstanceOf[`4`]
+  
+  inline def fsetDEVICE_STATUS: `256` = 256.asInstanceOf[`256`]
+  
+  inline def fsetFXSSVC_ENDED: `128` = 128.asInstanceOf[`128`]
+  
+  inline def fsetINCOMING_CALL: `512` = 512.asInstanceOf[`512`]
+  
+  inline def fsetIN_ARCHIVE: `32` = 32.asInstanceOf[`32`]
+  
+  inline def fsetIN_QUEUE: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fsetNONE: `0` = 0.asInstanceOf[`0`]
+  
+  inline def fsetOUT_ARCHIVE: `64` = 64.asInstanceOf[`64`]
+  
+  inline def fsetOUT_QUEUE: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fsetQUEUE_STATE: `16` = 16.asInstanceOf[`16`]
 }
-

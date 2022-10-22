@@ -1,50 +1,46 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.bizcharts.AnonX
-import typingsJapgolly.bizcharts.mod.ViewProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antvG2.libInterfaceMod.Datum
+import typingsJapgolly.antvG2.libInterfaceMod.ViewPadding
+import typingsJapgolly.bizcharts.anon.End
+import typingsJapgolly.bizcharts.libInterfaceMod.IViewProps
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object View {
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    data: js.Any = null,
-    end: AnonX = null,
-    filter: js.Array[_] = null,
-    id: String = null,
-    scale: StringDictionary[js.Any] = null,
-    start: AnonX = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ViewProps, typingsJapgolly.antDesignPro.bizchartsMod.View, Unit, ViewProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.bizcharts.mod.ViewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.bizchartsMod.View](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.bizcharts.mod.ViewProps])(children: _*)
-  }
   @JSImport("ant-design-pro/lib/Charts/bizcharts", "View")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.libChartsBizchartsMod.View] {
+    
+    inline def data(value: js.Array[Any]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: Any*): this.type = set("data", js.Array(value*))
+    
+    inline def filter(
+      value: (js.Array[
+          js.Tuple2[String, Null | (js.Function2[/* value */ Any, /* datum */ Datum, Boolean])]
+        ]) | (Record[String, js.Function2[/* value */ Any, /* datum */ Datum, Boolean]])
+    ): this.type = set("filter", value.asInstanceOf[js.Any])
+    
+    inline def filterVarargs(value: (js.Tuple2[String, Null | (js.Function2[/* value */ Any, /* datum */ Datum, Boolean])])*): this.type = set("filter", js.Array(value*))
+    
+    inline def padding(value: ViewPadding): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingVarargs(value: Double*): this.type = set("padding", js.Array(value*))
+    
+    inline def region(value: End): this.type = set("region", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: View.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IViewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

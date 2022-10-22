@@ -1,25 +1,42 @@
 package typingsJapgolly.sourceMap.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NullableMappedPosition extends js.Object {
+trait NullableMappedPosition extends StObject {
+  
   var column: Double | Null
+  
   var line: Double | Null
+  
   var name: String | Null
+  
   var source: String | Null
 }
-
 object NullableMappedPosition {
-  @scala.inline
-  def apply(column: Int | Double = null, line: Int | Double = null, name: String = null, source: String = null): NullableMappedPosition = {
-    val __obj = js.Dynamic.literal()
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+  
+  inline def apply(): NullableMappedPosition = {
+    val __obj = js.Dynamic.literal(column = null, line = null, name = null, source = null)
     __obj.asInstanceOf[NullableMappedPosition]
   }
+  
+  extension [Self <: NullableMappedPosition](x: Self) {
+    
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnNull: Self = StObject.set(x, "column", null)
+    
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineNull: Self = StObject.set(x, "line", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceNull: Self = StObject.set(x, "source", null)
+  }
 }
-

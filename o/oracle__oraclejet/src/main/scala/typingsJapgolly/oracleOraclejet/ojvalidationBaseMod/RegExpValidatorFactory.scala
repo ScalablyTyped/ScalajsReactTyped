@@ -1,21 +1,23 @@
 package typingsJapgolly.oracleOraclejet.ojvalidationBaseMod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.RegExpValidator.ValidatorOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegExpValidatorFactory extends js.Object {
+trait RegExpValidatorFactory extends StObject {
+  
   def createValidator(options: ValidatorOptions): RegExpValidator
 }
-
 object RegExpValidatorFactory {
-  @scala.inline
-  def apply(createValidator: ValidatorOptions => CallbackTo[RegExpValidator]): RegExpValidatorFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createValidator")(js.Any.fromFunction1((t0: typingsJapgolly.oracleOraclejet.ojvalidationBaseMod.RegExpValidator.ValidatorOptions) => createValidator(t0).runNow()))
+  
+  inline def apply(createValidator: ValidatorOptions => RegExpValidator): RegExpValidatorFactory = {
+    val __obj = js.Dynamic.literal(createValidator = js.Any.fromFunction1(createValidator))
     __obj.asInstanceOf[RegExpValidatorFactory]
   }
+  
+  extension [Self <: RegExpValidatorFactory](x: Self) {
+    
+    inline def setCreateValidator(value: ValidatorOptions => RegExpValidator): Self = StObject.set(x, "createValidator", js.Any.fromFunction1(value))
+  }
 }
-

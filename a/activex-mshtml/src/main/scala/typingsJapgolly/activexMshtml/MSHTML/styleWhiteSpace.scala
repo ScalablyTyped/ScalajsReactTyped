@@ -1,43 +1,39 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
 */
-trait styleWhiteSpace extends js.Object
-
+trait styleWhiteSpace extends StObject
 object styleWhiteSpace {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def styleWhiteSpaceNormal: `1` = this.cast(1)
-  @scala.inline
-  def styleWhiteSpaceNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleWhiteSpaceNowrap: `3` = this.cast(3)
-  @scala.inline
-  def styleWhiteSpacePre: `2` = this.cast(2)
-  @scala.inline
-  def styleWhiteSpacePreline: `4` = this.cast(4)
-  @scala.inline
-  def styleWhiteSpacePrewrap: `5` = this.cast(5)
-  @scala.inline
-  def styleWhiteSpace_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def styleWhiteSpaceNormal: `1` = 1.asInstanceOf[`1`]
+  
+  inline def styleWhiteSpaceNotSet: `0` = 0.asInstanceOf[`0`]
+  
+  inline def styleWhiteSpaceNowrap: `3` = 3.asInstanceOf[`3`]
+  
+  inline def styleWhiteSpacePre: `2` = 2.asInstanceOf[`2`]
+  
+  inline def styleWhiteSpacePreline: `4` = 4.asInstanceOf[`4`]
+  
+  inline def styleWhiteSpacePrewrap: `5` = 5.asInstanceOf[`5`]
+  
+  inline def styleWhiteSpace_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

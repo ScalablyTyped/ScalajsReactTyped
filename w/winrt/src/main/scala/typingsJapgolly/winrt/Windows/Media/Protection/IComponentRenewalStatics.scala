@@ -1,23 +1,25 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IComponentRenewalStatics extends js.Object {
+trait IComponentRenewalStatics extends StObject {
+  
   def renewSystemComponentsAsync(information: RevocationAndRenewalInformation): IAsyncOperationWithProgress[RenewalStatus, Double]
 }
-
 object IComponentRenewalStatics {
-  @scala.inline
-  def apply(
-    renewSystemComponentsAsync: RevocationAndRenewalInformation => CallbackTo[IAsyncOperationWithProgress[RenewalStatus, Double]]
+  
+  inline def apply(
+    renewSystemComponentsAsync: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]
   ): IComponentRenewalStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renewSystemComponentsAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Media.Protection.RevocationAndRenewalInformation) => renewSystemComponentsAsync(t0).runNow()))
+    val __obj = js.Dynamic.literal(renewSystemComponentsAsync = js.Any.fromFunction1(renewSystemComponentsAsync))
     __obj.asInstanceOf[IComponentRenewalStatics]
   }
+  
+  extension [Self <: IComponentRenewalStatics](x: Self) {
+    
+    inline def setRenewSystemComponentsAsync(value: RevocationAndRenewalInformation => IAsyncOperationWithProgress[RenewalStatus, Double]): Self = StObject.set(x, "renewSystemComponentsAsync", js.Any.fromFunction1(value))
+  }
 }
-

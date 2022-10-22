@@ -1,11 +1,12 @@
 package typingsJapgolly.angularCore.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AfterContentInit extends js.Object {
+trait AfterContentInit extends StObject {
+  
   /**
     * A callback method that is invoked immediately after
     * Angular has completed initialization of all of the directive's
@@ -14,13 +15,15 @@ trait AfterContentInit extends js.Object {
     */
   def ngAfterContentInit(): Unit
 }
-
 object AfterContentInit {
-  @scala.inline
-  def apply(ngAfterContentInit: Callback): AfterContentInit = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ngAfterContentInit")(ngAfterContentInit.toJsFn)
+  
+  inline def apply(ngAfterContentInit: Callback): AfterContentInit = {
+    val __obj = js.Dynamic.literal(ngAfterContentInit = ngAfterContentInit.toJsFn)
     __obj.asInstanceOf[AfterContentInit]
   }
+  
+  extension [Self <: AfterContentInit](x: Self) {
+    
+    inline def setNgAfterContentInit(value: Callback): Self = StObject.set(x, "ngAfterContentInit", value.toJsFn)
+  }
 }
-

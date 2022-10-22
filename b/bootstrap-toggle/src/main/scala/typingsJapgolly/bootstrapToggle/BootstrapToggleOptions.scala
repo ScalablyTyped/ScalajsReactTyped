@@ -1,42 +1,70 @@
 package typingsJapgolly.bootstrapToggle
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapToggleOptions extends js.Object {
+trait BootstrapToggleOptions extends StObject {
+  
   var height: js.UndefOr[Double | String | Null] = js.undefined
+  
   var off: js.UndefOr[String] = js.undefined
+  
   var offstyle: js.UndefOr[String] = js.undefined
+  
   var on: js.UndefOr[String] = js.undefined
+  
   var onstyle: js.UndefOr[String] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double | String | Null] = js.undefined
 }
-
 object BootstrapToggleOptions {
-  @scala.inline
-  def apply(
-    height: Double | String = null,
-    off: String = null,
-    offstyle: String = null,
-    on: String = null,
-    onstyle: String = null,
-    size: String = null,
-    style: String = null,
-    width: Double | String = null
-  ): BootstrapToggleOptions = {
+  
+  inline def apply(): BootstrapToggleOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (off != null) __obj.updateDynamic("off")(off.asInstanceOf[js.Any])
-    if (offstyle != null) __obj.updateDynamic("offstyle")(offstyle.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (onstyle != null) __obj.updateDynamic("onstyle")(onstyle.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapToggleOptions]
   }
+  
+  extension [Self <: BootstrapToggleOptions](x: Self) {
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightNull: Self = StObject.set(x, "height", null)
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setOff(value: String): Self = StObject.set(x, "off", value.asInstanceOf[js.Any])
+    
+    inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
+    
+    inline def setOffstyle(value: String): Self = StObject.set(x, "offstyle", value.asInstanceOf[js.Any])
+    
+    inline def setOffstyleUndefined: Self = StObject.set(x, "offstyle", js.undefined)
+    
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setOnstyle(value: String): Self = StObject.set(x, "onstyle", value.asInstanceOf[js.Any])
+    
+    inline def setOnstyleUndefined: Self = StObject.set(x, "onstyle", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthNull: Self = StObject.set(x, "width", null)
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

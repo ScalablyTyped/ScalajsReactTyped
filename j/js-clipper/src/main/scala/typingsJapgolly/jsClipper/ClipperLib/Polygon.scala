@@ -1,13 +1,7 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
-import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ClipperLib.Polygon")
-@js.native
-class Polygon () extends js.Object {
-  def this(poly: ArrayLike[IntPoint]) = this()
-}
-
+trait Polygon extends StObject

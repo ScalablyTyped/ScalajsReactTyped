@@ -1,21 +1,23 @@
 package typingsJapgolly.mendixmodelsdk.mod.domainmodels
 
-import typingsJapgolly.mendixmodelsdk.domainmodelsMod.StructureVersionInfo
-import typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenDomainmodelsMod.StructureVersionInfo
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
   *
-  * In version 8.2.0: introduced
+  * @ignore
+  *
+  * In version 7.18.0: introduced
   */
-@JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument")
 @js.native
-abstract class RemoteEntitySourceDocument protected ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.domainmodels.RemoteEntitySourceDocument {
+open class RemoteEntitySourceDocument protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.domainmodels.RemoteEntitySourceDocument {
   def this(
     model: AbstractModel,
     structureTypeName: String,
@@ -24,12 +26,21 @@ abstract class RemoteEntitySourceDocument protected ()
     container: IFolderBase
   ) = this()
 }
-
-/* static members */
-@JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument")
-@js.native
-object RemoteEntitySourceDocument extends js.Object {
-  var structureTypeName: String = js.native
-  var versionInfo: StructureVersionInfo = js.native
+object RemoteEntitySourceDocument {
+  
+  @JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument.structureTypeName")
+  @js.native
+  def structureTypeName: String = js.native
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "domainmodels.RemoteEntitySourceDocument.versionInfo")
+  @js.native
+  def versionInfo: StructureVersionInfo = js.native
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }
-

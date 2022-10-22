@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.codestarconnectionsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsCodestarconnectionsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "CodeStarconnections")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class CodeStarconnections ()
-  extends typingsJapgolly.awsSdk.allMod.CodeStarconnections {
+open class CodeStarconnections ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.CodeStarconnections {
   def this(options: ClientConfiguration) = this()
 }
-

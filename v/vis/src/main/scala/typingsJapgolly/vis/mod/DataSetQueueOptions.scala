@@ -1,10 +1,11 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSetQueueOptions extends js.Object {
+trait DataSetQueueOptions extends StObject {
+  
   /**
     * Queue data changes ('add', 'update', 'remove') and flush them at once.
     * The queue can be flushed manually by calling DataSet.flush(),
@@ -16,15 +17,19 @@ trait DataSetQueueOptions extends js.Object {
     * max: number - When the queue exceeds the given maximum number of entries, the queue is flushed automatically. Default value is Infinity.
     * Default value is Infinity.
     */
-  var queue: js.UndefOr[js.Any | Boolean] = js.undefined
+  var queue: js.UndefOr[Any | Boolean] = js.undefined
 }
-
 object DataSetQueueOptions {
-  @scala.inline
-  def apply(queue: js.Any | Boolean = null): DataSetQueueOptions = {
+  
+  inline def apply(): DataSetQueueOptions = {
     val __obj = js.Dynamic.literal()
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSetQueueOptions]
   }
+  
+  extension [Self <: DataSetQueueOptions](x: Self) {
+    
+    inline def setQueue(value: Any | Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+  }
 }
-

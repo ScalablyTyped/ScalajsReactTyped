@@ -1,9 +1,10 @@
-package typingsJapgolly.mailgunJs
+package typingsJapgolly.mailgunJs.mod
 
+import typingsJapgolly.node.NodeJS.ReadWriteStream
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AttachmentData = java.lang.String | typingsJapgolly.node.Buffer | typingsJapgolly.node.NodeJS.ReadWriteStream | typingsJapgolly.mailgunJs.mod.Attachment
-}
+
+type AttachmentData = String | Buffer | ReadWriteStream | Attachment

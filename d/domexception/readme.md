@@ -1,7 +1,7 @@
 
 # Scala.js typings for domexception
 
-Typings are for version 2.0
+Typings are for version 4.0
 
 ## Library description:
 An implementation of the DOMException class from browsers
@@ -10,10 +10,10 @@ An implementation of the DOMException class from browsers
 | ------------------ | :-------------: |
 | Full name          | domexception |
 | Keywords           | dom, webidl, web idl, domexception, error, exception |
-| # releases         | 4 |
-| # dependents       | 46 |
-| # downloads        | 190838894 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 7.5777083E7 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/jsdom/domexception#readme)

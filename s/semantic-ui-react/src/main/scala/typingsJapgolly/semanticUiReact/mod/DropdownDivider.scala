@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.facade.React.ComponentClassP
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentClass
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.dropdownDividerMod.DropdownDividerProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesDropdownDropdownDividerMod.DropdownDividerProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "DropdownDivider")
 @js.native
-class DropdownDivider protected ()
-  extends Component[DropdownDividerProps, ComponentState, js.Any] {
+open class DropdownDivider protected ()
+  extends Component[DropdownDividerProps, js.Object, Any] {
   def this(props: DropdownDividerProps) = this()
-  def this(props: DropdownDividerProps, context: js.Any) = this()
+  def this(props: DropdownDividerProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "DropdownDivider")
-@js.native
-object DropdownDivider extends TopLevel[ComponentClass[DropdownDividerProps, ComponentState]]
-
+object DropdownDivider {
+  
+  inline def apply: ComponentClassP[DropdownDividerProps & js.Object] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownDivider").asInstanceOf[ComponentClassP[DropdownDividerProps & js.Object]]
+}

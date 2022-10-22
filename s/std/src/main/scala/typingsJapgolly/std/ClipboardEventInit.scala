@@ -1,27 +1,29 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClipboardEventInit extends EventInit {
-  var clipboardData: js.UndefOr[org.scalajs.dom.raw.DataTransfer | Null] = js.undefined
+trait ClipboardEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var clipboardData: js.UndefOr[org.scalajs.dom.DataTransfer | Null] = js.undefined
 }
-
 object ClipboardEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    clipboardData: org.scalajs.dom.raw.DataTransfer = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): ClipboardEventInit = {
+  
+  inline def apply(): ClipboardEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (clipboardData != null) __obj.updateDynamic("clipboardData")(clipboardData.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClipboardEventInit]
   }
+  
+  extension [Self <: ClipboardEventInit](x: Self) {
+    
+    inline def setClipboardData(value: org.scalajs.dom.DataTransfer): Self = StObject.set(x, "clipboardData", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardDataNull: Self = StObject.set(x, "clipboardData", null)
+    
+    inline def setClipboardDataUndefined: Self = StObject.set(x, "clipboardData", js.undefined)
+  }
 }
-

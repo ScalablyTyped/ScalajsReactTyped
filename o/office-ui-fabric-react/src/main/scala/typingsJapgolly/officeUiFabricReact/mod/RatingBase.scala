@@ -1,21 +1,25 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.ratingTypesMod.IRatingProps
+import typingsJapgolly.officeUiFabricReact.libComponentsRatingRatingDottypesMod.IRatingProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "RatingBase")
 @js.native
-class RatingBase protected ()
+open class RatingBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libRatingMod.RatingBase {
   def this(props: IRatingProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "RatingBase")
-@js.native
-object RatingBase extends js.Object {
-  var defaultProps: IRatingProps = js.native
+object RatingBase {
+  
+  @JSImport("office-ui-fabric-react", "RatingBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "RatingBase.defaultProps")
+  @js.native
+  def defaultProps: IRatingProps = js.native
+  inline def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

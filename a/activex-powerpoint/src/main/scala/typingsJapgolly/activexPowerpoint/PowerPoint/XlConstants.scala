@@ -1,213 +1,209 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4099`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4103`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4105`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4107`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4108`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4111`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4117`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4124`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4125`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4126`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4127`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4130`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4131`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4134`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4142`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4152`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4160`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4099`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4103`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4105`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4107`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4108`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4111`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4117`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4124`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4125`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4126`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4127`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4130`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4131`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4134`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4142`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4152`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4160`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4099`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4103`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4105`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4107`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4108`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`9`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4111`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4114`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4117`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4124`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4125`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4126`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4127`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4130`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4131`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4134`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4142`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4152`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-4160`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4099`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4103`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4105`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4107`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4108`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`9`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4111`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4114`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4117`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4124`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4125`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4126`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4127`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4130`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4131`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4134`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4142`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4152`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-4160`
 */
-trait XlConstants extends js.Object
-
+trait XlConstants extends StObject
 object XlConstants {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xl3DBar: `-4099` = this.cast(-4099)
-  @scala.inline
-  def xl3DSurface: `-4103` = this.cast(-4103)
-  @scala.inline
-  def xlAbove: `0` = this.cast(0)
-  @scala.inline
-  def xlAutomatic: `-4105` = this.cast(-4105)
-  @scala.inline
-  def xlBar: `2` = this.cast(2)
-  @scala.inline
-  def xlBelow: `1` = this.cast(1)
-  @scala.inline
-  def xlBoth: `1` = this.cast(1)
-  @scala.inline
-  def xlBottom: `-4107` = this.cast(-4107)
-  @scala.inline
-  def xlCenter: `-4108` = this.cast(-4108)
-  @scala.inline
-  def xlChecker: `9` = this.cast(9)
-  @scala.inline
-  def xlCircle: `8` = this.cast(8)
-  @scala.inline
-  def xlColumn: `3` = this.cast(3)
-  @scala.inline
-  def xlCombination: `-4111` = this.cast(-4111)
-  @scala.inline
-  def xlCorner: `2` = this.cast(2)
-  @scala.inline
-  def xlCrissCross: `16` = this.cast(16)
-  @scala.inline
-  def xlCross: `4` = this.cast(4)
-  @scala.inline
-  def xlCustom: `-4114` = this.cast(-4114)
-  @scala.inline
-  def xlDefaultAutoFormat: `-1` = this.cast(-1)
-  @scala.inline
-  def xlDiamond: `2` = this.cast(2)
-  @scala.inline
-  def xlDistributed: `-4117` = this.cast(-4117)
-  @scala.inline
-  def xlFill: `5` = this.cast(5)
-  @scala.inline
-  def xlFixedValue: `1` = this.cast(1)
-  @scala.inline
-  def xlGeneral: `1` = this.cast(1)
-  @scala.inline
-  def xlGray16: `17` = this.cast(17)
-  @scala.inline
-  def xlGray25: `-4124` = this.cast(-4124)
-  @scala.inline
-  def xlGray50: `-4125` = this.cast(-4125)
-  @scala.inline
-  def xlGray75: `-4126` = this.cast(-4126)
-  @scala.inline
-  def xlGray8: `18` = this.cast(18)
-  @scala.inline
-  def xlGrid: `15` = this.cast(15)
-  @scala.inline
-  def xlHigh: `-4127` = this.cast(-4127)
-  @scala.inline
-  def xlInside: `2` = this.cast(2)
-  @scala.inline
-  def xlJustify: `-4130` = this.cast(-4130)
-  @scala.inline
-  def xlLeft: `-4131` = this.cast(-4131)
-  @scala.inline
-  def xlLightDown: `13` = this.cast(13)
-  @scala.inline
-  def xlLightHorizontal: `11` = this.cast(11)
-  @scala.inline
-  def xlLightUp: `14` = this.cast(14)
-  @scala.inline
-  def xlLightVertical: `12` = this.cast(12)
-  @scala.inline
-  def xlLow: `-4134` = this.cast(-4134)
-  @scala.inline
-  def xlMaximum: `2` = this.cast(2)
-  @scala.inline
-  def xlMinimum: `4` = this.cast(4)
-  @scala.inline
-  def xlMinusValues: `3` = this.cast(3)
-  @scala.inline
-  def xlNextToAxis: `4` = this.cast(4)
-  @scala.inline
-  def xlNone: `-4142` = this.cast(-4142)
-  @scala.inline
-  def xlOpaque: `3` = this.cast(3)
-  @scala.inline
-  def xlOutside: `3` = this.cast(3)
-  @scala.inline
-  def xlPercent: `2` = this.cast(2)
-  @scala.inline
-  def xlPlus: `9` = this.cast(9)
-  @scala.inline
-  def xlPlusValues: `2` = this.cast(2)
-  @scala.inline
-  def xlRight: `-4152` = this.cast(-4152)
-  @scala.inline
-  def xlScale: `3` = this.cast(3)
-  @scala.inline
-  def xlSemiGray75: `10` = this.cast(10)
-  @scala.inline
-  def xlShowLabel: `4` = this.cast(4)
-  @scala.inline
-  def xlShowLabelAndPercent: `5` = this.cast(5)
-  @scala.inline
-  def xlShowPercent: `3` = this.cast(3)
-  @scala.inline
-  def xlShowValue: `2` = this.cast(2)
-  @scala.inline
-  def xlSingle: `2` = this.cast(2)
-  @scala.inline
-  def xlSolid: `1` = this.cast(1)
-  @scala.inline
-  def xlSquare: `1` = this.cast(1)
-  @scala.inline
-  def xlStError: `4` = this.cast(4)
-  @scala.inline
-  def xlStar: `5` = this.cast(5)
-  @scala.inline
-  def xlTop: `-4160` = this.cast(-4160)
-  @scala.inline
-  def xlTransparent: `2` = this.cast(2)
-  @scala.inline
-  def xlTriangle: `3` = this.cast(3)
+  
+  inline def xl3DBar: `-4099` = -4099.asInstanceOf[`-4099`]
+  
+  inline def xl3DSurface: `-4103` = -4103.asInstanceOf[`-4103`]
+  
+  inline def xlAbove: `0` = 0.asInstanceOf[`0`]
+  
+  inline def xlAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  
+  inline def xlBar: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlBelow: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlBoth: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlBottom: `-4107` = -4107.asInstanceOf[`-4107`]
+  
+  inline def xlCenter: `-4108` = -4108.asInstanceOf[`-4108`]
+  
+  inline def xlChecker: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlCircle: `8` = 8.asInstanceOf[`8`]
+  
+  inline def xlColumn: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlCombination: `-4111` = -4111.asInstanceOf[`-4111`]
+  
+  inline def xlCorner: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlCrissCross: `16` = 16.asInstanceOf[`16`]
+  
+  inline def xlCross: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlCustom: `-4114` = -4114.asInstanceOf[`-4114`]
+  
+  inline def xlDefaultAutoFormat: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def xlDiamond: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
+  
+  inline def xlFill: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlFixedValue: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlGeneral: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlGray16: `17` = 17.asInstanceOf[`17`]
+  
+  inline def xlGray25: `-4124` = -4124.asInstanceOf[`-4124`]
+  
+  inline def xlGray50: `-4125` = -4125.asInstanceOf[`-4125`]
+  
+  inline def xlGray75: `-4126` = -4126.asInstanceOf[`-4126`]
+  
+  inline def xlGray8: `18` = 18.asInstanceOf[`18`]
+  
+  inline def xlGrid: `15` = 15.asInstanceOf[`15`]
+  
+  inline def xlHigh: `-4127` = -4127.asInstanceOf[`-4127`]
+  
+  inline def xlInside: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlJustify: `-4130` = -4130.asInstanceOf[`-4130`]
+  
+  inline def xlLeft: `-4131` = -4131.asInstanceOf[`-4131`]
+  
+  inline def xlLightDown: `13` = 13.asInstanceOf[`13`]
+  
+  inline def xlLightHorizontal: `11` = 11.asInstanceOf[`11`]
+  
+  inline def xlLightUp: `14` = 14.asInstanceOf[`14`]
+  
+  inline def xlLightVertical: `12` = 12.asInstanceOf[`12`]
+  
+  inline def xlLow: `-4134` = -4134.asInstanceOf[`-4134`]
+  
+  inline def xlMaximum: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlMinimum: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlMinusValues: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlNextToAxis: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  
+  inline def xlOpaque: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlOutside: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlPercent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlPlus: `9` = 9.asInstanceOf[`9`]
+  
+  inline def xlPlusValues: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlRight: `-4152` = -4152.asInstanceOf[`-4152`]
+  
+  inline def xlScale: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlSemiGray75: `10` = 10.asInstanceOf[`10`]
+  
+  inline def xlShowLabel: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlShowLabelAndPercent: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlShowPercent: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlShowValue: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlSingle: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlSolid: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlSquare: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlStError: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlStar: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlTop: `-4160` = -4160.asInstanceOf[`-4160`]
+  
+  inline def xlTransparent: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlTriangle: `3` = 3.asInstanceOf[`3`]
 }
-

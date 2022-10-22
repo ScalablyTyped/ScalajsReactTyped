@@ -2,127 +2,200 @@ package typingsJapgolly.meteor
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Console_
+import org.scalajs.dom.Console
+import typingsJapgolly.meteor.anon.Author
+import typingsJapgolly.meteor.anon.Bare
+import typingsJapgolly.meteor.anon.Cwd
+import typingsJapgolly.meteor.anon.DebugOnly
+import typingsJapgolly.meteor.anon.LaunchExternal
+import typingsJapgolly.meteor.anon.Name
+import typingsJapgolly.meteor.anon.Unordered
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/tools", JSImport.Namespace)
-@js.native
-object toolsMod extends js.Object {
+object toolsMod {
+  
+  @JSImport("meteor/tools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  object App {
+    
+    @JSImport("meteor/tools", "App")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def accessRule(pattern: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("accessRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def accessRule(pattern: String, options: LaunchExternal): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("accessRule")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def configurePlugin(id: String, config: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configurePlugin")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    inline def icons(icons: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("icons")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def info(options: Author): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def launchScreens(launchScreens: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("launchScreens")(launchScreens.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def setPreference(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPreference")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def setPreference(name: String, value: String, platform: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPreference")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  }
+  
+  object Assets {
+    
+    @JSImport("meteor/tools", "Assets")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def absoluteFilePath(assetPath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("absoluteFilePath")(assetPath.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def getBinary(assetPath: String): js.UndefOr[EJSON] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBinary")(assetPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EJSON]]
+    inline def getBinary(assetPath: String, asyncCallback: js.Function): js.UndefOr[EJSON] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBinary")(assetPath.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EJSON]]
+    
+    inline def getText(assetPath: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getText")(assetPath.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+    inline def getText(assetPath: String, asyncCallback: js.Function): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getText")(assetPath.asInstanceOf[js.Any], asyncCallback.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  }
+  
+  object Cordova {
+    
+    @JSImport("meteor/tools", "Cordova")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def depends(dependencies: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depends")(dependencies.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
+  
+  object Npm {
+    
+    @JSImport("meteor/tools", "Npm")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def depends(dependencies: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("depends")(dependencies.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def require(name: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("require")(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  }
+  
+  object Package {
+    
+    @JSImport("meteor/tools", "Package")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def describe(options: DebugOnly): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("describe")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def onTest(func: js.Function1[/* api */ typingsJapgolly.meteor.toolsMod.PackageAPI, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onTest")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def onUse(func: js.Function1[/* api */ typingsJapgolly.meteor.toolsMod.PackageAPI, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUse")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    inline def registerBuildPlugin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBuildPlugin")().asInstanceOf[Unit]
+    inline def registerBuildPlugin(options: Name): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerBuildPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  }
+  
+  @JSImport("meteor/tools", "console")
+  @js.native
+  def console: Console = js.native
+  inline def console_=(x: Console): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("console")(x.asInstanceOf[js.Any])
+  
+  inline def execFileAsync(command: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: js.Array[Any], options: Cwd): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def execFileAsync(command: String, args: Unit, options: Cwd): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileAsync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def execFileSync(command: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: js.Array[Any], options: Cwd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def execFileSync(command: String, args: Unit, options: Cwd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("execFileSync")(command.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @js.native
   trait PackageAPI
-    extends Instantiable0[typingsJapgolly.meteor.toolsMod.PackageAPI] {
+    extends StObject
+       with Instantiable0[typingsJapgolly.meteor.toolsMod.PackageAPI] {
+    
     def addAssets(filenames: String, architecture: String): Unit = js.native
     def addAssets(filenames: String, architecture: js.Array[String]): Unit = js.native
     def addAssets(filenames: js.Array[String], architecture: String): Unit = js.native
     def addAssets(filenames: js.Array[String], architecture: js.Array[String]): Unit = js.native
+    
     def addFiles(filenames: String): Unit = js.native
     def addFiles(filenames: String, architecture: String): Unit = js.native
-    def addFiles(filenames: String, architecture: String, options: AnonBare): Unit = js.native
+    def addFiles(filenames: String, architecture: String, options: Bare): Unit = js.native
     def addFiles(filenames: String, architecture: js.Array[String]): Unit = js.native
-    def addFiles(filenames: String, architecture: js.Array[String], options: AnonBare): Unit = js.native
+    def addFiles(filenames: String, architecture: js.Array[String], options: Bare): Unit = js.native
+    def addFiles(filenames: String, architecture: Unit, options: Bare): Unit = js.native
     def addFiles(filenames: js.Array[String]): Unit = js.native
     def addFiles(filenames: js.Array[String], architecture: String): Unit = js.native
-    def addFiles(filenames: js.Array[String], architecture: String, options: AnonBare): Unit = js.native
+    def addFiles(filenames: js.Array[String], architecture: String, options: Bare): Unit = js.native
     def addFiles(filenames: js.Array[String], architecture: js.Array[String]): Unit = js.native
-    def addFiles(filenames: js.Array[String], architecture: js.Array[String], options: AnonBare): Unit = js.native
-    def export(exportedObjects: String): Unit = js.native
-    def export(exportedObjects: String, architecture: String): Unit = js.native
-    def export(exportedObjects: String, architecture: String, exportOptions: js.Object): Unit = js.native
-    def export(exportedObjects: String, architecture: String, exportOptions: js.Object, testOnly: Boolean): Unit = js.native
-    def export(exportedObjects: String, architecture: js.Array[String]): Unit = js.native
-    def export(exportedObjects: String, architecture: js.Array[String], exportOptions: js.Object): Unit = js.native
-    def export(
+    def addFiles(filenames: js.Array[String], architecture: js.Array[String], options: Bare): Unit = js.native
+    def addFiles(filenames: js.Array[String], architecture: Unit, options: Bare): Unit = js.native
+    
+    def `export`(exportedObjects: String): Unit = js.native
+    def `export`(exportedObjects: String, architecture: String): Unit = js.native
+    def `export`(exportedObjects: String, architecture: String, exportOptions: js.Object): Unit = js.native
+    def `export`(exportedObjects: String, architecture: String, exportOptions: js.Object, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: String, architecture: String, exportOptions: Unit, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: String, architecture: js.Array[String]): Unit = js.native
+    def `export`(exportedObjects: String, architecture: js.Array[String], exportOptions: js.Object): Unit = js.native
+    def `export`(
       exportedObjects: String,
       architecture: js.Array[String],
       exportOptions: js.Object,
       testOnly: Boolean
     ): Unit = js.native
-    def export(exportedObjects: js.Array[String]): Unit = js.native
-    def export(exportedObjects: js.Array[String], architecture: String): Unit = js.native
-    def export(exportedObjects: js.Array[String], architecture: String, exportOptions: js.Object): Unit = js.native
-    def export(
+    def `export`(exportedObjects: String, architecture: js.Array[String], exportOptions: Unit, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: String, architecture: Unit, exportOptions: js.Object): Unit = js.native
+    def `export`(exportedObjects: String, architecture: Unit, exportOptions: js.Object, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: String, architecture: Unit, exportOptions: Unit, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: js.Array[String]): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: String): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: String, exportOptions: js.Object): Unit = js.native
+    def `export`(
       exportedObjects: js.Array[String],
       architecture: String,
       exportOptions: js.Object,
       testOnly: Boolean
     ): Unit = js.native
-    def export(exportedObjects: js.Array[String], architecture: js.Array[String]): Unit = js.native
-    def export(exportedObjects: js.Array[String], architecture: js.Array[String], exportOptions: js.Object): Unit = js.native
-    def export(
+    def `export`(exportedObjects: js.Array[String], architecture: String, exportOptions: Unit, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: js.Array[String]): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: js.Array[String], exportOptions: js.Object): Unit = js.native
+    def `export`(
       exportedObjects: js.Array[String],
       architecture: js.Array[String],
       exportOptions: js.Object,
       testOnly: Boolean
     ): Unit = js.native
+    def `export`(
+      exportedObjects: js.Array[String],
+      architecture: js.Array[String],
+      exportOptions: Unit,
+      testOnly: Boolean
+    ): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: Unit, exportOptions: js.Object): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: Unit, exportOptions: js.Object, testOnly: Boolean): Unit = js.native
+    def `export`(exportedObjects: js.Array[String], architecture: Unit, exportOptions: Unit, testOnly: Boolean): Unit = js.native
+    
     def imply(packageNames: String): Unit = js.native
     def imply(packageNames: String, architecture: String): Unit = js.native
     def imply(packageNames: String, architecture: js.Array[String]): Unit = js.native
     def imply(packageNames: js.Array[String]): Unit = js.native
     def imply(packageNames: js.Array[String], architecture: String): Unit = js.native
     def imply(packageNames: js.Array[String], architecture: js.Array[String]): Unit = js.native
+    
     def use(packageNames: String): Unit = js.native
     def use(packageNames: String, architecture: String): Unit = js.native
-    def use(packageNames: String, architecture: String, options: AnonUnordered): Unit = js.native
+    def use(packageNames: String, architecture: String, options: Unordered): Unit = js.native
     def use(packageNames: String, architecture: js.Array[String]): Unit = js.native
-    def use(packageNames: String, architecture: js.Array[String], options: AnonUnordered): Unit = js.native
+    def use(packageNames: String, architecture: js.Array[String], options: Unordered): Unit = js.native
+    def use(packageNames: String, architecture: Unit, options: Unordered): Unit = js.native
     def use(packageNames: js.Array[String]): Unit = js.native
     def use(packageNames: js.Array[String], architecture: String): Unit = js.native
-    def use(packageNames: js.Array[String], architecture: String, options: AnonUnordered): Unit = js.native
+    def use(packageNames: js.Array[String], architecture: String, options: Unordered): Unit = js.native
     def use(packageNames: js.Array[String], architecture: js.Array[String]): Unit = js.native
-    def use(packageNames: js.Array[String], architecture: js.Array[String], options: AnonUnordered): Unit = js.native
+    def use(packageNames: js.Array[String], architecture: js.Array[String], options: Unordered): Unit = js.native
+    def use(packageNames: js.Array[String], architecture: Unit, options: Unordered): Unit = js.native
+    
     def versionsFrom(meteorRelease: String): Unit = js.native
     def versionsFrom(meteorRelease: js.Array[String]): Unit = js.native
   }
-  
-  var console: Console_ = js.native
-  def execFileAsync(command: String): js.Any = js.native
-  def execFileAsync(command: String, args: js.Array[_]): js.Any = js.native
-  def execFileAsync(command: String, args: js.Array[_], options: AnonCwd): js.Any = js.native
-  def execFileSync(command: String): String = js.native
-  def execFileSync(command: String, args: js.Array[_]): String = js.native
-  def execFileSync(command: String, args: js.Array[_], options: AnonCwd): String = js.native
-  @js.native
-  object App extends js.Object {
-    def accessRule(pattern: String): Unit = js.native
-    def accessRule(pattern: String, options: AnonLaunchExternal): Unit = js.native
-    def configurePlugin(id: String, config: js.Object): Unit = js.native
-    def icons(icons: js.Object): Unit = js.native
-    def info(options: AnonAuthor): Unit = js.native
-    def launchScreens(launchScreens: js.Object): Unit = js.native
-    def setPreference(name: String, value: String): Unit = js.native
-    def setPreference(name: String, value: String, platform: String): Unit = js.native
-  }
-  
-  @js.native
-  object Assets extends js.Object {
-    def absoluteFilePath(assetPath: String): String = js.native
-    def getBinary(assetPath: String): js.UndefOr[EJSON] = js.native
-    def getBinary(assetPath: String, asyncCallback: js.Function): js.UndefOr[EJSON] = js.native
-    def getText(assetPath: String): js.UndefOr[String] = js.native
-    def getText(assetPath: String, asyncCallback: js.Function): js.UndefOr[String] = js.native
-  }
-  
-  @js.native
-  object Cordova extends js.Object {
-    def depends(dependencies: StringDictionary[String]): Unit = js.native
-  }
-  
-  @js.native
-  object Npm extends js.Object {
-    def depends(dependencies: StringDictionary[String]): Unit = js.native
-    def require(name: String): js.Any = js.native
-  }
-  
-  @js.native
-  object Package extends js.Object {
-    def describe(options: AnonDebugOnly): Unit = js.native
-    def onTest(func: js.Function1[/* api */ typingsJapgolly.meteor.toolsMod.PackageAPI, Unit]): Unit = js.native
-    def onUse(func: js.Function1[/* api */ typingsJapgolly.meteor.toolsMod.PackageAPI, Unit]): Unit = js.native
-    def registerBuildPlugin(): Unit = js.native
-    def registerBuildPlugin(options: AnonName): Unit = js.native
-  }
-  
 }
-

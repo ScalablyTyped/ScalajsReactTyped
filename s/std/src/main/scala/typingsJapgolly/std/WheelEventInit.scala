@@ -1,86 +1,48 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WheelEventInit extends MouseEventInit {
+trait WheelEventInit
+  extends StObject
+     with MouseEventInit {
+  
+  /* standard dom */
   var deltaMode: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var deltaX: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var deltaY: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var deltaZ: js.UndefOr[Double] = js.undefined
 }
-
 object WheelEventInit {
-  @scala.inline
-  def apply(
-    altKey: js.UndefOr[scala.Boolean] = js.undefined,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    button: Int | Double = null,
-    buttons: Int | Double = null,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    clientX: Int | Double = null,
-    clientY: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
-    deltaMode: Int | Double = null,
-    deltaX: Int | Double = null,
-    deltaY: Int | Double = null,
-    deltaZ: Int | Double = null,
-    detail: Int | Double = null,
-    metaKey: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierAltGraph: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierCapsLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFn: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
-    movementX: Int | Double = null,
-    movementY: Int | Double = null,
-    relatedTarget: org.scalajs.dom.raw.EventTarget = null,
-    screenX: Int | Double = null,
-    screenY: Int | Double = null,
-    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window_ = null
-  ): WheelEventInit = {
+  
+  inline def apply(): WheelEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (clientX != null) __obj.updateDynamic("clientX")(clientX.asInstanceOf[js.Any])
-    if (clientY != null) __obj.updateDynamic("clientY")(clientY.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
-    if (deltaMode != null) __obj.updateDynamic("deltaMode")(deltaMode.asInstanceOf[js.Any])
-    if (deltaX != null) __obj.updateDynamic("deltaX")(deltaX.asInstanceOf[js.Any])
-    if (deltaY != null) __obj.updateDynamic("deltaY")(deltaY.asInstanceOf[js.Any])
-    if (deltaZ != null) __obj.updateDynamic("deltaZ")(deltaZ.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierAltGraph)) __obj.updateDynamic("modifierAltGraph")(modifierAltGraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierCapsLock)) __obj.updateDynamic("modifierCapsLock")(modifierCapsLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFn)) __obj.updateDynamic("modifierFn")(modifierFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock.asInstanceOf[js.Any])
-    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
-    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
-    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget.asInstanceOf[js.Any])
-    if (screenX != null) __obj.updateDynamic("screenX")(screenX.asInstanceOf[js.Any])
-    if (screenY != null) __obj.updateDynamic("screenY")(screenY.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[WheelEventInit]
   }
+  
+  extension [Self <: WheelEventInit](x: Self) {
+    
+    inline def setDeltaMode(value: Double): Self = StObject.set(x, "deltaMode", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaModeUndefined: Self = StObject.set(x, "deltaMode", js.undefined)
+    
+    inline def setDeltaX(value: Double): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaXUndefined: Self = StObject.set(x, "deltaX", js.undefined)
+    
+    inline def setDeltaY(value: Double): Self = StObject.set(x, "deltaY", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaYUndefined: Self = StObject.set(x, "deltaY", js.undefined)
+    
+    inline def setDeltaZ(value: Double): Self = StObject.set(x, "deltaZ", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaZUndefined: Self = StObject.set(x, "deltaZ", js.undefined)
+  }
 }
-

@@ -1,53 +1,44 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextTrackReadyState extends js.Object
-
+sealed trait TextTrackReadyState extends StObject
 @JSGlobal("PlayerFramework.TextTrackReadyState")
 @js.native
-object TextTrackReadyState extends js.Object {
-  /**
-  		* The track failed to load.
-  		*/
-  @js.native
-  sealed trait error extends TextTrackReadyState
+object TextTrackReadyState extends StObject {
   
   /**
-  		* The track is loaded.
-  		*/
+    * The track failed to load.
+    */
   @js.native
-  sealed trait loaded extends TextTrackReadyState
+  sealed trait error
+    extends StObject
+       with TextTrackReadyState
   
   /**
-  		* The track is currently loading.
-  		*/
+    * The track is loaded.
+    */
   @js.native
-  sealed trait loading extends TextTrackReadyState
+  sealed trait loaded
+    extends StObject
+       with TextTrackReadyState
   
   /**
-  		* The track is unloaded.
-  		*/
+    * The track is currently loading.
+    */
   @js.native
-  sealed trait none extends TextTrackReadyState
+  sealed trait loading
+    extends StObject
+       with TextTrackReadyState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextTrackReadyState with Double] = js.native
-  /* 3 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 2 */ @js.native
-  object loaded extends TopLevel[loaded with Double]
-  
-  /* 1 */ @js.native
-  object loading extends TopLevel[loading with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  /**
+    * The track is unloaded.
+    */
+  @js.native
+  sealed trait none
+    extends StObject
+       with TextTrackReadyState
 }
-

@@ -1,20 +1,25 @@
 package typingsJapgolly.hummusRecipe.mod
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Metadata extends /* PagesIndex */ NumberDictionary[PageInfo] {
+trait Metadata
+  extends StObject
+     with /* PagesIndex */ NumberDictionary[PageInfo] {
+  
   var pages: Double
 }
-
 object Metadata {
-  @scala.inline
-  def apply(pages: Double, NumberDictionary: /* PagesIndex */ NumberDictionary[PageInfo] = null): Metadata = {
+  
+  inline def apply(pages: Double): Metadata = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any])
-    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[Metadata]
   }
+  
+  extension [Self <: Metadata](x: Self) {
+    
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,30 @@
 package typingsJapgolly.azdata.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResourceProvider extends js.Object {
+trait ResourceProvider extends StObject {
+  
   def createFirewallRule(account: Account, firewallruleInfo: FirewallRuleInfo): Thenable[CreateFirewallRuleResponse]
+  
   def handleFirewallRule(errorCode: Double, errorMessage: String, connectionTypeId: String): Thenable[HandleFirewallRuleResponse]
 }
-
 object ResourceProvider {
-  @scala.inline
-  def apply(
-    createFirewallRule: (Account, FirewallRuleInfo) => CallbackTo[Thenable[CreateFirewallRuleResponse]],
-    handleFirewallRule: (Double, String, String) => CallbackTo[Thenable[HandleFirewallRuleResponse]]
+  
+  inline def apply(
+    createFirewallRule: (Account, FirewallRuleInfo) => Thenable[CreateFirewallRuleResponse],
+    handleFirewallRule: (Double, String, String) => Thenable[HandleFirewallRuleResponse]
   ): ResourceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFirewallRule")(js.Any.fromFunction2((t0: typingsJapgolly.azdata.mod.Account, t1: typingsJapgolly.azdata.mod.FirewallRuleInfo) => createFirewallRule(t0, t1).runNow()))
-    __obj.updateDynamic("handleFirewallRule")(js.Any.fromFunction3((t0: scala.Double, t1: java.lang.String, t2: java.lang.String) => handleFirewallRule(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(createFirewallRule = js.Any.fromFunction2(createFirewallRule), handleFirewallRule = js.Any.fromFunction3(handleFirewallRule))
     __obj.asInstanceOf[ResourceProvider]
   }
+  
+  extension [Self <: ResourceProvider](x: Self) {
+    
+    inline def setCreateFirewallRule(value: (Account, FirewallRuleInfo) => Thenable[CreateFirewallRuleResponse]): Self = StObject.set(x, "createFirewallRule", js.Any.fromFunction2(value))
+    
+    inline def setHandleFirewallRule(value: (Double, String, String) => Thenable[HandleFirewallRuleResponse]): Self = StObject.set(x, "handleFirewallRule", js.Any.fromFunction3(value))
+  }
 }
-

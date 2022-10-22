@@ -1,13 +1,15 @@
 package typingsJapgolly.feathersjsPrimus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@feathersjs/primus", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(options: js.Any): js.Function0[Unit] = js.native
-  def default(options: js.Any, callback: js.Function1[/* primus */ js.Any, Unit]): js.Function0[Unit] = js.native
+object mod {
+  
+  @JSImport("@feathersjs/primus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(options: Any): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def default(options: Any, callback: js.Function1[/* primus */ Any, Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
 }
-

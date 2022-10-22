@@ -10,15 +10,12 @@ semaphore for node
 | ------------------ | :-------------: |
 | Full name          | semaphore |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 126 |
-| # downloads        | 4827945 |
-| # stars            | 6 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1521247.6666666667 |
+| # stars            | 103.0 |
 
 ## Links
-- [Homepage](https://github.com/abrkn/semaphore.js)
-- [Bugs](https://github.com/abrkn/semaphore.js/issues)
-- [Repository](https://github.com/abrkn/semaphore.js)
 - [Npm](https://www.npmjs.com/package/semaphore)
     
 

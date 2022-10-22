@@ -1,54 +1,44 @@
 package typingsJapgolly.mapnik
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapnikStrings {
-  @js.native
-  sealed trait DEFAULT extends js.Object
   
   @js.native
-  sealed trait FILTERED extends js.Object
+  sealed trait DEFAULT extends StObject
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
-  sealed trait FIXED extends js.Object
+  sealed trait FILTERED extends StObject
+  inline def FILTERED: FILTERED = "FILTERED".asInstanceOf[FILTERED]
   
   @js.native
-  sealed trait HUFFMAN_ONLY extends js.Object
+  sealed trait FIXED extends StObject
+  inline def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
   
   @js.native
-  sealed trait RLE extends js.Object
+  sealed trait HUFFMAN_ONLY extends StObject
+  inline def HUFFMAN_ONLY: HUFFMAN_ONLY = "HUFFMAN_ONLY".asInstanceOf[HUFFMAN_ONLY]
   
   @js.native
-  sealed trait jpeg extends js.Object
+  sealed trait RLE extends StObject
+  inline def RLE: RLE = "RLE".asInstanceOf[RLE]
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait jpeg extends StObject
+  inline def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
   
   @js.native
-  sealed trait tiff extends js.Object
+  sealed trait png extends StObject
+  inline def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait webp extends js.Object
+  sealed trait tiff extends StObject
+  inline def tiff: tiff = "tiff".asInstanceOf[tiff]
   
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  @scala.inline
-  def FILTERED: FILTERED = "FILTERED".asInstanceOf[FILTERED]
-  @scala.inline
-  def FIXED: FIXED = "FIXED".asInstanceOf[FIXED]
-  @scala.inline
-  def HUFFMAN_ONLY: HUFFMAN_ONLY = "HUFFMAN_ONLY".asInstanceOf[HUFFMAN_ONLY]
-  @scala.inline
-  def RLE: RLE = "RLE".asInstanceOf[RLE]
-  @scala.inline
-  def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
-  @scala.inline
-  def tiff: tiff = "tiff".asInstanceOf[tiff]
-  @scala.inline
-  def webp: webp = "webp".asInstanceOf[webp]
+  @js.native
+  sealed trait webp extends StObject
+  inline def webp: webp = "webp".asInstanceOf[webp]
 }
-

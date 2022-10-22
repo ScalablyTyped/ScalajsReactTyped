@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StreamedFileFailureMode extends js.Object
-
+sealed trait StreamedFileFailureMode extends StObject
 @JSGlobal("Windows.Storage.StreamedFileFailureMode")
 @js.native
-object StreamedFileFailureMode extends js.Object {
-  @js.native
-  sealed trait currentlyUnavailable extends StreamedFileFailureMode
+object StreamedFileFailureMode extends StObject {
   
   @js.native
-  sealed trait failed extends StreamedFileFailureMode
+  sealed trait currentlyUnavailable
+    extends StObject
+       with StreamedFileFailureMode
   
   @js.native
-  sealed trait incomplete extends StreamedFileFailureMode
+  sealed trait failed
+    extends StObject
+       with StreamedFileFailureMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StreamedFileFailureMode with Double] = js.native
-  /* 1 */ @js.native
-  object currentlyUnavailable extends TopLevel[currentlyUnavailable with Double]
-  
-  /* 0 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 2 */ @js.native
-  object incomplete extends TopLevel[incomplete with Double]
-  
+  @js.native
+  sealed trait incomplete
+    extends StObject
+       with StreamedFileFailureMode
 }
-

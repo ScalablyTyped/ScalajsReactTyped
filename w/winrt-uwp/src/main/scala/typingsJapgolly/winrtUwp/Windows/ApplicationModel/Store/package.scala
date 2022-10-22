@@ -1,10 +1,10 @@
-package typingsJapgolly.winrtUwp.Windows.ApplicationModel
+package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Store
 
+import typingsJapgolly.winrtUwp.Windows.WinRTEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Store {
-  /** Represents the method that will handle the LicenseChanged event. */
-  type LicenseChangedEventHandler = js.Function1[/* ev */ typingsJapgolly.winrtUwp.Windows.WinRTEvent[scala.Unit], scala.Unit]
-}
+
+/** Represents the method that will handle the LicenseChanged event. */
+type LicenseChangedEventHandler = js.Function1[/* ev */ WinRTEvent[Unit], Unit]

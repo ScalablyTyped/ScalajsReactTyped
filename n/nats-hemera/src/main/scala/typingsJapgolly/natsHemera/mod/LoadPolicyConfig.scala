@@ -1,27 +1,36 @@
 package typingsJapgolly.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadPolicyConfig extends js.Object {
+trait LoadPolicyConfig extends StObject {
+  
   var maxEventLoopDelay: js.UndefOr[Double] = js.undefined
+  
   var maxHeapUsedBytes: js.UndefOr[Double] = js.undefined
+  
   var maxRssBytes: js.UndefOr[Double] = js.undefined
 }
-
 object LoadPolicyConfig {
-  @scala.inline
-  def apply(
-    maxEventLoopDelay: Int | Double = null,
-    maxHeapUsedBytes: Int | Double = null,
-    maxRssBytes: Int | Double = null
-  ): LoadPolicyConfig = {
+  
+  inline def apply(): LoadPolicyConfig = {
     val __obj = js.Dynamic.literal()
-    if (maxEventLoopDelay != null) __obj.updateDynamic("maxEventLoopDelay")(maxEventLoopDelay.asInstanceOf[js.Any])
-    if (maxHeapUsedBytes != null) __obj.updateDynamic("maxHeapUsedBytes")(maxHeapUsedBytes.asInstanceOf[js.Any])
-    if (maxRssBytes != null) __obj.updateDynamic("maxRssBytes")(maxRssBytes.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadPolicyConfig]
   }
+  
+  extension [Self <: LoadPolicyConfig](x: Self) {
+    
+    inline def setMaxEventLoopDelay(value: Double): Self = StObject.set(x, "maxEventLoopDelay", value.asInstanceOf[js.Any])
+    
+    inline def setMaxEventLoopDelayUndefined: Self = StObject.set(x, "maxEventLoopDelay", js.undefined)
+    
+    inline def setMaxHeapUsedBytes(value: Double): Self = StObject.set(x, "maxHeapUsedBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeapUsedBytesUndefined: Self = StObject.set(x, "maxHeapUsedBytes", js.undefined)
+    
+    inline def setMaxRssBytes(value: Double): Self = StObject.set(x, "maxRssBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRssBytesUndefined: Self = StObject.set(x, "maxRssBytes", js.undefined)
+  }
 }
-

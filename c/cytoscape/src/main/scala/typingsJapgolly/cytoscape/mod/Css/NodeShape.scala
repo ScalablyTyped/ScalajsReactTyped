@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The shape of the node’s body.
@@ -22,10 +22,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.heptagon
   - typingsJapgolly.cytoscape.cytoscapeStrings.octagon
   - typingsJapgolly.cytoscape.cytoscapeStrings.star
+  - typingsJapgolly.cytoscape.cytoscapeStrings.barrel
   - typingsJapgolly.cytoscape.cytoscapeStrings.diamond
   - typingsJapgolly.cytoscape.cytoscapeStrings.vee
   - typingsJapgolly.cytoscape.cytoscapeStrings.rhomboid
   - typingsJapgolly.cytoscape.cytoscapeStrings.polygon
+  - typingsJapgolly.cytoscape.cytoscapeStrings.tag
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-rectangle`
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-triangle`
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-diamond`
@@ -34,53 +36,62 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-heptagon`
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-octagon`
   - typingsJapgolly.cytoscape.cytoscapeStrings.`round-tag`
+  - typingsJapgolly.cytoscape.cytoscapeStrings.`cut-rectangle`
+  - typingsJapgolly.cytoscape.cytoscapeStrings.`bottom-round-rectangle`
+  - typingsJapgolly.cytoscape.cytoscapeStrings.`concave-hexagon`
 */
-trait NodeShape extends js.Object
-
+trait NodeShape extends StObject
 object NodeShape {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def diamond: typingsJapgolly.cytoscape.cytoscapeStrings.diamond = this.cast("diamond")
-  @scala.inline
-  def ellipse: typingsJapgolly.cytoscape.cytoscapeStrings.ellipse = this.cast("ellipse")
-  @scala.inline
-  def heptagon: typingsJapgolly.cytoscape.cytoscapeStrings.heptagon = this.cast("heptagon")
-  @scala.inline
-  def hexagon: typingsJapgolly.cytoscape.cytoscapeStrings.hexagon = this.cast("hexagon")
-  @scala.inline
-  def octagon: typingsJapgolly.cytoscape.cytoscapeStrings.octagon = this.cast("octagon")
-  @scala.inline
-  def pentagon: typingsJapgolly.cytoscape.cytoscapeStrings.pentagon = this.cast("pentagon")
-  @scala.inline
-  def polygon: typingsJapgolly.cytoscape.cytoscapeStrings.polygon = this.cast("polygon")
-  @scala.inline
-  def rectangle: typingsJapgolly.cytoscape.cytoscapeStrings.rectangle = this.cast("rectangle")
-  @scala.inline
-  def rhomboid: typingsJapgolly.cytoscape.cytoscapeStrings.rhomboid = this.cast("rhomboid")
-  @scala.inline
-  def `round-diamond`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-diamond` = this.cast("round-diamond")
-  @scala.inline
-  def `round-heptagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-heptagon` = this.cast("round-heptagon")
-  @scala.inline
-  def `round-hexagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-hexagon` = this.cast("round-hexagon")
-  @scala.inline
-  def `round-octagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-octagon` = this.cast("round-octagon")
-  @scala.inline
-  def `round-pentagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-pentagon` = this.cast("round-pentagon")
-  @scala.inline
-  def `round-rectangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-rectangle` = this.cast("round-rectangle")
-  @scala.inline
-  def `round-tag`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-tag` = this.cast("round-tag")
-  @scala.inline
-  def `round-triangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-triangle` = this.cast("round-triangle")
-  @scala.inline
-  def roundrectangle: typingsJapgolly.cytoscape.cytoscapeStrings.roundrectangle = this.cast("roundrectangle")
-  @scala.inline
-  def star: typingsJapgolly.cytoscape.cytoscapeStrings.star = this.cast("star")
-  @scala.inline
-  def triangle: typingsJapgolly.cytoscape.cytoscapeStrings.triangle = this.cast("triangle")
-  @scala.inline
-  def vee: typingsJapgolly.cytoscape.cytoscapeStrings.vee = this.cast("vee")
+  
+  inline def barrel: typingsJapgolly.cytoscape.cytoscapeStrings.barrel = "barrel".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.barrel]
+  
+  inline def `bottom-round-rectangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`bottom-round-rectangle` = "bottom-round-rectangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`bottom-round-rectangle`]
+  
+  inline def `concave-hexagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`concave-hexagon` = "concave-hexagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`concave-hexagon`]
+  
+  inline def `cut-rectangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`cut-rectangle` = "cut-rectangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`cut-rectangle`]
+  
+  inline def diamond: typingsJapgolly.cytoscape.cytoscapeStrings.diamond = "diamond".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.diamond]
+  
+  inline def ellipse: typingsJapgolly.cytoscape.cytoscapeStrings.ellipse = "ellipse".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.ellipse]
+  
+  inline def heptagon: typingsJapgolly.cytoscape.cytoscapeStrings.heptagon = "heptagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.heptagon]
+  
+  inline def hexagon: typingsJapgolly.cytoscape.cytoscapeStrings.hexagon = "hexagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.hexagon]
+  
+  inline def octagon: typingsJapgolly.cytoscape.cytoscapeStrings.octagon = "octagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.octagon]
+  
+  inline def pentagon: typingsJapgolly.cytoscape.cytoscapeStrings.pentagon = "pentagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.pentagon]
+  
+  inline def polygon: typingsJapgolly.cytoscape.cytoscapeStrings.polygon = "polygon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.polygon]
+  
+  inline def rectangle: typingsJapgolly.cytoscape.cytoscapeStrings.rectangle = "rectangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.rectangle]
+  
+  inline def rhomboid: typingsJapgolly.cytoscape.cytoscapeStrings.rhomboid = "rhomboid".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.rhomboid]
+  
+  inline def `round-diamond`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-diamond` = "round-diamond".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-diamond`]
+  
+  inline def `round-heptagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-heptagon` = "round-heptagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-heptagon`]
+  
+  inline def `round-hexagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-hexagon` = "round-hexagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-hexagon`]
+  
+  inline def `round-octagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-octagon` = "round-octagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-octagon`]
+  
+  inline def `round-pentagon`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-pentagon` = "round-pentagon".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-pentagon`]
+  
+  inline def `round-rectangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-rectangle` = "round-rectangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-rectangle`]
+  
+  inline def `round-tag`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-tag` = "round-tag".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-tag`]
+  
+  inline def `round-triangle`: typingsJapgolly.cytoscape.cytoscapeStrings.`round-triangle` = "round-triangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.`round-triangle`]
+  
+  inline def roundrectangle: typingsJapgolly.cytoscape.cytoscapeStrings.roundrectangle = "roundrectangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.roundrectangle]
+  
+  inline def star: typingsJapgolly.cytoscape.cytoscapeStrings.star = "star".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.star]
+  
+  inline def tag: typingsJapgolly.cytoscape.cytoscapeStrings.tag = "tag".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.tag]
+  
+  inline def triangle: typingsJapgolly.cytoscape.cytoscapeStrings.triangle = "triangle".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.triangle]
+  
+  inline def vee: typingsJapgolly.cytoscape.cytoscapeStrings.vee = "vee".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.vee]
 }
-

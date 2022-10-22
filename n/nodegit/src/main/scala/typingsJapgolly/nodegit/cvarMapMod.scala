@@ -1,18 +1,19 @@
 package typingsJapgolly.nodegit
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/cvar-map", JSImport.Namespace)
-@js.native
-object cvarMapMod extends js.Object {
+object cvarMapMod {
+  
+  @JSImport("nodegit/cvar-map", "CvarMap")
   @js.native
-  class CvarMap () extends js.Object {
+  open class CvarMap () extends StObject {
+    
     var cvarType: Double = js.native
+    
     var mapValue: Double = js.native
+    
     var strMatch: String = js.native
   }
-  
 }
-

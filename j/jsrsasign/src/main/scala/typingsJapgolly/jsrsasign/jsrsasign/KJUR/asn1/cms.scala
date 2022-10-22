@@ -1,25 +1,16 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.AnonArray
-import typingsJapgolly.jsrsasign.AnonCertString
-import typingsJapgolly.jsrsasign.AnonCerts
-import typingsJapgolly.jsrsasign.AnonCms
-import typingsJapgolly.jsrsasign.AnonE
-import typingsJapgolly.jsrsasign.AnonEciObj
-import typingsJapgolly.jsrsasign.AnonHex
-import typingsJapgolly.jsrsasign.AnonIsValid
-import typingsJapgolly.jsrsasign.AnonIssuer
-import typingsJapgolly.jsrsasign.AnonName
-import typingsJapgolly.jsrsasign.AnonOidString
-import typingsJapgolly.jsrsasign.AnonSorted
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.jsrsasign.anon.E
+import typingsJapgolly.jsrsasign.anon.EciObj
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.crypto.DSA
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.crypto.ECDSA
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typingsJapgolly.jsrsasign.jsrsasign.RSAKey
-import typingsJapgolly.jsrsasign.jsrsasignStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for Cryptographic Message Syntax(CMS)
@@ -50,9 +41,8 @@ import scala.scalajs.js.annotation._
   * - `KJUR.asn1.cms.SigningCertificate`
   * - `KJUR.asn1.cms.SigningCertificateV2`
   */
-@JSGlobal("jsrsasign.KJUR.asn1.cms")
-@js.native
-object cms extends js.Object {
+object cms {
+  
   /**
     * Attribute class for base of CMS attribute
     * @param params associative array of parameters
@@ -65,8 +55,26 @@ object cms extends js.Object {
     * AttributeSetValue ::= SET OF ANY
     * ```
     */
-  @js.native
-  class Attribute () extends ASN1Object
+  trait Attribute
+    extends StObject
+       with ASN1Object
+  object Attribute {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String
+    ): Attribute = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
+      __obj.asInstanceOf[Attribute]
+    }
+  }
   
   /**
     * class for Attributes ASN.1 structure for CMS
@@ -87,12 +95,44 @@ object cms extends js.Object {
     * o.add(new KJUR.asn1.cms.SigningTime()); // add SigningTime attribute
     * hex = o.getEncodedHex();                // get hex encoded ASN.1 data
     */
-  @js.native
-  class AttributeList () extends ASN1Object {
-    def this(params: AnonSorted) = this()
-    def add(item: Attribute): Unit = js.native
-    def clear(): Unit = js.native
-    def length(): Double = js.native
+  trait AttributeList
+    extends StObject
+       with ASN1Object {
+    
+    def add(item: Attribute): Unit
+    
+    def clear(): Unit
+    
+    def length(): Double
+  }
+  object AttributeList {
+    
+    inline def apply(
+      add: Attribute => Callback,
+      clear: Callback,
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      length: CallbackTo[Double]
+    ): AttributeList = {
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction1((t0: Attribute) => add(t0).runNow()), clear = clear.toJsFn, getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], length = length.toJsFn, params = null)
+      __obj.asInstanceOf[AttributeList]
+    }
+    
+    extension [Self <: AttributeList](x: Self) {
+      
+      inline def setAdd(value: Attribute => Callback): Self = StObject.set(x, "add", js.Any.fromFunction1((t0: Attribute) => value(t0).runNow()))
+      
+      inline def setClear(value: Callback): Self = StObject.set(x, "clear", value.toJsFn)
+      
+      inline def setLength(value: CallbackTo[Double]): Self = StObject.set(x, "length", value.toJsFn)
+    }
   }
   
   /**
@@ -111,11 +151,34 @@ object cms extends js.Object {
     * seq = new KJUR.asn1.DERSequence({array: a});
     * o = new KJUR.asn1.cms.ContentInfo({type: 'data', obj: seq});
     */
-  @js.native
-  class ContentInfo () extends ASN1Object {
-    def this(params: ASN1ObjectParam) = this()
-    def this(params: TypeParam) = this()
-    def setContentType(params: String): Unit = js.native
+  trait ContentInfo
+    extends StObject
+       with ASN1Object {
+    
+    def setContentType(params: String): Unit
+  }
+  object ContentInfo {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setContentType: String => Callback
+    ): ContentInfo = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setContentType = js.Any.fromFunction1((t0: String) => setContentType(t0).runNow()), params = null)
+      __obj.asInstanceOf[ContentInfo]
+    }
+    
+    extension [Self <: ContentInfo](x: Self) {
+      
+      inline def setSetContentType(value: String => Callback): Self = StObject.set(x, "setContentType", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -133,11 +196,7 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.ContentType({name: 'data'});
     * o = new KJUR.asn1.cms.ContentType({oid: '1.2.840.113549.1.9.16.1.4'});
     */
-  @js.native
-  class ContentType () extends Attribute {
-    def this(params: AnonName) = this()
-    def this(params: AnonOidString) = this()
-  }
+  type ContentType = Attribute
   
   /**
     * class for EncapsulatedContentInfo ASN.1 structure for CMS
@@ -159,12 +218,17 @@ object cms extends js.Object {
     * o.isDetached = true;               // false as default
     */
   @js.native
-  class EncapsulatedContentInfo () extends ASN1Object {
-    def this(params: string) = this()
+  trait EncapsulatedContentInfo
+    extends StObject
+       with ASN1Object {
+    
     def setContentType(nameOrOid: String): Unit = js.native
+    
     def setContentValue(params: HexParam): Unit = js.native
     def setContentValue(params: StringParam): Unit = js.native
+    
     def setContentValueHex(valueHex: String): Unit = js.native
+    
     def setContentValueStr(valueStr: String): Unit = js.native
   }
   
@@ -186,12 +250,34 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber({cert: certPEM});
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber(certPEM); // since 1.0.3
     */
-  @js.native
-  class IssuerAndSerialNumber () extends ASN1Object {
-    def this(params: String) = this()
-    def this(params: AnonCertString) = this()
-    def this(params: AnonIssuer) = this()
-    def setByCertPEM(certPEM: String): Unit = js.native
+  trait IssuerAndSerialNumber
+    extends StObject
+       with ASN1Object {
+    
+    def setByCertPEM(certPEM: String): Unit
+  }
+  object IssuerAndSerialNumber {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setByCertPEM: String => Callback
+    ): IssuerAndSerialNumber = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setByCertPEM = js.Any.fromFunction1((t0: String) => setByCertPEM(t0).runNow()), params = null)
+      __obj.asInstanceOf[IssuerAndSerialNumber]
+    }
+    
+    extension [Self <: IssuerAndSerialNumber](x: Self) {
+      
+      inline def setSetByCertPEM(value: String => Callback): Self = StObject.set(x, "setByCertPEM", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -208,10 +294,7 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.MessageDigest({hex: 'a1a2a3a4...'});
     */
-  @js.native
-  class MessageDigest () extends Attribute {
-    def this(params: AnonHex) = this()
-  }
+  type MessageDigest = Attribute
   
   /**
     * class for SignerInfo ASN.1 structure of CMS SignedData
@@ -243,13 +326,56 @@ object cms extends js.Object {
     * sd.signerInfoList[0].sign(prvP8PEM, "SHA256withRSA");
     * hex = sd.getContentInfoEncodedHex();
     */
-  @js.native
-  class SignedData () extends ASN1Object {
-    var signerInfoList: js.Array[SignerInfo] = js.native
-    def addCertificatesByPEM(certPEM: String): Unit = js.native
-    def getContentInfo(): ContentInfo = js.native
-    def getContentInfoEncodedHex(): String = js.native
-    def getPEM(): String = js.native
+  trait SignedData
+    extends StObject
+       with ASN1Object {
+    
+    def addCertificatesByPEM(certPEM: String): Unit
+    
+    def getContentInfo(): ContentInfo
+    
+    def getContentInfoEncodedHex(): String
+    
+    def getPEM(): String
+    
+    var signerInfoList: js.Array[SignerInfo]
+  }
+  object SignedData {
+    
+    inline def apply(
+      addCertificatesByPEM: String => Callback,
+      getContentInfo: CallbackTo[ContentInfo],
+      getContentInfoEncodedHex: CallbackTo[String],
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getPEM: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      signerInfoList: js.Array[SignerInfo]
+    ): SignedData = {
+      val __obj = js.Dynamic.literal(addCertificatesByPEM = js.Any.fromFunction1((t0: String) => addCertificatesByPEM(t0).runNow()), getContentInfo = getContentInfo.toJsFn, getContentInfoEncodedHex = getContentInfoEncodedHex.toJsFn, getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getPEM = getPEM.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], signerInfoList = signerInfoList.asInstanceOf[js.Any], params = null)
+      __obj.asInstanceOf[SignedData]
+    }
+    
+    extension [Self <: SignedData](x: Self) {
+      
+      inline def setAddCertificatesByPEM(value: String => Callback): Self = StObject.set(x, "addCertificatesByPEM", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+      
+      inline def setGetContentInfo(value: CallbackTo[ContentInfo]): Self = StObject.set(x, "getContentInfo", value.toJsFn)
+      
+      inline def setGetContentInfoEncodedHex(value: CallbackTo[String]): Self = StObject.set(x, "getContentInfoEncodedHex", value.toJsFn)
+      
+      inline def setGetPEM(value: CallbackTo[String]): Self = StObject.set(x, "getPEM", value.toJsFn)
+      
+      inline def setSignerInfoList(value: js.Array[SignerInfo]): Self = StObject.set(x, "signerInfoList", value.asInstanceOf[js.Any])
+      
+      inline def setSignerInfoListVarargs(value: SignerInfo*): Self = StObject.set(x, "signerInfoList", js.Array(value*))
+    }
   }
   
   /**
@@ -275,9 +401,12 @@ object cms extends js.Object {
     * o.sign(privteKeyParam, "SHA1withRSA");
     */
   @js.native
-  class SignerInfo () extends ASN1Object {
-    def this(params: String) = this()
+  trait SignerInfo
+    extends StObject
+       with ASN1Object {
+    
     def addUnsigned(attr: Attribute): Unit = js.native
+    
     /**
       * set ContentType/MessageDigest/DigestAlgorithms for SignerInfo/SignedData
       * @param params JSON parameter to set content related field
@@ -302,10 +431,12 @@ object cms extends js.Object {
       *                                  eciObj: sd.dEncapContentInfo,
       *                                  hashAlg: 'sha256'});
       */
-    def setForContentAndHash(params: AnonEciObj): Unit = js.native
+    def setForContentAndHash(params: EciObj): Unit = js.native
+    
     def setSignerIdentifier(params: String): Unit = js.native
+    
     def sign(keyParam: String, sigAlg: String): Unit = js.native
-    def sign(keyParam: AnonE, sigAlg: String): Unit = js.native
+    def sign(keyParam: E, sigAlg: String): Unit = js.native
     def sign(keyParam: DSA, sigAlg: String): Unit = js.native
     def sign(keyParam: ECDSA, sigAlg: String): Unit = js.native
     def sign(keyParam: JsonWebKey, sigAlg: String): Unit = js.native
@@ -334,10 +465,34 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.SigningCertificate({array: [certPEM]});
     */
-  @js.native
-  class SigningCertificate () extends Attribute {
-    def this(params: ArrayParam[String]) = this()
-    def setCerts(listPEM: js.Array[String]): Unit = js.native
+  trait SigningCertificate
+    extends StObject
+       with Attribute {
+    
+    def setCerts(listPEM: js.Array[String]): Unit
+  }
+  object SigningCertificate {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setCerts: js.Array[String] => Callback
+    ): SigningCertificate = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setCerts = js.Any.fromFunction1((t0: js.Array[String]) => setCerts(t0).runNow()), params = null)
+      __obj.asInstanceOf[SigningCertificate]
+    }
+    
+    extension [Self <: SigningCertificate](x: Self) {
+      
+      inline def setSetCerts(value: js.Array[String] => Callback): Self = StObject.set(x, "setCerts", js.Any.fromFunction1((t0: js.Array[String]) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -369,11 +524,34 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningCertificateV2({array: [certPEM],
     *                                             hashAlg: 'sha512'});
     */
-  @js.native
-  class SigningCertificateV2 () extends Attribute {
-    def this(params: AnonArray) = this()
-    def this(params: ArrayParam[String]) = this()
-    def setCerts(listPEM: js.Array[String], hashAlg: String): Unit = js.native
+  trait SigningCertificateV2
+    extends StObject
+       with Attribute {
+    
+    def setCerts(listPEM: js.Array[String], hashAlg: String): Unit
+  }
+  object SigningCertificateV2 {
+    
+    inline def apply(
+      getEncodedHex: CallbackTo[String],
+      getFreshValueHex: CallbackTo[String],
+      getLengthHexFromValue: CallbackTo[String],
+      getValueHex: CallbackTo[String],
+      hL: String,
+      hT: String,
+      hTLV: String,
+      hV: String,
+      isModified: String,
+      setCerts: (js.Array[String], String) => Callback
+    ): SigningCertificateV2 = {
+      val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], setCerts = js.Any.fromFunction2((t0: js.Array[String], t1: String) => (setCerts(t0, t1)).runNow()), params = null)
+      __obj.asInstanceOf[SigningCertificateV2]
+    }
+    
+    extension [Self <: SigningCertificateV2](x: Self) {
+      
+      inline def setSetCerts(value: (js.Array[String], String) => Callback): Self = StObject.set(x, "setCerts", js.Any.fromFunction2((t0: js.Array[String], t1: String) => (value(t0, t1)).runNow()))
+    }
   }
   
   /**
@@ -396,66 +574,5 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningTime({str: '20140517093800Z'}); // specified GeneralizedTime
     * o = new KJUR.asn1.cms.SigningTime({str: '140517093800Z'}); // specified UTCTime
     */
-  @js.native
-  class SigningTime () extends Attribute {
-    def this(params: StringParam) = this()
-    def this(params: TypeParam) = this()
-  }
-  
-  @js.native
-  object CMSUtil extends js.Object {
-    /**
-      * generate SignedData object specified by JSON parameters
-      * @param param JSON parameter to generate CMS SignedData
-      * @return object just generated
-      * @description
-      * This method provides more easy way to genereate
-      * CMS SignedData ASN.1 structure by JSON data.
-      * @example
-      * var sd = KJUR.asn1.cms.CMSUtil.newSignedData({
-      *   content: {str: "jsrsasign"},
-      *   certs: [certPEM],
-      *   signerInfos: [{
-      *     hashAlg: 'sha256',
-      *     sAttr: {
-      *       SigningTime: {}
-      *       SigningCertificateV2: {array: [certPEM]},
-      *     },
-      *     signerCert: certPEM,
-      *     sigAlg: 'SHA256withRSA',
-      *     signerPrvKey: prvPEM
-      *   }]
-      * });
-      */
-    def SignedData(): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    def SignedData(param: AnonCerts): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    /**
-      * verify SignedData specified by JSON parameters
-      *
-      * @param param JSON parameter to verify CMS SignedData
-      * @return JSON data as the result of validation
-      * @description
-      * This method provides validation for CMS SignedData.
-      * Following parameters can be applied:
-      *
-      * - cms - hexadecimal data of DER CMS SignedData (aka. PKCS#7 or p7s)
-      *     to verify (OPTION)
-      *
-      * @example
-      * KJUR.asn1.cms.CMSUtil.verifySignedData({ cms: "3082058a..." })
-      * →
-      * {
-      *   isValid: true,
-      *   parse: ... // parsed data
-      *   signerInfos: [
-      *     {
-      *     }
-      *   ]
-      * }
-      */
-    def verifySignedData(): AnonIsValid = js.native
-    def verifySignedData(param: AnonCms): AnonIsValid = js.native
-  }
-  
+  type SigningTime = Attribute
 }
-

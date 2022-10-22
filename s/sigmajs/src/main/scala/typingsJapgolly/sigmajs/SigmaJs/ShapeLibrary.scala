@@ -1,20 +1,23 @@
 package typingsJapgolly.sigmajs.SigmaJs
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShapeLibrary extends js.Object {
-  def enumerate(): js.Any
+trait ShapeLibrary extends StObject {
+  
+  def enumerate(): Any
 }
-
 object ShapeLibrary {
-  @scala.inline
-  def apply(enumerate: CallbackTo[js.Any]): ShapeLibrary = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enumerate")(enumerate.toJsFn)
+  
+  inline def apply(enumerate: CallbackTo[Any]): ShapeLibrary = {
+    val __obj = js.Dynamic.literal(enumerate = enumerate.toJsFn)
     __obj.asInstanceOf[ShapeLibrary]
   }
+  
+  extension [Self <: ShapeLibrary](x: Self) {
+    
+    inline def setEnumerate(value: CallbackTo[Any]): Self = StObject.set(x, "enumerate", value.toJsFn)
+  }
 }
-

@@ -1,30 +1,46 @@
 package typingsJapgolly.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridFSBucketReadStreamOptions extends js.Object {
+trait GridFSBucketReadStreamOptions extends StObject {
+  
+  /** 0-based offset in bytes to stop streaming before */
   var end: js.UndefOr[scala.Double] = js.undefined
+  
   var skip: js.UndefOr[scala.Double] = js.undefined
-  var sort: js.UndefOr[scala.Double] = js.undefined
+  
+  var sort: js.UndefOr[Sort] = js.undefined
+  
+  /** 0-based offset in bytes to start streaming from */
   var start: js.UndefOr[scala.Double] = js.undefined
 }
-
 object GridFSBucketReadStreamOptions {
-  @scala.inline
-  def apply(
-    end: Int | scala.Double = null,
-    skip: Int | scala.Double = null,
-    sort: Int | scala.Double = null,
-    start: Int | scala.Double = null
-  ): GridFSBucketReadStreamOptions = {
+  
+  inline def apply(): GridFSBucketReadStreamOptions = {
     val __obj = js.Dynamic.literal()
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridFSBucketReadStreamOptions]
   }
+  
+  extension [Self <: GridFSBucketReadStreamOptions](x: Self) {
+    
+    inline def setEnd(value: scala.Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setSkip(value: scala.Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    
+    inline def setSort(value: Sort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    
+    inline def setSortVarargs(value: (String | (js.Tuple2[String, SortDirection]))*): Self = StObject.set(x, "sort", js.Array(value*))
+    
+    inline def setStart(value: scala.Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

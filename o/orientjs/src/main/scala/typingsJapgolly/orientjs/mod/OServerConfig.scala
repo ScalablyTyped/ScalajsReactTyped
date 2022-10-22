@@ -1,21 +1,30 @@
 package typingsJapgolly.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OServerConfig extends js.Object {
+trait OServerConfig extends StObject {
+  
   var host: js.UndefOr[String] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
 }
-
 object OServerConfig {
-  @scala.inline
-  def apply(host: String = null, port: Int | Double = null): OServerConfig = {
+  
+  inline def apply(): OServerConfig = {
     val __obj = js.Dynamic.literal()
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
     __obj.asInstanceOf[OServerConfig]
   }
+  
+  extension [Self <: OServerConfig](x: Self) {
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+  }
 }
-

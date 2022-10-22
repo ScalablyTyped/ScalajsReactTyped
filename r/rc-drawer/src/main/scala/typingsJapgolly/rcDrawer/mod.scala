@@ -1,28 +1,20 @@
 package typingsJapgolly.rcDrawer
 
-import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.rcDrawer.drawerWrapperMod.DrawerWrapper
-import typingsJapgolly.rcDrawer.idrawerproptypesMod.IDrawerProps
-import typingsJapgolly.react.mod.Context
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.rcDrawer.esDrawerMod.DrawerProps
+import typingsJapgolly.react.mod.FC
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-drawer/lib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default protected () extends DrawerWrapper {
-    def this(props: IDrawerProps) = this()
-  }
+object mod extends Shortcut {
   
+  @JSImport("rc-drawer", JSImport.Default)
   @js.native
-  object default extends Instantiable1[/* props */ IDrawerProps, DrawerWrapper] {
-    var contextType: js.UndefOr[Context[_]] = js.native
-    var defaultProps: AnonAfterVisibleChange = js.native
-    var getDerivedStateFromProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DrawerWrapper.getDerivedStateFromProps */ js.Any = js.native
-    def getDerivedStateFromProps(props: IDrawerProps, hasPrevProps: AnonPrevPropsIDrawerProps): AnonOpen = js.native
-  }
+  val default: FC[DrawerProps] = js.native
   
+  type _To = FC[DrawerProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
+  override def _to: FC[DrawerProps] = default
 }
-

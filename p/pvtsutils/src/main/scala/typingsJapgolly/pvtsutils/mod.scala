@@ -1,67 +1,80 @@
 package typingsJapgolly.pvtsutils
 
-import typingsJapgolly.pvtsutils.convertMod.BufferEncoding
-import typingsJapgolly.std.BufferSource
-import typingsJapgolly.std.SharedArrayBuffer
+import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.Instantiable3
+import typingsJapgolly.std.ArrayBufferLike
+import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pvtsutils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("pvtsutils", JSImport.Namespace)
   @js.native
-  class BufferSourceConverter ()
-    extends typingsJapgolly.pvtsutils.bufferSourceConverterMod.BufferSourceConverter
+  val ^ : js.Any = js.native
+  
+  inline def assign(target: Any, sources: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(scala.List(target.asInstanceOf[js.Any]).`++`(sources.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Any]
+  
+  inline def combine(buf: js.typedarray.ArrayBuffer*): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(buf.asInstanceOf[Seq[js.Any]]*).asInstanceOf[ArrayBufferLike]
+  
+  inline def isEqual(bytes1: js.typedarray.ArrayBuffer, bytes2: js.typedarray.ArrayBuffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(bytes1.asInstanceOf[js.Any], bytes2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
-  class Convert ()
-    extends typingsJapgolly.pvtsutils.convertMod.Convert
+  trait ArrayBufferViewConstructor[T /* <: js.typedarray.ArrayBufferView */]
+    extends StObject
+       with Instantiable1[
+          (/* array */ ArrayBufferLike) | (/* array */ ArrayLike[Double]) | (/* length */ Double), 
+          T
+        ]
+       with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, T]
+       with Instantiable3[
+          /* buffer */ ArrayBufferLike, 
+          (/* byteOffset */ Double) | (/* byteOffset */ Unit), 
+          /* length */ Double, 
+          T
+        ]
   
-  def assign(target: js.Any, sources: js.Any*): js.Any = js.native
-  def combine(buf: scala.scalajs.js.typedarray.ArrayBuffer*): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-  def isEqual(bytes1: scala.scalajs.js.typedarray.ArrayBuffer, bytes2: scala.scalajs.js.typedarray.ArrayBuffer): Boolean = js.native
-  /* static members */
-  @js.native
-  object BufferSourceConverter extends js.Object {
-    def isBufferSource(data: js.Any): /* is std.BufferSource */ Boolean = js.native
-    def toArrayBuffer(data: BufferSource): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-    def toUint8Array(data: BufferSource): scala.scalajs.js.typedarray.Uint8Array = js.native
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.utf8
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.binary
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.base64
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.base64url
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.hex
+    - java.lang.String
+  */
+  type BufferEncoding = _BufferEncoding | String
+  
+  type BufferSource = js.typedarray.ArrayBuffer | js.typedarray.ArrayBufferView
+  
+  trait BufferSourceConverter extends StObject
+  
+  trait Convert extends StObject
+  
+  /* Rewritten from type alias, can be one of: 
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.ascii
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.utf8
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16be
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16le
+    - typingsJapgolly.pvtsutils.pvtsutilsStrings.usc2
+  */
+  trait TextEncoding extends StObject
+  object TextEncoding {
+    
+    inline def ascii: typingsJapgolly.pvtsutils.pvtsutilsStrings.ascii = "ascii".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.ascii]
+    
+    inline def usc2: typingsJapgolly.pvtsutils.pvtsutilsStrings.usc2 = "usc2".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.usc2]
+    
+    inline def utf16: typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16 = "utf16".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16]
+    
+    inline def utf16be: typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16be = "utf16be".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16be]
+    
+    inline def utf16le: typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16le = "utf16le".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.utf16le]
+    
+    inline def utf8: typingsJapgolly.pvtsutils.pvtsutilsStrings.utf8 = "utf8".asInstanceOf[typingsJapgolly.pvtsutils.pvtsutilsStrings.utf8]
   }
   
-  /* static members */
-  @js.native
-  object Convert extends js.Object {
-    /* protected */ def Base64Padding(base64: String): String = js.native
-    def FromBase64(base64Text: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def FromBase64Url(base64url: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def FromBinary(text: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    /**
-      * Converts HEX string to buffer
-      *
-      * @static
-      * @param {string} hexString
-      * @returns {Uint8Array}
-      *
-      * @memberOf Convert
-      */
-    def FromHex(hexString: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def FromString(str: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def FromString(str: String, enc: BufferEncoding): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def FromUtf8String(text: String): scala.scalajs.js.typedarray.ArrayBuffer | SharedArrayBuffer = js.native
-    def ToBase64(buffer: BufferSource): String = js.native
-    def ToBase64Url(data: BufferSource): String = js.native
-    def ToBinary(buffer: BufferSource): String = js.native
-    /**
-      * Converts buffer to HEX string
-      * @param  {BufferSource} buffer Incoming buffer
-      * @returns string
-      */
-    def ToHex(buffer: BufferSource): String = js.native
-    def ToString(buffer: BufferSource): String = js.native
-    def ToString(buffer: BufferSource, enc: BufferEncoding): String = js.native
-    def ToUtf8String(buffer: BufferSource): String = js.native
-  }
-  
+  trait _BufferEncoding extends StObject
 }
-

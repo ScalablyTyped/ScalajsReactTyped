@@ -1,40 +1,43 @@
 package typingsJapgolly.conductorAnimate.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.conductorAnimate.mod.AnimatedProps
 import typingsJapgolly.react.mod.ReactNodeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Animated {
-  def apply(
-    id: String,
-    additional: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: Node | ReactNodeArray = null
-  ): UnmountedWithRoot[AnimatedProps, typingsJapgolly.conductorAnimate.mod.Animated, Unit, AnimatedProps] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (additional != null) __obj.updateDynamic("additional")(additional.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.conductorAnimate.mod.AnimatedProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.conductorAnimate.mod.Animated](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.conductorAnimate.mod.AnimatedProps])
+  inline def apply(id: String): Builder = {
+    val __props = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AnimatedProps]))
   }
+  
   @JSImport("conductor-animate", "Animated")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.conductorAnimate.mod.Animated] {
+    
+    inline def additional(value: js.Object): this.type = set("additional", value.asInstanceOf[js.Any])
+    
+    inline def children(value: Node | ReactNodeArray): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AnimatedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

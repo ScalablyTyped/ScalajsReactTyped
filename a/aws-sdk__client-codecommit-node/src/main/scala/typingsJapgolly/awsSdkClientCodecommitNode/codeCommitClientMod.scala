@@ -2,24 +2,26 @@ package typingsJapgolly.awsSdkClientCodecommitNode
 
 import typingsJapgolly.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitConfiguration
 import typingsJapgolly.awsSdkClientCodecommitNode.codeCommitConfigurationMod.CodeCommitResolvedConfiguration
-import typingsJapgolly.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkMiddlewareStack.mod.MiddlewareStack
-import typingsJapgolly.awsSdkTypes.commandMod.Command
-import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.awsSdkClientCodecommitNode.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesCommandMod.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", JSImport.Namespace)
-@js.native
-object codeCommitClientMod extends js.Object {
+object codeCommitClientMod {
+  
+  @JSImport("@aws-sdk/client-codecommit-node/CodeCommitClient", "CodeCommitClient")
   @js.native
-  class CodeCommitClient protected () extends js.Object {
+  open class CodeCommitClient protected () extends StObject {
     def this(configuration: CodeCommitConfiguration) = this()
-    val config: CodeCommitResolvedConfiguration = js.native
-    val middlewareStack: MiddlewareStack[InputTypesUnion, OutputTypesUnion, Readable] = js.native
+    
+    /* protected */ val config: CodeCommitResolvedConfiguration = js.native
+    
     def destroy(): Unit = js.native
+    
+    val middlewareStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any = js.native
+    
     /**
       * This will need to be revised when the command interface lands.
       */
@@ -29,8 +31,7 @@ object codeCommitClientMod extends js.Object {
           InputType, 
           OutputTypesUnion, 
           OutputType, 
-          CodeCommitResolvedConfiguration, 
-          Readable
+          CodeCommitResolvedConfiguration
         ]
     ): js.Promise[OutputType] = js.native
     def send[InputType /* <: InputTypesUnion */, OutputType /* <: OutputTypesUnion */](
@@ -39,12 +40,9 @@ object codeCommitClientMod extends js.Object {
           InputType, 
           OutputTypesUnion, 
           OutputType, 
-          CodeCommitResolvedConfiguration, 
-          Readable
+          CodeCommitResolvedConfiguration
         ],
-      cb: js.Function2[/* err */ js.Any, /* data */ js.UndefOr[OutputType], Unit]
+      cb: js.Function2[/* err */ Any, /* data */ js.UndefOr[OutputType], Unit]
     ): Unit = js.native
   }
-  
 }
-

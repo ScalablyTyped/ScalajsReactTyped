@@ -1,20 +1,24 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PolylineDrawActionRedoEvent extends js.Object {
+trait PolylineDrawActionRedoEvent extends StObject {
+  
   var defaultPrevented: Boolean
+  
   var preventDefault: js.Function
+  
   var `type`: String
+  
   var vertexIndex: Double
+  
   var vertices: js.Array[js.Array[Double]]
 }
-
 object PolylineDrawActionRedoEvent {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
     `type`: String,
@@ -25,5 +29,19 @@ object PolylineDrawActionRedoEvent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolylineDrawActionRedoEvent]
   }
+  
+  extension [Self <: PolylineDrawActionRedoEvent](x: Self) {
+    
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
+    
+    inline def setVertices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "vertices", js.Array(value*))
+  }
 }
-

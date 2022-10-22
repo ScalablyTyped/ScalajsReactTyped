@@ -5,13 +5,14 @@ import typingsJapgolly.node.streamMod.Stream
 import typingsJapgolly.projectOxford.mod.Options.Analyze
 import typingsJapgolly.projectOxford.mod.Options.Ocr
 import typingsJapgolly.projectOxford.mod.Options.Thumbnail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "VisionAPI")
 @js.native
-class VisionAPI () extends js.Object {
+open class VisionAPI () extends StObject {
+  
   /**
     * This operation does a deep analysis on the given image and then extracts a
     * set of rich visual features based on the image content.
@@ -27,6 +28,7 @@ class VisionAPI () extends js.Object {
     * @return {Promise}                        - Promise resolving with the resulting JSON
     */
   def analyzeImage(options: Analyze): ^[typingsJapgolly.projectOxford.mod.VisionResponses.Analyze] = js.native
+  
   /**
     * Optical Character Recognition (OCR) detects text in an image and extracts the recognized
     * characters into a machine-usable character stream.
@@ -39,6 +41,7 @@ class VisionAPI () extends js.Object {
     * @return {Promise}                            - Promise resolving with the resulting JSON
     */
   def ocr(options: Ocr): ^[typingsJapgolly.projectOxford.mod.VisionResponses.Ocr] = js.native
+  
   /**
     * Generate a thumbnail image to the user-specified width and height. By default, the
     * service analyzes the image, identifies the region of interest (ROI), and generates
@@ -56,4 +59,3 @@ class VisionAPI () extends js.Object {
     */
   def thumbnail(options: Thumbnail): ^[Stream] = js.native
 }
-

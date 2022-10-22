@@ -4,204 +4,190 @@ import typingsJapgolly.materialUi.MaterialUI.propTypes.corners
 import typingsJapgolly.materialUi.MaterialUI.propTypes.cornersAndCenter
 import typingsJapgolly.materialUi.MaterialUI.propTypes.direction
 import typingsJapgolly.materialUi.MaterialUI.propTypes.tooltipHorizontal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialUiStrings {
-  @js.native
-  sealed trait `24hr` extends js.Object
   
   @js.native
-  sealed trait after extends js.Object
+  sealed trait `24hr` extends StObject
+  inline def `24hr`: `24hr` = "24hr".asInstanceOf[`24hr`]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait after extends StObject
+  inline def after: after = "after".asInstanceOf[after]
   
   @js.native
-  sealed trait ampm extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait ampm extends StObject
+  inline def ampm: ampm = "ampm".asInstanceOf[ampm]
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
+  
+  @js.native
+  sealed trait before extends StObject
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
   sealed trait bottom
-    extends typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
+    extends StObject
+       with typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait `bottom-center` extends cornersAndCenter
+  sealed trait `bottom-center`
+    extends StObject
+       with cornersAndCenter
+  inline def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
   
   @js.native
   sealed trait `bottom-left`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
+  inline def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
   sealed trait `bottom-right`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
+  inline def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
   sealed trait center
-    extends tooltipHorizontal
+    extends StObject
+       with tooltipHorizontal
        with typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait determinate extends js.Object
+  sealed trait determinate extends StObject
+  inline def determinate: determinate = "determinate".asInstanceOf[determinate]
   
   @js.native
-  sealed trait dialog extends js.Object
+  sealed trait dialog extends StObject
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait down extends direction
+  sealed trait down
+    extends StObject
+       with direction
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait indeterminate extends js.Object
+  sealed trait indeterminate extends StObject
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline` extends StObject
+  inline def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape extends StObject
+  inline def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
   sealed trait left
-    extends direction
+    extends StObject
+       with direction
        with typingsJapgolly.materialUi.MaterialUI.propTypes.horizontal
        with tooltipHorizontal
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
   sealed trait middle
-    extends typingsJapgolly.materialUi.MaterialUI.propTypes.horizontal
+    extends StObject
+       with typingsJapgolly.materialUi.MaterialUI.propTypes.horizontal
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait onChange extends StObject
+  inline def onChange: onChange = "onChange".asInstanceOf[onChange]
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait portrait extends StObject
+  inline def portrait: portrait = "portrait".asInstanceOf[portrait]
+  
+  @js.native
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait right
-    extends direction
+    extends StObject
+       with direction
        with typingsJapgolly.materialUi.MaterialUI.propTypes.horizontal
        with tooltipHorizontal
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait top
-    extends typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
+    extends StObject
+       with typingsJapgolly.materialUi.MaterialUI.propTypes.vertical
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `top-center` extends cornersAndCenter
+  sealed trait `top-center`
+    extends StObject
+       with cornersAndCenter
+  inline def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
   
   @js.native
   sealed trait `top-left`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
+  inline def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
   sealed trait `top-right`
-    extends corners
+    extends StObject
+       with corners
        with cornersAndCenter
+  inline def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait up extends direction
+  sealed trait up
+    extends StObject
+       with direction
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait `x-reverse` extends js.Object
+  sealed trait `x-reverse` extends StObject
+  inline def `x-reverse`: `x-reverse` = "x-reverse".asInstanceOf[`x-reverse`]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
   
   @js.native
-  sealed trait `y-reverse` extends js.Object
-  
-  @scala.inline
-  def `24hr`: `24hr` = "24hr".asInstanceOf[`24hr`]
-  @scala.inline
-  def after: after = "after".asInstanceOf[after]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def ampm: ampm = "ampm".asInstanceOf[ampm]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
-  @scala.inline
-  def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
-  @scala.inline
-  def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def determinate: determinate = "determinate".asInstanceOf[determinate]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
-  @scala.inline
-  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
-  @scala.inline
-  def `inline`: `inline` = "inline".asInstanceOf[`inline`]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
-  @scala.inline
-  def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
-  @scala.inline
-  def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def `x-reverse`: `x-reverse` = "x-reverse".asInstanceOf[`x-reverse`]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def `y-reverse`: `y-reverse` = "y-reverse".asInstanceOf[`y-reverse`]
+  sealed trait `y-reverse` extends StObject
+  inline def `y-reverse`: `y-reverse` = "y-reverse".asInstanceOf[`y-reverse`]
 }
-

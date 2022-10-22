@@ -1,28 +1,36 @@
 package typingsJapgolly.electron.Electron
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.electron.electronStrings.rawData
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadRawData extends js.Object {
-  // Docs: http://electronjs.org/docs/api/structures/upload-raw-data
+trait UploadRawData extends StObject {
+  
+  // Docs: https://electronjs.org/docs/api/structures/upload-raw-data
   /**
     * Data to be uploaded.
     */
   var bytes: Buffer
+  
   /**
-    * rawData.
+    * `rawData`.
     */
-  var `type`: String
+  var `type`: rawData
 }
-
 object UploadRawData {
-  @scala.inline
-  def apply(bytes: Buffer, `type`: String): UploadRawData = {
+  
+  inline def apply(bytes: Buffer): UploadRawData = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rawData")
     __obj.asInstanceOf[UploadRawData]
   }
+  
+  extension [Self <: UploadRawData](x: Self) {
+    
+    inline def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: rawData): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

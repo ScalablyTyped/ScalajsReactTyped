@@ -1,25 +1,26 @@
 package typingsJapgolly.workboxBackgroundSync
 
 import typingsJapgolly.workboxBackgroundSync.queueMod.QueueOptions
-import typingsJapgolly.workboxCore.workboxPluginMod.FetchDidFailCallback
-import typingsJapgolly.workboxCore.workboxPluginMod.FetchDidFailCallbackParam
-import typingsJapgolly.workboxCore.workboxPluginMod.WorkboxPlugin
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.FetchDidFailCallback
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.FetchDidFailCallbackParam
+import typingsJapgolly.workboxCore.typesWorkboxPluginMod.WorkboxPlugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-background-sync/Plugin", JSImport.Namespace)
-@js.native
-object pluginMod extends js.Object {
+object pluginMod {
+  
+  @JSImport("workbox-background-sync/Plugin", "Plugin")
   @js.native
-  class Plugin protected () extends WorkboxPlugin {
+  open class Plugin protected ()
+    extends StObject
+       with WorkboxPlugin {
     def this(name: String) = this()
     def this(name: String, options: QueueOptions) = this()
-    @JSName("fetchDidFail")
-    var fetchDidFail_Original: FetchDidFailCallback = js.native
+    
     @JSName("fetchDidFail")
     def fetchDidFail_MPlugin(param: FetchDidFailCallbackParam): js.Promise[Unit] = js.native
+    @JSName("fetchDidFail")
+    var fetchDidFail_Original: FetchDidFailCallback = js.native
   }
-  
 }
-

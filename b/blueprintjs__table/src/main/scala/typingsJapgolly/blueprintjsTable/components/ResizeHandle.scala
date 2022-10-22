@@ -1,53 +1,37 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.blueprintjsTable.resizeHandleMod.IResizeHandleProps
-import typingsJapgolly.blueprintjsTable.resizeHandleMod.Orientation
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsResizeHandleMod.IResizeHandleProps
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsResizeHandleMod.Orientation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResizeHandle {
-  def apply(
-    orientation: Orientation,
-    onLayoutLock: js.UndefOr[Boolean] => Callback,
-    className: String = null,
-    onDoubleClick: js.UndefOr[Callback] = js.undefined,
-    onResizeEnd: /* offset */ Double => Callback = null,
-    onResizeMove: (/* offset */ Double, /* delta */ Double) => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IResizeHandleProps, 
-    typingsJapgolly.blueprintjsTable.mod.ResizeHandle, 
-    Unit, 
-    IResizeHandleProps
-  ] = {
-    val __obj = js.Dynamic.literal(orientation = orientation.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onLayoutLock")(js.Any.fromFunction1((t0: js.UndefOr[scala.Boolean]) => onLayoutLock(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    onDoubleClick.foreach(p => __obj.updateDynamic("onDoubleClick")(p.toJsFn))
-    if (onResizeEnd != null) __obj.updateDynamic("onResizeEnd")(js.Any.fromFunction1((t0: /* offset */ scala.Double) => onResizeEnd(t0).runNow()))
-    if (onResizeMove != null) __obj.updateDynamic("onResizeMove")(js.Any.fromFunction2((t0: /* offset */ scala.Double, t1: /* delta */ scala.Double) => onResizeMove(t0, t1).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.resizeHandleMod.IResizeHandleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.mod.ResizeHandle](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.resizeHandleMod.IResizeHandleProps])(children: _*)
+  inline def apply(onLayoutLock: js.UndefOr[Boolean] => Callback, orientation: Orientation): Builder = {
+    val __props = js.Dynamic.literal(onLayoutLock = js.Any.fromFunction1((t0: js.UndefOr[Boolean]) => onLayoutLock(t0).runNow()), orientation = orientation.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IResizeHandleProps]))
   }
+  
   @JSImport("@blueprintjs/table", "ResizeHandle")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.mod.ResizeHandle] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def onDoubleClick(value: Callback): this.type = set("onDoubleClick", value.toJsFn)
+    
+    inline def onResizeEnd(value: /* offset */ Double => Callback): this.type = set("onResizeEnd", js.Any.fromFunction1((t0: /* offset */ Double) => value(t0).runNow()))
+    
+    inline def onResizeMove(value: (/* offset */ Double, /* delta */ Double) => Callback): this.type = set("onResizeMove", js.Any.fromFunction2((t0: /* offset */ Double, t1: /* delta */ Double) => (value(t0, t1)).runNow()))
+  }
+  
+  def withProps(p: IResizeHandleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

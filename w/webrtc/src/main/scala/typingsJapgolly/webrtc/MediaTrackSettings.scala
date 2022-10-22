@@ -1,10 +1,11 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaTrackSettings extends js.Object {
+trait MediaTrackSettings extends StObject {
+  
   //width: number;
   //height: number;
   //aspectRatio: number;
@@ -16,13 +17,17 @@ trait MediaTrackSettings extends js.Object {
   //echoCancellation: boolean;
   var latency: js.UndefOr[Double] = js.undefined
 }
-
 object MediaTrackSettings {
-  @scala.inline
-  def apply(latency: Int | Double = null): MediaTrackSettings = {
+  
+  inline def apply(): MediaTrackSettings = {
     val __obj = js.Dynamic.literal()
-    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaTrackSettings]
   }
+  
+  extension [Self <: MediaTrackSettings](x: Self) {
+    
+    inline def setLatency(value: Double): Self = StObject.set(x, "latency", value.asInstanceOf[js.Any])
+    
+    inline def setLatencyUndefined: Self = StObject.set(x, "latency", js.undefined)
+  }
 }
-

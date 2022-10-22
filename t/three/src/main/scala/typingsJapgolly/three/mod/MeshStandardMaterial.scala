@@ -1,14 +1,13 @@
 package typingsJapgolly.three.mod
 
-import typingsJapgolly.three.meshStandardMaterialMod.MeshStandardMaterialParameters
+import typingsJapgolly.three.srcMaterialsMeshStandardMaterialMod.MeshStandardMaterialParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "MeshStandardMaterial")
 @js.native
-class MeshStandardMaterial ()
-  extends typingsJapgolly.three.materialsMod.MeshStandardMaterial {
+open class MeshStandardMaterial ()
+  extends typingsJapgolly.three.srcThreeMod.MeshStandardMaterial {
   def this(parameters: MeshStandardMaterialParameters) = this()
 }
-

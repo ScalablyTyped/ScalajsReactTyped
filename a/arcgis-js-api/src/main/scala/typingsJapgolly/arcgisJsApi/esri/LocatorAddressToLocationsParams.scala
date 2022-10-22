@@ -1,125 +1,150 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocatorAddressToLocationsParams extends Object {
+trait locatorAddressToLocationsParams
+  extends StObject
+     with Object {
+  
   /**
-    * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service. These fields are listed in the addressFields property of the associated geocode service resource. For example, if the *addressFields* of a geocode service resource includes fields with the following names: Street, City, State and Zone, then the address argument is of the form:
-    * ```js
-    * {
-    *   Street: "1234 W Main St",
-    *   City: "Small Town",
-    *   State: "WA",
-    *   Zone: "99027"
-    * }
-    * ```
+    * The address argument is data object that contains properties representing the various address fields accepted by the corresponding geocode service.
     *
-    * Locators published using ArcGIS 10 or later support a single line address field, which
-    * can be specified using the following syntax where field_name is the name of the single
-    * line address field. You can find this name by viewing the help or services directory for
-    * your locator services. Common values are *SingleLine* and *SingleLineFieldName*:
-    *
-    * ```js
-    * var address = { "field_name": "380 New York St, Redlands, CA 92373" };
-    * ```
-    * The Services Directory can be used to find out the required and optional address fields
-    * and the correct names for the input name fields. If you are using the World Geocoding Service
-    * visit the ArcGIS Online Geocoding Service help for more details on the World Geocoder.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
-  var address: js.Any
+  var address: Any
+  
   /**
-    * Limit result to one or more categories. For example, "Populated Place" or "Scandinavian Food". Only applies to the World Geocode Service. See [Category filtering (World Geocoding Service)](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm#ESRI_SECTION1_502B3FE2028145D7B189C25B1A00E17B) for more information.
+    * Limit result to one or more categories.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * Limit result to a specific country. For example, "US" for United States or "SE" for Sweden. Only applies to the World Geocode Service. See Geocode coverage (World Geocoding Service) for more information.
+    * Limit result to a specific country.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var countryCode: js.UndefOr[String] = js.undefined
+  
   /**
     * Allows the results of single geocode transactions to be persisted.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var forStorage: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Used to weight returned results for a specified area.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var location: js.UndefOr[Point] = js.undefined
+  
   /**
     * Define the type of location, either `"street"` or `"rooftop"`, of the point returned from the [World Geocoding Service](https://developers.arcgis.com/rest/geocode/api-reference/geocoding-category-filtering.htm).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var locationType: js.UndefOr[String] = js.undefined
+  
   /**
-    * A `suggestLocations` result ID (magicKey). Used to query for a specific results information.
+    * A `suggestLocations` result ID (magicKey).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var magicKey: js.UndefOr[String] = js.undefined
+  
   /**
     * Maximum results to return from the query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var maxLocations: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The list of fields included in the returned result set. This list is a comma delimited list of field names. If you specify the shape field in the list of return fields, it is ignored. For non-intersection addresses you can specify the candidate fields as defined in the geocode service. For intersection addresses you can specify the intersection candidate fields.
+    * The list of fields included in the returned result set.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * Defines the extent within which the geocode server will search. Requires ArcGIS Server version 10.1 or greater.
+    * The spatial reference of the output geometries.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#addressToLocations)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
+    */
+  var outSpatialReference: js.UndefOr[SpatialReference] = js.undefined
+  
+  /**
+    * Defines the extent within which the geocode server will search.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-locator.html#addressToLocations)
     */
   var searchExtent: js.UndefOr[Extent] = js.undefined
 }
-
-object LocatorAddressToLocationsParams {
-  @scala.inline
-  def apply(
-    address: js.Any,
+object locatorAddressToLocationsParams {
+  
+  inline def apply(
+    address: Any,
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    categories: js.Array[String] = null,
-    countryCode: String = null,
-    forStorage: js.UndefOr[Boolean] = js.undefined,
-    location: Point = null,
-    locationType: String = null,
-    magicKey: String = null,
-    maxLocations: Int | Double = null,
-    outFields: js.Array[String] = null,
-    searchExtent: Extent = null
-  ): LocatorAddressToLocationsParams = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode.asInstanceOf[js.Any])
-    if (!js.isUndefined(forStorage)) __obj.updateDynamic("forStorage")(forStorage.asInstanceOf[js.Any])
-    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
-    if (locationType != null) __obj.updateDynamic("locationType")(locationType.asInstanceOf[js.Any])
-    if (magicKey != null) __obj.updateDynamic("magicKey")(magicKey.asInstanceOf[js.Any])
-    if (maxLocations != null) __obj.updateDynamic("maxLocations")(maxLocations.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (searchExtent != null) __obj.updateDynamic("searchExtent")(searchExtent.asInstanceOf[js.Any])
-    __obj.asInstanceOf[LocatorAddressToLocationsParams]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
+  ): locatorAddressToLocationsParams = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.asInstanceOf[locatorAddressToLocationsParams]
+  }
+  
+  extension [Self <: locatorAddressToLocationsParams](x: Self) {
+    
+    inline def setAddress(value: Any): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCodeUndefined: Self = StObject.set(x, "countryCode", js.undefined)
+    
+    inline def setForStorage(value: Boolean): Self = StObject.set(x, "forStorage", value.asInstanceOf[js.Any])
+    
+    inline def setForStorageUndefined: Self = StObject.set(x, "forStorage", js.undefined)
+    
+    inline def setLocation(value: Point): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    
+    inline def setMagicKey(value: String): Self = StObject.set(x, "magicKey", value.asInstanceOf[js.Any])
+    
+    inline def setMagicKeyUndefined: Self = StObject.set(x, "magicKey", js.undefined)
+    
+    inline def setMaxLocations(value: Double): Self = StObject.set(x, "maxLocations", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLocationsUndefined: Self = StObject.set(x, "maxLocations", js.undefined)
+    
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
+    
+    inline def setOutSpatialReference(value: SpatialReference): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    
+    inline def setSearchExtent(value: Extent): Self = StObject.set(x, "searchExtent", value.asInstanceOf[js.Any])
+    
+    inline def setSearchExtentUndefined: Self = StObject.set(x, "searchExtent", js.undefined)
   }
 }
-

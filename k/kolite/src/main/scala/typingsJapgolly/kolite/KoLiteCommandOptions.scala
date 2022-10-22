@@ -1,25 +1,28 @@
 package typingsJapgolly.kolite
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KoLiteCommandOptions extends js.Object {
-  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, _]] = js.undefined
-  def execute(args: js.Any*): js.Any
+trait KoLiteCommandOptions extends StObject {
+  
+  var canExecute: js.UndefOr[js.Function1[/* isExecuting */ Boolean, Any]] = js.undefined
+  
+  def execute(args: Any*): Any
 }
-
 object KoLiteCommandOptions {
-  @scala.inline
-  def apply(
-    execute: /* repeated */ js.Any => CallbackTo[js.Any],
-    canExecute: /* isExecuting */ Boolean => CallbackTo[js.Any] = null
-  ): KoLiteCommandOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => execute(t0).runNow()))
-    if (canExecute != null) __obj.updateDynamic("canExecute")(js.Any.fromFunction1((t0: /* isExecuting */ scala.Boolean) => canExecute(t0).runNow()))
+  
+  inline def apply(execute: /* repeated */ Any => Any): KoLiteCommandOptions = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute))
     __obj.asInstanceOf[KoLiteCommandOptions]
   }
+  
+  extension [Self <: KoLiteCommandOptions](x: Self) {
+    
+    inline def setCanExecute(value: /* isExecuting */ Boolean => Any): Self = StObject.set(x, "canExecute", js.Any.fromFunction1(value))
+    
+    inline def setCanExecuteUndefined: Self = StObject.set(x, "canExecute", js.undefined)
+    
+    inline def setExecute(value: /* repeated */ Any => Any): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+  }
 }
-

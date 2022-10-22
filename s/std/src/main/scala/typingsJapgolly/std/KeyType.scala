@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.`private`
   - typingsJapgolly.std.stdStrings.public
   - typingsJapgolly.std.stdStrings.secret
 */
-trait KeyType extends js.Object
-
+trait KeyType extends StObject
 object KeyType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `private`: typingsJapgolly.std.stdStrings.`private` = this.cast("private")
-  @scala.inline
-  def public: typingsJapgolly.std.stdStrings.public = this.cast("public")
-  @scala.inline
-  def secret: typingsJapgolly.std.stdStrings.secret = this.cast("secret")
+  
+  inline def `private`: typingsJapgolly.std.stdStrings.`private` = "private".asInstanceOf[typingsJapgolly.std.stdStrings.`private`]
+  
+  inline def public: typingsJapgolly.std.stdStrings.public = "public".asInstanceOf[typingsJapgolly.std.stdStrings.public]
+  
+  inline def secret: typingsJapgolly.std.stdStrings.secret = "secret".asInstanceOf[typingsJapgolly.std.stdStrings.secret]
 }
-

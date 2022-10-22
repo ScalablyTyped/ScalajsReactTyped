@@ -1,7 +1,7 @@
 
 # Scala.js typings for log4js
 
-Typings are for version 5.3.0
+Typings are for version 6.7.0
 
 ## Library description:
 Port of Log4js to work with node.
@@ -10,10 +10,10 @@ Port of Log4js to work with node.
 | ------------------ | :-------------: |
 | Full name          | log4js |
 | Keywords           | logging, log, log4j, node |
-| # releases         | 39 |
-| # dependents       | 1920 |
-| # downloads        | 88649235 |
-| # stars            | 174 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3444438333333334E7 |
+| # stars            | 5476.0 |
 
 ## Links
 - [Homepage](https://log4js-node.github.io/log4js-node/)

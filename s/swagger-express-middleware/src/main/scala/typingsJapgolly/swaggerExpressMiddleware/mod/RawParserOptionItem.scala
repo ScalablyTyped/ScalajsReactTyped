@@ -2,22 +2,25 @@ package typingsJapgolly.swaggerExpressMiddleware.mod
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.express.mod.Request_
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RawParserOptionItem extends js.Object {
+trait RawParserOptionItem extends StObject {
+  
   /**
     * if deflated bodies will be inflated. (default: true)
     */
   var inflate: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Controls the maximum request body size. If this is a number, then the value specifies the number of bytes;
     * if it is a string, the value is passed to the bytes library for parsing. Defaults to '100kb'.
     */
   var limit: js.UndefOr[String | Double] = js.undefined
+  
   /**
     * The type option is used to determine what media type the middleware will parse.
     * This option can be a function or a string.
@@ -25,13 +28,31 @@ trait RawParserOptionItem extends js.Object {
     * If a function, the type option is called as fn(req) and the request is parsed if it returns a truthy value.
     * Defaults to application/octet-stream.
     */
-  var `type`: js.UndefOr[(js.Function1[/* req */ Request_[ParamsDictionary], String]) | String] = js.undefined
+  var `type`: js.UndefOr[
+    (js.Function1[
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
+      String
+    ]) | String
+  ] = js.undefined
+  
   /**
     * function to verify body content, the parsing can be aborted by throwing an error.
     */
   var verify: js.UndefOr[
     js.Function4[
-      /* req */ Request_[ParamsDictionary], 
+      /* req */ Request_[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+        Any, 
+        Any, 
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+        Record[String, Any]
+      ], 
       /* res */ Response, 
       /* buf */ Buffer, 
       /* encoding */ String, 
@@ -39,21 +60,64 @@ trait RawParserOptionItem extends js.Object {
     ]
   ] = js.undefined
 }
-
 object RawParserOptionItem {
-  @scala.inline
-  def apply(
-    inflate: js.UndefOr[Boolean] = js.undefined,
-    limit: String | Double = null,
-    `type`: (js.Function1[/* req */ Request_[ParamsDictionary], String]) | String = null,
-    verify: (/* req */ Request_[ParamsDictionary], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Callback = null
-  ): RawParserOptionItem = {
+  
+  inline def apply(): RawParserOptionItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inflate)) __obj.updateDynamic("inflate")(inflate.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (verify != null) __obj.updateDynamic("verify")(js.Any.fromFunction4((t0: /* req */ typingsJapgolly.express.mod.Request_[typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary], t1: /* res */ typingsJapgolly.swaggerExpressMiddleware.mod.Response, t2: /* buf */ typingsJapgolly.node.Buffer, t3: /* encoding */ java.lang.String) => verify(t0, t1, t2, t3).runNow()))
     __obj.asInstanceOf[RawParserOptionItem]
   }
+  
+  extension [Self <: RawParserOptionItem](x: Self) {
+    
+    inline def setInflate(value: Boolean): Self = StObject.set(x, "inflate", value.asInstanceOf[js.Any])
+    
+    inline def setInflateUndefined: Self = StObject.set(x, "inflate", js.undefined)
+    
+    inline def setLimit(value: String | Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setType(
+      value: (js.Function1[
+          /* req */ Request_[
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+            Any, 
+            Any, 
+            /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+            Record[String, Any]
+          ], 
+          String
+        ]) | String
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeFunction1(
+      value: /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ] => String
+    ): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVerify(
+      value: (/* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Callback
+    ): Self = StObject.set(x, "verify", js.Any.fromFunction4((t0: /* req */ Request_[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+          Any, 
+          Any, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+          Record[String, Any]
+        ], t1: /* res */ Response, t2: /* buf */ Buffer, t3: /* encoding */ String) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+  }
 }
-

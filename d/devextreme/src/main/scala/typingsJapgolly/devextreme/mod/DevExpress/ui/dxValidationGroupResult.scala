@@ -1,49 +1,79 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.invalid
-import typingsJapgolly.devextreme.devextremeStrings.pending
-import typingsJapgolly.devextreme.devextremeStrings.valid
-import typingsJapgolly.devextreme.mod._Global_.JQueryPromise
-import typingsJapgolly.devextreme.mod._Global_.Promise
+import typingsJapgolly.devextreme.mod.DevExpress.common.ValidationStatus
+import typingsJapgolly.devextreme.mod.DevExpress.core.utils.DxPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxValidationGroupResult extends js.Object {
-  /** An array of the validation rules that failed. */
+trait dxValidationGroupResult extends StObject {
+  
+  /**
+    * An array of the validation rules that failed.
+    */
   var brokenRules: js.UndefOr[
     js.Array[
       RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
     ]
   ] = js.undefined
-  /** A promise that is fulfilled when all async rules are validated. */
-  var complete: js.UndefOr[Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult]] = js.undefined
-  /** Indicates whether all the rules checked for the group are satisfied. */
+  
+  /**
+    * A promise that is fulfilled when all async rules are validated.
+    */
+  var complete: js.UndefOr[DxPromise[dxValidationGroupResult]] = js.undefined
+  
+  /**
+    * Indicates whether all the rules checked for the group are satisfied.
+    */
   var isValid: js.UndefOr[Boolean] = js.undefined
-  /** Indicates the validation status. */
-  var status: js.UndefOr[valid | invalid | pending] = js.undefined
-  /** Validator widgets included in the validated group. */
-  var validators: js.UndefOr[js.Array[_]] = js.undefined
+  
+  /**
+    * Indicates the validation status.
+    */
+  var status: js.UndefOr[ValidationStatus] = js.undefined
+  
+  /**
+    * Validator UI components included in the validated group.
+    */
+  var validators: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object dxValidationGroupResult {
-  @scala.inline
-  def apply(
-    brokenRules: js.Array[
-      RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
-    ] = null,
-    complete: Promise[dxValidationGroupResult] | JQueryPromise[dxValidationGroupResult] = null,
-    isValid: js.UndefOr[Boolean] = js.undefined,
-    status: valid | invalid | pending = null,
-    validators: js.Array[_] = null
-  ): dxValidationGroupResult = {
+  
+  inline def apply(): dxValidationGroupResult = {
     val __obj = js.Dynamic.literal()
-    if (brokenRules != null) __obj.updateDynamic("brokenRules")(brokenRules.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(complete.asInstanceOf[js.Any])
-    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (validators != null) __obj.updateDynamic("validators")(validators.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxValidationGroupResult]
   }
+  
+  extension [Self <: dxValidationGroupResult](x: Self) {
+    
+    inline def setBrokenRules(
+      value: js.Array[
+          RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule
+        ]
+    ): Self = StObject.set(x, "brokenRules", value.asInstanceOf[js.Any])
+    
+    inline def setBrokenRulesUndefined: Self = StObject.set(x, "brokenRules", js.undefined)
+    
+    inline def setBrokenRulesVarargs(
+      value: (RequiredRule | NumericRule | RangeRule | StringLengthRule | CustomRule | CompareRule | PatternRule | EmailRule | AsyncRule)*
+    ): Self = StObject.set(x, "brokenRules", js.Array(value*))
+    
+    inline def setComplete(value: DxPromise[dxValidationGroupResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    
+    inline def setIsValidUndefined: Self = StObject.set(x, "isValid", js.undefined)
+    
+    inline def setStatus(value: ValidationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setValidators(value: js.Array[Any]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+    
+    inline def setValidatorsUndefined: Self = StObject.set(x, "validators", js.undefined)
+    
+    inline def setValidatorsVarargs(value: Any*): Self = StObject.set(x, "validators", js.Array(value*))
+  }
 }
-

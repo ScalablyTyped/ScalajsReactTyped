@@ -1,11595 +1,9286 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object igniteUiStrings {
+  
+  @js.native
+  sealed trait actionExecuted extends StObject
+  inline def actionExecuted: actionExecuted = "actionExecuted".asInstanceOf[actionExecuted]
+  
   @js.native
-  sealed trait actionExecuted extends js.Object
+  sealed trait actionExecuting extends StObject
+  inline def actionExecuting: actionExecuting = "actionExecuting".asInstanceOf[actionExecuting]
   
   @js.native
-  sealed trait actionExecuting extends js.Object
+  sealed trait activate extends StObject
+  inline def activate: activate = "activate".asInstanceOf[activate]
   
   @js.native
-  sealed trait activate extends js.Object
+  sealed trait activateItem extends StObject
+  inline def activateItem: activateItem = "activateItem".asInstanceOf[activateItem]
   
   @js.native
-  sealed trait activateItem extends js.Object
+  sealed trait activated extends StObject
+  inline def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait activating extends StObject
+  inline def activating: activating = "activating".asInstanceOf[activating]
   
   @js.native
-  sealed trait activating extends js.Object
+  sealed trait activation extends StObject
+  inline def activation: activation = "activation".asInstanceOf[activation]
   
   @js.native
-  sealed trait activation extends js.Object
+  sealed trait activeCell extends StObject
+  inline def activeCell: activeCell = "activeCell".asInstanceOf[activeCell]
   
   @js.native
-  sealed trait activeCell extends js.Object
+  sealed trait activeCellChanged extends StObject
+  inline def activeCellChanged: activeCellChanged = "activeCellChanged".asInstanceOf[activeCellChanged]
   
   @js.native
-  sealed trait activeCellChanged extends js.Object
+  sealed trait activeCellChanging extends StObject
+  inline def activeCellChanging: activeCellChanging = "activeCellChanging".asInstanceOf[activeCellChanging]
   
   @js.native
-  sealed trait activeCellChanging extends js.Object
+  sealed trait activeIndex extends StObject
+  inline def activeIndex: activeIndex = "activeIndex".asInstanceOf[activeIndex]
   
   @js.native
-  sealed trait activeIndex extends js.Object
+  sealed trait activePaneChanged extends StObject
+  inline def activePaneChanged: activePaneChanged = "activePaneChanged".asInstanceOf[activePaneChanged]
   
   @js.native
-  sealed trait activePaneChanged extends js.Object
+  sealed trait activeRow extends StObject
+  inline def activeRow: activeRow = "activeRow".asInstanceOf[activeRow]
   
   @js.native
-  sealed trait activeRow extends js.Object
+  sealed trait activeRowChanged extends StObject
+  inline def activeRowChanged: activeRowChanged = "activeRowChanged".asInstanceOf[activeRowChanged]
   
   @js.native
-  sealed trait activeRowChanged extends js.Object
+  sealed trait activeRowChanging extends StObject
+  inline def activeRowChanging: activeRowChanging = "activeRowChanging".asInstanceOf[activeRowChanging]
   
   @js.native
-  sealed trait activeRowChanging extends js.Object
+  sealed trait activeTableChanged extends StObject
+  inline def activeTableChanged: activeTableChanged = "activeTableChanged".asInstanceOf[activeTableChanged]
   
   @js.native
-  sealed trait activeTableChanged extends js.Object
+  sealed trait activeWorksheet extends StObject
+  inline def activeWorksheet: activeWorksheet = "activeWorksheet".asInstanceOf[activeWorksheet]
   
   @js.native
-  sealed trait activeWorksheet extends js.Object
+  sealed trait activeWorksheetChanged extends StObject
+  inline def activeWorksheetChanged: activeWorksheetChanged = "activeWorksheetChanged".asInstanceOf[activeWorksheetChanged]
   
   @js.native
-  sealed trait activeWorksheetChanged extends js.Object
+  sealed trait actualPixelScalingRatio extends StObject
+  inline def actualPixelScalingRatio: actualPixelScalingRatio = "actualPixelScalingRatio".asInstanceOf[actualPixelScalingRatio]
   
   @js.native
-  sealed trait actualPixelScalingRatio extends js.Object
+  sealed trait actualRangeSelectorOptions extends StObject
+  inline def actualRangeSelectorOptions: actualRangeSelectorOptions = "actualRangeSelectorOptions".asInstanceOf[actualRangeSelectorOptions]
   
   @js.native
-  sealed trait actualRangeSelectorOptions extends js.Object
+  sealed trait addCallback extends StObject
+  inline def addCallback: addCallback = "addCallback".asInstanceOf[addCallback]
   
   @js.native
-  sealed trait addCallback extends js.Object
+  sealed trait addChild extends StObject
+  inline def addChild: addChild = "addChild".asInstanceOf[addChild]
   
   @js.native
-  sealed trait addChild extends js.Object
+  sealed trait addChildButtonLabel extends StObject
+  inline def addChildButtonLabel: addChildButtonLabel = "addChildButtonLabel".asInstanceOf[addChildButtonLabel]
   
   @js.native
-  sealed trait addChildButtonLabel extends js.Object
+  sealed trait addChildTooltip extends StObject
+  inline def addChildTooltip: addChildTooltip = "addChildTooltip".asInstanceOf[addChildTooltip]
   
   @js.native
-  sealed trait addChildTooltip extends js.Object
+  sealed trait addDataField extends StObject
+  inline def addDataField: addDataField = "addDataField".asInstanceOf[addDataField]
   
   @js.native
-  sealed trait addDataField extends js.Object
+  sealed trait addDataFields extends StObject
+  inline def addDataFields: addDataFields = "addDataFields".asInstanceOf[addDataFields]
   
   @js.native
-  sealed trait addDataFields extends js.Object
+  sealed trait addField extends StObject
+  inline def addField: addField = "addField".asInstanceOf[addField]
   
   @js.native
-  sealed trait addField extends js.Object
+  sealed trait addItem extends StObject
+  inline def addItem: addItem = "addItem".asInstanceOf[addItem]
   
   @js.native
-  sealed trait addItem extends js.Object
+  sealed trait addMovingDropdown extends StObject
+  inline def addMovingDropdown: addMovingDropdown = "addMovingDropdown".asInstanceOf[addMovingDropdown]
   
   @js.native
-  sealed trait addMovingDropdown extends js.Object
+  sealed trait addNode extends StObject
+  inline def addNode: addNode = "addNode".asInstanceOf[addNode]
   
   @js.native
-  sealed trait addNode extends js.Object
+  sealed trait addRange extends StObject
+  inline def addRange: addRange = "addRange".asInstanceOf[addRange]
   
   @js.native
-  sealed trait addRange extends js.Object
+  sealed trait addRow extends StObject
+  inline def addRow: addRow = "addRow".asInstanceOf[addRow]
   
   @js.native
-  sealed trait addRow extends js.Object
+  sealed trait addRowLabel extends StObject
+  inline def addRowLabel: addRowLabel = "addRowLabel".asInstanceOf[addRowLabel]
   
   @js.native
-  sealed trait addRowLabel extends js.Object
+  sealed trait addRowTooltip extends StObject
+  inline def addRowTooltip: addRowTooltip = "addRowTooltip".asInstanceOf[addRowTooltip]
   
   @js.native
-  sealed trait addRowTooltip extends js.Object
+  sealed trait addSeries extends StObject
+  inline def addSeries: addSeries = "addSeries".asInstanceOf[addSeries]
   
   @js.native
-  sealed trait addSeries extends js.Object
+  sealed trait adjustVirtualHeights extends StObject
+  inline def adjustVirtualHeights: adjustVirtualHeights = "adjustVirtualHeights".asInstanceOf[adjustVirtualHeights]
   
   @js.native
-  sealed trait adjustVirtualHeights extends js.Object
+  sealed trait advancedModeEditorsVisible extends StObject
+  inline def advancedModeEditorsVisible: advancedModeEditorsVisible = "advancedModeEditorsVisible".asInstanceOf[advancedModeEditorsVisible]
   
   @js.native
-  sealed trait advancedModeEditorsVisible extends js.Object
+  sealed trait advancedModeHeaderButtonLocation extends StObject
+  inline def advancedModeHeaderButtonLocation: advancedModeHeaderButtonLocation = "advancedModeHeaderButtonLocation".asInstanceOf[advancedModeHeaderButtonLocation]
   
   @js.native
-  sealed trait advancedModeHeaderButtonLocation extends js.Object
+  sealed trait agendaRangeChanged extends StObject
+  inline def agendaRangeChanged: agendaRangeChanged = "agendaRangeChanged".asInstanceOf[agendaRangeChanged]
   
   @js.native
-  sealed trait agendaRangeChanged extends js.Object
+  sealed trait agendaRangeChanging extends StObject
+  inline def agendaRangeChanging: agendaRangeChanging = "agendaRangeChanging".asInstanceOf[agendaRangeChanging]
   
   @js.native
-  sealed trait agendaRangeChanging extends js.Object
+  sealed trait agendaViewSettings extends StObject
+  inline def agendaViewSettings: agendaViewSettings = "agendaViewSettings".asInstanceOf[agendaViewSettings]
   
   @js.native
-  sealed trait agendaViewSettings extends js.Object
+  sealed trait aggregateTransactions extends StObject
+  inline def aggregateTransactions: aggregateTransactions = "aggregateTransactions".asInstanceOf[aggregateTransactions]
   
   @js.native
-  sealed trait aggregateTransactions extends js.Object
+  sealed trait alignLabel extends StObject
+  inline def alignLabel: alignLabel = "alignLabel".asInstanceOf[alignLabel]
   
   @js.native
-  sealed trait alignLabel extends js.Object
+  sealed trait alignsGridLinesToPixels extends StObject
+  inline def alignsGridLinesToPixels: alignsGridLinesToPixels = "alignsGridLinesToPixels".asInstanceOf[alignsGridLinesToPixels]
   
   @js.native
-  sealed trait alignsGridLinesToPixels extends js.Object
+  sealed trait allChildren extends StObject
+  inline def allChildren: allChildren = "allChildren".asInstanceOf[allChildren]
   
   @js.native
-  sealed trait allChildren extends js.Object
+  sealed trait allChildrenWidgets extends StObject
+  inline def allChildrenWidgets: allChildrenWidgets = "allChildrenWidgets".asInstanceOf[allChildrenWidgets]
   
   @js.native
-  sealed trait allChildrenWidgets extends js.Object
+  sealed trait allFixedRows extends StObject
+  inline def allFixedRows: allFixedRows = "allFixedRows".asInstanceOf[allFixedRows]
   
   @js.native
-  sealed trait allFixedRows extends js.Object
+  sealed trait allRows extends StObject
+  inline def allRows: allRows = "allRows".asInstanceOf[allRows]
   
   @js.native
-  sealed trait allRows extends js.Object
+  sealed trait allTransactions extends StObject
+  inline def allTransactions: allTransactions = "allTransactions".asInstanceOf[allTransactions]
   
   @js.native
-  sealed trait allTransactions extends js.Object
+  sealed trait allowAddWorksheet extends StObject
+  inline def allowAddWorksheet: allowAddWorksheet = "allowAddWorksheet".asInstanceOf[allowAddWorksheet]
   
   @js.native
-  sealed trait allowAddWorksheet extends js.Object
+  sealed trait allowCSSOnTarget extends StObject
+  inline def allowCSSOnTarget: allowCSSOnTarget = "allowCSSOnTarget".asInstanceOf[allowCSSOnTarget]
   
   @js.native
-  sealed trait allowCSSOnTarget extends js.Object
+  sealed trait allowCollapsing extends StObject
+  inline def allowCollapsing: allowCollapsing = "allowCollapsing".asInstanceOf[allowCollapsing]
   
   @js.native
-  sealed trait allowCollapsing extends js.Object
+  sealed trait allowCustomValue extends StObject
+  inline def allowCustomValue: allowCustomValue = "allowCustomValue".asInstanceOf[allowCustomValue]
   
   @js.native
-  sealed trait allowCustomValue extends js.Object
+  sealed trait allowDeleteWorksheet extends StObject
+  inline def allowDeleteWorksheet: allowDeleteWorksheet = "allowDeleteWorksheet".asInstanceOf[allowDeleteWorksheet]
   
   @js.native
-  sealed trait allowDeleteWorksheet extends js.Object
+  sealed trait allowDoubleClickToResize extends StObject
+  inline def allowDoubleClickToResize: allowDoubleClickToResize = "allowDoubleClickToResize".asInstanceOf[allowDoubleClickToResize]
   
   @js.native
-  sealed trait allowDoubleClickToResize extends js.Object
+  sealed trait allowHeaderColumnsSorting extends StObject
+  inline def allowHeaderColumnsSorting: allowHeaderColumnsSorting = "allowHeaderColumnsSorting".asInstanceOf[allowHeaderColumnsSorting]
   
   @js.native
-  sealed trait allowHeaderColumnsSorting extends js.Object
+  sealed trait allowHeaderRowsSorting extends StObject
+  inline def allowHeaderRowsSorting: allowHeaderRowsSorting = "allowHeaderRowsSorting".asInstanceOf[allowHeaderRowsSorting]
   
   @js.native
-  sealed trait allowHeaderRowsSorting extends js.Object
+  sealed trait allowMultipleRangeSelection extends StObject
+  inline def allowMultipleRangeSelection: allowMultipleRangeSelection = "allowMultipleRangeSelection".asInstanceOf[allowMultipleRangeSelection]
   
   @js.native
-  sealed trait allowMultipleRangeSelection extends js.Object
+  sealed trait allowNullValue extends StObject
+  inline def allowNullValue: allowNullValue = "allowNullValue".asInstanceOf[allowNullValue]
   
   @js.native
-  sealed trait allowNullValue extends js.Object
+  sealed trait allowSliceExplosion extends StObject
+  inline def allowSliceExplosion: allowSliceExplosion = "allowSliceExplosion".asInstanceOf[allowSliceExplosion]
   
   @js.native
-  sealed trait allowSliceExplosion extends js.Object
+  sealed trait allowSliceSelection extends StObject
+  inline def allowSliceSelection: allowSliceSelection = "allowSliceSelection".asInstanceOf[allowSliceSelection]
   
   @js.native
-  sealed trait allowSliceSelection extends js.Object
+  sealed trait allowSorting extends StObject
+  inline def allowSorting: allowSorting = "allowSorting".asInstanceOf[allowSorting]
   
   @js.native
-  sealed trait allowSorting extends js.Object
+  sealed trait allowToggling extends StObject
+  inline def allowToggling: allowToggling = "allowToggling".asInstanceOf[allowToggling]
   
   @js.native
-  sealed trait allowToggling extends js.Object
+  sealed trait allowedColumnWidthPerType extends StObject
+  inline def allowedColumnWidthPerType: allowedColumnWidthPerType = "allowedColumnWidthPerType".asInstanceOf[allowedColumnWidthPerType]
   
   @js.native
-  sealed trait allowedColumnWidthPerType extends js.Object
+  sealed trait allowedExtensions extends StObject
+  inline def allowedExtensions: allowedExtensions = "allowedExtensions".asInstanceOf[allowedExtensions]
   
   @js.native
-  sealed trait allowedExtensions extends js.Object
+  sealed trait alternateRowStyles extends StObject
+  inline def alternateRowStyles: alternateRowStyles = "alternateRowStyles".asInstanceOf[alternateRowStyles]
   
   @js.native
-  sealed trait alternateRowStyles extends js.Object
+  sealed trait alwaysVisible extends StObject
+  inline def alwaysVisible: alwaysVisible = "alwaysVisible".asInstanceOf[alwaysVisible]
   
   @js.native
-  sealed trait alwaysVisible extends js.Object
+  sealed trait animate extends StObject
+  inline def animate: animate = "animate".asInstanceOf[animate]
   
   @js.native
-  sealed trait animate extends js.Object
+  sealed trait animateSeriesWhenAxisRangeChanges extends StObject
+  inline def animateSeriesWhenAxisRangeChanges: animateSeriesWhenAxisRangeChanges = "animateSeriesWhenAxisRangeChanges".asInstanceOf[animateSeriesWhenAxisRangeChanges]
   
   @js.native
-  sealed trait animateSeriesWhenAxisRangeChanges extends js.Object
+  sealed trait animateTimeout extends StObject
+  inline def animateTimeout: animateTimeout = "animateTimeout".asInstanceOf[animateTimeout]
   
   @js.native
-  sealed trait animateTimeout extends js.Object
+  sealed trait animationDuration extends StObject
+  inline def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
   
   @js.native
-  sealed trait animationDuration extends js.Object
+  sealed trait animationEnded extends StObject
+  inline def animationEnded: animationEnded = "animationEnded".asInstanceOf[animationEnded]
   
   @js.native
-  sealed trait animationEnded extends js.Object
+  sealed trait animationHideDuration extends StObject
+  inline def animationHideDuration: animationHideDuration = "animationHideDuration".asInstanceOf[animationHideDuration]
   
   @js.native
-  sealed trait animationHideDuration extends js.Object
+  sealed trait animationShowDuration extends StObject
+  inline def animationShowDuration: animationShowDuration = "animationShowDuration".asInstanceOf[animationShowDuration]
   
   @js.native
-  sealed trait animationShowDuration extends js.Object
+  sealed trait animationSlideDistance extends StObject
+  inline def animationSlideDistance: animationSlideDistance = "animationSlideDistance".asInstanceOf[animationSlideDistance]
   
   @js.native
-  sealed trait animationSlideDistance extends js.Object
+  sealed trait appendTo extends StObject
+  inline def appendTo: appendTo = "appendTo".asInstanceOf[appendTo]
   
   @js.native
-  sealed trait appendTo extends js.Object
+  sealed trait applicationIndicator extends StObject
+  inline def applicationIndicator: applicationIndicator = "applicationIndicator".asInstanceOf[applicationIndicator]
   
   @js.native
-  sealed trait applicationIndicator extends js.Object
+  sealed trait appliedColumnSortDirections extends StObject
+  inline def appliedColumnSortDirections: appliedColumnSortDirections = "appliedColumnSortDirections".asInstanceOf[appliedColumnSortDirections]
   
   @js.native
-  sealed trait appliedColumnSortDirections extends js.Object
+  sealed trait appliedLevelSortDirections extends StObject
+  inline def appliedLevelSortDirections: appliedLevelSortDirections = "appliedLevelSortDirections".asInstanceOf[appliedLevelSortDirections]
   
   @js.native
-  sealed trait appliedLevelSortDirections extends js.Object
+  sealed trait apply extends StObject
+  inline def apply: apply = "apply".asInstanceOf[apply]
   
   @js.native
-  sealed trait apply extends js.Object
+  sealed trait applyChangesToNode extends StObject
+  inline def applyChangesToNode: applyChangesToNode = "applyChangesToNode".asInstanceOf[applyChangesToNode]
   
   @js.native
-  sealed trait applyChangesToNode extends js.Object
+  sealed trait applyCustomIndicators extends StObject
+  inline def applyCustomIndicators: applyCustomIndicators = "applyCustomIndicators".asInstanceOf[applyCustomIndicators]
   
   @js.native
-  sealed trait applyCustomIndicators extends js.Object
+  sealed trait applySortedColumnCss extends StObject
+  inline def applySortedColumnCss: applySortedColumnCss = "applySortedColumnCss".asInstanceOf[applySortedColumnCss]
   
   @js.native
-  sealed trait applySortedColumnCss extends js.Object
+  sealed trait appointmentCreated extends StObject
+  inline def appointmentCreated: appointmentCreated = "appointmentCreated".asInstanceOf[appointmentCreated]
   
   @js.native
-  sealed trait appointmentCreated extends js.Object
+  sealed trait appointmentCreating extends StObject
+  inline def appointmentCreating: appointmentCreating = "appointmentCreating".asInstanceOf[appointmentCreating]
   
   @js.native
-  sealed trait appointmentCreating extends js.Object
+  sealed trait appointmentDeleted extends StObject
+  inline def appointmentDeleted: appointmentDeleted = "appointmentDeleted".asInstanceOf[appointmentDeleted]
   
   @js.native
-  sealed trait appointmentDeleted extends js.Object
+  sealed trait appointmentDeleting extends StObject
+  inline def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
   
   @js.native
-  sealed trait appointmentDeleting extends js.Object
+  sealed trait appointmentDialogClosed extends StObject
+  inline def appointmentDialogClosed: appointmentDialogClosed = "appointmentDialogClosed".asInstanceOf[appointmentDialogClosed]
   
   @js.native
-  sealed trait appointmentDialogClosed extends js.Object
+  sealed trait appointmentDialogClosing extends StObject
+  inline def appointmentDialogClosing: appointmentDialogClosing = "appointmentDialogClosing".asInstanceOf[appointmentDialogClosing]
   
   @js.native
-  sealed trait appointmentDialogClosing extends js.Object
+  sealed trait appointmentDialogOpened extends StObject
+  inline def appointmentDialogOpened: appointmentDialogOpened = "appointmentDialogOpened".asInstanceOf[appointmentDialogOpened]
   
   @js.native
-  sealed trait appointmentDialogOpened extends js.Object
+  sealed trait appointmentDialogOpening extends StObject
+  inline def appointmentDialogOpening: appointmentDialogOpening = "appointmentDialogOpening".asInstanceOf[appointmentDialogOpening]
   
   @js.native
-  sealed trait appointmentDialogOpening extends js.Object
+  sealed trait appointmentDialogSuppress extends StObject
+  inline def appointmentDialogSuppress: appointmentDialogSuppress = "appointmentDialogSuppress".asInstanceOf[appointmentDialogSuppress]
   
   @js.native
-  sealed trait appointmentDialogSuppress extends js.Object
+  sealed trait appointmentEdited extends StObject
+  inline def appointmentEdited: appointmentEdited = "appointmentEdited".asInstanceOf[appointmentEdited]
   
   @js.native
-  sealed trait appointmentEdited extends js.Object
+  sealed trait appointmentEditing extends StObject
+  inline def appointmentEditing: appointmentEditing = "appointmentEditing".asInstanceOf[appointmentEditing]
   
   @js.native
-  sealed trait appointmentEditing extends js.Object
+  sealed trait areGridlinesVisible extends StObject
+  inline def areGridlinesVisible: areGridlinesVisible = "areGridlinesVisible".asInstanceOf[areGridlinesVisible]
   
   @js.native
-  sealed trait areGridlinesVisible extends js.Object
+  sealed trait areHeadersVisible extends StObject
+  inline def areHeadersVisible: areHeadersVisible = "areHeadersVisible".asInstanceOf[areHeadersVisible]
   
   @js.native
-  sealed trait areHeadersVisible extends js.Object
+  sealed trait areThumbCalloutsEnabled extends StObject
+  inline def areThumbCalloutsEnabled: areThumbCalloutsEnabled = "areThumbCalloutsEnabled".asInstanceOf[areThumbCalloutsEnabled]
   
   @js.native
-  sealed trait areThumbCalloutsEnabled extends js.Object
+  sealed trait arrowLocation extends StObject
+  inline def arrowLocation: arrowLocation = "arrowLocation".asInstanceOf[arrowLocation]
   
   @js.native
-  sealed trait arrowLocation extends js.Object
+  sealed trait assigningCategoryMarkerStyle extends StObject
+  inline def assigningCategoryMarkerStyle: assigningCategoryMarkerStyle = "assigningCategoryMarkerStyle".asInstanceOf[assigningCategoryMarkerStyle]
   
   @js.native
-  sealed trait assigningCategoryMarkerStyle extends js.Object
+  sealed trait assigningCategoryStyle extends StObject
+  inline def assigningCategoryStyle: assigningCategoryStyle = "assigningCategoryStyle".asInstanceOf[assigningCategoryStyle]
   
   @js.native
-  sealed trait assigningCategoryStyle extends js.Object
+  sealed trait attachFilePicker extends StObject
+  inline def attachFilePicker: attachFilePicker = "attachFilePicker".asInstanceOf[attachFilePicker]
   
   @js.native
-  sealed trait attachFilePicker extends js.Object
+  sealed trait autoAdjustHeight extends StObject
+  inline def autoAdjustHeight: autoAdjustHeight = "autoAdjustHeight".asInstanceOf[autoAdjustHeight]
   
   @js.native
-  sealed trait autoAdjustHeight extends js.Object
+  sealed trait autoCommit extends StObject
+  inline def autoCommit: autoCommit = "autoCommit".asInstanceOf[autoCommit]
   
   @js.native
-  sealed trait autoCommit extends js.Object
+  sealed trait autoComplete extends StObject
+  inline def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
   
   @js.native
-  sealed trait autoComplete extends js.Object
+  sealed trait autoFormat extends StObject
+  inline def autoFormat: autoFormat = "autoFormat".asInstanceOf[autoFormat]
   
   @js.native
-  sealed trait autoFormat extends js.Object
+  sealed trait autoGenerateColumns extends StObject
+  inline def autoGenerateColumns: autoGenerateColumns = "autoGenerateColumns".asInstanceOf[autoGenerateColumns]
   
   @js.native
-  sealed trait autoGenerateColumns extends js.Object
+  sealed trait autoGenerateLayouts extends StObject
+  inline def autoGenerateLayouts: autoGenerateLayouts = "autoGenerateLayouts".asInstanceOf[autoGenerateLayouts]
   
   @js.native
-  sealed trait autoGenerateLayouts extends js.Object
+  sealed trait autoMarginHeight extends StObject
+  inline def autoMarginHeight: autoMarginHeight = "autoMarginHeight".asInstanceOf[autoMarginHeight]
   
   @js.native
-  sealed trait autoMarginHeight extends js.Object
+  sealed trait autoMarginWidth extends StObject
+  inline def autoMarginWidth: autoMarginWidth = "autoMarginWidth".asInstanceOf[autoMarginWidth]
   
   @js.native
-  sealed trait autoMarginWidth extends js.Object
+  sealed trait autoSelectFirstMatch extends StObject
+  inline def autoSelectFirstMatch: autoSelectFirstMatch = "autoSelectFirstMatch".asInstanceOf[autoSelectFirstMatch]
   
   @js.native
-  sealed trait autoSelectFirstMatch extends js.Object
+  sealed trait autoSizeColumns extends StObject
+  inline def autoSizeColumns: autoSizeColumns = "autoSizeColumns".asInstanceOf[autoSizeColumns]
   
   @js.native
-  sealed trait autoSizeColumns extends js.Object
+  sealed trait autofitLastColumn extends StObject
+  inline def autofitLastColumn: autofitLastColumn = "autofitLastColumn".asInstanceOf[autofitLastColumn]
   
   @js.native
-  sealed trait autofitLastColumn extends js.Object
+  sealed trait autohide extends StObject
+  inline def autohide: autohide = "autohide".asInstanceOf[autohide]
   
   @js.native
-  sealed trait autohide extends js.Object
+  sealed trait autoplay extends StObject
+  inline def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
   
   @js.native
-  sealed trait autoplay extends js.Object
+  sealed trait autoselect extends StObject
+  inline def autoselect: autoselect = "autoselect".asInstanceOf[autoselect]
   
   @js.native
-  sealed trait autoselect extends js.Object
+  sealed trait autostartupload extends StObject
+  inline def autostartupload: autostartupload = "autostartupload".asInstanceOf[autostartupload]
   
   @js.native
-  sealed trait autostartupload extends js.Object
+  sealed trait avgColumnWidth extends StObject
+  inline def avgColumnWidth: avgColumnWidth = "avgColumnWidth".asInstanceOf[avgColumnWidth]
   
   @js.native
-  sealed trait avgColumnWidth extends js.Object
+  sealed trait avgRowHeight extends StObject
+  inline def avgRowHeight: avgRowHeight = "avgRowHeight".asInstanceOf[avgRowHeight]
   
   @js.native
-  sealed trait avgRowHeight extends js.Object
+  sealed trait axes extends StObject
+  inline def axes: axes = "axes".asInstanceOf[axes]
   
   @js.native
-  sealed trait axes extends js.Object
+  sealed trait axisRangeChanged extends StObject
+  inline def axisRangeChanged: axisRangeChanged = "axisRangeChanged".asInstanceOf[axisRangeChanged]
   
   @js.native
-  sealed trait axisRangeChanged extends js.Object
+  sealed trait backgroundContent extends StObject
+  inline def backgroundContent: backgroundContent = "backgroundContent".asInstanceOf[backgroundContent]
   
   @js.native
-  sealed trait backgroundContent extends js.Object
+  sealed trait backingBrush extends StObject
+  inline def backingBrush: backingBrush = "backingBrush".asInstanceOf[backingBrush]
   
   @js.native
-  sealed trait backingBrush extends js.Object
+  sealed trait backingCornerRadius extends StObject
+  inline def backingCornerRadius: backingCornerRadius = "backingCornerRadius".asInstanceOf[backingCornerRadius]
   
   @js.native
-  sealed trait backingCornerRadius extends js.Object
+  sealed trait backingInnerExtent extends StObject
+  inline def backingInnerExtent: backingInnerExtent = "backingInnerExtent".asInstanceOf[backingInnerExtent]
   
   @js.native
-  sealed trait backingInnerExtent extends js.Object
+  sealed trait backingOuterExtent extends StObject
+  inline def backingOuterExtent: backingOuterExtent = "backingOuterExtent".asInstanceOf[backingOuterExtent]
   
   @js.native
-  sealed trait backingOuterExtent extends js.Object
+  sealed trait backingOutline extends StObject
+  inline def backingOutline: backingOutline = "backingOutline".asInstanceOf[backingOutline]
   
   @js.native
-  sealed trait backingOutline extends js.Object
+  sealed trait backingOversweep extends StObject
+  inline def backingOversweep: backingOversweep = "backingOversweep".asInstanceOf[backingOversweep]
   
   @js.native
-  sealed trait backingOversweep extends js.Object
+  sealed trait backingShape extends StObject
+  inline def backingShape: backingShape = "backingShape".asInstanceOf[backingShape]
   
   @js.native
-  sealed trait backingShape extends js.Object
+  sealed trait backingStrokeThickness extends StObject
+  inline def backingStrokeThickness: backingStrokeThickness = "backingStrokeThickness".asInstanceOf[backingStrokeThickness]
   
   @js.native
-  sealed trait backingStrokeThickness extends js.Object
+  sealed trait bannerClick extends StObject
+  inline def bannerClick: bannerClick = "bannerClick".asInstanceOf[bannerClick]
   
   @js.native
-  sealed trait bannerClick extends js.Object
+  sealed trait bannerHidden extends StObject
+  inline def bannerHidden: bannerHidden = "bannerHidden".asInstanceOf[bannerHidden]
   
   @js.native
-  sealed trait bannerHidden extends js.Object
+  sealed trait bannerVisible extends StObject
+  inline def bannerVisible: bannerVisible = "bannerVisible".asInstanceOf[bannerVisible]
   
   @js.native
-  sealed trait bannerVisible extends js.Object
+  sealed trait banners extends StObject
+  inline def banners: banners = "banners".asInstanceOf[banners]
   
   @js.native
-  sealed trait banners extends js.Object
+  sealed trait barBrush extends StObject
+  inline def barBrush: barBrush = "barBrush".asInstanceOf[barBrush]
   
   @js.native
-  sealed trait barBrush extends js.Object
+  sealed trait barExtent extends StObject
+  inline def barExtent: barExtent = "barExtent".asInstanceOf[barExtent]
   
   @js.native
-  sealed trait barExtent extends js.Object
+  sealed trait barOutline extends StObject
+  inline def barOutline: barOutline = "barOutline".asInstanceOf[barOutline]
   
   @js.native
-  sealed trait barOutline extends js.Object
+  sealed trait barStrokeThickness extends StObject
+  inline def barStrokeThickness: barStrokeThickness = "barStrokeThickness".asInstanceOf[barStrokeThickness]
   
   @js.native
-  sealed trait barStrokeThickness extends js.Object
+  sealed trait barsFillMode extends StObject
+  inline def barsFillMode: barsFillMode = "barsFillMode".asInstanceOf[barsFillMode]
   
   @js.native
-  sealed trait barsFillMode extends js.Object
+  sealed trait bezierPoints extends StObject
+  inline def bezierPoints: bezierPoints = "bezierPoints".asInstanceOf[bezierPoints]
   
   @js.native
-  sealed trait bezierPoints extends js.Object
+  sealed trait bigIncrementStep extends StObject
+  inline def bigIncrementStep: bigIncrementStep = "bigIncrementStep".asInstanceOf[bigIncrementStep]
   
   @js.native
-  sealed trait bigIncrementStep extends js.Object
+  sealed trait bindings extends StObject
+  inline def bindings: bindings = "bindings".asInstanceOf[bindings]
   
   @js.native
-  sealed trait bindings extends js.Object
+  sealed trait blur extends StObject
+  inline def blur: blur = "blur".asInstanceOf[blur]
   
   @js.native
-  sealed trait blur extends js.Object
+  sealed trait bookmarkClick extends StObject
+  inline def bookmarkClick: bookmarkClick = "bookmarkClick".asInstanceOf[bookmarkClick]
   
   @js.native
-  sealed trait bookmarkClick extends js.Object
+  sealed trait bookmarkHit extends StObject
+  inline def bookmarkHit: bookmarkHit = "bookmarkHit".asInstanceOf[bookmarkHit]
   
   @js.native
-  sealed trait bookmarkHit extends js.Object
+  sealed trait bookmarks extends StObject
+  inline def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
   
   @js.native
-  sealed trait bookmarks extends js.Object
+  sealed trait borderLayout extends StObject
+  inline def borderLayout: borderLayout = "borderLayout".asInstanceOf[borderLayout]
   
   @js.native
-  sealed trait borderLayout extends js.Object
+  sealed trait bottomEdgeWidth extends StObject
+  inline def bottomEdgeWidth: bottomEdgeWidth = "bottomEdgeWidth".asInstanceOf[bottomEdgeWidth]
   
   @js.native
-  sealed trait bottomEdgeWidth extends js.Object
+  sealed trait bottomMargin extends StObject
+  inline def bottomMargin: bottomMargin = "bottomMargin".asInstanceOf[bottomMargin]
   
   @js.native
-  sealed trait bottomMargin extends js.Object
+  sealed trait breadcrumbDelimiter extends StObject
+  inline def breadcrumbDelimiter: breadcrumbDelimiter = "breadcrumbDelimiter".asInstanceOf[breadcrumbDelimiter]
   
   @js.native
-  sealed trait breadcrumbDelimiter extends js.Object
+  sealed trait breadcrumbKey extends StObject
+  inline def breadcrumbKey: breadcrumbKey = "breadcrumbKey".asInstanceOf[breadcrumbKey]
   
   @js.native
-  sealed trait breadcrumbKey extends js.Object
+  sealed trait browserControls extends StObject
+  inline def browserControls: browserControls = "browserControls".asInstanceOf[browserControls]
   
   @js.native
-  sealed trait browserControls extends js.Object
+  sealed trait browserNotSupported extends StObject
+  inline def browserNotSupported: browserNotSupported = "browserNotSupported".asInstanceOf[browserNotSupported]
   
   @js.native
-  sealed trait browserNotSupported extends js.Object
+  sealed trait brush extends StObject
+  inline def brush: brush = "brush".asInstanceOf[brush]
   
   @js.native
-  sealed trait brush extends js.Object
+  sealed trait brushes extends StObject
+  inline def brushes: brushes = "brushes".asInstanceOf[brushes]
   
   @js.native
-  sealed trait brushes extends js.Object
+  sealed trait buffering extends StObject
+  inline def buffering: buffering = "buffering".asInstanceOf[buffering]
   
   @js.native
-  sealed trait buffering extends js.Object
+  sealed trait buttonApplyDisabled extends StObject
+  inline def buttonApplyDisabled: buttonApplyDisabled = "buttonApplyDisabled".asInstanceOf[buttonApplyDisabled]
   
   @js.native
-  sealed trait buttonApplyDisabled extends js.Object
+  sealed trait buttonCancelClick extends StObject
+  inline def buttonCancelClick: buttonCancelClick = "buttonCancelClick".asInstanceOf[buttonCancelClick]
   
   @js.native
-  sealed trait buttonCancelClick extends js.Object
+  sealed trait buttonOKClick extends StObject
+  inline def buttonOKClick: buttonOKClick = "buttonOKClick".asInstanceOf[buttonOKClick]
   
   @js.native
-  sealed trait buttonOKClick extends js.Object
+  sealed trait buttonType extends StObject
+  inline def buttonType: buttonType = "buttonType".asInstanceOf[buttonType]
   
   @js.native
-  sealed trait buttonType extends js.Object
+  sealed trait calculateAutoFitColumnWidth extends StObject
+  inline def calculateAutoFitColumnWidth: calculateAutoFitColumnWidth = "calculateAutoFitColumnWidth".asInstanceOf[calculateAutoFitColumnWidth]
   
   @js.native
-  sealed trait calculateAutoFitColumnWidth extends js.Object
+  sealed trait calculateRenderMode extends StObject
+  inline def calculateRenderMode: calculateRenderMode = "calculateRenderMode".asInstanceOf[calculateRenderMode]
   
   @js.native
-  sealed trait calculateRenderMode extends js.Object
+  sealed trait calculateSummaries extends StObject
+  inline def calculateSummaries: calculateSummaries = "calculateSummaries".asInstanceOf[calculateSummaries]
   
   @js.native
-  sealed trait calculateSummaries extends js.Object
+  sealed trait calculateSummaryColumn extends StObject
+  inline def calculateSummaryColumn: calculateSummaryColumn = "calculateSummaryColumn".asInstanceOf[calculateSummaryColumn]
   
   @js.native
-  sealed trait calculateSummaryColumn extends js.Object
+  sealed trait callee extends StObject
+  inline def callee: callee = "callee".asInstanceOf[callee]
   
   @js.native
-  sealed trait callee extends js.Object
+  sealed trait calloutStyleUpdating extends StObject
+  inline def calloutStyleUpdating: calloutStyleUpdating = "calloutStyleUpdating".asInstanceOf[calloutStyleUpdating]
   
   @js.native
-  sealed trait calloutStyleUpdating extends js.Object
+  sealed trait calloutStyleUpdatingEventEnabled extends StObject
+  inline def calloutStyleUpdatingEventEnabled: calloutStyleUpdatingEventEnabled = "calloutStyleUpdatingEventEnabled".asInstanceOf[calloutStyleUpdatingEventEnabled]
   
   @js.native
-  sealed trait calloutStyleUpdatingEventEnabled extends js.Object
+  sealed trait calloutsContentMemberPath extends StObject
+  inline def calloutsContentMemberPath: calloutsContentMemberPath = "calloutsContentMemberPath".asInstanceOf[calloutsContentMemberPath]
   
   @js.native
-  sealed trait calloutsContentMemberPath extends js.Object
+  sealed trait calloutsItemsSource extends StObject
+  inline def calloutsItemsSource: calloutsItemsSource = "calloutsItemsSource".asInstanceOf[calloutsItemsSource]
   
   @js.native
-  sealed trait calloutsItemsSource extends js.Object
+  sealed trait calloutsLabelMemberPath extends StObject
+  inline def calloutsLabelMemberPath: calloutsLabelMemberPath = "calloutsLabelMemberPath".asInstanceOf[calloutsLabelMemberPath]
   
   @js.native
-  sealed trait calloutsLabelMemberPath extends js.Object
+  sealed trait calloutsVisible extends StObject
+  inline def calloutsVisible: calloutsVisible = "calloutsVisible".asInstanceOf[calloutsVisible]
   
   @js.native
-  sealed trait calloutsVisible extends js.Object
+  sealed trait calloutsXMemberPath extends StObject
+  inline def calloutsXMemberPath: calloutsXMemberPath = "calloutsXMemberPath".asInstanceOf[calloutsXMemberPath]
   
   @js.native
-  sealed trait calloutsXMemberPath extends js.Object
+  sealed trait calloutsYMemberPath extends StObject
+  inline def calloutsYMemberPath: calloutsYMemberPath = "calloutsYMemberPath".asInstanceOf[calloutsYMemberPath]
   
   @js.native
-  sealed trait calloutsYMemberPath extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait cancelAll extends StObject
+  inline def cancelAll: cancelAll = "cancelAll".asInstanceOf[cancelAll]
   
   @js.native
-  sealed trait cancelAll extends js.Object
+  sealed trait cancelAllClicked extends StObject
+  inline def cancelAllClicked: cancelAllClicked = "cancelAllClicked".asInstanceOf[cancelAllClicked]
   
   @js.native
-  sealed trait cancelAllClicked extends js.Object
+  sealed trait cancelLabel extends StObject
+  inline def cancelLabel: cancelLabel = "cancelLabel".asInstanceOf[cancelLabel]
   
   @js.native
-  sealed trait cancelLabel extends js.Object
+  sealed trait cancelTooltip extends StObject
+  inline def cancelTooltip: cancelTooltip = "cancelTooltip".asInstanceOf[cancelTooltip]
   
   @js.native
-  sealed trait cancelTooltip extends js.Object
+  sealed trait cancelUpload extends StObject
+  inline def cancelUpload: cancelUpload = "cancelUpload".asInstanceOf[cancelUpload]
   
   @js.native
-  sealed trait cancelUpload extends js.Object
+  sealed trait caption extends StObject
+  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
-  sealed trait caption extends js.Object
+  sealed trait captionRendered extends StObject
+  inline def captionRendered: captionRendered = "captionRendered".asInstanceOf[captionRendered]
   
   @js.native
-  sealed trait captionRendered extends js.Object
+  sealed trait captionRendering extends StObject
+  inline def captionRendering: captionRendering = "captionRendering".asInstanceOf[captionRendering]
   
   @js.native
-  sealed trait captionRendering extends js.Object
+  sealed trait capture extends StObject
+  inline def capture: capture = "capture".asInstanceOf[capture]
   
   @js.native
-  sealed trait capture extends js.Object
+  sealed trait caseSensitive extends StObject
+  inline def caseSensitive: caseSensitive = "caseSensitive".asInstanceOf[caseSensitive]
   
   @js.native
-  sealed trait caseSensitive extends js.Object
+  sealed trait cellAt extends StObject
+  inline def cellAt: cellAt = "cellAt".asInstanceOf[cellAt]
   
   @js.native
-  sealed trait cellAt extends js.Object
+  sealed trait cellById extends StObject
+  inline def cellById: cellById = "cellById".asInstanceOf[cellById]
   
   @js.native
-  sealed trait cellById extends js.Object
+  sealed trait cellClick extends StObject
+  inline def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
   
   @js.native
-  sealed trait cellClick extends js.Object
+  sealed trait cellRightClick extends StObject
+  inline def cellRightClick: cellRightClick = "cellRightClick".asInstanceOf[cellRightClick]
   
   @js.native
-  sealed trait cellRightClick extends js.Object
+  sealed trait cellSelectionChanged extends StObject
+  inline def cellSelectionChanged: cellSelectionChanged = "cellSelectionChanged".asInstanceOf[cellSelectionChanged]
   
   @js.native
-  sealed trait cellSelectionChanged extends js.Object
+  sealed trait cellSelectionChanging extends StObject
+  inline def cellSelectionChanging: cellSelectionChanging = "cellSelectionChanging".asInstanceOf[cellSelectionChanging]
   
   @js.native
-  sealed trait cellSelectionChanging extends js.Object
+  sealed trait cellsMerged extends StObject
+  inline def cellsMerged: cellsMerged = "cellsMerged".asInstanceOf[cellsMerged]
   
   @js.native
-  sealed trait cellsMerged extends js.Object
+  sealed trait cellsMerging extends StObject
+  inline def cellsMerging: cellsMerging = "cellsMerging".asInstanceOf[cellsMerging]
   
   @js.native
-  sealed trait cellsMerging extends js.Object
+  sealed trait centerButtonClosedFill extends StObject
+  inline def centerButtonClosedFill: centerButtonClosedFill = "centerButtonClosedFill".asInstanceOf[centerButtonClosedFill]
   
   @js.native
-  sealed trait centerButtonClosedFill extends js.Object
+  sealed trait centerButtonClosedStroke extends StObject
+  inline def centerButtonClosedStroke: centerButtonClosedStroke = "centerButtonClosedStroke".asInstanceOf[centerButtonClosedStroke]
   
   @js.native
-  sealed trait centerButtonClosedStroke extends js.Object
+  sealed trait centerButtonContentHeight extends StObject
+  inline def centerButtonContentHeight: centerButtonContentHeight = "centerButtonContentHeight".asInstanceOf[centerButtonContentHeight]
   
   @js.native
-  sealed trait centerButtonContentHeight extends js.Object
+  sealed trait centerButtonContentWidth extends StObject
+  inline def centerButtonContentWidth: centerButtonContentWidth = "centerButtonContentWidth".asInstanceOf[centerButtonContentWidth]
   
   @js.native
-  sealed trait centerButtonContentWidth extends js.Object
+  sealed trait centerButtonFill extends StObject
+  inline def centerButtonFill: centerButtonFill = "centerButtonFill".asInstanceOf[centerButtonFill]
   
   @js.native
-  sealed trait centerButtonFill extends js.Object
+  sealed trait centerButtonHideDelay extends StObject
+  inline def centerButtonHideDelay: centerButtonHideDelay = "centerButtonHideDelay".asInstanceOf[centerButtonHideDelay]
   
   @js.native
-  sealed trait centerButtonHideDelay extends js.Object
+  sealed trait centerButtonHotTrackFill extends StObject
+  inline def centerButtonHotTrackFill: centerButtonHotTrackFill = "centerButtonHotTrackFill".asInstanceOf[centerButtonHotTrackFill]
   
   @js.native
-  sealed trait centerButtonHotTrackFill extends js.Object
+  sealed trait centerButtonHotTrackStroke extends StObject
+  inline def centerButtonHotTrackStroke: centerButtonHotTrackStroke = "centerButtonHotTrackStroke".asInstanceOf[centerButtonHotTrackStroke]
   
   @js.native
-  sealed trait centerButtonHotTrackStroke extends js.Object
+  sealed trait centerButtonStroke extends StObject
+  inline def centerButtonStroke: centerButtonStroke = "centerButtonStroke".asInstanceOf[centerButtonStroke]
   
   @js.native
-  sealed trait centerButtonStroke extends js.Object
+  sealed trait centerButtonStrokeThickness extends StObject
+  inline def centerButtonStrokeThickness: centerButtonStrokeThickness = "centerButtonStrokeThickness".asInstanceOf[centerButtonStrokeThickness]
   
   @js.native
-  sealed trait centerButtonStrokeThickness extends js.Object
+  sealed trait centerLabel extends StObject
+  inline def centerLabel: centerLabel = "centerLabel".asInstanceOf[centerLabel]
   
   @js.native
-  sealed trait centerLabel extends js.Object
+  sealed trait centerX extends StObject
+  inline def centerX: centerX = "centerX".asInstanceOf[centerX]
   
   @js.native
-  sealed trait centerX extends js.Object
+  sealed trait centerY extends StObject
+  inline def centerY: centerY = "centerY".asInstanceOf[centerY]
   
   @js.native
-  sealed trait centerY extends js.Object
+  sealed trait centuryThreshold extends StObject
+  inline def centuryThreshold: centuryThreshold = "centuryThreshold".asInstanceOf[centuryThreshold]
   
   @js.native
-  sealed trait centuryThreshold extends js.Object
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait changeCheckState extends StObject
+  inline def changeCheckState: changeCheckState = "changeCheckState".asInstanceOf[changeCheckState]
   
   @js.native
-  sealed trait changeCheckState extends js.Object
+  sealed trait changeCheckStateById extends StObject
+  inline def changeCheckStateById: changeCheckStateById = "changeCheckStateById".asInstanceOf[changeCheckStateById]
   
   @js.native
-  sealed trait changeCheckStateById extends js.Object
+  sealed trait changeGlobalLanguage extends StObject
+  inline def changeGlobalLanguage: changeGlobalLanguage = "changeGlobalLanguage".asInstanceOf[changeGlobalLanguage]
   
   @js.native
-  sealed trait changeGlobalLanguage extends js.Object
+  sealed trait changeGlobalRegional extends StObject
+  inline def changeGlobalRegional: changeGlobalRegional = "changeGlobalRegional".asInstanceOf[changeGlobalRegional]
   
   @js.native
-  sealed trait changeGlobalRegional extends js.Object
+  sealed trait changeLocale extends StObject
+  inline def changeLocale: changeLocale = "changeLocale".asInstanceOf[changeLocale]
   
   @js.native
-  sealed trait changeLocale extends js.Object
+  sealed trait changeRegional extends StObject
+  inline def changeRegional: changeRegional = "changeRegional".asInstanceOf[changeRegional]
   
   @js.native
-  sealed trait changeRegional extends js.Object
+  sealed trait chart extends StObject
+  inline def chart: chart = "chart".asInstanceOf[chart]
   
   @js.native
-  sealed trait chart extends js.Object
+  sealed trait chartType extends StObject
+  inline def chartType: chartType = "chartType".asInstanceOf[chartType]
   
   @js.native
-  sealed trait chartType extends js.Object
+  sealed trait chartTypePickerTemplate extends StObject
+  inline def chartTypePickerTemplate: chartTypePickerTemplate = "chartTypePickerTemplate".asInstanceOf[chartTypePickerTemplate]
   
   @js.native
-  sealed trait chartTypePickerTemplate extends js.Object
+  sealed trait checkAndSyncHeights extends StObject
+  inline def checkAndSyncHeights: checkAndSyncHeights = "checkAndSyncHeights".asInstanceOf[checkAndSyncHeights]
   
   @js.native
-  sealed trait checkAndSyncHeights extends js.Object
+  sealed trait checkBoxMode extends StObject
+  inline def checkBoxMode: checkBoxMode = "checkBoxMode".asInstanceOf[checkBoxMode]
   
   @js.native
-  sealed trait checkBoxMode extends js.Object
+  sealed trait checkBoxStateChanged extends StObject
+  inline def checkBoxStateChanged: checkBoxStateChanged = "checkBoxStateChanged".asInstanceOf[checkBoxStateChanged]
   
   @js.native
-  sealed trait checkBoxStateChanged extends js.Object
+  sealed trait checkBoxStateChanging extends StObject
+  inline def checkBoxStateChanging: checkBoxStateChanging = "checkBoxStateChanging".asInstanceOf[checkBoxStateChanging]
   
   @js.native
-  sealed trait checkBoxStateChanging extends js.Object
+  sealed trait checkColumnIsGrouped extends StObject
+  inline def checkColumnIsGrouped: checkColumnIsGrouped = "checkColumnIsGrouped".asInstanceOf[checkColumnIsGrouped]
   
   @js.native
-  sealed trait checkColumnIsGrouped extends js.Object
+  sealed trait checkFixingAllowed extends StObject
+  inline def checkFixingAllowed: checkFixingAllowed = "checkFixingAllowed".asInstanceOf[checkFixingAllowed]
   
   @js.native
-  sealed trait checkFixingAllowed extends js.Object
+  sealed trait checkNode extends StObject
+  inline def checkNode: checkNode = "checkNode".asInstanceOf[checkNode]
   
   @js.native
-  sealed trait checkNode extends js.Object
+  sealed trait checkState extends StObject
+  inline def checkState: checkState = "checkState".asInstanceOf[checkState]
   
   @js.native
-  sealed trait checkState extends js.Object
+  sealed trait checkStateById extends StObject
+  inline def checkStateById: checkStateById = "checkStateById".asInstanceOf[checkStateById]
   
   @js.native
-  sealed trait checkStateById extends js.Object
+  sealed trait checkUnfixingAllowed extends StObject
+  inline def checkUnfixingAllowed: checkUnfixingAllowed = "checkUnfixingAllowed".asInstanceOf[checkUnfixingAllowed]
   
   @js.native
-  sealed trait checkUnfixingAllowed extends js.Object
+  sealed trait checkboxMode_ extends StObject
+  inline def checkboxMode_ : checkboxMode_ = "checkboxMode".asInstanceOf[checkboxMode_]
   
   @js.native
-  sealed trait checkboxMode_ extends js.Object
+  sealed trait checked extends StObject
+  inline def checked: checked = "checked".asInstanceOf[checked]
   
   @js.native
-  sealed trait checked extends js.Object
+  sealed trait checkedNodes extends StObject
+  inline def checkedNodes: checkedNodes = "checkedNodes".asInstanceOf[checkedNodes]
   
   @js.native
-  sealed trait checkedNodes extends js.Object
+  sealed trait checkedRows extends StObject
+  inline def checkedRows: checkedRows = "checkedRows".asInstanceOf[checkedRows]
   
   @js.native
-  sealed trait checkedRows extends js.Object
+  sealed trait childDataKey extends StObject
+  inline def childDataKey: childDataKey = "childDataKey".asInstanceOf[childDataKey]
   
   @js.native
-  sealed trait childDataKey extends js.Object
+  sealed trait childGridCreated extends StObject
+  inline def childGridCreated: childGridCreated = "childGridCreated".asInstanceOf[childGridCreated]
   
   @js.native
-  sealed trait childGridCreated extends js.Object
+  sealed trait childGridCreating extends StObject
+  inline def childGridCreating: childGridCreating = "childGridCreating".asInstanceOf[childGridCreating]
   
   @js.native
-  sealed trait childGridCreating extends js.Object
+  sealed trait childGridRendered extends StObject
+  inline def childGridRendered: childGridRendered = "childGridRendered".asInstanceOf[childGridRendered]
   
   @js.native
-  sealed trait childGridRendered extends js.Object
+  sealed trait children extends StObject
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
-  sealed trait children extends js.Object
+  sealed trait childrenByPath extends StObject
+  inline def childrenByPath: childrenByPath = "childrenByPath".asInstanceOf[childrenByPath]
   
   @js.native
-  sealed trait childrenByPath extends js.Object
+  sealed trait childrenPopulated extends StObject
+  inline def childrenPopulated: childrenPopulated = "childrenPopulated".asInstanceOf[childrenPopulated]
   
   @js.native
-  sealed trait childrenPopulated extends js.Object
+  sealed trait childrenPopulating extends StObject
+  inline def childrenPopulating: childrenPopulating = "childrenPopulating".asInstanceOf[childrenPopulating]
   
   @js.native
-  sealed trait childrenPopulating extends js.Object
+  sealed trait childrenWidgets extends StObject
+  inline def childrenWidgets: childrenWidgets = "childrenWidgets".asInstanceOf[childrenWidgets]
   
   @js.native
-  sealed trait childrenWidgets extends js.Object
+  sealed trait chunkIndexUrlKey extends StObject
+  inline def chunkIndexUrlKey: chunkIndexUrlKey = "chunkIndexUrlKey".asInstanceOf[chunkIndexUrlKey]
   
   @js.native
-  sealed trait chunkIndexUrlKey extends js.Object
+  sealed trait chunkSize extends StObject
+  inline def chunkSize: chunkSize = "chunkSize".asInstanceOf[chunkSize]
   
   @js.native
-  sealed trait chunkSize extends js.Object
+  sealed trait chunkSizeUrlKey extends StObject
+  inline def chunkSizeUrlKey: chunkSizeUrlKey = "chunkSizeUrlKey".asInstanceOf[chunkSizeUrlKey]
   
   @js.native
-  sealed trait chunkSizeUrlKey extends js.Object
+  sealed trait circleMarkerTemplate extends StObject
+  inline def circleMarkerTemplate: circleMarkerTemplate = "circleMarkerTemplate".asInstanceOf[circleMarkerTemplate]
   
   @js.native
-  sealed trait circleMarkerTemplate extends js.Object
+  sealed trait clearAll extends StObject
+  inline def clearAll: clearAll = "clearAll".asInstanceOf[clearAll]
   
   @js.native
-  sealed trait clearAll extends js.Object
+  sealed trait clearAllFooterIcons extends StObject
+  inline def clearAllFooterIcons: clearAllFooterIcons = "clearAllFooterIcons".asInstanceOf[clearAllFooterIcons]
   
   @js.native
-  sealed trait clearAllFooterIcons extends js.Object
+  sealed trait clearBookmarks extends StObject
+  inline def clearBookmarks: clearBookmarks = "clearBookmarks".asInstanceOf[clearBookmarks]
   
   @js.native
-  sealed trait clearBookmarks extends js.Object
+  sealed trait clearButton extends StObject
+  inline def clearButton: clearButton = "clearButton".asInstanceOf[clearButton]
   
   @js.native
-  sealed trait clearButton extends js.Object
+  sealed trait clearButtonTitle extends StObject
+  inline def clearButtonTitle: clearButtonTitle = "clearButtonTitle".asInstanceOf[clearButtonTitle]
   
   @js.native
-  sealed trait clearButtonTitle extends js.Object
+  sealed trait clearFiltering extends StObject
+  inline def clearFiltering: clearFiltering = "clearFiltering".asInstanceOf[clearFiltering]
   
   @js.native
-  sealed trait clearFiltering extends js.Object
+  sealed trait clearInput extends StObject
+  inline def clearInput: clearInput = "clearInput".asInstanceOf[clearInput]
   
   @js.native
-  sealed trait clearInput extends js.Object
+  sealed trait clearRanges extends StObject
+  inline def clearRanges: clearRanges = "clearRanges".asInstanceOf[clearRanges]
   
   @js.native
-  sealed trait clearRanges extends js.Object
+  sealed trait clearSelection extends StObject
+  inline def clearSelection: clearSelection = "clearSelection".asInstanceOf[clearSelection]
   
   @js.native
-  sealed trait clearSelection extends js.Object
+  sealed trait clearSorting extends StObject
+  inline def clearSorting: clearSorting = "clearSorting".asInstanceOf[clearSorting]
   
   @js.native
-  sealed trait clearSorting extends js.Object
+  sealed trait clearTileZoomCache extends StObject
+  inline def clearTileZoomCache: clearTileZoomCache = "clearTileZoomCache".asInstanceOf[clearTileZoomCache]
   
   @js.native
-  sealed trait clearTileZoomCache extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait clone extends StObject
   
   @js.native
-  sealed trait clone extends js.Object
+  sealed trait close extends StObject
+  inline def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait close extends js.Object
+  sealed trait closeAnimation extends StObject
+  inline def closeAnimation: closeAnimation = "closeAnimation".asInstanceOf[closeAnimation]
   
   @js.native
-  sealed trait closeAnimation extends js.Object
+  sealed trait closeButtonTitle extends StObject
+  inline def closeButtonTitle: closeButtonTitle = "closeButtonTitle".asInstanceOf[closeButtonTitle]
   
   @js.native
-  sealed trait closeButtonTitle extends js.Object
+  sealed trait closeDropDown extends StObject
+  inline def closeDropDown: closeDropDown = "closeDropDown".asInstanceOf[closeDropDown]
   
   @js.native
-  sealed trait closeDropDown extends js.Object
+  sealed trait closeDropDownOnBlur extends StObject
+  inline def closeDropDownOnBlur: closeDropDownOnBlur = "closeDropDownOnBlur".asInstanceOf[closeDropDownOnBlur]
   
   @js.native
-  sealed trait closeDropDownOnBlur extends js.Object
+  sealed trait closeDropDownOnSelect extends StObject
+  inline def closeDropDownOnSelect: closeDropDownOnSelect = "closeDropDownOnSelect".asInstanceOf[closeDropDownOnSelect]
   
   @js.native
-  sealed trait closeDropDownOnSelect extends js.Object
+  sealed trait closeGroupByDialog extends StObject
+  inline def closeGroupByDialog: closeGroupByDialog = "closeGroupByDialog".asInstanceOf[closeGroupByDialog]
   
   @js.native
-  sealed trait closeGroupByDialog extends js.Object
+  sealed trait closeModalDialog extends StObject
+  inline def closeModalDialog: closeModalDialog = "closeModalDialog".asInstanceOf[closeModalDialog]
   
   @js.native
-  sealed trait closeModalDialog extends js.Object
+  sealed trait closeModalDialogOnEnter extends StObject
+  inline def closeModalDialogOnEnter: closeModalDialogOnEnter = "closeModalDialogOnEnter".asInstanceOf[closeModalDialogOnEnter]
   
   @js.native
-  sealed trait closeModalDialogOnEnter extends js.Object
+  sealed trait closeMultipleSortingDialog extends StObject
+  inline def closeMultipleSortingDialog: closeMultipleSortingDialog = "closeMultipleSortingDialog".asInstanceOf[closeMultipleSortingDialog]
   
   @js.native
-  sealed trait closeMultipleSortingDialog extends js.Object
+  sealed trait closeOnBlur extends StObject
+  inline def closeOnBlur: closeOnBlur = "closeOnBlur".asInstanceOf[closeOnBlur]
   
   @js.native
-  sealed trait closeOnBlur extends js.Object
+  sealed trait closeOnEscape extends StObject
+  inline def closeOnEscape: closeOnEscape = "closeOnEscape".asInstanceOf[closeOnEscape]
   
   @js.native
-  sealed trait closeOnEscape extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait collapse extends StObject
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
-  sealed trait collapse extends js.Object
+  sealed trait collapseAt extends StObject
+  inline def collapseAt: collapseAt = "collapseAt".asInstanceOf[collapseAt]
   
   @js.native
-  sealed trait collapseAt extends js.Object
+  sealed trait collapseButtonIcon extends StObject
+  inline def collapseButtonIcon: collapseButtonIcon = "collapseButtonIcon".asInstanceOf[collapseButtonIcon]
   
   @js.native
-  sealed trait collapseButtonIcon extends js.Object
+  sealed trait collapseGroup extends StObject
+  inline def collapseGroup: collapseGroup = "collapseGroup".asInstanceOf[collapseGroup]
   
   @js.native
-  sealed trait collapseGroup extends js.Object
+  sealed trait collapseRow extends StObject
+  inline def collapseRow: collapseRow = "collapseRow".asInstanceOf[collapseRow]
   
   @js.native
-  sealed trait collapseRow extends js.Object
+  sealed trait collapseTooltip extends StObject
+  inline def collapseTooltip: collapseTooltip = "collapseTooltip".asInstanceOf[collapseTooltip]
   
   @js.native
-  sealed trait collapseTooltip extends js.Object
+  sealed trait collapseTooltipText extends StObject
+  inline def collapseTooltipText: collapseTooltipText = "collapseTooltipText".asInstanceOf[collapseTooltipText]
   
   @js.native
-  sealed trait collapseTooltipText extends js.Object
+  sealed trait collapseTupleMember extends StObject
+  inline def collapseTupleMember: collapseTupleMember = "collapseTupleMember".asInstanceOf[collapseTupleMember]
   
   @js.native
-  sealed trait collapseTupleMember extends js.Object
+  sealed trait collapsed extends StObject
+  inline def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait collapsing extends StObject
+  inline def collapsing: collapsing = "collapsing".asInstanceOf[collapsing]
   
   @js.native
-  sealed trait collapsing extends js.Object
+  sealed trait colorFromElement extends StObject
+  inline def colorFromElement: colorFromElement = "colorFromElement".asInstanceOf[colorFromElement]
   
   @js.native
-  sealed trait colorFromElement extends js.Object
+  sealed trait colorSelected extends StObject
+  inline def colorSelected: colorSelected = "colorSelected".asInstanceOf[colorSelected]
   
   @js.native
-  sealed trait colorSelected extends js.Object
+  sealed trait colorTable extends StObject
+  inline def colorTable: colorTable = "colorTable".asInstanceOf[colorTable]
   
   @js.native
-  sealed trait colorTable extends js.Object
+  sealed trait colors extends StObject
+  inline def colors: colors = "colors".asInstanceOf[colors]
   
   @js.native
-  sealed trait colors extends js.Object
+  sealed trait cols extends StObject
+  inline def cols: cols = "cols".asInstanceOf[cols]
   
   @js.native
-  sealed trait cols extends js.Object
+  sealed trait columnByKey extends StObject
+  inline def columnByKey: columnByKey = "columnByKey".asInstanceOf[columnByKey]
   
   @js.native
-  sealed trait columnByKey extends js.Object
+  sealed trait columnByText extends StObject
+  inline def columnByText: columnByText = "columnByText".asInstanceOf[columnByText]
   
   @js.native
-  sealed trait columnByText extends js.Object
+  sealed trait columnChooserAnimationDuration extends StObject
+  inline def columnChooserAnimationDuration: columnChooserAnimationDuration = "columnChooserAnimationDuration".asInstanceOf[columnChooserAnimationDuration]
   
   @js.native
-  sealed trait columnChooserAnimationDuration extends js.Object
+  sealed trait columnChooserButtonApplyClick extends StObject
+  inline def columnChooserButtonApplyClick: columnChooserButtonApplyClick = "columnChooserButtonApplyClick".asInstanceOf[columnChooserButtonApplyClick]
   
   @js.native
-  sealed trait columnChooserButtonApplyClick extends js.Object
+  sealed trait columnChooserButtonApplyText extends StObject
+  inline def columnChooserButtonApplyText: columnChooserButtonApplyText = "columnChooserButtonApplyText".asInstanceOf[columnChooserButtonApplyText]
   
   @js.native
-  sealed trait columnChooserButtonApplyText extends js.Object
+  sealed trait columnChooserButtonCancelText extends StObject
+  inline def columnChooserButtonCancelText: columnChooserButtonCancelText = "columnChooserButtonCancelText".asInstanceOf[columnChooserButtonCancelText]
   
   @js.native
-  sealed trait columnChooserButtonCancelText extends js.Object
+  sealed trait columnChooserButtonResetClick extends StObject
+  inline def columnChooserButtonResetClick: columnChooserButtonResetClick = "columnChooserButtonResetClick".asInstanceOf[columnChooserButtonResetClick]
   
   @js.native
-  sealed trait columnChooserButtonResetClick extends js.Object
+  sealed trait columnChooserCaptionText extends StObject
+  inline def columnChooserCaptionText: columnChooserCaptionText = "columnChooserCaptionText".asInstanceOf[columnChooserCaptionText]
   
   @js.native
-  sealed trait columnChooserCaptionText extends js.Object
+  sealed trait columnChooserClosed extends StObject
+  inline def columnChooserClosed: columnChooserClosed = "columnChooserClosed".asInstanceOf[columnChooserClosed]
   
   @js.native
-  sealed trait columnChooserClosed extends js.Object
+  sealed trait columnChooserClosing extends StObject
+  inline def columnChooserClosing: columnChooserClosing = "columnChooserClosing".asInstanceOf[columnChooserClosing]
   
   @js.native
-  sealed trait columnChooserClosing extends js.Object
+  sealed trait columnChooserContainment extends StObject
+  inline def columnChooserContainment: columnChooserContainment = "columnChooserContainment".asInstanceOf[columnChooserContainment]
   
   @js.native
-  sealed trait columnChooserContainment extends js.Object
+  sealed trait columnChooserContentsRendered extends StObject
+  inline def columnChooserContentsRendered: columnChooserContentsRendered = "columnChooserContentsRendered".asInstanceOf[columnChooserContentsRendered]
   
   @js.native
-  sealed trait columnChooserContentsRendered extends js.Object
+  sealed trait columnChooserContentsRendering extends StObject
+  inline def columnChooserContentsRendering: columnChooserContentsRendering = "columnChooserContentsRendering".asInstanceOf[columnChooserContentsRendering]
   
   @js.native
-  sealed trait columnChooserContentsRendering extends js.Object
+  sealed trait columnChooserDisplayText extends StObject
+  inline def columnChooserDisplayText: columnChooserDisplayText = "columnChooserDisplayText".asInstanceOf[columnChooserDisplayText]
   
   @js.native
-  sealed trait columnChooserDisplayText extends js.Object
+  sealed trait columnChooserHeight extends StObject
+  inline def columnChooserHeight: columnChooserHeight = "columnChooserHeight".asInstanceOf[columnChooserHeight]
   
   @js.native
-  sealed trait columnChooserHeight extends js.Object
+  sealed trait columnChooserHideOnClick extends StObject
+  inline def columnChooserHideOnClick: columnChooserHideOnClick = "columnChooserHideOnClick".asInstanceOf[columnChooserHideOnClick]
   
   @js.native
-  sealed trait columnChooserHideOnClick extends js.Object
+  sealed trait columnChooserHideText extends StObject
+  inline def columnChooserHideText: columnChooserHideText = "columnChooserHideText".asInstanceOf[columnChooserHideText]
   
   @js.native
-  sealed trait columnChooserHideText extends js.Object
+  sealed trait columnChooserMoving extends StObject
+  inline def columnChooserMoving: columnChooserMoving = "columnChooserMoving".asInstanceOf[columnChooserMoving]
   
   @js.native
-  sealed trait columnChooserMoving extends js.Object
+  sealed trait columnChooserOpened extends StObject
+  inline def columnChooserOpened: columnChooserOpened = "columnChooserOpened".asInstanceOf[columnChooserOpened]
   
   @js.native
-  sealed trait columnChooserOpened extends js.Object
+  sealed trait columnChooserOpening extends StObject
+  inline def columnChooserOpening: columnChooserOpening = "columnChooserOpening".asInstanceOf[columnChooserOpening]
   
   @js.native
-  sealed trait columnChooserOpening extends js.Object
+  sealed trait columnChooserResetButtonLabel extends StObject
+  inline def columnChooserResetButtonLabel: columnChooserResetButtonLabel = "columnChooserResetButtonLabel".asInstanceOf[columnChooserResetButtonLabel]
   
   @js.native
-  sealed trait columnChooserResetButtonLabel extends js.Object
+  sealed trait columnChooserShowText extends StObject
+  inline def columnChooserShowText: columnChooserShowText = "columnChooserShowText".asInstanceOf[columnChooserShowText]
   
   @js.native
-  sealed trait columnChooserShowText extends js.Object
+  sealed trait columnChooserWidth extends StObject
+  inline def columnChooserWidth: columnChooserWidth = "columnChooserWidth".asInstanceOf[columnChooserWidth]
   
   @js.native
-  sealed trait columnChooserWidth extends js.Object
+  sealed trait columnDragCanceled extends StObject
+  inline def columnDragCanceled: columnDragCanceled = "columnDragCanceled".asInstanceOf[columnDragCanceled]
   
   @js.native
-  sealed trait columnDragCanceled extends js.Object
+  sealed trait columnDragEnd extends StObject
+  inline def columnDragEnd: columnDragEnd = "columnDragEnd".asInstanceOf[columnDragEnd]
   
   @js.native
-  sealed trait columnDragEnd extends js.Object
+  sealed trait columnDragStart extends StObject
+  inline def columnDragStart: columnDragStart = "columnDragStart".asInstanceOf[columnDragStart]
   
   @js.native
-  sealed trait columnDragStart extends js.Object
+  sealed trait columnFixed extends StObject
+  inline def columnFixed: columnFixed = "columnFixed".asInstanceOf[columnFixed]
   
   @js.native
-  sealed trait columnFixed extends js.Object
+  sealed trait columnFixing extends StObject
+  inline def columnFixing: columnFixing = "columnFixing".asInstanceOf[columnFixing]
   
   @js.native
-  sealed trait columnFixing extends js.Object
+  sealed trait columnFixingRefused extends StObject
+  inline def columnFixingRefused: columnFixingRefused = "columnFixingRefused".asInstanceOf[columnFixingRefused]
   
   @js.native
-  sealed trait columnFixingRefused extends js.Object
+  sealed trait columnHeight extends StObject
+  inline def columnHeight: columnHeight = "columnHeight".asInstanceOf[columnHeight]
   
   @js.native
-  sealed trait columnHeight extends js.Object
+  sealed trait columnHidden extends StObject
+  inline def columnHidden: columnHidden = "columnHidden".asInstanceOf[columnHidden]
   
   @js.native
-  sealed trait columnHidden extends js.Object
+  sealed trait columnHideText extends StObject
+  inline def columnHideText: columnHideText = "columnHideText".asInstanceOf[columnHideText]
   
   @js.native
-  sealed trait columnHideText extends js.Object
+  sealed trait columnHiding extends StObject
+  inline def columnHiding: columnHiding = "columnHiding".asInstanceOf[columnHiding]
   
   @js.native
-  sealed trait columnHiding extends js.Object
+  sealed trait columnHidingRefused extends StObject
+  inline def columnHidingRefused: columnHidingRefused = "columnHidingRefused".asInstanceOf[columnHidingRefused]
   
   @js.native
-  sealed trait columnHidingRefused extends js.Object
+  sealed trait columnLayouts extends StObject
+  inline def columnLayouts: columnLayouts = "columnLayouts".asInstanceOf[columnLayouts]
   
   @js.native
-  sealed trait columnLayouts extends js.Object
+  sealed trait columnMoved extends StObject
+  inline def columnMoved: columnMoved = "columnMoved".asInstanceOf[columnMoved]
   
   @js.native
-  sealed trait columnMoved extends js.Object
+  sealed trait columnMoving extends StObject
+  inline def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
   
   @js.native
-  sealed trait columnMoving extends js.Object
+  sealed trait columnMovingDialogContainment extends StObject
+  inline def columnMovingDialogContainment: columnMovingDialogContainment = "columnMovingDialogContainment".asInstanceOf[columnMovingDialogContainment]
   
   @js.native
-  sealed trait columnMovingDialogContainment extends js.Object
+  sealed trait columnResized extends StObject
+  inline def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
   
   @js.native
-  sealed trait columnResized extends js.Object
+  sealed trait columnResizing extends StObject
+  inline def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
   
   @js.native
-  sealed trait columnResizing extends js.Object
+  sealed trait columnResizingRefused extends StObject
+  inline def columnResizingRefused: columnResizingRefused = "columnResizingRefused".asInstanceOf[columnResizingRefused]
   
   @js.native
-  sealed trait columnResizingRefused extends js.Object
+  sealed trait columnSettings extends StObject
+  inline def columnSettings: columnSettings = "columnSettings".asInstanceOf[columnSettings]
   
   @js.native
-  sealed trait columnSettings extends js.Object
+  sealed trait columnShowing extends StObject
+  inline def columnShowing: columnShowing = "columnShowing".asInstanceOf[columnShowing]
   
   @js.native
-  sealed trait columnShowing extends js.Object
+  sealed trait columnShowingRefused extends StObject
+  inline def columnShowingRefused: columnShowingRefused = "columnShowingRefused".asInstanceOf[columnShowingRefused]
   
   @js.native
-  sealed trait columnShowingRefused extends js.Object
+  sealed trait columnShown extends StObject
+  inline def columnShown: columnShown = "columnShown".asInstanceOf[columnShown]
   
   @js.native
-  sealed trait columnShown extends js.Object
+  sealed trait columnSorted extends StObject
+  inline def columnSorted: columnSorted = "columnSorted".asInstanceOf[columnSorted]
   
   @js.native
-  sealed trait columnSorted extends js.Object
+  sealed trait columnSorting extends StObject
+  inline def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
   
   @js.native
-  sealed trait columnSorting extends js.Object
+  sealed trait columnUnfixed extends StObject
+  inline def columnUnfixed: columnUnfixed = "columnUnfixed".asInstanceOf[columnUnfixed]
   
   @js.native
-  sealed trait columnUnfixed extends js.Object
+  sealed trait columnUnfixing extends StObject
+  inline def columnUnfixing: columnUnfixing = "columnUnfixing".asInstanceOf[columnUnfixing]
   
   @js.native
-  sealed trait columnUnfixing extends js.Object
+  sealed trait columnUnfixingRefused extends StObject
+  inline def columnUnfixingRefused: columnUnfixingRefused = "columnUnfixingRefused".asInstanceOf[columnUnfixingRefused]
   
   @js.native
-  sealed trait columnUnfixingRefused extends js.Object
+  sealed trait columnVirtualization extends StObject
+  inline def columnVirtualization: columnVirtualization = "columnVirtualization".asInstanceOf[columnVirtualization]
   
   @js.native
-  sealed trait columnVirtualization extends js.Object
+  sealed trait columnWidth extends StObject
+  inline def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
   
   @js.native
-  sealed trait columnWidth extends js.Object
+  sealed trait columns extends StObject
+  inline def columns: columns = "columns".asInstanceOf[columns]
   
   @js.native
-  sealed trait columns extends js.Object
+  sealed trait columnsCollectionModified extends StObject
+  inline def columnsCollectionModified: columnsCollectionModified = "columnsCollectionModified".asInstanceOf[columnsCollectionModified]
   
   @js.native
-  sealed trait columnsCollectionModified extends js.Object
+  sealed trait comboWrapper extends StObject
+  inline def comboWrapper: comboWrapper = "comboWrapper".asInstanceOf[comboWrapper]
   
   @js.native
-  sealed trait comboWrapper extends js.Object
+  sealed trait commercials extends StObject
+  inline def commercials: commercials = "commercials".asInstanceOf[commercials]
   
   @js.native
-  sealed trait commercials extends js.Object
+  sealed trait commit extends StObject
+  inline def commit: commit = "commit".asInstanceOf[commit]
   
   @js.native
-  sealed trait commit extends js.Object
+  sealed trait compactColumnHeaderIndentation extends StObject
+  inline def compactColumnHeaderIndentation: compactColumnHeaderIndentation = "compactColumnHeaderIndentation".asInstanceOf[compactColumnHeaderIndentation]
   
   @js.native
-  sealed trait compactColumnHeaderIndentation extends js.Object
+  sealed trait compactColumnHeaders extends StObject
+  inline def compactColumnHeaders: compactColumnHeaders = "compactColumnHeaders".asInstanceOf[compactColumnHeaders]
   
   @js.native
-  sealed trait compactColumnHeaders extends js.Object
+  sealed trait compactRenderingMode extends StObject
+  inline def compactRenderingMode: compactRenderingMode = "compactRenderingMode".asInstanceOf[compactRenderingMode]
   
   @js.native
-  sealed trait compactRenderingMode extends js.Object
+  sealed trait compactRowHeaderIndentation extends StObject
+  inline def compactRowHeaderIndentation: compactRowHeaderIndentation = "compactRowHeaderIndentation".asInstanceOf[compactRowHeaderIndentation]
   
   @js.native
-  sealed trait compactRowHeaderIndentation extends js.Object
+  sealed trait compactRowHeaders extends StObject
+  inline def compactRowHeaders: compactRowHeaders = "compactRowHeaders".asInstanceOf[compactRowHeaders]
   
   @js.native
-  sealed trait compactRowHeaders extends js.Object
+  sealed trait container extends StObject
+  inline def container: container = "container".asInstanceOf[container]
   
   @js.native
-  sealed trait container extends js.Object
+  sealed trait containment extends StObject
+  inline def containment: containment = "containment".asInstanceOf[containment]
   
   @js.native
-  sealed trait containment extends js.Object
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait contentDocument extends StObject
+  inline def contentDocument: contentDocument = "contentDocument".asInstanceOf[contentDocument]
   
   @js.native
-  sealed trait contentDocument extends js.Object
+  sealed trait contentEditable extends StObject
+  inline def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
   
   @js.native
-  sealed trait contentEditable extends js.Object
+  sealed trait contentHitTestMode extends StObject
+  inline def contentHitTestMode: contentHitTestMode = "contentHitTestMode".asInstanceOf[contentHitTestMode]
   
   @js.native
-  sealed trait contentHitTestMode extends js.Object
+  sealed trait contentTemplate extends StObject
+  inline def contentTemplate: contentTemplate = "contentTemplate".asInstanceOf[contentTemplate]
   
   @js.native
-  sealed trait contentTemplate extends js.Object
+  sealed trait contentWindow extends StObject
+  inline def contentWindow: contentWindow = "contentWindow".asInstanceOf[contentWindow]
   
   @js.native
-  sealed trait contentWindow extends js.Object
+  sealed trait contextMenuOpening extends StObject
+  inline def contextMenuOpening: contextMenuOpening = "contextMenuOpening".asInstanceOf[contextMenuOpening]
   
   @js.native
-  sealed trait contextMenuOpening extends js.Object
+  sealed trait contextRowLoadingText extends StObject
+  inline def contextRowLoadingText: contextRowLoadingText = "contextRowLoadingText".asInstanceOf[contextRowLoadingText]
   
   @js.native
-  sealed trait contextRowLoadingText extends js.Object
+  sealed trait contextRowMode extends StObject
+  inline def contextRowMode: contextRowMode = "contextRowMode".asInstanceOf[contextRowMode]
   
   @js.native
-  sealed trait contextRowMode extends js.Object
+  sealed trait contextRowRendered extends StObject
+  inline def contextRowRendered: contextRowRendered = "contextRowRendered".asInstanceOf[contextRowRendered]
   
   @js.native
-  sealed trait contextRowRendered extends js.Object
+  sealed trait contextRowRendering extends StObject
+  inline def contextRowRendering: contextRowRendering = "contextRowRendering".asInstanceOf[contextRowRendering]
   
   @js.native
-  sealed trait contextRowRendering extends js.Object
+  sealed trait contextRowRootText extends StObject
+  inline def contextRowRootText: contextRowRootText = "contextRowRootText".asInstanceOf[contextRowRootText]
   
   @js.native
-  sealed trait contextRowRootText extends js.Object
+  sealed trait controlId extends StObject
+  inline def controlId: controlId = "controlId".asInstanceOf[controlId]
   
   @js.native
-  sealed trait controlId extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait createAppointment extends StObject
+  inline def createAppointment: createAppointment = "createAppointment".asInstanceOf[createAppointment]
   
   @js.native
-  sealed trait createAppointment extends js.Object
+  sealed trait createWrappedTooltip extends StObject
+  inline def createWrappedTooltip: createWrappedTooltip = "createWrappedTooltip".asInstanceOf[createWrappedTooltip]
   
   @js.native
-  sealed trait createWrappedTooltip extends js.Object
+  sealed trait created extends StObject
+  inline def created: created = "created".asInstanceOf[created]
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait creditCard extends StObject
+  inline def creditCard: creditCard = "creditCard".asInstanceOf[creditCard]
   
   @js.native
-  sealed trait creditCard extends js.Object
+  sealed trait crosshairPoint extends StObject
+  inline def crosshairPoint: crosshairPoint = "crosshairPoint".asInstanceOf[crosshairPoint]
   
   @js.native
-  sealed trait crosshairPoint extends js.Object
+  sealed trait crosshairVisibility extends StObject
+  inline def crosshairVisibility: crosshairVisibility = "crosshairVisibility".asInstanceOf[crosshairVisibility]
   
   @js.native
-  sealed trait crosshairVisibility extends js.Object
+  sealed trait crosshairsAnnotationEnabled extends StObject
+  inline def crosshairsAnnotationEnabled: crosshairsAnnotationEnabled = "crosshairsAnnotationEnabled".asInstanceOf[crosshairsAnnotationEnabled]
   
   @js.native
-  sealed trait crosshairsAnnotationEnabled extends js.Object
+  sealed trait crosshairsDisplayMode extends StObject
+  inline def crosshairsDisplayMode: crosshairsDisplayMode = "crosshairsDisplayMode".asInstanceOf[crosshairsDisplayMode]
   
   @js.native
-  sealed trait crosshairsDisplayMode extends js.Object
+  sealed trait crosshairsSnapToData extends StObject
+  inline def crosshairsSnapToData: crosshairsSnapToData = "crosshairsSnapToData".asInstanceOf[crosshairsSnapToData]
   
   @js.native
-  sealed trait crosshairsSnapToData extends js.Object
+  sealed trait css extends StObject
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait css extends js.Object
+  sealed trait cssClass extends StObject
+  inline def cssClass: cssClass = "cssClass".asInstanceOf[cssClass]
   
   @js.native
-  sealed trait cssClass extends js.Object
+  sealed trait cssVotes extends StObject
+  inline def cssVotes: cssVotes = "cssVotes".asInstanceOf[cssVotes]
   
   @js.native
-  sealed trait cssVotes extends js.Object
+  sealed trait currencySymbol extends StObject
+  inline def currencySymbol: currencySymbol = "currencySymbol".asInstanceOf[currencySymbol]
   
   @js.native
-  sealed trait currencySymbol extends js.Object
+  sealed trait currentChunkIndex extends StObject
+  inline def currentChunkIndex: currentChunkIndex = "currentChunkIndex".asInstanceOf[currentChunkIndex]
   
   @js.native
-  sealed trait currentChunkIndex extends js.Object
+  sealed trait currentOpenMenuItemName extends StObject
+  inline def currentOpenMenuItemName: currentOpenMenuItemName = "currentOpenMenuItemName".asInstanceOf[currentOpenMenuItemName]
   
   @js.native
-  sealed trait currentOpenMenuItemName extends js.Object
+  sealed trait currentPageDropDownLeadingLabel extends StObject
+  inline def currentPageDropDownLeadingLabel: currentPageDropDownLeadingLabel = "currentPageDropDownLeadingLabel".asInstanceOf[currentPageDropDownLeadingLabel]
   
   @js.native
-  sealed trait currentPageDropDownLeadingLabel extends js.Object
+  sealed trait currentPageDropDownTooltip extends StObject
+  inline def currentPageDropDownTooltip: currentPageDropDownTooltip = "currentPageDropDownTooltip".asInstanceOf[currentPageDropDownTooltip]
   
   @js.native
-  sealed trait currentPageDropDownTooltip extends js.Object
+  sealed trait currentPageDropDownTrailingLabel extends StObject
+  inline def currentPageDropDownTrailingLabel: currentPageDropDownTrailingLabel = "currentPageDropDownTrailingLabel".asInstanceOf[currentPageDropDownTrailingLabel]
   
   @js.native
-  sealed trait currentPageDropDownTrailingLabel extends js.Object
+  sealed trait currentPageIndex extends StObject
+  inline def currentPageIndex: currentPageIndex = "currentPageIndex".asInstanceOf[currentPageIndex]
   
   @js.native
-  sealed trait currentPageIndex extends js.Object
+  sealed trait currentTime extends StObject
+  inline def currentTime: currentTime = "currentTime".asInstanceOf[currentTime]
   
   @js.native
-  sealed trait currentTime extends js.Object
+  sealed trait cursorLeftOffset extends StObject
+  inline def cursorLeftOffset: cursorLeftOffset = "cursorLeftOffset".asInstanceOf[cursorLeftOffset]
   
   @js.native
-  sealed trait cursorLeftOffset extends js.Object
+  sealed trait cursorTopOffset extends StObject
+  inline def cursorTopOffset: cursorTopOffset = "cursorTopOffset".asInstanceOf[cursorTopOffset]
   
   @js.native
-  sealed trait cursorTopOffset extends js.Object
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait customColorTable extends StObject
+  inline def customColorTable: customColorTable = "customColorTable".asInstanceOf[customColorTable]
   
   @js.native
-  sealed trait customColorTable extends js.Object
+  sealed trait customIndicatorNames extends StObject
+  inline def customIndicatorNames: customIndicatorNames = "customIndicatorNames".asInstanceOf[customIndicatorNames]
   
   @js.native
-  sealed trait customIndicatorNames extends js.Object
+  sealed trait customMoveValidation extends StObject
+  inline def customMoveValidation: customMoveValidation = "customMoveValidation".asInstanceOf[customMoveValidation]
   
   @js.native
-  sealed trait customMoveValidation extends js.Object
+  sealed trait customSortFunction extends StObject
+  inline def customSortFunction: customSortFunction = "customSortFunction".asInstanceOf[customSortFunction]
   
   @js.native
-  sealed trait customSortFunction extends js.Object
+  sealed trait customToolbars extends StObject
+  inline def customToolbars: customToolbars = "customToolbars".asInstanceOf[customToolbars]
   
   @js.native
-  sealed trait customToolbars extends js.Object
+  sealed trait cut extends StObject
+  inline def cut: cut = "cut".asInstanceOf[cut]
   
   @js.native
-  sealed trait cut extends js.Object
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait dataBind extends StObject
+  inline def dataBind: dataBind = "dataBind".asInstanceOf[dataBind]
   
   @js.native
-  sealed trait dataBind extends js.Object
+  sealed trait dataBinding extends StObject
+  inline def dataBinding: dataBinding = "dataBinding".asInstanceOf[dataBinding]
   
   @js.native
-  sealed trait dataBinding extends js.Object
+  sealed trait dataBound extends StObject
+  inline def dataBound: dataBound = "dataBound".asInstanceOf[dataBound]
   
   @js.native
-  sealed trait dataBound extends js.Object
+  sealed trait dataChanged extends StObject
+  inline def dataChanged: dataChanged = "dataChanged".asInstanceOf[dataChanged]
   
   @js.native
-  sealed trait dataChanged extends js.Object
+  sealed trait dataDirty extends StObject
+  inline def dataDirty: dataDirty = "dataDirty".asInstanceOf[dataDirty]
   
   @js.native
-  sealed trait dataDirty extends js.Object
+  sealed trait dataFiltered extends StObject
+  inline def dataFiltered: dataFiltered = "dataFiltered".asInstanceOf[dataFiltered]
   
   @js.native
-  sealed trait dataFiltered extends js.Object
+  sealed trait dataFiltering extends StObject
+  inline def dataFiltering: dataFiltering = "dataFiltering".asInstanceOf[dataFiltering]
   
   @js.native
-  sealed trait dataFiltering extends js.Object
+  sealed trait dataForElement extends StObject
+  inline def dataForElement: dataForElement = "dataForElement".asInstanceOf[dataForElement]
   
   @js.native
-  sealed trait dataForElement extends js.Object
+  sealed trait dataForValue extends StObject
+  inline def dataForValue: dataForValue = "dataForValue".asInstanceOf[dataForValue]
   
   @js.native
-  sealed trait dataForValue extends js.Object
+  sealed trait dataLabel extends StObject
+  inline def dataLabel: dataLabel = "dataLabel".asInstanceOf[dataLabel]
   
   @js.native
-  sealed trait dataLabel extends js.Object
+  sealed trait dataMode extends StObject
+  inline def dataMode: dataMode = "dataMode".asInstanceOf[dataMode]
   
   @js.native
-  sealed trait dataMode extends js.Object
+  sealed trait dataRendered extends StObject
+  inline def dataRendered: dataRendered = "dataRendered".asInstanceOf[dataRendered]
   
   @js.native
-  sealed trait dataRendered extends js.Object
+  sealed trait dataRendering extends StObject
+  inline def dataRendering: dataRendering = "dataRendering".asInstanceOf[dataRendering]
   
   @js.native
-  sealed trait dataRendering extends js.Object
+  sealed trait dataSelector extends StObject
+  inline def dataSelector: dataSelector = "dataSelector".asInstanceOf[dataSelector]
   
   @js.native
-  sealed trait dataSelector extends js.Object
+  sealed trait dataSelectorOptions extends StObject
+  inline def dataSelectorOptions: dataSelectorOptions = "dataSelectorOptions".asInstanceOf[dataSelectorOptions]
   
   @js.native
-  sealed trait dataSelectorOptions extends js.Object
+  sealed trait dataSelectorPanel extends StObject
+  inline def dataSelectorPanel: dataSelectorPanel = "dataSelectorPanel".asInstanceOf[dataSelectorPanel]
   
   @js.native
-  sealed trait dataSelectorPanel extends js.Object
+  sealed trait dataSelectorRendered extends StObject
+  inline def dataSelectorRendered: dataSelectorRendered = "dataSelectorRendered".asInstanceOf[dataSelectorRendered]
   
   @js.native
-  sealed trait dataSelectorRendered extends js.Object
+  sealed trait dataSource extends StObject
+  inline def dataSource: dataSource = "dataSource".asInstanceOf[dataSource]
   
   @js.native
-  sealed trait dataSource extends js.Object
+  sealed trait dataSourceInitialized extends StObject
+  inline def dataSourceInitialized: dataSourceInitialized = "dataSourceInitialized".asInstanceOf[dataSourceInitialized]
   
   @js.native
-  sealed trait dataSourceInitialized extends js.Object
+  sealed trait dataSourceObject extends StObject
+  inline def dataSourceObject: dataSourceObject = "dataSourceObject".asInstanceOf[dataSourceObject]
   
   @js.native
-  sealed trait dataSourceObject extends js.Object
+  sealed trait dataSourceOptions extends StObject
+  inline def dataSourceOptions: dataSourceOptions = "dataSourceOptions".asInstanceOf[dataSourceOptions]
   
   @js.native
-  sealed trait dataSourceOptions extends js.Object
+  sealed trait dataSourceSettings extends StObject
+  inline def dataSourceSettings: dataSourceSettings = "dataSourceSettings".asInstanceOf[dataSourceSettings]
   
   @js.native
-  sealed trait dataSourceSettings extends js.Object
+  sealed trait dataSourceType extends StObject
+  inline def dataSourceType: dataSourceType = "dataSourceType".asInstanceOf[dataSourceType]
   
   @js.native
-  sealed trait dataSourceType extends js.Object
+  sealed trait dataSourceUpdated extends StObject
+  inline def dataSourceUpdated: dataSourceUpdated = "dataSourceUpdated".asInstanceOf[dataSourceUpdated]
   
   @js.native
-  sealed trait dataSourceUpdated extends js.Object
+  sealed trait dataSourceUrl extends StObject
+  inline def dataSourceUrl: dataSourceUrl = "dataSourceUrl".asInstanceOf[dataSourceUrl]
   
   @js.native
-  sealed trait dataSourceUrl extends js.Object
+  sealed trait dataValue extends StObject
+  inline def dataValue: dataValue = "dataValue".asInstanceOf[dataValue]
   
   @js.native
-  sealed trait dataValue extends js.Object
+  sealed trait databaseSource extends StObject
+  inline def databaseSource: databaseSource = "databaseSource".asInstanceOf[databaseSource]
   
   @js.native
-  sealed trait databaseSource extends js.Object
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait dateDisplayFormat extends StObject
+  inline def dateDisplayFormat: dateDisplayFormat = "dateDisplayFormat".asInstanceOf[dateDisplayFormat]
   
   @js.native
-  sealed trait dateDisplayFormat extends js.Object
+  sealed trait dateInputFormat extends StObject
+  inline def dateInputFormat: dateInputFormat = "dateInputFormat".asInstanceOf[dateInputFormat]
   
   @js.native
-  sealed trait dateInputFormat extends js.Object
+  sealed trait dateRangeButton extends StObject
+  inline def dateRangeButton: dateRangeButton = "dateRangeButton".asInstanceOf[dateRangeButton]
   
   @js.native
-  sealed trait dateRangeButton extends js.Object
+  sealed trait datepickerOptions extends StObject
+  inline def datepickerOptions: datepickerOptions = "datepickerOptions".asInstanceOf[datepickerOptions]
   
   @js.native
-  sealed trait datepickerOptions extends js.Object
+  sealed trait dayChanged extends StObject
+  inline def dayChanged: dayChanged = "dayChanged".asInstanceOf[dayChanged]
   
   @js.native
-  sealed trait dayChanged extends js.Object
+  sealed trait dayChanging extends StObject
+  inline def dayChanging: dayChanging = "dayChanging".asInstanceOf[dayChanging]
   
   @js.native
-  sealed trait dayChanging extends js.Object
+  sealed trait daySelected extends StObject
+  inline def daySelected: daySelected = "daySelected".asInstanceOf[daySelected]
   
   @js.native
-  sealed trait daySelected extends js.Object
+  sealed trait dayViewSettings extends StObject
+  inline def dayViewSettings: dayViewSettings = "dayViewSettings".asInstanceOf[dayViewSettings]
   
   @js.native
-  sealed trait dayViewSettings extends js.Object
+  sealed trait deactivate extends StObject
+  inline def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
   
   @js.native
-  sealed trait deactivate extends js.Object
+  sealed trait deactivateAll extends StObject
+  inline def deactivateAll: deactivateAll = "deactivateAll".asInstanceOf[deactivateAll]
   
   @js.native
-  sealed trait deactivateAll extends js.Object
+  sealed trait deactivated extends StObject
+  inline def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
   
   @js.native
-  sealed trait deactivated extends js.Object
+  sealed trait deactivating extends StObject
+  inline def deactivating: deactivating = "deactivating".asInstanceOf[deactivating]
   
   @js.native
-  sealed trait deactivating extends js.Object
+  sealed trait decimalSeparator extends StObject
+  inline def decimalSeparator: decimalSeparator = "decimalSeparator".asInstanceOf[decimalSeparator]
   
   @js.native
-  sealed trait decimalSeparator extends js.Object
+  sealed trait defaultChildrenDataProperty extends StObject
+  inline def defaultChildrenDataProperty: defaultChildrenDataProperty = "defaultChildrenDataProperty".asInstanceOf[defaultChildrenDataProperty]
   
   @js.native
-  sealed trait defaultChildrenDataProperty extends js.Object
+  sealed trait defaultChunkIndex extends StObject
+  inline def defaultChunkIndex: defaultChunkIndex = "defaultChunkIndex".asInstanceOf[defaultChunkIndex]
   
   @js.native
-  sealed trait defaultChunkIndex extends js.Object
+  sealed trait defaultColor extends StObject
+  inline def defaultColor: defaultColor = "defaultColor".asInstanceOf[defaultColor]
   
   @js.native
-  sealed trait defaultColor extends js.Object
+  sealed trait defaultColumnWidth extends StObject
+  inline def defaultColumnWidth: defaultColumnWidth = "defaultColumnWidth".asInstanceOf[defaultColumnWidth]
   
   @js.native
-  sealed trait defaultColumnWidth extends js.Object
+  sealed trait defaultDropDownWidth extends StObject
+  inline def defaultDropDownWidth: defaultDropDownWidth = "defaultDropDownWidth".asInstanceOf[defaultDropDownWidth]
   
   @js.native
-  sealed trait defaultDropDownWidth extends js.Object
+  sealed trait defaultInteraction extends StObject
+  inline def defaultInteraction: defaultInteraction = "defaultInteraction".asInstanceOf[defaultInteraction]
   
   @js.native
-  sealed trait defaultInteraction extends js.Object
+  sealed trait defaultItemName extends StObject
+  inline def defaultItemName: defaultItemName = "defaultItemName".asInstanceOf[defaultItemName]
   
   @js.native
-  sealed trait defaultItemName extends js.Object
+  sealed trait defaultLevelSortBehavior extends StObject
+  inline def defaultLevelSortBehavior: defaultLevelSortBehavior = "defaultLevelSortBehavior".asInstanceOf[defaultLevelSortBehavior]
   
   @js.native
-  sealed trait defaultLevelSortBehavior extends js.Object
+  sealed trait defaultNodeTarget extends StObject
+  inline def defaultNodeTarget: defaultNodeTarget = "defaultNodeTarget".asInstanceOf[defaultNodeTarget]
   
   @js.native
-  sealed trait defaultNodeTarget extends js.Object
+  sealed trait defaultRowHeaderWidth extends StObject
+  inline def defaultRowHeaderWidth: defaultRowHeaderWidth = "defaultRowHeaderWidth".asInstanceOf[defaultRowHeaderWidth]
   
   @js.native
-  sealed trait defaultRowHeaderWidth extends js.Object
+  sealed trait defaultSortingDirection extends StObject
+  inline def defaultSortingDirection: defaultSortingDirection = "defaultSortingDirection".asInstanceOf[defaultSortingDirection]
   
   @js.native
-  sealed trait defaultSortingDirection extends js.Object
+  sealed trait defaultZoomWindow extends StObject
+  inline def defaultZoomWindow: defaultZoomWindow = "defaultZoomWindow".asInstanceOf[defaultZoomWindow]
   
   @js.native
-  sealed trait defaultZoomWindow extends js.Object
+  sealed trait deferUpdate extends StObject
+  inline def deferUpdate: deferUpdate = "deferUpdate".asInstanceOf[deferUpdate]
   
   @js.native
-  sealed trait deferUpdate extends js.Object
+  sealed trait deferUpdateChanged extends StObject
+  inline def deferUpdateChanged: deferUpdateChanged = "deferUpdateChanged".asInstanceOf[deferUpdateChanged]
   
   @js.native
-  sealed trait deferUpdateChanged extends js.Object
+  sealed trait deferredResizing extends StObject
+  inline def deferredResizing: deferredResizing = "deferredResizing".asInstanceOf[deferredResizing]
   
   @js.native
-  sealed trait deferredResizing extends js.Object
+  sealed trait delay extends StObject
+  inline def delay: delay = "delay".asInstanceOf[delay]
   
   @js.native
-  sealed trait delay extends js.Object
+  sealed trait delayInputChangeProcessing extends StObject
+  inline def delayInputChangeProcessing: delayInputChangeProcessing = "delayInputChangeProcessing".asInstanceOf[delayInputChangeProcessing]
   
   @js.native
-  sealed trait delayInputChangeProcessing extends js.Object
+  sealed trait delayOnPageChanged extends StObject
+  inline def delayOnPageChanged: delayOnPageChanged = "delayOnPageChanged".asInstanceOf[delayOnPageChanged]
   
   @js.native
-  sealed trait delayOnPageChanged extends js.Object
+  sealed trait deleteAppointment extends StObject
+  inline def deleteAppointment: deleteAppointment = "deleteAppointment".asInstanceOf[deleteAppointment]
   
   @js.native
-  sealed trait deleteAppointment extends js.Object
+  sealed trait deleteRow extends StObject
+  inline def deleteRow: deleteRow = "deleteRow".asInstanceOf[deleteRow]
   
   @js.native
-  sealed trait deleteRow extends js.Object
+  sealed trait deleteRowLabel extends StObject
+  inline def deleteRowLabel: deleteRowLabel = "deleteRowLabel".asInstanceOf[deleteRowLabel]
   
   @js.native
-  sealed trait deleteRowLabel extends js.Object
+  sealed trait deleteRowTooltip extends StObject
+  inline def deleteRowTooltip: deleteRowTooltip = "deleteRowTooltip".asInstanceOf[deleteRowTooltip]
   
   @js.native
-  sealed trait deleteRowTooltip extends js.Object
+  sealed trait deselect extends StObject
+  inline def deselect: deselect = "deselect".asInstanceOf[deselect]
   
   @js.native
-  sealed trait deselect extends js.Object
+  sealed trait deselectAll extends StObject
+  inline def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
   
   @js.native
-  sealed trait deselectAll extends js.Object
+  sealed trait deselectAllForPagingTemplate extends StObject
+  inline def deselectAllForPagingTemplate: deselectAllForPagingTemplate = "deselectAllForPagingTemplate".asInstanceOf[deselectAllForPagingTemplate]
   
   @js.native
-  sealed trait deselectAllForPagingTemplate extends js.Object
+  sealed trait deselectByIndex extends StObject
+  inline def deselectByIndex: deselectByIndex = "deselectByIndex".asInstanceOf[deselectByIndex]
   
   @js.native
-  sealed trait deselectByIndex extends js.Object
+  sealed trait deselectByValue extends StObject
+  inline def deselectByValue: deselectByValue = "deselectByValue".asInstanceOf[deselectByValue]
   
   @js.native
-  sealed trait deselectByValue extends js.Object
+  sealed trait deselectCell extends StObject
+  inline def deselectCell: deselectCell = "deselectCell".asInstanceOf[deselectCell]
   
   @js.native
-  sealed trait deselectCell extends js.Object
+  sealed trait deselectCellById extends StObject
+  inline def deselectCellById: deselectCellById = "deselectCellById".asInstanceOf[deselectCellById]
   
   @js.native
-  sealed trait deselectCellById extends js.Object
+  sealed trait deselectRow extends StObject
+  inline def deselectRow: deselectRow = "deselectRow".asInstanceOf[deselectRow]
   
   @js.native
-  sealed trait deselectRow extends js.Object
+  sealed trait deselectRowById extends StObject
+  inline def deselectRowById: deselectRowById = "deselectRowById".asInstanceOf[deselectRowById]
   
   @js.native
-  sealed trait deselectRowById extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroyed extends StObject
+  inline def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
-  sealed trait destroyed extends js.Object
+  sealed trait dialogButtonCancelText extends StObject
+  inline def dialogButtonCancelText: dialogButtonCancelText = "dialogButtonCancelText".asInstanceOf[dialogButtonCancelText]
   
   @js.native
-  sealed trait dialogButtonCancelText extends js.Object
+  sealed trait dialogButtonOKText extends StObject
+  inline def dialogButtonOKText: dialogButtonOKText = "dialogButtonOKText".asInstanceOf[dialogButtonOKText]
   
   @js.native
-  sealed trait dialogButtonOKText extends js.Object
+  sealed trait dialogClass extends StObject
+  inline def dialogClass: dialogClass = "dialogClass".asInstanceOf[dialogClass]
   
   @js.native
-  sealed trait dialogClass extends js.Object
+  sealed trait dialogWidget extends StObject
+  inline def dialogWidget: dialogWidget = "dialogWidget".asInstanceOf[dialogWidget]
   
   @js.native
-  sealed trait dialogWidget extends js.Object
+  sealed trait diamondMarkerTemplate extends StObject
+  inline def diamondMarkerTemplate: diamondMarkerTemplate = "diamondMarkerTemplate".asInstanceOf[diamondMarkerTemplate]
   
   @js.native
-  sealed trait diamondMarkerTemplate extends js.Object
+  sealed trait direction extends StObject
+  inline def direction: direction = "direction".asInstanceOf[direction]
   
   @js.native
-  sealed trait direction extends js.Object
+  sealed trait directionPriority extends StObject
+  inline def directionPriority: directionPriority = "directionPriority".asInstanceOf[directionPriority]
   
   @js.native
-  sealed trait directionPriority extends js.Object
+  sealed trait disableColumnsDropArea extends StObject
+  inline def disableColumnsDropArea: disableColumnsDropArea = "disableColumnsDropArea".asInstanceOf[disableColumnsDropArea]
   
   @js.native
-  sealed trait disableColumnsDropArea extends js.Object
+  sealed trait disableFiltersDropArea extends StObject
+  inline def disableFiltersDropArea: disableFiltersDropArea = "disableFiltersDropArea".asInstanceOf[disableFiltersDropArea]
   
   @js.native
-  sealed trait disableFiltersDropArea extends js.Object
+  sealed trait disableItem extends StObject
+  inline def disableItem: disableItem = "disableItem".asInstanceOf[disableItem]
   
   @js.native
-  sealed trait disableItem extends js.Object
+  sealed trait disableMeasuresDropArea extends StObject
+  inline def disableMeasuresDropArea: disableMeasuresDropArea = "disableMeasuresDropArea".asInstanceOf[disableMeasuresDropArea]
   
   @js.native
-  sealed trait disableMeasuresDropArea extends js.Object
+  sealed trait disableRowsDropArea extends StObject
+  inline def disableRowsDropArea: disableRowsDropArea = "disableRowsDropArea".asInstanceOf[disableRowsDropArea]
   
   @js.native
-  sealed trait disableRowsDropArea extends js.Object
+  sealed trait disabled extends StObject
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait displayFactor extends StObject
+  inline def displayFactor: displayFactor = "displayFactor".asInstanceOf[displayFactor]
   
   @js.native
-  sealed trait displayFactor extends js.Object
+  sealed trait displayMode extends StObject
+  inline def displayMode: displayMode = "displayMode".asInstanceOf[displayMode]
   
   @js.native
-  sealed trait displayMode extends js.Object
+  sealed trait displayName extends StObject
+  inline def displayName: displayName = "displayName".asInstanceOf[displayName]
   
   @js.native
-  sealed trait displayName extends js.Object
+  sealed trait displayNormalRangeInFront extends StObject
+  inline def displayNormalRangeInFront: displayNormalRangeInFront = "displayNormalRangeInFront".asInstanceOf[displayNormalRangeInFront]
   
   @js.native
-  sealed trait displayNormalRangeInFront extends js.Object
+  sealed trait displayTimeOffset extends StObject
+  inline def displayTimeOffset: displayTimeOffset = "displayTimeOffset".asInstanceOf[displayTimeOffset]
   
   @js.native
-  sealed trait displayTimeOffset extends js.Object
+  sealed trait displayType extends StObject
+  inline def displayType: displayType = "displayType".asInstanceOf[displayType]
   
   @js.native
-  sealed trait displayType extends js.Object
+  sealed trait displayValue extends StObject
+  inline def displayValue: displayValue = "displayValue".asInstanceOf[displayValue]
   
   @js.native
-  sealed trait displayValue extends js.Object
+  sealed trait distance extends StObject
+  inline def distance: distance = "distance".asInstanceOf[distance]
   
   @js.native
-  sealed trait distance extends js.Object
+  sealed trait doneLabel extends StObject
+  inline def doneLabel: doneLabel = "doneLabel".asInstanceOf[doneLabel]
   
   @js.native
-  sealed trait doneLabel extends js.Object
+  sealed trait doneTooltip extends StObject
+  inline def doneTooltip: doneTooltip = "doneTooltip".asInstanceOf[doneTooltip]
   
   @js.native
-  sealed trait doneTooltip extends js.Object
+  sealed trait drag extends StObject
+  inline def drag: drag = "drag".asInstanceOf[drag]
   
   @js.native
-  sealed trait drag extends js.Object
+  sealed trait dragAndDrop extends StObject
+  inline def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
   
   @js.native
-  sealed trait dragAndDrop extends js.Object
+  sealed trait dragAndDropSettings extends StObject
+  inline def dragAndDropSettings: dragAndDropSettings = "dragAndDropSettings".asInstanceOf[dragAndDropSettings]
   
   @js.native
-  sealed trait dragAndDropSettings extends js.Object
+  sealed trait dragDelta extends StObject
+  inline def dragDelta: dragDelta = "dragDelta".asInstanceOf[dragDelta]
   
   @js.native
-  sealed trait dragDelta extends js.Object
+  sealed trait dragHelperOpacity extends StObject
+  inline def dragHelperOpacity: dragHelperOpacity = "dragHelperOpacity".asInstanceOf[dragHelperOpacity]
   
   @js.native
-  sealed trait dragHelperOpacity extends js.Object
+  sealed trait dragModifier extends StObject
+  inline def dragModifier: dragModifier = "dragModifier".asInstanceOf[dragModifier]
   
   @js.native
-  sealed trait dragModifier extends js.Object
+  sealed trait dragStart extends StObject
+  inline def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
   
   @js.native
-  sealed trait dragStart extends js.Object
+  sealed trait dragStop extends StObject
+  inline def dragStop: dragStop = "dragStop".asInstanceOf[dragStop]
   
   @js.native
-  sealed trait dragStop extends js.Object
+  sealed trait draggable extends StObject
+  inline def draggable: draggable = "draggable".asInstanceOf[draggable]
   
   @js.native
-  sealed trait draggable extends js.Object
+  sealed trait dropDown extends StObject
+  inline def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
   
   @js.native
-  sealed trait dropDown extends js.Object
+  sealed trait dropDownAnimationDuration extends StObject
+  inline def dropDownAnimationDuration: dropDownAnimationDuration = "dropDownAnimationDuration".asInstanceOf[dropDownAnimationDuration]
   
   @js.native
-  sealed trait dropDownAnimationDuration extends js.Object
+  sealed trait dropDownAttachedToBody extends StObject
+  inline def dropDownAttachedToBody: dropDownAttachedToBody = "dropDownAttachedToBody".asInstanceOf[dropDownAttachedToBody]
   
   @js.native
-  sealed trait dropDownAttachedToBody extends js.Object
+  sealed trait dropDownButton extends StObject
+  inline def dropDownButton: dropDownButton = "dropDownButton".asInstanceOf[dropDownButton]
   
   @js.native
-  sealed trait dropDownButton extends js.Object
+  sealed trait dropDownButtonTitle extends StObject
+  inline def dropDownButtonTitle: dropDownButtonTitle = "dropDownButtonTitle".asInstanceOf[dropDownButtonTitle]
   
   @js.native
-  sealed trait dropDownButtonTitle extends js.Object
+  sealed trait dropDownCancelClicked extends StObject
+  inline def dropDownCancelClicked: dropDownCancelClicked = "dropDownCancelClicked".asInstanceOf[dropDownCancelClicked]
   
   @js.native
-  sealed trait dropDownCancelClicked extends js.Object
+  sealed trait dropDownClosed extends StObject
+  inline def dropDownClosed: dropDownClosed = "dropDownClosed".asInstanceOf[dropDownClosed]
   
   @js.native
-  sealed trait dropDownClosed extends js.Object
+  sealed trait dropDownClosing extends StObject
+  inline def dropDownClosing: dropDownClosing = "dropDownClosing".asInstanceOf[dropDownClosing]
   
   @js.native
-  sealed trait dropDownClosing extends js.Object
+  sealed trait dropDownContainer extends StObject
+  inline def dropDownContainer: dropDownContainer = "dropDownContainer".asInstanceOf[dropDownContainer]
   
   @js.native
-  sealed trait dropDownContainer extends js.Object
+  sealed trait dropDownDialogAnimationDuration extends StObject
+  inline def dropDownDialogAnimationDuration: dropDownDialogAnimationDuration = "dropDownDialogAnimationDuration".asInstanceOf[dropDownDialogAnimationDuration]
   
   @js.native
-  sealed trait dropDownDialogAnimationDuration extends js.Object
+  sealed trait dropDownHeight extends StObject
+  inline def dropDownHeight: dropDownHeight = "dropDownHeight".asInstanceOf[dropDownHeight]
   
   @js.native
-  sealed trait dropDownHeight extends js.Object
+  sealed trait dropDownItemSelected extends StObject
+  inline def dropDownItemSelected: dropDownItemSelected = "dropDownItemSelected".asInstanceOf[dropDownItemSelected]
   
   @js.native
-  sealed trait dropDownItemSelected extends js.Object
+  sealed trait dropDownItemSelecting extends StObject
+  inline def dropDownItemSelecting: dropDownItemSelecting = "dropDownItemSelecting".asInstanceOf[dropDownItemSelecting]
   
   @js.native
-  sealed trait dropDownItemSelecting extends js.Object
+  sealed trait dropDownListClosed extends StObject
+  inline def dropDownListClosed: dropDownListClosed = "dropDownListClosed".asInstanceOf[dropDownListClosed]
   
   @js.native
-  sealed trait dropDownListClosed extends js.Object
+  sealed trait dropDownListClosing extends StObject
+  inline def dropDownListClosing: dropDownListClosing = "dropDownListClosing".asInstanceOf[dropDownListClosing]
   
   @js.native
-  sealed trait dropDownListClosing extends js.Object
+  sealed trait dropDownListOpened extends StObject
+  inline def dropDownListOpened: dropDownListOpened = "dropDownListOpened".asInstanceOf[dropDownListOpened]
   
   @js.native
-  sealed trait dropDownListOpened extends js.Object
+  sealed trait dropDownListOpening extends StObject
+  inline def dropDownListOpening: dropDownListOpening = "dropDownListOpening".asInstanceOf[dropDownListOpening]
   
   @js.native
-  sealed trait dropDownListOpening extends js.Object
+  sealed trait dropDownMoveFirstText extends StObject
+  inline def dropDownMoveFirstText: dropDownMoveFirstText = "dropDownMoveFirstText".asInstanceOf[dropDownMoveFirstText]
   
   @js.native
-  sealed trait dropDownMoveFirstText extends js.Object
+  sealed trait dropDownMoveLastText extends StObject
+  inline def dropDownMoveLastText: dropDownMoveLastText = "dropDownMoveLastText".asInstanceOf[dropDownMoveLastText]
   
   @js.native
-  sealed trait dropDownMoveLastText extends js.Object
+  sealed trait dropDownMoveLeftText extends StObject
+  inline def dropDownMoveLeftText: dropDownMoveLeftText = "dropDownMoveLeftText".asInstanceOf[dropDownMoveLeftText]
   
   @js.native
-  sealed trait dropDownMoveLeftText extends js.Object
+  sealed trait dropDownMoveRightText extends StObject
+  inline def dropDownMoveRightText: dropDownMoveRightText = "dropDownMoveRightText".asInstanceOf[dropDownMoveRightText]
   
   @js.native
-  sealed trait dropDownMoveRightText extends js.Object
+  sealed trait dropDownOKClicked extends StObject
+  inline def dropDownOKClicked: dropDownOKClicked = "dropDownOKClicked".asInstanceOf[dropDownOKClicked]
   
   @js.native
-  sealed trait dropDownOKClicked extends js.Object
+  sealed trait dropDownOnFocus extends StObject
+  inline def dropDownOnFocus: dropDownOnFocus = "dropDownOnFocus".asInstanceOf[dropDownOnFocus]
   
   @js.native
-  sealed trait dropDownOnFocus extends js.Object
+  sealed trait dropDownOnReadOnly extends StObject
+  inline def dropDownOnReadOnly: dropDownOnReadOnly = "dropDownOnReadOnly".asInstanceOf[dropDownOnReadOnly]
   
   @js.native
-  sealed trait dropDownOnReadOnly extends js.Object
+  sealed trait dropDownOpened extends StObject
+  inline def dropDownOpened: dropDownOpened = "dropDownOpened".asInstanceOf[dropDownOpened]
   
   @js.native
-  sealed trait dropDownOpened extends js.Object
+  sealed trait dropDownOpening extends StObject
+  inline def dropDownOpening: dropDownOpening = "dropDownOpening".asInstanceOf[dropDownOpening]
   
   @js.native
-  sealed trait dropDownOpening extends js.Object
+  sealed trait dropDownOrientation extends StObject
+  inline def dropDownOrientation: dropDownOrientation = "dropDownOrientation".asInstanceOf[dropDownOrientation]
   
   @js.native
-  sealed trait dropDownOrientation extends js.Object
+  sealed trait dropDownParent extends StObject
+  inline def dropDownParent: dropDownParent = "dropDownParent".asInstanceOf[dropDownParent]
   
   @js.native
-  sealed trait dropDownParent extends js.Object
+  sealed trait dropDownVisible extends StObject
+  inline def dropDownVisible: dropDownVisible = "dropDownVisible".asInstanceOf[dropDownVisible]
   
   @js.native
-  sealed trait dropDownVisible extends js.Object
+  sealed trait dropDownWidth extends StObject
+  inline def dropDownWidth: dropDownWidth = "dropDownWidth".asInstanceOf[dropDownWidth]
   
   @js.native
-  sealed trait dropDownWidth extends js.Object
+  sealed trait duplicateLabelOmissionStrategy extends StObject
+  inline def duplicateLabelOmissionStrategy: duplicateLabelOmissionStrategy = "duplicateLabelOmissionStrategy".asInstanceOf[duplicateLabelOmissionStrategy]
   
   @js.native
-  sealed trait duplicateLabelOmissionStrategy extends js.Object
+  sealed trait duration extends StObject
+  inline def duration: duration = "duration".asInstanceOf[duration]
   
   @js.native
-  sealed trait duration extends js.Object
+  sealed trait eciHeaderDisplayMode extends StObject
+  inline def eciHeaderDisplayMode: eciHeaderDisplayMode = "eciHeaderDisplayMode".asInstanceOf[eciHeaderDisplayMode]
   
   @js.native
-  sealed trait eciHeaderDisplayMode extends js.Object
+  sealed trait eciNumber extends StObject
+  inline def eciNumber: eciNumber = "eciNumber".asInstanceOf[eciNumber]
   
   @js.native
-  sealed trait eciNumber extends js.Object
+  sealed trait editAppointment extends StObject
+  inline def editAppointment: editAppointment = "editAppointment".asInstanceOf[editAppointment]
   
   @js.native
-  sealed trait editAppointment extends js.Object
+  sealed trait editCellEnded extends StObject
+  inline def editCellEnded: editCellEnded = "editCellEnded".asInstanceOf[editCellEnded]
   
   @js.native
-  sealed trait editCellEnded extends js.Object
+  sealed trait editCellEnding extends StObject
+  inline def editCellEnding: editCellEnding = "editCellEnding".asInstanceOf[editCellEnding]
   
   @js.native
-  sealed trait editCellEnding extends js.Object
+  sealed trait editCellStarted extends StObject
+  inline def editCellStarted: editCellStarted = "editCellStarted".asInstanceOf[editCellStarted]
   
   @js.native
-  sealed trait editCellStarted extends js.Object
+  sealed trait editCellStarting extends StObject
+  inline def editCellStarting: editCellStarting = "editCellStarting".asInstanceOf[editCellStarting]
   
   @js.native
-  sealed trait editCellStarting extends js.Object
+  sealed trait editMode extends StObject
+  inline def editMode: editMode = "editMode".asInstanceOf[editMode]
   
   @js.native
-  sealed trait editMode extends js.Object
+  sealed trait editModeEntered extends StObject
+  inline def editModeEntered: editModeEntered = "editModeEntered".asInstanceOf[editModeEntered]
   
   @js.native
-  sealed trait editModeEntered extends js.Object
+  sealed trait editModeEntering extends StObject
+  inline def editModeEntering: editModeEntering = "editModeEntering".asInstanceOf[editModeEntering]
   
   @js.native
-  sealed trait editModeEntering extends js.Object
+  sealed trait editModeExited extends StObject
+  inline def editModeExited: editModeExited = "editModeExited".asInstanceOf[editModeExited]
   
   @js.native
-  sealed trait editModeExited extends js.Object
+  sealed trait editModeExiting extends StObject
+  inline def editModeExiting: editModeExiting = "editModeExiting".asInstanceOf[editModeExiting]
   
   @js.native
-  sealed trait editModeExiting extends js.Object
+  sealed trait editModeValidationError extends StObject
+  inline def editModeValidationError: editModeValidationError = "editModeValidationError".asInstanceOf[editModeValidationError]
   
   @js.native
-  sealed trait editModeValidationError extends js.Object
+  sealed trait editRangePasswordNeeded extends StObject
+  inline def editRangePasswordNeeded: editRangePasswordNeeded = "editRangePasswordNeeded".asInstanceOf[editRangePasswordNeeded]
   
   @js.native
-  sealed trait editRangePasswordNeeded extends js.Object
+  sealed trait editRowEnded extends StObject
+  inline def editRowEnded: editRowEnded = "editRowEnded".asInstanceOf[editRowEnded]
   
   @js.native
-  sealed trait editRowEnded extends js.Object
+  sealed trait editRowEnding extends StObject
+  inline def editRowEnding: editRowEnding = "editRowEnding".asInstanceOf[editRowEnding]
   
   @js.native
-  sealed trait editRowEnding extends js.Object
+  sealed trait editRowStarted extends StObject
+  inline def editRowStarted: editRowStarted = "editRowStarted".asInstanceOf[editRowStarted]
   
   @js.native
-  sealed trait editRowStarted extends js.Object
+  sealed trait editRowStarting extends StObject
+  inline def editRowStarting: editRowStarting = "editRowStarting".asInstanceOf[editRowStarting]
   
   @js.native
-  sealed trait editRowStarting extends js.Object
+  sealed trait editorContainer extends StObject
+  inline def editorContainer: editorContainer = "editorContainer".asInstanceOf[editorContainer]
   
   @js.native
-  sealed trait editorContainer extends js.Object
+  sealed trait editorForCell extends StObject
+  inline def editorForCell: editorForCell = "editorForCell".asInstanceOf[editorForCell]
   
   @js.native
-  sealed trait editorForCell extends js.Object
+  sealed trait editorForKey extends StObject
+  inline def editorForKey: editorForKey = "editorForKey".asInstanceOf[editorForKey]
   
   @js.native
-  sealed trait editorForKey extends js.Object
+  sealed trait email extends StObject
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait emptyCellText extends StObject
+  inline def emptyCellText: emptyCellText = "emptyCellText".asInstanceOf[emptyCellText]
   
   @js.native
-  sealed trait emptyCellText extends js.Object
+  sealed trait emptyChar extends StObject
+  inline def emptyChar: emptyChar = "emptyChar".asInstanceOf[emptyChar]
   
   @js.native
-  sealed trait emptyChar extends js.Object
+  sealed trait emptyGroupByAreaContentSelectColumnsCaption extends StObject
+  inline def emptyGroupByAreaContentSelectColumnsCaption: emptyGroupByAreaContentSelectColumnsCaption = "emptyGroupByAreaContentSelectColumnsCaption".asInstanceOf[emptyGroupByAreaContentSelectColumnsCaption]
   
   @js.native
-  sealed trait emptyGroupByAreaContentSelectColumnsCaption extends js.Object
+  sealed trait enableAddChild extends StObject
+  inline def enableAddChild: enableAddChild = "enableAddChild".asInstanceOf[enableAddChild]
   
   @js.native
-  sealed trait enableAddChild extends js.Object
+  sealed trait enableAddRow extends StObject
+  inline def enableAddRow: enableAddRow = "enableAddRow".asInstanceOf[enableAddRow]
   
   @js.native
-  sealed trait enableAddRow extends js.Object
+  sealed trait enableCheckBoxes extends StObject
+  inline def enableCheckBoxes: enableCheckBoxes = "enableCheckBoxes".asInstanceOf[enableCheckBoxes]
   
   @js.native
-  sealed trait enableCheckBoxes extends js.Object
+  sealed trait enableClearButton extends StObject
+  inline def enableClearButton: enableClearButton = "enableClearButton".asInstanceOf[enableClearButton]
   
   @js.native
-  sealed trait enableClearButton extends js.Object
+  sealed trait enableDataDirtyException extends StObject
+  inline def enableDataDirtyException: enableDataDirtyException = "enableDataDirtyException".asInstanceOf[enableDataDirtyException]
   
   @js.native
-  sealed trait enableDataDirtyException extends js.Object
+  sealed trait enableDblclick extends StObject
+  inline def enableDblclick: enableDblclick = "enableDblclick".asInstanceOf[enableDblclick]
   
   @js.native
-  sealed trait enableDblclick extends js.Object
+  sealed trait enableDeleteRow extends StObject
+  inline def enableDeleteRow: enableDeleteRow = "enableDeleteRow".asInstanceOf[enableDeleteRow]
   
   @js.native
-  sealed trait enableDeleteRow extends js.Object
+  sealed trait enableHeaderFocus extends StObject
+  inline def enableHeaderFocus: enableHeaderFocus = "enableHeaderFocus".asInstanceOf[enableHeaderFocus]
   
   @js.native
-  sealed trait enableHeaderFocus extends js.Object
+  sealed trait enableHoverStyles extends StObject
+  inline def enableHoverStyles: enableHoverStyles = "enableHoverStyles".asInstanceOf[enableHoverStyles]
   
   @js.native
-  sealed trait enableHoverStyles extends js.Object
+  sealed trait enableRemoteLoadOnDemand extends StObject
+  inline def enableRemoteLoadOnDemand: enableRemoteLoadOnDemand = "enableRemoteLoadOnDemand".asInstanceOf[enableRemoteLoadOnDemand]
   
   @js.native
-  sealed trait enableRemoteLoadOnDemand extends js.Object
+  sealed trait enableResizeContainerCheck extends StObject
+  inline def enableResizeContainerCheck: enableResizeContainerCheck = "enableResizeContainerCheck".asInstanceOf[enableResizeContainerCheck]
   
   @js.native
-  sealed trait enableResizeContainerCheck extends js.Object
+  sealed trait enableRowNumbering extends StObject
+  inline def enableRowNumbering: enableRowNumbering = "enableRowNumbering".asInstanceOf[enableRowNumbering]
   
   @js.native
-  sealed trait enableRowNumbering extends js.Object
+  sealed trait enableSelectAllForPaging extends StObject
+  inline def enableSelectAllForPaging: enableSelectAllForPaging = "enableSelectAllForPaging".asInstanceOf[enableSelectAllForPaging]
   
   @js.native
-  sealed trait enableSelectAllForPaging extends js.Object
+  sealed trait enableTodayButton extends StObject
+  inline def enableTodayButton: enableTodayButton = "enableTodayButton".asInstanceOf[enableTodayButton]
   
   @js.native
-  sealed trait enableTodayButton extends js.Object
+  sealed trait enableUTCDates extends StObject
+  inline def enableUTCDates: enableUTCDates = "enableUTCDates".asInstanceOf[enableUTCDates]
   
   @js.native
-  sealed trait enableUTCDates extends js.Object
+  sealed trait enableVerticalRendering extends StObject
+  inline def enableVerticalRendering: enableVerticalRendering = "enableVerticalRendering".asInstanceOf[enableVerticalRendering]
   
   @js.native
-  sealed trait enableVerticalRendering extends js.Object
+  sealed trait encodingMode extends StObject
+  inline def encodingMode: encodingMode = "encodingMode".asInstanceOf[encodingMode]
   
   @js.native
-  sealed trait encodingMode extends js.Object
+  sealed trait endEdit extends StObject
+  inline def endEdit: endEdit = "endEdit".asInstanceOf[endEdit]
   
   @js.native
-  sealed trait endEdit extends js.Object
+  sealed trait endInset extends StObject
+  inline def endInset: endInset = "endInset".asInstanceOf[endInset]
   
   @js.native
-  sealed trait endInset extends js.Object
+  sealed trait endTiledZoomingIfRunning extends StObject
+  inline def endTiledZoomingIfRunning: endTiledZoomingIfRunning = "endTiledZoomingIfRunning".asInstanceOf[endTiledZoomingIfRunning]
   
   @js.native
-  sealed trait endTiledZoomingIfRunning extends js.Object
+  sealed trait endValue extends StObject
+  inline def endValue: endValue = "endValue".asInstanceOf[endValue]
   
   @js.native
-  sealed trait endValue extends js.Object
+  sealed trait ended extends StObject
+  inline def ended: ended = "ended".asInstanceOf[ended]
   
   @js.native
-  sealed trait ended extends js.Object
+  sealed trait enterFullScreen extends StObject
+  inline def enterFullScreen: enterFullScreen = "enterFullScreen".asInstanceOf[enterFullScreen]
   
   @js.native
-  sealed trait enterFullScreen extends js.Object
+  sealed trait enterKeyNavigationDirection extends StObject
+  inline def enterKeyNavigationDirection: enterKeyNavigationDirection = "enterKeyNavigationDirection".asInstanceOf[enterKeyNavigationDirection]
   
   @js.native
-  sealed trait enterKeyNavigationDirection extends js.Object
+  sealed trait equalTo extends StObject
+  inline def equalTo: equalTo = "equalTo".asInstanceOf[equalTo]
   
   @js.native
-  sealed trait equalTo extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait errorCorrectionLevel extends StObject
+  inline def errorCorrectionLevel: errorCorrectionLevel = "errorCorrectionLevel".asInstanceOf[errorCorrectionLevel]
   
   @js.native
-  sealed trait errorCorrectionLevel extends js.Object
+  sealed trait errorHidden extends StObject
+  inline def errorHidden: errorHidden = "errorHidden".asInstanceOf[errorHidden]
   
   @js.native
-  sealed trait errorHidden extends js.Object
+  sealed trait errorHiding extends StObject
+  inline def errorHiding: errorHiding = "errorHiding".asInstanceOf[errorHiding]
   
   @js.native
-  sealed trait errorHiding extends js.Object
+  sealed trait errorMessage extends StObject
+  inline def errorMessage: errorMessage = "errorMessage".asInstanceOf[errorMessage]
   
   @js.native
-  sealed trait errorMessage extends js.Object
+  sealed trait errorMessageAJAXRequestFileSize extends StObject
+  inline def errorMessageAJAXRequestFileSize: errorMessageAJAXRequestFileSize = "errorMessageAJAXRequestFileSize".asInstanceOf[errorMessageAJAXRequestFileSize]
   
   @js.native
-  sealed trait errorMessageAJAXRequestFileSize extends js.Object
+  sealed trait errorMessageCancelUpload extends StObject
+  inline def errorMessageCancelUpload: errorMessageCancelUpload = "errorMessageCancelUpload".asInstanceOf[errorMessageCancelUpload]
   
   @js.native
-  sealed trait errorMessageCancelUpload extends js.Object
+  sealed trait errorMessageDisplaying extends StObject
+  inline def errorMessageDisplaying: errorMessageDisplaying = "errorMessageDisplaying".asInstanceOf[errorMessageDisplaying]
   
   @js.native
-  sealed trait errorMessageDisplaying extends js.Object
+  sealed trait errorMessageDropMultipleFilesWhenSingleModel extends StObject
+  inline def errorMessageDropMultipleFilesWhenSingleModel: errorMessageDropMultipleFilesWhenSingleModel = "errorMessageDropMultipleFilesWhenSingleModel".asInstanceOf[errorMessageDropMultipleFilesWhenSingleModel]
   
   @js.native
-  sealed trait errorMessageDropMultipleFilesWhenSingleModel extends js.Object
+  sealed trait errorMessageGetFileStatus extends StObject
+  inline def errorMessageGetFileStatus: errorMessageGetFileStatus = "errorMessageGetFileStatus".asInstanceOf[errorMessageGetFileStatus]
   
   @js.native
-  sealed trait errorMessageGetFileStatus extends js.Object
+  sealed trait errorMessageMaxFileSizeExceeded extends StObject
+  inline def errorMessageMaxFileSizeExceeded: errorMessageMaxFileSizeExceeded = "errorMessageMaxFileSizeExceeded".asInstanceOf[errorMessageMaxFileSizeExceeded]
   
   @js.native
-  sealed trait errorMessageMaxFileSizeExceeded extends js.Object
+  sealed trait errorMessageMaxSimultaneousFiles extends StObject
+  inline def errorMessageMaxSimultaneousFiles: errorMessageMaxSimultaneousFiles = "errorMessageMaxSimultaneousFiles".asInstanceOf[errorMessageMaxSimultaneousFiles]
   
   @js.native
-  sealed trait errorMessageMaxSimultaneousFiles extends js.Object
+  sealed trait errorMessageMaxUploadedFiles extends StObject
+  inline def errorMessageMaxUploadedFiles: errorMessageMaxUploadedFiles = "errorMessageMaxUploadedFiles".asInstanceOf[errorMessageMaxUploadedFiles]
   
   @js.native
-  sealed trait errorMessageMaxUploadedFiles extends js.Object
+  sealed trait errorMessageNoSuchFile extends StObject
+  inline def errorMessageNoSuchFile: errorMessageNoSuchFile = "errorMessageNoSuchFile".asInstanceOf[errorMessageNoSuchFile]
   
   @js.native
-  sealed trait errorMessageNoSuchFile extends js.Object
+  sealed trait errorMessageOther extends StObject
+  inline def errorMessageOther: errorMessageOther = "errorMessageOther".asInstanceOf[errorMessageOther]
   
   @js.native
-  sealed trait errorMessageOther extends js.Object
+  sealed trait errorMessageText extends StObject
+  inline def errorMessageText: errorMessageText = "errorMessageText".asInstanceOf[errorMessageText]
   
   @js.native
-  sealed trait errorMessageText extends js.Object
+  sealed trait errorMessageTryToRemoveNonExistingFile extends StObject
+  inline def errorMessageTryToRemoveNonExistingFile: errorMessageTryToRemoveNonExistingFile = "errorMessageTryToRemoveNonExistingFile".asInstanceOf[errorMessageTryToRemoveNonExistingFile]
   
   @js.native
-  sealed trait errorMessageTryToRemoveNonExistingFile extends js.Object
+  sealed trait errorMessageTryToStartNonExistingFile extends StObject
+  inline def errorMessageTryToStartNonExistingFile: errorMessageTryToStartNonExistingFile = "errorMessageTryToStartNonExistingFile".asInstanceOf[errorMessageTryToStartNonExistingFile]
   
   @js.native
-  sealed trait errorMessageTryToStartNonExistingFile extends js.Object
+  sealed trait errorMessageValidatingFileExtension extends StObject
+  inline def errorMessageValidatingFileExtension: errorMessageValidatingFileExtension = "errorMessageValidatingFileExtension".asInstanceOf[errorMessageValidatingFileExtension]
   
   @js.native
-  sealed trait errorMessageValidatingFileExtension extends js.Object
+  sealed trait errorShowing extends StObject
+  inline def errorShowing: errorShowing = "errorShowing".asInstanceOf[errorShowing]
   
   @js.native
-  sealed trait errorShowing extends js.Object
+  sealed trait errorShown extends StObject
+  inline def errorShown: errorShown = "errorShown".asInstanceOf[errorShown]
   
   @js.native
-  sealed trait errorShown extends js.Object
+  sealed trait excelNavigationMode extends StObject
+  inline def excelNavigationMode: excelNavigationMode = "excelNavigationMode".asInstanceOf[excelNavigationMode]
   
   @js.native
-  sealed trait excelNavigationMode extends js.Object
+  sealed trait excludeKeys extends StObject
+  inline def excludeKeys: excludeKeys = "excludeKeys".asInstanceOf[excludeKeys]
   
   @js.native
-  sealed trait excludeKeys extends js.Object
+  sealed trait excludedProperties extends StObject
+  inline def excludedProperties: excludedProperties = "excludedProperties".asInstanceOf[excludedProperties]
   
   @js.native
-  sealed trait excludedProperties extends js.Object
+  sealed trait executeAction extends StObject
+  inline def executeAction: executeAction = "executeAction".asInstanceOf[executeAction]
   
   @js.native
-  sealed trait executeAction extends js.Object
+  sealed trait executeAllRules extends StObject
+  inline def executeAllRules: executeAllRules = "executeAllRules".asInstanceOf[executeAllRules]
   
   @js.native
-  sealed trait executeAllRules extends js.Object
+  sealed trait exitEditMode extends StObject
+  inline def exitEditMode: exitEditMode = "exitEditMode".asInstanceOf[exitEditMode]
   
   @js.native
-  sealed trait exitEditMode extends js.Object
+  sealed trait exitFullScreen extends StObject
+  inline def exitFullScreen: exitFullScreen = "exitFullScreen".asInstanceOf[exitFullScreen]
   
   @js.native
-  sealed trait exitFullScreen extends js.Object
+  sealed trait expand extends StObject
+  inline def expand: expand = "expand".asInstanceOf[expand]
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait expandAt extends StObject
+  inline def expandAt: expandAt = "expandAt".asInstanceOf[expandAt]
   
   @js.native
-  sealed trait expandAt extends js.Object
+  sealed trait expandButtonIcon extends StObject
+  inline def expandButtonIcon: expandButtonIcon = "expandButtonIcon".asInstanceOf[expandButtonIcon]
   
   @js.native
-  sealed trait expandButtonIcon extends js.Object
+  sealed trait expandColWidth extends StObject
+  inline def expandColWidth: expandColWidth = "expandColWidth".asInstanceOf[expandColWidth]
   
   @js.native
-  sealed trait expandColWidth extends js.Object
+  sealed trait expandCollapseAnimations extends StObject
+  inline def expandCollapseAnimations: expandCollapseAnimations = "expandCollapseAnimations".asInstanceOf[expandCollapseAnimations]
   
   @js.native
-  sealed trait expandCollapseAnimations extends js.Object
+  sealed trait expandGroup extends StObject
+  inline def expandGroup: expandGroup = "expandGroup".asInstanceOf[expandGroup]
   
   @js.native
-  sealed trait expandGroup extends js.Object
+  sealed trait expandRow extends StObject
+  inline def expandRow: expandRow = "expandRow".asInstanceOf[expandRow]
   
   @js.native
-  sealed trait expandRow extends js.Object
+  sealed trait expandToNode extends StObject
+  inline def expandToNode: expandToNode = "expandToNode".asInstanceOf[expandToNode]
   
   @js.native
-  sealed trait expandToNode extends js.Object
+  sealed trait expandTooltip extends StObject
+  inline def expandTooltip: expandTooltip = "expandTooltip".asInstanceOf[expandTooltip]
   
   @js.native
-  sealed trait expandTooltip extends js.Object
+  sealed trait expandTooltipText extends StObject
+  inline def expandTooltipText: expandTooltipText = "expandTooltipText".asInstanceOf[expandTooltipText]
   
   @js.native
-  sealed trait expandTooltipText extends js.Object
+  sealed trait expandTupleMember extends StObject
+  inline def expandTupleMember: expandTupleMember = "expandTupleMember".asInstanceOf[expandTupleMember]
   
   @js.native
-  sealed trait expandTupleMember extends js.Object
+  sealed trait expanded extends StObject
+  inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
-  sealed trait expanded extends js.Object
+  sealed trait expanding extends StObject
+  inline def expanding: expanding = "expanding".asInstanceOf[expanding]
   
   @js.native
-  sealed trait expanding extends js.Object
+  sealed trait expansionIndicatorVisibility extends StObject
+  inline def expansionIndicatorVisibility: expansionIndicatorVisibility = "expansionIndicatorVisibility".asInstanceOf[expansionIndicatorVisibility]
   
   @js.native
-  sealed trait expansionIndicatorVisibility extends js.Object
+  sealed trait explodedRadius extends StObject
+  inline def explodedRadius: explodedRadius = "explodedRadius".asInstanceOf[explodedRadius]
   
   @js.native
-  sealed trait explodedRadius extends js.Object
+  sealed trait explodedSlices extends StObject
+  inline def explodedSlices: explodedSlices = "explodedSlices".asInstanceOf[explodedSlices]
   
   @js.native
-  sealed trait explodedSlices extends js.Object
+  sealed trait exportImage extends StObject
+  inline def exportImage: exportImage = "exportImage".asInstanceOf[exportImage]
   
   @js.native
-  sealed trait exportImage extends js.Object
+  sealed trait exportVisualData extends StObject
+  inline def exportVisualData: exportVisualData = "exportVisualData".asInstanceOf[exportVisualData]
   
   @js.native
-  sealed trait exportVisualData extends js.Object
+  sealed trait fadeTimespan extends StObject
+  inline def fadeTimespan: fadeTimespan = "fadeTimespan".asInstanceOf[fadeTimespan]
   
   @js.native
-  sealed trait fadeTimespan extends js.Object
+  sealed trait featureChooserDropDownOpened extends StObject
+  inline def featureChooserDropDownOpened: featureChooserDropDownOpened = "featureChooserDropDownOpened".asInstanceOf[featureChooserDropDownOpened]
   
   @js.native
-  sealed trait featureChooserDropDownOpened extends js.Object
+  sealed trait featureChooserDropDownOpening extends StObject
+  inline def featureChooserDropDownOpening: featureChooserDropDownOpening = "featureChooserDropDownOpening".asInstanceOf[featureChooserDropDownOpening]
   
   @js.native
-  sealed trait featureChooserDropDownOpening extends js.Object
+  sealed trait featureChooserIconDisplay extends StObject
+  inline def featureChooserIconDisplay: featureChooserIconDisplay = "featureChooserIconDisplay".asInstanceOf[featureChooserIconDisplay]
   
   @js.native
-  sealed trait featureChooserIconDisplay extends js.Object
+  sealed trait featureChooserRendered extends StObject
+  inline def featureChooserRendered: featureChooserRendered = "featureChooserRendered".asInstanceOf[featureChooserRendered]
   
   @js.native
-  sealed trait featureChooserRendered extends js.Object
+  sealed trait featureChooserRendering extends StObject
+  inline def featureChooserRendering: featureChooserRendering = "featureChooserRendering".asInstanceOf[featureChooserRendering]
   
   @js.native
-  sealed trait featureChooserRendering extends js.Object
+  sealed trait featureChooserSortAsc extends StObject
+  inline def featureChooserSortAsc: featureChooserSortAsc = "featureChooserSortAsc".asInstanceOf[featureChooserSortAsc]
   
   @js.native
-  sealed trait featureChooserSortAsc extends js.Object
+  sealed trait featureChooserSortDesc extends StObject
+  inline def featureChooserSortDesc: featureChooserSortDesc = "featureChooserSortDesc".asInstanceOf[featureChooserSortDesc]
   
   @js.native
-  sealed trait featureChooserSortDesc extends js.Object
+  sealed trait featureChooserSubmenuText extends StObject
+  inline def featureChooserSubmenuText: featureChooserSubmenuText = "featureChooserSubmenuText".asInstanceOf[featureChooserSubmenuText]
   
   @js.native
-  sealed trait featureChooserSubmenuText extends js.Object
+  sealed trait featureChooserText extends StObject
+  inline def featureChooserText: featureChooserText = "featureChooserText".asInstanceOf[featureChooserText]
   
   @js.native
-  sealed trait featureChooserText extends js.Object
+  sealed trait featureChooserTextAdvancedFilter extends StObject
+  inline def featureChooserTextAdvancedFilter: featureChooserTextAdvancedFilter = "featureChooserTextAdvancedFilter".asInstanceOf[featureChooserTextAdvancedFilter]
   
   @js.native
-  sealed trait featureChooserTextAdvancedFilter extends js.Object
+  sealed trait featureChooserTextFixedColumn extends StObject
+  inline def featureChooserTextFixedColumn: featureChooserTextFixedColumn = "featureChooserTextFixedColumn".asInstanceOf[featureChooserTextFixedColumn]
   
   @js.native
-  sealed trait featureChooserTextFixedColumn extends js.Object
+  sealed trait featureChooserTextHide extends StObject
+  inline def featureChooserTextHide: featureChooserTextHide = "featureChooserTextHide".asInstanceOf[featureChooserTextHide]
   
   @js.native
-  sealed trait featureChooserTextHide extends js.Object
+  sealed trait featureChooserTextUnfixedColumn extends StObject
+  inline def featureChooserTextUnfixedColumn: featureChooserTextUnfixedColumn = "featureChooserTextUnfixedColumn".asInstanceOf[featureChooserTextUnfixedColumn]
   
   @js.native
-  sealed trait featureChooserTextUnfixedColumn extends js.Object
+  sealed trait featureToggled extends StObject
+  inline def featureToggled: featureToggled = "featureToggled".asInstanceOf[featureToggled]
   
   @js.native
-  sealed trait featureToggled extends js.Object
+  sealed trait featureToggling extends StObject
+  inline def featureToggling: featureToggling = "featureToggling".asInstanceOf[featureToggling]
   
   @js.native
-  sealed trait featureToggling extends js.Object
+  sealed trait features extends StObject
+  inline def features: features = "features".asInstanceOf[features]
   
   @js.native
-  sealed trait features extends js.Object
+  sealed trait field extends StObject
+  inline def field: field = "field".asInstanceOf[field]
   
   @js.native
-  sealed trait field extends js.Object
+  sealed trait fields extends StObject
+  inline def fields: fields = "fields".asInstanceOf[fields]
   
   @js.native
-  sealed trait fields extends js.Object
+  sealed trait fileExtensionIcons extends StObject
+  inline def fileExtensionIcons: fileExtensionIcons = "fileExtensionIcons".asInstanceOf[fileExtensionIcons]
   
   @js.native
-  sealed trait fileExtensionIcons extends js.Object
+  sealed trait fileExtensionsValidating extends StObject
+  inline def fileExtensionsValidating: fileExtensionsValidating = "fileExtensionsValidating".asInstanceOf[fileExtensionsValidating]
   
   @js.native
-  sealed trait fileExtensionsValidating extends js.Object
+  sealed trait fileSelected extends StObject
+  inline def fileSelected: fileSelected = "fileSelected".asInstanceOf[fileSelected]
   
   @js.native
-  sealed trait fileSelected extends js.Object
+  sealed trait fileSelecting extends StObject
+  inline def fileSelecting: fileSelecting = "fileSelecting".asInstanceOf[fileSelecting]
   
   @js.native
-  sealed trait fileSelecting extends js.Object
+  sealed trait fileSizeDecimalDisplay extends StObject
+  inline def fileSizeDecimalDisplay: fileSizeDecimalDisplay = "fileSizeDecimalDisplay".asInstanceOf[fileSizeDecimalDisplay]
   
   @js.native
-  sealed trait fileSizeDecimalDisplay extends js.Object
+  sealed trait fileSizeMetric extends StObject
+  inline def fileSizeMetric: fileSizeMetric = "fileSizeMetric".asInstanceOf[fileSizeMetric]
   
   @js.native
-  sealed trait fileSizeMetric extends js.Object
+  sealed trait fileUploadAborted extends StObject
+  inline def fileUploadAborted: fileUploadAborted = "fileUploadAborted".asInstanceOf[fileUploadAborted]
   
   @js.native
-  sealed trait fileUploadAborted extends js.Object
+  sealed trait fileUploaded extends StObject
+  inline def fileUploaded: fileUploaded = "fileUploaded".asInstanceOf[fileUploaded]
   
   @js.native
-  sealed trait fileUploaded extends js.Object
+  sealed trait fileUploading extends StObject
+  inline def fileUploading: fileUploading = "fileUploading".asInstanceOf[fileUploading]
   
   @js.native
-  sealed trait fileUploading extends js.Object
+  sealed trait filter extends StObject
+  inline def filter: filter = "filter".asInstanceOf[filter]
   
   @js.native
-  sealed trait filter extends js.Object
+  sealed trait filterButtonLocation extends StObject
+  inline def filterButtonLocation: filterButtonLocation = "filterButtonLocation".asInstanceOf[filterButtonLocation]
   
   @js.native
-  sealed trait filterButtonLocation extends js.Object
+  sealed trait filterByExpressions extends StObject
+  inline def filterByExpressions: filterByExpressions = "filterByExpressions".asInstanceOf[filterByExpressions]
   
   @js.native
-  sealed trait filterByExpressions extends js.Object
+  sealed trait filterDelay extends StObject
+  inline def filterDelay: filterDelay = "filterDelay".asInstanceOf[filterDelay]
   
   @js.native
-  sealed trait filterDelay extends js.Object
+  sealed trait filterDialogAddButtonWidth extends StObject
+  inline def filterDialogAddButtonWidth: filterDialogAddButtonWidth = "filterDialogAddButtonWidth".asInstanceOf[filterDialogAddButtonWidth]
   
   @js.native
-  sealed trait filterDialogAddButtonWidth extends js.Object
+  sealed trait filterDialogAddConditionDropDownTemplate extends StObject
+  inline def filterDialogAddConditionDropDownTemplate: filterDialogAddConditionDropDownTemplate = "filterDialogAddConditionDropDownTemplate".asInstanceOf[filterDialogAddConditionDropDownTemplate]
   
   @js.native
-  sealed trait filterDialogAddConditionDropDownTemplate extends js.Object
+  sealed trait filterDialogAddConditionTemplate extends StObject
+  inline def filterDialogAddConditionTemplate: filterDialogAddConditionTemplate = "filterDialogAddConditionTemplate".asInstanceOf[filterDialogAddConditionTemplate]
   
   @js.native
-  sealed trait filterDialogAddConditionTemplate extends js.Object
+  sealed trait filterDialogClosed extends StObject
+  inline def filterDialogClosed: filterDialogClosed = "filterDialogClosed".asInstanceOf[filterDialogClosed]
   
   @js.native
-  sealed trait filterDialogClosed extends js.Object
+  sealed trait filterDialogClosing extends StObject
+  inline def filterDialogClosing: filterDialogClosing = "filterDialogClosing".asInstanceOf[filterDialogClosing]
   
   @js.native
-  sealed trait filterDialogClosing extends js.Object
+  sealed trait filterDialogColumnDropDownDefaultWidth extends StObject
+  inline def filterDialogColumnDropDownDefaultWidth: filterDialogColumnDropDownDefaultWidth = "filterDialogColumnDropDownDefaultWidth".asInstanceOf[filterDialogColumnDropDownDefaultWidth]
   
   @js.native
-  sealed trait filterDialogColumnDropDownDefaultWidth extends js.Object
+  sealed trait filterDialogContainment extends StObject
+  inline def filterDialogContainment: filterDialogContainment = "filterDialogContainment".asInstanceOf[filterDialogContainment]
   
   @js.native
-  sealed trait filterDialogContainment extends js.Object
+  sealed trait filterDialogContentsRendered extends StObject
+  inline def filterDialogContentsRendered: filterDialogContentsRendered = "filterDialogContentsRendered".asInstanceOf[filterDialogContentsRendered]
   
   @js.native
-  sealed trait filterDialogContentsRendered extends js.Object
+  sealed trait filterDialogContentsRendering extends StObject
+  inline def filterDialogContentsRendering: filterDialogContentsRendering = "filterDialogContentsRendering".asInstanceOf[filterDialogContentsRendering]
   
   @js.native
-  sealed trait filterDialogContentsRendering extends js.Object
+  sealed trait filterDialogExprInputDefaultWidth extends StObject
+  inline def filterDialogExprInputDefaultWidth: filterDialogExprInputDefaultWidth = "filterDialogExprInputDefaultWidth".asInstanceOf[filterDialogExprInputDefaultWidth]
   
   @js.native
-  sealed trait filterDialogExprInputDefaultWidth extends js.Object
+  sealed trait filterDialogFilterAdded extends StObject
+  inline def filterDialogFilterAdded: filterDialogFilterAdded = "filterDialogFilterAdded".asInstanceOf[filterDialogFilterAdded]
   
   @js.native
-  sealed trait filterDialogFilterAdded extends js.Object
+  sealed trait filterDialogFilterAdding extends StObject
+  inline def filterDialogFilterAdding: filterDialogFilterAdding = "filterDialogFilterAdding".asInstanceOf[filterDialogFilterAdding]
   
   @js.native
-  sealed trait filterDialogFilterAdding extends js.Object
+  sealed trait filterDialogFilterConditionTemplate extends StObject
+  inline def filterDialogFilterConditionTemplate: filterDialogFilterConditionTemplate = "filterDialogFilterConditionTemplate".asInstanceOf[filterDialogFilterConditionTemplate]
   
   @js.native
-  sealed trait filterDialogFilterConditionTemplate extends js.Object
+  sealed trait filterDialogFilterDropDownDefaultWidth extends StObject
+  inline def filterDialogFilterDropDownDefaultWidth: filterDialogFilterDropDownDefaultWidth = "filterDialogFilterDropDownDefaultWidth".asInstanceOf[filterDialogFilterDropDownDefaultWidth]
   
   @js.native
-  sealed trait filterDialogFilterDropDownDefaultWidth extends js.Object
+  sealed trait filterDialogFilterTemplate extends StObject
+  inline def filterDialogFilterTemplate: filterDialogFilterTemplate = "filterDialogFilterTemplate".asInstanceOf[filterDialogFilterTemplate]
   
   @js.native
-  sealed trait filterDialogFilterTemplate extends js.Object
+  sealed trait filterDialogFiltering extends StObject
+  inline def filterDialogFiltering: filterDialogFiltering = "filterDialogFiltering".asInstanceOf[filterDialogFiltering]
   
   @js.native
-  sealed trait filterDialogFiltering extends js.Object
+  sealed trait filterDialogHeight extends StObject
+  inline def filterDialogHeight: filterDialogHeight = "filterDialogHeight".asInstanceOf[filterDialogHeight]
   
   @js.native
-  sealed trait filterDialogHeight extends js.Object
+  sealed trait filterDialogMaxFilterCount extends StObject
+  inline def filterDialogMaxFilterCount: filterDialogMaxFilterCount = "filterDialogMaxFilterCount".asInstanceOf[filterDialogMaxFilterCount]
   
   @js.native
-  sealed trait filterDialogMaxFilterCount extends js.Object
+  sealed trait filterDialogMoving extends StObject
+  inline def filterDialogMoving: filterDialogMoving = "filterDialogMoving".asInstanceOf[filterDialogMoving]
   
   @js.native
-  sealed trait filterDialogMoving extends js.Object
+  sealed trait filterDialogOkCancelButtonWidth extends StObject
+  inline def filterDialogOkCancelButtonWidth: filterDialogOkCancelButtonWidth = "filterDialogOkCancelButtonWidth".asInstanceOf[filterDialogOkCancelButtonWidth]
   
   @js.native
-  sealed trait filterDialogOkCancelButtonWidth extends js.Object
+  sealed trait filterDialogOpened extends StObject
+  inline def filterDialogOpened: filterDialogOpened = "filterDialogOpened".asInstanceOf[filterDialogOpened]
   
   @js.native
-  sealed trait filterDialogOpened extends js.Object
+  sealed trait filterDialogOpening extends StObject
+  inline def filterDialogOpening: filterDialogOpening = "filterDialogOpening".asInstanceOf[filterDialogOpening]
   
   @js.native
-  sealed trait filterDialogOpening extends js.Object
+  sealed trait filterDialogWidth extends StObject
+  inline def filterDialogWidth: filterDialogWidth = "filterDialogWidth".asInstanceOf[filterDialogWidth]
   
   @js.native
-  sealed trait filterDialogWidth extends js.Object
+  sealed trait filterDropDownAnimationDuration extends StObject
+  inline def filterDropDownAnimationDuration: filterDropDownAnimationDuration = "filterDropDownAnimationDuration".asInstanceOf[filterDropDownAnimationDuration]
   
   @js.native
-  sealed trait filterDropDownAnimationDuration extends js.Object
+  sealed trait filterDropDownAnimations extends StObject
+  inline def filterDropDownAnimations: filterDropDownAnimations = "filterDropDownAnimations".asInstanceOf[filterDropDownAnimations]
   
   @js.native
-  sealed trait filterDropDownAnimations extends js.Object
+  sealed trait filterDropDownClosed extends StObject
+  inline def filterDropDownClosed: filterDropDownClosed = "filterDropDownClosed".asInstanceOf[filterDropDownClosed]
   
   @js.native
-  sealed trait filterDropDownClosed extends js.Object
+  sealed trait filterDropDownClosing extends StObject
+  inline def filterDropDownClosing: filterDropDownClosing = "filterDropDownClosing".asInstanceOf[filterDropDownClosing]
   
   @js.native
-  sealed trait filterDropDownClosing extends js.Object
+  sealed trait filterDropDownHeight extends StObject
+  inline def filterDropDownHeight: filterDropDownHeight = "filterDropDownHeight".asInstanceOf[filterDropDownHeight]
   
   @js.native
-  sealed trait filterDropDownHeight extends js.Object
+  sealed trait filterDropDownItemIcons extends StObject
+  inline def filterDropDownItemIcons: filterDropDownItemIcons = "filterDropDownItemIcons".asInstanceOf[filterDropDownItemIcons]
   
   @js.native
-  sealed trait filterDropDownItemIcons extends js.Object
+  sealed trait filterDropDownOk extends StObject
+  inline def filterDropDownOk: filterDropDownOk = "filterDropDownOk".asInstanceOf[filterDropDownOk]
   
   @js.native
-  sealed trait filterDropDownOk extends js.Object
+  sealed trait filterDropDownOpened extends StObject
+  inline def filterDropDownOpened: filterDropDownOpened = "filterDropDownOpened".asInstanceOf[filterDropDownOpened]
   
   @js.native
-  sealed trait filterDropDownOpened extends js.Object
+  sealed trait filterDropDownOpening extends StObject
+  inline def filterDropDownOpening: filterDropDownOpening = "filterDropDownOpening".asInstanceOf[filterDropDownOpening]
   
   @js.native
-  sealed trait filterDropDownOpening extends js.Object
+  sealed trait filterDropDownWidth extends StObject
+  inline def filterDropDownWidth: filterDropDownWidth = "filterDropDownWidth".asInstanceOf[filterDropDownWidth]
   
   @js.native
-  sealed trait filterDropDownWidth extends js.Object
+  sealed trait filterExprUrlKey extends StObject
+  inline def filterExprUrlKey: filterExprUrlKey = "filterExprUrlKey".asInstanceOf[filterExprUrlKey]
   
   @js.native
-  sealed trait filterExprUrlKey extends js.Object
+  sealed trait filterMembersLoaded extends StObject
+  inline def filterMembersLoaded: filterMembersLoaded = "filterMembersLoaded".asInstanceOf[filterMembersLoaded]
   
   @js.native
-  sealed trait filterMembersLoaded extends js.Object
+  sealed trait filterSummaryAlwaysVisible extends StObject
+  inline def filterSummaryAlwaysVisible: filterSummaryAlwaysVisible = "filterSummaryAlwaysVisible".asInstanceOf[filterSummaryAlwaysVisible]
   
   @js.native
-  sealed trait filterSummaryAlwaysVisible extends js.Object
+  sealed trait filterSummaryInPagerTemplate extends StObject
+  inline def filterSummaryInPagerTemplate: filterSummaryInPagerTemplate = "filterSummaryInPagerTemplate".asInstanceOf[filterSummaryInPagerTemplate]
   
   @js.native
-  sealed trait filterSummaryInPagerTemplate extends js.Object
+  sealed trait filterSummaryTemplate extends StObject
+  inline def filterSummaryTemplate: filterSummaryTemplate = "filterSummaryTemplate".asInstanceOf[filterSummaryTemplate]
   
   @js.native
-  sealed trait filterSummaryTemplate extends js.Object
+  sealed trait filtered extends StObject
+  inline def filtered: filtered = "filtered".asInstanceOf[filtered]
   
   @js.native
-  sealed trait filtered extends js.Object
+  sealed trait filteredItems extends StObject
+  inline def filteredItems: filteredItems = "filteredItems".asInstanceOf[filteredItems]
   
   @js.native
-  sealed trait filteredItems extends js.Object
+  sealed trait filtering extends StObject
+  inline def filtering: filtering = "filtering".asInstanceOf[filtering]
   
   @js.native
-  sealed trait filtering extends js.Object
+  sealed trait filteringCondition extends StObject
+  inline def filteringCondition: filteringCondition = "filteringCondition".asInstanceOf[filteringCondition]
   
   @js.native
-  sealed trait filteringCondition extends js.Object
+  sealed trait filteringLogic extends StObject
+  inline def filteringLogic: filteringLogic = "filteringLogic".asInstanceOf[filteringLogic]
   
   @js.native
-  sealed trait filteringLogic extends js.Object
+  sealed trait filteringType extends StObject
+  inline def filteringType: filteringType = "filteringType".asInstanceOf[filteringType]
   
   @js.native
-  sealed trait filteringType extends js.Object
+  sealed trait finalValueAnnotationsVisible extends StObject
+  inline def finalValueAnnotationsVisible: finalValueAnnotationsVisible = "finalValueAnnotationsVisible".asInstanceOf[finalValueAnnotationsVisible]
   
   @js.native
-  sealed trait finalValueAnnotationsVisible extends js.Object
+  sealed trait financialChartLegend extends StObject
+  inline def financialChartLegend: financialChartLegend = "financialChartLegend".asInstanceOf[financialChartLegend]
   
   @js.native
-  sealed trait financialChartLegend extends js.Object
+  sealed trait findImmediateNodesByText extends StObject
+  inline def findImmediateNodesByText: findImmediateNodesByText = "findImmediateNodesByText".asInstanceOf[findImmediateNodesByText]
   
   @js.native
-  sealed trait findImmediateNodesByText extends js.Object
+  sealed trait findIndexOfItem extends StObject
+  inline def findIndexOfItem: findIndexOfItem = "findIndexOfItem".asInstanceOf[findIndexOfItem]
   
   @js.native
-  sealed trait findIndexOfItem extends js.Object
+  sealed trait findInvalid extends StObject
+  inline def findInvalid: findInvalid = "findInvalid".asInstanceOf[findInvalid]
   
   @js.native
-  sealed trait findInvalid extends js.Object
+  sealed trait findListItemIndex extends StObject
+  inline def findListItemIndex: findListItemIndex = "findListItemIndex".asInstanceOf[findListItemIndex]
   
   @js.native
-  sealed trait findListItemIndex extends js.Object
+  sealed trait findNodesByText extends StObject
+  inline def findNodesByText: findNodesByText = "findNodesByText".asInstanceOf[findNodesByText]
   
   @js.native
-  sealed trait findNodesByText extends js.Object
+  sealed trait findRecordByKey extends StObject
+  inline def findRecordByKey: findRecordByKey = "findRecordByKey".asInstanceOf[findRecordByKey]
   
   @js.native
-  sealed trait findRecordByKey extends js.Object
+  sealed trait firstLevelSortDirection extends StObject
+  inline def firstLevelSortDirection: firstLevelSortDirection = "firstLevelSortDirection".asInstanceOf[firstLevelSortDirection]
   
   @js.native
-  sealed trait firstLevelSortDirection extends js.Object
+  sealed trait firstMarkerBrush extends StObject
+  inline def firstMarkerBrush: firstMarkerBrush = "firstMarkerBrush".asInstanceOf[firstMarkerBrush]
   
   @js.native
-  sealed trait firstMarkerBrush extends js.Object
+  sealed trait firstMarkerSize extends StObject
+  inline def firstMarkerSize: firstMarkerSize = "firstMarkerSize".asInstanceOf[firstMarkerSize]
   
   @js.native
-  sealed trait firstMarkerSize extends js.Object
+  sealed trait firstMarkerVisibility extends StObject
+  inline def firstMarkerVisibility: firstMarkerVisibility = "firstMarkerVisibility".asInstanceOf[firstMarkerVisibility]
   
   @js.native
-  sealed trait firstMarkerVisibility extends js.Object
+  sealed trait firstPageLabelText extends StObject
+  inline def firstPageLabelText: firstPageLabelText = "firstPageLabelText".asInstanceOf[firstPageLabelText]
   
   @js.native
-  sealed trait firstPageLabelText extends js.Object
+  sealed trait firstPageTooltip extends StObject
+  inline def firstPageTooltip: firstPageTooltip = "firstPageTooltip".asInstanceOf[firstPageTooltip]
   
   @js.native
-  sealed trait firstPageTooltip extends js.Object
+  sealed trait firstPanel extends StObject
+  inline def firstPanel: firstPanel = "firstPanel".asInstanceOf[firstPanel]
   
   @js.native
-  sealed trait firstPanel extends js.Object
+  sealed trait firstSortDirection extends StObject
+  inline def firstSortDirection: firstSortDirection = "firstSortDirection".asInstanceOf[firstSortDirection]
   
   @js.native
-  sealed trait firstSortDirection extends js.Object
+  sealed trait fixColumn extends StObject
+  inline def fixColumn: fixColumn = "fixColumn".asInstanceOf[fixColumn]
   
   @js.native
-  sealed trait fixColumn extends js.Object
+  sealed trait fixDataSkippedColumns extends StObject
+  inline def fixDataSkippedColumns: fixDataSkippedColumns = "fixDataSkippedColumns".asInstanceOf[fixDataSkippedColumns]
   
   @js.native
-  sealed trait fixDataSkippedColumns extends js.Object
+  sealed trait fixNonDataColumns extends StObject
+  inline def fixNonDataColumns: fixNonDataColumns = "fixNonDataColumns".asInstanceOf[fixNonDataColumns]
   
   @js.native
-  sealed trait fixNonDataColumns extends js.Object
+  sealed trait fixNondataColumns_ extends StObject
+  inline def fixNondataColumns_ : fixNondataColumns_ = "fixNondataColumns".asInstanceOf[fixNondataColumns_]
   
   @js.native
-  sealed trait fixNondataColumns_ extends js.Object
+  sealed trait fixedBodyContainer extends StObject
+  inline def fixedBodyContainer: fixedBodyContainer = "fixedBodyContainer".asInstanceOf[fixedBodyContainer]
   
   @js.native
-  sealed trait fixedBodyContainer extends js.Object
+  sealed trait fixedContainer extends StObject
+  inline def fixedContainer: fixedContainer = "fixedContainer".asInstanceOf[fixedContainer]
   
   @js.native
-  sealed trait fixedContainer extends js.Object
+  sealed trait fixedDecimalPlaceCount extends StObject
+  inline def fixedDecimalPlaceCount: fixedDecimalPlaceCount = "fixedDecimalPlaceCount".asInstanceOf[fixedDecimalPlaceCount]
   
   @js.native
-  sealed trait fixedDecimalPlaceCount extends js.Object
+  sealed trait fixedFooterContainer extends StObject
+  inline def fixedFooterContainer: fixedFooterContainer = "fixedFooterContainer".asInstanceOf[fixedFooterContainer]
   
   @js.native
-  sealed trait fixedFooterContainer extends js.Object
+  sealed trait fixedFooters extends StObject
+  inline def fixedFooters: fixedFooters = "fixedFooters".asInstanceOf[fixedFooters]
   
   @js.native
-  sealed trait fixedFooters extends js.Object
+  sealed trait fixedFootersTable extends StObject
+  inline def fixedFootersTable: fixedFootersTable = "fixedFootersTable".asInstanceOf[fixedFootersTable]
   
   @js.native
-  sealed trait fixedFootersTable extends js.Object
+  sealed trait fixedHeaderContainer extends StObject
+  inline def fixedHeaderContainer: fixedHeaderContainer = "fixedHeaderContainer".asInstanceOf[fixedHeaderContainer]
   
   @js.native
-  sealed trait fixedHeaderContainer extends js.Object
+  sealed trait fixedHeaders extends StObject
+  inline def fixedHeaders: fixedHeaders = "fixedHeaders".asInstanceOf[fixedHeaders]
   
   @js.native
-  sealed trait fixedHeaders extends js.Object
+  sealed trait fixedHeadersTable extends StObject
+  inline def fixedHeadersTable: fixedHeadersTable = "fixedHeadersTable".asInstanceOf[fixedHeadersTable]
   
   @js.native
-  sealed trait fixedHeadersTable extends js.Object
+  sealed trait fixedRowAt extends StObject
+  inline def fixedRowAt: fixedRowAt = "fixedRowAt".asInstanceOf[fixedRowAt]
   
   @js.native
-  sealed trait fixedRowAt extends js.Object
+  sealed trait fixedRows extends StObject
+  inline def fixedRows: fixedRows = "fixedRows".asInstanceOf[fixedRows]
   
   @js.native
-  sealed trait fixedRows extends js.Object
+  sealed trait fixedTable extends StObject
+  inline def fixedTable: fixedTable = "fixedTable".asInstanceOf[fixedTable]
   
   @js.native
-  sealed trait fixedTable extends js.Object
+  sealed trait fixingDirection extends StObject
+  inline def fixingDirection: fixingDirection = "fixingDirection".asInstanceOf[fixingDirection]
   
   @js.native
-  sealed trait fixingDirection extends js.Object
+  sealed trait flush extends StObject
+  inline def flush: flush = "flush".asInstanceOf[flush]
   
   @js.native
-  sealed trait flush extends js.Object
+  sealed trait fnc1Mode extends StObject
+  inline def fnc1Mode: fnc1Mode = "fnc1Mode".asInstanceOf[fnc1Mode]
   
   @js.native
-  sealed trait fnc1Mode extends js.Object
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focusable extends StObject
+  inline def focusable: focusable = "focusable".asInstanceOf[focusable]
   
   @js.native
-  sealed trait focusable extends js.Object
+  sealed trait font extends StObject
+  inline def font: font = "font".asInstanceOf[font]
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait fontBrush extends StObject
+  inline def fontBrush: fontBrush = "fontBrush".asInstanceOf[fontBrush]
   
   @js.native
-  sealed trait fontBrush extends js.Object
+  sealed trait footerRendered extends StObject
+  inline def footerRendered: footerRendered = "footerRendered".asInstanceOf[footerRendered]
   
   @js.native
-  sealed trait footerRendered extends js.Object
+  sealed trait footerRendering extends StObject
+  inline def footerRendering: footerRendering = "footerRendering".asInstanceOf[footerRendering]
   
   @js.native
-  sealed trait footerRendering extends js.Object
+  sealed trait footerTemplate extends StObject
+  inline def footerTemplate: footerTemplate = "footerTemplate".asInstanceOf[footerTemplate]
   
   @js.native
-  sealed trait footerTemplate extends js.Object
+  sealed trait footerText extends StObject
+  inline def footerText: footerText = "footerText".asInstanceOf[footerText]
   
   @js.native
-  sealed trait footerText extends js.Object
+  sealed trait footersTable extends StObject
+  inline def footersTable: footersTable = "footersTable".asInstanceOf[footersTable]
   
   @js.native
-  sealed trait footersTable extends js.Object
+  sealed trait forceResponsiveGridWidth extends StObject
+  inline def forceResponsiveGridWidth: forceResponsiveGridWidth = "forceResponsiveGridWidth".asInstanceOf[forceResponsiveGridWidth]
   
   @js.native
-  sealed trait forceResponsiveGridWidth extends js.Object
+  sealed trait foreignKey extends StObject
+  inline def foreignKey: foreignKey = "foreignKey".asInstanceOf[foreignKey]
   
   @js.native
-  sealed trait foreignKey extends js.Object
+  sealed trait foreignKeyRootValue extends StObject
+  inline def foreignKeyRootValue: foreignKeyRootValue = "foreignKeyRootValue".asInstanceOf[foreignKeyRootValue]
   
   @js.native
-  sealed trait foreignKeyRootValue extends js.Object
+  sealed trait formError extends StObject
+  inline def formError: formError = "formError".asInstanceOf[formError]
   
   @js.native
-  sealed trait formError extends js.Object
+  sealed trait formSuccess extends StObject
+  inline def formSuccess: formSuccess = "formSuccess".asInstanceOf[formSuccess]
   
   @js.native
-  sealed trait formSuccess extends js.Object
+  sealed trait formValidated extends StObject
+  inline def formValidated: formValidated = "formValidated".asInstanceOf[formValidated]
   
   @js.native
-  sealed trait formValidated extends js.Object
+  sealed trait formValidating extends StObject
+  inline def formValidating: formValidating = "formValidating".asInstanceOf[formValidating]
   
   @js.native
-  sealed trait formValidating extends js.Object
+  sealed trait format extends StObject
+  inline def format: format = "format".asInstanceOf[format]
   
   @js.native
-  sealed trait format extends js.Object
+  sealed trait formatInnerLabel extends StObject
+  inline def formatInnerLabel: formatInnerLabel = "formatInnerLabel".asInstanceOf[formatInnerLabel]
   
   @js.native
-  sealed trait formatInnerLabel extends js.Object
+  sealed trait formatLabel extends StObject
+  inline def formatLabel: formatLabel = "formatLabel".asInstanceOf[formatLabel]
   
   @js.native
-  sealed trait formatLabel extends js.Object
+  sealed trait formatOuterLabel extends StObject
+  inline def formatOuterLabel: formatOuterLabel = "formatOuterLabel".asInstanceOf[formatOuterLabel]
   
   @js.native
-  sealed trait formatOuterLabel extends js.Object
+  sealed trait fromLevel extends StObject
+  inline def fromLevel: fromLevel = "fromLevel".asInstanceOf[fromLevel]
   
   @js.native
-  sealed trait fromLevel extends js.Object
+  sealed trait fullscreen extends StObject
+  inline def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait funnelSliceDisplay extends StObject
+  inline def funnelSliceDisplay: funnelSliceDisplay = "funnelSliceDisplay".asInstanceOf[funnelSliceDisplay]
   
   @js.native
-  sealed trait funnelSliceDisplay extends js.Object
+  sealed trait generatePrimaryKeyValue extends StObject
+  inline def generatePrimaryKeyValue: generatePrimaryKeyValue = "generatePrimaryKeyValue".asInstanceOf[generatePrimaryKeyValue]
   
   @js.native
-  sealed trait generatePrimaryKeyValue extends js.Object
+  sealed trait getActivePane extends StObject
+  inline def getActivePane: getActivePane = "getActivePane".asInstanceOf[getActivePane]
   
   @js.native
-  sealed trait getActivePane extends js.Object
+  sealed trait getActiveSelection extends StObject
+  inline def getActiveSelection: getActiveSelection = "getActiveSelection".asInstanceOf[getActiveSelection]
   
   @js.native
-  sealed trait getActiveSelection extends js.Object
+  sealed trait getActiveSelectionCellRangeFormat extends StObject
+  inline def getActiveSelectionCellRangeFormat: getActiveSelectionCellRangeFormat = "getActiveSelectionCellRangeFormat".asInstanceOf[getActiveSelectionCellRangeFormat]
   
   @js.native
-  sealed trait getActiveSelectionCellRangeFormat extends js.Object
+  sealed trait getActiveTable extends StObject
+  inline def getActiveTable: getActiveTable = "getActiveTable".asInstanceOf[getActiveTable]
   
   @js.native
-  sealed trait getActiveTable extends js.Object
+  sealed trait getActualInterval extends StObject
+  inline def getActualInterval: getActualInterval = "getActualInterval".asInstanceOf[getActualInterval]
   
   @js.native
-  sealed trait getActualInterval extends js.Object
+  sealed trait getActualMaximumValue extends StObject
+  inline def getActualMaximumValue: getActualMaximumValue = "getActualMaximumValue".asInstanceOf[getActualMaximumValue]
   
   @js.native
-  sealed trait getActualMaximumValue extends js.Object
+  sealed trait getActualMinimumValue extends StObject
+  inline def getActualMinimumValue: getActualMinimumValue = "getActualMinimumValue".asInstanceOf[getActualMinimumValue]
   
   @js.native
-  sealed trait getActualMinimumValue extends js.Object
+  sealed trait getAppointmentsInRange extends StObject
+  inline def getAppointmentsInRange: getAppointmentsInRange = "getAppointmentsInRange".asInstanceOf[getAppointmentsInRange]
   
   @js.native
-  sealed trait getAppointmentsInRange extends js.Object
+  sealed trait getCalendar extends StObject
+  inline def getCalendar: getCalendar = "getCalendar".asInstanceOf[getCalendar]
   
   @js.native
-  sealed trait getCalendar extends js.Object
+  sealed trait getCaptionButtonContainer extends StObject
+  inline def getCaptionButtonContainer: getCaptionButtonContainer = "getCaptionButtonContainer".asInstanceOf[getCaptionButtonContainer]
   
   @js.native
-  sealed trait getCaptionButtonContainer extends js.Object
+  sealed trait getCellEditMode extends StObject
+  inline def getCellEditMode: getCellEditMode = "getCellEditMode".asInstanceOf[getCellEditMode]
   
   @js.native
-  sealed trait getCellEditMode extends js.Object
+  sealed trait getCellText extends StObject
+  inline def getCellText: getCellText = "getCellText".asInstanceOf[getCellText]
   
   @js.native
-  sealed trait getCellText extends js.Object
+  sealed trait getCellValue extends StObject
+  inline def getCellValue: getCellValue = "getCellValue".asInstanceOf[getCellValue]
   
   @js.native
-  sealed trait getCellValue extends js.Object
+  sealed trait getCenterCoordinates extends StObject
+  inline def getCenterCoordinates: getCenterCoordinates = "getCenterCoordinates".asInstanceOf[getCenterCoordinates]
   
   @js.native
-  sealed trait getCenterCoordinates extends js.Object
+  sealed trait getColumnByTD extends StObject
+  inline def getColumnByTD: getColumnByTD = "getColumnByTD".asInstanceOf[getColumnByTD]
   
   @js.native
-  sealed trait getColumnByTD extends js.Object
+  sealed trait getContent extends StObject
+  inline def getContent: getContent = "getContent".asInstanceOf[getContent]
   
   @js.native
-  sealed trait getContent extends js.Object
+  sealed trait getContextRow extends StObject
+  inline def getContextRow: getContextRow = "getContextRow".asInstanceOf[getContextRow]
   
   @js.native
-  sealed trait getContextRow extends js.Object
+  sealed trait getContextRowTextArea extends StObject
+  inline def getContextRowTextArea: getContextRowTextArea = "getContextRowTextArea".asInstanceOf[getContextRowTextArea]
   
   @js.native
-  sealed trait getContextRowTextArea extends js.Object
+  sealed trait getCoordinates extends StObject
+  inline def getCoordinates: getCoordinates = "getCoordinates".asInstanceOf[getCoordinates]
   
   @js.native
-  sealed trait getCoordinates extends js.Object
+  sealed trait getCurrentResponsiveMode extends StObject
+  inline def getCurrentResponsiveMode: getCurrentResponsiveMode = "getCurrentResponsiveMode".asInstanceOf[getCurrentResponsiveMode]
   
   @js.native
-  sealed trait getCurrentResponsiveMode extends js.Object
+  sealed trait getData extends StObject
+  inline def getData: getData = "getData".asInstanceOf[getData]
   
   @js.native
-  sealed trait getData extends js.Object
+  sealed trait getDataItem extends StObject
+  inline def getDataItem: getDataItem = "getDataItem".asInstanceOf[getDataItem]
   
   @js.native
-  sealed trait getDataItem extends js.Object
+  sealed trait getDetachedRecord extends StObject
+  inline def getDetachedRecord: getDetachedRecord = "getDetachedRecord".asInstanceOf[getDetachedRecord]
   
   @js.native
-  sealed trait getDetachedRecord extends js.Object
+  sealed trait getDropDownByColumnKey extends StObject
+  inline def getDropDownByColumnKey: getDropDownByColumnKey = "getDropDownByColumnKey".asInstanceOf[getDropDownByColumnKey]
   
   @js.native
-  sealed trait getDropDownByColumnKey extends js.Object
+  sealed trait getElementInfo extends StObject
+  inline def getElementInfo: getElementInfo = "getElementInfo".asInstanceOf[getElementInfo]
   
   @js.native
-  sealed trait getElementInfo extends js.Object
+  sealed trait getErrorMessages extends StObject
+  inline def getErrorMessages: getErrorMessages = "getErrorMessages".asInstanceOf[getErrorMessages]
   
   @js.native
-  sealed trait getErrorMessages extends js.Object
+  sealed trait getFileInfo extends StObject
+  inline def getFileInfo: getFileInfo = "getFileInfo".asInstanceOf[getFileInfo]
   
   @js.native
-  sealed trait getFileInfo extends js.Object
+  sealed trait getFileInfoData extends StObject
+  inline def getFileInfoData: getFileInfoData = "getFileInfoData".asInstanceOf[getFileInfoData]
   
   @js.native
-  sealed trait getFileInfoData extends js.Object
+  sealed trait getFilePicker extends StObject
+  inline def getFilePicker: getFilePicker = "getFilePicker".asInstanceOf[getFilePicker]
   
   @js.native
-  sealed trait getFilePicker extends js.Object
+  sealed trait getFilteringMatchesCount extends StObject
+  inline def getFilteringMatchesCount: getFilteringMatchesCount = "getFilteringMatchesCount".asInstanceOf[getFilteringMatchesCount]
   
   @js.native
-  sealed trait getFilteringMatchesCount extends js.Object
+  sealed trait getFooter extends StObject
+  inline def getFooter: getFooter = "getFooter".asInstanceOf[getFooter]
   
   @js.native
-  sealed trait getFooter extends js.Object
+  sealed trait getGeographicFromZoom extends StObject
+  inline def getGeographicFromZoom: getGeographicFromZoom = "getGeographicFromZoom".asInstanceOf[getGeographicFromZoom]
   
   @js.native
-  sealed trait getGeographicFromZoom extends js.Object
+  sealed trait getGroupedData extends StObject
+  inline def getGroupedData: getGroupedData = "getGroupedData".asInstanceOf[getGroupedData]
   
   @js.native
-  sealed trait getGroupedData extends js.Object
+  sealed trait getHoleRadius extends StObject
+  inline def getHoleRadius: getHoleRadius = "getHoleRadius".asInstanceOf[getHoleRadius]
   
   @js.native
-  sealed trait getHoleRadius extends js.Object
+  sealed trait getIsInEditMode extends StObject
+  inline def getIsInEditMode: getIsInEditMode = "getIsInEditMode".asInstanceOf[getIsInEditMode]
   
   @js.native
-  sealed trait getIsInEditMode extends js.Object
+  sealed trait getIsRenamingWorksheet extends StObject
+  inline def getIsRenamingWorksheet: getIsRenamingWorksheet = "getIsRenamingWorksheet".asInstanceOf[getIsRenamingWorksheet]
   
   @js.native
-  sealed trait getIsRenamingWorksheet extends js.Object
+  sealed trait getItem extends StObject
+  inline def getItem: getItem = "getItem".asInstanceOf[getItem]
   
   @js.native
-  sealed trait getItem extends js.Object
+  sealed trait getItemFromSeriesPixel extends StObject
+  inline def getItemFromSeriesPixel: getItemFromSeriesPixel = "getItemFromSeriesPixel".asInstanceOf[getItemFromSeriesPixel]
   
   @js.native
-  sealed trait getItemFromSeriesPixel extends js.Object
+  sealed trait getItemIndex extends StObject
+  inline def getItemIndex: getItemIndex = "getItemIndex".asInstanceOf[getItemIndex]
   
   @js.native
-  sealed trait getItemIndex extends js.Object
+  sealed trait getItemIndexFromSeriesPixel extends StObject
+  inline def getItemIndexFromSeriesPixel: getItemIndexFromSeriesPixel = "getItemIndexFromSeriesPixel".asInstanceOf[getItemIndexFromSeriesPixel]
   
   @js.native
-  sealed trait getItemIndexFromSeriesPixel extends js.Object
+  sealed trait getItemSpan extends StObject
+  inline def getItemSpan: getItemSpan = "getItemSpan".asInstanceOf[getItemSpan]
   
   @js.native
-  sealed trait getItemSpan extends js.Object
+  sealed trait getLegend extends StObject
+  inline def getLegend: getLegend = "getLegend".asInstanceOf[getLegend]
   
   @js.native
-  sealed trait getLegend extends js.Object
+  sealed trait getMultiColumnHeaders extends StObject
+  inline def getMultiColumnHeaders: getMultiColumnHeaders = "getMultiColumnHeaders".asInstanceOf[getMultiColumnHeaders]
   
   @js.native
-  sealed trait getMultiColumnHeaders extends js.Object
+  sealed trait getPanes extends StObject
+  inline def getPanes: getPanes = "getPanes".asInstanceOf[getPanes]
   
   @js.native
-  sealed trait getPanes extends js.Object
+  sealed trait getPointForValue extends StObject
+  inline def getPointForValue: getPointForValue = "getPointForValue".asInstanceOf[getPointForValue]
   
   @js.native
-  sealed trait getPointForValue extends js.Object
+  sealed trait getRangeNames extends StObject
+  inline def getRangeNames: getRangeNames = "getRangeNames".asInstanceOf[getRangeNames]
   
   @js.native
-  sealed trait getRangeNames extends js.Object
+  sealed trait getRegionalOption extends StObject
+  inline def getRegionalOption: getRegionalOption = "getRegionalOption".asInstanceOf[getRegionalOption]
   
   @js.native
-  sealed trait getRegionalOption extends js.Object
+  sealed trait getSelectedDate extends StObject
+  inline def getSelectedDate: getSelectedDate = "getSelectedDate".asInstanceOf[getSelectedDate]
   
   @js.native
-  sealed trait getSelectedDate extends js.Object
+  sealed trait getSelectedListItem extends StObject
+  inline def getSelectedListItem: getSelectedListItem = "getSelectedListItem".asInstanceOf[getSelectedListItem]
   
   @js.native
-  sealed trait getSelectedListItem extends js.Object
+  sealed trait getSelectedText extends StObject
+  inline def getSelectedText: getSelectedText = "getSelectedText".asInstanceOf[getSelectedText]
   
   @js.native
-  sealed trait getSelectedText extends js.Object
+  sealed trait getSelectionEnd extends StObject
+  inline def getSelectionEnd: getSelectionEnd = "getSelectionEnd".asInstanceOf[getSelectionEnd]
   
   @js.native
-  sealed trait getSelectionEnd extends js.Object
+  sealed trait getSelectionStart extends StObject
+  inline def getSelectionStart: getSelectionStart = "getSelectionStart".asInstanceOf[getSelectionStart]
   
   @js.native
-  sealed trait getSelectionStart extends js.Object
+  sealed trait getSeriesCategoryWidth extends StObject
+  inline def getSeriesCategoryWidth: getSeriesCategoryWidth = "getSeriesCategoryWidth".asInstanceOf[getSeriesCategoryWidth]
   
   @js.native
-  sealed trait getSeriesCategoryWidth extends js.Object
+  sealed trait getSeriesHighValue extends StObject
+  inline def getSeriesHighValue: getSeriesHighValue = "getSeriesHighValue".asInstanceOf[getSeriesHighValue]
   
   @js.native
-  sealed trait getSeriesHighValue extends js.Object
+  sealed trait getSeriesHighValueFromSeriesPixel extends StObject
+  inline def getSeriesHighValueFromSeriesPixel: getSeriesHighValueFromSeriesPixel = "getSeriesHighValueFromSeriesPixel".asInstanceOf[getSeriesHighValueFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesHighValueFromSeriesPixel extends js.Object
+  sealed trait getSeriesHighValuePosition extends StObject
+  inline def getSeriesHighValuePosition: getSeriesHighValuePosition = "getSeriesHighValuePosition".asInstanceOf[getSeriesHighValuePosition]
   
   @js.native
-  sealed trait getSeriesHighValuePosition extends js.Object
+  sealed trait getSeriesHighValuePositionFromSeriesPixel extends StObject
+  inline def getSeriesHighValuePositionFromSeriesPixel: getSeriesHighValuePositionFromSeriesPixel = "getSeriesHighValuePositionFromSeriesPixel".asInstanceOf[getSeriesHighValuePositionFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesHighValuePositionFromSeriesPixel extends js.Object
+  sealed trait getSeriesLowValue extends StObject
+  inline def getSeriesLowValue: getSeriesLowValue = "getSeriesLowValue".asInstanceOf[getSeriesLowValue]
   
   @js.native
-  sealed trait getSeriesLowValue extends js.Object
+  sealed trait getSeriesLowValueFromSeriesPixel extends StObject
+  inline def getSeriesLowValueFromSeriesPixel: getSeriesLowValueFromSeriesPixel = "getSeriesLowValueFromSeriesPixel".asInstanceOf[getSeriesLowValueFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesLowValueFromSeriesPixel extends js.Object
+  sealed trait getSeriesLowValuePosition extends StObject
+  inline def getSeriesLowValuePosition: getSeriesLowValuePosition = "getSeriesLowValuePosition".asInstanceOf[getSeriesLowValuePosition]
   
   @js.native
-  sealed trait getSeriesLowValuePosition extends js.Object
+  sealed trait getSeriesLowValuePositionFromSeriesPixel extends StObject
+  inline def getSeriesLowValuePositionFromSeriesPixel: getSeriesLowValuePositionFromSeriesPixel = "getSeriesLowValuePositionFromSeriesPixel".asInstanceOf[getSeriesLowValuePositionFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesLowValuePositionFromSeriesPixel extends js.Object
+  sealed trait getSeriesOffsetValue extends StObject
+  inline def getSeriesOffsetValue: getSeriesOffsetValue = "getSeriesOffsetValue".asInstanceOf[getSeriesOffsetValue]
   
   @js.native
-  sealed trait getSeriesOffsetValue extends js.Object
+  sealed trait getSeriesValue extends StObject
+  inline def getSeriesValue: getSeriesValue = "getSeriesValue".asInstanceOf[getSeriesValue]
   
   @js.native
-  sealed trait getSeriesValue extends js.Object
+  sealed trait getSeriesValueBoundingBox extends StObject
+  inline def getSeriesValueBoundingBox: getSeriesValueBoundingBox = "getSeriesValueBoundingBox".asInstanceOf[getSeriesValueBoundingBox]
   
   @js.native
-  sealed trait getSeriesValueBoundingBox extends js.Object
+  sealed trait getSeriesValueBoundingBoxFromSeriesPixel extends StObject
+  inline def getSeriesValueBoundingBoxFromSeriesPixel: getSeriesValueBoundingBoxFromSeriesPixel = "getSeriesValueBoundingBoxFromSeriesPixel".asInstanceOf[getSeriesValueBoundingBoxFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesValueBoundingBoxFromSeriesPixel extends js.Object
+  sealed trait getSeriesValueFineGrainedBoundingBoxes extends StObject
+  inline def getSeriesValueFineGrainedBoundingBoxes: getSeriesValueFineGrainedBoundingBoxes = "getSeriesValueFineGrainedBoundingBoxes".asInstanceOf[getSeriesValueFineGrainedBoundingBoxes]
   
   @js.native
-  sealed trait getSeriesValueFineGrainedBoundingBoxes extends js.Object
+  sealed trait getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel extends StObject
+  inline def getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel: getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel = "getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel".asInstanceOf[getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel extends js.Object
+  sealed trait getSeriesValueFromSeriesPixel extends StObject
+  inline def getSeriesValueFromSeriesPixel: getSeriesValueFromSeriesPixel = "getSeriesValueFromSeriesPixel".asInstanceOf[getSeriesValueFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesValueFromSeriesPixel extends js.Object
+  sealed trait getSeriesValuePosition extends StObject
+  inline def getSeriesValuePosition: getSeriesValuePosition = "getSeriesValuePosition".asInstanceOf[getSeriesValuePosition]
   
   @js.native
-  sealed trait getSeriesValuePosition extends js.Object
+  sealed trait getSeriesValuePositionFromSeriesPixel extends StObject
+  inline def getSeriesValuePositionFromSeriesPixel: getSeriesValuePositionFromSeriesPixel = "getSeriesValuePositionFromSeriesPixel".asInstanceOf[getSeriesValuePositionFromSeriesPixel]
   
   @js.native
-  sealed trait getSeriesValuePositionFromSeriesPixel extends js.Object
+  sealed trait getTopModal extends StObject
+  inline def getTopModal: getTopModal = "getTopModal".asInstanceOf[getTopModal]
   
   @js.native
-  sealed trait getTopModal extends js.Object
+  sealed trait getUnboundColumnByKey extends StObject
+  inline def getUnboundColumnByKey: getUnboundColumnByKey = "getUnboundColumnByKey".asInstanceOf[getUnboundColumnByKey]
   
   @js.native
-  sealed trait getUnboundColumnByKey extends js.Object
+  sealed trait getUnboundValues extends StObject
+  inline def getUnboundValues: getUnboundValues = "getUnboundValues".asInstanceOf[getUnboundValues]
   
   @js.native
-  sealed trait getUnboundValues extends js.Object
+  sealed trait getValueForPoint extends StObject
+  inline def getValueForPoint: getValueForPoint = "getValueForPoint".asInstanceOf[getValueForPoint]
   
   @js.native
-  sealed trait getValueForPoint extends js.Object
+  sealed trait getVisibleIndexByKey extends StObject
+  inline def getVisibleIndexByKey: getVisibleIndexByKey = "getVisibleIndexByKey".asInstanceOf[getVisibleIndexByKey]
   
   @js.native
-  sealed trait getVisibleIndexByKey extends js.Object
+  sealed trait getWidthOfFixedColumns extends StObject
+  inline def getWidthOfFixedColumns: getWidthOfFixedColumns = "getWidthOfFixedColumns".asInstanceOf[getWidthOfFixedColumns]
   
   @js.native
-  sealed trait getWidthOfFixedColumns extends js.Object
+  sealed trait getZoomFromGeographic extends StObject
+  inline def getZoomFromGeographic: getZoomFromGeographic = "getZoomFromGeographic".asInstanceOf[getZoomFromGeographic]
   
   @js.native
-  sealed trait getZoomFromGeographic extends js.Object
+  sealed trait grid extends StObject
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait grid extends js.Object
+  sealed trait gridAreaRectChanged extends StObject
+  inline def gridAreaRectChanged: gridAreaRectChanged = "gridAreaRectChanged".asInstanceOf[gridAreaRectChanged]
   
   @js.native
-  sealed trait gridAreaRectChanged extends js.Object
+  sealed trait gridId extends StObject
+  inline def gridId: gridId = "gridId".asInstanceOf[gridId]
   
   @js.native
-  sealed trait gridId extends js.Object
+  sealed trait gridLayout extends StObject
+  inline def gridLayout: gridLayout = "gridLayout".asInstanceOf[gridLayout]
   
   @js.native
-  sealed trait gridLayout extends js.Object
+  sealed trait gridMode extends StObject
+  inline def gridMode: gridMode = "gridMode".asInstanceOf[gridMode]
   
   @js.native
-  sealed trait gridMode extends js.Object
+  sealed trait gridOptions extends StObject
+  inline def gridOptions: gridOptions = "gridOptions".asInstanceOf[gridOptions]
   
   @js.native
-  sealed trait gridOptions extends js.Object
+  sealed trait groupByAreaVisibility extends StObject
+  inline def groupByAreaVisibility: groupByAreaVisibility = "groupByAreaVisibility".asInstanceOf[groupByAreaVisibility]
   
   @js.native
-  sealed trait groupByAreaVisibility extends js.Object
+  sealed trait groupByColumn extends StObject
+  inline def groupByColumn: groupByColumn = "groupByColumn".asInstanceOf[groupByColumn]
   
   @js.native
-  sealed trait groupByColumn extends js.Object
+  sealed trait groupByColumns extends StObject
+  inline def groupByColumns: groupByColumns = "groupByColumns".asInstanceOf[groupByColumns]
   
   @js.native
-  sealed trait groupByColumns extends js.Object
+  sealed trait groupByDialogContainment extends StObject
+  inline def groupByDialogContainment: groupByDialogContainment = "groupByDialogContainment".asInstanceOf[groupByDialogContainment]
   
   @js.native
-  sealed trait groupByDialogContainment extends js.Object
+  sealed trait groupByLabelWidth extends StObject
+  inline def groupByLabelWidth: groupByLabelWidth = "groupByLabelWidth".asInstanceOf[groupByLabelWidth]
   
   @js.native
-  sealed trait groupByLabelWidth extends js.Object
+  sealed trait groupByUrlKey extends StObject
+  inline def groupByUrlKey: groupByUrlKey = "groupByUrlKey".asInstanceOf[groupByUrlKey]
   
   @js.native
-  sealed trait groupByUrlKey extends js.Object
+  sealed trait groupByUrlKeyAscValue extends StObject
+  inline def groupByUrlKeyAscValue: groupByUrlKeyAscValue = "groupByUrlKeyAscValue".asInstanceOf[groupByUrlKeyAscValue]
   
   @js.native
-  sealed trait groupByUrlKeyAscValue extends js.Object
+  sealed trait groupByUrlKeyDescValue extends StObject
+  inline def groupByUrlKeyDescValue: groupByUrlKeyDescValue = "groupByUrlKeyDescValue".asInstanceOf[groupByUrlKeyDescValue]
   
   @js.native
-  sealed trait groupByUrlKeyDescValue extends js.Object
+  sealed trait groupCollapsed extends StObject
+  inline def groupCollapsed: groupCollapsed = "groupCollapsed".asInstanceOf[groupCollapsed]
   
   @js.native
-  sealed trait groupCollapsed extends js.Object
+  sealed trait groupCollapsing extends StObject
+  inline def groupCollapsing: groupCollapsing = "groupCollapsing".asInstanceOf[groupCollapsing]
   
   @js.native
-  sealed trait groupCollapsing extends js.Object
+  sealed trait groupExpanded extends StObject
+  inline def groupExpanded: groupExpanded = "groupExpanded".asInstanceOf[groupExpanded]
   
   @js.native
-  sealed trait groupExpanded extends js.Object
+  sealed trait groupExpanding extends StObject
+  inline def groupExpanding: groupExpanding = "groupExpanding".asInstanceOf[groupExpanding]
   
   @js.native
-  sealed trait groupExpanding extends js.Object
+  sealed trait groupSeparator extends StObject
+  inline def groupSeparator: groupSeparator = "groupSeparator".asInstanceOf[groupSeparator]
   
   @js.native
-  sealed trait groupSeparator extends js.Object
+  sealed trait groupSummaries extends StObject
+  inline def groupSummaries: groupSummaries = "groupSummaries".asInstanceOf[groupSummaries]
   
   @js.native
-  sealed trait groupSummaries extends js.Object
+  sealed trait groupSummariesPosition extends StObject
+  inline def groupSummariesPosition: groupSummariesPosition = "groupSummariesPosition".asInstanceOf[groupSummariesPosition]
   
   @js.native
-  sealed trait groupSummariesPosition extends js.Object
+  sealed trait groupedColumns extends StObject
+  inline def groupedColumns: groupedColumns = "groupedColumns".asInstanceOf[groupedColumns]
   
   @js.native
-  sealed trait groupedColumns extends js.Object
+  sealed trait groupedColumnsChanged extends StObject
+  inline def groupedColumnsChanged: groupedColumnsChanged = "groupedColumnsChanged".asInstanceOf[groupedColumnsChanged]
   
   @js.native
-  sealed trait groupedColumnsChanged extends js.Object
+  sealed trait groupedColumnsChanging extends StObject
+  inline def groupedColumnsChanging: groupedColumnsChanging = "groupedColumnsChanging".asInstanceOf[groupedColumnsChanging]
   
   @js.native
-  sealed trait groupedColumnsChanging extends js.Object
+  sealed trait groupedRowTextTemplate extends StObject
+  inline def groupedRowTextTemplate: groupedRowTextTemplate = "groupedRowTextTemplate".asInstanceOf[groupedRowTextTemplate]
   
   @js.native
-  sealed trait groupedRowTextTemplate extends js.Object
+  sealed trait grouping extends StObject
+  inline def grouping: grouping = "grouping".asInstanceOf[grouping]
   
   @js.native
-  sealed trait grouping extends js.Object
+  sealed trait groups extends StObject
+  inline def groups: groups = "groups".asInstanceOf[groups]
   
   @js.native
-  sealed trait groups extends js.Object
+  sealed trait handleThreshold extends StObject
+  inline def handleThreshold: handleThreshold = "handleThreshold".asInstanceOf[handleThreshold]
   
   @js.native
-  sealed trait handleThreshold extends js.Object
+  sealed trait hasDefaultIcon extends StObject
+  inline def hasDefaultIcon: hasDefaultIcon = "hasDefaultIcon".asInstanceOf[hasDefaultIcon]
   
   @js.native
-  sealed trait hasDefaultIcon extends js.Object
+  sealed trait hasFixedColumns extends StObject
+  inline def hasFixedColumns: hasFixedColumns = "hasFixedColumns".asInstanceOf[hasFixedColumns]
   
   @js.native
-  sealed trait hasFixedColumns extends js.Object
+  sealed trait hasFixedDataSkippedColumns extends StObject
+  inline def hasFixedDataSkippedColumns: hasFixedDataSkippedColumns = "hasFixedDataSkippedColumns".asInstanceOf[hasFixedDataSkippedColumns]
   
   @js.native
-  sealed trait hasFixedDataSkippedColumns extends js.Object
+  sealed trait hasFocus extends StObject
+  inline def hasFocus: hasFocus = "hasFocus".asInstanceOf[hasFocus]
   
   @js.native
-  sealed trait hasFocus extends js.Object
+  sealed trait hasInvalidMessage extends StObject
+  inline def hasInvalidMessage: hasInvalidMessage = "hasInvalidMessage".asInstanceOf[hasInvalidMessage]
   
   @js.native
-  sealed trait hasInvalidMessage extends js.Object
+  sealed trait hasVerticalScrollbar extends StObject
+  inline def hasVerticalScrollbar: hasVerticalScrollbar = "hasVerticalScrollbar".asInstanceOf[hasVerticalScrollbar]
   
   @js.native
-  sealed trait hasVerticalScrollbar extends js.Object
+  sealed trait headerCellRendered extends StObject
+  inline def headerCellRendered: headerCellRendered = "headerCellRendered".asInstanceOf[headerCellRendered]
   
   @js.native
-  sealed trait headerCellRendered extends js.Object
+  sealed trait headerFixButtonText extends StObject
+  inline def headerFixButtonText: headerFixButtonText = "headerFixButtonText".asInstanceOf[headerFixButtonText]
   
   @js.native
-  sealed trait headerFixButtonText extends js.Object
+  sealed trait headerRendered extends StObject
+  inline def headerRendered: headerRendered = "headerRendered".asInstanceOf[headerRendered]
   
   @js.native
-  sealed trait headerRendered extends js.Object
+  sealed trait headerRendering extends StObject
+  inline def headerRendering: headerRendering = "headerRendering".asInstanceOf[headerRendering]
   
   @js.native
-  sealed trait headerRendering extends js.Object
+  sealed trait headerTemplate extends StObject
+  inline def headerTemplate: headerTemplate = "headerTemplate".asInstanceOf[headerTemplate]
   
   @js.native
-  sealed trait headerTemplate extends js.Object
+  sealed trait headerText extends StObject
+  inline def headerText: headerText = "headerText".asInstanceOf[headerText]
   
   @js.native
-  sealed trait headerText extends js.Object
+  sealed trait headerUnfixButtonText extends StObject
+  inline def headerUnfixButtonText: headerUnfixButtonText = "headerUnfixButtonText".asInstanceOf[headerUnfixButtonText]
   
   @js.native
-  sealed trait headerUnfixButtonText extends js.Object
+  sealed trait headersSorted extends StObject
+  inline def headersSorted: headersSorted = "headersSorted".asInstanceOf[headersSorted]
   
   @js.native
-  sealed trait headersSorted extends js.Object
+  sealed trait headersSorting extends StObject
+  inline def headersSorting: headersSorting = "headersSorting".asInstanceOf[headersSorting]
   
   @js.native
-  sealed trait headersSorting extends js.Object
+  sealed trait headersTable extends StObject
+  inline def headersTable: headersTable = "headersTable".asInstanceOf[headersTable]
   
   @js.native
-  sealed trait headersTable extends js.Object
+  sealed trait height extends StObject
+  inline def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait hexagonMarkerTemplate extends StObject
+  inline def hexagonMarkerTemplate: hexagonMarkerTemplate = "hexagonMarkerTemplate".asInstanceOf[hexagonMarkerTemplate]
   
   @js.native
-  sealed trait hexagonMarkerTemplate extends js.Object
+  sealed trait hexagramMarkerTemplate extends StObject
+  inline def hexagramMarkerTemplate: hexagramMarkerTemplate = "hexagramMarkerTemplate".asInstanceOf[hexagramMarkerTemplate]
   
   @js.native
-  sealed trait hexagramMarkerTemplate extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hiddenColumnIndicatorHeaderWidth extends StObject
+  inline def hiddenColumnIndicatorHeaderWidth: hiddenColumnIndicatorHeaderWidth = "hiddenColumnIndicatorHeaderWidth".asInstanceOf[hiddenColumnIndicatorHeaderWidth]
   
   @js.native
-  sealed trait hiddenColumnIndicatorHeaderWidth extends js.Object
+  sealed trait hiddenColumnIndicatorTooltipText extends StObject
+  inline def hiddenColumnIndicatorTooltipText: hiddenColumnIndicatorTooltipText = "hiddenColumnIndicatorTooltipText".asInstanceOf[hiddenColumnIndicatorTooltipText]
   
   @js.native
-  sealed trait hiddenColumnIndicatorTooltipText extends js.Object
+  sealed trait hide extends StObject
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
-  sealed trait hide extends js.Object
+  sealed trait hideAdMessage extends StObject
+  inline def hideAdMessage: hideAdMessage = "hideAdMessage".asInstanceOf[hideAdMessage]
   
   @js.native
-  sealed trait hideAdMessage extends js.Object
+  sealed trait hideAddChildButton extends StObject
+  inline def hideAddChildButton: hideAddChildButton = "hideAddChildButton".asInstanceOf[hideAddChildButton]
   
   @js.native
-  sealed trait hideAddChildButton extends js.Object
+  sealed trait hideBanner extends StObject
+  inline def hideBanner: hideBanner = "hideBanner".asInstanceOf[hideBanner]
   
   @js.native
-  sealed trait hideBanner extends js.Object
+  sealed trait hideColumn extends StObject
+  inline def hideColumn: hideColumn = "hideColumn".asInstanceOf[hideColumn]
   
   @js.native
-  sealed trait hideColumn extends js.Object
+  sealed trait hideColumnChooser extends StObject
+  inline def hideColumnChooser: hideColumnChooser = "hideColumnChooser".asInstanceOf[hideColumnChooser]
   
   @js.native
-  sealed trait hideColumnChooser extends js.Object
+  sealed trait hideColumnsDropArea extends StObject
+  inline def hideColumnsDropArea: hideColumnsDropArea = "hideColumnsDropArea".asInstanceOf[hideColumnsDropArea]
   
   @js.native
-  sealed trait hideColumnsDropArea extends js.Object
+  sealed trait hideDelay extends StObject
+  inline def hideDelay: hideDelay = "hideDelay".asInstanceOf[hideDelay]
   
   @js.native
-  sealed trait hideDelay extends js.Object
+  sealed trait hideDeleteButton extends StObject
+  inline def hideDeleteButton: hideDeleteButton = "hideDeleteButton".asInstanceOf[hideDeleteButton]
   
   @js.native
-  sealed trait hideDeleteButton extends js.Object
+  sealed trait hideDropDown extends StObject
+  inline def hideDropDown: hideDropDown = "hideDropDown".asInstanceOf[hideDropDown]
   
   @js.native
-  sealed trait hideDropDown extends js.Object
+  sealed trait hideFiltersDropArea extends StObject
+  inline def hideFiltersDropArea: hideFiltersDropArea = "hideFiltersDropArea".asInstanceOf[hideFiltersDropArea]
   
   @js.native
-  sealed trait hideFiltersDropArea extends js.Object
+  sealed trait hideHeaderContentsDuringDrag extends StObject
+  inline def hideHeaderContentsDuringDrag: hideHeaderContentsDuringDrag = "hideHeaderContentsDuringDrag".asInstanceOf[hideHeaderContentsDuringDrag]
   
   @js.native
-  sealed trait hideHeaderContentsDuringDrag extends js.Object
+  sealed trait hideMeasuresDropArea extends StObject
+  inline def hideMeasuresDropArea: hideMeasuresDropArea = "hideMeasuresDropArea".asInstanceOf[hideMeasuresDropArea]
   
   @js.native
-  sealed trait hideMeasuresDropArea extends js.Object
+  sealed trait hideMultiColumns extends StObject
+  inline def hideMultiColumns: hideMultiColumns = "hideMultiColumns".asInstanceOf[hideMultiColumns]
   
   @js.native
-  sealed trait hideMultiColumns extends js.Object
+  sealed trait hideRowsDropArea extends StObject
+  inline def hideRowsDropArea: hideRowsDropArea = "hideRowsDropArea".asInstanceOf[hideRowsDropArea]
   
   @js.native
-  sealed trait hideRowsDropArea extends js.Object
+  sealed trait hideTooltip extends StObject
+  inline def hideTooltip: hideTooltip = "hideTooltip".asInstanceOf[hideTooltip]
   
   @js.native
-  sealed trait hideTooltip extends js.Object
+  sealed trait hiding extends StObject
+  inline def hiding: hiding = "hiding".asInstanceOf[hiding]
   
   @js.native
-  sealed trait hiding extends js.Object
+  sealed trait highMarkerBrush extends StObject
+  inline def highMarkerBrush: highMarkerBrush = "highMarkerBrush".asInstanceOf[highMarkerBrush]
   
   @js.native
-  sealed trait highMarkerBrush extends js.Object
+  sealed trait highMarkerSize extends StObject
+  inline def highMarkerSize: highMarkerSize = "highMarkerSize".asInstanceOf[highMarkerSize]
   
   @js.native
-  sealed trait highMarkerSize extends js.Object
+  sealed trait highMarkerVisibility extends StObject
+  inline def highMarkerVisibility: highMarkerVisibility = "highMarkerVisibility".asInstanceOf[highMarkerVisibility]
   
   @js.native
-  sealed trait highMarkerVisibility extends js.Object
+  sealed trait higherCalloutBrush extends StObject
+  inline def higherCalloutBrush: higherCalloutBrush = "higherCalloutBrush".asInstanceOf[higherCalloutBrush]
   
   @js.native
-  sealed trait higherCalloutBrush extends js.Object
+  sealed trait higherCalloutOutline extends StObject
+  inline def higherCalloutOutline: higherCalloutOutline = "higherCalloutOutline".asInstanceOf[higherCalloutOutline]
   
   @js.native
-  sealed trait higherCalloutOutline extends js.Object
+  sealed trait higherCalloutStrokeThickness extends StObject
+  inline def higherCalloutStrokeThickness: higherCalloutStrokeThickness = "higherCalloutStrokeThickness".asInstanceOf[higherCalloutStrokeThickness]
   
   @js.native
-  sealed trait higherCalloutStrokeThickness extends js.Object
+  sealed trait higherCalloutTextColor extends StObject
+  inline def higherCalloutTextColor: higherCalloutTextColor = "higherCalloutTextColor".asInstanceOf[higherCalloutTextColor]
   
   @js.native
-  sealed trait higherCalloutTextColor extends js.Object
+  sealed trait higherShadeBrush extends StObject
+  inline def higherShadeBrush: higherShadeBrush = "higherShadeBrush".asInstanceOf[higherShadeBrush]
   
   @js.native
-  sealed trait higherShadeBrush extends js.Object
+  sealed trait higherShadeOutline extends StObject
+  inline def higherShadeOutline: higherShadeOutline = "higherShadeOutline".asInstanceOf[higherShadeOutline]
   
   @js.native
-  sealed trait higherShadeOutline extends js.Object
+  sealed trait higherShadeStrokeThickness extends StObject
+  inline def higherShadeStrokeThickness: higherShadeStrokeThickness = "higherShadeStrokeThickness".asInstanceOf[higherShadeStrokeThickness]
   
   @js.native
-  sealed trait higherShadeStrokeThickness extends js.Object
+  sealed trait higherThumbBrush extends StObject
+  inline def higherThumbBrush: higherThumbBrush = "higherThumbBrush".asInstanceOf[higherThumbBrush]
   
   @js.native
-  sealed trait higherThumbBrush extends js.Object
+  sealed trait higherThumbHeight extends StObject
+  inline def higherThumbHeight: higherThumbHeight = "higherThumbHeight".asInstanceOf[higherThumbHeight]
   
   @js.native
-  sealed trait higherThumbHeight extends js.Object
+  sealed trait higherThumbOutline extends StObject
+  inline def higherThumbOutline: higherThumbOutline = "higherThumbOutline".asInstanceOf[higherThumbOutline]
   
   @js.native
-  sealed trait higherThumbOutline extends js.Object
+  sealed trait higherThumbRidgesBrush extends StObject
+  inline def higherThumbRidgesBrush: higherThumbRidgesBrush = "higherThumbRidgesBrush".asInstanceOf[higherThumbRidgesBrush]
   
   @js.native
-  sealed trait higherThumbRidgesBrush extends js.Object
+  sealed trait higherThumbStrokeThickness extends StObject
+  inline def higherThumbStrokeThickness: higherThumbStrokeThickness = "higherThumbStrokeThickness".asInstanceOf[higherThumbStrokeThickness]
   
   @js.native
-  sealed trait higherThumbStrokeThickness extends js.Object
+  sealed trait higherThumbWidth extends StObject
+  inline def higherThumbWidth: higherThumbWidth = "higherThumbWidth".asInstanceOf[higherThumbWidth]
   
   @js.native
-  sealed trait higherThumbWidth extends js.Object
+  sealed trait highlightMatchesMode extends StObject
+  inline def highlightMatchesMode: highlightMatchesMode = "highlightMatchesMode".asInstanceOf[highlightMatchesMode]
   
   @js.native
-  sealed trait highlightMatchesMode extends js.Object
+  sealed trait highlightingTransitionDuration extends StObject
+  inline def highlightingTransitionDuration: highlightingTransitionDuration = "highlightingTransitionDuration".asInstanceOf[highlightingTransitionDuration]
   
   @js.native
-  sealed trait highlightingTransitionDuration extends js.Object
+  sealed trait holeDimensionsChanged extends StObject
+  inline def holeDimensionsChanged: holeDimensionsChanged = "holeDimensionsChanged".asInstanceOf[holeDimensionsChanged]
   
   @js.native
-  sealed trait holeDimensionsChanged extends js.Object
+  sealed trait horizontalAxisBrush extends StObject
+  inline def horizontalAxisBrush: horizontalAxisBrush = "horizontalAxisBrush".asInstanceOf[horizontalAxisBrush]
   
   @js.native
-  sealed trait horizontalAxisBrush extends js.Object
+  sealed trait horizontalAxisLabel extends StObject
+  inline def horizontalAxisLabel: horizontalAxisLabel = "horizontalAxisLabel".asInstanceOf[horizontalAxisLabel]
   
   @js.native
-  sealed trait horizontalAxisLabel extends js.Object
+  sealed trait horizontalAxisVisibility extends StObject
+  inline def horizontalAxisVisibility: horizontalAxisVisibility = "horizontalAxisVisibility".asInstanceOf[horizontalAxisVisibility]
   
   @js.native
-  sealed trait horizontalAxisVisibility extends js.Object
+  sealed trait horizontalMoveOnEnter extends StObject
+  inline def horizontalMoveOnEnter: horizontalMoveOnEnter = "horizontalMoveOnEnter".asInstanceOf[horizontalMoveOnEnter]
   
   @js.native
-  sealed trait horizontalMoveOnEnter extends js.Object
+  sealed trait horizontalZoomable extends StObject
+  inline def horizontalZoomable: horizontalZoomable = "horizontalZoomable".asInstanceOf[horizontalZoomable]
   
   @js.native
-  sealed trait horizontalZoomable extends js.Object
+  sealed trait hotTracking extends StObject
+  inline def hotTracking: hotTracking = "hotTracking".asInstanceOf[hotTracking]
   
   @js.native
-  sealed trait hotTracking extends js.Object
+  sealed trait hoverChange extends StObject
+  inline def hoverChange: hoverChange = "hoverChange".asInstanceOf[hoverChange]
   
   @js.native
-  sealed trait hoverChange extends js.Object
+  sealed trait hoverStyleAnimationDuration extends StObject
+  inline def hoverStyleAnimationDuration: hoverStyleAnimationDuration = "hoverStyleAnimationDuration".asInstanceOf[hoverStyleAnimationDuration]
   
   @js.native
-  sealed trait hoverStyleAnimationDuration extends js.Object
+  sealed trait hyperlinkExecuting extends StObject
+  inline def hyperlinkExecuting: hyperlinkExecuting = "hyperlinkExecuting".asInstanceOf[hyperlinkExecuting]
   
   @js.native
-  sealed trait hyperlinkExecuting extends js.Object
+  sealed trait iconClass extends StObject
+  inline def iconClass: iconClass = "iconClass".asInstanceOf[iconClass]
   
   @js.native
-  sealed trait iconClass extends js.Object
+  sealed trait icons extends StObject
+  inline def icons: icons = "icons".asInstanceOf[icons]
   
   @js.native
-  sealed trait icons extends js.Object
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait igBaseChart extends StObject
+  inline def igBaseChart: igBaseChart = "igBaseChart".asInstanceOf[igBaseChart]
   
   @js.native
-  sealed trait igBaseChart extends js.Object
+  sealed trait igBaseEditor extends StObject
+  inline def igBaseEditor: igBaseEditor = "igBaseEditor".asInstanceOf[igBaseEditor]
   
   @js.native
-  sealed trait igBaseEditor extends js.Object
+  sealed trait igBrowseButton extends StObject
+  inline def igBrowseButton: igBrowseButton = "igBrowseButton".asInstanceOf[igBrowseButton]
   
   @js.native
-  sealed trait igBrowseButton extends js.Object
+  sealed trait igBulletGraph extends StObject
+  inline def igBulletGraph: igBulletGraph = "igBulletGraph".asInstanceOf[igBulletGraph]
   
   @js.native
-  sealed trait igBulletGraph extends js.Object
+  sealed trait igButton extends StObject
+  inline def igButton: igButton = "igButton".asInstanceOf[igButton]
   
   @js.native
-  sealed trait igButton extends js.Object
+  sealed trait igCategoryChart extends StObject
+  inline def igCategoryChart: igCategoryChart = "igCategoryChart".asInstanceOf[igCategoryChart]
   
   @js.native
-  sealed trait igCategoryChart extends js.Object
+  sealed trait igChartLegend extends StObject
+  inline def igChartLegend: igChartLegend = "igChartLegend".asInstanceOf[igChartLegend]
   
   @js.native
-  sealed trait igChartLegend extends js.Object
+  sealed trait igCheckboxEditor extends StObject
+  inline def igCheckboxEditor: igCheckboxEditor = "igCheckboxEditor".asInstanceOf[igCheckboxEditor]
   
   @js.native
-  sealed trait igCheckboxEditor extends js.Object
+  sealed trait igColorPicker extends StObject
+  inline def igColorPicker: igColorPicker = "igColorPicker".asInstanceOf[igColorPicker]
   
   @js.native
-  sealed trait igColorPicker extends js.Object
+  sealed trait igColorPickerSplitButton extends StObject
+  inline def igColorPickerSplitButton: igColorPickerSplitButton = "igColorPickerSplitButton".asInstanceOf[igColorPickerSplitButton]
   
   @js.native
-  sealed trait igColorPickerSplitButton extends js.Object
+  sealed trait igCombo extends StObject
+  inline def igCombo: igCombo = "igCombo".asInstanceOf[igCombo]
   
   @js.native
-  sealed trait igCombo extends js.Object
+  sealed trait igCurrencyEditor extends StObject
+  inline def igCurrencyEditor: igCurrencyEditor = "igCurrencyEditor".asInstanceOf[igCurrencyEditor]
   
   @js.native
-  sealed trait igCurrencyEditor extends js.Object
+  sealed trait igDataChart extends StObject
+  inline def igDataChart: igDataChart = "igDataChart".asInstanceOf[igDataChart]
   
   @js.native
-  sealed trait igDataChart extends js.Object
+  sealed trait igDateEditor extends StObject
+  inline def igDateEditor: igDateEditor = "igDateEditor".asInstanceOf[igDateEditor]
   
   @js.native
-  sealed trait igDateEditor extends js.Object
+  sealed trait igDatePicker extends StObject
+  inline def igDatePicker: igDatePicker = "igDatePicker".asInstanceOf[igDatePicker]
   
   @js.native
-  sealed trait igDatePicker extends js.Object
+  sealed trait igDialog extends StObject
+  inline def igDialog: igDialog = "igDialog".asInstanceOf[igDialog]
   
   @js.native
-  sealed trait igDialog extends js.Object
+  sealed trait igDoughnutChart extends StObject
+  inline def igDoughnutChart: igDoughnutChart = "igDoughnutChart".asInstanceOf[igDoughnutChart]
   
   @js.native
-  sealed trait igDoughnutChart extends js.Object
+  sealed trait igEditorFilter extends StObject
+  inline def igEditorFilter: igEditorFilter = "igEditorFilter".asInstanceOf[igEditorFilter]
   
   @js.native
-  sealed trait igEditorFilter extends js.Object
+  sealed trait igFinancialChart extends StObject
+  inline def igFinancialChart: igFinancialChart = "igFinancialChart".asInstanceOf[igFinancialChart]
   
   @js.native
-  sealed trait igFinancialChart extends js.Object
+  sealed trait igFunnelChart extends StObject
+  inline def igFunnelChart: igFunnelChart = "igFunnelChart".asInstanceOf[igFunnelChart]
   
   @js.native
-  sealed trait igFunnelChart extends js.Object
+  sealed trait igGrid extends StObject
+  inline def igGrid: igGrid = "igGrid".asInstanceOf[igGrid]
   
   @js.native
-  sealed trait igGrid extends js.Object
+  sealed trait igGridAppendRowsOnDemand extends StObject
+  inline def igGridAppendRowsOnDemand: igGridAppendRowsOnDemand = "igGridAppendRowsOnDemand".asInstanceOf[igGridAppendRowsOnDemand]
   
   @js.native
-  sealed trait igGridAppendRowsOnDemand extends js.Object
+  sealed trait igGridCellMerging extends StObject
+  inline def igGridCellMerging: igGridCellMerging = "igGridCellMerging".asInstanceOf[igGridCellMerging]
   
   @js.native
-  sealed trait igGridCellMerging extends js.Object
+  sealed trait igGridColumnFixing extends StObject
+  inline def igGridColumnFixing: igGridColumnFixing = "igGridColumnFixing".asInstanceOf[igGridColumnFixing]
   
   @js.native
-  sealed trait igGridColumnFixing extends js.Object
+  sealed trait igGridColumnMoving extends StObject
+  inline def igGridColumnMoving: igGridColumnMoving = "igGridColumnMoving".asInstanceOf[igGridColumnMoving]
   
   @js.native
-  sealed trait igGridColumnMoving extends js.Object
+  sealed trait igGridFeatureChooser extends StObject
+  inline def igGridFeatureChooser: igGridFeatureChooser = "igGridFeatureChooser".asInstanceOf[igGridFeatureChooser]
   
   @js.native
-  sealed trait igGridFeatureChooser extends js.Object
+  sealed trait igGridFeatureChooserPopover extends StObject
+  inline def igGridFeatureChooserPopover: igGridFeatureChooserPopover = "igGridFeatureChooserPopover".asInstanceOf[igGridFeatureChooserPopover]
   
   @js.native
-  sealed trait igGridFeatureChooserPopover extends js.Object
+  sealed trait igGridFiltering extends StObject
+  inline def igGridFiltering: igGridFiltering = "igGridFiltering".asInstanceOf[igGridFiltering]
   
   @js.native
-  sealed trait igGridFiltering extends js.Object
+  sealed trait igGridGroupBy extends StObject
+  inline def igGridGroupBy: igGridGroupBy = "igGridGroupBy".asInstanceOf[igGridGroupBy]
   
   @js.native
-  sealed trait igGridGroupBy extends js.Object
+  sealed trait igGridHiding extends StObject
+  inline def igGridHiding: igGridHiding = "igGridHiding".asInstanceOf[igGridHiding]
   
   @js.native
-  sealed trait igGridHiding extends js.Object
+  sealed trait igGridModalDialog extends StObject
+  inline def igGridModalDialog: igGridModalDialog = "igGridModalDialog".asInstanceOf[igGridModalDialog]
   
   @js.native
-  sealed trait igGridModalDialog extends js.Object
+  sealed trait igGridMultiColumnHeaders extends StObject
+  inline def igGridMultiColumnHeaders: igGridMultiColumnHeaders = "igGridMultiColumnHeaders".asInstanceOf[igGridMultiColumnHeaders]
   
   @js.native
-  sealed trait igGridMultiColumnHeaders extends js.Object
+  sealed trait igGridPaging extends StObject
+  inline def igGridPaging: igGridPaging = "igGridPaging".asInstanceOf[igGridPaging]
   
   @js.native
-  sealed trait igGridPaging extends js.Object
+  sealed trait igGridResizing extends StObject
+  inline def igGridResizing: igGridResizing = "igGridResizing".asInstanceOf[igGridResizing]
   
   @js.native
-  sealed trait igGridResizing extends js.Object
+  sealed trait igGridResponsive extends StObject
+  inline def igGridResponsive: igGridResponsive = "igGridResponsive".asInstanceOf[igGridResponsive]
   
   @js.native
-  sealed trait igGridResponsive extends js.Object
+  sealed trait igGridRowSelectors extends StObject
+  inline def igGridRowSelectors: igGridRowSelectors = "igGridRowSelectors".asInstanceOf[igGridRowSelectors]
   
   @js.native
-  sealed trait igGridRowSelectors extends js.Object
+  sealed trait igGridSelection extends StObject
+  inline def igGridSelection: igGridSelection = "igGridSelection".asInstanceOf[igGridSelection]
   
   @js.native
-  sealed trait igGridSelection extends js.Object
+  sealed trait igGridSorting extends StObject
+  inline def igGridSorting: igGridSorting = "igGridSorting".asInstanceOf[igGridSorting]
   
   @js.native
-  sealed trait igGridSorting extends js.Object
+  sealed trait igGridSummaries extends StObject
+  inline def igGridSummaries: igGridSummaries = "igGridSummaries".asInstanceOf[igGridSummaries]
   
   @js.native
-  sealed trait igGridSummaries extends js.Object
+  sealed trait igGridTooltips extends StObject
+  inline def igGridTooltips: igGridTooltips = "igGridTooltips".asInstanceOf[igGridTooltips]
   
   @js.native
-  sealed trait igGridTooltips extends js.Object
+  sealed trait igGridUpdating extends StObject
+  inline def igGridUpdating: igGridUpdating = "igGridUpdating".asInstanceOf[igGridUpdating]
   
   @js.native
-  sealed trait igGridUpdating extends js.Object
+  sealed trait igHierarchicalGrid extends StObject
+  inline def igHierarchicalGrid: igHierarchicalGrid = "igHierarchicalGrid".asInstanceOf[igHierarchicalGrid]
   
   @js.native
-  sealed trait igHierarchicalGrid extends js.Object
+  sealed trait igHtmlEditor extends StObject
+  inline def igHtmlEditor: igHtmlEditor = "igHtmlEditor".asInstanceOf[igHtmlEditor]
   
   @js.native
-  sealed trait igHtmlEditor extends js.Object
+  sealed trait igHtmlEditorPopover extends StObject
+  inline def igHtmlEditorPopover: igHtmlEditorPopover = "igHtmlEditorPopover".asInstanceOf[igHtmlEditorPopover]
   
   @js.native
-  sealed trait igHtmlEditorPopover extends js.Object
+  sealed trait igImagePropertiesDialog extends StObject
+  inline def igImagePropertiesDialog: igImagePropertiesDialog = "igImagePropertiesDialog".asInstanceOf[igImagePropertiesDialog]
   
   @js.native
-  sealed trait igImagePropertiesDialog extends js.Object
+  sealed trait igLayoutManager extends StObject
+  inline def igLayoutManager: igLayoutManager = "igLayoutManager".asInstanceOf[igLayoutManager]
   
   @js.native
-  sealed trait igLayoutManager extends js.Object
+  sealed trait igLinearGauge extends StObject
+  inline def igLinearGauge: igLinearGauge = "igLinearGauge".asInstanceOf[igLinearGauge]
   
   @js.native
-  sealed trait igLinearGauge extends js.Object
+  sealed trait igLinkPropertiesDialog extends StObject
+  inline def igLinkPropertiesDialog: igLinkPropertiesDialog = "igLinkPropertiesDialog".asInstanceOf[igLinkPropertiesDialog]
   
   @js.native
-  sealed trait igLinkPropertiesDialog extends js.Object
+  sealed trait igLoading extends StObject
+  inline def igLoading: igLoading = "igLoading".asInstanceOf[igLoading]
   
   @js.native
-  sealed trait igLoading extends js.Object
+  sealed trait igMap extends StObject
+  inline def igMap: igMap = "igMap".asInstanceOf[igMap]
   
   @js.native
-  sealed trait igMap extends js.Object
+  sealed trait igMaskEditor extends StObject
+  inline def igMaskEditor: igMaskEditor = "igMaskEditor".asInstanceOf[igMaskEditor]
   
   @js.native
-  sealed trait igMaskEditor extends js.Object
+  sealed trait igNotifier extends StObject
+  inline def igNotifier: igNotifier = "igNotifier".asInstanceOf[igNotifier]
   
   @js.native
-  sealed trait igNotifier extends js.Object
+  sealed trait igNumericEditor extends StObject
+  inline def igNumericEditor: igNumericEditor = "igNumericEditor".asInstanceOf[igNumericEditor]
   
   @js.native
-  sealed trait igNumericEditor extends js.Object
+  sealed trait igPercentEditor extends StObject
+  inline def igPercentEditor: igPercentEditor = "igPercentEditor".asInstanceOf[igPercentEditor]
   
   @js.native
-  sealed trait igPercentEditor extends js.Object
+  sealed trait igPieChart extends StObject
+  inline def igPieChart: igPieChart = "igPieChart".asInstanceOf[igPieChart]
   
   @js.native
-  sealed trait igPieChart extends js.Object
+  sealed trait igPivotDataSelector extends StObject
+  inline def igPivotDataSelector: igPivotDataSelector = "igPivotDataSelector".asInstanceOf[igPivotDataSelector]
   
   @js.native
-  sealed trait igPivotDataSelector extends js.Object
+  sealed trait igPivotGrid extends StObject
+  inline def igPivotGrid: igPivotGrid = "igPivotGrid".asInstanceOf[igPivotGrid]
   
   @js.native
-  sealed trait igPivotGrid extends js.Object
+  sealed trait igPivotView extends StObject
+  inline def igPivotView: igPivotView = "igPivotView".asInstanceOf[igPivotView]
   
   @js.native
-  sealed trait igPivotView extends js.Object
+  sealed trait igPopover extends StObject
+  inline def igPopover: igPopover = "igPopover".asInstanceOf[igPopover]
   
   @js.native
-  sealed trait igPopover extends js.Object
+  sealed trait igProgressBar extends StObject
+  inline def igProgressBar: igProgressBar = "igProgressBar".asInstanceOf[igProgressBar]
   
   @js.native
-  sealed trait igProgressBar extends js.Object
+  sealed trait igQRCodeBarcode extends StObject
+  inline def igQRCodeBarcode: igQRCodeBarcode = "igQRCodeBarcode".asInstanceOf[igQRCodeBarcode]
   
   @js.native
-  sealed trait igQRCodeBarcode extends js.Object
+  sealed trait igRadialGauge extends StObject
+  inline def igRadialGauge: igRadialGauge = "igRadialGauge".asInstanceOf[igRadialGauge]
   
   @js.native
-  sealed trait igRadialGauge extends js.Object
+  sealed trait igRadialMenu extends StObject
+  inline def igRadialMenu: igRadialMenu = "igRadialMenu".asInstanceOf[igRadialMenu]
   
   @js.native
-  sealed trait igRadialMenu extends js.Object
+  sealed trait igRating extends StObject
+  inline def igRating: igRating = "igRating".asInstanceOf[igRating]
   
   @js.native
-  sealed trait igRating extends js.Object
+  sealed trait igResponsiveContainer extends StObject
+  inline def igResponsiveContainer: igResponsiveContainer = "igResponsiveContainer".asInstanceOf[igResponsiveContainer]
   
   @js.native
-  sealed trait igResponsiveContainer extends js.Object
+  sealed trait igScheduler extends StObject
+  inline def igScheduler: igScheduler = "igScheduler".asInstanceOf[igScheduler]
   
   @js.native
-  sealed trait igScheduler extends js.Object
+  sealed trait igScroll extends StObject
+  inline def igScroll: igScroll = "igScroll".asInstanceOf[igScroll]
   
   @js.native
-  sealed trait igScroll extends js.Object
+  sealed trait igShapeChart extends StObject
+  inline def igShapeChart: igShapeChart = "igShapeChart".asInstanceOf[igShapeChart]
   
   @js.native
-  sealed trait igShapeChart extends js.Object
+  sealed trait igSlider extends StObject
+  inline def igSlider: igSlider = "igSlider".asInstanceOf[igSlider]
   
   @js.native
-  sealed trait igSlider extends js.Object
+  sealed trait igSparkline extends StObject
+  inline def igSparkline: igSparkline = "igSparkline".asInstanceOf[igSparkline]
   
   @js.native
-  sealed trait igSparkline extends js.Object
+  sealed trait igSplitButton extends StObject
+  inline def igSplitButton: igSplitButton = "igSplitButton".asInstanceOf[igSplitButton]
   
   @js.native
-  sealed trait igSplitButton extends js.Object
+  sealed trait igSplitter extends StObject
+  inline def igSplitter: igSplitter = "igSplitter".asInstanceOf[igSplitter]
   
   @js.native
-  sealed trait igSplitter extends js.Object
+  sealed trait igSpreadsheet extends StObject
+  inline def igSpreadsheet: igSpreadsheet = "igSpreadsheet".asInstanceOf[igSpreadsheet]
   
   @js.native
-  sealed trait igSpreadsheet extends js.Object
+  sealed trait igTablePropertiesDialog extends StObject
+  inline def igTablePropertiesDialog: igTablePropertiesDialog = "igTablePropertiesDialog".asInstanceOf[igTablePropertiesDialog]
   
   @js.native
-  sealed trait igTablePropertiesDialog extends js.Object
+  sealed trait igTextEditor extends StObject
+  inline def igTextEditor: igTextEditor = "igTextEditor".asInstanceOf[igTextEditor]
   
   @js.native
-  sealed trait igTextEditor extends js.Object
+  sealed trait igTileManager extends StObject
+  inline def igTileManager: igTileManager = "igTileManager".asInstanceOf[igTileManager]
   
   @js.native
-  sealed trait igTileManager extends js.Object
+  sealed trait igTimePicker extends StObject
+  inline def igTimePicker: igTimePicker = "igTimePicker".asInstanceOf[igTimePicker]
   
   @js.native
-  sealed trait igTimePicker extends js.Object
+  sealed trait igToolbar extends StObject
+  inline def igToolbar: igToolbar = "igToolbar".asInstanceOf[igToolbar]
   
   @js.native
-  sealed trait igToolbar extends js.Object
+  sealed trait igToolbarButton extends StObject
+  inline def igToolbarButton: igToolbarButton = "igToolbarButton".asInstanceOf[igToolbarButton]
   
   @js.native
-  sealed trait igToolbarButton extends js.Object
+  sealed trait igTooltip extends StObject
+  inline def igTooltip: igTooltip = "igTooltip".asInstanceOf[igTooltip]
   
   @js.native
-  sealed trait igTooltip extends js.Object
+  sealed trait igTree extends StObject
+  inline def igTree: igTree = "igTree".asInstanceOf[igTree]
   
   @js.native
-  sealed trait igTree extends js.Object
+  sealed trait igTreeGrid extends StObject
+  inline def igTreeGrid: igTreeGrid = "igTreeGrid".asInstanceOf[igTreeGrid]
   
   @js.native
-  sealed trait igTreeGrid extends js.Object
+  sealed trait igTreeGridColumnFixing extends StObject
+  inline def igTreeGridColumnFixing: igTreeGridColumnFixing = "igTreeGridColumnFixing".asInstanceOf[igTreeGridColumnFixing]
   
   @js.native
-  sealed trait igTreeGridColumnFixing extends js.Object
+  sealed trait igTreeGridColumnMoving extends StObject
+  inline def igTreeGridColumnMoving: igTreeGridColumnMoving = "igTreeGridColumnMoving".asInstanceOf[igTreeGridColumnMoving]
   
   @js.native
-  sealed trait igTreeGridColumnMoving extends js.Object
+  sealed trait igTreeGridFiltering extends StObject
+  inline def igTreeGridFiltering: igTreeGridFiltering = "igTreeGridFiltering".asInstanceOf[igTreeGridFiltering]
   
   @js.native
-  sealed trait igTreeGridFiltering extends js.Object
+  sealed trait igTreeGridHiding extends StObject
+  inline def igTreeGridHiding: igTreeGridHiding = "igTreeGridHiding".asInstanceOf[igTreeGridHiding]
   
   @js.native
-  sealed trait igTreeGridHiding extends js.Object
+  sealed trait igTreeGridMultiColumnHeaders extends StObject
+  inline def igTreeGridMultiColumnHeaders: igTreeGridMultiColumnHeaders = "igTreeGridMultiColumnHeaders".asInstanceOf[igTreeGridMultiColumnHeaders]
   
   @js.native
-  sealed trait igTreeGridMultiColumnHeaders extends js.Object
+  sealed trait igTreeGridPaging extends StObject
+  inline def igTreeGridPaging: igTreeGridPaging = "igTreeGridPaging".asInstanceOf[igTreeGridPaging]
   
   @js.native
-  sealed trait igTreeGridPaging extends js.Object
+  sealed trait igTreeGridResizing extends StObject
+  inline def igTreeGridResizing: igTreeGridResizing = "igTreeGridResizing".asInstanceOf[igTreeGridResizing]
   
   @js.native
-  sealed trait igTreeGridResizing extends js.Object
+  sealed trait igTreeGridRowSelectors extends StObject
+  inline def igTreeGridRowSelectors: igTreeGridRowSelectors = "igTreeGridRowSelectors".asInstanceOf[igTreeGridRowSelectors]
   
   @js.native
-  sealed trait igTreeGridRowSelectors extends js.Object
+  sealed trait igTreeGridSelection extends StObject
+  inline def igTreeGridSelection: igTreeGridSelection = "igTreeGridSelection".asInstanceOf[igTreeGridSelection]
   
   @js.native
-  sealed trait igTreeGridSelection extends js.Object
+  sealed trait igTreeGridSorting extends StObject
+  inline def igTreeGridSorting: igTreeGridSorting = "igTreeGridSorting".asInstanceOf[igTreeGridSorting]
   
   @js.native
-  sealed trait igTreeGridSorting extends js.Object
+  sealed trait igTreeGridTooltips extends StObject
+  inline def igTreeGridTooltips: igTreeGridTooltips = "igTreeGridTooltips".asInstanceOf[igTreeGridTooltips]
   
   @js.native
-  sealed trait igTreeGridTooltips extends js.Object
+  sealed trait igTreeGridUpdating extends StObject
+  inline def igTreeGridUpdating: igTreeGridUpdating = "igTreeGridUpdating".asInstanceOf[igTreeGridUpdating]
   
   @js.native
-  sealed trait igTreeGridUpdating extends js.Object
+  sealed trait igUpload extends StObject
+  inline def igUpload: igUpload = "igUpload".asInstanceOf[igUpload]
   
   @js.native
-  sealed trait igUpload extends js.Object
+  sealed trait igValidator extends StObject
+  inline def igValidator: igValidator = "igValidator".asInstanceOf[igValidator]
   
   @js.native
-  sealed trait igValidator extends js.Object
+  sealed trait igVideoPlayer extends StObject
+  inline def igVideoPlayer: igVideoPlayer = "igVideoPlayer".asInstanceOf[igVideoPlayer]
   
   @js.native
-  sealed trait igVideoPlayer extends js.Object
+  sealed trait igWidget extends StObject
+  inline def igWidget: igWidget = "igWidget".asInstanceOf[igWidget]
   
   @js.native
-  sealed trait igWidget extends js.Object
+  sealed trait igZoomSlider extends StObject
+  inline def igZoomSlider: igZoomSlider = "igZoomSlider".asInstanceOf[igZoomSlider]
   
   @js.native
-  sealed trait igZoomSlider extends js.Object
+  sealed trait igZoombar extends StObject
+  inline def igZoombar: igZoombar = "igZoombar".asInstanceOf[igZoombar]
   
   @js.native
-  sealed trait igZoombar extends js.Object
+  sealed trait imageClass extends StObject
+  inline def imageClass: imageClass = "imageClass".asInstanceOf[imageClass]
   
   @js.native
-  sealed trait imageClass extends js.Object
+  sealed trait immediateChildren extends StObject
+  inline def immediateChildren: immediateChildren = "immediateChildren".asInstanceOf[immediateChildren]
   
   @js.native
-  sealed trait immediateChildren extends js.Object
+  sealed trait immediateChildrenWidgets extends StObject
+  inline def immediateChildrenWidgets: immediateChildrenWidgets = "immediateChildrenWidgets".asInstanceOf[immediateChildrenWidgets]
   
   @js.native
-  sealed trait immediateChildrenWidgets extends js.Object
+  sealed trait includeKeys extends StObject
+  inline def includeKeys: includeKeys = "includeKeys".asInstanceOf[includeKeys]
   
   @js.native
-  sealed trait includeKeys extends js.Object
+  sealed trait includeVerticalOffset extends StObject
+  inline def includeVerticalOffset: includeVerticalOffset = "includeVerticalOffset".asInstanceOf[includeVerticalOffset]
   
   @js.native
-  sealed trait includeVerticalOffset extends js.Object
+  sealed trait includedProperties extends StObject
+  inline def includedProperties: includedProperties = "includedProperties".asInstanceOf[includedProperties]
   
   @js.native
-  sealed trait includedProperties extends js.Object
+  sealed trait indentation extends StObject
+  inline def indentation: indentation = "indentation".asInstanceOf[indentation]
   
   @js.native
-  sealed trait indentation extends js.Object
+  sealed trait index extends StObject
+  inline def index: index = "index".asInstanceOf[index]
   
   @js.native
-  sealed trait index extends js.Object
+  sealed trait indicator extends StObject
+  inline def indicator: indicator = "indicator".asInstanceOf[indicator]
   
   @js.native
-  sealed trait indicator extends js.Object
+  sealed trait indicatorBrushes extends StObject
+  inline def indicatorBrushes: indicatorBrushes = "indicatorBrushes".asInstanceOf[indicatorBrushes]
   
   @js.native
-  sealed trait indicatorBrushes extends js.Object
+  sealed trait indicatorDisplayTypes extends StObject
+  inline def indicatorDisplayTypes: indicatorDisplayTypes = "indicatorDisplayTypes".asInstanceOf[indicatorDisplayTypes]
   
   @js.native
-  sealed trait indicatorDisplayTypes extends js.Object
+  sealed trait indicatorElement extends StObject
+  inline def indicatorElement: indicatorElement = "indicatorElement".asInstanceOf[indicatorElement]
   
   @js.native
-  sealed trait indicatorElement extends js.Object
+  sealed trait indicatorLongPeriod extends StObject
+  inline def indicatorLongPeriod: indicatorLongPeriod = "indicatorLongPeriod".asInstanceOf[indicatorLongPeriod]
   
   @js.native
-  sealed trait indicatorLongPeriod extends js.Object
+  sealed trait indicatorMenuTemplate extends StObject
+  inline def indicatorMenuTemplate: indicatorMenuTemplate = "indicatorMenuTemplate".asInstanceOf[indicatorMenuTemplate]
   
   @js.native
-  sealed trait indicatorMenuTemplate extends js.Object
+  sealed trait indicatorMultiplier extends StObject
+  inline def indicatorMultiplier: indicatorMultiplier = "indicatorMultiplier".asInstanceOf[indicatorMultiplier]
   
   @js.native
-  sealed trait indicatorMultiplier extends js.Object
+  sealed trait indicatorNegativeBrushes extends StObject
+  inline def indicatorNegativeBrushes: indicatorNegativeBrushes = "indicatorNegativeBrushes".asInstanceOf[indicatorNegativeBrushes]
   
   @js.native
-  sealed trait indicatorNegativeBrushes extends js.Object
+  sealed trait indicatorPeriod extends StObject
+  inline def indicatorPeriod: indicatorPeriod = "indicatorPeriod".asInstanceOf[indicatorPeriod]
   
   @js.native
-  sealed trait indicatorPeriod extends js.Object
+  sealed trait indicatorShortPeriod extends StObject
+  inline def indicatorShortPeriod: indicatorShortPeriod = "indicatorShortPeriod".asInstanceOf[indicatorShortPeriod]
   
   @js.native
-  sealed trait indicatorShortPeriod extends js.Object
+  sealed trait indicatorSignalPeriod extends StObject
+  inline def indicatorSignalPeriod: indicatorSignalPeriod = "indicatorSignalPeriod".asInstanceOf[indicatorSignalPeriod]
   
   @js.native
-  sealed trait indicatorSignalPeriod extends js.Object
+  sealed trait indicatorSmoothingPeriod extends StObject
+  inline def indicatorSmoothingPeriod: indicatorSmoothingPeriod = "indicatorSmoothingPeriod".asInstanceOf[indicatorSmoothingPeriod]
   
   @js.native
-  sealed trait indicatorSmoothingPeriod extends js.Object
+  sealed trait indicatorThickness extends StObject
+  inline def indicatorThickness: indicatorThickness = "indicatorThickness".asInstanceOf[indicatorThickness]
   
   @js.native
-  sealed trait indicatorThickness extends js.Object
+  sealed trait indicatorTypes extends StObject
+  inline def indicatorTypes: indicatorTypes = "indicatorTypes".asInstanceOf[indicatorTypes]
   
   @js.native
-  sealed trait indicatorTypes extends js.Object
+  sealed trait inertiaDeltaX extends StObject
+  inline def inertiaDeltaX: inertiaDeltaX = "inertiaDeltaX".asInstanceOf[inertiaDeltaX]
   
   @js.native
-  sealed trait inertiaDeltaX extends js.Object
+  sealed trait inertiaDeltaY extends StObject
+  inline def inertiaDeltaY: inertiaDeltaY = "inertiaDeltaY".asInstanceOf[inertiaDeltaY]
   
   @js.native
-  sealed trait inertiaDeltaY extends js.Object
+  sealed trait inertiaDuration extends StObject
+  inline def inertiaDuration: inertiaDuration = "inertiaDuration".asInstanceOf[inertiaDuration]
   
   @js.native
-  sealed trait inertiaDuration extends js.Object
+  sealed trait inertiaStep extends StObject
+  inline def inertiaStep: inertiaStep = "inertiaStep".asInstanceOf[inertiaStep]
   
   @js.native
-  sealed trait inertiaStep extends js.Object
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait initialDataBindDepth extends StObject
+  inline def initialDataBindDepth: initialDataBindDepth = "initialDataBindDepth".asInstanceOf[initialDataBindDepth]
   
   @js.native
-  sealed trait initialDataBindDepth extends js.Object
+  sealed trait initialExpand extends StObject
+  inline def initialExpand: initialExpand = "initialExpand".asInstanceOf[initialExpand]
   
   @js.native
-  sealed trait initialExpand extends js.Object
+  sealed trait initialExpandDepth extends StObject
+  inline def initialExpandDepth: initialExpandDepth = "initialExpandDepth".asInstanceOf[initialExpandDepth]
   
   @js.native
-  sealed trait initialExpandDepth extends js.Object
+  sealed trait initialIndentationLevel extends StObject
+  inline def initialIndentationLevel: initialIndentationLevel = "initialIndentationLevel".asInstanceOf[initialIndentationLevel]
   
   @js.native
-  sealed trait initialIndentationLevel extends js.Object
+  sealed trait initialSelectedItems extends StObject
+  inline def initialSelectedItems: initialSelectedItems = "initialSelectedItems".asInstanceOf[initialSelectedItems]
   
   @js.native
-  sealed trait initialSelectedItems extends js.Object
+  sealed trait innerExtent extends StObject
+  inline def innerExtent: innerExtent = "innerExtent".asInstanceOf[innerExtent]
   
   @js.native
-  sealed trait innerExtent extends js.Object
+  sealed trait innerLabelMemberPath extends StObject
+  inline def innerLabelMemberPath: innerLabelMemberPath = "innerLabelMemberPath".asInstanceOf[innerLabelMemberPath]
   
   @js.native
-  sealed trait innerLabelMemberPath extends js.Object
+  sealed trait innerLabelVisibility extends StObject
+  inline def innerLabelVisibility: innerLabelVisibility = "innerLabelVisibility".asInstanceOf[innerLabelVisibility]
   
   @js.native
-  sealed trait innerLabelVisibility extends js.Object
+  sealed trait inputMask extends StObject
+  inline def inputMask: inputMask = "inputMask".asInstanceOf[inputMask]
   
   @js.native
-  sealed trait inputMask extends js.Object
+  sealed trait inputName extends StObject
+  inline def inputName: inputName = "inputName".asInstanceOf[inputName]
   
   @js.native
-  sealed trait inputName extends js.Object
+  sealed trait insert extends StObject
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insertAtCaret extends StObject
+  inline def insertAtCaret: insertAtCaret = "insertAtCaret".asInstanceOf[insertAtCaret]
   
   @js.native
-  sealed trait insertAtCaret extends js.Object
+  sealed trait insertItem extends StObject
+  inline def insertItem: insertItem = "insertItem".asInstanceOf[insertItem]
   
   @js.native
-  sealed trait insertItem extends js.Object
+  sealed trait internalResized extends StObject
+  inline def internalResized: internalResized = "internalResized".asInstanceOf[internalResized]
   
   @js.native
-  sealed trait internalResized extends js.Object
+  sealed trait internalResizing extends StObject
+  inline def internalResizing: internalResizing = "internalResizing".asInstanceOf[internalResizing]
   
   @js.native
-  sealed trait internalResizing extends js.Object
+  sealed trait interval extends StObject
+  inline def interval: interval = "interval".asInstanceOf[interval]
   
   @js.native
-  sealed trait interval extends js.Object
+  sealed trait isCategoryHighlightingEnabled extends StObject
+  inline def isCategoryHighlightingEnabled: isCategoryHighlightingEnabled = "isCategoryHighlightingEnabled".asInstanceOf[isCategoryHighlightingEnabled]
   
   @js.native
-  sealed trait isCategoryHighlightingEnabled extends js.Object
+  sealed trait isChecked extends StObject
+  inline def isChecked: isChecked = "isChecked".asInstanceOf[isChecked]
   
   @js.native
-  sealed trait isChecked extends js.Object
+  sealed trait isColumnSorted extends StObject
+  inline def isColumnSorted: isColumnSorted = "isColumnSorted".asInstanceOf[isColumnSorted]
   
   @js.native
-  sealed trait isColumnSorted extends js.Object
+  sealed trait isDirty extends StObject
+  inline def isDirty: isDirty = "isDirty".asInstanceOf[isDirty]
   
   @js.native
-  sealed trait isDirty extends js.Object
+  sealed trait isEditing extends StObject
+  inline def isEditing: isEditing = "isEditing".asInstanceOf[isEditing]
   
   @js.native
-  sealed trait isEditing extends js.Object
+  sealed trait isEnterKeyNavigationEnabled extends StObject
+  inline def isEnterKeyNavigationEnabled: isEnterKeyNavigationEnabled = "isEnterKeyNavigationEnabled".asInstanceOf[isEnterKeyNavigationEnabled]
   
   @js.native
-  sealed trait isEnterKeyNavigationEnabled extends js.Object
+  sealed trait isExpanded extends StObject
+  inline def isExpanded: isExpanded = "isExpanded".asInstanceOf[isExpanded]
   
   @js.native
-  sealed trait isExpanded extends js.Object
+  sealed trait isFixedColumn extends StObject
+  inline def isFixedColumn: isFixedColumn = "isFixedColumn".asInstanceOf[isFixedColumn]
   
   @js.native
-  sealed trait isFixedColumn extends js.Object
+  sealed trait isFixedDecimalEnabled extends StObject
+  inline def isFixedDecimalEnabled: isFixedDecimalEnabled = "isFixedDecimalEnabled".asInstanceOf[isFixedDecimalEnabled]
   
   @js.native
-  sealed trait isFixedDecimalEnabled extends js.Object
+  sealed trait isFormulaBarVisible extends StObject
+  inline def isFormulaBarVisible: isFormulaBarVisible = "isFormulaBarVisible".asInstanceOf[isFormulaBarVisible]
   
   @js.native
-  sealed trait isFormulaBarVisible extends js.Object
+  sealed trait isGroupHeader extends StObject
+  inline def isGroupHeader: isGroupHeader = "isGroupHeader".asInstanceOf[isGroupHeader]
   
   @js.native
-  sealed trait isGroupHeader extends js.Object
+  sealed trait isHidden extends StObject
+  inline def isHidden: isHidden = "isHidden".asInstanceOf[isHidden]
   
   @js.native
-  sealed trait isHidden extends js.Object
+  sealed trait isHorizontalZoomEnabled extends StObject
+  inline def isHorizontalZoomEnabled: isHorizontalZoomEnabled = "isHorizontalZoomEnabled".asInstanceOf[isHorizontalZoomEnabled]
   
   @js.native
-  sealed trait isHorizontalZoomEnabled extends js.Object
+  sealed trait isInEndMode extends StObject
+  inline def isInEndMode: isInEndMode = "isInEndMode".asInstanceOf[isInEndMode]
   
   @js.native
-  sealed trait isInEndMode extends js.Object
+  sealed trait isIndexSelected extends StObject
+  inline def isIndexSelected: isIndexSelected = "isIndexSelected".asInstanceOf[isIndexSelected]
   
   @js.native
-  sealed trait isIndexSelected extends js.Object
+  sealed trait isInverted extends StObject
+  inline def isInverted: isInverted = "isInverted".asInstanceOf[isInverted]
   
   @js.native
-  sealed trait isInverted extends js.Object
+  sealed trait isItemHighlightingEnabled extends StObject
+  inline def isItemHighlightingEnabled: isItemHighlightingEnabled = "isItemHighlightingEnabled".asInstanceOf[isItemHighlightingEnabled]
   
   @js.native
-  sealed trait isItemHighlightingEnabled extends js.Object
+  sealed trait isLegendVisible extends StObject
+  inline def isLegendVisible: isLegendVisible = "isLegendVisible".asInstanceOf[isLegendVisible]
   
   @js.native
-  sealed trait isLegendVisible extends js.Object
+  sealed trait isLimitedToListValues extends StObject
+  inline def isLimitedToListValues: isLimitedToListValues = "isLimitedToListValues".asInstanceOf[isLimitedToListValues]
   
   @js.native
-  sealed trait isLimitedToListValues extends js.Object
+  sealed trait isMerged extends StObject
+  inline def isMerged: isMerged = "isMerged".asInstanceOf[isMerged]
   
   @js.native
-  sealed trait isMerged extends js.Object
+  sealed trait isMessageDisplayed extends StObject
+  inline def isMessageDisplayed: isMessageDisplayed = "isMessageDisplayed".asInstanceOf[isMessageDisplayed]
   
   @js.native
-  sealed trait isMessageDisplayed extends js.Object
+  sealed trait isNeedleDraggingConstrained extends StObject
+  inline def isNeedleDraggingConstrained: isNeedleDraggingConstrained = "isNeedleDraggingConstrained".asInstanceOf[isNeedleDraggingConstrained]
   
   @js.native
-  sealed trait isNeedleDraggingConstrained extends js.Object
+  sealed trait isNeedleDraggingEnabled extends StObject
+  inline def isNeedleDraggingEnabled: isNeedleDraggingEnabled = "isNeedleDraggingEnabled".asInstanceOf[isNeedleDraggingEnabled]
   
   @js.native
-  sealed trait isNeedleDraggingEnabled extends js.Object
+  sealed trait isOpen extends StObject
+  inline def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
   
   @js.native
-  sealed trait isOpen extends js.Object
+  sealed trait isPagePanningAllowed extends StObject
+  inline def isPagePanningAllowed: isPagePanningAllowed = "isPagePanningAllowed".asInstanceOf[isPagePanningAllowed]
   
   @js.native
-  sealed trait isPagePanningAllowed extends js.Object
+  sealed trait isParentInFrontForColumns extends StObject
+  inline def isParentInFrontForColumns: isParentInFrontForColumns = "isParentInFrontForColumns".asInstanceOf[isParentInFrontForColumns]
   
   @js.native
-  sealed trait isParentInFrontForColumns extends js.Object
+  sealed trait isParentInFrontForRows extends StObject
+  inline def isParentInFrontForRows: isParentInFrontForRows = "isParentInFrontForRows".asInstanceOf[isParentInFrontForRows]
   
   @js.native
-  sealed trait isParentInFrontForRows extends js.Object
+  sealed trait isScaleInverted extends StObject
+  inline def isScaleInverted: isScaleInverted = "isScaleInverted".asInstanceOf[isScaleInverted]
   
   @js.native
-  sealed trait isScaleInverted extends js.Object
+  sealed trait isScrollLocked extends StObject
+  inline def isScrollLocked: isScrollLocked = "isScrollLocked".asInstanceOf[isScrollLocked]
   
   @js.native
-  sealed trait isScrollLocked extends js.Object
+  sealed trait isSelected extends StObject
+  inline def isSelected: isSelected = "isSelected".asInstanceOf[isSelected]
   
   @js.native
-  sealed trait isSelected extends js.Object
+  sealed trait isSeriesHighlightingEnabled extends StObject
+  inline def isSeriesHighlightingEnabled: isSeriesHighlightingEnabled = "isSeriesHighlightingEnabled".asInstanceOf[isSeriesHighlightingEnabled]
   
   @js.native
-  sealed trait isSeriesHighlightingEnabled extends js.Object
+  sealed trait isShown extends StObject
+  inline def isShown: isShown = "isShown".asInstanceOf[isShown]
   
   @js.native
-  sealed trait isShown extends js.Object
+  sealed trait isSquare extends StObject
+  inline def isSquare: isSquare = "isSquare".asInstanceOf[isSquare]
   
   @js.native
-  sealed trait isSquare extends js.Object
+  sealed trait isSummariesRowsHidden extends StObject
+  inline def isSummariesRowsHidden: isSummariesRowsHidden = "isSummariesRowsHidden".asInstanceOf[isSummariesRowsHidden]
   
   @js.native
-  sealed trait isSummariesRowsHidden extends js.Object
+  sealed trait isSurfaceInteractionDisabled extends StObject
+  inline def isSurfaceInteractionDisabled: isSurfaceInteractionDisabled = "isSurfaceInteractionDisabled".asInstanceOf[isSurfaceInteractionDisabled]
   
   @js.native
-  sealed trait isSurfaceInteractionDisabled extends js.Object
+  sealed trait isToRenderButtonReset extends StObject
+  inline def isToRenderButtonReset: isToRenderButtonReset = "isToRenderButtonReset".asInstanceOf[isToRenderButtonReset]
   
   @js.native
-  sealed trait isToRenderButtonReset extends js.Object
+  sealed trait isToolbarVisible extends StObject
+  inline def isToolbarVisible: isToolbarVisible = "isToolbarVisible".asInstanceOf[isToolbarVisible]
   
   @js.native
-  sealed trait isToolbarVisible extends js.Object
+  sealed trait isTopModal extends StObject
+  inline def isTopModal: isTopModal = "isTopModal".asInstanceOf[isTopModal]
   
   @js.native
-  sealed trait isTopModal extends js.Object
+  sealed trait isTransitionInEnabled extends StObject
+  inline def isTransitionInEnabled: isTransitionInEnabled = "isTransitionInEnabled".asInstanceOf[isTransitionInEnabled]
   
   @js.native
-  sealed trait isTransitionInEnabled extends js.Object
+  sealed trait isUndoEnabled extends StObject
+  inline def isUndoEnabled: isUndoEnabled = "isUndoEnabled".asInstanceOf[isUndoEnabled]
   
   @js.native
-  sealed trait isUndoEnabled extends js.Object
+  sealed trait isValid extends StObject
+  inline def isValid: isValid = "isValid".asInstanceOf[isValid]
   
   @js.native
-  sealed trait isValid extends js.Object
+  sealed trait isValueSelected extends StObject
+  inline def isValueSelected: isValueSelected = "isValueSelected".asInstanceOf[isValueSelected]
   
   @js.native
-  sealed trait isValueSelected extends js.Object
+  sealed trait isVerticalZoomEnabled extends StObject
+  inline def isVerticalZoomEnabled: isVerticalZoomEnabled = "isVerticalZoomEnabled".asInstanceOf[isVerticalZoomEnabled]
   
   @js.native
-  sealed trait isVerticalZoomEnabled extends js.Object
+  sealed trait isVisible extends StObject
+  inline def isVisible: isVisible = "isVisible".asInstanceOf[isVisible]
   
   @js.native
-  sealed trait isVisible extends js.Object
+  sealed trait isWindowSyncedToVisibleRange extends StObject
+  inline def isWindowSyncedToVisibleRange: isWindowSyncedToVisibleRange = "isWindowSyncedToVisibleRange".asInstanceOf[isWindowSyncedToVisibleRange]
   
   @js.native
-  sealed trait isWindowSyncedToVisibleRange extends js.Object
+  sealed trait item extends StObject
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait itemAdded extends StObject
+  inline def itemAdded: itemAdded = "itemAdded".asInstanceOf[itemAdded]
   
   @js.native
-  sealed trait itemAdded extends js.Object
+  sealed trait itemCount extends StObject
+  inline def itemCount: itemCount = "itemCount".asInstanceOf[itemCount]
   
   @js.native
-  sealed trait itemCount extends js.Object
+  sealed trait itemDisable extends StObject
+  inline def itemDisable: itemDisable = "itemDisable".asInstanceOf[itemDisable]
   
   @js.native
-  sealed trait itemDisable extends js.Object
+  sealed trait itemEnabled extends StObject
+  inline def itemEnabled: itemEnabled = "itemEnabled".asInstanceOf[itemEnabled]
   
   @js.native
-  sealed trait itemEnabled extends js.Object
+  sealed trait itemOption extends StObject
+  inline def itemOption: itemOption = "itemOption".asInstanceOf[itemOption]
   
   @js.native
-  sealed trait itemOption extends js.Object
+  sealed trait itemRemoved extends StObject
+  inline def itemRemoved: itemRemoved = "itemRemoved".asInstanceOf[itemRemoved]
   
   @js.native
-  sealed trait itemRemoved extends js.Object
+  sealed trait itemRendered extends StObject
+  inline def itemRendered: itemRendered = "itemRendered".asInstanceOf[itemRendered]
   
   @js.native
-  sealed trait itemRendered extends js.Object
+  sealed trait itemRendering extends StObject
+  inline def itemRendering: itemRendering = "itemRendering".asInstanceOf[itemRendering]
   
   @js.native
-  sealed trait itemRendering extends js.Object
+  sealed trait itemSelected extends StObject
+  inline def itemSelected: itemSelected = "itemSelected".asInstanceOf[itemSelected]
   
   @js.native
-  sealed trait itemSelected extends js.Object
+  sealed trait itemTemplate extends StObject
+  inline def itemTemplate: itemTemplate = "itemTemplate".asInstanceOf[itemTemplate]
   
   @js.native
-  sealed trait itemTemplate extends js.Object
+  sealed trait items extends StObject
+  inline def items: items = "items".asInstanceOf[items]
   
   @js.native
-  sealed trait items extends js.Object
+  sealed trait itemsDelta extends StObject
+  inline def itemsDelta: itemsDelta = "itemsDelta".asInstanceOf[itemsDelta]
   
   @js.native
-  sealed trait itemsDelta extends js.Object
+  sealed trait itemsFromElement extends StObject
+  inline def itemsFromElement: itemsFromElement = "itemsFromElement".asInstanceOf[itemsFromElement]
   
   @js.native
-  sealed trait itemsFromElement extends js.Object
+  sealed trait itemsFromIndex extends StObject
+  inline def itemsFromIndex: itemsFromIndex = "itemsFromIndex".asInstanceOf[itemsFromIndex]
   
   @js.native
-  sealed trait itemsFromIndex extends js.Object
+  sealed trait itemsFromValue extends StObject
+  inline def itemsFromValue: itemsFromValue = "itemsFromValue".asInstanceOf[itemsFromValue]
   
   @js.native
-  sealed trait itemsFromValue extends js.Object
+  sealed trait itemsRendered extends StObject
+  inline def itemsRendered: itemsRendered = "itemsRendered".asInstanceOf[itemsRendered]
   
   @js.native
-  sealed trait itemsRendered extends js.Object
+  sealed trait itemsRendering extends StObject
+  inline def itemsRendering: itemsRendering = "itemsRendering".asInstanceOf[itemsRendering]
   
   @js.native
-  sealed trait itemsRendering extends js.Object
+  sealed trait itemsSource extends StObject
+  inline def itemsSource: itemsSource = "itemsSource".asInstanceOf[itemsSource]
   
   @js.native
-  sealed trait itemsSource extends js.Object
+  sealed trait jsonpRequest extends StObject
+  inline def jsonpRequest: jsonpRequest = "jsonpRequest".asInstanceOf[jsonpRequest]
   
   @js.native
-  sealed trait jsonpRequest extends js.Object
+  sealed trait keydown extends StObject
+  inline def keydown: keydown = "keydown".asInstanceOf[keydown]
   
   @js.native
-  sealed trait keydown extends js.Object
+  sealed trait keypress extends StObject
+  inline def keypress: keypress = "keypress".asInstanceOf[keypress]
   
   @js.native
-  sealed trait keypress extends js.Object
+  sealed trait keyup extends StObject
+  inline def keyup: keyup = "keyup".asInstanceOf[keyup]
   
   @js.native
-  sealed trait keyup extends js.Object
+  sealed trait labelAddButton extends StObject
+  inline def labelAddButton: labelAddButton = "labelAddButton".asInstanceOf[labelAddButton]
   
   @js.native
-  sealed trait labelAddButton extends js.Object
+  sealed trait labelClearAllButton extends StObject
+  inline def labelClearAllButton: labelClearAllButton = "labelClearAllButton".asInstanceOf[labelClearAllButton]
   
   @js.native
-  sealed trait labelClearAllButton extends js.Object
+  sealed trait labelClick extends StObject
+  inline def labelClick: labelClick = "labelClick".asInstanceOf[labelClick]
   
   @js.native
-  sealed trait labelClick extends js.Object
+  sealed trait labelDragHelperOpacity extends StObject
+  inline def labelDragHelperOpacity: labelDragHelperOpacity = "labelDragHelperOpacity".asInstanceOf[labelDragHelperOpacity]
   
   @js.native
-  sealed trait labelDragHelperOpacity extends js.Object
+  sealed trait labelExtent extends StObject
+  inline def labelExtent: labelExtent = "labelExtent".asInstanceOf[labelExtent]
   
   @js.native
-  sealed trait labelExtent extends js.Object
+  sealed trait labelHideDetails extends StObject
+  inline def labelHideDetails: labelHideDetails = "labelHideDetails".asInstanceOf[labelHideDetails]
   
   @js.native
-  sealed trait labelHideDetails extends js.Object
+  sealed trait labelInnerColor extends StObject
+  inline def labelInnerColor: labelInnerColor = "labelInnerColor".asInstanceOf[labelInnerColor]
   
   @js.native
-  sealed trait labelInnerColor extends js.Object
+  sealed trait labelInterval extends StObject
+  inline def labelInterval: labelInterval = "labelInterval".asInstanceOf[labelInterval]
   
   @js.native
-  sealed trait labelInterval extends js.Object
+  sealed trait labelMemberPath extends StObject
+  inline def labelMemberPath: labelMemberPath = "labelMemberPath".asInstanceOf[labelMemberPath]
   
   @js.native
-  sealed trait labelMemberPath extends js.Object
+  sealed trait labelOuterColor extends StObject
+  inline def labelOuterColor: labelOuterColor = "labelOuterColor".asInstanceOf[labelOuterColor]
   
   @js.native
-  sealed trait labelOuterColor extends js.Object
+  sealed trait labelProgressBarFileNameContinue extends StObject
+  inline def labelProgressBarFileNameContinue: labelProgressBarFileNameContinue = "labelProgressBarFileNameContinue".asInstanceOf[labelProgressBarFileNameContinue]
   
   @js.native
-  sealed trait labelProgressBarFileNameContinue extends js.Object
+  sealed trait labelShowDetails extends StObject
+  inline def labelShowDetails: labelShowDetails = "labelShowDetails".asInstanceOf[labelShowDetails]
   
   @js.native
-  sealed trait labelShowDetails extends js.Object
+  sealed trait labelSummaryProgressBarTemplate extends StObject
+  inline def labelSummaryProgressBarTemplate: labelSummaryProgressBarTemplate = "labelSummaryProgressBarTemplate".asInstanceOf[labelSummaryProgressBarTemplate]
   
   @js.native
-  sealed trait labelSummaryProgressBarTemplate extends js.Object
+  sealed trait labelSummaryProgressButtonCancel extends StObject
+  inline def labelSummaryProgressButtonCancel: labelSummaryProgressButtonCancel = "labelSummaryProgressButtonCancel".asInstanceOf[labelSummaryProgressButtonCancel]
   
   @js.native
-  sealed trait labelSummaryProgressButtonCancel extends js.Object
+  sealed trait labelSummaryProgressButtonContinue extends StObject
+  inline def labelSummaryProgressButtonContinue: labelSummaryProgressButtonContinue = "labelSummaryProgressButtonContinue".asInstanceOf[labelSummaryProgressButtonContinue]
   
   @js.native
-  sealed trait labelSummaryProgressButtonContinue extends js.Object
+  sealed trait labelSummaryProgressButtonDone extends StObject
+  inline def labelSummaryProgressButtonDone: labelSummaryProgressButtonDone = "labelSummaryProgressButtonDone".asInstanceOf[labelSummaryProgressButtonDone]
   
   @js.native
-  sealed trait labelSummaryProgressButtonDone extends js.Object
+  sealed trait labelSummaryTemplate extends StObject
+  inline def labelSummaryTemplate: labelSummaryTemplate = "labelSummaryTemplate".asInstanceOf[labelSummaryTemplate]
   
   @js.native
-  sealed trait labelSummaryTemplate extends js.Object
+  sealed trait labelText extends StObject
+  inline def labelText: labelText = "labelText".asInstanceOf[labelText]
   
   @js.native
-  sealed trait labelText extends js.Object
+  sealed trait labelUploadButton extends StObject
+  inline def labelUploadButton: labelUploadButton = "labelUploadButton".asInstanceOf[labelUploadButton]
   
   @js.native
-  sealed trait labelUploadButton extends js.Object
+  sealed trait labels extends StObject
+  inline def labels: labels = "labels".asInstanceOf[labels]
   
   @js.native
-  sealed trait labels extends js.Object
+  sealed trait labelsPosition extends StObject
+  inline def labelsPosition: labelsPosition = "labelsPosition".asInstanceOf[labelsPosition]
   
   @js.native
-  sealed trait labelsPosition extends js.Object
+  sealed trait labelsPostInitial extends StObject
+  inline def labelsPostInitial: labelsPostInitial = "labelsPostInitial".asInstanceOf[labelsPostInitial]
   
   @js.native
-  sealed trait labelsPostInitial extends js.Object
+  sealed trait labelsPreTerminal extends StObject
+  inline def labelsPreTerminal: labelsPreTerminal = "labelsPreTerminal".asInstanceOf[labelsPreTerminal]
   
   @js.native
-  sealed trait labelsPreTerminal extends js.Object
+  sealed trait language extends StObject
+  inline def language: language = "language".asInstanceOf[language]
   
   @js.native
-  sealed trait language extends js.Object
+  sealed trait lastMarkerBrush extends StObject
+  inline def lastMarkerBrush: lastMarkerBrush = "lastMarkerBrush".asInstanceOf[lastMarkerBrush]
   
   @js.native
-  sealed trait lastMarkerBrush extends js.Object
+  sealed trait lastMarkerSize extends StObject
+  inline def lastMarkerSize: lastMarkerSize = "lastMarkerSize".asInstanceOf[lastMarkerSize]
   
   @js.native
-  sealed trait lastMarkerSize extends js.Object
+  sealed trait lastMarkerVisibility extends StObject
+  inline def lastMarkerVisibility: lastMarkerVisibility = "lastMarkerVisibility".asInstanceOf[lastMarkerVisibility]
   
   @js.native
-  sealed trait lastMarkerVisibility extends js.Object
+  sealed trait lastPageLabelText extends StObject
+  inline def lastPageLabelText: lastPageLabelText = "lastPageLabelText".asInstanceOf[lastPageLabelText]
   
   @js.native
-  sealed trait lastPageLabelText extends js.Object
+  sealed trait lastPageTooltip extends StObject
+  inline def lastPageTooltip: lastPageTooltip = "lastPageTooltip".asInstanceOf[lastPageTooltip]
   
   @js.native
-  sealed trait lastPageTooltip extends js.Object
+  sealed trait layoutManager extends StObject
+  inline def layoutManager: layoutManager = "layoutManager".asInstanceOf[layoutManager]
   
   @js.native
-  sealed trait layoutManager extends js.Object
+  sealed trait layoutMode extends StObject
+  inline def layoutMode: layoutMode = "layoutMode".asInstanceOf[layoutMode]
   
   @js.native
-  sealed trait layoutMode extends js.Object
+  sealed trait layoutRefreshed extends StObject
+  inline def layoutRefreshed: layoutRefreshed = "layoutRefreshed".asInstanceOf[layoutRefreshed]
   
   @js.native
-  sealed trait layoutRefreshed extends js.Object
+  sealed trait layoutRefreshing extends StObject
+  inline def layoutRefreshing: layoutRefreshing = "layoutRefreshing".asInstanceOf[layoutRefreshing]
   
   @js.native
-  sealed trait layoutRefreshing extends js.Object
+  sealed trait leaderLineMargin extends StObject
+  inline def leaderLineMargin: leaderLineMargin = "leaderLineMargin".asInstanceOf[leaderLineMargin]
   
   @js.native
-  sealed trait leaderLineMargin extends js.Object
+  sealed trait leaderLineType extends StObject
+  inline def leaderLineType: leaderLineType = "leaderLineType".asInstanceOf[leaderLineType]
   
   @js.native
-  sealed trait leaderLineType extends js.Object
+  sealed trait leaderLineVisibility extends StObject
+  inline def leaderLineVisibility: leaderLineVisibility = "leaderLineVisibility".asInstanceOf[leaderLineVisibility]
   
   @js.native
-  sealed trait leaderLineVisibility extends js.Object
+  sealed trait leafNodeImageClass extends StObject
+  inline def leafNodeImageClass: leafNodeImageClass = "leafNodeImageClass".asInstanceOf[leafNodeImageClass]
   
   @js.native
-  sealed trait leafNodeImageClass extends js.Object
+  sealed trait leafNodeImageTooltip extends StObject
+  inline def leafNodeImageTooltip: leafNodeImageTooltip = "leafNodeImageTooltip".asInstanceOf[leafNodeImageTooltip]
   
   @js.native
-  sealed trait leafNodeImageTooltip extends js.Object
+  sealed trait leafNodeImageUrl extends StObject
+  inline def leafNodeImageUrl: leafNodeImageUrl = "leafNodeImageUrl".asInstanceOf[leafNodeImageUrl]
   
   @js.native
-  sealed trait leafNodeImageUrl extends js.Object
+  sealed trait leftMargin extends StObject
+  inline def leftMargin: leftMargin = "leftMargin".asInstanceOf[leftMargin]
   
   @js.native
-  sealed trait leftMargin extends js.Object
+  sealed trait legend extends StObject
+  inline def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait legend extends js.Object
+  sealed trait legendItemBadgeTemplate extends StObject
+  inline def legendItemBadgeTemplate: legendItemBadgeTemplate = "legendItemBadgeTemplate".asInstanceOf[legendItemBadgeTemplate]
   
   @js.native
-  sealed trait legendItemBadgeTemplate extends js.Object
+  sealed trait legendItemTemplate extends StObject
+  inline def legendItemTemplate: legendItemTemplate = "legendItemTemplate".asInstanceOf[legendItemTemplate]
   
   @js.native
-  sealed trait legendItemTemplate extends js.Object
+  sealed trait legendLabelMemberPath extends StObject
+  inline def legendLabelMemberPath: legendLabelMemberPath = "legendLabelMemberPath".asInstanceOf[legendLabelMemberPath]
   
   @js.native
-  sealed trait legendLabelMemberPath extends js.Object
+  sealed trait lengthRange extends StObject
+  inline def lengthRange: lengthRange = "lengthRange".asInstanceOf[lengthRange]
   
   @js.native
-  sealed trait lengthRange extends js.Object
+  sealed trait levelSortDirections extends StObject
+  inline def levelSortDirections: levelSortDirections = "levelSortDirections".asInstanceOf[levelSortDirections]
   
   @js.native
-  sealed trait levelSortDirections extends js.Object
+  sealed trait limitSpinToCurrentField extends StObject
+  inline def limitSpinToCurrentField: limitSpinToCurrentField = "limitSpinToCurrentField".asInstanceOf[limitSpinToCurrentField]
   
   @js.native
-  sealed trait limitSpinToCurrentField extends js.Object
+  sealed trait lineThickness extends StObject
+  inline def lineThickness: lineThickness = "lineThickness".asInstanceOf[lineThickness]
   
   @js.native
-  sealed trait lineThickness extends js.Object
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait listItemHoverDuration extends StObject
+  inline def listItemHoverDuration: listItemHoverDuration = "listItemHoverDuration".asInstanceOf[listItemHoverDuration]
   
   @js.native
-  sealed trait listItemHoverDuration extends js.Object
+  sealed trait listItems extends StObject
+  inline def listItems: listItems = "listItems".asInstanceOf[listItems]
   
   @js.native
-  sealed trait listItems extends js.Object
+  sealed trait listScrollTop extends StObject
+  inline def listScrollTop: listScrollTop = "listScrollTop".asInstanceOf[listScrollTop]
   
   @js.native
-  sealed trait listScrollTop extends js.Object
+  sealed trait listWidth extends StObject
+  inline def listWidth: listWidth = "listWidth".asInstanceOf[listWidth]
   
   @js.native
-  sealed trait listWidth extends js.Object
+  sealed trait loadMoreDataButtonText extends StObject
+  inline def loadMoreDataButtonText: loadMoreDataButtonText = "loadMoreDataButtonText".asInstanceOf[loadMoreDataButtonText]
   
   @js.native
-  sealed trait loadMoreDataButtonText extends js.Object
+  sealed trait loadOnDemand extends StObject
+  inline def loadOnDemand: loadOnDemand = "loadOnDemand".asInstanceOf[loadOnDemand]
   
   @js.native
-  sealed trait loadOnDemand extends js.Object
+  sealed trait loadOnDemandSettings extends StObject
+  inline def loadOnDemandSettings: loadOnDemandSettings = "loadOnDemandSettings".asInstanceOf[loadOnDemandSettings]
   
   @js.native
-  sealed trait loadOnDemandSettings extends js.Object
+  sealed trait loadTrigger extends StObject
+  inline def loadTrigger: loadTrigger = "loadTrigger".asInstanceOf[loadTrigger]
   
   @js.native
-  sealed trait loadTrigger extends js.Object
+  sealed trait localSchemaTransform extends StObject
+  inline def localSchemaTransform: localSchemaTransform = "localSchemaTransform".asInstanceOf[localSchemaTransform]
   
   @js.native
-  sealed trait localSchemaTransform extends js.Object
+  sealed trait locale extends StObject
+  inline def locale: locale = "locale".asInstanceOf[locale]
   
   @js.native
-  sealed trait locale extends js.Object
+  sealed trait loop extends StObject
+  inline def loop: loop = "loop".asInstanceOf[loop]
   
   @js.native
-  sealed trait loop extends js.Object
+  sealed trait lowMarkerBrush extends StObject
+  inline def lowMarkerBrush: lowMarkerBrush = "lowMarkerBrush".asInstanceOf[lowMarkerBrush]
   
   @js.native
-  sealed trait lowMarkerBrush extends js.Object
+  sealed trait lowMarkerSize extends StObject
+  inline def lowMarkerSize: lowMarkerSize = "lowMarkerSize".asInstanceOf[lowMarkerSize]
   
   @js.native
-  sealed trait lowMarkerSize extends js.Object
+  sealed trait lowMarkerVisibility extends StObject
+  inline def lowMarkerVisibility: lowMarkerVisibility = "lowMarkerVisibility".asInstanceOf[lowMarkerVisibility]
   
   @js.native
-  sealed trait lowMarkerVisibility extends js.Object
+  sealed trait lowerCalloutBrush extends StObject
+  inline def lowerCalloutBrush: lowerCalloutBrush = "lowerCalloutBrush".asInstanceOf[lowerCalloutBrush]
   
   @js.native
-  sealed trait lowerCalloutBrush extends js.Object
+  sealed trait lowerCalloutOutline extends StObject
+  inline def lowerCalloutOutline: lowerCalloutOutline = "lowerCalloutOutline".asInstanceOf[lowerCalloutOutline]
   
   @js.native
-  sealed trait lowerCalloutOutline extends js.Object
+  sealed trait lowerCalloutStrokeThickness extends StObject
+  inline def lowerCalloutStrokeThickness: lowerCalloutStrokeThickness = "lowerCalloutStrokeThickness".asInstanceOf[lowerCalloutStrokeThickness]
   
   @js.native
-  sealed trait lowerCalloutStrokeThickness extends js.Object
+  sealed trait lowerCalloutTextColor extends StObject
+  inline def lowerCalloutTextColor: lowerCalloutTextColor = "lowerCalloutTextColor".asInstanceOf[lowerCalloutTextColor]
   
   @js.native
-  sealed trait lowerCalloutTextColor extends js.Object
+  sealed trait lowerShadeBrush extends StObject
+  inline def lowerShadeBrush: lowerShadeBrush = "lowerShadeBrush".asInstanceOf[lowerShadeBrush]
   
   @js.native
-  sealed trait lowerShadeBrush extends js.Object
+  sealed trait lowerShadeOutline extends StObject
+  inline def lowerShadeOutline: lowerShadeOutline = "lowerShadeOutline".asInstanceOf[lowerShadeOutline]
   
   @js.native
-  sealed trait lowerShadeOutline extends js.Object
+  sealed trait lowerShadeStrokeThickness extends StObject
+  inline def lowerShadeStrokeThickness: lowerShadeStrokeThickness = "lowerShadeStrokeThickness".asInstanceOf[lowerShadeStrokeThickness]
   
   @js.native
-  sealed trait lowerShadeStrokeThickness extends js.Object
+  sealed trait lowerThumbBrush extends StObject
+  inline def lowerThumbBrush: lowerThumbBrush = "lowerThumbBrush".asInstanceOf[lowerThumbBrush]
   
   @js.native
-  sealed trait lowerThumbBrush extends js.Object
+  sealed trait lowerThumbHeight extends StObject
+  inline def lowerThumbHeight: lowerThumbHeight = "lowerThumbHeight".asInstanceOf[lowerThumbHeight]
   
   @js.native
-  sealed trait lowerThumbHeight extends js.Object
+  sealed trait lowerThumbOutline extends StObject
+  inline def lowerThumbOutline: lowerThumbOutline = "lowerThumbOutline".asInstanceOf[lowerThumbOutline]
   
   @js.native
-  sealed trait lowerThumbOutline extends js.Object
+  sealed trait lowerThumbRidgesBrush extends StObject
+  inline def lowerThumbRidgesBrush: lowerThumbRidgesBrush = "lowerThumbRidgesBrush".asInstanceOf[lowerThumbRidgesBrush]
   
   @js.native
-  sealed trait lowerThumbRidgesBrush extends js.Object
+  sealed trait lowerThumbStrokeThickness extends StObject
+  inline def lowerThumbStrokeThickness: lowerThumbStrokeThickness = "lowerThumbStrokeThickness".asInstanceOf[lowerThumbStrokeThickness]
   
   @js.native
-  sealed trait lowerThumbStrokeThickness extends js.Object
+  sealed trait lowerThumbWidth extends StObject
+  inline def lowerThumbWidth: lowerThumbWidth = "lowerThumbWidth".asInstanceOf[lowerThumbWidth]
   
   @js.native
-  sealed trait lowerThumbWidth extends js.Object
+  sealed trait mainElement extends StObject
+  inline def mainElement: mainElement = "mainElement".asInstanceOf[mainElement]
   
   @js.native
-  sealed trait mainElement extends js.Object
+  sealed trait marginLeft extends StObject
+  inline def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
   
   @js.native
-  sealed trait marginLeft extends js.Object
+  sealed trait marginTop extends StObject
+  inline def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
   
   @js.native
-  sealed trait marginTop extends js.Object
+  sealed trait markerBrush extends StObject
+  inline def markerBrush: markerBrush = "markerBrush".asInstanceOf[markerBrush]
   
   @js.native
-  sealed trait markerBrush extends js.Object
+  sealed trait markerBrushes extends StObject
+  inline def markerBrushes: markerBrushes = "markerBrushes".asInstanceOf[markerBrushes]
   
   @js.native
-  sealed trait markerBrushes extends js.Object
+  sealed trait markerCollision extends StObject
+  inline def markerCollision: markerCollision = "markerCollision".asInstanceOf[markerCollision]
   
   @js.native
-  sealed trait markerCollision extends js.Object
+  sealed trait markerCollisionAvoidance extends StObject
+  inline def markerCollisionAvoidance: markerCollisionAvoidance = "markerCollisionAvoidance".asInstanceOf[markerCollisionAvoidance]
   
   @js.native
-  sealed trait markerCollisionAvoidance extends js.Object
+  sealed trait markerMaxCount extends StObject
+  inline def markerMaxCount: markerMaxCount = "markerMaxCount".asInstanceOf[markerMaxCount]
   
   @js.native
-  sealed trait markerMaxCount extends js.Object
+  sealed trait markerOutlines extends StObject
+  inline def markerOutlines: markerOutlines = "markerOutlines".asInstanceOf[markerOutlines]
   
   @js.native
-  sealed trait markerOutlines extends js.Object
+  sealed trait markerSize extends StObject
+  inline def markerSize: markerSize = "markerSize".asInstanceOf[markerSize]
   
   @js.native
-  sealed trait markerSize extends js.Object
+  sealed trait markerTypes extends StObject
+  inline def markerTypes: markerTypes = "markerTypes".asInstanceOf[markerTypes]
   
   @js.native
-  sealed trait markerTypes extends js.Object
+  sealed trait markerVisibility extends StObject
+  inline def markerVisibility: markerVisibility = "markerVisibility".asInstanceOf[markerVisibility]
   
   @js.native
-  sealed trait markerVisibility extends js.Object
+  sealed trait matchFiltering extends StObject
+  inline def matchFiltering: matchFiltering = "matchFiltering".asInstanceOf[matchFiltering]
   
   @js.native
-  sealed trait matchFiltering extends js.Object
+  sealed trait max extends StObject
+  inline def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait maxDataBindDepth extends StObject
+  inline def maxDataBindDepth: maxDataBindDepth = "maxDataBindDepth".asInstanceOf[maxDataBindDepth]
   
   @js.native
-  sealed trait maxDataBindDepth extends js.Object
+  sealed trait maxDecimals extends StObject
+  inline def maxDecimals: maxDecimals = "maxDecimals".asInstanceOf[maxDecimals]
   
   @js.native
-  sealed trait maxDecimals extends js.Object
+  sealed trait maxFileSize extends StObject
+  inline def maxFileSize: maxFileSize = "maxFileSize".asInstanceOf[maxFileSize]
   
   @js.native
-  sealed trait maxFileSize extends js.Object
+  sealed trait maxHeight extends StObject
+  inline def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
   
   @js.native
-  sealed trait maxHeight extends js.Object
+  sealed trait maxLength extends StObject
+  inline def maxLength: maxLength = "maxLength".asInstanceOf[maxLength]
   
   @js.native
-  sealed trait maxLength extends js.Object
+  sealed trait maxRecCount extends StObject
+  inline def maxRecCount: maxRecCount = "maxRecCount".asInstanceOf[maxRecCount]
   
   @js.native
-  sealed trait maxRecCount extends js.Object
+  sealed trait maxSimultaneousFilesUploads extends StObject
+  inline def maxSimultaneousFilesUploads: maxSimultaneousFilesUploads = "maxSimultaneousFilesUploads".asInstanceOf[maxSimultaneousFilesUploads]
   
   @js.native
-  sealed trait maxSimultaneousFilesUploads extends js.Object
+  sealed trait maxUploadedFiles extends StObject
+  inline def maxUploadedFiles: maxUploadedFiles = "maxUploadedFiles".asInstanceOf[maxUploadedFiles]
   
   @js.native
-  sealed trait maxUploadedFiles extends js.Object
+  sealed trait maxValue extends StObject
+  inline def maxValue: maxValue = "maxValue".asInstanceOf[maxValue]
   
   @js.native
-  sealed trait maxValue extends js.Object
+  sealed trait maxWidth extends StObject
+  inline def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
   
   @js.native
-  sealed trait maxWidth extends js.Object
+  sealed trait maxZoomWidth extends StObject
+  inline def maxZoomWidth: maxZoomWidth = "maxZoomWidth".asInstanceOf[maxZoomWidth]
   
   @js.native
-  sealed trait maxZoomWidth extends js.Object
+  sealed trait maximize extends StObject
+  inline def maximize: maximize = "maximize".asInstanceOf[maximize]
   
   @js.native
-  sealed trait maximize extends js.Object
+  sealed trait maximizeButtonTitle extends StObject
+  inline def maximizeButtonTitle: maximizeButtonTitle = "maximizeButtonTitle".asInstanceOf[maximizeButtonTitle]
   
   @js.native
-  sealed trait maximizeButtonTitle extends js.Object
+  sealed trait maximizedState extends StObject
+  inline def maximizedState: maximizedState = "maximizedState".asInstanceOf[maximizedState]
   
   @js.native
-  sealed trait maximizedState extends js.Object
+  sealed trait maximizedTile extends StObject
+  inline def maximizedTile: maximizedTile = "maximizedTile".asInstanceOf[maximizedTile]
   
   @js.native
-  sealed trait maximizedTile extends js.Object
+  sealed trait maximizedTileIndex extends StObject
+  inline def maximizedTileIndex: maximizedTileIndex = "maximizedTileIndex".asInstanceOf[maximizedTileIndex]
   
   @js.native
-  sealed trait maximizedTileIndex extends js.Object
+  sealed trait maximumValue extends StObject
+  inline def maximumValue: maximumValue = "maximumValue".asInstanceOf[maximumValue]
   
   @js.native
-  sealed trait maximumValue extends js.Object
+  sealed trait menuBackground extends StObject
+  inline def menuBackground: menuBackground = "menuBackground".asInstanceOf[menuBackground]
   
   @js.native
-  sealed trait menuBackground extends js.Object
+  sealed trait menuItemOpenCloseAnimationDuration extends StObject
+  inline def menuItemOpenCloseAnimationDuration: menuItemOpenCloseAnimationDuration = "menuItemOpenCloseAnimationDuration".asInstanceOf[menuItemOpenCloseAnimationDuration]
   
   @js.native
-  sealed trait menuItemOpenCloseAnimationDuration extends js.Object
+  sealed trait menuItemOpenCloseAnimationEasingFunction extends StObject
+  inline def menuItemOpenCloseAnimationEasingFunction: menuItemOpenCloseAnimationEasingFunction = "menuItemOpenCloseAnimationEasingFunction".asInstanceOf[menuItemOpenCloseAnimationEasingFunction]
   
   @js.native
-  sealed trait menuItemOpenCloseAnimationEasingFunction extends js.Object
+  sealed trait menuOpenCloseAnimationDuration extends StObject
+  inline def menuOpenCloseAnimationDuration: menuOpenCloseAnimationDuration = "menuOpenCloseAnimationDuration".asInstanceOf[menuOpenCloseAnimationDuration]
   
   @js.native
-  sealed trait menuOpenCloseAnimationDuration extends js.Object
+  sealed trait menuOpenCloseAnimationEasingFunction extends StObject
+  inline def menuOpenCloseAnimationEasingFunction: menuOpenCloseAnimationEasingFunction = "menuOpenCloseAnimationEasingFunction".asInstanceOf[menuOpenCloseAnimationEasingFunction]
   
   @js.native
-  sealed trait menuOpenCloseAnimationEasingFunction extends js.Object
+  sealed trait menuToggling extends StObject
+  inline def menuToggling: menuToggling = "menuToggling".asInstanceOf[menuToggling]
   
   @js.native
-  sealed trait menuToggling extends js.Object
+  sealed trait mergeColumn extends StObject
+  inline def mergeColumn: mergeColumn = "mergeColumn".asInstanceOf[mergeColumn]
   
   @js.native
-  sealed trait mergeColumn extends js.Object
+  sealed trait mergeOn extends StObject
+  inline def mergeOn: mergeOn = "mergeOn".asInstanceOf[mergeOn]
   
   @js.native
-  sealed trait mergeOn extends js.Object
+  sealed trait mergeRow extends StObject
+  inline def mergeRow: mergeRow = "mergeRow".asInstanceOf[mergeRow]
   
   @js.native
-  sealed trait mergeRow extends js.Object
+  sealed trait mergeRows extends StObject
+  inline def mergeRows: mergeRows = "mergeRows".asInstanceOf[mergeRows]
   
   @js.native
-  sealed trait mergeRows extends js.Object
+  sealed trait mergeStrategy extends StObject
+  inline def mergeStrategy: mergeStrategy = "mergeStrategy".asInstanceOf[mergeStrategy]
   
   @js.native
-  sealed trait mergeStrategy extends js.Object
+  sealed trait mergeType extends StObject
+  inline def mergeType: mergeType = "mergeType".asInstanceOf[mergeType]
   
   @js.native
-  sealed trait mergeType extends js.Object
+  sealed trait mergeUnboundColumns extends StObject
+  inline def mergeUnboundColumns: mergeUnboundColumns = "mergeUnboundColumns".asInstanceOf[mergeUnboundColumns]
   
   @js.native
-  sealed trait mergeUnboundColumns extends js.Object
+  sealed trait messageTarget extends StObject
+  inline def messageTarget: messageTarget = "messageTarget".asInstanceOf[messageTarget]
   
   @js.native
-  sealed trait messageTarget extends js.Object
+  sealed trait metadataDropped extends StObject
+  inline def metadataDropped: metadataDropped = "metadataDropped".asInstanceOf[metadataDropped]
   
   @js.native
-  sealed trait metadataDropped extends js.Object
+  sealed trait metadataDropping extends StObject
+  inline def metadataDropping: metadataDropping = "metadataDropping".asInstanceOf[metadataDropping]
   
   @js.native
-  sealed trait metadataDropping extends js.Object
+  sealed trait metadataRemoved extends StObject
+  inline def metadataRemoved: metadataRemoved = "metadataRemoved".asInstanceOf[metadataRemoved]
   
   @js.native
-  sealed trait metadataRemoved extends js.Object
+  sealed trait metadataRemoving extends StObject
+  inline def metadataRemoving: metadataRemoving = "metadataRemoving".asInstanceOf[metadataRemoving]
   
   @js.native
-  sealed trait metadataRemoving extends js.Object
+  sealed trait min extends StObject
+  inline def min: min = "min".asInstanceOf[min]
   
   @js.native
-  sealed trait min extends js.Object
+  sealed trait minDecimals extends StObject
+  inline def minDecimals: minDecimals = "minDecimals".asInstanceOf[minDecimals]
   
   @js.native
-  sealed trait minDecimals extends js.Object
+  sealed trait minHeight extends StObject
+  inline def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
   
   @js.native
-  sealed trait minHeight extends js.Object
+  sealed trait minThumbSize extends StObject
+  inline def minThumbSize: minThumbSize = "minThumbSize".asInstanceOf[minThumbSize]
   
   @js.native
-  sealed trait minThumbSize extends js.Object
+  sealed trait minValue extends StObject
+  inline def minValue: minValue = "minValue".asInstanceOf[minValue]
   
   @js.native
-  sealed trait minValue extends js.Object
+  sealed trait minWedgeCount extends StObject
+  inline def minWedgeCount: minWedgeCount = "minWedgeCount".asInstanceOf[minWedgeCount]
   
   @js.native
-  sealed trait minWedgeCount extends js.Object
+  sealed trait minWidth extends StObject
+  inline def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
   
   @js.native
-  sealed trait minWidth extends js.Object
+  sealed trait minZoomWidth extends StObject
+  inline def minZoomWidth: minZoomWidth = "minZoomWidth".asInstanceOf[minZoomWidth]
   
   @js.native
-  sealed trait minZoomWidth extends js.Object
+  sealed trait minimalVisibleAreaWidth extends StObject
+  inline def minimalVisibleAreaWidth: minimalVisibleAreaWidth = "minimalVisibleAreaWidth".asInstanceOf[minimalVisibleAreaWidth]
   
   @js.native
-  sealed trait minimalVisibleAreaWidth extends js.Object
+  sealed trait minimize extends StObject
+  inline def minimize: minimize = "minimize".asInstanceOf[minimize]
   
   @js.native
-  sealed trait minimize extends js.Object
+  sealed trait minimizeButtonTitle extends StObject
+  inline def minimizeButtonTitle: minimizeButtonTitle = "minimizeButtonTitle".asInstanceOf[minimizeButtonTitle]
   
   @js.native
-  sealed trait minimizeButtonTitle extends js.Object
+  sealed trait minimizedState extends StObject
+  inline def minimizedState: minimizedState = "minimizedState".asInstanceOf[minimizedState]
   
   @js.native
-  sealed trait minimizedState extends js.Object
+  sealed trait minimizedTiles extends StObject
+  inline def minimizedTiles: minimizedTiles = "minimizedTiles".asInstanceOf[minimizedTiles]
   
   @js.native
-  sealed trait minimizedTiles extends js.Object
+  sealed trait minimumValue extends StObject
+  inline def minimumValue: minimumValue = "minimumValue".asInstanceOf[minimumValue]
   
   @js.native
-  sealed trait minimumValue extends js.Object
+  sealed trait minorTickBrush extends StObject
+  inline def minorTickBrush: minorTickBrush = "minorTickBrush".asInstanceOf[minorTickBrush]
   
   @js.native
-  sealed trait minorTickBrush extends js.Object
+  sealed trait minorTickCount extends StObject
+  inline def minorTickCount: minorTickCount = "minorTickCount".asInstanceOf[minorTickCount]
   
   @js.native
-  sealed trait minorTickCount extends js.Object
+  sealed trait minorTickEndExtent extends StObject
+  inline def minorTickEndExtent: minorTickEndExtent = "minorTickEndExtent".asInstanceOf[minorTickEndExtent]
   
   @js.native
-  sealed trait minorTickEndExtent extends js.Object
+  sealed trait minorTickStartExtent extends StObject
+  inline def minorTickStartExtent: minorTickStartExtent = "minorTickStartExtent".asInstanceOf[minorTickStartExtent]
   
   @js.native
-  sealed trait minorTickStartExtent extends js.Object
+  sealed trait minorTickStrokeThickness extends StObject
+  inline def minorTickStrokeThickness: minorTickStrokeThickness = "minorTickStrokeThickness".asInstanceOf[minorTickStrokeThickness]
   
   @js.native
-  sealed trait minorTickStrokeThickness extends js.Object
+  sealed trait modal extends StObject
+  inline def modal: modal = "modal".asInstanceOf[modal]
   
   @js.native
-  sealed trait modal extends js.Object
+  sealed trait modalDialogAnimationDuration extends StObject
+  inline def modalDialogAnimationDuration: modalDialogAnimationDuration = "modalDialogAnimationDuration".asInstanceOf[modalDialogAnimationDuration]
   
   @js.native
-  sealed trait modalDialogAnimationDuration extends js.Object
+  sealed trait modalDialogButtonApplyClick extends StObject
+  inline def modalDialogButtonApplyClick: modalDialogButtonApplyClick = "modalDialogButtonApplyClick".asInstanceOf[modalDialogButtonApplyClick]
   
   @js.native
-  sealed trait modalDialogButtonApplyClick extends js.Object
+  sealed trait modalDialogButtonApplyText extends StObject
+  inline def modalDialogButtonApplyText: modalDialogButtonApplyText = "modalDialogButtonApplyText".asInstanceOf[modalDialogButtonApplyText]
   
   @js.native
-  sealed trait modalDialogButtonApplyText extends js.Object
+  sealed trait modalDialogButtonCancelText extends StObject
+  inline def modalDialogButtonCancelText: modalDialogButtonCancelText = "modalDialogButtonCancelText".asInstanceOf[modalDialogButtonCancelText]
   
   @js.native
-  sealed trait modalDialogButtonCancelText extends js.Object
+  sealed trait modalDialogButtonResetClick extends StObject
+  inline def modalDialogButtonResetClick: modalDialogButtonResetClick = "modalDialogButtonResetClick".asInstanceOf[modalDialogButtonResetClick]
   
   @js.native
-  sealed trait modalDialogButtonResetClick extends js.Object
+  sealed trait modalDialogButtonUnsortClick extends StObject
+  inline def modalDialogButtonUnsortClick: modalDialogButtonUnsortClick = "modalDialogButtonUnsortClick".asInstanceOf[modalDialogButtonUnsortClick]
   
   @js.native
-  sealed trait modalDialogButtonUnsortClick extends js.Object
+  sealed trait modalDialogCaptionButtonAsc extends StObject
+  inline def modalDialogCaptionButtonAsc: modalDialogCaptionButtonAsc = "modalDialogCaptionButtonAsc".asInstanceOf[modalDialogCaptionButtonAsc]
   
   @js.native
-  sealed trait modalDialogCaptionButtonAsc extends js.Object
+  sealed trait modalDialogCaptionButtonDesc extends StObject
+  inline def modalDialogCaptionButtonDesc: modalDialogCaptionButtonDesc = "modalDialogCaptionButtonDesc".asInstanceOf[modalDialogCaptionButtonDesc]
   
   @js.native
-  sealed trait modalDialogCaptionButtonDesc extends js.Object
+  sealed trait modalDialogCaptionButtonUngroup extends StObject
+  inline def modalDialogCaptionButtonUngroup: modalDialogCaptionButtonUngroup = "modalDialogCaptionButtonUngroup".asInstanceOf[modalDialogCaptionButtonUngroup]
   
   @js.native
-  sealed trait modalDialogCaptionButtonUngroup extends js.Object
+  sealed trait modalDialogCaptionButtonUnsort extends StObject
+  inline def modalDialogCaptionButtonUnsort: modalDialogCaptionButtonUnsort = "modalDialogCaptionButtonUnsort".asInstanceOf[modalDialogCaptionButtonUnsort]
   
   @js.native
-  sealed trait modalDialogCaptionButtonUnsort extends js.Object
+  sealed trait modalDialogCaptionText extends StObject
+  inline def modalDialogCaptionText: modalDialogCaptionText = "modalDialogCaptionText".asInstanceOf[modalDialogCaptionText]
   
   @js.native
-  sealed trait modalDialogCaptionText extends js.Object
+  sealed trait modalDialogClearAllButtonLabel extends StObject
+  inline def modalDialogClearAllButtonLabel: modalDialogClearAllButtonLabel = "modalDialogClearAllButtonLabel".asInstanceOf[modalDialogClearAllButtonLabel]
   
   @js.native
-  sealed trait modalDialogClearAllButtonLabel extends js.Object
+  sealed trait modalDialogClosed extends StObject
+  inline def modalDialogClosed: modalDialogClosed = "modalDialogClosed".asInstanceOf[modalDialogClosed]
   
   @js.native
-  sealed trait modalDialogClosed extends js.Object
+  sealed trait modalDialogClosing extends StObject
+  inline def modalDialogClosing: modalDialogClosing = "modalDialogClosing".asInstanceOf[modalDialogClosing]
   
   @js.native
-  sealed trait modalDialogClosing extends js.Object
+  sealed trait modalDialogContentsRendered extends StObject
+  inline def modalDialogContentsRendered: modalDialogContentsRendered = "modalDialogContentsRendered".asInstanceOf[modalDialogContentsRendered]
   
   @js.native
-  sealed trait modalDialogContentsRendered extends js.Object
+  sealed trait modalDialogContentsRendering extends StObject
+  inline def modalDialogContentsRendering: modalDialogContentsRendering = "modalDialogContentsRendering".asInstanceOf[modalDialogContentsRendering]
   
   @js.native
-  sealed trait modalDialogContentsRendering extends js.Object
+  sealed trait modalDialogDropDownAreaWidth extends StObject
+  inline def modalDialogDropDownAreaWidth: modalDialogDropDownAreaWidth = "modalDialogDropDownAreaWidth".asInstanceOf[modalDialogDropDownAreaWidth]
   
   @js.native
-  sealed trait modalDialogDropDownAreaWidth extends js.Object
+  sealed trait modalDialogDropDownButtonCaption extends StObject
+  inline def modalDialogDropDownButtonCaption: modalDialogDropDownButtonCaption = "modalDialogDropDownButtonCaption".asInstanceOf[modalDialogDropDownButtonCaption]
   
   @js.native
-  sealed trait modalDialogDropDownButtonCaption extends js.Object
+  sealed trait modalDialogDropDownLabel extends StObject
+  inline def modalDialogDropDownLabel: modalDialogDropDownLabel = "modalDialogDropDownLabel".asInstanceOf[modalDialogDropDownLabel]
   
   @js.native
-  sealed trait modalDialogDropDownLabel extends js.Object
+  sealed trait modalDialogDropDownWidth extends StObject
+  inline def modalDialogDropDownWidth: modalDialogDropDownWidth = "modalDialogDropDownWidth".asInstanceOf[modalDialogDropDownWidth]
   
   @js.native
-  sealed trait modalDialogDropDownWidth extends js.Object
+  sealed trait modalDialogGroupByButtonText extends StObject
+  inline def modalDialogGroupByButtonText: modalDialogGroupByButtonText = "modalDialogGroupByButtonText".asInstanceOf[modalDialogGroupByButtonText]
   
   @js.native
-  sealed trait modalDialogGroupByButtonText extends js.Object
+  sealed trait modalDialogGroupByOnClick extends StObject
+  inline def modalDialogGroupByOnClick: modalDialogGroupByOnClick = "modalDialogGroupByOnClick".asInstanceOf[modalDialogGroupByOnClick]
   
   @js.native
-  sealed trait modalDialogGroupByOnClick extends js.Object
+  sealed trait modalDialogGroupColumn extends StObject
+  inline def modalDialogGroupColumn: modalDialogGroupColumn = "modalDialogGroupColumn".asInstanceOf[modalDialogGroupColumn]
   
   @js.native
-  sealed trait modalDialogGroupColumn extends js.Object
+  sealed trait modalDialogGroupingColumn extends StObject
+  inline def modalDialogGroupingColumn: modalDialogGroupingColumn = "modalDialogGroupingColumn".asInstanceOf[modalDialogGroupingColumn]
   
   @js.native
-  sealed trait modalDialogGroupingColumn extends js.Object
+  sealed trait modalDialogHeight extends StObject
+  inline def modalDialogHeight: modalDialogHeight = "modalDialogHeight".asInstanceOf[modalDialogHeight]
   
   @js.native
-  sealed trait modalDialogHeight extends js.Object
+  sealed trait modalDialogMoving extends StObject
+  inline def modalDialogMoving: modalDialogMoving = "modalDialogMoving".asInstanceOf[modalDialogMoving]
   
   @js.native
-  sealed trait modalDialogMoving extends js.Object
+  sealed trait modalDialogOpened extends StObject
+  inline def modalDialogOpened: modalDialogOpened = "modalDialogOpened".asInstanceOf[modalDialogOpened]
   
   @js.native
-  sealed trait modalDialogOpened extends js.Object
+  sealed trait modalDialogOpening extends StObject
+  inline def modalDialogOpening: modalDialogOpening = "modalDialogOpening".asInstanceOf[modalDialogOpening]
   
   @js.native
-  sealed trait modalDialogOpening extends js.Object
+  sealed trait modalDialogResetButtonLabel extends StObject
+  inline def modalDialogResetButtonLabel: modalDialogResetButtonLabel = "modalDialogResetButtonLabel".asInstanceOf[modalDialogResetButtonLabel]
   
   @js.native
-  sealed trait modalDialogResetButtonLabel extends js.Object
+  sealed trait modalDialogRootLevelHierarchicalGrid extends StObject
+  inline def modalDialogRootLevelHierarchicalGrid: modalDialogRootLevelHierarchicalGrid = "modalDialogRootLevelHierarchicalGrid".asInstanceOf[modalDialogRootLevelHierarchicalGrid]
   
   @js.native
-  sealed trait modalDialogRootLevelHierarchicalGrid extends js.Object
+  sealed trait modalDialogSortByButtonText extends StObject
+  inline def modalDialogSortByButtonText: modalDialogSortByButtonText = "modalDialogSortByButtonText".asInstanceOf[modalDialogSortByButtonText]
   
   @js.native
-  sealed trait modalDialogSortByButtonText extends js.Object
+  sealed trait modalDialogSortClick extends StObject
+  inline def modalDialogSortClick: modalDialogSortClick = "modalDialogSortClick".asInstanceOf[modalDialogSortClick]
   
   @js.native
-  sealed trait modalDialogSortClick extends js.Object
+  sealed trait modalDialogSortGroupedColumn extends StObject
+  inline def modalDialogSortGroupedColumn: modalDialogSortGroupedColumn = "modalDialogSortGroupedColumn".asInstanceOf[modalDialogSortGroupedColumn]
   
   @js.native
-  sealed trait modalDialogSortGroupedColumn extends js.Object
+  sealed trait modalDialogSortOnClick extends StObject
+  inline def modalDialogSortOnClick: modalDialogSortOnClick = "modalDialogSortOnClick".asInstanceOf[modalDialogSortOnClick]
   
   @js.native
-  sealed trait modalDialogSortOnClick extends js.Object
+  sealed trait modalDialogSortingChanged extends StObject
+  inline def modalDialogSortingChanged: modalDialogSortingChanged = "modalDialogSortingChanged".asInstanceOf[modalDialogSortingChanged]
   
   @js.native
-  sealed trait modalDialogSortingChanged extends js.Object
+  sealed trait modalDialogUngroupColumn extends StObject
+  inline def modalDialogUngroupColumn: modalDialogUngroupColumn = "modalDialogUngroupColumn".asInstanceOf[modalDialogUngroupColumn]
   
   @js.native
-  sealed trait modalDialogUngroupColumn extends js.Object
+  sealed trait modalDialogUngroupingColumn extends StObject
+  inline def modalDialogUngroupingColumn: modalDialogUngroupingColumn = "modalDialogUngroupingColumn".asInstanceOf[modalDialogUngroupingColumn]
   
   @js.native
-  sealed trait modalDialogUngroupingColumn extends js.Object
+  sealed trait modalDialogWidth extends StObject
+  inline def modalDialogWidth: modalDialogWidth = "modalDialogWidth".asInstanceOf[modalDialogWidth]
   
   @js.native
-  sealed trait modalDialogWidth extends js.Object
+  sealed trait mode extends StObject
+  inline def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait mode extends js.Object
+  sealed trait modifyDOM extends StObject
+  inline def modifyDOM: modifyDOM = "modifyDOM".asInstanceOf[modifyDOM]
   
   @js.native
-  sealed trait modifyDOM extends js.Object
+  sealed trait monthChanged extends StObject
+  inline def monthChanged: monthChanged = "monthChanged".asInstanceOf[monthChanged]
   
   @js.native
-  sealed trait monthChanged extends js.Object
+  sealed trait monthChanging extends StObject
+  inline def monthChanging: monthChanging = "monthChanging".asInstanceOf[monthChanging]
   
   @js.native
-  sealed trait monthChanging extends js.Object
+  sealed trait monthViewSettings extends StObject
+  inline def monthViewSettings: monthViewSettings = "monthViewSettings".asInstanceOf[monthViewSettings]
   
   @js.native
-  sealed trait monthViewSettings extends js.Object
+  sealed trait mouseDragSelect extends StObject
+  inline def mouseDragSelect: mouseDragSelect = "mouseDragSelect".asInstanceOf[mouseDragSelect]
   
   @js.native
-  sealed trait mouseDragSelect extends js.Object
+  sealed trait mouseWrapper extends StObject
+  inline def mouseWrapper: mouseWrapper = "mouseWrapper".asInstanceOf[mouseWrapper]
   
   @js.native
-  sealed trait mouseWrapper extends js.Object
+  sealed trait mousedown extends StObject
+  inline def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousemove extends StObject
+  inline def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mouseout extends StObject
+  inline def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
   
   @js.native
-  sealed trait mouseout extends js.Object
+  sealed trait mouseover extends StObject
+  inline def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait mouseup extends StObject
+  inline def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait moveColumn extends StObject
+  inline def moveColumn: moveColumn = "moveColumn".asInstanceOf[moveColumn]
   
   @js.native
-  sealed trait moveColumn extends js.Object
+  sealed trait moveCursorPoint extends StObject
+  inline def moveCursorPoint: moveCursorPoint = "moveCursorPoint".asInstanceOf[moveCursorPoint]
   
   @js.native
-  sealed trait moveCursorPoint extends js.Object
+  sealed trait moveToTop extends StObject
+  inline def moveToTop: moveToTop = "moveToTop".asInstanceOf[moveToTop]
   
   @js.native
-  sealed trait moveToTop extends js.Object
+  sealed trait moveType extends StObject
+  inline def moveType: moveType = "moveType".asInstanceOf[moveType]
   
   @js.native
-  sealed trait moveType extends js.Object
+  sealed trait movingAcceptanceTolerance extends StObject
+  inline def movingAcceptanceTolerance: movingAcceptanceTolerance = "movingAcceptanceTolerance".asInstanceOf[movingAcceptanceTolerance]
   
   @js.native
-  sealed trait movingAcceptanceTolerance extends js.Object
+  sealed trait movingDialogAnimationDuration extends StObject
+  inline def movingDialogAnimationDuration: movingDialogAnimationDuration = "movingDialogAnimationDuration".asInstanceOf[movingDialogAnimationDuration]
   
   @js.native
-  sealed trait movingDialogAnimationDuration extends js.Object
+  sealed trait movingDialogCaptionButtonAsc extends StObject
+  inline def movingDialogCaptionButtonAsc: movingDialogCaptionButtonAsc = "movingDialogCaptionButtonAsc".asInstanceOf[movingDialogCaptionButtonAsc]
   
   @js.native
-  sealed trait movingDialogCaptionButtonAsc extends js.Object
+  sealed trait movingDialogCaptionButtonDesc extends StObject
+  inline def movingDialogCaptionButtonDesc: movingDialogCaptionButtonDesc = "movingDialogCaptionButtonDesc".asInstanceOf[movingDialogCaptionButtonDesc]
   
   @js.native
-  sealed trait movingDialogCaptionButtonDesc extends js.Object
+  sealed trait movingDialogCaptionText extends StObject
+  inline def movingDialogCaptionText: movingDialogCaptionText = "movingDialogCaptionText".asInstanceOf[movingDialogCaptionText]
   
   @js.native
-  sealed trait movingDialogCaptionText extends js.Object
+  sealed trait movingDialogClosed extends StObject
+  inline def movingDialogClosed: movingDialogClosed = "movingDialogClosed".asInstanceOf[movingDialogClosed]
   
   @js.native
-  sealed trait movingDialogClosed extends js.Object
+  sealed trait movingDialogClosing extends StObject
+  inline def movingDialogClosing: movingDialogClosing = "movingDialogClosing".asInstanceOf[movingDialogClosing]
   
   @js.native
-  sealed trait movingDialogClosing extends js.Object
+  sealed trait movingDialogContentsRendered extends StObject
+  inline def movingDialogContentsRendered: movingDialogContentsRendered = "movingDialogContentsRendered".asInstanceOf[movingDialogContentsRendered]
   
   @js.native
-  sealed trait movingDialogContentsRendered extends js.Object
+  sealed trait movingDialogContentsRendering extends StObject
+  inline def movingDialogContentsRendering: movingDialogContentsRendering = "movingDialogContentsRendering".asInstanceOf[movingDialogContentsRendering]
   
   @js.native
-  sealed trait movingDialogContentsRendering extends js.Object
+  sealed trait movingDialogDisplayText extends StObject
+  inline def movingDialogDisplayText: movingDialogDisplayText = "movingDialogDisplayText".asInstanceOf[movingDialogDisplayText]
   
   @js.native
-  sealed trait movingDialogDisplayText extends js.Object
+  sealed trait movingDialogDragColumnMoved extends StObject
+  inline def movingDialogDragColumnMoved: movingDialogDragColumnMoved = "movingDialogDragColumnMoved".asInstanceOf[movingDialogDragColumnMoved]
   
   @js.native
-  sealed trait movingDialogDragColumnMoved extends js.Object
+  sealed trait movingDialogDragColumnMoving extends StObject
+  inline def movingDialogDragColumnMoving: movingDialogDragColumnMoving = "movingDialogDragColumnMoving".asInstanceOf[movingDialogDragColumnMoving]
   
   @js.native
-  sealed trait movingDialogDragColumnMoving extends js.Object
+  sealed trait movingDialogDragged extends StObject
+  inline def movingDialogDragged: movingDialogDragged = "movingDialogDragged".asInstanceOf[movingDialogDragged]
   
   @js.native
-  sealed trait movingDialogDragged extends js.Object
+  sealed trait movingDialogDropTooltipMarkup extends StObject
+  inline def movingDialogDropTooltipMarkup: movingDialogDropTooltipMarkup = "movingDialogDropTooltipMarkup".asInstanceOf[movingDialogDropTooltipMarkup]
   
   @js.native
-  sealed trait movingDialogDropTooltipMarkup extends js.Object
+  sealed trait movingDialogDropTooltipText extends StObject
+  inline def movingDialogDropTooltipText: movingDialogDropTooltipText = "movingDialogDropTooltipText".asInstanceOf[movingDialogDropTooltipText]
   
   @js.native
-  sealed trait movingDialogDropTooltipText extends js.Object
+  sealed trait movingDialogHeight extends StObject
+  inline def movingDialogHeight: movingDialogHeight = "movingDialogHeight".asInstanceOf[movingDialogHeight]
   
   @js.native
-  sealed trait movingDialogHeight extends js.Object
+  sealed trait movingDialogMoveDownButtonPressed extends StObject
+  inline def movingDialogMoveDownButtonPressed: movingDialogMoveDownButtonPressed = "movingDialogMoveDownButtonPressed".asInstanceOf[movingDialogMoveDownButtonPressed]
   
   @js.native
-  sealed trait movingDialogMoveDownButtonPressed extends js.Object
+  sealed trait movingDialogMoveUpButtonPressed extends StObject
+  inline def movingDialogMoveUpButtonPressed: movingDialogMoveUpButtonPressed = "movingDialogMoveUpButtonPressed".asInstanceOf[movingDialogMoveUpButtonPressed]
   
   @js.native
-  sealed trait movingDialogMoveUpButtonPressed extends js.Object
+  sealed trait movingDialogOpened extends StObject
+  inline def movingDialogOpened: movingDialogOpened = "movingDialogOpened".asInstanceOf[movingDialogOpened]
   
   @js.native
-  sealed trait movingDialogOpened extends js.Object
+  sealed trait movingDialogOpening extends StObject
+  inline def movingDialogOpening: movingDialogOpening = "movingDialogOpening".asInstanceOf[movingDialogOpening]
   
   @js.native
-  sealed trait movingDialogOpening extends js.Object
+  sealed trait movingDialogWidth extends StObject
+  inline def movingDialogWidth: movingDialogWidth = "movingDialogWidth".asInstanceOf[movingDialogWidth]
   
   @js.native
-  sealed trait movingDialogWidth extends js.Object
+  sealed trait movingScrollTolerance extends StObject
+  inline def movingScrollTolerance: movingScrollTolerance = "movingScrollTolerance".asInstanceOf[movingScrollTolerance]
   
   @js.native
-  sealed trait movingScrollTolerance extends js.Object
+  sealed trait movingToolTipMove extends StObject
+  inline def movingToolTipMove: movingToolTipMove = "movingToolTipMove".asInstanceOf[movingToolTipMove]
   
   @js.native
-  sealed trait movingToolTipMove extends js.Object
+  sealed trait multiColumnHiding extends StObject
+  inline def multiColumnHiding: multiColumnHiding = "multiColumnHiding".asInstanceOf[multiColumnHiding]
   
   @js.native
-  sealed trait multiColumnHiding extends js.Object
+  sealed trait multiSelection extends StObject
+  inline def multiSelection: multiSelection = "multiSelection".asInstanceOf[multiSelection]
   
   @js.native
-  sealed trait multiSelection extends js.Object
+  sealed trait multipleCellSelectOnClick extends StObject
+  inline def multipleCellSelectOnClick: multipleCellSelectOnClick = "multipleCellSelectOnClick".asInstanceOf[multipleCellSelectOnClick]
   
   @js.native
-  sealed trait multipleCellSelectOnClick extends js.Object
+  sealed trait multipleFiles extends StObject
+  inline def multipleFiles: multipleFiles = "multipleFiles".asInstanceOf[multipleFiles]
   
   @js.native
-  sealed trait multipleFiles extends js.Object
+  sealed trait multipleSelection extends StObject
+  inline def multipleSelection: multipleSelection = "multipleSelection".asInstanceOf[multipleSelection]
   
   @js.native
-  sealed trait multipleSelection extends js.Object
+  sealed trait muted extends StObject
+  inline def muted: muted = "muted".asInstanceOf[muted]
   
   @js.native
-  sealed trait muted extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait nameBoxWidth extends StObject
+  inline def nameBoxWidth: nameBoxWidth = "nameBoxWidth".asInstanceOf[nameBoxWidth]
   
   @js.native
-  sealed trait nameBoxWidth extends js.Object
+  sealed trait needleBaseFeatureExtent extends StObject
+  inline def needleBaseFeatureExtent: needleBaseFeatureExtent = "needleBaseFeatureExtent".asInstanceOf[needleBaseFeatureExtent]
   
   @js.native
-  sealed trait needleBaseFeatureExtent extends js.Object
+  sealed trait needleBaseFeatureWidthRatio extends StObject
+  inline def needleBaseFeatureWidthRatio: needleBaseFeatureWidthRatio = "needleBaseFeatureWidthRatio".asInstanceOf[needleBaseFeatureWidthRatio]
   
   @js.native
-  sealed trait needleBaseFeatureWidthRatio extends js.Object
+  sealed trait needleBreadth extends StObject
+  inline def needleBreadth: needleBreadth = "needleBreadth".asInstanceOf[needleBreadth]
   
   @js.native
-  sealed trait needleBreadth extends js.Object
+  sealed trait needleBrush extends StObject
+  inline def needleBrush: needleBrush = "needleBrush".asInstanceOf[needleBrush]
   
   @js.native
-  sealed trait needleBrush extends js.Object
+  sealed trait needleContainsPoint extends StObject
+  inline def needleContainsPoint: needleContainsPoint = "needleContainsPoint".asInstanceOf[needleContainsPoint]
   
   @js.native
-  sealed trait needleContainsPoint extends js.Object
+  sealed trait needleEndExtent extends StObject
+  inline def needleEndExtent: needleEndExtent = "needleEndExtent".asInstanceOf[needleEndExtent]
   
   @js.native
-  sealed trait needleEndExtent extends js.Object
+  sealed trait needleEndWidthRatio extends StObject
+  inline def needleEndWidthRatio: needleEndWidthRatio = "needleEndWidthRatio".asInstanceOf[needleEndWidthRatio]
   
   @js.native
-  sealed trait needleEndWidthRatio extends js.Object
+  sealed trait needleInnerBaseWidth extends StObject
+  inline def needleInnerBaseWidth: needleInnerBaseWidth = "needleInnerBaseWidth".asInstanceOf[needleInnerBaseWidth]
   
   @js.native
-  sealed trait needleInnerBaseWidth extends js.Object
+  sealed trait needleInnerExtent extends StObject
+  inline def needleInnerExtent: needleInnerExtent = "needleInnerExtent".asInstanceOf[needleInnerExtent]
   
   @js.native
-  sealed trait needleInnerExtent extends js.Object
+  sealed trait needleInnerPointExtent extends StObject
+  inline def needleInnerPointExtent: needleInnerPointExtent = "needleInnerPointExtent".asInstanceOf[needleInnerPointExtent]
   
   @js.native
-  sealed trait needleInnerPointExtent extends js.Object
+  sealed trait needleInnerPointWidth extends StObject
+  inline def needleInnerPointWidth: needleInnerPointWidth = "needleInnerPointWidth".asInstanceOf[needleInnerPointWidth]
   
   @js.native
-  sealed trait needleInnerPointWidth extends js.Object
+  sealed trait needleName extends StObject
+  inline def needleName: needleName = "needleName".asInstanceOf[needleName]
   
   @js.native
-  sealed trait needleName extends js.Object
+  sealed trait needleOuterBaseWidth extends StObject
+  inline def needleOuterBaseWidth: needleOuterBaseWidth = "needleOuterBaseWidth".asInstanceOf[needleOuterBaseWidth]
   
   @js.native
-  sealed trait needleOuterBaseWidth extends js.Object
+  sealed trait needleOuterExtent extends StObject
+  inline def needleOuterExtent: needleOuterExtent = "needleOuterExtent".asInstanceOf[needleOuterExtent]
   
   @js.native
-  sealed trait needleOuterExtent extends js.Object
+  sealed trait needleOuterPointExtent extends StObject
+  inline def needleOuterPointExtent: needleOuterPointExtent = "needleOuterPointExtent".asInstanceOf[needleOuterPointExtent]
   
   @js.native
-  sealed trait needleOuterPointExtent extends js.Object
+  sealed trait needleOuterPointWidth extends StObject
+  inline def needleOuterPointWidth: needleOuterPointWidth = "needleOuterPointWidth".asInstanceOf[needleOuterPointWidth]
   
   @js.native
-  sealed trait needleOuterPointWidth extends js.Object
+  sealed trait needleOutline extends StObject
+  inline def needleOutline: needleOutline = "needleOutline".asInstanceOf[needleOutline]
   
   @js.native
-  sealed trait needleOutline extends js.Object
+  sealed trait needlePivotBrush extends StObject
+  inline def needlePivotBrush: needlePivotBrush = "needlePivotBrush".asInstanceOf[needlePivotBrush]
   
   @js.native
-  sealed trait needlePivotBrush extends js.Object
+  sealed trait needlePivotInnerWidthRatio extends StObject
+  inline def needlePivotInnerWidthRatio: needlePivotInnerWidthRatio = "needlePivotInnerWidthRatio".asInstanceOf[needlePivotInnerWidthRatio]
   
   @js.native
-  sealed trait needlePivotInnerWidthRatio extends js.Object
+  sealed trait needlePivotOutline extends StObject
+  inline def needlePivotOutline: needlePivotOutline = "needlePivotOutline".asInstanceOf[needlePivotOutline]
   
   @js.native
-  sealed trait needlePivotOutline extends js.Object
+  sealed trait needlePivotShape extends StObject
+  inline def needlePivotShape: needlePivotShape = "needlePivotShape".asInstanceOf[needlePivotShape]
   
   @js.native
-  sealed trait needlePivotShape extends js.Object
+  sealed trait needlePivotStrokeThickness extends StObject
+  inline def needlePivotStrokeThickness: needlePivotStrokeThickness = "needlePivotStrokeThickness".asInstanceOf[needlePivotStrokeThickness]
   
   @js.native
-  sealed trait needlePivotStrokeThickness extends js.Object
+  sealed trait needlePivotWidthRatio extends StObject
+  inline def needlePivotWidthRatio: needlePivotWidthRatio = "needlePivotWidthRatio".asInstanceOf[needlePivotWidthRatio]
   
   @js.native
-  sealed trait needlePivotWidthRatio extends js.Object
+  sealed trait needlePointFeatureExtent extends StObject
+  inline def needlePointFeatureExtent: needlePointFeatureExtent = "needlePointFeatureExtent".asInstanceOf[needlePointFeatureExtent]
   
   @js.native
-  sealed trait needlePointFeatureExtent extends js.Object
+  sealed trait needlePointFeatureWidthRatio extends StObject
+  inline def needlePointFeatureWidthRatio: needlePointFeatureWidthRatio = "needlePointFeatureWidthRatio".asInstanceOf[needlePointFeatureWidthRatio]
   
   @js.native
-  sealed trait needlePointFeatureWidthRatio extends js.Object
+  sealed trait needleShape extends StObject
+  inline def needleShape: needleShape = "needleShape".asInstanceOf[needleShape]
   
   @js.native
-  sealed trait needleShape extends js.Object
+  sealed trait needleStartExtent extends StObject
+  inline def needleStartExtent: needleStartExtent = "needleStartExtent".asInstanceOf[needleStartExtent]
   
   @js.native
-  sealed trait needleStartExtent extends js.Object
+  sealed trait needleStartWidthRatio extends StObject
+  inline def needleStartWidthRatio: needleStartWidthRatio = "needleStartWidthRatio".asInstanceOf[needleStartWidthRatio]
   
   @js.native
-  sealed trait needleStartWidthRatio extends js.Object
+  sealed trait needleStrokeThickness extends StObject
+  inline def needleStrokeThickness: needleStrokeThickness = "needleStrokeThickness".asInstanceOf[needleStrokeThickness]
   
   @js.native
-  sealed trait needleStrokeThickness extends js.Object
+  sealed trait needleToolTipTemplate extends StObject
+  inline def needleToolTipTemplate: needleToolTipTemplate = "needleToolTipTemplate".asInstanceOf[needleToolTipTemplate]
   
   @js.native
-  sealed trait needleToolTipTemplate extends js.Object
+  sealed trait negativeBrush extends StObject
+  inline def negativeBrush: negativeBrush = "negativeBrush".asInstanceOf[negativeBrush]
   
   @js.native
-  sealed trait negativeBrush extends js.Object
+  sealed trait negativeBrushes extends StObject
+  inline def negativeBrushes: negativeBrushes = "negativeBrushes".asInstanceOf[negativeBrushes]
   
   @js.native
-  sealed trait negativeBrushes extends js.Object
+  sealed trait negativeMarkerBrush extends StObject
+  inline def negativeMarkerBrush: negativeMarkerBrush = "negativeMarkerBrush".asInstanceOf[negativeMarkerBrush]
   
   @js.native
-  sealed trait negativeMarkerBrush extends js.Object
+  sealed trait negativeMarkerSize extends StObject
+  inline def negativeMarkerSize: negativeMarkerSize = "negativeMarkerSize".asInstanceOf[negativeMarkerSize]
   
   @js.native
-  sealed trait negativeMarkerSize extends js.Object
+  sealed trait negativeMarkerVisibility extends StObject
+  inline def negativeMarkerVisibility: negativeMarkerVisibility = "negativeMarkerVisibility".asInstanceOf[negativeMarkerVisibility]
   
   @js.native
-  sealed trait negativeMarkerVisibility extends js.Object
+  sealed trait negativeOutlines extends StObject
+  inline def negativeOutlines: negativeOutlines = "negativeOutlines".asInstanceOf[negativeOutlines]
   
   @js.native
-  sealed trait negativeOutlines extends js.Object
+  sealed trait negativePattern extends StObject
+  inline def negativePattern: negativePattern = "negativePattern".asInstanceOf[negativePattern]
   
   @js.native
-  sealed trait negativePattern extends js.Object
+  sealed trait negativeSign extends StObject
+  inline def negativeSign: negativeSign = "negativeSign".asInstanceOf[negativeSign]
   
   @js.native
-  sealed trait negativeSign extends js.Object
+  sealed trait nextButton extends StObject
+  inline def nextButton: nextButton = "nextButton".asInstanceOf[nextButton]
   
   @js.native
-  sealed trait nextButton extends js.Object
+  sealed trait nextChunk extends StObject
+  inline def nextChunk: nextChunk = "nextChunk".asInstanceOf[nextChunk]
   
   @js.native
-  sealed trait nextChunk extends js.Object
+  sealed trait nextPageLabelText extends StObject
+  inline def nextPageLabelText: nextPageLabelText = "nextPageLabelText".asInstanceOf[nextPageLabelText]
   
   @js.native
-  sealed trait nextPageLabelText extends js.Object
+  sealed trait nextPageTooltip extends StObject
+  inline def nextPageTooltip: nextPageTooltip = "nextPageTooltip".asInstanceOf[nextPageTooltip]
   
   @js.native
-  sealed trait nextPageTooltip extends js.Object
+  sealed trait noMatchFoundText extends StObject
+  inline def noMatchFoundText: noMatchFoundText = "noMatchFoundText".asInstanceOf[noMatchFoundText]
   
   @js.native
-  sealed trait noMatchFoundText extends js.Object
+  sealed trait nodeByIndex extends StObject
+  inline def nodeByIndex: nodeByIndex = "nodeByIndex".asInstanceOf[nodeByIndex]
   
   @js.native
-  sealed trait nodeByIndex extends js.Object
+  sealed trait nodeByPath extends StObject
+  inline def nodeByPath: nodeByPath = "nodeByPath".asInstanceOf[nodeByPath]
   
   @js.native
-  sealed trait nodeByPath extends js.Object
+  sealed trait nodeCheckstateChanged extends StObject
+  inline def nodeCheckstateChanged: nodeCheckstateChanged = "nodeCheckstateChanged".asInstanceOf[nodeCheckstateChanged]
   
   @js.native
-  sealed trait nodeCheckstateChanged extends js.Object
+  sealed trait nodeCheckstateChanging extends StObject
+  inline def nodeCheckstateChanging: nodeCheckstateChanging = "nodeCheckstateChanging".asInstanceOf[nodeCheckstateChanging]
   
   @js.native
-  sealed trait nodeCheckstateChanging extends js.Object
+  sealed trait nodeClick extends StObject
+  inline def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
   
   @js.native
-  sealed trait nodeClick extends js.Object
+  sealed trait nodeCollapsed extends StObject
+  inline def nodeCollapsed: nodeCollapsed = "nodeCollapsed".asInstanceOf[nodeCollapsed]
   
   @js.native
-  sealed trait nodeCollapsed extends js.Object
+  sealed trait nodeCollapsing extends StObject
+  inline def nodeCollapsing: nodeCollapsing = "nodeCollapsing".asInstanceOf[nodeCollapsing]
   
   @js.native
-  sealed trait nodeCollapsing extends js.Object
+  sealed trait nodeDataFor extends StObject
+  inline def nodeDataFor: nodeDataFor = "nodeDataFor".asInstanceOf[nodeDataFor]
   
   @js.native
-  sealed trait nodeDataFor extends js.Object
+  sealed trait nodeDoubleClick extends StObject
+  inline def nodeDoubleClick: nodeDoubleClick = "nodeDoubleClick".asInstanceOf[nodeDoubleClick]
   
   @js.native
-  sealed trait nodeDoubleClick extends js.Object
+  sealed trait nodeDropped extends StObject
+  inline def nodeDropped: nodeDropped = "nodeDropped".asInstanceOf[nodeDropped]
   
   @js.native
-  sealed trait nodeDropped extends js.Object
+  sealed trait nodeDropping extends StObject
+  inline def nodeDropping: nodeDropping = "nodeDropping".asInstanceOf[nodeDropping]
   
   @js.native
-  sealed trait nodeDropping extends js.Object
+  sealed trait nodeExpanded extends StObject
+  inline def nodeExpanded: nodeExpanded = "nodeExpanded".asInstanceOf[nodeExpanded]
   
   @js.native
-  sealed trait nodeExpanded extends js.Object
+  sealed trait nodeExpanding extends StObject
+  inline def nodeExpanding: nodeExpanding = "nodeExpanding".asInstanceOf[nodeExpanding]
   
   @js.native
-  sealed trait nodeExpanding extends js.Object
+  sealed trait nodeFromElement extends StObject
+  inline def nodeFromElement: nodeFromElement = "nodeFromElement".asInstanceOf[nodeFromElement]
   
   @js.native
-  sealed trait nodeFromElement extends js.Object
+  sealed trait nodePopulated extends StObject
+  inline def nodePopulated: nodePopulated = "nodePopulated".asInstanceOf[nodePopulated]
   
   @js.native
-  sealed trait nodePopulated extends js.Object
+  sealed trait nodePopulating extends StObject
+  inline def nodePopulating: nodePopulating = "nodePopulating".asInstanceOf[nodePopulating]
   
   @js.native
-  sealed trait nodePopulating extends js.Object
+  sealed trait nodesByValue extends StObject
+  inline def nodesByValue: nodesByValue = "nodesByValue".asInstanceOf[nodesByValue]
   
   @js.native
-  sealed trait nodesByValue extends js.Object
+  sealed trait normalRangeFill extends StObject
+  inline def normalRangeFill: normalRangeFill = "normalRangeFill".asInstanceOf[normalRangeFill]
   
   @js.native
-  sealed trait normalRangeFill extends js.Object
+  sealed trait normalRangeMaximum extends StObject
+  inline def normalRangeMaximum: normalRangeMaximum = "normalRangeMaximum".asInstanceOf[normalRangeMaximum]
   
   @js.native
-  sealed trait normalRangeMaximum extends js.Object
+  sealed trait normalRangeMinimum extends StObject
+  inline def normalRangeMinimum: normalRangeMinimum = "normalRangeMinimum".asInstanceOf[normalRangeMinimum]
   
   @js.native
-  sealed trait normalRangeMinimum extends js.Object
+  sealed trait normalRangeVisibility extends StObject
+  inline def normalRangeVisibility: normalRangeVisibility = "normalRangeVisibility".asInstanceOf[normalRangeVisibility]
   
   @js.native
-  sealed trait normalRangeVisibility extends js.Object
+  sealed trait notificationOptions extends StObject
+  inline def notificationOptions: notificationOptions = "notificationOptions".asInstanceOf[notificationOptions]
   
   @js.native
-  sealed trait notificationOptions extends js.Object
+  sealed trait notifier extends StObject
+  inline def notifier: notifier = "notifier".asInstanceOf[notifier]
   
   @js.native
-  sealed trait notifier extends js.Object
+  sealed trait notify extends StObject
   
   @js.native
-  sealed trait notify extends js.Object
+  sealed trait notifyClearItems extends StObject
+  inline def notifyClearItems: notifyClearItems = "notifyClearItems".asInstanceOf[notifyClearItems]
   
   @js.native
-  sealed trait notifyClearItems extends js.Object
+  sealed trait notifyContainerResized extends StObject
+  inline def notifyContainerResized: notifyContainerResized = "notifyContainerResized".asInstanceOf[notifyContainerResized]
   
   @js.native
-  sealed trait notifyContainerResized extends js.Object
+  sealed trait notifyInsertItem extends StObject
+  inline def notifyInsertItem: notifyInsertItem = "notifyInsertItem".asInstanceOf[notifyInsertItem]
   
   @js.native
-  sealed trait notifyInsertItem extends js.Object
+  sealed trait notifyLevel extends StObject
+  inline def notifyLevel: notifyLevel = "notifyLevel".asInstanceOf[notifyLevel]
   
   @js.native
-  sealed trait notifyLevel extends js.Object
+  sealed trait notifyRemoveItem extends StObject
+  inline def notifyRemoveItem: notifyRemoveItem = "notifyRemoveItem".asInstanceOf[notifyRemoveItem]
   
   @js.native
-  sealed trait notifyRemoveItem extends js.Object
+  sealed trait notifySetItem extends StObject
+  inline def notifySetItem: notifySetItem = "notifySetItem".asInstanceOf[notifySetItem]
   
   @js.native
-  sealed trait notifySetItem extends js.Object
+  sealed trait notifySizeChanged extends StObject
+  inline def notifySizeChanged: notifySizeChanged = "notifySizeChanged".asInstanceOf[notifySizeChanged]
   
   @js.native
-  sealed trait notifySizeChanged extends js.Object
+  sealed trait notifyVisualPropertiesChanged extends StObject
+  inline def notifyVisualPropertiesChanged: notifyVisualPropertiesChanged = "notifyVisualPropertiesChanged".asInstanceOf[notifyVisualPropertiesChanged]
   
   @js.native
-  sealed trait notifyVisualPropertiesChanged extends js.Object
+  sealed trait nullTexts extends StObject
+  inline def nullTexts: nullTexts = "nullTexts".asInstanceOf[nullTexts]
   
   @js.native
-  sealed trait nullTexts extends js.Object
+  sealed trait nullValue extends StObject
+  inline def nullValue: nullValue = "nullValue".asInstanceOf[nullValue]
   
   @js.native
-  sealed trait nullValue extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait odata extends StObject
+  inline def odata: odata = "odata".asInstanceOf[odata]
   
   @js.native
-  sealed trait odata extends js.Object
+  sealed trait onAttachedToUI extends StObject
+  inline def onAttachedToUI: onAttachedToUI = "onAttachedToUI".asInstanceOf[onAttachedToUI]
   
   @js.native
-  sealed trait onError extends js.Object
+  sealed trait onDetachedFromUI extends StObject
+  inline def onDetachedFromUI: onDetachedFromUI = "onDetachedFromUI".asInstanceOf[onDetachedFromUI]
   
   @js.native
-  sealed trait onFormDataSubmit extends js.Object
+  sealed trait onError extends StObject
+  inline def onError: onError = "onError".asInstanceOf[onError]
   
   @js.native
-  sealed trait onXHRLoad extends js.Object
+  sealed trait onFormDataSubmit extends StObject
+  inline def onFormDataSubmit: onFormDataSubmit = "onFormDataSubmit".asInstanceOf[onFormDataSubmit]
   
   @js.native
-  sealed trait onblur extends js.Object
+  sealed trait onXHRLoad extends StObject
+  inline def onXHRLoad: onXHRLoad = "onXHRLoad".asInstanceOf[onXHRLoad]
   
   @js.native
-  sealed trait onchange extends js.Object
+  sealed trait onblur extends StObject
+  inline def onblur: onblur = "onblur".asInstanceOf[onblur]
   
   @js.native
-  sealed trait onlyIcons extends js.Object
+  sealed trait onchange extends StObject
+  inline def onchange: onchange = "onchange".asInstanceOf[onchange]
   
   @js.native
-  sealed trait onsubmit extends js.Object
+  sealed trait onlyIcons extends StObject
+  inline def onlyIcons: onlyIcons = "onlyIcons".asInstanceOf[onlyIcons]
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait onsubmit extends StObject
+  inline def onsubmit: onsubmit = "onsubmit".asInstanceOf[onsubmit]
   
   @js.native
-  sealed trait openAnimation extends js.Object
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait openDropDown extends js.Object
+  sealed trait openAnimation extends StObject
+  inline def openAnimation: openAnimation = "openAnimation".asInstanceOf[openAnimation]
   
   @js.native
-  sealed trait openGroupByDialog extends js.Object
+  sealed trait openDropDown extends StObject
+  inline def openDropDown: openDropDown = "openDropDown".asInstanceOf[openDropDown]
   
   @js.native
-  sealed trait openModalDialog extends js.Object
+  sealed trait openGroupByDialog extends StObject
+  inline def openGroupByDialog: openGroupByDialog = "openGroupByDialog".asInstanceOf[openGroupByDialog]
   
   @js.native
-  sealed trait openMultipleSortingDialog extends js.Object
+  sealed trait openModalDialog extends StObject
+  inline def openModalDialog: openModalDialog = "openModalDialog".asInstanceOf[openModalDialog]
   
   @js.native
-  sealed trait opened extends js.Object
+  sealed trait openMultipleSortingDialog extends StObject
+  inline def openMultipleSortingDialog: openMultipleSortingDialog = "openMultipleSortingDialog".asInstanceOf[openMultipleSortingDialog]
   
   @js.native
-  sealed trait option extends js.Object
+  sealed trait opened extends StObject
+  inline def opened: opened = "opened".asInstanceOf[opened]
   
   @js.native
-  sealed trait optionalIndication extends js.Object
+  sealed trait option extends StObject
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait orientation extends js.Object
+  sealed trait optionalIndication extends StObject
+  inline def optionalIndication: optionalIndication = "optionalIndication".asInstanceOf[optionalIndication]
   
   @js.native
-  sealed trait othersCategoryStyle extends js.Object
+  sealed trait orientation extends StObject
+  inline def orientation: orientation = "orientation".asInstanceOf[orientation]
   
   @js.native
-  sealed trait othersCategoryText extends js.Object
+  sealed trait othersCategoryStyle extends StObject
+  inline def othersCategoryStyle: othersCategoryStyle = "othersCategoryStyle".asInstanceOf[othersCategoryStyle]
   
   @js.native
-  sealed trait othersCategoryThreshold extends js.Object
+  sealed trait othersCategoryText extends StObject
+  inline def othersCategoryText: othersCategoryText = "othersCategoryText".asInstanceOf[othersCategoryText]
   
   @js.native
-  sealed trait othersCategoryType extends js.Object
+  sealed trait othersCategoryThreshold extends StObject
+  inline def othersCategoryThreshold: othersCategoryThreshold = "othersCategoryThreshold".asInstanceOf[othersCategoryThreshold]
   
   @js.native
-  sealed trait outerLabelAlignment extends js.Object
+  sealed trait othersCategoryType extends StObject
+  inline def othersCategoryType: othersCategoryType = "othersCategoryType".asInstanceOf[othersCategoryType]
   
   @js.native
-  sealed trait outerLabelMemberPath extends js.Object
+  sealed trait outerLabelAlignment extends StObject
+  inline def outerLabelAlignment: outerLabelAlignment = "outerLabelAlignment".asInstanceOf[outerLabelAlignment]
   
   @js.native
-  sealed trait outerLabelTextColor extends js.Object
+  sealed trait outerLabelMemberPath extends StObject
+  inline def outerLabelMemberPath: outerLabelMemberPath = "outerLabelMemberPath".asInstanceOf[outerLabelMemberPath]
   
   @js.native
-  sealed trait outerLabelTextStyle extends js.Object
+  sealed trait outerLabelTextColor extends StObject
+  inline def outerLabelTextColor: outerLabelTextColor = "outerLabelTextColor".asInstanceOf[outerLabelTextColor]
   
   @js.native
-  sealed trait outerLabelVisibility extends js.Object
+  sealed trait outerLabelTextStyle extends StObject
+  inline def outerLabelTextStyle: outerLabelTextStyle = "outerLabelTextStyle".asInstanceOf[outerLabelTextStyle]
   
   @js.native
-  sealed trait outerRingFill extends js.Object
+  sealed trait outerLabelVisibility extends StObject
+  inline def outerLabelVisibility: outerLabelVisibility = "outerLabelVisibility".asInstanceOf[outerLabelVisibility]
   
   @js.native
-  sealed trait outerRingStroke extends js.Object
+  sealed trait outerRingFill extends StObject
+  inline def outerRingFill: outerRingFill = "outerRingFill".asInstanceOf[outerRingFill]
   
   @js.native
-  sealed trait outerRingStrokeThickness extends js.Object
+  sealed trait outerRingStroke extends StObject
+  inline def outerRingStroke: outerRingStroke = "outerRingStroke".asInstanceOf[outerRingStroke]
   
   @js.native
-  sealed trait outerRingThickness extends js.Object
+  sealed trait outerRingStrokeThickness extends StObject
+  inline def outerRingStrokeThickness: outerRingStrokeThickness = "outerRingStrokeThickness".asInstanceOf[outerRingStrokeThickness]
   
   @js.native
-  sealed trait outlineThickness extends js.Object
+  sealed trait outerRingThickness extends StObject
+  inline def outerRingThickness: outerRingThickness = "outerRingThickness".asInstanceOf[outerRingThickness]
   
   @js.native
-  sealed trait outlines extends js.Object
+  sealed trait outlineThickness extends StObject
+  inline def outlineThickness: outlineThickness = "outlineThickness".asInstanceOf[outlineThickness]
   
   @js.native
-  sealed trait overlayBrushes extends js.Object
+  sealed trait outlines extends StObject
+  inline def outlines: outlines = "outlines".asInstanceOf[outlines]
   
   @js.native
-  sealed trait overlayOutlines extends js.Object
+  sealed trait overlayBrushes extends StObject
+  inline def overlayBrushes: overlayBrushes = "overlayBrushes".asInstanceOf[overlayBrushes]
   
   @js.native
-  sealed trait overlayPickerTemplate extends js.Object
+  sealed trait overlayOutlines extends StObject
+  inline def overlayOutlines: overlayOutlines = "overlayOutlines".asInstanceOf[overlayOutlines]
   
   @js.native
-  sealed trait overlayThickness extends js.Object
+  sealed trait overlayPickerTemplate extends StObject
+  inline def overlayPickerTemplate: overlayPickerTemplate = "overlayPickerTemplate".asInstanceOf[overlayPickerTemplate]
   
   @js.native
-  sealed trait overlayTypes extends js.Object
+  sealed trait overlayThickness extends StObject
+  inline def overlayThickness: overlayThickness = "overlayThickness".asInstanceOf[overlayThickness]
   
   @js.native
-  sealed trait overviewPlusDetailPaneBackgroundImageUri extends js.Object
+  sealed trait overlayTypes extends StObject
+  inline def overlayTypes: overlayTypes = "overlayTypes".asInstanceOf[overlayTypes]
   
   @js.native
-  sealed trait overviewPlusDetailPaneVisibility extends js.Object
+  sealed trait overviewPlusDetailPaneBackgroundImageUri extends StObject
+  inline def overviewPlusDetailPaneBackgroundImageUri: overviewPlusDetailPaneBackgroundImageUri = "overviewPlusDetailPaneBackgroundImageUri".asInstanceOf[overviewPlusDetailPaneBackgroundImageUri]
   
   @js.native
-  sealed trait padChar extends js.Object
+  sealed trait overviewPlusDetailPaneVisibility extends StObject
+  inline def overviewPlusDetailPaneVisibility: overviewPlusDetailPaneVisibility = "overviewPlusDetailPaneVisibility".asInstanceOf[overviewPlusDetailPaneVisibility]
   
   @js.native
-  sealed trait pageCountLimit extends js.Object
+  sealed trait padChar extends StObject
+  inline def padChar: padChar = "padChar".asInstanceOf[padChar]
   
   @js.native
-  sealed trait pageIndex extends js.Object
+  sealed trait pageCountLimit extends StObject
+  inline def pageCountLimit: pageCountLimit = "pageCountLimit".asInstanceOf[pageCountLimit]
   
   @js.native
-  sealed trait pageIndexChanged extends js.Object
+  sealed trait pageIndex extends StObject
+  inline def pageIndex: pageIndex = "pageIndex".asInstanceOf[pageIndex]
   
   @js.native
-  sealed trait pageIndexChanging extends js.Object
+  sealed trait pageIndexChanged extends StObject
+  inline def pageIndexChanged: pageIndexChanged = "pageIndexChanged".asInstanceOf[pageIndexChanged]
   
   @js.native
-  sealed trait pageIndexUrlKey extends js.Object
+  sealed trait pageIndexChanging extends StObject
+  inline def pageIndexChanging: pageIndexChanging = "pageIndexChanging".asInstanceOf[pageIndexChanging]
   
   @js.native
-  sealed trait pageSize extends js.Object
+  sealed trait pageIndexUrlKey extends StObject
+  inline def pageIndexUrlKey: pageIndexUrlKey = "pageIndexUrlKey".asInstanceOf[pageIndexUrlKey]
   
   @js.native
-  sealed trait pageSizeChanged extends js.Object
+  sealed trait pageSize extends StObject
+  inline def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
   
   @js.native
-  sealed trait pageSizeChanging extends js.Object
+  sealed trait pageSizeChanged extends StObject
+  inline def pageSizeChanged: pageSizeChanged = "pageSizeChanged".asInstanceOf[pageSizeChanged]
   
   @js.native
-  sealed trait pageSizeDropDownLabel extends js.Object
+  sealed trait pageSizeChanging extends StObject
+  inline def pageSizeChanging: pageSizeChanging = "pageSizeChanging".asInstanceOf[pageSizeChanging]
   
   @js.native
-  sealed trait pageSizeDropDownLocation extends js.Object
+  sealed trait pageSizeDropDownLabel extends StObject
+  inline def pageSizeDropDownLabel: pageSizeDropDownLabel = "pageSizeDropDownLabel".asInstanceOf[pageSizeDropDownLabel]
   
   @js.native
-  sealed trait pageSizeDropDownTooltip extends js.Object
+  sealed trait pageSizeDropDownLocation extends StObject
+  inline def pageSizeDropDownLocation: pageSizeDropDownLocation = "pageSizeDropDownLocation".asInstanceOf[pageSizeDropDownLocation]
   
   @js.native
-  sealed trait pageSizeDropDownTrailingLabel extends js.Object
+  sealed trait pageSizeDropDownTooltip extends StObject
+  inline def pageSizeDropDownTooltip: pageSizeDropDownTooltip = "pageSizeDropDownTooltip".asInstanceOf[pageSizeDropDownTooltip]
   
   @js.native
-  sealed trait pageSizeList extends js.Object
+  sealed trait pageSizeDropDownTrailingLabel extends StObject
+  inline def pageSizeDropDownTrailingLabel: pageSizeDropDownTrailingLabel = "pageSizeDropDownTrailingLabel".asInstanceOf[pageSizeDropDownTrailingLabel]
   
   @js.native
-  sealed trait pageSizeUrlKey extends js.Object
+  sealed trait pageSizeList extends StObject
+  inline def pageSizeList: pageSizeList = "pageSizeList".asInstanceOf[pageSizeList]
   
   @js.native
-  sealed trait pageTooltipFormat extends js.Object
+  sealed trait pageSizeUrlKey extends StObject
+  inline def pageSizeUrlKey: pageSizeUrlKey = "pageSizeUrlKey".asInstanceOf[pageSizeUrlKey]
   
   @js.native
-  sealed trait pagerRecordsLabelTemplate extends js.Object
+  sealed trait pageTooltipFormat extends StObject
+  inline def pageTooltipFormat: pageTooltipFormat = "pageTooltipFormat".asInstanceOf[pageTooltipFormat]
   
   @js.native
-  sealed trait pagerRecordsLabelTooltip extends js.Object
+  sealed trait pagerRecordsLabelTemplate extends StObject
+  inline def pagerRecordsLabelTemplate: pagerRecordsLabelTemplate = "pagerRecordsLabelTemplate".asInstanceOf[pagerRecordsLabelTemplate]
   
   @js.native
-  sealed trait pagerRendered extends js.Object
+  sealed trait pagerRecordsLabelTooltip extends StObject
+  inline def pagerRecordsLabelTooltip: pagerRecordsLabelTooltip = "pagerRecordsLabelTooltip".asInstanceOf[pagerRecordsLabelTooltip]
   
   @js.native
-  sealed trait pagerRendering extends js.Object
+  sealed trait pagerRendered extends StObject
+  inline def pagerRendered: pagerRendered = "pagerRendered".asInstanceOf[pagerRendered]
   
   @js.native
-  sealed trait pagingMode extends js.Object
+  sealed trait pagerRendering extends StObject
+  inline def pagerRendering: pagerRendering = "pagerRendering".asInstanceOf[pagerRendering]
   
   @js.native
-  sealed trait panModifier extends js.Object
+  sealed trait pagingMode extends StObject
+  inline def pagingMode: pagingMode = "pagingMode".asInstanceOf[pagingMode]
   
   @js.native
-  sealed trait panTransitionDuration extends js.Object
+  sealed trait panModifier extends StObject
+  inline def panModifier: panModifier = "panModifier".asInstanceOf[panModifier]
   
   @js.native
-  sealed trait panels extends js.Object
+  sealed trait panTransitionDuration extends StObject
+  inline def panTransitionDuration: panTransitionDuration = "panTransitionDuration".asInstanceOf[panTransitionDuration]
   
   @js.native
-  sealed trait parentNode extends js.Object
+  sealed trait panels extends StObject
+  inline def panels: panels = "panels".asInstanceOf[panels]
   
   @js.native
-  sealed trait parentNodeImageClass extends js.Object
+  sealed trait parentNode extends StObject
+  inline def parentNode: parentNode = "parentNode".asInstanceOf[parentNode]
   
   @js.native
-  sealed trait parentNodeImageTooltip extends js.Object
+  sealed trait parentNodeImageClass extends StObject
+  inline def parentNodeImageClass: parentNodeImageClass = "parentNodeImageClass".asInstanceOf[parentNodeImageClass]
   
   @js.native
-  sealed trait parentNodeImageUrl extends js.Object
+  sealed trait parentNodeImageTooltip extends StObject
+  inline def parentNodeImageTooltip: parentNodeImageTooltip = "parentNodeImageTooltip".asInstanceOf[parentNodeImageTooltip]
   
   @js.native
-  sealed trait partiallyCheckNode extends js.Object
+  sealed trait parentNodeImageUrl extends StObject
+  inline def parentNodeImageUrl: parentNodeImageUrl = "parentNodeImageUrl".asInstanceOf[parentNodeImageUrl]
   
   @js.native
-  sealed trait partiallyCheckedNodes extends js.Object
+  sealed trait partiallyCheckNode extends StObject
+  inline def partiallyCheckNode: partiallyCheckNode = "partiallyCheckNode".asInstanceOf[partiallyCheckNode]
   
   @js.native
-  sealed trait partiallyCheckedRows extends js.Object
+  sealed trait partiallyCheckedNodes extends StObject
+  inline def partiallyCheckedNodes: partiallyCheckedNodes = "partiallyCheckedNodes".asInstanceOf[partiallyCheckedNodes]
   
   @js.native
-  sealed trait paste extends js.Object
+  sealed trait partiallyCheckedRows extends StObject
+  inline def partiallyCheckedRows: partiallyCheckedRows = "partiallyCheckedRows".asInstanceOf[partiallyCheckedRows]
   
   @js.native
-  sealed trait pathSeparator extends js.Object
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
-  sealed trait pattern extends js.Object
+  sealed trait pathSeparator extends StObject
+  inline def pathSeparator: pathSeparator = "pathSeparator".asInstanceOf[pathSeparator]
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait pattern extends StObject
+  inline def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait pause extends StObject
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
-  sealed trait pendingTransactions extends js.Object
+  sealed trait paused extends StObject
+  inline def paused: paused = "paused".asInstanceOf[paused]
   
   @js.native
-  sealed trait pentagonMarkerTemplate extends js.Object
+  sealed trait pendingTransactions extends StObject
+  inline def pendingTransactions: pendingTransactions = "pendingTransactions".asInstanceOf[pendingTransactions]
   
   @js.native
-  sealed trait pentagramMarkerTemplate extends js.Object
+  sealed trait pentagonMarkerTemplate extends StObject
+  inline def pentagonMarkerTemplate: pentagonMarkerTemplate = "pentagonMarkerTemplate".asInstanceOf[pentagonMarkerTemplate]
   
   @js.native
-  sealed trait percentSymbol extends js.Object
+  sealed trait pentagramMarkerTemplate extends StObject
+  inline def pentagramMarkerTemplate: pentagramMarkerTemplate = "pentagramMarkerTemplate".asInstanceOf[pentagramMarkerTemplate]
   
   @js.native
-  sealed trait persist extends js.Object
+  sealed trait percentSymbol extends StObject
+  inline def percentSymbol: percentSymbol = "percentSymbol".asInstanceOf[percentSymbol]
   
   @js.native
-  sealed trait pin extends js.Object
+  sealed trait persist extends StObject
+  inline def persist: persist = "persist".asInstanceOf[persist]
   
   @js.native
-  sealed trait pinButtonTitle extends js.Object
+  sealed trait pin extends StObject
+  inline def pin: pin = "pin".asInstanceOf[pin]
   
   @js.native
-  sealed trait pinOnMinimized extends js.Object
+  sealed trait pinButtonTitle extends StObject
+  inline def pinButtonTitle: pinButtonTitle = "pinButtonTitle".asInstanceOf[pinButtonTitle]
   
   @js.native
-  sealed trait pinned extends js.Object
+  sealed trait pinOnMinimized extends StObject
+  inline def pinOnMinimized: pinOnMinimized = "pinOnMinimized".asInstanceOf[pinOnMinimized]
   
   @js.native
-  sealed trait pivotGrid extends js.Object
+  sealed trait pinned extends StObject
+  inline def pinned: pinned = "pinned".asInstanceOf[pinned]
   
   @js.native
-  sealed trait pivotGridHeadersRendered extends js.Object
+  sealed trait pivotGrid extends StObject
+  inline def pivotGrid: pivotGrid = "pivotGrid".asInstanceOf[pivotGrid]
   
   @js.native
-  sealed trait pivotGridOptions extends js.Object
+  sealed trait pivotGridHeadersRendered extends StObject
+  inline def pivotGridHeadersRendered: pivotGridHeadersRendered = "pivotGridHeadersRendered".asInstanceOf[pivotGridHeadersRendered]
   
   @js.native
-  sealed trait pivotGridPanel extends js.Object
+  sealed trait pivotGridOptions extends StObject
+  inline def pivotGridOptions: pivotGridOptions = "pivotGridOptions".asInstanceOf[pivotGridOptions]
   
   @js.native
-  sealed trait pivotGridRendered extends js.Object
+  sealed trait pivotGridPanel extends StObject
+  inline def pivotGridPanel: pivotGridPanel = "pivotGridPanel".asInstanceOf[pivotGridPanel]
   
   @js.native
-  sealed trait pixelScalingRatio extends js.Object
+  sealed trait pivotGridRendered extends StObject
+  inline def pivotGridRendered: pivotGridRendered = "pivotGridRendered".asInstanceOf[pivotGridRendered]
   
   @js.native
-  sealed trait placeHolder extends js.Object
+  sealed trait pixelScalingRatio extends StObject
+  inline def pixelScalingRatio: pixelScalingRatio = "pixelScalingRatio".asInstanceOf[pixelScalingRatio]
   
   @js.native
-  sealed trait play extends js.Object
+  sealed trait placeHolder extends StObject
+  inline def placeHolder: placeHolder = "placeHolder".asInstanceOf[placeHolder]
   
   @js.native
-  sealed trait playCommercial extends js.Object
+  sealed trait play extends StObject
+  inline def play: play = "play".asInstanceOf[play]
   
   @js.native
-  sealed trait playing extends js.Object
+  sealed trait playCommercial extends StObject
+  inline def playCommercial: playCommercial = "playCommercial".asInstanceOf[playCommercial]
   
   @js.native
-  sealed trait plotAreaBackground extends js.Object
+  sealed trait playing extends StObject
+  inline def playing: playing = "playing".asInstanceOf[playing]
   
   @js.native
-  sealed trait pollingInterval extends js.Object
+  sealed trait plotAreaBackground extends StObject
+  inline def plotAreaBackground: plotAreaBackground = "plotAreaBackground".asInstanceOf[plotAreaBackground]
   
   @js.native
-  sealed trait populateDataRowsAttributes extends js.Object
+  sealed trait pollingInterval extends StObject
+  inline def pollingInterval: pollingInterval = "pollingInterval".asInstanceOf[pollingInterval]
   
   @js.native
-  sealed trait populated extends js.Object
+  sealed trait populateDataRowsAttributes extends StObject
+  inline def populateDataRowsAttributes: populateDataRowsAttributes = "populateDataRowsAttributes".asInstanceOf[populateDataRowsAttributes]
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait populated extends StObject
+  inline def populated: populated = "populated".asInstanceOf[populated]
   
   @js.native
-  sealed trait positionDropDown extends js.Object
+  sealed trait position extends StObject
+  inline def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait positivePattern extends js.Object
+  sealed trait positionDropDown extends StObject
+  inline def positionDropDown: positionDropDown = "positionDropDown".asInstanceOf[positionDropDown]
   
   @js.native
-  sealed trait posterUrl extends js.Object
+  sealed trait positivePattern extends StObject
+  inline def positivePattern: positivePattern = "positivePattern".asInstanceOf[positivePattern]
   
   @js.native
-  sealed trait precision extends js.Object
+  sealed trait posterUrl extends StObject
+  inline def posterUrl: posterUrl = "posterUrl".asInstanceOf[posterUrl]
   
   @js.native
-  sealed trait precisionZeroVote extends js.Object
+  sealed trait precision extends StObject
+  inline def precision: precision = "precision".asInstanceOf[precision]
   
   @js.native
-  sealed trait preferHigherResolutionTiles extends js.Object
+  sealed trait precisionZeroVote extends StObject
+  inline def precisionZeroVote: precisionZeroVote = "precisionZeroVote".asInstanceOf[precisionZeroVote]
   
   @js.native
-  sealed trait preload extends js.Object
+  sealed trait preferHigherResolutionTiles extends StObject
+  inline def preferHigherResolutionTiles: preferHigherResolutionTiles = "preferHigherResolutionTiles".asInstanceOf[preferHigherResolutionTiles]
   
   @js.native
-  sealed trait prevPageLabelText extends js.Object
+  sealed trait preload extends StObject
+  inline def preload: preload = "preload".asInstanceOf[preload]
   
   @js.native
-  sealed trait prevPageTooltip extends js.Object
+  sealed trait prevPageLabelText extends StObject
+  inline def prevPageLabelText: prevPageLabelText = "prevPageLabelText".asInstanceOf[prevPageLabelText]
   
   @js.native
-  sealed trait preventMaximizingSelector extends js.Object
+  sealed trait prevPageTooltip extends StObject
+  inline def prevPageTooltip: prevPageTooltip = "prevPageTooltip".asInstanceOf[prevPageTooltip]
   
   @js.native
-  sealed trait preventSubmitOnEnter extends js.Object
+  sealed trait preventMaximizingSelector extends StObject
+  inline def preventMaximizingSelector: preventMaximizingSelector = "preventMaximizingSelector".asInstanceOf[preventMaximizingSelector]
   
   @js.native
-  sealed trait previewRect extends js.Object
+  sealed trait preventSubmitOnEnter extends StObject
+  inline def preventSubmitOnEnter: preventSubmitOnEnter = "preventSubmitOnEnter".asInstanceOf[preventSubmitOnEnter]
   
   @js.native
-  sealed trait previousButton extends js.Object
+  sealed trait previewRect extends StObject
+  inline def previewRect: previewRect = "previewRect".asInstanceOf[previewRect]
   
   @js.native
-  sealed trait primaryKey extends js.Object
+  sealed trait previousButton extends StObject
+  inline def previousButton: previousButton = "previousButton".asInstanceOf[previousButton]
   
   @js.native
-  sealed trait print extends js.Object
+  sealed trait primaryKey extends StObject
+  inline def primaryKey: primaryKey = "primaryKey".asInstanceOf[primaryKey]
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait print extends StObject
+  inline def print: print = "print".asInstanceOf[print]
   
   @js.native
-  sealed trait progressLabelFormat extends js.Object
+  sealed trait progress extends StObject
+  inline def progress: progress = "progress".asInstanceOf[progress]
   
   @js.native
-  sealed trait progressUrl extends js.Object
+  sealed trait progressLabelFormat extends StObject
+  inline def progressLabelFormat: progressLabelFormat = "progressLabelFormat".asInstanceOf[progressLabelFormat]
   
   @js.native
-  sealed trait progressiveLoadStatusChanged extends js.Object
+  sealed trait progressUrl extends StObject
+  inline def progressUrl: progressUrl = "progressUrl".asInstanceOf[progressUrl]
   
   @js.native
-  sealed trait propertiesColumnWidth extends js.Object
+  sealed trait progressiveLoadStatusChanged extends StObject
+  inline def progressiveLoadStatusChanged: progressiveLoadStatusChanged = "progressiveLoadStatusChanged".asInstanceOf[progressiveLoadStatusChanged]
   
   @js.native
-  sealed trait propertyChanged extends js.Object
+  sealed trait propertiesColumnWidth extends StObject
+  inline def propertiesColumnWidth: propertiesColumnWidth = "propertiesColumnWidth".asInstanceOf[propertiesColumnWidth]
   
   @js.native
-  sealed trait provider extends js.Object
+  sealed trait propertyChanged extends StObject
+  inline def propertyChanged: propertyChanged = "propertyChanged".asInstanceOf[propertyChanged]
   
   @js.native
-  sealed trait providerCreated extends js.Object
+  sealed trait provider extends StObject
+  inline def provider: provider = "provider".asInstanceOf[provider]
   
   @js.native
-  sealed trait pyramidMarkerTemplate extends js.Object
+  sealed trait providerCreated extends StObject
+  inline def providerCreated: providerCreated = "providerCreated".asInstanceOf[providerCreated]
   
   @js.native
-  sealed trait queue extends js.Object
+  sealed trait pyramidMarkerTemplate extends StObject
+  inline def pyramidMarkerTemplate: pyramidMarkerTemplate = "pyramidMarkerTemplate".asInstanceOf[pyramidMarkerTemplate]
   
   @js.native
-  sealed trait radiusFactor extends js.Object
+  sealed trait queue extends StObject
+  inline def queue: queue = "queue".asInstanceOf[queue]
   
   @js.native
-  sealed trait radiusMultiplier extends js.Object
+  sealed trait radiusFactor extends StObject
+  inline def radiusFactor: radiusFactor = "radiusFactor".asInstanceOf[radiusFactor]
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait radiusMultiplier extends StObject
+  inline def radiusMultiplier: radiusMultiplier = "radiusMultiplier".asInstanceOf[radiusMultiplier]
   
   @js.native
-  sealed trait rangeBrushes extends js.Object
+  sealed trait range extends StObject
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait rangeInnerExtent extends js.Object
+  sealed trait rangeBrushes extends StObject
+  inline def rangeBrushes: rangeBrushes = "rangeBrushes".asInstanceOf[rangeBrushes]
   
   @js.native
-  sealed trait rangeOuterExtent extends js.Object
+  sealed trait rangeInnerExtent extends StObject
+  inline def rangeInnerExtent: rangeInnerExtent = "rangeInnerExtent".asInstanceOf[rangeInnerExtent]
   
   @js.native
-  sealed trait rangeOutlines extends js.Object
+  sealed trait rangeOuterExtent extends StObject
+  inline def rangeOuterExtent: rangeOuterExtent = "rangeOuterExtent".asInstanceOf[rangeOuterExtent]
   
   @js.native
-  sealed trait rangeSelectorOptions extends js.Object
+  sealed trait rangeOutlines extends StObject
+  inline def rangeOutlines: rangeOutlines = "rangeOutlines".asInstanceOf[rangeOutlines]
   
   @js.native
-  sealed trait rangeSelectorTemplate extends js.Object
+  sealed trait rangeSelectorOptions extends StObject
+  inline def rangeSelectorOptions: rangeSelectorOptions = "rangeSelectorOptions".asInstanceOf[rangeSelectorOptions]
   
   @js.native
-  sealed trait rangeThumbBrush extends js.Object
+  sealed trait rangeSelectorTemplate extends StObject
+  inline def rangeSelectorTemplate: rangeSelectorTemplate = "rangeSelectorTemplate".asInstanceOf[rangeSelectorTemplate]
   
   @js.native
-  sealed trait rangeThumbOutline extends js.Object
+  sealed trait rangeThumbBrush extends StObject
+  inline def rangeThumbBrush: rangeThumbBrush = "rangeThumbBrush".asInstanceOf[rangeThumbBrush]
   
   @js.native
-  sealed trait rangeThumbRidgesBrush extends js.Object
+  sealed trait rangeThumbOutline extends StObject
+  inline def rangeThumbOutline: rangeThumbOutline = "rangeThumbOutline".asInstanceOf[rangeThumbOutline]
   
   @js.native
-  sealed trait rangeThumbStrokeThickness extends js.Object
+  sealed trait rangeThumbRidgesBrush extends StObject
+  inline def rangeThumbRidgesBrush: rangeThumbRidgesBrush = "rangeThumbRidgesBrush".asInstanceOf[rangeThumbRidgesBrush]
   
   @js.native
-  sealed trait rangeToolTipTemplate extends js.Object
+  sealed trait rangeThumbStrokeThickness extends StObject
+  inline def rangeThumbStrokeThickness: rangeThumbStrokeThickness = "rangeThumbStrokeThickness".asInstanceOf[rangeThumbStrokeThickness]
   
   @js.native
-  sealed trait ranges extends js.Object
+  sealed trait rangeToolTipTemplate extends StObject
+  inline def rangeToolTipTemplate: rangeToolTipTemplate = "rangeToolTipTemplate".asInstanceOf[rangeToolTipTemplate]
   
   @js.native
-  sealed trait reactOnContainerWidthChanges extends js.Object
+  sealed trait ranges extends StObject
+  inline def ranges: ranges = "ranges".asInstanceOf[ranges]
   
   @js.native
-  sealed trait readOnly extends js.Object
+  sealed trait reactOnContainerWidthChanges extends StObject
+  inline def reactOnContainerWidthChanges: reactOnContainerWidthChanges = "reactOnContainerWidthChanges".asInstanceOf[reactOnContainerWidthChanges]
   
   @js.native
-  sealed trait rearrangeItems extends js.Object
+  sealed trait readOnly extends StObject
+  inline def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
   
   @js.native
-  sealed trait recordCountKey extends js.Object
+  sealed trait rearrangeItems extends StObject
+  inline def rearrangeItems: rearrangeItems = "rearrangeItems".asInstanceOf[rearrangeItems]
   
   @js.native
-  sealed trait redo extends js.Object
+  sealed trait recordCountKey extends StObject
+  inline def recordCountKey: recordCountKey = "recordCountKey".asInstanceOf[recordCountKey]
   
   @js.native
-  sealed trait reflow extends js.Object
+  sealed trait redo extends StObject
+  inline def redo: redo = "redo".asInstanceOf[redo]
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait reflow extends StObject
+  inline def reflow: reflow = "reflow".asInstanceOf[reflow]
   
   @js.native
-  sealed trait refreshCompleted extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait refreshLayout extends js.Object
+  sealed trait refreshCompleted extends StObject
+  inline def refreshCompleted: refreshCompleted = "refreshCompleted".asInstanceOf[refreshCompleted]
   
   @js.native
-  sealed trait refreshPos extends js.Object
+  sealed trait refreshLayout extends StObject
+  inline def refreshLayout: refreshLayout = "refreshLayout".asInstanceOf[refreshLayout]
   
   @js.native
-  sealed trait refreshValue extends js.Object
+  sealed trait refreshPos extends StObject
+  inline def refreshPos: refreshPos = "refreshPos".asInstanceOf[refreshPos]
   
   @js.native
-  sealed trait regional extends js.Object
+  sealed trait refreshValue extends StObject
+  inline def refreshValue: refreshValue = "refreshValue".asInstanceOf[refreshValue]
   
   @js.native
-  sealed trait registerElements extends js.Object
+  sealed trait regional extends StObject
+  inline def regional: regional = "regional".asInstanceOf[regional]
   
   @js.native
-  sealed trait relatedVideoClick extends js.Object
+  sealed trait registerElements extends StObject
+  inline def registerElements: registerElements = "registerElements".asInstanceOf[registerElements]
   
   @js.native
-  sealed trait relatedVideos extends js.Object
+  sealed trait relatedVideoClick extends StObject
+  inline def relatedVideoClick: relatedVideoClick = "relatedVideoClick".asInstanceOf[relatedVideoClick]
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait relatedVideos extends StObject
+  inline def relatedVideos: relatedVideos = "relatedVideos".asInstanceOf[relatedVideos]
   
   @js.native
-  sealed trait removeAt extends js.Object
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait removeButtonTooltip extends js.Object
+  sealed trait removeAt extends StObject
+  inline def removeAt: removeAt = "removeAt".asInstanceOf[removeAt]
   
   @js.native
-  sealed trait removeCallback extends js.Object
+  sealed trait removeButtonTooltip extends StObject
+  inline def removeButtonTooltip: removeButtonTooltip = "removeButtonTooltip".asInstanceOf[removeButtonTooltip]
   
   @js.native
-  sealed trait removeColumnChooserResetButton extends js.Object
+  sealed trait removeCallback extends StObject
+  inline def removeCallback: removeCallback = "removeCallback".asInstanceOf[removeCallback]
   
   @js.native
-  sealed trait removeDialogClearButton extends js.Object
+  sealed trait removeColumnChooserResetButton extends StObject
+  inline def removeColumnChooserResetButton: removeColumnChooserResetButton = "removeColumnChooserResetButton".asInstanceOf[removeColumnChooserResetButton]
   
   @js.native
-  sealed trait removeField extends js.Object
+  sealed trait removeDialogClearButton extends StObject
+  inline def removeDialogClearButton: removeDialogClearButton = "removeDialogClearButton".asInstanceOf[removeDialogClearButton]
   
   @js.native
-  sealed trait removeItem extends js.Object
+  sealed trait removeField extends StObject
+  inline def removeField: removeField = "removeField".asInstanceOf[removeField]
   
   @js.native
-  sealed trait removeNodesByValue extends js.Object
+  sealed trait removeItem extends StObject
+  inline def removeItem: removeItem = "removeItem".asInstanceOf[removeItem]
   
   @js.native
-  sealed trait removeRange extends js.Object
+  sealed trait removeNodesByValue extends StObject
+  inline def removeNodesByValue: removeNodesByValue = "removeNodesByValue".asInstanceOf[removeNodesByValue]
   
   @js.native
-  sealed trait removeSeries extends js.Object
+  sealed trait removeRange extends StObject
+  inline def removeRange: removeRange = "removeRange".asInstanceOf[removeRange]
   
   @js.native
-  sealed trait renderCheckboxes extends js.Object
+  sealed trait removeSeries extends StObject
+  inline def removeSeries: removeSeries = "removeSeries".asInstanceOf[removeSeries]
   
   @js.native
-  sealed trait renderColumnChooserResetButton extends js.Object
+  sealed trait renderCheckboxes extends StObject
+  inline def renderCheckboxes: renderCheckboxes = "renderCheckboxes".asInstanceOf[renderCheckboxes]
   
   @js.native
-  sealed trait renderContextRowFunc extends js.Object
+  sealed trait renderColumnChooserResetButton extends StObject
+  inline def renderColumnChooserResetButton: renderColumnChooserResetButton = "renderColumnChooserResetButton".asInstanceOf[renderColumnChooserResetButton]
   
   @js.native
-  sealed trait renderExpansionCellFunction extends js.Object
+  sealed trait renderContextRowFunc extends StObject
+  inline def renderContextRowFunc: renderContextRowFunc = "renderContextRowFunc".asInstanceOf[renderContextRowFunc]
   
   @js.native
-  sealed trait renderExpansionIndicatorColumn extends js.Object
+  sealed trait renderExpansionCellFunction extends StObject
+  inline def renderExpansionCellFunction: renderExpansionCellFunction = "renderExpansionCellFunction".asInstanceOf[renderExpansionCellFunction]
   
   @js.native
-  sealed trait renderFC extends js.Object
+  sealed trait renderExpansionIndicatorColumn extends StObject
+  inline def renderExpansionIndicatorColumn: renderExpansionIndicatorColumn = "renderExpansionIndicatorColumn".asInstanceOf[renderExpansionIndicatorColumn]
   
   @js.native
-  sealed trait renderFilterButton extends js.Object
+  sealed trait renderFC extends StObject
+  inline def renderFC: renderFC = "renderFC".asInstanceOf[renderFC]
   
   @js.native
-  sealed trait renderFirstDataCellFunction extends js.Object
+  sealed trait renderFilterButton extends StObject
+  inline def renderFilterButton: renderFilterButton = "renderFilterButton".asInstanceOf[renderFilterButton]
   
   @js.native
-  sealed trait renderFooterButtons extends js.Object
+  sealed trait renderFirstDataCellFunction extends StObject
+  inline def renderFirstDataCellFunction: renderFirstDataCellFunction = "renderFirstDataCellFunction".asInstanceOf[renderFirstDataCellFunction]
   
   @js.native
-  sealed trait renderGroupByModalDialog extends js.Object
+  sealed trait renderFooterButtons extends StObject
+  inline def renderFooterButtons: renderFooterButtons = "renderFooterButtons".asInstanceOf[renderFooterButtons]
   
   @js.native
-  sealed trait renderMultiColumnHeader extends js.Object
+  sealed trait renderGroupByModalDialog extends StObject
+  inline def renderGroupByModalDialog: renderGroupByModalDialog = "renderGroupByModalDialog".asInstanceOf[renderGroupByModalDialog]
   
   @js.native
-  sealed trait renderMultipleSortingDialogContent extends js.Object
+  sealed trait renderMultiColumnHeader extends StObject
+  inline def renderMultiColumnHeader: renderMultiColumnHeader = "renderMultiColumnHeader".asInstanceOf[renderMultiColumnHeader]
   
   @js.native
-  sealed trait renderNewChild extends js.Object
+  sealed trait renderMultipleSortingDialogContent extends StObject
+  inline def renderMultipleSortingDialogContent: renderMultipleSortingDialogContent = "renderMultipleSortingDialogContent".asInstanceOf[renderMultipleSortingDialogContent]
   
   @js.native
-  sealed trait renderNewRow extends js.Object
+  sealed trait renderNewChild extends StObject
+  inline def renderNewChild: renderNewChild = "renderNewChild".asInstanceOf[renderNewChild]
   
   @js.native
-  sealed trait renderSeries extends js.Object
+  sealed trait renderNewRow extends StObject
+  inline def renderNewRow: renderNewRow = "renderNewRow".asInstanceOf[renderNewRow]
   
   @js.native
-  sealed trait renderSummaryCellFunc extends js.Object
+  sealed trait renderSeries extends StObject
+  inline def renderSeries: renderSeries = "renderSeries".asInstanceOf[renderSeries]
   
   @js.native
-  sealed trait rendered extends js.Object
+  sealed trait renderSummaryCellFunc extends StObject
+  inline def renderSummaryCellFunc: renderSummaryCellFunc = "renderSummaryCellFunc".asInstanceOf[renderSummaryCellFunc]
   
   @js.native
-  sealed trait rendering extends js.Object
+  sealed trait rendered extends StObject
+  inline def rendered: rendered = "rendered".asInstanceOf[rendered]
   
   @js.native
-  sealed trait replayTransitionIn extends js.Object
+  sealed trait rendering extends StObject
+  inline def rendering: rendering = "rendering".asInstanceOf[rendering]
   
   @js.native
-  sealed trait requestError extends js.Object
+  sealed trait replayTransitionIn extends StObject
+  inline def replayTransitionIn: replayTransitionIn = "replayTransitionIn".asInstanceOf[replayTransitionIn]
   
   @js.native
-  sealed trait requestType extends js.Object
+  sealed trait requestError extends StObject
+  inline def requestError: requestError = "requestError".asInstanceOf[requestError]
   
   @js.native
-  sealed trait requireSelection extends js.Object
+  sealed trait requestType extends StObject
+  inline def requestType: requestType = "requestType".asInstanceOf[requestType]
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait requireSelection extends StObject
+  inline def requireSelection: requireSelection = "requireSelection".asInstanceOf[requireSelection]
   
   @js.native
-  sealed trait requiredIndication extends js.Object
+  sealed trait required extends StObject
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
-  sealed trait requiresFilteringExpression extends js.Object
+  sealed trait requiredIndication extends StObject
+  inline def requiredIndication: requiredIndication = "requiredIndication".asInstanceOf[requiredIndication]
   
   @js.native
-  sealed trait resetCachedEnhancedInterval extends js.Object
+  sealed trait requiresFilteringExpression extends StObject
+  inline def requiresFilteringExpression: requiresFilteringExpression = "requiresFilteringExpression".asInstanceOf[requiresFilteringExpression]
   
   @js.native
-  sealed trait resetCommercialsShow extends js.Object
+  sealed trait resetCachedEnhancedInterval extends StObject
+  inline def resetCachedEnhancedInterval: resetCachedEnhancedInterval = "resetCachedEnhancedInterval".asInstanceOf[resetCachedEnhancedInterval]
   
   @js.native
-  sealed trait resetHidingColumnChooser extends js.Object
+  sealed trait resetCommercialsShow extends StObject
+  inline def resetCommercialsShow: resetCommercialsShow = "resetCommercialsShow".asInstanceOf[resetCommercialsShow]
   
   @js.native
-  sealed trait resetZoom extends js.Object
+  sealed trait resetHidingColumnChooser extends StObject
+  inline def resetHidingColumnChooser: resetHidingColumnChooser = "resetHidingColumnChooser".asInstanceOf[resetHidingColumnChooser]
   
   @js.native
-  sealed trait resizable extends js.Object
+  sealed trait resetZoom extends StObject
+  inline def resetZoom: resetZoom = "resetZoom".asInstanceOf[resetZoom]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resizable extends StObject
+  inline def resizable: resizable = "resizable".asInstanceOf[resizable]
   
   @js.native
-  sealed trait resizeContainer extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait resizeEnded extends js.Object
+  sealed trait resizeContainer extends StObject
+  inline def resizeContainer: resizeContainer = "resizeContainer".asInstanceOf[resizeContainer]
   
   @js.native
-  sealed trait resizeOtherSplitters extends js.Object
+  sealed trait resizeEnded extends StObject
+  inline def resizeEnded: resizeEnded = "resizeEnded".asInstanceOf[resizeEnded]
   
   @js.native
-  sealed trait resizeStarted extends js.Object
+  sealed trait resizeOtherSplitters extends StObject
+  inline def resizeOtherSplitters: resizeOtherSplitters = "resizeOtherSplitters".asInstanceOf[resizeOtherSplitters]
   
   @js.native
-  sealed trait resizeWorkspace extends js.Object
+  sealed trait resizeStarted extends StObject
+  inline def resizeStarted: resizeStarted = "resizeStarted".asInstanceOf[resizeStarted]
   
   @js.native
-  sealed trait resized extends js.Object
+  sealed trait resizeWorkspace extends StObject
+  inline def resizeWorkspace: resizeWorkspace = "resizeWorkspace".asInstanceOf[resizeWorkspace]
   
   @js.native
-  sealed trait resizing extends js.Object
+  sealed trait resized extends StObject
+  inline def resized: resized = "resized".asInstanceOf[resized]
   
   @js.native
-  sealed trait resolution extends js.Object
+  sealed trait resizing extends StObject
+  inline def resizing: resizing = "resizing".asInstanceOf[resizing]
   
   @js.native
-  sealed trait resolvingAxisValue extends js.Object
+  sealed trait resolution extends StObject
+  inline def resolution: resolution = "resolution".asInstanceOf[resolution]
   
   @js.native
-  sealed trait resources extends js.Object
+  sealed trait resolvingAxisValue extends StObject
+  inline def resolvingAxisValue: resolvingAxisValue = "resolvingAxisValue".asInstanceOf[resolvingAxisValue]
   
   @js.native
-  sealed trait responseContentType extends js.Object
+  sealed trait resources extends StObject
+  inline def resources: resources = "resources".asInstanceOf[resources]
   
   @js.native
-  sealed trait responseDataKey extends js.Object
+  sealed trait responseContentType extends StObject
+  inline def responseContentType: responseContentType = "responseContentType".asInstanceOf[responseContentType]
   
   @js.native
-  sealed trait responseDataType extends js.Object
+  sealed trait responseDataKey extends StObject
+  inline def responseDataKey: responseDataKey = "responseDataKey".asInstanceOf[responseDataKey]
   
   @js.native
-  sealed trait responseTotalRecCountKey extends js.Object
+  sealed trait responseDataType extends StObject
+  inline def responseDataType: responseDataType = "responseDataType".asInstanceOf[responseDataType]
   
   @js.native
-  sealed trait responsiveColumnHidden extends js.Object
+  sealed trait responseTotalRecCountKey extends StObject
+  inline def responseTotalRecCountKey: responseTotalRecCountKey = "responseTotalRecCountKey".asInstanceOf[responseTotalRecCountKey]
   
   @js.native
-  sealed trait responsiveColumnHiding extends js.Object
+  sealed trait responsiveColumnHidden extends StObject
+  inline def responsiveColumnHidden: responsiveColumnHidden = "responsiveColumnHidden".asInstanceOf[responsiveColumnHidden]
   
   @js.native
-  sealed trait responsiveColumnShowing extends js.Object
+  sealed trait responsiveColumnHiding extends StObject
+  inline def responsiveColumnHiding: responsiveColumnHiding = "responsiveColumnHiding".asInstanceOf[responsiveColumnHiding]
   
   @js.native
-  sealed trait responsiveColumnShown extends js.Object
+  sealed trait responsiveColumnShowing extends StObject
+  inline def responsiveColumnShowing: responsiveColumnShowing = "responsiveColumnShowing".asInstanceOf[responsiveColumnShowing]
   
   @js.native
-  sealed trait responsiveModeChanged extends js.Object
+  sealed trait responsiveColumnShown extends StObject
+  inline def responsiveColumnShown: responsiveColumnShown = "responsiveColumnShown".asInstanceOf[responsiveColumnShown]
   
   @js.native
-  sealed trait responsiveModes extends js.Object
+  sealed trait responsiveModeChanged extends StObject
+  inline def responsiveModeChanged: responsiveModeChanged = "responsiveModeChanged".asInstanceOf[responsiveModeChanged]
   
   @js.native
-  sealed trait responsiveSensitivity extends js.Object
+  sealed trait responsiveModes extends StObject
+  inline def responsiveModes: responsiveModes = "responsiveModes".asInstanceOf[responsiveModes]
   
   @js.native
-  sealed trait rest extends js.Object
+  sealed trait responsiveSensitivity extends StObject
+  inline def responsiveSensitivity: responsiveSensitivity = "responsiveSensitivity".asInstanceOf[responsiveSensitivity]
   
   @js.native
-  sealed trait restSettings extends js.Object
+  sealed trait rest extends StObject
+  inline def rest: rest = "rest".asInstanceOf[rest]
   
   @js.native
-  sealed trait restore extends js.Object
+  sealed trait restSettings extends StObject
+  inline def restSettings: restSettings = "restSettings".asInstanceOf[restSettings]
   
   @js.native
-  sealed trait restoreButtonTitle extends js.Object
+  sealed trait restore extends StObject
+  inline def restore: restore = "restore".asInstanceOf[restore]
   
   @js.native
-  sealed trait resultResponseKey extends js.Object
+  sealed trait restoreButtonTitle extends StObject
+  inline def restoreButtonTitle: restoreButtonTitle = "restoreButtonTitle".asInstanceOf[restoreButtonTitle]
   
   @js.native
-  sealed trait resultTemplate extends js.Object
+  sealed trait resultResponseKey extends StObject
+  inline def resultResponseKey: resultResponseKey = "resultResponseKey".asInstanceOf[resultResponseKey]
   
   @js.native
-  sealed trait revertIfNotValid extends js.Object
+  sealed trait resultTemplate extends StObject
+  inline def resultTemplate: resultTemplate = "resultTemplate".asInstanceOf[resultTemplate]
   
   @js.native
-  sealed trait rightMargin extends js.Object
+  sealed trait revertIfNotValid extends StObject
+  inline def revertIfNotValid: revertIfNotValid = "revertIfNotValid".asInstanceOf[revertIfNotValid]
   
   @js.native
-  sealed trait rightPanelCols extends js.Object
+  sealed trait rightMargin extends StObject
+  inline def rightMargin: rightMargin = "rightMargin".asInstanceOf[rightMargin]
   
   @js.native
-  sealed trait rightPanelTilesHeight extends js.Object
+  sealed trait rightPanelCols extends StObject
+  inline def rightPanelCols: rightPanelCols = "rightPanelCols".asInstanceOf[rightPanelCols]
   
   @js.native
-  sealed trait rightPanelTilesWidth extends js.Object
+  sealed trait rightPanelTilesHeight extends StObject
+  inline def rightPanelTilesHeight: rightPanelTilesHeight = "rightPanelTilesHeight".asInstanceOf[rightPanelTilesHeight]
   
   @js.native
-  sealed trait rollback extends js.Object
+  sealed trait rightPanelTilesWidth extends StObject
+  inline def rightPanelTilesWidth: rightPanelTilesWidth = "rightPanelTilesWidth".asInstanceOf[rightPanelTilesWidth]
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait rollback extends StObject
+  inline def rollback: rollback = "rollback".asInstanceOf[rollback]
   
   @js.native
-  sealed trait rootWidget extends js.Object
+  sealed trait root extends StObject
+  inline def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait rotationAsPercentageOfWedge extends js.Object
+  sealed trait rootWidget extends StObject
+  inline def rootWidget: rootWidget = "rootWidget".asInstanceOf[rootWidget]
   
   @js.native
-  sealed trait rotationInDegrees extends js.Object
+  sealed trait rotationAsPercentageOfWedge extends StObject
+  inline def rotationAsPercentageOfWedge: rotationAsPercentageOfWedge = "rotationAsPercentageOfWedge".asInstanceOf[rotationAsPercentageOfWedge]
   
   @js.native
-  sealed trait roundDecimals extends js.Object
+  sealed trait rotationInDegrees extends StObject
+  inline def rotationInDegrees: rotationInDegrees = "rotationInDegrees".asInstanceOf[rotationInDegrees]
   
   @js.native
-  sealed trait roundedDecimalPlaces extends js.Object
+  sealed trait roundDecimals extends StObject
+  inline def roundDecimals: roundDecimals = "roundDecimals".asInstanceOf[roundDecimals]
   
   @js.native
-  sealed trait rowAdded extends js.Object
+  sealed trait roundedDecimalPlaces extends StObject
+  inline def roundedDecimalPlaces: roundedDecimalPlaces = "roundedDecimalPlaces".asInstanceOf[roundedDecimalPlaces]
   
   @js.native
-  sealed trait rowAdding extends js.Object
+  sealed trait rowAdded extends StObject
+  inline def rowAdded: rowAdded = "rowAdded".asInstanceOf[rowAdded]
   
   @js.native
-  sealed trait rowAt extends js.Object
+  sealed trait rowAdding extends StObject
+  inline def rowAdding: rowAdding = "rowAdding".asInstanceOf[rowAdding]
   
   @js.native
-  sealed trait rowById extends js.Object
+  sealed trait rowAt extends StObject
+  inline def rowAt: rowAt = "rowAt".asInstanceOf[rowAt]
   
   @js.native
-  sealed trait rowCollapsed extends js.Object
+  sealed trait rowById extends StObject
+  inline def rowById: rowById = "rowById".asInstanceOf[rowById]
   
   @js.native
-  sealed trait rowCollapsing extends js.Object
+  sealed trait rowCollapsed extends StObject
+  inline def rowCollapsed: rowCollapsed = "rowCollapsed".asInstanceOf[rowCollapsed]
   
   @js.native
-  sealed trait rowDeleted extends js.Object
+  sealed trait rowCollapsing extends StObject
+  inline def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
   
   @js.native
-  sealed trait rowDeleting extends js.Object
+  sealed trait rowDeleted extends StObject
+  inline def rowDeleted: rowDeleted = "rowDeleted".asInstanceOf[rowDeleted]
   
   @js.native
-  sealed trait rowEditDialogAfterClose extends js.Object
+  sealed trait rowDeleting extends StObject
+  inline def rowDeleting: rowDeleting = "rowDeleting".asInstanceOf[rowDeleting]
   
   @js.native
-  sealed trait rowEditDialogAfterOpen extends js.Object
+  sealed trait rowEditDialogAfterClose extends StObject
+  inline def rowEditDialogAfterClose: rowEditDialogAfterClose = "rowEditDialogAfterClose".asInstanceOf[rowEditDialogAfterClose]
   
   @js.native
-  sealed trait rowEditDialogBeforeClose extends js.Object
+  sealed trait rowEditDialogAfterOpen extends StObject
+  inline def rowEditDialogAfterOpen: rowEditDialogAfterOpen = "rowEditDialogAfterOpen".asInstanceOf[rowEditDialogAfterOpen]
   
   @js.native
-  sealed trait rowEditDialogBeforeOpen extends js.Object
+  sealed trait rowEditDialogBeforeClose extends StObject
+  inline def rowEditDialogBeforeClose: rowEditDialogBeforeClose = "rowEditDialogBeforeClose".asInstanceOf[rowEditDialogBeforeClose]
   
   @js.native
-  sealed trait rowEditDialogContentsRendered extends js.Object
+  sealed trait rowEditDialogBeforeOpen extends StObject
+  inline def rowEditDialogBeforeOpen: rowEditDialogBeforeOpen = "rowEditDialogBeforeOpen".asInstanceOf[rowEditDialogBeforeOpen]
   
   @js.native
-  sealed trait rowEditDialogOptions extends js.Object
+  sealed trait rowEditDialogContentsRendered extends StObject
+  inline def rowEditDialogContentsRendered: rowEditDialogContentsRendered = "rowEditDialogContentsRendered".asInstanceOf[rowEditDialogContentsRendered]
   
   @js.native
-  sealed trait rowExpanded extends js.Object
+  sealed trait rowEditDialogOptions extends StObject
+  inline def rowEditDialogOptions: rowEditDialogOptions = "rowEditDialogOptions".asInstanceOf[rowEditDialogOptions]
   
   @js.native
-  sealed trait rowExpanding extends js.Object
+  sealed trait rowExpanded extends StObject
+  inline def rowExpanded: rowExpanded = "rowExpanded".asInstanceOf[rowExpanded]
   
   @js.native
-  sealed trait rowHeaderLinkGroupIndentation extends js.Object
+  sealed trait rowExpanding extends StObject
+  inline def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
   
   @js.native
-  sealed trait rowHeadersLayout extends js.Object
+  sealed trait rowHeaderLinkGroupIndentation extends StObject
+  inline def rowHeaderLinkGroupIndentation: rowHeaderLinkGroupIndentation = "rowHeaderLinkGroupIndentation".asInstanceOf[rowHeaderLinkGroupIndentation]
   
   @js.native
-  sealed trait rowMergeStrategy extends js.Object
+  sealed trait rowHeadersLayout extends StObject
+  inline def rowHeadersLayout: rowHeadersLayout = "rowHeadersLayout".asInstanceOf[rowHeadersLayout]
   
   @js.native
-  sealed trait rowNumberingSeed extends js.Object
+  sealed trait rowMergeStrategy extends StObject
+  inline def rowMergeStrategy: rowMergeStrategy = "rowMergeStrategy".asInstanceOf[rowMergeStrategy]
   
   @js.native
-  sealed trait rowSelectionChanged extends js.Object
+  sealed trait rowNumberingSeed extends StObject
+  inline def rowNumberingSeed: rowNumberingSeed = "rowNumberingSeed".asInstanceOf[rowNumberingSeed]
   
   @js.native
-  sealed trait rowSelectionChanging extends js.Object
+  sealed trait rowSelectionChanged extends StObject
+  inline def rowSelectionChanged: rowSelectionChanged = "rowSelectionChanged".asInstanceOf[rowSelectionChanged]
   
   @js.native
-  sealed trait rowSelectorClicked extends js.Object
+  sealed trait rowSelectionChanging extends StObject
+  inline def rowSelectionChanging: rowSelectionChanging = "rowSelectionChanging".asInstanceOf[rowSelectionChanging]
   
   @js.native
-  sealed trait rowSelectorColumnWidth extends js.Object
+  sealed trait rowSelectorClicked extends StObject
+  inline def rowSelectorClicked: rowSelectorClicked = "rowSelectorClicked".asInstanceOf[rowSelectorClicked]
   
   @js.native
-  sealed trait rowSelectorNumberingMode extends js.Object
+  sealed trait rowSelectorColumnWidth extends StObject
+  inline def rowSelectorColumnWidth: rowSelectorColumnWidth = "rowSelectorColumnWidth".asInstanceOf[rowSelectorColumnWidth]
   
   @js.native
-  sealed trait rowVirtualization extends js.Object
+  sealed trait rowSelectorNumberingMode extends StObject
+  inline def rowSelectorNumberingMode: rowSelectorNumberingMode = "rowSelectorNumberingMode".asInstanceOf[rowSelectorNumberingMode]
   
   @js.native
-  sealed trait rows extends js.Object
+  sealed trait rowVirtualization extends StObject
+  inline def rowVirtualization: rowVirtualization = "rowVirtualization".asInstanceOf[rowVirtualization]
   
   @js.native
-  sealed trait rowsRendered extends js.Object
+  sealed trait rows extends StObject
+  inline def rows: rows = "rows".asInstanceOf[rows]
   
   @js.native
-  sealed trait rowsRendering extends js.Object
+  sealed trait rowsRendered extends StObject
+  inline def rowsRendered: rowsRendered = "rowsRendered".asInstanceOf[rowsRendered]
   
   @js.native
-  sealed trait rowsRequested extends js.Object
+  sealed trait rowsRendering extends StObject
+  inline def rowsRendering: rowsRendering = "rowsRendering".asInstanceOf[rowsRendering]
   
   @js.native
-  sealed trait rowsRequesting extends js.Object
+  sealed trait rowsRequested extends StObject
+  inline def rowsRequested: rowsRequested = "rowsRequested".asInstanceOf[rowsRequested]
   
   @js.native
-  sealed trait rsRenderColgroup extends js.Object
+  sealed trait rowsRequesting extends StObject
+  inline def rowsRequesting: rowsRequesting = "rowsRequesting".asInstanceOf[rowsRequesting]
   
   @js.native
-  sealed trait saveChanges extends js.Object
+  sealed trait rsRenderColgroup extends StObject
+  inline def rsRenderColgroup: rsRenderColgroup = "rsRenderColgroup".asInstanceOf[rsRenderColgroup]
   
   @js.native
-  sealed trait saveChangesErrorHandler extends js.Object
+  sealed trait saveChanges extends StObject
+  inline def saveChanges: saveChanges = "saveChanges".asInstanceOf[saveChanges]
   
   @js.native
-  sealed trait saveChangesSuccessHandler extends js.Object
+  sealed trait saveChangesErrorHandler extends StObject
+  inline def saveChangesErrorHandler: saveChangesErrorHandler = "saveChangesErrorHandler".asInstanceOf[saveChangesErrorHandler]
   
   @js.native
-  sealed trait scaleBackgroundBrush extends js.Object
+  sealed trait saveChangesSuccessHandler extends StObject
+  inline def saveChangesSuccessHandler: saveChangesSuccessHandler = "saveChangesSuccessHandler".asInstanceOf[saveChangesSuccessHandler]
   
   @js.native
-  sealed trait scaleBackgroundOutline extends js.Object
+  sealed trait scaleBackgroundBrush extends StObject
+  inline def scaleBackgroundBrush: scaleBackgroundBrush = "scaleBackgroundBrush".asInstanceOf[scaleBackgroundBrush]
   
   @js.native
-  sealed trait scaleBackgroundThickness extends js.Object
+  sealed trait scaleBackgroundOutline extends StObject
+  inline def scaleBackgroundOutline: scaleBackgroundOutline = "scaleBackgroundOutline".asInstanceOf[scaleBackgroundOutline]
   
   @js.native
-  sealed trait scaleBrush extends js.Object
+  sealed trait scaleBackgroundThickness extends StObject
+  inline def scaleBackgroundThickness: scaleBackgroundThickness = "scaleBackgroundThickness".asInstanceOf[scaleBackgroundThickness]
   
   @js.native
-  sealed trait scaleEndAngle extends js.Object
+  sealed trait scaleBrush extends StObject
+  inline def scaleBrush: scaleBrush = "scaleBrush".asInstanceOf[scaleBrush]
   
   @js.native
-  sealed trait scaleEndExtent extends js.Object
+  sealed trait scaleEndAngle extends StObject
+  inline def scaleEndAngle: scaleEndAngle = "scaleEndAngle".asInstanceOf[scaleEndAngle]
   
   @js.native
-  sealed trait scaleInnerExtent extends js.Object
+  sealed trait scaleEndExtent extends StObject
+  inline def scaleEndExtent: scaleEndExtent = "scaleEndExtent".asInstanceOf[scaleEndExtent]
   
   @js.native
-  sealed trait scaleOuterExtent extends js.Object
+  sealed trait scaleInnerExtent extends StObject
+  inline def scaleInnerExtent: scaleInnerExtent = "scaleInnerExtent".asInstanceOf[scaleInnerExtent]
   
   @js.native
-  sealed trait scaleOutline extends js.Object
+  sealed trait scaleOuterExtent extends StObject
+  inline def scaleOuterExtent: scaleOuterExtent = "scaleOuterExtent".asInstanceOf[scaleOuterExtent]
   
   @js.native
-  sealed trait scaleOversweep extends js.Object
+  sealed trait scaleOutline extends StObject
+  inline def scaleOutline: scaleOutline = "scaleOutline".asInstanceOf[scaleOutline]
   
   @js.native
-  sealed trait scaleOversweepShape extends js.Object
+  sealed trait scaleOversweep extends StObject
+  inline def scaleOversweep: scaleOversweep = "scaleOversweep".asInstanceOf[scaleOversweep]
   
   @js.native
-  sealed trait scaleStartAngle extends js.Object
+  sealed trait scaleOversweepShape extends StObject
+  inline def scaleOversweepShape: scaleOversweepShape = "scaleOversweepShape".asInstanceOf[scaleOversweepShape]
   
   @js.native
-  sealed trait scaleStartExtent extends js.Object
+  sealed trait scaleStartAngle extends StObject
+  inline def scaleStartAngle: scaleStartAngle = "scaleStartAngle".asInstanceOf[scaleStartAngle]
   
   @js.native
-  sealed trait scaleStrokeThickness extends js.Object
+  sealed trait scaleStartExtent extends StObject
+  inline def scaleStartExtent: scaleStartExtent = "scaleStartExtent".asInstanceOf[scaleStartExtent]
   
   @js.native
-  sealed trait scaleSweepDirection extends js.Object
+  sealed trait scaleStrokeThickness extends StObject
+  inline def scaleStrokeThickness: scaleStrokeThickness = "scaleStrokeThickness".asInstanceOf[scaleStrokeThickness]
   
   @js.native
-  sealed trait scaleValue extends js.Object
+  sealed trait scaleSweepDirection extends StObject
+  inline def scaleSweepDirection: scaleSweepDirection = "scaleSweepDirection".asInstanceOf[scaleSweepDirection]
   
   @js.native
-  sealed trait schemaGenerated extends js.Object
+  sealed trait scaleValue extends StObject
+  inline def scaleValue: scaleValue = "scaleValue".asInstanceOf[scaleValue]
   
   @js.native
-  sealed trait scientificFormat extends js.Object
+  sealed trait schemaGenerated extends StObject
+  inline def schemaGenerated: schemaGenerated = "schemaGenerated".asInstanceOf[schemaGenerated]
   
   @js.native
-  sealed trait screenshot extends js.Object
+  sealed trait scientificFormat extends StObject
+  inline def scientificFormat: scientificFormat = "scientificFormat".asInstanceOf[scientificFormat]
   
   @js.native
-  sealed trait scrollContainer extends js.Object
+  sealed trait screenshot extends StObject
+  inline def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
   
   @js.native
-  sealed trait scrollDelta extends js.Object
+  sealed trait scrollContainer extends StObject
+  inline def scrollContainer: scrollContainer = "scrollContainer".asInstanceOf[scrollContainer]
   
   @js.native
-  sealed trait scrollHeight extends js.Object
+  sealed trait scrollDelta extends StObject
+  inline def scrollDelta: scrollDelta = "scrollDelta".asInstanceOf[scrollDelta]
   
   @js.native
-  sealed trait scrollIntoView extends js.Object
+  sealed trait scrollHeight extends StObject
+  inline def scrollHeight: scrollHeight = "scrollHeight".asInstanceOf[scrollHeight]
   
   @js.native
-  sealed trait scrollLeft extends js.Object
+  sealed trait scrollIntoView extends StObject
+  inline def scrollIntoView: scrollIntoView = "scrollIntoView".asInstanceOf[scrollIntoView]
   
   @js.native
-  sealed trait scrollOnlyHBar extends js.Object
+  sealed trait scrollLeft extends StObject
+  inline def scrollLeft: scrollLeft = "scrollLeft".asInstanceOf[scrollLeft]
   
   @js.native
-  sealed trait scrollOnlyVBar extends js.Object
+  sealed trait scrollOnlyHBar extends StObject
+  inline def scrollOnlyHBar: scrollOnlyHBar = "scrollOnlyHBar".asInstanceOf[scrollOnlyHBar]
   
   @js.native
-  sealed trait scrollSettings extends js.Object
+  sealed trait scrollOnlyVBar extends StObject
+  inline def scrollOnlyVBar: scrollOnlyVBar = "scrollOnlyVBar".asInstanceOf[scrollOnlyVBar]
   
   @js.native
-  sealed trait scrollSpeedMultiplier extends js.Object
+  sealed trait scrollSettings extends StObject
+  inline def scrollSettings: scrollSettings = "scrollSettings".asInstanceOf[scrollSettings]
   
   @js.native
-  sealed trait scrollTop extends js.Object
+  sealed trait scrollSpeedMultiplier extends StObject
+  inline def scrollSpeedMultiplier: scrollSpeedMultiplier = "scrollSpeedMultiplier".asInstanceOf[scrollSpeedMultiplier]
   
   @js.native
-  sealed trait scrollWidth extends js.Object
+  sealed trait scrollTop extends StObject
+  inline def scrollTop: scrollTop = "scrollTop".asInstanceOf[scrollTop]
   
   @js.native
-  sealed trait scrollbarH extends js.Object
+  sealed trait scrollWidth extends StObject
+  inline def scrollWidth: scrollWidth = "scrollWidth".asInstanceOf[scrollWidth]
   
   @js.native
-  sealed trait scrollbarHParent extends js.Object
+  sealed trait scrollbarH extends StObject
+  inline def scrollbarH: scrollbarH = "scrollbarH".asInstanceOf[scrollbarH]
   
   @js.native
-  sealed trait scrollbarType extends js.Object
+  sealed trait scrollbarHParent extends StObject
+  inline def scrollbarHParent: scrollbarHParent = "scrollbarHParent".asInstanceOf[scrollbarHParent]
   
   @js.native
-  sealed trait scrollbarV extends js.Object
+  sealed trait scrollbarType extends StObject
+  inline def scrollbarType: scrollbarType = "scrollbarType".asInstanceOf[scrollbarType]
   
   @js.native
-  sealed trait scrollbarVParent extends js.Object
+  sealed trait scrollbarV extends StObject
+  inline def scrollbarV: scrollbarV = "scrollbarV".asInstanceOf[scrollbarV]
   
   @js.native
-  sealed trait scrolled extends js.Object
+  sealed trait scrollbarVParent extends StObject
+  inline def scrollbarVParent: scrollbarVParent = "scrollbarVParent".asInstanceOf[scrollbarVParent]
   
   @js.native
-  sealed trait scrolling extends js.Object
+  sealed trait scrolled extends StObject
+  inline def scrolled: scrolled = "scrolled".asInstanceOf[scrolled]
   
   @js.native
-  sealed trait secondPanel extends js.Object
+  sealed trait scrolling extends StObject
+  inline def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
   
   @js.native
-  sealed trait seeking extends js.Object
+  sealed trait secondPanel extends StObject
+  inline def secondPanel: secondPanel = "secondPanel".asInstanceOf[secondPanel]
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait seeking extends StObject
+  inline def seeking: seeking = "seeking".asInstanceOf[seeking]
   
   @js.native
-  sealed trait selectAll extends js.Object
+  sealed trait select extends StObject
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selectAllForPagingTemplate extends js.Object
+  sealed trait selectAll extends StObject
+  inline def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
   
   @js.native
-  sealed trait selectCell extends js.Object
+  sealed trait selectAllForPagingTemplate extends StObject
+  inline def selectAllForPagingTemplate: selectAllForPagingTemplate = "selectAllForPagingTemplate".asInstanceOf[selectAllForPagingTemplate]
   
   @js.native
-  sealed trait selectCellById extends js.Object
+  sealed trait selectCell extends StObject
+  inline def selectCell: selectCell = "selectCell".asInstanceOf[selectCell]
   
   @js.native
-  sealed trait selectCheckBox extends js.Object
+  sealed trait selectCellById extends StObject
+  inline def selectCellById: selectCellById = "selectCellById".asInstanceOf[selectCellById]
   
   @js.native
-  sealed trait selectColor extends js.Object
+  sealed trait selectCheckBox extends StObject
+  inline def selectCheckBox: selectCheckBox = "selectCheckBox".asInstanceOf[selectCheckBox]
   
   @js.native
-  sealed trait selectDate extends js.Object
+  sealed trait selectColor extends StObject
+  inline def selectColor: selectColor = "selectColor".asInstanceOf[selectColor]
   
   @js.native
-  sealed trait selectItemBySpaceKey extends js.Object
+  sealed trait selectDate extends StObject
+  inline def selectDate: selectDate = "selectDate".asInstanceOf[selectDate]
   
   @js.native
-  sealed trait selectListIndexDown extends js.Object
+  sealed trait selectItemBySpaceKey extends StObject
+  inline def selectItemBySpaceKey: selectItemBySpaceKey = "selectItemBySpaceKey".asInstanceOf[selectItemBySpaceKey]
   
   @js.native
-  sealed trait selectListIndexUp extends js.Object
+  sealed trait selectListIndexDown extends StObject
+  inline def selectListIndexDown: selectListIndexDown = "selectListIndexDown".asInstanceOf[selectListIndexDown]
   
   @js.native
-  sealed trait selectRow extends js.Object
+  sealed trait selectListIndexUp extends StObject
+  inline def selectListIndexUp: selectListIndexUp = "selectListIndexUp".asInstanceOf[selectListIndexUp]
   
   @js.native
-  sealed trait selectRowById extends js.Object
+  sealed trait selectRow extends StObject
+  inline def selectRow: selectRow = "selectRow".asInstanceOf[selectRow]
   
   @js.native
-  sealed trait selectedCell extends js.Object
+  sealed trait selectRowById extends StObject
+  inline def selectRowById: selectRowById = "selectRowById".asInstanceOf[selectRowById]
   
   @js.native
-  sealed trait selectedCells extends js.Object
+  sealed trait selectedCell extends StObject
+  inline def selectedCell: selectedCell = "selectedCell".asInstanceOf[selectedCell]
   
   @js.native
-  sealed trait selectedColor extends js.Object
+  sealed trait selectedCells extends StObject
+  inline def selectedCells: selectedCells = "selectedCells".asInstanceOf[selectedCells]
   
   @js.native
-  sealed trait selectedDate extends js.Object
+  sealed trait selectedColor extends StObject
+  inline def selectedColor: selectedColor = "selectedColor".asInstanceOf[selectedColor]
   
   @js.native
-  sealed trait selectedItem extends js.Object
+  sealed trait selectedDate extends StObject
+  inline def selectedDate: selectedDate = "selectedDate".asInstanceOf[selectedDate]
   
   @js.native
-  sealed trait selectedItemChanged extends js.Object
+  sealed trait selectedItem extends StObject
+  inline def selectedItem: selectedItem = "selectedItem".asInstanceOf[selectedItem]
   
   @js.native
-  sealed trait selectedItemChanging extends js.Object
+  sealed trait selectedItemChanged extends StObject
+  inline def selectedItemChanged: selectedItemChanged = "selectedItemChanged".asInstanceOf[selectedItemChanged]
   
   @js.native
-  sealed trait selectedItems extends js.Object
+  sealed trait selectedItemChanging extends StObject
+  inline def selectedItemChanging: selectedItemChanging = "selectedItemChanging".asInstanceOf[selectedItemChanging]
   
   @js.native
-  sealed trait selectedItemsChanged extends js.Object
+  sealed trait selectedItems extends StObject
+  inline def selectedItems: selectedItems = "selectedItems".asInstanceOf[selectedItems]
   
   @js.native
-  sealed trait selectedItemsChanging extends js.Object
+  sealed trait selectedItemsChanged extends StObject
+  inline def selectedItemsChanged: selectedItemsChanged = "selectedItemsChanged".asInstanceOf[selectedItemsChanged]
   
   @js.native
-  sealed trait selectedListIndex extends js.Object
+  sealed trait selectedItemsChanging extends StObject
+  inline def selectedItemsChanging: selectedItemsChanging = "selectedItemsChanging".asInstanceOf[selectedItemsChanging]
   
   @js.native
-  sealed trait selectedNode extends js.Object
+  sealed trait selectedListIndex extends StObject
+  inline def selectedListIndex: selectedListIndex = "selectedListIndex".asInstanceOf[selectedListIndex]
   
   @js.native
-  sealed trait selectedRow extends js.Object
+  sealed trait selectedNode extends StObject
+  inline def selectedNode: selectedNode = "selectedNode".asInstanceOf[selectedNode]
   
   @js.native
-  sealed trait selectedRows extends js.Object
+  sealed trait selectedRow extends StObject
+  inline def selectedRow: selectedRow = "selectedRow".asInstanceOf[selectedRow]
   
   @js.native
-  sealed trait selectedSliceIndexes extends js.Object
+  sealed trait selectedRows extends StObject
+  inline def selectedRows: selectedRows = "selectedRows".asInstanceOf[selectedRows]
   
   @js.native
-  sealed trait selectedSliceItems extends js.Object
+  sealed trait selectedSliceIndexes extends StObject
+  inline def selectedSliceIndexes: selectedSliceIndexes = "selectedSliceIndexes".asInstanceOf[selectedSliceIndexes]
   
   @js.native
-  sealed trait selectedSliceStyle extends js.Object
+  sealed trait selectedSliceItems extends StObject
+  inline def selectedSliceItems: selectedSliceItems = "selectedSliceItems".asInstanceOf[selectedSliceItems]
   
   @js.native
-  sealed trait selectedSlices extends js.Object
+  sealed trait selectedSliceStyle extends StObject
+  inline def selectedSliceStyle: selectedSliceStyle = "selectedSliceStyle".asInstanceOf[selectedSliceStyle]
   
   @js.native
-  sealed trait selectedStyle extends js.Object
+  sealed trait selectedSlices extends StObject
+  inline def selectedSlices: selectedSlices = "selectedSlices".asInstanceOf[selectedSlices]
   
   @js.native
-  sealed trait selectedWorksheets extends js.Object
+  sealed trait selectedStyle extends StObject
+  inline def selectedStyle: selectedStyle = "selectedStyle".asInstanceOf[selectedStyle]
   
   @js.native
-  sealed trait selection extends js.Object
+  sealed trait selectedWorksheets extends StObject
+  inline def selectedWorksheets: selectedWorksheets = "selectedWorksheets".asInstanceOf[selectedWorksheets]
   
   @js.native
-  sealed trait selectionChanged extends js.Object
+  sealed trait selection extends StObject
+  inline def selection: selection = "selection".asInstanceOf[selection]
   
   @js.native
-  sealed trait selectionChanging extends js.Object
+  sealed trait selectionChanged extends StObject
+  inline def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
   
   @js.native
-  sealed trait selectionMode extends js.Object
+  sealed trait selectionChanging extends StObject
+  inline def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
   
   @js.native
-  sealed trait selectionOnFocus extends js.Object
+  sealed trait selectionMode extends StObject
+  inline def selectionMode: selectionMode = "selectionMode".asInstanceOf[selectionMode]
   
   @js.native
-  sealed trait selectors extends js.Object
+  sealed trait selectionOnFocus extends StObject
+  inline def selectionOnFocus: selectionOnFocus = "selectionOnFocus".asInstanceOf[selectionOnFocus]
   
   @js.native
-  sealed trait serializeTransactionLog extends js.Object
+  sealed trait selectors extends StObject
+  inline def selectors: selectors = "selectors".asInstanceOf[selectors]
   
   @js.native
-  sealed trait series extends js.Object
+  sealed trait serializeTransactionLog extends StObject
+  inline def serializeTransactionLog: serializeTransactionLog = "serializeTransactionLog".asInstanceOf[serializeTransactionLog]
   
   @js.native
-  sealed trait seriesAdded extends js.Object
+  sealed trait series extends StObject
+  inline def series: series = "series".asInstanceOf[series]
   
   @js.native
-  sealed trait seriesCursorMouseMove extends js.Object
+  sealed trait seriesAdded extends StObject
+  inline def seriesAdded: seriesAdded = "seriesAdded".asInstanceOf[seriesAdded]
   
   @js.native
-  sealed trait seriesMouseEnter extends js.Object
+  sealed trait seriesCursorMouseMove extends StObject
+  inline def seriesCursorMouseMove: seriesCursorMouseMove = "seriesCursorMouseMove".asInstanceOf[seriesCursorMouseMove]
   
   @js.native
-  sealed trait seriesMouseLeave extends js.Object
+  sealed trait seriesMouseEnter extends StObject
+  inline def seriesMouseEnter: seriesMouseEnter = "seriesMouseEnter".asInstanceOf[seriesMouseEnter]
   
   @js.native
-  sealed trait seriesMouseLeftButtonDown extends js.Object
+  sealed trait seriesMouseLeave extends StObject
+  inline def seriesMouseLeave: seriesMouseLeave = "seriesMouseLeave".asInstanceOf[seriesMouseLeave]
   
   @js.native
-  sealed trait seriesMouseLeftButtonUp extends js.Object
+  sealed trait seriesMouseLeftButtonDown extends StObject
+  inline def seriesMouseLeftButtonDown: seriesMouseLeftButtonDown = "seriesMouseLeftButtonDown".asInstanceOf[seriesMouseLeftButtonDown]
   
   @js.native
-  sealed trait seriesMouseMove extends js.Object
+  sealed trait seriesMouseLeftButtonUp extends StObject
+  inline def seriesMouseLeftButtonUp: seriesMouseLeftButtonUp = "seriesMouseLeftButtonUp".asInstanceOf[seriesMouseLeftButtonUp]
   
   @js.native
-  sealed trait seriesPointerDown extends js.Object
+  sealed trait seriesMouseMove extends StObject
+  inline def seriesMouseMove: seriesMouseMove = "seriesMouseMove".asInstanceOf[seriesMouseMove]
   
   @js.native
-  sealed trait seriesPointerEnter extends js.Object
+  sealed trait seriesPointerDown extends StObject
+  inline def seriesPointerDown: seriesPointerDown = "seriesPointerDown".asInstanceOf[seriesPointerDown]
   
   @js.native
-  sealed trait seriesPointerLeave extends js.Object
+  sealed trait seriesPointerEnter extends StObject
+  inline def seriesPointerEnter: seriesPointerEnter = "seriesPointerEnter".asInstanceOf[seriesPointerEnter]
   
   @js.native
-  sealed trait seriesPointerMove extends js.Object
+  sealed trait seriesPointerLeave extends StObject
+  inline def seriesPointerLeave: seriesPointerLeave = "seriesPointerLeave".asInstanceOf[seriesPointerLeave]
   
   @js.native
-  sealed trait seriesPointerUp extends js.Object
+  sealed trait seriesPointerMove extends StObject
+  inline def seriesPointerMove: seriesPointerMove = "seriesPointerMove".asInstanceOf[seriesPointerMove]
   
   @js.native
-  sealed trait seriesRemoved extends js.Object
+  sealed trait seriesPointerUp extends StObject
+  inline def seriesPointerUp: seriesPointerUp = "seriesPointerUp".asInstanceOf[seriesPointerUp]
   
   @js.native
-  sealed trait setCellValue extends js.Object
+  sealed trait seriesRemoved extends StObject
+  inline def seriesRemoved: seriesRemoved = "seriesRemoved".asInstanceOf[seriesRemoved]
   
   @js.native
-  sealed trait setColor extends js.Object
+  sealed trait setCellValue extends StObject
+  inline def setCellValue: setCellValue = "setCellValue".asInstanceOf[setCellValue]
   
   @js.native
-  sealed trait setColumnTemplate extends js.Object
+  sealed trait setColor extends StObject
+  inline def setColor: setColor = "setColor".asInstanceOf[setColor]
   
   @js.native
-  sealed trait setContent extends js.Object
+  sealed trait setColumnTemplate extends StObject
+  inline def setColumnTemplate: setColumnTemplate = "setColumnTemplate".asInstanceOf[setColumnTemplate]
   
   @js.native
-  sealed trait setCoordinates extends js.Object
+  sealed trait setContent extends StObject
+  inline def setContent: setContent = "setContent".asInstanceOf[setContent]
   
   @js.native
-  sealed trait setFirstPanelSize extends js.Object
+  sealed trait setCoordinates extends StObject
+  inline def setCoordinates: setCoordinates = "setCoordinates".asInstanceOf[setCoordinates]
   
   @js.native
-  sealed trait setFocus extends js.Object
+  sealed trait setFirstPanelSize extends StObject
+  inline def setFirstPanelSize: setFirstPanelSize = "setFirstPanelSize".asInstanceOf[setFirstPanelSize]
   
   @js.native
-  sealed trait setItem extends js.Object
+  sealed trait setFocus extends StObject
+  inline def setFocus: setFocus = "setFocus".asInstanceOf[setFocus]
   
   @js.native
-  sealed trait setSecondPanelSize extends js.Object
+  sealed trait setItem extends StObject
+  inline def setItem: setItem = "setItem".asInstanceOf[setItem]
   
   @js.native
-  sealed trait setTitle extends js.Object
+  sealed trait setSecondPanelSize extends StObject
+  inline def setSecondPanelSize: setSecondPanelSize = "setSecondPanelSize".asInstanceOf[setSecondPanelSize]
   
   @js.native
-  sealed trait setUnboundValueByPK extends js.Object
+  sealed trait setTitle extends StObject
+  inline def setTitle: setTitle = "setTitle".asInstanceOf[setTitle]
   
   @js.native
-  sealed trait setUnboundValues extends js.Object
+  sealed trait setUnboundValueByPK extends StObject
+  inline def setUnboundValueByPK: setUnboundValueByPK = "setUnboundValueByPK".asInstanceOf[setUnboundValueByPK]
   
   @js.native
-  sealed trait shapeDataSource extends js.Object
+  sealed trait setUnboundValues extends StObject
+  inline def setUnboundValues: setUnboundValues = "setUnboundValues".asInstanceOf[setUnboundValues]
   
   @js.native
-  sealed trait shouldShowFeatureIcon extends js.Object
+  sealed trait shapeDataSource extends StObject
+  inline def shapeDataSource: shapeDataSource = "shapeDataSource".asInstanceOf[shapeDataSource]
   
   @js.native
-  sealed trait show extends js.Object
+  sealed trait shouldShowFeatureIcon extends StObject
+  inline def shouldShowFeatureIcon: shouldShowFeatureIcon = "shouldShowFeatureIcon".asInstanceOf[shouldShowFeatureIcon]
   
   @js.native
-  sealed trait showAddChildButtonFor extends js.Object
+  sealed trait show extends StObject
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait showBanner extends js.Object
+  sealed trait showAddChildButtonFor extends StObject
+  inline def showAddChildButtonFor: showAddChildButtonFor = "showAddChildButtonFor".asInstanceOf[showAddChildButtonFor]
   
   @js.native
-  sealed trait showBookmarkTitle extends js.Object
+  sealed trait showBanner extends StObject
+  inline def showBanner: showBanner = "showBanner".asInstanceOf[showBanner]
   
   @js.native
-  sealed trait showCheckBoxesOnFocus extends js.Object
+  sealed trait showBookmarkTitle extends StObject
+  inline def showBookmarkTitle: showBookmarkTitle = "showBookmarkTitle".asInstanceOf[showBookmarkTitle]
   
   @js.native
-  sealed trait showCloseButton extends js.Object
+  sealed trait showCheckBoxesOnFocus extends StObject
+  inline def showCheckBoxesOnFocus: showCheckBoxesOnFocus = "showCheckBoxesOnFocus".asInstanceOf[showCheckBoxesOnFocus]
   
   @js.native
-  sealed trait showColumn extends js.Object
+  sealed trait showCloseButton extends StObject
+  inline def showCloseButton: showCloseButton = "showCloseButton".asInstanceOf[showCloseButton]
   
   @js.native
-  sealed trait showColumnChooser extends js.Object
+  sealed trait showColumn extends StObject
+  inline def showColumn: showColumn = "showColumn".asInstanceOf[showColumn]
   
   @js.native
-  sealed trait showCopyPasteToolbar extends js.Object
+  sealed trait showColumnChooser extends StObject
+  inline def showColumnChooser: showColumnChooser = "showColumnChooser".asInstanceOf[showColumnChooser]
   
   @js.native
-  sealed trait showDelay extends js.Object
+  sealed trait showCopyPasteToolbar extends StObject
+  inline def showCopyPasteToolbar: showCopyPasteToolbar = "showCopyPasteToolbar".asInstanceOf[showCopyPasteToolbar]
   
   @js.native
-  sealed trait showDeleteButtonFor extends js.Object
+  sealed trait showDelay extends StObject
+  inline def showDelay: showDelay = "showDelay".asInstanceOf[showDelay]
   
   @js.native
-  sealed trait showDoneCancelButtons extends js.Object
+  sealed trait showDeleteButtonFor extends StObject
+  inline def showDeleteButtonFor: showDeleteButtonFor = "showDeleteButtonFor".asInstanceOf[showDeleteButtonFor]
   
   @js.native
-  sealed trait showDropDown extends js.Object
+  sealed trait showDoneCancelButtons extends StObject
+  inline def showDoneCancelButtons: showDoneCancelButtons = "showDoneCancelButtons".asInstanceOf[showDoneCancelButtons]
   
   @js.native
-  sealed trait showDropDownButton extends js.Object
+  sealed trait showDropDown extends StObject
+  inline def showDropDown: showDropDown = "showDropDown".asInstanceOf[showDropDown]
   
   @js.native
-  sealed trait showEmptyConditions extends js.Object
+  sealed trait showDropDownButton extends StObject
+  inline def showDropDownButton: showDropDownButton = "showDropDownButton".asInstanceOf[showDropDownButton]
   
   @js.native
-  sealed trait showExpansionIndicator extends js.Object
+  sealed trait showEmptyConditions extends StObject
+  inline def showEmptyConditions: showEmptyConditions = "showEmptyConditions".asInstanceOf[showEmptyConditions]
   
   @js.native
-  sealed trait showFileExtensionIcon extends js.Object
+  sealed trait showExpansionIndicator extends StObject
+  inline def showExpansionIndicator: showExpansionIndicator = "showExpansionIndicator".asInstanceOf[showExpansionIndicator]
   
   @js.native
-  sealed trait showFilterDialogForTable extends js.Object
+  sealed trait showFileExtensionIcon extends StObject
+  inline def showFileExtensionIcon: showFileExtensionIcon = "showFileExtensionIcon".asInstanceOf[showFileExtensionIcon]
   
   @js.native
-  sealed trait showFilterDialogForWorksheet extends js.Object
+  sealed trait showFilterDialogForTable extends StObject
+  inline def showFilterDialogForTable: showFilterDialogForTable = "showFilterDialogForTable".asInstanceOf[showFilterDialogForTable]
   
   @js.native
-  sealed trait showFirstLastPages extends js.Object
+  sealed trait showFilterDialogForWorksheet extends StObject
+  inline def showFilterDialogForWorksheet: showFilterDialogForWorksheet = "showFilterDialogForWorksheet".asInstanceOf[showFilterDialogForWorksheet]
   
   @js.native
-  sealed trait showFixButtons extends js.Object
+  sealed trait showFirstLastPages extends StObject
+  inline def showFirstLastPages: showFirstLastPages = "showFirstLastPages".asInstanceOf[showFirstLastPages]
   
   @js.native
-  sealed trait showFooter extends js.Object
+  sealed trait showFixButtons extends StObject
+  inline def showFixButtons: showFixButtons = "showFixButtons".asInstanceOf[showFixButtons]
   
   @js.native
-  sealed trait showFormattingToolbar extends js.Object
+  sealed trait showFooter extends StObject
+  inline def showFooter: showFooter = "showFooter".asInstanceOf[showFooter]
   
   @js.native
-  sealed trait showHeader extends js.Object
+  sealed trait showFormattingToolbar extends StObject
+  inline def showFormattingToolbar: showFormattingToolbar = "showFormattingToolbar".asInstanceOf[showFormattingToolbar]
   
   @js.native
-  sealed trait showHideDialog extends js.Object
+  sealed trait showHeader extends StObject
+  inline def showHeader: showHeader = "showHeader".asInstanceOf[showHeader]
   
   @js.native
-  sealed trait showIcon extends js.Object
+  sealed trait showHideDialog extends StObject
+  inline def showHideDialog: showHideDialog = "showHideDialog".asInstanceOf[showHideDialog]
   
   @js.native
-  sealed trait showInsertObjectToolbar extends js.Object
+  sealed trait showIcon extends StObject
+  inline def showIcon: showIcon = "showIcon".asInstanceOf[showIcon]
   
   @js.native
-  sealed trait showMaximizeButton extends js.Object
+  sealed trait showInsertObjectToolbar extends StObject
+  inline def showInsertObjectToolbar: showInsertObjectToolbar = "showInsertObjectToolbar".asInstanceOf[showInsertObjectToolbar]
   
   @js.native
-  sealed trait showMinimizeButton extends js.Object
+  sealed trait showMaximizeButton extends StObject
+  inline def showMaximizeButton: showMaximizeButton = "showMaximizeButton".asInstanceOf[showMaximizeButton]
   
   @js.native
-  sealed trait showMultiColumns extends js.Object
+  sealed trait showMinimizeButton extends StObject
+  inline def showMinimizeButton: showMinimizeButton = "showMinimizeButton".asInstanceOf[showMinimizeButton]
   
   @js.native
-  sealed trait showNullConditions extends js.Object
+  sealed trait showMultiColumns extends StObject
+  inline def showMultiColumns: showMultiColumns = "showMultiColumns".asInstanceOf[showMultiColumns]
   
   @js.native
-  sealed trait showOn extends js.Object
+  sealed trait showNullConditions extends StObject
+  inline def showNullConditions: showNullConditions = "showNullConditions".asInstanceOf[showNullConditions]
   
   @js.native
-  sealed trait showPageSizeDropDown extends js.Object
+  sealed trait showOn extends StObject
+  inline def showOn: showOn = "showOn".asInstanceOf[showOn]
   
   @js.native
-  sealed trait showPagerRecordsLabel extends js.Object
+  sealed trait showPageSizeDropDown extends StObject
+  inline def showPageSizeDropDown: showPageSizeDropDown = "showPageSizeDropDown".asInstanceOf[showPageSizeDropDown]
   
   @js.native
-  sealed trait showPinButton extends js.Object
+  sealed trait showPagerRecordsLabel extends StObject
+  inline def showPagerRecordsLabel: showPagerRecordsLabel = "showPagerRecordsLabel".asInstanceOf[showPagerRecordsLabel]
   
   @js.native
-  sealed trait showPrevNextPages extends js.Object
+  sealed trait showPinButton extends StObject
+  inline def showPinButton: showPinButton = "showPinButton".asInstanceOf[showPinButton]
   
   @js.native
-  sealed trait showRightPanelScroll extends js.Object
+  sealed trait showPrevNextPages extends StObject
+  inline def showPrevNextPages: showPrevNextPages = "showPrevNextPages".asInstanceOf[showPrevNextPages]
   
   @js.native
-  sealed trait showSeekTime extends js.Object
+  sealed trait showRightPanelScroll extends StObject
+  inline def showRightPanelScroll: showRightPanelScroll = "showRightPanelScroll".asInstanceOf[showRightPanelScroll]
   
   @js.native
-  sealed trait showSummariesButton extends js.Object
+  sealed trait showSeekTime extends StObject
+  inline def showSeekTime: showSeekTime = "showSeekTime".asInstanceOf[showSeekTime]
   
   @js.native
-  sealed trait showTextToolbar extends js.Object
+  sealed trait showSummariesButton extends StObject
+  inline def showSummariesButton: showSummariesButton = "showSummariesButton".asInstanceOf[showSummariesButton]
   
   @js.native
-  sealed trait showToolTip extends js.Object
+  sealed trait showTextToolbar extends StObject
+  inline def showTextToolbar: showTextToolbar = "showTextToolbar".asInstanceOf[showTextToolbar]
   
   @js.native
-  sealed trait showToolTipTimeout extends js.Object
+  sealed trait showToolTip extends StObject
+  inline def showToolTip: showToolTip = "showToolTip".asInstanceOf[showToolTip]
   
   @js.native
-  sealed trait showTooltip_ extends js.Object
+  sealed trait showToolTipTimeout extends StObject
+  inline def showToolTipTimeout: showToolTipTimeout = "showToolTipTimeout".asInstanceOf[showToolTipTimeout]
   
   @js.native
-  sealed trait showTopOrBottomDialogForTable extends js.Object
+  sealed trait showTooltip_ extends StObject
+  inline def showTooltip_ : showTooltip_ = "showTooltip".asInstanceOf[showTooltip_]
   
   @js.native
-  sealed trait showTopOrBottomDialogForWorksheet extends js.Object
+  sealed trait showTopOrBottomDialogForTable extends StObject
+  inline def showTopOrBottomDialogForTable: showTopOrBottomDialogForTable = "showTopOrBottomDialogForTable".asInstanceOf[showTopOrBottomDialogForTable]
   
   @js.native
-  sealed trait showing extends js.Object
+  sealed trait showTopOrBottomDialogForWorksheet extends StObject
+  inline def showTopOrBottomDialogForWorksheet: showTopOrBottomDialogForWorksheet = "showTopOrBottomDialogForWorksheet".asInstanceOf[showTopOrBottomDialogForWorksheet]
   
   @js.native
-  sealed trait shown extends js.Object
+  sealed trait showing extends StObject
+  inline def showing: showing = "showing".asInstanceOf[showing]
   
   @js.native
-  sealed trait simulateHover extends js.Object
+  sealed trait shown extends StObject
+  inline def shown: shown = "shown".asInstanceOf[shown]
   
   @js.native
-  sealed trait singleBranchExpand extends js.Object
+  sealed trait simulateHover extends StObject
+  inline def simulateHover: simulateHover = "simulateHover".asInstanceOf[simulateHover]
   
   @js.native
-  sealed trait singleColumnTemplate extends js.Object
+  sealed trait singleBranchExpand extends StObject
+  inline def singleBranchExpand: singleBranchExpand = "singleBranchExpand".asInstanceOf[singleBranchExpand]
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait singleColumnTemplate extends StObject
+  inline def singleColumnTemplate: singleColumnTemplate = "singleColumnTemplate".asInstanceOf[singleColumnTemplate]
   
   @js.native
-  sealed trait sizeVersion extends js.Object
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait skipChildren extends js.Object
+  sealed trait sizeVersion extends StObject
+  inline def sizeVersion: sizeVersion = "sizeVersion".asInstanceOf[sizeVersion]
   
   @js.native
-  sealed trait sliceClick extends js.Object
+  sealed trait skipChildren extends StObject
+  inline def skipChildren: skipChildren = "skipChildren".asInstanceOf[skipChildren]
   
   @js.native
-  sealed trait sliceClicked extends js.Object
+  sealed trait sliceClick extends StObject
+  inline def sliceClick: sliceClick = "sliceClick".asInstanceOf[sliceClick]
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait sliceClicked extends StObject
+  inline def sliceClicked: sliceClicked = "sliceClicked".asInstanceOf[sliceClicked]
   
   @js.native
-  sealed trait smallIncrementStep extends js.Object
+  sealed trait slide extends StObject
+  inline def slide: slide = "slide".asInstanceOf[slide]
   
   @js.native
-  sealed trait smoothing extends js.Object
+  sealed trait smallIncrementStep extends StObject
+  inline def smallIncrementStep: smallIncrementStep = "smallIncrementStep".asInstanceOf[smallIncrementStep]
   
   @js.native
-  sealed trait smoothingDuration extends js.Object
+  sealed trait smoothing extends StObject
+  inline def smoothing: smoothing = "smoothing".asInstanceOf[smoothing]
   
   @js.native
-  sealed trait smoothingStep extends js.Object
+  sealed trait smoothingDuration extends StObject
+  inline def smoothingDuration: smoothingDuration = "smoothingDuration".asInstanceOf[smoothingDuration]
   
   @js.native
-  sealed trait sortColumn extends js.Object
+  sealed trait smoothingStep extends StObject
+  inline def smoothingStep: smoothingStep = "smoothingStep".asInstanceOf[smoothingStep]
   
   @js.native
-  sealed trait sortMultiple extends js.Object
+  sealed trait sortColumn extends StObject
+  inline def sortColumn: sortColumn = "sortColumn".asInstanceOf[sortColumn]
   
   @js.native
-  sealed trait sortUrlKey extends js.Object
+  sealed trait sortMultiple extends StObject
+  inline def sortMultiple: sortMultiple = "sortMultiple".asInstanceOf[sortMultiple]
   
   @js.native
-  sealed trait sortUrlKeyAscValue extends js.Object
+  sealed trait sortUrlKey extends StObject
+  inline def sortUrlKey: sortUrlKey = "sortUrlKey".asInstanceOf[sortUrlKey]
   
   @js.native
-  sealed trait sortUrlKeyDescValue extends js.Object
+  sealed trait sortUrlKeyAscValue extends StObject
+  inline def sortUrlKeyAscValue: sortUrlKeyAscValue = "sortUrlKeyAscValue".asInstanceOf[sortUrlKeyAscValue]
   
   @js.native
-  sealed trait sorted extends js.Object
+  sealed trait sortUrlKeyDescValue extends StObject
+  inline def sortUrlKeyDescValue: sortUrlKeyDescValue = "sortUrlKeyDescValue".asInstanceOf[sortUrlKeyDescValue]
   
   @js.native
-  sealed trait sorting extends js.Object
+  sealed trait sorted extends StObject
+  inline def sorted: sorted = "sorted".asInstanceOf[sorted]
   
   @js.native
-  sealed trait sortingDialogContainment extends js.Object
+  sealed trait sorting extends StObject
+  inline def sorting: sorting = "sorting".asInstanceOf[sorting]
   
   @js.native
-  sealed trait sources extends js.Object
+  sealed trait sortingDialogContainment extends StObject
+  inline def sortingDialogContainment: sortingDialogContainment = "sortingDialogContainment".asInstanceOf[sortingDialogContainment]
   
   @js.native
-  sealed trait spinDelta extends js.Object
+  sealed trait sources extends StObject
+  inline def sources: sources = "sources".asInstanceOf[sources]
   
   @js.native
-  sealed trait spinDown extends js.Object
+  sealed trait spinDelta extends StObject
+  inline def spinDelta: spinDelta = "spinDelta".asInstanceOf[spinDelta]
   
   @js.native
-  sealed trait spinDownButton extends js.Object
+  sealed trait spinDown extends StObject
+  inline def spinDown: spinDown = "spinDown".asInstanceOf[spinDown]
   
   @js.native
-  sealed trait spinUp extends js.Object
+  sealed trait spinDownButton extends StObject
+  inline def spinDownButton: spinDownButton = "spinDownButton".asInstanceOf[spinDownButton]
   
   @js.native
-  sealed trait spinUpButton extends js.Object
+  sealed trait spinUp extends StObject
+  inline def spinUp: spinUp = "spinUp".asInstanceOf[spinUp]
   
   @js.native
-  sealed trait spinWrapAround extends js.Object
+  sealed trait spinUpButton extends StObject
+  inline def spinUpButton: spinUpButton = "spinUpButton".asInstanceOf[spinUpButton]
   
   @js.native
-  sealed trait splitter extends js.Object
+  sealed trait spinWrapAround extends StObject
+  inline def spinWrapAround: spinWrapAround = "spinWrapAround".asInstanceOf[spinWrapAround]
   
   @js.native
-  sealed trait splitterOptions extends js.Object
+  sealed trait splitter extends StObject
+  inline def splitter: splitter = "splitter".asInstanceOf[splitter]
   
   @js.native
-  sealed trait squareMarkerTemplate extends js.Object
+  sealed trait splitterOptions extends StObject
+  inline def splitterOptions: splitterOptions = "splitterOptions".asInstanceOf[splitterOptions]
   
   @js.native
-  sealed trait standardColors extends js.Object
+  sealed trait squareMarkerTemplate extends StObject
+  inline def squareMarkerTemplate: squareMarkerTemplate = "squareMarkerTemplate".asInstanceOf[squareMarkerTemplate]
   
   @js.native
-  sealed trait standardColorsTable extends js.Object
+  sealed trait standardColors extends StObject
+  inline def standardColors: standardColors = "standardColors".asInstanceOf[standardColors]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait standardColorsTable extends StObject
+  inline def standardColorsTable: standardColorsTable = "standardColorsTable".asInstanceOf[standardColorsTable]
   
   @js.native
-  sealed trait startAddChildFor extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait startAddRowEdit extends js.Object
+  sealed trait startAddChildFor extends StObject
+  inline def startAddChildFor: startAddChildFor = "startAddChildFor".asInstanceOf[startAddChildFor]
   
   @js.native
-  sealed trait startAngle extends js.Object
+  sealed trait startAddRowEdit extends StObject
+  inline def startAddRowEdit: startAddRowEdit = "startAddRowEdit".asInstanceOf[startAddRowEdit]
   
   @js.native
-  sealed trait startEdit extends js.Object
+  sealed trait startAngle extends StObject
+  inline def startAngle: startAngle = "startAngle".asInstanceOf[startAngle]
   
   @js.native
-  sealed trait startEditTriggers extends js.Object
+  sealed trait startEdit extends StObject
+  inline def startEdit: startEdit = "startEdit".asInstanceOf[startEdit]
   
   @js.native
-  sealed trait startInset extends js.Object
+  sealed trait startEditTriggers extends StObject
+  inline def startEditTriggers: startEditTriggers = "startEditTriggers".asInstanceOf[startEditTriggers]
   
   @js.native
-  sealed trait startPoller extends js.Object
+  sealed trait startInset extends StObject
+  inline def startInset: startInset = "startInset".asInstanceOf[startInset]
   
   @js.native
-  sealed trait startTiledZoomingIfNecessary extends js.Object
+  sealed trait startPoller extends StObject
+  inline def startPoller: startPoller = "startPoller".asInstanceOf[startPoller]
   
   @js.native
-  sealed trait startUpload extends js.Object
+  sealed trait startTiledZoomingIfNecessary extends StObject
+  inline def startTiledZoomingIfNecessary: startTiledZoomingIfNecessary = "startTiledZoomingIfNecessary".asInstanceOf[startTiledZoomingIfNecessary]
   
   @js.native
-  sealed trait state extends js.Object
+  sealed trait startUpload extends StObject
+  inline def startUpload: startUpload = "startUpload".asInstanceOf[startUpload]
   
   @js.native
-  sealed trait stateChanged extends js.Object
+  sealed trait state extends StObject
+  inline def state: state = "state".asInstanceOf[state]
   
   @js.native
-  sealed trait stateChanging extends js.Object
+  sealed trait stateChanged extends StObject
+  inline def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
   
   @js.native
-  sealed trait step extends js.Object
+  sealed trait stateChanging extends StObject
+  inline def stateChanging: stateChanging = "stateChanging".asInstanceOf[stateChanging]
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait step extends StObject
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stopPoller extends js.Object
+  sealed trait stop extends StObject
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stopPoller extends StObject
+  inline def stopPoller: stopPoller = "stopPoller".asInstanceOf[stopPoller]
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait stretch extends StObject
+  inline def stretch: stretch = "stretch".asInstanceOf[stretch]
   
   @js.native
-  sealed trait styleUpdated extends js.Object
+  sealed trait style extends StObject
+  inline def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait subtitle extends js.Object
+  sealed trait styleUpdated extends StObject
+  inline def styleUpdated: styleUpdated = "styleUpdated".asInstanceOf[styleUpdated]
   
   @js.native
-  sealed trait subtitleAlignment extends js.Object
+  sealed trait subtitle extends StObject
+  inline def subtitle: subtitle = "subtitle".asInstanceOf[subtitle]
   
   @js.native
-  sealed trait subtitleBottomMargin extends js.Object
+  sealed trait subtitleAlignment extends StObject
+  inline def subtitleAlignment: subtitleAlignment = "subtitleAlignment".asInstanceOf[subtitleAlignment]
   
   @js.native
-  sealed trait subtitleHorizontalAlignment extends js.Object
+  sealed trait subtitleBottomMargin extends StObject
+  inline def subtitleBottomMargin: subtitleBottomMargin = "subtitleBottomMargin".asInstanceOf[subtitleBottomMargin]
   
   @js.native
-  sealed trait subtitleLeftMargin extends js.Object
+  sealed trait subtitleHorizontalAlignment extends StObject
+  inline def subtitleHorizontalAlignment: subtitleHorizontalAlignment = "subtitleHorizontalAlignment".asInstanceOf[subtitleHorizontalAlignment]
   
   @js.native
-  sealed trait subtitleRightMargin extends js.Object
+  sealed trait subtitleLeftMargin extends StObject
+  inline def subtitleLeftMargin: subtitleLeftMargin = "subtitleLeftMargin".asInstanceOf[subtitleLeftMargin]
   
   @js.native
-  sealed trait subtitleTextColor extends js.Object
+  sealed trait subtitleRightMargin extends StObject
+  inline def subtitleRightMargin: subtitleRightMargin = "subtitleRightMargin".asInstanceOf[subtitleRightMargin]
   
   @js.native
-  sealed trait subtitleTextStyle extends js.Object
+  sealed trait subtitleTextColor extends StObject
+  inline def subtitleTextColor: subtitleTextColor = "subtitleTextColor".asInstanceOf[subtitleTextColor]
   
   @js.native
-  sealed trait subtitleTopMargin extends js.Object
+  sealed trait subtitleTextStyle extends StObject
+  inline def subtitleTextStyle: subtitleTextStyle = "subtitleTextStyle".asInstanceOf[subtitleTextStyle]
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait subtitleTopMargin extends StObject
+  inline def subtitleTopMargin: subtitleTopMargin = "subtitleTopMargin".asInstanceOf[subtitleTopMargin]
   
   @js.native
-  sealed trait successHidden extends js.Object
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait successHiding extends js.Object
+  sealed trait successHidden extends StObject
+  inline def successHidden: successHidden = "successHidden".asInstanceOf[successHidden]
   
   @js.native
-  sealed trait successMessage extends js.Object
+  sealed trait successHiding extends StObject
+  inline def successHiding: successHiding = "successHiding".asInstanceOf[successHiding]
   
   @js.native
-  sealed trait successShowing extends js.Object
+  sealed trait successMessage extends StObject
+  inline def successMessage: successMessage = "successMessage".asInstanceOf[successMessage]
   
   @js.native
-  sealed trait successShown extends js.Object
+  sealed trait successShowing extends StObject
+  inline def successShowing: successShowing = "successShowing".asInstanceOf[successShowing]
   
   @js.native
-  sealed trait summariesCalculated extends js.Object
+  sealed trait successShown extends StObject
+  inline def successShown: successShown = "successShown".asInstanceOf[successShown]
   
   @js.native
-  sealed trait summariesCalculating extends js.Object
+  sealed trait summariesCalculated extends StObject
+  inline def summariesCalculated: summariesCalculated = "summariesCalculated".asInstanceOf[summariesCalculated]
   
   @js.native
-  sealed trait summariesFor extends js.Object
+  sealed trait summariesCalculating extends StObject
+  inline def summariesCalculating: summariesCalculating = "summariesCalculating".asInstanceOf[summariesCalculating]
   
   @js.native
-  sealed trait summariesHeaderButtonTooltip extends js.Object
+  sealed trait summariesFor extends StObject
+  inline def summariesFor: summariesFor = "summariesFor".asInstanceOf[summariesFor]
   
   @js.native
-  sealed trait summariesMethodSelectionChanged extends js.Object
+  sealed trait summariesHeaderButtonTooltip extends StObject
+  inline def summariesHeaderButtonTooltip: summariesHeaderButtonTooltip = "summariesHeaderButtonTooltip".asInstanceOf[summariesHeaderButtonTooltip]
   
   @js.native
-  sealed trait summariesResponseKey extends js.Object
+  sealed trait summariesMethodSelectionChanged extends StObject
+  inline def summariesMethodSelectionChanged: summariesMethodSelectionChanged = "summariesMethodSelectionChanged".asInstanceOf[summariesMethodSelectionChanged]
   
   @js.native
-  sealed trait summariesToggled extends js.Object
+  sealed trait summariesResponseKey extends StObject
+  inline def summariesResponseKey: summariesResponseKey = "summariesResponseKey".asInstanceOf[summariesResponseKey]
   
   @js.native
-  sealed trait summariesToggling extends js.Object
+  sealed trait summariesToggled extends StObject
+  inline def summariesToggled: summariesToggled = "summariesToggled".asInstanceOf[summariesToggled]
   
   @js.native
-  sealed trait summaryCollection extends js.Object
+  sealed trait summariesToggling extends StObject
+  inline def summariesToggling: summariesToggling = "summariesToggling".asInstanceOf[summariesToggling]
   
   @js.native
-  sealed trait summaryExecution extends js.Object
+  sealed trait summaryCollection extends StObject
+  inline def summaryCollection: summaryCollection = "summaryCollection".asInstanceOf[summaryCollection]
   
   @js.native
-  sealed trait summaryExprUrlKey extends js.Object
+  sealed trait summaryExecution extends StObject
+  inline def summaryExecution: summaryExecution = "summaryExecution".asInstanceOf[summaryExecution]
   
   @js.native
-  sealed trait summarySettings extends js.Object
+  sealed trait summaryExprUrlKey extends StObject
+  inline def summaryExprUrlKey: summaryExprUrlKey = "summaryExprUrlKey".asInstanceOf[summaryExprUrlKey]
   
   @js.native
-  sealed trait supportsH264BaselineVideo extends js.Object
+  sealed trait summarySettings extends StObject
+  inline def summarySettings: summarySettings = "summarySettings".asInstanceOf[summarySettings]
   
   @js.native
-  sealed trait supportsOggTheoraVideo extends js.Object
+  sealed trait supportsH264BaselineVideo extends StObject
+  inline def supportsH264BaselineVideo: supportsH264BaselineVideo = "supportsH264BaselineVideo".asInstanceOf[supportsH264BaselineVideo]
   
   @js.native
-  sealed trait supportsVideo extends js.Object
+  sealed trait supportsOggTheoraVideo extends StObject
+  inline def supportsOggTheoraVideo: supportsOggTheoraVideo = "supportsOggTheoraVideo".asInstanceOf[supportsOggTheoraVideo]
   
   @js.native
-  sealed trait supportsWebmVideo extends js.Object
+  sealed trait supportsVideo extends StObject
+  inline def supportsVideo: supportsVideo = "supportsVideo".asInstanceOf[supportsVideo]
   
   @js.native
-  sealed trait suppressKeyboard extends js.Object
+  sealed trait supportsWebmVideo extends StObject
+  inline def supportsWebmVideo: supportsWebmVideo = "supportsWebmVideo".asInstanceOf[supportsWebmVideo]
   
   @js.native
-  sealed trait suppressNotifications extends js.Object
+  sealed trait suppressKeyboard extends StObject
+  inline def suppressKeyboard: suppressKeyboard = "suppressKeyboard".asInstanceOf[suppressKeyboard]
   
   @js.native
-  sealed trait swapDefaultEnabled extends js.Object
+  sealed trait suppressNotifications extends StObject
+  inline def suppressNotifications: suppressNotifications = "suppressNotifications".asInstanceOf[suppressNotifications]
   
   @js.native
-  sealed trait swapDirection extends js.Object
+  sealed trait swapDefaultEnabled extends StObject
+  inline def swapDefaultEnabled: swapDefaultEnabled = "swapDefaultEnabled".asInstanceOf[swapDefaultEnabled]
   
   @js.native
-  sealed trait sweepDirection extends js.Object
+  sealed trait swapDirection extends StObject
+  inline def swapDirection: swapDirection = "swapDirection".asInstanceOf[swapDirection]
   
   @js.native
-  sealed trait swipeDistance extends js.Object
+  sealed trait sweepDirection extends StObject
+  inline def sweepDirection: sweepDirection = "sweepDirection".asInstanceOf[sweepDirection]
   
   @js.native
-  sealed trait swipeToleranceX extends js.Object
+  sealed trait swipeDistance extends StObject
+  inline def swipeDistance: swipeDistance = "swipeDistance".asInstanceOf[swipeDistance]
   
   @js.native
-  sealed trait switchToButton extends js.Object
+  sealed trait swipeToleranceX extends StObject
+  inline def swipeToleranceX: swipeToleranceX = "swipeToleranceX".asInstanceOf[swipeToleranceX]
   
   @js.native
-  sealed trait syncChannel extends js.Object
+  sealed trait switchToButton extends StObject
+  inline def switchToButton: switchToButton = "switchToButton".asInstanceOf[switchToButton]
   
   @js.native
-  sealed trait syncHandleWithBookmark extends js.Object
+  sealed trait syncChannel extends StObject
+  inline def syncChannel: syncChannel = "syncChannel".asInstanceOf[syncChannel]
   
   @js.native
-  sealed trait syncHeights extends js.Object
+  sealed trait syncHandleWithBookmark extends StObject
+  inline def syncHandleWithBookmark: syncHandleWithBookmark = "syncHandleWithBookmark".asInstanceOf[syncHandleWithBookmark]
   
   @js.native
-  sealed trait syncRowHeights extends js.Object
+  sealed trait syncHeights extends StObject
+  inline def syncHeights: syncHeights = "syncHeights".asInstanceOf[syncHeights]
   
   @js.native
-  sealed trait syncRowsHeights extends js.Object
+  sealed trait syncRowHeights extends StObject
+  inline def syncRowHeights: syncRowHeights = "syncRowHeights".asInstanceOf[syncRowHeights]
   
   @js.native
-  sealed trait syncedElemsH extends js.Object
+  sealed trait syncRowsHeights extends StObject
+  inline def syncRowsHeights: syncRowsHeights = "syncRowsHeights".asInstanceOf[syncRowsHeights]
   
   @js.native
-  sealed trait syncedElemsV extends js.Object
+  sealed trait syncedElemsH extends StObject
+  inline def syncedElemsH: syncedElemsH = "syncedElemsH".asInstanceOf[syncedElemsH]
   
   @js.native
-  sealed trait synchronizeHorizontally extends js.Object
+  sealed trait syncedElemsV extends StObject
+  inline def syncedElemsV: syncedElemsV = "syncedElemsV".asInstanceOf[syncedElemsV]
   
   @js.native
-  sealed trait synchronizeVertically extends js.Object
+  sealed trait synchronizeHorizontally extends StObject
+  inline def synchronizeHorizontally: synchronizeHorizontally = "synchronizeHorizontally".asInstanceOf[synchronizeHorizontally]
   
   @js.native
-  sealed trait tabIndex extends js.Object
+  sealed trait synchronizeVertically extends StObject
+  inline def synchronizeVertically: synchronizeVertically = "synchronizeVertically".asInstanceOf[synchronizeVertically]
   
   @js.native
-  sealed trait target extends js.Object
+  sealed trait tabIndex extends StObject
+  inline def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
   
   @js.native
-  sealed trait targetButton extends js.Object
+  sealed trait target extends StObject
+  inline def target: target = "target".asInstanceOf[target]
   
   @js.native
-  sealed trait targetValue extends js.Object
+  sealed trait targetButton extends StObject
+  inline def targetButton: targetButton = "targetButton".asInstanceOf[targetButton]
   
   @js.native
-  sealed trait targetValueBreadth extends js.Object
+  sealed trait targetValue extends StObject
+  inline def targetValue: targetValue = "targetValue".asInstanceOf[targetValue]
   
   @js.native
-  sealed trait targetValueBrush extends js.Object
+  sealed trait targetValueBreadth extends StObject
+  inline def targetValueBreadth: targetValueBreadth = "targetValueBreadth".asInstanceOf[targetValueBreadth]
   
   @js.native
-  sealed trait targetValueInnerExtent extends js.Object
+  sealed trait targetValueBrush extends StObject
+  inline def targetValueBrush: targetValueBrush = "targetValueBrush".asInstanceOf[targetValueBrush]
   
   @js.native
-  sealed trait targetValueName extends js.Object
+  sealed trait targetValueInnerExtent extends StObject
+  inline def targetValueInnerExtent: targetValueInnerExtent = "targetValueInnerExtent".asInstanceOf[targetValueInnerExtent]
   
   @js.native
-  sealed trait targetValueOuterExtent extends js.Object
+  sealed trait targetValueName extends StObject
+  inline def targetValueName: targetValueName = "targetValueName".asInstanceOf[targetValueName]
   
   @js.native
-  sealed trait targetValueOutline extends js.Object
+  sealed trait targetValueOuterExtent extends StObject
+  inline def targetValueOuterExtent: targetValueOuterExtent = "targetValueOuterExtent".asInstanceOf[targetValueOuterExtent]
   
   @js.native
-  sealed trait targetValueStrokeThickness extends js.Object
+  sealed trait targetValueOutline extends StObject
+  inline def targetValueOutline: targetValueOutline = "targetValueOutline".asInstanceOf[targetValueOutline]
   
   @js.native
-  sealed trait targetValueToolTipTemplate extends js.Object
+  sealed trait targetValueStrokeThickness extends StObject
+  inline def targetValueStrokeThickness: targetValueStrokeThickness = "targetValueStrokeThickness".asInstanceOf[targetValueStrokeThickness]
   
   @js.native
-  sealed trait templatingEngine extends js.Object
+  sealed trait targetValueToolTipTemplate extends StObject
+  inline def targetValueToolTipTemplate: targetValueToolTipTemplate = "targetValueToolTipTemplate".asInstanceOf[targetValueToolTipTemplate]
   
   @js.native
-  sealed trait temporaryUrl extends js.Object
+  sealed trait templatingEngine extends StObject
+  inline def templatingEngine: templatingEngine = "templatingEngine".asInstanceOf[templatingEngine]
   
   @js.native
-  sealed trait tetragramMarkerTemplate extends js.Object
+  sealed trait temporaryUrl extends StObject
+  inline def temporaryUrl: temporaryUrl = "temporaryUrl".asInstanceOf[temporaryUrl]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait tetragramMarkerTemplate extends StObject
+  inline def tetragramMarkerTemplate: tetragramMarkerTemplate = "tetragramMarkerTemplate".asInstanceOf[tetragramMarkerTemplate]
   
   @js.native
-  sealed trait textAlign extends js.Object
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait textChanged extends js.Object
+  sealed trait textAlign extends StObject
+  inline def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
   
   @js.native
-  sealed trait textColor extends js.Object
+  sealed trait textChanged extends StObject
+  inline def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
   
   @js.native
-  sealed trait textInput extends js.Object
+  sealed trait textColor extends StObject
+  inline def textColor: textColor = "textColor".asInstanceOf[textColor]
   
   @js.native
-  sealed trait textKey extends js.Object
+  sealed trait textInput extends StObject
+  inline def textInput: textInput = "textInput".asInstanceOf[textInput]
   
   @js.native
-  sealed trait textMode extends js.Object
+  sealed trait textKey extends StObject
+  inline def textKey: textKey = "textKey".asInstanceOf[textKey]
   
   @js.native
-  sealed trait textStyle extends js.Object
+  sealed trait textMode extends StObject
+  inline def textMode: textMode = "textMode".asInstanceOf[textMode]
   
   @js.native
-  sealed trait theme extends js.Object
+  sealed trait textStyle extends StObject
+  inline def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
   
   @js.native
-  sealed trait thickness extends js.Object
+  sealed trait theme extends StObject
+  inline def theme: theme = "theme".asInstanceOf[theme]
   
   @js.native
-  sealed trait threshold extends js.Object
+  sealed trait thickness extends StObject
+  inline def thickness: thickness = "thickness".asInstanceOf[thickness]
   
   @js.native
-  sealed trait thumbCalloutTextStyle extends js.Object
+  sealed trait threshold extends StObject
+  inline def threshold: threshold = "threshold".asInstanceOf[threshold]
   
   @js.native
-  sealed trait thumbDragEnd extends js.Object
+  sealed trait thumbCalloutTextStyle extends StObject
+  inline def thumbCalloutTextStyle: thumbCalloutTextStyle = "thumbCalloutTextStyle".asInstanceOf[thumbCalloutTextStyle]
   
   @js.native
-  sealed trait thumbDragMove extends js.Object
+  sealed trait thumbDragEnd extends StObject
+  inline def thumbDragEnd: thumbDragEnd = "thumbDragEnd".asInstanceOf[thumbDragEnd]
   
   @js.native
-  sealed trait thumbDragStart extends js.Object
+  sealed trait thumbDragMove extends StObject
+  inline def thumbDragMove: thumbDragMove = "thumbDragMove".asInstanceOf[thumbDragMove]
   
   @js.native
-  sealed trait tickBrush extends js.Object
+  sealed trait thumbDragStart extends StObject
+  inline def thumbDragStart: thumbDragStart = "thumbDragStart".asInstanceOf[thumbDragStart]
   
   @js.native
-  sealed trait tickEndExtent extends js.Object
+  sealed trait tickBrush extends StObject
+  inline def tickBrush: tickBrush = "tickBrush".asInstanceOf[tickBrush]
   
   @js.native
-  sealed trait tickStartExtent extends js.Object
+  sealed trait tickEndExtent extends StObject
+  inline def tickEndExtent: tickEndExtent = "tickEndExtent".asInstanceOf[tickEndExtent]
   
   @js.native
-  sealed trait tickStrokeThickness extends js.Object
+  sealed trait tickStartExtent extends StObject
+  inline def tickStartExtent: tickStartExtent = "tickStartExtent".asInstanceOf[tickStartExtent]
   
   @js.native
-  sealed trait ticksPostInitial extends js.Object
+  sealed trait tickStrokeThickness extends StObject
+  inline def tickStrokeThickness: tickStrokeThickness = "tickStrokeThickness".asInstanceOf[tickStrokeThickness]
   
   @js.native
-  sealed trait ticksPreTerminal extends js.Object
+  sealed trait ticksPostInitial extends StObject
+  inline def ticksPostInitial: ticksPostInitial = "ticksPostInitial".asInstanceOf[ticksPostInitial]
   
   @js.native
-  sealed trait tileMaximized extends js.Object
+  sealed trait ticksPreTerminal extends StObject
+  inline def ticksPreTerminal: ticksPreTerminal = "ticksPreTerminal".asInstanceOf[ticksPreTerminal]
   
   @js.native
-  sealed trait tileMaximizing extends js.Object
+  sealed trait tileMaximized extends StObject
+  inline def tileMaximized: tileMaximized = "tileMaximized".asInstanceOf[tileMaximized]
   
   @js.native
-  sealed trait tileMinimized extends js.Object
+  sealed trait tileMaximizing extends StObject
+  inline def tileMaximizing: tileMaximizing = "tileMaximizing".asInstanceOf[tileMaximizing]
   
   @js.native
-  sealed trait tileMinimizing extends js.Object
+  sealed trait tileMinimized extends StObject
+  inline def tileMinimized: tileMinimized = "tileMinimized".asInstanceOf[tileMinimized]
   
   @js.native
-  sealed trait tileRendered extends js.Object
+  sealed trait tileMinimizing extends StObject
+  inline def tileMinimizing: tileMinimizing = "tileMinimizing".asInstanceOf[tileMinimizing]
   
   @js.native
-  sealed trait tileRendering extends js.Object
+  sealed trait tileRendered extends StObject
+  inline def tileRendered: tileRendered = "tileRendered".asInstanceOf[tileRendered]
   
   @js.native
-  sealed trait timeDisplayFormat extends js.Object
+  sealed trait tileRendering extends StObject
+  inline def tileRendering: tileRendering = "tileRendering".asInstanceOf[tileRendering]
   
   @js.native
-  sealed trait timeInputFormat extends js.Object
+  sealed trait timeDisplayFormat extends StObject
+  inline def timeDisplayFormat: timeDisplayFormat = "timeDisplayFormat".asInstanceOf[timeDisplayFormat]
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait timeInputFormat extends StObject
+  inline def timeInputFormat: timeInputFormat = "timeInputFormat".asInstanceOf[timeInputFormat]
   
   @js.native
-  sealed trait titleAlignment extends js.Object
+  sealed trait title extends StObject
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait titleBottomMargin extends js.Object
+  sealed trait titleAlignment extends StObject
+  inline def titleAlignment: titleAlignment = "titleAlignment".asInstanceOf[titleAlignment]
   
   @js.native
-  sealed trait titleHorizontalAlignment extends js.Object
+  sealed trait titleBottomMargin extends StObject
+  inline def titleBottomMargin: titleBottomMargin = "titleBottomMargin".asInstanceOf[titleBottomMargin]
   
   @js.native
-  sealed trait titleLeftMargin extends js.Object
+  sealed trait titleHorizontalAlignment extends StObject
+  inline def titleHorizontalAlignment: titleHorizontalAlignment = "titleHorizontalAlignment".asInstanceOf[titleHorizontalAlignment]
   
   @js.native
-  sealed trait titleRightMargin extends js.Object
+  sealed trait titleLeftMargin extends StObject
+  inline def titleLeftMargin: titleLeftMargin = "titleLeftMargin".asInstanceOf[titleLeftMargin]
   
   @js.native
-  sealed trait titleTextColor extends js.Object
+  sealed trait titleRightMargin extends StObject
+  inline def titleRightMargin: titleRightMargin = "titleRightMargin".asInstanceOf[titleRightMargin]
   
   @js.native
-  sealed trait titleTextStyle extends js.Object
+  sealed trait titleTextColor extends StObject
+  inline def titleTextColor: titleTextColor = "titleTextColor".asInstanceOf[titleTextColor]
   
   @js.native
-  sealed trait titleTopMargin extends js.Object
+  sealed trait titleTextStyle extends StObject
+  inline def titleTextStyle: titleTextStyle = "titleTextStyle".asInstanceOf[titleTextStyle]
   
   @js.native
-  sealed trait toLevel extends js.Object
+  sealed trait titleTopMargin extends StObject
+  inline def titleTopMargin: titleTopMargin = "titleTopMargin".asInstanceOf[titleTopMargin]
   
   @js.native
-  sealed trait toLower extends js.Object
+  sealed trait toLevel extends StObject
+  inline def toLevel: toLevel = "toLevel".asInstanceOf[toLevel]
   
   @js.native
-  sealed trait toUpper extends js.Object
+  sealed trait toLower extends StObject
+  inline def toLower: toLower = "toLower".asInstanceOf[toLower]
   
   @js.native
-  sealed trait todayButton extends js.Object
+  sealed trait toUpper extends StObject
+  inline def toUpper: toUpper = "toUpper".asInstanceOf[toUpper]
   
   @js.native
-  sealed trait toggle extends js.Object
+  sealed trait todayButton extends StObject
+  inline def todayButton: todayButton = "todayButton".asInstanceOf[todayButton]
   
   @js.native
-  sealed trait toggleCheckState extends js.Object
+  sealed trait toggle extends StObject
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
   
   @js.native
-  sealed trait toggleCheckStateById extends js.Object
+  sealed trait toggleCheckState extends StObject
+  inline def toggleCheckState: toggleCheckState = "toggleCheckState".asInstanceOf[toggleCheckState]
   
   @js.native
-  sealed trait toggleCheckstate_ extends js.Object
+  sealed trait toggleCheckStateById extends StObject
+  inline def toggleCheckStateById: toggleCheckStateById = "toggleCheckStateById".asInstanceOf[toggleCheckStateById]
   
   @js.native
-  sealed trait toggleDropDown extends js.Object
+  sealed trait toggleCheckstate_ extends StObject
+  inline def toggleCheckstate_ : toggleCheckstate_ = "toggleCheckstate".asInstanceOf[toggleCheckstate_]
   
   @js.native
-  sealed trait toggleFilterRowByFeatureChooser extends js.Object
+  sealed trait toggleDropDown extends StObject
+  inline def toggleDropDown: toggleDropDown = "toggleDropDown".asInstanceOf[toggleDropDown]
   
   @js.native
-  sealed trait toggleGroup extends js.Object
+  sealed trait toggleFilterRowByFeatureChooser extends StObject
+  inline def toggleFilterRowByFeatureChooser: toggleFilterRowByFeatureChooser = "toggleFilterRowByFeatureChooser".asInstanceOf[toggleFilterRowByFeatureChooser]
   
   @js.native
-  sealed trait togglePlay extends js.Object
+  sealed trait toggleGroup extends StObject
+  inline def toggleGroup: toggleGroup = "toggleGroup".asInstanceOf[toggleGroup]
   
   @js.native
-  sealed trait toggleRow extends js.Object
+  sealed trait togglePlay extends StObject
+  inline def togglePlay: togglePlay = "togglePlay".asInstanceOf[togglePlay]
   
   @js.native
-  sealed trait toggleSelection extends js.Object
+  sealed trait toggleRow extends StObject
+  inline def toggleRow: toggleRow = "toggleRow".asInstanceOf[toggleRow]
   
   @js.native
-  sealed trait toggleSummariesRows extends js.Object
+  sealed trait toggleSelection extends StObject
+  inline def toggleSelection: toggleSelection = "toggleSelection".asInstanceOf[toggleSelection]
   
   @js.native
-  sealed trait toolTipType extends js.Object
+  sealed trait toggleSummariesRows extends StObject
+  inline def toggleSummariesRows: toggleSummariesRows = "toggleSummariesRows".asInstanceOf[toggleSummariesRows]
   
   @js.native
-  sealed trait toolbarButtonClick extends js.Object
+  sealed trait toolTipType extends StObject
+  inline def toolTipType: toolTipType = "toolTipType".asInstanceOf[toolTipType]
   
   @js.native
-  sealed trait toolbarCollapsed extends js.Object
+  sealed trait toolbarButtonClick extends StObject
+  inline def toolbarButtonClick: toolbarButtonClick = "toolbarButtonClick".asInstanceOf[toolbarButtonClick]
   
   @js.native
-  sealed trait toolbarCollapsing extends js.Object
+  sealed trait toolbarCollapsed extends StObject
+  inline def toolbarCollapsed: toolbarCollapsed = "toolbarCollapsed".asInstanceOf[toolbarCollapsed]
   
   @js.native
-  sealed trait toolbarComboOpening extends js.Object
+  sealed trait toolbarCollapsing extends StObject
+  inline def toolbarCollapsing: toolbarCollapsing = "toolbarCollapsing".asInstanceOf[toolbarCollapsing]
   
   @js.native
-  sealed trait toolbarComboSelected extends js.Object
+  sealed trait toolbarComboOpening extends StObject
+  inline def toolbarComboOpening: toolbarComboOpening = "toolbarComboOpening".asInstanceOf[toolbarComboOpening]
   
   @js.native
-  sealed trait toolbarCustomItemClick extends js.Object
+  sealed trait toolbarComboSelected extends StObject
+  inline def toolbarComboSelected: toolbarComboSelected = "toolbarComboSelected".asInstanceOf[toolbarComboSelected]
   
   @js.native
-  sealed trait toolbarExpanded extends js.Object
+  sealed trait toolbarCustomItemClick extends StObject
+  inline def toolbarCustomItemClick: toolbarCustomItemClick = "toolbarCustomItemClick".asInstanceOf[toolbarCustomItemClick]
   
   @js.native
-  sealed trait toolbarExpanding extends js.Object
+  sealed trait toolbarExpanded extends StObject
+  inline def toolbarExpanded: toolbarExpanded = "toolbarExpanded".asInstanceOf[toolbarExpanded]
   
   @js.native
-  sealed trait toolbarHeight extends js.Object
+  sealed trait toolbarExpanding extends StObject
+  inline def toolbarExpanding: toolbarExpanding = "toolbarExpanding".asInstanceOf[toolbarExpanding]
   
   @js.native
-  sealed trait toolbarSettings extends js.Object
+  sealed trait toolbarHeight extends StObject
+  inline def toolbarHeight: toolbarHeight = "toolbarHeight".asInstanceOf[toolbarHeight]
   
   @js.native
-  sealed trait toolbarTemplate extends js.Object
+  sealed trait toolbarSettings extends StObject
+  inline def toolbarSettings: toolbarSettings = "toolbarSettings".asInstanceOf[toolbarSettings]
   
   @js.native
-  sealed trait tooltipHidden extends js.Object
+  sealed trait toolbarTemplate extends StObject
+  inline def toolbarTemplate: toolbarTemplate = "toolbarTemplate".asInstanceOf[toolbarTemplate]
   
   @js.native
-  sealed trait tooltipHiding extends js.Object
+  sealed trait tooltipHidden extends StObject
+  inline def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
   
   @js.native
-  sealed trait tooltipShowing extends js.Object
+  sealed trait tooltipHiding extends StObject
+  inline def tooltipHiding: tooltipHiding = "tooltipHiding".asInstanceOf[tooltipHiding]
   
   @js.native
-  sealed trait tooltipShown extends js.Object
+  sealed trait tooltipShowing extends StObject
+  inline def tooltipShowing: tooltipShowing = "tooltipShowing".asInstanceOf[tooltipShowing]
   
   @js.native
-  sealed trait tooltipTemplate extends js.Object
+  sealed trait tooltipShown extends StObject
+  inline def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
   
   @js.native
-  sealed trait tooltipTemplates extends js.Object
+  sealed trait tooltipTemplate extends StObject
+  inline def tooltipTemplate: tooltipTemplate = "tooltipTemplate".asInstanceOf[tooltipTemplate]
   
   @js.native
-  sealed trait topMargin extends js.Object
+  sealed trait tooltipTemplates extends StObject
+  inline def tooltipTemplates: tooltipTemplates = "tooltipTemplates".asInstanceOf[tooltipTemplates]
   
   @js.native
-  sealed trait totalRecordsCount extends js.Object
+  sealed trait topMargin extends StObject
+  inline def topMargin: topMargin = "topMargin".asInstanceOf[topMargin]
   
   @js.native
-  sealed trait touchDragSelect extends js.Object
+  sealed trait totalRecordsCount extends StObject
+  inline def totalRecordsCount: totalRecordsCount = "totalRecordsCount".asInstanceOf[totalRecordsCount]
   
   @js.native
-  sealed trait trackEndInset extends js.Object
+  sealed trait touchDragSelect extends StObject
+  inline def touchDragSelect: touchDragSelect = "touchDragSelect".asInstanceOf[touchDragSelect]
   
   @js.native
-  sealed trait trackFocus extends js.Object
+  sealed trait trackEndInset extends StObject
+  inline def trackEndInset: trackEndInset = "trackEndInset".asInstanceOf[trackEndInset]
   
   @js.native
-  sealed trait trackStartInset extends js.Object
+  sealed trait trackFocus extends StObject
+  inline def trackFocus: trackFocus = "trackFocus".asInstanceOf[trackFocus]
   
   @js.native
-  sealed trait transactionLog extends js.Object
+  sealed trait trackStartInset extends StObject
+  inline def trackStartInset: trackStartInset = "trackStartInset".asInstanceOf[trackStartInset]
   
   @js.native
-  sealed trait transactionsAsString extends js.Object
+  sealed trait transactionLog extends StObject
+  inline def transactionLog: transactionLog = "transactionLog".asInstanceOf[transactionLog]
   
   @js.native
-  sealed trait transitionDuration extends js.Object
+  sealed trait transactionsAsString extends StObject
+  inline def transactionsAsString: transactionsAsString = "transactionsAsString".asInstanceOf[transactionsAsString]
   
   @js.native
-  sealed trait transitionEasingFunction extends js.Object
+  sealed trait transitionDuration extends StObject
+  inline def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
   
   @js.native
-  sealed trait transitionInDuration extends js.Object
+  sealed trait transitionEasingFunction extends StObject
+  inline def transitionEasingFunction: transitionEasingFunction = "transitionEasingFunction".asInstanceOf[transitionEasingFunction]
   
   @js.native
-  sealed trait transitionInEasingFunction extends js.Object
+  sealed trait transitionInDuration extends StObject
+  inline def transitionInDuration: transitionInDuration = "transitionInDuration".asInstanceOf[transitionInDuration]
   
   @js.native
-  sealed trait transitionInMode extends js.Object
+  sealed trait transitionInEasingFunction extends StObject
+  inline def transitionInEasingFunction: transitionInEasingFunction = "transitionInEasingFunction".asInstanceOf[transitionInEasingFunction]
   
   @js.native
-  sealed trait transitionInSpeedType extends js.Object
+  sealed trait transitionInMode extends StObject
+  inline def transitionInMode: transitionInMode = "transitionInMode".asInstanceOf[transitionInMode]
   
   @js.native
-  sealed trait transitionProgress extends js.Object
+  sealed trait transitionInSpeedType extends StObject
+  inline def transitionInSpeedType: transitionInSpeedType = "transitionInSpeedType".asInstanceOf[transitionInSpeedType]
   
   @js.native
-  sealed trait treeRowHeaderIndentation extends js.Object
+  sealed trait transitionProgress extends StObject
+  inline def transitionProgress: transitionProgress = "transitionProgress".asInstanceOf[transitionProgress]
   
   @js.native
-  sealed trait trendLineBrush extends js.Object
+  sealed trait treeRowHeaderIndentation extends StObject
+  inline def treeRowHeaderIndentation: treeRowHeaderIndentation = "treeRowHeaderIndentation".asInstanceOf[treeRowHeaderIndentation]
   
   @js.native
-  sealed trait trendLineBrushes extends js.Object
+  sealed trait trendLineBrush extends StObject
+  inline def trendLineBrush: trendLineBrush = "trendLineBrush".asInstanceOf[trendLineBrush]
   
   @js.native
-  sealed trait trendLinePeriod extends js.Object
+  sealed trait trendLineBrushes extends StObject
+  inline def trendLineBrushes: trendLineBrushes = "trendLineBrushes".asInstanceOf[trendLineBrushes]
   
   @js.native
-  sealed trait trendLineThickness extends js.Object
+  sealed trait trendLinePeriod extends StObject
+  inline def trendLinePeriod: trendLinePeriod = "trendLinePeriod".asInstanceOf[trendLinePeriod]
   
   @js.native
-  sealed trait trendLineType extends js.Object
+  sealed trait trendLineThickness extends StObject
+  inline def trendLineThickness: trendLineThickness = "trendLineThickness".asInstanceOf[trendLineThickness]
   
   @js.native
-  sealed trait trendLineTypePickerTemplate extends js.Object
+  sealed trait trendLineType extends StObject
+  inline def trendLineType: trendLineType = "trendLineType".asInstanceOf[trendLineType]
   
   @js.native
-  sealed trait triangleMarkerTemplate extends js.Object
+  sealed trait trendLineTypePickerTemplate extends StObject
+  inline def trendLineTypePickerTemplate: trendLineTypePickerTemplate = "trendLineTypePickerTemplate".asInstanceOf[trendLineTypePickerTemplate]
   
   @js.native
-  sealed trait triangulationDataSource extends js.Object
+  sealed trait triangleMarkerTemplate extends StObject
+  inline def triangleMarkerTemplate: triangleMarkerTemplate = "triangleMarkerTemplate".asInstanceOf[triangleMarkerTemplate]
   
   @js.native
-  sealed trait triangulationStatusChanged extends js.Object
+  sealed trait triangulationDataSource extends StObject
+  inline def triangulationDataSource: triangulationDataSource = "triangulationDataSource".asInstanceOf[triangulationDataSource]
   
   @js.native
-  sealed trait tupleMemberCollapsed extends js.Object
+  sealed trait triangulationStatusChanged extends StObject
+  inline def triangulationStatusChanged: triangulationStatusChanged = "triangulationStatusChanged".asInstanceOf[triangulationStatusChanged]
   
   @js.native
-  sealed trait tupleMemberCollapsing extends js.Object
+  sealed trait tupleMemberCollapsed extends StObject
+  inline def tupleMemberCollapsed: tupleMemberCollapsed = "tupleMemberCollapsed".asInstanceOf[tupleMemberCollapsed]
   
   @js.native
-  sealed trait tupleMemberExpanded extends js.Object
+  sealed trait tupleMemberCollapsing extends StObject
+  inline def tupleMemberCollapsing: tupleMemberCollapsing = "tupleMemberCollapsing".asInstanceOf[tupleMemberCollapsing]
   
   @js.native
-  sealed trait tupleMemberExpanding extends js.Object
+  sealed trait tupleMemberExpanded extends StObject
+  inline def tupleMemberExpanded: tupleMemberExpanded = "tupleMemberExpanded".asInstanceOf[tupleMemberExpanded]
   
   @js.native
-  sealed trait `type` extends js.Object
+  sealed trait tupleMemberExpanding extends StObject
+  inline def tupleMemberExpanding: tupleMemberExpanding = "tupleMemberExpanding".asInstanceOf[tupleMemberExpanding]
   
   @js.native
-  sealed trait typicalBasedOn extends js.Object
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
-  sealed trait uncheckNode extends js.Object
+  sealed trait typicalBasedOn extends StObject
+  inline def typicalBasedOn: typicalBasedOn = "typicalBasedOn".asInstanceOf[typicalBasedOn]
   
   @js.native
-  sealed trait uncheckedNodes extends js.Object
+  sealed trait uncheckNode extends StObject
+  inline def uncheckNode: uncheckNode = "uncheckNode".asInstanceOf[uncheckNode]
   
   @js.native
-  sealed trait uncheckedRows extends js.Object
+  sealed trait uncheckedNodes extends StObject
+  inline def uncheckedNodes: uncheckedNodes = "uncheckedNodes".asInstanceOf[uncheckedNodes]
   
   @js.native
-  sealed trait undo extends js.Object
+  sealed trait uncheckedRows extends StObject
+  inline def uncheckedRows: uncheckedRows = "uncheckedRows".asInstanceOf[uncheckedRows]
   
   @js.native
-  sealed trait unfilledCharsPrompt extends js.Object
+  sealed trait undo extends StObject
+  inline def undo: undo = "undo".asInstanceOf[undo]
   
   @js.native
-  sealed trait unfixAllColumns extends js.Object
+  sealed trait unfilledCharsPrompt extends StObject
+  inline def unfilledCharsPrompt: unfilledCharsPrompt = "unfilledCharsPrompt".asInstanceOf[unfilledCharsPrompt]
   
   @js.native
-  sealed trait unfixColumn extends js.Object
+  sealed trait unfixAllColumns extends StObject
+  inline def unfixAllColumns: unfixAllColumns = "unfixAllColumns".asInstanceOf[unfixAllColumns]
   
   @js.native
-  sealed trait unfixDataSkippedColumns extends js.Object
+  sealed trait unfixColumn extends StObject
+  inline def unfixColumn: unfixColumn = "unfixColumn".asInstanceOf[unfixColumn]
   
   @js.native
-  sealed trait unfixNonDataColumns extends js.Object
+  sealed trait unfixDataSkippedColumns extends StObject
+  inline def unfixDataSkippedColumns: unfixDataSkippedColumns = "unfixDataSkippedColumns".asInstanceOf[unfixDataSkippedColumns]
   
   @js.native
-  sealed trait ungroupAll extends js.Object
+  sealed trait unfixNonDataColumns extends StObject
+  inline def unfixNonDataColumns: unfixNonDataColumns = "unfixNonDataColumns".asInstanceOf[unfixNonDataColumns]
   
   @js.native
-  sealed trait ungroupByColumn extends js.Object
+  sealed trait ungroupAll extends StObject
+  inline def ungroupAll: ungroupAll = "ungroupAll".asInstanceOf[ungroupAll]
   
   @js.native
-  sealed trait unknownValuePlotting extends js.Object
+  sealed trait ungroupByColumn extends StObject
+  inline def ungroupByColumn: ungroupByColumn = "ungroupByColumn".asInstanceOf[ungroupByColumn]
   
   @js.native
-  sealed trait unmergeColumn extends js.Object
+  sealed trait unknownValuePlotting extends StObject
+  inline def unknownValuePlotting: unknownValuePlotting = "unknownValuePlotting".asInstanceOf[unknownValuePlotting]
   
   @js.native
-  sealed trait unmergeRow extends js.Object
+  sealed trait unmergeColumn extends StObject
+  inline def unmergeColumn: unmergeColumn = "unmergeColumn".asInstanceOf[unmergeColumn]
   
   @js.native
-  sealed trait unpin extends js.Object
+  sealed trait unmergeRow extends StObject
+  inline def unmergeRow: unmergeRow = "unmergeRow".asInstanceOf[unmergeRow]
   
   @js.native
-  sealed trait unpinButtonTitle extends js.Object
+  sealed trait unpin extends StObject
+  inline def unpin: unpin = "unpin".asInstanceOf[unpin]
   
   @js.native
-  sealed trait unscaleValue extends js.Object
+  sealed trait unpinButtonTitle extends StObject
+  inline def unpinButtonTitle: unpinButtonTitle = "unpinButtonTitle".asInstanceOf[unpinButtonTitle]
   
   @js.native
-  sealed trait unselectedSliceStyle extends js.Object
+  sealed trait unscaleValue extends StObject
+  inline def unscaleValue: unscaleValue = "unscaleValue".asInstanceOf[unscaleValue]
   
   @js.native
-  sealed trait unsortColumn extends js.Object
+  sealed trait unselectedSliceStyle extends StObject
+  inline def unselectedSliceStyle: unselectedSliceStyle = "unselectedSliceStyle".asInstanceOf[unselectedSliceStyle]
   
   @js.native
-  sealed trait unsortedColumnTooltip extends js.Object
+  sealed trait unsortColumn extends StObject
+  inline def unsortColumn: unsortColumn = "unsortColumn".asInstanceOf[unsortColumn]
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait unsortedColumnTooltip extends StObject
+  inline def unsortedColumnTooltip: unsortedColumnTooltip = "unsortedColumnTooltip".asInstanceOf[unsortedColumnTooltip]
   
   @js.native
-  sealed trait updateField extends js.Object
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait updateGrid extends js.Object
+  sealed trait updateField extends StObject
+  inline def updateField: updateField = "updateField".asInstanceOf[updateField]
   
   @js.native
-  sealed trait updateRange extends js.Object
+  sealed trait updateGrid extends StObject
+  inline def updateGrid: updateGrid = "updateGrid".asInstanceOf[updateGrid]
   
   @js.native
-  sealed trait updateRow extends js.Object
+  sealed trait updateRange extends StObject
+  inline def updateRange: updateRange = "updateRange".asInstanceOf[updateRange]
   
   @js.native
-  sealed trait updateSeries extends js.Object
+  sealed trait updateRow extends StObject
+  inline def updateRow: updateRow = "updateRow".asInstanceOf[updateRow]
   
   @js.native
-  sealed trait updateTooltip extends js.Object
+  sealed trait updateSeries extends StObject
+  inline def updateSeries: updateSeries = "updateSeries".asInstanceOf[updateSeries]
   
   @js.native
-  sealed trait updateUrl extends js.Object
+  sealed trait updateTooltip extends StObject
+  inline def updateTooltip: updateTooltip = "updateTooltip".asInstanceOf[updateTooltip]
   
   @js.native
-  sealed trait uploadUrl extends js.Object
+  sealed trait updateUrl extends StObject
+  inline def updateUrl: updateUrl = "updateUrl".asInstanceOf[updateUrl]
   
   @js.native
-  sealed trait useBezierCurve extends js.Object
+  sealed trait uploadUrl extends StObject
+  inline def uploadUrl: uploadUrl = "uploadUrl".asInstanceOf[uploadUrl]
   
   @js.native
-  sealed trait useGridColumnFormatter extends js.Object
+  sealed trait useBezierCurve extends StObject
+  inline def useBezierCurve: useBezierCurve = "useBezierCurve".asInstanceOf[useBezierCurve]
   
   @js.native
-  sealed trait useOuterLabelsForLegend extends js.Object
+  sealed trait useGridColumnFormatter extends StObject
+  inline def useGridColumnFormatter: useGridColumnFormatter = "useGridColumnFormatter".asInstanceOf[useGridColumnFormatter]
   
   @js.native
-  sealed trait useSingleRequest extends js.Object
+  sealed trait useOuterLabelsForLegend extends StObject
+  inline def useOuterLabelsForLegend: useOuterLabelsForLegend = "useOuterLabelsForLegend".asInstanceOf[useOuterLabelsForLegend]
   
   @js.native
-  sealed trait useTiledZooming extends js.Object
+  sealed trait useSingleRequest extends StObject
+  inline def useSingleRequest: useSingleRequest = "useSingleRequest".asInstanceOf[useSingleRequest]
   
   @js.native
-  sealed trait useUnselectedStyle extends js.Object
+  sealed trait useTiledZooming extends StObject
+  inline def useTiledZooming: useTiledZooming = "useTiledZooming".asInstanceOf[useTiledZooming]
   
   @js.native
-  sealed trait userPromptDisplaying extends js.Object
+  sealed trait useUnselectedStyle extends StObject
+  inline def useUnselectedStyle: useUnselectedStyle = "useUnselectedStyle".asInstanceOf[useUnselectedStyle]
   
   @js.native
-  sealed trait validate extends js.Object
+  sealed trait userPromptDisplaying extends StObject
+  inline def userPromptDisplaying: userPromptDisplaying = "userPromptDisplaying".asInstanceOf[userPromptDisplaying]
   
   @js.native
-  sealed trait validated extends js.Object
+  sealed trait validate extends StObject
+  inline def validate: validate = "validate".asInstanceOf[validate]
   
   @js.native
-  sealed trait validating extends js.Object
+  sealed trait validated extends StObject
+  inline def validated: validated = "validated".asInstanceOf[validated]
   
   @js.native
-  sealed trait validation extends js.Object
+  sealed trait validating extends StObject
+  inline def validating: validating = "validating".asInstanceOf[validating]
   
   @js.native
-  sealed trait validationInputMessagePosition extends js.Object
+  sealed trait validation extends StObject
+  inline def validation: validation = "validation".asInstanceOf[validation]
   
   @js.native
-  sealed trait validator extends js.Object
+  sealed trait validationInputMessagePosition extends StObject
+  inline def validationInputMessagePosition: validationInputMessagePosition = "validationInputMessagePosition".asInstanceOf[validationInputMessagePosition]
   
   @js.native
-  sealed trait validatorOptions extends js.Object
+  sealed trait validator extends StObject
+  inline def validator: validator = "validator".asInstanceOf[validator]
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait validatorOptions extends StObject
+  inline def validatorOptions: validatorOptions = "validatorOptions".asInstanceOf[validatorOptions]
   
   @js.native
-  sealed trait valueAsPercent extends js.Object
+  sealed trait value extends StObject
+  inline def value: value = "value".asInstanceOf[value]
   
   @js.native
-  sealed trait valueBrush extends js.Object
+  sealed trait valueAsPercent extends StObject
+  inline def valueAsPercent: valueAsPercent = "valueAsPercent".asInstanceOf[valueAsPercent]
   
   @js.native
-  sealed trait valueChange extends js.Object
+  sealed trait valueBrush extends StObject
+  inline def valueBrush: valueBrush = "valueBrush".asInstanceOf[valueBrush]
   
   @js.native
-  sealed trait valueChanged extends js.Object
+  sealed trait valueChange extends StObject
+  inline def valueChange: valueChange = "valueChange".asInstanceOf[valueChange]
   
   @js.native
-  sealed trait valueChanging extends js.Object
+  sealed trait valueChanged extends StObject
+  inline def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
   
   @js.native
-  sealed trait valueHover extends js.Object
+  sealed trait valueChanging extends StObject
+  inline def valueChanging: valueChanging = "valueChanging".asInstanceOf[valueChanging]
   
   @js.native
-  sealed trait valueInnerExtent extends js.Object
+  sealed trait valueHover extends StObject
+  inline def valueHover: valueHover = "valueHover".asInstanceOf[valueHover]
   
   @js.native
-  sealed trait valueInput extends js.Object
+  sealed trait valueInnerExtent extends StObject
+  inline def valueInnerExtent: valueInnerExtent = "valueInnerExtent".asInstanceOf[valueInnerExtent]
   
   @js.native
-  sealed trait valueKey extends js.Object
+  sealed trait valueInput extends StObject
+  inline def valueInput: valueInput = "valueInput".asInstanceOf[valueInput]
   
   @js.native
-  sealed trait valueMemberPath extends js.Object
+  sealed trait valueKey extends StObject
+  inline def valueKey: valueKey = "valueKey".asInstanceOf[valueKey]
   
   @js.native
-  sealed trait valueName extends js.Object
+  sealed trait valueMemberPath extends StObject
+  inline def valueMemberPath: valueMemberPath = "valueMemberPath".asInstanceOf[valueMemberPath]
   
   @js.native
-  sealed trait valueOuterExtent extends js.Object
+  sealed trait valueName extends StObject
+  inline def valueName: valueName = "valueName".asInstanceOf[valueName]
   
   @js.native
-  sealed trait valueOutline extends js.Object
+  sealed trait valueOuterExtent extends StObject
+  inline def valueOuterExtent: valueOuterExtent = "valueOuterExtent".asInstanceOf[valueOuterExtent]
   
   @js.native
-  sealed trait valueRange extends js.Object
+  sealed trait valueOutline extends StObject
+  inline def valueOutline: valueOutline = "valueOutline".asInstanceOf[valueOutline]
   
   @js.native
-  sealed trait valueStrokeThickness extends js.Object
+  sealed trait valueRange extends StObject
+  inline def valueRange: valueRange = "valueRange".asInstanceOf[valueRange]
   
   @js.native
-  sealed trait valueToolTipTemplate extends js.Object
+  sealed trait valueStrokeThickness extends StObject
+  inline def valueStrokeThickness: valueStrokeThickness = "valueStrokeThickness".asInstanceOf[valueStrokeThickness]
   
   @js.native
-  sealed trait valuesColumnWidth extends js.Object
+  sealed trait valueToolTipTemplate extends StObject
+  inline def valueToolTipTemplate: valueToolTipTemplate = "valueToolTipTemplate".asInstanceOf[valueToolTipTemplate]
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait valuesColumnWidth extends StObject
+  inline def valuesColumnWidth: valuesColumnWidth = "valuesColumnWidth".asInstanceOf[valuesColumnWidth]
   
   @js.native
-  sealed trait verticalAxisBrush extends js.Object
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait verticalAxisLabel extends js.Object
+  sealed trait verticalAxisBrush extends StObject
+  inline def verticalAxisBrush: verticalAxisBrush = "verticalAxisBrush".asInstanceOf[verticalAxisBrush]
   
   @js.native
-  sealed trait verticalAxisVisibility extends js.Object
+  sealed trait verticalAxisLabel extends StObject
+  inline def verticalAxisLabel: verticalAxisLabel = "verticalAxisLabel".asInstanceOf[verticalAxisLabel]
   
   @js.native
-  sealed trait verticalZoomable extends js.Object
+  sealed trait verticalAxisVisibility extends StObject
+  inline def verticalAxisVisibility: verticalAxisVisibility = "verticalAxisVisibility".asInstanceOf[verticalAxisVisibility]
   
   @js.native
-  sealed trait viewChanged extends js.Object
+  sealed trait verticalZoomable extends StObject
+  inline def verticalZoomable: verticalZoomable = "verticalZoomable".asInstanceOf[verticalZoomable]
   
   @js.native
-  sealed trait viewChanging extends js.Object
+  sealed trait viewChanged extends StObject
+  inline def viewChanged: viewChanged = "viewChanged".asInstanceOf[viewChanged]
   
   @js.native
-  sealed trait viewMode extends js.Object
+  sealed trait viewChanging extends StObject
+  inline def viewChanging: viewChanging = "viewChanging".asInstanceOf[viewChanging]
   
   @js.native
-  sealed trait views extends js.Object
+  sealed trait viewMode extends StObject
+  inline def viewMode: viewMode = "viewMode".asInstanceOf[viewMode]
   
   @js.native
-  sealed trait virtualScrollTo extends js.Object
+  sealed trait views extends StObject
+  inline def views: views = "views".asInstanceOf[views]
   
   @js.native
-  sealed trait virtualization extends js.Object
+  sealed trait virtualScrollTo extends StObject
+  inline def virtualScrollTo: virtualScrollTo = "virtualScrollTo".asInstanceOf[virtualScrollTo]
   
   @js.native
-  sealed trait virtualizationMode extends js.Object
+  sealed trait virtualization extends StObject
+  inline def virtualization: virtualization = "virtualization".asInstanceOf[virtualization]
   
   @js.native
-  sealed trait virtualizationMouseWheelStep extends js.Object
+  sealed trait virtualizationMode extends StObject
+  inline def virtualizationMode: virtualizationMode = "virtualizationMode".asInstanceOf[virtualizationMode]
   
   @js.native
-  sealed trait visibility extends js.Object
+  sealed trait virtualizationMouseWheelStep extends StObject
+  inline def virtualizationMouseWheelStep: virtualizationMouseWheelStep = "virtualizationMouseWheelStep".asInstanceOf[virtualizationMouseWheelStep]
   
   @js.native
-  sealed trait visibleItemsCount extends js.Object
+  sealed trait visibility extends StObject
+  inline def visibility: visibility = "visibility".asInstanceOf[visibility]
   
   @js.native
-  sealed trait visiblePageCount extends js.Object
+  sealed trait visibleItemsCount extends StObject
+  inline def visibleItemsCount: visibleItemsCount = "visibleItemsCount".asInstanceOf[visibleItemsCount]
   
   @js.native
-  sealed trait volume extends js.Object
+  sealed trait visiblePageCount extends StObject
+  inline def visiblePageCount: visiblePageCount = "visiblePageCount".asInstanceOf[visiblePageCount]
   
   @js.native
-  sealed trait volumeAutohideDelay extends js.Object
+  sealed trait volume extends StObject
+  inline def volume: volume = "volume".asInstanceOf[volume]
   
   @js.native
-  sealed trait volumeBrushes extends js.Object
+  sealed trait volumeAutohideDelay extends StObject
+  inline def volumeAutohideDelay: volumeAutohideDelay = "volumeAutohideDelay".asInstanceOf[volumeAutohideDelay]
   
   @js.native
-  sealed trait volumeOutlines extends js.Object
+  sealed trait volumeBrushes extends StObject
+  inline def volumeBrushes: volumeBrushes = "volumeBrushes".asInstanceOf[volumeBrushes]
   
   @js.native
-  sealed trait volumeThickness extends js.Object
+  sealed trait volumeOutlines extends StObject
+  inline def volumeOutlines: volumeOutlines = "volumeOutlines".asInstanceOf[volumeOutlines]
   
   @js.native
-  sealed trait volumeType extends js.Object
+  sealed trait volumeThickness extends StObject
+  inline def volumeThickness: volumeThickness = "volumeThickness".asInstanceOf[volumeThickness]
   
   @js.native
-  sealed trait volumeTypePickerTemplate extends js.Object
+  sealed trait volumeType extends StObject
+  inline def volumeType: volumeType = "volumeType".asInstanceOf[volumeType]
   
   @js.native
-  sealed trait voteCount extends js.Object
+  sealed trait volumeTypePickerTemplate extends StObject
+  inline def volumeTypePickerTemplate: volumeTypePickerTemplate = "volumeTypePickerTemplate".asInstanceOf[volumeTypePickerTemplate]
   
   @js.native
-  sealed trait voteHeight extends js.Object
+  sealed trait voteCount extends StObject
+  inline def voteCount: voteCount = "voteCount".asInstanceOf[voteCount]
   
   @js.native
-  sealed trait voteWidth extends js.Object
+  sealed trait voteHeight extends StObject
+  inline def voteHeight: voteHeight = "voteHeight".asInstanceOf[voteHeight]
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait voteWidth extends StObject
+  inline def voteWidth: voteWidth = "voteWidth".asInstanceOf[voteWidth]
   
   @js.native
-  sealed trait wedgePaddingInDegrees extends js.Object
+  sealed trait waiting extends StObject
+  inline def waiting: waiting = "waiting".asInstanceOf[waiting]
   
   @js.native
-  sealed trait weekChanged extends js.Object
+  sealed trait wedgePaddingInDegrees extends StObject
+  inline def wedgePaddingInDegrees: wedgePaddingInDegrees = "wedgePaddingInDegrees".asInstanceOf[wedgePaddingInDegrees]
   
   @js.native
-  sealed trait weekChanging extends js.Object
+  sealed trait weekChanged extends StObject
+  inline def weekChanged: weekChanged = "weekChanged".asInstanceOf[weekChanged]
   
   @js.native
-  sealed trait weekViewSettings extends js.Object
+  sealed trait weekChanging extends StObject
+  inline def weekChanging: weekChanging = "weekChanging".asInstanceOf[weekChanging]
   
   @js.native
-  sealed trait wheelStep extends js.Object
+  sealed trait weekViewSettings extends StObject
+  inline def weekViewSettings: weekViewSettings = "weekViewSettings".asInstanceOf[weekViewSettings]
   
   @js.native
-  sealed trait widget extends js.Object
+  sealed trait wheelStep extends StObject
+  inline def wheelStep: wheelStep = "wheelStep".asInstanceOf[wheelStep]
   
   @js.native
-  sealed trait width extends js.Object
+  sealed trait widget extends StObject
+  inline def widget: widget = "widget".asInstanceOf[widget]
   
   @js.native
-  sealed trait widthToHeightRatio extends js.Object
+  sealed trait width extends StObject
+  inline def width: width = "width".asInstanceOf[width]
   
   @js.native
-  sealed trait windowDragEnded extends js.Object
+  sealed trait widthToHeightRatio extends StObject
+  inline def widthToHeightRatio: widthToHeightRatio = "widthToHeightRatio".asInstanceOf[widthToHeightRatio]
   
   @js.native
-  sealed trait windowDragEnding extends js.Object
+  sealed trait windowDragEnded extends StObject
+  inline def windowDragEnded: windowDragEnded = "windowDragEnded".asInstanceOf[windowDragEnded]
   
   @js.native
-  sealed trait windowDragStarted extends js.Object
+  sealed trait windowDragEnding extends StObject
+  inline def windowDragEnding: windowDragEnding = "windowDragEnding".asInstanceOf[windowDragEnding]
   
   @js.native
-  sealed trait windowDragStarting extends js.Object
+  sealed trait windowDragStarted extends StObject
+  inline def windowDragStarted: windowDragStarted = "windowDragStarted".asInstanceOf[windowDragStarted]
   
   @js.native
-  sealed trait windowDragging extends js.Object
+  sealed trait windowDragStarting extends StObject
+  inline def windowDragStarting: windowDragStarting = "windowDragStarting".asInstanceOf[windowDragStarting]
   
   @js.native
-  sealed trait windowPanDuration extends js.Object
+  sealed trait windowDragging extends StObject
+  inline def windowDragging: windowDragging = "windowDragging".asInstanceOf[windowDragging]
   
   @js.native
-  sealed trait windowPositionHorizontal extends js.Object
+  sealed trait windowPanDuration extends StObject
+  inline def windowPanDuration: windowPanDuration = "windowPanDuration".asInstanceOf[windowPanDuration]
   
   @js.native
-  sealed trait windowPositionVertical extends js.Object
+  sealed trait windowPositionHorizontal extends StObject
+  inline def windowPositionHorizontal: windowPositionHorizontal = "windowPositionHorizontal".asInstanceOf[windowPositionHorizontal]
   
   @js.native
-  sealed trait windowRect extends js.Object
+  sealed trait windowPositionVertical extends StObject
+  inline def windowPositionVertical: windowPositionVertical = "windowPositionVertical".asInstanceOf[windowPositionVertical]
   
   @js.native
-  sealed trait windowRectChanged extends js.Object
+  sealed trait windowRect extends StObject
+  inline def windowRect: windowRect = "windowRect".asInstanceOf[windowRect]
   
   @js.native
-  sealed trait windowRectMinWidth extends js.Object
+  sealed trait windowRectChanged extends StObject
+  inline def windowRectChanged: windowRectChanged = "windowRectChanged".asInstanceOf[windowRectChanged]
   
   @js.native
-  sealed trait windowResized extends js.Object
+  sealed trait windowRectMinWidth extends StObject
+  inline def windowRectMinWidth: windowRectMinWidth = "windowRectMinWidth".asInstanceOf[windowRectMinWidth]
   
   @js.native
-  sealed trait windowResizing extends js.Object
+  sealed trait windowResized extends StObject
+  inline def windowResized: windowResized = "windowResized".asInstanceOf[windowResized]
   
   @js.native
-  sealed trait windowResponse extends js.Object
+  sealed trait windowResizing extends StObject
+  inline def windowResizing: windowResizing = "windowResizing".asInstanceOf[windowResizing]
   
   @js.native
-  sealed trait windowScale extends js.Object
+  sealed trait windowResponse extends StObject
+  inline def windowResponse: windowResponse = "windowResponse".asInstanceOf[windowResponse]
   
   @js.native
-  sealed trait windowScaleHorizontal extends js.Object
+  sealed trait windowScale extends StObject
+  inline def windowScale: windowScale = "windowScale".asInstanceOf[windowScale]
   
   @js.native
-  sealed trait windowScaleVertical extends js.Object
+  sealed trait windowScaleHorizontal extends StObject
+  inline def windowScaleHorizontal: windowScaleHorizontal = "windowScaleHorizontal".asInstanceOf[windowScaleHorizontal]
   
   @js.native
-  sealed trait windowWidthToRenderVertically extends js.Object
+  sealed trait windowScaleVertical extends StObject
+  inline def windowScaleVertical: windowScaleVertical = "windowScaleVertical".asInstanceOf[windowScaleVertical]
   
   @js.native
-  sealed trait workbook extends js.Object
+  sealed trait windowWidthToRenderVertically extends StObject
+  inline def windowWidthToRenderVertically: windowWidthToRenderVertically = "windowWidthToRenderVertically".asInstanceOf[windowWidthToRenderVertically]
   
   @js.native
-  sealed trait workbookDirtied extends js.Object
+  sealed trait workbook extends StObject
+  inline def workbook: workbook = "workbook".asInstanceOf[workbook]
   
   @js.native
-  sealed trait workspaceResized extends js.Object
+  sealed trait workbookDirtied extends StObject
+  inline def workbookDirtied: workbookDirtied = "workbookDirtied".asInstanceOf[workbookDirtied]
   
   @js.native
-  sealed trait wrapAround extends js.Object
+  sealed trait workspaceResized extends StObject
+  inline def workspaceResized: workspaceResized = "workspaceResized".asInstanceOf[workspaceResized]
   
   @js.native
-  sealed trait xAxisAbbreviateLargeNumbers extends js.Object
+  sealed trait wrapAround extends StObject
+  inline def wrapAround: wrapAround = "wrapAround".asInstanceOf[wrapAround]
   
   @js.native
-  sealed trait xAxisExtent extends js.Object
+  sealed trait xAxisAbbreviateLargeNumbers extends StObject
+  inline def xAxisAbbreviateLargeNumbers: xAxisAbbreviateLargeNumbers = "xAxisAbbreviateLargeNumbers".asInstanceOf[xAxisAbbreviateLargeNumbers]
   
   @js.native
-  sealed trait xAxisFormatLabel extends js.Object
+  sealed trait xAxisExtent extends StObject
+  inline def xAxisExtent: xAxisExtent = "xAxisExtent".asInstanceOf[xAxisExtent]
   
   @js.native
-  sealed trait xAxisGap extends js.Object
+  sealed trait xAxisFormatLabel extends StObject
+  inline def xAxisFormatLabel: xAxisFormatLabel = "xAxisFormatLabel".asInstanceOf[xAxisFormatLabel]
   
   @js.native
-  sealed trait xAxisInterval extends js.Object
+  sealed trait xAxisGap extends StObject
+  inline def xAxisGap: xAxisGap = "xAxisGap".asInstanceOf[xAxisGap]
   
   @js.native
-  sealed trait xAxisInverted extends js.Object
+  sealed trait xAxisInterval extends StObject
+  inline def xAxisInterval: xAxisInterval = "xAxisInterval".asInstanceOf[xAxisInterval]
   
   @js.native
-  sealed trait xAxisIsLogarithmic extends js.Object
+  sealed trait xAxisInverted extends StObject
+  inline def xAxisInverted: xAxisInverted = "xAxisInverted".asInstanceOf[xAxisInverted]
   
   @js.native
-  sealed trait xAxisLabel extends js.Object
+  sealed trait xAxisIsLogarithmic extends StObject
+  inline def xAxisIsLogarithmic: xAxisIsLogarithmic = "xAxisIsLogarithmic".asInstanceOf[xAxisIsLogarithmic]
   
   @js.native
-  sealed trait xAxisLabelAngle extends js.Object
+  sealed trait xAxisLabel extends StObject
+  inline def xAxisLabel: xAxisLabel = "xAxisLabel".asInstanceOf[xAxisLabel]
   
   @js.native
-  sealed trait xAxisLabelBottomMargin extends js.Object
+  sealed trait xAxisLabelAngle extends StObject
+  inline def xAxisLabelAngle: xAxisLabelAngle = "xAxisLabelAngle".asInstanceOf[xAxisLabelAngle]
   
   @js.native
-  sealed trait xAxisLabelHorizontalAlignment extends js.Object
+  sealed trait xAxisLabelBottomMargin extends StObject
+  inline def xAxisLabelBottomMargin: xAxisLabelBottomMargin = "xAxisLabelBottomMargin".asInstanceOf[xAxisLabelBottomMargin]
   
   @js.native
-  sealed trait xAxisLabelLeftMargin extends js.Object
+  sealed trait xAxisLabelHorizontalAlignment extends StObject
+  inline def xAxisLabelHorizontalAlignment: xAxisLabelHorizontalAlignment = "xAxisLabelHorizontalAlignment".asInstanceOf[xAxisLabelHorizontalAlignment]
   
   @js.native
-  sealed trait xAxisLabelRightMargin extends js.Object
+  sealed trait xAxisLabelLeftMargin extends StObject
+  inline def xAxisLabelLeftMargin: xAxisLabelLeftMargin = "xAxisLabelLeftMargin".asInstanceOf[xAxisLabelLeftMargin]
   
   @js.native
-  sealed trait xAxisLabelTextColor extends js.Object
+  sealed trait xAxisLabelRightMargin extends StObject
+  inline def xAxisLabelRightMargin: xAxisLabelRightMargin = "xAxisLabelRightMargin".asInstanceOf[xAxisLabelRightMargin]
   
   @js.native
-  sealed trait xAxisLabelTextStyle extends js.Object
+  sealed trait xAxisLabelTextColor extends StObject
+  inline def xAxisLabelTextColor: xAxisLabelTextColor = "xAxisLabelTextColor".asInstanceOf[xAxisLabelTextColor]
   
   @js.native
-  sealed trait xAxisLabelTopMargin extends js.Object
+  sealed trait xAxisLabelTextStyle extends StObject
+  inline def xAxisLabelTextStyle: xAxisLabelTextStyle = "xAxisLabelTextStyle".asInstanceOf[xAxisLabelTextStyle]
   
   @js.native
-  sealed trait xAxisLabelVerticalAlignment extends js.Object
+  sealed trait xAxisLabelTopMargin extends StObject
+  inline def xAxisLabelTopMargin: xAxisLabelTopMargin = "xAxisLabelTopMargin".asInstanceOf[xAxisLabelTopMargin]
   
   @js.native
-  sealed trait xAxisLabelVisibility extends js.Object
+  sealed trait xAxisLabelVerticalAlignment extends StObject
+  inline def xAxisLabelVerticalAlignment: xAxisLabelVerticalAlignment = "xAxisLabelVerticalAlignment".asInstanceOf[xAxisLabelVerticalAlignment]
   
   @js.native
-  sealed trait xAxisLogarithmBase extends js.Object
+  sealed trait xAxisLabelVisibility extends StObject
+  inline def xAxisLabelVisibility: xAxisLabelVisibility = "xAxisLabelVisibility".asInstanceOf[xAxisLabelVisibility]
   
   @js.native
-  sealed trait xAxisMajorStroke extends js.Object
+  sealed trait xAxisLogarithmBase extends StObject
+  inline def xAxisLogarithmBase: xAxisLogarithmBase = "xAxisLogarithmBase".asInstanceOf[xAxisLogarithmBase]
   
   @js.native
-  sealed trait xAxisMajorStrokeThickness extends js.Object
+  sealed trait xAxisMajorStroke extends StObject
+  inline def xAxisMajorStroke: xAxisMajorStroke = "xAxisMajorStroke".asInstanceOf[xAxisMajorStroke]
   
   @js.native
-  sealed trait xAxisMaximumValue extends js.Object
+  sealed trait xAxisMajorStrokeThickness extends StObject
+  inline def xAxisMajorStrokeThickness: xAxisMajorStrokeThickness = "xAxisMajorStrokeThickness".asInstanceOf[xAxisMajorStrokeThickness]
   
   @js.native
-  sealed trait xAxisMinimumValue extends js.Object
+  sealed trait xAxisMaximumValue extends StObject
+  inline def xAxisMaximumValue: xAxisMaximumValue = "xAxisMaximumValue".asInstanceOf[xAxisMaximumValue]
   
   @js.native
-  sealed trait xAxisMinorInterval extends js.Object
+  sealed trait xAxisMinimumValue extends StObject
+  inline def xAxisMinimumValue: xAxisMinimumValue = "xAxisMinimumValue".asInstanceOf[xAxisMinimumValue]
   
   @js.native
-  sealed trait xAxisMinorStroke extends js.Object
+  sealed trait xAxisMinorInterval extends StObject
+  inline def xAxisMinorInterval: xAxisMinorInterval = "xAxisMinorInterval".asInstanceOf[xAxisMinorInterval]
   
   @js.native
-  sealed trait xAxisMinorStrokeThickness extends js.Object
+  sealed trait xAxisMinorStroke extends StObject
+  inline def xAxisMinorStroke: xAxisMinorStroke = "xAxisMinorStroke".asInstanceOf[xAxisMinorStroke]
   
   @js.native
-  sealed trait xAxisMode extends js.Object
+  sealed trait xAxisMinorStrokeThickness extends StObject
+  inline def xAxisMinorStrokeThickness: xAxisMinorStrokeThickness = "xAxisMinorStrokeThickness".asInstanceOf[xAxisMinorStrokeThickness]
   
   @js.native
-  sealed trait xAxisOverlap extends js.Object
+  sealed trait xAxisMode extends StObject
+  inline def xAxisMode: xAxisMode = "xAxisMode".asInstanceOf[xAxisMode]
   
   @js.native
-  sealed trait xAxisStrip extends js.Object
+  sealed trait xAxisOverlap extends StObject
+  inline def xAxisOverlap: xAxisOverlap = "xAxisOverlap".asInstanceOf[xAxisOverlap]
   
   @js.native
-  sealed trait xAxisStroke extends js.Object
+  sealed trait xAxisStrip extends StObject
+  inline def xAxisStrip: xAxisStrip = "xAxisStrip".asInstanceOf[xAxisStrip]
   
   @js.native
-  sealed trait xAxisStrokeThickness extends js.Object
+  sealed trait xAxisStroke extends StObject
+  inline def xAxisStroke: xAxisStroke = "xAxisStroke".asInstanceOf[xAxisStroke]
   
   @js.native
-  sealed trait xAxisTickLength extends js.Object
+  sealed trait xAxisStrokeThickness extends StObject
+  inline def xAxisStrokeThickness: xAxisStrokeThickness = "xAxisStrokeThickness".asInstanceOf[xAxisStrokeThickness]
   
   @js.native
-  sealed trait xAxisTickStroke extends js.Object
+  sealed trait xAxisTickLength extends StObject
+  inline def xAxisTickLength: xAxisTickLength = "xAxisTickLength".asInstanceOf[xAxisTickLength]
   
   @js.native
-  sealed trait xAxisTickStrokeThickness extends js.Object
+  sealed trait xAxisTickStroke extends StObject
+  inline def xAxisTickStroke: xAxisTickStroke = "xAxisTickStroke".asInstanceOf[xAxisTickStroke]
   
   @js.native
-  sealed trait xAxisTitle extends js.Object
+  sealed trait xAxisTickStrokeThickness extends StObject
+  inline def xAxisTickStrokeThickness: xAxisTickStrokeThickness = "xAxisTickStrokeThickness".asInstanceOf[xAxisTickStrokeThickness]
   
   @js.native
-  sealed trait xAxisTitleAlignment extends js.Object
+  sealed trait xAxisTitle extends StObject
+  inline def xAxisTitle: xAxisTitle = "xAxisTitle".asInstanceOf[xAxisTitle]
   
   @js.native
-  sealed trait xAxisTitleAngle extends js.Object
+  sealed trait xAxisTitleAlignment extends StObject
+  inline def xAxisTitleAlignment: xAxisTitleAlignment = "xAxisTitleAlignment".asInstanceOf[xAxisTitleAlignment]
   
   @js.native
-  sealed trait xAxisTitleBottomMargin extends js.Object
+  sealed trait xAxisTitleAngle extends StObject
+  inline def xAxisTitleAngle: xAxisTitleAngle = "xAxisTitleAngle".asInstanceOf[xAxisTitleAngle]
   
   @js.native
-  sealed trait xAxisTitleLeftMargin extends js.Object
+  sealed trait xAxisTitleBottomMargin extends StObject
+  inline def xAxisTitleBottomMargin: xAxisTitleBottomMargin = "xAxisTitleBottomMargin".asInstanceOf[xAxisTitleBottomMargin]
   
   @js.native
-  sealed trait xAxisTitleMargin extends js.Object
+  sealed trait xAxisTitleLeftMargin extends StObject
+  inline def xAxisTitleLeftMargin: xAxisTitleLeftMargin = "xAxisTitleLeftMargin".asInstanceOf[xAxisTitleLeftMargin]
   
   @js.native
-  sealed trait xAxisTitleRightMargin extends js.Object
+  sealed trait xAxisTitleMargin extends StObject
+  inline def xAxisTitleMargin: xAxisTitleMargin = "xAxisTitleMargin".asInstanceOf[xAxisTitleMargin]
   
   @js.native
-  sealed trait xAxisTitleTextColor extends js.Object
+  sealed trait xAxisTitleRightMargin extends StObject
+  inline def xAxisTitleRightMargin: xAxisTitleRightMargin = "xAxisTitleRightMargin".asInstanceOf[xAxisTitleRightMargin]
   
   @js.native
-  sealed trait xAxisTitleTextStyle extends js.Object
+  sealed trait xAxisTitleTextColor extends StObject
+  inline def xAxisTitleTextColor: xAxisTitleTextColor = "xAxisTitleTextColor".asInstanceOf[xAxisTitleTextColor]
   
   @js.native
-  sealed trait xAxisTitleTopMargin extends js.Object
+  sealed trait xAxisTitleTextStyle extends StObject
+  inline def xAxisTitleTextStyle: xAxisTitleTextStyle = "xAxisTitleTextStyle".asInstanceOf[xAxisTitleTextStyle]
   
   @js.native
-  sealed trait xDimension extends js.Object
+  sealed trait xAxisTitleTopMargin extends StObject
+  inline def xAxisTitleTopMargin: xAxisTitleTopMargin = "xAxisTitleTopMargin".asInstanceOf[xAxisTitleTopMargin]
   
   @js.native
-  sealed trait yAxisAbbreviateLargeNumbers extends js.Object
+  sealed trait xDimension extends StObject
+  inline def xDimension: xDimension = "xDimension".asInstanceOf[xDimension]
   
   @js.native
-  sealed trait yAxisExtent extends js.Object
+  sealed trait yAxisAbbreviateLargeNumbers extends StObject
+  inline def yAxisAbbreviateLargeNumbers: yAxisAbbreviateLargeNumbers = "yAxisAbbreviateLargeNumbers".asInstanceOf[yAxisAbbreviateLargeNumbers]
   
   @js.native
-  sealed trait yAxisFormatLabel extends js.Object
+  sealed trait yAxisExtent extends StObject
+  inline def yAxisExtent: yAxisExtent = "yAxisExtent".asInstanceOf[yAxisExtent]
   
   @js.native
-  sealed trait yAxisInterval extends js.Object
+  sealed trait yAxisFormatLabel extends StObject
+  inline def yAxisFormatLabel: yAxisFormatLabel = "yAxisFormatLabel".asInstanceOf[yAxisFormatLabel]
   
   @js.native
-  sealed trait yAxisInverted extends js.Object
+  sealed trait yAxisInterval extends StObject
+  inline def yAxisInterval: yAxisInterval = "yAxisInterval".asInstanceOf[yAxisInterval]
   
   @js.native
-  sealed trait yAxisIsLogarithmic extends js.Object
+  sealed trait yAxisInverted extends StObject
+  inline def yAxisInverted: yAxisInverted = "yAxisInverted".asInstanceOf[yAxisInverted]
   
   @js.native
-  sealed trait yAxisLabel extends js.Object
+  sealed trait yAxisIsLogarithmic extends StObject
+  inline def yAxisIsLogarithmic: yAxisIsLogarithmic = "yAxisIsLogarithmic".asInstanceOf[yAxisIsLogarithmic]
   
   @js.native
-  sealed trait yAxisLabelAngle extends js.Object
+  sealed trait yAxisLabel extends StObject
+  inline def yAxisLabel: yAxisLabel = "yAxisLabel".asInstanceOf[yAxisLabel]
   
   @js.native
-  sealed trait yAxisLabelBottomMargin extends js.Object
+  sealed trait yAxisLabelAngle extends StObject
+  inline def yAxisLabelAngle: yAxisLabelAngle = "yAxisLabelAngle".asInstanceOf[yAxisLabelAngle]
   
   @js.native
-  sealed trait yAxisLabelHorizontalAlignment extends js.Object
+  sealed trait yAxisLabelBottomMargin extends StObject
+  inline def yAxisLabelBottomMargin: yAxisLabelBottomMargin = "yAxisLabelBottomMargin".asInstanceOf[yAxisLabelBottomMargin]
   
   @js.native
-  sealed trait yAxisLabelLeftMargin extends js.Object
+  sealed trait yAxisLabelHorizontalAlignment extends StObject
+  inline def yAxisLabelHorizontalAlignment: yAxisLabelHorizontalAlignment = "yAxisLabelHorizontalAlignment".asInstanceOf[yAxisLabelHorizontalAlignment]
   
   @js.native
-  sealed trait yAxisLabelLocation extends js.Object
+  sealed trait yAxisLabelLeftMargin extends StObject
+  inline def yAxisLabelLeftMargin: yAxisLabelLeftMargin = "yAxisLabelLeftMargin".asInstanceOf[yAxisLabelLeftMargin]
   
   @js.native
-  sealed trait yAxisLabelRightMargin extends js.Object
+  sealed trait yAxisLabelLocation extends StObject
+  inline def yAxisLabelLocation: yAxisLabelLocation = "yAxisLabelLocation".asInstanceOf[yAxisLabelLocation]
   
   @js.native
-  sealed trait yAxisLabelTextColor extends js.Object
+  sealed trait yAxisLabelRightMargin extends StObject
+  inline def yAxisLabelRightMargin: yAxisLabelRightMargin = "yAxisLabelRightMargin".asInstanceOf[yAxisLabelRightMargin]
   
   @js.native
-  sealed trait yAxisLabelTextStyle extends js.Object
+  sealed trait yAxisLabelTextColor extends StObject
+  inline def yAxisLabelTextColor: yAxisLabelTextColor = "yAxisLabelTextColor".asInstanceOf[yAxisLabelTextColor]
   
   @js.native
-  sealed trait yAxisLabelTopMargin extends js.Object
+  sealed trait yAxisLabelTextStyle extends StObject
+  inline def yAxisLabelTextStyle: yAxisLabelTextStyle = "yAxisLabelTextStyle".asInstanceOf[yAxisLabelTextStyle]
   
   @js.native
-  sealed trait yAxisLabelVerticalAlignment extends js.Object
+  sealed trait yAxisLabelTopMargin extends StObject
+  inline def yAxisLabelTopMargin: yAxisLabelTopMargin = "yAxisLabelTopMargin".asInstanceOf[yAxisLabelTopMargin]
   
   @js.native
-  sealed trait yAxisLabelVisibility extends js.Object
+  sealed trait yAxisLabelVerticalAlignment extends StObject
+  inline def yAxisLabelVerticalAlignment: yAxisLabelVerticalAlignment = "yAxisLabelVerticalAlignment".asInstanceOf[yAxisLabelVerticalAlignment]
   
   @js.native
-  sealed trait yAxisLogarithmBase extends js.Object
+  sealed trait yAxisLabelVisibility extends StObject
+  inline def yAxisLabelVisibility: yAxisLabelVisibility = "yAxisLabelVisibility".asInstanceOf[yAxisLabelVisibility]
   
   @js.native
-  sealed trait yAxisMajorStroke extends js.Object
+  sealed trait yAxisLogarithmBase extends StObject
+  inline def yAxisLogarithmBase: yAxisLogarithmBase = "yAxisLogarithmBase".asInstanceOf[yAxisLogarithmBase]
   
   @js.native
-  sealed trait yAxisMajorStrokeThickness extends js.Object
+  sealed trait yAxisMajorStroke extends StObject
+  inline def yAxisMajorStroke: yAxisMajorStroke = "yAxisMajorStroke".asInstanceOf[yAxisMajorStroke]
   
   @js.native
-  sealed trait yAxisMaximumValue extends js.Object
+  sealed trait yAxisMajorStrokeThickness extends StObject
+  inline def yAxisMajorStrokeThickness: yAxisMajorStrokeThickness = "yAxisMajorStrokeThickness".asInstanceOf[yAxisMajorStrokeThickness]
   
   @js.native
-  sealed trait yAxisMinimumValue extends js.Object
+  sealed trait yAxisMaximumValue extends StObject
+  inline def yAxisMaximumValue: yAxisMaximumValue = "yAxisMaximumValue".asInstanceOf[yAxisMaximumValue]
   
   @js.native
-  sealed trait yAxisMinorInterval extends js.Object
+  sealed trait yAxisMinimumValue extends StObject
+  inline def yAxisMinimumValue: yAxisMinimumValue = "yAxisMinimumValue".asInstanceOf[yAxisMinimumValue]
   
   @js.native
-  sealed trait yAxisMinorStroke extends js.Object
+  sealed trait yAxisMinorInterval extends StObject
+  inline def yAxisMinorInterval: yAxisMinorInterval = "yAxisMinorInterval".asInstanceOf[yAxisMinorInterval]
   
   @js.native
-  sealed trait yAxisMinorStrokeThickness extends js.Object
+  sealed trait yAxisMinorStroke extends StObject
+  inline def yAxisMinorStroke: yAxisMinorStroke = "yAxisMinorStroke".asInstanceOf[yAxisMinorStroke]
   
   @js.native
-  sealed trait yAxisMode extends js.Object
+  sealed trait yAxisMinorStrokeThickness extends StObject
+  inline def yAxisMinorStrokeThickness: yAxisMinorStrokeThickness = "yAxisMinorStrokeThickness".asInstanceOf[yAxisMinorStrokeThickness]
   
   @js.native
-  sealed trait yAxisStrip extends js.Object
+  sealed trait yAxisMode extends StObject
+  inline def yAxisMode: yAxisMode = "yAxisMode".asInstanceOf[yAxisMode]
   
   @js.native
-  sealed trait yAxisStroke extends js.Object
+  sealed trait yAxisStrip extends StObject
+  inline def yAxisStrip: yAxisStrip = "yAxisStrip".asInstanceOf[yAxisStrip]
   
   @js.native
-  sealed trait yAxisStrokeThickness extends js.Object
+  sealed trait yAxisStroke extends StObject
+  inline def yAxisStroke: yAxisStroke = "yAxisStroke".asInstanceOf[yAxisStroke]
   
   @js.native
-  sealed trait yAxisTickLength extends js.Object
+  sealed trait yAxisStrokeThickness extends StObject
+  inline def yAxisStrokeThickness: yAxisStrokeThickness = "yAxisStrokeThickness".asInstanceOf[yAxisStrokeThickness]
   
   @js.native
-  sealed trait yAxisTickStroke extends js.Object
+  sealed trait yAxisTickLength extends StObject
+  inline def yAxisTickLength: yAxisTickLength = "yAxisTickLength".asInstanceOf[yAxisTickLength]
   
   @js.native
-  sealed trait yAxisTickStrokeThickness extends js.Object
+  sealed trait yAxisTickStroke extends StObject
+  inline def yAxisTickStroke: yAxisTickStroke = "yAxisTickStroke".asInstanceOf[yAxisTickStroke]
   
   @js.native
-  sealed trait yAxisTitle extends js.Object
+  sealed trait yAxisTickStrokeThickness extends StObject
+  inline def yAxisTickStrokeThickness: yAxisTickStrokeThickness = "yAxisTickStrokeThickness".asInstanceOf[yAxisTickStrokeThickness]
   
   @js.native
-  sealed trait yAxisTitleAlignment extends js.Object
+  sealed trait yAxisTitle extends StObject
+  inline def yAxisTitle: yAxisTitle = "yAxisTitle".asInstanceOf[yAxisTitle]
   
   @js.native
-  sealed trait yAxisTitleAngle extends js.Object
+  sealed trait yAxisTitleAlignment extends StObject
+  inline def yAxisTitleAlignment: yAxisTitleAlignment = "yAxisTitleAlignment".asInstanceOf[yAxisTitleAlignment]
   
   @js.native
-  sealed trait yAxisTitleBottomMargin extends js.Object
+  sealed trait yAxisTitleAngle extends StObject
+  inline def yAxisTitleAngle: yAxisTitleAngle = "yAxisTitleAngle".asInstanceOf[yAxisTitleAngle]
   
   @js.native
-  sealed trait yAxisTitleLeftMargin extends js.Object
+  sealed trait yAxisTitleBottomMargin extends StObject
+  inline def yAxisTitleBottomMargin: yAxisTitleBottomMargin = "yAxisTitleBottomMargin".asInstanceOf[yAxisTitleBottomMargin]
   
   @js.native
-  sealed trait yAxisTitleMargin extends js.Object
+  sealed trait yAxisTitleLeftMargin extends StObject
+  inline def yAxisTitleLeftMargin: yAxisTitleLeftMargin = "yAxisTitleLeftMargin".asInstanceOf[yAxisTitleLeftMargin]
   
   @js.native
-  sealed trait yAxisTitleRightMargin extends js.Object
+  sealed trait yAxisTitleMargin extends StObject
+  inline def yAxisTitleMargin: yAxisTitleMargin = "yAxisTitleMargin".asInstanceOf[yAxisTitleMargin]
   
   @js.native
-  sealed trait yAxisTitleTextColor extends js.Object
+  sealed trait yAxisTitleRightMargin extends StObject
+  inline def yAxisTitleRightMargin: yAxisTitleRightMargin = "yAxisTitleRightMargin".asInstanceOf[yAxisTitleRightMargin]
   
   @js.native
-  sealed trait yAxisTitleTextStyle extends js.Object
+  sealed trait yAxisTitleTextColor extends StObject
+  inline def yAxisTitleTextColor: yAxisTitleTextColor = "yAxisTitleTextColor".asInstanceOf[yAxisTitleTextColor]
   
   @js.native
-  sealed trait yAxisTitleTopMargin extends js.Object
+  sealed trait yAxisTitleTextStyle extends StObject
+  inline def yAxisTitleTextStyle: yAxisTitleTextStyle = "yAxisTitleTextStyle".asInstanceOf[yAxisTitleTextStyle]
   
   @js.native
-  sealed trait yearShift extends js.Object
+  sealed trait yAxisTitleTopMargin extends StObject
+  inline def yAxisTitleTopMargin: yAxisTitleTopMargin = "yAxisTitleTopMargin".asInstanceOf[yAxisTitleTopMargin]
   
   @js.native
-  sealed trait zIndex extends js.Object
+  sealed trait yearShift extends StObject
+  inline def yearShift: yearShift = "yearShift".asInstanceOf[yearShift]
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zIndex extends StObject
+  inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
   
   @js.native
-  sealed trait zoomAction extends js.Object
+  sealed trait zoom extends StObject
+  inline def zoom: zoom = "zoom".asInstanceOf[zoom]
   
   @js.native
-  sealed trait zoomChanged extends js.Object
+  sealed trait zoomAction extends StObject
+  inline def zoomAction: zoomAction = "zoomAction".asInstanceOf[zoomAction]
   
   @js.native
-  sealed trait zoomChanging extends js.Object
+  sealed trait zoomChanged extends StObject
+  inline def zoomChanged: zoomChanged = "zoomChanged".asInstanceOf[zoomChanged]
   
   @js.native
-  sealed trait zoomLevel extends js.Object
+  sealed trait zoomChanging extends StObject
+  inline def zoomChanging: zoomChanging = "zoomChanging".asInstanceOf[zoomChanging]
   
   @js.native
-  sealed trait zoomSliderType extends js.Object
+  sealed trait zoomLevel extends StObject
+  inline def zoomLevel: zoomLevel = "zoomLevel".asInstanceOf[zoomLevel]
   
   @js.native
-  sealed trait zoomSliderXAxisMajorStroke extends js.Object
+  sealed trait zoomSliderType extends StObject
+  inline def zoomSliderType: zoomSliderType = "zoomSliderType".asInstanceOf[zoomSliderType]
   
   @js.native
-  sealed trait zoomSliderXAxisMajorStrokeThickness extends js.Object
+  sealed trait zoomSliderXAxisMajorStroke extends StObject
+  inline def zoomSliderXAxisMajorStroke: zoomSliderXAxisMajorStroke = "zoomSliderXAxisMajorStroke".asInstanceOf[zoomSliderXAxisMajorStroke]
   
   @js.native
-  sealed trait zoomTileCacheSize extends js.Object
+  sealed trait zoomSliderXAxisMajorStrokeThickness extends StObject
+  inline def zoomSliderXAxisMajorStrokeThickness: zoomSliderXAxisMajorStrokeThickness = "zoomSliderXAxisMajorStrokeThickness".asInstanceOf[zoomSliderXAxisMajorStrokeThickness]
   
   @js.native
-  sealed trait zoomToGeographic extends js.Object
+  sealed trait zoomTileCacheSize extends StObject
+  inline def zoomTileCacheSize: zoomTileCacheSize = "zoomTileCacheSize".asInstanceOf[zoomTileCacheSize]
   
   @js.native
-  sealed trait zoomWindowMinWidth extends js.Object
+  sealed trait zoomToGeographic extends StObject
+  inline def zoomToGeographic: zoomToGeographic = "zoomToGeographic".asInstanceOf[zoomToGeographic]
   
   @js.native
-  sealed trait zoomWindowMoveDistance extends js.Object
+  sealed trait zoomWindowMinWidth extends StObject
+  inline def zoomWindowMinWidth: zoomWindowMinWidth = "zoomWindowMinWidth".asInstanceOf[zoomWindowMinWidth]
   
   @js.native
-  sealed trait zoomable extends js.Object
+  sealed trait zoomWindowMoveDistance extends StObject
+  inline def zoomWindowMoveDistance: zoomWindowMoveDistance = "zoomWindowMoveDistance".asInstanceOf[zoomWindowMoveDistance]
   
-  @scala.inline
-  def actionExecuted: actionExecuted = "actionExecuted".asInstanceOf[actionExecuted]
-  @scala.inline
-  def actionExecuting: actionExecuting = "actionExecuting".asInstanceOf[actionExecuting]
-  @scala.inline
-  def activate: activate = "activate".asInstanceOf[activate]
-  @scala.inline
-  def activateItem: activateItem = "activateItem".asInstanceOf[activateItem]
-  @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
-  @scala.inline
-  def activating: activating = "activating".asInstanceOf[activating]
-  @scala.inline
-  def activation: activation = "activation".asInstanceOf[activation]
-  @scala.inline
-  def activeCell: activeCell = "activeCell".asInstanceOf[activeCell]
-  @scala.inline
-  def activeCellChanged: activeCellChanged = "activeCellChanged".asInstanceOf[activeCellChanged]
-  @scala.inline
-  def activeCellChanging: activeCellChanging = "activeCellChanging".asInstanceOf[activeCellChanging]
-  @scala.inline
-  def activeIndex: activeIndex = "activeIndex".asInstanceOf[activeIndex]
-  @scala.inline
-  def activePaneChanged: activePaneChanged = "activePaneChanged".asInstanceOf[activePaneChanged]
-  @scala.inline
-  def activeRow: activeRow = "activeRow".asInstanceOf[activeRow]
-  @scala.inline
-  def activeRowChanged: activeRowChanged = "activeRowChanged".asInstanceOf[activeRowChanged]
-  @scala.inline
-  def activeRowChanging: activeRowChanging = "activeRowChanging".asInstanceOf[activeRowChanging]
-  @scala.inline
-  def activeTableChanged: activeTableChanged = "activeTableChanged".asInstanceOf[activeTableChanged]
-  @scala.inline
-  def activeWorksheet: activeWorksheet = "activeWorksheet".asInstanceOf[activeWorksheet]
-  @scala.inline
-  def activeWorksheetChanged: activeWorksheetChanged = "activeWorksheetChanged".asInstanceOf[activeWorksheetChanged]
-  @scala.inline
-  def actualPixelScalingRatio: actualPixelScalingRatio = "actualPixelScalingRatio".asInstanceOf[actualPixelScalingRatio]
-  @scala.inline
-  def actualRangeSelectorOptions: actualRangeSelectorOptions = "actualRangeSelectorOptions".asInstanceOf[actualRangeSelectorOptions]
-  @scala.inline
-  def addCallback: addCallback = "addCallback".asInstanceOf[addCallback]
-  @scala.inline
-  def addChild: addChild = "addChild".asInstanceOf[addChild]
-  @scala.inline
-  def addChildButtonLabel: addChildButtonLabel = "addChildButtonLabel".asInstanceOf[addChildButtonLabel]
-  @scala.inline
-  def addChildTooltip: addChildTooltip = "addChildTooltip".asInstanceOf[addChildTooltip]
-  @scala.inline
-  def addDataField: addDataField = "addDataField".asInstanceOf[addDataField]
-  @scala.inline
-  def addDataFields: addDataFields = "addDataFields".asInstanceOf[addDataFields]
-  @scala.inline
-  def addField: addField = "addField".asInstanceOf[addField]
-  @scala.inline
-  def addItem: addItem = "addItem".asInstanceOf[addItem]
-  @scala.inline
-  def addMovingDropdown: addMovingDropdown = "addMovingDropdown".asInstanceOf[addMovingDropdown]
-  @scala.inline
-  def addNode: addNode = "addNode".asInstanceOf[addNode]
-  @scala.inline
-  def addRange: addRange = "addRange".asInstanceOf[addRange]
-  @scala.inline
-  def addRow: addRow = "addRow".asInstanceOf[addRow]
-  @scala.inline
-  def addRowLabel: addRowLabel = "addRowLabel".asInstanceOf[addRowLabel]
-  @scala.inline
-  def addRowTooltip: addRowTooltip = "addRowTooltip".asInstanceOf[addRowTooltip]
-  @scala.inline
-  def addSeries: addSeries = "addSeries".asInstanceOf[addSeries]
-  @scala.inline
-  def adjustVirtualHeights: adjustVirtualHeights = "adjustVirtualHeights".asInstanceOf[adjustVirtualHeights]
-  @scala.inline
-  def advancedModeEditorsVisible: advancedModeEditorsVisible = "advancedModeEditorsVisible".asInstanceOf[advancedModeEditorsVisible]
-  @scala.inline
-  def advancedModeHeaderButtonLocation: advancedModeHeaderButtonLocation = "advancedModeHeaderButtonLocation".asInstanceOf[advancedModeHeaderButtonLocation]
-  @scala.inline
-  def agendaRangeChanged: agendaRangeChanged = "agendaRangeChanged".asInstanceOf[agendaRangeChanged]
-  @scala.inline
-  def agendaRangeChanging: agendaRangeChanging = "agendaRangeChanging".asInstanceOf[agendaRangeChanging]
-  @scala.inline
-  def agendaViewSettings: agendaViewSettings = "agendaViewSettings".asInstanceOf[agendaViewSettings]
-  @scala.inline
-  def aggregateTransactions: aggregateTransactions = "aggregateTransactions".asInstanceOf[aggregateTransactions]
-  @scala.inline
-  def alignLabel: alignLabel = "alignLabel".asInstanceOf[alignLabel]
-  @scala.inline
-  def alignsGridLinesToPixels: alignsGridLinesToPixels = "alignsGridLinesToPixels".asInstanceOf[alignsGridLinesToPixels]
-  @scala.inline
-  def allChildren: allChildren = "allChildren".asInstanceOf[allChildren]
-  @scala.inline
-  def allChildrenWidgets: allChildrenWidgets = "allChildrenWidgets".asInstanceOf[allChildrenWidgets]
-  @scala.inline
-  def allFixedRows: allFixedRows = "allFixedRows".asInstanceOf[allFixedRows]
-  @scala.inline
-  def allRows: allRows = "allRows".asInstanceOf[allRows]
-  @scala.inline
-  def allTransactions: allTransactions = "allTransactions".asInstanceOf[allTransactions]
-  @scala.inline
-  def allowAddWorksheet: allowAddWorksheet = "allowAddWorksheet".asInstanceOf[allowAddWorksheet]
-  @scala.inline
-  def allowCSSOnTarget: allowCSSOnTarget = "allowCSSOnTarget".asInstanceOf[allowCSSOnTarget]
-  @scala.inline
-  def allowCollapsing: allowCollapsing = "allowCollapsing".asInstanceOf[allowCollapsing]
-  @scala.inline
-  def allowCustomValue: allowCustomValue = "allowCustomValue".asInstanceOf[allowCustomValue]
-  @scala.inline
-  def allowDeleteWorksheet: allowDeleteWorksheet = "allowDeleteWorksheet".asInstanceOf[allowDeleteWorksheet]
-  @scala.inline
-  def allowDoubleClickToResize: allowDoubleClickToResize = "allowDoubleClickToResize".asInstanceOf[allowDoubleClickToResize]
-  @scala.inline
-  def allowHeaderColumnsSorting: allowHeaderColumnsSorting = "allowHeaderColumnsSorting".asInstanceOf[allowHeaderColumnsSorting]
-  @scala.inline
-  def allowHeaderRowsSorting: allowHeaderRowsSorting = "allowHeaderRowsSorting".asInstanceOf[allowHeaderRowsSorting]
-  @scala.inline
-  def allowMultipleRangeSelection: allowMultipleRangeSelection = "allowMultipleRangeSelection".asInstanceOf[allowMultipleRangeSelection]
-  @scala.inline
-  def allowNullValue: allowNullValue = "allowNullValue".asInstanceOf[allowNullValue]
-  @scala.inline
-  def allowSliceExplosion: allowSliceExplosion = "allowSliceExplosion".asInstanceOf[allowSliceExplosion]
-  @scala.inline
-  def allowSliceSelection: allowSliceSelection = "allowSliceSelection".asInstanceOf[allowSliceSelection]
-  @scala.inline
-  def allowSorting: allowSorting = "allowSorting".asInstanceOf[allowSorting]
-  @scala.inline
-  def allowToggling: allowToggling = "allowToggling".asInstanceOf[allowToggling]
-  @scala.inline
-  def allowedColumnWidthPerType: allowedColumnWidthPerType = "allowedColumnWidthPerType".asInstanceOf[allowedColumnWidthPerType]
-  @scala.inline
-  def allowedExtensions: allowedExtensions = "allowedExtensions".asInstanceOf[allowedExtensions]
-  @scala.inline
-  def alternateRowStyles: alternateRowStyles = "alternateRowStyles".asInstanceOf[alternateRowStyles]
-  @scala.inline
-  def alwaysVisible: alwaysVisible = "alwaysVisible".asInstanceOf[alwaysVisible]
-  @scala.inline
-  def animate: animate = "animate".asInstanceOf[animate]
-  @scala.inline
-  def animateSeriesWhenAxisRangeChanges: animateSeriesWhenAxisRangeChanges = "animateSeriesWhenAxisRangeChanges".asInstanceOf[animateSeriesWhenAxisRangeChanges]
-  @scala.inline
-  def animateTimeout: animateTimeout = "animateTimeout".asInstanceOf[animateTimeout]
-  @scala.inline
-  def animationDuration: animationDuration = "animationDuration".asInstanceOf[animationDuration]
-  @scala.inline
-  def animationEnded: animationEnded = "animationEnded".asInstanceOf[animationEnded]
-  @scala.inline
-  def animationHideDuration: animationHideDuration = "animationHideDuration".asInstanceOf[animationHideDuration]
-  @scala.inline
-  def animationShowDuration: animationShowDuration = "animationShowDuration".asInstanceOf[animationShowDuration]
-  @scala.inline
-  def animationSlideDistance: animationSlideDistance = "animationSlideDistance".asInstanceOf[animationSlideDistance]
-  @scala.inline
-  def appendTo: appendTo = "appendTo".asInstanceOf[appendTo]
-  @scala.inline
-  def applicationIndicator: applicationIndicator = "applicationIndicator".asInstanceOf[applicationIndicator]
-  @scala.inline
-  def appliedColumnSortDirections: appliedColumnSortDirections = "appliedColumnSortDirections".asInstanceOf[appliedColumnSortDirections]
-  @scala.inline
-  def appliedLevelSortDirections: appliedLevelSortDirections = "appliedLevelSortDirections".asInstanceOf[appliedLevelSortDirections]
-  @scala.inline
-  def apply: apply = "apply".asInstanceOf[apply]
-  @scala.inline
-  def applyChangesToNode: applyChangesToNode = "applyChangesToNode".asInstanceOf[applyChangesToNode]
-  @scala.inline
-  def applyCustomIndicators: applyCustomIndicators = "applyCustomIndicators".asInstanceOf[applyCustomIndicators]
-  @scala.inline
-  def applySortedColumnCss: applySortedColumnCss = "applySortedColumnCss".asInstanceOf[applySortedColumnCss]
-  @scala.inline
-  def appointmentCreated: appointmentCreated = "appointmentCreated".asInstanceOf[appointmentCreated]
-  @scala.inline
-  def appointmentCreating: appointmentCreating = "appointmentCreating".asInstanceOf[appointmentCreating]
-  @scala.inline
-  def appointmentDeleted: appointmentDeleted = "appointmentDeleted".asInstanceOf[appointmentDeleted]
-  @scala.inline
-  def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
-  @scala.inline
-  def appointmentDialogClosed: appointmentDialogClosed = "appointmentDialogClosed".asInstanceOf[appointmentDialogClosed]
-  @scala.inline
-  def appointmentDialogClosing: appointmentDialogClosing = "appointmentDialogClosing".asInstanceOf[appointmentDialogClosing]
-  @scala.inline
-  def appointmentDialogOpened: appointmentDialogOpened = "appointmentDialogOpened".asInstanceOf[appointmentDialogOpened]
-  @scala.inline
-  def appointmentDialogOpening: appointmentDialogOpening = "appointmentDialogOpening".asInstanceOf[appointmentDialogOpening]
-  @scala.inline
-  def appointmentDialogSuppress: appointmentDialogSuppress = "appointmentDialogSuppress".asInstanceOf[appointmentDialogSuppress]
-  @scala.inline
-  def appointmentEdited: appointmentEdited = "appointmentEdited".asInstanceOf[appointmentEdited]
-  @scala.inline
-  def appointmentEditing: appointmentEditing = "appointmentEditing".asInstanceOf[appointmentEditing]
-  @scala.inline
-  def areGridlinesVisible: areGridlinesVisible = "areGridlinesVisible".asInstanceOf[areGridlinesVisible]
-  @scala.inline
-  def areHeadersVisible: areHeadersVisible = "areHeadersVisible".asInstanceOf[areHeadersVisible]
-  @scala.inline
-  def areThumbCalloutsEnabled: areThumbCalloutsEnabled = "areThumbCalloutsEnabled".asInstanceOf[areThumbCalloutsEnabled]
-  @scala.inline
-  def arrowLocation: arrowLocation = "arrowLocation".asInstanceOf[arrowLocation]
-  @scala.inline
-  def assigningCategoryMarkerStyle: assigningCategoryMarkerStyle = "assigningCategoryMarkerStyle".asInstanceOf[assigningCategoryMarkerStyle]
-  @scala.inline
-  def assigningCategoryStyle: assigningCategoryStyle = "assigningCategoryStyle".asInstanceOf[assigningCategoryStyle]
-  @scala.inline
-  def attachFilePicker: attachFilePicker = "attachFilePicker".asInstanceOf[attachFilePicker]
-  @scala.inline
-  def autoAdjustHeight: autoAdjustHeight = "autoAdjustHeight".asInstanceOf[autoAdjustHeight]
-  @scala.inline
-  def autoCommit: autoCommit = "autoCommit".asInstanceOf[autoCommit]
-  @scala.inline
-  def autoComplete: autoComplete = "autoComplete".asInstanceOf[autoComplete]
-  @scala.inline
-  def autoFormat: autoFormat = "autoFormat".asInstanceOf[autoFormat]
-  @scala.inline
-  def autoGenerateColumns: autoGenerateColumns = "autoGenerateColumns".asInstanceOf[autoGenerateColumns]
-  @scala.inline
-  def autoGenerateLayouts: autoGenerateLayouts = "autoGenerateLayouts".asInstanceOf[autoGenerateLayouts]
-  @scala.inline
-  def autoMarginHeight: autoMarginHeight = "autoMarginHeight".asInstanceOf[autoMarginHeight]
-  @scala.inline
-  def autoMarginWidth: autoMarginWidth = "autoMarginWidth".asInstanceOf[autoMarginWidth]
-  @scala.inline
-  def autoSelectFirstMatch: autoSelectFirstMatch = "autoSelectFirstMatch".asInstanceOf[autoSelectFirstMatch]
-  @scala.inline
-  def autoSizeColumns: autoSizeColumns = "autoSizeColumns".asInstanceOf[autoSizeColumns]
-  @scala.inline
-  def autofitLastColumn: autofitLastColumn = "autofitLastColumn".asInstanceOf[autofitLastColumn]
-  @scala.inline
-  def autohide: autohide = "autohide".asInstanceOf[autohide]
-  @scala.inline
-  def autoplay: autoplay = "autoplay".asInstanceOf[autoplay]
-  @scala.inline
-  def autoselect: autoselect = "autoselect".asInstanceOf[autoselect]
-  @scala.inline
-  def autostartupload: autostartupload = "autostartupload".asInstanceOf[autostartupload]
-  @scala.inline
-  def avgColumnWidth: avgColumnWidth = "avgColumnWidth".asInstanceOf[avgColumnWidth]
-  @scala.inline
-  def avgRowHeight: avgRowHeight = "avgRowHeight".asInstanceOf[avgRowHeight]
-  @scala.inline
-  def axes: axes = "axes".asInstanceOf[axes]
-  @scala.inline
-  def axisRangeChanged: axisRangeChanged = "axisRangeChanged".asInstanceOf[axisRangeChanged]
-  @scala.inline
-  def backgroundContent: backgroundContent = "backgroundContent".asInstanceOf[backgroundContent]
-  @scala.inline
-  def backingBrush: backingBrush = "backingBrush".asInstanceOf[backingBrush]
-  @scala.inline
-  def backingCornerRadius: backingCornerRadius = "backingCornerRadius".asInstanceOf[backingCornerRadius]
-  @scala.inline
-  def backingInnerExtent: backingInnerExtent = "backingInnerExtent".asInstanceOf[backingInnerExtent]
-  @scala.inline
-  def backingOuterExtent: backingOuterExtent = "backingOuterExtent".asInstanceOf[backingOuterExtent]
-  @scala.inline
-  def backingOutline: backingOutline = "backingOutline".asInstanceOf[backingOutline]
-  @scala.inline
-  def backingOversweep: backingOversweep = "backingOversweep".asInstanceOf[backingOversweep]
-  @scala.inline
-  def backingShape: backingShape = "backingShape".asInstanceOf[backingShape]
-  @scala.inline
-  def backingStrokeThickness: backingStrokeThickness = "backingStrokeThickness".asInstanceOf[backingStrokeThickness]
-  @scala.inline
-  def bannerClick: bannerClick = "bannerClick".asInstanceOf[bannerClick]
-  @scala.inline
-  def bannerHidden: bannerHidden = "bannerHidden".asInstanceOf[bannerHidden]
-  @scala.inline
-  def bannerVisible: bannerVisible = "bannerVisible".asInstanceOf[bannerVisible]
-  @scala.inline
-  def banners: banners = "banners".asInstanceOf[banners]
-  @scala.inline
-  def barBrush: barBrush = "barBrush".asInstanceOf[barBrush]
-  @scala.inline
-  def barExtent: barExtent = "barExtent".asInstanceOf[barExtent]
-  @scala.inline
-  def barOutline: barOutline = "barOutline".asInstanceOf[barOutline]
-  @scala.inline
-  def barStrokeThickness: barStrokeThickness = "barStrokeThickness".asInstanceOf[barStrokeThickness]
-  @scala.inline
-  def barsFillMode: barsFillMode = "barsFillMode".asInstanceOf[barsFillMode]
-  @scala.inline
-  def bezierPoints: bezierPoints = "bezierPoints".asInstanceOf[bezierPoints]
-  @scala.inline
-  def bigIncrementStep: bigIncrementStep = "bigIncrementStep".asInstanceOf[bigIncrementStep]
-  @scala.inline
-  def bindings: bindings = "bindings".asInstanceOf[bindings]
-  @scala.inline
-  def blur: blur = "blur".asInstanceOf[blur]
-  @scala.inline
-  def bookmarkClick: bookmarkClick = "bookmarkClick".asInstanceOf[bookmarkClick]
-  @scala.inline
-  def bookmarkHit: bookmarkHit = "bookmarkHit".asInstanceOf[bookmarkHit]
-  @scala.inline
-  def bookmarks: bookmarks = "bookmarks".asInstanceOf[bookmarks]
-  @scala.inline
-  def borderLayout: borderLayout = "borderLayout".asInstanceOf[borderLayout]
-  @scala.inline
-  def bottomEdgeWidth: bottomEdgeWidth = "bottomEdgeWidth".asInstanceOf[bottomEdgeWidth]
-  @scala.inline
-  def bottomMargin: bottomMargin = "bottomMargin".asInstanceOf[bottomMargin]
-  @scala.inline
-  def breadcrumbDelimiter: breadcrumbDelimiter = "breadcrumbDelimiter".asInstanceOf[breadcrumbDelimiter]
-  @scala.inline
-  def breadcrumbKey: breadcrumbKey = "breadcrumbKey".asInstanceOf[breadcrumbKey]
-  @scala.inline
-  def browserControls: browserControls = "browserControls".asInstanceOf[browserControls]
-  @scala.inline
-  def browserNotSupported: browserNotSupported = "browserNotSupported".asInstanceOf[browserNotSupported]
-  @scala.inline
-  def brush: brush = "brush".asInstanceOf[brush]
-  @scala.inline
-  def brushes: brushes = "brushes".asInstanceOf[brushes]
-  @scala.inline
-  def buffering: buffering = "buffering".asInstanceOf[buffering]
-  @scala.inline
-  def buttonApplyDisabled: buttonApplyDisabled = "buttonApplyDisabled".asInstanceOf[buttonApplyDisabled]
-  @scala.inline
-  def buttonCancelClick: buttonCancelClick = "buttonCancelClick".asInstanceOf[buttonCancelClick]
-  @scala.inline
-  def buttonOKClick: buttonOKClick = "buttonOKClick".asInstanceOf[buttonOKClick]
-  @scala.inline
-  def buttonType: buttonType = "buttonType".asInstanceOf[buttonType]
-  @scala.inline
-  def calculateAutoFitColumnWidth: calculateAutoFitColumnWidth = "calculateAutoFitColumnWidth".asInstanceOf[calculateAutoFitColumnWidth]
-  @scala.inline
-  def calculateRenderMode: calculateRenderMode = "calculateRenderMode".asInstanceOf[calculateRenderMode]
-  @scala.inline
-  def calculateSummaries: calculateSummaries = "calculateSummaries".asInstanceOf[calculateSummaries]
-  @scala.inline
-  def calculateSummaryColumn: calculateSummaryColumn = "calculateSummaryColumn".asInstanceOf[calculateSummaryColumn]
-  @scala.inline
-  def callee: callee = "callee".asInstanceOf[callee]
-  @scala.inline
-  def calloutStyleUpdating: calloutStyleUpdating = "calloutStyleUpdating".asInstanceOf[calloutStyleUpdating]
-  @scala.inline
-  def calloutStyleUpdatingEventEnabled: calloutStyleUpdatingEventEnabled = "calloutStyleUpdatingEventEnabled".asInstanceOf[calloutStyleUpdatingEventEnabled]
-  @scala.inline
-  def calloutsContentMemberPath: calloutsContentMemberPath = "calloutsContentMemberPath".asInstanceOf[calloutsContentMemberPath]
-  @scala.inline
-  def calloutsItemsSource: calloutsItemsSource = "calloutsItemsSource".asInstanceOf[calloutsItemsSource]
-  @scala.inline
-  def calloutsLabelMemberPath: calloutsLabelMemberPath = "calloutsLabelMemberPath".asInstanceOf[calloutsLabelMemberPath]
-  @scala.inline
-  def calloutsVisible: calloutsVisible = "calloutsVisible".asInstanceOf[calloutsVisible]
-  @scala.inline
-  def calloutsXMemberPath: calloutsXMemberPath = "calloutsXMemberPath".asInstanceOf[calloutsXMemberPath]
-  @scala.inline
-  def calloutsYMemberPath: calloutsYMemberPath = "calloutsYMemberPath".asInstanceOf[calloutsYMemberPath]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def cancelAll: cancelAll = "cancelAll".asInstanceOf[cancelAll]
-  @scala.inline
-  def cancelAllClicked: cancelAllClicked = "cancelAllClicked".asInstanceOf[cancelAllClicked]
-  @scala.inline
-  def cancelLabel: cancelLabel = "cancelLabel".asInstanceOf[cancelLabel]
-  @scala.inline
-  def cancelTooltip: cancelTooltip = "cancelTooltip".asInstanceOf[cancelTooltip]
-  @scala.inline
-  def cancelUpload: cancelUpload = "cancelUpload".asInstanceOf[cancelUpload]
-  @scala.inline
-  def caption: caption = "caption".asInstanceOf[caption]
-  @scala.inline
-  def captionRendered: captionRendered = "captionRendered".asInstanceOf[captionRendered]
-  @scala.inline
-  def captionRendering: captionRendering = "captionRendering".asInstanceOf[captionRendering]
-  @scala.inline
-  def capture: capture = "capture".asInstanceOf[capture]
-  @scala.inline
-  def caseSensitive: caseSensitive = "caseSensitive".asInstanceOf[caseSensitive]
-  @scala.inline
-  def cellAt: cellAt = "cellAt".asInstanceOf[cellAt]
-  @scala.inline
-  def cellById: cellById = "cellById".asInstanceOf[cellById]
-  @scala.inline
-  def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
-  @scala.inline
-  def cellRightClick: cellRightClick = "cellRightClick".asInstanceOf[cellRightClick]
-  @scala.inline
-  def cellSelectionChanged: cellSelectionChanged = "cellSelectionChanged".asInstanceOf[cellSelectionChanged]
-  @scala.inline
-  def cellSelectionChanging: cellSelectionChanging = "cellSelectionChanging".asInstanceOf[cellSelectionChanging]
-  @scala.inline
-  def cellsMerged: cellsMerged = "cellsMerged".asInstanceOf[cellsMerged]
-  @scala.inline
-  def cellsMerging: cellsMerging = "cellsMerging".asInstanceOf[cellsMerging]
-  @scala.inline
-  def centerButtonClosedFill: centerButtonClosedFill = "centerButtonClosedFill".asInstanceOf[centerButtonClosedFill]
-  @scala.inline
-  def centerButtonClosedStroke: centerButtonClosedStroke = "centerButtonClosedStroke".asInstanceOf[centerButtonClosedStroke]
-  @scala.inline
-  def centerButtonContentHeight: centerButtonContentHeight = "centerButtonContentHeight".asInstanceOf[centerButtonContentHeight]
-  @scala.inline
-  def centerButtonContentWidth: centerButtonContentWidth = "centerButtonContentWidth".asInstanceOf[centerButtonContentWidth]
-  @scala.inline
-  def centerButtonFill: centerButtonFill = "centerButtonFill".asInstanceOf[centerButtonFill]
-  @scala.inline
-  def centerButtonHideDelay: centerButtonHideDelay = "centerButtonHideDelay".asInstanceOf[centerButtonHideDelay]
-  @scala.inline
-  def centerButtonHotTrackFill: centerButtonHotTrackFill = "centerButtonHotTrackFill".asInstanceOf[centerButtonHotTrackFill]
-  @scala.inline
-  def centerButtonHotTrackStroke: centerButtonHotTrackStroke = "centerButtonHotTrackStroke".asInstanceOf[centerButtonHotTrackStroke]
-  @scala.inline
-  def centerButtonStroke: centerButtonStroke = "centerButtonStroke".asInstanceOf[centerButtonStroke]
-  @scala.inline
-  def centerButtonStrokeThickness: centerButtonStrokeThickness = "centerButtonStrokeThickness".asInstanceOf[centerButtonStrokeThickness]
-  @scala.inline
-  def centerLabel: centerLabel = "centerLabel".asInstanceOf[centerLabel]
-  @scala.inline
-  def centerX: centerX = "centerX".asInstanceOf[centerX]
-  @scala.inline
-  def centerY: centerY = "centerY".asInstanceOf[centerY]
-  @scala.inline
-  def centuryThreshold: centuryThreshold = "centuryThreshold".asInstanceOf[centuryThreshold]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def changeCheckState: changeCheckState = "changeCheckState".asInstanceOf[changeCheckState]
-  @scala.inline
-  def changeCheckStateById: changeCheckStateById = "changeCheckStateById".asInstanceOf[changeCheckStateById]
-  @scala.inline
-  def changeGlobalLanguage: changeGlobalLanguage = "changeGlobalLanguage".asInstanceOf[changeGlobalLanguage]
-  @scala.inline
-  def changeGlobalRegional: changeGlobalRegional = "changeGlobalRegional".asInstanceOf[changeGlobalRegional]
-  @scala.inline
-  def changeLocale: changeLocale = "changeLocale".asInstanceOf[changeLocale]
-  @scala.inline
-  def changeRegional: changeRegional = "changeRegional".asInstanceOf[changeRegional]
-  @scala.inline
-  def chart: chart = "chart".asInstanceOf[chart]
-  @scala.inline
-  def chartType: chartType = "chartType".asInstanceOf[chartType]
-  @scala.inline
-  def chartTypePickerTemplate: chartTypePickerTemplate = "chartTypePickerTemplate".asInstanceOf[chartTypePickerTemplate]
-  @scala.inline
-  def checkAndSyncHeights: checkAndSyncHeights = "checkAndSyncHeights".asInstanceOf[checkAndSyncHeights]
-  @scala.inline
-  def checkBoxMode: checkBoxMode = "checkBoxMode".asInstanceOf[checkBoxMode]
-  @scala.inline
-  def checkBoxStateChanged: checkBoxStateChanged = "checkBoxStateChanged".asInstanceOf[checkBoxStateChanged]
-  @scala.inline
-  def checkBoxStateChanging: checkBoxStateChanging = "checkBoxStateChanging".asInstanceOf[checkBoxStateChanging]
-  @scala.inline
-  def checkColumnIsGrouped: checkColumnIsGrouped = "checkColumnIsGrouped".asInstanceOf[checkColumnIsGrouped]
-  @scala.inline
-  def checkFixingAllowed: checkFixingAllowed = "checkFixingAllowed".asInstanceOf[checkFixingAllowed]
-  @scala.inline
-  def checkNode: checkNode = "checkNode".asInstanceOf[checkNode]
-  @scala.inline
-  def checkState: checkState = "checkState".asInstanceOf[checkState]
-  @scala.inline
-  def checkStateById: checkStateById = "checkStateById".asInstanceOf[checkStateById]
-  @scala.inline
-  def checkUnfixingAllowed: checkUnfixingAllowed = "checkUnfixingAllowed".asInstanceOf[checkUnfixingAllowed]
-  @scala.inline
-  def checkboxMode_ : checkboxMode_ = "checkboxMode".asInstanceOf[checkboxMode_]
-  @scala.inline
-  def checked: checked = "checked".asInstanceOf[checked]
-  @scala.inline
-  def checkedNodes: checkedNodes = "checkedNodes".asInstanceOf[checkedNodes]
-  @scala.inline
-  def checkedRows: checkedRows = "checkedRows".asInstanceOf[checkedRows]
-  @scala.inline
-  def childDataKey: childDataKey = "childDataKey".asInstanceOf[childDataKey]
-  @scala.inline
-  def childGridCreated: childGridCreated = "childGridCreated".asInstanceOf[childGridCreated]
-  @scala.inline
-  def childGridCreating: childGridCreating = "childGridCreating".asInstanceOf[childGridCreating]
-  @scala.inline
-  def childGridRendered: childGridRendered = "childGridRendered".asInstanceOf[childGridRendered]
-  @scala.inline
-  def children: children = "children".asInstanceOf[children]
-  @scala.inline
-  def childrenByPath: childrenByPath = "childrenByPath".asInstanceOf[childrenByPath]
-  @scala.inline
-  def childrenPopulated: childrenPopulated = "childrenPopulated".asInstanceOf[childrenPopulated]
-  @scala.inline
-  def childrenPopulating: childrenPopulating = "childrenPopulating".asInstanceOf[childrenPopulating]
-  @scala.inline
-  def childrenWidgets: childrenWidgets = "childrenWidgets".asInstanceOf[childrenWidgets]
-  @scala.inline
-  def chunkIndexUrlKey: chunkIndexUrlKey = "chunkIndexUrlKey".asInstanceOf[chunkIndexUrlKey]
-  @scala.inline
-  def chunkSize: chunkSize = "chunkSize".asInstanceOf[chunkSize]
-  @scala.inline
-  def chunkSizeUrlKey: chunkSizeUrlKey = "chunkSizeUrlKey".asInstanceOf[chunkSizeUrlKey]
-  @scala.inline
-  def circleMarkerTemplate: circleMarkerTemplate = "circleMarkerTemplate".asInstanceOf[circleMarkerTemplate]
-  @scala.inline
-  def clearAll: clearAll = "clearAll".asInstanceOf[clearAll]
-  @scala.inline
-  def clearAllFooterIcons: clearAllFooterIcons = "clearAllFooterIcons".asInstanceOf[clearAllFooterIcons]
-  @scala.inline
-  def clearBookmarks: clearBookmarks = "clearBookmarks".asInstanceOf[clearBookmarks]
-  @scala.inline
-  def clearButton: clearButton = "clearButton".asInstanceOf[clearButton]
-  @scala.inline
-  def clearButtonTitle: clearButtonTitle = "clearButtonTitle".asInstanceOf[clearButtonTitle]
-  @scala.inline
-  def clearFiltering: clearFiltering = "clearFiltering".asInstanceOf[clearFiltering]
-  @scala.inline
-  def clearInput: clearInput = "clearInput".asInstanceOf[clearInput]
-  @scala.inline
-  def clearRanges: clearRanges = "clearRanges".asInstanceOf[clearRanges]
-  @scala.inline
-  def clearSelection: clearSelection = "clearSelection".asInstanceOf[clearSelection]
-  @scala.inline
-  def clearSorting: clearSorting = "clearSorting".asInstanceOf[clearSorting]
-  @scala.inline
-  def clearTileZoomCache: clearTileZoomCache = "clearTileZoomCache".asInstanceOf[clearTileZoomCache]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def close: close = "close".asInstanceOf[close]
-  @scala.inline
-  def closeAnimation: closeAnimation = "closeAnimation".asInstanceOf[closeAnimation]
-  @scala.inline
-  def closeButtonTitle: closeButtonTitle = "closeButtonTitle".asInstanceOf[closeButtonTitle]
-  @scala.inline
-  def closeDropDown: closeDropDown = "closeDropDown".asInstanceOf[closeDropDown]
-  @scala.inline
-  def closeDropDownOnBlur: closeDropDownOnBlur = "closeDropDownOnBlur".asInstanceOf[closeDropDownOnBlur]
-  @scala.inline
-  def closeDropDownOnSelect: closeDropDownOnSelect = "closeDropDownOnSelect".asInstanceOf[closeDropDownOnSelect]
-  @scala.inline
-  def closeGroupByDialog: closeGroupByDialog = "closeGroupByDialog".asInstanceOf[closeGroupByDialog]
-  @scala.inline
-  def closeModalDialog: closeModalDialog = "closeModalDialog".asInstanceOf[closeModalDialog]
-  @scala.inline
-  def closeModalDialogOnEnter: closeModalDialogOnEnter = "closeModalDialogOnEnter".asInstanceOf[closeModalDialogOnEnter]
-  @scala.inline
-  def closeMultipleSortingDialog: closeMultipleSortingDialog = "closeMultipleSortingDialog".asInstanceOf[closeMultipleSortingDialog]
-  @scala.inline
-  def closeOnBlur: closeOnBlur = "closeOnBlur".asInstanceOf[closeOnBlur]
-  @scala.inline
-  def closeOnEscape: closeOnEscape = "closeOnEscape".asInstanceOf[closeOnEscape]
-  @scala.inline
-  def closed: closed = "closed".asInstanceOf[closed]
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
-  @scala.inline
-  def collapseAt: collapseAt = "collapseAt".asInstanceOf[collapseAt]
-  @scala.inline
-  def collapseButtonIcon: collapseButtonIcon = "collapseButtonIcon".asInstanceOf[collapseButtonIcon]
-  @scala.inline
-  def collapseGroup: collapseGroup = "collapseGroup".asInstanceOf[collapseGroup]
-  @scala.inline
-  def collapseRow: collapseRow = "collapseRow".asInstanceOf[collapseRow]
-  @scala.inline
-  def collapseTooltip: collapseTooltip = "collapseTooltip".asInstanceOf[collapseTooltip]
-  @scala.inline
-  def collapseTooltipText: collapseTooltipText = "collapseTooltipText".asInstanceOf[collapseTooltipText]
-  @scala.inline
-  def collapseTupleMember: collapseTupleMember = "collapseTupleMember".asInstanceOf[collapseTupleMember]
-  @scala.inline
-  def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
-  @scala.inline
-  def collapsing: collapsing = "collapsing".asInstanceOf[collapsing]
-  @scala.inline
-  def colorFromElement: colorFromElement = "colorFromElement".asInstanceOf[colorFromElement]
-  @scala.inline
-  def colorSelected: colorSelected = "colorSelected".asInstanceOf[colorSelected]
-  @scala.inline
-  def colorTable: colorTable = "colorTable".asInstanceOf[colorTable]
-  @scala.inline
-  def colors: colors = "colors".asInstanceOf[colors]
-  @scala.inline
-  def cols: cols = "cols".asInstanceOf[cols]
-  @scala.inline
-  def columnByKey: columnByKey = "columnByKey".asInstanceOf[columnByKey]
-  @scala.inline
-  def columnByText: columnByText = "columnByText".asInstanceOf[columnByText]
-  @scala.inline
-  def columnChooserAnimationDuration: columnChooserAnimationDuration = "columnChooserAnimationDuration".asInstanceOf[columnChooserAnimationDuration]
-  @scala.inline
-  def columnChooserButtonApplyClick: columnChooserButtonApplyClick = "columnChooserButtonApplyClick".asInstanceOf[columnChooserButtonApplyClick]
-  @scala.inline
-  def columnChooserButtonApplyText: columnChooserButtonApplyText = "columnChooserButtonApplyText".asInstanceOf[columnChooserButtonApplyText]
-  @scala.inline
-  def columnChooserButtonCancelText: columnChooserButtonCancelText = "columnChooserButtonCancelText".asInstanceOf[columnChooserButtonCancelText]
-  @scala.inline
-  def columnChooserButtonResetClick: columnChooserButtonResetClick = "columnChooserButtonResetClick".asInstanceOf[columnChooserButtonResetClick]
-  @scala.inline
-  def columnChooserCaptionText: columnChooserCaptionText = "columnChooserCaptionText".asInstanceOf[columnChooserCaptionText]
-  @scala.inline
-  def columnChooserClosed: columnChooserClosed = "columnChooserClosed".asInstanceOf[columnChooserClosed]
-  @scala.inline
-  def columnChooserClosing: columnChooserClosing = "columnChooserClosing".asInstanceOf[columnChooserClosing]
-  @scala.inline
-  def columnChooserContainment: columnChooserContainment = "columnChooserContainment".asInstanceOf[columnChooserContainment]
-  @scala.inline
-  def columnChooserContentsRendered: columnChooserContentsRendered = "columnChooserContentsRendered".asInstanceOf[columnChooserContentsRendered]
-  @scala.inline
-  def columnChooserContentsRendering: columnChooserContentsRendering = "columnChooserContentsRendering".asInstanceOf[columnChooserContentsRendering]
-  @scala.inline
-  def columnChooserDisplayText: columnChooserDisplayText = "columnChooserDisplayText".asInstanceOf[columnChooserDisplayText]
-  @scala.inline
-  def columnChooserHeight: columnChooserHeight = "columnChooserHeight".asInstanceOf[columnChooserHeight]
-  @scala.inline
-  def columnChooserHideOnClick: columnChooserHideOnClick = "columnChooserHideOnClick".asInstanceOf[columnChooserHideOnClick]
-  @scala.inline
-  def columnChooserHideText: columnChooserHideText = "columnChooserHideText".asInstanceOf[columnChooserHideText]
-  @scala.inline
-  def columnChooserMoving: columnChooserMoving = "columnChooserMoving".asInstanceOf[columnChooserMoving]
-  @scala.inline
-  def columnChooserOpened: columnChooserOpened = "columnChooserOpened".asInstanceOf[columnChooserOpened]
-  @scala.inline
-  def columnChooserOpening: columnChooserOpening = "columnChooserOpening".asInstanceOf[columnChooserOpening]
-  @scala.inline
-  def columnChooserResetButtonLabel: columnChooserResetButtonLabel = "columnChooserResetButtonLabel".asInstanceOf[columnChooserResetButtonLabel]
-  @scala.inline
-  def columnChooserShowText: columnChooserShowText = "columnChooserShowText".asInstanceOf[columnChooserShowText]
-  @scala.inline
-  def columnChooserWidth: columnChooserWidth = "columnChooserWidth".asInstanceOf[columnChooserWidth]
-  @scala.inline
-  def columnDragCanceled: columnDragCanceled = "columnDragCanceled".asInstanceOf[columnDragCanceled]
-  @scala.inline
-  def columnDragEnd: columnDragEnd = "columnDragEnd".asInstanceOf[columnDragEnd]
-  @scala.inline
-  def columnDragStart: columnDragStart = "columnDragStart".asInstanceOf[columnDragStart]
-  @scala.inline
-  def columnFixed: columnFixed = "columnFixed".asInstanceOf[columnFixed]
-  @scala.inline
-  def columnFixing: columnFixing = "columnFixing".asInstanceOf[columnFixing]
-  @scala.inline
-  def columnFixingRefused: columnFixingRefused = "columnFixingRefused".asInstanceOf[columnFixingRefused]
-  @scala.inline
-  def columnHeight: columnHeight = "columnHeight".asInstanceOf[columnHeight]
-  @scala.inline
-  def columnHidden: columnHidden = "columnHidden".asInstanceOf[columnHidden]
-  @scala.inline
-  def columnHideText: columnHideText = "columnHideText".asInstanceOf[columnHideText]
-  @scala.inline
-  def columnHiding: columnHiding = "columnHiding".asInstanceOf[columnHiding]
-  @scala.inline
-  def columnHidingRefused: columnHidingRefused = "columnHidingRefused".asInstanceOf[columnHidingRefused]
-  @scala.inline
-  def columnLayouts: columnLayouts = "columnLayouts".asInstanceOf[columnLayouts]
-  @scala.inline
-  def columnMoved: columnMoved = "columnMoved".asInstanceOf[columnMoved]
-  @scala.inline
-  def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
-  @scala.inline
-  def columnMovingDialogContainment: columnMovingDialogContainment = "columnMovingDialogContainment".asInstanceOf[columnMovingDialogContainment]
-  @scala.inline
-  def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
-  @scala.inline
-  def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
-  @scala.inline
-  def columnResizingRefused: columnResizingRefused = "columnResizingRefused".asInstanceOf[columnResizingRefused]
-  @scala.inline
-  def columnSettings: columnSettings = "columnSettings".asInstanceOf[columnSettings]
-  @scala.inline
-  def columnShowing: columnShowing = "columnShowing".asInstanceOf[columnShowing]
-  @scala.inline
-  def columnShowingRefused: columnShowingRefused = "columnShowingRefused".asInstanceOf[columnShowingRefused]
-  @scala.inline
-  def columnShown: columnShown = "columnShown".asInstanceOf[columnShown]
-  @scala.inline
-  def columnSorted: columnSorted = "columnSorted".asInstanceOf[columnSorted]
-  @scala.inline
-  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
-  @scala.inline
-  def columnUnfixed: columnUnfixed = "columnUnfixed".asInstanceOf[columnUnfixed]
-  @scala.inline
-  def columnUnfixing: columnUnfixing = "columnUnfixing".asInstanceOf[columnUnfixing]
-  @scala.inline
-  def columnUnfixingRefused: columnUnfixingRefused = "columnUnfixingRefused".asInstanceOf[columnUnfixingRefused]
-  @scala.inline
-  def columnVirtualization: columnVirtualization = "columnVirtualization".asInstanceOf[columnVirtualization]
-  @scala.inline
-  def columnWidth: columnWidth = "columnWidth".asInstanceOf[columnWidth]
-  @scala.inline
-  def columns: columns = "columns".asInstanceOf[columns]
-  @scala.inline
-  def columnsCollectionModified: columnsCollectionModified = "columnsCollectionModified".asInstanceOf[columnsCollectionModified]
-  @scala.inline
-  def comboWrapper: comboWrapper = "comboWrapper".asInstanceOf[comboWrapper]
-  @scala.inline
-  def commercials: commercials = "commercials".asInstanceOf[commercials]
-  @scala.inline
-  def commit: commit = "commit".asInstanceOf[commit]
-  @scala.inline
-  def compactColumnHeaderIndentation: compactColumnHeaderIndentation = "compactColumnHeaderIndentation".asInstanceOf[compactColumnHeaderIndentation]
-  @scala.inline
-  def compactColumnHeaders: compactColumnHeaders = "compactColumnHeaders".asInstanceOf[compactColumnHeaders]
-  @scala.inline
-  def compactRenderingMode: compactRenderingMode = "compactRenderingMode".asInstanceOf[compactRenderingMode]
-  @scala.inline
-  def compactRowHeaderIndentation: compactRowHeaderIndentation = "compactRowHeaderIndentation".asInstanceOf[compactRowHeaderIndentation]
-  @scala.inline
-  def compactRowHeaders: compactRowHeaders = "compactRowHeaders".asInstanceOf[compactRowHeaders]
-  @scala.inline
-  def container: container = "container".asInstanceOf[container]
-  @scala.inline
-  def containment: containment = "containment".asInstanceOf[containment]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def contentDocument: contentDocument = "contentDocument".asInstanceOf[contentDocument]
-  @scala.inline
-  def contentEditable: contentEditable = "contentEditable".asInstanceOf[contentEditable]
-  @scala.inline
-  def contentHitTestMode: contentHitTestMode = "contentHitTestMode".asInstanceOf[contentHitTestMode]
-  @scala.inline
-  def contentTemplate: contentTemplate = "contentTemplate".asInstanceOf[contentTemplate]
-  @scala.inline
-  def contentWindow: contentWindow = "contentWindow".asInstanceOf[contentWindow]
-  @scala.inline
-  def contextMenuOpening: contextMenuOpening = "contextMenuOpening".asInstanceOf[contextMenuOpening]
-  @scala.inline
-  def contextRowLoadingText: contextRowLoadingText = "contextRowLoadingText".asInstanceOf[contextRowLoadingText]
-  @scala.inline
-  def contextRowMode: contextRowMode = "contextRowMode".asInstanceOf[contextRowMode]
-  @scala.inline
-  def contextRowRendered: contextRowRendered = "contextRowRendered".asInstanceOf[contextRowRendered]
-  @scala.inline
-  def contextRowRendering: contextRowRendering = "contextRowRendering".asInstanceOf[contextRowRendering]
-  @scala.inline
-  def contextRowRootText: contextRowRootText = "contextRowRootText".asInstanceOf[contextRowRootText]
-  @scala.inline
-  def controlId: controlId = "controlId".asInstanceOf[controlId]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def createAppointment: createAppointment = "createAppointment".asInstanceOf[createAppointment]
-  @scala.inline
-  def createWrappedTooltip: createWrappedTooltip = "createWrappedTooltip".asInstanceOf[createWrappedTooltip]
-  @scala.inline
-  def created: created = "created".asInstanceOf[created]
-  @scala.inline
-  def creditCard: creditCard = "creditCard".asInstanceOf[creditCard]
-  @scala.inline
-  def crosshairPoint: crosshairPoint = "crosshairPoint".asInstanceOf[crosshairPoint]
-  @scala.inline
-  def crosshairVisibility: crosshairVisibility = "crosshairVisibility".asInstanceOf[crosshairVisibility]
-  @scala.inline
-  def crosshairsAnnotationEnabled: crosshairsAnnotationEnabled = "crosshairsAnnotationEnabled".asInstanceOf[crosshairsAnnotationEnabled]
-  @scala.inline
-  def crosshairsDisplayMode: crosshairsDisplayMode = "crosshairsDisplayMode".asInstanceOf[crosshairsDisplayMode]
-  @scala.inline
-  def crosshairsSnapToData: crosshairsSnapToData = "crosshairsSnapToData".asInstanceOf[crosshairsSnapToData]
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
-  @scala.inline
-  def cssClass: cssClass = "cssClass".asInstanceOf[cssClass]
-  @scala.inline
-  def cssVotes: cssVotes = "cssVotes".asInstanceOf[cssVotes]
-  @scala.inline
-  def currencySymbol: currencySymbol = "currencySymbol".asInstanceOf[currencySymbol]
-  @scala.inline
-  def currentChunkIndex: currentChunkIndex = "currentChunkIndex".asInstanceOf[currentChunkIndex]
-  @scala.inline
-  def currentOpenMenuItemName: currentOpenMenuItemName = "currentOpenMenuItemName".asInstanceOf[currentOpenMenuItemName]
-  @scala.inline
-  def currentPageDropDownLeadingLabel: currentPageDropDownLeadingLabel = "currentPageDropDownLeadingLabel".asInstanceOf[currentPageDropDownLeadingLabel]
-  @scala.inline
-  def currentPageDropDownTooltip: currentPageDropDownTooltip = "currentPageDropDownTooltip".asInstanceOf[currentPageDropDownTooltip]
-  @scala.inline
-  def currentPageDropDownTrailingLabel: currentPageDropDownTrailingLabel = "currentPageDropDownTrailingLabel".asInstanceOf[currentPageDropDownTrailingLabel]
-  @scala.inline
-  def currentPageIndex: currentPageIndex = "currentPageIndex".asInstanceOf[currentPageIndex]
-  @scala.inline
-  def currentTime: currentTime = "currentTime".asInstanceOf[currentTime]
-  @scala.inline
-  def cursorLeftOffset: cursorLeftOffset = "cursorLeftOffset".asInstanceOf[cursorLeftOffset]
-  @scala.inline
-  def cursorTopOffset: cursorTopOffset = "cursorTopOffset".asInstanceOf[cursorTopOffset]
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
-  @scala.inline
-  def customColorTable: customColorTable = "customColorTable".asInstanceOf[customColorTable]
-  @scala.inline
-  def customIndicatorNames: customIndicatorNames = "customIndicatorNames".asInstanceOf[customIndicatorNames]
-  @scala.inline
-  def customMoveValidation: customMoveValidation = "customMoveValidation".asInstanceOf[customMoveValidation]
-  @scala.inline
-  def customSortFunction: customSortFunction = "customSortFunction".asInstanceOf[customSortFunction]
-  @scala.inline
-  def customToolbars: customToolbars = "customToolbars".asInstanceOf[customToolbars]
-  @scala.inline
-  def cut: cut = "cut".asInstanceOf[cut]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def dataBind: dataBind = "dataBind".asInstanceOf[dataBind]
-  @scala.inline
-  def dataBinding: dataBinding = "dataBinding".asInstanceOf[dataBinding]
-  @scala.inline
-  def dataBound: dataBound = "dataBound".asInstanceOf[dataBound]
-  @scala.inline
-  def dataChanged: dataChanged = "dataChanged".asInstanceOf[dataChanged]
-  @scala.inline
-  def dataDirty: dataDirty = "dataDirty".asInstanceOf[dataDirty]
-  @scala.inline
-  def dataFiltered: dataFiltered = "dataFiltered".asInstanceOf[dataFiltered]
-  @scala.inline
-  def dataFiltering: dataFiltering = "dataFiltering".asInstanceOf[dataFiltering]
-  @scala.inline
-  def dataForElement: dataForElement = "dataForElement".asInstanceOf[dataForElement]
-  @scala.inline
-  def dataForValue: dataForValue = "dataForValue".asInstanceOf[dataForValue]
-  @scala.inline
-  def dataLabel: dataLabel = "dataLabel".asInstanceOf[dataLabel]
-  @scala.inline
-  def dataMode: dataMode = "dataMode".asInstanceOf[dataMode]
-  @scala.inline
-  def dataRendered: dataRendered = "dataRendered".asInstanceOf[dataRendered]
-  @scala.inline
-  def dataRendering: dataRendering = "dataRendering".asInstanceOf[dataRendering]
-  @scala.inline
-  def dataSelector: dataSelector = "dataSelector".asInstanceOf[dataSelector]
-  @scala.inline
-  def dataSelectorOptions: dataSelectorOptions = "dataSelectorOptions".asInstanceOf[dataSelectorOptions]
-  @scala.inline
-  def dataSelectorPanel: dataSelectorPanel = "dataSelectorPanel".asInstanceOf[dataSelectorPanel]
-  @scala.inline
-  def dataSelectorRendered: dataSelectorRendered = "dataSelectorRendered".asInstanceOf[dataSelectorRendered]
-  @scala.inline
-  def dataSource: dataSource = "dataSource".asInstanceOf[dataSource]
-  @scala.inline
-  def dataSourceInitialized: dataSourceInitialized = "dataSourceInitialized".asInstanceOf[dataSourceInitialized]
-  @scala.inline
-  def dataSourceObject: dataSourceObject = "dataSourceObject".asInstanceOf[dataSourceObject]
-  @scala.inline
-  def dataSourceOptions: dataSourceOptions = "dataSourceOptions".asInstanceOf[dataSourceOptions]
-  @scala.inline
-  def dataSourceSettings: dataSourceSettings = "dataSourceSettings".asInstanceOf[dataSourceSettings]
-  @scala.inline
-  def dataSourceType: dataSourceType = "dataSourceType".asInstanceOf[dataSourceType]
-  @scala.inline
-  def dataSourceUpdated: dataSourceUpdated = "dataSourceUpdated".asInstanceOf[dataSourceUpdated]
-  @scala.inline
-  def dataSourceUrl: dataSourceUrl = "dataSourceUrl".asInstanceOf[dataSourceUrl]
-  @scala.inline
-  def dataValue: dataValue = "dataValue".asInstanceOf[dataValue]
-  @scala.inline
-  def databaseSource: databaseSource = "databaseSource".asInstanceOf[databaseSource]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def dateDisplayFormat: dateDisplayFormat = "dateDisplayFormat".asInstanceOf[dateDisplayFormat]
-  @scala.inline
-  def dateInputFormat: dateInputFormat = "dateInputFormat".asInstanceOf[dateInputFormat]
-  @scala.inline
-  def dateRangeButton: dateRangeButton = "dateRangeButton".asInstanceOf[dateRangeButton]
-  @scala.inline
-  def datepickerOptions: datepickerOptions = "datepickerOptions".asInstanceOf[datepickerOptions]
-  @scala.inline
-  def dayChanged: dayChanged = "dayChanged".asInstanceOf[dayChanged]
-  @scala.inline
-  def dayChanging: dayChanging = "dayChanging".asInstanceOf[dayChanging]
-  @scala.inline
-  def daySelected: daySelected = "daySelected".asInstanceOf[daySelected]
-  @scala.inline
-  def dayViewSettings: dayViewSettings = "dayViewSettings".asInstanceOf[dayViewSettings]
-  @scala.inline
-  def deactivate: deactivate = "deactivate".asInstanceOf[deactivate]
-  @scala.inline
-  def deactivateAll: deactivateAll = "deactivateAll".asInstanceOf[deactivateAll]
-  @scala.inline
-  def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
-  @scala.inline
-  def deactivating: deactivating = "deactivating".asInstanceOf[deactivating]
-  @scala.inline
-  def decimalSeparator: decimalSeparator = "decimalSeparator".asInstanceOf[decimalSeparator]
-  @scala.inline
-  def defaultChildrenDataProperty: defaultChildrenDataProperty = "defaultChildrenDataProperty".asInstanceOf[defaultChildrenDataProperty]
-  @scala.inline
-  def defaultChunkIndex: defaultChunkIndex = "defaultChunkIndex".asInstanceOf[defaultChunkIndex]
-  @scala.inline
-  def defaultColor: defaultColor = "defaultColor".asInstanceOf[defaultColor]
-  @scala.inline
-  def defaultColumnWidth: defaultColumnWidth = "defaultColumnWidth".asInstanceOf[defaultColumnWidth]
-  @scala.inline
-  def defaultDropDownWidth: defaultDropDownWidth = "defaultDropDownWidth".asInstanceOf[defaultDropDownWidth]
-  @scala.inline
-  def defaultInteraction: defaultInteraction = "defaultInteraction".asInstanceOf[defaultInteraction]
-  @scala.inline
-  def defaultItemName: defaultItemName = "defaultItemName".asInstanceOf[defaultItemName]
-  @scala.inline
-  def defaultLevelSortBehavior: defaultLevelSortBehavior = "defaultLevelSortBehavior".asInstanceOf[defaultLevelSortBehavior]
-  @scala.inline
-  def defaultNodeTarget: defaultNodeTarget = "defaultNodeTarget".asInstanceOf[defaultNodeTarget]
-  @scala.inline
-  def defaultRowHeaderWidth: defaultRowHeaderWidth = "defaultRowHeaderWidth".asInstanceOf[defaultRowHeaderWidth]
-  @scala.inline
-  def defaultSortingDirection: defaultSortingDirection = "defaultSortingDirection".asInstanceOf[defaultSortingDirection]
-  @scala.inline
-  def defaultZoomWindow: defaultZoomWindow = "defaultZoomWindow".asInstanceOf[defaultZoomWindow]
-  @scala.inline
-  def deferUpdate: deferUpdate = "deferUpdate".asInstanceOf[deferUpdate]
-  @scala.inline
-  def deferUpdateChanged: deferUpdateChanged = "deferUpdateChanged".asInstanceOf[deferUpdateChanged]
-  @scala.inline
-  def deferredResizing: deferredResizing = "deferredResizing".asInstanceOf[deferredResizing]
-  @scala.inline
-  def delay: delay = "delay".asInstanceOf[delay]
-  @scala.inline
-  def delayInputChangeProcessing: delayInputChangeProcessing = "delayInputChangeProcessing".asInstanceOf[delayInputChangeProcessing]
-  @scala.inline
-  def delayOnPageChanged: delayOnPageChanged = "delayOnPageChanged".asInstanceOf[delayOnPageChanged]
-  @scala.inline
-  def deleteAppointment: deleteAppointment = "deleteAppointment".asInstanceOf[deleteAppointment]
-  @scala.inline
-  def deleteRow: deleteRow = "deleteRow".asInstanceOf[deleteRow]
-  @scala.inline
-  def deleteRowLabel: deleteRowLabel = "deleteRowLabel".asInstanceOf[deleteRowLabel]
-  @scala.inline
-  def deleteRowTooltip: deleteRowTooltip = "deleteRowTooltip".asInstanceOf[deleteRowTooltip]
-  @scala.inline
-  def deselect: deselect = "deselect".asInstanceOf[deselect]
-  @scala.inline
-  def deselectAll: deselectAll = "deselectAll".asInstanceOf[deselectAll]
-  @scala.inline
-  def deselectAllForPagingTemplate: deselectAllForPagingTemplate = "deselectAllForPagingTemplate".asInstanceOf[deselectAllForPagingTemplate]
-  @scala.inline
-  def deselectByIndex: deselectByIndex = "deselectByIndex".asInstanceOf[deselectByIndex]
-  @scala.inline
-  def deselectByValue: deselectByValue = "deselectByValue".asInstanceOf[deselectByValue]
-  @scala.inline
-  def deselectCell: deselectCell = "deselectCell".asInstanceOf[deselectCell]
-  @scala.inline
-  def deselectCellById: deselectCellById = "deselectCellById".asInstanceOf[deselectCellById]
-  @scala.inline
-  def deselectRow: deselectRow = "deselectRow".asInstanceOf[deselectRow]
-  @scala.inline
-  def deselectRowById: deselectRowById = "deselectRowById".asInstanceOf[deselectRowById]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
-  @scala.inline
-  def dialogButtonCancelText: dialogButtonCancelText = "dialogButtonCancelText".asInstanceOf[dialogButtonCancelText]
-  @scala.inline
-  def dialogButtonOKText: dialogButtonOKText = "dialogButtonOKText".asInstanceOf[dialogButtonOKText]
-  @scala.inline
-  def dialogClass: dialogClass = "dialogClass".asInstanceOf[dialogClass]
-  @scala.inline
-  def dialogWidget: dialogWidget = "dialogWidget".asInstanceOf[dialogWidget]
-  @scala.inline
-  def diamondMarkerTemplate: diamondMarkerTemplate = "diamondMarkerTemplate".asInstanceOf[diamondMarkerTemplate]
-  @scala.inline
-  def direction: direction = "direction".asInstanceOf[direction]
-  @scala.inline
-  def directionPriority: directionPriority = "directionPriority".asInstanceOf[directionPriority]
-  @scala.inline
-  def disableColumnsDropArea: disableColumnsDropArea = "disableColumnsDropArea".asInstanceOf[disableColumnsDropArea]
-  @scala.inline
-  def disableFiltersDropArea: disableFiltersDropArea = "disableFiltersDropArea".asInstanceOf[disableFiltersDropArea]
-  @scala.inline
-  def disableItem: disableItem = "disableItem".asInstanceOf[disableItem]
-  @scala.inline
-  def disableMeasuresDropArea: disableMeasuresDropArea = "disableMeasuresDropArea".asInstanceOf[disableMeasuresDropArea]
-  @scala.inline
-  def disableRowsDropArea: disableRowsDropArea = "disableRowsDropArea".asInstanceOf[disableRowsDropArea]
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
-  @scala.inline
-  def displayFactor: displayFactor = "displayFactor".asInstanceOf[displayFactor]
-  @scala.inline
-  def displayMode: displayMode = "displayMode".asInstanceOf[displayMode]
-  @scala.inline
-  def displayName: displayName = "displayName".asInstanceOf[displayName]
-  @scala.inline
-  def displayNormalRangeInFront: displayNormalRangeInFront = "displayNormalRangeInFront".asInstanceOf[displayNormalRangeInFront]
-  @scala.inline
-  def displayTimeOffset: displayTimeOffset = "displayTimeOffset".asInstanceOf[displayTimeOffset]
-  @scala.inline
-  def displayType: displayType = "displayType".asInstanceOf[displayType]
-  @scala.inline
-  def displayValue: displayValue = "displayValue".asInstanceOf[displayValue]
-  @scala.inline
-  def distance: distance = "distance".asInstanceOf[distance]
-  @scala.inline
-  def doneLabel: doneLabel = "doneLabel".asInstanceOf[doneLabel]
-  @scala.inline
-  def doneTooltip: doneTooltip = "doneTooltip".asInstanceOf[doneTooltip]
-  @scala.inline
-  def drag: drag = "drag".asInstanceOf[drag]
-  @scala.inline
-  def dragAndDrop: dragAndDrop = "dragAndDrop".asInstanceOf[dragAndDrop]
-  @scala.inline
-  def dragAndDropSettings: dragAndDropSettings = "dragAndDropSettings".asInstanceOf[dragAndDropSettings]
-  @scala.inline
-  def dragDelta: dragDelta = "dragDelta".asInstanceOf[dragDelta]
-  @scala.inline
-  def dragHelperOpacity: dragHelperOpacity = "dragHelperOpacity".asInstanceOf[dragHelperOpacity]
-  @scala.inline
-  def dragModifier: dragModifier = "dragModifier".asInstanceOf[dragModifier]
-  @scala.inline
-  def dragStart: dragStart = "dragStart".asInstanceOf[dragStart]
-  @scala.inline
-  def dragStop: dragStop = "dragStop".asInstanceOf[dragStop]
-  @scala.inline
-  def draggable: draggable = "draggable".asInstanceOf[draggable]
-  @scala.inline
-  def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
-  @scala.inline
-  def dropDownAnimationDuration: dropDownAnimationDuration = "dropDownAnimationDuration".asInstanceOf[dropDownAnimationDuration]
-  @scala.inline
-  def dropDownAttachedToBody: dropDownAttachedToBody = "dropDownAttachedToBody".asInstanceOf[dropDownAttachedToBody]
-  @scala.inline
-  def dropDownButton: dropDownButton = "dropDownButton".asInstanceOf[dropDownButton]
-  @scala.inline
-  def dropDownButtonTitle: dropDownButtonTitle = "dropDownButtonTitle".asInstanceOf[dropDownButtonTitle]
-  @scala.inline
-  def dropDownCancelClicked: dropDownCancelClicked = "dropDownCancelClicked".asInstanceOf[dropDownCancelClicked]
-  @scala.inline
-  def dropDownClosed: dropDownClosed = "dropDownClosed".asInstanceOf[dropDownClosed]
-  @scala.inline
-  def dropDownClosing: dropDownClosing = "dropDownClosing".asInstanceOf[dropDownClosing]
-  @scala.inline
-  def dropDownContainer: dropDownContainer = "dropDownContainer".asInstanceOf[dropDownContainer]
-  @scala.inline
-  def dropDownDialogAnimationDuration: dropDownDialogAnimationDuration = "dropDownDialogAnimationDuration".asInstanceOf[dropDownDialogAnimationDuration]
-  @scala.inline
-  def dropDownHeight: dropDownHeight = "dropDownHeight".asInstanceOf[dropDownHeight]
-  @scala.inline
-  def dropDownItemSelected: dropDownItemSelected = "dropDownItemSelected".asInstanceOf[dropDownItemSelected]
-  @scala.inline
-  def dropDownItemSelecting: dropDownItemSelecting = "dropDownItemSelecting".asInstanceOf[dropDownItemSelecting]
-  @scala.inline
-  def dropDownListClosed: dropDownListClosed = "dropDownListClosed".asInstanceOf[dropDownListClosed]
-  @scala.inline
-  def dropDownListClosing: dropDownListClosing = "dropDownListClosing".asInstanceOf[dropDownListClosing]
-  @scala.inline
-  def dropDownListOpened: dropDownListOpened = "dropDownListOpened".asInstanceOf[dropDownListOpened]
-  @scala.inline
-  def dropDownListOpening: dropDownListOpening = "dropDownListOpening".asInstanceOf[dropDownListOpening]
-  @scala.inline
-  def dropDownMoveFirstText: dropDownMoveFirstText = "dropDownMoveFirstText".asInstanceOf[dropDownMoveFirstText]
-  @scala.inline
-  def dropDownMoveLastText: dropDownMoveLastText = "dropDownMoveLastText".asInstanceOf[dropDownMoveLastText]
-  @scala.inline
-  def dropDownMoveLeftText: dropDownMoveLeftText = "dropDownMoveLeftText".asInstanceOf[dropDownMoveLeftText]
-  @scala.inline
-  def dropDownMoveRightText: dropDownMoveRightText = "dropDownMoveRightText".asInstanceOf[dropDownMoveRightText]
-  @scala.inline
-  def dropDownOKClicked: dropDownOKClicked = "dropDownOKClicked".asInstanceOf[dropDownOKClicked]
-  @scala.inline
-  def dropDownOnFocus: dropDownOnFocus = "dropDownOnFocus".asInstanceOf[dropDownOnFocus]
-  @scala.inline
-  def dropDownOnReadOnly: dropDownOnReadOnly = "dropDownOnReadOnly".asInstanceOf[dropDownOnReadOnly]
-  @scala.inline
-  def dropDownOpened: dropDownOpened = "dropDownOpened".asInstanceOf[dropDownOpened]
-  @scala.inline
-  def dropDownOpening: dropDownOpening = "dropDownOpening".asInstanceOf[dropDownOpening]
-  @scala.inline
-  def dropDownOrientation: dropDownOrientation = "dropDownOrientation".asInstanceOf[dropDownOrientation]
-  @scala.inline
-  def dropDownParent: dropDownParent = "dropDownParent".asInstanceOf[dropDownParent]
-  @scala.inline
-  def dropDownVisible: dropDownVisible = "dropDownVisible".asInstanceOf[dropDownVisible]
-  @scala.inline
-  def dropDownWidth: dropDownWidth = "dropDownWidth".asInstanceOf[dropDownWidth]
-  @scala.inline
-  def duplicateLabelOmissionStrategy: duplicateLabelOmissionStrategy = "duplicateLabelOmissionStrategy".asInstanceOf[duplicateLabelOmissionStrategy]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def eciHeaderDisplayMode: eciHeaderDisplayMode = "eciHeaderDisplayMode".asInstanceOf[eciHeaderDisplayMode]
-  @scala.inline
-  def eciNumber: eciNumber = "eciNumber".asInstanceOf[eciNumber]
-  @scala.inline
-  def editAppointment: editAppointment = "editAppointment".asInstanceOf[editAppointment]
-  @scala.inline
-  def editCellEnded: editCellEnded = "editCellEnded".asInstanceOf[editCellEnded]
-  @scala.inline
-  def editCellEnding: editCellEnding = "editCellEnding".asInstanceOf[editCellEnding]
-  @scala.inline
-  def editCellStarted: editCellStarted = "editCellStarted".asInstanceOf[editCellStarted]
-  @scala.inline
-  def editCellStarting: editCellStarting = "editCellStarting".asInstanceOf[editCellStarting]
-  @scala.inline
-  def editMode: editMode = "editMode".asInstanceOf[editMode]
-  @scala.inline
-  def editModeEntered: editModeEntered = "editModeEntered".asInstanceOf[editModeEntered]
-  @scala.inline
-  def editModeEntering: editModeEntering = "editModeEntering".asInstanceOf[editModeEntering]
-  @scala.inline
-  def editModeExited: editModeExited = "editModeExited".asInstanceOf[editModeExited]
-  @scala.inline
-  def editModeExiting: editModeExiting = "editModeExiting".asInstanceOf[editModeExiting]
-  @scala.inline
-  def editModeValidationError: editModeValidationError = "editModeValidationError".asInstanceOf[editModeValidationError]
-  @scala.inline
-  def editRangePasswordNeeded: editRangePasswordNeeded = "editRangePasswordNeeded".asInstanceOf[editRangePasswordNeeded]
-  @scala.inline
-  def editRowEnded: editRowEnded = "editRowEnded".asInstanceOf[editRowEnded]
-  @scala.inline
-  def editRowEnding: editRowEnding = "editRowEnding".asInstanceOf[editRowEnding]
-  @scala.inline
-  def editRowStarted: editRowStarted = "editRowStarted".asInstanceOf[editRowStarted]
-  @scala.inline
-  def editRowStarting: editRowStarting = "editRowStarting".asInstanceOf[editRowStarting]
-  @scala.inline
-  def editorContainer: editorContainer = "editorContainer".asInstanceOf[editorContainer]
-  @scala.inline
-  def editorForCell: editorForCell = "editorForCell".asInstanceOf[editorForCell]
-  @scala.inline
-  def editorForKey: editorForKey = "editorForKey".asInstanceOf[editorForKey]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def emptyCellText: emptyCellText = "emptyCellText".asInstanceOf[emptyCellText]
-  @scala.inline
-  def emptyChar: emptyChar = "emptyChar".asInstanceOf[emptyChar]
-  @scala.inline
-  def emptyGroupByAreaContentSelectColumnsCaption: emptyGroupByAreaContentSelectColumnsCaption = "emptyGroupByAreaContentSelectColumnsCaption".asInstanceOf[emptyGroupByAreaContentSelectColumnsCaption]
-  @scala.inline
-  def enableAddChild: enableAddChild = "enableAddChild".asInstanceOf[enableAddChild]
-  @scala.inline
-  def enableAddRow: enableAddRow = "enableAddRow".asInstanceOf[enableAddRow]
-  @scala.inline
-  def enableCheckBoxes: enableCheckBoxes = "enableCheckBoxes".asInstanceOf[enableCheckBoxes]
-  @scala.inline
-  def enableClearButton: enableClearButton = "enableClearButton".asInstanceOf[enableClearButton]
-  @scala.inline
-  def enableDataDirtyException: enableDataDirtyException = "enableDataDirtyException".asInstanceOf[enableDataDirtyException]
-  @scala.inline
-  def enableDblclick: enableDblclick = "enableDblclick".asInstanceOf[enableDblclick]
-  @scala.inline
-  def enableDeleteRow: enableDeleteRow = "enableDeleteRow".asInstanceOf[enableDeleteRow]
-  @scala.inline
-  def enableHeaderFocus: enableHeaderFocus = "enableHeaderFocus".asInstanceOf[enableHeaderFocus]
-  @scala.inline
-  def enableHoverStyles: enableHoverStyles = "enableHoverStyles".asInstanceOf[enableHoverStyles]
-  @scala.inline
-  def enableRemoteLoadOnDemand: enableRemoteLoadOnDemand = "enableRemoteLoadOnDemand".asInstanceOf[enableRemoteLoadOnDemand]
-  @scala.inline
-  def enableResizeContainerCheck: enableResizeContainerCheck = "enableResizeContainerCheck".asInstanceOf[enableResizeContainerCheck]
-  @scala.inline
-  def enableRowNumbering: enableRowNumbering = "enableRowNumbering".asInstanceOf[enableRowNumbering]
-  @scala.inline
-  def enableSelectAllForPaging: enableSelectAllForPaging = "enableSelectAllForPaging".asInstanceOf[enableSelectAllForPaging]
-  @scala.inline
-  def enableTodayButton: enableTodayButton = "enableTodayButton".asInstanceOf[enableTodayButton]
-  @scala.inline
-  def enableUTCDates: enableUTCDates = "enableUTCDates".asInstanceOf[enableUTCDates]
-  @scala.inline
-  def enableVerticalRendering: enableVerticalRendering = "enableVerticalRendering".asInstanceOf[enableVerticalRendering]
-  @scala.inline
-  def encodingMode: encodingMode = "encodingMode".asInstanceOf[encodingMode]
-  @scala.inline
-  def endEdit: endEdit = "endEdit".asInstanceOf[endEdit]
-  @scala.inline
-  def endInset: endInset = "endInset".asInstanceOf[endInset]
-  @scala.inline
-  def endTiledZoomingIfRunning: endTiledZoomingIfRunning = "endTiledZoomingIfRunning".asInstanceOf[endTiledZoomingIfRunning]
-  @scala.inline
-  def endValue: endValue = "endValue".asInstanceOf[endValue]
-  @scala.inline
-  def ended: ended = "ended".asInstanceOf[ended]
-  @scala.inline
-  def enterFullScreen: enterFullScreen = "enterFullScreen".asInstanceOf[enterFullScreen]
-  @scala.inline
-  def enterKeyNavigationDirection: enterKeyNavigationDirection = "enterKeyNavigationDirection".asInstanceOf[enterKeyNavigationDirection]
-  @scala.inline
-  def equalTo: equalTo = "equalTo".asInstanceOf[equalTo]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def errorCorrectionLevel: errorCorrectionLevel = "errorCorrectionLevel".asInstanceOf[errorCorrectionLevel]
-  @scala.inline
-  def errorHidden: errorHidden = "errorHidden".asInstanceOf[errorHidden]
-  @scala.inline
-  def errorHiding: errorHiding = "errorHiding".asInstanceOf[errorHiding]
-  @scala.inline
-  def errorMessage: errorMessage = "errorMessage".asInstanceOf[errorMessage]
-  @scala.inline
-  def errorMessageAJAXRequestFileSize: errorMessageAJAXRequestFileSize = "errorMessageAJAXRequestFileSize".asInstanceOf[errorMessageAJAXRequestFileSize]
-  @scala.inline
-  def errorMessageCancelUpload: errorMessageCancelUpload = "errorMessageCancelUpload".asInstanceOf[errorMessageCancelUpload]
-  @scala.inline
-  def errorMessageDisplaying: errorMessageDisplaying = "errorMessageDisplaying".asInstanceOf[errorMessageDisplaying]
-  @scala.inline
-  def errorMessageDropMultipleFilesWhenSingleModel: errorMessageDropMultipleFilesWhenSingleModel = "errorMessageDropMultipleFilesWhenSingleModel".asInstanceOf[errorMessageDropMultipleFilesWhenSingleModel]
-  @scala.inline
-  def errorMessageGetFileStatus: errorMessageGetFileStatus = "errorMessageGetFileStatus".asInstanceOf[errorMessageGetFileStatus]
-  @scala.inline
-  def errorMessageMaxFileSizeExceeded: errorMessageMaxFileSizeExceeded = "errorMessageMaxFileSizeExceeded".asInstanceOf[errorMessageMaxFileSizeExceeded]
-  @scala.inline
-  def errorMessageMaxSimultaneousFiles: errorMessageMaxSimultaneousFiles = "errorMessageMaxSimultaneousFiles".asInstanceOf[errorMessageMaxSimultaneousFiles]
-  @scala.inline
-  def errorMessageMaxUploadedFiles: errorMessageMaxUploadedFiles = "errorMessageMaxUploadedFiles".asInstanceOf[errorMessageMaxUploadedFiles]
-  @scala.inline
-  def errorMessageNoSuchFile: errorMessageNoSuchFile = "errorMessageNoSuchFile".asInstanceOf[errorMessageNoSuchFile]
-  @scala.inline
-  def errorMessageOther: errorMessageOther = "errorMessageOther".asInstanceOf[errorMessageOther]
-  @scala.inline
-  def errorMessageText: errorMessageText = "errorMessageText".asInstanceOf[errorMessageText]
-  @scala.inline
-  def errorMessageTryToRemoveNonExistingFile: errorMessageTryToRemoveNonExistingFile = "errorMessageTryToRemoveNonExistingFile".asInstanceOf[errorMessageTryToRemoveNonExistingFile]
-  @scala.inline
-  def errorMessageTryToStartNonExistingFile: errorMessageTryToStartNonExistingFile = "errorMessageTryToStartNonExistingFile".asInstanceOf[errorMessageTryToStartNonExistingFile]
-  @scala.inline
-  def errorMessageValidatingFileExtension: errorMessageValidatingFileExtension = "errorMessageValidatingFileExtension".asInstanceOf[errorMessageValidatingFileExtension]
-  @scala.inline
-  def errorShowing: errorShowing = "errorShowing".asInstanceOf[errorShowing]
-  @scala.inline
-  def errorShown: errorShown = "errorShown".asInstanceOf[errorShown]
-  @scala.inline
-  def excelNavigationMode: excelNavigationMode = "excelNavigationMode".asInstanceOf[excelNavigationMode]
-  @scala.inline
-  def excludeKeys: excludeKeys = "excludeKeys".asInstanceOf[excludeKeys]
-  @scala.inline
-  def excludedProperties: excludedProperties = "excludedProperties".asInstanceOf[excludedProperties]
-  @scala.inline
-  def executeAction: executeAction = "executeAction".asInstanceOf[executeAction]
-  @scala.inline
-  def executeAllRules: executeAllRules = "executeAllRules".asInstanceOf[executeAllRules]
-  @scala.inline
-  def exitEditMode: exitEditMode = "exitEditMode".asInstanceOf[exitEditMode]
-  @scala.inline
-  def exitFullScreen: exitFullScreen = "exitFullScreen".asInstanceOf[exitFullScreen]
-  @scala.inline
-  def expand: expand = "expand".asInstanceOf[expand]
-  @scala.inline
-  def expandAt: expandAt = "expandAt".asInstanceOf[expandAt]
-  @scala.inline
-  def expandButtonIcon: expandButtonIcon = "expandButtonIcon".asInstanceOf[expandButtonIcon]
-  @scala.inline
-  def expandColWidth: expandColWidth = "expandColWidth".asInstanceOf[expandColWidth]
-  @scala.inline
-  def expandCollapseAnimations: expandCollapseAnimations = "expandCollapseAnimations".asInstanceOf[expandCollapseAnimations]
-  @scala.inline
-  def expandGroup: expandGroup = "expandGroup".asInstanceOf[expandGroup]
-  @scala.inline
-  def expandRow: expandRow = "expandRow".asInstanceOf[expandRow]
-  @scala.inline
-  def expandToNode: expandToNode = "expandToNode".asInstanceOf[expandToNode]
-  @scala.inline
-  def expandTooltip: expandTooltip = "expandTooltip".asInstanceOf[expandTooltip]
-  @scala.inline
-  def expandTooltipText: expandTooltipText = "expandTooltipText".asInstanceOf[expandTooltipText]
-  @scala.inline
-  def expandTupleMember: expandTupleMember = "expandTupleMember".asInstanceOf[expandTupleMember]
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
-  @scala.inline
-  def expanding: expanding = "expanding".asInstanceOf[expanding]
-  @scala.inline
-  def expansionIndicatorVisibility: expansionIndicatorVisibility = "expansionIndicatorVisibility".asInstanceOf[expansionIndicatorVisibility]
-  @scala.inline
-  def explodedRadius: explodedRadius = "explodedRadius".asInstanceOf[explodedRadius]
-  @scala.inline
-  def explodedSlices: explodedSlices = "explodedSlices".asInstanceOf[explodedSlices]
-  @scala.inline
-  def exportImage: exportImage = "exportImage".asInstanceOf[exportImage]
-  @scala.inline
-  def exportVisualData: exportVisualData = "exportVisualData".asInstanceOf[exportVisualData]
-  @scala.inline
-  def fadeTimespan: fadeTimespan = "fadeTimespan".asInstanceOf[fadeTimespan]
-  @scala.inline
-  def featureChooserDropDownOpened: featureChooserDropDownOpened = "featureChooserDropDownOpened".asInstanceOf[featureChooserDropDownOpened]
-  @scala.inline
-  def featureChooserDropDownOpening: featureChooserDropDownOpening = "featureChooserDropDownOpening".asInstanceOf[featureChooserDropDownOpening]
-  @scala.inline
-  def featureChooserIconDisplay: featureChooserIconDisplay = "featureChooserIconDisplay".asInstanceOf[featureChooserIconDisplay]
-  @scala.inline
-  def featureChooserRendered: featureChooserRendered = "featureChooserRendered".asInstanceOf[featureChooserRendered]
-  @scala.inline
-  def featureChooserRendering: featureChooserRendering = "featureChooserRendering".asInstanceOf[featureChooserRendering]
-  @scala.inline
-  def featureChooserSortAsc: featureChooserSortAsc = "featureChooserSortAsc".asInstanceOf[featureChooserSortAsc]
-  @scala.inline
-  def featureChooserSortDesc: featureChooserSortDesc = "featureChooserSortDesc".asInstanceOf[featureChooserSortDesc]
-  @scala.inline
-  def featureChooserSubmenuText: featureChooserSubmenuText = "featureChooserSubmenuText".asInstanceOf[featureChooserSubmenuText]
-  @scala.inline
-  def featureChooserText: featureChooserText = "featureChooserText".asInstanceOf[featureChooserText]
-  @scala.inline
-  def featureChooserTextAdvancedFilter: featureChooserTextAdvancedFilter = "featureChooserTextAdvancedFilter".asInstanceOf[featureChooserTextAdvancedFilter]
-  @scala.inline
-  def featureChooserTextFixedColumn: featureChooserTextFixedColumn = "featureChooserTextFixedColumn".asInstanceOf[featureChooserTextFixedColumn]
-  @scala.inline
-  def featureChooserTextHide: featureChooserTextHide = "featureChooserTextHide".asInstanceOf[featureChooserTextHide]
-  @scala.inline
-  def featureChooserTextUnfixedColumn: featureChooserTextUnfixedColumn = "featureChooserTextUnfixedColumn".asInstanceOf[featureChooserTextUnfixedColumn]
-  @scala.inline
-  def featureToggled: featureToggled = "featureToggled".asInstanceOf[featureToggled]
-  @scala.inline
-  def featureToggling: featureToggling = "featureToggling".asInstanceOf[featureToggling]
-  @scala.inline
-  def features: features = "features".asInstanceOf[features]
-  @scala.inline
-  def field: field = "field".asInstanceOf[field]
-  @scala.inline
-  def fields: fields = "fields".asInstanceOf[fields]
-  @scala.inline
-  def fileExtensionIcons: fileExtensionIcons = "fileExtensionIcons".asInstanceOf[fileExtensionIcons]
-  @scala.inline
-  def fileExtensionsValidating: fileExtensionsValidating = "fileExtensionsValidating".asInstanceOf[fileExtensionsValidating]
-  @scala.inline
-  def fileSelected: fileSelected = "fileSelected".asInstanceOf[fileSelected]
-  @scala.inline
-  def fileSelecting: fileSelecting = "fileSelecting".asInstanceOf[fileSelecting]
-  @scala.inline
-  def fileSizeDecimalDisplay: fileSizeDecimalDisplay = "fileSizeDecimalDisplay".asInstanceOf[fileSizeDecimalDisplay]
-  @scala.inline
-  def fileSizeMetric: fileSizeMetric = "fileSizeMetric".asInstanceOf[fileSizeMetric]
-  @scala.inline
-  def fileUploadAborted: fileUploadAborted = "fileUploadAborted".asInstanceOf[fileUploadAborted]
-  @scala.inline
-  def fileUploaded: fileUploaded = "fileUploaded".asInstanceOf[fileUploaded]
-  @scala.inline
-  def fileUploading: fileUploading = "fileUploading".asInstanceOf[fileUploading]
-  @scala.inline
-  def filter: filter = "filter".asInstanceOf[filter]
-  @scala.inline
-  def filterButtonLocation: filterButtonLocation = "filterButtonLocation".asInstanceOf[filterButtonLocation]
-  @scala.inline
-  def filterByExpressions: filterByExpressions = "filterByExpressions".asInstanceOf[filterByExpressions]
-  @scala.inline
-  def filterDelay: filterDelay = "filterDelay".asInstanceOf[filterDelay]
-  @scala.inline
-  def filterDialogAddButtonWidth: filterDialogAddButtonWidth = "filterDialogAddButtonWidth".asInstanceOf[filterDialogAddButtonWidth]
-  @scala.inline
-  def filterDialogAddConditionDropDownTemplate: filterDialogAddConditionDropDownTemplate = "filterDialogAddConditionDropDownTemplate".asInstanceOf[filterDialogAddConditionDropDownTemplate]
-  @scala.inline
-  def filterDialogAddConditionTemplate: filterDialogAddConditionTemplate = "filterDialogAddConditionTemplate".asInstanceOf[filterDialogAddConditionTemplate]
-  @scala.inline
-  def filterDialogClosed: filterDialogClosed = "filterDialogClosed".asInstanceOf[filterDialogClosed]
-  @scala.inline
-  def filterDialogClosing: filterDialogClosing = "filterDialogClosing".asInstanceOf[filterDialogClosing]
-  @scala.inline
-  def filterDialogColumnDropDownDefaultWidth: filterDialogColumnDropDownDefaultWidth = "filterDialogColumnDropDownDefaultWidth".asInstanceOf[filterDialogColumnDropDownDefaultWidth]
-  @scala.inline
-  def filterDialogContainment: filterDialogContainment = "filterDialogContainment".asInstanceOf[filterDialogContainment]
-  @scala.inline
-  def filterDialogContentsRendered: filterDialogContentsRendered = "filterDialogContentsRendered".asInstanceOf[filterDialogContentsRendered]
-  @scala.inline
-  def filterDialogContentsRendering: filterDialogContentsRendering = "filterDialogContentsRendering".asInstanceOf[filterDialogContentsRendering]
-  @scala.inline
-  def filterDialogExprInputDefaultWidth: filterDialogExprInputDefaultWidth = "filterDialogExprInputDefaultWidth".asInstanceOf[filterDialogExprInputDefaultWidth]
-  @scala.inline
-  def filterDialogFilterAdded: filterDialogFilterAdded = "filterDialogFilterAdded".asInstanceOf[filterDialogFilterAdded]
-  @scala.inline
-  def filterDialogFilterAdding: filterDialogFilterAdding = "filterDialogFilterAdding".asInstanceOf[filterDialogFilterAdding]
-  @scala.inline
-  def filterDialogFilterConditionTemplate: filterDialogFilterConditionTemplate = "filterDialogFilterConditionTemplate".asInstanceOf[filterDialogFilterConditionTemplate]
-  @scala.inline
-  def filterDialogFilterDropDownDefaultWidth: filterDialogFilterDropDownDefaultWidth = "filterDialogFilterDropDownDefaultWidth".asInstanceOf[filterDialogFilterDropDownDefaultWidth]
-  @scala.inline
-  def filterDialogFilterTemplate: filterDialogFilterTemplate = "filterDialogFilterTemplate".asInstanceOf[filterDialogFilterTemplate]
-  @scala.inline
-  def filterDialogFiltering: filterDialogFiltering = "filterDialogFiltering".asInstanceOf[filterDialogFiltering]
-  @scala.inline
-  def filterDialogHeight: filterDialogHeight = "filterDialogHeight".asInstanceOf[filterDialogHeight]
-  @scala.inline
-  def filterDialogMaxFilterCount: filterDialogMaxFilterCount = "filterDialogMaxFilterCount".asInstanceOf[filterDialogMaxFilterCount]
-  @scala.inline
-  def filterDialogMoving: filterDialogMoving = "filterDialogMoving".asInstanceOf[filterDialogMoving]
-  @scala.inline
-  def filterDialogOkCancelButtonWidth: filterDialogOkCancelButtonWidth = "filterDialogOkCancelButtonWidth".asInstanceOf[filterDialogOkCancelButtonWidth]
-  @scala.inline
-  def filterDialogOpened: filterDialogOpened = "filterDialogOpened".asInstanceOf[filterDialogOpened]
-  @scala.inline
-  def filterDialogOpening: filterDialogOpening = "filterDialogOpening".asInstanceOf[filterDialogOpening]
-  @scala.inline
-  def filterDialogWidth: filterDialogWidth = "filterDialogWidth".asInstanceOf[filterDialogWidth]
-  @scala.inline
-  def filterDropDownAnimationDuration: filterDropDownAnimationDuration = "filterDropDownAnimationDuration".asInstanceOf[filterDropDownAnimationDuration]
-  @scala.inline
-  def filterDropDownAnimations: filterDropDownAnimations = "filterDropDownAnimations".asInstanceOf[filterDropDownAnimations]
-  @scala.inline
-  def filterDropDownClosed: filterDropDownClosed = "filterDropDownClosed".asInstanceOf[filterDropDownClosed]
-  @scala.inline
-  def filterDropDownClosing: filterDropDownClosing = "filterDropDownClosing".asInstanceOf[filterDropDownClosing]
-  @scala.inline
-  def filterDropDownHeight: filterDropDownHeight = "filterDropDownHeight".asInstanceOf[filterDropDownHeight]
-  @scala.inline
-  def filterDropDownItemIcons: filterDropDownItemIcons = "filterDropDownItemIcons".asInstanceOf[filterDropDownItemIcons]
-  @scala.inline
-  def filterDropDownOk: filterDropDownOk = "filterDropDownOk".asInstanceOf[filterDropDownOk]
-  @scala.inline
-  def filterDropDownOpened: filterDropDownOpened = "filterDropDownOpened".asInstanceOf[filterDropDownOpened]
-  @scala.inline
-  def filterDropDownOpening: filterDropDownOpening = "filterDropDownOpening".asInstanceOf[filterDropDownOpening]
-  @scala.inline
-  def filterDropDownWidth: filterDropDownWidth = "filterDropDownWidth".asInstanceOf[filterDropDownWidth]
-  @scala.inline
-  def filterExprUrlKey: filterExprUrlKey = "filterExprUrlKey".asInstanceOf[filterExprUrlKey]
-  @scala.inline
-  def filterMembersLoaded: filterMembersLoaded = "filterMembersLoaded".asInstanceOf[filterMembersLoaded]
-  @scala.inline
-  def filterSummaryAlwaysVisible: filterSummaryAlwaysVisible = "filterSummaryAlwaysVisible".asInstanceOf[filterSummaryAlwaysVisible]
-  @scala.inline
-  def filterSummaryInPagerTemplate: filterSummaryInPagerTemplate = "filterSummaryInPagerTemplate".asInstanceOf[filterSummaryInPagerTemplate]
-  @scala.inline
-  def filterSummaryTemplate: filterSummaryTemplate = "filterSummaryTemplate".asInstanceOf[filterSummaryTemplate]
-  @scala.inline
-  def filtered: filtered = "filtered".asInstanceOf[filtered]
-  @scala.inline
-  def filteredItems: filteredItems = "filteredItems".asInstanceOf[filteredItems]
-  @scala.inline
-  def filtering: filtering = "filtering".asInstanceOf[filtering]
-  @scala.inline
-  def filteringCondition: filteringCondition = "filteringCondition".asInstanceOf[filteringCondition]
-  @scala.inline
-  def filteringLogic: filteringLogic = "filteringLogic".asInstanceOf[filteringLogic]
-  @scala.inline
-  def filteringType: filteringType = "filteringType".asInstanceOf[filteringType]
-  @scala.inline
-  def finalValueAnnotationsVisible: finalValueAnnotationsVisible = "finalValueAnnotationsVisible".asInstanceOf[finalValueAnnotationsVisible]
-  @scala.inline
-  def financialChartLegend: financialChartLegend = "financialChartLegend".asInstanceOf[financialChartLegend]
-  @scala.inline
-  def findImmediateNodesByText: findImmediateNodesByText = "findImmediateNodesByText".asInstanceOf[findImmediateNodesByText]
-  @scala.inline
-  def findIndexOfItem: findIndexOfItem = "findIndexOfItem".asInstanceOf[findIndexOfItem]
-  @scala.inline
-  def findInvalid: findInvalid = "findInvalid".asInstanceOf[findInvalid]
-  @scala.inline
-  def findListItemIndex: findListItemIndex = "findListItemIndex".asInstanceOf[findListItemIndex]
-  @scala.inline
-  def findNodesByText: findNodesByText = "findNodesByText".asInstanceOf[findNodesByText]
-  @scala.inline
-  def findRecordByKey: findRecordByKey = "findRecordByKey".asInstanceOf[findRecordByKey]
-  @scala.inline
-  def firstLevelSortDirection: firstLevelSortDirection = "firstLevelSortDirection".asInstanceOf[firstLevelSortDirection]
-  @scala.inline
-  def firstMarkerBrush: firstMarkerBrush = "firstMarkerBrush".asInstanceOf[firstMarkerBrush]
-  @scala.inline
-  def firstMarkerSize: firstMarkerSize = "firstMarkerSize".asInstanceOf[firstMarkerSize]
-  @scala.inline
-  def firstMarkerVisibility: firstMarkerVisibility = "firstMarkerVisibility".asInstanceOf[firstMarkerVisibility]
-  @scala.inline
-  def firstPageLabelText: firstPageLabelText = "firstPageLabelText".asInstanceOf[firstPageLabelText]
-  @scala.inline
-  def firstPageTooltip: firstPageTooltip = "firstPageTooltip".asInstanceOf[firstPageTooltip]
-  @scala.inline
-  def firstPanel: firstPanel = "firstPanel".asInstanceOf[firstPanel]
-  @scala.inline
-  def firstSortDirection: firstSortDirection = "firstSortDirection".asInstanceOf[firstSortDirection]
-  @scala.inline
-  def fixColumn: fixColumn = "fixColumn".asInstanceOf[fixColumn]
-  @scala.inline
-  def fixDataSkippedColumns: fixDataSkippedColumns = "fixDataSkippedColumns".asInstanceOf[fixDataSkippedColumns]
-  @scala.inline
-  def fixNonDataColumns: fixNonDataColumns = "fixNonDataColumns".asInstanceOf[fixNonDataColumns]
-  @scala.inline
-  def fixNondataColumns_ : fixNondataColumns_ = "fixNondataColumns".asInstanceOf[fixNondataColumns_]
-  @scala.inline
-  def fixedBodyContainer: fixedBodyContainer = "fixedBodyContainer".asInstanceOf[fixedBodyContainer]
-  @scala.inline
-  def fixedContainer: fixedContainer = "fixedContainer".asInstanceOf[fixedContainer]
-  @scala.inline
-  def fixedDecimalPlaceCount: fixedDecimalPlaceCount = "fixedDecimalPlaceCount".asInstanceOf[fixedDecimalPlaceCount]
-  @scala.inline
-  def fixedFooterContainer: fixedFooterContainer = "fixedFooterContainer".asInstanceOf[fixedFooterContainer]
-  @scala.inline
-  def fixedFooters: fixedFooters = "fixedFooters".asInstanceOf[fixedFooters]
-  @scala.inline
-  def fixedFootersTable: fixedFootersTable = "fixedFootersTable".asInstanceOf[fixedFootersTable]
-  @scala.inline
-  def fixedHeaderContainer: fixedHeaderContainer = "fixedHeaderContainer".asInstanceOf[fixedHeaderContainer]
-  @scala.inline
-  def fixedHeaders: fixedHeaders = "fixedHeaders".asInstanceOf[fixedHeaders]
-  @scala.inline
-  def fixedHeadersTable: fixedHeadersTable = "fixedHeadersTable".asInstanceOf[fixedHeadersTable]
-  @scala.inline
-  def fixedRowAt: fixedRowAt = "fixedRowAt".asInstanceOf[fixedRowAt]
-  @scala.inline
-  def fixedRows: fixedRows = "fixedRows".asInstanceOf[fixedRows]
-  @scala.inline
-  def fixedTable: fixedTable = "fixedTable".asInstanceOf[fixedTable]
-  @scala.inline
-  def fixingDirection: fixingDirection = "fixingDirection".asInstanceOf[fixingDirection]
-  @scala.inline
-  def flush: flush = "flush".asInstanceOf[flush]
-  @scala.inline
-  def fnc1Mode: fnc1Mode = "fnc1Mode".asInstanceOf[fnc1Mode]
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
-  @scala.inline
-  def focusable: focusable = "focusable".asInstanceOf[focusable]
-  @scala.inline
-  def font: font = "font".asInstanceOf[font]
-  @scala.inline
-  def fontBrush: fontBrush = "fontBrush".asInstanceOf[fontBrush]
-  @scala.inline
-  def footerRendered: footerRendered = "footerRendered".asInstanceOf[footerRendered]
-  @scala.inline
-  def footerRendering: footerRendering = "footerRendering".asInstanceOf[footerRendering]
-  @scala.inline
-  def footerTemplate: footerTemplate = "footerTemplate".asInstanceOf[footerTemplate]
-  @scala.inline
-  def footerText: footerText = "footerText".asInstanceOf[footerText]
-  @scala.inline
-  def footersTable: footersTable = "footersTable".asInstanceOf[footersTable]
-  @scala.inline
-  def forceResponsiveGridWidth: forceResponsiveGridWidth = "forceResponsiveGridWidth".asInstanceOf[forceResponsiveGridWidth]
-  @scala.inline
-  def foreignKey: foreignKey = "foreignKey".asInstanceOf[foreignKey]
-  @scala.inline
-  def foreignKeyRootValue: foreignKeyRootValue = "foreignKeyRootValue".asInstanceOf[foreignKeyRootValue]
-  @scala.inline
-  def formError: formError = "formError".asInstanceOf[formError]
-  @scala.inline
-  def formSuccess: formSuccess = "formSuccess".asInstanceOf[formSuccess]
-  @scala.inline
-  def formValidated: formValidated = "formValidated".asInstanceOf[formValidated]
-  @scala.inline
-  def formValidating: formValidating = "formValidating".asInstanceOf[formValidating]
-  @scala.inline
-  def format: format = "format".asInstanceOf[format]
-  @scala.inline
-  def formatInnerLabel: formatInnerLabel = "formatInnerLabel".asInstanceOf[formatInnerLabel]
-  @scala.inline
-  def formatLabel: formatLabel = "formatLabel".asInstanceOf[formatLabel]
-  @scala.inline
-  def formatOuterLabel: formatOuterLabel = "formatOuterLabel".asInstanceOf[formatOuterLabel]
-  @scala.inline
-  def fromLevel: fromLevel = "fromLevel".asInstanceOf[fromLevel]
-  @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
-  @scala.inline
-  def funnelSliceDisplay: funnelSliceDisplay = "funnelSliceDisplay".asInstanceOf[funnelSliceDisplay]
-  @scala.inline
-  def generatePrimaryKeyValue: generatePrimaryKeyValue = "generatePrimaryKeyValue".asInstanceOf[generatePrimaryKeyValue]
-  @scala.inline
-  def getActivePane: getActivePane = "getActivePane".asInstanceOf[getActivePane]
-  @scala.inline
-  def getActiveSelection: getActiveSelection = "getActiveSelection".asInstanceOf[getActiveSelection]
-  @scala.inline
-  def getActiveSelectionCellRangeFormat: getActiveSelectionCellRangeFormat = "getActiveSelectionCellRangeFormat".asInstanceOf[getActiveSelectionCellRangeFormat]
-  @scala.inline
-  def getActiveTable: getActiveTable = "getActiveTable".asInstanceOf[getActiveTable]
-  @scala.inline
-  def getActualInterval: getActualInterval = "getActualInterval".asInstanceOf[getActualInterval]
-  @scala.inline
-  def getActualMaximumValue: getActualMaximumValue = "getActualMaximumValue".asInstanceOf[getActualMaximumValue]
-  @scala.inline
-  def getActualMinimumValue: getActualMinimumValue = "getActualMinimumValue".asInstanceOf[getActualMinimumValue]
-  @scala.inline
-  def getAppointmentsInRange: getAppointmentsInRange = "getAppointmentsInRange".asInstanceOf[getAppointmentsInRange]
-  @scala.inline
-  def getCalendar: getCalendar = "getCalendar".asInstanceOf[getCalendar]
-  @scala.inline
-  def getCaptionButtonContainer: getCaptionButtonContainer = "getCaptionButtonContainer".asInstanceOf[getCaptionButtonContainer]
-  @scala.inline
-  def getCellEditMode: getCellEditMode = "getCellEditMode".asInstanceOf[getCellEditMode]
-  @scala.inline
-  def getCellText: getCellText = "getCellText".asInstanceOf[getCellText]
-  @scala.inline
-  def getCellValue: getCellValue = "getCellValue".asInstanceOf[getCellValue]
-  @scala.inline
-  def getCenterCoordinates: getCenterCoordinates = "getCenterCoordinates".asInstanceOf[getCenterCoordinates]
-  @scala.inline
-  def getColumnByTD: getColumnByTD = "getColumnByTD".asInstanceOf[getColumnByTD]
-  @scala.inline
-  def getContent: getContent = "getContent".asInstanceOf[getContent]
-  @scala.inline
-  def getContextRow: getContextRow = "getContextRow".asInstanceOf[getContextRow]
-  @scala.inline
-  def getContextRowTextArea: getContextRowTextArea = "getContextRowTextArea".asInstanceOf[getContextRowTextArea]
-  @scala.inline
-  def getCoordinates: getCoordinates = "getCoordinates".asInstanceOf[getCoordinates]
-  @scala.inline
-  def getCurrentResponsiveMode: getCurrentResponsiveMode = "getCurrentResponsiveMode".asInstanceOf[getCurrentResponsiveMode]
-  @scala.inline
-  def getData: getData = "getData".asInstanceOf[getData]
-  @scala.inline
-  def getDataItem: getDataItem = "getDataItem".asInstanceOf[getDataItem]
-  @scala.inline
-  def getDetachedRecord: getDetachedRecord = "getDetachedRecord".asInstanceOf[getDetachedRecord]
-  @scala.inline
-  def getDropDownByColumnKey: getDropDownByColumnKey = "getDropDownByColumnKey".asInstanceOf[getDropDownByColumnKey]
-  @scala.inline
-  def getElementInfo: getElementInfo = "getElementInfo".asInstanceOf[getElementInfo]
-  @scala.inline
-  def getErrorMessages: getErrorMessages = "getErrorMessages".asInstanceOf[getErrorMessages]
-  @scala.inline
-  def getFileInfo: getFileInfo = "getFileInfo".asInstanceOf[getFileInfo]
-  @scala.inline
-  def getFileInfoData: getFileInfoData = "getFileInfoData".asInstanceOf[getFileInfoData]
-  @scala.inline
-  def getFilePicker: getFilePicker = "getFilePicker".asInstanceOf[getFilePicker]
-  @scala.inline
-  def getFilteringMatchesCount: getFilteringMatchesCount = "getFilteringMatchesCount".asInstanceOf[getFilteringMatchesCount]
-  @scala.inline
-  def getFooter: getFooter = "getFooter".asInstanceOf[getFooter]
-  @scala.inline
-  def getGeographicFromZoom: getGeographicFromZoom = "getGeographicFromZoom".asInstanceOf[getGeographicFromZoom]
-  @scala.inline
-  def getGroupedData: getGroupedData = "getGroupedData".asInstanceOf[getGroupedData]
-  @scala.inline
-  def getHoleRadius: getHoleRadius = "getHoleRadius".asInstanceOf[getHoleRadius]
-  @scala.inline
-  def getIsInEditMode: getIsInEditMode = "getIsInEditMode".asInstanceOf[getIsInEditMode]
-  @scala.inline
-  def getIsRenamingWorksheet: getIsRenamingWorksheet = "getIsRenamingWorksheet".asInstanceOf[getIsRenamingWorksheet]
-  @scala.inline
-  def getItem: getItem = "getItem".asInstanceOf[getItem]
-  @scala.inline
-  def getItemFromSeriesPixel: getItemFromSeriesPixel = "getItemFromSeriesPixel".asInstanceOf[getItemFromSeriesPixel]
-  @scala.inline
-  def getItemIndex: getItemIndex = "getItemIndex".asInstanceOf[getItemIndex]
-  @scala.inline
-  def getItemIndexFromSeriesPixel: getItemIndexFromSeriesPixel = "getItemIndexFromSeriesPixel".asInstanceOf[getItemIndexFromSeriesPixel]
-  @scala.inline
-  def getItemSpan: getItemSpan = "getItemSpan".asInstanceOf[getItemSpan]
-  @scala.inline
-  def getLegend: getLegend = "getLegend".asInstanceOf[getLegend]
-  @scala.inline
-  def getMultiColumnHeaders: getMultiColumnHeaders = "getMultiColumnHeaders".asInstanceOf[getMultiColumnHeaders]
-  @scala.inline
-  def getPanes: getPanes = "getPanes".asInstanceOf[getPanes]
-  @scala.inline
-  def getPointForValue: getPointForValue = "getPointForValue".asInstanceOf[getPointForValue]
-  @scala.inline
-  def getRangeNames: getRangeNames = "getRangeNames".asInstanceOf[getRangeNames]
-  @scala.inline
-  def getRegionalOption: getRegionalOption = "getRegionalOption".asInstanceOf[getRegionalOption]
-  @scala.inline
-  def getSelectedDate: getSelectedDate = "getSelectedDate".asInstanceOf[getSelectedDate]
-  @scala.inline
-  def getSelectedListItem: getSelectedListItem = "getSelectedListItem".asInstanceOf[getSelectedListItem]
-  @scala.inline
-  def getSelectedText: getSelectedText = "getSelectedText".asInstanceOf[getSelectedText]
-  @scala.inline
-  def getSelectionEnd: getSelectionEnd = "getSelectionEnd".asInstanceOf[getSelectionEnd]
-  @scala.inline
-  def getSelectionStart: getSelectionStart = "getSelectionStart".asInstanceOf[getSelectionStart]
-  @scala.inline
-  def getSeriesCategoryWidth: getSeriesCategoryWidth = "getSeriesCategoryWidth".asInstanceOf[getSeriesCategoryWidth]
-  @scala.inline
-  def getSeriesHighValue: getSeriesHighValue = "getSeriesHighValue".asInstanceOf[getSeriesHighValue]
-  @scala.inline
-  def getSeriesHighValueFromSeriesPixel: getSeriesHighValueFromSeriesPixel = "getSeriesHighValueFromSeriesPixel".asInstanceOf[getSeriesHighValueFromSeriesPixel]
-  @scala.inline
-  def getSeriesHighValuePosition: getSeriesHighValuePosition = "getSeriesHighValuePosition".asInstanceOf[getSeriesHighValuePosition]
-  @scala.inline
-  def getSeriesHighValuePositionFromSeriesPixel: getSeriesHighValuePositionFromSeriesPixel = "getSeriesHighValuePositionFromSeriesPixel".asInstanceOf[getSeriesHighValuePositionFromSeriesPixel]
-  @scala.inline
-  def getSeriesLowValue: getSeriesLowValue = "getSeriesLowValue".asInstanceOf[getSeriesLowValue]
-  @scala.inline
-  def getSeriesLowValueFromSeriesPixel: getSeriesLowValueFromSeriesPixel = "getSeriesLowValueFromSeriesPixel".asInstanceOf[getSeriesLowValueFromSeriesPixel]
-  @scala.inline
-  def getSeriesLowValuePosition: getSeriesLowValuePosition = "getSeriesLowValuePosition".asInstanceOf[getSeriesLowValuePosition]
-  @scala.inline
-  def getSeriesLowValuePositionFromSeriesPixel: getSeriesLowValuePositionFromSeriesPixel = "getSeriesLowValuePositionFromSeriesPixel".asInstanceOf[getSeriesLowValuePositionFromSeriesPixel]
-  @scala.inline
-  def getSeriesOffsetValue: getSeriesOffsetValue = "getSeriesOffsetValue".asInstanceOf[getSeriesOffsetValue]
-  @scala.inline
-  def getSeriesValue: getSeriesValue = "getSeriesValue".asInstanceOf[getSeriesValue]
-  @scala.inline
-  def getSeriesValueBoundingBox: getSeriesValueBoundingBox = "getSeriesValueBoundingBox".asInstanceOf[getSeriesValueBoundingBox]
-  @scala.inline
-  def getSeriesValueBoundingBoxFromSeriesPixel: getSeriesValueBoundingBoxFromSeriesPixel = "getSeriesValueBoundingBoxFromSeriesPixel".asInstanceOf[getSeriesValueBoundingBoxFromSeriesPixel]
-  @scala.inline
-  def getSeriesValueFineGrainedBoundingBoxes: getSeriesValueFineGrainedBoundingBoxes = "getSeriesValueFineGrainedBoundingBoxes".asInstanceOf[getSeriesValueFineGrainedBoundingBoxes]
-  @scala.inline
-  def getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel: getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel = "getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel".asInstanceOf[getSeriesValueFineGrainedBoundingBoxesFromSeriesPixel]
-  @scala.inline
-  def getSeriesValueFromSeriesPixel: getSeriesValueFromSeriesPixel = "getSeriesValueFromSeriesPixel".asInstanceOf[getSeriesValueFromSeriesPixel]
-  @scala.inline
-  def getSeriesValuePosition: getSeriesValuePosition = "getSeriesValuePosition".asInstanceOf[getSeriesValuePosition]
-  @scala.inline
-  def getSeriesValuePositionFromSeriesPixel: getSeriesValuePositionFromSeriesPixel = "getSeriesValuePositionFromSeriesPixel".asInstanceOf[getSeriesValuePositionFromSeriesPixel]
-  @scala.inline
-  def getTopModal: getTopModal = "getTopModal".asInstanceOf[getTopModal]
-  @scala.inline
-  def getUnboundColumnByKey: getUnboundColumnByKey = "getUnboundColumnByKey".asInstanceOf[getUnboundColumnByKey]
-  @scala.inline
-  def getUnboundValues: getUnboundValues = "getUnboundValues".asInstanceOf[getUnboundValues]
-  @scala.inline
-  def getValueForPoint: getValueForPoint = "getValueForPoint".asInstanceOf[getValueForPoint]
-  @scala.inline
-  def getVisibleIndexByKey: getVisibleIndexByKey = "getVisibleIndexByKey".asInstanceOf[getVisibleIndexByKey]
-  @scala.inline
-  def getWidthOfFixedColumns: getWidthOfFixedColumns = "getWidthOfFixedColumns".asInstanceOf[getWidthOfFixedColumns]
-  @scala.inline
-  def getZoomFromGeographic: getZoomFromGeographic = "getZoomFromGeographic".asInstanceOf[getZoomFromGeographic]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def gridAreaRectChanged: gridAreaRectChanged = "gridAreaRectChanged".asInstanceOf[gridAreaRectChanged]
-  @scala.inline
-  def gridId: gridId = "gridId".asInstanceOf[gridId]
-  @scala.inline
-  def gridLayout: gridLayout = "gridLayout".asInstanceOf[gridLayout]
-  @scala.inline
-  def gridMode: gridMode = "gridMode".asInstanceOf[gridMode]
-  @scala.inline
-  def gridOptions: gridOptions = "gridOptions".asInstanceOf[gridOptions]
-  @scala.inline
-  def groupByAreaVisibility: groupByAreaVisibility = "groupByAreaVisibility".asInstanceOf[groupByAreaVisibility]
-  @scala.inline
-  def groupByColumn: groupByColumn = "groupByColumn".asInstanceOf[groupByColumn]
-  @scala.inline
-  def groupByColumns: groupByColumns = "groupByColumns".asInstanceOf[groupByColumns]
-  @scala.inline
-  def groupByDialogContainment: groupByDialogContainment = "groupByDialogContainment".asInstanceOf[groupByDialogContainment]
-  @scala.inline
-  def groupByLabelWidth: groupByLabelWidth = "groupByLabelWidth".asInstanceOf[groupByLabelWidth]
-  @scala.inline
-  def groupByUrlKey: groupByUrlKey = "groupByUrlKey".asInstanceOf[groupByUrlKey]
-  @scala.inline
-  def groupByUrlKeyAscValue: groupByUrlKeyAscValue = "groupByUrlKeyAscValue".asInstanceOf[groupByUrlKeyAscValue]
-  @scala.inline
-  def groupByUrlKeyDescValue: groupByUrlKeyDescValue = "groupByUrlKeyDescValue".asInstanceOf[groupByUrlKeyDescValue]
-  @scala.inline
-  def groupCollapsed: groupCollapsed = "groupCollapsed".asInstanceOf[groupCollapsed]
-  @scala.inline
-  def groupCollapsing: groupCollapsing = "groupCollapsing".asInstanceOf[groupCollapsing]
-  @scala.inline
-  def groupExpanded: groupExpanded = "groupExpanded".asInstanceOf[groupExpanded]
-  @scala.inline
-  def groupExpanding: groupExpanding = "groupExpanding".asInstanceOf[groupExpanding]
-  @scala.inline
-  def groupSeparator: groupSeparator = "groupSeparator".asInstanceOf[groupSeparator]
-  @scala.inline
-  def groupSummaries: groupSummaries = "groupSummaries".asInstanceOf[groupSummaries]
-  @scala.inline
-  def groupSummariesPosition: groupSummariesPosition = "groupSummariesPosition".asInstanceOf[groupSummariesPosition]
-  @scala.inline
-  def groupedColumns: groupedColumns = "groupedColumns".asInstanceOf[groupedColumns]
-  @scala.inline
-  def groupedColumnsChanged: groupedColumnsChanged = "groupedColumnsChanged".asInstanceOf[groupedColumnsChanged]
-  @scala.inline
-  def groupedColumnsChanging: groupedColumnsChanging = "groupedColumnsChanging".asInstanceOf[groupedColumnsChanging]
-  @scala.inline
-  def groupedRowTextTemplate: groupedRowTextTemplate = "groupedRowTextTemplate".asInstanceOf[groupedRowTextTemplate]
-  @scala.inline
-  def grouping: grouping = "grouping".asInstanceOf[grouping]
-  @scala.inline
-  def groups: groups = "groups".asInstanceOf[groups]
-  @scala.inline
-  def handleThreshold: handleThreshold = "handleThreshold".asInstanceOf[handleThreshold]
-  @scala.inline
-  def hasDefaultIcon: hasDefaultIcon = "hasDefaultIcon".asInstanceOf[hasDefaultIcon]
-  @scala.inline
-  def hasFixedColumns: hasFixedColumns = "hasFixedColumns".asInstanceOf[hasFixedColumns]
-  @scala.inline
-  def hasFixedDataSkippedColumns: hasFixedDataSkippedColumns = "hasFixedDataSkippedColumns".asInstanceOf[hasFixedDataSkippedColumns]
-  @scala.inline
-  def hasFocus: hasFocus = "hasFocus".asInstanceOf[hasFocus]
-  @scala.inline
-  def hasInvalidMessage: hasInvalidMessage = "hasInvalidMessage".asInstanceOf[hasInvalidMessage]
-  @scala.inline
-  def hasVerticalScrollbar: hasVerticalScrollbar = "hasVerticalScrollbar".asInstanceOf[hasVerticalScrollbar]
-  @scala.inline
-  def headerCellRendered: headerCellRendered = "headerCellRendered".asInstanceOf[headerCellRendered]
-  @scala.inline
-  def headerFixButtonText: headerFixButtonText = "headerFixButtonText".asInstanceOf[headerFixButtonText]
-  @scala.inline
-  def headerRendered: headerRendered = "headerRendered".asInstanceOf[headerRendered]
-  @scala.inline
-  def headerRendering: headerRendering = "headerRendering".asInstanceOf[headerRendering]
-  @scala.inline
-  def headerTemplate: headerTemplate = "headerTemplate".asInstanceOf[headerTemplate]
-  @scala.inline
-  def headerText: headerText = "headerText".asInstanceOf[headerText]
-  @scala.inline
-  def headerUnfixButtonText: headerUnfixButtonText = "headerUnfixButtonText".asInstanceOf[headerUnfixButtonText]
-  @scala.inline
-  def headersSorted: headersSorted = "headersSorted".asInstanceOf[headersSorted]
-  @scala.inline
-  def headersSorting: headersSorting = "headersSorting".asInstanceOf[headersSorting]
-  @scala.inline
-  def headersTable: headersTable = "headersTable".asInstanceOf[headersTable]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def hexagonMarkerTemplate: hexagonMarkerTemplate = "hexagonMarkerTemplate".asInstanceOf[hexagonMarkerTemplate]
-  @scala.inline
-  def hexagramMarkerTemplate: hexagramMarkerTemplate = "hexagramMarkerTemplate".asInstanceOf[hexagramMarkerTemplate]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def hiddenColumnIndicatorHeaderWidth: hiddenColumnIndicatorHeaderWidth = "hiddenColumnIndicatorHeaderWidth".asInstanceOf[hiddenColumnIndicatorHeaderWidth]
-  @scala.inline
-  def hiddenColumnIndicatorTooltipText: hiddenColumnIndicatorTooltipText = "hiddenColumnIndicatorTooltipText".asInstanceOf[hiddenColumnIndicatorTooltipText]
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
-  @scala.inline
-  def hideAdMessage: hideAdMessage = "hideAdMessage".asInstanceOf[hideAdMessage]
-  @scala.inline
-  def hideAddChildButton: hideAddChildButton = "hideAddChildButton".asInstanceOf[hideAddChildButton]
-  @scala.inline
-  def hideBanner: hideBanner = "hideBanner".asInstanceOf[hideBanner]
-  @scala.inline
-  def hideColumn: hideColumn = "hideColumn".asInstanceOf[hideColumn]
-  @scala.inline
-  def hideColumnChooser: hideColumnChooser = "hideColumnChooser".asInstanceOf[hideColumnChooser]
-  @scala.inline
-  def hideColumnsDropArea: hideColumnsDropArea = "hideColumnsDropArea".asInstanceOf[hideColumnsDropArea]
-  @scala.inline
-  def hideDelay: hideDelay = "hideDelay".asInstanceOf[hideDelay]
-  @scala.inline
-  def hideDeleteButton: hideDeleteButton = "hideDeleteButton".asInstanceOf[hideDeleteButton]
-  @scala.inline
-  def hideDropDown: hideDropDown = "hideDropDown".asInstanceOf[hideDropDown]
-  @scala.inline
-  def hideFiltersDropArea: hideFiltersDropArea = "hideFiltersDropArea".asInstanceOf[hideFiltersDropArea]
-  @scala.inline
-  def hideHeaderContentsDuringDrag: hideHeaderContentsDuringDrag = "hideHeaderContentsDuringDrag".asInstanceOf[hideHeaderContentsDuringDrag]
-  @scala.inline
-  def hideMeasuresDropArea: hideMeasuresDropArea = "hideMeasuresDropArea".asInstanceOf[hideMeasuresDropArea]
-  @scala.inline
-  def hideMultiColumns: hideMultiColumns = "hideMultiColumns".asInstanceOf[hideMultiColumns]
-  @scala.inline
-  def hideRowsDropArea: hideRowsDropArea = "hideRowsDropArea".asInstanceOf[hideRowsDropArea]
-  @scala.inline
-  def hideTooltip: hideTooltip = "hideTooltip".asInstanceOf[hideTooltip]
-  @scala.inline
-  def hiding: hiding = "hiding".asInstanceOf[hiding]
-  @scala.inline
-  def highMarkerBrush: highMarkerBrush = "highMarkerBrush".asInstanceOf[highMarkerBrush]
-  @scala.inline
-  def highMarkerSize: highMarkerSize = "highMarkerSize".asInstanceOf[highMarkerSize]
-  @scala.inline
-  def highMarkerVisibility: highMarkerVisibility = "highMarkerVisibility".asInstanceOf[highMarkerVisibility]
-  @scala.inline
-  def higherCalloutBrush: higherCalloutBrush = "higherCalloutBrush".asInstanceOf[higherCalloutBrush]
-  @scala.inline
-  def higherCalloutOutline: higherCalloutOutline = "higherCalloutOutline".asInstanceOf[higherCalloutOutline]
-  @scala.inline
-  def higherCalloutStrokeThickness: higherCalloutStrokeThickness = "higherCalloutStrokeThickness".asInstanceOf[higherCalloutStrokeThickness]
-  @scala.inline
-  def higherCalloutTextColor: higherCalloutTextColor = "higherCalloutTextColor".asInstanceOf[higherCalloutTextColor]
-  @scala.inline
-  def higherShadeBrush: higherShadeBrush = "higherShadeBrush".asInstanceOf[higherShadeBrush]
-  @scala.inline
-  def higherShadeOutline: higherShadeOutline = "higherShadeOutline".asInstanceOf[higherShadeOutline]
-  @scala.inline
-  def higherShadeStrokeThickness: higherShadeStrokeThickness = "higherShadeStrokeThickness".asInstanceOf[higherShadeStrokeThickness]
-  @scala.inline
-  def higherThumbBrush: higherThumbBrush = "higherThumbBrush".asInstanceOf[higherThumbBrush]
-  @scala.inline
-  def higherThumbHeight: higherThumbHeight = "higherThumbHeight".asInstanceOf[higherThumbHeight]
-  @scala.inline
-  def higherThumbOutline: higherThumbOutline = "higherThumbOutline".asInstanceOf[higherThumbOutline]
-  @scala.inline
-  def higherThumbRidgesBrush: higherThumbRidgesBrush = "higherThumbRidgesBrush".asInstanceOf[higherThumbRidgesBrush]
-  @scala.inline
-  def higherThumbStrokeThickness: higherThumbStrokeThickness = "higherThumbStrokeThickness".asInstanceOf[higherThumbStrokeThickness]
-  @scala.inline
-  def higherThumbWidth: higherThumbWidth = "higherThumbWidth".asInstanceOf[higherThumbWidth]
-  @scala.inline
-  def highlightMatchesMode: highlightMatchesMode = "highlightMatchesMode".asInstanceOf[highlightMatchesMode]
-  @scala.inline
-  def highlightingTransitionDuration: highlightingTransitionDuration = "highlightingTransitionDuration".asInstanceOf[highlightingTransitionDuration]
-  @scala.inline
-  def holeDimensionsChanged: holeDimensionsChanged = "holeDimensionsChanged".asInstanceOf[holeDimensionsChanged]
-  @scala.inline
-  def horizontalAxisBrush: horizontalAxisBrush = "horizontalAxisBrush".asInstanceOf[horizontalAxisBrush]
-  @scala.inline
-  def horizontalAxisLabel: horizontalAxisLabel = "horizontalAxisLabel".asInstanceOf[horizontalAxisLabel]
-  @scala.inline
-  def horizontalAxisVisibility: horizontalAxisVisibility = "horizontalAxisVisibility".asInstanceOf[horizontalAxisVisibility]
-  @scala.inline
-  def horizontalMoveOnEnter: horizontalMoveOnEnter = "horizontalMoveOnEnter".asInstanceOf[horizontalMoveOnEnter]
-  @scala.inline
-  def horizontalZoomable: horizontalZoomable = "horizontalZoomable".asInstanceOf[horizontalZoomable]
-  @scala.inline
-  def hotTracking: hotTracking = "hotTracking".asInstanceOf[hotTracking]
-  @scala.inline
-  def hoverChange: hoverChange = "hoverChange".asInstanceOf[hoverChange]
-  @scala.inline
-  def hoverStyleAnimationDuration: hoverStyleAnimationDuration = "hoverStyleAnimationDuration".asInstanceOf[hoverStyleAnimationDuration]
-  @scala.inline
-  def hyperlinkExecuting: hyperlinkExecuting = "hyperlinkExecuting".asInstanceOf[hyperlinkExecuting]
-  @scala.inline
-  def iconClass: iconClass = "iconClass".asInstanceOf[iconClass]
-  @scala.inline
-  def icons: icons = "icons".asInstanceOf[icons]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def igBaseChart: igBaseChart = "igBaseChart".asInstanceOf[igBaseChart]
-  @scala.inline
-  def igBaseEditor: igBaseEditor = "igBaseEditor".asInstanceOf[igBaseEditor]
-  @scala.inline
-  def igBrowseButton: igBrowseButton = "igBrowseButton".asInstanceOf[igBrowseButton]
-  @scala.inline
-  def igBulletGraph: igBulletGraph = "igBulletGraph".asInstanceOf[igBulletGraph]
-  @scala.inline
-  def igButton: igButton = "igButton".asInstanceOf[igButton]
-  @scala.inline
-  def igCategoryChart: igCategoryChart = "igCategoryChart".asInstanceOf[igCategoryChart]
-  @scala.inline
-  def igChartLegend: igChartLegend = "igChartLegend".asInstanceOf[igChartLegend]
-  @scala.inline
-  def igCheckboxEditor: igCheckboxEditor = "igCheckboxEditor".asInstanceOf[igCheckboxEditor]
-  @scala.inline
-  def igColorPicker: igColorPicker = "igColorPicker".asInstanceOf[igColorPicker]
-  @scala.inline
-  def igColorPickerSplitButton: igColorPickerSplitButton = "igColorPickerSplitButton".asInstanceOf[igColorPickerSplitButton]
-  @scala.inline
-  def igCombo: igCombo = "igCombo".asInstanceOf[igCombo]
-  @scala.inline
-  def igCurrencyEditor: igCurrencyEditor = "igCurrencyEditor".asInstanceOf[igCurrencyEditor]
-  @scala.inline
-  def igDataChart: igDataChart = "igDataChart".asInstanceOf[igDataChart]
-  @scala.inline
-  def igDateEditor: igDateEditor = "igDateEditor".asInstanceOf[igDateEditor]
-  @scala.inline
-  def igDatePicker: igDatePicker = "igDatePicker".asInstanceOf[igDatePicker]
-  @scala.inline
-  def igDialog: igDialog = "igDialog".asInstanceOf[igDialog]
-  @scala.inline
-  def igDoughnutChart: igDoughnutChart = "igDoughnutChart".asInstanceOf[igDoughnutChart]
-  @scala.inline
-  def igEditorFilter: igEditorFilter = "igEditorFilter".asInstanceOf[igEditorFilter]
-  @scala.inline
-  def igFinancialChart: igFinancialChart = "igFinancialChart".asInstanceOf[igFinancialChart]
-  @scala.inline
-  def igFunnelChart: igFunnelChart = "igFunnelChart".asInstanceOf[igFunnelChart]
-  @scala.inline
-  def igGrid: igGrid = "igGrid".asInstanceOf[igGrid]
-  @scala.inline
-  def igGridAppendRowsOnDemand: igGridAppendRowsOnDemand = "igGridAppendRowsOnDemand".asInstanceOf[igGridAppendRowsOnDemand]
-  @scala.inline
-  def igGridCellMerging: igGridCellMerging = "igGridCellMerging".asInstanceOf[igGridCellMerging]
-  @scala.inline
-  def igGridColumnFixing: igGridColumnFixing = "igGridColumnFixing".asInstanceOf[igGridColumnFixing]
-  @scala.inline
-  def igGridColumnMoving: igGridColumnMoving = "igGridColumnMoving".asInstanceOf[igGridColumnMoving]
-  @scala.inline
-  def igGridFeatureChooser: igGridFeatureChooser = "igGridFeatureChooser".asInstanceOf[igGridFeatureChooser]
-  @scala.inline
-  def igGridFeatureChooserPopover: igGridFeatureChooserPopover = "igGridFeatureChooserPopover".asInstanceOf[igGridFeatureChooserPopover]
-  @scala.inline
-  def igGridFiltering: igGridFiltering = "igGridFiltering".asInstanceOf[igGridFiltering]
-  @scala.inline
-  def igGridGroupBy: igGridGroupBy = "igGridGroupBy".asInstanceOf[igGridGroupBy]
-  @scala.inline
-  def igGridHiding: igGridHiding = "igGridHiding".asInstanceOf[igGridHiding]
-  @scala.inline
-  def igGridModalDialog: igGridModalDialog = "igGridModalDialog".asInstanceOf[igGridModalDialog]
-  @scala.inline
-  def igGridMultiColumnHeaders: igGridMultiColumnHeaders = "igGridMultiColumnHeaders".asInstanceOf[igGridMultiColumnHeaders]
-  @scala.inline
-  def igGridPaging: igGridPaging = "igGridPaging".asInstanceOf[igGridPaging]
-  @scala.inline
-  def igGridResizing: igGridResizing = "igGridResizing".asInstanceOf[igGridResizing]
-  @scala.inline
-  def igGridResponsive: igGridResponsive = "igGridResponsive".asInstanceOf[igGridResponsive]
-  @scala.inline
-  def igGridRowSelectors: igGridRowSelectors = "igGridRowSelectors".asInstanceOf[igGridRowSelectors]
-  @scala.inline
-  def igGridSelection: igGridSelection = "igGridSelection".asInstanceOf[igGridSelection]
-  @scala.inline
-  def igGridSorting: igGridSorting = "igGridSorting".asInstanceOf[igGridSorting]
-  @scala.inline
-  def igGridSummaries: igGridSummaries = "igGridSummaries".asInstanceOf[igGridSummaries]
-  @scala.inline
-  def igGridTooltips: igGridTooltips = "igGridTooltips".asInstanceOf[igGridTooltips]
-  @scala.inline
-  def igGridUpdating: igGridUpdating = "igGridUpdating".asInstanceOf[igGridUpdating]
-  @scala.inline
-  def igHierarchicalGrid: igHierarchicalGrid = "igHierarchicalGrid".asInstanceOf[igHierarchicalGrid]
-  @scala.inline
-  def igHtmlEditor: igHtmlEditor = "igHtmlEditor".asInstanceOf[igHtmlEditor]
-  @scala.inline
-  def igHtmlEditorPopover: igHtmlEditorPopover = "igHtmlEditorPopover".asInstanceOf[igHtmlEditorPopover]
-  @scala.inline
-  def igImagePropertiesDialog: igImagePropertiesDialog = "igImagePropertiesDialog".asInstanceOf[igImagePropertiesDialog]
-  @scala.inline
-  def igLayoutManager: igLayoutManager = "igLayoutManager".asInstanceOf[igLayoutManager]
-  @scala.inline
-  def igLinearGauge: igLinearGauge = "igLinearGauge".asInstanceOf[igLinearGauge]
-  @scala.inline
-  def igLinkPropertiesDialog: igLinkPropertiesDialog = "igLinkPropertiesDialog".asInstanceOf[igLinkPropertiesDialog]
-  @scala.inline
-  def igLoading: igLoading = "igLoading".asInstanceOf[igLoading]
-  @scala.inline
-  def igMap: igMap = "igMap".asInstanceOf[igMap]
-  @scala.inline
-  def igMaskEditor: igMaskEditor = "igMaskEditor".asInstanceOf[igMaskEditor]
-  @scala.inline
-  def igNotifier: igNotifier = "igNotifier".asInstanceOf[igNotifier]
-  @scala.inline
-  def igNumericEditor: igNumericEditor = "igNumericEditor".asInstanceOf[igNumericEditor]
-  @scala.inline
-  def igPercentEditor: igPercentEditor = "igPercentEditor".asInstanceOf[igPercentEditor]
-  @scala.inline
-  def igPieChart: igPieChart = "igPieChart".asInstanceOf[igPieChart]
-  @scala.inline
-  def igPivotDataSelector: igPivotDataSelector = "igPivotDataSelector".asInstanceOf[igPivotDataSelector]
-  @scala.inline
-  def igPivotGrid: igPivotGrid = "igPivotGrid".asInstanceOf[igPivotGrid]
-  @scala.inline
-  def igPivotView: igPivotView = "igPivotView".asInstanceOf[igPivotView]
-  @scala.inline
-  def igPopover: igPopover = "igPopover".asInstanceOf[igPopover]
-  @scala.inline
-  def igProgressBar: igProgressBar = "igProgressBar".asInstanceOf[igProgressBar]
-  @scala.inline
-  def igQRCodeBarcode: igQRCodeBarcode = "igQRCodeBarcode".asInstanceOf[igQRCodeBarcode]
-  @scala.inline
-  def igRadialGauge: igRadialGauge = "igRadialGauge".asInstanceOf[igRadialGauge]
-  @scala.inline
-  def igRadialMenu: igRadialMenu = "igRadialMenu".asInstanceOf[igRadialMenu]
-  @scala.inline
-  def igRating: igRating = "igRating".asInstanceOf[igRating]
-  @scala.inline
-  def igResponsiveContainer: igResponsiveContainer = "igResponsiveContainer".asInstanceOf[igResponsiveContainer]
-  @scala.inline
-  def igScheduler: igScheduler = "igScheduler".asInstanceOf[igScheduler]
-  @scala.inline
-  def igScroll: igScroll = "igScroll".asInstanceOf[igScroll]
-  @scala.inline
-  def igShapeChart: igShapeChart = "igShapeChart".asInstanceOf[igShapeChart]
-  @scala.inline
-  def igSlider: igSlider = "igSlider".asInstanceOf[igSlider]
-  @scala.inline
-  def igSparkline: igSparkline = "igSparkline".asInstanceOf[igSparkline]
-  @scala.inline
-  def igSplitButton: igSplitButton = "igSplitButton".asInstanceOf[igSplitButton]
-  @scala.inline
-  def igSplitter: igSplitter = "igSplitter".asInstanceOf[igSplitter]
-  @scala.inline
-  def igSpreadsheet: igSpreadsheet = "igSpreadsheet".asInstanceOf[igSpreadsheet]
-  @scala.inline
-  def igTablePropertiesDialog: igTablePropertiesDialog = "igTablePropertiesDialog".asInstanceOf[igTablePropertiesDialog]
-  @scala.inline
-  def igTextEditor: igTextEditor = "igTextEditor".asInstanceOf[igTextEditor]
-  @scala.inline
-  def igTileManager: igTileManager = "igTileManager".asInstanceOf[igTileManager]
-  @scala.inline
-  def igTimePicker: igTimePicker = "igTimePicker".asInstanceOf[igTimePicker]
-  @scala.inline
-  def igToolbar: igToolbar = "igToolbar".asInstanceOf[igToolbar]
-  @scala.inline
-  def igToolbarButton: igToolbarButton = "igToolbarButton".asInstanceOf[igToolbarButton]
-  @scala.inline
-  def igTooltip: igTooltip = "igTooltip".asInstanceOf[igTooltip]
-  @scala.inline
-  def igTree: igTree = "igTree".asInstanceOf[igTree]
-  @scala.inline
-  def igTreeGrid: igTreeGrid = "igTreeGrid".asInstanceOf[igTreeGrid]
-  @scala.inline
-  def igTreeGridColumnFixing: igTreeGridColumnFixing = "igTreeGridColumnFixing".asInstanceOf[igTreeGridColumnFixing]
-  @scala.inline
-  def igTreeGridColumnMoving: igTreeGridColumnMoving = "igTreeGridColumnMoving".asInstanceOf[igTreeGridColumnMoving]
-  @scala.inline
-  def igTreeGridFiltering: igTreeGridFiltering = "igTreeGridFiltering".asInstanceOf[igTreeGridFiltering]
-  @scala.inline
-  def igTreeGridHiding: igTreeGridHiding = "igTreeGridHiding".asInstanceOf[igTreeGridHiding]
-  @scala.inline
-  def igTreeGridMultiColumnHeaders: igTreeGridMultiColumnHeaders = "igTreeGridMultiColumnHeaders".asInstanceOf[igTreeGridMultiColumnHeaders]
-  @scala.inline
-  def igTreeGridPaging: igTreeGridPaging = "igTreeGridPaging".asInstanceOf[igTreeGridPaging]
-  @scala.inline
-  def igTreeGridResizing: igTreeGridResizing = "igTreeGridResizing".asInstanceOf[igTreeGridResizing]
-  @scala.inline
-  def igTreeGridRowSelectors: igTreeGridRowSelectors = "igTreeGridRowSelectors".asInstanceOf[igTreeGridRowSelectors]
-  @scala.inline
-  def igTreeGridSelection: igTreeGridSelection = "igTreeGridSelection".asInstanceOf[igTreeGridSelection]
-  @scala.inline
-  def igTreeGridSorting: igTreeGridSorting = "igTreeGridSorting".asInstanceOf[igTreeGridSorting]
-  @scala.inline
-  def igTreeGridTooltips: igTreeGridTooltips = "igTreeGridTooltips".asInstanceOf[igTreeGridTooltips]
-  @scala.inline
-  def igTreeGridUpdating: igTreeGridUpdating = "igTreeGridUpdating".asInstanceOf[igTreeGridUpdating]
-  @scala.inline
-  def igUpload: igUpload = "igUpload".asInstanceOf[igUpload]
-  @scala.inline
-  def igValidator: igValidator = "igValidator".asInstanceOf[igValidator]
-  @scala.inline
-  def igVideoPlayer: igVideoPlayer = "igVideoPlayer".asInstanceOf[igVideoPlayer]
-  @scala.inline
-  def igWidget: igWidget = "igWidget".asInstanceOf[igWidget]
-  @scala.inline
-  def igZoomSlider: igZoomSlider = "igZoomSlider".asInstanceOf[igZoomSlider]
-  @scala.inline
-  def igZoombar: igZoombar = "igZoombar".asInstanceOf[igZoombar]
-  @scala.inline
-  def imageClass: imageClass = "imageClass".asInstanceOf[imageClass]
-  @scala.inline
-  def immediateChildren: immediateChildren = "immediateChildren".asInstanceOf[immediateChildren]
-  @scala.inline
-  def immediateChildrenWidgets: immediateChildrenWidgets = "immediateChildrenWidgets".asInstanceOf[immediateChildrenWidgets]
-  @scala.inline
-  def includeKeys: includeKeys = "includeKeys".asInstanceOf[includeKeys]
-  @scala.inline
-  def includeVerticalOffset: includeVerticalOffset = "includeVerticalOffset".asInstanceOf[includeVerticalOffset]
-  @scala.inline
-  def includedProperties: includedProperties = "includedProperties".asInstanceOf[includedProperties]
-  @scala.inline
-  def indentation: indentation = "indentation".asInstanceOf[indentation]
-  @scala.inline
-  def index: index = "index".asInstanceOf[index]
-  @scala.inline
-  def indicator: indicator = "indicator".asInstanceOf[indicator]
-  @scala.inline
-  def indicatorBrushes: indicatorBrushes = "indicatorBrushes".asInstanceOf[indicatorBrushes]
-  @scala.inline
-  def indicatorDisplayTypes: indicatorDisplayTypes = "indicatorDisplayTypes".asInstanceOf[indicatorDisplayTypes]
-  @scala.inline
-  def indicatorElement: indicatorElement = "indicatorElement".asInstanceOf[indicatorElement]
-  @scala.inline
-  def indicatorLongPeriod: indicatorLongPeriod = "indicatorLongPeriod".asInstanceOf[indicatorLongPeriod]
-  @scala.inline
-  def indicatorMenuTemplate: indicatorMenuTemplate = "indicatorMenuTemplate".asInstanceOf[indicatorMenuTemplate]
-  @scala.inline
-  def indicatorMultiplier: indicatorMultiplier = "indicatorMultiplier".asInstanceOf[indicatorMultiplier]
-  @scala.inline
-  def indicatorNegativeBrushes: indicatorNegativeBrushes = "indicatorNegativeBrushes".asInstanceOf[indicatorNegativeBrushes]
-  @scala.inline
-  def indicatorPeriod: indicatorPeriod = "indicatorPeriod".asInstanceOf[indicatorPeriod]
-  @scala.inline
-  def indicatorShortPeriod: indicatorShortPeriod = "indicatorShortPeriod".asInstanceOf[indicatorShortPeriod]
-  @scala.inline
-  def indicatorSignalPeriod: indicatorSignalPeriod = "indicatorSignalPeriod".asInstanceOf[indicatorSignalPeriod]
-  @scala.inline
-  def indicatorSmoothingPeriod: indicatorSmoothingPeriod = "indicatorSmoothingPeriod".asInstanceOf[indicatorSmoothingPeriod]
-  @scala.inline
-  def indicatorThickness: indicatorThickness = "indicatorThickness".asInstanceOf[indicatorThickness]
-  @scala.inline
-  def indicatorTypes: indicatorTypes = "indicatorTypes".asInstanceOf[indicatorTypes]
-  @scala.inline
-  def inertiaDeltaX: inertiaDeltaX = "inertiaDeltaX".asInstanceOf[inertiaDeltaX]
-  @scala.inline
-  def inertiaDeltaY: inertiaDeltaY = "inertiaDeltaY".asInstanceOf[inertiaDeltaY]
-  @scala.inline
-  def inertiaDuration: inertiaDuration = "inertiaDuration".asInstanceOf[inertiaDuration]
-  @scala.inline
-  def inertiaStep: inertiaStep = "inertiaStep".asInstanceOf[inertiaStep]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initialDataBindDepth: initialDataBindDepth = "initialDataBindDepth".asInstanceOf[initialDataBindDepth]
-  @scala.inline
-  def initialExpand: initialExpand = "initialExpand".asInstanceOf[initialExpand]
-  @scala.inline
-  def initialExpandDepth: initialExpandDepth = "initialExpandDepth".asInstanceOf[initialExpandDepth]
-  @scala.inline
-  def initialIndentationLevel: initialIndentationLevel = "initialIndentationLevel".asInstanceOf[initialIndentationLevel]
-  @scala.inline
-  def initialSelectedItems: initialSelectedItems = "initialSelectedItems".asInstanceOf[initialSelectedItems]
-  @scala.inline
-  def innerExtent: innerExtent = "innerExtent".asInstanceOf[innerExtent]
-  @scala.inline
-  def innerLabelMemberPath: innerLabelMemberPath = "innerLabelMemberPath".asInstanceOf[innerLabelMemberPath]
-  @scala.inline
-  def innerLabelVisibility: innerLabelVisibility = "innerLabelVisibility".asInstanceOf[innerLabelVisibility]
-  @scala.inline
-  def inputMask: inputMask = "inputMask".asInstanceOf[inputMask]
-  @scala.inline
-  def inputName: inputName = "inputName".asInstanceOf[inputName]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def insertAtCaret: insertAtCaret = "insertAtCaret".asInstanceOf[insertAtCaret]
-  @scala.inline
-  def insertItem: insertItem = "insertItem".asInstanceOf[insertItem]
-  @scala.inline
-  def internalResized: internalResized = "internalResized".asInstanceOf[internalResized]
-  @scala.inline
-  def internalResizing: internalResizing = "internalResizing".asInstanceOf[internalResizing]
-  @scala.inline
-  def interval: interval = "interval".asInstanceOf[interval]
-  @scala.inline
-  def isCategoryHighlightingEnabled: isCategoryHighlightingEnabled = "isCategoryHighlightingEnabled".asInstanceOf[isCategoryHighlightingEnabled]
-  @scala.inline
-  def isChecked: isChecked = "isChecked".asInstanceOf[isChecked]
-  @scala.inline
-  def isColumnSorted: isColumnSorted = "isColumnSorted".asInstanceOf[isColumnSorted]
-  @scala.inline
-  def isDirty: isDirty = "isDirty".asInstanceOf[isDirty]
-  @scala.inline
-  def isEditing: isEditing = "isEditing".asInstanceOf[isEditing]
-  @scala.inline
-  def isEnterKeyNavigationEnabled: isEnterKeyNavigationEnabled = "isEnterKeyNavigationEnabled".asInstanceOf[isEnterKeyNavigationEnabled]
-  @scala.inline
-  def isExpanded: isExpanded = "isExpanded".asInstanceOf[isExpanded]
-  @scala.inline
-  def isFixedColumn: isFixedColumn = "isFixedColumn".asInstanceOf[isFixedColumn]
-  @scala.inline
-  def isFixedDecimalEnabled: isFixedDecimalEnabled = "isFixedDecimalEnabled".asInstanceOf[isFixedDecimalEnabled]
-  @scala.inline
-  def isFormulaBarVisible: isFormulaBarVisible = "isFormulaBarVisible".asInstanceOf[isFormulaBarVisible]
-  @scala.inline
-  def isGroupHeader: isGroupHeader = "isGroupHeader".asInstanceOf[isGroupHeader]
-  @scala.inline
-  def isHidden: isHidden = "isHidden".asInstanceOf[isHidden]
-  @scala.inline
-  def isHorizontalZoomEnabled: isHorizontalZoomEnabled = "isHorizontalZoomEnabled".asInstanceOf[isHorizontalZoomEnabled]
-  @scala.inline
-  def isInEndMode: isInEndMode = "isInEndMode".asInstanceOf[isInEndMode]
-  @scala.inline
-  def isIndexSelected: isIndexSelected = "isIndexSelected".asInstanceOf[isIndexSelected]
-  @scala.inline
-  def isInverted: isInverted = "isInverted".asInstanceOf[isInverted]
-  @scala.inline
-  def isItemHighlightingEnabled: isItemHighlightingEnabled = "isItemHighlightingEnabled".asInstanceOf[isItemHighlightingEnabled]
-  @scala.inline
-  def isLegendVisible: isLegendVisible = "isLegendVisible".asInstanceOf[isLegendVisible]
-  @scala.inline
-  def isLimitedToListValues: isLimitedToListValues = "isLimitedToListValues".asInstanceOf[isLimitedToListValues]
-  @scala.inline
-  def isMerged: isMerged = "isMerged".asInstanceOf[isMerged]
-  @scala.inline
-  def isMessageDisplayed: isMessageDisplayed = "isMessageDisplayed".asInstanceOf[isMessageDisplayed]
-  @scala.inline
-  def isNeedleDraggingConstrained: isNeedleDraggingConstrained = "isNeedleDraggingConstrained".asInstanceOf[isNeedleDraggingConstrained]
-  @scala.inline
-  def isNeedleDraggingEnabled: isNeedleDraggingEnabled = "isNeedleDraggingEnabled".asInstanceOf[isNeedleDraggingEnabled]
-  @scala.inline
-  def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
-  @scala.inline
-  def isPagePanningAllowed: isPagePanningAllowed = "isPagePanningAllowed".asInstanceOf[isPagePanningAllowed]
-  @scala.inline
-  def isParentInFrontForColumns: isParentInFrontForColumns = "isParentInFrontForColumns".asInstanceOf[isParentInFrontForColumns]
-  @scala.inline
-  def isParentInFrontForRows: isParentInFrontForRows = "isParentInFrontForRows".asInstanceOf[isParentInFrontForRows]
-  @scala.inline
-  def isScaleInverted: isScaleInverted = "isScaleInverted".asInstanceOf[isScaleInverted]
-  @scala.inline
-  def isScrollLocked: isScrollLocked = "isScrollLocked".asInstanceOf[isScrollLocked]
-  @scala.inline
-  def isSelected: isSelected = "isSelected".asInstanceOf[isSelected]
-  @scala.inline
-  def isSeriesHighlightingEnabled: isSeriesHighlightingEnabled = "isSeriesHighlightingEnabled".asInstanceOf[isSeriesHighlightingEnabled]
-  @scala.inline
-  def isShown: isShown = "isShown".asInstanceOf[isShown]
-  @scala.inline
-  def isSquare: isSquare = "isSquare".asInstanceOf[isSquare]
-  @scala.inline
-  def isSummariesRowsHidden: isSummariesRowsHidden = "isSummariesRowsHidden".asInstanceOf[isSummariesRowsHidden]
-  @scala.inline
-  def isSurfaceInteractionDisabled: isSurfaceInteractionDisabled = "isSurfaceInteractionDisabled".asInstanceOf[isSurfaceInteractionDisabled]
-  @scala.inline
-  def isToRenderButtonReset: isToRenderButtonReset = "isToRenderButtonReset".asInstanceOf[isToRenderButtonReset]
-  @scala.inline
-  def isToolbarVisible: isToolbarVisible = "isToolbarVisible".asInstanceOf[isToolbarVisible]
-  @scala.inline
-  def isTopModal: isTopModal = "isTopModal".asInstanceOf[isTopModal]
-  @scala.inline
-  def isTransitionInEnabled: isTransitionInEnabled = "isTransitionInEnabled".asInstanceOf[isTransitionInEnabled]
-  @scala.inline
-  def isUndoEnabled: isUndoEnabled = "isUndoEnabled".asInstanceOf[isUndoEnabled]
-  @scala.inline
-  def isValid: isValid = "isValid".asInstanceOf[isValid]
-  @scala.inline
-  def isValueSelected: isValueSelected = "isValueSelected".asInstanceOf[isValueSelected]
-  @scala.inline
-  def isVerticalZoomEnabled: isVerticalZoomEnabled = "isVerticalZoomEnabled".asInstanceOf[isVerticalZoomEnabled]
-  @scala.inline
-  def isVisible: isVisible = "isVisible".asInstanceOf[isVisible]
-  @scala.inline
-  def isWindowSyncedToVisibleRange: isWindowSyncedToVisibleRange = "isWindowSyncedToVisibleRange".asInstanceOf[isWindowSyncedToVisibleRange]
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
-  @scala.inline
-  def itemAdded: itemAdded = "itemAdded".asInstanceOf[itemAdded]
-  @scala.inline
-  def itemCount: itemCount = "itemCount".asInstanceOf[itemCount]
-  @scala.inline
-  def itemDisable: itemDisable = "itemDisable".asInstanceOf[itemDisable]
-  @scala.inline
-  def itemEnabled: itemEnabled = "itemEnabled".asInstanceOf[itemEnabled]
-  @scala.inline
-  def itemOption: itemOption = "itemOption".asInstanceOf[itemOption]
-  @scala.inline
-  def itemRemoved: itemRemoved = "itemRemoved".asInstanceOf[itemRemoved]
-  @scala.inline
-  def itemRendered: itemRendered = "itemRendered".asInstanceOf[itemRendered]
-  @scala.inline
-  def itemRendering: itemRendering = "itemRendering".asInstanceOf[itemRendering]
-  @scala.inline
-  def itemSelected: itemSelected = "itemSelected".asInstanceOf[itemSelected]
-  @scala.inline
-  def itemTemplate: itemTemplate = "itemTemplate".asInstanceOf[itemTemplate]
-  @scala.inline
-  def items: items = "items".asInstanceOf[items]
-  @scala.inline
-  def itemsDelta: itemsDelta = "itemsDelta".asInstanceOf[itemsDelta]
-  @scala.inline
-  def itemsFromElement: itemsFromElement = "itemsFromElement".asInstanceOf[itemsFromElement]
-  @scala.inline
-  def itemsFromIndex: itemsFromIndex = "itemsFromIndex".asInstanceOf[itemsFromIndex]
-  @scala.inline
-  def itemsFromValue: itemsFromValue = "itemsFromValue".asInstanceOf[itemsFromValue]
-  @scala.inline
-  def itemsRendered: itemsRendered = "itemsRendered".asInstanceOf[itemsRendered]
-  @scala.inline
-  def itemsRendering: itemsRendering = "itemsRendering".asInstanceOf[itemsRendering]
-  @scala.inline
-  def itemsSource: itemsSource = "itemsSource".asInstanceOf[itemsSource]
-  @scala.inline
-  def jsonpRequest: jsonpRequest = "jsonpRequest".asInstanceOf[jsonpRequest]
-  @scala.inline
-  def keydown: keydown = "keydown".asInstanceOf[keydown]
-  @scala.inline
-  def keypress: keypress = "keypress".asInstanceOf[keypress]
-  @scala.inline
-  def keyup: keyup = "keyup".asInstanceOf[keyup]
-  @scala.inline
-  def labelAddButton: labelAddButton = "labelAddButton".asInstanceOf[labelAddButton]
-  @scala.inline
-  def labelClearAllButton: labelClearAllButton = "labelClearAllButton".asInstanceOf[labelClearAllButton]
-  @scala.inline
-  def labelClick: labelClick = "labelClick".asInstanceOf[labelClick]
-  @scala.inline
-  def labelDragHelperOpacity: labelDragHelperOpacity = "labelDragHelperOpacity".asInstanceOf[labelDragHelperOpacity]
-  @scala.inline
-  def labelExtent: labelExtent = "labelExtent".asInstanceOf[labelExtent]
-  @scala.inline
-  def labelHideDetails: labelHideDetails = "labelHideDetails".asInstanceOf[labelHideDetails]
-  @scala.inline
-  def labelInnerColor: labelInnerColor = "labelInnerColor".asInstanceOf[labelInnerColor]
-  @scala.inline
-  def labelInterval: labelInterval = "labelInterval".asInstanceOf[labelInterval]
-  @scala.inline
-  def labelMemberPath: labelMemberPath = "labelMemberPath".asInstanceOf[labelMemberPath]
-  @scala.inline
-  def labelOuterColor: labelOuterColor = "labelOuterColor".asInstanceOf[labelOuterColor]
-  @scala.inline
-  def labelProgressBarFileNameContinue: labelProgressBarFileNameContinue = "labelProgressBarFileNameContinue".asInstanceOf[labelProgressBarFileNameContinue]
-  @scala.inline
-  def labelShowDetails: labelShowDetails = "labelShowDetails".asInstanceOf[labelShowDetails]
-  @scala.inline
-  def labelSummaryProgressBarTemplate: labelSummaryProgressBarTemplate = "labelSummaryProgressBarTemplate".asInstanceOf[labelSummaryProgressBarTemplate]
-  @scala.inline
-  def labelSummaryProgressButtonCancel: labelSummaryProgressButtonCancel = "labelSummaryProgressButtonCancel".asInstanceOf[labelSummaryProgressButtonCancel]
-  @scala.inline
-  def labelSummaryProgressButtonContinue: labelSummaryProgressButtonContinue = "labelSummaryProgressButtonContinue".asInstanceOf[labelSummaryProgressButtonContinue]
-  @scala.inline
-  def labelSummaryProgressButtonDone: labelSummaryProgressButtonDone = "labelSummaryProgressButtonDone".asInstanceOf[labelSummaryProgressButtonDone]
-  @scala.inline
-  def labelSummaryTemplate: labelSummaryTemplate = "labelSummaryTemplate".asInstanceOf[labelSummaryTemplate]
-  @scala.inline
-  def labelText: labelText = "labelText".asInstanceOf[labelText]
-  @scala.inline
-  def labelUploadButton: labelUploadButton = "labelUploadButton".asInstanceOf[labelUploadButton]
-  @scala.inline
-  def labels: labels = "labels".asInstanceOf[labels]
-  @scala.inline
-  def labelsPosition: labelsPosition = "labelsPosition".asInstanceOf[labelsPosition]
-  @scala.inline
-  def labelsPostInitial: labelsPostInitial = "labelsPostInitial".asInstanceOf[labelsPostInitial]
-  @scala.inline
-  def labelsPreTerminal: labelsPreTerminal = "labelsPreTerminal".asInstanceOf[labelsPreTerminal]
-  @scala.inline
-  def language: language = "language".asInstanceOf[language]
-  @scala.inline
-  def lastMarkerBrush: lastMarkerBrush = "lastMarkerBrush".asInstanceOf[lastMarkerBrush]
-  @scala.inline
-  def lastMarkerSize: lastMarkerSize = "lastMarkerSize".asInstanceOf[lastMarkerSize]
-  @scala.inline
-  def lastMarkerVisibility: lastMarkerVisibility = "lastMarkerVisibility".asInstanceOf[lastMarkerVisibility]
-  @scala.inline
-  def lastPageLabelText: lastPageLabelText = "lastPageLabelText".asInstanceOf[lastPageLabelText]
-  @scala.inline
-  def lastPageTooltip: lastPageTooltip = "lastPageTooltip".asInstanceOf[lastPageTooltip]
-  @scala.inline
-  def layoutManager: layoutManager = "layoutManager".asInstanceOf[layoutManager]
-  @scala.inline
-  def layoutMode: layoutMode = "layoutMode".asInstanceOf[layoutMode]
-  @scala.inline
-  def layoutRefreshed: layoutRefreshed = "layoutRefreshed".asInstanceOf[layoutRefreshed]
-  @scala.inline
-  def layoutRefreshing: layoutRefreshing = "layoutRefreshing".asInstanceOf[layoutRefreshing]
-  @scala.inline
-  def leaderLineMargin: leaderLineMargin = "leaderLineMargin".asInstanceOf[leaderLineMargin]
-  @scala.inline
-  def leaderLineType: leaderLineType = "leaderLineType".asInstanceOf[leaderLineType]
-  @scala.inline
-  def leaderLineVisibility: leaderLineVisibility = "leaderLineVisibility".asInstanceOf[leaderLineVisibility]
-  @scala.inline
-  def leafNodeImageClass: leafNodeImageClass = "leafNodeImageClass".asInstanceOf[leafNodeImageClass]
-  @scala.inline
-  def leafNodeImageTooltip: leafNodeImageTooltip = "leafNodeImageTooltip".asInstanceOf[leafNodeImageTooltip]
-  @scala.inline
-  def leafNodeImageUrl: leafNodeImageUrl = "leafNodeImageUrl".asInstanceOf[leafNodeImageUrl]
-  @scala.inline
-  def leftMargin: leftMargin = "leftMargin".asInstanceOf[leftMargin]
-  @scala.inline
-  def legend: legend = "legend".asInstanceOf[legend]
-  @scala.inline
-  def legendItemBadgeTemplate: legendItemBadgeTemplate = "legendItemBadgeTemplate".asInstanceOf[legendItemBadgeTemplate]
-  @scala.inline
-  def legendItemTemplate: legendItemTemplate = "legendItemTemplate".asInstanceOf[legendItemTemplate]
-  @scala.inline
-  def legendLabelMemberPath: legendLabelMemberPath = "legendLabelMemberPath".asInstanceOf[legendLabelMemberPath]
-  @scala.inline
-  def lengthRange: lengthRange = "lengthRange".asInstanceOf[lengthRange]
-  @scala.inline
-  def levelSortDirections: levelSortDirections = "levelSortDirections".asInstanceOf[levelSortDirections]
-  @scala.inline
-  def limitSpinToCurrentField: limitSpinToCurrentField = "limitSpinToCurrentField".asInstanceOf[limitSpinToCurrentField]
-  @scala.inline
-  def lineThickness: lineThickness = "lineThickness".asInstanceOf[lineThickness]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def listItemHoverDuration: listItemHoverDuration = "listItemHoverDuration".asInstanceOf[listItemHoverDuration]
-  @scala.inline
-  def listItems: listItems = "listItems".asInstanceOf[listItems]
-  @scala.inline
-  def listScrollTop: listScrollTop = "listScrollTop".asInstanceOf[listScrollTop]
-  @scala.inline
-  def listWidth: listWidth = "listWidth".asInstanceOf[listWidth]
-  @scala.inline
-  def loadMoreDataButtonText: loadMoreDataButtonText = "loadMoreDataButtonText".asInstanceOf[loadMoreDataButtonText]
-  @scala.inline
-  def loadOnDemand: loadOnDemand = "loadOnDemand".asInstanceOf[loadOnDemand]
-  @scala.inline
-  def loadOnDemandSettings: loadOnDemandSettings = "loadOnDemandSettings".asInstanceOf[loadOnDemandSettings]
-  @scala.inline
-  def loadTrigger: loadTrigger = "loadTrigger".asInstanceOf[loadTrigger]
-  @scala.inline
-  def localSchemaTransform: localSchemaTransform = "localSchemaTransform".asInstanceOf[localSchemaTransform]
-  @scala.inline
-  def locale: locale = "locale".asInstanceOf[locale]
-  @scala.inline
-  def loop: loop = "loop".asInstanceOf[loop]
-  @scala.inline
-  def lowMarkerBrush: lowMarkerBrush = "lowMarkerBrush".asInstanceOf[lowMarkerBrush]
-  @scala.inline
-  def lowMarkerSize: lowMarkerSize = "lowMarkerSize".asInstanceOf[lowMarkerSize]
-  @scala.inline
-  def lowMarkerVisibility: lowMarkerVisibility = "lowMarkerVisibility".asInstanceOf[lowMarkerVisibility]
-  @scala.inline
-  def lowerCalloutBrush: lowerCalloutBrush = "lowerCalloutBrush".asInstanceOf[lowerCalloutBrush]
-  @scala.inline
-  def lowerCalloutOutline: lowerCalloutOutline = "lowerCalloutOutline".asInstanceOf[lowerCalloutOutline]
-  @scala.inline
-  def lowerCalloutStrokeThickness: lowerCalloutStrokeThickness = "lowerCalloutStrokeThickness".asInstanceOf[lowerCalloutStrokeThickness]
-  @scala.inline
-  def lowerCalloutTextColor: lowerCalloutTextColor = "lowerCalloutTextColor".asInstanceOf[lowerCalloutTextColor]
-  @scala.inline
-  def lowerShadeBrush: lowerShadeBrush = "lowerShadeBrush".asInstanceOf[lowerShadeBrush]
-  @scala.inline
-  def lowerShadeOutline: lowerShadeOutline = "lowerShadeOutline".asInstanceOf[lowerShadeOutline]
-  @scala.inline
-  def lowerShadeStrokeThickness: lowerShadeStrokeThickness = "lowerShadeStrokeThickness".asInstanceOf[lowerShadeStrokeThickness]
-  @scala.inline
-  def lowerThumbBrush: lowerThumbBrush = "lowerThumbBrush".asInstanceOf[lowerThumbBrush]
-  @scala.inline
-  def lowerThumbHeight: lowerThumbHeight = "lowerThumbHeight".asInstanceOf[lowerThumbHeight]
-  @scala.inline
-  def lowerThumbOutline: lowerThumbOutline = "lowerThumbOutline".asInstanceOf[lowerThumbOutline]
-  @scala.inline
-  def lowerThumbRidgesBrush: lowerThumbRidgesBrush = "lowerThumbRidgesBrush".asInstanceOf[lowerThumbRidgesBrush]
-  @scala.inline
-  def lowerThumbStrokeThickness: lowerThumbStrokeThickness = "lowerThumbStrokeThickness".asInstanceOf[lowerThumbStrokeThickness]
-  @scala.inline
-  def lowerThumbWidth: lowerThumbWidth = "lowerThumbWidth".asInstanceOf[lowerThumbWidth]
-  @scala.inline
-  def mainElement: mainElement = "mainElement".asInstanceOf[mainElement]
-  @scala.inline
-  def marginLeft: marginLeft = "marginLeft".asInstanceOf[marginLeft]
-  @scala.inline
-  def marginTop: marginTop = "marginTop".asInstanceOf[marginTop]
-  @scala.inline
-  def markerBrush: markerBrush = "markerBrush".asInstanceOf[markerBrush]
-  @scala.inline
-  def markerBrushes: markerBrushes = "markerBrushes".asInstanceOf[markerBrushes]
-  @scala.inline
-  def markerCollision: markerCollision = "markerCollision".asInstanceOf[markerCollision]
-  @scala.inline
-  def markerCollisionAvoidance: markerCollisionAvoidance = "markerCollisionAvoidance".asInstanceOf[markerCollisionAvoidance]
-  @scala.inline
-  def markerMaxCount: markerMaxCount = "markerMaxCount".asInstanceOf[markerMaxCount]
-  @scala.inline
-  def markerOutlines: markerOutlines = "markerOutlines".asInstanceOf[markerOutlines]
-  @scala.inline
-  def markerSize: markerSize = "markerSize".asInstanceOf[markerSize]
-  @scala.inline
-  def markerTypes: markerTypes = "markerTypes".asInstanceOf[markerTypes]
-  @scala.inline
-  def markerVisibility: markerVisibility = "markerVisibility".asInstanceOf[markerVisibility]
-  @scala.inline
-  def matchFiltering: matchFiltering = "matchFiltering".asInstanceOf[matchFiltering]
-  @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
-  def maxDataBindDepth: maxDataBindDepth = "maxDataBindDepth".asInstanceOf[maxDataBindDepth]
-  @scala.inline
-  def maxDecimals: maxDecimals = "maxDecimals".asInstanceOf[maxDecimals]
-  @scala.inline
-  def maxFileSize: maxFileSize = "maxFileSize".asInstanceOf[maxFileSize]
-  @scala.inline
-  def maxHeight: maxHeight = "maxHeight".asInstanceOf[maxHeight]
-  @scala.inline
-  def maxLength: maxLength = "maxLength".asInstanceOf[maxLength]
-  @scala.inline
-  def maxRecCount: maxRecCount = "maxRecCount".asInstanceOf[maxRecCount]
-  @scala.inline
-  def maxSimultaneousFilesUploads: maxSimultaneousFilesUploads = "maxSimultaneousFilesUploads".asInstanceOf[maxSimultaneousFilesUploads]
-  @scala.inline
-  def maxUploadedFiles: maxUploadedFiles = "maxUploadedFiles".asInstanceOf[maxUploadedFiles]
-  @scala.inline
-  def maxValue: maxValue = "maxValue".asInstanceOf[maxValue]
-  @scala.inline
-  def maxWidth: maxWidth = "maxWidth".asInstanceOf[maxWidth]
-  @scala.inline
-  def maxZoomWidth: maxZoomWidth = "maxZoomWidth".asInstanceOf[maxZoomWidth]
-  @scala.inline
-  def maximize: maximize = "maximize".asInstanceOf[maximize]
-  @scala.inline
-  def maximizeButtonTitle: maximizeButtonTitle = "maximizeButtonTitle".asInstanceOf[maximizeButtonTitle]
-  @scala.inline
-  def maximizedState: maximizedState = "maximizedState".asInstanceOf[maximizedState]
-  @scala.inline
-  def maximizedTile: maximizedTile = "maximizedTile".asInstanceOf[maximizedTile]
-  @scala.inline
-  def maximizedTileIndex: maximizedTileIndex = "maximizedTileIndex".asInstanceOf[maximizedTileIndex]
-  @scala.inline
-  def maximumValue: maximumValue = "maximumValue".asInstanceOf[maximumValue]
-  @scala.inline
-  def menuBackground: menuBackground = "menuBackground".asInstanceOf[menuBackground]
-  @scala.inline
-  def menuItemOpenCloseAnimationDuration: menuItemOpenCloseAnimationDuration = "menuItemOpenCloseAnimationDuration".asInstanceOf[menuItemOpenCloseAnimationDuration]
-  @scala.inline
-  def menuItemOpenCloseAnimationEasingFunction: menuItemOpenCloseAnimationEasingFunction = "menuItemOpenCloseAnimationEasingFunction".asInstanceOf[menuItemOpenCloseAnimationEasingFunction]
-  @scala.inline
-  def menuOpenCloseAnimationDuration: menuOpenCloseAnimationDuration = "menuOpenCloseAnimationDuration".asInstanceOf[menuOpenCloseAnimationDuration]
-  @scala.inline
-  def menuOpenCloseAnimationEasingFunction: menuOpenCloseAnimationEasingFunction = "menuOpenCloseAnimationEasingFunction".asInstanceOf[menuOpenCloseAnimationEasingFunction]
-  @scala.inline
-  def menuToggling: menuToggling = "menuToggling".asInstanceOf[menuToggling]
-  @scala.inline
-  def mergeColumn: mergeColumn = "mergeColumn".asInstanceOf[mergeColumn]
-  @scala.inline
-  def mergeOn: mergeOn = "mergeOn".asInstanceOf[mergeOn]
-  @scala.inline
-  def mergeRow: mergeRow = "mergeRow".asInstanceOf[mergeRow]
-  @scala.inline
-  def mergeRows: mergeRows = "mergeRows".asInstanceOf[mergeRows]
-  @scala.inline
-  def mergeStrategy: mergeStrategy = "mergeStrategy".asInstanceOf[mergeStrategy]
-  @scala.inline
-  def mergeType: mergeType = "mergeType".asInstanceOf[mergeType]
-  @scala.inline
-  def mergeUnboundColumns: mergeUnboundColumns = "mergeUnboundColumns".asInstanceOf[mergeUnboundColumns]
-  @scala.inline
-  def messageTarget: messageTarget = "messageTarget".asInstanceOf[messageTarget]
-  @scala.inline
-  def metadataDropped: metadataDropped = "metadataDropped".asInstanceOf[metadataDropped]
-  @scala.inline
-  def metadataDropping: metadataDropping = "metadataDropping".asInstanceOf[metadataDropping]
-  @scala.inline
-  def metadataRemoved: metadataRemoved = "metadataRemoved".asInstanceOf[metadataRemoved]
-  @scala.inline
-  def metadataRemoving: metadataRemoving = "metadataRemoving".asInstanceOf[metadataRemoving]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
-  @scala.inline
-  def minDecimals: minDecimals = "minDecimals".asInstanceOf[minDecimals]
-  @scala.inline
-  def minHeight: minHeight = "minHeight".asInstanceOf[minHeight]
-  @scala.inline
-  def minThumbSize: minThumbSize = "minThumbSize".asInstanceOf[minThumbSize]
-  @scala.inline
-  def minValue: minValue = "minValue".asInstanceOf[minValue]
-  @scala.inline
-  def minWedgeCount: minWedgeCount = "minWedgeCount".asInstanceOf[minWedgeCount]
-  @scala.inline
-  def minWidth: minWidth = "minWidth".asInstanceOf[minWidth]
-  @scala.inline
-  def minZoomWidth: minZoomWidth = "minZoomWidth".asInstanceOf[minZoomWidth]
-  @scala.inline
-  def minimalVisibleAreaWidth: minimalVisibleAreaWidth = "minimalVisibleAreaWidth".asInstanceOf[minimalVisibleAreaWidth]
-  @scala.inline
-  def minimize: minimize = "minimize".asInstanceOf[minimize]
-  @scala.inline
-  def minimizeButtonTitle: minimizeButtonTitle = "minimizeButtonTitle".asInstanceOf[minimizeButtonTitle]
-  @scala.inline
-  def minimizedState: minimizedState = "minimizedState".asInstanceOf[minimizedState]
-  @scala.inline
-  def minimizedTiles: minimizedTiles = "minimizedTiles".asInstanceOf[minimizedTiles]
-  @scala.inline
-  def minimumValue: minimumValue = "minimumValue".asInstanceOf[minimumValue]
-  @scala.inline
-  def minorTickBrush: minorTickBrush = "minorTickBrush".asInstanceOf[minorTickBrush]
-  @scala.inline
-  def minorTickCount: minorTickCount = "minorTickCount".asInstanceOf[minorTickCount]
-  @scala.inline
-  def minorTickEndExtent: minorTickEndExtent = "minorTickEndExtent".asInstanceOf[minorTickEndExtent]
-  @scala.inline
-  def minorTickStartExtent: minorTickStartExtent = "minorTickStartExtent".asInstanceOf[minorTickStartExtent]
-  @scala.inline
-  def minorTickStrokeThickness: minorTickStrokeThickness = "minorTickStrokeThickness".asInstanceOf[minorTickStrokeThickness]
-  @scala.inline
-  def modal: modal = "modal".asInstanceOf[modal]
-  @scala.inline
-  def modalDialogAnimationDuration: modalDialogAnimationDuration = "modalDialogAnimationDuration".asInstanceOf[modalDialogAnimationDuration]
-  @scala.inline
-  def modalDialogButtonApplyClick: modalDialogButtonApplyClick = "modalDialogButtonApplyClick".asInstanceOf[modalDialogButtonApplyClick]
-  @scala.inline
-  def modalDialogButtonApplyText: modalDialogButtonApplyText = "modalDialogButtonApplyText".asInstanceOf[modalDialogButtonApplyText]
-  @scala.inline
-  def modalDialogButtonCancelText: modalDialogButtonCancelText = "modalDialogButtonCancelText".asInstanceOf[modalDialogButtonCancelText]
-  @scala.inline
-  def modalDialogButtonResetClick: modalDialogButtonResetClick = "modalDialogButtonResetClick".asInstanceOf[modalDialogButtonResetClick]
-  @scala.inline
-  def modalDialogButtonUnsortClick: modalDialogButtonUnsortClick = "modalDialogButtonUnsortClick".asInstanceOf[modalDialogButtonUnsortClick]
-  @scala.inline
-  def modalDialogCaptionButtonAsc: modalDialogCaptionButtonAsc = "modalDialogCaptionButtonAsc".asInstanceOf[modalDialogCaptionButtonAsc]
-  @scala.inline
-  def modalDialogCaptionButtonDesc: modalDialogCaptionButtonDesc = "modalDialogCaptionButtonDesc".asInstanceOf[modalDialogCaptionButtonDesc]
-  @scala.inline
-  def modalDialogCaptionButtonUngroup: modalDialogCaptionButtonUngroup = "modalDialogCaptionButtonUngroup".asInstanceOf[modalDialogCaptionButtonUngroup]
-  @scala.inline
-  def modalDialogCaptionButtonUnsort: modalDialogCaptionButtonUnsort = "modalDialogCaptionButtonUnsort".asInstanceOf[modalDialogCaptionButtonUnsort]
-  @scala.inline
-  def modalDialogCaptionText: modalDialogCaptionText = "modalDialogCaptionText".asInstanceOf[modalDialogCaptionText]
-  @scala.inline
-  def modalDialogClearAllButtonLabel: modalDialogClearAllButtonLabel = "modalDialogClearAllButtonLabel".asInstanceOf[modalDialogClearAllButtonLabel]
-  @scala.inline
-  def modalDialogClosed: modalDialogClosed = "modalDialogClosed".asInstanceOf[modalDialogClosed]
-  @scala.inline
-  def modalDialogClosing: modalDialogClosing = "modalDialogClosing".asInstanceOf[modalDialogClosing]
-  @scala.inline
-  def modalDialogContentsRendered: modalDialogContentsRendered = "modalDialogContentsRendered".asInstanceOf[modalDialogContentsRendered]
-  @scala.inline
-  def modalDialogContentsRendering: modalDialogContentsRendering = "modalDialogContentsRendering".asInstanceOf[modalDialogContentsRendering]
-  @scala.inline
-  def modalDialogDropDownAreaWidth: modalDialogDropDownAreaWidth = "modalDialogDropDownAreaWidth".asInstanceOf[modalDialogDropDownAreaWidth]
-  @scala.inline
-  def modalDialogDropDownButtonCaption: modalDialogDropDownButtonCaption = "modalDialogDropDownButtonCaption".asInstanceOf[modalDialogDropDownButtonCaption]
-  @scala.inline
-  def modalDialogDropDownLabel: modalDialogDropDownLabel = "modalDialogDropDownLabel".asInstanceOf[modalDialogDropDownLabel]
-  @scala.inline
-  def modalDialogDropDownWidth: modalDialogDropDownWidth = "modalDialogDropDownWidth".asInstanceOf[modalDialogDropDownWidth]
-  @scala.inline
-  def modalDialogGroupByButtonText: modalDialogGroupByButtonText = "modalDialogGroupByButtonText".asInstanceOf[modalDialogGroupByButtonText]
-  @scala.inline
-  def modalDialogGroupByOnClick: modalDialogGroupByOnClick = "modalDialogGroupByOnClick".asInstanceOf[modalDialogGroupByOnClick]
-  @scala.inline
-  def modalDialogGroupColumn: modalDialogGroupColumn = "modalDialogGroupColumn".asInstanceOf[modalDialogGroupColumn]
-  @scala.inline
-  def modalDialogGroupingColumn: modalDialogGroupingColumn = "modalDialogGroupingColumn".asInstanceOf[modalDialogGroupingColumn]
-  @scala.inline
-  def modalDialogHeight: modalDialogHeight = "modalDialogHeight".asInstanceOf[modalDialogHeight]
-  @scala.inline
-  def modalDialogMoving: modalDialogMoving = "modalDialogMoving".asInstanceOf[modalDialogMoving]
-  @scala.inline
-  def modalDialogOpened: modalDialogOpened = "modalDialogOpened".asInstanceOf[modalDialogOpened]
-  @scala.inline
-  def modalDialogOpening: modalDialogOpening = "modalDialogOpening".asInstanceOf[modalDialogOpening]
-  @scala.inline
-  def modalDialogResetButtonLabel: modalDialogResetButtonLabel = "modalDialogResetButtonLabel".asInstanceOf[modalDialogResetButtonLabel]
-  @scala.inline
-  def modalDialogRootLevelHierarchicalGrid: modalDialogRootLevelHierarchicalGrid = "modalDialogRootLevelHierarchicalGrid".asInstanceOf[modalDialogRootLevelHierarchicalGrid]
-  @scala.inline
-  def modalDialogSortByButtonText: modalDialogSortByButtonText = "modalDialogSortByButtonText".asInstanceOf[modalDialogSortByButtonText]
-  @scala.inline
-  def modalDialogSortClick: modalDialogSortClick = "modalDialogSortClick".asInstanceOf[modalDialogSortClick]
-  @scala.inline
-  def modalDialogSortGroupedColumn: modalDialogSortGroupedColumn = "modalDialogSortGroupedColumn".asInstanceOf[modalDialogSortGroupedColumn]
-  @scala.inline
-  def modalDialogSortOnClick: modalDialogSortOnClick = "modalDialogSortOnClick".asInstanceOf[modalDialogSortOnClick]
-  @scala.inline
-  def modalDialogSortingChanged: modalDialogSortingChanged = "modalDialogSortingChanged".asInstanceOf[modalDialogSortingChanged]
-  @scala.inline
-  def modalDialogUngroupColumn: modalDialogUngroupColumn = "modalDialogUngroupColumn".asInstanceOf[modalDialogUngroupColumn]
-  @scala.inline
-  def modalDialogUngroupingColumn: modalDialogUngroupingColumn = "modalDialogUngroupingColumn".asInstanceOf[modalDialogUngroupingColumn]
-  @scala.inline
-  def modalDialogWidth: modalDialogWidth = "modalDialogWidth".asInstanceOf[modalDialogWidth]
-  @scala.inline
-  def mode: mode = "mode".asInstanceOf[mode]
-  @scala.inline
-  def modifyDOM: modifyDOM = "modifyDOM".asInstanceOf[modifyDOM]
-  @scala.inline
-  def monthChanged: monthChanged = "monthChanged".asInstanceOf[monthChanged]
-  @scala.inline
-  def monthChanging: monthChanging = "monthChanging".asInstanceOf[monthChanging]
-  @scala.inline
-  def monthViewSettings: monthViewSettings = "monthViewSettings".asInstanceOf[monthViewSettings]
-  @scala.inline
-  def mouseDragSelect: mouseDragSelect = "mouseDragSelect".asInstanceOf[mouseDragSelect]
-  @scala.inline
-  def mouseWrapper: mouseWrapper = "mouseWrapper".asInstanceOf[mouseWrapper]
-  @scala.inline
-  def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
-  @scala.inline
-  def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
-  @scala.inline
-  def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
-  @scala.inline
-  def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
-  @scala.inline
-  def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
-  @scala.inline
-  def moveColumn: moveColumn = "moveColumn".asInstanceOf[moveColumn]
-  @scala.inline
-  def moveCursorPoint: moveCursorPoint = "moveCursorPoint".asInstanceOf[moveCursorPoint]
-  @scala.inline
-  def moveToTop: moveToTop = "moveToTop".asInstanceOf[moveToTop]
-  @scala.inline
-  def moveType: moveType = "moveType".asInstanceOf[moveType]
-  @scala.inline
-  def movingAcceptanceTolerance: movingAcceptanceTolerance = "movingAcceptanceTolerance".asInstanceOf[movingAcceptanceTolerance]
-  @scala.inline
-  def movingDialogAnimationDuration: movingDialogAnimationDuration = "movingDialogAnimationDuration".asInstanceOf[movingDialogAnimationDuration]
-  @scala.inline
-  def movingDialogCaptionButtonAsc: movingDialogCaptionButtonAsc = "movingDialogCaptionButtonAsc".asInstanceOf[movingDialogCaptionButtonAsc]
-  @scala.inline
-  def movingDialogCaptionButtonDesc: movingDialogCaptionButtonDesc = "movingDialogCaptionButtonDesc".asInstanceOf[movingDialogCaptionButtonDesc]
-  @scala.inline
-  def movingDialogCaptionText: movingDialogCaptionText = "movingDialogCaptionText".asInstanceOf[movingDialogCaptionText]
-  @scala.inline
-  def movingDialogClosed: movingDialogClosed = "movingDialogClosed".asInstanceOf[movingDialogClosed]
-  @scala.inline
-  def movingDialogClosing: movingDialogClosing = "movingDialogClosing".asInstanceOf[movingDialogClosing]
-  @scala.inline
-  def movingDialogContentsRendered: movingDialogContentsRendered = "movingDialogContentsRendered".asInstanceOf[movingDialogContentsRendered]
-  @scala.inline
-  def movingDialogContentsRendering: movingDialogContentsRendering = "movingDialogContentsRendering".asInstanceOf[movingDialogContentsRendering]
-  @scala.inline
-  def movingDialogDisplayText: movingDialogDisplayText = "movingDialogDisplayText".asInstanceOf[movingDialogDisplayText]
-  @scala.inline
-  def movingDialogDragColumnMoved: movingDialogDragColumnMoved = "movingDialogDragColumnMoved".asInstanceOf[movingDialogDragColumnMoved]
-  @scala.inline
-  def movingDialogDragColumnMoving: movingDialogDragColumnMoving = "movingDialogDragColumnMoving".asInstanceOf[movingDialogDragColumnMoving]
-  @scala.inline
-  def movingDialogDragged: movingDialogDragged = "movingDialogDragged".asInstanceOf[movingDialogDragged]
-  @scala.inline
-  def movingDialogDropTooltipMarkup: movingDialogDropTooltipMarkup = "movingDialogDropTooltipMarkup".asInstanceOf[movingDialogDropTooltipMarkup]
-  @scala.inline
-  def movingDialogDropTooltipText: movingDialogDropTooltipText = "movingDialogDropTooltipText".asInstanceOf[movingDialogDropTooltipText]
-  @scala.inline
-  def movingDialogHeight: movingDialogHeight = "movingDialogHeight".asInstanceOf[movingDialogHeight]
-  @scala.inline
-  def movingDialogMoveDownButtonPressed: movingDialogMoveDownButtonPressed = "movingDialogMoveDownButtonPressed".asInstanceOf[movingDialogMoveDownButtonPressed]
-  @scala.inline
-  def movingDialogMoveUpButtonPressed: movingDialogMoveUpButtonPressed = "movingDialogMoveUpButtonPressed".asInstanceOf[movingDialogMoveUpButtonPressed]
-  @scala.inline
-  def movingDialogOpened: movingDialogOpened = "movingDialogOpened".asInstanceOf[movingDialogOpened]
-  @scala.inline
-  def movingDialogOpening: movingDialogOpening = "movingDialogOpening".asInstanceOf[movingDialogOpening]
-  @scala.inline
-  def movingDialogWidth: movingDialogWidth = "movingDialogWidth".asInstanceOf[movingDialogWidth]
-  @scala.inline
-  def movingScrollTolerance: movingScrollTolerance = "movingScrollTolerance".asInstanceOf[movingScrollTolerance]
-  @scala.inline
-  def movingToolTipMove: movingToolTipMove = "movingToolTipMove".asInstanceOf[movingToolTipMove]
-  @scala.inline
-  def multiColumnHiding: multiColumnHiding = "multiColumnHiding".asInstanceOf[multiColumnHiding]
-  @scala.inline
-  def multiSelection: multiSelection = "multiSelection".asInstanceOf[multiSelection]
-  @scala.inline
-  def multipleCellSelectOnClick: multipleCellSelectOnClick = "multipleCellSelectOnClick".asInstanceOf[multipleCellSelectOnClick]
-  @scala.inline
-  def multipleFiles: multipleFiles = "multipleFiles".asInstanceOf[multipleFiles]
-  @scala.inline
-  def multipleSelection: multipleSelection = "multipleSelection".asInstanceOf[multipleSelection]
-  @scala.inline
-  def muted: muted = "muted".asInstanceOf[muted]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def nameBoxWidth: nameBoxWidth = "nameBoxWidth".asInstanceOf[nameBoxWidth]
-  @scala.inline
-  def needleBaseFeatureExtent: needleBaseFeatureExtent = "needleBaseFeatureExtent".asInstanceOf[needleBaseFeatureExtent]
-  @scala.inline
-  def needleBaseFeatureWidthRatio: needleBaseFeatureWidthRatio = "needleBaseFeatureWidthRatio".asInstanceOf[needleBaseFeatureWidthRatio]
-  @scala.inline
-  def needleBreadth: needleBreadth = "needleBreadth".asInstanceOf[needleBreadth]
-  @scala.inline
-  def needleBrush: needleBrush = "needleBrush".asInstanceOf[needleBrush]
-  @scala.inline
-  def needleContainsPoint: needleContainsPoint = "needleContainsPoint".asInstanceOf[needleContainsPoint]
-  @scala.inline
-  def needleEndExtent: needleEndExtent = "needleEndExtent".asInstanceOf[needleEndExtent]
-  @scala.inline
-  def needleEndWidthRatio: needleEndWidthRatio = "needleEndWidthRatio".asInstanceOf[needleEndWidthRatio]
-  @scala.inline
-  def needleInnerBaseWidth: needleInnerBaseWidth = "needleInnerBaseWidth".asInstanceOf[needleInnerBaseWidth]
-  @scala.inline
-  def needleInnerExtent: needleInnerExtent = "needleInnerExtent".asInstanceOf[needleInnerExtent]
-  @scala.inline
-  def needleInnerPointExtent: needleInnerPointExtent = "needleInnerPointExtent".asInstanceOf[needleInnerPointExtent]
-  @scala.inline
-  def needleInnerPointWidth: needleInnerPointWidth = "needleInnerPointWidth".asInstanceOf[needleInnerPointWidth]
-  @scala.inline
-  def needleName: needleName = "needleName".asInstanceOf[needleName]
-  @scala.inline
-  def needleOuterBaseWidth: needleOuterBaseWidth = "needleOuterBaseWidth".asInstanceOf[needleOuterBaseWidth]
-  @scala.inline
-  def needleOuterExtent: needleOuterExtent = "needleOuterExtent".asInstanceOf[needleOuterExtent]
-  @scala.inline
-  def needleOuterPointExtent: needleOuterPointExtent = "needleOuterPointExtent".asInstanceOf[needleOuterPointExtent]
-  @scala.inline
-  def needleOuterPointWidth: needleOuterPointWidth = "needleOuterPointWidth".asInstanceOf[needleOuterPointWidth]
-  @scala.inline
-  def needleOutline: needleOutline = "needleOutline".asInstanceOf[needleOutline]
-  @scala.inline
-  def needlePivotBrush: needlePivotBrush = "needlePivotBrush".asInstanceOf[needlePivotBrush]
-  @scala.inline
-  def needlePivotInnerWidthRatio: needlePivotInnerWidthRatio = "needlePivotInnerWidthRatio".asInstanceOf[needlePivotInnerWidthRatio]
-  @scala.inline
-  def needlePivotOutline: needlePivotOutline = "needlePivotOutline".asInstanceOf[needlePivotOutline]
-  @scala.inline
-  def needlePivotShape: needlePivotShape = "needlePivotShape".asInstanceOf[needlePivotShape]
-  @scala.inline
-  def needlePivotStrokeThickness: needlePivotStrokeThickness = "needlePivotStrokeThickness".asInstanceOf[needlePivotStrokeThickness]
-  @scala.inline
-  def needlePivotWidthRatio: needlePivotWidthRatio = "needlePivotWidthRatio".asInstanceOf[needlePivotWidthRatio]
-  @scala.inline
-  def needlePointFeatureExtent: needlePointFeatureExtent = "needlePointFeatureExtent".asInstanceOf[needlePointFeatureExtent]
-  @scala.inline
-  def needlePointFeatureWidthRatio: needlePointFeatureWidthRatio = "needlePointFeatureWidthRatio".asInstanceOf[needlePointFeatureWidthRatio]
-  @scala.inline
-  def needleShape: needleShape = "needleShape".asInstanceOf[needleShape]
-  @scala.inline
-  def needleStartExtent: needleStartExtent = "needleStartExtent".asInstanceOf[needleStartExtent]
-  @scala.inline
-  def needleStartWidthRatio: needleStartWidthRatio = "needleStartWidthRatio".asInstanceOf[needleStartWidthRatio]
-  @scala.inline
-  def needleStrokeThickness: needleStrokeThickness = "needleStrokeThickness".asInstanceOf[needleStrokeThickness]
-  @scala.inline
-  def needleToolTipTemplate: needleToolTipTemplate = "needleToolTipTemplate".asInstanceOf[needleToolTipTemplate]
-  @scala.inline
-  def negativeBrush: negativeBrush = "negativeBrush".asInstanceOf[negativeBrush]
-  @scala.inline
-  def negativeBrushes: negativeBrushes = "negativeBrushes".asInstanceOf[negativeBrushes]
-  @scala.inline
-  def negativeMarkerBrush: negativeMarkerBrush = "negativeMarkerBrush".asInstanceOf[negativeMarkerBrush]
-  @scala.inline
-  def negativeMarkerSize: negativeMarkerSize = "negativeMarkerSize".asInstanceOf[negativeMarkerSize]
-  @scala.inline
-  def negativeMarkerVisibility: negativeMarkerVisibility = "negativeMarkerVisibility".asInstanceOf[negativeMarkerVisibility]
-  @scala.inline
-  def negativeOutlines: negativeOutlines = "negativeOutlines".asInstanceOf[negativeOutlines]
-  @scala.inline
-  def negativePattern: negativePattern = "negativePattern".asInstanceOf[negativePattern]
-  @scala.inline
-  def negativeSign: negativeSign = "negativeSign".asInstanceOf[negativeSign]
-  @scala.inline
-  def nextButton: nextButton = "nextButton".asInstanceOf[nextButton]
-  @scala.inline
-  def nextChunk: nextChunk = "nextChunk".asInstanceOf[nextChunk]
-  @scala.inline
-  def nextPageLabelText: nextPageLabelText = "nextPageLabelText".asInstanceOf[nextPageLabelText]
-  @scala.inline
-  def nextPageTooltip: nextPageTooltip = "nextPageTooltip".asInstanceOf[nextPageTooltip]
-  @scala.inline
-  def noMatchFoundText: noMatchFoundText = "noMatchFoundText".asInstanceOf[noMatchFoundText]
-  @scala.inline
-  def nodeByIndex: nodeByIndex = "nodeByIndex".asInstanceOf[nodeByIndex]
-  @scala.inline
-  def nodeByPath: nodeByPath = "nodeByPath".asInstanceOf[nodeByPath]
-  @scala.inline
-  def nodeCheckstateChanged: nodeCheckstateChanged = "nodeCheckstateChanged".asInstanceOf[nodeCheckstateChanged]
-  @scala.inline
-  def nodeCheckstateChanging: nodeCheckstateChanging = "nodeCheckstateChanging".asInstanceOf[nodeCheckstateChanging]
-  @scala.inline
-  def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
-  @scala.inline
-  def nodeCollapsed: nodeCollapsed = "nodeCollapsed".asInstanceOf[nodeCollapsed]
-  @scala.inline
-  def nodeCollapsing: nodeCollapsing = "nodeCollapsing".asInstanceOf[nodeCollapsing]
-  @scala.inline
-  def nodeDataFor: nodeDataFor = "nodeDataFor".asInstanceOf[nodeDataFor]
-  @scala.inline
-  def nodeDoubleClick: nodeDoubleClick = "nodeDoubleClick".asInstanceOf[nodeDoubleClick]
-  @scala.inline
-  def nodeDropped: nodeDropped = "nodeDropped".asInstanceOf[nodeDropped]
-  @scala.inline
-  def nodeDropping: nodeDropping = "nodeDropping".asInstanceOf[nodeDropping]
-  @scala.inline
-  def nodeExpanded: nodeExpanded = "nodeExpanded".asInstanceOf[nodeExpanded]
-  @scala.inline
-  def nodeExpanding: nodeExpanding = "nodeExpanding".asInstanceOf[nodeExpanding]
-  @scala.inline
-  def nodeFromElement: nodeFromElement = "nodeFromElement".asInstanceOf[nodeFromElement]
-  @scala.inline
-  def nodePopulated: nodePopulated = "nodePopulated".asInstanceOf[nodePopulated]
-  @scala.inline
-  def nodePopulating: nodePopulating = "nodePopulating".asInstanceOf[nodePopulating]
-  @scala.inline
-  def nodesByValue: nodesByValue = "nodesByValue".asInstanceOf[nodesByValue]
-  @scala.inline
-  def normalRangeFill: normalRangeFill = "normalRangeFill".asInstanceOf[normalRangeFill]
-  @scala.inline
-  def normalRangeMaximum: normalRangeMaximum = "normalRangeMaximum".asInstanceOf[normalRangeMaximum]
-  @scala.inline
-  def normalRangeMinimum: normalRangeMinimum = "normalRangeMinimum".asInstanceOf[normalRangeMinimum]
-  @scala.inline
-  def normalRangeVisibility: normalRangeVisibility = "normalRangeVisibility".asInstanceOf[normalRangeVisibility]
-  @scala.inline
-  def notificationOptions: notificationOptions = "notificationOptions".asInstanceOf[notificationOptions]
-  @scala.inline
-  def notifier: notifier = "notifier".asInstanceOf[notifier]
-  @scala.inline
-  def notifyClearItems: notifyClearItems = "notifyClearItems".asInstanceOf[notifyClearItems]
-  @scala.inline
-  def notifyContainerResized: notifyContainerResized = "notifyContainerResized".asInstanceOf[notifyContainerResized]
-  @scala.inline
-  def notifyInsertItem: notifyInsertItem = "notifyInsertItem".asInstanceOf[notifyInsertItem]
-  @scala.inline
-  def notifyLevel: notifyLevel = "notifyLevel".asInstanceOf[notifyLevel]
-  @scala.inline
-  def notifyRemoveItem: notifyRemoveItem = "notifyRemoveItem".asInstanceOf[notifyRemoveItem]
-  @scala.inline
-  def notifySetItem: notifySetItem = "notifySetItem".asInstanceOf[notifySetItem]
-  @scala.inline
-  def notifySizeChanged: notifySizeChanged = "notifySizeChanged".asInstanceOf[notifySizeChanged]
-  @scala.inline
-  def notifyVisualPropertiesChanged: notifyVisualPropertiesChanged = "notifyVisualPropertiesChanged".asInstanceOf[notifyVisualPropertiesChanged]
-  @scala.inline
-  def nullTexts: nullTexts = "nullTexts".asInstanceOf[nullTexts]
-  @scala.inline
-  def nullValue: nullValue = "nullValue".asInstanceOf[nullValue]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def odata: odata = "odata".asInstanceOf[odata]
-  @scala.inline
-  def onError: onError = "onError".asInstanceOf[onError]
-  @scala.inline
-  def onFormDataSubmit: onFormDataSubmit = "onFormDataSubmit".asInstanceOf[onFormDataSubmit]
-  @scala.inline
-  def onXHRLoad: onXHRLoad = "onXHRLoad".asInstanceOf[onXHRLoad]
-  @scala.inline
-  def onblur: onblur = "onblur".asInstanceOf[onblur]
-  @scala.inline
-  def onchange: onchange = "onchange".asInstanceOf[onchange]
-  @scala.inline
-  def onlyIcons: onlyIcons = "onlyIcons".asInstanceOf[onlyIcons]
-  @scala.inline
-  def onsubmit: onsubmit = "onsubmit".asInstanceOf[onsubmit]
-  @scala.inline
-  def open: open = "open".asInstanceOf[open]
-  @scala.inline
-  def openAnimation: openAnimation = "openAnimation".asInstanceOf[openAnimation]
-  @scala.inline
-  def openDropDown: openDropDown = "openDropDown".asInstanceOf[openDropDown]
-  @scala.inline
-  def openGroupByDialog: openGroupByDialog = "openGroupByDialog".asInstanceOf[openGroupByDialog]
-  @scala.inline
-  def openModalDialog: openModalDialog = "openModalDialog".asInstanceOf[openModalDialog]
-  @scala.inline
-  def openMultipleSortingDialog: openMultipleSortingDialog = "openMultipleSortingDialog".asInstanceOf[openMultipleSortingDialog]
-  @scala.inline
-  def opened: opened = "opened".asInstanceOf[opened]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def optionalIndication: optionalIndication = "optionalIndication".asInstanceOf[optionalIndication]
-  @scala.inline
-  def orientation: orientation = "orientation".asInstanceOf[orientation]
-  @scala.inline
-  def othersCategoryStyle: othersCategoryStyle = "othersCategoryStyle".asInstanceOf[othersCategoryStyle]
-  @scala.inline
-  def othersCategoryText: othersCategoryText = "othersCategoryText".asInstanceOf[othersCategoryText]
-  @scala.inline
-  def othersCategoryThreshold: othersCategoryThreshold = "othersCategoryThreshold".asInstanceOf[othersCategoryThreshold]
-  @scala.inline
-  def othersCategoryType: othersCategoryType = "othersCategoryType".asInstanceOf[othersCategoryType]
-  @scala.inline
-  def outerLabelAlignment: outerLabelAlignment = "outerLabelAlignment".asInstanceOf[outerLabelAlignment]
-  @scala.inline
-  def outerLabelMemberPath: outerLabelMemberPath = "outerLabelMemberPath".asInstanceOf[outerLabelMemberPath]
-  @scala.inline
-  def outerLabelTextColor: outerLabelTextColor = "outerLabelTextColor".asInstanceOf[outerLabelTextColor]
-  @scala.inline
-  def outerLabelTextStyle: outerLabelTextStyle = "outerLabelTextStyle".asInstanceOf[outerLabelTextStyle]
-  @scala.inline
-  def outerLabelVisibility: outerLabelVisibility = "outerLabelVisibility".asInstanceOf[outerLabelVisibility]
-  @scala.inline
-  def outerRingFill: outerRingFill = "outerRingFill".asInstanceOf[outerRingFill]
-  @scala.inline
-  def outerRingStroke: outerRingStroke = "outerRingStroke".asInstanceOf[outerRingStroke]
-  @scala.inline
-  def outerRingStrokeThickness: outerRingStrokeThickness = "outerRingStrokeThickness".asInstanceOf[outerRingStrokeThickness]
-  @scala.inline
-  def outerRingThickness: outerRingThickness = "outerRingThickness".asInstanceOf[outerRingThickness]
-  @scala.inline
-  def outlineThickness: outlineThickness = "outlineThickness".asInstanceOf[outlineThickness]
-  @scala.inline
-  def outlines: outlines = "outlines".asInstanceOf[outlines]
-  @scala.inline
-  def overlayBrushes: overlayBrushes = "overlayBrushes".asInstanceOf[overlayBrushes]
-  @scala.inline
-  def overlayOutlines: overlayOutlines = "overlayOutlines".asInstanceOf[overlayOutlines]
-  @scala.inline
-  def overlayPickerTemplate: overlayPickerTemplate = "overlayPickerTemplate".asInstanceOf[overlayPickerTemplate]
-  @scala.inline
-  def overlayThickness: overlayThickness = "overlayThickness".asInstanceOf[overlayThickness]
-  @scala.inline
-  def overlayTypes: overlayTypes = "overlayTypes".asInstanceOf[overlayTypes]
-  @scala.inline
-  def overviewPlusDetailPaneBackgroundImageUri: overviewPlusDetailPaneBackgroundImageUri = "overviewPlusDetailPaneBackgroundImageUri".asInstanceOf[overviewPlusDetailPaneBackgroundImageUri]
-  @scala.inline
-  def overviewPlusDetailPaneVisibility: overviewPlusDetailPaneVisibility = "overviewPlusDetailPaneVisibility".asInstanceOf[overviewPlusDetailPaneVisibility]
-  @scala.inline
-  def padChar: padChar = "padChar".asInstanceOf[padChar]
-  @scala.inline
-  def pageCountLimit: pageCountLimit = "pageCountLimit".asInstanceOf[pageCountLimit]
-  @scala.inline
-  def pageIndex: pageIndex = "pageIndex".asInstanceOf[pageIndex]
-  @scala.inline
-  def pageIndexChanged: pageIndexChanged = "pageIndexChanged".asInstanceOf[pageIndexChanged]
-  @scala.inline
-  def pageIndexChanging: pageIndexChanging = "pageIndexChanging".asInstanceOf[pageIndexChanging]
-  @scala.inline
-  def pageIndexUrlKey: pageIndexUrlKey = "pageIndexUrlKey".asInstanceOf[pageIndexUrlKey]
-  @scala.inline
-  def pageSize: pageSize = "pageSize".asInstanceOf[pageSize]
-  @scala.inline
-  def pageSizeChanged: pageSizeChanged = "pageSizeChanged".asInstanceOf[pageSizeChanged]
-  @scala.inline
-  def pageSizeChanging: pageSizeChanging = "pageSizeChanging".asInstanceOf[pageSizeChanging]
-  @scala.inline
-  def pageSizeDropDownLabel: pageSizeDropDownLabel = "pageSizeDropDownLabel".asInstanceOf[pageSizeDropDownLabel]
-  @scala.inline
-  def pageSizeDropDownLocation: pageSizeDropDownLocation = "pageSizeDropDownLocation".asInstanceOf[pageSizeDropDownLocation]
-  @scala.inline
-  def pageSizeDropDownTooltip: pageSizeDropDownTooltip = "pageSizeDropDownTooltip".asInstanceOf[pageSizeDropDownTooltip]
-  @scala.inline
-  def pageSizeDropDownTrailingLabel: pageSizeDropDownTrailingLabel = "pageSizeDropDownTrailingLabel".asInstanceOf[pageSizeDropDownTrailingLabel]
-  @scala.inline
-  def pageSizeList: pageSizeList = "pageSizeList".asInstanceOf[pageSizeList]
-  @scala.inline
-  def pageSizeUrlKey: pageSizeUrlKey = "pageSizeUrlKey".asInstanceOf[pageSizeUrlKey]
-  @scala.inline
-  def pageTooltipFormat: pageTooltipFormat = "pageTooltipFormat".asInstanceOf[pageTooltipFormat]
-  @scala.inline
-  def pagerRecordsLabelTemplate: pagerRecordsLabelTemplate = "pagerRecordsLabelTemplate".asInstanceOf[pagerRecordsLabelTemplate]
-  @scala.inline
-  def pagerRecordsLabelTooltip: pagerRecordsLabelTooltip = "pagerRecordsLabelTooltip".asInstanceOf[pagerRecordsLabelTooltip]
-  @scala.inline
-  def pagerRendered: pagerRendered = "pagerRendered".asInstanceOf[pagerRendered]
-  @scala.inline
-  def pagerRendering: pagerRendering = "pagerRendering".asInstanceOf[pagerRendering]
-  @scala.inline
-  def pagingMode: pagingMode = "pagingMode".asInstanceOf[pagingMode]
-  @scala.inline
-  def panModifier: panModifier = "panModifier".asInstanceOf[panModifier]
-  @scala.inline
-  def panTransitionDuration: panTransitionDuration = "panTransitionDuration".asInstanceOf[panTransitionDuration]
-  @scala.inline
-  def panels: panels = "panels".asInstanceOf[panels]
-  @scala.inline
-  def parentNode: parentNode = "parentNode".asInstanceOf[parentNode]
-  @scala.inline
-  def parentNodeImageClass: parentNodeImageClass = "parentNodeImageClass".asInstanceOf[parentNodeImageClass]
-  @scala.inline
-  def parentNodeImageTooltip: parentNodeImageTooltip = "parentNodeImageTooltip".asInstanceOf[parentNodeImageTooltip]
-  @scala.inline
-  def parentNodeImageUrl: parentNodeImageUrl = "parentNodeImageUrl".asInstanceOf[parentNodeImageUrl]
-  @scala.inline
-  def partiallyCheckNode: partiallyCheckNode = "partiallyCheckNode".asInstanceOf[partiallyCheckNode]
-  @scala.inline
-  def partiallyCheckedNodes: partiallyCheckedNodes = "partiallyCheckedNodes".asInstanceOf[partiallyCheckedNodes]
-  @scala.inline
-  def partiallyCheckedRows: partiallyCheckedRows = "partiallyCheckedRows".asInstanceOf[partiallyCheckedRows]
-  @scala.inline
-  def paste: paste = "paste".asInstanceOf[paste]
-  @scala.inline
-  def pathSeparator: pathSeparator = "pathSeparator".asInstanceOf[pathSeparator]
-  @scala.inline
-  def pattern: pattern = "pattern".asInstanceOf[pattern]
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
-  @scala.inline
-  def paused: paused = "paused".asInstanceOf[paused]
-  @scala.inline
-  def pendingTransactions: pendingTransactions = "pendingTransactions".asInstanceOf[pendingTransactions]
-  @scala.inline
-  def pentagonMarkerTemplate: pentagonMarkerTemplate = "pentagonMarkerTemplate".asInstanceOf[pentagonMarkerTemplate]
-  @scala.inline
-  def pentagramMarkerTemplate: pentagramMarkerTemplate = "pentagramMarkerTemplate".asInstanceOf[pentagramMarkerTemplate]
-  @scala.inline
-  def percentSymbol: percentSymbol = "percentSymbol".asInstanceOf[percentSymbol]
-  @scala.inline
-  def persist: persist = "persist".asInstanceOf[persist]
-  @scala.inline
-  def pin: pin = "pin".asInstanceOf[pin]
-  @scala.inline
-  def pinButtonTitle: pinButtonTitle = "pinButtonTitle".asInstanceOf[pinButtonTitle]
-  @scala.inline
-  def pinOnMinimized: pinOnMinimized = "pinOnMinimized".asInstanceOf[pinOnMinimized]
-  @scala.inline
-  def pinned: pinned = "pinned".asInstanceOf[pinned]
-  @scala.inline
-  def pivotGrid: pivotGrid = "pivotGrid".asInstanceOf[pivotGrid]
-  @scala.inline
-  def pivotGridHeadersRendered: pivotGridHeadersRendered = "pivotGridHeadersRendered".asInstanceOf[pivotGridHeadersRendered]
-  @scala.inline
-  def pivotGridOptions: pivotGridOptions = "pivotGridOptions".asInstanceOf[pivotGridOptions]
-  @scala.inline
-  def pivotGridPanel: pivotGridPanel = "pivotGridPanel".asInstanceOf[pivotGridPanel]
-  @scala.inline
-  def pivotGridRendered: pivotGridRendered = "pivotGridRendered".asInstanceOf[pivotGridRendered]
-  @scala.inline
-  def pixelScalingRatio: pixelScalingRatio = "pixelScalingRatio".asInstanceOf[pixelScalingRatio]
-  @scala.inline
-  def placeHolder: placeHolder = "placeHolder".asInstanceOf[placeHolder]
-  @scala.inline
-  def play: play = "play".asInstanceOf[play]
-  @scala.inline
-  def playCommercial: playCommercial = "playCommercial".asInstanceOf[playCommercial]
-  @scala.inline
-  def playing: playing = "playing".asInstanceOf[playing]
-  @scala.inline
-  def plotAreaBackground: plotAreaBackground = "plotAreaBackground".asInstanceOf[plotAreaBackground]
-  @scala.inline
-  def pollingInterval: pollingInterval = "pollingInterval".asInstanceOf[pollingInterval]
-  @scala.inline
-  def populateDataRowsAttributes: populateDataRowsAttributes = "populateDataRowsAttributes".asInstanceOf[populateDataRowsAttributes]
-  @scala.inline
-  def populated: populated = "populated".asInstanceOf[populated]
-  @scala.inline
-  def position: position = "position".asInstanceOf[position]
-  @scala.inline
-  def positionDropDown: positionDropDown = "positionDropDown".asInstanceOf[positionDropDown]
-  @scala.inline
-  def positivePattern: positivePattern = "positivePattern".asInstanceOf[positivePattern]
-  @scala.inline
-  def posterUrl: posterUrl = "posterUrl".asInstanceOf[posterUrl]
-  @scala.inline
-  def precision: precision = "precision".asInstanceOf[precision]
-  @scala.inline
-  def precisionZeroVote: precisionZeroVote = "precisionZeroVote".asInstanceOf[precisionZeroVote]
-  @scala.inline
-  def preferHigherResolutionTiles: preferHigherResolutionTiles = "preferHigherResolutionTiles".asInstanceOf[preferHigherResolutionTiles]
-  @scala.inline
-  def preload: preload = "preload".asInstanceOf[preload]
-  @scala.inline
-  def prevPageLabelText: prevPageLabelText = "prevPageLabelText".asInstanceOf[prevPageLabelText]
-  @scala.inline
-  def prevPageTooltip: prevPageTooltip = "prevPageTooltip".asInstanceOf[prevPageTooltip]
-  @scala.inline
-  def preventMaximizingSelector: preventMaximizingSelector = "preventMaximizingSelector".asInstanceOf[preventMaximizingSelector]
-  @scala.inline
-  def preventSubmitOnEnter: preventSubmitOnEnter = "preventSubmitOnEnter".asInstanceOf[preventSubmitOnEnter]
-  @scala.inline
-  def previewRect: previewRect = "previewRect".asInstanceOf[previewRect]
-  @scala.inline
-  def previousButton: previousButton = "previousButton".asInstanceOf[previousButton]
-  @scala.inline
-  def primaryKey: primaryKey = "primaryKey".asInstanceOf[primaryKey]
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
-  @scala.inline
-  def progress: progress = "progress".asInstanceOf[progress]
-  @scala.inline
-  def progressLabelFormat: progressLabelFormat = "progressLabelFormat".asInstanceOf[progressLabelFormat]
-  @scala.inline
-  def progressUrl: progressUrl = "progressUrl".asInstanceOf[progressUrl]
-  @scala.inline
-  def progressiveLoadStatusChanged: progressiveLoadStatusChanged = "progressiveLoadStatusChanged".asInstanceOf[progressiveLoadStatusChanged]
-  @scala.inline
-  def propertiesColumnWidth: propertiesColumnWidth = "propertiesColumnWidth".asInstanceOf[propertiesColumnWidth]
-  @scala.inline
-  def propertyChanged: propertyChanged = "propertyChanged".asInstanceOf[propertyChanged]
-  @scala.inline
-  def provider: provider = "provider".asInstanceOf[provider]
-  @scala.inline
-  def providerCreated: providerCreated = "providerCreated".asInstanceOf[providerCreated]
-  @scala.inline
-  def pyramidMarkerTemplate: pyramidMarkerTemplate = "pyramidMarkerTemplate".asInstanceOf[pyramidMarkerTemplate]
-  @scala.inline
-  def queue: queue = "queue".asInstanceOf[queue]
-  @scala.inline
-  def radiusFactor: radiusFactor = "radiusFactor".asInstanceOf[radiusFactor]
-  @scala.inline
-  def radiusMultiplier: radiusMultiplier = "radiusMultiplier".asInstanceOf[radiusMultiplier]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def rangeBrushes: rangeBrushes = "rangeBrushes".asInstanceOf[rangeBrushes]
-  @scala.inline
-  def rangeInnerExtent: rangeInnerExtent = "rangeInnerExtent".asInstanceOf[rangeInnerExtent]
-  @scala.inline
-  def rangeOuterExtent: rangeOuterExtent = "rangeOuterExtent".asInstanceOf[rangeOuterExtent]
-  @scala.inline
-  def rangeOutlines: rangeOutlines = "rangeOutlines".asInstanceOf[rangeOutlines]
-  @scala.inline
-  def rangeSelectorOptions: rangeSelectorOptions = "rangeSelectorOptions".asInstanceOf[rangeSelectorOptions]
-  @scala.inline
-  def rangeSelectorTemplate: rangeSelectorTemplate = "rangeSelectorTemplate".asInstanceOf[rangeSelectorTemplate]
-  @scala.inline
-  def rangeThumbBrush: rangeThumbBrush = "rangeThumbBrush".asInstanceOf[rangeThumbBrush]
-  @scala.inline
-  def rangeThumbOutline: rangeThumbOutline = "rangeThumbOutline".asInstanceOf[rangeThumbOutline]
-  @scala.inline
-  def rangeThumbRidgesBrush: rangeThumbRidgesBrush = "rangeThumbRidgesBrush".asInstanceOf[rangeThumbRidgesBrush]
-  @scala.inline
-  def rangeThumbStrokeThickness: rangeThumbStrokeThickness = "rangeThumbStrokeThickness".asInstanceOf[rangeThumbStrokeThickness]
-  @scala.inline
-  def rangeToolTipTemplate: rangeToolTipTemplate = "rangeToolTipTemplate".asInstanceOf[rangeToolTipTemplate]
-  @scala.inline
-  def ranges: ranges = "ranges".asInstanceOf[ranges]
-  @scala.inline
-  def reactOnContainerWidthChanges: reactOnContainerWidthChanges = "reactOnContainerWidthChanges".asInstanceOf[reactOnContainerWidthChanges]
-  @scala.inline
-  def readOnly: readOnly = "readOnly".asInstanceOf[readOnly]
-  @scala.inline
-  def rearrangeItems: rearrangeItems = "rearrangeItems".asInstanceOf[rearrangeItems]
-  @scala.inline
-  def recordCountKey: recordCountKey = "recordCountKey".asInstanceOf[recordCountKey]
-  @scala.inline
-  def redo: redo = "redo".asInstanceOf[redo]
-  @scala.inline
-  def reflow: reflow = "reflow".asInstanceOf[reflow]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def refreshCompleted: refreshCompleted = "refreshCompleted".asInstanceOf[refreshCompleted]
-  @scala.inline
-  def refreshLayout: refreshLayout = "refreshLayout".asInstanceOf[refreshLayout]
-  @scala.inline
-  def refreshPos: refreshPos = "refreshPos".asInstanceOf[refreshPos]
-  @scala.inline
-  def refreshValue: refreshValue = "refreshValue".asInstanceOf[refreshValue]
-  @scala.inline
-  def regional: regional = "regional".asInstanceOf[regional]
-  @scala.inline
-  def registerElements: registerElements = "registerElements".asInstanceOf[registerElements]
-  @scala.inline
-  def relatedVideoClick: relatedVideoClick = "relatedVideoClick".asInstanceOf[relatedVideoClick]
-  @scala.inline
-  def relatedVideos: relatedVideos = "relatedVideos".asInstanceOf[relatedVideos]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def removeAt: removeAt = "removeAt".asInstanceOf[removeAt]
-  @scala.inline
-  def removeButtonTooltip: removeButtonTooltip = "removeButtonTooltip".asInstanceOf[removeButtonTooltip]
-  @scala.inline
-  def removeCallback: removeCallback = "removeCallback".asInstanceOf[removeCallback]
-  @scala.inline
-  def removeColumnChooserResetButton: removeColumnChooserResetButton = "removeColumnChooserResetButton".asInstanceOf[removeColumnChooserResetButton]
-  @scala.inline
-  def removeDialogClearButton: removeDialogClearButton = "removeDialogClearButton".asInstanceOf[removeDialogClearButton]
-  @scala.inline
-  def removeField: removeField = "removeField".asInstanceOf[removeField]
-  @scala.inline
-  def removeItem: removeItem = "removeItem".asInstanceOf[removeItem]
-  @scala.inline
-  def removeNodesByValue: removeNodesByValue = "removeNodesByValue".asInstanceOf[removeNodesByValue]
-  @scala.inline
-  def removeRange: removeRange = "removeRange".asInstanceOf[removeRange]
-  @scala.inline
-  def removeSeries: removeSeries = "removeSeries".asInstanceOf[removeSeries]
-  @scala.inline
-  def renderCheckboxes: renderCheckboxes = "renderCheckboxes".asInstanceOf[renderCheckboxes]
-  @scala.inline
-  def renderColumnChooserResetButton: renderColumnChooserResetButton = "renderColumnChooserResetButton".asInstanceOf[renderColumnChooserResetButton]
-  @scala.inline
-  def renderContextRowFunc: renderContextRowFunc = "renderContextRowFunc".asInstanceOf[renderContextRowFunc]
-  @scala.inline
-  def renderExpansionCellFunction: renderExpansionCellFunction = "renderExpansionCellFunction".asInstanceOf[renderExpansionCellFunction]
-  @scala.inline
-  def renderExpansionIndicatorColumn: renderExpansionIndicatorColumn = "renderExpansionIndicatorColumn".asInstanceOf[renderExpansionIndicatorColumn]
-  @scala.inline
-  def renderFC: renderFC = "renderFC".asInstanceOf[renderFC]
-  @scala.inline
-  def renderFilterButton: renderFilterButton = "renderFilterButton".asInstanceOf[renderFilterButton]
-  @scala.inline
-  def renderFirstDataCellFunction: renderFirstDataCellFunction = "renderFirstDataCellFunction".asInstanceOf[renderFirstDataCellFunction]
-  @scala.inline
-  def renderFooterButtons: renderFooterButtons = "renderFooterButtons".asInstanceOf[renderFooterButtons]
-  @scala.inline
-  def renderGroupByModalDialog: renderGroupByModalDialog = "renderGroupByModalDialog".asInstanceOf[renderGroupByModalDialog]
-  @scala.inline
-  def renderMultiColumnHeader: renderMultiColumnHeader = "renderMultiColumnHeader".asInstanceOf[renderMultiColumnHeader]
-  @scala.inline
-  def renderMultipleSortingDialogContent: renderMultipleSortingDialogContent = "renderMultipleSortingDialogContent".asInstanceOf[renderMultipleSortingDialogContent]
-  @scala.inline
-  def renderNewChild: renderNewChild = "renderNewChild".asInstanceOf[renderNewChild]
-  @scala.inline
-  def renderNewRow: renderNewRow = "renderNewRow".asInstanceOf[renderNewRow]
-  @scala.inline
-  def renderSeries: renderSeries = "renderSeries".asInstanceOf[renderSeries]
-  @scala.inline
-  def renderSummaryCellFunc: renderSummaryCellFunc = "renderSummaryCellFunc".asInstanceOf[renderSummaryCellFunc]
-  @scala.inline
-  def rendered: rendered = "rendered".asInstanceOf[rendered]
-  @scala.inline
-  def rendering: rendering = "rendering".asInstanceOf[rendering]
-  @scala.inline
-  def replayTransitionIn: replayTransitionIn = "replayTransitionIn".asInstanceOf[replayTransitionIn]
-  @scala.inline
-  def requestError: requestError = "requestError".asInstanceOf[requestError]
-  @scala.inline
-  def requestType: requestType = "requestType".asInstanceOf[requestType]
-  @scala.inline
-  def requireSelection: requireSelection = "requireSelection".asInstanceOf[requireSelection]
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
-  @scala.inline
-  def requiredIndication: requiredIndication = "requiredIndication".asInstanceOf[requiredIndication]
-  @scala.inline
-  def requiresFilteringExpression: requiresFilteringExpression = "requiresFilteringExpression".asInstanceOf[requiresFilteringExpression]
-  @scala.inline
-  def resetCachedEnhancedInterval: resetCachedEnhancedInterval = "resetCachedEnhancedInterval".asInstanceOf[resetCachedEnhancedInterval]
-  @scala.inline
-  def resetCommercialsShow: resetCommercialsShow = "resetCommercialsShow".asInstanceOf[resetCommercialsShow]
-  @scala.inline
-  def resetHidingColumnChooser: resetHidingColumnChooser = "resetHidingColumnChooser".asInstanceOf[resetHidingColumnChooser]
-  @scala.inline
-  def resetZoom: resetZoom = "resetZoom".asInstanceOf[resetZoom]
-  @scala.inline
-  def resizable: resizable = "resizable".asInstanceOf[resizable]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def resizeContainer: resizeContainer = "resizeContainer".asInstanceOf[resizeContainer]
-  @scala.inline
-  def resizeEnded: resizeEnded = "resizeEnded".asInstanceOf[resizeEnded]
-  @scala.inline
-  def resizeOtherSplitters: resizeOtherSplitters = "resizeOtherSplitters".asInstanceOf[resizeOtherSplitters]
-  @scala.inline
-  def resizeStarted: resizeStarted = "resizeStarted".asInstanceOf[resizeStarted]
-  @scala.inline
-  def resizeWorkspace: resizeWorkspace = "resizeWorkspace".asInstanceOf[resizeWorkspace]
-  @scala.inline
-  def resized: resized = "resized".asInstanceOf[resized]
-  @scala.inline
-  def resizing: resizing = "resizing".asInstanceOf[resizing]
-  @scala.inline
-  def resolution: resolution = "resolution".asInstanceOf[resolution]
-  @scala.inline
-  def resolvingAxisValue: resolvingAxisValue = "resolvingAxisValue".asInstanceOf[resolvingAxisValue]
-  @scala.inline
-  def resources: resources = "resources".asInstanceOf[resources]
-  @scala.inline
-  def responseContentType: responseContentType = "responseContentType".asInstanceOf[responseContentType]
-  @scala.inline
-  def responseDataKey: responseDataKey = "responseDataKey".asInstanceOf[responseDataKey]
-  @scala.inline
-  def responseDataType: responseDataType = "responseDataType".asInstanceOf[responseDataType]
-  @scala.inline
-  def responseTotalRecCountKey: responseTotalRecCountKey = "responseTotalRecCountKey".asInstanceOf[responseTotalRecCountKey]
-  @scala.inline
-  def responsiveColumnHidden: responsiveColumnHidden = "responsiveColumnHidden".asInstanceOf[responsiveColumnHidden]
-  @scala.inline
-  def responsiveColumnHiding: responsiveColumnHiding = "responsiveColumnHiding".asInstanceOf[responsiveColumnHiding]
-  @scala.inline
-  def responsiveColumnShowing: responsiveColumnShowing = "responsiveColumnShowing".asInstanceOf[responsiveColumnShowing]
-  @scala.inline
-  def responsiveColumnShown: responsiveColumnShown = "responsiveColumnShown".asInstanceOf[responsiveColumnShown]
-  @scala.inline
-  def responsiveModeChanged: responsiveModeChanged = "responsiveModeChanged".asInstanceOf[responsiveModeChanged]
-  @scala.inline
-  def responsiveModes: responsiveModes = "responsiveModes".asInstanceOf[responsiveModes]
-  @scala.inline
-  def responsiveSensitivity: responsiveSensitivity = "responsiveSensitivity".asInstanceOf[responsiveSensitivity]
-  @scala.inline
-  def rest: rest = "rest".asInstanceOf[rest]
-  @scala.inline
-  def restSettings: restSettings = "restSettings".asInstanceOf[restSettings]
-  @scala.inline
-  def restore: restore = "restore".asInstanceOf[restore]
-  @scala.inline
-  def restoreButtonTitle: restoreButtonTitle = "restoreButtonTitle".asInstanceOf[restoreButtonTitle]
-  @scala.inline
-  def resultResponseKey: resultResponseKey = "resultResponseKey".asInstanceOf[resultResponseKey]
-  @scala.inline
-  def resultTemplate: resultTemplate = "resultTemplate".asInstanceOf[resultTemplate]
-  @scala.inline
-  def revertIfNotValid: revertIfNotValid = "revertIfNotValid".asInstanceOf[revertIfNotValid]
-  @scala.inline
-  def rightMargin: rightMargin = "rightMargin".asInstanceOf[rightMargin]
-  @scala.inline
-  def rightPanelCols: rightPanelCols = "rightPanelCols".asInstanceOf[rightPanelCols]
-  @scala.inline
-  def rightPanelTilesHeight: rightPanelTilesHeight = "rightPanelTilesHeight".asInstanceOf[rightPanelTilesHeight]
-  @scala.inline
-  def rightPanelTilesWidth: rightPanelTilesWidth = "rightPanelTilesWidth".asInstanceOf[rightPanelTilesWidth]
-  @scala.inline
-  def rollback: rollback = "rollback".asInstanceOf[rollback]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def rootWidget: rootWidget = "rootWidget".asInstanceOf[rootWidget]
-  @scala.inline
-  def rotationAsPercentageOfWedge: rotationAsPercentageOfWedge = "rotationAsPercentageOfWedge".asInstanceOf[rotationAsPercentageOfWedge]
-  @scala.inline
-  def rotationInDegrees: rotationInDegrees = "rotationInDegrees".asInstanceOf[rotationInDegrees]
-  @scala.inline
-  def roundDecimals: roundDecimals = "roundDecimals".asInstanceOf[roundDecimals]
-  @scala.inline
-  def roundedDecimalPlaces: roundedDecimalPlaces = "roundedDecimalPlaces".asInstanceOf[roundedDecimalPlaces]
-  @scala.inline
-  def rowAdded: rowAdded = "rowAdded".asInstanceOf[rowAdded]
-  @scala.inline
-  def rowAdding: rowAdding = "rowAdding".asInstanceOf[rowAdding]
-  @scala.inline
-  def rowAt: rowAt = "rowAt".asInstanceOf[rowAt]
-  @scala.inline
-  def rowById: rowById = "rowById".asInstanceOf[rowById]
-  @scala.inline
-  def rowCollapsed: rowCollapsed = "rowCollapsed".asInstanceOf[rowCollapsed]
-  @scala.inline
-  def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
-  @scala.inline
-  def rowDeleted: rowDeleted = "rowDeleted".asInstanceOf[rowDeleted]
-  @scala.inline
-  def rowDeleting: rowDeleting = "rowDeleting".asInstanceOf[rowDeleting]
-  @scala.inline
-  def rowEditDialogAfterClose: rowEditDialogAfterClose = "rowEditDialogAfterClose".asInstanceOf[rowEditDialogAfterClose]
-  @scala.inline
-  def rowEditDialogAfterOpen: rowEditDialogAfterOpen = "rowEditDialogAfterOpen".asInstanceOf[rowEditDialogAfterOpen]
-  @scala.inline
-  def rowEditDialogBeforeClose: rowEditDialogBeforeClose = "rowEditDialogBeforeClose".asInstanceOf[rowEditDialogBeforeClose]
-  @scala.inline
-  def rowEditDialogBeforeOpen: rowEditDialogBeforeOpen = "rowEditDialogBeforeOpen".asInstanceOf[rowEditDialogBeforeOpen]
-  @scala.inline
-  def rowEditDialogContentsRendered: rowEditDialogContentsRendered = "rowEditDialogContentsRendered".asInstanceOf[rowEditDialogContentsRendered]
-  @scala.inline
-  def rowEditDialogOptions: rowEditDialogOptions = "rowEditDialogOptions".asInstanceOf[rowEditDialogOptions]
-  @scala.inline
-  def rowExpanded: rowExpanded = "rowExpanded".asInstanceOf[rowExpanded]
-  @scala.inline
-  def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
-  @scala.inline
-  def rowHeaderLinkGroupIndentation: rowHeaderLinkGroupIndentation = "rowHeaderLinkGroupIndentation".asInstanceOf[rowHeaderLinkGroupIndentation]
-  @scala.inline
-  def rowHeadersLayout: rowHeadersLayout = "rowHeadersLayout".asInstanceOf[rowHeadersLayout]
-  @scala.inline
-  def rowMergeStrategy: rowMergeStrategy = "rowMergeStrategy".asInstanceOf[rowMergeStrategy]
-  @scala.inline
-  def rowNumberingSeed: rowNumberingSeed = "rowNumberingSeed".asInstanceOf[rowNumberingSeed]
-  @scala.inline
-  def rowSelectionChanged: rowSelectionChanged = "rowSelectionChanged".asInstanceOf[rowSelectionChanged]
-  @scala.inline
-  def rowSelectionChanging: rowSelectionChanging = "rowSelectionChanging".asInstanceOf[rowSelectionChanging]
-  @scala.inline
-  def rowSelectorClicked: rowSelectorClicked = "rowSelectorClicked".asInstanceOf[rowSelectorClicked]
-  @scala.inline
-  def rowSelectorColumnWidth: rowSelectorColumnWidth = "rowSelectorColumnWidth".asInstanceOf[rowSelectorColumnWidth]
-  @scala.inline
-  def rowSelectorNumberingMode: rowSelectorNumberingMode = "rowSelectorNumberingMode".asInstanceOf[rowSelectorNumberingMode]
-  @scala.inline
-  def rowVirtualization: rowVirtualization = "rowVirtualization".asInstanceOf[rowVirtualization]
-  @scala.inline
-  def rows: rows = "rows".asInstanceOf[rows]
-  @scala.inline
-  def rowsRendered: rowsRendered = "rowsRendered".asInstanceOf[rowsRendered]
-  @scala.inline
-  def rowsRendering: rowsRendering = "rowsRendering".asInstanceOf[rowsRendering]
-  @scala.inline
-  def rowsRequested: rowsRequested = "rowsRequested".asInstanceOf[rowsRequested]
-  @scala.inline
-  def rowsRequesting: rowsRequesting = "rowsRequesting".asInstanceOf[rowsRequesting]
-  @scala.inline
-  def rsRenderColgroup: rsRenderColgroup = "rsRenderColgroup".asInstanceOf[rsRenderColgroup]
-  @scala.inline
-  def saveChanges: saveChanges = "saveChanges".asInstanceOf[saveChanges]
-  @scala.inline
-  def saveChangesErrorHandler: saveChangesErrorHandler = "saveChangesErrorHandler".asInstanceOf[saveChangesErrorHandler]
-  @scala.inline
-  def saveChangesSuccessHandler: saveChangesSuccessHandler = "saveChangesSuccessHandler".asInstanceOf[saveChangesSuccessHandler]
-  @scala.inline
-  def scaleBackgroundBrush: scaleBackgroundBrush = "scaleBackgroundBrush".asInstanceOf[scaleBackgroundBrush]
-  @scala.inline
-  def scaleBackgroundOutline: scaleBackgroundOutline = "scaleBackgroundOutline".asInstanceOf[scaleBackgroundOutline]
-  @scala.inline
-  def scaleBackgroundThickness: scaleBackgroundThickness = "scaleBackgroundThickness".asInstanceOf[scaleBackgroundThickness]
-  @scala.inline
-  def scaleBrush: scaleBrush = "scaleBrush".asInstanceOf[scaleBrush]
-  @scala.inline
-  def scaleEndAngle: scaleEndAngle = "scaleEndAngle".asInstanceOf[scaleEndAngle]
-  @scala.inline
-  def scaleEndExtent: scaleEndExtent = "scaleEndExtent".asInstanceOf[scaleEndExtent]
-  @scala.inline
-  def scaleInnerExtent: scaleInnerExtent = "scaleInnerExtent".asInstanceOf[scaleInnerExtent]
-  @scala.inline
-  def scaleOuterExtent: scaleOuterExtent = "scaleOuterExtent".asInstanceOf[scaleOuterExtent]
-  @scala.inline
-  def scaleOutline: scaleOutline = "scaleOutline".asInstanceOf[scaleOutline]
-  @scala.inline
-  def scaleOversweep: scaleOversweep = "scaleOversweep".asInstanceOf[scaleOversweep]
-  @scala.inline
-  def scaleOversweepShape: scaleOversweepShape = "scaleOversweepShape".asInstanceOf[scaleOversweepShape]
-  @scala.inline
-  def scaleStartAngle: scaleStartAngle = "scaleStartAngle".asInstanceOf[scaleStartAngle]
-  @scala.inline
-  def scaleStartExtent: scaleStartExtent = "scaleStartExtent".asInstanceOf[scaleStartExtent]
-  @scala.inline
-  def scaleStrokeThickness: scaleStrokeThickness = "scaleStrokeThickness".asInstanceOf[scaleStrokeThickness]
-  @scala.inline
-  def scaleSweepDirection: scaleSweepDirection = "scaleSweepDirection".asInstanceOf[scaleSweepDirection]
-  @scala.inline
-  def scaleValue: scaleValue = "scaleValue".asInstanceOf[scaleValue]
-  @scala.inline
-  def schemaGenerated: schemaGenerated = "schemaGenerated".asInstanceOf[schemaGenerated]
-  @scala.inline
-  def scientificFormat: scientificFormat = "scientificFormat".asInstanceOf[scientificFormat]
-  @scala.inline
-  def screenshot: screenshot = "screenshot".asInstanceOf[screenshot]
-  @scala.inline
-  def scrollContainer: scrollContainer = "scrollContainer".asInstanceOf[scrollContainer]
-  @scala.inline
-  def scrollDelta: scrollDelta = "scrollDelta".asInstanceOf[scrollDelta]
-  @scala.inline
-  def scrollHeight: scrollHeight = "scrollHeight".asInstanceOf[scrollHeight]
-  @scala.inline
-  def scrollIntoView: scrollIntoView = "scrollIntoView".asInstanceOf[scrollIntoView]
-  @scala.inline
-  def scrollLeft: scrollLeft = "scrollLeft".asInstanceOf[scrollLeft]
-  @scala.inline
-  def scrollOnlyHBar: scrollOnlyHBar = "scrollOnlyHBar".asInstanceOf[scrollOnlyHBar]
-  @scala.inline
-  def scrollOnlyVBar: scrollOnlyVBar = "scrollOnlyVBar".asInstanceOf[scrollOnlyVBar]
-  @scala.inline
-  def scrollSettings: scrollSettings = "scrollSettings".asInstanceOf[scrollSettings]
-  @scala.inline
-  def scrollSpeedMultiplier: scrollSpeedMultiplier = "scrollSpeedMultiplier".asInstanceOf[scrollSpeedMultiplier]
-  @scala.inline
-  def scrollTop: scrollTop = "scrollTop".asInstanceOf[scrollTop]
-  @scala.inline
-  def scrollWidth: scrollWidth = "scrollWidth".asInstanceOf[scrollWidth]
-  @scala.inline
-  def scrollbarH: scrollbarH = "scrollbarH".asInstanceOf[scrollbarH]
-  @scala.inline
-  def scrollbarHParent: scrollbarHParent = "scrollbarHParent".asInstanceOf[scrollbarHParent]
-  @scala.inline
-  def scrollbarType: scrollbarType = "scrollbarType".asInstanceOf[scrollbarType]
-  @scala.inline
-  def scrollbarV: scrollbarV = "scrollbarV".asInstanceOf[scrollbarV]
-  @scala.inline
-  def scrollbarVParent: scrollbarVParent = "scrollbarVParent".asInstanceOf[scrollbarVParent]
-  @scala.inline
-  def scrolled: scrolled = "scrolled".asInstanceOf[scrolled]
-  @scala.inline
-  def scrolling: scrolling = "scrolling".asInstanceOf[scrolling]
-  @scala.inline
-  def secondPanel: secondPanel = "secondPanel".asInstanceOf[secondPanel]
-  @scala.inline
-  def seeking: seeking = "seeking".asInstanceOf[seeking]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def selectAll: selectAll = "selectAll".asInstanceOf[selectAll]
-  @scala.inline
-  def selectAllForPagingTemplate: selectAllForPagingTemplate = "selectAllForPagingTemplate".asInstanceOf[selectAllForPagingTemplate]
-  @scala.inline
-  def selectCell: selectCell = "selectCell".asInstanceOf[selectCell]
-  @scala.inline
-  def selectCellById: selectCellById = "selectCellById".asInstanceOf[selectCellById]
-  @scala.inline
-  def selectCheckBox: selectCheckBox = "selectCheckBox".asInstanceOf[selectCheckBox]
-  @scala.inline
-  def selectColor: selectColor = "selectColor".asInstanceOf[selectColor]
-  @scala.inline
-  def selectDate: selectDate = "selectDate".asInstanceOf[selectDate]
-  @scala.inline
-  def selectItemBySpaceKey: selectItemBySpaceKey = "selectItemBySpaceKey".asInstanceOf[selectItemBySpaceKey]
-  @scala.inline
-  def selectListIndexDown: selectListIndexDown = "selectListIndexDown".asInstanceOf[selectListIndexDown]
-  @scala.inline
-  def selectListIndexUp: selectListIndexUp = "selectListIndexUp".asInstanceOf[selectListIndexUp]
-  @scala.inline
-  def selectRow: selectRow = "selectRow".asInstanceOf[selectRow]
-  @scala.inline
-  def selectRowById: selectRowById = "selectRowById".asInstanceOf[selectRowById]
-  @scala.inline
-  def selectedCell: selectedCell = "selectedCell".asInstanceOf[selectedCell]
-  @scala.inline
-  def selectedCells: selectedCells = "selectedCells".asInstanceOf[selectedCells]
-  @scala.inline
-  def selectedColor: selectedColor = "selectedColor".asInstanceOf[selectedColor]
-  @scala.inline
-  def selectedDate: selectedDate = "selectedDate".asInstanceOf[selectedDate]
-  @scala.inline
-  def selectedItem: selectedItem = "selectedItem".asInstanceOf[selectedItem]
-  @scala.inline
-  def selectedItemChanged: selectedItemChanged = "selectedItemChanged".asInstanceOf[selectedItemChanged]
-  @scala.inline
-  def selectedItemChanging: selectedItemChanging = "selectedItemChanging".asInstanceOf[selectedItemChanging]
-  @scala.inline
-  def selectedItems: selectedItems = "selectedItems".asInstanceOf[selectedItems]
-  @scala.inline
-  def selectedItemsChanged: selectedItemsChanged = "selectedItemsChanged".asInstanceOf[selectedItemsChanged]
-  @scala.inline
-  def selectedItemsChanging: selectedItemsChanging = "selectedItemsChanging".asInstanceOf[selectedItemsChanging]
-  @scala.inline
-  def selectedListIndex: selectedListIndex = "selectedListIndex".asInstanceOf[selectedListIndex]
-  @scala.inline
-  def selectedNode: selectedNode = "selectedNode".asInstanceOf[selectedNode]
-  @scala.inline
-  def selectedRow: selectedRow = "selectedRow".asInstanceOf[selectedRow]
-  @scala.inline
-  def selectedRows: selectedRows = "selectedRows".asInstanceOf[selectedRows]
-  @scala.inline
-  def selectedSliceIndexes: selectedSliceIndexes = "selectedSliceIndexes".asInstanceOf[selectedSliceIndexes]
-  @scala.inline
-  def selectedSliceItems: selectedSliceItems = "selectedSliceItems".asInstanceOf[selectedSliceItems]
-  @scala.inline
-  def selectedSliceStyle: selectedSliceStyle = "selectedSliceStyle".asInstanceOf[selectedSliceStyle]
-  @scala.inline
-  def selectedSlices: selectedSlices = "selectedSlices".asInstanceOf[selectedSlices]
-  @scala.inline
-  def selectedStyle: selectedStyle = "selectedStyle".asInstanceOf[selectedStyle]
-  @scala.inline
-  def selectedWorksheets: selectedWorksheets = "selectedWorksheets".asInstanceOf[selectedWorksheets]
-  @scala.inline
-  def selection: selection = "selection".asInstanceOf[selection]
-  @scala.inline
-  def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
-  @scala.inline
-  def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
-  @scala.inline
-  def selectionMode: selectionMode = "selectionMode".asInstanceOf[selectionMode]
-  @scala.inline
-  def selectionOnFocus: selectionOnFocus = "selectionOnFocus".asInstanceOf[selectionOnFocus]
-  @scala.inline
-  def selectors: selectors = "selectors".asInstanceOf[selectors]
-  @scala.inline
-  def serializeTransactionLog: serializeTransactionLog = "serializeTransactionLog".asInstanceOf[serializeTransactionLog]
-  @scala.inline
-  def series: series = "series".asInstanceOf[series]
-  @scala.inline
-  def seriesAdded: seriesAdded = "seriesAdded".asInstanceOf[seriesAdded]
-  @scala.inline
-  def seriesCursorMouseMove: seriesCursorMouseMove = "seriesCursorMouseMove".asInstanceOf[seriesCursorMouseMove]
-  @scala.inline
-  def seriesMouseEnter: seriesMouseEnter = "seriesMouseEnter".asInstanceOf[seriesMouseEnter]
-  @scala.inline
-  def seriesMouseLeave: seriesMouseLeave = "seriesMouseLeave".asInstanceOf[seriesMouseLeave]
-  @scala.inline
-  def seriesMouseLeftButtonDown: seriesMouseLeftButtonDown = "seriesMouseLeftButtonDown".asInstanceOf[seriesMouseLeftButtonDown]
-  @scala.inline
-  def seriesMouseLeftButtonUp: seriesMouseLeftButtonUp = "seriesMouseLeftButtonUp".asInstanceOf[seriesMouseLeftButtonUp]
-  @scala.inline
-  def seriesMouseMove: seriesMouseMove = "seriesMouseMove".asInstanceOf[seriesMouseMove]
-  @scala.inline
-  def seriesPointerDown: seriesPointerDown = "seriesPointerDown".asInstanceOf[seriesPointerDown]
-  @scala.inline
-  def seriesPointerEnter: seriesPointerEnter = "seriesPointerEnter".asInstanceOf[seriesPointerEnter]
-  @scala.inline
-  def seriesPointerLeave: seriesPointerLeave = "seriesPointerLeave".asInstanceOf[seriesPointerLeave]
-  @scala.inline
-  def seriesPointerMove: seriesPointerMove = "seriesPointerMove".asInstanceOf[seriesPointerMove]
-  @scala.inline
-  def seriesPointerUp: seriesPointerUp = "seriesPointerUp".asInstanceOf[seriesPointerUp]
-  @scala.inline
-  def seriesRemoved: seriesRemoved = "seriesRemoved".asInstanceOf[seriesRemoved]
-  @scala.inline
-  def setCellValue: setCellValue = "setCellValue".asInstanceOf[setCellValue]
-  @scala.inline
-  def setColor: setColor = "setColor".asInstanceOf[setColor]
-  @scala.inline
-  def setColumnTemplate: setColumnTemplate = "setColumnTemplate".asInstanceOf[setColumnTemplate]
-  @scala.inline
-  def setContent: setContent = "setContent".asInstanceOf[setContent]
-  @scala.inline
-  def setCoordinates: setCoordinates = "setCoordinates".asInstanceOf[setCoordinates]
-  @scala.inline
-  def setFirstPanelSize: setFirstPanelSize = "setFirstPanelSize".asInstanceOf[setFirstPanelSize]
-  @scala.inline
-  def setFocus: setFocus = "setFocus".asInstanceOf[setFocus]
-  @scala.inline
-  def setItem: setItem = "setItem".asInstanceOf[setItem]
-  @scala.inline
-  def setSecondPanelSize: setSecondPanelSize = "setSecondPanelSize".asInstanceOf[setSecondPanelSize]
-  @scala.inline
-  def setTitle: setTitle = "setTitle".asInstanceOf[setTitle]
-  @scala.inline
-  def setUnboundValueByPK: setUnboundValueByPK = "setUnboundValueByPK".asInstanceOf[setUnboundValueByPK]
-  @scala.inline
-  def setUnboundValues: setUnboundValues = "setUnboundValues".asInstanceOf[setUnboundValues]
-  @scala.inline
-  def shapeDataSource: shapeDataSource = "shapeDataSource".asInstanceOf[shapeDataSource]
-  @scala.inline
-  def shouldShowFeatureIcon: shouldShowFeatureIcon = "shouldShowFeatureIcon".asInstanceOf[shouldShowFeatureIcon]
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
-  @scala.inline
-  def showAddChildButtonFor: showAddChildButtonFor = "showAddChildButtonFor".asInstanceOf[showAddChildButtonFor]
-  @scala.inline
-  def showBanner: showBanner = "showBanner".asInstanceOf[showBanner]
-  @scala.inline
-  def showBookmarkTitle: showBookmarkTitle = "showBookmarkTitle".asInstanceOf[showBookmarkTitle]
-  @scala.inline
-  def showCheckBoxesOnFocus: showCheckBoxesOnFocus = "showCheckBoxesOnFocus".asInstanceOf[showCheckBoxesOnFocus]
-  @scala.inline
-  def showCloseButton: showCloseButton = "showCloseButton".asInstanceOf[showCloseButton]
-  @scala.inline
-  def showColumn: showColumn = "showColumn".asInstanceOf[showColumn]
-  @scala.inline
-  def showColumnChooser: showColumnChooser = "showColumnChooser".asInstanceOf[showColumnChooser]
-  @scala.inline
-  def showCopyPasteToolbar: showCopyPasteToolbar = "showCopyPasteToolbar".asInstanceOf[showCopyPasteToolbar]
-  @scala.inline
-  def showDelay: showDelay = "showDelay".asInstanceOf[showDelay]
-  @scala.inline
-  def showDeleteButtonFor: showDeleteButtonFor = "showDeleteButtonFor".asInstanceOf[showDeleteButtonFor]
-  @scala.inline
-  def showDoneCancelButtons: showDoneCancelButtons = "showDoneCancelButtons".asInstanceOf[showDoneCancelButtons]
-  @scala.inline
-  def showDropDown: showDropDown = "showDropDown".asInstanceOf[showDropDown]
-  @scala.inline
-  def showDropDownButton: showDropDownButton = "showDropDownButton".asInstanceOf[showDropDownButton]
-  @scala.inline
-  def showEmptyConditions: showEmptyConditions = "showEmptyConditions".asInstanceOf[showEmptyConditions]
-  @scala.inline
-  def showExpansionIndicator: showExpansionIndicator = "showExpansionIndicator".asInstanceOf[showExpansionIndicator]
-  @scala.inline
-  def showFileExtensionIcon: showFileExtensionIcon = "showFileExtensionIcon".asInstanceOf[showFileExtensionIcon]
-  @scala.inline
-  def showFilterDialogForTable: showFilterDialogForTable = "showFilterDialogForTable".asInstanceOf[showFilterDialogForTable]
-  @scala.inline
-  def showFilterDialogForWorksheet: showFilterDialogForWorksheet = "showFilterDialogForWorksheet".asInstanceOf[showFilterDialogForWorksheet]
-  @scala.inline
-  def showFirstLastPages: showFirstLastPages = "showFirstLastPages".asInstanceOf[showFirstLastPages]
-  @scala.inline
-  def showFixButtons: showFixButtons = "showFixButtons".asInstanceOf[showFixButtons]
-  @scala.inline
-  def showFooter: showFooter = "showFooter".asInstanceOf[showFooter]
-  @scala.inline
-  def showFormattingToolbar: showFormattingToolbar = "showFormattingToolbar".asInstanceOf[showFormattingToolbar]
-  @scala.inline
-  def showHeader: showHeader = "showHeader".asInstanceOf[showHeader]
-  @scala.inline
-  def showHideDialog: showHideDialog = "showHideDialog".asInstanceOf[showHideDialog]
-  @scala.inline
-  def showIcon: showIcon = "showIcon".asInstanceOf[showIcon]
-  @scala.inline
-  def showInsertObjectToolbar: showInsertObjectToolbar = "showInsertObjectToolbar".asInstanceOf[showInsertObjectToolbar]
-  @scala.inline
-  def showMaximizeButton: showMaximizeButton = "showMaximizeButton".asInstanceOf[showMaximizeButton]
-  @scala.inline
-  def showMinimizeButton: showMinimizeButton = "showMinimizeButton".asInstanceOf[showMinimizeButton]
-  @scala.inline
-  def showMultiColumns: showMultiColumns = "showMultiColumns".asInstanceOf[showMultiColumns]
-  @scala.inline
-  def showNullConditions: showNullConditions = "showNullConditions".asInstanceOf[showNullConditions]
-  @scala.inline
-  def showOn: showOn = "showOn".asInstanceOf[showOn]
-  @scala.inline
-  def showPageSizeDropDown: showPageSizeDropDown = "showPageSizeDropDown".asInstanceOf[showPageSizeDropDown]
-  @scala.inline
-  def showPagerRecordsLabel: showPagerRecordsLabel = "showPagerRecordsLabel".asInstanceOf[showPagerRecordsLabel]
-  @scala.inline
-  def showPinButton: showPinButton = "showPinButton".asInstanceOf[showPinButton]
-  @scala.inline
-  def showPrevNextPages: showPrevNextPages = "showPrevNextPages".asInstanceOf[showPrevNextPages]
-  @scala.inline
-  def showRightPanelScroll: showRightPanelScroll = "showRightPanelScroll".asInstanceOf[showRightPanelScroll]
-  @scala.inline
-  def showSeekTime: showSeekTime = "showSeekTime".asInstanceOf[showSeekTime]
-  @scala.inline
-  def showSummariesButton: showSummariesButton = "showSummariesButton".asInstanceOf[showSummariesButton]
-  @scala.inline
-  def showTextToolbar: showTextToolbar = "showTextToolbar".asInstanceOf[showTextToolbar]
-  @scala.inline
-  def showToolTip: showToolTip = "showToolTip".asInstanceOf[showToolTip]
-  @scala.inline
-  def showToolTipTimeout: showToolTipTimeout = "showToolTipTimeout".asInstanceOf[showToolTipTimeout]
-  @scala.inline
-  def showTooltip_ : showTooltip_ = "showTooltip".asInstanceOf[showTooltip_]
-  @scala.inline
-  def showTopOrBottomDialogForTable: showTopOrBottomDialogForTable = "showTopOrBottomDialogForTable".asInstanceOf[showTopOrBottomDialogForTable]
-  @scala.inline
-  def showTopOrBottomDialogForWorksheet: showTopOrBottomDialogForWorksheet = "showTopOrBottomDialogForWorksheet".asInstanceOf[showTopOrBottomDialogForWorksheet]
-  @scala.inline
-  def showing: showing = "showing".asInstanceOf[showing]
-  @scala.inline
-  def shown: shown = "shown".asInstanceOf[shown]
-  @scala.inline
-  def simulateHover: simulateHover = "simulateHover".asInstanceOf[simulateHover]
-  @scala.inline
-  def singleBranchExpand: singleBranchExpand = "singleBranchExpand".asInstanceOf[singleBranchExpand]
-  @scala.inline
-  def singleColumnTemplate: singleColumnTemplate = "singleColumnTemplate".asInstanceOf[singleColumnTemplate]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def sizeVersion: sizeVersion = "sizeVersion".asInstanceOf[sizeVersion]
-  @scala.inline
-  def skipChildren: skipChildren = "skipChildren".asInstanceOf[skipChildren]
-  @scala.inline
-  def sliceClick: sliceClick = "sliceClick".asInstanceOf[sliceClick]
-  @scala.inline
-  def sliceClicked: sliceClicked = "sliceClicked".asInstanceOf[sliceClicked]
-  @scala.inline
-  def slide: slide = "slide".asInstanceOf[slide]
-  @scala.inline
-  def smallIncrementStep: smallIncrementStep = "smallIncrementStep".asInstanceOf[smallIncrementStep]
-  @scala.inline
-  def smoothing: smoothing = "smoothing".asInstanceOf[smoothing]
-  @scala.inline
-  def smoothingDuration: smoothingDuration = "smoothingDuration".asInstanceOf[smoothingDuration]
-  @scala.inline
-  def smoothingStep: smoothingStep = "smoothingStep".asInstanceOf[smoothingStep]
-  @scala.inline
-  def sortColumn: sortColumn = "sortColumn".asInstanceOf[sortColumn]
-  @scala.inline
-  def sortMultiple: sortMultiple = "sortMultiple".asInstanceOf[sortMultiple]
-  @scala.inline
-  def sortUrlKey: sortUrlKey = "sortUrlKey".asInstanceOf[sortUrlKey]
-  @scala.inline
-  def sortUrlKeyAscValue: sortUrlKeyAscValue = "sortUrlKeyAscValue".asInstanceOf[sortUrlKeyAscValue]
-  @scala.inline
-  def sortUrlKeyDescValue: sortUrlKeyDescValue = "sortUrlKeyDescValue".asInstanceOf[sortUrlKeyDescValue]
-  @scala.inline
-  def sorted: sorted = "sorted".asInstanceOf[sorted]
-  @scala.inline
-  def sorting: sorting = "sorting".asInstanceOf[sorting]
-  @scala.inline
-  def sortingDialogContainment: sortingDialogContainment = "sortingDialogContainment".asInstanceOf[sortingDialogContainment]
-  @scala.inline
-  def sources: sources = "sources".asInstanceOf[sources]
-  @scala.inline
-  def spinDelta: spinDelta = "spinDelta".asInstanceOf[spinDelta]
-  @scala.inline
-  def spinDown: spinDown = "spinDown".asInstanceOf[spinDown]
-  @scala.inline
-  def spinDownButton: spinDownButton = "spinDownButton".asInstanceOf[spinDownButton]
-  @scala.inline
-  def spinUp: spinUp = "spinUp".asInstanceOf[spinUp]
-  @scala.inline
-  def spinUpButton: spinUpButton = "spinUpButton".asInstanceOf[spinUpButton]
-  @scala.inline
-  def spinWrapAround: spinWrapAround = "spinWrapAround".asInstanceOf[spinWrapAround]
-  @scala.inline
-  def splitter: splitter = "splitter".asInstanceOf[splitter]
-  @scala.inline
-  def splitterOptions: splitterOptions = "splitterOptions".asInstanceOf[splitterOptions]
-  @scala.inline
-  def squareMarkerTemplate: squareMarkerTemplate = "squareMarkerTemplate".asInstanceOf[squareMarkerTemplate]
-  @scala.inline
-  def standardColors: standardColors = "standardColors".asInstanceOf[standardColors]
-  @scala.inline
-  def standardColorsTable: standardColorsTable = "standardColorsTable".asInstanceOf[standardColorsTable]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def startAddChildFor: startAddChildFor = "startAddChildFor".asInstanceOf[startAddChildFor]
-  @scala.inline
-  def startAddRowEdit: startAddRowEdit = "startAddRowEdit".asInstanceOf[startAddRowEdit]
-  @scala.inline
-  def startAngle: startAngle = "startAngle".asInstanceOf[startAngle]
-  @scala.inline
-  def startEdit: startEdit = "startEdit".asInstanceOf[startEdit]
-  @scala.inline
-  def startEditTriggers: startEditTriggers = "startEditTriggers".asInstanceOf[startEditTriggers]
-  @scala.inline
-  def startInset: startInset = "startInset".asInstanceOf[startInset]
-  @scala.inline
-  def startPoller: startPoller = "startPoller".asInstanceOf[startPoller]
-  @scala.inline
-  def startTiledZoomingIfNecessary: startTiledZoomingIfNecessary = "startTiledZoomingIfNecessary".asInstanceOf[startTiledZoomingIfNecessary]
-  @scala.inline
-  def startUpload: startUpload = "startUpload".asInstanceOf[startUpload]
-  @scala.inline
-  def state: state = "state".asInstanceOf[state]
-  @scala.inline
-  def stateChanged: stateChanged = "stateChanged".asInstanceOf[stateChanged]
-  @scala.inline
-  def stateChanging: stateChanging = "stateChanging".asInstanceOf[stateChanging]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def stopPoller: stopPoller = "stopPoller".asInstanceOf[stopPoller]
-  @scala.inline
-  def stretch: stretch = "stretch".asInstanceOf[stretch]
-  @scala.inline
-  def style: style = "style".asInstanceOf[style]
-  @scala.inline
-  def styleUpdated: styleUpdated = "styleUpdated".asInstanceOf[styleUpdated]
-  @scala.inline
-  def subtitle: subtitle = "subtitle".asInstanceOf[subtitle]
-  @scala.inline
-  def subtitleAlignment: subtitleAlignment = "subtitleAlignment".asInstanceOf[subtitleAlignment]
-  @scala.inline
-  def subtitleBottomMargin: subtitleBottomMargin = "subtitleBottomMargin".asInstanceOf[subtitleBottomMargin]
-  @scala.inline
-  def subtitleHorizontalAlignment: subtitleHorizontalAlignment = "subtitleHorizontalAlignment".asInstanceOf[subtitleHorizontalAlignment]
-  @scala.inline
-  def subtitleLeftMargin: subtitleLeftMargin = "subtitleLeftMargin".asInstanceOf[subtitleLeftMargin]
-  @scala.inline
-  def subtitleRightMargin: subtitleRightMargin = "subtitleRightMargin".asInstanceOf[subtitleRightMargin]
-  @scala.inline
-  def subtitleTextColor: subtitleTextColor = "subtitleTextColor".asInstanceOf[subtitleTextColor]
-  @scala.inline
-  def subtitleTextStyle: subtitleTextStyle = "subtitleTextStyle".asInstanceOf[subtitleTextStyle]
-  @scala.inline
-  def subtitleTopMargin: subtitleTopMargin = "subtitleTopMargin".asInstanceOf[subtitleTopMargin]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def successHidden: successHidden = "successHidden".asInstanceOf[successHidden]
-  @scala.inline
-  def successHiding: successHiding = "successHiding".asInstanceOf[successHiding]
-  @scala.inline
-  def successMessage: successMessage = "successMessage".asInstanceOf[successMessage]
-  @scala.inline
-  def successShowing: successShowing = "successShowing".asInstanceOf[successShowing]
-  @scala.inline
-  def successShown: successShown = "successShown".asInstanceOf[successShown]
-  @scala.inline
-  def summariesCalculated: summariesCalculated = "summariesCalculated".asInstanceOf[summariesCalculated]
-  @scala.inline
-  def summariesCalculating: summariesCalculating = "summariesCalculating".asInstanceOf[summariesCalculating]
-  @scala.inline
-  def summariesFor: summariesFor = "summariesFor".asInstanceOf[summariesFor]
-  @scala.inline
-  def summariesHeaderButtonTooltip: summariesHeaderButtonTooltip = "summariesHeaderButtonTooltip".asInstanceOf[summariesHeaderButtonTooltip]
-  @scala.inline
-  def summariesMethodSelectionChanged: summariesMethodSelectionChanged = "summariesMethodSelectionChanged".asInstanceOf[summariesMethodSelectionChanged]
-  @scala.inline
-  def summariesResponseKey: summariesResponseKey = "summariesResponseKey".asInstanceOf[summariesResponseKey]
-  @scala.inline
-  def summariesToggled: summariesToggled = "summariesToggled".asInstanceOf[summariesToggled]
-  @scala.inline
-  def summariesToggling: summariesToggling = "summariesToggling".asInstanceOf[summariesToggling]
-  @scala.inline
-  def summaryCollection: summaryCollection = "summaryCollection".asInstanceOf[summaryCollection]
-  @scala.inline
-  def summaryExecution: summaryExecution = "summaryExecution".asInstanceOf[summaryExecution]
-  @scala.inline
-  def summaryExprUrlKey: summaryExprUrlKey = "summaryExprUrlKey".asInstanceOf[summaryExprUrlKey]
-  @scala.inline
-  def summarySettings: summarySettings = "summarySettings".asInstanceOf[summarySettings]
-  @scala.inline
-  def supportsH264BaselineVideo: supportsH264BaselineVideo = "supportsH264BaselineVideo".asInstanceOf[supportsH264BaselineVideo]
-  @scala.inline
-  def supportsOggTheoraVideo: supportsOggTheoraVideo = "supportsOggTheoraVideo".asInstanceOf[supportsOggTheoraVideo]
-  @scala.inline
-  def supportsVideo: supportsVideo = "supportsVideo".asInstanceOf[supportsVideo]
-  @scala.inline
-  def supportsWebmVideo: supportsWebmVideo = "supportsWebmVideo".asInstanceOf[supportsWebmVideo]
-  @scala.inline
-  def suppressKeyboard: suppressKeyboard = "suppressKeyboard".asInstanceOf[suppressKeyboard]
-  @scala.inline
-  def suppressNotifications: suppressNotifications = "suppressNotifications".asInstanceOf[suppressNotifications]
-  @scala.inline
-  def swapDefaultEnabled: swapDefaultEnabled = "swapDefaultEnabled".asInstanceOf[swapDefaultEnabled]
-  @scala.inline
-  def swapDirection: swapDirection = "swapDirection".asInstanceOf[swapDirection]
-  @scala.inline
-  def sweepDirection: sweepDirection = "sweepDirection".asInstanceOf[sweepDirection]
-  @scala.inline
-  def swipeDistance: swipeDistance = "swipeDistance".asInstanceOf[swipeDistance]
-  @scala.inline
-  def swipeToleranceX: swipeToleranceX = "swipeToleranceX".asInstanceOf[swipeToleranceX]
-  @scala.inline
-  def switchToButton: switchToButton = "switchToButton".asInstanceOf[switchToButton]
-  @scala.inline
-  def syncChannel: syncChannel = "syncChannel".asInstanceOf[syncChannel]
-  @scala.inline
-  def syncHandleWithBookmark: syncHandleWithBookmark = "syncHandleWithBookmark".asInstanceOf[syncHandleWithBookmark]
-  @scala.inline
-  def syncHeights: syncHeights = "syncHeights".asInstanceOf[syncHeights]
-  @scala.inline
-  def syncRowHeights: syncRowHeights = "syncRowHeights".asInstanceOf[syncRowHeights]
-  @scala.inline
-  def syncRowsHeights: syncRowsHeights = "syncRowsHeights".asInstanceOf[syncRowsHeights]
-  @scala.inline
-  def syncedElemsH: syncedElemsH = "syncedElemsH".asInstanceOf[syncedElemsH]
-  @scala.inline
-  def syncedElemsV: syncedElemsV = "syncedElemsV".asInstanceOf[syncedElemsV]
-  @scala.inline
-  def synchronizeHorizontally: synchronizeHorizontally = "synchronizeHorizontally".asInstanceOf[synchronizeHorizontally]
-  @scala.inline
-  def synchronizeVertically: synchronizeVertically = "synchronizeVertically".asInstanceOf[synchronizeVertically]
-  @scala.inline
-  def tabIndex: tabIndex = "tabIndex".asInstanceOf[tabIndex]
-  @scala.inline
-  def target: target = "target".asInstanceOf[target]
-  @scala.inline
-  def targetButton: targetButton = "targetButton".asInstanceOf[targetButton]
-  @scala.inline
-  def targetValue: targetValue = "targetValue".asInstanceOf[targetValue]
-  @scala.inline
-  def targetValueBreadth: targetValueBreadth = "targetValueBreadth".asInstanceOf[targetValueBreadth]
-  @scala.inline
-  def targetValueBrush: targetValueBrush = "targetValueBrush".asInstanceOf[targetValueBrush]
-  @scala.inline
-  def targetValueInnerExtent: targetValueInnerExtent = "targetValueInnerExtent".asInstanceOf[targetValueInnerExtent]
-  @scala.inline
-  def targetValueName: targetValueName = "targetValueName".asInstanceOf[targetValueName]
-  @scala.inline
-  def targetValueOuterExtent: targetValueOuterExtent = "targetValueOuterExtent".asInstanceOf[targetValueOuterExtent]
-  @scala.inline
-  def targetValueOutline: targetValueOutline = "targetValueOutline".asInstanceOf[targetValueOutline]
-  @scala.inline
-  def targetValueStrokeThickness: targetValueStrokeThickness = "targetValueStrokeThickness".asInstanceOf[targetValueStrokeThickness]
-  @scala.inline
-  def targetValueToolTipTemplate: targetValueToolTipTemplate = "targetValueToolTipTemplate".asInstanceOf[targetValueToolTipTemplate]
-  @scala.inline
-  def templatingEngine: templatingEngine = "templatingEngine".asInstanceOf[templatingEngine]
-  @scala.inline
-  def temporaryUrl: temporaryUrl = "temporaryUrl".asInstanceOf[temporaryUrl]
-  @scala.inline
-  def tetragramMarkerTemplate: tetragramMarkerTemplate = "tetragramMarkerTemplate".asInstanceOf[tetragramMarkerTemplate]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def textAlign: textAlign = "textAlign".asInstanceOf[textAlign]
-  @scala.inline
-  def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
-  @scala.inline
-  def textColor: textColor = "textColor".asInstanceOf[textColor]
-  @scala.inline
-  def textInput: textInput = "textInput".asInstanceOf[textInput]
-  @scala.inline
-  def textKey: textKey = "textKey".asInstanceOf[textKey]
-  @scala.inline
-  def textMode: textMode = "textMode".asInstanceOf[textMode]
-  @scala.inline
-  def textStyle: textStyle = "textStyle".asInstanceOf[textStyle]
-  @scala.inline
-  def theme: theme = "theme".asInstanceOf[theme]
-  @scala.inline
-  def thickness: thickness = "thickness".asInstanceOf[thickness]
-  @scala.inline
-  def threshold: threshold = "threshold".asInstanceOf[threshold]
-  @scala.inline
-  def thumbCalloutTextStyle: thumbCalloutTextStyle = "thumbCalloutTextStyle".asInstanceOf[thumbCalloutTextStyle]
-  @scala.inline
-  def thumbDragEnd: thumbDragEnd = "thumbDragEnd".asInstanceOf[thumbDragEnd]
-  @scala.inline
-  def thumbDragMove: thumbDragMove = "thumbDragMove".asInstanceOf[thumbDragMove]
-  @scala.inline
-  def thumbDragStart: thumbDragStart = "thumbDragStart".asInstanceOf[thumbDragStart]
-  @scala.inline
-  def tickBrush: tickBrush = "tickBrush".asInstanceOf[tickBrush]
-  @scala.inline
-  def tickEndExtent: tickEndExtent = "tickEndExtent".asInstanceOf[tickEndExtent]
-  @scala.inline
-  def tickStartExtent: tickStartExtent = "tickStartExtent".asInstanceOf[tickStartExtent]
-  @scala.inline
-  def tickStrokeThickness: tickStrokeThickness = "tickStrokeThickness".asInstanceOf[tickStrokeThickness]
-  @scala.inline
-  def ticksPostInitial: ticksPostInitial = "ticksPostInitial".asInstanceOf[ticksPostInitial]
-  @scala.inline
-  def ticksPreTerminal: ticksPreTerminal = "ticksPreTerminal".asInstanceOf[ticksPreTerminal]
-  @scala.inline
-  def tileMaximized: tileMaximized = "tileMaximized".asInstanceOf[tileMaximized]
-  @scala.inline
-  def tileMaximizing: tileMaximizing = "tileMaximizing".asInstanceOf[tileMaximizing]
-  @scala.inline
-  def tileMinimized: tileMinimized = "tileMinimized".asInstanceOf[tileMinimized]
-  @scala.inline
-  def tileMinimizing: tileMinimizing = "tileMinimizing".asInstanceOf[tileMinimizing]
-  @scala.inline
-  def tileRendered: tileRendered = "tileRendered".asInstanceOf[tileRendered]
-  @scala.inline
-  def tileRendering: tileRendering = "tileRendering".asInstanceOf[tileRendering]
-  @scala.inline
-  def timeDisplayFormat: timeDisplayFormat = "timeDisplayFormat".asInstanceOf[timeDisplayFormat]
-  @scala.inline
-  def timeInputFormat: timeInputFormat = "timeInputFormat".asInstanceOf[timeInputFormat]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def titleAlignment: titleAlignment = "titleAlignment".asInstanceOf[titleAlignment]
-  @scala.inline
-  def titleBottomMargin: titleBottomMargin = "titleBottomMargin".asInstanceOf[titleBottomMargin]
-  @scala.inline
-  def titleHorizontalAlignment: titleHorizontalAlignment = "titleHorizontalAlignment".asInstanceOf[titleHorizontalAlignment]
-  @scala.inline
-  def titleLeftMargin: titleLeftMargin = "titleLeftMargin".asInstanceOf[titleLeftMargin]
-  @scala.inline
-  def titleRightMargin: titleRightMargin = "titleRightMargin".asInstanceOf[titleRightMargin]
-  @scala.inline
-  def titleTextColor: titleTextColor = "titleTextColor".asInstanceOf[titleTextColor]
-  @scala.inline
-  def titleTextStyle: titleTextStyle = "titleTextStyle".asInstanceOf[titleTextStyle]
-  @scala.inline
-  def titleTopMargin: titleTopMargin = "titleTopMargin".asInstanceOf[titleTopMargin]
-  @scala.inline
-  def toLevel: toLevel = "toLevel".asInstanceOf[toLevel]
-  @scala.inline
-  def toLower: toLower = "toLower".asInstanceOf[toLower]
-  @scala.inline
-  def toUpper: toUpper = "toUpper".asInstanceOf[toUpper]
-  @scala.inline
-  def todayButton: todayButton = "todayButton".asInstanceOf[todayButton]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def toggleCheckState: toggleCheckState = "toggleCheckState".asInstanceOf[toggleCheckState]
-  @scala.inline
-  def toggleCheckStateById: toggleCheckStateById = "toggleCheckStateById".asInstanceOf[toggleCheckStateById]
-  @scala.inline
-  def toggleCheckstate_ : toggleCheckstate_ = "toggleCheckstate".asInstanceOf[toggleCheckstate_]
-  @scala.inline
-  def toggleDropDown: toggleDropDown = "toggleDropDown".asInstanceOf[toggleDropDown]
-  @scala.inline
-  def toggleFilterRowByFeatureChooser: toggleFilterRowByFeatureChooser = "toggleFilterRowByFeatureChooser".asInstanceOf[toggleFilterRowByFeatureChooser]
-  @scala.inline
-  def toggleGroup: toggleGroup = "toggleGroup".asInstanceOf[toggleGroup]
-  @scala.inline
-  def togglePlay: togglePlay = "togglePlay".asInstanceOf[togglePlay]
-  @scala.inline
-  def toggleRow: toggleRow = "toggleRow".asInstanceOf[toggleRow]
-  @scala.inline
-  def toggleSelection: toggleSelection = "toggleSelection".asInstanceOf[toggleSelection]
-  @scala.inline
-  def toggleSummariesRows: toggleSummariesRows = "toggleSummariesRows".asInstanceOf[toggleSummariesRows]
-  @scala.inline
-  def toolTipType: toolTipType = "toolTipType".asInstanceOf[toolTipType]
-  @scala.inline
-  def toolbarButtonClick: toolbarButtonClick = "toolbarButtonClick".asInstanceOf[toolbarButtonClick]
-  @scala.inline
-  def toolbarCollapsed: toolbarCollapsed = "toolbarCollapsed".asInstanceOf[toolbarCollapsed]
-  @scala.inline
-  def toolbarCollapsing: toolbarCollapsing = "toolbarCollapsing".asInstanceOf[toolbarCollapsing]
-  @scala.inline
-  def toolbarComboOpening: toolbarComboOpening = "toolbarComboOpening".asInstanceOf[toolbarComboOpening]
-  @scala.inline
-  def toolbarComboSelected: toolbarComboSelected = "toolbarComboSelected".asInstanceOf[toolbarComboSelected]
-  @scala.inline
-  def toolbarCustomItemClick: toolbarCustomItemClick = "toolbarCustomItemClick".asInstanceOf[toolbarCustomItemClick]
-  @scala.inline
-  def toolbarExpanded: toolbarExpanded = "toolbarExpanded".asInstanceOf[toolbarExpanded]
-  @scala.inline
-  def toolbarExpanding: toolbarExpanding = "toolbarExpanding".asInstanceOf[toolbarExpanding]
-  @scala.inline
-  def toolbarHeight: toolbarHeight = "toolbarHeight".asInstanceOf[toolbarHeight]
-  @scala.inline
-  def toolbarSettings: toolbarSettings = "toolbarSettings".asInstanceOf[toolbarSettings]
-  @scala.inline
-  def toolbarTemplate: toolbarTemplate = "toolbarTemplate".asInstanceOf[toolbarTemplate]
-  @scala.inline
-  def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
-  @scala.inline
-  def tooltipHiding: tooltipHiding = "tooltipHiding".asInstanceOf[tooltipHiding]
-  @scala.inline
-  def tooltipShowing: tooltipShowing = "tooltipShowing".asInstanceOf[tooltipShowing]
-  @scala.inline
-  def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
-  @scala.inline
-  def tooltipTemplate: tooltipTemplate = "tooltipTemplate".asInstanceOf[tooltipTemplate]
-  @scala.inline
-  def tooltipTemplates: tooltipTemplates = "tooltipTemplates".asInstanceOf[tooltipTemplates]
-  @scala.inline
-  def topMargin: topMargin = "topMargin".asInstanceOf[topMargin]
-  @scala.inline
-  def totalRecordsCount: totalRecordsCount = "totalRecordsCount".asInstanceOf[totalRecordsCount]
-  @scala.inline
-  def touchDragSelect: touchDragSelect = "touchDragSelect".asInstanceOf[touchDragSelect]
-  @scala.inline
-  def trackEndInset: trackEndInset = "trackEndInset".asInstanceOf[trackEndInset]
-  @scala.inline
-  def trackFocus: trackFocus = "trackFocus".asInstanceOf[trackFocus]
-  @scala.inline
-  def trackStartInset: trackStartInset = "trackStartInset".asInstanceOf[trackStartInset]
-  @scala.inline
-  def transactionLog: transactionLog = "transactionLog".asInstanceOf[transactionLog]
-  @scala.inline
-  def transactionsAsString: transactionsAsString = "transactionsAsString".asInstanceOf[transactionsAsString]
-  @scala.inline
-  def transitionDuration: transitionDuration = "transitionDuration".asInstanceOf[transitionDuration]
-  @scala.inline
-  def transitionEasingFunction: transitionEasingFunction = "transitionEasingFunction".asInstanceOf[transitionEasingFunction]
-  @scala.inline
-  def transitionInDuration: transitionInDuration = "transitionInDuration".asInstanceOf[transitionInDuration]
-  @scala.inline
-  def transitionInEasingFunction: transitionInEasingFunction = "transitionInEasingFunction".asInstanceOf[transitionInEasingFunction]
-  @scala.inline
-  def transitionInMode: transitionInMode = "transitionInMode".asInstanceOf[transitionInMode]
-  @scala.inline
-  def transitionInSpeedType: transitionInSpeedType = "transitionInSpeedType".asInstanceOf[transitionInSpeedType]
-  @scala.inline
-  def transitionProgress: transitionProgress = "transitionProgress".asInstanceOf[transitionProgress]
-  @scala.inline
-  def treeRowHeaderIndentation: treeRowHeaderIndentation = "treeRowHeaderIndentation".asInstanceOf[treeRowHeaderIndentation]
-  @scala.inline
-  def trendLineBrush: trendLineBrush = "trendLineBrush".asInstanceOf[trendLineBrush]
-  @scala.inline
-  def trendLineBrushes: trendLineBrushes = "trendLineBrushes".asInstanceOf[trendLineBrushes]
-  @scala.inline
-  def trendLinePeriod: trendLinePeriod = "trendLinePeriod".asInstanceOf[trendLinePeriod]
-  @scala.inline
-  def trendLineThickness: trendLineThickness = "trendLineThickness".asInstanceOf[trendLineThickness]
-  @scala.inline
-  def trendLineType: trendLineType = "trendLineType".asInstanceOf[trendLineType]
-  @scala.inline
-  def trendLineTypePickerTemplate: trendLineTypePickerTemplate = "trendLineTypePickerTemplate".asInstanceOf[trendLineTypePickerTemplate]
-  @scala.inline
-  def triangleMarkerTemplate: triangleMarkerTemplate = "triangleMarkerTemplate".asInstanceOf[triangleMarkerTemplate]
-  @scala.inline
-  def triangulationDataSource: triangulationDataSource = "triangulationDataSource".asInstanceOf[triangulationDataSource]
-  @scala.inline
-  def triangulationStatusChanged: triangulationStatusChanged = "triangulationStatusChanged".asInstanceOf[triangulationStatusChanged]
-  @scala.inline
-  def tupleMemberCollapsed: tupleMemberCollapsed = "tupleMemberCollapsed".asInstanceOf[tupleMemberCollapsed]
-  @scala.inline
-  def tupleMemberCollapsing: tupleMemberCollapsing = "tupleMemberCollapsing".asInstanceOf[tupleMemberCollapsing]
-  @scala.inline
-  def tupleMemberExpanded: tupleMemberExpanded = "tupleMemberExpanded".asInstanceOf[tupleMemberExpanded]
-  @scala.inline
-  def tupleMemberExpanding: tupleMemberExpanding = "tupleMemberExpanding".asInstanceOf[tupleMemberExpanding]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
-  @scala.inline
-  def typicalBasedOn: typicalBasedOn = "typicalBasedOn".asInstanceOf[typicalBasedOn]
-  @scala.inline
-  def uncheckNode: uncheckNode = "uncheckNode".asInstanceOf[uncheckNode]
-  @scala.inline
-  def uncheckedNodes: uncheckedNodes = "uncheckedNodes".asInstanceOf[uncheckedNodes]
-  @scala.inline
-  def uncheckedRows: uncheckedRows = "uncheckedRows".asInstanceOf[uncheckedRows]
-  @scala.inline
-  def undo: undo = "undo".asInstanceOf[undo]
-  @scala.inline
-  def unfilledCharsPrompt: unfilledCharsPrompt = "unfilledCharsPrompt".asInstanceOf[unfilledCharsPrompt]
-  @scala.inline
-  def unfixAllColumns: unfixAllColumns = "unfixAllColumns".asInstanceOf[unfixAllColumns]
-  @scala.inline
-  def unfixColumn: unfixColumn = "unfixColumn".asInstanceOf[unfixColumn]
-  @scala.inline
-  def unfixDataSkippedColumns: unfixDataSkippedColumns = "unfixDataSkippedColumns".asInstanceOf[unfixDataSkippedColumns]
-  @scala.inline
-  def unfixNonDataColumns: unfixNonDataColumns = "unfixNonDataColumns".asInstanceOf[unfixNonDataColumns]
-  @scala.inline
-  def ungroupAll: ungroupAll = "ungroupAll".asInstanceOf[ungroupAll]
-  @scala.inline
-  def ungroupByColumn: ungroupByColumn = "ungroupByColumn".asInstanceOf[ungroupByColumn]
-  @scala.inline
-  def unknownValuePlotting: unknownValuePlotting = "unknownValuePlotting".asInstanceOf[unknownValuePlotting]
-  @scala.inline
-  def unmergeColumn: unmergeColumn = "unmergeColumn".asInstanceOf[unmergeColumn]
-  @scala.inline
-  def unmergeRow: unmergeRow = "unmergeRow".asInstanceOf[unmergeRow]
-  @scala.inline
-  def unpin: unpin = "unpin".asInstanceOf[unpin]
-  @scala.inline
-  def unpinButtonTitle: unpinButtonTitle = "unpinButtonTitle".asInstanceOf[unpinButtonTitle]
-  @scala.inline
-  def unscaleValue: unscaleValue = "unscaleValue".asInstanceOf[unscaleValue]
-  @scala.inline
-  def unselectedSliceStyle: unselectedSliceStyle = "unselectedSliceStyle".asInstanceOf[unselectedSliceStyle]
-  @scala.inline
-  def unsortColumn: unsortColumn = "unsortColumn".asInstanceOf[unsortColumn]
-  @scala.inline
-  def unsortedColumnTooltip: unsortedColumnTooltip = "unsortedColumnTooltip".asInstanceOf[unsortedColumnTooltip]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def updateField: updateField = "updateField".asInstanceOf[updateField]
-  @scala.inline
-  def updateGrid: updateGrid = "updateGrid".asInstanceOf[updateGrid]
-  @scala.inline
-  def updateRange: updateRange = "updateRange".asInstanceOf[updateRange]
-  @scala.inline
-  def updateRow: updateRow = "updateRow".asInstanceOf[updateRow]
-  @scala.inline
-  def updateSeries: updateSeries = "updateSeries".asInstanceOf[updateSeries]
-  @scala.inline
-  def updateTooltip: updateTooltip = "updateTooltip".asInstanceOf[updateTooltip]
-  @scala.inline
-  def updateUrl: updateUrl = "updateUrl".asInstanceOf[updateUrl]
-  @scala.inline
-  def uploadUrl: uploadUrl = "uploadUrl".asInstanceOf[uploadUrl]
-  @scala.inline
-  def useBezierCurve: useBezierCurve = "useBezierCurve".asInstanceOf[useBezierCurve]
-  @scala.inline
-  def useGridColumnFormatter: useGridColumnFormatter = "useGridColumnFormatter".asInstanceOf[useGridColumnFormatter]
-  @scala.inline
-  def useOuterLabelsForLegend: useOuterLabelsForLegend = "useOuterLabelsForLegend".asInstanceOf[useOuterLabelsForLegend]
-  @scala.inline
-  def useSingleRequest: useSingleRequest = "useSingleRequest".asInstanceOf[useSingleRequest]
-  @scala.inline
-  def useTiledZooming: useTiledZooming = "useTiledZooming".asInstanceOf[useTiledZooming]
-  @scala.inline
-  def useUnselectedStyle: useUnselectedStyle = "useUnselectedStyle".asInstanceOf[useUnselectedStyle]
-  @scala.inline
-  def userPromptDisplaying: userPromptDisplaying = "userPromptDisplaying".asInstanceOf[userPromptDisplaying]
-  @scala.inline
-  def validate: validate = "validate".asInstanceOf[validate]
-  @scala.inline
-  def validated: validated = "validated".asInstanceOf[validated]
-  @scala.inline
-  def validating: validating = "validating".asInstanceOf[validating]
-  @scala.inline
-  def validation: validation = "validation".asInstanceOf[validation]
-  @scala.inline
-  def validationInputMessagePosition: validationInputMessagePosition = "validationInputMessagePosition".asInstanceOf[validationInputMessagePosition]
-  @scala.inline
-  def validator: validator = "validator".asInstanceOf[validator]
-  @scala.inline
-  def validatorOptions: validatorOptions = "validatorOptions".asInstanceOf[validatorOptions]
-  @scala.inline
-  def value: value = "value".asInstanceOf[value]
-  @scala.inline
-  def valueAsPercent: valueAsPercent = "valueAsPercent".asInstanceOf[valueAsPercent]
-  @scala.inline
-  def valueBrush: valueBrush = "valueBrush".asInstanceOf[valueBrush]
-  @scala.inline
-  def valueChange: valueChange = "valueChange".asInstanceOf[valueChange]
-  @scala.inline
-  def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
-  @scala.inline
-  def valueChanging: valueChanging = "valueChanging".asInstanceOf[valueChanging]
-  @scala.inline
-  def valueHover: valueHover = "valueHover".asInstanceOf[valueHover]
-  @scala.inline
-  def valueInnerExtent: valueInnerExtent = "valueInnerExtent".asInstanceOf[valueInnerExtent]
-  @scala.inline
-  def valueInput: valueInput = "valueInput".asInstanceOf[valueInput]
-  @scala.inline
-  def valueKey: valueKey = "valueKey".asInstanceOf[valueKey]
-  @scala.inline
-  def valueMemberPath: valueMemberPath = "valueMemberPath".asInstanceOf[valueMemberPath]
-  @scala.inline
-  def valueName: valueName = "valueName".asInstanceOf[valueName]
-  @scala.inline
-  def valueOuterExtent: valueOuterExtent = "valueOuterExtent".asInstanceOf[valueOuterExtent]
-  @scala.inline
-  def valueOutline: valueOutline = "valueOutline".asInstanceOf[valueOutline]
-  @scala.inline
-  def valueRange: valueRange = "valueRange".asInstanceOf[valueRange]
-  @scala.inline
-  def valueStrokeThickness: valueStrokeThickness = "valueStrokeThickness".asInstanceOf[valueStrokeThickness]
-  @scala.inline
-  def valueToolTipTemplate: valueToolTipTemplate = "valueToolTipTemplate".asInstanceOf[valueToolTipTemplate]
-  @scala.inline
-  def valuesColumnWidth: valuesColumnWidth = "valuesColumnWidth".asInstanceOf[valuesColumnWidth]
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
-  @scala.inline
-  def verticalAxisBrush: verticalAxisBrush = "verticalAxisBrush".asInstanceOf[verticalAxisBrush]
-  @scala.inline
-  def verticalAxisLabel: verticalAxisLabel = "verticalAxisLabel".asInstanceOf[verticalAxisLabel]
-  @scala.inline
-  def verticalAxisVisibility: verticalAxisVisibility = "verticalAxisVisibility".asInstanceOf[verticalAxisVisibility]
-  @scala.inline
-  def verticalZoomable: verticalZoomable = "verticalZoomable".asInstanceOf[verticalZoomable]
-  @scala.inline
-  def viewChanged: viewChanged = "viewChanged".asInstanceOf[viewChanged]
-  @scala.inline
-  def viewChanging: viewChanging = "viewChanging".asInstanceOf[viewChanging]
-  @scala.inline
-  def viewMode: viewMode = "viewMode".asInstanceOf[viewMode]
-  @scala.inline
-  def views: views = "views".asInstanceOf[views]
-  @scala.inline
-  def virtualScrollTo: virtualScrollTo = "virtualScrollTo".asInstanceOf[virtualScrollTo]
-  @scala.inline
-  def virtualization: virtualization = "virtualization".asInstanceOf[virtualization]
-  @scala.inline
-  def virtualizationMode: virtualizationMode = "virtualizationMode".asInstanceOf[virtualizationMode]
-  @scala.inline
-  def virtualizationMouseWheelStep: virtualizationMouseWheelStep = "virtualizationMouseWheelStep".asInstanceOf[virtualizationMouseWheelStep]
-  @scala.inline
-  def visibility: visibility = "visibility".asInstanceOf[visibility]
-  @scala.inline
-  def visibleItemsCount: visibleItemsCount = "visibleItemsCount".asInstanceOf[visibleItemsCount]
-  @scala.inline
-  def visiblePageCount: visiblePageCount = "visiblePageCount".asInstanceOf[visiblePageCount]
-  @scala.inline
-  def volume: volume = "volume".asInstanceOf[volume]
-  @scala.inline
-  def volumeAutohideDelay: volumeAutohideDelay = "volumeAutohideDelay".asInstanceOf[volumeAutohideDelay]
-  @scala.inline
-  def volumeBrushes: volumeBrushes = "volumeBrushes".asInstanceOf[volumeBrushes]
-  @scala.inline
-  def volumeOutlines: volumeOutlines = "volumeOutlines".asInstanceOf[volumeOutlines]
-  @scala.inline
-  def volumeThickness: volumeThickness = "volumeThickness".asInstanceOf[volumeThickness]
-  @scala.inline
-  def volumeType: volumeType = "volumeType".asInstanceOf[volumeType]
-  @scala.inline
-  def volumeTypePickerTemplate: volumeTypePickerTemplate = "volumeTypePickerTemplate".asInstanceOf[volumeTypePickerTemplate]
-  @scala.inline
-  def voteCount: voteCount = "voteCount".asInstanceOf[voteCount]
-  @scala.inline
-  def voteHeight: voteHeight = "voteHeight".asInstanceOf[voteHeight]
-  @scala.inline
-  def voteWidth: voteWidth = "voteWidth".asInstanceOf[voteWidth]
-  @scala.inline
-  def waiting: waiting = "waiting".asInstanceOf[waiting]
-  @scala.inline
-  def wedgePaddingInDegrees: wedgePaddingInDegrees = "wedgePaddingInDegrees".asInstanceOf[wedgePaddingInDegrees]
-  @scala.inline
-  def weekChanged: weekChanged = "weekChanged".asInstanceOf[weekChanged]
-  @scala.inline
-  def weekChanging: weekChanging = "weekChanging".asInstanceOf[weekChanging]
-  @scala.inline
-  def weekViewSettings: weekViewSettings = "weekViewSettings".asInstanceOf[weekViewSettings]
-  @scala.inline
-  def wheelStep: wheelStep = "wheelStep".asInstanceOf[wheelStep]
-  @scala.inline
-  def widget: widget = "widget".asInstanceOf[widget]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
-  @scala.inline
-  def widthToHeightRatio: widthToHeightRatio = "widthToHeightRatio".asInstanceOf[widthToHeightRatio]
-  @scala.inline
-  def windowDragEnded: windowDragEnded = "windowDragEnded".asInstanceOf[windowDragEnded]
-  @scala.inline
-  def windowDragEnding: windowDragEnding = "windowDragEnding".asInstanceOf[windowDragEnding]
-  @scala.inline
-  def windowDragStarted: windowDragStarted = "windowDragStarted".asInstanceOf[windowDragStarted]
-  @scala.inline
-  def windowDragStarting: windowDragStarting = "windowDragStarting".asInstanceOf[windowDragStarting]
-  @scala.inline
-  def windowDragging: windowDragging = "windowDragging".asInstanceOf[windowDragging]
-  @scala.inline
-  def windowPanDuration: windowPanDuration = "windowPanDuration".asInstanceOf[windowPanDuration]
-  @scala.inline
-  def windowPositionHorizontal: windowPositionHorizontal = "windowPositionHorizontal".asInstanceOf[windowPositionHorizontal]
-  @scala.inline
-  def windowPositionVertical: windowPositionVertical = "windowPositionVertical".asInstanceOf[windowPositionVertical]
-  @scala.inline
-  def windowRect: windowRect = "windowRect".asInstanceOf[windowRect]
-  @scala.inline
-  def windowRectChanged: windowRectChanged = "windowRectChanged".asInstanceOf[windowRectChanged]
-  @scala.inline
-  def windowRectMinWidth: windowRectMinWidth = "windowRectMinWidth".asInstanceOf[windowRectMinWidth]
-  @scala.inline
-  def windowResized: windowResized = "windowResized".asInstanceOf[windowResized]
-  @scala.inline
-  def windowResizing: windowResizing = "windowResizing".asInstanceOf[windowResizing]
-  @scala.inline
-  def windowResponse: windowResponse = "windowResponse".asInstanceOf[windowResponse]
-  @scala.inline
-  def windowScale: windowScale = "windowScale".asInstanceOf[windowScale]
-  @scala.inline
-  def windowScaleHorizontal: windowScaleHorizontal = "windowScaleHorizontal".asInstanceOf[windowScaleHorizontal]
-  @scala.inline
-  def windowScaleVertical: windowScaleVertical = "windowScaleVertical".asInstanceOf[windowScaleVertical]
-  @scala.inline
-  def windowWidthToRenderVertically: windowWidthToRenderVertically = "windowWidthToRenderVertically".asInstanceOf[windowWidthToRenderVertically]
-  @scala.inline
-  def workbook: workbook = "workbook".asInstanceOf[workbook]
-  @scala.inline
-  def workbookDirtied: workbookDirtied = "workbookDirtied".asInstanceOf[workbookDirtied]
-  @scala.inline
-  def workspaceResized: workspaceResized = "workspaceResized".asInstanceOf[workspaceResized]
-  @scala.inline
-  def wrapAround: wrapAround = "wrapAround".asInstanceOf[wrapAround]
-  @scala.inline
-  def xAxisAbbreviateLargeNumbers: xAxisAbbreviateLargeNumbers = "xAxisAbbreviateLargeNumbers".asInstanceOf[xAxisAbbreviateLargeNumbers]
-  @scala.inline
-  def xAxisExtent: xAxisExtent = "xAxisExtent".asInstanceOf[xAxisExtent]
-  @scala.inline
-  def xAxisFormatLabel: xAxisFormatLabel = "xAxisFormatLabel".asInstanceOf[xAxisFormatLabel]
-  @scala.inline
-  def xAxisGap: xAxisGap = "xAxisGap".asInstanceOf[xAxisGap]
-  @scala.inline
-  def xAxisInterval: xAxisInterval = "xAxisInterval".asInstanceOf[xAxisInterval]
-  @scala.inline
-  def xAxisInverted: xAxisInverted = "xAxisInverted".asInstanceOf[xAxisInverted]
-  @scala.inline
-  def xAxisIsLogarithmic: xAxisIsLogarithmic = "xAxisIsLogarithmic".asInstanceOf[xAxisIsLogarithmic]
-  @scala.inline
-  def xAxisLabel: xAxisLabel = "xAxisLabel".asInstanceOf[xAxisLabel]
-  @scala.inline
-  def xAxisLabelAngle: xAxisLabelAngle = "xAxisLabelAngle".asInstanceOf[xAxisLabelAngle]
-  @scala.inline
-  def xAxisLabelBottomMargin: xAxisLabelBottomMargin = "xAxisLabelBottomMargin".asInstanceOf[xAxisLabelBottomMargin]
-  @scala.inline
-  def xAxisLabelHorizontalAlignment: xAxisLabelHorizontalAlignment = "xAxisLabelHorizontalAlignment".asInstanceOf[xAxisLabelHorizontalAlignment]
-  @scala.inline
-  def xAxisLabelLeftMargin: xAxisLabelLeftMargin = "xAxisLabelLeftMargin".asInstanceOf[xAxisLabelLeftMargin]
-  @scala.inline
-  def xAxisLabelRightMargin: xAxisLabelRightMargin = "xAxisLabelRightMargin".asInstanceOf[xAxisLabelRightMargin]
-  @scala.inline
-  def xAxisLabelTextColor: xAxisLabelTextColor = "xAxisLabelTextColor".asInstanceOf[xAxisLabelTextColor]
-  @scala.inline
-  def xAxisLabelTextStyle: xAxisLabelTextStyle = "xAxisLabelTextStyle".asInstanceOf[xAxisLabelTextStyle]
-  @scala.inline
-  def xAxisLabelTopMargin: xAxisLabelTopMargin = "xAxisLabelTopMargin".asInstanceOf[xAxisLabelTopMargin]
-  @scala.inline
-  def xAxisLabelVerticalAlignment: xAxisLabelVerticalAlignment = "xAxisLabelVerticalAlignment".asInstanceOf[xAxisLabelVerticalAlignment]
-  @scala.inline
-  def xAxisLabelVisibility: xAxisLabelVisibility = "xAxisLabelVisibility".asInstanceOf[xAxisLabelVisibility]
-  @scala.inline
-  def xAxisLogarithmBase: xAxisLogarithmBase = "xAxisLogarithmBase".asInstanceOf[xAxisLogarithmBase]
-  @scala.inline
-  def xAxisMajorStroke: xAxisMajorStroke = "xAxisMajorStroke".asInstanceOf[xAxisMajorStroke]
-  @scala.inline
-  def xAxisMajorStrokeThickness: xAxisMajorStrokeThickness = "xAxisMajorStrokeThickness".asInstanceOf[xAxisMajorStrokeThickness]
-  @scala.inline
-  def xAxisMaximumValue: xAxisMaximumValue = "xAxisMaximumValue".asInstanceOf[xAxisMaximumValue]
-  @scala.inline
-  def xAxisMinimumValue: xAxisMinimumValue = "xAxisMinimumValue".asInstanceOf[xAxisMinimumValue]
-  @scala.inline
-  def xAxisMinorInterval: xAxisMinorInterval = "xAxisMinorInterval".asInstanceOf[xAxisMinorInterval]
-  @scala.inline
-  def xAxisMinorStroke: xAxisMinorStroke = "xAxisMinorStroke".asInstanceOf[xAxisMinorStroke]
-  @scala.inline
-  def xAxisMinorStrokeThickness: xAxisMinorStrokeThickness = "xAxisMinorStrokeThickness".asInstanceOf[xAxisMinorStrokeThickness]
-  @scala.inline
-  def xAxisMode: xAxisMode = "xAxisMode".asInstanceOf[xAxisMode]
-  @scala.inline
-  def xAxisOverlap: xAxisOverlap = "xAxisOverlap".asInstanceOf[xAxisOverlap]
-  @scala.inline
-  def xAxisStrip: xAxisStrip = "xAxisStrip".asInstanceOf[xAxisStrip]
-  @scala.inline
-  def xAxisStroke: xAxisStroke = "xAxisStroke".asInstanceOf[xAxisStroke]
-  @scala.inline
-  def xAxisStrokeThickness: xAxisStrokeThickness = "xAxisStrokeThickness".asInstanceOf[xAxisStrokeThickness]
-  @scala.inline
-  def xAxisTickLength: xAxisTickLength = "xAxisTickLength".asInstanceOf[xAxisTickLength]
-  @scala.inline
-  def xAxisTickStroke: xAxisTickStroke = "xAxisTickStroke".asInstanceOf[xAxisTickStroke]
-  @scala.inline
-  def xAxisTickStrokeThickness: xAxisTickStrokeThickness = "xAxisTickStrokeThickness".asInstanceOf[xAxisTickStrokeThickness]
-  @scala.inline
-  def xAxisTitle: xAxisTitle = "xAxisTitle".asInstanceOf[xAxisTitle]
-  @scala.inline
-  def xAxisTitleAlignment: xAxisTitleAlignment = "xAxisTitleAlignment".asInstanceOf[xAxisTitleAlignment]
-  @scala.inline
-  def xAxisTitleAngle: xAxisTitleAngle = "xAxisTitleAngle".asInstanceOf[xAxisTitleAngle]
-  @scala.inline
-  def xAxisTitleBottomMargin: xAxisTitleBottomMargin = "xAxisTitleBottomMargin".asInstanceOf[xAxisTitleBottomMargin]
-  @scala.inline
-  def xAxisTitleLeftMargin: xAxisTitleLeftMargin = "xAxisTitleLeftMargin".asInstanceOf[xAxisTitleLeftMargin]
-  @scala.inline
-  def xAxisTitleMargin: xAxisTitleMargin = "xAxisTitleMargin".asInstanceOf[xAxisTitleMargin]
-  @scala.inline
-  def xAxisTitleRightMargin: xAxisTitleRightMargin = "xAxisTitleRightMargin".asInstanceOf[xAxisTitleRightMargin]
-  @scala.inline
-  def xAxisTitleTextColor: xAxisTitleTextColor = "xAxisTitleTextColor".asInstanceOf[xAxisTitleTextColor]
-  @scala.inline
-  def xAxisTitleTextStyle: xAxisTitleTextStyle = "xAxisTitleTextStyle".asInstanceOf[xAxisTitleTextStyle]
-  @scala.inline
-  def xAxisTitleTopMargin: xAxisTitleTopMargin = "xAxisTitleTopMargin".asInstanceOf[xAxisTitleTopMargin]
-  @scala.inline
-  def xDimension: xDimension = "xDimension".asInstanceOf[xDimension]
-  @scala.inline
-  def yAxisAbbreviateLargeNumbers: yAxisAbbreviateLargeNumbers = "yAxisAbbreviateLargeNumbers".asInstanceOf[yAxisAbbreviateLargeNumbers]
-  @scala.inline
-  def yAxisExtent: yAxisExtent = "yAxisExtent".asInstanceOf[yAxisExtent]
-  @scala.inline
-  def yAxisFormatLabel: yAxisFormatLabel = "yAxisFormatLabel".asInstanceOf[yAxisFormatLabel]
-  @scala.inline
-  def yAxisInterval: yAxisInterval = "yAxisInterval".asInstanceOf[yAxisInterval]
-  @scala.inline
-  def yAxisInverted: yAxisInverted = "yAxisInverted".asInstanceOf[yAxisInverted]
-  @scala.inline
-  def yAxisIsLogarithmic: yAxisIsLogarithmic = "yAxisIsLogarithmic".asInstanceOf[yAxisIsLogarithmic]
-  @scala.inline
-  def yAxisLabel: yAxisLabel = "yAxisLabel".asInstanceOf[yAxisLabel]
-  @scala.inline
-  def yAxisLabelAngle: yAxisLabelAngle = "yAxisLabelAngle".asInstanceOf[yAxisLabelAngle]
-  @scala.inline
-  def yAxisLabelBottomMargin: yAxisLabelBottomMargin = "yAxisLabelBottomMargin".asInstanceOf[yAxisLabelBottomMargin]
-  @scala.inline
-  def yAxisLabelHorizontalAlignment: yAxisLabelHorizontalAlignment = "yAxisLabelHorizontalAlignment".asInstanceOf[yAxisLabelHorizontalAlignment]
-  @scala.inline
-  def yAxisLabelLeftMargin: yAxisLabelLeftMargin = "yAxisLabelLeftMargin".asInstanceOf[yAxisLabelLeftMargin]
-  @scala.inline
-  def yAxisLabelLocation: yAxisLabelLocation = "yAxisLabelLocation".asInstanceOf[yAxisLabelLocation]
-  @scala.inline
-  def yAxisLabelRightMargin: yAxisLabelRightMargin = "yAxisLabelRightMargin".asInstanceOf[yAxisLabelRightMargin]
-  @scala.inline
-  def yAxisLabelTextColor: yAxisLabelTextColor = "yAxisLabelTextColor".asInstanceOf[yAxisLabelTextColor]
-  @scala.inline
-  def yAxisLabelTextStyle: yAxisLabelTextStyle = "yAxisLabelTextStyle".asInstanceOf[yAxisLabelTextStyle]
-  @scala.inline
-  def yAxisLabelTopMargin: yAxisLabelTopMargin = "yAxisLabelTopMargin".asInstanceOf[yAxisLabelTopMargin]
-  @scala.inline
-  def yAxisLabelVerticalAlignment: yAxisLabelVerticalAlignment = "yAxisLabelVerticalAlignment".asInstanceOf[yAxisLabelVerticalAlignment]
-  @scala.inline
-  def yAxisLabelVisibility: yAxisLabelVisibility = "yAxisLabelVisibility".asInstanceOf[yAxisLabelVisibility]
-  @scala.inline
-  def yAxisLogarithmBase: yAxisLogarithmBase = "yAxisLogarithmBase".asInstanceOf[yAxisLogarithmBase]
-  @scala.inline
-  def yAxisMajorStroke: yAxisMajorStroke = "yAxisMajorStroke".asInstanceOf[yAxisMajorStroke]
-  @scala.inline
-  def yAxisMajorStrokeThickness: yAxisMajorStrokeThickness = "yAxisMajorStrokeThickness".asInstanceOf[yAxisMajorStrokeThickness]
-  @scala.inline
-  def yAxisMaximumValue: yAxisMaximumValue = "yAxisMaximumValue".asInstanceOf[yAxisMaximumValue]
-  @scala.inline
-  def yAxisMinimumValue: yAxisMinimumValue = "yAxisMinimumValue".asInstanceOf[yAxisMinimumValue]
-  @scala.inline
-  def yAxisMinorInterval: yAxisMinorInterval = "yAxisMinorInterval".asInstanceOf[yAxisMinorInterval]
-  @scala.inline
-  def yAxisMinorStroke: yAxisMinorStroke = "yAxisMinorStroke".asInstanceOf[yAxisMinorStroke]
-  @scala.inline
-  def yAxisMinorStrokeThickness: yAxisMinorStrokeThickness = "yAxisMinorStrokeThickness".asInstanceOf[yAxisMinorStrokeThickness]
-  @scala.inline
-  def yAxisMode: yAxisMode = "yAxisMode".asInstanceOf[yAxisMode]
-  @scala.inline
-  def yAxisStrip: yAxisStrip = "yAxisStrip".asInstanceOf[yAxisStrip]
-  @scala.inline
-  def yAxisStroke: yAxisStroke = "yAxisStroke".asInstanceOf[yAxisStroke]
-  @scala.inline
-  def yAxisStrokeThickness: yAxisStrokeThickness = "yAxisStrokeThickness".asInstanceOf[yAxisStrokeThickness]
-  @scala.inline
-  def yAxisTickLength: yAxisTickLength = "yAxisTickLength".asInstanceOf[yAxisTickLength]
-  @scala.inline
-  def yAxisTickStroke: yAxisTickStroke = "yAxisTickStroke".asInstanceOf[yAxisTickStroke]
-  @scala.inline
-  def yAxisTickStrokeThickness: yAxisTickStrokeThickness = "yAxisTickStrokeThickness".asInstanceOf[yAxisTickStrokeThickness]
-  @scala.inline
-  def yAxisTitle: yAxisTitle = "yAxisTitle".asInstanceOf[yAxisTitle]
-  @scala.inline
-  def yAxisTitleAlignment: yAxisTitleAlignment = "yAxisTitleAlignment".asInstanceOf[yAxisTitleAlignment]
-  @scala.inline
-  def yAxisTitleAngle: yAxisTitleAngle = "yAxisTitleAngle".asInstanceOf[yAxisTitleAngle]
-  @scala.inline
-  def yAxisTitleBottomMargin: yAxisTitleBottomMargin = "yAxisTitleBottomMargin".asInstanceOf[yAxisTitleBottomMargin]
-  @scala.inline
-  def yAxisTitleLeftMargin: yAxisTitleLeftMargin = "yAxisTitleLeftMargin".asInstanceOf[yAxisTitleLeftMargin]
-  @scala.inline
-  def yAxisTitleMargin: yAxisTitleMargin = "yAxisTitleMargin".asInstanceOf[yAxisTitleMargin]
-  @scala.inline
-  def yAxisTitleRightMargin: yAxisTitleRightMargin = "yAxisTitleRightMargin".asInstanceOf[yAxisTitleRightMargin]
-  @scala.inline
-  def yAxisTitleTextColor: yAxisTitleTextColor = "yAxisTitleTextColor".asInstanceOf[yAxisTitleTextColor]
-  @scala.inline
-  def yAxisTitleTextStyle: yAxisTitleTextStyle = "yAxisTitleTextStyle".asInstanceOf[yAxisTitleTextStyle]
-  @scala.inline
-  def yAxisTitleTopMargin: yAxisTitleTopMargin = "yAxisTitleTopMargin".asInstanceOf[yAxisTitleTopMargin]
-  @scala.inline
-  def yearShift: yearShift = "yearShift".asInstanceOf[yearShift]
-  @scala.inline
-  def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
-  @scala.inline
-  def zoom: zoom = "zoom".asInstanceOf[zoom]
-  @scala.inline
-  def zoomAction: zoomAction = "zoomAction".asInstanceOf[zoomAction]
-  @scala.inline
-  def zoomChanged: zoomChanged = "zoomChanged".asInstanceOf[zoomChanged]
-  @scala.inline
-  def zoomChanging: zoomChanging = "zoomChanging".asInstanceOf[zoomChanging]
-  @scala.inline
-  def zoomLevel: zoomLevel = "zoomLevel".asInstanceOf[zoomLevel]
-  @scala.inline
-  def zoomSliderType: zoomSliderType = "zoomSliderType".asInstanceOf[zoomSliderType]
-  @scala.inline
-  def zoomSliderXAxisMajorStroke: zoomSliderXAxisMajorStroke = "zoomSliderXAxisMajorStroke".asInstanceOf[zoomSliderXAxisMajorStroke]
-  @scala.inline
-  def zoomSliderXAxisMajorStrokeThickness: zoomSliderXAxisMajorStrokeThickness = "zoomSliderXAxisMajorStrokeThickness".asInstanceOf[zoomSliderXAxisMajorStrokeThickness]
-  @scala.inline
-  def zoomTileCacheSize: zoomTileCacheSize = "zoomTileCacheSize".asInstanceOf[zoomTileCacheSize]
-  @scala.inline
-  def zoomToGeographic: zoomToGeographic = "zoomToGeographic".asInstanceOf[zoomToGeographic]
-  @scala.inline
-  def zoomWindowMinWidth: zoomWindowMinWidth = "zoomWindowMinWidth".asInstanceOf[zoomWindowMinWidth]
-  @scala.inline
-  def zoomWindowMoveDistance: zoomWindowMoveDistance = "zoomWindowMoveDistance".asInstanceOf[zoomWindowMoveDistance]
-  @scala.inline
-  def zoomable: zoomable = "zoomable".asInstanceOf[zoomable]
+  @js.native
+  sealed trait zoomable extends StObject
+  inline def zoomable: zoomable = "zoomable".asInstanceOf[zoomable]
 }
-

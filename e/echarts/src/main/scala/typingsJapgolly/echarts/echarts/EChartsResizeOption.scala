@@ -1,36 +1,45 @@
 package typingsJapgolly.echarts.echarts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EChartsResizeOption extends js.Object {
+trait EChartsResizeOption extends StObject {
+  
   /**
     * Chart height.
     */
   var height: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * Specify whether or not to prevent triggering events.
     */
   var silent: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Chart width.
     */
   var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object EChartsResizeOption {
-  @scala.inline
-  def apply(
-    height: Double | String = null,
-    silent: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): EChartsResizeOption = {
+  
+  inline def apply(): EChartsResizeOption = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[EChartsResizeOption]
   }
+  
+  extension [Self <: EChartsResizeOption](x: Self) {
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

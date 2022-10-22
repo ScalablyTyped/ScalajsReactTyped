@@ -1,95 +1,99 @@
 package typingsJapgolly.naja
 
-import typingsJapgolly.naja.mod.RequestMethod
+import typingsJapgolly.naja.distCoreSnippetCacheMod.SnippetCacheStorageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object najaStrings {
-  @js.native
-  sealed trait DELETE extends RequestMethod
   
   @js.native
-  sealed trait GET extends RequestMethod
+  sealed trait abort extends StObject
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait PATCH extends RequestMethod
+  sealed trait afterUpdate extends StObject
+  inline def afterUpdate: afterUpdate = "afterUpdate".asInstanceOf[afterUpdate]
   
   @js.native
-  sealed trait POST extends RequestMethod
+  sealed trait before extends StObject
+  inline def before: before = "before".asInstanceOf[before]
   
   @js.native
-  sealed trait PUT extends RequestMethod
+  sealed trait beforeUpdate extends StObject
+  inline def beforeUpdate: beforeUpdate = "beforeUpdate".asInstanceOf[beforeUpdate]
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait buildState extends StObject
+  inline def buildState: buildState = "buildState".asInstanceOf[buildState]
   
   @js.native
-  sealed trait afterUpdate extends js.Object
+  sealed trait complete extends StObject
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait beforeUpdate extends js.Object
+  sealed trait fetch extends StObject
+  inline def fetch: fetch = "fetch".asInstanceOf[fetch]
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait history
+    extends StObject
+       with SnippetCacheStorageType
+  inline def history: history = "history".asInstanceOf[history]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait init extends StObject
+  inline def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait interaction extends StObject
+  inline def interaction: interaction = "interaction".asInstanceOf[interaction]
   
   @js.native
-  sealed trait interaction extends js.Object
+  sealed trait off
+    extends StObject
+       with SnippetCacheStorageType
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait payload extends StObject
+  inline def payload: payload = "payload".asInstanceOf[payload]
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait redirect extends StObject
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait restore extends StObject
+  inline def restore: restore = "restore".asInstanceOf[restore]
   
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
-  @scala.inline
-  def afterUpdate: afterUpdate = "afterUpdate".asInstanceOf[afterUpdate]
-  @scala.inline
-  def before: before = "before".asInstanceOf[before]
-  @scala.inline
-  def beforeUpdate: beforeUpdate = "beforeUpdate".asInstanceOf[beforeUpdate]
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def interaction: interaction = "interaction".asInstanceOf[interaction]
-  @scala.inline
-  def load: load = "load".asInstanceOf[load]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  @js.native
+  sealed trait restoreState extends StObject
+  inline def restoreState: restoreState = "restoreState".asInstanceOf[restoreState]
+  
+  @js.native
+  sealed trait session
+    extends StObject
+       with SnippetCacheStorageType
+  inline def session: session = "session".asInstanceOf[session]
+  
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
+  
+  @js.native
+  sealed trait store extends StObject
+  inline def store: store = "store".asInstanceOf[store]
+  
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
 }
-

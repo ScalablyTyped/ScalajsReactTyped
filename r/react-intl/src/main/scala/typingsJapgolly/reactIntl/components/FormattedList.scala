@@ -1,13 +1,8 @@
 package typingsJapgolly.reactIntl.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactIntl.IntlListFormatOptionsvalu
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactIntl.anon.IntlListFormatOptionsvalu
 import typingsJapgolly.reactIntl.reactIntlStrings.`best fit`
 import typingsJapgolly.reactIntl.reactIntlStrings.conjunction
 import typingsJapgolly.reactIntl.reactIntlStrings.disjunction
@@ -16,45 +11,32 @@ import typingsJapgolly.reactIntl.reactIntlStrings.lookup
 import typingsJapgolly.reactIntl.reactIntlStrings.narrow
 import typingsJapgolly.reactIntl.reactIntlStrings.short
 import typingsJapgolly.reactIntl.reactIntlStrings.unit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormattedList {
-  def apply(
-    value: js.Array[Node],
-    localeMatcher: (`best fit`) | lookup = null,
-    style: long | short | narrow = null,
-    `type`: conjunction | disjunction | unit = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IntlListFormatOptionsvalu, 
-    MountedWithRawType[
-      IntlListFormatOptionsvalu, 
-      js.Object, 
-      RawMounted[IntlListFormatOptionsvalu, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactIntl.IntlListFormatOptionsvalu, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactIntl.IntlListFormatOptionsvalu])(children: _*)
+  inline def apply(value: js.Array[Node]): Builder = {
+    val __props = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IntlListFormatOptionsvalu]))
   }
+  
   @JSImport("react-intl", "FormattedList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def localeMatcher(value: (`best fit`) | lookup): this.type = set("localeMatcher", value.asInstanceOf[js.Any])
+    
+    inline def style(value: long | short | narrow): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: conjunction | disjunction | unit): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IntlListFormatOptionsvalu): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

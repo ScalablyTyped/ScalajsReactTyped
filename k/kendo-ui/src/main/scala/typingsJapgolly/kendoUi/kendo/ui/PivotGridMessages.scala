@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotGridMessages extends js.Object {
+trait PivotGridMessages extends StObject {
+  
   var columnFields: js.UndefOr[String] = js.undefined
+  
   var fieldMenu: js.UndefOr[PivotGridMessagesFieldMenu] = js.undefined
+  
   var measureFields: js.UndefOr[String] = js.undefined
+  
   var rowFields: js.UndefOr[String] = js.undefined
 }
-
 object PivotGridMessages {
-  @scala.inline
-  def apply(
-    columnFields: String = null,
-    fieldMenu: PivotGridMessagesFieldMenu = null,
-    measureFields: String = null,
-    rowFields: String = null
-  ): PivotGridMessages = {
+  
+  inline def apply(): PivotGridMessages = {
     val __obj = js.Dynamic.literal()
-    if (columnFields != null) __obj.updateDynamic("columnFields")(columnFields.asInstanceOf[js.Any])
-    if (fieldMenu != null) __obj.updateDynamic("fieldMenu")(fieldMenu.asInstanceOf[js.Any])
-    if (measureFields != null) __obj.updateDynamic("measureFields")(measureFields.asInstanceOf[js.Any])
-    if (rowFields != null) __obj.updateDynamic("rowFields")(rowFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotGridMessages]
   }
+  
+  extension [Self <: PivotGridMessages](x: Self) {
+    
+    inline def setColumnFields(value: String): Self = StObject.set(x, "columnFields", value.asInstanceOf[js.Any])
+    
+    inline def setColumnFieldsUndefined: Self = StObject.set(x, "columnFields", js.undefined)
+    
+    inline def setFieldMenu(value: PivotGridMessagesFieldMenu): Self = StObject.set(x, "fieldMenu", value.asInstanceOf[js.Any])
+    
+    inline def setFieldMenuUndefined: Self = StObject.set(x, "fieldMenu", js.undefined)
+    
+    inline def setMeasureFields(value: String): Self = StObject.set(x, "measureFields", value.asInstanceOf[js.Any])
+    
+    inline def setMeasureFieldsUndefined: Self = StObject.set(x, "measureFields", js.undefined)
+    
+    inline def setRowFields(value: String): Self = StObject.set(x, "rowFields", value.asInstanceOf[js.Any])
+    
+    inline def setRowFieldsUndefined: Self = StObject.set(x, "rowFields", js.undefined)
+  }
 }
-

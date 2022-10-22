@@ -3,16 +3,16 @@ package typingsJapgolly.azureArmResource.mod
 import typingsJapgolly.msRest.mod.ServiceClientCredentials
 import typingsJapgolly.msRestAzure.mod.AzureServiceClientOptions
 import typingsJapgolly.msRestAzure.mod.CloudErrorParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azure-arm-resource", "PolicyClient")
-@js.native
-object PolicyClient extends js.Object {
+object PolicyClient {
+  
+  @JSImport("azure-arm-resource", "PolicyClient.default")
   @js.native
-  class PolicyClient protected ()
-    extends typingsJapgolly.azureArmResource.policyClientMod.PolicyClient {
+  open class default protected ()
+    extends typingsJapgolly.azureArmResource.libPolicyPolicyClientMod.default {
     /**
       * Initializes a new instance of the PolicyClient class.
       * @constructor
@@ -48,11 +48,18 @@ object PolicyClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
+  @JSImport("azure-arm-resource", "PolicyClient.PolicyClient")
   @js.native
-  class default protected ()
-    extends typingsJapgolly.azureArmResource.policyClientMod.default {
+  open class PolicyClient protected ()
+    extends typingsJapgolly.azureArmResource.libPolicyPolicyClientMod.PolicyClient {
     /**
       * Initializes a new instance of the PolicyClient class.
       * @constructor
@@ -88,21 +95,26 @@ object PolicyClient extends js.Object {
       baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
+    def this(
+      credentials: ServiceClientCredentials,
+      subscriptionId: String,
+      baseUri: Unit,
+      options: AzureServiceClientOptions
+    ) = this()
   }
   
-  @js.native
-  object PolicyModels extends js.Object {
-    @js.native
-    class BaseResource ()
-      extends typingsJapgolly.msRestAzure.mod.BaseResource
+  object PolicyModels {
     
+    @JSImport("azure-arm-resource", "PolicyClient.PolicyModels.BaseResource")
     @js.native
-    class CloudError protected ()
-      extends typingsJapgolly.azureArmResource.policyClientMod.PolicyModels.CloudError {
+    open class BaseResource ()
+      extends typingsJapgolly.azureArmResource.libPolicyPolicyClientMod.PolicyModels.BaseResource
+    
+    @JSImport("azure-arm-resource", "PolicyClient.PolicyModels.CloudError")
+    @js.native
+    open class CloudError protected ()
+      extends typingsJapgolly.azureArmResource.libPolicyPolicyClientMod.PolicyModels.CloudError {
       def this(parameters: CloudErrorParameters) = this()
     }
-    
   }
-  
 }
-

@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMeetingResponseType extends js.Object
-
+sealed trait EmailMeetingResponseType extends StObject
 /** Defines the type of response to a meeting request. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMeetingResponseType")
 @js.native
-object EmailMeetingResponseType extends js.Object {
+object EmailMeetingResponseType extends StObject {
+  
   /** The meeting was accepted. */
   @js.native
-  sealed trait accept extends EmailMeetingResponseType
+  sealed trait accept
+    extends StObject
+       with EmailMeetingResponseType
   
   /** The meeting was declined. */
   @js.native
-  sealed trait decline extends EmailMeetingResponseType
+  sealed trait decline
+    extends StObject
+       with EmailMeetingResponseType
   
   /** The meeting was tentatively accepted. */
   @js.native
-  sealed trait tentative extends EmailMeetingResponseType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMeetingResponseType with Double] = js.native
-  /* 0 */ @js.native
-  object accept extends TopLevel[accept with Double]
-  
-  /* 1 */ @js.native
-  object decline extends TopLevel[decline with Double]
-  
-  /* 2 */ @js.native
-  object tentative extends TopLevel[tentative with Double]
-  
+  sealed trait tentative
+    extends StObject
+       with EmailMeetingResponseType
 }
-

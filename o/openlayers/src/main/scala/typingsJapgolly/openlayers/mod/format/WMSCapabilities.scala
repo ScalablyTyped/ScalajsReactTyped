@@ -1,11 +1,11 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalajs.dom.Document
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.GlobalObject
-import typingsJapgolly.std.Document_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -21,7 +21,8 @@ import scala.scalajs.js.annotation._
   *
   * @api
   */
-class WMSCapabilities () extends XML {
+open class WMSCapabilities () extends XML {
+  
   def read(source: String): GlobalObject = js.native
   /**
     * Read a WMS capabilities document.
@@ -30,7 +31,6 @@ class WMSCapabilities () extends XML {
     * @return An object representing the WMS capabilities.
     * @api
     */
-  def read(source: Document_): GlobalObject = js.native
+  def read(source: Document): GlobalObject = js.native
   def read(source: Node): GlobalObject = js.native
 }
-

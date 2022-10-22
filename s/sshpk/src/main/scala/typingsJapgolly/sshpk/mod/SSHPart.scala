@@ -1,13 +1,14 @@
 package typingsJapgolly.sshpk.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// == ssh-buffer.js == //
 @JSImport("sshpk", "SSHPart")
 @js.native
-class SSHPart () extends js.Object {
+open class SSHPart () extends StObject {
+  
   var data: Buffer = js.native
 }
-

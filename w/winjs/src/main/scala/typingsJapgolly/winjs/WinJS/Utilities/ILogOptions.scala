@@ -1,33 +1,45 @@
 package typingsJapgolly.winjs.WinJS.Utilities
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Properties
 //#region Interfaces
-trait ILogOptions extends js.Object {
+trait ILogOptions extends StObject {
+  
   var action: js.UndefOr[js.Function3[/* message */ String, /* tags */ String, /* type */ String, Unit]] = js.undefined
+  
   var excludeTags: js.UndefOr[String] = js.undefined
+  
   var tags: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ILogOptions {
-  @scala.inline
-  def apply(
-    action: (/* message */ String, /* tags */ String, /* type */ String) => Callback = null,
-    excludeTags: String = null,
-    tags: String = null,
-    `type`: String = null
-  ): ILogOptions = {
+  
+  inline def apply(): ILogOptions = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(js.Any.fromFunction3((t0: /* message */ java.lang.String, t1: /* tags */ java.lang.String, t2: /* type */ java.lang.String) => action(t0, t1, t2).runNow()))
-    if (excludeTags != null) __obj.updateDynamic("excludeTags")(excludeTags.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILogOptions]
   }
+  
+  extension [Self <: ILogOptions](x: Self) {
+    
+    inline def setAction(value: (/* message */ String, /* tags */ String, /* type */ String) => Callback): Self = StObject.set(x, "action", js.Any.fromFunction3((t0: /* message */ String, t1: /* tags */ String, t2: /* type */ String) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setExcludeTags(value: String): Self = StObject.set(x, "excludeTags", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeTagsUndefined: Self = StObject.set(x, "excludeTags", js.undefined)
+    
+    inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

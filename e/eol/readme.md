@@ -1,7 +1,7 @@
 
 # Scala.js typings for eol
 
-Typings are for version 0.8.1
+Typings are for version 0.9.1
 
 ## Library description:
 Newline character converter
@@ -10,10 +10,10 @@ Newline character converter
 | ------------------ | :-------------: |
 | Full name          | eol |
 | Keywords           | eol, lf, cr, crlf, newline, newlines, convert, converter, conversion, character, formatting, format, string, javascript, typescript, ender, file |
-| # releases         | 0 |
-| # dependents       | 70 |
-| # downloads        | 12171078 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3826951.3333333335 |
+| # stars            | 36.0 |
 
 ## Links
 - [Homepage](https://github.com/ryanve/eol)

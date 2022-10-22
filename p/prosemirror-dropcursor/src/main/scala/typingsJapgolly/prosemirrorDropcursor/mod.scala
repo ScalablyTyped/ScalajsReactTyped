@@ -1,14 +1,17 @@
 package typingsJapgolly.prosemirrorDropcursor
 
+import typingsJapgolly.prosemirrorDropcursor.anon.Class
 import typingsJapgolly.prosemirrorState.mod.Plugin
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("prosemirror-dropcursor", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def dropCursor(): Plugin[_, _] = js.native
-  def dropCursor(options: AnonColor): Plugin[_, _] = js.native
+object mod {
+  
+  @JSImport("prosemirror-dropcursor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def dropCursor(): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")().asInstanceOf[Plugin[Any]]
+  inline def dropCursor(options: Class): Plugin[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dropCursor")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[Any]]
 }
-

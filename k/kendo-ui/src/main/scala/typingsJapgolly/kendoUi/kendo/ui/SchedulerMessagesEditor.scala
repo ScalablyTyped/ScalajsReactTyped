@@ -1,57 +1,96 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesEditor extends js.Object {
+trait SchedulerMessagesEditor extends StObject {
+  
   var allDayEvent: js.UndefOr[String] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var editorTitle: js.UndefOr[String] = js.undefined
+  
   var end: js.UndefOr[String] = js.undefined
+  
   var endTimezone: js.UndefOr[String] = js.undefined
+  
   var repeat: js.UndefOr[String] = js.undefined
+  
   var separateTimezones: js.UndefOr[String] = js.undefined
+  
   var start: js.UndefOr[String] = js.undefined
+  
   var startTimezone: js.UndefOr[String] = js.undefined
+  
   var timezone: js.UndefOr[String] = js.undefined
+  
   var timezoneEditorButton: js.UndefOr[String] = js.undefined
+  
   var timezoneEditorTitle: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object SchedulerMessagesEditor {
-  @scala.inline
-  def apply(
-    allDayEvent: String = null,
-    description: String = null,
-    editorTitle: String = null,
-    end: String = null,
-    endTimezone: String = null,
-    repeat: String = null,
-    separateTimezones: String = null,
-    start: String = null,
-    startTimezone: String = null,
-    timezone: String = null,
-    timezoneEditorButton: String = null,
-    timezoneEditorTitle: String = null,
-    title: String = null
-  ): SchedulerMessagesEditor = {
+  
+  inline def apply(): SchedulerMessagesEditor = {
     val __obj = js.Dynamic.literal()
-    if (allDayEvent != null) __obj.updateDynamic("allDayEvent")(allDayEvent.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (editorTitle != null) __obj.updateDynamic("editorTitle")(editorTitle.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (endTimezone != null) __obj.updateDynamic("endTimezone")(endTimezone.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (separateTimezones != null) __obj.updateDynamic("separateTimezones")(separateTimezones.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (startTimezone != null) __obj.updateDynamic("startTimezone")(startTimezone.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (timezoneEditorButton != null) __obj.updateDynamic("timezoneEditorButton")(timezoneEditorButton.asInstanceOf[js.Any])
-    if (timezoneEditorTitle != null) __obj.updateDynamic("timezoneEditorTitle")(timezoneEditorTitle.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesEditor]
   }
+  
+  extension [Self <: SchedulerMessagesEditor](x: Self) {
+    
+    inline def setAllDayEvent(value: String): Self = StObject.set(x, "allDayEvent", value.asInstanceOf[js.Any])
+    
+    inline def setAllDayEventUndefined: Self = StObject.set(x, "allDayEvent", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEditorTitle(value: String): Self = StObject.set(x, "editorTitle", value.asInstanceOf[js.Any])
+    
+    inline def setEditorTitleUndefined: Self = StObject.set(x, "editorTitle", js.undefined)
+    
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimezone(value: String): Self = StObject.set(x, "endTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setEndTimezoneUndefined: Self = StObject.set(x, "endTimezone", js.undefined)
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setRepeat(value: String): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    
+    inline def setSeparateTimezones(value: String): Self = StObject.set(x, "separateTimezones", value.asInstanceOf[js.Any])
+    
+    inline def setSeparateTimezonesUndefined: Self = StObject.set(x, "separateTimezones", js.undefined)
+    
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimezone(value: String): Self = StObject.set(x, "startTimezone", value.asInstanceOf[js.Any])
+    
+    inline def setStartTimezoneUndefined: Self = StObject.set(x, "startTimezone", js.undefined)
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneEditorButton(value: String): Self = StObject.set(x, "timezoneEditorButton", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneEditorButtonUndefined: Self = StObject.set(x, "timezoneEditorButton", js.undefined)
+    
+    inline def setTimezoneEditorTitle(value: String): Self = StObject.set(x, "timezoneEditorTitle", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneEditorTitleUndefined: Self = StObject.set(x, "timezoneEditorTitle", js.undefined)
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

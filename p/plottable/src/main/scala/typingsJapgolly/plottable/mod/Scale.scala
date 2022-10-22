@@ -1,8 +1,8 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Scale")
 @js.native
@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
   *
   * @constructor
   */
-class Scale[D, R] ()
-  extends typingsJapgolly.plottable.scaleMod.Scale[D, R]
-
+open class Scale[D, R] ()
+  extends typingsJapgolly.plottable.buildSrcScalesScaleMod.Scale[D, R]

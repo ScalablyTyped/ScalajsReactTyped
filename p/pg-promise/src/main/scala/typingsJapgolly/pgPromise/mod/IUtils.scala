@@ -1,24 +1,32 @@
 package typingsJapgolly.pgPromise.mod
 
-import typingsJapgolly.pgPromise.AnonIgnoreErrors
+import typingsJapgolly.pgPromise.anon.IgnoreErrors
 import typingsJapgolly.std.IArguments
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // General-purpose functions
 // API: http://vitaly-t.github.io/pg-promise/utils.html
 @js.native
-trait IUtils extends js.Object {
+trait IUtils extends StObject {
+  
   def camelize(text: String): String = js.native
+  
   def camelizeVar(text: String): String = js.native
-  def enumSql(dir: String): js.Any = js.native
-  def enumSql(dir: String, options: AnonIgnoreErrors): js.Any = js.native
+  
+  def enumSql(dir: String): Any = js.native
   def enumSql(
     dir: String,
-    options: AnonIgnoreErrors,
-    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, _]
-  ): js.Any = js.native
+    options: Unit,
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, Any]
+  ): Any = js.native
+  def enumSql(dir: String, options: IgnoreErrors): Any = js.native
+  def enumSql(
+    dir: String,
+    options: IgnoreErrors,
+    cb: js.Function3[/* file */ String, /* name */ String, /* path */ String, Any]
+  ): Any = js.native
+  
   def taskArgs[T](args: IArguments): ITaskArguments[T] = js.native
 }
-

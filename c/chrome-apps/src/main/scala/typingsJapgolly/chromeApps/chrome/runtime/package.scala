@@ -1,35 +1,37 @@
-package typingsJapgolly.chromeApps.chrome
+package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.NumberDictionary
+import typingsJapgolly.chromeApps.chrome.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object runtime {
-  /* Rewritten from type alias, can be one of: 
-    - scala.Boolean
-    - typingsJapgolly.chromeApps.chrome.runtime.AutomationDesktop
-    - typingsJapgolly.chromeApps.chrome.runtime.AutomationNonInteractive
+
+/* Rewritten from type alias, can be one of: 
+  - scala.Boolean
+  - typingsJapgolly.chromeApps.chrome.runtime.AutomationDesktop
+  - typingsJapgolly.chromeApps.chrome.runtime.AutomationNonInteractive
+*/
+type AutomationOptions = _AutomationOptions | Boolean
+
+type ExtensionConnectEvent = Event[js.Function1[/* port */ Port, Unit]]
+
+type ExtensionMessageEvent = Event[
+js.Function3[
+  /* message */ Any, 
+  /* sender */ MessageSender, 
+  /* sendResponse */ js.Function1[/* response */ Any, Unit], 
+  Unit
+]]
+
+type ManifestIcons = /**
+  * @example
+  * {
+  *   '16': 'icon16.png',
+  *   '48': 'icon48.png',
+  *   '128': 'icon128.png'
+  * }
   */
-  type AutomationOptions = typingsJapgolly.chromeApps.chrome.runtime._AutomationOptions | scala.Boolean
-  type ExtensionConnectEvent = typingsJapgolly.chromeApps.chrome.events.Event[
-    js.Function1[/* port */ typingsJapgolly.chromeApps.chrome.runtime.Port, scala.Unit]
-  ]
-  type ExtensionMessageEvent = typingsJapgolly.chromeApps.chrome.events.Event[
-    js.Function3[
-      /* message */ js.Any, 
-      /* sender */ typingsJapgolly.chromeApps.chrome.runtime.MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, scala.Unit], 
-      scala.Unit
-    ]
-  ]
-  type ManifestIcons = /**
-    * @example
-    * {
-    *   '16': 'icon16.png',
-    *   '48': 'icon48.png',
-    *   '128': 'icon128.png'
-    * }
-    */
-  org.scalablytyped.runtime.NumberDictionary[java.lang.String]
-  type RuntimeEvent = typingsJapgolly.chromeApps.chrome.events.Event[js.Function0[scala.Unit]]
-}
+NumberDictionary[String]
+
+type RuntimeEvent = Event[js.Function0[Unit]]

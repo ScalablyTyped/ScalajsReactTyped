@@ -1,22 +1,32 @@
 package typingsJapgolly.uirouterCore
 
-import typingsJapgolly.uirouterCore.pathNodeMod.PathNode
-import typingsJapgolly.uirouterCore.resolveInterfaceMod.ResolvableLiteral
-import typingsJapgolly.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import typingsJapgolly.uirouterCore.anon.EAGER
+import typingsJapgolly.uirouterCore.anon.NOWAIT
+import typingsJapgolly.uirouterCore.libPathPathNodeMod.PathNode
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod.ResolvableLiteral
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod.ResolvePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core/lib/resolve", JSImport.Namespace)
-@js.native
-object libResolveMod extends js.Object {
+object libResolveMod {
+  
+  @JSImport("@uirouter/core/lib/resolve", JSImport.Namespace)
   @js.native
-  class Resolvable protected ()
-    extends typingsJapgolly.uirouterCore.resolvableMod.Resolvable {
-    /** This constructor creates a Resolvable copy */
-    def this(resolvable: typingsJapgolly.uirouterCore.resolvableMod.Resolvable) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("@uirouter/core/lib/resolve", "NATIVE_INJECTOR_TOKEN")
+  @js.native
+  val NATIVE_INJECTOR_TOKEN: String = js.native
+  
+  @JSImport("@uirouter/core/lib/resolve", "Resolvable")
+  @js.native
+  open class Resolvable protected ()
+    extends typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable {
     /** This constructor creates a new Resolvable from the plain old [[ResolvableLiteral]] javascript object */
     def this(resolvable: ResolvableLiteral) = this()
+    /** This constructor creates a Resolvable copy */
+    def this(resolvable: typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable) = this()
     /**
       * This constructor creates a new `Resolvable`
       *
@@ -36,31 +46,51 @@ object libResolveMod extends js.Object {
       * @param policy the [[ResolvePolicy]] defines when and how the Resolvable is processed
       * @param data Pre-resolved data. If the resolve value is already known, it may be provided here.
       */
-    def this(token: js.Any, resolveFn: js.Function) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_]) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy) = this()
-    def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
+    def this(token: Any, resolveFn: js.Function) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any]) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: Any) = this()
+    def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: Any) = this()
+  }
+  /* static members */
+  object Resolvable {
+    
+    @JSImport("@uirouter/core/lib/resolve", "Resolvable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def fromData(token: Any, data: Any): typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable]
   }
   
+  @JSImport("@uirouter/core/lib/resolve", "ResolveContext")
   @js.native
-  class ResolveContext protected ()
-    extends typingsJapgolly.uirouterCore.resolveContextMod.ResolveContext {
+  open class ResolveContext protected ()
+    extends typingsJapgolly.uirouterCore.libResolveResolveContextMod.ResolveContext {
     def this(_path: js.Array[PathNode]) = this()
   }
   
-  val NATIVE_INJECTOR_TOKEN: String = js.native
-  var defaultResolvePolicy: ResolvePolicy = js.native
-  /* static members */
+  @JSImport("@uirouter/core/lib/resolve", "defaultResolvePolicy")
   @js.native
-  object Resolvable extends js.Object {
-    def fromData(token: js.Any, data: js.Any): typingsJapgolly.uirouterCore.resolvableMod.Resolvable = js.native
-  }
+  def defaultResolvePolicy: ResolvePolicy = js.native
+  inline def defaultResolvePolicy_=(x: ResolvePolicy): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultResolvePolicy")(x.asInstanceOf[js.Any])
   
-  @js.native
-  object resolvePolicies extends js.Object {
-    var async: AnonNOWAIT = js.native
-    var when: AnonEAGER = js.native
+  object resolvePolicies {
+    
+    @JSImport("@uirouter/core/lib/resolve", "resolvePolicies")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@uirouter/core/lib/resolve", "resolvePolicies.async")
+    @js.native
+    def async: NOWAIT = js.native
+    inline def async_=(x: NOWAIT): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("async")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@uirouter/core/lib/resolve", "resolvePolicies.when")
+    @js.native
+    def when: EAGER = js.native
+    inline def when_=(x: EAGER): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("when")(x.asInstanceOf[js.Any])
   }
-  
 }
-

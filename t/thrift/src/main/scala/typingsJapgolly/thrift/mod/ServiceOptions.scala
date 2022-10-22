@@ -1,31 +1,43 @@
 package typingsJapgolly.thrift.mod
 
-import typingsJapgolly.thrift.AnonInstantiable
+import typingsJapgolly.thrift.anon.Instantiable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServiceOptions[TProcessor, THandler] extends js.Object {
+trait ServiceOptions[TProcessor, THandler] extends StObject {
+  
   var handler: js.UndefOr[THandler] = js.undefined
-  var processor: js.UndefOr[AnonInstantiable[THandler, TProcessor]] = js.undefined
+  
+  var processor: js.UndefOr[Instantiable[THandler, TProcessor]] = js.undefined
+  
   var protocol: js.UndefOr[TProtocolConstructor] = js.undefined
+  
   var transport: js.UndefOr[TTransportConstructor] = js.undefined
 }
-
 object ServiceOptions {
-  @scala.inline
-  def apply[TProcessor, THandler](
-    handler: THandler = null,
-    processor: AnonInstantiable[THandler, TProcessor] = null,
-    protocol: TProtocolConstructor = null,
-    transport: TTransportConstructor = null
-  ): ServiceOptions[TProcessor, THandler] = {
+  
+  inline def apply[TProcessor, THandler](): ServiceOptions[TProcessor, THandler] = {
     val __obj = js.Dynamic.literal()
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (processor != null) __obj.updateDynamic("processor")(processor.asInstanceOf[js.Any])
-    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
-    if (transport != null) __obj.updateDynamic("transport")(transport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceOptions[TProcessor, THandler]]
   }
+  
+  extension [Self <: ServiceOptions[?, ?], TProcessor, THandler](x: Self & (ServiceOptions[TProcessor, THandler])) {
+    
+    inline def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    
+    inline def setProcessor(value: Instantiable[THandler, TProcessor]): Self = StObject.set(x, "processor", value.asInstanceOf[js.Any])
+    
+    inline def setProcessorUndefined: Self = StObject.set(x, "processor", js.undefined)
+    
+    inline def setProtocol(value: TProtocolConstructor): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    
+    inline def setTransport(value: TTransportConstructor): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+  }
 }
-

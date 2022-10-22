@@ -1,7 +1,7 @@
 
 # Scala.js typings for dargs
 
-Typings are for version 7.0.0
+Typings are for version 8.1.0
 
 ## Library description:
 Reverse minimist. Convert an object of options into an array of command-line arguments.
@@ -10,10 +10,10 @@ Reverse minimist. Convert an object of options into an array of command-line arg
 | ------------------ | :-------------: |
 | Full name          | dargs |
 | Keywords           | reverse, minimist, options, arguments, args, flags, cli, nopt, commander, binary, command, inverse, opposite, invert, switch, construct, parse, parser, argv |
-| # releases         | 4 |
-| # dependents       | 143 |
-| # downloads        | 63174744 |
-| # stars            | 12 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8741371333333332E7 |
+| # stars            | 172.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/dargs#readme)

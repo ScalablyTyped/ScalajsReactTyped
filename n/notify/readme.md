@@ -9,10 +9,10 @@ Native Node.js C++ extension for displaying desktop notifications using GNOME's 
 | ------------------ | :-------------: |
 | Full name          | notify |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 900 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 123.0 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/olalonde/node-notify)

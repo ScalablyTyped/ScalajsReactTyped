@@ -1,52 +1,49 @@
 package typingsJapgolly.kdbxweb.mod
 
-import typingsJapgolly.std.ArrayBuffer
-import typingsJapgolly.std.Document_
+import typingsJapgolly.kdbxweb.anon.PreserveXml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Kdbx")
 @js.native
-class Kdbx () extends js.Object {
-  var binaries: Binaries = js.native
-  var credentials: Credentials = js.native
-  var deletedObjects: js.Array[KdbxObject] = js.native
-  var groups: js.Array[Group] = js.native
-  var header: Header = js.native
-  var meta: Meta = js.native
-  var xml: Document_ = js.native
-  def addDeletedObject(uuid: KdbxUuid, dt: js.Date): Unit = js.native
-  def cleanup(settings: Settings): Unit = js.native
-  def createBinary(value: ProtectedValue): js.Promise[ProtectedValue | scala.scalajs.js.typedarray.ArrayBuffer] = js.native
-  def createBinary(value: ArrayBuffer): js.Promise[ProtectedValue | scala.scalajs.js.typedarray.ArrayBuffer] = js.native
-  def createDefaultGroup(): Unit = js.native
-  def createEntry(group: Group): Entry = js.native
-  def createGroup(group: Group, name: StringProtected): Group = js.native
-  def createRecycleBin(): Unit = js.native
-  def getDefaultGroup(): Group = js.native
-  def getGroup(uuid: String): js.UndefOr[Group] = js.native
-  def getGroup(uuid: String, parentGroup: Group): js.UndefOr[Group] = js.native
-  def getGroup(uuid: KdbxUuid): js.UndefOr[Group] = js.native
-  def getGroup(uuid: KdbxUuid, parentGroup: Group): js.UndefOr[Group] = js.native
-  def getLocalEditState(): editingStateDict = js.native
-  def merge(remote: Kdbx): Unit = js.native
-  def move(`object`: KdbxObject, toGroup: Group): Unit = js.native
-  def move(`object`: KdbxObject, toGroup: Group, atIndex: Double): Unit = js.native
-  def remove(`object`: KdbxObject): Unit = js.native
-  def removeLocalEditState(): Unit = js.native
-  def save(): js.Promise[scala.scalajs.js.typedarray.ArrayBuffer] = js.native
-  def saveXml(): js.Promise[String] = js.native
-  def setLocalEditState(editingState: editingStateDict): Unit = js.native
-  def upgrade(): Unit = js.native
-}
-
+open class Kdbx ()
+  extends typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx
 /* static members */
-@JSImport("kdbxweb", "Kdbx")
-@js.native
-object Kdbx extends js.Object {
-  def create(credentials: Credentials, name: String): Kdbx = js.native
-  def load(data: scala.scalajs.js.typedarray.ArrayBuffer, credentials: Credentials): js.Promise[Kdbx] = js.native
-  def loadXml(data: String, credentials: Credentials): js.Promise[Kdbx] = js.native
+object Kdbx {
+  
+  @JSImport("kdbxweb", "Kdbx")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Creates a new database
+    */
+  inline def create(
+    credentials: typingsJapgolly.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials,
+    name: String
+  ): typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(credentials.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx]
+  
+  /**
+    * Load a kdbx file
+    * If there was an error loading file, throws an exception
+    */
+  inline def load(
+    data: js.typedarray.ArrayBuffer,
+    credentials: typingsJapgolly.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials
+  ): js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
+  inline def load(
+    data: js.typedarray.ArrayBuffer,
+    credentials: typingsJapgolly.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials,
+    options: PreserveXml
+  ): js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
+  
+  /**
+    * Import database from an xml file
+    * If there was an error loading file, throws an exception
+    */
+  inline def loadXml(
+    data: String,
+    credentials: typingsJapgolly.kdbxweb.distTypesFormatKdbxCredentialsMod.KdbxCredentials
+  ): js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadXml")(data.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.kdbxweb.distTypesFormatKdbxMod.Kdbx]]
 }
-

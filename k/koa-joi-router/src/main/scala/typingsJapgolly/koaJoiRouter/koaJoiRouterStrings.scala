@@ -1,24 +1,20 @@
 package typingsJapgolly.koaJoiRouter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object koaJoiRouterStrings {
-  @js.native
-  sealed trait form extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait form extends StObject
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait multipart extends js.Object
+  sealed trait json extends StObject
+  inline def json: json = "json".asInstanceOf[json]
   
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def multipart: multipart = "multipart".asInstanceOf[multipart]
+  @js.native
+  sealed trait multipart extends StObject
+  inline def multipart: multipart = "multipart".asInstanceOf[multipart]
 }
-

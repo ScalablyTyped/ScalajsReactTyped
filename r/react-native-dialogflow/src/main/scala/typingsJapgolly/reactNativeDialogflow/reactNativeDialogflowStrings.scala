@@ -1,94 +1,72 @@
 package typingsJapgolly.reactNativeDialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeDialogflowStrings {
-  @js.native
-  sealed trait de extends js.Object
   
   @js.native
-  sealed trait en extends js.Object
+  sealed trait de extends StObject
+  inline def de: de = "de".asInstanceOf[de]
   
   @js.native
-  sealed trait `en-GB` extends js.Object
+  sealed trait en extends StObject
+  inline def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait `en-US` extends js.Object
+  sealed trait `en-GB` extends StObject
+  inline def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
   
   @js.native
-  sealed trait es extends js.Object
+  sealed trait `en-US` extends StObject
+  inline def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
   @js.native
-  sealed trait fr extends js.Object
+  sealed trait es extends StObject
+  inline def es: es = "es".asInstanceOf[es]
   
   @js.native
-  sealed trait it extends js.Object
+  sealed trait fr extends StObject
+  inline def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait ja extends js.Object
+  sealed trait it extends StObject
+  inline def it: it = "it".asInstanceOf[it]
   
   @js.native
-  sealed trait ko extends js.Object
+  sealed trait ja extends StObject
+  inline def ja: ja = "ja".asInstanceOf[ja]
   
   @js.native
-  sealed trait nl extends js.Object
+  sealed trait ko extends StObject
+  inline def ko: ko = "ko".asInstanceOf[ko]
   
   @js.native
-  sealed trait pt extends js.Object
+  sealed trait nl extends StObject
+  inline def nl: nl = "nl".asInstanceOf[nl]
   
   @js.native
-  sealed trait `pt-BR` extends js.Object
+  sealed trait pt extends StObject
+  inline def pt: pt = "pt".asInstanceOf[pt]
   
   @js.native
-  sealed trait ru extends js.Object
+  sealed trait `pt-BR` extends StObject
+  inline def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
   
   @js.native
-  sealed trait uk extends js.Object
+  sealed trait ru extends StObject
+  inline def ru: ru = "ru".asInstanceOf[ru]
   
   @js.native
-  sealed trait `zh-CN` extends js.Object
+  sealed trait uk extends StObject
+  inline def uk: uk = "uk".asInstanceOf[uk]
   
   @js.native
-  sealed trait `zh-HK` extends js.Object
+  sealed trait `zh-HK` extends StObject
+  inline def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
   
   @js.native
-  sealed trait `zh-TW` extends js.Object
-  
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
-  @scala.inline
-  def en: en = "en".asInstanceOf[en]
-  @scala.inline
-  def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
-  @scala.inline
-  def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def ja: ja = "ja".asInstanceOf[ja]
-  @scala.inline
-  def ko: ko = "ko".asInstanceOf[ko]
-  @scala.inline
-  def nl: nl = "nl".asInstanceOf[nl]
-  @scala.inline
-  def pt: pt = "pt".asInstanceOf[pt]
-  @scala.inline
-  def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
-  @scala.inline
-  def ru: ru = "ru".asInstanceOf[ru]
-  @scala.inline
-  def uk: uk = "uk".asInstanceOf[uk]
-  @scala.inline
-  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
-  @scala.inline
-  def `zh-HK`: `zh-HK` = "zh-HK".asInstanceOf[`zh-HK`]
-  @scala.inline
-  def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
+  sealed trait `zh-TW` extends StObject
+  inline def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
 }
-

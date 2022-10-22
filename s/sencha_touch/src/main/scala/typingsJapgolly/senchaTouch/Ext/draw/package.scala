@@ -1,13 +1,17 @@
-package typingsJapgolly.senchaTouch.Ext
+package typingsJapgolly.senchaTouch.Ext.draw
 
+import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object draw {
-  type IAnimator = typingsJapgolly.senchaTouch.Ext.IBase
-  type IDraw = typingsJapgolly.senchaTouch.Ext.IBase
-  type ISolver = typingsJapgolly.senchaTouch.Ext.IBase
-  type ITextMeasurer = typingsJapgolly.senchaTouch.Ext.IBase
-  type ITimingFunctions = typingsJapgolly.senchaTouch.Ext.IBase
-}
+
+type IAnimator = IBase
+
+type IDraw = IBase
+
+type ISolver = IBase
+
+type ITextMeasurer = IBase
+
+type ITimingFunctions = IBase

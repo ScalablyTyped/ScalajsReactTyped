@@ -1,82 +1,145 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MultiViewCalendarOptions extends js.Object {
+trait MultiViewCalendarOptions extends StObject {
+  
   var change: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.undefined
+  
   var culture: js.UndefOr[String] = js.undefined
-  var dates: js.UndefOr[js.Any] = js.undefined
+  
+  var dates: js.UndefOr[Any] = js.undefined
+  
   var depth: js.UndefOr[String] = js.undefined
-  var disableDates: js.UndefOr[js.Any | js.Function] = js.undefined
+  
+  var disableDates: js.UndefOr[Any | js.Function] = js.undefined
+  
   var footer: js.UndefOr[String | js.Function] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var max: js.UndefOr[js.Date] = js.undefined
+  
   var messages: js.UndefOr[MultiViewCalendarMessages] = js.undefined
+  
   var min: js.UndefOr[js.Date] = js.undefined
+  
   var month: js.UndefOr[MultiViewCalendarMonth] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigate: js.UndefOr[js.Function1[/* e */ MultiViewCalendarEvent, Unit]] = js.undefined
+  
   var range: js.UndefOr[MultiViewCalendarRange] = js.undefined
-  var selectDates: js.UndefOr[js.Any] = js.undefined
+  
+  var selectDates: js.UndefOr[Any] = js.undefined
+  
   var selectable: js.UndefOr[String] = js.undefined
+  
   var showViewHeader: js.UndefOr[Boolean] = js.undefined
+  
   var start: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[js.Date] = js.undefined
+  
   var views: js.UndefOr[Double] = js.undefined
+  
   var weekNumber: js.UndefOr[Boolean] = js.undefined
 }
-
 object MultiViewCalendarOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ MultiViewCalendarEvent => Callback = null,
-    culture: String = null,
-    dates: js.Any = null,
-    depth: String = null,
-    disableDates: js.Any | js.Function = null,
-    footer: String | js.Function = null,
-    format: String = null,
-    max: js.Date = null,
-    messages: MultiViewCalendarMessages = null,
-    min: js.Date = null,
-    month: MultiViewCalendarMonth = null,
-    name: String = null,
-    navigate: /* e */ MultiViewCalendarEvent => Callback = null,
-    range: MultiViewCalendarRange = null,
-    selectDates: js.Any = null,
-    selectable: String = null,
-    showViewHeader: js.UndefOr[Boolean] = js.undefined,
-    start: String = null,
-    value: js.Date = null,
-    views: Int | Double = null,
-    weekNumber: js.UndefOr[Boolean] = js.undefined
-  ): MultiViewCalendarOptions = {
+  
+  inline def apply(): MultiViewCalendarOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.MultiViewCalendarEvent) => change(t0).runNow()))
-    if (culture != null) __obj.updateDynamic("culture")(culture.asInstanceOf[js.Any])
-    if (dates != null) __obj.updateDynamic("dates")(dates.asInstanceOf[js.Any])
-    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
-    if (disableDates != null) __obj.updateDynamic("disableDates")(disableDates.asInstanceOf[js.Any])
-    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (navigate != null) __obj.updateDynamic("navigate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.MultiViewCalendarEvent) => navigate(t0).runNow()))
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (selectDates != null) __obj.updateDynamic("selectDates")(selectDates.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showViewHeader)) __obj.updateDynamic("showViewHeader")(showViewHeader.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
-    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiViewCalendarOptions]
   }
+  
+  extension [Self <: MultiViewCalendarOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ MultiViewCalendarEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ MultiViewCalendarEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setCulture(value: String): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
+    
+    inline def setCultureUndefined: Self = StObject.set(x, "culture", js.undefined)
+    
+    inline def setDates(value: Any): Self = StObject.set(x, "dates", value.asInstanceOf[js.Any])
+    
+    inline def setDatesUndefined: Self = StObject.set(x, "dates", js.undefined)
+    
+    inline def setDepth(value: String): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
+    
+    inline def setDisableDates(value: Any | js.Function): Self = StObject.set(x, "disableDates", value.asInstanceOf[js.Any])
+    
+    inline def setDisableDatesUndefined: Self = StObject.set(x, "disableDates", js.undefined)
+    
+    inline def setFooter(value: String | js.Function): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setMax(value: js.Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMessages(value: MultiViewCalendarMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMin(value: js.Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMonth(value: MultiViewCalendarMonth): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigate(value: /* e */ MultiViewCalendarEvent => Callback): Self = StObject.set(x, "navigate", js.Any.fromFunction1((t0: /* e */ MultiViewCalendarEvent) => value(t0).runNow()))
+    
+    inline def setNavigateUndefined: Self = StObject.set(x, "navigate", js.undefined)
+    
+    inline def setRange(value: MultiViewCalendarRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setSelectDates(value: Any): Self = StObject.set(x, "selectDates", value.asInstanceOf[js.Any])
+    
+    inline def setSelectDatesUndefined: Self = StObject.set(x, "selectDates", js.undefined)
+    
+    inline def setSelectable(value: String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setShowViewHeader(value: Boolean): Self = StObject.set(x, "showViewHeader", value.asInstanceOf[js.Any])
+    
+    inline def setShowViewHeaderUndefined: Self = StObject.set(x, "showViewHeader", js.undefined)
+    
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setValue(value: js.Date): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setViews(value: Double): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+    
+    inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+    
+    inline def setWeekNumber(value: Boolean): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
+    
+    inline def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
+  }
 }
-

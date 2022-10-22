@@ -1,23 +1,25 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "RetrieveCatalogObjectResponse")
 @js.native
-class RetrieveCatalogObjectResponse () extends js.Object {
+open class RetrieveCatalogObjectResponse () extends StObject {
+  
   /**
-    * The set of [Error](#type-error)s encountered.
+    * Any errors that occurred during the request.
     */
   var errors: js.UndefOr[js.Array[js.Error]] = js.native
+  
   /**
-    * The [CatalogObject](#type-catalogobject)s returned.
+    * The `CatalogObject`s returned.
     */
   var `object`: js.UndefOr[CatalogObject] = js.native
+  
   /**
-    * A list of [CatalogObject](#type-catalogobject)s referenced by the object in the `object` field.
+    * A list of `CatalogObject`s referenced by the object in the `object` field.
     */
   var related_objects: js.UndefOr[js.Array[CatalogObject]] = js.native
 }
-

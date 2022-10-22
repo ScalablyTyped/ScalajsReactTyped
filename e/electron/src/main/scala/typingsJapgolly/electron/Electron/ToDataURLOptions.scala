@@ -1,22 +1,27 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToDataURLOptions extends js.Object {
+trait ToDataURLOptions extends StObject {
+  
   /**
     * Defaults to 1.0.
     */
   var scaleFactor: js.UndefOr[Double] = js.undefined
 }
-
 object ToDataURLOptions {
-  @scala.inline
-  def apply(scaleFactor: Int | Double = null): ToDataURLOptions = {
+  
+  inline def apply(): ToDataURLOptions = {
     val __obj = js.Dynamic.literal()
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToDataURLOptions]
   }
+  
+  extension [Self <: ToDataURLOptions](x: Self) {
+    
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+  }
 }
-

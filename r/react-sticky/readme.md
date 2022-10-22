@@ -10,15 +10,12 @@ Sticky component for React
 | ------------------ | :-------------: |
 | Full name          | react-sticky |
 | Keywords           | react-component, React, Sticky |
-| # releases         | 3 |
-| # dependents       | 71 |
-| # downloads        | 3711295 |
-| # stars            | 20 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 413480.0 |
+| # stars            | 2578.0 |
 
 ## Links
-- [Homepage](https://github.com/captivationsoftware/react-sticky)
-- [Bugs](https://github.com/captivationsoftware/react-sticky/issues)
-- [Repository](https://github.com/captivationsoftware/react-sticky)
 - [Npm](https://www.npmjs.com/package/react-sticky)
     
 

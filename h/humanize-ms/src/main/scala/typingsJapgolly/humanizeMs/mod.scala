@@ -1,13 +1,15 @@
 package typingsJapgolly.humanizeMs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("humanize-ms", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(input: String): Double = js.native
-  def apply(input: Double): Double = js.native
+object mod {
+  
+  inline def apply(input: String): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  inline def apply(input: Double): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  
+  @JSImport("humanize-ms", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

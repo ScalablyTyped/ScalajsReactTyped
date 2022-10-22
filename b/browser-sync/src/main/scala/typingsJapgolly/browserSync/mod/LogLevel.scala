@@ -1,8 +1,8 @@
 package typingsJapgolly.browserSync.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.browserSync.browserSyncStrings.info
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.browserSync.browserSyncStrings.warn
   - typingsJapgolly.browserSync.browserSyncStrings.silent
 */
-trait LogLevel extends js.Object
-
+trait LogLevel extends StObject
 object LogLevel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def debug: typingsJapgolly.browserSync.browserSyncStrings.debug = this.cast("debug")
-  @scala.inline
-  def info: typingsJapgolly.browserSync.browserSyncStrings.info = this.cast("info")
-  @scala.inline
-  def silent: typingsJapgolly.browserSync.browserSyncStrings.silent = this.cast("silent")
-  @scala.inline
-  def warn: typingsJapgolly.browserSync.browserSyncStrings.warn = this.cast("warn")
+  
+  inline def debug: typingsJapgolly.browserSync.browserSyncStrings.debug = "debug".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.debug]
+  
+  inline def info: typingsJapgolly.browserSync.browserSyncStrings.info = "info".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.info]
+  
+  inline def silent: typingsJapgolly.browserSync.browserSyncStrings.silent = "silent".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.silent]
+  
+  inline def warn: typingsJapgolly.browserSync.browserSyncStrings.warn = "warn".asInstanceOf[typingsJapgolly.browserSync.browserSyncStrings.warn]
 }
-

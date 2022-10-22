@@ -1,31 +1,54 @@
 package typingsJapgolly.awsSdkClientXrayNode
 
-import typingsJapgolly.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkClientXrayNode.typesOutputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientXrayNode.typesServiceMod.UnmarshalledService
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/types/GetTraceGraphOutput", JSImport.Namespace)
-@js.native
-object typesGetTraceGraphOutputMod extends js.Object {
-  @js.native
-  trait GetTraceGraphOutput extends OutputTypesUnion {
+object typesGetTraceGraphOutputMod {
+  
+  trait GetTraceGraphOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>Pagination token. Not used.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
+    
     /**
       * <p>The services that have processed one of the specified requests.</p>
       */
-    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.native
+    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.undefined
   }
-  
+  object GetTraceGraphOutput {
+    
+    inline def apply($metadata: ResponseMetadata): GetTraceGraphOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetTraceGraphOutput]
+    }
+    
+    extension [Self <: GetTraceGraphOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      
+      inline def setServices(value: js.Array[UnmarshalledService]): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+      
+      inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+      
+      inline def setServicesVarargs(value: UnmarshalledService*): Self = StObject.set(x, "Services", js.Array(value*))
+    }
+  }
 }
-

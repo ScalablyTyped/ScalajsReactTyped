@@ -1,13 +1,13 @@
 package typingsJapgolly.awsSdkUrlParserUniversal
 
-import typingsJapgolly.awsSdkTypes.utilMod.UrlParser
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.UrlParser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/url-parser-universal", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/url-parser-universal", "parseUrl")
+  @js.native
   val parseUrl: UrlParser = js.native
 }
-

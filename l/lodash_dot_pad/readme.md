@@ -10,10 +10,10 @@ The lodash method `_.pad` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.pad |
 | Keywords           | lodash-modularized, pad |
-| # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 28638791 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2286056.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

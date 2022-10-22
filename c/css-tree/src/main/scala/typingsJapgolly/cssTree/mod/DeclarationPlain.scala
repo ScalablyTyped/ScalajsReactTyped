@@ -1,32 +1,39 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait DeclarationPlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
+  
   var important: Boolean | String
+  
   var property: String
+  
   @JSName("type")
   var type_DeclarationPlain: typingsJapgolly.cssTree.cssTreeStrings.Declaration
+  
   var value: ValuePlain | Raw
 }
-
 object DeclarationPlain {
-  @scala.inline
-  def apply(
-    important: Boolean | String,
-    property: String,
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.Declaration,
-    value: ValuePlain | Raw,
-    loc: CssLocation = null
-  ): DeclarationPlain = {
+  
+  inline def apply(important: Boolean | String, property: String, value: ValuePlain | Raw): DeclarationPlain = {
     val __obj = js.Dynamic.literal(important = important.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Declaration")
     __obj.asInstanceOf[DeclarationPlain]
   }
+  
+  extension [Self <: DeclarationPlain](x: Self) {
+    
+    inline def setImportant(value: Boolean | String): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.Declaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: ValuePlain | Raw): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateTimeFieldFormatType extends js.Object
-
+sealed trait DateTimeFieldFormatType extends StObject
 @JSGlobal("SP.DateTimeFieldFormatType")
 @js.native
-object DateTimeFieldFormatType extends js.Object {
-  @js.native
-  sealed trait dateOnly extends DateTimeFieldFormatType
+object DateTimeFieldFormatType extends StObject {
   
   @js.native
-  sealed trait dateTime extends DateTimeFieldFormatType
+  sealed trait dateOnly
+    extends StObject
+       with DateTimeFieldFormatType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DateTimeFieldFormatType with Double] = js.native
-  /* 0 */ @js.native
-  object dateOnly extends TopLevel[dateOnly with Double]
-  
-  /* 1 */ @js.native
-  object dateTime extends TopLevel[dateTime with Double]
-  
+  @js.native
+  sealed trait dateTime
+    extends StObject
+       with DateTimeFieldFormatType
 }
-

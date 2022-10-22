@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KeySize extends js.Object
-
+sealed trait KeySize extends StObject
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeySize")
 @js.native
-object KeySize extends js.Object {
-  @js.native
-  sealed trait invalid extends KeySize
+object KeySize extends StObject {
   
   @js.native
-  sealed trait rsa2048 extends KeySize
+  sealed trait invalid
+    extends StObject
+       with KeySize
   
   @js.native
-  sealed trait rsa4096 extends KeySize
+  sealed trait rsa2048
+    extends StObject
+       with KeySize
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeySize with Double] = js.native
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 1 */ @js.native
-  object rsa2048 extends TopLevel[rsa2048 with Double]
-  
-  /* 2 */ @js.native
-  object rsa4096 extends TopLevel[rsa4096 with Double]
-  
+  @js.native
+  sealed trait rsa4096
+    extends StObject
+       with KeySize
 }
-

@@ -1,26 +1,34 @@
 package typingsJapgolly.sjcl.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SjclECCBasic extends js.Object {
-  var publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey]
-  var secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
+trait SjclECCBasic extends StObject {
+  
   def generateKeys(cn: String): SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]
+  
+  var publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey]
+  
+  var secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
 }
-
 object SjclECCBasic {
-  @scala.inline
-  def apply(
-    generateKeys: String => CallbackTo[SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]],
+  
+  inline def apply(
+    generateKeys: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey],
     publicKey: SjclECCPublicKeyFactory[SjclECCPublicKey],
     secretKey: SjclECCSecretKeyFactory[SjclECCSecretKey]
   ): SjclECCBasic = {
-    val __obj = js.Dynamic.literal(publicKey = publicKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
-    __obj.updateDynamic("generateKeys")(js.Any.fromFunction1((t0: java.lang.String) => generateKeys(t0).runNow()))
+    val __obj = js.Dynamic.literal(generateKeys = js.Any.fromFunction1(generateKeys), publicKey = publicKey.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SjclECCBasic]
   }
+  
+  extension [Self <: SjclECCBasic](x: Self) {
+    
+    inline def setGenerateKeys(value: String => SjclKeysGenerator[SjclECCPublicKey, SjclECCSecretKey]): Self = StObject.set(x, "generateKeys", js.Any.fromFunction1(value))
+    
+    inline def setPublicKey(value: SjclECCPublicKeyFactory[SjclECCPublicKey]): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    
+    inline def setSecretKey(value: SjclECCSecretKeyFactory[SjclECCSecretKey]): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+  }
 }
-

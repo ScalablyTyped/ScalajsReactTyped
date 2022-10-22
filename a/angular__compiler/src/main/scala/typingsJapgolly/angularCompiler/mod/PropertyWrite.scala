@@ -1,18 +1,24 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "PropertyWrite")
 @js.native
-class PropertyWrite protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.PropertyWrite {
+open class PropertyWrite protected () extends ASTWithName {
   def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
-    receiver: typingsJapgolly.angularCompiler.astMod.AST,
+    span: ParseSpan,
+    sourceSpan: AbsoluteSourceSpan,
+    nameSpan: AbsoluteSourceSpan,
+    receiver: AST,
     name: String,
-    value: typingsJapgolly.angularCompiler.astMod.AST
+    value: AST
   ) = this()
+  
+  var name: String = js.native
+  
+  var receiver: AST = js.native
+  
+  var value: AST = js.native
 }
-

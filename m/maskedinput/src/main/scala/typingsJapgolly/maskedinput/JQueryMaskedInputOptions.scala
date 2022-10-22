@@ -1,89 +1,157 @@
 package typingsJapgolly.maskedinput
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQueryMaskedInputOptions extends js.Object {
+trait JQueryMaskedInputOptions extends StObject {
+  
   var alias: js.UndefOr[String] = js.undefined
+  
   var autoUnmask: js.UndefOr[Boolean] = js.undefined
+  
   var clearIncomplete: js.UndefOr[Boolean] = js.undefined
+  
   var clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined
+  
   var greedy: js.UndefOr[Boolean] = js.undefined
-  var isComplete: js.UndefOr[js.Function2[/* buffer */ js.Any, /* options */ js.Any, js.Object]] = js.undefined
+  
+  var isComplete: js.UndefOr[js.Function2[/* buffer */ Any, /* options */ Any, js.Object]] = js.undefined
+  
   var mask: js.UndefOr[String] = js.undefined
+  
   var numeric: js.UndefOr[Boolean] = js.undefined
-  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ js.Any, Unit]] = js.undefined
-  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ js.Any, Unit]] = js.undefined
-  var onKeyValidation: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
-  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ js.Any, /* unmaskedValue */ js.Any, Unit]] = js.undefined
+  
+  var onBeforeMask: js.UndefOr[js.Function1[/* initialValue */ Any, Unit]] = js.undefined
+  
+  var onBeforePaste: js.UndefOr[js.Function1[/* pastedValue */ Any, Unit]] = js.undefined
+  
+  var onKeyValidation: js.UndefOr[js.Function1[/* result */ Any, Unit]] = js.undefined
+  
+  var onUnMask: js.UndefOr[js.Function2[/* maskedValue */ Any, /* unmaskedValue */ Any, Unit]] = js.undefined
+  
   var oncleared: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
+  
+  var oncomplete: js.UndefOr[js.Function1[/* value */ js.UndefOr[Any], Unit]] = js.undefined
+  
   var onincomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
+  
   var radixPoint: js.UndefOr[String] = js.undefined
+  
   var repeat: js.UndefOr[Double] = js.undefined
+  
   var rightAlignNumerics: js.UndefOr[Boolean] = js.undefined
+  
   var showMaskOnFocus: js.UndefOr[Boolean] = js.undefined
+  
   var showMaskOnHover: js.UndefOr[Boolean] = js.undefined
+  
   var showToolTip: js.UndefOr[Boolean] = js.undefined
+  
   var skipOptionalPartCharacter: js.UndefOr[String] = js.undefined
 }
-
 object JQueryMaskedInputOptions {
-  @scala.inline
-  def apply(
-    alias: String = null,
-    autoUnmask: js.UndefOr[Boolean] = js.undefined,
-    clearIncomplete: js.UndefOr[Boolean] = js.undefined,
-    clearMaskOnLostFocus: js.UndefOr[Boolean] = js.undefined,
-    greedy: js.UndefOr[Boolean] = js.undefined,
-    isComplete: (/* buffer */ js.Any, /* options */ js.Any) => CallbackTo[js.Object] = null,
-    mask: String = null,
-    numeric: js.UndefOr[Boolean] = js.undefined,
-    onBeforeMask: /* initialValue */ js.Any => Callback = null,
-    onBeforePaste: /* pastedValue */ js.Any => Callback = null,
-    onKeyValidation: /* result */ js.Any => Callback = null,
-    onUnMask: (/* maskedValue */ js.Any, /* unmaskedValue */ js.Any) => Callback = null,
-    oncleared: js.UndefOr[Callback] = js.undefined,
-    oncomplete: /* value */ js.UndefOr[js.Any] => Callback = null,
-    onincomplete: js.UndefOr[Callback] = js.undefined,
-    placeholder: String = null,
-    radixPoint: String = null,
-    repeat: Int | Double = null,
-    rightAlignNumerics: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnFocus: js.UndefOr[Boolean] = js.undefined,
-    showMaskOnHover: js.UndefOr[Boolean] = js.undefined,
-    showToolTip: js.UndefOr[Boolean] = js.undefined,
-    skipOptionalPartCharacter: String = null
-  ): JQueryMaskedInputOptions = {
+  
+  inline def apply(): JQueryMaskedInputOptions = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoUnmask)) __obj.updateDynamic("autoUnmask")(autoUnmask.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearIncomplete)) __obj.updateDynamic("clearIncomplete")(clearIncomplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearMaskOnLostFocus)) __obj.updateDynamic("clearMaskOnLostFocus")(clearMaskOnLostFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(greedy)) __obj.updateDynamic("greedy")(greedy.asInstanceOf[js.Any])
-    if (isComplete != null) __obj.updateDynamic("isComplete")(js.Any.fromFunction2((t0: /* buffer */ js.Any, t1: /* options */ js.Any) => isComplete(t0, t1).runNow()))
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric.asInstanceOf[js.Any])
-    if (onBeforeMask != null) __obj.updateDynamic("onBeforeMask")(js.Any.fromFunction1((t0: /* initialValue */ js.Any) => onBeforeMask(t0).runNow()))
-    if (onBeforePaste != null) __obj.updateDynamic("onBeforePaste")(js.Any.fromFunction1((t0: /* pastedValue */ js.Any) => onBeforePaste(t0).runNow()))
-    if (onKeyValidation != null) __obj.updateDynamic("onKeyValidation")(js.Any.fromFunction1((t0: /* result */ js.Any) => onKeyValidation(t0).runNow()))
-    if (onUnMask != null) __obj.updateDynamic("onUnMask")(js.Any.fromFunction2((t0: /* maskedValue */ js.Any, t1: /* unmaskedValue */ js.Any) => onUnMask(t0, t1).runNow()))
-    oncleared.foreach(p => __obj.updateDynamic("oncleared")(p.toJsFn))
-    if (oncomplete != null) __obj.updateDynamic("oncomplete")(js.Any.fromFunction1((t0: /* value */ js.UndefOr[js.Any]) => oncomplete(t0).runNow()))
-    onincomplete.foreach(p => __obj.updateDynamic("onincomplete")(p.toJsFn))
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (radixPoint != null) __obj.updateDynamic("radixPoint")(radixPoint.asInstanceOf[js.Any])
-    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
-    if (!js.isUndefined(rightAlignNumerics)) __obj.updateDynamic("rightAlignNumerics")(rightAlignNumerics.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnFocus)) __obj.updateDynamic("showMaskOnFocus")(showMaskOnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMaskOnHover)) __obj.updateDynamic("showMaskOnHover")(showMaskOnHover.asInstanceOf[js.Any])
-    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip.asInstanceOf[js.Any])
-    if (skipOptionalPartCharacter != null) __obj.updateDynamic("skipOptionalPartCharacter")(skipOptionalPartCharacter.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryMaskedInputOptions]
   }
+  
+  extension [Self <: JQueryMaskedInputOptions](x: Self) {
+    
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setAutoUnmask(value: Boolean): Self = StObject.set(x, "autoUnmask", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUnmaskUndefined: Self = StObject.set(x, "autoUnmask", js.undefined)
+    
+    inline def setClearIncomplete(value: Boolean): Self = StObject.set(x, "clearIncomplete", value.asInstanceOf[js.Any])
+    
+    inline def setClearIncompleteUndefined: Self = StObject.set(x, "clearIncomplete", js.undefined)
+    
+    inline def setClearMaskOnLostFocus(value: Boolean): Self = StObject.set(x, "clearMaskOnLostFocus", value.asInstanceOf[js.Any])
+    
+    inline def setClearMaskOnLostFocusUndefined: Self = StObject.set(x, "clearMaskOnLostFocus", js.undefined)
+    
+    inline def setGreedy(value: Boolean): Self = StObject.set(x, "greedy", value.asInstanceOf[js.Any])
+    
+    inline def setGreedyUndefined: Self = StObject.set(x, "greedy", js.undefined)
+    
+    inline def setIsComplete(value: (/* buffer */ Any, /* options */ Any) => js.Object): Self = StObject.set(x, "isComplete", js.Any.fromFunction2(value))
+    
+    inline def setIsCompleteUndefined: Self = StObject.set(x, "isComplete", js.undefined)
+    
+    inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    
+    inline def setNumeric(value: Boolean): Self = StObject.set(x, "numeric", value.asInstanceOf[js.Any])
+    
+    inline def setNumericUndefined: Self = StObject.set(x, "numeric", js.undefined)
+    
+    inline def setOnBeforeMask(value: /* initialValue */ Any => Callback): Self = StObject.set(x, "onBeforeMask", js.Any.fromFunction1((t0: /* initialValue */ Any) => value(t0).runNow()))
+    
+    inline def setOnBeforeMaskUndefined: Self = StObject.set(x, "onBeforeMask", js.undefined)
+    
+    inline def setOnBeforePaste(value: /* pastedValue */ Any => Callback): Self = StObject.set(x, "onBeforePaste", js.Any.fromFunction1((t0: /* pastedValue */ Any) => value(t0).runNow()))
+    
+    inline def setOnBeforePasteUndefined: Self = StObject.set(x, "onBeforePaste", js.undefined)
+    
+    inline def setOnKeyValidation(value: /* result */ Any => Callback): Self = StObject.set(x, "onKeyValidation", js.Any.fromFunction1((t0: /* result */ Any) => value(t0).runNow()))
+    
+    inline def setOnKeyValidationUndefined: Self = StObject.set(x, "onKeyValidation", js.undefined)
+    
+    inline def setOnUnMask(value: (/* maskedValue */ Any, /* unmaskedValue */ Any) => Callback): Self = StObject.set(x, "onUnMask", js.Any.fromFunction2((t0: /* maskedValue */ Any, t1: /* unmaskedValue */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnUnMaskUndefined: Self = StObject.set(x, "onUnMask", js.undefined)
+    
+    inline def setOncleared(value: Callback): Self = StObject.set(x, "oncleared", value.toJsFn)
+    
+    inline def setOnclearedUndefined: Self = StObject.set(x, "oncleared", js.undefined)
+    
+    inline def setOncomplete(value: /* value */ js.UndefOr[Any] => Callback): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1((t0: /* value */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def setOncompleteUndefined: Self = StObject.set(x, "oncomplete", js.undefined)
+    
+    inline def setOnincomplete(value: Callback): Self = StObject.set(x, "onincomplete", value.toJsFn)
+    
+    inline def setOnincompleteUndefined: Self = StObject.set(x, "onincomplete", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setRadixPoint(value: String): Self = StObject.set(x, "radixPoint", value.asInstanceOf[js.Any])
+    
+    inline def setRadixPointUndefined: Self = StObject.set(x, "radixPoint", js.undefined)
+    
+    inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    
+    inline def setRightAlignNumerics(value: Boolean): Self = StObject.set(x, "rightAlignNumerics", value.asInstanceOf[js.Any])
+    
+    inline def setRightAlignNumericsUndefined: Self = StObject.set(x, "rightAlignNumerics", js.undefined)
+    
+    inline def setShowMaskOnFocus(value: Boolean): Self = StObject.set(x, "showMaskOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setShowMaskOnFocusUndefined: Self = StObject.set(x, "showMaskOnFocus", js.undefined)
+    
+    inline def setShowMaskOnHover(value: Boolean): Self = StObject.set(x, "showMaskOnHover", value.asInstanceOf[js.Any])
+    
+    inline def setShowMaskOnHoverUndefined: Self = StObject.set(x, "showMaskOnHover", js.undefined)
+    
+    inline def setShowToolTip(value: Boolean): Self = StObject.set(x, "showToolTip", value.asInstanceOf[js.Any])
+    
+    inline def setShowToolTipUndefined: Self = StObject.set(x, "showToolTip", js.undefined)
+    
+    inline def setSkipOptionalPartCharacter(value: String): Self = StObject.set(x, "skipOptionalPartCharacter", value.asInstanceOf[js.Any])
+    
+    inline def setSkipOptionalPartCharacterUndefined: Self = StObject.set(x, "skipOptionalPartCharacter", js.undefined)
+  }
 }
-

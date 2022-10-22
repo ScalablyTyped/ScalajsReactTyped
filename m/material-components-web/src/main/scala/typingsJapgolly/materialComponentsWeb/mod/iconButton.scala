@@ -1,52 +1,95 @@
 package typingsJapgolly.materialComponentsWeb.mod
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.materialIconButton.AnonARIAPRESSED
-import typingsJapgolly.materialIconButton.AnonICONBUTTONON
-import typingsJapgolly.materialIconButton.PartialMDCIconButtonToggl
-import typingsJapgolly.materialIconButton.adapterMod.MDCIconButtonToggleAdapter
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialIconButton.anon.PartialMDCIconButtonToggl
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-components-web", "iconButton")
-@js.native
-object iconButton extends js.Object {
-  @js.native
-  class MDCIconButtonToggle ()
-    extends typingsJapgolly.materialIconButton.mod.MDCIconButtonToggle
+object iconButton {
   
+  @JSImport("material-components-web", "iconButton.default")
   @js.native
-  class MDCIconButtonToggleFoundation ()
+  open class default ()
+    extends typingsJapgolly.materialIconButton.mod.default {
+    def this(adapter: PartialMDCIconButtonToggl) = this()
+  }
+  
+  @JSImport("material-components-web", "iconButton.MDCIconButtonToggle")
+  @js.native
+  open class MDCIconButtonToggle protected ()
+    extends typingsJapgolly.materialIconButton.mod.MDCIconButtonToggle {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialIconButton.foundationMod.MDCIconButtonToggleFoundation,
+      args: Any*
+    ) = this()
+  }
+  /* static members */
+  object MDCIconButtonToggle {
+    
+    @JSImport("material-components-web", "iconButton.MDCIconButtonToggle")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: HTMLElement): typingsJapgolly.materialIconButton.componentMod.MDCIconButtonToggle = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialIconButton.componentMod.MDCIconButtonToggle]
+  }
+  
+  @JSImport("material-components-web", "iconButton.MDCIconButtonToggleFoundation")
+  @js.native
+  open class MDCIconButtonToggleFoundation ()
     extends typingsJapgolly.materialIconButton.mod.MDCIconButtonToggleFoundation {
     def this(adapter: PartialMDCIconButtonToggl) = this()
   }
   
-  /* static members */
-  @js.native
-  object MDCIconButtonToggle extends js.Object {
-    def attachTo(root: HTMLElement): typingsJapgolly.materialIconButton.componentMod.MDCIconButtonToggle = js.native
+  object cssClasses {
+    
+    @JSImport("material-components-web", "iconButton.cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "iconButton.cssClasses.ICON_BUTTON_ON")
+    @js.native
+    def ICON_BUTTON_ON: String = js.native
+    inline def ICON_BUTTON_ON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_BUTTON_ON")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "iconButton.cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
-  /* static members */
-  @js.native
-  object MDCIconButtonToggleFoundation extends js.Object {
-    val cssClasses: AnonICONBUTTONON = js.native
-    val defaultAdapter: MDCIconButtonToggleAdapter = js.native
-    val strings: AnonARIAPRESSED = js.native
+  object strings {
+    
+    @JSImport("material-components-web", "iconButton.strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("material-components-web", "iconButton.strings.ARIA_LABEL")
+    @js.native
+    def ARIA_LABEL: String = js.native
+    inline def ARIA_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_LABEL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "iconButton.strings.ARIA_PRESSED")
+    @js.native
+    def ARIA_PRESSED: String = js.native
+    inline def ARIA_PRESSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_PRESSED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "iconButton.strings.CHANGE_EVENT")
+    @js.native
+    def CHANGE_EVENT: String = js.native
+    inline def CHANGE_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CHANGE_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "iconButton.strings.DATA_ARIA_LABEL_OFF")
+    @js.native
+    def DATA_ARIA_LABEL_OFF: String = js.native
+    inline def DATA_ARIA_LABEL_OFF_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_ARIA_LABEL_OFF")(x.asInstanceOf[js.Any])
+    
+    @JSImport("material-components-web", "iconButton.strings.DATA_ARIA_LABEL_ON")
+    @js.native
+    def DATA_ARIA_LABEL_ON: String = js.native
+    inline def DATA_ARIA_LABEL_ON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DATA_ARIA_LABEL_ON")(x.asInstanceOf[js.Any])
   }
-  
-  @js.native
-  object cssClasses extends js.Object {
-    var ICON_BUTTON_ON: String = js.native
-    var ROOT: String = js.native
-  }
-  
-  @js.native
-  object strings extends js.Object {
-    var ARIA_PRESSED: String = js.native
-    var CHANGE_EVENT: String = js.native
-  }
-  
 }
-

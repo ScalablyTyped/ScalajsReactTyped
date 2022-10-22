@@ -1,26 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaStreamTrackEventInit extends EventInit {
-  var track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack
+trait MediaStreamTrackEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var track: org.scalajs.dom.MediaStreamTrack
 }
-
 object MediaStreamTrackEventInit {
-  @scala.inline
-  def apply(
-    track: org.scalajs.dom.experimental.mediastream.MediaStreamTrack,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): MediaStreamTrackEventInit = {
+  
+  inline def apply(track: org.scalajs.dom.MediaStreamTrack): MediaStreamTrackEventInit = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackEventInit]
   }
+  
+  extension [Self <: MediaStreamTrackEventInit](x: Self) {
+    
+    inline def setTrack(value: org.scalajs.dom.MediaStreamTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+  }
 }
-

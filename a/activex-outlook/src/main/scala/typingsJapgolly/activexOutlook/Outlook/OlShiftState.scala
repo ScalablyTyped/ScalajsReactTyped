@@ -1,27 +1,23 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
 */
-trait OlShiftState extends js.Object
-
+trait OlShiftState extends StObject
 object OlShiftState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olShiftStateAltMask: `4` = this.cast(4)
-  @scala.inline
-  def olShiftStateCtrlMask: `2` = this.cast(2)
-  @scala.inline
-  def olShiftStateShiftMask: `1` = this.cast(1)
+  
+  inline def olShiftStateAltMask: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olShiftStateCtrlMask: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olShiftStateShiftMask: `1` = 1.asInstanceOf[`1`]
 }
-

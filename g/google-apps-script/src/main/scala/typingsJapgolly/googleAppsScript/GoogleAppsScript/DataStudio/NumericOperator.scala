@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN
   - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL
 */
-trait NumericOperator extends js.Object
-
+trait NumericOperator extends StObject
 object NumericOperator {
-  @scala.inline
-  def NUMERIC_GREATER_THAN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = this.cast("NUMERIC_GREATER_THAN")
-  @scala.inline
-  def NUMERIC_GREATER_THAN_OR_EQUAL: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = this.cast("NUMERIC_GREATER_THAN_OR_EQUAL")
-  @scala.inline
-  def NUMERIC_LESS_THAN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = this.cast("NUMERIC_LESS_THAN")
-  @scala.inline
-  def NUMERIC_LESS_THAN_OR_EQUAL: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = this.cast("NUMERIC_LESS_THAN_OR_EQUAL")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def NUMERIC_GREATER_THAN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN = "NUMERIC_GREATER_THAN".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN]
+  
+  inline def NUMERIC_GREATER_THAN_OR_EQUAL: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL = "NUMERIC_GREATER_THAN_OR_EQUAL".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_GREATER_THAN_OR_EQUAL]
+  
+  inline def NUMERIC_LESS_THAN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN = "NUMERIC_LESS_THAN".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN]
+  
+  inline def NUMERIC_LESS_THAN_OR_EQUAL: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL = "NUMERIC_LESS_THAN_OR_EQUAL".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.NUMERIC_LESS_THAN_OR_EQUAL]
 }
-

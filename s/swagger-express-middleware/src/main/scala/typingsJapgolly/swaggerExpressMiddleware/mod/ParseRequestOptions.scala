@@ -1,54 +1,72 @@
 package typingsJapgolly.swaggerExpressMiddleware.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParseRequestOptions extends js.Object {
+trait ParseRequestOptions extends StObject {
+  
   /**
     * Cookie parser options
     */
   var cookie: js.UndefOr[CookieParserOptionItem] = js.undefined
+  
   /**
     * JSON body parser options
     */
   var json: js.UndefOr[JsonParseOptionItem] = js.undefined
+  
   /**
     * Multipart form data parser options
     */
   var multipart: js.UndefOr[MulterOptions] = js.undefined
+  
   /**
     * Raw body parser options
     */
   var raw: js.UndefOr[RawParserOptionItem] = js.undefined
+  
   /**
     * Plain-text body parser options
     */
   var text: js.UndefOr[TextParserOptionItem] = js.undefined
+  
   /**
     * URL-encoded body parser options
     */
   var urlencoded: js.UndefOr[UrlEncodedOptionItem] = js.undefined
 }
-
 object ParseRequestOptions {
-  @scala.inline
-  def apply(
-    cookie: CookieParserOptionItem = null,
-    json: JsonParseOptionItem = null,
-    multipart: MulterOptions = null,
-    raw: RawParserOptionItem = null,
-    text: TextParserOptionItem = null,
-    urlencoded: UrlEncodedOptionItem = null
-  ): ParseRequestOptions = {
+  
+  inline def apply(): ParseRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
-    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
-    if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
-    if (raw != null) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseRequestOptions]
   }
+  
+  extension [Self <: ParseRequestOptions](x: Self) {
+    
+    inline def setCookie(value: CookieParserOptionItem): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    
+    inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+    
+    inline def setJson(value: JsonParseOptionItem): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    
+    inline def setMultipart(value: MulterOptions): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    
+    inline def setRaw(value: RawParserOptionItem): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setText(value: TextParserOptionItem): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUrlencoded(value: UrlEncodedOptionItem): Self = StObject.set(x, "urlencoded", value.asInstanceOf[js.Any])
+    
+    inline def setUrlencodedUndefined: Self = StObject.set(x, "urlencoded", js.undefined)
+  }
 }
-

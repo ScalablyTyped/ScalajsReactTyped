@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CameraContextTakePhotoResult extends js.Object {
+trait CameraContextTakePhotoResult extends StObject {
+  
   /**
     * 照片文件的临时路径，安卓是jpg图片格式，ios是png
     */
   var tempImagePath: js.UndefOr[String] = js.undefined
 }
-
 object CameraContextTakePhotoResult {
-  @scala.inline
-  def apply(tempImagePath: String = null): CameraContextTakePhotoResult = {
+  
+  inline def apply(): CameraContextTakePhotoResult = {
     val __obj = js.Dynamic.literal()
-    if (tempImagePath != null) __obj.updateDynamic("tempImagePath")(tempImagePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CameraContextTakePhotoResult]
   }
+  
+  extension [Self <: CameraContextTakePhotoResult](x: Self) {
+    
+    inline def setTempImagePath(value: String): Self = StObject.set(x, "tempImagePath", value.asInstanceOf[js.Any])
+    
+    inline def setTempImagePathUndefined: Self = StObject.set(x, "tempImagePath", js.undefined)
+  }
 }
-

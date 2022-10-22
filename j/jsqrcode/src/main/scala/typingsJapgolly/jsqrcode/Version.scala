@@ -1,39 +1,65 @@
 package typingsJapgolly.jsqrcode
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Version")
-@js.native
-class Version protected () extends js.Object {
-  def this(
-    versionNumber: Double,
+trait Version extends StObject {
+  
+  val AlignmentPatternCenters: js.Array[Double]
+  
+  val DimensionForVersion: Double
+  
+  val TotalCodewords: Double
+  
+  val VersionNumber: Double
+  
+  var alignmentPatternCenters: js.Array[Double]
+  
+  def buildFunctionPattern(): BitMatrix
+  
+  var ecBlocks: js.Array[ECBlocks]
+  
+  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks
+  
+  var versionNumber: Double
+}
+object Version {
+  
+  inline def apply(
+    AlignmentPatternCenters: js.Array[Double],
+    DimensionForVersion: Double,
+    TotalCodewords: Double,
+    VersionNumber: Double,
     alignmentPatternCenters: js.Array[Double],
-    ecBlocks1: ECBlocks,
-    ecBlocks2: ECBlocks,
-    ecBlocks3: ECBlocks,
-    ecBlocks4: ECBlocks
-  ) = this()
-  val AlignmentPatternCenters: js.Array[Double] = js.native
-  val DimensionForVersion: Double = js.native
-  val TotalCodewords: Double = js.native
-  val VersionNumber: Double = js.native
-  var alignmentPatternCenters: js.Array[Double] = js.native
-  var ecBlocks: js.Array[ECBlocks] = js.native
-  var versionNumber: Double = js.native
-  def buildFunctionPattern(): BitMatrix = js.native
-  def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks = js.native
+    buildFunctionPattern: CallbackTo[BitMatrix],
+    ecBlocks: js.Array[ECBlocks],
+    getECBlocksForLevel: ErrorCorrectionLevel => ECBlocks,
+    versionNumber: Double
+  ): Version = {
+    val __obj = js.Dynamic.literal(AlignmentPatternCenters = AlignmentPatternCenters.asInstanceOf[js.Any], DimensionForVersion = DimensionForVersion.asInstanceOf[js.Any], TotalCodewords = TotalCodewords.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any], alignmentPatternCenters = alignmentPatternCenters.asInstanceOf[js.Any], buildFunctionPattern = buildFunctionPattern.toJsFn, ecBlocks = ecBlocks.asInstanceOf[js.Any], getECBlocksForLevel = js.Any.fromFunction1(getECBlocksForLevel), versionNumber = versionNumber.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Version]
+  }
+  
+  extension [Self <: Version](x: Self) {
+    
+    inline def setAlignmentPatternCenters(value: js.Array[Double]): Self = StObject.set(x, "AlignmentPatternCenters", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentPatternCentersVarargs(value: Double*): Self = StObject.set(x, "AlignmentPatternCenters", js.Array(value*))
+    
+    inline def setBuildFunctionPattern(value: CallbackTo[BitMatrix]): Self = StObject.set(x, "buildFunctionPattern", value.toJsFn)
+    
+    inline def setDimensionForVersion(value: Double): Self = StObject.set(x, "DimensionForVersion", value.asInstanceOf[js.Any])
+    
+    inline def setEcBlocks(value: js.Array[ECBlocks]): Self = StObject.set(x, "ecBlocks", value.asInstanceOf[js.Any])
+    
+    inline def setEcBlocksVarargs(value: ECBlocks*): Self = StObject.set(x, "ecBlocks", js.Array(value*))
+    
+    inline def setGetECBlocksForLevel(value: ErrorCorrectionLevel => ECBlocks): Self = StObject.set(x, "getECBlocksForLevel", js.Any.fromFunction1(value))
+    
+    inline def setTotalCodewords(value: Double): Self = StObject.set(x, "TotalCodewords", value.asInstanceOf[js.Any])
+    
+    inline def setVersionNumber(value: Double): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+  }
 }
-
-/* static members */
-@JSGlobal("Version")
-@js.native
-object Version extends js.Object {
-  val VERSIONS: js.Array[Version] = js.native
-  val VERSION_DECODE_INFO: js.Array[js.Any] = js.native
-  def decodeVersionInformation(versionBits: Double): Version = js.native
-  def getProvisionalVersionForDimension(dimension: Double): Version = js.native
-  def getVersionForNumber(versionNumber: Double): Version = js.native
-}
-

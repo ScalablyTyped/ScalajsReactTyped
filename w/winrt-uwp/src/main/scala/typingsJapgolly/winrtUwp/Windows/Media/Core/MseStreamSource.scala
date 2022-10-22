@@ -1,8 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MseStreamSource extends js.Object
-
+trait MseStreamSource extends StObject

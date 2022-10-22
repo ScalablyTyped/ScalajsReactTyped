@@ -1,28 +1,30 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaKeyMessageEventInit extends EventInit {
-  var message: scala.scalajs.js.typedarray.ArrayBuffer
+trait MediaKeyMessageEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var message: js.typedarray.ArrayBuffer
+  
+  /* standard dom */
   var messageType: MediaKeyMessageType
 }
-
 object MediaKeyMessageEventInit {
-  @scala.inline
-  def apply(
-    message: scala.scalajs.js.typedarray.ArrayBuffer,
-    messageType: MediaKeyMessageType,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined
-  ): MediaKeyMessageEventInit = {
+  
+  inline def apply(message: js.typedarray.ArrayBuffer, messageType: MediaKeyMessageType): MediaKeyMessageEventInit = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], messageType = messageType.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaKeyMessageEventInit]
   }
+  
+  extension [Self <: MediaKeyMessageEventInit](x: Self) {
+    
+    inline def setMessage(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageType(value: MediaKeyMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+  }
 }
-

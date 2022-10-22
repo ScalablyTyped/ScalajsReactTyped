@@ -1,21 +1,17 @@
 package typingsJapgolly.keycloakJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.keycloakJs.keycloakJsStrings.`login-required`
   - typingsJapgolly.keycloakJs.keycloakJsStrings.`check-sso`
 */
-trait KeycloakOnLoad extends js.Object
-
+trait KeycloakOnLoad extends StObject
 object KeycloakOnLoad {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `check-sso`: typingsJapgolly.keycloakJs.keycloakJsStrings.`check-sso` = this.cast("check-sso")
-  @scala.inline
-  def `login-required`: typingsJapgolly.keycloakJs.keycloakJsStrings.`login-required` = this.cast("login-required")
+  
+  inline def `check-sso`: typingsJapgolly.keycloakJs.keycloakJsStrings.`check-sso` = "check-sso".asInstanceOf[typingsJapgolly.keycloakJs.keycloakJsStrings.`check-sso`]
+  
+  inline def `login-required`: typingsJapgolly.keycloakJs.keycloakJsStrings.`login-required` = "login-required".asInstanceOf[typingsJapgolly.keycloakJs.keycloakJsStrings.`login-required`]
 }
-

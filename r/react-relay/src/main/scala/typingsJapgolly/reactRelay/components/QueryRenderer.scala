@@ -1,59 +1,53 @@
 package typingsJapgolly.reactRelay.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactRelay.AnonCacheConfig
-import typingsJapgolly.reactRelay.AnonError
-import typingsJapgolly.reactRelay.mod.FetchPolicy
-import typingsJapgolly.reactRelay.mod.QueryRendererProps
-import typingsJapgolly.relayRuntime.relayModernGraphQLTagMod.GraphQLTaggedNode
-import typingsJapgolly.relayRuntime.relayRuntimeTypesMod.CacheConfig
-import typingsJapgolly.relayRuntime.relayRuntimeTypesMod.OperationType
-import typingsJapgolly.relayRuntime.relayStoreTypesMod.Environment
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactRelay.anon.CacheConfig
+import typingsJapgolly.reactRelay.anon.Error
+import typingsJapgolly.reactRelay.legacyMod.QueryRendererProps
+import typingsJapgolly.relayRuntime.libQueryRelayModernGraphQLTagMod.GraphQLTaggedNode
+import typingsJapgolly.relayRuntime.libStoreRelayStoreTypesMod.Environment
+import typingsJapgolly.relayRuntime.libUtilReaderNodeMod.ReaderFragment
+import typingsJapgolly.relayRuntime.libUtilRelayConcreteNodeMod.ConcreteRequest
+import typingsJapgolly.relayRuntime.libUtilRelayRuntimeTypesMod.FetchPolicy
+import typingsJapgolly.relayRuntime.libUtilRelayRuntimeTypesMod.OperationType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object QueryRenderer {
-  def apply[TOperation /* <: OperationType */](
+  
+  inline def apply[TOperation /* <: OperationType */](
     environment: Environment,
-    variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any,
-    render: AnonError[TOperation] => CallbackTo[Node],
-    cacheConfig: CacheConfig = null,
-    fetchPolicy: FetchPolicy = null,
-    query: GraphQLTaggedNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    AnonCacheConfig with QueryRendererProps[TOperation], 
-    typingsJapgolly.reactRelay.mod.QueryRenderer[TOperation], 
-    Unit, 
-    AnonCacheConfig with QueryRendererProps[TOperation]
-  ] = {
-    val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("render")(js.Any.fromFunction1((t0: typingsJapgolly.reactRelay.AnonError[TOperation]) => render(t0).runNow()))
-    if (cacheConfig != null) __obj.updateDynamic("cacheConfig")(cacheConfig.asInstanceOf[js.Any])
-    if (fetchPolicy != null) __obj.updateDynamic("fetchPolicy")(fetchPolicy.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactRelay.AnonCacheConfig with typingsJapgolly.reactRelay.mod.QueryRendererProps[TOperation], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactRelay.mod.QueryRenderer[TOperation]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactRelay.AnonCacheConfig with typingsJapgolly.reactRelay.mod.QueryRendererProps[TOperation]])(children: _*)
+    render: Error[TOperation] => Node,
+    variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
+  ): Builder[TOperation] = {
+    val __props = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], render = js.Any.fromFunction1(render), variables = variables.asInstanceOf[js.Any])
+    new Builder[TOperation](js.Array(this.component, __props.asInstanceOf[CacheConfig & QueryRendererProps[TOperation]]))
   }
+  
   @JSImport("react-relay", "QueryRenderer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[TOperation /* <: OperationType */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactRelay.mod.QueryRenderer[TOperation]] {
+    
+    inline def cacheConfig(value: typingsJapgolly.relayRuntime.libUtilRelayRuntimeTypesMod.CacheConfig): this.type = set("cacheConfig", value.asInstanceOf[js.Any])
+    
+    inline def cacheConfigNull: this.type = set("cacheConfig", null)
+    
+    inline def fetchPolicy(value: FetchPolicy): this.type = set("fetchPolicy", value.asInstanceOf[js.Any])
+    
+    inline def query(value: GraphQLTaggedNode): this.type = set("query", value.asInstanceOf[js.Any])
+    
+    inline def queryCallbackTo(value: CallbackTo[ReaderFragment | ConcreteRequest]): this.type = set("query", value.toJsFn)
+    
+    inline def queryNull: this.type = set("query", null)
+  }
+  
+  def withProps[TOperation /* <: OperationType */](p: CacheConfig & QueryRendererProps[TOperation]): Builder[TOperation] = new Builder[TOperation](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

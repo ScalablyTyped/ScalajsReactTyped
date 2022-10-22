@@ -1,12 +1,15 @@
 package typingsJapgolly.triePrefixTree
 
+import typingsJapgolly.triePrefixTree.anon.CountPrefix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("trie-prefix-tree", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(strings: js.Array[String]): AnonCountPrefix = js.native
+object mod {
+  
+  @JSImport("trie-prefix-tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(strings: js.Array[String]): CountPrefix = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(strings.asInstanceOf[js.Any]).asInstanceOf[CountPrefix]
 }
-

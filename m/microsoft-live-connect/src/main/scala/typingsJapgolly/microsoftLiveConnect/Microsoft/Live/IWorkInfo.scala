@@ -1,30 +1,36 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
-import typingsJapgolly.microsoftLiveConnect.AnonName
+import typingsJapgolly.microsoftLiveConnect.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains work information for one employer.
   */
-trait IWorkInfo extends js.Object {
+trait IWorkInfo extends StObject {
+  
   /**
     * Info about the user's employer.
     */
-  var employer: AnonName
+  var employer: Name
+  
   /**
     * Info about the user's work position.
     */
-  var position: AnonName
+  var position: Name
 }
-
 object IWorkInfo {
-  @scala.inline
-  def apply(employer: AnonName, position: AnonName): IWorkInfo = {
-    val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
   
+  inline def apply(employer: Name, position: Name): IWorkInfo = {
+    val __obj = js.Dynamic.literal(employer = employer.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWorkInfo]
   }
+  
+  extension [Self <: IWorkInfo](x: Self) {
+    
+    inline def setEmployer(value: Name): Self = StObject.set(x, "employer", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Name): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an action to open a link with some options.
@@ -26,24 +25,27 @@ import scala.scalajs.js.annotation._
   *             .setOnClose(CardService.OnClose.NOTHING));
   *         .build();
   */
-trait OpenLink extends js.Object {
+trait OpenLink extends StObject {
+  
   def setOnClose(onClose: OnClose): OpenLink
+  
   def setOpenAs(openAs: OpenAs): OpenLink
+  
   def setUrl(url: String): OpenLink
 }
-
 object OpenLink {
-  @scala.inline
-  def apply(
-    setOnClose: OnClose => CallbackTo[OpenLink],
-    setOpenAs: OpenAs => CallbackTo[OpenLink],
-    setUrl: String => CallbackTo[OpenLink]
-  ): OpenLink = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setOnClose")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OnClose) => setOnClose(t0).runNow()))
-    __obj.updateDynamic("setOpenAs")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenAs) => setOpenAs(t0).runNow()))
-    __obj.updateDynamic("setUrl")(js.Any.fromFunction1((t0: java.lang.String) => setUrl(t0).runNow()))
+  
+  inline def apply(setOnClose: OnClose => OpenLink, setOpenAs: OpenAs => OpenLink, setUrl: String => OpenLink): OpenLink = {
+    val __obj = js.Dynamic.literal(setOnClose = js.Any.fromFunction1(setOnClose), setOpenAs = js.Any.fromFunction1(setOpenAs), setUrl = js.Any.fromFunction1(setUrl))
     __obj.asInstanceOf[OpenLink]
   }
+  
+  extension [Self <: OpenLink](x: Self) {
+    
+    inline def setSetOnClose(value: OnClose => OpenLink): Self = StObject.set(x, "setOnClose", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenAs(value: OpenAs => OpenLink): Self = StObject.set(x, "setOpenAs", js.Any.fromFunction1(value))
+    
+    inline def setSetUrl(value: String => OpenLink): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+  }
 }
-

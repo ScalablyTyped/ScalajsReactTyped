@@ -2,76 +2,137 @@ package typingsJapgolly.mapboxGl.mod
 
 import typingsJapgolly.mapboxGl.mapboxGlStrings.map
 import typingsJapgolly.mapboxGl.mapboxGlStrings.viewport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CirclePaint extends js.Object {
+trait CirclePaint
+  extends StObject
+     with AnyPaint {
+  
   var `circle-blur`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `circle-blur-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `circle-color-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `circle-opacity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-pitch-alignment`: js.UndefOr[map | viewport] = js.undefined
+  
   var `circle-pitch-scale`: js.UndefOr[map | viewport] = js.undefined
+  
   var `circle-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `circle-radius-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-stroke-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
+  
   var `circle-stroke-color-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-stroke-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `circle-stroke-opacity-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-stroke-width`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
+  
   var `circle-stroke-width-transition`: js.UndefOr[Transition] = js.undefined
+  
   var `circle-translate`: js.UndefOr[js.Array[Double] | Expression] = js.undefined
+  
   var `circle-translate-anchor`: js.UndefOr[map | viewport] = js.undefined
+  
   var `circle-translate-transition`: js.UndefOr[Transition] = js.undefined
 }
-
 object CirclePaint {
-  @scala.inline
-  def apply(
-    `circle-blur`: Double | StyleFunction | Expression = null,
-    `circle-blur-transition`: Transition = null,
-    `circle-color`: String | StyleFunction | Expression = null,
-    `circle-color-transition`: Transition = null,
-    `circle-opacity`: Double | StyleFunction | Expression = null,
-    `circle-opacity-transition`: Transition = null,
-    `circle-pitch-alignment`: map | viewport = null,
-    `circle-pitch-scale`: map | viewport = null,
-    `circle-radius`: Double | StyleFunction | Expression = null,
-    `circle-radius-transition`: Transition = null,
-    `circle-stroke-color`: String | StyleFunction | Expression = null,
-    `circle-stroke-color-transition`: Transition = null,
-    `circle-stroke-opacity`: Double | StyleFunction | Expression = null,
-    `circle-stroke-opacity-transition`: Transition = null,
-    `circle-stroke-width`: Double | StyleFunction | Expression = null,
-    `circle-stroke-width-transition`: Transition = null,
-    `circle-translate`: js.Array[Double] | Expression = null,
-    `circle-translate-anchor`: map | viewport = null,
-    `circle-translate-transition`: Transition = null
-  ): CirclePaint = {
+  
+  inline def apply(): CirclePaint = {
     val __obj = js.Dynamic.literal()
-    if (`circle-blur` != null) __obj.updateDynamic("circle-blur")(`circle-blur`.asInstanceOf[js.Any])
-    if (`circle-blur-transition` != null) __obj.updateDynamic("circle-blur-transition")(`circle-blur-transition`.asInstanceOf[js.Any])
-    if (`circle-color` != null) __obj.updateDynamic("circle-color")(`circle-color`.asInstanceOf[js.Any])
-    if (`circle-color-transition` != null) __obj.updateDynamic("circle-color-transition")(`circle-color-transition`.asInstanceOf[js.Any])
-    if (`circle-opacity` != null) __obj.updateDynamic("circle-opacity")(`circle-opacity`.asInstanceOf[js.Any])
-    if (`circle-opacity-transition` != null) __obj.updateDynamic("circle-opacity-transition")(`circle-opacity-transition`.asInstanceOf[js.Any])
-    if (`circle-pitch-alignment` != null) __obj.updateDynamic("circle-pitch-alignment")(`circle-pitch-alignment`.asInstanceOf[js.Any])
-    if (`circle-pitch-scale` != null) __obj.updateDynamic("circle-pitch-scale")(`circle-pitch-scale`.asInstanceOf[js.Any])
-    if (`circle-radius` != null) __obj.updateDynamic("circle-radius")(`circle-radius`.asInstanceOf[js.Any])
-    if (`circle-radius-transition` != null) __obj.updateDynamic("circle-radius-transition")(`circle-radius-transition`.asInstanceOf[js.Any])
-    if (`circle-stroke-color` != null) __obj.updateDynamic("circle-stroke-color")(`circle-stroke-color`.asInstanceOf[js.Any])
-    if (`circle-stroke-color-transition` != null) __obj.updateDynamic("circle-stroke-color-transition")(`circle-stroke-color-transition`.asInstanceOf[js.Any])
-    if (`circle-stroke-opacity` != null) __obj.updateDynamic("circle-stroke-opacity")(`circle-stroke-opacity`.asInstanceOf[js.Any])
-    if (`circle-stroke-opacity-transition` != null) __obj.updateDynamic("circle-stroke-opacity-transition")(`circle-stroke-opacity-transition`.asInstanceOf[js.Any])
-    if (`circle-stroke-width` != null) __obj.updateDynamic("circle-stroke-width")(`circle-stroke-width`.asInstanceOf[js.Any])
-    if (`circle-stroke-width-transition` != null) __obj.updateDynamic("circle-stroke-width-transition")(`circle-stroke-width-transition`.asInstanceOf[js.Any])
-    if (`circle-translate` != null) __obj.updateDynamic("circle-translate")(`circle-translate`.asInstanceOf[js.Any])
-    if (`circle-translate-anchor` != null) __obj.updateDynamic("circle-translate-anchor")(`circle-translate-anchor`.asInstanceOf[js.Any])
-    if (`circle-translate-transition` != null) __obj.updateDynamic("circle-translate-transition")(`circle-translate-transition`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CirclePaint]
   }
+  
+  extension [Self <: CirclePaint](x: Self) {
+    
+    inline def `setCircle-blur`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-blur", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-blur-transition`(value: Transition): Self = StObject.set(x, "circle-blur-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-blur-transitionUndefined`: Self = StObject.set(x, "circle-blur-transition", js.undefined)
+    
+    inline def `setCircle-blurUndefined`: Self = StObject.set(x, "circle-blur", js.undefined)
+    
+    inline def `setCircle-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "circle-color", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-color-transition`(value: Transition): Self = StObject.set(x, "circle-color-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-color-transitionUndefined`: Self = StObject.set(x, "circle-color-transition", js.undefined)
+    
+    inline def `setCircle-colorUndefined`: Self = StObject.set(x, "circle-color", js.undefined)
+    
+    inline def `setCircle-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-opacity-transition`(value: Transition): Self = StObject.set(x, "circle-opacity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-opacity-transitionUndefined`: Self = StObject.set(x, "circle-opacity-transition", js.undefined)
+    
+    inline def `setCircle-opacityUndefined`: Self = StObject.set(x, "circle-opacity", js.undefined)
+    
+    inline def `setCircle-pitch-alignment`(value: map | viewport): Self = StObject.set(x, "circle-pitch-alignment", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-pitch-alignmentUndefined`: Self = StObject.set(x, "circle-pitch-alignment", js.undefined)
+    
+    inline def `setCircle-pitch-scale`(value: map | viewport): Self = StObject.set(x, "circle-pitch-scale", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-pitch-scaleUndefined`: Self = StObject.set(x, "circle-pitch-scale", js.undefined)
+    
+    inline def `setCircle-radius`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-radius", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-radius-transition`(value: Transition): Self = StObject.set(x, "circle-radius-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-radius-transitionUndefined`: Self = StObject.set(x, "circle-radius-transition", js.undefined)
+    
+    inline def `setCircle-radiusUndefined`: Self = StObject.set(x, "circle-radius", js.undefined)
+    
+    inline def `setCircle-stroke-color`(value: String | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-color", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-color-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-color-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-color-transitionUndefined`: Self = StObject.set(x, "circle-stroke-color-transition", js.undefined)
+    
+    inline def `setCircle-stroke-colorUndefined`: Self = StObject.set(x, "circle-stroke-color", js.undefined)
+    
+    inline def `setCircle-stroke-opacity`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-opacity", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-opacity-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-opacity-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-opacity-transitionUndefined`: Self = StObject.set(x, "circle-stroke-opacity-transition", js.undefined)
+    
+    inline def `setCircle-stroke-opacityUndefined`: Self = StObject.set(x, "circle-stroke-opacity", js.undefined)
+    
+    inline def `setCircle-stroke-width`(value: Double | StyleFunction | Expression): Self = StObject.set(x, "circle-stroke-width", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-width-transition`(value: Transition): Self = StObject.set(x, "circle-stroke-width-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-stroke-width-transitionUndefined`: Self = StObject.set(x, "circle-stroke-width-transition", js.undefined)
+    
+    inline def `setCircle-stroke-widthUndefined`: Self = StObject.set(x, "circle-stroke-width", js.undefined)
+    
+    inline def `setCircle-translate`(value: js.Array[Double] | Expression): Self = StObject.set(x, "circle-translate", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-translate-anchor`(value: map | viewport): Self = StObject.set(x, "circle-translate-anchor", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-translate-anchorUndefined`: Self = StObject.set(x, "circle-translate-anchor", js.undefined)
+    
+    inline def `setCircle-translate-transition`(value: Transition): Self = StObject.set(x, "circle-translate-transition", value.asInstanceOf[js.Any])
+    
+    inline def `setCircle-translate-transitionUndefined`: Self = StObject.set(x, "circle-translate-transition", js.undefined)
+    
+    inline def `setCircle-translateUndefined`: Self = StObject.set(x, "circle-translate", js.undefined)
+    
+    inline def `setCircle-translateVarargs`(value: Double*): Self = StObject.set(x, "circle-translate", js.Array(value*))
+  }
 }
-

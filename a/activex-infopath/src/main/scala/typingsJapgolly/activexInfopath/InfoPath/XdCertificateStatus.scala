@@ -1,35 +1,31 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`0`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`0`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`0`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`4`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`0`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`4`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
 */
-trait XdCertificateStatus extends js.Object
-
+trait XdCertificateStatus extends StObject
 object XdCertificateStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xdCertificateStatusError: `0` = this.cast(0)
-  @scala.inline
-  def xdCertificateStatusExpired: `2` = this.cast(2)
-  @scala.inline
-  def xdCertificateStatusNotTrusted: `3` = this.cast(3)
-  @scala.inline
-  def xdCertificateStatusRevoked: `4` = this.cast(4)
-  @scala.inline
-  def xdCertificateStatusValid: `1` = this.cast(1)
+  
+  inline def xdCertificateStatusError: `0` = 0.asInstanceOf[`0`]
+  
+  inline def xdCertificateStatusExpired: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xdCertificateStatusNotTrusted: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xdCertificateStatusRevoked: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xdCertificateStatusValid: `1` = 1.asInstanceOf[`1`]
 }
-

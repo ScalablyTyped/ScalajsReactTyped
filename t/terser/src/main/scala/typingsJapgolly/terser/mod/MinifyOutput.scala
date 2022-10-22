@@ -1,34 +1,40 @@
 package typingsJapgolly.terser.mod
 
-import typingsJapgolly.sourceMap.mod.RawSourceMap
+import typingsJapgolly.jridgewellGenMapping.distTypesTypesMod.DecodedSourceMap
+import typingsJapgolly.jridgewellGenMapping.distTypesTypesMod.EncodedSourceMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MinifyOutput extends js.Object {
-  var ast: js.UndefOr[ASTNode] = js.undefined
+trait MinifyOutput extends StObject {
+  
   var code: js.UndefOr[String] = js.undefined
-  var error: js.UndefOr[js.Error] = js.undefined
-  var map: js.UndefOr[RawSourceMap | String] = js.undefined
-  var warnings: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var decoded_map: js.UndefOr[DecodedSourceMap | Null] = js.undefined
+  
+  var map: js.UndefOr[EncodedSourceMap | String] = js.undefined
 }
-
 object MinifyOutput {
-  @scala.inline
-  def apply(
-    ast: ASTNode = null,
-    code: String = null,
-    error: js.Error = null,
-    map: RawSourceMap | String = null,
-    warnings: js.Array[String] = null
-  ): MinifyOutput = {
+  
+  inline def apply(): MinifyOutput = {
     val __obj = js.Dynamic.literal()
-    if (ast != null) __obj.updateDynamic("ast")(ast.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinifyOutput]
   }
+  
+  extension [Self <: MinifyOutput](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setDecoded_map(value: DecodedSourceMap): Self = StObject.set(x, "decoded_map", value.asInstanceOf[js.Any])
+    
+    inline def setDecoded_mapNull: Self = StObject.set(x, "decoded_map", null)
+    
+    inline def setDecoded_mapUndefined: Self = StObject.set(x, "decoded_map", js.undefined)
+    
+    inline def setMap(value: EncodedSourceMap | String): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+  }
 }
-

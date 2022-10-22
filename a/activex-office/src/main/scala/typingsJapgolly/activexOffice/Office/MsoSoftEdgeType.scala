@@ -1,47 +1,43 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
 */
-trait MsoSoftEdgeType extends js.Object
-
+trait MsoSoftEdgeType extends StObject
 object MsoSoftEdgeType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoSoftEdgeType1: `1` = this.cast(1)
-  @scala.inline
-  def msoSoftEdgeType2: `2` = this.cast(2)
-  @scala.inline
-  def msoSoftEdgeType3: `3` = this.cast(3)
-  @scala.inline
-  def msoSoftEdgeType4: `4` = this.cast(4)
-  @scala.inline
-  def msoSoftEdgeType5: `5` = this.cast(5)
-  @scala.inline
-  def msoSoftEdgeType6: `6` = this.cast(6)
-  @scala.inline
-  def msoSoftEdgeTypeMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoSoftEdgeTypeNone: `0` = this.cast(0)
+  
+  inline def msoSoftEdgeType1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoSoftEdgeType2: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoSoftEdgeType3: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoSoftEdgeType4: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoSoftEdgeType5: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoSoftEdgeType6: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoSoftEdgeTypeMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def msoSoftEdgeTypeNone: `0` = 0.asInstanceOf[`0`]
 }
-

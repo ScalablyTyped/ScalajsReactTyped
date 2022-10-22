@@ -10,10 +10,10 @@ Reusable hooks
 | ------------------ | :-------------: |
 | Full name          | use-subscription |
 | Keywords           | - |
-| # releases         | 34 |
-| # dependents       | 16 |
-| # downloads        | 1341112 |
-| # stars            | 0 |
+| # releases         | 785 |
+| # dependents       | 0.0 |
+| # downloads        | 8007183.333333333 |
+| # stars            | 196025.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/react#readme)

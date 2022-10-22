@@ -1,23 +1,27 @@
 package typingsJapgolly.angularRouter.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanLoad extends js.Object {
-  def canLoad(route: Route, segments: js.Array[UrlSegment]): Observable_[Boolean] | js.Promise[Boolean] | Boolean
+trait CanLoad extends StObject {
+  
+  def canLoad(route: Route, segments: js.Array[UrlSegment]): (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
 }
-
 object CanLoad {
-  @scala.inline
-  def apply(
-    canLoad: (Route, js.Array[UrlSegment]) => CallbackTo[Observable_[Boolean] | js.Promise[Boolean] | Boolean]
+  
+  inline def apply(
+    canLoad: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
   ): CanLoad = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("canLoad")(js.Any.fromFunction2((t0: typingsJapgolly.angularRouter.mod.Route, t1: js.Array[typingsJapgolly.angularRouter.mod.UrlSegment]) => canLoad(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(canLoad = js.Any.fromFunction2(canLoad))
     __obj.asInstanceOf[CanLoad]
   }
+  
+  extension [Self <: CanLoad](x: Self) {
+    
+    inline def setCanLoad(
+      value: (Route, js.Array[UrlSegment]) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
+    ): Self = StObject.set(x, "canLoad", js.Any.fromFunction2(value))
+  }
 }
-

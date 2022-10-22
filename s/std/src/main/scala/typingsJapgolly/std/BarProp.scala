@@ -1,15 +1,23 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarProp extends js.Object {
+trait BarProp extends StObject {
+  
+  /* standard dom */
   val visible: scala.Boolean
 }
-
-@JSGlobal("BarProp")
-@js.native
-object BarProp extends Instantiable0[BarProp]
-
+object BarProp {
+  
+  inline def apply(visible: scala.Boolean): BarProp = {
+    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BarProp]
+  }
+  
+  extension [Self <: BarProp](x: Self) {
+    
+    inline def setVisible(value: scala.Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
+}

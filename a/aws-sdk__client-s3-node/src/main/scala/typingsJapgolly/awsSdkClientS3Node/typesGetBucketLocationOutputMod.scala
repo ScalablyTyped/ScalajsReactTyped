@@ -11,26 +11,41 @@ import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`eu-west-1`
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`sa-east-1`
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-1`
 import typingsJapgolly.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-2`
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/GetBucketLocationOutput", JSImport.Namespace)
-@js.native
-object typesGetBucketLocationOutputMod extends js.Object {
-  @js.native
+object typesGetBucketLocationOutputMod {
+  
   trait GetBucketLocationOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
+    
     /**
       * _BucketLocationConstraint shape
       */
     var LocationConstraint: js.UndefOr[
         EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
-      ] = js.native
+      ] = js.undefined
   }
-  
+  object GetBucketLocationOutput {
+    
+    inline def apply($metadata: ResponseMetadata): GetBucketLocationOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetBucketLocationOutput]
+    }
+    
+    extension [Self <: GetBucketLocationOutput](x: Self) {
+      
+      inline def setLocationConstraint(
+        value: EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
+      ): Self = StObject.set(x, "LocationConstraint", value.asInstanceOf[js.Any])
+      
+      inline def setLocationConstraintUndefined: Self = StObject.set(x, "LocationConstraint", js.undefined)
+    }
+  }
 }
-

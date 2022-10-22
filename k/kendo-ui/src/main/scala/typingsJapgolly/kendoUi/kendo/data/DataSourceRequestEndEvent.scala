@@ -1,22 +1,32 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceRequestEndEvent extends DataSourceEvent {
-  var response: js.UndefOr[js.Any] = js.undefined
+trait DataSourceRequestEndEvent
+  extends StObject
+     with DataSourceEvent {
+  
+  var response: js.UndefOr[Any] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceRequestEndEvent {
-  @scala.inline
-  def apply(response: js.Any = null, sender: DataSource = null, `type`: String = null): DataSourceRequestEndEvent = {
+  
+  inline def apply(): DataSourceRequestEndEvent = {
     val __obj = js.Dynamic.literal()
-    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceRequestEndEvent]
   }
+  
+  extension [Self <: DataSourceRequestEndEvent](x: Self) {
+    
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

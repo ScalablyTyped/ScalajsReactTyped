@@ -1,30 +1,53 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.Rule")
 @js.native
-class Rule protected () extends js.Object {
+trait Rule extends StObject {
+  
   val Actions: RuleActions = js.native
+  
   val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
+  
   val Class: OlObjectClass = js.native
+  
   val Conditions: RuleConditions = js.native
+  
   var Enabled: Boolean = js.native
+  
   val Exceptions: RuleConditions = js.native
-  var ExecutionOrder: Double = js.native
-  val IsLocalRule: Boolean = js.native
-  var Name: String = js.native
-  @JSName("Outlook.Rule_typekey")
-  var OutlookDotRule_typekey: Rule = js.native
-  val Parent: js.Any = js.native
-  val RuleType: OlRuleType = js.native
-  val Session: NameSpace = js.native
+  
   def Execute(): Unit = js.native
-  def Execute(ShowProgress: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any): Unit = js.native
-  def Execute(ShowProgress: js.Any, Folder: js.Any, IncludeSubfolders: js.Any, RuleExecuteOption: js.Any): Unit = js.native
+  def Execute(ShowProgress: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Any, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Any, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Any, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Any, RuleExecuteOption: Any): Unit = js.native
+  def Execute(ShowProgress: Unit, Folder: Unit, IncludeSubfolders: Unit, RuleExecuteOption: Any): Unit = js.native
+  
+  var ExecutionOrder: Double = js.native
+  
+  val IsLocalRule: Boolean = js.native
+  
+  var Name: String = js.native
+  
+  /* private */ @JSName("Outlook.Rule_typekey")
+  var OutlookDotRule_typekey: Rule = js.native
+  
+  val Parent: Any = js.native
+  
+  val RuleType: OlRuleType = js.native
+  
+  val Session: NameSpace = js.native
 }
-

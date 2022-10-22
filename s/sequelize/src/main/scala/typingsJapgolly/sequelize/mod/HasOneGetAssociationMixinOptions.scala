@@ -1,26 +1,33 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the getAssociation mixin of the hasOne association.
   * @see HasOneGetAssociationMixin
   */
-trait HasOneGetAssociationMixinOptions extends js.Object {
+trait HasOneGetAssociationMixinOptions extends StObject {
+  
   /**
     * Apply a scope on the related model, or remove its default scope by passing false.
     */
-  var scope: js.UndefOr[String | Boolean] = js.undefined
+  var scope: js.UndefOr[String | Boolean | Null] = js.undefined
 }
-
 object HasOneGetAssociationMixinOptions {
-  @scala.inline
-  def apply(scope: String | Boolean = null): HasOneGetAssociationMixinOptions = {
+  
+  inline def apply(): HasOneGetAssociationMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasOneGetAssociationMixinOptions]
   }
+  
+  extension [Self <: HasOneGetAssociationMixinOptions](x: Self) {
+    
+    inline def setScope(value: String | Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.reactMailchimpSubscribe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMailchimpSubscribeStrings {
-  @js.native
-  sealed trait error extends js.Object
   
   @js.native
-  sealed trait sending extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait sending extends StObject
+  inline def sending: sending = "sending".asInstanceOf[sending]
   
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def sending: sending = "sending".asInstanceOf[sending]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
 }
-

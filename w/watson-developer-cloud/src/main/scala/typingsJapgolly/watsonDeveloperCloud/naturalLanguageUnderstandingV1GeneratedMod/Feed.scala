@@ -1,21 +1,26 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** RSS or ATOM feed found on the webpage. */
-trait Feed extends js.Object {
+trait Feed extends StObject {
+  
   /** URL of the RSS or ATOM feed. */
   var link: js.UndefOr[String] = js.undefined
 }
-
 object Feed {
-  @scala.inline
-  def apply(link: String = null): Feed = {
+  
+  inline def apply(): Feed = {
     val __obj = js.Dynamic.literal()
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feed]
   }
+  
+  extension [Self <: Feed](x: Self) {
+    
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+  }
 }
-

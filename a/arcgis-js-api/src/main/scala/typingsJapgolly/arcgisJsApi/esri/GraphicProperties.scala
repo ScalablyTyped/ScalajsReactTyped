@@ -1,69 +1,97 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GraphicProperties extends js.Object {
+trait GraphicProperties extends StObject {
+  
+  /**
+    * The aggregateGeometries contains spatial aggregation geometries when [statistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-StatisticDefinition.html#statisticType) query is executed with `envelope-aggregate`, `centroid-aggregate` and/or `convex-hull-aggregate` statistics type.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#aggregateGeometries)
+    */
+  var aggregateGeometries: js.UndefOr[Any] = js.undefined
+  
   /**
     * Name-value pairs of fields and field values associated with the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes)
     */
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  var attributes: js.UndefOr[Any] = js.undefined
+  
   /**
     * The geometry that defines the graphic's location.
-    * > **Z-values** defined in a geographic or metric coordinate system are expressed in meters. However, in local scenes that use a projected coordinate system, vertical units are assumed to be the same as the horizontal units specified by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry)
     */
   var geometry: js.UndefOr[GeometryProperties] = js.undefined
+  
   /**
     * If applicable, references the layer in which the graphic is stored.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer)
     */
   var layer: js.UndefOr[LayerProperties] = js.undefined
+  
   /**
-    * The template for displaying content in a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when the graphic is selected. The [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) may be used to access a graphic's [attributes](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes) and display their values in the view's default popup. See the documentation for [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) for details on how to display attribute values in the popup.  As of 4.8 to get the actual `popupTemplate` of the graphic, see the [getEffectivePopupTemplate()](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#getEffectivePopupTemplate) method that either returns this value or the `popupTemplate` of the graphic's layer.
+    * The template for displaying content in a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when the graphic is selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#popupTemplate)
     */
   var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
+  
   /**
-    * The [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the graphic. Choosing a symbol for a graphic depends on the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html) type (SceneView or MapView), and the [geometry type](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Geometry.html#type) of the graphic.  Each graphic may have its own symbol specified when the parent layer is a [GraphicsLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GraphicsLayer.html). For a [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) the symbol of each graphic should not be set by the developer since the graphics' rendering properties are determined by the layer's [renderer](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-Renderer.html).
+    * The [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#symbol)
     */
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
+  
   /**
     * Indicates the visibility of the graphic.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object GraphicProperties {
-  @scala.inline
-  def apply(
-    attributes: js.Any = null,
-    geometry: GeometryProperties = null,
-    layer: LayerProperties = null,
-    popupTemplate: PopupTemplateProperties = null,
-    symbol: SymbolProperties = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GraphicProperties = {
+  
+  inline def apply(): GraphicProperties = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (geometry != null) __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
-    if (layer != null) __obj.updateDynamic("layer")(layer.asInstanceOf[js.Any])
-    if (popupTemplate != null) __obj.updateDynamic("popupTemplate")(popupTemplate.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GraphicProperties]
   }
+  
+  extension [Self <: GraphicProperties](x: Self) {
+    
+    inline def setAggregateGeometries(value: Any): Self = StObject.set(x, "aggregateGeometries", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateGeometriesUndefined: Self = StObject.set(x, "aggregateGeometries", js.undefined)
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setGeometry(value: GeometryProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    
+    inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    
+    inline def setSymbol(value: SymbolProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

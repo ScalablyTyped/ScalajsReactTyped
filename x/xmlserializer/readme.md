@@ -11,9 +11,9 @@ Serializes a document to XML/XHTML
 | Full name          | xmlserializer |
 | Keywords           | html, html5, xhtml, xml, serializer, XMLSerializer |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 660498 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 61702.0 |
+| # stars            | 32.0 |
 
 ## Links
 - [Homepage](https://github.com/cburgmer/xmlserializer#readme)

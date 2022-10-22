@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.Activated
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.chromeApps.chromeAppsStrings.NotActivated
   - typingsJapgolly.chromeApps.chromeAppsStrings.PartiallyActivated
 */
-trait ActivationStateType extends js.Object
-
+trait ActivationStateType extends StObject
 object ActivationStateType {
-  @scala.inline
-  def Activated: typingsJapgolly.chromeApps.chromeAppsStrings.Activated = this.cast("Activated")
-  @scala.inline
-  def Activating: typingsJapgolly.chromeApps.chromeAppsStrings.Activating = this.cast("Activating")
-  @scala.inline
-  def NotActivated: typingsJapgolly.chromeApps.chromeAppsStrings.NotActivated = this.cast("NotActivated")
-  @scala.inline
-  def PartiallyActivated: typingsJapgolly.chromeApps.chromeAppsStrings.PartiallyActivated = this.cast("PartiallyActivated")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Activated: typingsJapgolly.chromeApps.chromeAppsStrings.Activated = "Activated".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Activated]
+  
+  inline def Activating: typingsJapgolly.chromeApps.chromeAppsStrings.Activating = "Activating".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Activating]
+  
+  inline def NotActivated: typingsJapgolly.chromeApps.chromeAppsStrings.NotActivated = "NotActivated".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.NotActivated]
+  
+  inline def PartiallyActivated: typingsJapgolly.chromeApps.chromeAppsStrings.PartiallyActivated = "PartiallyActivated".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.PartiallyActivated]
 }
-

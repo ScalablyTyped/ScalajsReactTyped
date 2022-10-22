@@ -1,35 +1,34 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgSchedulerAgendaViewSettings
-  extends /**
-	 * Option for IgSchedulerAgendaViewSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets the number of days shown in AgendaView mode.
-  	 *
-  	 */
+    * Gets/Sets the number of days shown in AgendaView mode.
+    *
+    */
   var dateRangeInterval: js.UndefOr[Double] = js.undefined
 }
-
 object IgSchedulerAgendaViewSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgSchedulerAgendaViewSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    dateRangeInterval: Int | Double = null
-  ): IgSchedulerAgendaViewSettings = {
+  
+  inline def apply(): IgSchedulerAgendaViewSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dateRangeInterval != null) __obj.updateDynamic("dateRangeInterval")(dateRangeInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgSchedulerAgendaViewSettings]
   }
+  
+  extension [Self <: IgSchedulerAgendaViewSettings](x: Self) {
+    
+    inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
+    
+    inline def setDateRangeIntervalUndefined: Self = StObject.set(x, "dateRangeInterval", js.undefined)
+  }
 }
-

@@ -1,15 +1,20 @@
 package typingsJapgolly.validUrl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("valid-url", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isHttpUri(value: js.Any): String = js.native
-  def isHttpsUri(value: js.Any): String = js.native
-  def isUri(value: js.Any): String = js.native
-  def isWebUri(value: js.Any): String = js.native
+object mod {
+  
+  @JSImport("valid-url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def isHttpUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def isHttpsUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttpsUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def isUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def isWebUri(value: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebUri")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }
-

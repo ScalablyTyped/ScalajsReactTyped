@@ -1,27 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "react-loadable-visibility"
-version := "3.0-dt-20191126Z-1a3f4a"
-scalaVersion := "2.13.1"
+version := "3.0-dt-20211202Z-b906f9"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "anymatch" % "1.3-dt-20190212Z-ec06c4",
-  "org.scalablytyped.japgolly" %%% "csstype" % "2.6.6-ec7cc3",
-  "org.scalablytyped.japgolly" %%% "loadable__component" % "5.10-dt-20190711Z-e55a7b",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20190924Z-d18e40",
-  "org.scalablytyped.japgolly" %%% "react" % "16.9-dt-20200227Z-a90427",
-  "org.scalablytyped.japgolly" %%% "react-loadable" % "5.5-dt-20200225Z-c79d3f",
-  "org.scalablytyped.japgolly" %%% "source-list-map" % "v0.1.6-dt-20200225Z-55ccc1",
-  "org.scalablytyped.japgolly" %%% "source-map" % "0.7.3-1b2e50",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "tapable" % "v1.0.0-dt-20200225Z-02549a",
-  "org.scalablytyped.japgolly" %%% "uglify-js" % "3.0-dt-20200225Z-0ef4a7",
-  "org.scalablytyped.japgolly" %%% "webpack" % "4.41-dt-20200227Z-6e50fb",
-  "org.scalablytyped.japgolly" %%% "webpack-sources" % "0.1-dt-20200225Z-a1eff2")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "loadable__component" % "5.13-dt-20211202Z-2d2b41",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20220407Z-2e1de8",
+  "org.scalablytyped.japgolly" %%% "react" % "18.0-dt-20220922Z-c9da7d",
+  "org.scalablytyped.japgolly" %%% "react-loadable" % "5.5-dt-20211202Z-021c03",
+  "org.scalablytyped.japgolly" %%% "scheduler" % "0.16-dt-20211202Z-ea969a",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

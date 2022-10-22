@@ -10,10 +10,10 @@ TextMate helpers
 | ------------------ | :-------------: |
 | Full name          | first-mate |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 21 |
-| # downloads        | 150079 |
-| # stars            | 2 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 16315.0 |
+| # stars            | 86.0 |
 
 ## Links
 - [Homepage](http://atom.github.io/first-mate)

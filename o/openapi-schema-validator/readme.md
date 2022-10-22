@@ -1,7 +1,7 @@
 
 # Scala.js typings for openapi-schema-validator
 
-Typings are for version 3.0.3
+Typings are for version 12.0.2
 
 ## Library description:
 A validator for OpenAPI documents.
@@ -10,10 +10,10 @@ A validator for OpenAPI documents.
 | ------------------ | :-------------: |
 | Full name          | openapi-schema-validator |
 | Keywords           | openapi, schema, validator |
-| # releases         | 9 |
-| # dependents       | 12 |
-| # downloads        | 504163 |
-| # stars            | 0 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 655559.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/kogosoftwarellc/open-api/tree/master/packages/openapi-schema-validator#readme)

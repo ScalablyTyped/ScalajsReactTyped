@@ -1,22 +1,16 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
-import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Printing.PrintManager")
-@js.native
-class PrintManager () extends IPrintManager {
-  /* CompleteClass */
-  override var onprinttaskrequested: js.Any = js.native
+trait PrintManager
+  extends StObject
+     with IPrintManager
+object PrintManager {
+  
+  inline def apply(onprinttaskrequested: Any): PrintManager = {
+    val __obj = js.Dynamic.literal(onprinttaskrequested = onprinttaskrequested.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PrintManager]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Graphics.Printing.PrintManager")
-@js.native
-object PrintManager extends js.Object {
-  def getForCurrentView(): PrintManager = js.native
-  def showPrintUIAsync(): IAsyncOperation[Boolean] = js.native
-}
-

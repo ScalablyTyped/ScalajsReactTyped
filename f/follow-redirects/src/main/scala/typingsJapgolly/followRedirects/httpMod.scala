@@ -2,130 +2,546 @@ package typingsJapgolly.followRedirects
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.NumberDictionary
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.followRedirects.mod.FollowOptions
 import typingsJapgolly.followRedirects.mod.FollowResponse
 import typingsJapgolly.followRedirects.mod.RedirectableRequest
 import typingsJapgolly.node.httpMod.RequestOptions
-import typingsJapgolly.node.netMod.Socket
+import typingsJapgolly.node.nodeColonnetMod.Socket
+import typingsJapgolly.node.urlMod.URL_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("follow-redirects/http", JSImport.Namespace)
-@js.native
-object httpMod extends js.Object {
-  @js.native
-  class Agent ()
-    extends typingsJapgolly.node.httpMod.Agent
+/* Inlined follow-redirects.follow-redirects.Override<{readonly request (options : node.http.RequestOptions): node.http.ClientRequest, readonly request (options : string): node.http.ClientRequest, readonly request (options : node.node:url.URL): node.http.ClientRequest, readonly request (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (options : node.node:url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : node.node:url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly request (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly request (url : node.node:url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly validateHeaderValue (name : string, value : string): void,   IncomingMessage :new (socket : node.node:net.Socket): node.http.IncomingMessage,   ServerResponse :new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>, readonly get (options : node.http.RequestOptions): node.http.ClientRequest, readonly get (options : string): node.http.ClientRequest, readonly get (options : node.node:url.URL): node.http.ClientRequest, readonly get (options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : string, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (options : node.node:url.URL, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : node.node:url.URL, options : node.http.RequestOptions): node.http.ClientRequest, readonly get (url : string, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly get (url : node.node:url.URL, options : node.http.RequestOptions, callback : (res : node.http.IncomingMessage): void): node.http.ClientRequest, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(requestListener : node.http.RequestListener<Request, Response>): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(options : node.http.ServerOptions<Request, Response>): node.http.Server<Request, Response>, readonly createServer <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(options : node.http.ServerOptions<Request, Response>, requestListener : node.http.RequestListener<Request, Response>): node.http.Server<Request, Response>,  readonly STATUS_CODES,   Agent :new (): node.http.Agent,  readonly maxHeaderSize :number,   ClientRequest :new (url : string): node.http.ClientRequest, readonly validateHeaderName (name : string): void,   OutgoingMessage :new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(): node.http.OutgoingMessage<Request>,   Server :new <Request extends new (socket : node.node:net.Socket): node.http.IncomingMessage = new (socket : node.node:net.Socket): node.http.IncomingMessage, Response extends new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request> = new <Request extends node.http.IncomingMessage = node.http.IncomingMessage>(req : / * import warning: RewrittenClass.unapply cls was tparam Request * / any): node.http.ServerResponse<Request>>(): node.http.Server<Request, Response>,   globalAgent :node.http.Agent,  readonly METHODS :std.Array<string>}, follow-redirects.follow-redirects.RedirectScheme<node.http.RequestOptions, node.http.ClientRequest, node.http.IncomingMessage>> */
+object httpMod {
   
+  @JSImport("follow-redirects/http", JSImport.Namespace)
   @js.native
-  class ClientRequest protected ()
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "Agent")
+  @js.native
+  open class Agent ()
+    extends typingsJapgolly.node.httpMod.Agent
+  @JSImport("follow-redirects/http", "Agent")
+  @js.native
+  def Agent: Instantiable0[typingsJapgolly.node.httpMod.Agent] = js.native
+  inline def Agent_=(x: Instantiable0[typingsJapgolly.node.httpMod.Agent]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Agent")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "ClientRequest")
+  @js.native
+  open class ClientRequest protected ()
     extends typingsJapgolly.node.httpMod.ClientRequest {
     def this(url: String) = this()
   }
-  
+  @JSImport("follow-redirects/http", "ClientRequest")
   @js.native
-  class IncomingMessage protected ()
+  def ClientRequest: Instantiable1[/* url */ String, typingsJapgolly.node.httpMod.ClientRequest] = js.native
+  inline def ClientRequest_=(x: Instantiable1[/* url */ String, typingsJapgolly.node.httpMod.ClientRequest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClientRequest")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "IncomingMessage")
+  @js.native
+  open class IncomingMessage protected ()
     extends typingsJapgolly.node.httpMod.IncomingMessage {
     def this(socket: Socket) = this()
   }
-  
+  @JSImport("follow-redirects/http", "IncomingMessage")
   @js.native
-  class OutgoingMessage ()
-    extends typingsJapgolly.node.httpMod.OutgoingMessage
+  def IncomingMessage: Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage] = js.native
+  inline def IncomingMessage_=(x: Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IncomingMessage")(x.asInstanceOf[js.Any])
   
+  @JSImport("follow-redirects/http", "METHODS")
   @js.native
-  class Server ()
-    extends typingsJapgolly.node.httpMod.Server
+  def METHODS: js.Array[String] = js.native
+  inline def METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METHODS")(x.asInstanceOf[js.Any])
   
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "OutgoingMessage")
   @js.native
-  class ServerResponse protected ()
-    extends typingsJapgolly.node.httpMod.ServerResponse {
-    def this(req: typingsJapgolly.node.httpMod.IncomingMessage) = this()
+  open class OutgoingMessage[Request /* <: typingsJapgolly.node.httpMod.IncomingMessage */] ()
+    extends typingsJapgolly.node.httpMod.OutgoingMessage[Request]
+  @JSImport("follow-redirects/http", "OutgoingMessage")
+  @js.native
+  def OutgoingMessage: Instantiable0[
+    typingsJapgolly.node.httpMod.OutgoingMessage[typingsJapgolly.node.httpMod.IncomingMessage]
+  ] = js.native
+  inline def OutgoingMessage_=(
+    x: Instantiable0[
+      typingsJapgolly.node.httpMod.OutgoingMessage[typingsJapgolly.node.httpMod.IncomingMessage]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OutgoingMessage")(x.asInstanceOf[js.Any])
+  
+  @JSImport("follow-redirects/http", "STATUS_CODES")
+  @js.native
+  def STATUS_CODES: Any = js.native
+  inline def STATUS_CODES_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATUS_CODES")(x.asInstanceOf[js.Any])
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "Server")
+  @js.native
+  open class Server[Request /* <: Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+  ] */] ()
+    extends typingsJapgolly.node.httpMod.Server[Request, Response]
+  @JSImport("follow-redirects/http", "Server")
+  @js.native
+  def Server: Instantiable0[
+    typingsJapgolly.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("follow-redirects/http", "ServerResponse")
+  @js.native
+  open class ServerResponse[Request /* <: typingsJapgolly.node.httpMod.IncomingMessage */] protected ()
+    extends typingsJapgolly.node.httpMod.ServerResponse[Request] {
+    def this(req: /* import warning: RewrittenClass.unapply cls was tparam Request */ Any) = this()
   }
-  
-  var METHODS: js.Array[String] = js.native
-  var STATUS_CODES: StringDictionary[js.UndefOr[String]] with NumberDictionary[js.UndefOr[String]] = js.native
-  @JSName("createServer")
-  var createServer_Original: js.Function0[typingsJapgolly.node.httpMod.Server] = js.native
-  var globalAgent: typingsJapgolly.node.httpMod.Agent = js.native
-  var maxHeaderSize: Double = js.native
-  def createServer(): typingsJapgolly.node.httpMod.Server = js.native
-  def get(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def get(
-    options: RequestOptions with FollowOptions[RequestOptions],
-    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def get(options: String): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def get(
-    options: String,
-    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def request(options: RequestOptions with FollowOptions[RequestOptions]): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def request(
-    options: RequestOptions with FollowOptions[RequestOptions],
-    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def request(options: String): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
-  def request(
-    options: String,
-    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage with FollowResponse, Unit]
-  ): RedirectableRequest[
-    typingsJapgolly.node.httpMod.ClientRequest, 
-    typingsJapgolly.node.httpMod.IncomingMessage
-  ] = js.native
+  @JSImport("follow-redirects/http", "ServerResponse")
   @js.native
-  object Agent
-    extends TopLevel[Instantiable0[typingsJapgolly.node.httpMod.Agent]]
+  def ServerResponse: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+  ] = js.native
+  inline def ServerResponse_=(
+    x: Instantiable1[
+      /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+      typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServerResponse")(x.asInstanceOf[js.Any])
   
-  @js.native
-  object ClientRequest
-    extends TopLevel[Instantiable1[/* url */ String, typingsJapgolly.node.httpMod.ClientRequest]]
-  
-  @js.native
-  object IncomingMessage
-    extends TopLevel[Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage]]
-  
-  @js.native
-  object OutgoingMessage
-    extends TopLevel[Instantiable0[typingsJapgolly.node.httpMod.OutgoingMessage]]
-  
-  @js.native
-  object Server
-    extends TopLevel[Instantiable0[typingsJapgolly.node.httpMod.Server]]
-  
-  @js.native
-  object ServerResponse
-    extends TopLevel[
-          Instantiable1[
-            /* req */ typingsJapgolly.node.httpMod.IncomingMessage, 
-            typingsJapgolly.node.httpMod.ServerResponse
-          ]
+  inline def Server_=(
+    x: Instantiable0[
+      typingsJapgolly.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
         ]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Server")(x.asInstanceOf[js.Any])
   
+  inline def createServer[Request /* <: Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage] */, Response /* <: Instantiable1[
+    /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+    typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+  ] */](): typingsJapgolly.node.httpMod.Server[Request, Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[typingsJapgolly.node.httpMod.Server[Request, Response]]
+  @JSImport("follow-redirects/http", "createServer")
+  @js.native
+  def createServer_FhttpMod: js.Function0[
+    typingsJapgolly.node.httpMod.Server[
+      Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage], 
+      Instantiable1[
+        /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+        typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+      ]
+    ]
+  ] = js.native
+  
+  inline def createServer_FhttpMod_=(
+    x: js.Function0[
+      typingsJapgolly.node.httpMod.Server[
+        Instantiable1[/* socket */ Socket, typingsJapgolly.node.httpMod.IncomingMessage], 
+        Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam Request */ /* req */ Any, 
+          typingsJapgolly.node.httpMod.ServerResponse[typingsJapgolly.node.httpMod.IncomingMessage]
+        ]
+      ]
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createServer")(x.asInstanceOf[js.Any])
+  
+  inline def get(url: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  /**
+    * This function has two overloads:
+    * ```typescript
+    * get(options: string | URL | Options, callback)
+    * get(url: string | URL, options: Options, callback)
+    * ```
+    */
+  inline def get(url: String): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(url: String, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: String,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: String,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: String,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: String,
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(url: URL_): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(url: URL_, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: URL_,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: URL_,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: URL_,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def get(
+    url: URL_,
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  
+  @JSImport("follow-redirects/http", "globalAgent")
+  @js.native
+  def globalAgent: typingsJapgolly.node.httpMod.Agent = js.native
+  inline def globalAgent_=(x: typingsJapgolly.node.httpMod.Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
+  
+  @JSImport("follow-redirects/http", "maxHeaderSize")
+  @js.native
+  def maxHeaderSize: Double = js.native
+  inline def maxHeaderSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxHeaderSize")(x.asInstanceOf[js.Any])
+  
+  inline def request(url: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: RequestOptions & FollowOptions[RequestOptions],
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  /**
+    * This function has two overloads:
+    * ```typescript
+    * request(options: string | URL | Options, callback)
+    * request(url: string | URL, options: Options, callback)
+    * ```
+    */
+  inline def request(url: String): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(url: String, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: String,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: String,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: String,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: String,
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(url: URL_): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(url: URL_, options: RequestOptions & FollowOptions[RequestOptions]): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: URL_,
+    options: RequestOptions & FollowOptions[RequestOptions],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: URL_,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: URL_,
+    options: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit],
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  inline def request(
+    url: URL_,
+    options: Unit,
+    callback: js.Function1[/* res */ typingsJapgolly.node.httpMod.IncomingMessage & FollowResponse, Unit]
+  ): RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[RedirectableRequest[
+    typingsJapgolly.node.httpMod.ClientRequest, 
+    typingsJapgolly.node.httpMod.IncomingMessage
+  ]]
+  
+  @JSImport("follow-redirects/http", "validateHeaderName")
+  @js.native
+  def validateHeaderName: js.Function1[/* name */ String, Unit] = js.native
+  inline def validateHeaderName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateHeaderName_=(x: js.Function1[/* name */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateHeaderName")(x.asInstanceOf[js.Any])
+  
+  @JSImport("follow-redirects/http", "validateHeaderValue")
+  @js.native
+  def validateHeaderValue: js.Function2[/* name */ String, /* value */ String, Unit] = js.native
+  inline def validateHeaderValue(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateHeaderValue")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateHeaderValue_=(x: js.Function2[/* name */ String, /* value */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("validateHeaderValue")(x.asInstanceOf[js.Any])
 }
-

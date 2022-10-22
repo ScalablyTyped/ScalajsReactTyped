@@ -10,10 +10,10 @@ ffmpeg static binaries for Mac OSX and Linux and Windows
 | ------------------ | :-------------: |
 | Full name          | ffmpeg-static |
 | Keywords           | ffmpeg, static, library, binary, binaries, mac, linux, windows |
-| # releases         | 9 |
-| # dependents       | 38 |
-| # downloads        | 767129 |
-| # stars            | 5 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 432460.0 |
+| # stars            | 684.0 |
 
 ## Links
 - [Homepage](https://github.com/eugeneware/ffmpeg-static#readme)

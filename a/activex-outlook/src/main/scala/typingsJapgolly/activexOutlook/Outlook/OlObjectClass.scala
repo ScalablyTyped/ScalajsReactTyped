@@ -1,607 +1,603 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`100`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`101`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`102`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`103`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`104`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`105`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`106`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`107`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`108`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`109`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`110`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`111`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`112`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`113`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`114`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`115`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`116`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`117`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`118`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`119`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`120`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`121`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`122`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`123`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`124`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`125`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`126`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`127`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`128`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`129`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`130`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`131`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`132`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`133`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`134`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`135`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`136`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`137`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`138`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`139`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`140`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`141`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`142`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`144`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`145`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`146`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`147`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`148`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`149`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`150`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`151`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`152`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`153`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`154`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`155`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`156`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`157`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`158`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`159`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`160`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`161`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`162`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`163`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`164`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`165`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`166`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`167`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`168`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`169`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`170`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`171`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`172`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`173`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`174`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`175`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`176`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`177`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`178`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`179`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`180`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`181`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`182`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`20`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`21`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`26`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`28`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`29`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`30`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`32`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`33`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`34`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`35`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`36`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`37`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`38`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`39`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`40`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`41`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`42`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`43`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`44`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`45`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`46`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`47`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`48`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`49`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`50`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`51`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`52`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`53`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`54`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`55`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`56`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`57`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`60`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`61`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`62`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`63`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`64`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`65`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`66`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`67`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`68`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`69`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`70`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`71`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`72`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`73`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`74`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`75`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`76`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`77`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`78`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`79`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`80`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`98`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`99`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`100`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`101`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`102`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`103`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`104`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`105`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`106`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`107`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`108`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`109`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`110`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`111`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`112`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`113`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`114`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`115`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`116`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`117`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`118`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`119`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`120`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`121`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`122`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`123`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`124`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`125`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`126`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`127`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`128`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`129`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`130`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`131`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`132`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`133`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`134`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`135`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`136`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`137`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`138`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`139`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`140`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`141`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`142`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`144`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`145`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`146`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`147`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`148`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`149`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`150`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`151`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`152`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`153`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`154`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`155`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`156`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`157`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`158`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`159`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`160`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`161`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`162`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`163`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`164`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`165`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`166`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`167`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`168`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`169`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`170`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`171`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`172`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`173`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`174`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`175`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`176`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`177`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`178`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`179`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`180`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`181`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`182`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`18`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`20`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`21`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`26`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`28`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`29`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`30`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`32`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`33`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`34`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`35`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`36`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`37`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`38`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`39`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`40`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`41`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`42`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`43`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`44`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`45`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`46`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`47`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`48`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`49`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`50`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`51`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`52`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`53`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`54`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`55`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`56`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`57`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`60`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`61`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`62`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`63`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`64`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`65`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`66`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`67`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`68`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`69`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`70`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`71`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`72`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`73`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`74`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`75`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`76`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`77`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`78`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`79`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`80`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`98`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`99`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`105`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`135`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`106`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`32`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`33`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`21`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`8`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`7`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`20`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`170`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`26`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`122`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`5`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`18`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`169`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`147`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`148`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`159`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`151`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`153`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`152`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`130`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`168`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`139`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`138`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`137`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`155`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`136`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`140`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`174`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`175`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`154`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`149`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`150`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`102`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`103`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`40`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`160`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`178`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`182`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`69`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`41`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`30`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`29`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`111`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`110`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`34`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`60`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`15`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`37`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`131`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`129`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`173`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`132`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`128`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`35`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`61`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`98`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`99`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`16`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`42`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`162`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`75`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`76`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`43`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`158`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`124`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`54`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`181`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`53`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`55`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`56`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`57`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`176`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`118`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`167`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`166`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`165`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`164`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`157`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`156`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`125`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`44`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`163`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`144`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`145`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`66`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`65`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`63`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`68`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`67`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`64`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`180`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`36`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`62`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`123`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`45`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`112`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`71`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`70`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`17`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`28`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`101`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`100`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`47`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`46`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`78`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`121`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`115`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`117`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`116`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`127`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`126`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`114`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`77`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`74`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`109`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`133`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`119`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`104`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`179`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`177`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`113`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`107`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`108`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`72`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`73`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`120`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`48`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`49`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`51`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`52`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`50`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`161`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`134`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`172`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`171`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`38`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`39`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`80`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`142`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`141`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`146`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`79`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`105`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`135`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`106`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`32`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`33`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`21`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`8`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`7`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`20`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`170`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`26`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`122`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`5`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`18`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`169`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`147`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`148`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`159`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`151`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`153`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`152`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`130`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`168`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`139`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`138`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`137`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`155`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`136`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`140`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`174`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`175`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`154`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`149`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`150`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`102`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`103`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`40`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`160`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`178`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`182`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`69`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`41`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`30`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`29`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`111`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`110`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`34`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`60`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`15`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`37`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`131`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`129`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`173`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`132`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`128`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`35`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`61`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`98`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`99`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`16`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`42`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`162`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`75`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`76`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`43`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`158`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`124`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`54`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`181`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`53`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`55`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`56`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`57`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`176`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`118`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`167`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`166`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`165`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`164`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`157`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`156`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`125`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`44`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`163`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`144`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`145`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`66`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`65`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`63`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`68`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`67`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`64`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`180`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`36`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`62`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`123`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`45`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`112`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`71`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`70`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`17`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`28`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`101`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`100`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`47`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`46`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`78`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`121`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`115`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`117`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`116`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`127`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`126`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`114`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`77`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`74`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`109`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`133`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`119`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`104`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`179`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`177`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`113`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`107`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`108`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`72`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`73`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`120`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`48`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`49`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`51`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`52`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`50`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`161`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`134`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`172`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`171`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`38`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`39`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`80`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`142`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`141`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`146`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`79`
 */
-trait OlObjectClass extends js.Object
-
+trait OlObjectClass extends StObject
 object OlObjectClass {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olAccount: `105` = this.cast(105)
-  @scala.inline
-  def olAccountRuleCondition: `135` = this.cast(135)
-  @scala.inline
-  def olAccounts: `106` = this.cast(106)
-  @scala.inline
-  def olAction: `32` = this.cast(32)
-  @scala.inline
-  def olActions: `33` = this.cast(33)
-  @scala.inline
-  def olAddressEntries: `21` = this.cast(21)
-  @scala.inline
-  def olAddressEntry: `8` = this.cast(8)
-  @scala.inline
-  def olAddressList: `7` = this.cast(7)
-  @scala.inline
-  def olAddressLists: `20` = this.cast(20)
-  @scala.inline
-  def olAddressRuleCondition: `170` = this.cast(170)
-  @scala.inline
-  def olApplication: `0` = this.cast(0)
-  @scala.inline
-  def olAppointment: `26` = this.cast(26)
-  @scala.inline
-  def olAssignToCategoryRuleAction: `122` = this.cast(122)
-  @scala.inline
-  def olAttachment: `5` = this.cast(5)
-  @scala.inline
-  def olAttachmentSelection: `169` = this.cast(169)
-  @scala.inline
-  def olAttachments: `18` = this.cast(18)
-  @scala.inline
-  def olAutoFormatRule: `147` = this.cast(147)
-  @scala.inline
-  def olAutoFormatRules: `148` = this.cast(148)
-  @scala.inline
-  def olCalendarModule: `159` = this.cast(159)
-  @scala.inline
-  def olCalendarSharing: `151` = this.cast(151)
-  @scala.inline
-  def olCategories: `153` = this.cast(153)
-  @scala.inline
-  def olCategory: `152` = this.cast(152)
-  @scala.inline
-  def olCategoryRuleCondition: `130` = this.cast(130)
-  @scala.inline
-  def olClassBusinessCardView: `168` = this.cast(168)
-  @scala.inline
-  def olClassCalendarView: `139` = this.cast(139)
-  @scala.inline
-  def olClassCardView: `138` = this.cast(138)
-  @scala.inline
-  def olClassIconView: `137` = this.cast(137)
-  @scala.inline
-  def olClassNavigationPane: `155` = this.cast(155)
-  @scala.inline
-  def olClassTableView: `136` = this.cast(136)
-  @scala.inline
-  def olClassTimeLineView: `140` = this.cast(140)
-  @scala.inline
-  def olClassTimeZone: `174` = this.cast(174)
-  @scala.inline
-  def olClassTimeZones: `175` = this.cast(175)
-  @scala.inline
-  def olColumn: `154` = this.cast(154)
-  @scala.inline
-  def olColumnFormat: `149` = this.cast(149)
-  @scala.inline
-  def olColumns: `150` = this.cast(150)
-  @scala.inline
-  def olConflict: `102` = this.cast(102)
-  @scala.inline
-  def olConflicts: `103` = this.cast(103)
-  @scala.inline
-  def olContact: `40` = this.cast(40)
-  @scala.inline
-  def olContactsModule: `160` = this.cast(160)
-  @scala.inline
-  def olConversation: `178` = this.cast(178)
-  @scala.inline
-  def olConversationHeader: `182` = this.cast(182)
-  @scala.inline
-  def olDistributionList: `69` = this.cast(69)
-  @scala.inline
-  def olDocument: `41` = this.cast(41)
-  @scala.inline
-  def olException: `30` = this.cast(30)
-  @scala.inline
-  def olExceptions: `29` = this.cast(29)
-  @scala.inline
-  def olExchangeDistributionList: `111` = this.cast(111)
-  @scala.inline
-  def olExchangeUser: `110` = this.cast(110)
-  @scala.inline
-  def olExplorer: `34` = this.cast(34)
-  @scala.inline
-  def olExplorers: `60` = this.cast(60)
-  @scala.inline
-  def olFolder: `2` = this.cast(2)
-  @scala.inline
-  def olFolders: `15` = this.cast(15)
-  @scala.inline
-  def olFormDescription: `37` = this.cast(37)
-  @scala.inline
-  def olFormNameRuleCondition: `131` = this.cast(131)
-  @scala.inline
-  def olFormRegion: `129` = this.cast(129)
-  @scala.inline
-  def olFromRssFeedRuleCondition: `173` = this.cast(173)
-  @scala.inline
-  def olFromRuleCondition: `132` = this.cast(132)
-  @scala.inline
-  def olImportanceRuleCondition: `128` = this.cast(128)
-  @scala.inline
-  def olInspector: `35` = this.cast(35)
-  @scala.inline
-  def olInspectors: `61` = this.cast(61)
-  @scala.inline
-  def olItemProperties: `98` = this.cast(98)
-  @scala.inline
-  def olItemProperty: `99` = this.cast(99)
-  @scala.inline
-  def olItems: `16` = this.cast(16)
-  @scala.inline
-  def olJournal: `42` = this.cast(42)
-  @scala.inline
-  def olJournalModule: `162` = this.cast(162)
-  @scala.inline
-  def olLink: `75` = this.cast(75)
-  @scala.inline
-  def olLinks: `76` = this.cast(76)
-  @scala.inline
-  def olMail: `43` = this.cast(43)
-  @scala.inline
-  def olMailModule: `158` = this.cast(158)
-  @scala.inline
-  def olMarkAsTaskRuleAction: `124` = this.cast(124)
-  @scala.inline
-  def olMeetingCancellation: `54` = this.cast(54)
-  @scala.inline
-  def olMeetingForwardNotification: `181` = this.cast(181)
-  @scala.inline
-  def olMeetingRequest: `53` = this.cast(53)
-  @scala.inline
-  def olMeetingResponseNegative: `55` = this.cast(55)
-  @scala.inline
-  def olMeetingResponsePositive: `56` = this.cast(56)
-  @scala.inline
-  def olMeetingResponseTentative: `57` = this.cast(57)
-  @scala.inline
-  def olMobile: `176` = this.cast(176)
-  @scala.inline
-  def olMoveOrCopyRuleAction: `118` = this.cast(118)
-  @scala.inline
-  def olNamespace: `1` = this.cast(1)
-  @scala.inline
-  def olNavigationFolder: `167` = this.cast(167)
-  @scala.inline
-  def olNavigationFolders: `166` = this.cast(166)
-  @scala.inline
-  def olNavigationGroup: `165` = this.cast(165)
-  @scala.inline
-  def olNavigationGroups: `164` = this.cast(164)
-  @scala.inline
-  def olNavigationModule: `157` = this.cast(157)
-  @scala.inline
-  def olNavigationModules: `156` = this.cast(156)
-  @scala.inline
-  def olNewItemAlertRuleAction: `125` = this.cast(125)
-  @scala.inline
-  def olNote: `44` = this.cast(44)
-  @scala.inline
-  def olNotesModule: `163` = this.cast(163)
-  @scala.inline
-  def olOrderField: `144` = this.cast(144)
-  @scala.inline
-  def olOrderFields: `145` = this.cast(145)
-  @scala.inline
-  def olOutlookBarGroup: `66` = this.cast(66)
-  @scala.inline
-  def olOutlookBarGroups: `65` = this.cast(65)
-  @scala.inline
-  def olOutlookBarPane: `63` = this.cast(63)
-  @scala.inline
-  def olOutlookBarShortcut: `68` = this.cast(68)
-  @scala.inline
-  def olOutlookBarShortcuts: `67` = this.cast(67)
-  @scala.inline
-  def olOutlookBarStorage: `64` = this.cast(64)
-  @scala.inline
-  def olOutspace: `180` = this.cast(180)
-  @scala.inline
-  def olPages: `36` = this.cast(36)
-  @scala.inline
-  def olPanes: `62` = this.cast(62)
-  @scala.inline
-  def olPlaySoundRuleAction: `123` = this.cast(123)
-  @scala.inline
-  def olPost: `45` = this.cast(45)
-  @scala.inline
-  def olPropertyAccessor: `112` = this.cast(112)
-  @scala.inline
-  def olPropertyPageSite: `70` = this.cast(70)
-  @scala.inline
-  def olPropertyPages: `71` = this.cast(71)
-  @scala.inline
-  def olRecipient: `4` = this.cast(4)
-  @scala.inline
-  def olRecipients: `17` = this.cast(17)
-  @scala.inline
-  def olRecurrencePattern: `28` = this.cast(28)
-  @scala.inline
-  def olReminder: `101` = this.cast(101)
-  @scala.inline
-  def olReminders: `100` = this.cast(100)
-  @scala.inline
-  def olRemote: `47` = this.cast(47)
-  @scala.inline
-  def olReport: `46` = this.cast(46)
-  @scala.inline
-  def olResults: `78` = this.cast(78)
-  @scala.inline
-  def olRow: `121` = this.cast(121)
-  @scala.inline
-  def olRule: `115` = this.cast(115)
-  @scala.inline
-  def olRuleAction: `117` = this.cast(117)
-  @scala.inline
-  def olRuleActions: `116` = this.cast(116)
-  @scala.inline
-  def olRuleCondition: `127` = this.cast(127)
-  @scala.inline
-  def olRuleConditions: `126` = this.cast(126)
-  @scala.inline
-  def olRules: `114` = this.cast(114)
-  @scala.inline
-  def olSearch: `77` = this.cast(77)
-  @scala.inline
-  def olSelectNamesDialog: `109` = this.cast(109)
-  @scala.inline
-  def olSelection: `74` = this.cast(74)
-  @scala.inline
-  def olSendRuleAction: `119` = this.cast(119)
-  @scala.inline
-  def olSenderInAddressListRuleCondition: `133` = this.cast(133)
-  @scala.inline
-  def olSharing: `104` = this.cast(104)
-  @scala.inline
-  def olSimpleItems: `179` = this.cast(179)
-  @scala.inline
-  def olSolutionsModule: `177` = this.cast(177)
-  @scala.inline
-  def olStorageItem: `113` = this.cast(113)
-  @scala.inline
-  def olStore: `107` = this.cast(107)
-  @scala.inline
-  def olStores: `108` = this.cast(108)
-  @scala.inline
-  def olSyncObject: `72` = this.cast(72)
-  @scala.inline
-  def olSyncObjects: `73` = this.cast(73)
-  @scala.inline
-  def olTable: `120` = this.cast(120)
-  @scala.inline
-  def olTask: `48` = this.cast(48)
-  @scala.inline
-  def olTaskRequest: `49` = this.cast(49)
-  @scala.inline
-  def olTaskRequestAccept: `51` = this.cast(51)
-  @scala.inline
-  def olTaskRequestDecline: `52` = this.cast(52)
-  @scala.inline
-  def olTaskRequestUpdate: `50` = this.cast(50)
-  @scala.inline
-  def olTasksModule: `161` = this.cast(161)
-  @scala.inline
-  def olTextRuleCondition: `134` = this.cast(134)
-  @scala.inline
-  def olUserDefinedProperties: `172` = this.cast(172)
-  @scala.inline
-  def olUserDefinedProperty: `171` = this.cast(171)
-  @scala.inline
-  def olUserProperties: `38` = this.cast(38)
-  @scala.inline
-  def olUserProperty: `39` = this.cast(39)
-  @scala.inline
-  def olView: `80` = this.cast(80)
-  @scala.inline
-  def olViewField: `142` = this.cast(142)
-  @scala.inline
-  def olViewFields: `141` = this.cast(141)
-  @scala.inline
-  def olViewFont: `146` = this.cast(146)
-  @scala.inline
-  def olViews: `79` = this.cast(79)
+  
+  inline def olAccount: `105` = 105.asInstanceOf[`105`]
+  
+  inline def olAccountRuleCondition: `135` = 135.asInstanceOf[`135`]
+  
+  inline def olAccounts: `106` = 106.asInstanceOf[`106`]
+  
+  inline def olAction: `32` = 32.asInstanceOf[`32`]
+  
+  inline def olActions: `33` = 33.asInstanceOf[`33`]
+  
+  inline def olAddressEntries: `21` = 21.asInstanceOf[`21`]
+  
+  inline def olAddressEntry: `8` = 8.asInstanceOf[`8`]
+  
+  inline def olAddressList: `7` = 7.asInstanceOf[`7`]
+  
+  inline def olAddressLists: `20` = 20.asInstanceOf[`20`]
+  
+  inline def olAddressRuleCondition: `170` = 170.asInstanceOf[`170`]
+  
+  inline def olApplication: `0` = 0.asInstanceOf[`0`]
+  
+  inline def olAppointment: `26` = 26.asInstanceOf[`26`]
+  
+  inline def olAssignToCategoryRuleAction: `122` = 122.asInstanceOf[`122`]
+  
+  inline def olAttachment: `5` = 5.asInstanceOf[`5`]
+  
+  inline def olAttachmentSelection: `169` = 169.asInstanceOf[`169`]
+  
+  inline def olAttachments: `18` = 18.asInstanceOf[`18`]
+  
+  inline def olAutoFormatRule: `147` = 147.asInstanceOf[`147`]
+  
+  inline def olAutoFormatRules: `148` = 148.asInstanceOf[`148`]
+  
+  inline def olCalendarModule: `159` = 159.asInstanceOf[`159`]
+  
+  inline def olCalendarSharing: `151` = 151.asInstanceOf[`151`]
+  
+  inline def olCategories: `153` = 153.asInstanceOf[`153`]
+  
+  inline def olCategory: `152` = 152.asInstanceOf[`152`]
+  
+  inline def olCategoryRuleCondition: `130` = 130.asInstanceOf[`130`]
+  
+  inline def olClassBusinessCardView: `168` = 168.asInstanceOf[`168`]
+  
+  inline def olClassCalendarView: `139` = 139.asInstanceOf[`139`]
+  
+  inline def olClassCardView: `138` = 138.asInstanceOf[`138`]
+  
+  inline def olClassIconView: `137` = 137.asInstanceOf[`137`]
+  
+  inline def olClassNavigationPane: `155` = 155.asInstanceOf[`155`]
+  
+  inline def olClassTableView: `136` = 136.asInstanceOf[`136`]
+  
+  inline def olClassTimeLineView: `140` = 140.asInstanceOf[`140`]
+  
+  inline def olClassTimeZone: `174` = 174.asInstanceOf[`174`]
+  
+  inline def olClassTimeZones: `175` = 175.asInstanceOf[`175`]
+  
+  inline def olColumn: `154` = 154.asInstanceOf[`154`]
+  
+  inline def olColumnFormat: `149` = 149.asInstanceOf[`149`]
+  
+  inline def olColumns: `150` = 150.asInstanceOf[`150`]
+  
+  inline def olConflict: `102` = 102.asInstanceOf[`102`]
+  
+  inline def olConflicts: `103` = 103.asInstanceOf[`103`]
+  
+  inline def olContact: `40` = 40.asInstanceOf[`40`]
+  
+  inline def olContactsModule: `160` = 160.asInstanceOf[`160`]
+  
+  inline def olConversation: `178` = 178.asInstanceOf[`178`]
+  
+  inline def olConversationHeader: `182` = 182.asInstanceOf[`182`]
+  
+  inline def olDistributionList: `69` = 69.asInstanceOf[`69`]
+  
+  inline def olDocument: `41` = 41.asInstanceOf[`41`]
+  
+  inline def olException: `30` = 30.asInstanceOf[`30`]
+  
+  inline def olExceptions: `29` = 29.asInstanceOf[`29`]
+  
+  inline def olExchangeDistributionList: `111` = 111.asInstanceOf[`111`]
+  
+  inline def olExchangeUser: `110` = 110.asInstanceOf[`110`]
+  
+  inline def olExplorer: `34` = 34.asInstanceOf[`34`]
+  
+  inline def olExplorers: `60` = 60.asInstanceOf[`60`]
+  
+  inline def olFolder: `2` = 2.asInstanceOf[`2`]
+  
+  inline def olFolders: `15` = 15.asInstanceOf[`15`]
+  
+  inline def olFormDescription: `37` = 37.asInstanceOf[`37`]
+  
+  inline def olFormNameRuleCondition: `131` = 131.asInstanceOf[`131`]
+  
+  inline def olFormRegion: `129` = 129.asInstanceOf[`129`]
+  
+  inline def olFromRssFeedRuleCondition: `173` = 173.asInstanceOf[`173`]
+  
+  inline def olFromRuleCondition: `132` = 132.asInstanceOf[`132`]
+  
+  inline def olImportanceRuleCondition: `128` = 128.asInstanceOf[`128`]
+  
+  inline def olInspector: `35` = 35.asInstanceOf[`35`]
+  
+  inline def olInspectors: `61` = 61.asInstanceOf[`61`]
+  
+  inline def olItemProperties: `98` = 98.asInstanceOf[`98`]
+  
+  inline def olItemProperty: `99` = 99.asInstanceOf[`99`]
+  
+  inline def olItems: `16` = 16.asInstanceOf[`16`]
+  
+  inline def olJournal: `42` = 42.asInstanceOf[`42`]
+  
+  inline def olJournalModule: `162` = 162.asInstanceOf[`162`]
+  
+  inline def olLink: `75` = 75.asInstanceOf[`75`]
+  
+  inline def olLinks: `76` = 76.asInstanceOf[`76`]
+  
+  inline def olMail: `43` = 43.asInstanceOf[`43`]
+  
+  inline def olMailModule: `158` = 158.asInstanceOf[`158`]
+  
+  inline def olMarkAsTaskRuleAction: `124` = 124.asInstanceOf[`124`]
+  
+  inline def olMeetingCancellation: `54` = 54.asInstanceOf[`54`]
+  
+  inline def olMeetingForwardNotification: `181` = 181.asInstanceOf[`181`]
+  
+  inline def olMeetingRequest: `53` = 53.asInstanceOf[`53`]
+  
+  inline def olMeetingResponseNegative: `55` = 55.asInstanceOf[`55`]
+  
+  inline def olMeetingResponsePositive: `56` = 56.asInstanceOf[`56`]
+  
+  inline def olMeetingResponseTentative: `57` = 57.asInstanceOf[`57`]
+  
+  inline def olMobile: `176` = 176.asInstanceOf[`176`]
+  
+  inline def olMoveOrCopyRuleAction: `118` = 118.asInstanceOf[`118`]
+  
+  inline def olNamespace: `1` = 1.asInstanceOf[`1`]
+  
+  inline def olNavigationFolder: `167` = 167.asInstanceOf[`167`]
+  
+  inline def olNavigationFolders: `166` = 166.asInstanceOf[`166`]
+  
+  inline def olNavigationGroup: `165` = 165.asInstanceOf[`165`]
+  
+  inline def olNavigationGroups: `164` = 164.asInstanceOf[`164`]
+  
+  inline def olNavigationModule: `157` = 157.asInstanceOf[`157`]
+  
+  inline def olNavigationModules: `156` = 156.asInstanceOf[`156`]
+  
+  inline def olNewItemAlertRuleAction: `125` = 125.asInstanceOf[`125`]
+  
+  inline def olNote: `44` = 44.asInstanceOf[`44`]
+  
+  inline def olNotesModule: `163` = 163.asInstanceOf[`163`]
+  
+  inline def olOrderField: `144` = 144.asInstanceOf[`144`]
+  
+  inline def olOrderFields: `145` = 145.asInstanceOf[`145`]
+  
+  inline def olOutlookBarGroup: `66` = 66.asInstanceOf[`66`]
+  
+  inline def olOutlookBarGroups: `65` = 65.asInstanceOf[`65`]
+  
+  inline def olOutlookBarPane: `63` = 63.asInstanceOf[`63`]
+  
+  inline def olOutlookBarShortcut: `68` = 68.asInstanceOf[`68`]
+  
+  inline def olOutlookBarShortcuts: `67` = 67.asInstanceOf[`67`]
+  
+  inline def olOutlookBarStorage: `64` = 64.asInstanceOf[`64`]
+  
+  inline def olOutspace: `180` = 180.asInstanceOf[`180`]
+  
+  inline def olPages: `36` = 36.asInstanceOf[`36`]
+  
+  inline def olPanes: `62` = 62.asInstanceOf[`62`]
+  
+  inline def olPlaySoundRuleAction: `123` = 123.asInstanceOf[`123`]
+  
+  inline def olPost: `45` = 45.asInstanceOf[`45`]
+  
+  inline def olPropertyAccessor: `112` = 112.asInstanceOf[`112`]
+  
+  inline def olPropertyPageSite: `70` = 70.asInstanceOf[`70`]
+  
+  inline def olPropertyPages: `71` = 71.asInstanceOf[`71`]
+  
+  inline def olRecipient: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olRecipients: `17` = 17.asInstanceOf[`17`]
+  
+  inline def olRecurrencePattern: `28` = 28.asInstanceOf[`28`]
+  
+  inline def olReminder: `101` = 101.asInstanceOf[`101`]
+  
+  inline def olReminders: `100` = 100.asInstanceOf[`100`]
+  
+  inline def olRemote: `47` = 47.asInstanceOf[`47`]
+  
+  inline def olReport: `46` = 46.asInstanceOf[`46`]
+  
+  inline def olResults: `78` = 78.asInstanceOf[`78`]
+  
+  inline def olRow: `121` = 121.asInstanceOf[`121`]
+  
+  inline def olRule: `115` = 115.asInstanceOf[`115`]
+  
+  inline def olRuleAction: `117` = 117.asInstanceOf[`117`]
+  
+  inline def olRuleActions: `116` = 116.asInstanceOf[`116`]
+  
+  inline def olRuleCondition: `127` = 127.asInstanceOf[`127`]
+  
+  inline def olRuleConditions: `126` = 126.asInstanceOf[`126`]
+  
+  inline def olRules: `114` = 114.asInstanceOf[`114`]
+  
+  inline def olSearch: `77` = 77.asInstanceOf[`77`]
+  
+  inline def olSelectNamesDialog: `109` = 109.asInstanceOf[`109`]
+  
+  inline def olSelection: `74` = 74.asInstanceOf[`74`]
+  
+  inline def olSendRuleAction: `119` = 119.asInstanceOf[`119`]
+  
+  inline def olSenderInAddressListRuleCondition: `133` = 133.asInstanceOf[`133`]
+  
+  inline def olSharing: `104` = 104.asInstanceOf[`104`]
+  
+  inline def olSimpleItems: `179` = 179.asInstanceOf[`179`]
+  
+  inline def olSolutionsModule: `177` = 177.asInstanceOf[`177`]
+  
+  inline def olStorageItem: `113` = 113.asInstanceOf[`113`]
+  
+  inline def olStore: `107` = 107.asInstanceOf[`107`]
+  
+  inline def olStores: `108` = 108.asInstanceOf[`108`]
+  
+  inline def olSyncObject: `72` = 72.asInstanceOf[`72`]
+  
+  inline def olSyncObjects: `73` = 73.asInstanceOf[`73`]
+  
+  inline def olTable: `120` = 120.asInstanceOf[`120`]
+  
+  inline def olTask: `48` = 48.asInstanceOf[`48`]
+  
+  inline def olTaskRequest: `49` = 49.asInstanceOf[`49`]
+  
+  inline def olTaskRequestAccept: `51` = 51.asInstanceOf[`51`]
+  
+  inline def olTaskRequestDecline: `52` = 52.asInstanceOf[`52`]
+  
+  inline def olTaskRequestUpdate: `50` = 50.asInstanceOf[`50`]
+  
+  inline def olTasksModule: `161` = 161.asInstanceOf[`161`]
+  
+  inline def olTextRuleCondition: `134` = 134.asInstanceOf[`134`]
+  
+  inline def olUserDefinedProperties: `172` = 172.asInstanceOf[`172`]
+  
+  inline def olUserDefinedProperty: `171` = 171.asInstanceOf[`171`]
+  
+  inline def olUserProperties: `38` = 38.asInstanceOf[`38`]
+  
+  inline def olUserProperty: `39` = 39.asInstanceOf[`39`]
+  
+  inline def olView: `80` = 80.asInstanceOf[`80`]
+  
+  inline def olViewField: `142` = 142.asInstanceOf[`142`]
+  
+  inline def olViewFields: `141` = 141.asInstanceOf[`141`]
+  
+  inline def olViewFont: `146` = 146.asInstanceOf[`146`]
+  
+  inline def olViews: `79` = 79.asInstanceOf[`79`]
 }
-

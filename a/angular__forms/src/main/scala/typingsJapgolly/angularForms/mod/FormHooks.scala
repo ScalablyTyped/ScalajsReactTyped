@@ -1,24 +1,20 @@
 package typingsJapgolly.angularForms.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.angularForms.angularFormsStrings.change
   - typingsJapgolly.angularForms.angularFormsStrings.blur
   - typingsJapgolly.angularForms.angularFormsStrings.submit
 */
-trait FormHooks extends js.Object
-
+trait FormHooks extends StObject
 object FormHooks {
-  @scala.inline
-  def blur: typingsJapgolly.angularForms.angularFormsStrings.blur = this.cast("blur")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def change: typingsJapgolly.angularForms.angularFormsStrings.change = this.cast("change")
-  @scala.inline
-  def submit: typingsJapgolly.angularForms.angularFormsStrings.submit = this.cast("submit")
+  
+  inline def blur: typingsJapgolly.angularForms.angularFormsStrings.blur = "blur".asInstanceOf[typingsJapgolly.angularForms.angularFormsStrings.blur]
+  
+  inline def change: typingsJapgolly.angularForms.angularFormsStrings.change = "change".asInstanceOf[typingsJapgolly.angularForms.angularFormsStrings.change]
+  
+  inline def submit: typingsJapgolly.angularForms.angularFormsStrings.submit = "submit".asInstanceOf[typingsJapgolly.angularForms.angularFormsStrings.submit]
 }
-

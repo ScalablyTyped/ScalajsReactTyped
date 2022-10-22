@@ -1,25 +1,35 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Store
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to provide the product name that is displayed to the user at time of purchase. */
-@JSGlobal("Windows.ApplicationModel.Store.ProductPurchaseDisplayProperties")
-@js.native
-/** Creates an instance of ProductPurchaseDisplayProperties . */
-class ProductPurchaseDisplayProperties () extends js.Object {
-  /**
-    * Creates an instance of ProductPurchaseDisplayProperties that includes the specified product name to display to the user.
-    * @param name The product name displayed to the user.
-    */
-  def this(name: String) = this()
+trait ProductPurchaseDisplayProperties extends StObject {
+  
   /** Windows Phone only. This is an internal product description. */
-  var description: String = js.native
+  var description: String
+  
   /** Windows Phone only. Gets or sets the location of an image used to represent the product at time of purchase. */
-  var image: Uri = js.native
+  var image: Uri
+  
   /** Gets or sets the product name that is displayed to the user at time of purchase. */
-  var name: String = js.native
+  var name: String
 }
-
+object ProductPurchaseDisplayProperties {
+  
+  inline def apply(description: String, image: Uri, name: String): ProductPurchaseDisplayProperties = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProductPurchaseDisplayProperties]
+  }
+  
+  extension [Self <: ProductPurchaseDisplayProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setImage(value: Uri): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

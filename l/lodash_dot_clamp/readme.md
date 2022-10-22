@@ -10,10 +10,10 @@ The lodash method `_.clamp` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.clamp |
 | Keywords           | lodash-modularized, clamp |
-| # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 290506 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 103743.33333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

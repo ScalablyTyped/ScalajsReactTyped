@@ -1,30 +1,42 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRaycastVehicleOptions extends js.Object {
+trait IRaycastVehicleOptions extends StObject {
+  
   var chassisBody: js.UndefOr[Body] = js.undefined
+  
   var indexLeftAxis: js.UndefOr[Double] = js.undefined
+  
   var indexRightAxis: js.UndefOr[Double] = js.undefined
+  
   var indexUpAxis: js.UndefOr[Double] = js.undefined
 }
-
 object IRaycastVehicleOptions {
-  @scala.inline
-  def apply(
-    chassisBody: Body = null,
-    indexLeftAxis: Int | Double = null,
-    indexRightAxis: Int | Double = null,
-    indexUpAxis: Int | Double = null
-  ): IRaycastVehicleOptions = {
+  
+  inline def apply(): IRaycastVehicleOptions = {
     val __obj = js.Dynamic.literal()
-    if (chassisBody != null) __obj.updateDynamic("chassisBody")(chassisBody.asInstanceOf[js.Any])
-    if (indexLeftAxis != null) __obj.updateDynamic("indexLeftAxis")(indexLeftAxis.asInstanceOf[js.Any])
-    if (indexRightAxis != null) __obj.updateDynamic("indexRightAxis")(indexRightAxis.asInstanceOf[js.Any])
-    if (indexUpAxis != null) __obj.updateDynamic("indexUpAxis")(indexUpAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRaycastVehicleOptions]
   }
+  
+  extension [Self <: IRaycastVehicleOptions](x: Self) {
+    
+    inline def setChassisBody(value: Body): Self = StObject.set(x, "chassisBody", value.asInstanceOf[js.Any])
+    
+    inline def setChassisBodyUndefined: Self = StObject.set(x, "chassisBody", js.undefined)
+    
+    inline def setIndexLeftAxis(value: Double): Self = StObject.set(x, "indexLeftAxis", value.asInstanceOf[js.Any])
+    
+    inline def setIndexLeftAxisUndefined: Self = StObject.set(x, "indexLeftAxis", js.undefined)
+    
+    inline def setIndexRightAxis(value: Double): Self = StObject.set(x, "indexRightAxis", value.asInstanceOf[js.Any])
+    
+    inline def setIndexRightAxisUndefined: Self = StObject.set(x, "indexRightAxis", js.undefined)
+    
+    inline def setIndexUpAxis(value: Double): Self = StObject.set(x, "indexUpAxis", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUpAxisUndefined: Self = StObject.set(x, "indexUpAxis", js.undefined)
+  }
 }
-

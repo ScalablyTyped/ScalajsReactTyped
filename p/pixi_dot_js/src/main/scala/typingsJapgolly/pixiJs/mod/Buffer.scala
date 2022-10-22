@@ -1,44 +1,44 @@
 package typingsJapgolly.pixiJs.mod
 
-import typingsJapgolly.std.ArrayBufferView
-import typingsJapgolly.std.SharedArrayBuffer
+import typingsJapgolly.pixiCore.mod.Buffer2
+import typingsJapgolly.pixiCore.mod.IArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A wrapper for data so that it can be used and uploaded by WebGL
-  *
-  * @class
   * @memberof PIXI
   */
 @JSImport("pixi.js", "Buffer")
 @js.native
-class Buffer protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Buffer {
-  def this(data: scala.scalajs.js.typedarray.ArrayBuffer) = this()
-  def this(data: scala.scalajs.js.typedarray.ArrayBufferView) = this()
-  def this(data: SharedArrayBuffer) = this()
-  def this(data: scala.scalajs.js.typedarray.ArrayBufferView, _static: Boolean) = this()
-  def this(data: scala.scalajs.js.typedarray.ArrayBuffer, _static: Boolean) = this()
-  def this(data: SharedArrayBuffer, _static: Boolean) = this()
-  def this(data: scala.scalajs.js.typedarray.ArrayBufferView, _static: Boolean, index: Boolean) = this()
-  def this(data: scala.scalajs.js.typedarray.ArrayBuffer, _static: Boolean, index: Boolean) = this()
-  def this(data: SharedArrayBuffer, _static: Boolean, index: Boolean) = this()
+/**
+  * @param {PIXI.IArrayBuffer} data - the data to store in the buffer.
+  * @param _static - `true` for static buffer
+  * @param index - `true` for index buffer
+  */
+open class Buffer ()
+  extends typingsJapgolly.pixiCore.mod.Buffer {
+  def this(data: IArrayBuffer) = this()
+  def this(data: Unit, _static: Boolean) = this()
+  def this(data: IArrayBuffer, _static: Boolean) = this()
+  def this(data: Unit, _static: Boolean, index: Boolean) = this()
+  def this(data: Unit, _static: Unit, index: Boolean) = this()
+  def this(data: IArrayBuffer, _static: Boolean, index: Boolean) = this()
+  def this(data: IArrayBuffer, _static: Unit, index: Boolean) = this()
 }
-
-/* static members */
-@JSImport("pixi.js", "Buffer")
-@js.native
-object Buffer extends js.Object {
-  def from(data: js.Array[Double]): typingsJapgolly.pixiJs.PIXI.Buffer = js.native
+object Buffer {
+  
+  @JSImport("pixi.js", "Buffer")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def from(data: js.Array[Double]): Buffer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer2]
   /**
     * Helper function that creates a buffer based on an array or TypedArray
-    *
-    * @static
-    * @param {ArrayBufferView | number[]} data the TypedArray that the buffer will store. If this is a regular Array it will be converted to a Float32Array.
-    * @return {PIXI.Buffer} A new Buffer based on the data provided.
+    * @param {ArrayBufferView | number[]} data - the TypedArray that the buffer will store. If this is a regular Array it will be converted to a Float32Array.
+    * @returns - A new Buffer based on the data provided.
     */
-  def from(data: ArrayBufferView): typingsJapgolly.pixiJs.PIXI.Buffer = js.native
+  /* static member */
+  inline def from(data: IArrayBuffer): Buffer2 = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(data.asInstanceOf[js.Any]).asInstanceOf[Buffer2]
 }
-

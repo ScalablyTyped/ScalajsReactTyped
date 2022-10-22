@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder to create a setCredentials() response for your script project.
@@ -20,24 +20,31 @@ import scala.scalajs.js.annotation._
   *         .build();
   *     }
   */
-trait SetCredentialsResponse extends js.Object {
-  def build(): js.Any
+trait SetCredentialsResponse extends StObject {
+  
+  def build(): Any
+  
   def printJson(): String
+  
   def setIsValid(isValid: Boolean): SetCredentialsResponse
 }
-
 object SetCredentialsResponse {
-  @scala.inline
-  def apply(
-    build: CallbackTo[js.Any],
+  
+  inline def apply(
+    build: CallbackTo[Any],
     printJson: CallbackTo[String],
-    setIsValid: Boolean => CallbackTo[SetCredentialsResponse]
+    setIsValid: Boolean => SetCredentialsResponse
   ): SetCredentialsResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
-    __obj.updateDynamic("setIsValid")(js.Any.fromFunction1((t0: scala.Boolean) => setIsValid(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, printJson = printJson.toJsFn, setIsValid = js.Any.fromFunction1(setIsValid))
     __obj.asInstanceOf[SetCredentialsResponse]
   }
+  
+  extension [Self <: SetCredentialsResponse](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[Any]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+    
+    inline def setSetIsValid(value: Boolean => SetCredentialsResponse): Self = StObject.set(x, "setIsValid", js.Any.fromFunction1(value))
+  }
 }
-

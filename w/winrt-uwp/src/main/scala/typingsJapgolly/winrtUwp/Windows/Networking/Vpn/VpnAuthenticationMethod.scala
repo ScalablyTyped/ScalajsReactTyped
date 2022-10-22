@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnAuthenticationMethod extends js.Object
-
+sealed trait VpnAuthenticationMethod extends StObject
 /** Specifies the type of authentication methods allowed by the operating system native VPN protocols. */
 @JSGlobal("Windows.Networking.Vpn.VpnAuthenticationMethod")
 @js.native
-object VpnAuthenticationMethod extends js.Object {
+object VpnAuthenticationMethod extends StObject {
+  
   /** Certificate */
   @js.native
-  sealed trait certificate extends VpnAuthenticationMethod
+  sealed trait certificate
+    extends StObject
+       with VpnAuthenticationMethod
   
   /** Extensible Authentication Protocol */
   @js.native
-  sealed trait eap extends VpnAuthenticationMethod
+  sealed trait eap
+    extends StObject
+       with VpnAuthenticationMethod
   
   /** Microsoft Challenge-Handshake Authentication Protocol v2 */
   @js.native
-  sealed trait mschapv2 extends VpnAuthenticationMethod
+  sealed trait mschapv2
+    extends StObject
+       with VpnAuthenticationMethod
   
   /** Preshared key */
   @js.native
-  sealed trait presharedKey extends VpnAuthenticationMethod
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnAuthenticationMethod with Double] = js.native
-  /* 2 */ @js.native
-  object certificate extends TopLevel[certificate with Double]
-  
-  /* 1 */ @js.native
-  object eap extends TopLevel[eap with Double]
-  
-  /* 0 */ @js.native
-  object mschapv2 extends TopLevel[mschapv2 with Double]
-  
-  /* 3 */ @js.native
-  object presharedKey extends TopLevel[presharedKey with Double]
-  
+  sealed trait presharedKey
+    extends StObject
+       with VpnAuthenticationMethod
 }
-

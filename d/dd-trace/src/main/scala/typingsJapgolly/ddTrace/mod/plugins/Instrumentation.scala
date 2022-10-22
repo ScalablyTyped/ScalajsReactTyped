@@ -1,27 +1,19 @@
 package typingsJapgolly.ddTrace.mod.plugins
 
 import typingsJapgolly.ddTrace.mod.Analyzable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
 trait Instrumentation
-  extends Integration
+  extends StObject
+     with Integration
      with Analyzable
-
 object Instrumentation {
-  @scala.inline
-  def apply(
-    analytics: Boolean | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    service: String = null
-  ): Instrumentation = {
+  
+  inline def apply(): Instrumentation = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[Instrumentation]
   }
 }
-

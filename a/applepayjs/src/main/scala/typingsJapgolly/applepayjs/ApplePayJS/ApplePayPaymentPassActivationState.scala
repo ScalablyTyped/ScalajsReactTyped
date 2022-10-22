@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Payment pass activation states.
@@ -14,20 +14,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.suspended
   - typingsJapgolly.applepayjs.applepayjsStrings.deactivated
 */
-trait ApplePayPaymentPassActivationState extends js.Object
-
+trait ApplePayPaymentPassActivationState extends StObject
 object ApplePayPaymentPassActivationState {
-  @scala.inline
-  def activated: typingsJapgolly.applepayjs.applepayjsStrings.activated = this.cast("activated")
-  @scala.inline
-  def activating: typingsJapgolly.applepayjs.applepayjsStrings.activating = this.cast("activating")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def deactivated: typingsJapgolly.applepayjs.applepayjsStrings.deactivated = this.cast("deactivated")
-  @scala.inline
-  def requiresActivation: typingsJapgolly.applepayjs.applepayjsStrings.requiresActivation = this.cast("requiresActivation")
-  @scala.inline
-  def suspended: typingsJapgolly.applepayjs.applepayjsStrings.suspended = this.cast("suspended")
+  
+  inline def activated: typingsJapgolly.applepayjs.applepayjsStrings.activated = "activated".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.activated]
+  
+  inline def activating: typingsJapgolly.applepayjs.applepayjsStrings.activating = "activating".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.activating]
+  
+  inline def deactivated: typingsJapgolly.applepayjs.applepayjsStrings.deactivated = "deactivated".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.deactivated]
+  
+  inline def requiresActivation: typingsJapgolly.applepayjs.applepayjsStrings.requiresActivation = "requiresActivation".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.requiresActivation]
+  
+  inline def suspended: typingsJapgolly.applepayjs.applepayjsStrings.suspended = "suspended".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.suspended]
 }
-

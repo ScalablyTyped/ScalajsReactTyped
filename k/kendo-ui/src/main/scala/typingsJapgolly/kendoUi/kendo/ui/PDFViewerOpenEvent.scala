@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerOpenEvent extends PDFViewerEvent {
-  var file: js.UndefOr[js.Any] = js.undefined
+trait PDFViewerOpenEvent
+  extends StObject
+     with PDFViewerEvent {
+  
+  var file: js.UndefOr[Any] = js.undefined
 }
-
 object PDFViewerOpenEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: PDFViewer,
-    file: js.Any = null
-  ): PDFViewerOpenEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: PDFViewer): PDFViewerOpenEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerOpenEvent]
   }
+  
+  extension [Self <: PDFViewerOpenEvent](x: Self) {
+    
+    inline def setFile(value: Any): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+  }
 }
-

@@ -1,24 +1,38 @@
 package typingsJapgolly.sequelize.mod
 
 import typingsJapgolly.sequelize.sequelizeStrings.check
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AddCheckConstraintOptions extends AddConstraintOptions {
+trait AddCheckConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var `type`: check
+  
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
-
 object AddCheckConstraintOptions {
-  @scala.inline
-  def apply(`type`: check, name: String = null, where: AnyWhereOptions = null): AddCheckConstraintOptions = {
+  
+  inline def apply(): AddCheckConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("check")
     __obj.asInstanceOf[AddCheckConstraintOptions]
   }
+  
+  extension [Self <: AddCheckConstraintOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: check): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWhere(value: AnyWhereOptions): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+  }
 }
-

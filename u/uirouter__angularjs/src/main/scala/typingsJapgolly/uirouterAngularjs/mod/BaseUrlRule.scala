@@ -1,16 +1,15 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
-import typingsJapgolly.uirouterCore.urlInterfaceMod.UrlRuleHandlerFn
-import typingsJapgolly.uirouterCore.urlInterfaceMod.UrlRuleMatchFn
+import typingsJapgolly.uirouterCore.libUrlInterfaceMod.UrlRuleHandlerFn
+import typingsJapgolly.uirouterCore.libUrlInterfaceMod.UrlRuleMatchFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "BaseUrlRule")
 @js.native
-class BaseUrlRule protected ()
+open class BaseUrlRule protected ()
   extends typingsJapgolly.uirouterCore.mod.BaseUrlRule {
   def this(`match`: UrlRuleMatchFn) = this()
   def this(`match`: UrlRuleMatchFn, handler: UrlRuleHandlerFn) = this()
 }
-

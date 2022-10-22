@@ -1,30 +1,36 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaEncryptedEventInit extends EventInit {
-  var initData: js.UndefOr[scala.scalajs.js.typedarray.ArrayBuffer | Null] = js.undefined
+trait MediaEncryptedEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var initData: js.UndefOr[js.typedarray.ArrayBuffer | Null] = js.undefined
+  
+  /* standard dom */
   var initDataType: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object MediaEncryptedEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    initData: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    initDataType: java.lang.String = null
-  ): MediaEncryptedEventInit = {
+  
+  inline def apply(): MediaEncryptedEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (initData != null) __obj.updateDynamic("initData")(initData.asInstanceOf[js.Any])
-    if (initDataType != null) __obj.updateDynamic("initDataType")(initDataType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaEncryptedEventInit]
   }
+  
+  extension [Self <: MediaEncryptedEventInit](x: Self) {
+    
+    inline def setInitData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "initData", value.asInstanceOf[js.Any])
+    
+    inline def setInitDataNull: Self = StObject.set(x, "initData", null)
+    
+    inline def setInitDataType(value: java.lang.String): Self = StObject.set(x, "initDataType", value.asInstanceOf[js.Any])
+    
+    inline def setInitDataTypeUndefined: Self = StObject.set(x, "initDataType", js.undefined)
+    
+    inline def setInitDataUndefined: Self = StObject.set(x, "initData", js.undefined)
+  }
 }
-

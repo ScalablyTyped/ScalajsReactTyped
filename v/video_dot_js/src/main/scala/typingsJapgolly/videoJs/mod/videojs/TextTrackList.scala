@@ -1,8 +1,8 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current list of {@link TextTrack} for a media file.
@@ -10,7 +10,10 @@ import scala.scalajs.js.annotation._
   * @see [Spec]{@link https://html.spec.whatwg.org/multipage/embedded-content.html#texttracklist}
   */
 @js.native
-trait TextTrackList extends TrackList {
+trait TextTrackList
+  extends StObject
+     with TrackList {
+  
   /**
     * Add a {@link TextTrack} to the `TextTrackList`
     *
@@ -21,4 +24,3 @@ trait TextTrackList extends TrackList {
     */
   def addTrack(track: TextTrack): Unit = js.native
 }
-

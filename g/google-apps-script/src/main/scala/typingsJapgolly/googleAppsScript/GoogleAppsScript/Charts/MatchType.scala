@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MatchType extends js.Object
-
+sealed trait MatchType extends StObject
 /**
   * An enumeration of how a string value should be matched. Matching a string is a boolean operation.
   * Given a string, a match term (string), and a match type, the operation outputs true in
@@ -25,26 +23,20 @@ sealed trait MatchType extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Charts.MatchType")
 @js.native
-object MatchType extends js.Object {
-  @js.native
-  sealed trait ANY extends MatchType
+object MatchType extends StObject {
   
   @js.native
-  sealed trait EXACT extends MatchType
+  sealed trait ANY
+    extends StObject
+       with MatchType
   
   @js.native
-  sealed trait PREFIX extends MatchType
+  sealed trait EXACT
+    extends StObject
+       with MatchType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MatchType with Double] = js.native
-  /* 2 */ @js.native
-  object ANY extends TopLevel[ANY with Double]
-  
-  /* 0 */ @js.native
-  object EXACT extends TopLevel[EXACT with Double]
-  
-  /* 1 */ @js.native
-  object PREFIX extends TopLevel[PREFIX with Double]
-  
+  @js.native
+  sealed trait PREFIX
+    extends StObject
+       with MatchType
 }
-

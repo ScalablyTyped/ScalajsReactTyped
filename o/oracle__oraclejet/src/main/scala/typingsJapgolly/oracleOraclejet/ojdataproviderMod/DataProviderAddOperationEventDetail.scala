@@ -1,32 +1,37 @@
 package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataProviderAddOperationEventDetail[K, D] extends DataProviderOperationEventDetail[K, D] {
+trait DataProviderAddOperationEventDetail[K, D]
+  extends StObject
+     with DataProviderOperationEventDetail[K, D] {
+  
   var addBeforeKeys: js.UndefOr[js.Array[K]] = js.undefined
+  
   var parentKeys: js.UndefOr[js.Array[K]] = js.undefined
 }
-
 object DataProviderAddOperationEventDetail {
-  @scala.inline
-  def apply[K, D](
-    keys: Set[K],
-    addBeforeKeys: js.Array[K] = null,
-    data: js.Array[D] = null,
-    indexes: js.Array[Double] = null,
-    metadata: js.Array[ItemMetadata[K]] = null,
-    parentKeys: js.Array[K] = null
-  ): DataProviderAddOperationEventDetail[K, D] = {
+  
+  inline def apply[K, D](keys: Set[K]): DataProviderAddOperationEventDetail[K, D] = {
     val __obj = js.Dynamic.literal(keys = keys.asInstanceOf[js.Any])
-    if (addBeforeKeys != null) __obj.updateDynamic("addBeforeKeys")(addBeforeKeys.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (indexes != null) __obj.updateDynamic("indexes")(indexes.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (parentKeys != null) __obj.updateDynamic("parentKeys")(parentKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProviderAddOperationEventDetail[K, D]]
   }
+  
+  extension [Self <: DataProviderAddOperationEventDetail[?, ?], K, D](x: Self & (DataProviderAddOperationEventDetail[K, D])) {
+    
+    inline def setAddBeforeKeys(value: js.Array[K]): Self = StObject.set(x, "addBeforeKeys", value.asInstanceOf[js.Any])
+    
+    inline def setAddBeforeKeysUndefined: Self = StObject.set(x, "addBeforeKeys", js.undefined)
+    
+    inline def setAddBeforeKeysVarargs(value: K*): Self = StObject.set(x, "addBeforeKeys", js.Array(value*))
+    
+    inline def setParentKeys(value: js.Array[K]): Self = StObject.set(x, "parentKeys", value.asInstanceOf[js.Any])
+    
+    inline def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
+    
+    inline def setParentKeysVarargs(value: K*): Self = StObject.set(x, "parentKeys", js.Array(value*))
+  }
 }
-

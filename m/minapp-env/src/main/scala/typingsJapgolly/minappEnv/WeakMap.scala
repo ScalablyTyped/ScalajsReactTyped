@@ -1,21 +1,20 @@
 package typingsJapgolly.minappEnv
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WeakMap[K /* <: js.Object */, V] extends js.Object {
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.WeakMap = js.native
+trait WeakMap[K /* <: js.Object */, V] extends StObject {
+  
   def delete(key: K): scala.Boolean = js.native
+  
   def get(key: K): js.UndefOr[V] = js.native
+  
   def has(key: K): scala.Boolean = js.native
+  
   def set(key: K, value: V): this.type = js.native
+  
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typingsJapgolly.minappEnv.minappEnvStrings.WeakMap = js.native
 }
-
-@JSGlobal("WeakMap")
-@js.native
-object WeakMap extends TopLevel[WeakMapConstructor]
-

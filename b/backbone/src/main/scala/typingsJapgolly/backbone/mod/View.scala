@@ -1,41 +1,65 @@
 package typingsJapgolly.backbone.mod
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.jquery.JQuery_
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone", "View")
 @js.native
-class View[TModel /* <: Model */] () extends js.Object {
-  def this(options: ViewOptions[TModel]) = this()
+open class View[TModel /* <: js.UndefOr[Model[Any, ModelSetOptions, Any]] */, TElement /* <: Element */] () extends StObject {
+  def this(options: ViewOptions[TModel, TElement]) = this()
+  
+  @JSName("$")
+  def $(selector: String): JQuery[HTMLElement] = js.native
+  
   @JSName("$el")
-  var $el: JQuery_[HTMLElement] = js.native
-  var attributes: js.Any = js.native
+  var $el: JQuery[HTMLElement] = js.native
+  
+  /* protected */ def _createElement(tagName: String): Unit = js.native
+  
+  /* protected */ def _ensureElement(): Unit = js.native
+  
+  /* protected */ def _removeElement(): Unit = js.native
+  
+  /* protected */ def _setAttributes(attributes: Record[String, Any]): Unit = js.native
+  
+  /* protected */ def _setElement(el: TElement): Unit = js.native
+  /* protected */ def _setElement(el: JQuery[HTMLElement]): Unit = js.native
+  
+  var attributes: Record[String, Any] = js.native
+  
   var cid: String = js.native
-  var className: String = js.native
-  var collection: Collection[TModel] = js.native
-  var el: js.Any = js.native
-  var id: String = js.native
-  var model: TModel = js.native
-  var tagName: String = js.native
-  @JSName("$")
-  def $(selector: String): JQuery_[HTMLElement] = js.native
-  @JSName("$")
-  def $(selector: js.Any): JQuery_[HTMLElement] = js.native
-  def _ensureElement(): Unit = js.native
-  def delegate(eventName: String, selector: String, listener: js.Function): View[TModel] = js.native
-  def delegateEvents(): js.Any = js.native
-  def delegateEvents(events: EventsHash): js.Any = js.native
+  
+  var className: js.UndefOr[String] = js.native
+  
+  var collection: Collection[Any] = js.native
+  
+  def delegate(eventName: String, selector: String, listener: ViewEventListener): this.type = js.native
+  
+  def delegateEvents(): this.type = js.native
+  def delegateEvents(events: Result[EventsHash]): this.type = js.native
+  
+  var el: TElement = js.native
+  
   /**
     * Events hash or a method returning the events hash that maps events/selectors to methods on your View.
     * For assigning events as object hash, do it like this: this.events = <any>{ "event:selector": callback, ... };
     * That works only if you set it in the constructor or the initialize method.
-    **/
+    */
   def events(): EventsHash = js.native
+  
+  var id: js.UndefOr[String] = js.native
+  
   def initialize(): Unit = js.native
-  def initialize(options: ViewOptions[TModel]): Unit = js.native
+  def initialize(options: ViewOptions[TModel, TElement]): Unit = js.native
+  
+  // A conditional type used here to prevent `TS2532: Object is possibly 'undefined'`
+  var model: /* import warning: importer.ImportType#apply Failed type conversion: TModel extends backbone.backbone.Model<any, backbone.backbone.ModelSetOptions, any> ? TModel : undefined */ js.Any = js.native
+  
   /**
     * For use with views as ES classes. If you define a preinitialize
     * method, it will be invoked when the view is first created, before any
@@ -43,29 +67,34 @@ class View[TModel /* <: Model */] () extends js.Object {
     * @see https://backbonejs.org/#View-preinitialize
     */
   def preinitialize(): Unit = js.native
-  def preinitialize(options: ViewOptions[TModel]): Unit = js.native
-  def remove(): View[TModel] = js.native
-  def render(): View[TModel] = js.native
-  def setElement(element: js.Any): View[TModel] = js.native
-  def setElement(element: JQuery_[typingsJapgolly.std.HTMLElement]): View[TModel] = js.native
-  def setElement(element: JQuery_[typingsJapgolly.std.HTMLElement], delegate: Boolean): View[TModel] = js.native
-  //template: (json, options?) => string;
-  def setElement(element: typingsJapgolly.std.HTMLElement): View[TModel] = js.native
-  def setElement(element: typingsJapgolly.std.HTMLElement, delegate: Boolean): View[TModel] = js.native
-  def undelegate(eventName: String): View[TModel] = js.native
-  def undelegate(eventName: String, selector: String): View[TModel] = js.native
-  def undelegate(eventName: String, selector: String, listener: js.Function): View[TModel] = js.native
-  def undelegateEvents(): js.Any = js.native
+  def preinitialize(options: ViewOptions[TModel, TElement]): Unit = js.native
+  
+  def remove(): this.type = js.native
+  
+  def render(): this.type = js.native
+  
+  def setElement(element: TElement): this.type = js.native
+  def setElement(element: JQuery[HTMLElement]): this.type = js.native
+  
+  var tagName: String = js.native
+  
+  def undelegate(eventName: String): this.type = js.native
+  def undelegate(eventName: String, selector: String): this.type = js.native
+  def undelegate(eventName: String, selector: String, listener: ViewEventListener): this.type = js.native
+  def undelegate(eventName: String, selector: Unit, listener: ViewEventListener): this.type = js.native
+  
+  def undelegateEvents(): this.type = js.native
 }
-
-/* static members */
-@JSImport("backbone", "View")
-@js.native
-object View extends js.Object {
+object View {
+  
+  @JSImport("backbone", "View")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Do not use, prefer TypeScript's extend functionality.
-    **/
-  def extend(properties: js.Any): js.Any = js.native
-  def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
+    */
+  /* static member */
+  inline def extend(properties: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def extend(properties: Any, classProperties: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(properties.asInstanceOf[js.Any], classProperties.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

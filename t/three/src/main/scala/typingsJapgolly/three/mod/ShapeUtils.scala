@@ -1,15 +1,19 @@
 package typingsJapgolly.three.mod
 
-import typingsJapgolly.three.shapeUtilsMod.Vec2
+import typingsJapgolly.three.srcExtrasShapeUtilsMod.Vec2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three", "ShapeUtils")
-@js.native
-object ShapeUtils extends js.Object {
-  def area(contour: js.Array[Vec2]): Double = js.native
-  def isClockWise(pts: js.Array[Vec2]): Boolean = js.native
-  def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]] = js.native
+object ShapeUtils {
+  
+  @JSImport("three", "ShapeUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def area(contour: js.Array[Vec2]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("area")(contour.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  inline def isClockWise(pts: js.Array[Vec2]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClockWise")(pts.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def triangulateShape(contour: js.Array[Vec2], holes: js.Array[js.Array[Vec2]]): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulateShape")(contour.asInstanceOf[js.Any], holes.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
 }
-

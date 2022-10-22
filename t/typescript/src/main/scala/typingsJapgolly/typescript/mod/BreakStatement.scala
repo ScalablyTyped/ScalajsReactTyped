@@ -1,15 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BreakStatement
-  extends Statement
-     with BreakOrContinueStatement {
+  extends StObject
+     with Statement
+     with BreakOrContinueStatement
+     with HasJSDoc {
+  
   @JSName("kind")
-  var kind_BreakStatement: typingsJapgolly.typescript.mod.SyntaxKind.BreakStatement = js.native
-  var label: js.UndefOr[Identifier] = js.native
+  val kind_BreakStatement: typingsJapgolly.typescript.mod.SyntaxKind.BreakStatement = js.native
+  
+  val label: js.UndefOr[Identifier] = js.native
 }
-

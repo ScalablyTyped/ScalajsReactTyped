@@ -10,10 +10,10 @@ Beautiful credit cards for your payment forms
 | ------------------ | :-------------: |
 | Full name          | react-credit-cards |
 | Keywords           | react, react-component, credit card, payment |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 379114 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 97073.66666666667 |
+| # stars            | 2334.0 |
 
 ## Links
 - [Homepage](https://github.com/amarofashion/react-credit-cards#readme)

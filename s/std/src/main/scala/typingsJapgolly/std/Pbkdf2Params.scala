@@ -1,26 +1,35 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Pbkdf2Params extends Algorithm {
-  var hash: HashAlgorithmIdentifier
-  var iterations: Double
-  var salt: scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array | scala.scalajs.js.typedarray.DataView | scala.scalajs.js.typedarray.ArrayBuffer
-}
-
-object Pbkdf2Params {
-  @scala.inline
-  def apply(
-    hash: HashAlgorithmIdentifier,
-    iterations: Double,
-    name: java.lang.String,
-    salt: scala.scalajs.js.typedarray.Int8Array | scala.scalajs.js.typedarray.Int16Array | scala.scalajs.js.typedarray.Int32Array | scala.scalajs.js.typedarray.Uint8Array | scala.scalajs.js.typedarray.Uint16Array | scala.scalajs.js.typedarray.Uint32Array | scala.scalajs.js.typedarray.Uint8ClampedArray | scala.scalajs.js.typedarray.Float32Array | scala.scalajs.js.typedarray.Float64Array | scala.scalajs.js.typedarray.DataView | scala.scalajs.js.typedarray.ArrayBuffer
-  ): Pbkdf2Params = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
+trait Pbkdf2Params
+  extends StObject
+     with Algorithm {
   
+  /* standard dom */
+  var hash: HashAlgorithmIdentifier
+  
+  /* standard dom */
+  var iterations: Double
+  
+  /* standard dom */
+  var salt: BufferSource
+}
+object Pbkdf2Params {
+  
+  inline def apply(hash: HashAlgorithmIdentifier, iterations: Double, name: java.lang.String, salt: BufferSource): Pbkdf2Params = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], iterations = iterations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], salt = salt.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pbkdf2Params]
   }
+  
+  extension [Self <: Pbkdf2Params](x: Self) {
+    
+    inline def setHash(value: HashAlgorithmIdentifier): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    
+    inline def setSalt(value: BufferSource): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+  }
 }
-

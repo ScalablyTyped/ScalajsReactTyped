@@ -1,61 +1,50 @@
 package typingsJapgolly.rmcPicker.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.rmcPicker.pickerNativeMod.default
-import typingsJapgolly.rmcPicker.pickerTypesMod.IPickerProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rmcPicker.libPickerDotnativeMod.default
+import typingsJapgolly.rmcPicker.libPickerTypesMod.IPickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PickerDotnative {
-  def apply(
-    className: String = null,
-    defaultSelectedValue: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    indicatorClassName: String = null,
-    indicatorStyle: js.Any = null,
-    itemStyle: js.Any = null,
-    noAnimate: js.UndefOr[Boolean] = js.undefined,
-    onScrollChange: /* value */ js.Any => Callback = null,
-    onValueChange: /* value */ js.Any => Callback = null,
-    prefixCls: String = null,
-    selectedValue: js.Any = null,
-    style: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IPickerProps, default, Unit, IPickerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultSelectedValue != null) __obj.updateDynamic("defaultSelectedValue")(defaultSelectedValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (indicatorClassName != null) __obj.updateDynamic("indicatorClassName")(indicatorClassName.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(noAnimate)) __obj.updateDynamic("noAnimate")(noAnimate.asInstanceOf[js.Any])
-    if (onScrollChange != null) __obj.updateDynamic("onScrollChange")(js.Any.fromFunction1((t0: /* value */ js.Any) => onScrollChange(t0).runNow()))
-    if (onValueChange != null) __obj.updateDynamic("onValueChange")(js.Any.fromFunction1((t0: /* value */ js.Any) => onValueChange(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcPicker.pickerTypesMod.IPickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rmcPicker.pickerNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcPicker.pickerTypesMod.IPickerProps])(children: _*)
-  }
   @JSImport("rmc-picker/lib/Picker.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultSelectedValue(value: Any): this.type = set("defaultSelectedValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def indicatorClassName(value: String): this.type = set("indicatorClassName", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyle(value: Any): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def itemStyle(value: Any): this.type = set("itemStyle", value.asInstanceOf[js.Any])
+    
+    inline def noAnimate(value: Boolean): this.type = set("noAnimate", value.asInstanceOf[js.Any])
+    
+    inline def onScrollChange(value: /* value */ Any => Callback): this.type = set("onScrollChange", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+    
+    inline def onValueChange(value: /* value */ Any => Callback): this.type = set("onValueChange", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def selectedValue(value: Any): this.type = set("selectedValue", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Any): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: PickerDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IPickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

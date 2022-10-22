@@ -1,21 +1,30 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HasZM extends js.Object {
+trait HasZM extends StObject {
+  
   var hasM: js.UndefOr[Boolean] = js.undefined
+  
   var hasZ: js.UndefOr[Boolean] = js.undefined
 }
-
 object HasZM {
-  @scala.inline
-  def apply(hasM: js.UndefOr[Boolean] = js.undefined, hasZ: js.UndefOr[Boolean] = js.undefined): HasZM = {
+  
+  inline def apply(): HasZM = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasZM]
   }
+  
+  extension [Self <: HasZM](x: Self) {
+    
+    inline def setHasM(value: Boolean): Self = StObject.set(x, "hasM", value.asInstanceOf[js.Any])
+    
+    inline def setHasMUndefined: Self = StObject.set(x, "hasM", js.undefined)
+    
+    inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+    
+    inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+  }
 }
-

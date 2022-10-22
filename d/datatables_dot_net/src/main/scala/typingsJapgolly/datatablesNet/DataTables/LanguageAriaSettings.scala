@@ -1,21 +1,32 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LanguageAriaSettings extends js.Object {
+trait LanguageAriaSettings extends StObject {
+  
   var paginate: js.UndefOr[LanguagePaginateSettings] = js.undefined
+  
   var sortAscending: String
+  
   var sortDescending: String
 }
-
 object LanguageAriaSettings {
-  @scala.inline
-  def apply(sortAscending: String, sortDescending: String, paginate: LanguagePaginateSettings = null): LanguageAriaSettings = {
+  
+  inline def apply(sortAscending: String, sortDescending: String): LanguageAriaSettings = {
     val __obj = js.Dynamic.literal(sortAscending = sortAscending.asInstanceOf[js.Any], sortDescending = sortDescending.asInstanceOf[js.Any])
-    if (paginate != null) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAriaSettings]
   }
+  
+  extension [Self <: LanguageAriaSettings](x: Self) {
+    
+    inline def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    
+    inline def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+    
+    inline def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,13 +1,14 @@
 package typingsJapgolly.validator.mod.validator
 
 import typingsJapgolly.validator.validatorStrings.`pl-Pl_`
+import typingsJapgolly.validator.validatorStrings.ar_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.validator.validatorStrings.`en-US`
-  - typingsJapgolly.validator.validatorStrings.ar
+  - typingsJapgolly.validator.validatorStrings.ar_
   - typingsJapgolly.validator.validatorStrings.`en-AU`
   - typingsJapgolly.validator.validatorStrings.`en-GB`
   - typingsJapgolly.validator.validatorStrings.`en-HK`
@@ -57,110 +58,106 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.validator.validatorStrings.`pt-BR`
   - typingsJapgolly.validator.validatorStrings.`pl-Pl_`
 */
-trait FloatLocale extends js.Object
-
+trait FloatLocale extends StObject
 object FloatLocale {
-  @scala.inline
-  def ar: typingsJapgolly.validator.validatorStrings.ar = this.cast("ar")
-  @scala.inline
-  def `ar-AE`: typingsJapgolly.validator.validatorStrings.`ar-AE` = this.cast("ar-AE")
-  @scala.inline
-  def `ar-BH`: typingsJapgolly.validator.validatorStrings.`ar-BH` = this.cast("ar-BH")
-  @scala.inline
-  def `ar-DZ`: typingsJapgolly.validator.validatorStrings.`ar-DZ` = this.cast("ar-DZ")
-  @scala.inline
-  def `ar-EG`: typingsJapgolly.validator.validatorStrings.`ar-EG` = this.cast("ar-EG")
-  @scala.inline
-  def `ar-IQ`: typingsJapgolly.validator.validatorStrings.`ar-IQ` = this.cast("ar-IQ")
-  @scala.inline
-  def `ar-JO`: typingsJapgolly.validator.validatorStrings.`ar-JO` = this.cast("ar-JO")
-  @scala.inline
-  def `ar-KW`: typingsJapgolly.validator.validatorStrings.`ar-KW` = this.cast("ar-KW")
-  @scala.inline
-  def `ar-LB`: typingsJapgolly.validator.validatorStrings.`ar-LB` = this.cast("ar-LB")
-  @scala.inline
-  def `ar-LY`: typingsJapgolly.validator.validatorStrings.`ar-LY` = this.cast("ar-LY")
-  @scala.inline
-  def `ar-MA`: typingsJapgolly.validator.validatorStrings.`ar-MA` = this.cast("ar-MA")
-  @scala.inline
-  def `ar-QA`: typingsJapgolly.validator.validatorStrings.`ar-QA` = this.cast("ar-QA")
-  @scala.inline
-  def `ar-QM`: typingsJapgolly.validator.validatorStrings.`ar-QM` = this.cast("ar-QM")
-  @scala.inline
-  def `ar-SA`: typingsJapgolly.validator.validatorStrings.`ar-SA` = this.cast("ar-SA")
-  @scala.inline
-  def `ar-SD`: typingsJapgolly.validator.validatorStrings.`ar-SD` = this.cast("ar-SD")
-  @scala.inline
-  def `ar-SY`: typingsJapgolly.validator.validatorStrings.`ar-SY` = this.cast("ar-SY")
-  @scala.inline
-  def `ar-TN`: typingsJapgolly.validator.validatorStrings.`ar-TN` = this.cast("ar-TN")
-  @scala.inline
-  def `ar-YE`: typingsJapgolly.validator.validatorStrings.`ar-YE` = this.cast("ar-YE")
-  @scala.inline
-  def `bg-BG`: typingsJapgolly.validator.validatorStrings.`bg-BG` = this.cast("bg-BG")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `cs-CZ`: typingsJapgolly.validator.validatorStrings.`cs-CZ` = this.cast("cs-CZ")
-  @scala.inline
-  def `da-DK`: typingsJapgolly.validator.validatorStrings.`da-DK` = this.cast("da-DK")
-  @scala.inline
-  def `de-DE`: typingsJapgolly.validator.validatorStrings.`de-DE` = this.cast("de-DE")
-  @scala.inline
-  def `el-GR`: typingsJapgolly.validator.validatorStrings.`el-GR` = this.cast("el-GR")
-  @scala.inline
-  def `en-AU`: typingsJapgolly.validator.validatorStrings.`en-AU` = this.cast("en-AU")
-  @scala.inline
-  def `en-GB`: typingsJapgolly.validator.validatorStrings.`en-GB` = this.cast("en-GB")
-  @scala.inline
-  def `en-HK`: typingsJapgolly.validator.validatorStrings.`en-HK` = this.cast("en-HK")
-  @scala.inline
-  def `en-IN`: typingsJapgolly.validator.validatorStrings.`en-IN` = this.cast("en-IN")
-  @scala.inline
-  def `en-NZ`: typingsJapgolly.validator.validatorStrings.`en-NZ` = this.cast("en-NZ")
-  @scala.inline
-  def `en-US`: typingsJapgolly.validator.validatorStrings.`en-US` = this.cast("en-US")
-  @scala.inline
-  def `en-ZA`: typingsJapgolly.validator.validatorStrings.`en-ZA` = this.cast("en-ZA")
-  @scala.inline
-  def `en-ZM`: typingsJapgolly.validator.validatorStrings.`en-ZM` = this.cast("en-ZM")
-  @scala.inline
-  def `es-ES`: typingsJapgolly.validator.validatorStrings.`es-ES` = this.cast("es-ES")
-  @scala.inline
-  def `fr-FR`: typingsJapgolly.validator.validatorStrings.`fr-FR` = this.cast("fr-FR")
-  @scala.inline
-  def `hu-HU`: typingsJapgolly.validator.validatorStrings.`hu-HU` = this.cast("hu-HU")
-  @scala.inline
-  def `it-IT`: typingsJapgolly.validator.validatorStrings.`it-IT` = this.cast("it-IT")
-  @scala.inline
-  def `ku-IQ`: typingsJapgolly.validator.validatorStrings.`ku-IQ` = this.cast("ku-IQ")
-  @scala.inline
-  def `nb-NO`: typingsJapgolly.validator.validatorStrings.`nb-NO` = this.cast("nb-NO")
-  @scala.inline
-  def `nl-NL`: typingsJapgolly.validator.validatorStrings.`nl-NL` = this.cast("nl-NL")
-  @scala.inline
-  def `nn-NO`: typingsJapgolly.validator.validatorStrings.`nn-NO` = this.cast("nn-NO")
-  @scala.inline
-  def `pl-PL`: typingsJapgolly.validator.validatorStrings.`pl-PL` = this.cast("pl-PL")
-  @scala.inline
-  def `pl-Pl`: `pl-Pl_` = this.cast("pl-Pl")
-  @scala.inline
-  def `pt-BR`: typingsJapgolly.validator.validatorStrings.`pt-BR` = this.cast("pt-BR")
-  @scala.inline
-  def `pt-PT`: typingsJapgolly.validator.validatorStrings.`pt-PT` = this.cast("pt-PT")
-  @scala.inline
-  def `ru-RU`: typingsJapgolly.validator.validatorStrings.`ru-RU` = this.cast("ru-RU")
-  @scala.inline
-  def `sl-SI`: typingsJapgolly.validator.validatorStrings.`sl-SI` = this.cast("sl-SI")
-  @scala.inline
-  def `sr-RS`: typingsJapgolly.validator.validatorStrings.`sr-RS` = this.cast("sr-RS")
-  @scala.inline
-  def `sr-RS@latin`: typingsJapgolly.validator.validatorStrings.`sr-RS@latin` = this.cast("sr-RS@latin")
-  @scala.inline
-  def `sv-SE`: typingsJapgolly.validator.validatorStrings.`sv-SE` = this.cast("sv-SE")
-  @scala.inline
-  def `tr-TR`: typingsJapgolly.validator.validatorStrings.`tr-TR` = this.cast("tr-TR")
-  @scala.inline
-  def `uk-UA`: typingsJapgolly.validator.validatorStrings.`uk-UA` = this.cast("uk-UA")
+  
+  inline def ar: ar_ = "ar".asInstanceOf[ar_]
+  
+  inline def `ar-AE`: typingsJapgolly.validator.validatorStrings.`ar-AE` = "ar-AE".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-AE`]
+  
+  inline def `ar-BH`: typingsJapgolly.validator.validatorStrings.`ar-BH` = "ar-BH".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-BH`]
+  
+  inline def `ar-DZ`: typingsJapgolly.validator.validatorStrings.`ar-DZ` = "ar-DZ".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-DZ`]
+  
+  inline def `ar-EG`: typingsJapgolly.validator.validatorStrings.`ar-EG` = "ar-EG".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-EG`]
+  
+  inline def `ar-IQ`: typingsJapgolly.validator.validatorStrings.`ar-IQ` = "ar-IQ".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-IQ`]
+  
+  inline def `ar-JO`: typingsJapgolly.validator.validatorStrings.`ar-JO` = "ar-JO".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-JO`]
+  
+  inline def `ar-KW`: typingsJapgolly.validator.validatorStrings.`ar-KW` = "ar-KW".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-KW`]
+  
+  inline def `ar-LB`: typingsJapgolly.validator.validatorStrings.`ar-LB` = "ar-LB".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-LB`]
+  
+  inline def `ar-LY`: typingsJapgolly.validator.validatorStrings.`ar-LY` = "ar-LY".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-LY`]
+  
+  inline def `ar-MA`: typingsJapgolly.validator.validatorStrings.`ar-MA` = "ar-MA".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-MA`]
+  
+  inline def `ar-QA`: typingsJapgolly.validator.validatorStrings.`ar-QA` = "ar-QA".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-QA`]
+  
+  inline def `ar-QM`: typingsJapgolly.validator.validatorStrings.`ar-QM` = "ar-QM".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-QM`]
+  
+  inline def `ar-SA`: typingsJapgolly.validator.validatorStrings.`ar-SA` = "ar-SA".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-SA`]
+  
+  inline def `ar-SD`: typingsJapgolly.validator.validatorStrings.`ar-SD` = "ar-SD".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-SD`]
+  
+  inline def `ar-SY`: typingsJapgolly.validator.validatorStrings.`ar-SY` = "ar-SY".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-SY`]
+  
+  inline def `ar-TN`: typingsJapgolly.validator.validatorStrings.`ar-TN` = "ar-TN".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-TN`]
+  
+  inline def `ar-YE`: typingsJapgolly.validator.validatorStrings.`ar-YE` = "ar-YE".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ar-YE`]
+  
+  inline def `bg-BG`: typingsJapgolly.validator.validatorStrings.`bg-BG` = "bg-BG".asInstanceOf[typingsJapgolly.validator.validatorStrings.`bg-BG`]
+  
+  inline def `cs-CZ`: typingsJapgolly.validator.validatorStrings.`cs-CZ` = "cs-CZ".asInstanceOf[typingsJapgolly.validator.validatorStrings.`cs-CZ`]
+  
+  inline def `da-DK`: typingsJapgolly.validator.validatorStrings.`da-DK` = "da-DK".asInstanceOf[typingsJapgolly.validator.validatorStrings.`da-DK`]
+  
+  inline def `de-DE`: typingsJapgolly.validator.validatorStrings.`de-DE` = "de-DE".asInstanceOf[typingsJapgolly.validator.validatorStrings.`de-DE`]
+  
+  inline def `el-GR`: typingsJapgolly.validator.validatorStrings.`el-GR` = "el-GR".asInstanceOf[typingsJapgolly.validator.validatorStrings.`el-GR`]
+  
+  inline def `en-AU`: typingsJapgolly.validator.validatorStrings.`en-AU` = "en-AU".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-AU`]
+  
+  inline def `en-GB`: typingsJapgolly.validator.validatorStrings.`en-GB` = "en-GB".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-GB`]
+  
+  inline def `en-HK`: typingsJapgolly.validator.validatorStrings.`en-HK` = "en-HK".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-HK`]
+  
+  inline def `en-IN`: typingsJapgolly.validator.validatorStrings.`en-IN` = "en-IN".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-IN`]
+  
+  inline def `en-NZ`: typingsJapgolly.validator.validatorStrings.`en-NZ` = "en-NZ".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-NZ`]
+  
+  inline def `en-US`: typingsJapgolly.validator.validatorStrings.`en-US` = "en-US".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-US`]
+  
+  inline def `en-ZA`: typingsJapgolly.validator.validatorStrings.`en-ZA` = "en-ZA".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-ZA`]
+  
+  inline def `en-ZM`: typingsJapgolly.validator.validatorStrings.`en-ZM` = "en-ZM".asInstanceOf[typingsJapgolly.validator.validatorStrings.`en-ZM`]
+  
+  inline def `es-ES`: typingsJapgolly.validator.validatorStrings.`es-ES` = "es-ES".asInstanceOf[typingsJapgolly.validator.validatorStrings.`es-ES`]
+  
+  inline def `fr-FR`: typingsJapgolly.validator.validatorStrings.`fr-FR` = "fr-FR".asInstanceOf[typingsJapgolly.validator.validatorStrings.`fr-FR`]
+  
+  inline def `hu-HU`: typingsJapgolly.validator.validatorStrings.`hu-HU` = "hu-HU".asInstanceOf[typingsJapgolly.validator.validatorStrings.`hu-HU`]
+  
+  inline def `it-IT`: typingsJapgolly.validator.validatorStrings.`it-IT` = "it-IT".asInstanceOf[typingsJapgolly.validator.validatorStrings.`it-IT`]
+  
+  inline def `ku-IQ`: typingsJapgolly.validator.validatorStrings.`ku-IQ` = "ku-IQ".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ku-IQ`]
+  
+  inline def `nb-NO`: typingsJapgolly.validator.validatorStrings.`nb-NO` = "nb-NO".asInstanceOf[typingsJapgolly.validator.validatorStrings.`nb-NO`]
+  
+  inline def `nl-NL`: typingsJapgolly.validator.validatorStrings.`nl-NL` = "nl-NL".asInstanceOf[typingsJapgolly.validator.validatorStrings.`nl-NL`]
+  
+  inline def `nn-NO`: typingsJapgolly.validator.validatorStrings.`nn-NO` = "nn-NO".asInstanceOf[typingsJapgolly.validator.validatorStrings.`nn-NO`]
+  
+  inline def `pl-PL`: typingsJapgolly.validator.validatorStrings.`pl-PL` = "pl-PL".asInstanceOf[typingsJapgolly.validator.validatorStrings.`pl-PL`]
+  
+  inline def `pl-Pl`: `pl-Pl_` = "pl-Pl".asInstanceOf[`pl-Pl_`]
+  
+  inline def `pt-BR`: typingsJapgolly.validator.validatorStrings.`pt-BR` = "pt-BR".asInstanceOf[typingsJapgolly.validator.validatorStrings.`pt-BR`]
+  
+  inline def `pt-PT`: typingsJapgolly.validator.validatorStrings.`pt-PT` = "pt-PT".asInstanceOf[typingsJapgolly.validator.validatorStrings.`pt-PT`]
+  
+  inline def `ru-RU`: typingsJapgolly.validator.validatorStrings.`ru-RU` = "ru-RU".asInstanceOf[typingsJapgolly.validator.validatorStrings.`ru-RU`]
+  
+  inline def `sl-SI`: typingsJapgolly.validator.validatorStrings.`sl-SI` = "sl-SI".asInstanceOf[typingsJapgolly.validator.validatorStrings.`sl-SI`]
+  
+  inline def `sr-RS`: typingsJapgolly.validator.validatorStrings.`sr-RS` = "sr-RS".asInstanceOf[typingsJapgolly.validator.validatorStrings.`sr-RS`]
+  
+  inline def `sr-RS@latin`: typingsJapgolly.validator.validatorStrings.`sr-RS@latin` = "sr-RS@latin".asInstanceOf[typingsJapgolly.validator.validatorStrings.`sr-RS@latin`]
+  
+  inline def `sv-SE`: typingsJapgolly.validator.validatorStrings.`sv-SE` = "sv-SE".asInstanceOf[typingsJapgolly.validator.validatorStrings.`sv-SE`]
+  
+  inline def `tr-TR`: typingsJapgolly.validator.validatorStrings.`tr-TR` = "tr-TR".asInstanceOf[typingsJapgolly.validator.validatorStrings.`tr-TR`]
+  
+  inline def `uk-UA`: typingsJapgolly.validator.validatorStrings.`uk-UA` = "uk-UA".asInstanceOf[typingsJapgolly.validator.validatorStrings.`uk-UA`]
 }
-

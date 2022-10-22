@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonGroupSelectEvent extends ButtonGroupEvent {
-  var indices: js.UndefOr[js.Any] = js.undefined
+trait ButtonGroupSelectEvent
+  extends StObject
+     with ButtonGroupEvent {
+  
+  var indices: js.UndefOr[Any] = js.undefined
 }
-
 object ButtonGroupSelectEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: ButtonGroup,
-    indices: js.Any = null
-  ): ButtonGroupSelectEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (indices != null) __obj.updateDynamic("indices")(indices.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: ButtonGroup): ButtonGroupSelectEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonGroupSelectEvent]
   }
+  
+  extension [Self <: ButtonGroupSelectEvent](x: Self) {
+    
+    inline def setIndices(value: Any): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    
+    inline def setIndicesUndefined: Self = StObject.set(x, "indices", js.undefined)
+  }
 }
-

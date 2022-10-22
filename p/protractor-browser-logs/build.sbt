@@ -1,20 +1,19 @@
 organization := "org.scalablytyped.japgolly"
 name := "protractor-browser-logs"
-version := "1.0-dt-20200226Z-b203a0"
-scalaVersion := "2.13.1"
+version := "1.0-dt-20211202Z-4a67eb"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "blocking-proxy" % "1.0.1-fa289a",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "protractor" % "5.4.3-eae571",
-  "org.scalablytyped.japgolly" %%% "q" % "1.5-dt-20200225Z-91e923",
-  "org.scalablytyped.japgolly" %%% "selenium-webdriver" % "4.0-dt-20200302Z-6d779b",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "webdriver-js-extender" % "2.1.0-fa6476")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "blocking-proxy" % "1.0.1-e7853c",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "protractor" % "7.0.0-e0c521",
+  "org.scalablytyped.japgolly" %%% "q" % "1.5-dt-20220819Z-c894ec",
+  "org.scalablytyped.japgolly" %%% "selenium-webdriver" % "4.1-dt-20220909Z-ba92c6",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "webdriver-js-extender" % "2.2.0-2f1d42",
+  "org.scalablytyped.japgolly" %%% "ws" % "8.5-dt-20220624Z-5c45c7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

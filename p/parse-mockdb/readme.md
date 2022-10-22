@@ -10,15 +10,15 @@ Parse JS SDK Mocked Database
 | ------------------ | :-------------: |
 | Full name          | parse-mockdb |
 | Keywords           | parse, parsesdk, mock, unit-testing |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 22315 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4114.666666666667 |
+| # stars            | 48.0 |
 
 ## Links
-- [Homepage](https://github.com/HustleInc/parse-mockdb)
-- [Bugs](https://github.com/HustleInc/parse-mockdb/issues)
-- [Repository](https://github.com/HustleInc/parse-mockdb)
+- [Homepage](https://github.com/Hustle/parse-mockdb)
+- [Bugs](https://github.com/Hustle/parse-mockdb/issues)
+- [Repository](https://github.com/Hustle/parse-mockdb)
 - [Npm](https://www.npmjs.com/package/parse-mockdb)
     
 

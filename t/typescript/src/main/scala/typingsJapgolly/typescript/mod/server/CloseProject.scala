@@ -1,20 +1,25 @@
 package typingsJapgolly.typescript.mod.server
 
 import typingsJapgolly.typescript.typescriptStrings.closeProject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CloseProject extends TypingInstallerRequestWithProjectName {
+trait CloseProject
+  extends StObject
+     with TypingInstallerRequestWithProjectName {
+  
   val kind: closeProject
 }
-
 object CloseProject {
-  @scala.inline
-  def apply(kind: closeProject, projectName: String): CloseProject = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
   
+  inline def apply(projectName: String): CloseProject = {
+    val __obj = js.Dynamic.literal(kind = "closeProject", projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseProject]
   }
+  
+  extension [Self <: CloseProject](x: Self) {
+    
+    inline def setKind(value: closeProject): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,73 +1,112 @@
 package typingsJapgolly.extjs.Ext
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFlashComponent extends IComponent {
+trait IFlashComponent
+  extends StObject
+     with IComponent {
+  
   /** [Property] (String) */
   var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var expressInstall: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var flashAttributes: js.UndefOr[js.Any] = js.undefined
+  var flashAttributes: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var flashParams: js.UndefOr[js.Any] = js.undefined
+  var flashParams: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var flashVars: js.UndefOr[js.Any] = js.undefined
+  var flashVars: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var flashVersion: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Method] Retrieves the id of the SWF object embed element  */
   var getSwfId: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Property] (Ext.Element) */
   var swf: js.UndefOr[IElement] = js.undefined
+  
   /** [Config Option] (String/Number) */
-  var swfHeight: js.UndefOr[js.Any] = js.undefined
+  var swfHeight: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String/Number) */
-  var swfWidth: js.UndefOr[js.Any] = js.undefined
+  var swfWidth: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var url: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (String) */
   var wmode: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object IFlashComponent {
-  @scala.inline
-  def apply(
-    EXPRESS_INSTALL_URL: java.lang.String = null,
-    IComponent: IComponent = null,
-    backgroundColor: java.lang.String = null,
-    expressInstall: js.UndefOr[Boolean] = js.undefined,
-    flashAttributes: js.Any = null,
-    flashParams: js.Any = null,
-    flashVars: js.Any = null,
-    flashVersion: java.lang.String = null,
-    getSwfId: js.UndefOr[Callback] = js.undefined,
-    swf: IElement = null,
-    swfHeight: js.Any = null,
-    swfWidth: js.Any = null,
-    url: java.lang.String = null,
-    wmode: java.lang.String = null
-  ): IFlashComponent = {
+  
+  inline def apply(): IFlashComponent = {
     val __obj = js.Dynamic.literal()
-    if (EXPRESS_INSTALL_URL != null) __obj.updateDynamic("EXPRESS_INSTALL_URL")(EXPRESS_INSTALL_URL.asInstanceOf[js.Any])
-    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(expressInstall)) __obj.updateDynamic("expressInstall")(expressInstall.asInstanceOf[js.Any])
-    if (flashAttributes != null) __obj.updateDynamic("flashAttributes")(flashAttributes.asInstanceOf[js.Any])
-    if (flashParams != null) __obj.updateDynamic("flashParams")(flashParams.asInstanceOf[js.Any])
-    if (flashVars != null) __obj.updateDynamic("flashVars")(flashVars.asInstanceOf[js.Any])
-    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
-    getSwfId.foreach(p => __obj.updateDynamic("getSwfId")(p.toJsFn))
-    if (swf != null) __obj.updateDynamic("swf")(swf.asInstanceOf[js.Any])
-    if (swfHeight != null) __obj.updateDynamic("swfHeight")(swfHeight.asInstanceOf[js.Any])
-    if (swfWidth != null) __obj.updateDynamic("swfWidth")(swfWidth.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (wmode != null) __obj.updateDynamic("wmode")(wmode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFlashComponent]
   }
+  
+  extension [Self <: IFlashComponent](x: Self) {
+    
+    inline def setBackgroundColor(value: java.lang.String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setEXPRESS_INSTALL_URL(value: java.lang.String): Self = StObject.set(x, "EXPRESS_INSTALL_URL", value.asInstanceOf[js.Any])
+    
+    inline def setEXPRESS_INSTALL_URLUndefined: Self = StObject.set(x, "EXPRESS_INSTALL_URL", js.undefined)
+    
+    inline def setExpressInstall(value: Boolean): Self = StObject.set(x, "expressInstall", value.asInstanceOf[js.Any])
+    
+    inline def setExpressInstallUndefined: Self = StObject.set(x, "expressInstall", js.undefined)
+    
+    inline def setFlashAttributes(value: Any): Self = StObject.set(x, "flashAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setFlashAttributesUndefined: Self = StObject.set(x, "flashAttributes", js.undefined)
+    
+    inline def setFlashParams(value: Any): Self = StObject.set(x, "flashParams", value.asInstanceOf[js.Any])
+    
+    inline def setFlashParamsUndefined: Self = StObject.set(x, "flashParams", js.undefined)
+    
+    inline def setFlashVars(value: Any): Self = StObject.set(x, "flashVars", value.asInstanceOf[js.Any])
+    
+    inline def setFlashVarsUndefined: Self = StObject.set(x, "flashVars", js.undefined)
+    
+    inline def setFlashVersion(value: java.lang.String): Self = StObject.set(x, "flashVersion", value.asInstanceOf[js.Any])
+    
+    inline def setFlashVersionUndefined: Self = StObject.set(x, "flashVersion", js.undefined)
+    
+    inline def setGetSwfId(value: Callback): Self = StObject.set(x, "getSwfId", value.toJsFn)
+    
+    inline def setGetSwfIdUndefined: Self = StObject.set(x, "getSwfId", js.undefined)
+    
+    inline def setSwf(value: IElement): Self = StObject.set(x, "swf", value.asInstanceOf[js.Any])
+    
+    inline def setSwfHeight(value: Any): Self = StObject.set(x, "swfHeight", value.asInstanceOf[js.Any])
+    
+    inline def setSwfHeightUndefined: Self = StObject.set(x, "swfHeight", js.undefined)
+    
+    inline def setSwfUndefined: Self = StObject.set(x, "swf", js.undefined)
+    
+    inline def setSwfWidth(value: Any): Self = StObject.set(x, "swfWidth", value.asInstanceOf[js.Any])
+    
+    inline def setSwfWidthUndefined: Self = StObject.set(x, "swfWidth", js.undefined)
+    
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWmode(value: java.lang.String): Self = StObject.set(x, "wmode", value.asInstanceOf[js.Any])
+    
+    inline def setWmodeUndefined: Self = StObject.set(x, "wmode", js.undefined)
+  }
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.Identifier")
 @js.native
-class Identifier ()
-  extends typingsJapgolly.xadesjs.xmlMod.Identifier
-
+open class Identifier ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.Identifier {
+  def this(properties: js.Object) = this()
+}

@@ -1,19 +1,29 @@
 package typingsJapgolly.truncateMiddle
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("truncate-middle", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): String = js.native
-  def apply(text: String): String = js.native
-  def apply(text: String, frontLength: Double): String = js.native
-  def apply(text: String, frontLength: Double, backLength: Double): String = js.native
-  def apply(text: String, frontLength: Double, backLength: Double, ellipsis: String): String = js.native
-  def apply(text: Null, frontLength: Double): String = js.native
-  def apply(text: Null, frontLength: Double, backLength: Double): String = js.native
-  def apply(text: Null, frontLength: Double, backLength: Double, ellipsis: String): String = js.native
+object mod {
+  
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Double, backLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Double, backLength: Double, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Double, backLength: Unit, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Unit, backLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Unit, backLength: Double, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: String, frontLength: Unit, backLength: Unit, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Double, backLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Double, backLength: Double, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Double, backLength: Unit, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Unit, backLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Unit, backLength: Double, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(text: Null, frontLength: Unit, backLength: Unit, ellipsis: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], frontLength.asInstanceOf[js.Any], backLength.asInstanceOf[js.Any], ellipsis.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("truncate-middle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

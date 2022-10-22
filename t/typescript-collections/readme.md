@@ -1,7 +1,7 @@
 
 # Scala.js typings for typescript-collections
 
-Typings are for version 1.3.2
+Typings are for version 1.3.3
 
 ## Library description:
 A complete, fully tested data structure library written in TypeScript.
@@ -10,10 +10,10 @@ A complete, fully tested data structure library written in TypeScript.
 | ------------------ | :-------------: |
 | Full name          | typescript-collections |
 | Keywords           | typescript, generics, data, structures, collections, linked, list, dictionary, default, dictionary, multi, dictionary, binary, search, tree, key, value, stack, queue, set, bag, binary, heap, priority, queue, array |
-| # releases         | 3 |
-| # dependents       | 74 |
-| # downloads        | 528204 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 80388.66666666667 |
+| # stars            | 1111.0 |
 
 ## Links
 - [Homepage](https://github.com/basarat/typescript-collections)

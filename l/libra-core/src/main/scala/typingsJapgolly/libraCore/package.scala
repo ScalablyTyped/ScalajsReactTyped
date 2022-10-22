@@ -1,9 +1,9 @@
-package typingsJapgolly
+package typingsJapgolly.libraCore
 
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object libraCore {
-  type BuffString = typingsJapgolly.node.Buffer | java.lang.String
-}
+
+type BuffString = Buffer | String

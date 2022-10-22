@@ -1,12 +1,15 @@
 package typingsJapgolly.dotPropImmutable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("dot-prop-immutable", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("dot-prop-immutable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Delete a nested property/array by a dot path
     *
@@ -24,13 +27,20 @@ object mod extends js.Object {
     * //=> {foo: [{}, 'white-unicorn', 'silver-unicorn']}
     * ```
     */
-  def delete[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native
-  def get(`object`: js.UndefOr[ArrayOrObject], path: Path): js.Any = js.native
-  def get[V](`object`: js.UndefOr[ArrayOrObject], path: Path, defaultValue: V): V = js.native
-  def merge[T /* <: ArrayOrObject */](`object`: T, path: Path, value: ArrayOrObject): T = js.native
-  def set[T /* <: ArrayOrObject */](`object`: T, path: Path, value: js.Any): T = js.native
-  def toggle[T /* <: ArrayOrObject */](`object`: T, path: Path): T = js.native
-  type ArrayOrObject = js.Array[js.Any] | js.Object
+  inline def delete[T /* <: ArrayOrObject */](`object`: T, path: Path): T = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def get(`object`: Unit, path: Path): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def get(`object`: ArrayOrObject, path: Path): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def get[V](`object`: Unit, path: Path, defaultValue: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[V]
+  inline def get[V](`object`: ArrayOrObject, path: Path, defaultValue: V): V = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[V]
+  
+  inline def merge[T /* <: ArrayOrObject */](`object`: T, path: Path, value: ArrayOrObject): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def set[T /* <: ArrayOrObject */](`object`: T, path: Path, value: Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def toggle[T /* <: ArrayOrObject */](`object`: T, path: Path): T = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  type ArrayOrObject = js.Array[Any] | js.Object
+  
   type Path = Double | String | (js.Array[Double | String])
 }
-

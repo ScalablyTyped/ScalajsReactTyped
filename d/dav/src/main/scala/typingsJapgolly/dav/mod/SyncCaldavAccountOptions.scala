@@ -3,50 +3,67 @@ package typingsJapgolly.dav.mod
 import typingsJapgolly.dav.davStrings.basic
 import typingsJapgolly.dav.davStrings.webdav
 import typingsJapgolly.dav.mod.transport.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SyncCaldavAccountOptions extends js.Object {
+trait SyncCaldavAccountOptions extends StObject {
+  
   /**
     * list of caldav filters to send with request.
     */
   var filters: js.UndefOr[js.Array[js.Object]] = js.undefined
+  
   /**
     * request sandbox.
     */
   var sandbox: js.UndefOr[Sandbox] = js.undefined
+  
   /**
     * either 'basic' or 'webdav'. If unspecified, will try to do webdav sync
     * and failover to basic sync if rfc 6578 is not supported by the server.
     */
   var syncMethod: js.UndefOr[basic | webdav] = js.undefined
+  
   /**
     * VTIMEZONE calendar object.
     */
   var timezone: js.UndefOr[String] = js.undefined
+  
   /**
     * request sender.
     */
   var xhr: js.UndefOr[Transport] = js.undefined
 }
-
 object SyncCaldavAccountOptions {
-  @scala.inline
-  def apply(
-    filters: js.Array[js.Object] = null,
-    sandbox: Sandbox = null,
-    syncMethod: basic | webdav = null,
-    timezone: String = null,
-    xhr: Transport = null
-  ): SyncCaldavAccountOptions = {
+  
+  inline def apply(): SyncCaldavAccountOptions = {
     val __obj = js.Dynamic.literal()
-    if (filters != null) __obj.updateDynamic("filters")(filters.asInstanceOf[js.Any])
-    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox.asInstanceOf[js.Any])
-    if (syncMethod != null) __obj.updateDynamic("syncMethod")(syncMethod.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (xhr != null) __obj.updateDynamic("xhr")(xhr.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncCaldavAccountOptions]
   }
+  
+  extension [Self <: SyncCaldavAccountOptions](x: Self) {
+    
+    inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    
+    inline def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value*))
+    
+    inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    
+    inline def setSyncMethod(value: basic | webdav): Self = StObject.set(x, "syncMethod", value.asInstanceOf[js.Any])
+    
+    inline def setSyncMethodUndefined: Self = StObject.set(x, "syncMethod", js.undefined)
+    
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+  }
 }
-

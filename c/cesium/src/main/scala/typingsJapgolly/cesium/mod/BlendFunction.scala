@@ -1,107 +1,150 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BlendFunction extends js.Object
-
+sealed trait BlendFunction extends StObject
 @JSImport("cesium", "BlendFunction")
 @js.native
-object BlendFunction extends js.Object {
-  @js.native
-  sealed trait CONSTANT_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait CONSTANT_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait DESTINATION_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait DESTINATION_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait ONE extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_CONSTANT_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_CONSTANT_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_DESTINATION_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_DESTINATION_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_SOURCE_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait ONE_MINUS_SOURCE_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait SOURCE_ALPHA extends BlendFunction
-  
-  @js.native
-  sealed trait SOURCE_ALPHA_SATURATE extends BlendFunction
-  
-  @js.native
-  sealed trait SOURCE_COLOR extends BlendFunction
-  
-  @js.native
-  sealed trait ZERO extends BlendFunction
+object BlendFunction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BlendFunction with Double] = js.native
-  /* 12 */ @js.native
-  object CONSTANT_ALPHA extends TopLevel[CONSTANT_ALPHA with Double]
+  def apply(value: scala.Nothing): js.UndefOr[BlendFunction & scala.Nothing] = js.native
   
-  /* 10 */ @js.native
-  object CONSTANT_COLOR extends TopLevel[CONSTANT_COLOR with Double]
+  /**
+    * The blend factor is the constant alpha.
+    */
+  @js.native
+  sealed trait CONSTANT_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.CONSTANT_ALPHA */ val CONSTANT_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.CONSTANT_ALPHA & scala.Nothing = js.native
   
-  /* 8 */ @js.native
-  object DESTINATION_ALPHA extends TopLevel[DESTINATION_ALPHA with Double]
+  /**
+    * The blend factor is the constant color.
+    */
+  @js.native
+  sealed trait CONSTANT_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.CONSTANT_COLOR */ val CONSTANT_COLOR: typingsJapgolly.cesium.mod.BlendFunction.CONSTANT_COLOR & scala.Nothing = js.native
   
-  /* 4 */ @js.native
-  object DESTINATION_COLOR extends TopLevel[DESTINATION_COLOR with Double]
+  /**
+    * The blend factor is the destination alpha.
+    */
+  @js.native
+  sealed trait DESTINATION_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.DST_ALPHA */ val DESTINATION_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.DESTINATION_ALPHA & scala.Nothing = js.native
   
-  /* 1 */ @js.native
-  object ONE extends TopLevel[ONE with Double]
+  /**
+    * The blend factor is the destination color.
+    */
+  @js.native
+  sealed trait DESTINATION_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.DST_COLOR */ val DESTINATION_COLOR: typingsJapgolly.cesium.mod.BlendFunction.DESTINATION_COLOR & scala.Nothing = js.native
   
-  /* 13 */ @js.native
-  object ONE_MINUS_CONSTANT_ALPHA extends TopLevel[ONE_MINUS_CONSTANT_ALPHA with Double]
+  /**
+    * The blend factor is one.
+    */
+  @js.native
+  sealed trait ONE
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE */ val ONE: typingsJapgolly.cesium.mod.BlendFunction.ONE & scala.Nothing = js.native
   
-  /* 11 */ @js.native
-  object ONE_MINUS_CONSTANT_COLOR extends TopLevel[ONE_MINUS_CONSTANT_COLOR with Double]
+  /**
+    * The blend factor is one minus the constant alpha.
+    */
+  @js.native
+  sealed trait ONE_MINUS_CONSTANT_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_CONSTANT_ALPHA */ val ONE_MINUS_CONSTANT_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_CONSTANT_ALPHA & scala.Nothing = js.native
   
-  /* 9 */ @js.native
-  object ONE_MINUS_DESTINATION_ALPHA extends TopLevel[ONE_MINUS_DESTINATION_ALPHA with Double]
+  /**
+    * The blend factor is one minus the constant color.
+    */
+  @js.native
+  sealed trait ONE_MINUS_CONSTANT_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_CONSTANT_COLOR */ val ONE_MINUS_CONSTANT_COLOR: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_CONSTANT_COLOR & scala.Nothing = js.native
   
-  /* 5 */ @js.native
-  object ONE_MINUS_DESTINATION_COLOR extends TopLevel[ONE_MINUS_DESTINATION_COLOR with Double]
+  /**
+    * The blend factor is one minus the destination alpha.
+    */
+  @js.native
+  sealed trait ONE_MINUS_DESTINATION_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_DST_ALPHA */ val ONE_MINUS_DESTINATION_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_DESTINATION_ALPHA & scala.Nothing = js.native
   
-  /* 7 */ @js.native
-  object ONE_MINUS_SOURCE_ALPHA extends TopLevel[ONE_MINUS_SOURCE_ALPHA with Double]
+  /**
+    * The blend factor is one minus the destination color.
+    */
+  @js.native
+  sealed trait ONE_MINUS_DESTINATION_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_DST_COLOR */ val ONE_MINUS_DESTINATION_COLOR: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_DESTINATION_COLOR & scala.Nothing = js.native
   
-  /* 3 */ @js.native
-  object ONE_MINUS_SOURCE_COLOR extends TopLevel[ONE_MINUS_SOURCE_COLOR with Double]
+  /**
+    * The blend factor is one minus the source alpha.
+    */
+  @js.native
+  sealed trait ONE_MINUS_SOURCE_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_SRC_ALPHA */ val ONE_MINUS_SOURCE_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_SOURCE_ALPHA & scala.Nothing = js.native
   
-  /* 6 */ @js.native
-  object SOURCE_ALPHA extends TopLevel[SOURCE_ALPHA with Double]
+  /**
+    * The blend factor is one minus the source color.
+    */
+  @js.native
+  sealed trait ONE_MINUS_SOURCE_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ONE_MINUS_SRC_COLOR */ val ONE_MINUS_SOURCE_COLOR: typingsJapgolly.cesium.mod.BlendFunction.ONE_MINUS_SOURCE_COLOR & scala.Nothing = js.native
   
-  /* 14 */ @js.native
-  object SOURCE_ALPHA_SATURATE extends TopLevel[SOURCE_ALPHA_SATURATE with Double]
+  /**
+    * The blend factor is the source alpha.
+    */
+  @js.native
+  sealed trait SOURCE_ALPHA
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.SRC_ALPHA */ val SOURCE_ALPHA: typingsJapgolly.cesium.mod.BlendFunction.SOURCE_ALPHA & scala.Nothing = js.native
   
-  /* 2 */ @js.native
-  object SOURCE_COLOR extends TopLevel[SOURCE_COLOR with Double]
+  /**
+    * The blend factor is the saturated source alpha.
+    */
+  @js.native
+  sealed trait SOURCE_ALPHA_SATURATE
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.SRC_ALPHA_SATURATE */ val SOURCE_ALPHA_SATURATE: typingsJapgolly.cesium.mod.BlendFunction.SOURCE_ALPHA_SATURATE & scala.Nothing = js.native
   
-  /* 0 */ @js.native
-  object ZERO extends TopLevel[ZERO with Double]
+  /**
+    * The blend factor is the source color.
+    */
+  @js.native
+  sealed trait SOURCE_COLOR
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.SRC_COLOR */ val SOURCE_COLOR: typingsJapgolly.cesium.mod.BlendFunction.SOURCE_COLOR & scala.Nothing = js.native
   
+  /**
+    * The blend factor is zero.
+    */
+  @js.native
+  sealed trait ZERO
+    extends StObject
+       with BlendFunction
+  /* WebGLConstants.ZERO */ val ZERO: typingsJapgolly.cesium.mod.BlendFunction.ZERO & scala.Nothing = js.native
 }
-

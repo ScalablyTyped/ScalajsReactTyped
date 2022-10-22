@@ -1,13 +1,13 @@
 package typingsJapgolly.syntaxError
 
 import typingsJapgolly.acorn.mod.Options
+import typingsJapgolly.syntaxError.anon.SyntaxErrorlinenumbercolu
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("syntax-error", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Check the source code string 'src' for syntax errors. Optionally you can specify a filename
     * file that will show up in the output.
@@ -16,8 +16,12 @@ object mod extends js.Object {
     * Options will be passed through to acorn-node. acorn-node defaults to options
     * that match the most recent Node versions.
     */
-  def apply(src: js.Any): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
-  def apply(src: js.Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
-  def apply(src: js.Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = js.native
+  inline def apply(src: Any): js.UndefOr[SyntaxErrorlinenumbercolu] = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SyntaxErrorlinenumbercolu]]
+  inline def apply(src: Any, file: String): js.UndefOr[SyntaxErrorlinenumbercolu] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SyntaxErrorlinenumbercolu]]
+  inline def apply(src: Any, file: String, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SyntaxErrorlinenumbercolu]]
+  inline def apply(src: Any, file: Unit, opts: Options): js.UndefOr[SyntaxErrorlinenumbercolu] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], file.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SyntaxErrorlinenumbercolu]]
+  
+  @JSImport("syntax-error", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

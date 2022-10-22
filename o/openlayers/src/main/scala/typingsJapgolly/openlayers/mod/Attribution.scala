@@ -1,13 +1,13 @@
 package typingsJapgolly.openlayers.mod
 
 import typingsJapgolly.openlayers.mod.olx.AttributionOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Attribution")
 @js.native
-class Attribution protected () extends js.Object {
+open class Attribution protected () extends StObject {
   /**
     * @classdesc
     * An attribution for a layer source.
@@ -29,6 +29,7 @@ class Attribution protected () extends js.Object {
     * @api stable
     */
   def this(options: AttributionOptions) = this()
+  
   /**
     * Get the attribution markup.
     * @return The attribution HTML.
@@ -36,4 +37,3 @@ class Attribution protected () extends js.Object {
     */
   def getHTML(): String = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.WebView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of the script or CSS to inject. Either the code or the file property must be set, but both may not be set at the same time.
@@ -12,7 +12,8 @@ import scala.scalajs.js.annotation._
   * Either the code or the file property must be set,
   * but both may not be set at the same time.
   **/
-trait InjectDetails extends js.Object {
+trait InjectDetails extends StObject {
+  
   /**
     * JavaScript or CSS code to inject.
     *
@@ -28,20 +29,28 @@ trait InjectDetails extends js.Object {
     * Incorrect use of it may open your app to xss attacks.
     */
   var code: js.UndefOr[String] = js.undefined
+  
   /**
     * JavaScript or CSS file to inject.
     */
   /** JavaScript or CSS file to inject. */
   var file: js.UndefOr[String] = js.undefined
 }
-
 object InjectDetails {
-  @scala.inline
-  def apply(code: String = null, file: String = null): InjectDetails = {
+  
+  inline def apply(): InjectDetails = {
     val __obj = js.Dynamic.literal()
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
     __obj.asInstanceOf[InjectDetails]
   }
+  
+  extension [Self <: InjectDetails](x: Self) {
+    
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+  }
 }
-

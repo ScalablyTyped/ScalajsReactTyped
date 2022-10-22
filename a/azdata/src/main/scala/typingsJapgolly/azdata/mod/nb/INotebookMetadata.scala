@@ -1,22 +1,38 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INotebookMetadata extends js.Object {
-  var kernelspec: IKernelInfo
+trait INotebookMetadata extends StObject {
+  
+  var kernelspec: js.UndefOr[IKernelSpec] = js.undefined
+  
   var language_info: js.UndefOr[ILanguageInfo] = js.undefined
+  
   var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object INotebookMetadata {
-  @scala.inline
-  def apply(kernelspec: IKernelInfo, language_info: ILanguageInfo = null, tags: js.Array[String] = null): INotebookMetadata = {
-    val __obj = js.Dynamic.literal(kernelspec = kernelspec.asInstanceOf[js.Any])
-    if (language_info != null) __obj.updateDynamic("language_info")(language_info.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+  
+  inline def apply(): INotebookMetadata = {
+    val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INotebookMetadata]
   }
+  
+  extension [Self <: INotebookMetadata](x: Self) {
+    
+    inline def setKernelspec(value: IKernelSpec): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
+    
+    inline def setKernelspecUndefined: Self = StObject.set(x, "kernelspec", js.undefined)
+    
+    inline def setLanguage_info(value: ILanguageInfo): Self = StObject.set(x, "language_info", value.asInstanceOf[js.Any])
+    
+    inline def setLanguage_infoUndefined: Self = StObject.set(x, "language_info", js.undefined)
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+  }
 }
-

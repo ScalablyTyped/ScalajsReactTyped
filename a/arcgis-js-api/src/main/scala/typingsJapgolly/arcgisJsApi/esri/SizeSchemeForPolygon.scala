@@ -1,49 +1,57 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SizeSchemeForPolygon
-  extends Object
+  extends StObject
+     with Object
      with SizeScheme {
+  
   /**
-    * The schema defining the backgound symbol of the feature. This is a fill symbol.
+    * The schema defining the backgound symbol of the feature.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
   var background: SizeSchemeForPolygonBackground
+  
   /**
     * The scheme defining the symbology of the marker symbol used to represent polygon features by size.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
   var marker: SizeSchemeForPoint
+  
   /**
     * The opacity of the symbol.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-size.html#SizeSchemeForPolygon)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
   var opacity: Double
 }
-
 object SizeSchemeForPolygon {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     background: SizeSchemeForPolygonBackground,
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     marker: SizeSchemeForPoint,
     opacity: Double,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): SizeSchemeForPolygon = {
-    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], marker = marker.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), marker = marker.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[SizeSchemeForPolygon]
   }
+  
+  extension [Self <: SizeSchemeForPolygon](x: Self) {
+    
+    inline def setBackground(value: SizeSchemeForPolygonBackground): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setMarker(value: SizeSchemeForPoint): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.estree.mod.ImportDeclaration
@@ -10,81 +10,33 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.estree.mod.ExportDefaultDeclaration
   - typingsJapgolly.estree.mod.ExportAllDeclaration
 */
-trait ModuleDeclaration extends Node
-
+trait ModuleDeclaration extends StObject
 object ModuleDeclaration {
-  @scala.inline
-  def ImportDeclaration(
-    source: Literal,
-    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier],
-    `type`: typingsJapgolly.estree.estreeStrings.ImportDeclaration,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+  
+  inline def ExportAllDeclaration(source: Literal): typingsJapgolly.estree.mod.ExportAllDeclaration = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], exported = null)
+    __obj.updateDynamic("type")("ExportAllDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ExportAllDeclaration]
   }
-  @scala.inline
-  def ExportNamedDeclaration(
-    specifiers: js.Array[ExportSpecifier],
-    `type`: typingsJapgolly.estree.estreeStrings.ExportNamedDeclaration,
-    declaration: Declaration = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    source: Literal = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
-  }
-  @scala.inline
-  def ExportDefaultDeclaration(
-    declaration: Declaration | Expression,
-    `type`: typingsJapgolly.estree.estreeStrings.ExportDefaultDeclaration,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleDeclaration = {
+  
+  inline def ExportDefaultDeclaration(declaration: Declaration | Expression): typingsJapgolly.estree.mod.ExportDefaultDeclaration = {
     val __obj = js.Dynamic.literal(declaration = declaration.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    __obj.updateDynamic("type")("ExportDefaultDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ExportDefaultDeclaration]
   }
-  @scala.inline
-  def ExportAllDeclaration(
+  
+  inline def ExportNamedDeclaration(specifiers: js.Array[ExportSpecifier]): typingsJapgolly.estree.mod.ExportNamedDeclaration = {
+    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportNamedDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ExportNamedDeclaration]
+  }
+  
+  inline def ImportDeclaration(
     source: Literal,
-    `type`: typingsJapgolly.estree.estreeStrings.ExportAllDeclaration,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ModuleDeclaration = {
-    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ModuleDeclaration]
+    specifiers: js.Array[ImportSpecifier | ImportDefaultSpecifier | ImportNamespaceSpecifier]
+  ): typingsJapgolly.estree.mod.ImportDeclaration = {
+    val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], specifiers = specifiers.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ImportDeclaration")
+    __obj.asInstanceOf[typingsJapgolly.estree.mod.ImportDeclaration]
   }
 }
-

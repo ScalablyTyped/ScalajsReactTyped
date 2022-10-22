@@ -1,34 +1,29 @@
 package typingsJapgolly.loginWithAmazonSdkBrowser
 
 import typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Option form to request a code.
   */
-trait CodeAuthorizeOptions extends AuthorizeOptions {
+trait CodeAuthorizeOptions
+  extends StObject
+     with AuthorizeOptions {
+  
   @JSName("response_type")
   var response_type_CodeAuthorizeOptions: code
 }
-
 object CodeAuthorizeOptions {
-  @scala.inline
-  def apply(
-    response_type: code,
-    scope: AuthorizeScope,
-    interactive: AuthorizeInteractiveOption = null,
-    popup: js.UndefOr[Boolean] = js.undefined,
-    scope_data: AuthorizeScopeData = null,
-    state: String = null
-  ): CodeAuthorizeOptions = {
-    val __obj = js.Dynamic.literal(response_type = response_type.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any])
-    if (interactive != null) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (scope_data != null) __obj.updateDynamic("scope_data")(scope_data.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+  
+  inline def apply(scope: AuthorizeScope): CodeAuthorizeOptions = {
+    val __obj = js.Dynamic.literal(response_type = "code", scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAuthorizeOptions]
   }
+  
+  extension [Self <: CodeAuthorizeOptions](x: Self) {
+    
+    inline def setResponse_type(value: code): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+  }
 }
-

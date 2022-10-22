@@ -1,29 +1,39 @@
 package typingsJapgolly.mfiles
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.mfiles.MFiles.MFFacetSearchFlags
 import typingsJapgolly.mfiles.MFiles.MFFullTextSearchFlags
 import typingsJapgolly.mfiles.MFiles.MFSearchFlags
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IVaultObjectSearchOperations extends js.Object {
+trait IVaultObjectSearchOperations extends StObject {
+  
   def FindFile(RelativePath: String, UpdateFromServer: Boolean): IObjectFileAndVersion
+  
   def FindObjectVersionAndProperties(RelativePath: String, UpdateFromServer: Boolean): IObjectVersionAndProperties
+  
   def GetFacetValues(
     SearchConditions: ISearchConditions,
     Facets: IExpressions,
     FacetValuesMaxCount: Double,
     Flags: MFFacetSearchFlags
   ): IStringData
+  
   def GetFacetValuesByPath(RelativePath: String, Facets: IExpressions, FacetValuesMaxCount: Double, Flags: MFFacetSearchFlags): IStringData
+  
   def GetObjectCountInSearch(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags): Double
+  
   def GetObjectsInPath(RelativePath: String, SortResults: Boolean, UpdateFromServer: Boolean): IObjectSearchResults
+  
   def GetSearchHits(Input: String, SearchCondition: ISearchCondition): IStrings
+  
   def IsObjectPathInMFiles(RelativePath: String): Boolean
+  
   def SearchForObjectsByCondition(SearchCondition: ISearchCondition, SortResults: Boolean): IObjectSearchResults
+  
   def SearchForObjectsByConditions(SearchConditions: ISearchConditions, SearchFlags: MFSearchFlags, SortResults: Boolean): IObjectSearchResults
+  
   def SearchForObjectsByConditionsEx(
     SearchConditions: ISearchConditions,
     SearchFlags: MFSearchFlags,
@@ -31,48 +41,68 @@ trait IVaultObjectSearchOperations extends js.Object {
     MaxResultCount: Double,
     SearchTimeoutInSeconds: Double
   ): IObjectSearchResults
+  
   def SearchForObjectsByConditionsXML(SearchConditions: ISearchConditions, SortResults: Boolean): IXMLSearchResult
+  
   def SearchForObjectsByExportedSearchConditions(ExportedSearchString: String, SortResults: Boolean): IObjectSearchResults
+  
   def SearchForObjectsByExportedSearchConditionsXML(SearchString: String, SortResults: Boolean): IXMLSearchResult
+  
   def SearchForObjectsByString(SearchString: String, SortResults: Boolean, FullTextSearchFlags: MFFullTextSearchFlags): IObjectSearchResults
 }
-
 object IVaultObjectSearchOperations {
-  @scala.inline
-  def apply(
-    FindFile: (String, Boolean) => CallbackTo[IObjectFileAndVersion],
-    FindObjectVersionAndProperties: (String, Boolean) => CallbackTo[IObjectVersionAndProperties],
-    GetFacetValues: (ISearchConditions, IExpressions, Double, MFFacetSearchFlags) => CallbackTo[IStringData],
-    GetFacetValuesByPath: (String, IExpressions, Double, MFFacetSearchFlags) => CallbackTo[IStringData],
-    GetObjectCountInSearch: (ISearchConditions, MFSearchFlags) => CallbackTo[Double],
-    GetObjectsInPath: (String, Boolean, Boolean) => CallbackTo[IObjectSearchResults],
-    GetSearchHits: (String, ISearchCondition) => CallbackTo[IStrings],
-    IsObjectPathInMFiles: String => CallbackTo[Boolean],
-    SearchForObjectsByCondition: (ISearchCondition, Boolean) => CallbackTo[IObjectSearchResults],
-    SearchForObjectsByConditions: (ISearchConditions, MFSearchFlags, Boolean) => CallbackTo[IObjectSearchResults],
-    SearchForObjectsByConditionsEx: (ISearchConditions, MFSearchFlags, Boolean, Double, Double) => CallbackTo[IObjectSearchResults],
-    SearchForObjectsByConditionsXML: (ISearchConditions, Boolean) => CallbackTo[IXMLSearchResult],
-    SearchForObjectsByExportedSearchConditions: (String, Boolean) => CallbackTo[IObjectSearchResults],
-    SearchForObjectsByExportedSearchConditionsXML: (String, Boolean) => CallbackTo[IXMLSearchResult],
-    SearchForObjectsByString: (String, Boolean, MFFullTextSearchFlags) => CallbackTo[IObjectSearchResults]
+  
+  inline def apply(
+    FindFile: (String, Boolean) => IObjectFileAndVersion,
+    FindObjectVersionAndProperties: (String, Boolean) => IObjectVersionAndProperties,
+    GetFacetValues: (ISearchConditions, IExpressions, Double, MFFacetSearchFlags) => IStringData,
+    GetFacetValuesByPath: (String, IExpressions, Double, MFFacetSearchFlags) => IStringData,
+    GetObjectCountInSearch: (ISearchConditions, MFSearchFlags) => Double,
+    GetObjectsInPath: (String, Boolean, Boolean) => IObjectSearchResults,
+    GetSearchHits: (String, ISearchCondition) => IStrings,
+    IsObjectPathInMFiles: String => Boolean,
+    SearchForObjectsByCondition: (ISearchCondition, Boolean) => IObjectSearchResults,
+    SearchForObjectsByConditions: (ISearchConditions, MFSearchFlags, Boolean) => IObjectSearchResults,
+    SearchForObjectsByConditionsEx: (ISearchConditions, MFSearchFlags, Boolean, Double, Double) => IObjectSearchResults,
+    SearchForObjectsByConditionsXML: (ISearchConditions, Boolean) => IXMLSearchResult,
+    SearchForObjectsByExportedSearchConditions: (String, Boolean) => IObjectSearchResults,
+    SearchForObjectsByExportedSearchConditionsXML: (String, Boolean) => IXMLSearchResult,
+    SearchForObjectsByString: (String, Boolean, MFFullTextSearchFlags) => IObjectSearchResults
   ): IVaultObjectSearchOperations = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("FindFile")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => FindFile(t0, t1).runNow()))
-    __obj.updateDynamic("FindObjectVersionAndProperties")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => FindObjectVersionAndProperties(t0, t1).runNow()))
-    __obj.updateDynamic("GetFacetValues")(js.Any.fromFunction4((t0: typingsJapgolly.mfiles.ISearchConditions, t1: typingsJapgolly.mfiles.IExpressions, t2: scala.Double, t3: typingsJapgolly.mfiles.MFiles.MFFacetSearchFlags) => GetFacetValues(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("GetFacetValuesByPath")(js.Any.fromFunction4((t0: java.lang.String, t1: typingsJapgolly.mfiles.IExpressions, t2: scala.Double, t3: typingsJapgolly.mfiles.MFiles.MFFacetSearchFlags) => GetFacetValuesByPath(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("GetObjectCountInSearch")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.ISearchConditions, t1: typingsJapgolly.mfiles.MFiles.MFSearchFlags) => GetObjectCountInSearch(t0, t1).runNow()))
-    __obj.updateDynamic("GetObjectsInPath")(js.Any.fromFunction3((t0: java.lang.String, t1: scala.Boolean, t2: scala.Boolean) => GetObjectsInPath(t0, t1, t2).runNow()))
-    __obj.updateDynamic("GetSearchHits")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.mfiles.ISearchCondition) => GetSearchHits(t0, t1).runNow()))
-    __obj.updateDynamic("IsObjectPathInMFiles")(js.Any.fromFunction1((t0: java.lang.String) => IsObjectPathInMFiles(t0).runNow()))
-    __obj.updateDynamic("SearchForObjectsByCondition")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.ISearchCondition, t1: scala.Boolean) => SearchForObjectsByCondition(t0, t1).runNow()))
-    __obj.updateDynamic("SearchForObjectsByConditions")(js.Any.fromFunction3((t0: typingsJapgolly.mfiles.ISearchConditions, t1: typingsJapgolly.mfiles.MFiles.MFSearchFlags, t2: scala.Boolean) => SearchForObjectsByConditions(t0, t1, t2).runNow()))
-    __obj.updateDynamic("SearchForObjectsByConditionsEx")(js.Any.fromFunction5((t0: typingsJapgolly.mfiles.ISearchConditions, t1: typingsJapgolly.mfiles.MFiles.MFSearchFlags, t2: scala.Boolean, t3: scala.Double, t4: scala.Double) => SearchForObjectsByConditionsEx(t0, t1, t2, t3, t4).runNow()))
-    __obj.updateDynamic("SearchForObjectsByConditionsXML")(js.Any.fromFunction2((t0: typingsJapgolly.mfiles.ISearchConditions, t1: scala.Boolean) => SearchForObjectsByConditionsXML(t0, t1).runNow()))
-    __obj.updateDynamic("SearchForObjectsByExportedSearchConditions")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => SearchForObjectsByExportedSearchConditions(t0, t1).runNow()))
-    __obj.updateDynamic("SearchForObjectsByExportedSearchConditionsXML")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Boolean) => SearchForObjectsByExportedSearchConditionsXML(t0, t1).runNow()))
-    __obj.updateDynamic("SearchForObjectsByString")(js.Any.fromFunction3((t0: java.lang.String, t1: scala.Boolean, t2: typingsJapgolly.mfiles.MFiles.MFFullTextSearchFlags) => SearchForObjectsByString(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(FindFile = js.Any.fromFunction2(FindFile), FindObjectVersionAndProperties = js.Any.fromFunction2(FindObjectVersionAndProperties), GetFacetValues = js.Any.fromFunction4(GetFacetValues), GetFacetValuesByPath = js.Any.fromFunction4(GetFacetValuesByPath), GetObjectCountInSearch = js.Any.fromFunction2(GetObjectCountInSearch), GetObjectsInPath = js.Any.fromFunction3(GetObjectsInPath), GetSearchHits = js.Any.fromFunction2(GetSearchHits), IsObjectPathInMFiles = js.Any.fromFunction1(IsObjectPathInMFiles), SearchForObjectsByCondition = js.Any.fromFunction2(SearchForObjectsByCondition), SearchForObjectsByConditions = js.Any.fromFunction3(SearchForObjectsByConditions), SearchForObjectsByConditionsEx = js.Any.fromFunction5(SearchForObjectsByConditionsEx), SearchForObjectsByConditionsXML = js.Any.fromFunction2(SearchForObjectsByConditionsXML), SearchForObjectsByExportedSearchConditions = js.Any.fromFunction2(SearchForObjectsByExportedSearchConditions), SearchForObjectsByExportedSearchConditionsXML = js.Any.fromFunction2(SearchForObjectsByExportedSearchConditionsXML), SearchForObjectsByString = js.Any.fromFunction3(SearchForObjectsByString))
     __obj.asInstanceOf[IVaultObjectSearchOperations]
   }
+  
+  extension [Self <: IVaultObjectSearchOperations](x: Self) {
+    
+    inline def setFindFile(value: (String, Boolean) => IObjectFileAndVersion): Self = StObject.set(x, "FindFile", js.Any.fromFunction2(value))
+    
+    inline def setFindObjectVersionAndProperties(value: (String, Boolean) => IObjectVersionAndProperties): Self = StObject.set(x, "FindObjectVersionAndProperties", js.Any.fromFunction2(value))
+    
+    inline def setGetFacetValues(value: (ISearchConditions, IExpressions, Double, MFFacetSearchFlags) => IStringData): Self = StObject.set(x, "GetFacetValues", js.Any.fromFunction4(value))
+    
+    inline def setGetFacetValuesByPath(value: (String, IExpressions, Double, MFFacetSearchFlags) => IStringData): Self = StObject.set(x, "GetFacetValuesByPath", js.Any.fromFunction4(value))
+    
+    inline def setGetObjectCountInSearch(value: (ISearchConditions, MFSearchFlags) => Double): Self = StObject.set(x, "GetObjectCountInSearch", js.Any.fromFunction2(value))
+    
+    inline def setGetObjectsInPath(value: (String, Boolean, Boolean) => IObjectSearchResults): Self = StObject.set(x, "GetObjectsInPath", js.Any.fromFunction3(value))
+    
+    inline def setGetSearchHits(value: (String, ISearchCondition) => IStrings): Self = StObject.set(x, "GetSearchHits", js.Any.fromFunction2(value))
+    
+    inline def setIsObjectPathInMFiles(value: String => Boolean): Self = StObject.set(x, "IsObjectPathInMFiles", js.Any.fromFunction1(value))
+    
+    inline def setSearchForObjectsByCondition(value: (ISearchCondition, Boolean) => IObjectSearchResults): Self = StObject.set(x, "SearchForObjectsByCondition", js.Any.fromFunction2(value))
+    
+    inline def setSearchForObjectsByConditions(value: (ISearchConditions, MFSearchFlags, Boolean) => IObjectSearchResults): Self = StObject.set(x, "SearchForObjectsByConditions", js.Any.fromFunction3(value))
+    
+    inline def setSearchForObjectsByConditionsEx(value: (ISearchConditions, MFSearchFlags, Boolean, Double, Double) => IObjectSearchResults): Self = StObject.set(x, "SearchForObjectsByConditionsEx", js.Any.fromFunction5(value))
+    
+    inline def setSearchForObjectsByConditionsXML(value: (ISearchConditions, Boolean) => IXMLSearchResult): Self = StObject.set(x, "SearchForObjectsByConditionsXML", js.Any.fromFunction2(value))
+    
+    inline def setSearchForObjectsByExportedSearchConditions(value: (String, Boolean) => IObjectSearchResults): Self = StObject.set(x, "SearchForObjectsByExportedSearchConditions", js.Any.fromFunction2(value))
+    
+    inline def setSearchForObjectsByExportedSearchConditionsXML(value: (String, Boolean) => IXMLSearchResult): Self = StObject.set(x, "SearchForObjectsByExportedSearchConditionsXML", js.Any.fromFunction2(value))
+    
+    inline def setSearchForObjectsByString(value: (String, Boolean, MFFullTextSearchFlags) => IObjectSearchResults): Self = StObject.set(x, "SearchForObjectsByString", js.Any.fromFunction3(value))
+  }
 }
-

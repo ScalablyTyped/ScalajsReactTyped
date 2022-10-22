@@ -1,90 +1,199 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVector
 import typingsJapgolly.winrtUwp.Windows.Foundation.EventHandler
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.restrictionschanged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides classes that define Family Safety settings for a Windows user. */
-@JSGlobal("Windows.Media.ContentRestrictions")
-@js.native
-object ContentRestrictions extends js.Object {
-  @js.native
-  sealed trait ContentAccessRestrictionLevel extends js.Object
+object ContentRestrictions {
   
-  /** Contains information used to filter an app's content catalog. */
   @js.native
-  abstract class ContentRestrictionsBrowsePolicy () extends js.Object {
-    /** Gets the region of the user's content restrictions. */
-    var geographicRegion: String = js.native
-    /** Gets the maximum allowed age rating level to show in a content catalog. No content rated above this level should be displayed. For example, if the MaxBrowsableAgeRating is 13, MPAA:R rated movies should not be displayed. */
-    var maxBrowsableAgeRating: Double = js.native
-    /** Gets the maximum allowed rating level for content consumption. */
-    var preferredAgeRating: Double = js.native
+  sealed trait ContentAccessRestrictionLevel extends StObject
+  /** Specifies how the content is treated, based on the user's content settings. */
+  @JSGlobal("Windows.Media.ContentRestrictions.ContentAccessRestrictionLevel")
+  @js.native
+  object ContentAccessRestrictionLevel extends StObject {
+    
+    /** Can be shown in the content catalog and consumed. */
+    @js.native
+    sealed trait allow
+      extends StObject
+         with ContentAccessRestrictionLevel
+    
+    /** Can be shown in the content catalog, but will be blocked by RequestContentAccessAsync . */
+    @js.native
+    sealed trait block
+      extends StObject
+         with ContentAccessRestrictionLevel
+    
+    /** Can't be shown in the content catalog. It's rating is higher than the user's settings, determined by MaxBrowsableAgeRating . */
+    @js.native
+    sealed trait hide
+      extends StObject
+         with ContentAccessRestrictionLevel
+    
+    /** (Xbox only) If multiple users are logged in and the content is blocked for at least one user, content is allowed with a warning displayed. */
+    @js.native
+    sealed trait warn
+      extends StObject
+         with ContentAccessRestrictionLevel
   }
   
   @js.native
-  sealed trait RatedContentCategory extends js.Object
+  sealed trait RatedContentCategory extends StObject
+  /** Specifies the type of a piece of content. */
+  @JSGlobal("Windows.Media.ContentRestrictions.RatedContentCategory")
+  @js.native
+  object RatedContentCategory extends StObject {
+    
+    /** Apps on Windows 8.1 and Xbox. */
+    @js.native
+    sealed trait application
+      extends StObject
+         with RatedContentCategory
+    
+    /** Apps on Windows 8.1 and Xbox. */
+    @js.native
+    sealed trait game
+      extends StObject
+         with RatedContentCategory
+    
+    /** In-app content for Windows 8.1 and Xbox apps. */
+    @js.native
+    sealed trait general
+      extends StObject
+         with RatedContentCategory
+    
+    /** In-app content for Windows 8.1 and Xbox apps. */
+    @js.native
+    sealed trait movie
+      extends StObject
+         with RatedContentCategory
+    
+    /** In-app content for Windows 8.1 and Xbox apps. */
+    @js.native
+    sealed trait music
+      extends StObject
+         with RatedContentCategory
+    
+    /** In-app content for Windows 8.1 and Xbox apps. */
+    @js.native
+    sealed trait television
+      extends StObject
+         with RatedContentCategory
+  }
+  
+  /** Contains information used to filter an app's content catalog. */
+  trait ContentRestrictionsBrowsePolicy extends StObject {
+    
+    /** Gets the region of the user's content restrictions. */
+    var geographicRegion: String
+    
+    /** Gets the maximum allowed age rating level to show in a content catalog. No content rated above this level should be displayed. For example, if the MaxBrowsableAgeRating is 13, MPAA:R rated movies should not be displayed. */
+    var maxBrowsableAgeRating: Double
+    
+    /** Gets the maximum allowed rating level for content consumption. */
+    var preferredAgeRating: Double
+  }
+  object ContentRestrictionsBrowsePolicy {
+    
+    inline def apply(geographicRegion: String, maxBrowsableAgeRating: Double, preferredAgeRating: Double): ContentRestrictionsBrowsePolicy = {
+      val __obj = js.Dynamic.literal(geographicRegion = geographicRegion.asInstanceOf[js.Any], maxBrowsableAgeRating = maxBrowsableAgeRating.asInstanceOf[js.Any], preferredAgeRating = preferredAgeRating.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ContentRestrictionsBrowsePolicy]
+    }
+    
+    extension [Self <: ContentRestrictionsBrowsePolicy](x: Self) {
+      
+      inline def setGeographicRegion(value: String): Self = StObject.set(x, "geographicRegion", value.asInstanceOf[js.Any])
+      
+      inline def setMaxBrowsableAgeRating(value: Double): Self = StObject.set(x, "maxBrowsableAgeRating", value.asInstanceOf[js.Any])
+      
+      inline def setPreferredAgeRating(value: Double): Self = StObject.set(x, "preferredAgeRating", value.asInstanceOf[js.Any])
+    }
+  }
   
   /** Contains information about a piece of content. An app creates a RatedContentDescription object, for each piece of content to be used in the GetRestrictionLevelAsync and RequestContentAccessAsync methods. */
-  @js.native
-  class RatedContentDescription protected () extends js.Object {
-    /**
-      * Initializes a new instance of the RatedContentDescription class.
-      * @param id The ID of the content, as specified by the app developer.
-      * @param title The title of the content.
-      * @param category Specifies the type of a piece of content, defined by RatedContentCategory .
-      */
-    def this(id: String, title: String, category: RatedContentCategory) = this()
+  trait RatedContentDescription extends StObject {
+    
     /** Specifies the type of a piece of content, defined by RatedContentCategory . */
-    var category: RatedContentCategory = js.native
+    var category: RatedContentCategory
+    
     /** The unique content ID of a piece of content, in the app's content catalog. */
-    var id: String = js.native
+    var id: String
+    
     /** The thumbnail image associated with the content. */
-    var image: IRandomAccessStreamReference = js.native
+    var image: IRandomAccessStreamReference
+    
     /** Provides all existing third-party and Windows Store age ratings for a piece of content. */
-    var ratings: IVector[String] = js.native
+    var ratings: IVector[String]
+    
     /** The display title of a piece of content. */
-    var title: String = js.native
+    var title: String
+  }
+  object RatedContentDescription {
+    
+    inline def apply(
+      category: RatedContentCategory,
+      id: String,
+      image: IRandomAccessStreamReference,
+      ratings: IVector[String],
+      title: String
+    ): RatedContentDescription = {
+      val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], ratings = ratings.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RatedContentDescription]
+    }
+    
+    extension [Self <: RatedContentDescription](x: Self) {
+      
+      inline def setCategory(value: RatedContentCategory): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      
+      inline def setImage(value: IRandomAccessStreamReference): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      
+      inline def setRatings(value: IVector[String]): Self = StObject.set(x, "ratings", value.asInstanceOf[js.Any])
+      
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    }
   }
   
   /** Contains all behavior and functionality related to a user's Family Safety content settings. */
   @js.native
-  /** Initializes a new instance of the RatedContentRestrictions class. */
-  class RatedContentRestrictions () extends js.Object {
-    /**
-      * Initializes a new instance of the RatedContentRestrictions class, with the specified age rating the app uses, to restrict content usage.
-      * @param maxAgeRating The max age rating.
-      */
-    def this(maxAgeRating: Double) = this()
-    /** An event handler to notify apps when there are changes to the user's content settings. */
-    @JSName("onrestrictionschanged")
-    var onrestrictionschanged_Original: EventHandler[_] = js.native
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  trait RatedContentRestrictions extends StObject {
+    
+    def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[_]): Unit = js.native
+    def addEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[Any]): Unit = js.native
+    
     /**
       * Gets information that is used filter an app's content catalog.
       * @return Returns a ContentRestrictionsBrowsePolicy object.
       */
     def getBrowsePolicyAsync(): IPromiseWithIAsyncOperation[ContentRestrictionsBrowsePolicy] = js.native
+    
     /**
       * Gets the policy that applies to a piece of content, for content browsing and consumption.
       * @param RatedContentDescription The rated content info.
       * @return This method returns these values:
       */
     def getRestrictionLevelAsync(RatedContentDescription: RatedContentDescription): IPromiseWithIAsyncOperation[ContentAccessRestrictionLevel] = js.native
+    
     /** An event handler to notify apps when there are changes to the user's content settings. */
-    def onrestrictionschanged(ev: js.Any with WinRTEvent[_]): Unit = js.native
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def onrestrictionschanged(ev: Any & WinRTEvent[Any]): Unit = js.native
+    /** An event handler to notify apps when there are changes to the user's content settings. */
+    @JSName("onrestrictionschanged")
+    var onrestrictionschanged_Original: EventHandler[Any] = js.native
+    
+    def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener_restrictionschanged(`type`: restrictionschanged, listener: EventHandler[Any]): Unit = js.native
+    
     /**
       * Determines whether the user is allowed to consume a piece of content.
       * @param RatedContentDescription The rated content info.
@@ -92,90 +201,4 @@ object ContentRestrictions extends js.Object {
       */
     def requestContentAccessAsync(RatedContentDescription: RatedContentDescription): IPromiseWithIAsyncOperation[Boolean] = js.native
   }
-  
-  /** Specifies how the content is treated, based on the user's content settings. */
-  @js.native
-  object ContentAccessRestrictionLevel extends js.Object {
-    /** Can be shown in the content catalog and consumed. */
-    @js.native
-    sealed trait allow extends ContentAccessRestrictionLevel
-    
-    /** Can be shown in the content catalog, but will be blocked by RequestContentAccessAsync . */
-    @js.native
-    sealed trait block extends ContentAccessRestrictionLevel
-    
-    /** Can't be shown in the content catalog. It's rating is higher than the user's settings, determined by MaxBrowsableAgeRating . */
-    @js.native
-    sealed trait hide extends ContentAccessRestrictionLevel
-    
-    /** (Xbox only) If multiple users are logged in and the content is blocked for at least one user, content is allowed with a warning displayed. */
-    @js.native
-    sealed trait warn extends ContentAccessRestrictionLevel
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContentAccessRestrictionLevel with Double] = js.native
-    /* 0 */ @js.native
-    object allow extends TopLevel[allow with Double]
-    
-    /* 2 */ @js.native
-    object block extends TopLevel[block with Double]
-    
-    /* 3 */ @js.native
-    object hide extends TopLevel[hide with Double]
-    
-    /* 1 */ @js.native
-    object warn extends TopLevel[warn with Double]
-    
-  }
-  
-  /** Specifies the type of a piece of content. */
-  @js.native
-  object RatedContentCategory extends js.Object {
-    /** Apps on Windows 8.1 and Xbox. */
-    @js.native
-    sealed trait application extends RatedContentCategory
-    
-    /** Apps on Windows 8.1 and Xbox. */
-    @js.native
-    sealed trait game extends RatedContentCategory
-    
-    /** In-app content for Windows 8.1 and Xbox apps. */
-    @js.native
-    sealed trait general extends RatedContentCategory
-    
-    /** In-app content for Windows 8.1 and Xbox apps. */
-    @js.native
-    sealed trait movie extends RatedContentCategory
-    
-    /** In-app content for Windows 8.1 and Xbox apps. */
-    @js.native
-    sealed trait music extends RatedContentCategory
-    
-    /** In-app content for Windows 8.1 and Xbox apps. */
-    @js.native
-    sealed trait television extends RatedContentCategory
-    
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RatedContentCategory with Double] = js.native
-    /* 1 */ @js.native
-    object application extends TopLevel[application with Double]
-    
-    /* 2 */ @js.native
-    object game extends TopLevel[game with Double]
-    
-    /* 0 */ @js.native
-    object general extends TopLevel[general with Double]
-    
-    /* 3 */ @js.native
-    object movie extends TopLevel[movie with Double]
-    
-    /* 5 */ @js.native
-    object music extends TopLevel[music with Double]
-    
-    /* 4 */ @js.native
-    object television extends TopLevel[television with Double]
-    
-  }
-  
 }
-

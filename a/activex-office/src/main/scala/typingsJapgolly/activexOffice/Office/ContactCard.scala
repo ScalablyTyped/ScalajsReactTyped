@@ -1,17 +1,21 @@
 package typingsJapgolly.activexOffice.Office
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Office.ContactCard")
 @js.native
-class ContactCard protected () extends js.Object {
-  val Application: js.Any = js.native
-  val Creator: Double = js.native
-  @JSName("Office.ContactCard_typekey")
-  var OfficeDotContactCard_typekey: ContactCard = js.native
+trait ContactCard extends StObject {
+  
+  val Application: Any = js.native
+  
   def Close(): Unit = js.native
+  
+  val Creator: Double = js.native
+  
+  /* private */ @JSName("Office.ContactCard_typekey")
+  var OfficeDotContactCard_typekey: ContactCard = js.native
+  
   /** @param boolean [ShowWithDelay=false] */
   def Show(
     CardStyle: MsoContactCardStyle,
@@ -31,4 +35,3 @@ class ContactCard protected () extends js.Object {
     ShowWithDelay: Boolean
   ): Unit = js.native
 }
-

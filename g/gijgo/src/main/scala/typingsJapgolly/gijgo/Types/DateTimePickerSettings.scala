@@ -1,51 +1,80 @@
 package typingsJapgolly.gijgo.Types
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DateTimePicker
-trait DateTimePickerSettings extends js.Object {
+trait DateTimePickerSettings extends StObject {
+  
   //Events
-  var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
+  var change: js.UndefOr[js.Function1[/* e */ Any, Any]] = js.undefined
+  
   var datepicker: js.UndefOr[DatePickerSettings] = js.undefined
+  
   var footer: js.UndefOr[Boolean] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var modal: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var uiLibrary: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object DateTimePickerSettings {
-  @scala.inline
-  def apply(
-    change: /* e */ js.Any => CallbackTo[js.Any] = null,
-    datepicker: DatePickerSettings = null,
-    footer: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    locale: String = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    uiLibrary: String = null,
-    value: String = null,
-    width: Int | Double = null
-  ): DateTimePickerSettings = {
+  
+  inline def apply(): DateTimePickerSettings = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ js.Any) => change(t0).runNow()))
-    if (datepicker != null) __obj.updateDynamic("datepicker")(datepicker.asInstanceOf[js.Any])
-    if (!js.isUndefined(footer)) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (uiLibrary != null) __obj.updateDynamic("uiLibrary")(uiLibrary.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DateTimePickerSettings]
   }
+  
+  extension [Self <: DateTimePickerSettings](x: Self) {
+    
+    inline def setChange(value: /* e */ Any => Any): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setDatepicker(value: DatePickerSettings): Self = StObject.set(x, "datepicker", value.asInstanceOf[js.Any])
+    
+    inline def setDatepickerUndefined: Self = StObject.set(x, "datepicker", js.undefined)
+    
+    inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setModal(value: Boolean): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setUiLibrary(value: String): Self = StObject.set(x, "uiLibrary", value.asInstanceOf[js.Any])
+    
+    inline def setUiLibraryUndefined: Self = StObject.set(x, "uiLibrary", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

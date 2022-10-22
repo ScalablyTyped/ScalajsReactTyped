@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraCaptureUIPhotoFormat extends js.Object
-
+sealed trait CameraCaptureUIPhotoFormat extends StObject
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIPhotoFormat")
 @js.native
-object CameraCaptureUIPhotoFormat extends js.Object {
-  @js.native
-  sealed trait jpeg extends CameraCaptureUIPhotoFormat
+object CameraCaptureUIPhotoFormat extends StObject {
   
   @js.native
-  sealed trait jpegXR extends CameraCaptureUIPhotoFormat
+  sealed trait jpeg
+    extends StObject
+       with CameraCaptureUIPhotoFormat
   
   @js.native
-  sealed trait png extends CameraCaptureUIPhotoFormat
+  sealed trait jpegXR
+    extends StObject
+       with CameraCaptureUIPhotoFormat
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraCaptureUIPhotoFormat with Double] = js.native
-  /* 0 */ @js.native
-  object jpeg extends TopLevel[jpeg with Double]
-  
-  /* 2 */ @js.native
-  object jpegXR extends TopLevel[jpegXR with Double]
-  
-  /* 1 */ @js.native
-  object png extends TopLevel[png with Double]
-  
+  @js.native
+  sealed trait png
+    extends StObject
+       with CameraCaptureUIPhotoFormat
 }
-

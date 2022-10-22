@@ -1,7 +1,7 @@
 
 # Scala.js typings for ts-mockito
 
-Typings are for version 2.5.0
+Typings are for version 2.6.1
 
 ## Library description:
 Mocking library for TypeScript
@@ -10,10 +10,10 @@ Mocking library for TypeScript
 | ------------------ | :-------------: |
 | Full name          | ts-mockito |
 | Keywords           | mock, typescript, tests, fake, stub, spy, javascript |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 1756224 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 640082.0 |
+| # stars            | 823.0 |
 
 ## Links
 - [Homepage](https://github.com/NagRock/ts-mockito#readme)

@@ -1,33 +1,48 @@
 package typingsJapgolly.metismenu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MetisMenuOptions extends js.Object {
+trait MetisMenuOptions extends StObject {
+  
   var parentTrigger: js.UndefOr[String] = js.undefined
+  
   var preventDefault: js.UndefOr[Boolean] = js.undefined
+  
   var subMenu: js.UndefOr[String] = js.undefined
+  
   var toggle: js.UndefOr[Boolean] = js.undefined
+  
   var triggerElement: js.UndefOr[String] = js.undefined
 }
-
 object MetisMenuOptions {
-  @scala.inline
-  def apply(
-    parentTrigger: String = null,
-    preventDefault: js.UndefOr[Boolean] = js.undefined,
-    subMenu: String = null,
-    toggle: js.UndefOr[Boolean] = js.undefined,
-    triggerElement: String = null
-  ): MetisMenuOptions = {
+  
+  inline def apply(): MetisMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (parentTrigger != null) __obj.updateDynamic("parentTrigger")(parentTrigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault.asInstanceOf[js.Any])
-    if (subMenu != null) __obj.updateDynamic("subMenu")(subMenu.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
-    if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetisMenuOptions]
   }
+  
+  extension [Self <: MetisMenuOptions](x: Self) {
+    
+    inline def setParentTrigger(value: String): Self = StObject.set(x, "parentTrigger", value.asInstanceOf[js.Any])
+    
+    inline def setParentTriggerUndefined: Self = StObject.set(x, "parentTrigger", js.undefined)
+    
+    inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    
+    inline def setPreventDefaultUndefined: Self = StObject.set(x, "preventDefault", js.undefined)
+    
+    inline def setSubMenu(value: String): Self = StObject.set(x, "subMenu", value.asInstanceOf[js.Any])
+    
+    inline def setSubMenuUndefined: Self = StObject.set(x, "subMenu", js.undefined)
+    
+    inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+    
+    inline def setTriggerElement(value: String): Self = StObject.set(x, "triggerElement", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerElementUndefined: Self = StObject.set(x, "triggerElement", js.undefined)
+  }
 }
-

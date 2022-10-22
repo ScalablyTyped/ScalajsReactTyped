@@ -11,9 +11,9 @@ A plugin to show invisibles in prosemirror
 | Full name          | @guardian/prosemirror-invisibles |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 0 |
-| # downloads        | 635 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1002.6666666666666 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40guardian%2Fprosemirror-invisibles)

@@ -1,78 +1,110 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.JsNumber
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.input
-import typingsJapgolly.antd.antdStrings.text
-import typingsJapgolly.antd.clearableLabeledInputMod.ClearableInputProps
-import typingsJapgolly.antd.clearableLabeledInputMod.default
-import typingsJapgolly.antd.sizeContextMod.SizeType
+import typingsJapgolly.antd.antdStrings.text_
+import typingsJapgolly.antd.libConfigProviderContextMod.DirectionType
+import typingsJapgolly.antd.libConfigProviderSizeContextMod.SizeType
+import typingsJapgolly.antd.libInputClearableLabeledInputMod.ClearableInputProps
+import typingsJapgolly.antd.libInputClearableLabeledInputMod.default
+import typingsJapgolly.antd.libUtilStatusUtilsMod.InputStatus
+import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ClearableLabeledInput {
-  def apply(
-    inputType: text | input,
-    prefixCls: String,
+  
+  inline def apply(
+    bordered: Boolean,
     element: VdomElement,
     handleReset: ReactMouseEventFrom[HTMLElement] => Callback,
-    triggerFocus: Callback,
-    addonAfter: VdomNode = null,
-    addonBefore: VdomNode = null,
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    direction: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focused: js.UndefOr[Boolean] = js.undefined,
-    prefix: VdomNode = null,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    size: SizeType = null,
-    style: js.Object = null,
-    suffix: VdomNode = null,
-    value: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ClearableInputProps, default, Unit, ClearableInputProps] = {
-    val __obj = js.Dynamic.literal(inputType = inputType.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
-  
-      if (element != null) __obj.updateDynamic("element")(element.rawElement.asInstanceOf[js.Any])
-    __obj.updateDynamic("handleReset")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => handleReset(t0).runNow()))
-    __obj.updateDynamic("triggerFocus")(triggerFocus.toJsFn)
-    if (addonAfter != null) __obj.updateDynamic("addonAfter")(addonAfter.rawNode.asInstanceOf[js.Any])
-    if (addonBefore != null) __obj.updateDynamic("addonBefore")(addonBefore.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.rawNode.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.clearableLabeledInputMod.ClearableInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.clearableLabeledInputMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.clearableLabeledInputMod.ClearableInputProps])(children: _*)
+    inputType: text_ | input,
+    prefixCls: String
+  ): Builder = {
+    val __props = js.Dynamic.literal(bordered = bordered.asInstanceOf[js.Any], element = element.rawElement.asInstanceOf[js.Any], handleReset = js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLElement]) => handleReset(t0).runNow()), inputType = inputType.asInstanceOf[js.Any], prefixCls = prefixCls.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ClearableInputProps]))
   }
+  
   @JSImport("antd/lib/input/ClearableLabeledInput", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def addonAfter(value: VdomNode): this.type = set("addonAfter", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def addonAfterNull: this.type = set("addonAfter", null)
+    
+    inline def addonAfterVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("addonAfter", js.Array(value*))
+    
+    inline def addonAfterVdomElement(value: VdomElement): this.type = set("addonAfter", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def addonBefore(value: VdomNode): this.type = set("addonBefore", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def addonBeforeNull: this.type = set("addonBefore", null)
+    
+    inline def addonBeforeVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("addonBefore", js.Array(value*))
+    
+    inline def addonBeforeVdomElement(value: VdomElement): this.type = set("addonBefore", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def allowClear(value: Boolean): this.type = set("allowClear", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: DirectionType): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def focused(value: Boolean): this.type = set("focused", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def prefix(value: VdomNode): this.type = set("prefix", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def prefixNull: this.type = set("prefix", null)
+    
+    inline def prefixVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("prefix", js.Array(value*))
+    
+    inline def prefixVdomElement(value: VdomElement): this.type = set("prefix", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def readOnly(value: Boolean): this.type = set("readOnly", value.asInstanceOf[js.Any])
+    
+    inline def size(value: SizeType): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: InputStatus): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def suffix(value: VdomNode): this.type = set("suffix", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def suffixNull: this.type = set("suffix", null)
+    
+    inline def suffixVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("suffix", js.Array(value*))
+    
+    inline def suffixVdomElement(value: VdomElement): this.type = set("suffix", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def triggerFocus(value: Callback): this.type = set("triggerFocus", value.toJsFn)
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ClearableInputProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

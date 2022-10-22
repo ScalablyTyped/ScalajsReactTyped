@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Media.MediaProperties
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioEncodingQuality extends js.Object
-
+sealed trait AudioEncodingQuality extends StObject
 @JSGlobal("Windows.Media.MediaProperties.AudioEncodingQuality")
 @js.native
-object AudioEncodingQuality extends js.Object {
-  @js.native
-  sealed trait auto extends AudioEncodingQuality
+object AudioEncodingQuality extends StObject {
   
   @js.native
-  sealed trait high extends AudioEncodingQuality
+  sealed trait auto
+    extends StObject
+       with AudioEncodingQuality
   
   @js.native
-  sealed trait low extends AudioEncodingQuality
+  sealed trait high
+    extends StObject
+       with AudioEncodingQuality
   
   @js.native
-  sealed trait medium extends AudioEncodingQuality
+  sealed trait low
+    extends StObject
+       with AudioEncodingQuality
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AudioEncodingQuality with Double] = js.native
-  /* 0 */ @js.native
-  object auto extends TopLevel[auto with Double]
-  
-  /* 1 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 3 */ @js.native
-  object low extends TopLevel[low with Double]
-  
-  /* 2 */ @js.native
-  object medium extends TopLevel[medium with Double]
-  
+  @js.native
+  sealed trait medium
+    extends StObject
+       with AudioEncodingQuality
 }
-

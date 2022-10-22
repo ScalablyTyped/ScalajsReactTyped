@@ -1,16 +1,16 @@
 package typingsJapgolly.phonegapNfc
 
+import org.scalajs.dom.Event
 import typingsJapgolly.phonegapNfc.phonegapNfcStrings.deviceready
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Document extends js.Object {
+trait Document extends StObject {
+  
   @JSName("addEventListener")
-  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event_, _]): Unit = js.native
+  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event_, _], useCapture: Boolean): Unit = js.native
+  def addEventListener_deviceready(`type`: deviceready, listener: js.Function1[/* ev */ Event, Any], useCapture: Boolean): Unit = js.native
 }
-

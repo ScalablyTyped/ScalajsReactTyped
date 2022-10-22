@@ -1,44 +1,37 @@
 package typingsJapgolly.materialUiCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.portalMod.default
+import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUiCore.portalPortalMod.PortalProps
 import typingsJapgolly.react.mod.ReactInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portal {
-  def apply(
-    container: ReactInstance | js.Function0[ReactInstance] = null,
-    disablePortal: js.UndefOr[Boolean] = js.undefined,
-    onRendered: js.UndefOr[Callback] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PortalProps, default, Unit, PortalProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal.asInstanceOf[js.Any])
-    onRendered.foreach(p => __obj.updateDynamic("onRendered")(p.toJsFn))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.portalPortalMod.PortalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.portalMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.portalPortalMod.PortalProps])(children: _*)
-  }
-  @JSImport("@material-ui/core/Portal", JSImport.Default)
+  @JSImport("@material-ui/core", "Portal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def container(value: ReactInstance | (js.Function0[ReactInstance | Null])): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def containerCallbackTo(value: CallbackTo[ReactInstance | Null]): this.type = set("container", value.toJsFn)
+    
+    inline def containerNull: this.type = set("container", null)
+    
+    inline def disablePortal(value: Boolean): this.type = set("disablePortal", value.asInstanceOf[js.Any])
+    
+    inline def onRendered(value: Callback): this.type = set("onRendered", value.toJsFn)
+  }
+  
+  implicit def make(companion: Portal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PortalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

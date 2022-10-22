@@ -1,24 +1,32 @@
 package typingsJapgolly.mongodb.mod
 
+import typingsJapgolly.bson.mod.Document
+import typingsJapgolly.mongodb.anon.Errmsg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WriteError extends js.Object {
-  //Write concern error code.
-  var code: scala.Double
-  //Write concern error message.
-  var errmsg: String
-  //Write concern error original bulk operation index.
-  var index: scala.Double
-}
-
-object WriteError {
-  @scala.inline
-  def apply(code: scala.Double, errmsg: String, index: scala.Double): WriteError = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], errmsg = errmsg.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
+@JSImport("mongodb", "WriteError")
+@js.native
+open class WriteError protected () extends StObject {
+  def this(err: BulkWriteOperationError) = this()
   
-    __obj.asInstanceOf[WriteError]
-  }
+  /** WriteError code. */
+  def code: scala.Double = js.native
+  
+  var err: BulkWriteOperationError = js.native
+  
+  /** WriteError details. */
+  def errInfo: js.UndefOr[Document] = js.native
+  
+  /** WriteError message. */
+  def errmsg: js.UndefOr[String] = js.native
+  
+  /** Returns the underlying operation that caused the error */
+  def getOperation(): Document = js.native
+  
+  /** WriteError original bulk operation index. */
+  def index: scala.Double = js.native
+  
+  def toJSON(): Errmsg = js.native
 }
-

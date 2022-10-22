@@ -1,33 +1,26 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CatHelpParams extends GenericParams {
+trait CatHelpParams
+  extends StObject
+     with GenericParams {
+  
   var help: js.UndefOr[Boolean] = js.undefined
 }
-
 object CatHelpParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    requestTimeout: Int | Double = null
-  ): CatHelpParams = {
+  
+  inline def apply(): CatHelpParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatHelpParams]
   }
+  
+  extension [Self <: CatHelpParams](x: Self) {
+    
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+  }
 }
-

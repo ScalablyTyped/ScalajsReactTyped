@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridGroupableMessages extends js.Object {
+trait GridGroupableMessages extends StObject {
+  
   var empty: js.UndefOr[String] = js.undefined
 }
-
 object GridGroupableMessages {
-  @scala.inline
-  def apply(empty: String = null): GridGroupableMessages = {
+  
+  inline def apply(): GridGroupableMessages = {
     val __obj = js.Dynamic.literal()
-    if (empty != null) __obj.updateDynamic("empty")(empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGroupableMessages]
   }
+  
+  extension [Self <: GridGroupableMessages](x: Self) {
+    
+    inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+  }
 }
-

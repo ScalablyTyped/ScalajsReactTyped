@@ -1,19 +1,7 @@
 package typingsJapgolly.sharepoint.SP.Publishing
 
-import typingsJapgolly.sharepoint.SP.ClientContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Publishing.SiteImageRenditions")
-@js.native
-class SiteImageRenditions () extends js.Object
-
-/* static members */
-@JSGlobal("SP.Publishing.SiteImageRenditions")
-@js.native
-object SiteImageRenditions extends js.Object {
-  def getRenditions(context: ClientContext): js.Array[ImageRendition] = js.native
-  def setRenditions(context: ClientContext, renditions: js.Array[ImageRendition]): Unit = js.native
-}
-
+trait SiteImageRenditions extends StObject

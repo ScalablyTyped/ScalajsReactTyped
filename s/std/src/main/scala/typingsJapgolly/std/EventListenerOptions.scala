@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventListenerOptions extends js.Object {
+trait EventListenerOptions extends StObject {
+  
+  /* standard dom */
   var capture: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object EventListenerOptions {
-  @scala.inline
-  def apply(capture: js.UndefOr[scala.Boolean] = js.undefined): EventListenerOptions = {
+  
+  inline def apply(): EventListenerOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventListenerOptions]
   }
+  
+  extension [Self <: EventListenerOptions](x: Self) {
+    
+    inline def setCapture(value: scala.Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+  }
 }
-

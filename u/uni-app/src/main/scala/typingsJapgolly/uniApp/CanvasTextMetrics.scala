@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasTextMetrics extends js.Object {
+trait CanvasTextMetrics extends StObject {
+  
   /**
     * 文本的宽度
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object CanvasTextMetrics {
-  @scala.inline
-  def apply(width: Int | Double = null): CanvasTextMetrics = {
+  
+  inline def apply(): CanvasTextMetrics = {
     val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasTextMetrics]
   }
+  
+  extension [Self <: CanvasTextMetrics](x: Self) {
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

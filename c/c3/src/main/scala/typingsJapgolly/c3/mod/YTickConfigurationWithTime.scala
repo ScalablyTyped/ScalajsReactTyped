@@ -1,33 +1,27 @@
 package typingsJapgolly.c3.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.c3.AnonInterval
+import typingsJapgolly.c3.anon.Interval
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait YTickConfigurationWithTime extends YTickConfiguration {
-  var time: js.UndefOr[AnonInterval] = js.undefined
+trait YTickConfigurationWithTime
+  extends StObject
+     with YTickConfiguration {
+  
+  var time: js.UndefOr[Interval] = js.undefined
 }
-
 object YTickConfigurationWithTime {
-  @scala.inline
-  def apply(
-    count: Int | Double = null,
-    format: /* x */ Double => CallbackTo[String | Double] = null,
-    outer: js.UndefOr[Boolean] = js.undefined,
-    rotate: Int | Double = null,
-    time: AnonInterval = null,
-    values: js.Array[Double | String] = null
-  ): YTickConfigurationWithTime = {
+  
+  inline def apply(): YTickConfigurationWithTime = {
     val __obj = js.Dynamic.literal()
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction1((t0: /* x */ scala.Double) => format(t0).runNow()))
-    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[YTickConfigurationWithTime]
   }
+  
+  extension [Self <: YTickConfigurationWithTime](x: Self) {
+    
+    inline def setTime(value: Interval): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    
+    inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+  }
 }
-

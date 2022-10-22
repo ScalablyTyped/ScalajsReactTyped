@@ -1,32 +1,34 @@
 package typingsJapgolly.weixinApp.wx
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.weixinApp.AnonIsEnrolled
+import typingsJapgolly.weixinApp.anon.IsEnrolled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CheckIsSoterEnrolledInDeviceOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   var checkAuthMode: AuthModes
-   // 认证方式
+  
+  // 认证方式
   @JSName("success")
-  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ AnonIsEnrolled, Unit]] = js.undefined
+  var success_CheckIsSoterEnrolledInDeviceOptions: js.UndefOr[js.Function1[/* res */ IsEnrolled, Unit]] = js.undefined
 }
-
 object CheckIsSoterEnrolledInDeviceOptions {
-  @scala.inline
-  def apply(
-    checkAuthMode: AuthModes,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: /* res */ AnonIsEnrolled => Callback = null
-  ): CheckIsSoterEnrolledInDeviceOptions = {
+  
+  inline def apply(checkAuthMode: AuthModes): CheckIsSoterEnrolledInDeviceOptions = {
     val __obj = js.Dynamic.literal(checkAuthMode = checkAuthMode.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.weixinApp.AnonIsEnrolled) => success(t0).runNow()))
     __obj.asInstanceOf[CheckIsSoterEnrolledInDeviceOptions]
   }
+  
+  extension [Self <: CheckIsSoterEnrolledInDeviceOptions](x: Self) {
+    
+    inline def setCheckAuthMode(value: AuthModes): Self = StObject.set(x, "checkAuthMode", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ IsEnrolled => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ IsEnrolled) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

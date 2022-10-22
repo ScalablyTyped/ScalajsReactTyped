@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.next
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.prev
   - typingsJapgolly.std.stdStrings.prevunique
 */
-trait IDBCursorDirection extends js.Object
-
+trait IDBCursorDirection extends StObject
 object IDBCursorDirection {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def next: typingsJapgolly.std.stdStrings.next = this.cast("next")
-  @scala.inline
-  def nextunique: typingsJapgolly.std.stdStrings.nextunique = this.cast("nextunique")
-  @scala.inline
-  def prev: typingsJapgolly.std.stdStrings.prev = this.cast("prev")
-  @scala.inline
-  def prevunique: typingsJapgolly.std.stdStrings.prevunique = this.cast("prevunique")
+  
+  inline def next: typingsJapgolly.std.stdStrings.next = "next".asInstanceOf[typingsJapgolly.std.stdStrings.next]
+  
+  inline def nextunique: typingsJapgolly.std.stdStrings.nextunique = "nextunique".asInstanceOf[typingsJapgolly.std.stdStrings.nextunique]
+  
+  inline def prev: typingsJapgolly.std.stdStrings.prev = "prev".asInstanceOf[typingsJapgolly.std.stdStrings.prev]
+  
+  inline def prevunique: typingsJapgolly.std.stdStrings.prevunique = "prevunique".asInstanceOf[typingsJapgolly.std.stdStrings.prevunique]
 }
-

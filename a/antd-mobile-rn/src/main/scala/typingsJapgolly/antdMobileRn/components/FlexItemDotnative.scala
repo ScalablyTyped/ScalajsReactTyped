@@ -1,53 +1,44 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.flexItemNativeMod.FlexItemProps
-import typingsJapgolly.antdMobileRn.flexItemNativeMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libFlexFlexItemDotnativeMod.FlexItemProps
+import typingsJapgolly.antdMobileRn.libFlexFlexItemDotnativeMod.default
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FlexItemDotnative {
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    flex: Int | Double = null,
-    onLongPress: js.UndefOr[Callback] = js.undefined,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    onPressIn: js.UndefOr[Callback] = js.undefined,
-    onPressOut: js.UndefOr[Callback] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FlexItemProps, default, Unit, FlexItemProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    onLongPress.foreach(p => __obj.updateDynamic("onLongPress")(p.toJsFn))
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    onPressIn.foreach(p => __obj.updateDynamic("onPressIn")(p.toJsFn))
-    onPressOut.foreach(p => __obj.updateDynamic("onPressOut")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.flexItemNativeMod.FlexItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.flexItemNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.flexItemNativeMod.FlexItemProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/flex/FlexItem.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def flex(value: Double): this.type = set("flex", value.asInstanceOf[js.Any])
+    
+    inline def onLongPress(value: Callback): this.type = set("onLongPress", value.toJsFn)
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def onPressIn(value: Callback): this.type = set("onPressIn", value.toJsFn)
+    
+    inline def onPressOut(value: Callback): this.type = set("onPressOut", value.toJsFn)
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  implicit def make(companion: FlexItemDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FlexItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,29 +1,30 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonFill
+import typingsJapgolly.devextreme.mod.DevExpress.viz.dxFunnel.Item
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FunnelLegendItem extends BaseLegendItem {
-  /** The funnel item that the legend item represents. */
-  var item: js.UndefOr[dxFunnelItem] = js.undefined
+trait FunnelLegendItem
+  extends StObject
+     with BaseLegendItem {
+  
+  /**
+    * The funnel item that the legend item represents.
+    */
+  var item: js.UndefOr[Item] = js.undefined
 }
-
 object FunnelLegendItem {
-  @scala.inline
-  def apply(
-    item: dxFunnelItem = null,
-    marker: AnonFill = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): FunnelLegendItem = {
+  
+  inline def apply(): FunnelLegendItem = {
     val __obj = js.Dynamic.literal()
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[FunnelLegendItem]
   }
+  
+  extension [Self <: FunnelLegendItem](x: Self) {
+    
+    inline def setItem(value: Item): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+  }
 }
-

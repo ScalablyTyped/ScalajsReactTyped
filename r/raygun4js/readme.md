@@ -4,16 +4,16 @@
 Typings are for version 2.13
 
 ## Library description:
-Raygun.io plugin for JavaScript
+Raygun.com plugin for JavaScript
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | raygun4js |
 | Keywords           | error, tracking, raygun, clientside |
-| # releases         | 32 |
-| # dependents       | 6 |
-| # downloads        | 466385 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 103468.0 |
+| # stars            | 135.0 |
 
 ## Links
 - [Homepage](https://github.com/MindscapeHQ/raygun4js)

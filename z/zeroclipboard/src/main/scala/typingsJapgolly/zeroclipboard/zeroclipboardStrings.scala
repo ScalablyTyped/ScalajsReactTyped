@@ -1,119 +1,96 @@
 package typingsJapgolly.zeroclipboard
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zeroclipboardStrings {
-  @js.native
-  sealed trait activeClass extends js.Object
   
   @js.native
-  sealed trait aftercopy extends js.Object
+  sealed trait activeClass extends StObject
+  inline def activeClass: activeClass = "activeClass".asInstanceOf[activeClass]
   
   @js.native
-  sealed trait autoActivate extends js.Object
+  sealed trait aftercopy extends StObject
+  inline def aftercopy: aftercopy = "aftercopy".asInstanceOf[aftercopy]
   
   @js.native
-  sealed trait beforecopy extends js.Object
+  sealed trait autoActivate extends StObject
+  inline def autoActivate: autoActivate = "autoActivate".asInstanceOf[autoActivate]
   
   @js.native
-  sealed trait bubbleEvents extends js.Object
+  sealed trait beforecopy extends StObject
+  inline def beforecopy: beforecopy = "beforecopy".asInstanceOf[beforecopy]
   
   @js.native
-  sealed trait cacheBust extends js.Object
+  sealed trait bubbleEvents extends StObject
+  inline def bubbleEvents: bubbleEvents = "bubbleEvents".asInstanceOf[bubbleEvents]
   
   @js.native
-  sealed trait containerClass extends js.Object
+  sealed trait cacheBust extends StObject
+  inline def cacheBust: cacheBust = "cacheBust".asInstanceOf[cacheBust]
   
   @js.native
-  sealed trait containerId extends js.Object
+  sealed trait containerClass extends StObject
+  inline def containerClass: containerClass = "containerClass".asInstanceOf[containerClass]
   
   @js.native
-  sealed trait copy extends js.Object
+  sealed trait containerId extends StObject
+  inline def containerId: containerId = "containerId".asInstanceOf[containerId]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait copy extends StObject
+  inline def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait fixLineEndings extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait flashLoadTimeout extends js.Object
+  sealed trait fixLineEndings extends StObject
+  inline def fixLineEndings: fixLineEndings = "fixLineEndings".asInstanceOf[fixLineEndings]
   
   @js.native
-  sealed trait forceEnhancedClipboard extends js.Object
+  sealed trait flashLoadTimeout extends StObject
+  inline def flashLoadTimeout: flashLoadTimeout = "flashLoadTimeout".asInstanceOf[flashLoadTimeout]
   
   @js.native
-  sealed trait forceHandCursor extends js.Object
+  sealed trait forceEnhancedClipboard extends StObject
+  inline def forceEnhancedClipboard: forceEnhancedClipboard = "forceEnhancedClipboard".asInstanceOf[forceEnhancedClipboard]
   
   @js.native
-  sealed trait hoverClass extends js.Object
+  sealed trait forceHandCursor extends StObject
+  inline def forceHandCursor: forceHandCursor = "forceHandCursor".asInstanceOf[forceHandCursor]
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait hoverClass extends StObject
+  inline def hoverClass: hoverClass = "hoverClass".asInstanceOf[hoverClass]
   
   @js.native
-  sealed trait swfObjectId extends js.Object
+  sealed trait ready extends StObject
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait swfPath extends js.Object
+  sealed trait swfObjectId extends StObject
+  inline def swfObjectId: swfObjectId = "swfObjectId".asInstanceOf[swfObjectId]
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait swfPath extends StObject
+  inline def swfPath: swfPath = "swfPath".asInstanceOf[swfPath]
   
   @js.native
-  sealed trait trustedDomains extends js.Object
+  sealed trait title extends StObject
+  inline def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait zIndex extends js.Object
+  sealed trait trustedDomains extends StObject
+  inline def trustedDomains: trustedDomains = "trustedDomains".asInstanceOf[trustedDomains]
   
-  @scala.inline
-  def activeClass: activeClass = "activeClass".asInstanceOf[activeClass]
-  @scala.inline
-  def aftercopy: aftercopy = "aftercopy".asInstanceOf[aftercopy]
-  @scala.inline
-  def autoActivate: autoActivate = "autoActivate".asInstanceOf[autoActivate]
-  @scala.inline
-  def beforecopy: beforecopy = "beforecopy".asInstanceOf[beforecopy]
-  @scala.inline
-  def bubbleEvents: bubbleEvents = "bubbleEvents".asInstanceOf[bubbleEvents]
-  @scala.inline
-  def cacheBust: cacheBust = "cacheBust".asInstanceOf[cacheBust]
-  @scala.inline
-  def containerClass: containerClass = "containerClass".asInstanceOf[containerClass]
-  @scala.inline
-  def containerId: containerId = "containerId".asInstanceOf[containerId]
-  @scala.inline
-  def copy: copy = "copy".asInstanceOf[copy]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fixLineEndings: fixLineEndings = "fixLineEndings".asInstanceOf[fixLineEndings]
-  @scala.inline
-  def flashLoadTimeout: flashLoadTimeout = "flashLoadTimeout".asInstanceOf[flashLoadTimeout]
-  @scala.inline
-  def forceEnhancedClipboard: forceEnhancedClipboard = "forceEnhancedClipboard".asInstanceOf[forceEnhancedClipboard]
-  @scala.inline
-  def forceHandCursor: forceHandCursor = "forceHandCursor".asInstanceOf[forceHandCursor]
-  @scala.inline
-  def hoverClass: hoverClass = "hoverClass".asInstanceOf[hoverClass]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
-  @scala.inline
-  def swfObjectId: swfObjectId = "swfObjectId".asInstanceOf[swfObjectId]
-  @scala.inline
-  def swfPath: swfPath = "swfPath".asInstanceOf[swfPath]
-  @scala.inline
-  def title: title = "title".asInstanceOf[title]
-  @scala.inline
-  def trustedDomains: trustedDomains = "trustedDomains".asInstanceOf[trustedDomains]
-  @scala.inline
-  def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
+  @js.native
+  sealed trait zIndex extends StObject
+  inline def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
 }
-

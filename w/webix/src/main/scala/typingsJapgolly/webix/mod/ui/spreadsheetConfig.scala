@@ -1,137 +1,258 @@
 package typingsJapgolly.webix.mod.ui
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.EventHash
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait spreadsheetConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
+trait spreadsheetConfig extends StObject {
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var bottombar: js.UndefOr[Boolean] = js.undefined
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  
+  var buttons: js.UndefOr[Any] = js.undefined
+  
   var clipboard: js.UndefOr[Boolean] = js.undefined
+  
   var clipboardDecimalDelimiter: js.UndefOr[String] = js.undefined
+  
   var columnCount: js.UndefOr[Double] = js.undefined
+  
   var columnWidth: js.UndefOr[Double] = js.undefined
-  var conditionStyle: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var conditionStyle: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   var datatype: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var liveEditor: js.UndefOr[Boolean] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var menu: js.UndefOr[Boolean] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
-  var padding: js.UndefOr[js.Any] = js.undefined
+  
+  var padding: js.UndefOr[Any] = js.undefined
+  
   var paddingX: js.UndefOr[Double] = js.undefined
+  
   var paddingY: js.UndefOr[Double] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
   var resizeCell: js.UndefOr[Boolean] = js.undefined
+  
   var rowCount: js.UndefOr[Double] = js.undefined
+  
   var rowHeight: js.UndefOr[Double] = js.undefined
+  
   var sheetTabWidth: js.UndefOr[Double] = js.undefined
-  var subbar: js.UndefOr[js.Any] = js.undefined
+  
+  var subbar: js.UndefOr[Any] = js.undefined
+  
   var toolbar: js.UndefOr[String | Boolean] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object spreadsheetConfig {
-  @scala.inline
-  def apply(
-    animate: js.Any = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    bottombar: js.UndefOr[Boolean] = js.undefined,
-    buttons: js.Any = null,
-    clipboard: js.UndefOr[Boolean] = js.undefined,
-    clipboardDecimalDelimiter: String = null,
-    columnCount: Int | Double = null,
-    columnWidth: Int | Double = null,
-    conditionStyle: js.Array[_] = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    liveEditor: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    menu: js.UndefOr[Boolean] = js.undefined,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    on: EventHash = null,
-    padding: js.Any = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    resizeCell: js.UndefOr[Boolean] = js.undefined,
-    rowCount: Int | Double = null,
-    rowHeight: Int | Double = null,
-    sheetTabWidth: Int | Double = null,
-    subbar: js.Any = null,
-    toolbar: String | Boolean = null,
-    `type`: String = null,
-    url: js.Any = null,
-    view: String = null,
-    width: Int | Double = null
-  ): spreadsheetConfig = {
+  
+  inline def apply(): spreadsheetConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (!js.isUndefined(bottombar)) __obj.updateDynamic("bottombar")(bottombar.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(clipboard)) __obj.updateDynamic("clipboard")(clipboard.asInstanceOf[js.Any])
-    if (clipboardDecimalDelimiter != null) __obj.updateDynamic("clipboardDecimalDelimiter")(clipboardDecimalDelimiter.asInstanceOf[js.Any])
-    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
-    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
-    if (conditionStyle != null) __obj.updateDynamic("conditionStyle")(conditionStyle.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveEditor)) __obj.updateDynamic("liveEditor")(liveEditor.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizeCell)) __obj.updateDynamic("resizeCell")(resizeCell.asInstanceOf[js.Any])
-    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
-    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
-    if (sheetTabWidth != null) __obj.updateDynamic("sheetTabWidth")(sheetTabWidth.asInstanceOf[js.Any])
-    if (subbar != null) __obj.updateDynamic("subbar")(subbar.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[spreadsheetConfig]
   }
+  
+  extension [Self <: spreadsheetConfig](x: Self) {
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setBottombar(value: Boolean): Self = StObject.set(x, "bottombar", value.asInstanceOf[js.Any])
+    
+    inline def setBottombarUndefined: Self = StObject.set(x, "bottombar", js.undefined)
+    
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setClipboard(value: Boolean): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardDecimalDelimiter(value: String): Self = StObject.set(x, "clipboardDecimalDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardDecimalDelimiterUndefined: Self = StObject.set(x, "clipboardDecimalDelimiter", js.undefined)
+    
+    inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
+    
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    
+    inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+    
+    inline def setConditionStyle(value: js.Array[Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConditionStyleUndefined: Self = StObject.set(x, "conditionStyle", js.undefined)
+    
+    inline def setConditionStyleVarargs(value: Any*): Self = StObject.set(x, "conditionStyle", js.Array(value*))
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLiveEditor(value: Boolean): Self = StObject.set(x, "liveEditor", value.asInstanceOf[js.Any])
+    
+    inline def setLiveEditorUndefined: Self = StObject.set(x, "liveEditor", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPaddingX(value: Double): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    
+    inline def setPaddingY(value: Double): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setResizeCell(value: Boolean): Self = StObject.set(x, "resizeCell", value.asInstanceOf[js.Any])
+    
+    inline def setResizeCellUndefined: Self = StObject.set(x, "resizeCell", js.undefined)
+    
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    
+    inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    
+    inline def setSheetTabWidth(value: Double): Self = StObject.set(x, "sheetTabWidth", value.asInstanceOf[js.Any])
+    
+    inline def setSheetTabWidthUndefined: Self = StObject.set(x, "sheetTabWidth", js.undefined)
+    
+    inline def setSubbar(value: Any): Self = StObject.set(x, "subbar", value.asInstanceOf[js.Any])
+    
+    inline def setSubbarUndefined: Self = StObject.set(x, "subbar", js.undefined)
+    
+    inline def setToolbar(value: String | Boolean): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

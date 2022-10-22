@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.native
   - typingsJapgolly.std.stdStrings.transparent
 */
-trait EndingType extends js.Object
-
+trait EndingType extends StObject
 object EndingType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def native: typingsJapgolly.std.stdStrings.native = this.cast("native")
-  @scala.inline
-  def transparent: typingsJapgolly.std.stdStrings.transparent = this.cast("transparent")
+  
+  inline def native: typingsJapgolly.std.stdStrings.native = "native".asInstanceOf[typingsJapgolly.std.stdStrings.native]
+  
+  inline def transparent: typingsJapgolly.std.stdStrings.transparent = "transparent".asInstanceOf[typingsJapgolly.std.stdStrings.transparent]
 }
-

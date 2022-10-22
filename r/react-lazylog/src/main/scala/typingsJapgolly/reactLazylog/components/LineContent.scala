@@ -1,46 +1,35 @@
 package typingsJapgolly.reactLazylog.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactLazylog.AnonText
-import typingsJapgolly.reactLazylog.lineContentMod.LineContentProps
-import typingsJapgolly.reactLazylog.lineContentMod.default
+import typingsJapgolly.reactLazylog.anon.Text
+import typingsJapgolly.reactLazylog.buildLineContentMod.LineContentProps
+import typingsJapgolly.reactLazylog.buildLineContentMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LineContent {
-  def apply(
-    data: js.Array[AnonText],
-    number: Double,
-    formatPart: /* text */ String => CallbackTo[Node] = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[LineContentProps, default, Unit, LineContentProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
   
-      if (formatPart != null) __obj.updateDynamic("formatPart")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => formatPart(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLazylog.lineContentMod.LineContentProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactLazylog.lineContentMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLazylog.lineContentMod.LineContentProps])(children: _*)
+  inline def apply(data: js.Array[Text], number: Double): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[LineContentProps]))
   }
+  
   @JSImport("react-lazylog/build/LineContent", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def formatPart(value: /* text */ String => Node): this.type = set("formatPart", js.Any.fromFunction1(value))
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LineContentProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

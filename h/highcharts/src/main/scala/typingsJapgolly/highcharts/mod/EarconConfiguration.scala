@@ -1,13 +1,14 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Earcon configuration, specifying an Earcon and when to play it.
   */
-trait EarconConfiguration extends js.Object {
+trait EarconConfiguration extends StObject {
+  
   /**
     * A function to determine whether or not to play this earcon on a
     * point. The function is called for every point, receiving that point
@@ -16,27 +17,34 @@ trait EarconConfiguration extends js.Object {
     * new Earcon will be played.
     */
   var condition: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * An Earcon instance.
     */
-  var earcon: typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.Earcon
+  var earcon: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon
+  
   /**
     * The ID of the point to play the Earcon on.
     */
   var onPoint: js.UndefOr[String] = js.undefined
 }
-
 object EarconConfiguration {
-  @scala.inline
-  def apply(
-    earcon: typingsJapgolly.highcharts.sonificationMod.highchartsAugmentingMod.Earcon,
-    condition: js.Function = null,
-    onPoint: String = null
-  ): EarconConfiguration = {
+  
+  inline def apply(earcon: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon): EarconConfiguration = {
     val __obj = js.Dynamic.literal(earcon = earcon.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
-    if (onPoint != null) __obj.updateDynamic("onPoint")(onPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[EarconConfiguration]
   }
+  
+  extension [Self <: EarconConfiguration](x: Self) {
+    
+    inline def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setEarcon(value: typingsJapgolly.highcharts.modulesSonificationMod.highchartsAugmentingMod.Earcon): Self = StObject.set(x, "earcon", value.asInstanceOf[js.Any])
+    
+    inline def setOnPoint(value: String): Self = StObject.set(x, "onPoint", value.asInstanceOf[js.Any])
+    
+    inline def setOnPointUndefined: Self = StObject.set(x, "onPoint", js.undefined)
+  }
 }
-

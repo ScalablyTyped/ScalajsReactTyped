@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendPositionOptions extends js.Object {
+trait LegendPositionOptions extends StObject {
+  
   var position: js.UndefOr[LegendPositionType] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object LegendPositionOptions {
-  @scala.inline
-  def apply(position: LegendPositionType = null, visible: js.UndefOr[Boolean] = js.undefined): LegendPositionOptions = {
+  
+  inline def apply(): LegendPositionOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendPositionOptions]
   }
+  
+  extension [Self <: LegendPositionOptions](x: Self) {
+    
+    inline def setPosition(value: LegendPositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

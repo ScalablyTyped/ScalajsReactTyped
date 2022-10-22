@@ -1,16 +1,15 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MatrixDropdownRowModel")
 @js.native
-class MatrixDropdownRowModel protected () extends MatrixDropdownRowModelBase {
-  def this(name: String, item: ItemValue, data: IMatrixDropdownData, value: js.Any) = this()
+open class MatrixDropdownRowModel protected () extends MatrixDropdownRowModelBase {
+  def this(name: String, item: ItemValue, data: IMatrixDropdownData, value: Any) = this()
+  
+  var item: ItemValue = js.native
+  
   var name: String = js.native
-  @JSName("rowName")
-  val rowName_MatrixDropdownRowModel: String = js.native
-  val text: String = js.native
 }
-

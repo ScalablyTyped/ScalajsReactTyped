@@ -5,1268 +5,1201 @@ import typingsJapgolly.ariaQuery.mod.ARIACompositeWidgetRole
 import typingsJapgolly.ariaQuery.mod.ARIADPubRole
 import typingsJapgolly.ariaQuery.mod.ARIADocumentStructureRole
 import typingsJapgolly.ariaQuery.mod.ARIALandmarkRole
+import typingsJapgolly.ariaQuery.mod.ARIALiveRegionRole
 import typingsJapgolly.ariaQuery.mod.ARIAProperty
 import typingsJapgolly.ariaQuery.mod.ARIAPropertyCurrent
-import typingsJapgolly.ariaQuery.mod.ARIARole
-import typingsJapgolly.ariaQuery.mod.ARIARoleDefintionKey
 import typingsJapgolly.ariaQuery.mod.ARIAState
 import typingsJapgolly.ariaQuery.mod.ARIAWidgetRole
+import typingsJapgolly.ariaQuery.mod.ARIAWindowRole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ariaQueryStrings {
+  
+  @js.native
+  sealed trait Greaterthansign1 extends StObject
+  inline def Greaterthansign1: Greaterthansign1 = ">1".asInstanceOf[Greaterthansign1]
+  
   @js.native
   sealed trait alert
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIALiveRegionRole
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
   sealed trait alertdialog
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIAWindowRole
+  inline def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
   
   @js.native
   sealed trait application
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def application: application = "application".asInstanceOf[application]
   
   @js.native
-  sealed trait `aria-activedescendant` extends ARIAProperty
+  sealed trait `aria-activedescendant`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
   
   @js.native
-  sealed trait `aria-atomic` extends ARIAProperty
+  sealed trait `aria-atomic`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
   
   @js.native
-  sealed trait `aria-autocomplete` extends ARIAProperty
+  sealed trait `aria-autocomplete`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
   
   @js.native
   sealed trait `aria-busy`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
   
   @js.native
   sealed trait `aria-checked`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
   
   @js.native
-  sealed trait `aria-colcount` extends ARIAProperty
+  sealed trait `aria-colcount`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
   
   @js.native
-  sealed trait `aria-colindex` extends ARIAProperty
+  sealed trait `aria-colindex`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
   
   @js.native
-  sealed trait `aria-colspan` extends ARIAProperty
+  sealed trait `aria-colspan`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
   
   @js.native
-  sealed trait `aria-controls` extends ARIAProperty
+  sealed trait `aria-controls`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
   
   @js.native
-  sealed trait `aria-current` extends ARIAProperty
+  sealed trait `aria-current`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
   
   @js.native
-  sealed trait `aria-describedat` extends ARIAProperty
+  sealed trait `aria-describedby`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
   
   @js.native
-  sealed trait `aria-describedby` extends ARIAProperty
-  
-  @js.native
-  sealed trait `aria-details` extends ARIAProperty
+  sealed trait `aria-details`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
   
   @js.native
   sealed trait `aria-disabled`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
   
   @js.native
-  sealed trait `aria-dropeffect` extends ARIAProperty
+  sealed trait `aria-dropeffect`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
   
   @js.native
-  sealed trait `aria-errormessage` extends ARIAProperty
+  sealed trait `aria-errormessage`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
   
   @js.native
   sealed trait `aria-expanded`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
   
   @js.native
-  sealed trait `aria-flowto` extends ARIAProperty
+  sealed trait `aria-flowto`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
   
   @js.native
   sealed trait `aria-grabbed`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
   
   @js.native
-  sealed trait `aria-haspopup` extends ARIAProperty
+  sealed trait `aria-haspopup`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
   
   @js.native
   sealed trait `aria-hidden`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
   
   @js.native
   sealed trait `aria-invalid`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
   
   @js.native
-  sealed trait `aria-keyshortcuts` extends ARIAProperty
+  sealed trait `aria-keyshortcuts`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
   
   @js.native
-  sealed trait `aria-label` extends ARIAProperty
+  sealed trait `aria-label`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
   
   @js.native
-  sealed trait `aria-labelledby` extends ARIAProperty
+  sealed trait `aria-labelledby`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
   
   @js.native
-  sealed trait `aria-level` extends ARIAProperty
+  sealed trait `aria-level`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
   
   @js.native
-  sealed trait `aria-live` extends ARIAProperty
+  sealed trait `aria-live`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
   
   @js.native
-  sealed trait `aria-modal` extends ARIAProperty
+  sealed trait `aria-modal`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
   
   @js.native
-  sealed trait `aria-multiline` extends ARIAProperty
+  sealed trait `aria-multiline`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
   
   @js.native
-  sealed trait `aria-multiselectable` extends ARIAProperty
+  sealed trait `aria-multiselectable`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
   
   @js.native
-  sealed trait `aria-orientation` extends ARIAProperty
+  sealed trait `aria-orientation`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
   
   @js.native
-  sealed trait `aria-owns` extends ARIAProperty
+  sealed trait `aria-owns`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
   
   @js.native
-  sealed trait `aria-placeholder` extends ARIAProperty
+  sealed trait `aria-placeholder`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
   
   @js.native
-  sealed trait `aria-posinset` extends ARIAProperty
+  sealed trait `aria-posinset`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
   
   @js.native
   sealed trait `aria-pressed`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
   
   @js.native
-  sealed trait `aria-readonly` extends ARIAProperty
+  sealed trait `aria-readonly`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
   
   @js.native
-  sealed trait `aria-relevant` extends ARIAProperty
+  sealed trait `aria-relevant`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
   
   @js.native
-  sealed trait `aria-required` extends ARIAProperty
+  sealed trait `aria-required`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
   
   @js.native
-  sealed trait `aria-roledescription` extends ARIAProperty
+  sealed trait `aria-roledescription`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
   
   @js.native
-  sealed trait `aria-rowcount` extends ARIAProperty
+  sealed trait `aria-rowcount`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
   
   @js.native
-  sealed trait `aria-rowindex` extends ARIAProperty
+  sealed trait `aria-rowindex`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
   
   @js.native
-  sealed trait `aria-rowspan` extends ARIAProperty
+  sealed trait `aria-rowspan`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
   
   @js.native
   sealed trait `aria-selected`
-    extends ARIAProperty
+    extends StObject
+       with ARIAProperty
        with ARIAState
+  inline def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
   
   @js.native
-  sealed trait `aria-setsize` extends ARIAProperty
+  sealed trait `aria-setsize`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
   
   @js.native
-  sealed trait `aria-sort` extends ARIAProperty
+  sealed trait `aria-sort`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
   
   @js.native
-  sealed trait `aria-valuemax` extends ARIAProperty
+  sealed trait `aria-valuemax`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
   
   @js.native
-  sealed trait `aria-valuemin` extends ARIAProperty
+  sealed trait `aria-valuemin`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
   
   @js.native
-  sealed trait `aria-valuenow` extends ARIAProperty
+  sealed trait `aria-valuenow`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
   
   @js.native
-  sealed trait `aria-valuetext` extends ARIAProperty
+  sealed trait `aria-valuetext`
+    extends StObject
+       with ARIAProperty
+  inline def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
   
   @js.native
   sealed trait article
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def article: article = "article".asInstanceOf[article]
   
   @js.native
   sealed trait banner
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def banner: banner = "banner".asInstanceOf[banner]
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait blockquote
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
+  
+  @js.native
+  sealed trait boolean extends StObject
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait button
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def button: button = "button".asInstanceOf[button]
+  
+  @js.native
+  sealed trait caption
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def caption: caption = "caption".asInstanceOf[caption]
   
   @js.native
   sealed trait cell
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def cell: cell = "cell".asInstanceOf[cell]
   
   @js.native
   sealed trait checkbox
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @js.native
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
   sealed trait columnheader
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def columnheader: columnheader = "columnheader".asInstanceOf[columnheader]
   
   @js.native
   sealed trait combobox
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def combobox: combobox = "combobox".asInstanceOf[combobox]
   
   @js.native
   sealed trait command
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def command: command = "command".asInstanceOf[command]
   
   @js.native
   sealed trait complementary
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def complementary: complementary = "complementary".asInstanceOf[complementary]
   
   @js.native
   sealed trait composite
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def composite: composite = "composite".asInstanceOf[composite]
   
   @js.native
   sealed trait contentinfo
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def contentinfo: contentinfo = "contentinfo".asInstanceOf[contentinfo]
   
   @js.native
-  sealed trait date extends ARIAPropertyCurrent
+  sealed trait date
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait definition
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def definition: definition = "definition".asInstanceOf[definition]
+  
+  @js.native
+  sealed trait deletion
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def deletion: deletion = "deletion".asInstanceOf[deletion]
+  
+  @js.native
+  sealed trait `descendant of table` extends StObject
+  inline def `descendant of table`: `descendant of table` = ("descendant of table").asInstanceOf[`descendant of table`]
   
   @js.native
   sealed trait dialog
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIAWindowRole
+  inline def dialog: dialog = "dialog".asInstanceOf[dialog]
+  
+  @js.native
+  sealed trait `direct descendant of document` extends StObject
+  inline def `direct descendant of document`: `direct descendant of document` = ("direct descendant of document").asInstanceOf[`direct descendant of document`]
+  
+  @js.native
+  sealed trait `direct descendant of olComma ul or menu` extends StObject
+  inline def `direct descendant of olComma ul or menu`: `direct descendant of olComma ul or menu` = ("direct descendant of ol, ul or menu").asInstanceOf[`direct descendant of olComma ul or menu`]
   
   @js.native
   sealed trait directory
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait `doc-abstract`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-abstract`: `doc-abstract` = "doc-abstract".asInstanceOf[`doc-abstract`]
   
   @js.native
   sealed trait `doc-acknowledgments`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-acknowledgments`: `doc-acknowledgments` = "doc-acknowledgments".asInstanceOf[`doc-acknowledgments`]
   
   @js.native
   sealed trait `doc-afterword`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-afterword`: `doc-afterword` = "doc-afterword".asInstanceOf[`doc-afterword`]
   
   @js.native
   sealed trait `doc-appendix`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-appendix`: `doc-appendix` = "doc-appendix".asInstanceOf[`doc-appendix`]
   
   @js.native
   sealed trait `doc-backlink`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-backlink`: `doc-backlink` = "doc-backlink".asInstanceOf[`doc-backlink`]
   
   @js.native
   sealed trait `doc-biblioentry`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-biblioentry`: `doc-biblioentry` = "doc-biblioentry".asInstanceOf[`doc-biblioentry`]
   
   @js.native
   sealed trait `doc-bibliography`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-bibliography`: `doc-bibliography` = "doc-bibliography".asInstanceOf[`doc-bibliography`]
   
   @js.native
   sealed trait `doc-biblioref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-biblioref`: `doc-biblioref` = "doc-biblioref".asInstanceOf[`doc-biblioref`]
   
   @js.native
   sealed trait `doc-chapter`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-chapter`: `doc-chapter` = "doc-chapter".asInstanceOf[`doc-chapter`]
   
   @js.native
   sealed trait `doc-colophon`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-colophon`: `doc-colophon` = "doc-colophon".asInstanceOf[`doc-colophon`]
   
   @js.native
   sealed trait `doc-conclusion`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-conclusion`: `doc-conclusion` = "doc-conclusion".asInstanceOf[`doc-conclusion`]
   
   @js.native
   sealed trait `doc-cover`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-cover`: `doc-cover` = "doc-cover".asInstanceOf[`doc-cover`]
   
   @js.native
   sealed trait `doc-credit`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-credit`: `doc-credit` = "doc-credit".asInstanceOf[`doc-credit`]
   
   @js.native
   sealed trait `doc-credits`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-credits`: `doc-credits` = "doc-credits".asInstanceOf[`doc-credits`]
   
   @js.native
   sealed trait `doc-dedication`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-dedication`: `doc-dedication` = "doc-dedication".asInstanceOf[`doc-dedication`]
   
   @js.native
   sealed trait `doc-endnote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-endnote`: `doc-endnote` = "doc-endnote".asInstanceOf[`doc-endnote`]
   
   @js.native
   sealed trait `doc-endnotes`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-endnotes`: `doc-endnotes` = "doc-endnotes".asInstanceOf[`doc-endnotes`]
   
   @js.native
   sealed trait `doc-epigraph`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-epigraph`: `doc-epigraph` = "doc-epigraph".asInstanceOf[`doc-epigraph`]
   
   @js.native
   sealed trait `doc-epilogue`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-epilogue`: `doc-epilogue` = "doc-epilogue".asInstanceOf[`doc-epilogue`]
   
   @js.native
   sealed trait `doc-errata`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-errata`: `doc-errata` = "doc-errata".asInstanceOf[`doc-errata`]
   
   @js.native
   sealed trait `doc-example`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-example`: `doc-example` = "doc-example".asInstanceOf[`doc-example`]
   
   @js.native
   sealed trait `doc-footnote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-footnote`: `doc-footnote` = "doc-footnote".asInstanceOf[`doc-footnote`]
   
   @js.native
   sealed trait `doc-foreword`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-foreword`: `doc-foreword` = "doc-foreword".asInstanceOf[`doc-foreword`]
   
   @js.native
   sealed trait `doc-glossary`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-glossary`: `doc-glossary` = "doc-glossary".asInstanceOf[`doc-glossary`]
   
   @js.native
   sealed trait `doc-glossref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-glossref`: `doc-glossref` = "doc-glossref".asInstanceOf[`doc-glossref`]
   
   @js.native
   sealed trait `doc-index`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-index`: `doc-index` = "doc-index".asInstanceOf[`doc-index`]
   
   @js.native
   sealed trait `doc-introduction`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-introduction`: `doc-introduction` = "doc-introduction".asInstanceOf[`doc-introduction`]
   
   @js.native
   sealed trait `doc-noteref`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-noteref`: `doc-noteref` = "doc-noteref".asInstanceOf[`doc-noteref`]
   
   @js.native
   sealed trait `doc-notice`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-notice`: `doc-notice` = "doc-notice".asInstanceOf[`doc-notice`]
   
   @js.native
   sealed trait `doc-pagebreak`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-pagebreak`: `doc-pagebreak` = "doc-pagebreak".asInstanceOf[`doc-pagebreak`]
   
   @js.native
   sealed trait `doc-pagelist`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-pagelist`: `doc-pagelist` = "doc-pagelist".asInstanceOf[`doc-pagelist`]
   
   @js.native
   sealed trait `doc-part`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-part`: `doc-part` = "doc-part".asInstanceOf[`doc-part`]
   
   @js.native
   sealed trait `doc-preface`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-preface`: `doc-preface` = "doc-preface".asInstanceOf[`doc-preface`]
   
   @js.native
   sealed trait `doc-prologue`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-prologue`: `doc-prologue` = "doc-prologue".asInstanceOf[`doc-prologue`]
   
   @js.native
   sealed trait `doc-pullquote`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-pullquote`: `doc-pullquote` = "doc-pullquote".asInstanceOf[`doc-pullquote`]
   
   @js.native
   sealed trait `doc-qna`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-qna`: `doc-qna` = "doc-qna".asInstanceOf[`doc-qna`]
   
   @js.native
   sealed trait `doc-subtitle`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-subtitle`: `doc-subtitle` = "doc-subtitle".asInstanceOf[`doc-subtitle`]
   
   @js.native
   sealed trait `doc-tip`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-tip`: `doc-tip` = "doc-tip".asInstanceOf[`doc-tip`]
   
   @js.native
   sealed trait `doc-toc`
-    extends ARIADPubRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADPubRole
+  inline def `doc-toc`: `doc-toc` = "doc-toc".asInstanceOf[`doc-toc`]
   
   @js.native
   sealed trait document
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait `false` extends ARIAPropertyCurrent
+  sealed trait emphasis
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def emphasis: emphasis = "emphasis".asInstanceOf[emphasis]
+  
+  @js.native
+  sealed trait `false`
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
   sealed trait feed
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def feed: feed = "feed".asInstanceOf[feed]
   
   @js.native
   sealed trait figure
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def figure: figure = "figure".asInstanceOf[figure]
   
   @js.native
   sealed trait form
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def form: form = "form".asInstanceOf[form]
+  
+  @js.native
+  sealed trait generic
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
   sealed trait grid
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
   sealed trait gridcell
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def gridcell: gridcell = "gridcell".asInstanceOf[gridcell]
   
   @js.native
   sealed trait group
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
   sealed trait heading
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def heading: heading = "heading".asInstanceOf[heading]
   
   @js.native
-  sealed trait id extends js.Object
+  sealed trait id extends StObject
+  inline def id: id = "id".asInstanceOf[id]
   
   @js.native
-  sealed trait idlist extends js.Object
+  sealed trait idlist extends StObject
+  inline def idlist: idlist = "idlist".asInstanceOf[idlist]
   
   @js.native
   sealed trait img
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def img: img = "img".asInstanceOf[img]
   
   @js.native
   sealed trait input
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait insertion
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def insertion: insertion = "insertion".asInstanceOf[insertion]
+  
+  @js.native
+  sealed trait integer extends StObject
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait landmark
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def landmark: landmark = "landmark".asInstanceOf[landmark]
   
   @js.native
   sealed trait link
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait list
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait listbox
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def listbox: listbox = "listbox".asInstanceOf[listbox]
   
   @js.native
   sealed trait listitem
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def listitem: listitem = "listitem".asInstanceOf[listitem]
   
   @js.native
-  sealed trait location extends ARIAPropertyCurrent
+  sealed trait location
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
   sealed trait log
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIALiveRegionRole
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait main
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def main: main = "main".asInstanceOf[main]
   
   @js.native
   sealed trait marquee
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIALiveRegionRole
+  inline def marquee: marquee = "marquee".asInstanceOf[marquee]
   
   @js.native
   sealed trait math
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def math: math = "math".asInstanceOf[math]
   
   @js.native
   sealed trait menu
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
   sealed trait menubar
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def menubar: menubar = "menubar".asInstanceOf[menubar]
   
   @js.native
   sealed trait menuitem
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
   
   @js.native
   sealed trait menuitemcheckbox
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def menuitemcheckbox: menuitemcheckbox = "menuitemcheckbox".asInstanceOf[menuitemcheckbox]
   
   @js.native
   sealed trait menuitemradio
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
+  
+  @js.native
+  sealed trait meter
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def meter: meter = "meter".asInstanceOf[meter]
   
   @js.native
   sealed trait navigation
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def navigation: navigation = "navigation".asInstanceOf[navigation]
   
   @js.native
   sealed trait none
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait note
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def note: note = "note".asInstanceOf[note]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait option
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def option: option = "option".asInstanceOf[option]
   
   @js.native
-  sealed trait page extends ARIAPropertyCurrent
+  sealed trait page
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def page: page = "page".asInstanceOf[page]
+  
+  @js.native
+  sealed trait paragraph
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
   
   @js.native
   sealed trait presentation
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def presentation: presentation = "presentation".asInstanceOf[presentation]
   
   @js.native
   sealed trait progressbar
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
   
   @js.native
   sealed trait radio
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait radiogroup
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
   
   @js.native
   sealed trait range
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
   sealed trait region
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def region: region = "region".asInstanceOf[region]
   
   @js.native
   sealed trait roletype
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def roletype: roletype = "roletype".asInstanceOf[roletype]
   
   @js.native
   sealed trait row
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def row: row = "row".asInstanceOf[row]
   
   @js.native
   sealed trait rowgroup
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
   
   @js.native
   sealed trait rowheader
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def rowheader: rowheader = "rowheader".asInstanceOf[rowheader]
   
   @js.native
   sealed trait scrollbar
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   
   @js.native
   sealed trait search
-    extends ARIALandmarkRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIALandmarkRole
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait searchbox
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def searchbox: searchbox = "searchbox".asInstanceOf[searchbox]
   
   @js.native
   sealed trait section
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def section: section = "section".asInstanceOf[section]
   
   @js.native
   sealed trait sectionhead
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def sectionhead: sectionhead = "sectionhead".asInstanceOf[sectionhead]
   
   @js.native
   sealed trait select
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
   sealed trait separator
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
   sealed trait slider
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def slider: slider = "slider".asInstanceOf[slider]
   
   @js.native
   sealed trait spinbutton
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
   
   @js.native
   sealed trait status
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIALiveRegionRole
+  inline def status: status = "status".asInstanceOf[status]
   
   @js.native
-  sealed trait step extends ARIAPropertyCurrent
+  sealed trait step
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait strong
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def strong: strong = "strong".asInstanceOf[strong]
   
   @js.native
   sealed trait structure
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def structure: structure = "structure".asInstanceOf[structure]
+  
+  @js.native
+  sealed trait subscript
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def subscript: subscript = "subscript".asInstanceOf[subscript]
+  
+  @js.native
+  sealed trait superscript
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def superscript: superscript = "superscript".asInstanceOf[superscript]
   
   @js.native
   sealed trait switch
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
   sealed trait tab
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def tab: tab = "tab".asInstanceOf[tab]
   
   @js.native
   sealed trait table
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def table: table = "table".asInstanceOf[table]
   
   @js.native
   sealed trait tablist
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def tablist: tablist = "tablist".asInstanceOf[tablist]
   
   @js.native
   sealed trait tabpanel
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
   
   @js.native
   sealed trait term
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def term: term = "term".asInstanceOf[term]
   
   @js.native
   sealed trait textbox
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def textbox: textbox = "textbox".asInstanceOf[textbox]
   
   @js.native
-  sealed trait time extends ARIAPropertyCurrent
+  sealed trait time
+    extends StObject
+       with ARIADocumentStructureRole
+       with ARIAPropertyCurrent
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
   sealed trait timer
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIALiveRegionRole
+  inline def timer: timer = "timer".asInstanceOf[timer]
   
   @js.native
-  sealed trait token extends js.Object
+  sealed trait token extends StObject
+  inline def token: token = "token".asInstanceOf[token]
   
   @js.native
-  sealed trait tokenlist extends js.Object
+  sealed trait tokenlist extends StObject
+  inline def tokenlist: tokenlist = "tokenlist".asInstanceOf[tokenlist]
   
   @js.native
   sealed trait toolbar
-    extends ARIADocumentStructureRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
   
   @js.native
   sealed trait tooltip
-    extends ARIARole
-       with ARIARoleDefintionKey
-       with ARIAWidgetRole
+    extends StObject
+       with ARIADocumentStructureRole
+  inline def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
   
   @js.native
   sealed trait tree
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
   sealed trait treegrid
-    extends ARIACompositeWidgetRole
-       with ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIACompositeWidgetRole
+  inline def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
   
   @js.native
   sealed trait treeitem
-    extends ARIARole
-       with ARIARoleDefintionKey
+    extends StObject
        with ARIAWidgetRole
+  inline def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
   
   @js.native
-  sealed trait tristate extends js.Object
+  sealed trait tristate extends StObject
+  inline def tristate: tristate = "tristate".asInstanceOf[tristate]
   
   @js.native
-  sealed trait `true` extends ARIAPropertyCurrent
+  sealed trait `true`
+    extends StObject
+       with ARIAPropertyCurrent
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
+  
+  @js.native
+  sealed trait unset extends StObject
+  inline def unset: unset = "unset".asInstanceOf[unset]
   
   @js.native
   sealed trait widget
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
+    extends StObject
+       with ARIAAbstractRole
+  inline def widget: widget = "widget".asInstanceOf[widget]
   
   @js.native
   sealed trait window
-    extends ARIAAbstractRole
-       with ARIARoleDefintionKey
-  
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def alertdialog: alertdialog = "alertdialog".asInstanceOf[alertdialog]
-  @scala.inline
-  def application: application = "application".asInstanceOf[application]
-  @scala.inline
-  def `aria-activedescendant`: `aria-activedescendant` = "aria-activedescendant".asInstanceOf[`aria-activedescendant`]
-  @scala.inline
-  def `aria-atomic`: `aria-atomic` = "aria-atomic".asInstanceOf[`aria-atomic`]
-  @scala.inline
-  def `aria-autocomplete`: `aria-autocomplete` = "aria-autocomplete".asInstanceOf[`aria-autocomplete`]
-  @scala.inline
-  def `aria-busy`: `aria-busy` = "aria-busy".asInstanceOf[`aria-busy`]
-  @scala.inline
-  def `aria-checked`: `aria-checked` = "aria-checked".asInstanceOf[`aria-checked`]
-  @scala.inline
-  def `aria-colcount`: `aria-colcount` = "aria-colcount".asInstanceOf[`aria-colcount`]
-  @scala.inline
-  def `aria-colindex`: `aria-colindex` = "aria-colindex".asInstanceOf[`aria-colindex`]
-  @scala.inline
-  def `aria-colspan`: `aria-colspan` = "aria-colspan".asInstanceOf[`aria-colspan`]
-  @scala.inline
-  def `aria-controls`: `aria-controls` = "aria-controls".asInstanceOf[`aria-controls`]
-  @scala.inline
-  def `aria-current`: `aria-current` = "aria-current".asInstanceOf[`aria-current`]
-  @scala.inline
-  def `aria-describedat`: `aria-describedat` = "aria-describedat".asInstanceOf[`aria-describedat`]
-  @scala.inline
-  def `aria-describedby`: `aria-describedby` = "aria-describedby".asInstanceOf[`aria-describedby`]
-  @scala.inline
-  def `aria-details`: `aria-details` = "aria-details".asInstanceOf[`aria-details`]
-  @scala.inline
-  def `aria-disabled`: `aria-disabled` = "aria-disabled".asInstanceOf[`aria-disabled`]
-  @scala.inline
-  def `aria-dropeffect`: `aria-dropeffect` = "aria-dropeffect".asInstanceOf[`aria-dropeffect`]
-  @scala.inline
-  def `aria-errormessage`: `aria-errormessage` = "aria-errormessage".asInstanceOf[`aria-errormessage`]
-  @scala.inline
-  def `aria-expanded`: `aria-expanded` = "aria-expanded".asInstanceOf[`aria-expanded`]
-  @scala.inline
-  def `aria-flowto`: `aria-flowto` = "aria-flowto".asInstanceOf[`aria-flowto`]
-  @scala.inline
-  def `aria-grabbed`: `aria-grabbed` = "aria-grabbed".asInstanceOf[`aria-grabbed`]
-  @scala.inline
-  def `aria-haspopup`: `aria-haspopup` = "aria-haspopup".asInstanceOf[`aria-haspopup`]
-  @scala.inline
-  def `aria-hidden`: `aria-hidden` = "aria-hidden".asInstanceOf[`aria-hidden`]
-  @scala.inline
-  def `aria-invalid`: `aria-invalid` = "aria-invalid".asInstanceOf[`aria-invalid`]
-  @scala.inline
-  def `aria-keyshortcuts`: `aria-keyshortcuts` = "aria-keyshortcuts".asInstanceOf[`aria-keyshortcuts`]
-  @scala.inline
-  def `aria-label`: `aria-label` = "aria-label".asInstanceOf[`aria-label`]
-  @scala.inline
-  def `aria-labelledby`: `aria-labelledby` = "aria-labelledby".asInstanceOf[`aria-labelledby`]
-  @scala.inline
-  def `aria-level`: `aria-level` = "aria-level".asInstanceOf[`aria-level`]
-  @scala.inline
-  def `aria-live`: `aria-live` = "aria-live".asInstanceOf[`aria-live`]
-  @scala.inline
-  def `aria-modal`: `aria-modal` = "aria-modal".asInstanceOf[`aria-modal`]
-  @scala.inline
-  def `aria-multiline`: `aria-multiline` = "aria-multiline".asInstanceOf[`aria-multiline`]
-  @scala.inline
-  def `aria-multiselectable`: `aria-multiselectable` = "aria-multiselectable".asInstanceOf[`aria-multiselectable`]
-  @scala.inline
-  def `aria-orientation`: `aria-orientation` = "aria-orientation".asInstanceOf[`aria-orientation`]
-  @scala.inline
-  def `aria-owns`: `aria-owns` = "aria-owns".asInstanceOf[`aria-owns`]
-  @scala.inline
-  def `aria-placeholder`: `aria-placeholder` = "aria-placeholder".asInstanceOf[`aria-placeholder`]
-  @scala.inline
-  def `aria-posinset`: `aria-posinset` = "aria-posinset".asInstanceOf[`aria-posinset`]
-  @scala.inline
-  def `aria-pressed`: `aria-pressed` = "aria-pressed".asInstanceOf[`aria-pressed`]
-  @scala.inline
-  def `aria-readonly`: `aria-readonly` = "aria-readonly".asInstanceOf[`aria-readonly`]
-  @scala.inline
-  def `aria-relevant`: `aria-relevant` = "aria-relevant".asInstanceOf[`aria-relevant`]
-  @scala.inline
-  def `aria-required`: `aria-required` = "aria-required".asInstanceOf[`aria-required`]
-  @scala.inline
-  def `aria-roledescription`: `aria-roledescription` = "aria-roledescription".asInstanceOf[`aria-roledescription`]
-  @scala.inline
-  def `aria-rowcount`: `aria-rowcount` = "aria-rowcount".asInstanceOf[`aria-rowcount`]
-  @scala.inline
-  def `aria-rowindex`: `aria-rowindex` = "aria-rowindex".asInstanceOf[`aria-rowindex`]
-  @scala.inline
-  def `aria-rowspan`: `aria-rowspan` = "aria-rowspan".asInstanceOf[`aria-rowspan`]
-  @scala.inline
-  def `aria-selected`: `aria-selected` = "aria-selected".asInstanceOf[`aria-selected`]
-  @scala.inline
-  def `aria-setsize`: `aria-setsize` = "aria-setsize".asInstanceOf[`aria-setsize`]
-  @scala.inline
-  def `aria-sort`: `aria-sort` = "aria-sort".asInstanceOf[`aria-sort`]
-  @scala.inline
-  def `aria-valuemax`: `aria-valuemax` = "aria-valuemax".asInstanceOf[`aria-valuemax`]
-  @scala.inline
-  def `aria-valuemin`: `aria-valuemin` = "aria-valuemin".asInstanceOf[`aria-valuemin`]
-  @scala.inline
-  def `aria-valuenow`: `aria-valuenow` = "aria-valuenow".asInstanceOf[`aria-valuenow`]
-  @scala.inline
-  def `aria-valuetext`: `aria-valuetext` = "aria-valuetext".asInstanceOf[`aria-valuetext`]
-  @scala.inline
-  def article: article = "article".asInstanceOf[article]
-  @scala.inline
-  def banner: banner = "banner".asInstanceOf[banner]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def cell: cell = "cell".asInstanceOf[cell]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def columnheader: columnheader = "columnheader".asInstanceOf[columnheader]
-  @scala.inline
-  def combobox: combobox = "combobox".asInstanceOf[combobox]
-  @scala.inline
-  def command: command = "command".asInstanceOf[command]
-  @scala.inline
-  def complementary: complementary = "complementary".asInstanceOf[complementary]
-  @scala.inline
-  def composite: composite = "composite".asInstanceOf[composite]
-  @scala.inline
-  def contentinfo: contentinfo = "contentinfo".asInstanceOf[contentinfo]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def definition: definition = "definition".asInstanceOf[definition]
-  @scala.inline
-  def dialog: dialog = "dialog".asInstanceOf[dialog]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def `doc-abstract`: `doc-abstract` = "doc-abstract".asInstanceOf[`doc-abstract`]
-  @scala.inline
-  def `doc-acknowledgments`: `doc-acknowledgments` = "doc-acknowledgments".asInstanceOf[`doc-acknowledgments`]
-  @scala.inline
-  def `doc-afterword`: `doc-afterword` = "doc-afterword".asInstanceOf[`doc-afterword`]
-  @scala.inline
-  def `doc-appendix`: `doc-appendix` = "doc-appendix".asInstanceOf[`doc-appendix`]
-  @scala.inline
-  def `doc-backlink`: `doc-backlink` = "doc-backlink".asInstanceOf[`doc-backlink`]
-  @scala.inline
-  def `doc-biblioentry`: `doc-biblioentry` = "doc-biblioentry".asInstanceOf[`doc-biblioentry`]
-  @scala.inline
-  def `doc-bibliography`: `doc-bibliography` = "doc-bibliography".asInstanceOf[`doc-bibliography`]
-  @scala.inline
-  def `doc-biblioref`: `doc-biblioref` = "doc-biblioref".asInstanceOf[`doc-biblioref`]
-  @scala.inline
-  def `doc-chapter`: `doc-chapter` = "doc-chapter".asInstanceOf[`doc-chapter`]
-  @scala.inline
-  def `doc-colophon`: `doc-colophon` = "doc-colophon".asInstanceOf[`doc-colophon`]
-  @scala.inline
-  def `doc-conclusion`: `doc-conclusion` = "doc-conclusion".asInstanceOf[`doc-conclusion`]
-  @scala.inline
-  def `doc-cover`: `doc-cover` = "doc-cover".asInstanceOf[`doc-cover`]
-  @scala.inline
-  def `doc-credit`: `doc-credit` = "doc-credit".asInstanceOf[`doc-credit`]
-  @scala.inline
-  def `doc-credits`: `doc-credits` = "doc-credits".asInstanceOf[`doc-credits`]
-  @scala.inline
-  def `doc-dedication`: `doc-dedication` = "doc-dedication".asInstanceOf[`doc-dedication`]
-  @scala.inline
-  def `doc-endnote`: `doc-endnote` = "doc-endnote".asInstanceOf[`doc-endnote`]
-  @scala.inline
-  def `doc-endnotes`: `doc-endnotes` = "doc-endnotes".asInstanceOf[`doc-endnotes`]
-  @scala.inline
-  def `doc-epigraph`: `doc-epigraph` = "doc-epigraph".asInstanceOf[`doc-epigraph`]
-  @scala.inline
-  def `doc-epilogue`: `doc-epilogue` = "doc-epilogue".asInstanceOf[`doc-epilogue`]
-  @scala.inline
-  def `doc-errata`: `doc-errata` = "doc-errata".asInstanceOf[`doc-errata`]
-  @scala.inline
-  def `doc-example`: `doc-example` = "doc-example".asInstanceOf[`doc-example`]
-  @scala.inline
-  def `doc-footnote`: `doc-footnote` = "doc-footnote".asInstanceOf[`doc-footnote`]
-  @scala.inline
-  def `doc-foreword`: `doc-foreword` = "doc-foreword".asInstanceOf[`doc-foreword`]
-  @scala.inline
-  def `doc-glossary`: `doc-glossary` = "doc-glossary".asInstanceOf[`doc-glossary`]
-  @scala.inline
-  def `doc-glossref`: `doc-glossref` = "doc-glossref".asInstanceOf[`doc-glossref`]
-  @scala.inline
-  def `doc-index`: `doc-index` = "doc-index".asInstanceOf[`doc-index`]
-  @scala.inline
-  def `doc-introduction`: `doc-introduction` = "doc-introduction".asInstanceOf[`doc-introduction`]
-  @scala.inline
-  def `doc-noteref`: `doc-noteref` = "doc-noteref".asInstanceOf[`doc-noteref`]
-  @scala.inline
-  def `doc-notice`: `doc-notice` = "doc-notice".asInstanceOf[`doc-notice`]
-  @scala.inline
-  def `doc-pagebreak`: `doc-pagebreak` = "doc-pagebreak".asInstanceOf[`doc-pagebreak`]
-  @scala.inline
-  def `doc-pagelist`: `doc-pagelist` = "doc-pagelist".asInstanceOf[`doc-pagelist`]
-  @scala.inline
-  def `doc-part`: `doc-part` = "doc-part".asInstanceOf[`doc-part`]
-  @scala.inline
-  def `doc-preface`: `doc-preface` = "doc-preface".asInstanceOf[`doc-preface`]
-  @scala.inline
-  def `doc-prologue`: `doc-prologue` = "doc-prologue".asInstanceOf[`doc-prologue`]
-  @scala.inline
-  def `doc-pullquote`: `doc-pullquote` = "doc-pullquote".asInstanceOf[`doc-pullquote`]
-  @scala.inline
-  def `doc-qna`: `doc-qna` = "doc-qna".asInstanceOf[`doc-qna`]
-  @scala.inline
-  def `doc-subtitle`: `doc-subtitle` = "doc-subtitle".asInstanceOf[`doc-subtitle`]
-  @scala.inline
-  def `doc-tip`: `doc-tip` = "doc-tip".asInstanceOf[`doc-tip`]
-  @scala.inline
-  def `doc-toc`: `doc-toc` = "doc-toc".asInstanceOf[`doc-toc`]
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
-  @scala.inline
-  def `false`: `false` = "false".asInstanceOf[`false`]
-  @scala.inline
-  def feed: feed = "feed".asInstanceOf[feed]
-  @scala.inline
-  def figure: figure = "figure".asInstanceOf[figure]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def grid: grid = "grid".asInstanceOf[grid]
-  @scala.inline
-  def gridcell: gridcell = "gridcell".asInstanceOf[gridcell]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def heading: heading = "heading".asInstanceOf[heading]
-  @scala.inline
-  def id: id = "id".asInstanceOf[id]
-  @scala.inline
-  def idlist: idlist = "idlist".asInstanceOf[idlist]
-  @scala.inline
-  def img: img = "img".asInstanceOf[img]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def landmark: landmark = "landmark".asInstanceOf[landmark]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def listbox: listbox = "listbox".asInstanceOf[listbox]
-  @scala.inline
-  def listitem: listitem = "listitem".asInstanceOf[listitem]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
-  @scala.inline
-  def main: main = "main".asInstanceOf[main]
-  @scala.inline
-  def marquee: marquee = "marquee".asInstanceOf[marquee]
-  @scala.inline
-  def math: math = "math".asInstanceOf[math]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def menubar: menubar = "menubar".asInstanceOf[menubar]
-  @scala.inline
-  def menuitem: menuitem = "menuitem".asInstanceOf[menuitem]
-  @scala.inline
-  def menuitemcheckbox: menuitemcheckbox = "menuitemcheckbox".asInstanceOf[menuitemcheckbox]
-  @scala.inline
-  def menuitemradio: menuitemradio = "menuitemradio".asInstanceOf[menuitemradio]
-  @scala.inline
-  def navigation: navigation = "navigation".asInstanceOf[navigation]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def note: note = "note".asInstanceOf[note]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def option: option = "option".asInstanceOf[option]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def presentation: presentation = "presentation".asInstanceOf[presentation]
-  @scala.inline
-  def progressbar: progressbar = "progressbar".asInstanceOf[progressbar]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def radiogroup: radiogroup = "radiogroup".asInstanceOf[radiogroup]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def region: region = "region".asInstanceOf[region]
-  @scala.inline
-  def roletype: roletype = "roletype".asInstanceOf[roletype]
-  @scala.inline
-  def row: row = "row".asInstanceOf[row]
-  @scala.inline
-  def rowgroup: rowgroup = "rowgroup".asInstanceOf[rowgroup]
-  @scala.inline
-  def rowheader: rowheader = "rowheader".asInstanceOf[rowheader]
-  @scala.inline
-  def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def searchbox: searchbox = "searchbox".asInstanceOf[searchbox]
-  @scala.inline
-  def section: section = "section".asInstanceOf[section]
-  @scala.inline
-  def sectionhead: sectionhead = "sectionhead".asInstanceOf[sectionhead]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
-  @scala.inline
-  def slider: slider = "slider".asInstanceOf[slider]
-  @scala.inline
-  def spinbutton: spinbutton = "spinbutton".asInstanceOf[spinbutton]
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
-  @scala.inline
-  def step: step = "step".asInstanceOf[step]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def structure: structure = "structure".asInstanceOf[structure]
-  @scala.inline
-  def switch: switch = "switch".asInstanceOf[switch]
-  @scala.inline
-  def tab: tab = "tab".asInstanceOf[tab]
-  @scala.inline
-  def table: table = "table".asInstanceOf[table]
-  @scala.inline
-  def tablist: tablist = "tablist".asInstanceOf[tablist]
-  @scala.inline
-  def tabpanel: tabpanel = "tabpanel".asInstanceOf[tabpanel]
-  @scala.inline
-  def term: term = "term".asInstanceOf[term]
-  @scala.inline
-  def textbox: textbox = "textbox".asInstanceOf[textbox]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def timer: timer = "timer".asInstanceOf[timer]
-  @scala.inline
-  def token: token = "token".asInstanceOf[token]
-  @scala.inline
-  def tokenlist: tokenlist = "tokenlist".asInstanceOf[tokenlist]
-  @scala.inline
-  def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
-  @scala.inline
-  def tooltip: tooltip = "tooltip".asInstanceOf[tooltip]
-  @scala.inline
-  def tree: tree = "tree".asInstanceOf[tree]
-  @scala.inline
-  def treegrid: treegrid = "treegrid".asInstanceOf[treegrid]
-  @scala.inline
-  def treeitem: treeitem = "treeitem".asInstanceOf[treeitem]
-  @scala.inline
-  def tristate: tristate = "tristate".asInstanceOf[tristate]
-  @scala.inline
-  def `true`: `true` = "true".asInstanceOf[`true`]
-  @scala.inline
-  def widget: widget = "widget".asInstanceOf[widget]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+    extends StObject
+       with ARIAAbstractRole
+  inline def window: window = "window".asInstanceOf[window]
 }
-

@@ -10,10 +10,10 @@ Use property paths like 'a.b.c' to get a nested value from an object. Even works
 | ------------------ | :-------------: |
 | Full name          | get-value |
 | Keywords           | get, key, nested, object, path, paths, prop, properties, property, props, segment, value, values |
-| # releases         | 3 |
-| # dependents       | 223 |
-| # downloads        | 422113466 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.236681633333333E7 |
+| # stars            | 212.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/get-value)

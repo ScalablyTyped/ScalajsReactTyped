@@ -1,56 +1,48 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CalculationState extends js.Object
-
+sealed trait CalculationState extends StObject
 /**
-  *
   * Represents the state of calculation across the entire Excel application.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.CalculationState")
 @js.native
-object CalculationState extends js.Object {
+object CalculationState extends StObject {
+  
   /**
-    *
     * Calculations in progress.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait calculating extends CalculationState
+  sealed trait calculating
+    extends StObject
+       with CalculationState
   
   /**
-    *
     * Calculations complete.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait done extends CalculationState
+  sealed trait done
+    extends StObject
+       with CalculationState
   
   /**
-    *
     * Changes that trigger calculation have been made, but a recalculation has not yet been performed.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait pending extends CalculationState
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[CalculationState with String] = js.native
-  /* "Calculating" */ @js.native
-  object calculating extends TopLevel[calculating with String]
-  
-  /* "Done" */ @js.native
-  object done extends TopLevel[done with String]
-  
-  /* "Pending" */ @js.native
-  object pending extends TopLevel[pending with String]
-  
+  sealed trait pending
+    extends StObject
+       with CalculationState
 }
-

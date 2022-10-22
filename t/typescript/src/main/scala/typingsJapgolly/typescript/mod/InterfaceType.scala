@@ -1,20 +1,25 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InterfaceType extends ObjectType {
+trait InterfaceType
+  extends StObject
+     with ObjectType {
+  
   var localTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
+  
   var outerTypeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
+  
   var thisType: js.UndefOr[TypeParameter] = js.undefined
+  
   var typeParameters: js.UndefOr[js.Array[TypeParameter]] = js.undefined
 }
-
 object InterfaceType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     flags: TypeFlags,
     getApparentProperties: CallbackTo[js.Array[Symbol]],
     getBaseTypes: CallbackTo[js.UndefOr[js.Array[BaseType]]],
@@ -26,11 +31,12 @@ object InterfaceType {
     getNonNullableType: CallbackTo[Type],
     getNumberIndexType: CallbackTo[js.UndefOr[Type]],
     getProperties: CallbackTo[js.Array[Symbol]],
-    getProperty: java.lang.String => CallbackTo[js.UndefOr[Symbol]],
+    getProperty: java.lang.String => js.UndefOr[Symbol],
     getStringIndexType: CallbackTo[js.UndefOr[Type]],
     getSymbol: CallbackTo[js.UndefOr[Symbol]],
     isClass: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
     isClassOrInterface: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
+    isIndexType: CallbackTo[/* is typescript.typescript.IndexType */ Boolean],
     isIntersection: CallbackTo[/* is typescript.typescript.IntersectionType */ Boolean],
     isLiteral: CallbackTo[/* is typescript.typescript.LiteralType */ Boolean],
     isNumberLiteral: CallbackTo[/* is typescript.typescript.NumberLiteralType */ Boolean],
@@ -39,46 +45,34 @@ object InterfaceType {
     isUnion: CallbackTo[/* is typescript.typescript.UnionType */ Boolean],
     isUnionOrIntersection: CallbackTo[/* is typescript.typescript.UnionOrIntersectionType */ Boolean],
     objectFlags: ObjectFlags,
-    symbol: Symbol,
-    aliasSymbol: Symbol = null,
-    aliasTypeArguments: js.Array[Type] = null,
-    localTypeParameters: js.Array[TypeParameter] = null,
-    outerTypeParameters: js.Array[TypeParameter] = null,
-    pattern: DestructuringPattern = null,
-    thisType: TypeParameter = null,
-    typeParameters: js.Array[TypeParameter] = null
+    symbol: Symbol
   ): InterfaceType = {
-    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-    __obj.updateDynamic("getApparentProperties")(getApparentProperties.toJsFn)
-    __obj.updateDynamic("getBaseTypes")(getBaseTypes.toJsFn)
-    __obj.updateDynamic("getCallSignatures")(getCallSignatures.toJsFn)
-    __obj.updateDynamic("getConstraint")(getConstraint.toJsFn)
-    __obj.updateDynamic("getConstructSignatures")(getConstructSignatures.toJsFn)
-    __obj.updateDynamic("getDefault")(getDefault.toJsFn)
-    __obj.updateDynamic("getFlags")(getFlags.toJsFn)
-    __obj.updateDynamic("getNonNullableType")(getNonNullableType.toJsFn)
-    __obj.updateDynamic("getNumberIndexType")(getNumberIndexType.toJsFn)
-    __obj.updateDynamic("getProperties")(getProperties.toJsFn)
-    __obj.updateDynamic("getProperty")(js.Any.fromFunction1((t0: java.lang.String) => getProperty(t0).runNow()))
-    __obj.updateDynamic("getStringIndexType")(getStringIndexType.toJsFn)
-    __obj.updateDynamic("getSymbol")(getSymbol.toJsFn)
-    __obj.updateDynamic("isClass")(isClass.toJsFn)
-    __obj.updateDynamic("isClassOrInterface")(isClassOrInterface.toJsFn)
-    __obj.updateDynamic("isIntersection")(isIntersection.toJsFn)
-    __obj.updateDynamic("isLiteral")(isLiteral.toJsFn)
-    __obj.updateDynamic("isNumberLiteral")(isNumberLiteral.toJsFn)
-    __obj.updateDynamic("isStringLiteral")(isStringLiteral.toJsFn)
-    __obj.updateDynamic("isTypeParameter")(isTypeParameter.toJsFn)
-    __obj.updateDynamic("isUnion")(isUnion.toJsFn)
-    __obj.updateDynamic("isUnionOrIntersection")(isUnionOrIntersection.toJsFn)
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
-    if (localTypeParameters != null) __obj.updateDynamic("localTypeParameters")(localTypeParameters.asInstanceOf[js.Any])
-    if (outerTypeParameters != null) __obj.updateDynamic("outerTypeParameters")(outerTypeParameters.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    if (thisType != null) __obj.updateDynamic("thisType")(thisType.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], getApparentProperties = getApparentProperties.toJsFn, getBaseTypes = getBaseTypes.toJsFn, getCallSignatures = getCallSignatures.toJsFn, getConstraint = getConstraint.toJsFn, getConstructSignatures = getConstructSignatures.toJsFn, getDefault = getDefault.toJsFn, getFlags = getFlags.toJsFn, getNonNullableType = getNonNullableType.toJsFn, getNumberIndexType = getNumberIndexType.toJsFn, getProperties = getProperties.toJsFn, getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = getStringIndexType.toJsFn, getSymbol = getSymbol.toJsFn, isClass = isClass.toJsFn, isClassOrInterface = isClassOrInterface.toJsFn, isIndexType = isIndexType.toJsFn, isIntersection = isIntersection.toJsFn, isLiteral = isLiteral.toJsFn, isNumberLiteral = isNumberLiteral.toJsFn, isStringLiteral = isStringLiteral.toJsFn, isTypeParameter = isTypeParameter.toJsFn, isUnion = isUnion.toJsFn, isUnionOrIntersection = isUnionOrIntersection.toJsFn, objectFlags = objectFlags.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterfaceType]
   }
+  
+  extension [Self <: InterfaceType](x: Self) {
+    
+    inline def setLocalTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "localTypeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setLocalTypeParametersUndefined: Self = StObject.set(x, "localTypeParameters", js.undefined)
+    
+    inline def setLocalTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "localTypeParameters", js.Array(value*))
+    
+    inline def setOuterTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "outerTypeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setOuterTypeParametersUndefined: Self = StObject.set(x, "outerTypeParameters", js.undefined)
+    
+    inline def setOuterTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "outerTypeParameters", js.Array(value*))
+    
+    inline def setThisType(value: TypeParameter): Self = StObject.set(x, "thisType", value.asInstanceOf[js.Any])
+    
+    inline def setThisTypeUndefined: Self = StObject.set(x, "thisType", js.undefined)
+    
+    inline def setTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    
+    inline def setTypeParametersVarargs(value: TypeParameter*): Self = StObject.set(x, "typeParameters", js.Array(value*))
+  }
 }
-

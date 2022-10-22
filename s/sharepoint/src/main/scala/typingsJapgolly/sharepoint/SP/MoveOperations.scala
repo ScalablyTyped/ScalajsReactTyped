@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MoveOperations extends js.Object
-
+sealed trait MoveOperations extends StObject
 @JSGlobal("SP.MoveOperations")
 @js.native
-object MoveOperations extends js.Object {
-  @js.native
-  sealed trait allowBrokenThickets extends MoveOperations
+object MoveOperations extends StObject {
   
   @js.native
-  sealed trait bypassApprovePermission extends MoveOperations
+  sealed trait allowBrokenThickets
+    extends StObject
+       with MoveOperations
   
   @js.native
-  sealed trait none extends MoveOperations
+  sealed trait bypassApprovePermission
+    extends StObject
+       with MoveOperations
   
   @js.native
-  sealed trait overwrite extends MoveOperations
+  sealed trait none
+    extends StObject
+       with MoveOperations
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MoveOperations with Double] = js.native
-  /* 2 */ @js.native
-  object allowBrokenThickets extends TopLevel[allowBrokenThickets with Double]
-  
-  /* 3 */ @js.native
-  object bypassApprovePermission extends TopLevel[bypassApprovePermission with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object overwrite extends TopLevel[overwrite with Double]
-  
+  @js.native
+  sealed trait overwrite
+    extends StObject
+       with MoveOperations
 }
-

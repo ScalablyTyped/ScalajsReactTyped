@@ -1,60 +1,86 @@
 package typingsJapgolly.ol
 
-import typingsJapgolly.ol.groupMod.Options
-import typingsJapgolly.ol.groupMod.default
+import typingsJapgolly.ol.layerGraticuleMod.Options
+import typingsJapgolly.ol.layerGraticuleMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/layer", JSImport.Namespace)
-@js.native
-object layerMod extends js.Object {
+object layerMod {
+  
+  @JSImport("ol/layer", "Graticule")
   @js.native
-  class Group () extends default {
+  open class Graticule () extends default {
     def this(opt_options: Options) = this()
   }
   
+  @JSImport("ol/layer", "Group")
   @js.native
-  class Heatmap ()
-    extends typingsJapgolly.ol.heatmapMod.default {
-    def this(opt_options: typingsJapgolly.ol.heatmapMod.Options) = this()
+  open class Group ()
+    extends typingsJapgolly.ol.layerGroupMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerGroupMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "Heatmap")
   @js.native
-  class Image ()
-    extends typingsJapgolly.ol.imageMod.default {
-    def this(opt_options: typingsJapgolly.ol.baseImageMod.Options) = this()
+  open class Heatmap ()
+    extends typingsJapgolly.ol.layerHeatmapMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerHeatmapMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "Image")
   @js.native
-  class Layer[SourceType /* <: typingsJapgolly.ol.sourceSourceMod.default */] protected ()
+  open class Image ()
+    extends typingsJapgolly.ol.layerImageMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerBaseImageMod.Options) = this()
+  }
+  
+  @JSImport("ol/layer", "Layer")
+  @js.native
+  open class Layer[SourceType /* <: typingsJapgolly.ol.sourceSourceMod.default */] protected ()
     extends typingsJapgolly.ol.layerLayerMod.default[SourceType] {
     def this(options: typingsJapgolly.ol.layerLayerMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "MapboxVector")
   @js.native
-  class Tile ()
-    extends typingsJapgolly.ol.tileMod.default {
-    def this(opt_options: typingsJapgolly.ol.baseTileMod.Options) = this()
+  open class MapboxVector protected ()
+    extends typingsJapgolly.ol.layerMapboxVectorMod.default {
+    def this(options: typingsJapgolly.ol.layerMapboxVectorMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "Tile")
   @js.native
-  class Vector ()
-    extends typingsJapgolly.ol.vectorMod.default {
-    def this(opt_options: typingsJapgolly.ol.baseVectorMod.Options) = this()
+  open class Tile ()
+    extends typingsJapgolly.ol.layerTileMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerBaseTileMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "Vector")
   @js.native
-  class VectorImage ()
-    extends typingsJapgolly.ol.vectorImageMod.default {
-    def this(opt_options: typingsJapgolly.ol.vectorImageMod.Options) = this()
+  open class Vector ()
+    extends typingsJapgolly.ol.layerVectorMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerBaseVectorMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "VectorImage")
   @js.native
-  class VectorTile ()
-    extends typingsJapgolly.ol.vectorTileMod.default {
-    def this(opt_options: typingsJapgolly.ol.vectorTileMod.Options) = this()
+  open class VectorImage ()
+    extends typingsJapgolly.ol.layerVectorImageMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerVectorImageMod.Options) = this()
   }
   
+  @JSImport("ol/layer", "VectorTile")
+  @js.native
+  open class VectorTile ()
+    extends typingsJapgolly.ol.layerVectorTileMod.default {
+    def this(opt_options: typingsJapgolly.ol.layerVectorTileMod.Options) = this()
+  }
+  
+  @JSImport("ol/layer", "WebGLPoints")
+  @js.native
+  open class WebGLPoints protected ()
+    extends typingsJapgolly.ol.layerWebGLPointsMod.default {
+    def this(options: typingsJapgolly.ol.layerWebGLPointsMod.Options) = this()
+  }
 }
-

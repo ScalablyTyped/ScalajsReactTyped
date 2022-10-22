@@ -1,50 +1,47 @@
 package typingsJapgolly.socks
 
-import typingsJapgolly.socks.constantsMod.SocksCommandOption
+import typingsJapgolly.socks.typingsCommonConstantsMod.SocksCommandOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socksStrings {
-  @js.native
-  sealed trait associate extends SocksCommandOption
   
   @js.native
-  sealed trait bind extends SocksCommandOption
+  sealed trait associate
+    extends StObject
+       with SocksCommandOption
+  inline def associate: associate = "associate".asInstanceOf[associate]
   
   @js.native
-  sealed trait bound extends js.Object
+  sealed trait bind
+    extends StObject
+       with SocksCommandOption
+  inline def bind: bind = "bind".asInstanceOf[bind]
   
   @js.native
-  sealed trait connect extends SocksCommandOption
+  sealed trait bound extends StObject
+  inline def bound: bound = "bound".asInstanceOf[bound]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait connect
+    extends StObject
+       with SocksCommandOption
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait established extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait host extends js.Object
+  sealed trait established extends StObject
+  inline def established: established = "established".asInstanceOf[established]
   
   @js.native
-  sealed trait ipaddress extends js.Object
+  sealed trait host extends StObject
+  inline def host: host = "host".asInstanceOf[host]
   
-  @scala.inline
-  def associate: associate = "associate".asInstanceOf[associate]
-  @scala.inline
-  def bind: bind = "bind".asInstanceOf[bind]
-  @scala.inline
-  def bound: bound = "bound".asInstanceOf[bound]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def established: established = "established".asInstanceOf[established]
-  @scala.inline
-  def host: host = "host".asInstanceOf[host]
-  @scala.inline
-  def ipaddress: ipaddress = "ipaddress".asInstanceOf[ipaddress]
+  @js.native
+  sealed trait ipaddress extends StObject
+  inline def ipaddress: ipaddress = "ipaddress".asInstanceOf[ipaddress]
 }
-

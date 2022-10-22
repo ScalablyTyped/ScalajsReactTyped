@@ -1,20 +1,28 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait License extends js.Object {
+trait License extends StObject {
+  
   var name: String
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object License {
-  @scala.inline
-  def apply(name: String, url: String = null): License = {
+  
+  inline def apply(name: String): License = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[License]
   }
+  
+  extension [Self <: License](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

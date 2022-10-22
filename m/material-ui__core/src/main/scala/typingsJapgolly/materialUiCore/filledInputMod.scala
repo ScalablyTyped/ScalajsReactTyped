@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.filledInputFilledInputMod.FilledInputProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/FilledInput", JSImport.Namespace)
-@js.native
-object filledInputMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[FilledInputProps, ComponentState, js.Any] {
-    def this(props: FilledInputProps) = this()
-    def this(props: FilledInputProps, context: js.Any) = this()
-  }
+object filledInputMod {
   
+  @JSImport("@material-ui/core/FilledInput", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[FilledInputProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: FilledInputProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

@@ -1,20 +1,22 @@
 package typingsJapgolly.formatUnicorn
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait String extends js.Object {
+trait String extends StObject {
+  
   def formatUnicorn(replacements: js.Object): java.lang.String
 }
-
 object String {
-  @scala.inline
-  def apply(formatUnicorn: js.Object => CallbackTo[java.lang.String]): String = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("formatUnicorn")(js.Any.fromFunction1((t0: js.Object) => formatUnicorn(t0).runNow()))
+  
+  inline def apply(formatUnicorn: js.Object => java.lang.String): String = {
+    val __obj = js.Dynamic.literal(formatUnicorn = js.Any.fromFunction1(formatUnicorn))
     __obj.asInstanceOf[String]
   }
+  
+  extension [Self <: String](x: Self) {
+    
+    inline def setFormatUnicorn(value: js.Object => java.lang.String): Self = StObject.set(x, "formatUnicorn", js.Any.fromFunction1(value))
+  }
 }
-

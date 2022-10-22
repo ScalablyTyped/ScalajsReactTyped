@@ -1,53 +1,88 @@
 package typingsJapgolly.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StripeCardTokenData extends js.Object {
+trait StripeCardTokenData extends StObject {
+  
   var address_city: js.UndefOr[String] = js.undefined
+  
   var address_country: js.UndefOr[String] = js.undefined
+  
   var address_line1: js.UndefOr[String] = js.undefined
+  
   var address_line2: js.UndefOr[String] = js.undefined
+  
   var address_state: js.UndefOr[String] = js.undefined
+  
   var address_zip: js.UndefOr[String] = js.undefined
+  
   var cvc: js.UndefOr[String] = js.undefined
+  
   var exp: js.UndefOr[String] = js.undefined
+  
   var exp_month: js.UndefOr[Double] = js.undefined
+  
   var exp_year: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var number: String
 }
-
 object StripeCardTokenData {
-  @scala.inline
-  def apply(
-    number: String,
-    address_city: String = null,
-    address_country: String = null,
-    address_line1: String = null,
-    address_line2: String = null,
-    address_state: String = null,
-    address_zip: String = null,
-    cvc: String = null,
-    exp: String = null,
-    exp_month: Int | Double = null,
-    exp_year: Int | Double = null,
-    name: String = null
-  ): StripeCardTokenData = {
+  
+  inline def apply(number: String): StripeCardTokenData = {
     val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    if (address_city != null) __obj.updateDynamic("address_city")(address_city.asInstanceOf[js.Any])
-    if (address_country != null) __obj.updateDynamic("address_country")(address_country.asInstanceOf[js.Any])
-    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1.asInstanceOf[js.Any])
-    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2.asInstanceOf[js.Any])
-    if (address_state != null) __obj.updateDynamic("address_state")(address_state.asInstanceOf[js.Any])
-    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip.asInstanceOf[js.Any])
-    if (cvc != null) __obj.updateDynamic("cvc")(cvc.asInstanceOf[js.Any])
-    if (exp != null) __obj.updateDynamic("exp")(exp.asInstanceOf[js.Any])
-    if (exp_month != null) __obj.updateDynamic("exp_month")(exp_month.asInstanceOf[js.Any])
-    if (exp_year != null) __obj.updateDynamic("exp_year")(exp_year.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripeCardTokenData]
   }
+  
+  extension [Self <: StripeCardTokenData](x: Self) {
+    
+    inline def setAddress_city(value: String): Self = StObject.set(x, "address_city", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_cityUndefined: Self = StObject.set(x, "address_city", js.undefined)
+    
+    inline def setAddress_country(value: String): Self = StObject.set(x, "address_country", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_countryUndefined: Self = StObject.set(x, "address_country", js.undefined)
+    
+    inline def setAddress_line1(value: String): Self = StObject.set(x, "address_line1", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_line1Undefined: Self = StObject.set(x, "address_line1", js.undefined)
+    
+    inline def setAddress_line2(value: String): Self = StObject.set(x, "address_line2", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_line2Undefined: Self = StObject.set(x, "address_line2", js.undefined)
+    
+    inline def setAddress_state(value: String): Self = StObject.set(x, "address_state", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_stateUndefined: Self = StObject.set(x, "address_state", js.undefined)
+    
+    inline def setAddress_zip(value: String): Self = StObject.set(x, "address_zip", value.asInstanceOf[js.Any])
+    
+    inline def setAddress_zipUndefined: Self = StObject.set(x, "address_zip", js.undefined)
+    
+    inline def setCvc(value: String): Self = StObject.set(x, "cvc", value.asInstanceOf[js.Any])
+    
+    inline def setCvcUndefined: Self = StObject.set(x, "cvc", js.undefined)
+    
+    inline def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    
+    inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+    
+    inline def setExp_month(value: Double): Self = StObject.set(x, "exp_month", value.asInstanceOf[js.Any])
+    
+    inline def setExp_monthUndefined: Self = StObject.set(x, "exp_month", js.undefined)
+    
+    inline def setExp_year(value: Double): Self = StObject.set(x, "exp_year", value.asInstanceOf[js.Any])
+    
+    inline def setExp_yearUndefined: Self = StObject.set(x, "exp_year", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+  }
 }
-

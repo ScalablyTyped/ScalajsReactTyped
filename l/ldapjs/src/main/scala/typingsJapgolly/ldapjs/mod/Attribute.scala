@@ -1,16 +1,22 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.ldapjs.anon.Type
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "Attribute")
 @js.native
-class Attribute () extends js.Object {
+open class Attribute () extends StObject {
+  def this(options: Type) = this()
+  
   val buffers: js.Array[Buffer] = js.native
+  
   val json: AttributeJson = js.native
-  var `type`: String = js.native
+  
+  val `type`: String = js.native
+  
   /**
     *  Array of string values, binaries are represented in base64.
     *  get: When reading it always returns an array of strings.
@@ -19,12 +25,14 @@ class Attribute () extends js.Object {
     */
   var vals: String | js.Array[String] = js.native
 }
-
 /* static members */
-@JSImport("ldapjs", "Attribute")
-@js.native
-object Attribute extends js.Object {
-  def compare(a: Attribute, b: Attribute): Double = js.native
-  def isAttribute(`object`: js.Any): /* is ldapjs.ldapjs.Attribute */ Boolean = js.native
+object Attribute {
+  
+  @JSImport("ldapjs", "Attribute")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def compare(a: Attribute, b: Attribute): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def isAttribute(`object`: Any): /* is ldapjs.ldapjs.Attribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAttribute")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is ldapjs.ldapjs.Attribute */ Boolean]
 }
-

@@ -1,23 +1,80 @@
 package typingsJapgolly.vexflow.mod.Flow
 
-import typingsJapgolly.vexflow.AnonStemdirection
+import typingsJapgolly.vexflow.Vex.IRenderContext
+import typingsJapgolly.vexflow.anon.BaseY
+import typingsJapgolly.vexflow.anon.FillStyle_
+import typingsJapgolly.vexflow.anon.Stemdirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Stem")
 @js.native
-class Stem protected ()
-  extends typingsJapgolly.vexflow.Vex.Flow.Stem {
-  def this(options: AnonStemdirection) = this()
+open class Stem protected ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.Flow.Stem {
+  def this(options: Stemdirection) = this()
+  
+  /* CompleteClass */
+  override def applyStyle(context: IRenderContext): typingsJapgolly.vexflow.Vex.Flow.Stem = js.native
+  
+  /* CompleteClass */
+  override def draw(): Unit = js.native
+  
+  /* CompleteClass */
+  override def getBoundingBox(): typingsJapgolly.vexflow.Vex.Flow.BoundingBox = js.native
+  
+  /* CompleteClass */
+  override def getCategory(): String = js.native
+  
+  /* CompleteClass */
+  override def getExtents(): BaseY = js.native
+  
+  /* CompleteClass */
+  override def getHeight(): Double = js.native
+  
+  /* CompleteClass */
+  override def getStyle(): FillStyle_ = js.native
+  
+  //inconsistent API: this should be set via the options object in the constructor
+  /* CompleteClass */
+  var hide: Boolean = js.native
+  
+  /* CompleteClass */
+  override def setContext(context: IRenderContext): typingsJapgolly.vexflow.Vex.Flow.Stem = js.native
+  
+  /* CompleteClass */
+  override def setDirection(direction: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def setExtension(`extension`: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def setNoteHeadXBounds(x_begin: Double, x_end: Double): typingsJapgolly.vexflow.Vex.Flow.Stem = js.native
+  
+  /* CompleteClass */
+  override def setStyle(style: FillStyle_): Unit = js.native
+  
+  /* CompleteClass */
+  override def setYBounds(y_top: Double, y_bottom: Double): Unit = js.native
 }
-
-/* static members */
-@JSImport("vexflow", "Flow.Stem")
-@js.native
-object Stem extends js.Object {
-  var DEBUG: Boolean = js.native
+object Stem {
+  
+  @JSImport("vexflow", "Flow.Stem")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("vexflow", "Flow.Stem.DEBUG")
+  @js.native
+  def DEBUG: Boolean = js.native
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  
+  @JSImport("vexflow", "Flow.Stem.DOWN")
+  @js.native
   val DOWN: Double = js.native
+  
+  @JSImport("vexflow", "Flow.Stem.UP")
+  @js.native
   val UP: Double = js.native
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Common functionaliy between {@link TextTrackList}, {@link AudioTrackList}, and
@@ -11,12 +11,10 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait TrackList
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with /* index */ NumberDictionary[Track] {
-  /**
-    * The current number of `Track`s in the this Trackist.
-    */
-  var length: Double = js.native
+  
   /**
     * Add a {@link Track} to the `TrackList`
     *
@@ -26,6 +24,12 @@ trait TrackList
     * @fires TrackList#addtrack
     */
   def addTrack(track: Track): Unit = js.native
+  
+  /**
+    * The current number of `Track`s in the this Trackist.
+    */
+  var length: Double = js.native
+  
   /**
     * Remove a {@link Track} from the `TrackList`
     *
@@ -36,4 +40,3 @@ trait TrackList
     */
   def removeTrack(track: Track): Unit = js.native
 }
-

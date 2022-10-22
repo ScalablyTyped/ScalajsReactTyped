@@ -1,24 +1,33 @@
 package typingsJapgolly.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Class and confidence. */
-trait ClassifiedClass extends js.Object {
+trait ClassifiedClass extends StObject {
+  
   /** Class label. */
   var class_name: js.UndefOr[String] = js.undefined
+  
   /** A decimal percentage that represents the confidence that Watson has in this class. Higher values represent higher confidences. */
   var confidence: js.UndefOr[Double] = js.undefined
 }
-
 object ClassifiedClass {
-  @scala.inline
-  def apply(class_name: String = null, confidence: Int | Double = null): ClassifiedClass = {
+  
+  inline def apply(): ClassifiedClass = {
     val __obj = js.Dynamic.literal()
-    if (class_name != null) __obj.updateDynamic("class_name")(class_name.asInstanceOf[js.Any])
-    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifiedClass]
   }
+  
+  extension [Self <: ClassifiedClass](x: Self) {
+    
+    inline def setClass_name(value: String): Self = StObject.set(x, "class_name", value.asInstanceOf[js.Any])
+    
+    inline def setClass_nameUndefined: Self = StObject.set(x, "class_name", js.undefined)
+    
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+  }
 }
-

@@ -10,10 +10,10 @@ node-ral with mcpack and nshead
 | ------------------ | :-------------: |
 | Full name          | yog-ral |
 | Keywords           | ral |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 3132 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 176.33333333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/yog-ral)

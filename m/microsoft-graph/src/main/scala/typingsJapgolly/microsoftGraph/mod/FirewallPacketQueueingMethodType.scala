@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueOutbound
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueBoth
 */
-trait FirewallPacketQueueingMethodType extends js.Object
-
+trait FirewallPacketQueueingMethodType extends StObject
 object FirewallPacketQueueingMethodType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = this.cast("deviceDefault")
-  @scala.inline
-  def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def queueBoth: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueBoth = this.cast("queueBoth")
-  @scala.inline
-  def queueInbound: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueInbound = this.cast("queueInbound")
-  @scala.inline
-  def queueOutbound: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueOutbound = this.cast("queueOutbound")
+  
+  inline def deviceDefault: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault = "deviceDefault".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceDefault]
+  
+  inline def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled]
+  
+  inline def queueBoth: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueBoth = "queueBoth".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueBoth]
+  
+  inline def queueInbound: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueInbound = "queueInbound".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueInbound]
+  
+  inline def queueOutbound: typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueOutbound = "queueOutbound".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.queueOutbound]
 }
-

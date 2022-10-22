@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnDomainNameType extends js.Object
-
+sealed trait VpnDomainNameType extends StObject
 /** Describes whether a name is a domain name suffix or a fully qualified domain name. */
 @JSGlobal("Windows.Networking.Vpn.VpnDomainNameType")
 @js.native
-object VpnDomainNameType extends js.Object {
+object VpnDomainNameType extends StObject {
+  
   /** Fully qualified domain name (FQDN) */
   @js.native
-  sealed trait fullyQualified extends VpnDomainNameType
+  sealed trait fullyQualified
+    extends StObject
+       with VpnDomainNameType
   
   /** Reserved */
   @js.native
-  sealed trait reserved extends VpnDomainNameType
+  sealed trait reserved
+    extends StObject
+       with VpnDomainNameType
   
   /** Domain name suffix */
   @js.native
-  sealed trait suffix extends VpnDomainNameType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnDomainNameType with Double] = js.native
-  /* 1 */ @js.native
-  object fullyQualified extends TopLevel[fullyQualified with Double]
-  
-  /* 2 */ @js.native
-  object reserved extends TopLevel[reserved with Double]
-  
-  /* 0 */ @js.native
-  object suffix extends TopLevel[suffix with Double]
-  
+  sealed trait suffix
+    extends StObject
+       with VpnDomainNameType
 }
-

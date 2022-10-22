@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CalculatedColumn extends js.Object {
+trait CalculatedColumn extends StObject {
+  
   // For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
-  var format: js.UndefOr[String] = js.undefined
+  var format: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The formula used to compute the value for this column.
-  var formula: js.UndefOr[String] = js.undefined
+  var formula: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
-  var outputType: js.UndefOr[String] = js.undefined
+  var outputType: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object CalculatedColumn {
-  @scala.inline
-  def apply(format: String = null, formula: String = null, outputType: String = null): CalculatedColumn = {
+  
+  inline def apply(): CalculatedColumn = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (outputType != null) __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalculatedColumn]
   }
+  
+  extension [Self <: CalculatedColumn](x: Self) {
+    
+    inline def setFormat(value: NullableOption[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatNull: Self = StObject.set(x, "format", null)
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setFormula(value: NullableOption[String]): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaNull: Self = StObject.set(x, "formula", null)
+    
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    
+    inline def setOutputType(value: NullableOption[String]): Self = StObject.set(x, "outputType", value.asInstanceOf[js.Any])
+    
+    inline def setOutputTypeNull: Self = StObject.set(x, "outputType", null)
+    
+    inline def setOutputTypeUndefined: Self = StObject.set(x, "outputType", js.undefined)
+  }
 }
-

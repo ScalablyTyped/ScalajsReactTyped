@@ -1,72 +1,63 @@
 package typingsJapgolly.higButton.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.higButton.mod.AvailableTargets_
 import typingsJapgolly.higButton.mod.AvailableTypes_
 import typingsJapgolly.higButton.mod.AvailableWidths_
 import typingsJapgolly.higButton.mod.Props
 import typingsJapgolly.higButton.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Button {
-  def apply(
-    title: String,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: VdomElement = null,
-    link: String = null,
-    onBlur: js.UndefOr[Callback] = js.undefined,
-    onClick: js.UndefOr[Callback] = js.undefined,
-    onFocus: js.UndefOr[Callback] = js.undefined,
-    onHover: js.UndefOr[Callback] = js.undefined,
-    onMouseDown: js.UndefOr[Callback] = js.undefined,
-    onMouseEnter: js.UndefOr[Callback] = js.undefined,
-    onMouseLeave: js.UndefOr[Callback] = js.undefined,
-    onMouseUp: js.UndefOr[Callback] = js.undefined,
-    stylesheet: js.Any = null,
-    target: AvailableTargets_ = null,
-    `type`: AvailableTypes_ = null,
-    width: AvailableWidths_ = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawElement.asInstanceOf[js.Any])
-    if (link != null) __obj.updateDynamic("link")(link.asInstanceOf[js.Any])
-    onBlur.foreach(p => __obj.updateDynamic("onBlur")(p.toJsFn))
-    onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
-    onFocus.foreach(p => __obj.updateDynamic("onFocus")(p.toJsFn))
-    onHover.foreach(p => __obj.updateDynamic("onHover")(p.toJsFn))
-    onMouseDown.foreach(p => __obj.updateDynamic("onMouseDown")(p.toJsFn))
-    onMouseEnter.foreach(p => __obj.updateDynamic("onMouseEnter")(p.toJsFn))
-    onMouseLeave.foreach(p => __obj.updateDynamic("onMouseLeave")(p.toJsFn))
-    onMouseUp.foreach(p => __obj.updateDynamic("onMouseUp")(p.toJsFn))
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.higButton.mod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.higButton.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.higButton.mod.Props])(children: _*)
+  inline def apply(title: String): Builder = {
+    val __props = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props]))
   }
+  
   @JSImport("@hig/button", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def link(value: String): this.type = set("link", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: Callback): this.type = set("onBlur", value.toJsFn)
+    
+    inline def onClick(value: Callback): this.type = set("onClick", value.toJsFn)
+    
+    inline def onFocus(value: Callback): this.type = set("onFocus", value.toJsFn)
+    
+    inline def onHover(value: Callback): this.type = set("onHover", value.toJsFn)
+    
+    inline def onMouseDown(value: Callback): this.type = set("onMouseDown", value.toJsFn)
+    
+    inline def onMouseEnter(value: Callback): this.type = set("onMouseEnter", value.toJsFn)
+    
+    inline def onMouseLeave(value: Callback): this.type = set("onMouseLeave", value.toJsFn)
+    
+    inline def onMouseUp(value: Callback): this.type = set("onMouseUp", value.toJsFn)
+    
+    inline def stylesheet(value: Any): this.type = set("stylesheet", value.asInstanceOf[js.Any])
+    
+    inline def target(value: AvailableTargets_): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: AvailableTypes_): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def width(value: AvailableWidths_): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

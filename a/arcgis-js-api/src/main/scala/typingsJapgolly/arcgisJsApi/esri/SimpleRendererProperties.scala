@@ -1,18 +1,21 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait SimpleRendererProperties
-  extends RendererProperties
+  extends StObject
+     with RendererProperties
      with VisualVariablesMixinProperties {
+  
   /**
-    * The label for the renderer. This describes what features with the given [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol) represent in the real world. This will display next to the layer's [symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#symbol) inside the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widget.  This text is not displayed in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) when [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables) are used. When the renderer contains [visualVariables](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#visualVariables), you should set the `title` property in `legendOptions` on each visual variable to describe the visualization.
+    * The label for the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-SimpleRenderer.html#label)
     */
   var label: js.UndefOr[String] = js.undefined
+  
   /**
     * The symbol used by the renderer to visualize all features in the layer.
     *
@@ -20,21 +23,21 @@ trait SimpleRendererProperties
     */
   var symbol: js.UndefOr[SymbolProperties] = js.undefined
 }
-
 object SimpleRendererProperties {
-  @scala.inline
-  def apply(
-    authoringInfo: AuthoringInfoProperties = null,
-    label: String = null,
-    symbol: SymbolProperties = null,
-    visualVariables: js.Array[VisualVariableProperties] = null
-  ): SimpleRendererProperties = {
+  
+  inline def apply(): SimpleRendererProperties = {
     val __obj = js.Dynamic.literal()
-    if (authoringInfo != null) __obj.updateDynamic("authoringInfo")(authoringInfo.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (visualVariables != null) __obj.updateDynamic("visualVariables")(visualVariables.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleRendererProperties]
   }
+  
+  extension [Self <: SimpleRendererProperties](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setSymbol(value: SymbolProperties): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+  }
 }
-

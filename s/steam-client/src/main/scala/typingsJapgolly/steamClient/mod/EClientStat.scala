@@ -1,53 +1,51 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EClientStat extends js.Object
-
+sealed trait EClientStat extends StObject
 @JSImport("steam-client", "EClientStat")
 @js.native
-object EClientStat extends js.Object {
-  @js.native
-  sealed trait BytesDownloaded extends EClientStat
-  
-  @js.native
-  sealed trait Max extends EClientStat
-  
-  @js.native
-  sealed trait P2PConnectionsRelay extends EClientStat
-  
-  @js.native
-  sealed trait P2PConnectionsUDP extends EClientStat
-  
-  @js.native
-  sealed trait P2PGameConnections extends EClientStat
-  
-  @js.native
-  sealed trait P2PVoiceConnections extends EClientStat
+object EClientStat extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EClientStat with Double] = js.native
-  /* 4 */ @js.native
-  object BytesDownloaded extends TopLevel[BytesDownloaded with Double]
+  def apply(value: Double): js.UndefOr[EClientStat & Double] = js.native
   
-  /* 5 */ @js.native
-  object Max extends TopLevel[Max with Double]
+  @js.native
+  sealed trait BytesDownloaded
+    extends StObject
+       with EClientStat
+  /* 4 */ val BytesDownloaded: typingsJapgolly.steamClient.mod.EClientStat.BytesDownloaded & Double = js.native
   
-  /* 1 */ @js.native
-  object P2PConnectionsRelay extends TopLevel[P2PConnectionsRelay with Double]
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EClientStat
+  /* 5 */ val Max: typingsJapgolly.steamClient.mod.EClientStat.Max & Double = js.native
   
-  /* 0 */ @js.native
-  object P2PConnectionsUDP extends TopLevel[P2PConnectionsUDP with Double]
+  @js.native
+  sealed trait P2PConnectionsRelay
+    extends StObject
+       with EClientStat
+  /* 1 */ val P2PConnectionsRelay: typingsJapgolly.steamClient.mod.EClientStat.P2PConnectionsRelay & Double = js.native
   
-  /* 2 */ @js.native
-  object P2PGameConnections extends TopLevel[P2PGameConnections with Double]
+  @js.native
+  sealed trait P2PConnectionsUDP
+    extends StObject
+       with EClientStat
+  /* 0 */ val P2PConnectionsUDP: typingsJapgolly.steamClient.mod.EClientStat.P2PConnectionsUDP & Double = js.native
   
-  /* 3 */ @js.native
-  object P2PVoiceConnections extends TopLevel[P2PVoiceConnections with Double]
+  @js.native
+  sealed trait P2PGameConnections
+    extends StObject
+       with EClientStat
+  /* 2 */ val P2PGameConnections: typingsJapgolly.steamClient.mod.EClientStat.P2PGameConnections & Double = js.native
   
+  @js.native
+  sealed trait P2PVoiceConnections
+    extends StObject
+       with EClientStat
+  /* 3 */ val P2PVoiceConnections: typingsJapgolly.steamClient.mod.EClientStat.P2PVoiceConnections & Double = js.native
 }
-

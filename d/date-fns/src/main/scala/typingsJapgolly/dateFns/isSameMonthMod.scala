@@ -1,16 +1,20 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/isSameMonth", JSImport.Namespace)
-@js.native
-object isSameMonthMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn2[Date | Double, Date | Double, Boolean]]
+object isSameMonthMod {
   
+  object default {
+    
+    inline def apply(dateLeft: js.Date, dateRight: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: js.Date, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: Double, dateRight: js.Date): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def apply(dateLeft: Double, dateRight: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("date-fns/isSameMonth", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

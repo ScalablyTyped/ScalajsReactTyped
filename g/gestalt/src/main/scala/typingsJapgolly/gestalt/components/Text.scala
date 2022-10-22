@@ -1,89 +1,70 @@
 package typingsJapgolly.gestalt.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gestalt.gestaltStrings.blue
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.gestaltStrings.`100`
+import typingsJapgolly.gestalt.gestaltStrings.`200`
+import typingsJapgolly.gestalt.gestaltStrings.`300`
+import typingsJapgolly.gestalt.gestaltStrings.`400`
+import typingsJapgolly.gestalt.gestaltStrings.`500`
+import typingsJapgolly.gestalt.gestaltStrings.`600`
+import typingsJapgolly.gestalt.gestaltStrings.bold
 import typingsJapgolly.gestalt.gestaltStrings.breakWord
 import typingsJapgolly.gestalt.gestaltStrings.center
-import typingsJapgolly.gestalt.gestaltStrings.darkGray
-import typingsJapgolly.gestalt.gestaltStrings.eggplant
-import typingsJapgolly.gestalt.gestaltStrings.gray
-import typingsJapgolly.gestalt.gestaltStrings.green
+import typingsJapgolly.gestalt.gestaltStrings.dark
+import typingsJapgolly.gestalt.gestaltStrings.default
+import typingsJapgolly.gestalt.gestaltStrings.end
+import typingsJapgolly.gestalt.gestaltStrings.error
+import typingsJapgolly.gestalt.gestaltStrings.forceLeft
+import typingsJapgolly.gestalt.gestaltStrings.forceRight
+import typingsJapgolly.gestalt.gestaltStrings.inverse
 import typingsJapgolly.gestalt.gestaltStrings.justify
-import typingsJapgolly.gestalt.gestaltStrings.left
-import typingsJapgolly.gestalt.gestaltStrings.lg
-import typingsJapgolly.gestalt.gestaltStrings.lightGray
-import typingsJapgolly.gestalt.gestaltStrings.maroon
-import typingsJapgolly.gestalt.gestaltStrings.md
-import typingsJapgolly.gestalt.gestaltStrings.midnight
-import typingsJapgolly.gestalt.gestaltStrings.navy
+import typingsJapgolly.gestalt.gestaltStrings.light
+import typingsJapgolly.gestalt.gestaltStrings.link
+import typingsJapgolly.gestalt.gestaltStrings.noWrap
 import typingsJapgolly.gestalt.gestaltStrings.normal
-import typingsJapgolly.gestalt.gestaltStrings.olive
-import typingsJapgolly.gestalt.gestaltStrings.orange
-import typingsJapgolly.gestalt.gestaltStrings.orchid
-import typingsJapgolly.gestalt.gestaltStrings.pine
-import typingsJapgolly.gestalt.gestaltStrings.purple
-import typingsJapgolly.gestalt.gestaltStrings.red
-import typingsJapgolly.gestalt.gestaltStrings.right
-import typingsJapgolly.gestalt.gestaltStrings.short
-import typingsJapgolly.gestalt.gestaltStrings.sm
-import typingsJapgolly.gestalt.gestaltStrings.tall
-import typingsJapgolly.gestalt.gestaltStrings.watermelon
-import typingsJapgolly.gestalt.gestaltStrings.white
-import typingsJapgolly.gestalt.gestaltStrings.xl
-import typingsJapgolly.gestalt.gestaltStrings.xs
+import typingsJapgolly.gestalt.gestaltStrings.shopping
+import typingsJapgolly.gestalt.gestaltStrings.start
+import typingsJapgolly.gestalt.gestaltStrings.subtle
+import typingsJapgolly.gestalt.gestaltStrings.success
+import typingsJapgolly.gestalt.gestaltStrings.warning
 import typingsJapgolly.gestalt.mod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Text {
-  def apply(
-    align: left | right | center | justify = null,
-    bold: js.UndefOr[Boolean] = js.undefined,
-    color: blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    italic: js.UndefOr[Boolean] = js.undefined,
-    leading: short | tall = null,
-    lgSize: xs | sm | md | lg | xl = null,
-    mdSize: xs | sm | md | lg | xl = null,
-    overflow: normal | breakWord = null,
-    size: xs | sm | md | lg | xl = null,
-    smSize: xs | sm | md | lg | xl = null,
-    truncate: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TextProps, typingsJapgolly.gestalt.mod.Text, Unit, TextProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic.asInstanceOf[js.Any])
-    if (leading != null) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
-    if (lgSize != null) __obj.updateDynamic("lgSize")(lgSize.asInstanceOf[js.Any])
-    if (mdSize != null) __obj.updateDynamic("mdSize")(mdSize.asInstanceOf[js.Any])
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (smSize != null) __obj.updateDynamic("smSize")(smSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncate)) __obj.updateDynamic("truncate")(truncate.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.TextProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Text](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.TextProps])(children: _*)
-  }
   @JSImport("gestalt", "Text")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def align(value: start | end | center | justify | forceLeft | forceRight): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def color(value: default | subtle | success | error | warning | shopping | link | inverse | light | dark): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def `inline`(value: Boolean): this.type = set("inline", value.asInstanceOf[js.Any])
+    
+    inline def italic(value: Boolean): this.type = set("italic", value.asInstanceOf[js.Any])
+    
+    inline def lineClamp(value: Double): this.type = set("lineClamp", value.asInstanceOf[js.Any])
+    
+    inline def overflow(value: normal | breakWord | noWrap): this.type = set("overflow", value.asInstanceOf[js.Any])
+    
+    inline def size(value: `100` | `200` | `300` | `400` | `500` | `600`): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def underline(value: Boolean): this.type = set("underline", value.asInstanceOf[js.Any])
+    
+    inline def weight(value: bold | normal): this.type = set("weight", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Text.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TextProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

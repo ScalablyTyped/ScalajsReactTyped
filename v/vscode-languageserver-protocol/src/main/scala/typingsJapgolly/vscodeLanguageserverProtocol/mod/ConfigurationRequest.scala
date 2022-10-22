@@ -1,13 +1,23 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolConfigurationMod.ConfigurationParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolDotconfigurationMod.ConfigurationParams
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.PartialResultParams
+import typingsJapgolly.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.workspaceSlashconfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "ConfigurationRequest")
-@js.native
-object ConfigurationRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[ConfigurationParams, js.Array[js.Any], Unit, Unit] = js.native
+object ConfigurationRequest {
+  
+  @JSImport("vscode-languageserver-protocol", "ConfigurationRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "ConfigurationRequest.method")
+  @js.native
+  val method: workspaceSlashconfiguration = js.native
+  
+  @JSImport("vscode-languageserver-protocol", "ConfigurationRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ConfigurationParams & PartialResultParams, js.Array[Any], scala.Nothing, Unit, Unit] = js.native
 }
-

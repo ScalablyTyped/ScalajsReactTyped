@@ -1,22 +1,26 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.spinButtonSpinButtonMod.DefaultProps
-import typingsJapgolly.officeUiFabricReact.spinButtonTypesMod.ISpinButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonDottypesMod.ISpinButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsSpinButtonSpinButtonMod.DefaultProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SpinButton")
 @js.native
-class SpinButton protected ()
+open class SpinButton protected ()
   extends typingsJapgolly.officeUiFabricReact.libSpinButtonMod.SpinButton {
   def this(props: ISpinButtonProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "SpinButton")
-@js.native
-object SpinButton extends js.Object {
-  var defaultProps: DefaultProps = js.native
+object SpinButton {
+  
+  @JSImport("office-ui-fabric-react", "SpinButton")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SpinButton.defaultProps")
+  @js.native
+  def defaultProps: DefaultProps = js.native
+  inline def defaultProps_=(x: DefaultProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

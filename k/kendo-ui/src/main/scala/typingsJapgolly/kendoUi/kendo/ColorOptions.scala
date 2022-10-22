@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorOptions extends js.Object {
+trait ColorOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ColorOptions {
-  @scala.inline
-  def apply(name: String = null): ColorOptions = {
+  
+  inline def apply(): ColorOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorOptions]
   }
+  
+  extension [Self <: ColorOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

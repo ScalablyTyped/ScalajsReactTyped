@@ -1,9 +1,9 @@
 package typingsJapgolly.go.mod
 
-import org.scalajs.dom.raw.HTMLDivElement
+import org.scalajs.dom.HTMLDivElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Overview is a Diagram that displays all of a different diagram,
@@ -15,17 +15,19 @@ import scala.scalajs.js.annotation._
 /**
   * @param {string} id A reference to a DIV by its ID as a string.
   */
-class Overview () extends Diagram {
+open class Overview () extends Diagram {
   /**
     * @param {HTMLDivElement} div A reference to a DIV element in the DOM.
     */
   def this(div: HTMLDivElement) = this()
   def this(id: String) = this()
+  
   /**Gets or sets the rectangular Part that represents the viewport of the .observed Diagram.*/
   var box: Part = js.native
+  
   /**Gets or sets whether this overview draws the temporary layers of the observed Diagram.*/
   var drawsTemporaryLayers: Boolean = js.native
+  
   /**Gets or sets the Diagram for which this Overview is displaying a model and showing its viewport into that model.*/
   var observed: Diagram = js.native
 }
-

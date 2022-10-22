@@ -1,81 +1,83 @@
 package typingsJapgolly.grommet.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.grommet.RoutedAnchorPropsOmitAnch
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.anon.RoutedAnchorPropsOmitAnch
+import typingsJapgolly.grommet.es6UtilsMod.A11yTitleType
+import typingsJapgolly.grommet.es6UtilsMod.AlignSelfType
+import typingsJapgolly.grommet.es6UtilsMod.ColorType
+import typingsJapgolly.grommet.es6UtilsMod.GapType
+import typingsJapgolly.grommet.es6UtilsMod.GridAreaType
+import typingsJapgolly.grommet.es6UtilsMod.MarginType
+import typingsJapgolly.grommet.es6UtilsMod.PolymorphicType
+import typingsJapgolly.grommet.grommetStrings.bold
 import typingsJapgolly.grommet.grommetStrings.large
 import typingsJapgolly.grommet.grommetStrings.medium
+import typingsJapgolly.grommet.grommetStrings.normal
 import typingsJapgolly.grommet.grommetStrings.push
 import typingsJapgolly.grommet.grommetStrings.replace
 import typingsJapgolly.grommet.grommetStrings.small
 import typingsJapgolly.grommet.grommetStrings.xlarge
 import typingsJapgolly.grommet.grommetStrings.xsmall
 import typingsJapgolly.grommet.grommetStrings.xxlarge
-import typingsJapgolly.grommet.utilsMod.A11yTitleType
-import typingsJapgolly.grommet.utilsMod.AlignSelfType
-import typingsJapgolly.grommet.utilsMod.ColorType
-import typingsJapgolly.grommet.utilsMod.GridAreaType
-import typingsJapgolly.grommet.utilsMod.MarginType
-import typingsJapgolly.grommet.utilsMod.PolymorphicType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RoutedAnchor {
-  def apply(
-    path: String,
-    a11yTitle: A11yTitleType = null,
-    alignSelf: AlignSelfType = null,
-    as: PolymorphicType = null,
-    color: ColorType = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    gridArea: GridAreaType = null,
-    icon: VdomElement = null,
-    label: VdomNode = null,
-    margin: MarginType = null,
-    method: push | replace = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    size: xsmall | small | medium | large | xlarge | xxlarge | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RoutedAnchorPropsOmitAnch, 
-    typingsJapgolly.grommet.mod.RoutedAnchor, 
-    Unit, 
-    RoutedAnchorPropsOmitAnch
-  ] = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
-      if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawElement.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.RoutedAnchorPropsOmitAnch, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.grommet.mod.RoutedAnchor](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.RoutedAnchorPropsOmitAnch])(children: _*)
+  inline def apply(path: String): Builder = {
+    val __props = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RoutedAnchorPropsOmitAnch]))
   }
-  @JSImport("grommet", "RoutedAnchor")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("grommet/es6", "RoutedAnchor")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.grommet.es6Mod.RoutedAnchor] {
+    
+    inline def a11yTitle(value: A11yTitleType): this.type = set("a11yTitle", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: AlignSelfType): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def as(value: PolymorphicType): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def color(value: ColorType): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def gap(value: GapType): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: GridAreaType): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def label(value: VdomNode): this.type = set("label", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def margin(value: MarginType): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def method(value: push | replace): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+    
+    inline def size(value: xsmall | small | medium | large | xlarge | xxlarge | String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def weight(value: normal | bold | String | Double): this.type = set("weight", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RoutedAnchorPropsOmitAnch): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

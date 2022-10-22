@@ -1,20 +1,30 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HmacKeyAlgorithm extends KeyAlgorithm {
-  var hash: org.scalajs.dom.crypto.KeyAlgorithm
+trait HmacKeyAlgorithm
+  extends StObject
+     with KeyAlgorithm {
+  
+  /* standard dom */
+  var hash: org.scalajs.dom.KeyAlgorithm
+  
+  /* standard dom */
   var length: Double
 }
-
 object HmacKeyAlgorithm {
-  @scala.inline
-  def apply(hash: org.scalajs.dom.crypto.KeyAlgorithm, length: Double, name: java.lang.String): HmacKeyAlgorithm = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(hash: org.scalajs.dom.KeyAlgorithm, length: Double, name: java.lang.String): HmacKeyAlgorithm = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HmacKeyAlgorithm]
   }
+  
+  extension [Self <: HmacKeyAlgorithm](x: Self) {
+    
+    inline def setHash(value: org.scalajs.dom.KeyAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
 }
-

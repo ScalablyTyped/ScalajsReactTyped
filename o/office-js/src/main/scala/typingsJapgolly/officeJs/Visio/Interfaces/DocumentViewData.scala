@@ -1,11 +1,12 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "documentView.toJSON()". */
-trait DocumentViewData extends js.Object {
+/** An interface describing the data returned by calling `documentView.toJSON()`. */
+trait DocumentViewData extends StObject {
+  
   /**
     *
     * Disable Hyperlinks.
@@ -13,6 +14,7 @@ trait DocumentViewData extends js.Object {
     * [Api set:  1.1]
     */
   var disableHyperlinks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Disable Pan.
@@ -20,6 +22,7 @@ trait DocumentViewData extends js.Object {
     * [Api set:  1.1]
     */
   var disablePan: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Disable PanZoomWindow.
@@ -27,6 +30,7 @@ trait DocumentViewData extends js.Object {
     * [Api set:  1.1]
     */
   var disablePanZoomWindow: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Disable Zoom.
@@ -34,6 +38,7 @@ trait DocumentViewData extends js.Object {
     * [Api set:  1.1]
     */
   var disableZoom: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Hide Diagram Boundary.
@@ -42,23 +47,33 @@ trait DocumentViewData extends js.Object {
     */
   var hideDiagramBoundary: js.UndefOr[Boolean] = js.undefined
 }
-
 object DocumentViewData {
-  @scala.inline
-  def apply(
-    disableHyperlinks: js.UndefOr[Boolean] = js.undefined,
-    disablePan: js.UndefOr[Boolean] = js.undefined,
-    disablePanZoomWindow: js.UndefOr[Boolean] = js.undefined,
-    disableZoom: js.UndefOr[Boolean] = js.undefined,
-    hideDiagramBoundary: js.UndefOr[Boolean] = js.undefined
-  ): DocumentViewData = {
+  
+  inline def apply(): DocumentViewData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableHyperlinks)) __obj.updateDynamic("disableHyperlinks")(disableHyperlinks.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePan)) __obj.updateDynamic("disablePan")(disablePan.asInstanceOf[js.Any])
-    if (!js.isUndefined(disablePanZoomWindow)) __obj.updateDynamic("disablePanZoomWindow")(disablePanZoomWindow.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableZoom)) __obj.updateDynamic("disableZoom")(disableZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDiagramBoundary)) __obj.updateDynamic("hideDiagramBoundary")(hideDiagramBoundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentViewData]
   }
+  
+  extension [Self <: DocumentViewData](x: Self) {
+    
+    inline def setDisableHyperlinks(value: Boolean): Self = StObject.set(x, "disableHyperlinks", value.asInstanceOf[js.Any])
+    
+    inline def setDisableHyperlinksUndefined: Self = StObject.set(x, "disableHyperlinks", js.undefined)
+    
+    inline def setDisablePan(value: Boolean): Self = StObject.set(x, "disablePan", value.asInstanceOf[js.Any])
+    
+    inline def setDisablePanUndefined: Self = StObject.set(x, "disablePan", js.undefined)
+    
+    inline def setDisablePanZoomWindow(value: Boolean): Self = StObject.set(x, "disablePanZoomWindow", value.asInstanceOf[js.Any])
+    
+    inline def setDisablePanZoomWindowUndefined: Self = StObject.set(x, "disablePanZoomWindow", js.undefined)
+    
+    inline def setDisableZoom(value: Boolean): Self = StObject.set(x, "disableZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDisableZoomUndefined: Self = StObject.set(x, "disableZoom", js.undefined)
+    
+    inline def setHideDiagramBoundary(value: Boolean): Self = StObject.set(x, "hideDiagramBoundary", value.asInstanceOf[js.Any])
+    
+    inline def setHideDiagramBoundaryUndefined: Self = StObject.set(x, "hideDiagramBoundary", js.undefined)
+  }
 }
-

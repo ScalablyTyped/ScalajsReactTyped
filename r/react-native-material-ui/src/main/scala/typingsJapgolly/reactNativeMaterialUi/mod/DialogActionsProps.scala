@@ -1,24 +1,31 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import japgolly.scalajs.react.raw.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import typingsJapgolly.reactNativeMaterialUi.AnonActionsContainer
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.ActionsContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogActionsProps extends js.Object {
+trait DialogActionsProps extends StObject {
+  
   var children: Element
-  var style: js.UndefOr[AnonActionsContainer] = js.undefined
+  
+  var style: js.UndefOr[ActionsContainer] = js.undefined
 }
-
 object DialogActionsProps {
-  @scala.inline
-  def apply(children: VdomElement, style: AnonActionsContainer = null): DialogActionsProps = {
-    val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.rawElement.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+  
+  inline def apply(children: VdomElement): DialogActionsProps = {
+    val __obj = js.Dynamic.literal(children = children.rawElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogActionsProps]
   }
+  
+  extension [Self <: DialogActionsProps](x: Self) {
+    
+    inline def setChildren(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: ActionsContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

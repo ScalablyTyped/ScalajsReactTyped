@@ -1,32 +1,32 @@
 package typingsJapgolly.webcl.WEBCL
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.10.1
-trait WebCLUserEvent extends WebCLEvent {
+trait WebCLUserEvent
+  extends StObject
+     with WebCLEvent {
+  
   def setStatus(executionStatus: CommandExecutionStatus): Unit
 }
-
 object WebCLUserEvent {
-  @scala.inline
-  def apply(
-    getInfo: EventInfo => CallbackTo[js.Any],
-    getProfilingInfo: ProfilingInfo => CallbackTo[Double],
+  
+  inline def apply(
+    getInfo: EventInfo => Any,
+    getProfilingInfo: ProfilingInfo => Double,
     release: Callback,
     setCallback: (CommandExecutionStatus, WebCLCallback) => Callback,
     setStatus: CommandExecutionStatus => Callback
   ): WebCLUserEvent = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getInfo")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.EventInfo) => getInfo(t0).runNow()))
-    __obj.updateDynamic("getProfilingInfo")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.ProfilingInfo) => getProfilingInfo(t0).runNow()))
-    __obj.updateDynamic("release")(release.toJsFn)
-    __obj.updateDynamic("setCallback")(js.Any.fromFunction2((t0: typingsJapgolly.webcl.WEBCL.CommandExecutionStatus, t1: typingsJapgolly.webcl.WEBCL.WebCLCallback) => setCallback(t0, t1).runNow()))
-    __obj.updateDynamic("setStatus")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.CommandExecutionStatus) => setStatus(t0).runNow()))
+    val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo), getProfilingInfo = js.Any.fromFunction1(getProfilingInfo), release = release.toJsFn, setCallback = js.Any.fromFunction2((t0: CommandExecutionStatus, t1: WebCLCallback) => (setCallback(t0, t1)).runNow()), setStatus = js.Any.fromFunction1((t0: CommandExecutionStatus) => setStatus(t0).runNow()))
     __obj.asInstanceOf[WebCLUserEvent]
   }
+  
+  extension [Self <: WebCLUserEvent](x: Self) {
+    
+    inline def setSetStatus(value: CommandExecutionStatus => Callback): Self = StObject.set(x, "setStatus", js.Any.fromFunction1((t0: CommandExecutionStatus) => value(t0).runNow()))
+  }
 }
-

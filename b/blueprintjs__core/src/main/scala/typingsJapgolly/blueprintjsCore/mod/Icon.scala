@@ -1,22 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`16`
-import typingsJapgolly.blueprintjsCore.blueprintjsCoreNumbers.`20`
+import typingsJapgolly.blueprintjsCore.anon.IconPropsOmitHTMLAttribut
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Icon")
 @js.native
-class Icon ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Icon
-
-/* static members */
-@JSImport("@blueprintjs/core", "Icon")
-@js.native
-object Icon extends js.Object {
-  val SIZE_LARGE: `20` = js.native
-  val SIZE_STANDARD: `16` = js.native
-  var displayName: String = js.native
+open class Icon protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Icon {
+  def this(props: IconPropsOmitHTMLAttribut) = this()
+  def this(props: IconPropsOmitHTMLAttribut, context: Any) = this()
 }
-
+/* static members */
+object Icon {
+  
+  @JSImport("@blueprintjs/core", "Icon")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Icon.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

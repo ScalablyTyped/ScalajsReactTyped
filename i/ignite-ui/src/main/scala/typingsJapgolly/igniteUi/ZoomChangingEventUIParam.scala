@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ZoomChangingEventUIParam extends js.Object {
+trait ZoomChangingEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to igZoombar.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to igZoombar.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ZoomChangingEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): ZoomChangingEventUIParam = {
+  
+  inline def apply(): ZoomChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomChangingEventUIParam]
   }
+  
+  extension [Self <: ZoomChangingEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,56 +1,59 @@
 package typingsJapgolly.reactMic.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Blob
+import org.scalajs.dom.Blob
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactMic.mod.ReactMicProps
 import typingsJapgolly.reactMic.mod.ReactMicStopEvent
+import typingsJapgolly.reactMic.reactMicInts.`1`
+import typingsJapgolly.reactMic.reactMicInts.`2`
+import typingsJapgolly.reactMic.reactMicStrings.audioSlashwav
+import typingsJapgolly.reactMic.reactMicStrings.audioSlashwebm
 import typingsJapgolly.reactMic.reactMicStrings.frequencyBars
 import typingsJapgolly.reactMic.reactMicStrings.sinewave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactMic {
-  def apply(
-    backgroundColor: String = null,
-    className: String = null,
-    onData: /* recordedData */ Blob => Callback = null,
-    onStop: /* recordedData */ ReactMicStopEvent => Callback = null,
-    pause: js.UndefOr[Boolean] = js.undefined,
-    record: js.UndefOr[Boolean] = js.undefined,
-    strokeColor: String = null,
-    visualSetting: sinewave | frequencyBars = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactMicProps, typingsJapgolly.reactMic.mod.ReactMic, Unit, ReactMicProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onData != null) __obj.updateDynamic("onData")(js.Any.fromFunction1((t0: /* recordedData */ org.scalajs.dom.raw.Blob) => onData(t0).runNow()))
-    if (onStop != null) __obj.updateDynamic("onStop")(js.Any.fromFunction1((t0: /* recordedData */ typingsJapgolly.reactMic.mod.ReactMicStopEvent) => onStop(t0).runNow()))
-    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
-    if (!js.isUndefined(record)) __obj.updateDynamic("record")(record.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (visualSetting != null) __obj.updateDynamic("visualSetting")(visualSetting.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactMic.mod.ReactMicProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMic.mod.ReactMic](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMic.mod.ReactMicProps])(children: _*)
-  }
   @JSImport("react-mic", "ReactMic")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMic.mod.ReactMic] {
+    
+    inline def autoGainControl(value: Boolean): this.type = set("autoGainControl", value.asInstanceOf[js.Any])
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def channelCount(value: `1` | `2`): this.type = set("channelCount", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def echoCancellation(value: Boolean): this.type = set("echoCancellation", value.asInstanceOf[js.Any])
+    
+    inline def mimeType(value: audioSlashwebm | audioSlashwav): this.type = set("mimeType", value.asInstanceOf[js.Any])
+    
+    inline def noiseSuppression(value: Boolean): this.type = set("noiseSuppression", value.asInstanceOf[js.Any])
+    
+    inline def onData(value: /* recordedData */ Blob => Callback): this.type = set("onData", js.Any.fromFunction1((t0: /* recordedData */ Blob) => value(t0).runNow()))
+    
+    inline def onStop(value: /* recordedData */ ReactMicStopEvent => Callback): this.type = set("onStop", js.Any.fromFunction1((t0: /* recordedData */ ReactMicStopEvent) => value(t0).runNow()))
+    
+    inline def pause(value: Boolean): this.type = set("pause", value.asInstanceOf[js.Any])
+    
+    inline def record(value: Boolean): this.type = set("record", value.asInstanceOf[js.Any])
+    
+    inline def strokeColor(value: String): this.type = set("strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def visualSetting(value: sinewave | frequencyBars): this.type = set("visualSetting", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactMic.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ReactMicProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

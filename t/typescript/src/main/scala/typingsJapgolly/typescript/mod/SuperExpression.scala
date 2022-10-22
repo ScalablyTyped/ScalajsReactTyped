@@ -1,13 +1,15 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.SuperKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuperExpression extends PrimaryExpression {
+trait SuperExpression
+  extends StObject
+     with PrimaryExpression {
+  
   @JSName("kind")
-  var kind_SuperExpression: SuperKeyword = js.native
+  val kind_SuperExpression: SuperKeyword = js.native
 }
-

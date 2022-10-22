@@ -1,36 +1,54 @@
 package typingsJapgolly.jaegerClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TracingConfig extends js.Object {
+trait TracingConfig extends StObject {
+  
   var disable: js.UndefOr[Boolean] = js.undefined
+  
   var reporter: js.UndefOr[ReporterConfig] = js.undefined
+  
   var sampler: js.UndefOr[SamplerConfig] = js.undefined
+  
   var serviceName: js.UndefOr[String] = js.undefined
+  
   var shareRpcSpan: js.UndefOr[Boolean] = js.undefined
+  
   var traceId128bit: js.UndefOr[Boolean] = js.undefined
 }
-
 object TracingConfig {
-  @scala.inline
-  def apply(
-    disable: js.UndefOr[Boolean] = js.undefined,
-    reporter: ReporterConfig = null,
-    sampler: SamplerConfig = null,
-    serviceName: String = null,
-    shareRpcSpan: js.UndefOr[Boolean] = js.undefined,
-    traceId128bit: js.UndefOr[Boolean] = js.undefined
-  ): TracingConfig = {
+  
+  inline def apply(): TracingConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable.asInstanceOf[js.Any])
-    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
-    if (sampler != null) __obj.updateDynamic("sampler")(sampler.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (!js.isUndefined(shareRpcSpan)) __obj.updateDynamic("shareRpcSpan")(shareRpcSpan.asInstanceOf[js.Any])
-    if (!js.isUndefined(traceId128bit)) __obj.updateDynamic("traceId128bit")(traceId128bit.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracingConfig]
   }
+  
+  extension [Self <: TracingConfig](x: Self) {
+    
+    inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    
+    inline def setReporter(value: ReporterConfig): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+    
+    inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+    
+    inline def setSampler(value: SamplerConfig): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+    
+    inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    
+    inline def setShareRpcSpan(value: Boolean): Self = StObject.set(x, "shareRpcSpan", value.asInstanceOf[js.Any])
+    
+    inline def setShareRpcSpanUndefined: Self = StObject.set(x, "shareRpcSpan", js.undefined)
+    
+    inline def setTraceId128bit(value: Boolean): Self = StObject.set(x, "traceId128bit", value.asInstanceOf[js.Any])
+    
+    inline def setTraceId128bitUndefined: Self = StObject.set(x, "traceId128bit", js.undefined)
+  }
 }
-

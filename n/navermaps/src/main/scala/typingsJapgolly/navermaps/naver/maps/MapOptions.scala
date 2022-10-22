@@ -1,123 +1,236 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapOptions extends js.Object {
+trait MapOptions extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var baseTileOpacity: js.UndefOr[Double] = js.undefined
-  var bounds: js.UndefOr[js.Any] = js.undefined
-  var center: js.UndefOr[js.Any] = js.undefined
+  
+  var bounds: js.UndefOr[Any] = js.undefined
+  
+  var center: js.UndefOr[Any] = js.undefined
+  
   var disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined
+  
   var disableDoubleTapZoom: js.UndefOr[Boolean] = js.undefined
+  
   var disableKineticPan: js.UndefOr[Boolean] = js.undefined
+  
   var disableTwoFingerTapZoom: js.UndefOr[Boolean] = js.undefined
+  
   var draggable: js.UndefOr[Boolean] = js.undefined
+  
   var keyboardShortcuts: js.UndefOr[Boolean] = js.undefined
+  
   var logoControl: js.UndefOr[Boolean] = js.undefined
-  var logoControlOptions: js.UndefOr[js.Any] = js.undefined
+  
+  var logoControlOptions: js.UndefOr[Any] = js.undefined
+  
   var mapDataControl: js.UndefOr[Boolean] = js.undefined
-  var mapDataControlOptions: js.UndefOr[js.Any] = js.undefined
+  
+  var mapDataControlOptions: js.UndefOr[Any] = js.undefined
+  
   var mapTypeControl: js.UndefOr[Boolean] = js.undefined
-  var mapTypeControlOptions: js.UndefOr[js.Any] = js.undefined
+  
+  var mapTypeControlOptions: js.UndefOr[Any] = js.undefined
+  
   var mapTypeId: js.UndefOr[String] = js.undefined
-  var mapTypes: js.UndefOr[js.Any] = js.undefined
-  var maxBounds: js.UndefOr[js.Any] = js.undefined
+  
+  var mapTypes: js.UndefOr[Any] = js.undefined
+  
+  var maxBounds: js.UndefOr[Any] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var overlayZoomEffect: js.UndefOr[Null | String] = js.undefined
-  var padding: js.UndefOr[js.Any] = js.undefined
+  
+  var padding: js.UndefOr[Any] = js.undefined
+  
   var pinchZoom: js.UndefOr[Boolean] = js.undefined
-  var resizeOrigin: js.UndefOr[js.Any] = js.undefined
+  
+  var resizeOrigin: js.UndefOr[Any] = js.undefined
+  
   var scaleControl: js.UndefOr[Boolean] = js.undefined
-  var scaleControlOptions: js.UndefOr[js.Any] = js.undefined
+  
+  var scaleControlOptions: js.UndefOr[Any] = js.undefined
+  
   var scrollWheel: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[js.Any] = js.undefined
+  
+  var size: js.UndefOr[Any] = js.undefined
+  
   var tileSpare: js.UndefOr[Double] = js.undefined
+  
   var tileTransition: js.UndefOr[Boolean] = js.undefined
+  
+  var useStyleMap: js.UndefOr[Boolean] = js.undefined
+  
   var zoom: js.UndefOr[Double] = js.undefined
+  
   var zoomControl: js.UndefOr[Boolean] = js.undefined
-  var zoomControlOptions: js.UndefOr[js.Any] = js.undefined
-  var zoomOrigin: js.UndefOr[js.Any] = js.undefined
+  
+  var zoomControlOptions: js.UndefOr[Any] = js.undefined
+  
+  var zoomOrigin: js.UndefOr[Any] = js.undefined
 }
-
 object MapOptions {
-  @scala.inline
-  def apply(
-    background: String = null,
-    baseTileOpacity: Int | Double = null,
-    bounds: js.Any = null,
-    center: js.Any = null,
-    disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined,
-    disableDoubleTapZoom: js.UndefOr[Boolean] = js.undefined,
-    disableKineticPan: js.UndefOr[Boolean] = js.undefined,
-    disableTwoFingerTapZoom: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    keyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
-    logoControl: js.UndefOr[Boolean] = js.undefined,
-    logoControlOptions: js.Any = null,
-    mapDataControl: js.UndefOr[Boolean] = js.undefined,
-    mapDataControlOptions: js.Any = null,
-    mapTypeControl: js.UndefOr[Boolean] = js.undefined,
-    mapTypeControlOptions: js.Any = null,
-    mapTypeId: String = null,
-    mapTypes: js.Any = null,
-    maxBounds: js.Any = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    overlayZoomEffect: String = null,
-    padding: js.Any = null,
-    pinchZoom: js.UndefOr[Boolean] = js.undefined,
-    resizeOrigin: js.Any = null,
-    scaleControl: js.UndefOr[Boolean] = js.undefined,
-    scaleControlOptions: js.Any = null,
-    scrollWheel: js.UndefOr[Boolean] = js.undefined,
-    size: js.Any = null,
-    tileSpare: Int | Double = null,
-    tileTransition: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
-    zoomControl: js.UndefOr[Boolean] = js.undefined,
-    zoomControlOptions: js.Any = null,
-    zoomOrigin: js.Any = null
-  ): MapOptions = {
+  
+  inline def apply(): MapOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (baseTileOpacity != null) __obj.updateDynamic("baseTileOpacity")(baseTileOpacity.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleTapZoom)) __obj.updateDynamic("disableDoubleTapZoom")(disableDoubleTapZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableKineticPan)) __obj.updateDynamic("disableKineticPan")(disableKineticPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTwoFingerTapZoom)) __obj.updateDynamic("disableTwoFingerTapZoom")(disableTwoFingerTapZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(logoControl)) __obj.updateDynamic("logoControl")(logoControl.asInstanceOf[js.Any])
-    if (logoControlOptions != null) __obj.updateDynamic("logoControlOptions")(logoControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapDataControl)) __obj.updateDynamic("mapDataControl")(mapDataControl.asInstanceOf[js.Any])
-    if (mapDataControlOptions != null) __obj.updateDynamic("mapDataControlOptions")(mapDataControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl.asInstanceOf[js.Any])
-    if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions.asInstanceOf[js.Any])
-    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
-    if (mapTypes != null) __obj.updateDynamic("mapTypes")(mapTypes.asInstanceOf[js.Any])
-    if (maxBounds != null) __obj.updateDynamic("maxBounds")(maxBounds.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (overlayZoomEffect != null) __obj.updateDynamic("overlayZoomEffect")(overlayZoomEffect.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinchZoom)) __obj.updateDynamic("pinchZoom")(pinchZoom.asInstanceOf[js.Any])
-    if (resizeOrigin != null) __obj.updateDynamic("resizeOrigin")(resizeOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl.asInstanceOf[js.Any])
-    if (scaleControlOptions != null) __obj.updateDynamic("scaleControlOptions")(scaleControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWheel)) __obj.updateDynamic("scrollWheel")(scrollWheel.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (tileSpare != null) __obj.updateDynamic("tileSpare")(tileSpare.asInstanceOf[js.Any])
-    if (!js.isUndefined(tileTransition)) __obj.updateDynamic("tileTransition")(tileTransition.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomControl)) __obj.updateDynamic("zoomControl")(zoomControl.asInstanceOf[js.Any])
-    if (zoomControlOptions != null) __obj.updateDynamic("zoomControlOptions")(zoomControlOptions.asInstanceOf[js.Any])
-    if (zoomOrigin != null) __obj.updateDynamic("zoomOrigin")(zoomOrigin.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapOptions]
   }
+  
+  extension [Self <: MapOptions](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBaseTileOpacity(value: Double): Self = StObject.set(x, "baseTileOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setBaseTileOpacityUndefined: Self = StObject.set(x, "baseTileOpacity", js.undefined)
+    
+    inline def setBounds(value: Any): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    
+    inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setDisableDoubleClickZoom(value: Boolean): Self = StObject.set(x, "disableDoubleClickZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDisableDoubleClickZoomUndefined: Self = StObject.set(x, "disableDoubleClickZoom", js.undefined)
+    
+    inline def setDisableDoubleTapZoom(value: Boolean): Self = StObject.set(x, "disableDoubleTapZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDisableDoubleTapZoomUndefined: Self = StObject.set(x, "disableDoubleTapZoom", js.undefined)
+    
+    inline def setDisableKineticPan(value: Boolean): Self = StObject.set(x, "disableKineticPan", value.asInstanceOf[js.Any])
+    
+    inline def setDisableKineticPanUndefined: Self = StObject.set(x, "disableKineticPan", js.undefined)
+    
+    inline def setDisableTwoFingerTapZoom(value: Boolean): Self = StObject.set(x, "disableTwoFingerTapZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDisableTwoFingerTapZoomUndefined: Self = StObject.set(x, "disableTwoFingerTapZoom", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setKeyboardShortcuts(value: Boolean): Self = StObject.set(x, "keyboardShortcuts", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardShortcutsUndefined: Self = StObject.set(x, "keyboardShortcuts", js.undefined)
+    
+    inline def setLogoControl(value: Boolean): Self = StObject.set(x, "logoControl", value.asInstanceOf[js.Any])
+    
+    inline def setLogoControlOptions(value: Any): Self = StObject.set(x, "logoControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLogoControlOptionsUndefined: Self = StObject.set(x, "logoControlOptions", js.undefined)
+    
+    inline def setLogoControlUndefined: Self = StObject.set(x, "logoControl", js.undefined)
+    
+    inline def setMapDataControl(value: Boolean): Self = StObject.set(x, "mapDataControl", value.asInstanceOf[js.Any])
+    
+    inline def setMapDataControlOptions(value: Any): Self = StObject.set(x, "mapDataControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMapDataControlOptionsUndefined: Self = StObject.set(x, "mapDataControlOptions", js.undefined)
+    
+    inline def setMapDataControlUndefined: Self = StObject.set(x, "mapDataControl", js.undefined)
+    
+    inline def setMapTypeControl(value: Boolean): Self = StObject.set(x, "mapTypeControl", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypeControlOptions(value: Any): Self = StObject.set(x, "mapTypeControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypeControlOptionsUndefined: Self = StObject.set(x, "mapTypeControlOptions", js.undefined)
+    
+    inline def setMapTypeControlUndefined: Self = StObject.set(x, "mapTypeControl", js.undefined)
+    
+    inline def setMapTypeId(value: String): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypeIdUndefined: Self = StObject.set(x, "mapTypeId", js.undefined)
+    
+    inline def setMapTypes(value: Any): Self = StObject.set(x, "mapTypes", value.asInstanceOf[js.Any])
+    
+    inline def setMapTypesUndefined: Self = StObject.set(x, "mapTypes", js.undefined)
+    
+    inline def setMaxBounds(value: Any): Self = StObject.set(x, "maxBounds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBoundsUndefined: Self = StObject.set(x, "maxBounds", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setOverlayZoomEffect(value: String): Self = StObject.set(x, "overlayZoomEffect", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayZoomEffectNull: Self = StObject.set(x, "overlayZoomEffect", null)
+    
+    inline def setOverlayZoomEffectUndefined: Self = StObject.set(x, "overlayZoomEffect", js.undefined)
+    
+    inline def setPadding(value: Any): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPinchZoom(value: Boolean): Self = StObject.set(x, "pinchZoom", value.asInstanceOf[js.Any])
+    
+    inline def setPinchZoomUndefined: Self = StObject.set(x, "pinchZoom", js.undefined)
+    
+    inline def setResizeOrigin(value: Any): Self = StObject.set(x, "resizeOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setResizeOriginUndefined: Self = StObject.set(x, "resizeOrigin", js.undefined)
+    
+    inline def setScaleControl(value: Boolean): Self = StObject.set(x, "scaleControl", value.asInstanceOf[js.Any])
+    
+    inline def setScaleControlOptions(value: Any): Self = StObject.set(x, "scaleControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setScaleControlOptionsUndefined: Self = StObject.set(x, "scaleControlOptions", js.undefined)
+    
+    inline def setScaleControlUndefined: Self = StObject.set(x, "scaleControl", js.undefined)
+    
+    inline def setScrollWheel(value: Boolean): Self = StObject.set(x, "scrollWheel", value.asInstanceOf[js.Any])
+    
+    inline def setScrollWheelUndefined: Self = StObject.set(x, "scrollWheel", js.undefined)
+    
+    inline def setSize(value: Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTileSpare(value: Double): Self = StObject.set(x, "tileSpare", value.asInstanceOf[js.Any])
+    
+    inline def setTileSpareUndefined: Self = StObject.set(x, "tileSpare", js.undefined)
+    
+    inline def setTileTransition(value: Boolean): Self = StObject.set(x, "tileTransition", value.asInstanceOf[js.Any])
+    
+    inline def setTileTransitionUndefined: Self = StObject.set(x, "tileTransition", js.undefined)
+    
+    inline def setUseStyleMap(value: Boolean): Self = StObject.set(x, "useStyleMap", value.asInstanceOf[js.Any])
+    
+    inline def setUseStyleMapUndefined: Self = StObject.set(x, "useStyleMap", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomControl(value: Boolean): Self = StObject.set(x, "zoomControl", value.asInstanceOf[js.Any])
+    
+    inline def setZoomControlOptions(value: Any): Self = StObject.set(x, "zoomControlOptions", value.asInstanceOf[js.Any])
+    
+    inline def setZoomControlOptionsUndefined: Self = StObject.set(x, "zoomControlOptions", js.undefined)
+    
+    inline def setZoomControlUndefined: Self = StObject.set(x, "zoomControl", js.undefined)
+    
+    inline def setZoomOrigin(value: Any): Self = StObject.set(x, "zoomOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setZoomOriginUndefined: Self = StObject.set(x, "zoomOrigin", js.undefined)
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

@@ -1,40 +1,42 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TreeHierarchicalDataSourceSettingsTreeDSSorting
-  extends /**
-	 * Option for TreeHierarchicalDataSourceSettingsTreeDSSorting
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies from which data bound level to be applied sorting - 0 is the first level
-  	 */
+    * Specifies from which data bound level to be applied sorting - 0 is the first level
+    */
   var fromLevel: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Specifies to which data bound level to be applied sorting - if -1 sorting should be applied to the last data bound level
-  	 */
+    * Specifies to which data bound level to be applied sorting - if -1 sorting should be applied to the last data bound level
+    */
   var toLevel: js.UndefOr[Double] = js.undefined
 }
-
 object TreeHierarchicalDataSourceSettingsTreeDSSorting {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for TreeHierarchicalDataSourceSettingsTreeDSSorting
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    fromLevel: Int | Double = null,
-    toLevel: Int | Double = null
-  ): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
+  
+  inline def apply(): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
-    if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSSorting]
   }
+  
+  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSSorting](x: Self) {
+    
+    inline def setFromLevel(value: Double): Self = StObject.set(x, "fromLevel", value.asInstanceOf[js.Any])
+    
+    inline def setFromLevelUndefined: Self = StObject.set(x, "fromLevel", js.undefined)
+    
+    inline def setToLevel(value: Double): Self = StObject.set(x, "toLevel", value.asInstanceOf[js.Any])
+    
+    inline def setToLevelUndefined: Self = StObject.set(x, "toLevel", js.undefined)
+  }
 }
-

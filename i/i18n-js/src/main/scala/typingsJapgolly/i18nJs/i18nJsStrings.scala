@@ -1,34 +1,28 @@
 package typingsJapgolly.i18nJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nJsStrings {
-  @js.native
-  sealed trait currency extends js.Object
   
   @js.native
-  sealed trait guess extends js.Object
+  sealed trait currency extends StObject
+  inline def currency: currency = "currency".asInstanceOf[currency]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait guess extends StObject
+  inline def guess: guess = "guess".asInstanceOf[guess]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait percentage extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
-  @scala.inline
-  def currency: currency = "currency".asInstanceOf[currency]
-  @scala.inline
-  def guess: guess = "guess".asInstanceOf[guess]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def percentage: percentage = "percentage".asInstanceOf[percentage]
+  @js.native
+  sealed trait percentage extends StObject
+  inline def percentage: percentage = "percentage".asInstanceOf[percentage]
 }
-

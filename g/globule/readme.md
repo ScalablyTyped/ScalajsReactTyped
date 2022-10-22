@@ -11,9 +11,9 @@ An easy-to-use wildcard globbing library.
 | Full name          | globule |
 | Keywords           | glob, file, match, mapping, expand, wildcard, pattern, sync, awesome |
 | # releases         | 3 |
-| # dependents       | 206 |
-| # downloads        | 227315320 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1000447333333332E7 |
+| # stars            | 104.0 |
 
 ## Links
 - [Homepage](https://github.com/cowboy/node-globule)

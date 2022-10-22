@@ -1,139 +1,135 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`10`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`11`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`12`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`13`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`14`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`15`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`16`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`17`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`18`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`19`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`20`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`21`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`22`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`23`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`24`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`25`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`26`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`27`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`28`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`29`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`6`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`7`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`8`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`9`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`10`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`11`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`12`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`13`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`14`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`15`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`16`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`17`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`18`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`19`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`20`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`21`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`22`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`23`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`24`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`25`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`26`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`27`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`28`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`29`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`6`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`7`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`8`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`26`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`7`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`27`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`9`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`22`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`24`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`23`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`25`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`17`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`18`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`20`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`19`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`21`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`16`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`8`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`15`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`14`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`12`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`13`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`6`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`10`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`11`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`28`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`29`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`26`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`7`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`27`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`9`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`22`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`24`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`23`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`25`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`17`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`18`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`20`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`19`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`21`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`16`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`8`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`15`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`14`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`12`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`13`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`6`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`10`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`11`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`28`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`29`
 */
-trait styleDisplay extends js.Object
-
+trait styleDisplay extends StObject
 object styleDisplay {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def styleDisplayBlock: `1` = this.cast(1)
-  @scala.inline
-  def styleDisplayFlex: `26` = this.cast(26)
-  @scala.inline
-  def styleDisplayInline: `2` = this.cast(2)
-  @scala.inline
-  def styleDisplayInlineBlock: `7` = this.cast(7)
-  @scala.inline
-  def styleDisplayInlineFlex: `27` = this.cast(27)
-  @scala.inline
-  def styleDisplayInlineTable: `9` = this.cast(9)
-  @scala.inline
-  def styleDisplayListItem: `3` = this.cast(3)
-  @scala.inline
-  def styleDisplayMsFlexbox: `22` = this.cast(22)
-  @scala.inline
-  def styleDisplayMsGrid: `24` = this.cast(24)
-  @scala.inline
-  def styleDisplayMsInlineFlexbox: `23` = this.cast(23)
-  @scala.inline
-  def styleDisplayMsInlineGrid: `25` = this.cast(25)
-  @scala.inline
-  def styleDisplayNone: `4` = this.cast(4)
-  @scala.inline
-  def styleDisplayNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleDisplayRuby: `17` = this.cast(17)
-  @scala.inline
-  def styleDisplayRubyBase: `18` = this.cast(18)
-  @scala.inline
-  def styleDisplayRubyBaseContainer: `20` = this.cast(20)
-  @scala.inline
-  def styleDisplayRubyText: `19` = this.cast(19)
-  @scala.inline
-  def styleDisplayRubyTextContainer: `21` = this.cast(21)
-  @scala.inline
-  def styleDisplayRunIn: `16` = this.cast(16)
-  @scala.inline
-  def styleDisplayTable: `8` = this.cast(8)
-  @scala.inline
-  def styleDisplayTableCaption: `15` = this.cast(15)
-  @scala.inline
-  def styleDisplayTableCell: `14` = this.cast(14)
-  @scala.inline
-  def styleDisplayTableColumn: `12` = this.cast(12)
-  @scala.inline
-  def styleDisplayTableColumnGroup: `13` = this.cast(13)
-  @scala.inline
-  def styleDisplayTableFooterGroup: `6` = this.cast(6)
-  @scala.inline
-  def styleDisplayTableHeaderGroup: `5` = this.cast(5)
-  @scala.inline
-  def styleDisplayTableRow: `10` = this.cast(10)
-  @scala.inline
-  def styleDisplayTableRowGroup: `11` = this.cast(11)
-  @scala.inline
-  def styleDisplayWebkitBox: `28` = this.cast(28)
-  @scala.inline
-  def styleDisplayWebkitInlineBox: `29` = this.cast(29)
-  @scala.inline
-  def styleDisplay_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def styleDisplayBlock: `1` = 1.asInstanceOf[`1`]
+  
+  inline def styleDisplayFlex: `26` = 26.asInstanceOf[`26`]
+  
+  inline def styleDisplayInline: `2` = 2.asInstanceOf[`2`]
+  
+  inline def styleDisplayInlineBlock: `7` = 7.asInstanceOf[`7`]
+  
+  inline def styleDisplayInlineFlex: `27` = 27.asInstanceOf[`27`]
+  
+  inline def styleDisplayInlineTable: `9` = 9.asInstanceOf[`9`]
+  
+  inline def styleDisplayListItem: `3` = 3.asInstanceOf[`3`]
+  
+  inline def styleDisplayMsFlexbox: `22` = 22.asInstanceOf[`22`]
+  
+  inline def styleDisplayMsGrid: `24` = 24.asInstanceOf[`24`]
+  
+  inline def styleDisplayMsInlineFlexbox: `23` = 23.asInstanceOf[`23`]
+  
+  inline def styleDisplayMsInlineGrid: `25` = 25.asInstanceOf[`25`]
+  
+  inline def styleDisplayNone: `4` = 4.asInstanceOf[`4`]
+  
+  inline def styleDisplayNotSet: `0` = 0.asInstanceOf[`0`]
+  
+  inline def styleDisplayRuby: `17` = 17.asInstanceOf[`17`]
+  
+  inline def styleDisplayRubyBase: `18` = 18.asInstanceOf[`18`]
+  
+  inline def styleDisplayRubyBaseContainer: `20` = 20.asInstanceOf[`20`]
+  
+  inline def styleDisplayRubyText: `19` = 19.asInstanceOf[`19`]
+  
+  inline def styleDisplayRubyTextContainer: `21` = 21.asInstanceOf[`21`]
+  
+  inline def styleDisplayRunIn: `16` = 16.asInstanceOf[`16`]
+  
+  inline def styleDisplayTable: `8` = 8.asInstanceOf[`8`]
+  
+  inline def styleDisplayTableCaption: `15` = 15.asInstanceOf[`15`]
+  
+  inline def styleDisplayTableCell: `14` = 14.asInstanceOf[`14`]
+  
+  inline def styleDisplayTableColumn: `12` = 12.asInstanceOf[`12`]
+  
+  inline def styleDisplayTableColumnGroup: `13` = 13.asInstanceOf[`13`]
+  
+  inline def styleDisplayTableFooterGroup: `6` = 6.asInstanceOf[`6`]
+  
+  inline def styleDisplayTableHeaderGroup: `5` = 5.asInstanceOf[`5`]
+  
+  inline def styleDisplayTableRow: `10` = 10.asInstanceOf[`10`]
+  
+  inline def styleDisplayTableRowGroup: `11` = 11.asInstanceOf[`11`]
+  
+  inline def styleDisplayWebkitBox: `28` = 28.asInstanceOf[`28`]
+  
+  inline def styleDisplayWebkitInlineBox: `29` = 29.asInstanceOf[`29`]
+  
+  inline def styleDisplay_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

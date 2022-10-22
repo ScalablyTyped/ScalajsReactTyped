@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.cardFooterMod.CardFooterProps
+import typingsJapgolly.reactstrap.typesLibCardFooterMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "CardFooter")
 @js.native
-class CardFooter[T] ()
-  extends Component[CardFooterProps, js.Object, js.Any]
-
+open class CardFooter () extends default

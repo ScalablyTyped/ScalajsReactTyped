@@ -1,22 +1,26 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.AnonAppearTransition
-import typingsJapgolly.antDesignReactNative.progressMod.ProgressProps
-import typingsJapgolly.antDesignReactNative.progressMod.default
+import typingsJapgolly.antDesignReactNative.anon.AppearTransition
+import typingsJapgolly.antDesignReactNative.libProgressMod.ProgressProps
+import typingsJapgolly.antDesignReactNative.libProgressMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "Progress")
 @js.native
-class Progress protected () extends default {
+open class Progress protected () extends default {
   def this(props: ProgressProps) = this()
 }
-
 /* static members */
-@JSImport("@ant-design/react-native", "Progress")
-@js.native
-object Progress extends js.Object {
-  var defaultProps: AnonAppearTransition = js.native
+object Progress {
+  
+  @JSImport("@ant-design/react-native", "Progress")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native", "Progress.defaultProps")
+  @js.native
+  def defaultProps: AppearTransition = js.native
+  inline def defaultProps_=(x: AppearTransition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,30 +1,29 @@
 package typingsJapgolly.ionicUtilsFs
 
 import typingsJapgolly.ionicUtilsFs.mod.FileType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicUtilsFsStrings {
-  @js.native
-  sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait buffer extends StObject
+  inline def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait directory extends FileType
+  sealed trait data extends StObject
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait file extends FileType
+  sealed trait directory
+    extends StObject
+       with FileType
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
-  @scala.inline
-  def buffer: buffer = "buffer".asInstanceOf[buffer]
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  @js.native
+  sealed trait file
+    extends StObject
+       with FileType
+  inline def file: file = "file".asInstanceOf[file]
 }
-

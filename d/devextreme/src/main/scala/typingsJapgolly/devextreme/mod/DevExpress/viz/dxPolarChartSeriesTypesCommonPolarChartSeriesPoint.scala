@@ -1,70 +1,113 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorVisible
-import typingsJapgolly.devextreme.AnonSize
-import typingsJapgolly.devextreme.AnonUrl
-import typingsJapgolly.devextreme.devextremeStrings.allArgumentPoints
-import typingsJapgolly.devextreme.devextremeStrings.allSeriesPoints
-import typingsJapgolly.devextreme.devextremeStrings.circle
-import typingsJapgolly.devextreme.devextremeStrings.cross
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.onlyPoint
-import typingsJapgolly.devextreme.devextremeStrings.polygon
-import typingsJapgolly.devextreme.devextremeStrings.square
-import typingsJapgolly.devextreme.devextremeStrings.triangle
+import typingsJapgolly.devextreme.anon.Border
+import typingsJapgolly.devextreme.anon.ColorVisible
+import typingsJapgolly.devextreme.anon.Url
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.PointInteractionMode
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.PointSymbol
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartSeriesTypesCommonPolarChartSeriesPoint extends js.Object {
-  /** Specifies border options for points in the line and area series. */
-  var border: js.UndefOr[AnonColorVisible] = js.undefined
-  /** Specifies the points color. */
+trait dxPolarChartSeriesTypesCommonPolarChartSeriesPoint extends StObject {
+  
+  /**
+    * Specifies border properties for points in the line and area series.
+    */
+  var border: js.UndefOr[ColorVisible] = js.undefined
+  
+  /**
+    * Specifies the points color.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies what series points to highlight when a point is hovered over. */
-  var hoverMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a hovered point. */
-  var hoverStyle: js.UndefOr[AnonSize] = js.undefined
-  /** An object specifying the parameters of an image that is used as a point marker. */
-  var image: js.UndefOr[String | AnonUrl] = js.undefined
-  /** Specifies what series points to highlight when a point is selected. */
-  var selectionMode: js.UndefOr[allArgumentPoints | allSeriesPoints | none | onlyPoint] = js.undefined
-  /** An object defining configuration options for a selected point. */
-  var selectionStyle: js.UndefOr[AnonSize] = js.undefined
-  /** Specifies the point diameter in pixels for those series that represent data points as symbols (not as bars for instance). */
+  
+  /**
+    * Specifies what series points to highlight when a point is hovered over.
+    */
+  var hoverMode: js.UndefOr[PointInteractionMode] = js.undefined
+  
+  /**
+    * An object defining configuration properties for a hovered point.
+    */
+  var hoverStyle: js.UndefOr[Border] = js.undefined
+  
+  /**
+    * An object specifying the parameters of an image that is used as a point marker.
+    */
+  var image: js.UndefOr[String | Url] = js.undefined
+  
+  /**
+    * Specifies what series points to highlight when a point is selected.
+    */
+  var selectionMode: js.UndefOr[PointInteractionMode] = js.undefined
+  
+  /**
+    * An object defining configuration properties for a selected point.
+    */
+  var selectionStyle: js.UndefOr[Border] = js.undefined
+  
+  /**
+    * Specifies the point diameter in pixels for those series that represent data points as symbols (not as bars for instance).
+    */
   var size: js.UndefOr[Double] = js.undefined
-  /** Specifies a symbol for presenting points of the line and area series. */
-  var symbol: js.UndefOr[circle | cross | polygon | square | triangle] = js.undefined
-  /** Specifies the points visibility for a line and area series. */
+  
+  /**
+    * Specifies a symbol for presenting points of the line and area series.
+    */
+  var symbol: js.UndefOr[PointSymbol] = js.undefined
+  
+  /**
+    * Specifies the points visibility for a line and area series.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxPolarChartSeriesTypesCommonPolarChartSeriesPoint {
-  @scala.inline
-  def apply(
-    border: AnonColorVisible = null,
-    color: String = null,
-    hoverMode: allArgumentPoints | allSeriesPoints | none | onlyPoint = null,
-    hoverStyle: AnonSize = null,
-    image: String | AnonUrl = null,
-    selectionMode: allArgumentPoints | allSeriesPoints | none | onlyPoint = null,
-    selectionStyle: AnonSize = null,
-    size: Int | Double = null,
-    symbol: circle | cross | polygon | square | triangle = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxPolarChartSeriesTypesCommonPolarChartSeriesPoint = {
+  
+  inline def apply(): dxPolarChartSeriesTypesCommonPolarChartSeriesPoint = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (hoverStyle != null) __obj.updateDynamic("hoverStyle")(hoverStyle.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (selectionStyle != null) __obj.updateDynamic("selectionStyle")(selectionStyle.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartSeriesTypesCommonPolarChartSeriesPoint]
   }
+  
+  extension [Self <: dxPolarChartSeriesTypesCommonPolarChartSeriesPoint](x: Self) {
+    
+    inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setHoverMode(value: PointInteractionMode): Self = StObject.set(x, "hoverMode", value.asInstanceOf[js.Any])
+    
+    inline def setHoverModeUndefined: Self = StObject.set(x, "hoverMode", js.undefined)
+    
+    inline def setHoverStyle(value: Border): Self = StObject.set(x, "hoverStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHoverStyleUndefined: Self = StObject.set(x, "hoverStyle", js.undefined)
+    
+    inline def setImage(value: String | Url): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setSelectionMode(value: PointInteractionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setSelectionStyle(value: Border): Self = StObject.set(x, "selectionStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionStyleUndefined: Self = StObject.set(x, "selectionStyle", js.undefined)
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setSymbol(value: PointSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

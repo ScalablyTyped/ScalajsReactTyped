@@ -1,67 +1,63 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`10`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11`
+import typingsJapgolly.activexOffice.activexOfficeInts.`12`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`10`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`12`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11`
 */
-trait MsoLineDashStyle extends js.Object
-
+trait MsoLineDashStyle extends StObject
 object MsoLineDashStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoLineDash: `4` = this.cast(4)
-  @scala.inline
-  def msoLineDashDot: `5` = this.cast(5)
-  @scala.inline
-  def msoLineDashDotDot: `6` = this.cast(6)
-  @scala.inline
-  def msoLineDashStyleMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def msoLineLongDash: `7` = this.cast(7)
-  @scala.inline
-  def msoLineLongDashDot: `8` = this.cast(8)
-  @scala.inline
-  def msoLineLongDashDotDot: `9` = this.cast(9)
-  @scala.inline
-  def msoLineRoundDot: `3` = this.cast(3)
-  @scala.inline
-  def msoLineSolid: `1` = this.cast(1)
-  @scala.inline
-  def msoLineSquareDot: `2` = this.cast(2)
-  @scala.inline
-  def msoLineSysDash: `10` = this.cast(10)
-  @scala.inline
-  def msoLineSysDashDot: `12` = this.cast(12)
-  @scala.inline
-  def msoLineSysDot: `11` = this.cast(11)
+  
+  inline def msoLineDash: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoLineDashDot: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoLineDashDotDot: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoLineDashStyleMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def msoLineLongDash: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoLineLongDashDot: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoLineLongDashDotDot: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoLineRoundDot: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoLineSolid: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoLineSquareDot: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoLineSysDash: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoLineSysDashDot: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoLineSysDot: `11` = 11.asInstanceOf[`11`]
 }
-

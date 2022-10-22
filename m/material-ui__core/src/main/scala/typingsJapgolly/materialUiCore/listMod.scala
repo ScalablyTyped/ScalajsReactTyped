@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.listListMod.ListProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.listListMod.ListTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.ul
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/List", JSImport.Namespace)
-@js.native
-object listMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ListProps, ComponentState, js.Any] {
-    def this(props: ListProps) = this()
-    def this(props: ListProps, context: js.Any) = this()
-  }
+object listMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Lists](https://mui.com/components/lists/)
+    * - [Transfer List](https://mui.com/components/transfer-list/)
+    *
+    * API:
+    *
+    * - [List API](https://mui.com/api/list/)
+    */
+  @JSImport("@material-ui/core/List", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[ListProps]]
+  val default: OverridableComponent[ListTypeMap[js.Object, ul]] = js.native
   
+  type _To = OverridableComponent[ListTypeMap[js.Object, ul]]
+  
+  /* This means you don't have to write `default`, but can instead just say `listMod.foo` */
+  override def _to: OverridableComponent[ListTypeMap[js.Object, ul]] = default
 }
-

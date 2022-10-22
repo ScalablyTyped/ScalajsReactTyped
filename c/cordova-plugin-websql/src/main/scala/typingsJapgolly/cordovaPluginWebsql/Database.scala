@@ -1,16 +1,16 @@
 package typingsJapgolly.cordovaPluginWebsql
 
-import org.scalablytyped.runtime.Instantiable5
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Database extends js.Object {
+trait Database extends StObject {
+  
   var displayName: String = js.native
+  
   var name: String = js.native
-  var size: Double = js.native
-  var version: String = js.native
+  
   /**
     * Starts new transaction.
     * @param callback        Function, that will be called when transaction starts.
@@ -27,6 +27,14 @@ trait Database extends js.Object {
     errorCallback: js.Function1[/* error */ SqlError, Unit],
     successCallback: js.Function0[Unit]
   ): Unit = js.native
+  def readTransaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: Unit,
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
+  var size: Double = js.native
+  
   /**
     * Starts new transaction.
     * @param callback        Function, that will be called when transaction starts.
@@ -43,18 +51,11 @@ trait Database extends js.Object {
     errorCallback: js.Function1[/* error */ SqlError, Unit],
     successCallback: js.Function0[Unit]
   ): Unit = js.native
+  def transaction(
+    callback: js.Function1[/* transaction */ SqlTransaction, Unit],
+    errorCallback: Unit,
+    successCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
+  var version: String = js.native
 }
-
-@JSGlobal("Database")
-@js.native
-object Database
-  extends /** Constructor for Database object */
-Instantiable5[
-      /* name */ String, 
-      /* version */ String, 
-      /* displayname */ String, 
-      /* size */ Double, 
-      /* creationCallback */ js.Function1[/* database */ Database, Unit], 
-      Database
-    ]
-

@@ -1,51 +1,74 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchemaExtension extends Entity {
-  // Description for the schema extension.
-  var description: js.UndefOr[String] = js.undefined
+trait SchemaExtension
+  extends StObject
+     with Entity {
+  
+  // Description for the schema extension. Supports $filter (eq).
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The appId of the application that is the owner of the schema extension. This property can be supplied on creation, to
     * set the owner. If not supplied, then the calling application's appId will be set as the owner. In either case, the
-    * signed-in user must be the owner of the application. Once set, this property is read-only and cannot be changed.
+    * signed-in user must be the owner of the application. So, for example, if creating a new schema extension definition
+    * using Graph Explorer, you must supply the owner property. Once set, this property is read-only and cannot be changed.
+    * Supports $filter (eq).
     */
   var owner: js.UndefOr[String] = js.undefined
+  
   // The collection of property names and types that make up the schema extension definition.
   var properties: js.UndefOr[js.Array[ExtensionSchemaProperty]] = js.undefined
+  
   /**
     * The lifecycle state of the schema extension. Possible states are InDevelopment, Available, and Deprecated.
-    * Automatically set to InDevelopment on creation. Schema extensions provides more information on the possible state
-    * transitions and behaviors.
+    * Automatically set to InDevelopment on creation. For more information about the possible state transitions and
+    * behaviors, see Schema extensions lifecycle. Supports $filter (eq).
     */
   var status: js.UndefOr[String] = js.undefined
+  
   /**
     * Set of Microsoft Graph types (that can support extensions) that the schema extension can be applied to. Select from
-    * contact, device, event, group, message, organization, post, or user.
+    * administrativeUnit, contact, device, event, group, message, organization, post, todoTask, todoTaskList, or user.
     */
   var targetTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SchemaExtension {
-  @scala.inline
-  def apply(
-    description: String = null,
-    id: String = null,
-    owner: String = null,
-    properties: js.Array[ExtensionSchemaProperty] = null,
-    status: String = null,
-    targetTypes: js.Array[String] = null
-  ): SchemaExtension = {
+  
+  inline def apply(): SchemaExtension = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (targetTypes != null) __obj.updateDynamic("targetTypes")(targetTypes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchemaExtension]
   }
+  
+  extension [Self <: SchemaExtension](x: Self) {
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setProperties(value: js.Array[ExtensionSchemaProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setPropertiesVarargs(value: ExtensionSchemaProperty*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setTargetTypes(value: js.Array[String]): Self = StObject.set(x, "targetTypes", value.asInstanceOf[js.Any])
+    
+    inline def setTargetTypesUndefined: Self = StObject.set(x, "targetTypes", js.undefined)
+    
+    inline def setTargetTypesVarargs(value: String*): Self = StObject.set(x, "targetTypes", js.Array(value*))
+  }
 }
-

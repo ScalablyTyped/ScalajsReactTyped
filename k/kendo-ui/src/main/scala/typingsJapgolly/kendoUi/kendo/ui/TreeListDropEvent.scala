@@ -1,40 +1,53 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.kendoUi.kendo.data.TreeListModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListDropEvent extends TreeListEvent {
+trait TreeListDropEvent
+  extends StObject
+     with TreeListEvent {
+  
   var destination: js.UndefOr[TreeListModel] = js.undefined
+  
   var dropTarget: js.UndefOr[Element] = js.undefined
+  
   var setValid: js.UndefOr[Boolean] = js.undefined
+  
   var source: js.UndefOr[TreeListModel] = js.undefined
+  
   var valid: js.UndefOr[Boolean] = js.undefined
 }
-
 object TreeListDropEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: TreeList,
-    destination: TreeListModel = null,
-    dropTarget: Element = null,
-    setValid: js.UndefOr[Boolean] = js.undefined,
-    source: TreeListModel = null,
-    valid: js.UndefOr[Boolean] = js.undefined
-  ): TreeListDropEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (!js.isUndefined(setValid)) __obj.updateDynamic("setValid")(setValid.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: TreeList): TreeListDropEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListDropEvent]
   }
+  
+  extension [Self <: TreeListDropEvent](x: Self) {
+    
+    inline def setDestination(value: TreeListModel): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    
+    inline def setDropTarget(value: Element): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    
+    inline def setSetValid(value: Boolean): Self = StObject.set(x, "setValid", value.asInstanceOf[js.Any])
+    
+    inline def setSetValidUndefined: Self = StObject.set(x, "setValid", js.undefined)
+    
+    inline def setSource(value: TreeListModel): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    
+    inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+  }
 }
-

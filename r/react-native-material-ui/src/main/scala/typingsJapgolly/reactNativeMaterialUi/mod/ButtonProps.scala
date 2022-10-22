@@ -1,53 +1,88 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.reactNativeMaterialUi.AnonText
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonProps extends js.Object {
+trait ButtonProps extends StObject {
+  
   var accent: js.UndefOr[Boolean] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String | Element] = js.undefined
+  
   var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var primary: js.UndefOr[Boolean] = js.undefined
+  
   var raised: js.UndefOr[Boolean] = js.undefined
-  var style: js.UndefOr[AnonText] = js.undefined
+  
+  var style: js.UndefOr[Text] = js.undefined
+  
   var testID: js.UndefOr[String] = js.undefined
+  
   var text: String
+  
   var upperCase: js.UndefOr[Boolean] = js.undefined
 }
-
 object ButtonProps {
-  @scala.inline
-  def apply(
-    text: String,
-    accent: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: String | Element = null,
-    onLongPress: js.UndefOr[Callback] = js.undefined,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    style: AnonText = null,
-    testID: String = null,
-    upperCase: js.UndefOr[Boolean] = js.undefined
-  ): ButtonProps = {
+  
+  inline def apply(text: String): ButtonProps = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    if (!js.isUndefined(accent)) __obj.updateDynamic("accent")(accent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    onLongPress.foreach(p => __obj.updateDynamic("onLongPress")(p.toJsFn))
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (!js.isUndefined(upperCase)) __obj.updateDynamic("upperCase")(upperCase.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonProps]
   }
+  
+  extension [Self <: ButtonProps](x: Self) {
+    
+    inline def setAccent(value: Boolean): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
+    
+    inline def setAccentUndefined: Self = StObject.set(x, "accent", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcon(value: String | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIconVdomElement(value: VdomElement): Self = StObject.set(x, "icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setOnLongPress(value: Callback): Self = StObject.set(x, "onLongPress", value.toJsFn)
+    
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    
+    inline def setOnPress(value: Callback): Self = StObject.set(x, "onPress", value.toJsFn)
+    
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    
+    inline def setPrimary(value: Boolean): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    
+    inline def setRaised(value: Boolean): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    
+    inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+    
+    inline def setStyle(value: Text): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setUpperCase(value: Boolean): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
+    
+    inline def setUpperCaseUndefined: Self = StObject.set(x, "upperCase", js.undefined)
+  }
 }
-

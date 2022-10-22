@@ -1,14 +1,29 @@
 package typingsJapgolly.chromecastCafSender.cast.framework
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("cast.framework.VolumeEventData")
-@js.native
-class VolumeEventData protected () extends EventData {
-  def this(volume: Double, isMute: Boolean) = this()
-  var isMute: Boolean = js.native
-  var volume: Double = js.native
+trait VolumeEventData
+  extends StObject
+     with EventData {
+  
+  var isMute: Boolean
+  
+  var volume: Double
 }
-
+object VolumeEventData {
+  
+  inline def apply(isMute: Boolean, `type`: String, volume: Double): VolumeEventData = {
+    val __obj = js.Dynamic.literal(isMute = isMute.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VolumeEventData]
+  }
+  
+  extension [Self <: VolumeEventData](x: Self) {
+    
+    inline def setIsMute(value: Boolean): Self = StObject.set(x, "isMute", value.asInstanceOf[js.Any])
+    
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+  }
+}

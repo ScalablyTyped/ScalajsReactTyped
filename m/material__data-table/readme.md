@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__data-table
 
-Typings are for version 4.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components Web data table component
@@ -10,10 +10,10 @@ The Material Components Web data table component
 | ------------------ | :-------------: |
 | Full name          | @material/data-table |
 | Keywords           | material components, material design, data table |
-| # releases         | 133 |
-| # dependents       | 6 |
-| # downloads        | 168588 |
-| # stars            | 0 |
+| # releases         | 731 |
+| # dependents       | 0.0 |
+| # downloads        | 151218.33333333334 |
+| # stars            | 16411.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

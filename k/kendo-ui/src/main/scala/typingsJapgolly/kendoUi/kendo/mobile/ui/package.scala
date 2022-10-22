@@ -1,15 +1,22 @@
-package typingsJapgolly.kendoUi.kendo.mobile
+package typingsJapgolly.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type DrawerAfterHideEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.DrawerEvent
-  type DrawerHideEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.DrawerEvent
-  type DrawerInitEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.DrawerEvent
-  type DrawerShowEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.DrawerEvent
-  type ModalViewCloseEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.ModalViewEvent
-  type ModalViewInitEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.ModalViewEvent
-  type PopOverCloseEvent = typingsJapgolly.kendoUi.kendo.mobile.ui.PopOverEvent
-}
+
+type DrawerAfterHideEvent = DrawerEvent
+
+type DrawerHideEvent = DrawerEvent
+
+type DrawerInitEvent = DrawerEvent
+
+type DrawerShowEvent = DrawerEvent
+
+type ModalViewCloseEvent = ModalViewEvent
+
+type ModalViewInitEvent = ModalViewEvent
+
+type PopOverCloseEvent = PopOverEvent
+
+type Widget = typingsJapgolly.kendoUi.kendo.ui.Widget

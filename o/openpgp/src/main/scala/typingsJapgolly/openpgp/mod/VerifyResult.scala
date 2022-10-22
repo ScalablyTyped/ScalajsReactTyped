@@ -1,24 +1,34 @@
 package typingsJapgolly.openpgp.mod
 
-import typingsJapgolly.openpgp.AnonValid
+import typingsJapgolly.openpgp.anon.Keyid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VerifyResult extends js.Object {
-  var data: String | (ReadableStream[String | scala.scalajs.js.typedarray.Uint8Array]) | NodeStream | scala.scalajs.js.typedarray.Uint8Array
-  var signatures: js.Array[AnonValid]
+trait VerifyResult extends StObject {
+  
+  var data: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array
+  
+  var signatures: js.Array[Keyid]
 }
-
 object VerifyResult {
-  @scala.inline
-  def apply(
-    data: String | (ReadableStream[String | scala.scalajs.js.typedarray.Uint8Array]) | NodeStream | scala.scalajs.js.typedarray.Uint8Array,
-    signatures: js.Array[AnonValid]
+  
+  inline def apply(
+    data: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array,
+    signatures: js.Array[Keyid]
   ): VerifyResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], signatures = signatures.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[VerifyResult]
   }
+  
+  extension [Self <: VerifyResult](x: Self) {
+    
+    inline def setData(
+      value: String | (ReadableStream[String | js.typedarray.Uint8Array]) | NodeStream | js.typedarray.Uint8Array
+    ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setSignatures(value: js.Array[Keyid]): Self = StObject.set(x, "signatures", value.asInstanceOf[js.Any])
+    
+    inline def setSignaturesVarargs(value: Keyid*): Self = StObject.set(x, "signatures", js.Array(value*))
+  }
 }
-

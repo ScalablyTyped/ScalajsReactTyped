@@ -10,15 +10,12 @@ jQuery assertions for the Chai assertion library
 | ------------------ | :-------------: |
 | Full name          | chai-jquery |
 | Keywords           | chai, chai-plugin, vendor, browser-only, dom, test, assertion, assert, testing, jQuery |
-| # releases         | 2 |
-| # dependents       | 16 |
-| # downloads        | 1428011 |
-| # stars            | 4 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 109342.66666666667 |
+| # stars            | 365.0 |
 
 ## Links
-- [Homepage](https://github.com/chaijs/chai-jquery#readme)
-- [Bugs](https://github.com/chaijs/chai-jquery/issues)
-- [Repository](https://github.com/chaijs/chai-jquery)
 - [Npm](https://www.npmjs.com/package/chai-jquery)
     
 

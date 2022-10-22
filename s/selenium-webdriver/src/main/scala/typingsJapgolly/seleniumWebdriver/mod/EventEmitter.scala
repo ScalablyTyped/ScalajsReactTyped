@@ -1,8 +1,8 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "EventEmitter")
 @js.native
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
 /**
   * @constructor
   */
-class EventEmitter () extends js.Object {
+open class EventEmitter () extends StObject {
+  
   /**
     * Registers a listener.
     * @param {string} type The type of event to listen for.
@@ -23,8 +24,10 @@ class EventEmitter () extends js.Object {
     * @private
     */
   def addListener(`type`: String, fn: js.Function): EventEmitter = js.native
-  def addListener(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
-  def addListener(`type`: String, fn: js.Function, opt_scope: js.Any, opt_oneshot: Boolean): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Any): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Any, opt_oneshot: Boolean): EventEmitter = js.native
+  def addListener(`type`: String, fn: js.Function, opt_scope: Unit, opt_oneshot: Boolean): EventEmitter = js.native
+  
   // endregion
   // region Methods
   /**
@@ -32,14 +35,16 @@ class EventEmitter () extends js.Object {
     * @param {string} type The type of event to emit.
     * @param {...*} var_args Any arguments to pass to each listener.
     */
-  def emit(`type`: String, var_args: js.Any*): Unit = js.native
+  def emit(`type`: String, var_args: Any*): Unit = js.native
+  
   /**
     * Returns a mutable list of listeners for a specific type of event.
     * @param {string} type The type of event to retrieve the listeners for.
     * @return {!Set<!Listener>} The registered listeners for the given event
     *     type.
     */
-  def listeners(`type`: String): js.Any = js.native
+  def listeners(`type`: String): Any = js.native
+  
   /**
     * An alias for {@code #addListener()}.
     * @param {string} type The type of event to listen for.
@@ -49,7 +54,8 @@ class EventEmitter () extends js.Object {
     * @return {!EventEmitter} A self reference.
     */
   def on(`type`: String, fn: js.Function): EventEmitter = js.native
-  def on(`type`: String, fn: js.Function, opt_scope: js.Any): EventEmitter = js.native
+  def on(`type`: String, fn: js.Function, opt_scope: Any): EventEmitter = js.native
+  
   /**
     * Registers a one-time listener which will be called only the first time an
     * event is emitted, after which it will be removed.
@@ -59,8 +65,9 @@ class EventEmitter () extends js.Object {
     *     listener.
     * @return {!EventEmitter} A self reference.
     */
-  def once(`type`: String, fn: js.Any): EventEmitter = js.native
-  def once(`type`: String, fn: js.Any, opt_scope: js.Any): EventEmitter = js.native
+  def once(`type`: String, fn: Any): EventEmitter = js.native
+  def once(`type`: String, fn: Any, opt_scope: Any): EventEmitter = js.native
+  
   /**
     * Removes all listeners for a specific type of event. If no event is
     * specified, all listeners across all types will be removed.
@@ -69,6 +76,7 @@ class EventEmitter () extends js.Object {
     */
   def removeAllListeners(): EventEmitter = js.native
   def removeAllListeners(opt_type: String): EventEmitter = js.native
+  
   /**
     * Removes a previously registered event listener.
     * @param {string} type The type of event to unregister.
@@ -77,4 +85,3 @@ class EventEmitter () extends js.Object {
     */
   def removeListener(`type`: String, listenerFn: js.Function): EventEmitter = js.native
 }
-

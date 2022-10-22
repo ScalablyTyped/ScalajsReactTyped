@@ -1,12 +1,14 @@
 package typingsJapgolly.lazyValue
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lazy-value", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T /* <: js.Function0[_] */](fn: T): T = js.native
+object mod {
+  
+  @JSImport("lazy-value", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T /* <: js.Function0[Any] */](function_ : T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(function_.asInstanceOf[js.Any]).asInstanceOf[T]
 }
-

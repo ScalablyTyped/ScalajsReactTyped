@@ -1,30 +1,47 @@
 package typingsJapgolly.watsonDeveloperCloud.compareComplyV1Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Basic information about the input document. */
-trait Document extends js.Object {
+trait Document extends StObject {
+  
   /** The MD5 hash value of the input document. */
   var hash: js.UndefOr[String] = js.undefined
+  
   /** The input document converted into HTML format. */
   var html: js.UndefOr[String] = js.undefined
+  
   /** The label applied to the input document with the calling method's `file_1_label` or `file_2_label` value. This field is specified only in the output of the **Comparing two documents** method. */
   var label: js.UndefOr[String] = js.undefined
+  
   /** Document title, if detected. */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object Document {
-  @scala.inline
-  def apply(hash: String = null, html: String = null, label: String = null, title: String = null): Document = {
+  
+  inline def apply(): Document = {
     val __obj = js.Dynamic.literal()
-    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }
+  
+  extension [Self <: Document](x: Self) {
+    
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

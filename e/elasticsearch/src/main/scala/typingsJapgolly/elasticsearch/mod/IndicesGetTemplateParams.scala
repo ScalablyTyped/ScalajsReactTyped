@@ -1,42 +1,52 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IndicesGetTemplateParams extends GenericParams {
+trait IndicesGetTemplateParams
+  extends StObject
+     with GenericParams {
+  
   var flatSettings: js.UndefOr[Boolean] = js.undefined
+  
+  var includeTypeName: js.UndefOr[Boolean] = js.undefined
+  
   var local: js.UndefOr[Boolean] = js.undefined
+  
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var name: js.UndefOr[NameList] = js.undefined
 }
-
 object IndicesGetTemplateParams {
-  @scala.inline
-  def apply(
-    body: js.Any = null,
-    filterPath: String | js.Array[String] = null,
-    flatSettings: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    local: js.UndefOr[Boolean] = js.undefined,
-    masterTimeout: TimeSpan = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    name: NameList = null,
-    requestTimeout: Int | Double = null
-  ): IndicesGetTemplateParams = {
+  
+  inline def apply(): IndicesGetTemplateParams = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (!js.isUndefined(flatSettings)) __obj.updateDynamic("flatSettings")(flatSettings.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (!js.isUndefined(local)) __obj.updateDynamic("local")(local.asInstanceOf[js.Any])
-    if (masterTimeout != null) __obj.updateDynamic("masterTimeout")(masterTimeout.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndicesGetTemplateParams]
   }
+  
+  extension [Self <: IndicesGetTemplateParams](x: Self) {
+    
+    inline def setFlatSettings(value: Boolean): Self = StObject.set(x, "flatSettings", value.asInstanceOf[js.Any])
+    
+    inline def setFlatSettingsUndefined: Self = StObject.set(x, "flatSettings", js.undefined)
+    
+    inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeTypeNameUndefined: Self = StObject.set(x, "includeTypeName", js.undefined)
+    
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    
+    inline def setMasterTimeout(value: TimeSpan): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    
+    inline def setName(value: NameList): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value*))
+  }
 }
-

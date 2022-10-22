@@ -1,50 +1,68 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import typingsJapgolly.reactBootstrapTable.AnonComparatorDate
-import typingsJapgolly.reactBootstrapTable.AnonDate
+import typingsJapgolly.reactBootstrapTable.anon.Comparator
+import typingsJapgolly.reactBootstrapTable.anon.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DateFilter extends _Filter {
+trait DateFilter
+  extends StObject
+     with _Filter {
+  
   /**
-  	 * Date filter comparators
-  	 */
+    * Date filter comparators
+    */
   var dateComparators: js.UndefOr[js.Array[FilterComparator]] = js.undefined
+  
   /**
-  	 * Default value for the filter.
-  	 */
-  var defaultValue: js.UndefOr[AnonDate] = js.undefined
+    * Default value for the filter.
+    */
+  var defaultValue: js.UndefOr[Comparator] = js.undefined
+  
   /**
-  	 * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
-  	 */
+    * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
+    */
   var delay: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * CSS Style to use for the select filter.
-  	 */
-  var style: js.UndefOr[AnonComparatorDate] = js.undefined
+    * CSS Style to use for the select filter.
+    */
+  var style: js.UndefOr[Date] = js.undefined
+  
   /**
-  	 * Filter type must be 'DateFilter'
-  	 */
+    * Filter type must be 'DateFilter'
+    */
   var `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.DateFilter
 }
-
 object DateFilter {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.DateFilter,
-    dateComparators: js.Array[FilterComparator] = null,
-    defaultValue: AnonDate = null,
-    delay: Int | Double = null,
-    style: AnonComparatorDate = null
-  ): DateFilter = {
+  
+  inline def apply(): DateFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (dateComparators != null) __obj.updateDynamic("dateComparators")(dateComparators.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DateFilter")
     __obj.asInstanceOf[DateFilter]
   }
+  
+  extension [Self <: DateFilter](x: Self) {
+    
+    inline def setDateComparators(value: js.Array[FilterComparator]): Self = StObject.set(x, "dateComparators", value.asInstanceOf[js.Any])
+    
+    inline def setDateComparatorsUndefined: Self = StObject.set(x, "dateComparators", js.undefined)
+    
+    inline def setDateComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "dateComparators", js.Array(value*))
+    
+    inline def setDefaultValue(value: Comparator): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setStyle(value: Date): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.DateFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

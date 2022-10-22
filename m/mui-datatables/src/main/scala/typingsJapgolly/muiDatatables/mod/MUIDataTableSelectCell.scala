@@ -1,50 +1,80 @@
 package typingsJapgolly.muiDatatables.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableSelectCell extends js.Object {
+trait MUIDataTableSelectCell extends StObject {
+  
   var checked: Boolean
+  
   var classes: js.UndefOr[js.Object] = js.undefined
+  
   var expandableOn: js.UndefOr[Boolean] = js.undefined
+  
   var fixedHeader: Boolean
+  
   var isHeaderCell: js.UndefOr[Boolean] = js.undefined
+  
   var isRowExpanded: js.UndefOr[Boolean] = js.undefined
+  
   var isRowSelectable: js.UndefOr[Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var onExpand: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var otherProps: js.UndefOr[js.Any] = js.undefined
+  
+  var onChange: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var onExpand: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var otherProps: js.UndefOr[Any] = js.undefined
+  
   var selectableOn: js.UndefOr[Boolean] = js.undefined
 }
-
 object MUIDataTableSelectCell {
-  @scala.inline
-  def apply(
-    checked: Boolean,
-    fixedHeader: Boolean,
-    classes: js.Object = null,
-    expandableOn: js.UndefOr[Boolean] = js.undefined,
-    isHeaderCell: js.UndefOr[Boolean] = js.undefined,
-    isRowExpanded: js.UndefOr[Boolean] = js.undefined,
-    isRowSelectable: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* args */ js.Any => CallbackTo[js.Any] = null,
-    onExpand: /* args */ js.Any => CallbackTo[js.Any] = null,
-    otherProps: js.Any = null,
-    selectableOn: js.UndefOr[Boolean] = js.undefined
-  ): MUIDataTableSelectCell = {
+  
+  inline def apply(checked: Boolean, fixedHeader: Boolean): MUIDataTableSelectCell = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], fixedHeader = fixedHeader.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (!js.isUndefined(expandableOn)) __obj.updateDynamic("expandableOn")(expandableOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(isHeaderCell)) __obj.updateDynamic("isHeaderCell")(isHeaderCell.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRowExpanded)) __obj.updateDynamic("isRowExpanded")(isRowExpanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRowSelectable)) __obj.updateDynamic("isRowSelectable")(isRowSelectable.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ js.Any) => onChange(t0).runNow()))
-    if (onExpand != null) __obj.updateDynamic("onExpand")(js.Any.fromFunction1((t0: /* args */ js.Any) => onExpand(t0).runNow()))
-    if (otherProps != null) __obj.updateDynamic("otherProps")(otherProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectableOn)) __obj.updateDynamic("selectableOn")(selectableOn.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableSelectCell]
   }
+  
+  extension [Self <: MUIDataTableSelectCell](x: Self) {
+    
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setExpandableOn(value: Boolean): Self = StObject.set(x, "expandableOn", value.asInstanceOf[js.Any])
+    
+    inline def setExpandableOnUndefined: Self = StObject.set(x, "expandableOn", js.undefined)
+    
+    inline def setFixedHeader(value: Boolean): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+    
+    inline def setIsHeaderCell(value: Boolean): Self = StObject.set(x, "isHeaderCell", value.asInstanceOf[js.Any])
+    
+    inline def setIsHeaderCellUndefined: Self = StObject.set(x, "isHeaderCell", js.undefined)
+    
+    inline def setIsRowExpanded(value: Boolean): Self = StObject.set(x, "isRowExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setIsRowExpandedUndefined: Self = StObject.set(x, "isRowExpanded", js.undefined)
+    
+    inline def setIsRowSelectable(value: Boolean): Self = StObject.set(x, "isRowSelectable", value.asInstanceOf[js.Any])
+    
+    inline def setIsRowSelectableUndefined: Self = StObject.set(x, "isRowSelectable", js.undefined)
+    
+    inline def setOnChange(value: /* args */ Any => Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    
+    inline def setOnExpand(value: /* args */ Any => Any): Self = StObject.set(x, "onExpand", js.Any.fromFunction1(value))
+    
+    inline def setOnExpandUndefined: Self = StObject.set(x, "onExpand", js.undefined)
+    
+    inline def setOtherProps(value: Any): Self = StObject.set(x, "otherProps", value.asInstanceOf[js.Any])
+    
+    inline def setOtherPropsUndefined: Self = StObject.set(x, "otherProps", js.undefined)
+    
+    inline def setSelectableOn(value: Boolean): Self = StObject.set(x, "selectableOn", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableOnUndefined: Self = StObject.set(x, "selectableOn", js.undefined)
+  }
 }
-

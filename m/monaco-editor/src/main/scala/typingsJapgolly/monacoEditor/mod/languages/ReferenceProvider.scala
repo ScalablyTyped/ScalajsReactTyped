@@ -1,28 +1,32 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceProvider extends js.Object {
+trait ReferenceProvider extends StObject {
+  
   /**
     * Provide a set of project-wide references for the given position and document.
     */
   def provideReferences(model: ITextModel, position: Position, context: ReferenceContext, token: CancellationToken): ProviderResult[js.Array[Location]]
 }
-
 object ReferenceProvider {
-  @scala.inline
-  def apply(
-    provideReferences: (ITextModel, Position, ReferenceContext, CancellationToken) => CallbackTo[ProviderResult[js.Array[Location]]]
+  
+  inline def apply(
+    provideReferences: (ITextModel, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]
   ): ReferenceProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideReferences")(js.Any.fromFunction4((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Position, t2: typingsJapgolly.monacoEditor.mod.languages.ReferenceContext, t3: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideReferences(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(provideReferences = js.Any.fromFunction4(provideReferences))
     __obj.asInstanceOf[ReferenceProvider]
   }
+  
+  extension [Self <: ReferenceProvider](x: Self) {
+    
+    inline def setProvideReferences(
+      value: (ITextModel, Position, ReferenceContext, CancellationToken) => ProviderResult[js.Array[Location]]
+    ): Self = StObject.set(x, "provideReferences", js.Any.fromFunction4(value))
+  }
 }
-

@@ -1,32 +1,28 @@
 package typingsJapgolly.webcl.WEBCL
 
-import typingsJapgolly.webcl.webclNumbers.`-1`
-import typingsJapgolly.webcl.webclNumbers.`-2`
-import typingsJapgolly.webcl.webclNumbers.`-3`
-import typingsJapgolly.webcl.webclNumbers.`0`
+import typingsJapgolly.webcl.webclInts.`-1`
+import typingsJapgolly.webcl.webclInts.`-2`
+import typingsJapgolly.webcl.webclInts.`-3`
+import typingsJapgolly.webcl.webclInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_build_status */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webcl.webclNumbers.`0`
-  - typingsJapgolly.webcl.webclNumbers.`-1`
-  - typingsJapgolly.webcl.webclNumbers.`-2`
-  - typingsJapgolly.webcl.webclNumbers.`-3`
+  - typingsJapgolly.webcl.webclInts.`0`
+  - typingsJapgolly.webcl.webclInts.`-1`
+  - typingsJapgolly.webcl.webclInts.`-2`
+  - typingsJapgolly.webcl.webclInts.`-3`
 */
-trait BuildStatus extends js.Object
-
+trait BuildStatus extends StObject
 object BuildStatus {
-  @scala.inline
-  def BUILD_ERROR: `-2` = this.cast(-2)
-  @scala.inline
-  def BUILD_IN_PROGRESS: `-3` = this.cast(-3)
-  @scala.inline
-  def BUILD_NONE: `-1` = this.cast(-1)
-  @scala.inline
-  def BUILD_SUCCESS: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BUILD_ERROR: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def BUILD_IN_PROGRESS: `-3` = -3.asInstanceOf[`-3`]
+  
+  inline def BUILD_NONE: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def BUILD_SUCCESS: `0` = 0.asInstanceOf[`0`]
 }
-

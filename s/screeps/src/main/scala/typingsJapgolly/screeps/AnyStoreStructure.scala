@@ -1,8 +1,8 @@
 package typingsJapgolly.screeps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.screeps.StructureExtension
@@ -17,5 +17,4 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.screeps.StructureTower
   - typingsJapgolly.screeps.StructureContainer
 */
-trait AnyStoreStructure extends js.Object
-
+trait AnyStoreStructure extends StObject

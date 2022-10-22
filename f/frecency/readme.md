@@ -10,10 +10,10 @@ Frecency sorting for search results.
 | ------------------ | :-------------: |
 | Full name          | frecency |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 1 |
-| # downloads        | 2721 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 270.6666666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/mixmaxhq/frecency#readme)

@@ -1,50 +1,61 @@
 package typingsJapgolly.elasticsearch.mod
 
-import typingsJapgolly.elasticsearch.AnonConflicts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReindexParams extends GenericParams {
+trait ReindexParams
+  extends StObject
+     with GenericParams {
+  
   @JSName("body")
-  var body_ReindexParams: AnonConflicts
+  var body_ReindexParams: typingsJapgolly.elasticsearch.anon.Conflicts
+  
   var refresh: js.UndefOr[Boolean] = js.undefined
+  
   var requestsPerSecond: js.UndefOr[Double] = js.undefined
+  
   var slices: js.UndefOr[Double] = js.undefined
+  
   var timeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var waitForActiveShards: js.UndefOr[String] = js.undefined
+  
   var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReindexParams {
-  @scala.inline
-  def apply(
-    body: AnonConflicts,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    refresh: js.UndefOr[Boolean] = js.undefined,
-    requestTimeout: Int | Double = null,
-    requestsPerSecond: Int | Double = null,
-    slices: Int | Double = null,
-    timeout: TimeSpan = null,
-    waitForActiveShards: String = null,
-    waitForCompletion: js.UndefOr[Boolean] = js.undefined
-  ): ReindexParams = {
+  
+  inline def apply(body: typingsJapgolly.elasticsearch.anon.Conflicts): ReindexParams = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (requestsPerSecond != null) __obj.updateDynamic("requestsPerSecond")(requestsPerSecond.asInstanceOf[js.Any])
-    if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForCompletion)) __obj.updateDynamic("waitForCompletion")(waitForCompletion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReindexParams]
   }
+  
+  extension [Self <: ReindexParams](x: Self) {
+    
+    inline def setBody(value: typingsJapgolly.elasticsearch.anon.Conflicts): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    
+    inline def setRequestsPerSecond(value: Double): Self = StObject.set(x, "requestsPerSecond", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsPerSecondUndefined: Self = StObject.set(x, "requestsPerSecond", js.undefined)
+    
+    inline def setSlices(value: Double): Self = StObject.set(x, "slices", value.asInstanceOf[js.Any])
+    
+    inline def setSlicesUndefined: Self = StObject.set(x, "slices", js.undefined)
+    
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
+    
+    inline def setWaitForCompletion(value: Boolean): Self = StObject.set(x, "waitForCompletion", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForCompletionUndefined: Self = StObject.set(x, "waitForCompletion", js.undefined)
+  }
 }
-

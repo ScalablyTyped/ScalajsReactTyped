@@ -2,14 +2,16 @@ package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OutputDecorator
-  extends Instantiable0[js.Any]
-     with Instantiable1[/* bindingPropertyName */ String, js.Any] {
+  extends StObject
+     with Instantiable0[Any]
+     with Instantiable1[/* bindingPropertyName */ String, Any] {
+  
   /**
     * Decorator that marks a class field as an output property and supplies configuration metadata.
     * The DOM property bound to the output property is automatically updated during change detection.
@@ -23,10 +25,9 @@ trait OutputDecorator
     *
     * See `Input` decorator for an example of providing a binding name.
     *
-    * @see [Input and Output properties](guide/template-syntax#input-and-output-properties)
+    * @see [Input and Output properties](guide/inputs-outputs)
     *
     */
-  def apply(): js.Any = js.native
-  def apply(bindingPropertyName: String): js.Any = js.native
+  def apply(): Any = js.native
+  def apply(bindingPropertyName: String): Any = js.native
 }
-

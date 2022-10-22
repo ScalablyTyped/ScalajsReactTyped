@@ -1,53 +1,51 @@
 package typingsJapgolly.camljs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DateRangesOverlapType extends js.Object
-
+sealed trait DateRangesOverlapType extends StObject
 @JSImport("camljs", "DateRangesOverlapType")
 @js.native
-object DateRangesOverlapType extends js.Object {
+object DateRangesOverlapType extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[DateRangesOverlapType & Double] = js.native
+  
   /** Returns events for one day, specified by CalendarDate in QueryOptions */
   @js.native
-  sealed trait Day extends DateRangesOverlapType
+  sealed trait Day
+    extends StObject
+       with DateRangesOverlapType
+  /* 1 */ val Day: typingsJapgolly.camljs.mod.DateRangesOverlapType.Day & Double = js.native
   
   /** Returns events for one month, specified by CalendarDate in QueryOptions.
     Caution: usually also returns few days from previous and next months */
   @js.native
-  sealed trait Month extends DateRangesOverlapType
+  sealed trait Month
+    extends StObject
+       with DateRangesOverlapType
+  /* 3 */ val Month: typingsJapgolly.camljs.mod.DateRangesOverlapType.Month & Double = js.native
   
   /** Returns events for today */
   @js.native
-  sealed trait Now extends DateRangesOverlapType
+  sealed trait Now
+    extends StObject
+       with DateRangesOverlapType
+  /* 0 */ val Now: typingsJapgolly.camljs.mod.DateRangesOverlapType.Now & Double = js.native
   
   /** Returns events for one week, specified by CalendarDate in QueryOptions */
   @js.native
-  sealed trait Week extends DateRangesOverlapType
+  sealed trait Week
+    extends StObject
+       with DateRangesOverlapType
+  /* 2 */ val Week: typingsJapgolly.camljs.mod.DateRangesOverlapType.Week & Double = js.native
   
   /** Returns events for one year, specified by CalendarDate in QueryOptions */
   @js.native
-  sealed trait Year extends DateRangesOverlapType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DateRangesOverlapType with Double] = js.native
-  /* 1 */ @js.native
-  object Day extends TopLevel[Day with Double]
-  
-  /* 3 */ @js.native
-  object Month extends TopLevel[Month with Double]
-  
-  /* 0 */ @js.native
-  object Now extends TopLevel[Now with Double]
-  
-  /* 2 */ @js.native
-  object Week extends TopLevel[Week with Double]
-  
-  /* 4 */ @js.native
-  object Year extends TopLevel[Year with Double]
-  
+  sealed trait Year
+    extends StObject
+       with DateRangesOverlapType
+  /* 4 */ val Year: typingsJapgolly.camljs.mod.DateRangesOverlapType.Year & Double = js.native
 }
-

@@ -1,27 +1,38 @@
 package typingsJapgolly.twit.mod.Twitter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaEntity extends js.Object {
+trait MediaEntity extends StObject {
+  
   var display_url: String
+  
   var expanded_url: String
+  
   var id: Double
+  
   var id_str: String
+  
   var indices: js.Tuple2[Double, Double]
+  
   var media_url: String
+  
   var media_url_https: String
+  
   var sizes: Sizes
+  
   var source_status_id: Double
+  
   var source_status_id_str: String
+  
   var `type`: String
+  
   var url: String
 }
-
 object MediaEntity {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     display_url: String,
     expanded_url: String,
     id: Double,
@@ -39,5 +50,31 @@ object MediaEntity {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaEntity]
   }
+  
+  extension [Self <: MediaEntity](x: Self) {
+    
+    inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
+    
+    inline def setExpanded_url(value: String): Self = StObject.set(x, "expanded_url", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setId_str(value: String): Self = StObject.set(x, "id_str", value.asInstanceOf[js.Any])
+    
+    inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_url(value: String): Self = StObject.set(x, "media_url", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_url_https(value: String): Self = StObject.set(x, "media_url_https", value.asInstanceOf[js.Any])
+    
+    inline def setSizes(value: Sizes): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    
+    inline def setSource_status_id(value: Double): Self = StObject.set(x, "source_status_id", value.asInstanceOf[js.Any])
+    
+    inline def setSource_status_id_str(value: String): Self = StObject.set(x, "source_status_id_str", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

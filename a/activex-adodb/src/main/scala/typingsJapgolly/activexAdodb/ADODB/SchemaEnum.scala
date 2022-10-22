@@ -1,197 +1,193 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`10`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`11`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`12`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`13`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`14`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`15`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`17`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`18`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`19`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`20`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`21`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`22`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`23`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`24`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`25`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`26`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`27`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`28`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`29`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`30`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`31`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`32`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`33`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`34`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`35`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`36`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`37`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`38`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`39`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`40`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`41`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`42`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`43`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`5`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`6`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`7`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`8`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`9`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`10`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`11`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`12`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`13`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`14`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`15`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`17`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`18`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`19`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`20`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`21`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`22`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`23`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`24`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`25`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`26`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`27`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`28`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`29`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`30`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`31`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`32`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`33`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`34`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`35`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`36`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`37`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`38`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`39`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`40`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`41`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`42`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`43`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`5`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`6`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`7`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`8`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`41`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`5`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`3`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`13`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`11`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`42`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`6`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`7`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`32`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`30`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`31`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`33`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`27`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`40`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`34`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`12`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`8`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`35`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`36`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`38`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`28`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`29`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`26`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`37`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`22`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`9`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`17`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`43`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`18`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`19`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`10`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`14`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`20`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`21`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`39`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`15`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`24`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`23`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`25`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`41`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`5`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`3`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`13`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`11`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`42`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`6`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`7`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`32`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`30`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`31`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`33`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`27`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`40`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`34`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`12`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`8`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`35`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`36`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`38`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`28`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`29`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`26`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`37`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`22`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`9`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`17`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`43`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`18`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`19`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`10`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`14`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`20`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`21`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`39`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`15`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`24`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`23`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`25`
 */
-trait SchemaEnum extends js.Object
-
+trait SchemaEnum extends StObject
 object SchemaEnum {
-  @scala.inline
-  def adSchemaActions: `41` = this.cast(41)
-  @scala.inline
-  def adSchemaAsserts: `0` = this.cast(0)
-  @scala.inline
-  def adSchemaCatalogs: `1` = this.cast(1)
-  @scala.inline
-  def adSchemaCharacterSets: `2` = this.cast(2)
-  @scala.inline
-  def adSchemaCheckConstraints: `5` = this.cast(5)
-  @scala.inline
-  def adSchemaCollations: `3` = this.cast(3)
-  @scala.inline
-  def adSchemaColumnPrivileges: `13` = this.cast(13)
-  @scala.inline
-  def adSchemaColumns: `4` = this.cast(4)
-  @scala.inline
-  def adSchemaColumnsDomainUsage: `11` = this.cast(11)
-  @scala.inline
-  def adSchemaCommands: `42` = this.cast(42)
-  @scala.inline
-  def adSchemaConstraintColumnUsage: `6` = this.cast(6)
-  @scala.inline
-  def adSchemaConstraintTableUsage: `7` = this.cast(7)
-  @scala.inline
-  def adSchemaCubes: `32` = this.cast(32)
-  @scala.inline
-  def adSchemaDBInfoKeywords: `30` = this.cast(30)
-  @scala.inline
-  def adSchemaDBInfoLiterals: `31` = this.cast(31)
-  @scala.inline
-  def adSchemaDimensions: `33` = this.cast(33)
-  @scala.inline
-  def adSchemaForeignKeys: `27` = this.cast(27)
-  @scala.inline
-  def adSchemaFunctions: `40` = this.cast(40)
-  @scala.inline
-  def adSchemaHierarchies: `34` = this.cast(34)
-  @scala.inline
-  def adSchemaIndexes: `12` = this.cast(12)
-  @scala.inline
-  def adSchemaKeyColumnUsage: `8` = this.cast(8)
-  @scala.inline
-  def adSchemaLevels: `35` = this.cast(35)
-  @scala.inline
-  def adSchemaMeasures: `36` = this.cast(36)
-  @scala.inline
-  def adSchemaMembers: `38` = this.cast(38)
-  @scala.inline
-  def adSchemaPrimaryKeys: `28` = this.cast(28)
-  @scala.inline
-  def adSchemaProcedureColumns: `29` = this.cast(29)
-  @scala.inline
-  def adSchemaProcedureParameters: `26` = this.cast(26)
-  @scala.inline
-  def adSchemaProcedures: `16` = this.cast(16)
-  @scala.inline
-  def adSchemaProperties: `37` = this.cast(37)
-  @scala.inline
-  def adSchemaProviderSpecific: `-1` = this.cast(-1)
-  @scala.inline
-  def adSchemaProviderTypes: `22` = this.cast(22)
-  @scala.inline
-  def adSchemaReferentialConstraints: `9` = this.cast(9)
-  @scala.inline
-  def adSchemaReferentialContraints: `9` = this.cast(9)
-  @scala.inline
-  def adSchemaSQLLanguages: `18` = this.cast(18)
-  @scala.inline
-  def adSchemaSchemata: `17` = this.cast(17)
-  @scala.inline
-  def adSchemaSets: `43` = this.cast(43)
-  @scala.inline
-  def adSchemaStatistics: `19` = this.cast(19)
-  @scala.inline
-  def adSchemaTableConstraints: `10` = this.cast(10)
-  @scala.inline
-  def adSchemaTablePrivileges: `14` = this.cast(14)
-  @scala.inline
-  def adSchemaTables: `20` = this.cast(20)
-  @scala.inline
-  def adSchemaTranslations: `21` = this.cast(21)
-  @scala.inline
-  def adSchemaTrustees: `39` = this.cast(39)
-  @scala.inline
-  def adSchemaUsagePrivileges: `15` = this.cast(15)
-  @scala.inline
-  def adSchemaViewColumnUsage: `24` = this.cast(24)
-  @scala.inline
-  def adSchemaViewTableUsage: `25` = this.cast(25)
-  @scala.inline
-  def adSchemaViews: `23` = this.cast(23)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adSchemaActions: `41` = 41.asInstanceOf[`41`]
+  
+  inline def adSchemaAsserts: `0` = 0.asInstanceOf[`0`]
+  
+  inline def adSchemaCatalogs: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adSchemaCharacterSets: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adSchemaCheckConstraints: `5` = 5.asInstanceOf[`5`]
+  
+  inline def adSchemaCollations: `3` = 3.asInstanceOf[`3`]
+  
+  inline def adSchemaColumnPrivileges: `13` = 13.asInstanceOf[`13`]
+  
+  inline def adSchemaColumns: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adSchemaColumnsDomainUsage: `11` = 11.asInstanceOf[`11`]
+  
+  inline def adSchemaCommands: `42` = 42.asInstanceOf[`42`]
+  
+  inline def adSchemaConstraintColumnUsage: `6` = 6.asInstanceOf[`6`]
+  
+  inline def adSchemaConstraintTableUsage: `7` = 7.asInstanceOf[`7`]
+  
+  inline def adSchemaCubes: `32` = 32.asInstanceOf[`32`]
+  
+  inline def adSchemaDBInfoKeywords: `30` = 30.asInstanceOf[`30`]
+  
+  inline def adSchemaDBInfoLiterals: `31` = 31.asInstanceOf[`31`]
+  
+  inline def adSchemaDimensions: `33` = 33.asInstanceOf[`33`]
+  
+  inline def adSchemaForeignKeys: `27` = 27.asInstanceOf[`27`]
+  
+  inline def adSchemaFunctions: `40` = 40.asInstanceOf[`40`]
+  
+  inline def adSchemaHierarchies: `34` = 34.asInstanceOf[`34`]
+  
+  inline def adSchemaIndexes: `12` = 12.asInstanceOf[`12`]
+  
+  inline def adSchemaKeyColumnUsage: `8` = 8.asInstanceOf[`8`]
+  
+  inline def adSchemaLevels: `35` = 35.asInstanceOf[`35`]
+  
+  inline def adSchemaMeasures: `36` = 36.asInstanceOf[`36`]
+  
+  inline def adSchemaMembers: `38` = 38.asInstanceOf[`38`]
+  
+  inline def adSchemaPrimaryKeys: `28` = 28.asInstanceOf[`28`]
+  
+  inline def adSchemaProcedureColumns: `29` = 29.asInstanceOf[`29`]
+  
+  inline def adSchemaProcedureParameters: `26` = 26.asInstanceOf[`26`]
+  
+  inline def adSchemaProcedures: `16` = 16.asInstanceOf[`16`]
+  
+  inline def adSchemaProperties: `37` = 37.asInstanceOf[`37`]
+  
+  inline def adSchemaProviderSpecific: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def adSchemaProviderTypes: `22` = 22.asInstanceOf[`22`]
+  
+  inline def adSchemaReferentialConstraints: `9` = 9.asInstanceOf[`9`]
+  
+  inline def adSchemaReferentialContraints: `9` = 9.asInstanceOf[`9`]
+  
+  inline def adSchemaSQLLanguages: `18` = 18.asInstanceOf[`18`]
+  
+  inline def adSchemaSchemata: `17` = 17.asInstanceOf[`17`]
+  
+  inline def adSchemaSets: `43` = 43.asInstanceOf[`43`]
+  
+  inline def adSchemaStatistics: `19` = 19.asInstanceOf[`19`]
+  
+  inline def adSchemaTableConstraints: `10` = 10.asInstanceOf[`10`]
+  
+  inline def adSchemaTablePrivileges: `14` = 14.asInstanceOf[`14`]
+  
+  inline def adSchemaTables: `20` = 20.asInstanceOf[`20`]
+  
+  inline def adSchemaTranslations: `21` = 21.asInstanceOf[`21`]
+  
+  inline def adSchemaTrustees: `39` = 39.asInstanceOf[`39`]
+  
+  inline def adSchemaUsagePrivileges: `15` = 15.asInstanceOf[`15`]
+  
+  inline def adSchemaViewColumnUsage: `24` = 24.asInstanceOf[`24`]
+  
+  inline def adSchemaViewTableUsage: `25` = 25.asInstanceOf[`25`]
+  
+  inline def adSchemaViews: `23` = 23.asInstanceOf[`23`]
 }
-

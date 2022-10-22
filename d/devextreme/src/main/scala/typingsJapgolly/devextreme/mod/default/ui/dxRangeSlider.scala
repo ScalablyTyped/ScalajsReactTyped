@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxRangeSliderOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxRangeSlider")
+@JSImport("devextreme", "default.ui.dxRangeSlider")
 @js.native
-class dxRangeSlider protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.Editor {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxRangeSliderOptions) = this()
-  def this(element: Element, options: dxRangeSliderOptions) = this()
-}
-
+open class dxRangeSlider ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.Editor[dxRangeSliderOptions]

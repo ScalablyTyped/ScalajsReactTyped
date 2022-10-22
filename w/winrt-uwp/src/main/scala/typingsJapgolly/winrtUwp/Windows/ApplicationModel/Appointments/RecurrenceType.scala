@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Appointments
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RecurrenceType extends js.Object
-
+sealed trait RecurrenceType extends StObject
 /** Specifies the recurrence type of an appointment. */
 @JSGlobal("Windows.ApplicationModel.Appointments.RecurrenceType")
 @js.native
-object RecurrenceType extends js.Object {
+object RecurrenceType extends StObject {
+  
   /** The appointment is an exceptional instance of a recurring appointment. */
   @js.native
-  sealed trait exceptionInstance extends RecurrenceType
+  sealed trait exceptionInstance
+    extends StObject
+       with RecurrenceType
   
   /** The appointment is an instance of a recurring appointment. */
   @js.native
-  sealed trait instance extends RecurrenceType
+  sealed trait instance
+    extends StObject
+       with RecurrenceType
   
   /** The appointment is the master appointment for a recurring appointment. */
   @js.native
-  sealed trait master extends RecurrenceType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecurrenceType with Double] = js.native
-  /* 2 */ @js.native
-  object exceptionInstance extends TopLevel[exceptionInstance with Double]
-  
-  /* 1 */ @js.native
-  object instance extends TopLevel[instance with Double]
-  
-  /* 0 */ @js.native
-  object master extends TopLevel[master with Double]
-  
+  sealed trait master
+    extends StObject
+       with RecurrenceType
 }
-

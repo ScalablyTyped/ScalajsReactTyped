@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-json-db
 
-Typings are for version 1.0.3
+Typings are for version 2.1.3
 
 ## Library description:
 Database using JSON file as storage for Node.JS
@@ -10,10 +10,10 @@ Database using JSON file as storage for Node.JS
 | ------------------ | :-------------: |
 | Full name          | node-json-db |
 | Keywords           | database, json, db, typescript |
-| # releases         | 14 |
-| # dependents       | 32 |
-| # downloads        | 105657 |
-| # stars            | 15 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 40569.333333333336 |
+| # stars            | 542.0 |
 
 ## Links
 - [Homepage](https://github.com/Belphemur/node-json-db)

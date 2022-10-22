@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The error code that indicates whether an error on the payment sheet is for shipping or billing information, or for another kind of error.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.addressUnserviceable
   - typingsJapgolly.applepayjs.applepayjsStrings.unknown
 */
-trait ApplePayErrorCode extends js.Object
-
+trait ApplePayErrorCode extends StObject
 object ApplePayErrorCode {
-  @scala.inline
-  def addressUnserviceable: typingsJapgolly.applepayjs.applepayjsStrings.addressUnserviceable = this.cast("addressUnserviceable")
-  @scala.inline
-  def billingContactInvalid: typingsJapgolly.applepayjs.applepayjsStrings.billingContactInvalid = this.cast("billingContactInvalid")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def shippingContactInvalid: typingsJapgolly.applepayjs.applepayjsStrings.shippingContactInvalid = this.cast("shippingContactInvalid")
-  @scala.inline
-  def unknown: typingsJapgolly.applepayjs.applepayjsStrings.unknown = this.cast("unknown")
+  
+  inline def addressUnserviceable: typingsJapgolly.applepayjs.applepayjsStrings.addressUnserviceable = "addressUnserviceable".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.addressUnserviceable]
+  
+  inline def billingContactInvalid: typingsJapgolly.applepayjs.applepayjsStrings.billingContactInvalid = "billingContactInvalid".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.billingContactInvalid]
+  
+  inline def shippingContactInvalid: typingsJapgolly.applepayjs.applepayjsStrings.shippingContactInvalid = "shippingContactInvalid".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.shippingContactInvalid]
+  
+  inline def unknown: typingsJapgolly.applepayjs.applepayjsStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.unknown]
 }
-

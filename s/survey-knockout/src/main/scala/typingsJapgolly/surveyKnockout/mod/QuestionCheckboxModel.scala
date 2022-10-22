@@ -1,61 +1,89 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionCheckboxModel")
 @js.native
-class QuestionCheckboxModel protected () extends QuestionCheckboxBase {
+open class QuestionCheckboxModel protected () extends QuestionCheckboxBase {
   def this(name: String) = this()
-  /**
-    * Set this property to true, to show the "None" item on the bottom. If end-user checks this item, all other items would be unchecked.
+  
+  def checkBoxSvgPath: String = js.native
+  
+  /* protected */ def convertValueFromObject(`val`: Any): Any = js.native
+  
+  /* protected */ def convertValueToObject(`val`: Any): Any = js.native
+  
+  def hasSelectAll: Boolean = js.native
+  def hasSelectAll_=(`val`: Boolean): Unit = js.native
+  
+  var invisibleOldValues: Any = js.native
+  
+  /*
+    * Returns `true` if all choice items, except "Other" and "None", are selected.
     */
-  var hasNone: Boolean = js.native
-  /**
-    * Set this property to true, to show the "Select All" item on the top. If end-user checks this item, then all items are checked.
+  def isAllSelected: Boolean = js.native
+  def isAllSelected_=(`val`: Boolean): Unit = js.native
+  
+  var isChangingValueOnClearIncorrect: Boolean = js.native
+  
+  def locSelectAllText: LocalizableString = js.native
+  
+  /*
+    * Sets a limit on the number of selected choices.
+    * 
+    * Default value: 0 (unlimited)
+    * 
+    * > NOTE: This property only limits the number of choice items that can be selected by users. You can select any number of choice items in code, regardless of the `maxSelectedChoices` value.
     */
-  var hasSelectAll: Boolean = js.native
-  /**
-    * Returns true if all items are selected
-    * @see toggleSelectAll
-    */
-  var isAllSelected: Boolean = js.native
-  val locNoneText: LocalizableString = js.native
-  val locSelectAllText: LocalizableString = js.native
-  /**
-    * Returns the none item. By using this property, you may change programmatically it's value and text.
-    * @see hasNone
-    */
-  val noneItem: ItemValue = js.native
-  /**
-    * Use this property to set the different text for none item.
-    */
-  var noneText: String = js.native
-  /**
-    * Returns the select all item. By using this property, you may change programmatically it's value and text.
-    * @see hasSelectAll
-    */
-  val selectAllItem: ItemValue = js.native
-  /**
-    * Use this property to set the different text for Select All item.
-    */
-  var selectAllText: String = js.native
-  /**
-    * Returns true if item is checked
-    * @param item checkbox item value
-    */
-  def isItemSelected(item: ItemValue): Boolean = js.native
-  /**
-    * Select all items, except other and none.
+  def maxSelectedChoices: Double = js.native
+  def maxSelectedChoices_=(`val`: Double): Unit = js.native
+  
+  /*
+    * Selects all choice items, except "Other" and "None".
+    * 
+    * To clear selection, call the `clearValue()` method.
     */
   def selectAll(): Unit = js.native
-  /* protected */ def setDefaultValueWithOthers(): Unit = js.native
-  /**
-    * It will select all items, except other and none. If all items have been already selected then it will clear the value
-    * @see isAllSelected
-    * @see selectAll
+  
+  /*
+    * Returns the "Select All" choice item. Use this property to change the item's `value` or `text`.
     */
+  def selectAllItem: ItemValue = js.native
+  
+  var selectAllItemValue: ItemValue = js.native
+  
+  /*
+    * Gets or sets a caption for the "Select All" choice item.
+    */
+  def selectAllText: String = js.native
+  def selectAllText_=(`val`: String): Unit = js.native
+  
+  /*
+    * An array of selected choice items. Includes the "Other" and "None" choice items if they are selected, but not "Select All". Items are sorted in the order they were selected.
+    */
+  def selectedChoices: Any = js.native
+  
+  def selectedItems: Any = js.native
+  
+  /* protected */ def setDefaultValueWithOthers(): Unit = js.native
+  
+  /*
+    * Enable this property to display a "Select All" item. When users select it, all other choice items, except "Other" and "None", also become selected.
+    */
+  def showSelectAllItem: Boolean = js.native
+  def showSelectAllItem_=(`val`: Boolean): Unit = js.native
+  
+  /* protected */ def supportSelectAll(): Boolean = js.native
+  
   def toggleSelectAll(): Unit = js.native
+  
+  /*
+    * Specifies a property name used to store selected values.
+    * 
+    * Set this property if you want to store selected values in an array of objects instead of an array of primitive values. For example, if you set `valuePropertyName` to `"car"`, the `value` property will contain an array of objects `[{ car: "Ford" }, { car: "Tesla" }]`, not an array of string values `[ "Ford", "Tesla" ]`.
+    */
+  def valuePropertyName: String = js.native
+  def valuePropertyName_=(`val`: String): Unit = js.native
 }
-

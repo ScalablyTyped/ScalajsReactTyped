@@ -1,18 +1,13 @@
 package typingsJapgolly.isSvg
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.isSvg.anon.Call
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("is-svg", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function isSvg(input: string | Buffer): boolean;
-  // export = isSvg;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
+object mod {
+  
   /**
   	Check if a string or buffer is [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics).
   	@param input - The data to check.
@@ -24,8 +19,19 @@ object mod extends js.Object {
   	//=> true
   	```
   	*/
-  def apply(input: String): Boolean = js.native
-  def apply(input: Buffer): Boolean = js.native
+  inline def apply(input: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @JSImport("is-svg", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  // TODO: Remove this for the next major release, refactor the whole definition to:
+  // declare function isSvg(input: string | Buffer): boolean;
+  // export = isSvg;
+  @JSImport("is-svg", "default")
+  @js.native
+  def default: Call = js.native
   /**
   	Check if a string or buffer is [SVG](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics).
   	@param input - The data to check.
@@ -40,7 +46,7 @@ object mod extends js.Object {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function isSvg(input: string | Buffer): boolean;
   // export = isSvg;
-  def default(input: String): Boolean = js.native
-  def default(input: Buffer): Boolean = js.native
+  inline def default(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(input: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }
-

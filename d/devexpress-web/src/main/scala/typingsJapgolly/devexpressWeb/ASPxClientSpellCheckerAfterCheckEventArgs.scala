@@ -1,28 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client event that occurs after a spelling check is complete.
   */
-@JSGlobal("ASPxClientSpellCheckerAfterCheckEventArgs")
-@js.native
-class ASPxClientSpellCheckerAfterCheckEventArgs protected () extends ASPxClientEventArgs {
-  def this(controlId: String, checkedText: String) = this()
-  def this(controlId: String, checkedText: String, reason: String) = this()
+trait ASPxClientSpellCheckerAfterCheckEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the text that has been checked.
     */
-  var checkedText: String = js.native
+  var checkedText: String
+  
   /**
     * Gets the programmatic identifier assigned to the control which has been checked.
     */
-  var controlId: String = js.native
+  var controlId: String
+  
   /**
     * Gets a value specifying whether spell checking is finished or stopped by the user.
     */
-  var reason: String = js.native
+  var reason: String
 }
-
+object ASPxClientSpellCheckerAfterCheckEventArgs {
+  
+  inline def apply(checkedText: String, controlId: String, reason: String): ASPxClientSpellCheckerAfterCheckEventArgs = {
+    val __obj = js.Dynamic.literal(checkedText = checkedText.asInstanceOf[js.Any], controlId = controlId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpellCheckerAfterCheckEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSpellCheckerAfterCheckEventArgs](x: Self) {
+    
+    inline def setCheckedText(value: String): Self = StObject.set(x, "checkedText", value.asInstanceOf[js.Any])
+    
+    inline def setControlId(value: String): Self = StObject.set(x, "controlId", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,26 +1,31 @@
 package typingsJapgolly.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface for updating data on the InkAnalysisWord object, for use in "inkAnalysisWord.set({ ... })". */
-trait InkAnalysisWordUpdateData extends js.Object {
+/** An interface for updating data on the InkAnalysisWord object, for use in `inkAnalysisWord.set({ ... })`. */
+trait InkAnalysisWordUpdateData extends StObject {
+  
   /**
-    *
     * Reference to the parent InkAnalysisLine.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var line: js.UndefOr[InkAnalysisLineUpdateData] = js.undefined
 }
-
 object InkAnalysisWordUpdateData {
-  @scala.inline
-  def apply(line: InkAnalysisLineUpdateData = null): InkAnalysisWordUpdateData = {
+  
+  inline def apply(): InkAnalysisWordUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisWordUpdateData]
   }
+  
+  extension [Self <: InkAnalysisWordUpdateData](x: Self) {
+    
+    inline def setLine(value: InkAnalysisLineUpdateData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

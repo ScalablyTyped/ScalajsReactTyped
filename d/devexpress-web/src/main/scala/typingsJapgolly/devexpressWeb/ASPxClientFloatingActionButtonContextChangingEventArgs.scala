@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFloatingActionButton.ContextChanging event.
   */
-@JSGlobal("ASPxClientFloatingActionButtonContextChangingEventArgs")
-@js.native
-class ASPxClientFloatingActionButtonContextChangingEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFloatingActionButtonContextChangingEventArgs class.
-    * @param action An ASPxClientFABAction object that is the floating action button's action.
-    */
-  def this(action: ASPxClientFABAction) = this()
+trait ASPxClientFloatingActionButtonContextChangingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Returns the action related to the event.
     */
-  var action: ASPxClientFABAction = js.native
+  var action: ASPxClientFABAction
 }
-
+object ASPxClientFloatingActionButtonContextChangingEventArgs {
+  
+  inline def apply(action: ASPxClientFABAction): ASPxClientFloatingActionButtonContextChangingEventArgs = {
+    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFloatingActionButtonContextChangingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFloatingActionButtonContextChangingEventArgs](x: Self) {
+    
+    inline def setAction(value: ASPxClientFABAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+  }
+}

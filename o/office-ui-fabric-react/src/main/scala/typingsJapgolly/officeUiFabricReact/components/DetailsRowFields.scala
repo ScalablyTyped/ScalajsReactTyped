@@ -1,62 +1,53 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn
-import typingsJapgolly.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps
-import typingsJapgolly.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
-import typingsJapgolly.officeUiFabricReact.kinkeyofPickIDetailsRowSt
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.officeUiFabricReact.anon.kinkeyofPickIDetailsRowSt
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IColumn
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.ICellStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsRowFieldsDottypesMod.IDetailsRowFieldsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DetailsRowFields {
-  def apply(
+  
+  inline def apply(
     columnStartIndex: Double,
     columns: js.Array[IColumn],
-    item: js.Any,
+    item: Any,
     itemIndex: Double,
-    rowClassNames: kinkeyofPickIDetailsRowSt,
-    cellStyleProps: ICellStyleProps = null,
-    cellsByColumn: StringDictionary[Node] = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    enableUpdateAnimations: js.UndefOr[Boolean] = js.undefined,
-    getCellValueKey: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => CallbackTo[String] = null,
-    onRenderItemColumn: (/* item */ js.UndefOr[js.Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => CallbackTo[Node] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IDetailsRowFieldsProps, 
-    MountedWithRawType[IDetailsRowFieldsProps, js.Object, RawMounted[IDetailsRowFieldsProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(columnStartIndex = columnStartIndex.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], rowClassNames = rowClassNames.asInstanceOf[js.Any])
-  
-      if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
-    if (cellsByColumn != null) __obj.updateDynamic("cellsByColumn")(cellsByColumn.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableUpdateAnimations)) __obj.updateDynamic("enableUpdateAnimations")(enableUpdateAnimations.asInstanceOf[js.Any])
-    if (getCellValueKey != null) __obj.updateDynamic("getCellValueKey")(js.Any.fromFunction3((t0: /* item */ js.UndefOr[js.Any], t1: /* index */ js.UndefOr[scala.Double], t2: /* column */ js.UndefOr[typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn]) => getCellValueKey(t0, t1, t2).runNow()))
-    if (onRenderItemColumn != null) __obj.updateDynamic("onRenderItemColumn")(js.Any.fromFunction3((t0: /* item */ js.UndefOr[js.Any], t1: /* index */ js.UndefOr[scala.Double], t2: /* column */ js.UndefOr[typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn]) => onRenderItemColumn(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.detailsRowFieldsTypesMod.IDetailsRowFieldsProps])(children: _*)
+    rowClassNames: kinkeyofPickIDetailsRowSt
+  ): Builder = {
+    val __props = js.Dynamic.literal(columnStartIndex = columnStartIndex.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], itemIndex = itemIndex.asInstanceOf[js.Any], rowClassNames = rowClassNames.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDetailsRowFieldsProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "DetailsRowFields")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def cellStyleProps(value: ICellStyleProps): this.type = set("cellStyleProps", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def enableUpdateAnimations(value: Boolean): this.type = set("enableUpdateAnimations", value.asInstanceOf[js.Any])
+    
+    inline def getCellValueKey(
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => String
+    ): this.type = set("getCellValueKey", js.Any.fromFunction3(value))
+    
+    inline def onRenderItemColumn(
+      value: (/* item */ js.UndefOr[Any], /* index */ js.UndefOr[Double], /* column */ js.UndefOr[IColumn]) => Node
+    ): this.type = set("onRenderItemColumn", js.Any.fromFunction3(value))
+    
+    inline def rowHeaderId(value: String): this.type = set("rowHeaderId", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDetailsRowFieldsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-material-ui", "BottomNavigation")
 @js.native
-class BottomNavigation ()
-  extends Component[BottomNavigationProps, js.Any, js.Any]
-
-@JSImport("react-native-material-ui", "BottomNavigation")
-@js.native
-object BottomNavigation extends js.Object {
-  @js.native
-  class Action ()
-    extends Component[BottomNavigationAction, js.Any, js.Any]
-  
+open class BottomNavigation protected () extends Component[BottomNavigationProps, Any, Any] {
+  def this(props: BottomNavigationProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: BottomNavigationProps, context: Any) = this()
 }
-
+object BottomNavigation {
+  
+  @JSImport("react-native-material-ui", "BottomNavigation.Action")
+  @js.native
+  open class Action protected () extends Component[BottomNavigationAction, Any, Any] {
+    def this(props: BottomNavigationAction) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: BottomNavigationAction, context: Any) = this()
+  }
+}

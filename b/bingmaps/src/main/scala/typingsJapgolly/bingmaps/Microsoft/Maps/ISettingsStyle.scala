@@ -1,23 +1,32 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISettingsStyle extends js.Object {
+trait ISettingsStyle extends StObject {
+  
   /** A hex color value that all land is first flushed to before things are drawn on it. */
   var landColor: js.UndefOr[String] = js.undefined
+  
   /** Specifies whether or not to draw elevation shading on the map. */
   var shadedReliefVisible: js.UndefOr[Boolean] = js.undefined
 }
-
 object ISettingsStyle {
-  @scala.inline
-  def apply(landColor: String = null, shadedReliefVisible: js.UndefOr[Boolean] = js.undefined): ISettingsStyle = {
+  
+  inline def apply(): ISettingsStyle = {
     val __obj = js.Dynamic.literal()
-    if (landColor != null) __obj.updateDynamic("landColor")(landColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadedReliefVisible)) __obj.updateDynamic("shadedReliefVisible")(shadedReliefVisible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISettingsStyle]
   }
+  
+  extension [Self <: ISettingsStyle](x: Self) {
+    
+    inline def setLandColor(value: String): Self = StObject.set(x, "landColor", value.asInstanceOf[js.Any])
+    
+    inline def setLandColorUndefined: Self = StObject.set(x, "landColor", js.undefined)
+    
+    inline def setShadedReliefVisible(value: Boolean): Self = StObject.set(x, "shadedReliefVisible", value.asInstanceOf[js.Any])
+    
+    inline def setShadedReliefVisibleUndefined: Self = StObject.set(x, "shadedReliefVisible", js.undefined)
+  }
 }
-

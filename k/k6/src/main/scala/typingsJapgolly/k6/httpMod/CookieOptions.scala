@@ -1,42 +1,60 @@
 package typingsJapgolly.k6.httpMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CookieOptions extends js.Object {
+trait CookieOptions extends StObject {
+  
   /** Domain allowed to receive. */
   var domain: js.UndefOr[String] = js.undefined
+  
   /** Expiry time in RFC1123 format. */
   var expires: js.UndefOr[String] = js.undefined
+  
   /** HTTP only. */
   var http_only: js.UndefOr[Boolean] = js.undefined
+  
   /** Seconds until expiration. */
   var max_age: js.UndefOr[Double] = js.undefined
+  
   /** Scope path. */
   var path: js.UndefOr[String] = js.undefined
+  
   /** Secure. */
   var secure: js.UndefOr[Boolean] = js.undefined
 }
-
 object CookieOptions {
-  @scala.inline
-  def apply(
-    domain: String = null,
-    expires: String = null,
-    http_only: js.UndefOr[Boolean] = js.undefined,
-    max_age: Int | Double = null,
-    path: String = null,
-    secure: js.UndefOr[Boolean] = js.undefined
-  ): CookieOptions = {
+  
+  inline def apply(): CookieOptions = {
     val __obj = js.Dynamic.literal()
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (!js.isUndefined(http_only)) __obj.updateDynamic("http_only")(http_only.asInstanceOf[js.Any])
-    if (max_age != null) __obj.updateDynamic("max_age")(max_age.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
     __obj.asInstanceOf[CookieOptions]
   }
+  
+  extension [Self <: CookieOptions](x: Self) {
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    
+    inline def setHttp_only(value: Boolean): Self = StObject.set(x, "http_only", value.asInstanceOf[js.Any])
+    
+    inline def setHttp_onlyUndefined: Self = StObject.set(x, "http_only", js.undefined)
+    
+    inline def setMax_age(value: Double): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
+    
+    inline def setMax_ageUndefined: Self = StObject.set(x, "max_age", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+  }
 }
-

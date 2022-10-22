@@ -1,32 +1,53 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GroupSetting extends Entity {
+trait GroupSetting
+  extends StObject
+     with Entity {
+  
   // Display name of this group of settings, which comes from the associated template.
-  var displayName: js.UndefOr[String] = js.undefined
-  // Unique identifier for the template used to create this group of settings. Read-only.
-  var templateId: js.UndefOr[String] = js.undefined
-  // Collection of name value pairs. Must contain and set all the settings defined in the template.
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Unique identifier for the tenant-level groupSettingTemplates object that's been customized for this group-level
+    * settings object. Read-only.
+    */
+  var templateId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced
+    * groupSettingTemplates object.
+    */
   var values: js.UndefOr[js.Array[SettingValue]] = js.undefined
 }
-
 object GroupSetting {
-  @scala.inline
-  def apply(
-    displayName: String = null,
-    id: String = null,
-    templateId: String = null,
-    values: js.Array[SettingValue] = null
-  ): GroupSetting = {
+  
+  inline def apply(): GroupSetting = {
     val __obj = js.Dynamic.literal()
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (templateId != null) __obj.updateDynamic("templateId")(templateId.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupSetting]
   }
+  
+  extension [Self <: GroupSetting](x: Self) {
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setTemplateId(value: NullableOption[String]): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateIdNull: Self = StObject.set(x, "templateId", null)
+    
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    
+    inline def setValues(value: js.Array[SettingValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: SettingValue*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

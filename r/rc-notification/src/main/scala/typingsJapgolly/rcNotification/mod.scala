@@ -1,26 +1,26 @@
 package typingsJapgolly.rcNotification
 
-import typingsJapgolly.rcNotification.notificationMod.NotificationInstance
+import japgolly.scalajs.react.facade.React.Element
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.rcNotification.esNoticeMod.NoticeProps
+import typingsJapgolly.rcNotification.esUseNotificationMod.NotificationAPI
+import typingsJapgolly.rcNotification.esUseNotificationMod.NotificationConfig
+import typingsJapgolly.react.mod.ForwardRefExoticComponent
+import typingsJapgolly.react.mod.RefAttributes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rc-notification/lib", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class default ()
-    extends typingsJapgolly.rcNotification.notificationMod.default
+object mod {
   
-  /* static members */
+  @JSImport("rc-notification", JSImport.Namespace)
   @js.native
-  object default extends js.Object {
-    var defaultProps: AnonAnimation = js.native
-    def newInstance(
-      properties: NotificationPropsgetConta,
-      callback: js.Function1[/* instance */ NotificationInstance, Unit]
-    ): Unit = js.native
-  }
+  val ^ : js.Any = js.native
   
+  @JSImport("rc-notification", "Notice")
+  @js.native
+  val Notice: ForwardRefExoticComponent[NoticeProps & RefAttributes[HTMLDivElement]] = js.native
+  
+  inline def useNotification(): js.Tuple2[NotificationAPI, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotification")().asInstanceOf[js.Tuple2[NotificationAPI, Element]]
+  inline def useNotification(rootConfig: NotificationConfig): js.Tuple2[NotificationAPI, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotification")(rootConfig.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[NotificationAPI, Element]]
 }
-

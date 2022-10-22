@@ -1,31 +1,48 @@
 package typingsJapgolly.muiDatatables.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableSearch extends js.Object {
+trait MUIDataTableSearch extends StObject {
+  
   var classes: js.UndefOr[js.Object] = js.undefined
-  var onHide: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var onSearch: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var options: js.UndefOr[js.Object] = js.undefined
+  
+  var onHide: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var onSearch: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
+  
+  var searchText: js.UndefOr[String] = js.undefined
 }
-
 object MUIDataTableSearch {
-  @scala.inline
-  def apply(
-    classes: js.Object = null,
-    onHide: /* args */ js.Any => CallbackTo[js.Any] = null,
-    onSearch: /* args */ js.Any => CallbackTo[js.Any] = null,
-    options: js.Object = null
-  ): MUIDataTableSearch = {
+  
+  inline def apply(): MUIDataTableSearch = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (onHide != null) __obj.updateDynamic("onHide")(js.Any.fromFunction1((t0: /* args */ js.Any) => onHide(t0).runNow()))
-    if (onSearch != null) __obj.updateDynamic("onSearch")(js.Any.fromFunction1((t0: /* args */ js.Any) => onSearch(t0).runNow()))
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUIDataTableSearch]
   }
+  
+  extension [Self <: MUIDataTableSearch](x: Self) {
+    
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setOnHide(value: /* args */ Any => Any): Self = StObject.set(x, "onHide", js.Any.fromFunction1(value))
+    
+    inline def setOnHideUndefined: Self = StObject.set(x, "onHide", js.undefined)
+    
+    inline def setOnSearch(value: /* args */ Any => Any): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+    
+    inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+    
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setSearchText(value: String): Self = StObject.set(x, "searchText", value.asInstanceOf[js.Any])
+    
+    inline def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
+  }
 }
-

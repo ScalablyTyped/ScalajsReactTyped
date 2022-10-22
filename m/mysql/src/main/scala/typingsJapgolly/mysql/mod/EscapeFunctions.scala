@@ -1,11 +1,12 @@
 package typingsJapgolly.mysql.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EscapeFunctions extends js.Object {
+trait EscapeFunctions extends StObject {
+  
   /**
     * Escape an untrusted string to be used as a SQL value. Use this on user
     * provided data.
@@ -13,9 +14,11 @@ trait EscapeFunctions extends js.Object {
     * @param stringifyObjects If true, don't convert objects into SQL lists
     * @param timeZone Convert dates from UTC to the given timezone.
     */
-  def escape(value: js.Any): String = js.native
-  def escape(value: js.Any, stringifyObjects: Boolean): String = js.native
-  def escape(value: js.Any, stringifyObjects: Boolean, timeZone: String): String = js.native
+  def escape(value: Any): String = js.native
+  def escape(value: Any, stringifyObjects: Boolean): String = js.native
+  def escape(value: Any, stringifyObjects: Boolean, timeZone: String): String = js.native
+  def escape(value: Any, stringifyObjects: Unit, timeZone: String): String = js.native
+  
   /**
     * Escape an untrusted string to be used as a SQL identifier (database,
     * table, or column name). Use this on user provided data.
@@ -24,6 +27,7 @@ trait EscapeFunctions extends js.Object {
     */
   def escapeId(value: String): String = js.native
   def escapeId(value: String, forbidQualified: Boolean): String = js.native
+  
   /**
     * Safely format a SQL query containing multiple untrusted values.
     * @param sql Query, with insertion points specified with ? (for values) or
@@ -32,8 +36,8 @@ trait EscapeFunctions extends js.Object {
     * @param stringifyObjects If true, don't convert objects into SQL lists
     * @param timeZone Convert dates from UTC to the given timezone.
     */
-  def format(sql: String, values: js.Array[_]): String = js.native
-  def format(sql: String, values: js.Array[_], stringifyObjects: Boolean): String = js.native
-  def format(sql: String, values: js.Array[_], stringifyObjects: Boolean, timeZone: String): String = js.native
+  def format(sql: String, values: js.Array[Any]): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Boolean, timeZone: String): String = js.native
+  def format(sql: String, values: js.Array[Any], stringifyObjects: Unit, timeZone: String): String = js.native
 }
-

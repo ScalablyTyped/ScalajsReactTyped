@@ -1,16 +1,15 @@
 package typingsJapgolly.jsts.jsts
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.jsts.jsts.geom.Geometry
-import typingsJapgolly.jsts.jsts.geom.GeometryFactory
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("jsts.io")
-@js.native
-object io extends js.Object {
-  @js.native
-  class GeoJSONReader () extends js.Object {
+object io {
+  
+  trait GeoJSONReader extends StObject {
+    
     /**
       * Converts a GeoJSON to its <code>Geometry</code> representation.
       *
@@ -18,24 +17,23 @@ object io extends js.Object {
       * @return {jsts.geom.Geometry}
       * geometry a <code>Geometry</code> to process.
       */
-    def read(geometry: js.Object): Geometry = js.native
+    def read(geometry: js.Object): Geometry
+  }
+  object GeoJSONReader {
+    
+    inline def apply(read: js.Object => Geometry): GeoJSONReader = {
+      val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read))
+      __obj.asInstanceOf[GeoJSONReader]
+    }
+    
+    extension [Self <: GeoJSONReader](x: Self) {
+      
+      inline def setRead(value: js.Object => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  /**
-    * Writes the GeoJSON representation of a {@link Geometry}. The
-    * The GeoJSON format is defined <A
-    * HREF="http://geojson.org/geojson-spec.html">here</A>.
-    * <p>
-    * The <code>GeoJSONWriter</code> outputs coordinates rounded to the precision
-    * model. Only the maximum number of decimal places necessary to represent the
-    * ordinates to the required precision will be output.
-    * <p>
-    *
-    * @see WKTReader
-    * @constructor
-    */
-  class GeoJSONWriter () extends js.Object {
+  trait GeoJSONWriter extends StObject {
+    
     /**
       * Converts a <code>Geometry</code> to its GeoJSON representation.
       *
@@ -43,22 +41,44 @@ object io extends js.Object {
       *          geometry a <code>Geometry</code> to process.
       * @return {Object} The GeoJSON representation of the Geometry.
       */
-    def write(geometry: Geometry): js.Object = js.native
+    def write(geometry: Geometry): js.Object
+  }
+  object GeoJSONWriter {
+    
+    inline def apply(write: Geometry => js.Object): GeoJSONWriter = {
+      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+      __obj.asInstanceOf[GeoJSONWriter]
+    }
+    
+    extension [Self <: GeoJSONWriter](x: Self) {
+      
+      inline def setWrite(value: Geometry => js.Object): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  class OL3Parser () extends js.Object {
-    def this(geometryFactory: GeometryFactory) = this()
-    def read(geometry: js.Any): Geometry = js.native
-    def write(geometry: Geometry): js.Any = js.native
+  trait OL3Parser extends StObject {
+    
+    def read(geometry: Any): Geometry
+    
+    def write(geometry: Geometry): Any
+  }
+  object OL3Parser {
+    
+    inline def apply(read: Any => Geometry, write: Geometry => Any): OL3Parser = {
+      val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
+      __obj.asInstanceOf[OL3Parser]
+    }
+    
+    extension [Self <: OL3Parser](x: Self) {
+      
+      inline def setRead(value: Any => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      
+      inline def setWrite(value: Geometry => Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
-  /**
-    * @constructor
-    */
-  class WKTReader () extends js.Object {
-    def this(geometryFactory: GeometryFactory) = this()
+  trait WKTReader extends StObject {
+    
     /**
       * Reads a Well-Known Text representation of a {@link Geometry}
       *
@@ -68,17 +88,46 @@ object io extends js.Object {
       * @return {jsts.geom.Geometry} a <code>Geometry</code> read from
       *         <code>string.</code>
       */
-    def read(wkt: String): Geometry = js.native
-    def reducePrecision(geometry: Geometry): Unit = js.native
+    def read(wkt: String): Geometry
+    
+    def reducePrecision(geometry: Geometry): Unit
+  }
+  object WKTReader {
+    
+    inline def apply(read: String => Geometry, reducePrecision: Geometry => Callback): WKTReader = {
+      val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), reducePrecision = js.Any.fromFunction1((t0: Geometry) => reducePrecision(t0).runNow()))
+      __obj.asInstanceOf[WKTReader]
+    }
+    
+    extension [Self <: WKTReader](x: Self) {
+      
+      inline def setRead(value: String => Geometry): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      
+      inline def setReducePrecision(value: Geometry => Callback): Self = StObject.set(x, "reducePrecision", js.Any.fromFunction1((t0: Geometry) => value(t0).runNow()))
+    }
   }
   
-  @js.native
-  /**
-    * @constructor
-    */
-  class WKTWriter () extends js.Object {
-    def this(geometryFactory: GeometryFactory) = this()
+  trait WKTWriter extends StObject {
+    
+    /**
+      * Converts a <code>Geometry</code> to its Well-known Text representation.
+      *
+      * @param {Geometry} geometry a <code>Geometry</code> to process.
+      * @return {string} a <Geometry Tagged Text> string (see the OpenGIS Simple
+      *         Features Specification).
+      */
+    def write(geometry: Geometry): String
   }
-  
+  object WKTWriter {
+    
+    inline def apply(write: Geometry => String): WKTWriter = {
+      val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
+      __obj.asInstanceOf[WKTWriter]
+    }
+    
+    extension [Self <: WKTWriter](x: Self) {
+      
+      inline def setWrite(value: Geometry => String): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+    }
+  }
 }
-

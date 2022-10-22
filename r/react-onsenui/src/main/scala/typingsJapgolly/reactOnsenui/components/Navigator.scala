@@ -1,70 +1,57 @@
 package typingsJapgolly.reactOnsenui.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAnimationOptions
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import typingsJapgolly.reactOnsenui.anon.InitialRoute
 import typingsJapgolly.reactOnsenui.mod.AnimationOptions
 import typingsJapgolly.reactOnsenui.mod.NavigatorAnimationTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Navigator {
-  def apply(
-    renderPage: (js.Any, js.UndefOr[typingsJapgolly.reactOnsenui.mod.Navigator]) => CallbackTo[Element],
-    animation: NavigatorAnimationTypes = null,
-    animationOptions: AnimationOptions = null,
-    className: String = null,
-    id: String = null,
-    initialRoute: js.Any = null,
-    initialRouteStack: js.Array[String] = null,
-    onPostPop: js.UndefOr[Callback] = js.undefined,
-    onPostPush: js.UndefOr[Callback] = js.undefined,
-    onPrePop: js.UndefOr[Callback] = js.undefined,
-    onPrePush: js.UndefOr[Callback] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HTMLAttributesidclassNameAnimationOptions, 
-    typingsJapgolly.reactOnsenui.mod.Navigator, 
-    Unit, 
-    HTMLAttributesidclassNameAnimationOptions
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("renderPage")(js.Any.fromFunction2((t0: js.Any, t1: js.UndefOr[typingsJapgolly.reactOnsenui.mod.Navigator]) => renderPage(t0, t1).runNow()))
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialRoute != null) __obj.updateDynamic("initialRoute")(initialRoute.asInstanceOf[js.Any])
-    if (initialRouteStack != null) __obj.updateDynamic("initialRouteStack")(initialRouteStack.asInstanceOf[js.Any])
-    onPostPop.foreach(p => __obj.updateDynamic("onPostPop")(p.toJsFn))
-    onPostPush.foreach(p => __obj.updateDynamic("onPostPush")(p.toJsFn))
-    onPrePop.foreach(p => __obj.updateDynamic("onPrePop")(p.toJsFn))
-    onPrePush.foreach(p => __obj.updateDynamic("onPrePush")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAnimationOptions, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactOnsenui.mod.Navigator](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAnimationOptions])(children: _*)
+  inline def apply(renderPage: (Any, js.UndefOr[typingsJapgolly.reactOnsenui.mod.Navigator]) => Element): Builder = {
+    val __props = js.Dynamic.literal(renderPage = js.Any.fromFunction2(renderPage))
+    new Builder(js.Array(this.component, __props.asInstanceOf[HTMLAttributesidclassName & InitialRoute]))
   }
+  
   @JSImport("react-onsenui", "Navigator")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactOnsenui.mod.Navigator] {
+    
+    inline def animation(value: NavigatorAnimationTypes): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def animationOptions(value: AnimationOptions): this.type = set("animationOptions", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def initialRoute(value: Any): this.type = set("initialRoute", value.asInstanceOf[js.Any])
+    
+    inline def initialRouteStack(value: js.Array[String]): this.type = set("initialRouteStack", value.asInstanceOf[js.Any])
+    
+    inline def initialRouteStackVarargs(value: String*): this.type = set("initialRouteStack", js.Array(value*))
+    
+    inline def onPostPop(value: Callback): this.type = set("onPostPop", value.toJsFn)
+    
+    inline def onPostPush(value: Callback): this.type = set("onPostPush", value.toJsFn)
+    
+    inline def onPrePop(value: Callback): this.type = set("onPrePop", value.toJsFn)
+    
+    inline def onPrePush(value: Callback): this.type = set("onPrePush", value.toJsFn)
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: HTMLAttributesidclassName & InitialRoute): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

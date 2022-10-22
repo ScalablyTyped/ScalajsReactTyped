@@ -1,38 +1,72 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TeamMemberSettings extends js.Object {
+trait TeamMemberSettings extends StObject {
+  
   // If set to true, members can add and remove apps.
-  var allowAddRemoveApps: js.UndefOr[Boolean] = js.undefined
+  var allowAddRemoveApps: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
+  // If set to true, members can add and update private channels.
+  var allowCreatePrivateChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // If set to true, members can add and update channels.
-  var allowCreateUpdateChannels: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // If set to true, members can add, update, and remove connectors.
-  var allowCreateUpdateRemoveConnectors: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateRemoveConnectors: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // If set to true, members can add, update, and remove tabs.
-  var allowCreateUpdateRemoveTabs: js.UndefOr[Boolean] = js.undefined
+  var allowCreateUpdateRemoveTabs: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // If set to true, members can delete channels.
-  var allowDeleteChannels: js.UndefOr[Boolean] = js.undefined
+  var allowDeleteChannels: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
-
 object TeamMemberSettings {
-  @scala.inline
-  def apply(
-    allowAddRemoveApps: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateChannels: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateRemoveConnectors: js.UndefOr[Boolean] = js.undefined,
-    allowCreateUpdateRemoveTabs: js.UndefOr[Boolean] = js.undefined,
-    allowDeleteChannels: js.UndefOr[Boolean] = js.undefined
-  ): TeamMemberSettings = {
+  
+  inline def apply(): TeamMemberSettings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowAddRemoveApps)) __obj.updateDynamic("allowAddRemoveApps")(allowAddRemoveApps.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateChannels)) __obj.updateDynamic("allowCreateUpdateChannels")(allowCreateUpdateChannels.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateRemoveConnectors)) __obj.updateDynamic("allowCreateUpdateRemoveConnectors")(allowCreateUpdateRemoveConnectors.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowCreateUpdateRemoveTabs)) __obj.updateDynamic("allowCreateUpdateRemoveTabs")(allowCreateUpdateRemoveTabs.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDeleteChannels)) __obj.updateDynamic("allowDeleteChannels")(allowDeleteChannels.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamMemberSettings]
   }
+  
+  extension [Self <: TeamMemberSettings](x: Self) {
+    
+    inline def setAllowAddRemoveApps(value: NullableOption[Boolean]): Self = StObject.set(x, "allowAddRemoveApps", value.asInstanceOf[js.Any])
+    
+    inline def setAllowAddRemoveAppsNull: Self = StObject.set(x, "allowAddRemoveApps", null)
+    
+    inline def setAllowAddRemoveAppsUndefined: Self = StObject.set(x, "allowAddRemoveApps", js.undefined)
+    
+    inline def setAllowCreatePrivateChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreatePrivateChannels", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCreatePrivateChannelsNull: Self = StObject.set(x, "allowCreatePrivateChannels", null)
+    
+    inline def setAllowCreatePrivateChannelsUndefined: Self = StObject.set(x, "allowCreatePrivateChannels", js.undefined)
+    
+    inline def setAllowCreateUpdateChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreateUpdateChannels", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCreateUpdateChannelsNull: Self = StObject.set(x, "allowCreateUpdateChannels", null)
+    
+    inline def setAllowCreateUpdateChannelsUndefined: Self = StObject.set(x, "allowCreateUpdateChannels", js.undefined)
+    
+    inline def setAllowCreateUpdateRemoveConnectors(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreateUpdateRemoveConnectors", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCreateUpdateRemoveConnectorsNull: Self = StObject.set(x, "allowCreateUpdateRemoveConnectors", null)
+    
+    inline def setAllowCreateUpdateRemoveConnectorsUndefined: Self = StObject.set(x, "allowCreateUpdateRemoveConnectors", js.undefined)
+    
+    inline def setAllowCreateUpdateRemoveTabs(value: NullableOption[Boolean]): Self = StObject.set(x, "allowCreateUpdateRemoveTabs", value.asInstanceOf[js.Any])
+    
+    inline def setAllowCreateUpdateRemoveTabsNull: Self = StObject.set(x, "allowCreateUpdateRemoveTabs", null)
+    
+    inline def setAllowCreateUpdateRemoveTabsUndefined: Self = StObject.set(x, "allowCreateUpdateRemoveTabs", js.undefined)
+    
+    inline def setAllowDeleteChannels(value: NullableOption[Boolean]): Self = StObject.set(x, "allowDeleteChannels", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDeleteChannelsNull: Self = StObject.set(x, "allowDeleteChannels", null)
+    
+    inline def setAllowDeleteChannelsUndefined: Self = StObject.set(x, "allowDeleteChannels", js.undefined)
+  }
 }
-

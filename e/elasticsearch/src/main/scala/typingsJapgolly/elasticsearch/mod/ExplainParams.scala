@@ -1,81 +1,130 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExplainParams extends GenericParams {
+trait ExplainParams
+  extends StObject
+     with GenericParams {
+  
   var _source: js.UndefOr[NameList] = js.undefined
+  
   var _sourceExclude: js.UndefOr[NameList] = js.undefined
+  
   var _sourceInclude: js.UndefOr[NameList] = js.undefined
+  
   var analyzeWildcard: js.UndefOr[Boolean] = js.undefined
+  
   var analyzer: js.UndefOr[String] = js.undefined
+  
   var defaultOperator: js.UndefOr[DefaultOperator] = js.undefined
+  
   var df: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var index: js.UndefOr[String] = js.undefined
+  
   var lenient: js.UndefOr[Boolean] = js.undefined
+  
   var lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined
+  
   var parent: js.UndefOr[String] = js.undefined
+  
   var preference: js.UndefOr[String] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var routing: js.UndefOr[String] = js.undefined
+  
   var storedFields: js.UndefOr[NameList] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ExplainParams {
-  @scala.inline
-  def apply(
-    _source: NameList = null,
-    _sourceExclude: NameList = null,
-    _sourceInclude: NameList = null,
-    analyzeWildcard: js.UndefOr[Boolean] = js.undefined,
-    analyzer: String = null,
-    body: js.Any = null,
-    defaultOperator: DefaultOperator = null,
-    df: String = null,
-    filterPath: String | js.Array[String] = null,
-    id: String = null,
-    ignore: Double | js.Array[Double] = null,
-    index: String = null,
-    lenient: js.UndefOr[Boolean] = js.undefined,
-    lowercaseExpandedTerms: js.UndefOr[Boolean] = js.undefined,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    parent: String = null,
-    preference: String = null,
-    q: String = null,
-    requestTimeout: Int | Double = null,
-    routing: String = null,
-    storedFields: NameList = null,
-    `type`: String = null
-  ): ExplainParams = {
+  
+  inline def apply(): ExplainParams = {
     val __obj = js.Dynamic.literal()
-    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
-    if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
-    if (!js.isUndefined(analyzeWildcard)) __obj.updateDynamic("analyzeWildcard")(analyzeWildcard.asInstanceOf[js.Any])
-    if (analyzer != null) __obj.updateDynamic("analyzer")(analyzer.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (defaultOperator != null) __obj.updateDynamic("defaultOperator")(defaultOperator.asInstanceOf[js.Any])
-    if (df != null) __obj.updateDynamic("df")(df.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (!js.isUndefined(lenient)) __obj.updateDynamic("lenient")(lenient.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowercaseExpandedTerms)) __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (preference != null) __obj.updateDynamic("preference")(preference.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (storedFields != null) __obj.updateDynamic("storedFields")(storedFields.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplainParams]
   }
+  
+  extension [Self <: ExplainParams](x: Self) {
+    
+    inline def setAnalyzeWildcard(value: Boolean): Self = StObject.set(x, "analyzeWildcard", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzeWildcardUndefined: Self = StObject.set(x, "analyzeWildcard", js.undefined)
+    
+    inline def setAnalyzer(value: String): Self = StObject.set(x, "analyzer", value.asInstanceOf[js.Any])
+    
+    inline def setAnalyzerUndefined: Self = StObject.set(x, "analyzer", js.undefined)
+    
+    inline def setDefaultOperator(value: DefaultOperator): Self = StObject.set(x, "defaultOperator", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultOperatorUndefined: Self = StObject.set(x, "defaultOperator", js.undefined)
+    
+    inline def setDf(value: String): Self = StObject.set(x, "df", value.asInstanceOf[js.Any])
+    
+    inline def setDfUndefined: Self = StObject.set(x, "df", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setLenient(value: Boolean): Self = StObject.set(x, "lenient", value.asInstanceOf[js.Any])
+    
+    inline def setLenientUndefined: Self = StObject.set(x, "lenient", js.undefined)
+    
+    inline def setLowercaseExpandedTerms(value: Boolean): Self = StObject.set(x, "lowercaseExpandedTerms", value.asInstanceOf[js.Any])
+    
+    inline def setLowercaseExpandedTermsUndefined: Self = StObject.set(x, "lowercaseExpandedTerms", js.undefined)
+    
+    inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    
+    inline def setStoredFields(value: NameList): Self = StObject.set(x, "storedFields", value.asInstanceOf[js.Any])
+    
+    inline def setStoredFieldsUndefined: Self = StObject.set(x, "storedFields", js.undefined)
+    
+    inline def setStoredFieldsVarargs(value: String*): Self = StObject.set(x, "storedFields", js.Array(value*))
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def set_source(value: NameList): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExclude(value: NameList): Self = StObject.set(x, "_sourceExclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
+    
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
+    
+    inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
+    
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
+    
+    inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
+    
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
+  }
 }
-

@@ -1,22 +1,26 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IUriEscapeStatics extends js.Object {
+trait IUriEscapeStatics extends StObject {
+  
   def escapeComponent(toEscape: String): String
+  
   def unescapeComponent(toUnescape: String): String
 }
-
 object IUriEscapeStatics {
-  @scala.inline
-  def apply(escapeComponent: String => CallbackTo[String], unescapeComponent: String => CallbackTo[String]): IUriEscapeStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("escapeComponent")(js.Any.fromFunction1((t0: java.lang.String) => escapeComponent(t0).runNow()))
-    __obj.updateDynamic("unescapeComponent")(js.Any.fromFunction1((t0: java.lang.String) => unescapeComponent(t0).runNow()))
+  
+  inline def apply(escapeComponent: String => String, unescapeComponent: String => String): IUriEscapeStatics = {
+    val __obj = js.Dynamic.literal(escapeComponent = js.Any.fromFunction1(escapeComponent), unescapeComponent = js.Any.fromFunction1(unescapeComponent))
     __obj.asInstanceOf[IUriEscapeStatics]
   }
+  
+  extension [Self <: IUriEscapeStatics](x: Self) {
+    
+    inline def setEscapeComponent(value: String => String): Self = StObject.set(x, "escapeComponent", js.Any.fromFunction1(value))
+    
+    inline def setUnescapeComponent(value: String => String): Self = StObject.set(x, "unescapeComponent", js.Any.fromFunction1(value))
+  }
 }
-

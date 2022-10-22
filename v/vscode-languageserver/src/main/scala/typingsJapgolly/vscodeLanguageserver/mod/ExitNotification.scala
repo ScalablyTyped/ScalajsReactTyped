@@ -1,12 +1,21 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.exit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "ExitNotification")
-@js.native
-object ExitNotification extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.NotificationType0[Unit] = js.native
+object ExitNotification {
+  
+  @JSImport("vscode-languageserver", "ExitNotification.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageserver", "ExitNotification.method")
+  @js.native
+  val method: exit = js.native
+  
+  @JSImport("vscode-languageserver", "ExitNotification.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolNotificationType0[Unit] = js.native
 }
-

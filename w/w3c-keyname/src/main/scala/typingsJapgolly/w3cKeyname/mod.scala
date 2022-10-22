@@ -1,20 +1,15 @@
 package typingsJapgolly.w3cKeyname
 
-import org.scalablytyped.runtime.NumberDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("w3c-keyname", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def keyName(event: Event_): String = js.native
-  @js.native
-  object base extends /* keyCode */ NumberDictionary[String]
+object mod {
   
+  @JSImport("w3c-keyname", JSImport.Namespace)
   @js.native
-  object shift extends /* keyCode */ NumberDictionary[String]
+  val ^ : js.Any = js.native
   
+  inline def keyName(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyName")(event.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

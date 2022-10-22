@@ -10,10 +10,10 @@ Single component release of shape
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-shape |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 1996 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 152.66666666666666 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

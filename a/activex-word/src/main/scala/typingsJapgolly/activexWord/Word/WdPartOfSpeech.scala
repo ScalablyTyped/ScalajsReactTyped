@@ -1,55 +1,51 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
-import typingsJapgolly.activexWord.activexWordNumbers.`9`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import typingsJapgolly.activexWord.activexWordInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`9`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`9`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
 */
-trait WdPartOfSpeech extends js.Object
-
+trait WdPartOfSpeech extends StObject
 object WdPartOfSpeech {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdAdjective: `0` = this.cast(0)
-  @scala.inline
-  def wdAdverb: `2` = this.cast(2)
-  @scala.inline
-  def wdConjunction: `5` = this.cast(5)
-  @scala.inline
-  def wdIdiom: `8` = this.cast(8)
-  @scala.inline
-  def wdInterjection: `7` = this.cast(7)
-  @scala.inline
-  def wdNoun: `1` = this.cast(1)
-  @scala.inline
-  def wdOther: `9` = this.cast(9)
-  @scala.inline
-  def wdPreposition: `6` = this.cast(6)
-  @scala.inline
-  def wdPronoun: `4` = this.cast(4)
-  @scala.inline
-  def wdVerb: `3` = this.cast(3)
+  
+  inline def wdAdjective: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdAdverb: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdConjunction: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdIdiom: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdInterjection: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdNoun: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdOther: `9` = 9.asInstanceOf[`9`]
+  
+  inline def wdPreposition: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdPronoun: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdVerb: `3` = 3.asInstanceOf[`3`]
 }
-

@@ -1,26 +1,17 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQueryPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.Confirm")
 @js.native
-class Confirm protected () extends Dialog {
-  def this(element: Element) = this()
-  def this(element: Element, options: ConfirmOptions) = this()
+trait Confirm
+  extends StObject
+     with Dialog {
+  
   @JSName("options")
   var options_Confirm: ConfirmOptions = js.native
-  var result: JQueryPromise[_] = js.native
+  
+  var result: JQueryPromise[Any] = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.Confirm")
-@js.native
-object Confirm extends js.Object {
-  var fn: Confirm = js.native
-  def extend(proto: js.Object): Confirm = js.native
-}
-

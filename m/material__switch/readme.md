@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__switch
 
-Typings are for version 4.0.0
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web switch component
@@ -10,10 +10,10 @@ The Material Components for the web switch component
 | ------------------ | :-------------: |
 | Full name          | @material/switch |
 | Keywords           | material components, material design, switch |
-| # releases         | 164 |
-| # dependents       | 45 |
-| # downloads        | 1254853 |
-| # stars            | 0 |
+| # releases         | 734 |
+| # dependents       | 0.0 |
+| # downloads        | 233467.66666666666 |
+| # stars            | 16411.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)

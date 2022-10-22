@@ -1,27 +1,27 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ trait IService extends INamespace {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.apolloProtobufjs.mod.AnyNestedObject because Already inherited */ trait IService
+  extends StObject
+     with INamespace {
+  
   /** Method descriptors */
   var methods: StringDictionary[IMethod]
 }
-
 object IService {
-  @scala.inline
-  def apply(
-    methods: StringDictionary[IMethod],
-    nested: StringDictionary[AnyNestedObject] = null,
-    options: StringDictionary[js.Any] = null
-  ): IService = {
+  
+  inline def apply(methods: StringDictionary[IMethod]): IService = {
     val __obj = js.Dynamic.literal(methods = methods.asInstanceOf[js.Any])
-    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[IService]
   }
+  
+  extension [Self <: IService](x: Self) {
+    
+    inline def setMethods(value: StringDictionary[IMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+  }
 }
-

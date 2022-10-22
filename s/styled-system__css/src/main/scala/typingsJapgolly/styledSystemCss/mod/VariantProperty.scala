@@ -1,10 +1,13 @@
 package typingsJapgolly.styledSystemCss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VariantProperty extends SystemStyleObject {
+trait VariantProperty
+  extends StObject
+     with _SystemStyleObject {
+  
   /**
     * **`Variants`** can be useful for applying complex styles to a component based on a single prop.
     *
@@ -28,13 +31,15 @@ trait VariantProperty extends SystemStyleObject {
     */
   var variant: String
 }
-
 object VariantProperty {
-  @scala.inline
-  def apply(variant: String): VariantProperty = {
-    val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
   
+  inline def apply(variant: String): VariantProperty = {
+    val __obj = js.Dynamic.literal(variant = variant.asInstanceOf[js.Any])
     __obj.asInstanceOf[VariantProperty]
   }
+  
+  extension [Self <: VariantProperty](x: Self) {
+    
+    inline def setVariant(value: String): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+  }
 }
-

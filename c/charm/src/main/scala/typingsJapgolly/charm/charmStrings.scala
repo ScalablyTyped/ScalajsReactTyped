@@ -1,120 +1,113 @@
 package typingsJapgolly.charm
 
 import typingsJapgolly.charm.mod.CharmColorName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object charmStrings {
-  @js.native
-  sealed trait black extends CharmColorName
   
   @js.native
-  sealed trait blink extends js.Object
+  sealed trait black
+    extends StObject
+       with CharmColorName
+  inline def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait blue extends CharmColorName
+  sealed trait blink extends StObject
+  inline def blink: blink = "blink".asInstanceOf[blink]
   
   @js.native
-  sealed trait bright extends js.Object
+  sealed trait blue
+    extends StObject
+       with CharmColorName
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait char extends js.Object
+  sealed trait bright extends StObject
+  inline def bright: bright = "bright".asInstanceOf[bright]
   
   @js.native
-  sealed trait cyan extends CharmColorName
+  sealed trait char extends StObject
+  inline def char: char = "char".asInstanceOf[char]
   
   @js.native
-  sealed trait dim extends js.Object
+  sealed trait cyan
+    extends StObject
+       with CharmColorName
+  inline def cyan: cyan = "cyan".asInstanceOf[cyan]
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait dim extends StObject
+  inline def dim: dim = "dim".asInstanceOf[dim]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait green extends CharmColorName
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait green
+    extends StObject
+       with CharmColorName
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait magenta extends CharmColorName
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait red extends CharmColorName
+  sealed trait magenta
+    extends StObject
+       with CharmColorName
+  inline def magenta: magenta = "magenta".asInstanceOf[magenta]
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait red
+    extends StObject
+       with CharmColorName
+  inline def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait reverse extends StObject
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait screen extends StObject
+  inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
-  sealed trait underscore extends js.Object
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait underscore extends StObject
+  inline def underscore: underscore = "underscore".asInstanceOf[underscore]
   
   @js.native
-  sealed trait white extends CharmColorName
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait yellow extends CharmColorName
+  sealed trait white
+    extends StObject
+       with CharmColorName
+  inline def white: white = "white".asInstanceOf[white]
   
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def blink: blink = "blink".asInstanceOf[blink]
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
-  @scala.inline
-  def bright: bright = "bright".asInstanceOf[bright]
-  @scala.inline
-  def char: char = "char".asInstanceOf[char]
-  @scala.inline
-  def cyan: cyan = "cyan".asInstanceOf[cyan]
-  @scala.inline
-  def dim: dim = "dim".asInstanceOf[dim]
-  @scala.inline
-  def down: down = "down".asInstanceOf[down]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def magenta: magenta = "magenta".asInstanceOf[magenta]
-  @scala.inline
-  def red: red = "red".asInstanceOf[red]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def underscore: underscore = "underscore".asInstanceOf[underscore]
-  @scala.inline
-  def up: up = "up".asInstanceOf[up]
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  @js.native
+  sealed trait yellow
+    extends StObject
+       with CharmColorName
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
 }
-

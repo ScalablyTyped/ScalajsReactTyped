@@ -1,21 +1,23 @@
 package typingsJapgolly.azdata.mod.nb
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessageHandler[T /* <: IMessage */] extends js.Object {
+trait MessageHandler[T /* <: IMessage */] extends StObject {
+  
   def handle(message: T): Unit | Thenable[Unit]
 }
-
 object MessageHandler {
-  @scala.inline
-  def apply[T /* <: IMessage */](handle: T => CallbackTo[Unit | Thenable[Unit]]): MessageHandler[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("handle")(js.Any.fromFunction1((t0: T) => handle(t0).runNow()))
+  
+  inline def apply[T /* <: IMessage */](handle: T => Unit | Thenable[Unit]): MessageHandler[T] = {
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction1(handle))
     __obj.asInstanceOf[MessageHandler[T]]
   }
+  
+  extension [Self <: MessageHandler[?], T /* <: IMessage */](x: Self & MessageHandler[T]) {
+    
+    inline def setHandle(value: T => Unit | Thenable[Unit]): Self = StObject.set(x, "handle", js.Any.fromFunction1(value))
+  }
 }
-

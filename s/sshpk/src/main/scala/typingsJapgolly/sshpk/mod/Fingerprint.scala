@@ -1,30 +1,40 @@
 package typingsJapgolly.sshpk.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.sshpk.sshpkStrings.base64
+import typingsJapgolly.sshpk.sshpkStrings.hex
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sshpk", "Fingerprint")
 @js.native
-class Fingerprint protected () extends js.Object {
-  def this(opts: js.Any) = this()
-  var algorithm: String = js.native
-  var hash: String = js.native
-  var `type`: String = js.native
-  def addColons(fp: String): String = js.native
-  def base64Strip(fp: String): String = js.native
-  def isFingerprint(obj: String, ver: String): Boolean = js.native
-  def isFingerprint(obj: Buffer, ver: String): Boolean = js.native
-  def matches(other: Fingerprint): Boolean = js.native
-  def sshBase64Format(alg: String, h: String): String = js.native
-  def toString(format: String): String = js.native
+open class Fingerprint protected () extends StObject {
+  def this(opts: FingerprintOptions) = this()
+  
+  var algorithm: AlgorithmHashType = js.native
+  
+  var hash: Buffer = js.native
+  
+  def matches(other: Certificate): Boolean = js.native
+  def matches(other: Key): Boolean = js.native
+  def matches(other: PrivateKey): Boolean = js.native
+  
+  def toString(format: hex | base64): String = js.native
+  
+  var `type`: FingerprintType = js.native
 }
-
-/* static members */
-@JSImport("sshpk", "Fingerprint")
-@js.native
-object Fingerprint extends js.Object {
-  def parse(fp: String, options: js.Any): Fingerprint = js.native
+object Fingerprint {
+  
+  @JSImport("sshpk", "Fingerprint")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  inline def isFingerprint(obj: Any, ver: Version): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFingerprint")(obj.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  /* static member */
+  inline def parse(fp: String): Fingerprint = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fp.asInstanceOf[js.Any]).asInstanceOf[Fingerprint]
+  inline def parse(fp: String, options: js.Array[String]): Fingerprint = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fingerprint]
+  inline def parse(fp: String, options: FingerprintParseOptions): Fingerprint = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fingerprint]
 }
-

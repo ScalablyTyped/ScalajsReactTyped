@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`0`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`0`
 */
-trait XlProtectedViewCloseReason extends js.Object
-
+trait XlProtectedViewCloseReason extends StObject
 object XlProtectedViewCloseReason {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlProtectedViewCloseEdit: `1` = this.cast(1)
-  @scala.inline
-  def xlProtectedViewCloseForced: `2` = this.cast(2)
-  @scala.inline
-  def xlProtectedViewCloseNormal: `0` = this.cast(0)
+  
+  inline def xlProtectedViewCloseEdit: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlProtectedViewCloseForced: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlProtectedViewCloseNormal: `0` = 0.asInstanceOf[`0`]
 }
-

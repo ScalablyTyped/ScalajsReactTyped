@@ -1,36 +1,54 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomLayerOptions extends js.Object {
+trait CustomLayerOptions extends StObject {
+  
   var databoxId: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
   var geotableId: js.UndefOr[String] = js.undefined
+  
   var pointDensityType: js.UndefOr[PointDensityType] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var tags: js.UndefOr[String] = js.undefined
 }
-
 object CustomLayerOptions {
-  @scala.inline
-  def apply(
-    databoxId: String = null,
-    filter: String = null,
-    geotableId: String = null,
-    pointDensityType: Int | Double = null,
-    q: String = null,
-    tags: String = null
-  ): CustomLayerOptions = {
+  
+  inline def apply(): CustomLayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (databoxId != null) __obj.updateDynamic("databoxId")(databoxId.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (geotableId != null) __obj.updateDynamic("geotableId")(geotableId.asInstanceOf[js.Any])
-    if (pointDensityType != null) __obj.updateDynamic("pointDensityType")(pointDensityType.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomLayerOptions]
   }
+  
+  extension [Self <: CustomLayerOptions](x: Self) {
+    
+    inline def setDataboxId(value: String): Self = StObject.set(x, "databoxId", value.asInstanceOf[js.Any])
+    
+    inline def setDataboxIdUndefined: Self = StObject.set(x, "databoxId", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setGeotableId(value: String): Self = StObject.set(x, "geotableId", value.asInstanceOf[js.Any])
+    
+    inline def setGeotableIdUndefined: Self = StObject.set(x, "geotableId", js.undefined)
+    
+    inline def setPointDensityType(value: PointDensityType): Self = StObject.set(x, "pointDensityType", value.asInstanceOf[js.Any])
+    
+    inline def setPointDensityTypeUndefined: Self = StObject.set(x, "pointDensityType", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setTags(value: String): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+  }
 }
-

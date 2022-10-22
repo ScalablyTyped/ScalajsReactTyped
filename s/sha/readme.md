@@ -10,10 +10,10 @@ Check and get file hashes
 | ------------------ | :-------------: |
 | Full name          | sha |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 14780227 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1382537.6666666667 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/ForbesLindesay/sha#readme)

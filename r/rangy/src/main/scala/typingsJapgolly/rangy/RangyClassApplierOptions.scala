@@ -2,47 +2,76 @@ package typingsJapgolly.rangy
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RangyClassApplierOptions extends js.Object {
+trait RangyClassApplierOptions extends StObject {
+  
   var applyToEditableOnly: js.UndefOr[Boolean] = js.undefined
+  
   var elementAttributes: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var elementProperties: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var elementTagName: js.UndefOr[String] = js.undefined
+  
   var ignoreWhiteSpace: js.UndefOr[Boolean] = js.undefined
+  
   var normalize: js.UndefOr[Boolean] = js.undefined
+  
   var onElementCreate: js.UndefOr[js.Function2[/* element */ Element, /* classApplier */ RangyClassApplier, Unit]] = js.undefined
+  
   var tagNames: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var useExistingElements: js.UndefOr[Boolean] = js.undefined
 }
-
 object RangyClassApplierOptions {
-  @scala.inline
-  def apply(
-    applyToEditableOnly: js.UndefOr[Boolean] = js.undefined,
-    elementAttributes: StringDictionary[String] = null,
-    elementProperties: StringDictionary[String] = null,
-    elementTagName: String = null,
-    ignoreWhiteSpace: js.UndefOr[Boolean] = js.undefined,
-    normalize: js.UndefOr[Boolean] = js.undefined,
-    onElementCreate: (/* element */ Element, /* classApplier */ RangyClassApplier) => Callback = null,
-    tagNames: String | js.Array[String] = null,
-    useExistingElements: js.UndefOr[Boolean] = js.undefined
-  ): RangyClassApplierOptions = {
+  
+  inline def apply(): RangyClassApplierOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(applyToEditableOnly)) __obj.updateDynamic("applyToEditableOnly")(applyToEditableOnly.asInstanceOf[js.Any])
-    if (elementAttributes != null) __obj.updateDynamic("elementAttributes")(elementAttributes.asInstanceOf[js.Any])
-    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties.asInstanceOf[js.Any])
-    if (elementTagName != null) __obj.updateDynamic("elementTagName")(elementTagName.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWhiteSpace)) __obj.updateDynamic("ignoreWhiteSpace")(ignoreWhiteSpace.asInstanceOf[js.Any])
-    if (!js.isUndefined(normalize)) __obj.updateDynamic("normalize")(normalize.asInstanceOf[js.Any])
-    if (onElementCreate != null) __obj.updateDynamic("onElementCreate")(js.Any.fromFunction2((t0: /* element */ org.scalajs.dom.raw.Element, t1: /* classApplier */ typingsJapgolly.rangy.RangyClassApplier) => onElementCreate(t0, t1).runNow()))
-    if (tagNames != null) __obj.updateDynamic("tagNames")(tagNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(useExistingElements)) __obj.updateDynamic("useExistingElements")(useExistingElements.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangyClassApplierOptions]
   }
+  
+  extension [Self <: RangyClassApplierOptions](x: Self) {
+    
+    inline def setApplyToEditableOnly(value: Boolean): Self = StObject.set(x, "applyToEditableOnly", value.asInstanceOf[js.Any])
+    
+    inline def setApplyToEditableOnlyUndefined: Self = StObject.set(x, "applyToEditableOnly", js.undefined)
+    
+    inline def setElementAttributes(value: StringDictionary[String]): Self = StObject.set(x, "elementAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setElementAttributesUndefined: Self = StObject.set(x, "elementAttributes", js.undefined)
+    
+    inline def setElementProperties(value: StringDictionary[String]): Self = StObject.set(x, "elementProperties", value.asInstanceOf[js.Any])
+    
+    inline def setElementPropertiesUndefined: Self = StObject.set(x, "elementProperties", js.undefined)
+    
+    inline def setElementTagName(value: String): Self = StObject.set(x, "elementTagName", value.asInstanceOf[js.Any])
+    
+    inline def setElementTagNameUndefined: Self = StObject.set(x, "elementTagName", js.undefined)
+    
+    inline def setIgnoreWhiteSpace(value: Boolean): Self = StObject.set(x, "ignoreWhiteSpace", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreWhiteSpaceUndefined: Self = StObject.set(x, "ignoreWhiteSpace", js.undefined)
+    
+    inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+    
+    inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+    
+    inline def setOnElementCreate(value: (/* element */ Element, /* classApplier */ RangyClassApplier) => Callback): Self = StObject.set(x, "onElementCreate", js.Any.fromFunction2((t0: /* element */ Element, t1: /* classApplier */ RangyClassApplier) => (value(t0, t1)).runNow()))
+    
+    inline def setOnElementCreateUndefined: Self = StObject.set(x, "onElementCreate", js.undefined)
+    
+    inline def setTagNames(value: String | js.Array[String]): Self = StObject.set(x, "tagNames", value.asInstanceOf[js.Any])
+    
+    inline def setTagNamesUndefined: Self = StObject.set(x, "tagNames", js.undefined)
+    
+    inline def setTagNamesVarargs(value: String*): Self = StObject.set(x, "tagNames", js.Array(value*))
+    
+    inline def setUseExistingElements(value: Boolean): Self = StObject.set(x, "useExistingElements", value.asInstanceOf[js.Any])
+    
+    inline def setUseExistingElementsUndefined: Self = StObject.set(x, "useExistingElements", js.undefined)
+  }
 }
-

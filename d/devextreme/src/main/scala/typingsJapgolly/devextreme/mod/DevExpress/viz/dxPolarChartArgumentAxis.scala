@@ -1,145 +1,203 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorOpacity
-import typingsJapgolly.devextreme.devextremeStrings.allArgumentPoints
-import typingsJapgolly.devextreme.devextremeStrings.betweenLabels
-import typingsJapgolly.devextreme.devextremeStrings.continuous
-import typingsJapgolly.devextreme.devextremeStrings.crossLabels
-import typingsJapgolly.devextreme.devextremeStrings.datetime
-import typingsJapgolly.devextreme.devextremeStrings.day
-import typingsJapgolly.devextreme.devextremeStrings.discrete
-import typingsJapgolly.devextreme.devextremeStrings.hour
-import typingsJapgolly.devextreme.devextremeStrings.logarithmic
-import typingsJapgolly.devextreme.devextremeStrings.millisecond
-import typingsJapgolly.devextreme.devextremeStrings.minute
-import typingsJapgolly.devextreme.devextremeStrings.month
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.numeric
-import typingsJapgolly.devextreme.devextremeStrings.quarter
-import typingsJapgolly.devextreme.devextremeStrings.second
-import typingsJapgolly.devextreme.devextremeStrings.string_
-import typingsJapgolly.devextreme.devextremeStrings.week
-import typingsJapgolly.devextreme.devextremeStrings.year
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.ArgumentAxisHoverMode
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.AxisScaleType
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartArgumentAxis extends dxPolarChartCommonAxisSettings {
-  /** Specifies the desired type of axis values. */
-  var argumentType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the "continuous" and "logarithmic" types. */
+trait dxPolarChartArgumentAxis
+  extends StObject
+     with dxPolarChartCommonAxisSettings {
+  
+  /**
+    * Specifies the desired type of axis values.
+    */
+  var argumentType: js.UndefOr[ChartsDataType] = js.undefined
+  
+  /**
+    * Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the &apos;continuous&apos; and &apos;logarithmic&apos; types.
+    */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Specifies the order in which arguments (categories) are arranged on the discrete argument axis. */
+  
+  /**
+    * Specifies the order of categories on an axis of the &apos;discrete&apos; type.
+    */
   var categories: js.UndefOr[js.Array[Double | String | js.Date]] = js.undefined
-  /** Defines an array of the argument axis constant lines. */
+  
+  /**
+    * Defines an array of the argument axis constant lines.
+    */
   var constantLines: js.UndefOr[js.Array[dxPolarChartArgumentAxisConstantLines]] = js.undefined
-  /** Specifies whether or not to display the first point at the angle specified by the startAngle option. */
+  
+  /**
+    * Specifies whether or not to display the first point at the angle specified by the startAngle property.
+    */
   var firstPointOnStartAngle: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the elements that will be highlighted when the argument axis is hovered over. */
-  var hoverMode: js.UndefOr[allArgumentPoints | none] = js.undefined
-  /** Specifies options for argument axis labels. */
+  
+  /**
+    * Specifies the elements that will be highlighted when the argument axis is hovered over.
+    */
+  var hoverMode: js.UndefOr[ArgumentAxisHoverMode] = js.undefined
+  
+  /**
+    * Specifies properties for argument axis labels.
+    */
   @JSName("label")
   var label_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  
+  /**
+    * Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes.
+    */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for a logarithmic axis. */
+  
+  /**
+    * Specifies the value to be raised to a power when generating ticks for a logarithmic axis.
+    */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** Specifies the number of minor ticks between two neighboring major ticks. */
+  
+  /**
+    * Specifies the number of minor ticks between two neighboring major ticks.
+    */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. */
-  var minorTickInterval: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** Specifies the options of the minor ticks. */
+  
+  /**
+    * Specifies the interval between minor ticks.
+    */
+  var minorTickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * Specifies the properties of the minor ticks.
+    */
   @JSName("minorTick")
   var minorTick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisMinorTick] = js.undefined
-  /** Specifies the value to be used as the origin for the argument axis. */
+  
+  /**
+    * Specifies the value to be used as the origin for the argument axis.
+    */
   var originValue: js.UndefOr[Double] = js.undefined
-  /** Specifies the period of the argument values in the data source. */
+  
+  /**
+    * Specifies the period of the argument values in the data source.
+    */
   var period: js.UndefOr[Double] = js.undefined
-  /** Specifies the angle in arc degrees to which the argument axis should be rotated. The positive values rotate the axis clockwise. */
+  
+  /**
+    * Specifies the angle in arc degrees to which the argument axis should be rotated. The positive values rotate the axis clockwise.
+    */
   var startAngle: js.UndefOr[Double] = js.undefined
-  /** Specifies options for argument axis strips. */
+  
+  /**
+    * Specifies properties for argument axis strips.
+    */
   var strips: js.UndefOr[js.Array[dxPolarChartArgumentAxisStrips]] = js.undefined
-  /** Specifies an interval between axis ticks/grid lines. */
-  var tickInterval: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** An object defining the configuration options for axis ticks. */
+  
+  /**
+    * Specifies an interval between axis ticks/grid lines.
+    */
+  var tickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * An object defining the configuration properties for axis ticks.
+    */
   @JSName("tick")
   var tick_dxPolarChartArgumentAxis: js.UndefOr[dxPolarChartArgumentAxisTick] = js.undefined
-  /** Specifies the required type of the argument axis. */
-  var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
+  
+  /**
+    * Specifies the required type of the argument axis.
+    */
+  var `type`: js.UndefOr[AxisScaleType] = js.undefined
 }
-
 object dxPolarChartArgumentAxis {
-  @scala.inline
-  def apply(
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    argumentType: datetime | numeric | string_ = null,
-    axisDivisionFactor: Int | Double = null,
-    categories: js.Array[Double | String | js.Date] = null,
-    color: String = null,
-    constantLineStyle: dxPolarChartCommonAxisSettingsConstantLineStyle = null,
-    constantLines: js.Array[dxPolarChartArgumentAxisConstantLines] = null,
-    discreteAxisDivisionMode: betweenLabels | crossLabels = null,
-    endOnTick: js.UndefOr[Boolean] = js.undefined,
-    firstPointOnStartAngle: js.UndefOr[Boolean] = js.undefined,
-    grid: AnonColorOpacity = null,
-    hoverMode: allArgumentPoints | none = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: dxPolarChartArgumentAxisLabel = null,
-    linearThreshold: Int | Double = null,
-    logarithmBase: Int | Double = null,
-    minorGrid: AnonColorOpacity = null,
-    minorTick: dxPolarChartArgumentAxisMinorTick = null,
-    minorTickCount: Int | Double = null,
-    minorTickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    opacity: Int | Double = null,
-    originValue: Int | Double = null,
-    period: Int | Double = null,
-    startAngle: Int | Double = null,
-    stripStyle: dxPolarChartCommonAxisSettingsStripStyle = null,
-    strips: js.Array[dxPolarChartArgumentAxisStrips] = null,
-    tick: dxPolarChartArgumentAxisTick = null,
-    tickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    `type`: continuous | discrete | logarithmic = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxPolarChartArgumentAxis = {
+  
+  inline def apply(): dxPolarChartArgumentAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (argumentType != null) __obj.updateDynamic("argumentType")(argumentType.asInstanceOf[js.Any])
-    if (axisDivisionFactor != null) __obj.updateDynamic("axisDivisionFactor")(axisDivisionFactor.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (constantLineStyle != null) __obj.updateDynamic("constantLineStyle")(constantLineStyle.asInstanceOf[js.Any])
-    if (constantLines != null) __obj.updateDynamic("constantLines")(constantLines.asInstanceOf[js.Any])
-    if (discreteAxisDivisionMode != null) __obj.updateDynamic("discreteAxisDivisionMode")(discreteAxisDivisionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
-    if (!js.isUndefined(firstPointOnStartAngle)) __obj.updateDynamic("firstPointOnStartAngle")(firstPointOnStartAngle.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (hoverMode != null) __obj.updateDynamic("hoverMode")(hoverMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (linearThreshold != null) __obj.updateDynamic("linearThreshold")(linearThreshold.asInstanceOf[js.Any])
-    if (logarithmBase != null) __obj.updateDynamic("logarithmBase")(logarithmBase.asInstanceOf[js.Any])
-    if (minorGrid != null) __obj.updateDynamic("minorGrid")(minorGrid.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (originValue != null) __obj.updateDynamic("originValue")(originValue.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (stripStyle != null) __obj.updateDynamic("stripStyle")(stripStyle.asInstanceOf[js.Any])
-    if (strips != null) __obj.updateDynamic("strips")(strips.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartArgumentAxis]
   }
+  
+  extension [Self <: dxPolarChartArgumentAxis](x: Self) {
+    
+    inline def setArgumentType(value: ChartsDataType): Self = StObject.set(x, "argumentType", value.asInstanceOf[js.Any])
+    
+    inline def setArgumentTypeUndefined: Self = StObject.set(x, "argumentType", js.undefined)
+    
+    inline def setAxisDivisionFactor(value: Double): Self = StObject.set(x, "axisDivisionFactor", value.asInstanceOf[js.Any])
+    
+    inline def setAxisDivisionFactorUndefined: Self = StObject.set(x, "axisDivisionFactor", js.undefined)
+    
+    inline def setCategories(value: js.Array[Double | String | js.Date]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setConstantLines(value: js.Array[dxPolarChartArgumentAxisConstantLines]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
+    
+    inline def setConstantLinesUndefined: Self = StObject.set(x, "constantLines", js.undefined)
+    
+    inline def setConstantLinesVarargs(value: dxPolarChartArgumentAxisConstantLines*): Self = StObject.set(x, "constantLines", js.Array(value*))
+    
+    inline def setFirstPointOnStartAngle(value: Boolean): Self = StObject.set(x, "firstPointOnStartAngle", value.asInstanceOf[js.Any])
+    
+    inline def setFirstPointOnStartAngleUndefined: Self = StObject.set(x, "firstPointOnStartAngle", js.undefined)
+    
+    inline def setHoverMode(value: ArgumentAxisHoverMode): Self = StObject.set(x, "hoverMode", value.asInstanceOf[js.Any])
+    
+    inline def setHoverModeUndefined: Self = StObject.set(x, "hoverMode", js.undefined)
+    
+    inline def setLabel(value: dxPolarChartArgumentAxisLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLinearThreshold(value: Double): Self = StObject.set(x, "linearThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setLinearThresholdUndefined: Self = StObject.set(x, "linearThreshold", js.undefined)
+    
+    inline def setLogarithmBase(value: Double): Self = StObject.set(x, "logarithmBase", value.asInstanceOf[js.Any])
+    
+    inline def setLogarithmBaseUndefined: Self = StObject.set(x, "logarithmBase", js.undefined)
+    
+    inline def setMinorTick(value: dxPolarChartArgumentAxisMinorTick): Self = StObject.set(x, "minorTick", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickCount(value: Double): Self = StObject.set(x, "minorTickCount", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
+    
+    inline def setMinorTickInterval(value: VizTimeInterval): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
+    
+    inline def setMinorTickUndefined: Self = StObject.set(x, "minorTick", js.undefined)
+    
+    inline def setOriginValue(value: Double): Self = StObject.set(x, "originValue", value.asInstanceOf[js.Any])
+    
+    inline def setOriginValueUndefined: Self = StObject.set(x, "originValue", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    
+    inline def setStrips(value: js.Array[dxPolarChartArgumentAxisStrips]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
+    
+    inline def setStripsUndefined: Self = StObject.set(x, "strips", js.undefined)
+    
+    inline def setStripsVarargs(value: dxPolarChartArgumentAxisStrips*): Self = StObject.set(x, "strips", js.Array(value*))
+    
+    inline def setTick(value: dxPolarChartArgumentAxisTick): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
+    
+    inline def setTickInterval(value: VizTimeInterval): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
+    
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    
+    inline def setType(value: AxisScaleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

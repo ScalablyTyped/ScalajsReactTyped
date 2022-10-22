@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Visibility extends js.Object
-
+sealed trait Visibility extends StObject
 @JSImport("cesium", "Visibility")
 @js.native
-object Visibility extends js.Object {
-  @js.native
-  sealed trait FULL extends Visibility
-  
-  @js.native
-  sealed trait NONE extends Visibility
-  
-  @js.native
-  sealed trait PARTIAL extends Visibility
+object Visibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Visibility with Double] = js.native
-  /* 2 */ @js.native
-  object FULL extends TopLevel[FULL with Double]
+  def apply(value: Double): js.UndefOr[Visibility & Double] = js.native
   
-  /* 0 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  /**
+    * Represents that an object is visible in its entirety.
+    */
+  @js.native
+  sealed trait FULL
+    extends StObject
+       with Visibility
+  /* 1 */ val FULL: typingsJapgolly.cesium.mod.Visibility.FULL & Double = js.native
   
-  /* 1 */ @js.native
-  object PARTIAL extends TopLevel[PARTIAL with Double]
+  /**
+    * Represents that no part of an object is visible.
+    */
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with Visibility
+  /* -1 */ val NONE: typingsJapgolly.cesium.mod.Visibility.NONE & Double = js.native
   
+  /**
+    * Represents that part, but not all, of an object is visible
+    */
+  @js.native
+  sealed trait PARTIAL
+    extends StObject
+       with Visibility
+  /* 0 */ val PARTIAL: typingsJapgolly.cesium.mod.Visibility.PARTIAL & Double = js.native
 }
-

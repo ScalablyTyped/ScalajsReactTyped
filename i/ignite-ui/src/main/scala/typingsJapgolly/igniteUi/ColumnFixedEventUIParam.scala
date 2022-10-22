@@ -1,36 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnFixedEventUIParam extends js.Object {
+trait ColumnFixedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the columnKey or the columnIndex.
-  	 */
-  var columnIdentifier: js.UndefOr[js.Any] = js.undefined
+    * Gets the columnKey or the columnIndex.
+    */
+  var columnIdentifier: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets whether header cell has children(use this argument ONLY when multi-column-headers are enabled).
-  	 */
+    * Gets whether header cell has children(use this argument ONLY when multi-column-headers are enabled).
+    */
   var isGroupHeader: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets a reference to the widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ColumnFixedEventUIParam {
-  @scala.inline
-  def apply(
-    columnIdentifier: js.Any = null,
-    isGroupHeader: js.UndefOr[Boolean] = js.undefined,
-    owner: js.Any = null
-  ): ColumnFixedEventUIParam = {
+  
+  inline def apply(): ColumnFixedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnIdentifier != null) __obj.updateDynamic("columnIdentifier")(columnIdentifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(isGroupHeader)) __obj.updateDynamic("isGroupHeader")(isGroupHeader.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnFixedEventUIParam]
   }
+  
+  extension [Self <: ColumnFixedEventUIParam](x: Self) {
+    
+    inline def setColumnIdentifier(value: Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
+    
+    inline def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
+    
+    inline def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

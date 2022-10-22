@@ -1,34 +1,28 @@
 package typingsJapgolly.reactOffcanvas
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactOffcanvasStrings {
-  @js.native
-  sealed trait left extends js.Object
   
   @js.native
-  sealed trait overlay extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait parallax extends js.Object
+  sealed trait overlay extends StObject
+  inline def overlay: overlay = "overlay".asInstanceOf[overlay]
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait parallax extends StObject
+  inline def parallax: parallax = "parallax".asInstanceOf[parallax]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait push extends StObject
+  inline def push: push = "push".asInstanceOf[push]
   
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def overlay: overlay = "overlay".asInstanceOf[overlay]
-  @scala.inline
-  def parallax: parallax = "parallax".asInstanceOf[parallax]
-  @scala.inline
-  def push: push = "push".asInstanceOf[push]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
 }
-

@@ -1,19 +1,11 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.EditorOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.Editor")
+@JSImport("devextreme", "default.ui.Editor")
 @js.native
-class Editor protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.Editor {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: EditorOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.Editor]) = this()
-  def this(element: Element, options: EditorOptions[typingsJapgolly.devextreme.mod.DevExpress.ui.Editor]) = this()
-}
-
+open class Editor[TProperties] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.Editor[TProperties]

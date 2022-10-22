@@ -1,354 +1,323 @@
 package typingsJapgolly.microsoftSdkSoap
 
-import typingsJapgolly.microsoftSdkSoap.mod._Global_.Sdk.Mdq.AssociatedMenuBehavior
-import typingsJapgolly.microsoftSdkSoap.mod._Global_.Sdk.Mdq.AssociatedMenuGroup
-import typingsJapgolly.microsoftSdkSoap.mod._Global_.Sdk.Mdq.CascadeType
-import typingsJapgolly.microsoftSdkSoap.mod._Global_.Sdk.Mdq.RelationshipType
-import typingsJapgolly.microsoftSdkSoap.mod._Global_.Sdk.Mdq.SecurityType
+import typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuBehavior
+import typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuGroup
+import typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.CascadeType
+import typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.RelationshipType
+import typingsJapgolly.microsoftSdkSoap.mod.global.Sdk.Mdq.SecurityType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object microsoftSdkSoapStrings {
-  @js.native
-  sealed trait Active extends CascadeType
   
   @js.native
-  sealed trait Append extends SecurityType
+  sealed trait Active
+    extends StObject
+       with CascadeType
+  inline def Active: Active = "Active".asInstanceOf[Active]
   
   @js.native
-  sealed trait AppendTo extends js.Object
+  sealed trait Append
+    extends StObject
+       with SecurityType
+  inline def Append: Append = "Append".asInstanceOf[Append]
   
   @js.native
-  sealed trait Assign extends js.Object
+  sealed trait AppendTo extends StObject
+  inline def AppendTo: AppendTo = "AppendTo".asInstanceOf[AppendTo]
   
   @js.native
-  sealed trait BigIntType extends js.Object
+  sealed trait Assign extends StObject
+  inline def Assign: Assign = "Assign".asInstanceOf[Assign]
   
   @js.native
-  sealed trait BooleanType extends js.Object
+  sealed trait BigIntType extends StObject
+  inline def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
   
   @js.native
-  sealed trait BusinessOwned extends js.Object
+  sealed trait BooleanType extends StObject
+  inline def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
   
   @js.native
-  sealed trait BusinessParented extends js.Object
+  sealed trait BusinessOwned extends StObject
+  inline def BusinessOwned: BusinessOwned = "BusinessOwned".asInstanceOf[BusinessOwned]
   
   @js.native
-  sealed trait CalendarRulesType extends js.Object
+  sealed trait BusinessParented extends StObject
+  inline def BusinessParented: BusinessParented = "BusinessParented".asInstanceOf[BusinessParented]
   
   @js.native
-  sealed trait Cascade extends CascadeType
+  sealed trait CalendarRulesType extends StObject
+  inline def CalendarRulesType: CalendarRulesType = "CalendarRulesType".asInstanceOf[CalendarRulesType]
   
   @js.native
-  sealed trait Create extends js.Object
+  sealed trait Cascade
+    extends StObject
+       with CascadeType
+  inline def Cascade: Cascade = "Cascade".asInstanceOf[Cascade]
   
   @js.native
-  sealed trait Customer extends js.Object
+  sealed trait Create extends StObject
+  inline def Create: Create = "Create".asInstanceOf[Create]
   
   @js.native
-  sealed trait CustomerType extends js.Object
+  sealed trait Customer extends StObject
+  inline def Customer: Customer = "Customer".asInstanceOf[Customer]
   
   @js.native
-  sealed trait DateTime extends js.Object
+  sealed trait CustomerType extends StObject
+  inline def CustomerType: CustomerType = "CustomerType".asInstanceOf[CustomerType]
   
   @js.native
-  sealed trait DateTimeType extends js.Object
+  sealed trait DateTime extends StObject
+  inline def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
   
   @js.native
-  sealed trait Decimal extends js.Object
+  sealed trait DateTimeType extends StObject
+  inline def DateTimeType: DateTimeType = "DateTimeType".asInstanceOf[DateTimeType]
   
   @js.native
-  sealed trait DecimalType extends js.Object
+  sealed trait Decimal extends StObject
+  inline def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
   
   @js.native
-  sealed trait Default extends RelationshipType
+  sealed trait DecimalType extends StObject
+  inline def DecimalType: DecimalType = "DecimalType".asInstanceOf[DecimalType]
   
   @js.native
-  sealed trait Delete extends js.Object
+  sealed trait Default
+    extends StObject
+       with RelationshipType
+  inline def Default: Default = "Default".asInstanceOf[Default]
   
   @js.native
-  sealed trait Details extends AssociatedMenuGroup
+  sealed trait Delete extends StObject
+  inline def Delete: Delete = "Delete".asInstanceOf[Delete]
   
   @js.native
-  sealed trait DoNotDisplay extends AssociatedMenuBehavior
+  sealed trait Details
+    extends StObject
+       with AssociatedMenuGroup
+  inline def Details: Details = "Details".asInstanceOf[Details]
   
   @js.native
-  sealed trait Double extends js.Object
+  sealed trait DoNotDisplay
+    extends StObject
+       with AssociatedMenuBehavior
+  inline def DoNotDisplay: DoNotDisplay = "DoNotDisplay".asInstanceOf[DoNotDisplay]
   
   @js.native
-  sealed trait DoubleType extends js.Object
+  sealed trait Double extends StObject
+  inline def Double: Double = "Double".asInstanceOf[Double]
   
   @js.native
-  sealed trait EntityName extends js.Object
+  sealed trait DoubleType extends StObject
+  inline def DoubleType: DoubleType = "DoubleType".asInstanceOf[DoubleType]
   
   @js.native
-  sealed trait EntityNameType extends js.Object
+  sealed trait EntityName extends StObject
+  inline def EntityName: EntityName = "EntityName".asInstanceOf[EntityName]
   
   @js.native
-  sealed trait ImageType extends js.Object
+  sealed trait EntityNameType extends StObject
+  inline def EntityNameType: EntityNameType = "EntityNameType".asInstanceOf[EntityNameType]
   
   @js.native
-  sealed trait Inheritance extends SecurityType
+  sealed trait ImageType extends StObject
+  inline def ImageType: ImageType = "ImageType".asInstanceOf[ImageType]
   
   @js.native
-  sealed trait Integer extends js.Object
+  sealed trait Inheritance
+    extends StObject
+       with SecurityType
+  inline def Inheritance: Inheritance = "Inheritance".asInstanceOf[Inheritance]
   
   @js.native
-  sealed trait IntegerType extends js.Object
+  sealed trait Integer extends StObject
+  inline def Integer: Integer = "Integer".asInstanceOf[Integer]
   
   @js.native
-  sealed trait Lookup extends js.Object
+  sealed trait IntegerType extends StObject
+  inline def IntegerType: IntegerType = "IntegerType".asInstanceOf[IntegerType]
   
   @js.native
-  sealed trait LookupType extends js.Object
+  sealed trait Lookup extends StObject
+  inline def Lookup: Lookup = "Lookup".asInstanceOf[Lookup]
   
   @js.native
-  sealed trait ManagedProperty extends js.Object
+  sealed trait LookupType extends StObject
+  inline def LookupType: LookupType = "LookupType".asInstanceOf[LookupType]
   
   @js.native
-  sealed trait ManagedPropertyType extends js.Object
+  sealed trait ManagedProperty extends StObject
+  inline def ManagedProperty: ManagedProperty = "ManagedProperty".asInstanceOf[ManagedProperty]
   
   @js.native
-  sealed trait ManyToManyRelationship extends RelationshipType
+  sealed trait ManagedPropertyType extends StObject
+  inline def ManagedPropertyType: ManagedPropertyType = "ManagedPropertyType".asInstanceOf[ManagedPropertyType]
   
   @js.native
-  sealed trait Marketing extends AssociatedMenuGroup
+  sealed trait ManyToManyRelationship
+    extends StObject
+       with RelationshipType
+  inline def ManyToManyRelationship: ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[ManyToManyRelationship]
   
   @js.native
-  sealed trait Memo extends js.Object
+  sealed trait Marketing
+    extends StObject
+       with AssociatedMenuGroup
+  inline def Marketing: Marketing = "Marketing".asInstanceOf[Marketing]
   
   @js.native
-  sealed trait MemoType extends js.Object
+  sealed trait Memo extends StObject
+  inline def Memo: Memo = "Memo".asInstanceOf[Memo]
   
   @js.native
-  sealed trait Money extends js.Object
+  sealed trait MemoType extends StObject
+  inline def MemoType: MemoType = "MemoType".asInstanceOf[MemoType]
   
   @js.native
-  sealed trait MoneyType extends js.Object
+  sealed trait Money extends StObject
+  inline def Money: Money = "Money".asInstanceOf[Money]
   
   @js.native
-  sealed trait NoCascade extends CascadeType
+  sealed trait MoneyType extends StObject
+  inline def MoneyType: MoneyType = "MoneyType".asInstanceOf[MoneyType]
   
   @js.native
-  sealed trait None extends SecurityType
+  sealed trait NoCascade
+    extends StObject
+       with CascadeType
+  inline def NoCascade: NoCascade = "NoCascade".asInstanceOf[NoCascade]
   
   @js.native
-  sealed trait NoneCharactertabulationOrganizationOwned extends js.Object
+  sealed trait None
+    extends StObject
+       with SecurityType
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
-  sealed trait OneToManyRelationship extends RelationshipType
+  sealed trait `None    OrganizationOwned` extends StObject
+  inline def `None    OrganizationOwned`: `None    OrganizationOwned` = ("None    OrganizationOwned").asInstanceOf[`None    OrganizationOwned`]
   
   @js.native
-  sealed trait Owner extends js.Object
+  sealed trait OneToManyRelationship
+    extends StObject
+       with RelationshipType
+  inline def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
   
   @js.native
-  sealed trait OwnerType extends js.Object
+  sealed trait Owner extends StObject
+  inline def Owner: Owner = "Owner".asInstanceOf[Owner]
   
   @js.native
-  sealed trait ParentChild extends SecurityType
+  sealed trait OwnerType extends StObject
+  inline def OwnerType: OwnerType = "OwnerType".asInstanceOf[OwnerType]
   
   @js.native
-  sealed trait PartyList extends js.Object
+  sealed trait ParentChild
+    extends StObject
+       with SecurityType
+  inline def ParentChild: ParentChild = "ParentChild".asInstanceOf[ParentChild]
   
   @js.native
-  sealed trait PartyListType extends js.Object
+  sealed trait PartyList extends StObject
+  inline def PartyList: PartyList = "PartyList".asInstanceOf[PartyList]
   
   @js.native
-  sealed trait Picklist extends js.Object
+  sealed trait PartyListType extends StObject
+  inline def PartyListType: PartyListType = "PartyListType".asInstanceOf[PartyListType]
   
   @js.native
-  sealed trait PicklistType extends js.Object
+  sealed trait Picklist extends StObject
+  inline def Picklist: Picklist = "Picklist".asInstanceOf[Picklist]
   
   @js.native
-  sealed trait Pointer extends SecurityType
+  sealed trait PicklistType extends StObject
+  inline def PicklistType: PicklistType = "PicklistType".asInstanceOf[PicklistType]
   
   @js.native
-  sealed trait Read extends js.Object
+  sealed trait Pointer
+    extends StObject
+       with SecurityType
+  inline def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
   
   @js.native
-  sealed trait Sales extends AssociatedMenuGroup
+  sealed trait Read extends StObject
+  inline def Read: Read = "Read".asInstanceOf[Read]
   
   @js.native
-  sealed trait Service extends AssociatedMenuGroup
+  sealed trait Sales
+    extends StObject
+       with AssociatedMenuGroup
+  inline def Sales: Sales = "Sales".asInstanceOf[Sales]
   
   @js.native
-  sealed trait Share extends js.Object
+  sealed trait Service
+    extends StObject
+       with AssociatedMenuGroup
+  inline def Service: Service = "Service".asInstanceOf[Service]
   
   @js.native
-  sealed trait State extends js.Object
+  sealed trait Share extends StObject
+  inline def Share: Share = "Share".asInstanceOf[Share]
   
   @js.native
-  sealed trait StateTypeCharactertabulationStatusType extends js.Object
+  sealed trait State extends StObject
+  inline def State: State = "State".asInstanceOf[State]
   
   @js.native
-  sealed trait Status extends js.Object
+  sealed trait `StateType    StatusType` extends StObject
+  inline def `StateType    StatusType`: `StateType    StatusType` = ("StateType    StatusType").asInstanceOf[`StateType    StatusType`]
   
   @js.native
-  sealed trait StringType extends js.Object
+  sealed trait Status extends StObject
+  inline def Status: Status = "Status".asInstanceOf[Status]
   
   @js.native
-  sealed trait TeamOwnedCharactertabulationUserOwned extends js.Object
+  sealed trait StringType extends StObject
+  inline def StringType: StringType = "StringType".asInstanceOf[StringType]
   
   @js.native
-  sealed trait Uniqueidentifier extends js.Object
+  sealed trait `TeamOwned    UserOwned` extends StObject
+  inline def `TeamOwned    UserOwned`: `TeamOwned    UserOwned` = ("TeamOwned    UserOwned").asInstanceOf[`TeamOwned    UserOwned`]
   
   @js.native
-  sealed trait UniqueidentifierType extends js.Object
+  sealed trait Uniqueidentifier extends StObject
+  inline def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
   
   @js.native
-  sealed trait UseCollectionName extends AssociatedMenuBehavior
+  sealed trait UniqueidentifierType extends StObject
+  inline def UniqueidentifierType: UniqueidentifierType = "UniqueidentifierType".asInstanceOf[UniqueidentifierType]
   
   @js.native
-  sealed trait UseLabel extends AssociatedMenuBehavior
+  sealed trait UseCollectionName
+    extends StObject
+       with AssociatedMenuBehavior
+  inline def UseCollectionName: UseCollectionName = "UseCollectionName".asInstanceOf[UseCollectionName]
   
   @js.native
-  sealed trait UserOwned extends CascadeType
+  sealed trait UseLabel
+    extends StObject
+       with AssociatedMenuBehavior
+  inline def UseLabel: UseLabel = "UseLabel".asInstanceOf[UseLabel]
   
   @js.native
-  sealed trait Virtual extends js.Object
+  sealed trait UserOwned
+    extends StObject
+       with CascadeType
+  inline def UserOwned: UserOwned = "UserOwned".asInstanceOf[UserOwned]
   
   @js.native
-  sealed trait VirtualType extends js.Object
+  sealed trait Virtual extends StObject
+  inline def Virtual: Virtual = "Virtual".asInstanceOf[Virtual]
   
   @js.native
-  sealed trait Write extends js.Object
+  sealed trait VirtualType extends StObject
+  inline def VirtualType: VirtualType = "VirtualType".asInstanceOf[VirtualType]
   
-  @scala.inline
-  def Active: Active = "Active".asInstanceOf[Active]
-  @scala.inline
-  def Append: Append = "Append".asInstanceOf[Append]
-  @scala.inline
-  def AppendTo: AppendTo = "AppendTo".asInstanceOf[AppendTo]
-  @scala.inline
-  def Assign: Assign = "Assign".asInstanceOf[Assign]
-  @scala.inline
-  def BigIntType: BigIntType = "BigIntType".asInstanceOf[BigIntType]
-  @scala.inline
-  def BooleanType: BooleanType = "BooleanType".asInstanceOf[BooleanType]
-  @scala.inline
-  def BusinessOwned: BusinessOwned = "BusinessOwned".asInstanceOf[BusinessOwned]
-  @scala.inline
-  def BusinessParented: BusinessParented = "BusinessParented".asInstanceOf[BusinessParented]
-  @scala.inline
-  def CalendarRulesType: CalendarRulesType = "CalendarRulesType".asInstanceOf[CalendarRulesType]
-  @scala.inline
-  def Cascade: Cascade = "Cascade".asInstanceOf[Cascade]
-  @scala.inline
-  def Create: Create = "Create".asInstanceOf[Create]
-  @scala.inline
-  def Customer: Customer = "Customer".asInstanceOf[Customer]
-  @scala.inline
-  def CustomerType: CustomerType = "CustomerType".asInstanceOf[CustomerType]
-  @scala.inline
-  def DateTime: DateTime = "DateTime".asInstanceOf[DateTime]
-  @scala.inline
-  def DateTimeType: DateTimeType = "DateTimeType".asInstanceOf[DateTimeType]
-  @scala.inline
-  def Decimal: Decimal = "Decimal".asInstanceOf[Decimal]
-  @scala.inline
-  def DecimalType: DecimalType = "DecimalType".asInstanceOf[DecimalType]
-  @scala.inline
-  def Default: Default = "Default".asInstanceOf[Default]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Details: Details = "Details".asInstanceOf[Details]
-  @scala.inline
-  def DoNotDisplay: DoNotDisplay = "DoNotDisplay".asInstanceOf[DoNotDisplay]
-  @scala.inline
-  def Double: Double = "Double".asInstanceOf[Double]
-  @scala.inline
-  def DoubleType: DoubleType = "DoubleType".asInstanceOf[DoubleType]
-  @scala.inline
-  def EntityName: EntityName = "EntityName".asInstanceOf[EntityName]
-  @scala.inline
-  def EntityNameType: EntityNameType = "EntityNameType".asInstanceOf[EntityNameType]
-  @scala.inline
-  def ImageType: ImageType = "ImageType".asInstanceOf[ImageType]
-  @scala.inline
-  def Inheritance: Inheritance = "Inheritance".asInstanceOf[Inheritance]
-  @scala.inline
-  def Integer: Integer = "Integer".asInstanceOf[Integer]
-  @scala.inline
-  def IntegerType: IntegerType = "IntegerType".asInstanceOf[IntegerType]
-  @scala.inline
-  def Lookup: Lookup = "Lookup".asInstanceOf[Lookup]
-  @scala.inline
-  def LookupType: LookupType = "LookupType".asInstanceOf[LookupType]
-  @scala.inline
-  def ManagedProperty: ManagedProperty = "ManagedProperty".asInstanceOf[ManagedProperty]
-  @scala.inline
-  def ManagedPropertyType: ManagedPropertyType = "ManagedPropertyType".asInstanceOf[ManagedPropertyType]
-  @scala.inline
-  def ManyToManyRelationship: ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[ManyToManyRelationship]
-  @scala.inline
-  def Marketing: Marketing = "Marketing".asInstanceOf[Marketing]
-  @scala.inline
-  def Memo: Memo = "Memo".asInstanceOf[Memo]
-  @scala.inline
-  def MemoType: MemoType = "MemoType".asInstanceOf[MemoType]
-  @scala.inline
-  def Money: Money = "Money".asInstanceOf[Money]
-  @scala.inline
-  def MoneyType: MoneyType = "MoneyType".asInstanceOf[MoneyType]
-  @scala.inline
-  def NoCascade: NoCascade = "NoCascade".asInstanceOf[NoCascade]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def NoneCharactertabulationOrganizationOwned: NoneCharactertabulationOrganizationOwned = "None\tOrganizationOwned".asInstanceOf[NoneCharactertabulationOrganizationOwned]
-  @scala.inline
-  def OneToManyRelationship: OneToManyRelationship = "OneToManyRelationship".asInstanceOf[OneToManyRelationship]
-  @scala.inline
-  def Owner: Owner = "Owner".asInstanceOf[Owner]
-  @scala.inline
-  def OwnerType: OwnerType = "OwnerType".asInstanceOf[OwnerType]
-  @scala.inline
-  def ParentChild: ParentChild = "ParentChild".asInstanceOf[ParentChild]
-  @scala.inline
-  def PartyList: PartyList = "PartyList".asInstanceOf[PartyList]
-  @scala.inline
-  def PartyListType: PartyListType = "PartyListType".asInstanceOf[PartyListType]
-  @scala.inline
-  def Picklist: Picklist = "Picklist".asInstanceOf[Picklist]
-  @scala.inline
-  def PicklistType: PicklistType = "PicklistType".asInstanceOf[PicklistType]
-  @scala.inline
-  def Pointer: Pointer = "Pointer".asInstanceOf[Pointer]
-  @scala.inline
-  def Read: Read = "Read".asInstanceOf[Read]
-  @scala.inline
-  def Sales: Sales = "Sales".asInstanceOf[Sales]
-  @scala.inline
-  def Service: Service = "Service".asInstanceOf[Service]
-  @scala.inline
-  def Share: Share = "Share".asInstanceOf[Share]
-  @scala.inline
-  def State: State = "State".asInstanceOf[State]
-  @scala.inline
-  def StateTypeCharactertabulationStatusType: StateTypeCharactertabulationStatusType = "StateType\tStatusType".asInstanceOf[StateTypeCharactertabulationStatusType]
-  @scala.inline
-  def Status: Status = "Status".asInstanceOf[Status]
-  @scala.inline
-  def StringType: StringType = "StringType".asInstanceOf[StringType]
-  @scala.inline
-  def TeamOwnedCharactertabulationUserOwned: TeamOwnedCharactertabulationUserOwned = "TeamOwned\tUserOwned".asInstanceOf[TeamOwnedCharactertabulationUserOwned]
-  @scala.inline
-  def Uniqueidentifier: Uniqueidentifier = "Uniqueidentifier".asInstanceOf[Uniqueidentifier]
-  @scala.inline
-  def UniqueidentifierType: UniqueidentifierType = "UniqueidentifierType".asInstanceOf[UniqueidentifierType]
-  @scala.inline
-  def UseCollectionName: UseCollectionName = "UseCollectionName".asInstanceOf[UseCollectionName]
-  @scala.inline
-  def UseLabel: UseLabel = "UseLabel".asInstanceOf[UseLabel]
-  @scala.inline
-  def UserOwned: UserOwned = "UserOwned".asInstanceOf[UserOwned]
-  @scala.inline
-  def Virtual: Virtual = "Virtual".asInstanceOf[Virtual]
-  @scala.inline
-  def VirtualType: VirtualType = "VirtualType".asInstanceOf[VirtualType]
-  @scala.inline
-  def Write: Write = "Write".asInstanceOf[Write]
+  @js.native
+  sealed trait Write extends StObject
+  inline def Write: Write = "Write".asInstanceOf[Write]
 }
-

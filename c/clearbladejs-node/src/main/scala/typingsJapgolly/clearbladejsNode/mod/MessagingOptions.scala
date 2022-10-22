@@ -1,21 +1,26 @@
 package typingsJapgolly.clearbladejsNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessagingOptions extends CommonMessagingProperties {
+trait MessagingOptions
+  extends StObject
+     with CommonMessagingProperties {
+  
   var qos: js.UndefOr[MessagingQOS] = js.undefined
 }
-
 object MessagingOptions {
-  @scala.inline
-  def apply(hosts: String = null, ports: String = null, qos: MessagingQOS = null): MessagingOptions = {
+  
+  inline def apply(): MessagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingOptions]
   }
+  
+  extension [Self <: MessagingOptions](x: Self) {
+    
+    inline def setQos(value: MessagingQOS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+    
+    inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+  }
 }
-

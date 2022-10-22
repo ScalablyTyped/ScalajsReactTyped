@@ -1,8 +1,7 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FoldingContext extends js.Object
-
+trait FoldingContext extends StObject

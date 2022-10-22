@@ -1,24 +1,24 @@
 
 # Scala.js typings for zen-observable-ts
 
-Typings are for version 0.8.20
+Typings are for version 1.1.0
 
 ## Library description:
-An Implementation of ES Observables in Typescript
+Thin wrapper around zen-observable and @types/zen-observable, to support ESM exports as well as CommonJS exports
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | zen-observable-ts |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 22 |
-| # downloads        | 65219772 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1892294666666668E7 |
+| # stars            | 4.0 |
 
 ## Links
-- [Homepage](https://github.com/zenparsing/zen-observable)
-- [Bugs](https://github.com/apollographql/apollo-link/issues)
-- [Repository](https://github.com/apollographql/apollo-link)
+- [Homepage](https://github.com/apollographql/zen-observable-ts#readme)
+- [Bugs](https://github.com/apollographql/zen-observable-ts/issues)
+- [Repository](https://github.com/apollographql/zen-observable-ts)
 - [Npm](https://www.npmjs.com/package/zen-observable-ts)
     
 

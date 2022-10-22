@@ -10,10 +10,10 @@ Provides a function for detecting if the host environment is Node.JS
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/is-node |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 825 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 63.666666666666664 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fis-node)

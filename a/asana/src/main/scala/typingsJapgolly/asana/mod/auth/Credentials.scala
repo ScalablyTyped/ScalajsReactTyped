@@ -1,21 +1,30 @@
 package typingsJapgolly.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
+  
   var access_token: js.UndefOr[String] = js.undefined
+  
   var refresh_token: js.UndefOr[String] = js.undefined
 }
-
 object Credentials {
-  @scala.inline
-  def apply(access_token: String = null, refresh_token: String = null): Credentials = {
+  
+  inline def apply(): Credentials = {
     val __obj = js.Dynamic.literal()
-    if (access_token != null) __obj.updateDynamic("access_token")(access_token.asInstanceOf[js.Any])
-    if (refresh_token != null) __obj.updateDynamic("refresh_token")(refresh_token.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  
+  extension [Self <: Credentials](x: Self) {
+    
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    
+    inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+    
+    inline def setRefresh_tokenUndefined: Self = StObject.set(x, "refresh_token", js.undefined)
+  }
 }
-

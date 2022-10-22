@@ -1,19 +1,24 @@
 package typingsJapgolly.inboxsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LoadScriptOptions extends js.Object {
+trait LoadScriptOptions extends StObject {
+  
   var nowrap: js.UndefOr[Boolean] = js.undefined
 }
-
 object LoadScriptOptions {
-  @scala.inline
-  def apply(nowrap: js.UndefOr[Boolean] = js.undefined): LoadScriptOptions = {
+  
+  inline def apply(): LoadScriptOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[LoadScriptOptions]
   }
+  
+  extension [Self <: LoadScriptOptions](x: Self) {
+    
+    inline def setNowrap(value: Boolean): Self = StObject.set(x, "nowrap", value.asInstanceOf[js.Any])
+    
+    inline def setNowrapUndefined: Self = StObject.set(x, "nowrap", js.undefined)
+  }
 }
-

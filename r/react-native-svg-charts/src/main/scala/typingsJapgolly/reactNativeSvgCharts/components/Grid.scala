@@ -1,50 +1,45 @@
 package typingsJapgolly.reactNativeSvgCharts.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeSvgCharts.PartialLineProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNativeSvgCharts.anon.PartialLineProps
 import typingsJapgolly.reactNativeSvgCharts.mod.GridDirection
 import typingsJapgolly.reactNativeSvgCharts.mod.GridProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Grid {
-  def apply[T](
-    belowChart: js.UndefOr[Boolean] = js.undefined,
-    direction: GridDirection = null,
-    svg: PartialLineProps = null,
-    ticks: js.Array[T] = null,
-    x: T => CallbackTo[Double] = null,
-    y: T => CallbackTo[Double] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GridProps[T], typingsJapgolly.reactNativeSvgCharts.mod.Grid[T], Unit, GridProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(belowChart)) __obj.updateDynamic("belowChart")(belowChart.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
-    if (ticks != null) __obj.updateDynamic("ticks")(ticks.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(js.Any.fromFunction1((t0: T) => x(t0).runNow()))
-    if (y != null) __obj.updateDynamic("y")(js.Any.fromFunction1((t0: T) => y(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSvgCharts.mod.GridProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSvgCharts.mod.Grid[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSvgCharts.mod.GridProps[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[GridProps[T]]))
   }
+  
   @JSImport("react-native-svg-charts", "Grid")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeSvgCharts.mod.Grid[T]] {
+    
+    inline def belowChart(value: Boolean): this.type = set("belowChart", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: GridDirection): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def svg(value: PartialLineProps): this.type = set("svg", value.asInstanceOf[js.Any])
+    
+    inline def ticks(value: js.Array[T]): this.type = set("ticks", value.asInstanceOf[js.Any])
+    
+    inline def ticksVarargs(value: T*): this.type = set("ticks", js.Array(value*))
+    
+    inline def x(value: T => Double): this.type = set("x", js.Any.fromFunction1(value))
+    
+    inline def y(value: T => Double): this.type = set("y", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make[T](companion: Grid.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: GridProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

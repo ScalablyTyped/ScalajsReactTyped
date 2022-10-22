@@ -1,23 +1,15 @@
 package typingsJapgolly.highcharts.mod
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.std.RegExp
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.highcharts.anon.PartialAnimationOptionsOb
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "SVGElement")
 @js.native
-class SVGElement () extends js.Object {
-  /**
-    * The primary DOM node. Each `SVGElement` instance wraps a main DOM node,
-    * but may also represent more nodes.
-    */
-  var element: HTMLElement | org.scalajs.dom.raw.SVGElement = js.native
-  /**
-    * The renderer that the SVGElement belongs to.
-    */
-  var renderer: SVGRenderer = js.native
+open class SVGElement () extends StObject {
+  
   /**
     * Add the element to the DOM. All elements must be added this way.
     *
@@ -29,6 +21,7 @@ class SVGElement () extends js.Object {
     */
   def add(): SVGElement = js.native
   def add(parent: SVGElement): SVGElement = js.native
+  
   /**
     * Add a class name to an element.
     *
@@ -43,6 +36,7 @@ class SVGElement () extends js.Object {
     */
   def addClass(className: String): SVGElement = js.native
   def addClass(className: String, replace: Boolean): SVGElement = js.native
+  
   /**
     * Align the element relative to the chart or another box.
     *
@@ -63,10 +57,18 @@ class SVGElement () extends js.Object {
     * @return Returns the SVGElement for chaining.
     */
   def align(): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean, box: String): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Boolean, box: BBoxObject): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Unit, box: String): SVGElement = js.native
+  def align(alignOptions: Unit, alignByTranslate: Unit, box: BBoxObject): SVGElement = js.native
   def align(alignOptions: AlignObject): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean, box: String): SVGElement = js.native
   def align(alignOptions: AlignObject, alignByTranslate: Boolean, box: BBoxObject): SVGElement = js.native
+  def align(alignOptions: AlignObject, alignByTranslate: Unit, box: String): SVGElement = js.native
+  def align(alignOptions: AlignObject, alignByTranslate: Unit, box: BBoxObject): SVGElement = js.native
+  
   /**
     * Animate to given attributes or CSS properties.
     *
@@ -84,8 +86,10 @@ class SVGElement () extends js.Object {
   def animate(params: SVGAttributes): SVGElement = js.native
   def animate(params: SVGAttributes, options: Boolean): SVGElement = js.native
   def animate(params: SVGAttributes, options: Boolean, complete: js.Function): SVGElement = js.native
-  def animate(params: SVGAttributes, options: AnimationOptionsObject): SVGElement = js.native
-  def animate(params: SVGAttributes, options: AnimationOptionsObject, complete: js.Function): SVGElement = js.native
+  def animate(params: SVGAttributes, options: Unit, complete: js.Function): SVGElement = js.native
+  def animate(params: SVGAttributes, options: PartialAnimationOptionsOb): SVGElement = js.native
+  def animate(params: SVGAttributes, options: PartialAnimationOptionsOb, complete: js.Function): SVGElement = js.native
+  
   /**
     * Apply native and custom attributes to the SVG elements.
     *
@@ -121,14 +125,56 @@ class SVGElement () extends js.Object {
     *         value of the attribute is returned.
     */
   def attr(): SVGElement = js.native
-  def attr(hash: String): SVGElement = js.native
   def attr(hash: String, `val`: String): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: String, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Double): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: String, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: String): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: Unit, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
   def attr(hash: SVGAttributes): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function): SVGElement = js.native
   def attr(hash: SVGAttributes, `val`: String, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: String, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Double, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: Unit, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: js.Function, continueAnimation: Boolean): SVGElement = js.native
+  def attr(hash: SVGAttributes, `val`: SVGPathArray, complete: Unit, continueAnimation: Boolean): SVGElement = js.native
+  def attr(key: String): Double | String = js.native
+  @JSName("attr")
+  def attr_SVGElement(hash: String): SVGElement = js.native
+  
   /**
     * Apply a clipping rectangle to this element.
     *
@@ -139,6 +185,7 @@ class SVGElement () extends js.Object {
     */
   def clip(): SVGElement = js.native
   def clip(clipRect: ClipRectElement): SVGElement = js.native
+  
   /**
     * Calculate the coordinates needed for drawing a rectangle crisply and
     * return the calculated attributes.
@@ -154,6 +201,7 @@ class SVGElement () extends js.Object {
     */
   def crisp(rect: RectangleObject): RectangleObject = js.native
   def crisp(rect: RectangleObject, strokeWidth: Double): RectangleObject = js.native
+  
   /**
     * Set styles for the element. In addition to CSS styles supported by native
     * SVG and HTML elements, there are also some custom made for Highcharts,
@@ -165,11 +213,19 @@ class SVGElement () extends js.Object {
     * @return Return the SVG element for chaining.
     */
   def css(styles: CSSObject): SVGElement = js.native
+  
   /**
     * Destroy the element and element wrapper and clear up the DOM and event
     * hooks.
     */
-  def destroy(): js.UndefOr[scala.Nothing] = js.native
+  def destroy(): Unit = js.native
+  
+  /**
+    * The primary DOM node. Each `SVGElement` instance wraps a main DOM node,
+    * but may also represent more nodes.
+    */
+  var element: HTMLElement | org.scalajs.dom.SVGElement = js.native
+  
   /**
     * A general fadeIn method.
     *
@@ -178,7 +234,8 @@ class SVGElement () extends js.Object {
     */
   def fadeIn(): Unit = js.native
   def fadeIn(animation: Boolean): Unit = js.native
-  def fadeIn(animation: AnimationOptionsObject): Unit = js.native
+  def fadeIn(animation: PartialAnimationOptionsOb): Unit = js.native
+  
   /**
     * Fade out an element by animating its opacity down to 0, and hide it on
     * complete. Used internally for the tooltip.
@@ -188,6 +245,7 @@ class SVGElement () extends js.Object {
     */
   def fadeOut(): Unit = js.native
   def fadeOut(duration: Double): Unit = js.native
+  
   /**
     * Get the bounding box (width, height, x and y) for the element. Generally
     * used to get rendered text size. Since this is called a lot in charts, the
@@ -209,6 +267,8 @@ class SVGElement () extends js.Object {
   def getBBox(): BBoxObject = js.native
   def getBBox(reload: Boolean): BBoxObject = js.native
   def getBBox(reload: Boolean, rot: Double): BBoxObject = js.native
+  def getBBox(reload: Unit, rot: Double): BBoxObject = js.native
+  
   /**
     * Get the computed style. Only in styled mode.
     *
@@ -218,6 +278,7 @@ class SVGElement () extends js.Object {
     * @return The current computed value.
     */
   def getStyle(prop: String): String = js.native
+  
   /**
     * Check if an element has the given class name.
     *
@@ -227,18 +288,15 @@ class SVGElement () extends js.Object {
     * @return Whether the class name is found.
     */
   def hasClass(className: String): Boolean = js.native
+  
   /**
     * Hide the element, similar to setting the `visibility` attribute to
     * `hidden`.
     *
-    * @param hideByTranslation
-    *        The flag to determine if element should be hidden by moving out of
-    *        the viewport. Used for example for dataLabels.
-    *
     * @return Returns the SVGElement for chaining.
     */
   def hide(): SVGElement = js.native
-  def hide(hideByTranslation: Boolean): SVGElement = js.native
+  
   /**
     * Initialize the SVG element. This function only exists to make the
     * initialization process overridable. It should not be called directly.
@@ -250,6 +308,7 @@ class SVGElement () extends js.Object {
     *        The SVG node name.
     */
   def init(renderer: SVGRenderer, nodeName: String): Unit = js.native
+  
   /**
     * Invert a group, rotate and flip. This is used internally on inverted
     * charts, where the points and graphs are drawn as if not inverted, then
@@ -262,14 +321,14 @@ class SVGElement () extends js.Object {
     * @return Return the SVGElement for chaining.
     */
   def invert(inverted: Boolean): SVGElement = js.native
+  
   /**
-    * Add an event listener. This is a simple setter that replaces all other
-    * events of the same type, opposed to the Highcharts#addEvent function.
+    * Add an event listener. This is a simple setter that replaces the previous
+    * event of the same type added by this function, as opposed to the
+    * Highcharts#addEvent function.
     *
     * @param eventType
-    *        The event type. If the type is `click`, Highcharts will internally
-    *        translate it to a `touchstart` event on touch devices, to prevent
-    *        the browser from waiting for a click event from firing.
+    *        The event type.
     *
     * @param handler
     *        The handler callback.
@@ -277,6 +336,7 @@ class SVGElement () extends js.Object {
     * @return The SVGElement for chaining.
     */
   def on(eventType: String, handler: js.Function): SVGElement = js.native
+  
   /**
     * Remove a class name from the element.
     *
@@ -286,7 +346,13 @@ class SVGElement () extends js.Object {
     * @return Returns the SVG element for chainability.
     */
   def removeClass(className: String): SVGElement = js.native
-  def removeClass(className: RegExp): SVGElement = js.native
+  def removeClass(className: js.RegExp): SVGElement = js.native
+  
+  /**
+    * The renderer that the SVGElement belongs to.
+    */
+  var renderer: SVGRenderer = js.native
+  
   /**
     * Set the coordinates needed to draw a consistent radial gradient across a
     * shape regardless of positioning inside the chart. Used on pie slices to
@@ -299,6 +365,26 @@ class SVGElement () extends js.Object {
     * @return Returns the SVGElement for chaining.
     */
   def setRadialReference(coordinates: js.Array[Double]): SVGElement = js.native
+  
+  def setTextPath(path: Unit, textPathOptions: DataLabelsTextPathOptionsObject): SVGElement = js.native
+  /**
+    * Set a text path for a `text` or `label` element, allowing the text to
+    * flow along a path.
+    *
+    * In order to unset the path for an existing element, call `setTextPath`
+    * with `{ enabled: false }` as the second argument.
+    *
+    * @param path
+    *        Path to follow. If undefined, it allows changing options for the
+    *        existing path.
+    *
+    * @param textPathOptions
+    *        Options.
+    *
+    * @return Returns the SVGElement for chaining.
+    */
+  def setTextPath(path: SVGElement, textPathOptions: DataLabelsTextPathOptionsObject): SVGElement = js.native
+  
   /**
     * Add a shadow to the element. Must be called after the element is added to
     * the DOM. In styled mode, this method is not used, instead use `defs` and
@@ -321,11 +407,17 @@ class SVGElement () extends js.Object {
     */
   def shadow(): SVGElement = js.native
   def shadow(shadowOptions: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Boolean, group: Unit, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: Boolean, group: SVGElement): SVGElement = js.native
   def shadow(shadowOptions: Boolean, group: SVGElement, cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: Unit, cutOff: Boolean): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: SVGElement): SVGElement = js.native
+  def shadow(shadowOptions: Unit, group: SVGElement, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject): SVGElement = js.native
+  def shadow(shadowOptions: ShadowOptionsObject, group: Unit, cutOff: Boolean): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement): SVGElement = js.native
   def shadow(shadowOptions: ShadowOptionsObject, group: SVGElement, cutOff: Boolean): SVGElement = js.native
+  
   /**
     * Show the element after it has been hidden.
     *
@@ -338,6 +430,7 @@ class SVGElement () extends js.Object {
     */
   def show(): SVGElement = js.native
   def show(inherit: Boolean): SVGElement = js.native
+  
   /**
     * Get the computed stroke width in pixel values. This is used extensively
     * when drawing shapes to ensure the shapes are rendered crisp and
@@ -361,12 +454,14 @@ class SVGElement () extends js.Object {
     *         size is returned.
     */
   def strokeWidth(): Double = js.native
+  
   /**
     * Bring the element to the front. Alternatively, a new zIndex can be set.
     *
     * @return Returns the SVGElement for chaining.
     */
   def toFront(): SVGElement = js.native
+  
   /**
     * Move an object and its children by x and y values.
     *
@@ -375,7 +470,8 @@ class SVGElement () extends js.Object {
     *
     * @param y
     *        The y value.
+    *
+    * @return Translated element.
     */
   def translate(x: Double, y: Double): SVGElement = js.native
 }
-

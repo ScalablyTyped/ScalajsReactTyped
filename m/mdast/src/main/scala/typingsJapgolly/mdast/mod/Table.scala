@@ -1,37 +1,44 @@
 package typingsJapgolly.mdast.mod
 
 import typingsJapgolly.mdast.mdastStrings.table
-import typingsJapgolly.unist.mod.Data
-import typingsJapgolly.unist.mod.Position
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Table
-  extends Parent
-     with BlockContent {
-  var align: js.UndefOr[js.Array[AlignType]] = js.undefined
+  extends StObject
+     with Parent {
+  
+  var align: js.UndefOr[js.Array[AlignType] | Null] = js.undefined
+  
   @JSName("children")
   var children_Table: js.Array[TableContent]
+  
   @JSName("type")
   var type_Table: table
 }
-
 object Table {
-  @scala.inline
-  def apply(
-    children: js.Array[TableContent],
-    `type`: table,
-    align: js.Array[AlignType] = null,
-    data: Data = null,
-    position: Position = null
-  ): Table = {
+  
+  inline def apply(children: js.Array[TableContent]): Table = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("table")
     __obj.asInstanceOf[Table]
   }
+  
+  extension [Self <: Table](x: Self) {
+    
+    inline def setAlign(value: js.Array[AlignType]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignNull: Self = StObject.set(x, "align", null)
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAlignVarargs(value: AlignType*): Self = StObject.set(x, "align", js.Array(value*))
+    
+    inline def setChildren(value: js.Array[TableContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenVarargs(value: TableContent*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setType(value: table): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

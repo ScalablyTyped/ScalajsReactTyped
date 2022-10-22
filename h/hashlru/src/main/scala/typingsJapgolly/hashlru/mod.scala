@@ -1,12 +1,15 @@
 package typingsJapgolly.hashlru
 
+import typingsJapgolly.hashlru.anon.Clear
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("hashlru", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(max: Double): AnonClear = js.native
+object mod {
+  
+  @JSImport("hashlru", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(max: Double): Clear = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(max.asInstanceOf[js.Any]).asInstanceOf[Clear]
 }
-

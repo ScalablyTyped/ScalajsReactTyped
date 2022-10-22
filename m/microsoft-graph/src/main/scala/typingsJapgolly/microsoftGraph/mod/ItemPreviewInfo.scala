@@ -1,23 +1,42 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemPreviewInfo extends js.Object {
-  var getUrl: js.UndefOr[String] = js.undefined
-  var postParameters: js.UndefOr[String] = js.undefined
-  var postUrl: js.UndefOr[String] = js.undefined
+trait ItemPreviewInfo extends StObject {
+  
+  var getUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var postParameters: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  var postUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ItemPreviewInfo {
-  @scala.inline
-  def apply(getUrl: String = null, postParameters: String = null, postUrl: String = null): ItemPreviewInfo = {
+  
+  inline def apply(): ItemPreviewInfo = {
     val __obj = js.Dynamic.literal()
-    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl.asInstanceOf[js.Any])
-    if (postParameters != null) __obj.updateDynamic("postParameters")(postParameters.asInstanceOf[js.Any])
-    if (postUrl != null) __obj.updateDynamic("postUrl")(postUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemPreviewInfo]
   }
+  
+  extension [Self <: ItemPreviewInfo](x: Self) {
+    
+    inline def setGetUrl(value: NullableOption[String]): Self = StObject.set(x, "getUrl", value.asInstanceOf[js.Any])
+    
+    inline def setGetUrlNull: Self = StObject.set(x, "getUrl", null)
+    
+    inline def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
+    
+    inline def setPostParameters(value: NullableOption[String]): Self = StObject.set(x, "postParameters", value.asInstanceOf[js.Any])
+    
+    inline def setPostParametersNull: Self = StObject.set(x, "postParameters", null)
+    
+    inline def setPostParametersUndefined: Self = StObject.set(x, "postParameters", js.undefined)
+    
+    inline def setPostUrl(value: NullableOption[String]): Self = StObject.set(x, "postUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPostUrlNull: Self = StObject.set(x, "postUrl", null)
+    
+    inline def setPostUrlUndefined: Self = StObject.set(x, "postUrl", js.undefined)
+  }
 }
-

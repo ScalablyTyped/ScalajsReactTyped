@@ -1,24 +1,20 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.`post-adjust`
   - typingsJapgolly.fridaGum.fridaGumStrings.`signed-offset`
   - typingsJapgolly.fridaGum.fridaGumStrings.`pre-adjust`
 */
-trait Arm64IndexMode extends js.Object
-
+trait Arm64IndexMode extends StObject
 object Arm64IndexMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `post-adjust`: typingsJapgolly.fridaGum.fridaGumStrings.`post-adjust` = this.cast("post-adjust")
-  @scala.inline
-  def `pre-adjust`: typingsJapgolly.fridaGum.fridaGumStrings.`pre-adjust` = this.cast("pre-adjust")
-  @scala.inline
-  def `signed-offset`: typingsJapgolly.fridaGum.fridaGumStrings.`signed-offset` = this.cast("signed-offset")
+  
+  inline def `post-adjust`: typingsJapgolly.fridaGum.fridaGumStrings.`post-adjust` = "post-adjust".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`post-adjust`]
+  
+  inline def `pre-adjust`: typingsJapgolly.fridaGum.fridaGumStrings.`pre-adjust` = "pre-adjust".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`pre-adjust`]
+  
+  inline def `signed-offset`: typingsJapgolly.fridaGum.fridaGumStrings.`signed-offset` = "signed-offset".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.`signed-offset`]
 }
-

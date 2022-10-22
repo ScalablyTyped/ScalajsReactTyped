@@ -1,13 +1,7 @@
 package typingsJapgolly.webix.webix
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TablePaste extends js.Object
-
-@JSGlobal("webix.TablePaste")
-@js.native
-object TablePaste extends TopLevel[TablePaste]
-
+trait TablePaste extends StObject

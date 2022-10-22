@@ -1,58 +1,87 @@
 package typingsJapgolly.flot.jquery.flot
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.jquery.JQuery_
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait legendOptions extends js.Object {
-                  //number of pixels or [x margin, y margin]
-  var backgroundColor: js.UndefOr[js.Any] = js.undefined
-         //null or color
+trait legendOptions extends StObject {
+  
+  //number of pixels or [x margin, y margin]
+  var backgroundColor: js.UndefOr[Any] = js.undefined
+  
+  //null or color
   var backgroundOpacity: js.UndefOr[Double] = js.undefined
-    // between 0 and 1
-  var container: js.UndefOr[JQuery_[HTMLElement]] = js.undefined
-   //  null or (fn: string, series object -> string)
-  var labelBoxBorderColor: js.UndefOr[js.Any] = js.undefined
-  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ js.Any, String]] = js.undefined
-             //"ne" or "nw" or "se" or "sw"
-  var margin: js.UndefOr[js.Any] = js.undefined
-     //color
+  
+  // between 0 and 1
+  var container: js.UndefOr[JQuery[HTMLElement]] = js.undefined
+  
+  //  null or (fn: string, series object -> string)
+  var labelBoxBorderColor: js.UndefOr[Any] = js.undefined
+  
+  var labelFormatter: js.UndefOr[js.Function2[/* label */ String, /* series */ Any, String]] = js.undefined
+  
+  //"ne" or "nw" or "se" or "sw"
+  var margin: js.UndefOr[Any] = js.undefined
+  
+  //color
   var noColumns: js.UndefOr[Double] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
+  
   var show: js.UndefOr[Boolean] = js.undefined
-           // null or jQuery object/DOM element/jQuery expression
-  var sorted: js.UndefOr[js.Any] = js.undefined
+  
+  // null or jQuery object/DOM element/jQuery expression
+  var sorted: js.UndefOr[Any] = js.undefined
 }
-
 object legendOptions {
-  @scala.inline
-  def apply(
-    backgroundColor: js.Any = null,
-    backgroundOpacity: Int | Double = null,
-    container: JQuery_[HTMLElement] = null,
-    labelBoxBorderColor: js.Any = null,
-    labelFormatter: (/* label */ String, /* series */ js.Any) => CallbackTo[String] = null,
-    margin: js.Any = null,
-    noColumns: Int | Double = null,
-    position: String = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    sorted: js.Any = null
-  ): legendOptions = {
+  
+  inline def apply(): legendOptions = {
     val __obj = js.Dynamic.literal()
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (backgroundOpacity != null) __obj.updateDynamic("backgroundOpacity")(backgroundOpacity.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (labelBoxBorderColor != null) __obj.updateDynamic("labelBoxBorderColor")(labelBoxBorderColor.asInstanceOf[js.Any])
-    if (labelFormatter != null) __obj.updateDynamic("labelFormatter")(js.Any.fromFunction2((t0: /* label */ java.lang.String, t1: /* series */ js.Any) => labelFormatter(t0, t1).runNow()))
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (noColumns != null) __obj.updateDynamic("noColumns")(noColumns.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (sorted != null) __obj.updateDynamic("sorted")(sorted.asInstanceOf[js.Any])
     __obj.asInstanceOf[legendOptions]
   }
+  
+  extension [Self <: legendOptions](x: Self) {
+    
+    inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBackgroundOpacity(value: Double): Self = StObject.set(x, "backgroundOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundOpacityUndefined: Self = StObject.set(x, "backgroundOpacity", js.undefined)
+    
+    inline def setContainer(value: JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setLabelBoxBorderColor(value: Any): Self = StObject.set(x, "labelBoxBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def setLabelBoxBorderColorUndefined: Self = StObject.set(x, "labelBoxBorderColor", js.undefined)
+    
+    inline def setLabelFormatter(value: (/* label */ String, /* series */ Any) => String): Self = StObject.set(x, "labelFormatter", js.Any.fromFunction2(value))
+    
+    inline def setLabelFormatterUndefined: Self = StObject.set(x, "labelFormatter", js.undefined)
+    
+    inline def setMargin(value: Any): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setNoColumns(value: Double): Self = StObject.set(x, "noColumns", value.asInstanceOf[js.Any])
+    
+    inline def setNoColumnsUndefined: Self = StObject.set(x, "noColumns", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setSorted(value: Any): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+    
+    inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+  }
 }
-

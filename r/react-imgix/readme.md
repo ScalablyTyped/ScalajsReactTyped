@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-imgix
 
-Typings are for version 9.0
+Typings are for version 9.5
 
 ## Library description:
 React Component for displaying an image from Imgix
@@ -10,10 +10,10 @@ React Component for displaying an image from Imgix
 | ------------------ | :-------------: |
 | Full name          | react-imgix |
 | Keywords           | react |
-| # releases         | 18 |
-| # dependents       | 15 |
-| # downloads        | 795868 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 192884.66666666666 |
+| # stars            | 321.0 |
 
 ## Links
 - [Homepage](https://github.com/imgix/react-imgix#readme)

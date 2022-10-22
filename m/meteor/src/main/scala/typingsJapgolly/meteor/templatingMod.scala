@@ -1,31 +1,131 @@
 package typingsJapgolly.meteor
 
-import org.scalablytyped.runtime.StringDictionary
-import org.scalablytyped.runtime.TopLevel
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQueryStatic
+import typingsJapgolly.meteor.Blaze.EventsMap
+import typingsJapgolly.meteor.Blaze.HelpersMap
+import typingsJapgolly.meteor.Blaze.TemplateInstance
+import typingsJapgolly.meteor.Blaze.View
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("meteor/templating", JSImport.Namespace)
-@js.native
-object templatingMod extends js.Object {
+object templatingMod {
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("meteor/templating", "Template")
   @js.native
-  class Template ()
-    extends typingsJapgolly.meteor.Blaze.Template {
+  open class Template ()
+    extends StObject
+       with typingsJapgolly.meteor.Blaze.Template[Any, TemplateInstance[Any]] {
     def this(viewName: String) = this()
     def this(viewName: String, renderFunction: js.Function) = this()
+    def this(viewName: Unit, renderFunction: js.Function) = this()
+    
+    /* CompleteClass */
+    @JSName("$")
+    var $: JQueryStatic = js.native
+    
+    /* CompleteClass */
+    override def constructView(): View = js.native
+    
+    /* CompleteClass */
+    var created: js.Function = js.native
+    
+    /* CompleteClass */
+    var destroyed: js.Function = js.native
+    
+    /* CompleteClass */
+    override def events(eventsMap: EventsMap[Any, TemplateInstance[Any]]): Unit = js.native
+    
+    /* CompleteClass */
+    override def find(selector: String): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def findAll(selector: String): js.Array[HTMLElement] = js.native
+    
+    /* CompleteClass */
+    var head: typingsJapgolly.meteor.Blaze.Template[Any, TemplateInstance[Any]] = js.native
+    
+    /* CompleteClass */
+    override def helpers(helpersMap: HelpersMap): Unit = js.native
+    
+    /**
+      * Register a function to be called when an instance of this template is created.
+      * @param callback A function to be added as a callback.
+      */
+    /* CompleteClass */
+    override def onCreated(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
+    
+    /**
+      * Register a function to be called when an instance of this template is removed from the DOM and destroyed.
+      * @param callback A function to be added as a callback.
+      */
+    /* CompleteClass */
+    override def onDestroyed(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
+    
+    /**
+      * Register a function to be called when an instance of this template is inserted into the DOM.
+      * @param callback A function to be added as a callback.
+      */
+    /* CompleteClass */
+    override def onRendered(callback: js.ThisFunction0[TemplateInstance[Any], Any]): Unit = js.native
+    
+    /* CompleteClass */
+    var renderFunction: js.Function = js.native
+    
+    /* CompleteClass */
+    var rendered: js.Function = js.native
+    
+    /* CompleteClass */
+    var viewName: String = js.native
+  }
+  /* Inlined meteor.meteor/templating.TemplateStatic<any, meteor.Blaze.TemplateInstance<any>> & {[index: string] : any | meteor.Blaze.Template<any, meteor.Blaze.TemplateInstance<any>>} */
+  object Template {
+    
+    @JSImport("meteor/templating", "Template")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("meteor/templating", "Template.body")
+    @js.native
+    def body: typingsJapgolly.meteor.Blaze.Template[Any, TemplateInstance[Any]] = js.native
+    inline def body_=(x: typingsJapgolly.meteor.Blaze.Template[Any, TemplateInstance[Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("body")(x.asInstanceOf[js.Any])
+    
+    inline def currentData(): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("currentData")().asInstanceOf[Any]
+    
+    inline def instance(): TemplateInstance[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[TemplateInstance[Any]]
+    
+    inline def parentData(): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parentData")().asInstanceOf[Record[String, Any]]
+    inline def parentData(numLevels: Double): Record[String, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parentData")(numLevels.asInstanceOf[js.Any]).asInstanceOf[Record[String, Any]]
+    
+    inline def registerHelper(name: String, func: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerHelper")(name.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
-  trait TemplateStatic
-    extends typingsJapgolly.meteor.Blaze.TemplateStatic
-       with /* index */ StringDictionary[js.Any | typingsJapgolly.meteor.Blaze.Template] {
-    var body: typingsJapgolly.meteor.Blaze.Template = js.native
+  trait TemplateStatic[D, T]
+    extends StObject
+       with typingsJapgolly.meteor.Blaze.TemplateStatic[D, T] {
+    
+    var body: typingsJapgolly.meteor.Blaze.Template[Any, TemplateInstance[Any]] = js.native
   }
   
-  @js.native
-  object Template
-    extends TopLevel[typingsJapgolly.meteor.templatingMod.TemplateStatic]
-  
+  /**
+    * A helper type to make the access to data and template instance member type safe.
+    * @example
+    * const TemplateTyped = Template as TemplateStaticTyped<
+    *     'newTemplate',
+    *     { foo: string },
+    *     {
+    *         state: ReactiveDict<{ bar: number }>;
+    *         getFooBar(): string;
+    *     }
+    * >;
+    * TemplateTyped.newTemplate.onCreated(function () { ...
+    * @template N Template name
+    * @template D Data
+    * @template T Template interface with custom properties and methods that extends the template instance
+    */
+  type TemplateStaticTyped[N /* <: String */, D /* <: Any */, T /* <: Record[String, Any] */] = (typingsJapgolly.meteor.templatingMod.TemplateStatic[D, T & TemplateInstance[D]]) & (/* import warning: importer.ImportType#apply Failed type conversion: {[ key in N ]: meteor.Blaze.Template<D, T & meteor.Blaze.TemplateInstance<D>>} */ js.Any)
 }
-

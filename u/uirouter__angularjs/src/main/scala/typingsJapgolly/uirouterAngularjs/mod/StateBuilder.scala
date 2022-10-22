@@ -1,16 +1,15 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "StateBuilder")
 @js.native
-class StateBuilder protected ()
+open class StateBuilder protected ()
   extends typingsJapgolly.uirouterCore.mod.StateBuilder {
   def this(
-    matcher: typingsJapgolly.uirouterCore.stateMatcherMod.StateMatcher,
-    urlMatcherFactory: typingsJapgolly.uirouterCore.urlMatcherFactoryMod.UrlMatcherFactory
+    matcher: typingsJapgolly.uirouterCore.libStateStateMatcherMod.StateMatcher,
+    urlMatcherFactory: typingsJapgolly.uirouterCore.libUrlUrlMatcherFactoryMod.UrlMatcherFactory
   ) = this()
 }
-

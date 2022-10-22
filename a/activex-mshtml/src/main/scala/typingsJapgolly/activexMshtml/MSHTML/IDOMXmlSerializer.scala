@@ -1,14 +1,28 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.IDOMXmlSerializer")
-@js.native
-class IDOMXmlSerializer protected () extends js.Object {
-  @JSName("MSHTML.IDOMXmlSerializer_typekey")
-  var MSHTMLDotIDOMXmlSerializer_typekey: IDOMXmlSerializer = js.native
-  def serializeToString(pNode: IHTMLDOMNode): String = js.native
+trait IDOMXmlSerializer extends StObject {
+  
+  /* private */ @JSName("MSHTML.IDOMXmlSerializer_typekey")
+  var MSHTMLDotIDOMXmlSerializer_typekey: IDOMXmlSerializer
+  
+  def serializeToString(pNode: IHTMLDOMNode): String
 }
-
+object IDOMXmlSerializer {
+  
+  inline def apply(MSHTMLDotIDOMXmlSerializer_typekey: IDOMXmlSerializer, serializeToString: IHTMLDOMNode => String): IDOMXmlSerializer = {
+    val __obj = js.Dynamic.literal(serializeToString = js.Any.fromFunction1(serializeToString))
+    __obj.updateDynamic("MSHTML.IDOMXmlSerializer_typekey")(MSHTMLDotIDOMXmlSerializer_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDOMXmlSerializer]
+  }
+  
+  extension [Self <: IDOMXmlSerializer](x: Self) {
+    
+    inline def setMSHTMLDotIDOMXmlSerializer_typekey(value: IDOMXmlSerializer): Self = StObject.set(x, "MSHTML.IDOMXmlSerializer_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSerializeToString(value: IHTMLDOMNode => String): Self = StObject.set(x, "serializeToString", js.Any.fromFunction1(value))
+  }
+}

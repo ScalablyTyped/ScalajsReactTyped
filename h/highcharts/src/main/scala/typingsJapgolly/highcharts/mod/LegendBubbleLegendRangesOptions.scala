@@ -1,46 +1,58 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LegendBubbleLegendRangesOptions extends js.Object {
+trait LegendBubbleLegendRangesOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps) The color of the border for individual
     * range.
     */
   var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) The color of the bubble for individual
     * range.
     */
   var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) The color of the connector for
     * individual range.
     */
   var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps) Range size value, similar to bubble Z
     * data.
     */
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object LegendBubbleLegendRangesOptions {
-  @scala.inline
-  def apply(
-    borderColor: ColorString | GradientColorObject | PatternObject = null,
-    color: ColorString | GradientColorObject | PatternObject = null,
-    connectorColor: ColorString | GradientColorObject | PatternObject = null,
-    value: Int | Double = null
-  ): LegendBubbleLegendRangesOptions = {
+  
+  inline def apply(): LegendBubbleLegendRangesOptions = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (connectorColor != null) __obj.updateDynamic("connectorColor")(connectorColor.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LegendBubbleLegendRangesOptions]
   }
+  
+  extension [Self <: LegendBubbleLegendRangesOptions](x: Self) {
+    
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setConnectorColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "connectorColor", value.asInstanceOf[js.Any])
+    
+    inline def setConnectorColorUndefined: Self = StObject.set(x, "connectorColor", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

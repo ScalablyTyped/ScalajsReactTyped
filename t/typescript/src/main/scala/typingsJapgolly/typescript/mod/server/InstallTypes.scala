@@ -1,20 +1,25 @@
 package typingsJapgolly.typescript.mod.server
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InstallTypes extends ProjectResponse {
+trait InstallTypes
+  extends StObject
+     with ProjectResponse {
+  
   val eventId: Double
+  
   @JSName("kind")
   val kind_InstallTypes: EventBeginInstallTypes | EventEndInstallTypes
+  
   val packagesToInstall: js.Array[String]
+  
   val typingsInstallerVersion: String
 }
-
 object InstallTypes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     eventId: Double,
     kind: EventBeginInstallTypes | EventEndInstallTypes,
     packagesToInstall: js.Array[String],
@@ -22,8 +27,19 @@ object InstallTypes {
     typingsInstallerVersion: String
   ): InstallTypes = {
     val __obj = js.Dynamic.literal(eventId = eventId.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], packagesToInstall = packagesToInstall.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], typingsInstallerVersion = typingsInstallerVersion.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[InstallTypes]
   }
+  
+  extension [Self <: InstallTypes](x: Self) {
+    
+    inline def setEventId(value: Double): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: EventBeginInstallTypes | EventEndInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesToInstall(value: js.Array[String]): Self = StObject.set(x, "packagesToInstall", value.asInstanceOf[js.Any])
+    
+    inline def setPackagesToInstallVarargs(value: String*): Self = StObject.set(x, "packagesToInstall", js.Array(value*))
+    
+    inline def setTypingsInstallerVersion(value: String): Self = StObject.set(x, "typingsInstallerVersion", value.asInstanceOf[js.Any])
+  }
 }
-

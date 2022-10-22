@@ -1,28 +1,30 @@
 package typingsJapgolly.natural.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShortestPathTree extends js.Object {
+trait ShortestPathTree extends StObject {
+  
   def getDistTo(vertex: Double): Double
+  
   def hasDistTo(vertex: Double): Boolean
+  
   def pathTo(vertex: Double): js.Array[Double]
 }
-
 object ShortestPathTree {
-  @scala.inline
-  def apply(
-    getDistTo: Double => CallbackTo[Double],
-    hasDistTo: Double => CallbackTo[Boolean],
-    pathTo: Double => CallbackTo[js.Array[Double]]
-  ): ShortestPathTree = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getDistTo")(js.Any.fromFunction1((t0: scala.Double) => getDistTo(t0).runNow()))
-    __obj.updateDynamic("hasDistTo")(js.Any.fromFunction1((t0: scala.Double) => hasDistTo(t0).runNow()))
-    __obj.updateDynamic("pathTo")(js.Any.fromFunction1((t0: scala.Double) => pathTo(t0).runNow()))
+  
+  inline def apply(getDistTo: Double => Double, hasDistTo: Double => Boolean, pathTo: Double => js.Array[Double]): ShortestPathTree = {
+    val __obj = js.Dynamic.literal(getDistTo = js.Any.fromFunction1(getDistTo), hasDistTo = js.Any.fromFunction1(hasDistTo), pathTo = js.Any.fromFunction1(pathTo))
     __obj.asInstanceOf[ShortestPathTree]
   }
+  
+  extension [Self <: ShortestPathTree](x: Self) {
+    
+    inline def setGetDistTo(value: Double => Double): Self = StObject.set(x, "getDistTo", js.Any.fromFunction1(value))
+    
+    inline def setHasDistTo(value: Double => Boolean): Self = StObject.set(x, "hasDistTo", js.Any.fromFunction1(value))
+    
+    inline def setPathTo(value: Double => js.Array[Double]): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
+  }
 }
-

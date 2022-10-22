@@ -1,17 +1,22 @@
 package typingsJapgolly.stripeV3.stripe
 
-import typingsJapgolly.stripeV3.AnonBank
-import typingsJapgolly.stripeV3.AnonIban
+import typingsJapgolly.stripeV3.anon.Bank
+import typingsJapgolly.stripeV3.anon.Iban
 import typingsJapgolly.stripeV3.stripe.elements.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentMethodData extends js.Object {
+trait PaymentMethodData extends StObject {
+  
   var billing_details: js.UndefOr[BillingDetails] = js.undefined
+  
   var card: js.UndefOr[Element] = js.undefined
-  var ideal: js.UndefOr[Element | AnonBank] = js.undefined
-  var sepa_debit: js.UndefOr[Element | AnonIban] = js.undefined
+  
+  var ideal: js.UndefOr[Element | Bank] = js.undefined
+  
+  var sepa_debit: js.UndefOr[Element | Iban] = js.undefined
+  
   /**
     * Billing information associated with the PaymentMethod
     * that may be used or required by particular types of
@@ -19,23 +24,32 @@ trait PaymentMethodData extends js.Object {
     */
   var `type`: String
 }
-
 object PaymentMethodData {
-  @scala.inline
-  def apply(
-    `type`: String,
-    billing_details: BillingDetails = null,
-    card: Element = null,
-    ideal: Element | AnonBank = null,
-    sepa_debit: Element | AnonIban = null
-  ): PaymentMethodData = {
+  
+  inline def apply(`type`: String): PaymentMethodData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (billing_details != null) __obj.updateDynamic("billing_details")(billing_details.asInstanceOf[js.Any])
-    if (card != null) __obj.updateDynamic("card")(card.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (sepa_debit != null) __obj.updateDynamic("sepa_debit")(sepa_debit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentMethodData]
   }
+  
+  extension [Self <: PaymentMethodData](x: Self) {
+    
+    inline def setBilling_details(value: BillingDetails): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    
+    inline def setBilling_detailsUndefined: Self = StObject.set(x, "billing_details", js.undefined)
+    
+    inline def setCard(value: Element): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    
+    inline def setIdeal(value: Element | Bank): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+    
+    inline def setSepa_debit(value: Element | Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
+    
+    inline def setSepa_debitUndefined: Self = StObject.set(x, "sepa_debit", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,24 +1,37 @@
 package typingsJapgolly.foundation.Foundation
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/interchange.html#custom-named-queries
-trait InterchangeOptions extends js.Object {
+trait InterchangeOptions extends StObject {
+  
   var directives: js.UndefOr[js.Object] = js.undefined
+  
   var load_attr: js.UndefOr[String] = js.undefined
+  
   var named_queries: js.UndefOr[js.Object] = js.undefined
 }
-
 object InterchangeOptions {
-  @scala.inline
-  def apply(directives: js.Object = null, load_attr: String = null, named_queries: js.Object = null): InterchangeOptions = {
+  
+  inline def apply(): InterchangeOptions = {
     val __obj = js.Dynamic.literal()
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (load_attr != null) __obj.updateDynamic("load_attr")(load_attr.asInstanceOf[js.Any])
-    if (named_queries != null) __obj.updateDynamic("named_queries")(named_queries.asInstanceOf[js.Any])
     __obj.asInstanceOf[InterchangeOptions]
   }
+  
+  extension [Self <: InterchangeOptions](x: Self) {
+    
+    inline def setDirectives(value: js.Object): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    
+    inline def setLoad_attr(value: String): Self = StObject.set(x, "load_attr", value.asInstanceOf[js.Any])
+    
+    inline def setLoad_attrUndefined: Self = StObject.set(x, "load_attr", js.undefined)
+    
+    inline def setNamed_queries(value: js.Object): Self = StObject.set(x, "named_queries", value.asInstanceOf[js.Any])
+    
+    inline def setNamed_queriesUndefined: Self = StObject.set(x, "named_queries", js.undefined)
+  }
 }
-

@@ -1,48 +1,57 @@
 package typingsJapgolly.inquirer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question.
-  *
-  * @template T
-  * The type of the answers.
-  */
-trait Question[T /* <: Answers */] extends js.Object {
+trait Question[T /* <: Answers */] extends StObject {
+  
   /**
     * The default value of the question.
     */
-  var default: js.UndefOr[AsyncDynamicQuestionProperty[_, T]] = js.undefined
+  var default: js.UndefOr[AsyncDynamicQuestionProperty[Any, T]] = js.undefined
+  
+  /**
+    * Force to prompt the question if the answer already exists.
+    */
+  var askAnswered: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Post-processes the answer.
     *
     * @param input
     * The answer provided by the user.
+    *
+    * @param answers
+    * The answers provided by the user.
     */
-  var filter: js.UndefOr[js.Function1[/* input */ js.Any, _]] = js.undefined
+  var filter: js.UndefOr[js.Function2[/* input */ Any, /* answers */ T, Any]] = js.undefined
+  
   /**
     * The message to show to the user.
     */
   var message: js.UndefOr[AsyncDynamicQuestionProperty[String, T]] = js.undefined
+  
   /**
     * The key to save the answer to the answers-hash.
     */
   var name: js.UndefOr[KeyUnion[T]] = js.undefined
+  
   /**
-    * The prefix of the `message`.
+    * The prefix of the {@link message `message`}.
     */
   var prefix: js.UndefOr[String] = js.undefined
+  
   /**
-    * The suffix of the `message`.
+    * The suffix of the {@link message `message`}.
     */
   var suffix: js.UndefOr[String] = js.undefined
+  
   /**
     * The type of the question.
     */
   var `type`: js.UndefOr[String] = js.undefined
+  
   /**
     * Validates the integrity of the answer.
     *
@@ -53,45 +62,76 @@ trait Question[T /* <: Answers */] extends js.Object {
     * The answers provided by the user.
     *
     * @returns
-    * Either a value indicating whether the answer is valid or a `string` which describes the error.
+    * Either a value indicating whether the answer is valid or a {@link String `string`} which describes the error.
     */
   var validate: js.UndefOr[
     js.Function2[
-      /* input */ js.Any, 
+      /* input */ Any, 
       /* answers */ js.UndefOr[T], 
       Boolean | String | (js.Promise[Boolean | String])
     ]
   ] = js.undefined
+  
   /**
     * A value indicating whether the question should be prompted.
     */
   var when: js.UndefOr[AsyncDynamicQuestionProperty[Boolean, T]] = js.undefined
 }
-
 object Question {
-  @scala.inline
-  def apply[T /* <: Answers */](
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => CallbackTo[js.Any] = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    prefix: String = null,
-    suffix: String = null,
-    `type`: String = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => CallbackTo[Boolean | String | (js.Promise[Boolean | String])] = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): Question[T] = {
+  
+  inline def apply[T /* <: Answers */](): Question[T] = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* input */ js.Any) => filter(t0).runNow()))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: /* input */ js.Any, t1: /* answers */ js.UndefOr[T]) => validate(t0, t1).runNow()))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[Question[T]]
   }
+  
+  extension [Self <: Question[?], T /* <: Answers */](x: Self & Question[T]) {
+    
+    inline def setAskAnswered(value: Boolean): Self = StObject.set(x, "askAnswered", value.asInstanceOf[js.Any])
+    
+    inline def setAskAnsweredUndefined: Self = StObject.set(x, "askAnswered", js.undefined)
+    
+    inline def setDefault(value: AsyncDynamicQuestionProperty[Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultFunction1(value: T => Any | js.Promise[Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setFilter(value: (/* input */ Any, /* answers */ T) => Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setMessage(value: AsyncDynamicQuestionProperty[String, T]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageFunction1(value: T => String | js.Promise[String]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setName(value: KeyUnion[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValidate(
+      value: (/* input */ Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String])
+    ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setWhen(value: AsyncDynamicQuestionProperty[Boolean, T]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    
+    inline def setWhenFunction1(value: T => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
+    
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+  }
 }
-

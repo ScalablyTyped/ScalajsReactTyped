@@ -1,19 +1,21 @@
-package typingsJapgolly.clearbladejsServer
+package typingsJapgolly.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object CbServer {
-  type CbCallback = js.Function2[
-    /* error */ scala.Boolean, 
-    /* response */ typingsJapgolly.clearbladejsServer.CbServer.Resp_, 
-    scala.Unit
-  ]
-  type ItemOptions = typingsJapgolly.clearbladejsServer.CbServer.CollectionOptionsWithID
-  type KeyValuePair = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type QueryFilter = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.clearbladejsServer.CbServer.QueryFilterValue]
-  type QueryFilterValue = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.clearbladejsServer.CbServer.QueryValue]
-  type QueryValue = java.lang.String | scala.Double | scala.Boolean
-  type ReqTypes = typingsJapgolly.clearbladejsServer.CbServer.BasicReq
-}
+
+type CbCallback = js.Function2[/* error */ Boolean, /* response */ Resp, Unit]
+
+type ItemOptions = CollectionOptionsWithID
+
+type KeyValuePair = StringDictionary[Any]
+
+type QueryFilter = StringDictionary[QueryFilterValue]
+
+type QueryFilterValue = StringDictionary[QueryValue]
+
+type QueryValue = String | Double | Boolean
+
+type ReqTypes = BasicReq

@@ -1,11 +1,10 @@
 package typingsJapgolly.xmldsigjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "HmacSha256")
 @js.native
-class HmacSha256 ()
-  extends typingsJapgolly.xmldsigjs.hmacSignMod.HmacSha256
-
+open class HmacSha256 ()
+  extends typingsJapgolly.xmldsigjs.buildTypesAlgorithmsMod.HmacSha256

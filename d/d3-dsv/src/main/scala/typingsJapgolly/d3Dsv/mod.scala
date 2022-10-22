@@ -2,15 +2,84 @@ package typingsJapgolly.d3Dsv
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("d3-dsv", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("d3-dsv", JSImport.Namespace)
   @js.native
-  trait DSV extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+  `object`: js.Array[String]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
+  inline def autoType[ParsedRow /* <: js.UndefOr[js.Object | Null] */, Columns /* <: String */](// tslint:disable-next-line:no-unnecessary-generics
+  `object`: DSVRowString[Columns]): ParsedRow = ^.asInstanceOf[js.Dynamic].applyDynamic("autoType")(`object`.asInstanceOf[js.Any]).asInstanceOf[ParsedRow]
+  
+  inline def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormat")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("csvFormat")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def csvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatBody")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def csvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatBody")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def csvFormatRow(row: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatRow")(row.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def csvFormatRows(rows: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatRows")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def csvFormatValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("csvFormatValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = ^.asInstanceOf[js.Dynamic].applyDynamic("csvParse")(csvString.asInstanceOf[js.Any]).asInstanceOf[DSVRowArray[Columns]]
+  inline def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
+    csvString: String,
+    row: js.Function3[
+      /* rawRow */ DSVRowString[Columns], 
+      /* index */ Double, 
+      /* columns */ js.Array[Columns], 
+      js.UndefOr[ParsedRow | Null]
+    ]
+  ): DSVParsedArray[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("csvParse")(csvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[DSVParsedArray[ParsedRow]]
+  
+  inline def csvParseRows(csvString: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("csvParseRows")(csvString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  inline def csvParseRows[ParsedRow /* <: js.Object */](
+    csvString: String,
+    row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
+  ): js.Array[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("csvParseRows")(csvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedRow]]
+  
+  inline def dsvFormat(delimiter: String): DSV = ^.asInstanceOf[js.Dynamic].applyDynamic("dsvFormat")(delimiter.asInstanceOf[js.Any]).asInstanceOf[DSV]
+  
+  inline def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormat")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormat")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatBody")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def tsvFormatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatBody")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def tsvFormatRow(row: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatRow")(row.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def tsvFormatRows(rows: js.Array[js.Array[String]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatRows")(rows.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def tsvFormatValue(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvFormatValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvParse")(tsvString.asInstanceOf[js.Any]).asInstanceOf[DSVRowArray[Columns]]
+  inline def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
+    tsvString: String,
+    row: js.Function3[
+      /* rawRow */ DSVRowString[Columns], 
+      /* index */ Double, 
+      /* columns */ js.Array[Columns], 
+      js.UndefOr[ParsedRow | Null]
+    ]
+  ): DSVParsedArray[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvParse")(tsvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[DSVParsedArray[ParsedRow]]
+  
+  inline def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tsvParseRows")(tsvString.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
+  inline def tsvParseRows[ParsedRow /* <: js.Object */](
+    tsvString: String,
+    row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
+  ): js.Array[ParsedRow] = (^.asInstanceOf[js.Dynamic].applyDynamic("tsvParseRows")(tsvString.asInstanceOf[js.Any], row.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParsedRow]]
+  
+  @js.native
+  trait DSV extends StObject {
+    
     /**
       * Formats the specified array of object rows as delimiter-separated values, returning a string.
       * This operation is the inverse of dsv.parse. Each row will be separated by a newline (\n),
@@ -24,7 +93,27 @@ object mod extends js.Object {
       * @param columns An array of strings representing the column names.
       */
     def format[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-    def format[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
+    def format[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    /**
+      * Equivalent to dsv.format, but omits the header row.
+      * This is useful, for example, when appending rows to an existing file.
+      *
+      * @param rows Array of object rows.
+      * @param columns An array of strings representing the column names.
+      */
+    def formatBody[T /* <: js.Object */](rows: js.Array[T]): String = js.native
+    def formatBody[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[/* keyof T */ String]): String = js.native
+    
+    /**
+      * Formats a single array row of strings as delimiter-separated values, returning a string.
+      * Each column within the row will be separated by the delimiter (such as a comma, ,).
+      * Values that contain either the delimiter, a double-quote (") or a newline will be escaped using double-quotes.
+      *
+      * @param row An array of strings representing a row.
+      */
+    def formatRow(row: js.Array[String]): String = js.native
+    
     /**
       * Formats the specified array of array of string rows as delimiter-separated values, returning a string.
       * This operation is the reverse of dsv.parseRows. Each row will be separated by a newline (\n),
@@ -37,6 +126,15 @@ object mod extends js.Object {
       * @param rows An array of array of string rows.
       */
     def formatRows(rows: js.Array[js.Array[String]]): String = js.native
+    
+    /**
+      * Format a single value or string as a delimiter-separated value, returning a string.
+      * A value that contains either the delimiter, a double-quote (") or a newline will be escaped using double-quotes.
+      *
+      * @param value A value.
+      */
+    def formatValue(value: String): String = js.native
+    
     /**
       * Parses the specified string, which must be in the delimiter-separated values format with the appropriate delimiter, returning an array of objects representing the parsed rows.
       *
@@ -44,6 +142,10 @@ object mod extends js.Object {
       * these column names become the attributes on the returned objects.
       *
       * The returned array also exposes a columns property containing the column names in input order (in contrast to Object.keys, whose iteration order is arbitrary).
+      *
+      * If the column names are not unique, only the last value is returned for each name; to access all values, use dsv.parseRows instead.
+      *
+      * Note: requires unsafe-eval content security policy.
       *
       * @param dsvString A string, which must be in the delimiter-separated values format with the appropriate delimiter.
       */
@@ -56,6 +158,10 @@ object mod extends js.Object {
       * these column names become the attributes on the returned objects.
       *
       * The returned array also exposes a columns property containing the column names in input order (in contrast to Object.keys, whose iteration order is arbitrary).
+      *
+      * If the column names are not unique, only the last value is returned for each name; to access all values, use dsv.parseRows instead.
+      *
+      * Note: requires unsafe-eval content security policy.
       *
       * @param dsvString A string, which must be in the delimiter-separated values format with the appropriate delimiter.
       * @param row A row conversion function which is invoked for each row, being passed an object representing the current row (d),
@@ -72,6 +178,7 @@ object mod extends js.Object {
           js.UndefOr[ParsedRow | Null]
         ]
     ): DSVParsedArray[ParsedRow] = js.native
+    
     /**
       * Parses the specified string, which must be in the delimiter-separated values format with the appropriate delimiter, returning an array of arrays representing the parsed rows.
       *
@@ -103,64 +210,46 @@ object mod extends js.Object {
   }
   
   @js.native
-  trait DSVParsedArray[T] extends Array[T] {
+  trait DSVParsedArray[T]
+    extends StObject
+       with Array[T] {
+    
     /**
       * List of column names.
       */
-    var columns: js.Array[String] = js.native
+    var columns: js.Array[/* keyof T */ String] = js.native
   }
   
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in keyof T ]: string | undefined}
+    }}}
+    */
   @js.native
-  trait DSVRowArray[Columns /* <: String */] extends Array[DSVRowString[Columns]] {
+  trait DSVRaw[T /* <: js.Object */] extends StObject
+  
+  type DSVRowAny = StringDictionary[Any]
+  
+  @js.native
+  trait DSVRowArray[Columns /* <: String */]
+    extends StObject
+       with Array[DSVRowString[Columns]] {
+    
     /**
       * List of column names.
       */
     var columns: js.Array[Columns] = js.native
   }
   
-  def csvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  def csvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
-  def csvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
-  def csvParse[Columns /* <: String */](csvString: String): DSVRowArray[Columns] = js.native
-  def csvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
-    csvString: String,
-    row: js.Function3[
-      /* rawRow */ DSVRowString[Columns], 
-      /* index */ Double, 
-      /* columns */ js.Array[Columns], 
-      js.UndefOr[ParsedRow | Null]
-    ]
-  ): DSVParsedArray[ParsedRow] = js.native
-  def csvParseRows(csvString: String): js.Array[js.Array[String]] = js.native
-  def csvParseRows[ParsedRow /* <: js.Object */](
-    csvString: String,
-    row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
-  ): js.Array[ParsedRow] = js.native
-  def dsvFormat(delimiter: String): DSV = js.native
-  def tsvFormat[T /* <: js.Object */](rows: js.Array[T]): String = js.native
-  def tsvFormat[T /* <: js.Object */](rows: js.Array[T], columns: js.Array[String]): String = js.native
-  def tsvFormatRows(rows: js.Array[js.Array[String]]): String = js.native
-  def tsvParse[Columns /* <: String */](tsvString: String): DSVRowArray[Columns] = js.native
-  def tsvParse[ParsedRow /* <: js.Object */, Columns /* <: String */](
-    tsvString: String,
-    row: js.Function3[
-      /* rawRow */ DSVRowString[Columns], 
-      /* index */ Double, 
-      /* columns */ js.Array[Columns], 
-      js.UndefOr[ParsedRow | Null]
-    ]
-  ): DSVParsedArray[ParsedRow] = js.native
-  def tsvParseRows(tsvString: String): js.Array[js.Array[String]] = js.native
-  def tsvParseRows[ParsedRow /* <: js.Object */](
-    tsvString: String,
-    row: js.Function2[/* rawRow */ js.Array[String], /* index */ Double, js.UndefOr[ParsedRow | Null]]
-  ): js.Array[ParsedRow] = js.native
-  type DSVRaw[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in keyof T ]: string | undefined}
-    */ typingsJapgolly.d3Dsv.d3DsvStrings.DSVRaw with js.Any
-  type DSVRowAny = StringDictionary[js.Any]
-  type DSVRowString[Columns /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ key in Columns ]: string | undefined}
-    */ typingsJapgolly.d3Dsv.d3DsvStrings.DSVRowString with js.Any
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ key in Columns ]: string | undefined}
+    }}}
+    */
+  @js.native
+  trait DSVRowString[Columns /* <: String */] extends StObject
 }
-

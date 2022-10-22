@@ -1,12 +1,13 @@
 package typingsJapgolly.dotdotdot
 
 import typingsJapgolly.dotdotdot.JQueryDotDotDot.IDotDotDotOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * jQuery.dotdotdot is an advanced cross-browser ellipsis for multiple line content plugin.
     * @param options settings that could modify a behaviour.
@@ -14,4 +15,3 @@ trait JQuery extends js.Object {
   def dotdotdot(): JQuery = js.native
   def dotdotdot(options: IDotDotDotOptions): JQuery = js.native
 }
-

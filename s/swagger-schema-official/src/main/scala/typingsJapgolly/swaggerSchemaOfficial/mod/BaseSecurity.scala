@@ -3,22 +3,30 @@ package typingsJapgolly.swaggerSchemaOfficial.mod
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.apiKey
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.basic
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.oauth2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseSecurity extends js.Object {
+trait BaseSecurity extends StObject {
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var `type`: basic | apiKey | oauth2
 }
-
 object BaseSecurity {
-  @scala.inline
-  def apply(`type`: basic | apiKey | oauth2, description: String = null): BaseSecurity = {
+  
+  inline def apply(`type`: basic | apiKey | oauth2): BaseSecurity = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseSecurity]
   }
+  
+  extension [Self <: BaseSecurity](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setType(value: basic | apiKey | oauth2): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

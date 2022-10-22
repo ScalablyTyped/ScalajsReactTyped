@@ -1,26 +1,8 @@
 
 # Scala.js typings for babel__parser
 
-Typings are for version 7.8.4
+Typings are for version 7.19.4
 
-## Library description:
-A JavaScript parser
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @babel/parser |
-| Keywords           | babel, javascript, parser, tc39, ecmascript, @babel/parser |
-| # releases         | 48 |
-| # dependents       | 699 |
-| # downloads        | 502292122 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://babeljs.io/)
-- [Bugs](https://github.com/babel/babel/issues)
-- [Repository](https://github.com/babel/babel)
-- [Npm](https://www.npmjs.com/package/%40babel%2Fparser)
-    
 
 
 ## Note

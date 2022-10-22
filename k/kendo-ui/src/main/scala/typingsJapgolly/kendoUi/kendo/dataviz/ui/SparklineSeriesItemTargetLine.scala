@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SparklineSeriesItemTargetLine extends js.Object {
-  var width: js.UndefOr[js.Any | js.Function] = js.undefined
+trait SparklineSeriesItemTargetLine extends StObject {
+  
+  var width: js.UndefOr[Any | js.Function] = js.undefined
 }
-
 object SparklineSeriesItemTargetLine {
-  @scala.inline
-  def apply(width: js.Any | js.Function = null): SparklineSeriesItemTargetLine = {
+  
+  inline def apply(): SparklineSeriesItemTargetLine = {
     val __obj = js.Dynamic.literal()
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SparklineSeriesItemTargetLine]
   }
+  
+  extension [Self <: SparklineSeriesItemTargetLine](x: Self) {
+    
+    inline def setWidth(value: Any | js.Function): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

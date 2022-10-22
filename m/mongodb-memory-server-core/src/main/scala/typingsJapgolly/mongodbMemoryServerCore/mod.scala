@@ -1,106 +1,156 @@
 package typingsJapgolly.mongodbMemoryServerCore
 
-import typingsJapgolly.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryCache
-import typingsJapgolly.mongodbMemoryServerCore.mongoBinaryMod.MongoBinaryOpts
-import typingsJapgolly.mongodbMemoryServerCore.mongoInstanceMod.MongodOps
-import typingsJapgolly.mongodbMemoryServerCore.mongoMemoryReplSetMod.MongoMemoryReplSetOptsT
-import typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServerOptsT
-import typingsJapgolly.mongodbMemoryServerCore.typesMod.DebugFn
-import typingsJapgolly.node.childProcessMod.ChildProcess
+import typingsJapgolly.mongodbMemoryServerCore.anon.PartialMongoMemoryReplSet
+import typingsJapgolly.mongodbMemoryServerCore.anon.PartialMongodOpts
+import typingsJapgolly.mongodbMemoryServerCore.anon.RequiredMongoBinaryOpts
+import typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServerOpts
+import typingsJapgolly.mongodbMemoryServerCore.libUtilMongoBinaryMod.MongoBinaryOpts
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mongodb-memory-server-core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class MongoBinary ()
-    extends typingsJapgolly.mongodbMemoryServerCore.mongoBinaryMod.default
+object mod {
   
-  @js.native
-  class MongoInstance protected ()
-    extends typingsJapgolly.mongodbMemoryServerCore.mongoInstanceMod.default {
-    def this(opts: MongodOps) = this()
-  }
-  
-  @js.native
-  class MongoMemoryReplSet ()
-    extends typingsJapgolly.mongodbMemoryServerCore.mongoMemoryReplSetMod.default {
-    def this(opts: MongoMemoryReplSetOptsT) = this()
-  }
-  
+  @JSImport("mongodb-memory-server-core", JSImport.Default)
   @js.native
   /**
     * Create an Mongo-Memory-Sever Instance
-    *
-    * Note: because of JavaScript limitations, autoStart cannot be awaited here, use ".create" for async/await ability
     * @param opts Mongo-Memory-Sever Options
     */
-  class MongoMemoryServer ()
-    extends typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.default {
-    def this(opts: MongoMemoryServerOptsT) = this()
+  open class default ()
+    extends typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer {
+    def this(opts: MongoMemoryServerOpts) = this()
   }
-  
-  @js.native
-  /**
-    * Create an Mongo-Memory-Sever Instance
-    *
-    * Note: because of JavaScript limitations, autoStart cannot be awaited here, use ".create" for async/await ability
-    * @param opts Mongo-Memory-Sever Options
-    */
-  class default ()
-    extends typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.default {
-    def this(opts: MongoMemoryServerOptsT) = this()
-  }
-  
   /* static members */
-  @js.native
-  object MongoBinary extends js.Object {
-    var cache: MongoBinaryCache = js.native
-    @JSName("debug")
-    var debug_Original: DebugFn = js.native
-    def debug(args: js.Any*): js.Any = js.native
-    def getCachePath(version: String): js.Promise[String] = js.native
-    def getDownloadPath(options: js.Any): js.Promise[String] = js.native
-    def getPath(): js.Promise[String] = js.native
-    def getPath(opts: MongoBinaryOpts): js.Promise[String] = js.native
-    def getSystemPath(systemBinary: String): js.Promise[String] = js.native
-    def hasValidBinPath(files: js.Array[String]): Boolean = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object MongoInstance extends js.Object {
-    var childProcessList: js.Array[ChildProcess] = js.native
+  object default {
+    
+    @JSImport("mongodb-memory-server-core", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Create an new instance an call method "run"
+      * Create an Mongo-Memory-Sever Instance that can be awaited
+      * @param opts Mongo-Memory-Sever Options
+      */
+    inline def create(): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ]]
+    inline def create(opts: MongoMemoryServerOpts): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ]]
+  }
+  
+  @JSImport("mongodb-memory-server-core", "MongoBinary")
+  @js.native
+  open class MongoBinary ()
+    extends typingsJapgolly.mongodbMemoryServerCore.libUtilMongoBinaryMod.MongoBinary
+  /* static members */
+  object MongoBinary {
+    
+    @JSImport("mongodb-memory-server-core", "MongoBinary")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Probe download path and download the binary
+      * @param options Options Configuring which binary to download and to which path
+      * @returns The BinaryPath the binary has been downloaded to
+      */
+    inline def download(options: RequiredMongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("download")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    
+    /**
+      * Probe all supported paths for an binary and return the binary path
+      * @param opts Options configuring which binary to search for
+      * @throws {Error} if no valid BinaryPath has been found
+      * @returns The first found BinaryPath
+      */
+    inline def getPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")().asInstanceOf[js.Promise[String]]
+    inline def getPath(opts: MongoBinaryOpts): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  }
+  
+  @JSImport("mongodb-memory-server-core", "MongoInstance")
+  @js.native
+  open class MongoInstance protected ()
+    extends typingsJapgolly.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance {
+    def this(opts: PartialMongodOpts) = this()
+  }
+  /* static members */
+  object MongoInstance {
+    
+    @JSImport("mongodb-memory-server-core", "MongoInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Create an new instance an call method "start"
       * @param opts Options passed to the new instance
       */
-    def run(opts: MongodOps): js.Promise[typingsJapgolly.mongodbMemoryServerCore.mongoInstanceMod.MongoInstance] = js.native
+    inline def create(opts: PartialMongodOpts): js.Promise[typingsJapgolly.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.mongodbMemoryServerCore.libUtilMongoInstanceMod.MongoInstance]]
   }
   
-  /* static members */
+  @JSImport("mongodb-memory-server-core", "MongoMemoryReplSet")
   @js.native
-  object MongoMemoryServer extends js.Object {
+  open class MongoMemoryReplSet ()
+    extends typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet {
+    def this(opts: PartialMongoMemoryReplSet) = this()
+  }
+  /* static members */
+  object MongoMemoryReplSet {
+    
+    @JSImport("mongodb-memory-server-core", "MongoMemoryReplSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Create an instance of "MongoMemoryReplSet" and call start
+      * @param opts Options for the ReplSet
+      */
+    inline def create(): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet
+      ]]
+    inline def create(opts: PartialMongoMemoryReplSet): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryReplSetMod.MongoMemoryReplSet
+      ]]
+  }
+  
+  @JSImport("mongodb-memory-server-core", "MongoMemoryServer")
+  @js.native
+  /**
+    * Create an Mongo-Memory-Sever Instance
+    * @param opts Mongo-Memory-Sever Options
+    */
+  open class MongoMemoryServer ()
+    extends typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer {
+    def this(opts: MongoMemoryServerOpts) = this()
+  }
+  /* static members */
+  object MongoMemoryServer {
+    
+    @JSImport("mongodb-memory-server-core", "MongoMemoryServer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create an Mongo-Memory-Sever Instance that can be awaited
       * @param opts Mongo-Memory-Sever Options
       */
-    def create(): js.Promise[typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
-    def create(opts: MongoMemoryServerOptsT): js.Promise[typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
+    inline def create(): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ]]
+    inline def create(opts: MongoMemoryServerOpts): js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        typingsJapgolly.mongodbMemoryServerCore.libMongoMemoryServerMod.MongoMemoryServer
+      ]]
   }
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    /**
-      * Create an Mongo-Memory-Sever Instance that can be awaited
-      * @param opts Mongo-Memory-Sever Options
-      */
-    def create(): js.Promise[typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
-    def create(opts: MongoMemoryServerOptsT): js.Promise[typingsJapgolly.mongodbMemoryServerCore.mongoMemoryServerMod.MongoMemoryServer] = js.native
-  }
-  
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.webViewRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeRequest
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.chromeApps.chromeAppsStrings.onHeadersReceived
   - typingsJapgolly.chromeApps.chromeAppsStrings.onAuthRequired
 */
-trait Stage extends js.Object
-
+trait Stage extends StObject
 object Stage {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAuthRequired: typingsJapgolly.chromeApps.chromeAppsStrings.onAuthRequired = this.cast("onAuthRequired")
-  @scala.inline
-  def onBeforeRequest: typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeRequest = this.cast("onBeforeRequest")
-  @scala.inline
-  def onBeforeSendHeaders: typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeSendHeaders = this.cast("onBeforeSendHeaders")
-  @scala.inline
-  def onHeadersReceived: typingsJapgolly.chromeApps.chromeAppsStrings.onHeadersReceived = this.cast("onHeadersReceived")
+  
+  inline def onAuthRequired: typingsJapgolly.chromeApps.chromeAppsStrings.onAuthRequired = "onAuthRequired".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.onAuthRequired]
+  
+  inline def onBeforeRequest: typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeRequest = "onBeforeRequest".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeRequest]
+  
+  inline def onBeforeSendHeaders: typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeSendHeaders = "onBeforeSendHeaders".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.onBeforeSendHeaders]
+  
+  inline def onHeadersReceived: typingsJapgolly.chromeApps.chromeAppsStrings.onHeadersReceived = "onHeadersReceived".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.onHeadersReceived]
 }
-

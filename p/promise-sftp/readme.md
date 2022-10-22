@@ -10,10 +10,10 @@ a promise-based sftp client for node.js
 | ------------------ | :-------------: |
 | Full name          | promise-sftp |
 | Keywords           | sftp, client, promise, node |
-| # releases         | 3 |
-| # dependents       | 5 |
-| # downloads        | 248097 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 42300.0 |
+| # stars            | 15.0 |
 
 ## Links
 - [Homepage](https://github.com/realtymaps/promise-sftp#readme)

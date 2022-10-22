@@ -1,26 +1,32 @@
 package typingsJapgolly.businessRulesEngine.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IErrorTranslateArgs extends js.Object {
+trait IErrorTranslateArgs extends StObject {
+  
   var CustomMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
-  var MessageArgs: js.Any
+  
+  var MessageArgs: Any
+  
   var TranslateId: String
 }
-
 object IErrorTranslateArgs {
-  @scala.inline
-  def apply(
-    MessageArgs: js.Any,
-    TranslateId: String,
-    CustomMessage: (/* config */ js.Any, /* args */ js.Any) => CallbackTo[String] = null
-  ): IErrorTranslateArgs = {
+  
+  inline def apply(MessageArgs: Any, TranslateId: String): IErrorTranslateArgs = {
     val __obj = js.Dynamic.literal(MessageArgs = MessageArgs.asInstanceOf[js.Any], TranslateId = TranslateId.asInstanceOf[js.Any])
-    if (CustomMessage != null) __obj.updateDynamic("CustomMessage")(js.Any.fromFunction2((t0: /* config */ js.Any, t1: /* args */ js.Any) => CustomMessage(t0, t1).runNow()))
     __obj.asInstanceOf[IErrorTranslateArgs]
   }
+  
+  extension [Self <: IErrorTranslateArgs](x: Self) {
+    
+    inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "CustomMessage", js.Any.fromFunction2(value))
+    
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "CustomMessage", js.undefined)
+    
+    inline def setMessageArgs(value: Any): Self = StObject.set(x, "MessageArgs", value.asInstanceOf[js.Any])
+    
+    inline def setTranslateId(value: String): Self = StObject.set(x, "TranslateId", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTickLabelAlignment extends js.Object
-
+sealed trait ChartTickLabelAlignment extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
 @JSGlobal("Excel.ChartTickLabelAlignment")
 @js.native
-object ChartTickLabelAlignment extends js.Object {
+object ChartTickLabelAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait center extends ChartTickLabelAlignment
+  sealed trait center
+    extends StObject
+       with ChartTickLabelAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait left extends ChartTickLabelAlignment
+  sealed trait left
+    extends StObject
+       with ChartTickLabelAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.8]
+    */
   @js.native
-  sealed trait right extends ChartTickLabelAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartTickLabelAlignment with String] = js.native
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
+  sealed trait right
+    extends StObject
+       with ChartTickLabelAlignment
 }
-

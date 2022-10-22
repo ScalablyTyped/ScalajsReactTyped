@@ -1,32 +1,51 @@
 package typingsJapgolly.asana.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.asana.mod.auth.Authenticator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DispatcherOptions extends js.Object {
+trait DispatcherOptions extends StObject {
+  
   var authenticator: js.UndefOr[Authenticator] = js.undefined
+  
+  var defaultHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var handleUnauthorized: js.UndefOr[js.Function0[Boolean | typingsJapgolly.bluebird.mod.^[Boolean]]] = js.undefined
+  
   var requestTimeout: js.UndefOr[String] = js.undefined
+  
   var retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
 }
-
 object DispatcherOptions {
-  @scala.inline
-  def apply(
-    authenticator: Authenticator = null,
-    handleUnauthorized: js.UndefOr[CallbackTo[Boolean | typingsJapgolly.bluebird.mod.^[Boolean]]] = js.undefined,
-    requestTimeout: String = null,
-    retryOnRateLimit: js.UndefOr[Boolean] = js.undefined
-  ): DispatcherOptions = {
+  
+  inline def apply(): DispatcherOptions = {
     val __obj = js.Dynamic.literal()
-    if (authenticator != null) __obj.updateDynamic("authenticator")(authenticator.asInstanceOf[js.Any])
-    handleUnauthorized.foreach(p => __obj.updateDynamic("handleUnauthorized")(p.toJsFn))
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(retryOnRateLimit)) __obj.updateDynamic("retryOnRateLimit")(retryOnRateLimit.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatcherOptions]
   }
+  
+  extension [Self <: DispatcherOptions](x: Self) {
+    
+    inline def setAuthenticator(value: Authenticator): Self = StObject.set(x, "authenticator", value.asInstanceOf[js.Any])
+    
+    inline def setAuthenticatorUndefined: Self = StObject.set(x, "authenticator", js.undefined)
+    
+    inline def setDefaultHeaders(value: StringDictionary[String]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
+    
+    inline def setHandleUnauthorized(value: CallbackTo[Boolean | typingsJapgolly.bluebird.mod.^[Boolean]]): Self = StObject.set(x, "handleUnauthorized", value.toJsFn)
+    
+    inline def setHandleUnauthorizedUndefined: Self = StObject.set(x, "handleUnauthorized", js.undefined)
+    
+    inline def setRequestTimeout(value: String): Self = StObject.set(x, "requestTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setRequestTimeoutUndefined: Self = StObject.set(x, "requestTimeout", js.undefined)
+    
+    inline def setRetryOnRateLimit(value: Boolean): Self = StObject.set(x, "retryOnRateLimit", value.asInstanceOf[js.Any])
+    
+    inline def setRetryOnRateLimitUndefined: Self = StObject.set(x, "retryOnRateLimit", js.undefined)
+  }
 }
-

@@ -1,16 +1,18 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Features extends js.Object {
+trait Features extends StObject {
+  
   /**
     * Enable the pagination feature
     *
     * @default true
     */
   var paginate: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable the perPageSelect feature
     * The perPageSelect will insert a form control filled with the options from `perPageOptions`
@@ -18,6 +20,7 @@ trait Features extends js.Object {
     * @default true
     */
   var perPageSelect: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable the pushState feature
     * Used to update the page URL parameters and cache the query result for the browser's forward- and back-buttons
@@ -25,6 +28,7 @@ trait Features extends js.Object {
     * @default true
     */
   var pushState: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable the recordCount feature
     * When pagination is enabled, dynatable will also show the currently displayed records and the total number of records
@@ -32,12 +36,14 @@ trait Features extends js.Object {
     * @default true
     */
   var recordCount: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable the search feature
     *
     * @default true
     */
   var search: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Enable the sorting feature
     *
@@ -45,25 +51,37 @@ trait Features extends js.Object {
     */
   var sort: js.UndefOr[Boolean] = js.undefined
 }
-
 object Features {
-  @scala.inline
-  def apply(
-    paginate: js.UndefOr[Boolean] = js.undefined,
-    perPageSelect: js.UndefOr[Boolean] = js.undefined,
-    pushState: js.UndefOr[Boolean] = js.undefined,
-    recordCount: js.UndefOr[Boolean] = js.undefined,
-    search: js.UndefOr[Boolean] = js.undefined,
-    sort: js.UndefOr[Boolean] = js.undefined
-  ): Features = {
+  
+  inline def apply(): Features = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(paginate)) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
-    if (!js.isUndefined(perPageSelect)) __obj.updateDynamic("perPageSelect")(perPageSelect.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushState)) __obj.updateDynamic("pushState")(pushState.asInstanceOf[js.Any])
-    if (!js.isUndefined(recordCount)) __obj.updateDynamic("recordCount")(recordCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[Features]
   }
+  
+  extension [Self <: Features](x: Self) {
+    
+    inline def setPaginate(value: Boolean): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    
+    inline def setPerPageSelect(value: Boolean): Self = StObject.set(x, "perPageSelect", value.asInstanceOf[js.Any])
+    
+    inline def setPerPageSelectUndefined: Self = StObject.set(x, "perPageSelect", js.undefined)
+    
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    
+    inline def setRecordCount(value: Boolean): Self = StObject.set(x, "recordCount", value.asInstanceOf[js.Any])
+    
+    inline def setRecordCountUndefined: Self = StObject.set(x, "recordCount", js.undefined)
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+  }
 }
-

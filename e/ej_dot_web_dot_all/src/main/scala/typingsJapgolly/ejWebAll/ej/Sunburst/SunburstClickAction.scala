@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstClickAction extends js.Object
-
+sealed trait SunburstClickAction extends StObject
 @JSGlobal("ej.Sunburst.SunburstClickAction")
 @js.native
-object SunburstClickAction extends js.Object {
-  //string
-  @js.native
-  sealed trait None extends SunburstClickAction
+object SunburstClickAction extends StObject {
   
   //string
   @js.native
-  sealed trait ToggleSegmentSelection extends SunburstClickAction
+  sealed trait None
+    extends StObject
+       with SunburstClickAction
   
   //string
   @js.native
-  sealed trait ToggleSegmentVisibility extends SunburstClickAction
+  sealed trait ToggleSegmentSelection
+    extends StObject
+       with SunburstClickAction
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstClickAction with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 2 */ @js.native
-  object ToggleSegmentSelection extends TopLevel[ToggleSegmentSelection with Double]
-  
-  /* 1 */ @js.native
-  object ToggleSegmentVisibility extends TopLevel[ToggleSegmentVisibility with Double]
-  
+  //string
+  @js.native
+  sealed trait ToggleSegmentVisibility
+    extends StObject
+       with SunburstClickAction
 }
-

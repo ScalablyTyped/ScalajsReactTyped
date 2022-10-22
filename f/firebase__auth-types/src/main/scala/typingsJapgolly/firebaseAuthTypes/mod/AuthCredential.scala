@@ -1,22 +1,26 @@
 package typingsJapgolly.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@firebase/auth-types", "AuthCredential")
+/* note: abstract class */ @JSImport("@firebase/auth-types", "AuthCredential")
 @js.native
-abstract class AuthCredential () extends js.Object {
+open class AuthCredential () extends StObject {
+  
   var providerId: String = js.native
+  
   var signInMethod: String = js.native
+  
   def toJSON(): js.Object = js.native
 }
-
 /* static members */
-@JSImport("@firebase/auth-types", "AuthCredential")
-@js.native
-object AuthCredential extends js.Object {
-  def fromJSON(json: String): AuthCredential | Null = js.native
-  def fromJSON(json: js.Object): AuthCredential | Null = js.native
+object AuthCredential {
+  
+  @JSImport("@firebase/auth-types", "AuthCredential")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(json: String): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
+  inline def fromJSON(json: js.Object): AuthCredential | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[AuthCredential | Null]
 }
-

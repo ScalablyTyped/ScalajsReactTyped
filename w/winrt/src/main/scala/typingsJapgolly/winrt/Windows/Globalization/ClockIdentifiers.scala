@@ -1,18 +1,7 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Globalization.ClockIdentifiers")
-@js.native
-class ClockIdentifiers () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Globalization.ClockIdentifiers")
-@js.native
-object ClockIdentifiers extends js.Object {
-  var twelveHour: String = js.native
-  var twentyFourHour: String = js.native
-}
-
+trait ClockIdentifiers extends StObject

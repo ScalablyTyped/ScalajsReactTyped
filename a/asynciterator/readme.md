@@ -1,7 +1,7 @@
 
 # Scala.js typings for asynciterator
 
-Typings are for version 1.1
+Typings are for version 3.7.1
 
 ## Library description:
 An asynchronous iterator library for advanced object pipelines.
@@ -10,10 +10,10 @@ An asynchronous iterator library for advanced object pipelines.
 | ------------------ | :-------------: |
 | Full name          | asynciterator |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 32 |
-| # downloads        | 18126 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 24209.666666666668 |
+| # stars            | 42.0 |
 
 ## Links
 - [Homepage](https://github.com/RubenVerborgh/AsyncIterator#readme)
@@ -24,7 +24,7 @@ An asynchronous iterator library for advanced object pipelines.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

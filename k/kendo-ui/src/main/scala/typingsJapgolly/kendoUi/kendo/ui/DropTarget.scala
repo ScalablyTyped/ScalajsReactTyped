@@ -1,23 +1,14 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.DropTarget")
 @js.native
-class DropTarget protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DropTargetOptions) = this()
+trait DropTarget
+  extends StObject
+     with Widget {
+  
   @JSName("options")
   var options_DropTarget: DropTargetOptions = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.DropTarget")
-@js.native
-object DropTarget extends js.Object {
-  def destroyGroup(groupName: String): Unit = js.native
-}
-

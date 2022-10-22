@@ -1,20 +1,25 @@
 package typingsJapgolly.sparkpost.mod
 
-import typingsJapgolly.sparkpost.AnonHref
+import typingsJapgolly.sparkpost.anon.Href
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebhookLinks extends js.Object {
-  var links: js.Array[AnonHref]
-}
-
-object WebhookLinks {
-  @scala.inline
-  def apply(links: js.Array[AnonHref]): WebhookLinks = {
-    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
+trait WebhookLinks extends StObject {
   
+  var links: js.Array[Href]
+}
+object WebhookLinks {
+  
+  inline def apply(links: js.Array[Href]): WebhookLinks = {
+    val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebhookLinks]
   }
+  
+  extension [Self <: WebhookLinks](x: Self) {
+    
+    inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    
+    inline def setLinksVarargs(value: Href*): Self = StObject.set(x, "links", js.Array(value*))
+  }
 }
-

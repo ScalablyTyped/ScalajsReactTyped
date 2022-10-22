@@ -1,23 +1,36 @@
 package typingsJapgolly.nvd3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SankeyNodeStyleOptions extends js.Object {
-  var fillColor: js.UndefOr[js.Any] = js.undefined
-  var strokeColor: js.UndefOr[js.Any] = js.undefined
-  var title: js.UndefOr[js.Any] = js.undefined
+trait SankeyNodeStyleOptions extends StObject {
+  
+  var fillColor: js.UndefOr[Any] = js.undefined
+  
+  var strokeColor: js.UndefOr[Any] = js.undefined
+  
+  var title: js.UndefOr[Any] = js.undefined
 }
-
 object SankeyNodeStyleOptions {
-  @scala.inline
-  def apply(fillColor: js.Any = null, strokeColor: js.Any = null, title: js.Any = null): SankeyNodeStyleOptions = {
+  
+  inline def apply(): SankeyNodeStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[SankeyNodeStyleOptions]
   }
+  
+  extension [Self <: SankeyNodeStyleOptions](x: Self) {
+    
+    inline def setFillColor(value: Any): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setStrokeColor(value: Any): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    
+    inline def setTitle(value: Any): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

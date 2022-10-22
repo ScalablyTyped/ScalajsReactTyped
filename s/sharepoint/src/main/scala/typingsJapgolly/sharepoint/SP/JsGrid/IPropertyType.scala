@@ -1,33 +1,38 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.sharepoint.AnonDataValue
+import typingsJapgolly.sharepoint.anon.DataValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IPropertyType extends js.Object {
-  var ID: String
+trait IPropertyType extends StObject {
+  
   def BeginValidateNormalizeConvert(
     recordKey: Double,
     fieldKey: String,
-    newValue: js.Any,
+    newValue: Any,
     bIsLocalized: Boolean,
-    fnCallback: js.Function1[/* args */ AnonDataValue, Unit],
-    fnError: js.Any
+    fnCallback: js.Function1[/* args */ DataValue, Unit],
+    fnError: Any
   ): Unit
+  
+  var ID: String
 }
-
 object IPropertyType {
-  @scala.inline
-  def apply(
-    BeginValidateNormalizeConvert: (Double, String, js.Any, Boolean, js.Function1[/* args */ AnonDataValue, Unit], js.Any) => Callback,
+  
+  inline def apply(
+    BeginValidateNormalizeConvert: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Callback,
     ID: String
   ): IPropertyType = {
-    val __obj = js.Dynamic.literal(ID = ID.asInstanceOf[js.Any])
-    __obj.updateDynamic("BeginValidateNormalizeConvert")(js.Any.fromFunction6((t0: scala.Double, t1: java.lang.String, t2: js.Any, t3: scala.Boolean, t4: js.Function1[/* args */ typingsJapgolly.sharepoint.AnonDataValue, scala.Unit], t5: js.Any) => BeginValidateNormalizeConvert(t0, t1, t2, t3, t4, t5).runNow()))
+    val __obj = js.Dynamic.literal(BeginValidateNormalizeConvert = js.Any.fromFunction6((t0: Double, t1: String, t2: Any, t3: Boolean, t4: js.Function1[/* args */ DataValue, Unit], t5: Any) => (BeginValidateNormalizeConvert(t0, t1, t2, t3, t4, t5)).runNow()), ID = ID.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPropertyType]
   }
+  
+  extension [Self <: IPropertyType](x: Self) {
+    
+    inline def setBeginValidateNormalizeConvert(value: (Double, String, Any, Boolean, js.Function1[/* args */ DataValue, Unit], Any) => Callback): Self = StObject.set(x, "BeginValidateNormalizeConvert", js.Any.fromFunction6((t0: Double, t1: String, t2: Any, t3: Boolean, t4: js.Function1[/* args */ DataValue, Unit], t5: Any) => (value(t0, t1, t2, t3, t4, t5)).runNow()))
+    
+    inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+  }
 }
-

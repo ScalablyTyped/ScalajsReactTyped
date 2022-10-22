@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 上传任务事件类型
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
   */
-trait PlusUploaderUploadEvent extends js.Object {
+trait PlusUploaderUploadEvent extends StObject {
+  
   /**
     * 上传任务状态变化事件
     * 当上传任务状态发生变化时触发此事件，事件原型参考UploadStateChangedCallback。
@@ -18,13 +19,17 @@ trait PlusUploaderUploadEvent extends js.Object {
     */
   var statechanged: js.UndefOr[String] = js.undefined
 }
-
 object PlusUploaderUploadEvent {
-  @scala.inline
-  def apply(statechanged: String = null): PlusUploaderUploadEvent = {
+  
+  inline def apply(): PlusUploaderUploadEvent = {
     val __obj = js.Dynamic.literal()
-    if (statechanged != null) __obj.updateDynamic("statechanged")(statechanged.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusUploaderUploadEvent]
   }
+  
+  extension [Self <: PlusUploaderUploadEvent](x: Self) {
+    
+    inline def setStatechanged(value: String): Self = StObject.set(x, "statechanged", value.asInstanceOf[js.Any])
+    
+    inline def setStatechangedUndefined: Self = StObject.set(x, "statechanged", js.undefined)
+  }
 }
-

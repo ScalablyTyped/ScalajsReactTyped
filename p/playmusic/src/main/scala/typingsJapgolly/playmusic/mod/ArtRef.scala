@@ -1,19 +1,24 @@
 package typingsJapgolly.playmusic.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArtRef extends js.Object {
+trait ArtRef extends StObject {
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object ArtRef {
-  @scala.inline
-  def apply(url: String = null): ArtRef = {
+  
+  inline def apply(): ArtRef = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtRef]
   }
+  
+  extension [Self <: ArtRef](x: Self) {
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

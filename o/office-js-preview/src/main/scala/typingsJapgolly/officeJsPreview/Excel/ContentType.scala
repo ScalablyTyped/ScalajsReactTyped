@@ -1,42 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContentType extends js.Object
-
+sealed trait ContentType extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.10]
   */
 @JSGlobal("Excel.ContentType")
 @js.native
-object ContentType extends js.Object {
+object ContentType extends StObject {
+  
   /**
-    *
     * Comment content containing mentions.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait mention extends ContentType
+  sealed trait mention
+    extends StObject
+       with ContentType
   
   /**
-    *
-    * Indicates plain format type of the comment content.
-    *
+    * Indicates a plain format type for the comment content.
+    * @remarks
+    * [Api set: ExcelApi 1.10]
     */
   @js.native
-  sealed trait plain extends ContentType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ContentType with String] = js.native
-  /* "Mention" */ @js.native
-  object mention extends TopLevel[mention with String]
-  
-  /* "Plain" */ @js.native
-  object plain extends TopLevel[plain with String]
-  
+  sealed trait plain
+    extends StObject
+       with ContentType
 }
-

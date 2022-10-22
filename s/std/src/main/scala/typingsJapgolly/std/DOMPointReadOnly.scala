@@ -1,34 +1,28 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
-import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DOMPointReadOnly extends js.Object {
-  val w: Double = js.native
-  val x: Double = js.native
-  val y: Double = js.native
-  val z: Double = js.native
+trait DOMPointReadOnly extends StObject {
+  
+  /* standard dom */
   def matrixTransform(): DOMPoint = js.native
   def matrixTransform(matrix: DOMMatrixInit): DOMPoint = js.native
-  def toJSON(): js.Any = js.native
+  
+  /* standard dom */
+  def toJSON(): Any = js.native
+  
+  /* standard dom */
+  val w: Double = js.native
+  
+  /* standard dom */
+  val x: Double = js.native
+  
+  /* standard dom */
+  val y: Double = js.native
+  
+  /* standard dom */
+  val z: Double = js.native
 }
-
-@JSGlobal("DOMPointReadOnly")
-@js.native
-object DOMPointReadOnly
-  extends Instantiable0[DOMPointReadOnly]
-     with Instantiable1[/* x */ Double, DOMPointReadOnly]
-     with Instantiable2[/* x */ Double, /* y */ Double, DOMPointReadOnly]
-     with Instantiable3[/* x */ Double, /* y */ Double, /* z */ Double, DOMPointReadOnly]
-     with Instantiable4[/* x */ Double, /* y */ Double, /* z */ Double, /* w */ Double, DOMPointReadOnly] {
-  def fromPoint(): DOMPointReadOnly = js.native
-  def fromPoint(other: DOMPointInit): DOMPointReadOnly = js.native
-}
-

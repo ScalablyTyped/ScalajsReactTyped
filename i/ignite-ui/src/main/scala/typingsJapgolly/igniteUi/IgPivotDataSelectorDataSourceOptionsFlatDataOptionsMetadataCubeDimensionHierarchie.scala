@@ -1,62 +1,74 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
-  extends /**
-	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * A caption for the hierarchy.
-  	 */
+    * A caption for the hierarchy.
+    */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The path to be used when displaying the hierarchy in the user interface.
-  	 * Nested folders are indicated by a backslash (\).
-  	 * The folder hierarchy will appear under parent dimension node.
-  	 */
+    * The path to be used when displaying the hierarchy in the user interface.
+    * Nested folders are indicated by a backslash (\).
+    * The folder hierarchy will appear under parent dimension node.
+    */
   var displayFolder: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * An array of level metadata objects.
-  	 */
+    * An array of level metadata objects.
+    */
   var levels: js.UndefOr[
     js.Array[
       IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
     ]
   ] = js.undefined
+  
   /**
-  	 * Optional="false" A name for the hierarchy.
-  	 * The unique name of the hierarchy is formed using the following pattern:
-  	 * [<parentDimension.name>].[<hierarchyMetadata.name>]
-  	 */
+    * Optional="false" A name for the hierarchy.
+    * The unique name of the hierarchy is formed using the following pattern:
+    * [<parentDimension.name>].[<hierarchyMetadata.name>]
+    */
   var name: js.UndefOr[String] = js.undefined
 }
-
 object IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    caption: String = null,
-    displayFolder: String = null,
-    levels: js.Array[
-      IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
-    ] = null,
-    name: String = null
-  ): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie = {
+  
+  inline def apply(): IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder.asInstanceOf[js.Any])
-    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]
   }
+  
+  extension [Self <: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
+    
+    inline def setLevels(
+      value: js.Array[
+          IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel
+        ]
+    ): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    
+    inline def setLevelsVarargs(value: IgPivotDataSelectorDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

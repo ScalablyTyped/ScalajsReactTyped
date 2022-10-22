@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "detox" : "19.12.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "detox" : "19.12.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,36 +1,44 @@
 package typingsJapgolly.ol
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ol/MapEventType", JSImport.Namespace)
-@js.native
-object mapEventTypeMod extends js.Object {
-  @js.native
-  sealed trait MapEventType extends js.Object
+object mapEventTypeMod {
   
+  @JSImport("ol/MapEventType", JSImport.Default)
   @js.native
-  object MapEventType extends js.Object {
-    @js.native
-    sealed trait MOVEEND extends MapEventType
+  object default extends StObject {
     
-    @js.native
-    sealed trait MOVESTART extends MapEventType
-    
-    @js.native
-    sealed trait POSTRENDER extends MapEventType
-    
-  }
-  
-  @js.native
-  object default extends js.Object {
-    /* "moveend" */ val MOVEEND: typingsJapgolly.ol.mapEventTypeMod.MapEventType.MOVEEND with String = js.native
-    /* "movestart" */ val MOVESTART: typingsJapgolly.ol.mapEventTypeMod.MapEventType.MOVESTART with String = js.native
-    /* "postrender" */ val POSTRENDER: typingsJapgolly.ol.mapEventTypeMod.MapEventType.POSTRENDER with String = js.native
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[MapEventType with String] = js.native
+    def apply(value: String): js.UndefOr[MapEventType & String] = js.native
+    
+    /* "moveend" */ val MOVEEND: typingsJapgolly.ol.mapEventTypeMod.MapEventType.MOVEEND & String = js.native
+    
+    /* "movestart" */ val MOVESTART: typingsJapgolly.ol.mapEventTypeMod.MapEventType.MOVESTART & String = js.native
+    
+    /* "postrender" */ val POSTRENDER: typingsJapgolly.ol.mapEventTypeMod.MapEventType.POSTRENDER & String = js.native
   }
   
+  @js.native
+  sealed trait MapEventType extends StObject
+  @JSImport("ol/MapEventType", "MapEventType")
+  @js.native
+  object MapEventType extends StObject {
+    
+    @js.native
+    sealed trait MOVEEND
+      extends StObject
+         with MapEventType
+    
+    @js.native
+    sealed trait MOVESTART
+      extends StObject
+         with MapEventType
+    
+    @js.native
+    sealed trait POSTRENDER
+      extends StObject
+         with MapEventType
+  }
 }
-

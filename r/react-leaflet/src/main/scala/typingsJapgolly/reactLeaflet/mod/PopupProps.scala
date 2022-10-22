@@ -1,78 +1,65 @@
 package typingsJapgolly.reactLeaflet.mod
 
 import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import typingsJapgolly.leaflet.mod.LatLngExpression
-import typingsJapgolly.leaflet.mod.PointExpression
+import typingsJapgolly.leaflet.mod.PopupOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.leaflet.mod.DivOverlayOptions because Already inherited
-- typingsJapgolly.leaflet.mod.PopupOptions because var conflicts: className, offset, pane, zoomAnimation. Inlined autoClose, autoPan, autoPanPadding, autoPanPaddingBottomRight, autoPanPaddingTopLeft, closeButton, closeOnClick, closeOnEscapeKey, keepInView, maxHeight, maxWidth, minWidth */ trait PopupProps extends DivOverlayProps {
-  var autoClose: js.UndefOr[Boolean] = js.undefined
-  var autoPan: js.UndefOr[Boolean] = js.undefined
-  var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
-  var autoPanPaddingBottomRight: js.UndefOr[PointExpression] = js.undefined
-  var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.undefined
-  var closeButton: js.UndefOr[Boolean] = js.undefined
-  var closeOnClick: js.UndefOr[Boolean] = js.undefined
-  var closeOnEscapeKey: js.UndefOr[Boolean] = js.undefined
-  var keepInView: js.UndefOr[Boolean] = js.undefined
-  var maxHeight: js.UndefOr[Double] = js.undefined
-  var maxWidth: js.UndefOr[Double] = js.undefined
-  var minWidth: js.UndefOr[Double] = js.undefined
+- typingsJapgolly.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
+- typingsJapgolly.reactLeaflet.mod.DivOverlayProps because var conflicts: className, content, interactive, offset, pane. Inlined children, onClose, onOpen */ trait PopupProps
+  extends StObject
+     with PopupOptions {
+  
+  var children: Children
+  
+  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
+  var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var position: js.UndefOr[LatLngExpression] = js.undefined
 }
-
 object PopupProps {
-  @scala.inline
-  def apply(
-    autoClose: js.UndefOr[Boolean] = js.undefined,
-    autoPan: js.UndefOr[Boolean] = js.undefined,
-    autoPanPadding: PointExpression = null,
-    autoPanPaddingBottomRight: PointExpression = null,
-    autoPanPaddingTopLeft: PointExpression = null,
-    children: Children = null,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    closeOnEscapeKey: js.UndefOr[Boolean] = js.undefined,
-    keepInView: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minWidth: Int | Double = null,
-    offset: PointExpression = null,
-    onClose: js.UndefOr[Callback] = js.undefined,
-    onOpen: js.UndefOr[Callback] = js.undefined,
-    pane: String = null,
-    position: LatLngExpression = null,
-    zoomAnimation: js.UndefOr[Boolean] = js.undefined
-  ): PopupProps = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
-    if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])
-    if (autoPanPaddingBottomRight != null) __obj.updateDynamic("autoPanPaddingBottomRight")(autoPanPaddingBottomRight.asInstanceOf[js.Any])
-    if (autoPanPaddingTopLeft != null) __obj.updateDynamic("autoPanPaddingTopLeft")(autoPanPaddingTopLeft.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEscapeKey)) __obj.updateDynamic("closeOnEscapeKey")(closeOnEscapeKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepInView)) __obj.updateDynamic("keepInView")(keepInView.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onOpen.foreach(p => __obj.updateDynamic("onOpen")(p.toJsFn))
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation.asInstanceOf[js.Any])
+  
+  inline def apply(): PopupProps = {
+    val __obj = js.Dynamic.literal(children = null)
     __obj.asInstanceOf[PopupProps]
   }
+  
+  extension [Self <: PopupProps](x: Self) {
+    
+    inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenVarargs(value: (Element | Empty | JsNumber | Node | String)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setLeaflet(value: LeafletContext): Self = StObject.set(x, "leaflet", value.asInstanceOf[js.Any])
+    
+    inline def setLeafletUndefined: Self = StObject.set(x, "leaflet", js.undefined)
+    
+    inline def setOnClose(value: Callback): Self = StObject.set(x, "onClose", value.toJsFn)
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnOpen(value: Callback): Self = StObject.set(x, "onOpen", value.toJsFn)
+    
+    inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+    
+    inline def setPosition(value: LatLngExpression): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

@@ -1,47 +1,68 @@
 package typingsJapgolly.fabric.fabricImplMod
 
+import typingsJapgolly.fabric.anon.Offset
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGradientOptions extends js.Object {
+trait IGradientOptions extends StObject {
+  
   /**
-  	 * Color stops object eg. {0:string; 1:string;
-  	 */
+    * Color stops object eg. {0:string; 1:string;
+    */
   var colorStops: js.UndefOr[IGradientOptionsColorStops] = js.undefined
+  
   var coords: js.UndefOr[IGradientOptionsCoords] = js.undefined
-  var gradientTransform: js.UndefOr[js.Any] = js.undefined
+  
+  var gradientTransform: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
-  	 * @type Number
-  	 */
+    * Horizontal offset for aligning gradients coming from SVG when outside pathgroups
+    * @type Number
+    */
   var offsetX: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Vertical offset for aligning gradients coming from SVG when outside pathgroups
-  	 * @type Number
-  	 */
+    * Vertical offset for aligning gradients coming from SVG when outside pathgroups
+    * @type Number
+    */
   var offsetY: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object IGradientOptions {
-  @scala.inline
-  def apply(
-    colorStops: IGradientOptionsColorStops = null,
-    coords: IGradientOptionsCoords = null,
-    gradientTransform: js.Any = null,
-    offsetX: Int | Double = null,
-    offsetY: Int | Double = null,
-    `type`: String = null
-  ): IGradientOptions = {
+  
+  inline def apply(): IGradientOptions = {
     val __obj = js.Dynamic.literal()
-    if (colorStops != null) __obj.updateDynamic("colorStops")(colorStops.asInstanceOf[js.Any])
-    if (coords != null) __obj.updateDynamic("coords")(coords.asInstanceOf[js.Any])
-    if (gradientTransform != null) __obj.updateDynamic("gradientTransform")(gradientTransform.asInstanceOf[js.Any])
-    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
-    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGradientOptions]
   }
+  
+  extension [Self <: IGradientOptions](x: Self) {
+    
+    inline def setColorStops(value: IGradientOptionsColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
+    
+    inline def setColorStopsUndefined: Self = StObject.set(x, "colorStops", js.undefined)
+    
+    inline def setColorStopsVarargs(value: Offset*): Self = StObject.set(x, "colorStops", js.Array(value*))
+    
+    inline def setCoords(value: IGradientOptionsCoords): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+    
+    inline def setCoordsUndefined: Self = StObject.set(x, "coords", js.undefined)
+    
+    inline def setGradientTransform(value: Any): Self = StObject.set(x, "gradientTransform", value.asInstanceOf[js.Any])
+    
+    inline def setGradientTransformUndefined: Self = StObject.set(x, "gradientTransform", js.undefined)
+    
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

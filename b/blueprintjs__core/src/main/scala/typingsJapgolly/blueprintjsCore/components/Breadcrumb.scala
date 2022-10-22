@@ -1,65 +1,65 @@
 package typingsJapgolly.blueprintjsCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps
-import typingsJapgolly.blueprintjsCore.intentMod.Intent
-import typingsJapgolly.blueprintjsCore.propsMod.MaybeElement
-import typingsJapgolly.blueprintjsIcons.iconNameMod.IconName
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typingsJapgolly.blueprintjsCore.libEsmCommonPropsMod.MaybeElement
+import typingsJapgolly.blueprintjsCore.libEsmComponentsBreadcrumbsBreadcrumbMod.IBreadcrumbProps
+import typingsJapgolly.blueprintjsIcons.libEsmGenerated16pxBlueprintIcons16Mod.BlueprintIcons16Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Breadcrumb {
-  def apply(
-    className: String = null,
-    current: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    href: String = null,
-    icon: IconName | MaybeElement = null,
-    intent: Intent = null,
-    onClick: /* event */ ReactMouseEventFrom[HTMLElement] => Callback = null,
-    target: String = null,
-    text: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IBreadcrumbProps, 
-    MountedWithRawType[IBreadcrumbProps, js.Object, RawMounted[IBreadcrumbProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0).runNow()))
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.breadcrumbMod.IBreadcrumbProps])(children: _*)
-  }
   @JSImport("@blueprintjs/core", "Breadcrumb")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def current(value: Boolean): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: BlueprintIcons16Id | MaybeElement): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconTitle(value: String): this.type = set("iconTitle", value.asInstanceOf[js.Any])
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def intent(value: Intent): this.type = set("intent", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* event */ ReactMouseEventFrom[HTMLElement] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[HTMLElement]) => value(t0).runNow()))
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def text(value: VdomNode): this.type = set("text", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textNull: this.type = set("text", null)
+    
+    inline def textVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("text", js.Array(value*))
+    
+    inline def textVdomElement(value: VdomElement): this.type = set("text", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Breadcrumb.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IBreadcrumbProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

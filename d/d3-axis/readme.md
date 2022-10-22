@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3-axis
 
-Typings are for version 1.0
+Typings are for version 3.0
 
 ## Library description:
 Displays automatic reference lines for scales.
@@ -11,9 +11,9 @@ Displays automatic reference lines for scales.
 | Full name          | d3-axis |
 | Keywords           | d3, d3-module, axis, scale, visualization |
 | # releases         | 5 |
-| # dependents       | 179 |
-| # downloads        | 21002013 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6348397.0 |
+| # stars            | 183.0 |
 
 ## Links
 - [Homepage](https://d3js.org/d3-axis/)

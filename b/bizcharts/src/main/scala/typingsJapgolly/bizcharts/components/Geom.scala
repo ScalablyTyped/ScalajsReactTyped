@@ -1,70 +1,91 @@
 package typingsJapgolly.bizcharts.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antvG2.mod.Styles.line
-import typingsJapgolly.bizcharts.AnonDodgeBy
-import typingsJapgolly.bizcharts.AnonName
-import typingsJapgolly.bizcharts.mod.GeomProps
-import typingsJapgolly.bizcharts.mod.GeomType
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antvG2.libInterfaceMod.AdjustOption
+import typingsJapgolly.antvG2.libInterfaceMod.AnimateOption
+import typingsJapgolly.antvG2.libInterfaceMod.ColorAttrCallback
+import typingsJapgolly.antvG2.libInterfaceMod.GeometryLabelCfg
+import typingsJapgolly.antvG2.libInterfaceMod.GeometryTooltipOption
+import typingsJapgolly.antvG2.libInterfaceMod.LabelCallback
+import typingsJapgolly.antvG2.libInterfaceMod.LabelOption
+import typingsJapgolly.antvG2.libInterfaceMod.LooseObject
+import typingsJapgolly.antvG2.libInterfaceMod.ShapeAttrCallback
+import typingsJapgolly.antvG2.libInterfaceMod.SizeAttrCallback
+import typingsJapgolly.antvG2.libInterfaceMod.StateOption
+import typingsJapgolly.antvG2.libInterfaceMod.StyleCallback
+import typingsJapgolly.antvG2.libInterfaceMod.StyleOption
+import typingsJapgolly.antvG2.libInterfaceMod.TooltipCallback
+import typingsJapgolly.bizcharts.bizchartsBooleans.`false`
+import typingsJapgolly.bizcharts.bizchartsStrings.`line-advance`
+import typingsJapgolly.bizcharts.bizchartsStrings.area
+import typingsJapgolly.bizcharts.bizchartsStrings.dodge
+import typingsJapgolly.bizcharts.bizchartsStrings.edge
+import typingsJapgolly.bizcharts.bizchartsStrings.heatmap
+import typingsJapgolly.bizcharts.bizchartsStrings.interval
+import typingsJapgolly.bizcharts.bizchartsStrings.jitter
+import typingsJapgolly.bizcharts.bizchartsStrings.line
+import typingsJapgolly.bizcharts.bizchartsStrings.point
+import typingsJapgolly.bizcharts.bizchartsStrings.polygon
+import typingsJapgolly.bizcharts.bizchartsStrings.stack
+import typingsJapgolly.bizcharts.bizchartsStrings.symmetric
+import typingsJapgolly.bizcharts.libGeometryMod.IGemo
+import typingsJapgolly.bizcharts.libInterfaceMod.ColorString
+import typingsJapgolly.bizcharts.libInterfaceMod.FieldString
+import typingsJapgolly.bizcharts.libInterfaceMod.ShapeString
+import typingsJapgolly.bizcharts.libInterfaceMod.SizeRange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Geom {
-  def apply(
-    active: js.UndefOr[Boolean] = js.undefined,
-    adjust: String | (js.Array[AnonDodgeBy | String]) = null,
-    animate: js.Any = null,
-    color: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String]) | String]) = null,
-    line: line | Boolean = null,
-    opacity: String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[_], Double]]) = null,
-    position: String = null,
-    select: Boolean | (js.Tuple2[Boolean, _]) = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    shape: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String])]) = null,
-    size: Double | String | (js.Tuple2[
-      String, 
-      (js.Function1[/* d */ js.UndefOr[_], Double]) | (js.Tuple2[Double, Double])
-    ]) = null,
-    style: js.Object | (js.Tuple2[String, js.Object]) = null,
-    tooltip: Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ _, AnonName]]) = null,
-    `type`: GeomType = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[GeomProps, typingsJapgolly.bizcharts.mod.Geom, Unit, GeomProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (adjust != null) __obj.updateDynamic("adjust")(adjust.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.bizcharts.mod.GeomProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.bizcharts.mod.Geom](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.bizcharts.mod.GeomProps])(children: _*)
+  inline def apply(
+    position: String,
+    `type`: area | edge | heatmap | interval | line | point | polygon | `line-advance`
+  ): Builder = {
+    val __props = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
+    __props.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IGemo]))
   }
+  
   @JSImport("bizcharts", "Geom")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def adjust(value: dodge | stack | symmetric | jitter | String | AdjustOption | js.Array[AdjustOption]): this.type = set("adjust", value.asInstanceOf[js.Any])
+    
+    inline def adjustVarargs(value: AdjustOption*): this.type = set("adjust", js.Array(value*))
+    
+    inline def animate(value: AnimateOption | Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def color(
+      value: ColorString | FieldString | (js.Tuple2[FieldString, ColorString | js.Array[ColorString] | ColorAttrCallback])
+    ): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def label(
+      value: LabelOption | `false` | FieldString | (js.Tuple2[FieldString, GeometryLabelCfg | LabelCallback]) | (js.Tuple3[FieldString, LabelCallback, GeometryLabelCfg])
+    ): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def setElements(value: /* elements */ js.Array[Element] => js.Object): this.type = set("setElements", js.Any.fromFunction1(value))
+    
+    inline def shape(
+      value: ShapeString | FieldString | (js.Tuple2[ShapeString, js.Array[ShapeString] | ShapeAttrCallback])
+    ): this.type = set("shape", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double | FieldString | (js.Tuple2[FieldString, SizeAttrCallback | SizeRange])): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def state(value: StateOption): this.type = set("state", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleOption | LooseObject | (js.Tuple2[FieldString, StyleCallback])): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: GeometryTooltipOption | Boolean | FieldString | (js.Tuple2[FieldString, TooltipCallback])): this.type = set("tooltip", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IGemo): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

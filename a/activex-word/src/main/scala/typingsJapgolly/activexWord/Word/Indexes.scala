@@ -1,70 +1,211 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Indexes")
 @js.native
-class Indexes protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  var Format: WdIndexFormat = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Indexes_typekey")
-  var WordDotIndexes_typekey: Indexes = js.native
+trait Indexes extends StObject {
+  
   def Add(
     Range: Range,
-    HeadingSeparator: js.UndefOr[js.Any],
-    RightAlignPageNumbers: js.UndefOr[js.Any],
-    Type: js.UndefOr[js.Any],
-    NumberOfColumns: js.UndefOr[js.Any],
-    AccentedLetters: js.UndefOr[js.Any],
-    SortBy: js.UndefOr[js.Any],
-    IndexLanguage: js.UndefOr[js.Any]
+    HeadingSeparator: js.UndefOr[Any],
+    RightAlignPageNumbers: js.UndefOr[Any],
+    Type: js.UndefOr[Any],
+    NumberOfColumns: js.UndefOr[Any],
+    AccentedLetters: js.UndefOr[Any],
+    SortBy: js.UndefOr[Any],
+    IndexLanguage: js.UndefOr[Any]
   ): Index = js.native
+  
   def AddOld(Range: Range): Index = js.native
-  def AddOld(Range: Range, HeadingSeparator: js.Any): Index = js.native
-  def AddOld(Range: Range, HeadingSeparator: js.Any, RightAlignPageNumbers: js.Any): Index = js.native
-  def AddOld(Range: Range, HeadingSeparator: js.Any, RightAlignPageNumbers: js.Any, Type: js.Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Any, Type: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Any, Type: Any, NumberOfColumns: Any): Index = js.native
   def AddOld(
     Range: Range,
-    HeadingSeparator: js.Any,
-    RightAlignPageNumbers: js.Any,
-    Type: js.Any,
-    NumberOfColumns: js.Any
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Any,
+    Type: Any,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
   ): Index = js.native
   def AddOld(
     Range: Range,
-    HeadingSeparator: js.Any,
-    RightAlignPageNumbers: js.Any,
-    Type: js.Any,
-    NumberOfColumns: js.Any,
-    AccentedLetters: js.Any
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Any,
+    Type: Any,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
   ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Any, Type: Unit, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Any,
+    Type: Unit,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Any,
+    Type: Unit,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Unit, Type: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Unit, Type: Any, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Unit,
+    Type: Any,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Unit,
+    Type: Any,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Any, RightAlignPageNumbers: Unit, Type: Unit, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Unit,
+    Type: Unit,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Any,
+    RightAlignPageNumbers: Unit,
+    Type: Unit,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Any, Type: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Any, Type: Any, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Any,
+    Type: Any,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Any,
+    Type: Any,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Any, Type: Unit, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Any,
+    Type: Unit,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Any,
+    Type: Unit,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Unit, Type: Any): Index = js.native
+  def AddOld(Range: Range, HeadingSeparator: Unit, RightAlignPageNumbers: Unit, Type: Any, NumberOfColumns: Any): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Unit,
+    Type: Any,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Unit,
+    Type: Any,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Unit,
+    Type: Unit,
+    NumberOfColumns: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Unit,
+    Type: Unit,
+    NumberOfColumns: Any,
+    AccentedLetters: Any
+  ): Index = js.native
+  def AddOld(
+    Range: Range,
+    HeadingSeparator: Unit,
+    RightAlignPageNumbers: Unit,
+    Type: Unit,
+    NumberOfColumns: Unit,
+    AccentedLetters: Any
+  ): Index = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   def AutoMarkEntries(ConcordanceFileName: String): Unit = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  var Format: WdIndexFormat = js.native
+  
   def Item(Index: Double): Index = js.native
+  
   def MarkAllEntries(
     Range: Range,
-    Entry: js.UndefOr[js.Any],
-    EntryAutoText: js.UndefOr[js.Any],
-    CrossReference: js.UndefOr[js.Any],
-    CrossReferenceAutoText: js.UndefOr[js.Any],
-    BookmarkName: js.UndefOr[js.Any],
-    Bold: js.UndefOr[js.Any],
-    Italic: js.UndefOr[js.Any]
+    Entry: js.UndefOr[Any],
+    EntryAutoText: js.UndefOr[Any],
+    CrossReference: js.UndefOr[Any],
+    CrossReferenceAutoText: js.UndefOr[Any],
+    BookmarkName: js.UndefOr[Any],
+    Bold: js.UndefOr[Any],
+    Italic: js.UndefOr[Any]
   ): Unit = js.native
+  
   def MarkEntry(
     Range: Range,
-    Entry: js.UndefOr[js.Any],
-    EntryAutoText: js.UndefOr[js.Any],
-    CrossReference: js.UndefOr[js.Any],
-    CrossReferenceAutoText: js.UndefOr[js.Any],
-    BookmarkName: js.UndefOr[js.Any],
-    Bold: js.UndefOr[js.Any],
-    Italic: js.UndefOr[js.Any],
-    Reading: js.UndefOr[js.Any]
+    Entry: js.UndefOr[Any],
+    EntryAutoText: js.UndefOr[Any],
+    CrossReference: js.UndefOr[Any],
+    CrossReferenceAutoText: js.UndefOr[Any],
+    BookmarkName: js.UndefOr[Any],
+    Bold: js.UndefOr[Any],
+    Italic: js.UndefOr[Any],
+    Reading: js.UndefOr[Any]
   ): Field = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.Indexes_typekey")
+  var WordDotIndexes_typekey: Indexes = js.native
 }
-

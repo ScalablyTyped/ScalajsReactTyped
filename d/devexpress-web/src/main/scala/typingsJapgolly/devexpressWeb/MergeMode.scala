@@ -1,47 +1,39 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MergeMode extends js.Object
-
+sealed trait MergeMode extends StObject
 /**
   * Lists delimiters that start the new merged range.
   */
 @JSGlobal("MergeMode")
 @js.native
-object MergeMode extends js.Object {
+object MergeMode extends StObject {
+  
   /**
     * Enables you to join rows, which result from a mail merge involving a table with merged fields, into a whole table.
     */
   @js.native
-  sealed trait JoinTables extends MergeMode
+  sealed trait JoinTables
+    extends StObject
+       with MergeMode
   
   /**
     * Specifies that the next merged range starts with a new paragraph.
     */
   @js.native
-  sealed trait NewParagraph extends MergeMode
+  sealed trait NewParagraph
+    extends StObject
+       with MergeMode
   
   /**
     * Specifies that the next merged range starts with a new section. The section break type is obtained from the previous section break or set to the NextPage by default. For headers and footers, it is the only allowed option.
     */
   @js.native
-  sealed trait NewSection extends MergeMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MergeMode with Double] = js.native
-  /* 2 */ @js.native
-  object JoinTables extends TopLevel[JoinTables with Double]
-  
-  /* 0 */ @js.native
-  object NewParagraph extends TopLevel[NewParagraph with Double]
-  
-  /* 1 */ @js.native
-  object NewSection extends TopLevel[NewSection with Double]
-  
+  sealed trait NewSection
+    extends StObject
+       with MergeMode
 }
-

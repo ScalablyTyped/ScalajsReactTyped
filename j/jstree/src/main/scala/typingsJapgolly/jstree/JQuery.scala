@@ -1,11 +1,12 @@
 package typingsJapgolly.jstree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * Create an instance, get an instance or invoke a command on a instance.
     *
@@ -34,8 +35,7 @@ trait JQuery extends js.Object {
     * @return {Mixed}
     */
   def jstree(): JSTree = js.native
-  def jstree(args: js.Any*): js.Any = js.native
+  def jstree(args: Any*): Any = js.native
   def jstree(arg: Boolean): JSTree = js.native
   def jstree(options: JSTreeStaticDefaults): JSTree = js.native
 }
-

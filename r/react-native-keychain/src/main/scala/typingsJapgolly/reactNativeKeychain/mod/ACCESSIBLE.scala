@@ -1,59 +1,51 @@
 package typingsJapgolly.reactNativeKeychain.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ACCESSIBLE extends js.Object
-
+sealed trait ACCESSIBLE extends StObject
 @JSImport("react-native-keychain", "ACCESSIBLE")
 @js.native
-object ACCESSIBLE extends js.Object {
-  @js.native
-  sealed trait AFTER_FIRST_UNLOCK extends ACCESSIBLE
-  
-  @js.native
-  sealed trait AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY extends ACCESSIBLE
-  
-  @js.native
-  sealed trait ALWAYS extends ACCESSIBLE
-  
-  @js.native
-  sealed trait ALWAYS_THIS_DEVICE_ONLY extends ACCESSIBLE
-  
-  @js.native
-  sealed trait WHEN_PASSCODE_SET_THIS_DEVICE_ONLY extends ACCESSIBLE
-  
-  @js.native
-  sealed trait WHEN_UNLOCKED extends ACCESSIBLE
-  
-  @js.native
-  sealed trait WHEN_UNLOCKED_THIS_DEVICE_ONLY extends ACCESSIBLE
+object ACCESSIBLE extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[ACCESSIBLE with String] = js.native
-  /* "AccessibleAfterFirstUnlock" */ @js.native
-  object AFTER_FIRST_UNLOCK extends TopLevel[AFTER_FIRST_UNLOCK with String]
+  def apply(value: String): js.UndefOr[ACCESSIBLE & String] = js.native
   
-  /* "AccessibleAfterFirstUnlockThisDeviceOnly" */ @js.native
-  object AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY extends TopLevel[AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY with String]
+  @js.native
+  sealed trait AFTER_FIRST_UNLOCK
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleAfterFirstUnlock" */ val AFTER_FIRST_UNLOCK: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.AFTER_FIRST_UNLOCK & String = js.native
   
-  /* "AccessibleAlways" */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with String]
+  @js.native
+  sealed trait AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleAfterFirstUnlockThisDeviceOnly" */ val AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.AFTER_FIRST_UNLOCK_THIS_DEVICE_ONLY & String = js.native
   
-  /* "AccessibleAlwaysThisDeviceOnly" */ @js.native
-  object ALWAYS_THIS_DEVICE_ONLY extends TopLevel[ALWAYS_THIS_DEVICE_ONLY with String]
+  @js.native
+  sealed trait ALWAYS
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleAlways" */ val ALWAYS: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.ALWAYS & String = js.native
   
-  /* "AccessibleWhenPasscodeSetThisDeviceOnly" */ @js.native
-  object WHEN_PASSCODE_SET_THIS_DEVICE_ONLY extends TopLevel[WHEN_PASSCODE_SET_THIS_DEVICE_ONLY with String]
+  @js.native
+  sealed trait WHEN_PASSCODE_SET_THIS_DEVICE_ONLY
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleWhenPasscodeSetThisDeviceOnly" */ val WHEN_PASSCODE_SET_THIS_DEVICE_ONLY: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.WHEN_PASSCODE_SET_THIS_DEVICE_ONLY & String = js.native
   
-  /* "AccessibleWhenUnlocked" */ @js.native
-  object WHEN_UNLOCKED extends TopLevel[WHEN_UNLOCKED with String]
+  @js.native
+  sealed trait WHEN_UNLOCKED
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleWhenUnlocked" */ val WHEN_UNLOCKED: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.WHEN_UNLOCKED & String = js.native
   
-  /* "AccessibleWhenUnlockedThisDeviceOnly" */ @js.native
-  object WHEN_UNLOCKED_THIS_DEVICE_ONLY extends TopLevel[WHEN_UNLOCKED_THIS_DEVICE_ONLY with String]
-  
+  @js.native
+  sealed trait WHEN_UNLOCKED_THIS_DEVICE_ONLY
+    extends StObject
+       with ACCESSIBLE
+  /* "AccessibleWhenUnlockedThisDeviceOnly" */ val WHEN_UNLOCKED_THIS_DEVICE_ONLY: typingsJapgolly.reactNativeKeychain.mod.ACCESSIBLE.WHEN_UNLOCKED_THIS_DEVICE_ONLY & String = js.native
 }
-

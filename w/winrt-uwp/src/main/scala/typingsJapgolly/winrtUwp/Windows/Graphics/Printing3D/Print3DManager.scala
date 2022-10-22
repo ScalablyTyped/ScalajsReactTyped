@@ -1,44 +1,28 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing3D
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.EventHandler
-import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import typingsJapgolly.winrtUwp.Windows.Foundation.TypedEventHandler
 import typingsJapgolly.winrtUwp.Windows.WinRTEvent
 import typingsJapgolly.winrtUwp.winrtUwpStrings.taskrequested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates the 3D printing experience. */
-@JSGlobal("Windows.Graphics.Printing3D.Print3DManager")
 @js.native
-abstract class Print3DManager () extends js.Object {
+trait Print3DManager extends StObject {
+  
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_taskrequested(`type`: taskrequested, listener: TypedEventHandler[Print3DManager, Print3DTaskRequestedEventArgs]): Unit = js.native
+  
+  /** Occurs when a new 3D print job has been created. */
+  def ontaskrequested(ev: Print3DTaskRequestedEventArgs & WinRTEvent[Print3DManager]): Unit = js.native
   /** Occurs when a new 3D print job has been created. */
   @JSName("ontaskrequested")
   var ontaskrequested_Original: TypedEventHandler[Print3DManager, Print3DTaskRequestedEventArgs] = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_taskrequested(`type`: taskrequested, listener: TypedEventHandler[Print3DManager, Print3DTaskRequestedEventArgs]): Unit = js.native
-  /** Occurs when a new 3D print job has been created. */
-  def ontaskrequested(ev: Print3DTaskRequestedEventArgs with WinRTEvent[Print3DManager]): Unit = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_taskrequested(`type`: taskrequested, listener: TypedEventHandler[Print3DManager, Print3DTaskRequestedEventArgs]): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("Windows.Graphics.Printing3D.Print3DManager")
-@js.native
-object Print3DManager extends js.Object {
-  /**
-    * Gets a 3D print manager.
-    * @return The 3D print manager.
-    */
-  def getForCurrentView(): Print3DManager = js.native
-  /**
-    * Programmatically initiates the 3D printing user interface.
-    * @return true if the operation completes successfully; otherwise, false.
-    */
-  def showPrintUIAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
-}
-

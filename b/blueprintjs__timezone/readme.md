@@ -1,7 +1,7 @@
 
 # Scala.js typings for blueprintjs__timezone
 
-Typings are for version 3.6.1
+Typings are for version 4.5.3
 
 ## Library description:
 Components related to timezone selection and UI
@@ -10,10 +10,10 @@ Components related to timezone selection and UI
 | ------------------ | :-------------: |
 | Full name          | @blueprintjs/timezone |
 | Keywords           | palantir, blueprint, react, timezone, time, select |
-| # releases         | 21 |
-| # dependents       | 8 |
-| # downloads        | 92926 |
-| # stars            | 0 |
+| # releases         | 92 |
+| # dependents       | 0.0 |
+| # downloads        | 55601.666666666664 |
+| # stars            | 19330.0 |
 
 ## Links
 - [Homepage](https://github.com/palantir/blueprint#readme)

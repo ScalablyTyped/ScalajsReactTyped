@@ -1,15 +1,18 @@
 package typingsJapgolly.mysql.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.mysql.SecureContextOptionsrejec
+import typingsJapgolly.mysql.anon.SecureContextOptionsrejec
+import typingsJapgolly.mysql.anon.UntypedFieldInfotypestrin
 import typingsJapgolly.mysql.mysqlStrings.DATE
 import typingsJapgolly.mysql.mysqlStrings.DATETIME
 import typingsJapgolly.mysql.mysqlStrings.TIMESTAMP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionConfig extends ConnectionOptions {
+trait ConnectionConfig
+  extends StObject
+     with ConnectionOptions {
+  
   /**
     * Enabling both supportBigNumbers and bigNumberStrings forces big numbers (BIGINT and DECIMAL columns) to be
     * always returned as JavaScript String objects (Default: false). Enabling supportBigNumbers but leaving
@@ -19,15 +22,18 @@ trait ConnectionConfig extends ConnectionOptions {
     * This option is ignored if supportBigNumbers is disabled.
     */
   var bigNumberStrings: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10 seconds)
     */
   var connectTimeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * Force date types (TIMESTAMP, DATETIME, DATE) to be returned as strings rather then inflated into JavaScript
     * Date objects. Can be true/false or an array of type names to keep as strings. (Default: false)
     */
   var dateStrings: js.UndefOr[Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])] = js.undefined
+  
   /**
     * This will print all incoming and outgoing packets on stdout.
     * You can also restrict debugging to packet types by passing an array of types (strings) to debug;
@@ -35,60 +41,74 @@ trait ConnectionConfig extends ConnectionOptions {
     * (Default: false)
     */
   var debug: js.UndefOr[Boolean | (js.Array[String | Types])] = js.undefined
+  
   /**
     * List of connection flags to use other than the default ones. It is also possible to blacklist default ones
     */
   var flags: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /**
     * The hostname of the database you are connecting to. (Default: localhost)
     */
   var host: js.UndefOr[String] = js.undefined
+  
   /**
     * Allow connecting to MySQL instances that ask for the old (insecure) authentication method. (Default: false)
     */
   var insecureAuth: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The source IP address to use for TCP connection
     */
   var localAddress: js.UndefOr[String] = js.undefined
+  
   /**
     * Allow multiple mysql statements per query. Be careful with this, it exposes you to SQL injection attacks. (Default: false)
     */
   var multipleStatements: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The port number to connect to. (Default: 3306)
     */
   var port: js.UndefOr[Double] = js.undefined
+  
   /**
     * A custom query format function
     */
-  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ js.Any, String]] = js.undefined
+  var queryFormat: js.UndefOr[js.Function2[/* query */ String, /* values */ Any, String]] = js.undefined
+  
   /**
     * The path to a unix domain socket to connect to. When used host and port are ignored
     */
   var socketPath: js.UndefOr[String] = js.undefined
+  
   /**
     * object with ssl parameters or a string containing name of ssl profile
     */
   var ssl: js.UndefOr[String | SecureContextOptionsrejec] = js.undefined
+  
   /**
     * Stringify objects instead of converting to values. (Default: 'false')
     */
   var stringifyObjects: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * When dealing with big numbers (BIGINT and DECIMAL columns) in the database, you should enable this option
     * (Default: false)
     */
   var supportBigNumbers: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The timezone used to store local dates. (Default: 'local')
     */
   var timezone: js.UndefOr[String] = js.undefined
+  
   /**
     * Generates stack traces on errors to include call site of library entrance ("long stack traces"). Slight
     * performance penalty for most calls. (Default: true)
     */
   var trace: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Determines if column values should be converted to native JavaScript types. It is not recommended (and may go away / change in the future)
     * to disable type casting, but you can currently do so on either the connection or query level. (Default: true)
@@ -111,59 +131,93 @@ trait ConnectionConfig extends ConnectionOptions {
     */
   var typeCast: js.UndefOr[TypeCast] = js.undefined
 }
-
 object ConnectionConfig {
-  @scala.inline
-  def apply(
-    bigNumberStrings: js.UndefOr[Boolean] = js.undefined,
-    charset: String = null,
-    connectTimeout: Int | Double = null,
-    database: String = null,
-    dateStrings: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE]) = null,
-    debug: Boolean | (js.Array[String | Types]) = null,
-    flags: String | js.Array[String] = null,
-    host: String = null,
-    insecureAuth: js.UndefOr[Boolean] = js.undefined,
-    localAddress: String = null,
-    multipleStatements: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    port: Int | Double = null,
-    queryFormat: (/* query */ String, /* values */ js.Any) => CallbackTo[String] = null,
-    socketPath: String = null,
-    ssl: String | SecureContextOptionsrejec = null,
-    stringifyObjects: js.UndefOr[Boolean] = js.undefined,
-    supportBigNumbers: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    timezone: String = null,
-    trace: js.UndefOr[Boolean] = js.undefined,
-    typeCast: TypeCast = null,
-    user: String = null
-  ): ConnectionConfig = {
+  
+  inline def apply(): ConnectionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bigNumberStrings)) __obj.updateDynamic("bigNumberStrings")(bigNumberStrings.asInstanceOf[js.Any])
-    if (charset != null) __obj.updateDynamic("charset")(charset.asInstanceOf[js.Any])
-    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (dateStrings != null) __obj.updateDynamic("dateStrings")(dateStrings.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (!js.isUndefined(insecureAuth)) __obj.updateDynamic("insecureAuth")(insecureAuth.asInstanceOf[js.Any])
-    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress.asInstanceOf[js.Any])
-    if (!js.isUndefined(multipleStatements)) __obj.updateDynamic("multipleStatements")(multipleStatements.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (queryFormat != null) __obj.updateDynamic("queryFormat")(js.Any.fromFunction2((t0: /* query */ java.lang.String, t1: /* values */ js.Any) => queryFormat(t0, t1).runNow()))
-    if (socketPath != null) __obj.updateDynamic("socketPath")(socketPath.asInstanceOf[js.Any])
-    if (ssl != null) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringifyObjects)) __obj.updateDynamic("stringifyObjects")(stringifyObjects.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportBigNumbers)) __obj.updateDynamic("supportBigNumbers")(supportBigNumbers.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (timezone != null) __obj.updateDynamic("timezone")(timezone.asInstanceOf[js.Any])
-    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
-    if (typeCast != null) __obj.updateDynamic("typeCast")(typeCast.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionConfig]
   }
+  
+  extension [Self <: ConnectionConfig](x: Self) {
+    
+    inline def setBigNumberStrings(value: Boolean): Self = StObject.set(x, "bigNumberStrings", value.asInstanceOf[js.Any])
+    
+    inline def setBigNumberStringsUndefined: Self = StObject.set(x, "bigNumberStrings", js.undefined)
+    
+    inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setConnectTimeoutUndefined: Self = StObject.set(x, "connectTimeout", js.undefined)
+    
+    inline def setDateStrings(value: Boolean | (js.Array[TIMESTAMP | DATETIME | DATE])): Self = StObject.set(x, "dateStrings", value.asInstanceOf[js.Any])
+    
+    inline def setDateStringsUndefined: Self = StObject.set(x, "dateStrings", js.undefined)
+    
+    inline def setDateStringsVarargs(value: (TIMESTAMP | DATETIME | DATE)*): Self = StObject.set(x, "dateStrings", js.Array(value*))
+    
+    inline def setDebug(value: Boolean | (js.Array[String | Types])): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setDebugVarargs(value: (String | Types)*): Self = StObject.set(x, "debug", js.Array(value*))
+    
+    inline def setFlags(value: String | js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value*))
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setInsecureAuth(value: Boolean): Self = StObject.set(x, "insecureAuth", value.asInstanceOf[js.Any])
+    
+    inline def setInsecureAuthUndefined: Self = StObject.set(x, "insecureAuth", js.undefined)
+    
+    inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+    
+    inline def setMultipleStatements(value: Boolean): Self = StObject.set(x, "multipleStatements", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleStatementsUndefined: Self = StObject.set(x, "multipleStatements", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setQueryFormat(value: (/* query */ String, /* values */ Any) => String): Self = StObject.set(x, "queryFormat", js.Any.fromFunction2(value))
+    
+    inline def setQueryFormatUndefined: Self = StObject.set(x, "queryFormat", js.undefined)
+    
+    inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+    
+    inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+    
+    inline def setSsl(value: String | SecureContextOptionsrejec): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    
+    inline def setStringifyObjects(value: Boolean): Self = StObject.set(x, "stringifyObjects", value.asInstanceOf[js.Any])
+    
+    inline def setStringifyObjectsUndefined: Self = StObject.set(x, "stringifyObjects", js.undefined)
+    
+    inline def setSupportBigNumbers(value: Boolean): Self = StObject.set(x, "supportBigNumbers", value.asInstanceOf[js.Any])
+    
+    inline def setSupportBigNumbersUndefined: Self = StObject.set(x, "supportBigNumbers", js.undefined)
+    
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    
+    inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    
+    inline def setTypeCast(value: TypeCast): Self = StObject.set(x, "typeCast", value.asInstanceOf[js.Any])
+    
+    inline def setTypeCastFunction2(value: (/* field */ UntypedFieldInfotypestrin, /* next */ js.Function0[Unit]) => Any): Self = StObject.set(x, "typeCast", js.Any.fromFunction2(value))
+    
+    inline def setTypeCastUndefined: Self = StObject.set(x, "typeCast", js.undefined)
+  }
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.HtmlTriviaKind
+import typingsJapgolly.grammarkdown.distTokensMod.HtmlTriviaKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grammarkdown", "HtmlTriviaBase")
+/* note: abstract class */ @JSImport("grammarkdown", "HtmlTriviaBase")
 @js.native
-abstract class HtmlTriviaBase[TKind /* <: HtmlTriviaKind */] protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.HtmlTriviaBase[TKind] {
-  def this(kind: TKind, tagName: String) = this()
+open class HtmlTriviaBase[TKind /* <: HtmlTriviaKind */] protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.HtmlTriviaBase[TKind] {
+  def this(kind: TKind) = this()
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.None
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Backward
   - typingsJapgolly.bpmnModdle.bpmnModdleStrings.Both
 */
-trait RelationshipDirection extends js.Object
-
+trait RelationshipDirection extends StObject
 object RelationshipDirection {
-  @scala.inline
-  def Backward: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Backward = this.cast("Backward")
-  @scala.inline
-  def Both: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Both = this.cast("Both")
-  @scala.inline
-  def Forward: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Forward = this.cast("Forward")
-  @scala.inline
-  def None: typingsJapgolly.bpmnModdle.bpmnModdleStrings.None = this.cast("None")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Backward: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Backward = "Backward".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Backward]
+  
+  inline def Both: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Both = "Both".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Both]
+  
+  inline def Forward: typingsJapgolly.bpmnModdle.bpmnModdleStrings.Forward = "Forward".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.Forward]
+  
+  inline def None: typingsJapgolly.bpmnModdle.bpmnModdleStrings.None = "None".asInstanceOf[typingsJapgolly.bpmnModdle.bpmnModdleStrings.None]
 }
-

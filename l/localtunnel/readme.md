@@ -10,10 +10,10 @@ Expose localhost to the world
 | ------------------ | :-------------: |
 | Full name          | localtunnel |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 136 |
-| # downloads        | 20287861 |
-| # stars            | 86 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2903144.0 |
+| # stars            | 14378.0 |
 
 ## Links
 - [Homepage](https://github.com/localtunnel/localtunnel#readme)

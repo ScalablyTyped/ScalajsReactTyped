@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Foundation.Metadata
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompositionType extends js.Object
-
+sealed trait CompositionType extends StObject
 @JSGlobal("Windows.Foundation.Metadata.CompositionType")
 @js.native
-object CompositionType extends js.Object {
-  @js.native
-  sealed trait `protected` extends CompositionType
+object CompositionType extends StObject {
   
   @js.native
-  sealed trait public extends CompositionType
+  sealed trait `protected`
+    extends StObject
+       with CompositionType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompositionType with Double] = js.native
-  /* 0 */ @js.native
-  object `protected` extends TopLevel[`protected` with Double]
-  
-  /* 1 */ @js.native
-  object public extends TopLevel[public with Double]
-  
+  @js.native
+  sealed trait public
+    extends StObject
+       with CompositionType
 }
-

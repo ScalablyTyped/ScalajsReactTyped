@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.listItemSecondaryActionListItemSecondaryActionMod.ListItemSecondaryActionProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/ListItemSecondaryAction", JSImport.Namespace)
-@js.native
-object listItemSecondaryActionMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[ListItemSecondaryActionProps, ComponentState, js.Any] {
-    def this(props: ListItemSecondaryActionProps) = this()
-    def this(props: ListItemSecondaryActionProps, context: js.Any) = this()
-  }
+object listItemSecondaryActionMod {
   
+  @JSImport("@material-ui/core/ListItemSecondaryAction", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[ListItemSecondaryActionProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: ListItemSecondaryActionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

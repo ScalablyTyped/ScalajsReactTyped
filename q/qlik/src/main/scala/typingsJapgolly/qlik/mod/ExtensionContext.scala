@@ -1,29 +1,33 @@
 package typingsJapgolly.qlik.mod
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.jquery.JQuery_
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.jquery.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtensionContext extends js.Object {
+trait ExtensionContext extends StObject {
+  
   @JSName("$element")
-  var $element: JQuery_[HTMLElement] = js.native
+  var $element: JQuery[HTMLElement]
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
-  var _inAnalysisState: Boolean = js.native
-  var _inEditState: Boolean = js.native
-  var _interactionState: Double = js.native
-  var _on: Boolean = js.native
-  var backendApi: BackendApi = js.native
-  // TODO: options: ExtensionOptions;
-  @JSName("paint")
-  var paint_Original: Paint = js.native
-  var selectionsEnabled: Boolean = js.native
+  var $scope: Any
+  
+  var _inAnalysisState: Boolean
+  
+  var _inEditState: Boolean
+  
+  var _interactionState: Double
+  
+  var _on: Boolean
+  
+  var backendApi: BackendApi
+  
   // TODO: options: ExtensionOptions;
   def paint(
-    $element: js.UndefOr[JQuery_[HTMLElement]],
+    $element: js.UndefOr[JQuery[HTMLElement]],
     layout: js.UndefOr[Layout],
     qDimensionInfo: js.UndefOr[NxDimensionInfo],
     qMeasureInfo: js.UndefOr[NxDimensionInfo],
@@ -33,8 +37,58 @@ trait ExtensionContext extends js.Object {
     qSize: js.UndefOr[Size],
     qId: js.UndefOr[String],
     qSelectionInfo: js.UndefOr[Selectionobject]
-  ): Unit = js.native
-  def selectValues(dimNo: Double, values: js.Array[Double], toggleMode: Boolean): Unit = js.native
-  def toggleLasso(): Unit = js.native
+  ): Unit
+  // TODO: options: ExtensionOptions;
+  @JSName("paint")
+  var paint_Original: Paint
+  
+  def selectValues(dimNo: Double, values: js.Array[Double], toggleMode: Boolean): Unit
+  
+  var selectionsEnabled: Boolean
+  
+  def toggleLasso(): Unit
 }
-
+object ExtensionContext {
+  
+  inline def apply(
+    $element: JQuery[HTMLElement],
+    $scope: Any,
+    _inAnalysisState: Boolean,
+    _inEditState: Boolean,
+    _interactionState: Double,
+    _on: Boolean,
+    backendApi: BackendApi,
+    paint: Paint,
+    selectValues: (Double, js.Array[Double], Boolean) => Callback,
+    selectionsEnabled: Boolean,
+    toggleLasso: Callback
+  ): ExtensionContext = {
+    val __obj = js.Dynamic.literal($element = $element.asInstanceOf[js.Any], $scope = $scope.asInstanceOf[js.Any], _inAnalysisState = _inAnalysisState.asInstanceOf[js.Any], _inEditState = _inEditState.asInstanceOf[js.Any], _interactionState = _interactionState.asInstanceOf[js.Any], _on = _on.asInstanceOf[js.Any], backendApi = backendApi.asInstanceOf[js.Any], paint = paint.asInstanceOf[js.Any], selectValues = js.Any.fromFunction3((t0: Double, t1: js.Array[Double], t2: Boolean) => (selectValues(t0, t1, t2)).runNow()), selectionsEnabled = selectionsEnabled.asInstanceOf[js.Any], toggleLasso = toggleLasso.toJsFn)
+    __obj.asInstanceOf[ExtensionContext]
+  }
+  
+  extension [Self <: ExtensionContext](x: Self) {
+    
+    inline def set$element(value: JQuery[HTMLElement]): Self = StObject.set(x, "$element", value.asInstanceOf[js.Any])
+    
+    inline def set$scope(value: Any): Self = StObject.set(x, "$scope", value.asInstanceOf[js.Any])
+    
+    inline def setBackendApi(value: BackendApi): Self = StObject.set(x, "backendApi", value.asInstanceOf[js.Any])
+    
+    inline def setPaint(value: Paint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    
+    inline def setSelectValues(value: (Double, js.Array[Double], Boolean) => Callback): Self = StObject.set(x, "selectValues", js.Any.fromFunction3((t0: Double, t1: js.Array[Double], t2: Boolean) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setSelectionsEnabled(value: Boolean): Self = StObject.set(x, "selectionsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setToggleLasso(value: Callback): Self = StObject.set(x, "toggleLasso", value.toJsFn)
+    
+    inline def set_inAnalysisState(value: Boolean): Self = StObject.set(x, "_inAnalysisState", value.asInstanceOf[js.Any])
+    
+    inline def set_inEditState(value: Boolean): Self = StObject.set(x, "_inEditState", value.asInstanceOf[js.Any])
+    
+    inline def set_interactionState(value: Double): Self = StObject.set(x, "_interactionState", value.asInstanceOf[js.Any])
+    
+    inline def set_on(value: Boolean): Self = StObject.set(x, "_on", value.asInstanceOf[js.Any])
+  }
+}

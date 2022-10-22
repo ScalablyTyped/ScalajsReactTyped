@@ -1,146 +1,208 @@
 package typingsJapgolly.jsrsasign
 
+import typingsJapgolly.jsrsasign.jsrsasign.EncryptionAlgorithm
 import typingsJapgolly.jsrsasign.jsrsasign.EncryptionAlgorithms
 import typingsJapgolly.jsrsasign.jsrsasign.PrivateKeyOutputFormatType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsrsasignStrings {
-  @js.native
-  sealed trait `AES-128-CBC` extends EncryptionAlgorithms
   
   @js.native
-  sealed trait `AES-192-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-128-CBC`
+    extends StObject
+       with EncryptionAlgorithm
+       with EncryptionAlgorithms
+  inline def `AES-128-CBC`: `AES-128-CBC` = "AES-128-CBC".asInstanceOf[`AES-128-CBC`]
   
   @js.native
-  sealed trait `AES-256-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-192-CBC`
+    extends StObject
+       with EncryptionAlgorithm
+       with EncryptionAlgorithms
+  inline def `AES-192-CBC`: `AES-192-CBC` = "AES-192-CBC".asInstanceOf[`AES-192-CBC`]
   
   @js.native
-  sealed trait `DES-CBC` extends EncryptionAlgorithms
+  sealed trait `AES-256-CBC`
+    extends StObject
+       with EncryptionAlgorithm
+       with EncryptionAlgorithms
+  inline def `AES-256-CBC`: `AES-256-CBC` = "AES-256-CBC".asInstanceOf[`AES-256-CBC`]
   
   @js.native
-  sealed trait `DES-EDE3-CBC` extends EncryptionAlgorithms
+  sealed trait `DES-CBC`
+    extends StObject
+       with EncryptionAlgorithm
+       with EncryptionAlgorithms
+  inline def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
   
   @js.native
-  sealed trait EC extends js.Object
+  sealed trait `DES-EDE3-CBC`
+    extends StObject
+       with EncryptionAlgorithm
+       with EncryptionAlgorithms
+  inline def `DES-EDE3-CBC`: `DES-EDE3-CBC` = "DES-EDE3-CBC".asInstanceOf[`DES-EDE3-CBC`]
   
   @js.native
-  sealed trait PKCS1PRV extends PrivateKeyOutputFormatType
+  sealed trait EC extends StObject
+  inline def EC: EC = "EC".asInstanceOf[EC]
   
   @js.native
-  sealed trait PKCS5PRV extends PrivateKeyOutputFormatType
+  sealed trait PKCS1PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
+  inline def PKCS1PRV: PKCS1PRV = "PKCS1PRV".asInstanceOf[PKCS1PRV]
   
   @js.native
-  sealed trait PKCS8PRV extends PrivateKeyOutputFormatType
+  sealed trait PKCS5PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
+  inline def PKCS5PRV: PKCS5PRV = "PKCS5PRV".asInstanceOf[PKCS5PRV]
   
   @js.native
-  sealed trait RSA extends js.Object
+  sealed trait PKCS8PRV
+    extends StObject
+       with PrivateKeyOutputFormatType
+  inline def PKCS8PRV: PKCS8PRV = "PKCS8PRV".asInstanceOf[PKCS8PRV]
   
   @js.native
-  sealed trait SIGN extends js.Object
+  sealed trait RSA extends StObject
+  inline def RSA: RSA = "RSA".asInstanceOf[RSA]
   
   @js.native
-  sealed trait VERIFY extends js.Object
+  sealed trait SIGN extends StObject
+  inline def SIGN: SIGN = "SIGN".asInstanceOf[SIGN]
   
   @js.native
-  sealed trait authorityinfoaccess extends js.Object
+  sealed trait VERIFY extends StObject
+  inline def VERIFY: VERIFY = "VERIFY".asInstanceOf[VERIFY]
   
   @js.native
-  sealed trait authoritykeyidentifier extends js.Object
+  sealed trait _empty extends StObject
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait basicconstraints extends js.Object
+  sealed trait adobeTimeStamp extends StObject
+  inline def adobeTimeStamp: adobeTimeStamp = "adobeTimeStamp".asInstanceOf[adobeTimeStamp]
   
   @js.native
-  sealed trait crldistributionpoints extends js.Object
+  sealed trait authorityInfoAccess extends StObject
+  inline def authorityInfoAccess: authorityInfoAccess = "authorityInfoAccess".asInstanceOf[authorityInfoAccess]
   
   @js.native
-  sealed trait extkeyusage extends js.Object
+  sealed trait authorityinfoaccess_ extends StObject
+  inline def authorityinfoaccess_ : authorityinfoaccess_ = "authorityinfoaccess".asInstanceOf[authorityinfoaccess_]
   
   @js.native
-  sealed trait gen extends js.Object
+  sealed trait authoritykeyidentifier extends StObject
+  inline def authoritykeyidentifier: authoritykeyidentifier = "authoritykeyidentifier".asInstanceOf[authoritykeyidentifier]
   
   @js.native
-  sealed trait ia5 extends js.Object
+  sealed trait basicConstraints extends StObject
+  inline def basicConstraints: basicConstraints = "basicConstraints".asInstanceOf[basicConstraints]
   
   @js.native
-  sealed trait issueraltname extends js.Object
+  sealed trait basicconstraints_ extends StObject
+  inline def basicconstraints_ : basicconstraints_ = "basicconstraints".asInstanceOf[basicconstraints_]
   
   @js.native
-  sealed trait keyusage extends js.Object
+  sealed trait cRLDistributionPoints extends StObject
+  inline def cRLDistributionPoints: cRLDistributionPoints = "cRLDistributionPoints".asInstanceOf[cRLDistributionPoints]
   
   @js.native
-  sealed trait prn extends js.Object
+  sealed trait cRLNumber extends StObject
+  inline def cRLNumber: cRLNumber = "cRLNumber".asInstanceOf[cRLNumber]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait cRLReason extends StObject
+  inline def cRLReason: cRLReason = "cRLReason".asInstanceOf[cRLReason]
   
   @js.native
-  sealed trait subjectaltname extends js.Object
+  sealed trait certificatePolicies extends StObject
+  inline def certificatePolicies: certificatePolicies = "certificatePolicies".asInstanceOf[certificatePolicies]
   
   @js.native
-  sealed trait tel extends js.Object
+  sealed trait crldistributionpoints_ extends StObject
+  inline def crldistributionpoints_ : crldistributionpoints_ = "crldistributionpoints".asInstanceOf[crldistributionpoints_]
   
   @js.native
-  sealed trait utc extends js.Object
+  sealed trait extKeyUsage extends StObject
+  inline def extKeyUsage: extKeyUsage = "extKeyUsage".asInstanceOf[extKeyUsage]
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait extkeyusage_ extends StObject
+  inline def extkeyusage_ : extkeyusage_ = "extkeyusage".asInstanceOf[extkeyusage_]
   
-  @scala.inline
-  def `AES-128-CBC`: `AES-128-CBC` = "AES-128-CBC".asInstanceOf[`AES-128-CBC`]
-  @scala.inline
-  def `AES-192-CBC`: `AES-192-CBC` = "AES-192-CBC".asInstanceOf[`AES-192-CBC`]
-  @scala.inline
-  def `AES-256-CBC`: `AES-256-CBC` = "AES-256-CBC".asInstanceOf[`AES-256-CBC`]
-  @scala.inline
-  def `DES-CBC`: `DES-CBC` = "DES-CBC".asInstanceOf[`DES-CBC`]
-  @scala.inline
-  def `DES-EDE3-CBC`: `DES-EDE3-CBC` = "DES-EDE3-CBC".asInstanceOf[`DES-EDE3-CBC`]
-  @scala.inline
-  def EC: EC = "EC".asInstanceOf[EC]
-  @scala.inline
-  def PKCS1PRV: PKCS1PRV = "PKCS1PRV".asInstanceOf[PKCS1PRV]
-  @scala.inline
-  def PKCS5PRV: PKCS5PRV = "PKCS5PRV".asInstanceOf[PKCS5PRV]
-  @scala.inline
-  def PKCS8PRV: PKCS8PRV = "PKCS8PRV".asInstanceOf[PKCS8PRV]
-  @scala.inline
-  def RSA: RSA = "RSA".asInstanceOf[RSA]
-  @scala.inline
-  def SIGN: SIGN = "SIGN".asInstanceOf[SIGN]
-  @scala.inline
-  def VERIFY: VERIFY = "VERIFY".asInstanceOf[VERIFY]
-  @scala.inline
-  def authorityinfoaccess: authorityinfoaccess = "authorityinfoaccess".asInstanceOf[authorityinfoaccess]
-  @scala.inline
-  def authoritykeyidentifier: authoritykeyidentifier = "authoritykeyidentifier".asInstanceOf[authoritykeyidentifier]
-  @scala.inline
-  def basicconstraints: basicconstraints = "basicconstraints".asInstanceOf[basicconstraints]
-  @scala.inline
-  def crldistributionpoints: crldistributionpoints = "crldistributionpoints".asInstanceOf[crldistributionpoints]
-  @scala.inline
-  def extkeyusage: extkeyusage = "extkeyusage".asInstanceOf[extkeyusage]
-  @scala.inline
-  def gen: gen = "gen".asInstanceOf[gen]
-  @scala.inline
-  def ia5: ia5 = "ia5".asInstanceOf[ia5]
-  @scala.inline
-  def issueraltname: issueraltname = "issueraltname".asInstanceOf[issueraltname]
-  @scala.inline
-  def keyusage: keyusage = "keyusage".asInstanceOf[keyusage]
-  @scala.inline
-  def prn: prn = "prn".asInstanceOf[prn]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def subjectaltname: subjectaltname = "subjectaltname".asInstanceOf[subjectaltname]
-  @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
-  def utc: utc = "utc".asInstanceOf[utc]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait gen extends StObject
+  inline def gen: gen = "gen".asInstanceOf[gen]
+  
+  @js.native
+  sealed trait ia5 extends StObject
+  inline def ia5: ia5 = "ia5".asInstanceOf[ia5]
+  
+  @js.native
+  sealed trait issuerAltName extends StObject
+  inline def issuerAltName: issuerAltName = "issuerAltName".asInstanceOf[issuerAltName]
+  
+  @js.native
+  sealed trait issueraltname_ extends StObject
+  inline def issueraltname_ : issueraltname_ = "issueraltname".asInstanceOf[issueraltname_]
+  
+  @js.native
+  sealed trait keyUsage extends StObject
+  inline def keyUsage: keyUsage = "keyUsage".asInstanceOf[keyUsage]
+  
+  @js.native
+  sealed trait keyusage_ extends StObject
+  inline def keyusage_ : keyusage_ = "keyusage".asInstanceOf[keyusage_]
+  
+  @js.native
+  sealed trait mixed extends StObject
+  inline def mixed: mixed = "mixed".asInstanceOf[mixed]
+  
+  @js.native
+  sealed trait nameConstraints extends StObject
+  inline def nameConstraints: nameConstraints = "nameConstraints".asInstanceOf[nameConstraints]
+  
+  @js.native
+  sealed trait ocspNoCheck extends StObject
+  inline def ocspNoCheck: ocspNoCheck = "ocspNoCheck".asInstanceOf[ocspNoCheck]
+  
+  @js.native
+  sealed trait ocspNonce extends StObject
+  inline def ocspNonce: ocspNonce = "ocspNonce".asInstanceOf[ocspNonce]
+  
+  @js.native
+  sealed trait prn extends StObject
+  inline def prn: prn = "prn".asInstanceOf[prn]
+  
+  @js.native
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait subjectAltName extends StObject
+  inline def subjectAltName: subjectAltName = "subjectAltName".asInstanceOf[subjectAltName]
+  
+  @js.native
+  sealed trait subjectKeyIdentifier extends StObject
+  inline def subjectKeyIdentifier: subjectKeyIdentifier = "subjectKeyIdentifier".asInstanceOf[subjectKeyIdentifier]
+  
+  @js.native
+  sealed trait subjectaltname_ extends StObject
+  inline def subjectaltname_ : subjectaltname_ = "subjectaltname".asInstanceOf[subjectaltname_]
+  
+  @js.native
+  sealed trait tel extends StObject
+  inline def tel: tel = "tel".asInstanceOf[tel]
+  
+  @js.native
+  sealed trait utc extends StObject
+  inline def utc: utc = "utc".asInstanceOf[utc]
+  
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

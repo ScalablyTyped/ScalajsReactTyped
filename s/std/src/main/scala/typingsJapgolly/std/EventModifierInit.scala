@@ -1,70 +1,118 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventModifierInit extends UIEventInit {
+trait EventModifierInit
+  extends StObject
+     with UIEventInit {
+  
+  /* standard dom */
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var metaKey: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierAltGraph: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierCapsLock: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierFn: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierHyper: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierSuper: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var shiftKey: js.UndefOr[scala.Boolean] = js.undefined
 }
-
 object EventModifierInit {
-  @scala.inline
-  def apply(
-    altKey: js.UndefOr[scala.Boolean] = js.undefined,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: Int | Double = null,
-    metaKey: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierAltGraph: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierCapsLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFn: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
-    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    view: Window_ = null
-  ): EventModifierInit = {
+  
+  inline def apply(): EventModifierInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierAltGraph)) __obj.updateDynamic("modifierAltGraph")(modifierAltGraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierCapsLock)) __obj.updateDynamic("modifierCapsLock")(modifierCapsLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFn)) __obj.updateDynamic("modifierFn")(modifierFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventModifierInit]
   }
+  
+  extension [Self <: EventModifierInit](x: Self) {
+    
+    inline def setAltKey(value: scala.Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+    
+    inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+    
+    inline def setCtrlKey(value: scala.Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+    
+    inline def setMetaKey(value: scala.Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+    
+    inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+    
+    inline def setModifierAltGraph(value: scala.Boolean): Self = StObject.set(x, "modifierAltGraph", value.asInstanceOf[js.Any])
+    
+    inline def setModifierAltGraphUndefined: Self = StObject.set(x, "modifierAltGraph", js.undefined)
+    
+    inline def setModifierCapsLock(value: scala.Boolean): Self = StObject.set(x, "modifierCapsLock", value.asInstanceOf[js.Any])
+    
+    inline def setModifierCapsLockUndefined: Self = StObject.set(x, "modifierCapsLock", js.undefined)
+    
+    inline def setModifierFn(value: scala.Boolean): Self = StObject.set(x, "modifierFn", value.asInstanceOf[js.Any])
+    
+    inline def setModifierFnLock(value: scala.Boolean): Self = StObject.set(x, "modifierFnLock", value.asInstanceOf[js.Any])
+    
+    inline def setModifierFnLockUndefined: Self = StObject.set(x, "modifierFnLock", js.undefined)
+    
+    inline def setModifierFnUndefined: Self = StObject.set(x, "modifierFn", js.undefined)
+    
+    inline def setModifierHyper(value: scala.Boolean): Self = StObject.set(x, "modifierHyper", value.asInstanceOf[js.Any])
+    
+    inline def setModifierHyperUndefined: Self = StObject.set(x, "modifierHyper", js.undefined)
+    
+    inline def setModifierNumLock(value: scala.Boolean): Self = StObject.set(x, "modifierNumLock", value.asInstanceOf[js.Any])
+    
+    inline def setModifierNumLockUndefined: Self = StObject.set(x, "modifierNumLock", js.undefined)
+    
+    inline def setModifierScrollLock(value: scala.Boolean): Self = StObject.set(x, "modifierScrollLock", value.asInstanceOf[js.Any])
+    
+    inline def setModifierScrollLockUndefined: Self = StObject.set(x, "modifierScrollLock", js.undefined)
+    
+    inline def setModifierSuper(value: scala.Boolean): Self = StObject.set(x, "modifierSuper", value.asInstanceOf[js.Any])
+    
+    inline def setModifierSuperUndefined: Self = StObject.set(x, "modifierSuper", js.undefined)
+    
+    inline def setModifierSymbol(value: scala.Boolean): Self = StObject.set(x, "modifierSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setModifierSymbolLock(value: scala.Boolean): Self = StObject.set(x, "modifierSymbolLock", value.asInstanceOf[js.Any])
+    
+    inline def setModifierSymbolLockUndefined: Self = StObject.set(x, "modifierSymbolLock", js.undefined)
+    
+    inline def setModifierSymbolUndefined: Self = StObject.set(x, "modifierSymbol", js.undefined)
+    
+    inline def setShiftKey(value: scala.Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+    
+    inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+  }
 }
-

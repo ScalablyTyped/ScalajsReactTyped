@@ -1,42 +1,151 @@
 package typingsJapgolly.materialLinearProgress
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialBase.mod.MDCComponent
-import typingsJapgolly.materialLinearProgress.adapterMod.MDCLinearProgressAdapter
-import typingsJapgolly.materialLinearProgress.foundationMod.default
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialLinearProgress.anon.PartialMDCLinearProgressA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/linear-progress", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@material/linear-progress", JSImport.Default)
   @js.native
-  class MDCLinearProgress () extends MDCComponent[MDCLinearProgressAdapter, default] {
-    var buffer: Double = js.native
-    var determinate: Boolean = js.native
-    var progress: Double = js.native
-    var reverse: Boolean = js.native
-    def close(): Unit = js.native
-    def open(): Unit = js.native
+  open class default ()
+    extends typingsJapgolly.materialLinearProgress.foundationMod.default {
+    def this(adapter: PartialMDCLinearProgressA) = this()
   }
   
+  @JSImport("@material/linear-progress", "MDCLinearProgress")
   @js.native
-  class MDCLinearProgressFoundation () extends default
-  
+  open class MDCLinearProgress protected ()
+    extends typingsJapgolly.materialLinearProgress.componentMod.MDCLinearProgress {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialLinearProgress.foundationMod.MDCLinearProgressFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCLinearProgress extends js.Object {
-    def attachTo(root: Element): MDCLinearProgress = js.native
+  object MDCLinearProgress {
+    
+    @JSImport("@material/linear-progress", "MDCLinearProgress")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialLinearProgress.componentMod.MDCLinearProgress = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialLinearProgress.componentMod.MDCLinearProgress]
   }
   
-  /* static members */
+  @JSImport("@material/linear-progress", "MDCLinearProgressFoundation")
   @js.native
-  object MDCLinearProgressFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialLinearProgress.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCLinearProgressAdapter = js.native
-    val strings: typingsJapgolly.materialLinearProgress.constantsMod.strings = js.native
+  open class MDCLinearProgressFoundation ()
+    extends typingsJapgolly.materialLinearProgress.foundationMod.MDCLinearProgressFoundation {
+    def this(adapter: PartialMDCLinearProgressA) = this()
   }
   
+  object animationDimensionPercentages {
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages.PRIMARY_FULL")
+    @js.native
+    def PRIMARY_FULL: Double = js.native
+    inline def PRIMARY_FULL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_FULL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages.PRIMARY_HALF")
+    @js.native
+    def PRIMARY_HALF: Double = js.native
+    inline def PRIMARY_HALF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_HALF")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages.SECONDARY_FULL")
+    @js.native
+    def SECONDARY_FULL: Double = js.native
+    inline def SECONDARY_FULL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_FULL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages.SECONDARY_HALF")
+    @js.native
+    def SECONDARY_HALF: Double = js.native
+    inline def SECONDARY_HALF_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_HALF")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "animationDimensionPercentages.SECONDARY_QUARTER")
+    @js.native
+    def SECONDARY_QUARTER: Double = js.native
+    inline def SECONDARY_QUARTER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECONDARY_QUARTER")(x.asInstanceOf[js.Any])
+  }
+  
+  object cssClasses {
+    
+    @JSImport("@material/linear-progress", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/linear-progress", "cssClasses.ANIMATION_READY_CLASS")
+    @js.native
+    def ANIMATION_READY_CLASS: String = js.native
+    inline def ANIMATION_READY_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ANIMATION_READY_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "cssClasses.CLOSED_ANIMATION_OFF_CLASS")
+    @js.native
+    def CLOSED_ANIMATION_OFF_CLASS: String = js.native
+    inline def CLOSED_ANIMATION_OFF_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_ANIMATION_OFF_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "cssClasses.CLOSED_CLASS")
+    @js.native
+    def CLOSED_CLASS: String = js.native
+    inline def CLOSED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSED_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "cssClasses.INDETERMINATE_CLASS")
+    @js.native
+    def INDETERMINATE_CLASS: String = js.native
+    inline def INDETERMINATE_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INDETERMINATE_CLASS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "cssClasses.REVERSED_CLASS")
+    @js.native
+    def REVERSED_CLASS: String = js.native
+    inline def REVERSED_CLASS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REVERSED_CLASS")(x.asInstanceOf[js.Any])
+  }
+  
+  object strings {
+    
+    @JSImport("@material/linear-progress", "strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/linear-progress", "strings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.ARIA_VALUEMAX")
+    @js.native
+    def ARIA_VALUEMAX: String = js.native
+    inline def ARIA_VALUEMAX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMAX")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.ARIA_VALUEMIN")
+    @js.native
+    def ARIA_VALUEMIN: String = js.native
+    inline def ARIA_VALUEMIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUEMIN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.ARIA_VALUENOW")
+    @js.native
+    def ARIA_VALUENOW: String = js.native
+    inline def ARIA_VALUENOW_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_VALUENOW")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.BUFFER_BAR_SELECTOR")
+    @js.native
+    def BUFFER_BAR_SELECTOR: String = js.native
+    inline def BUFFER_BAR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BUFFER_BAR_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.FLEX_BASIS")
+    @js.native
+    def FLEX_BASIS: String = js.native
+    inline def FLEX_BASIS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FLEX_BASIS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/linear-progress", "strings.PRIMARY_BAR_SELECTOR")
+    @js.native
+    def PRIMARY_BAR_SELECTOR: String = js.native
+    inline def PRIMARY_BAR_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIMARY_BAR_SELECTOR")(x.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "it-drain" : "2.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "it-drain" : "2.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

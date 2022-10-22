@@ -1,21 +1,23 @@
 package typingsJapgolly.cassandraDriver.mod
 
-import typingsJapgolly.cassandraDriver.AnonParams
-import typingsJapgolly.cassandraDriver.concurrentMod.concurrent.Options
-import typingsJapgolly.cassandraDriver.concurrentMod.concurrent.ResultSetGroup
+import typingsJapgolly.cassandraDriver.anon.Query
+import typingsJapgolly.cassandraDriver.libConcurrentMod.concurrent.Options
+import typingsJapgolly.cassandraDriver.libConcurrentMod.concurrent.ResultSetGroup
 import typingsJapgolly.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "concurrent")
-@js.native
-object concurrent extends js.Object {
-  def executeConcurrent(client: Client, queries: js.Array[AnonParams]): js.Promise[ResultSetGroup] = js.native
-  def executeConcurrent(client: Client, queries: js.Array[AnonParams], options: Options): js.Promise[ResultSetGroup] = js.native
-  def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[_]]): js.Promise[ResultSetGroup] = js.native
-  def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[_]], options: Options): js.Promise[ResultSetGroup] = js.native
-  def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = js.native
-  def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = js.native
+object concurrent {
+  
+  @JSImport("cassandra-driver", "concurrent")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def executeConcurrent(client: Client, queries: js.Array[Query]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+  inline def executeConcurrent(client: Client, queries: js.Array[Query], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+  inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+  inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+  inline def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+  inline def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
 }
-

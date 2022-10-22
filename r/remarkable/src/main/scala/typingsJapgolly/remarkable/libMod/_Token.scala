@@ -1,691 +1,423 @@
 package typingsJapgolly.remarkable.libMod
 
-import typingsJapgolly.remarkable.remarkableBooleans.`false`
-import typingsJapgolly.remarkable.remarkableStrings.abbr_close
-import typingsJapgolly.remarkable.remarkableStrings.abbr_open
-import typingsJapgolly.remarkable.remarkableStrings.blockquote_close
-import typingsJapgolly.remarkable.remarkableStrings.blockquote_open
-import typingsJapgolly.remarkable.remarkableStrings.bullet_list_close
-import typingsJapgolly.remarkable.remarkableStrings.bullet_list_open
-import typingsJapgolly.remarkable.remarkableStrings.code
-import typingsJapgolly.remarkable.remarkableStrings.dd_close
-import typingsJapgolly.remarkable.remarkableStrings.dd_open
-import typingsJapgolly.remarkable.remarkableStrings.del_open
-import typingsJapgolly.remarkable.remarkableStrings.dl_close
-import typingsJapgolly.remarkable.remarkableStrings.dl_open
-import typingsJapgolly.remarkable.remarkableStrings.dt_close
-import typingsJapgolly.remarkable.remarkableStrings.dt_open
-import typingsJapgolly.remarkable.remarkableStrings.em_close
-import typingsJapgolly.remarkable.remarkableStrings.em_open
-import typingsJapgolly.remarkable.remarkableStrings.fence
-import typingsJapgolly.remarkable.remarkableStrings.footnote_anchor
-import typingsJapgolly.remarkable.remarkableStrings.footnote_block_close
-import typingsJapgolly.remarkable.remarkableStrings.footnote_block_open
-import typingsJapgolly.remarkable.remarkableStrings.footnote_close
-import typingsJapgolly.remarkable.remarkableStrings.footnote_open
-import typingsJapgolly.remarkable.remarkableStrings.footnote_ref
-import typingsJapgolly.remarkable.remarkableStrings.footnote_reference_close
-import typingsJapgolly.remarkable.remarkableStrings.footnote_reference_open
-import typingsJapgolly.remarkable.remarkableStrings.hardbreak
-import typingsJapgolly.remarkable.remarkableStrings.heading_close
-import typingsJapgolly.remarkable.remarkableStrings.heading_open
-import typingsJapgolly.remarkable.remarkableStrings.hr
-import typingsJapgolly.remarkable.remarkableStrings.htmlblock
-import typingsJapgolly.remarkable.remarkableStrings.htmltag
-import typingsJapgolly.remarkable.remarkableStrings.image
-import typingsJapgolly.remarkable.remarkableStrings.ins_close
-import typingsJapgolly.remarkable.remarkableStrings.ins_open
-import typingsJapgolly.remarkable.remarkableStrings.link_close
-import typingsJapgolly.remarkable.remarkableStrings.link_open
-import typingsJapgolly.remarkable.remarkableStrings.list_item_close
-import typingsJapgolly.remarkable.remarkableStrings.list_item_open
-import typingsJapgolly.remarkable.remarkableStrings.mark_close
-import typingsJapgolly.remarkable.remarkableStrings.mark_open
-import typingsJapgolly.remarkable.remarkableStrings.ordered_list_close
-import typingsJapgolly.remarkable.remarkableStrings.ordered_list_open
-import typingsJapgolly.remarkable.remarkableStrings.paragraph_close
-import typingsJapgolly.remarkable.remarkableStrings.paragraph_open
-import typingsJapgolly.remarkable.remarkableStrings.softbreak
-import typingsJapgolly.remarkable.remarkableStrings.strong_close
-import typingsJapgolly.remarkable.remarkableStrings.strong_open
-import typingsJapgolly.remarkable.remarkableStrings.sub
-import typingsJapgolly.remarkable.remarkableStrings.sup
-import typingsJapgolly.remarkable.remarkableStrings.table_close
-import typingsJapgolly.remarkable.remarkableStrings.table_open
-import typingsJapgolly.remarkable.remarkableStrings.tbody_close
-import typingsJapgolly.remarkable.remarkableStrings.tbody_open
-import typingsJapgolly.remarkable.remarkableStrings.td_close
-import typingsJapgolly.remarkable.remarkableStrings.td_open
-import typingsJapgolly.remarkable.remarkableStrings.text
-import typingsJapgolly.remarkable.remarkableStrings.th_close
-import typingsJapgolly.remarkable.remarkableStrings.th_open
-import typingsJapgolly.remarkable.remarkableStrings.thead_close
-import typingsJapgolly.remarkable.remarkableStrings.thead_open
-import typingsJapgolly.remarkable.remarkableStrings.tr_close
-import typingsJapgolly.remarkable.remarkableStrings.tr_open
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _Token extends js.Object
-
+trait _Token extends StObject
 object _Token {
-  @scala.inline
-  def ContentToken(
-    level: Double,
-    `type`: String,
-    block: js.UndefOr[Boolean] = js.undefined,
-    content: js.Any = null,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
+  
+  inline def AbbrCloseToken(level: Double): typingsJapgolly.remarkable.libMod.AbbrCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("abbr_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.AbbrCloseToken]
   }
-  @scala.inline
-  def TagToken(level: Double, `type`: String, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HrToken(level: Double, `type`: hr, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def BulletListOpenToken(level: Double, `type`: bullet_list_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FenceToken(
-    content: String,
-    level: Double,
-    params: String,
-    `type`: fence,
-    block: `false` = null,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def BulletListCloseToken(level: Double, `type`: bullet_list_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HtmlBlockToken(
-    block: `false`,
-    content: String,
-    level: Double,
-    `type`: htmlblock,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def SubToken(
-    content: String,
-    level: Double,
-    `type`: sub,
-    block: js.UndefOr[Boolean] = js.undefined,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def MarkOpenToken(level: Double, `type`: mark_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FootnoteInlineToken(
-    id: Double,
-    level: Double,
-    `type`: footnote_ref,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def LinkCloseToken(level: Double, `type`: link_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def TableCloseToken(level: Double, `type`: table_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def AbbrOpenToken(level: Double, title: String, `type`: abbr_open, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def AbbrOpenToken(level: Double, title: String): typingsJapgolly.remarkable.libMod.AbbrOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("abbr_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.AbbrOpenToken]
   }
-  @scala.inline
-  def TDCloseToken(level: Double, `type`: td_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def BlockContentToken(level: Double, `type`: String): typingsJapgolly.remarkable.libMod.BlockContentToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.BlockContentToken]
   }
-  @scala.inline
-  def OrderedListCloseToken(level: Double, `type`: ordered_list_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def BlockquoteCloseToken(level: Double): typingsJapgolly.remarkable.libMod.BlockquoteCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("blockquote_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.BlockquoteCloseToken]
   }
-  @scala.inline
-  def DtOpenToken(level: Double, `type`: dt_open, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def BlockquoteOpenToken(level: Double): typingsJapgolly.remarkable.libMod.BlockquoteOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("blockquote_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.BlockquoteOpenToken]
   }
-  @scala.inline
-  def FootnoteGenericToken(
-    id: Double,
-    level: Double,
-    `type`: String,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FootnoteBlockCloseToken(level: Double, `type`: footnote_block_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def BulletListCloseToken(level: Double): typingsJapgolly.remarkable.libMod.BulletListCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("bullet_list_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.BulletListCloseToken]
   }
-  @scala.inline
-  def InsCloseToken(level: Double, `type`: ins_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def BulletListOpenToken(level: Double): typingsJapgolly.remarkable.libMod.BulletListOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("bullet_list_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.BulletListOpenToken]
   }
-  @scala.inline
-  def HeadingOpenToken(hLevel: HeadingValue, level: Double, `type`: heading_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def EmOpenToken(level: Double, `type`: em_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def ParagraphToken(level: Double, tight: Boolean, `type`: String, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def BlockquoteOpenToken(level: Double, `type`: blockquote_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def TableOpenToken(level: Double, `type`: table_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HeadingToken(hLevel: HeadingValue, level: Double, `type`: String, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def OrderedListOpenToken(level: Double, order: Double, `type`: ordered_list_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def THOpenToken(level: Double, `type`: th_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def CodeToken(
-    block: Boolean,
-    level: Double,
-    `type`: code,
-    children: js.Array[Token] = null,
-    content: String = null,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
+  
+  inline def CodeToken(block: Boolean, level: Double): typingsJapgolly.remarkable.libMod.CodeToken = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("code")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.CodeToken]
   }
-  @scala.inline
-  def TROpenToken(level: Double, `type`: tr_open, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def ContentToken(level: Double, `type`: String): typingsJapgolly.remarkable.libMod.ContentToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ContentToken]
   }
-  @scala.inline
-  def THCloseToken(level: Double, `type`: th_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def DdCloseToken(level: Double): typingsJapgolly.remarkable.libMod.DdCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("dd_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DdCloseToken]
   }
-  @scala.inline
-  def TDOpenToken(level: Double, `type`: td_open, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def DdOpenToken(level: Double): typingsJapgolly.remarkable.libMod.DdOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("dd_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DdOpenToken]
   }
-  @scala.inline
-  def ImageToken(
-    alt: String,
-    level: Double,
-    src: String,
-    title: String,
-    `type`: image,
-    block: js.UndefOr[Boolean] = js.undefined,
-    content: js.Any = null,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+  
+  inline def DelCloseToken(level: Double): typingsJapgolly.remarkable.libMod.DelCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("del_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DelCloseToken]
   }
-  @scala.inline
-  def FootnoteAnchorToken(
-    id: Double,
-    level: Double,
-    `type`: footnote_anchor,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
+  
+  inline def DelOpenToken(level: Double): typingsJapgolly.remarkable.libMod.DelOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("del_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DelOpenToken]
+  }
+  
+  inline def DlCloseToken(level: Double): typingsJapgolly.remarkable.libMod.DlCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dl_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DlCloseToken]
+  }
+  
+  inline def DlOpenToken(level: Double): typingsJapgolly.remarkable.libMod.DlOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dl_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DlOpenToken]
+  }
+  
+  inline def DtCloseToken(level: Double): typingsJapgolly.remarkable.libMod.DtCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dt_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DtCloseToken]
+  }
+  
+  inline def DtOpenToken(level: Double): typingsJapgolly.remarkable.libMod.DtOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dt_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.DtOpenToken]
+  }
+  
+  inline def EmCloseToken(level: Double): typingsJapgolly.remarkable.libMod.EmCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("em_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.EmCloseToken]
+  }
+  
+  inline def EmOpenToken(level: Double): typingsJapgolly.remarkable.libMod.EmOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("em_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.EmOpenToken]
+  }
+  
+  inline def FenceToken(content: String, level: Double, params: String): typingsJapgolly.remarkable.libMod.FenceToken = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fence")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FenceToken]
+  }
+  
+  inline def FootnoteAnchorToken(id: Double, level: Double): typingsJapgolly.remarkable.libMod.FootnoteAnchorToken = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_anchor")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteAnchorToken]
+  }
+  
+  inline def FootnoteBlockCloseToken(level: Double): typingsJapgolly.remarkable.libMod.FootnoteBlockCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_block_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteBlockCloseToken]
+  }
+  
+  inline def FootnoteBlockOpenToken(level: Double): typingsJapgolly.remarkable.libMod.FootnoteBlockOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_block_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteBlockOpenToken]
+  }
+  
+  inline def FootnoteCloseToken(id: Double, level: Double): typingsJapgolly.remarkable.libMod.FootnoteCloseToken = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteCloseToken]
+  }
+  
+  inline def FootnoteGenericToken(id: Double, level: Double, `type`: String): typingsJapgolly.remarkable.libMod.FootnoteGenericToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteGenericToken]
   }
-  @scala.inline
-  def FootnoteBlockOpenToken(level: Double, `type`: footnote_block_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def ListItemCloseToken(level: Double, `type`: list_item_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def LinkOpenToken(
-    href: String,
-    level: Double,
-    `type`: link_open,
-    lines: js.Tuple2[Double, Double] = null,
-    title: String = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FootnoteReferenceCloseToken(
-    id: Double,
-    level: Double,
-    `type`: footnote_reference_close,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
+  
+  inline def FootnoteInlineToken(id: Double, level: Double): typingsJapgolly.remarkable.libMod.FootnoteInlineToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("footnote_ref")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteInlineToken]
   }
-  @scala.inline
-  def DdOpenToken(level: Double, `type`: dd_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HardbreakToken(level: Double, `type`: hardbreak, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FootnoteOpenToken(
-    id: Double,
-    level: Double,
-    `type`: footnote_open,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
+  
+  inline def FootnoteOpenToken(id: Double, level: Double): typingsJapgolly.remarkable.libMod.FootnoteOpenToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("footnote_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteOpenToken]
   }
-  @scala.inline
-  def SupToken(
-    content: String,
-    level: Double,
-    `type`: sup,
-    block: js.UndefOr[Boolean] = js.undefined,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+  
+  inline def FootnoteReferenceCloseToken(id: Double, level: Double): typingsJapgolly.remarkable.libMod.FootnoteReferenceCloseToken = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_reference_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteReferenceCloseToken]
   }
-  @scala.inline
-  def DelCloseToken(level: Double, `type`: del_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def DdCloseToken(level: Double, `type`: dd_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def TextToken(level: Double, `type`: text, content: String = null, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def EmCloseToken(level: Double, `type`: em_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def ListItemOpenToken(level: Double, `type`: list_item_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def DlCloseToken(level: Double, `type`: dl_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def FootnoteReferenceOpenToken(
-    id: Double,
-    label: String,
-    level: Double,
-    `type`: footnote_reference_open,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
+  
+  inline def FootnoteReferenceOpenToken(id: Double, label: String, level: Double): typingsJapgolly.remarkable.libMod.FootnoteReferenceOpenToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("footnote_reference_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.FootnoteReferenceOpenToken]
   }
-  @scala.inline
-  def TRCloseToken(level: Double, `type`: tr_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def HardbreakToken(level: Double): typingsJapgolly.remarkable.libMod.HardbreakToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("hardbreak")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HardbreakToken]
   }
-  @scala.inline
-  def BlockContentToken(
-    level: Double,
-    `type`: String,
-    children: js.Array[Token] = null,
-    content: String = null,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+  
+  inline def HeadingCloseToken(hLevel: HeadingValue, level: Double): typingsJapgolly.remarkable.libMod.HeadingCloseToken = {
+    val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("heading_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HeadingCloseToken]
   }
-  @scala.inline
-  def InsOpenToken(level: Double, `type`: ins_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+  
+  inline def HeadingOpenToken(hLevel: HeadingValue, level: Double): typingsJapgolly.remarkable.libMod.HeadingOpenToken = {
+    val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("heading_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HeadingOpenToken]
   }
-  @scala.inline
-  def TBodyOpenToken(level: Double, `type`: tbody_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def ParagraphCloseToken(level: Double, tight: Boolean, `type`: paragraph_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def ParagraphOpenToken(level: Double, tight: Boolean, `type`: paragraph_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def THeadCloseToken(level: Double, `type`: thead_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HeadingCloseToken(
-    hLevel: HeadingValue,
-    level: Double,
-    `type`: heading_close,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
+  
+  inline def HeadingToken(hLevel: HeadingValue, level: Double, `type`: String): typingsJapgolly.remarkable.libMod.HeadingToken = {
     val __obj = js.Dynamic.literal(hLevel = hLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HeadingToken]
   }
-  @scala.inline
-  def THeadOpenToken(level: Double, `type`: thead_open, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def HrToken(level: Double): typingsJapgolly.remarkable.libMod.HrToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("hr")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HrToken]
   }
-  @scala.inline
-  def MarkCloseToken(level: Double, `type`: mark_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+  
+  inline def HtmlBlockToken(content: String, level: Double): typingsJapgolly.remarkable.libMod.HtmlBlockToken = {
+    val __obj = js.Dynamic.literal(block = false, content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("htmlblock")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HtmlBlockToken]
   }
-  @scala.inline
-  def FootnoteCloseToken(
-    id: Double,
-    level: Double,
-    `type`: footnote_close,
-    lines: js.Tuple2[Double, Double] = null,
-    subId: Int | Double = null
-  ): _Token = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def DtCloseToken(level: Double, `type`: dt_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def HtmlTagToken(
-    content: String,
-    level: Double,
-    `type`: htmltag,
-    block: js.UndefOr[Boolean] = js.undefined,
-    lines: js.Tuple2[Double, Double] = null
-  ): _Token = {
+  
+  inline def HtmlTagToken(content: String, level: Double): typingsJapgolly.remarkable.libMod.HtmlTagToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("htmltag")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.HtmlTagToken]
   }
-  @scala.inline
-  def StrongCloseToken(level: Double, `type`: strong_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def ImageToken(alt: String, level: Double, src: String, title: String): typingsJapgolly.remarkable.libMod.ImageToken = {
+    val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ImageToken]
+  }
+  
+  inline def InsCloseToken(level: Double): typingsJapgolly.remarkable.libMod.InsCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ins_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.InsCloseToken]
+  }
+  
+  inline def InsOpenToken(level: Double): typingsJapgolly.remarkable.libMod.InsOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ins_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.InsOpenToken]
+  }
+  
+  inline def LinkCloseToken(level: Double): typingsJapgolly.remarkable.libMod.LinkCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("link_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.LinkCloseToken]
+  }
+  
+  inline def LinkOpenToken(href: String, level: Double): typingsJapgolly.remarkable.libMod.LinkOpenToken = {
+    val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("link_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.LinkOpenToken]
+  }
+  
+  inline def ListItemCloseToken(level: Double): typingsJapgolly.remarkable.libMod.ListItemCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list_item_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ListItemCloseToken]
+  }
+  
+  inline def ListItemOpenToken(level: Double): typingsJapgolly.remarkable.libMod.ListItemOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("list_item_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ListItemOpenToken]
+  }
+  
+  inline def MarkCloseToken(level: Double): typingsJapgolly.remarkable.libMod.MarkCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mark_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.MarkCloseToken]
+  }
+  
+  inline def MarkOpenToken(level: Double): typingsJapgolly.remarkable.libMod.MarkOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mark_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.MarkOpenToken]
+  }
+  
+  inline def OrderedListCloseToken(level: Double): typingsJapgolly.remarkable.libMod.OrderedListCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ordered_list_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.OrderedListCloseToken]
+  }
+  
+  inline def OrderedListOpenToken(level: Double, order: Double): typingsJapgolly.remarkable.libMod.OrderedListOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ordered_list_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.OrderedListOpenToken]
+  }
+  
+  inline def ParagraphCloseToken(level: Double, tight: Boolean): typingsJapgolly.remarkable.libMod.ParagraphCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("paragraph_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ParagraphCloseToken]
+  }
+  
+  inline def ParagraphOpenToken(level: Double, tight: Boolean): typingsJapgolly.remarkable.libMod.ParagraphOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("paragraph_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ParagraphOpenToken]
+  }
+  
+  inline def ParagraphToken(level: Double, tight: Boolean, `type`: String): typingsJapgolly.remarkable.libMod.ParagraphToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], tight = tight.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.ParagraphToken]
+  }
+  
+  inline def SoftbreakToken(level: Double): typingsJapgolly.remarkable.libMod.SoftbreakToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("softbreak")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.SoftbreakToken]
+  }
+  
+  inline def StrongCloseToken(level: Double): typingsJapgolly.remarkable.libMod.StrongCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("strong_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.StrongCloseToken]
+  }
+  
+  inline def StrongOpenToken(level: Double): typingsJapgolly.remarkable.libMod.StrongOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("strong_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.StrongOpenToken]
+  }
+  
+  inline def SubToken(content: String, level: Double): typingsJapgolly.remarkable.libMod.SubToken = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sub")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.SubToken]
+  }
+  
+  inline def SupToken(content: String, level: Double): typingsJapgolly.remarkable.libMod.SupToken = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sup")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.SupToken]
+  }
+  
+  inline def TBodyCloseToken(level: Double): typingsJapgolly.remarkable.libMod.TBodyCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tbody_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TBodyCloseToken]
+  }
+  
+  inline def TBodyOpenToken(level: Double): typingsJapgolly.remarkable.libMod.TBodyOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tbody_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TBodyOpenToken]
+  }
+  
+  inline def TDCloseToken(level: Double): typingsJapgolly.remarkable.libMod.TDCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("td_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TDCloseToken]
+  }
+  
+  inline def TDOpenToken(level: Double): typingsJapgolly.remarkable.libMod.TDOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("td_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TDOpenToken]
+  }
+  
+  inline def THCloseToken(level: Double): typingsJapgolly.remarkable.libMod.THCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("th_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.THCloseToken]
+  }
+  
+  inline def THOpenToken(level: Double): typingsJapgolly.remarkable.libMod.THOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("th_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.THOpenToken]
+  }
+  
+  inline def THeadCloseToken(level: Double): typingsJapgolly.remarkable.libMod.THeadCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("thead_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.THeadCloseToken]
+  }
+  
+  inline def THeadOpenToken(level: Double): typingsJapgolly.remarkable.libMod.THeadOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("thead_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.THeadOpenToken]
+  }
+  
+  inline def TRCloseToken(level: Double): typingsJapgolly.remarkable.libMod.TRCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tr_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TRCloseToken]
+  }
+  
+  inline def TROpenToken(level: Double): typingsJapgolly.remarkable.libMod.TROpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("tr_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TROpenToken]
+  }
+  
+  inline def TableCloseToken(level: Double): typingsJapgolly.remarkable.libMod.TableCloseToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("table_close")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TableCloseToken]
+  }
+  
+  inline def TableOpenToken(level: Double): typingsJapgolly.remarkable.libMod.TableOpenToken = {
+    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("table_open")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TableOpenToken]
+  }
+  
+  inline def TagToken(level: Double, `type`: String): typingsJapgolly.remarkable.libMod.TagToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TagToken]
   }
-  @scala.inline
-  def AbbrCloseToken(level: Double, `type`: abbr_close, lines: js.Tuple2[Double, Double] = null): _Token = {
+  
+  inline def TextToken(level: Double): typingsJapgolly.remarkable.libMod.TextToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def SoftbreakToken(level: Double, `type`: softbreak, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def DelOpenToken(level: Double, `type`: del_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def StrongOpenToken(level: Double, `type`: strong_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def BlockquoteCloseToken(level: Double, `type`: blockquote_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def TBodyCloseToken(level: Double, `type`: tbody_close, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
-  }
-  @scala.inline
-  def DlOpenToken(level: Double, `type`: dl_open, lines: js.Tuple2[Double, Double] = null): _Token = {
-    val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_Token]
+    __obj.updateDynamic("type")("text")
+    __obj.asInstanceOf[typingsJapgolly.remarkable.libMod.TextToken]
   }
 }
-

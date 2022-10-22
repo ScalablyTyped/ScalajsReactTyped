@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.uxtb
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.sxtw
   - typingsJapgolly.fridaGum.fridaGumStrings.sxtx
 */
-trait Arm64Extender extends js.Object
-
+trait Arm64Extender extends StObject
 object Arm64Extender {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def sxtb: typingsJapgolly.fridaGum.fridaGumStrings.sxtb = this.cast("sxtb")
-  @scala.inline
-  def sxth: typingsJapgolly.fridaGum.fridaGumStrings.sxth = this.cast("sxth")
-  @scala.inline
-  def sxtw: typingsJapgolly.fridaGum.fridaGumStrings.sxtw = this.cast("sxtw")
-  @scala.inline
-  def sxtx: typingsJapgolly.fridaGum.fridaGumStrings.sxtx = this.cast("sxtx")
-  @scala.inline
-  def uxtb: typingsJapgolly.fridaGum.fridaGumStrings.uxtb = this.cast("uxtb")
-  @scala.inline
-  def uxth: typingsJapgolly.fridaGum.fridaGumStrings.uxth = this.cast("uxth")
-  @scala.inline
-  def uxtw: typingsJapgolly.fridaGum.fridaGumStrings.uxtw = this.cast("uxtw")
-  @scala.inline
-  def uxtx: typingsJapgolly.fridaGum.fridaGumStrings.uxtx = this.cast("uxtx")
+  
+  inline def sxtb: typingsJapgolly.fridaGum.fridaGumStrings.sxtb = "sxtb".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sxtb]
+  
+  inline def sxth: typingsJapgolly.fridaGum.fridaGumStrings.sxth = "sxth".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sxth]
+  
+  inline def sxtw: typingsJapgolly.fridaGum.fridaGumStrings.sxtw = "sxtw".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sxtw]
+  
+  inline def sxtx: typingsJapgolly.fridaGum.fridaGumStrings.sxtx = "sxtx".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.sxtx]
+  
+  inline def uxtb: typingsJapgolly.fridaGum.fridaGumStrings.uxtb = "uxtb".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.uxtb]
+  
+  inline def uxth: typingsJapgolly.fridaGum.fridaGumStrings.uxth = "uxth".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.uxth]
+  
+  inline def uxtw: typingsJapgolly.fridaGum.fridaGumStrings.uxtw = "uxtw".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.uxtw]
+  
+  inline def uxtx: typingsJapgolly.fridaGum.fridaGumStrings.uxtx = "uxtx".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.uxtx]
 }
-

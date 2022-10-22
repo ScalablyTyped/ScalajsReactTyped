@@ -1,22 +1,24 @@
 package typingsJapgolly.cytoscape.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.dijkstra
   */
-trait SearchDijkstraOptions extends js.Object {
+trait SearchDijkstraOptions extends StObject {
+  
   /**
     * A boolean indicating whether the algorithm should only go along edges from source to target (default false).
     */
   var directed: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The root node (selector or collection) where the algorithm starts.
     */
   var root: Selector | CollectionArgument
+  
   /**
     * A function that returns the positive numeric weight for this edge.
     *
@@ -24,18 +26,23 @@ trait SearchDijkstraOptions extends js.Object {
     */
   var weight: js.UndefOr[WeightFn] = js.undefined
 }
-
 object SearchDijkstraOptions {
-  @scala.inline
-  def apply(
-    root: Selector | CollectionArgument,
-    directed: js.UndefOr[Boolean] = js.undefined,
-    weight: /* edge */ EdgeCollection => CallbackTo[Double] = null
-  ): SearchDijkstraOptions = {
+  
+  inline def apply(root: Selector | CollectionArgument): SearchDijkstraOptions = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1((t0: /* edge */ typingsJapgolly.cytoscape.mod.EdgeCollection) => weight(t0).runNow()))
     __obj.asInstanceOf[SearchDijkstraOptions]
   }
+  
+  extension [Self <: SearchDijkstraOptions](x: Self) {
+    
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    
+    inline def setRoot(value: Selector | CollectionArgument): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setWeight(value: /* edge */ EdgeCollection => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

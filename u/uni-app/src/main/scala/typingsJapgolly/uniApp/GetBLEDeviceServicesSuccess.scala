@@ -1,27 +1,38 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetBLEDeviceServicesSuccess extends js.Object {
+trait GetBLEDeviceServicesSuccess extends StObject {
+  
   /**
     * 成功：ok，错误：详细信息
     */
   var errMsg: js.UndefOr[String] = js.undefined
+  
   /**
     * 设备服务列表
     */
   var services: js.UndefOr[js.Array[GetBLEDeviceServicesSuccessData]] = js.undefined
 }
-
 object GetBLEDeviceServicesSuccess {
-  @scala.inline
-  def apply(errMsg: String = null, services: js.Array[GetBLEDeviceServicesSuccessData] = null): GetBLEDeviceServicesSuccess = {
+  
+  inline def apply(): GetBLEDeviceServicesSuccess = {
     val __obj = js.Dynamic.literal()
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
-    if (services != null) __obj.updateDynamic("services")(services.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceServicesSuccess]
   }
+  
+  extension [Self <: GetBLEDeviceServicesSuccess](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+    
+    inline def setServices(value: js.Array[GetBLEDeviceServicesSuccessData]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    
+    inline def setServicesVarargs(value: GetBLEDeviceServicesSuccessData*): Self = StObject.set(x, "services", js.Array(value*))
+  }
 }
-

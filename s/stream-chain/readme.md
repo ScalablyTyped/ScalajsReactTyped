@@ -10,10 +10,10 @@ Chain functions as transform streams.
 | ------------------ | :-------------: |
 | Full name          | stream-chain |
 | Keywords           | stream, chain |
-| # releases         | 12 |
-| # dependents       | 7 |
-| # downloads        | 501337 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1238967.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/uhop/stream-chain#readme)

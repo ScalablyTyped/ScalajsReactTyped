@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.PlayTo
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.PlayTo.PlayToSourceRequestedEventArgs")
-@js.native
-class PlayToSourceRequestedEventArgs () extends IPlayToSourceRequestedEventArgs {
-  /* CompleteClass */
-  override var sourceRequest: PlayToSourceRequest = js.native
+trait PlayToSourceRequestedEventArgs
+  extends StObject
+     with IPlayToSourceRequestedEventArgs
+object PlayToSourceRequestedEventArgs {
+  
+  inline def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
+    val __obj = js.Dynamic.literal(sourceRequest = sourceRequest.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayToSourceRequestedEventArgs]
+  }
 }
-

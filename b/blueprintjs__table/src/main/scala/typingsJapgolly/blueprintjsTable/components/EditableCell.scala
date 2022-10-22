@@ -1,88 +1,85 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsCore.editableTextMod.IEditableTextProps
-import typingsJapgolly.blueprintjsCore.intentMod.Intent
-import typingsJapgolly.blueprintjsTable.editableCellMod.IEditableCellProps
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmCommonIntentMod.Intent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsEditableTextEditableTextMod.EditableTextProps
+import typingsJapgolly.blueprintjsTable.libEsmCellEditableCellMod.IEditableCellProps
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EditableCell {
-  def apply(
-    cellRef: /* ref */ HTMLElement | Null => Callback = null,
-    className: String = null,
-    columnIndex: Int | Double = null,
-    editableTextProps: IEditableTextProps = null,
-    intent: Intent = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    isFocused: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    onCancel: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback = null,
-    onChange: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback = null,
-    onConfirm: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[HTMLElement] => Callback = null,
-    rowIndex: Int | Double = null,
-    style: CSSProperties = null,
-    tabIndex: Int | Double = null,
-    tooltip: String = null,
-    truncated: js.UndefOr[Boolean] = js.undefined,
-    value: String = null,
-    wrapText: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IEditableCellProps, 
-    typingsJapgolly.blueprintjsTable.mod.EditableCell, 
-    Unit, 
-    IEditableCellProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (cellRef != null) __obj.updateDynamic("cellRef")(js.Any.fromFunction1((t0: /* ref */ org.scalajs.dom.raw.HTMLElement | scala.Null) => cellRef(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (editableTextProps != null) __obj.updateDynamic("editableTextProps")(editableTextProps.asInstanceOf[js.Any])
-    if (intent != null) __obj.updateDynamic("intent")(intent.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(isFocused)) __obj.updateDynamic("isFocused")(isFocused.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (onCancel != null) __obj.updateDynamic("onCancel")(js.Any.fromFunction3((t0: /* value */ java.lang.String, t1: /* rowIndex */ js.UndefOr[scala.Double], t2: /* columnIndex */ js.UndefOr[scala.Double]) => onCancel(t0, t1, t2).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction3((t0: /* value */ java.lang.String, t1: /* rowIndex */ js.UndefOr[scala.Double], t2: /* columnIndex */ js.UndefOr[scala.Double]) => onChange(t0, t1, t2).runNow()))
-    if (onConfirm != null) __obj.updateDynamic("onConfirm")(js.Any.fromFunction3((t0: /* value */ java.lang.String, t1: /* rowIndex */ js.UndefOr[scala.Double], t2: /* columnIndex */ js.UndefOr[scala.Double]) => onConfirm(t0, t1, t2).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onKeyUp(t0).runNow()))
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (!js.isUndefined(truncated)) __obj.updateDynamic("truncated")(truncated.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.editableCellMod.IEditableCellProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.mod.EditableCell](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.editableCellMod.IEditableCellProps])(children: _*)
-  }
   @JSImport("@blueprintjs/table", "EditableCell")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.mod.EditableCell] {
+    
+    inline def cellRef(value: Ref[HTMLDivElement]): this.type = set("cellRef", value.asInstanceOf[js.Any])
+    
+    inline def cellRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("cellRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def cellRefNull: this.type = set("cellRef", null)
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def columnIndex(value: Double): this.type = set("columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def editableTextProps(value: EditableTextProps): this.type = set("editableTextProps", value.asInstanceOf[js.Any])
+    
+    inline def intent(value: Intent): this.type = set("intent", value.asInstanceOf[js.Any])
+    
+    inline def interactive(value: Boolean): this.type = set("interactive", value.asInstanceOf[js.Any])
+    
+    inline def isFocused(value: Boolean): this.type = set("isFocused", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onCancel(
+      value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onCancel", js.Any.fromFunction3((t0: /* value */ String, t1: /* rowIndex */ js.UndefOr[Double], t2: /* columnIndex */ js.UndefOr[Double]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onChange(
+      value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction3((t0: /* value */ String, t1: /* rowIndex */ js.UndefOr[Double], t2: /* columnIndex */ js.UndefOr[Double]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onConfirm(
+      value: (/* value */ String, /* rowIndex */ js.UndefOr[Double], /* columnIndex */ js.UndefOr[Double]) => Callback
+    ): this.type = set("onConfirm", js.Any.fromFunction3((t0: /* value */ String, t1: /* rowIndex */ js.UndefOr[Double], t2: /* columnIndex */ js.UndefOr[Double]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onKeyDown(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyDown", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyPress(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyPress", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    
+    inline def onKeyUp(value: ReactKeyboardEventFrom[HTMLElement & Element] => Callback): this.type = set("onKeyUp", js.Any.fromFunction1((t0: ReactKeyboardEventFrom[HTMLElement & Element]) => value(t0).runNow()))
+    
+    inline def rowIndex(value: Double): this.type = set("rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: String): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def truncated(value: Boolean): this.type = set("truncated", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def wrapText(value: Boolean): this.type = set("wrapText", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: EditableCell.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IEditableCellProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

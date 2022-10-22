@@ -1,36 +1,54 @@
 package typingsJapgolly.mapsjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait styleObj extends js.Object {
+trait styleObj extends StObject {
+  
   var dashArray: js.UndefOr[String] = js.undefined
+  
   var fillColor: js.UndefOr[String] = js.undefined
+  
   var fillOpacity: js.UndefOr[Double] = js.undefined
+  
   var outlineColor: js.UndefOr[String] = js.undefined
+  
   var outlineOpacity: js.UndefOr[Double] = js.undefined
+  
   var outlineThicknessPix: js.UndefOr[Double] = js.undefined
 }
-
 object styleObj {
-  @scala.inline
-  def apply(
-    dashArray: String = null,
-    fillColor: String = null,
-    fillOpacity: Int | Double = null,
-    outlineColor: String = null,
-    outlineOpacity: Int | Double = null,
-    outlineThicknessPix: Int | Double = null
-  ): styleObj = {
+  
+  inline def apply(): styleObj = {
     val __obj = js.Dynamic.literal()
-    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (outlineColor != null) __obj.updateDynamic("outlineColor")(outlineColor.asInstanceOf[js.Any])
-    if (outlineOpacity != null) __obj.updateDynamic("outlineOpacity")(outlineOpacity.asInstanceOf[js.Any])
-    if (outlineThicknessPix != null) __obj.updateDynamic("outlineThicknessPix")(outlineThicknessPix.asInstanceOf[js.Any])
     __obj.asInstanceOf[styleObj]
   }
+  
+  extension [Self <: styleObj](x: Self) {
+    
+    inline def setDashArray(value: String): Self = StObject.set(x, "dashArray", value.asInstanceOf[js.Any])
+    
+    inline def setDashArrayUndefined: Self = StObject.set(x, "dashArray", js.undefined)
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setOutlineColor(value: String): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    
+    inline def setOutlineOpacity(value: Double): Self = StObject.set(x, "outlineOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineOpacityUndefined: Self = StObject.set(x, "outlineOpacity", js.undefined)
+    
+    inline def setOutlineThicknessPix(value: Double): Self = StObject.set(x, "outlineThicknessPix", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineThicknessPixUndefined: Self = StObject.set(x, "outlineThicknessPix", js.undefined)
+  }
 }
-

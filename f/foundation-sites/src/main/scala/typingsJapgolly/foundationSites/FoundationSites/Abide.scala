@@ -1,61 +1,55 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.foundationSites.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/abide.html#javascript-reference
-trait Abide extends js.Object {
-  def addErrorClasses(element: JQuery): Unit
-  def destroy(): Unit
-  def findFormError(element: JQuery): JQuery
-  def findLabel(element: JQuery): Boolean
-  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean
-  def removeErrorClasses(element: JQuery): Unit
-  def removeRadioErrorClasses(groupName: String): Unit
-  def requiredChecked(element: JQuery): Boolean
-  def resetForm(): Unit
-  def validateForm(): Boolean
-  def validateInput(element: JQuery): Boolean
-  def validateRadio(groupName: String): Boolean
-  def validateText(element: JQuery, pattern: String): Boolean
+// https://get.foundation/sites/docs/abide.html#javascript-reference
+@js.native
+trait Abide extends StObject {
+  
+  def addA11yAttributes(element: JQuery): Unit = js.native
+  
+  def addErrorClasses(element: JQuery): Unit = js.native
+  def addErrorClasses(element: JQuery, failedValidators: js.Array[String]): Unit = js.native
+  
+  def addGlobalErrorA11yAttributes(element: JQuery): Unit = js.native
+  
+  def disableValidation(): Unit = js.native
+  
+  def enableValidation(): Unit = js.native
+  
+  def findCheckboxLabels(elements: JQuery): Boolean = js.native
+  
+  def findFormError(element: JQuery): JQuery = js.native
+  def findFormError(element: JQuery, failedValidators: js.Array[String]): JQuery = js.native
+  
+  def findLabel(element: JQuery): Boolean = js.native
+  
+  def findRadioLabels(elements: JQuery): Boolean = js.native
+  
+  var initialized: Boolean = js.native
+  
+  def matchValidation(element: JQuery, validators: String, required: Boolean): Boolean = js.native
+  
+  def removeCheckboxErrorClasses(groupName: String): Unit = js.native
+  
+  def removeErrorClasses(element: JQuery): Unit = js.native
+  
+  def removeRadioErrorClasses(groupName: String): Unit = js.native
+  
+  def requiredCheck(element: JQuery): Boolean = js.native
+  
+  def resetForm(): Unit = js.native
+  
+  def validateCheckbox(groupName: String): Boolean = js.native
+  
+  def validateForm(): Boolean = js.native
+  
+  def validateInput(element: JQuery): Boolean = js.native
+  
+  def validateRadio(groupName: String): Boolean = js.native
+  
+  def validateText(element: JQuery, pattern: String): Boolean = js.native
 }
-
-object Abide {
-  @scala.inline
-  def apply(
-    addErrorClasses: JQuery => Callback,
-    destroy: Callback,
-    findFormError: JQuery => CallbackTo[JQuery],
-    findLabel: JQuery => CallbackTo[Boolean],
-    matchValidation: (JQuery, String, Boolean) => CallbackTo[Boolean],
-    removeErrorClasses: JQuery => Callback,
-    removeRadioErrorClasses: String => Callback,
-    requiredChecked: JQuery => CallbackTo[Boolean],
-    resetForm: Callback,
-    validateForm: CallbackTo[Boolean],
-    validateInput: JQuery => CallbackTo[Boolean],
-    validateRadio: String => CallbackTo[Boolean],
-    validateText: (JQuery, String) => CallbackTo[Boolean]
-  ): Abide = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addErrorClasses")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => addErrorClasses(t0).runNow()))
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.updateDynamic("findFormError")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => findFormError(t0).runNow()))
-    __obj.updateDynamic("findLabel")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => findLabel(t0).runNow()))
-    __obj.updateDynamic("matchValidation")(js.Any.fromFunction3((t0: typingsJapgolly.foundationSites.JQuery, t1: java.lang.String, t2: scala.Boolean) => matchValidation(t0, t1, t2).runNow()))
-    __obj.updateDynamic("removeErrorClasses")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => removeErrorClasses(t0).runNow()))
-    __obj.updateDynamic("removeRadioErrorClasses")(js.Any.fromFunction1((t0: java.lang.String) => removeRadioErrorClasses(t0).runNow()))
-    __obj.updateDynamic("requiredChecked")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => requiredChecked(t0).runNow()))
-    __obj.updateDynamic("resetForm")(resetForm.toJsFn)
-    __obj.updateDynamic("validateForm")(validateForm.toJsFn)
-    __obj.updateDynamic("validateInput")(js.Any.fromFunction1((t0: typingsJapgolly.foundationSites.JQuery) => validateInput(t0).runNow()))
-    __obj.updateDynamic("validateRadio")(js.Any.fromFunction1((t0: java.lang.String) => validateRadio(t0).runNow()))
-    __obj.updateDynamic("validateText")(js.Any.fromFunction2((t0: typingsJapgolly.foundationSites.JQuery, t1: java.lang.String) => validateText(t0, t1).runNow()))
-    __obj.asInstanceOf[Abide]
-  }
-}
-

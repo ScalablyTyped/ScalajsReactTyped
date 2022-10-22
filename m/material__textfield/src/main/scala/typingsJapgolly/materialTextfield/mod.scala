@@ -1,133 +1,389 @@
 package typingsJapgolly.materialTextfield
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialFloatingLabel.mod.MDCFloatingLabel
-import typingsJapgolly.materialLineRipple.mod.MDCLineRipple
-import typingsJapgolly.materialNotchedOutline.mod.MDCNotchedOutline
-import typingsJapgolly.materialRipple.mod.MDCRipple
-import typingsJapgolly.materialRipple.mod.MDCRippleFoundation
-import typingsJapgolly.materialTextfield.adapterMod.FoundationMapType
-import typingsJapgolly.materialTextfield.adapterMod.MDCTextFieldAdapter
-import typingsJapgolly.materialTextfield.foundationMod.default
-import typingsJapgolly.materialTextfield.helperTextAdapterMod.MDCTextFieldHelperTextAdapter
-import typingsJapgolly.materialTextfield.iconAdapterMod.MDCTextFieldIconAdapter
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldAdapte
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldCharac
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldFounda
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldHelper
+import typingsJapgolly.materialTextfield.anon.PartialMDCTextFieldIconAd
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/textfield", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@material/textfield", JSImport.Default)
   @js.native
-  class MDCTextField ()
-    extends typingsJapgolly.materialBase.componentMod.default[MDCTextFieldAdapter, default] {
-    var disabled: Boolean = js.native
-    var helperTextContent: String = js.native
-    var max: String = js.native
-    var maxLength: Double = js.native
-    var min: String = js.native
-    var minLength: Double = js.native
-    var pattern: String = js.native
-    var required: Boolean = js.native
-    var step: String = js.native
-    /**
-      * Ideally we would use a 'writeonly' modifier here since this is a setter,
-      * but such a thing does not exist.
-      * https://github.com/Microsoft/TypeScript/issues/4839
-      * https://github.com/Microsoft/TypeScript/issues/21759
-      */
-    var useNativeValidation: Boolean = js.native
-    var valid: Boolean = js.native
-    var value: String = js.native
-    /**
-      * Initiliazes the Text Field's internal state based on the environment's
-      * state.
-      */
-    def initialSyncWithDom(): Unit = js.native
-    def initialize(
-      rippleFactory: js.UndefOr[js.Function2[/* el */ Element, /* foundation */ MDCRippleFoundation, MDCRipple]],
-      lineRippleFactory: js.UndefOr[js.Function1[/* el */ Element, MDCLineRipple]],
-      helperTextFactory: js.UndefOr[
-          js.Function1[
-            /* el */ Element, 
-            typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperText
-          ]
-        ],
-      iconFactory: js.UndefOr[
-          js.Function1[/* el */ Element, typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIcon]
-        ],
-      labelFactory: js.UndefOr[js.Function1[/* el */ Element, MDCFloatingLabel]],
-      outlineFactory: js.UndefOr[js.Function1[/* el */ Element, MDCNotchedOutline]]
-    ): Unit = js.native
-    /**
-      * Recomputes the outline SVG path for the outline element.
-      */
-    def layout(): Unit = js.native
+  open class default ()
+    extends typingsJapgolly.materialTextfield.iconMod.default {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
   }
   
+  /**
+    * Label should always float for these types as they show some UI even if value
+    * is empty.
+    */
+  @JSImport("@material/textfield", "ALWAYS_FLOAT_TYPES")
   @js.native
-  class MDCTextFieldFoundation protected () extends default {
-    def this(adapter: MDCTextFieldAdapter) = this()
-    def this(adapter: MDCTextFieldAdapter, foundationMap: FoundationMapType) = this()
+  val ALWAYS_FLOAT_TYPES: js.Array[String] = js.native
+  
+  @JSImport("@material/textfield", "MDCTextField")
+  @js.native
+  open class MDCTextField protected ()
+    extends typingsJapgolly.materialTextfield.componentMod.MDCTextField {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTextfield.foundationMod.MDCTextFieldFoundation,
+      args: Any*
+    ) = this()
   }
-  
-  @js.native
-  class MDCTextFieldHelperText ()
-    extends typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperText
-  
-  @js.native
-  class MDCTextFieldHelperTextFoundation ()
-    extends typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperTextFoundation
-  
-  @js.native
-  class MDCTextFieldIcon ()
-    extends typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIcon
-  
-  @js.native
-  class MDCTextFieldIconFoundation ()
-    extends typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIconFoundation
-  
   /* static members */
-  @js.native
-  object MDCTextField extends js.Object {
-    def attachTo(root: Element): MDCTextField = js.native
+  object MDCTextField {
+    
+    @JSImport("@material/textfield", "MDCTextField")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTextfield.componentMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTextfield.componentMod.MDCTextField]
   }
   
+  @JSImport("@material/textfield", "MDCTextFieldCharacterCounter")
+  @js.native
+  open class MDCTextFieldCharacterCounter protected ()
+    extends typingsJapgolly.materialTextfield.characterCounterMod.MDCTextFieldCharacterCounter {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTextfield.characterCounterFoundationMod.MDCTextFieldCharacterCounterFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTextFieldFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialTextfield.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTextFieldAdapter = js.native
-    val numbers: typingsJapgolly.materialTextfield.constantsMod.numbers = js.native
-    val strings: typingsJapgolly.materialTextfield.constantsMod.strings = js.native
+  object MDCTextFieldCharacterCounter {
+    
+    @JSImport("@material/textfield", "MDCTextFieldCharacterCounter")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTextfield.characterCounterComponentMod.MDCTextFieldCharacterCounter]
   }
   
+  @JSImport("@material/textfield", "MDCTextFieldCharacterCounterFoundation")
+  @js.native
+  open class MDCTextFieldCharacterCounterFoundation ()
+    extends typingsJapgolly.materialTextfield.characterCounterMod.MDCTextFieldCharacterCounterFoundation {
+    def this(adapter: PartialMDCTextFieldCharac) = this()
+  }
+  
+  @JSImport("@material/textfield", "MDCTextFieldFoundation")
+  @js.native
+  /**
+    * @param adapter
+    * @param foundationMap Map from subcomponent names to their subfoundations.
+    */
+  open class MDCTextFieldFoundation ()
+    extends typingsJapgolly.materialTextfield.foundationMod.MDCTextFieldFoundation {
+    def this(adapter: PartialMDCTextFieldAdapte) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
+    def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
+  }
+  
+  @JSImport("@material/textfield", "MDCTextFieldHelperText")
+  @js.native
+  open class MDCTextFieldHelperText protected ()
+    extends typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperText {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTextFieldHelperText extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperText = js.native
+  object MDCTextFieldHelperText {
+    
+    @JSImport("@material/textfield", "MDCTextFieldHelperText")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
   }
   
+  @JSImport("@material/textfield", "MDCTextFieldHelperTextFoundation")
+  @js.native
+  open class MDCTextFieldHelperTextFoundation ()
+    extends typingsJapgolly.materialTextfield.helperTextMod.MDCTextFieldHelperTextFoundation {
+    def this(adapter: PartialMDCTextFieldHelper) = this()
+  }
+  
+  @JSImport("@material/textfield", "MDCTextFieldIcon")
+  @js.native
+  open class MDCTextFieldIcon protected ()
+    extends typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIcon {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCTextFieldHelperTextFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialTextfield.helperTextConstantsMod.cssClasses = js.native
-    val defaultAdapter: MDCTextFieldHelperTextAdapter = js.native
-    val strings: typingsJapgolly.materialTextfield.helperTextConstantsMod.strings = js.native
+  object MDCTextFieldIcon {
+    
+    @JSImport("@material/textfield", "MDCTextFieldIcon")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialTextfield.iconComponentMod.MDCTextFieldIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialTextfield.iconComponentMod.MDCTextFieldIcon]
   }
   
-  /* static members */
+  @JSImport("@material/textfield", "MDCTextFieldIconFoundation")
   @js.native
-  object MDCTextFieldIcon extends js.Object {
-    def attachTo(root: Element): typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIcon = js.native
+  open class MDCTextFieldIconFoundation ()
+    extends typingsJapgolly.materialTextfield.iconMod.MDCTextFieldIconFoundation {
+    def this(adapter: PartialMDCTextFieldIconAd) = this()
   }
   
-  /* static members */
+  /**
+    * Whitelist based off of
+    * https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Constraint_validation
+    * under the "Validation-related attributes" section.
+    */
+  @JSImport("@material/textfield", "VALIDATION_ATTR_WHITELIST")
   @js.native
-  object MDCTextFieldIconFoundation extends js.Object {
-    val defaultAdapter: MDCTextFieldIconAdapter = js.native
-    val strings: typingsJapgolly.materialTextfield.iconConstantsMod.strings = js.native
+  val VALIDATION_ATTR_WHITELIST: js.Array[String] = js.native
+  
+  object characterCountCssClasses {
+    
+    @JSImport("@material/textfield", "characterCountCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "characterCountCssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
+  object characterCountStrings {
+    
+    @JSImport("@material/textfield", "characterCountStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "characterCountStrings.ROOT_SELECTOR")
+    @js.native
+    def ROOT_SELECTOR: String = js.native
+    inline def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object cssClasses {
+    
+    @JSImport("@material/textfield", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "cssClasses.DISABLED")
+    @js.native
+    def DISABLED: String = js.native
+    inline def DISABLED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DISABLED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.FOCUSED")
+    @js.native
+    def FOCUSED: String = js.native
+    inline def FOCUSED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FOCUSED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.HELPER_LINE")
+    @js.native
+    def HELPER_LINE: String = js.native
+    inline def HELPER_LINE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_LINE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.INVALID")
+    @js.native
+    def INVALID: String = js.native
+    inline def INVALID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INVALID")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.LABEL_FLOATING")
+    @js.native
+    def LABEL_FLOATING: String = js.native
+    inline def LABEL_FLOATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_FLOATING")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.NO_LABEL")
+    @js.native
+    def NO_LABEL: String = js.native
+    inline def NO_LABEL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_LABEL")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.OUTLINED")
+    @js.native
+    def OUTLINED: String = js.native
+    inline def OUTLINED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINED")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.TEXTAREA")
+    @js.native
+    def TEXTAREA: String = js.native
+    inline def TEXTAREA_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXTAREA")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.WITH_INTERNAL_COUNTER")
+    @js.native
+    def WITH_INTERNAL_COUNTER: String = js.native
+    inline def WITH_INTERNAL_COUNTER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_INTERNAL_COUNTER")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.WITH_LEADING_ICON")
+    @js.native
+    def WITH_LEADING_ICON: String = js.native
+    inline def WITH_LEADING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_LEADING_ICON")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "cssClasses.WITH_TRAILING_ICON")
+    @js.native
+    def WITH_TRAILING_ICON: String = js.native
+    inline def WITH_TRAILING_ICON_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WITH_TRAILING_ICON")(x.asInstanceOf[js.Any])
+  }
+  
+  object helperTextCssClasses {
+    
+    @JSImport("@material/textfield", "helperTextCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "helperTextCssClasses.HELPER_TEXT_PERSISTENT")
+    @js.native
+    def HELPER_TEXT_PERSISTENT: String = js.native
+    inline def HELPER_TEXT_PERSISTENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_PERSISTENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "helperTextCssClasses.HELPER_TEXT_VALIDATION_MSG")
+    @js.native
+    def HELPER_TEXT_VALIDATION_MSG: String = js.native
+    inline def HELPER_TEXT_VALIDATION_MSG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HELPER_TEXT_VALIDATION_MSG")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "helperTextCssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+  }
+  
+  object helperTextStrings {
+    
+    @JSImport("@material/textfield", "helperTextStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "helperTextStrings.ARIA_HIDDEN")
+    @js.native
+    def ARIA_HIDDEN: String = js.native
+    inline def ARIA_HIDDEN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_HIDDEN")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "helperTextStrings.ROLE")
+    @js.native
+    def ROLE: String = js.native
+    inline def ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROLE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "helperTextStrings.ROOT_SELECTOR")
+    @js.native
+    def ROOT_SELECTOR: String = js.native
+    inline def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
+  }
+  
+  object iconCssClasses {
+    
+    @JSImport("@material/textfield", "iconCssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "iconCssClasses.ROOT")
+    @js.native
+    def ROOT: String = js.native
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+  }
+  
+  object iconStrings {
+    
+    @JSImport("@material/textfield", "iconStrings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "iconStrings.ICON_EVENT")
+    @js.native
+    def ICON_EVENT: String = js.native
+    inline def ICON_EVENT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_EVENT")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "iconStrings.ICON_ROLE")
+    @js.native
+    def ICON_ROLE: String = js.native
+    inline def ICON_ROLE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ICON_ROLE")(x.asInstanceOf[js.Any])
+  }
+  
+  object numbers {
+    
+    @JSImport("@material/textfield", "numbers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "numbers.LABEL_SCALE")
+    @js.native
+    def LABEL_SCALE: Double = js.native
+    inline def LABEL_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SCALE")(x.asInstanceOf[js.Any])
+  }
+  
+  object strings {
+    
+    @JSImport("@material/textfield", "strings")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/textfield", "strings.ARIA_CONTROLS")
+    @js.native
+    def ARIA_CONTROLS: String = js.native
+    inline def ARIA_CONTROLS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_CONTROLS")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.ARIA_DESCRIBEDBY")
+    @js.native
+    def ARIA_DESCRIBEDBY: String = js.native
+    inline def ARIA_DESCRIBEDBY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ARIA_DESCRIBEDBY")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.INPUT_SELECTOR")
+    @js.native
+    def INPUT_SELECTOR: String = js.native
+    inline def INPUT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INPUT_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.LABEL_SELECTOR")
+    @js.native
+    def LABEL_SELECTOR: String = js.native
+    inline def LABEL_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LABEL_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.LEADING_ICON_SELECTOR")
+    @js.native
+    def LEADING_ICON_SELECTOR: String = js.native
+    inline def LEADING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LEADING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.LINE_RIPPLE_SELECTOR")
+    @js.native
+    def LINE_RIPPLE_SELECTOR: String = js.native
+    inline def LINE_RIPPLE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.OUTLINE_SELECTOR")
+    @js.native
+    def OUTLINE_SELECTOR: String = js.native
+    inline def OUTLINE_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OUTLINE_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.PREFIX_SELECTOR")
+    @js.native
+    def PREFIX_SELECTOR: String = js.native
+    inline def PREFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PREFIX_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.SUFFIX_SELECTOR")
+    @js.native
+    def SUFFIX_SELECTOR: String = js.native
+    inline def SUFFIX_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUFFIX_SELECTOR")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/textfield", "strings.TRAILING_ICON_SELECTOR")
+    @js.native
+    def TRAILING_ICON_SELECTOR: String = js.native
+    inline def TRAILING_ICON_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRAILING_ICON_SELECTOR")(x.asInstanceOf[js.Any])
+  }
 }
-

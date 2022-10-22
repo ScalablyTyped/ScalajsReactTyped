@@ -1,7 +1,7 @@
 
 # Scala.js typings for yesql
 
-Typings are for version 3.2
+Typings are for version 4.1
 
 ## Library description:
 Read named SQL statements from .sql files. Also named parameters for prepared statements.
@@ -10,10 +10,10 @@ Read named SQL statements from .sql files. Also named parameters for prepared st
 | ------------------ | :-------------: |
 | Full name          | yesql |
 | Keywords           | sql, named, parameter, prepared, statement, pg, postgres, node-pg, node-postgres, mysql, pokemon, hack, growth |
-| # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 38006 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 24512.0 |
+| # stars            | 51.0 |
 
 ## Links
 - [Homepage](https://github.com/pihvi/yesql#readme)

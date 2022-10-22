@@ -1,8 +1,8 @@
 package typingsJapgolly.cordovaPluginQrscanner
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
 * An object representing an error issued by QRScanner.
@@ -28,27 +28,36 @@ import scala.scalajs.js.annotation._
 *    7 | `LIGHT_UNAVAILABLE`         | The device light is unavailable because it doesn't exist or is otherwise unable to be configured.
 *    8 | `OPEN_SETTINGS_UNAVAILABLE` | The device is unable to open settings.
 */
-trait QRScannerError extends js.Object {
+trait QRScannerError extends StObject {
+  
   /**
     * A simple message describing this QRScannerError.
     */
   var _message: String
+  
   /**
     * The standard number identifying the type of this QRScannerError.
     */
   var code: Double
+  
   /**
     * The standard string identifying the type of this QRScannerError.
     */
   var name: String
 }
-
 object QRScannerError {
-  @scala.inline
-  def apply(_message: String, code: Double, name: String): QRScannerError = {
-    val __obj = js.Dynamic.literal(_message = _message.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
   
+  inline def apply(_message: String, code: Double, name: String): QRScannerError = {
+    val __obj = js.Dynamic.literal(_message = _message.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[QRScannerError]
   }
+  
+  extension [Self <: QRScannerError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def set_message(value: String): Self = StObject.set(x, "_message", value.asInstanceOf[js.Any])
+  }
 }
-

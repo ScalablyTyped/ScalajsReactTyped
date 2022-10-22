@@ -1,22 +1,34 @@
-package typingsJapgolly.openapiTypes.mod
+package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.openapiTypes.anon.Consumes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object OpenAPIV2 {
-  type DefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SchemaObject]
-  type ExampleObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type HeaderObject = typingsJapgolly.openapiTypes.mod.OpenAPIV2.ItemsObject
-  type HeadersObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.HeaderObject]
-  type MimeTypes = js.Array[java.lang.String]
-  type Parameters = js.Array[
-    typingsJapgolly.openapiTypes.mod.OpenAPIV2.ReferenceObject | typingsJapgolly.openapiTypes.mod.OpenAPIV2.Parameter
-  ]
-  type ParametersDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.ParameterObject]
-  type PathsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.PathItemObject | js.Any]
-  type ResponsesDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.ResponseObject]
-  type ScopesObject = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type SecurityDefinitionsObject = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeObject]
-  type SecurityRequirementObject = org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
-}
+
+type DefinitionsObject = StringDictionary[SchemaObject]
+
+type ExampleObject = StringDictionary[Any]
+
+type HeaderObject = ItemsObject
+
+type HeadersObject = StringDictionary[HeaderObject]
+
+type MimeTypes = js.Array[String]
+
+type OperationObject[T /* <: js.Object */] = Consumes & T
+
+type Parameters = js.Array[ReferenceObject | Parameter]
+
+type ParametersDefinitionsObject = StringDictionary[ParameterObject]
+
+type PathsObject[T /* <: js.Object */] = StringDictionary[PathItemObject[T]]
+
+type ResponsesDefinitionsObject = StringDictionary[ResponseObject]
+
+type ScopesObject = StringDictionary[Any]
+
+type SecurityDefinitionsObject = StringDictionary[SecuritySchemeObject]
+
+type SecurityRequirementObject = StringDictionary[js.Array[String]]

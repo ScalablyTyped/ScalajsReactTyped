@@ -1,65 +1,59 @@
 package typingsJapgolly.phenomnomnominalTsquery
 
-import typingsJapgolly.phenomnomnominalTsquery.tsqueryTypesMod.TSQueryAttributeOperatorType
+import typingsJapgolly.phenomnomnominalTsquery.distSrcTsqueryTypesMod.TSQueryAttributeOperatorType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object phenomnomnominalTsqueryStrings {
-  @js.native
-  sealed trait Equalssign extends js.Object
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends js.Object
+  sealed trait Equalssign extends StObject
+  inline def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
   
   @js.native
-  sealed trait Greaterthansign extends js.Object
+  sealed trait ExclamationmarkEqualssign extends StObject
+  inline def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends js.Object
+  sealed trait Greaterthansign extends StObject
+  inline def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait Lessthansign extends js.Object
+  sealed trait GreaterthansignEqualssign extends StObject
+  inline def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends js.Object
+  sealed trait Lessthansign extends StObject
+  inline def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait every extends js.Object
+  sealed trait LessthansignEqualssign extends StObject
+  inline def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait literal extends TSQueryAttributeOperatorType
+  sealed trait every extends StObject
+  inline def every: every = "every".asInstanceOf[every]
   
   @js.native
-  sealed trait regexp extends TSQueryAttributeOperatorType
+  sealed trait literal
+    extends StObject
+       with TSQueryAttributeOperatorType
+  inline def literal: literal = "literal".asInstanceOf[literal]
   
   @js.native
-  sealed trait some extends js.Object
+  sealed trait regexp
+    extends StObject
+       with TSQueryAttributeOperatorType
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait `type` extends TSQueryAttributeOperatorType
+  sealed trait some extends StObject
+  inline def some: some = "some".asInstanceOf[some]
   
-  @scala.inline
-  def Equalssign: Equalssign = "=".asInstanceOf[Equalssign]
-  @scala.inline
-  def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
-  @scala.inline
-  def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
-  @scala.inline
-  def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
-  @scala.inline
-  def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
-  @scala.inline
-  def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
-  @scala.inline
-  def every: every = "every".asInstanceOf[every]
-  @scala.inline
-  def literal: literal = "literal".asInstanceOf[literal]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def some: some = "some".asInstanceOf[some]
-  @scala.inline
-  def `type`: `type` = "type".asInstanceOf[`type`]
+  @js.native
+  sealed trait `type`
+    extends StObject
+       with TSQueryAttributeOperatorType
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
 }
-

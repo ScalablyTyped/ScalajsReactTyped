@@ -1,27 +1,26 @@
 package typingsJapgolly.n3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("n3", "NamedNode")
 @js.native
-class NamedNode protected ()
-  extends typingsJapgolly.rdfJs.mod.NamedNode
-     with QuadGraph
-     with QuadObject
-     with QuadSubject
-     with Quad_Predicate
-     with Term {
-  def this(iri: String) = this()
+open class NamedNode[Iri /* <: String */] protected ()
+  extends StObject
+     with typingsJapgolly.rdfjsTypes.dataModelMod.NamedNode[Iri] {
+  def this(iri: Iri) = this()
+  
   val id: String = js.native
+  
   def toJSON(): js.Object = js.native
 }
-
 /* static members */
-@JSImport("n3", "NamedNode")
-@js.native
-object NamedNode extends js.Object {
-  def subclass(`type`: js.Any): Unit = js.native
+object NamedNode {
+  
+  @JSImport("n3", "NamedNode")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def subclass(`type`: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

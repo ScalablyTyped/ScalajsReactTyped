@@ -1,21 +1,17 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.less_walking
   - typingsJapgolly.googleMaps.googleMapsStrings.fewer_transfers
 */
-trait TransitRoutingPreference extends js.Object
-
+trait TransitRoutingPreference extends StObject
 object TransitRoutingPreference {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fewer_transfers: typingsJapgolly.googleMaps.googleMapsStrings.fewer_transfers = this.cast("fewer_transfers")
-  @scala.inline
-  def less_walking: typingsJapgolly.googleMaps.googleMapsStrings.less_walking = this.cast("less_walking")
+  
+  inline def fewer_transfers: typingsJapgolly.googleMaps.googleMapsStrings.fewer_transfers = "fewer_transfers".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.fewer_transfers]
+  
+  inline def less_walking: typingsJapgolly.googleMaps.googleMapsStrings.less_walking = "less_walking".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.less_walking]
 }
-

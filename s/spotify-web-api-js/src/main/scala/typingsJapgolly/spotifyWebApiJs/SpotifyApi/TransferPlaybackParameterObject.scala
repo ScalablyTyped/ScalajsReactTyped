@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransferPlaybackParameterObject extends js.Object {
+trait TransferPlaybackParameterObject extends StObject {
+  
   var play: js.UndefOr[Boolean] = js.undefined
 }
-
 object TransferPlaybackParameterObject {
-  @scala.inline
-  def apply(play: js.UndefOr[Boolean] = js.undefined): TransferPlaybackParameterObject = {
+  
+  inline def apply(): TransferPlaybackParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(play)) __obj.updateDynamic("play")(play.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransferPlaybackParameterObject]
   }
+  
+  extension [Self <: TransferPlaybackParameterObject](x: Self) {
+    
+    inline def setPlay(value: Boolean): Self = StObject.set(x, "play", value.asInstanceOf[js.Any])
+    
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+  }
 }
-

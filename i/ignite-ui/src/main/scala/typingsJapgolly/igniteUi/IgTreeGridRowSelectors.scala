@@ -2,156 +2,200 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTreeGridRowSelectors
-  extends /**
-	 * Option for igTreeGridRowSelectors
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "biState" Checkboxes are rendered and support two states(checked and unchecked). Checkboxes do not cascade down or up in this mode.
-  	 * "triState" Checkboxes are rendered and support three states(checked, partial and unchecked). Checkboxes cascade up and down in this mode.
-  	 */
+    * Gets the type of checkboxes rendered in the row selector. Can be set only at initialization.
+    *
+    *
+    * Valid values:
+    * "biState" Checkboxes are rendered and support two states(checked and unchecked). Checkboxes do not cascade down or up in this mode.
+    * "triState" Checkboxes are rendered and support three states(checked, partial and unchecked). Checkboxes cascade up and down in this mode.
+    */
   var checkBoxMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after a row selector checkbox had changed state.
-  	 */
+    * Event fired after a row selector checkbox had changed state.
+    */
   var checkBoxStateChanged: js.UndefOr[CheckBoxStateChangedEvent] = js.undefined
+  
   /**
-  	 * Event fired when a row selector checkbox is changing.
-  	 */
+    * Event fired when a row selector checkbox is changing.
+    */
   var checkBoxStateChanging: js.UndefOr[CheckBoxStateChangingEvent] = js.undefined
+  
   /**
-  	 * Custom template for "deselect all" overlay with paging
-  	 * Element with attribute data-rs-deselect-all is used for sellecting all the records
-  	 * Element with attribute data-rs-close-all is used for closing the overlay
-  	 * The default template is "<div class='ui-widget-header ui-priority-secondary' tabindex='0'><div>You have deselected ${unchecked} records. <a href='#' tabindex='0' data-rs-deselect-all>Deselect all ${totalRecordsCount} records</a><div style='float:right;'><span data-rs-close-all class='ui-icon-close ui-icon ui-button' tabindex='0'></div></span></div></div>"
-  	 * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
-  	 *
-  	 */
+    * Custom template for "deselect all" overlay with paging
+    * Element with attribute data-rs-deselect-all is used for sellecting all the records
+    * Element with attribute data-rs-close-all is used for closing the overlay
+    * The default template is "<div class='ui-widget-header ui-priority-secondary' tabindex='0'><div>You have deselected ${unchecked} records. <a href='#' tabindex='0' data-rs-deselect-all>Deselect all ${totalRecordsCount} records</a><div style='float:right;'><span data-rs-close-all class='ui-icon-close ui-icon ui-button' tabindex='0'></div></span></div></div>"
+    * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
+    *
+    */
   var deselectAllForPagingTemplate: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Determines whether the row selectors column should contain checkboxes
-  	 *
-  	 */
+    * Determines whether the row selectors column should contain checkboxes
+    *
+    */
   var enableCheckBoxes: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Determines whether the row selectors column should contain row numbering
-  	 *
-  	 */
+    * Determines whether the row selectors column should contain row numbering
+    *
+    */
   var enableRowNumbering: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Enables/disables showing an overlay after clicking on the header checkbox, which allows selecting all records from all pages.
-  	 *
-  	 */
+    * Enables/disables showing an overlay after clicking on the header checkbox, which allows selecting all records from all pages.
+    *
+    */
   var enableSelectAllForPaging: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
-  	 */
+    * This option is inherited from a parent widget and it's not applicable for the igTreeGrid.
+    */
   var inherit: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[IgGridRowSelectorsLocale] = js.undefined
+  
   /**
-  	 * Determines whether the selection feature is required for the row selectors. If set to "false"
-  	 * the widget will not check for Selection availability. If set to "true" an exception will be thrown if Selection is
-  	 * not available.
-  	 *
-  	 */
+    * Determines whether the selection feature is required for the row selectors. If set to "false"
+    * the widget will not check for Selection availability. If set to "true" an exception will be thrown if Selection is
+    * not available.
+    *
+    */
   var requireSelection: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * The seed to be added to the default numbering
-  	 *
-  	 */
+    * The seed to be added to the default numbering
+    *
+    */
   var rowNumberingSeed: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Event fired after a row selector is clicked.
-  	 */
+    * Event fired after a row selector is clicked.
+    */
   var rowSelectorClicked: js.UndefOr[RowSelectorClickedEvent] = js.undefined
+  
   /**
-  	 * defines width of the row selector`s column in pixels or percentage.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" The row selector column width can be set in pixels (px) and percentage (%)
-  	 * "number" The row selector width can be set as a number
-  	 * "null" will let the feature decide the best width depending on enabled contents
-  	 */
+    * defines width of the row selector`s column in pixels or percentage.
+    *
+    *
+    * Valid values:
+    * "string" The row selector column width can be set in pixels (px) and percentage (%)
+    * "number" The row selector width can be set as a number
+    * "null" will let the feature decide the best width depending on enabled contents
+    */
   var rowSelectorColumnWidth: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Determines row numbering format.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "sequential" Defines numbering format to be the index of the visible records.
-  	 * "hierarchical" Defines numbering format to be concatenation of the parent and children indexes.
-  	 */
+    * Determines row numbering format.
+    *
+    *
+    * Valid values:
+    * "sequential" Defines numbering format to be the index of the visible records.
+    * "hierarchical" Defines numbering format to be concatenation of the parent and children indexes.
+    */
   var rowSelectorNumberingMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Custom template for "select all" overlay with paging
-  	 * Element with attribute data-rs-select-all is used for sellecting all the records
-  	 * Element with attribute data-rs-close-all is used for closing the overlay
-  	 * The default template is "<div class='ui-widget-header ui-priority-secondary' tabindex='0'><div>You have selected ${checked} records. <a href='#' tabindex='0' data-rs-select-all>Select all ${totalRecordsCount} records</a><div style='float:right;'><span data-rs-close-all class='ui-icon-close ui-icon ui-button' tabindex='0'></div></span></div></div>"
-  	 * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
-  	 *
-  	 */
+    * Custom template for "select all" overlay with paging
+    * Element with attribute data-rs-select-all is used for sellecting all the records
+    * Element with attribute data-rs-close-all is used for closing the overlay
+    * The default template is "<div class='ui-widget-header ui-priority-secondary' tabindex='0'><div>You have selected ${checked} records. <a href='#' tabindex='0' data-rs-select-all>Select all ${totalRecordsCount} records</a><div style='float:right;'><span data-rs-close-all class='ui-icon-close ui-icon ui-button' tabindex='0'></div></span></div></div>"
+    * There is also ${allCheckedRecords} parameter which is not used in the default template, but it represents the checked records from all pages.
+    *
+    */
   var selectAllForPagingTemplate: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Determines whether checkboxes will be shown only if row selectors are on focus/selected.
-  	 *
-  	 */
+    * Determines whether checkboxes will be shown only if row selectors are on focus/selected.
+    *
+    */
   var showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgTreeGridRowSelectors {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igTreeGridRowSelectors
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    checkBoxMode: String = null,
-    checkBoxStateChanged: (/* event */ Event_, /* ui */ CheckBoxStateChangedEventUIParam) => Callback = null,
-    checkBoxStateChanging: (/* event */ Event_, /* ui */ CheckBoxStateChangingEventUIParam) => Callback = null,
-    deselectAllForPagingTemplate: String = null,
-    enableCheckBoxes: js.UndefOr[Boolean] = js.undefined,
-    enableRowNumbering: js.UndefOr[Boolean] = js.undefined,
-    enableSelectAllForPaging: js.UndefOr[Boolean] = js.undefined,
-    inherit: js.UndefOr[Boolean] = js.undefined,
-    locale: IgGridRowSelectorsLocale = null,
-    requireSelection: js.UndefOr[Boolean] = js.undefined,
-    rowNumberingSeed: Int | Double = null,
-    rowSelectorClicked: (/* event */ Event_, /* ui */ RowSelectorClickedEventUIParam) => Callback = null,
-    rowSelectorColumnWidth: String | Double = null,
-    rowSelectorNumberingMode: String = null,
-    selectAllForPagingTemplate: String = null,
-    showCheckBoxesOnFocus: js.UndefOr[Boolean] = js.undefined
-  ): IgTreeGridRowSelectors = {
+  
+  inline def apply(): IgTreeGridRowSelectors = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (checkBoxMode != null) __obj.updateDynamic("checkBoxMode")(checkBoxMode.asInstanceOf[js.Any])
-    if (checkBoxStateChanged != null) __obj.updateDynamic("checkBoxStateChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CheckBoxStateChangedEventUIParam) => checkBoxStateChanged(t0, t1).runNow()))
-    if (checkBoxStateChanging != null) __obj.updateDynamic("checkBoxStateChanging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CheckBoxStateChangingEventUIParam) => checkBoxStateChanging(t0, t1).runNow()))
-    if (deselectAllForPagingTemplate != null) __obj.updateDynamic("deselectAllForPagingTemplate")(deselectAllForPagingTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableCheckBoxes)) __obj.updateDynamic("enableCheckBoxes")(enableCheckBoxes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableRowNumbering)) __obj.updateDynamic("enableRowNumbering")(enableRowNumbering.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSelectAllForPaging)) __obj.updateDynamic("enableSelectAllForPaging")(enableSelectAllForPaging.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireSelection)) __obj.updateDynamic("requireSelection")(requireSelection.asInstanceOf[js.Any])
-    if (rowNumberingSeed != null) __obj.updateDynamic("rowNumberingSeed")(rowNumberingSeed.asInstanceOf[js.Any])
-    if (rowSelectorClicked != null) __obj.updateDynamic("rowSelectorClicked")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowSelectorClickedEventUIParam) => rowSelectorClicked(t0, t1).runNow()))
-    if (rowSelectorColumnWidth != null) __obj.updateDynamic("rowSelectorColumnWidth")(rowSelectorColumnWidth.asInstanceOf[js.Any])
-    if (rowSelectorNumberingMode != null) __obj.updateDynamic("rowSelectorNumberingMode")(rowSelectorNumberingMode.asInstanceOf[js.Any])
-    if (selectAllForPagingTemplate != null) __obj.updateDynamic("selectAllForPagingTemplate")(selectAllForPagingTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckBoxesOnFocus)) __obj.updateDynamic("showCheckBoxesOnFocus")(showCheckBoxesOnFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridRowSelectors]
   }
+  
+  extension [Self <: IgTreeGridRowSelectors](x: Self) {
+    
+    inline def setCheckBoxMode(value: String): Self = StObject.set(x, "checkBoxMode", value.asInstanceOf[js.Any])
+    
+    inline def setCheckBoxModeUndefined: Self = StObject.set(x, "checkBoxMode", js.undefined)
+    
+    inline def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Callback): Self = StObject.set(x, "checkBoxStateChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CheckBoxStateChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCheckBoxStateChangedUndefined: Self = StObject.set(x, "checkBoxStateChanged", js.undefined)
+    
+    inline def setCheckBoxStateChanging(value: (/* event */ Event, /* ui */ CheckBoxStateChangingEventUIParam) => Callback): Self = StObject.set(x, "checkBoxStateChanging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CheckBoxStateChangingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCheckBoxStateChangingUndefined: Self = StObject.set(x, "checkBoxStateChanging", js.undefined)
+    
+    inline def setDeselectAllForPagingTemplate(value: String): Self = StObject.set(x, "deselectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setDeselectAllForPagingTemplateUndefined: Self = StObject.set(x, "deselectAllForPagingTemplate", js.undefined)
+    
+    inline def setEnableCheckBoxes(value: Boolean): Self = StObject.set(x, "enableCheckBoxes", value.asInstanceOf[js.Any])
+    
+    inline def setEnableCheckBoxesUndefined: Self = StObject.set(x, "enableCheckBoxes", js.undefined)
+    
+    inline def setEnableRowNumbering(value: Boolean): Self = StObject.set(x, "enableRowNumbering", value.asInstanceOf[js.Any])
+    
+    inline def setEnableRowNumberingUndefined: Self = StObject.set(x, "enableRowNumbering", js.undefined)
+    
+    inline def setEnableSelectAllForPaging(value: Boolean): Self = StObject.set(x, "enableSelectAllForPaging", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSelectAllForPagingUndefined: Self = StObject.set(x, "enableSelectAllForPaging", js.undefined)
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    
+    inline def setLocale(value: IgGridRowSelectorsLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setRequireSelection(value: Boolean): Self = StObject.set(x, "requireSelection", value.asInstanceOf[js.Any])
+    
+    inline def setRequireSelectionUndefined: Self = StObject.set(x, "requireSelection", js.undefined)
+    
+    inline def setRowNumberingSeed(value: Double): Self = StObject.set(x, "rowNumberingSeed", value.asInstanceOf[js.Any])
+    
+    inline def setRowNumberingSeedUndefined: Self = StObject.set(x, "rowNumberingSeed", js.undefined)
+    
+    inline def setRowSelectorClicked(value: (/* event */ Event, /* ui */ RowSelectorClickedEventUIParam) => Callback): Self = StObject.set(x, "rowSelectorClicked", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowSelectorClickedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowSelectorClickedUndefined: Self = StObject.set(x, "rowSelectorClicked", js.undefined)
+    
+    inline def setRowSelectorColumnWidth(value: String | Double): Self = StObject.set(x, "rowSelectorColumnWidth", value.asInstanceOf[js.Any])
+    
+    inline def setRowSelectorColumnWidthUndefined: Self = StObject.set(x, "rowSelectorColumnWidth", js.undefined)
+    
+    inline def setRowSelectorNumberingMode(value: String): Self = StObject.set(x, "rowSelectorNumberingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRowSelectorNumberingModeUndefined: Self = StObject.set(x, "rowSelectorNumberingMode", js.undefined)
+    
+    inline def setSelectAllForPagingTemplate(value: String): Self = StObject.set(x, "selectAllForPagingTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setSelectAllForPagingTemplateUndefined: Self = StObject.set(x, "selectAllForPagingTemplate", js.undefined)
+    
+    inline def setShowCheckBoxesOnFocus(value: Boolean): Self = StObject.set(x, "showCheckBoxesOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setShowCheckBoxesOnFocusUndefined: Self = StObject.set(x, "showCheckBoxesOnFocus", js.undefined)
+  }
 }
-

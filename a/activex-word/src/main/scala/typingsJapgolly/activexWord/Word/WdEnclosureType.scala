@@ -1,31 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
 */
-trait WdEnclosureType extends js.Object
-
+trait WdEnclosureType extends StObject
 object WdEnclosureType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdEnclosureCircle: `0` = this.cast(0)
-  @scala.inline
-  def wdEnclosureDiamond: `3` = this.cast(3)
-  @scala.inline
-  def wdEnclosureSquare: `1` = this.cast(1)
-  @scala.inline
-  def wdEnclosureTriangle: `2` = this.cast(2)
+  
+  inline def wdEnclosureCircle: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdEnclosureDiamond: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdEnclosureSquare: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdEnclosureTriangle: `2` = 2.asInstanceOf[`2`]
 }
-

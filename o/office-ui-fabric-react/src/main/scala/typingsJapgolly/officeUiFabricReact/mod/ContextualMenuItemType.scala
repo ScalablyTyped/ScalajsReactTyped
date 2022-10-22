@@ -1,19 +1,23 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ContextualMenuItemType")
 @js.native
-object ContextualMenuItemType extends js.Object {
-  /* 1 */ val Divider: typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Divider with Double = js.native
-  /* 2 */ val Header: typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Header with Double = js.native
-  /* 0 */ val Normal: typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Normal with Double = js.native
-  /* 3 */ val Section: typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType.Section with Double = js.native
+object ContextualMenuItemType extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.contextualMenuTypesMod.ContextualMenuItemType with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType & Double
   ] = js.native
+  
+  /* 1 */ val Divider: typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Divider & Double = js.native
+  
+  /* 2 */ val Header: typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Header & Double = js.native
+  
+  /* 0 */ val Normal: typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Normal & Double = js.native
+  
+  /* 3 */ val Section: typingsJapgolly.officeUiFabricReact.libComponentsContextualMenuContextualMenuDottypesMod.ContextualMenuItemType.Section & Double = js.native
 }
-

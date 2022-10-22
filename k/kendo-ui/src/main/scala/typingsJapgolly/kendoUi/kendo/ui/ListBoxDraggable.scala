@@ -1,28 +1,37 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxDraggable extends js.Object {
+trait ListBoxDraggable extends StObject {
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var hint: js.UndefOr[js.Function | String | JQuery] = js.undefined
+  
   var placeholder: js.UndefOr[js.Function | String | JQuery] = js.undefined
 }
-
 object ListBoxDraggable {
-  @scala.inline
-  def apply(
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    hint: js.Function | String | JQuery = null,
-    placeholder: js.Function | String | JQuery = null
-  ): ListBoxDraggable = {
+  
+  inline def apply(): ListBoxDraggable = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxDraggable]
   }
+  
+  extension [Self <: ListBoxDraggable](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setHint(value: js.Function | String | JQuery): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+    
+    inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+    
+    inline def setPlaceholder(value: js.Function | String | JQuery): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+  }
 }
-

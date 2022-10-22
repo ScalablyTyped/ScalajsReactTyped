@@ -1,14 +1,14 @@
 package typingsJapgolly.w3cWebUsb
 
-import typingsJapgolly.std.Event_
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("USBConnectionEvent")
 @js.native
-class USBConnectionEvent protected () extends Event_ {
-  def this(`type`: String, eventInitDict: USBConnectionEventInit) = this()
+trait USBConnectionEvent
+  extends StObject
+     with Event {
+  
   val device: USBDevice = js.native
 }
-

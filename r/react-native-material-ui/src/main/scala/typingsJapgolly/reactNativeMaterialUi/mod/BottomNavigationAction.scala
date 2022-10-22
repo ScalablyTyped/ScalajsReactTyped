@@ -1,43 +1,68 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.reactNativeMaterialUi.AnonActive
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.Active
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BottomNavigationAction extends js.Object {
+trait BottomNavigationAction extends StObject {
+  
   var active: Boolean
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var icon: Element | String
+  
   var key: js.UndefOr[String] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
-  var style: js.UndefOr[AnonActive] = js.undefined
+  
+  var style: js.UndefOr[Active] = js.undefined
+  
   var testID: js.UndefOr[String] = js.undefined
 }
-
 object BottomNavigationAction {
-  @scala.inline
-  def apply(
-    active: Boolean,
-    icon: Element | String,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    key: String = null,
-    label: String = null,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    style: AnonActive = null,
-    testID: String = null
-  ): BottomNavigationAction = {
+  
+  inline def apply(active: Boolean, icon: Element | String): BottomNavigationAction = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], icon = icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
     __obj.asInstanceOf[BottomNavigationAction]
   }
+  
+  extension [Self <: BottomNavigationAction](x: Self) {
+    
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcon(value: Element | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconVdomElement(value: VdomElement): Self = StObject.set(x, "icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setOnPress(value: Callback): Self = StObject.set(x, "onPress", value.toJsFn)
+    
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    
+    inline def setStyle(value: Active): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+  }
 }
-

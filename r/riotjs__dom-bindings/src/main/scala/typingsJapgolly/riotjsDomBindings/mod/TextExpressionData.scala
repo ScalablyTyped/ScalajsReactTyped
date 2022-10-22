@@ -1,23 +1,26 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextExpressionData
-  extends BaseExpressionData
-     with _ExpressionData {
+trait TextExpressionData[Scope]
+  extends StObject
+     with BaseExpressionData[Scope]
+     with _ExpressionData[Scope] {
+  
   var childNodeIndex: Double
 }
-
 object TextExpressionData {
-  @scala.inline
-  def apply(childNodeIndex: Double, evaluate: js.Any => CallbackTo[js.Any], `type`: ExpressionType): TextExpressionData = {
-    val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: js.Any) => evaluate(t0).runNow()))
+  
+  inline def apply[Scope](childNodeIndex: Double, evaluate: Scope => Any, `type`: ExpressionType): TextExpressionData[Scope] = {
+    val __obj = js.Dynamic.literal(childNodeIndex = childNodeIndex.asInstanceOf[js.Any], evaluate = js.Any.fromFunction1(evaluate))
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TextExpressionData]
+    __obj.asInstanceOf[TextExpressionData[Scope]]
+  }
+  
+  extension [Self <: TextExpressionData[?], Scope](x: Self & TextExpressionData[Scope]) {
+    
+    inline def setChildNodeIndex(value: Double): Self = StObject.set(x, "childNodeIndex", value.asInstanceOf[js.Any])
   }
 }
-

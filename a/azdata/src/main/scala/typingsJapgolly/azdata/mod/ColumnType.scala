@@ -1,35 +1,33 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ColumnType extends js.Object
-
+sealed trait ColumnType extends StObject
 @JSImport("azdata", "ColumnType")
 @js.native
-object ColumnType extends js.Object {
-  @js.native
-  sealed trait button extends ColumnType
-  
-  @js.native
-  sealed trait checkBox extends ColumnType
-  
-  @js.native
-  sealed trait text extends ColumnType
+object ColumnType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColumnType with Double] = js.native
-  /* 2 */ @js.native
-  object button extends TopLevel[button with Double]
+  def apply(value: Double): js.UndefOr[ColumnType & Double] = js.native
   
-  /* 1 */ @js.native
-  object checkBox extends TopLevel[checkBox with Double]
+  @js.native
+  sealed trait button
+    extends StObject
+       with ColumnType
+  /* 2 */ val button: typingsJapgolly.azdata.mod.ColumnType.button & Double = js.native
   
-  /* 0 */ @js.native
-  object text extends TopLevel[text with Double]
+  @js.native
+  sealed trait checkBox
+    extends StObject
+       with ColumnType
+  /* 1 */ val checkBox: typingsJapgolly.azdata.mod.ColumnType.checkBox & Double = js.native
   
+  @js.native
+  sealed trait text
+    extends StObject
+       with ColumnType
+  /* 0 */ val text: typingsJapgolly.azdata.mod.ColumnType.text & Double = js.native
 }
-

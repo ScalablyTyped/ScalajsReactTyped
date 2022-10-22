@@ -1,27 +1,26 @@
 package typingsJapgolly.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HttpService
   * see http://docs.angularjs.org/api/ng/service/$http
   */
 @js.native
-trait IHttpService extends js.Object {
-  /**
-    * Runtime equivalent of the $httpProvider.defaults property. Allows configuration of default headers, withCredentials as well as request and response transformations.
-    */
-  var defaults: IHttpProviderDefaults = js.native
-  /**
-    * Array of config objects for currently pending requests. This is primarily meant to be used for debugging purposes.
-    */
-  var pendingRequests: js.Array[IRequestConfig] = js.native
+trait IHttpService extends StObject {
+  
   /**
     * Object describing the request to be made and how it should be processed.
     */
   def apply[T](config: IRequestConfig): IHttpPromise[T] = js.native
+  
+  /**
+    * Runtime equivalent of the $httpProvider.defaults property. Allows configuration of default headers, withCredentials as well as request and response transformations.
+    */
+  var defaults: IHttpProviderDefaults = js.native
+  
   /**
     * Shortcut method to perform DELETE request.
     *
@@ -30,6 +29,7 @@ trait IHttpService extends js.Object {
     */
   def delete[T](url: String): IHttpPromise[T] = js.native
   def delete[T](url: String, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
   /**
     * Shortcut method to perform GET request.
     *
@@ -38,6 +38,7 @@ trait IHttpService extends js.Object {
     */
   def get[T](url: String): IHttpPromise[T] = js.native
   def get[T](url: String, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
   /**
     * Shortcut method to perform HEAD request.
     *
@@ -46,6 +47,7 @@ trait IHttpService extends js.Object {
     */
   def head[T](url: String): IHttpPromise[T] = js.native
   def head[T](url: String, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
   /**
     * Shortcut method to perform JSONP request.
     *
@@ -54,6 +56,7 @@ trait IHttpService extends js.Object {
     */
   def jsonp[T](url: String): IHttpPromise[T] = js.native
   def jsonp[T](url: String, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
   /**
     * Shortcut method to perform PATCH request.
     *
@@ -61,8 +64,14 @@ trait IHttpService extends js.Object {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def patch[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def patch[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def patch[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def patch[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
+  /**
+    * Array of config objects for currently pending requests. This is primarily meant to be used for debugging purposes.
+    */
+  var pendingRequests: js.Array[IRequestConfig] = js.native
+  
   /**
     * Shortcut method to perform POST request.
     *
@@ -70,8 +79,9 @@ trait IHttpService extends js.Object {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def post[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def post[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def post[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def post[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  
   /**
     * Shortcut method to perform PUT request.
     *
@@ -79,7 +89,6 @@ trait IHttpService extends js.Object {
     * @param data Request content
     * @param config Optional configuration object
     */
-  def put[T](url: String, data: js.Any): IHttpPromise[T] = js.native
-  def put[T](url: String, data: js.Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
+  def put[T](url: String, data: Any): IHttpPromise[T] = js.native
+  def put[T](url: String, data: Any, config: IRequestShortcutConfig): IHttpPromise[T] = js.native
 }
-

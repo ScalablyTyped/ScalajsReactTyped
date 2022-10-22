@@ -1,55 +1,68 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TSPropertySignature
+import typingsJapgolly.babelTypes.babelTypesStrings.get
+import typingsJapgolly.babelTypes.babelTypesStrings.set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TSPropertySignature_
-  extends TSTypeElement
-     with BaseNode {
-  var computed: Boolean | Null
+  extends StObject
+     with BaseNode
+     with TSTypeElement
+     with TypeScript {
+  
+  var computed: Boolean
+  
   var initializer: Expression | Null
+  
   var key: Expression
+  
+  var kind: get | set
+  
   var optional: Boolean | Null
+  
   var readonly: Boolean | Null
+  
   var typeAnnotation: TSTypeAnnotation_ | Null
+  
   @JSName("type")
   var type_TSPropertySignature_ : TSPropertySignature
 }
-
 object TSPropertySignature_ {
-  @scala.inline
-  def apply(
-    key: Expression,
-    `type`: TSPropertySignature,
-    computed: js.UndefOr[Boolean] = js.undefined,
-    end: Int | Double = null,
-    initializer: Expression = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TSTypeAnnotation_ = null
-  ): TSPropertySignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (initializer != null) __obj.updateDynamic("initializer")(initializer.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+  
+  inline def apply(computed: Boolean, key: Expression, kind: get | set): TSPropertySignature_ = {
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSPropertySignature")
     __obj.asInstanceOf[TSPropertySignature_]
   }
+  
+  extension [Self <: TSPropertySignature_](x: Self) {
+    
+    inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
+    
+    inline def setInitializer(value: Expression): Self = StObject.set(x, "initializer", value.asInstanceOf[js.Any])
+    
+    inline def setInitializerNull: Self = StObject.set(x, "initializer", null)
+    
+    inline def setKey(value: Expression): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKind(value: get | set): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalNull: Self = StObject.set(x, "optional", null)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    
+    inline def setType(value: TSPropertySignature): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TSTypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+  }
 }
-

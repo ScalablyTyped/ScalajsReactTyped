@@ -1,30 +1,42 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FindByNameOptions extends js.Object {
+trait FindByNameOptions extends StObject {
+  
   var deleted: js.UndefOr[Boolean] = js.undefined
+  
   var httpCache: js.UndefOr[Boolean] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var removed: js.UndefOr[Boolean] = js.undefined
 }
-
 object FindByNameOptions {
-  @scala.inline
-  def apply(
-    deleted: js.UndefOr[Boolean] = js.undefined,
-    httpCache: js.UndefOr[Boolean] = js.undefined,
-    limit: Int | Double = null,
-    removed: js.UndefOr[Boolean] = js.undefined
-  ): FindByNameOptions = {
+  
+  inline def apply(): FindByNameOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
-    if (!js.isUndefined(httpCache)) __obj.updateDynamic("httpCache")(httpCache.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindByNameOptions]
   }
+  
+  extension [Self <: FindByNameOptions](x: Self) {
+    
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    
+    inline def setHttpCache(value: Boolean): Self = StObject.set(x, "httpCache", value.asInstanceOf[js.Any])
+    
+    inline def setHttpCacheUndefined: Self = StObject.set(x, "httpCache", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedUndefined: Self = StObject.set(x, "removed", js.undefined)
+  }
 }
-

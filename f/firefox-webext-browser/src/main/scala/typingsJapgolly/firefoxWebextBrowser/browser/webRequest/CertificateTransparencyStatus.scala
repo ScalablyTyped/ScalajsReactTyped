@@ -1,8 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts
 */
-trait CertificateTransparencyStatus extends js.Object
-
+trait CertificateTransparencyStatus extends StObject
 object CertificateTransparencyStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def not_applicable: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable = this.cast("not_applicable")
-  @scala.inline
-  def policy_compliant: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant = this.cast("policy_compliant")
-  @scala.inline
-  def policy_not_diverse_scts: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts = this.cast("policy_not_diverse_scts")
-  @scala.inline
-  def policy_not_enough_scts: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts = this.cast("policy_not_enough_scts")
+  
+  inline def not_applicable: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable = "not_applicable".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_applicable]
+  
+  inline def policy_compliant: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant = "policy_compliant".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_compliant]
+  
+  inline def policy_not_diverse_scts: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts = "policy_not_diverse_scts".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_diverse_scts]
+  
+  inline def policy_not_enough_scts: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts = "policy_not_enough_scts".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.policy_not_enough_scts]
 }
-

@@ -1,71 +1,54 @@
 package typingsJapgolly.angularCore.mod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlatformReflectionCapabilities extends js.Object {
+trait PlatformReflectionCapabilities extends StObject {
+  
   /**
     * Return a list of annotations declared on the class
     */
-  def annotations(`type`: Type[_]): js.Array[_]
-  def factory(`type`: Type[_]): js.Function
-  def getter(name: String): ɵGetterFn
-  def guards(`type`: js.Any): StringDictionary[js.Any]
-  def hasLifecycleHook(`type`: js.Any, lcProperty: String): Boolean
-  def importUri(`type`: Type[_]): String
-  def isReflectionEnabled(): Boolean
-  def method(name: String): ɵMethodFn
+  def annotations(`type`: Type[Any]): js.Array[Any]
+  
+  def factory(`type`: Type[Any]): js.Function
+  
+  def hasLifecycleHook(`type`: Any, lcProperty: String): Boolean
+  
   /**
     * Return a list of annotations/types for constructor parameters
     */
-  def parameters(`type`: Type[_]): js.Array[js.Array[_]]
+  def parameters(`type`: Type[Any]): js.Array[js.Array[Any]]
+  
   /**
     * Return a object literal which describes the annotations on Class fields/properties.
     */
-  def propMetadata(typeOrFunc: Type[_]): StringDictionary[js.Array[_]]
-  def resolveEnum(enumIdentifier: js.Any, name: String): js.Any
-  def resolveIdentifier(name: String, moduleUrl: String, members: js.Array[String], runtime: js.Any): js.Any
-  def resourceUri(`type`: Type[_]): String
-  def setter(name: String): ɵSetterFn
+  def propMetadata(typeOrFunc: Type[Any]): StringDictionary[js.Array[Any]]
 }
-
 object PlatformReflectionCapabilities {
-  @scala.inline
-  def apply(
-    annotations: Type[js.Any] => CallbackTo[js.Array[js.Any]],
-    factory: Type[js.Any] => CallbackTo[js.Function],
-    getter: String => CallbackTo[ɵGetterFn],
-    guards: js.Any => CallbackTo[StringDictionary[js.Any]],
-    hasLifecycleHook: (js.Any, String) => CallbackTo[Boolean],
-    importUri: Type[js.Any] => CallbackTo[String],
-    isReflectionEnabled: CallbackTo[Boolean],
-    method: String => CallbackTo[ɵMethodFn],
-    parameters: Type[js.Any] => CallbackTo[js.Array[js.Array[js.Any]]],
-    propMetadata: Type[js.Any] => CallbackTo[StringDictionary[js.Array[js.Any]]],
-    resolveEnum: (js.Any, String) => CallbackTo[js.Any],
-    resolveIdentifier: (String, String, js.Array[String], js.Any) => CallbackTo[js.Any],
-    resourceUri: Type[js.Any] => CallbackTo[String],
-    setter: String => CallbackTo[ɵSetterFn]
+  
+  inline def apply(
+    annotations: Type[Any] => js.Array[Any],
+    factory: Type[Any] => js.Function,
+    hasLifecycleHook: (Any, String) => Boolean,
+    parameters: Type[Any] => js.Array[js.Array[Any]],
+    propMetadata: Type[Any] => StringDictionary[js.Array[Any]]
   ): PlatformReflectionCapabilities = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("annotations")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => annotations(t0).runNow()))
-    __obj.updateDynamic("factory")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => factory(t0).runNow()))
-    __obj.updateDynamic("getter")(js.Any.fromFunction1((t0: java.lang.String) => getter(t0).runNow()))
-    __obj.updateDynamic("guards")(js.Any.fromFunction1((t0: js.Any) => guards(t0).runNow()))
-    __obj.updateDynamic("hasLifecycleHook")(js.Any.fromFunction2((t0: js.Any, t1: java.lang.String) => hasLifecycleHook(t0, t1).runNow()))
-    __obj.updateDynamic("importUri")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => importUri(t0).runNow()))
-    __obj.updateDynamic("isReflectionEnabled")(isReflectionEnabled.toJsFn)
-    __obj.updateDynamic("method")(js.Any.fromFunction1((t0: java.lang.String) => method(t0).runNow()))
-    __obj.updateDynamic("parameters")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => parameters(t0).runNow()))
-    __obj.updateDynamic("propMetadata")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => propMetadata(t0).runNow()))
-    __obj.updateDynamic("resolveEnum")(js.Any.fromFunction2((t0: js.Any, t1: java.lang.String) => resolveEnum(t0, t1).runNow()))
-    __obj.updateDynamic("resolveIdentifier")(js.Any.fromFunction4((t0: java.lang.String, t1: java.lang.String, t2: js.Array[java.lang.String], t3: js.Any) => resolveIdentifier(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("resourceUri")(js.Any.fromFunction1((t0: typingsJapgolly.angularCore.mod.Type[js.Any]) => resourceUri(t0).runNow()))
-    __obj.updateDynamic("setter")(js.Any.fromFunction1((t0: java.lang.String) => setter(t0).runNow()))
+    val __obj = js.Dynamic.literal(annotations = js.Any.fromFunction1(annotations), factory = js.Any.fromFunction1(factory), hasLifecycleHook = js.Any.fromFunction2(hasLifecycleHook), parameters = js.Any.fromFunction1(parameters), propMetadata = js.Any.fromFunction1(propMetadata))
     __obj.asInstanceOf[PlatformReflectionCapabilities]
   }
+  
+  extension [Self <: PlatformReflectionCapabilities](x: Self) {
+    
+    inline def setAnnotations(value: Type[Any] => js.Array[Any]): Self = StObject.set(x, "annotations", js.Any.fromFunction1(value))
+    
+    inline def setFactory(value: Type[Any] => js.Function): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+    
+    inline def setHasLifecycleHook(value: (Any, String) => Boolean): Self = StObject.set(x, "hasLifecycleHook", js.Any.fromFunction2(value))
+    
+    inline def setParameters(value: Type[Any] => js.Array[js.Array[Any]]): Self = StObject.set(x, "parameters", js.Any.fromFunction1(value))
+    
+    inline def setPropMetadata(value: Type[Any] => StringDictionary[js.Array[Any]]): Self = StObject.set(x, "propMetadata", js.Any.fromFunction1(value))
+  }
 }
-

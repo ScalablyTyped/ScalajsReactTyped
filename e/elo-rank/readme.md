@@ -10,10 +10,10 @@ elo ranking system
 | ------------------ | :-------------: |
 | Full name          | elo-rank |
 | Keywords           | elo, rank, ranking, chess |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 23308 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8943.666666666666 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](https://github.com/dmamills/elo-rank#readme)

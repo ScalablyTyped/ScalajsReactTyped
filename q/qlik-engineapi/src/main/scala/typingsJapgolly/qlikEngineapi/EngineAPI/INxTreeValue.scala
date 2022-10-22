@@ -1,41 +1,51 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INxTreeValue extends js.Object {
+trait INxTreeValue extends StObject {
+  
   /**
     * Attribute dimension values.
     */
   var qAttrDims: js.UndefOr[INxAttributeDimValues] = js.undefined
+  
   /**
     * Attribute expression values.
     */
   var qAttrExps: js.UndefOr[INxAttributeExpressionValues] = js.undefined
+  
   /**
     * The text version of the value, if available.
     */
   var qText: String
+  
   /**
     * Value of the cell.
     * Is set to NaN, if the value is not a number.
     */
   var qValue: Double
 }
-
 object INxTreeValue {
-  @scala.inline
-  def apply(
-    qText: String,
-    qValue: Double,
-    qAttrDims: INxAttributeDimValues = null,
-    qAttrExps: INxAttributeExpressionValues = null
-  ): INxTreeValue = {
+  
+  inline def apply(qText: String, qValue: Double): INxTreeValue = {
     val __obj = js.Dynamic.literal(qText = qText.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
-    if (qAttrDims != null) __obj.updateDynamic("qAttrDims")(qAttrDims.asInstanceOf[js.Any])
-    if (qAttrExps != null) __obj.updateDynamic("qAttrExps")(qAttrExps.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxTreeValue]
   }
+  
+  extension [Self <: INxTreeValue](x: Self) {
+    
+    inline def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    
+    inline def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
+    
+    inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    
+    inline def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
+    
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    
+    inline def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+  }
 }
-

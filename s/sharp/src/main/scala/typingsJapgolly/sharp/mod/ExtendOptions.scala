@@ -1,34 +1,53 @@
 package typingsJapgolly.sharp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtendOptions extends js.Object {
-  /** Background colour, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
+trait ExtendOptions extends StObject {
+  
+  /** background colour, parsed by the color module, defaults to black without transparency. (optional, default {r:0,g:0,b:0,alpha:1}) */
   var background: js.UndefOr[Color] = js.undefined
+  
+  /** single pixel count to bottom edge (optional, default 0) */
   var bottom: js.UndefOr[Double] = js.undefined
+  
+  /** single pixel count to left edge (optional, default 0) */
   var left: js.UndefOr[Double] = js.undefined
+  
+  /** single pixel count to right edge (optional, default 0) */
   var right: js.UndefOr[Double] = js.undefined
+  
+  /** single pixel count to top edge (optional, default 0) */
   var top: js.UndefOr[Double] = js.undefined
 }
-
 object ExtendOptions {
-  @scala.inline
-  def apply(
-    background: Color = null,
-    bottom: Int | Double = null,
-    left: Int | Double = null,
-    right: Int | Double = null,
-    top: Int | Double = null
-  ): ExtendOptions = {
+  
+  inline def apply(): ExtendOptions = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtendOptions]
   }
+  
+  extension [Self <: ExtendOptions](x: Self) {
+    
+    inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

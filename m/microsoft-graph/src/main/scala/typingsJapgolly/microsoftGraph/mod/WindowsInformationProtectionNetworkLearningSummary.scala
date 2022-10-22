@@ -1,24 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsInformationProtectionNetworkLearningSummary extends Entity {
+trait WindowsInformationProtectionNetworkLearningSummary
+  extends StObject
+     with Entity {
+  
   // Device Count
   var deviceCount: js.UndefOr[Double] = js.undefined
+  
   // Website url
-  var url: js.UndefOr[String] = js.undefined
+  var url: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WindowsInformationProtectionNetworkLearningSummary {
-  @scala.inline
-  def apply(deviceCount: Int | Double = null, id: String = null, url: String = null): WindowsInformationProtectionNetworkLearningSummary = {
+  
+  inline def apply(): WindowsInformationProtectionNetworkLearningSummary = {
     val __obj = js.Dynamic.literal()
-    if (deviceCount != null) __obj.updateDynamic("deviceCount")(deviceCount.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsInformationProtectionNetworkLearningSummary]
   }
+  
+  extension [Self <: WindowsInformationProtectionNetworkLearningSummary](x: Self) {
+    
+    inline def setDeviceCount(value: Double): Self = StObject.set(x, "deviceCount", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceCountUndefined: Self = StObject.set(x, "deviceCount", js.undefined)
+    
+    inline def setUrl(value: NullableOption[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

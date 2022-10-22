@@ -1,20 +1,23 @@
 package typingsJapgolly.athenajs.mod
 
-import typingsJapgolly.athenajs.AnonInstantiableEffect
+import typingsJapgolly.athenajs.anon.InstantiableEffect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FXInstance extends js.Object {
-  def addFX(fxName: String, FxClass: AnonInstantiableEffect): Unit
+trait FXInstance extends StObject {
+  
+  def addFX(fxName: String, FxClass: InstantiableEffect): Unit
 }
-
 object FXInstance {
-  @scala.inline
-  def apply(addFX: (String, AnonInstantiableEffect) => japgolly.scalajs.react.Callback): FXInstance = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addFX")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.athenajs.AnonInstantiableEffect) => addFX(t0, t1).runNow()))
+  
+  inline def apply(addFX: (String, InstantiableEffect) => japgolly.scalajs.react.Callback): FXInstance = {
+    val __obj = js.Dynamic.literal(addFX = js.Any.fromFunction2((t0: String, t1: InstantiableEffect) => (addFX(t0, t1)).runNow()))
     __obj.asInstanceOf[FXInstance]
   }
+  
+  extension [Self <: FXInstance](x: Self) {
+    
+    inline def setAddFX(value: (String, InstantiableEffect) => japgolly.scalajs.react.Callback): Self = StObject.set(x, "addFX", js.Any.fromFunction2((t0: String, t1: InstantiableEffect) => (value(t0, t1)).runNow()))
+  }
 }
-

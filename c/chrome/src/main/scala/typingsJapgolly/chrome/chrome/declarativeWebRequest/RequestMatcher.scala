@@ -1,37 +1,63 @@
 package typingsJapgolly.chrome.chrome.declarativeWebRequest
 
 import typingsJapgolly.chrome.chrome.events.UrlFilter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestMatcher extends js.Object {
+trait RequestMatcher extends StObject {
+  
   var contentType: js.UndefOr[js.Array[String]] = js.undefined
+  
   var excludeContentType: js.UndefOr[js.Array[String]] = js.undefined
+  
   var excludeResponseHeader: js.UndefOr[js.Array[HeaderFilter]] = js.undefined
+  
   var resourceType: js.UndefOr[String] = js.undefined
+  
   var responseHeaders: js.UndefOr[js.Array[HeaderFilter]] = js.undefined
+  
   var url: js.UndefOr[UrlFilter] = js.undefined
 }
-
 object RequestMatcher {
-  @scala.inline
-  def apply(
-    contentType: js.Array[String] = null,
-    excludeContentType: js.Array[String] = null,
-    excludeResponseHeader: js.Array[HeaderFilter] = null,
-    resourceType: String = null,
-    responseHeaders: js.Array[HeaderFilter] = null,
-    url: UrlFilter = null
-  ): RequestMatcher = {
+  
+  inline def apply(): RequestMatcher = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (excludeContentType != null) __obj.updateDynamic("excludeContentType")(excludeContentType.asInstanceOf[js.Any])
-    if (excludeResponseHeader != null) __obj.updateDynamic("excludeResponseHeader")(excludeResponseHeader.asInstanceOf[js.Any])
-    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType.asInstanceOf[js.Any])
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestMatcher]
   }
+  
+  extension [Self <: RequestMatcher](x: Self) {
+    
+    inline def setContentType(value: js.Array[String]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setContentTypeVarargs(value: String*): Self = StObject.set(x, "contentType", js.Array(value*))
+    
+    inline def setExcludeContentType(value: js.Array[String]): Self = StObject.set(x, "excludeContentType", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeContentTypeUndefined: Self = StObject.set(x, "excludeContentType", js.undefined)
+    
+    inline def setExcludeContentTypeVarargs(value: String*): Self = StObject.set(x, "excludeContentType", js.Array(value*))
+    
+    inline def setExcludeResponseHeader(value: js.Array[HeaderFilter]): Self = StObject.set(x, "excludeResponseHeader", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeResponseHeaderUndefined: Self = StObject.set(x, "excludeResponseHeader", js.undefined)
+    
+    inline def setExcludeResponseHeaderVarargs(value: HeaderFilter*): Self = StObject.set(x, "excludeResponseHeader", js.Array(value*))
+    
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    
+    inline def setResponseHeaders(value: js.Array[HeaderFilter]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    
+    inline def setResponseHeadersVarargs(value: HeaderFilter*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
+    
+    inline def setUrl(value: UrlFilter): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

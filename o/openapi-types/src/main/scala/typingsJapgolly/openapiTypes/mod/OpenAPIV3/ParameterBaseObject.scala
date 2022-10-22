@@ -1,52 +1,85 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParameterBaseObject extends js.Object {
+trait ParameterBaseObject extends StObject {
+  
   var allowEmptyValue: js.UndefOr[Boolean] = js.undefined
+  
   var allowReserved: js.UndefOr[Boolean] = js.undefined
+  
   var content: js.UndefOr[StringDictionary[MediaTypeObject]] = js.undefined
+  
   var deprecated: js.UndefOr[Boolean] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
-  var example: js.UndefOr[js.Any] = js.undefined
+  
+  var example: js.UndefOr[Any] = js.undefined
+  
   var examples: js.UndefOr[StringDictionary[ReferenceObject | ExampleObject]] = js.undefined
+  
   var explode: js.UndefOr[Boolean] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
+  
   var schema: js.UndefOr[ReferenceObject | SchemaObject] = js.undefined
+  
   var style: js.UndefOr[String] = js.undefined
 }
-
 object ParameterBaseObject {
-  @scala.inline
-  def apply(
-    allowEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    allowReserved: js.UndefOr[Boolean] = js.undefined,
-    content: StringDictionary[MediaTypeObject] = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    example: js.Any = null,
-    examples: StringDictionary[ReferenceObject | ExampleObject] = null,
-    explode: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    schema: ReferenceObject | SchemaObject = null,
-    style: String = null
-  ): ParameterBaseObject = {
+  
+  inline def apply(): ParameterBaseObject = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterBaseObject]
   }
+  
+  extension [Self <: ParameterBaseObject](x: Self) {
+    
+    inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
+    
+    inline def setAllowEmptyValueUndefined: Self = StObject.set(x, "allowEmptyValue", js.undefined)
+    
+    inline def setAllowReserved(value: Boolean): Self = StObject.set(x, "allowReserved", value.asInstanceOf[js.Any])
+    
+    inline def setAllowReservedUndefined: Self = StObject.set(x, "allowReserved", js.undefined)
+    
+    inline def setContent(value: StringDictionary[MediaTypeObject]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setExample(value: Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+    
+    inline def setExamples(value: StringDictionary[ReferenceObject | ExampleObject]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    
+    inline def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
+    
+    inline def setExplodeUndefined: Self = StObject.set(x, "explode", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setSchema(value: ReferenceObject | SchemaObject): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+  }
 }
-

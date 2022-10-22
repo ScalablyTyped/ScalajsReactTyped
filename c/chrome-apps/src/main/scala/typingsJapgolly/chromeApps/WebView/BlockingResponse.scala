@@ -1,20 +1,23 @@
 package typingsJapgolly.chromeApps.WebView
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returns value for event handlers that have the 'blocking' extraInfoSpec applied. Allows the event handler to modify network requests. */
-trait BlockingResponse extends js.Object {
+trait BlockingResponse extends StObject {
+  
   /**
     * Only used as a response to the onAuthRequired event.
     * If set, the request is made using the supplied credentials.
     */
   var authCredentials: js.UndefOr[AuthCredentials] = js.undefined
+  
   /**
     * If true, the request is cancelled.
     * Used in onBeforeRequest, this prevents the request from being sent. */
   var cancel: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Only used as a response to the onBeforeRequest and onHeadersReceived events.
     * If set, the original request is prevented from being sent/completed and is
@@ -25,11 +28,13 @@ trait BlockingResponse extends js.Object {
     * will be issued using the GET method.
     */
   var redirectUrl: js.UndefOr[String] = js.undefined
+  
   /**
     * Only used as a response to the onBeforeSendHeaders event.
     * If set, the request is made with these request headers instead.
     */
   var requestHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
+  
   /**
     * Only used as a response to the onHeadersReceived event.
     * If set, the server is assumed to have responded with these
@@ -39,23 +44,37 @@ trait BlockingResponse extends js.Object {
     */
   var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
 }
-
 object BlockingResponse {
-  @scala.inline
-  def apply(
-    authCredentials: AuthCredentials = null,
-    cancel: js.UndefOr[Boolean] = js.undefined,
-    redirectUrl: String = null,
-    requestHeaders: js.Array[HttpHeader] = null,
-    responseHeaders: js.Array[HttpHeader] = null
-  ): BlockingResponse = {
+  
+  inline def apply(): BlockingResponse = {
     val __obj = js.Dynamic.literal()
-    if (authCredentials != null) __obj.updateDynamic("authCredentials")(authCredentials.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
-    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders.asInstanceOf[js.Any])
-    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockingResponse]
   }
+  
+  extension [Self <: BlockingResponse](x: Self) {
+    
+    inline def setAuthCredentials(value: AuthCredentials): Self = StObject.set(x, "authCredentials", value.asInstanceOf[js.Any])
+    
+    inline def setAuthCredentialsUndefined: Self = StObject.set(x, "authCredentials", js.undefined)
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    
+    inline def setRequestHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "requestHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setRequestHeadersUndefined: Self = StObject.set(x, "requestHeaders", js.undefined)
+    
+    inline def setRequestHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "requestHeaders", js.Array(value*))
+    
+    inline def setResponseHeaders(value: js.Array[HttpHeader]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    
+    inline def setResponseHeadersVarargs(value: HttpHeader*): Self = StObject.set(x, "responseHeaders", js.Array(value*))
+  }
 }
-

@@ -11,9 +11,9 @@ Istanbul unit test coverage plugin for gulp.
 | Full name          | gulp-istanbul |
 | Keywords           | gulpplugin, coverage, istanbul, unit test |
 | # releases         | 1 |
-| # dependents       | 80 |
-| # downloads        | 1952367 |
-| # stars            | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 77763.66666666667 |
+| # stars            | 188.0 |
 
 ## Links
 - [Homepage](https://github.com/SBoudrias/gulp-istanbul)

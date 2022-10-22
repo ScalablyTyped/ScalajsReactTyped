@@ -1,129 +1,243 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
+import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.AnonCancelComponentElementModel
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonElementDxElement
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.mod.DevExpress.core.dxElement
-import typingsJapgolly.devextreme.mod.DevExpress.event
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalajs.dom.Element
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.PointerEvent
+import org.scalajs.dom.TouchEvent
+import typingsJapgolly.devextreme.mod.DevExpress.core.DxElement_
+import typingsJapgolly.devextreme.mod.DevExpress.core.UserDefinedElement
+import typingsJapgolly.devextreme.mod.DevExpress.core.template
+import typingsJapgolly.devextreme.mod.DevExpress.events.Cancelable
+import typingsJapgolly.devextreme.mod.DevExpress.events.DxEvent
+import typingsJapgolly.devextreme.mod.DevExpress.events.EventInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxOverlayOptions[T] extends WidgetOptions[T] {
-  /** Configures widget visibility animations. This object contains two fields: show and hide. */
+trait dxOverlayOptions[TComponent]
+  extends StObject
+     with WidgetOptions[TComponent] {
+  
+  /**
+    * Configures UI component visibility animations. This object contains two fields: show and hide.
+    */
   var animation: js.UndefOr[dxOverlayAnimation] = js.undefined
-  /** Specifies whether to close the widget if a user clicks outside it. */
-  var closeOnOutsideClick: js.UndefOr[Boolean | (js.Function1[/* event */ event, Boolean])] = js.undefined
-  /** Specifies a custom template for the widget content. */
-  var contentTemplate: js.UndefOr[
-    typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery])
+  
+  /**
+    * Specifies whether to close the UI component if a user clicks outside it.
+    * @deprecated 
+    */
+  var closeOnOutsideClick: js.UndefOr[
+    Boolean | (js.Function1[/* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent], Boolean])
   ] = js.undefined
-  /** Specifies whether to render the widget's content when it is displayed. If false, the content is rendered immediately. */
+  
+  /**
+    * Specifies a custom template for the UI component content.
+    */
+  var contentTemplate: js.UndefOr[
+    template | (js.Function1[/* contentElement */ DxElement_[HTMLElement], String | UserDefinedElement[Element]])
+  ] = js.undefined
+  
+  /**
+    * Copies your custom CSS classes from the root element to the wrapper element.
+    * @deprecated 
+    */
+  var copyRootClassesToWrapper: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies whether to render the UI component&apos;s content when it is displayed. If false, the content is rendered immediately.
+    */
   var deferRendering: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not an end-user can drag the widget. */
-  var dragEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the maximum height the widget can reach while resizing. */
+  
+  /**
+    * Specifies the global attributes to be attached to the UI component&apos;s container element.
+    * @deprecated 
+    */
+  @JSName("elementAttr")
+  var elementAttr_dxOverlayOptions: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * 
+    */
+  var hideOnOutsideClick: js.UndefOr[
+    Boolean | (js.Function1[/* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent], Boolean])
+  ] = js.undefined
+  
+  /**
+    * Specifies whether to hide the widget when users scroll one of its parent elements.
+    */
+  var hideOnParentScroll: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Specifies the maximum height the UI component can reach while resizing.
+    */
   var maxHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the maximum width the widget can reach while resizing. */
+  
+  /**
+    * Specifies the maximum width the UI component can reach while resizing.
+    */
   var maxWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the minimum height the widget can reach while resizing. */
+  
+  /**
+    * Specifies the minimum height the UI component can reach while resizing.
+    */
   var minHeight: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** Specifies the minimum width the widget can reach while resizing. */
+  
+  /**
+    * Specifies the minimum width the UI component can reach while resizing.
+    */
   var minWidth: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
-  /** A function that is executed after the widget is hidden. */
-  var onHidden: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** A function that is executed before the widget is hidden. */
-  var onHiding: js.UndefOr[js.Function1[/* e */ AnonCancelComponentElementModel[T], _]] = js.undefined
-  /** A function that is executed before the widget is displayed. */
-  var onShowing: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** A function that is executed after the widget is displayed. */
-  var onShown: js.UndefOr[js.Function1[/* e */ AnonElementDxElement[T], _]] = js.undefined
-  /** Positions the widget. */
-  var position: js.UndefOr[js.Any] = js.undefined
-  /** Specifies whether to shade the background when the widget is active. */
+  
+  /**
+    * A function that is executed after the UI component is hidden.
+    */
+  var onHidden: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before the UI component is hidden.
+    */
+  var onHiding: js.UndefOr[js.Function1[/* e */ Cancelable & EventInfo[TComponent], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before the UI component is displayed.
+    */
+  var onShowing: js.UndefOr[js.Function1[/* e */ Cancelable & EventInfo[TComponent], Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after the UI component is displayed.
+    */
+  var onShown: js.UndefOr[js.Function1[/* e */ EventInfo[TComponent], Unit]] = js.undefined
+  
+  /**
+    * Positions the UI component.
+    */
+  var position: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Specifies whether to shade the background when the UI component is active.
+    */
   var shading: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the shading color. */
+  
+  /**
+    * Specifies the shading color. Applies only if shading is enabled.
+    */
   var shadingColor: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Specifies the global attributes for the UI component&apos;s wrapper element.
+    */
+  var wrapperAttr: js.UndefOr[Any] = js.undefined
 }
-
 object dxOverlayOptions {
-  @scala.inline
-  def apply[T](
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    animation: dxOverlayAnimation = null,
-    bindingOptions: js.Any = null,
-    closeOnOutsideClick: Boolean | (js.Function1[/* event */ event, Boolean]) = null,
-    contentTemplate: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function1[/* contentElement */ dxElement, String | Element | JQuery]) = null,
-    deferRendering: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dragEnabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Double | String | (js.Function0[Double | String]) = null,
-    maxWidth: Double | String | (js.Function0[Double | String]) = null,
-    minHeight: Double | String | (js.Function0[Double | String]) = null,
-    minWidth: Double | String | (js.Function0[Double | String]) = null,
-    onContentReady: /* e */ AnonComponentElement[T] => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[T] => CallbackTo[js.Any] = null,
-    onHidden: /* e */ AnonElementDxElement[T] => CallbackTo[js.Any] = null,
-    onHiding: /* e */ AnonCancelComponentElementModel[T] => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[T] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[T] => CallbackTo[js.Any] = null,
-    onShowing: /* e */ AnonElementDxElement[T] => CallbackTo[js.Any] = null,
-    onShown: /* e */ AnonElementDxElement[T] => CallbackTo[js.Any] = null,
-    position: js.Any = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    shading: js.UndefOr[Boolean] = js.undefined,
-    shadingColor: String = null,
-    tabIndex: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null
-  ): dxOverlayOptions[T] = {
+  
+  inline def apply[TComponent](): dxOverlayOptions[TComponent] = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (closeOnOutsideClick != null) __obj.updateDynamic("closeOnOutsideClick")(closeOnOutsideClick.asInstanceOf[js.Any])
-    if (contentTemplate != null) __obj.updateDynamic("contentTemplate")(contentTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(deferRendering)) __obj.updateDynamic("deferRendering")(deferRendering.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragEnabled)) __obj.updateDynamic("dragEnabled")(dragEnabled.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[T]) => onContentReady(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[T]) => onDisposing(t0).runNow()))
-    if (onHidden != null) __obj.updateDynamic("onHidden")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementDxElement[T]) => onHidden(t0).runNow()))
-    if (onHiding != null) __obj.updateDynamic("onHiding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCancelComponentElementModel[T]) => onHiding(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[T]) => onInitialized(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[T]) => onOptionChanged(t0).runNow()))
-    if (onShowing != null) __obj.updateDynamic("onShowing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementDxElement[T]) => onShowing(t0).runNow()))
-    if (onShown != null) __obj.updateDynamic("onShown")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElementDxElement[T]) => onShown(t0).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(shading)) __obj.updateDynamic("shading")(shading.asInstanceOf[js.Any])
-    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    __obj.asInstanceOf[dxOverlayOptions[T]]
+    __obj.asInstanceOf[dxOverlayOptions[TComponent]]
+  }
+  
+  extension [Self <: dxOverlayOptions[?], TComponent](x: Self & dxOverlayOptions[TComponent]) {
+    
+    inline def setAnimation(value: dxOverlayAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCloseOnOutsideClick(
+      value: Boolean | (js.Function1[/* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent], Boolean])
+    ): Self = StObject.set(x, "closeOnOutsideClick", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnOutsideClickFunction1(value: /* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent] => Boolean): Self = StObject.set(x, "closeOnOutsideClick", js.Any.fromFunction1(value))
+    
+    inline def setCloseOnOutsideClickUndefined: Self = StObject.set(x, "closeOnOutsideClick", js.undefined)
+    
+    inline def setContentTemplate(
+      value: template | (js.Function1[/* contentElement */ DxElement_[HTMLElement], String | UserDefinedElement[Element]])
+    ): Self = StObject.set(x, "contentTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setContentTemplateFunction1(value: /* contentElement */ DxElement_[HTMLElement] => String | UserDefinedElement[Element]): Self = StObject.set(x, "contentTemplate", js.Any.fromFunction1(value))
+    
+    inline def setContentTemplateUndefined: Self = StObject.set(x, "contentTemplate", js.undefined)
+    
+    inline def setCopyRootClassesToWrapper(value: Boolean): Self = StObject.set(x, "copyRootClassesToWrapper", value.asInstanceOf[js.Any])
+    
+    inline def setCopyRootClassesToWrapperUndefined: Self = StObject.set(x, "copyRootClassesToWrapper", js.undefined)
+    
+    inline def setDeferRendering(value: Boolean): Self = StObject.set(x, "deferRendering", value.asInstanceOf[js.Any])
+    
+    inline def setDeferRenderingUndefined: Self = StObject.set(x, "deferRendering", js.undefined)
+    
+    inline def setElementAttr(value: Any): Self = StObject.set(x, "elementAttr", value.asInstanceOf[js.Any])
+    
+    inline def setElementAttrUndefined: Self = StObject.set(x, "elementAttr", js.undefined)
+    
+    inline def setHideOnOutsideClick(
+      value: Boolean | (js.Function1[/* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent], Boolean])
+    ): Self = StObject.set(x, "hideOnOutsideClick", value.asInstanceOf[js.Any])
+    
+    inline def setHideOnOutsideClickFunction1(value: /* event */ DxEvent[MouseEvent | PointerEvent | TouchEvent] => Boolean): Self = StObject.set(x, "hideOnOutsideClick", js.Any.fromFunction1(value))
+    
+    inline def setHideOnOutsideClickUndefined: Self = StObject.set(x, "hideOnOutsideClick", js.undefined)
+    
+    inline def setHideOnParentScroll(value: Boolean): Self = StObject.set(x, "hideOnParentScroll", value.asInstanceOf[js.Any])
+    
+    inline def setHideOnParentScrollUndefined: Self = StObject.set(x, "hideOnParentScroll", js.undefined)
+    
+    inline def setMaxHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "maxHeight", value.toJsFn)
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "maxWidth", value.toJsFn)
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "minHeight", value.toJsFn)
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double | String | (js.Function0[Double | String])): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthCallbackTo(value: CallbackTo[Double | String]): Self = StObject.set(x, "minWidth", value.toJsFn)
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOnHidden(value: /* e */ EventInfo[TComponent] => Callback): Self = StObject.set(x, "onHidden", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnHiddenUndefined: Self = StObject.set(x, "onHidden", js.undefined)
+    
+    inline def setOnHiding(value: /* e */ Cancelable & EventInfo[TComponent] => Callback): Self = StObject.set(x, "onHiding", js.Any.fromFunction1((t0: /* e */ Cancelable & EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnHidingUndefined: Self = StObject.set(x, "onHiding", js.undefined)
+    
+    inline def setOnShowing(value: /* e */ Cancelable & EventInfo[TComponent] => Callback): Self = StObject.set(x, "onShowing", js.Any.fromFunction1((t0: /* e */ Cancelable & EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnShowingUndefined: Self = StObject.set(x, "onShowing", js.undefined)
+    
+    inline def setOnShown(value: /* e */ EventInfo[TComponent] => Callback): Self = StObject.set(x, "onShown", js.Any.fromFunction1((t0: /* e */ EventInfo[TComponent]) => value(t0).runNow()))
+    
+    inline def setOnShownUndefined: Self = StObject.set(x, "onShown", js.undefined)
+    
+    inline def setPosition(value: Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShading(value: Boolean): Self = StObject.set(x, "shading", value.asInstanceOf[js.Any])
+    
+    inline def setShadingColor(value: String): Self = StObject.set(x, "shadingColor", value.asInstanceOf[js.Any])
+    
+    inline def setShadingColorUndefined: Self = StObject.set(x, "shadingColor", js.undefined)
+    
+    inline def setShadingUndefined: Self = StObject.set(x, "shading", js.undefined)
+    
+    inline def setWrapperAttr(value: Any): Self = StObject.set(x, "wrapperAttr", value.asInstanceOf[js.Any])
+    
+    inline def setWrapperAttrUndefined: Self = StObject.set(x, "wrapperAttr", js.undefined)
   }
 }
-

@@ -1,30 +1,30 @@
 package typingsJapgolly.minappEnv.WXNS
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IGetFileInfoParam extends IAPIParam[IGetFileInfoSuccessResult] {
+trait IGetFileInfoParam
+  extends StObject
+     with IAPIParam[IGetFileInfoSuccessResult] {
+  
   var digestAlgorithm: js.UndefOr[String] = js.undefined
+  
   var filePath: String
 }
-
 object IGetFileInfoParam {
-  @scala.inline
-  def apply(
-    filePath: String,
-    complete: /* val */ IGetFileInfoSuccessResult | IAPIError => Callback = null,
-    digestAlgorithm: String = null,
-    fail: /* err */ IAPIError => Callback = null,
-    success: IGetFileInfoSuccessResult => Callback = null
-  ): IGetFileInfoParam = {
+  
+  inline def apply(filePath: String): IGetFileInfoParam = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* val */ typingsJapgolly.minappEnv.WXNS.IGetFileInfoSuccessResult | typingsJapgolly.minappEnv.WXNS.IAPIError) => complete(t0).runNow()))
-    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* err */ typingsJapgolly.minappEnv.WXNS.IAPIError) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.minappEnv.WXNS.IGetFileInfoSuccessResult) => success(t0).runNow()))
     __obj.asInstanceOf[IGetFileInfoParam]
   }
+  
+  extension [Self <: IGetFileInfoParam](x: Self) {
+    
+    inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+    
+    inline def setDigestAlgorithmUndefined: Self = StObject.set(x, "digestAlgorithm", js.undefined)
+    
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponseParameters extends js.Object {
+trait ResponseParameters extends StObject {
+  
   var migrate_to_chat_id: js.UndefOr[Double] = js.undefined
+  
   var retry_after: js.UndefOr[Double] = js.undefined
 }
-
 object ResponseParameters {
-  @scala.inline
-  def apply(migrate_to_chat_id: Int | Double = null, retry_after: Int | Double = null): ResponseParameters = {
+  
+  inline def apply(): ResponseParameters = {
     val __obj = js.Dynamic.literal()
-    if (migrate_to_chat_id != null) __obj.updateDynamic("migrate_to_chat_id")(migrate_to_chat_id.asInstanceOf[js.Any])
-    if (retry_after != null) __obj.updateDynamic("retry_after")(retry_after.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseParameters]
   }
+  
+  extension [Self <: ResponseParameters](x: Self) {
+    
+    inline def setMigrate_to_chat_id(value: Double): Self = StObject.set(x, "migrate_to_chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setMigrate_to_chat_idUndefined: Self = StObject.set(x, "migrate_to_chat_id", js.undefined)
+    
+    inline def setRetry_after(value: Double): Self = StObject.set(x, "retry_after", value.asInstanceOf[js.Any])
+    
+    inline def setRetry_afterUndefined: Self = StObject.set(x, "retry_after", js.undefined)
+  }
 }
-

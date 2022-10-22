@@ -1,12 +1,16 @@
 package typingsJapgolly.three.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three", "AudioContext")
-@js.native
-object AudioContext
-  extends TopLevel[typingsJapgolly.std.AudioContext]
-
+object AudioContext {
+  
+  @JSImport("three", "AudioContext")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getContext(): org.scalajs.dom.AudioContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")().asInstanceOf[org.scalajs.dom.AudioContext]
+  
+  inline def setContext(context: org.scalajs.dom.AudioContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
+}

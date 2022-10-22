@@ -1,59 +1,47 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RequestExecutorErrors extends js.Object
-
+sealed trait RequestExecutorErrors extends StObject
 @JSGlobal("SP.RequestExecutorErrors")
 @js.native
-object RequestExecutorErrors extends js.Object {
-  @js.native
-  sealed trait domainDoesNotMatch extends RequestExecutorErrors
+object RequestExecutorErrors extends StObject {
   
   @js.native
-  sealed trait httpError extends RequestExecutorErrors
+  sealed trait domainDoesNotMatch
+    extends StObject
+       with RequestExecutorErrors
   
   @js.native
-  sealed trait iFrameLoadError extends RequestExecutorErrors
+  sealed trait httpError
+    extends StObject
+       with RequestExecutorErrors
   
   @js.native
-  sealed trait noAppWeb extends RequestExecutorErrors
+  sealed trait iFrameLoadError
+    extends StObject
+       with RequestExecutorErrors
   
   @js.native
-  sealed trait noTrustedOrigins extends RequestExecutorErrors
+  sealed trait noAppWeb
+    extends StObject
+       with RequestExecutorErrors
   
   @js.native
-  sealed trait requestAbortedOrTimedout extends RequestExecutorErrors
+  sealed trait noTrustedOrigins
+    extends StObject
+       with RequestExecutorErrors
   
   @js.native
-  sealed trait unexpectedResponse extends RequestExecutorErrors
+  sealed trait requestAbortedOrTimedout
+    extends StObject
+       with RequestExecutorErrors
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RequestExecutorErrors with Double] = js.native
-  /* 4 */ @js.native
-  object domainDoesNotMatch extends TopLevel[domainDoesNotMatch with Double]
-  
-  /* 2 */ @js.native
-  object httpError extends TopLevel[httpError with Double]
-  
-  /* 6 */ @js.native
-  object iFrameLoadError extends TopLevel[iFrameLoadError with Double]
-  
-  /* 3 */ @js.native
-  object noAppWeb extends TopLevel[noAppWeb with Double]
-  
-  /* 5 */ @js.native
-  object noTrustedOrigins extends TopLevel[noTrustedOrigins with Double]
-  
-  /* 0 */ @js.native
-  object requestAbortedOrTimedout extends TopLevel[requestAbortedOrTimedout with Double]
-  
-  /* 1 */ @js.native
-  object unexpectedResponse extends TopLevel[unexpectedResponse with Double]
-  
+  @js.native
+  sealed trait unexpectedResponse
+    extends StObject
+       with RequestExecutorErrors
 }
-

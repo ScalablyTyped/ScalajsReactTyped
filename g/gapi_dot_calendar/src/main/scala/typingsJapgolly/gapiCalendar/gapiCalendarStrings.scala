@@ -12,257 +12,283 @@ import typingsJapgolly.gapiCalendar.gapi.client.calendar.NotificationType
 import typingsJapgolly.gapiCalendar.gapi.client.calendar.ReminderMethod
 import typingsJapgolly.gapiCalendar.gapi.client.calendar.ScopeType
 import typingsJapgolly.gapiCalendar.gapi.client.calendar.SyncToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapiCalendarStrings {
-  @js.native
-  sealed trait accepted extends AttendeeResponseStatus
-  
-  @js.native
-  sealed trait agenda extends NotificationType
-  
-  @js.native
-  sealed trait calendarNumbersignaclRule extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersigncalendar extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersigncalendarList extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersigncalendarListEntry extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersignevent extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersignevents extends js.Object
-  
-  @js.native
-  sealed trait calendarNumbersignfreeBusy extends js.Object
-  
-  @js.native
-  sealed trait cancelled extends EventStatus
-  
-  @js.native
-  sealed trait chip extends GadgetDisplayMode
-  
-  @js.native
-  sealed trait confidential extends EventVisibility
-  
-  @js.native
-  sealed trait confirmed extends EventStatus
-  
-  @js.native
-  sealed trait declined extends AttendeeResponseStatus
   
   @js.native
   sealed trait default
-    extends EventVisibility
+    extends StObject
+       with EventVisibility
        with ScopeType
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait domain extends ScopeType
+  sealed trait accepted
+    extends StObject
+       with AttendeeResponseStatus
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
-  sealed trait email extends ReminderMethod
+  sealed trait agenda
+    extends StObject
+       with NotificationType
+  inline def agenda: agenda = "agenda".asInstanceOf[agenda]
   
   @js.native
-  sealed trait eventCancellation extends NotificationType
+  sealed trait calendarNumbersignaclRule extends StObject
+  inline def calendarNumbersignaclRule: calendarNumbersignaclRule = "calendar#aclRule".asInstanceOf[calendarNumbersignaclRule]
   
   @js.native
-  sealed trait eventChange extends NotificationType
+  sealed trait calendarNumbersigncalendar extends StObject
+  inline def calendarNumbersigncalendar: calendarNumbersigncalendar = "calendar#calendar".asInstanceOf[calendarNumbersigncalendar]
   
   @js.native
-  sealed trait eventCreation extends NotificationType
+  sealed trait calendarNumbersigncalendarList extends StObject
+  inline def calendarNumbersigncalendarList: calendarNumbersigncalendarList = "calendar#calendarList".asInstanceOf[calendarNumbersigncalendarList]
   
   @js.native
-  sealed trait eventResponse extends NotificationType
+  sealed trait calendarNumbersigncalendarListEntry extends StObject
+  inline def calendarNumbersigncalendarListEntry: calendarNumbersigncalendarListEntry = "calendar#calendarListEntry".asInstanceOf[calendarNumbersigncalendarListEntry]
+  
+  @js.native
+  sealed trait calendarNumbersignevent extends StObject
+  inline def calendarNumbersignevent: calendarNumbersignevent = "calendar#event".asInstanceOf[calendarNumbersignevent]
+  
+  @js.native
+  sealed trait calendarNumbersignevents extends StObject
+  inline def calendarNumbersignevents: calendarNumbersignevents = "calendar#events".asInstanceOf[calendarNumbersignevents]
+  
+  @js.native
+  sealed trait calendarNumbersignfreeBusy extends StObject
+  inline def calendarNumbersignfreeBusy: calendarNumbersignfreeBusy = "calendar#freeBusy".asInstanceOf[calendarNumbersignfreeBusy]
+  
+  @js.native
+  sealed trait cancelled
+    extends StObject
+       with EventStatus
+  inline def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
+  
+  @js.native
+  sealed trait chip
+    extends StObject
+       with GadgetDisplayMode
+  inline def chip: chip = "chip".asInstanceOf[chip]
+  
+  @js.native
+  sealed trait confidential
+    extends StObject
+       with EventVisibility
+  inline def confidential: confidential = "confidential".asInstanceOf[confidential]
+  
+  @js.native
+  sealed trait confirmed
+    extends StObject
+       with EventStatus
+  inline def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
+  
+  @js.native
+  sealed trait declined
+    extends StObject
+       with AttendeeResponseStatus
+  inline def declined: declined = "declined".asInstanceOf[declined]
+  
+  @js.native
+  sealed trait domain
+    extends StObject
+       with ScopeType
+  inline def domain: domain = "domain".asInstanceOf[domain]
+  
+  @js.native
+  sealed trait email
+    extends StObject
+       with ReminderMethod
+  inline def email: email = "email".asInstanceOf[email]
+  
+  @js.native
+  sealed trait eventCancellation
+    extends StObject
+       with NotificationType
+  inline def eventCancellation: eventCancellation = "eventCancellation".asInstanceOf[eventCancellation]
+  
+  @js.native
+  sealed trait eventChange
+    extends StObject
+       with NotificationType
+  inline def eventChange: eventChange = "eventChange".asInstanceOf[eventChange]
+  
+  @js.native
+  sealed trait eventCreation
+    extends StObject
+       with NotificationType
+  inline def eventCreation: eventCreation = "eventCreation".asInstanceOf[eventCreation]
+  
+  @js.native
+  sealed trait eventResponse
+    extends StObject
+       with NotificationType
+  inline def eventResponse: eventResponse = "eventResponse".asInstanceOf[eventResponse]
   
   @js.native
   sealed trait freeBusyReader
-    extends AccessRole
+    extends StObject
+       with AccessRole
        with AccessRoleWithoutNone
+  inline def freeBusyReader: freeBusyReader = "freeBusyReader".asInstanceOf[freeBusyReader]
   
   @js.native
-  sealed trait group extends ScopeType
+  sealed trait group
+    extends StObject
+       with ScopeType
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait iCalUID extends SyncToken
+  sealed trait iCalUID
+    extends StObject
+       with SyncToken
+  inline def iCalUID: iCalUID = "iCalUID".asInstanceOf[iCalUID]
   
   @js.native
-  sealed trait icon extends GadgetDisplayMode
+  sealed trait icon
+    extends StObject
+       with GadgetDisplayMode
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait needsAction extends AttendeeResponseStatus
+  sealed trait needsAction
+    extends StObject
+       with AttendeeResponseStatus
+  inline def needsAction: needsAction = "needsAction".asInstanceOf[needsAction]
   
   @js.native
-  sealed trait none extends AccessRole
+  sealed trait none
+    extends StObject
+       with AccessRole
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait opaque extends EventTransparency
+  sealed trait opaque
+    extends StObject
+       with EventTransparency
+  inline def opaque: opaque = "opaque".asInstanceOf[opaque]
   
   @js.native
-  sealed trait orderBy extends SyncToken
+  sealed trait orderBy
+    extends StObject
+       with SyncToken
+  inline def orderBy: orderBy = "orderBy".asInstanceOf[orderBy]
   
   @js.native
   sealed trait owner
-    extends AccessRole
+    extends StObject
+       with AccessRole
        with AccessRoleWithoutNone
+  inline def owner: owner = "owner".asInstanceOf[owner]
   
   @js.native
-  sealed trait popup extends ReminderMethod
+  sealed trait popup
+    extends StObject
+       with ReminderMethod
+  inline def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait `private` extends EventVisibility
+  sealed trait `private`
+    extends StObject
+       with EventVisibility
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait privateExtendedProperty extends SyncToken
+  sealed trait privateExtendedProperty
+    extends StObject
+       with SyncToken
+  inline def privateExtendedProperty: privateExtendedProperty = "privateExtendedProperty".asInstanceOf[privateExtendedProperty]
   
   @js.native
-  sealed trait public extends EventVisibility
+  sealed trait public
+    extends StObject
+       with EventVisibility
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait q extends SyncToken
+  sealed trait q
+    extends StObject
+       with SyncToken
+  inline def q: q = "q".asInstanceOf[q]
   
   @js.native
   sealed trait reader
-    extends AccessRole
+    extends StObject
+       with AccessRole
        with AccessRoleWithoutNone
+  inline def reader: reader = "reader".asInstanceOf[reader]
   
   @js.native
-  sealed trait sharedExtendedProperty extends SyncToken
+  sealed trait sharedExtendedProperty
+    extends StObject
+       with SyncToken
+  inline def sharedExtendedProperty: sharedExtendedProperty = "sharedExtendedProperty".asInstanceOf[sharedExtendedProperty]
   
   @js.native
-  sealed trait sms extends ReminderMethod
+  sealed trait sms
+    extends StObject
+       with ReminderMethod
+  inline def sms: sms = "sms".asInstanceOf[sms]
   
   @js.native
-  sealed trait startTime extends EventsOrder
+  sealed trait startTime
+    extends StObject
+       with EventsOrder
+  inline def startTime: startTime = "startTime".asInstanceOf[startTime]
   
   @js.native
   sealed trait tentative
-    extends AttendeeResponseStatus
+    extends StObject
+       with AttendeeResponseStatus
        with EventStatus
+  inline def tentative: tentative = "tentative".asInstanceOf[tentative]
   
   @js.native
-  sealed trait timeMax extends SyncToken
+  sealed trait timeMax
+    extends StObject
+       with SyncToken
+  inline def timeMax: timeMax = "timeMax".asInstanceOf[timeMax]
   
   @js.native
-  sealed trait timeMin extends SyncToken
+  sealed trait timeMin
+    extends StObject
+       with SyncToken
+  inline def timeMin: timeMin = "timeMin".asInstanceOf[timeMin]
   
   @js.native
-  sealed trait transparent extends EventTransparency
+  sealed trait transparent
+    extends StObject
+       with EventTransparency
+  inline def transparent: transparent = "transparent".asInstanceOf[transparent]
   
   @js.native
-  sealed trait updated extends EventsOrder
+  sealed trait updated
+    extends StObject
+       with EventsOrder
+  inline def updated: updated = "updated".asInstanceOf[updated]
   
   @js.native
-  sealed trait updatedMin extends SyncToken
+  sealed trait updatedMin
+    extends StObject
+       with SyncToken
+  inline def updatedMin: updatedMin = "updatedMin".asInstanceOf[updatedMin]
   
   @js.native
-  sealed trait user extends ScopeType
+  sealed trait user
+    extends StObject
+       with ScopeType
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait writer
-    extends AccessRole
+    extends StObject
+       with AccessRole
        with AccessRoleWithoutNone
-  
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
-  @scala.inline
-  def agenda: agenda = "agenda".asInstanceOf[agenda]
-  @scala.inline
-  def calendarNumbersignaclRule: calendarNumbersignaclRule = "calendar#aclRule".asInstanceOf[calendarNumbersignaclRule]
-  @scala.inline
-  def calendarNumbersigncalendar: calendarNumbersigncalendar = "calendar#calendar".asInstanceOf[calendarNumbersigncalendar]
-  @scala.inline
-  def calendarNumbersigncalendarList: calendarNumbersigncalendarList = "calendar#calendarList".asInstanceOf[calendarNumbersigncalendarList]
-  @scala.inline
-  def calendarNumbersigncalendarListEntry: calendarNumbersigncalendarListEntry = "calendar#calendarListEntry".asInstanceOf[calendarNumbersigncalendarListEntry]
-  @scala.inline
-  def calendarNumbersignevent: calendarNumbersignevent = "calendar#event".asInstanceOf[calendarNumbersignevent]
-  @scala.inline
-  def calendarNumbersignevents: calendarNumbersignevents = "calendar#events".asInstanceOf[calendarNumbersignevents]
-  @scala.inline
-  def calendarNumbersignfreeBusy: calendarNumbersignfreeBusy = "calendar#freeBusy".asInstanceOf[calendarNumbersignfreeBusy]
-  @scala.inline
-  def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
-  @scala.inline
-  def chip: chip = "chip".asInstanceOf[chip]
-  @scala.inline
-  def confidential: confidential = "confidential".asInstanceOf[confidential]
-  @scala.inline
-  def confirmed: confirmed = "confirmed".asInstanceOf[confirmed]
-  @scala.inline
-  def declined: declined = "declined".asInstanceOf[declined]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def domain: domain = "domain".asInstanceOf[domain]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def eventCancellation: eventCancellation = "eventCancellation".asInstanceOf[eventCancellation]
-  @scala.inline
-  def eventChange: eventChange = "eventChange".asInstanceOf[eventChange]
-  @scala.inline
-  def eventCreation: eventCreation = "eventCreation".asInstanceOf[eventCreation]
-  @scala.inline
-  def eventResponse: eventResponse = "eventResponse".asInstanceOf[eventResponse]
-  @scala.inline
-  def freeBusyReader: freeBusyReader = "freeBusyReader".asInstanceOf[freeBusyReader]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def iCalUID: iCalUID = "iCalUID".asInstanceOf[iCalUID]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
-  def needsAction: needsAction = "needsAction".asInstanceOf[needsAction]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def opaque: opaque = "opaque".asInstanceOf[opaque]
-  @scala.inline
-  def orderBy: orderBy = "orderBy".asInstanceOf[orderBy]
-  @scala.inline
-  def owner: owner = "owner".asInstanceOf[owner]
-  @scala.inline
-  def popup: popup = "popup".asInstanceOf[popup]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def privateExtendedProperty: privateExtendedProperty = "privateExtendedProperty".asInstanceOf[privateExtendedProperty]
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
-  @scala.inline
-  def q: q = "q".asInstanceOf[q]
-  @scala.inline
-  def reader: reader = "reader".asInstanceOf[reader]
-  @scala.inline
-  def sharedExtendedProperty: sharedExtendedProperty = "sharedExtendedProperty".asInstanceOf[sharedExtendedProperty]
-  @scala.inline
-  def sms: sms = "sms".asInstanceOf[sms]
-  @scala.inline
-  def startTime: startTime = "startTime".asInstanceOf[startTime]
-  @scala.inline
-  def tentative: tentative = "tentative".asInstanceOf[tentative]
-  @scala.inline
-  def timeMax: timeMax = "timeMax".asInstanceOf[timeMax]
-  @scala.inline
-  def timeMin: timeMin = "timeMin".asInstanceOf[timeMin]
-  @scala.inline
-  def transparent: transparent = "transparent".asInstanceOf[transparent]
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
-  @scala.inline
-  def updatedMin: updatedMin = "updatedMin".asInstanceOf[updatedMin]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def writer: writer = "writer".asInstanceOf[writer]
+  inline def writer: writer = "writer".asInstanceOf[writer]
 }
-

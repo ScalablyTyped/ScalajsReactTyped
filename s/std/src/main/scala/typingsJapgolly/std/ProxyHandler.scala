@@ -1,83 +1,209 @@
 package typingsJapgolly.std
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProxyHandler[T /* <: js.Object */] extends js.Object {
+trait ProxyHandler[T /* <: js.Object */] extends StObject {
+  
+  /**
+    * A trap method for a function call.
+    * @param target The original callable object which is being proxied.
+    */
+  /* standard es2015.proxy */
   @JSName("apply")
   var apply: js.UndefOr[
-    js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
+    js.Function3[/* target */ T, /* thisArg */ Any, /* argArray */ js.Array[Any], Any]
   ] = js.undefined
+  
+  /**
+    * A trap for the `new` operator.
+    * @param target The original object which is being proxied.
+    * @param newTarget The constructor that was originally called.
+    */
+  /* standard es2015.proxy */
   var construct: js.UndefOr[
-    js.Function3[/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any], js.Object]
+    js.Function3[/* target */ T, /* argArray */ js.Array[Any], /* newTarget */ js.Function, js.Object]
   ] = js.undefined
+  
+  /**
+    * A trap for `Object.defineProperty()`.
+    * @param target The original object which is being proxied.
+    * @returns A `Boolean` indicating whether or not the property has been defined.
+    */
+  /* standard es2015.proxy */
   var defineProperty: js.UndefOr[
     js.Function3[
       /* target */ T, 
-      /* p */ PropertyKey, 
+      /* property */ java.lang.String | js.Symbol, 
       /* attributes */ js.PropertyDescriptor, 
       scala.Boolean
     ]
   ] = js.undefined
-  var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
-  var enumerate: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
-  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.undefined
-  var getOwnPropertyDescriptor: js.UndefOr[
-    js.Function2[/* target */ T, /* p */ PropertyKey, js.UndefOr[js.PropertyDescriptor]]
+  
+  /**
+    * A trap for the `delete` operator.
+    * @param target The original object which is being proxied.
+    * @param p The name or `Symbol` of the property to delete.
+    * @returns A `Boolean` indicating whether or not the property was deleted.
+    */
+  /* standard es2015.proxy */
+  var deleteProperty: js.UndefOr[
+    js.Function2[/* target */ T, /* p */ java.lang.String | js.Symbol, scala.Boolean]
   ] = js.undefined
+  
+  /**
+    * A trap for getting a property value.
+    * @param target The original object which is being proxied.
+    * @param p The name or `Symbol` of the property to get.
+    * @param receiver The proxy or an object that inherits from the proxy.
+    */
+  /* standard es2015.proxy */
+  var get: js.UndefOr[
+    js.Function3[/* target */ T, /* p */ java.lang.String | js.Symbol, /* receiver */ Any, Any]
+  ] = js.undefined
+  
+  /**
+    * A trap for `Object.getOwnPropertyDescriptor()`.
+    * @param target The original object which is being proxied.
+    * @param p The name of the property whose description should be retrieved.
+    */
+  /* standard es2015.proxy */
+  var getOwnPropertyDescriptor: js.UndefOr[
+    js.Function2[
+      /* target */ T, 
+      /* p */ java.lang.String | js.Symbol, 
+      js.UndefOr[js.PropertyDescriptor]
+    ]
+  ] = js.undefined
+  
+  /**
+    * A trap for the `[[GetPrototypeOf]]` internal method.
+    * @param target The original object which is being proxied.
+    */
+  /* standard es2015.proxy */
   var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.undefined
-  var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
+  
+  /**
+    * A trap for the `in` operator.
+    * @param target The original object which is being proxied.
+    * @param p The name or `Symbol` of the property to check for existence.
+    */
+  /* standard es2015.proxy */
+  var has: js.UndefOr[
+    js.Function2[/* target */ T, /* p */ java.lang.String | js.Symbol, scala.Boolean]
+  ] = js.undefined
+  
+  /**
+    * A trap for `Object.isExtensible()`.
+    * @param target The original object which is being proxied.
+    */
+  /* standard es2015.proxy */
   var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
-  var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
+  
+  /**
+    * A trap for `Reflect.ownKeys()`.
+    * @param target The original object which is being proxied.
+    */
+  /* standard es2015.proxy */
+  var ownKeys: js.UndefOr[js.Function1[/* target */ T, ArrayLike[java.lang.String | js.Symbol]]] = js.undefined
+  
+  /**
+    * A trap for `Object.preventExtensions()`.
+    * @param target The original object which is being proxied.
+    */
+  /* standard es2015.proxy */
   var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
+  
+  /**
+    * A trap for setting a property value.
+    * @param target The original object which is being proxied.
+    * @param p The name or `Symbol` of the property to set.
+    * @param receiver The object to which the assignment was originally directed.
+    * @returns `A `Boolean` indicating whether or not the property was set.
+    */
+  /* standard es2015.proxy */
   var set: js.UndefOr[
     js.Function4[
       /* target */ T, 
-      /* p */ PropertyKey, 
-      /* value */ js.Any, 
-      /* receiver */ js.Any, 
+      /* p */ java.lang.String | js.Symbol, 
+      /* newValue */ Any, 
+      /* receiver */ Any, 
       scala.Boolean
     ]
   ] = js.undefined
-  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.undefined
+  
+  /**
+    * A trap for `Object.setPrototypeOf()`.
+    * @param target The original object which is being proxied.
+    * @param newPrototype The object's new prototype or `null`.
+    */
+  /* standard es2015.proxy */
+  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Object | Null, scala.Boolean]] = js.undefined
 }
-
 object ProxyHandler {
-  @scala.inline
-  def apply[T /* <: js.Object */](
-    apply: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    construct: (/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any]) => CallbackTo[js.Object] = null,
-    defineProperty: (/* target */ T, /* p */ PropertyKey, /* attributes */ js.PropertyDescriptor) => CallbackTo[scala.Boolean] = null,
-    deleteProperty: (/* target */ T, /* p */ PropertyKey) => CallbackTo[scala.Boolean] = null,
-    enumerate: /* target */ T => CallbackTo[js.Array[PropertyKey]] = null,
-    get: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => CallbackTo[js.Any] = null,
-    getOwnPropertyDescriptor: (/* target */ T, /* p */ PropertyKey) => CallbackTo[js.UndefOr[js.PropertyDescriptor]] = null,
-    getPrototypeOf: /* target */ T => CallbackTo[js.Object | Null] = null,
-    has: (/* target */ T, /* p */ PropertyKey) => CallbackTo[scala.Boolean] = null,
-    isExtensible: /* target */ T => CallbackTo[scala.Boolean] = null,
-    ownKeys: /* target */ T => CallbackTo[js.Array[PropertyKey]] = null,
-    preventExtensions: /* target */ T => CallbackTo[scala.Boolean] = null,
-    set: (/* target */ T, /* p */ PropertyKey, /* value */ js.Any, /* receiver */ js.Any) => CallbackTo[scala.Boolean] = null,
-    setPrototypeOf: (/* target */ T, /* v */ js.Any) => CallbackTo[scala.Boolean] = null
-  ): ProxyHandler[T] = {
+  
+  inline def apply[T /* <: js.Object */](): ProxyHandler[T] = {
     val __obj = js.Dynamic.literal()
-    if (apply != null) __obj.updateDynamic("apply")(js.Any.fromFunction3((t0: /* target */ T, t1: /* thisArg */ js.Any, t2: /* argArray */ js.UndefOr[js.Any]) => apply(t0, t1, t2).runNow()))
-    if (construct != null) __obj.updateDynamic("construct")(js.Any.fromFunction3((t0: /* target */ T, t1: /* argArray */ js.Any, t2: /* newTarget */ js.UndefOr[js.Any]) => construct(t0, t1, t2).runNow()))
-    if (defineProperty != null) __obj.updateDynamic("defineProperty")(js.Any.fromFunction3((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey, t2: /* attributes */ js.PropertyDescriptor) => defineProperty(t0, t1, t2).runNow()))
-    if (deleteProperty != null) __obj.updateDynamic("deleteProperty")(js.Any.fromFunction2((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey) => deleteProperty(t0, t1).runNow()))
-    if (enumerate != null) __obj.updateDynamic("enumerate")(js.Any.fromFunction1((t0: /* target */ T) => enumerate(t0).runNow()))
-    if (get != null) __obj.updateDynamic("get")(js.Any.fromFunction3((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey, t2: /* receiver */ js.Any) => get(t0, t1, t2).runNow()))
-    if (getOwnPropertyDescriptor != null) __obj.updateDynamic("getOwnPropertyDescriptor")(js.Any.fromFunction2((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey) => getOwnPropertyDescriptor(t0, t1).runNow()))
-    if (getPrototypeOf != null) __obj.updateDynamic("getPrototypeOf")(js.Any.fromFunction1((t0: /* target */ T) => getPrototypeOf(t0).runNow()))
-    if (has != null) __obj.updateDynamic("has")(js.Any.fromFunction2((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey) => has(t0, t1).runNow()))
-    if (isExtensible != null) __obj.updateDynamic("isExtensible")(js.Any.fromFunction1((t0: /* target */ T) => isExtensible(t0).runNow()))
-    if (ownKeys != null) __obj.updateDynamic("ownKeys")(js.Any.fromFunction1((t0: /* target */ T) => ownKeys(t0).runNow()))
-    if (preventExtensions != null) __obj.updateDynamic("preventExtensions")(js.Any.fromFunction1((t0: /* target */ T) => preventExtensions(t0).runNow()))
-    if (set != null) __obj.updateDynamic("set")(js.Any.fromFunction4((t0: /* target */ T, t1: /* p */ typingsJapgolly.std.PropertyKey, t2: /* value */ js.Any, t3: /* receiver */ js.Any) => set(t0, t1, t2, t3).runNow()))
-    if (setPrototypeOf != null) __obj.updateDynamic("setPrototypeOf")(js.Any.fromFunction2((t0: /* target */ T, t1: /* v */ js.Any) => setPrototypeOf(t0, t1).runNow()))
     __obj.asInstanceOf[ProxyHandler[T]]
   }
+  
+  extension [Self <: ProxyHandler[?], T /* <: js.Object */](x: Self & ProxyHandler[T]) {
+    
+    inline def setApply(value: (/* target */ T, /* thisArg */ Any, /* argArray */ js.Array[Any]) => Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
+    
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+    
+    inline def setConstruct(value: (/* target */ T, /* argArray */ js.Array[Any], /* newTarget */ js.Function) => js.Object): Self = StObject.set(x, "construct", js.Any.fromFunction3(value))
+    
+    inline def setConstructUndefined: Self = StObject.set(x, "construct", js.undefined)
+    
+    inline def setDefineProperty(
+      value: (/* target */ T, /* property */ java.lang.String | js.Symbol, /* attributes */ js.PropertyDescriptor) => scala.Boolean
+    ): Self = StObject.set(x, "defineProperty", js.Any.fromFunction3(value))
+    
+    inline def setDefinePropertyUndefined: Self = StObject.set(x, "defineProperty", js.undefined)
+    
+    inline def setDeleteProperty(value: (/* target */ T, /* p */ java.lang.String | js.Symbol) => scala.Boolean): Self = StObject.set(x, "deleteProperty", js.Any.fromFunction2(value))
+    
+    inline def setDeletePropertyUndefined: Self = StObject.set(x, "deleteProperty", js.undefined)
+    
+    inline def setGet(value: (/* target */ T, /* p */ java.lang.String | js.Symbol, /* receiver */ Any) => Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    
+    inline def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ java.lang.String | js.Symbol) => js.UndefOr[js.PropertyDescriptor]): Self = StObject.set(x, "getOwnPropertyDescriptor", js.Any.fromFunction2(value))
+    
+    inline def setGetOwnPropertyDescriptorUndefined: Self = StObject.set(x, "getOwnPropertyDescriptor", js.undefined)
+    
+    inline def setGetPrototypeOf(value: /* target */ T => js.Object | Null): Self = StObject.set(x, "getPrototypeOf", js.Any.fromFunction1(value))
+    
+    inline def setGetPrototypeOfUndefined: Self = StObject.set(x, "getPrototypeOf", js.undefined)
+    
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    
+    inline def setHas(value: (/* target */ T, /* p */ java.lang.String | js.Symbol) => scala.Boolean): Self = StObject.set(x, "has", js.Any.fromFunction2(value))
+    
+    inline def setHasUndefined: Self = StObject.set(x, "has", js.undefined)
+    
+    inline def setIsExtensible(value: /* target */ T => scala.Boolean): Self = StObject.set(x, "isExtensible", js.Any.fromFunction1(value))
+    
+    inline def setIsExtensibleUndefined: Self = StObject.set(x, "isExtensible", js.undefined)
+    
+    inline def setOwnKeys(value: /* target */ T => ArrayLike[java.lang.String | js.Symbol]): Self = StObject.set(x, "ownKeys", js.Any.fromFunction1(value))
+    
+    inline def setOwnKeysUndefined: Self = StObject.set(x, "ownKeys", js.undefined)
+    
+    inline def setPreventExtensions(value: /* target */ T => scala.Boolean): Self = StObject.set(x, "preventExtensions", js.Any.fromFunction1(value))
+    
+    inline def setPreventExtensionsUndefined: Self = StObject.set(x, "preventExtensions", js.undefined)
+    
+    inline def setSet(
+      value: (/* target */ T, /* p */ java.lang.String | js.Symbol, /* newValue */ Any, /* receiver */ Any) => scala.Boolean
+    ): Self = StObject.set(x, "set", js.Any.fromFunction4(value))
+    
+    inline def setSetPrototypeOf(value: (/* target */ T, /* v */ js.Object | Null) => scala.Boolean): Self = StObject.set(x, "setPrototypeOf", js.Any.fromFunction2(value))
+    
+    inline def setSetPrototypeOfUndefined: Self = StObject.set(x, "setPrototypeOf", js.undefined)
+    
+    inline def setSetUndefined: Self = StObject.set(x, "set", js.undefined)
+  }
 }
-

@@ -1,16 +1,22 @@
 package typingsJapgolly.mjmlReact.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mjml-react", "MjmlButton")
 @js.native
-class MjmlButton ()
+open class MjmlButton protected ()
   extends Component[
-      RequiredChildrenProps with MjmlButtonProps with PaddingProps with ClassNameProps with HrefProps with BorderProps, 
+      MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, 
       js.Object, 
-      js.Any
-    ]
-
+      Any
+    ] {
+  def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: MjmlButtonProps & PaddingProps & ClassNameProps & HrefProps & BorderProps, context: Any) = this()
+}

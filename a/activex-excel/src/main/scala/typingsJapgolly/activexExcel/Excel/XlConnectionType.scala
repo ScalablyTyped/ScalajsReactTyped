@@ -1,35 +1,31 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`5`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`1`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`5`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`1`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`5`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
 */
-trait XlConnectionType extends js.Object
-
+trait XlConnectionType extends StObject
 object XlConnectionType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlConnectionTypeODBC: `2` = this.cast(2)
-  @scala.inline
-  def xlConnectionTypeOLEDB: `1` = this.cast(1)
-  @scala.inline
-  def xlConnectionTypeTEXT: `4` = this.cast(4)
-  @scala.inline
-  def xlConnectionTypeWEB: `5` = this.cast(5)
-  @scala.inline
-  def xlConnectionTypeXMLMAP: `3` = this.cast(3)
+  
+  inline def xlConnectionTypeODBC: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xlConnectionTypeOLEDB: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xlConnectionTypeTEXT: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlConnectionTypeWEB: `5` = 5.asInstanceOf[`5`]
+  
+  inline def xlConnectionTypeXMLMAP: `3` = 3.asInstanceOf[`3`]
 }
-

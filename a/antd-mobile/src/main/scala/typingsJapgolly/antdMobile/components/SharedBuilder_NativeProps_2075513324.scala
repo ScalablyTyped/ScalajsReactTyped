@@ -1,0 +1,160 @@
+package typingsJapgolly.antdMobile.components
+
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.Booleanish
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.reactStrings.`additions removals`
+import typingsJapgolly.react.reactStrings.`additions text`
+import typingsJapgolly.react.reactStrings.`inline`
+import typingsJapgolly.react.reactStrings.`removals additions`
+import typingsJapgolly.react.reactStrings.`removals text`
+import typingsJapgolly.react.reactStrings.`text additions`
+import typingsJapgolly.react.reactStrings.`text removals`
+import typingsJapgolly.react.reactStrings.additions
+import typingsJapgolly.react.reactStrings.all
+import typingsJapgolly.react.reactStrings.ascending
+import typingsJapgolly.react.reactStrings.assertive
+import typingsJapgolly.react.reactStrings.both
+import typingsJapgolly.react.reactStrings.copy
+import typingsJapgolly.react.reactStrings.date
+import typingsJapgolly.react.reactStrings.descending
+import typingsJapgolly.react.reactStrings.dialog
+import typingsJapgolly.react.reactStrings.execute
+import typingsJapgolly.react.reactStrings.grammar
+import typingsJapgolly.react.reactStrings.grid
+import typingsJapgolly.react.reactStrings.horizontal
+import typingsJapgolly.react.reactStrings.link
+import typingsJapgolly.react.reactStrings.list
+import typingsJapgolly.react.reactStrings.listbox
+import typingsJapgolly.react.reactStrings.location
+import typingsJapgolly.react.reactStrings.menu
+import typingsJapgolly.react.reactStrings.mixed
+import typingsJapgolly.react.reactStrings.move
+import typingsJapgolly.react.reactStrings.none
+import typingsJapgolly.react.reactStrings.off
+import typingsJapgolly.react.reactStrings.other
+import typingsJapgolly.react.reactStrings.page
+import typingsJapgolly.react.reactStrings.polite
+import typingsJapgolly.react.reactStrings.popup
+import typingsJapgolly.react.reactStrings.removals
+import typingsJapgolly.react.reactStrings.spelling
+import typingsJapgolly.react.reactStrings.step
+import typingsJapgolly.react.reactStrings.text
+import typingsJapgolly.react.reactStrings.time
+import typingsJapgolly.react.reactStrings.tree
+import typingsJapgolly.react.reactStrings.vertical
+import typingsJapgolly.std.Partial
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@scala.inline
+open class SharedBuilder_NativeProps_2075513324 (val args: js.Array[Any])
+  extends AnyVal
+     with StBuildingComponent[scala.Nothing] {
+  
+  inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+  
+  inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+  
+  inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+  
+  inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+  
+  inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+  
+  inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+  
+  inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+  
+  inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+  
+  inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+  
+  inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+  
+  inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+  
+  inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+  
+  inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+  
+  inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+  
+  inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+  
+  inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+  
+  inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+  
+  inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+  
+  inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+  
+  inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+  
+  inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+  
+  inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+  
+  inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+  
+  inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+  
+  inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+  
+  inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+  
+  inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+  
+  inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+  
+  inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+  
+  inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+  
+  inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+  
+  inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+  
+  inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+  
+  inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+  
+  inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+  
+  inline def `aria-relevant`(
+    value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+  ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+  
+  inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+  
+  inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+  
+  inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+  
+  inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+  
+  inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+  
+  inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+  
+  inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+  
+  inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+  
+  inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+  
+  inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+  
+  inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+  
+  inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+  
+  inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+  
+  inline def style(value: CSSProperties & (Partial[Record[scala.Nothing, String]])): this.type = set("style", value.asInstanceOf[js.Any])
+  
+  inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+}

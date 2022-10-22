@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Submit Mode for {@link Attributes.Attribute.setSubmitMode} Attributes.Attribute.setSubmitMode().
@@ -13,16 +13,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.dirty
   - typingsJapgolly.xrm.xrmStrings.never
 */
-trait SubmitMode extends js.Object
-
+trait SubmitMode extends StObject
 object SubmitMode {
-  @scala.inline
-  def always: typingsJapgolly.xrm.xrmStrings.always = this.cast("always")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dirty: typingsJapgolly.xrm.xrmStrings.dirty = this.cast("dirty")
-  @scala.inline
-  def never: typingsJapgolly.xrm.xrmStrings.never = this.cast("never")
+  
+  inline def always: typingsJapgolly.xrm.xrmStrings.always = "always".asInstanceOf[typingsJapgolly.xrm.xrmStrings.always]
+  
+  inline def dirty: typingsJapgolly.xrm.xrmStrings.dirty = "dirty".asInstanceOf[typingsJapgolly.xrm.xrmStrings.dirty]
+  
+  inline def never: typingsJapgolly.xrm.xrmStrings.never = "never".asInstanceOf[typingsJapgolly.xrm.xrmStrings.never]
 }
-

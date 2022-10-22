@@ -1,29 +1,26 @@
 package typingsJapgolly.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait linesOptions extends seriesTypeBase {
+trait linesOptions
+  extends StObject
+     with seriesTypeBase {
+  
   var steps: js.UndefOr[Boolean] = js.undefined
 }
-
 object linesOptions {
-  @scala.inline
-  def apply(
-    fill: js.Any = null,
-    fillColor: js.Any = null,
-    lineWidth: Int | Double = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    steps: js.UndefOr[Boolean] = js.undefined
-  ): linesOptions = {
+  
+  inline def apply(): linesOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
     __obj.asInstanceOf[linesOptions]
   }
+  
+  extension [Self <: linesOptions](x: Self) {
+    
+    inline def setSteps(value: Boolean): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+  }
 }
-

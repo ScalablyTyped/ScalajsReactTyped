@@ -2,14 +2,18 @@ package typingsJapgolly.protobufjs.minimalMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.protobufjs.mod.INamespace
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs/minimal", "common")
-@js.native
-object common extends js.Object {
-  def apply(name: String, json: StringDictionary[js.Any]): Unit = js.native
+object common {
+  
+  inline def apply(name: String, json: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("protobufjs/minimal", "common")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets the root definition of the specified common proto file.
     *
@@ -25,6 +29,5 @@ object common extends js.Object {
     * @param file Proto file name
     * @returns Root definition or `null` if not defined
     */
-  def get(file: String): INamespace | Null = js.native
+  inline def get(file: String): INamespace | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(file.asInstanceOf[js.Any]).asInstanceOf[INamespace | Null]
 }
-

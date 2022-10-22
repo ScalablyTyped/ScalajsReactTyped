@@ -1,22 +1,28 @@
 package typingsJapgolly.blocks
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.blocks.anon.Create
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CollectionPrototype
-  extends /* propertyName */ StringDictionary[js.Any] {
-  var options: js.UndefOr[AnonCreate] = js.undefined
+  extends StObject
+     with /* propertyName */ StringDictionary[Any] {
+  
+  var options: js.UndefOr[Create] = js.undefined
 }
-
 object CollectionPrototype {
-  @scala.inline
-  def apply(StringDictionary: /* propertyName */ StringDictionary[js.Any] = null, options: AnonCreate = null): CollectionPrototype = {
+  
+  inline def apply(): CollectionPrototype = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPrototype]
   }
+  
+  extension [Self <: CollectionPrototype](x: Self) {
+    
+    inline def setOptions(value: Create): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

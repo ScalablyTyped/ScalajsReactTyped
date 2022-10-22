@@ -10,10 +10,10 @@ Isomorphic WHATWG Fetch API, for Node & Browserify
 | ------------------ | :-------------: |
 | Full name          | isomorphic-fetch |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 3075 |
-| # downloads        | 189986807 |
-| # stars            | 117 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2921518333333332E7 |
+| # stars            | 6906.0 |
 
 ## Links
 - [Homepage](https://github.com/matthew-andrews/isomorphic-fetch/issues)

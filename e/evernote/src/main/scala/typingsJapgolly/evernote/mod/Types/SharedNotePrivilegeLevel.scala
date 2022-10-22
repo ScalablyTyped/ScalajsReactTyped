@@ -1,35 +1,33 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SharedNotePrivilegeLevel extends js.Object
-
+sealed trait SharedNotePrivilegeLevel extends StObject
 @JSImport("evernote", "Types.SharedNotePrivilegeLevel")
 @js.native
-object SharedNotePrivilegeLevel extends js.Object {
-  @js.native
-  sealed trait FULL_ACCESS extends SharedNotePrivilegeLevel
-  
-  @js.native
-  sealed trait MODIFY_NOTE extends SharedNotePrivilegeLevel
-  
-  @js.native
-  sealed trait READ_NOTE extends SharedNotePrivilegeLevel
+object SharedNotePrivilegeLevel extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SharedNotePrivilegeLevel with Double] = js.native
-  /* 2 */ @js.native
-  object FULL_ACCESS extends TopLevel[FULL_ACCESS with Double]
+  def apply(value: Double): js.UndefOr[SharedNotePrivilegeLevel & Double] = js.native
   
-  /* 1 */ @js.native
-  object MODIFY_NOTE extends TopLevel[MODIFY_NOTE with Double]
+  @js.native
+  sealed trait FULL_ACCESS
+    extends StObject
+       with SharedNotePrivilegeLevel
+  /* 2 */ val FULL_ACCESS: typingsJapgolly.evernote.mod.Types.SharedNotePrivilegeLevel.FULL_ACCESS & Double = js.native
   
-  /* 0 */ @js.native
-  object READ_NOTE extends TopLevel[READ_NOTE with Double]
+  @js.native
+  sealed trait MODIFY_NOTE
+    extends StObject
+       with SharedNotePrivilegeLevel
+  /* 1 */ val MODIFY_NOTE: typingsJapgolly.evernote.mod.Types.SharedNotePrivilegeLevel.MODIFY_NOTE & Double = js.native
   
+  @js.native
+  sealed trait READ_NOTE
+    extends StObject
+       with SharedNotePrivilegeLevel
+  /* 0 */ val READ_NOTE: typingsJapgolly.evernote.mod.Types.SharedNotePrivilegeLevel.READ_NOTE & Double = js.native
 }
-

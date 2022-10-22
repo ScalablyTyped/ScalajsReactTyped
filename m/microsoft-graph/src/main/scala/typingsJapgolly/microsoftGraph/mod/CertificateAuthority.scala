@@ -1,48 +1,70 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CertificateAuthority extends js.Object {
+trait CertificateAuthority extends StObject {
+  
   // Required. The base64 encoded string representing the public certificate.
-  var certificate: js.UndefOr[Double] = js.undefined
+  var certificate: js.UndefOr[String] = js.undefined
+  
   // The URL of the certificate revocation list.
-  var certificateRevocationListUrl: js.UndefOr[String] = js.undefined
+  var certificateRevocationListUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * The URL contains the list of all revoked certificates since the last time a full certificate revocaton list was
     * created.
     */
-  var deltaCertificateRevocationListUrl: js.UndefOr[String] = js.undefined
+  var deltaCertificateRevocationListUrl: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Required. true if the trusted certificate is a root authority, false if the trusted certificate is an intermediate
     * authority.
     */
   var isRootAuthority: js.UndefOr[Boolean] = js.undefined
+  
   // The issuer of the certificate, calculated from the certificate value. Read-only.
   var issuer: js.UndefOr[String] = js.undefined
+  
   // The subject key identifier of the certificate, calculated from the certificate value. Read-only.
   var issuerSki: js.UndefOr[String] = js.undefined
 }
-
 object CertificateAuthority {
-  @scala.inline
-  def apply(
-    certificate: Int | Double = null,
-    certificateRevocationListUrl: String = null,
-    deltaCertificateRevocationListUrl: String = null,
-    isRootAuthority: js.UndefOr[Boolean] = js.undefined,
-    issuer: String = null,
-    issuerSki: String = null
-  ): CertificateAuthority = {
+  
+  inline def apply(): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
-    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
-    if (certificateRevocationListUrl != null) __obj.updateDynamic("certificateRevocationListUrl")(certificateRevocationListUrl.asInstanceOf[js.Any])
-    if (deltaCertificateRevocationListUrl != null) __obj.updateDynamic("deltaCertificateRevocationListUrl")(deltaCertificateRevocationListUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(isRootAuthority)) __obj.updateDynamic("isRootAuthority")(isRootAuthority.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (issuerSki != null) __obj.updateDynamic("issuerSki")(issuerSki.asInstanceOf[js.Any])
     __obj.asInstanceOf[CertificateAuthority]
   }
+  
+  extension [Self <: CertificateAuthority](x: Self) {
+    
+    inline def setCertificate(value: String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "certificateRevocationListUrl", value.asInstanceOf[js.Any])
+    
+    inline def setCertificateRevocationListUrlNull: Self = StObject.set(x, "certificateRevocationListUrl", null)
+    
+    inline def setCertificateRevocationListUrlUndefined: Self = StObject.set(x, "certificateRevocationListUrl", js.undefined)
+    
+    inline def setCertificateUndefined: Self = StObject.set(x, "certificate", js.undefined)
+    
+    inline def setDeltaCertificateRevocationListUrl(value: NullableOption[String]): Self = StObject.set(x, "deltaCertificateRevocationListUrl", value.asInstanceOf[js.Any])
+    
+    inline def setDeltaCertificateRevocationListUrlNull: Self = StObject.set(x, "deltaCertificateRevocationListUrl", null)
+    
+    inline def setDeltaCertificateRevocationListUrlUndefined: Self = StObject.set(x, "deltaCertificateRevocationListUrl", js.undefined)
+    
+    inline def setIsRootAuthority(value: Boolean): Self = StObject.set(x, "isRootAuthority", value.asInstanceOf[js.Any])
+    
+    inline def setIsRootAuthorityUndefined: Self = StObject.set(x, "isRootAuthority", js.undefined)
+    
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerSki(value: String): Self = StObject.set(x, "issuerSki", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerSkiUndefined: Self = StObject.set(x, "issuerSki", js.undefined)
+    
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+  }
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.wordpressBlockLibrary
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/block-library", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def registerCoreBlocks(): Unit = js.native
+object mod {
+  
+  @JSImport("@wordpress/block-library", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def registerCoreBlocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerCoreBlocks")().asInstanceOf[Unit]
 }
-

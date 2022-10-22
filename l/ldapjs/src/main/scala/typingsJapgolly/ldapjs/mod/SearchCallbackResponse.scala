@@ -6,12 +6,13 @@ import typingsJapgolly.ldapjs.ldapjsStrings.page
 import typingsJapgolly.ldapjs.ldapjsStrings.searchEntry_
 import typingsJapgolly.ldapjs.ldapjsStrings.searchReference
 import typingsJapgolly.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SearchCallbackResponse extends EventEmitter {
+  
   @JSName("on")
   def on_end(event: end, listener: js.Function1[/* res */ LDAPResult | Null, Unit]): this.type = js.native
   @JSName("on")
@@ -19,11 +20,10 @@ trait SearchCallbackResponse extends EventEmitter {
   @JSName("on")
   def on_page(
     event: page,
-    listener: js.Function2[/* res */ LDAPResult, /* cb */ js.Function1[/* repeated */ js.Any, Unit], Unit]
+    listener: js.Function2[/* res */ LDAPResult, /* cb */ js.Function1[/* repeated */ Any, Unit], Unit]
   ): this.type = js.native
   @JSName("on")
   def on_searchEntry(event: searchEntry_, listener: js.Function1[/* entry */ SearchEntry, Unit]): this.type = js.native
   @JSName("on")
   def on_searchReference(event: searchReference, listener: js.Function1[/* referral */ SearchReference, Unit]): this.type = js.native
 }
-

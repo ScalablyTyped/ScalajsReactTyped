@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-dnd-html5-backend
 
-Typings are for version 9.5.1
+Typings are for version 16.0.1
 
 ## Library description:
 HTML5 backend for React DnD
@@ -10,10 +10,10 @@ HTML5 backend for React DnD
 | ------------------ | :-------------: |
 | Full name          | react-dnd-html5-backend |
 | Keywords           | - |
-| # releases         | 40 |
-| # dependents       | 678 |
-| # downloads        | 17103230 |
-| # stars            | 4 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 5371896.333333333 |
+| # stars            | 17806.0 |
 
 ## Links
 - [Homepage](https://github.com/react-dnd/react-dnd#readme)

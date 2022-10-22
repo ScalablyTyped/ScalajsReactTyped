@@ -1,13 +1,14 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb
+  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.im
@@ -17,6 +18,7 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto
+  - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.news
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp
@@ -31,60 +33,60 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp
 */
-trait ProtocolHandlerProtocol extends js.Object
-
+trait ProtocolHandlerProtocol extends StObject
 object ProtocolHandlerProtocol {
-  @scala.inline
-  def bitcoin: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin = this.cast("bitcoin")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dat: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat = this.cast("dat")
-  @scala.inline
-  def dweb: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb = this.cast("dweb")
-  @scala.inline
-  def geo: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo = this.cast("geo")
-  @scala.inline
-  def gopher: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher = this.cast("gopher")
-  @scala.inline
-  def im: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.im = this.cast("im")
-  @scala.inline
-  def ipfs: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs = this.cast("ipfs")
-  @scala.inline
-  def ipns: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns = this.cast("ipns")
-  @scala.inline
-  def irc: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc = this.cast("irc")
-  @scala.inline
-  def ircs: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs = this.cast("ircs")
-  @scala.inline
-  def magnet: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet = this.cast("magnet")
-  @scala.inline
-  def mailto: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto = this.cast("mailto")
-  @scala.inline
-  def mms: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms = this.cast("mms")
-  @scala.inline
-  def news: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.news = this.cast("news")
-  @scala.inline
-  def nntp: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp = this.cast("nntp")
-  @scala.inline
-  def sip: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip = this.cast("sip")
-  @scala.inline
-  def sms: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms = this.cast("sms")
-  @scala.inline
-  def smsto: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto = this.cast("smsto")
-  @scala.inline
-  def ssb: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb = this.cast("ssb")
-  @scala.inline
-  def ssh: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh = this.cast("ssh")
-  @scala.inline
-  def tel: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel = this.cast("tel")
-  @scala.inline
-  def urn: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn = this.cast("urn")
-  @scala.inline
-  def webcal: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal = this.cast("webcal")
-  @scala.inline
-  def wtai: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai = this.cast("wtai")
-  @scala.inline
-  def xmpp: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp = this.cast("xmpp")
+  
+  inline def bitcoin: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin = "bitcoin".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.bitcoin]
+  
+  inline def dat: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat = "dat".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dat]
+  
+  inline def dweb: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb = "dweb".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.dweb]
+  
+  inline def ftp: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp = "ftp".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ftp]
+  
+  inline def geo: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo = "geo".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.geo]
+  
+  inline def gopher: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher = "gopher".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.gopher]
+  
+  inline def im: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.im = "im".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.im]
+  
+  inline def ipfs: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs = "ipfs".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipfs]
+  
+  inline def ipns: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns = "ipns".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ipns]
+  
+  inline def irc: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc = "irc".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.irc]
+  
+  inline def ircs: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs = "ircs".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ircs]
+  
+  inline def magnet: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet = "magnet".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.magnet]
+  
+  inline def mailto: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto = "mailto".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mailto]
+  
+  inline def matrix: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix = "matrix".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.matrix]
+  
+  inline def mms: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms = "mms".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.mms]
+  
+  inline def news: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.news = "news".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.news]
+  
+  inline def nntp: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp = "nntp".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.nntp]
+  
+  inline def sip: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip = "sip".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sip]
+  
+  inline def sms: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms = "sms".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.sms]
+  
+  inline def smsto: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto = "smsto".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.smsto]
+  
+  inline def ssb: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb = "ssb".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssb]
+  
+  inline def ssh: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh = "ssh".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.ssh]
+  
+  inline def tel: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel = "tel".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tel]
+  
+  inline def urn: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn = "urn".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.urn]
+  
+  inline def webcal: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal = "webcal".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.webcal]
+  
+  inline def wtai: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai = "wtai".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.wtai]
+  
+  inline def xmpp: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp = "xmpp".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.xmpp]
 }
-

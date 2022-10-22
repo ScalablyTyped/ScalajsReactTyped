@@ -4,51 +4,58 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bmp
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.gif
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.jpg
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.png
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapImageProperties extends js.Object {
+trait MapImageProperties extends StObject {
+  
   /**
     * The extent of the exported map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#extent)
     */
   var extent: js.UndefOr[ExtentProperties] = js.undefined
+  
   /**
     * The requested image height in pixels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#height)
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
-    * URL to the returned image. The image format must be of a type supported by the HTML `<img>` tag.
+    * URL to the returned image.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#href)
     */
   var href: js.UndefOr[gif | jpg | png | bmp] = js.undefined
+  
   /**
-    * The opacity of the image. Value can be any number between `0` and `1` where `0` is 100% transparent, `0.5` is 50% transparent and `1` is fully opaque.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#opacity)
+    * The opacity of the image.
     *
     * @default 1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#opacity)
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * Scale of the requested dynamic map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#scale)
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * Indicates if the requested image is visible in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#visible)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-MapImage.html#visible)
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The requested image width in pixels.
     *
@@ -56,27 +63,41 @@ trait MapImageProperties extends js.Object {
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object MapImageProperties {
-  @scala.inline
-  def apply(
-    extent: ExtentProperties = null,
-    height: Int | Double = null,
-    href: gif | jpg | png | bmp = null,
-    opacity: Int | Double = null,
-    scale: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): MapImageProperties = {
+  
+  inline def apply(): MapImageProperties = {
     val __obj = js.Dynamic.literal()
-    if (extent != null) __obj.updateDynamic("extent")(extent.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapImageProperties]
   }
+  
+  extension [Self <: MapImageProperties](x: Self) {
+    
+    inline def setExtent(value: ExtentProperties): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+    
+    inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHref(value: gif | jpg | png | bmp): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

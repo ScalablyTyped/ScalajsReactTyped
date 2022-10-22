@@ -1,19 +1,24 @@
 package typingsJapgolly.downshift.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetPropsCommonOptions extends js.Object {
+trait GetPropsCommonOptions extends StObject {
+  
   var suppressRefError: js.UndefOr[Boolean] = js.undefined
 }
-
 object GetPropsCommonOptions {
-  @scala.inline
-  def apply(suppressRefError: js.UndefOr[Boolean] = js.undefined): GetPropsCommonOptions = {
+  
+  inline def apply(): GetPropsCommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(suppressRefError)) __obj.updateDynamic("suppressRefError")(suppressRefError.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPropsCommonOptions]
   }
+  
+  extension [Self <: GetPropsCommonOptions](x: Self) {
+    
+    inline def setSuppressRefError(value: Boolean): Self = StObject.set(x, "suppressRefError", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressRefErrorUndefined: Self = StObject.set(x, "suppressRefError", js.undefined)
+  }
 }
-

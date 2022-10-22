@@ -1,157 +1,192 @@
 package typingsJapgolly.webix.mod.ui
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.mod.EventHash
-import typingsJapgolly.webix.mod.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait filemanagerConfig extends js.Object {
-  var animate: js.UndefOr[js.Any] = js.undefined
+trait filemanagerConfig extends StObject {
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
+  var clipboard: js.UndefOr[Any] = js.undefined
+  
+  var compact: js.UndefOr[Boolean] = js.undefined
+  
+  var compactWidth: js.UndefOr[Double] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
-  var datathrottle: js.UndefOr[Double] = js.undefined
-  var datatype: js.UndefOr[String] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var filterMode: js.UndefOr[js.Any] = js.undefined
+  
+  var editor: js.UndefOr[Boolean] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
-  var handlers: js.UndefOr[js.Any] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
-  var legacyUploader: js.UndefOr[Boolean] = js.undefined
+  
+  var locale: js.UndefOr[Any] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
-  var menuFilter: js.UndefOr[WebixCallback] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[String] = js.undefined
-  var modes: js.UndefOr[js.Array[_]] = js.undefined
-  var noFileCache: js.UndefOr[Boolean] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
-  var padding: js.UndefOr[js.Any] = js.undefined
-  var paddingX: js.UndefOr[Double] = js.undefined
-  var paddingY: js.UndefOr[Double] = js.undefined
-  var readonly: js.UndefOr[Boolean] = js.undefined
-  var ready: js.UndefOr[WebixCallback] = js.undefined
-  var removeMissed: js.UndefOr[Boolean] = js.undefined
-  var save: js.UndefOr[js.Any] = js.undefined
-  var scheme: js.UndefOr[js.Any] = js.undefined
-  var structure: js.UndefOr[js.Any] = js.undefined
-  var templateCreate: js.UndefOr[WebixCallback] = js.undefined
-  var templateDate: js.UndefOr[WebixCallback] = js.undefined
-  var templateIcon: js.UndefOr[WebixCallback] = js.undefined
-  var templateName: js.UndefOr[WebixCallback] = js.undefined
-  var templateSize: js.UndefOr[WebixCallback] = js.undefined
-  var templateType: js.UndefOr[WebixCallback] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
-  var uploadProgress: js.UndefOr[js.Any] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var `override`: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var path: js.UndefOr[String] = js.undefined
+  
+  var player: js.UndefOr[Boolean] = js.undefined
+  
+  var search: js.UndefOr[String] = js.undefined
+  
+  var selectedItem: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var url: js.UndefOr[String] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object filemanagerConfig {
-  @scala.inline
-  def apply(
-    animate: js.Any = null,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    data: String | js.Array[_] = null,
-    datathrottle: Int | Double = null,
-    datatype: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    filterMode: js.Any = null,
-    gravity: Int | Double = null,
-    handlers: js.Any = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icons: js.Any = null,
-    id: String | Double = null,
-    legacyUploader: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    menuFilter: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    mode: String = null,
-    modes: js.Array[_] = null,
-    noFileCache: js.UndefOr[Boolean] = js.undefined,
-    on: EventHash = null,
-    padding: js.Any = null,
-    paddingX: Int | Double = null,
-    paddingY: Int | Double = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    ready: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    removeMissed: js.UndefOr[Boolean] = js.undefined,
-    save: js.Any = null,
-    scheme: js.Any = null,
-    structure: js.Any = null,
-    templateCreate: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    templateDate: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    templateIcon: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    templateName: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    templateSize: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    templateType: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    `type`: String = null,
-    uploadProgress: js.Any = null,
-    url: js.Any = null,
-    view: String = null,
-    width: Int | Double = null
-  ): filemanagerConfig = {
+  
+  inline def apply(): filemanagerConfig = {
     val __obj = js.Dynamic.literal()
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (datathrottle != null) __obj.updateDynamic("datathrottle")(datathrottle.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (filterMode != null) __obj.updateDynamic("filterMode")(filterMode.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (handlers != null) __obj.updateDynamic("handlers")(handlers.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(legacyUploader)) __obj.updateDynamic("legacyUploader")(legacyUploader.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (menuFilter != null) __obj.updateDynamic("menuFilter")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => menuFilter(t0).runNow()))
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (modes != null) __obj.updateDynamic("modes")(modes.asInstanceOf[js.Any])
-    if (!js.isUndefined(noFileCache)) __obj.updateDynamic("noFileCache")(noFileCache.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
-    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (ready != null) __obj.updateDynamic("ready")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => ready(t0).runNow()))
-    if (!js.isUndefined(removeMissed)) __obj.updateDynamic("removeMissed")(removeMissed.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(save.asInstanceOf[js.Any])
-    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
-    if (structure != null) __obj.updateDynamic("structure")(structure.asInstanceOf[js.Any])
-    if (templateCreate != null) __obj.updateDynamic("templateCreate")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateCreate(t0).runNow()))
-    if (templateDate != null) __obj.updateDynamic("templateDate")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateDate(t0).runNow()))
-    if (templateIcon != null) __obj.updateDynamic("templateIcon")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateIcon(t0).runNow()))
-    if (templateName != null) __obj.updateDynamic("templateName")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateName(t0).runNow()))
-    if (templateSize != null) __obj.updateDynamic("templateSize")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateSize(t0).runNow()))
-    if (templateType != null) __obj.updateDynamic("templateType")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => templateType(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (uploadProgress != null) __obj.updateDynamic("uploadProgress")(uploadProgress.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[filemanagerConfig]
   }
+  
+  extension [Self <: filemanagerConfig](x: Self) {
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setClipboard(value: Any): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
+    
+    inline def setClipboardUndefined: Self = StObject.set(x, "clipboard", js.undefined)
+    
+    inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+    
+    inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+    
+    inline def setCompactWidth(value: Double): Self = StObject.set(x, "compactWidth", value.asInstanceOf[js.Any])
+    
+    inline def setCompactWidthUndefined: Self = StObject.set(x, "compactWidth", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEditor(value: Boolean): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setOverride(value: js.Array[Any]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
+    inline def setOverrideVarargs(value: Any*): Self = StObject.set(x, "override", js.Array(value*))
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setPlayer(value: Boolean): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelectedItem(value: js.Array[Any]): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedItemUndefined: Self = StObject.set(x, "selectedItem", js.undefined)
+    
+    inline def setSelectedItemVarargs(value: Any*): Self = StObject.set(x, "selectedItem", js.Array(value*))
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

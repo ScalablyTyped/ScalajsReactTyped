@@ -1,92 +1,112 @@
 package typingsJapgolly.promiseFtpCommon
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promise-ftp-common", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("promise-ftp-common", "FtpConnectionError")
   @js.native
-  class FtpConnectionError () extends Error {
+  open class FtpConnectionError ()
+    extends StObject
+       with Error {
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
+  @JSImport("promise-ftp-common", "FtpReconnectError")
   @js.native
-  class FtpReconnectError () extends Error {
+  open class FtpReconnectError ()
+    extends StObject
+       with Error {
     def this(disconnectError: String) = this()
     def this(disconnectError: js.Error) = this()
     def this(disconnectError: String, connectError: String) = this()
     def this(disconnectError: String, connectError: js.Error) = this()
     def this(disconnectError: js.Error, connectError: String) = this()
     def this(disconnectError: js.Error, connectError: js.Error) = this()
+    def this(disconnectError: Unit, connectError: String) = this()
+    def this(disconnectError: Unit, connectError: js.Error) = this()
     def this(disconnectError: String, connectError: String, onCwd: Boolean) = this()
     def this(disconnectError: String, connectError: js.Error, onCwd: Boolean) = this()
+    def this(disconnectError: String, connectError: Unit, onCwd: Boolean) = this()
     def this(disconnectError: js.Error, connectError: String, onCwd: Boolean) = this()
     def this(disconnectError: js.Error, connectError: js.Error, onCwd: Boolean) = this()
+    def this(disconnectError: js.Error, connectError: Unit, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: String, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: js.Error, onCwd: Boolean) = this()
+    def this(disconnectError: Unit, connectError: Unit, onCwd: Boolean) = this()
+    
     var connectError: String | js.Error = js.native
+    
     var disconnectError: String | js.Error = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
   @js.native
-  sealed trait STATUSES extends js.Object
-  
+  sealed trait STATUSES extends StObject
+  @JSImport("promise-ftp-common", "STATUSES")
   @js.native
-  object STATUSES extends js.Object {
-    @js.native
-    sealed trait CONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait CONNECTING extends STATUSES
-    
-    @js.native
-    sealed trait DISCONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait DISCONNECTING extends STATUSES
-    
-    @js.native
-    sealed trait LOGGING_OUT extends STATUSES
-    
-    @js.native
-    sealed trait NOT_YET_CONNECTED extends STATUSES
-    
-    @js.native
-    sealed trait RECONNECTING extends STATUSES
+  object STATUSES extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[STATUSES with String] = js.native
-    /* "connected" */ @js.native
-    object CONNECTED extends TopLevel[CONNECTED with String]
+    def apply(value: String): js.UndefOr[STATUSES & String] = js.native
     
-    /* "connecting" */ @js.native
-    object CONNECTING extends TopLevel[CONNECTING with String]
+    @js.native
+    sealed trait CONNECTED
+      extends StObject
+         with STATUSES
+    /* "connected" */ val CONNECTED: typingsJapgolly.promiseFtpCommon.mod.STATUSES.CONNECTED & String = js.native
     
-    /* "disconnected" */ @js.native
-    object DISCONNECTED extends TopLevel[DISCONNECTED with String]
+    @js.native
+    sealed trait CONNECTING
+      extends StObject
+         with STATUSES
+    /* "connecting" */ val CONNECTING: typingsJapgolly.promiseFtpCommon.mod.STATUSES.CONNECTING & String = js.native
     
-    /* "disconnecting" */ @js.native
-    object DISCONNECTING extends TopLevel[DISCONNECTING with String]
+    @js.native
+    sealed trait DISCONNECTED
+      extends StObject
+         with STATUSES
+    /* "disconnected" */ val DISCONNECTED: typingsJapgolly.promiseFtpCommon.mod.STATUSES.DISCONNECTED & String = js.native
     
-    /* "logging out" */ @js.native
-    object LOGGING_OUT extends TopLevel[LOGGING_OUT with String]
+    @js.native
+    sealed trait DISCONNECTING
+      extends StObject
+         with STATUSES
+    /* "disconnecting" */ val DISCONNECTING: typingsJapgolly.promiseFtpCommon.mod.STATUSES.DISCONNECTING & String = js.native
     
-    /* "not yet connected" */ @js.native
-    object NOT_YET_CONNECTED extends TopLevel[NOT_YET_CONNECTED with String]
+    @js.native
+    sealed trait LOGGING_OUT
+      extends StObject
+         with STATUSES
+    /* "logging out" */ val LOGGING_OUT: typingsJapgolly.promiseFtpCommon.mod.STATUSES.LOGGING_OUT & String = js.native
     
-    /* "reconnecting" */ @js.native
-    object RECONNECTING extends TopLevel[RECONNECTING with String]
+    @js.native
+    sealed trait NOT_YET_CONNECTED
+      extends StObject
+         with STATUSES
+    /* "not yet connected" */ val NOT_YET_CONNECTED: typingsJapgolly.promiseFtpCommon.mod.STATUSES.NOT_YET_CONNECTED & String = js.native
     
+    @js.native
+    sealed trait RECONNECTING
+      extends StObject
+         with STATUSES
+    /* "reconnecting" */ val RECONNECTING: typingsJapgolly.promiseFtpCommon.mod.STATUSES.RECONNECTING & String = js.native
   }
-  
 }
-

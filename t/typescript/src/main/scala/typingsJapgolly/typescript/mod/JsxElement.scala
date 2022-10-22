@@ -1,17 +1,22 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsxElement
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
+     with JsxAttributeValue
      with JsxChild {
-  var children: NodeArray[JsxChild] = js.native
-  var closingElement: JsxClosingElement = js.native
+  
+  val children: NodeArray[JsxChild] = js.native
+  
+  val closingElement: JsxClosingElement = js.native
+  
   @JSName("kind")
-  var kind_JsxElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxElement = js.native
-  var openingElement: JsxOpeningElement = js.native
+  val kind_JsxElement: typingsJapgolly.typescript.mod.SyntaxKind.JsxElement = js.native
+  
+  val openingElement: JsxOpeningElement = js.native
 }
-

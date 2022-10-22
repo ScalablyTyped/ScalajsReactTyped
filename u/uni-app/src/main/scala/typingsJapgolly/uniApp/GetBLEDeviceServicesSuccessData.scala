@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetBLEDeviceServicesSuccessData extends js.Object {
+trait GetBLEDeviceServicesSuccessData extends StObject {
+  
   /**
     * 该服务是否为主服务
     */
   var isPrimary: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 蓝牙设备服务的 uuid
     */
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object GetBLEDeviceServicesSuccessData {
-  @scala.inline
-  def apply(isPrimary: js.UndefOr[Boolean] = js.undefined, uuid: String = null): GetBLEDeviceServicesSuccessData = {
+  
+  inline def apply(): GetBLEDeviceServicesSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceServicesSuccessData]
   }
+  
+  extension [Self <: GetBLEDeviceServicesSuccessData](x: Self) {
+    
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    
+    inline def setIsPrimaryUndefined: Self = StObject.set(x, "isPrimary", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

@@ -1,19 +1,23 @@
 package typingsJapgolly.grpc.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("grpc", "credentials")
-@js.native
-object credentials extends js.Object {
+object credentials {
+  
+  @JSImport("grpc", "credentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Combine any number of CallCredentials into a single CallCredentials object
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
-  def combineCallCredentials(credentials: CallCredentials*): CallCredentials = js.native
+  inline def combineCallCredentials(credentials: CallCredentials*): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineCallCredentials")(credentials.asInstanceOf[Seq[js.Any]]*).asInstanceOf[CallCredentials]
+  
   /**
     * Combine a ChannelCredentials with any number of CallCredentials into a single
     * ChannelCredentials object.
@@ -21,13 +25,15 @@ object credentials extends js.Object {
     * @param credentials The CallCredentials to compose
     * @return A credentials object that combines all of the input credentials
     */
-  def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = js.native
+  inline def combineChannelCredentials(channelCredential: ChannelCredentials, credentials: CallCredentials*): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("combineChannelCredentials")(scala.List(channelCredential.asInstanceOf[js.Any]).`++`(credentials.asInstanceOf[Seq[js.Any]])*).asInstanceOf[ChannelCredentials]
+  
   /**
     * Create a gRPC credential from a Google credential object.
     * @param googleCredential The Google credential object to use
     * @return The resulting credentials object
     */
-  def createFromGoogleCredential(googleCredential: GoogleOAuth2Client): CallCredentials = js.native
+  inline def createFromGoogleCredential(googleCredential: GoogleOAuth2Client): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromGoogleCredential")(googleCredential.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
+  
   /**
     * Create a gRPC credentials object from a metadata generation function. This
     * function gets the service URL and a callback as parameters. The error
@@ -36,13 +42,15 @@ object credentials extends js.Object {
     * @param metadataGenerator The function that generates metadata
     * @return The credentials object
     */
-  def createFromMetadataGenerator(metadataGenerator: metadataGenerator): CallCredentials = js.native
+  inline def createFromMetadataGenerator(metadataGenerator: metadataGenerator): CallCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromMetadataGenerator")(metadataGenerator.asInstanceOf[js.Any]).asInstanceOf[CallCredentials]
+  
   /**
     * Create an insecure credentials object. This is used to create a channel that
     * does not use SSL. This cannot be composed with anything.
     * @return The insecure credentials object
     */
-  def createInsecure(): ChannelCredentials = js.native
+  inline def createInsecure(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createInsecure")().asInstanceOf[ChannelCredentials]
+  
   /**
     * Create an SSL Credentials object. If using a client-side certificate, both
     * the second and third arguments must be passed.
@@ -52,10 +60,20 @@ object credentials extends js.Object {
     * @param verifyOptions Additional peer verification options, if desired
     * @return The SSL Credentials object
     */
-  def createSsl(): ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer): ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer): ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer): ChannelCredentials = js.native
-  def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = js.native
+  inline def createSsl(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")().asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Unit, certChain: Unit, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Unit, certChain: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Unit, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Buffer, certChain: Unit, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Buffer, certChain: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Unit, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any]).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Unit, certChain: Unit, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Unit, certChain: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Unit, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Unit, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
+  inline def createSsl(rootCerts: Buffer, privateKey: Buffer, certChain: Buffer, verifyOptions: VerifyOptions): ChannelCredentials = (^.asInstanceOf[js.Dynamic].applyDynamic("createSsl")(rootCerts.asInstanceOf[js.Any], privateKey.asInstanceOf[js.Any], certChain.asInstanceOf[js.Any], verifyOptions.asInstanceOf[js.Any])).asInstanceOf[ChannelCredentials]
 }
-

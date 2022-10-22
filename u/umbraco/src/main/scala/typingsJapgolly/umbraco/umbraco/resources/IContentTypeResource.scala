@@ -2,16 +2,17 @@ package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.contentTypeResource
   * @description Loads in data for content types
   **/
-trait IContentTypeResource extends js.Object {
+trait IContentTypeResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentTypeResource#getAllPropertyTypeAliases
@@ -24,6 +25,7 @@ trait IContentTypeResource extends js.Object {
     *
     */
   def getAllPropertyTypeAliases(): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.contentTypeResource#getAllowedTypes
@@ -45,17 +47,20 @@ trait IContentTypeResource extends js.Object {
     */
   def getAllowedTypes(contentId: Double): IPromise[IResourcePromise]
 }
-
 object IContentTypeResource {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getAllPropertyTypeAliases: CallbackTo[IPromise[IResourcePromise]],
-    getAllowedTypes: Double => CallbackTo[IPromise[IResourcePromise]]
+    getAllowedTypes: Double => IPromise[IResourcePromise]
   ): IContentTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllPropertyTypeAliases")(getAllPropertyTypeAliases.toJsFn)
-    __obj.updateDynamic("getAllowedTypes")(js.Any.fromFunction1((t0: scala.Double) => getAllowedTypes(t0).runNow()))
+    val __obj = js.Dynamic.literal(getAllPropertyTypeAliases = getAllPropertyTypeAliases.toJsFn, getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
     __obj.asInstanceOf[IContentTypeResource]
   }
+  
+  extension [Self <: IContentTypeResource](x: Self) {
+    
+    inline def setGetAllPropertyTypeAliases(value: CallbackTo[IPromise[IResourcePromise]]): Self = StObject.set(x, "getAllPropertyTypeAliases", value.toJsFn)
+    
+    inline def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
+  }
 }
-

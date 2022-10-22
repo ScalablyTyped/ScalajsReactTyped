@@ -1,38 +1,53 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`wire-frame`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`x-ray`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.solid
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BuildingFilterBlockFilterMode extends Object {
+trait BuildingFilterBlockFilterMode
+  extends StObject
+     with Object {
+  
   /**
-    * Defines how features are drawn while the filter is active. The same filter mode type can only be used once in a filter. To filter multiple elements as solid, add them to a single filter block instead of creating several filter blocks that use the `solid` filter mode.
+    * Defines the type of edges used to display a [BuildingSceneLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BuildingSceneLayer.html) filtered in `wire-frame` mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
+    */
+  var edges: js.UndefOr[SolidEdges3D | SketchEdges3D] = js.undefined
+  
+  /**
+    * Defines how features are drawn while the filter is active.
     *
     * @default solid
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-BuildingFilter.html#BuildingFilterBlock)
     */
-  var `type`: js.UndefOr[solid | `wire-frame`] = js.undefined
+  var `type`: js.UndefOr[solid | `wire-frame` | `x-ray`] = js.undefined
 }
-
 object BuildingFilterBlockFilterMode {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: solid | `wire-frame` = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): BuildingFilterBlockFilterMode = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[BuildingFilterBlockFilterMode]
   }
+  
+  extension [Self <: BuildingFilterBlockFilterMode](x: Self) {
+    
+    inline def setEdges(value: SolidEdges3D | SketchEdges3D): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    
+    inline def setType(value: solid | `wire-frame` | `x-ray`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

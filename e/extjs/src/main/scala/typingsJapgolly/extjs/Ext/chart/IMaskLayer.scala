@@ -1,18 +1,17 @@
 package typingsJapgolly.extjs.Ext.chart
 
 import typingsJapgolly.extjs.Ext.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMaskLayer extends IComponent
-
+trait IMaskLayer
+  extends StObject
+     with IComponent
 object IMaskLayer {
-  @scala.inline
-  def apply(IComponent: IComponent = null): IMaskLayer = {
+  
+  inline def apply(): IMaskLayer = {
     val __obj = js.Dynamic.literal()
-    if (IComponent != null) js.Dynamic.global.Object.assign(__obj, IComponent)
     __obj.asInstanceOf[IMaskLayer]
   }
 }
-

@@ -1,108 +1,224 @@
 package typingsJapgolly.bootstrapSelect
 
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.Node
+import typingsJapgolly.bootstrapSelect.bootstrapSelectBooleans.`false`
+import typingsJapgolly.bootstrapSelect.bootstrapSelectStrings.auto
+import typingsJapgolly.std.ChildNode
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BootstrapSelectOptions extends js.Object {
-  var actionsBox: js.UndefOr[Boolean] = js.undefined
-  var container: js.UndefOr[String | Boolean] = js.undefined
-  var countSelectedText: js.UndefOr[String | js.Function] = js.undefined
-  var deselectAllText: js.UndefOr[String] = js.undefined
-  var dropdownAlignRight: js.UndefOr[String | Boolean] = js.undefined
-  var dropupAuto: js.UndefOr[Boolean] = js.undefined
-  var header: js.UndefOr[String] = js.undefined
-  var hideDisabled: js.UndefOr[Boolean] = js.undefined
-  var iconBase: js.UndefOr[String] = js.undefined
-  var liveSearch: js.UndefOr[Boolean] = js.undefined
-  var liveSearchNormalize: js.UndefOr[Boolean] = js.undefined
-  var liveSearchPlaceholder: js.UndefOr[String] = js.undefined
-  var liveSearchStyle: js.UndefOr[String] = js.undefined
-  var maxOptions: js.UndefOr[Double | Boolean] = js.undefined
-  var maxOptionsText: js.UndefOr[String | js.Array[_] | js.Function] = js.undefined
-  var mobile: js.UndefOr[Boolean] = js.undefined
-  var multipleSeparator: js.UndefOr[String] = js.undefined
-  var noneSelectedText: js.UndefOr[String] = js.undefined
-  var selectAllText: js.UndefOr[String] = js.undefined
-  var selectOnTab: js.UndefOr[Boolean] = js.undefined
-  var selectedTextFormat: js.UndefOr[String] = js.undefined
-  var showContent: js.UndefOr[Boolean] = js.undefined
-  var showIcon: js.UndefOr[Boolean] = js.undefined
-  var showSubtext: js.UndefOr[Boolean] = js.undefined
-  var showTick: js.UndefOr[Boolean] = js.undefined
-  var size: js.UndefOr[String | Double | Boolean] = js.undefined
-  var style: js.UndefOr[String] = js.undefined
-  var tickIcon: js.UndefOr[String] = js.undefined
-  var title: js.UndefOr[String] = js.undefined
-  var width: js.UndefOr[String | Boolean] = js.undefined
+trait BootstrapSelectOptions extends StObject {
+  
+  var actionsBox: Boolean
+  
+  var container: String | `false`
+  
+  var countSelectedText: String | (js.Function2[/* numSelected */ Double, /* numTotal */ Double, String])
+  
+  var deselectAllText: String
+  
+  var dropdownAlignRight: auto | Boolean
+  
+  var dropupAuto: Boolean
+  
+  var header: String
+  
+  var hideDisabled: Boolean
+  
+  var iconBase: String
+  
+  var liveSearch: Boolean
+  
+  var liveSearchNormalize: Boolean
+  
+  var liveSearchPlaceholder: String | Null
+  
+  var liveSearchStyle: String
+  
+  var maxOptions: Double | `false`
+  
+  var maxOptionsText: String | js.Array[Any] | (js.Function2[/* numAll */ Double, /* numGroup */ Double, js.Tuple2[String, String]])
+  
+  var mobile: Boolean
+  
+  var multipleSeparator: String
+  
+  var noneResultsText: String
+  
+  var noneSelectedText: String
+  
+  var sanitize: Boolean
+  
+  var sanitizeFn: Null | (js.Function1[/* unsafeElements */ js.Array[HTMLElement | ChildNode | Node], Unit])
+  
+  var selectAllText: String
+  
+  var selectOnTab: Boolean
+  
+  var selectedTextFormat: String
+  
+  var showContent: Boolean
+  
+  var showIcon: Boolean
+  
+  var showSubtext: Boolean
+  
+  var showTick: Boolean
+  
+  var size: auto | Double | `false`
+  
+  var style: String | Null
+  
+  var styleBase: String | Null
+  
+  var tickIcon: String
+  
+  var title: String | Null
+  
+  var virtualScroll: Boolean | Double
+  
+  var whiteList: Record[String, js.Array[String]]
+  
+  var width: String | `false`
+  
+  var windowPadding: Double | (js.Tuple4[Double, Double, Double, Double])
 }
-
 object BootstrapSelectOptions {
-  @scala.inline
-  def apply(
-    actionsBox: js.UndefOr[Boolean] = js.undefined,
-    container: String | Boolean = null,
-    countSelectedText: String | js.Function = null,
-    deselectAllText: String = null,
-    dropdownAlignRight: String | Boolean = null,
-    dropupAuto: js.UndefOr[Boolean] = js.undefined,
-    header: String = null,
-    hideDisabled: js.UndefOr[Boolean] = js.undefined,
-    iconBase: String = null,
-    liveSearch: js.UndefOr[Boolean] = js.undefined,
-    liveSearchNormalize: js.UndefOr[Boolean] = js.undefined,
-    liveSearchPlaceholder: String = null,
-    liveSearchStyle: String = null,
-    maxOptions: Double | Boolean = null,
-    maxOptionsText: String | js.Array[_] | js.Function = null,
-    mobile: js.UndefOr[Boolean] = js.undefined,
-    multipleSeparator: String = null,
-    noneSelectedText: String = null,
-    selectAllText: String = null,
-    selectOnTab: js.UndefOr[Boolean] = js.undefined,
-    selectedTextFormat: String = null,
-    showContent: js.UndefOr[Boolean] = js.undefined,
-    showIcon: js.UndefOr[Boolean] = js.undefined,
-    showSubtext: js.UndefOr[Boolean] = js.undefined,
-    showTick: js.UndefOr[Boolean] = js.undefined,
-    size: String | Double | Boolean = null,
-    style: String = null,
-    tickIcon: String = null,
-    title: String = null,
-    width: String | Boolean = null
+  
+  inline def apply(
+    actionsBox: Boolean,
+    container: String | `false`,
+    countSelectedText: String | (js.Function2[/* numSelected */ Double, /* numTotal */ Double, String]),
+    deselectAllText: String,
+    dropdownAlignRight: auto | Boolean,
+    dropupAuto: Boolean,
+    header: String,
+    hideDisabled: Boolean,
+    iconBase: String,
+    liveSearch: Boolean,
+    liveSearchNormalize: Boolean,
+    liveSearchStyle: String,
+    maxOptions: Double | `false`,
+    maxOptionsText: String | js.Array[Any] | (js.Function2[/* numAll */ Double, /* numGroup */ Double, js.Tuple2[String, String]]),
+    mobile: Boolean,
+    multipleSeparator: String,
+    noneResultsText: String,
+    noneSelectedText: String,
+    sanitize: Boolean,
+    selectAllText: String,
+    selectOnTab: Boolean,
+    selectedTextFormat: String,
+    showContent: Boolean,
+    showIcon: Boolean,
+    showSubtext: Boolean,
+    showTick: Boolean,
+    size: auto | Double | `false`,
+    tickIcon: String,
+    virtualScroll: Boolean | Double,
+    whiteList: Record[String, js.Array[String]],
+    width: String | `false`,
+    windowPadding: Double | (js.Tuple4[Double, Double, Double, Double])
   ): BootstrapSelectOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(actionsBox)) __obj.updateDynamic("actionsBox")(actionsBox.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (countSelectedText != null) __obj.updateDynamic("countSelectedText")(countSelectedText.asInstanceOf[js.Any])
-    if (deselectAllText != null) __obj.updateDynamic("deselectAllText")(deselectAllText.asInstanceOf[js.Any])
-    if (dropdownAlignRight != null) __obj.updateDynamic("dropdownAlignRight")(dropdownAlignRight.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropupAuto)) __obj.updateDynamic("dropupAuto")(dropupAuto.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideDisabled)) __obj.updateDynamic("hideDisabled")(hideDisabled.asInstanceOf[js.Any])
-    if (iconBase != null) __obj.updateDynamic("iconBase")(iconBase.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveSearch)) __obj.updateDynamic("liveSearch")(liveSearch.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveSearchNormalize)) __obj.updateDynamic("liveSearchNormalize")(liveSearchNormalize.asInstanceOf[js.Any])
-    if (liveSearchPlaceholder != null) __obj.updateDynamic("liveSearchPlaceholder")(liveSearchPlaceholder.asInstanceOf[js.Any])
-    if (liveSearchStyle != null) __obj.updateDynamic("liveSearchStyle")(liveSearchStyle.asInstanceOf[js.Any])
-    if (maxOptions != null) __obj.updateDynamic("maxOptions")(maxOptions.asInstanceOf[js.Any])
-    if (maxOptionsText != null) __obj.updateDynamic("maxOptionsText")(maxOptionsText.asInstanceOf[js.Any])
-    if (!js.isUndefined(mobile)) __obj.updateDynamic("mobile")(mobile.asInstanceOf[js.Any])
-    if (multipleSeparator != null) __obj.updateDynamic("multipleSeparator")(multipleSeparator.asInstanceOf[js.Any])
-    if (noneSelectedText != null) __obj.updateDynamic("noneSelectedText")(noneSelectedText.asInstanceOf[js.Any])
-    if (selectAllText != null) __obj.updateDynamic("selectAllText")(selectAllText.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectOnTab)) __obj.updateDynamic("selectOnTab")(selectOnTab.asInstanceOf[js.Any])
-    if (selectedTextFormat != null) __obj.updateDynamic("selectedTextFormat")(selectedTextFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSubtext)) __obj.updateDynamic("showSubtext")(showSubtext.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTick)) __obj.updateDynamic("showTick")(showTick.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tickIcon != null) __obj.updateDynamic("tickIcon")(tickIcon.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(actionsBox = actionsBox.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], countSelectedText = countSelectedText.asInstanceOf[js.Any], deselectAllText = deselectAllText.asInstanceOf[js.Any], dropdownAlignRight = dropdownAlignRight.asInstanceOf[js.Any], dropupAuto = dropupAuto.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], hideDisabled = hideDisabled.asInstanceOf[js.Any], iconBase = iconBase.asInstanceOf[js.Any], liveSearch = liveSearch.asInstanceOf[js.Any], liveSearchNormalize = liveSearchNormalize.asInstanceOf[js.Any], liveSearchStyle = liveSearchStyle.asInstanceOf[js.Any], maxOptions = maxOptions.asInstanceOf[js.Any], maxOptionsText = maxOptionsText.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], multipleSeparator = multipleSeparator.asInstanceOf[js.Any], noneResultsText = noneResultsText.asInstanceOf[js.Any], noneSelectedText = noneSelectedText.asInstanceOf[js.Any], sanitize = sanitize.asInstanceOf[js.Any], selectAllText = selectAllText.asInstanceOf[js.Any], selectOnTab = selectOnTab.asInstanceOf[js.Any], selectedTextFormat = selectedTextFormat.asInstanceOf[js.Any], showContent = showContent.asInstanceOf[js.Any], showIcon = showIcon.asInstanceOf[js.Any], showSubtext = showSubtext.asInstanceOf[js.Any], showTick = showTick.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], tickIcon = tickIcon.asInstanceOf[js.Any], virtualScroll = virtualScroll.asInstanceOf[js.Any], whiteList = whiteList.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], windowPadding = windowPadding.asInstanceOf[js.Any], liveSearchPlaceholder = null, sanitizeFn = null, style = null, styleBase = null, title = null)
     __obj.asInstanceOf[BootstrapSelectOptions]
   }
+  
+  extension [Self <: BootstrapSelectOptions](x: Self) {
+    
+    inline def setActionsBox(value: Boolean): Self = StObject.set(x, "actionsBox", value.asInstanceOf[js.Any])
+    
+    inline def setContainer(value: String | `false`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setCountSelectedText(value: String | (js.Function2[/* numSelected */ Double, /* numTotal */ Double, String])): Self = StObject.set(x, "countSelectedText", value.asInstanceOf[js.Any])
+    
+    inline def setCountSelectedTextFunction2(value: (/* numSelected */ Double, /* numTotal */ Double) => String): Self = StObject.set(x, "countSelectedText", js.Any.fromFunction2(value))
+    
+    inline def setDeselectAllText(value: String): Self = StObject.set(x, "deselectAllText", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownAlignRight(value: auto | Boolean): Self = StObject.set(x, "dropdownAlignRight", value.asInstanceOf[js.Any])
+    
+    inline def setDropupAuto(value: Boolean): Self = StObject.set(x, "dropupAuto", value.asInstanceOf[js.Any])
+    
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHideDisabled(value: Boolean): Self = StObject.set(x, "hideDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setIconBase(value: String): Self = StObject.set(x, "iconBase", value.asInstanceOf[js.Any])
+    
+    inline def setLiveSearch(value: Boolean): Self = StObject.set(x, "liveSearch", value.asInstanceOf[js.Any])
+    
+    inline def setLiveSearchNormalize(value: Boolean): Self = StObject.set(x, "liveSearchNormalize", value.asInstanceOf[js.Any])
+    
+    inline def setLiveSearchPlaceholder(value: String): Self = StObject.set(x, "liveSearchPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setLiveSearchPlaceholderNull: Self = StObject.set(x, "liveSearchPlaceholder", null)
+    
+    inline def setLiveSearchStyle(value: String): Self = StObject.set(x, "liveSearchStyle", value.asInstanceOf[js.Any])
+    
+    inline def setMaxOptions(value: Double | `false`): Self = StObject.set(x, "maxOptions", value.asInstanceOf[js.Any])
+    
+    inline def setMaxOptionsText(
+      value: String | js.Array[Any] | (js.Function2[/* numAll */ Double, /* numGroup */ Double, js.Tuple2[String, String]])
+    ): Self = StObject.set(x, "maxOptionsText", value.asInstanceOf[js.Any])
+    
+    inline def setMaxOptionsTextFunction2(value: (/* numAll */ Double, /* numGroup */ Double) => js.Tuple2[String, String]): Self = StObject.set(x, "maxOptionsText", js.Any.fromFunction2(value))
+    
+    inline def setMaxOptionsTextVarargs(value: Any*): Self = StObject.set(x, "maxOptionsText", js.Array(value*))
+    
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleSeparator(value: String): Self = StObject.set(x, "multipleSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setNoneResultsText(value: String): Self = StObject.set(x, "noneResultsText", value.asInstanceOf[js.Any])
+    
+    inline def setNoneSelectedText(value: String): Self = StObject.set(x, "noneSelectedText", value.asInstanceOf[js.Any])
+    
+    inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+    
+    inline def setSanitizeFn(value: /* unsafeElements */ js.Array[HTMLElement | ChildNode | Node] => Callback): Self = StObject.set(x, "sanitizeFn", js.Any.fromFunction1((t0: /* unsafeElements */ js.Array[HTMLElement | ChildNode | Node]) => value(t0).runNow()))
+    
+    inline def setSanitizeFnNull: Self = StObject.set(x, "sanitizeFn", null)
+    
+    inline def setSelectAllText(value: String): Self = StObject.set(x, "selectAllText", value.asInstanceOf[js.Any])
+    
+    inline def setSelectOnTab(value: Boolean): Self = StObject.set(x, "selectOnTab", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedTextFormat(value: String): Self = StObject.set(x, "selectedTextFormat", value.asInstanceOf[js.Any])
+    
+    inline def setShowContent(value: Boolean): Self = StObject.set(x, "showContent", value.asInstanceOf[js.Any])
+    
+    inline def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+    
+    inline def setShowSubtext(value: Boolean): Self = StObject.set(x, "showSubtext", value.asInstanceOf[js.Any])
+    
+    inline def setShowTick(value: Boolean): Self = StObject.set(x, "showTick", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: auto | Double | `false`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleBase(value: String): Self = StObject.set(x, "styleBase", value.asInstanceOf[js.Any])
+    
+    inline def setStyleBaseNull: Self = StObject.set(x, "styleBase", null)
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setTickIcon(value: String): Self = StObject.set(x, "tickIcon", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleNull: Self = StObject.set(x, "title", null)
+    
+    inline def setVirtualScroll(value: Boolean | Double): Self = StObject.set(x, "virtualScroll", value.asInstanceOf[js.Any])
+    
+    inline def setWhiteList(value: Record[String, js.Array[String]]): Self = StObject.set(x, "whiteList", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: String | `false`): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWindowPadding(value: Double | (js.Tuple4[Double, Double, Double, Double])): Self = StObject.set(x, "windowPadding", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,38 +1,55 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.DashStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartCommonAxisSettingsConstantLineStyle extends js.Object {
-  /** Specifies a color for a constant line. */
+trait dxPolarChartCommonAxisSettingsConstantLineStyle extends StObject {
+  
+  /**
+    * Specifies a color for a constant line.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** Specifies a dash style for a constant line. */
-  var dashStyle: js.UndefOr[dash | dot | longDash | solid] = js.undefined
-  /** An object defining constant line label options. */
+  
+  /**
+    * Specifies a dash style for a constant line.
+    */
+  var dashStyle: js.UndefOr[DashStyle] = js.undefined
+  
+  /**
+    * An object defining constant line label properties.
+    */
   var label: js.UndefOr[dxPolarChartCommonAxisSettingsConstantLineStyleLabel] = js.undefined
-  /** Specifies a constant line width in pixels. */
+  
+  /**
+    * Specifies a constant line width in pixels.
+    */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object dxPolarChartCommonAxisSettingsConstantLineStyle {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    label: dxPolarChartCommonAxisSettingsConstantLineStyleLabel = null,
-    width: Int | Double = null
-  ): dxPolarChartCommonAxisSettingsConstantLineStyle = {
+  
+  inline def apply(): dxPolarChartCommonAxisSettingsConstantLineStyle = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartCommonAxisSettingsConstantLineStyle]
   }
+  
+  extension [Self <: dxPolarChartCommonAxisSettingsConstantLineStyle](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashStyle(value: DashStyle): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    
+    inline def setLabel(value: dxPolarChartCommonAxisSettingsConstantLineStyleLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

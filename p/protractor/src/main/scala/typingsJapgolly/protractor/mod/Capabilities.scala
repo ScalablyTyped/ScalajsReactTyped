@@ -1,9 +1,9 @@
 package typingsJapgolly.protractor.mod
 
 import typingsJapgolly.std.Map
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "Capabilities")
 @js.native
@@ -12,39 +12,44 @@ import scala.scalajs.js.annotation._
   * @param {(Capabilities|Map<string, ?>|Object)=} other Another set of
   *     capabilities to initialize this instance from.
   */
-class Capabilities ()
+open class Capabilities ()
   extends typingsJapgolly.seleniumWebdriver.mod.Capabilities {
   def this(other: js.Object) = this()
-  def this(other: typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities) = this()
-  def this(other: Map[String, _]) = this()
+  def this(other: typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities) = this()
+  def this(other: Map[String, Any]) = this()
 }
-
 /* static members */
-@JSImport("protractor", "Capabilities")
-@js.native
-object Capabilities extends js.Object {
+object Capabilities {
+  
+  @JSImport("protractor", "Capabilities")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // endregion
   // region Static Methods
   /**
     * @return {!Capabilities} A basic set of capabilities for Chrome.
     */
-  def chrome(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  inline def chrome(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities]
+  
   /**
     * @return {!Capabilities} A basic set of capabilities for Microsoft Edge.
     */
-  def edge(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  inline def edge(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities]
+  
   /**
     * @return {!Capabilities} A basic set of capabilities for Firefox.
     */
-  def firefox(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  inline def firefox(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities]
+  
   /**
     * @return {!Capabilities} A basic set of capabilities for
     *     Internet Explorer.
     */
-  def ie(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  inline def ie(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities]
+  
   /**
     * @return {!Capabilities} A basic set of capabilities for Safari.
     */
-  def safari(): typingsJapgolly.seleniumWebdriver.capabilitiesMod.Capabilities = js.native
+  inline def safari(): typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[typingsJapgolly.seleniumWebdriver.libCapabilitiesMod.Capabilities]
 }
-

@@ -1,23 +1,18 @@
 package typingsJapgolly.jstree
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JSTreeStaticDefaultsUnique extends js.Object {
+trait JSTreeStaticDefaultsUnique extends StObject {
+  
   /**
     * Indicates if the comparison should be case sensitive. Default is `false`.
     * @name $.jstree.defaults.unique.case_sensitive
     * @plugin unique
     */
   var case_sensitive: Boolean
-  /**
-    * Indicates if white space should be trimmed before the comparison. Default is `false`.
-    * @name $.jstree.defaults.unique.trim_whitespace
-    * @plugin unique
-    */
-  var trim_whitespace: Boolean
+  
   /**
     * A callback executed in the instance's scope when a new node is created
     * and the name is already taken, the two arguments are the conflicting name and the counter.
@@ -26,18 +21,27 @@ trait JSTreeStaticDefaultsUnique extends js.Object {
     * @plugin unique
     */
   def duplicate(name: String, counter: Double): String
+  
+  /**
+    * Indicates if white space should be trimmed before the comparison. Default is `false`.
+    * @name $.jstree.defaults.unique.trim_whitespace
+    * @plugin unique
+    */
+  var trim_whitespace: Boolean
 }
-
 object JSTreeStaticDefaultsUnique {
-  @scala.inline
-  def apply(
-    case_sensitive: Boolean,
-    duplicate: (String, Double) => CallbackTo[String],
-    trim_whitespace: Boolean
-  ): JSTreeStaticDefaultsUnique = {
-    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive.asInstanceOf[js.Any], trim_whitespace = trim_whitespace.asInstanceOf[js.Any])
-    __obj.updateDynamic("duplicate")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Double) => duplicate(t0, t1).runNow()))
+  
+  inline def apply(case_sensitive: Boolean, duplicate: (String, Double) => String, trim_whitespace: Boolean): JSTreeStaticDefaultsUnique = {
+    val __obj = js.Dynamic.literal(case_sensitive = case_sensitive.asInstanceOf[js.Any], duplicate = js.Any.fromFunction2(duplicate), trim_whitespace = trim_whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsUnique]
   }
+  
+  extension [Self <: JSTreeStaticDefaultsUnique](x: Self) {
+    
+    inline def setCase_sensitive(value: Boolean): Self = StObject.set(x, "case_sensitive", value.asInstanceOf[js.Any])
+    
+    inline def setDuplicate(value: (String, Double) => String): Self = StObject.set(x, "duplicate", js.Any.fromFunction2(value))
+    
+    inline def setTrim_whitespace(value: Boolean): Self = StObject.set(x, "trim_whitespace", value.asInstanceOf[js.Any])
+  }
 }
-

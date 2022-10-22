@@ -1,21 +1,25 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.textFieldTypesMod.ITextFieldProps
+import typingsJapgolly.officeUiFabricReact.libComponentsTextFieldTextFieldDottypesMod.ITextFieldProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "TextFieldBase")
 @js.native
-class TextFieldBase protected ()
+open class TextFieldBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libTextFieldMod.TextFieldBase {
   def this(props: ITextFieldProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "TextFieldBase")
-@js.native
-object TextFieldBase extends js.Object {
-  var defaultProps: ITextFieldProps = js.native
+object TextFieldBase {
+  
+  @JSImport("office-ui-fabric-react", "TextFieldBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "TextFieldBase.defaultProps")
+  @js.native
+  def defaultProps: ITextFieldProps = js.native
+  inline def defaultProps_=(x: ITextFieldProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

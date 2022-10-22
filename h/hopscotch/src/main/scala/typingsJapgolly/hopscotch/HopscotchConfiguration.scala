@@ -1,75 +1,162 @@
 package typingsJapgolly.hopscotch
 
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.hopscotch.anon.CloseTooltip
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HopscotchConfiguration extends js.Object {
+trait HopscotchConfiguration extends StObject {
+  
   var arrowWidth: js.UndefOr[Double] = js.undefined
+  
   var bubbleWidth: js.UndefOr[Double] = js.undefined
+  
   var buddleHeight: js.UndefOr[Double] = js.undefined
-  var i18n: js.UndefOr[AnonCloseTooltip] = js.undefined
+  
+  var i18n: js.UndefOr[CloseTooltip] = js.undefined
+  
   var nextOnTargetClick: js.UndefOr[Boolean] = js.undefined
+  
   var onClose: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onEnd: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onError: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onNext: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onPrev: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onShow: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var onStart: js.UndefOr[CallbackNameNamesOrDefinition] = js.undefined
+  
   var scrollDuration: js.UndefOr[Double] = js.undefined
+  
   var scrollTopMargin: js.UndefOr[Double] = js.undefined
+  
   var showCloseButton: js.UndefOr[Boolean] = js.undefined
+  
   var showNextButton: js.UndefOr[Boolean] = js.undefined
+  
   var showPrevButton: js.UndefOr[Boolean] = js.undefined
+  
   var skipIfNoElement: js.UndefOr[Boolean] = js.undefined
+  
   var smoothScroll: js.UndefOr[Boolean] = js.undefined
 }
-
 object HopscotchConfiguration {
-  @scala.inline
-  def apply(
-    arrowWidth: Int | Double = null,
-    bubbleWidth: Int | Double = null,
-    buddleHeight: Int | Double = null,
-    i18n: AnonCloseTooltip = null,
-    nextOnTargetClick: js.UndefOr[Boolean] = js.undefined,
-    onClose: CallbackNameNamesOrDefinition = null,
-    onEnd: CallbackNameNamesOrDefinition = null,
-    onError: CallbackNameNamesOrDefinition = null,
-    onNext: CallbackNameNamesOrDefinition = null,
-    onPrev: CallbackNameNamesOrDefinition = null,
-    onShow: CallbackNameNamesOrDefinition = null,
-    onStart: CallbackNameNamesOrDefinition = null,
-    scrollDuration: Int | Double = null,
-    scrollTopMargin: Int | Double = null,
-    showCloseButton: js.UndefOr[Boolean] = js.undefined,
-    showNextButton: js.UndefOr[Boolean] = js.undefined,
-    showPrevButton: js.UndefOr[Boolean] = js.undefined,
-    skipIfNoElement: js.UndefOr[Boolean] = js.undefined,
-    smoothScroll: js.UndefOr[Boolean] = js.undefined
-  ): HopscotchConfiguration = {
+  
+  inline def apply(): HopscotchConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (arrowWidth != null) __obj.updateDynamic("arrowWidth")(arrowWidth.asInstanceOf[js.Any])
-    if (bubbleWidth != null) __obj.updateDynamic("bubbleWidth")(bubbleWidth.asInstanceOf[js.Any])
-    if (buddleHeight != null) __obj.updateDynamic("buddleHeight")(buddleHeight.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (!js.isUndefined(nextOnTargetClick)) __obj.updateDynamic("nextOnTargetClick")(nextOnTargetClick.asInstanceOf[js.Any])
-    if (onClose != null) __obj.updateDynamic("onClose")(onClose.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd.asInstanceOf[js.Any])
-    if (onError != null) __obj.updateDynamic("onError")(onError.asInstanceOf[js.Any])
-    if (onNext != null) __obj.updateDynamic("onNext")(onNext.asInstanceOf[js.Any])
-    if (onPrev != null) __obj.updateDynamic("onPrev")(onPrev.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(onShow.asInstanceOf[js.Any])
-    if (onStart != null) __obj.updateDynamic("onStart")(onStart.asInstanceOf[js.Any])
-    if (scrollDuration != null) __obj.updateDynamic("scrollDuration")(scrollDuration.asInstanceOf[js.Any])
-    if (scrollTopMargin != null) __obj.updateDynamic("scrollTopMargin")(scrollTopMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNextButton)) __obj.updateDynamic("showNextButton")(showNextButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPrevButton)) __obj.updateDynamic("showPrevButton")(showPrevButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(skipIfNoElement)) __obj.updateDynamic("skipIfNoElement")(skipIfNoElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothScroll)) __obj.updateDynamic("smoothScroll")(smoothScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[HopscotchConfiguration]
   }
+  
+  extension [Self <: HopscotchConfiguration](x: Self) {
+    
+    inline def setArrowWidth(value: Double): Self = StObject.set(x, "arrowWidth", value.asInstanceOf[js.Any])
+    
+    inline def setArrowWidthUndefined: Self = StObject.set(x, "arrowWidth", js.undefined)
+    
+    inline def setBubbleWidth(value: Double): Self = StObject.set(x, "bubbleWidth", value.asInstanceOf[js.Any])
+    
+    inline def setBubbleWidthUndefined: Self = StObject.set(x, "bubbleWidth", js.undefined)
+    
+    inline def setBuddleHeight(value: Double): Self = StObject.set(x, "buddleHeight", value.asInstanceOf[js.Any])
+    
+    inline def setBuddleHeightUndefined: Self = StObject.set(x, "buddleHeight", js.undefined)
+    
+    inline def setI18n(value: CloseTooltip): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+    
+    inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+    
+    inline def setNextOnTargetClick(value: Boolean): Self = StObject.set(x, "nextOnTargetClick", value.asInstanceOf[js.Any])
+    
+    inline def setNextOnTargetClickUndefined: Self = StObject.set(x, "nextOnTargetClick", js.undefined)
+    
+    inline def setOnClose(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+    
+    inline def setOnCloseCallback(value: Callback): Self = StObject.set(x, "onClose", value.toJsFn)
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnCloseVarargs(value: String*): Self = StObject.set(x, "onClose", js.Array(value*))
+    
+    inline def setOnEnd(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onEnd", value.asInstanceOf[js.Any])
+    
+    inline def setOnEndCallback(value: Callback): Self = StObject.set(x, "onEnd", value.toJsFn)
+    
+    inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+    
+    inline def setOnEndVarargs(value: String*): Self = StObject.set(x, "onEnd", js.Array(value*))
+    
+    inline def setOnError(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
+    
+    inline def setOnErrorCallback(value: Callback): Self = StObject.set(x, "onError", value.toJsFn)
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnErrorVarargs(value: String*): Self = StObject.set(x, "onError", js.Array(value*))
+    
+    inline def setOnNext(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
+    
+    inline def setOnNextCallback(value: Callback): Self = StObject.set(x, "onNext", value.toJsFn)
+    
+    inline def setOnNextUndefined: Self = StObject.set(x, "onNext", js.undefined)
+    
+    inline def setOnNextVarargs(value: String*): Self = StObject.set(x, "onNext", js.Array(value*))
+    
+    inline def setOnPrev(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onPrev", value.asInstanceOf[js.Any])
+    
+    inline def setOnPrevCallback(value: Callback): Self = StObject.set(x, "onPrev", value.toJsFn)
+    
+    inline def setOnPrevUndefined: Self = StObject.set(x, "onPrev", js.undefined)
+    
+    inline def setOnPrevVarargs(value: String*): Self = StObject.set(x, "onPrev", js.Array(value*))
+    
+    inline def setOnShow(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    
+    inline def setOnShowCallback(value: Callback): Self = StObject.set(x, "onShow", value.toJsFn)
+    
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    
+    inline def setOnShowVarargs(value: String*): Self = StObject.set(x, "onShow", js.Array(value*))
+    
+    inline def setOnStart(value: CallbackNameNamesOrDefinition): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+    
+    inline def setOnStartCallback(value: Callback): Self = StObject.set(x, "onStart", value.toJsFn)
+    
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    
+    inline def setOnStartVarargs(value: String*): Self = StObject.set(x, "onStart", js.Array(value*))
+    
+    inline def setScrollDuration(value: Double): Self = StObject.set(x, "scrollDuration", value.asInstanceOf[js.Any])
+    
+    inline def setScrollDurationUndefined: Self = StObject.set(x, "scrollDuration", js.undefined)
+    
+    inline def setScrollTopMargin(value: Double): Self = StObject.set(x, "scrollTopMargin", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopMarginUndefined: Self = StObject.set(x, "scrollTopMargin", js.undefined)
+    
+    inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+    
+    inline def setShowNextButton(value: Boolean): Self = StObject.set(x, "showNextButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowNextButtonUndefined: Self = StObject.set(x, "showNextButton", js.undefined)
+    
+    inline def setShowPrevButton(value: Boolean): Self = StObject.set(x, "showPrevButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowPrevButtonUndefined: Self = StObject.set(x, "showPrevButton", js.undefined)
+    
+    inline def setSkipIfNoElement(value: Boolean): Self = StObject.set(x, "skipIfNoElement", value.asInstanceOf[js.Any])
+    
+    inline def setSkipIfNoElementUndefined: Self = StObject.set(x, "skipIfNoElement", js.undefined)
+    
+    inline def setSmoothScroll(value: Boolean): Self = StObject.set(x, "smoothScroll", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothScrollUndefined: Self = StObject.set(x, "smoothScroll", js.undefined)
+  }
 }
-

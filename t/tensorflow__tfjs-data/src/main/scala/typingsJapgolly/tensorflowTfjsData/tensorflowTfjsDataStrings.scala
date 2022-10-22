@@ -1,24 +1,16 @@
 package typingsJapgolly.tensorflowTfjsData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorflowTfjsDataStrings {
-  @js.native
-  sealed trait `1Dot5Dot2` extends js.Object
   
   @js.native
-  sealed trait environment extends js.Object
+  sealed trait environment extends StObject
+  inline def environment: environment = "environment".asInstanceOf[environment]
   
   @js.native
-  sealed trait user extends js.Object
-  
-  @scala.inline
-  def `1Dot5Dot2`: `1Dot5Dot2` = "1.5.2".asInstanceOf[`1Dot5Dot2`]
-  @scala.inline
-  def environment: environment = "environment".asInstanceOf[environment]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
 }
-

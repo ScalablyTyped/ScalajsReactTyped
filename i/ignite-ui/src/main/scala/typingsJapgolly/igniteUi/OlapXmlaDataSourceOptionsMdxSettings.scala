@@ -1,64 +1,82 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OlapXmlaDataSourceOptionsMdxSettings
-  extends /**
-	 * Option for OlapXmlaDataSourceOptionsMdxSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="true" a value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true
-  	 */
+    * Optional="true" a value indicating whether a members' set expressions on COLUMNS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true
+    */
   var addCalculatedMembersOnColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Optional="true" a value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true
-  	 */
+    * Optional="true" a value indicating whether a members' set expressions on ROWS axis should be wrapped with AddCalculatedMembers MDX method. Default value is true
+    */
   var addCalculatedMembersOnRows: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Optional="true" a string array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES
-  	 */
-  var dimensionPropertiesOnColumns: js.UndefOr[js.Array[_]] = js.undefined
+    * Optional="true" a string array with the names of intrinsic non-context sensitive member properties applied on COLUMNS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES
+    */
+  var dimensionPropertiesOnColumns: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Optional="true" a string array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES
-  	 */
-  var dimensionPropertiesOnRows: js.UndefOr[js.Array[_]] = js.undefined
+    * Optional="true" a string array with the names of intrinsic non-context sensitive member properties applied on ROWS axis. By defult CHILDREN_CARDINALITY and PARENT_UNIQUE_NAME properties are always added to DIMENSION PROPERTIES
+    */
+  var dimensionPropertiesOnRows: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Optional="true" a value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true
-  	 */
+    * Optional="true" a value indicating whether a NON EMPTY clause is present on COLUMNS axis. Default value is true
+    */
   var nonEmptyOnColumns: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Optional="true" a value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true
-  	 */
+    * Optional="true" a value indicating whether a NON EMPTY clause is present on ROWS axis. Default value is true
+    */
   var nonEmptyOnRows: js.UndefOr[Boolean] = js.undefined
 }
-
 object OlapXmlaDataSourceOptionsMdxSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for OlapXmlaDataSourceOptionsMdxSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    addCalculatedMembersOnColumns: js.UndefOr[Boolean] = js.undefined,
-    addCalculatedMembersOnRows: js.UndefOr[Boolean] = js.undefined,
-    dimensionPropertiesOnColumns: js.Array[_] = null,
-    dimensionPropertiesOnRows: js.Array[_] = null,
-    nonEmptyOnColumns: js.UndefOr[Boolean] = js.undefined,
-    nonEmptyOnRows: js.UndefOr[Boolean] = js.undefined
-  ): OlapXmlaDataSourceOptionsMdxSettings = {
+  
+  inline def apply(): OlapXmlaDataSourceOptionsMdxSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(addCalculatedMembersOnColumns)) __obj.updateDynamic("addCalculatedMembersOnColumns")(addCalculatedMembersOnColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(addCalculatedMembersOnRows)) __obj.updateDynamic("addCalculatedMembersOnRows")(addCalculatedMembersOnRows.asInstanceOf[js.Any])
-    if (dimensionPropertiesOnColumns != null) __obj.updateDynamic("dimensionPropertiesOnColumns")(dimensionPropertiesOnColumns.asInstanceOf[js.Any])
-    if (dimensionPropertiesOnRows != null) __obj.updateDynamic("dimensionPropertiesOnRows")(dimensionPropertiesOnRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonEmptyOnColumns)) __obj.updateDynamic("nonEmptyOnColumns")(nonEmptyOnColumns.asInstanceOf[js.Any])
-    if (!js.isUndefined(nonEmptyOnRows)) __obj.updateDynamic("nonEmptyOnRows")(nonEmptyOnRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[OlapXmlaDataSourceOptionsMdxSettings]
   }
+  
+  extension [Self <: OlapXmlaDataSourceOptionsMdxSettings](x: Self) {
+    
+    inline def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
+    
+    inline def setAddCalculatedMembersOnColumnsUndefined: Self = StObject.set(x, "addCalculatedMembersOnColumns", js.undefined)
+    
+    inline def setAddCalculatedMembersOnRows(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnRows", value.asInstanceOf[js.Any])
+    
+    inline def setAddCalculatedMembersOnRowsUndefined: Self = StObject.set(x, "addCalculatedMembersOnRows", js.undefined)
+    
+    inline def setDimensionPropertiesOnColumns(value: js.Array[Any]): Self = StObject.set(x, "dimensionPropertiesOnColumns", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionPropertiesOnColumnsUndefined: Self = StObject.set(x, "dimensionPropertiesOnColumns", js.undefined)
+    
+    inline def setDimensionPropertiesOnColumnsVarargs(value: Any*): Self = StObject.set(x, "dimensionPropertiesOnColumns", js.Array(value*))
+    
+    inline def setDimensionPropertiesOnRows(value: js.Array[Any]): Self = StObject.set(x, "dimensionPropertiesOnRows", value.asInstanceOf[js.Any])
+    
+    inline def setDimensionPropertiesOnRowsUndefined: Self = StObject.set(x, "dimensionPropertiesOnRows", js.undefined)
+    
+    inline def setDimensionPropertiesOnRowsVarargs(value: Any*): Self = StObject.set(x, "dimensionPropertiesOnRows", js.Array(value*))
+    
+    inline def setNonEmptyOnColumns(value: Boolean): Self = StObject.set(x, "nonEmptyOnColumns", value.asInstanceOf[js.Any])
+    
+    inline def setNonEmptyOnColumnsUndefined: Self = StObject.set(x, "nonEmptyOnColumns", js.undefined)
+    
+    inline def setNonEmptyOnRows(value: Boolean): Self = StObject.set(x, "nonEmptyOnRows", value.asInstanceOf[js.Any])
+    
+    inline def setNonEmptyOnRowsUndefined: Self = StObject.set(x, "nonEmptyOnRows", js.undefined)
+  }
 }
-

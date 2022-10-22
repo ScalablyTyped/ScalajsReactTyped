@@ -2,22 +2,24 @@ package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.oidMod.Oid
 import typingsJapgolly.nodegit.repositoryMod.Repository
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/graph", JSImport.Namespace)
-@js.native
-object graphMod extends js.Object {
-  @js.native
-  class Graph () extends js.Object
+object graphMod {
   
+  @JSImport("nodegit/graph", "Graph")
+  @js.native
+  open class Graph () extends StObject
   /* static members */
-  @js.native
-  object Graph extends js.Object {
-    def aheadBehind(repo: Repository, local: Oid, upstream: Oid): js.Promise[Double] = js.native
-    def descendantOf(repo: Repository, commit: Oid, ancestor: Oid): js.Promise[Double] = js.native
+  object Graph {
+    
+    @JSImport("nodegit/graph", "Graph")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def aheadBehind(repo: Repository, local: Oid, upstream: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("aheadBehind")(repo.asInstanceOf[js.Any], local.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    inline def descendantOf(repo: Repository, commit: Oid, ancestor: Oid): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("descendantOf")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], ancestor.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
   }
-  
 }
-

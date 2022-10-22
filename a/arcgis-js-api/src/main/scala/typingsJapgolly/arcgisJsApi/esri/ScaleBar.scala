@@ -1,46 +1,46 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`non-metric`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.dual
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.line
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.metric
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ruler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ScaleBar extends Widget_ {
+trait ScaleBar
+  extends StObject
+     with Widget_ {
+  
   /**
-    * The style for the scale bar. When `unit` is set to `dual`, the style will always be `line`.
+    * The style for the scale bar.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#style)
     */
   var style: ruler | line = js.native
+  
   /**
-    * Units to use for the scale bar. When using `dual`, the scale bar displays both metric and non-metric units. Metric values show either kilometers or meters depending on the scale, and non-metric values show either miles or feet depending on the scale.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
+    * Units to use for the scale bar.
     *
     * @default non-metric
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#unit)
     */
   var unit: `non-metric` | metric | dual = js.native
+  
   /**
-    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html). Set this to link the widget to a specific view.
+    * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#view)
     */
   var view: MapView = js.native
+  
   /**
-    * The view model for this widget. This is a class that contains all the logic (properties and methods) that controls this widget's behavior. See the [ScaleBarViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar-ScaleBarViewModel.html) class to access all properties and methods on the widget.
+    * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleBar.html#viewModel)
     */
   var viewModel: ScaleBarViewModel = js.native
 }
-
-@JSGlobal("__esri.ScaleBar")
-@js.native
-object ScaleBar extends TopLevel[ScaleBarConstructor]
-

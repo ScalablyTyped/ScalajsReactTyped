@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormErrorEventUIParam extends js.Object {
+trait FormErrorEventUIParam extends StObject {
+  
   /**
-  	 * Gets reference to the igValidator widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets reference to the igValidator widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to the event target form.
-  	 */
+    * Gets reference to the event target form.
+    */
   var target: js.UndefOr[String] = js.undefined
 }
-
 object FormErrorEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, target: String = null): FormErrorEventUIParam = {
+  
+  inline def apply(): FormErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormErrorEventUIParam]
   }
+  
+  extension [Self <: FormErrorEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

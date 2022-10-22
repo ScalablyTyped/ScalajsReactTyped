@@ -10,15 +10,12 @@ Pack/Unpack multibyte binary values from/to buffers
 | ------------------ | :-------------: |
 | Full name          | struct |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 15 |
-| # downloads        | 20402 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3598.3333333333335 |
+| # stars            | 143.0 |
 
 ## Links
-- [Homepage](https://github.com/xdenser/node-struct#readme)
-- [Bugs](http://github.com/xdenser/node-struct/issues)
-- [Repository](https://github.com/xdenser/node-struct)
 - [Npm](https://www.npmjs.com/package/struct)
     
 

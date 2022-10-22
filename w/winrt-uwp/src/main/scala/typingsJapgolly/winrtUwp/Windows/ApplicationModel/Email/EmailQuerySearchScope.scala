@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailQuerySearchScope extends js.Object
-
+sealed trait EmailQuerySearchScope extends StObject
 /** Defines the scope of a query. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailQuerySearchScope")
 @js.native
-object EmailQuerySearchScope extends js.Object {
+object EmailQuerySearchScope extends StObject {
+  
   /** Query only the local email message collection. */
   @js.native
-  sealed trait local extends EmailQuerySearchScope
+  sealed trait local
+    extends StObject
+       with EmailQuerySearchScope
   
   /** Query the entire email message collection contained on the email server. */
   @js.native
-  sealed trait server extends EmailQuerySearchScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailQuerySearchScope with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object server extends TopLevel[server with Double]
-  
+  sealed trait server
+    extends StObject
+       with EmailQuerySearchScope
 }
-

@@ -3,55 +3,41 @@ package typingsJapgolly.w3cWebUsb
 import typingsJapgolly.std.EventTarget
 import typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.connect
 import typingsJapgolly.w3cWebUsb.w3cWebUsbStrings.disconnect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("USB")
 @js.native
-class USB () extends EventTarget {
-  var onconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]) | Null = js.native
-  var ondisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]) | Null = js.native
-  @JSName("addEventListener")
-  def addEventListener_connect(`type`: connect, listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_connect(
-    `type`: connect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _],
+trait USB
+  extends StObject
+     with EventTarget {
+  
+  def addEventListener(
+    `type`: connect | disconnect,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any]
+  ): Unit = js.native
+  def addEventListener(
+    `type`: connect | disconnect,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disconnect(
-    `type`: disconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_disconnect(
-    `type`: disconnect,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _],
-    useCapture: Boolean
-  ): Unit = js.native
+  
   def getDevices(): js.Promise[js.Array[USBDevice]] = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_connect(`type`: connect, callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_connect(
-    `type`: connect,
-    callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _],
+  
+  var onconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any]) | Null = js.native
+  
+  var ondisconnect: (js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any]) | Null = js.native
+  
+  def removeEventListener(
+    `type`: connect | disconnect,
+    callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any]
+  ): Unit = js.native
+  def removeEventListener(
+    `type`: connect | disconnect,
+    callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, Any],
     useCapture: Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_disconnect(
-    `type`: disconnect,
-    callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_disconnect(
-    `type`: disconnect,
-    callback: js.ThisFunction1[/* this */ this.type, /* ev */ USBConnectionEvent, _],
-    useCapture: Boolean
-  ): Unit = js.native
+  
   def requestDevice(): js.Promise[USBDevice] = js.native
   def requestDevice(options: USBDeviceRequestOptions): js.Promise[USBDevice] = js.native
 }
-

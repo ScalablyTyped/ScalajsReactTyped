@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder to create a getData() response for your script project.
@@ -23,30 +23,41 @@ import scala.scalajs.js.annotation._
   *         .build();
   *     }
   */
-trait GetDataResponse extends js.Object {
+trait GetDataResponse extends StObject {
+  
   def addAllRows(rows: js.Array[js.Array[String]]): GetDataResponse
+  
   def addRow(row: js.Array[String]): GetDataResponse
-  def build(): js.Any
+  
+  def build(): Any
+  
   def setFields(fields: Fields): GetDataResponse
+  
   def setFiltersApplied(filtersApplied: Boolean): GetDataResponse
 }
-
 object GetDataResponse {
-  @scala.inline
-  def apply(
-    addAllRows: js.Array[js.Array[String]] => CallbackTo[GetDataResponse],
-    addRow: js.Array[String] => CallbackTo[GetDataResponse],
-    build: CallbackTo[js.Any],
-    setFields: Fields => CallbackTo[GetDataResponse],
-    setFiltersApplied: Boolean => CallbackTo[GetDataResponse]
+  
+  inline def apply(
+    addAllRows: js.Array[js.Array[String]] => GetDataResponse,
+    addRow: js.Array[String] => GetDataResponse,
+    build: CallbackTo[Any],
+    setFields: Fields => GetDataResponse,
+    setFiltersApplied: Boolean => GetDataResponse
   ): GetDataResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addAllRows")(js.Any.fromFunction1((t0: js.Array[js.Array[java.lang.String]]) => addAllRows(t0).runNow()))
-    __obj.updateDynamic("addRow")(js.Any.fromFunction1((t0: js.Array[java.lang.String]) => addRow(t0).runNow()))
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setFields")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio.Fields) => setFields(t0).runNow()))
-    __obj.updateDynamic("setFiltersApplied")(js.Any.fromFunction1((t0: scala.Boolean) => setFiltersApplied(t0).runNow()))
+    val __obj = js.Dynamic.literal(addAllRows = js.Any.fromFunction1(addAllRows), addRow = js.Any.fromFunction1(addRow), build = build.toJsFn, setFields = js.Any.fromFunction1(setFields), setFiltersApplied = js.Any.fromFunction1(setFiltersApplied))
     __obj.asInstanceOf[GetDataResponse]
   }
+  
+  extension [Self <: GetDataResponse](x: Self) {
+    
+    inline def setAddAllRows(value: js.Array[js.Array[String]] => GetDataResponse): Self = StObject.set(x, "addAllRows", js.Any.fromFunction1(value))
+    
+    inline def setAddRow(value: js.Array[String] => GetDataResponse): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    
+    inline def setBuild(value: CallbackTo[Any]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetFields(value: Fields => GetDataResponse): Self = StObject.set(x, "setFields", js.Any.fromFunction1(value))
+    
+    inline def setSetFiltersApplied(value: Boolean => GetDataResponse): Self = StObject.set(x, "setFiltersApplied", js.Any.fromFunction1(value))
+  }
 }
-

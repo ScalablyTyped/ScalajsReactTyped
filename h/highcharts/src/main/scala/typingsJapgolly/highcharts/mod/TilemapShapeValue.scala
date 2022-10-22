@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.circle
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.hexagon
   - typingsJapgolly.highcharts.highchartsStrings.square
 */
-trait TilemapShapeValue extends js.Object
-
+trait TilemapShapeValue extends StObject
 object TilemapShapeValue {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def circle: typingsJapgolly.highcharts.highchartsStrings.circle = this.cast("circle")
-  @scala.inline
-  def diamond: typingsJapgolly.highcharts.highchartsStrings.diamond = this.cast("diamond")
-  @scala.inline
-  def hexagon: typingsJapgolly.highcharts.highchartsStrings.hexagon = this.cast("hexagon")
-  @scala.inline
-  def square: typingsJapgolly.highcharts.highchartsStrings.square = this.cast("square")
+  
+  inline def circle: typingsJapgolly.highcharts.highchartsStrings.circle = "circle".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.circle]
+  
+  inline def diamond: typingsJapgolly.highcharts.highchartsStrings.diamond = "diamond".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.diamond]
+  
+  inline def hexagon: typingsJapgolly.highcharts.highchartsStrings.hexagon = "hexagon".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.hexagon]
+  
+  inline def square: typingsJapgolly.highcharts.highchartsStrings.square = "square".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.square]
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azdata", "ui")
-@js.native
-object ui extends js.Object {
-  def registerModelViewProvider(widgetId: String, handler: js.Function1[/* view */ ModelView, Unit]): Unit = js.native
+object ui {
+  
+  @JSImport("azdata", "ui")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def registerModelViewProvider(widgetId: String, handler: js.Function1[/* view */ ModelView, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModelViewProvider")(widgetId.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

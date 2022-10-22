@@ -5,22 +5,22 @@ import typingsJapgolly.convertUnits.convertUnitsStrings.Kb_
 import typingsJapgolly.convertUnits.convertUnitsStrings.Mb_
 import typingsJapgolly.convertUnits.convertUnitsStrings.Tb_
 import typingsJapgolly.convertUnits.convertUnitsStrings.b_
-import typingsJapgolly.convertUnits.convertUnitsStrings.km_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mHz_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mVAR_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mVARh_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mVA_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mW_
 import typingsJapgolly.convertUnits.convertUnitsStrings.mWh_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+// Angle
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.convertUnits.convertUnitsStrings.mm
   - typingsJapgolly.convertUnits.convertUnitsStrings.cm
   - typingsJapgolly.convertUnits.convertUnitsStrings.m
-  - typingsJapgolly.convertUnits.convertUnitsStrings.km_
+  - typingsJapgolly.convertUnits.convertUnitsStrings.km
   - typingsJapgolly.convertUnits.convertUnitsStrings.in
   - typingsJapgolly.convertUnits.convertUnitsStrings.`ft-us`
   - typingsJapgolly.convertUnits.convertUnitsStrings.ft
@@ -159,7 +159,7 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.convertUnits.convertUnitsStrings.kA
   - typingsJapgolly.convertUnits.convertUnitsStrings.W
   - typingsJapgolly.convertUnits.convertUnitsStrings.mW_
-  - typingsJapgolly.convertUnits.convertUnitsStrings.kM
+  - typingsJapgolly.convertUnits.convertUnitsStrings.kW
   - typingsJapgolly.convertUnits.convertUnitsStrings.MW
   - typingsJapgolly.convertUnits.convertUnitsStrings.GW
   - typingsJapgolly.convertUnits.convertUnitsStrings.VA
@@ -190,354 +190,350 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.convertUnits.convertUnitsStrings.arcmin
   - typingsJapgolly.convertUnits.convertUnitsStrings.arcsec
 */
-trait unit extends js.Object
-
-object unit {
-  @scala.inline
-  def A: typingsJapgolly.convertUnits.convertUnitsStrings.A = this.cast("A")
-  @scala.inline
-  def B: typingsJapgolly.convertUnits.convertUnitsStrings.B = this.cast("B")
-  @scala.inline
-  def C: typingsJapgolly.convertUnits.convertUnitsStrings.C = this.cast("C")
-  @scala.inline
-  def F: typingsJapgolly.convertUnits.convertUnitsStrings.F = this.cast("F")
-  @scala.inline
-  def GB: typingsJapgolly.convertUnits.convertUnitsStrings.GB = this.cast("GB")
-  @scala.inline
-  def GHz: typingsJapgolly.convertUnits.convertUnitsStrings.GHz = this.cast("GHz")
-  @scala.inline
-  def GVA: typingsJapgolly.convertUnits.convertUnitsStrings.GVA = this.cast("GVA")
-  @scala.inline
-  def GVAR: typingsJapgolly.convertUnits.convertUnitsStrings.GVAR = this.cast("GVAR")
-  @scala.inline
-  def GVARH: typingsJapgolly.convertUnits.convertUnitsStrings.GVARH = this.cast("GVARH")
-  @scala.inline
-  def GW: typingsJapgolly.convertUnits.convertUnitsStrings.GW = this.cast("GW")
-  @scala.inline
-  def GWh: typingsJapgolly.convertUnits.convertUnitsStrings.GWh = this.cast("GWh")
-  @scala.inline
-  def Gb: Gb_ = this.cast("Gb")
-  @scala.inline
-  def Hz: typingsJapgolly.convertUnits.convertUnitsStrings.Hz = this.cast("Hz")
-  @scala.inline
-  def J: typingsJapgolly.convertUnits.convertUnitsStrings.J = this.cast("J")
-  @scala.inline
-  def K: typingsJapgolly.convertUnits.convertUnitsStrings.K = this.cast("K")
-  @scala.inline
-  def KB: typingsJapgolly.convertUnits.convertUnitsStrings.KB = this.cast("KB")
-  @scala.inline
-  def Kb: Kb_ = this.cast("Kb")
-  @scala.inline
-  def MB: typingsJapgolly.convertUnits.convertUnitsStrings.MB = this.cast("MB")
-  @scala.inline
-  def MHz: typingsJapgolly.convertUnits.convertUnitsStrings.MHz = this.cast("MHz")
-  @scala.inline
-  def MPa: typingsJapgolly.convertUnits.convertUnitsStrings.MPa = this.cast("MPa")
-  @scala.inline
-  def MVA: typingsJapgolly.convertUnits.convertUnitsStrings.MVA = this.cast("MVA")
-  @scala.inline
-  def MVAR: typingsJapgolly.convertUnits.convertUnitsStrings.MVAR = this.cast("MVAR")
-  @scala.inline
-  def MVARh: typingsJapgolly.convertUnits.convertUnitsStrings.MVARh = this.cast("MVARh")
-  @scala.inline
-  def MW: typingsJapgolly.convertUnits.convertUnitsStrings.MW = this.cast("MW")
-  @scala.inline
-  def MWh: typingsJapgolly.convertUnits.convertUnitsStrings.MWh = this.cast("MWh")
-  @scala.inline
-  def Mb: Mb_ = this.cast("Mb")
-  @scala.inline
-  def Pa: typingsJapgolly.convertUnits.convertUnitsStrings.Pa = this.cast("Pa")
-  @scala.inline
-  def R: typingsJapgolly.convertUnits.convertUnitsStrings.R = this.cast("R")
-  @scala.inline
-  def TB: typingsJapgolly.convertUnits.convertUnitsStrings.TB = this.cast("TB")
-  @scala.inline
-  def THz: typingsJapgolly.convertUnits.convertUnitsStrings.THz = this.cast("THz")
-  @scala.inline
-  def Tb: Tb_ = this.cast("Tb")
-  @scala.inline
-  def Tbs: typingsJapgolly.convertUnits.convertUnitsStrings.Tbs = this.cast("Tbs")
-  @scala.inline
-  def TbsSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.TbsSlashs = this.cast("Tbs/s")
-  @scala.inline
-  def V: typingsJapgolly.convertUnits.convertUnitsStrings.V = this.cast("V")
-  @scala.inline
-  def VA: typingsJapgolly.convertUnits.convertUnitsStrings.VA = this.cast("VA")
-  @scala.inline
-  def VAR: typingsJapgolly.convertUnits.convertUnitsStrings.VAR = this.cast("VAR")
-  @scala.inline
-  def VARh: typingsJapgolly.convertUnits.convertUnitsStrings.VARh = this.cast("VARh")
-  @scala.inline
-  def W: typingsJapgolly.convertUnits.convertUnitsStrings.W = this.cast("W")
-  @scala.inline
-  def Wh: typingsJapgolly.convertUnits.convertUnitsStrings.Wh = this.cast("Wh")
-  @scala.inline
-  def ac: typingsJapgolly.convertUnits.convertUnitsStrings.ac = this.cast("ac")
-  @scala.inline
-  def arcmin: typingsJapgolly.convertUnits.convertUnitsStrings.arcmin = this.cast("arcmin")
-  @scala.inline
-  def arcsec: typingsJapgolly.convertUnits.convertUnitsStrings.arcsec = this.cast("arcsec")
-  @scala.inline
-  def b: b_ = this.cast("b")
-  @scala.inline
-  def bar: typingsJapgolly.convertUnits.convertUnitsStrings.bar = this.cast("bar")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def clSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.clSlashs = this.cast("cl/s")
-  @scala.inline
-  def cm: typingsJapgolly.convertUnits.convertUnitsStrings.cm = this.cast("cm")
-  @scala.inline
-  def cm2: typingsJapgolly.convertUnits.convertUnitsStrings.cm2 = this.cast("cm2")
-  @scala.inline
-  def cm3: typingsJapgolly.convertUnits.convertUnitsStrings.cm3 = this.cast("cm3")
-  @scala.inline
-  def cm3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.cm3Slashs = this.cast("cm3/s")
-  @scala.inline
-  def cup: typingsJapgolly.convertUnits.convertUnitsStrings.cup = this.cast("cup")
-  @scala.inline
-  def cupSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.cupSlashs = this.cast("cup/s")
-  @scala.inline
-  def d: typingsJapgolly.convertUnits.convertUnitsStrings.d = this.cast("d")
-  @scala.inline
-  def deg: typingsJapgolly.convertUnits.convertUnitsStrings.deg = this.cast("deg")
-  @scala.inline
-  def degSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.degSlashs = this.cast("deg/s")
-  @scala.inline
-  def dlSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.dlSlashs = this.cast("dl/s")
-  @scala.inline
-  def `fl-oz`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-oz` = this.cast("fl-oz")
-  @scala.inline
-  def `fl-ozSlashh`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashh` = this.cast("fl-oz/h")
-  @scala.inline
-  def `fl-ozSlashmin`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashmin` = this.cast("fl-oz/min")
-  @scala.inline
-  def `fl-ozSlashs`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashs` = this.cast("fl-oz/s")
-  @scala.inline
-  def ft: typingsJapgolly.convertUnits.convertUnitsStrings.ft = this.cast("ft")
-  @scala.inline
-  def `ft-cd`: typingsJapgolly.convertUnits.convertUnitsStrings.`ft-cd` = this.cast("ft-cd")
-  @scala.inline
-  def `ft-us`: typingsJapgolly.convertUnits.convertUnitsStrings.`ft-us` = this.cast("ft-us")
-  @scala.inline
-  def ft2: typingsJapgolly.convertUnits.convertUnitsStrings.ft2 = this.cast("ft2")
-  @scala.inline
-  def ft3: typingsJapgolly.convertUnits.convertUnitsStrings.ft3 = this.cast("ft3")
-  @scala.inline
-  def ft3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashh = this.cast("ft3/h")
-  @scala.inline
-  def ft3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashmin = this.cast("ft3/min")
-  @scala.inline
-  def ft3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashs = this.cast("ft3/s")
-  @scala.inline
-  def ftSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.ftSlashs = this.cast("ft/s")
-  @scala.inline
-  def g: typingsJapgolly.convertUnits.convertUnitsStrings.g = this.cast("g")
-  @scala.inline
-  def gal: typingsJapgolly.convertUnits.convertUnitsStrings.gal = this.cast("gal")
-  @scala.inline
-  def galSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashh = this.cast("gal/h")
-  @scala.inline
-  def galSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashmin = this.cast("gal/min")
-  @scala.inline
-  def galSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashs = this.cast("gal/s")
-  @scala.inline
-  def grad: typingsJapgolly.convertUnits.convertUnitsStrings.grad = this.cast("grad")
-  @scala.inline
-  def h: typingsJapgolly.convertUnits.convertUnitsStrings.h = this.cast("h")
-  @scala.inline
-  def hPa: typingsJapgolly.convertUnits.convertUnitsStrings.hPa = this.cast("hPa")
-  @scala.inline
-  def ha: typingsJapgolly.convertUnits.convertUnitsStrings.ha = this.cast("ha")
-  @scala.inline
-  def in: typingsJapgolly.convertUnits.convertUnitsStrings.in = this.cast("in")
-  @scala.inline
-  def in2: typingsJapgolly.convertUnits.convertUnitsStrings.in2 = this.cast("in2")
-  @scala.inline
-  def in3: typingsJapgolly.convertUnits.convertUnitsStrings.in3 = this.cast("in3")
-  @scala.inline
-  def in3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashh = this.cast("in3/h")
-  @scala.inline
-  def in3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashmin = this.cast("in3/min")
-  @scala.inline
-  def in3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashs = this.cast("in3/s")
-  @scala.inline
-  def kA: typingsJapgolly.convertUnits.convertUnitsStrings.kA = this.cast("kA")
-  @scala.inline
-  def kHz: typingsJapgolly.convertUnits.convertUnitsStrings.kHz = this.cast("kHz")
-  @scala.inline
-  def kJ: typingsJapgolly.convertUnits.convertUnitsStrings.kJ = this.cast("kJ")
-  @scala.inline
-  def kM: typingsJapgolly.convertUnits.convertUnitsStrings.kM = this.cast("kM")
-  @scala.inline
-  def kPa: typingsJapgolly.convertUnits.convertUnitsStrings.kPa = this.cast("kPa")
-  @scala.inline
-  def kV: typingsJapgolly.convertUnits.convertUnitsStrings.kV = this.cast("kV")
-  @scala.inline
-  def kVA: typingsJapgolly.convertUnits.convertUnitsStrings.kVA = this.cast("kVA")
-  @scala.inline
-  def kVAR: typingsJapgolly.convertUnits.convertUnitsStrings.kVAR = this.cast("kVAR")
-  @scala.inline
-  def kVARh: typingsJapgolly.convertUnits.convertUnitsStrings.kVARh = this.cast("kVARh")
-  @scala.inline
-  def kWh: typingsJapgolly.convertUnits.convertUnitsStrings.kWh = this.cast("kWh")
-  @scala.inline
-  def kg: typingsJapgolly.convertUnits.convertUnitsStrings.kg = this.cast("kg")
-  @scala.inline
-  def kl: typingsJapgolly.convertUnits.convertUnitsStrings.kl = this.cast("kl")
-  @scala.inline
-  def klSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashh = this.cast("kl/h")
-  @scala.inline
-  def klSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashmin = this.cast("kl/min")
-  @scala.inline
-  def klSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashs = this.cast("kl/s")
-  @scala.inline
-  def km: km_ = this.cast("km")
-  @scala.inline
-  def km2: typingsJapgolly.convertUnits.convertUnitsStrings.km2 = this.cast("km2")
-  @scala.inline
-  def km3: typingsJapgolly.convertUnits.convertUnitsStrings.km3 = this.cast("km3")
-  @scala.inline
-  def km3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.km3Slashs = this.cast("km3/s")
-  @scala.inline
-  def kmSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.kmSlashh = this.cast("km/h")
-  @scala.inline
-  def knot: typingsJapgolly.convertUnits.convertUnitsStrings.knot = this.cast("knot")
-  @scala.inline
-  def ksi: typingsJapgolly.convertUnits.convertUnitsStrings.ksi = this.cast("ksi")
-  @scala.inline
-  def l: typingsJapgolly.convertUnits.convertUnitsStrings.l = this.cast("l")
-  @scala.inline
-  def lSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashh = this.cast("l/h")
-  @scala.inline
-  def lSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashmin = this.cast("l/min")
-  @scala.inline
-  def lSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashs = this.cast("l/s")
-  @scala.inline
-  def lb: typingsJapgolly.convertUnits.convertUnitsStrings.lb = this.cast("lb")
-  @scala.inline
-  def lx: typingsJapgolly.convertUnits.convertUnitsStrings.lx = this.cast("lx")
-  @scala.inline
-  def m: typingsJapgolly.convertUnits.convertUnitsStrings.m = this.cast("m")
-  @scala.inline
-  def m2: typingsJapgolly.convertUnits.convertUnitsStrings.m2 = this.cast("m2")
-  @scala.inline
-  def m3: typingsJapgolly.convertUnits.convertUnitsStrings.m3 = this.cast("m3")
-  @scala.inline
-  def m3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashh = this.cast("m3/h")
-  @scala.inline
-  def m3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashmin = this.cast("m3/min")
-  @scala.inline
-  def m3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashs = this.cast("m3/s")
-  @scala.inline
-  def mA: typingsJapgolly.convertUnits.convertUnitsStrings.mA = this.cast("mA")
-  @scala.inline
-  def mHz: mHz_ = this.cast("mHz")
-  @scala.inline
-  def mSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.mSlashh = this.cast("m/h")
-  @scala.inline
-  def mSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.mSlashs = this.cast("m/s")
-  @scala.inline
-  def mV: typingsJapgolly.convertUnits.convertUnitsStrings.mV = this.cast("mV")
-  @scala.inline
-  def mVA: mVA_ = this.cast("mVA")
-  @scala.inline
-  def mVAR: mVAR_ = this.cast("mVAR")
-  @scala.inline
-  def mVARh: mVARh_ = this.cast("mVARh")
-  @scala.inline
-  def mW: mW_ = this.cast("mW")
-  @scala.inline
-  def mWh: mWh_ = this.cast("mWh")
-  @scala.inline
-  def mcg: typingsJapgolly.convertUnits.convertUnitsStrings.mcg = this.cast("mcg")
-  @scala.inline
-  def mg: typingsJapgolly.convertUnits.convertUnitsStrings.mg = this.cast("mg")
-  @scala.inline
-  def mi: typingsJapgolly.convertUnits.convertUnitsStrings.mi = this.cast("mi")
-  @scala.inline
-  def mi2: typingsJapgolly.convertUnits.convertUnitsStrings.mi2 = this.cast("mi2")
-  @scala.inline
-  def min: typingsJapgolly.convertUnits.convertUnitsStrings.min = this.cast("min")
-  @scala.inline
-  def minSlashkm: typingsJapgolly.convertUnits.convertUnitsStrings.minSlashkm = this.cast("min/km")
-  @scala.inline
-  def ml: typingsJapgolly.convertUnits.convertUnitsStrings.ml = this.cast("ml")
-  @scala.inline
-  def mlSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.mlSlashs = this.cast("ml/s")
-  @scala.inline
-  def mm: typingsJapgolly.convertUnits.convertUnitsStrings.mm = this.cast("mm")
-  @scala.inline
-  def mm2: typingsJapgolly.convertUnits.convertUnitsStrings.mm2 = this.cast("mm2")
-  @scala.inline
-  def mm3: typingsJapgolly.convertUnits.convertUnitsStrings.mm3 = this.cast("mm3")
-  @scala.inline
-  def mm3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.mm3Slashs = this.cast("mm3/s")
-  @scala.inline
-  def month: typingsJapgolly.convertUnits.convertUnitsStrings.month = this.cast("month")
-  @scala.inline
-  def ms: typingsJapgolly.convertUnits.convertUnitsStrings.ms = this.cast("ms")
-  @scala.inline
-  def mt: typingsJapgolly.convertUnits.convertUnitsStrings.mt = this.cast("mt")
-  @scala.inline
-  def mu: typingsJapgolly.convertUnits.convertUnitsStrings.mu = this.cast("mu")
-  @scala.inline
-  def ns: typingsJapgolly.convertUnits.convertUnitsStrings.ns = this.cast("ns")
-  @scala.inline
-  def oz: typingsJapgolly.convertUnits.convertUnitsStrings.oz = this.cast("oz")
-  @scala.inline
-  def pnt: typingsJapgolly.convertUnits.convertUnitsStrings.pnt = this.cast("pnt")
-  @scala.inline
-  def pntSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashh = this.cast("pnt/h")
-  @scala.inline
-  def pntSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashmin = this.cast("pnt/min")
-  @scala.inline
-  def pntSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashs = this.cast("pnt/s")
-  @scala.inline
-  def ppb: typingsJapgolly.convertUnits.convertUnitsStrings.ppb = this.cast("ppb")
-  @scala.inline
-  def ppm: typingsJapgolly.convertUnits.convertUnitsStrings.ppm = this.cast("ppm")
-  @scala.inline
-  def ppq: typingsJapgolly.convertUnits.convertUnitsStrings.ppq = this.cast("ppq")
-  @scala.inline
-  def ppt: typingsJapgolly.convertUnits.convertUnitsStrings.ppt = this.cast("ppt")
-  @scala.inline
-  def psi: typingsJapgolly.convertUnits.convertUnitsStrings.psi = this.cast("psi")
-  @scala.inline
-  def qt: typingsJapgolly.convertUnits.convertUnitsStrings.qt = this.cast("qt")
-  @scala.inline
-  def qtSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.qtSlashs = this.cast("qt/s")
-  @scala.inline
-  def rad: typingsJapgolly.convertUnits.convertUnitsStrings.rad = this.cast("rad")
-  @scala.inline
-  def radSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.radSlashs = this.cast("rad/s")
-  @scala.inline
-  def rpm: typingsJapgolly.convertUnits.convertUnitsStrings.rpm = this.cast("rpm")
-  @scala.inline
-  def s: typingsJapgolly.convertUnits.convertUnitsStrings.s = this.cast("s")
-  @scala.inline
-  def sSlashft: typingsJapgolly.convertUnits.convertUnitsStrings.sSlashft = this.cast("s/ft")
-  @scala.inline
-  def sSlashm: typingsJapgolly.convertUnits.convertUnitsStrings.sSlashm = this.cast("s/m")
-  @scala.inline
-  def t: typingsJapgolly.convertUnits.convertUnitsStrings.t = this.cast("t")
-  @scala.inline
-  def torr: typingsJapgolly.convertUnits.convertUnitsStrings.torr = this.cast("torr")
-  @scala.inline
-  def tsp: typingsJapgolly.convertUnits.convertUnitsStrings.tsp = this.cast("tsp")
-  @scala.inline
-  def tspSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.tspSlashs = this.cast("tsp/s")
-  @scala.inline
-  def week: typingsJapgolly.convertUnits.convertUnitsStrings.week = this.cast("week")
-  @scala.inline
-  def yd3: typingsJapgolly.convertUnits.convertUnitsStrings.yd3 = this.cast("yd3")
-  @scala.inline
-  def yd3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashh = this.cast("yd3/h")
-  @scala.inline
-  def yd3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashmin = this.cast("yd3/min")
-  @scala.inline
-  def yd3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashs = this.cast("yd3/s")
-  @scala.inline
-  def year: typingsJapgolly.convertUnits.convertUnitsStrings.year = this.cast("year")
+trait Unit extends StObject
+object Unit {
+  
+  inline def A: typingsJapgolly.convertUnits.convertUnitsStrings.A = "A".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.A]
+  
+  inline def B: typingsJapgolly.convertUnits.convertUnitsStrings.B = "B".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.B]
+  
+  inline def C: typingsJapgolly.convertUnits.convertUnitsStrings.C = "C".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.C]
+  
+  inline def F: typingsJapgolly.convertUnits.convertUnitsStrings.F = "F".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.F]
+  
+  inline def GB: typingsJapgolly.convertUnits.convertUnitsStrings.GB = "GB".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GB]
+  
+  inline def GHz: typingsJapgolly.convertUnits.convertUnitsStrings.GHz = "GHz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GHz]
+  
+  inline def GVA: typingsJapgolly.convertUnits.convertUnitsStrings.GVA = "GVA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GVA]
+  
+  inline def GVAR: typingsJapgolly.convertUnits.convertUnitsStrings.GVAR = "GVAR".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GVAR]
+  
+  inline def GVARH: typingsJapgolly.convertUnits.convertUnitsStrings.GVARH = "GVARH".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GVARH]
+  
+  inline def GW: typingsJapgolly.convertUnits.convertUnitsStrings.GW = "GW".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GW]
+  
+  inline def GWh: typingsJapgolly.convertUnits.convertUnitsStrings.GWh = "GWh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.GWh]
+  
+  inline def Gb: Gb_ = "Gb".asInstanceOf[Gb_]
+  
+  inline def Hz: typingsJapgolly.convertUnits.convertUnitsStrings.Hz = "Hz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.Hz]
+  
+  inline def J: typingsJapgolly.convertUnits.convertUnitsStrings.J = "J".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.J]
+  
+  inline def K: typingsJapgolly.convertUnits.convertUnitsStrings.K = "K".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.K]
+  
+  inline def KB: typingsJapgolly.convertUnits.convertUnitsStrings.KB = "KB".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.KB]
+  
+  inline def Kb: Kb_ = "Kb".asInstanceOf[Kb_]
+  
+  inline def MB: typingsJapgolly.convertUnits.convertUnitsStrings.MB = "MB".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MB]
+  
+  inline def MHz: typingsJapgolly.convertUnits.convertUnitsStrings.MHz = "MHz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MHz]
+  
+  inline def MPa: typingsJapgolly.convertUnits.convertUnitsStrings.MPa = "MPa".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MPa]
+  
+  inline def MVA: typingsJapgolly.convertUnits.convertUnitsStrings.MVA = "MVA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MVA]
+  
+  inline def MVAR: typingsJapgolly.convertUnits.convertUnitsStrings.MVAR = "MVAR".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MVAR]
+  
+  inline def MVARh: typingsJapgolly.convertUnits.convertUnitsStrings.MVARh = "MVARh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MVARh]
+  
+  inline def MW: typingsJapgolly.convertUnits.convertUnitsStrings.MW = "MW".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MW]
+  
+  inline def MWh: typingsJapgolly.convertUnits.convertUnitsStrings.MWh = "MWh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.MWh]
+  
+  inline def Mb: Mb_ = "Mb".asInstanceOf[Mb_]
+  
+  inline def Pa: typingsJapgolly.convertUnits.convertUnitsStrings.Pa = "Pa".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.Pa]
+  
+  inline def R: typingsJapgolly.convertUnits.convertUnitsStrings.R = "R".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.R]
+  
+  inline def TB: typingsJapgolly.convertUnits.convertUnitsStrings.TB = "TB".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.TB]
+  
+  inline def THz: typingsJapgolly.convertUnits.convertUnitsStrings.THz = "THz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.THz]
+  
+  inline def Tb: Tb_ = "Tb".asInstanceOf[Tb_]
+  
+  inline def Tbs: typingsJapgolly.convertUnits.convertUnitsStrings.Tbs = "Tbs".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.Tbs]
+  
+  inline def TbsSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.TbsSlashs = "Tbs/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.TbsSlashs]
+  
+  inline def V: typingsJapgolly.convertUnits.convertUnitsStrings.V = "V".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.V]
+  
+  inline def VA: typingsJapgolly.convertUnits.convertUnitsStrings.VA = "VA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.VA]
+  
+  inline def VAR: typingsJapgolly.convertUnits.convertUnitsStrings.VAR = "VAR".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.VAR]
+  
+  inline def VARh: typingsJapgolly.convertUnits.convertUnitsStrings.VARh = "VARh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.VARh]
+  
+  inline def W: typingsJapgolly.convertUnits.convertUnitsStrings.W = "W".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.W]
+  
+  inline def Wh: typingsJapgolly.convertUnits.convertUnitsStrings.Wh = "Wh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.Wh]
+  
+  inline def ac: typingsJapgolly.convertUnits.convertUnitsStrings.ac = "ac".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ac]
+  
+  inline def arcmin: typingsJapgolly.convertUnits.convertUnitsStrings.arcmin = "arcmin".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.arcmin]
+  
+  inline def arcsec: typingsJapgolly.convertUnits.convertUnitsStrings.arcsec = "arcsec".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.arcsec]
+  
+  inline def b: b_ = "b".asInstanceOf[b_]
+  
+  inline def bar: typingsJapgolly.convertUnits.convertUnitsStrings.bar = "bar".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.bar]
+  
+  inline def clSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.clSlashs = "cl/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.clSlashs]
+  
+  inline def cm: typingsJapgolly.convertUnits.convertUnitsStrings.cm = "cm".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cm]
+  
+  inline def cm2: typingsJapgolly.convertUnits.convertUnitsStrings.cm2 = "cm2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cm2]
+  
+  inline def cm3: typingsJapgolly.convertUnits.convertUnitsStrings.cm3 = "cm3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cm3]
+  
+  inline def cm3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.cm3Slashs = "cm3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cm3Slashs]
+  
+  inline def cup: typingsJapgolly.convertUnits.convertUnitsStrings.cup = "cup".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cup]
+  
+  inline def cupSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.cupSlashs = "cup/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.cupSlashs]
+  
+  inline def d: typingsJapgolly.convertUnits.convertUnitsStrings.d = "d".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.d]
+  
+  inline def deg: typingsJapgolly.convertUnits.convertUnitsStrings.deg = "deg".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.deg]
+  
+  inline def degSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.degSlashs = "deg/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.degSlashs]
+  
+  inline def dlSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.dlSlashs = "dl/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.dlSlashs]
+  
+  inline def `fl-oz`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-oz` = "fl-oz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`fl-oz`]
+  
+  inline def `fl-ozSlashh`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashh` = "fl-oz/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashh`]
+  
+  inline def `fl-ozSlashmin`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashmin` = "fl-oz/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashmin`]
+  
+  inline def `fl-ozSlashs`: typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashs` = "fl-oz/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`fl-ozSlashs`]
+  
+  inline def ft: typingsJapgolly.convertUnits.convertUnitsStrings.ft = "ft".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft]
+  
+  inline def `ft-cd`: typingsJapgolly.convertUnits.convertUnitsStrings.`ft-cd` = "ft-cd".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`ft-cd`]
+  
+  inline def `ft-us`: typingsJapgolly.convertUnits.convertUnitsStrings.`ft-us` = "ft-us".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.`ft-us`]
+  
+  inline def ft2: typingsJapgolly.convertUnits.convertUnitsStrings.ft2 = "ft2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft2]
+  
+  inline def ft3: typingsJapgolly.convertUnits.convertUnitsStrings.ft3 = "ft3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft3]
+  
+  inline def ft3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashh = "ft3/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashh]
+  
+  inline def ft3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashmin = "ft3/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashmin]
+  
+  inline def ft3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashs = "ft3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ft3Slashs]
+  
+  inline def ftSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.ftSlashs = "ft/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ftSlashs]
+  
+  inline def g: typingsJapgolly.convertUnits.convertUnitsStrings.g = "g".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.g]
+  
+  inline def gal: typingsJapgolly.convertUnits.convertUnitsStrings.gal = "gal".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.gal]
+  
+  inline def galSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashh = "gal/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.galSlashh]
+  
+  inline def galSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashmin = "gal/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.galSlashmin]
+  
+  inline def galSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.galSlashs = "gal/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.galSlashs]
+  
+  inline def grad: typingsJapgolly.convertUnits.convertUnitsStrings.grad = "grad".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.grad]
+  
+  inline def h: typingsJapgolly.convertUnits.convertUnitsStrings.h = "h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.h]
+  
+  inline def hPa: typingsJapgolly.convertUnits.convertUnitsStrings.hPa = "hPa".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.hPa]
+  
+  inline def ha: typingsJapgolly.convertUnits.convertUnitsStrings.ha = "ha".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ha]
+  
+  inline def in: typingsJapgolly.convertUnits.convertUnitsStrings.in = "in".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in]
+  
+  inline def in2: typingsJapgolly.convertUnits.convertUnitsStrings.in2 = "in2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in2]
+  
+  inline def in3: typingsJapgolly.convertUnits.convertUnitsStrings.in3 = "in3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in3]
+  
+  inline def in3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashh = "in3/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashh]
+  
+  inline def in3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashmin = "in3/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashmin]
+  
+  inline def in3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashs = "in3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.in3Slashs]
+  
+  inline def kA: typingsJapgolly.convertUnits.convertUnitsStrings.kA = "kA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kA]
+  
+  inline def kHz: typingsJapgolly.convertUnits.convertUnitsStrings.kHz = "kHz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kHz]
+  
+  inline def kJ: typingsJapgolly.convertUnits.convertUnitsStrings.kJ = "kJ".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kJ]
+  
+  inline def kPa: typingsJapgolly.convertUnits.convertUnitsStrings.kPa = "kPa".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kPa]
+  
+  inline def kV: typingsJapgolly.convertUnits.convertUnitsStrings.kV = "kV".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kV]
+  
+  inline def kVA: typingsJapgolly.convertUnits.convertUnitsStrings.kVA = "kVA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kVA]
+  
+  inline def kVAR: typingsJapgolly.convertUnits.convertUnitsStrings.kVAR = "kVAR".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kVAR]
+  
+  inline def kVARh: typingsJapgolly.convertUnits.convertUnitsStrings.kVARh = "kVARh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kVARh]
+  
+  inline def kW: typingsJapgolly.convertUnits.convertUnitsStrings.kW = "kW".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kW]
+  
+  inline def kWh: typingsJapgolly.convertUnits.convertUnitsStrings.kWh = "kWh".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kWh]
+  
+  inline def kg: typingsJapgolly.convertUnits.convertUnitsStrings.kg = "kg".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kg]
+  
+  inline def kl: typingsJapgolly.convertUnits.convertUnitsStrings.kl = "kl".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kl]
+  
+  inline def klSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashh = "kl/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.klSlashh]
+  
+  inline def klSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashmin = "kl/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.klSlashmin]
+  
+  inline def klSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.klSlashs = "kl/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.klSlashs]
+  
+  inline def km: typingsJapgolly.convertUnits.convertUnitsStrings.km = "km".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.km]
+  
+  inline def km2: typingsJapgolly.convertUnits.convertUnitsStrings.km2 = "km2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.km2]
+  
+  inline def km3: typingsJapgolly.convertUnits.convertUnitsStrings.km3 = "km3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.km3]
+  
+  inline def km3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.km3Slashs = "km3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.km3Slashs]
+  
+  inline def kmSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.kmSlashh = "km/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.kmSlashh]
+  
+  inline def knot: typingsJapgolly.convertUnits.convertUnitsStrings.knot = "knot".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.knot]
+  
+  inline def ksi: typingsJapgolly.convertUnits.convertUnitsStrings.ksi = "ksi".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ksi]
+  
+  inline def l: typingsJapgolly.convertUnits.convertUnitsStrings.l = "l".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.l]
+  
+  inline def lSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashh = "l/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.lSlashh]
+  
+  inline def lSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashmin = "l/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.lSlashmin]
+  
+  inline def lSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.lSlashs = "l/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.lSlashs]
+  
+  inline def lb: typingsJapgolly.convertUnits.convertUnitsStrings.lb = "lb".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.lb]
+  
+  inline def lx: typingsJapgolly.convertUnits.convertUnitsStrings.lx = "lx".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.lx]
+  
+  inline def m: typingsJapgolly.convertUnits.convertUnitsStrings.m = "m".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m]
+  
+  inline def m2: typingsJapgolly.convertUnits.convertUnitsStrings.m2 = "m2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m2]
+  
+  inline def m3: typingsJapgolly.convertUnits.convertUnitsStrings.m3 = "m3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m3]
+  
+  inline def m3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashh = "m3/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashh]
+  
+  inline def m3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashmin = "m3/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashmin]
+  
+  inline def m3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashs = "m3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.m3Slashs]
+  
+  inline def mA: typingsJapgolly.convertUnits.convertUnitsStrings.mA = "mA".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mA]
+  
+  inline def mHz: mHz_ = "mHz".asInstanceOf[mHz_]
+  
+  inline def mSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.mSlashh = "m/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mSlashh]
+  
+  inline def mSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.mSlashs = "m/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mSlashs]
+  
+  inline def mV: typingsJapgolly.convertUnits.convertUnitsStrings.mV = "mV".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mV]
+  
+  inline def mVA: mVA_ = "mVA".asInstanceOf[mVA_]
+  
+  inline def mVAR: mVAR_ = "mVAR".asInstanceOf[mVAR_]
+  
+  inline def mVARh: mVARh_ = "mVARh".asInstanceOf[mVARh_]
+  
+  inline def mW: mW_ = "mW".asInstanceOf[mW_]
+  
+  inline def mWh: mWh_ = "mWh".asInstanceOf[mWh_]
+  
+  inline def mcg: typingsJapgolly.convertUnits.convertUnitsStrings.mcg = "mcg".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mcg]
+  
+  inline def mg: typingsJapgolly.convertUnits.convertUnitsStrings.mg = "mg".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mg]
+  
+  inline def mi: typingsJapgolly.convertUnits.convertUnitsStrings.mi = "mi".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mi]
+  
+  inline def mi2: typingsJapgolly.convertUnits.convertUnitsStrings.mi2 = "mi2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mi2]
+  
+  inline def min: typingsJapgolly.convertUnits.convertUnitsStrings.min = "min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.min]
+  
+  inline def minSlashkm: typingsJapgolly.convertUnits.convertUnitsStrings.minSlashkm = "min/km".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.minSlashkm]
+  
+  inline def ml: typingsJapgolly.convertUnits.convertUnitsStrings.ml = "ml".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ml]
+  
+  inline def mlSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.mlSlashs = "ml/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mlSlashs]
+  
+  inline def mm: typingsJapgolly.convertUnits.convertUnitsStrings.mm = "mm".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mm]
+  
+  inline def mm2: typingsJapgolly.convertUnits.convertUnitsStrings.mm2 = "mm2".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mm2]
+  
+  inline def mm3: typingsJapgolly.convertUnits.convertUnitsStrings.mm3 = "mm3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mm3]
+  
+  inline def mm3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.mm3Slashs = "mm3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mm3Slashs]
+  
+  inline def month: typingsJapgolly.convertUnits.convertUnitsStrings.month = "month".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.month]
+  
+  inline def ms: typingsJapgolly.convertUnits.convertUnitsStrings.ms = "ms".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ms]
+  
+  inline def mt: typingsJapgolly.convertUnits.convertUnitsStrings.mt = "mt".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mt]
+  
+  inline def mu: typingsJapgolly.convertUnits.convertUnitsStrings.mu = "mu".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.mu]
+  
+  inline def ns: typingsJapgolly.convertUnits.convertUnitsStrings.ns = "ns".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ns]
+  
+  inline def oz: typingsJapgolly.convertUnits.convertUnitsStrings.oz = "oz".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.oz]
+  
+  inline def pnt: typingsJapgolly.convertUnits.convertUnitsStrings.pnt = "pnt".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.pnt]
+  
+  inline def pntSlashh: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashh = "pnt/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashh]
+  
+  inline def pntSlashmin: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashmin = "pnt/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashmin]
+  
+  inline def pntSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashs = "pnt/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.pntSlashs]
+  
+  inline def ppb: typingsJapgolly.convertUnits.convertUnitsStrings.ppb = "ppb".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ppb]
+  
+  inline def ppm: typingsJapgolly.convertUnits.convertUnitsStrings.ppm = "ppm".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ppm]
+  
+  inline def ppq: typingsJapgolly.convertUnits.convertUnitsStrings.ppq = "ppq".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ppq]
+  
+  inline def ppt: typingsJapgolly.convertUnits.convertUnitsStrings.ppt = "ppt".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.ppt]
+  
+  inline def psi: typingsJapgolly.convertUnits.convertUnitsStrings.psi = "psi".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.psi]
+  
+  inline def qt: typingsJapgolly.convertUnits.convertUnitsStrings.qt = "qt".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.qt]
+  
+  inline def qtSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.qtSlashs = "qt/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.qtSlashs]
+  
+  inline def rad: typingsJapgolly.convertUnits.convertUnitsStrings.rad = "rad".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.rad]
+  
+  inline def radSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.radSlashs = "rad/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.radSlashs]
+  
+  inline def rpm: typingsJapgolly.convertUnits.convertUnitsStrings.rpm = "rpm".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.rpm]
+  
+  inline def s: typingsJapgolly.convertUnits.convertUnitsStrings.s = "s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.s]
+  
+  inline def sSlashft: typingsJapgolly.convertUnits.convertUnitsStrings.sSlashft = "s/ft".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.sSlashft]
+  
+  inline def sSlashm: typingsJapgolly.convertUnits.convertUnitsStrings.sSlashm = "s/m".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.sSlashm]
+  
+  inline def t: typingsJapgolly.convertUnits.convertUnitsStrings.t = "t".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.t]
+  
+  inline def torr: typingsJapgolly.convertUnits.convertUnitsStrings.torr = "torr".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.torr]
+  
+  inline def tsp: typingsJapgolly.convertUnits.convertUnitsStrings.tsp = "tsp".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.tsp]
+  
+  inline def tspSlashs: typingsJapgolly.convertUnits.convertUnitsStrings.tspSlashs = "tsp/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.tspSlashs]
+  
+  inline def week: typingsJapgolly.convertUnits.convertUnitsStrings.week = "week".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.week]
+  
+  inline def yd3: typingsJapgolly.convertUnits.convertUnitsStrings.yd3 = "yd3".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.yd3]
+  
+  inline def yd3Slashh: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashh = "yd3/h".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashh]
+  
+  inline def yd3Slashmin: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashmin = "yd3/min".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashmin]
+  
+  inline def yd3Slashs: typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashs = "yd3/s".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.yd3Slashs]
+  
+  inline def year: typingsJapgolly.convertUnits.convertUnitsStrings.year = "year".asInstanceOf[typingsJapgolly.convertUnits.convertUnitsStrings.year]
 }
-

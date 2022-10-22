@@ -1,50 +1,65 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorRamps extends js.Object {
+/**
+  * This module provides convenience methods for querying color ramps (arrays of colors) used in the smart mapping [color symbology](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html) module.
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html)
+  */
+trait colorRamps extends StObject {
+  
   /**
-    * Returns all color ramps available in smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html).
+    * Returns all color ramps available in smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-support-colorRamps.html#all)
-    *
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#all)
     */
   def all(): js.Array[colorRampsColorRamp]
+  
   /**
-    * Returns the color ramp available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html) matching the given name.
+    * Returns the color ramp available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html) matching the given name.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-support-colorRamps.html#byName)
-    *
-    * @param name The name of the desired color ramp.
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#byName)
     */
   def byName(name: String): colorRampsColorRamp
+  
   /**
-    * Returns the color ramps available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html) matching the given tags.
+    * Returns the color ramps available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html) matching the given tags.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-support-colorRamps.html#byTag)
-    *
-    * @param params See the table below for details of each parameter that may be passed to this function.
-    * @param params.includedTags When provided, only ramps containing all the matching tags will be returned.  **Known Tags:** light | dark | reds | yellows | oranges | greens | blues | purples | pinks | browns | grays | bright | subdued | colorblind-friendly | diverging | sequential | categorical | heatmap
-    * @param params.excludedTags When provided, only ramps missing all the provided tags will be returned.  **Known Tags:** light | dark | reds | yellows | oranges | greens | blues | purples | pinks | browns | grays | bright | subdued | colorblind-friendly | diverging | sequential | categorical | heatmap
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#byTag)
     */
   def byTag(params: colorRampsByTagParams): js.Array[colorRampsColorRamp]
+  
   /**
-    * Returns the names of all color ramps available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html). Any of the returned names can be used to query for color schemes using [colorSchemes.getSchemeByName()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-color.html#getSchemeByName) or the color ramp using [byName()](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-support-colorRamps.html#byName).
+    * Returns the names of all color ramps available in the smartMapping [color schemes](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-symbology-support-colorRamps.html#names)
-    *
-    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-support-colorRamps.html#names)
     */
   def names(): js.Array[String]
 }
-
-@JSGlobal("__esri.colorRamps")
-@js.native
-object colorRamps extends TopLevel[colorRamps]
-
+object colorRamps {
+  
+  inline def apply(
+    all: CallbackTo[js.Array[colorRampsColorRamp]],
+    byName: String => colorRampsColorRamp,
+    byTag: colorRampsByTagParams => js.Array[colorRampsColorRamp],
+    names: CallbackTo[js.Array[String]]
+  ): colorRamps = {
+    val __obj = js.Dynamic.literal(all = all.toJsFn, byName = js.Any.fromFunction1(byName), byTag = js.Any.fromFunction1(byTag), names = names.toJsFn)
+    __obj.asInstanceOf[colorRamps]
+  }
+  
+  extension [Self <: colorRamps](x: Self) {
+    
+    inline def setAll(value: CallbackTo[js.Array[colorRampsColorRamp]]): Self = StObject.set(x, "all", value.toJsFn)
+    
+    inline def setByName(value: String => colorRampsColorRamp): Self = StObject.set(x, "byName", js.Any.fromFunction1(value))
+    
+    inline def setByTag(value: colorRampsByTagParams => js.Array[colorRampsColorRamp]): Self = StObject.set(x, "byTag", js.Any.fromFunction1(value))
+    
+    inline def setNames(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "names", value.toJsFn)
+  }
+}

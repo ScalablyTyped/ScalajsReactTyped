@@ -1,0 +1,39 @@
+package typingsJapgolly.angularForms.anon
+
+import org.scalablytyped.runtime.Instantiable2
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.angularFormsStrings.`[formGroup]`
+import typingsJapgolly.angularForms.angularFormsStrings.ngForm
+import typingsJapgolly.angularForms.mod.AsyncValidator
+import typingsJapgolly.angularForms.mod.AsyncValidatorFn
+import typingsJapgolly.angularForms.mod.FormGroupDirective
+import typingsJapgolly.angularForms.mod.Validator
+import typingsJapgolly.angularForms.mod.ValidatorFn
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait TypeofFormGroupDirective
+  extends StObject
+     with Instantiable2[
+      /* validators */ js.Array[Validator | ValidatorFn], 
+      /* asyncValidators */ js.Array[AsyncValidator | AsyncValidatorFn], 
+      FormGroupDirective
+    ] {
+  
+  var ɵdir: ɵɵDirectiveDeclaration[
+    FormGroupDirective, 
+    `[formGroup]`, 
+    js.Array[ngForm], 
+    `1`, 
+    NgSubmit, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  
+  var ɵfac: ɵɵFactoryDeclaration[FormGroupDirective, js.Tuple2[Self, Self]] = js.native
+}

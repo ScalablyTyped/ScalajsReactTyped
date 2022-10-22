@@ -8,37 +8,45 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.empty
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.error
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.informative
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.warning
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GPMessageProperties extends js.Object {
+trait GPMessageProperties extends StObject {
+  
   /**
     * The geoprocessing message.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GPMessage.html#description)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
     * The geoprocessing message type.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-GPMessage.html#type)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-GPMessage.html#type)
     */
   var `type`: js.UndefOr[
     informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
   ] = js.undefined
 }
-
 object GPMessageProperties {
-  @scala.inline
-  def apply(
-    description: String = null,
-    `type`: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort = null
-  ): GPMessageProperties = {
+  
+  inline def apply(): GPMessageProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPMessageProperties]
   }
+  
+  extension [Self <: GPMessageProperties](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setType(
+      value: informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

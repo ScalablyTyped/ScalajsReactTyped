@@ -1,27 +1,33 @@
 package typingsJapgolly.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.NumberDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThreeSymbolsSet extends /* index */ NumberDictionary[Icon] {
+trait ThreeSymbolsSet
+  extends StObject
+     with /* index */ NumberDictionary[Icon] {
+  
   var greenCheckSymbol: Icon
+  
   var redCrossSymbol: Icon
+  
   var yellowExclamationSymbol: Icon
 }
-
 object ThreeSymbolsSet {
-  @scala.inline
-  def apply(
-    greenCheckSymbol: Icon,
-    redCrossSymbol: Icon,
-    yellowExclamationSymbol: Icon,
-    NumberDictionary: /* index */ NumberDictionary[Icon] = null
-  ): ThreeSymbolsSet = {
+  
+  inline def apply(greenCheckSymbol: Icon, redCrossSymbol: Icon, yellowExclamationSymbol: Icon): ThreeSymbolsSet = {
     val __obj = js.Dynamic.literal(greenCheckSymbol = greenCheckSymbol.asInstanceOf[js.Any], redCrossSymbol = redCrossSymbol.asInstanceOf[js.Any], yellowExclamationSymbol = yellowExclamationSymbol.asInstanceOf[js.Any])
-    if (NumberDictionary != null) js.Dynamic.global.Object.assign(__obj, NumberDictionary)
     __obj.asInstanceOf[ThreeSymbolsSet]
   }
+  
+  extension [Self <: ThreeSymbolsSet](x: Self) {
+    
+    inline def setGreenCheckSymbol(value: Icon): Self = StObject.set(x, "greenCheckSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setRedCrossSymbol(value: Icon): Self = StObject.set(x, "redCrossSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setYellowExclamationSymbol(value: Icon): Self = StObject.set(x, "yellowExclamationSymbol", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,37 +1,51 @@
 package typingsJapgolly.braintreeWebDropIn.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.braintreeWebDropIn.braintreeWebDropInStrings.AndroidPayCard
-import typingsJapgolly.braintreeWebDropIn.braintreeWebDropInStrings.ApplePayCard
-import typingsJapgolly.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
-import typingsJapgolly.braintreeWebDropIn.braintreeWebDropInStrings.PayPalAccount
-import typingsJapgolly.braintreeWebDropIn.braintreeWebDropInStrings.VenmoAccount
+import typingsJapgolly.braintreeWebDropIn.anon.BillingAddress
+import typingsJapgolly.braintreeWebDropIn.anon.Bin
+import typingsJapgolly.braintreeWebDropIn.anon.CardHolderName
+import typingsJapgolly.braintreeWebDropIn.anon.CardType
+import typingsJapgolly.braintreeWebDropIn.anon.Username
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentMethodPayload
-  extends /* key */ StringDictionary[js.Any] {
-  var details: js.Object
-  var deviceData: String | Null
-  var nonce: String
-  var `type`: CreditCard | PayPalAccount | VenmoAccount | AndroidPayCard | ApplePayCard
-}
-
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.braintreeWebDropIn.mod.applePayPaymentMethodPayload
+  - typingsJapgolly.braintreeWebDropIn.mod.cardPaymentMethodPayload
+  - typingsJapgolly.braintreeWebDropIn.mod.googlePayPaymentMethodPayload
+  - typingsJapgolly.braintreeWebDropIn.mod.paypalPaymentMethodPayload
+  - typingsJapgolly.braintreeWebDropIn.mod.venmoPaymentMethodPayload
+*/
+trait PaymentMethodPayload extends StObject
 object PaymentMethodPayload {
-  @scala.inline
-  def apply(
-    details: js.Object,
-    nonce: String,
-    `type`: CreditCard | PayPalAccount | VenmoAccount | AndroidPayCard | ApplePayCard,
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    deviceData: String = null
-  ): PaymentMethodPayload = {
+  
+  inline def applePayPaymentMethodPayload(binData: binData, description: String, details: CardHolderName, nonce: String): typingsJapgolly.braintreeWebDropIn.mod.applePayPaymentMethodPayload = {
+    val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ApplePayCard")
+    __obj.asInstanceOf[typingsJapgolly.braintreeWebDropIn.mod.applePayPaymentMethodPayload]
+  }
+  
+  inline def cardPaymentMethodPayload(binData: binData, details: Bin, nonce: String): typingsJapgolly.braintreeWebDropIn.mod.cardPaymentMethodPayload = {
+    val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CreditCard")
+    __obj.asInstanceOf[typingsJapgolly.braintreeWebDropIn.mod.cardPaymentMethodPayload]
+  }
+  
+  inline def googlePayPaymentMethodPayload(binData: binData, details: CardType, nonce: String): typingsJapgolly.braintreeWebDropIn.mod.googlePayPaymentMethodPayload = {
+    val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AndroidPayCard")
+    __obj.asInstanceOf[typingsJapgolly.braintreeWebDropIn.mod.googlePayPaymentMethodPayload]
+  }
+  
+  inline def paypalPaymentMethodPayload(details: BillingAddress, nonce: String): typingsJapgolly.braintreeWebDropIn.mod.paypalPaymentMethodPayload = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (deviceData != null) __obj.updateDynamic("deviceData")(deviceData.asInstanceOf[js.Any])
-    __obj.asInstanceOf[PaymentMethodPayload]
+    __obj.updateDynamic("type")("PayPalAccount")
+    __obj.asInstanceOf[typingsJapgolly.braintreeWebDropIn.mod.paypalPaymentMethodPayload]
+  }
+  
+  inline def venmoPaymentMethodPayload(details: Username, nonce: String): typingsJapgolly.braintreeWebDropIn.mod.venmoPaymentMethodPayload = {
+    val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VenmoAccount")
+    __obj.asInstanceOf[typingsJapgolly.braintreeWebDropIn.mod.venmoPaymentMethodPayload]
   }
 }
-

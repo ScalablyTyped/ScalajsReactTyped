@@ -1,12 +1,14 @@
 package typingsJapgolly.dataDriven
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("data-driven", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[T](data: js.Array[T], callback: js.Function0[_]): js.Any = js.native
+object mod {
+  
+  inline def apply[T](data: js.Array[T], callback: js.Function0[Any]): Any = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("data-driven", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

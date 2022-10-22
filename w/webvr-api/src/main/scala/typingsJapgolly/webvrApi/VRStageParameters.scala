@@ -1,27 +1,36 @@
 package typingsJapgolly.webvrApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VRStageParameters extends js.Object {
-  var sittingToStandingTransform: js.UndefOr[scala.scalajs.js.typedarray.Float32Array] = js.undefined
+trait VRStageParameters extends StObject {
+  
+  var sittingToStandingTransform: js.UndefOr[js.typedarray.Float32Array] = js.undefined
+  
   var sizeX: js.UndefOr[Double] = js.undefined
+  
   var sizeY: js.UndefOr[Double] = js.undefined
 }
-
 object VRStageParameters {
-  @scala.inline
-  def apply(
-    sittingToStandingTransform: scala.scalajs.js.typedarray.Float32Array = null,
-    sizeX: Int | Double = null,
-    sizeY: Int | Double = null
-  ): VRStageParameters = {
+  
+  inline def apply(): VRStageParameters = {
     val __obj = js.Dynamic.literal()
-    if (sittingToStandingTransform != null) __obj.updateDynamic("sittingToStandingTransform")(sittingToStandingTransform.asInstanceOf[js.Any])
-    if (sizeX != null) __obj.updateDynamic("sizeX")(sizeX.asInstanceOf[js.Any])
-    if (sizeY != null) __obj.updateDynamic("sizeY")(sizeY.asInstanceOf[js.Any])
     __obj.asInstanceOf[VRStageParameters]
   }
+  
+  extension [Self <: VRStageParameters](x: Self) {
+    
+    inline def setSittingToStandingTransform(value: js.typedarray.Float32Array): Self = StObject.set(x, "sittingToStandingTransform", value.asInstanceOf[js.Any])
+    
+    inline def setSittingToStandingTransformUndefined: Self = StObject.set(x, "sittingToStandingTransform", js.undefined)
+    
+    inline def setSizeX(value: Double): Self = StObject.set(x, "sizeX", value.asInstanceOf[js.Any])
+    
+    inline def setSizeXUndefined: Self = StObject.set(x, "sizeX", js.undefined)
+    
+    inline def setSizeY(value: Double): Self = StObject.set(x, "sizeY", value.asInstanceOf[js.Any])
+    
+    inline def setSizeYUndefined: Self = StObject.set(x, "sizeY", js.undefined)
+  }
 }
-

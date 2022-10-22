@@ -1,63 +1,50 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreview
-import typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewImage
-import typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps
-import typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewStyleProps
-import typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreview
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreviewImage
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreviewProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreviewStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardPreviewDottypesMod.IDocumentCardPreviewStyles
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentCardPreview {
-  def apply(
-    previewImages: js.Array[IDocumentCardPreviewImage],
-    className: String = null,
-    componentRef: IRefObject[IDocumentCardPreview] = null,
-    getOverflowDocumentCountText: /* overflowCount */ Double => CallbackTo[String] = null,
-    styles: IStyleFunctionOrObject[IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IDocumentCardPreviewProps, 
-    MountedWithRawType[
-      IDocumentCardPreviewProps, 
-      js.Object, 
-      RawMounted[IDocumentCardPreviewProps, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal(previewImages = previewImages.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (getOverflowDocumentCountText != null) __obj.updateDynamic("getOverflowDocumentCountText")(js.Any.fromFunction1((t0: /* overflowCount */ scala.Double) => getOverflowDocumentCountText(t0).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.documentCardPreviewTypesMod.IDocumentCardPreviewProps])(children: _*)
+  inline def apply(previewImages: js.Array[IDocumentCardPreviewImage]): Builder = {
+    val __props = js.Dynamic.literal(previewImages = previewImages.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDocumentCardPreviewProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "DocumentCardPreview")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDocumentCardPreview]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDocumentCardPreview | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDocumentCardPreview | Null) => value(t0).runNow()))
+    
+    inline def getOverflowDocumentCountText(value: /* overflowCount */ Double => String): this.type = set("getOverflowDocumentCountText", js.Any.fromFunction1(value))
+    
+    inline def styles(value: IStyleFunctionOrObject[IDocumentCardPreviewStyleProps, IDocumentCardPreviewStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDocumentCardPreviewStyleProps => DeepPartial[IDocumentCardPreviewStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDocumentCardPreviewProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

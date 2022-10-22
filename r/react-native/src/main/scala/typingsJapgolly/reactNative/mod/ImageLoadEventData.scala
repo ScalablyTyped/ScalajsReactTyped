@@ -1,20 +1,23 @@
 package typingsJapgolly.reactNative.mod
 
-import typingsJapgolly.reactNative.AnonUrl
+import typingsJapgolly.reactNative.anon.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageLoadEventData extends ImageLoadEventDataAndroid {
-  var source: AnonUrl
+trait ImageLoadEventData extends StObject {
+  
+  var source: Uri
 }
-
 object ImageLoadEventData {
-  @scala.inline
-  def apply(source: AnonUrl, uri: String = null): ImageLoadEventData = {
+  
+  inline def apply(source: Uri): ImageLoadEventData = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (uri != null) __obj.updateDynamic("uri")(uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageLoadEventData]
   }
+  
+  extension [Self <: ImageLoadEventData](x: Self) {
+    
+    inline def setSource(value: Uri): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.consola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("consola", "BrowserReporter")
 @js.native
-class BrowserReporter () extends ConsolaReporter {
+open class BrowserReporter ()
+  extends StObject
+     with ConsolaReporter {
+  
   /* CompleteClass */
-  override def log(logObj: ConsolaLogObject, args: ConsolaReporterArgs): Unit = js.native
+  override def log(logObj: ConsolaReporterLogObject, args: ConsolaReporterArgs): Unit = js.native
 }
-

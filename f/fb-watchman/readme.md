@@ -11,9 +11,9 @@ Bindings for the Watchman file watching service
 | Full name          | fb-watchman |
 | Keywords           | facebook, watchman, file, watch, watcher, watching, fs.watch, fswatcher, fs, glob, utility |
 | # releases         | 2 |
-| # dependents       | 106 |
-| # downloads        | 246341966 |
-| # stars            | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 6.7461376E7 |
+| # stars            | 11144.0 |
 
 ## Links
 - [Homepage](https://facebook.github.io/watchman/)

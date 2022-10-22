@@ -1,14 +1,13 @@
-package typingsJapgolly.phaser
+package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object MatterJS {
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.phaser.AnonName
-    - typingsJapgolly.phaser.AnonVersion
-    - java.lang.String
-  */
-  type Dependency = typingsJapgolly.phaser.MatterJS._Dependency | java.lang.String
-}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.phaser.anon.Name
+  - typingsJapgolly.phaser.anon.Version
+  - java.lang.String
+*/
+type Dependency = _Dependency | String

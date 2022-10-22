@@ -1,9 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.closenessCentralityNormalized
@@ -12,26 +11,32 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#eles.betweennessCentrality
   */
-trait SearchBetweennessOptions extends js.Object {
+trait SearchBetweennessOptions extends StObject {
+  
   /**
     * A boolean indicating whether the directed indegree and outdegree centrality is calculated (true) or
     * whether the undirected centrality is calculated (false, default).
     */
   var directed: js.UndefOr[Boolean] = js.undefined
+  
   /**  A function that returns the weight for the edge. */
   var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.undefined
 }
-
 object SearchBetweennessOptions {
-  @scala.inline
-  def apply(
-    directed: js.UndefOr[Boolean] = js.undefined,
-    weight: /* edge */ EdgeSingular => CallbackTo[Double] = null
-  ): SearchBetweennessOptions = {
+  
+  inline def apply(): SearchBetweennessOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed.asInstanceOf[js.Any])
-    if (weight != null) __obj.updateDynamic("weight")(js.Any.fromFunction1((t0: /* edge */ typingsJapgolly.cytoscape.mod.EdgeSingular) => weight(t0).runNow()))
     __obj.asInstanceOf[SearchBetweennessOptions]
   }
+  
+  extension [Self <: SearchBetweennessOptions](x: Self) {
+    
+    inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
+    
+    inline def setDirectedUndefined: Self = StObject.set(x, "directed", js.undefined)
+    
+    inline def setWeight(value: /* edge */ EdgeSingular => Double): Self = StObject.set(x, "weight", js.Any.fromFunction1(value))
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

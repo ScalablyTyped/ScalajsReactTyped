@@ -1,24 +1,18 @@
 package typingsJapgolly.chromecastCafSender
 
-import japgolly.scalajs.react.Callback
+import typingsJapgolly.chromecastCafSender.anon.Typeofcast
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Global object
 ////////////////////
-trait Window extends js.Object {
-  var cast: Typeofcast
-  def __onGCastApiAvailable(available: Boolean): Unit
+@js.native
+trait Window extends StObject {
+  
+  def __onGCastApiAvailable(available: Boolean): Unit = js.native
+  def __onGCastApiAvailable(available: Boolean, reason: String): Unit = js.native
+  
+  var cast: Typeofcast = js.native
 }
-
-object Window {
-  @scala.inline
-  def apply(__onGCastApiAvailable: Boolean => Callback, cast: Typeofcast): Window = {
-    val __obj = js.Dynamic.literal(cast = cast.asInstanceOf[js.Any])
-    __obj.updateDynamic("__onGCastApiAvailable")(js.Any.fromFunction1((t0: scala.Boolean) => __onGCastApiAvailable(t0).runNow()))
-    __obj.asInstanceOf[Window]
-  }
-}
-

@@ -1,14 +1,16 @@
 package typingsJapgolly.numSort
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("num-sort", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val ascending: NumberComparator = js.native
-  val descending: NumberComparator = js.native
-  type NumberComparator = js.Function2[/* left */ Double, /* right */ Double, Double]
+object mod {
+  
+  @JSImport("num-sort", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def numberSortAscending(left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSortAscending")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def numberSortDescending(left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("numberSortDescending")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

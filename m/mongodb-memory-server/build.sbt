@@ -1,20 +1,19 @@
 organization := "org.scalablytyped.japgolly"
 name := "mongodb-memory-server"
-version := "6.2.4-c3a792"
-scalaVersion := "2.13.1"
+version := "8.9.3-f7eb50"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "bson" % "4.0-dt-20200225Z-3bc22a",
-  "org.scalablytyped.japgolly" %%% "https-proxy-agent" % "2.2.2-10357d",
-  "org.scalablytyped.japgolly" %%% "mongodb" % "3.5-dt-20200302Z-b1f491",
-  "org.scalablytyped.japgolly" %%% "mongodb-memory-server-core" % "6.2.4-45e6be",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "tmp" % "0.1-dt-20200227Z-626da7")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "async-mutex" % "0.4.0-8595e7",
+  "org.scalablytyped.japgolly" %%% "bson" % "4.7.0-dd0f2b",
+  "org.scalablytyped.japgolly" %%% "buffer" % "6.0.3-40f891",
+  "org.scalablytyped.japgolly" %%% "mongodb" % "4.10.0-109932",
+  "org.scalablytyped.japgolly" %%% "mongodb-memory-server-core" % "8.9.3-411072",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "tmp" % "0.2-dt-20220624Z-19ac12")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

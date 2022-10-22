@@ -1,22 +1,27 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetReplicaOptions extends js.Object {
+trait GetReplicaOptions extends StObject {
+  
   /**
     * The index for which replica you wish to retrieve this value from, or if undefined, use the value from the first server that replies.
     */
   var index: js.UndefOr[Double] = js.undefined
 }
-
 object GetReplicaOptions {
-  @scala.inline
-  def apply(index: Int | Double = null): GetReplicaOptions = {
+  
+  inline def apply(): GetReplicaOptions = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetReplicaOptions]
   }
+  
+  extension [Self <: GetReplicaOptions](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+  }
 }
-

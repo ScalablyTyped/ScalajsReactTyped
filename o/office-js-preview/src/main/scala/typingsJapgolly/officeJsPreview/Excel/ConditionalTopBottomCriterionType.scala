@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalTopBottomCriterionType extends js.Object
-
+sealed trait ConditionalTopBottomCriterionType extends StObject
 /**
-  *
   * Represents the criteria for the above/below average conditional format type.
   *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalTopBottomCriterionType")
 @js.native
-object ConditionalTopBottomCriterionType extends js.Object {
+object ConditionalTopBottomCriterionType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait bottomItems extends ConditionalTopBottomCriterionType
+  sealed trait bottomItems
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait bottomPercent extends ConditionalTopBottomCriterionType
+  sealed trait bottomPercent
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalTopBottomCriterionType
+  sealed trait invalid
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait topItems extends ConditionalTopBottomCriterionType
+  sealed trait topItems
+    extends StObject
+       with ConditionalTopBottomCriterionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait topPercent extends ConditionalTopBottomCriterionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalTopBottomCriterionType with String] = js.native
-  /* "BottomItems" */ @js.native
-  object bottomItems extends TopLevel[bottomItems with String]
-  
-  /* "BottomPercent" */ @js.native
-  object bottomPercent extends TopLevel[bottomPercent with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "TopItems" */ @js.native
-  object topItems extends TopLevel[topItems with String]
-  
-  /* "TopPercent" */ @js.native
-  object topPercent extends TopLevel[topPercent with String]
-  
+  sealed trait topPercent
+    extends StObject
+       with ConditionalTopBottomCriterionType
 }
-

@@ -1,62 +1,60 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RosterItemEvent extends js.Object
-
+sealed trait RosterItemEvent extends StObject
 @JSImport("voximplant-websdk", "RosterItemEvent")
 @js.native
-object RosterItemEvent extends js.Object {
-  /**
-  		*	Roster item added
-  		*/
-  @js.native
-  sealed trait Added extends RosterItemEvent
-  
-  /**
-  		*	Roster item removed
-  		*/
-  @js.native
-  sealed trait Removed extends RosterItemEvent
-  
-  /**
-  		*	User subscribed on your status updates (authorized the request)
-  		*/
-  @js.native
-  sealed trait Subscribed extends RosterItemEvent
-  
-  /**
-  		*	User unsubscribed from your status updates (didn't authorize the request)
-  		*/
-  @js.native
-  sealed trait Unsubscribed extends RosterItemEvent
-  
-  /**
-  		*	Roster item updated
-  		*/
-  @js.native
-  sealed trait Updated extends RosterItemEvent
+object RosterItemEvent extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RosterItemEvent with Double] = js.native
-  /* 0 */ @js.native
-  object Added extends TopLevel[Added with Double]
+  def apply(value: Double): js.UndefOr[RosterItemEvent & Double] = js.native
   
-  /* 1 */ @js.native
-  object Removed extends TopLevel[Removed with Double]
+  /**
+    *    Roster item added
+    */
+  @js.native
+  sealed trait Added
+    extends StObject
+       with RosterItemEvent
+  /* 0 */ val Added: typingsJapgolly.voximplantWebsdk.mod.RosterItemEvent.Added & Double = js.native
   
-  /* 2 */ @js.native
-  object Subscribed extends TopLevel[Subscribed with Double]
+  /**
+    *    Roster item removed
+    */
+  @js.native
+  sealed trait Removed
+    extends StObject
+       with RosterItemEvent
+  /* 1 */ val Removed: typingsJapgolly.voximplantWebsdk.mod.RosterItemEvent.Removed & Double = js.native
   
-  /* 3 */ @js.native
-  object Unsubscribed extends TopLevel[Unsubscribed with Double]
+  /**
+    *    User subscribed on your status updates (authorized the request)
+    */
+  @js.native
+  sealed trait Subscribed
+    extends StObject
+       with RosterItemEvent
+  /* 2 */ val Subscribed: typingsJapgolly.voximplantWebsdk.mod.RosterItemEvent.Subscribed & Double = js.native
   
-  /* 4 */ @js.native
-  object Updated extends TopLevel[Updated with Double]
+  /**
+    *    User unsubscribed from your status updates (didn't authorize the request)
+    */
+  @js.native
+  sealed trait Unsubscribed
+    extends StObject
+       with RosterItemEvent
+  /* 3 */ val Unsubscribed: typingsJapgolly.voximplantWebsdk.mod.RosterItemEvent.Unsubscribed & Double = js.native
   
+  /**
+    *    Roster item updated
+    */
+  @js.native
+  sealed trait Updated
+    extends StObject
+       with RosterItemEvent
+  /* 4 */ val Updated: typingsJapgolly.voximplantWebsdk.mod.RosterItemEvent.Updated & Double = js.native
 }
-

@@ -1,26 +1,35 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.ContactResult
-  * @classdesc Object holding the result of a contact between two Entities.
-  * @description Create a new ContactResult.
-  * @param {pc.Entity} other - The entity that was involved in the contact with this entity.
-  * @param {pc.ContactPoint[]} contacts - An array of ContactPoints with the other entity.
-  * @property {pc.Entity} other The entity that was involved in the contact with this entity.
-  * @property {pc.ContactPoint[]} contacts An array of ContactPoints with the other entity.
+  * Object holding the result of a contact between two Entities.
   */
 @JSImport("playcanvas", "ContactResult")
 @js.native
-class ContactResult protected ()
-  extends typingsJapgolly.playcanvas.pc.ContactResult {
-  def this(
-    other: typingsJapgolly.playcanvas.pc.Entity,
-    contacts: js.Array[typingsJapgolly.playcanvas.pc.ContactPoint]
-  ) = this()
+open class ContactResult protected () extends StObject {
+  /**
+    * Create a new ContactResult instance.
+    *
+    * @param {Entity} other - The entity that was involved in the contact with this entity.
+    * @param {ContactPoint[]} contacts - An array of ContactPoints with the other entity.
+    * @hideconstructor
+    */
+  def this(other: Entity, contacts: js.Array[ContactPoint]) = this()
+  
+  /**
+    * An array of ContactPoints with the other entity.
+    *
+    * @type {ContactPoint[]}
+    */
+  var contacts: js.Array[ContactPoint] = js.native
+  
+  /**
+    * The entity that was involved in the contact with this entity.
+    *
+    * @type {Entity}
+    */
+  var other: Entity = js.native
 }
-

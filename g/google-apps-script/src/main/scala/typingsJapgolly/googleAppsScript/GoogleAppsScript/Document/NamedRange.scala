@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Range that has a name and ID to allow later retrieval. Names are not
@@ -24,27 +24,36 @@ import scala.scalajs.js.annotation._
   *     }
   *     doc.addNamedRange('myUniquePrefix-tables', rangeBuilder.build());
   */
-trait NamedRange extends js.Object {
+trait NamedRange extends StObject {
+  
   def getId(): String
+  
   def getName(): String
+  
   def getRange(): Range
+  
   def remove(): Unit
 }
-
 object NamedRange {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getId: CallbackTo[String],
     getName: CallbackTo[String],
     getRange: CallbackTo[Range],
     remove: Callback
   ): NamedRange = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getRange")(getRange.toJsFn)
-    __obj.updateDynamic("remove")(remove.toJsFn)
+    val __obj = js.Dynamic.literal(getId = getId.toJsFn, getName = getName.toJsFn, getRange = getRange.toJsFn, remove = remove.toJsFn)
     __obj.asInstanceOf[NamedRange]
   }
+  
+  extension [Self <: NamedRange](x: Self) {
+    
+    inline def setGetId(value: CallbackTo[String]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "getName", value.toJsFn)
+    
+    inline def setGetRange(value: CallbackTo[Range]): Self = StObject.set(x, "getRange", value.toJsFn)
+    
+    inline def setRemove(value: Callback): Self = StObject.set(x, "remove", value.toJsFn)
+  }
 }
-

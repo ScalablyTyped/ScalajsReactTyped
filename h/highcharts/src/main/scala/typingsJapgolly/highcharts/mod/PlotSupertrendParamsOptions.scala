@@ -1,14 +1,18 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotSupertrendParamsOptions extends js.Object {
+trait PlotSupertrendParamsOptions extends StObject {
+  
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) Multiplier for Supertrend Indicator.
     */
   var multiplier: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator Supertrend Indicator
     * calculations. This is the number of data points which are taken into
@@ -16,14 +20,25 @@ trait PlotSupertrendParamsOptions extends js.Object {
     */
   var period: js.UndefOr[Double] = js.undefined
 }
-
 object PlotSupertrendParamsOptions {
-  @scala.inline
-  def apply(multiplier: Int | Double = null, period: Int | Double = null): PlotSupertrendParamsOptions = {
+  
+  inline def apply(): PlotSupertrendParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (multiplier != null) __obj.updateDynamic("multiplier")(multiplier.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSupertrendParamsOptions]
   }
+  
+  extension [Self <: PlotSupertrendParamsOptions](x: Self) {
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setMultiplier(value: Double): Self = StObject.set(x, "multiplier", value.asInstanceOf[js.Any])
+    
+    inline def setMultiplierUndefined: Self = StObject.set(x, "multiplier", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+  }
 }
-

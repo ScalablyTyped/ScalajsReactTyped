@@ -1,21 +1,30 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetUserProfilePhotosOptions extends js.Object {
+trait GetUserProfilePhotosOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
 }
-
 object GetUserProfilePhotosOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, offset: Int | Double = null): GetUserProfilePhotosOptions = {
+  
+  inline def apply(): GetUserProfilePhotosOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserProfilePhotosOptions]
   }
+  
+  extension [Self <: GetUserProfilePhotosOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+  }
 }
-

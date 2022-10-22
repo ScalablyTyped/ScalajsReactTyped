@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.change
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.blur
   - typingsJapgolly.reactNative.reactNativeStrings.focus
 */
-trait AppStateEvent extends js.Object
-
+trait AppStateEvent extends StObject
 object AppStateEvent {
-  @scala.inline
-  def blur: typingsJapgolly.reactNative.reactNativeStrings.blur = this.cast("blur")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def change: typingsJapgolly.reactNative.reactNativeStrings.change = this.cast("change")
-  @scala.inline
-  def focus: typingsJapgolly.reactNative.reactNativeStrings.focus = this.cast("focus")
-  @scala.inline
-  def memoryWarning: typingsJapgolly.reactNative.reactNativeStrings.memoryWarning = this.cast("memoryWarning")
+  
+  inline def blur: typingsJapgolly.reactNative.reactNativeStrings.blur = "blur".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.blur]
+  
+  inline def change: typingsJapgolly.reactNative.reactNativeStrings.change = "change".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.change]
+  
+  inline def focus: typingsJapgolly.reactNative.reactNativeStrings.focus = "focus".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.focus]
+  
+  inline def memoryWarning: typingsJapgolly.reactNative.reactNativeStrings.memoryWarning = "memoryWarning".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.memoryWarning]
 }
-

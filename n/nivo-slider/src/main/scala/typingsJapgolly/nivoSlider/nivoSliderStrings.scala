@@ -1,90 +1,105 @@
 package typingsJapgolly.nivoSlider
 
 import typingsJapgolly.nivoSlider.mod.EffectType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nivoSliderStrings {
-  @js.native
-  sealed trait boxRain extends EffectType
   
   @js.native
-  sealed trait boxRainGrow extends EffectType
+  sealed trait boxRain
+    extends StObject
+       with EffectType
+  inline def boxRain: boxRain = "boxRain".asInstanceOf[boxRain]
   
   @js.native
-  sealed trait boxRainGrowReverse extends EffectType
+  sealed trait boxRainGrow
+    extends StObject
+       with EffectType
+  inline def boxRainGrow: boxRainGrow = "boxRainGrow".asInstanceOf[boxRainGrow]
   
   @js.native
-  sealed trait boxRainReverse extends EffectType
+  sealed trait boxRainGrowReverse
+    extends StObject
+       with EffectType
+  inline def boxRainGrowReverse: boxRainGrowReverse = "boxRainGrowReverse".asInstanceOf[boxRainGrowReverse]
   
   @js.native
-  sealed trait boxRandom extends EffectType
+  sealed trait boxRainReverse
+    extends StObject
+       with EffectType
+  inline def boxRainReverse: boxRainReverse = "boxRainReverse".asInstanceOf[boxRainReverse]
   
   @js.native
-  sealed trait fade extends EffectType
+  sealed trait boxRandom
+    extends StObject
+       with EffectType
+  inline def boxRandom: boxRandom = "boxRandom".asInstanceOf[boxRandom]
   
   @js.native
-  sealed trait fold extends EffectType
+  sealed trait fade
+    extends StObject
+       with EffectType
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait random extends EffectType
+  sealed trait fold
+    extends StObject
+       with EffectType
+  inline def fold: fold = "fold".asInstanceOf[fold]
   
   @js.native
-  sealed trait sliceDown extends EffectType
+  sealed trait random
+    extends StObject
+       with EffectType
+  inline def random: random = "random".asInstanceOf[random]
   
   @js.native
-  sealed trait sliceDownLeft extends EffectType
+  sealed trait sliceDown
+    extends StObject
+       with EffectType
+  inline def sliceDown: sliceDown = "sliceDown".asInstanceOf[sliceDown]
   
   @js.native
-  sealed trait sliceUp extends EffectType
+  sealed trait sliceDownLeft
+    extends StObject
+       with EffectType
+  inline def sliceDownLeft: sliceDownLeft = "sliceDownLeft".asInstanceOf[sliceDownLeft]
   
   @js.native
-  sealed trait sliceUpDown extends EffectType
+  sealed trait sliceUp
+    extends StObject
+       with EffectType
+  inline def sliceUp: sliceUp = "sliceUp".asInstanceOf[sliceUp]
   
   @js.native
-  sealed trait sliceUpDownLeft extends EffectType
+  sealed trait sliceUpDown
+    extends StObject
+       with EffectType
+  inline def sliceUpDown: sliceUpDown = "sliceUpDown".asInstanceOf[sliceUpDown]
   
   @js.native
-  sealed trait sliceUpLeft extends EffectType
+  sealed trait sliceUpDownLeft
+    extends StObject
+       with EffectType
+  inline def sliceUpDownLeft: sliceUpDownLeft = "sliceUpDownLeft".asInstanceOf[sliceUpDownLeft]
   
   @js.native
-  sealed trait slideInLeft extends EffectType
+  sealed trait sliceUpLeft
+    extends StObject
+       with EffectType
+  inline def sliceUpLeft: sliceUpLeft = "sliceUpLeft".asInstanceOf[sliceUpLeft]
   
   @js.native
-  sealed trait slideInRight extends EffectType
+  sealed trait slideInLeft
+    extends StObject
+       with EffectType
+  inline def slideInLeft: slideInLeft = "slideInLeft".asInstanceOf[slideInLeft]
   
-  @scala.inline
-  def boxRain: boxRain = "boxRain".asInstanceOf[boxRain]
-  @scala.inline
-  def boxRainGrow: boxRainGrow = "boxRainGrow".asInstanceOf[boxRainGrow]
-  @scala.inline
-  def boxRainGrowReverse: boxRainGrowReverse = "boxRainGrowReverse".asInstanceOf[boxRainGrowReverse]
-  @scala.inline
-  def boxRainReverse: boxRainReverse = "boxRainReverse".asInstanceOf[boxRainReverse]
-  @scala.inline
-  def boxRandom: boxRandom = "boxRandom".asInstanceOf[boxRandom]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def fold: fold = "fold".asInstanceOf[fold]
-  @scala.inline
-  def random: random = "random".asInstanceOf[random]
-  @scala.inline
-  def sliceDown: sliceDown = "sliceDown".asInstanceOf[sliceDown]
-  @scala.inline
-  def sliceDownLeft: sliceDownLeft = "sliceDownLeft".asInstanceOf[sliceDownLeft]
-  @scala.inline
-  def sliceUp: sliceUp = "sliceUp".asInstanceOf[sliceUp]
-  @scala.inline
-  def sliceUpDown: sliceUpDown = "sliceUpDown".asInstanceOf[sliceUpDown]
-  @scala.inline
-  def sliceUpDownLeft: sliceUpDownLeft = "sliceUpDownLeft".asInstanceOf[sliceUpDownLeft]
-  @scala.inline
-  def sliceUpLeft: sliceUpLeft = "sliceUpLeft".asInstanceOf[sliceUpLeft]
-  @scala.inline
-  def slideInLeft: slideInLeft = "slideInLeft".asInstanceOf[slideInLeft]
-  @scala.inline
-  def slideInRight: slideInRight = "slideInRight".asInstanceOf[slideInRight]
+  @js.native
+  sealed trait slideInRight
+    extends StObject
+       with EffectType
+  inline def slideInRight: slideInRight = "slideInRight".asInstanceOf[slideInRight]
 }
-

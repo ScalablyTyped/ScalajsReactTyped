@@ -1,32 +1,45 @@
 package typingsJapgolly.webappsecCredentialManagement
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://www.w3.org/TR/credential-management-1/#dictdef-federatedcredentialrequestoptions}
   */
-trait FederatedCredentialRequestOptions extends js.Object {
+trait FederatedCredentialRequestOptions extends StObject {
+  
   /**
     * An array of protocol identifiers.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredentialrequestoptions-protocols}
     */
   var protocols: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * An array of federation identifiers.
     * @see {@link https://www.w3.org/TR/credential-management-1/#dom-federatedcredentialrequestoptions-providers}
     */
   var providers: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object FederatedCredentialRequestOptions {
-  @scala.inline
-  def apply(protocols: js.Array[String] = null, providers: js.Array[String] = null): FederatedCredentialRequestOptions = {
+  
+  inline def apply(): FederatedCredentialRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (protocols != null) __obj.updateDynamic("protocols")(protocols.asInstanceOf[js.Any])
-    if (providers != null) __obj.updateDynamic("providers")(providers.asInstanceOf[js.Any])
     __obj.asInstanceOf[FederatedCredentialRequestOptions]
   }
+  
+  extension [Self <: FederatedCredentialRequestOptions](x: Self) {
+    
+    inline def setProtocols(value: js.Array[String]): Self = StObject.set(x, "protocols", value.asInstanceOf[js.Any])
+    
+    inline def setProtocolsUndefined: Self = StObject.set(x, "protocols", js.undefined)
+    
+    inline def setProtocolsVarargs(value: String*): Self = StObject.set(x, "protocols", js.Array(value*))
+    
+    inline def setProviders(value: js.Array[String]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    
+    inline def setProvidersVarargs(value: String*): Self = StObject.set(x, "providers", js.Array(value*))
+  }
 }
-

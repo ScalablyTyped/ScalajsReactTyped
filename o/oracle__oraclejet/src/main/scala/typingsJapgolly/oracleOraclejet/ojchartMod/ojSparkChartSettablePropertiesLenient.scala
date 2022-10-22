@@ -1,8 +1,8 @@
 package typingsJapgolly.oracleOraclejet.ojchartMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.Anon0
-import typingsJapgolly.oracleOraclejet.AnonLabelAndValue
+import typingsJapgolly.oracleOraclejet.anon.LabelAndValue
+import typingsJapgolly.oracleOraclejet.anon.`0`
 import typingsJapgolly.oracleOraclejet.ojchartMod.ojSparkChart.ReferenceObject
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.DataProvider
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.area
@@ -32,111 +32,200 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.straight
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.triangleDown
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.triangleUp
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.zero
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojchart.ojSparkChartSettableProperties<K, D>> */
 trait ojSparkChartSettablePropertiesLenient[K, D]
-  extends /* key */ StringDictionary[js.Any] {
-  var animationDuration: js.UndefOr[Double] = js.undefined
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
+  var animationDuration: js.UndefOr[Double | Null] = js.undefined
+  
   var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
+  
   var animationOnDisplay: js.UndefOr[auto | none] = js.undefined
+  
   var areaColor: js.UndefOr[String] = js.undefined
+  
   var areaSvgClassName: js.UndefOr[String] = js.undefined
+  
   var areaSvgStyle: js.UndefOr[js.Object] = js.undefined
+  
   var as: js.UndefOr[String] = js.undefined
+  
   var barGapRatio: js.UndefOr[Double] = js.undefined
+  
   var baselineScaling: js.UndefOr[zero | min] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[DataProvider[K, D]] = js.undefined
+  
+  var data: js.UndefOr[(DataProvider[K, D]) | Null] = js.undefined
+  
   var firstColor: js.UndefOr[String] = js.undefined
+  
   var highColor: js.UndefOr[String] = js.undefined
+  
   var lastColor: js.UndefOr[String] = js.undefined
+  
   var lineStyle: js.UndefOr[dotted | dashed | solid] = js.undefined
+  
   var lineType: js.UndefOr[
     curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight
   ] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   var lowColor: js.UndefOr[String] = js.undefined
+  
   var markerShape: js.UndefOr[
     auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String
   ] = js.undefined
+  
   var markerSize: js.UndefOr[Double] = js.undefined
+  
   var referenceObjects: js.UndefOr[js.Array[ReferenceObject]] = js.undefined
+  
   var svgClassName: js.UndefOr[String] = js.undefined
+  
   var svgStyle: js.UndefOr[js.Object] = js.undefined
-  var tooltip: js.UndefOr[Anon0] = js.undefined
+  
+  var tooltip: js.UndefOr[`0`] = js.undefined
+  
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
+  
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
+  
   var `type`: js.UndefOr[area | lineWithArea | bar | line] = js.undefined
+  
   var visualEffects: js.UndefOr[none | auto] = js.undefined
 }
-
 object ojSparkChartSettablePropertiesLenient {
-  @scala.inline
-  def apply[K, D](
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    animationDuration: Int | Double = null,
-    animationOnDataChange: auto | none = null,
-    animationOnDisplay: auto | none = null,
-    areaColor: String = null,
-    areaSvgClassName: String = null,
-    areaSvgStyle: js.Object = null,
-    as: String = null,
-    barGapRatio: Int | Double = null,
-    baselineScaling: zero | min = null,
-    color: String = null,
-    data: DataProvider[K, D] = null,
-    firstColor: String = null,
-    highColor: String = null,
-    lastColor: String = null,
-    lineStyle: dotted | dashed | solid = null,
-    lineType: curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight = null,
-    lineWidth: Int | Double = null,
-    lowColor: String = null,
-    markerShape: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String = null,
-    markerSize: Int | Double = null,
-    referenceObjects: js.Array[ReferenceObject] = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    tooltip: Anon0 = null,
-    trackResize: on | off = null,
-    translations: AnonLabelAndValue = null,
-    `type`: area | lineWithArea | bar | line = null,
-    visualEffects: none | auto = null
-  ): ojSparkChartSettablePropertiesLenient[K, D] = {
+  
+  inline def apply[K, D](): ojSparkChartSettablePropertiesLenient[K, D] = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (areaColor != null) __obj.updateDynamic("areaColor")(areaColor.asInstanceOf[js.Any])
-    if (areaSvgClassName != null) __obj.updateDynamic("areaSvgClassName")(areaSvgClassName.asInstanceOf[js.Any])
-    if (areaSvgStyle != null) __obj.updateDynamic("areaSvgStyle")(areaSvgStyle.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (barGapRatio != null) __obj.updateDynamic("barGapRatio")(barGapRatio.asInstanceOf[js.Any])
-    if (baselineScaling != null) __obj.updateDynamic("baselineScaling")(baselineScaling.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (firstColor != null) __obj.updateDynamic("firstColor")(firstColor.asInstanceOf[js.Any])
-    if (highColor != null) __obj.updateDynamic("highColor")(highColor.asInstanceOf[js.Any])
-    if (lastColor != null) __obj.updateDynamic("lastColor")(lastColor.asInstanceOf[js.Any])
-    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
-    if (lineType != null) __obj.updateDynamic("lineType")(lineType.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (lowColor != null) __obj.updateDynamic("lowColor")(lowColor.asInstanceOf[js.Any])
-    if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
-    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
-    if (referenceObjects != null) __obj.updateDynamic("referenceObjects")(referenceObjects.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (visualEffects != null) __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojSparkChartSettablePropertiesLenient[K, D]]
   }
+  
+  extension [Self <: ojSparkChartSettablePropertiesLenient[?, ?], K, D](x: Self & (ojSparkChartSettablePropertiesLenient[K, D])) {
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationNull: Self = StObject.set(x, "animationDuration", null)
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDataChangeUndefined: Self = StObject.set(x, "animationOnDataChange", js.undefined)
+    
+    inline def setAnimationOnDisplay(value: auto | none): Self = StObject.set(x, "animationOnDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDisplayUndefined: Self = StObject.set(x, "animationOnDisplay", js.undefined)
+    
+    inline def setAreaColor(value: String): Self = StObject.set(x, "areaColor", value.asInstanceOf[js.Any])
+    
+    inline def setAreaColorUndefined: Self = StObject.set(x, "areaColor", js.undefined)
+    
+    inline def setAreaSvgClassName(value: String): Self = StObject.set(x, "areaSvgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setAreaSvgClassNameUndefined: Self = StObject.set(x, "areaSvgClassName", js.undefined)
+    
+    inline def setAreaSvgStyle(value: js.Object): Self = StObject.set(x, "areaSvgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setAreaSvgStyleUndefined: Self = StObject.set(x, "areaSvgStyle", js.undefined)
+    
+    inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    
+    inline def setBarGapRatio(value: Double): Self = StObject.set(x, "barGapRatio", value.asInstanceOf[js.Any])
+    
+    inline def setBarGapRatioUndefined: Self = StObject.set(x, "barGapRatio", js.undefined)
+    
+    inline def setBaselineScaling(value: zero | min): Self = StObject.set(x, "baselineScaling", value.asInstanceOf[js.Any])
+    
+    inline def setBaselineScalingUndefined: Self = StObject.set(x, "baselineScaling", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setData(value: DataProvider[K, D]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataNull: Self = StObject.set(x, "data", null)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFirstColor(value: String): Self = StObject.set(x, "firstColor", value.asInstanceOf[js.Any])
+    
+    inline def setFirstColorUndefined: Self = StObject.set(x, "firstColor", js.undefined)
+    
+    inline def setHighColor(value: String): Self = StObject.set(x, "highColor", value.asInstanceOf[js.Any])
+    
+    inline def setHighColorUndefined: Self = StObject.set(x, "highColor", js.undefined)
+    
+    inline def setLastColor(value: String): Self = StObject.set(x, "lastColor", value.asInstanceOf[js.Any])
+    
+    inline def setLastColorUndefined: Self = StObject.set(x, "lastColor", js.undefined)
+    
+    inline def setLineStyle(value: dotted | dashed | solid): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    
+    inline def setLineType(value: curved | stepped | centeredStepped | segmented | centeredSegmented | none | straight): Self = StObject.set(x, "lineType", value.asInstanceOf[js.Any])
+    
+    inline def setLineTypeUndefined: Self = StObject.set(x, "lineType", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setLowColor(value: String): Self = StObject.set(x, "lowColor", value.asInstanceOf[js.Any])
+    
+    inline def setLowColorUndefined: Self = StObject.set(x, "lowColor", js.undefined)
+    
+    inline def setMarkerShape(value: auto | circle | diamond | human | plus | square | star | triangleDown | triangleUp | String): Self = StObject.set(x, "markerShape", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerShapeUndefined: Self = StObject.set(x, "markerShape", js.undefined)
+    
+    inline def setMarkerSize(value: Double): Self = StObject.set(x, "markerSize", value.asInstanceOf[js.Any])
+    
+    inline def setMarkerSizeUndefined: Self = StObject.set(x, "markerSize", js.undefined)
+    
+    inline def setReferenceObjects(value: js.Array[ReferenceObject]): Self = StObject.set(x, "referenceObjects", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceObjectsUndefined: Self = StObject.set(x, "referenceObjects", js.undefined)
+    
+    inline def setReferenceObjectsVarargs(value: ReferenceObject*): Self = StObject.set(x, "referenceObjects", js.Array(value*))
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    
+    inline def setTooltip(value: `0`): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+    
+    inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setType(value: area | lineWithArea | bar | line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVisualEffects(value: none | auto): Self = StObject.set(x, "visualEffects", value.asInstanceOf[js.Any])
+    
+    inline def setVisualEffectsUndefined: Self = StObject.set(x, "visualEffects", js.undefined)
+  }
 }
-

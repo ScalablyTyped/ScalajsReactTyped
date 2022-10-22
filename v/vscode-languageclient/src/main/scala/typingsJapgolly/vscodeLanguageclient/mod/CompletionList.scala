@@ -1,23 +1,26 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "CompletionList")
-@js.native
-object CompletionList extends js.Object {
+object CompletionList {
+  
+  @JSImport("vscode-languageclient", "CompletionList")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new completion list.
     *
     * @param items The completion items.
     * @param isIncomplete The list is not complete.
     */
-  def create(): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = js.native
-  def create(items: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem]): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = js.native
-  def create(
+  inline def create(): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(items: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem]): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(
     items: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionItem],
     isIncomplete: Boolean
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = js.native
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList]
+  inline def create(items: Unit, isIncomplete: Boolean): typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.CompletionList]
 }
-

@@ -1,19 +1,22 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpinnerUIParam extends js.Object {
+trait SpinnerUIParam extends StObject {
+  
   var value: Double
 }
-
 object SpinnerUIParam {
-  @scala.inline
-  def apply(value: Double): SpinnerUIParam = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
+  inline def apply(value: Double): SpinnerUIParam = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerUIParam]
   }
+  
+  extension [Self <: SpinnerUIParam](x: Self) {
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,166 +1,155 @@
 package typingsJapgolly.grommet.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.grommet.AnonCorner
-import typingsJapgolly.grommet.AnonDelay
-import typingsJapgolly.grommet.AnonDisabled
-import typingsJapgolly.grommet.AnonGrow
-import typingsJapgolly.grommet.AnonHorizontal
-import typingsJapgolly.grommet.AnonMax
-import typingsJapgolly.grommet.boxMod.BoxProps
-import typingsJapgolly.grommet.grommetStrings.`column-reverse`
-import typingsJapgolly.grommet.grommetStrings.`row-responsive`
-import typingsJapgolly.grommet.grommetStrings.`row-reverse`
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.anon.Background
+import typingsJapgolly.grommet.anon.ColorError
+import typingsJapgolly.grommet.anon.Delay
+import typingsJapgolly.grommet.anon.Duration
+import typingsJapgolly.grommet.anon.Grow
+import typingsJapgolly.grommet.anon.Horizontal
+import typingsJapgolly.grommet.anon.Id
+import typingsJapgolly.grommet.es6ComponentsRadioButtonGroupMod.RadioButtonGroupExtendedProps
+import typingsJapgolly.grommet.es6UtilsMod.A11yTitleType
+import typingsJapgolly.grommet.es6UtilsMod.AlignContentType
+import typingsJapgolly.grommet.es6UtilsMod.AlignSelfType
+import typingsJapgolly.grommet.es6UtilsMod.AlignType
+import typingsJapgolly.grommet.es6UtilsMod.BackgroundType
+import typingsJapgolly.grommet.es6UtilsMod.BasisType
+import typingsJapgolly.grommet.es6UtilsMod.BorderType
+import typingsJapgolly.grommet.es6UtilsMod.DirectionType
+import typingsJapgolly.grommet.es6UtilsMod.ElevationType
+import typingsJapgolly.grommet.es6UtilsMod.FillType
+import typingsJapgolly.grommet.es6UtilsMod.GapType
+import typingsJapgolly.grommet.es6UtilsMod.GridAreaType
+import typingsJapgolly.grommet.es6UtilsMod.HeightType
+import typingsJapgolly.grommet.es6UtilsMod.MarginType
+import typingsJapgolly.grommet.es6UtilsMod.PadType
+import typingsJapgolly.grommet.es6UtilsMod.PolymorphicType
+import typingsJapgolly.grommet.es6UtilsMod.RoundType
+import typingsJapgolly.grommet.es6UtilsMod.WidthType
 import typingsJapgolly.grommet.grommetStrings.around
 import typingsJapgolly.grommet.grommetStrings.auto
-import typingsJapgolly.grommet.grommetStrings.baseline
 import typingsJapgolly.grommet.grommetStrings.between
 import typingsJapgolly.grommet.grommetStrings.center
-import typingsJapgolly.grommet.grommetStrings.column
 import typingsJapgolly.grommet.grommetStrings.end
 import typingsJapgolly.grommet.grommetStrings.evenly
 import typingsJapgolly.grommet.grommetStrings.fadeIn
 import typingsJapgolly.grommet.grommetStrings.fadeOut
-import typingsJapgolly.grommet.grommetStrings.full
 import typingsJapgolly.grommet.grommetStrings.grow
 import typingsJapgolly.grommet.grommetStrings.hidden
 import typingsJapgolly.grommet.grommetStrings.jiggle
-import typingsJapgolly.grommet.grommetStrings.large
-import typingsJapgolly.grommet.grommetStrings.medium
 import typingsJapgolly.grommet.grommetStrings.pulse
 import typingsJapgolly.grommet.grommetStrings.reverse
-import typingsJapgolly.grommet.grommetStrings.row
+import typingsJapgolly.grommet.grommetStrings.rotateLeft
+import typingsJapgolly.grommet.grommetStrings.rotateRight
 import typingsJapgolly.grommet.grommetStrings.scroll
 import typingsJapgolly.grommet.grommetStrings.shrink
 import typingsJapgolly.grommet.grommetStrings.slideDown
 import typingsJapgolly.grommet.grommetStrings.slideLeft
 import typingsJapgolly.grommet.grommetStrings.slideRight
 import typingsJapgolly.grommet.grommetStrings.slideUp
-import typingsJapgolly.grommet.grommetStrings.small
 import typingsJapgolly.grommet.grommetStrings.start
 import typingsJapgolly.grommet.grommetStrings.stretch
 import typingsJapgolly.grommet.grommetStrings.visible
-import typingsJapgolly.grommet.grommetStrings.xlarge
-import typingsJapgolly.grommet.grommetStrings.xsmall
-import typingsJapgolly.grommet.grommetStrings.xxlarge
-import typingsJapgolly.grommet.grommetStrings.xxsmall
 import typingsJapgolly.grommet.grommetStrings.zoomIn
 import typingsJapgolly.grommet.grommetStrings.zoomOut
-import typingsJapgolly.grommet.radioButtonGroupMod.RadioButtonGroupProps
-import typingsJapgolly.grommet.utilsMod.A11yTitleType
-import typingsJapgolly.grommet.utilsMod.AlignContentType
-import typingsJapgolly.grommet.utilsMod.AlignSelfType
-import typingsJapgolly.grommet.utilsMod.BackgroundType
-import typingsJapgolly.grommet.utilsMod.BasisType
-import typingsJapgolly.grommet.utilsMod.BorderType
-import typingsJapgolly.grommet.utilsMod.ElevationType
-import typingsJapgolly.grommet.utilsMod.FillType
-import typingsJapgolly.grommet.utilsMod.GapType
-import typingsJapgolly.grommet.utilsMod.GridAreaType
-import typingsJapgolly.grommet.utilsMod.MarginType
-import typingsJapgolly.grommet.utilsMod.PadType
-import typingsJapgolly.grommet.utilsMod.PolymorphicType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RadioButtonGroup {
-  def apply(
-    name: String,
-    options: js.Array[String | AnonDisabled],
-    a11yTitle: A11yTitleType = null,
-    align: start | center | end | baseline | stretch = null,
-    alignContent: AlignContentType = null,
-    alignSelf: AlignSelfType = null,
-    animation: fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay | (js.Array[
-      fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | AnonDelay
-    ]) = null,
-    as: PolymorphicType = null,
-    background: BackgroundType = null,
-    basis: BasisType = null,
-    border: BorderType = null,
-    direction: row | column | `row-responsive` | `row-reverse` | `column-reverse` = null,
-    elevation: ElevationType = null,
-    fill: FillType = null,
-    flex: grow | shrink | Boolean | AnonGrow = null,
-    focusIndicator: js.UndefOr[Boolean] = js.undefined,
-    gap: GapType = null,
-    gridArea: GridAreaType = null,
-    height: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
-    hoverIndicator: BackgroundType | Boolean = null,
-    justify: around | between | center | end | evenly | start | stretch = null,
-    margin: MarginType = null,
-    onChange: /* event */ ReactEventFrom[HTMLInputElement] => Callback = null,
-    onClick: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    overflow: auto | hidden | scroll | visible | AnonHorizontal | String = null,
-    pad: PadType = null,
-    responsive: js.UndefOr[Boolean] = js.undefined,
-    round: Boolean | xsmall | small | medium | large | xlarge | full | String | AnonCorner = null,
-    tag: PolymorphicType = null,
-    value: String = null,
-    width: xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | AnonMax = null,
-    wrap: Boolean | reverse = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RadioButtonGroupProps with BoxProps, 
-    typingsJapgolly.grommet.mod.RadioButtonGroup, 
-    Unit, 
-    RadioButtonGroupProps with BoxProps
-  ] = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
   
-      if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alignContent != null) __obj.updateDynamic("alignContent")(alignContent.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (basis != null) __obj.updateDynamic("basis")(basis.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (elevation != null) __obj.updateDynamic("elevation")(elevation.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hoverIndicator != null) __obj.updateDynamic("hoverIndicator")(hoverIndicator.asInstanceOf[js.Any])
-    if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => onClick(t0).runNow()))
-    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
-    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
-    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wrap != null) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.radioButtonGroupMod.RadioButtonGroupProps with typingsJapgolly.grommet.boxMod.BoxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.grommet.mod.RadioButtonGroup](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.radioButtonGroupMod.RadioButtonGroupProps with typingsJapgolly.grommet.boxMod.BoxProps])(children: _*)
+  inline def apply(name: String, options: js.Array[String | Double | Boolean | Id]): Builder = {
+    val __props = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RadioButtonGroupExtendedProps]))
   }
-  @JSImport("grommet", "RadioButtonGroup")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("grommet/es6", "RadioButtonGroup")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def a11yTitle(value: A11yTitleType): this.type = set("a11yTitle", value.asInstanceOf[js.Any])
+    
+    inline def align(value: AlignType): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def alignContent(value: AlignContentType): this.type = set("alignContent", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: AlignSelfType): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def animation(
+      value: fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
+          fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Duration
+        ])
+    ): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def animationVarargs(
+      value: (fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Duration)*
+    ): this.type = set("animation", js.Array(value*))
+    
+    inline def as(value: PolymorphicType): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def background(value: BackgroundType): this.type = set("background", value.asInstanceOf[js.Any])
+    
+    inline def basis(value: BasisType): this.type = set("basis", value.asInstanceOf[js.Any])
+    
+    inline def border(value: BorderType): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderVarargs(value: ColorError*): this.type = set("border", js.Array(value*))
+    
+    inline def children(value: js.Function): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: DirectionType): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def elevation(value: ElevationType): this.type = set("elevation", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: FillType): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def flex(value: grow | shrink | Boolean | Grow): this.type = set("flex", value.asInstanceOf[js.Any])
+    
+    inline def focusIndicator(value: Boolean): this.type = set("focusIndicator", value.asInstanceOf[js.Any])
+    
+    inline def gap(value: GapType): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: GridAreaType): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def height(value: HeightType): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def hoverIndicator(value: Background | BackgroundType | Boolean): this.type = set("hoverIndicator", value.asInstanceOf[js.Any])
+    
+    inline def justify(value: around | between | center | end | evenly | start | stretch): this.type = set("justify", value.asInstanceOf[js.Any])
+    
+    inline def margin(value: MarginType): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* event */ ReactEventFrom[HTMLInputElement] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* event */ ReactEventFrom[HTMLInputElement]) => value(t0).runNow()))
+    
+    inline def onClick(value: /* repeated */ Any => Any): this.type = set("onClick", js.Any.fromFunction1(value))
+    
+    inline def overflow(value: auto | hidden | scroll | visible | Horizontal | String): this.type = set("overflow", value.asInstanceOf[js.Any])
+    
+    inline def pad(value: PadType): this.type = set("pad", value.asInstanceOf[js.Any])
+    
+    inline def responsive(value: Boolean): this.type = set("responsive", value.asInstanceOf[js.Any])
+    
+    inline def round(value: RoundType): this.type = set("round", value.asInstanceOf[js.Any])
+    
+    inline def tag(value: PolymorphicType): this.type = set("tag", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String | Double | Boolean | js.Object): this.type = set("value", value.asInstanceOf[js.Any])
+    
+    inline def width(value: WidthType): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def wrap(value: Boolean | reverse): this.type = set("wrap", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RadioButtonGroupExtendedProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

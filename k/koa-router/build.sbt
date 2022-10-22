@@ -1,26 +1,24 @@
 organization := "org.scalablytyped.japgolly"
 name := "koa-router"
-version := "7.4-dt-20200226Z-e9a1bf"
-scalaVersion := "2.13.1"
+version := "7.4-dt-20211202Z-1b1888"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "accepts" % "1.3-dt-20180214Z-594f28",
-  "org.scalablytyped.japgolly" %%% "body-parser" % "1.19-dt-20200210Z-4a5e75",
-  "org.scalablytyped.japgolly" %%% "connect" % "v3.4.0-dt-20200226Z-95dbfc",
-  "org.scalablytyped.japgolly" %%% "cookies" % "0.7-dt-20191002Z-d532d7",
-  "org.scalablytyped.japgolly" %%% "express" % "4.17-dt-20200227Z-53e249",
-  "org.scalablytyped.japgolly" %%% "express-serve-static-core" % "4.17-dt-20200225Z-03e3c9",
-  "org.scalablytyped.japgolly" %%% "keygrip" % "1.0-dt-20191226Z-7cf96a",
-  "org.scalablytyped.japgolly" %%% "koa" % "2.11.0-dt-20200226Z-a73fe3",
-  "org.scalablytyped.japgolly" %%% "mime" % "2.0-dt-20191126Z-36a89f",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "range-parser" % "1.2-dt-20181016Z-d1bce1",
-  "org.scalablytyped.japgolly" %%% "serve-static" % "1.13-dt-20200227Z-bb2b34",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "accepts" % "1.3-dt-20211202Z-a6fb67",
+  "org.scalablytyped.japgolly" %%% "connect" % "v3.4.0-dt-20220818Z-62b6dd",
+  "org.scalablytyped.japgolly" %%% "content-disposition" % "0.5-dt-20220505Z-541c90",
+  "org.scalablytyped.japgolly" %%% "cookies" % "0.7-dt-20211202Z-b65324",
+  "org.scalablytyped.japgolly" %%% "express" % "4.17-dt-20220913Z-2651ea",
+  "org.scalablytyped.japgolly" %%% "express-serve-static-core" % "0.1.1-5aecff",
+  "org.scalablytyped.japgolly" %%% "keygrip" % "1.0-dt-20211202Z-d34714",
+  "org.scalablytyped.japgolly" %%% "koa" % "2.13.1-dt-20220818Z-d5a753",
+  "org.scalablytyped.japgolly" %%% "mime" % "3.0-dt-20220804Z-38356b",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "qs" % "6.9-dt-20220913Z-9097c1",
+  "org.scalablytyped.japgolly" %%% "serve-static" % "1.15-dt-20220729Z-4a727e",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjResponse used for scripting web responses in Suitelets
@@ -14,11 +14,13 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait nlobjResponse
-  extends /**
+  extends StObject
+     with /**
   *
   * @return
   */
-Instantiable0[js.Any] {
+Instantiable0[Any] {
+  
   /**
     * add a value for a response header.
     * @param  {string} name of header
@@ -33,7 +35,8 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def addHeader(name: String, value: String): js.Any = js.native
+  def addHeader(name: String, value: String): Any = js.native
+  
   /**
     * return an Array of all response headers
     * @return  {Object}
@@ -44,9 +47,12 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getAllHeaders(): js.Any = js.native
-  def getBody(): js.Any = js.native
+  def getAllHeaders(): Any = js.native
+  
+  def getBody(): Any = js.native
+  
   def getCode(): String = js.native
+  
   /**
     * return the value of a response header.
     * @param  {string} name of header
@@ -59,6 +65,7 @@ Instantiable0[js.Any] {
     * @return
     */
   def getHeader(): String = js.native
+  
   /**
     * return an Array of all response header values for a header
     * @param  {string} name of header
@@ -71,6 +78,7 @@ Instantiable0[js.Any] {
     * @param name
     */
   def getHeaders(name: String): Unit = js.native
+  
   /**
     * suppress caching for this response.
     * @return  {void}
@@ -81,7 +89,8 @@ Instantiable0[js.Any] {
     * @since 2009.1
     * @return
     */
-  def sendNoCache(): js.Any = js.native
+  def sendNoCache(): Any = js.native
+  
   /**
     * sets the redirect URL for the response. all URLs must be internal unless the Suitelet is being executed in an "Available without Login" context
     *  at which point it can use type "external" to specify an external url via the subtype arg
@@ -103,13 +112,19 @@ Instantiable0[js.Any] {
     * @param parameters?
     * @return
     */
-  def sendRedirect(`type`: String, subtype: String): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: String): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean, parameters: js.Any): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: Double): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean): js.Any = js.native
-  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean, parameters: js.Any): js.Any = js.native
+  def sendRedirect(`type`: String, subtype: String): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: String): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Boolean, parameters: Any): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: String, pagemode: Unit, parameters: Any): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Double): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Boolean, parameters: Any): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Double, pagemode: Unit, parameters: Any): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Boolean): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Boolean, parameters: Any): Any = js.native
+  def sendRedirect(`type`: String, subtype: String, id: Unit, pagemode: Unit, parameters: Any): Any = js.native
+  
   /**
     * sets the content type for the response (and an optional filename for binary output).
     *
@@ -129,6 +144,8 @@ Instantiable0[js.Any] {
   def setContentType(`type`: String): Unit = js.native
   def setContentType(`type`: String, name: String): Unit = js.native
   def setContentType(`type`: String, name: String, disposition: String): Unit = js.native
+  def setContentType(`type`: String, name: Unit, disposition: String): Unit = js.native
+  
   /**
     * sets the character encoding for the response.
     * @param {String} encoding
@@ -140,7 +157,8 @@ Instantiable0[js.Any] {
     * @param encoding
     * @return
     */
-  def setEncoding(encoding: String): js.Any = js.native
+  def setEncoding(encoding: String): Any = js.native
+  
   /**
     * set the value of a response header.
     * @param  {string} name of header
@@ -155,7 +173,8 @@ Instantiable0[js.Any] {
     * @param value
     * @return
     */
-  def setHeader(name: String, value: String): js.Any = js.native
+  def setHeader(name: String, value: String): Any = js.native
+  
   /**
     * write information (text/xml/html) to the response.
     *
@@ -168,7 +187,8 @@ Instantiable0[js.Any] {
     * @param output
     * @return
     */
-  def write(output: String): js.Any = js.native
+  def write(output: String): Any = js.native
+  
   /**
     * write line information (text/xml/html) to the response.
     *
@@ -181,7 +201,8 @@ Instantiable0[js.Any] {
     * @param output
     * @return
     */
-  def writeLine(output: String): js.Any = js.native
+  def writeLine(output: String): Any = js.native
+  
   /**
     * write a UI object page.
     *
@@ -194,6 +215,5 @@ Instantiable0[js.Any] {
     * @param pageobject
     * @return
     */
-  def writePage(pageobject: js.Any): js.Any = js.native
+  def writePage(pageobject: Any): Any = js.native
 }
-

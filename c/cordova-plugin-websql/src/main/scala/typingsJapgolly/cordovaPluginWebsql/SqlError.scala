@@ -1,25 +1,26 @@
 package typingsJapgolly.cordovaPluginWebsql
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SqlError extends js.Object {
+trait SqlError extends StObject {
+  
   var code: Double
+  
   var message: String
 }
-
-@JSGlobal("SqlError")
-@js.native
-object SqlError extends js.Object {
-  var CONSTRAINT_ERR: Double = js.native
-  var DATABASE_ERR: Double = js.native
-  var QUOTA_ERR: Double = js.native
-  var SYNTAX_ERR: Double = js.native
-  var TIMEOUT_ERR: Double = js.native
-  var TOO_LARGE_ERR: Double = js.native
-  // Error code constants from http://www.w3.org/TR/webdatabase/#sqlerror
-  var UNKNOWN_ERR: Double = js.native
-  var VERSION_ERR: Double = js.native
+object SqlError {
+  
+  inline def apply(code: Double, message: String): SqlError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SqlError]
+  }
+  
+  extension [Self <: SqlError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

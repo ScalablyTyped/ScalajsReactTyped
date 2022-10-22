@@ -1,40 +1,63 @@
 package typingsJapgolly.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ItemDto extends js.Object {
+trait ItemDto extends StObject {
+  
   var colloq: String
+  
   var consumeOnFull: Boolean
+  
   var consumed: Boolean
+  
   var depth: Double
+  
   var description: String
+  
   var effect: js.Array[StringDictionary[String]]
+  
   var from: js.Array[String]
+  
   var gold: GoldDto
+  
   var group: String
+  
   var hideFromAll: Boolean
+  
   var id: Double
+  
   var image: ImageDto
+  
   var inStore: Boolean
+  
   var into: js.Array[String]
+  
   var maps: js.Array[StringDictionary[Boolean]]
+  
   var name: String
+  
   var plaintext: String
+  
   var requiredChampion: String
+  
   var rune: MetaDataDto
+  
   var sanitizedDescription: String
+  
   var specialRecipe: Double
+  
   var stacks: Double
+  
   var stats: BasicDataStatsDto
+  
   var tags: js.Array[String]
 }
-
 object ItemDto {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     colloq: String,
     consumeOnFull: Boolean,
     consumed: Boolean,
@@ -61,8 +84,67 @@ object ItemDto {
     tags: js.Array[String]
   ): ItemDto = {
     val __obj = js.Dynamic.literal(colloq = colloq.asInstanceOf[js.Any], consumeOnFull = consumeOnFull.asInstanceOf[js.Any], consumed = consumed.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gold = gold.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], hideFromAll = hideFromAll.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], image = image.asInstanceOf[js.Any], inStore = inStore.asInstanceOf[js.Any], into = into.asInstanceOf[js.Any], maps = maps.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], plaintext = plaintext.asInstanceOf[js.Any], requiredChampion = requiredChampion.asInstanceOf[js.Any], rune = rune.asInstanceOf[js.Any], sanitizedDescription = sanitizedDescription.asInstanceOf[js.Any], specialRecipe = specialRecipe.asInstanceOf[js.Any], stacks = stacks.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ItemDto]
   }
+  
+  extension [Self <: ItemDto](x: Self) {
+    
+    inline def setColloq(value: String): Self = StObject.set(x, "colloq", value.asInstanceOf[js.Any])
+    
+    inline def setConsumeOnFull(value: Boolean): Self = StObject.set(x, "consumeOnFull", value.asInstanceOf[js.Any])
+    
+    inline def setConsumed(value: Boolean): Self = StObject.set(x, "consumed", value.asInstanceOf[js.Any])
+    
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setEffect(value: js.Array[StringDictionary[String]]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    
+    inline def setEffectVarargs(value: StringDictionary[String]*): Self = StObject.set(x, "effect", js.Array(value*))
+    
+    inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value*))
+    
+    inline def setGold(value: GoldDto): Self = StObject.set(x, "gold", value.asInstanceOf[js.Any])
+    
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setHideFromAll(value: Boolean): Self = StObject.set(x, "hideFromAll", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setImage(value: ImageDto): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setInStore(value: Boolean): Self = StObject.set(x, "inStore", value.asInstanceOf[js.Any])
+    
+    inline def setInto(value: js.Array[String]): Self = StObject.set(x, "into", value.asInstanceOf[js.Any])
+    
+    inline def setIntoVarargs(value: String*): Self = StObject.set(x, "into", js.Array(value*))
+    
+    inline def setMaps(value: js.Array[StringDictionary[Boolean]]): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+    
+    inline def setMapsVarargs(value: StringDictionary[Boolean]*): Self = StObject.set(x, "maps", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredChampion(value: String): Self = StObject.set(x, "requiredChampion", value.asInstanceOf[js.Any])
+    
+    inline def setRune(value: MetaDataDto): Self = StObject.set(x, "rune", value.asInstanceOf[js.Any])
+    
+    inline def setSanitizedDescription(value: String): Self = StObject.set(x, "sanitizedDescription", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialRecipe(value: Double): Self = StObject.set(x, "specialRecipe", value.asInstanceOf[js.Any])
+    
+    inline def setStacks(value: Double): Self = StObject.set(x, "stacks", value.asInstanceOf[js.Any])
+    
+    inline def setStats(value: BasicDataStatsDto): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+  }
 }
-

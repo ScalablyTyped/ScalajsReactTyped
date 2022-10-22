@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FeatureDefinitionScope extends js.Object
-
+sealed trait FeatureDefinitionScope extends StObject
 @JSGlobal("SP.FeatureDefinitionScope")
 @js.native
-object FeatureDefinitionScope extends js.Object {
-  @js.native
-  sealed trait farm extends FeatureDefinitionScope
+object FeatureDefinitionScope extends StObject {
   
   @js.native
-  sealed trait none extends FeatureDefinitionScope
+  sealed trait farm
+    extends StObject
+       with FeatureDefinitionScope
   
   @js.native
-  sealed trait site extends FeatureDefinitionScope
+  sealed trait none
+    extends StObject
+       with FeatureDefinitionScope
   
   @js.native
-  sealed trait web extends FeatureDefinitionScope
+  sealed trait site
+    extends StObject
+       with FeatureDefinitionScope
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FeatureDefinitionScope with Double] = js.native
-  /* 1 */ @js.native
-  object farm extends TopLevel[farm with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object site extends TopLevel[site with Double]
-  
-  /* 3 */ @js.native
-  object web extends TopLevel[web with Double]
-  
+  @js.native
+  sealed trait web
+    extends StObject
+       with FeatureDefinitionScope
 }
-

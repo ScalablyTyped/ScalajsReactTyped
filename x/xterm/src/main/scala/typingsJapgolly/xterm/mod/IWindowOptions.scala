@@ -1,189 +1,255 @@
 package typingsJapgolly.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWindowOptions extends js.Object {
+trait IWindowOptions extends StObject {
+  
   /**
     * Ps=10 ; 0  Undo full-screen mode.
     * Ps=10 ; 1  Change to full-screen.
-    * Ps=10 ; 2  Toggle full-screen.  
+    * Ps=10 ; 2  Toggle full-screen.
     * No default implementation.
     */
   var fullscreenWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=16  Report xterm character cell size in pixels. Result is "CSI 6 ; height ; width t".  
+    * Ps=16  Report xterm character cell size in pixels. Result is "CSI 6 ; height ; width t".
     * Has a default implementation.
     */
   var getCellSizePixels: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=20  Report xterm window's icon label. Result is "OSC L label ST".  
+    * Ps=20  Report xterm window's icon label. Result is "OSC L label ST".
     * No default implementation.
     */
   var getIconTitle: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=19  Report the size of the screen in characters. Result is "CSI 9 ; height ; width t".  
+    * Ps=19  Report the size of the screen in characters. Result is "CSI 9 ; height ; width t".
     * No default implementation.
     */
   var getScreenSizeChars: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=15    Report size of the screen in pixels. Result is "CSI 5 ; height ; width t".  
+    * Ps=15    Report size of the screen in pixels. Result is "CSI 5 ; height ; width t".
     * No default implementation.
     */
   var getScreenSizePixels: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=13      Report xterm window position. Result is "CSI 3 ; x ; y t".
-    * Ps=13 ; 2  Report xterm text-area position. Result is "CSI 3 ; x ; y t".  
+    * Ps=13 ; 2  Report xterm text-area position. Result is "CSI 3 ; x ; y t".
     * No default implementation.
     */
   var getWinPosition: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=18  Report the size of the text area in characters. Result is "CSI 8 ; height ; width t".  
+    * Ps=18  Report the size of the text area in characters. Result is "CSI 8 ; height ; width t".
     * Has a default implementation.
     */
   var getWinSizeChars: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=14      Report xterm text area size in pixels. Result is "CSI 4 ; height ; width t".
-    * Ps=14 ; 2  Report xterm window size in pixels. Result is "CSI  4 ; height ; width t".  
+    * Ps=14 ; 2  Report xterm window size in pixels. Result is "CSI  4 ; height ; width t".
     * Has a default implementation.
     */
   var getWinSizePixels: js.UndefOr[Boolean] = js.undefined
+  
   /** Ps=11   Report xterm window state.
     * If the xterm window is non-iconified, it returns "CSI 1 t".
-    * If the xterm window is iconified, it returns "CSI 2 t".  
+    * If the xterm window is iconified, it returns "CSI 2 t".
     * No default implementation.
     */
   var getWinState: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=21  Report xterm window's title. Result is "OSC l label ST".  
+    * Ps=21  Report xterm window's title. Result is "OSC l label ST".
     * No default implementation.
     */
   var getWinTitle: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=6    Lower the xterm window to the bottom of the stacking order.  
+    * Ps=6    Lower the xterm window to the bottom of the stacking order.
     * No default implementation.
     */
   var lowerWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=9 ; 0   Restore maximized window.
     * Ps=9 ; 1   Maximize window (i.e., resize to screen size).
     * Ps=9 ; 2   Maximize window vertically.
-    * Ps=9 ; 3   Maximize window horizontally.  
+    * Ps=9 ; 3   Maximize window horizontally.
     * No default implementation.
     */
   var maximizeWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=2    Iconify window.  
+    * Ps=2    Iconify window.
     * No default implementation.
     */
   var minimizeWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=23 ; 0  Restore xterm icon and window title from stack.
     * Ps=23 ; 1  Restore xterm icon title from stack.
-    * Ps=23 ; 2  Restore xterm window title from stack.  
+    * Ps=23 ; 2  Restore xterm window title from stack.
     * All variants have a default implementation.
     */
   var popTitle: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=22 ; 0  Save xterm icon and window title on stack.
     * Ps=22 ; 1  Save xterm icon title on stack.
-    * Ps=22 ; 2  Save xterm window title on stack.  
+    * Ps=22 ; 2  Save xterm window title on stack.
     * All variants have a default implementation.
     */
   var pushTitle: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=5    Raise the window to the front of the stacking order.  
+    * Ps=5    Raise the window to the front of the stacking order.
     * No default implementation.
     */
   var raiseWin: js.UndefOr[Boolean] = js.undefined
+  
   /** Ps=7    Refresh the window. */
   var refreshWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps=1    De-iconify window.  
+    * Ps=1    De-iconify window.
     * No default implementation.
     */
   var restoreWin: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Ps>=24  Resize to Ps lines (DECSLPP).  
+    * Ps>=24  Resize to Ps lines (DECSLPP).
     * DECSLPP is not implemented. This settings is also used to
     * enable / disable DECCOLM (earlier variant of DECSLPP).
     */
   var setWinLines: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps=3 ; x ; y
-    * Move window to [x, y].  
+    * Move window to [x, y].
     * No default implementation.
     */
   var setWinPosition: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps = 8 ; height ; width
     * Resize the text area to given height and width in characters.
     * Omitted parameters should reuse the current height or width.
-    * Zero parameters use the display's height or width.  
+    * Zero parameters use the display's height or width.
     * No default implementation.
     */
   var setWinSizeChars: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Ps = 4 ; height ; width
     * Resize the window to given `height` and `width` in pixels.
     * Omitted parameters should reuse the current height or width.
-    * Zero parameters should use the display's height or width.  
+    * Zero parameters should use the display's height or width.
     * No default implementation.
     */
   var setWinSizePixels: js.UndefOr[Boolean] = js.undefined
 }
-
 object IWindowOptions {
-  @scala.inline
-  def apply(
-    fullscreenWin: js.UndefOr[Boolean] = js.undefined,
-    getCellSizePixels: js.UndefOr[Boolean] = js.undefined,
-    getIconTitle: js.UndefOr[Boolean] = js.undefined,
-    getScreenSizeChars: js.UndefOr[Boolean] = js.undefined,
-    getScreenSizePixels: js.UndefOr[Boolean] = js.undefined,
-    getWinPosition: js.UndefOr[Boolean] = js.undefined,
-    getWinSizeChars: js.UndefOr[Boolean] = js.undefined,
-    getWinSizePixels: js.UndefOr[Boolean] = js.undefined,
-    getWinState: js.UndefOr[Boolean] = js.undefined,
-    getWinTitle: js.UndefOr[Boolean] = js.undefined,
-    lowerWin: js.UndefOr[Boolean] = js.undefined,
-    maximizeWin: js.UndefOr[Boolean] = js.undefined,
-    minimizeWin: js.UndefOr[Boolean] = js.undefined,
-    popTitle: js.UndefOr[Boolean] = js.undefined,
-    pushTitle: js.UndefOr[Boolean] = js.undefined,
-    raiseWin: js.UndefOr[Boolean] = js.undefined,
-    refreshWin: js.UndefOr[Boolean] = js.undefined,
-    restoreWin: js.UndefOr[Boolean] = js.undefined,
-    setWinLines: js.UndefOr[Boolean] = js.undefined,
-    setWinPosition: js.UndefOr[Boolean] = js.undefined,
-    setWinSizeChars: js.UndefOr[Boolean] = js.undefined,
-    setWinSizePixels: js.UndefOr[Boolean] = js.undefined
-  ): IWindowOptions = {
+  
+  inline def apply(): IWindowOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(fullscreenWin)) __obj.updateDynamic("fullscreenWin")(fullscreenWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(getCellSizePixels)) __obj.updateDynamic("getCellSizePixels")(getCellSizePixels.asInstanceOf[js.Any])
-    if (!js.isUndefined(getIconTitle)) __obj.updateDynamic("getIconTitle")(getIconTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(getScreenSizeChars)) __obj.updateDynamic("getScreenSizeChars")(getScreenSizeChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(getScreenSizePixels)) __obj.updateDynamic("getScreenSizePixels")(getScreenSizePixels.asInstanceOf[js.Any])
-    if (!js.isUndefined(getWinPosition)) __obj.updateDynamic("getWinPosition")(getWinPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(getWinSizeChars)) __obj.updateDynamic("getWinSizeChars")(getWinSizeChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(getWinSizePixels)) __obj.updateDynamic("getWinSizePixels")(getWinSizePixels.asInstanceOf[js.Any])
-    if (!js.isUndefined(getWinState)) __obj.updateDynamic("getWinState")(getWinState.asInstanceOf[js.Any])
-    if (!js.isUndefined(getWinTitle)) __obj.updateDynamic("getWinTitle")(getWinTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(lowerWin)) __obj.updateDynamic("lowerWin")(lowerWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(maximizeWin)) __obj.updateDynamic("maximizeWin")(maximizeWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(minimizeWin)) __obj.updateDynamic("minimizeWin")(minimizeWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(popTitle)) __obj.updateDynamic("popTitle")(popTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(pushTitle)) __obj.updateDynamic("pushTitle")(pushTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseWin)) __obj.updateDynamic("raiseWin")(raiseWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshWin)) __obj.updateDynamic("refreshWin")(refreshWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(restoreWin)) __obj.updateDynamic("restoreWin")(restoreWin.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWinLines)) __obj.updateDynamic("setWinLines")(setWinLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWinPosition)) __obj.updateDynamic("setWinPosition")(setWinPosition.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWinSizeChars)) __obj.updateDynamic("setWinSizeChars")(setWinSizeChars.asInstanceOf[js.Any])
-    if (!js.isUndefined(setWinSizePixels)) __obj.updateDynamic("setWinSizePixels")(setWinSizePixels.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWindowOptions]
   }
+  
+  extension [Self <: IWindowOptions](x: Self) {
+    
+    inline def setFullscreenWin(value: Boolean): Self = StObject.set(x, "fullscreenWin", value.asInstanceOf[js.Any])
+    
+    inline def setFullscreenWinUndefined: Self = StObject.set(x, "fullscreenWin", js.undefined)
+    
+    inline def setGetCellSizePixels(value: Boolean): Self = StObject.set(x, "getCellSizePixels", value.asInstanceOf[js.Any])
+    
+    inline def setGetCellSizePixelsUndefined: Self = StObject.set(x, "getCellSizePixels", js.undefined)
+    
+    inline def setGetIconTitle(value: Boolean): Self = StObject.set(x, "getIconTitle", value.asInstanceOf[js.Any])
+    
+    inline def setGetIconTitleUndefined: Self = StObject.set(x, "getIconTitle", js.undefined)
+    
+    inline def setGetScreenSizeChars(value: Boolean): Self = StObject.set(x, "getScreenSizeChars", value.asInstanceOf[js.Any])
+    
+    inline def setGetScreenSizeCharsUndefined: Self = StObject.set(x, "getScreenSizeChars", js.undefined)
+    
+    inline def setGetScreenSizePixels(value: Boolean): Self = StObject.set(x, "getScreenSizePixels", value.asInstanceOf[js.Any])
+    
+    inline def setGetScreenSizePixelsUndefined: Self = StObject.set(x, "getScreenSizePixels", js.undefined)
+    
+    inline def setGetWinPosition(value: Boolean): Self = StObject.set(x, "getWinPosition", value.asInstanceOf[js.Any])
+    
+    inline def setGetWinPositionUndefined: Self = StObject.set(x, "getWinPosition", js.undefined)
+    
+    inline def setGetWinSizeChars(value: Boolean): Self = StObject.set(x, "getWinSizeChars", value.asInstanceOf[js.Any])
+    
+    inline def setGetWinSizeCharsUndefined: Self = StObject.set(x, "getWinSizeChars", js.undefined)
+    
+    inline def setGetWinSizePixels(value: Boolean): Self = StObject.set(x, "getWinSizePixels", value.asInstanceOf[js.Any])
+    
+    inline def setGetWinSizePixelsUndefined: Self = StObject.set(x, "getWinSizePixels", js.undefined)
+    
+    inline def setGetWinState(value: Boolean): Self = StObject.set(x, "getWinState", value.asInstanceOf[js.Any])
+    
+    inline def setGetWinStateUndefined: Self = StObject.set(x, "getWinState", js.undefined)
+    
+    inline def setGetWinTitle(value: Boolean): Self = StObject.set(x, "getWinTitle", value.asInstanceOf[js.Any])
+    
+    inline def setGetWinTitleUndefined: Self = StObject.set(x, "getWinTitle", js.undefined)
+    
+    inline def setLowerWin(value: Boolean): Self = StObject.set(x, "lowerWin", value.asInstanceOf[js.Any])
+    
+    inline def setLowerWinUndefined: Self = StObject.set(x, "lowerWin", js.undefined)
+    
+    inline def setMaximizeWin(value: Boolean): Self = StObject.set(x, "maximizeWin", value.asInstanceOf[js.Any])
+    
+    inline def setMaximizeWinUndefined: Self = StObject.set(x, "maximizeWin", js.undefined)
+    
+    inline def setMinimizeWin(value: Boolean): Self = StObject.set(x, "minimizeWin", value.asInstanceOf[js.Any])
+    
+    inline def setMinimizeWinUndefined: Self = StObject.set(x, "minimizeWin", js.undefined)
+    
+    inline def setPopTitle(value: Boolean): Self = StObject.set(x, "popTitle", value.asInstanceOf[js.Any])
+    
+    inline def setPopTitleUndefined: Self = StObject.set(x, "popTitle", js.undefined)
+    
+    inline def setPushTitle(value: Boolean): Self = StObject.set(x, "pushTitle", value.asInstanceOf[js.Any])
+    
+    inline def setPushTitleUndefined: Self = StObject.set(x, "pushTitle", js.undefined)
+    
+    inline def setRaiseWin(value: Boolean): Self = StObject.set(x, "raiseWin", value.asInstanceOf[js.Any])
+    
+    inline def setRaiseWinUndefined: Self = StObject.set(x, "raiseWin", js.undefined)
+    
+    inline def setRefreshWin(value: Boolean): Self = StObject.set(x, "refreshWin", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshWinUndefined: Self = StObject.set(x, "refreshWin", js.undefined)
+    
+    inline def setRestoreWin(value: Boolean): Self = StObject.set(x, "restoreWin", value.asInstanceOf[js.Any])
+    
+    inline def setRestoreWinUndefined: Self = StObject.set(x, "restoreWin", js.undefined)
+    
+    inline def setSetWinLines(value: Boolean): Self = StObject.set(x, "setWinLines", value.asInstanceOf[js.Any])
+    
+    inline def setSetWinLinesUndefined: Self = StObject.set(x, "setWinLines", js.undefined)
+    
+    inline def setSetWinPosition(value: Boolean): Self = StObject.set(x, "setWinPosition", value.asInstanceOf[js.Any])
+    
+    inline def setSetWinPositionUndefined: Self = StObject.set(x, "setWinPosition", js.undefined)
+    
+    inline def setSetWinSizeChars(value: Boolean): Self = StObject.set(x, "setWinSizeChars", value.asInstanceOf[js.Any])
+    
+    inline def setSetWinSizeCharsUndefined: Self = StObject.set(x, "setWinSizeChars", js.undefined)
+    
+    inline def setSetWinSizePixels(value: Boolean): Self = StObject.set(x, "setWinSizePixels", value.asInstanceOf[js.Any])
+    
+    inline def setSetWinSizePixelsUndefined: Self = StObject.set(x, "setWinSizePixels", js.undefined)
+  }
 }
-

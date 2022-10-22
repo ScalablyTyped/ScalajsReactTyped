@@ -1,33 +1,38 @@
 package typingsJapgolly.c3.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelOptions extends js.Object {
+trait LabelOptions extends StObject {
+  
   /**
     * Set formatter for the label on each pie piece.
     */
   var format: js.UndefOr[
     js.Function3[/* value */ Double, /* ratio */ Double, /* id */ String, String | Double]
   ] = js.undefined
+  
   /**
     * Show or hide label on each pie piece.
     */
   var show: js.UndefOr[Boolean] = js.undefined
 }
-
 object LabelOptions {
-  @scala.inline
-  def apply(
-    format: (/* value */ Double, /* ratio */ Double, /* id */ String) => CallbackTo[String | Double] = null,
-    show: js.UndefOr[Boolean] = js.undefined
-  ): LabelOptions = {
+  
+  inline def apply(): LabelOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction3((t0: /* value */ scala.Double, t1: /* ratio */ scala.Double, t2: /* id */ java.lang.String) => format(t0, t1, t2).runNow()))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelOptions]
   }
+  
+  extension [Self <: LabelOptions](x: Self) {
+    
+    inline def setFormat(value: (/* value */ Double, /* ratio */ Double, /* id */ String) => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction3(value))
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+  }
 }
-

@@ -1,6 +1,7 @@
 
 # Scala.js typings for express-brute
 
+Typings are for version 1.0.1
 
 ## Library description:
 A brute-force protection middleware for express routes that rate limits incoming requests
@@ -10,9 +11,9 @@ A brute-force protection middleware for express routes that rate limits incoming
 | Full name          | express-brute |
 | Keywords           | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | # releases         | 1 |
-| # dependents       | 45 |
-| # downloads        | 815019 |
-| # stars            | 44 |
+| # dependents       | 0.0 |
+| # downloads        | 89197.66666666667 |
+| # stars            | 562.0 |
 
 ## Links
 - [Homepage](https://github.com/AdamPflug/express-brute#readme)

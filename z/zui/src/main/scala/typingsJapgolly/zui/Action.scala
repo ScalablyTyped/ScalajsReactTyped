@@ -1,34 +1,49 @@
 package typingsJapgolly.zui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Action extends js.Object {
+trait Action extends StObject {
+  
   var action: js.UndefOr[ActionFunc] = js.undefined
+  
   var html: js.UndefOr[String] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object Action {
-  @scala.inline
-  def apply(
-    action: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    name: String = null,
-    text: String = null
-  ): Action = {
+  
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
-    action.foreach(p => __obj.updateDynamic("action")(p.toJsFn))
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
+  
+  extension [Self <: Action](x: Self) {
+    
+    inline def setAction(value: CallbackTo[Boolean]): Self = StObject.set(x, "action", value.toJsFn)
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

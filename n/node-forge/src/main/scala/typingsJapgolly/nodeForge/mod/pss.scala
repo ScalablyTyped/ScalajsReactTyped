@@ -1,13 +1,16 @@
 package typingsJapgolly.nodeForge.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("node-forge", "pss")
-@js.native
-object pss extends js.Object {
-  def create(any: js.Any): PSS = js.native
-  type PSS = js.Any
+object pss {
+  
+  @JSImport("node-forge", "pss")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create(any: Any): PSS = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(any.asInstanceOf[js.Any]).asInstanceOf[PSS]
+  
+  type PSS = Any
 }
-

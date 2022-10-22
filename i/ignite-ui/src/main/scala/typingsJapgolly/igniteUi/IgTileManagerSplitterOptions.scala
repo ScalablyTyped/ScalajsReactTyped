@@ -1,56 +1,64 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTileManagerSplitterOptions
-  extends /**
-	 * Option for IgTileManagerSplitterOptions
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets whether the splitter should be initially collapsed.
-  	 *
-  	 */
+    * Gets whether the splitter should be initially collapsed.
+    *
+    */
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets whether the splitter can be collapsible.
-  	 *
-  	 */
+    * Gets whether the splitter can be collapsible.
+    *
+    */
   var collapsible: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the splitter should be enabled.
-  	 *
-  	 */
+    * Gets/Sets whether the splitter should be enabled.
+    *
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets splitter events.
-  	 *
-  	 */
+    * Gets/Sets splitter events.
+    *
+    */
   var events: js.UndefOr[IgTileManagerSplitterOptionsEvents] = js.undefined
 }
-
 object IgTileManagerSplitterOptions {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgTileManagerSplitterOptions
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    events: IgTileManagerSplitterOptionsEvents = null
-  ): IgTileManagerSplitterOptions = {
+  
+  inline def apply(): IgTileManagerSplitterOptions = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTileManagerSplitterOptions]
   }
+  
+  extension [Self <: IgTileManagerSplitterOptions](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setEvents(value: IgTileManagerSplitterOptionsEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+  }
 }
-

@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttachmentEdit extends Object {
+trait AttachmentEdit
+  extends StObject
+     with Object {
+  
   /**
     * The attachment to be added, updated or deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
   var attachment: AttachmentEditAttachment
+  
   /**
     * The feature, `objectId` or `globalId` of feature associated with the attachment.
     *
@@ -21,20 +24,23 @@ trait AttachmentEdit extends Object {
     */
   var feature: Graphic | Double | String
 }
-
 object AttachmentEdit {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     attachment: AttachmentEditAttachment,
     constructor: js.Function,
     feature: Graphic | Double | String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): AttachmentEdit = {
-    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(attachment = attachment.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], feature = feature.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[AttachmentEdit]
   }
+  
+  extension [Self <: AttachmentEdit](x: Self) {
+    
+    inline def setAttachment(value: AttachmentEditAttachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    
+    inline def setFeature(value: Graphic | Double | String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+  }
 }
-

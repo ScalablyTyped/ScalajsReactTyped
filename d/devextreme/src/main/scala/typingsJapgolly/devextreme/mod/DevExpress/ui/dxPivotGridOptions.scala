@@ -1,197 +1,316 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonAllowFieldDragging
-import typingsJapgolly.devextreme.AnonApplyChangesMode
-import typingsJapgolly.devextreme.AnonArea
-import typingsJapgolly.devextreme.AnonCell
-import typingsJapgolly.devextreme.AnonCollapseAll
-import typingsJapgolly.devextreme.AnonColumnFields
-import typingsJapgolly.devextreme.AnonComponentDxPivotGrid
-import typingsJapgolly.devextreme.AnonComponentElement
-import typingsJapgolly.devextreme.AnonCustomLoad
-import typingsJapgolly.devextreme.AnonElement
-import typingsJapgolly.devextreme.AnonFileNameFormat
-import typingsJapgolly.devextreme.AnonFileNameModel
-import typingsJapgolly.devextreme.AnonIgnoreExcelErrors
-import typingsJapgolly.devextreme.AnonModel
-import typingsJapgolly.devextreme.AnonName
-import typingsJapgolly.devextreme.AnonSearchTimeout
-import typingsJapgolly.devextreme.AnonShowIndicator
-import typingsJapgolly.devextreme.AnonUseNative
-import typingsJapgolly.devextreme.devextremeStrings.both
-import typingsJapgolly.devextreme.devextremeStrings.column
-import typingsJapgolly.devextreme.devextremeStrings.columns
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.row
-import typingsJapgolly.devextreme.devextremeStrings.rows
-import typingsJapgolly.devextreme.devextremeStrings.standard
-import typingsJapgolly.devextreme.devextremeStrings.tree
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.devextreme.anon.AllowFieldDragging
+import typingsJapgolly.devextreme.anon.ApplyChangesMode
+import typingsJapgolly.devextreme.anon.CollapseAll
+import typingsJapgolly.devextreme.anon.CustomLoad
+import typingsJapgolly.devextreme.anon.Enabled
+import typingsJapgolly.devextreme.anon.IndicatorSrc
+import typingsJapgolly.devextreme.anon.Mode
+import typingsJapgolly.devextreme.anon.SearchTimeout
 import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource
-import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSourceOptions
+import typingsJapgolly.devextreme.mod.DevExpress.data.PivotGridDataSource.Options
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.CellClickEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.CellPreparedEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.ContextMenuPreparingEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.ExportedEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.ExportingEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.FileSavingEvent
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridDataFieldArea
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridRowHeaderLayout
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid.PivotGridTotalDisplayMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPivotGridOptions extends WidgetOptions[dxPivotGrid] {
-  /** Allows an end-user to expand/collapse all header items within a header level. */
+trait dxPivotGridOptions
+  extends StObject
+     with WidgetOptions[dxPivotGrid] {
+  
+  /**
+    * Allows users to expand/collapse all header items within the same header level. Ignored if the PivotGridDataSource&apos;s paginate property is true.
+    */
   var allowExpandAll: js.UndefOr[Boolean] = js.undefined
-  /** Allows a user to filter fields by selecting or deselecting values in the popup menu. */
+  
+  /**
+    * Allows a user to filter fields by selecting or deselecting values in the popup menu.
+    */
   var allowFiltering: js.UndefOr[Boolean] = js.undefined
-  /** Allows an end-user to change sorting options. */
+  
+  /**
+    * Allows an end-user to change sorting properties.
+    */
   var allowSorting: js.UndefOr[Boolean] = js.undefined
-  /** Allows an end-user to sort columns by summary values. */
+  
+  /**
+    * Allows users to sort the pivot grid by summary values instead of field values. Ignored if the PivotGridDataSource&apos;s paginate property is true.
+    */
   var allowSortingBySummary: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the area to which data field headers must belong. */
-  var dataFieldArea: js.UndefOr[column | row] = js.undefined
-  /** Binds the widget to data. */
-  var dataSource: js.UndefOr[js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions] = js.undefined
-  /** Configures client-side exporting. */
-  var export: js.UndefOr[AnonIgnoreExcelErrors] = js.undefined
-  /** The Field Chooser configuration options. */
-  var fieldChooser: js.UndefOr[AnonApplyChangesMode] = js.undefined
-  /** Configures the field panel. */
-  var fieldPanel: js.UndefOr[AnonAllowFieldDragging] = js.undefined
-  /** Configures the header filter feature. */
-  var headerFilter: js.UndefOr[AnonSearchTimeout] = js.undefined
-  /** Specifies whether or not to hide rows and columns with no data. */
+  
+  /**
+    * Specifies the area to which data field headers must belong.
+    */
+  var dataFieldArea: js.UndefOr[PivotGridDataFieldArea] = js.undefined
+  
+  /**
+    * Binds the UI component to data.
+    */
+  var dataSource: js.UndefOr[js.Array[Any] | PivotGridDataSource | Options | Null] = js.undefined
+  
+  /**
+    * Specifies whether HTML tags are displayed as plain text or applied to cell values.
+    */
+  var encodeHtml: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Configures client-side exporting.
+    */
+  var `export`: js.UndefOr[Enabled] = js.undefined
+  
+  /**
+    * The Field Chooser configuration properties.
+    */
+  var fieldChooser: js.UndefOr[ApplyChangesMode] = js.undefined
+  
+  /**
+    * Configures the field panel.
+    */
+  var fieldPanel: js.UndefOr[AllowFieldDragging] = js.undefined
+  
+  /**
+    * Configures the header filter feature.
+    */
+  var headerFilter: js.UndefOr[SearchTimeout] = js.undefined
+  
+  /**
+    * Specifies whether or not to hide rows and columns with no data.
+    */
   var hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined
-  /** Specifies options configuring the load panel. */
-  var loadPanel: js.UndefOr[AnonShowIndicator] = js.undefined
-  /** A function that is executed when a pivot grid cell is clicked or tapped. */
-  var onCellClick: js.UndefOr[js.Function1[/* e */ AnonArea, _]] = js.undefined
-  /** A function that is executed after a pivot grid cell is created. */
-  var onCellPrepared: js.UndefOr[js.Function1[/* e */ AnonCell, _]] = js.undefined
-  /** A function that is executed before the context menu is rendered. */
-  var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ AnonColumnFields, _]] = js.undefined
-  /** A function that is executed after data is exported. */
-  var onExported: js.UndefOr[js.Function1[/* e */ AnonComponentDxPivotGrid, _]] = js.undefined
-  /** A function that is executed before data is exported. */
-  var onExporting: js.UndefOr[js.Function1[/* e */ AnonFileNameModel, _]] = js.undefined
-  /** A function that is executed before a file with exported data is saved to the user's local storage. */
-  var onFileSaving: js.UndefOr[js.Function1[/* e */ AnonFileNameFormat, _]] = js.undefined
-  /** Specifies the layout of items in the row header. */
-  var rowHeaderLayout: js.UndefOr[standard | tree] = js.undefined
-  /** A configuration object specifying scrolling options. */
-  var scrolling: js.UndefOr[AnonUseNative] = js.undefined
-  /** Specifies whether the outer borders of the grid are visible or not. */
+  
+  /**
+    * Specifies properties configuring the load panel.
+    */
+  var loadPanel: js.UndefOr[IndicatorSrc] = js.undefined
+  
+  /**
+    * A function that is executed when a pivot grid cell is clicked or tapped.
+    */
+  var onCellClick: js.UndefOr[js.Function1[/* e */ CellClickEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after a pivot grid cell is created.
+    */
+  var onCellPrepared: js.UndefOr[js.Function1[/* e */ CellPreparedEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before the context menu is rendered.
+    */
+  var onContextMenuPreparing: js.UndefOr[js.Function1[/* e */ ContextMenuPreparingEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed after data is exported.
+    * @deprecated Since v20.2, we recommend ExcelJS-based export which does not use this property.
+    */
+  var onExported: js.UndefOr[js.Function1[/* e */ ExportedEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before data is exported.
+    */
+  var onExporting: js.UndefOr[js.Function1[/* e */ ExportingEvent, Unit]] = js.undefined
+  
+  /**
+    * A function that is executed before a file with exported data is saved to the user&apos;s local storage.
+    * @deprecated Since v20.2, we recommend ExcelJS-based export which does not use this property.
+    */
+  var onFileSaving: js.UndefOr[js.Function1[/* e */ FileSavingEvent, Unit]] = js.undefined
+  
+  /**
+    * Specifies the layout of items in the row header.
+    */
+  var rowHeaderLayout: js.UndefOr[PivotGridRowHeaderLayout] = js.undefined
+  
+  /**
+    * A configuration object specifying scrolling properties.
+    */
+  var scrolling: js.UndefOr[Mode] = js.undefined
+  
+  /**
+    * Specifies whether the outer borders of the grid are visible or not.
+    */
   var showBorders: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Grand Total column. */
+  
+  /**
+    * Specifies whether to display the Grand Total column.
+    */
   var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Total columns. */
+  
+  /**
+    * Specifies whether to display the Total columns.
+    */
   var showColumnTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Grand Total row. */
+  
+  /**
+    * Specifies whether to display the Grand Total row.
+    */
   var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether to display the Total rows. Applies only if rowHeaderLayout is "standard". */
+  
+  /**
+    * Specifies whether to display the Total rows. Applies only if rowHeaderLayout is &apos;standard&apos;.
+    */
   var showRowTotals: js.UndefOr[Boolean] = js.undefined
-  /** Specifies where to show the total rows or columns. Applies only if rowHeaderLayout is "standard". */
-  var showTotalsPrior: js.UndefOr[both | columns | none | rows] = js.undefined
-  /** A configuration object specifying options related to state storing. */
-  var stateStoring: js.UndefOr[AnonCustomLoad] = js.undefined
-  /** Strings that can be changed or localized in the PivotGrid widget. */
-  var texts: js.UndefOr[AnonCollapseAll] = js.undefined
-  /** Specifies whether long text in header items should be wrapped. */
+  
+  /**
+    * Specifies where to show the total rows or columns.
+    */
+  var showTotalsPrior: js.UndefOr[PivotGridTotalDisplayMode] = js.undefined
+  
+  /**
+    * A configuration object specifying properties related to state storing.
+    */
+  var stateStoring: js.UndefOr[CustomLoad] = js.undefined
+  
+  /**
+    * Strings that can be changed or localized in the PivotGrid UI component.
+    */
+  var texts: js.UndefOr[CollapseAll] = js.undefined
+  
+  /**
+    * Specifies whether long text in header items should be wrapped.
+    */
   var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxPivotGridOptions {
-  @scala.inline
-  def apply(
-    accessKey: String = null,
-    activeStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    allowExpandAll: js.UndefOr[Boolean] = js.undefined,
-    allowFiltering: js.UndefOr[Boolean] = js.undefined,
-    allowSorting: js.UndefOr[Boolean] = js.undefined,
-    allowSortingBySummary: js.UndefOr[Boolean] = js.undefined,
-    bindingOptions: js.Any = null,
-    dataFieldArea: column | row = null,
-    dataSource: js.Array[_] | PivotGridDataSource | PivotGridDataSourceOptions = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    elementAttr: js.Any = null,
-    export: AnonIgnoreExcelErrors = null,
-    fieldChooser: AnonApplyChangesMode = null,
-    fieldPanel: AnonAllowFieldDragging = null,
-    focusStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    headerFilter: AnonSearchTimeout = null,
-    height: Double | String | (js.Function0[Double | String]) = null,
-    hideEmptySummaryCells: js.UndefOr[Boolean] = js.undefined,
-    hint: String = null,
-    hoverStateEnabled: js.UndefOr[Boolean] = js.undefined,
-    loadPanel: AnonShowIndicator = null,
-    onCellClick: /* e */ AnonArea => CallbackTo[js.Any] = null,
-    onCellPrepared: /* e */ AnonCell => CallbackTo[js.Any] = null,
-    onContentReady: /* e */ AnonComponentElement[dxPivotGrid] => CallbackTo[js.Any] = null,
-    onContextMenuPreparing: /* e */ AnonColumnFields => CallbackTo[js.Any] = null,
-    onDisposing: /* e */ AnonModel[dxPivotGrid] => CallbackTo[js.Any] = null,
-    onExported: /* e */ AnonComponentDxPivotGrid => CallbackTo[js.Any] = null,
-    onExporting: /* e */ AnonFileNameModel => CallbackTo[js.Any] = null,
-    onFileSaving: /* e */ AnonFileNameFormat => CallbackTo[js.Any] = null,
-    onInitialized: /* e */ AnonElement[dxPivotGrid] => CallbackTo[js.Any] = null,
-    onOptionChanged: /* e */ AnonName[dxPivotGrid] => CallbackTo[js.Any] = null,
-    rowHeaderLayout: standard | tree = null,
-    rtlEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrolling: AnonUseNative = null,
-    showBorders: js.UndefOr[Boolean] = js.undefined,
-    showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    showColumnTotals: js.UndefOr[Boolean] = js.undefined,
-    showRowGrandTotals: js.UndefOr[Boolean] = js.undefined,
-    showRowTotals: js.UndefOr[Boolean] = js.undefined,
-    showTotalsPrior: both | columns | none | rows = null,
-    stateStoring: AnonCustomLoad = null,
-    tabIndex: Int | Double = null,
-    texts: AnonCollapseAll = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String | (js.Function0[Double | String]) = null,
-    wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
-  ): dxPivotGridOptions = {
+  
+  inline def apply(): dxPivotGridOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(activeStateEnabled)) __obj.updateDynamic("activeStateEnabled")(activeStateEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowExpandAll)) __obj.updateDynamic("allowExpandAll")(allowExpandAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowSortingBySummary)) __obj.updateDynamic("allowSortingBySummary")(allowSortingBySummary.asInstanceOf[js.Any])
-    if (bindingOptions != null) __obj.updateDynamic("bindingOptions")(bindingOptions.asInstanceOf[js.Any])
-    if (dataFieldArea != null) __obj.updateDynamic("dataFieldArea")(dataFieldArea.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (elementAttr != null) __obj.updateDynamic("elementAttr")(elementAttr.asInstanceOf[js.Any])
-    if (export != null) __obj.updateDynamic("export")(export.asInstanceOf[js.Any])
-    if (fieldChooser != null) __obj.updateDynamic("fieldChooser")(fieldChooser.asInstanceOf[js.Any])
-    if (fieldPanel != null) __obj.updateDynamic("fieldPanel")(fieldPanel.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusStateEnabled)) __obj.updateDynamic("focusStateEnabled")(focusStateEnabled.asInstanceOf[js.Any])
-    if (headerFilter != null) __obj.updateDynamic("headerFilter")(headerFilter.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideEmptySummaryCells)) __obj.updateDynamic("hideEmptySummaryCells")(hideEmptySummaryCells.asInstanceOf[js.Any])
-    if (hint != null) __obj.updateDynamic("hint")(hint.asInstanceOf[js.Any])
-    if (!js.isUndefined(hoverStateEnabled)) __obj.updateDynamic("hoverStateEnabled")(hoverStateEnabled.asInstanceOf[js.Any])
-    if (loadPanel != null) __obj.updateDynamic("loadPanel")(loadPanel.asInstanceOf[js.Any])
-    if (onCellClick != null) __obj.updateDynamic("onCellClick")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonArea) => onCellClick(t0).runNow()))
-    if (onCellPrepared != null) __obj.updateDynamic("onCellPrepared")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonCell) => onCellPrepared(t0).runNow()))
-    if (onContentReady != null) __obj.updateDynamic("onContentReady")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentElement[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid]) => onContentReady(t0).runNow()))
-    if (onContextMenuPreparing != null) __obj.updateDynamic("onContextMenuPreparing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonColumnFields) => onContextMenuPreparing(t0).runNow()))
-    if (onDisposing != null) __obj.updateDynamic("onDisposing")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonModel[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid]) => onDisposing(t0).runNow()))
-    if (onExported != null) __obj.updateDynamic("onExported")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonComponentDxPivotGrid) => onExported(t0).runNow()))
-    if (onExporting != null) __obj.updateDynamic("onExporting")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonFileNameModel) => onExporting(t0).runNow()))
-    if (onFileSaving != null) __obj.updateDynamic("onFileSaving")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonFileNameFormat) => onFileSaving(t0).runNow()))
-    if (onInitialized != null) __obj.updateDynamic("onInitialized")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonElement[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid]) => onInitialized(t0).runNow()))
-    if (onOptionChanged != null) __obj.updateDynamic("onOptionChanged")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.devextreme.AnonName[typingsJapgolly.devextreme.mod.DevExpress.ui.dxPivotGrid]) => onOptionChanged(t0).runNow()))
-    if (rowHeaderLayout != null) __obj.updateDynamic("rowHeaderLayout")(rowHeaderLayout.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtlEnabled)) __obj.updateDynamic("rtlEnabled")(rtlEnabled.asInstanceOf[js.Any])
-    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnGrandTotals)) __obj.updateDynamic("showColumnGrandTotals")(showColumnGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showColumnTotals)) __obj.updateDynamic("showColumnTotals")(showColumnTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowGrandTotals)) __obj.updateDynamic("showRowGrandTotals")(showRowGrandTotals.asInstanceOf[js.Any])
-    if (!js.isUndefined(showRowTotals)) __obj.updateDynamic("showRowTotals")(showRowTotals.asInstanceOf[js.Any])
-    if (showTotalsPrior != null) __obj.updateDynamic("showTotalsPrior")(showTotalsPrior.asInstanceOf[js.Any])
-    if (stateStoring != null) __obj.updateDynamic("stateStoring")(stateStoring.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (texts != null) __obj.updateDynamic("texts")(texts.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (!js.isUndefined(wordWrapEnabled)) __obj.updateDynamic("wordWrapEnabled")(wordWrapEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPivotGridOptions]
   }
+  
+  extension [Self <: dxPivotGridOptions](x: Self) {
+    
+    inline def setAllowExpandAll(value: Boolean): Self = StObject.set(x, "allowExpandAll", value.asInstanceOf[js.Any])
+    
+    inline def setAllowExpandAllUndefined: Self = StObject.set(x, "allowExpandAll", js.undefined)
+    
+    inline def setAllowFiltering(value: Boolean): Self = StObject.set(x, "allowFiltering", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFilteringUndefined: Self = StObject.set(x, "allowFiltering", js.undefined)
+    
+    inline def setAllowSorting(value: Boolean): Self = StObject.set(x, "allowSorting", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSortingBySummary(value: Boolean): Self = StObject.set(x, "allowSortingBySummary", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSortingBySummaryUndefined: Self = StObject.set(x, "allowSortingBySummary", js.undefined)
+    
+    inline def setAllowSortingUndefined: Self = StObject.set(x, "allowSorting", js.undefined)
+    
+    inline def setDataFieldArea(value: PivotGridDataFieldArea): Self = StObject.set(x, "dataFieldArea", value.asInstanceOf[js.Any])
+    
+    inline def setDataFieldAreaUndefined: Self = StObject.set(x, "dataFieldArea", js.undefined)
+    
+    inline def setDataSource(value: js.Array[Any] | PivotGridDataSource | Options): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceNull: Self = StObject.set(x, "dataSource", null)
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
+    inline def setEncodeHtml(value: Boolean): Self = StObject.set(x, "encodeHtml", value.asInstanceOf[js.Any])
+    
+    inline def setEncodeHtmlUndefined: Self = StObject.set(x, "encodeHtml", js.undefined)
+    
+    inline def setExport(value: Enabled): Self = StObject.set(x, "export", value.asInstanceOf[js.Any])
+    
+    inline def setExportUndefined: Self = StObject.set(x, "export", js.undefined)
+    
+    inline def setFieldChooser(value: ApplyChangesMode): Self = StObject.set(x, "fieldChooser", value.asInstanceOf[js.Any])
+    
+    inline def setFieldChooserUndefined: Self = StObject.set(x, "fieldChooser", js.undefined)
+    
+    inline def setFieldPanel(value: AllowFieldDragging): Self = StObject.set(x, "fieldPanel", value.asInstanceOf[js.Any])
+    
+    inline def setFieldPanelUndefined: Self = StObject.set(x, "fieldPanel", js.undefined)
+    
+    inline def setHeaderFilter(value: SearchTimeout): Self = StObject.set(x, "headerFilter", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderFilterUndefined: Self = StObject.set(x, "headerFilter", js.undefined)
+    
+    inline def setHideEmptySummaryCells(value: Boolean): Self = StObject.set(x, "hideEmptySummaryCells", value.asInstanceOf[js.Any])
+    
+    inline def setHideEmptySummaryCellsUndefined: Self = StObject.set(x, "hideEmptySummaryCells", js.undefined)
+    
+    inline def setLoadPanel(value: IndicatorSrc): Self = StObject.set(x, "loadPanel", value.asInstanceOf[js.Any])
+    
+    inline def setLoadPanelUndefined: Self = StObject.set(x, "loadPanel", js.undefined)
+    
+    inline def setOnCellClick(value: /* e */ CellClickEvent => Callback): Self = StObject.set(x, "onCellClick", js.Any.fromFunction1((t0: /* e */ CellClickEvent) => value(t0).runNow()))
+    
+    inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+    
+    inline def setOnCellPrepared(value: /* e */ CellPreparedEvent => Callback): Self = StObject.set(x, "onCellPrepared", js.Any.fromFunction1((t0: /* e */ CellPreparedEvent) => value(t0).runNow()))
+    
+    inline def setOnCellPreparedUndefined: Self = StObject.set(x, "onCellPrepared", js.undefined)
+    
+    inline def setOnContextMenuPreparing(value: /* e */ ContextMenuPreparingEvent => Callback): Self = StObject.set(x, "onContextMenuPreparing", js.Any.fromFunction1((t0: /* e */ ContextMenuPreparingEvent) => value(t0).runNow()))
+    
+    inline def setOnContextMenuPreparingUndefined: Self = StObject.set(x, "onContextMenuPreparing", js.undefined)
+    
+    inline def setOnExported(value: /* e */ ExportedEvent => Callback): Self = StObject.set(x, "onExported", js.Any.fromFunction1((t0: /* e */ ExportedEvent) => value(t0).runNow()))
+    
+    inline def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
+    
+    inline def setOnExporting(value: /* e */ ExportingEvent => Callback): Self = StObject.set(x, "onExporting", js.Any.fromFunction1((t0: /* e */ ExportingEvent) => value(t0).runNow()))
+    
+    inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
+    
+    inline def setOnFileSaving(value: /* e */ FileSavingEvent => Callback): Self = StObject.set(x, "onFileSaving", js.Any.fromFunction1((t0: /* e */ FileSavingEvent) => value(t0).runNow()))
+    
+    inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
+    
+    inline def setRowHeaderLayout(value: PivotGridRowHeaderLayout): Self = StObject.set(x, "rowHeaderLayout", value.asInstanceOf[js.Any])
+    
+    inline def setRowHeaderLayoutUndefined: Self = StObject.set(x, "rowHeaderLayout", js.undefined)
+    
+    inline def setScrolling(value: Mode): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+    
+    inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+    
+    inline def setShowBorders(value: Boolean): Self = StObject.set(x, "showBorders", value.asInstanceOf[js.Any])
+    
+    inline def setShowBordersUndefined: Self = StObject.set(x, "showBorders", js.undefined)
+    
+    inline def setShowColumnGrandTotals(value: Boolean): Self = StObject.set(x, "showColumnGrandTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowColumnGrandTotalsUndefined: Self = StObject.set(x, "showColumnGrandTotals", js.undefined)
+    
+    inline def setShowColumnTotals(value: Boolean): Self = StObject.set(x, "showColumnTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowColumnTotalsUndefined: Self = StObject.set(x, "showColumnTotals", js.undefined)
+    
+    inline def setShowRowGrandTotals(value: Boolean): Self = StObject.set(x, "showRowGrandTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowRowGrandTotalsUndefined: Self = StObject.set(x, "showRowGrandTotals", js.undefined)
+    
+    inline def setShowRowTotals(value: Boolean): Self = StObject.set(x, "showRowTotals", value.asInstanceOf[js.Any])
+    
+    inline def setShowRowTotalsUndefined: Self = StObject.set(x, "showRowTotals", js.undefined)
+    
+    inline def setShowTotalsPrior(value: PivotGridTotalDisplayMode): Self = StObject.set(x, "showTotalsPrior", value.asInstanceOf[js.Any])
+    
+    inline def setShowTotalsPriorUndefined: Self = StObject.set(x, "showTotalsPrior", js.undefined)
+    
+    inline def setStateStoring(value: CustomLoad): Self = StObject.set(x, "stateStoring", value.asInstanceOf[js.Any])
+    
+    inline def setStateStoringUndefined: Self = StObject.set(x, "stateStoring", js.undefined)
+    
+    inline def setTexts(value: CollapseAll): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
+    
+    inline def setTextsUndefined: Self = StObject.set(x, "texts", js.undefined)
+    
+    inline def setWordWrapEnabled(value: Boolean): Self = StObject.set(x, "wordWrapEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapEnabledUndefined: Self = StObject.set(x, "wordWrapEnabled", js.undefined)
+  }
 }
-

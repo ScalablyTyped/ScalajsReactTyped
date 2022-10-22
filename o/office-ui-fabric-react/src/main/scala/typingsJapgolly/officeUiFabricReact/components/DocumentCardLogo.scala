@@ -1,58 +1,51 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogo
-import typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps
-import typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoStyleProps
-import typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoStyles
-import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDottypesMod.IDocumentCardLogo
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDottypesMod.IDocumentCardLogoProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDottypesMod.IDocumentCardLogoStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDottypesMod.IDocumentCardLogoStyles
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DocumentCardLogo {
-  def apply(
-    logoIcon: String,
-    className: String = null,
-    componentRef: IRefObject[IDocumentCardLogo] = null,
-    logoName: String = null,
-    styles: IStyleFunctionOrObject[IDocumentCardLogoStyleProps, IDocumentCardLogoStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDocumentCardLogoProps, 
-    LegacyRef[typingsJapgolly.officeUiFabricReact.documentCardLogoBaseMod.DocumentCardLogoBase], 
-    Unit, 
-    IDocumentCardLogoProps
-  ] = {
-    val __obj = js.Dynamic.literal(logoIcon = logoIcon.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (logoName != null) __obj.updateDynamic("logoName")(logoName.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.react.mod.LegacyRef[typingsJapgolly.officeUiFabricReact.documentCardLogoBaseMod.DocumentCardLogoBase]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.documentCardLogoTypesMod.IDocumentCardLogoProps])(children: _*)
+  inline def apply(logoIcon: String): Builder = {
+    val __props = js.Dynamic.literal(logoIcon = logoIcon.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDocumentCardLogoProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "DocumentCardLogo")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDocumentCardDocumentCardLogoDotbaseMod.DocumentCardLogoBase
+        ] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDocumentCardLogo]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDocumentCardLogo | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDocumentCardLogo | Null) => value(t0).runNow()))
+    
+    inline def logoName(value: String): this.type = set("logoName", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IDocumentCardLogoStyleProps, IDocumentCardLogoStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDocumentCardLogoStyleProps => DeepPartial[IDocumentCardLogoStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDocumentCardLogoProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

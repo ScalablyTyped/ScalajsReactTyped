@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to the form as a whole. A FormResponse can be used in three ways: to access
@@ -27,51 +27,76 @@ import scala.scalajs.js.annotation._
   *       }
   *     }
   */
-trait FormResponse extends js.Object {
+trait FormResponse extends StObject {
+  
   def getEditResponseUrl(): String
+  
   def getGradableItemResponses(): js.Array[ItemResponse]
+  
   def getGradableResponseForItem(item: Item): ItemResponse
+  
   def getId(): String
+  
   def getItemResponses(): js.Array[ItemResponse]
+  
   def getRespondentEmail(): String
+  
   def getResponseForItem(item: Item): ItemResponse
+  
   def getTimestamp(): Date
+  
   def submit(): FormResponse
+  
   def toPrefilledUrl(): String
+  
   def withItemGrade(gradedResponse: ItemResponse): FormResponse
+  
   def withItemResponse(response: ItemResponse): FormResponse
 }
-
 object FormResponse {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getEditResponseUrl: CallbackTo[String],
     getGradableItemResponses: CallbackTo[js.Array[ItemResponse]],
-    getGradableResponseForItem: Item => CallbackTo[ItemResponse],
+    getGradableResponseForItem: Item => ItemResponse,
     getId: CallbackTo[String],
     getItemResponses: CallbackTo[js.Array[ItemResponse]],
     getRespondentEmail: CallbackTo[String],
-    getResponseForItem: Item => CallbackTo[ItemResponse],
+    getResponseForItem: Item => ItemResponse,
     getTimestamp: CallbackTo[Date],
     submit: CallbackTo[FormResponse],
     toPrefilledUrl: CallbackTo[String],
-    withItemGrade: ItemResponse => CallbackTo[FormResponse],
-    withItemResponse: ItemResponse => CallbackTo[FormResponse]
+    withItemGrade: ItemResponse => FormResponse,
+    withItemResponse: ItemResponse => FormResponse
   ): FormResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getEditResponseUrl")(getEditResponseUrl.toJsFn)
-    __obj.updateDynamic("getGradableItemResponses")(getGradableItemResponses.toJsFn)
-    __obj.updateDynamic("getGradableResponseForItem")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms.Item) => getGradableResponseForItem(t0).runNow()))
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getItemResponses")(getItemResponses.toJsFn)
-    __obj.updateDynamic("getRespondentEmail")(getRespondentEmail.toJsFn)
-    __obj.updateDynamic("getResponseForItem")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms.Item) => getResponseForItem(t0).runNow()))
-    __obj.updateDynamic("getTimestamp")(getTimestamp.toJsFn)
-    __obj.updateDynamic("submit")(submit.toJsFn)
-    __obj.updateDynamic("toPrefilledUrl")(toPrefilledUrl.toJsFn)
-    __obj.updateDynamic("withItemGrade")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms.ItemResponse) => withItemGrade(t0).runNow()))
-    __obj.updateDynamic("withItemResponse")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms.ItemResponse) => withItemResponse(t0).runNow()))
+    val __obj = js.Dynamic.literal(getEditResponseUrl = getEditResponseUrl.toJsFn, getGradableItemResponses = getGradableItemResponses.toJsFn, getGradableResponseForItem = js.Any.fromFunction1(getGradableResponseForItem), getId = getId.toJsFn, getItemResponses = getItemResponses.toJsFn, getRespondentEmail = getRespondentEmail.toJsFn, getResponseForItem = js.Any.fromFunction1(getResponseForItem), getTimestamp = getTimestamp.toJsFn, submit = submit.toJsFn, toPrefilledUrl = toPrefilledUrl.toJsFn, withItemGrade = js.Any.fromFunction1(withItemGrade), withItemResponse = js.Any.fromFunction1(withItemResponse))
     __obj.asInstanceOf[FormResponse]
   }
+  
+  extension [Self <: FormResponse](x: Self) {
+    
+    inline def setGetEditResponseUrl(value: CallbackTo[String]): Self = StObject.set(x, "getEditResponseUrl", value.toJsFn)
+    
+    inline def setGetGradableItemResponses(value: CallbackTo[js.Array[ItemResponse]]): Self = StObject.set(x, "getGradableItemResponses", value.toJsFn)
+    
+    inline def setGetGradableResponseForItem(value: Item => ItemResponse): Self = StObject.set(x, "getGradableResponseForItem", js.Any.fromFunction1(value))
+    
+    inline def setGetId(value: CallbackTo[String]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetItemResponses(value: CallbackTo[js.Array[ItemResponse]]): Self = StObject.set(x, "getItemResponses", value.toJsFn)
+    
+    inline def setGetRespondentEmail(value: CallbackTo[String]): Self = StObject.set(x, "getRespondentEmail", value.toJsFn)
+    
+    inline def setGetResponseForItem(value: Item => ItemResponse): Self = StObject.set(x, "getResponseForItem", js.Any.fromFunction1(value))
+    
+    inline def setGetTimestamp(value: CallbackTo[Date]): Self = StObject.set(x, "getTimestamp", value.toJsFn)
+    
+    inline def setSubmit(value: CallbackTo[FormResponse]): Self = StObject.set(x, "submit", value.toJsFn)
+    
+    inline def setToPrefilledUrl(value: CallbackTo[String]): Self = StObject.set(x, "toPrefilledUrl", value.toJsFn)
+    
+    inline def setWithItemGrade(value: ItemResponse => FormResponse): Self = StObject.set(x, "withItemGrade", js.Any.fromFunction1(value))
+    
+    inline def setWithItemResponse(value: ItemResponse => FormResponse): Self = StObject.set(x, "withItemResponse", js.Any.fromFunction1(value))
+  }
 }
-

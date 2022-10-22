@@ -1,41 +1,55 @@
 package typingsJapgolly.extjs.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IToolbar
-  extends typingsJapgolly.extjs.Ext.container.IContainer {
+  extends StObject
+     with typingsJapgolly.extjs.Ext.container.IContainer {
+  
   /** [Config Option] (String) */
   var defaultButtonUI: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var enableOverflow: js.UndefOr[Boolean] = js.undefined
+  
   /** [Property] (Boolean) */
   var isToolbar: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (String) */
   var menuTriggerCls: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var vertical: js.UndefOr[Boolean] = js.undefined
 }
-
 object IToolbar {
-  @scala.inline
-  def apply(
-    IContainer: typingsJapgolly.extjs.Ext.container.IContainer = null,
-    defaultButtonUI: java.lang.String = null,
-    enableOverflow: js.UndefOr[Boolean] = js.undefined,
-    isToolbar: js.UndefOr[Boolean] = js.undefined,
-    menuTriggerCls: java.lang.String = null,
-    vertical: js.UndefOr[Boolean] = js.undefined
-  ): IToolbar = {
+  
+  inline def apply(): IToolbar = {
     val __obj = js.Dynamic.literal()
-    if (IContainer != null) js.Dynamic.global.Object.assign(__obj, IContainer)
-    if (defaultButtonUI != null) __obj.updateDynamic("defaultButtonUI")(defaultButtonUI.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableOverflow)) __obj.updateDynamic("enableOverflow")(enableOverflow.asInstanceOf[js.Any])
-    if (!js.isUndefined(isToolbar)) __obj.updateDynamic("isToolbar")(isToolbar.asInstanceOf[js.Any])
-    if (menuTriggerCls != null) __obj.updateDynamic("menuTriggerCls")(menuTriggerCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[IToolbar]
   }
+  
+  extension [Self <: IToolbar](x: Self) {
+    
+    inline def setDefaultButtonUI(value: java.lang.String): Self = StObject.set(x, "defaultButtonUI", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultButtonUIUndefined: Self = StObject.set(x, "defaultButtonUI", js.undefined)
+    
+    inline def setEnableOverflow(value: Boolean): Self = StObject.set(x, "enableOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setEnableOverflowUndefined: Self = StObject.set(x, "enableOverflow", js.undefined)
+    
+    inline def setIsToolbar(value: Boolean): Self = StObject.set(x, "isToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setIsToolbarUndefined: Self = StObject.set(x, "isToolbar", js.undefined)
+    
+    inline def setMenuTriggerCls(value: java.lang.String): Self = StObject.set(x, "menuTriggerCls", value.asInstanceOf[js.Any])
+    
+    inline def setMenuTriggerClsUndefined: Self = StObject.set(x, "menuTriggerCls", js.undefined)
+    
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

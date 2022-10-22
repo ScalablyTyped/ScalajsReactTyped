@@ -2,20 +2,18 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.DrawerProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Drawer", JSImport.Namespace)
-@js.native
-object drawerMod extends js.Object {
-  @js.native
-  class Drawer ()
-    extends Component[DrawerProps, js.Object, js.Any]
+object drawerMod {
   
+  @JSImport("material-ui/Drawer", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[DrawerProps, js.Object, js.Any]
+  open class default () extends Drawer
   
+  @JSImport("material-ui/Drawer", "Drawer")
+  @js.native
+  open class Drawer ()
+    extends Component[DrawerProps, js.Object, Any]
 }
-

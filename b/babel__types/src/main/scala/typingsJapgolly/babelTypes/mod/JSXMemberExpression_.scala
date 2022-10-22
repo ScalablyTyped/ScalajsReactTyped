@@ -1,43 +1,38 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.JSXMemberExpression
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait JSXMemberExpression_
-  extends JSX
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with JSX {
+  
   var `object`: JSXMemberExpression_ | JSXIdentifier_
+  
   var property: JSXIdentifier_
+  
   @JSName("type")
   var type_JSXMemberExpression_ : JSXMemberExpression
 }
-
 object JSXMemberExpression_ {
-  @scala.inline
-  def apply(
-    `object`: JSXMemberExpression_ | JSXIdentifier_,
-    property: JSXIdentifier_,
-    `type`: JSXMemberExpression,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): JSXMemberExpression_ = {
-    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
+  
+  inline def apply(`object`: JSXMemberExpression_ | JSXIdentifier_, property: JSXIdentifier_): JSXMemberExpression_ = {
+    val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[JSXMemberExpression_]
   }
+  
+  extension [Self <: JSXMemberExpression_](x: Self) {
+    
+    inline def setObject(value: JSXMemberExpression_ | JSXIdentifier_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    
+    inline def setProperty(value: JSXIdentifier_): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: JSXMemberExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

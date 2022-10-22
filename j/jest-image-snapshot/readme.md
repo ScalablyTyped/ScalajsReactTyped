@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-image-snapshot
 
-Typings are for version 2.11
+Typings are for version 5.1
 
 ## Library description:
 Jest matcher for image comparisons. Most commonly used for visual regression testing.
@@ -10,10 +10,10 @@ Jest matcher for image comparisons. Most commonly used for visual regression tes
 | ------------------ | :-------------: |
 | Full name          | jest-image-snapshot |
 | Keywords           | test, amex, visual testing, css, jest, browser testing |
-| # releases         | 14 |
-| # dependents       | 33 |
-| # downloads        | 4322760 |
-| # stars            | 4 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 1589664.3333333333 |
+| # stars            | 3433.0 |
 
 ## Links
 - [Homepage](https://github.com/americanexpress/jest-image-snapshot#readme)

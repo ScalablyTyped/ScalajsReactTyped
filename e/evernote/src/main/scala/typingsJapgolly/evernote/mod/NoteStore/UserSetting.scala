@@ -1,29 +1,27 @@
 package typingsJapgolly.evernote.mod.NoteStore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UserSetting extends js.Object
-
+sealed trait UserSetting extends StObject
 @JSImport("evernote", "NoteStore.UserSetting")
 @js.native
-object UserSetting extends js.Object {
-  @js.native
-  sealed trait RECEIVE_REMINDER_EMAIL extends UserSetting
-  
-  @js.native
-  sealed trait TIMEZONE extends UserSetting
+object UserSetting extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UserSetting with Double] = js.native
-  /* 1 */ @js.native
-  object RECEIVE_REMINDER_EMAIL extends TopLevel[RECEIVE_REMINDER_EMAIL with Double]
+  def apply(value: Double): js.UndefOr[UserSetting & Double] = js.native
   
-  /* 2 */ @js.native
-  object TIMEZONE extends TopLevel[TIMEZONE with Double]
+  @js.native
+  sealed trait RECEIVE_REMINDER_EMAIL
+    extends StObject
+       with UserSetting
+  /* 1 */ val RECEIVE_REMINDER_EMAIL: typingsJapgolly.evernote.mod.NoteStore.UserSetting.RECEIVE_REMINDER_EMAIL & Double = js.native
   
+  @js.native
+  sealed trait TIMEZONE
+    extends StObject
+       with UserSetting
+  /* 2 */ val TIMEZONE: typingsJapgolly.evernote.mod.NoteStore.UserSetting.TIMEZONE & Double = js.native
 }
-

@@ -1,21 +1,26 @@
 package typingsJapgolly.streamMeter
 
 import typingsJapgolly.node.streamMod.Transform
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("stream-meter", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply(): StreamMeter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[StreamMeter]
+  inline def apply(maxBytes: Double): StreamMeter = ^.asInstanceOf[js.Dynamic].apply(maxBytes.asInstanceOf[js.Any]).asInstanceOf[StreamMeter]
+  
+  @JSImport("stream-meter", JSImport.Namespace)
   @js.native
-  class StreamMeter () extends Transform {
+  val ^ : js.Any = js.native
+  
+  @JSImport("stream-meter", "StreamMeter")
+  @js.native
+  open class StreamMeter () extends Transform {
     def this(maxBytes: Double) = this()
+    
     var bytes: Double = js.native
+    
     var maxBytes: Double = js.native
   }
-  
-  def apply(): StreamMeter = js.native
-  def apply(maxBytes: Double): StreamMeter = js.native
 }
-

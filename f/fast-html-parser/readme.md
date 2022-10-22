@@ -11,9 +11,9 @@ A very fast HTML parser, generating a simplified DOM, with basic element query s
 | Full name          | fast-html-parser |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 25 |
-| # downloads        | 130803 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 16429.666666666668 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/ashi009/node-fast-html-parser)

@@ -1,21 +1,17 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.musicmatch.musicmatchNumbers.`0`
-  - typingsJapgolly.musicmatch.musicmatchNumbers.`1`
+  - typingsJapgolly.musicmatch.musicmatchInts.`0`
+  - typingsJapgolly.musicmatch.musicmatchInts.`1`
 */
-trait TBoolean extends js.Object
-
+trait TBoolean extends StObject
 object TBoolean {
-  @scala.inline
-  def `0`: typingsJapgolly.musicmatch.musicmatchNumbers.`0` = this.cast(0)
-  @scala.inline
-  def `1`: typingsJapgolly.musicmatch.musicmatchNumbers.`1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `0`: typingsJapgolly.musicmatch.musicmatchInts.`0` = 0.asInstanceOf[typingsJapgolly.musicmatch.musicmatchInts.`0`]
+  
+  inline def `1`: typingsJapgolly.musicmatch.musicmatchInts.`1` = 1.asInstanceOf[typingsJapgolly.musicmatch.musicmatchInts.`1`]
 }
-

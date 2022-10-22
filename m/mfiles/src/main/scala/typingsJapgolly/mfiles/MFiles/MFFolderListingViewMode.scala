@@ -1,47 +1,43 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`5`
-import typingsJapgolly.mfiles.mfilesNumbers.`6`
-import typingsJapgolly.mfiles.mfilesNumbers.`7`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`5`
+import typingsJapgolly.mfiles.mfilesInts.`6`
+import typingsJapgolly.mfiles.mfilesInts.`7`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`5`
-  - typingsJapgolly.mfiles.mfilesNumbers.`6`
-  - typingsJapgolly.mfiles.mfilesNumbers.`7`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`5`
+  - typingsJapgolly.mfiles.mfilesInts.`6`
+  - typingsJapgolly.mfiles.mfilesInts.`7`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
 */
-trait MFFolderListingViewMode extends js.Object
-
+trait MFFolderListingViewMode extends StObject
 object MFFolderListingViewMode {
-  @scala.inline
-  def Content: `8` = this.cast(8)
-  @scala.inline
-  def Details: `4` = this.cast(4)
-  @scala.inline
-  def Icon: `1` = this.cast(1)
-  @scala.inline
-  def List: `3` = this.cast(3)
-  @scala.inline
-  def SmallIcon: `2` = this.cast(2)
-  @scala.inline
-  def Thumbnail: `5` = this.cast(5)
-  @scala.inline
-  def Thumbstrip: `7` = this.cast(7)
-  @scala.inline
-  def Tile: `6` = this.cast(6)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Content: `8` = 8.asInstanceOf[`8`]
+  
+  inline def Details: `4` = 4.asInstanceOf[`4`]
+  
+  inline def Icon: `1` = 1.asInstanceOf[`1`]
+  
+  inline def List: `3` = 3.asInstanceOf[`3`]
+  
+  inline def SmallIcon: `2` = 2.asInstanceOf[`2`]
+  
+  inline def Thumbnail: `5` = 5.asInstanceOf[`5`]
+  
+  inline def Thumbstrip: `7` = 7.asInstanceOf[`7`]
+  
+  inline def Tile: `6` = 6.asInstanceOf[`6`]
 }
-

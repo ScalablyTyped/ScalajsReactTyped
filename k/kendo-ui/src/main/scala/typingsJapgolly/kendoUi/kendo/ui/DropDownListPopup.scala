@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropDownListPopup extends js.Object {
+trait DropDownListPopup extends StObject {
+  
   var appendTo: js.UndefOr[String] = js.undefined
+  
   var origin: js.UndefOr[String] = js.undefined
+  
   var position: js.UndefOr[String] = js.undefined
 }
-
 object DropDownListPopup {
-  @scala.inline
-  def apply(appendTo: String = null, origin: String = null, position: String = null): DropDownListPopup = {
+  
+  inline def apply(): DropDownListPopup = {
     val __obj = js.Dynamic.literal()
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropDownListPopup]
   }
+  
+  extension [Self <: DropDownListPopup](x: Self) {
+    
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

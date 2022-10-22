@@ -1,34 +1,40 @@
 package typingsJapgolly.smoothScrollbar
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.smoothScrollbar.directionMod.TrackDirection
-import typingsJapgolly.smoothScrollbar.trackMod.ScrollbarThumb
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.smoothScrollbar.interfacesTrackMod.ScrollbarThumb
+import typingsJapgolly.smoothScrollbar.trackDirectionMod.TrackDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("smooth-scrollbar/track/track", JSImport.Namespace)
-@js.native
-object trackTrackMod extends js.Object {
+object trackTrackMod {
+  
+  @JSImport("smooth-scrollbar/track/track", "ScrollbarTrack")
   @js.native
-  class ScrollbarTrack protected ()
-    extends typingsJapgolly.smoothScrollbar.trackMod.ScrollbarTrack {
+  open class ScrollbarTrack protected ()
+    extends StObject
+       with typingsJapgolly.smoothScrollbar.interfacesTrackMod.ScrollbarTrack {
     def this(direction: TrackDirection) = this()
     def this(direction: TrackDirection, thumbMinSize: Double) = this()
-    var _isShown: js.Any = js.native
-    /* CompleteClass */
-    override val element: HTMLElement = js.native
-    /* CompleteClass */
-    override val thumb: ScrollbarThumb = js.native
+    
+    /* private */ var _isShown: Any = js.native
+    
     /* CompleteClass */
     override def attachTo(container: HTMLElement): Unit = js.native
+    
+    /* CompleteClass */
+    override val element: HTMLElement = js.native
+    
     /* CompleteClass */
     override def hide(): Unit = js.native
+    
     /* CompleteClass */
     override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override val thumb: ScrollbarThumb = js.native
+    
     /* CompleteClass */
     override def update(scrollOffset: Double, containerSize: Double, pageSize: Double): Unit = js.native
   }
-  
 }
-

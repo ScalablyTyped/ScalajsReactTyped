@@ -2,9 +2,9 @@ package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -13,20 +13,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.blocked
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantined
 */
-trait DeviceManagementExchangeAccessState extends js.Object
-
+trait DeviceManagementExchangeAccessState extends StObject
 object DeviceManagementExchangeAccessState {
-  @scala.inline
-  def allowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowed = this.cast("allowed")
-  @scala.inline
-  def blocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blocked = this.cast("blocked")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def quarantined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantined = this.cast("quarantined")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def allowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowed = "allowed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allowed]
+  
+  inline def blocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.blocked = "blocked".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.blocked]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def quarantined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantined = "quarantined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.quarantined]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

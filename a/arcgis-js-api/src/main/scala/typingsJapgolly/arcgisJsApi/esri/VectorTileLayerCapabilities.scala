@@ -1,20 +1,24 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VectorTileLayerCapabilities extends Object {
+trait VectorTileLayerCapabilities
+  extends StObject
+     with Object {
+  
   var exportMap: VectorTileLayerCapabilitiesExportMap
+  
   /**
-    * Indicates options supported by the exportTiles operation. Will be `null` if the `supportsExportTiles` is `false`.
+    * Indicates options supported by the exportTiles operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
     */
-  var exportTiles: js.Any
+  var exportTiles: Any
+  
   /**
     * Indicates operations that can be performed on the service.
     *
@@ -22,21 +26,26 @@ trait VectorTileLayerCapabilities extends Object {
     */
   var operations: VectorTileLayerCapabilitiesOperations
 }
-
 object VectorTileLayerCapabilities {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     exportMap: VectorTileLayerCapabilitiesExportMap,
-    exportTiles: js.Any,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    exportTiles: Any,
+    hasOwnProperty: PropertyKey => Boolean,
     operations: VectorTileLayerCapabilitiesOperations,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean]
+    propertyIsEnumerable: PropertyKey => Boolean
   ): VectorTileLayerCapabilities = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], exportMap = exportMap.asInstanceOf[js.Any], exportTiles = exportTiles.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), operations = operations.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }
+  
+  extension [Self <: VectorTileLayerCapabilities](x: Self) {
+    
+    inline def setExportMap(value: VectorTileLayerCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
+    
+    inline def setExportTiles(value: Any): Self = StObject.set(x, "exportTiles", value.asInstanceOf[js.Any])
+    
+    inline def setOperations(value: VectorTileLayerCapabilitiesOperations): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+  }
 }
-

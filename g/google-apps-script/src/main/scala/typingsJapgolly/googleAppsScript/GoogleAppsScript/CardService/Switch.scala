@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A UI element that supports being toggled on or off. This can only be used within a KeyValue widget.
@@ -14,30 +13,45 @@ import scala.scalajs.js.annotation._
   *         .setSwitch(CardService.newSwitch()
   *             .setFieldName("form_input_switch_key")
   *             .setValue("form_input_switch_value")
+  *             .setControlType(CardService.SwitchControlType.SWITCH)
   *             .setOnChangeAction(CardService.newAction()
   *                 .setFunctionName("handleSwitchChange")));
   */
-trait Switch extends js.Object {
+trait Switch extends StObject {
+  
+  def setControlType(`type`: SwitchControlType): Switch
+  
   def setFieldName(fieldName: String): Switch
+  
   def setOnChangeAction(action: Action): Switch
+  
   def setSelected(selected: Boolean): Switch
+  
   def setValue(value: String): Switch
 }
-
 object Switch {
-  @scala.inline
-  def apply(
-    setFieldName: String => CallbackTo[Switch],
-    setOnChangeAction: Action => CallbackTo[Switch],
-    setSelected: Boolean => CallbackTo[Switch],
-    setValue: String => CallbackTo[Switch]
+  
+  inline def apply(
+    setControlType: SwitchControlType => Switch,
+    setFieldName: String => Switch,
+    setOnChangeAction: Action => Switch,
+    setSelected: Boolean => Switch,
+    setValue: String => Switch
   ): Switch = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setFieldName")(js.Any.fromFunction1((t0: java.lang.String) => setFieldName(t0).runNow()))
-    __obj.updateDynamic("setOnChangeAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnChangeAction(t0).runNow()))
-    __obj.updateDynamic("setSelected")(js.Any.fromFunction1((t0: scala.Boolean) => setSelected(t0).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: java.lang.String) => setValue(t0).runNow()))
+    val __obj = js.Dynamic.literal(setControlType = js.Any.fromFunction1(setControlType), setFieldName = js.Any.fromFunction1(setFieldName), setOnChangeAction = js.Any.fromFunction1(setOnChangeAction), setSelected = js.Any.fromFunction1(setSelected), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[Switch]
   }
+  
+  extension [Self <: Switch](x: Self) {
+    
+    inline def setSetControlType(value: SwitchControlType => Switch): Self = StObject.set(x, "setControlType", js.Any.fromFunction1(value))
+    
+    inline def setSetFieldName(value: String => Switch): Self = StObject.set(x, "setFieldName", js.Any.fromFunction1(value))
+    
+    inline def setSetOnChangeAction(value: Action => Switch): Self = StObject.set(x, "setOnChangeAction", js.Any.fromFunction1(value))
+    
+    inline def setSetSelected(value: Boolean => Switch): Self = StObject.set(x, "setSelected", js.Any.fromFunction1(value))
+    
+    inline def setSetValue(value: String => Switch): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+  }
 }
-

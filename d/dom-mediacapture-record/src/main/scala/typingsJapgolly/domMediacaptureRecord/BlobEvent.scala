@@ -1,16 +1,18 @@
 package typingsJapgolly.domMediacaptureRecord
 
-import org.scalajs.dom.raw.Blob
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Blob
+import typingsJapgolly.std.DOMHighResTimeStamp
+import typingsJapgolly.std.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("BlobEvent")
 @js.native
-class BlobEvent protected () extends Event_ {
-  def this(`type`: String, eventInitDict: BlobEventInit) = this()
+trait BlobEvent
+  extends StObject
+     with Event {
+  
   val data: Blob = js.native
-  val timecode: Double = js.native
+  
+  val timecode: DOMHighResTimeStamp = js.native
 }
-

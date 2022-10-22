@@ -1,33 +1,36 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait Mapping
-  extends TypeName
-     with BaseASTNode {
+trait Mapping
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with TypeName {
+  
   var keyType: ElementaryTypeName
+  
   @JSName("type")
   var type_Mapping: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Mapping
+  
   var valueType: TypeName
 }
-
 object Mapping {
-  @scala.inline
-  def apply(
-    keyType: ElementaryTypeName,
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Mapping,
-    valueType: TypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): Mapping = {
+  
+  inline def apply(keyType: ElementaryTypeName, valueType: TypeName): Mapping = {
     val __obj = js.Dynamic.literal(keyType = keyType.asInstanceOf[js.Any], valueType = valueType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Mapping")
     __obj.asInstanceOf[Mapping]
   }
+  
+  extension [Self <: Mapping](x: Self) {
+    
+    inline def setKeyType(value: ElementaryTypeName): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.Mapping): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValueType(value: TypeName): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+  }
 }
-

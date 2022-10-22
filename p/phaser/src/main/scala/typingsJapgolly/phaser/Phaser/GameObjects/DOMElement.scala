@@ -1,6 +1,6 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
 import typingsJapgolly.phaser.Phaser.Cache.BaseCache
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.AlphaSingle
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.BlendMode
@@ -10,11 +10,9 @@ import typingsJapgolly.phaser.Phaser.GameObjects.Components.ScrollFactor
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Transform
 import typingsJapgolly.phaser.Phaser.GameObjects.Components.Visible
 import typingsJapgolly.phaser.Phaser.Math.Vector4
-import typingsJapgolly.phaser.Phaser.Scene
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DOM Element Game Objects are a way to control and manipulate HTML Elements over the top of your game.
@@ -31,6 +29,9 @@ import scala.scalajs.js.annotation._
   * When this is added, Phaser will automatically create a DOM Container div that is positioned over the top
   * of the game canvas. This div is sized to match the canvas, and if the canvas size changes, as a result of
   * settings within the Scale Manager, the dom container is resized accordingly.
+  * 
+  * If you have not already done so, you have to provide a `parent` in the Game Configuration, or the DOM
+  * Container will fail to be created.
   * 
   * You can create a DOM Element by either passing in DOMStrings, or by passing in a reference to an existing
   * Element that you wish to be placed under the control of Phaser. For example:
@@ -63,16 +64,19 @@ import scala.scalajs.js.annotation._
   * 
   * Also, all DOM Elements are inserted into the same DOM Container, regardless of which Scene they are created in.
   * 
+  * Note that you should only have DOM Elements in a Scene with a _single_ Camera. If you require multiple cameras,
+  * use parallel scenes to achieve this.
+  * 
   * DOM Elements are a powerful way to align native HTML with your Phaser Game Objects. For example, you can insert
   * a login form for a multiplayer game directly into your title screen. Or a text input box for a highscore table.
   * Or a banner ad from a 3rd party service. Or perhaps you'd like to use them for high resolution text display and
   * UI. The choice is up to you, just remember that you're dealing with standard HTML and CSS floating over the top
   * of your game, and should treat it accordingly.
   */
-@JSGlobal("Phaser.GameObjects.DOMElement")
 @js.native
-class DOMElement protected ()
-  extends GameObject
+trait DOMElement
+  extends StObject
+     with GameObject
      with AlphaSingle
      with BlendMode
      with Depth
@@ -80,139 +84,7 @@ class DOMElement protected ()
      with ScrollFactor
      with Transform
      with Visible {
-  /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this DOM Element in the world. Default 0.
-    * @param y The vertical position of this DOM Element in the world. Default 0.
-    * @param element An existing DOM element, or a string. If a string starting with a # it will do a `getElementById` look-up on the string (minus the hash). Without a hash, it represents the type of element to create, i.e. 'div'.
-    * @param style If a string, will be set directly as the elements `style` property value. If a plain object, will be iterated and the values transferred. In both cases the values replacing whatever CSS styles may have been previously set.
-    * @param innerText If given, will be set directly as the elements `innerText` property value, replacing whatever was there before.
-    */
-  def this(scene: Scene) = this()
-  def this(scene: Scene, x: Double) = this()
-  def this(scene: Scene, x: Double, y: Double) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: String, style: js.Any, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: String, innerText: String) = this()
-  def this(scene: Scene, x: Double, y: Double, element: Element, style: js.Any, innerText: String) = this()
-  /**
-    * A reference to the HTML Cache.
-    */
-  var cache: BaseCache = js.native
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    */
-  /* CompleteClass */
-  override var depth: Double = js.native
-  /**
-    * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
-    * 
-    * The property `height` holds the un-scaled height of this DOM Element.
-    */
-  val displayHeight: Double = js.native
-  /**
-    * The computed display width of this Game Object, based on the `getBoundingClientRect` DOM call.
-    * 
-    * The property `width` holds the un-scaled width of this DOM Element.
-    */
-  val displayWidth: Double = js.native
-  /**
-    * The native (un-scaled) height of this Game Object.
-    * 
-    * For a DOM Element this property is read-only.
-    * 
-    * The property `displayHeight` holds the computed bounds of this DOM Element, factoring in scaling.
-    */
-  val height: Double = js.native
-  /**
-    * The actual DOM Element that this Game Object is bound to. For example, if you've created a `<div>`
-    * then this property is a direct reference to that element within the dom.
-    */
-  var node: Element = js.native
-  /**
-    * A reference to the parent DOM Container that the Game instance created when it started.
-    */
-  var parent: Element = js.native
-  /**
-    * The perspective CSS property value of the _parent DOM Container_. This determines the distance between the z=0
-    * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
-    * z > 0 becomes larger; each 3D-element with z < 0 becomes smaller. The strength of the effect is determined
-    * by the value of this property.
-    * 
-    * For more information see: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
-    * 
-    * **Changing this value changes it globally for all DOM Elements, as they all share the same parent container.**
-    */
-  var perspective: Double = js.native
-  /**
-    * A Vector4 that contains the 3D rotation of this DOM Element around a fixed axis in 3D space.
-    * 
-    * All values in the Vector4 are treated as degrees, unless the `rotate3dAngle` property is changed.
-    * 
-    * For more details see the following MDN page:
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
-    */
-  var rotate3d: Vector4 = js.native
-  /**
-    * The unit that represents the 3D rotation values. By default this is `deg` for degrees, but can
-    * be changed to any supported unit. See this page for further details:
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
-    */
-  var rotate3dAngle: String = js.native
-  /**
-    * The angle, in radians, by which to skew the DOM Element on the horizontal axis.
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-    */
-  var skewX: Double = js.native
-  /**
-    * The angle, in radians, by which to skew the DOM Element on the vertical axis.
-    * 
-    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
-    */
-  var skewY: Double = js.native
-  /**
-    * By default a DOM Element will have its transform, display, opacity, zIndex and blend mode properties
-    * updated when its rendered. If, for some reason, you don't want any of these changed other than the
-    * CSS transform, then set this flag to `true`. When `true` only the CSS Transform is applied and it's
-    * up to you to keep track of and set the other properties as required.
-    * 
-    * This can be handy if, for example, you've a nested DOM Element and you don't want the opacity to be
-    * picked-up by any of its children.
-    */
-  var transformOnly: Boolean = js.native
-  /**
-    * The visible state of the Game Object.
-    * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    */
-  /* CompleteClass */
-  override var visible: Boolean = js.native
-  /**
-    * The native (un-scaled) width of this Game Object.
-    * 
-    * For a DOM Element this property is read-only.
-    * 
-    * The property `displayWidth` holds the computed bounds of this DOM Element, factoring in scaling.
-    */
-  val width: Double = js.native
+  
   /**
     * Adds one or more native DOM event listeners onto the underlying Element of this Game Object.
     * The event is then dispatched via this Game Objects standard event emitter.
@@ -229,6 +101,12 @@ class DOMElement protected ()
     * @param events The DOM event/s to listen for. You can specify multiple events by separating them with spaces.
     */
   def addListener(events: String): this.type = js.native
+  
+  /**
+    * A reference to the HTML Cache.
+    */
+  var cache: BaseCache = js.native
+  
   /**
     * Creates a native DOM Element, adds it to the parent DOM Container and then binds it to this Game Object,
     * so you can control it. The `tagName` should be a string and is passed to `document.createElement`:
@@ -268,8 +146,10 @@ class DOMElement protected ()
   def createElement(tagName: String): this.type = js.native
   def createElement(tagName: String, style: String): this.type = js.native
   def createElement(tagName: String, style: String, innerText: String): this.type = js.native
-  def createElement(tagName: String, style: js.Any): this.type = js.native
-  def createElement(tagName: String, style: js.Any, innerText: String): this.type = js.native
+  def createElement(tagName: String, style: Any): this.type = js.native
+  def createElement(tagName: String, style: Any, innerText: String): this.type = js.native
+  def createElement(tagName: String, style: Unit, innerText: String): this.type = js.native
+  
   /**
     * Takes a block of html from the HTML Cache, that has previously been preloaded into the game, and then
     * creates a DOM Element from it. The loaded HTML is set as the `innerHTML` property of the created
@@ -304,6 +184,7 @@ class DOMElement protected ()
     */
   def createFromCache(The: String): this.type = js.native
   def createFromCache(The: String, tagName: String): this.type = js.native
+  
   /**
     * Takes a string of html and then creates a DOM Element from it. The HTML is set as the `innerHTML`
     * property of the created element.
@@ -326,11 +207,26 @@ class DOMElement protected ()
     * 
     * If this Game Object already has an Element, it is removed from the DOM entirely first.
     * Any event listeners you may have previously created will need to be re-created after this call.
-    * @param A string of html to be set as the `innerHTML` property of the created element.
+    * @param html A string of html to be set as the `innerHTML` property of the created element.
     * @param tagName The tag name of the element into which all of the html will be inserted. Defaults to a plain div tag. Default 'div'.
     */
-  def createFromHTML(A: String): this.type = js.native
-  def createFromHTML(A: String, tagName: String): this.type = js.native
+  def createFromHTML(html: String): this.type = js.native
+  def createFromHTML(html: String, tagName: String): this.type = js.native
+  
+  /**
+    * The computed display height of this Game Object, based on the `getBoundingClientRect` DOM call.
+    * 
+    * The property `height` holds the un-scaled height of this DOM Element.
+    */
+  val displayHeight: Double = js.native
+  
+  /**
+    * The computed display width of this Game Object, based on the `getBoundingClientRect` DOM call.
+    * 
+    * The property `width` holds the un-scaled width of this DOM Element.
+    */
+  val displayWidth: Double = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a matching id. It then returns this child if found, or `null` if not.
@@ -339,6 +235,7 @@ class DOMElement protected ()
     * @param id The id to search the children for.
     */
   def getChildByID(id: String): Element = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a matching name. It then returns this child if found, or `null` if not.
@@ -347,6 +244,7 @@ class DOMElement protected ()
     * @param name The name to search the children for.
     */
   def getChildByName(name: String): Element = js.native
+  
   /**
     * Gets all children from this DOM Elements node, using `querySelectorAll('*')` and then iterates through
     * them, looking for the first one that has a property matching the given key and value. It then returns this child
@@ -355,30 +253,79 @@ class DOMElement protected ()
     * @param value The value the property must strictly equal.
     */
   def getChildByProperty(property: String, value: String): Element = js.native
+  
+  /**
+    * The native (un-scaled) height of this Game Object.
+    * 
+    * For a DOM Element this property is read-only.
+    * 
+    * The property `displayHeight` holds the computed bounds of this DOM Element, factoring in scaling.
+    */
+  val height: Double = js.native
+  
+  /**
+    * The actual DOM Element that this Game Object is bound to. For example, if you've created a `<div>`
+    * then this property is a direct reference to that element within the dom.
+    */
+  var node: Element = js.native
+  
+  /**
+    * A reference to the parent DOM Container that the Game instance created when it started.
+    */
+  var parent: Element = js.native
+  
+  /**
+    * The perspective CSS property value of the _parent DOM Container_. This determines the distance between the z=0
+    * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
+    * z > 0 becomes larger; each 3D-element with z < 0 becomes smaller. The strength of the effect is determined
+    * by the value of this property.
+    * 
+    * For more information see: https://developer.mozilla.org/en-US/docs/Web/CSS/perspective
+    * 
+    * **Changing this value changes it globally for all DOM Elements, as they all share the same parent container.**
+    */
+  var perspective: Double = js.native
+  
+  /**
+    * Sets the CSS `pointerEvents` attribute on the DOM Element during rendering.
+    * 
+    * This is 'auto' by default. Changing it may have unintended side-effects with
+    * internal Phaser input handling, such as dragging, so only change this if you
+    * understand the implications.
+    */
+  var pointerEvents: String = js.native
+  
   /**
     * Removes the current DOM Element bound to this Game Object from the DOM entirely and resets the
     * `node` property of this Game Object to be `null`.
     */
   def removeElement(): this.type = js.native
+  
+  /**
+    * A Vector4 that contains the 3D rotation of this DOM Element around a fixed axis in 3D space.
+    * 
+    * All values in the Vector4 are treated as degrees, unless the `rotate3dAngle` property is changed.
+    * 
+    * For more details see the following MDN page:
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
+    */
+  var rotate3d: Vector4 = js.native
+  
+  /**
+    * The unit that represents the 3D rotation values. By default this is `deg` for degrees, but can
+    * be changed to any supported unit. See this page for further details:
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d
+    */
+  var rotate3dAngle: String = js.native
+  
   /**
     * Sets the `className` property of the DOM Element node and updates the internal sizes.
     * @param className A string representing the class or space-separated classes of the element.
     */
   def setClassName(className: String): this.type = js.native
-  /**
-    * The depth of this Game Object within the Scene.
-    * 
-    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
-    * of Game Objects, without actually moving their position in the display list.
-    * 
-    * The depth starts from zero (the default value) and increases from that point. A Game Object with a higher depth
-    * value will always render in front of one with a lower value.
-    * 
-    * Setting the depth will queue a depth sort event within the Scene.
-    * @param value The depth of this Game Object.
-    */
-  /* CompleteClass */
-  override def setDepth(value: integer): this.type = js.native
+  
   /**
     * Binds a new DOM Element to this Game Object. If this Game Object already has an Element it is removed from the DOM
     * entirely first. Any event listeners you may have previously created will need to be re-created on the new element.
@@ -427,18 +374,22 @@ class DOMElement protected ()
   def setElement(element: String): this.type = js.native
   def setElement(element: String, style: String): this.type = js.native
   def setElement(element: String, style: String, innerText: String): this.type = js.native
-  def setElement(element: String, style: js.Any): this.type = js.native
-  def setElement(element: String, style: js.Any, innerText: String): this.type = js.native
-  def setElement(element: typingsJapgolly.std.Element): this.type = js.native
-  def setElement(element: typingsJapgolly.std.Element, style: String): this.type = js.native
-  def setElement(element: typingsJapgolly.std.Element, style: String, innerText: String): this.type = js.native
-  def setElement(element: typingsJapgolly.std.Element, style: js.Any): this.type = js.native
-  def setElement(element: typingsJapgolly.std.Element, style: js.Any, innerText: String): this.type = js.native
+  def setElement(element: String, style: Any): this.type = js.native
+  def setElement(element: String, style: Any, innerText: String): this.type = js.native
+  def setElement(element: String, style: Unit, innerText: String): this.type = js.native
+  def setElement(element: Element): this.type = js.native
+  def setElement(element: Element, style: String): this.type = js.native
+  def setElement(element: Element, style: String, innerText: String): this.type = js.native
+  def setElement(element: Element, style: Any): this.type = js.native
+  def setElement(element: Element, style: Any, innerText: String): this.type = js.native
+  def setElement(element: Element, style: Unit, innerText: String): this.type = js.native
+  
   /**
     * Sets the `innerHTML` property of the DOM Element node and updates the internal sizes.
     * @param html A DOMString of html to be set as the `innerHTML` property of the element.
     */
   def setHTML(html: String): this.type = js.native
+  
   /**
     * Sets the perspective CSS property of the _parent DOM Container_. This determines the distance between the z=0
     * plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with
@@ -451,6 +402,7 @@ class DOMElement protected ()
     * @param value The perspective value, in pixels, that determines the distance between the z plane and the user.
     */
   def setPerspective(value: Double): this.type = js.native
+  
   /**
     * Sets the horizontal and vertical skew values of this DOM Element.
     * 
@@ -461,6 +413,8 @@ class DOMElement protected ()
   def setSkew(): this.type = js.native
   def setSkew(x: Double): this.type = js.native
   def setSkew(x: Double, y: Double): this.type = js.native
+  def setSkew(x: Unit, y: Double): this.type = js.native
+  
   /**
     * Sets the `innerText` property of the DOM Element node and updates the internal sizes.
     * 
@@ -468,14 +422,32 @@ class DOMElement protected ()
     * @param text A DOMString representing the rendered text content of the element.
     */
   def setText(text: String): this.type = js.native
+  
   /**
-    * Sets the visibility of this Game Object.
+    * The angle, in radians, by which to skew the DOM Element on the horizontal axis.
     * 
-    * An invisible Game Object will skip rendering, but will still process update logic.
-    * @param value The visible state of the Game Object.
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
     */
-  /* CompleteClass */
-  override def setVisible(value: Boolean): this.type = js.native
+  var skewX: Double = js.native
+  
+  /**
+    * The angle, in radians, by which to skew the DOM Element on the vertical axis.
+    * 
+    * https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+    */
+  var skewY: Double = js.native
+  
+  /**
+    * By default a DOM Element will have its transform, display, opacity, zIndex and blend mode properties
+    * updated when its rendered. If, for some reason, you don't want any of these changed other than the
+    * CSS transform, then set this flag to `true`. When `true` only the CSS Transform is applied and it's
+    * up to you to keep track of and set the other properties as required.
+    * 
+    * This can be handy if, for example, you've a nested DOM Element and you don't want the opacity to be
+    * picked-up by any of its children.
+    */
+  var transformOnly: Boolean = js.native
+  
   /**
     * Internal method that calls `getBoundingClientRect` on the `node` and then sets the bounds width
     * and height into the `displayWidth` and `displayHeight` properties, and the `clientWidth` and `clientHeight`
@@ -484,6 +456,16 @@ class DOMElement protected ()
     * This is called automatically whenever a new element is created or set.
     */
   def updateSize(): this.type = js.native
+  
+  /**
+    * The native (un-scaled) width of this Game Object.
+    * 
+    * For a DOM Element this property is read-only.
+    * 
+    * The property `displayWidth` holds the computed bounds of this DOM Element, factoring in scaling.
+    */
+  val width: Double = js.native
+  
   /**
     * Compares the renderMask with the renderFlags to see if this Game Object will render or not.
     * 
@@ -491,4 +473,3 @@ class DOMElement protected ()
     */
   def willRender(): Boolean = js.native
 }
-

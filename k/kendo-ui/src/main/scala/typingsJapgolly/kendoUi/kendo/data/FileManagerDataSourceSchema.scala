@@ -1,36 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerDataSourceSchema extends HierarchicalDataSourceSchema {
+trait FileManagerDataSourceSchema
+  extends StObject
+     with HierarchicalDataSourceSchema {
+  
   @JSName("model")
   var model_FileManagerDataSourceSchema: js.UndefOr[FileManagerDataSourceSchemaModel] = js.undefined
 }
-
 object FileManagerDataSourceSchema {
-  @scala.inline
-  def apply(
-    aggregates: js.Any = null,
-    data: js.Any = null,
-    errors: js.Any = null,
-    groups: js.Any = null,
-    model: FileManagerDataSourceSchemaModel = null,
-    parse: js.Function = null,
-    total: js.Any = null,
-    `type`: String = null
-  ): FileManagerDataSourceSchema = {
+  
+  inline def apply(): FileManagerDataSourceSchema = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerDataSourceSchema]
   }
+  
+  extension [Self <: FileManagerDataSourceSchema](x: Self) {
+    
+    inline def setModel(value: FileManagerDataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+  }
 }
-

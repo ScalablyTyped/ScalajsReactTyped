@@ -1,26 +1,19 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.radioGroupRadioGroupMod.RadioGroupProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.materialUiCore.radioGroupUseRadioGroupMod.RadioGroupState
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/RadioGroup", JSImport.Namespace)
-@js.native
-object radioGroupMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[RadioGroupProps, ComponentState, js.Any] {
-    def this(props: RadioGroupProps) = this()
-    def this(props: RadioGroupProps, context: js.Any) = this()
-  }
+object radioGroupMod {
   
+  @JSImport("@material-ui/core/RadioGroup", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[RadioGroupProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: RadioGroupProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def useRadioGroup(): js.UndefOr[RadioGroupState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRadioGroup")().asInstanceOf[js.UndefOr[RadioGroupState]]
 }
-

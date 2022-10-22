@@ -1,25 +1,31 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEventController extends js.Object {
-  var onStartListening: js.UndefOr[js.Function2[/* events */ IEventManager, /* type */ String, Unit]] = js.undefined
-  var onStopListening: js.UndefOr[js.Function2[/* events */ IEventManager, /* type */ String, Unit]] = js.undefined
+trait IEventController extends StObject {
+  
+  var onStartListening: js.UndefOr[js.Function2[/* events */ IEventManager[js.Object], /* type */ String, Unit]] = js.undefined
+  
+  var onStopListening: js.UndefOr[js.Function2[/* events */ IEventManager[js.Object], /* type */ String, Unit]] = js.undefined
 }
-
 object IEventController {
-  @scala.inline
-  def apply(
-    onStartListening: (/* events */ IEventManager, /* type */ String) => Callback = null,
-    onStopListening: (/* events */ IEventManager, /* type */ String) => Callback = null
-  ): IEventController = {
+  
+  inline def apply(): IEventController = {
     val __obj = js.Dynamic.literal()
-    if (onStartListening != null) __obj.updateDynamic("onStartListening")(js.Any.fromFunction2((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String) => onStartListening(t0, t1).runNow()))
-    if (onStopListening != null) __obj.updateDynamic("onStopListening")(js.Any.fromFunction2((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String) => onStopListening(t0, t1).runNow()))
     __obj.asInstanceOf[IEventController]
   }
+  
+  extension [Self <: IEventController](x: Self) {
+    
+    inline def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Callback): Self = StObject.set(x, "onStartListening", js.Any.fromFunction2((t0: /* events */ IEventManager[js.Object], t1: /* type */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setOnStartListeningUndefined: Self = StObject.set(x, "onStartListening", js.undefined)
+    
+    inline def setOnStopListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Callback): Self = StObject.set(x, "onStopListening", js.Any.fromFunction2((t0: /* events */ IEventManager[js.Object], t1: /* type */ String) => (value(t0, t1)).runNow()))
+    
+    inline def setOnStopListeningUndefined: Self = StObject.set(x, "onStopListening", js.undefined)
+  }
 }
-

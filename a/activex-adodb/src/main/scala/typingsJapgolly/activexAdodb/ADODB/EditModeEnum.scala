@@ -1,31 +1,27 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
 */
-trait EditModeEnum extends js.Object
-
+trait EditModeEnum extends StObject
 object EditModeEnum {
-  @scala.inline
-  def adEditAdd: `2` = this.cast(2)
-  @scala.inline
-  def adEditDelete: `4` = this.cast(4)
-  @scala.inline
-  def adEditInProgress: `1` = this.cast(1)
-  @scala.inline
-  def adEditNone: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adEditAdd: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adEditDelete: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adEditInProgress: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adEditNone: `0` = 0.asInstanceOf[`0`]
 }
-

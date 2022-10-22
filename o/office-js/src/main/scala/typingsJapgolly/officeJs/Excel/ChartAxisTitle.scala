@@ -1,48 +1,38 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.AnonExpand
 import typingsJapgolly.officeJs.Excel.Interfaces.ChartAxisTitleData
 import typingsJapgolly.officeJs.Excel.Interfaces.ChartAxisTitleLoadOptions
 import typingsJapgolly.officeJs.Excel.Interfaces.ChartAxisTitleUpdateData
 import typingsJapgolly.officeJs.OfficeExtension.ClientObject
 import typingsJapgolly.officeJs.OfficeExtension.UpdateOptions
+import typingsJapgolly.officeJs.anon.Expand
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the title of a chart axis.
   *
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
-@JSGlobal("Excel.ChartAxisTitle")
 @js.native
-class ChartAxisTitle () extends ClientObject {
+trait ChartAxisTitle
+  extends StObject
+     with ClientObject {
+  
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartAxisTitle: RequestContext = js.native
+  
   /**
+    * Specifies the formatting of the chart axis title.
     *
-    * Represents the formatting of chart axis title. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   val format: ChartAxisTitleFormat = js.native
-  /**
-    *
-    * Represents the axis title.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var text: String = js.native
-  /**
-    *
-    * A boolean that specifies the visibility of an axis title.
-    *
-    * [Api set: ExcelApi 1.1]
-    */
-  var visible: Boolean = js.native
+  
   /**
     * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
@@ -50,37 +40,57 @@ class ChartAxisTitle () extends ClientObject {
     */
   def load(): ChartAxisTitle = js.native
   def load(options: ChartAxisTitleLoadOptions): ChartAxisTitle = js.native
-  def load(propertyNamesAndPaths: AnonExpand): ChartAxisTitle = js.native
+  def load(propertyNamesAndPaths: Expand): ChartAxisTitle = js.native
   def load(propertyNames: String): ChartAxisTitle = js.native
   def load(propertyNames: js.Array[String]): ChartAxisTitle = js.native
+  
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartAxisTitle): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Excel.ChartAxisTitle): void`
-    *
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
   def set(properties: ChartAxisTitleUpdateData): Unit = js.native
   def set(properties: ChartAxisTitleUpdateData, options: UpdateOptions): Unit = js.native
+  
   /**
-    *
     * A string value that represents the formula of chart axis title using A1-style notation.
     *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     *
-    * @param formula a string that present the formula to set
+    * @param formula A string that represents the formula to set.
     */
   def setFormula(formula: String): Unit = js.native
+  
+  /**
+    * Specifies the axis title.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
+  var text: String = js.native
+  
+  /**
+    * Specifies the angle to which the text is oriented for the chart axis title. The value should either be an integer from -90 to 90 or the integer 180 for vertically-oriented text.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.12]
+    */
+  var textOrientation: Double = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Excel.ChartAxisTitle object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartAxisTitleData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ChartAxisTitleData = js.native
+  
+  /**
+    * Specifies if the axis title is visibile.
+    *
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
+  var visible: Boolean = js.native
 }
-

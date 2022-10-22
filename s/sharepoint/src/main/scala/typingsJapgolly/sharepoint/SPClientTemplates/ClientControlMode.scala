@@ -1,47 +1,37 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClientControlMode extends js.Object
-
+sealed trait ClientControlMode extends StObject
 @JSGlobal("SPClientTemplates.ClientControlMode")
 @js.native
-object ClientControlMode extends js.Object {
-  @js.native
-  sealed trait DisplayForm extends ClientControlMode
+object ClientControlMode extends StObject {
   
   @js.native
-  sealed trait EditForm extends ClientControlMode
+  sealed trait DisplayForm
+    extends StObject
+       with ClientControlMode
   
   @js.native
-  sealed trait Invalid extends ClientControlMode
+  sealed trait EditForm
+    extends StObject
+       with ClientControlMode
   
   @js.native
-  sealed trait NewForm extends ClientControlMode
+  sealed trait Invalid
+    extends StObject
+       with ClientControlMode
   
   @js.native
-  sealed trait View extends ClientControlMode
+  sealed trait NewForm
+    extends StObject
+       with ClientControlMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClientControlMode with Double] = js.native
-  /* 1 */ @js.native
-  object DisplayForm extends TopLevel[DisplayForm with Double]
-  
-  /* 2 */ @js.native
-  object EditForm extends TopLevel[EditForm with Double]
-  
-  /* 0 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
-  
-  /* 3 */ @js.native
-  object NewForm extends TopLevel[NewForm with Double]
-  
-  /* 4 */ @js.native
-  object View extends TopLevel[View with Double]
-  
+  @js.native
+  sealed trait View
+    extends StObject
+       with ClientControlMode
 }
-

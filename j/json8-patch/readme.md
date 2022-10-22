@@ -10,15 +10,15 @@ JSON Patch toolkit for JavaScript
 | ------------------ | :-------------: |
 | Full name          | json8-patch |
 | Keywords           | JSON, patch, diff |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 15552 |
-| # stars            | 2 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 24853.333333333332 |
+| # stars            | 94.0 |
 
 ## Links
-- [Homepage](https://github.com/sonnyp/JSON8/tree/master/packages/patch)
+- [Homepage](https://github.com/sonnyp/JSON8/tree/main/packages/patch)
 - [Bugs](https://github.com/sonnyp/JSON8/issues)
-- [Repository](https://github.com/JSON8/patch)
+- [Repository](https://github.com/sonnyp/JSON8)
 - [Npm](https://www.npmjs.com/package/json8-patch)
     
 

@@ -1,24 +1,20 @@
 package typingsJapgolly.activeWin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activeWinStrings {
-  @js.native
-  sealed trait linux extends js.Object
   
   @js.native
-  sealed trait macos extends js.Object
+  sealed trait linux extends StObject
+  inline def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait macos extends StObject
+  inline def macos: macos = "macos".asInstanceOf[macos]
   
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
-  @scala.inline
-  def macos: macos = "macos".asInstanceOf[macos]
-  @scala.inline
-  def windows: windows = "windows".asInstanceOf[windows]
+  @js.native
+  sealed trait windows extends StObject
+  inline def windows: windows = "windows".asInstanceOf[windows]
 }
-

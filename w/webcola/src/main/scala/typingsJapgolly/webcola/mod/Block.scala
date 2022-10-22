@@ -1,21 +1,26 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "Block")
 @js.native
-class Block protected ()
-  extends typingsJapgolly.webcola.vpscMod.Block {
-  def this(v: typingsJapgolly.webcola.vpscMod.Variable) = this()
+open class Block protected ()
+  extends typingsJapgolly.webcola.distSrcVpscMod.Block {
+  def this(v: typingsJapgolly.webcola.distSrcVpscMod.Variable) = this()
 }
-
 /* static members */
-@JSImport("webcola", "Block")
-@js.native
-object Block extends js.Object {
-  var createSplitBlock: js.Any = js.native
-  def split(c: typingsJapgolly.webcola.vpscMod.Constraint): js.Array[typingsJapgolly.webcola.vpscMod.Block] = js.native
+object Block {
+  
+  @JSImport("webcola", "Block")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("webcola", "Block.createSplitBlock")
+  @js.native
+  def createSplitBlock: Any = js.native
+  inline def createSplitBlock_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("createSplitBlock")(x.asInstanceOf[js.Any])
+  
+  inline def split(c: typingsJapgolly.webcola.distSrcVpscMod.Constraint): js.Array[typingsJapgolly.webcola.distSrcVpscMod.Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(c.asInstanceOf[js.Any]).asInstanceOf[js.Array[typingsJapgolly.webcola.distSrcVpscMod.Block]]
 }
-

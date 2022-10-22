@@ -1,100 +1,185 @@
 package typingsJapgolly.jqueryMockjax
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MockJaxSettings extends js.Object {
+trait MockJaxSettings extends StObject {
+  
   var contentType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var dataType: js.UndefOr[String] = js.undefined
+  
   var etag: js.UndefOr[String] = js.undefined
+  
   var headers: js.UndefOr[MockJaxSettingsHeaders] = js.undefined
+  
   var isTimeout: js.UndefOr[Boolean] = js.undefined
+  
   var lastModified: js.UndefOr[String] = js.undefined
+  
   var logLevelMethods: js.UndefOr[js.Array[String]] = js.undefined
+  
   var logger: js.UndefOr[MockJaxStandardLogger | MockJaxCustomLogger] = js.undefined
-  var logging: js.UndefOr[Boolean] = js.undefined
+  
+  var logging: js.UndefOr[Boolean | Double] = js.undefined
+  
   var namespace: js.UndefOr[String] = js.undefined
+  
   var onAfterComplete: js.UndefOr[js.Function] = js.undefined
+  
   var onAfterError: js.UndefOr[js.Function] = js.undefined
+  
   var onAfterSuccess: js.UndefOr[js.Function] = js.undefined
+  
   var proxy: js.UndefOr[String] = js.undefined
+  
   var proxyType: js.UndefOr[String] = js.undefined
-  var response: js.UndefOr[js.Function2[/* settings */ js.Any, /* done */ js.UndefOr[js.Function], Unit]] = js.undefined
+  
+  var response: js.UndefOr[js.Function2[/* settings */ Any, /* done */ js.UndefOr[js.Function], Unit]] = js.undefined
+  
   var responseText: js.UndefOr[String | js.Object] = js.undefined
+  
   var responseTime: js.UndefOr[Double] = js.undefined
+  
   var responseXml: js.UndefOr[String] = js.undefined
+  
   var retainAjaxCalls: js.UndefOr[Boolean] = js.undefined
+  
   var status: js.UndefOr[Double] = js.undefined
+  
   var statusText: js.UndefOr[String] = js.undefined
+  
   var throwUnmocked: js.UndefOr[Boolean] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String | js.RegExp] = js.undefined
+  
   var urlParams: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object MockJaxSettings {
-  @scala.inline
-  def apply(
-    contentType: String = null,
-    data: js.Any = null,
-    dataType: String = null,
-    etag: String = null,
-    headers: MockJaxSettingsHeaders = null,
-    isTimeout: js.UndefOr[Boolean] = js.undefined,
-    lastModified: String = null,
-    logLevelMethods: js.Array[String] = null,
-    logger: MockJaxStandardLogger | MockJaxCustomLogger = null,
-    logging: js.UndefOr[Boolean] = js.undefined,
-    namespace: String = null,
-    onAfterComplete: js.Function = null,
-    onAfterError: js.Function = null,
-    onAfterSuccess: js.Function = null,
-    proxy: String = null,
-    proxyType: String = null,
-    response: (/* settings */ js.Any, /* done */ js.UndefOr[js.Function]) => Callback = null,
-    responseText: String | js.Object = null,
-    responseTime: Int | Double = null,
-    responseXml: String = null,
-    retainAjaxCalls: js.UndefOr[Boolean] = js.undefined,
-    status: Int | Double = null,
-    statusText: String = null,
-    throwUnmocked: js.UndefOr[Boolean] = js.undefined,
-    `type`: String = null,
-    url: String | js.RegExp = null,
-    urlParams: js.Array[String] = null
-  ): MockJaxSettings = {
+  
+  inline def apply(): MockJaxSettings = {
     val __obj = js.Dynamic.literal()
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTimeout)) __obj.updateDynamic("isTimeout")(isTimeout.asInstanceOf[js.Any])
-    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified.asInstanceOf[js.Any])
-    if (logLevelMethods != null) __obj.updateDynamic("logLevelMethods")(logLevelMethods.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
-    if (onAfterComplete != null) __obj.updateDynamic("onAfterComplete")(onAfterComplete.asInstanceOf[js.Any])
-    if (onAfterError != null) __obj.updateDynamic("onAfterError")(onAfterError.asInstanceOf[js.Any])
-    if (onAfterSuccess != null) __obj.updateDynamic("onAfterSuccess")(onAfterSuccess.asInstanceOf[js.Any])
-    if (proxy != null) __obj.updateDynamic("proxy")(proxy.asInstanceOf[js.Any])
-    if (proxyType != null) __obj.updateDynamic("proxyType")(proxyType.asInstanceOf[js.Any])
-    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2((t0: /* settings */ js.Any, t1: /* done */ js.UndefOr[js.Function]) => response(t0, t1).runNow()))
-    if (responseText != null) __obj.updateDynamic("responseText")(responseText.asInstanceOf[js.Any])
-    if (responseTime != null) __obj.updateDynamic("responseTime")(responseTime.asInstanceOf[js.Any])
-    if (responseXml != null) __obj.updateDynamic("responseXml")(responseXml.asInstanceOf[js.Any])
-    if (!js.isUndefined(retainAjaxCalls)) __obj.updateDynamic("retainAjaxCalls")(retainAjaxCalls.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (statusText != null) __obj.updateDynamic("statusText")(statusText.asInstanceOf[js.Any])
-    if (!js.isUndefined(throwUnmocked)) __obj.updateDynamic("throwUnmocked")(throwUnmocked.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (urlParams != null) __obj.updateDynamic("urlParams")(urlParams.asInstanceOf[js.Any])
     __obj.asInstanceOf[MockJaxSettings]
   }
+  
+  extension [Self <: MockJaxSettings](x: Self) {
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setHeaders(value: MockJaxSettingsHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setIsTimeout(value: Boolean): Self = StObject.set(x, "isTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setIsTimeoutUndefined: Self = StObject.set(x, "isTimeout", js.undefined)
+    
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    
+    inline def setLogLevelMethods(value: js.Array[String]): Self = StObject.set(x, "logLevelMethods", value.asInstanceOf[js.Any])
+    
+    inline def setLogLevelMethodsUndefined: Self = StObject.set(x, "logLevelMethods", js.undefined)
+    
+    inline def setLogLevelMethodsVarargs(value: String*): Self = StObject.set(x, "logLevelMethods", js.Array(value*))
+    
+    inline def setLogger(value: MockJaxStandardLogger | MockJaxCustomLogger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    
+    inline def setLogging(value: Boolean | Double): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    
+    inline def setOnAfterComplete(value: js.Function): Self = StObject.set(x, "onAfterComplete", value.asInstanceOf[js.Any])
+    
+    inline def setOnAfterCompleteUndefined: Self = StObject.set(x, "onAfterComplete", js.undefined)
+    
+    inline def setOnAfterError(value: js.Function): Self = StObject.set(x, "onAfterError", value.asInstanceOf[js.Any])
+    
+    inline def setOnAfterErrorUndefined: Self = StObject.set(x, "onAfterError", js.undefined)
+    
+    inline def setOnAfterSuccess(value: js.Function): Self = StObject.set(x, "onAfterSuccess", value.asInstanceOf[js.Any])
+    
+    inline def setOnAfterSuccessUndefined: Self = StObject.set(x, "onAfterSuccess", js.undefined)
+    
+    inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    
+    inline def setProxyType(value: String): Self = StObject.set(x, "proxyType", value.asInstanceOf[js.Any])
+    
+    inline def setProxyTypeUndefined: Self = StObject.set(x, "proxyType", js.undefined)
+    
+    inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+    
+    inline def setResponse(value: (/* settings */ Any, /* done */ js.UndefOr[js.Function]) => Callback): Self = StObject.set(x, "response", js.Any.fromFunction2((t0: /* settings */ Any, t1: /* done */ js.UndefOr[js.Function]) => (value(t0, t1)).runNow()))
+    
+    inline def setResponseText(value: String | js.Object): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTextUndefined: Self = StObject.set(x, "responseText", js.undefined)
+    
+    inline def setResponseTime(value: Double): Self = StObject.set(x, "responseTime", value.asInstanceOf[js.Any])
+    
+    inline def setResponseTimeUndefined: Self = StObject.set(x, "responseTime", js.undefined)
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setResponseXml(value: String): Self = StObject.set(x, "responseXml", value.asInstanceOf[js.Any])
+    
+    inline def setResponseXmlUndefined: Self = StObject.set(x, "responseXml", js.undefined)
+    
+    inline def setRetainAjaxCalls(value: Boolean): Self = StObject.set(x, "retainAjaxCalls", value.asInstanceOf[js.Any])
+    
+    inline def setRetainAjaxCallsUndefined: Self = StObject.set(x, "retainAjaxCalls", js.undefined)
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    
+    inline def setStatusTextUndefined: Self = StObject.set(x, "statusText", js.undefined)
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setThrowUnmocked(value: Boolean): Self = StObject.set(x, "throwUnmocked", value.asInstanceOf[js.Any])
+    
+    inline def setThrowUnmockedUndefined: Self = StObject.set(x, "throwUnmocked", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String | js.RegExp): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlParams(value: js.Array[String]): Self = StObject.set(x, "urlParams", value.asInstanceOf[js.Any])
+    
+    inline def setUrlParamsUndefined: Self = StObject.set(x, "urlParams", js.undefined)
+    
+    inline def setUrlParamsVarargs(value: String*): Self = StObject.set(x, "urlParams", js.Array(value*))
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

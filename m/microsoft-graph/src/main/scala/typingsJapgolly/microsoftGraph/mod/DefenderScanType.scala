@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.quick
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.full
 */
-trait DefenderScanType extends js.Object
-
+trait DefenderScanType extends StObject
 object DefenderScanType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = this.cast("disabled")
-  @scala.inline
-  def full: typingsJapgolly.microsoftGraph.microsoftGraphStrings.full = this.cast("full")
-  @scala.inline
-  def quick: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quick = this.cast("quick")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def disabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled = "disabled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.disabled]
+  
+  inline def full: typingsJapgolly.microsoftGraph.microsoftGraphStrings.full = "full".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.full]
+  
+  inline def quick: typingsJapgolly.microsoftGraph.microsoftGraphStrings.quick = "quick".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.quick]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

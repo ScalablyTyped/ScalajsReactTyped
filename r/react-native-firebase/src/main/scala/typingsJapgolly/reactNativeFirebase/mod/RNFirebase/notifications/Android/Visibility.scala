@@ -1,35 +1,33 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Visibility extends js.Object
-
+sealed trait Visibility extends StObject
 @JSImport("react-native-firebase", "RNFirebase.notifications.Android.Visibility")
 @js.native
-object Visibility extends js.Object {
-  @js.native
-  sealed trait Private extends Visibility
-  
-  @js.native
-  sealed trait Public extends Visibility
-  
-  @js.native
-  sealed trait Secret extends Visibility
+object Visibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Visibility with Double] = js.native
-  /* 0 */ @js.native
-  object Private extends TopLevel[Private with Double]
+  def apply(value: Double): js.UndefOr[Visibility & Double] = js.native
   
-  /* 1 */ @js.native
-  object Public extends TopLevel[Public with Double]
+  @js.native
+  sealed trait Private
+    extends StObject
+       with Visibility
+  /* 0 */ val Private: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Visibility.Private & Double = js.native
   
-  /* -1 */ @js.native
-  object Secret extends TopLevel[Secret with Double]
+  @js.native
+  sealed trait Public
+    extends StObject
+       with Visibility
+  /* 1 */ val Public: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Visibility.Public & Double = js.native
   
+  @js.native
+  sealed trait Secret
+    extends StObject
+       with Visibility
+  /* -1 */ val Secret: typingsJapgolly.reactNativeFirebase.mod.RNFirebase.notifications.Android.Visibility.Secret & Double = js.native
 }
-

@@ -1,0 +1,42 @@
+package typingsJapgolly.wixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import org.scalajs.dom.SVGElement
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.SVGAttributes
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distEsSrcGeneralDistComponentsGroupsSmallMod extends Shortcut {
+  
+  @JSImport("wix-ui-icons-common/dist/es/src/general/dist/components/GroupsSmall", JSImport.Default)
+  @js.native
+  val default: FC[GroupsSmallProps] = js.native
+  
+  trait GroupsSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
+    
+    var size: js.UndefOr[String | Double] = js.undefined
+  }
+  object GroupsSmallProps {
+    
+    inline def apply(): GroupsSmallProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[GroupsSmallProps]
+    }
+    
+    extension [Self <: GroupsSmallProps](x: Self) {
+      
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    }
+  }
+  
+  type _To = FC[GroupsSmallProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `distEsSrcGeneralDistComponentsGroupsSmallMod.foo` */
+  override def _to: FC[GroupsSmallProps] = default
+}

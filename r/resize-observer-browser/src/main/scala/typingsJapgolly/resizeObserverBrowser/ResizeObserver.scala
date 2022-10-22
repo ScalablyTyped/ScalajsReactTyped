@@ -1,17 +1,17 @@
 package typingsJapgolly.resizeObserverBrowser
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ResizeObserver")
 @js.native
-class ResizeObserver protected () extends js.Object {
-  def this(callback: ResizeObserverCallback) = this()
+trait ResizeObserver extends StObject {
+  
   def disconnect(): Unit = js.native
+  
   def observe(target: Element): Unit = js.native
   def observe(target: Element, options: ResizeObserverOptions): Unit = js.native
+  
   def unobserve(target: Element): Unit = js.native
 }
-

@@ -1,15 +1,20 @@
 package typingsJapgolly.seen.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("seen", "Matrices")
-@js.native
-object Matrices extends js.Object {
-  def flipX(): Matrix = js.native
-  def flipY(): Matrix = js.native
-  def flipZ(): Matrix = js.native
-  def identity(): Matrix = js.native
+object Matrices {
+  
+  @JSImport("seen", "Matrices")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def flipX(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipX")().asInstanceOf[Matrix]
+  
+  inline def flipY(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipY")().asInstanceOf[Matrix]
+  
+  inline def flipZ(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("flipZ")().asInstanceOf[Matrix]
+  
+  inline def identity(): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")().asInstanceOf[Matrix]
 }
-

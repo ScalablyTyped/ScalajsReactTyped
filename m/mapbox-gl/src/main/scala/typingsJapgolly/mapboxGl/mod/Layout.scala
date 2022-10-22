@@ -1,19 +1,24 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Layout extends js.Object {
+trait Layout extends StObject {
+  
   var visibility: js.UndefOr[Visibility] = js.undefined
 }
-
 object Layout {
-  @scala.inline
-  def apply(visibility: Visibility = null): Layout = {
+  
+  inline def apply(): Layout = {
     val __obj = js.Dynamic.literal()
-    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
     __obj.asInstanceOf[Layout]
   }
+  
+  extension [Self <: Layout](x: Self) {
+    
+    inline def setVisibility(value: Visibility): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+  }
 }
-

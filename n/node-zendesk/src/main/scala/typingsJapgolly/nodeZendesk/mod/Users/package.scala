@@ -1,15 +1,15 @@
-package typingsJapgolly.nodeZendesk.mod
+package typingsJapgolly.nodeZendesk.mod.Users
 
+import typingsJapgolly.nodeZendesk.mod.ZendeskID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Users {
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - js.Array[typingsJapgolly.nodeZendesk.mod.ZendeskID]
-    - typingsJapgolly.nodeZendesk.AnonIds
-    - typingsJapgolly.nodeZendesk.AnonExternalids
-  */
-  type UpdateIdPayload = typingsJapgolly.nodeZendesk.mod.Users._UpdateIdPayload | js.Array[typingsJapgolly.nodeZendesk.mod.ZendeskID] | java.lang.String
-}
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - js.Array[typingsJapgolly.nodeZendesk.mod.ZendeskID]
+  - typingsJapgolly.nodeZendesk.anon.Ids
+  - typingsJapgolly.nodeZendesk.anon.Externalids
+*/
+type UpdateIdPayload = _UpdateIdPayload | js.Array[ZendeskID] | String

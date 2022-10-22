@@ -1,83 +1,145 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.amapJsSdk.AnonContent
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerOptions extends js.Object {
+trait MarkerOptions extends StObject {
+  
   var angle: js.UndefOr[Double] = js.undefined
+  
   var animation: js.UndefOr[String] = js.undefined
+  
   var autoRotation: js.UndefOr[Boolean] = js.undefined
+  
   var clickable: js.UndefOr[Boolean] = js.undefined
+  
   var content: js.UndefOr[String | HTMLElement] = js.undefined
+  
   var cursor: js.UndefOr[String] = js.undefined
+  
   var draggable: js.UndefOr[Boolean] = js.undefined
-  var extData: js.UndefOr[js.Any] = js.undefined
+  
+  var extData: js.UndefOr[Any] = js.undefined
+  
   var icon: js.UndefOr[String | Icon] = js.undefined
-  var label: js.UndefOr[AnonContent] = js.undefined
+  
+  var label: js.UndefOr[typingsJapgolly.amapJsSdk.anon.Content] = js.undefined
+  
   var map: js.UndefOr[Map] = js.undefined
+  
   var offset: js.UndefOr[Pixel] = js.undefined
+  
   var position: js.UndefOr[LngLat] = js.undefined
+  
   var raiseOnDrag: js.UndefOr[Boolean] = js.undefined
+  
   var shadow: js.UndefOr[Icon] = js.undefined
+  
   var shape: js.UndefOr[MarkerShape] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var topWhenClick: js.UndefOr[Boolean] = js.undefined
+  
   var topWhenMouseOver: js.UndefOr[Boolean] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object MarkerOptions {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    animation: String = null,
-    autoRotation: js.UndefOr[Boolean] = js.undefined,
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    content: String | HTMLElement = null,
-    cursor: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    extData: js.Any = null,
-    icon: String | Icon = null,
-    label: AnonContent = null,
-    map: Map = null,
-    offset: Pixel = null,
-    position: LngLat = null,
-    raiseOnDrag: js.UndefOr[Boolean] = js.undefined,
-    shadow: Icon = null,
-    shape: MarkerShape = null,
-    title: String = null,
-    topWhenClick: js.UndefOr[Boolean] = js.undefined,
-    topWhenMouseOver: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): MarkerOptions = {
+  
+  inline def apply(): MarkerOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoRotation)) __obj.updateDynamic("autoRotation")(autoRotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (extData != null) __obj.updateDynamic("extData")(extData.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(raiseOnDrag)) __obj.updateDynamic("raiseOnDrag")(raiseOnDrag.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(topWhenClick)) __obj.updateDynamic("topWhenClick")(topWhenClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(topWhenMouseOver)) __obj.updateDynamic("topWhenMouseOver")(topWhenMouseOver.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerOptions]
   }
+  
+  extension [Self <: MarkerOptions](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAutoRotation(value: Boolean): Self = StObject.set(x, "autoRotation", value.asInstanceOf[js.Any])
+    
+    inline def setAutoRotationUndefined: Self = StObject.set(x, "autoRotation", js.undefined)
+    
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    
+    inline def setContent(value: String | HTMLElement): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setExtData(value: Any): Self = StObject.set(x, "extData", value.asInstanceOf[js.Any])
+    
+    inline def setExtDataUndefined: Self = StObject.set(x, "extData", js.undefined)
+    
+    inline def setIcon(value: String | Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setLabel(value: typingsJapgolly.amapJsSdk.anon.Content): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setOffset(value: Pixel): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPosition(value: LngLat): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRaiseOnDrag(value: Boolean): Self = StObject.set(x, "raiseOnDrag", value.asInstanceOf[js.Any])
+    
+    inline def setRaiseOnDragUndefined: Self = StObject.set(x, "raiseOnDrag", js.undefined)
+    
+    inline def setShadow(value: Icon): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTopWhenClick(value: Boolean): Self = StObject.set(x, "topWhenClick", value.asInstanceOf[js.Any])
+    
+    inline def setTopWhenClickUndefined: Self = StObject.set(x, "topWhenClick", js.undefined)
+    
+    inline def setTopWhenMouseOver(value: Boolean): Self = StObject.set(x, "topWhenMouseOver", value.asInstanceOf[js.Any])
+    
+    inline def setTopWhenMouseOverUndefined: Self = StObject.set(x, "topWhenMouseOver", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

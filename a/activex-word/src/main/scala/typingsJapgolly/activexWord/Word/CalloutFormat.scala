@@ -1,34 +1,116 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.activexOffice.Office.MsoCalloutAngleType
 import typingsJapgolly.activexOffice.Office.MsoCalloutDropType
 import typingsJapgolly.activexOffice.Office.MsoCalloutType
 import typingsJapgolly.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.CalloutFormat")
-@js.native
-class CalloutFormat protected () extends js.Object {
-  var Accent: MsoTriState = js.native
-  var Angle: MsoCalloutAngleType = js.native
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  var AutoAttach: MsoTriState = js.native
-  val AutoLength: MsoTriState = js.native
-  var Border: MsoTriState = js.native
-  val Creator: Double = js.native
-  val Drop: Double = js.native
-  val DropType: MsoCalloutDropType = js.native
-  var Gap: Double = js.native
-  val Length: Double = js.native
-  val Parent: js.Any = js.native
-  var Type: MsoCalloutType = js.native
-  @JSName("Word.CalloutFormat_typekey")
-  var WordDotCalloutFormat_typekey: CalloutFormat = js.native
-  def AutomaticLength(): Unit = js.native
-  def CustomDrop(Drop: Double): Unit = js.native
-  def CustomLength(Length: Double): Unit = js.native
-  def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native
+trait CalloutFormat extends StObject {
+  
+  var Accent: MsoTriState
+  
+  var Angle: MsoCalloutAngleType
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  var AutoAttach: MsoTriState
+  
+  val AutoLength: MsoTriState
+  
+  def AutomaticLength(): Unit
+  
+  var Border: MsoTriState
+  
+  val Creator: Double
+  
+  def CustomDrop(Drop: Double): Unit
+  
+  def CustomLength(Length: Double): Unit
+  
+  val Drop: Double
+  
+  val DropType: MsoCalloutDropType
+  
+  var Gap: Double
+  
+  val Length: Double
+  
+  val Parent: Any
+  
+  def PresetDrop(DropType: MsoCalloutDropType): Unit
+  
+  var Type: MsoCalloutType
+  
+  /* private */ @JSName("Word.CalloutFormat_typekey")
+  var WordDotCalloutFormat_typekey: CalloutFormat
 }
-
+object CalloutFormat {
+  
+  inline def apply(
+    Accent: MsoTriState,
+    Angle: MsoCalloutAngleType,
+    Application: Application,
+    AutoAttach: MsoTriState,
+    AutoLength: MsoTriState,
+    AutomaticLength: Callback,
+    Border: MsoTriState,
+    Creator: Double,
+    CustomDrop: Double => Callback,
+    CustomLength: Double => Callback,
+    Drop: Double,
+    DropType: MsoCalloutDropType,
+    Gap: Double,
+    Length: Double,
+    Parent: Any,
+    PresetDrop: MsoCalloutDropType => Callback,
+    Type: MsoCalloutType,
+    WordDotCalloutFormat_typekey: CalloutFormat
+  ): CalloutFormat = {
+    val __obj = js.Dynamic.literal(Accent = Accent.asInstanceOf[js.Any], Angle = Angle.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], AutoAttach = AutoAttach.asInstanceOf[js.Any], AutoLength = AutoLength.asInstanceOf[js.Any], AutomaticLength = AutomaticLength.toJsFn, Border = Border.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], CustomDrop = js.Any.fromFunction1((t0: Double) => CustomDrop(t0).runNow()), CustomLength = js.Any.fromFunction1((t0: Double) => CustomLength(t0).runNow()), Drop = Drop.asInstanceOf[js.Any], DropType = DropType.asInstanceOf[js.Any], Gap = Gap.asInstanceOf[js.Any], Length = Length.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PresetDrop = js.Any.fromFunction1((t0: MsoCalloutDropType) => PresetDrop(t0).runNow()), Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Word.CalloutFormat_typekey")(WordDotCalloutFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CalloutFormat]
+  }
+  
+  extension [Self <: CalloutFormat](x: Self) {
+    
+    inline def setAccent(value: MsoTriState): Self = StObject.set(x, "Accent", value.asInstanceOf[js.Any])
+    
+    inline def setAngle(value: MsoCalloutAngleType): Self = StObject.set(x, "Angle", value.asInstanceOf[js.Any])
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setAutoAttach(value: MsoTriState): Self = StObject.set(x, "AutoAttach", value.asInstanceOf[js.Any])
+    
+    inline def setAutoLength(value: MsoTriState): Self = StObject.set(x, "AutoLength", value.asInstanceOf[js.Any])
+    
+    inline def setAutomaticLength(value: Callback): Self = StObject.set(x, "AutomaticLength", value.toJsFn)
+    
+    inline def setBorder(value: MsoTriState): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setCustomDrop(value: Double => Callback): Self = StObject.set(x, "CustomDrop", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setCustomLength(value: Double => Callback): Self = StObject.set(x, "CustomLength", js.Any.fromFunction1((t0: Double) => value(t0).runNow()))
+    
+    inline def setDrop(value: Double): Self = StObject.set(x, "Drop", value.asInstanceOf[js.Any])
+    
+    inline def setDropType(value: MsoCalloutDropType): Self = StObject.set(x, "DropType", value.asInstanceOf[js.Any])
+    
+    inline def setGap(value: Double): Self = StObject.set(x, "Gap", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "Length", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPresetDrop(value: MsoCalloutDropType => Callback): Self = StObject.set(x, "PresetDrop", js.Any.fromFunction1((t0: MsoCalloutDropType) => value(t0).runNow()))
+    
+    inline def setType(value: MsoCalloutType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setWordDotCalloutFormat_typekey(value: CalloutFormat): Self = StObject.set(x, "Word.CalloutFormat_typekey", value.asInstanceOf[js.Any])
+  }
+}

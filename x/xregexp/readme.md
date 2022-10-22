@@ -1,7 +1,7 @@
 
 # Scala.js typings for xregexp
 
-Typings are for version 3.0.0
+Typings are for version 5.1.1
 
 ## Library description:
 Extended regular expressions
@@ -11,9 +11,9 @@ Extended regular expressions
 | Full name          | xregexp |
 | Keywords           | regex, regexp, regular expression, unicode |
 | # releases         | 7 |
-| # dependents       | 434 |
-| # downloads        | 184771353 |
-| # stars            | 31 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5136199333333332E7 |
+| # stars            | 3124.0 |
 
 ## Links
 - [Homepage](http://xregexp.com/)
@@ -24,7 +24,7 @@ Extended regular expressions
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

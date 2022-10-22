@@ -1,25 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GeodesicDistanceResult extends Object {
+trait GeodesicDistanceResult
+  extends StObject
+     with Object {
+  
   /**
     * The azimuth (or "bearing") in degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
     */
   var azimuth: js.UndefOr[Double] = js.undefined
+  
   /**
     * The distance between the two locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
     */
   var distance: js.UndefOr[Double] = js.undefined
+  
   /**
     * The azimuth in degrees in the reverse direction.
     *
@@ -27,24 +31,29 @@ trait GeodesicDistanceResult extends Object {
     */
   var reverseAzimuth: js.UndefOr[Double] = js.undefined
 }
-
 object GeodesicDistanceResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    azimuth: Int | Double = null,
-    distance: Int | Double = null,
-    reverseAzimuth: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): GeodesicDistanceResult = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (azimuth != null) __obj.updateDynamic("azimuth")(azimuth.asInstanceOf[js.Any])
-    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
-    if (reverseAzimuth != null) __obj.updateDynamic("reverseAzimuth")(reverseAzimuth.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[GeodesicDistanceResult]
   }
+  
+  extension [Self <: GeodesicDistanceResult](x: Self) {
+    
+    inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
+    
+    inline def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
+    
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    
+    inline def setReverseAzimuth(value: Double): Self = StObject.set(x, "reverseAzimuth", value.asInstanceOf[js.Any])
+    
+    inline def setReverseAzimuthUndefined: Self = StObject.set(x, "reverseAzimuth", js.undefined)
+  }
 }
-

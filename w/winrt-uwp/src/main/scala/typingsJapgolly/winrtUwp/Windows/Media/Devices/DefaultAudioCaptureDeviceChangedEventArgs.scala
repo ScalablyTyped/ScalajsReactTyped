@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information about a default audio capture device change event. */
-@JSGlobal("Windows.Media.Devices.DefaultAudioCaptureDeviceChangedEventArgs")
-@js.native
-abstract class DefaultAudioCaptureDeviceChangedEventArgs () extends js.Object {
+trait DefaultAudioCaptureDeviceChangedEventArgs extends StObject {
+  
   /** Gets the ID of the newly selected audio capture device that caused the change event. */
-  var id: String = js.native
+  var id: String
+  
   /** Gets the role of the newly selected audio capture device that caused the change event. */
-  var role: AudioDeviceRole = js.native
+  var role: AudioDeviceRole
 }
-
+object DefaultAudioCaptureDeviceChangedEventArgs {
+  
+  inline def apply(id: String, role: AudioDeviceRole): DefaultAudioCaptureDeviceChangedEventArgs = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultAudioCaptureDeviceChangedEventArgs]
+  }
+  
+  extension [Self <: DefaultAudioCaptureDeviceChangedEventArgs](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setRole(value: AudioDeviceRole): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+  }
+}

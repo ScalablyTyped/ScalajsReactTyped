@@ -1,28 +1,27 @@
 package typingsJapgolly.grammarkdown.mod
 
-import typingsJapgolly.grammarkdown.tokensMod.SyntaxKind.QuestionToken
+import typingsJapgolly.grammarkdown.distTokensMod.SyntaxKind.QuestionToken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown", "Nonterminal")
 @js.native
-class Nonterminal protected ()
-  extends typingsJapgolly.grammarkdown.nodesMod.Nonterminal {
-  def this(name: typingsJapgolly.grammarkdown.nodesMod.Identifier) = this()
+open class Nonterminal protected ()
+  extends typingsJapgolly.grammarkdown.distNodesMod.Nonterminal {
+  def this(name: typingsJapgolly.grammarkdown.distNodesMod.Identifier) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    argumentList: typingsJapgolly.grammarkdown.nodesMod.ArgumentList
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    argumentList: typingsJapgolly.grammarkdown.distNodesMod.ArgumentList
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    argumentList: js.UndefOr[scala.Nothing],
-    questionToken: typingsJapgolly.grammarkdown.nodesMod.Token[QuestionToken]
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    argumentList: Unit,
+    questionToken: typingsJapgolly.grammarkdown.distNodesMod.Token[QuestionToken]
   ) = this()
   def this(
-    name: typingsJapgolly.grammarkdown.nodesMod.Identifier,
-    argumentList: typingsJapgolly.grammarkdown.nodesMod.ArgumentList,
-    questionToken: typingsJapgolly.grammarkdown.nodesMod.Token[QuestionToken]
+    name: typingsJapgolly.grammarkdown.distNodesMod.Identifier,
+    argumentList: typingsJapgolly.grammarkdown.distNodesMod.ArgumentList,
+    questionToken: typingsJapgolly.grammarkdown.distNodesMod.Token[QuestionToken]
   ) = this()
 }
-

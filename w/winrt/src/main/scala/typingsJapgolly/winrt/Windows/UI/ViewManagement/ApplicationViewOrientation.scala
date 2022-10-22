@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.ViewManagement
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ApplicationViewOrientation extends js.Object
-
+sealed trait ApplicationViewOrientation extends StObject
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewOrientation")
 @js.native
-object ApplicationViewOrientation extends js.Object {
-  @js.native
-  sealed trait landscape extends ApplicationViewOrientation
+object ApplicationViewOrientation extends StObject {
   
   @js.native
-  sealed trait portrait extends ApplicationViewOrientation
+  sealed trait landscape
+    extends StObject
+       with ApplicationViewOrientation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ApplicationViewOrientation with Double] = js.native
-  /* 0 */ @js.native
-  object landscape extends TopLevel[landscape with Double]
-  
-  /* 1 */ @js.native
-  object portrait extends TopLevel[portrait with Double]
-  
+  @js.native
+  sealed trait portrait
+    extends StObject
+       with ApplicationViewOrientation
 }
-

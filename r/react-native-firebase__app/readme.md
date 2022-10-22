@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-native-firebase__app
 
-Typings are for version 6.3.3
+Typings are for version 15.7.0
 
 ## Library description:
 A well tested, feature rich Firebase implementation for React Native, supporting iOS & Android. Individual module support for Admob, Analytics, Auth, Crash Reporting, Cloud Firestore, Database, Dynamic Links, Functions, Messaging (FCM), Remote Config, Sto
@@ -10,15 +10,15 @@ A well tested, feature rich Firebase implementation for React Native, supporting
 | ------------------ | :-------------: |
 | Full name          | @react-native-firebase/app |
 | Keywords           | react, admob, auth, config, digits, fabric, functions, phone-auth, sms, firestore, cloud-firestore, datastore, remote-config, transactions, react-native, react-native-firebase, firebase, fcm, apn, gcm, analytics, messaging, database, android, ios, crash, firestack, performance, firestore, dynamic-links, crashlytics |
-| # releases         | 59 |
-| # dependents       | 1 |
-| # downloads        | 259465 |
-| # stars            | 0 |
+| # releases         | 90 |
+| # dependents       | 0.0 |
+| # downloads        | 1079306.0 |
+| # stars            | 10343.0 |
 
 ## Links
-- [Homepage](https://github.com/invertase/react-native-firebase#readme)
+- [Homepage](https://github.com/invertase/react-native-firebase/tree/main#readme)
 - [Bugs](https://github.com/invertase/react-native-firebase/issues)
-- [Repository](https://github.com/invertase/react-native-firebase)
+- [Repository](https://github.com/invertase/react-native-firebase/tree/main)
 - [Npm](https://www.npmjs.com/package/%40react-native-firebase%2Fapp)
     
 

@@ -1,43 +1,49 @@
 package typingsJapgolly.weixinApp.wx
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ScanCodeOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /**
-  		 * 是否只能从相机扫码，不允许从相册选择图片
-  		 * @version 1.2.0
-  		 */
+    * 是否只能从相机扫码，不允许从相册选择图片
+    * @version 1.2.0
+    */
   var onlyFromCamera: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  		 * 扫码类型，参数类型是数组
-  		 * 二维码是'qrCode'，一维码是'barCode'，DataMatrix是‘datamatrix’，pdf417是‘pdf417’。
-  		 * @version 1.7.0
-  		 */
+    * 扫码类型，参数类型是数组
+    * 二维码是'qrCode'，一维码是'barCode'，DataMatrix是‘datamatrix’，pdf417是‘pdf417’。
+    * @version 1.7.0
+    */
   var scanType: js.UndefOr[js.Array[String]] = js.undefined
+  
   @JSName("success")
   def success_MScanCodeOptions(res: ScanCodeData): Unit
 }
-
 object ScanCodeOptions {
-  @scala.inline
-  def apply(
-    success: ScanCodeData => Callback,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    onlyFromCamera: js.UndefOr[Boolean] = js.undefined,
-    scanType: js.Array[String] = null
-  ): ScanCodeOptions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.weixinApp.wx.ScanCodeData) => success(t0).runNow()))
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera.asInstanceOf[js.Any])
-    if (scanType != null) __obj.updateDynamic("scanType")(scanType.asInstanceOf[js.Any])
+  
+  inline def apply(success: ScanCodeData => Callback): ScanCodeOptions = {
+    val __obj = js.Dynamic.literal(success = js.Any.fromFunction1((t0: ScanCodeData) => success(t0).runNow()))
     __obj.asInstanceOf[ScanCodeOptions]
   }
+  
+  extension [Self <: ScanCodeOptions](x: Self) {
+    
+    inline def setOnlyFromCamera(value: Boolean): Self = StObject.set(x, "onlyFromCamera", value.asInstanceOf[js.Any])
+    
+    inline def setOnlyFromCameraUndefined: Self = StObject.set(x, "onlyFromCamera", js.undefined)
+    
+    inline def setScanType(value: js.Array[String]): Self = StObject.set(x, "scanType", value.asInstanceOf[js.Any])
+    
+    inline def setScanTypeUndefined: Self = StObject.set(x, "scanType", js.undefined)
+    
+    inline def setScanTypeVarargs(value: String*): Self = StObject.set(x, "scanType", js.Array(value*))
+    
+    inline def setSuccess(value: ScanCodeData => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: ScanCodeData) => value(t0).runNow()))
+  }
 }
-

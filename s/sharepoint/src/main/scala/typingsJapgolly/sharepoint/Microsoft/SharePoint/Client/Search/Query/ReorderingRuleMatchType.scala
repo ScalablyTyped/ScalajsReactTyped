@@ -1,71 +1,57 @@
 package typingsJapgolly.sharepoint.Microsoft.SharePoint.Client.Search.Query
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ReorderingRuleMatchType extends js.Object
-
+sealed trait ReorderingRuleMatchType extends StObject
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.ReorderingRuleMatchType")
 @js.native
-object ReorderingRuleMatchType extends js.Object {
-  @js.native
-  sealed trait contentTypeIs extends ReorderingRuleMatchType
+object ReorderingRuleMatchType extends StObject {
   
   @js.native
-  sealed trait fileExtensionMatches extends ReorderingRuleMatchType
+  sealed trait contentTypeIs
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait manualCondition extends ReorderingRuleMatchType
+  sealed trait fileExtensionMatches
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait resultContainsKeyword extends ReorderingRuleMatchType
+  sealed trait manualCondition
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait resultHasTag extends ReorderingRuleMatchType
+  sealed trait resultContainsKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait titleContainsKeyword extends ReorderingRuleMatchType
+  sealed trait resultHasTag
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait titleMatchesKeyword extends ReorderingRuleMatchType
+  sealed trait titleContainsKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait urlExactlyMatches extends ReorderingRuleMatchType
+  sealed trait titleMatchesKeyword
+    extends StObject
+       with ReorderingRuleMatchType
   
   @js.native
-  sealed trait urlStartsWith extends ReorderingRuleMatchType
+  sealed trait urlExactlyMatches
+    extends StObject
+       with ReorderingRuleMatchType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ReorderingRuleMatchType with Double] = js.native
-  /* 5 */ @js.native
-  object contentTypeIs extends TopLevel[contentTypeIs with Double]
-  
-  /* 6 */ @js.native
-  object fileExtensionMatches extends TopLevel[fileExtensionMatches with Double]
-  
-  /* 8 */ @js.native
-  object manualCondition extends TopLevel[manualCondition with Double]
-  
-  /* 0 */ @js.native
-  object resultContainsKeyword extends TopLevel[resultContainsKeyword with Double]
-  
-  /* 7 */ @js.native
-  object resultHasTag extends TopLevel[resultHasTag with Double]
-  
-  /* 1 */ @js.native
-  object titleContainsKeyword extends TopLevel[titleContainsKeyword with Double]
-  
-  /* 2 */ @js.native
-  object titleMatchesKeyword extends TopLevel[titleMatchesKeyword with Double]
-  
-  /* 4 */ @js.native
-  object urlExactlyMatches extends TopLevel[urlExactlyMatches with Double]
-  
-  /* 3 */ @js.native
-  object urlStartsWith extends TopLevel[urlStartsWith with Double]
-  
+  @js.native
+  sealed trait urlStartsWith
+    extends StObject
+       with ReorderingRuleMatchType
 }
-

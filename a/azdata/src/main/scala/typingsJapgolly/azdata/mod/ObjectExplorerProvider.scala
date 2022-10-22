@@ -1,46 +1,63 @@
 package typingsJapgolly.azdata.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectExplorerProvider extends ObjectExplorerProviderBase {
-  var registerOnSessionDisconnected: js.UndefOr[
-    js.Function1[/* handler */ js.Function1[/* response */ ObjectExplorerSession, _], Unit]
-  ] = js.undefined
+trait ObjectExplorerProvider
+  extends StObject
+     with ObjectExplorerProviderBase {
+  
   def closeSession(closeSessionInfo: ObjectExplorerCloseSessionInfo): Thenable[ObjectExplorerCloseSessionResponse]
+  
   def createNewSession(connInfo: ConnectionInfo): Thenable[ObjectExplorerSessionResponse]
-  def registerOnSessionCreated(handler: js.Function1[/* response */ ObjectExplorerSession, _]): Unit
+  
+  /**
+    * Registers a handler for SessionCreated events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  def registerOnSessionCreated(handler: js.Function1[/* response */ ObjectExplorerSession, Any]): Unit
+  
+  /**
+    * Registers a handler for SessionDisconnected events.
+    *
+    * **WARNING** This should only ever be called by the extension creating the provider. Any other extensions calling this
+    * will overwrite the handler registered by the provider extension which will likely break this functionality.
+    */
+  var registerOnSessionDisconnected: js.UndefOr[
+    js.Function1[/* handler */ js.Function1[/* response */ ObjectExplorerSession, Any], Unit]
+  ] = js.undefined
 }
-
 object ObjectExplorerProvider {
-  @scala.inline
-  def apply(
-    closeSession: ObjectExplorerCloseSessionInfo => CallbackTo[Thenable[ObjectExplorerCloseSessionResponse]],
-    createNewSession: ConnectionInfo => CallbackTo[Thenable[ObjectExplorerSessionResponse]],
-    expandNode: ExpandNodeInfo => CallbackTo[Thenable[Boolean]],
-    findNodes: FindNodesInfo => CallbackTo[Thenable[ObjectExplorerFindNodesResponse]],
+  
+  inline def apply(
+    closeSession: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse],
+    createNewSession: ConnectionInfo => Thenable[ObjectExplorerSessionResponse],
+    expandNode: ExpandNodeInfo => Thenable[Boolean],
+    findNodes: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse],
     providerId: String,
-    refreshNode: ExpandNodeInfo => CallbackTo[Thenable[Boolean]],
-    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, js.Any] => Callback,
-    registerOnSessionCreated: js.Function1[/* response */ ObjectExplorerSession, js.Any] => Callback,
-    handle: Int | Double = null,
-    registerOnSessionDisconnected: /* handler */ js.Function1[/* response */ ObjectExplorerSession, js.Any] => Callback = null
+    refreshNode: ExpandNodeInfo => Thenable[Boolean],
+    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, Any] => Callback,
+    registerOnSessionCreated: js.Function1[/* response */ ObjectExplorerSession, Any] => Callback
   ): ObjectExplorerProvider = {
-    val __obj = js.Dynamic.literal(providerId = providerId.asInstanceOf[js.Any])
-    __obj.updateDynamic("closeSession")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.ObjectExplorerCloseSessionInfo) => closeSession(t0).runNow()))
-    __obj.updateDynamic("createNewSession")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.ConnectionInfo) => createNewSession(t0).runNow()))
-    __obj.updateDynamic("expandNode")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.ExpandNodeInfo) => expandNode(t0).runNow()))
-    __obj.updateDynamic("findNodes")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.FindNodesInfo) => findNodes(t0).runNow()))
-    __obj.updateDynamic("refreshNode")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.ExpandNodeInfo) => refreshNode(t0).runNow()))
-    __obj.updateDynamic("registerOnExpandCompleted")(js.Any.fromFunction1((t0: js.Function1[/* response */ typingsJapgolly.azdata.mod.ObjectExplorerExpandInfo, js.Any]) => registerOnExpandCompleted(t0).runNow()))
-    __obj.updateDynamic("registerOnSessionCreated")(js.Any.fromFunction1((t0: js.Function1[/* response */ typingsJapgolly.azdata.mod.ObjectExplorerSession, js.Any]) => registerOnSessionCreated(t0).runNow()))
-    if (handle != null) __obj.updateDynamic("handle")(handle.asInstanceOf[js.Any])
-    if (registerOnSessionDisconnected != null) __obj.updateDynamic("registerOnSessionDisconnected")(js.Any.fromFunction1((t0: /* handler */ js.Function1[/* response */ typingsJapgolly.azdata.mod.ObjectExplorerSession, js.Any]) => registerOnSessionDisconnected(t0).runNow()))
+    val __obj = js.Dynamic.literal(closeSession = js.Any.fromFunction1(closeSession), createNewSession = js.Any.fromFunction1(createNewSession), expandNode = js.Any.fromFunction1(expandNode), findNodes = js.Any.fromFunction1(findNodes), providerId = providerId.asInstanceOf[js.Any], refreshNode = js.Any.fromFunction1(refreshNode), registerOnExpandCompleted = js.Any.fromFunction1((t0: js.Function1[/* response */ ObjectExplorerExpandInfo, Any]) => registerOnExpandCompleted(t0).runNow()), registerOnSessionCreated = js.Any.fromFunction1((t0: js.Function1[/* response */ ObjectExplorerSession, Any]) => registerOnSessionCreated(t0).runNow()))
     __obj.asInstanceOf[ObjectExplorerProvider]
   }
+  
+  extension [Self <: ObjectExplorerProvider](x: Self) {
+    
+    inline def setCloseSession(value: ObjectExplorerCloseSessionInfo => Thenable[ObjectExplorerCloseSessionResponse]): Self = StObject.set(x, "closeSession", js.Any.fromFunction1(value))
+    
+    inline def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = StObject.set(x, "createNewSession", js.Any.fromFunction1(value))
+    
+    inline def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, Any] => Callback): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1((t0: js.Function1[/* response */ ObjectExplorerSession, Any]) => value(t0).runNow()))
+    
+    inline def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, Any] => Callback): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1((t0: /* handler */ js.Function1[/* response */ ObjectExplorerSession, Any]) => value(t0).runNow()))
+    
+    inline def setRegisterOnSessionDisconnectedUndefined: Self = StObject.set(x, "registerOnSessionDisconnected", js.undefined)
+  }
 }
-

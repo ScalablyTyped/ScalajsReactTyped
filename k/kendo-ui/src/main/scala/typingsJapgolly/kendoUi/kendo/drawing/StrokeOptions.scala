@@ -1,36 +1,54 @@
 package typingsJapgolly.kendoUi.kendo.drawing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StrokeOptions extends js.Object {
+trait StrokeOptions extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var dashType: js.UndefOr[String] = js.undefined
+  
   var lineCap: js.UndefOr[String] = js.undefined
+  
   var lineJoin: js.UndefOr[String] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object StrokeOptions {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashType: String = null,
-    lineCap: String = null,
-    lineJoin: String = null,
-    opacity: Int | Double = null,
-    width: Int | Double = null
-  ): StrokeOptions = {
+  
+  inline def apply(): StrokeOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrokeOptions]
   }
+  
+  extension [Self <: StrokeOptions](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,18 +1,21 @@
 package typingsJapgolly.steamClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CMsgClientLogon extends js.Object {
+trait CMsgClientLogon extends StObject {
+  
   /**
     * Your steam login
     */
   var account_name: String
+  
   /**
     * Steam Guard code. Must be valid if provided, otherwise the logon will fail. Note that Steam Guard codes expire after a short while
     */
   var auth_code: js.UndefOr[String] = js.undefined
+  
   /**
     * SHA1 hash of your sentry file.
     * If not provided, Steam will send you a sentry file through the ClientUpdateMachineAuth message
@@ -21,25 +24,33 @@ trait CMsgClientLogon extends js.Object {
     * This value will be ignored if you enable 2FA.
     */
   var sha_sentryfile: js.UndefOr[String] = js.undefined
+  
   /**
     * Two-factor authentication code provided by the Steam mobile application. You will have to provide this code every time you log in if your account uses 2FA.
     */
   var two_factor_code: js.UndefOr[String] = js.undefined
 }
-
 object CMsgClientLogon {
-  @scala.inline
-  def apply(
-    account_name: String,
-    auth_code: String = null,
-    sha_sentryfile: String = null,
-    two_factor_code: String = null
-  ): CMsgClientLogon = {
+  
+  inline def apply(account_name: String): CMsgClientLogon = {
     val __obj = js.Dynamic.literal(account_name = account_name.asInstanceOf[js.Any])
-    if (auth_code != null) __obj.updateDynamic("auth_code")(auth_code.asInstanceOf[js.Any])
-    if (sha_sentryfile != null) __obj.updateDynamic("sha_sentryfile")(sha_sentryfile.asInstanceOf[js.Any])
-    if (two_factor_code != null) __obj.updateDynamic("two_factor_code")(two_factor_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogon]
   }
+  
+  extension [Self <: CMsgClientLogon](x: Self) {
+    
+    inline def setAccount_name(value: String): Self = StObject.set(x, "account_name", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
+    
+    inline def setAuth_codeUndefined: Self = StObject.set(x, "auth_code", js.undefined)
+    
+    inline def setSha_sentryfile(value: String): Self = StObject.set(x, "sha_sentryfile", value.asInstanceOf[js.Any])
+    
+    inline def setSha_sentryfileUndefined: Self = StObject.set(x, "sha_sentryfile", js.undefined)
+    
+    inline def setTwo_factor_code(value: String): Self = StObject.set(x, "two_factor_code", value.asInstanceOf[js.Any])
+    
+    inline def setTwo_factor_codeUndefined: Self = StObject.set(x, "two_factor_code", js.undefined)
+  }
 }
-

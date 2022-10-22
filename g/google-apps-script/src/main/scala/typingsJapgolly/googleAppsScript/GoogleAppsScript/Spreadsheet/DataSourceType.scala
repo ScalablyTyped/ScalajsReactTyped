@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DataSourceType extends js.Object
-
+sealed trait DataSourceType extends StObject
 /**
   * An enumeration of data source types.
   */
 @JSGlobal("GoogleAppsScript.Spreadsheet.DataSourceType")
 @js.native
-object DataSourceType extends js.Object {
-  @js.native
-  sealed trait BIGQUERY extends DataSourceType
+object DataSourceType extends StObject {
   
   @js.native
-  sealed trait DATA_SOURCE_TYPE_UNSUPPORTED extends DataSourceType
+  sealed trait BIGQUERY
+    extends StObject
+       with DataSourceType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DataSourceType with Double] = js.native
-  /* 1 */ @js.native
-  object BIGQUERY extends TopLevel[BIGQUERY with Double]
-  
-  /* 0 */ @js.native
-  object DATA_SOURCE_TYPE_UNSUPPORTED extends TopLevel[DATA_SOURCE_TYPE_UNSUPPORTED with Double]
-  
+  @js.native
+  sealed trait DATA_SOURCE_TYPE_UNSUPPORTED
+    extends StObject
+       with DataSourceType
 }
-

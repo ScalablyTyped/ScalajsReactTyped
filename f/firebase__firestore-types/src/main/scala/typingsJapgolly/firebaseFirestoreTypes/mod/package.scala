@@ -1,10 +1,16 @@
-package typingsJapgolly.firebaseFirestoreTypes
+package typingsJapgolly.firebaseFirestoreTypes.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.firebaseFirestoreTypes.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type DocumentData = org.scalablytyped.runtime.StringDictionary[js.Any]
-  type UpdateData = org.scalablytyped.runtime.StringDictionary[js.Any]
-}
+
+inline def CACHE_SIZE_UNLIMITED: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("CACHE_SIZE_UNLIMITED").asInstanceOf[Double]
+
+inline def setLogLevel(logLevel: LogLevel): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[Unit]
+
+type DocumentData = StringDictionary[Any]
+
+type UpdateData = StringDictionary[Any]

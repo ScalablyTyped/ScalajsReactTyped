@@ -1,37 +1,29 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditActorReadType extends js.Object
-
+sealed trait EditActorReadType extends StObject
 @JSGlobal("SP.JsGrid.EditActorReadType")
 @js.native
-object EditActorReadType extends js.Object {
-   // 1,
-  @js.native
-  sealed trait Both extends EditActorReadType
+object EditActorReadType extends StObject {
   
   @js.native
-  sealed trait DataOnly extends EditActorReadType
+  sealed trait Both
+    extends StObject
+       with EditActorReadType
   
-   // 2,
+  // 2,
   @js.native
-  sealed trait LocalizedOnly extends EditActorReadType
+  sealed trait DataOnly
+    extends StObject
+       with EditActorReadType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditActorReadType with Double] = js.native
-  /* 0 */ @js.native
-  object Both extends TopLevel[Both with Double]
-  
-  /* 2 */ @js.native
-  object DataOnly extends TopLevel[DataOnly with Double]
-  
-  /* 1 */ @js.native
-  object LocalizedOnly extends TopLevel[LocalizedOnly with Double]
-  
+  // 1,
+  @js.native
+  sealed trait LocalizedOnly
+    extends StObject
+       with EditActorReadType
 }
-

@@ -1,23 +1,36 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ThumbnailUrlOptions extends js.Object {
+trait ThumbnailUrlOptions extends StObject {
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var png: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
 }
-
 object ThumbnailUrlOptions {
-  @scala.inline
-  def apply(format: String = null, png: js.UndefOr[Boolean] = js.undefined, size: String = null): ThumbnailUrlOptions = {
+  
+  inline def apply(): ThumbnailUrlOptions = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(png)) __obj.updateDynamic("png")(png.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThumbnailUrlOptions]
   }
+  
+  extension [Self <: ThumbnailUrlOptions](x: Self) {
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+    
+    inline def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

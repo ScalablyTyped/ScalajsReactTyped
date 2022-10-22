@@ -1,12 +1,14 @@
 package typingsJapgolly.blessed.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blessed", "colors")
-@js.native
-object colors extends js.Object {
-  def `match`(hexColor: String): String = js.native
+object colors {
+  
+  @JSImport("blessed", "colors")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def `match`(hexColor: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(hexColor.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

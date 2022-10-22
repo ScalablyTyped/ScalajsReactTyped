@@ -1,19 +1,26 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpinnerStyle extends js.Object {
+trait SpinnerStyle extends StObject {
+  
   var strokeColor: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SpinnerStyle {
-  @scala.inline
-  def apply(strokeColor: js.Array[String] = null): SpinnerStyle = {
+  
+  inline def apply(): SpinnerStyle = {
     val __obj = js.Dynamic.literal()
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpinnerStyle]
   }
+  
+  extension [Self <: SpinnerStyle](x: Self) {
+    
+    inline def setStrokeColor(value: js.Array[String]): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    
+    inline def setStrokeColorVarargs(value: String*): Self = StObject.set(x, "strokeColor", js.Array(value*))
+  }
 }
-

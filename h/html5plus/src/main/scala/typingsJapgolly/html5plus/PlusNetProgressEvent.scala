@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HTTP请求进度事件
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
   */
-trait PlusNetProgressEvent extends js.Object {
+trait PlusNetProgressEvent extends StObject {
+  
   /**
     * 进度信息是否可计算
     * HTTP请求进度信息是否有效，如果HTTP请求头中包含Content-Length头信息则为true，否则为false。
@@ -17,6 +18,7 @@ trait PlusNetProgressEvent extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   var lengthComputable: js.UndefOr[Double] = js.undefined
+  
   /**
     * 当前已经接收到的数据长度
     * HTTP请求接收到的数据长度，单位为字节。
@@ -24,6 +26,7 @@ trait PlusNetProgressEvent extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   var loaded: js.UndefOr[Double] = js.undefined
+  
   /**
     * 事件的目标对象
     * 通知HTTP请求进度事件的XMLHttpRequest对象。
@@ -31,30 +34,39 @@ trait PlusNetProgressEvent extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   var target: js.UndefOr[PlusNetXMLHttpRequest] = js.undefined
+  
   /**
     * 总数据长度
     * HTTP请求返回的总数据长度，单位为字节。
-    * 	如果无法获取则设置为0。
+    *     如果无法获取则设置为0。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/net.html](http://www.html5plus.org/doc/zh_cn/net.html)
     */
   var total: js.UndefOr[Double] = js.undefined
 }
-
 object PlusNetProgressEvent {
-  @scala.inline
-  def apply(
-    lengthComputable: Int | Double = null,
-    loaded: Int | Double = null,
-    target: PlusNetXMLHttpRequest = null,
-    total: Int | Double = null
-  ): PlusNetProgressEvent = {
+  
+  inline def apply(): PlusNetProgressEvent = {
     val __obj = js.Dynamic.literal()
-    if (lengthComputable != null) __obj.updateDynamic("lengthComputable")(lengthComputable.asInstanceOf[js.Any])
-    if (loaded != null) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNetProgressEvent]
   }
+  
+  extension [Self <: PlusNetProgressEvent](x: Self) {
+    
+    inline def setLengthComputable(value: Double): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    
+    inline def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+    
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    
+    inline def setTarget(value: PlusNetXMLHttpRequest): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+  }
 }
-

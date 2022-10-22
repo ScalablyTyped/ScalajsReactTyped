@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkCostType extends js.Object
-
+sealed trait NetworkCostType extends StObject
 @JSGlobal("Windows.Networking.Connectivity.NetworkCostType")
 @js.native
-object NetworkCostType extends js.Object {
-  @js.native
-  sealed trait fixed extends NetworkCostType
+object NetworkCostType extends StObject {
   
   @js.native
-  sealed trait unknown extends NetworkCostType
+  sealed trait fixed
+    extends StObject
+       with NetworkCostType
   
   @js.native
-  sealed trait unrestricted extends NetworkCostType
+  sealed trait unknown
+    extends StObject
+       with NetworkCostType
   
   @js.native
-  sealed trait variable extends NetworkCostType
+  sealed trait unrestricted
+    extends StObject
+       with NetworkCostType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkCostType with Double] = js.native
-  /* 2 */ @js.native
-  object fixed extends TopLevel[fixed with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object unrestricted extends TopLevel[unrestricted with Double]
-  
-  /* 3 */ @js.native
-  object variable extends TopLevel[variable with Double]
-  
+  @js.native
+  sealed trait variable
+    extends StObject
+       with NetworkCostType
 }
-

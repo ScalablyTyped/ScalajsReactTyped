@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AssertionLevel extends js.Object
-
+sealed trait AssertionLevel extends StObject
 @JSGlobal("TypeScript.AssertionLevel")
 @js.native
-object AssertionLevel extends js.Object {
-  @js.native
-  sealed trait Aggressive extends AssertionLevel
+object AssertionLevel extends StObject {
   
   @js.native
-  sealed trait None extends AssertionLevel
+  sealed trait Aggressive
+    extends StObject
+       with AssertionLevel
   
   @js.native
-  sealed trait Normal extends AssertionLevel
+  sealed trait None
+    extends StObject
+       with AssertionLevel
   
   @js.native
-  sealed trait VeryAggressive extends AssertionLevel
+  sealed trait Normal
+    extends StObject
+       with AssertionLevel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AssertionLevel with Double] = js.native
-  /* 2 */ @js.native
-  object Aggressive extends TopLevel[Aggressive with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
-  /* 1 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
-  /* 3 */ @js.native
-  object VeryAggressive extends TopLevel[VeryAggressive with Double]
-  
+  @js.native
+  sealed trait VeryAggressive
+    extends StObject
+       with AssertionLevel
 }
-

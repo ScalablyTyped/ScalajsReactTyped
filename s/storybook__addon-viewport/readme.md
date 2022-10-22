@@ -1,22 +1,22 @@
 
 # Scala.js typings for storybook__addon-viewport
 
-Typings are for version 5.3.13
+Typings are for version 6.5.12
 
 ## Library description:
-Storybook addon to change the viewport size to mobile
+Build responsive components by adjusting Storybook’s viewport size and orientation
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-viewport |
-| Keywords           | addon, storybook |
-| # releases         | 415 |
-| # dependents       | 53 |
-| # downloads        | 12286199 |
-| # stars            | 0 |
+| Keywords           | addon, storybook, style, essentials |
+| # releases         | 461 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3327228333333334E7 |
+| # stars            | 74448.0 |
 
 ## Links
-- [Homepage](https://github.com/storybookjs/storybook/tree/master/addons/viewport)
+- [Homepage](https://github.com/storybookjs/storybook/tree/main/addons/viewport)
 - [Bugs](https://github.com/storybookjs/storybook/issues)
 - [Repository](https://github.com/storybookjs/storybook)
 - [Npm](https://www.npmjs.com/package/%40storybook%2Faddon-viewport)

@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'x' : x coordinate
@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.x
   - typingsJapgolly.cytoscape.cytoscapeStrings.y
 */
-trait PositionDimension extends js.Object
-
+trait PositionDimension extends StObject
 object PositionDimension {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def x: typingsJapgolly.cytoscape.cytoscapeStrings.x = this.cast("x")
-  @scala.inline
-  def y: typingsJapgolly.cytoscape.cytoscapeStrings.y = this.cast("y")
+  
+  inline def x: typingsJapgolly.cytoscape.cytoscapeStrings.x = "x".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.x]
+  
+  inline def y: typingsJapgolly.cytoscape.cytoscapeStrings.y = "y".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.y]
 }
-

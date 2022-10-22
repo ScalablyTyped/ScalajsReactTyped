@@ -1,31 +1,24 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ToolbarButtonName extends js.Object
-
+sealed trait ToolbarButtonName extends StObject
 @JSGlobal("tableau.ToolbarButtonName")
 @js.native
-object ToolbarButtonName extends js.Object {
+object ToolbarButtonName extends StObject {
+  
   /** Specifies the Redo button in the toolbar. */
   @js.native
-  sealed trait REDO extends ToolbarButtonName
+  sealed trait REDO
+    extends StObject
+       with ToolbarButtonName
   
   /** Specifies the Undo button in the toolbar. */
   @js.native
-  sealed trait UNDO extends ToolbarButtonName
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ToolbarButtonName with String] = js.native
-  /* "redo" */ @js.native
-  object REDO extends TopLevel[REDO with String]
-  
-  /* "undo" */ @js.native
-  object UNDO extends TopLevel[UNDO with String]
-  
+  sealed trait UNDO
+    extends StObject
+       with ToolbarButtonName
 }
-

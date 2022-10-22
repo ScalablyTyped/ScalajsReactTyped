@@ -1,21 +1,24 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SpreadAssignment
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JSDocContainer
+     with HasJSDoc
+     with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with _BindingOrAssignmentElement
-     with _BindingOrAssignmentElementRestIndicator
-     with _HasJSDoc {
-  var expression: Expression = js.native
+     with _BindingOrAssignmentElementRestIndicator {
+  
+  val expression: Expression = js.native
+  
   @JSName("kind")
-  var kind_SpreadAssignment: typingsJapgolly.typescript.mod.SyntaxKind.SpreadAssignment = js.native
+  val kind_SpreadAssignment: typingsJapgolly.typescript.mod.SyntaxKind.SpreadAssignment = js.native
+  
   @JSName("parent")
-  var parent_SpreadAssignment: ObjectLiteralExpression = js.native
+  val parent_SpreadAssignment: ObjectLiteralExpression = js.native
 }
-

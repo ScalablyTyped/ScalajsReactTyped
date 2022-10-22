@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FontStyle extends js.Object
-
+sealed trait FontStyle extends StObject
 /** Represents the style of a font face (for example, normal or italic). */
 @JSGlobal("Windows.UI.Text.FontStyle")
 @js.native
-object FontStyle extends js.Object {
+object FontStyle extends StObject {
+  
   /** Represents an italic font style. */
   @js.native
-  sealed trait italic extends FontStyle
+  sealed trait italic
+    extends StObject
+       with FontStyle
   
   /** Represents a normal font style. */
   @js.native
-  sealed trait normal extends FontStyle
+  sealed trait normal
+    extends StObject
+       with FontStyle
   
   /** Represents an oblique font style. */
   @js.native
-  sealed trait oblique extends FontStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FontStyle with Double] = js.native
-  /* 2 */ @js.native
-  object italic extends TopLevel[italic with Double]
-  
-  /* 0 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 1 */ @js.native
-  object oblique extends TopLevel[oblique with Double]
-  
+  sealed trait oblique
+    extends StObject
+       with FontStyle
 }
-

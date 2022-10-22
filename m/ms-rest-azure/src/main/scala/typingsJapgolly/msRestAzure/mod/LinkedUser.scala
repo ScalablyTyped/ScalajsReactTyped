@@ -1,26 +1,33 @@
 package typingsJapgolly.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LinkedUser extends js.Object {
+trait LinkedUser extends StObject {
+  
   /**
     * The user name. This could be a display name or a GUID.
     */
   var name: String
+  
   /**
     * The user type: 'user', 'servicePrincipal'.
     */
   var `type`: UserType
 }
-
 object LinkedUser {
-  @scala.inline
-  def apply(name: String, `type`: UserType): LinkedUser = {
+  
+  inline def apply(name: String, `type`: UserType): LinkedUser = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinkedUser]
   }
+  
+  extension [Self <: LinkedUser](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

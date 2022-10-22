@@ -1,20 +1,20 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/endOfWeek", JSImport.Namespace)
-@js.native
-object endOfWeekMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): js.Date = js.native
-    def apply(date: Double, options: AnonLocale): js.Date = js.native
-    def apply(date: Date): js.Date = js.native
-    def apply(date: Date, options: AnonLocale): js.Date = js.native
-  }
+object endOfWeekMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: Double, options: typingsJapgolly.dateFns.anon.Locale): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/endOfWeek", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

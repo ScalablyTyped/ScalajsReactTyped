@@ -1,36 +1,51 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined parent std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.MenuItemContextKeys> */
-trait MenuItemContext[T /* <: TypeaheadModel */] extends js.Object {
+/* Inlined std.Pick<react-bootstrap-typeahead.react-bootstrap-typeahead.TypeaheadContext<T>, react-bootstrap-typeahead.react-bootstrap-typeahead.MenuItemContextKeys> */
+trait MenuItemContext[T /* <: TypeaheadModel */] extends StObject {
+  
   var activeIndex: js.UndefOr[Double] = js.undefined
+  
   var isOnlyResult: js.UndefOr[Boolean] = js.undefined
+  
   var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
+  
   var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event_, Unit]] = js.undefined
+  
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
 }
-
 object MenuItemContext {
-  @scala.inline
-  def apply[T /* <: TypeaheadModel */](
-    activeIndex: Int | Double = null,
-    isOnlyResult: js.UndefOr[Boolean] = js.undefined,
-    onActiveItemChange: /* options */ T => Callback = null,
-    onInitialItemChange: /* option */ T => Callback = null,
-    onMenuItemClick: (/* option */ T, /* e */ Event_) => Callback = null
-  ): MenuItemContext[T] = {
+  
+  inline def apply[T /* <: TypeaheadModel */](): MenuItemContext[T] = {
     val __obj = js.Dynamic.literal()
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnlyResult)) __obj.updateDynamic("isOnlyResult")(isOnlyResult.asInstanceOf[js.Any])
-    if (onActiveItemChange != null) __obj.updateDynamic("onActiveItemChange")(js.Any.fromFunction1((t0: /* options */ T) => onActiveItemChange(t0).runNow()))
-    if (onInitialItemChange != null) __obj.updateDynamic("onInitialItemChange")(js.Any.fromFunction1((t0: /* option */ T) => onInitialItemChange(t0).runNow()))
-    if (onMenuItemClick != null) __obj.updateDynamic("onMenuItemClick")(js.Any.fromFunction2((t0: /* option */ T, t1: /* e */ typingsJapgolly.std.Event_) => onMenuItemClick(t0, t1).runNow()))
     __obj.asInstanceOf[MenuItemContext[T]]
   }
+  
+  extension [Self <: MenuItemContext[?], T /* <: TypeaheadModel */](x: Self & MenuItemContext[T]) {
+    
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+    
+    inline def setIsOnlyResult(value: Boolean): Self = StObject.set(x, "isOnlyResult", value.asInstanceOf[js.Any])
+    
+    inline def setIsOnlyResultUndefined: Self = StObject.set(x, "isOnlyResult", js.undefined)
+    
+    inline def setOnActiveItemChange(value: /* options */ T => Callback): Self = StObject.set(x, "onActiveItemChange", js.Any.fromFunction1((t0: /* options */ T) => value(t0).runNow()))
+    
+    inline def setOnActiveItemChangeUndefined: Self = StObject.set(x, "onActiveItemChange", js.undefined)
+    
+    inline def setOnInitialItemChange(value: /* option */ T => Callback): Self = StObject.set(x, "onInitialItemChange", js.Any.fromFunction1((t0: /* option */ T) => value(t0).runNow()))
+    
+    inline def setOnInitialItemChangeUndefined: Self = StObject.set(x, "onInitialItemChange", js.undefined)
+    
+    inline def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Callback): Self = StObject.set(x, "onMenuItemClick", js.Any.fromFunction2((t0: /* option */ T, t1: /* e */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setOnMenuItemClickUndefined: Self = StObject.set(x, "onMenuItemClick", js.undefined)
+  }
 }
-

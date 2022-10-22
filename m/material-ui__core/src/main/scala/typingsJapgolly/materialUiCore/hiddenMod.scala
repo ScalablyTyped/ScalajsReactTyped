@@ -1,26 +1,30 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.materialUiCore.hiddenHiddenMod.HiddenProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
 import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Hidden", JSImport.Namespace)
-@js.native
-object hiddenMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[HiddenProps, ComponentState, js.Any] {
-    def this(props: HiddenProps) = this()
-    def this(props: HiddenProps, context: js.Any) = this()
-  }
+object hiddenMod extends Shortcut {
   
+  /**
+    * Responsively hides children based on the selected implementation.
+    * Demos:
+    *
+    * - [Hidden](https://mui.com/components/hidden/)
+    *
+    * API:
+    *
+    * - [Hidden API](https://mui.com/api/hidden/)
+    */
+  @JSImport("@material-ui/core/Hidden", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[HiddenProps]]
+  val default: ComponentType[HiddenProps] = js.native
   
+  type _To = ComponentType[HiddenProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `hiddenMod.foo` */
+  override def _to: ComponentType[HiddenProps] = default
 }
-

@@ -1,202 +1,198 @@
 package typingsJapgolly.reactNavigationStack
 
-import typingsJapgolly.reactNavigationStack.createPointerEventsContainerMod.PointerEvents
-import typingsJapgolly.reactNavigationStack.typesMod.HeaderBackgroundTransitionPreset
-import typingsJapgolly.reactNavigationStack.typesMod.HeaderLayoutPreset
-import typingsJapgolly.reactNavigationStack.typesMod.HeaderMode
-import typingsJapgolly.reactNavigationStack.typesMod.HeaderTransitionPreset
-import typingsJapgolly.reactNavigationStack.typesMod.NavigationStackEventName
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.GestureDirection
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.NavigationStackEventName
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardMode
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNavigationStackStrings {
-  @js.native
-  sealed trait assertive extends js.Object
   
   @js.native
-  sealed trait auto extends PointerEvents
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait balanced extends js.Object
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait `box-none` extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `box-only` extends PointerEvents
+  sealed trait balanced extends StObject
+  inline def balanced: balanced = "balanced".asInstanceOf[balanced]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait `box-none` extends StObject
+  inline def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait `box-only` extends StObject
+  inline def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
   
   @js.native
-  sealed trait center extends HeaderLayoutPreset
+  sealed trait card
+    extends StObject
+       with StackCardMode
+  inline def card: card = "card".asInstanceOf[card]
   
   @js.native
-  sealed trait clip extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait didBlur extends NavigationStackEventName
+  sealed trait clip extends StObject
+  inline def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait didFocus extends NavigationStackEventName
+  sealed trait didBlur
+    extends StObject
+       with NavigationStackEventName
+  inline def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
   
   @js.native
-  sealed trait fade extends HeaderBackgroundTransitionPreset
+  sealed trait didFocus
+    extends StObject
+       with NavigationStackEventName
+  inline def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
   
   @js.native
-  sealed trait `fade-in-place` extends HeaderTransitionPreset
+  sealed trait email extends StObject
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait float extends HeaderMode
+  sealed trait float
+    extends StObject
+       with StackHeaderMode
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait highQuality extends js.Object
+  sealed trait head extends StObject
+  inline def head: head = "head".asInstanceOf[head]
   
   @js.native
-  sealed trait inverted extends js.Object
+  sealed trait highQuality extends StObject
+  inline def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait left extends HeaderLayoutPreset
+  sealed trait horizontal
+    extends StObject
+       with GestureDirection
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait `horizontal-inverted`
+    extends StObject
+       with GestureDirection
+  inline def `horizontal-inverted`: `horizontal-inverted` = "horizontal-inverted".asInstanceOf[`horizontal-inverted`]
   
   @js.native
-  sealed trait modal extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait `no-hide-descendants` extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
+  
+  @js.native
+  sealed trait modal
+    extends StObject
+       with StackCardMode
+  inline def modal: modal = "modal".asInstanceOf[modal]
+  
+  @js.native
+  sealed trait no extends StObject
+  inline def no: no = "no".asInstanceOf[no]
+  
+  @js.native
+  sealed trait `no-hide-descendants` extends StObject
+  inline def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   
   @js.native
   sealed trait none
-    extends HeaderMode
-       with PointerEvents
+    extends StObject
+       with StackHeaderMode
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait phoneNumber extends StObject
+  inline def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
   @js.native
-  sealed trait radiobutton_checked extends js.Object
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait radiobutton_unchecked extends js.Object
+  sealed trait pop extends StObject
+  inline def pop: pop = "pop".asInstanceOf[pop]
   
   @js.native
-  sealed trait refocus extends js.Object
+  sealed trait push extends StObject
+  inline def push: push = "push".asInstanceOf[push]
   
   @js.native
-  sealed trait screen extends HeaderMode
+  sealed trait screen
+    extends StObject
+       with StackHeaderMode
+  inline def screen: screen = "screen".asInstanceOf[screen]
   
   @js.native
-  sealed trait simple extends js.Object
+  sealed trait simple extends StObject
+  inline def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait tail extends js.Object
+  sealed trait spring extends StObject
+  inline def spring: spring = "spring".asInstanceOf[spring]
   
   @js.native
-  sealed trait toggle extends HeaderBackgroundTransitionPreset
+  sealed trait tail extends StObject
+  inline def tail: tail = "tail".asInstanceOf[tail]
   
   @js.native
-  sealed trait translate extends HeaderBackgroundTransitionPreset
+  sealed trait timing extends StObject
+  inline def timing: timing = "timing".asInstanceOf[timing]
   
   @js.native
-  sealed trait uikit extends HeaderTransitionPreset
+  sealed trait vertical
+    extends StObject
+       with GestureDirection
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait willBlur extends NavigationStackEventName
+  sealed trait `vertical-inverted`
+    extends StObject
+       with GestureDirection
+  inline def `vertical-inverted`: `vertical-inverted` = "vertical-inverted".asInstanceOf[`vertical-inverted`]
   
   @js.native
-  sealed trait willFocus extends NavigationStackEventName
+  sealed trait willBlur
+    extends StObject
+       with NavigationStackEventName
+  inline def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait willFocus
+    extends StObject
+       with NavigationStackEventName
+  inline def willFocus: willFocus = "willFocus".asInstanceOf[willFocus]
   
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def balanced: balanced = "balanced".asInstanceOf[balanced]
-  @scala.inline
-  def `box-none`: `box-none` = "box-none".asInstanceOf[`box-none`]
-  @scala.inline
-  def `box-only`: `box-only` = "box-only".asInstanceOf[`box-only`]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def card: card = "card".asInstanceOf[card]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def clip: clip = "clip".asInstanceOf[clip]
-  @scala.inline
-  def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
-  @scala.inline
-  def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
-  @scala.inline
-  def fade: fade = "fade".asInstanceOf[fade]
-  @scala.inline
-  def `fade-in-place`: `fade-in-place` = "fade-in-place".asInstanceOf[`fade-in-place`]
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
-  @scala.inline
-  def head: head = "head".asInstanceOf[head]
-  @scala.inline
-  def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
-  @scala.inline
-  def inverted: inverted = "inverted".asInstanceOf[inverted]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def modal: modal = "modal".asInstanceOf[modal]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def radiobutton_checked: radiobutton_checked = "radiobutton_checked".asInstanceOf[radiobutton_checked]
-  @scala.inline
-  def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
-  @scala.inline
-  def refocus: refocus = "refocus".asInstanceOf[refocus]
-  @scala.inline
-  def screen: screen = "screen".asInstanceOf[screen]
-  @scala.inline
-  def simple: simple = "simple".asInstanceOf[simple]
-  @scala.inline
-  def tail: tail = "tail".asInstanceOf[tail]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
-  @scala.inline
-  def translate: translate = "translate".asInstanceOf[translate]
-  @scala.inline
-  def uikit: uikit = "uikit".asInstanceOf[uikit]
-  @scala.inline
-  def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
-  @scala.inline
-  def willFocus: willFocus = "willFocus".asInstanceOf[willFocus]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
 }
-

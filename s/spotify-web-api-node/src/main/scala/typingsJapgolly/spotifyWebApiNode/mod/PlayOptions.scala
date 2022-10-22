@@ -1,34 +1,48 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
-import typingsJapgolly.spotifyWebApiNode.AnonPosition
-import typingsJapgolly.spotifyWebApiNode.AnonUri
+import typingsJapgolly.spotifyWebApiNode.anon.Position
+import typingsJapgolly.spotifyWebApiNode.anon.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlayOptions extends DeviceOptions {
+trait PlayOptions
+  extends StObject
+     with DeviceOptions {
+  
   var context_uri: js.UndefOr[String] = js.undefined
-  var offset: js.UndefOr[AnonPosition | AnonUri] = js.undefined
+  
+  var offset: js.UndefOr[Position | Uri] = js.undefined
+  
   var position_ms: js.UndefOr[Double] = js.undefined
+  
   var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object PlayOptions {
-  @scala.inline
-  def apply(
-    context_uri: String = null,
-    device_id: String = null,
-    offset: AnonPosition | AnonUri = null,
-    position_ms: Int | Double = null,
-    uris: js.Array[String] = null
-  ): PlayOptions = {
+  
+  inline def apply(): PlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (context_uri != null) __obj.updateDynamic("context_uri")(context_uri.asInstanceOf[js.Any])
-    if (device_id != null) __obj.updateDynamic("device_id")(device_id.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position_ms != null) __obj.updateDynamic("position_ms")(position_ms.asInstanceOf[js.Any])
-    if (uris != null) __obj.updateDynamic("uris")(uris.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayOptions]
   }
+  
+  extension [Self <: PlayOptions](x: Self) {
+    
+    inline def setContext_uri(value: String): Self = StObject.set(x, "context_uri", value.asInstanceOf[js.Any])
+    
+    inline def setContext_uriUndefined: Self = StObject.set(x, "context_uri", js.undefined)
+    
+    inline def setOffset(value: Position | Uri): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPosition_ms(value: Double): Self = StObject.set(x, "position_ms", value.asInstanceOf[js.Any])
+    
+    inline def setPosition_msUndefined: Self = StObject.set(x, "position_ms", js.undefined)
+    
+    inline def setUris(value: js.Array[String]): Self = StObject.set(x, "uris", value.asInstanceOf[js.Any])
+    
+    inline def setUrisUndefined: Self = StObject.set(x, "uris", js.undefined)
+    
+    inline def setUrisVarargs(value: String*): Self = StObject.set(x, "uris", js.Array(value*))
+  }
 }
-

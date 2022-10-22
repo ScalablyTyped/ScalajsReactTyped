@@ -1,20 +1,61 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.Inspectors")
-@js.native
-class Inspectors protected () extends js.Object {
-  val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
-  val Class: OlObjectClass = js.native
-  val Count: Double = js.native
-  @JSName("Outlook.Inspectors_typekey")
-  var OutlookDotInspectors_typekey: Inspectors = js.native
-  val Parent: js.Any = js.native
-  val Session: NameSpace = js.native
-  def Add(Item: js.Any): Inspector = js.native
-  def Item(Index: js.Any): Inspector = js.native
+trait Inspectors extends StObject {
+  
+  def Add(Item: Any): Inspector
+  
+  val Application: typingsJapgolly.activexOutlook.Outlook.Application
+  
+  val Class: OlObjectClass
+  
+  val Count: Double
+  
+  def Item(Index: Any): Inspector
+  
+  /* private */ @JSName("Outlook.Inspectors_typekey")
+  var OutlookDotInspectors_typekey: Inspectors
+  
+  val Parent: Any
+  
+  val Session: NameSpace
 }
-
+object Inspectors {
+  
+  inline def apply(
+    Add: Any => Inspector,
+    Application: Application,
+    Class: OlObjectClass,
+    Count: Double,
+    Item: Any => Inspector,
+    OutlookDotInspectors_typekey: Inspectors,
+    Parent: Any,
+    Session: NameSpace
+  ): Inspectors = {
+    val __obj = js.Dynamic.literal(Add = js.Any.fromFunction1(Add), Application = Application.asInstanceOf[js.Any], Class = Class.asInstanceOf[js.Any], Count = Count.asInstanceOf[js.Any], Item = js.Any.fromFunction1(Item), Parent = Parent.asInstanceOf[js.Any], Session = Session.asInstanceOf[js.Any])
+    __obj.updateDynamic("Outlook.Inspectors_typekey")(OutlookDotInspectors_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Inspectors]
+  }
+  
+  extension [Self <: Inspectors](x: Self) {
+    
+    inline def setAdd(value: Any => Inspector): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: Any => Inspector): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    
+    inline def setOutlookDotInspectors_typekey(value: Inspectors): Self = StObject.set(x, "Outlook.Inspectors_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+  }
+}

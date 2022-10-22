@@ -1,22 +1,35 @@
 package typingsJapgolly.blueimpLoadImage.mod
 
 import typingsJapgolly.blueimpLoadImage.blueimpLoadImageBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CropTrueOptions extends js.Object {
+// Setting 'aspectRatio' automatically enables 'crop', so setting 'crop' to
+// 'false' in that case is not valid
+trait CropTrueOptions
+  extends StObject
+     with CropOptions {
+  
   var aspectRatio: js.UndefOr[AspectRatio] = js.undefined
+  
   var crop: js.UndefOr[`true`] = js.undefined
 }
-
 object CropTrueOptions {
-  @scala.inline
-  def apply(aspectRatio: Int | Double = null, crop: `true` = null): CropTrueOptions = {
+  
+  inline def apply(): CropTrueOptions = {
     val __obj = js.Dynamic.literal()
-    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
-    if (crop != null) __obj.updateDynamic("crop")(crop.asInstanceOf[js.Any])
     __obj.asInstanceOf[CropTrueOptions]
   }
+  
+  extension [Self <: CropTrueOptions](x: Self) {
+    
+    inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+    
+    inline def setCrop(value: `true`): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+    
+    inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+  }
 }
-

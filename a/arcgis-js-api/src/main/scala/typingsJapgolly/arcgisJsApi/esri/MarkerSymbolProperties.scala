@@ -2,60 +2,71 @@ package typingsJapgolly.arcgisJsApi.esri
 
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`picture-marker`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`simple-marker`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarkerSymbolProperties extends SymbolProperties {
+trait MarkerSymbolProperties
+  extends StObject
+     with SymbolProperties {
+  
   /**
     * The angle of the marker relative to the screen in degrees.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#angle)
     */
   var angle: js.UndefOr[Double] = js.undefined
+  
   /**
     * The symbol type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#type)
     */
   var `type`: js.UndefOr[`simple-marker` | `picture-marker`] = js.undefined
+  
   /**
-    * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
+    * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#xoffset)
-    *
-    * @default 0
     */
   var xoffset: js.UndefOr[Double | String] = js.undefined
+  
   /**
-    * The offset on the y-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
+    * The offset on the y-axis in points.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-MarkerSymbol.html#yoffset)
     */
   var yoffset: js.UndefOr[Double | String] = js.undefined
 }
-
 object MarkerSymbolProperties {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    color: Color_ | js.Array[Double] | String = null,
-    `type`: `simple-marker` | `picture-marker` = null,
-    xoffset: Double | String = null,
-    yoffset: Double | String = null
-  ): MarkerSymbolProperties = {
+  
+  inline def apply(): MarkerSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerSymbolProperties]
   }
+  
+  extension [Self <: MarkerSymbolProperties](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setType(value: `simple-marker` | `picture-marker`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    
+    inline def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+  }
 }
-

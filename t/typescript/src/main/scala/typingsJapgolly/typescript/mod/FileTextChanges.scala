@@ -1,25 +1,34 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileTextChanges extends js.Object {
+trait FileTextChanges extends StObject {
+  
   var fileName: java.lang.String
+  
   var isNewFile: js.UndefOr[Boolean] = js.undefined
+  
   var textChanges: js.Array[TextChange]
 }
-
 object FileTextChanges {
-  @scala.inline
-  def apply(
-    fileName: java.lang.String,
-    textChanges: js.Array[TextChange],
-    isNewFile: js.UndefOr[Boolean] = js.undefined
-  ): FileTextChanges = {
+  
+  inline def apply(fileName: java.lang.String, textChanges: js.Array[TextChange]): FileTextChanges = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], textChanges = textChanges.asInstanceOf[js.Any])
-    if (!js.isUndefined(isNewFile)) __obj.updateDynamic("isNewFile")(isNewFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileTextChanges]
   }
+  
+  extension [Self <: FileTextChanges](x: Self) {
+    
+    inline def setFileName(value: java.lang.String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setIsNewFile(value: Boolean): Self = StObject.set(x, "isNewFile", value.asInstanceOf[js.Any])
+    
+    inline def setIsNewFileUndefined: Self = StObject.set(x, "isNewFile", js.undefined)
+    
+    inline def setTextChanges(value: js.Array[TextChange]): Self = StObject.set(x, "textChanges", value.asInstanceOf[js.Any])
+    
+    inline def setTextChangesVarargs(value: TextChange*): Self = StObject.set(x, "textChanges", js.Array(value*))
+  }
 }
-

@@ -1,15 +1,39 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CANNON.EventTarget")
-@js.native
-class EventTarget () extends js.Object {
-  def addEventListener(`type`: String, listener: js.Function): EventTarget = js.native
-  def dispatchEvent(event: IEvent): IEvent = js.native
-  def hasEventListener(`type`: String, listener: js.Function): Boolean = js.native
-  def removeEventListener(`type`: String, listener: js.Function): EventTarget = js.native
+trait EventTarget extends StObject {
+  
+  def addEventListener(`type`: String, listener: js.Function): EventTarget
+  
+  def dispatchEvent(event: IEvent): IEvent
+  
+  def hasEventListener(`type`: String, listener: js.Function): Boolean
+  
+  def removeEventListener(`type`: String, listener: js.Function): EventTarget
 }
-
+object EventTarget {
+  
+  inline def apply(
+    addEventListener: (String, js.Function) => EventTarget,
+    dispatchEvent: IEvent => IEvent,
+    hasEventListener: (String, js.Function) => Boolean,
+    removeEventListener: (String, js.Function) => EventTarget
+  ): EventTarget = {
+    val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction2(addEventListener), dispatchEvent = js.Any.fromFunction1(dispatchEvent), hasEventListener = js.Any.fromFunction2(hasEventListener), removeEventListener = js.Any.fromFunction2(removeEventListener))
+    __obj.asInstanceOf[EventTarget]
+  }
+  
+  extension [Self <: EventTarget](x: Self) {
+    
+    inline def setAddEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    
+    inline def setDispatchEvent(value: IEvent => IEvent): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+    
+    inline def setHasEventListener(value: (String, js.Function) => Boolean): Self = StObject.set(x, "hasEventListener", js.Any.fromFunction2(value))
+    
+    inline def setRemoveEventListener(value: (String, js.Function) => EventTarget): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+  }
+}

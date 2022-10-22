@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Media.Devices
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Devices.KeypadPressedEventArgs")
-@js.native
-class KeypadPressedEventArgs () extends IKeypadPressedEventArgs {
-  /* CompleteClass */
-  override var telephonyKey: TelephonyKey = js.native
+trait KeypadPressedEventArgs
+  extends StObject
+     with IKeypadPressedEventArgs
+object KeypadPressedEventArgs {
+  
+  inline def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
+    val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeypadPressedEventArgs]
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for youtube-dl
 
-Typings are for version 1.12
+Typings are for version 3.0
 
 ## Library description:
 youtube-dl driver for node
@@ -10,10 +10,10 @@ youtube-dl driver for node
 | ------------------ | :-------------: |
 | Full name          | youtube-dl |
 | Keywords           | download, video, youtube |
-| # releases         | 8 |
-| # dependents       | 73 |
-| # downloads        | 143514 |
-| # stars            | 37 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5196.666666666667 |
+| # stars            | 1705.0 |
 
 ## Links
 - [Homepage](https://github.com/przemyslawpluta/node-youtube-dl#readme)

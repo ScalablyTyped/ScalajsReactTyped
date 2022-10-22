@@ -11,10 +11,9 @@ import typingsJapgolly.phaser.Phaser.Tilemaps.Tile
 import typingsJapgolly.phaser.Phaser.Types.Physics.Matter.MatterBodyConfig
 import typingsJapgolly.phaser.Phaser.Types.Physics.Matter.MatterConstraintConfig
 import typingsJapgolly.phaser.Phaser.Types.Physics.Matter.MatterTileOptions
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Matter Factory is responsible for quickly creating a variety of different types of
@@ -30,26 +29,9 @@ import scala.scalajs.js.annotation._
   * directly via your own code or constructors. It is provided as a means to keep your
   * code concise.
   */
-@JSGlobal("Phaser.Physics.Matter.Factory")
 @js.native
-class Factory protected () extends js.Object {
-  /**
-    * 
-    * @param world The Matter World which this Factory adds to.
-    */
-  def this(world: World) = this()
-  /**
-    * The Scene which this Factory's Matter World belongs to.
-    */
-  var scene: Scene = js.native
-  /**
-    * A reference to the Scene.Systems this Matter Physics instance belongs to.
-    */
-  var sys: Systems = js.native
-  /**
-    * The Matter World which this Factory adds to.
-    */
-  var world: World = js.native
+trait Factory extends StObject {
+  
   /**
     * Creates a composite with simple car setup of bodies and constraints.
     * @param x The horizontal position of the car in the world.
@@ -59,6 +41,7 @@ class Factory protected () extends js.Object {
     * @param wheelSize The radius of the car wheels.
     */
   def car(x: Double, y: Double, width: Double, height: Double, wheelSize: Double): CompositeType = js.native
+  
   /**
     * Chains all bodies in the given composite together using constraints.
     * @param composite The composite in which all bodies will be chained together sequentially.
@@ -77,6 +60,7 @@ class Factory protected () extends js.Object {
     yOffsetB: Double,
     options: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * Creates a new rigid circular Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -86,8 +70,10 @@ class Factory protected () extends js.Object {
     * @param maxSides The maximum amount of sides to use for the polygon which will approximate this circle.
     */
   def circle(x: Double, y: Double, radius: Double): BodyType = js.native
+  def circle(x: Double, y: Double, radius: Double, options: Unit, maxSides: Double): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig): BodyType = js.native
   def circle(x: Double, y: Double, radius: Double, options: MatterBodyConfig, maxSides: Double): BodyType = js.native
+  
   /**
     * Constraints (or joints) are used for specifying that a fixed distance must be maintained
     * between two bodies, or a body and a fixed world-space position.
@@ -117,10 +103,16 @@ class Factory protected () extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def constraint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Destroys this Factory.
     */
   def destroy(): Unit = js.native
+  
   /**
     * Creates a body using the supplied physics data, as provided by a JSON file.
     * 
@@ -164,9 +156,11 @@ class Factory protected () extends js.Object {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
-  def fromJSON(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
-  def fromJSON(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: MatterBodyConfig): BodyType = js.native
+  def fromJSON(x: Double, y: Double, config: Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  
   /**
     * Creates a body using data exported from the application PhysicsEditor (https://www.codeandweb.com/physicseditor)
     * 
@@ -194,9 +188,11 @@ class Factory protected () extends js.Object {
     * @param options An optional Body configuration object that is used to set initial Body properties on creation.
     * @param addToWorld Should the newly created body be immediately added to the World? Default true.
     */
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig): BodyType = js.native
-  def fromPhysicsEditor(x: Double, y: Double, config: js.Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: MatterBodyConfig): BodyType = js.native
+  def fromPhysicsEditor(x: Double, y: Double, config: Any, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  
   /**
     * Creates a body using the path data from an SVG file.
     * 
@@ -225,6 +221,7 @@ class Factory protected () extends js.Object {
     */
   def fromSVG(x: Double, y: Double, xml: js.Object): BodyType = js.native
   def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double, options: Unit, addToWorld: Boolean): BodyType = js.native
   def fromSVG(x: Double, y: Double, xml: js.Object, scale: Double, options: MatterBodyConfig): BodyType = js.native
   def fromSVG(
     x: Double,
@@ -234,6 +231,10 @@ class Factory protected () extends js.Object {
     options: MatterBodyConfig,
     addToWorld: Boolean
   ): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: Unit, addToWorld: Boolean): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: MatterBodyConfig): BodyType = js.native
+  def fromSVG(x: Double, y: Double, xml: js.Object, scale: Unit, options: MatterBodyConfig, addToWorld: Boolean): BodyType = js.native
+  
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices) and adds it to the World.
     * If the vertices are convex, they will pass through as supplied. Otherwise, if the vertices are concave, they will be decomposed. Note that this process is not guaranteed to support complex sets of vertices, e.g. ones with holes.
@@ -246,6 +247,59 @@ class Factory protected () extends js.Object {
     * @param minimumArea During decomposition discard parts that have an area less than this. Default 10.
     */
   def fromVertices(x: Double, y: Double, vertexSets: String): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: String, options: Unit, flagInternal: Boolean): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
   def fromVertices(x: Double, y: Double, vertexSets: String, options: MatterBodyConfig): BodyType = js.native
   def fromVertices(x: Double, y: Double, vertexSets: String, options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
@@ -265,13 +319,101 @@ class Factory protected () extends js.Object {
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_]): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_], options: MatterBodyConfig): BodyType = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[_], options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: String,
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any]): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: Unit, flagInternal: Boolean): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: MatterBodyConfig): BodyType = js.native
+  def fromVertices(x: Double, y: Double, vertexSets: js.Array[Any], options: MatterBodyConfig, flagInternal: Boolean): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double
@@ -279,12 +421,48 @@ class Factory protected () extends js.Object {
   def fromVertices(
     x: Double,
     y: Double,
-    vertexSets: js.Array[_],
+    vertexSets: js.Array[Any],
     options: MatterBodyConfig,
     flagInternal: Boolean,
     removeCollinear: Double,
     minimumArea: Double
   ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: MatterBodyConfig,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): BodyType = js.native
+  def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[Any],
+    options: MatterBodyConfig,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): BodyType = js.native
+  
   /**
     * Takes an existing Game Object and injects all of the Matter Components into it.
     * 
@@ -297,11 +475,13 @@ class Factory protected () extends js.Object {
     * @param options A Matter Body configuration object, or an instance of a Matter Body.
     * @param addToWorld Add this Matter Body to the World? Default true.
     */
-  def gameObject(gameObject: GameObject): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: Body): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: MatterBodyConfig): GameObject = js.native
-  def gameObject(gameObject: GameObject, options: MatterBodyConfig, addToWorld: Boolean): GameObject = js.native
+  def gameObject(gameObject: GameObject): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Unit, addToWorld: Boolean): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Body): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: Body, addToWorld: Boolean): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: MatterBodyConfig): Image | Sprite | GameObject = js.native
+  def gameObject(gameObject: GameObject, options: MatterBodyConfig, addToWorld: Boolean): Image | Sprite | GameObject = js.native
+  
   /**
     * Creates a Matter Physics Image Game Object.
     * 
@@ -318,8 +498,10 @@ class Factory protected () extends js.Object {
   def image(x: Double, y: Double, key: String): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String): Image = js.native
   def image(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Image = js.native
-  def image(x: Double, y: Double, key: String, frame: integer): Image = js.native
-  def image(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Double): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Double, options: MatterBodyConfig): Image = js.native
+  def image(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Image = js.native
+  
   /**
     * Create a new composite containing Matter Image objects created in a grid arrangement.
     * This function uses the body bounds to prevent overlaps.
@@ -356,19 +538,54 @@ class Factory protected () extends js.Object {
     rowGap: Double,
     options: MatterBodyConfig
   ): CompositeType = js.native
-  def imageStack(key: String, frame: integer, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: String,
     x: Double,
     y: Double,
     columns: Double,
     rows: Double,
-    columnGap: Double
+    columnGap: Double,
+    rowGap: Unit,
+    options: MatterBodyConfig
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: String,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Unit,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(key: String, frame: Double, x: Double, y: Double, columns: Double, rows: Double): CompositeType = js.native
+  def imageStack(key: String, frame: Double, x: Double, y: Double, columns: Double, rows: Double, columnGap: Double): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -378,7 +595,7 @@ class Factory protected () extends js.Object {
   ): CompositeType = js.native
   def imageStack(
     key: String,
-    frame: integer,
+    frame: Double,
     x: Double,
     y: Double,
     columns: Double,
@@ -387,6 +604,50 @@ class Factory protected () extends js.Object {
     rowGap: Double,
     options: MatterBodyConfig
   ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: Double,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Double,
+    rowGap: Unit,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: Double,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: Double,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Double,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  def imageStack(
+    key: String,
+    frame: Double,
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Unit,
+    rowGap: Unit,
+    options: MatterBodyConfig
+  ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.constraint`.
     * 
@@ -418,6 +679,11 @@ class Factory protected () extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def joint(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Connects bodies in the composite with constraints in a grid pattern, with optional cross braces.
     * @param composite The composite in which all bodies will be chained together.
@@ -434,6 +700,7 @@ class Factory protected () extends js.Object {
     crossBrace: Boolean,
     options: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.pointerConstraint`.
     * 
@@ -449,6 +716,7 @@ class Factory protected () extends js.Object {
     */
   def mouseSpring(): ConstraintType = js.native
   def mouseSpring(options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Creates a composite with a Newton's Cradle setup of bodies and constraints.
     * @param x The horizontal position of the start of the cradle.
@@ -458,6 +726,7 @@ class Factory protected () extends js.Object {
     * @param length The length of the 'string' the balls hang from.
     */
   def newtonsCradle(x: Double, y: Double, number: Double, size: Double, length: Double): CompositeType = js.native
+  
   /**
     * A Pointer Constraint is a special type of constraint that allows you to click
     * and drag bodies in a Matter World. It monitors the active Pointers in a Scene,
@@ -471,6 +740,7 @@ class Factory protected () extends js.Object {
     */
   def pointerConstraint(): ConstraintType = js.native
   def pointerConstraint(options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Creates a new rigid polygonal Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -481,6 +751,7 @@ class Factory protected () extends js.Object {
     */
   def polygon(x: Double, y: Double, sides: Double, radius: Double): BodyType = js.native
   def polygon(x: Double, y: Double, sides: Double, radius: Double, options: MatterBodyConfig): BodyType = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a pyramid arrangement.
     * This function uses the body bounds to prevent overlaps.
@@ -501,6 +772,7 @@ class Factory protected () extends js.Object {
     rowGap: Double,
     callback: js.Function
   ): CompositeType = js.native
+  
   /**
     * Creates a new rigid rectangular Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -511,6 +783,12 @@ class Factory protected () extends js.Object {
     */
   def rectangle(x: Double, y: Double, width: Double, height: Double): BodyType = js.native
   def rectangle(x: Double, y: Double, width: Double, height: Double, options: MatterBodyConfig): BodyType = js.native
+  
+  /**
+    * The Scene which this Factory's Matter World belongs to.
+    */
+  var scene: Scene = js.native
+  
   /**
     * Creates a simple soft body like object.
     * @param x The horizontal position of this composite in the world.
@@ -543,6 +821,18 @@ class Factory protected () extends js.Object {
     rowGap: Double,
     crossBrace: Boolean,
     particleRadius: Double,
+    particleOptions: Unit,
+    constraintOptions: MatterConstraintConfig
+  ): CompositeType = js.native
+  def softBody(
+    x: Double,
+    y: Double,
+    columns: Double,
+    rows: Double,
+    columnGap: Double,
+    rowGap: Double,
+    crossBrace: Boolean,
+    particleRadius: Double,
     particleOptions: MatterBodyConfig
   ): CompositeType = js.native
   def softBody(
@@ -557,6 +847,7 @@ class Factory protected () extends js.Object {
     particleOptions: MatterBodyConfig,
     constraintOptions: MatterConstraintConfig
   ): CompositeType = js.native
+  
   /**
     * This method is an alias for `Factory.constraint`.
     * 
@@ -588,6 +879,11 @@ class Factory protected () extends js.Object {
     stiffness: Double,
     options: MatterConstraintConfig
   ): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def spring(bodyA: BodyType, bodyB: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  
   /**
     * Creates a Matter Physics Sprite Game Object.
     * 
@@ -607,8 +903,10 @@ class Factory protected () extends js.Object {
   def sprite(x: Double, y: Double, key: String): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String): Sprite = js.native
   def sprite(x: Double, y: Double, key: String, frame: String, options: MatterBodyConfig): Sprite = js.native
-  def sprite(x: Double, y: Double, key: String, frame: integer): Sprite = js.native
-  def sprite(x: Double, y: Double, key: String, frame: integer, options: MatterBodyConfig): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Double): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Double, options: MatterBodyConfig): Sprite = js.native
+  def sprite(x: Double, y: Double, key: String, frame: Unit, options: MatterBodyConfig): Sprite = js.native
+  
   /**
     * Create a new composite containing bodies created in the callback in a grid arrangement.
     * 
@@ -630,6 +928,12 @@ class Factory protected () extends js.Object {
     rowGap: Double,
     callback: js.Function
   ): CompositeType = js.native
+  
+  /**
+    * A reference to the Scene.Systems this Matter Physics instance belongs to.
+    */
+  var sys: Systems = js.native
+  
   /**
     * Creates a wrapper around a Tile that provides access to a corresponding Matter body. A tile can only
     * have one Matter body associated with it. You can either pass in an existing Matter body for
@@ -646,6 +950,7 @@ class Factory protected () extends js.Object {
     */
   def tileBody(tile: Tile): TileBody = js.native
   def tileBody(tile: Tile, options: MatterTileOptions): TileBody = js.native
+  
   /**
     * Creates a new rigid trapezoidal Body and adds it to the World.
     * @param x The X coordinate of the center of the Body.
@@ -657,6 +962,12 @@ class Factory protected () extends js.Object {
     */
   def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): BodyType = js.native
   def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double, options: MatterBodyConfig): BodyType = js.native
+  
+  /**
+    * The Matter World which this Factory adds to.
+    */
+  var world: World = js.native
+  
   /**
     * Constraints (or joints) are used for specifying that a fixed distance must be maintained
     * between two bodies, or a body and a fixed world-space position.
@@ -682,5 +993,8 @@ class Factory protected () extends js.Object {
   def worldConstraint(body: BodyType, length: Double): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double, stiffness: Double): ConstraintType = js.native
   def worldConstraint(body: BodyType, length: Double, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Double, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Double): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Double, options: MatterConstraintConfig): ConstraintType = js.native
+  def worldConstraint(body: BodyType, length: Unit, stiffness: Unit, options: MatterConstraintConfig): ConstraintType = js.native
 }
-

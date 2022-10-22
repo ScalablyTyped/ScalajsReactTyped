@@ -1,66 +1,65 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.vscode.Thenable
 import typingsJapgolly.vscode.mod.Disposable
 import typingsJapgolly.vscode.mod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.azdata.mod.ComponentProperties because Already inherited
-- typingsJapgolly.azdata.mod.Component because var conflicts: CSSStyles, ariaLabel, ariaRole, ariaSelected, display, enabled, height, position, width. Inlined id, updateProperties, updateProperty, updateCssStyles, onValidityChanged, onValidityChanged, onValidityChanged, valid, validate, focus */ @js.native
-trait ButtonComponent extends ButtonProperties {
-  val id: String = js.native
+- typingsJapgolly.azdata.mod.ComponentWithIconProperties because Already inherited
+- typingsJapgolly.azdata.mod.ButtonProperties because var conflicts: CSSStyles, ariaHidden, ariaLabel, ariaRole, ariaSelected, display, enabled, height, iconHeight, iconPath, iconWidth, position, title, width. Inlined label, isFile, fileContent, buttonType, description, secondary, fileType */ @js.native
+trait ButtonComponent
+  extends StObject
+     with ComponentWithIcon {
+  
   /**
-  		 * An event called when the button is clicked
-  		 */
+    * Specifies the type of button this is. Default is Normal.
+    */
+  var buttonType: js.UndefOr[ButtonType] = js.native
+  
+  /**
+    * Description text to display inside button element.
+    */
+  var description: js.UndefOr[String] = js.native
+  
+  /**
+    * The content of the currently selected file
+    */
+  var fileContent: js.UndefOr[String] = js.native
+  
+  /**
+    * The file type filter used for the file input dialog box - only used when the button type is File
+    */
+  var fileType: js.UndefOr[String] = js.native
+  
+  /**
+    * Whether the button opens the file browser dialog
+    * @deprecated Use fileType instead
+    */
+  var isFile: js.UndefOr[Boolean] = js.native
+  
+  /**
+    * The label for the button
+    */
+  var label: js.UndefOr[String] = js.native
+  
+  /**
+    * An event called when the button is clicked
+    */
+  def onDidClick(listener: js.Function1[/* e */ Any, Any]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Any): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidClick(listener: js.Function1[/* e */ Any, Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
+  /**
+    * An event called when the button is clicked
+    */
   @JSName("onDidClick")
-  var onDidClick_Original: Event[_] = js.native
+  var onDidClick_Original: Event[Any] = js.native
+  
   /**
-  		 * Whether the component is valid or not
-  		 */
-  val valid: Boolean = js.native
-  /**
-  		 * Focuses the component.
-  		 */
-  def focus(): Thenable[Unit] = js.native
-  /**
-  		 * An event called when the button is clicked
-  		 */
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-  def onDidClick(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  /**
-  		 * Event fired to notify that the component's validity has changed
-  		 */
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _]): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any): Disposable = js.native
-  def onValidityChanged(listener: js.Function1[/* e */ Boolean, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
-  /**
-  		 * Updates the specified CSS Styles and notifies the UI
-  		 * @param cssStyles The styles to update
-  		 * @returns Thenable that completes once the update has been applied to the UI
-  		 */
-  def updateCssStyles(cssStyles: StringDictionary[String]): Thenable[Unit] = js.native
-  /**
-  		 * Sends any updated properties of the component to the UI
-  		 *
-  		 * @returns Thenable that completes once the update
-  		 * has been applied in the UI
-  		 */
-  def updateProperties(properties: StringDictionary[js.Any]): Thenable[Unit] = js.native
-  /**
-  		 * Sends an updated property of the component to the UI
-  		 *
-  		 * @returns Thenable that completes once the update
-  		 * has been applied in the UI
-  		 */
-  def updateProperty(key: String, value: js.Any): Thenable[Unit] = js.native
-  /**
-  		 * Run the component's validations
-  		 */
-  def validate(): Thenable[Boolean] = js.native
+    * Specifies whether this is a secondary button. Default value is false.
+    */
+  var secondary: js.UndefOr[Boolean] = js.native
 }
-

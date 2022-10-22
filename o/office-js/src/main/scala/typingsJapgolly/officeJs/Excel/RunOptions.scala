@@ -1,14 +1,13 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.OfficeExtension.ClientObject
-import typingsJapgolly.officeJs.OfficeExtension.ClientRequestContext
-import typingsJapgolly.officeJs.OfficeExtension.RequestUrlAndHeaderInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RunOptions
-  extends typingsJapgolly.officeJs.OfficeExtension.RunOptions[Session] {
+  extends StObject
+     with typingsJapgolly.officeJs.OfficeExtension.RunOptions[Session] {
+  
   /**
     * Determines whether Excel will delay the batch request until the user exits cell edit mode.
     *
@@ -17,19 +16,17 @@ trait RunOptions
     */
   var delayForCellEdit: js.UndefOr[Boolean] = js.undefined
 }
-
 object RunOptions {
-  @scala.inline
-  def apply(
-    delayForCellEdit: js.UndefOr[Boolean] = js.undefined,
-    previousObjects: ClientObject | js.Array[ClientObject] | ClientRequestContext = null,
-    session: RequestUrlAndHeaderInfo | Session = null
-  ): RunOptions = {
+  
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(delayForCellEdit)) __obj.updateDynamic("delayForCellEdit")(delayForCellEdit.asInstanceOf[js.Any])
-    if (previousObjects != null) __obj.updateDynamic("previousObjects")(previousObjects.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
+  
+  extension [Self <: RunOptions](x: Self) {
+    
+    inline def setDelayForCellEdit(value: Boolean): Self = StObject.set(x, "delayForCellEdit", value.asInstanceOf[js.Any])
+    
+    inline def setDelayForCellEditUndefined: Self = StObject.set(x, "delayForCellEdit", js.undefined)
+  }
 }
-

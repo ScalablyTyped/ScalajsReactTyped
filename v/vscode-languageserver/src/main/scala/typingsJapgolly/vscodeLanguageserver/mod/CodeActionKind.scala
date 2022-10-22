@@ -1,24 +1,41 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings._empty
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.quickfix
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.refactor
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.refactorDotextract
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.refactorDotinline
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.refactorDotrewrite
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.source
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.sourceDotfixAll
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverStrings.sourceDotorganizeImports
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "CodeActionKind")
-@js.native
-object CodeActionKind extends js.Object {
+object CodeActionKind {
+  
   /**
     * Empty kind.
     */
-  val Empty: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.Empty")
+  @js.native
+  val Empty: _empty = js.native
+  
   /**
     * Base kind for quickfix actions: 'quickfix'
     */
-  val QuickFix: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.QuickFix")
+  @js.native
+  val QuickFix: quickfix = js.native
+  
   /**
     * Base kind for refactoring actions: 'refactor'
     */
-  val Refactor: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.Refactor")
+  @js.native
+  val Refactor: refactor = js.native
+  
   /**
     * Base kind for refactoring extraction actions: 'refactor.extract'
     *
@@ -30,7 +47,10 @@ object CodeActionKind extends js.Object {
     * - Extract interface from class
     * - ...
     */
-  val RefactorExtract: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.RefactorExtract")
+  @js.native
+  val RefactorExtract: refactorDotextract = js.native
+  
   /**
     * Base kind for refactoring inline actions: 'refactor.inline'
     *
@@ -41,7 +61,10 @@ object CodeActionKind extends js.Object {
     * - Inline constant
     * - ...
     */
-  val RefactorInline: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.RefactorInline")
+  @js.native
+  val RefactorInline: refactorDotinline = js.native
+  
   /**
     * Base kind for refactoring rewrite actions: 'refactor.rewrite'
     *
@@ -54,13 +77,19 @@ object CodeActionKind extends js.Object {
     * - Move method to base class
     * - ...
     */
-  val RefactorRewrite: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.RefactorRewrite")
+  @js.native
+  val RefactorRewrite: refactorDotrewrite = js.native
+  
   /**
     * Base kind for source actions: `source`
     *
     * Source code actions apply to the entire file.
     */
-  val Source: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.Source")
+  @js.native
+  val Source: source = js.native
+  
   /**
     * Base kind for auto-fix source actions: `source.fixAll`.
     *
@@ -69,10 +98,14 @@ object CodeActionKind extends js.Object {
     *
     * @since 3.15.0
     */
-  val SourceFixAll: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.SourceFixAll")
+  @js.native
+  val SourceFixAll: sourceDotfixAll = js.native
+  
   /**
     * Base kind for an organize imports source action: `source.organizeImports`
     */
-  val SourceOrganizeImports: typingsJapgolly.vscodeLanguageserverTypes.mod.CodeActionKind = js.native
+  @JSImport("vscode-languageserver", "CodeActionKind.SourceOrganizeImports")
+  @js.native
+  val SourceOrganizeImports: sourceDotorganizeImports = js.native
 }
-

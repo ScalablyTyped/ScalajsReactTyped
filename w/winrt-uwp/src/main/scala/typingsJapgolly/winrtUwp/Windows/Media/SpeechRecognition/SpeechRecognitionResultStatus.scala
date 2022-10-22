@@ -1,95 +1,79 @@
 package typingsJapgolly.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionResultStatus extends js.Object
-
+sealed trait SpeechRecognitionResultStatus extends StObject
 /** Specifies the possible result states of a speech recognition session or from the compiling of grammar constraints. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionResultStatus")
 @js.native
-object SpeechRecognitionResultStatus extends js.Object {
+object SpeechRecognitionResultStatus extends StObject {
+  
   /** Audio problems caused recognition to fail. */
   @js.native
-  sealed trait audioQualityFailure extends SpeechRecognitionResultStatus
+  sealed trait audioQualityFailure
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** A grammar failed to compile. */
   @js.native
-  sealed trait grammarCompilationFailure extends SpeechRecognitionResultStatus
+  sealed trait grammarCompilationFailure
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** The language of the speech recognizer does not match the language of a grammar. */
   @js.native
-  sealed trait grammarLanguageMismatch extends SpeechRecognitionResultStatus
+  sealed trait grammarLanguageMismatch
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** Lack of a microphone caused recognition to fail. */
   @js.native
-  sealed trait microphoneUnavailable extends SpeechRecognitionResultStatus
+  sealed trait microphoneUnavailable
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** Network problems caused recognition to fail. */
   @js.native
-  sealed trait networkFailure extends SpeechRecognitionResultStatus
+  sealed trait networkFailure
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** An extended pause, or excessive processing time, caused recognition to fail. */
   @js.native
-  sealed trait pauseLimitExceeded extends SpeechRecognitionResultStatus
+  sealed trait pauseLimitExceeded
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** The recognition session or compilation succeeded. */
   @js.native
-  sealed trait success extends SpeechRecognitionResultStatus
+  sealed trait success
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** A timeout due to extended silence or poor audio caused recognition to fail. */
   @js.native
-  sealed trait timeoutExceeded extends SpeechRecognitionResultStatus
+  sealed trait timeoutExceeded
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** A topic constraint was set for an unsupported language. */
   @js.native
-  sealed trait topicLanguageNotSupported extends SpeechRecognitionResultStatus
+  sealed trait topicLanguageNotSupported
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** An unknown problem caused recognition or compilation to fail. */
   @js.native
-  sealed trait unknown extends SpeechRecognitionResultStatus
+  sealed trait unknown
+    extends StObject
+       with SpeechRecognitionResultStatus
   
   /** User canceled recognition session. */
   @js.native
-  sealed trait userCanceled extends SpeechRecognitionResultStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionResultStatus with Double] = js.native
-  /* 4 */ @js.native
-  object audioQualityFailure extends TopLevel[audioQualityFailure with Double]
-  
-  /* 3 */ @js.native
-  object grammarCompilationFailure extends TopLevel[grammarCompilationFailure with Double]
-  
-  /* 2 */ @js.native
-  object grammarLanguageMismatch extends TopLevel[grammarLanguageMismatch with Double]
-  
-  /* 10 */ @js.native
-  object microphoneUnavailable extends TopLevel[microphoneUnavailable with Double]
-  
-  /* 9 */ @js.native
-  object networkFailure extends TopLevel[networkFailure with Double]
-  
-  /* 8 */ @js.native
-  object pauseLimitExceeded extends TopLevel[pauseLimitExceeded with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 7 */ @js.native
-  object timeoutExceeded extends TopLevel[timeoutExceeded with Double]
-  
-  /* 1 */ @js.native
-  object topicLanguageNotSupported extends TopLevel[topicLanguageNotSupported with Double]
-  
-  /* 6 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 5 */ @js.native
-  object userCanceled extends TopLevel[userCanceled with Double]
-  
+  sealed trait userCanceled
+    extends StObject
+       with SpeechRecognitionResultStatus
 }
-

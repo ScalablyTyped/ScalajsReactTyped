@@ -1,7 +1,7 @@
 
 # Scala.js typings for connect-pg-simple
 
-Typings are for version 4.2
+Typings are for version 7.0
 
 ## Library description:
 A simple, minimal PostgreSQL session store for Connect/Express
@@ -11,9 +11,9 @@ A simple, minimal PostgreSQL session store for Connect/Express
 | Full name          | connect-pg-simple |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 25 |
-| # downloads        | 439184 |
-| # stars            | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 98952.0 |
+| # stars            | 195.0 |
 
 ## Links
 - [Homepage](https://github.com/voxpelli/node-connect-pg-simple#readme)

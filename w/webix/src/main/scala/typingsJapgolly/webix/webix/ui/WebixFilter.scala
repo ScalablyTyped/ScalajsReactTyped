@@ -1,34 +1,42 @@
 package typingsJapgolly.webix.webix.ui
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebixFilter extends js.Object {
-  def getValue(node: HTMLElement): js.Any
-  def refresh(master: baseview, node: HTMLElement, value: js.Any): Unit
-  def render(master: baseview, config: StringDictionary[js.Any]): String
-  def setValue(node: HTMLElement, value: js.Any): js.Any
+trait WebixFilter extends StObject {
+  
+  def getValue(node: HTMLElement): Any
+  
+  def refresh(master: baseview, node: HTMLElement, value: Any): Unit
+  
+  def render(master: baseview, config: StringDictionary[Any]): String
+  
+  def setValue(node: HTMLElement, value: Any): Any
 }
-
 object WebixFilter {
-  @scala.inline
-  def apply(
-    getValue: HTMLElement => CallbackTo[js.Any],
-    refresh: (baseview, HTMLElement, js.Any) => Callback,
-    render: (baseview, StringDictionary[js.Any]) => CallbackTo[String],
-    setValue: (HTMLElement, js.Any) => CallbackTo[js.Any]
+  
+  inline def apply(
+    getValue: HTMLElement => Any,
+    refresh: (baseview, HTMLElement, Any) => Callback,
+    render: (baseview, StringDictionary[Any]) => String,
+    setValue: (HTMLElement, Any) => Any
   ): WebixFilter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getValue")(js.Any.fromFunction1((t0: org.scalajs.dom.raw.HTMLElement) => getValue(t0).runNow()))
-    __obj.updateDynamic("refresh")(js.Any.fromFunction3((t0: typingsJapgolly.webix.webix.ui.baseview, t1: org.scalajs.dom.raw.HTMLElement, t2: js.Any) => refresh(t0, t1, t2).runNow()))
-    __obj.updateDynamic("render")(js.Any.fromFunction2((t0: typingsJapgolly.webix.webix.ui.baseview, t1: org.scalablytyped.runtime.StringDictionary[js.Any]) => render(t0, t1).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction2((t0: org.scalajs.dom.raw.HTMLElement, t1: js.Any) => setValue(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(getValue = js.Any.fromFunction1(getValue), refresh = js.Any.fromFunction3((t0: baseview, t1: HTMLElement, t2: Any) => (refresh(t0, t1, t2)).runNow()), render = js.Any.fromFunction2(render), setValue = js.Any.fromFunction2(setValue))
     __obj.asInstanceOf[WebixFilter]
   }
+  
+  extension [Self <: WebixFilter](x: Self) {
+    
+    inline def setGetValue(value: HTMLElement => Any): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    
+    inline def setRefresh(value: (baseview, HTMLElement, Any) => Callback): Self = StObject.set(x, "refresh", js.Any.fromFunction3((t0: baseview, t1: HTMLElement, t2: Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setRender(value: (baseview, StringDictionary[Any]) => String): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+    
+    inline def setSetValue(value: (HTMLElement, Any) => Any): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+  }
 }
-

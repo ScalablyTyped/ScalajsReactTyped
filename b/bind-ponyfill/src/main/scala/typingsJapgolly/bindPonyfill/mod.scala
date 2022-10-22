@@ -1,12 +1,14 @@
 package typingsJapgolly.bindPonyfill
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("bind-ponyfill", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(fn: js.Function, that: js.Any, args: js.Any*): js.Function = js.native
+object mod {
+  
+  inline def apply(fn: js.Function, that: Any, args: Any*): js.Function = (^.asInstanceOf[js.Dynamic].apply((scala.List(fn.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).`++`(args.asInstanceOf[Seq[js.Any]])*)).asInstanceOf[js.Function]
+  
+  @JSImport("bind-ponyfill", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

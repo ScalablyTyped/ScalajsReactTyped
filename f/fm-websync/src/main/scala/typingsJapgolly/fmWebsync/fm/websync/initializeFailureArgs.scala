@@ -1,23 +1,27 @@
 package typingsJapgolly.fmWebsync.fm.websync
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait initializeFailureArgs extends baseArgs {
+trait initializeFailureArgs
+  extends StObject
+     with baseArgs {
+  
   /**
     * The error generated while initializing.
     */
   var error: String
 }
-
 object initializeFailureArgs {
-  @scala.inline
-  def apply(error: String, StringDictionary: StringDictionary[js.Any] = null): initializeFailureArgs = {
+  
+  inline def apply(error: String): initializeFailureArgs = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[initializeFailureArgs]
   }
+  
+  extension [Self <: initializeFailureArgs](x: Self) {
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+  }
 }
-

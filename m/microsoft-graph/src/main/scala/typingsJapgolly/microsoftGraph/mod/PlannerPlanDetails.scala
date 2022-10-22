@@ -1,32 +1,42 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerPlanDetails extends Entity {
-  // An object that specifies the descriptions of the six categories that can be associated with tasks in the plan
-  var categoryDescriptions: js.UndefOr[PlannerCategoryDescriptions] = js.undefined
+trait PlannerPlanDetails
+  extends StObject
+     with Entity {
+  
+  // An object that specifies the descriptions of the 25 categories that can be associated with tasks in the plan.
+  var categoryDescriptions: js.UndefOr[NullableOption[PlannerCategoryDescriptions]] = js.undefined
+  
   /**
-    * Set of user ids that this plan is shared with. If you are leveraging Office 365 Groups, use the Groups API to manage
+    * Set of user ids that this plan is shared with. If you are leveraging Microsoft 365 groups, use the Groups API to manage
     * group membership to share the group's plan. You can also add existing members of the group to this collection though it
     * is not required for them to access the plan owned by the group.
     */
-  var sharedWith: js.UndefOr[PlannerUserIds] = js.undefined
+  var sharedWith: js.UndefOr[NullableOption[PlannerUserIds]] = js.undefined
 }
-
 object PlannerPlanDetails {
-  @scala.inline
-  def apply(
-    categoryDescriptions: PlannerCategoryDescriptions = null,
-    id: String = null,
-    sharedWith: PlannerUserIds = null
-  ): PlannerPlanDetails = {
+  
+  inline def apply(): PlannerPlanDetails = {
     val __obj = js.Dynamic.literal()
-    if (categoryDescriptions != null) __obj.updateDynamic("categoryDescriptions")(categoryDescriptions.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (sharedWith != null) __obj.updateDynamic("sharedWith")(sharedWith.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerPlanDetails]
   }
+  
+  extension [Self <: PlannerPlanDetails](x: Self) {
+    
+    inline def setCategoryDescriptions(value: NullableOption[PlannerCategoryDescriptions]): Self = StObject.set(x, "categoryDescriptions", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryDescriptionsNull: Self = StObject.set(x, "categoryDescriptions", null)
+    
+    inline def setCategoryDescriptionsUndefined: Self = StObject.set(x, "categoryDescriptions", js.undefined)
+    
+    inline def setSharedWith(value: NullableOption[PlannerUserIds]): Self = StObject.set(x, "sharedWith", value.asInstanceOf[js.Any])
+    
+    inline def setSharedWithNull: Self = StObject.set(x, "sharedWith", null)
+    
+    inline def setSharedWithUndefined: Self = StObject.set(x, "sharedWith", js.undefined)
+  }
 }
-

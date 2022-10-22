@@ -1,30 +1,42 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionPropertiesOptions extends js.Object {
+trait CollectionPropertiesOptions extends StObject {
+  
   var indexBuckets: js.UndefOr[Double] = js.undefined
+  
   var journalSize: js.UndefOr[Double] = js.undefined
+  
   var replicationFactor: js.UndefOr[Double] = js.undefined
+  
   var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
-
 object CollectionPropertiesOptions {
-  @scala.inline
-  def apply(
-    indexBuckets: Int | Double = null,
-    journalSize: Int | Double = null,
-    replicationFactor: Int | Double = null,
-    waitForSync: js.UndefOr[Boolean] = js.undefined
-  ): CollectionPropertiesOptions = {
+  
+  inline def apply(): CollectionPropertiesOptions = {
     val __obj = js.Dynamic.literal()
-    if (indexBuckets != null) __obj.updateDynamic("indexBuckets")(indexBuckets.asInstanceOf[js.Any])
-    if (journalSize != null) __obj.updateDynamic("journalSize")(journalSize.asInstanceOf[js.Any])
-    if (replicationFactor != null) __obj.updateDynamic("replicationFactor")(replicationFactor.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionPropertiesOptions]
   }
+  
+  extension [Self <: CollectionPropertiesOptions](x: Self) {
+    
+    inline def setIndexBuckets(value: Double): Self = StObject.set(x, "indexBuckets", value.asInstanceOf[js.Any])
+    
+    inline def setIndexBucketsUndefined: Self = StObject.set(x, "indexBuckets", js.undefined)
+    
+    inline def setJournalSize(value: Double): Self = StObject.set(x, "journalSize", value.asInstanceOf[js.Any])
+    
+    inline def setJournalSizeUndefined: Self = StObject.set(x, "journalSize", js.undefined)
+    
+    inline def setReplicationFactor(value: Double): Self = StObject.set(x, "replicationFactor", value.asInstanceOf[js.Any])
+    
+    inline def setReplicationFactorUndefined: Self = StObject.set(x, "replicationFactor", js.undefined)
+    
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+  }
 }
-

@@ -1,48 +1,30 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV3
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.openapiTypes.mod.OpenAPI.Parameter
+import typingsJapgolly.openapiTypes.mod.OpenAPI._Parameter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ParameterObject
-  extends ParameterBaseObject
-     with Parameter {
+  extends StObject
+     with ParameterBaseObject
+     with _Parameter {
+  
   var in: String
+  
   var name: String
 }
-
 object ParameterObject {
-  @scala.inline
-  def apply(
-    in: String,
-    name: String,
-    allowEmptyValue: js.UndefOr[Boolean] = js.undefined,
-    allowReserved: js.UndefOr[Boolean] = js.undefined,
-    content: StringDictionary[MediaTypeObject] = null,
-    deprecated: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    example: js.Any = null,
-    examples: StringDictionary[ReferenceObject | ExampleObject] = null,
-    explode: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    schema: ReferenceObject | SchemaObject = null,
-    style: String = null
-  ): ParameterObject = {
+  
+  inline def apply(in: String, name: String): ParameterObject = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowEmptyValue)) __obj.updateDynamic("allowEmptyValue")(allowEmptyValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowReserved)) __obj.updateDynamic("allowReserved")(allowReserved.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (example != null) __obj.updateDynamic("example")(example.asInstanceOf[js.Any])
-    if (examples != null) __obj.updateDynamic("examples")(examples.asInstanceOf[js.Any])
-    if (!js.isUndefined(explode)) __obj.updateDynamic("explode")(explode.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterObject]
   }
+  
+  extension [Self <: ParameterObject](x: Self) {
+    
+    inline def setIn(value: String): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,38 +1,51 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.SelectionChanged event.
   */
-@JSGlobal("ASPxClientFileManagerSelectionChangedEventArgs")
-@js.native
-class ASPxClientFileManagerSelectionChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientFileManagerSelectionChangedEventArgs class.
-    * @param item A ASPxClientFileManagerItem object that is an item, manipulations on which forced the event to be raised.
-    * @param name A string value that specifies the file's name.
-    * @param fullName A string value that is the file's full name.
-    * @param isSelected true if the file has been selected; otherwise, false.
-    */
-  def this(item: ASPxClientFileManagerItem, name: String, fullName: String, isSelected: Boolean) = this()
+trait ASPxClientFileManagerSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the full name of the file currently being processed.
     */
-  var fullName: String = js.native
+  var fullName: String
+  
   /**
     * Gets whether the item has been selected.
     */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
+  
   /**
     * Gets the file manager item object related to the event.
     */
-  var item: ASPxClientFileManagerItem = js.native
+  var item: ASPxClientFileManagerItem
+  
   /**
     * Gets the name of the currently processed file.
     */
-  var name: String = js.native
+  var name: String
 }
-
+object ASPxClientFileManagerSelectionChangedEventArgs {
+  
+  inline def apply(fullName: String, isSelected: Boolean, item: ASPxClientFileManagerItem, name: String): ASPxClientFileManagerSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(fullName = fullName.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientFileManagerSelectionChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientFileManagerSelectionChangedEventArgs](x: Self) {
+    
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    
+    inline def setItem(value: ASPxClientFileManagerItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

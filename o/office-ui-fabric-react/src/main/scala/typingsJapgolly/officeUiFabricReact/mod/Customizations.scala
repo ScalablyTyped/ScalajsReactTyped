@@ -1,42 +1,58 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.uifabricUtilities.customizationsMod.ICustomizations
-import typingsJapgolly.uifabricUtilities.customizationsMod.ISettings
+import typingsJapgolly.uifabricUtilities.libCustomizationsCustomizationsMod.ICustomizations
+import typingsJapgolly.uifabricUtilities.libCustomizationsCustomizationsMod.ISettings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "Customizations")
 @js.native
-class Customizations ()
-  extends typingsJapgolly.officeUiFabricReact.utilitiesMod.Customizations
-
+open class Customizations ()
+  extends typingsJapgolly.officeUiFabricReact.libUtilitiesMod.Customizations
 /* static members */
-@JSImport("office-ui-fabric-react", "Customizations")
-@js.native
-object Customizations extends js.Object {
-  var _raiseChange: js.Any = js.native
-  var _suppressUpdates: js.Any = js.native
+object Customizations {
+  
+  @JSImport("office-ui-fabric-react", "Customizations")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "Customizations._raiseChange")
+  @js.native
+  def _raiseChange: Any = js.native
+  inline def _raiseChange_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_raiseChange")(x.asInstanceOf[js.Any])
+  
+  @JSImport("office-ui-fabric-react", "Customizations._suppressUpdates")
+  @js.native
+  def _suppressUpdates: Any = js.native
+  inline def _suppressUpdates_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_suppressUpdates")(x.asInstanceOf[js.Any])
+  
   /** Used to run some code that sets Customizations without triggering an update until the end.
     * Useful for applying Customizations that don't affect anything currently rendered, or for
     * applying many customizations at once.
     * @param suppressUpdate - Do not raise the change event at the end, preventing all updates
     */
-  def applyBatchedUpdates(code: js.Function0[Unit]): Unit = js.native
-  def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = js.native
+  inline def applyBatchedUpdates(code: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any], suppressUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /** Apply Customizations to a particular named scope, like a component.
     * @example Customizations.applyScopedSettings('Nav', \{ styles: () =\> \{\} \});
     */
-  def applyScopedSettings(scopeName: String, settings: ISettings): Unit = js.native
+  inline def applyScopedSettings(scopeName: String, settings: ISettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyScopedSettings")(scopeName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /** Apply global Customization settings.
     * @example Customizations.applySettings(\{ theme: \{...\} \});
     */
-  def applySettings(settings: ISettings): Unit = js.native
-  def getSettings(properties: js.Array[String]): js.Any = js.native
-  def getSettings(properties: js.Array[String], scopeName: String): js.Any = js.native
-  def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = js.native
-  def observe(onChange: js.Function0[Unit]): Unit = js.native
-  def reset(): Unit = js.native
-  def unobserve(onChange: js.Function0[Unit]): Unit = js.native
+  inline def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def getSettings(properties: js.Array[String]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def getSettings(properties: js.Array[String], scopeName: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
+  inline def unobserve(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

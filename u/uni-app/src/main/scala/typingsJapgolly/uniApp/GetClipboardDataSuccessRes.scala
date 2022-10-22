@@ -1,22 +1,27 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetClipboardDataSuccessRes extends js.Object {
+trait GetClipboardDataSuccessRes extends StObject {
+  
   /**
     * 剪贴板的内容
     */
   var data: js.UndefOr[String] = js.undefined
 }
-
 object GetClipboardDataSuccessRes {
-  @scala.inline
-  def apply(data: String = null): GetClipboardDataSuccessRes = {
+  
+  inline def apply(): GetClipboardDataSuccessRes = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetClipboardDataSuccessRes]
   }
+  
+  extension [Self <: GetClipboardDataSuccessRes](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+  }
 }
-

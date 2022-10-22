@@ -8,11 +8,12 @@ import typingsJapgolly.minappEnv.minappEnvStrings.headsetMic
 import typingsJapgolly.minappEnv.minappEnvStrings.mic
 import typingsJapgolly.minappEnv.minappEnvStrings.voice_communication
 import typingsJapgolly.minappEnv.minappEnvStrings.voice_recognition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetAvailableAudioSourcesSuccessCallbackResult extends js.Object {
+trait GetAvailableAudioSourcesSuccessCallbackResult extends StObject {
+  
   /** 支持的音频输入源列表，可在 [RecorderManager.start()](https://developers.weixin.qq.com/miniprogram/dev/api/media/recorder/RecorderManager.start.html) 接口中使用。返回值定义参考 https://developer.android.com/reference/kotlin/android/media/MediaRecorder.AudioSource
     *
     * 可选值：
@@ -27,17 +28,23 @@ trait GetAvailableAudioSourcesSuccessCallbackResult extends js.Object {
     auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
   ]
 }
-
 object GetAvailableAudioSourcesSuccessCallbackResult {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     audioSources: Array[
       auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
     ]
   ): GetAvailableAudioSourcesSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(audioSources = audioSources.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetAvailableAudioSourcesSuccessCallbackResult]
   }
+  
+  extension [Self <: GetAvailableAudioSourcesSuccessCallbackResult](x: Self) {
+    
+    inline def setAudioSources(
+      value: Array[
+          auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
+        ]
+    ): Self = StObject.set(x, "audioSources", value.asInstanceOf[js.Any])
+  }
 }
-

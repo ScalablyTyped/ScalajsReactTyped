@@ -1,19 +1,22 @@
 package typingsJapgolly.knockoutPostbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KnockoutStatic extends js.Object {
+trait KnockoutStatic extends StObject {
+  
   var postbox: KnockoutPostBox
 }
-
 object KnockoutStatic {
-  @scala.inline
-  def apply(postbox: KnockoutPostBox): KnockoutStatic = {
-    val __obj = js.Dynamic.literal(postbox = postbox.asInstanceOf[js.Any])
   
+  inline def apply(postbox: KnockoutPostBox): KnockoutStatic = {
+    val __obj = js.Dynamic.literal(postbox = postbox.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
+  
+  extension [Self <: KnockoutStatic](x: Self) {
+    
+    inline def setPostbox(value: KnockoutPostBox): Self = StObject.set(x, "postbox", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The header of a Card.
@@ -14,30 +13,41 @@ import scala.scalajs.js.annotation._
   *         .setImageStyle(CardService.ImageStyle.CIRCLE)
   *         .setImageUrl("https://image.png");
   */
-trait CardHeader extends js.Object {
+trait CardHeader extends StObject {
+  
   def setImageAltText(imageAltText: String): CardHeader
+  
   def setImageStyle(imageStyle: ImageStyle): CardHeader
+  
   def setImageUrl(imageUrl: String): CardHeader
+  
   def setSubtitle(subtitle: String): CardHeader
+  
   def setTitle(title: String): CardHeader
 }
-
 object CardHeader {
-  @scala.inline
-  def apply(
-    setImageAltText: String => CallbackTo[CardHeader],
-    setImageStyle: ImageStyle => CallbackTo[CardHeader],
-    setImageUrl: String => CallbackTo[CardHeader],
-    setSubtitle: String => CallbackTo[CardHeader],
-    setTitle: String => CallbackTo[CardHeader]
+  
+  inline def apply(
+    setImageAltText: String => CardHeader,
+    setImageStyle: ImageStyle => CardHeader,
+    setImageUrl: String => CardHeader,
+    setSubtitle: String => CardHeader,
+    setTitle: String => CardHeader
   ): CardHeader = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setImageAltText")(js.Any.fromFunction1((t0: java.lang.String) => setImageAltText(t0).runNow()))
-    __obj.updateDynamic("setImageStyle")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.ImageStyle) => setImageStyle(t0).runNow()))
-    __obj.updateDynamic("setImageUrl")(js.Any.fromFunction1((t0: java.lang.String) => setImageUrl(t0).runNow()))
-    __obj.updateDynamic("setSubtitle")(js.Any.fromFunction1((t0: java.lang.String) => setSubtitle(t0).runNow()))
-    __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: java.lang.String) => setTitle(t0).runNow()))
+    val __obj = js.Dynamic.literal(setImageAltText = js.Any.fromFunction1(setImageAltText), setImageStyle = js.Any.fromFunction1(setImageStyle), setImageUrl = js.Any.fromFunction1(setImageUrl), setSubtitle = js.Any.fromFunction1(setSubtitle), setTitle = js.Any.fromFunction1(setTitle))
     __obj.asInstanceOf[CardHeader]
   }
+  
+  extension [Self <: CardHeader](x: Self) {
+    
+    inline def setSetImageAltText(value: String => CardHeader): Self = StObject.set(x, "setImageAltText", js.Any.fromFunction1(value))
+    
+    inline def setSetImageStyle(value: ImageStyle => CardHeader): Self = StObject.set(x, "setImageStyle", js.Any.fromFunction1(value))
+    
+    inline def setSetImageUrl(value: String => CardHeader): Self = StObject.set(x, "setImageUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetSubtitle(value: String => CardHeader): Self = StObject.set(x, "setSubtitle", js.Any.fromFunction1(value))
+    
+    inline def setSetTitle(value: String => CardHeader): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+  }
 }
-

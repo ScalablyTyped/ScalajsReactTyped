@@ -1,69 +1,61 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DebugSymbol")
-@js.native
-class DebugSymbol () extends js.Object {
+trait DebugSymbol extends StObject {
+  
   /**
     * Address that this symbol is for.
     */
-  var address: NativePointer = js.native
+  var address: NativePointer
+  
   /**
     * File name owning this symbol, or `null` if unknown.
     */
-  var fileName: String | Null = js.native
+  var fileName: String | Null
+  
   /**
     * Line number in `fileName`, or `null` if unknown.
     */
-  var lineNumber: Double | Null = js.native
+  var lineNumber: Double | Null
+  
   /**
     * Module name owning this symbol, or `null` if unknown.
     */
-  var moduleName: String | Null = js.native
+  var moduleName: String | Null
+  
   /**
     * Name of the symbol, or `null` if unknown.
     */
-  var name: String | Null = js.native
+  var name: String | Null
 }
-
-/* static members */
-@JSGlobal("DebugSymbol")
-@js.native
-object DebugSymbol extends js.Object {
-  /**
-    * Resolves function names matching `glob` and returns their addresses.
-    *
-    * @param glob Glob matching functions to resolve the addresses of.
-    */
-  def findFunctionsMatching(glob: String): js.Array[NativePointer] = js.native
-  /**
-    * Resolves a function name and returns its addresses.
-    *
-    * @param name Function name to resolve the addresses of.
-    */
-  def findFunctionsNamed(name: String): js.Array[NativePointer] = js.native
-  /**
-    * Looks up debug information for `address`.
-    *
-    * @param address Address to look up details for.
-    */
-  def fromAddress(address: NativePointerValue): DebugSymbol = js.native
-  /**
-    * Looks up debug information for `name`.
-    *
-    * @param name Name to look up details for.
-    */
-  def fromName(name: String): DebugSymbol = js.native
-  /**
-    * Resolves a function name and returns its address. Returns the first if
-    * more than one function is found. Throws an exception if the name cannot
-    * be resolved.
-    *
-    * @param name Function name to resolve the address of.
-    */
-  def getFunctionByName(name: String): NativePointer = js.native
+object DebugSymbol {
+  
+  inline def apply(address: NativePointer): DebugSymbol = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], fileName = null, lineNumber = null, moduleName = null, name = null)
+    __obj.asInstanceOf[DebugSymbol]
+  }
+  
+  extension [Self <: DebugSymbol](x: Self) {
+    
+    inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameNull: Self = StObject.set(x, "fileName", null)
+    
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumberNull: Self = StObject.set(x, "lineNumber", null)
+    
+    inline def setModuleName(value: String): Self = StObject.set(x, "moduleName", value.asInstanceOf[js.Any])
+    
+    inline def setModuleNameNull: Self = StObject.set(x, "moduleName", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+  }
 }
-

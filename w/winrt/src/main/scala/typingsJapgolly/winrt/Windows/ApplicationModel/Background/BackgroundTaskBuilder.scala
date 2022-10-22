@@ -1,21 +1,24 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskBuilder")
-@js.native
-class BackgroundTaskBuilder () extends IBackgroundTaskBuilder {
-  /* CompleteClass */
-  override var name: String = js.native
-  /* CompleteClass */
-  override var taskEntryPoint: String = js.native
-  /* CompleteClass */
-  override def addCondition(condition: IBackgroundCondition): Unit = js.native
-  /* CompleteClass */
-  override def register(): BackgroundTaskRegistration = js.native
-  /* CompleteClass */
-  override def setTrigger(trigger: IBackgroundTrigger): Unit = js.native
+trait BackgroundTaskBuilder
+  extends StObject
+     with IBackgroundTaskBuilder
+object BackgroundTaskBuilder {
+  
+  inline def apply(
+    addCondition: IBackgroundCondition => Callback,
+    name: String,
+    register: CallbackTo[BackgroundTaskRegistration],
+    setTrigger: IBackgroundTrigger => Callback,
+    taskEntryPoint: String
+  ): BackgroundTaskBuilder = {
+    val __obj = js.Dynamic.literal(addCondition = js.Any.fromFunction1((t0: IBackgroundCondition) => addCondition(t0).runNow()), name = name.asInstanceOf[js.Any], register = register.toJsFn, setTrigger = js.Any.fromFunction1((t0: IBackgroundTrigger) => setTrigger(t0).runNow()), taskEntryPoint = taskEntryPoint.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundTaskBuilder]
+  }
 }
-

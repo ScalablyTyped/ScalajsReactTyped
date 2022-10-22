@@ -1,40 +1,55 @@
 package typingsJapgolly.envCi.mod
 
-import typingsJapgolly.envCi.envCiBooleans.`true`
 import typingsJapgolly.envCi.envCiStrings.TeamCity
 import typingsJapgolly.envCi.envCiStrings.teamcity_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TeamCityEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
+  
   var branch: js.UndefOr[String] = js.undefined
+  
   var build: String
+  
   var commit: String
+  
   var name: TeamCity
+  
   var root: js.UndefOr[String] = js.undefined
+  
   var service: teamcity_
+  
   var slug: String
 }
-
 object TeamCityEnv {
-  @scala.inline
-  def apply(
-    build: String,
-    commit: String,
-    isCi: `true`,
-    name: TeamCity,
-    service: teamcity_,
-    slug: String,
-    branch: String = null,
-    root: String = null
-  ): TeamCityEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
-    if (branch != null) __obj.updateDynamic("branch")(branch.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+  
+  inline def apply(build: String, commit: String, slug: String): TeamCityEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "TeamCity", service = "teamcity", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamCityEnv]
   }
+  
+  extension [Self <: TeamCityEnv](x: Self) {
+    
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    
+    inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: TeamCity): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setService(value: teamcity_): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+  }
 }
-

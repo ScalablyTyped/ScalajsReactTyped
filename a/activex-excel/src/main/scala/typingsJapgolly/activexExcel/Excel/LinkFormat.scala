@@ -1,19 +1,57 @@
 package typingsJapgolly.activexExcel.Excel
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Excel.LinkFormat")
-@js.native
-class LinkFormat protected () extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  var AutoUpdate: Boolean = js.native
-  val Creator: XlCreator = js.native
-  @JSName("Excel.LinkFormat_typekey")
-  var ExcelDotLinkFormat_typekey: LinkFormat = js.native
-  var Locked: Boolean = js.native
-  val Parent: js.Any = js.native
-  def Update(): Unit = js.native
+trait LinkFormat extends StObject {
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application
+  
+  var AutoUpdate: Boolean
+  
+  val Creator: XlCreator
+  
+  /* private */ @JSName("Excel.LinkFormat_typekey")
+  var ExcelDotLinkFormat_typekey: LinkFormat
+  
+  var Locked: Boolean
+  
+  val Parent: Any
+  
+  def Update(): Unit
 }
-
+object LinkFormat {
+  
+  inline def apply(
+    Application: Application,
+    AutoUpdate: Boolean,
+    Creator: XlCreator,
+    ExcelDotLinkFormat_typekey: LinkFormat,
+    Locked: Boolean,
+    Parent: Any,
+    Update: Callback
+  ): LinkFormat = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], AutoUpdate = AutoUpdate.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Locked = Locked.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Update = Update.toJsFn)
+    __obj.updateDynamic("Excel.LinkFormat_typekey")(ExcelDotLinkFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkFormat]
+  }
+  
+  extension [Self <: LinkFormat](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "AutoUpdate", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setExcelDotLinkFormat_typekey(value: LinkFormat): Self = StObject.set(x, "Excel.LinkFormat_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "Locked", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate(value: Callback): Self = StObject.set(x, "Update", value.toJsFn)
+  }
+}

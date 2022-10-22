@@ -1,169 +1,227 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.baseline
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.justify
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.left
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.baseline_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.bottom_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.center_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.left_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.middle
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.right
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.right_
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.top_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextSymbolProperties extends SymbolProperties {
+trait TextSymbolProperties
+  extends StObject
+     with SymbolProperties {
+  
   /**
-    * The angle of the text. `0` is horizontal and the angle moves clockwise.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#angle)
+    * The angle of the text.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#angle)
     */
   var angle: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The background color of the label's bounding box. This property is only supported for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    * The background color of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#backgroundColor)
     */
   var backgroundColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  
   /**
-    * The border color of the label's bounding box. This property is only supported for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    * The border color of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#borderLineColor)
     */
   var borderLineColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  
   /**
-    * The border size or width of the label's bounding box. This property is only supported for [MapImageLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html).
+    * The border size or width of the label's bounding box.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#borderLineSize)
     */
   var borderLineSize: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text. This property allows the developer to set the font's family, decoration, size, style, and weight properties.  See the [Labeling guide page](https://developers.arcgis.com/javascript/latest/guide/labeling/index.html) for more information and known limitations.
-    * > **Known Limitations**  This property is not fully supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * The [Font](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html) used to style the text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#font)
     */
   var font: js.UndefOr[FontProperties] = js.undefined
+  
   /**
-    * The color of the text symbol's halo. To include a halo in the TextSymbol, you must also set the size of the halo in [haloSize](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloSize).
-    * > **Known Limitations**
-    *   * Sub-pixel halo (i.e. fractional size such as 1.25px) renders inconsistently in various browsers.
+    * The color of the text symbol's halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloColor)
     */
   var haloColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  
   /**
-    * The size in points of the text symbol's halo. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`). To include a halo in the TextSymbol, you must also set the color of the halo in [haloColor](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloColor).
-    * > **Known Limitations**
-    *   * Sub-pixel halo (i.e. fractional size such as 1.25px) renders inconsistently in various browsers.
-    *   * Halo size should not be 1/4 larger than the [text size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size). For example, if your text size is 12, the halo size should not be larger than 3.
+    * The size in points of the text symbol's halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#haloSize)
     */
   var haloSize: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * Adjusts the horizontal alignment of the text in multi-lines.
-    * > **Known Limitations**
-    *   * This property is not currently supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *   * This property only applies when TextSymbol is not used for labelling purposes. The `horizontalAlignment` for labels is inferred from the [labelPlacement](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html#labelPlacement) value.
+    *
+    * @default "center"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#horizontalAlignment)
-    *
-    * @default center
     */
-  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
+  var horizontalAlignment: js.UndefOr[left_ | right_ | center_] = js.undefined
+  
   /**
     * Determines whether to adjust the spacing between characters in the text string.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#kerning)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#kerning)
     */
   var kerning: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The height of the space between each line of text.
+    *
+    * @default 1.0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineHeight)
+    */
+  var lineHeight: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The maximum length in points for each line of text.
+    *
+    * @default 192
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#lineWidth)
+    */
+  var lineWidth: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * Determines whether every character in the text string is rotated.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#rotated)
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#rotated)
     */
   var rotated: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The text string to display in the view. Long text strings will be split into multiple lines. The maximum length of each line is equal to this formula: (512 * [font.size](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Font.html#size)) / 24. To manually create a new line, use the `\n` escape character.
-    * > **Known Limitations**  This property only applies when TextSymbol is used to define the symbol property of a [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html), and not for labelling purposes.
+    * The text string to display in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#text)
     */
   var text: js.UndefOr[String] = js.undefined
+  
   /**
     * Adjusts the vertical alignment of the text.
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default "baseline"
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#verticalAlignment)
-    *
-    * @default baseline
     */
-  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
+  var verticalAlignment: js.UndefOr[baseline_ | top_ | middle | bottom_] = js.undefined
+  
   /**
-    * The offset on the x-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    * The offset on the x-axis in points.
+    *
+    * @default 0
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#xoffset)
-    *
-    * @default 0
     */
   var xoffset: js.UndefOr[Double | String] = js.undefined
+  
   /**
-    * The offset on the y-axis in points. This value may be autocast with a string expressing size in points or pixels (e.g. `12px`).
-    * > **Known Limitations**  This property is currently not supported in 3D [SceneViews](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#yoffset)
+    * The offset on the y-axis in points.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-TextSymbol.html#yoffset)
     */
   var yoffset: js.UndefOr[Double | String] = js.undefined
 }
-
 object TextSymbolProperties {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    backgroundColor: Color_ | js.Array[Double] | String = null,
-    borderLineColor: Color_ | js.Array[Double] | String = null,
-    borderLineSize: Int | Double = null,
-    color: Color_ | js.Array[Double] | String = null,
-    font: FontProperties = null,
-    haloColor: Color_ | js.Array[Double] | String = null,
-    haloSize: Double | String = null,
-    horizontalAlignment: left | right | center | justify = null,
-    kerning: js.UndefOr[Boolean] = js.undefined,
-    rotated: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    verticalAlignment: baseline | top | middle | bottom = null,
-    xoffset: Double | String = null,
-    yoffset: Double | String = null
-  ): TextSymbolProperties = {
+  
+  inline def apply(): TextSymbolProperties = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderLineColor != null) __obj.updateDynamic("borderLineColor")(borderLineColor.asInstanceOf[js.Any])
-    if (borderLineSize != null) __obj.updateDynamic("borderLineSize")(borderLineSize.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (haloColor != null) __obj.updateDynamic("haloColor")(haloColor.asInstanceOf[js.Any])
-    if (haloSize != null) __obj.updateDynamic("haloSize")(haloSize.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(kerning)) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (xoffset != null) __obj.updateDynamic("xoffset")(xoffset.asInstanceOf[js.Any])
-    if (yoffset != null) __obj.updateDynamic("yoffset")(yoffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextSymbolProperties]
   }
+  
+  extension [Self <: TextSymbolProperties](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    
+    inline def setBackgroundColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBackgroundColorVarargs(value: Double*): Self = StObject.set(x, "backgroundColor", js.Array(value*))
+    
+    inline def setBorderLineColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "borderLineColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLineColorUndefined: Self = StObject.set(x, "borderLineColor", js.undefined)
+    
+    inline def setBorderLineColorVarargs(value: Double*): Self = StObject.set(x, "borderLineColor", js.Array(value*))
+    
+    inline def setBorderLineSize(value: Double): Self = StObject.set(x, "borderLineSize", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLineSizeUndefined: Self = StObject.set(x, "borderLineSize", js.undefined)
+    
+    inline def setFont(value: FontProperties): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHaloColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "haloColor", value.asInstanceOf[js.Any])
+    
+    inline def setHaloColorUndefined: Self = StObject.set(x, "haloColor", js.undefined)
+    
+    inline def setHaloColorVarargs(value: Double*): Self = StObject.set(x, "haloColor", js.Array(value*))
+    
+    inline def setHaloSize(value: Double | String): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
+    
+    inline def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
+    
+    inline def setHorizontalAlignment(value: left_ | right_ | center_): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+    
+    inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+    
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setLineWidth(value: Double | String): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+    
+    inline def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerticalAlignment(value: baseline_ | top_ | middle | bottom_): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setXoffset(value: Double | String): Self = StObject.set(x, "xoffset", value.asInstanceOf[js.Any])
+    
+    inline def setXoffsetUndefined: Self = StObject.set(x, "xoffset", js.undefined)
+    
+    inline def setYoffset(value: Double | String): Self = StObject.set(x, "yoffset", value.asInstanceOf[js.Any])
+    
+    inline def setYoffsetUndefined: Self = StObject.set(x, "yoffset", js.undefined)
+  }
 }
-

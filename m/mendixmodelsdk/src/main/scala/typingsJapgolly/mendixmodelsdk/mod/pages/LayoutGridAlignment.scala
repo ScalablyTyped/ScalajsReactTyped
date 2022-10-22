@@ -1,21 +1,43 @@
 package typingsJapgolly.mendixmodelsdk.mod.pages
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment")
 @js.native
-class LayoutGridAlignment ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.pages.LayoutGridAlignment
-
-/* static members */
-@JSImport("mendixmodelsdk", "pages.LayoutGridAlignment")
-@js.native
-object LayoutGridAlignment extends js.Object {
-  var Center: typingsJapgolly.mendixmodelsdk.pagesMod.pages.LayoutGridAlignment = js.native
-  var End: typingsJapgolly.mendixmodelsdk.pagesMod.pages.LayoutGridAlignment = js.native
-  var None: typingsJapgolly.mendixmodelsdk.pagesMod.pages.LayoutGridAlignment = js.native
-  var Start: typingsJapgolly.mendixmodelsdk.pagesMod.pages.LayoutGridAlignment = js.native
+open class LayoutGridAlignment protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.pages.LayoutGridAlignment {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object LayoutGridAlignment {
+  
+  @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment.Center")
+  @js.native
+  def Center: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment = js.native
+  inline def Center_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Center")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment.End")
+  @js.native
+  def End: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment = js.native
+  inline def End_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("End")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment.None")
+  @js.native
+  def None: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment = js.native
+  inline def None_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "pages.LayoutGridAlignment.Start")
+  @js.native
+  def Start: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment = js.native
+  inline def Start_=(x: typingsJapgolly.mendixmodelsdk.srcGenPagesMod.pages.LayoutGridAlignment): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Start")(x.asInstanceOf[js.Any])
+}

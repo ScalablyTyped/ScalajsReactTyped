@@ -1,15 +1,22 @@
 package typingsJapgolly.webpack.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webpack", "MultiWatching")
 @js.native
-abstract class MultiWatching () extends Watching {
-  /* CompleteClass */
-  override def close(callback: js.Function0[Unit]): Unit = js.native
-  /* CompleteClass */
-  override def invalidate(): Unit = js.native
+trait MultiWatching extends StObject {
+  
+  def close(callback: CallbackFunction[Unit]): Unit = js.native
+  
+  var compiler: MultiCompiler = js.native
+  
+  def invalidate(): Unit = js.native
+  def invalidate(callback: Any): Unit = js.native
+  
+  def resume(): Unit = js.native
+  
+  def suspend(): Unit = js.native
+  
+  var watchings: js.Array[Watching] = js.native
 }
-

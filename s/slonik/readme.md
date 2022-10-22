@@ -4,16 +4,16 @@
 Typings are for version 22.1
 
 ## Library description:
-A PostgreSQL client with strict types, detailed logging and assertions.
+A Node.js PostgreSQL client with strict types, detailed logging and assertions.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | slonik |
 | Keywords           | postgresql, promise, types |
-| # releases         | 183 |
-| # dependents       | 12 |
-| # downloads        | 128178 |
-| # stars            | 0 |
+| # releases         | 83 |
+| # dependents       | 0.0 |
+| # downloads        | 304984.0 |
+| # stars            | 3370.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/slonik#readme)

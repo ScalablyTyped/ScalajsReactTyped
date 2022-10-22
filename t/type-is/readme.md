@@ -10,10 +10,10 @@ Infer the content-type of a request.
 | ------------------ | :-------------: |
 | Full name          | type-is |
 | Keywords           | content, type, checking |
-| # releases         | 4 |
-| # dependents       | 460 |
-| # downloads        | 466815594 |
-| # stars            | 25 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 9.353250566666667E7 |
+| # stars            | 204.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/type-is#readme)

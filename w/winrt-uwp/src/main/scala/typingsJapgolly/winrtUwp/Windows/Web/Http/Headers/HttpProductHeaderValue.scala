@@ -1,45 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Http.Headers
 
-import typingsJapgolly.winrtUwp.AnonProductHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents product information used by the HttpProductHeaderValue and HttpProductInfoHeaderValueCollection classes in the User-Agent HTTP header. */
-@JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
-@js.native
-class HttpProductHeaderValue protected () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpProductHeaderValue class with a product name.
-    * @param productName The name of the product token used in the User-Agent HTTP header.
-    */
-  def this(productName: String) = this()
-  /**
-    * Initializes a new instance of the HttpProductHeaderValue class with a product name and a product version.
-    * @param productName The name of the product token used in the User-Agent HTTP header.
-    * @param productVersion The version of the product token used in the User-Agent HTTP header.
-    */
-  def this(productName: String, productVersion: String) = this()
+trait HttpProductHeaderValue extends StObject {
+  
   /** Gets a token that represents the name of the product to be used in the User-Agent HTTP header. */
-  var name: String = js.native
+  var name: String
+  
   /** Gets a token that represents the version of the product to be used in the User-Agent HTTP header. */
-  var version: String = js.native
+  var version: String
 }
-
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
-@js.native
-object HttpProductHeaderValue extends js.Object {
-  /**
-    * Converts a string to an HttpProductHeaderValue instance.
-    * @param input A string that represents the product name and version.
-    * @return An HttpProductHeaderValue instance.
-    */
-  def parse(input: String): HttpProductHeaderValue = js.native
-  /**
-    * Determines whether a string is valid HttpProductHeaderValue information.
-    * @param input The string to validate.
-    */
-  def tryParse(input: String): AnonProductHeaderValue = js.native
+object HttpProductHeaderValue {
+  
+  inline def apply(name: String, version: String): HttpProductHeaderValue = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpProductHeaderValue]
+  }
+  
+  extension [Self <: HttpProductHeaderValue](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

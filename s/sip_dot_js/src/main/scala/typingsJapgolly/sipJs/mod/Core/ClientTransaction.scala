@@ -1,28 +1,32 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.coreTransportMod.Transport
-import typingsJapgolly.sipJs.transactionUserMod.ClientTransactionUser
+import typingsJapgolly.sipJs.libCoreTransactionsTransactionUserMod.ClientTransactionUser
+import typingsJapgolly.sipJs.libCoreTransportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sip.js", "Core.ClientTransaction")
+/* note: abstract class */ @JSImport("sip.js", "Core.ClientTransaction")
 @js.native
-abstract class ClientTransaction protected ()
-  extends typingsJapgolly.sipJs.coreMod.ClientTransaction {
-  protected def this(
-    _request: typingsJapgolly.sipJs.messagesMod.OutgoingRequestMessage,
+open class ClientTransaction protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.ClientTransaction {
+  /* protected */ def this(
+    _request: typingsJapgolly.sipJs.libCoreMessagesMod.OutgoingRequestMessage,
     transport: Transport,
     user: ClientTransactionUser,
-    state: typingsJapgolly.sipJs.transactionStateMod.TransactionState,
+    state: typingsJapgolly.sipJs.libCoreTransactionsTransactionStateMod.TransactionState,
     loggerCategory: String
   ) = this()
 }
-
 /* static members */
-@JSImport("sip.js", "Core.ClientTransaction")
-@js.native
-object ClientTransaction extends js.Object {
-  var makeId: js.Any = js.native
+object ClientTransaction {
+  
+  @JSImport("sip.js", "Core.ClientTransaction")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sip.js", "Core.ClientTransaction.makeId")
+  @js.native
+  def makeId: Any = js.native
+  inline def makeId_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("makeId")(x.asInstanceOf[js.Any])
 }
-

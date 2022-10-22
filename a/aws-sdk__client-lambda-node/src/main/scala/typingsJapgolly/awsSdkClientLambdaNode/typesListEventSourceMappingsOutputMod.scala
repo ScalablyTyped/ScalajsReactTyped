@@ -1,31 +1,54 @@
 package typingsJapgolly.awsSdkClientLambdaNode
 
-import typingsJapgolly.awsSdkClientLambdaNode.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientLambdaNode.typesEventSourceMappingConfigurationMod.UnmarshalledEventSourceMappingConfiguration
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientLambdaNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-lambda-node/types/ListEventSourceMappingsOutput", JSImport.Namespace)
-@js.native
-object typesListEventSourceMappingsOutputMod extends js.Object {
-  @js.native
-  trait ListEventSourceMappingsOutput extends OutputTypesUnion {
+object typesListEventSourceMappingsOutputMod {
+  
+  trait ListEventSourceMappingsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>An array of <code>EventSourceMappingConfiguration</code> objects.</p>
       */
-    var EventSourceMappings: js.UndefOr[js.Array[UnmarshalledEventSourceMappingConfiguration]] = js.native
+    var EventSourceMappings: js.UndefOr[js.Array[UnmarshalledEventSourceMappingConfiguration]] = js.undefined
+    
     /**
       * <p>A string, present if there are more event source mappings.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
-  
+  object ListEventSourceMappingsOutput {
+    
+    inline def apply($metadata: ResponseMetadata): ListEventSourceMappingsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ListEventSourceMappingsOutput]
+    }
+    
+    extension [Self <: ListEventSourceMappingsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setEventSourceMappings(value: js.Array[UnmarshalledEventSourceMappingConfiguration]): Self = StObject.set(x, "EventSourceMappings", value.asInstanceOf[js.Any])
+      
+      inline def setEventSourceMappingsUndefined: Self = StObject.set(x, "EventSourceMappings", js.undefined)
+      
+      inline def setEventSourceMappingsVarargs(value: UnmarshalledEventSourceMappingConfiguration*): Self = StObject.set(x, "EventSourceMappings", js.Array(value*))
+      
+      inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+      
+      inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    }
+  }
 }
-

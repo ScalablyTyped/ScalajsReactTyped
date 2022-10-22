@@ -1,13 +1,13 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PullErrorTypeSymbol")
 @js.native
-class PullErrorTypeSymbol protected () extends PullPrimitiveTypeSymbol {
-  def this(_anyType: PullTypeSymbol, name: String) = this()
+trait PullErrorTypeSymbol
+  extends StObject
+     with PullPrimitiveTypeSymbol {
+  
   var _anyType: PullTypeSymbol = js.native
 }
-

@@ -1,26 +1,35 @@
 package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IObjectTemplateSelectorItem extends js.Object {
+trait IObjectTemplateSelectorItem extends StObject {
+  
   def GetClassID(): Double
+  
   def GetClassName(): String
+  
   def GetGroupID(): Double
+  
   def GetGroupName(): String
+  
   def GetID(): String
+  
   def GetIconURL(): String
+  
   def GetName(): String
+  
   def GetTemplateID(): Double
+  
   def IsBlankItem(): Boolean
+  
   def IsDefaultTemplateForClass(): Boolean
 }
-
 object IObjectTemplateSelectorItem {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     GetClassID: CallbackTo[Double],
     GetClassName: CallbackTo[String],
     GetGroupID: CallbackTo[Double],
@@ -32,18 +41,30 @@ object IObjectTemplateSelectorItem {
     IsBlankItem: CallbackTo[Boolean],
     IsDefaultTemplateForClass: CallbackTo[Boolean]
   ): IObjectTemplateSelectorItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("GetClassID")(GetClassID.toJsFn)
-    __obj.updateDynamic("GetClassName")(GetClassName.toJsFn)
-    __obj.updateDynamic("GetGroupID")(GetGroupID.toJsFn)
-    __obj.updateDynamic("GetGroupName")(GetGroupName.toJsFn)
-    __obj.updateDynamic("GetID")(GetID.toJsFn)
-    __obj.updateDynamic("GetIconURL")(GetIconURL.toJsFn)
-    __obj.updateDynamic("GetName")(GetName.toJsFn)
-    __obj.updateDynamic("GetTemplateID")(GetTemplateID.toJsFn)
-    __obj.updateDynamic("IsBlankItem")(IsBlankItem.toJsFn)
-    __obj.updateDynamic("IsDefaultTemplateForClass")(IsDefaultTemplateForClass.toJsFn)
+    val __obj = js.Dynamic.literal(GetClassID = GetClassID.toJsFn, GetClassName = GetClassName.toJsFn, GetGroupID = GetGroupID.toJsFn, GetGroupName = GetGroupName.toJsFn, GetID = GetID.toJsFn, GetIconURL = GetIconURL.toJsFn, GetName = GetName.toJsFn, GetTemplateID = GetTemplateID.toJsFn, IsBlankItem = IsBlankItem.toJsFn, IsDefaultTemplateForClass = IsDefaultTemplateForClass.toJsFn)
     __obj.asInstanceOf[IObjectTemplateSelectorItem]
   }
+  
+  extension [Self <: IObjectTemplateSelectorItem](x: Self) {
+    
+    inline def setGetClassID(value: CallbackTo[Double]): Self = StObject.set(x, "GetClassID", value.toJsFn)
+    
+    inline def setGetClassName(value: CallbackTo[String]): Self = StObject.set(x, "GetClassName", value.toJsFn)
+    
+    inline def setGetGroupID(value: CallbackTo[Double]): Self = StObject.set(x, "GetGroupID", value.toJsFn)
+    
+    inline def setGetGroupName(value: CallbackTo[String]): Self = StObject.set(x, "GetGroupName", value.toJsFn)
+    
+    inline def setGetID(value: CallbackTo[String]): Self = StObject.set(x, "GetID", value.toJsFn)
+    
+    inline def setGetIconURL(value: CallbackTo[String]): Self = StObject.set(x, "GetIconURL", value.toJsFn)
+    
+    inline def setGetName(value: CallbackTo[String]): Self = StObject.set(x, "GetName", value.toJsFn)
+    
+    inline def setGetTemplateID(value: CallbackTo[Double]): Self = StObject.set(x, "GetTemplateID", value.toJsFn)
+    
+    inline def setIsBlankItem(value: CallbackTo[Boolean]): Self = StObject.set(x, "IsBlankItem", value.toJsFn)
+    
+    inline def setIsDefaultTemplateForClass(value: CallbackTo[Boolean]): Self = StObject.set(x, "IsDefaultTemplateForClass", value.toJsFn)
+  }
 }
-

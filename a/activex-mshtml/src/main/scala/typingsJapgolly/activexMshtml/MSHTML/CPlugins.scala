@@ -1,18 +1,20 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.CPlugins")
 @js.native
-class CPlugins protected () extends js.Object {
-  @JSName("MSHTML.CPlugins_typekey")
+trait CPlugins extends StObject {
+  
+  /* private */ @JSName("MSHTML.CPlugins_typekey")
   var MSHTMLDotCPlugins_typekey: CPlugins = js.native
-  val constructor: js.Any = js.native
+  
+  val constructor: Any = js.native
+  
   val length: Double = js.native
+  
   /** @param reload [reload=false] */
   def refresh(): Unit = js.native
   def refresh(reload: Boolean): Unit = js.native
 }
-

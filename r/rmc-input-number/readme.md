@@ -10,10 +10,10 @@ input-number ui component for react(web & react-native)
 | ------------------ | :-------------: |
 | Full name          | rmc-input-number |
 | Keywords           | react, react-component, react-m-input-number, input-number, react-native |
-| # releases         | 2 |
-| # dependents       | 35 |
-| # downloads        | 628509 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 121408.66666666667 |
+| # stars            | 17.0 |
 
 ## Links
 - [Homepage](https://github.com/react-component/m-input-number)

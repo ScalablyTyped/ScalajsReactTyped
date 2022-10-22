@@ -1,34 +1,28 @@
 package typingsJapgolly.strophe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stropheStrings {
-  @js.native
-  sealed trait chat extends js.Object
   
   @js.native
-  sealed trait groupchat extends js.Object
+  sealed trait chat extends StObject
+  inline def chat: chat = "chat".asInstanceOf[chat]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait groupchat extends StObject
+  inline def groupchat: groupchat = "groupchat".asInstanceOf[groupchat]
   
   @js.native
-  sealed trait presence extends js.Object
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait roster extends js.Object
+  sealed trait presence extends StObject
+  inline def presence: presence = "presence".asInstanceOf[presence]
   
-  @scala.inline
-  def chat: chat = "chat".asInstanceOf[chat]
-  @scala.inline
-  def groupchat: groupchat = "groupchat".asInstanceOf[groupchat]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def presence: presence = "presence".asInstanceOf[presence]
-  @scala.inline
-  def roster: roster = "roster".asInstanceOf[roster]
+  @js.native
+  sealed trait roster extends StObject
+  inline def roster: roster = "roster".asInstanceOf[roster]
 }
-

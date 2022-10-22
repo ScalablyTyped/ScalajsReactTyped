@@ -1,27 +1,36 @@
 package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToolConfig extends js.Object {
+trait ToolConfig extends StObject {
+  
   val data: js.UndefOr[StringList] = js.undefined
+  
   val enabled: js.UndefOr[Boolean] = js.undefined
+  
   val position: js.UndefOr[Double] = js.undefined
 }
-
 object ToolConfig {
-  @scala.inline
-  def apply(
-    data: StringList = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    position: Int | Double = null
-  ): ToolConfig = {
+  
+  inline def apply(): ToolConfig = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolConfig]
   }
+  
+  extension [Self <: ToolConfig](x: Self) {
+    
+    inline def setData(value: StringList): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

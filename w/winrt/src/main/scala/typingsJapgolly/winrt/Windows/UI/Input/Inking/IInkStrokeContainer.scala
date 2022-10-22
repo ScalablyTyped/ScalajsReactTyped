@@ -10,30 +10,43 @@ import typingsJapgolly.winrt.Windows.Foundation.Point
 import typingsJapgolly.winrt.Windows.Foundation.Rect
 import typingsJapgolly.winrt.Windows.Storage.Streams.IInputStream
 import typingsJapgolly.winrt.Windows.Storage.Streams.IOutputStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IInkStrokeContainer extends js.Object {
-  var boundingRect: Rect
+trait IInkStrokeContainer extends StObject {
+  
   def addStroke(stroke: InkStroke): Unit
+  
+  var boundingRect: Rect
+  
   def canPasteFromClipboard(): Boolean
+  
   def copySelectedToClipboard(): Unit
+  
   def deleteSelected(): Rect
+  
   def getRecognitionResults(): IVectorView[InkRecognitionResult]
+  
   def getStrokes(): IVectorView[InkStroke]
+  
   def loadAsync(inputStream: IInputStream): IAsyncActionWithProgress[Double]
+  
   def moveSelected(translation: Point): Rect
+  
   def pasteFromClipboard(position: Point): Rect
+  
   def saveAsync(outputStream: IOutputStream): IAsyncOperationWithProgress[Double, Double]
+  
   def selectWithLine(from: Point, to: Point): Rect
+  
   def selectWithPolyLine(polyline: IIterable[Point]): Rect
+  
   def updateRecognitionResults(recognitionResults: IVectorView[InkRecognitionResult]): Unit
 }
-
 object IInkStrokeContainer {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     addStroke: InkStroke => Callback,
     boundingRect: Rect,
     canPasteFromClipboard: CallbackTo[Boolean],
@@ -41,29 +54,46 @@ object IInkStrokeContainer {
     deleteSelected: CallbackTo[Rect],
     getRecognitionResults: CallbackTo[IVectorView[InkRecognitionResult]],
     getStrokes: CallbackTo[IVectorView[InkStroke]],
-    loadAsync: IInputStream => CallbackTo[IAsyncActionWithProgress[Double]],
-    moveSelected: Point => CallbackTo[Rect],
-    pasteFromClipboard: Point => CallbackTo[Rect],
-    saveAsync: IOutputStream => CallbackTo[IAsyncOperationWithProgress[Double, Double]],
-    selectWithLine: (Point, Point) => CallbackTo[Rect],
-    selectWithPolyLine: IIterable[Point] => CallbackTo[Rect],
+    loadAsync: IInputStream => IAsyncActionWithProgress[Double],
+    moveSelected: Point => Rect,
+    pasteFromClipboard: Point => Rect,
+    saveAsync: IOutputStream => IAsyncOperationWithProgress[Double, Double],
+    selectWithLine: (Point, Point) => Rect,
+    selectWithPolyLine: IIterable[Point] => Rect,
     updateRecognitionResults: IVectorView[InkRecognitionResult] => Callback
   ): IInkStrokeContainer = {
-    val __obj = js.Dynamic.literal(boundingRect = boundingRect.asInstanceOf[js.Any])
-    __obj.updateDynamic("addStroke")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.UI.Input.Inking.InkStroke) => addStroke(t0).runNow()))
-    __obj.updateDynamic("canPasteFromClipboard")(canPasteFromClipboard.toJsFn)
-    __obj.updateDynamic("copySelectedToClipboard")(copySelectedToClipboard.toJsFn)
-    __obj.updateDynamic("deleteSelected")(deleteSelected.toJsFn)
-    __obj.updateDynamic("getRecognitionResults")(getRecognitionResults.toJsFn)
-    __obj.updateDynamic("getStrokes")(getStrokes.toJsFn)
-    __obj.updateDynamic("loadAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IInputStream) => loadAsync(t0).runNow()))
-    __obj.updateDynamic("moveSelected")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Point) => moveSelected(t0).runNow()))
-    __obj.updateDynamic("pasteFromClipboard")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Point) => pasteFromClipboard(t0).runNow()))
-    __obj.updateDynamic("saveAsync")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IOutputStream) => saveAsync(t0).runNow()))
-    __obj.updateDynamic("selectWithLine")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Foundation.Point, t1: typingsJapgolly.winrt.Windows.Foundation.Point) => selectWithLine(t0, t1).runNow()))
-    __obj.updateDynamic("selectWithPolyLine")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable[typingsJapgolly.winrt.Windows.Foundation.Point]) => selectWithPolyLine(t0).runNow()))
-    __obj.updateDynamic("updateRecognitionResults")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView[typingsJapgolly.winrt.Windows.UI.Input.Inking.InkRecognitionResult]) => updateRecognitionResults(t0).runNow()))
+    val __obj = js.Dynamic.literal(addStroke = js.Any.fromFunction1((t0: InkStroke) => addStroke(t0).runNow()), boundingRect = boundingRect.asInstanceOf[js.Any], canPasteFromClipboard = canPasteFromClipboard.toJsFn, copySelectedToClipboard = copySelectedToClipboard.toJsFn, deleteSelected = deleteSelected.toJsFn, getRecognitionResults = getRecognitionResults.toJsFn, getStrokes = getStrokes.toJsFn, loadAsync = js.Any.fromFunction1(loadAsync), moveSelected = js.Any.fromFunction1(moveSelected), pasteFromClipboard = js.Any.fromFunction1(pasteFromClipboard), saveAsync = js.Any.fromFunction1(saveAsync), selectWithLine = js.Any.fromFunction2(selectWithLine), selectWithPolyLine = js.Any.fromFunction1(selectWithPolyLine), updateRecognitionResults = js.Any.fromFunction1((t0: IVectorView[InkRecognitionResult]) => updateRecognitionResults(t0).runNow()))
     __obj.asInstanceOf[IInkStrokeContainer]
   }
+  
+  extension [Self <: IInkStrokeContainer](x: Self) {
+    
+    inline def setAddStroke(value: InkStroke => Callback): Self = StObject.set(x, "addStroke", js.Any.fromFunction1((t0: InkStroke) => value(t0).runNow()))
+    
+    inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+    
+    inline def setCanPasteFromClipboard(value: CallbackTo[Boolean]): Self = StObject.set(x, "canPasteFromClipboard", value.toJsFn)
+    
+    inline def setCopySelectedToClipboard(value: Callback): Self = StObject.set(x, "copySelectedToClipboard", value.toJsFn)
+    
+    inline def setDeleteSelected(value: CallbackTo[Rect]): Self = StObject.set(x, "deleteSelected", value.toJsFn)
+    
+    inline def setGetRecognitionResults(value: CallbackTo[IVectorView[InkRecognitionResult]]): Self = StObject.set(x, "getRecognitionResults", value.toJsFn)
+    
+    inline def setGetStrokes(value: CallbackTo[IVectorView[InkStroke]]): Self = StObject.set(x, "getStrokes", value.toJsFn)
+    
+    inline def setLoadAsync(value: IInputStream => IAsyncActionWithProgress[Double]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
+    
+    inline def setMoveSelected(value: Point => Rect): Self = StObject.set(x, "moveSelected", js.Any.fromFunction1(value))
+    
+    inline def setPasteFromClipboard(value: Point => Rect): Self = StObject.set(x, "pasteFromClipboard", js.Any.fromFunction1(value))
+    
+    inline def setSaveAsync(value: IOutputStream => IAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction1(value))
+    
+    inline def setSelectWithLine(value: (Point, Point) => Rect): Self = StObject.set(x, "selectWithLine", js.Any.fromFunction2(value))
+    
+    inline def setSelectWithPolyLine(value: IIterable[Point] => Rect): Self = StObject.set(x, "selectWithPolyLine", js.Any.fromFunction1(value))
+    
+    inline def setUpdateRecognitionResults(value: IVectorView[InkRecognitionResult] => Callback): Self = StObject.set(x, "updateRecognitionResults", js.Any.fromFunction1((t0: IVectorView[InkRecognitionResult]) => value(t0).runNow()))
+  }
 }
-

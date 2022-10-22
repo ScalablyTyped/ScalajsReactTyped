@@ -1,35 +1,33 @@
 package typingsJapgolly.nodeMysqlWrapper.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CollectionChangedAction extends js.Object
-
+sealed trait CollectionChangedAction extends StObject
 @JSImport("node-mysql-wrapper", "CollectionChangedAction")
 @js.native
-object CollectionChangedAction extends js.Object {
-  @js.native
-  sealed trait DELETE extends CollectionChangedAction
-  
-  @js.native
-  sealed trait INSERT extends CollectionChangedAction
-  
-  @js.native
-  sealed trait RESET extends CollectionChangedAction
+object CollectionChangedAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CollectionChangedAction with Double] = js.native
-  /* 1 */ @js.native
-  object DELETE extends TopLevel[DELETE with Double]
+  def apply(value: Double): js.UndefOr[CollectionChangedAction & Double] = js.native
   
-  /* 0 */ @js.native
-  object INSERT extends TopLevel[INSERT with Double]
+  @js.native
+  sealed trait DELETE
+    extends StObject
+       with CollectionChangedAction
+  /* 1 */ val DELETE: typingsJapgolly.nodeMysqlWrapper.mod.CollectionChangedAction.DELETE & Double = js.native
   
-  /* 2 */ @js.native
-  object RESET extends TopLevel[RESET with Double]
+  @js.native
+  sealed trait INSERT
+    extends StObject
+       with CollectionChangedAction
+  /* 0 */ val INSERT: typingsJapgolly.nodeMysqlWrapper.mod.CollectionChangedAction.INSERT & Double = js.native
   
+  @js.native
+  sealed trait RESET
+    extends StObject
+       with CollectionChangedAction
+  /* 2 */ val RESET: typingsJapgolly.nodeMysqlWrapper.mod.CollectionChangedAction.RESET & Double = js.native
 }
-

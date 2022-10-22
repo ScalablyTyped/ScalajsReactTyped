@@ -1,14 +1,17 @@
 package typingsJapgolly.reactColor.components
 
+import typingsJapgolly.reactColor.libComponentsTwitterTwitterMod.TwitterPickerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object TwitterPicker
-  extends SharedApply_TwitterPickerProps_338032902[typingsJapgolly.reactColor.mod.TwitterPicker] {
+object TwitterPicker {
+  
   @JSImport("react-color", "TwitterPicker")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: TwitterPicker.type): SharedBuilder_TwitterPickerProps1012543526[typingsJapgolly.reactColor.mod.TwitterPicker] = new SharedBuilder_TwitterPickerProps1012543526[typingsJapgolly.reactColor.mod.TwitterPicker](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TwitterPickerProps): SharedBuilder_TwitterPickerProps1012543526[typingsJapgolly.reactColor.mod.TwitterPicker] = new SharedBuilder_TwitterPickerProps1012543526[typingsJapgolly.reactColor.mod.TwitterPicker](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

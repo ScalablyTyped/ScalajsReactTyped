@@ -1,58 +1,88 @@
 package typingsJapgolly.senchaTouch.Ext
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IClass extends js.Object {
+trait IClass extends StObject {
+  
   /** [Config Option] (String[]) */
   var alias: js.UndefOr[Array] = js.undefined
+  
   /** [Config Option] (String/String[]) */
-  var alternateClassName: js.UndefOr[js.Any] = js.undefined
+  var alternateClassName: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var config: js.UndefOr[js.Any] = js.undefined
+  var config: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var extend: js.UndefOr[java.lang.String] = js.undefined
+  
   /** [Config Option] (Object) */
-  var inheritableStatics: js.UndefOr[js.Any] = js.undefined
+  var inheritableStatics: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var mixins: js.UndefOr[js.Any] = js.undefined
+  var mixins: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Object) */
-  var platformConfig: js.UndefOr[js.Any] = js.undefined
+  var platformConfig: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var singleton: js.UndefOr[Boolean] = js.undefined
+  
   /** [Config Option] (Object) */
-  var statics: js.UndefOr[js.Any] = js.undefined
+  var statics: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String[]) */
   var uses: js.UndefOr[Array] = js.undefined
 }
-
 object IClass {
-  @scala.inline
-  def apply(
-    alias: Array = null,
-    alternateClassName: js.Any = null,
-    config: js.Any = null,
-    extend: java.lang.String = null,
-    inheritableStatics: js.Any = null,
-    mixins: js.Any = null,
-    platformConfig: js.Any = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    statics: js.Any = null,
-    uses: Array = null
-  ): IClass = {
+  
+  inline def apply(): IClass = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
     __obj.asInstanceOf[IClass]
   }
+  
+  extension [Self <: IClass](x: Self) {
+    
+    inline def setAlias(value: Array): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setAlternateClassName(value: Any): Self = StObject.set(x, "alternateClassName", value.asInstanceOf[js.Any])
+    
+    inline def setAlternateClassNameUndefined: Self = StObject.set(x, "alternateClassName", js.undefined)
+    
+    inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    
+    inline def setExtend(value: java.lang.String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    
+    inline def setInheritableStatics(value: Any): Self = StObject.set(x, "inheritableStatics", value.asInstanceOf[js.Any])
+    
+    inline def setInheritableStaticsUndefined: Self = StObject.set(x, "inheritableStatics", js.undefined)
+    
+    inline def setMixins(value: Any): Self = StObject.set(x, "mixins", value.asInstanceOf[js.Any])
+    
+    inline def setMixinsUndefined: Self = StObject.set(x, "mixins", js.undefined)
+    
+    inline def setPlatformConfig(value: Any): Self = StObject.set(x, "platformConfig", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformConfigUndefined: Self = StObject.set(x, "platformConfig", js.undefined)
+    
+    inline def setSingleton(value: Boolean): Self = StObject.set(x, "singleton", value.asInstanceOf[js.Any])
+    
+    inline def setSingletonUndefined: Self = StObject.set(x, "singleton", js.undefined)
+    
+    inline def setStatics(value: Any): Self = StObject.set(x, "statics", value.asInstanceOf[js.Any])
+    
+    inline def setStaticsUndefined: Self = StObject.set(x, "statics", js.undefined)
+    
+    inline def setUses(value: Array): Self = StObject.set(x, "uses", value.asInstanceOf[js.Any])
+    
+    inline def setUsesUndefined: Self = StObject.set(x, "uses", js.undefined)
+  }
 }
-

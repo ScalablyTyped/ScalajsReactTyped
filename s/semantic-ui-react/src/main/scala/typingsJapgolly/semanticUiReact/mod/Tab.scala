@@ -1,23 +1,22 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.semanticUiReact.tabTabMod.TabComponent
-import typingsJapgolly.semanticUiReact.tabTabMod.TabProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesTabTabMod.TabComponent
+import typingsJapgolly.semanticUiReact.distCommonjsModulesTabTabMod.TabProps
+import typingsJapgolly.semanticUiReact.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("semantic-ui-react", "Tab")
 @js.native
-class Tab protected ()
-  extends Component[TabProps, ComponentState, js.Any] {
+open class Tab protected ()
+  extends Component[TabProps, js.Object, Any] {
   def this(props: TabProps) = this()
-  def this(props: TabProps, context: js.Any) = this()
+  def this(props: TabProps, context: Any) = this()
 }
-
-@JSImport("semantic-ui-react", "Tab")
-@js.native
-object Tab extends TopLevel[TabComponent]
-
+object Tab {
+  
+  inline def apply: TabComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Tab").asInstanceOf[TabComponent]
+}

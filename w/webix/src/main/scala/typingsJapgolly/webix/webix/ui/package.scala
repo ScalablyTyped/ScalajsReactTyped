@@ -1,10 +1,12 @@
-package typingsJapgolly.webix.webix
+package typingsJapgolly.webix.webix.ui
 
+import typingsJapgolly.webix.webixStrings.onScroll
+import typingsJapgolly.webix.webixStrings.onViewShow
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object ui {
-  type resizerEventName = typingsJapgolly.webix.webixStrings.onViewShow
-  type vscrollEventName = typingsJapgolly.webix.webixStrings.onScroll
-}
+
+type resizerEventName = onViewShow
+
+type vscrollEventName = onScroll

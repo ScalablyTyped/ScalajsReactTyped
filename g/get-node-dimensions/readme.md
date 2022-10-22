@@ -10,10 +10,10 @@ Get accurate element dimensions, even if it's hidden!
 | ------------------ | :-------------: |
 | Full name          | get-node-dimensions |
 | Keywords           | dimensions, measure node, measure element, width, height, hidden element width, hidden element height, actual |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 6931350 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1843977.3333333333 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/souporserious/get-node-dimensions)

@@ -2,55 +2,82 @@ package typingsJapgolly.extendedListbox
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxSettings extends js.Object {
+trait ListBoxSettings extends StObject {
+  
   /** function which returns a array of items */
   var getItems: js.UndefOr[js.Function0[js.Array[String | ListBoxItem]]] = js.undefined
+  
   /** callback for searchBar text changes */
   var onFilterChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
+  
   /** callback for doubleClick event on an item */
   var onItemDoubleClicked: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
+  
   /** callback for enter keyPress event on an item */
   var onItemEnterPressed: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
+  
   /** callback for item changes (item added, item removed, item order) */
   var onItemsChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
+  
   /** callback for selection changes */
   var onValueChanged: js.UndefOr[js.Function1[/* event */ ListBoxEvent, Unit]] = js.undefined
+  
   /** determines if the searchBar is visible */
   var searchBar: js.UndefOr[Boolean] = js.undefined
+  
   /** settings for the searchBar button */
   var searchBarButton: js.UndefOr[ListBoxSearchBarButtonOptions] = js.undefined
+  
   /** watermark (placeholder) for the searchBar */
   var searchBarWatermark: js.UndefOr[String] = js.undefined
 }
-
 object ListBoxSettings {
-  @scala.inline
-  def apply(
-    getItems: js.UndefOr[CallbackTo[js.Array[String | ListBoxItem]]] = js.undefined,
-    onFilterChanged: /* event */ ListBoxEvent => Callback = null,
-    onItemDoubleClicked: /* event */ ListBoxEvent => Callback = null,
-    onItemEnterPressed: /* event */ ListBoxEvent => Callback = null,
-    onItemsChanged: /* event */ ListBoxEvent => Callback = null,
-    onValueChanged: /* event */ ListBoxEvent => Callback = null,
-    searchBar: js.UndefOr[Boolean] = js.undefined,
-    searchBarButton: ListBoxSearchBarButtonOptions = null,
-    searchBarWatermark: String = null
-  ): ListBoxSettings = {
+  
+  inline def apply(): ListBoxSettings = {
     val __obj = js.Dynamic.literal()
-    getItems.foreach(p => __obj.updateDynamic("getItems")(p.toJsFn))
-    if (onFilterChanged != null) __obj.updateDynamic("onFilterChanged")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.extendedListbox.ListBoxEvent) => onFilterChanged(t0).runNow()))
-    if (onItemDoubleClicked != null) __obj.updateDynamic("onItemDoubleClicked")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.extendedListbox.ListBoxEvent) => onItemDoubleClicked(t0).runNow()))
-    if (onItemEnterPressed != null) __obj.updateDynamic("onItemEnterPressed")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.extendedListbox.ListBoxEvent) => onItemEnterPressed(t0).runNow()))
-    if (onItemsChanged != null) __obj.updateDynamic("onItemsChanged")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.extendedListbox.ListBoxEvent) => onItemsChanged(t0).runNow()))
-    if (onValueChanged != null) __obj.updateDynamic("onValueChanged")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.extendedListbox.ListBoxEvent) => onValueChanged(t0).runNow()))
-    if (!js.isUndefined(searchBar)) __obj.updateDynamic("searchBar")(searchBar.asInstanceOf[js.Any])
-    if (searchBarButton != null) __obj.updateDynamic("searchBarButton")(searchBarButton.asInstanceOf[js.Any])
-    if (searchBarWatermark != null) __obj.updateDynamic("searchBarWatermark")(searchBarWatermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxSettings]
   }
+  
+  extension [Self <: ListBoxSettings](x: Self) {
+    
+    inline def setGetItems(value: CallbackTo[js.Array[String | ListBoxItem]]): Self = StObject.set(x, "getItems", value.toJsFn)
+    
+    inline def setGetItemsUndefined: Self = StObject.set(x, "getItems", js.undefined)
+    
+    inline def setOnFilterChanged(value: /* event */ ListBoxEvent => Callback): Self = StObject.set(x, "onFilterChanged", js.Any.fromFunction1((t0: /* event */ ListBoxEvent) => value(t0).runNow()))
+    
+    inline def setOnFilterChangedUndefined: Self = StObject.set(x, "onFilterChanged", js.undefined)
+    
+    inline def setOnItemDoubleClicked(value: /* event */ ListBoxEvent => Callback): Self = StObject.set(x, "onItemDoubleClicked", js.Any.fromFunction1((t0: /* event */ ListBoxEvent) => value(t0).runNow()))
+    
+    inline def setOnItemDoubleClickedUndefined: Self = StObject.set(x, "onItemDoubleClicked", js.undefined)
+    
+    inline def setOnItemEnterPressed(value: /* event */ ListBoxEvent => Callback): Self = StObject.set(x, "onItemEnterPressed", js.Any.fromFunction1((t0: /* event */ ListBoxEvent) => value(t0).runNow()))
+    
+    inline def setOnItemEnterPressedUndefined: Self = StObject.set(x, "onItemEnterPressed", js.undefined)
+    
+    inline def setOnItemsChanged(value: /* event */ ListBoxEvent => Callback): Self = StObject.set(x, "onItemsChanged", js.Any.fromFunction1((t0: /* event */ ListBoxEvent) => value(t0).runNow()))
+    
+    inline def setOnItemsChangedUndefined: Self = StObject.set(x, "onItemsChanged", js.undefined)
+    
+    inline def setOnValueChanged(value: /* event */ ListBoxEvent => Callback): Self = StObject.set(x, "onValueChanged", js.Any.fromFunction1((t0: /* event */ ListBoxEvent) => value(t0).runNow()))
+    
+    inline def setOnValueChangedUndefined: Self = StObject.set(x, "onValueChanged", js.undefined)
+    
+    inline def setSearchBar(value: Boolean): Self = StObject.set(x, "searchBar", value.asInstanceOf[js.Any])
+    
+    inline def setSearchBarButton(value: ListBoxSearchBarButtonOptions): Self = StObject.set(x, "searchBarButton", value.asInstanceOf[js.Any])
+    
+    inline def setSearchBarButtonUndefined: Self = StObject.set(x, "searchBarButton", js.undefined)
+    
+    inline def setSearchBarUndefined: Self = StObject.set(x, "searchBar", js.undefined)
+    
+    inline def setSearchBarWatermark(value: String): Self = StObject.set(x, "searchBarWatermark", value.asInstanceOf[js.Any])
+    
+    inline def setSearchBarWatermarkUndefined: Self = StObject.set(x, "searchBarWatermark", js.undefined)
+  }
 }
-

@@ -1,28 +1,34 @@
 package typingsJapgolly.businessRulesEngine.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPropertyValidator extends js.Object {
+trait IPropertyValidator extends StObject {
+  
   var customMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
+  
+  def isAcceptable(s: Any): Boolean
+  
   var tagName: js.UndefOr[String] = js.undefined
-  def isAcceptable(s: js.Any): Boolean
 }
-
 object IPropertyValidator {
-  @scala.inline
-  def apply(
-    isAcceptable: js.Any => CallbackTo[Boolean],
-    customMessage: (/* config */ js.Any, /* args */ js.Any) => CallbackTo[String] = null,
-    tagName: String = null
-  ): IPropertyValidator = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("isAcceptable")(js.Any.fromFunction1((t0: js.Any) => isAcceptable(t0).runNow()))
-    if (customMessage != null) __obj.updateDynamic("customMessage")(js.Any.fromFunction2((t0: /* config */ js.Any, t1: /* args */ js.Any) => customMessage(t0, t1).runNow()))
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
+  
+  inline def apply(isAcceptable: Any => Boolean): IPropertyValidator = {
+    val __obj = js.Dynamic.literal(isAcceptable = js.Any.fromFunction1(isAcceptable))
     __obj.asInstanceOf[IPropertyValidator]
   }
+  
+  extension [Self <: IPropertyValidator](x: Self) {
+    
+    inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "customMessage", js.Any.fromFunction2(value))
+    
+    inline def setCustomMessageUndefined: Self = StObject.set(x, "customMessage", js.undefined)
+    
+    inline def setIsAcceptable(value: Any => Boolean): Self = StObject.set(x, "isAcceptable", js.Any.fromFunction1(value))
+    
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+  }
 }
-

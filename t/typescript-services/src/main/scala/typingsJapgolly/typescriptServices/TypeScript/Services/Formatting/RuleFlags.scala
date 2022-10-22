@@ -1,29 +1,22 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RuleFlags extends js.Object
-
+sealed trait RuleFlags extends StObject
 @JSGlobal("TypeScript.Services.Formatting.RuleFlags")
 @js.native
-object RuleFlags extends js.Object {
-  @js.native
-  sealed trait CanDeleteNewLines extends RuleFlags
+object RuleFlags extends StObject {
   
   @js.native
-  sealed trait None extends RuleFlags
+  sealed trait CanDeleteNewLines
+    extends StObject
+       with RuleFlags
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RuleFlags with Double] = js.native
-  /* 1 */ @js.native
-  object CanDeleteNewLines extends TopLevel[CanDeleteNewLines with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
+  @js.native
+  sealed trait None
+    extends StObject
+       with RuleFlags
 }
-

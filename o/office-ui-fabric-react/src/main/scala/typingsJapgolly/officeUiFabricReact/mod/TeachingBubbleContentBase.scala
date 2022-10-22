@@ -1,22 +1,13 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.AnonHasCondensedHeadline
-import typingsJapgolly.officeUiFabricReact.teachingBubbleTypesMod.ITeachingBubbleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsTeachingBubbleTeachingBubbleDottypesMod.ITeachingBubbleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "TeachingBubbleContentBase")
 @js.native
-class TeachingBubbleContentBase protected ()
+open class TeachingBubbleContentBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libTeachingBubbleMod.TeachingBubbleContentBase {
   def this(props: ITeachingBubbleProps) = this()
 }
-
-/* static members */
-@JSImport("office-ui-fabric-react", "TeachingBubbleContentBase")
-@js.native
-object TeachingBubbleContentBase extends js.Object {
-  var defaultProps: AnonHasCondensedHeadline = js.native
-}
-

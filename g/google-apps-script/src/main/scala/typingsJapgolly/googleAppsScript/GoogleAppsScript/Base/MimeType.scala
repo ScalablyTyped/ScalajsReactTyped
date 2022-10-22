@@ -1,12 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Base
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
-
-@js.native
-sealed trait MimeType extends js.Object
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An enumeration that provides access to MIME-type declarations without typing the strings
@@ -28,196 +24,176 @@ sealed trait MimeType extends js.Object
   *      Logger.log(png.getSize());
   *     }
   */
-@JSGlobal("GoogleAppsScript.Base.MimeType")
-@js.native
-object MimeType extends js.Object {
-  @js.native
-  sealed trait BMP extends MimeType
+trait MimeType extends StObject {
   
-  @js.native
-  sealed trait CSS extends MimeType
+  var BMP: String
   
-  @js.native
-  sealed trait CSV extends MimeType
+  var CSS: String
   
-  @js.native
-  sealed trait FOLDER extends MimeType
+  var CSV: String
   
-  @js.native
-  sealed trait GIF extends MimeType
+  var FOLDER: String
   
-  @js.native
-  sealed trait GOOGLE_APPS_SCRIPT extends MimeType
+  var GIF: String
   
-  @js.native
-  sealed trait GOOGLE_DOCS extends MimeType
+  var GOOGLE_APPS_SCRIPT: String
   
-  @js.native
-  sealed trait GOOGLE_DRAWINGS extends MimeType
+  var GOOGLE_DOCS: String
   
-  @js.native
-  sealed trait GOOGLE_FORMS extends MimeType
+  var GOOGLE_DRAWINGS: String
   
-  @js.native
-  sealed trait GOOGLE_SHEETS extends MimeType
+  var GOOGLE_FORMS: String
   
-  @js.native
-  sealed trait GOOGLE_SITES extends MimeType
+  var GOOGLE_SHEETS: String
   
-  @js.native
-  sealed trait GOOGLE_SLIDES extends MimeType
+  var GOOGLE_SITES: String
   
-  @js.native
-  sealed trait HTML extends MimeType
+  var GOOGLE_SLIDES: String
   
-  @js.native
-  sealed trait JAVASCRIPT extends MimeType
+  var HTML: String
   
-  @js.native
-  sealed trait JPEG extends MimeType
+  var JAVASCRIPT: String
   
-  @js.native
-  sealed trait MICROSOFT_EXCEL extends MimeType
+  var JPEG: String
   
-  @js.native
-  sealed trait MICROSOFT_EXCEL_LEGACY extends MimeType
+  var MICROSOFT_EXCEL: String
   
-  @js.native
-  sealed trait MICROSOFT_POWERPOINT extends MimeType
+  var MICROSOFT_EXCEL_LEGACY: String
   
-  @js.native
-  sealed trait MICROSOFT_POWERPOINT_LEGACY extends MimeType
+  var MICROSOFT_POWERPOINT: String
   
-  @js.native
-  sealed trait MICROSOFT_WORD extends MimeType
+  var MICROSOFT_POWERPOINT_LEGACY: String
   
-  @js.native
-  sealed trait MICROSOFT_WORD_LEGACY extends MimeType
+  var MICROSOFT_WORD: String
   
-  @js.native
-  sealed trait OPENDOCUMENT_GRAPHICS extends MimeType
+  var MICROSOFT_WORD_LEGACY: String
   
-  @js.native
-  sealed trait OPENDOCUMENT_PRESENTATION extends MimeType
+  var OPENDOCUMENT_GRAPHICS: String
   
-  @js.native
-  sealed trait OPENDOCUMENT_SPREADSHEET extends MimeType
+  var OPENDOCUMENT_PRESENTATION: String
   
-  @js.native
-  sealed trait OPENDOCUMENT_TEXT extends MimeType
+  var OPENDOCUMENT_SPREADSHEET: String
   
-  @js.native
-  sealed trait PDF extends MimeType
+  var OPENDOCUMENT_TEXT: String
   
-  @js.native
-  sealed trait PLAIN_TEXT extends MimeType
+  var PDF: String
   
-  @js.native
-  sealed trait PNG extends MimeType
+  var PLAIN_TEXT: String
   
-  @js.native
-  sealed trait RTF extends MimeType
+  var PNG: String
   
-  @js.native
-  sealed trait SVG extends MimeType
+  var RTF: String
   
-  @js.native
-  sealed trait ZIP extends MimeType
+  var SHORTCUT: String
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MimeType with Double] = js.native
-  /* 8 */ @js.native
-  object BMP extends TopLevel[BMP with Double]
+  var SVG: String
   
-  /* 14 */ @js.native
-  object CSS extends TopLevel[CSS with Double]
-  
-  /* 15 */ @js.native
-  object CSV extends TopLevel[CSV with Double]
-  
-  /* 7 */ @js.native
-  object FOLDER extends TopLevel[FOLDER with Double]
-  
-  /* 9 */ @js.native
-  object GIF extends TopLevel[GIF with Double]
-  
-  /* 0 */ @js.native
-  object GOOGLE_APPS_SCRIPT extends TopLevel[GOOGLE_APPS_SCRIPT with Double]
-  
-  /* 2 */ @js.native
-  object GOOGLE_DOCS extends TopLevel[GOOGLE_DOCS with Double]
-  
-  /* 1 */ @js.native
-  object GOOGLE_DRAWINGS extends TopLevel[GOOGLE_DRAWINGS with Double]
-  
-  /* 3 */ @js.native
-  object GOOGLE_FORMS extends TopLevel[GOOGLE_FORMS with Double]
-  
-  /* 4 */ @js.native
-  object GOOGLE_SHEETS extends TopLevel[GOOGLE_SHEETS with Double]
-  
-  /* 5 */ @js.native
-  object GOOGLE_SITES extends TopLevel[GOOGLE_SITES with Double]
-  
-  /* 6 */ @js.native
-  object GOOGLE_SLIDES extends TopLevel[GOOGLE_SLIDES with Double]
-  
-  /* 16 */ @js.native
-  object HTML extends TopLevel[HTML with Double]
-  
-  /* 17 */ @js.native
-  object JAVASCRIPT extends TopLevel[JAVASCRIPT with Double]
-  
-  /* 10 */ @js.native
-  object JPEG extends TopLevel[JPEG with Double]
-  
-  /* 24 */ @js.native
-  object MICROSOFT_EXCEL extends TopLevel[MICROSOFT_EXCEL with Double]
-  
-  /* 25 */ @js.native
-  object MICROSOFT_EXCEL_LEGACY extends TopLevel[MICROSOFT_EXCEL_LEGACY with Double]
-  
-  /* 26 */ @js.native
-  object MICROSOFT_POWERPOINT extends TopLevel[MICROSOFT_POWERPOINT with Double]
-  
-  /* 27 */ @js.native
-  object MICROSOFT_POWERPOINT_LEGACY extends TopLevel[MICROSOFT_POWERPOINT_LEGACY with Double]
-  
-  /* 28 */ @js.native
-  object MICROSOFT_WORD extends TopLevel[MICROSOFT_WORD with Double]
-  
-  /* 29 */ @js.native
-  object MICROSOFT_WORD_LEGACY extends TopLevel[MICROSOFT_WORD_LEGACY with Double]
-  
-  /* 20 */ @js.native
-  object OPENDOCUMENT_GRAPHICS extends TopLevel[OPENDOCUMENT_GRAPHICS with Double]
-  
-  /* 21 */ @js.native
-  object OPENDOCUMENT_PRESENTATION extends TopLevel[OPENDOCUMENT_PRESENTATION with Double]
-  
-  /* 22 */ @js.native
-  object OPENDOCUMENT_SPREADSHEET extends TopLevel[OPENDOCUMENT_SPREADSHEET with Double]
-  
-  /* 23 */ @js.native
-  object OPENDOCUMENT_TEXT extends TopLevel[OPENDOCUMENT_TEXT with Double]
-  
-  /* 13 */ @js.native
-  object PDF extends TopLevel[PDF with Double]
-  
-  /* 18 */ @js.native
-  object PLAIN_TEXT extends TopLevel[PLAIN_TEXT with Double]
-  
-  /* 11 */ @js.native
-  object PNG extends TopLevel[PNG with Double]
-  
-  /* 19 */ @js.native
-  object RTF extends TopLevel[RTF with Double]
-  
-  /* 12 */ @js.native
-  object SVG extends TopLevel[SVG with Double]
-  
-  /* 30 */ @js.native
-  object ZIP extends TopLevel[ZIP with Double]
-  
+  var ZIP: String
 }
-
+object MimeType {
+  
+  inline def apply(
+    BMP: String,
+    CSS: String,
+    CSV: String,
+    FOLDER: String,
+    GIF: String,
+    GOOGLE_APPS_SCRIPT: String,
+    GOOGLE_DOCS: String,
+    GOOGLE_DRAWINGS: String,
+    GOOGLE_FORMS: String,
+    GOOGLE_SHEETS: String,
+    GOOGLE_SITES: String,
+    GOOGLE_SLIDES: String,
+    HTML: String,
+    JAVASCRIPT: String,
+    JPEG: String,
+    MICROSOFT_EXCEL: String,
+    MICROSOFT_EXCEL_LEGACY: String,
+    MICROSOFT_POWERPOINT: String,
+    MICROSOFT_POWERPOINT_LEGACY: String,
+    MICROSOFT_WORD: String,
+    MICROSOFT_WORD_LEGACY: String,
+    OPENDOCUMENT_GRAPHICS: String,
+    OPENDOCUMENT_PRESENTATION: String,
+    OPENDOCUMENT_SPREADSHEET: String,
+    OPENDOCUMENT_TEXT: String,
+    PDF: String,
+    PLAIN_TEXT: String,
+    PNG: String,
+    RTF: String,
+    SHORTCUT: String,
+    SVG: String,
+    ZIP: String
+  ): MimeType = {
+    val __obj = js.Dynamic.literal(BMP = BMP.asInstanceOf[js.Any], CSS = CSS.asInstanceOf[js.Any], CSV = CSV.asInstanceOf[js.Any], FOLDER = FOLDER.asInstanceOf[js.Any], GIF = GIF.asInstanceOf[js.Any], GOOGLE_APPS_SCRIPT = GOOGLE_APPS_SCRIPT.asInstanceOf[js.Any], GOOGLE_DOCS = GOOGLE_DOCS.asInstanceOf[js.Any], GOOGLE_DRAWINGS = GOOGLE_DRAWINGS.asInstanceOf[js.Any], GOOGLE_FORMS = GOOGLE_FORMS.asInstanceOf[js.Any], GOOGLE_SHEETS = GOOGLE_SHEETS.asInstanceOf[js.Any], GOOGLE_SITES = GOOGLE_SITES.asInstanceOf[js.Any], GOOGLE_SLIDES = GOOGLE_SLIDES.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], JAVASCRIPT = JAVASCRIPT.asInstanceOf[js.Any], JPEG = JPEG.asInstanceOf[js.Any], MICROSOFT_EXCEL = MICROSOFT_EXCEL.asInstanceOf[js.Any], MICROSOFT_EXCEL_LEGACY = MICROSOFT_EXCEL_LEGACY.asInstanceOf[js.Any], MICROSOFT_POWERPOINT = MICROSOFT_POWERPOINT.asInstanceOf[js.Any], MICROSOFT_POWERPOINT_LEGACY = MICROSOFT_POWERPOINT_LEGACY.asInstanceOf[js.Any], MICROSOFT_WORD = MICROSOFT_WORD.asInstanceOf[js.Any], MICROSOFT_WORD_LEGACY = MICROSOFT_WORD_LEGACY.asInstanceOf[js.Any], OPENDOCUMENT_GRAPHICS = OPENDOCUMENT_GRAPHICS.asInstanceOf[js.Any], OPENDOCUMENT_PRESENTATION = OPENDOCUMENT_PRESENTATION.asInstanceOf[js.Any], OPENDOCUMENT_SPREADSHEET = OPENDOCUMENT_SPREADSHEET.asInstanceOf[js.Any], OPENDOCUMENT_TEXT = OPENDOCUMENT_TEXT.asInstanceOf[js.Any], PDF = PDF.asInstanceOf[js.Any], PLAIN_TEXT = PLAIN_TEXT.asInstanceOf[js.Any], PNG = PNG.asInstanceOf[js.Any], RTF = RTF.asInstanceOf[js.Any], SHORTCUT = SHORTCUT.asInstanceOf[js.Any], SVG = SVG.asInstanceOf[js.Any], ZIP = ZIP.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MimeType]
+  }
+  
+  extension [Self <: MimeType](x: Self) {
+    
+    inline def setBMP(value: String): Self = StObject.set(x, "BMP", value.asInstanceOf[js.Any])
+    
+    inline def setCSS(value: String): Self = StObject.set(x, "CSS", value.asInstanceOf[js.Any])
+    
+    inline def setCSV(value: String): Self = StObject.set(x, "CSV", value.asInstanceOf[js.Any])
+    
+    inline def setFOLDER(value: String): Self = StObject.set(x, "FOLDER", value.asInstanceOf[js.Any])
+    
+    inline def setGIF(value: String): Self = StObject.set(x, "GIF", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_APPS_SCRIPT(value: String): Self = StObject.set(x, "GOOGLE_APPS_SCRIPT", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_DOCS(value: String): Self = StObject.set(x, "GOOGLE_DOCS", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_DRAWINGS(value: String): Self = StObject.set(x, "GOOGLE_DRAWINGS", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_FORMS(value: String): Self = StObject.set(x, "GOOGLE_FORMS", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_SHEETS(value: String): Self = StObject.set(x, "GOOGLE_SHEETS", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_SITES(value: String): Self = StObject.set(x, "GOOGLE_SITES", value.asInstanceOf[js.Any])
+    
+    inline def setGOOGLE_SLIDES(value: String): Self = StObject.set(x, "GOOGLE_SLIDES", value.asInstanceOf[js.Any])
+    
+    inline def setHTML(value: String): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
+    
+    inline def setJAVASCRIPT(value: String): Self = StObject.set(x, "JAVASCRIPT", value.asInstanceOf[js.Any])
+    
+    inline def setJPEG(value: String): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_EXCEL(value: String): Self = StObject.set(x, "MICROSOFT_EXCEL", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_EXCEL_LEGACY(value: String): Self = StObject.set(x, "MICROSOFT_EXCEL_LEGACY", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_POWERPOINT(value: String): Self = StObject.set(x, "MICROSOFT_POWERPOINT", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_POWERPOINT_LEGACY(value: String): Self = StObject.set(x, "MICROSOFT_POWERPOINT_LEGACY", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_WORD(value: String): Self = StObject.set(x, "MICROSOFT_WORD", value.asInstanceOf[js.Any])
+    
+    inline def setMICROSOFT_WORD_LEGACY(value: String): Self = StObject.set(x, "MICROSOFT_WORD_LEGACY", value.asInstanceOf[js.Any])
+    
+    inline def setOPENDOCUMENT_GRAPHICS(value: String): Self = StObject.set(x, "OPENDOCUMENT_GRAPHICS", value.asInstanceOf[js.Any])
+    
+    inline def setOPENDOCUMENT_PRESENTATION(value: String): Self = StObject.set(x, "OPENDOCUMENT_PRESENTATION", value.asInstanceOf[js.Any])
+    
+    inline def setOPENDOCUMENT_SPREADSHEET(value: String): Self = StObject.set(x, "OPENDOCUMENT_SPREADSHEET", value.asInstanceOf[js.Any])
+    
+    inline def setOPENDOCUMENT_TEXT(value: String): Self = StObject.set(x, "OPENDOCUMENT_TEXT", value.asInstanceOf[js.Any])
+    
+    inline def setPDF(value: String): Self = StObject.set(x, "PDF", value.asInstanceOf[js.Any])
+    
+    inline def setPLAIN_TEXT(value: String): Self = StObject.set(x, "PLAIN_TEXT", value.asInstanceOf[js.Any])
+    
+    inline def setPNG(value: String): Self = StObject.set(x, "PNG", value.asInstanceOf[js.Any])
+    
+    inline def setRTF(value: String): Self = StObject.set(x, "RTF", value.asInstanceOf[js.Any])
+    
+    inline def setSHORTCUT(value: String): Self = StObject.set(x, "SHORTCUT", value.asInstanceOf[js.Any])
+    
+    inline def setSVG(value: String): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
+    
+    inline def setZIP(value: String): Self = StObject.set(x, "ZIP", value.asInstanceOf[js.Any])
+  }
+}

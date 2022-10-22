@@ -1,36 +1,54 @@
 package typingsJapgolly.natsHemera.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrioConfig extends js.Object {
-  var exclude: js.UndefOr[js.Any] = js.undefined
-  var include: js.UndefOr[js.Any] = js.undefined
+trait ErrioConfig extends StObject {
+  
+  var exclude: js.UndefOr[Any] = js.undefined
+  
+  var include: js.UndefOr[Any] = js.undefined
+  
   var inherited: js.UndefOr[Boolean] = js.undefined
+  
   var `private`: js.UndefOr[Boolean] = js.undefined
+  
   var recursive: js.UndefOr[Boolean] = js.undefined
+  
   var stack: js.UndefOr[Boolean] = js.undefined
 }
-
 object ErrioConfig {
-  @scala.inline
-  def apply(
-    exclude: js.Any = null,
-    include: js.Any = null,
-    inherited: js.UndefOr[Boolean] = js.undefined,
-    `private`: js.UndefOr[Boolean] = js.undefined,
-    recursive: js.UndefOr[Boolean] = js.undefined,
-    stack: js.UndefOr[Boolean] = js.undefined
-  ): ErrioConfig = {
+  
+  inline def apply(): ErrioConfig = {
     val __obj = js.Dynamic.literal()
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherited)) __obj.updateDynamic("inherited")(inherited.asInstanceOf[js.Any])
-    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrioConfig]
   }
+  
+  extension [Self <: ErrioConfig](x: Self) {
+    
+    inline def setExclude(value: Any): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+    
+    inline def setInclude(value: Any): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    
+    inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    
+    inline def setInheritedUndefined: Self = StObject.set(x, "inherited", js.undefined)
+    
+    inline def setPrivate(value: Boolean): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    
+    inline def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+  }
 }
-

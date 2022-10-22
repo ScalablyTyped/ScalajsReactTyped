@@ -1,20 +1,20 @@
 package typingsJapgolly.samchon.templatesMod
 
-import typingsJapgolly.samchon.distributedSystemArrayMediatorMod.DistributedSystemArrayMediator
-import typingsJapgolly.samchon.distributedSystemMod.DistributedSystem
-import typingsJapgolly.samchon.iclientdriverMod.IClientDriver
-import typingsJapgolly.samchon.invokeMod.Invoke
-import typingsJapgolly.samchon.iparallelserverMod.IParallelServer
+import typingsJapgolly.samchon.protocolCommunicatorIclientdriverMod.IClientDriver
+import typingsJapgolly.samchon.protocolInvokeInvokeMod.Invoke
+import typingsJapgolly.samchon.templatesDistributedDistributedSystemArrayMediatorMod.DistributedSystemArrayMediator
+import typingsJapgolly.samchon.templatesDistributedDistributedSystemMod.DistributedSystem
+import typingsJapgolly.samchon.templatesParallelInterfacesIparallelserverMod.IParallelServer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("samchon/templates", "parallel")
-@js.native
-object parallel extends js.Object {
+object parallel {
+  
+  @JSImport("samchon/templates", "parallel.MediatorClient")
   @js.native
-  class MediatorClient protected ()
-    extends typingsJapgolly.samchon.parallelMod.MediatorClient {
+  open class MediatorClient protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorClient {
     /**
       * Initializer Constructor.
       *
@@ -31,19 +31,16 @@ object parallel extends js.Object {
       * @param port Port number to connect.
       */
     def this(
-      systemArray: typingsJapgolly.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.parallelSystemMod.ParallelSystem],
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
       ip: String,
       port: Double
     ) = this()
   }
   
+  @JSImport("samchon/templates", "parallel.MediatorDedicatedWorkerServer")
   @js.native
-  class MediatorDedicatedWorkerServer ()
-    extends typingsJapgolly.samchon.mediatorServerMod.MediatorDedicatedWorkerServer
-  
-  @js.native
-  class MediatorServer protected ()
-    extends typingsJapgolly.samchon.parallelMod.MediatorServer {
+  open class MediatorDedicatedWorkerServer protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorDedicatedWorkerServer {
     /**
       * Initializer Constructor.
       *
@@ -58,22 +55,87 @@ object parallel extends js.Object {
       * @param port Port number of server to open.
       */
     def this(
-      systemArray: typingsJapgolly.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.parallelSystemMod.ParallelSystem],
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
       port: Double
     ) = this()
   }
   
+  @JSImport("samchon/templates", "parallel.MediatorServer")
   @js.native
-  class MediatorSharedWorkerClient ()
-    extends typingsJapgolly.samchon.mediatorClientMod.MediatorSharedWorkerClient
+  open class MediatorServer protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
+      port: Double
+    ) = this()
+  }
   
+  @JSImport("samchon/templates", "parallel.MediatorSharedWorkerClient")
   @js.native
-  class MediatorSharedWorkerServer ()
-    extends typingsJapgolly.samchon.mediatorServerMod.MediatorSharedWorkerServer
+  open class MediatorSharedWorkerClient protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorSharedWorkerClient {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], ip: String, port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
+      ip: String,
+      port: Double
+    ) = this()
+  }
   
+  @JSImport("samchon/templates", "parallel.MediatorSharedWorkerServer")
   @js.native
-  abstract class MediatorSystem protected ()
-    extends typingsJapgolly.samchon.parallelMod.MediatorSystem {
+  open class MediatorSharedWorkerServer protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorSharedWorkerServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
+      port: Double
+    ) = this()
+  }
+  
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.MediatorSystem")
+  @js.native
+  open class MediatorSystem protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorSystem {
     /**
       * Construct from parent {@link DistributedSystemArrayMediator} object.
       *
@@ -85,23 +147,65 @@ object parallel extends js.Object {
       *
       * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.parallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.parallelSystemMod.ParallelSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem]) = this()
   }
   
+  @JSImport("samchon/templates", "parallel.MediatorWebClient")
   @js.native
-  class MediatorWebClient ()
-    extends typingsJapgolly.samchon.mediatorClientMod.MediatorWebClient
+  open class MediatorWebClient protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorWebClient {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], ip: String, port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param ip IP address to connect.
+      * @param port Port number to connect.
+      */
+    def this(
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
+      ip: String,
+      port: Double
+    ) = this()
+  }
   
+  @JSImport("samchon/templates", "parallel.MediatorWebServer")
   @js.native
-  class MediatorWebServer ()
-    extends typingsJapgolly.samchon.mediatorServerMod.MediatorWebServer
+  open class MediatorWebServer protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.MediatorWebServer {
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link DistributedSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(systemArray: DistributedSystemArrayMediator[DistributedSystem], port: Double) = this()
+    /**
+      * Initializer Constructor.
+      *
+      * @param systemArray The parent {@link ParallelSystemArrayMediator} object.
+      * @param port Port number of server to open.
+      */
+    def this(
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMediatorMod.ParallelSystemArrayMediator[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
+      port: Double
+    ) = this()
+  }
   
+  @JSImport("samchon/templates", "parallel.PRInvokeHistory")
   @js.native
   /**
     * Default Constructor.
     */
-  class PRInvokeHistory ()
-    extends typingsJapgolly.samchon.parallelMod.PRInvokeHistory {
+  open class PRInvokeHistory ()
+    extends typingsJapgolly.samchon.templatesParallelMod.PRInvokeHistory {
     /**
       * Construct from an {@link Invoke} message.
       *
@@ -110,68 +214,76 @@ object parallel extends js.Object {
     def this(invoke: Invoke) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelClientArray[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelClientArray[System]
+  open class ParallelClientArray[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelClientArray[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelClientArrayMediator[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelClientArrayMediator[System]
+  open class ParallelClientArrayMediator[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelClientArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelServer")
   @js.native
-  abstract class ParallelServer protected ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelServer {
+  open class ParallelServer protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelServer {
     /**
       * Construct from parent {@link ParallelSystemArray}.
       *
       * @param systemArray The parent {@link ParallelSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.parallelSystemArrayMod.ParallelSystemArray[IParallelServer]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMod.ParallelSystemArray[IParallelServer]) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelServerArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelServerArray[System /* <: IParallelServer */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelServerArray[System]
+  open class ParallelServerArray[System /* <: IParallelServer */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelServerArray[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelServerArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelServerArrayMediator[System /* <: IParallelServer */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelServerArrayMediator[System]
+  open class ParallelServerArrayMediator[System /* <: IParallelServer */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelServerArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelServerClientArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelServerClientArray[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelServerClientArray[System]
+  open class ParallelServerClientArray[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelServerClientArray[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelServerClientArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelServerClientArrayMediator[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelServerClientArrayMediator[System]
+  open class ParallelServerClientArrayMediator[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelServerClientArrayMediator[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelSystem")
   @js.native
-  abstract class ParallelSystem protected ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelSystem {
+  open class ParallelSystem protected ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelSystem {
     /**
       * Construct from parent {@link ParallelSystemArray}.
       *
       * @param systemArray The parent {@link ParallelSystemArray} object.
       */
-    def this(systemArray: typingsJapgolly.samchon.parallelSystemArrayMod.ParallelSystemArray[typingsJapgolly.samchon.parallelSystemMod.ParallelSystem]) = this()
+    def this(systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMod.ParallelSystemArray[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem]) = this()
     /**
       * Construct from parent {@link ParallelSystemArray} and communicator.
       *
@@ -179,24 +291,24 @@ object parallel extends js.Object {
       * @param communicator A communicator communicates with remote, the external system.
       */
     def this(
-      systemArray: typingsJapgolly.samchon.parallelSystemArrayMod.ParallelSystemArray[typingsJapgolly.samchon.parallelSystemMod.ParallelSystem],
+      systemArray: typingsJapgolly.samchon.templatesParallelParallelSystemArrayMod.ParallelSystemArray[typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem],
       communicator: IClientDriver
     ) = this()
   }
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelSystemArray")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelSystemArray[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelSystemArray[System]
+  open class ParallelSystemArray[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelSystemArray[System]
   
+  /* note: abstract class */ @JSImport("samchon/templates", "parallel.ParallelSystemArrayMediator")
   @js.native
   /**
     * Default Constructor.
     */
-  abstract class ParallelSystemArrayMediator[System /* <: typingsJapgolly.samchon.parallelSystemMod.ParallelSystem */] ()
-    extends typingsJapgolly.samchon.parallelMod.ParallelSystemArrayMediator[System]
-  
+  open class ParallelSystemArrayMediator[System /* <: typingsJapgolly.samchon.templatesParallelParallelSystemMod.ParallelSystem */] ()
+    extends typingsJapgolly.samchon.templatesParallelMod.ParallelSystemArrayMediator[System]
 }
-

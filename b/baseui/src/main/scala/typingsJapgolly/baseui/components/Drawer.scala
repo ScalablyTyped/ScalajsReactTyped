@@ -1,74 +1,68 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.baseui.AnonCloseSource
-import typingsJapgolly.baseui.baseuiStrings.auto
-import typingsJapgolly.baseui.baseuiStrings.bottom
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.full
-import typingsJapgolly.baseui.baseuiStrings.left
-import typingsJapgolly.baseui.baseuiStrings.right
-import typingsJapgolly.baseui.baseuiStrings.top
-import typingsJapgolly.baseui.drawerMod.DrawerOverrides
-import typingsJapgolly.baseui.drawerMod.DrawerProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.Event
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.CloseSource
+import typingsJapgolly.baseui.drawerTypesMod.AnchorProp
+import typingsJapgolly.baseui.drawerTypesMod.DrawerOverrides
+import typingsJapgolly.baseui.drawerTypesMod.DrawerProps
+import typingsJapgolly.baseui.drawerTypesMod.SizeProp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Drawer {
-  def apply(
-    anchor: left | right | top | bottom | String = null,
-    animate: js.UndefOr[Boolean] = js.undefined,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    closeable: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    mountNode: HTMLElement = null,
-    onBackdropClick: /* event */ ReactMouseEventFrom[HTMLElement] => CallbackTo[js.Any] = null,
-    onClose: /* args */ AnonCloseSource => CallbackTo[js.Any] = null,
-    onEscapeKeyDown: /* event */ ReactKeyboardEventFrom[HTMLElement] => CallbackTo[js.Any] = null,
-    overrides: DrawerOverrides = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    showBackdrop: js.UndefOr[Boolean] = js.undefined,
-    size: default_ | full | auto | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[DrawerProps, typingsJapgolly.baseui.drawerMod.Drawer, Unit, DrawerProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeable)) __obj.updateDynamic("closeable")(closeable.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onBackdropClick(t0).runNow()))
-    if (onClose != null) __obj.updateDynamic("onClose")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonCloseSource) => onClose(t0).runNow()))
-    if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(js.Any.fromFunction1((t0: /* event */ japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLElement]) => onEscapeKeyDown(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(showBackdrop)) __obj.updateDynamic("showBackdrop")(showBackdrop.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.drawerMod.DrawerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.drawerMod.Drawer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.drawerMod.DrawerProps])(children: _*)
+  inline def apply(
+    anchor: AnchorProp,
+    animate: Boolean,
+    autoFocus: Boolean,
+    closeable: Boolean,
+    isOpen: Boolean,
+    overrides: DrawerOverrides,
+    showBackdrop: Boolean,
+    size: SizeProp
+  ): Builder = {
+    val __props = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], animate = animate.asInstanceOf[js.Any], autoFocus = autoFocus.asInstanceOf[js.Any], closeable = closeable.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], showBackdrop = showBackdrop.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DrawerProps]))
   }
+  
   @JSImport("baseui/drawer", "Drawer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.drawerMod.Drawer] {
+    
+    inline def children(value: Node | js.Function0[Node]): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenCallbackTo(value: CallbackTo[Node]): this.type = set("children", value.toJsFn)
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def mountNode(value: HTMLElement): this.type = set("mountNode", value.asInstanceOf[js.Any])
+    
+    inline def onBackdropClick(value: /* e */ Event => Any): this.type = set("onBackdropClick", js.Any.fromFunction1(value))
+    
+    inline def onClose(value: /* a */ CloseSource => Any): this.type = set("onClose", js.Any.fromFunction1(value))
+    
+    inline def onEscapeKeyDown(value: /* e */ Event => Any): this.type = set("onEscapeKeyDown", js.Any.fromFunction1(value))
+    
+    inline def renderAll(value: Boolean): this.type = set("renderAll", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DrawerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,14 +1,13 @@
 package typingsJapgolly.videoJs.mod.videojs
 
-import org.scalajs.dom.raw.HTMLVideoElement
+import org.scalajs.dom.HTMLVideoElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "videojs.Hook")
-@js.native
-object Hook extends js.Object {
-  type BeforeSetup = js.Function2[/* element */ HTMLVideoElement, /* options */ js.Any, js.Any]
+object Hook {
+  
+  type BeforeSetup = js.Function2[/* element */ HTMLVideoElement, /* options */ Any, Any]
+  
   type Setup = js.Function1[/* player */ Player, Unit]
 }
-

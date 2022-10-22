@@ -1,55 +1,73 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.alternate
 import typingsJapgolly.antd.antdStrings.left
 import typingsJapgolly.antd.antdStrings.right
-import typingsJapgolly.antd.timelineMod.default
-import typingsJapgolly.antd.timelineTimelineMod.TimelineProps
+import typingsJapgolly.antd.libTimelineTimelineItemMod.TimelineItemProps
+import typingsJapgolly.antd.libTimelineTimelineMod.TimelineProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Timeline {
-  def apply(
-    className: String = null,
-    mode: left | alternate | right = null,
-    pending: VdomNode = null,
-    pendingDot: VdomNode = null,
-    prefixCls: String = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TimelineProps, default, Unit, TimelineProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (pending != null) __obj.updateDynamic("pending")(pending.rawNode.asInstanceOf[js.Any])
-    if (pendingDot != null) __obj.updateDynamic("pendingDot")(pendingDot.rawNode.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.timelineTimelineMod.TimelineProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.timelineMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.timelineTimelineMod.TimelineProps])(children: _*)
+  object Item {
+    
+    @JSImport("antd", "Timeline.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Item.type): SharedBuilder_TimelineItemProps_1840960613 = new SharedBuilder_TimelineItemProps_1840960613(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: TimelineItemProps): SharedBuilder_TimelineItemProps_1840960613 = new SharedBuilder_TimelineItemProps_1840960613(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("antd/lib/timeline", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("antd", "Timeline")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: left | alternate | right): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def pending(value: VdomNode): this.type = set("pending", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def pendingDot(value: VdomNode): this.type = set("pendingDot", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def pendingDotNull: this.type = set("pendingDot", null)
+    
+    inline def pendingDotVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("pendingDot", js.Array(value*))
+    
+    inline def pendingDotVdomElement(value: VdomElement): this.type = set("pendingDot", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def pendingNull: this.type = set("pending", null)
+    
+    inline def pendingVarargs(
+      value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*
+    ): this.type = set("pending", js.Array(value*))
+    
+    inline def pendingVdomElement(value: VdomElement): this.type = set("pending", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Timeline.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TimelineProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

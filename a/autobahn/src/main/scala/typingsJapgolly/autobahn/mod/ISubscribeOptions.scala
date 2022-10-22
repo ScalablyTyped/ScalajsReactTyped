@@ -1,21 +1,30 @@
 package typingsJapgolly.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISubscribeOptions extends js.Object {
+trait ISubscribeOptions extends StObject {
+  
   var get_retained: js.UndefOr[Boolean] = js.undefined
+  
   var `match`: js.UndefOr[String] = js.undefined
 }
-
 object ISubscribeOptions {
-  @scala.inline
-  def apply(get_retained: js.UndefOr[Boolean] = js.undefined, `match`: String = null): ISubscribeOptions = {
+  
+  inline def apply(): ISubscribeOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(get_retained)) __obj.updateDynamic("get_retained")(get_retained.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscribeOptions]
   }
+  
+  extension [Self <: ISubscribeOptions](x: Self) {
+    
+    inline def setGet_retained(value: Boolean): Self = StObject.set(x, "get_retained", value.asInstanceOf[js.Any])
+    
+    inline def setGet_retainedUndefined: Self = StObject.set(x, "get_retained", js.undefined)
+    
+    inline def setMatch(value: String): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+  }
 }
-

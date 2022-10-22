@@ -1,47 +1,14 @@
 package typingsJapgolly.npmEmail
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("npm-email", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function npmEmail(username: string): Promise<string>;
-  // export = npmEmail;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Get the email of an npm user.
-  	@param username - npm username to look up.
-  	@returns The user's email address.
-  	@example
-  	```
-  	import npmEmail = require('npm-email');
-  	(async () => {
-  		console.log(await npmEmail('sindresorhus'));
-  		//=> 'sindresorhus@gmail.com'
-  	})();
-  	```
-  	*/
-  def apply(username: String): js.Promise[String] = js.native
-  /**
-  	Get the email of an npm user.
-  	@param username - npm username to look up.
-  	@returns The user's email address.
-  	@example
-  	```
-  	import npmEmail = require('npm-email');
-  	(async () => {
-  		console.log(await npmEmail('sindresorhus'));
-  		//=> 'sindresorhus@gmail.com'
-  	})();
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function npmEmail(username: string): Promise<string>;
-  // export = npmEmail;
-  def default(username: String): js.Promise[String] = js.native
+object mod {
+  
+  @JSImport("npm-email", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(username: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
 }
-

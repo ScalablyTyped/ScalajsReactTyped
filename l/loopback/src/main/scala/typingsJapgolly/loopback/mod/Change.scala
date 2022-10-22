@@ -1,9 +1,9 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonHashAlgorithm
+import typingsJapgolly.loopback.anon.HashAlgorithm
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Change list entry.
@@ -24,17 +24,66 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Change")
 @js.native
-class Change () extends PersistedModel {
+open class Change protected () extends PersistedModel {
+  def this(data: Any) = this()
+  
   var checkpoint: Double = js.native
+  
+  /**
+    * Does this change conflict with the given change.
+    * @param  {Change} change
+    * @return {boolean
+    */
+  def conflictsWith(change: Change): Unit = js.native
+  
+  /**
+    * Get a change's current revision based on current data.
+    * @callback  {() => void} callback
+    * @param {Error} err
+    * @param {string} rev The current revisio
+    */
+  def currentRevision(callback: js.Function2[/* err */ js.Error, /* rev */ String, Unit]): Unit = js.native
+  
+  /**
+    * Compare two changes.
+    * @param  {Change} change
+    */
+  def equals(change: Change): Unit = js.native
+  
+  /**
+    * Get the `Model` class for `change.modelName`.
+    */
+  def getModelCtor(): Unit = js.native
+  
   /** Hash of the modelName and ID. */
   var id: String = js.native
+  
+  /**
+    * Determine if the change is based on the given change.
+    * @param  {Change} change
+    * @return {boolean
+    */
+  def isBasedOn(change: Change): Unit = js.native
+  
   /** Model ID. */
   var modelId: String = js.native
+  
   /** Model name. */
   var modelName: String = js.native
+  
   var prev: String = js.native
+  
+  /**
+    * Update (or create) the change with the current revision
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {Change} chang
+    */
+  def rectify(callback: js.Function2[/* err */ js.Error, /* change */ this.type, Unit]): Unit = js.native
+  
   /** The current model revision. */
   var rev: String = js.native
+  
   /**
     * settings Extends the `Model.settings` object.
     * settings.hashAlgorithm Algorithm used to create cryptographic hash, used as argument
@@ -43,42 +92,8 @@ class Change () extends PersistedModel {
     * However, if this setting is true, then errors will not throw exceptions.
     */
   @JSName("settings")
-  var settings_Change: AnonHashAlgorithm = js.native
-  /**
-    * Does this change conflict with the given change.
-    * @param  {Change} change
-    * @return {boolean
-    */
-  def conflictsWith(change: Change): Unit = js.native
-  /**
-    * Get a change's current revision based on current data.
-    * @callback  {() => void} callback
-    * @param {Error} err
-    * @param {string} rev The current revisio
-    */
-  def currentRevision(callback: js.Function2[/* err */ js.Error, /* rev */ String, Unit]): Unit = js.native
-  /**
-    * Compare two changes.
-    * @param  {Change} change
-    */
-  def equals(change: Change): Unit = js.native
-  /**
-    * Get the `Model` class for `change.modelName`.
-    */
-  def getModelCtor(): Unit = js.native
-  /**
-    * Determine if the change is based on the given change.
-    * @param  {Change} change
-    * @return {boolean
-    */
-  def isBasedOn(change: Change): Unit = js.native
-  /**
-    * Update (or create) the change with the current revision
-    * @callback {() => void} callback
-    * @param {Error} err
-    * @param {Change} chang
-    */
-  def rectify(callback: js.Function2[/* err */ js.Error, /* change */ this.type, Unit]): Unit = js.native
+  var settings_Change: HashAlgorithm = js.native
+  
   /**
     * Get a change's type. Returns one of
     * - `Change.UPDATE`
@@ -88,17 +103,20 @@ class Change () extends PersistedModel {
     */
   def `type`(): Unit = js.native
 }
-
-/* static members */
-@JSImport("loopback", "Change")
-@js.native
-object Change extends js.Object {
+object Change {
+  
+  @JSImport("loopback", "Change")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Are both changes deletes?
     * @param  {Change} a
     * @param  {Change} b
     */
-  def bothDeleted(a: Change, b: Change): Unit = js.native
+  /* static member */
+  inline def bothDeleted(a: Change, b: Change): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bothDeleted")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Determine the differences for a given model since a given checkpoint.
     *
@@ -138,32 +156,42 @@ object Change extends js.Object {
     * @param {Change} change
     * @end
     */
-  def findOrCreateChange(
+  /* static member */
+  inline def findOrCreateChange(
     modelName: String,
     modelId: String,
-    callback: js.Function2[/* err */ js.Error, /* change */ this.type, Unit]
-  ): Unit = js.native
+    callback: js.Function2[/* err */ js.Error, /* change */ Change, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("findOrCreateChange")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get the checkpoint model.
     */
-  def getCheckpointModel(): Unit = js.native
+  /* static member */
+  inline def getCheckpointModel(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getCheckpointModel")().asInstanceOf[Unit]
+  
   /**
     * Create a hash of the given `string` with the `options.hashAlgorithm`.
     * **Default: `sha1`*
     * @param  {string} str The string to be hashed
     */
-  def hash(str: String): Unit = js.native
+  /* static member */
+  inline def hash(str: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(str.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Get an identifier for a given model
     * @param  {string} modelName
     * @param  {string} modelId
     */
-  def idForModel(modelName: String, modelId: String): Unit = js.native
+  /* static member */
+  inline def idForModel(modelName: String, modelId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("idForModel")(modelName.asInstanceOf[js.Any], modelId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Correct all change list entries.
     * @param {() => void} c
     */
-  def rectifyAll(cb: js.Function0[Unit]): Unit = js.native
+  /* static member */
+  inline def rectifyAll(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rectifyAll")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   /**
     * Track the recent change of the given modelIds
     * @param  {string}   modelName
@@ -172,15 +200,17 @@ object Change extends js.Object {
     * @param {Error} err
     * @param {Array} changes Changes that were tracke
     */
-  def rectifyModelChanges(
+  /* static member */
+  inline def rectifyModelChanges(
     modelName: String,
-    modelIds: js.Array[_],
-    callback: js.Function2[/* err */ js.Error, /* changes */ js.Array[_], Unit]
-  ): Unit = js.native
+    modelIds: js.Array[Any],
+    callback: js.Function2[/* err */ js.Error, /* changes */ js.Array[Any], Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rectifyModelChanges")(modelName.asInstanceOf[js.Any], modelIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Get the revision string for the given object
     * @param  {any} inst The data to get the revision string for
     */
-  def revisionForInst(inst: js.Any): Unit = js.native
+  /* static member */
+  inline def revisionForInst(inst: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revisionForInst")(inst.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

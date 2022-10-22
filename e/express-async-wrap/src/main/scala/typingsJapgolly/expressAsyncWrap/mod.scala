@@ -2,33 +2,29 @@ package typingsJapgolly.expressAsyncWrap
 
 import typingsJapgolly.connect.mod.NextFunction
 import typingsJapgolly.expressServeStaticCore.mod.ErrorRequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
 import typingsJapgolly.expressServeStaticCore.mod.Request
 import typingsJapgolly.expressServeStaticCore.mod.RequestHandler
 import typingsJapgolly.expressServeStaticCore.mod.Response
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-async-wrap", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(
-    handler: js.Function3[
-      /* req */ Request[ParamsDictionary, _, _], 
-      /* res */ Response[_], 
-      /* next */ NextFunction, 
-      js.Promise[Unit]
-    ]
-  ): RequestHandler[ParamsDictionary, _, _] = js.native
-  def default(
+object mod {
+  
+  @JSImport("express-async-wrap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(
+    handler: js.Function3[/* req */ Request, /* res */ Response, /* next */ NextFunction, js.Promise[Unit]]
+  ): RequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[RequestHandler]
+  inline def default(
     handler: js.Function4[
-      /* err */ js.Any, 
-      /* req */ Request[ParamsDictionary, _, _], 
-      /* res */ Response[_], 
+      /* err */ Any, 
+      /* req */ Request, 
+      /* res */ Response, 
       /* next */ NextFunction, 
       js.Promise[Unit]
     ]
-  ): ErrorRequestHandler[ParamsDictionary, _, _] = js.native
+  ): ErrorRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(handler.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler]
 }
-

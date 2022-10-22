@@ -1,63 +1,51 @@
 package typingsJapgolly.reactNativePopupDialog.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.mod.NodeHandle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.GestureResponderEvent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativePopupDialog.mod.AlignTypes
 import typingsJapgolly.reactNativePopupDialog.mod.DialogButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DialogButton {
-  def apply(
-    text: String,
-    activeOpacity: Int | Double = null,
-    align: AlignTypes = null,
-    bordered: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    style: StyleProp[ViewStyle] = null,
-    textStyle: StyleProp[TextStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    DialogButtonProps, 
-    typingsJapgolly.reactNativePopupDialog.mod.DialogButton, 
-    Unit, 
-    DialogButtonProps
-  ] = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
-      if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativePopupDialog.mod.DialogButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativePopupDialog.mod.DialogButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativePopupDialog.mod.DialogButtonProps])(children: _*)
+  inline def apply(text: String): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DialogButtonProps]))
   }
+  
   @JSImport("react-native-popup-dialog", "DialogButton")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativePopupDialog.mod.DialogButton] {
+    
+    inline def activeOpacity(value: Double): this.type = set("activeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def align(value: AlignTypes): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def bordered(value: Boolean): this.type = set("bordered", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def onPress(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def textStyle(value: StyleProp[TextStyle]): this.type = set("textStyle", value.asInstanceOf[js.Any])
+    
+    inline def textStyleNull: this.type = set("textStyle", null)
+  }
+  
+  def withProps(p: DialogButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

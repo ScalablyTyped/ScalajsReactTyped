@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A DataValidationBuilder for a CheckboxValidation.
@@ -23,24 +23,36 @@ import scala.scalajs.js.annotation._
   *       .build();
   *     checkBoxItem.setValidation(checkBoxValidation);
   */
-trait CheckboxValidationBuilder extends js.Object {
+trait CheckboxValidationBuilder extends StObject {
+  
+  def build(): CheckboxValidation
+  
   def requireSelectAtLeast(number: Integer): CheckboxValidationBuilder
+  
   def requireSelectAtMost(number: Integer): CheckboxValidationBuilder
+  
   def requireSelectExactly(number: Integer): CheckboxValidationBuilder
 }
-
 object CheckboxValidationBuilder {
-  @scala.inline
-  def apply(
-    requireSelectAtLeast: Integer => CallbackTo[CheckboxValidationBuilder],
-    requireSelectAtMost: Integer => CallbackTo[CheckboxValidationBuilder],
-    requireSelectExactly: Integer => CallbackTo[CheckboxValidationBuilder]
+  
+  inline def apply(
+    build: CallbackTo[CheckboxValidation],
+    requireSelectAtLeast: Integer => CheckboxValidationBuilder,
+    requireSelectAtMost: Integer => CheckboxValidationBuilder,
+    requireSelectExactly: Integer => CheckboxValidationBuilder
   ): CheckboxValidationBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("requireSelectAtLeast")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectAtLeast(t0).runNow()))
-    __obj.updateDynamic("requireSelectAtMost")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectAtMost(t0).runNow()))
-    __obj.updateDynamic("requireSelectExactly")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => requireSelectExactly(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, requireSelectAtLeast = js.Any.fromFunction1(requireSelectAtLeast), requireSelectAtMost = js.Any.fromFunction1(requireSelectAtMost), requireSelectExactly = js.Any.fromFunction1(requireSelectExactly))
     __obj.asInstanceOf[CheckboxValidationBuilder]
   }
+  
+  extension [Self <: CheckboxValidationBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[CheckboxValidation]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setRequireSelectAtLeast(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtLeast", js.Any.fromFunction1(value))
+    
+    inline def setRequireSelectAtMost(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectAtMost", js.Any.fromFunction1(value))
+    
+    inline def setRequireSelectExactly(value: Integer => CheckboxValidationBuilder): Self = StObject.set(x, "requireSelectExactly", js.Any.fromFunction1(value))
+  }
 }
-

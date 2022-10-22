@@ -1,19 +1,25 @@
 package typingsJapgolly.asn1js.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RawDataParams extends js.Object {
-  var data: js.UndefOr[scala.scalajs.js.typedarray.ArrayBuffer] = js.undefined
+/* Inlined std.Partial<asn1js.asn1js.IRawData> */
+trait RawDataParams extends StObject {
+  
+  var data: js.UndefOr[js.typedarray.ArrayBuffer] = js.undefined
 }
-
 object RawDataParams {
-  @scala.inline
-  def apply(data: scala.scalajs.js.typedarray.ArrayBuffer = null): RawDataParams = {
+  
+  inline def apply(): RawDataParams = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RawDataParams]
   }
+  
+  extension [Self <: RawDataParams](x: Self) {
+    
+    inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+  }
 }
-

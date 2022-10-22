@@ -1,29 +1,40 @@
 package typingsJapgolly.inboxsdk.mod.Lists
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LabelDescriptorBase extends js.Object {
+trait LabelDescriptorBase extends StObject {
+  
   var backgroundColor: js.UndefOr[String] = js.undefined
+  
   var foregroundColor: js.UndefOr[String] = js.undefined
+  
   var iconBackgroundColor: js.UndefOr[String] = js.undefined
+  
   var title: String
 }
-
 object LabelDescriptorBase {
-  @scala.inline
-  def apply(
-    title: String,
-    backgroundColor: String = null,
-    foregroundColor: String = null,
-    iconBackgroundColor: String = null
-  ): LabelDescriptorBase = {
+  
+  inline def apply(title: String): LabelDescriptorBase = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
-    if (iconBackgroundColor != null) __obj.updateDynamic("iconBackgroundColor")(iconBackgroundColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[LabelDescriptorBase]
   }
+  
+  extension [Self <: LabelDescriptorBase](x: Self) {
+    
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setForegroundColor(value: String): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setForegroundColorUndefined: Self = StObject.set(x, "foregroundColor", js.undefined)
+    
+    inline def setIconBackgroundColor(value: String): Self = StObject.set(x, "iconBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setIconBackgroundColorUndefined: Self = StObject.set(x, "iconBackgroundColor", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.googleCloudFirestore.AnonClientemail
+import typingsJapgolly.googleCloudFirestore.anon.Clientemail
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Settings
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   /**
     * The 'client_email' and 'private_key' properties of the service account
     * to use with your Firestore project. Can be omitted in environments that
@@ -15,9 +17,26 @@ trait Settings
     * Default Credentials}. If your credentials are stored in a JSON file, you
     * can specify a `keyFilename` instead.
     */
-  var credentials: js.UndefOr[AnonClientemail] = js.undefined
+  var credentials: js.UndefOr[Clientemail] = js.undefined
+  
+  /**
+    * The database name. If omitted, the default database will be used.
+    *
+    * @internal
+    */
+  var databaseId: js.UndefOr[String] = js.undefined
+  
   /** The hostname to connect to. */
   var host: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether to skip nested properties that are set to `undefined` during
+    * object serialization. If set to `true`, these properties are skipped
+    * and not written to Firestore. If set `false` or omitted, the SDK throws
+    * an exception when it encounters properties of type `undefined`.
+    */
+  var ignoreUndefinedProperties: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Local file containing the Service Account credentials as downloaded from
     * the Google Developers Console. Can  be omitted in environments that
@@ -27,6 +46,7 @@ trait Settings
     * `private_key` of your service account.
     */
   var keyFilename: js.UndefOr[String] = js.undefined
+  
   /**
     * The maximum number of idle GRPC channels to keep. A smaller number of idle
     * channels reduces memory usage but increases request latency for clients
@@ -34,8 +54,20 @@ trait Settings
     * when the client becomes idle. Defaults to 1.
     */
   var maxIdleChannels: js.UndefOr[Double] = js.undefined
+  
   /** The port to connect to. */
   var port: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Use HTTP for requests that can be served over HTTP and JSON. This reduces
+    * the amount of networking code that is loaded to serve requests within
+    * Firestore.
+    *
+    * This setting does not apply to `onSnapshot` APIs as they cannot be served
+    * over native HTTP.
+    */
+  var preferRest: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The project ID from the Google Developer's Console, e.g.
     * 'grape-spaceship-123'. We will also check the environment variable
@@ -44,32 +76,69 @@ trait Settings
     * Default Credentials}
     */
   var projectId: js.UndefOr[String] = js.undefined
+  
   /** Whether to use SSL when connecting. */
   var ssl: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether to use `BigInt` for integer types when deserializing Firestore
+    * Documents. Regardless of magnitude, all integer values are returned as
+    * `BigInt` to match the precision of the Firestore backend. Floating point
+    * numbers continue to use JavaScript's `number` type.
+    */
+  var useBigInt: js.UndefOr[Boolean] = js.undefined
 }
-
 object Settings {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    credentials: AnonClientemail = null,
-    host: String = null,
-    keyFilename: String = null,
-    maxIdleChannels: Int | Double = null,
-    port: Int | Double = null,
-    projectId: String = null,
-    ssl: js.UndefOr[Boolean] = js.undefined
-  ): Settings = {
+  
+  inline def apply(): Settings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (keyFilename != null) __obj.updateDynamic("keyFilename")(keyFilename.asInstanceOf[js.Any])
-    if (maxIdleChannels != null) __obj.updateDynamic("maxIdleChannels")(maxIdleChannels.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
     __obj.asInstanceOf[Settings]
   }
+  
+  extension [Self <: Settings](x: Self) {
+    
+    inline def setCredentials(value: Clientemail): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setIgnoreUndefinedProperties(value: Boolean): Self = StObject.set(x, "ignoreUndefinedProperties", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefinedPropertiesUndefined: Self = StObject.set(x, "ignoreUndefinedProperties", js.undefined)
+    
+    inline def setKeyFilename(value: String): Self = StObject.set(x, "keyFilename", value.asInstanceOf[js.Any])
+    
+    inline def setKeyFilenameUndefined: Self = StObject.set(x, "keyFilename", js.undefined)
+    
+    inline def setMaxIdleChannels(value: Double): Self = StObject.set(x, "maxIdleChannels", value.asInstanceOf[js.Any])
+    
+    inline def setMaxIdleChannelsUndefined: Self = StObject.set(x, "maxIdleChannels", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setPreferRest(value: Boolean): Self = StObject.set(x, "preferRest", value.asInstanceOf[js.Any])
+    
+    inline def setPreferRestUndefined: Self = StObject.set(x, "preferRest", js.undefined)
+    
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    
+    inline def setUseBigInt(value: Boolean): Self = StObject.set(x, "useBigInt", value.asInstanceOf[js.Any])
+    
+    inline def setUseBigIntUndefined: Self = StObject.set(x, "useBigInt", js.undefined)
+  }
 }
-

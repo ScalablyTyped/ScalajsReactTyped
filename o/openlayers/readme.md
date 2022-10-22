@@ -10,15 +10,13 @@ Build tools and sources for developing OpenLayers based mapping applications
 | ------------------ | :-------------: |
 | Full name          | openlayers |
 | Keywords           | map, mapping, ol |
-| # releases         | 2 |
-| # dependents       | 54 |
-| # downloads        | 465930 |
-| # stars            | 15 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 19605.333333333332 |
+| # stars            | 9128.0 |
 
 ## Links
 - [Homepage](https://openlayers.org/)
-- [Bugs](https://github.com/openlayers/openlayers/issues)
-- [Repository](https://github.com/openlayers/openlayers)
 - [Npm](https://www.npmjs.com/package/openlayers)
     
 

@@ -4,21 +4,21 @@
 Typings are for version 4.1
 
 ## Library description:
-small debugging utility
+Lightweight debugging utility for Node.js and the browser
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | debug |
 | Keywords           | debug, log, debugger |
-| # releases         | 12 |
-| # dependents       | 24995 |
-| # downloads        | 2272083451 |
-| # stars            | 700 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 8.15117891E8 |
+| # stars            | 10395.0 |
 
 ## Links
-- [Homepage](https://github.com/visionmedia/debug#readme)
-- [Bugs](https://github.com/visionmedia/debug/issues)
-- [Repository](https://github.com/visionmedia/debug)
+- [Homepage](https://github.com/debug-js/debug#readme)
+- [Bugs](https://github.com/debug-js/debug/issues)
+- [Repository](https://github.com/debug-js/debug)
 - [Npm](https://www.npmjs.com/package/debug)
     
 

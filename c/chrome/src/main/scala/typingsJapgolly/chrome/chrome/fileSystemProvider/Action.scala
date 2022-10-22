@@ -1,22 +1,30 @@
 package typingsJapgolly.chrome.chrome.fileSystemProvider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Action extends js.Object {
+trait Action extends StObject {
+  
   /** The identifier of the action. Any string or CommonActionId for common actions. */
   var id: String
+  
   /** Optional. The title of the action. It may be ignored for common actions.  */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object Action {
-  @scala.inline
-  def apply(id: String, title: String = null): Action = {
+  
+  inline def apply(id: String): Action = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Action]
   }
+  
+  extension [Self <: Action](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

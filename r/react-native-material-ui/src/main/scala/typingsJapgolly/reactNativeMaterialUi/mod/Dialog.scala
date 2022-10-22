@@ -1,29 +1,52 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-material-ui", "Dialog")
 @js.native
-class Dialog ()
-  extends Component[DialogProps, js.Any, js.Any]
-
-@JSImport("react-native-material-ui", "Dialog")
-@js.native
-object Dialog extends js.Object {
-  @js.native
-  class Actions ()
-    extends Component[DialogActionsProps, js.Any, js.Any]
-  
-  @js.native
-  class Content ()
-    extends Component[DialogContentProps, js.Any, js.Any]
-  
-  @js.native
-  class Title ()
-    extends Component[DialogTitleProps, js.Any, js.Any]
-  
+open class Dialog protected () extends Component[DialogProps, Any, Any] {
+  def this(props: DialogProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: DialogProps, context: Any) = this()
 }
-
+object Dialog {
+  
+  @JSImport("react-native-material-ui", "Dialog.Actions")
+  @js.native
+  open class Actions protected () extends Component[DialogActionsProps, Any, Any] {
+    def this(props: DialogActionsProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DialogActionsProps, context: Any) = this()
+  }
+  
+  @JSImport("react-native-material-ui", "Dialog.Content")
+  @js.native
+  open class Content protected () extends Component[DialogContentProps, Any, Any] {
+    def this(props: DialogContentProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DialogContentProps, context: Any) = this()
+  }
+  
+  @JSImport("react-native-material-ui", "Dialog.Title")
+  @js.native
+  open class Title protected () extends Component[DialogTitleProps, Any, Any] {
+    def this(props: DialogTitleProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: DialogTitleProps, context: Any) = this()
+  }
+}

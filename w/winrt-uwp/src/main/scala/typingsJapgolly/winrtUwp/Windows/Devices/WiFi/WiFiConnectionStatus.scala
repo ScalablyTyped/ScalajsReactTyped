@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFi
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiConnectionStatus extends js.Object
-
+sealed trait WiFiConnectionStatus extends StObject
 /** Status of the connection attempt. */
 @JSGlobal("Windows.Devices.WiFi.WiFiConnectionStatus")
 @js.native
-object WiFiConnectionStatus extends js.Object {
+object WiFiConnectionStatus extends StObject {
+  
   /** Connection failed because access to the network has been revoked. */
   @js.native
-  sealed trait accessRevoked extends WiFiConnectionStatus
+  sealed trait accessRevoked
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection failed because an invalid credential was presented. */
   @js.native
-  sealed trait invalidCredential extends WiFiConnectionStatus
+  sealed trait invalidCredential
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection failed because the network is not available. */
   @js.native
-  sealed trait networkNotAvailable extends WiFiConnectionStatus
+  sealed trait networkNotAvailable
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection succeeded. */
   @js.native
-  sealed trait success extends WiFiConnectionStatus
+  sealed trait success
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection failed because the connection attempt timed out. */
   @js.native
-  sealed trait timeout extends WiFiConnectionStatus
+  sealed trait timeout
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection failed for a reason other than those in this list. */
   @js.native
-  sealed trait unspecifiedFailure extends WiFiConnectionStatus
+  sealed trait unspecifiedFailure
+    extends StObject
+       with WiFiConnectionStatus
   
   /** Connection failed because the authentication protocol is not supported. */
   @js.native
-  sealed trait unsupportedAuthenticationProtocol extends WiFiConnectionStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiConnectionStatus with Double] = js.native
-  /* 2 */ @js.native
-  object accessRevoked extends TopLevel[accessRevoked with Double]
-  
-  /* 3 */ @js.native
-  object invalidCredential extends TopLevel[invalidCredential with Double]
-  
-  /* 4 */ @js.native
-  object networkNotAvailable extends TopLevel[networkNotAvailable with Double]
-  
-  /* 1 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 5 */ @js.native
-  object timeout extends TopLevel[timeout with Double]
-  
-  /* 0 */ @js.native
-  object unspecifiedFailure extends TopLevel[unspecifiedFailure with Double]
-  
-  /* 6 */ @js.native
-  object unsupportedAuthenticationProtocol extends TopLevel[unsupportedAuthenticationProtocol with Double]
-  
+  sealed trait unsupportedAuthenticationProtocol
+    extends StObject
+       with WiFiConnectionStatus
 }
-

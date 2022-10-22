@@ -1,30 +1,54 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains relative size settings for floating objects.
   */
-@JSGlobal("TextBoxRelativeSizeSettings")
-@js.native
-class TextBoxRelativeSizeSettings () extends js.Object {
+trait TextBoxRelativeSizeSettings extends StObject {
+  
   /**
     * Gets or sets the percentage specifying a floating object's height relative to the element defined by the TextBoxRelativeSizeSettings.relativeHeightType property.
     */
-  var relativeHeight: Double = js.native
+  var relativeHeight: Double
+  
   /**
     * Gets or sets a value specifying to what element the floating object height is relative.
     */
-  var relativeHeightType: FloatingObjectRelativeHeightType = js.native
+  var relativeHeightType: FloatingObjectRelativeHeightType
+  
   /**
     * Gets or sets the percentage specifying a floating object's width relative to the element defined by the TextBoxRelativeSizeSettings.relativeWidthType property.
     */
-  var relativeWidth: Double = js.native
+  var relativeWidth: Double
+  
   /**
     * Gets or sets a value specifying to what element the floating object width is relative.
     */
-  var relativeWidthType: FloatingObjectRelativeWidthType = js.native
+  var relativeWidthType: FloatingObjectRelativeWidthType
 }
-
+object TextBoxRelativeSizeSettings {
+  
+  inline def apply(
+    relativeHeight: Double,
+    relativeHeightType: FloatingObjectRelativeHeightType,
+    relativeWidth: Double,
+    relativeWidthType: FloatingObjectRelativeWidthType
+  ): TextBoxRelativeSizeSettings = {
+    val __obj = js.Dynamic.literal(relativeHeight = relativeHeight.asInstanceOf[js.Any], relativeHeightType = relativeHeightType.asInstanceOf[js.Any], relativeWidth = relativeWidth.asInstanceOf[js.Any], relativeWidthType = relativeWidthType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextBoxRelativeSizeSettings]
+  }
+  
+  extension [Self <: TextBoxRelativeSizeSettings](x: Self) {
+    
+    inline def setRelativeHeight(value: Double): Self = StObject.set(x, "relativeHeight", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeHeightType(value: FloatingObjectRelativeHeightType): Self = StObject.set(x, "relativeHeightType", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeWidth(value: Double): Self = StObject.set(x, "relativeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setRelativeWidthType(value: FloatingObjectRelativeWidthType): Self = StObject.set(x, "relativeWidthType", value.asInstanceOf[js.Any])
+  }
+}

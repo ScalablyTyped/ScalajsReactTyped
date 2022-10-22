@@ -1,959 +1,1508 @@
 package typingsJapgolly.ionicCore
 
-import typingsJapgolly.ionicCore.animationInterfaceMod.AnimationDirection
-import typingsJapgolly.ionicCore.animationInterfaceMod.AnimationFill
-import typingsJapgolly.ionicCore.animationInterfaceMod.AnimationPlayTo
-import typingsJapgolly.ionicCore.interfaceMod.RouterDirection
+import typingsJapgolly.ionicCore.distTypesComponentsDatetimeDatetimeInterfaceMod.DatetimePresentation
+import typingsJapgolly.ionicCore.distTypesComponentsModalModalInterfaceMod.ModalHandleBehavior
+import typingsJapgolly.ionicCore.distTypesComponentsNavNavInterfaceMod.NavDirection
+import typingsJapgolly.ionicCore.distTypesComponentsPopoverPopoverInterfaceMod.PopoverSize
+import typingsJapgolly.ionicCore.distTypesComponentsPopoverPopoverInterfaceMod.PositionAlign
+import typingsJapgolly.ionicCore.distTypesComponentsPopoverPopoverInterfaceMod.PositionReference
+import typingsJapgolly.ionicCore.distTypesComponentsPopoverPopoverInterfaceMod.PositionSide
+import typingsJapgolly.ionicCore.distTypesComponentsPopoverPopoverInterfaceMod.TriggerAction
+import typingsJapgolly.ionicCore.distTypesComponentsRangeRangeInterfaceMod._KnobName
+import typingsJapgolly.ionicCore.distTypesComponentsRefresherRefresherDotutilsMod.RefresherAnimationType
+import typingsJapgolly.ionicCore.distTypesComponentsRouterUtilsInterfaceMod.RouterDirection
+import typingsJapgolly.ionicCore.distTypesComponentsSegmentButtonSegmentInterfaceMod.SegmentButtonLayout
+import typingsJapgolly.ionicCore.distTypesComponentsSelectSelectInterfaceMod.SelectInterface
+import typingsJapgolly.ionicCore.distTypesComponentsSpinnerSpinnerConfigsMod.SpinnerTypes
+import typingsJapgolly.ionicCore.distTypesComponentsTabBarTabBarInterfaceMod.TabButtonLayout
+import typingsJapgolly.ionicCore.distTypesComponentsVirtualScrollVirtualScrollInterfaceMod.CellType
+import typingsJapgolly.ionicCore.distTypesStencilPublicRuntimeMod.ListenTargetOptions
+import typingsJapgolly.ionicCore.distTypesUtilsAnimationAnimationInterfaceMod.AnimationDirection
+import typingsJapgolly.ionicCore.distTypesUtilsAnimationAnimationInterfaceMod.AnimationFill
+import typingsJapgolly.ionicCore.distTypesUtilsAnimationAnimationInterfaceMod.AnimationPlayTo
+import typingsJapgolly.ionicCore.distTypesUtilsPlatformMod.Platforms
+import typingsJapgolly.ionicCore.distTypesUtilsTestPlaywrightPlaywrightDeclarationsMod.BrowserName
+import typingsJapgolly.ionicCore.mod.AutocompleteTypes
 import typingsJapgolly.ionicCore.mod.Mode
 import typingsJapgolly.ionicCore.mod.PredefinedColors
 import typingsJapgolly.ionicCore.mod.Side
 import typingsJapgolly.ionicCore.mod.TextFieldTypes
-import typingsJapgolly.ionicCore.navInterfaceMod.NavDirection
-import typingsJapgolly.ionicCore.rangeInterfaceMod._KnobName
-import typingsJapgolly.ionicCore.segmentSegmentInterfaceMod.SegmentButtonLayout
-import typingsJapgolly.ionicCore.selectInterfaceMod.SelectInterface
-import typingsJapgolly.ionicCore.tabBarInterfaceMod.TabButtonLayout
-import typingsJapgolly.ionicCore.virtualScrollInterfaceMod.CellType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicCoreStrings {
-  @js.native
-  sealed trait A extends _KnobName
   
   @js.native
-  sealed trait B extends _KnobName
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait _forceStatusbarPadding extends js.Object
+  sealed trait A
+    extends StObject
+       with _KnobName
+  inline def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait _testing extends js.Object
+  sealed trait B
+    extends StObject
+       with _KnobName
+  inline def B: B = "B".asInstanceOf[B]
   
   @js.native
-  sealed trait _zoneGate extends js.Object
+  sealed trait _ael extends StObject
+  inline def _ael: _ael = "_ael".asInstanceOf[_ael]
   
   @js.native
-  sealed trait `action-sheet` extends SelectInterface
+  sealed trait _ce extends StObject
+  inline def _ce: _ce = "_ce".asInstanceOf[_ce]
   
   @js.native
-  sealed trait actionSheetEnter extends js.Object
+  sealed trait _forceStatusbarPadding extends StObject
+  inline def _forceStatusbarPadding: _forceStatusbarPadding = "_forceStatusbarPadding".asInstanceOf[_forceStatusbarPadding]
   
   @js.native
-  sealed trait actionSheetLeave extends js.Object
+  sealed trait _rel extends StObject
+  inline def _rel: _rel = "_rel".asInstanceOf[_rel]
   
   @js.native
-  sealed trait `after-edge` extends js.Object
+  sealed trait _testing extends StObject
+  inline def _testing: _testing = "_testing".asInstanceOf[_testing]
   
   @js.native
-  sealed trait alert extends SelectInterface
+  sealed trait _zoneGate extends StObject
+  inline def _zoneGate: _zoneGate = "_zoneGate".asInstanceOf[_zoneGate]
   
   @js.native
-  sealed trait alertEnter extends js.Object
+  sealed trait `action-sheet`
+    extends StObject
+       with SelectInterface
+  inline def `action-sheet`: `action-sheet` = "action-sheet".asInstanceOf[`action-sheet`]
   
   @js.native
-  sealed trait alertLeave extends js.Object
+  sealed trait actionSheetEnter extends StObject
+  inline def actionSheetEnter: actionSheetEnter = "actionSheetEnter".asInstanceOf[actionSheetEnter]
   
   @js.native
-  sealed trait alphabetic extends js.Object
+  sealed trait actionSheetLeave extends StObject
+  inline def actionSheetLeave: actionSheetLeave = "actionSheetLeave".asInstanceOf[actionSheetLeave]
   
   @js.native
-  sealed trait alternate extends AnimationDirection
+  sealed trait `additional-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `additional-name`: `additional-name` = "additional-name".asInstanceOf[`additional-name`]
   
   @js.native
-  sealed trait `alternate-reverse` extends AnimationDirection
+  sealed trait `address-level1`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-level1`: `address-level1` = "address-level1".asInstanceOf[`address-level1`]
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait `address-level2`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-level2`: `address-level2` = "address-level2".asInstanceOf[`address-level2`]
   
   @js.native
-  sealed trait animated extends js.Object
+  sealed trait `address-level3`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-level3`: `address-level3` = "address-level3".asInstanceOf[`address-level3`]
   
   @js.native
-  sealed trait async extends js.Object
+  sealed trait `address-level4`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-level4`: `address-level4` = "address-level4".asInstanceOf[`address-level4`]
   
   @js.native
-  sealed trait auto extends AnimationFill
+  sealed trait `address-line1`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-line1`: `address-line1` = "address-line1".asInstanceOf[`address-line1`]
+  
+  @js.native
+  sealed trait `address-line2`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-line2`: `address-line2` = "address-line2".asInstanceOf[`address-line2`]
+  
+  @js.native
+  sealed trait `address-line3`
+    extends StObject
+       with AutocompleteTypes
+  inline def `address-line3`: `address-line3` = "address-line3".asInstanceOf[`address-line3`]
+  
+  @js.native
+  sealed trait `after-edge` extends StObject
+  inline def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
+  
+  @js.native
+  sealed trait alert
+    extends StObject
+       with SelectInterface
+  inline def alert: alert = "alert".asInstanceOf[alert]
+  
+  @js.native
+  sealed trait alertEnter extends StObject
+  inline def alertEnter: alertEnter = "alertEnter".asInstanceOf[alertEnter]
+  
+  @js.native
+  sealed trait alertLeave extends StObject
+  inline def alertLeave: alertLeave = "alertLeave".asInstanceOf[alertLeave]
+  
+  @js.native
+  sealed trait alphabetic extends StObject
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  
+  @js.native
+  sealed trait alternate
+    extends StObject
+       with AnimationDirection
+  inline def alternate: alternate = "alternate".asInstanceOf[alternate]
+  
+  @js.native
+  sealed trait `alternate-reverse`
+    extends StObject
+       with AnimationDirection
+  inline def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
+  
+  @js.native
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
+  
+  @js.native
+  sealed trait am extends StObject
+  inline def am: am = "am".asInstanceOf[am]
+  
+  @js.native
+  sealed trait android
+    extends StObject
+       with Platforms
+  inline def android: android = "android".asInstanceOf[android]
+  
+  @js.native
+  sealed trait animated extends StObject
+  inline def animated: animated = "animated".asInstanceOf[animated]
+  
+  @js.native
+  sealed trait async extends StObject
+  inline def async: async = "async".asInstanceOf[async]
+  
+  @js.native
+  sealed trait auto
+    extends StObject
+       with AnimationFill
+       with PopoverSize
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait back
-    extends NavDirection
+    extends StObject
+       with NavDirection
        with RouterDirection
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
-  sealed trait backButtonIcon extends js.Object
+  sealed trait backButtonDefaultHref extends StObject
+  inline def backButtonDefaultHref: backButtonDefaultHref = "backButtonDefaultHref".asInstanceOf[backButtonDefaultHref]
   
   @js.native
-  sealed trait backButtonText extends js.Object
+  sealed trait backButtonIcon extends StObject
+  inline def backButtonIcon: backButtonIcon = "backButtonIcon".asInstanceOf[backButtonIcon]
   
   @js.native
-  sealed trait backdrop extends js.Object
+  sealed trait backButtonText extends StObject
+  inline def backButtonText: backButtonText = "backButtonText".asInstanceOf[backButtonText]
   
   @js.native
-  sealed trait backwards extends AnimationFill
+  sealed trait backwards
+    extends StObject
+       with AnimationFill
+  inline def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline extends StObject
+  inline def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait `before-edge` extends js.Object
+  sealed trait bday
+    extends StObject
+       with AutocompleteTypes
+  inline def bday: bday = "bday".asInstanceOf[bday]
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait `bday-day`
+    extends StObject
+       with AutocompleteTypes
+  inline def `bday-day`: `bday-day` = "bday-day".asInstanceOf[`bday-day`]
   
   @js.native
-  sealed trait block extends js.Object
+  sealed trait `bday-month`
+    extends StObject
+       with AutocompleteTypes
+  inline def `bday-month`: `bday-month` = "bday-month".asInstanceOf[`bday-month`]
   
   @js.native
-  sealed trait both extends AnimationFill
+  sealed trait `bday-year`
+    extends StObject
+       with AutocompleteTypes
+  inline def `bday-year`: `bday-year` = "bday-year".asInstanceOf[`bday-year`]
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait `before-edge` extends StObject
+  inline def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
   
   @js.native
-  sealed trait bounded extends js.Object
+  sealed trait bevel extends StObject
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait block extends StObject
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait body
+    extends StObject
+       with ListenTargetOptions
+  inline def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait both
+    extends StObject
+       with AnimationFill
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait capacitor extends js.Object
+  sealed trait bottom
+    extends StObject
+       with PositionSide
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait bounded extends StObject
+  inline def bounded: bounded = "bounded".asInstanceOf[bounded]
   
   @js.native
-  sealed trait central extends js.Object
+  sealed trait bubbles
+    extends StObject
+       with SpinnerTypes
+  inline def bubbles: bubbles = "bubbles".asInstanceOf[bubbles]
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait butt extends StObject
+  inline def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait clear extends js.Object
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait condense extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait cordova extends js.Object
+  sealed trait capacitor
+    extends StObject
+       with Platforms
+  inline def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
   
   @js.native
-  sealed trait danger extends PredefinedColors
+  sealed trait `cc-additional-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-additional-name`: `cc-additional-name` = "cc-additional-name".asInstanceOf[`cc-additional-name`]
   
   @js.native
-  sealed trait dark extends PredefinedColors
+  sealed trait `cc-csc`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
   
   @js.native
-  sealed trait date extends TextFieldTypes
+  sealed trait `cc-exp`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait `cc-exp-month`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait `cc-exp-year`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
   
   @js.native
-  sealed trait desktop extends js.Object
+  sealed trait `cc-family-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-family-name`: `cc-family-name` = "cc-family-name".asInstanceOf[`cc-family-name`]
   
   @js.native
-  sealed trait destructive extends js.Object
+  sealed trait `cc-given-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-given-name`: `cc-given-name` = "cc-given-name".asInstanceOf[`cc-given-name`]
   
   @js.native
-  sealed trait determinate extends js.Object
+  sealed trait `cc-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-name`: `cc-name` = "cc-name".asInstanceOf[`cc-name`]
   
   @js.native
-  sealed trait eager extends js.Object
+  sealed trait `cc-number`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
   
   @js.native
-  sealed trait electron extends js.Object
+  sealed trait `cc-type`
+    extends StObject
+       with AutocompleteTypes
+  inline def `cc-type`: `cc-type` = "cc-type".asInstanceOf[`cc-type`]
   
   @js.native
-  sealed trait email extends TextFieldTypes
+  sealed trait center
+    extends StObject
+       with PositionAlign
+  inline def center: center = "center".asInstanceOf[center]
+  
+  @js.native
+  sealed trait central extends StObject
+  inline def central: central = "central".asInstanceOf[central]
+  
+  @js.native
+  sealed trait checkbox extends StObject
+  inline def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  
+  @js.native
+  sealed trait chromium
+    extends StObject
+       with BrowserName
+  inline def chromium: chromium = "chromium".asInstanceOf[chromium]
+  
+  @js.native
+  sealed trait circles
+    extends StObject
+       with SpinnerTypes
+  inline def circles: circles = "circles".asInstanceOf[circles]
+  
+  @js.native
+  sealed trait circular
+    extends StObject
+       with SpinnerTypes
+  inline def circular: circular = "circular".asInstanceOf[circular]
+  
+  @js.native
+  sealed trait clear extends StObject
+  inline def clear: clear = "clear".asInstanceOf[clear]
+  
+  @js.native
+  sealed trait click
+    extends StObject
+       with TriggerAction
+  inline def click: click = "click".asInstanceOf[click]
+  
+  @js.native
+  sealed trait commit extends StObject
+  inline def commit: commit = "commit".asInstanceOf[commit]
+  
+  @js.native
+  sealed trait compact extends StObject
+  inline def compact: compact = "compact".asInstanceOf[compact]
+  
+  @js.native
+  sealed trait condense extends StObject
+  inline def condense: condense = "condense".asInstanceOf[condense]
+  
+  @js.native
+  sealed trait `context-menu`
+    extends StObject
+       with TriggerAction
+  inline def `context-menu`: `context-menu` = "context-menu".asInstanceOf[`context-menu`]
+  
+  @js.native
+  sealed trait cordova
+    extends StObject
+       with Platforms
+  inline def cordova: cordova = "cordova".asInstanceOf[cordova]
+  
+  @js.native
+  sealed trait country
+    extends StObject
+       with AutocompleteTypes
+  inline def country: country = "country".asInstanceOf[country]
+  
+  @js.native
+  sealed trait `country-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `country-name`: `country-name` = "country-name".asInstanceOf[`country-name`]
+  
+  @js.native
+  sealed trait cover
+    extends StObject
+       with PopoverSize
+  inline def cover: cover = "cover".asInstanceOf[cover]
+  
+  @js.native
+  sealed trait crescent
+    extends StObject
+       with SpinnerTypes
+  inline def crescent: crescent = "crescent".asInstanceOf[crescent]
+  
+  @js.native
+  sealed trait `current-password`
+    extends StObject
+       with AutocompleteTypes
+  inline def `current-password`: `current-password` = "current-password".asInstanceOf[`current-password`]
+  
+  @js.native
+  sealed trait cycle
+    extends StObject
+       with ModalHandleBehavior
+  inline def cycle: cycle = "cycle".asInstanceOf[cycle]
+  
+  @js.native
+  sealed trait danger
+    extends StObject
+       with PredefinedColors
+  inline def danger: danger = "danger".asInstanceOf[danger]
+  
+  @js.native
+  sealed trait dark
+    extends StObject
+       with PredefinedColors
+  inline def dark: dark = "dark".asInstanceOf[dark]
+  
+  @js.native
+  sealed trait date
+    extends StObject
+       with DatetimePresentation
+       with TextFieldTypes
+  inline def date: date = "date".asInstanceOf[date]
+  
+  @js.native
+  sealed trait `date-time`
+    extends StObject
+       with DatetimePresentation
+  inline def `date-time`: `date-time` = "date-time".asInstanceOf[`date-time`]
+  
+  @js.native
+  sealed trait `datetime-local`
+    extends StObject
+       with TextFieldTypes
+  inline def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
+  
+  @js.native
+  sealed trait decimal extends StObject
+  inline def decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  @js.native
+  sealed trait desktop
+    extends StObject
+       with Platforms
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
+  
+  @js.native
+  sealed trait destructive extends StObject
+  inline def destructive: destructive = "destructive".asInstanceOf[destructive]
+  
+  @js.native
+  sealed trait determinate extends StObject
+  inline def determinate: determinate = "determinate".asInstanceOf[determinate]
+  
+  @js.native
+  sealed trait document
+    extends StObject
+       with ListenTargetOptions
+  inline def document: document = "document".asInstanceOf[document]
+  
+  @js.native
+  sealed trait domcontentloaded extends StObject
+  inline def domcontentloaded: domcontentloaded = "domcontentloaded".asInstanceOf[domcontentloaded]
+  
+  @js.native
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
+  
+  @js.native
+  sealed trait dots
+    extends StObject
+       with SpinnerTypes
+  inline def dots: dots = "dots".asInstanceOf[dots]
+  
+  @js.native
+  sealed trait down extends StObject
+  inline def down: down = "down".asInstanceOf[down]
+  
+  @js.native
+  sealed trait eager extends StObject
+  inline def eager: eager = "eager".asInstanceOf[eager]
+  
+  @js.native
+  sealed trait electron
+    extends StObject
+       with Platforms
+  inline def electron: electron = "electron".asInstanceOf[electron]
+  
+  @js.native
+  sealed trait email
+    extends StObject
+       with AutocompleteTypes
+       with TextFieldTypes
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait end
-    extends AnimationPlayTo
+    extends StObject
+       with AnimationPlayTo
+       with PositionAlign
+       with PositionSide
        with Side
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait enter extends StObject
+  inline def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait experimentalTransitionShadow extends js.Object
+  sealed trait evenodd extends StObject
+  inline def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait event
+    extends StObject
+       with PositionReference
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait floating extends js.Object
+  sealed trait fade extends StObject
+  inline def fade: fade = "fade".asInstanceOf[fade]
   
   @js.native
-  sealed trait footer extends CellType
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = "false".asInstanceOf[`false`]
+  
+  @js.native
+  sealed trait `family-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `family-name`: `family-name` = "family-name".asInstanceOf[`family-name`]
+  
+  @js.native
+  sealed trait firefox
+    extends StObject
+       with BrowserName
+  inline def firefox: firefox = "firefox".asInstanceOf[firefox]
+  
+  @js.native
+  sealed trait fixed extends StObject
+  inline def fixed: fixed = "fixed".asInstanceOf[fixed]
+  
+  @js.native
+  sealed trait floating extends StObject
+  inline def floating: floating = "floating".asInstanceOf[floating]
+  
+  @js.native
+  sealed trait focus extends StObject
+  inline def focus: focus = "focus".asInstanceOf[focus]
+  
+  @js.native
+  sealed trait footer
+    extends StObject
+       with CellType
+  inline def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
   sealed trait forward
-    extends NavDirection
+    extends StObject
+       with NavDirection
        with RouterDirection
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait forwards extends AnimationFill
+  sealed trait forwards
+    extends StObject
+       with AnimationFill
+  inline def forwards: forwards = "forwards".asInstanceOf[forwards]
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait full extends StObject
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait hanging extends js.Object
+  sealed trait `given-name`
+    extends StObject
+       with AutocompleteTypes
+  inline def `given-name`: `given-name` = "given-name".asInstanceOf[`given-name`]
   
   @js.native
-  sealed trait hard extends js.Object
+  sealed trait go extends StObject
+  inline def go: go = "go".asInstanceOf[go]
   
   @js.native
-  sealed trait hardwareBackButton extends js.Object
+  sealed trait h12 extends StObject
+  inline def h12: h12 = "h12".asInstanceOf[h12]
   
   @js.native
-  sealed trait header extends CellType
+  sealed trait h23 extends StObject
+  inline def h23: h23 = "h23".asInstanceOf[h23]
   
   @js.native
-  sealed trait heavy extends js.Object
+  sealed trait hanging extends StObject
+  inline def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
-  sealed trait hideCaretOnScroll extends js.Object
+  sealed trait hard extends StObject
+  inline def hard: hard = "hard".asInstanceOf[hard]
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait hardwareBackButton extends StObject
+  inline def hardwareBackButton: hardwareBackButton = "hardwareBackButton".asInstanceOf[hardwareBackButton]
   
   @js.native
-  sealed trait hybrid extends js.Object
+  sealed trait header
+    extends StObject
+       with CellType
+  inline def header: header = "header".asInstanceOf[header]
+  
+  @js.native
+  sealed trait heavy extends StObject
+  inline def heavy: heavy = "heavy".asInstanceOf[heavy]
+  
+  @js.native
+  sealed trait hideCaretOnScroll extends StObject
+  inline def hideCaretOnScroll: hideCaretOnScroll = "hideCaretOnScroll".asInstanceOf[hideCaretOnScroll]
+  
+  @js.native
+  sealed trait high extends StObject
+  inline def high: high = "high".asInstanceOf[high]
+  
+  @js.native
+  sealed trait `honorific-prefix`
+    extends StObject
+       with AutocompleteTypes
+  inline def `honorific-prefix`: `honorific-prefix` = "honorific-prefix".asInstanceOf[`honorific-prefix`]
+  
+  @js.native
+  sealed trait `honorific-suffix`
+    extends StObject
+       with AutocompleteTypes
+  inline def `honorific-suffix`: `honorific-suffix` = "honorific-suffix".asInstanceOf[`honorific-suffix`]
+  
+  @js.native
+  sealed trait hover
+    extends StObject
+       with TriggerAction
+  inline def hover: hover = "hover".asInstanceOf[hover]
+  
+  @js.native
+  sealed trait hybrid
+    extends StObject
+       with Platforms
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
   sealed trait `icon-bottom`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `icon-bottom`: `icon-bottom` = "icon-bottom".asInstanceOf[`icon-bottom`]
   
   @js.native
   sealed trait `icon-end`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `icon-end`: `icon-end` = "icon-end".asInstanceOf[`icon-end`]
   
   @js.native
   sealed trait `icon-hide`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `icon-hide`: `icon-hide` = "icon-hide".asInstanceOf[`icon-hide`]
   
   @js.native
   sealed trait `icon-start`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `icon-start`: `icon-start` = "icon-start".asInstanceOf[`icon-start`]
   
   @js.native
   sealed trait `icon-top`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `icon-top`: `icon-top` = "icon-top".asInstanceOf[`icon-top`]
   
   @js.native
-  sealed trait ideographic extends js.Object
+  sealed trait ideographic extends StObject
+  inline def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
-  sealed trait indeterminate extends js.Object
+  sealed trait impp
+    extends StObject
+       with AutocompleteTypes
+  inline def impp: impp = "impp".asInstanceOf[impp]
   
   @js.native
-  sealed trait infiniteLoadingSpinner extends js.Object
+  sealed trait indeterminate extends StObject
+  inline def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait infiniteLoadingSpinner extends StObject
+  inline def infiniteLoadingSpinner: infiniteLoadingSpinner = "infiniteLoadingSpinner".asInstanceOf[infiniteLoadingSpinner]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait inputBlurring extends js.Object
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait inputShims extends js.Object
+  sealed trait inputBlurring extends StObject
+  inline def inputBlurring: inputBlurring = "inputBlurring".asInstanceOf[inputBlurring]
   
   @js.native
-  sealed trait inset extends js.Object
+  sealed trait inputShims extends StObject
+  inline def inputShims: inputShims = "inputShims".asInstanceOf[inputShims]
   
   @js.native
-  sealed trait ionViewDidEnter extends js.Object
+  sealed trait inset extends StObject
+  inline def inset: inset = "inset".asInstanceOf[inset]
   
   @js.native
-  sealed trait ionViewDidLeave extends js.Object
+  sealed trait ios
+    extends StObject
+       with Mode
+       with Platforms
+  inline def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait ionViewWillEnter extends js.Object
+  sealed trait ipad
+    extends StObject
+       with Platforms
+  inline def ipad: ipad = "ipad".asInstanceOf[ipad]
   
   @js.native
-  sealed trait ionViewWillLeave extends js.Object
+  sealed trait iphone
+    extends StObject
+       with Platforms
+  inline def iphone: iphone = "iphone".asInstanceOf[iphone]
   
   @js.native
-  sealed trait ionViewWillUnload extends js.Object
+  sealed trait isolated extends StObject
+  inline def isolated: isolated = "isolated".asInstanceOf[isolated]
   
   @js.native
-  sealed trait ios extends Mode
+  sealed trait item
+    extends StObject
+       with CellType
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
-  sealed trait ipad extends js.Object
-  
-  @js.native
-  sealed trait iphone extends js.Object
-  
-  @js.native
-  sealed trait isolated extends js.Object
-  
-  @js.native
-  sealed trait item extends CellType
-  
-  @js.native
-  sealed trait keyboardHeight extends js.Object
+  sealed trait keyboardHeight extends StObject
+  inline def keyboardHeight: keyboardHeight = "keyboardHeight".asInstanceOf[keyboardHeight]
   
   @js.native
   sealed trait `label-hide`
-    extends SegmentButtonLayout
-       with typingsJapgolly.ionicCore.segmentInterfaceMod.SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
+       with typingsJapgolly.ionicCore.distTypesComponentsSegmentSegmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
+  inline def `label-hide`: `label-hide` = "label-hide".asInstanceOf[`label-hide`]
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait language
+    extends StObject
+       with AutocompleteTypes
+  inline def language: language = "language".asInstanceOf[language]
   
   @js.native
-  sealed trait `lazy` extends js.Object
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait light extends PredefinedColors
+  sealed trait `lazy` extends StObject
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
-  sealed trait linearRGB extends js.Object
+  sealed trait left
+    extends StObject
+       with PositionSide
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait loadingEnter extends js.Object
+  sealed trait light
+    extends StObject
+       with PredefinedColors
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait loadingLeave extends js.Object
+  sealed trait `linear-rGB` extends StObject
+  inline def `linear-rGB`: `linear-rGB` = "linear-rGB".asInstanceOf[`linear-rGB`]
   
   @js.native
-  sealed trait loadingSpinner extends js.Object
+  sealed trait lines
+    extends StObject
+       with SpinnerTypes
+  inline def lines: lines = "lines".asInstanceOf[lines]
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait `lines-sharp`
+    extends StObject
+       with SpinnerTypes
+  inline def `lines-sharp`: `lines-sharp` = "lines-sharp".asInstanceOf[`lines-sharp`]
   
   @js.native
-  sealed trait mathematical extends js.Object
+  sealed trait `lines-sharp-small`
+    extends StObject
+       with SpinnerTypes
+  inline def `lines-sharp-small`: `lines-sharp-small` = "lines-sharp-small".asInstanceOf[`lines-sharp-small`]
   
   @js.native
-  sealed trait md extends Mode
+  sealed trait `lines-small`
+    extends StObject
+       with SpinnerTypes
+  inline def `lines-small`: `lines-small` = "lines-small".asInstanceOf[`lines-small`]
   
   @js.native
-  sealed trait medial extends js.Object
+  sealed trait load extends StObject
+  inline def load: load = "load".asInstanceOf[load]
   
   @js.native
-  sealed trait medium extends PredefinedColors
+  sealed trait loadingEnter extends StObject
+  inline def loadingEnter: loadingEnter = "loadingEnter".asInstanceOf[loadingEnter]
   
   @js.native
-  sealed trait menuIcon extends js.Object
+  sealed trait loadingLeave extends StObject
+  inline def loadingLeave: loadingLeave = "loadingLeave".asInstanceOf[loadingLeave]
   
   @js.native
-  sealed trait menuType extends js.Object
+  sealed trait loadingSpinner extends StObject
+  inline def loadingSpinner: loadingSpinner = "loadingSpinner".asInstanceOf[loadingSpinner]
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait low extends StObject
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait mathematical extends StObject
+  inline def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
   
   @js.native
-  sealed trait mobile extends js.Object
+  sealed trait md
+    extends StObject
+       with Mode
+  inline def md: md = "md".asInstanceOf[md]
   
   @js.native
-  sealed trait mobileweb extends js.Object
+  sealed trait medial extends StObject
+  inline def medial: medial = "medial".asInstanceOf[medial]
   
   @js.native
-  sealed trait modalEnter extends js.Object
+  sealed trait medium
+    extends StObject
+       with PredefinedColors
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait modalLeave extends js.Object
+  sealed trait menuIcon extends StObject
+  inline def menuIcon: menuIcon = "menuIcon".asInstanceOf[menuIcon]
   
   @js.native
-  sealed trait mode extends js.Object
+  sealed trait menuType extends StObject
+  inline def menuType: menuType = "menuType".asInstanceOf[menuType]
   
   @js.native
-  sealed trait navAnimation extends js.Object
+  sealed trait middle extends StObject
+  inline def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait no extends js.Object
+  sealed trait miter extends StObject
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait none extends AnimationFill
+  sealed trait mobile
+    extends StObject
+       with Platforms
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait mobileweb
+    extends StObject
+       with Platforms
+  inline def mobileweb: mobileweb = "mobileweb".asInstanceOf[mobileweb]
   
   @js.native
-  sealed trait normal extends AnimationDirection
+  sealed trait modalEnter extends StObject
+  inline def modalEnter: modalEnter = "modalEnter".asInstanceOf[modalEnter]
   
   @js.native
-  sealed trait number extends TextFieldTypes
+  sealed trait modalLeave extends StObject
+  inline def modalLeave: modalLeave = "modalLeave".asInstanceOf[modalLeave]
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait mode extends StObject
+  inline def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait month
+    extends StObject
+       with DatetimePresentation
+       with TextFieldTypes
+  inline def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait on extends js.Object
+  sealed trait `month-year`
+    extends StObject
+       with DatetimePresentation
+  inline def `month-year`: `month-year` = "month-year".asInstanceOf[`month-year`]
   
   @js.native
-  sealed trait outline extends js.Object
+  sealed trait name
+    extends StObject
+       with AutocompleteTypes
+  inline def name: name = "name".asInstanceOf[name]
   
   @js.native
-  sealed trait password extends TextFieldTypes
+  sealed trait navAnimation extends StObject
+  inline def navAnimation: navAnimation = "navAnimation".asInstanceOf[navAnimation]
   
   @js.native
-  sealed trait persistConfig extends js.Object
+  sealed trait networkidle extends StObject
+  inline def networkidle: networkidle = "networkidle".asInstanceOf[networkidle]
   
   @js.native
-  sealed trait phablet extends js.Object
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait pickerEnter extends js.Object
+  sealed trait `new-password`
+    extends StObject
+       with AutocompleteTypes
+  inline def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
   
   @js.native
-  sealed trait pickerLeave extends js.Object
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait popover extends SelectInterface
+  sealed trait nickname
+    extends StObject
+       with AutocompleteTypes
+  inline def nickname: nickname = "nickname".asInstanceOf[nickname]
   
   @js.native
-  sealed trait popoverEnter extends js.Object
+  sealed trait no extends StObject
+  inline def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait popoverLeave extends js.Object
+  sealed trait none
+    extends StObject
+       with AnimationFill
+       with ModalHandleBehavior
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait primary extends PredefinedColors
+  sealed trait nonzero extends StObject
+  inline def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
-  sealed trait pwa extends js.Object
+  sealed trait normal
+    extends StObject
+       with AnimationDirection
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait number
+    extends StObject
+       with TextFieldTypes
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait refreshingIcon extends js.Object
+  sealed trait numeric extends StObject
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait refreshingSpinner extends js.Object
+  sealed trait off
+    extends StObject
+       with AutocompleteTypes
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait on
+    extends StObject
+       with AutocompleteTypes
+  inline def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait `one-time-code`
+    extends StObject
+       with AutocompleteTypes
+  inline def `one-time-code`: `one-time-code` = "one-time-code".asInstanceOf[`one-time-code`]
   
   @js.native
-  sealed trait reverse extends AnimationDirection
+  sealed trait organization
+    extends StObject
+       with AutocompleteTypes
+  inline def organization: organization = "organization".asInstanceOf[organization]
   
   @js.native
-  sealed trait rippleEffect extends js.Object
+  sealed trait `organization-title`
+    extends StObject
+       with AutocompleteTypes
+  inline def `organization-title`: `organization-title` = "organization-title".asInstanceOf[`organization-title`]
   
   @js.native
-  sealed trait root extends RouterDirection
+  sealed trait outline extends StObject
+  inline def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait password
+    extends StObject
+       with TextFieldTypes
+  inline def password: password = "password".asInstanceOf[password]
   
   @js.native
-  sealed trait sRGB extends js.Object
+  sealed trait persistConfig extends StObject
+  inline def persistConfig: persistConfig = "persistConfig".asInstanceOf[persistConfig]
   
   @js.native
-  sealed trait scrollAssist extends js.Object
+  sealed trait phablet
+    extends StObject
+       with Platforms
+  inline def phablet: phablet = "phablet".asInstanceOf[phablet]
   
   @js.native
-  sealed trait scrollPadding extends js.Object
+  sealed trait photo
+    extends StObject
+       with AutocompleteTypes
+  inline def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
-  sealed trait search extends TextFieldTypes
+  sealed trait pickerEnter extends StObject
+  inline def pickerEnter: pickerEnter = "pickerEnter".asInstanceOf[pickerEnter]
   
   @js.native
-  sealed trait secondary extends PredefinedColors
+  sealed trait pickerLeave extends StObject
+  inline def pickerLeave: pickerLeave = "pickerLeave".asInstanceOf[pickerLeave]
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait platform extends StObject
+  inline def platform: platform = "platform".asInstanceOf[platform]
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait pm extends StObject
+  inline def pm: pm = "pm".asInstanceOf[pm]
   
   @js.native
-  sealed trait soft extends js.Object
+  sealed trait popover
+    extends StObject
+       with SelectInterface
+  inline def popover: popover = "popover".asInstanceOf[popover]
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait popoverEnter extends StObject
+  inline def popoverEnter: popoverEnter = "popoverEnter".asInstanceOf[popoverEnter]
   
   @js.native
-  sealed trait spinner extends js.Object
+  sealed trait popoverLeave extends StObject
+  inline def popoverLeave: popoverLeave = "popoverLeave".asInstanceOf[popoverLeave]
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait `postal-code`
+    extends StObject
+       with AutocompleteTypes
+  inline def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
   @js.native
-  sealed trait stacked extends js.Object
+  sealed trait previous extends StObject
+  inline def previous: previous = "previous".asInstanceOf[previous]
+  
+  @js.native
+  sealed trait primary
+    extends StObject
+       with PredefinedColors
+  inline def primary: primary = "primary".asInstanceOf[primary]
+  
+  @js.native
+  sealed trait pwa
+    extends StObject
+       with Platforms
+  inline def pwa: pwa = "pwa".asInstanceOf[pwa]
+  
+  @js.native
+  sealed trait radio extends StObject
+  inline def radio: radio = "radio".asInstanceOf[radio]
+  
+  @js.native
+  sealed trait refreshingIcon extends StObject
+  inline def refreshingIcon: refreshingIcon = "refreshingIcon".asInstanceOf[refreshingIcon]
+  
+  @js.native
+  sealed trait refreshingSpinner extends StObject
+  inline def refreshingSpinner: refreshingSpinner = "refreshingSpinner".asInstanceOf[refreshingSpinner]
+  
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
+  
+  @js.native
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
+  
+  @js.native
+  sealed trait reverse
+    extends StObject
+       with AnimationDirection
+  inline def reverse: reverse = "reverse".asInstanceOf[reverse]
+  
+  @js.native
+  sealed trait right
+    extends StObject
+       with PositionSide
+  inline def right: right = "right".asInstanceOf[right]
+  
+  @js.native
+  sealed trait rippleEffect extends StObject
+  inline def rippleEffect: rippleEffect = "rippleEffect".asInstanceOf[rippleEffect]
+  
+  @js.native
+  sealed trait root
+    extends StObject
+       with RouterDirection
+  inline def root: root = "root".asInstanceOf[root]
+  
+  @js.native
+  sealed trait round extends StObject
+  inline def round: round = "round".asInstanceOf[round]
+  
+  @js.native
+  sealed trait `s-rGB` extends StObject
+  inline def `s-rGB`: `s-rGB` = "s-rGB".asInstanceOf[`s-rGB`]
+  
+  @js.native
+  sealed trait sanitizerEnabled extends StObject
+  inline def sanitizerEnabled: sanitizerEnabled = "sanitizerEnabled".asInstanceOf[sanitizerEnabled]
+  
+  @js.native
+  sealed trait scale
+    extends StObject
+       with RefresherAnimationType
+  inline def scale: scale = "scale".asInstanceOf[scale]
+  
+  @js.native
+  sealed trait scrollAssist extends StObject
+  inline def scrollAssist: scrollAssist = "scrollAssist".asInstanceOf[scrollAssist]
+  
+  @js.native
+  sealed trait scrollPadding extends StObject
+  inline def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
+  
+  @js.native
+  sealed trait search
+    extends StObject
+       with TextFieldTypes
+  inline def search: search = "search".asInstanceOf[search]
+  
+  @js.native
+  sealed trait secondary
+    extends StObject
+       with PredefinedColors
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
+  
+  @js.native
+  sealed trait selected extends StObject
+  inline def selected: selected = "selected".asInstanceOf[selected]
+  
+  @js.native
+  sealed trait send extends StObject
+  inline def send: send = "send".asInstanceOf[send]
+  
+  @js.native
+  sealed trait sex
+    extends StObject
+       with AutocompleteTypes
+  inline def sex: sex = "sex".asInstanceOf[sex]
+  
+  @js.native
+  sealed trait small extends StObject
+  inline def small: small = "small".asInstanceOf[small]
+  
+  @js.native
+  sealed trait soft extends StObject
+  inline def soft: soft = "soft".asInstanceOf[soft]
+  
+  @js.native
+  sealed trait solid extends StObject
+  inline def solid: solid = "solid".asInstanceOf[solid]
+  
+  @js.native
+  sealed trait spinner extends StObject
+  inline def spinner: spinner = "spinner".asInstanceOf[spinner]
+  
+  @js.native
+  sealed trait square extends StObject
+  inline def square: square = "square".asInstanceOf[square]
+  
+  @js.native
+  sealed trait stacked extends StObject
+  inline def stacked: stacked = "stacked".asInstanceOf[stacked]
   
   @js.native
   sealed trait start
-    extends AnimationPlayTo
+    extends StObject
+       with AnimationPlayTo
+       with PositionAlign
+       with PositionSide
        with Side
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait statusTap extends js.Object
+  sealed trait statusTap extends StObject
+  inline def statusTap: statusTap = "statusTap".asInstanceOf[statusTap]
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait `street-address`
+    extends StObject
+       with AutocompleteTypes
+  inline def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
   
   @js.native
-  sealed trait success extends PredefinedColors
+  sealed trait submit extends StObject
+  inline def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait sum extends js.Object
+  sealed trait success
+    extends StObject
+       with PredefinedColors
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait swipeBackEnabled extends js.Object
+  sealed trait sum extends StObject
+  inline def sum: sum = "sum".asInstanceOf[sum]
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait swipeBackEnabled extends StObject
+  inline def swipeBackEnabled: swipeBackEnabled = "swipeBackEnabled".asInstanceOf[swipeBackEnabled]
   
   @js.native
-  sealed trait tabButtonLayout extends js.Object
+  sealed trait sync extends StObject
+  inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait tablet extends js.Object
+  sealed trait tabButtonLayout extends StObject
+  inline def tabButtonLayout: tabButtonLayout = "tabButtonLayout".asInstanceOf[tabButtonLayout]
   
   @js.native
-  sealed trait tel extends TextFieldTypes
+  sealed trait tablet
+    extends StObject
+       with Platforms
+  inline def tablet: tablet = "tablet".asInstanceOf[tablet]
   
   @js.native
-  sealed trait terminal extends js.Object
+  sealed trait tel
+    extends StObject
+       with AutocompleteTypes
+       with TextFieldTypes
+  inline def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait tertiary extends PredefinedColors
+  sealed trait `tel-area-code`
+    extends StObject
+       with AutocompleteTypes
+  inline def `tel-area-code`: `tel-area-code` = "tel-area-code".asInstanceOf[`tel-area-code`]
   
   @js.native
-  sealed trait text extends TextFieldTypes
+  sealed trait `tel-country-code`
+    extends StObject
+       with AutocompleteTypes
+  inline def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
   
   @js.native
-  sealed trait `text-after-edge` extends js.Object
+  sealed trait `tel-extension`
+    extends StObject
+       with AutocompleteTypes
+  inline def `tel-extension`: `tel-extension` = "tel-extension".asInstanceOf[`tel-extension`]
   
   @js.native
-  sealed trait `text-before-edge` extends js.Object
+  sealed trait `tel-local`
+    extends StObject
+       with AutocompleteTypes
+  inline def `tel-local`: `tel-local` = "tel-local".asInstanceOf[`tel-local`]
   
   @js.native
-  sealed trait time extends TextFieldTypes
+  sealed trait `tel-national`
+    extends StObject
+       with AutocompleteTypes
+  inline def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
   
   @js.native
-  sealed trait toastEnter extends js.Object
+  sealed trait terminal extends StObject
+  inline def terminal: terminal = "terminal".asInstanceOf[terminal]
   
   @js.native
-  sealed trait toastLeave extends js.Object
+  sealed trait tertiary
+    extends StObject
+       with PredefinedColors
+  inline def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait text
+    extends StObject
+       with TextFieldTypes
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait unbounded extends js.Object
+  sealed trait `text-after-edge` extends StObject
+  inline def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
   
   @js.native
-  sealed trait url extends TextFieldTypes
+  sealed trait `text-before-edge` extends StObject
+  inline def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   
   @js.native
-  sealed trait warning extends PredefinedColors
+  sealed trait textarea extends StObject
+  inline def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait time
+    extends StObject
+       with DatetimePresentation
+       with TextFieldTypes
+  inline def time: time = "time".asInstanceOf[time]
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait `time-date`
+    extends StObject
+       with DatetimePresentation
+  inline def `time-date`: `time-date` = "time-date".asInstanceOf[`time-date`]
   
   @js.native
-  sealed trait yes extends js.Object
+  sealed trait toastEnter extends StObject
+  inline def toastEnter: toastEnter = "toastEnter".asInstanceOf[toastEnter]
   
-  @scala.inline
-  def A: A = "A".asInstanceOf[A]
-  @scala.inline
-  def B: B = "B".asInstanceOf[B]
-  @scala.inline
-  def _forceStatusbarPadding: _forceStatusbarPadding = "_forceStatusbarPadding".asInstanceOf[_forceStatusbarPadding]
-  @scala.inline
-  def _testing: _testing = "_testing".asInstanceOf[_testing]
-  @scala.inline
-  def _zoneGate: _zoneGate = "_zoneGate".asInstanceOf[_zoneGate]
-  @scala.inline
-  def `action-sheet`: `action-sheet` = "action-sheet".asInstanceOf[`action-sheet`]
-  @scala.inline
-  def actionSheetEnter: actionSheetEnter = "actionSheetEnter".asInstanceOf[actionSheetEnter]
-  @scala.inline
-  def actionSheetLeave: actionSheetLeave = "actionSheetLeave".asInstanceOf[actionSheetLeave]
-  @scala.inline
-  def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def alertEnter: alertEnter = "alertEnter".asInstanceOf[alertEnter]
-  @scala.inline
-  def alertLeave: alertLeave = "alertLeave".asInstanceOf[alertLeave]
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
-  @scala.inline
-  def alternate: alternate = "alternate".asInstanceOf[alternate]
-  @scala.inline
-  def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
-  @scala.inline
-  def animated: animated = "animated".asInstanceOf[animated]
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def backButtonIcon: backButtonIcon = "backButtonIcon".asInstanceOf[backButtonIcon]
-  @scala.inline
-  def backButtonText: backButtonText = "backButtonText".asInstanceOf[backButtonText]
-  @scala.inline
-  def backdrop: backdrop = "backdrop".asInstanceOf[backdrop]
-  @scala.inline
-  def backwards: backwards = "backwards".asInstanceOf[backwards]
-  @scala.inline
-  def baseline: baseline = "baseline".asInstanceOf[baseline]
-  @scala.inline
-  def `before-edge`: `before-edge` = "before-edge".asInstanceOf[`before-edge`]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bounded: bounded = "bounded".asInstanceOf[bounded]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def central: central = "central".asInstanceOf[central]
-  @scala.inline
-  def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
-  @scala.inline
-  def clear: clear = "clear".asInstanceOf[clear]
-  @scala.inline
-  def condense: condense = "condense".asInstanceOf[condense]
-  @scala.inline
-  def cordova: cordova = "cordova".asInstanceOf[cordova]
-  @scala.inline
-  def danger: danger = "danger".asInstanceOf[danger]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def decimal: decimal = "decimal".asInstanceOf[decimal]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
-  @scala.inline
-  def destructive: destructive = "destructive".asInstanceOf[destructive]
-  @scala.inline
-  def determinate: determinate = "determinate".asInstanceOf[determinate]
-  @scala.inline
-  def eager: eager = "eager".asInstanceOf[eager]
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def evenodd: evenodd = "evenodd".asInstanceOf[evenodd]
-  @scala.inline
-  def experimentalTransitionShadow: experimentalTransitionShadow = "experimentalTransitionShadow".asInstanceOf[experimentalTransitionShadow]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def floating: floating = "floating".asInstanceOf[floating]
-  @scala.inline
-  def footer: footer = "footer".asInstanceOf[footer]
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
-  @scala.inline
-  def forwards: forwards = "forwards".asInstanceOf[forwards]
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
-  @scala.inline
-  def hanging: hanging = "hanging".asInstanceOf[hanging]
-  @scala.inline
-  def hard: hard = "hard".asInstanceOf[hard]
-  @scala.inline
-  def hardwareBackButton: hardwareBackButton = "hardwareBackButton".asInstanceOf[hardwareBackButton]
-  @scala.inline
-  def header: header = "header".asInstanceOf[header]
-  @scala.inline
-  def heavy: heavy = "heavy".asInstanceOf[heavy]
-  @scala.inline
-  def hideCaretOnScroll: hideCaretOnScroll = "hideCaretOnScroll".asInstanceOf[hideCaretOnScroll]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def `icon-bottom`: `icon-bottom` = "icon-bottom".asInstanceOf[`icon-bottom`]
-  @scala.inline
-  def `icon-end`: `icon-end` = "icon-end".asInstanceOf[`icon-end`]
-  @scala.inline
-  def `icon-hide`: `icon-hide` = "icon-hide".asInstanceOf[`icon-hide`]
-  @scala.inline
-  def `icon-start`: `icon-start` = "icon-start".asInstanceOf[`icon-start`]
-  @scala.inline
-  def `icon-top`: `icon-top` = "icon-top".asInstanceOf[`icon-top`]
-  @scala.inline
-  def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
-  @scala.inline
-  def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
-  @scala.inline
-  def infiniteLoadingSpinner: infiniteLoadingSpinner = "infiniteLoadingSpinner".asInstanceOf[infiniteLoadingSpinner]
-  @scala.inline
-  def inherit: inherit = "inherit".asInstanceOf[inherit]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def inputBlurring: inputBlurring = "inputBlurring".asInstanceOf[inputBlurring]
-  @scala.inline
-  def inputShims: inputShims = "inputShims".asInstanceOf[inputShims]
-  @scala.inline
-  def inset: inset = "inset".asInstanceOf[inset]
-  @scala.inline
-  def ionViewDidEnter: ionViewDidEnter = "ionViewDidEnter".asInstanceOf[ionViewDidEnter]
-  @scala.inline
-  def ionViewDidLeave: ionViewDidLeave = "ionViewDidLeave".asInstanceOf[ionViewDidLeave]
-  @scala.inline
-  def ionViewWillEnter: ionViewWillEnter = "ionViewWillEnter".asInstanceOf[ionViewWillEnter]
-  @scala.inline
-  def ionViewWillLeave: ionViewWillLeave = "ionViewWillLeave".asInstanceOf[ionViewWillLeave]
-  @scala.inline
-  def ionViewWillUnload: ionViewWillUnload = "ionViewWillUnload".asInstanceOf[ionViewWillUnload]
-  @scala.inline
-  def ios: ios = "ios".asInstanceOf[ios]
-  @scala.inline
-  def ipad: ipad = "ipad".asInstanceOf[ipad]
-  @scala.inline
-  def iphone: iphone = "iphone".asInstanceOf[iphone]
-  @scala.inline
-  def isolated: isolated = "isolated".asInstanceOf[isolated]
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
-  @scala.inline
-  def keyboardHeight: keyboardHeight = "keyboardHeight".asInstanceOf[keyboardHeight]
-  @scala.inline
-  def `label-hide`: `label-hide` = "label-hide".asInstanceOf[`label-hide`]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def linearRGB: linearRGB = "linearRGB".asInstanceOf[linearRGB]
-  @scala.inline
-  def loadingEnter: loadingEnter = "loadingEnter".asInstanceOf[loadingEnter]
-  @scala.inline
-  def loadingLeave: loadingLeave = "loadingLeave".asInstanceOf[loadingLeave]
-  @scala.inline
-  def loadingSpinner: loadingSpinner = "loadingSpinner".asInstanceOf[loadingSpinner]
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
-  def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
-  @scala.inline
-  def md: md = "md".asInstanceOf[md]
-  @scala.inline
-  def medial: medial = "medial".asInstanceOf[medial]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def menuIcon: menuIcon = "menuIcon".asInstanceOf[menuIcon]
-  @scala.inline
-  def menuType: menuType = "menuType".asInstanceOf[menuType]
-  @scala.inline
-  def middle: middle = "middle".asInstanceOf[middle]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
-  @scala.inline
-  def mobileweb: mobileweb = "mobileweb".asInstanceOf[mobileweb]
-  @scala.inline
-  def modalEnter: modalEnter = "modalEnter".asInstanceOf[modalEnter]
-  @scala.inline
-  def modalLeave: modalLeave = "modalLeave".asInstanceOf[modalLeave]
-  @scala.inline
-  def mode: mode = "mode".asInstanceOf[mode]
-  @scala.inline
-  def navAnimation: navAnimation = "navAnimation".asInstanceOf[navAnimation]
-  @scala.inline
-  def no: no = "no".asInstanceOf[no]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
-  @scala.inline
-  def off: off = "off".asInstanceOf[off]
-  @scala.inline
-  def on: on = "on".asInstanceOf[on]
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
-  @scala.inline
-  def password: password = "password".asInstanceOf[password]
-  @scala.inline
-  def persistConfig: persistConfig = "persistConfig".asInstanceOf[persistConfig]
-  @scala.inline
-  def phablet: phablet = "phablet".asInstanceOf[phablet]
-  @scala.inline
-  def pickerEnter: pickerEnter = "pickerEnter".asInstanceOf[pickerEnter]
-  @scala.inline
-  def pickerLeave: pickerLeave = "pickerLeave".asInstanceOf[pickerLeave]
-  @scala.inline
-  def popover: popover = "popover".asInstanceOf[popover]
-  @scala.inline
-  def popoverEnter: popoverEnter = "popoverEnter".asInstanceOf[popoverEnter]
-  @scala.inline
-  def popoverLeave: popoverLeave = "popoverLeave".asInstanceOf[popoverLeave]
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
-  @scala.inline
-  def pwa: pwa = "pwa".asInstanceOf[pwa]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def refreshingIcon: refreshingIcon = "refreshingIcon".asInstanceOf[refreshingIcon]
-  @scala.inline
-  def refreshingSpinner: refreshingSpinner = "refreshingSpinner".asInstanceOf[refreshingSpinner]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def reverse: reverse = "reverse".asInstanceOf[reverse]
-  @scala.inline
-  def rippleEffect: rippleEffect = "rippleEffect".asInstanceOf[rippleEffect]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def sRGB: sRGB = "sRGB".asInstanceOf[sRGB]
-  @scala.inline
-  def scrollAssist: scrollAssist = "scrollAssist".asInstanceOf[scrollAssist]
-  @scala.inline
-  def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
-  @scala.inline
-  def selected: selected = "selected".asInstanceOf[selected]
-  @scala.inline
-  def small: small = "small".asInstanceOf[small]
-  @scala.inline
-  def soft: soft = "soft".asInstanceOf[soft]
-  @scala.inline
-  def solid: solid = "solid".asInstanceOf[solid]
-  @scala.inline
-  def spinner: spinner = "spinner".asInstanceOf[spinner]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def stacked: stacked = "stacked".asInstanceOf[stacked]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def statusTap: statusTap = "statusTap".asInstanceOf[statusTap]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def sum: sum = "sum".asInstanceOf[sum]
-  @scala.inline
-  def swipeBackEnabled: swipeBackEnabled = "swipeBackEnabled".asInstanceOf[swipeBackEnabled]
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
-  @scala.inline
-  def tabButtonLayout: tabButtonLayout = "tabButtonLayout".asInstanceOf[tabButtonLayout]
-  @scala.inline
-  def tablet: tablet = "tablet".asInstanceOf[tablet]
-  @scala.inline
-  def tel: tel = "tel".asInstanceOf[tel]
-  @scala.inline
-  def terminal: terminal = "terminal".asInstanceOf[terminal]
-  @scala.inline
-  def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def `text-after-edge`: `text-after-edge` = "text-after-edge".asInstanceOf[`text-after-edge`]
-  @scala.inline
-  def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
-  @scala.inline
-  def time: time = "time".asInstanceOf[time]
-  @scala.inline
-  def toastEnter: toastEnter = "toastEnter".asInstanceOf[toastEnter]
-  @scala.inline
-  def toastLeave: toastLeave = "toastLeave".asInstanceOf[toastLeave]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def yes: yes = "yes".asInstanceOf[yes]
+  @js.native
+  sealed trait toastLeave extends StObject
+  inline def toastLeave: toastLeave = "toastLeave".asInstanceOf[toastLeave]
+  
+  @js.native
+  sealed trait top
+    extends StObject
+       with PositionSide
+  inline def top: top = "top".asInstanceOf[top]
+  
+  @js.native
+  sealed trait `transaction-amount`
+    extends StObject
+       with AutocompleteTypes
+  inline def `transaction-amount`: `transaction-amount` = "transaction-amount".asInstanceOf[`transaction-amount`]
+  
+  @js.native
+  sealed trait `transaction-currency`
+    extends StObject
+       with AutocompleteTypes
+  inline def `transaction-currency`: `transaction-currency` = "transaction-currency".asInstanceOf[`transaction-currency`]
+  
+  @js.native
+  sealed trait translate
+    extends StObject
+       with RefresherAnimationType
+  inline def translate: translate = "translate".asInstanceOf[translate]
+  
+  @js.native
+  sealed trait trigger
+    extends StObject
+       with PositionReference
+  inline def trigger: trigger = "trigger".asInstanceOf[trigger]
+  
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = "true".asInstanceOf[`true`]
+  
+  @js.native
+  sealed trait unbounded extends StObject
+  inline def unbounded: unbounded = "unbounded".asInstanceOf[unbounded]
+  
+  @js.native
+  sealed trait up extends StObject
+  inline def up: up = "up".asInstanceOf[up]
+  
+  @js.native
+  sealed trait url
+    extends StObject
+       with AutocompleteTypes
+       with TextFieldTypes
+  inline def url: url = "url".asInstanceOf[url]
+  
+  @js.native
+  sealed trait username
+    extends StObject
+       with AutocompleteTypes
+  inline def username: username = "username".asInstanceOf[username]
+  
+  @js.native
+  sealed trait warning
+    extends StObject
+       with PredefinedColors
+  inline def warning: warning = "warning".asInstanceOf[warning]
+  
+  @js.native
+  sealed trait webkit
+    extends StObject
+       with BrowserName
+  inline def webkit: webkit = "webkit".asInstanceOf[webkit]
+  
+  @js.native
+  sealed trait week
+    extends StObject
+       with TextFieldTypes
+  inline def week: week = "week".asInstanceOf[week]
+  
+  @js.native
+  sealed trait window
+    extends StObject
+       with ListenTargetOptions
+  inline def window: window = "window".asInstanceOf[window]
+  
+  @js.native
+  sealed trait x extends StObject
+  inline def x: x = "x".asInstanceOf[x]
+  
+  @js.native
+  sealed trait y extends StObject
+  inline def y: y = "y".asInstanceOf[y]
+  
+  @js.native
+  sealed trait year
+    extends StObject
+       with DatetimePresentation
+  inline def year: year = "year".asInstanceOf[year]
+  
+  @js.native
+  sealed trait yes extends StObject
+  inline def yes: yes = "yes".asInstanceOf[yes]
 }
-

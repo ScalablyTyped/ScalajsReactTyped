@@ -1,19 +1,24 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Metadata extends js.Object {
+trait Metadata extends StObject {
+  
   var `type`: js.UndefOr[MessageType] = js.undefined
 }
-
 object Metadata {
-  @scala.inline
-  def apply(`type`: MessageType = null): Metadata = {
+  
+  inline def apply(): Metadata = {
     val __obj = js.Dynamic.literal()
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Metadata]
   }
+  
+  extension [Self <: Metadata](x: Self) {
+    
+    inline def setType(value: MessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,95 +1,128 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`authorization-code`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`implicit`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait OAuthInfo
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * The registered application id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#appId)
     */
   var appId: String = js.native
+  
   /**
     * Applications with the same value will share the stored token on the same host.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#authNamespace)
-    *
     * @default / (forward slash)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#authNamespace)
     */
   var authNamespace: String = js.native
+  
   /**
     * The number of minutes that the token is valid.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#expiration)
-    *
     * @default 20160 (two weeks)
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#expiration)
     */
   var expiration: Double = js.native
+  
   /**
-    * The locale for the OAuth sign in page. The default locale is based on your browser/OS and the organization locale. You can use the locale property to change this. The locale needs to follow the language dash country code syntax supported by ArcGIS.com.
+    * Set this property to specify the type of authentication to use.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#locale)
+    * @default auto
     *
-    * @default Based on your browser/OS and the organization locale.
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#flowType)
     */
-  var locale: String = js.native
+  var flowType: auto | `authorization-code` | `implicit` = js.native
+  
   /**
-    * The minimum time in minutes before a saved token is due to expire that it should still be considered valid for use.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#minTimeUntilExpiration)
-    *
-    * @default 30
-    */
-  var minTimeUntilExpiration: Double = js.native
-  /**
-    * Set to `true` to show the OAuth sign in page in a popup window.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popup)
+    * Set this property to `true` to force the user to sign in with the id in [userId](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#userId).
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#forceUserId)
+    */
+  var forceUserId: Boolean = js.native
+  
+  /**
+    * The locale for the OAuth sign-in page.
+    *
+    * @default Based on your browser/OS and the organization locale.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#locale)
+    */
+  var locale: String = js.native
+  
+  /**
+    * The minimum time in minutes before a saved token is due to expire that should still be considered valid for use.
+    *
+    * @default 30
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#minTimeUntilExpiration)
+    */
+  var minTimeUntilExpiration: Double = js.native
+  
+  /**
+    * Set to `true` to show the OAuth sign-in page in a popup window.
+    *
+    * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popup)
     */
   var popup: Boolean = js.native
+  
   /**
-    * Applicable if working with the popup user-login workflow. This is a relative page URL that redirects the user back to the secured application after successful login.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popupCallbackUrl)
+    * Applicable if working with the popup user-login workflow.
     *
     * @default "oauth-callback.html"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popupCallbackUrl)
     */
   var popupCallbackUrl: String = js.native
+  
   /**
     * The window features passed to [window.open()](https://developer.mozilla.org/en-US/docs/Web/API/Window/open).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popupWindowFeatures)
-    *
     * @default height=490,width=800,resizable,scrollbars,status
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popupWindowFeatures)
     */
   var popupWindowFeatures: String = js.native
+  
   /**
     * The ArcGIS Enterprise portal URL.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#portalUrl)
-    *
     * @default "https://www.arcgis.com"
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#portalUrl)
     */
   var portalUrl: String = js.native
+  
   /**
     * Set this property to `true` when [popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#popup) is `false` in order to have the window's location hash value restored after signing in.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#preserveUrlHash)
-    *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#preserveUrlHash)
     */
   var preserveUrlHash: Boolean = js.native
+  
+  /**
+    * The user id used when `forceUserId` is `true`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-OAuthInfo.html#userId)
+    */
+  var userId: String = js.native
 }
-
-@JSGlobal("__esri.OAuthInfo")
-@js.native
-object OAuthInfo extends TopLevel[OAuthInfoConstructor]
-

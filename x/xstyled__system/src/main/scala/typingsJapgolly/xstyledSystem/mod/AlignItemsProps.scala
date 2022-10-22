@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.AlignItemsProperty
+import typingsJapgolly.csstype.mod.Property.AlignItems
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlignItemsProps extends js.Object {
-  val alignItems: js.UndefOr[ResponsiveValue[AlignItemsProperty]] = js.undefined
+trait AlignItemsProps extends StObject {
+  
+  val alignItems: js.UndefOr[ResponsiveValue[AlignItems]] = js.undefined
 }
-
 object AlignItemsProps {
-  @scala.inline
-  def apply(alignItems: ResponsiveValue[AlignItemsProperty] = null): AlignItemsProps = {
+  
+  inline def apply(): AlignItemsProps = {
     val __obj = js.Dynamic.literal()
-    if (alignItems != null) __obj.updateDynamic("alignItems")(alignItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignItemsProps]
   }
+  
+  extension [Self <: AlignItemsProps](x: Self) {
+    
+    inline def setAlignItems(value: ResponsiveValue[AlignItems]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+    
+    inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+    
+    inline def setAlignItemsVarargs(value: AlignItems*): Self = StObject.set(x, "alignItems", js.Array(value*))
+  }
 }
-

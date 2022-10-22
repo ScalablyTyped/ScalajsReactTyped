@@ -1,484 +1,523 @@
 package typingsJapgolly.appBuilderLib
 
-import typingsJapgolly.appBuilderLib.coreMod.CompressionLevel
-import typingsJapgolly.appBuilderLib.electronFrameworkMod.ElectronPlatformName
-import typingsJapgolly.appBuilderLib.macCodeSignMod.CertType
-import typingsJapgolly.appBuilderLib.macOptionsMod.MacOsTargetName
-import typingsJapgolly.appBuilderLib.pkgOptionsMod.BackgroundAlignment
-import typingsJapgolly.appBuilderLib.pkgOptionsMod.BackgroundScaling
-import typingsJapgolly.appBuilderLib.platformPackagerMod.IconFormat
-import typingsJapgolly.appBuilderLib.winOptionsMod.RequestedExecutionLevel
+import typingsJapgolly.appBuilderLib.outCodeSignMacCodeSignMod.CertType
+import typingsJapgolly.appBuilderLib.outCoreMod.CompressionLevel
+import typingsJapgolly.appBuilderLib.outElectronElectronFrameworkMod.ElectronPlatformName
+import typingsJapgolly.appBuilderLib.outOptionsMacOptionsMod.MacOsTargetName
+import typingsJapgolly.appBuilderLib.outOptionsPkgOptionsMod.BackgroundAlignment
+import typingsJapgolly.appBuilderLib.outOptionsPkgOptionsMod.BackgroundScaling
+import typingsJapgolly.appBuilderLib.outOptionsWinOptionsMod.RequestedExecutionLevel
+import typingsJapgolly.appBuilderLib.outPlatformPackagerMod.IconFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appBuilderLibStrings {
-  @js.native
-  sealed trait `3rd Party Mac Developer Application` extends CertType
   
   @js.native
-  sealed trait `3rd Party Mac Developer Installer` extends CertType
+  sealed trait `3rd Party Mac Developer Application`
+    extends StObject
+       with CertType
+  inline def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = ("3rd Party Mac Developer Application").asInstanceOf[`3rd Party Mac Developer Application`]
   
   @js.native
-  sealed trait `7z` extends MacOsTargetName
+  sealed trait `3rd Party Mac Developer Installer`
+    extends StObject
+       with CertType
+  inline def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = ("3rd Party Mac Developer Installer").asInstanceOf[`3rd Party Mac Developer Installer`]
   
   @js.native
-  sealed trait Bintray extends js.Object
+  sealed trait `7z`
+    extends StObject
+       with MacOsTargetName
+  inline def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   
   @js.native
-  sealed trait Copy extends js.Object
+  sealed trait `Apple Development`
+    extends StObject
+       with CertType
+  inline def `Apple Development`: `Apple Development` = ("Apple Development").asInstanceOf[`Apple Development`]
   
   @js.native
-  sealed trait DEFAULT extends js.Object
+  sealed trait `Apple Distribution`
+    extends StObject
+       with CertType
+  inline def `Apple Distribution`: `Apple Distribution` = ("Apple Distribution").asInstanceOf[`Apple Distribution`]
   
   @js.native
-  sealed trait Deflate extends js.Object
+  sealed trait Copy extends StObject
+  inline def Copy: Copy = "Copy".asInstanceOf[Copy]
   
   @js.native
-  sealed trait `Developer ID Application` extends CertType
+  sealed trait DEFAULT extends StObject
+  inline def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
-  sealed trait `Developer ID Installer` extends CertType
+  sealed trait DRAFT extends StObject
+  inline def DRAFT: DRAFT = "DRAFT".asInstanceOf[DRAFT]
   
   @js.native
-  sealed trait Dotblockmap extends js.Object
+  sealed trait Deflate extends StObject
+  inline def Deflate: Deflate = "Deflate".asInstanceOf[Deflate]
   
   @js.native
-  sealed trait Editor extends js.Object
+  sealed trait `Developer ID Application`
+    extends StObject
+       with CertType
+  inline def `Developer ID Application`: `Developer ID Application` = ("Developer ID Application").asInstanceOf[`Developer ID Application`]
   
   @js.native
-  sealed trait LZMA extends js.Object
+  sealed trait `Developer ID Installer`
+    extends StObject
+       with CertType
+  inline def `Developer ID Installer`: `Developer ID Installer` = ("Developer ID Installer").asInstanceOf[`Developer ID Installer`]
   
   @js.native
-  sealed trait `Mac Developer` extends CertType
+  sealed trait Editor extends StObject
+  inline def Editor: Editor = "Editor".asInstanceOf[Editor]
   
   @js.native
-  sealed trait None extends js.Object
+  sealed trait FAILED extends StObject
+  inline def FAILED: FAILED = "FAILED".asInstanceOf[FAILED]
   
   @js.native
-  sealed trait `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed` extends js.Object
+  sealed trait LZMA extends StObject
+  inline def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
   
   @js.native
-  sealed trait S3 extends js.Object
+  sealed trait `Mac Developer`
+    extends StObject
+       with CertType
+  inline def `Mac Developer`: `Mac Developer` = ("Mac Developer").asInstanceOf[`Mac Developer`]
   
   @js.native
-  sealed trait Shell extends js.Object
+  sealed trait None extends StObject
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
-  sealed trait Slashopt extends js.Object
+  sealed trait PUBLISHED extends StObject
+  inline def PUBLISHED: PUBLISHED = "PUBLISHED".asInstanceOf[PUBLISHED]
   
   @js.native
-  sealed trait Spaces extends js.Object
+  sealed trait SHA256 extends StObject
+  inline def SHA256: SHA256 = "SHA256".asInstanceOf[SHA256]
   
   @js.native
-  sealed trait UDBZ extends js.Object
+  sealed trait Shell extends StObject
+  inline def Shell: Shell = "Shell".asInstanceOf[Shell]
   
   @js.native
-  sealed trait UDCO extends js.Object
+  sealed trait UDBZ extends StObject
+  inline def UDBZ: UDBZ = "UDBZ".asInstanceOf[UDBZ]
   
   @js.native
-  sealed trait UDRO extends js.Object
+  sealed trait UDCO extends StObject
+  inline def UDCO: UDCO = "UDCO".asInstanceOf[UDCO]
   
   @js.native
-  sealed trait UDRW extends js.Object
+  sealed trait UDRO extends StObject
+  inline def UDRO: UDRO = "UDRO".asInstanceOf[UDRO]
   
   @js.native
-  sealed trait UDZO extends js.Object
+  sealed trait UDRW extends StObject
+  inline def UDRW: UDRW = "UDRW".asInstanceOf[UDRW]
   
   @js.native
-  sealed trait ULFO extends js.Object
+  sealed trait UDZO extends StObject
+  inline def UDZO: UDZO = "UDZO".asInstanceOf[UDZO]
   
   @js.native
-  sealed trait Viewer extends js.Object
+  sealed trait ULFO extends StObject
+  inline def ULFO: ULFO = "ULFO".asInstanceOf[ULFO]
   
   @js.native
-  sealed trait admin extends js.Object
+  sealed trait UPLOADED extends StObject
+  inline def UPLOADED: UPLOADED = "UPLOADED".asInstanceOf[UPLOADED]
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait Viewer extends StObject
+  inline def Viewer: Viewer = "Viewer".asInstanceOf[Viewer]
   
   @js.native
-  sealed trait asInvoker extends RequestedExecutionLevel
+  sealed trait WAITING extends StObject
+  inline def WAITING: WAITING = "WAITING".asInstanceOf[WAITING]
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait YANKED extends StObject
+  inline def YANKED: YANKED = "YANKED".asInstanceOf[YANKED]
   
   @js.native
-  sealed trait bottom extends BackgroundAlignment
+  sealed trait accounts extends StObject
+  inline def accounts: accounts = "accounts".asInstanceOf[accounts]
   
   @js.native
-  sealed trait bottomleft extends BackgroundAlignment
+  sealed trait admin extends StObject
+  inline def admin: admin = "admin".asInstanceOf[admin]
   
   @js.native
-  sealed trait bottomright extends BackgroundAlignment
+  sealed trait alpha extends StObject
+  inline def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
-  sealed trait bzip2 extends js.Object
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait center extends BackgroundAlignment
+  sealed trait artifacts extends StObject
+  inline def artifacts: artifacts = "artifacts".asInstanceOf[artifacts]
   
   @js.native
-  sealed trait classic extends js.Object
+  sealed trait asInvoker
+    extends StObject
+       with RequestedExecutionLevel
+  inline def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   
   @js.native
-  sealed trait `comDotproton-nativeDot` extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait darwin extends ElectronPlatformName
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait default_ extends MacOsTargetName
+  sealed trait beta extends StObject
+  inline def beta: beta = "beta".asInstanceOf[beta]
   
   @js.native
-  sealed trait devel extends js.Object
+  sealed trait bottom
+    extends StObject
+       with BackgroundAlignment
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait development extends js.Object
+  sealed trait bottomleft
+    extends StObject
+       with BackgroundAlignment
+  inline def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
   
   @js.native
-  sealed trait devmode extends js.Object
+  sealed trait bottomright
+    extends StObject
+       with BackgroundAlignment
+  inline def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   
   @js.native
-  sealed trait dir extends MacOsTargetName
+  sealed trait bzip2 extends StObject
+  inline def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
   
   @js.native
-  sealed trait distribution extends js.Object
+  sealed trait center
+    extends StObject
+       with BackgroundAlignment
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait dmg extends MacOsTargetName
+  sealed trait classic extends StObject
+  inline def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
-  sealed trait elementary extends js.Object
+  sealed trait darwin
+    extends StObject
+       with ElectronPlatformName
+  inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait default_
+    extends StObject
+       with MacOsTargetName
+  inline def default_ : default_ = "default".asInstanceOf[default_]
   
   @js.native
-  sealed trait gz extends js.Object
+  sealed trait dev extends StObject
+  inline def dev: dev = "dev".asInstanceOf[dev]
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait devel extends StObject
+  inline def devel: devel = "devel".asInstanceOf[devel]
   
   @js.native
-  sealed trait highest extends js.Object
+  sealed trait development extends StObject
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
-  sealed trait highestAvailable extends RequestedExecutionLevel
+  sealed trait devmode extends StObject
+  inline def devmode: devmode = "devmode".asInstanceOf[devmode]
   
   @js.native
-  sealed trait icns extends IconFormat
+  sealed trait dir
+    extends StObject
+       with MacOsTargetName
+  inline def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait ico extends IconFormat
+  sealed trait distribution extends StObject
+  inline def distribution: distribution = "distribution".asInstanceOf[distribution]
   
   @js.native
-  sealed trait imlCommahprofCommaorigCommapycCommapyoCommarbcCommaswpCommacsprojCommaslnCommasuoCommaxprojCommaccCommadDotts extends js.Object
+  sealed trait dmg
+    extends StObject
+       with MacOsTargetName
+  inline def dmg: dmg = "dmg".asInstanceOf[dmg]
   
   @js.native
-  sealed trait left extends BackgroundAlignment
+  sealed trait elementary extends StObject
+  inline def elementary: elementary = "elementary".asInstanceOf[elementary]
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait linux extends ElectronPlatformName
+  sealed trait gz extends StObject
+  inline def gz: gz = "gz".asInstanceOf[gz]
+  
+  @js.native
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
+  
+  @js.native
+  sealed trait highest extends StObject
+  inline def highest: highest = "highest".asInstanceOf[highest]
+  
+  @js.native
+  sealed trait highestAvailable
+    extends StObject
+       with RequestedExecutionLevel
+  inline def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
+  
+  @js.native
+  sealed trait icns
+    extends StObject
+       with IconFormat
+  inline def icns: icns = "icns".asInstanceOf[icns]
+  
+  @js.native
+  sealed trait ico
+    extends StObject
+       with IconFormat
+  inline def ico: ico = "ico".asInstanceOf[ico]
+  
+  @js.native
+  sealed trait left
+    extends StObject
+       with BackgroundAlignment
+  inline def left: left = "left".asInstanceOf[left]
+  
+  @js.native
+  sealed trait link extends StObject
+  inline def link: link = "link".asInstanceOf[link]
+  
+  @js.native
+  sealed trait linux
+    extends StObject
+       with ElectronPlatformName
+  inline def linux: linux = "linux".asInstanceOf[linux]
+  
+  @js.native
+  sealed trait lzo extends StObject
+  inline def lzo: lzo = "lzo".asInstanceOf[lzo]
   
   @js.native
   sealed trait mas
-    extends ElectronPlatformName
+    extends StObject
+       with ElectronPlatformName
        with MacOsTargetName
+  inline def mas: mas = "mas".asInstanceOf[mas]
   
   @js.native
-  sealed trait `mas-dev` extends MacOsTargetName
+  sealed trait `mas-dev`
+    extends StObject
+       with MacOsTargetName
+  inline def `mas-dev`: `mas-dev` = "mas-dev".asInstanceOf[`mas-dev`]
   
   @js.native
-  sealed trait maximum extends CompressionLevel
+  sealed trait maximum
+    extends StObject
+       with CompressionLevel
+  inline def maximum: maximum = "maximum".asInstanceOf[maximum]
   
   @js.native
-  sealed trait none_ extends BackgroundScaling
+  sealed trait none_
+    extends StObject
+       with BackgroundScaling
+  inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
-  sealed trait normal extends CompressionLevel
+  sealed trait normal
+    extends StObject
+       with CompressionLevel
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait pkg extends MacOsTargetName
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait proportional extends BackgroundScaling
+  sealed trait pkg
+    extends StObject
+       with MacOsTargetName
+  inline def pkg: pkg = "pkg".asInstanceOf[pkg]
   
   @js.native
-  sealed trait proton extends js.Object
+  sealed trait products extends StObject
+  inline def products: products = "products".asInstanceOf[products]
   
   @js.native
-  sealed trait requireAdministrator extends RequestedExecutionLevel
+  sealed trait proportional
+    extends StObject
+       with BackgroundScaling
+  inline def proportional: proportional = "proportional".asInstanceOf[proportional]
   
   @js.native
-  sealed trait right extends BackgroundAlignment
+  sealed trait rc extends StObject
+  inline def rc: rc = "rc".asInstanceOf[rc]
   
   @js.native
-  sealed trait running extends js.Object
+  sealed trait releases extends StObject
+  inline def releases: releases = "releases".asInstanceOf[releases]
   
   @js.native
-  sealed trait set extends IconFormat
+  sealed trait requireAdministrator
+    extends StObject
+       with RequestedExecutionLevel
+  inline def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait right
+    extends StObject
+       with BackgroundAlignment
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait running extends StObject
+  inline def running: running = "running".asInstanceOf[running]
   
   @js.native
-  sealed trait snapStore extends js.Object
+  sealed trait set
+    extends StObject
+       with IconFormat
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait stable extends js.Object
+  sealed trait sha1 extends StObject
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
-  sealed trait stopped extends js.Object
+  sealed trait sha256_ extends StObject
+  inline def sha256_ : sha256_ = "sha256".asInstanceOf[sha256_]
   
   @js.native
-  sealed trait store extends CompressionLevel
+  sealed trait stable extends StObject
+  inline def stable: stable = "stable".asInstanceOf[stable]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait stopped extends StObject
+  inline def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native
-  sealed trait suspended extends js.Object
+  sealed trait store
+    extends StObject
+       with CompressionLevel
+  inline def store: store = "store".asInstanceOf[store]
   
   @js.native
-  sealed trait tarDotbz2 extends MacOsTargetName
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait tarDotgz extends MacOsTargetName
+  sealed trait suspended extends StObject
+  inline def suspended: suspended = "suspended".asInstanceOf[suspended]
   
   @js.native
-  sealed trait tarDotlz extends MacOsTargetName
+  sealed trait tarDotbz2
+    extends StObject
+       with MacOsTargetName
+  inline def tarDotbz2: tarDotbz2 = "tar.bz2".asInstanceOf[tarDotbz2]
   
   @js.native
-  sealed trait tarDotxz extends MacOsTargetName
+  sealed trait tarDotgz
+    extends StObject
+       with MacOsTargetName
+  inline def tarDotgz: tarDotgz = "tar.gz".asInstanceOf[tarDotgz]
   
   @js.native
-  sealed trait tofit extends BackgroundScaling
+  sealed trait tarDotlz
+    extends StObject
+       with MacOsTargetName
+  inline def tarDotlz: tarDotlz = "tar.lz".asInstanceOf[tarDotlz]
   
   @js.native
-  sealed trait top extends BackgroundAlignment
+  sealed trait tarDotxz
+    extends StObject
+       with MacOsTargetName
+  inline def tarDotxz: tarDotxz = "tar.xz".asInstanceOf[tarDotxz]
   
   @js.native
-  sealed trait topleft extends BackgroundAlignment
+  sealed trait tofit
+    extends StObject
+       with BackgroundScaling
+  inline def tofit: tofit = "tofit".asInstanceOf[tofit]
   
   @js.native
-  sealed trait topright extends BackgroundAlignment
+  sealed trait top
+    extends StObject
+       with BackgroundAlignment
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait ubuntu extends js.Object
+  sealed trait topleft
+    extends StObject
+       with BackgroundAlignment
+  inline def topleft: topleft = "topleft".asInstanceOf[topleft]
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait topright
+    extends StObject
+       with BackgroundAlignment
+  inline def topright: topright = "topright".asInstanceOf[topright]
   
   @js.native
-  sealed trait upgrade extends js.Object
+  sealed trait ubuntu extends StObject
+  inline def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
   
   @js.native
-  sealed trait `win-10` extends js.Object
+  sealed trait upgrade extends StObject
+  inline def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   
   @js.native
-  sealed trait win32 extends ElectronPlatformName
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait xz extends js.Object
+  sealed trait `win-10` extends StObject
+  inline def `win-10`: `win-10` = "win-10".asInstanceOf[`win-10`]
   
   @js.native
-  sealed trait zip extends MacOsTargetName
+  sealed trait `win-11` extends StObject
+  inline def `win-11`: `win-11` = "win-11".asInstanceOf[`win-11`]
   
-  @scala.inline
-  def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = "3rd Party Mac Developer Application".asInstanceOf[`3rd Party Mac Developer Application`]
-  @scala.inline
-  def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = "3rd Party Mac Developer Installer".asInstanceOf[`3rd Party Mac Developer Installer`]
-  @scala.inline
-  def `7z`: `7z` = "7z".asInstanceOf[`7z`]
-  @scala.inline
-  def Bintray: Bintray = "Bintray".asInstanceOf[Bintray]
-  @scala.inline
-  def Copy: Copy = "Copy".asInstanceOf[Copy]
-  @scala.inline
-  def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
-  @scala.inline
-  def Deflate: Deflate = "Deflate".asInstanceOf[Deflate]
-  @scala.inline
-  def `Developer ID Application`: `Developer ID Application` = "Developer ID Application".asInstanceOf[`Developer ID Application`]
-  @scala.inline
-  def `Developer ID Installer`: `Developer ID Installer` = "Developer ID Installer".asInstanceOf[`Developer ID Installer`]
-  @scala.inline
-  def Dotblockmap: Dotblockmap = ".blockmap".asInstanceOf[Dotblockmap]
-  @scala.inline
-  def Editor: Editor = "Editor".asInstanceOf[Editor]
-  @scala.inline
-  def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
-  @scala.inline
-  def `Mac Developer`: `Mac Developer` = "Mac Developer".asInstanceOf[`Mac Developer`]
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
-  @scala.inline
-  def `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`: `Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed` = "Please specify author 'email' in the application package.json\n\nSee https://docs.npmjs.com/files/package.json#people-fields-author-contributors\n\nIt is required to set Linux .deb package maintainer. Or you can set maintainer in the custom linux options.\n(see https://www.electron.build/configuration/linux).\n".asInstanceOf[`Please specify author ApostropheemailApostrophe in the application packageDotjsonLinefeedLinefeedSee httpsColonSlashSlashdocsDotnpmjsDotcomSlashfilesSlashpackageDotjsonNumbersignpeople-fields-author-contributorsLinefeedLinefeedIt is required to set Linux Dotdeb package maintainerDot Or you can set maintainer in the custom linux optionsDotLinefeedLeftparenthesissee httpsColonSlashSlashwwwDotelectronDotbuildSlashconfigurationSlashlinuxRightparenthesisDotLinefeed`]
-  @scala.inline
-  def S3: S3 = "S3".asInstanceOf[S3]
-  @scala.inline
-  def Shell: Shell = "Shell".asInstanceOf[Shell]
-  @scala.inline
-  def Slashopt: Slashopt = "/opt".asInstanceOf[Slashopt]
-  @scala.inline
-  def Spaces: Spaces = "Spaces".asInstanceOf[Spaces]
-  @scala.inline
-  def UDBZ: UDBZ = "UDBZ".asInstanceOf[UDBZ]
-  @scala.inline
-  def UDCO: UDCO = "UDCO".asInstanceOf[UDCO]
-  @scala.inline
-  def UDRO: UDRO = "UDRO".asInstanceOf[UDRO]
-  @scala.inline
-  def UDRW: UDRW = "UDRW".asInstanceOf[UDRW]
-  @scala.inline
-  def UDZO: UDZO = "UDZO".asInstanceOf[UDZO]
-  @scala.inline
-  def ULFO: ULFO = "ULFO".asInstanceOf[ULFO]
-  @scala.inline
-  def Viewer: Viewer = "Viewer".asInstanceOf[Viewer]
-  @scala.inline
-  def admin: admin = "admin".asInstanceOf[admin]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
-  @scala.inline
-  def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
-  @scala.inline
-  def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def classic: classic = "classic".asInstanceOf[classic]
-  @scala.inline
-  def `comDotproton-nativeDot`: `comDotproton-nativeDot` = "com.proton-native.".asInstanceOf[`comDotproton-nativeDot`]
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
-  @scala.inline
-  def default_ : default_ = "default".asInstanceOf[default_]
-  @scala.inline
-  def devel: devel = "devel".asInstanceOf[devel]
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
-  @scala.inline
-  def devmode: devmode = "devmode".asInstanceOf[devmode]
-  @scala.inline
-  def dir: dir = "dir".asInstanceOf[dir]
-  @scala.inline
-  def distribution: distribution = "distribution".asInstanceOf[distribution]
-  @scala.inline
-  def dmg: dmg = "dmg".asInstanceOf[dmg]
-  @scala.inline
-  def elementary: elementary = "elementary".asInstanceOf[elementary]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def gz: gz = "gz".asInstanceOf[gz]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def highest: highest = "highest".asInstanceOf[highest]
-  @scala.inline
-  def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
-  @scala.inline
-  def icns: icns = "icns".asInstanceOf[icns]
-  @scala.inline
-  def ico: ico = "ico".asInstanceOf[ico]
-  @scala.inline
-  def imlCommahprofCommaorigCommapycCommapyoCommarbcCommaswpCommacsprojCommaslnCommasuoCommaxprojCommaccCommadDotts: imlCommahprofCommaorigCommapycCommapyoCommarbcCommaswpCommacsprojCommaslnCommasuoCommaxprojCommaccCommadDotts = "iml,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts".asInstanceOf[imlCommahprofCommaorigCommapycCommapyoCommarbcCommaswpCommacsprojCommaslnCommasuoCommaxprojCommaccCommadDotts]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
-  @scala.inline
-  def mas: mas = "mas".asInstanceOf[mas]
-  @scala.inline
-  def `mas-dev`: `mas-dev` = "mas-dev".asInstanceOf[`mas-dev`]
-  @scala.inline
-  def maximum: maximum = "maximum".asInstanceOf[maximum]
-  @scala.inline
-  def none_ : none_ = "none".asInstanceOf[none_]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def pkg: pkg = "pkg".asInstanceOf[pkg]
-  @scala.inline
-  def proportional: proportional = "proportional".asInstanceOf[proportional]
-  @scala.inline
-  def proton: proton = "proton".asInstanceOf[proton]
-  @scala.inline
-  def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def running: running = "running".asInstanceOf[running]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
-  @scala.inline
-  def snapStore: snapStore = "snapStore".asInstanceOf[snapStore]
-  @scala.inline
-  def stable: stable = "stable".asInstanceOf[stable]
-  @scala.inline
-  def stopped: stopped = "stopped".asInstanceOf[stopped]
-  @scala.inline
-  def store: store = "store".asInstanceOf[store]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def suspended: suspended = "suspended".asInstanceOf[suspended]
-  @scala.inline
-  def tarDotbz2: tarDotbz2 = "tar.bz2".asInstanceOf[tarDotbz2]
-  @scala.inline
-  def tarDotgz: tarDotgz = "tar.gz".asInstanceOf[tarDotgz]
-  @scala.inline
-  def tarDotlz: tarDotlz = "tar.lz".asInstanceOf[tarDotlz]
-  @scala.inline
-  def tarDotxz: tarDotxz = "tar.xz".asInstanceOf[tarDotxz]
-  @scala.inline
-  def tofit: tofit = "tofit".asInstanceOf[tofit]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
-  @scala.inline
-  def topleft: topleft = "topleft".asInstanceOf[topleft]
-  @scala.inline
-  def topright: topright = "topright".asInstanceOf[topright]
-  @scala.inline
-  def ubuntu: ubuntu = "ubuntu".asInstanceOf[ubuntu]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def `win-10`: `win-10` = "win-10".asInstanceOf[`win-10`]
-  @scala.inline
-  def win32: win32 = "win32".asInstanceOf[win32]
-  @scala.inline
-  def xz: xz = "xz".asInstanceOf[xz]
-  @scala.inline
-  def zip: zip = "zip".asInstanceOf[zip]
+  @js.native
+  sealed trait win32
+    extends StObject
+       with ElectronPlatformName
+  inline def win32: win32 = "win32".asInstanceOf[win32]
+  
+  @js.native
+  sealed trait xz extends StObject
+  inline def xz: xz = "xz".asInstanceOf[xz]
+  
+  @js.native
+  sealed trait zip
+    extends StObject
+       with MacOsTargetName
+  inline def zip: zip = "zip".asInstanceOf[zip]
+  
+  @js.native
+  sealed trait zlib extends StObject
+  inline def zlib: zlib = "zlib".asInstanceOf[zlib]
 }
-

@@ -1,191 +1,187 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`17`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`18`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`19`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`20`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`21`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`22`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`23`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`24`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`25`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`26`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`27`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`28`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`29`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`30`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`31`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`32`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`33`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`34`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`35`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`36`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`37`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`38`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`39`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`40`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`41`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`42`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`43`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
+import typingsJapgolly.activexOffice.activexOfficeInts.`-2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`10`
+import typingsJapgolly.activexOffice.activexOfficeInts.`11`
+import typingsJapgolly.activexOffice.activexOfficeInts.`12`
+import typingsJapgolly.activexOffice.activexOfficeInts.`13`
+import typingsJapgolly.activexOffice.activexOfficeInts.`14`
+import typingsJapgolly.activexOffice.activexOfficeInts.`15`
+import typingsJapgolly.activexOffice.activexOfficeInts.`16`
+import typingsJapgolly.activexOffice.activexOfficeInts.`17`
+import typingsJapgolly.activexOffice.activexOfficeInts.`18`
+import typingsJapgolly.activexOffice.activexOfficeInts.`19`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`20`
+import typingsJapgolly.activexOffice.activexOfficeInts.`21`
+import typingsJapgolly.activexOffice.activexOfficeInts.`22`
+import typingsJapgolly.activexOffice.activexOfficeInts.`23`
+import typingsJapgolly.activexOffice.activexOfficeInts.`24`
+import typingsJapgolly.activexOffice.activexOfficeInts.`25`
+import typingsJapgolly.activexOffice.activexOfficeInts.`26`
+import typingsJapgolly.activexOffice.activexOfficeInts.`27`
+import typingsJapgolly.activexOffice.activexOfficeInts.`28`
+import typingsJapgolly.activexOffice.activexOfficeInts.`29`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`30`
+import typingsJapgolly.activexOffice.activexOfficeInts.`31`
+import typingsJapgolly.activexOffice.activexOfficeInts.`32`
+import typingsJapgolly.activexOffice.activexOfficeInts.`33`
+import typingsJapgolly.activexOffice.activexOfficeInts.`34`
+import typingsJapgolly.activexOffice.activexOfficeInts.`35`
+import typingsJapgolly.activexOffice.activexOfficeInts.`36`
+import typingsJapgolly.activexOffice.activexOfficeInts.`37`
+import typingsJapgolly.activexOffice.activexOfficeInts.`38`
+import typingsJapgolly.activexOffice.activexOfficeInts.`39`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`40`
+import typingsJapgolly.activexOffice.activexOfficeInts.`41`
+import typingsJapgolly.activexOffice.activexOfficeInts.`42`
+import typingsJapgolly.activexOffice.activexOfficeInts.`43`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`5`
+import typingsJapgolly.activexOffice.activexOfficeInts.`6`
+import typingsJapgolly.activexOffice.activexOfficeInts.`7`
+import typingsJapgolly.activexOffice.activexOfficeInts.`8`
+import typingsJapgolly.activexOffice.activexOfficeInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`10`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`11`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`12`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`13`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`14`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`15`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`16`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`17`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`18`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`19`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`20`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`21`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`22`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`23`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`24`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`25`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`26`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`27`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`28`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`29`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`30`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`31`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`32`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`33`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`34`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`35`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`36`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`37`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`38`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`39`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`40`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`41`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`42`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`43`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`5`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`6`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`7`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`8`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`9`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`10`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`11`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`12`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`13`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`14`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`15`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`16`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`17`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`18`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`19`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`20`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`21`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`22`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`23`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`24`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`25`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`26`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`27`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`28`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`29`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`30`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`31`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`32`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`33`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`34`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`35`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`36`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`37`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`38`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`39`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`40`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`41`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`42`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`43`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`5`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`6`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`7`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`8`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`9`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`-2`
 */
-trait MsoShadowType extends js.Object
-
+trait MsoShadowType extends StObject
 object MsoShadowType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoShadow1: `1` = this.cast(1)
-  @scala.inline
-  def msoShadow10: `10` = this.cast(10)
-  @scala.inline
-  def msoShadow11: `11` = this.cast(11)
-  @scala.inline
-  def msoShadow12: `12` = this.cast(12)
-  @scala.inline
-  def msoShadow13: `13` = this.cast(13)
-  @scala.inline
-  def msoShadow14: `14` = this.cast(14)
-  @scala.inline
-  def msoShadow15: `15` = this.cast(15)
-  @scala.inline
-  def msoShadow16: `16` = this.cast(16)
-  @scala.inline
-  def msoShadow17: `17` = this.cast(17)
-  @scala.inline
-  def msoShadow18: `18` = this.cast(18)
-  @scala.inline
-  def msoShadow19: `19` = this.cast(19)
-  @scala.inline
-  def msoShadow2: `2` = this.cast(2)
-  @scala.inline
-  def msoShadow20: `20` = this.cast(20)
-  @scala.inline
-  def msoShadow21: `21` = this.cast(21)
-  @scala.inline
-  def msoShadow22: `22` = this.cast(22)
-  @scala.inline
-  def msoShadow23: `23` = this.cast(23)
-  @scala.inline
-  def msoShadow24: `24` = this.cast(24)
-  @scala.inline
-  def msoShadow25: `25` = this.cast(25)
-  @scala.inline
-  def msoShadow26: `26` = this.cast(26)
-  @scala.inline
-  def msoShadow27: `27` = this.cast(27)
-  @scala.inline
-  def msoShadow28: `28` = this.cast(28)
-  @scala.inline
-  def msoShadow29: `29` = this.cast(29)
-  @scala.inline
-  def msoShadow3: `3` = this.cast(3)
-  @scala.inline
-  def msoShadow30: `30` = this.cast(30)
-  @scala.inline
-  def msoShadow31: `31` = this.cast(31)
-  @scala.inline
-  def msoShadow32: `32` = this.cast(32)
-  @scala.inline
-  def msoShadow33: `33` = this.cast(33)
-  @scala.inline
-  def msoShadow34: `34` = this.cast(34)
-  @scala.inline
-  def msoShadow35: `35` = this.cast(35)
-  @scala.inline
-  def msoShadow36: `36` = this.cast(36)
-  @scala.inline
-  def msoShadow37: `37` = this.cast(37)
-  @scala.inline
-  def msoShadow38: `38` = this.cast(38)
-  @scala.inline
-  def msoShadow39: `39` = this.cast(39)
-  @scala.inline
-  def msoShadow4: `4` = this.cast(4)
-  @scala.inline
-  def msoShadow40: `40` = this.cast(40)
-  @scala.inline
-  def msoShadow41: `41` = this.cast(41)
-  @scala.inline
-  def msoShadow42: `42` = this.cast(42)
-  @scala.inline
-  def msoShadow43: `43` = this.cast(43)
-  @scala.inline
-  def msoShadow5: `5` = this.cast(5)
-  @scala.inline
-  def msoShadow6: `6` = this.cast(6)
-  @scala.inline
-  def msoShadow7: `7` = this.cast(7)
-  @scala.inline
-  def msoShadow8: `8` = this.cast(8)
-  @scala.inline
-  def msoShadow9: `9` = this.cast(9)
-  @scala.inline
-  def msoShadowMixed: `-2` = this.cast(-2)
+  
+  inline def msoShadow1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoShadow10: `10` = 10.asInstanceOf[`10`]
+  
+  inline def msoShadow11: `11` = 11.asInstanceOf[`11`]
+  
+  inline def msoShadow12: `12` = 12.asInstanceOf[`12`]
+  
+  inline def msoShadow13: `13` = 13.asInstanceOf[`13`]
+  
+  inline def msoShadow14: `14` = 14.asInstanceOf[`14`]
+  
+  inline def msoShadow15: `15` = 15.asInstanceOf[`15`]
+  
+  inline def msoShadow16: `16` = 16.asInstanceOf[`16`]
+  
+  inline def msoShadow17: `17` = 17.asInstanceOf[`17`]
+  
+  inline def msoShadow18: `18` = 18.asInstanceOf[`18`]
+  
+  inline def msoShadow19: `19` = 19.asInstanceOf[`19`]
+  
+  inline def msoShadow2: `2` = 2.asInstanceOf[`2`]
+  
+  inline def msoShadow20: `20` = 20.asInstanceOf[`20`]
+  
+  inline def msoShadow21: `21` = 21.asInstanceOf[`21`]
+  
+  inline def msoShadow22: `22` = 22.asInstanceOf[`22`]
+  
+  inline def msoShadow23: `23` = 23.asInstanceOf[`23`]
+  
+  inline def msoShadow24: `24` = 24.asInstanceOf[`24`]
+  
+  inline def msoShadow25: `25` = 25.asInstanceOf[`25`]
+  
+  inline def msoShadow26: `26` = 26.asInstanceOf[`26`]
+  
+  inline def msoShadow27: `27` = 27.asInstanceOf[`27`]
+  
+  inline def msoShadow28: `28` = 28.asInstanceOf[`28`]
+  
+  inline def msoShadow29: `29` = 29.asInstanceOf[`29`]
+  
+  inline def msoShadow3: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoShadow30: `30` = 30.asInstanceOf[`30`]
+  
+  inline def msoShadow31: `31` = 31.asInstanceOf[`31`]
+  
+  inline def msoShadow32: `32` = 32.asInstanceOf[`32`]
+  
+  inline def msoShadow33: `33` = 33.asInstanceOf[`33`]
+  
+  inline def msoShadow34: `34` = 34.asInstanceOf[`34`]
+  
+  inline def msoShadow35: `35` = 35.asInstanceOf[`35`]
+  
+  inline def msoShadow36: `36` = 36.asInstanceOf[`36`]
+  
+  inline def msoShadow37: `37` = 37.asInstanceOf[`37`]
+  
+  inline def msoShadow38: `38` = 38.asInstanceOf[`38`]
+  
+  inline def msoShadow39: `39` = 39.asInstanceOf[`39`]
+  
+  inline def msoShadow4: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoShadow40: `40` = 40.asInstanceOf[`40`]
+  
+  inline def msoShadow41: `41` = 41.asInstanceOf[`41`]
+  
+  inline def msoShadow42: `42` = 42.asInstanceOf[`42`]
+  
+  inline def msoShadow43: `43` = 43.asInstanceOf[`43`]
+  
+  inline def msoShadow5: `5` = 5.asInstanceOf[`5`]
+  
+  inline def msoShadow6: `6` = 6.asInstanceOf[`6`]
+  
+  inline def msoShadow7: `7` = 7.asInstanceOf[`7`]
+  
+  inline def msoShadow8: `8` = 8.asInstanceOf[`8`]
+  
+  inline def msoShadow9: `9` = 9.asInstanceOf[`9`]
+  
+  inline def msoShadowMixed: `-2` = -2.asInstanceOf[`-2`]
 }
-

@@ -1,43 +1,55 @@
 package typingsJapgolly.uniApp
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SendSocketMessageOptions extends js.Object {
+trait SendSocketMessageOptions extends StObject {
+  
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
   var complete: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
+  
   /**
     * 需要发送的内容
     */
-  var data: js.UndefOr[String | scala.scalajs.js.typedarray.ArrayBuffer] = js.undefined
+  var data: js.UndefOr[String | js.typedarray.ArrayBuffer] = js.undefined
+  
   /**
     * 接口调用失败的回调函数
     */
   var fail: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
+  
   /**
     * 接口调用成功的回调函数
     */
   var success: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
 }
-
 object SendSocketMessageOptions {
-  @scala.inline
-  def apply(
-    complete: /* result */ GeneralCallbackResult => Callback = null,
-    data: String | scala.scalajs.js.typedarray.ArrayBuffer = null,
-    fail: /* result */ GeneralCallbackResult => Callback = null,
-    success: /* result */ GeneralCallbackResult => Callback = null
-  ): SendSocketMessageOptions = {
+  
+  inline def apply(): SendSocketMessageOptions = {
     val __obj = js.Dynamic.literal()
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.uniApp.GeneralCallbackResult) => complete(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.uniApp.GeneralCallbackResult) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.uniApp.GeneralCallbackResult) => success(t0).runNow()))
     __obj.asInstanceOf[SendSocketMessageOptions]
   }
+  
+  extension [Self <: SendSocketMessageOptions](x: Self) {
+    
+    inline def setComplete(value: /* result */ GeneralCallbackResult => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* result */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFail(value: /* result */ GeneralCallbackResult => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* result */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setSuccess(value: /* result */ GeneralCallbackResult => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* result */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

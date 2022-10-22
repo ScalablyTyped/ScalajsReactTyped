@@ -1,40 +1,81 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SwitchOptions extends js.Object {
+trait SwitchOptions
+  extends StObject
+     with AllEditorOptions {
+  
   var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, Unit]] = js.undefined
+  
   var checked: js.UndefOr[Boolean] = js.undefined
+  
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   var messages: js.UndefOr[SwitchMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
+  var size: js.UndefOr[String] = js.undefined
+  
+  var thumbRounded: js.UndefOr[String] = js.undefined
+  
+  var trackRounded: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object SwitchOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ SwitchChangeEvent => Callback = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    messages: SwitchMessages = null,
-    name: String = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    width: Double | String = null
-  ): SwitchOptions = {
+  
+  inline def apply(): SwitchOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.SwitchChangeEvent) => change(t0).runNow()))
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchOptions]
   }
+  
+  extension [Self <: SwitchOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ SwitchChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ SwitchChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setMessages(value: SwitchMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setThumbRounded(value: String): Self = StObject.set(x, "thumbRounded", value.asInstanceOf[js.Any])
+    
+    inline def setThumbRoundedUndefined: Self = StObject.set(x, "thumbRounded", js.undefined)
+    
+    inline def setTrackRounded(value: String): Self = StObject.set(x, "trackRounded", value.asInstanceOf[js.Any])
+    
+    inline def setTrackRoundedUndefined: Self = StObject.set(x, "trackRounded", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

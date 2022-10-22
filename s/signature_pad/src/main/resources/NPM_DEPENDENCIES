@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "signature_pad" : "4.0.8"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "signature_pad" : "4.0.8"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

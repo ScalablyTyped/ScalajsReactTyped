@@ -1,24 +1,27 @@
 package typingsJapgolly.winrtUwp.Windows.Media.SpeechRecognition
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a constraint for a SpeechRecognizer object. */
-trait ISpeechRecognitionConstraint extends js.Object {
+trait ISpeechRecognitionConstraint extends StObject {
+  
   /** Gets or sets whether the constraint can be used by the SpeechRecognizer object to perform recognition. */
   var isEnabled: Boolean
+  
   /** Gets or sets the weighted value of the constraint. */
   var probability: SpeechRecognitionConstraintProbability
+  
   /** Gets or sets a tag that can be useful for identifying the constraint. */
   var tag: String
+  
   /** Gets the type of the constraint. */
   var `type`: SpeechRecognitionConstraintType
 }
-
 object ISpeechRecognitionConstraint {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     isEnabled: Boolean,
     probability: SpeechRecognitionConstraintProbability,
     tag: String,
@@ -28,5 +31,15 @@ object ISpeechRecognitionConstraint {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISpeechRecognitionConstraint]
   }
+  
+  extension [Self <: ISpeechRecognitionConstraint](x: Self) {
+    
+    inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setProbability(value: SpeechRecognitionConstraintProbability): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: SpeechRecognitionConstraintType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

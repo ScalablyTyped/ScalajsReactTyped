@@ -1,44 +1,35 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.cardIndexNativeMod.CardNativeProps
-import typingsJapgolly.antdMobileRn.cardStyleIndexNativeMod.ICardStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libCardIndexDotnativeMod.CardNativeProps
+import typingsJapgolly.antdMobileRn.libCardStyleIndexDotnativeMod.ICardStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Card {
-  def apply(
-    full: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    styles: ICardStyle = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CardNativeProps, typingsJapgolly.antdMobileRn.mod.Card, Unit, CardNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.cardIndexNativeMod.CardNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.Card](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.cardIndexNativeMod.CardNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "Card")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.Card] {
+    
+    inline def full(value: Boolean): this.type = set("full", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: ICardStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Card.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CardNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

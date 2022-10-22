@@ -1,37 +1,29 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ValidationState extends js.Object
-
+sealed trait ValidationState extends StObject
 @JSGlobal("SP.JsGrid.ValidationState")
 @js.native
-object ValidationState extends js.Object {
+object ValidationState extends StObject {
+  
+  // 1,
   @js.native
-  sealed trait Invalid extends ValidationState
+  sealed trait Invalid
+    extends StObject
+       with ValidationState
   
-   // 1,
+  // 0,
   @js.native
-  sealed trait Pending extends ValidationState
+  sealed trait Pending
+    extends StObject
+       with ValidationState
   
-   // 0,
   @js.native
-  sealed trait Valid extends ValidationState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ValidationState with Double] = js.native
-  /* 2 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
-  
-  /* 1 */ @js.native
-  object Pending extends TopLevel[Pending with Double]
-  
-  /* 0 */ @js.native
-  object Valid extends TopLevel[Valid with Double]
-  
+  sealed trait Valid
+    extends StObject
+       with ValidationState
 }
-

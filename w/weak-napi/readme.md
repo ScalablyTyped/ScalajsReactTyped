@@ -1,7 +1,7 @@
 
 # Scala.js typings for weak-napi
 
-Typings are for version 1.0
+Typings are for version 2.0
 
 ## Library description:
 Make weak references to JavaScript Objects.
@@ -10,10 +10,10 @@ Make weak references to JavaScript Objects.
 | ------------------ | :-------------: |
 | Full name          | weak-napi |
 | Keywords           | weak, reference, js, javascript, object, function, callback, napi |
-| # releases         | 3 |
-| # dependents       | 6 |
-| # downloads        | 255533 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 213907.33333333334 |
+| # stars            | 38.0 |
 
 ## Links
 - [Homepage](https://github.com/node-ffi-napi/weak-napi#readme)

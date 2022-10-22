@@ -1,24 +1,26 @@
 package typingsJapgolly.amapJsApi.AMap
 
-import typingsJapgolly.std.HTMLImageElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 图片图层
   */
-@JSGlobal("AMap.ImageLayer")
 @js.native
-class ImageLayer () extends MediaLayer[HTMLImageElement] {
+trait ImageLayer
+  extends StObject
+     with MediaLayer[HTMLImageElement] {
+  
   /**
     * 返回Image的Url
     */
   def getImageUrl(): js.UndefOr[String] = js.native
+  
   /**
     * 修改Image的Url
     * @param url url
     */
   def setImageUrl(url: String): Unit = js.native
 }
-

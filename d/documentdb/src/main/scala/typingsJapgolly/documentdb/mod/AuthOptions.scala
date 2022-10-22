@@ -1,31 +1,42 @@
 package typingsJapgolly.documentdb.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AuthOptions extends js.Object {
+trait AuthOptions extends StObject {
+  
   /** The authorization master key to use to create the client. */
   var masterKey: js.UndefOr[String] = js.undefined
+  
   /** An array of {@link Permission} objects. */
   var permissionFeed: js.UndefOr[js.Array[Permission]] = js.undefined
+  
   /** An object that contains resources tokens. Keys for the object are resource Ids and values are the resource tokens. */
   var resourceTokens: js.UndefOr[StringDictionary[String]] = js.undefined
 }
-
 object AuthOptions {
-  @scala.inline
-  def apply(
-    masterKey: String = null,
-    permissionFeed: js.Array[Permission] = null,
-    resourceTokens: StringDictionary[String] = null
-  ): AuthOptions = {
+  
+  inline def apply(): AuthOptions = {
     val __obj = js.Dynamic.literal()
-    if (masterKey != null) __obj.updateDynamic("masterKey")(masterKey.asInstanceOf[js.Any])
-    if (permissionFeed != null) __obj.updateDynamic("permissionFeed")(permissionFeed.asInstanceOf[js.Any])
-    if (resourceTokens != null) __obj.updateDynamic("resourceTokens")(resourceTokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthOptions]
   }
+  
+  extension [Self <: AuthOptions](x: Self) {
+    
+    inline def setMasterKey(value: String): Self = StObject.set(x, "masterKey", value.asInstanceOf[js.Any])
+    
+    inline def setMasterKeyUndefined: Self = StObject.set(x, "masterKey", js.undefined)
+    
+    inline def setPermissionFeed(value: js.Array[Permission]): Self = StObject.set(x, "permissionFeed", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionFeedUndefined: Self = StObject.set(x, "permissionFeed", js.undefined)
+    
+    inline def setPermissionFeedVarargs(value: Permission*): Self = StObject.set(x, "permissionFeed", js.Array(value*))
+    
+    inline def setResourceTokens(value: StringDictionary[String]): Self = StObject.set(x, "resourceTokens", value.asInstanceOf[js.Any])
+    
+    inline def setResourceTokensUndefined: Self = StObject.set(x, "resourceTokens", js.undefined)
+  }
 }
-

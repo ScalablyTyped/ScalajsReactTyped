@@ -1,7 +1,7 @@
 
 # Scala.js typings for postcss-modules-local-by-default
 
-Typings are for version 1.2
+Typings are for version 4.0
 
 ## Library description:
 A CSS Modules transform to make local scope the default
@@ -10,10 +10,10 @@ A CSS Modules transform to make local scope the default
 | ------------------ | :-------------: |
 | Full name          | postcss-modules-local-by-default |
 | Keywords           | css-modules, postcss, css, postcss-plugin |
-| # releases         | 11 |
-| # dependents       | 105 |
-| # downloads        | 255692619 |
-| # stars            | 3 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 7.269417833333333E7 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/css-modules/postcss-modules-local-by-default#readme)

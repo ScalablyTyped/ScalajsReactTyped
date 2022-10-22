@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "postcss-nested" : "6.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "postcss-nested" : "6.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

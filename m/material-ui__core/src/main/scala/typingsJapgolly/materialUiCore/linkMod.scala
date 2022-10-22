@@ -1,26 +1,33 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.linkLinkMod.LinkProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.linkLinkMod.LinkTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.a
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Link", JSImport.Namespace)
-@js.native
-object linkMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[LinkProps, ComponentState, js.Any] {
-    def this(props: LinkProps) = this()
-    def this(props: LinkProps, context: js.Any) = this()
-  }
+object linkMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Breadcrumbs](https://mui.com/components/breadcrumbs/)
+    * - [Links](https://mui.com/components/links/)
+    *
+    * API:
+    *
+    * - [Link API](https://mui.com/api/link/)
+    * - inherits [Typography API](https://mui.com/api/typography/)
+    */
+  @JSImport("@material-ui/core/Link", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[LinkProps]]
+  val default: OverridableComponent[LinkTypeMap[js.Object, a]] = js.native
   
+  type _To = OverridableComponent[LinkTypeMap[js.Object, a]]
+  
+  /* This means you don't have to write `default`, but can instead just say `linkMod.foo` */
+  override def _to: OverridableComponent[LinkTypeMap[js.Object, a]] = default
 }
-

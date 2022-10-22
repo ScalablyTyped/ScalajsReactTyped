@@ -1,15 +1,31 @@
 package typingsJapgolly.materialDialog
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.materialDom.focusTrapMod.FocusOptions
+import typingsJapgolly.materialDom.focusTrapMod.FocusTrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/dialog/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
-  def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element): js.Any = js.native
-  def createFocusTrapInstance(surfaceEl: Element, acceptButtonEl: Element, focusTrapFactory: MDCFocusTrapFactory): js.Any = js.native
-  type MDCFocusTrapFactory = js.Function2[/* a */ Element, /* b */ AnonClickOutsideDeactivates, js.Any]
+object utilMod {
+  
+  @JSImport("@material/dialog/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def areTopsMisaligned(els: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areTopsMisaligned")(els.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  inline def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any], initialFocusEl.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+  
+  inline def isScrollAtBottom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")().asInstanceOf[Boolean]
+  inline def isScrollAtBottom(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtBottom")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isScrollAtTop(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")().asInstanceOf[Boolean]
+  inline def isScrollAtTop(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollAtTop")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isScrollable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")().asInstanceOf[Boolean]
+  inline def isScrollable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  type MDCDialogFocusTrapFactory = js.Function2[/* element */ HTMLElement, /* options */ FocusOptions, FocusTrap]
 }
-

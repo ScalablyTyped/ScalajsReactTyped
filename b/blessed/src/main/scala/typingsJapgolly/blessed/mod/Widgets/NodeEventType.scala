@@ -1,8 +1,8 @@
 package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.blessed.blessedStrings.adopt
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.blessed.blessedStrings.attach
   - typingsJapgolly.blessed.blessedStrings.detach
 */
-trait NodeEventType extends js.Object
-
+trait NodeEventType extends StObject
 object NodeEventType {
-  @scala.inline
-  def adopt: typingsJapgolly.blessed.blessedStrings.adopt = this.cast("adopt")
-  @scala.inline
-  def attach: typingsJapgolly.blessed.blessedStrings.attach = this.cast("attach")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def detach: typingsJapgolly.blessed.blessedStrings.detach = this.cast("detach")
-  @scala.inline
-  def remove: typingsJapgolly.blessed.blessedStrings.remove = this.cast("remove")
-  @scala.inline
-  def reparent: typingsJapgolly.blessed.blessedStrings.reparent = this.cast("reparent")
+  
+  inline def adopt: typingsJapgolly.blessed.blessedStrings.adopt = "adopt".asInstanceOf[typingsJapgolly.blessed.blessedStrings.adopt]
+  
+  inline def attach: typingsJapgolly.blessed.blessedStrings.attach = "attach".asInstanceOf[typingsJapgolly.blessed.blessedStrings.attach]
+  
+  inline def detach: typingsJapgolly.blessed.blessedStrings.detach = "detach".asInstanceOf[typingsJapgolly.blessed.blessedStrings.detach]
+  
+  inline def remove: typingsJapgolly.blessed.blessedStrings.remove = "remove".asInstanceOf[typingsJapgolly.blessed.blessedStrings.remove]
+  
+  inline def reparent: typingsJapgolly.blessed.blessedStrings.reparent = "reparent".asInstanceOf[typingsJapgolly.blessed.blessedStrings.reparent]
 }
-

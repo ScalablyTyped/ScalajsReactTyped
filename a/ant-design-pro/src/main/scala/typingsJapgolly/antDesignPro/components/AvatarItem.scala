@@ -1,49 +1,50 @@
 package typingsJapgolly.antDesignPro.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignPro.avatarItemMod.AvatarItemProps
-import typingsJapgolly.antDesignPro.avatarItemMod.SizeType
-import typingsJapgolly.antDesignPro.avatarItemMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignPro.libAvatarListAvatarItemMod.AvatarItemProps
+import typingsJapgolly.antDesignPro.libAvatarListAvatarItemMod.SizeType
+import typingsJapgolly.antDesignPro.libAvatarListAvatarItemMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AvatarItem {
-  def apply(
-    src: String,
-    onClick: js.UndefOr[Callback] = js.undefined,
-    size: SizeType = null,
-    style: CSSProperties = null,
-    tips: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AvatarItemProps, default, Unit, AvatarItemProps] = {
-    val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
   
-      onClick.foreach(p => __obj.updateDynamic("onClick")(p.toJsFn))
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tips != null) __obj.updateDynamic("tips")(tips.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.avatarItemMod.AvatarItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.avatarItemMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.avatarItemMod.AvatarItemProps])(children: _*)
+  inline def apply(src: String): Builder = {
+    val __props = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AvatarItemProps]))
   }
+  
   @JSImport("ant-design-pro/lib/AvatarList/AvatarItem", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def onClick(value: Callback): this.type = set("onClick", value.toJsFn)
+    
+    inline def size(value: SizeType): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def tips(value: VdomNode): this.type = set("tips", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def tipsNull: this.type = set("tips", null)
+    
+    inline def tipsVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("tips", js.Array(value*))
+    
+    inline def tipsVdomElement(value: VdomElement): this.type = set("tips", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AvatarItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

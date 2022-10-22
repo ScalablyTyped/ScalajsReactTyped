@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Data.Text
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a segment from your provided text that includes a word and any trailing whitespace and/or punctuation after this word. */
-@JSGlobal("Windows.Data.Text.SelectableWordSegment")
-@js.native
-abstract class SelectableWordSegment () extends js.Object {
+trait SelectableWordSegment extends StObject {
+  
   /** Gets the TextSegment that identifies the source text's sub-string that is the selected word. */
-  var sourceTextSegment: TextSegment = js.native
+  var sourceTextSegment: TextSegment
+  
   /** Gets the text of the selected word identified by this SelectableWordSegment object. */
-  var text: String = js.native
+  var text: String
 }
-
+object SelectableWordSegment {
+  
+  inline def apply(sourceTextSegment: TextSegment, text: String): SelectableWordSegment = {
+    val __obj = js.Dynamic.literal(sourceTextSegment = sourceTextSegment.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectableWordSegment]
+  }
+  
+  extension [Self <: SelectableWordSegment](x: Self) {
+    
+    inline def setSourceTextSegment(value: TextSegment): Self = StObject.set(x, "sourceTextSegment", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObservableObjectEvent extends js.Object {
+trait ObservableObjectEvent extends StObject {
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var sender: js.UndefOr[ObservableObject] = js.undefined
 }
-
 object ObservableObjectEvent {
-  @scala.inline
-  def apply(field: String = null, sender: ObservableObject = null): ObservableObjectEvent = {
+  
+  inline def apply(): ObservableObjectEvent = {
     val __obj = js.Dynamic.literal()
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObservableObjectEvent]
   }
+  
+  extension [Self <: ObservableObjectEvent](x: Self) {
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setSender(value: ObservableObject): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+  }
 }
-

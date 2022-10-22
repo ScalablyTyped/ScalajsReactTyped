@@ -1,27 +1,30 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LCDI2COption extends LCDGeneralOption {
+trait LCDI2COption
+  extends StObject
+     with LCDGeneralOption {
+  
   var backlight: js.UndefOr[Double] = js.undefined
+  
   var controller: String
 }
-
 object LCDI2COption {
-  @scala.inline
-  def apply(
-    controller: String,
-    backlight: Int | Double = null,
-    cols: Int | Double = null,
-    rows: Int | Double = null
-  ): LCDI2COption = {
+  
+  inline def apply(controller: String): LCDI2COption = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any])
-    if (backlight != null) __obj.updateDynamic("backlight")(backlight.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDI2COption]
   }
+  
+  extension [Self <: LCDI2COption](x: Self) {
+    
+    inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
+    
+    inline def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
+    
+    inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+  }
 }
-

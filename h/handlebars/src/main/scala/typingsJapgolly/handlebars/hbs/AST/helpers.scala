@@ -1,28 +1,34 @@
 package typingsJapgolly.handlebars.hbs.AST
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait helpers extends js.Object {
+trait helpers extends StObject {
+  
   def helperExpression(node: Node): Boolean
+  
   def scopeId(path: PathExpression): Boolean
+  
   def simpleId(path: PathExpression): Boolean
 }
-
 object helpers {
-  @scala.inline
-  def apply(
-    helperExpression: Node => CallbackTo[Boolean],
-    scopeId: PathExpression => CallbackTo[Boolean],
-    simpleId: PathExpression => CallbackTo[Boolean]
+  
+  inline def apply(
+    helperExpression: Node => Boolean,
+    scopeId: PathExpression => Boolean,
+    simpleId: PathExpression => Boolean
   ): helpers = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("helperExpression")(js.Any.fromFunction1((t0: typingsJapgolly.handlebars.hbs.AST.Node) => helperExpression(t0).runNow()))
-    __obj.updateDynamic("scopeId")(js.Any.fromFunction1((t0: typingsJapgolly.handlebars.hbs.AST.PathExpression) => scopeId(t0).runNow()))
-    __obj.updateDynamic("simpleId")(js.Any.fromFunction1((t0: typingsJapgolly.handlebars.hbs.AST.PathExpression) => simpleId(t0).runNow()))
+    val __obj = js.Dynamic.literal(helperExpression = js.Any.fromFunction1(helperExpression), scopeId = js.Any.fromFunction1(scopeId), simpleId = js.Any.fromFunction1(simpleId))
     __obj.asInstanceOf[helpers]
   }
+  
+  extension [Self <: helpers](x: Self) {
+    
+    inline def setHelperExpression(value: Node => Boolean): Self = StObject.set(x, "helperExpression", js.Any.fromFunction1(value))
+    
+    inline def setScopeId(value: PathExpression => Boolean): Self = StObject.set(x, "scopeId", js.Any.fromFunction1(value))
+    
+    inline def setSimpleId(value: PathExpression => Boolean): Self = StObject.set(x, "simpleId", js.Any.fromFunction1(value))
+  }
 }
-

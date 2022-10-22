@@ -1,24 +1,24 @@
 
 # Scala.js typings for react-cropper
 
-Typings are for version 0.10
+Typings are for version 1.3
 
 ## Library description:
-Cropper as React components
+Cropper as React Component
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-cropper |
-| Keywords           | react, react-component, cropper, image |
-| # releases         | 3 |
-| # dependents       | 61 |
-| # downloads        | 1671840 |
-| # stars            | 3 |
+| Keywords           | react, react-component, cropper, image, cropperjs |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 466021.3333333333 |
+| # stars            | 1706.0 |
 
 ## Links
-- [Homepage](http://roadmanfong.github.io/react-cropper/)
-- [Bugs](https://github.com/roadmanfong/react-cropper/issues)
-- [Repository](https://github.com/roadmanfong/react-cropper)
+- [Homepage](https://github.com/react-cropper/react-cropper/)
+- [Bugs](https://github.com/react-cropper/react-cropper/issues)
+- [Repository](https://github.com/react-cropper/react-cropper)
 - [Npm](https://www.npmjs.com/package/react-cropper)
     
 

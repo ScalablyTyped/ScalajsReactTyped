@@ -1,31 +1,34 @@
 package typingsJapgolly.highcharts.mod
 
-import typingsJapgolly.std.PointerEvent
-import typingsJapgolly.std.TouchEvent
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.PointerEvent
+import org.scalajs.dom.TouchEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("highcharts", "Pointer")
 @js.native
-class Pointer protected () extends js.Object {
+open class Pointer protected () extends StObject {
   /**
     * The mouse and touch tracker object. Each Chart item has one assosiated
     * Pointer item that can be accessed from the Chart.pointer property.
     *
     * @param chart
-    *        The Chart instance.
+    *        The chart instance.
     *
     * @param options
     *        The root options object. The pointer uses options from the chart
     *        and tooltip structures.
     */
   def this(chart: Chart_, options: Options) = this()
+  
   /**
     * Destroys the Pointer object and disconnects DOM events.
     */
   def destroy(): Unit = js.native
-  def findNearestKDPoints(series: js.Array[Series], shared: js.UndefOr[scala.Nothing], e: PointerEventObject): js.UndefOr[Point] = js.native
+  
   /**
     * Finds the closest point to a set of coordinates, using the k-d-tree
     * algorithm.
@@ -42,7 +45,9 @@ class Pointer protected () extends js.Object {
     *
     * @return The point closest to given coordinates.
     */
-  def findNearestKDPoints(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: Boolean, e: PointerEventObject): js.UndefOr[Point] = js.native
+  def findNearestKDPoint(series: js.Array[Series], shared: Unit, e: PointerEventObject): js.UndefOr[Point] = js.native
+  
   /**
     * Return the cached chartPosition if it is available on the Pointer,
     * otherwise find it. Running offset is quite expensive, so it should be
@@ -50,14 +55,18 @@ class Pointer protected () extends js.Object {
     *
     * @return The offset of the chart container within the page
     */
-  def getChartPosition(): OffsetObject = js.native
+  def getChartPosition(): ChartPositionObject = js.native
+  
   /**
     * Get the click position in terms of axis values.
     *
     * @param e
     *        Pointer event, extended with `chartX` and `chartY` properties.
+    *
+    * @return Axis coordinates.
     */
   def getCoordinates(e: PointerEventObject): PointerAxisCoordinatesObject = js.native
+  
   /**
     * Utility to detect whether an element has, or has a parent with, a
     * specificclass name. Used on detection of tracker objects and on deciding
@@ -72,12 +81,16 @@ class Pointer protected () extends js.Object {
     * @return True if either the element or one of its parents has the given
     *         class name.
     */
-  def inClass(element: HTMLDOMElement, className: String): js.UndefOr[Boolean] = js.native
-  def inClass(element: SVGDOMElement, className: String): js.UndefOr[Boolean] = js.native
+  def inClass(element: HTMLElement, className: String): js.UndefOr[Boolean] = js.native
+  def inClass(element: org.scalajs.dom.SVGElement, className: String): js.UndefOr[Boolean] = js.native
+  
   /**
     * Takes a browser event object and extends it with custom Highcharts
     * properties `chartX` and `chartY` in order to work on the internal
     * coordinate system.
+    *
+    * On map charts, the properties `lon` and `lat` are added to the event
+    * object given that the chart has projection information.
     *
     * @param e
     *        Event object in standard browsers.
@@ -87,10 +100,13 @@ class Pointer protected () extends js.Object {
     *
     * @return A browser event with extended properties `chartX` and `chartY`.
     */
+  def normalize(e: MouseEvent): PointerEventObject = js.native
+  def normalize(e: MouseEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   def normalize(e: PointerEvent): PointerEventObject = js.native
   def normalize(e: PointerEvent, chartPosition: OffsetObject): PointerEventObject = js.native
   def normalize(e: TouchEvent): PointerEventObject = js.native
   def normalize(e: TouchEvent, chartPosition: OffsetObject): PointerEventObject = js.native
+  
   /**
     * Reset the tracking by hiding the tooltip, the hover series state and the
     * hover point
@@ -102,5 +118,5 @@ class Pointer protected () extends js.Object {
   def reset(): Unit = js.native
   def reset(allowMove: Boolean): Unit = js.native
   def reset(allowMove: Boolean, delay: Double): Unit = js.native
+  def reset(allowMove: Unit, delay: Double): Unit = js.native
 }
-

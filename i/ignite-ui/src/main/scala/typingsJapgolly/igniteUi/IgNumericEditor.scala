@@ -2,509 +2,680 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgNumericEditor
-  extends /**
-	 * Option for igNumericEditor
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets whether the editor value can become null.
-  	 * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
-  	 *
-  	 */
+    * Gets/Sets whether the editor value can become null.
+    * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
+    *
+    */
   var allowNullValue: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "dropdown" A button to open/close the list is located on the right side of the editor.
-  	 * "clear" A button to clear the value is located on the right side of the editor.
-  	 * "spin" Spin buttons are located on the right side of the editor.
-  	 */
+    * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
+    *
+    *
+    * Valid values:
+    * "dropdown" A button to open/close the list is located on the right side of the editor.
+    * "clear" A button to clear the value is located on the right side of the editor.
+    * "spin" Spin buttons are located on the right side of the editor.
+    */
   var buttonType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Defines the range that editor's value can accept.This is achieved by setting the [minValue](ui.igNumericEditor#options:minValue) and [maxValue](ui.igNumericEditor#options:maxValue) editor's options, accordingly to the lowest and highest accepted values for the defined numeric mode.
-  	 * The range for the specific type follows the numeric type standards, e.g. in .NET Framework  [floating-point](https://msdn.microsoft.com/en-us/library/9ahet949.aspx) types and [integral types](https://msdn.microsoft.com/en-us/library/exx3b86w.aspx).
-  	 * In addition, the maximum value that can be set to [minDecimals](ui.igNumericEditor#options:minDecimals) and [maxDecimals](ui.igNumericEditor#options:maxDecimals) options can be 15, when editor is in 'double' mode and 7, when in 'float' mode.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "double" the Number object is used with the limits of a double and if the value is not set, then the null or Number.NaN is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue). Note: that is used as default.
-  	 * "float" the Number object is used with the limits of a float and if the value is not set, then the null or Number.NaN is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "long" the Number object is used with the limits of a signed long and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "ulong" the Number object is used with the limits of an unsigned long and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "int" the Number object is used with the limits of a signed int and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "uint" the Number object is used with the limits of an unsigned int and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "short" the Number object is used with the limits of a signed short and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "ushort" the Number object is used with the limits of an unsigned short and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "sbyte" the Number object is used with the limits of a signed byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 * "byte" the Number object is used with the limits of an unsigned byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
-  	 */
+    * Defines the range that editor's value can accept.This is achieved by setting the [minValue](ui.igNumericEditor#options:minValue) and [maxValue](ui.igNumericEditor#options:maxValue) editor's options, accordingly to the lowest and highest accepted values for the defined numeric mode.
+    * The range for the specific type follows the numeric type standards, e.g. in .NET Framework  [floating-point](https://msdn.microsoft.com/en-us/library/9ahet949.aspx) types and [integral types](https://msdn.microsoft.com/en-us/library/exx3b86w.aspx).
+    * In addition, the maximum value that can be set to [minDecimals](ui.igNumericEditor#options:minDecimals) and [maxDecimals](ui.igNumericEditor#options:maxDecimals) options can be 15, when editor is in 'double' mode and 7, when in 'float' mode.
+    *
+    *
+    * Valid values:
+    * "double" the Number object is used with the limits of a double and if the value is not set, then the null or Number.NaN is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue). Note: that is used as default.
+    * "float" the Number object is used with the limits of a float and if the value is not set, then the null or Number.NaN is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "long" the Number object is used with the limits of a signed long and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "ulong" the Number object is used with the limits of an unsigned long and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "int" the Number object is used with the limits of a signed int and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "uint" the Number object is used with the limits of an unsigned int and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "short" the Number object is used with the limits of a signed short and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "ushort" the Number object is used with the limits of an unsigned short and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "sbyte" the Number object is used with the limits of a signed byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    * "byte" the Number object is used with the limits of an unsigned byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igNumericEditor#options:allowNullValue).
+    */
   var dataMode: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the character, which is used as decimal separator.
-  	 * Note: this option has priority over possible regional settings.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
-  	 *
-  	 */
+    * Gets/Sets the character, which is used as decimal separator.
+    * Note: this option has priority over possible regional settings.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
+    *
+    */
   var decimalSeparator: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
-  	 *
-  	 */
+    * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
+    *
+    */
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets show/hide drop-down list animation duration in milliseconds.
-  	 *
-  	 */
+    * Gets/Sets show/hide drop-down list animation duration in milliseconds.
+    *
+    */
   var dropDownAnimationDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets wheather the drop-down list element is attached to the body of the document, or to the editor container element.
-  	 * If the option is set to false the editor will attach the drop-down list element to the editor container
-  	 * If the option is set to true the editor will attach its drop-down list to as a child of the body.
-  	 * Note! This option can not be set runtime.
-  	 *
-  	 */
+    * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
+    * If the option is set to false the editor will attach the drop-down list element to the editor container
+    * If the option is set to true the editor will attach its drop-down list to as a child of the body.
+    * Note! This option can not be set runtime.
+    *
+    */
   var dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Fired after an item in the drop down list is selected.
-  	 */
+    * Fired after an item in the drop down list is selected.
+    */
   var dropDownItemSelected: js.UndefOr[DropDownItemSelectedEvent] = js.undefined
+  
   /**
-  	 * Fired when an item in the drop down list is being selected.
-  	 */
+    * Fired when an item in the drop down list is being selected.
+    */
   var dropDownItemSelecting: js.UndefOr[DropDownItemSelectingEvent] = js.undefined
+  
   /**
-  	 * Fired after the drop down is closed.
-  	 */
+    * Fired after the drop down is closed.
+    */
   var dropDownListClosed: js.UndefOr[DropDownListClosedEvent] = js.undefined
+  
   /**
-  	 * Fired when the drop down is closing.
-  	 */
+    * Fired when the drop down is closing.
+    */
   var dropDownListClosing: js.UndefOr[DropDownListClosingEvent] = js.undefined
+  
   /**
-  	 * Fired after the drop down is opened.
-  	 */
+    * Fired after the drop down is opened.
+    */
   var dropDownListOpened: js.UndefOr[DropDownListOpenedEvent] = js.undefined
+  
   /**
-  	 * Fired when the drop down is opening.
-  	 */
+    * Fired when the drop down is opening.
+    */
   var dropDownListOpening: js.UndefOr[DropDownListOpeningEvent] = js.undefined
+  
   /**
-  	 * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
-  	 * Note! In case there are no list items - the editor will reamin readonly
-  	 * Note! This option can not be set runtime.
-  	 *
-  	 */
+    * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
+    * Note! In case there are no list items - the editor will remain readonly
+    * Note! This option can not be set runtime.
+    *
+    */
   var dropDownOnReadOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "auto" If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
-  	 * "bottom" The drop-down list is opened at the bottom of the editor.
-  	 * "top" The drop-down list is opened at the top of the editor.
-  	 */
+    * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
+    *
+    *
+    * Valid values:
+    * "auto" If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
+    * "bottom" The drop-down list is opened at the bottom of the editor.
+    * "top" The drop-down list is opened at the top of the editor.
+    */
   var dropDownOrientation: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Removed from numeric editor options
-  	 */
-  var excludeKeys: js.UndefOr[js.Any] = js.undefined
+    * Removed from numeric editor options
+    */
+  var excludeKeys: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets the character, which is used as separator for groups (like thousands).
-  	 * That option has effect only in display mode(no focus).
-  	 * Note: This option has priority over possible regional settings.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
-  	 *
-  	 */
+    * Gets/Sets the character, which is used as separator for groups (like thousands).
+    * That option has effect only in display mode(no focus).
+    * Note: This option has priority over possible regional settings.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
+    *
+    */
   var groupSeparator: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * (array of number objects) Gets/Sets the number of digits in the integer part of a number, which are divided into groups.
-  	 * The "groupSeparator" is inserted between groups.
-  	 * If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.
-  	 * Count of groups starts from the decimal point (from right to left).
-  	 * That option has effect only in display mode(no focus).
-  	 * Note: The numbers in the array must be positive integers.
-  	 * Note: This option has priority over possible regional settings.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 *
-  	 */
-  var groups: js.UndefOr[js.Array[_]] = js.undefined
+    * (array of number objects) Gets/Sets the number of digits in the integer part of a number, which are divided into groups.
+    * The "groupSeparator" is inserted between groups.
+    * If the sum of all values in array is smaller than the length of integer part, then the last item in array is used for all following groups.
+    * Count of groups starts from the decimal point (from right to left).
+    * That option has effect only in display mode(no focus).
+    * Note: The numbers in the array must be positive integers.
+    * Note: This option has priority over possible regional settings.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    *
+    */
+  var groups: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets/Sets the height of the control.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" will fit the editor inside its parent container, if no other heights are defined.
-  	 */
+    * Gets/Sets the height of the control.
+    *
+    *
+    * Valid values:
+    * "null" will fit the editor inside its parent container, if no other heights are defined.
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Removed from numeric editor options
-  	 */
-  var includeKeys: js.UndefOr[js.Any] = js.undefined
+    * Removed from numeric editor options
+    */
+  var includeKeys: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
-  	 *
-  	 */
+    * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
+    *
+    */
   var inputName: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets if the editor should only allow values from the list of items. Enabling this also causes spin actions to cycle through list items instead.
-  	 *
-  	 */
+    * Gets/Sets if the editor should only allow values from the list of items. Enabling this also causes spin actions to cycle through list items instead.
+    *
+    */
   var isLimitedToListValues: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the hover/unhover animation duration of a drop-down list item.
-  	 *
-  	 */
+    * Gets/Sets the hover/unhover animation duration of a drop-down list item.
+    *
+    */
   var listItemHoverDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets list of items which are used as a source for the drop-down list.
-  	 * Items in the list can be of type number.
-  	 *
-  	 */
-  var listItems: js.UndefOr[js.Array[_]] = js.undefined
+    * Gets/Sets list of items which are used as a source for the drop-down list.
+    * Items in the list can be of type number.
+    *
+    */
+  var listItems: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
-  	 *
-  	 */
+    * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
+    *
+    */
   var listWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets the maximum number of decimal places supported by the editor.
-  	 * Note: this option has priority over possible regional settings.
-  	 * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
-  	 *
-  	 */
+    * Gets/Sets the maximum number of decimal places supported by the editor.
+    * Note: this option has priority over possible regional settings.
+    * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
+    *
+    */
   var maxDecimals: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Removed from numeric editor options
-  	 */
-  var maxLength: js.UndefOr[js.Any] = js.undefined
+    * Removed from numeric editor options
+    */
+  var maxLength: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets the maximum value which can be entered in the editor by the end user.
-  	 *
-  	 */
+    * Gets/Sets the maximum value which can be entered in the editor by the end user.
+    *
+    */
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the minimum number of decimal places supported by the editor.
-  	 * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
-  	 * Note: This option has priority over possible regional settings.
-  	 * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
-  	 *
-  	 */
+    * Gets/Sets the minimum number of decimal places supported by the editor.
+    * If number of digits in fractional part of number is less than the value of this option, then the "0" characters are used to fill missing digits.
+    * Note: This option has priority over possible regional settings.
+    * Note: In case of min decimals value higher than max decimals - max decimals are equaled to min decimals property.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
+    *
+    */
   var minDecimals: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the minimum value which can be entered in the editor by the end user.
-  	 *
-  	 */
+    * Gets/Sets the minimum value which can be entered in the editor by the end user.
+    *
+    */
   var minValue: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
-  	 * Note: This option has priority over possible regional settings.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 *
-  	 */
+    * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
+    * Note: This option has priority over possible regional settings.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    *
+    */
   var negativePattern: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the character, which is used as negative sign.
-  	 * Note: This option has priority over possible regional settings.
-  	 * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are imlicitly set.
-  	 * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
-  	 *
-  	 */
+    * Gets/Sets the character, which is used as negative sign.
+    * Note: This option has priority over possible regional settings.
+    * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
+    * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
+    *
+    */
   var negativeSign: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
-  	 *
-  	 */
+    * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
+    *
+    */
   var nullValue: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the text which appears in the editor when it has no focus and the "value" is null or empty string.
-  	 *
-  	 */
+    * Gets/Sets the text which appears in the editor when it has no focus and the "value" is null or empty string.
+    *
+    */
   var placeHolder: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets if the editor should prevent form submition when enter key is pressed.
-  	 *
-  	 */
+    * Gets/Sets if the editor should prevent form submit when enter key is pressed.
+    *
+    */
   var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets the readonly attribute for the input. If set to true the input is readonly, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is submitted.
-  	 *
-  	 */
+    * Gets/Sets the readonly attribute for the input. If set to true the input is readonly, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is submitted.
+    *
+    */
   var readOnly: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the opiton is set to false, editor calls clear functionality.
-  	 *
-  	 */
+    * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
+    *
+    */
   var revertIfNotValid: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the last decimal place will be rounded, when the maxDecimal option is defined and applied.
-  	 * For example if the initial editor value is set to 123.4567, maxDecimals option is set to 3 and roundDecimals is enabled,
-  	 * then editor will round the value and will display it as 123.457. If roundDecimals is disabled then editor value will be truncated to 123.456.
-  	 *
-  	 */
+    * Gets/Sets whether the last decimal place will be rounded, when the maxDecimal option is defined and applied.
+    * For example if the initial editor value is set to 123.4567, maxDecimals option is set to 3 and roundDecimals is enabled,
+    * then editor will round the value and will display it as 123.457. If roundDecimals is disabled then editor value will be truncated to 123.456.
+    *
+    */
   var roundDecimals: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets support for scientific format.
-  	 * If that option is set, then numeric value appears as a string with possible E-power flag. In edit mode the "E" or "e" character can be entered as well.
-  	 * Notes: The "+" character is not supported in edit mode.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" scientific format is disabled.
-  	 * "E" scientific format is enabled and the "E" character is used.
-  	 * "e" scientific format is enabled and the "e" character is used.
-  	 * "E+" scientific format is enabled and the "E" character is used. The "E+" is used for positive values in display mode.
-  	 * "e+" scientific format is enabled and the "e" character is used. The "e+" is used for positive values in display mode.
-  	 */
+    * Gets/Sets support for scientific format.
+    * If that option is set, then numeric value appears as a string with possible E-power flag. In edit mode the "E" or "e" character can be entered as well.
+    * Notes: The "+" character is not supported in edit mode.
+    *
+    *
+    * Valid values:
+    * "null" scientific format is disabled.
+    * "E" scientific format is enabled and the "E" character is used.
+    * "e" scientific format is enabled and the "e" character is used.
+    * "E+" scientific format is enabled and the "E" character is used. The "E+" is used for positive values in display mode.
+    * "e+" scientific format is enabled and the "e" character is used. The "e+" is used for positive values in display mode.
+    */
   var scientificFormat: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the action when the editor gets focused. The default value is selectAll.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "selectAll" Setting this option will select all the text into the editor when the edit mode gets enetered.
-  	 * "atStart" Setting this option will move the cursor at the begining the text into the editor when the edit mode gets enetered.
-  	 * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets enetered.
-  	 * "browserDefault" Setting this option won't do any extra logic, but proceed with the browser default behavior.
-  	 */
+    * Gets/Sets the action when the editor gets focused. The default value is selectAll.
+    *
+    *
+    * Valid values:
+    * "selectAll" Setting this option will select all the text into the editor when the edit mode gets entered.
+    * "atStart" Setting this option will move the cursor at the beginning the text into the editor when the edit mode gets entered.
+    * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets entered.
+    * "browserDefault" Setting this option won't do any extra logic, but proceed with the browser default behavior.
+    */
   var selectionOnFocus: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets/Sets the default delta-value which is used with "spin" [buttonType](ui.igNumericEditor#options:buttonType) or [spinUp](ui.igNumericEditor#methods:spinUp) and [spinDown](ui.igNumericEditor#methods:spinDown) methods to increment or decrement value in the editor. The value can not be negative. Non integer value is supported only for dataMode double and float.
-  	 *
-  	 */
+    * Gets/Sets the default delta-value which is used with "spin" [buttonType](ui.igNumericEditor#options:buttonType) or [spinUp](ui.igNumericEditor#methods:spinUp) and [spinDown](ui.igNumericEditor#methods:spinDown) methods to increment or decrement value in the editor. The value can not be negative. Non integer value is supported only for dataMode double and float.
+    *
+    */
   var spinDelta: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Set the ability of the editor to automatically set value in the editor to the opposite side of the limit, when the spin action reaches minimum or maximum limit.
-  	 * This applies to [minValue](ui.%%WidgetNameLowered%%#options:minValue) and [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) or cycling through list items if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
-  	 *
-  	 */
+    * Gets/Set the ability of the editor to automatically set value in the editor to the opposite side of the limit, when the spin action reaches minimum or maximum limit.
+    * This applies to [minValue](ui.%%WidgetNameLowered%%#options:minValue) and [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) or cycling through list items if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
+    *
+    */
   var spinWrapAround: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets whether the onscreen keyboard (if available on device) should be shown when the dropdown button is clicked/tapped. This option prevents initial focus or removes it when the drop button is clicked/tapped.
-  	 * Note: The option does not perform device detection so its behavior is always active if enabled.
-  	 * Note: When drop down is opened the only way to close it will be using the drop down button.
-  	 *
-  	 */
+    * Gets/Sets whether the onscreen keyboard (if available on device) should be shown when the dropdown button is clicked/tapped. This option prevents initial focus or removes it when the drop button is clicked/tapped.
+    * Note: The option does not perform device detection so its behavior is always active if enabled.
+    * Note: When drop down is opened the only way to close it will be using the drop down button.
+    *
+    */
   var suppressKeyboard: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Disables/Enables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits.
-  	 *
-  	 */
+    * Disables/Enables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits.
+    *
+    */
   var suppressNotifications: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets tabIndex attribute for the editor input.
-  	 *
-  	 */
+    * Gets/Sets tabIndex attribute for the editor input.
+    *
+    */
   var tabIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the horizontal alignment of the text in the editor.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "left" The text into the input gets aligned to the left.
-  	 * "right" The text into the input gets aligned to the right.
-  	 * "center" The text into the input gets aligned to the center.
-  	 */
+    * Gets/Sets the horizontal alignment of the text in the editor.
+    *
+    *
+    * Valid values:
+    * "left" The text into the input gets aligned to the left.
+    * "right" The text into the input gets aligned to the right.
+    * "center" The text into the input gets aligned to the center.
+    */
   var textAlign: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Fired after the editor's text has been changed. It can be raised when keyUp event occurs,
-  	 * when the clear button is clicked or when an item from a list is selected.
-  	 */
+    * Fired after the editor's text has been changed. It can be raised when keyUp event occurs,
+    * when the clear button is clicked or when an item from a list is selected.
+    */
   var textChanged: js.UndefOr[TextChangedEvent] = js.undefined
-  var textMode: js.UndefOr[js.Any] = js.undefined
+  
+  var textMode: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Removed from numeric editor options
-  	 */
-  var toLower: js.UndefOr[js.Any] = js.undefined
+    * Removed from numeric editor options
+    */
+  var toLower: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Removed from numeric editor options
-  	 */
-  var toUpper: js.UndefOr[js.Any] = js.undefined
+    * Removed from numeric editor options
+    */
+  var toUpper: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
-  	 * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
-  	 * while the corresponding options of the editor prevent values violating the defined rules from being entered.
-  	 *
-  	 */
-  var validatorOptions: js.UndefOr[js.Any] = js.undefined
+    * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
+    * Note: Validation rules of [igValidator](ui.igvalidator#options), such as min and max value/length are applied separately triggering errors,
+    * while the corresponding options of the editor prevent values violating the defined rules from being entered.
+    *
+    */
+  var validatorOptions: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
-  	 *
-  	 *
-  	 */
-  var value: js.UndefOr[js.Any] = js.undefined
+    * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
+    *
+    *
+    */
+  var value: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the number of the items to be shown at once when the drop-down list get opened.
-  	 * Notes:
-  	 * This option is overwritten if the number of list items is less than the set value. In that case the drop-down list displays all the items.
-  	 * This option can not be set runtime.
-  	 *
-  	 */
+    * Gets the number of the items to be shown at once when the drop-down list get opened.
+    * Notes:
+    * This option is overwritten if the number of list items is less than the set value. In that case the drop-down list displays all the items.
+    * This option can not be set runtime.
+    *
+    */
   var visibleItemsCount: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets/Sets the width of the control.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "null" will stretch to fit data, if no other widths are defined.
-  	 */
+    * Gets/Sets the width of the control.
+    *
+    *
+    * Valid values:
+    * "null" will stretch to fit data, if no other widths are defined.
+    */
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object IgNumericEditor {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igNumericEditor
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowNullValue: js.UndefOr[Boolean] = js.undefined,
-    buttonType: String = null,
-    dataMode: String = null,
-    decimalSeparator: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dropDownAnimationDuration: Int | Double = null,
-    dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined,
-    dropDownItemSelected: (/* event */ Event_, /* ui */ DropDownItemSelectedEventUIParam) => Callback = null,
-    dropDownItemSelecting: (/* event */ Event_, /* ui */ DropDownItemSelectingEventUIParam) => Callback = null,
-    dropDownListClosed: (/* event */ Event_, /* ui */ DropDownListClosedEventUIParam) => Callback = null,
-    dropDownListClosing: (/* event */ Event_, /* ui */ DropDownListClosingEventUIParam) => Callback = null,
-    dropDownListOpened: (/* event */ Event_, /* ui */ DropDownListOpenedEventUIParam) => Callback = null,
-    dropDownListOpening: (/* event */ Event_, /* ui */ DropDownListOpeningEventUIParam) => Callback = null,
-    dropDownOnReadOnly: js.UndefOr[Boolean] = js.undefined,
-    dropDownOrientation: String = null,
-    excludeKeys: js.Any = null,
-    groupSeparator: String = null,
-    groups: js.Array[_] = null,
-    height: String | Double = null,
-    includeKeys: js.Any = null,
-    inputName: String = null,
-    isLimitedToListValues: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    listItemHoverDuration: Int | Double = null,
-    listItems: js.Array[_] = null,
-    listWidth: Int | Double = null,
-    locale: js.Any = null,
-    maxDecimals: Int | Double = null,
-    maxLength: js.Any = null,
-    maxValue: Int | Double = null,
-    minDecimals: Int | Double = null,
-    minValue: Int | Double = null,
-    negativePattern: String = null,
-    negativeSign: String = null,
-    nullValue: String | Double = null,
-    placeHolder: String = null,
-    preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined,
-    readOnly: js.UndefOr[Boolean] = js.undefined,
-    regional: String | js.Object = null,
-    revertIfNotValid: js.UndefOr[Boolean] = js.undefined,
-    roundDecimals: js.UndefOr[Boolean] = js.undefined,
-    scientificFormat: String = null,
-    selectionOnFocus: String = null,
-    spinDelta: Int | Double = null,
-    spinWrapAround: js.UndefOr[Boolean] = js.undefined,
-    suppressKeyboard: js.UndefOr[Boolean] = js.undefined,
-    suppressNotifications: js.UndefOr[Boolean] = js.undefined,
-    tabIndex: Int | Double = null,
-    textAlign: String = null,
-    textChanged: (/* event */ Event_, /* ui */ TextChangedEventUIParam) => Callback = null,
-    textMode: js.Any = null,
-    toLower: js.Any = null,
-    toUpper: js.Any = null,
-    validatorOptions: js.Any = null,
-    value: js.Any = null,
-    visibleItemsCount: Int | Double = null,
-    width: String | Double = null
-  ): IgNumericEditor = {
+  
+  inline def apply(): IgNumericEditor = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue.asInstanceOf[js.Any])
-    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType.asInstanceOf[js.Any])
-    if (dataMode != null) __obj.updateDynamic("dataMode")(dataMode.asInstanceOf[js.Any])
-    if (decimalSeparator != null) __obj.updateDynamic("decimalSeparator")(decimalSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody.asInstanceOf[js.Any])
-    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownItemSelectedEventUIParam) => dropDownItemSelected(t0, t1).runNow()))
-    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownItemSelectingEventUIParam) => dropDownItemSelecting(t0, t1).runNow()))
-    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownListClosedEventUIParam) => dropDownListClosed(t0, t1).runNow()))
-    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownListClosingEventUIParam) => dropDownListClosing(t0, t1).runNow()))
-    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownListOpenedEventUIParam) => dropDownListOpened(t0, t1).runNow()))
-    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.DropDownListOpeningEventUIParam) => dropDownListOpening(t0, t1).runNow()))
-    if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly.asInstanceOf[js.Any])
-    if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation.asInstanceOf[js.Any])
-    if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys.asInstanceOf[js.Any])
-    if (groupSeparator != null) __obj.updateDynamic("groupSeparator")(groupSeparator.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (includeKeys != null) __obj.updateDynamic("includeKeys")(includeKeys.asInstanceOf[js.Any])
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isLimitedToListValues)) __obj.updateDynamic("isLimitedToListValues")(isLimitedToListValues.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (listItemHoverDuration != null) __obj.updateDynamic("listItemHoverDuration")(listItemHoverDuration.asInstanceOf[js.Any])
-    if (listItems != null) __obj.updateDynamic("listItems")(listItems.asInstanceOf[js.Any])
-    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (maxDecimals != null) __obj.updateDynamic("maxDecimals")(maxDecimals.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minDecimals != null) __obj.updateDynamic("minDecimals")(minDecimals.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (negativePattern != null) __obj.updateDynamic("negativePattern")(negativePattern.asInstanceOf[js.Any])
-    if (negativeSign != null) __obj.updateDynamic("negativeSign")(negativeSign.asInstanceOf[js.Any])
-    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
-    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter.asInstanceOf[js.Any])
-    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (!js.isUndefined(revertIfNotValid)) __obj.updateDynamic("revertIfNotValid")(revertIfNotValid.asInstanceOf[js.Any])
-    if (!js.isUndefined(roundDecimals)) __obj.updateDynamic("roundDecimals")(roundDecimals.asInstanceOf[js.Any])
-    if (scientificFormat != null) __obj.updateDynamic("scientificFormat")(scientificFormat.asInstanceOf[js.Any])
-    if (selectionOnFocus != null) __obj.updateDynamic("selectionOnFocus")(selectionOnFocus.asInstanceOf[js.Any])
-    if (spinDelta != null) __obj.updateDynamic("spinDelta")(spinDelta.asInstanceOf[js.Any])
-    if (!js.isUndefined(spinWrapAround)) __obj.updateDynamic("spinWrapAround")(spinWrapAround.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressNotifications)) __obj.updateDynamic("suppressNotifications")(suppressNotifications.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (textChanged != null) __obj.updateDynamic("textChanged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.TextChangedEventUIParam) => textChanged(t0, t1).runNow()))
-    if (textMode != null) __obj.updateDynamic("textMode")(textMode.asInstanceOf[js.Any])
-    if (toLower != null) __obj.updateDynamic("toLower")(toLower.asInstanceOf[js.Any])
-    if (toUpper != null) __obj.updateDynamic("toUpper")(toUpper.asInstanceOf[js.Any])
-    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visibleItemsCount != null) __obj.updateDynamic("visibleItemsCount")(visibleItemsCount.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgNumericEditor]
   }
+  
+  extension [Self <: IgNumericEditor](x: Self) {
+    
+    inline def setAllowNullValue(value: Boolean): Self = StObject.set(x, "allowNullValue", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNullValueUndefined: Self = StObject.set(x, "allowNullValue", js.undefined)
+    
+    inline def setButtonType(value: String): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    
+    inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+    
+    inline def setDataMode(value: String): Self = StObject.set(x, "dataMode", value.asInstanceOf[js.Any])
+    
+    inline def setDataModeUndefined: Self = StObject.set(x, "dataMode", js.undefined)
+    
+    inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setDropDownAnimationDuration(value: Double): Self = StObject.set(x, "dropDownAnimationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownAnimationDurationUndefined: Self = StObject.set(x, "dropDownAnimationDuration", js.undefined)
+    
+    inline def setDropDownAttachedToBody(value: Boolean): Self = StObject.set(x, "dropDownAttachedToBody", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownAttachedToBodyUndefined: Self = StObject.set(x, "dropDownAttachedToBody", js.undefined)
+    
+    inline def setDropDownItemSelected(value: (/* event */ Event, /* ui */ DropDownItemSelectedEventUIParam) => Callback): Self = StObject.set(x, "dropDownItemSelected", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownItemSelectedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownItemSelectedUndefined: Self = StObject.set(x, "dropDownItemSelected", js.undefined)
+    
+    inline def setDropDownItemSelecting(value: (/* event */ Event, /* ui */ DropDownItemSelectingEventUIParam) => Callback): Self = StObject.set(x, "dropDownItemSelecting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownItemSelectingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownItemSelectingUndefined: Self = StObject.set(x, "dropDownItemSelecting", js.undefined)
+    
+    inline def setDropDownListClosed(value: (/* event */ Event, /* ui */ DropDownListClosedEventUIParam) => Callback): Self = StObject.set(x, "dropDownListClosed", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownListClosedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownListClosedUndefined: Self = StObject.set(x, "dropDownListClosed", js.undefined)
+    
+    inline def setDropDownListClosing(value: (/* event */ Event, /* ui */ DropDownListClosingEventUIParam) => Callback): Self = StObject.set(x, "dropDownListClosing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownListClosingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownListClosingUndefined: Self = StObject.set(x, "dropDownListClosing", js.undefined)
+    
+    inline def setDropDownListOpened(value: (/* event */ Event, /* ui */ DropDownListOpenedEventUIParam) => Callback): Self = StObject.set(x, "dropDownListOpened", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownListOpenedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownListOpenedUndefined: Self = StObject.set(x, "dropDownListOpened", js.undefined)
+    
+    inline def setDropDownListOpening(value: (/* event */ Event, /* ui */ DropDownListOpeningEventUIParam) => Callback): Self = StObject.set(x, "dropDownListOpening", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ DropDownListOpeningEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setDropDownListOpeningUndefined: Self = StObject.set(x, "dropDownListOpening", js.undefined)
+    
+    inline def setDropDownOnReadOnly(value: Boolean): Self = StObject.set(x, "dropDownOnReadOnly", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownOnReadOnlyUndefined: Self = StObject.set(x, "dropDownOnReadOnly", js.undefined)
+    
+    inline def setDropDownOrientation(value: String): Self = StObject.set(x, "dropDownOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setDropDownOrientationUndefined: Self = StObject.set(x, "dropDownOrientation", js.undefined)
+    
+    inline def setExcludeKeys(value: Any): Self = StObject.set(x, "excludeKeys", value.asInstanceOf[js.Any])
+    
+    inline def setExcludeKeysUndefined: Self = StObject.set(x, "excludeKeys", js.undefined)
+    
+    inline def setGroupSeparator(value: String): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
+    
+    inline def setGroups(value: js.Array[Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    
+    inline def setGroupsVarargs(value: Any*): Self = StObject.set(x, "groups", js.Array(value*))
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setIncludeKeys(value: Any): Self = StObject.set(x, "includeKeys", value.asInstanceOf[js.Any])
+    
+    inline def setIncludeKeysUndefined: Self = StObject.set(x, "includeKeys", js.undefined)
+    
+    inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    
+    inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+    
+    inline def setIsLimitedToListValues(value: Boolean): Self = StObject.set(x, "isLimitedToListValues", value.asInstanceOf[js.Any])
+    
+    inline def setIsLimitedToListValuesUndefined: Self = StObject.set(x, "isLimitedToListValues", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setListItemHoverDuration(value: Double): Self = StObject.set(x, "listItemHoverDuration", value.asInstanceOf[js.Any])
+    
+    inline def setListItemHoverDurationUndefined: Self = StObject.set(x, "listItemHoverDuration", js.undefined)
+    
+    inline def setListItems(value: js.Array[Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+    
+    inline def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)
+    
+    inline def setListItemsVarargs(value: Any*): Self = StObject.set(x, "listItems", js.Array(value*))
+    
+    inline def setListWidth(value: Double): Self = StObject.set(x, "listWidth", value.asInstanceOf[js.Any])
+    
+    inline def setListWidthUndefined: Self = StObject.set(x, "listWidth", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMaxDecimals(value: Double): Self = StObject.set(x, "maxDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDecimalsUndefined: Self = StObject.set(x, "maxDecimals", js.undefined)
+    
+    inline def setMaxLength(value: Any): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinDecimals(value: Double): Self = StObject.set(x, "minDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setMinDecimalsUndefined: Self = StObject.set(x, "minDecimals", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setNegativePattern(value: String): Self = StObject.set(x, "negativePattern", value.asInstanceOf[js.Any])
+    
+    inline def setNegativePatternUndefined: Self = StObject.set(x, "negativePattern", js.undefined)
+    
+    inline def setNegativeSign(value: String): Self = StObject.set(x, "negativeSign", value.asInstanceOf[js.Any])
+    
+    inline def setNegativeSignUndefined: Self = StObject.set(x, "negativeSign", js.undefined)
+    
+    inline def setNullValue(value: String | Double): Self = StObject.set(x, "nullValue", value.asInstanceOf[js.Any])
+    
+    inline def setNullValueUndefined: Self = StObject.set(x, "nullValue", js.undefined)
+    
+    inline def setPlaceHolder(value: String): Self = StObject.set(x, "placeHolder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceHolderUndefined: Self = StObject.set(x, "placeHolder", js.undefined)
+    
+    inline def setPreventSubmitOnEnter(value: Boolean): Self = StObject.set(x, "preventSubmitOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def setPreventSubmitOnEnterUndefined: Self = StObject.set(x, "preventSubmitOnEnter", js.undefined)
+    
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRevertIfNotValid(value: Boolean): Self = StObject.set(x, "revertIfNotValid", value.asInstanceOf[js.Any])
+    
+    inline def setRevertIfNotValidUndefined: Self = StObject.set(x, "revertIfNotValid", js.undefined)
+    
+    inline def setRoundDecimals(value: Boolean): Self = StObject.set(x, "roundDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setRoundDecimalsUndefined: Self = StObject.set(x, "roundDecimals", js.undefined)
+    
+    inline def setScientificFormat(value: String): Self = StObject.set(x, "scientificFormat", value.asInstanceOf[js.Any])
+    
+    inline def setScientificFormatUndefined: Self = StObject.set(x, "scientificFormat", js.undefined)
+    
+    inline def setSelectionOnFocus(value: String): Self = StObject.set(x, "selectionOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionOnFocusUndefined: Self = StObject.set(x, "selectionOnFocus", js.undefined)
+    
+    inline def setSpinDelta(value: Double): Self = StObject.set(x, "spinDelta", value.asInstanceOf[js.Any])
+    
+    inline def setSpinDeltaUndefined: Self = StObject.set(x, "spinDelta", js.undefined)
+    
+    inline def setSpinWrapAround(value: Boolean): Self = StObject.set(x, "spinWrapAround", value.asInstanceOf[js.Any])
+    
+    inline def setSpinWrapAroundUndefined: Self = StObject.set(x, "spinWrapAround", js.undefined)
+    
+    inline def setSuppressKeyboard(value: Boolean): Self = StObject.set(x, "suppressKeyboard", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressKeyboardUndefined: Self = StObject.set(x, "suppressKeyboard", js.undefined)
+    
+    inline def setSuppressNotifications(value: Boolean): Self = StObject.set(x, "suppressNotifications", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressNotificationsUndefined: Self = StObject.set(x, "suppressNotifications", js.undefined)
+    
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    
+    inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+    
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextChanged(value: (/* event */ Event, /* ui */ TextChangedEventUIParam) => Callback): Self = StObject.set(x, "textChanged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ TextChangedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setTextChangedUndefined: Self = StObject.set(x, "textChanged", js.undefined)
+    
+    inline def setTextMode(value: Any): Self = StObject.set(x, "textMode", value.asInstanceOf[js.Any])
+    
+    inline def setTextModeUndefined: Self = StObject.set(x, "textMode", js.undefined)
+    
+    inline def setToLower(value: Any): Self = StObject.set(x, "toLower", value.asInstanceOf[js.Any])
+    
+    inline def setToLowerUndefined: Self = StObject.set(x, "toLower", js.undefined)
+    
+    inline def setToUpper(value: Any): Self = StObject.set(x, "toUpper", value.asInstanceOf[js.Any])
+    
+    inline def setToUpperUndefined: Self = StObject.set(x, "toUpper", js.undefined)
+    
+    inline def setValidatorOptions(value: Any): Self = StObject.set(x, "validatorOptions", value.asInstanceOf[js.Any])
+    
+    inline def setValidatorOptionsUndefined: Self = StObject.set(x, "validatorOptions", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVisibleItemsCount(value: Double): Self = StObject.set(x, "visibleItemsCount", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleItemsCountUndefined: Self = StObject.set(x, "visibleItemsCount", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DiagnosticCategory extends js.Object
-
+sealed trait DiagnosticCategory extends StObject
 @JSGlobal("TypeScript.DiagnosticCategory")
 @js.native
-object DiagnosticCategory extends js.Object {
-  @js.native
-  sealed trait Error extends DiagnosticCategory
+object DiagnosticCategory extends StObject {
   
   @js.native
-  sealed trait Message extends DiagnosticCategory
+  sealed trait Error
+    extends StObject
+       with DiagnosticCategory
   
   @js.native
-  sealed trait NoPrefix extends DiagnosticCategory
+  sealed trait Message
+    extends StObject
+       with DiagnosticCategory
   
   @js.native
-  sealed trait Warning extends DiagnosticCategory
+  sealed trait NoPrefix
+    extends StObject
+       with DiagnosticCategory
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DiagnosticCategory with Double] = js.native
-  /* 1 */ @js.native
-  object Error extends TopLevel[Error with Double]
-  
-  /* 2 */ @js.native
-  object Message extends TopLevel[Message with Double]
-  
-  /* 3 */ @js.native
-  object NoPrefix extends TopLevel[NoPrefix with Double]
-  
-  /* 0 */ @js.native
-  object Warning extends TopLevel[Warning with Double]
-  
+  @js.native
+  sealed trait Warning
+    extends StObject
+       with DiagnosticCategory
 }
-

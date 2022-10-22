@@ -1,17 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.CompassReading")
-@js.native
-class CompassReading () extends ICompassReading {
-  /* CompleteClass */
-  override var headingMagneticNorth: Double = js.native
-  /* CompleteClass */
-  override var headingTrueNorth: Double = js.native
-  /* CompleteClass */
-  override var timestamp: js.Date = js.native
+trait CompassReading
+  extends StObject
+     with ICompassReading
+object CompassReading {
+  
+  inline def apply(headingMagneticNorth: Double, headingTrueNorth: Double, timestamp: js.Date): CompassReading = {
+    val __obj = js.Dynamic.literal(headingMagneticNorth = headingMagneticNorth.asInstanceOf[js.Any], headingTrueNorth = headingTrueNorth.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CompassReading]
+  }
 }
-

@@ -1,67 +1,94 @@
 package typingsJapgolly.muiDatatables.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.muiDatatables.anon.Data
+import typingsJapgolly.muiDatatables.mod.DisplayData
 import typingsJapgolly.muiDatatables.mod.MUIDataTableColumnDef
+import typingsJapgolly.muiDatatables.mod.MUIDataTableData
+import typingsJapgolly.muiDatatables.mod.MUIDataTableOptions
 import typingsJapgolly.muiDatatables.mod.MUIDataTableToolbar
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableToolbar {
-  def apply(
-    columns: js.Array[MUIDataTableColumnDef],
-    classes: js.Object = null,
-    data: js.Array[_] = null,
-    filterData: js.Any = null,
-    filterList: js.Array[js.Array[String]] = null,
-    filterUpdate: js.Any = null,
-    options: js.Object = null,
-    resetFilters: js.Any = null,
-    searchTextUpdate: /* args */ js.Any => CallbackTo[js.Any] = null,
-    setTableActions: /* args */ js.Any => CallbackTo[js.Any] = null,
-    tableRef: /* args */ js.Any => CallbackTo[js.Any] = null,
-    title: js.Any = null,
-    toggleViewColumn: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    MUIDataTableToolbar, 
-    MountedWithRawType[MUIDataTableToolbar, js.Object, RawMounted[MUIDataTableToolbar, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
   
-      if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (filterData != null) __obj.updateDynamic("filterData")(filterData.asInstanceOf[js.Any])
-    if (filterList != null) __obj.updateDynamic("filterList")(filterList.asInstanceOf[js.Any])
-    if (filterUpdate != null) __obj.updateDynamic("filterUpdate")(filterUpdate.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (resetFilters != null) __obj.updateDynamic("resetFilters")(resetFilters.asInstanceOf[js.Any])
-    if (searchTextUpdate != null) __obj.updateDynamic("searchTextUpdate")(js.Any.fromFunction1((t0: /* args */ js.Any) => searchTextUpdate(t0).runNow()))
-    if (setTableActions != null) __obj.updateDynamic("setTableActions")(js.Any.fromFunction1((t0: /* args */ js.Any) => setTableActions(t0).runNow()))
-    if (tableRef != null) __obj.updateDynamic("tableRef")(js.Any.fromFunction1((t0: /* args */ js.Any) => tableRef(t0).runNow()))
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (toggleViewColumn != null) __obj.updateDynamic("toggleViewColumn")(toggleViewColumn.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.muiDatatables.mod.MUIDataTableToolbar, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.muiDatatables.mod.MUIDataTableToolbar])(children: _*)
+  inline def apply(columns: js.Array[MUIDataTableColumnDef]): Builder = {
+    val __props = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[MUIDataTableToolbar]))
   }
+  
   @JSImport("mui-datatables", "TableToolbar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def classes(value: js.Object): this.type = set("classes", value.asInstanceOf[js.Any])
+    
+    inline def columnOrder(value: js.Array[Double]): this.type = set("columnOrder", value.asInstanceOf[js.Any])
+    
+    inline def columnOrderVarargs(value: Double*): this.type = set("columnOrder", js.Array(value*))
+    
+    inline def data(value: js.Array[MUIDataTableData]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: MUIDataTableData*): this.type = set("data", js.Array(value*))
+    
+    inline def displayData(value: DisplayData): this.type = set("displayData", value.asInstanceOf[js.Any])
+    
+    inline def displayDataVarargs(value: Data*): this.type = set("displayData", js.Array(value*))
+    
+    inline def filterData(value: js.Array[js.Array[Any]]): this.type = set("filterData", value.asInstanceOf[js.Any])
+    
+    inline def filterDataVarargs(value: js.Array[Any]*): this.type = set("filterData", js.Array(value*))
+    
+    inline def filterList(value: js.Array[js.Array[String]]): this.type = set("filterList", value.asInstanceOf[js.Any])
+    
+    inline def filterListVarargs(value: js.Array[String]*): this.type = set("filterList", js.Array(value*))
+    
+    inline def filterUpdate(value: /* args */ Any => Any): this.type = set("filterUpdate", js.Any.fromFunction1(value))
+    
+    inline def options(value: MUIDataTableOptions): this.type = set("options", value.asInstanceOf[js.Any])
+    
+    inline def resetFilters(value: CallbackTo[Any]): this.type = set("resetFilters", value.toJsFn)
+    
+    inline def searchClose(value: CallbackTo[Any]): this.type = set("searchClose", value.toJsFn)
+    
+    inline def searchText(value: VdomNode): this.type = set("searchText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def searchTextNull: this.type = set("searchText", null)
+    
+    inline def searchTextUpdate(value: /* args */ Any => Any): this.type = set("searchTextUpdate", js.Any.fromFunction1(value))
+    
+    inline def searchTextVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("searchText", js.Array(value*))
+    
+    inline def searchTextVdomElement(value: VdomElement): this.type = set("searchText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setTableActions(value: /* args */ Any => Any): this.type = set("setTableActions", js.Any.fromFunction1(value))
+    
+    inline def tableRef(value: /* args */ Any => Any): this.type = set("tableRef", js.Any.fromFunction1(value))
+    
+    inline def title(value: VdomNode): this.type = set("title", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def toggleViewColumn(value: /* a */ Any => Any): this.type = set("toggleViewColumn", js.Any.fromFunction1(value))
+    
+    inline def updateFilterByType(value: /* args */ Any => Any): this.type = set("updateFilterByType", js.Any.fromFunction1(value))
+  }
+  
+  def withProps(p: MUIDataTableToolbar): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

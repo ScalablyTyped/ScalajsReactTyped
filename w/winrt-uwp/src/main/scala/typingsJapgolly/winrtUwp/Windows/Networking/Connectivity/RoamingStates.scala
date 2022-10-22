@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RoamingStates extends js.Object
-
+sealed trait RoamingStates extends StObject
 /** Defines the roaming states. */
 @JSGlobal("Windows.Networking.Connectivity.RoamingStates")
 @js.native
-object RoamingStates extends js.Object {
+object RoamingStates extends StObject {
+  
   /** No roaming information. */
   @js.native
-  sealed trait none extends RoamingStates
+  sealed trait none
+    extends StObject
+       with RoamingStates
   
   /** The connection is not currently roaming. */
   @js.native
-  sealed trait notRoaming extends RoamingStates
+  sealed trait notRoaming
+    extends StObject
+       with RoamingStates
   
   /** The connection is currently roaming. */
   @js.native
-  sealed trait roaming extends RoamingStates
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RoamingStates with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object notRoaming extends TopLevel[notRoaming with Double]
-  
-  /* 2 */ @js.native
-  object roaming extends TopLevel[roaming with Double]
-  
+  sealed trait roaming
+    extends StObject
+       with RoamingStates
 }
-

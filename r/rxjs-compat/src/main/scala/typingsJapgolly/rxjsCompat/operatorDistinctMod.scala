@@ -1,17 +1,18 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/distinct", JSImport.Namespace)
-@js.native
-object operatorDistinctMod extends js.Object {
-  def distinct[T, K](): js.Any = js.native
-  def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): js.Any = js.native
-  def distinct[T, K](
-    keySelector: js.Function1[/* value */ T, K],
-    flushes: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
-  ): js.Any = js.native
+object operatorDistinctMod {
+  
+  @JSImport("rxjs-compat/operator/distinct", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def distinct[T, K](): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")().asInstanceOf[Observable_[T]]
+  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K]): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def distinct[T, K](keySelector: js.Function1[/* value */ T, K], flushes: Observable_[Any]): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
+  inline def distinct[T, K](keySelector: Unit, flushes: Observable_[Any]): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("distinct")(keySelector.asInstanceOf[js.Any], flushes.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
 }
-

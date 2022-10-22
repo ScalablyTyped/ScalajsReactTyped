@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT_KEY
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY
 */
-trait TableRecordKeyType extends js.Object
-
+trait TableRecordKeyType extends StObject
 object TableRecordKeyType {
-  @scala.inline
-  def ANY_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ANY_KEY = this.cast("ANY_KEY")
-  @scala.inline
-  def NOT_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT_KEY = this.cast("NOT_KEY")
-  @scala.inline
-  def PERFECT_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY = this.cast("PERFECT_KEY")
-  @scala.inline
-  def PRIMARY_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY = this.cast("PRIMARY_KEY")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ANY_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ANY_KEY = "ANY_KEY".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.ANY_KEY]
+  
+  inline def NOT_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT_KEY = "NOT_KEY".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.NOT_KEY]
+  
+  inline def PERFECT_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY = "PERFECT_KEY".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PERFECT_KEY]
+  
+  inline def PRIMARY_KEY: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY = "PRIMARY_KEY".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.PRIMARY_KEY]
 }
-

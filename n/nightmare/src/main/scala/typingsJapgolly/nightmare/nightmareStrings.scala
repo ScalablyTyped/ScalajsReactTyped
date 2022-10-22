@@ -1,104 +1,84 @@
 package typingsJapgolly.nightmare
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nightmareStrings {
-  @js.native
-  sealed trait HTMLComplete extends js.Object
   
   @js.native
-  sealed trait HTMLOnly extends js.Object
+  sealed trait HTMLComplete extends StObject
+  inline def HTMLComplete: HTMLComplete = "HTMLComplete".asInstanceOf[HTMLComplete]
   
   @js.native
-  sealed trait MHTML extends js.Object
+  sealed trait HTMLOnly extends StObject
+  inline def HTMLOnly: HTMLOnly = "HTMLOnly".asInstanceOf[HTMLOnly]
   
   @js.native
-  sealed trait alert extends js.Object
+  sealed trait MHTML extends StObject
+  inline def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
   
   @js.native
-  sealed trait cancel extends js.Object
+  sealed trait alert extends StObject
+  inline def alert: alert = "alert".asInstanceOf[alert]
   
   @js.native
-  sealed trait confirm extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait consoleMessage extends js.Object
+  sealed trait confirm extends StObject
+  inline def confirm: confirm = "confirm".asInstanceOf[confirm]
   
   @js.native
-  sealed trait continue extends js.Object
+  sealed trait consoleMessage extends StObject
+  inline def consoleMessage: consoleMessage = "consoleMessage".asInstanceOf[consoleMessage]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait continue extends StObject
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
-  sealed trait initialized extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait loadFinished extends js.Object
+  sealed trait initialized extends StObject
+  inline def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
-  sealed trait loadStarted extends js.Object
+  sealed trait loadFinished extends StObject
+  inline def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
   
   @js.native
-  sealed trait navigationRequested extends js.Object
+  sealed trait loadStarted extends StObject
+  inline def loadStarted: loadStarted = "loadStarted".asInstanceOf[loadStarted]
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait navigationRequested extends StObject
+  inline def navigationRequested: navigationRequested = "navigationRequested".asInstanceOf[navigationRequested]
   
   @js.native
-  sealed trait resourceError extends js.Object
+  sealed trait prompt extends StObject
+  inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
-  sealed trait resourceReceived extends js.Object
+  sealed trait resourceError extends StObject
+  inline def resourceError: resourceError = "resourceError".asInstanceOf[resourceError]
   
   @js.native
-  sealed trait resourceRequested extends js.Object
+  sealed trait resourceReceived extends StObject
+  inline def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait resourceRequested extends StObject
+  inline def resourceRequested: resourceRequested = "resourceRequested".asInstanceOf[resourceRequested]
   
   @js.native
-  sealed trait urlChanged extends js.Object
+  sealed trait timeout extends StObject
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
-  @scala.inline
-  def HTMLComplete: HTMLComplete = "HTMLComplete".asInstanceOf[HTMLComplete]
-  @scala.inline
-  def HTMLOnly: HTMLOnly = "HTMLOnly".asInstanceOf[HTMLOnly]
-  @scala.inline
-  def MHTML: MHTML = "MHTML".asInstanceOf[MHTML]
-  @scala.inline
-  def alert: alert = "alert".asInstanceOf[alert]
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def confirm: confirm = "confirm".asInstanceOf[confirm]
-  @scala.inline
-  def consoleMessage: consoleMessage = "consoleMessage".asInstanceOf[consoleMessage]
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def initialized: initialized = "initialized".asInstanceOf[initialized]
-  @scala.inline
-  def loadFinished: loadFinished = "loadFinished".asInstanceOf[loadFinished]
-  @scala.inline
-  def loadStarted: loadStarted = "loadStarted".asInstanceOf[loadStarted]
-  @scala.inline
-  def navigationRequested: navigationRequested = "navigationRequested".asInstanceOf[navigationRequested]
-  @scala.inline
-  def prompt: prompt = "prompt".asInstanceOf[prompt]
-  @scala.inline
-  def resourceError: resourceError = "resourceError".asInstanceOf[resourceError]
-  @scala.inline
-  def resourceReceived: resourceReceived = "resourceReceived".asInstanceOf[resourceReceived]
-  @scala.inline
-  def resourceRequested: resourceRequested = "resourceRequested".asInstanceOf[resourceRequested]
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
-  @scala.inline
-  def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
+  @js.native
+  sealed trait urlChanged extends StObject
+  inline def urlChanged: urlChanged = "urlChanged".asInstanceOf[urlChanged]
 }
-

@@ -10,10 +10,10 @@ Typings are for version 3.0
 | ------------------ | :-------------: |
 | Full name          | textarea-caret |
 | Keywords           | textarea, caret, position |
-| # releases         | 2 |
-| # dependents       | 38 |
-| # downloads        | 1645944 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 576050.6666666666 |
+| # stars            | 496.0 |
 
 ## Links
 - [Homepage](https://github.com/component/textarea-caret-position#readme)

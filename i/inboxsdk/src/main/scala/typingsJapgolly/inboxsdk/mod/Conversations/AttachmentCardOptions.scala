@@ -1,27 +1,36 @@
 package typingsJapgolly.inboxsdk.mod.Conversations
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ConversationsDescriptors
-trait AttachmentCardOptions extends js.Object {
+trait AttachmentCardOptions extends StObject {
+  
   var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]
+  
   var description: String
+  
   var failoverPreviewIconUrl: String
+  
   var fileIconImageUrl: String
+  
   var foldColor: js.UndefOr[String] = js.undefined
+  
   var mimeType: js.UndefOr[String] = js.undefined
-  var previewThumbnailUrl: String
-  var previewUrl: String
-  var title: String
+  
   def previewOnClick(event: PreviewClickEvent): Unit
+  
+  var previewThumbnailUrl: String
+  
+  var previewUrl: String
+  
+  var title: String
 }
-
 object AttachmentCardOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor],
     description: String,
     failoverPreviewIconUrl: String,
@@ -29,15 +38,38 @@ object AttachmentCardOptions {
     previewOnClick: PreviewClickEvent => Callback,
     previewThumbnailUrl: String,
     previewUrl: String,
-    title: String,
-    foldColor: String = null,
-    mimeType: String = null
+    title: String
   ): AttachmentCardOptions = {
-    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], failoverPreviewIconUrl = failoverPreviewIconUrl.asInstanceOf[js.Any], fileIconImageUrl = fileIconImageUrl.asInstanceOf[js.Any], previewThumbnailUrl = previewThumbnailUrl.asInstanceOf[js.Any], previewUrl = previewUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("previewOnClick")(js.Any.fromFunction1((t0: typingsJapgolly.inboxsdk.mod.Conversations.PreviewClickEvent) => previewOnClick(t0).runNow()))
-    if (foldColor != null) __obj.updateDynamic("foldColor")(foldColor.asInstanceOf[js.Any])
-    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], failoverPreviewIconUrl = failoverPreviewIconUrl.asInstanceOf[js.Any], fileIconImageUrl = fileIconImageUrl.asInstanceOf[js.Any], previewOnClick = js.Any.fromFunction1((t0: PreviewClickEvent) => previewOnClick(t0).runNow()), previewThumbnailUrl = previewThumbnailUrl.asInstanceOf[js.Any], previewUrl = previewUrl.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachmentCardOptions]
   }
+  
+  extension [Self <: AttachmentCardOptions](x: Self) {
+    
+    inline def setButtons(value: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsVarargs(value: (DownloadButtonDescriptor | CustomButtonDescriptor)*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setFailoverPreviewIconUrl(value: String): Self = StObject.set(x, "failoverPreviewIconUrl", value.asInstanceOf[js.Any])
+    
+    inline def setFileIconImageUrl(value: String): Self = StObject.set(x, "fileIconImageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setFoldColor(value: String): Self = StObject.set(x, "foldColor", value.asInstanceOf[js.Any])
+    
+    inline def setFoldColorUndefined: Self = StObject.set(x, "foldColor", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    
+    inline def setPreviewOnClick(value: PreviewClickEvent => Callback): Self = StObject.set(x, "previewOnClick", js.Any.fromFunction1((t0: PreviewClickEvent) => value(t0).runNow()))
+    
+    inline def setPreviewThumbnailUrl(value: String): Self = StObject.set(x, "previewThumbnailUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

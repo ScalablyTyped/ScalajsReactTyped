@@ -1,68 +1,56 @@
 package typingsJapgolly.materialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUi.MaterialUI.Popover.PopoverAnimationProps
 import typingsJapgolly.materialUi.MaterialUI.Popover.PopoverProps
 import typingsJapgolly.materialUi.MaterialUI.propTypes.origin
-import typingsJapgolly.materialUi.popoverMod.default
 import typingsJapgolly.react.mod.CSSProperties
 import typingsJapgolly.react.mod.ReactInstance
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
-  def apply(
-    anchorEl: ReactInstance = null,
-    anchorOrigin: origin = null,
-    animated: js.UndefOr[Boolean] = js.undefined,
-    animation: ComponentClassP[PopoverAnimationProps with js.Object] = null,
-    autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.undefined,
-    canAutoPosition: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    onRequestClose: /* reason */ String => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    targetOrigin: origin = null,
-    useLayerForClickAway: js.UndefOr[Boolean] = js.undefined,
-    zDepth: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PopoverProps, default, Unit, PopoverProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
-    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCloseWhenOffScreen)) __obj.updateDynamic("autoCloseWhenOffScreen")(autoCloseWhenOffScreen.asInstanceOf[js.Any])
-    if (!js.isUndefined(canAutoPosition)) __obj.updateDynamic("canAutoPosition")(canAutoPosition.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(js.Any.fromFunction1((t0: /* reason */ java.lang.String) => onRequestClose(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin.asInstanceOf[js.Any])
-    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway.asInstanceOf[js.Any])
-    if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUi.MaterialUI.Popover.PopoverProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUi.popoverMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUi.MaterialUI.Popover.PopoverProps])(children: _*)
-  }
-  @JSImport("material-ui/Popover", JSImport.Default)
+  @JSImport("material-ui", "Popover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.materialUi.mod.Popover] {
+    
+    inline def anchorEl(value: ReactInstance): this.type = set("anchorEl", value.asInstanceOf[js.Any])
+    
+    inline def anchorOrigin(value: origin): this.type = set("anchorOrigin", value.asInstanceOf[js.Any])
+    
+    inline def animated(value: Boolean): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def animation(value: ComponentClassP[PopoverAnimationProps & js.Object]): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def autoCloseWhenOffScreen(value: Boolean): this.type = set("autoCloseWhenOffScreen", value.asInstanceOf[js.Any])
+    
+    inline def canAutoPosition(value: Boolean): this.type = set("canAutoPosition", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def onRequestClose(value: /* reason */ String => Callback): this.type = set("onRequestClose", js.Any.fromFunction1((t0: /* reason */ String) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def targetOrigin(value: origin): this.type = set("targetOrigin", value.asInstanceOf[js.Any])
+    
+    inline def useLayerForClickAway(value: Boolean): this.type = set("useLayerForClickAway", value.asInstanceOf[js.Any])
+    
+    inline def zDepth(value: Double): this.type = set("zDepth", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Popover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

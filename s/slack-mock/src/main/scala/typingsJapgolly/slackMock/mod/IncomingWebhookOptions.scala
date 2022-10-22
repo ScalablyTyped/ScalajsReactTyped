@@ -1,30 +1,45 @@
 package typingsJapgolly.slackMock.mod
 
+import typingsJapgolly.nock.mod.ReplyHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IncomingWebhookOptions[T] extends js.Object {
+trait IncomingWebhookOptions[T] extends StObject {
+  
   var body: js.UndefOr[T] = js.undefined
+  
   var headers: js.UndefOr[IncomingWebhookHttpHeaders] = js.undefined
+  
   var statusCode: js.UndefOr[Double] = js.undefined
+  
   var url: js.UndefOr[IncomingWebhookUrl] = js.undefined
 }
-
 object IncomingWebhookOptions {
-  @scala.inline
-  def apply[T](
-    body: T = null,
-    headers: IncomingWebhookHttpHeaders = null,
-    statusCode: Int | Double = null,
-    url: IncomingWebhookUrl = null
-  ): IncomingWebhookOptions[T] = {
+  
+  inline def apply[T](): IncomingWebhookOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncomingWebhookOptions[T]]
   }
+  
+  extension [Self <: IncomingWebhookOptions[?], T](x: Self & IncomingWebhookOptions[T]) {
+    
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setHeaders(value: IncomingWebhookHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setHeadersVarargs(value: ReplyHeaderValue*): Self = StObject.set(x, "headers", js.Array(value*))
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    
+    inline def setUrl(value: IncomingWebhookUrl): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

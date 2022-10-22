@@ -1,29 +1,24 @@
 package typingsJapgolly.rmcDrawer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rmcDrawerStrings {
-  @js.native
-  sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait bottom extends StObject
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  @js.native
+  sealed trait top extends StObject
+  inline def top: top = "top".asInstanceOf[top]
 }
-

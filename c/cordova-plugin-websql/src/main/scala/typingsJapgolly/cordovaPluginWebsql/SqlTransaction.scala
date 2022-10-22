@@ -1,12 +1,12 @@
 package typingsJapgolly.cordovaPluginWebsql
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SqlTransaction extends js.Object {
+trait SqlTransaction extends StObject {
+  
   /**
     * Executes SQL statement via current transaction.
     * @param sql SQL statement to execute.
@@ -15,21 +15,39 @@ trait SqlTransaction extends js.Object {
     * @param errorCallback   Called, when query fails. Return false to continue transaction; true or no return to rollback.
     */
   def executeSql(sql: String): Unit = js.native
-  def executeSql(sql: String, arguments: js.Array[_]): Unit = js.native
+  def executeSql(sql: String, arguments: js.Array[Any]): Unit = js.native
   def executeSql(
     sql: String,
-    arguments: js.Array[_],
+    arguments: js.Array[Any],
     successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit]
   ): Unit = js.native
   def executeSql(
     sql: String,
-    arguments: js.Array[_],
+    arguments: js.Array[Any],
     successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit],
-    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, _]
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
+  ): Unit = js.native
+  def executeSql(
+    sql: String,
+    arguments: js.Array[Any],
+    successCallback: Unit,
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
+  ): Unit = js.native
+  def executeSql(
+    sql: String,
+    arguments: Unit,
+    successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit]
+  ): Unit = js.native
+  def executeSql(
+    sql: String,
+    arguments: Unit,
+    successCallback: js.Function2[/* transaction */ this.type, /* resultSet */ SqlResultSet, Unit],
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
+  ): Unit = js.native
+  def executeSql(
+    sql: String,
+    arguments: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function2[/* transaction */ this.type, /* error */ SqlError, Any]
   ): Unit = js.native
 }
-
-@JSGlobal("SqlTransaction")
-@js.native
-object SqlTransaction extends Instantiable0[SqlTransaction]
-

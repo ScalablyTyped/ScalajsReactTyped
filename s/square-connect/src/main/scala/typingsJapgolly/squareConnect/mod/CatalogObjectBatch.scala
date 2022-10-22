@@ -1,15 +1,15 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogObjectBatch")
 @js.native
-class CatalogObjectBatch () extends js.Object {
+open class CatalogObjectBatch () extends StObject {
+  
   /**
-    * A list of [CatalogObject](#type-catalogobject)s belonging to this batch.
+    * A list of CatalogObjects belonging to this batch.
     */
-  var objects: js.UndefOr[js.Array[CatalogObject]] = js.native
+  var objects: js.Array[CatalogObject] = js.native
 }
-

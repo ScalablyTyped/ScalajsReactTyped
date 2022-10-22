@@ -1,19 +1,25 @@
 organization := "org.scalablytyped.japgolly"
 name := "aws-sdk__credential-provider-node"
-version := "0.1.0-preview.2-102cf3"
-scalaVersion := "2.13.1"
+version := "3.188.0-cca445"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-imds" % "0.1.0-preview.1-4d0270",
-  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-ini" % "0.1.0-preview.1-9ec413",
-  "org.scalablytyped.japgolly" %%% "aws-sdk__shared-ini-file-loader" % "0.1.0-preview.1-94b637",
-  "org.scalablytyped.japgolly" %%% "aws-sdk__types" % "0.1.0-preview.1-c00b43",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__client-sso" % "3.188.0-1cbce7",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-imds" % "3.188.0-e23a1f",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-ini" % "3.188.0-aeb52d",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-sso" % "3.188.0-0b91bb",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__credential-provider-web-identity" % "3.188.0-cee083",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__fetch-http-handler" % "3.188.0-a59f74",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__node-config-provider" % "3.188.0-6156a6",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__node-http-handler" % "3.188.0-89c1e1",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__protocol-http" % "3.188.0-667c14",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__shared-ini-file-loader" % "3.188.0-e2b9f4",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__smithy-client" % "3.188.0-99b8cb",
+  "org.scalablytyped.japgolly" %%% "aws-sdk__types" % "3.188.0-7582dd",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

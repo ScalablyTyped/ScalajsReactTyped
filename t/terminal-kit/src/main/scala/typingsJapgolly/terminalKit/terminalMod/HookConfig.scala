@@ -1,36 +1,68 @@
 package typingsJapgolly.terminalKit.terminalMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HookConfig extends js.Object {
+trait HookConfig extends StObject {
+  
   var autoComplete: js.UndefOr[js.Array[String] | Autocompletion] = js.undefined
+  
   var autoCompleteHint: js.UndefOr[Boolean] = js.undefined
+  
   var autoCompleteMenu: js.UndefOr[Boolean | Autocompletion] = js.undefined
+  
   var hintStyle: js.UndefOr[CTerminal] = js.undefined
+  
   var style: js.UndefOr[CTerminal] = js.undefined
+  
   var tokenRegExp: js.UndefOr[js.RegExp] = js.undefined
 }
-
 object HookConfig {
-  @scala.inline
-  def apply(
-    autoComplete: js.Array[String] | Autocompletion = null,
-    autoCompleteHint: js.UndefOr[Boolean] = js.undefined,
-    autoCompleteMenu: Boolean | Autocompletion = null,
-    hintStyle: CTerminal = null,
-    style: CTerminal = null,
-    tokenRegExp: js.RegExp = null
-  ): HookConfig = {
+  
+  inline def apply(): HookConfig = {
     val __obj = js.Dynamic.literal()
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCompleteHint)) __obj.updateDynamic("autoCompleteHint")(autoCompleteHint.asInstanceOf[js.Any])
-    if (autoCompleteMenu != null) __obj.updateDynamic("autoCompleteMenu")(autoCompleteMenu.asInstanceOf[js.Any])
-    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tokenRegExp != null) __obj.updateDynamic("tokenRegExp")(tokenRegExp.asInstanceOf[js.Any])
     __obj.asInstanceOf[HookConfig]
   }
+  
+  extension [Self <: HookConfig](x: Self) {
+    
+    inline def setAutoComplete(value: js.Array[String] | Autocompletion): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoComplete", js.Any.fromFunction1(value))
+    
+    inline def setAutoCompleteFunction2(
+      value: (/* inputString */ String, /* callback */ Callback[String | AutocompletionArray[String]]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "autoComplete", js.Any.fromFunction2((t0: /* inputString */ String, t1: /* callback */ Callback[String | AutocompletionArray[String]]) => (value(t0, t1)).runNow()))
+    
+    inline def setAutoCompleteHint(value: Boolean): Self = StObject.set(x, "autoCompleteHint", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteHintUndefined: Self = StObject.set(x, "autoCompleteHint", js.undefined)
+    
+    inline def setAutoCompleteMenu(value: Boolean | Autocompletion): Self = StObject.set(x, "autoCompleteMenu", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCompleteMenuFunction1(value: /* inputString */ String => js.Promise[String | AutocompletionArray[String]]): Self = StObject.set(x, "autoCompleteMenu", js.Any.fromFunction1(value))
+    
+    inline def setAutoCompleteMenuFunction2(
+      value: (/* inputString */ String, /* callback */ Callback[String | AutocompletionArray[String]]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "autoCompleteMenu", js.Any.fromFunction2((t0: /* inputString */ String, t1: /* callback */ Callback[String | AutocompletionArray[String]]) => (value(t0, t1)).runNow()))
+    
+    inline def setAutoCompleteMenuUndefined: Self = StObject.set(x, "autoCompleteMenu", js.undefined)
+    
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    
+    inline def setAutoCompleteVarargs(value: String*): Self = StObject.set(x, "autoComplete", js.Array(value*))
+    
+    inline def setHintStyle(value: CTerminal): Self = StObject.set(x, "hintStyle", value.asInstanceOf[js.Any])
+    
+    inline def setHintStyleUndefined: Self = StObject.set(x, "hintStyle", js.undefined)
+    
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTokenRegExp(value: js.RegExp): Self = StObject.set(x, "tokenRegExp", value.asInstanceOf[js.Any])
+    
+    inline def setTokenRegExpUndefined: Self = StObject.set(x, "tokenRegExp", js.undefined)
+  }
 }
-

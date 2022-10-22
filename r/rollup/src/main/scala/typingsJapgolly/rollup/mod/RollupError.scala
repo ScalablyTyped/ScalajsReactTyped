@@ -1,49 +1,34 @@
 package typingsJapgolly.rollup.mod
 
-import typingsJapgolly.rollup.AnonColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RollupError extends RollupLogProps {
-  var parserError: js.UndefOr[js.Error] = js.undefined
-  var stack: js.UndefOr[String] = js.undefined
+trait RollupError
+  extends StObject
+     with RollupLog {
+  
+  var name: js.UndefOr[String] = js.undefined
+  
   var watchFiles: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object RollupError {
-  @scala.inline
-  def apply(
-    message: String,
-    code: String = null,
-    frame: String = null,
-    hook: String = null,
-    id: String = null,
-    loc: AnonColumn = null,
-    name: String = null,
-    parserError: js.Error = null,
-    plugin: String = null,
-    pluginCode: String = null,
-    pos: Int | Double = null,
-    stack: String = null,
-    url: String = null,
-    watchFiles: js.Array[String] = null
-  ): RollupError = {
+  
+  inline def apply(message: String): RollupError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (hook != null) __obj.updateDynamic("hook")(hook.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (parserError != null) __obj.updateDynamic("parserError")(parserError.asInstanceOf[js.Any])
-    if (plugin != null) __obj.updateDynamic("plugin")(plugin.asInstanceOf[js.Any])
-    if (pluginCode != null) __obj.updateDynamic("pluginCode")(pluginCode.asInstanceOf[js.Any])
-    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (watchFiles != null) __obj.updateDynamic("watchFiles")(watchFiles.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupError]
   }
+  
+  extension [Self <: RollupError](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setWatchFiles(value: js.Array[String]): Self = StObject.set(x, "watchFiles", value.asInstanceOf[js.Any])
+    
+    inline def setWatchFilesUndefined: Self = StObject.set(x, "watchFiles", js.undefined)
+    
+    inline def setWatchFilesVarargs(value: String*): Self = StObject.set(x, "watchFiles", js.Array(value*))
+  }
 }
-

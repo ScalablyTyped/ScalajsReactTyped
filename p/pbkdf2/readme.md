@@ -1,7 +1,7 @@
 
 # Scala.js typings for pbkdf2
 
-Typings are for version 3.0
+Typings are for version 3.1
 
 ## Library description:
 This library provides the functionality of PBKDF2 with the ability to use any supported hashing algorithm returned from crypto.getHashes()
@@ -10,10 +10,10 @@ This library provides the functionality of PBKDF2 with the ability to use any su
 | ------------------ | :-------------: |
 | Full name          | pbkdf2 |
 | Keywords           | pbkdf2, kdf, salt, hash |
-| # releases         | 3 |
-| # dependents       | 123 |
-| # downloads        | 303357195 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.1378256666666664E7 |
+| # stars            | 167.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-browserify/pbkdf2)

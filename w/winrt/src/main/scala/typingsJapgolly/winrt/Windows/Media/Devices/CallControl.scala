@@ -1,41 +1,30 @@
 package typingsJapgolly.winrt.Windows.Media.Devices
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Devices.CallControl")
-@js.native
-class CallControl () extends ICallControl {
-  /* CompleteClass */
-  override var hasRinger: Boolean = js.native
-  /* CompleteClass */
-  override var onanswerrequested: js.Any = js.native
-  /* CompleteClass */
-  override var onaudiotransferrequested: js.Any = js.native
-  /* CompleteClass */
-  override var ondialrequested: js.Any = js.native
-  /* CompleteClass */
-  override var onhanguprequested: js.Any = js.native
-  /* CompleteClass */
-  override var onkeypadpressed: js.Any = js.native
-  /* CompleteClass */
-  override var onredialrequested: js.Any = js.native
-  /* CompleteClass */
-  override def endCall(callToken: Double): Unit = js.native
-  /* CompleteClass */
-  override def indicateActiveCall(callToken: Double): Unit = js.native
-  /* CompleteClass */
-  override def indicateNewIncomingCall(enableRinger: Boolean, callerId: String): Double = js.native
-  /* CompleteClass */
-  override def indicateNewOutgoingCall(): Double = js.native
+trait CallControl
+  extends StObject
+     with ICallControl
+object CallControl {
+  
+  inline def apply(
+    endCall: Double => Callback,
+    hasRinger: Boolean,
+    indicateActiveCall: Double => Callback,
+    indicateNewIncomingCall: (Boolean, String) => Double,
+    indicateNewOutgoingCall: CallbackTo[Double],
+    onanswerrequested: Any,
+    onaudiotransferrequested: Any,
+    ondialrequested: Any,
+    onhanguprequested: Any,
+    onkeypadpressed: Any,
+    onredialrequested: Any
+  ): CallControl = {
+    val __obj = js.Dynamic.literal(endCall = js.Any.fromFunction1((t0: Double) => endCall(t0).runNow()), hasRinger = hasRinger.asInstanceOf[js.Any], indicateActiveCall = js.Any.fromFunction1((t0: Double) => indicateActiveCall(t0).runNow()), indicateNewIncomingCall = js.Any.fromFunction2(indicateNewIncomingCall), indicateNewOutgoingCall = indicateNewOutgoingCall.toJsFn, onanswerrequested = onanswerrequested.asInstanceOf[js.Any], onaudiotransferrequested = onaudiotransferrequested.asInstanceOf[js.Any], ondialrequested = ondialrequested.asInstanceOf[js.Any], onhanguprequested = onhanguprequested.asInstanceOf[js.Any], onkeypadpressed = onkeypadpressed.asInstanceOf[js.Any], onredialrequested = onredialrequested.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CallControl]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Media.Devices.CallControl")
-@js.native
-object CallControl extends js.Object {
-  def fromId(deviceInterfaceId: String): CallControl = js.native
-  def getDefault(): CallControl = js.native
-}
-

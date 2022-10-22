@@ -1,35 +1,30 @@
 package typingsJapgolly.cytoscape.mod
 
 import typingsJapgolly.cytoscape.cytoscapeStrings.blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExportBlobOptions extends ExportOptions {
+trait ExportBlobOptions
+  extends StObject
+     with ExportOptions {
+  
   /**
     * output Whether the output should be 'base64uri' (default), 'base64', or 'blob'.
     */
   var output: js.UndefOr[blob] = js.undefined
 }
-
 object ExportBlobOptions {
-  @scala.inline
-  def apply(
-    bg: String = null,
-    full: js.UndefOr[Boolean] = js.undefined,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    output: blob = null,
-    scale: Int | Double = null
-  ): ExportBlobOptions = {
+  
+  inline def apply(): ExportBlobOptions = {
     val __obj = js.Dynamic.literal()
-    if (bg != null) __obj.updateDynamic("bg")(bg.asInstanceOf[js.Any])
-    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportBlobOptions]
   }
+  
+  extension [Self <: ExportBlobOptions](x: Self) {
+    
+    inline def setOutput(value: blob): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+  }
 }
-

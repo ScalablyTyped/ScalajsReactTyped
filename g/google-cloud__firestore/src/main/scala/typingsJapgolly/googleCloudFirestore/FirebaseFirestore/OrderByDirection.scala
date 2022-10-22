@@ -1,21 +1,17 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.desc
   - typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.asc
 */
-trait OrderByDirection extends js.Object
-
+trait OrderByDirection extends StObject
 object OrderByDirection {
-  @scala.inline
-  def asc: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.asc = this.cast("asc")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def desc: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.desc = this.cast("desc")
+  
+  inline def asc: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.asc = "asc".asInstanceOf[typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.asc]
+  
+  inline def desc: typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.desc = "desc".asInstanceOf[typingsJapgolly.googleCloudFirestore.googleCloudFirestoreStrings.desc]
 }
-

@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CheckOutType extends js.Object
-
+sealed trait CheckOutType extends StObject
 @JSGlobal("SP.CheckOutType")
 @js.native
-object CheckOutType extends js.Object {
-  @js.native
-  sealed trait none extends CheckOutType
+object CheckOutType extends StObject {
   
   @js.native
-  sealed trait offline extends CheckOutType
+  sealed trait none
+    extends StObject
+       with CheckOutType
   
   @js.native
-  sealed trait online extends CheckOutType
+  sealed trait offline
+    extends StObject
+       with CheckOutType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CheckOutType with Double] = js.native
-  /* 2 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object offline extends TopLevel[offline with Double]
-  
-  /* 0 */ @js.native
-  object online extends TopLevel[online with Double]
-  
+  @js.native
+  sealed trait online
+    extends StObject
+       with CheckOutType
 }
-

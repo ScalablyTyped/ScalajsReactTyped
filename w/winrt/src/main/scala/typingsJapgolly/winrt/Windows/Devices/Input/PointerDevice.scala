@@ -2,32 +2,24 @@ package typingsJapgolly.winrt.Windows.Devices.Input
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrt.Windows.Foundation.Rect
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Input.PointerDevice")
-@js.native
-class PointerDevice () extends IPointerDevice {
-  /* CompleteClass */
-  override var isIntegrated: Boolean = js.native
-  /* CompleteClass */
-  override var maxContacts: Double = js.native
-  /* CompleteClass */
-  override var physicalDeviceRect: Rect = js.native
-  /* CompleteClass */
-  override var pointerDeviceType: PointerDeviceType = js.native
-  /* CompleteClass */
-  override var screenRect: Rect = js.native
-  /* CompleteClass */
-  override var supportedUsages: IVectorView[PointerDeviceUsage] = js.native
+trait PointerDevice
+  extends StObject
+     with IPointerDevice
+object PointerDevice {
+  
+  inline def apply(
+    isIntegrated: Boolean,
+    maxContacts: Double,
+    physicalDeviceRect: Rect,
+    pointerDeviceType: PointerDeviceType,
+    screenRect: Rect,
+    supportedUsages: IVectorView[PointerDeviceUsage]
+  ): PointerDevice = {
+    val __obj = js.Dynamic.literal(isIntegrated = isIntegrated.asInstanceOf[js.Any], maxContacts = maxContacts.asInstanceOf[js.Any], physicalDeviceRect = physicalDeviceRect.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], screenRect = screenRect.asInstanceOf[js.Any], supportedUsages = supportedUsages.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PointerDevice]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Input.PointerDevice")
-@js.native
-object PointerDevice extends js.Object {
-  def getPointerDevice(pointerId: Double): PointerDevice = js.native
-  def getPointerDevices(): IVectorView[PointerDevice] = js.native
-}
-

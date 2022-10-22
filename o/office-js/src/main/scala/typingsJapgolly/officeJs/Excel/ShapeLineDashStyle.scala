@@ -1,95 +1,126 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeLineDashStyle extends js.Object
-
+sealed trait ShapeLineDashStyle extends StObject
 /**
-  *
   * The dash style for a line.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeLineDashStyle")
 @js.native
-object ShapeLineDashStyle extends js.Object {
+object ShapeLineDashStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dash extends ShapeLineDashStyle
+  sealed trait dash
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dashDot extends ShapeLineDashStyle
+  sealed trait dashDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait dashDotDot extends ShapeLineDashStyle
+  sealed trait dashDotDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait longDash extends ShapeLineDashStyle
+  sealed trait longDash
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait longDashDot extends ShapeLineDashStyle
+  sealed trait longDashDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait longDashDotDot extends ShapeLineDashStyle
+  sealed trait longDashDotDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait roundDot extends ShapeLineDashStyle
+  sealed trait roundDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait solid extends ShapeLineDashStyle
+  sealed trait solid
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait squareDot extends ShapeLineDashStyle
+  sealed trait squareDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait systemDash extends ShapeLineDashStyle
+  sealed trait systemDash
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait systemDashDot extends ShapeLineDashStyle
+  sealed trait systemDashDot
+    extends StObject
+       with ShapeLineDashStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait systemDot extends ShapeLineDashStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeLineDashStyle with String] = js.native
-  /* "Dash" */ @js.native
-  object dash extends TopLevel[dash with String]
-  
-  /* "DashDot" */ @js.native
-  object dashDot extends TopLevel[dashDot with String]
-  
-  /* "DashDotDot" */ @js.native
-  object dashDotDot extends TopLevel[dashDotDot with String]
-  
-  /* "LongDash" */ @js.native
-  object longDash extends TopLevel[longDash with String]
-  
-  /* "LongDashDot" */ @js.native
-  object longDashDot extends TopLevel[longDashDot with String]
-  
-  /* "LongDashDotDot" */ @js.native
-  object longDashDotDot extends TopLevel[longDashDotDot with String]
-  
-  /* "RoundDot" */ @js.native
-  object roundDot extends TopLevel[roundDot with String]
-  
-  /* "Solid" */ @js.native
-  object solid extends TopLevel[solid with String]
-  
-  /* "SquareDot" */ @js.native
-  object squareDot extends TopLevel[squareDot with String]
-  
-  /* "SystemDash" */ @js.native
-  object systemDash extends TopLevel[systemDash with String]
-  
-  /* "SystemDashDot" */ @js.native
-  object systemDashDot extends TopLevel[systemDashDot with String]
-  
-  /* "SystemDot" */ @js.native
-  object systemDot extends TopLevel[systemDot with String]
-  
+  sealed trait systemDot
+    extends StObject
+       with ShapeLineDashStyle
 }
-

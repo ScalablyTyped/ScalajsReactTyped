@@ -4,16 +4,16 @@
 Typings are for version 0.5
 
 ## Library description:
-Jest matcher for multiple snapshot files per test
+[![CircleCI](https://circleci.com/gh/igor-dv/jest-specific-snapshot.svg?style=svg)](https://circleci.com/gh/igor-dv/jest-specific-snapshot)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | jest-specific-snapshot |
 | Keywords           | - |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 6182323 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1786965.0 |
+| # stars            | 44.0 |
 
 ## Links
 - [Homepage](https://github.com/igor-dv/jest-specific-snapshot#readme)

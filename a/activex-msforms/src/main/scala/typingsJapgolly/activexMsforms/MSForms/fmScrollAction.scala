@@ -1,59 +1,55 @@
 package typingsJapgolly.activexMsforms.MSForms
 
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`10`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`4`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`5`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`8`
-import typingsJapgolly.activexMsforms.activexMsformsNumbers.`9`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`10`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`4`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`5`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`6`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`8`
+import typingsJapgolly.activexMsforms.activexMsformsInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`7`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`5`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`9`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`6`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`10`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`2`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`1`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`0`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`4`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`3`
-  - typingsJapgolly.activexMsforms.activexMsformsNumbers.`8`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`7`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`5`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`9`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`6`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`10`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`2`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`1`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`0`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`4`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`3`
+  - typingsJapgolly.activexMsforms.activexMsformsInts.`8`
 */
-trait fmScrollAction extends js.Object
-
+trait fmScrollAction extends StObject
 object fmScrollAction {
-  @scala.inline
-  def _fmScrollActionAbsoluteChange: `7` = this.cast(7)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fmScrollActionBegin: `5` = this.cast(5)
-  @scala.inline
-  def fmScrollActionControlRequest: `9` = this.cast(9)
-  @scala.inline
-  def fmScrollActionEnd: `6` = this.cast(6)
-  @scala.inline
-  def fmScrollActionFocusRequest: `10` = this.cast(10)
-  @scala.inline
-  def fmScrollActionLineDown: `2` = this.cast(2)
-  @scala.inline
-  def fmScrollActionLineUp: `1` = this.cast(1)
-  @scala.inline
-  def fmScrollActionNoChange: `0` = this.cast(0)
-  @scala.inline
-  def fmScrollActionPageDown: `4` = this.cast(4)
-  @scala.inline
-  def fmScrollActionPageUp: `3` = this.cast(3)
-  @scala.inline
-  def fmScrollActionPropertyChange: `8` = this.cast(8)
+  
+  inline def _fmScrollActionAbsoluteChange: `7` = 7.asInstanceOf[`7`]
+  
+  inline def fmScrollActionBegin: `5` = 5.asInstanceOf[`5`]
+  
+  inline def fmScrollActionControlRequest: `9` = 9.asInstanceOf[`9`]
+  
+  inline def fmScrollActionEnd: `6` = 6.asInstanceOf[`6`]
+  
+  inline def fmScrollActionFocusRequest: `10` = 10.asInstanceOf[`10`]
+  
+  inline def fmScrollActionLineDown: `2` = 2.asInstanceOf[`2`]
+  
+  inline def fmScrollActionLineUp: `1` = 1.asInstanceOf[`1`]
+  
+  inline def fmScrollActionNoChange: `0` = 0.asInstanceOf[`0`]
+  
+  inline def fmScrollActionPageDown: `4` = 4.asInstanceOf[`4`]
+  
+  inline def fmScrollActionPageUp: `3` = 3.asInstanceOf[`3`]
+  
+  inline def fmScrollActionPropertyChange: `8` = 8.asInstanceOf[`8`]
 }
-

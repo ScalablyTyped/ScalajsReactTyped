@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorMessageDisplayingEventUIParam extends js.Object {
+trait ErrorMessageDisplayingEventUIParam extends StObject {
+  
   /**
-  	 * Used to get or set the error message that is to be shown.
-  	 */
-  var errorMessage: js.UndefOr[js.Any] = js.undefined
+    * Used to get or set the error message that is to be shown.
+    */
+  var errorMessage: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to the barcode widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to the barcode widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ErrorMessageDisplayingEventUIParam {
-  @scala.inline
-  def apply(errorMessage: js.Any = null, owner: js.Any = null): ErrorMessageDisplayingEventUIParam = {
+  
+  inline def apply(): ErrorMessageDisplayingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorMessageDisplayingEventUIParam]
   }
+  
+  extension [Self <: ErrorMessageDisplayingEventUIParam](x: Self) {
+    
+    inline def setErrorMessage(value: Any): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

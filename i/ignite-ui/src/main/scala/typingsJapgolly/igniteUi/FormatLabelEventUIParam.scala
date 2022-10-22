@@ -1,48 +1,63 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FormatLabelEventUIParam extends js.Object {
+trait FormatLabelEventUIParam extends StObject {
+  
   /**
-  	 * Used to obtain the maximum value of the bullet graph scale.
-  	 */
-  var actualMaximumValue: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain the maximum value of the bullet graph scale.
+    */
+  var actualMaximumValue: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain the minimum value of the bullet graph scale.
-  	 */
-  var actualMinimumValue: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain the minimum value of the bullet graph scale.
+    */
+  var actualMinimumValue: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain the string value of the label.
-  	 */
-  var label: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain the string value of the label.
+    */
+  var label: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain reference to the bullet graph widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain reference to the bullet graph widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to obtain the value on the the bullet graph scale associated with the label.
-  	 */
-  var value: js.UndefOr[js.Any] = js.undefined
+    * Used to obtain the value on the the bullet graph scale associated with the label.
+    */
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object FormatLabelEventUIParam {
-  @scala.inline
-  def apply(
-    actualMaximumValue: js.Any = null,
-    actualMinimumValue: js.Any = null,
-    label: js.Any = null,
-    owner: js.Any = null,
-    value: js.Any = null
-  ): FormatLabelEventUIParam = {
+  
+  inline def apply(): FormatLabelEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (actualMaximumValue != null) __obj.updateDynamic("actualMaximumValue")(actualMaximumValue.asInstanceOf[js.Any])
-    if (actualMinimumValue != null) __obj.updateDynamic("actualMinimumValue")(actualMinimumValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatLabelEventUIParam]
   }
+  
+  extension [Self <: FormatLabelEventUIParam](x: Self) {
+    
+    inline def setActualMaximumValue(value: Any): Self = StObject.set(x, "actualMaximumValue", value.asInstanceOf[js.Any])
+    
+    inline def setActualMaximumValueUndefined: Self = StObject.set(x, "actualMaximumValue", js.undefined)
+    
+    inline def setActualMinimumValue(value: Any): Self = StObject.set(x, "actualMinimumValue", value.asInstanceOf[js.Any])
+    
+    inline def setActualMinimumValueUndefined: Self = StObject.set(x, "actualMinimumValue", js.undefined)
+    
+    inline def setLabel(value: Any): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

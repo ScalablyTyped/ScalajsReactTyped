@@ -1,0 +1,26 @@
+package typingsJapgolly.csstype.mod.DataType
+
+import typingsJapgolly.csstype.mod.Property._BackgroundAttachment
+import typingsJapgolly.csstype.mod.Property._WebkitMaskAttachment
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.csstype.csstypeStrings.fixed
+  - typingsJapgolly.csstype.csstypeStrings.local
+  - typingsJapgolly.csstype.csstypeStrings.scroll
+*/
+trait Attachment
+  extends StObject
+     with _BackgroundAttachment
+     with _FinalBgLayer[Any]
+     with _WebkitMaskAttachment
+object Attachment {
+  
+  inline def fixed: typingsJapgolly.csstype.csstypeStrings.fixed = "fixed".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.fixed]
+  
+  inline def local: typingsJapgolly.csstype.csstypeStrings.local = "local".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.local]
+  
+  inline def scroll: typingsJapgolly.csstype.csstypeStrings.scroll = "scroll".asInstanceOf[typingsJapgolly.csstype.csstypeStrings.scroll]
+}

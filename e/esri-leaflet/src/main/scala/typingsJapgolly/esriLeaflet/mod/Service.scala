@@ -1,15 +1,14 @@
 package typingsJapgolly.esriLeaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A generic class representing a hosted resource on ArcGIS Online or ArcGIS Server. This class can be extended
   * to provide support for making requests and serves as a standard for authentication and proxying.
   */
-@JSImport("esri-leaflet", "Service")
+/* note: abstract class */ @JSImport("esri-leaflet", "Service")
 @js.native
-abstract class Service ()
+open class Service ()
   extends typingsJapgolly.esriLeaflet.mod.leafletAugmentingMod.esri.Service
-

@@ -1,16 +1,14 @@
 package typingsJapgolly.angularRouter.mod
 
-import typingsJapgolly.angularRouter.AnonDictk
-import typingsJapgolly.angularRouter.angularRouterStrings.hashchange
-import typingsJapgolly.angularRouter.angularRouterStrings.imperative
-import typingsJapgolly.angularRouter.angularRouterStrings.popstate
+import typingsJapgolly.angularRouter.anon.Dictk
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/router", "NavigationStart")
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.angularRouter.mod.Event2 because Already inherited */ @JSImport("@angular/router", "NavigationStart")
 @js.native
-class NavigationStart protected () extends RouterEvent {
+open class NavigationStart protected () extends RouterEvent {
   def this(/** @docsNotRequired */
   id: Double, /** @docsNotRequired */
   url: String) = this()
@@ -20,7 +18,7 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   url: String,
     /** @docsNotRequired */
-  navigationTrigger: hashchange
+  navigationTrigger: NavigationTrigger
   ) = this()
   def this(
     /** @docsNotRequired */
@@ -28,7 +26,9 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   url: String,
     /** @docsNotRequired */
-  navigationTrigger: imperative
+  navigationTrigger: Unit,
+    /** @docsNotRequired */
+  restoredState: Dictk
   ) = this()
   def this(
     /** @docsNotRequired */
@@ -36,44 +36,21 @@ class NavigationStart protected () extends RouterEvent {
     /** @docsNotRequired */
   url: String,
     /** @docsNotRequired */
-  navigationTrigger: popstate
+  navigationTrigger: NavigationTrigger,
+    /** @docsNotRequired */
+  restoredState: Dictk
   ) = this()
-  def this(
-    /** @docsNotRequired */
-  id: Double,
-    /** @docsNotRequired */
-  url: String,
-    /** @docsNotRequired */
-  navigationTrigger: hashchange,
-    /** @docsNotRequired */
-  restoredState: AnonDictk
-  ) = this()
-  def this(
-    /** @docsNotRequired */
-  id: Double,
-    /** @docsNotRequired */
-  url: String,
-    /** @docsNotRequired */
-  navigationTrigger: imperative,
-    /** @docsNotRequired */
-  restoredState: AnonDictk
-  ) = this()
-  def this(
-    /** @docsNotRequired */
-  id: Double,
-    /** @docsNotRequired */
-  url: String,
-    /** @docsNotRequired */
-  navigationTrigger: popstate,
-    /** @docsNotRequired */
-  restoredState: AnonDictk
-  ) = this()
+  
   /**
     * Identifies the call or event that triggered the navigation.
     * An `imperative` trigger is a call to `router.navigateByUrl()` or `router.navigate()`.
     *
+    * @see `NavigationEnd`
+    * @see `NavigationCancel`
+    * @see `NavigationError`
     */
-  var navigationTrigger: js.UndefOr[imperative | popstate | hashchange] = js.native
+  var navigationTrigger: js.UndefOr[NavigationTrigger] = js.native
+  
   /**
     * The navigation state that was previously supplied to the `pushState` call,
     * when the navigation is triggered by a `popstate` event. Otherwise null.
@@ -91,6 +68,7 @@ class NavigationStart protected () extends RouterEvent {
     * remembered state, such as scroll position.
     *
     */
-  var restoredState: js.UndefOr[AnonDictk | Null] = js.native
+  var restoredState: js.UndefOr[Dictk | Null] = js.native
+  
+  val `type`: String | Double = js.native
 }
-

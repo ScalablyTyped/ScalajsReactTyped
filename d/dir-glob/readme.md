@@ -10,10 +10,10 @@ Convert directories to glob compatible strings
 | ------------------ | :-------------: |
 | Full name          | dir-glob |
 | Keywords           | convert, directory, extensions, files, glob |
-| # releases         | 6 |
-| # dependents       | 23 |
-| # downloads        | 287315854 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1763090433333333E8 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/kevva/dir-glob#readme)

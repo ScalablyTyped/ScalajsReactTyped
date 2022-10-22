@@ -1,58 +1,50 @@
 package typingsJapgolly.materialSwitch
 
-import typingsJapgolly.materialBase.foundationMod.MDCFoundation
+import typingsJapgolly.materialBase.observerFoundationMod.MDCObserverFoundation
 import typingsJapgolly.materialSwitch.adapterMod.MDCSwitchAdapter
-import typingsJapgolly.std.Event_
+import typingsJapgolly.materialSwitch.adapterMod.MDCSwitchRenderAdapter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/switch/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/switch/foundation", "MDCSwitchFoundation")
   @js.native
-  class MDCSwitchFoundation () extends MDCFoundation[MDCSwitchAdapter] {
-    def this(adapter: PartialMDCSwitchAdapter) = this()
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
-    /** Handles the change event for the switch native control. */
-    def handleChange(evt: Event_): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
-    /** Sets the checked state of the switch. */
-    def setChecked(checked: Boolean): Unit = js.native
-    /** Sets the disabled state of the switch. */
-    def setDisabled(disabled: Boolean): Unit = js.native
+  open class MDCSwitchFoundation protected () extends MDCObserverFoundation[MDCSwitchAdapter] {
+    def this(adapter: MDCSwitchAdapter) = this()
+    
+    /**
+      * Event handler for switch click events. Clicking on a switch will toggle its
+      * selected state.
+      */
+    def handleClick(): Unit = js.native
+    
+    /* protected */ def stopProcessingIfDisabled(): Unit = js.native
   }
   
+  @JSImport("@material/switch/foundation", "MDCSwitchRenderFoundation")
   @js.native
-  class default () extends MDCSwitchFoundation {
-    def this(adapter: PartialMDCSwitchAdapter) = this()
+  open class MDCSwitchRenderFoundation protected () extends MDCSwitchFoundation {
+    def this(adapter: MDCSwitchAdapter) = this()
+    
+    /* protected */ @JSName("adapter")
+    var adapter_MDCSwitchRenderFoundation: MDCSwitchRenderAdapter = js.native
+    
+    /**
+      * Initializes the foundation from a server side rendered (SSR) component.
+      * This will sync the adapter's state with the current state of the DOM.
+      *
+      * This method should be called after `init()`.
+      */
+    def initFromDOM(): Unit = js.native
+    
+    /* protected */ def onDisabledChange(): Unit = js.native
+    
+    /* protected */ def onProcessingChange(): Unit = js.native
+    
+    /* protected */ def onSelectedChange(): Unit = js.native
+    
+    /* private */ var toggleClass: Any = js.native
   }
-  
-  /* static members */
-  @js.native
-  object MDCSwitchFoundation extends js.Object {
-    /** The CSS classes used by the switch. */
-    val cssClasses: AnonCHECKED = js.native
-    /** The default Adapter for the switch. */
-    val defaultAdapter: MDCSwitchAdapter = js.native
-    /** The string constants used by the switch. */
-    val strings: AnonNATIVECONTROLSELECTOR = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    /** The CSS classes used by the switch. */
-    val cssClasses: AnonCHECKED = js.native
-    /** The default Adapter for the switch. */
-    val defaultAdapter: MDCSwitchAdapter = js.native
-    /** The string constants used by the switch. */
-    val strings: AnonNATIVECONTROLSELECTOR = js.native
-  }
-  
 }
-

@@ -1,29 +1,24 @@
 package typingsJapgolly.offscreencanvas
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object offscreencanvasStrings {
-  @js.native
-  sealed trait `2d` extends js.Object
   
   @js.native
-  sealed trait bitmaprenderer extends js.Object
+  sealed trait `2d` extends StObject
+  inline def `2d`: `2d` = "2d".asInstanceOf[`2d`]
   
   @js.native
-  sealed trait webgl extends js.Object
+  sealed trait bitmaprenderer extends StObject
+  inline def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
   
   @js.native
-  sealed trait webgl2 extends js.Object
+  sealed trait webgl extends StObject
+  inline def webgl: webgl = "webgl".asInstanceOf[webgl]
   
-  @scala.inline
-  def `2d`: `2d` = "2d".asInstanceOf[`2d`]
-  @scala.inline
-  def bitmaprenderer: bitmaprenderer = "bitmaprenderer".asInstanceOf[bitmaprenderer]
-  @scala.inline
-  def webgl: webgl = "webgl".asInstanceOf[webgl]
-  @scala.inline
-  def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
+  @js.native
+  sealed trait webgl2 extends StObject
+  inline def webgl2: webgl2 = "webgl2".asInstanceOf[webgl2]
 }
-

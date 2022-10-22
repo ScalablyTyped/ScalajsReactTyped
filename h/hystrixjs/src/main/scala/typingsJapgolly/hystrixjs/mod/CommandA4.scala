@@ -1,20 +1,23 @@
 package typingsJapgolly.hystrixjs.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommandA4[R, T, U, V, W] extends js.Object {
-  def execute(t: T, u: U, v: V, w: W): js.Thenable[R]
+trait CommandA4[R, T, U, V, W] extends StObject {
+  
+  def execute(t: T, u: U, v: V, w: W): PromiseLike[R]
 }
-
 object CommandA4 {
-  @scala.inline
-  def apply[R, T, U, V, W](execute: (T, U, V, W) => CallbackTo[js.Thenable[R]]): CommandA4[R, T, U, V, W] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("execute")(js.Any.fromFunction4((t0: T, t1: U, t2: V, t3: W) => execute(t0, t1, t2, t3).runNow()))
+  
+  inline def apply[R, T, U, V, W](execute: (T, U, V, W) => PromiseLike[R]): CommandA4[R, T, U, V, W] = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction4(execute))
     __obj.asInstanceOf[CommandA4[R, T, U, V, W]]
   }
+  
+  extension [Self <: CommandA4[?, ?, ?, ?, ?], R, T, U, V, W](x: Self & (CommandA4[R, T, U, V, W])) {
+    
+    inline def setExecute(value: (T, U, V, W) => PromiseLike[R]): Self = StObject.set(x, "execute", js.Any.fromFunction4(value))
+  }
 }
-

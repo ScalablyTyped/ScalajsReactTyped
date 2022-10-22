@@ -1,21 +1,25 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.modalTypesMod.IModalProps
+import typingsJapgolly.officeUiFabricReact.libComponentsModalModalDottypesMod.IModalProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ModalBase")
 @js.native
-class ModalBase protected ()
+open class ModalBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libModalMod.ModalBase {
   def this(props: IModalProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "ModalBase")
-@js.native
-object ModalBase extends js.Object {
-  var defaultProps: IModalProps = js.native
+object ModalBase {
+  
+  @JSImport("office-ui-fabric-react", "ModalBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "ModalBase.defaultProps")
+  @js.native
+  def defaultProps: IModalProps = js.native
+  inline def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

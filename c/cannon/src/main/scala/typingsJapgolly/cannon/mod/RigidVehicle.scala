@@ -1,14 +1,14 @@
 package typingsJapgolly.cannon.mod
 
 import typingsJapgolly.cannon.CANNON.IRigidVehicleOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cannon", "RigidVehicle")
 @js.native
-class RigidVehicle ()
-  extends typingsJapgolly.cannon.CANNON.RigidVehicle {
+open class RigidVehicle ()
+  extends StObject
+     with typingsJapgolly.cannon.CANNON.RigidVehicle {
   def this(options: IRigidVehicleOptions) = this()
 }
-

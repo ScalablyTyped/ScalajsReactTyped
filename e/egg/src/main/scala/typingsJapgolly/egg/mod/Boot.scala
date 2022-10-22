@@ -1,32 +1,34 @@
 package typingsJapgolly.egg.mod
 
-import typingsJapgolly.eggLogger.mod.EggLogger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("egg", "Boot")
 @js.native
-class Boot () extends js.Object {
+open class Boot () extends StObject {
+  
   /**
     * The instance of agent
     * @member {Agent}
     */
-  var agent: Agent = js.native
+  /* protected */ var agent: Agent = js.native
+  
   /**
     * The instance of app
     * @member {Application}
     */
-  var app: Application = js.native
+  /* protected */ var app: Application = js.native
+  
   /**
     * The configuration of application
     * @member {EggAppConfig}
     */
-  var config: EggAppConfig = js.native
+  /* protected */ var config: EggAppConfig = js.native
+  
   /**
     * logger
     * @member {EggLogger}
     */
-  var logger: EggLogger = js.native
+  /* protected */ var logger: EggLogger = js.native
 }
-

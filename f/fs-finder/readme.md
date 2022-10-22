@@ -10,10 +10,10 @@ Typings are for version v1.8.0
 | ------------------ | :-------------: |
 | Full name          | fs-finder |
 | Keywords           | file, fs, finder, recursive, walk |
-| # releases         | 0 |
-| # dependents       | 63 |
-| # downloads        | 305007 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 65119.333333333336 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/Carrooi/Node-FsFinder)

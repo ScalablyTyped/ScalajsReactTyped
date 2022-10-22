@@ -1,29 +1,23 @@
 package typingsJapgolly.winjs.WinJS.UI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CountError extends js.Object
-
+sealed trait CountError extends StObject
 /**
   * Indicates that the IListDataAdapter was unable to provide a count.
   **/
 @JSGlobal("WinJS.UI.CountError")
 @js.native
-object CountError extends js.Object {
+object CountError extends StObject {
+  
   /**
     * An attempt to count items timed out.
     **/
   @js.native
-  sealed trait noResponse extends CountError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CountError with Double] = js.native
-  /* 0 */ @js.native
-  object noResponse extends TopLevel[noResponse with Double]
-  
+  sealed trait noResponse
+    extends StObject
+       with CountError
 }
-

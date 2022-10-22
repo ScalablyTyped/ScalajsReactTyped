@@ -11,14 +11,11 @@ Get stats on your Node.js HTTP server requests
 | Full name          | request-stats |
 | Keywords           | stats, statistics, http, https, middleware, connect, express, analytics |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 1285278 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 265981.0 |
+| # stars            | 72.0 |
 
 ## Links
-- [Homepage](https://github.com/watson/request-stats)
-- [Bugs](https://github.com/watson/request-stats/issues)
-- [Repository](https://github.com/watson/request-stats)
 - [Npm](https://www.npmjs.com/package/request-stats)
     
 

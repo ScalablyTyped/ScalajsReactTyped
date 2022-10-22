@@ -1,13 +1,16 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JSDocThisTag extends JSDocTag {
+trait JSDocThisTag
+  extends StObject
+     with JSDocTag {
+  
   @JSName("kind")
-  var kind_JSDocThisTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocThisTag = js.native
-  var typeExpression: js.UndefOr[JSDocTypeExpression] = js.native
+  val kind_JSDocThisTag: typingsJapgolly.typescript.mod.SyntaxKind.JSDocThisTag = js.native
+  
+  val typeExpression: JSDocTypeExpression = js.native
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.waterline.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Config extends js.Object {
-  var adapters: StringDictionary[Adapter]
-  var connections: StringDictionary[Connection]
-}
-
-object Config {
-  @scala.inline
-  def apply(adapters: StringDictionary[Adapter], connections: StringDictionary[Connection]): Config = {
-    val __obj = js.Dynamic.literal(adapters = adapters.asInstanceOf[js.Any], connections = connections.asInstanceOf[js.Any])
+/** Waterline Configration */
+trait Config extends StObject {
   
+  /** A set of adapters to configure */
+  var adapters: StringDictionary[Adapter]
+  
+  /** A set of datastores to configure */
+  var datastores: StringDictionary[DatastoreConfig]
+}
+object Config {
+  
+  inline def apply(adapters: StringDictionary[Adapter], datastores: StringDictionary[DatastoreConfig]): Config = {
+    val __obj = js.Dynamic.literal(adapters = adapters.asInstanceOf[js.Any], datastores = datastores.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  
+  extension [Self <: Config](x: Self) {
+    
+    inline def setAdapters(value: StringDictionary[Adapter]): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
+    
+    inline def setDatastores(value: StringDictionary[DatastoreConfig]): Self = StObject.set(x, "datastores", value.asInstanceOf[js.Any])
+  }
 }
-

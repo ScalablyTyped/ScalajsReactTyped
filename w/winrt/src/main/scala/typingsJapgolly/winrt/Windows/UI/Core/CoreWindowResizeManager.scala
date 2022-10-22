@@ -1,20 +1,17 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.CoreWindowResizeManager")
-@js.native
-class CoreWindowResizeManager () extends ICoreWindowResizeManager {
-  /* CompleteClass */
-  override def notifyLayoutCompleted(): Unit = js.native
+trait CoreWindowResizeManager
+  extends StObject
+     with ICoreWindowResizeManager
+object CoreWindowResizeManager {
+  
+  inline def apply(notifyLayoutCompleted: Callback): CoreWindowResizeManager = {
+    val __obj = js.Dynamic.literal(notifyLayoutCompleted = notifyLayoutCompleted.toJsFn)
+    __obj.asInstanceOf[CoreWindowResizeManager]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.UI.Core.CoreWindowResizeManager")
-@js.native
-object CoreWindowResizeManager extends js.Object {
-  def getForCurrentView(): CoreWindowResizeManager = js.native
-}
-

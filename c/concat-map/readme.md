@@ -10,15 +10,15 @@ concatenative mapdashery
 | ------------------ | :-------------: |
 | Full name          | concat-map |
 | Keywords           | concat, concatMap, map, functional, higher-order |
-| # releases         | 0 |
-| # dependents       | 127 |
-| # downloads        | 512273770 |
-| # stars            | 3 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.66419624E8 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-concat-map)
-- [Bugs](https://github.com/substack/node-concat-map/issues)
-- [Repository](https://github.com/substack/node-concat-map)
+- [Homepage](https://github.com/ljharb/concat-map#readme)
+- [Bugs](https://github.com/ljharb/concat-map/issues)
+- [Repository](https://github.com/ljharb/concat-map)
 - [Npm](https://www.npmjs.com/package/concat-map)
     
 

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "hpagent" : "1.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "hpagent" : "1.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

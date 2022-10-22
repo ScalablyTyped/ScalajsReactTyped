@@ -1,20 +1,19 @@
 package typingsJapgolly.pixiJs.mod
 
-import org.scalajs.dom.raw.WebGLProgram
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.WebGLProgram
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Helper class to create a WebGL Program
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "GLProgram")
 @js.native
-class GLProgram protected ()
-  extends typingsJapgolly.pixiJs.PIXI.GLProgram {
-  def this(program: WebGLProgram, uniformData: js.Any) = this()
+open class GLProgram protected ()
+  extends typingsJapgolly.pixiCore.mod.GLProgram {
+  /**
+    * Makes a new Pixi program.
+    * @param program - webgl program
+    * @param uniformData - uniforms
+    */
+  def this(program: WebGLProgram, uniformData: StringDictionary[typingsJapgolly.pixiCore.mod.IGLUniformData]) = this()
 }
-

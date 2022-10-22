@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.browser
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.webview
 */
-trait ShareDialogModeIOS extends js.Object
-
+trait ShareDialogModeIOS extends StObject
 object ShareDialogModeIOS {
-  @scala.inline
-  def automatic: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = this.cast("automatic")
-  @scala.inline
-  def browser: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.browser = this.cast("browser")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def webview: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.webview = this.cast("webview")
+  
+  inline def automatic: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
+  
+  inline def browser: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.browser = "browser".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.browser]
+  
+  inline def webview: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.webview = "webview".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.webview]
 }
-

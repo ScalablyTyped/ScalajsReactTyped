@@ -1,63 +1,94 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BulkIndexDocumentsParams extends GenericParams {
+trait BulkIndexDocumentsParams
+  extends StObject
+     with GenericParams {
+  
   var _source: js.UndefOr[NameList] = js.undefined
+  
   var _sourceExclude: js.UndefOr[NameList] = js.undefined
+  
   var _sourceInclude: js.UndefOr[NameList] = js.undefined
+  
   var fields: js.UndefOr[NameList] = js.undefined
+  
   var index: js.UndefOr[String] = js.undefined
+  
   var pipeline: js.UndefOr[String] = js.undefined
+  
   var refresh: js.UndefOr[Refresh] = js.undefined
+  
   var routing: js.UndefOr[String] = js.undefined
+  
   var timeout: js.UndefOr[TimeSpan] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var waitForActiveShards: js.UndefOr[String] = js.undefined
 }
-
 object BulkIndexDocumentsParams {
-  @scala.inline
-  def apply(
-    _source: NameList = null,
-    _sourceExclude: NameList = null,
-    _sourceInclude: NameList = null,
-    body: js.Any = null,
-    fields: NameList = null,
-    filterPath: String | js.Array[String] = null,
-    ignore: Double | js.Array[Double] = null,
-    index: String = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    pipeline: String = null,
-    refresh: Refresh = null,
-    requestTimeout: Int | Double = null,
-    routing: String = null,
-    timeout: TimeSpan = null,
-    `type`: String = null,
-    waitForActiveShards: String = null
-  ): BulkIndexDocumentsParams = {
+  
+  inline def apply(): BulkIndexDocumentsParams = {
     val __obj = js.Dynamic.literal()
-    if (_source != null) __obj.updateDynamic("_source")(_source.asInstanceOf[js.Any])
-    if (_sourceExclude != null) __obj.updateDynamic("_sourceExclude")(_sourceExclude.asInstanceOf[js.Any])
-    if (_sourceInclude != null) __obj.updateDynamic("_sourceInclude")(_sourceInclude.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (pipeline != null) __obj.updateDynamic("pipeline")(pipeline.asInstanceOf[js.Any])
-    if (refresh != null) __obj.updateDynamic("refresh")(refresh.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (routing != null) __obj.updateDynamic("routing")(routing.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (waitForActiveShards != null) __obj.updateDynamic("waitForActiveShards")(waitForActiveShards.asInstanceOf[js.Any])
     __obj.asInstanceOf[BulkIndexDocumentsParams]
   }
+  
+  extension [Self <: BulkIndexDocumentsParams](x: Self) {
+    
+    inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPipeline(value: String): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    
+    inline def setRefresh(value: Refresh): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    
+    inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    
+    inline def setTimeout(value: TimeSpan): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWaitForActiveShards(value: String): Self = StObject.set(x, "waitForActiveShards", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForActiveShardsUndefined: Self = StObject.set(x, "waitForActiveShards", js.undefined)
+    
+    inline def set_source(value: NameList): Self = StObject.set(x, "_source", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExclude(value: NameList): Self = StObject.set(x, "_sourceExclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceExcludeUndefined: Self = StObject.set(x, "_sourceExclude", js.undefined)
+    
+    inline def set_sourceExcludeVarargs(value: String*): Self = StObject.set(x, "_sourceExclude", js.Array(value*))
+    
+    inline def set_sourceInclude(value: NameList): Self = StObject.set(x, "_sourceInclude", value.asInstanceOf[js.Any])
+    
+    inline def set_sourceIncludeUndefined: Self = StObject.set(x, "_sourceInclude", js.undefined)
+    
+    inline def set_sourceIncludeVarargs(value: String*): Self = StObject.set(x, "_sourceInclude", js.Array(value*))
+    
+    inline def set_sourceUndefined: Self = StObject.set(x, "_source", js.undefined)
+    
+    inline def set_sourceVarargs(value: String*): Self = StObject.set(x, "_source", js.Array(value*))
+  }
 }
-

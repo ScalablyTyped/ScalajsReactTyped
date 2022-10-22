@@ -10,10 +10,10 @@ The lodash method `_.forEach` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.foreach |
 | Keywords           | lodash-modularized, foreach |
-| # releases         | 0 |
-| # dependents       | 434 |
-| # downloads        | 75214726 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.0067786E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.success
   - typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.error
 */
-trait EditValidatorType extends js.Object
-
+trait EditValidatorType extends StObject
 object EditValidatorType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def error: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.error = this.cast("error")
-  @scala.inline
-  def success: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.success = this.cast("success")
+  
+  inline def error: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.error = "error".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.error]
+  
+  inline def success: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.success = "success".asInstanceOf[typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.success]
 }
-

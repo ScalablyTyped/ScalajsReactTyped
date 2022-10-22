@@ -1,67 +1,105 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonBottom
-import typingsJapgolly.devextreme.AnonFontOffset
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.breakWord
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.ellipsis
-import typingsJapgolly.devextreme.devextremeStrings.hide
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.normal
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.top
+import typingsJapgolly.devextreme.anon.BottomLeft
+import typingsJapgolly.devextreme.anon.Offset
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.common.VerticalEdge
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.TextOverflow
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.WordWrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures the widget's title. */
-trait BaseWidgetTitle extends js.Object {
-  /** Specifies font options for the title. */
+trait BaseWidgetTitle extends StObject {
+  
+  /**
+    * Specifies font properties for the title.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Specifies the title's alignment in a horizontal direction. */
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Generates space around the title. */
-  var margin: js.UndefOr[Double | AnonBottom] = js.undefined
-  /** Reserves a pixel-measured space for the title. */
+  
+  /**
+    * Specifies the title&apos;s alignment in a horizontal direction.
+    */
+  var horizontalAlignment: js.UndefOr[HorizontalAlignment] = js.undefined
+  
+  /**
+    * Generates space around the title.
+    */
+  var margin: js.UndefOr[Double | BottomLeft] = js.undefined
+  
+  /**
+    * Reserves a pixel-measured space for the title.
+    */
   var placeholderSize: js.UndefOr[Double] = js.undefined
-  /** Configures the widget's subtitle. */
-  var subtitle: js.UndefOr[AnonFontOffset | String] = js.undefined
-  /** Specifies the title's text. */
+  
+  /**
+    * Configures the UI component&apos;s subtitle.
+    */
+  var subtitle: js.UndefOr[Offset | String] = js.undefined
+  
+  /**
+    * Specifies the title&apos;s text.
+    */
   var text: js.UndefOr[String] = js.undefined
-  /** Specifies what to do with the title when it overflows the allocated space after applying wordWrap: hide, truncate it and display an ellipsis, or do nothing. */
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Specifies the title's alignment in a vertical direction. */
-  var verticalAlignment: js.UndefOr[bottom | top] = js.undefined
-  /** Specifies how to wrap the title if it does not fit into a single line. */
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
+  
+  /**
+    * Specifies what to do with the title when it overflows the allocated space after applying wordWrap: hide, truncate it and display an ellipsis, or do nothing.
+    */
+  var textOverflow: js.UndefOr[TextOverflow] = js.undefined
+  
+  /**
+    * Specifies the title&apos;s alignment in a vertical direction.
+    */
+  var verticalAlignment: js.UndefOr[VerticalEdge] = js.undefined
+  
+  /**
+    * Specifies how to wrap the title if it does not fit into a single line.
+    */
+  var wordWrap: js.UndefOr[WordWrap] = js.undefined
 }
-
 object BaseWidgetTitle {
-  @scala.inline
-  def apply(
-    font: Font = null,
-    horizontalAlignment: center | left | right = null,
-    margin: Double | AnonBottom = null,
-    placeholderSize: Int | Double = null,
-    subtitle: AnonFontOffset | String = null,
-    text: String = null,
-    textOverflow: ellipsis | hide | none = null,
-    verticalAlignment: bottom | top = null,
-    wordWrap: normal | breakWord | none = null
-  ): BaseWidgetTitle = {
+  
+  inline def apply(): BaseWidgetTitle = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (placeholderSize != null) __obj.updateDynamic("placeholderSize")(placeholderSize.asInstanceOf[js.Any])
-    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseWidgetTitle]
   }
+  
+  extension [Self <: BaseWidgetTitle](x: Self) {
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHorizontalAlignment(value: HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setMargin(value: Double | BottomLeft): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setPlaceholderSize(value: Double): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderSizeUndefined: Self = StObject.set(x, "placeholderSize", js.undefined)
+    
+    inline def setSubtitle(value: Offset | String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextOverflow(value: TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setVerticalAlignment(value: VerticalEdge): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setWordWrap(value: WordWrap): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+  }
 }
-

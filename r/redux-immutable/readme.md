@@ -10,10 +10,10 @@ redux-immutable is used to create an equivalent function of Redux combineReducer
 | ------------------ | :-------------: |
 | Full name          | redux-immutable |
 | Keywords           | immutable, redux |
-| # releases         | 1 |
-| # dependents       | 225 |
-| # downloads        | 6304521 |
-| # stars            | 14 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1284026.3333333333 |
+| # stars            | 1880.0 |
 
 ## Links
 - [Homepage](https://github.com/gajus/redux-immutable#readme)

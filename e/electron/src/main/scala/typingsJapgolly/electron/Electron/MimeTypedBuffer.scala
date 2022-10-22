@@ -1,28 +1,45 @@
 package typingsJapgolly.electron.Electron
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MimeTypedBuffer extends js.Object {
-  // Docs: http://electronjs.org/docs/api/structures/mime-typed-buffer
+trait MimeTypedBuffer extends StObject {
+  
+  // Docs: https://electronjs.org/docs/api/structures/mime-typed-buffer
+  /**
+    * Charset of the buffer.
+    */
+  var charset: js.UndefOr[String] = js.undefined
+  
   /**
     * The actual Buffer content.
     */
   var data: Buffer
-  /**
-    * The mimeType of the Buffer that you are sending.
-    */
-  var mimeType: String
-}
-
-object MimeTypedBuffer {
-  @scala.inline
-  def apply(data: Buffer, mimeType: String): MimeTypedBuffer = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
   
+  /**
+    * MIME type of the buffer.
+    */
+  var mimeType: js.UndefOr[String] = js.undefined
+}
+object MimeTypedBuffer {
+  
+  inline def apply(data: Buffer): MimeTypedBuffer = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MimeTypedBuffer]
   }
+  
+  extension [Self <: MimeTypedBuffer](x: Self) {
+    
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    
+    inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+    
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+  }
 }
-

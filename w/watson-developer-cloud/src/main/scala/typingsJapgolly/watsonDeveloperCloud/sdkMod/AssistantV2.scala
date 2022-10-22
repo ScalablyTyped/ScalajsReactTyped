@@ -1,17 +1,17 @@
 package typingsJapgolly.watsonDeveloperCloud.sdkMod
 
-import typingsJapgolly.watsonDeveloperCloud.v2Mod.Options
-import typingsJapgolly.watsonDeveloperCloud.v2Mod.^
+import typingsJapgolly.watsonDeveloperCloud.assistantV2Mod.Options
+import typingsJapgolly.watsonDeveloperCloud.assistantV2Mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The IBM Watson&trade; Assistant service combines machine learning, natural language understanding, and integrated dialog tools to create conversation flows between your apps and your users.
   */
 @JSImport("watson-developer-cloud/sdk", "AssistantV2")
 @js.native
-class AssistantV2 protected () extends ^ {
+open class AssistantV2 protected () extends ^ {
   /**
     * Construct a AssistantV2 object.
     *
@@ -32,11 +32,15 @@ class AssistantV2 protected () extends ^ {
     */
   def this(options: Options) = this()
 }
-
-/* static members */
-@JSImport("watson-developer-cloud/sdk", "AssistantV2")
-@js.native
-object AssistantV2 extends js.Object {
-  var URL: String = js.native
+object AssistantV2 {
+  
+  @JSImport("watson-developer-cloud/sdk", "AssistantV2")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("watson-developer-cloud/sdk", "AssistantV2.URL")
+  @js.native
+  def URL: String = js.native
+  inline def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
 }
-

@@ -11,9 +11,9 @@ Declarative data binding + templating solution.
 | Full name          | rivets |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 12 |
-| # downloads        | 153682 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 16817.333333333332 |
+| # stars            | 3225.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeric/rivets#readme)

@@ -1,35 +1,81 @@
 package typingsJapgolly.asn1js.mod
 
+import typingsJapgolly.asn1js.anon.PartialILocalIdentificati
+import typingsJapgolly.asn1js.anon.PartialILocalLengthBlock
+import typingsJapgolly.pvtsutils.mod.BufferSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BaseBlockParams extends LocalBaseBlockParams {
+/* Inlined parent asn1js.asn1js.LocalBaseBlockParams */
+/* Inlined parent asn1js.asn1js.LocalIdentificationBlockParams */
+/* Inlined parent asn1js.asn1js.LocalLengthBlockParams */
+/* Inlined parent std.Partial<asn1js.asn1js.IBaseBlock> */
+trait BaseBlockParams extends StObject {
+  
+  var blockLength: js.UndefOr[Double] = js.undefined
+  
+  var error: js.UndefOr[String] = js.undefined
+  
+  var idBlock: js.UndefOr[PartialILocalIdentificati] = js.undefined
+  
+  var lenBlock: js.UndefOr[PartialILocalLengthBlock] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var optional: js.UndefOr[scala.Boolean] = js.undefined
-  var primitiveSchema: js.UndefOr[js.Object] = js.undefined
+  
+  var primitiveSchema: js.UndefOr[BaseBlock[ValueBlock, ValueBlockJson]] = js.undefined
+  
+  var valueBeforeDecode: js.UndefOr[BufferSource] = js.undefined
+  
+  var warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object BaseBlockParams {
-  @scala.inline
-  def apply(
-    blockLength: Int | Double = null,
-    error: String = null,
-    name: String = null,
-    optional: js.UndefOr[scala.Boolean] = js.undefined,
-    primitiveSchema: js.Object = null,
-    valueBeforeDecode: scala.scalajs.js.typedarray.ArrayBuffer = null,
-    warnings: js.Array[String] = null
-  ): BaseBlockParams = {
+  
+  inline def apply(): BaseBlockParams = {
     val __obj = js.Dynamic.literal()
-    if (blockLength != null) __obj.updateDynamic("blockLength")(blockLength.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (primitiveSchema != null) __obj.updateDynamic("primitiveSchema")(primitiveSchema.asInstanceOf[js.Any])
-    if (valueBeforeDecode != null) __obj.updateDynamic("valueBeforeDecode")(valueBeforeDecode.asInstanceOf[js.Any])
-    if (warnings != null) __obj.updateDynamic("warnings")(warnings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseBlockParams]
   }
+  
+  extension [Self <: BaseBlockParams](x: Self) {
+    
+    inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+    
+    inline def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
+    
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setIdBlock(value: PartialILocalIdentificati): Self = StObject.set(x, "idBlock", value.asInstanceOf[js.Any])
+    
+    inline def setIdBlockUndefined: Self = StObject.set(x, "idBlock", js.undefined)
+    
+    inline def setLenBlock(value: PartialILocalLengthBlock): Self = StObject.set(x, "lenBlock", value.asInstanceOf[js.Any])
+    
+    inline def setLenBlockUndefined: Self = StObject.set(x, "lenBlock", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOptional(value: scala.Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    
+    inline def setPrimitiveSchema(value: BaseBlock[ValueBlock, ValueBlockJson]): Self = StObject.set(x, "primitiveSchema", value.asInstanceOf[js.Any])
+    
+    inline def setPrimitiveSchemaUndefined: Self = StObject.set(x, "primitiveSchema", js.undefined)
+    
+    inline def setValueBeforeDecode(value: BufferSource): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+    
+    inline def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
+    
+    inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    
+    inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value*))
+  }
 }
-

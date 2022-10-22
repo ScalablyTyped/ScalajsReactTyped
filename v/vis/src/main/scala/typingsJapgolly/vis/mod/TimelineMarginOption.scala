@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineMarginOption extends js.Object {
+trait TimelineMarginOption extends StObject {
+  
   var axis: js.UndefOr[Double] = js.undefined
+  
   var item: js.UndefOr[TimelineMarginItemType] = js.undefined
 }
-
 object TimelineMarginOption {
-  @scala.inline
-  def apply(axis: Int | Double = null, item: TimelineMarginItemType = null): TimelineMarginOption = {
+  
+  inline def apply(): TimelineMarginOption = {
     val __obj = js.Dynamic.literal()
-    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineMarginOption]
   }
+  
+  extension [Self <: TimelineMarginOption](x: Self) {
+    
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    
+    inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+    
+    inline def setItem(value: TimelineMarginItemType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+  }
 }
-

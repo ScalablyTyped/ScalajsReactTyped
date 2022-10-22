@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BackgroundSizeProperty
+import typingsJapgolly.csstype.mod.Property.BackgroundSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BackgroundSizeProps[TLength] extends js.Object {
-  val backgroundSize: js.UndefOr[ResponsiveValue[BackgroundSizeProperty[TLength]]] = js.undefined
+trait BackgroundSizeProps[TLength] extends StObject {
+  
+  val backgroundSize: js.UndefOr[ResponsiveValue[BackgroundSize[TLength]]] = js.undefined
 }
-
 object BackgroundSizeProps {
-  @scala.inline
-  def apply[TLength](backgroundSize: ResponsiveValue[BackgroundSizeProperty[TLength]] = null): BackgroundSizeProps[TLength] = {
+  
+  inline def apply[TLength](): BackgroundSizeProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (backgroundSize != null) __obj.updateDynamic("backgroundSize")(backgroundSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundSizeProps[TLength]]
   }
+  
+  extension [Self <: BackgroundSizeProps[?], TLength](x: Self & BackgroundSizeProps[TLength]) {
+    
+    inline def setBackgroundSize(value: ResponsiveValue[BackgroundSize[TLength]]): Self = StObject.set(x, "backgroundSize", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundSizeUndefined: Self = StObject.set(x, "backgroundSize", js.undefined)
+    
+    inline def setBackgroundSizeVarargs(value: BackgroundSize[TLength]*): Self = StObject.set(x, "backgroundSize", js.Array(value*))
+  }
 }
-

@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ControlChannelTriggerResetReason extends js.Object
-
+sealed trait ControlChannelTriggerResetReason extends StObject
 @JSGlobal("Windows.Networking.Sockets.ControlChannelTriggerResetReason")
 @js.native
-object ControlChannelTriggerResetReason extends js.Object {
-  @js.native
-  sealed trait fastUserSwitched extends ControlChannelTriggerResetReason
+object ControlChannelTriggerResetReason extends StObject {
   
   @js.native
-  sealed trait lowPowerExit extends ControlChannelTriggerResetReason
+  sealed trait fastUserSwitched
+    extends StObject
+       with ControlChannelTriggerResetReason
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ControlChannelTriggerResetReason with Double] = js.native
-  /* 0 */ @js.native
-  object fastUserSwitched extends TopLevel[fastUserSwitched with Double]
-  
-  /* 1 */ @js.native
-  object lowPowerExit extends TopLevel[lowPowerExit with Double]
-  
+  @js.native
+  sealed trait lowPowerExit
+    extends StObject
+       with ControlChannelTriggerResetReason
 }
-

@@ -1,19 +1,7 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("CANNON.Utils")
-@js.native
-class Utils () extends js.Object
-
-/* static members */
-@JSGlobal("CANNON.Utils")
-@js.native
-object Utils extends js.Object {
-  def defaults(): js.Any = js.native
-  def defaults(options: js.Any): js.Any = js.native
-  def defaults(options: js.Any, defaults: js.Any): js.Any = js.native
-}
-
+trait Utils extends StObject

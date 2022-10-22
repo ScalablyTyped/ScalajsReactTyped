@@ -1,24 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.Error")
-@js.native
-class Error protected () extends js.Object {
-  /**
-    * @param {!chrome.cast.ErrorCode} code
-    * @param {string=} opt_description
-    * @param {Object=} opt_details
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
-    */
-  def this(code: ErrorCode) = this()
-  def this(code: ErrorCode, description: String) = this()
-  def this(code: ErrorCode, description: String, details: js.Object) = this()
-  var code: ErrorCode = js.native
-  var description: js.UndefOr[String] = js.native
-  var details: js.UndefOr[String] = js.native
+trait Error extends StObject {
+  
+  var code: ErrorCode
+  
+  var description: String | Null
+  
+  var details: js.Object
 }
-
+object Error {
+  
+  inline def apply(code: ErrorCode, details: js.Object): Error = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], description = null)
+    __obj.asInstanceOf[Error]
+  }
+  
+  extension [Self <: Error](x: Self) {
+    
+    inline def setCode(value: ErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+  }
+}

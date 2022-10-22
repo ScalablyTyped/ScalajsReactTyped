@@ -1,36 +1,27 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.estree.mod.Node because Already inherited
-- typingsJapgolly.estree.mod.Expression because Already inherited */ trait NewExpression
-  extends BaseCallExpression
+trait NewExpression
+  extends StObject
+     with BaseCallExpression
      with CallExpression {
+  
   @JSName("type")
   var type_NewExpression: typingsJapgolly.estree.estreeStrings.NewExpression
 }
-
 object NewExpression {
-  @scala.inline
-  def apply(
-    arguments: js.Array[Expression | SpreadElement],
-    callee: Expression | Super,
-    `type`: typingsJapgolly.estree.estreeStrings.NewExpression,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): NewExpression = {
+  
+  inline def apply(arguments: js.Array[Expression | SpreadElement], callee: Expression | Super): NewExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NewExpression")
     __obj.asInstanceOf[NewExpression]
   }
+  
+  extension [Self <: NewExpression](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.NewExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

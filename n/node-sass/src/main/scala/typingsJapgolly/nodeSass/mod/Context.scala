@@ -1,28 +1,31 @@
 package typingsJapgolly.nodeSass.mod
 
-import japgolly.scalajs.react.CallbackTo
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Context
-  extends /* data */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var callback: js.UndefOr[SassRenderCallback] = js.undefined
+  
   var options: Options
 }
-
 object Context {
-  @scala.inline
-  def apply(
-    options: Options,
-    StringDictionary: /* data */ StringDictionary[js.Any] = null,
-    callback: (/* err */ SassError, /* result */ Result) => CallbackTo[js.Any] = null
-  ): Context = {
+  
+  inline def apply(options: Options): Context = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction2((t0: /* err */ typingsJapgolly.nodeSass.mod.SassError, t1: /* result */ typingsJapgolly.nodeSass.mod.Result) => callback(t0, t1).runNow()))
     __obj.asInstanceOf[Context]
   }
+  
+  extension [Self <: Context](x: Self) {
+    
+    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
 }
-

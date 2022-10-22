@@ -1,76 +1,76 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.VerticalAlignProperty
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.VerticalAlign
 import typingsJapgolly.mjmlReact.mod.BorderProps
 import typingsJapgolly.mjmlReact.mod.ClassNameProps
+import typingsJapgolly.mjmlReact.mod.InnerBorderProps
 import typingsJapgolly.mjmlReact.mod.MjmlColumnProps
 import typingsJapgolly.mjmlReact.mod.PaddingProps
-import typingsJapgolly.mjmlReact.mod.RequiredChildrenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlColumn {
-  def apply(
-    backgroundColor: BackgroundColorProperty = null,
-    border: String = null,
-    borderBottom: String = null,
-    borderLeft: String = null,
-    borderRadius: String | Double = null,
-    borderRight: String = null,
-    borderTop: String = null,
-    cssClass: String = null,
-    padding: String | Double = null,
-    paddingBottom: String | Double = null,
-    paddingLeft: String | Double = null,
-    paddingRight: String | Double = null,
-    paddingTop: String | Double = null,
-    verticalAlign: VerticalAlignProperty[String | Double] = null,
-    width: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlColumn, 
-    Unit, 
-    RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.MjmlColumnProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.BorderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlColumn](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.MjmlColumnProps with typingsJapgolly.mjmlReact.mod.PaddingProps with typingsJapgolly.mjmlReact.mod.ClassNameProps with typingsJapgolly.mjmlReact.mod.BorderProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlColumn")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlColumn] {
+    
+    inline def backgroundColor(value: BackgroundColor): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def border(value: String): this.type = set("border", value.asInstanceOf[js.Any])
+    
+    inline def borderBottom(value: String): this.type = set("borderBottom", value.asInstanceOf[js.Any])
+    
+    inline def borderLeft(value: String): this.type = set("borderLeft", value.asInstanceOf[js.Any])
+    
+    inline def borderRadius(value: String | Double): this.type = set("borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def borderRight(value: String): this.type = set("borderRight", value.asInstanceOf[js.Any])
+    
+    inline def borderTop(value: String): this.type = set("borderTop", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def innerBackgroundColor(value: BackgroundColor): this.type = set("innerBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def innerBorder(value: String): this.type = set("innerBorder", value.asInstanceOf[js.Any])
+    
+    inline def innerBorderBottom(value: String): this.type = set("innerBorderBottom", value.asInstanceOf[js.Any])
+    
+    inline def innerBorderLeft(value: String): this.type = set("innerBorderLeft", value.asInstanceOf[js.Any])
+    
+    inline def innerBorderRadius(value: String | Double): this.type = set("innerBorderRadius", value.asInstanceOf[js.Any])
+    
+    inline def innerBorderRight(value: String): this.type = set("innerBorderRight", value.asInstanceOf[js.Any])
+    
+    inline def innerBorderTop(value: String): this.type = set("innerBorderTop", value.asInstanceOf[js.Any])
+    
+    inline def mjClass(value: String): this.type = set("mjClass", value.asInstanceOf[js.Any])
+    
+    inline def padding(value: String | Double): this.type = set("padding", value.asInstanceOf[js.Any])
+    
+    inline def paddingBottom(value: String | Double): this.type = set("paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def paddingLeft(value: String | Double): this.type = set("paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def paddingRight(value: String | Double): this.type = set("paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def paddingTop(value: String | Double): this.type = set("paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def verticalAlign(value: VerticalAlign[String | Double]): this.type = set("verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def width(value: String | Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlColumn.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

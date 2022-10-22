@@ -1,36 +1,47 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable2
-import org.scalablytyped.runtime.Instantiable3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The underlying pixel data of an area of a <canvas> element. It is created using the ImageData() constructor or creator methods on the CanvasRenderingContext2D object associated with a canvas: createImageData() and getImageData(). It can also be used to set a part of the canvas by using putImageData(). */
-trait ImageData
-  extends ImageBitmapSource
-     with TexImageSource {
-  /**
-    * Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255.
-    */
-  val data: scala.scalajs.js.typedarray.Uint8ClampedArray
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
+trait ImageData extends StObject {
+  
+  /* standard dom */
+  val colorSpace: PredefinedColorSpace
+  
+  /** Returns the one-dimensional array containing the data in RGBA order, as integers in the range 0 to 255. */
+  /* standard dom */
+  val data: js.typedarray.Uint8ClampedArray
+  
+  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /* standard dom */
   val height: Double
-  /**
-    * Returns the actual dimensions of the data in the ImageData object, in pixels.
-    */
+  
+  /** Returns the actual dimensions of the data in the ImageData object, in pixels. */
+  /* standard dom */
   val width: Double
 }
-
-@JSGlobal("ImageData")
-@js.native
-object ImageData
-  extends Instantiable2[
-      (/* width */ Double) | (/* array */ Uint8ClampedArray), 
-      /* width */ Double, 
-      ImageData
-    ]
-     with Instantiable3[/* array */ Uint8ClampedArray, /* width */ Double, /* height */ Double, ImageData]
-
+object ImageData {
+  
+  inline def apply(
+    colorSpace: PredefinedColorSpace,
+    data: js.typedarray.Uint8ClampedArray,
+    height: Double,
+    width: Double
+  ): ImageData = {
+    val __obj = js.Dynamic.literal(colorSpace = colorSpace.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageData]
+  }
+  
+  extension [Self <: ImageData](x: Self) {
+    
+    inline def setColorSpace(value: PredefinedColorSpace): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
+}

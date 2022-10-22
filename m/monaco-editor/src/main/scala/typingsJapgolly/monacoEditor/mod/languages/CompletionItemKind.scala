@@ -1,173 +1,183 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionItemKind extends js.Object
-
+sealed trait CompletionItemKind extends StObject
 @JSImport("monaco-editor", "languages.CompletionItemKind")
 @js.native
-object CompletionItemKind extends js.Object {
-  @js.native
-  sealed trait Class extends CompletionItemKind
-  
-  @js.native
-  sealed trait Color extends CompletionItemKind
-  
-  @js.native
-  sealed trait Constant extends CompletionItemKind
-  
-  @js.native
-  sealed trait Constructor extends CompletionItemKind
-  
-  @js.native
-  sealed trait Customcolor extends CompletionItemKind
-  
-  @js.native
-  sealed trait Enum extends CompletionItemKind
-  
-  @js.native
-  sealed trait EnumMember extends CompletionItemKind
-  
-  @js.native
-  sealed trait Event extends CompletionItemKind
-  
-  @js.native
-  sealed trait Field extends CompletionItemKind
-  
-  @js.native
-  sealed trait File extends CompletionItemKind
-  
-  @js.native
-  sealed trait Folder extends CompletionItemKind
-  
-  @js.native
-  sealed trait Function extends CompletionItemKind
-  
-  @js.native
-  sealed trait Interface extends CompletionItemKind
-  
-  @js.native
-  sealed trait Keyword extends CompletionItemKind
-  
-  @js.native
-  sealed trait Method extends CompletionItemKind
-  
-  @js.native
-  sealed trait Module extends CompletionItemKind
-  
-  @js.native
-  sealed trait Operator extends CompletionItemKind
-  
-  @js.native
-  sealed trait Property extends CompletionItemKind
-  
-  @js.native
-  sealed trait Reference extends CompletionItemKind
-  
-  @js.native
-  sealed trait Snippet extends CompletionItemKind
-  
-  @js.native
-  sealed trait Struct extends CompletionItemKind
-  
-  @js.native
-  sealed trait Text extends CompletionItemKind
-  
-  @js.native
-  sealed trait TypeParameter extends CompletionItemKind
-  
-  @js.native
-  sealed trait Unit extends CompletionItemKind
-  
-  @js.native
-  sealed trait Value extends CompletionItemKind
-  
-  @js.native
-  sealed trait Variable extends CompletionItemKind
+object CompletionItemKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompletionItemKind with Double] = js.native
-  /* 5 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  def apply(value: Double): js.UndefOr[CompletionItemKind & Double] = js.native
   
-  /* 19 */ @js.native
-  object Color extends TopLevel[Color with Double]
+  @js.native
+  sealed trait Class
+    extends StObject
+       with CompletionItemKind
+  /* 5 */ val Class: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Class & Double = js.native
   
-  /* 14 */ @js.native
-  object Constant extends TopLevel[Constant with Double]
+  @js.native
+  sealed trait Color
+    extends StObject
+       with CompletionItemKind
+  /* 19 */ val Color: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Color & Double = js.native
   
-  /* 2 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  @js.native
+  sealed trait Constant
+    extends StObject
+       with CompletionItemKind
+  /* 14 */ val Constant: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Constant & Double = js.native
   
-  /* 22 */ @js.native
-  object Customcolor extends TopLevel[Customcolor with Double]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with CompletionItemKind
+  /* 2 */ val Constructor: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Constructor & Double = js.native
   
-  /* 15 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait Customcolor
+    extends StObject
+       with CompletionItemKind
+  /* 22 */ val Customcolor: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Customcolor & Double = js.native
   
-  /* 16 */ @js.native
-  object EnumMember extends TopLevel[EnumMember with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with CompletionItemKind
+  /* 15 */ val Enum: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Enum & Double = js.native
   
-  /* 10 */ @js.native
-  object Event extends TopLevel[Event with Double]
+  @js.native
+  sealed trait EnumMember
+    extends StObject
+       with CompletionItemKind
+  /* 16 */ val EnumMember: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.EnumMember & Double = js.native
   
-  /* 3 */ @js.native
-  object Field extends TopLevel[Field with Double]
+  @js.native
+  sealed trait Event
+    extends StObject
+       with CompletionItemKind
+  /* 10 */ val Event: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Event & Double = js.native
   
-  /* 20 */ @js.native
-  object File extends TopLevel[File with Double]
+  @js.native
+  sealed trait Field
+    extends StObject
+       with CompletionItemKind
+  /* 3 */ val Field: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Field & Double = js.native
   
-  /* 23 */ @js.native
-  object Folder extends TopLevel[Folder with Double]
+  @js.native
+  sealed trait File
+    extends StObject
+       with CompletionItemKind
+  /* 20 */ val File: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.File & Double = js.native
   
-  /* 1 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait Folder
+    extends StObject
+       with CompletionItemKind
+  /* 23 */ val Folder: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Folder & Double = js.native
   
-  /* 7 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with CompletionItemKind
+  /* 1 */ val Function: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Function & Double = js.native
   
-  /* 17 */ @js.native
-  object Keyword extends TopLevel[Keyword with Double]
+  @js.native
+  sealed trait Interface
+    extends StObject
+       with CompletionItemKind
+  /* 7 */ val Interface: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Interface & Double = js.native
   
-  /* 0 */ @js.native
-  object Method extends TopLevel[Method with Double]
+  @js.native
+  sealed trait Issue
+    extends StObject
+       with CompletionItemKind
+  /* 26 */ val Issue: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Issue & Double = js.native
   
-  /* 8 */ @js.native
-  object Module extends TopLevel[Module with Double]
+  @js.native
+  sealed trait Keyword
+    extends StObject
+       with CompletionItemKind
+  /* 17 */ val Keyword: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Keyword & Double = js.native
   
-  /* 11 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
+  @js.native
+  sealed trait Method
+    extends StObject
+       with CompletionItemKind
+  /* 0 */ val Method: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Method & Double = js.native
   
-  /* 9 */ @js.native
-  object Property extends TopLevel[Property with Double]
+  @js.native
+  sealed trait Module
+    extends StObject
+       with CompletionItemKind
+  /* 8 */ val Module: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Module & Double = js.native
   
-  /* 21 */ @js.native
-  object Reference extends TopLevel[Reference with Double]
+  @js.native
+  sealed trait Operator
+    extends StObject
+       with CompletionItemKind
+  /* 11 */ val Operator: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Operator & Double = js.native
   
-  /* 25 */ @js.native
-  object Snippet extends TopLevel[Snippet with Double]
+  @js.native
+  sealed trait Property
+    extends StObject
+       with CompletionItemKind
+  /* 9 */ val Property: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Property & Double = js.native
   
-  /* 6 */ @js.native
-  object Struct extends TopLevel[Struct with Double]
+  @js.native
+  sealed trait Reference
+    extends StObject
+       with CompletionItemKind
+  /* 21 */ val Reference: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Reference & Double = js.native
   
-  /* 18 */ @js.native
-  object Text extends TopLevel[Text with Double]
+  @js.native
+  sealed trait Snippet
+    extends StObject
+       with CompletionItemKind
+  /* 27 */ val Snippet: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Snippet & Double = js.native
   
-  /* 24 */ @js.native
-  object TypeParameter extends TopLevel[TypeParameter with Double]
+  @js.native
+  sealed trait Struct
+    extends StObject
+       with CompletionItemKind
+  /* 6 */ val Struct: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Struct & Double = js.native
   
-  /* 12 */ @js.native
-  object Unit extends TopLevel[Unit with Double]
+  @js.native
+  sealed trait Text
+    extends StObject
+       with CompletionItemKind
+  /* 18 */ val Text: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Text & Double = js.native
   
-  /* 13 */ @js.native
-  object Value extends TopLevel[Value with Double]
+  @js.native
+  sealed trait TypeParameter
+    extends StObject
+       with CompletionItemKind
+  /* 24 */ val TypeParameter: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.TypeParameter & Double = js.native
   
-  /* 4 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  @js.native
+  sealed trait Unit
+    extends StObject
+       with CompletionItemKind
+  /* 12 */ val Unit: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Unit & Double = js.native
   
+  @js.native
+  sealed trait User
+    extends StObject
+       with CompletionItemKind
+  /* 25 */ val User: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.User & Double = js.native
+  
+  @js.native
+  sealed trait Value
+    extends StObject
+       with CompletionItemKind
+  /* 13 */ val Value: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Value & Double = js.native
+  
+  @js.native
+  sealed trait Variable
+    extends StObject
+       with CompletionItemKind
+  /* 4 */ val Variable: typingsJapgolly.monacoEditor.mod.languages.CompletionItemKind.Variable & Double = js.native
 }
-

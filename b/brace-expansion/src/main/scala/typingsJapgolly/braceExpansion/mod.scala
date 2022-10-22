@@ -1,12 +1,14 @@
 package typingsJapgolly.braceExpansion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("brace-expansion", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(input: String): js.Array[String] = js.native
+object mod {
+  
+  inline def apply(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
+  @JSImport("brace-expansion", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

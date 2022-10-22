@@ -1,49 +1,36 @@
 package typingsJapgolly.reactAlbus.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
 import typingsJapgolly.reactAlbus.mod.WizardContext
 import typingsJapgolly.reactAlbus.mod.WizardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Wizard {
-  def apply(
-    basename: String = null,
-    history: History[LocationState] = null,
-    onNext: /* wizard */ WizardContext => Callback = null,
-    render: /* wizard */ WizardContext => CallbackTo[Node] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[WizardProps, typingsJapgolly.reactAlbus.mod.Wizard, Unit, WizardProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (basename != null) __obj.updateDynamic("basename")(basename.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (onNext != null) __obj.updateDynamic("onNext")(js.Any.fromFunction1((t0: /* wizard */ typingsJapgolly.reactAlbus.mod.WizardContext) => onNext(t0).runNow()))
-    if (render != null) __obj.updateDynamic("render")(js.Any.fromFunction1((t0: /* wizard */ typingsJapgolly.reactAlbus.mod.WizardContext) => render(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactAlbus.mod.WizardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactAlbus.mod.Wizard](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactAlbus.mod.WizardProps])(children: _*)
-  }
   @JSImport("react-albus", "Wizard")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def basename(value: String): this.type = set("basename", value.asInstanceOf[js.Any])
+    
+    inline def history(value: History): this.type = set("history", value.asInstanceOf[js.Any])
+    
+    inline def onNext(value: /* wizard */ WizardContext => Callback): this.type = set("onNext", js.Any.fromFunction1((t0: /* wizard */ WizardContext) => value(t0).runNow()))
+    
+    inline def render(value: /* wizard */ WizardContext => Node): this.type = set("render", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make(companion: Wizard.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: WizardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

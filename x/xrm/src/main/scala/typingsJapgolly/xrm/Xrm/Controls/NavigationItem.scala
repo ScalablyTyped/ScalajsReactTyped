@@ -2,9 +2,9 @@ package typingsJapgolly.xrm.Xrm.Controls
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a navigation item.
@@ -13,18 +13,19 @@ import scala.scalajs.js.annotation._
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-ui-navigation External Link: formContext.ui.navigation item (Client API reference)}
   */
 trait NavigationItem
-  extends UiStandardElement
+  extends StObject
+     with UiStandardElement
      with UiFocusable {
+  
   /**
     * Gets the name of the item.
     * @returns The identifier.
     */
   def getId(): String
 }
-
 object NavigationItem {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     getId: CallbackTo[String],
     getLabel: CallbackTo[String],
     getVisible: CallbackTo[Boolean],
@@ -32,14 +33,12 @@ object NavigationItem {
     setLabel: String => Callback,
     setVisible: Boolean => Callback
   ): NavigationItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("setFocus")(setFocus.toJsFn)
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
-    __obj.updateDynamic("setVisible")(js.Any.fromFunction1((t0: scala.Boolean) => setVisible(t0).runNow()))
+    val __obj = js.Dynamic.literal(getId = getId.toJsFn, getLabel = getLabel.toJsFn, getVisible = getVisible.toJsFn, setFocus = setFocus.toJsFn, setLabel = js.Any.fromFunction1((t0: String) => setLabel(t0).runNow()), setVisible = js.Any.fromFunction1((t0: Boolean) => setVisible(t0).runNow()))
     __obj.asInstanceOf[NavigationItem]
   }
+  
+  extension [Self <: NavigationItem](x: Self) {
+    
+    inline def setGetId(value: CallbackTo[String]): Self = StObject.set(x, "getId", value.toJsFn)
+  }
 }
-

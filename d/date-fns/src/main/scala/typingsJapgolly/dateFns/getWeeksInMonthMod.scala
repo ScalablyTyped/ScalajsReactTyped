@@ -1,16 +1,20 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/getWeeksInMonth", JSImport.Namespace)
-@js.native
-object getWeeksInMonthMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn1[Date | Double, Double]]
+object getWeeksInMonthMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: js.Date, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(date: Double): Double = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def apply(date: Double, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/getWeeksInMonth", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

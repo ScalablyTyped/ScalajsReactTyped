@@ -10,10 +10,10 @@ React DataGrid
 | ------------------ | :-------------: |
 | Full name          | react-datagrid |
 | Keywords           | grid, datagrid, data-grid, grid, widget, table, list, react-component, react, grid |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 64421 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1169.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/react-datagrid)

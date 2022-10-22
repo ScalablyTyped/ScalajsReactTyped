@@ -1,21 +1,27 @@
 package typingsJapgolly.reduxLittleRouter.mod
 
-import typingsJapgolly.reduxLittleRouter.AnonPath
+import typingsJapgolly.reduxLittleRouter.anon.Path
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HapiRouterArgs extends js.Object {
-  var request: AnonPath
+trait HapiRouterArgs extends StObject {
+  
+  var request: Path
+  
   var routes: Routes
 }
-
 object HapiRouterArgs {
-  @scala.inline
-  def apply(request: AnonPath, routes: Routes): HapiRouterArgs = {
-    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
   
+  inline def apply(request: Path, routes: Routes): HapiRouterArgs = {
+    val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[HapiRouterArgs]
   }
+  
+  extension [Self <: HapiRouterArgs](x: Self) {
+    
+    inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    
+    inline def setRoutes(value: Routes): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,23 +1,19 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`-2147483648`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`32768`
+import typingsJapgolly.activexOffice.activexOfficeDoubles.`-2147483648`
+import typingsJapgolly.activexOffice.activexOfficeInts.`32768`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`32768`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`-2147483648`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`32768`
+  - typingsJapgolly.activexOffice.activexOfficeDoubles.`-2147483648`
 */
-trait MsoMixedType extends js.Object
-
+trait MsoMixedType extends StObject
 object MsoMixedType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoIntegerMixed: `32768` = this.cast(32768)
-  @scala.inline
-  def msoSingleMixed: `-2147483648` = this.cast(-2147483648)
+  
+  inline def msoIntegerMixed: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def msoSingleMixed: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
 }
-

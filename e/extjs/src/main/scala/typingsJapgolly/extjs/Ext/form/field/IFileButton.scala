@@ -1,18 +1,17 @@
 package typingsJapgolly.extjs.Ext.form.field
 
 import typingsJapgolly.extjs.Ext.button.IButton
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IFileButton extends IButton
-
+trait IFileButton
+  extends StObject
+     with IButton
 object IFileButton {
-  @scala.inline
-  def apply(IButton: IButton = null): IFileButton = {
+  
+  inline def apply(): IFileButton = {
     val __obj = js.Dynamic.literal()
-    if (IButton != null) js.Dynamic.global.Object.assign(__obj, IButton)
     __obj.asInstanceOf[IFileButton]
   }
 }
-

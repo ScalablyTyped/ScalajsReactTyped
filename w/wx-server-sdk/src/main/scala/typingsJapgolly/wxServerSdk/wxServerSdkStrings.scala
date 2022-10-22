@@ -1,89 +1,72 @@
 package typingsJapgolly.wxServerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wxServerSdkStrings {
-  @js.native
-  sealed trait LineString extends js.Object
   
   @js.native
-  sealed trait MultiLineString extends js.Object
+  sealed trait LineString extends StObject
+  inline def LineString: LineString = "LineString".asInstanceOf[LineString]
   
   @js.native
-  sealed trait MultiPoint extends js.Object
+  sealed trait MultiLineString extends StObject
+  inline def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
   
   @js.native
-  sealed trait MultiPolygon extends js.Object
+  sealed trait MultiPoint extends StObject
+  inline def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
   
   @js.native
-  sealed trait Point extends js.Object
+  sealed trait MultiPolygon extends StObject
+  inline def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Point extends StObject
+  inline def Point: Point = "Point".asInstanceOf[Point]
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait Polygon extends StObject
+  inline def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait i extends StObject
+  inline def i: i = "i".asInstanceOf[i]
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait m extends StObject
+  inline def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait wx_client extends js.Object
+  sealed trait s extends StObject
+  inline def s: s = "s".asInstanceOf[s]
   
   @js.native
-  sealed trait wx_devtools extends js.Object
+  sealed trait wx_client extends StObject
+  inline def wx_client: wx_client = "wx_client".asInstanceOf[wx_client]
   
   @js.native
-  sealed trait wx_http extends js.Object
+  sealed trait wx_devtools extends StObject
+  inline def wx_devtools: wx_devtools = "wx_devtools".asInstanceOf[wx_devtools]
   
   @js.native
-  sealed trait wx_unknown extends js.Object
+  sealed trait wx_http extends StObject
+  inline def wx_http: wx_http = "wx_http".asInstanceOf[wx_http]
   
   @js.native
-  sealed trait 其他 extends js.Object
+  sealed trait wx_unknown extends StObject
+  inline def wx_unknown: wx_unknown = "wx_unknown".asInstanceOf[wx_unknown]
   
-  @scala.inline
-  def LineString: LineString = "LineString".asInstanceOf[LineString]
-  @scala.inline
-  def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
-  @scala.inline
-  def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
-  @scala.inline
-  def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
-  @scala.inline
-  def Point: Point = "Point".asInstanceOf[Point]
-  @scala.inline
-  def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
-  @scala.inline
-  def asc: asc = "asc".asInstanceOf[asc]
-  @scala.inline
-  def desc: desc = "desc".asInstanceOf[desc]
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
-  @scala.inline
-  def m: m = "m".asInstanceOf[m]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
-  @scala.inline
-  def wx_client: wx_client = "wx_client".asInstanceOf[wx_client]
-  @scala.inline
-  def wx_devtools: wx_devtools = "wx_devtools".asInstanceOf[wx_devtools]
-  @scala.inline
-  def wx_http: wx_http = "wx_http".asInstanceOf[wx_http]
-  @scala.inline
-  def wx_unknown: wx_unknown = "wx_unknown".asInstanceOf[wx_unknown]
-  @scala.inline
-  def 其他: 其他 = "\u5176\u4ED6".asInstanceOf[其他]
+  @js.native
+  sealed trait 其他 extends StObject
+  inline def 其他: 其他 = "\u5176\u4ED6".asInstanceOf[其他]
 }
-

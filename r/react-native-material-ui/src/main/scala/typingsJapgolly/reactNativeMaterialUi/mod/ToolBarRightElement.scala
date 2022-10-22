@@ -1,23 +1,34 @@
 package typingsJapgolly.reactNativeMaterialUi.mod
 
-import japgolly.scalajs.react.raw.React.Element
-import typingsJapgolly.reactNativeMaterialUi.AnonLabels
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeMaterialUi.anon.Labels
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ToolBarRightElement extends js.Object {
+trait ToolBarRightElement extends StObject {
+  
   var actions: js.UndefOr[js.Array[Element | String]] = js.undefined
-  var menu: js.UndefOr[AnonLabels] = js.undefined
+  
+  var menu: js.UndefOr[Labels] = js.undefined
 }
-
 object ToolBarRightElement {
-  @scala.inline
-  def apply(actions: js.Array[Element | String] = null, menu: AnonLabels = null): ToolBarRightElement = {
+  
+  inline def apply(): ToolBarRightElement = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (menu != null) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
     __obj.asInstanceOf[ToolBarRightElement]
   }
+  
+  extension [Self <: ToolBarRightElement](x: Self) {
+    
+    inline def setActions(value: js.Array[Element | String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: (Element | String)*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setMenu(value: Labels): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+  }
 }
-

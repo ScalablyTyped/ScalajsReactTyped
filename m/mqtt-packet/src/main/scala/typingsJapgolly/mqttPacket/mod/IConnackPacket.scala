@@ -1,36 +1,50 @@
 package typingsJapgolly.mqttPacket.mod
 
-import typingsJapgolly.mqttPacket.AnonAssignedClientIdentifier
+import typingsJapgolly.mqttPacket.anon.AssignedClientIdentifier
 import typingsJapgolly.mqttPacket.mqttPacketStrings.connack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IConnackPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
+  
   @JSName("cmd")
   var cmd_IConnackPacket: connack
-  var properties: js.UndefOr[AnonAssignedClientIdentifier] = js.undefined
-  var returnCode: Double
+  
+  var properties: js.UndefOr[AssignedClientIdentifier] = js.undefined
+  
+  var reasonCode: js.UndefOr[Double] = js.undefined
+  
+  var returnCode: js.UndefOr[Double] = js.undefined
+  
   var sessionPresent: Boolean
 }
-
 object IConnackPacket {
-  @scala.inline
-  def apply(
-    cmd: connack,
-    returnCode: Double,
-    sessionPresent: Boolean,
-    length: Int | Double = null,
-    messageId: Int | Double = null,
-    properties: AnonAssignedClientIdentifier = null
-  ): IConnackPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], returnCode = returnCode.asInstanceOf[js.Any], sessionPresent = sessionPresent.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (messageId != null) __obj.updateDynamic("messageId")(messageId.asInstanceOf[js.Any])
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+  
+  inline def apply(sessionPresent: Boolean): IConnackPacket = {
+    val __obj = js.Dynamic.literal(cmd = "connack", sessionPresent = sessionPresent.asInstanceOf[js.Any])
     __obj.asInstanceOf[IConnackPacket]
   }
+  
+  extension [Self <: IConnackPacket](x: Self) {
+    
+    inline def setCmd(value: connack): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: AssignedClientIdentifier): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setReasonCode(value: Double): Self = StObject.set(x, "reasonCode", value.asInstanceOf[js.Any])
+    
+    inline def setReasonCodeUndefined: Self = StObject.set(x, "reasonCode", js.undefined)
+    
+    inline def setReturnCode(value: Double): Self = StObject.set(x, "returnCode", value.asInstanceOf[js.Any])
+    
+    inline def setReturnCodeUndefined: Self = StObject.set(x, "returnCode", js.undefined)
+    
+    inline def setSessionPresent(value: Boolean): Self = StObject.set(x, "sessionPresent", value.asInstanceOf[js.Any])
+  }
 }
-

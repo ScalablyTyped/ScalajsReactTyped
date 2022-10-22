@@ -1,20 +1,28 @@
 package typingsJapgolly.cordovaPluginXSocialsharing
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SocialSharingResult extends js.Object {
+trait SocialSharingResult extends StObject {
+  
   var app: js.UndefOr[String] = js.undefined
+  
   var completed: Boolean
 }
-
 object SocialSharingResult {
-  @scala.inline
-  def apply(completed: Boolean, app: String = null): SocialSharingResult = {
+  
+  inline def apply(completed: Boolean): SocialSharingResult = {
     val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any])
-    if (app != null) __obj.updateDynamic("app")(app.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocialSharingResult]
   }
+  
+  extension [Self <: SocialSharingResult](x: Self) {
+    
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    
+    inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base FeedbackBuilder that contains setters for properties common to all feedback, such as
@@ -19,11 +19,14 @@ import scala.scalajs.js.annotation._
   *     item.setFeedbackForCorrect(FormApp.createFeedback().setText("Dogs rule, cats drool.").build());
   */
 @js.native
-trait QuizFeedbackBuilder extends js.Object {
+trait QuizFeedbackBuilder extends StObject {
+  
   def addLink(url: String): QuizFeedbackBuilder = js.native
   def addLink(url: String, displayText: String): QuizFeedbackBuilder = js.native
+  
   def build(): QuizFeedback = js.native
+  
   def copy(): QuizFeedbackBuilder = js.native
+  
   def setText(text: String): QuizFeedbackBuilder = js.native
 }
-

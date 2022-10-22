@@ -1,23 +1,36 @@
 package typingsJapgolly.awsSdkClientS3Node
 
-import typingsJapgolly.awsSdkClientS3Node.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
+import typingsJapgolly.awsSdkClientS3Node.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-s3-node/types/GetBucketPolicyOutput", JSImport.Namespace)
-@js.native
-object typesGetBucketPolicyOutputMod extends js.Object {
-  @js.native
+object typesGetBucketPolicyOutputMod {
+  
   trait GetBucketPolicyOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
+    
     /**
       * <p>The bucket policy as a JSON document.</p>
       */
-    var Policy: js.UndefOr[String] = js.native
+    var Policy: js.UndefOr[String] = js.undefined
   }
-  
+  object GetBucketPolicyOutput {
+    
+    inline def apply($metadata: ResponseMetadata): GetBucketPolicyOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetBucketPolicyOutput]
+    }
+    
+    extension [Self <: GetBucketPolicyOutput](x: Self) {
+      
+      inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+      
+      inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    }
+  }
 }
-

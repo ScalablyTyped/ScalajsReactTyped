@@ -1,30 +1,42 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DraggableClasses extends js.Object {
+trait DraggableClasses extends StObject {
+  
   var `ui-draggable`: js.UndefOr[String] = js.undefined
+  
   var `ui-draggable-disabled`: js.UndefOr[String] = js.undefined
+  
   var `ui-draggable-dragging`: js.UndefOr[String] = js.undefined
+  
   var `ui-draggable-handle`: js.UndefOr[String] = js.undefined
 }
-
 object DraggableClasses {
-  @scala.inline
-  def apply(
-    `ui-draggable`: String = null,
-    `ui-draggable-disabled`: String = null,
-    `ui-draggable-dragging`: String = null,
-    `ui-draggable-handle`: String = null
-  ): DraggableClasses = {
+  
+  inline def apply(): DraggableClasses = {
     val __obj = js.Dynamic.literal()
-    if (`ui-draggable` != null) __obj.updateDynamic("ui-draggable")(`ui-draggable`.asInstanceOf[js.Any])
-    if (`ui-draggable-disabled` != null) __obj.updateDynamic("ui-draggable-disabled")(`ui-draggable-disabled`.asInstanceOf[js.Any])
-    if (`ui-draggable-dragging` != null) __obj.updateDynamic("ui-draggable-dragging")(`ui-draggable-dragging`.asInstanceOf[js.Any])
-    if (`ui-draggable-handle` != null) __obj.updateDynamic("ui-draggable-handle")(`ui-draggable-handle`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableClasses]
   }
+  
+  extension [Self <: DraggableClasses](x: Self) {
+    
+    inline def `setUi-draggable`(value: String): Self = StObject.set(x, "ui-draggable", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-draggable-disabled`(value: String): Self = StObject.set(x, "ui-draggable-disabled", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-draggable-disabledUndefined`: Self = StObject.set(x, "ui-draggable-disabled", js.undefined)
+    
+    inline def `setUi-draggable-dragging`(value: String): Self = StObject.set(x, "ui-draggable-dragging", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-draggable-draggingUndefined`: Self = StObject.set(x, "ui-draggable-dragging", js.undefined)
+    
+    inline def `setUi-draggable-handle`(value: String): Self = StObject.set(x, "ui-draggable-handle", value.asInstanceOf[js.Any])
+    
+    inline def `setUi-draggable-handleUndefined`: Self = StObject.set(x, "ui-draggable-handle", js.undefined)
+    
+    inline def `setUi-draggableUndefined`: Self = StObject.set(x, "ui-draggable", js.undefined)
+  }
 }
-

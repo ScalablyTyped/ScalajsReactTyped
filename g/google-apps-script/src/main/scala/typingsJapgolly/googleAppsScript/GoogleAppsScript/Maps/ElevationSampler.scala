@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Maps
 
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows for the sampling of elevations at particular locations.
@@ -47,11 +47,13 @@ import scala.scalajs.js.annotation._
   * Google Elevation API
   */
 @js.native
-trait ElevationSampler extends js.Object {
-  def sampleLocation(latitude: Double, longitude: Double): js.Any = js.native
-  def sampleLocations(encodedPolyline: String): js.Any = js.native
-  def sampleLocations(points: js.Array[Double]): js.Any = js.native
-  def samplePath(encodedPolyline: String, numSamples: Integer): js.Any = js.native
-  def samplePath(points: js.Array[Double], numSamples: Integer): js.Any = js.native
+trait ElevationSampler extends StObject {
+  
+  def sampleLocation(latitude: Double, longitude: Double): Any = js.native
+  
+  def sampleLocations(encodedPolyline: String): Any = js.native
+  def sampleLocations(points: js.Array[Double]): Any = js.native
+  
+  def samplePath(encodedPolyline: String, numSamples: Integer): Any = js.native
+  def samplePath(points: js.Array[Double], numSamples: Integer): Any = js.native
 }
-

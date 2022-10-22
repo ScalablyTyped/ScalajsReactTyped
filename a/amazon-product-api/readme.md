@@ -10,14 +10,11 @@ Amazon Product Advertising API client
 | Full name          | amazon-product-api |
 | Keywords           | amazon, aws, product, ads, advertising |
 | # releases         | 1 |
-| # dependents       | 7 |
-| # downloads        | 110881 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 5408.666666666667 |
+| # stars            | 360.0 |
 
 ## Links
-- [Homepage](https://github.com/t3chnoboy/amazon-product-api)
-- [Bugs](https://github.com/t3chnoboy/amazon-product-api/issues)
-- [Repository](https://github.com/t3chnoboy/amazon-product-api)
 - [Npm](https://www.npmjs.com/package/amazon-product-api)
     
 

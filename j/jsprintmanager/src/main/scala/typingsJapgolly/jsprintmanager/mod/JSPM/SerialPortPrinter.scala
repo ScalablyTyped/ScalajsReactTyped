@@ -3,13 +3,15 @@ package typingsJapgolly.jsprintmanager.mod.JSPM
 import typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Handshake
 import typingsJapgolly.jsprintmanager.mod.JSPM.Serial.Parity
 import typingsJapgolly.jsprintmanager.mod.JSPM.Serial.StopBits
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.SerialPortPrinter")
 @js.native
-class SerialPortPrinter protected () extends IClientPrinter {
+open class SerialPortPrinter protected ()
+  extends StObject
+     with IClientPrinter {
   def this(
     portName: String,
     baudRate: Double,
@@ -18,23 +20,36 @@ class SerialPortPrinter protected () extends IClientPrinter {
     dataBits: Double,
     flowControl: Handshake
   ) = this()
+  
   /* CompleteClass */
-  override var Id: js.Any = js.native
+  var Id: Any = js.native
   @JSName("Id")
   var Id_SerialPortPrinter: String = js.native
-  var _serialPortBaudRate: js.Any = js.native
-  var _serialPortDataBits: js.Any = js.native
-  var _serialPortFlowControl: js.Any = js.native
-  var _serialPortName: js.Any = js.native
-  var _serialPortParity: js.Any = js.native
-  var _serialPortStopBits: js.Any = js.native
+  
+  /* private */ var _serialPortBaudRate: Any = js.native
+  
+  /* private */ var _serialPortDataBits: Any = js.native
+  
+  /* private */ var _serialPortFlowControl: Any = js.native
+  
+  /* private */ var _serialPortName: Any = js.native
+  
+  /* private */ var _serialPortParity: Any = js.native
+  
+  /* private */ var _serialPortStopBits: Any = js.native
+  
   var baudRate: Double = js.native
+  
   var dataBits: Double = js.native
+  
   var flowControl: Handshake = js.native
+  
   var parity: Parity = js.native
+  
   var portName: String = js.native
-  var stopBits: StopBits = js.native
+  
   /* CompleteClass */
-  override def serialize(): js.Any = js.native
+  override def serialize(): Any = js.native
+  
+  var stopBits: StopBits = js.native
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.mockAwsS3.mod
 
-import typingsJapgolly.awsSdk.swfMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsSwfMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mock-aws-s3", "SWF")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class SWF ()
+open class SWF ()
   extends typingsJapgolly.awsSdk.mod.SWF {
   def this(options: ClientConfiguration) = this()
 }
-

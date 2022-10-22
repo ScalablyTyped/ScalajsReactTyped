@@ -1,22 +1,7 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.SyntaxUtilities")
-@js.native
-class SyntaxUtilities () extends js.Object
-
-/* static members */
-@JSGlobal("TypeScript.SyntaxUtilities")
-@js.native
-object SyntaxUtilities extends js.Object {
-  def containsToken(list: ISyntaxList, kind: SyntaxKind): Boolean = js.native
-  def getExportKeyword(moduleElement: IModuleElementSyntax): ISyntaxToken = js.native
-  def getToken(list: ISyntaxList, kind: SyntaxKind): ISyntaxToken = js.native
-  def hasExportKeyword(moduleElement: IModuleElementSyntax): Boolean = js.native
-  def isAmbientDeclarationSyntax(positionNode: PositionedNode): Boolean = js.native
-  def isAngleBracket(positionedElement: PositionedElement): Boolean = js.native
-}
-
+trait SyntaxUtilities extends StObject

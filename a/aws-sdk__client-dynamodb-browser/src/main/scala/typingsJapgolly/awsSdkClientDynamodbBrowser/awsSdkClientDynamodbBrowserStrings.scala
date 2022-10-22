@@ -1,384 +1,308 @@
 package typingsJapgolly.awsSdkClientDynamodbBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object awsSdkClientDynamodbBrowserStrings {
-  @js.native
-  sealed trait ACTIVE extends js.Object
   
   @js.native
-  sealed trait ADD extends js.Object
+  sealed trait ACTIVE extends StObject
+  inline def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
   
   @js.native
-  sealed trait AES256 extends js.Object
+  sealed trait ADD extends StObject
+  inline def ADD: ADD = "ADD".asInstanceOf[ADD]
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait AES256 extends StObject
+  inline def AES256: AES256 = "AES256".asInstanceOf[AES256]
   
   @js.native
-  sealed trait ALL_ATTRIBUTES extends js.Object
+  sealed trait ALL extends StObject
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
   
   @js.native
-  sealed trait ALL_NEW extends js.Object
+  sealed trait ALL_ATTRIBUTES extends StObject
+  inline def ALL_ATTRIBUTES: ALL_ATTRIBUTES = "ALL_ATTRIBUTES".asInstanceOf[ALL_ATTRIBUTES]
   
   @js.native
-  sealed trait ALL_OLD extends js.Object
+  sealed trait ALL_NEW extends StObject
+  inline def ALL_NEW: ALL_NEW = "ALL_NEW".asInstanceOf[ALL_NEW]
   
   @js.native
-  sealed trait ALL_PROJECTED_ATTRIBUTES extends js.Object
+  sealed trait ALL_OLD extends StObject
+  inline def ALL_OLD: ALL_OLD = "ALL_OLD".asInstanceOf[ALL_OLD]
   
   @js.native
-  sealed trait AND extends js.Object
+  sealed trait ALL_PROJECTED_ATTRIBUTES extends StObject
+  inline def ALL_PROJECTED_ATTRIBUTES: ALL_PROJECTED_ATTRIBUTES = "ALL_PROJECTED_ATTRIBUTES".asInstanceOf[ALL_PROJECTED_ATTRIBUTES]
   
   @js.native
-  sealed trait AVAILABLE extends js.Object
+  sealed trait AND extends StObject
+  inline def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
-  sealed trait B extends js.Object
+  sealed trait AVAILABLE extends StObject
+  inline def AVAILABLE: AVAILABLE = "AVAILABLE".asInstanceOf[AVAILABLE]
   
   @js.native
-  sealed trait BEGINS_WITH extends js.Object
+  sealed trait B extends StObject
+  inline def B: B = "B".asInstanceOf[B]
   
   @js.native
-  sealed trait BETWEEN extends js.Object
+  sealed trait BEGINS_WITH extends StObject
+  inline def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
   
   @js.native
-  sealed trait BackupInUseException extends js.Object
+  sealed trait BETWEEN extends StObject
+  inline def BETWEEN: BETWEEN = "BETWEEN".asInstanceOf[BETWEEN]
   
   @js.native
-  sealed trait BackupNotFoundException extends js.Object
+  sealed trait BackupInUseException extends StObject
+  inline def BackupInUseException: BackupInUseException = "BackupInUseException".asInstanceOf[BackupInUseException]
   
   @js.native
-  sealed trait CONTAINS extends js.Object
+  sealed trait BackupNotFoundException extends StObject
+  inline def BackupNotFoundException: BackupNotFoundException = "BackupNotFoundException".asInstanceOf[BackupNotFoundException]
   
   @js.native
-  sealed trait COUNT extends js.Object
+  sealed trait CONTAINS extends StObject
+  inline def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
   
   @js.native
-  sealed trait CREATING extends js.Object
+  sealed trait COUNT extends StObject
+  inline def COUNT: COUNT = "COUNT".asInstanceOf[COUNT]
   
   @js.native
-  sealed trait ConditionalCheckFailedException extends js.Object
+  sealed trait CREATING extends StObject
+  inline def CREATING: CREATING = "CREATING".asInstanceOf[CREATING]
   
   @js.native
-  sealed trait ContinuousBackupsUnavailableException extends js.Object
+  sealed trait ConditionalCheckFailedException extends StObject
+  inline def ConditionalCheckFailedException: ConditionalCheckFailedException = "ConditionalCheckFailedException".asInstanceOf[ConditionalCheckFailedException]
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait ContinuousBackupsUnavailableException extends StObject
+  inline def ContinuousBackupsUnavailableException: ContinuousBackupsUnavailableException = "ContinuousBackupsUnavailableException".asInstanceOf[ContinuousBackupsUnavailableException]
   
   @js.native
-  sealed trait DELETED extends js.Object
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait DELETING extends js.Object
+  sealed trait DELETED extends StObject
+  inline def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
   
   @js.native
-  sealed trait DISABLED extends js.Object
+  sealed trait DELETING extends StObject
+  inline def DELETING: DELETING = "DELETING".asInstanceOf[DELETING]
   
   @js.native
-  sealed trait DISABLING extends js.Object
+  sealed trait DISABLED extends StObject
+  inline def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
   
   @js.native
-  sealed trait ENABLED extends js.Object
+  sealed trait DISABLING extends StObject
+  inline def DISABLING: DISABLING = "DISABLING".asInstanceOf[DISABLING]
   
   @js.native
-  sealed trait ENABLING extends js.Object
+  sealed trait ENABLED extends StObject
+  inline def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
   
   @js.native
-  sealed trait EQ extends js.Object
+  sealed trait ENABLING extends StObject
+  inline def ENABLING: ENABLING = "ENABLING".asInstanceOf[ENABLING]
   
   @js.native
-  sealed trait GE extends js.Object
+  sealed trait EQ extends StObject
+  inline def EQ: EQ = "EQ".asInstanceOf[EQ]
   
   @js.native
-  sealed trait GT extends js.Object
+  sealed trait GE extends StObject
+  inline def GE: GE = "GE".asInstanceOf[GE]
   
   @js.native
-  sealed trait GlobalTableAlreadyExistsException extends js.Object
+  sealed trait GT extends StObject
+  inline def GT: GT = "GT".asInstanceOf[GT]
   
   @js.native
-  sealed trait GlobalTableNotFoundException extends js.Object
+  sealed trait GlobalTableAlreadyExistsException extends StObject
+  inline def GlobalTableAlreadyExistsException: GlobalTableAlreadyExistsException = "GlobalTableAlreadyExistsException".asInstanceOf[GlobalTableAlreadyExistsException]
   
   @js.native
-  sealed trait HASH extends js.Object
+  sealed trait GlobalTableNotFoundException extends StObject
+  inline def GlobalTableNotFoundException: GlobalTableNotFoundException = "GlobalTableNotFoundException".asInstanceOf[GlobalTableNotFoundException]
   
   @js.native
-  sealed trait IN extends js.Object
+  sealed trait HASH extends StObject
+  inline def HASH: HASH = "HASH".asInstanceOf[HASH]
   
   @js.native
-  sealed trait INCLUDE extends js.Object
+  sealed trait IN extends StObject
+  inline def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
-  sealed trait INDEXES extends js.Object
+  sealed trait INCLUDE extends StObject
+  inline def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
   
   @js.native
-  sealed trait IndexNotFoundException extends js.Object
+  sealed trait INDEXES extends StObject
+  inline def INDEXES: INDEXES = "INDEXES".asInstanceOf[INDEXES]
   
   @js.native
-  sealed trait InternalServerError extends js.Object
+  sealed trait IndexNotFoundException extends StObject
+  inline def IndexNotFoundException: IndexNotFoundException = "IndexNotFoundException".asInstanceOf[IndexNotFoundException]
   
   @js.native
-  sealed trait InvalidRestoreTimeException extends js.Object
+  sealed trait InternalServerError extends StObject
+  inline def InternalServerError: InternalServerError = "InternalServerError".asInstanceOf[InternalServerError]
   
   @js.native
-  sealed trait ItemCollectionSizeLimitExceededException extends js.Object
+  sealed trait InvalidRestoreTimeException extends StObject
+  inline def InvalidRestoreTimeException: InvalidRestoreTimeException = "InvalidRestoreTimeException".asInstanceOf[InvalidRestoreTimeException]
   
   @js.native
-  sealed trait KEYS_ONLY extends js.Object
+  sealed trait ItemCollectionSizeLimitExceededException extends StObject
+  inline def ItemCollectionSizeLimitExceededException: ItemCollectionSizeLimitExceededException = "ItemCollectionSizeLimitExceededException".asInstanceOf[ItemCollectionSizeLimitExceededException]
   
   @js.native
-  sealed trait KMS extends js.Object
+  sealed trait KEYS_ONLY extends StObject
+  inline def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
   
   @js.native
-  sealed trait LE extends js.Object
+  sealed trait KMS extends StObject
+  inline def KMS: KMS = "KMS".asInstanceOf[KMS]
   
   @js.native
-  sealed trait LT extends js.Object
+  sealed trait LE extends StObject
+  inline def LE: LE = "LE".asInstanceOf[LE]
   
   @js.native
-  sealed trait LimitExceededException extends js.Object
+  sealed trait LT extends StObject
+  inline def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait LimitExceededException extends StObject
+  inline def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
   
   @js.native
-  sealed trait NE extends js.Object
+  sealed trait N extends StObject
+  inline def N: N = "N".asInstanceOf[N]
   
   @js.native
-  sealed trait NEW_AND_OLD_IMAGES extends js.Object
+  sealed trait NE extends StObject
+  inline def NE: NE = "NE".asInstanceOf[NE]
   
   @js.native
-  sealed trait NEW_IMAGE extends js.Object
+  sealed trait NEW_AND_OLD_IMAGES extends StObject
+  inline def NEW_AND_OLD_IMAGES: NEW_AND_OLD_IMAGES = "NEW_AND_OLD_IMAGES".asInstanceOf[NEW_AND_OLD_IMAGES]
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NEW_IMAGE extends StObject
+  inline def NEW_IMAGE: NEW_IMAGE = "NEW_IMAGE".asInstanceOf[NEW_IMAGE]
   
   @js.native
-  sealed trait NOT_CONTAINS extends js.Object
+  sealed trait NONE extends StObject
+  inline def NONE: NONE = "NONE".asInstanceOf[NONE]
   
   @js.native
-  sealed trait NOT_NULL extends js.Object
+  sealed trait NOT_CONTAINS extends StObject
+  inline def NOT_CONTAINS: NOT_CONTAINS = "NOT_CONTAINS".asInstanceOf[NOT_CONTAINS]
   
   @js.native
-  sealed trait NULL extends js.Object
+  sealed trait NOT_NULL extends StObject
+  inline def NOT_NULL: NOT_NULL = "NOT_NULL".asInstanceOf[NOT_NULL]
   
   @js.native
-  sealed trait OLD_IMAGE extends js.Object
+  sealed trait NULL extends StObject
+  inline def NULL: NULL = "NULL".asInstanceOf[NULL]
   
   @js.native
-  sealed trait OR extends js.Object
+  sealed trait OLD_IMAGE extends StObject
+  inline def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait OR extends StObject
+  inline def OR: OR = "OR".asInstanceOf[OR]
   
   @js.native
-  sealed trait PointInTimeRecoveryUnavailableException extends js.Object
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait ProvisionedThroughputExceededException extends js.Object
+  sealed trait PointInTimeRecoveryUnavailableException extends StObject
+  inline def PointInTimeRecoveryUnavailableException: PointInTimeRecoveryUnavailableException = "PointInTimeRecoveryUnavailableException".asInstanceOf[PointInTimeRecoveryUnavailableException]
   
   @js.native
-  sealed trait RANGE extends js.Object
+  sealed trait ProvisionedThroughputExceededException extends StObject
+  inline def ProvisionedThroughputExceededException: ProvisionedThroughputExceededException = "ProvisionedThroughputExceededException".asInstanceOf[ProvisionedThroughputExceededException]
   
   @js.native
-  sealed trait ReplicaAlreadyExistsException extends js.Object
+  sealed trait RANGE extends StObject
+  inline def RANGE: RANGE = "RANGE".asInstanceOf[RANGE]
   
   @js.native
-  sealed trait ReplicaNotFoundException extends js.Object
+  sealed trait ReplicaAlreadyExistsException extends StObject
+  inline def ReplicaAlreadyExistsException: ReplicaAlreadyExistsException = "ReplicaAlreadyExistsException".asInstanceOf[ReplicaAlreadyExistsException]
   
   @js.native
-  sealed trait ResourceInUseException extends js.Object
+  sealed trait ReplicaNotFoundException extends StObject
+  inline def ReplicaNotFoundException: ReplicaNotFoundException = "ReplicaNotFoundException".asInstanceOf[ReplicaNotFoundException]
   
   @js.native
-  sealed trait ResourceNotFoundException extends js.Object
+  sealed trait ResourceInUseException extends StObject
+  inline def ResourceInUseException: ResourceInUseException = "ResourceInUseException".asInstanceOf[ResourceInUseException]
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait ResourceNotFoundException extends StObject
+  inline def ResourceNotFoundException: ResourceNotFoundException = "ResourceNotFoundException".asInstanceOf[ResourceNotFoundException]
   
   @js.native
-  sealed trait SIZE extends js.Object
+  sealed trait S extends StObject
+  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait SPECIFIC_ATTRIBUTES extends js.Object
+  sealed trait SIZE extends StObject
+  inline def SIZE: SIZE = "SIZE".asInstanceOf[SIZE]
   
   @js.native
-  sealed trait SYSTEM extends js.Object
+  sealed trait SPECIFIC_ATTRIBUTES extends StObject
+  inline def SPECIFIC_ATTRIBUTES: SPECIFIC_ATTRIBUTES = "SPECIFIC_ATTRIBUTES".asInstanceOf[SPECIFIC_ATTRIBUTES]
   
   @js.native
-  sealed trait TOTAL extends js.Object
+  sealed trait SYSTEM extends StObject
+  inline def SYSTEM: SYSTEM = "SYSTEM".asInstanceOf[SYSTEM]
   
   @js.native
-  sealed trait TableAlreadyExistsException extends js.Object
+  sealed trait TOTAL extends StObject
+  inline def TOTAL: TOTAL = "TOTAL".asInstanceOf[TOTAL]
   
   @js.native
-  sealed trait TableInUseException extends js.Object
+  sealed trait TableAlreadyExistsException extends StObject
+  inline def TableAlreadyExistsException: TableAlreadyExistsException = "TableAlreadyExistsException".asInstanceOf[TableAlreadyExistsException]
   
   @js.native
-  sealed trait TableNotFoundException extends js.Object
+  sealed trait TableInUseException extends StObject
+  inline def TableInUseException: TableInUseException = "TableInUseException".asInstanceOf[TableInUseException]
   
   @js.native
-  sealed trait UPDATED_NEW extends js.Object
+  sealed trait TableNotFoundException extends StObject
+  inline def TableNotFoundException: TableNotFoundException = "TableNotFoundException".asInstanceOf[TableNotFoundException]
   
   @js.native
-  sealed trait UPDATED_OLD extends js.Object
+  sealed trait UPDATED_NEW extends StObject
+  inline def UPDATED_NEW: UPDATED_NEW = "UPDATED_NEW".asInstanceOf[UPDATED_NEW]
   
   @js.native
-  sealed trait UPDATING extends js.Object
+  sealed trait UPDATED_OLD extends StObject
+  inline def UPDATED_OLD: UPDATED_OLD = "UPDATED_OLD".asInstanceOf[UPDATED_OLD]
   
   @js.native
-  sealed trait USER extends js.Object
+  sealed trait UPDATING extends StObject
+  inline def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
   
-  @scala.inline
-  def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]
-  @scala.inline
-  def ADD: ADD = "ADD".asInstanceOf[ADD]
-  @scala.inline
-  def AES256: AES256 = "AES256".asInstanceOf[AES256]
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
-  @scala.inline
-  def ALL_ATTRIBUTES: ALL_ATTRIBUTES = "ALL_ATTRIBUTES".asInstanceOf[ALL_ATTRIBUTES]
-  @scala.inline
-  def ALL_NEW: ALL_NEW = "ALL_NEW".asInstanceOf[ALL_NEW]
-  @scala.inline
-  def ALL_OLD: ALL_OLD = "ALL_OLD".asInstanceOf[ALL_OLD]
-  @scala.inline
-  def ALL_PROJECTED_ATTRIBUTES: ALL_PROJECTED_ATTRIBUTES = "ALL_PROJECTED_ATTRIBUTES".asInstanceOf[ALL_PROJECTED_ATTRIBUTES]
-  @scala.inline
-  def AND: AND = "AND".asInstanceOf[AND]
-  @scala.inline
-  def AVAILABLE: AVAILABLE = "AVAILABLE".asInstanceOf[AVAILABLE]
-  @scala.inline
-  def B: B = "B".asInstanceOf[B]
-  @scala.inline
-  def BEGINS_WITH: BEGINS_WITH = "BEGINS_WITH".asInstanceOf[BEGINS_WITH]
-  @scala.inline
-  def BETWEEN: BETWEEN = "BETWEEN".asInstanceOf[BETWEEN]
-  @scala.inline
-  def BackupInUseException: BackupInUseException = "BackupInUseException".asInstanceOf[BackupInUseException]
-  @scala.inline
-  def BackupNotFoundException: BackupNotFoundException = "BackupNotFoundException".asInstanceOf[BackupNotFoundException]
-  @scala.inline
-  def CONTAINS: CONTAINS = "CONTAINS".asInstanceOf[CONTAINS]
-  @scala.inline
-  def COUNT: COUNT = "COUNT".asInstanceOf[COUNT]
-  @scala.inline
-  def CREATING: CREATING = "CREATING".asInstanceOf[CREATING]
-  @scala.inline
-  def ConditionalCheckFailedException: ConditionalCheckFailedException = "ConditionalCheckFailedException".asInstanceOf[ConditionalCheckFailedException]
-  @scala.inline
-  def ContinuousBackupsUnavailableException: ContinuousBackupsUnavailableException = "ContinuousBackupsUnavailableException".asInstanceOf[ContinuousBackupsUnavailableException]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def DELETED: DELETED = "DELETED".asInstanceOf[DELETED]
-  @scala.inline
-  def DELETING: DELETING = "DELETING".asInstanceOf[DELETING]
-  @scala.inline
-  def DISABLED: DISABLED = "DISABLED".asInstanceOf[DISABLED]
-  @scala.inline
-  def DISABLING: DISABLING = "DISABLING".asInstanceOf[DISABLING]
-  @scala.inline
-  def ENABLED: ENABLED = "ENABLED".asInstanceOf[ENABLED]
-  @scala.inline
-  def ENABLING: ENABLING = "ENABLING".asInstanceOf[ENABLING]
-  @scala.inline
-  def EQ: EQ = "EQ".asInstanceOf[EQ]
-  @scala.inline
-  def GE: GE = "GE".asInstanceOf[GE]
-  @scala.inline
-  def GT: GT = "GT".asInstanceOf[GT]
-  @scala.inline
-  def GlobalTableAlreadyExistsException: GlobalTableAlreadyExistsException = "GlobalTableAlreadyExistsException".asInstanceOf[GlobalTableAlreadyExistsException]
-  @scala.inline
-  def GlobalTableNotFoundException: GlobalTableNotFoundException = "GlobalTableNotFoundException".asInstanceOf[GlobalTableNotFoundException]
-  @scala.inline
-  def HASH: HASH = "HASH".asInstanceOf[HASH]
-  @scala.inline
-  def IN: IN = "IN".asInstanceOf[IN]
-  @scala.inline
-  def INCLUDE: INCLUDE = "INCLUDE".asInstanceOf[INCLUDE]
-  @scala.inline
-  def INDEXES: INDEXES = "INDEXES".asInstanceOf[INDEXES]
-  @scala.inline
-  def IndexNotFoundException: IndexNotFoundException = "IndexNotFoundException".asInstanceOf[IndexNotFoundException]
-  @scala.inline
-  def InternalServerError: InternalServerError = "InternalServerError".asInstanceOf[InternalServerError]
-  @scala.inline
-  def InvalidRestoreTimeException: InvalidRestoreTimeException = "InvalidRestoreTimeException".asInstanceOf[InvalidRestoreTimeException]
-  @scala.inline
-  def ItemCollectionSizeLimitExceededException: ItemCollectionSizeLimitExceededException = "ItemCollectionSizeLimitExceededException".asInstanceOf[ItemCollectionSizeLimitExceededException]
-  @scala.inline
-  def KEYS_ONLY: KEYS_ONLY = "KEYS_ONLY".asInstanceOf[KEYS_ONLY]
-  @scala.inline
-  def KMS: KMS = "KMS".asInstanceOf[KMS]
-  @scala.inline
-  def LE: LE = "LE".asInstanceOf[LE]
-  @scala.inline
-  def LT: LT = "LT".asInstanceOf[LT]
-  @scala.inline
-  def LimitExceededException: LimitExceededException = "LimitExceededException".asInstanceOf[LimitExceededException]
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
-  @scala.inline
-  def NE: NE = "NE".asInstanceOf[NE]
-  @scala.inline
-  def NEW_AND_OLD_IMAGES: NEW_AND_OLD_IMAGES = "NEW_AND_OLD_IMAGES".asInstanceOf[NEW_AND_OLD_IMAGES]
-  @scala.inline
-  def NEW_IMAGE: NEW_IMAGE = "NEW_IMAGE".asInstanceOf[NEW_IMAGE]
-  @scala.inline
-  def NONE: NONE = "NONE".asInstanceOf[NONE]
-  @scala.inline
-  def NOT_CONTAINS: NOT_CONTAINS = "NOT_CONTAINS".asInstanceOf[NOT_CONTAINS]
-  @scala.inline
-  def NOT_NULL: NOT_NULL = "NOT_NULL".asInstanceOf[NOT_NULL]
-  @scala.inline
-  def NULL: NULL = "NULL".asInstanceOf[NULL]
-  @scala.inline
-  def OLD_IMAGE: OLD_IMAGE = "OLD_IMAGE".asInstanceOf[OLD_IMAGE]
-  @scala.inline
-  def OR: OR = "OR".asInstanceOf[OR]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def PointInTimeRecoveryUnavailableException: PointInTimeRecoveryUnavailableException = "PointInTimeRecoveryUnavailableException".asInstanceOf[PointInTimeRecoveryUnavailableException]
-  @scala.inline
-  def ProvisionedThroughputExceededException: ProvisionedThroughputExceededException = "ProvisionedThroughputExceededException".asInstanceOf[ProvisionedThroughputExceededException]
-  @scala.inline
-  def RANGE: RANGE = "RANGE".asInstanceOf[RANGE]
-  @scala.inline
-  def ReplicaAlreadyExistsException: ReplicaAlreadyExistsException = "ReplicaAlreadyExistsException".asInstanceOf[ReplicaAlreadyExistsException]
-  @scala.inline
-  def ReplicaNotFoundException: ReplicaNotFoundException = "ReplicaNotFoundException".asInstanceOf[ReplicaNotFoundException]
-  @scala.inline
-  def ResourceInUseException: ResourceInUseException = "ResourceInUseException".asInstanceOf[ResourceInUseException]
-  @scala.inline
-  def ResourceNotFoundException: ResourceNotFoundException = "ResourceNotFoundException".asInstanceOf[ResourceNotFoundException]
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
-  @scala.inline
-  def SIZE: SIZE = "SIZE".asInstanceOf[SIZE]
-  @scala.inline
-  def SPECIFIC_ATTRIBUTES: SPECIFIC_ATTRIBUTES = "SPECIFIC_ATTRIBUTES".asInstanceOf[SPECIFIC_ATTRIBUTES]
-  @scala.inline
-  def SYSTEM: SYSTEM = "SYSTEM".asInstanceOf[SYSTEM]
-  @scala.inline
-  def TOTAL: TOTAL = "TOTAL".asInstanceOf[TOTAL]
-  @scala.inline
-  def TableAlreadyExistsException: TableAlreadyExistsException = "TableAlreadyExistsException".asInstanceOf[TableAlreadyExistsException]
-  @scala.inline
-  def TableInUseException: TableInUseException = "TableInUseException".asInstanceOf[TableInUseException]
-  @scala.inline
-  def TableNotFoundException: TableNotFoundException = "TableNotFoundException".asInstanceOf[TableNotFoundException]
-  @scala.inline
-  def UPDATED_NEW: UPDATED_NEW = "UPDATED_NEW".asInstanceOf[UPDATED_NEW]
-  @scala.inline
-  def UPDATED_OLD: UPDATED_OLD = "UPDATED_OLD".asInstanceOf[UPDATED_OLD]
-  @scala.inline
-  def UPDATING: UPDATING = "UPDATING".asInstanceOf[UPDATING]
-  @scala.inline
-  def USER: USER = "USER".asInstanceOf[USER]
+  @js.native
+  sealed trait USER extends StObject
+  inline def USER: USER = "USER".asInstanceOf[USER]
 }
-

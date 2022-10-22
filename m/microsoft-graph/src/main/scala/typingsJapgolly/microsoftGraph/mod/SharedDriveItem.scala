@@ -1,70 +1,94 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SharedDriveItem extends BaseItem {
+trait SharedDriveItem
+  extends StObject
+     with BaseItem {
+  
   // Used to access the underlying driveItem
-  var driveItem: js.UndefOr[DriveItem] = js.undefined
+  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.undefined
+  
   // All driveItems contained in the sharing root. This collection cannot be enumerated.
-  var items: js.UndefOr[js.Array[DriveItem]] = js.undefined
+  var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
+  
   // Used to access the underlying list
-  var list: js.UndefOr[List] = js.undefined
+  var list: js.UndefOr[NullableOption[typingsJapgolly.microsoftGraph.mod.List]] = js.undefined
+  
   // Used to access the underlying listItem
-  var listItem: js.UndefOr[ListItem] = js.undefined
+  var listItem: js.UndefOr[NullableOption[ListItem]] = js.undefined
+  
   // Information about the owner of the shared item being referenced.
-  var owner: js.UndefOr[IdentitySet] = js.undefined
+  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
+  // Used to access the permission representing the underlying sharing link
+  var permission: js.UndefOr[NullableOption[Permission]] = js.undefined
+  
   // Used to access the underlying driveItem. Deprecated -- use driveItem instead.
-  var root: js.UndefOr[DriveItem] = js.undefined
+  var root: js.UndefOr[NullableOption[DriveItem]] = js.undefined
+  
   // Used to access the underlying site
-  var site: js.UndefOr[Site] = js.undefined
+  var site: js.UndefOr[NullableOption[Site]] = js.undefined
 }
-
 object SharedDriveItem {
-  @scala.inline
-  def apply(
-    createdBy: IdentitySet = null,
-    createdByUser: User = null,
-    createdDateTime: String = null,
-    description: String = null,
-    driveItem: DriveItem = null,
-    eTag: String = null,
-    id: String = null,
-    items: js.Array[DriveItem] = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedByUser: User = null,
-    lastModifiedDateTime: String = null,
-    list: List = null,
-    listItem: ListItem = null,
-    name: String = null,
-    owner: IdentitySet = null,
-    parentReference: ItemReference = null,
-    root: DriveItem = null,
-    site: Site = null,
-    webUrl: String = null
-  ): SharedDriveItem = {
+  
+  inline def apply(): SharedDriveItem = {
     val __obj = js.Dynamic.literal()
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (createdByUser != null) __obj.updateDynamic("createdByUser")(createdByUser.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (driveItem != null) __obj.updateDynamic("driveItem")(driveItem.asInstanceOf[js.Any])
-    if (eTag != null) __obj.updateDynamic("eTag")(eTag.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedByUser != null) __obj.updateDynamic("lastModifiedByUser")(lastModifiedByUser.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (listItem != null) __obj.updateDynamic("listItem")(listItem.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (parentReference != null) __obj.updateDynamic("parentReference")(parentReference.asInstanceOf[js.Any])
-    if (root != null) __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
-    if (site != null) __obj.updateDynamic("site")(site.asInstanceOf[js.Any])
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedDriveItem]
   }
+  
+  extension [Self <: SharedDriveItem](x: Self) {
+    
+    inline def setDriveItem(value: NullableOption[DriveItem]): Self = StObject.set(x, "driveItem", value.asInstanceOf[js.Any])
+    
+    inline def setDriveItemNull: Self = StObject.set(x, "driveItem", null)
+    
+    inline def setDriveItemUndefined: Self = StObject.set(x, "driveItem", js.undefined)
+    
+    inline def setItems(value: NullableOption[js.Array[DriveItem]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsNull: Self = StObject.set(x, "items", null)
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: DriveItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setList(value: NullableOption[typingsJapgolly.microsoftGraph.mod.List]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    inline def setListItem(value: NullableOption[ListItem]): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
+    
+    inline def setListItemNull: Self = StObject.set(x, "listItem", null)
+    
+    inline def setListItemUndefined: Self = StObject.set(x, "listItem", js.undefined)
+    
+    inline def setListNull: Self = StObject.set(x, "list", null)
+    
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    
+    inline def setOwner(value: NullableOption[IdentitySet]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setPermission(value: NullableOption[Permission]): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    
+    inline def setPermissionNull: Self = StObject.set(x, "permission", null)
+    
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    
+    inline def setRoot(value: NullableOption[DriveItem]): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootNull: Self = StObject.set(x, "root", null)
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setSite(value: NullableOption[Site]): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+    
+    inline def setSiteNull: Self = StObject.set(x, "site", null)
+    
+    inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+  }
 }
-

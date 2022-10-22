@@ -3,21 +3,24 @@ package typingsJapgolly.wtfnode
 import typingsJapgolly.wtfnode.wtfnodeStrings.error
 import typingsJapgolly.wtfnode.wtfnodeStrings.info
 import typingsJapgolly.wtfnode.wtfnodeStrings.warn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wtfnode", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def dump(): Unit = js.native
-  def init(): Unit = js.native
-  def resetLoggers(): Unit = js.native
-  @JSName("setLogger")
-  def setLogger_error(`type`: error, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("setLogger")
-  def setLogger_info(`type`: info, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
-  @JSName("setLogger")
-  def setLogger_warn(`type`: warn, fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]): Unit = js.native
+object mod {
+  
+  @JSImport("wtfnode", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def dump(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")().asInstanceOf[Unit]
+  
+  inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  
+  inline def resetLoggers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetLoggers")().asInstanceOf[Unit]
+  
+  inline def setLogger(
+    `type`: info | warn | error,
+    fn: js.Function2[/* message */ js.UndefOr[Any], /* repeated */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(`type`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

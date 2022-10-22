@@ -1,14 +1,13 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.abstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "UndoManager")
 @js.native
-class UndoManager protected ()
-  extends typingsJapgolly.mendixmodelsdk.internalMod.UndoManager {
+open class UndoManager protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.UndoManager {
   def this(_model: IAbstractModel) = this()
 }
-

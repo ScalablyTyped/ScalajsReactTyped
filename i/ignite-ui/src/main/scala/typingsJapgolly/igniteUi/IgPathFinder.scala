@@ -1,31 +1,30 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPathFinder
-  extends /**
-	 * Option for igPathFinder
-	 */
-/* optionName */ StringDictionary[js.Any] {
-  var items: js.UndefOr[js.Any] = js.undefined
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
+  var items: js.UndefOr[Any] = js.undefined
 }
-
 object IgPathFinder {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igPathFinder
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    items: js.Any = null
-  ): IgPathFinder = {
+  
+  inline def apply(): IgPathFinder = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPathFinder]
   }
+  
+  extension [Self <: IgPathFinder](x: Self) {
+    
+    inline def setItems(value: Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+  }
 }
-

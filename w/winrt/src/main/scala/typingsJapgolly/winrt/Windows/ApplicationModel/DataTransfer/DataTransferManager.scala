@@ -1,23 +1,16 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
-@js.native
-class DataTransferManager () extends IDataTransferManager {
-  /* CompleteClass */
-  override var ondatarequested: js.Any = js.native
-  /* CompleteClass */
-  override var ontargetapplicationchosen: js.Any = js.native
+trait DataTransferManager
+  extends StObject
+     with IDataTransferManager
+object DataTransferManager {
+  
+  inline def apply(ondatarequested: Any, ontargetapplicationchosen: Any): DataTransferManager = {
+    val __obj = js.Dynamic.literal(ondatarequested = ondatarequested.asInstanceOf[js.Any], ontargetapplicationchosen = ontargetapplicationchosen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataTransferManager]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
-@js.native
-object DataTransferManager extends js.Object {
-  def getForCurrentView(): DataTransferManager = js.native
-  def showShareUI(): Unit = js.native
-}
-

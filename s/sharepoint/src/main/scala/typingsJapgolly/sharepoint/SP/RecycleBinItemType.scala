@@ -1,83 +1,67 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RecycleBinItemType extends js.Object
-
+sealed trait RecycleBinItemType extends StObject
 @JSGlobal("SP.RecycleBinItemType")
 @js.native
-object RecycleBinItemType extends js.Object {
-  @js.native
-  sealed trait attachment extends RecycleBinItemType
+object RecycleBinItemType extends StObject {
   
   @js.native
-  sealed trait cascadeParent extends RecycleBinItemType
+  sealed trait attachment
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait file extends RecycleBinItemType
+  sealed trait cascadeParent
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait fileVersion extends RecycleBinItemType
+  sealed trait file
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait folder extends RecycleBinItemType
+  sealed trait fileVersion
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait folderWithLists extends RecycleBinItemType
+  sealed trait folder
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait list extends RecycleBinItemType
+  sealed trait folderWithLists
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait listItem extends RecycleBinItemType
+  sealed trait list
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait listItemVersion extends RecycleBinItemType
+  sealed trait listItem
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait none extends RecycleBinItemType
+  sealed trait listItemVersion
+    extends StObject
+       with RecycleBinItemType
   
   @js.native
-  sealed trait web extends RecycleBinItemType
+  sealed trait none
+    extends StObject
+       with RecycleBinItemType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RecycleBinItemType with Double] = js.native
-  /* 7 */ @js.native
-  object attachment extends TopLevel[attachment with Double]
-  
-  /* 9 */ @js.native
-  object cascadeParent extends TopLevel[cascadeParent with Double]
-  
-  /* 1 */ @js.native
-  object file extends TopLevel[file with Double]
-  
-  /* 2 */ @js.native
-  object fileVersion extends TopLevel[fileVersion with Double]
-  
-  /* 5 */ @js.native
-  object folder extends TopLevel[folder with Double]
-  
-  /* 6 */ @js.native
-  object folderWithLists extends TopLevel[folderWithLists with Double]
-  
-  /* 4 */ @js.native
-  object list extends TopLevel[list with Double]
-  
-  /* 3 */ @js.native
-  object listItem extends TopLevel[listItem with Double]
-  
-  /* 8 */ @js.native
-  object listItemVersion extends TopLevel[listItemVersion with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 10 */ @js.native
-  object web extends TopLevel[web with Double]
-  
+  @js.native
+  sealed trait web
+    extends StObject
+       with RecycleBinItemType
 }
-

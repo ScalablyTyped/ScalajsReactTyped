@@ -1,35 +1,33 @@
 package typingsJapgolly.nodeForge.mod.tls
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BulkCipherAlgorithm extends js.Object
-
+sealed trait BulkCipherAlgorithm extends StObject
 @JSImport("node-forge", "tls.BulkCipherAlgorithm")
 @js.native
-object BulkCipherAlgorithm extends js.Object {
-  @js.native
-  sealed trait aes extends BulkCipherAlgorithm
-  
-  @js.native
-  sealed trait des3 extends BulkCipherAlgorithm
-  
-  @js.native
-  sealed trait rc4 extends BulkCipherAlgorithm
+object BulkCipherAlgorithm extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BulkCipherAlgorithm with Double] = js.native
-  /* 2 */ @js.native
-  object aes extends TopLevel[aes with Double]
+  def apply(value: Double): js.UndefOr[BulkCipherAlgorithm & Double] = js.native
   
-  /* 1 */ @js.native
-  object des3 extends TopLevel[des3 with Double]
+  @js.native
+  sealed trait aes
+    extends StObject
+       with BulkCipherAlgorithm
+  /* 2 */ val aes: typingsJapgolly.nodeForge.mod.tls.BulkCipherAlgorithm.aes & Double = js.native
   
-  /* 0 */ @js.native
-  object rc4 extends TopLevel[rc4 with Double]
+  @js.native
+  sealed trait des3
+    extends StObject
+       with BulkCipherAlgorithm
+  /* 1 */ val des3: typingsJapgolly.nodeForge.mod.tls.BulkCipherAlgorithm.des3 & Double = js.native
   
+  @js.native
+  sealed trait rc4
+    extends StObject
+       with BulkCipherAlgorithm
+  /* 0 */ val rc4: typingsJapgolly.nodeForge.mod.tls.BulkCipherAlgorithm.rc4 & Double = js.native
 }
-

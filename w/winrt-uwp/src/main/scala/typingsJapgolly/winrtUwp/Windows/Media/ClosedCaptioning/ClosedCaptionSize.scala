@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Media.ClosedCaptioning
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClosedCaptionSize extends js.Object
-
+sealed trait ClosedCaptionSize extends StObject
 /** Specifies the size of closed caption text. */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionSize")
 @js.native
-object ClosedCaptionSize extends js.Object {
+object ClosedCaptionSize extends StObject {
+  
   /** Default text size. */
   @js.native
-  sealed trait default extends ClosedCaptionSize
+  sealed trait default
+    extends StObject
+       with ClosedCaptionSize
   
   /** 50% text size. */
   @js.native
-  sealed trait fiftyPercent extends ClosedCaptionSize
+  sealed trait fiftyPercent
+    extends StObject
+       with ClosedCaptionSize
   
   /** 150% text size. */
   @js.native
-  sealed trait oneHundredFiftyPercent extends ClosedCaptionSize
+  sealed trait oneHundredFiftyPercent
+    extends StObject
+       with ClosedCaptionSize
   
   /** 100% text size. */
   @js.native
-  sealed trait oneHundredPercent extends ClosedCaptionSize
+  sealed trait oneHundredPercent
+    extends StObject
+       with ClosedCaptionSize
   
   /** 200% text size. */
   @js.native
-  sealed trait twoHundredPercent extends ClosedCaptionSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClosedCaptionSize with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object fiftyPercent extends TopLevel[fiftyPercent with Double]
-  
-  /* 3 */ @js.native
-  object oneHundredFiftyPercent extends TopLevel[oneHundredFiftyPercent with Double]
-  
-  /* 2 */ @js.native
-  object oneHundredPercent extends TopLevel[oneHundredPercent with Double]
-  
-  /* 4 */ @js.native
-  object twoHundredPercent extends TopLevel[twoHundredPercent with Double]
-  
+  sealed trait twoHundredPercent
+    extends StObject
+       with ClosedCaptionSize
 }
-

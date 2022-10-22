@@ -1,48 +1,76 @@
 package typingsJapgolly.consul.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.consul.mod.Lock.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Consul extends js.Object {
+trait Consul extends StObject {
+  
   var acl: Acl
+  
   var agent: Agent
+  
   var catalog: Catalog
+  
   var event: Event
+  
   var health: Health
+  
   var kv: Kv
-  var session: Session
-  var status: Status
+  
   /**
     * Lock helper.
     */
   def lock(opts: Options): Lock
+  
+  var session: Session
+  
+  var status: Status
+  
   /**
     * Watch helper.
     */
   def watch(opts: typingsJapgolly.consul.mod.Watch.Options): Watch
 }
-
 object Consul {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     acl: Acl,
     agent: Agent,
     catalog: Catalog,
     event: Event,
     health: Health,
     kv: Kv,
-    lock: Options => CallbackTo[Lock],
+    lock: Options => Lock,
     session: Session,
     status: Status,
-    watch: typingsJapgolly.consul.mod.Watch.Options => CallbackTo[Watch]
+    watch: typingsJapgolly.consul.mod.Watch.Options => Watch
   ): Consul = {
-    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], catalog = catalog.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], health = health.asInstanceOf[js.Any], kv = kv.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("lock")(js.Any.fromFunction1((t0: typingsJapgolly.consul.mod.Lock.Options) => lock(t0).runNow()))
-    __obj.updateDynamic("watch")(js.Any.fromFunction1((t0: typingsJapgolly.consul.mod.Watch.Options) => watch(t0).runNow()))
+    val __obj = js.Dynamic.literal(acl = acl.asInstanceOf[js.Any], agent = agent.asInstanceOf[js.Any], catalog = catalog.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], health = health.asInstanceOf[js.Any], kv = kv.asInstanceOf[js.Any], lock = js.Any.fromFunction1(lock), session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], watch = js.Any.fromFunction1(watch))
     __obj.asInstanceOf[Consul]
   }
+  
+  extension [Self <: Consul](x: Self) {
+    
+    inline def setAcl(value: Acl): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
+    
+    inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    
+    inline def setEvent(value: Event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setHealth(value: Health): Self = StObject.set(x, "health", value.asInstanceOf[js.Any])
+    
+    inline def setKv(value: Kv): Self = StObject.set(x, "kv", value.asInstanceOf[js.Any])
+    
+    inline def setLock(value: Options => Lock): Self = StObject.set(x, "lock", js.Any.fromFunction1(value))
+    
+    inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setWatch(value: typingsJapgolly.consul.mod.Watch.Options => Watch): Self = StObject.set(x, "watch", js.Any.fromFunction1(value))
+  }
 }
-

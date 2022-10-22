@@ -1,8 +1,8 @@
 package typingsJapgolly.fridaGum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.fridaGum.fridaGumStrings.lsl
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.fridaGum.fridaGumStrings.asr
   - typingsJapgolly.fridaGum.fridaGumStrings.ror
 */
-trait Arm64Shifter extends js.Object
-
+trait Arm64Shifter extends StObject
 object Arm64Shifter {
-  @scala.inline
-  def asr: typingsJapgolly.fridaGum.fridaGumStrings.asr = this.cast("asr")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def lsl: typingsJapgolly.fridaGum.fridaGumStrings.lsl = this.cast("lsl")
-  @scala.inline
-  def lsr: typingsJapgolly.fridaGum.fridaGumStrings.lsr = this.cast("lsr")
-  @scala.inline
-  def msl: typingsJapgolly.fridaGum.fridaGumStrings.msl = this.cast("msl")
-  @scala.inline
-  def ror: typingsJapgolly.fridaGum.fridaGumStrings.ror = this.cast("ror")
+  
+  inline def asr: typingsJapgolly.fridaGum.fridaGumStrings.asr = "asr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.asr]
+  
+  inline def lsl: typingsJapgolly.fridaGum.fridaGumStrings.lsl = "lsl".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.lsl]
+  
+  inline def lsr: typingsJapgolly.fridaGum.fridaGumStrings.lsr = "lsr".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.lsr]
+  
+  inline def msl: typingsJapgolly.fridaGum.fridaGumStrings.msl = "msl".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.msl]
+  
+  inline def ror: typingsJapgolly.fridaGum.fridaGumStrings.ror = "ror".asInstanceOf[typingsJapgolly.fridaGum.fridaGumStrings.ror]
 }
-

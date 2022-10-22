@@ -1,39 +1,55 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ErrorEventInit extends EventInit {
+trait ErrorEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
   var colno: js.UndefOr[Double] = js.undefined
-  var error: js.UndefOr[js.Any] = js.undefined
+  
+  /* standard dom */
+  var error: js.UndefOr[Any] = js.undefined
+  
+  /* standard dom */
   var filename: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var lineno: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object ErrorEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    colno: Int | Double = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    error: js.Any = null,
-    filename: java.lang.String = null,
-    lineno: Int | Double = null,
-    message: java.lang.String = null
-  ): ErrorEventInit = {
+  
+  inline def apply(): ErrorEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (colno != null) __obj.updateDynamic("colno")(colno.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (lineno != null) __obj.updateDynamic("lineno")(lineno.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorEventInit]
   }
+  
+  extension [Self <: ErrorEventInit](x: Self) {
+    
+    inline def setColno(value: Double): Self = StObject.set(x, "colno", value.asInstanceOf[js.Any])
+    
+    inline def setColnoUndefined: Self = StObject.set(x, "colno", js.undefined)
+    
+    inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setFilename(value: java.lang.String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    
+    inline def setLinenoUndefined: Self = StObject.set(x, "lineno", js.undefined)
+    
+    inline def setMessage(value: java.lang.String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+  }
 }
-

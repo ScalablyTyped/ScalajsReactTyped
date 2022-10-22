@@ -1,40 +1,41 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * {@link PIXI.Loader Loader} middleware for loading texture atlases that have been created with
-  * TexturePacker or similar JSON-based spritesheet.
-  *
-  * This middleware automatically generates Texture resources.
-  *
-  * @class
-  * @memberof PIXI
-  * @implements PIXI.ILoaderPlugin
-  */
 @JSImport("pixi.js", "SpritesheetLoader")
 @js.native
-class SpritesheetLoader ()
-  extends typingsJapgolly.pixiJs.PIXI.SpritesheetLoader
-
+open class SpritesheetLoader ()
+  extends typingsJapgolly.pixiSpritesheet.mod.SpritesheetLoader
 /* static members */
-@JSImport("pixi.js", "SpritesheetLoader")
-@js.native
-object SpritesheetLoader extends js.Object {
+object SpritesheetLoader {
+  
+  @JSImport("pixi.js", "SpritesheetLoader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** @ignore */
+  @JSImport("pixi.js", "SpritesheetLoader.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+  
   /**
     * Get the spritesheets root path
-    * @param {PIXI.LoaderResource} resource - Resource to check path
-    * @param {string} baseUrl - Base root url
+    * @param resource - Resource to check path
+    * @param baseUrl - Base root url
     */
-  def getResourcePath(resource: typingsJapgolly.pixiJs.PIXI.LoaderResource, baseUrl: String): Unit = js.native
+  inline def getResourcePath(resource: typingsJapgolly.pixiLoaders.mod.LoaderResource, baseUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getResourcePath")(resource.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Called after a resource is loaded.
     * @see PIXI.Loader.loaderMiddleware
-    * @param {PIXI.LoaderResource} resource
-    * @param {function} next
+    * @param resource
+    * @param next
     */
-  def use(resource: typingsJapgolly.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  inline def use(
+    resource: typingsJapgolly.pixiLoaders.mod.LoaderResource,
+    next: js.Function1[/* repeated */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

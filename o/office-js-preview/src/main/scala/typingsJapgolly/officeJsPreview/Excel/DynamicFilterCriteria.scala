@@ -1,230 +1,331 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DynamicFilterCriteria extends js.Object
-
+sealed trait DynamicFilterCriteria extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.DynamicFilterCriteria")
 @js.native
-object DynamicFilterCriteria extends js.Object {
+object DynamicFilterCriteria extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait aboveAverage extends DynamicFilterCriteria
+  sealed trait aboveAverage
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodApril extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodApril
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodAugust extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodAugust
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodDecember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodDecember
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodFebruray extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodFebruray
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodJanuary extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJanuary
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodJuly extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJuly
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodJune extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodJune
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodMarch extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodMarch
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodMay extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodMay
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodNovember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodNovember
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodOctober extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodOctober
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodQuarter1 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter1
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodQuarter2 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter2
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodQuarter3 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter3
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodQuarter4 extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodQuarter4
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait allDatesInPeriodSeptember extends DynamicFilterCriteria
+  sealed trait allDatesInPeriodSeptember
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait belowAverage extends DynamicFilterCriteria
+  sealed trait belowAverage
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait lastMonth extends DynamicFilterCriteria
+  sealed trait lastMonth
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait lastQuarter extends DynamicFilterCriteria
+  sealed trait lastQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait lastWeek extends DynamicFilterCriteria
+  sealed trait lastWeek
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait lastYear extends DynamicFilterCriteria
+  sealed trait lastYear
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait nextMonth extends DynamicFilterCriteria
+  sealed trait nextMonth
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait nextQuarter extends DynamicFilterCriteria
+  sealed trait nextQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait nextWeek extends DynamicFilterCriteria
+  sealed trait nextWeek
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait nextYear extends DynamicFilterCriteria
+  sealed trait nextYear
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait thisMonth extends DynamicFilterCriteria
+  sealed trait thisMonth
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait thisQuarter extends DynamicFilterCriteria
+  sealed trait thisQuarter
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait thisWeek extends DynamicFilterCriteria
+  sealed trait thisWeek
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait thisYear extends DynamicFilterCriteria
+  sealed trait thisYear
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait today extends DynamicFilterCriteria
+  sealed trait today
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait tomorrow extends DynamicFilterCriteria
+  sealed trait tomorrow
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait unknown extends DynamicFilterCriteria
+  sealed trait unknown
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait yearToDate extends DynamicFilterCriteria
+  sealed trait yearToDate
+    extends StObject
+       with DynamicFilterCriteria
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait yesterday extends DynamicFilterCriteria
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DynamicFilterCriteria with String] = js.native
-  /* "AboveAverage" */ @js.native
-  object aboveAverage extends TopLevel[aboveAverage with String]
-  
-  /* "AllDatesInPeriodApril" */ @js.native
-  object allDatesInPeriodApril extends TopLevel[allDatesInPeriodApril with String]
-  
-  /* "AllDatesInPeriodAugust" */ @js.native
-  object allDatesInPeriodAugust extends TopLevel[allDatesInPeriodAugust with String]
-  
-  /* "AllDatesInPeriodDecember" */ @js.native
-  object allDatesInPeriodDecember extends TopLevel[allDatesInPeriodDecember with String]
-  
-  /* "AllDatesInPeriodFebruray" */ @js.native
-  object allDatesInPeriodFebruray extends TopLevel[allDatesInPeriodFebruray with String]
-  
-  /* "AllDatesInPeriodJanuary" */ @js.native
-  object allDatesInPeriodJanuary extends TopLevel[allDatesInPeriodJanuary with String]
-  
-  /* "AllDatesInPeriodJuly" */ @js.native
-  object allDatesInPeriodJuly extends TopLevel[allDatesInPeriodJuly with String]
-  
-  /* "AllDatesInPeriodJune" */ @js.native
-  object allDatesInPeriodJune extends TopLevel[allDatesInPeriodJune with String]
-  
-  /* "AllDatesInPeriodMarch" */ @js.native
-  object allDatesInPeriodMarch extends TopLevel[allDatesInPeriodMarch with String]
-  
-  /* "AllDatesInPeriodMay" */ @js.native
-  object allDatesInPeriodMay extends TopLevel[allDatesInPeriodMay with String]
-  
-  /* "AllDatesInPeriodNovember" */ @js.native
-  object allDatesInPeriodNovember extends TopLevel[allDatesInPeriodNovember with String]
-  
-  /* "AllDatesInPeriodOctober" */ @js.native
-  object allDatesInPeriodOctober extends TopLevel[allDatesInPeriodOctober with String]
-  
-  /* "AllDatesInPeriodQuarter1" */ @js.native
-  object allDatesInPeriodQuarter1 extends TopLevel[allDatesInPeriodQuarter1 with String]
-  
-  /* "AllDatesInPeriodQuarter2" */ @js.native
-  object allDatesInPeriodQuarter2 extends TopLevel[allDatesInPeriodQuarter2 with String]
-  
-  /* "AllDatesInPeriodQuarter3" */ @js.native
-  object allDatesInPeriodQuarter3 extends TopLevel[allDatesInPeriodQuarter3 with String]
-  
-  /* "AllDatesInPeriodQuarter4" */ @js.native
-  object allDatesInPeriodQuarter4 extends TopLevel[allDatesInPeriodQuarter4 with String]
-  
-  /* "AllDatesInPeriodSeptember" */ @js.native
-  object allDatesInPeriodSeptember extends TopLevel[allDatesInPeriodSeptember with String]
-  
-  /* "BelowAverage" */ @js.native
-  object belowAverage extends TopLevel[belowAverage with String]
-  
-  /* "LastMonth" */ @js.native
-  object lastMonth extends TopLevel[lastMonth with String]
-  
-  /* "LastQuarter" */ @js.native
-  object lastQuarter extends TopLevel[lastQuarter with String]
-  
-  /* "LastWeek" */ @js.native
-  object lastWeek extends TopLevel[lastWeek with String]
-  
-  /* "LastYear" */ @js.native
-  object lastYear extends TopLevel[lastYear with String]
-  
-  /* "NextMonth" */ @js.native
-  object nextMonth extends TopLevel[nextMonth with String]
-  
-  /* "NextQuarter" */ @js.native
-  object nextQuarter extends TopLevel[nextQuarter with String]
-  
-  /* "NextWeek" */ @js.native
-  object nextWeek extends TopLevel[nextWeek with String]
-  
-  /* "NextYear" */ @js.native
-  object nextYear extends TopLevel[nextYear with String]
-  
-  /* "ThisMonth" */ @js.native
-  object thisMonth extends TopLevel[thisMonth with String]
-  
-  /* "ThisQuarter" */ @js.native
-  object thisQuarter extends TopLevel[thisQuarter with String]
-  
-  /* "ThisWeek" */ @js.native
-  object thisWeek extends TopLevel[thisWeek with String]
-  
-  /* "ThisYear" */ @js.native
-  object thisYear extends TopLevel[thisYear with String]
-  
-  /* "Today" */ @js.native
-  object today extends TopLevel[today with String]
-  
-  /* "Tomorrow" */ @js.native
-  object tomorrow extends TopLevel[tomorrow with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
-  /* "YearToDate" */ @js.native
-  object yearToDate extends TopLevel[yearToDate with String]
-  
-  /* "Yesterday" */ @js.native
-  object yesterday extends TopLevel[yesterday with String]
-  
+  sealed trait yesterday
+    extends StObject
+       with DynamicFilterCriteria
 }
-

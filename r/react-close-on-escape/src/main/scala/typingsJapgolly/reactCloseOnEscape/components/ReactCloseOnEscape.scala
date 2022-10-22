@@ -1,39 +1,23 @@
 package typingsJapgolly.reactCloseOnEscape.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
 import typingsJapgolly.reactCloseOnEscape.mod.CloseOnEscapeProps
 import typingsJapgolly.reactCloseOnEscape.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactCloseOnEscape {
-  def apply(
-    onEscape: Callback,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CloseOnEscapeProps, default, Unit, CloseOnEscapeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onEscape")(onEscape.toJsFn)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCloseOnEscape.mod.CloseOnEscapeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCloseOnEscape.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCloseOnEscape.mod.CloseOnEscapeProps])(children: _*)
+  inline def apply(onEscape: Callback): Default[default] = {
+    val __props = js.Dynamic.literal(onEscape = onEscape.toJsFn)
+    new Default[default](js.Array(this.component, __props.asInstanceOf[CloseOnEscapeProps]))
   }
+  
   @JSImport("react-close-on-escape", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: CloseOnEscapeProps): Default[default] = new Default[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,9 +1,9 @@
 package typingsJapgolly.suitescript
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjButton.
@@ -15,11 +15,14 @@ import scala.scalajs.js.annotation._
   * @since 2009.2
   */
 @js.native
-trait nlobjButton extends /**
+trait nlobjButton
+  extends StObject
+     with /**
   *
   * @return
   */
 Instantiable0[nlobjButton] {
+  
   /**
     * disable or enable button.
     * @param {boolean} disabled if true then this button should be disabled on the page
@@ -33,6 +36,7 @@ Instantiable0[nlobjButton] {
     * @return
     */
   def setDisabled(disabled: Boolean): nlobjButton = js.native
+  
   /**
     * set the label for this button.
     * @param {string} label display label for button
@@ -46,6 +50,6 @@ Instantiable0[nlobjButton] {
     * @return
     */
   def setLabel(label: String): nlobjButton = js.native
+  
   def setVisible(visible: Boolean): nlobjButton = js.native
 }
-

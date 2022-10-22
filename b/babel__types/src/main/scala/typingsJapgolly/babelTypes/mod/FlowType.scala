@@ -1,31 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.AnyTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.ArrayTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.BooleanLiteralTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.BooleanTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.EmptyTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.ExistsTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.FunctionTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.GenericTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.InterfaceTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.IntersectionTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.MixedTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.NullLiteralTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.NullableTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.NumberLiteralTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.NumberTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.ObjectTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.StringLiteralTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.StringTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.ThisTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.TupleTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.TypeofTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.UnionTypeAnnotation
-import typingsJapgolly.babelTypes.babelTypesStrings.VoidTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.AnyTypeAnnotation_
@@ -46,505 +23,181 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.ObjectTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.StringLiteralTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.StringTypeAnnotation_
+  - typingsJapgolly.babelTypes.mod.SymbolTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.ThisTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.TupleTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.TypeofTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.UnionTypeAnnotation_
   - typingsJapgolly.babelTypes.mod.VoidTypeAnnotation_
+  - typingsJapgolly.babelTypes.mod.IndexedAccessType_
+  - typingsJapgolly.babelTypes.mod.OptionalIndexedAccessType_
 */
-trait FlowType extends _Node
-
+trait FlowType
+  extends StObject
+     with _Node
 object FlowType {
-  @scala.inline
-  def AnyTypeAnnotation_(
-    `type`: AnyTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def AnyTypeAnnotation_(): typingsJapgolly.babelTypes.mod.AnyTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("AnyTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.AnyTypeAnnotation_]
   }
-  @scala.inline
-  def InterfaceTypeAnnotation_(
-    body: ObjectTypeAnnotation_,
-    `type`: InterfaceTypeAnnotation,
-    end: Int | Double = null,
-    `extends`: js.Array[InterfaceExtends_] = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def ArrayTypeAnnotation_(elementType: FlowType): typingsJapgolly.babelTypes.mod.ArrayTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ArrayTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ArrayTypeAnnotation_]
   }
-  @scala.inline
-  def IntersectionTypeAnnotation_(
-    `type`: IntersectionTypeAnnotation,
-    types: js.Array[FlowType],
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def BooleanLiteralTypeAnnotation_(value: Boolean): typingsJapgolly.babelTypes.mod.BooleanLiteralTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BooleanLiteralTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.BooleanLiteralTypeAnnotation_]
   }
-  @scala.inline
-  def EmptyTypeAnnotation_(
-    `type`: EmptyTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def BooleanTypeAnnotation_(): typingsJapgolly.babelTypes.mod.BooleanTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BooleanTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.BooleanTypeAnnotation_]
   }
-  @scala.inline
-  def BooleanTypeAnnotation_(
-    `type`: BooleanTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def EmptyTypeAnnotation_(): typingsJapgolly.babelTypes.mod.EmptyTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("EmptyTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.EmptyTypeAnnotation_]
   }
-  @scala.inline
-  def FunctionTypeAnnotation_(
-    params: js.Array[FunctionTypeParam_],
-    returnType: FlowType,
-    `type`: FunctionTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    rest: FunctionTypeParam_ = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterDeclaration_ = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (rest != null) __obj.updateDynamic("rest")(rest.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def ExistsTypeAnnotation_(): typingsJapgolly.babelTypes.mod.ExistsTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExistsTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ExistsTypeAnnotation_]
   }
-  @scala.inline
-  def ObjectTypeAnnotation_(
+  
+  inline def FunctionTypeAnnotation_(params: js.Array[FunctionTypeParam_], returnType: FlowType): typingsJapgolly.babelTypes.mod.FunctionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, rest = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("FunctionTypeAnnotation")
+    __obj.updateDynamic("this")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.FunctionTypeAnnotation_]
+  }
+  
+  inline def GenericTypeAnnotation_(id: Identifier_ | QualifiedTypeIdentifier_): typingsJapgolly.babelTypes.mod.GenericTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("GenericTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.GenericTypeAnnotation_]
+  }
+  
+  inline def IndexedAccessType_(indexType: FlowType, objectType: FlowType): typingsJapgolly.babelTypes.mod.IndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IndexedAccessType")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.IndexedAccessType_]
+  }
+  
+  inline def InterfaceTypeAnnotation_(body: ObjectTypeAnnotation_): typingsJapgolly.babelTypes.mod.InterfaceTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("InterfaceTypeAnnotation")
+    __obj.updateDynamic("extends")(null)
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.InterfaceTypeAnnotation_]
+  }
+  
+  inline def IntersectionTypeAnnotation_(types: js.Array[FlowType]): typingsJapgolly.babelTypes.mod.IntersectionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("IntersectionTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.IntersectionTypeAnnotation_]
+  }
+  
+  inline def MixedTypeAnnotation_(): typingsJapgolly.babelTypes.mod.MixedTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("MixedTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.MixedTypeAnnotation_]
+  }
+  
+  inline def NullLiteralTypeAnnotation_(): typingsJapgolly.babelTypes.mod.NullLiteralTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NullLiteralTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NullLiteralTypeAnnotation_]
+  }
+  
+  inline def NullableTypeAnnotation_(typeAnnotation: FlowType): typingsJapgolly.babelTypes.mod.NullableTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NullableTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NullableTypeAnnotation_]
+  }
+  
+  inline def NumberLiteralTypeAnnotation_(value: Double): typingsJapgolly.babelTypes.mod.NumberLiteralTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NumberLiteralTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NumberLiteralTypeAnnotation_]
+  }
+  
+  inline def NumberTypeAnnotation_(): typingsJapgolly.babelTypes.mod.NumberTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NumberTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NumberTypeAnnotation_]
+  }
+  
+  inline def ObjectTypeAnnotation_(
+    callProperties: js.Array[ObjectTypeCallProperty_],
     exact: Boolean,
-    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_],
-    `type`: ObjectTypeAnnotation,
-    callProperties: js.Array[ObjectTypeCallProperty_] = null,
-    end: Int | Double = null,
-    indexers: js.Array[ObjectTypeIndexer_] = null,
-    inexact: js.UndefOr[Boolean] = js.undefined,
-    innerComments: js.Array[Comment] = null,
-    internalSlots: js.Array[ObjectTypeInternalSlot_] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(exact = exact.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (callProperties != null) __obj.updateDynamic("callProperties")(callProperties.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (indexers != null) __obj.updateDynamic("indexers")(indexers.asInstanceOf[js.Any])
-    if (!js.isUndefined(inexact)) __obj.updateDynamic("inexact")(inexact.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (internalSlots != null) __obj.updateDynamic("internalSlots")(internalSlots.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+    indexers: js.Array[ObjectTypeIndexer_],
+    internalSlots: js.Array[ObjectTypeInternalSlot_],
+    properties: js.Array[ObjectTypeProperty_ | ObjectTypeSpreadProperty_]
+  ): typingsJapgolly.babelTypes.mod.ObjectTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], exact = exact.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], internalSlots = internalSlots.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], end = null, inexact = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ObjectTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ObjectTypeAnnotation_]
   }
-  @scala.inline
-  def NumberLiteralTypeAnnotation_(
-    `type`: NumberLiteralTypeAnnotation,
-    value: Double,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def OptionalIndexedAccessType_(indexType: FlowType, objectType: FlowType, optional: Boolean): typingsJapgolly.babelTypes.mod.OptionalIndexedAccessType_ = {
+    val __obj = js.Dynamic.literal(indexType = indexType.asInstanceOf[js.Any], objectType = objectType.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("OptionalIndexedAccessType")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.OptionalIndexedAccessType_]
   }
-  @scala.inline
-  def NullLiteralTypeAnnotation_(
-    `type`: NullLiteralTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def StringLiteralTypeAnnotation_(value: String): typingsJapgolly.babelTypes.mod.StringLiteralTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("StringLiteralTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.StringLiteralTypeAnnotation_]
   }
-  @scala.inline
-  def StringTypeAnnotation_(
-    `type`: StringTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def StringTypeAnnotation_(): typingsJapgolly.babelTypes.mod.StringTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("StringTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.StringTypeAnnotation_]
   }
-  @scala.inline
-  def ThisTypeAnnotation_(
-    `type`: ThisTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def SymbolTypeAnnotation_(): typingsJapgolly.babelTypes.mod.SymbolTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("SymbolTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.SymbolTypeAnnotation_]
   }
-  @scala.inline
-  def TupleTypeAnnotation_(
-    `type`: TupleTypeAnnotation,
-    types: js.Array[FlowType],
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def ThisTypeAnnotation_(): typingsJapgolly.babelTypes.mod.ThisTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ThisTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.ThisTypeAnnotation_]
   }
-  @scala.inline
-  def UnionTypeAnnotation_(
-    `type`: UnionTypeAnnotation,
-    types: js.Array[FlowType],
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def TupleTypeAnnotation_(types: js.Array[FlowType]): typingsJapgolly.babelTypes.mod.TupleTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TupleTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TupleTypeAnnotation_]
   }
-  @scala.inline
-  def VoidTypeAnnotation_(
-    `type`: VoidTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def TypeofTypeAnnotation_(argument: FlowType): typingsJapgolly.babelTypes.mod.TypeofTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TypeofTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TypeofTypeAnnotation_]
   }
-  @scala.inline
-  def ExistsTypeAnnotation_(
-    `type`: ExistsTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def UnionTypeAnnotation_(types: js.Array[FlowType]): typingsJapgolly.babelTypes.mod.UnionTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("UnionTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.UnionTypeAnnotation_]
   }
-  @scala.inline
-  def MixedTypeAnnotation_(
-    `type`: MixedTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def BooleanLiteralTypeAnnotation_(
-    `type`: BooleanLiteralTypeAnnotation,
-    value: Boolean,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def TypeofTypeAnnotation_(
-    argument: FlowType,
-    `type`: TypeofTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def NumberTypeAnnotation_(
-    `type`: NumberTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def NullableTypeAnnotation_(
-    `type`: NullableTypeAnnotation,
-    typeAnnotation: FlowType,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def GenericTypeAnnotation_(
-    id: Identifier_ | QualifiedTypeIdentifier_,
-    `type`: GenericTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    typeParameters: TypeParameterInstantiation_ = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def ArrayTypeAnnotation_(
-    elementType: FlowType,
-    `type`: ArrayTypeAnnotation,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(elementType = elementType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
-  }
-  @scala.inline
-  def StringLiteralTypeAnnotation_(
-    `type`: StringLiteralTypeAnnotation,
-    value: String,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): FlowType = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[FlowType]
+  
+  inline def VoidTypeAnnotation_(): typingsJapgolly.babelTypes.mod.VoidTypeAnnotation_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("VoidTypeAnnotation")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.VoidTypeAnnotation_]
   }
 }
-

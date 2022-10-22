@@ -1,17 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.BooleanLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.JSXAttribute
-import typingsJapgolly.babelTypes.babelTypesStrings.JSXClosingElement
-import typingsJapgolly.babelTypes.babelTypesStrings.JSXElement
-import typingsJapgolly.babelTypes.babelTypesStrings.JSXExpressionContainer
-import typingsJapgolly.babelTypes.babelTypesStrings.JSXOpeningElement
-import typingsJapgolly.babelTypes.babelTypesStrings.NullLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.NumericLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.StringLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.StringLiteral_
@@ -24,177 +15,74 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.JSXExpressionContainer_
   - typingsJapgolly.babelTypes.mod.JSXOpeningElement_
 */
-trait Immutable extends js.Object
-
+trait Immutable extends StObject
 object Immutable {
-  @scala.inline
-  def NumericLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NumericLiteral,
-    value: Double,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
+  
+  inline def BooleanLiteral_(end: Double, loc: SourceLocation, start: Double, value: Boolean): typingsJapgolly.babelTypes.mod.BooleanLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
+    __obj.updateDynamic("type")("BooleanLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.BooleanLiteral_]
   }
-  @scala.inline
-  def JSXOpeningElement_(
-    attributes: js.Array[JSXAttribute_],
-    end: Double,
-    loc: SourceLocation,
-    name: JSXIdentifier_ | JSXMemberExpression_,
-    selfClosing: Boolean,
-    start: Double,
-    `type`: JSXOpeningElement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
+  
+  inline def JSXAttribute_(end: Double, loc: SourceLocation, name: JSXIdentifier_ | JSXNamespacedName_, start: Double): typingsJapgolly.babelTypes.mod.JSXAttribute_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = null)
+    __obj.updateDynamic("type")("JSXAttribute")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.JSXAttribute_]
   }
-  @scala.inline
-  def JSXElement_(
+  
+  inline def JSXClosingElement_(end: Double, loc: SourceLocation, name: JSXIdentifier_ | JSXMemberExpression_, start: Double): typingsJapgolly.babelTypes.mod.JSXClosingElement_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXClosingElement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.JSXClosingElement_]
+  }
+  
+  inline def JSXElement_(
     children: js.Array[typingsJapgolly.babelTypes.mod.JSXElement_ | JSXExpressionContainer_ | JSXText_],
     closingElement: JSXClosingElement_,
     end: Double,
     loc: SourceLocation,
     openingElement: JSXOpeningElement_,
-    start: Double,
-    `type`: JSXElement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    selfClosing: js.UndefOr[Boolean] = js.undefined,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
+    start: Double
+  ): typingsJapgolly.babelTypes.mod.JSXElement_ = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], closingElement = closingElement.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], openingElement = openingElement.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (!js.isUndefined(selfClosing)) __obj.updateDynamic("selfClosing")(selfClosing.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
+    __obj.updateDynamic("type")("JSXElement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.JSXElement_]
   }
-  @scala.inline
-  def NullLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NullLiteral,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
-  }
-  @scala.inline
-  def JSXAttribute_(
-    end: Double,
-    loc: SourceLocation,
-    name: JSXIdentifier_ | JSXNamespacedName_,
-    start: Double,
-    `type`: JSXAttribute,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null,
-    value: JSXElement_ | StringLiteral_ | JSXExpressionContainer_ = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
-  }
-  @scala.inline
-  def StringLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: StringLiteral,
-    value: String,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
-  }
-  @scala.inline
-  def JSXExpressionContainer_(
-    end: Double,
-    expression: Expression,
-    loc: SourceLocation,
-    start: Double,
-    `type`: JSXExpressionContainer,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
+  
+  inline def JSXExpressionContainer_(end: Double, expression: Expression, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.JSXExpressionContainer_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
+    __obj.updateDynamic("type")("JSXExpressionContainer")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.JSXExpressionContainer_]
   }
-  @scala.inline
-  def BooleanLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: BooleanLiteral,
-    value: Boolean,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
-  }
-  @scala.inline
-  def JSXClosingElement_(
+  
+  inline def JSXOpeningElement_(
+    attributes: js.Array[JSXAttribute_],
     end: Double,
     loc: SourceLocation,
     name: JSXIdentifier_ | JSXMemberExpression_,
-    start: Double,
-    `type`: JSXClosingElement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Immutable = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Immutable]
+    selfClosing: Boolean,
+    start: Double
+  ): typingsJapgolly.babelTypes.mod.JSXOpeningElement_ = {
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selfClosing = selfClosing.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXOpeningElement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.JSXOpeningElement_]
+  }
+  
+  inline def NullLiteral_(end: Double, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.NullLiteral_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NullLiteral_]
+  }
+  
+  inline def NumericLiteral_(end: Double, loc: SourceLocation, start: Double, value: Double): typingsJapgolly.babelTypes.mod.NumericLiteral_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NumericLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NumericLiteral_]
+  }
+  
+  inline def StringLiteral_(end: Double, loc: SourceLocation, start: Double, value: String): typingsJapgolly.babelTypes.mod.StringLiteral_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.StringLiteral_]
   }
 }
-

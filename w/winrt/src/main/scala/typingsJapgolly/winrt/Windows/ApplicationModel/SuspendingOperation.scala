@@ -1,15 +1,17 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.SuspendingOperation")
-@js.native
-class SuspendingOperation () extends ISuspendingOperation {
-  /* CompleteClass */
-  override var deadline: js.Date = js.native
-  /* CompleteClass */
-  override def getDeferral(): SuspendingDeferral = js.native
+trait SuspendingOperation
+  extends StObject
+     with ISuspendingOperation
+object SuspendingOperation {
+  
+  inline def apply(deadline: js.Date, getDeferral: CallbackTo[SuspendingDeferral]): SuspendingOperation = {
+    val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = getDeferral.toJsFn)
+    __obj.asInstanceOf[SuspendingOperation]
+  }
 }
-

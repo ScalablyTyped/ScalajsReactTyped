@@ -1,35 +1,31 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
+import typingsJapgolly.activexOffice.activexOfficeInts.`0`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2`
+import typingsJapgolly.activexOffice.activexOfficeInts.`3`
+import typingsJapgolly.activexOffice.activexOfficeInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`4`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`0`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`3`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`4`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`0`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`3`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2`
 */
-trait MsoAlertDefaultType extends js.Object
-
+trait MsoAlertDefaultType extends StObject
 object MsoAlertDefaultType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def msoAlertDefaultFifth: `4` = this.cast(4)
-  @scala.inline
-  def msoAlertDefaultFirst: `0` = this.cast(0)
-  @scala.inline
-  def msoAlertDefaultFourth: `3` = this.cast(3)
-  @scala.inline
-  def msoAlertDefaultSecond: `1` = this.cast(1)
-  @scala.inline
-  def msoAlertDefaultThird: `2` = this.cast(2)
+  
+  inline def msoAlertDefaultFifth: `4` = 4.asInstanceOf[`4`]
+  
+  inline def msoAlertDefaultFirst: `0` = 0.asInstanceOf[`0`]
+  
+  inline def msoAlertDefaultFourth: `3` = 3.asInstanceOf[`3`]
+  
+  inline def msoAlertDefaultSecond: `1` = 1.asInstanceOf[`1`]
+  
+  inline def msoAlertDefaultThird: `2` = 2.asInstanceOf[`2`]
 }
-

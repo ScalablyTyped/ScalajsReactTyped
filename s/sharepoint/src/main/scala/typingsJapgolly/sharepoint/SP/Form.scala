@@ -1,14 +1,17 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Form")
 @js.native
-class Form () extends ClientObject {
+trait Form
+  extends StObject
+     with ClientObject {
+  
   def get_formType(): PageType = js.native
+  
   def get_id(): Guid = js.native
+  
   def get_serverRelativeUrl(): String = js.native
 }
-

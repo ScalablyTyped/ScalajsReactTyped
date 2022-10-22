@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
 */
-trait WdCharacterWidth extends js.Object
-
+trait WdCharacterWidth extends StObject
 object WdCharacterWidth {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdWidthFullWidth: `7` = this.cast(7)
-  @scala.inline
-  def wdWidthHalfWidth: `6` = this.cast(6)
+  
+  inline def wdWidthFullWidth: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdWidthHalfWidth: `6` = 6.asInstanceOf[`6`]
 }
-

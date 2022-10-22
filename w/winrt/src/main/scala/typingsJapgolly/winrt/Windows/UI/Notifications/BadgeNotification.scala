@@ -1,17 +1,17 @@
 package typingsJapgolly.winrt.Windows.UI.Notifications
 
 import typingsJapgolly.winrt.Windows.Data.Xml.Dom.XmlDocument
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Notifications.BadgeNotification")
-@js.native
-class BadgeNotification protected () extends IBadgeNotification {
-  def this(content: XmlDocument) = this()
-  /* CompleteClass */
-  override var content: XmlDocument = js.native
-  /* CompleteClass */
-  override var expirationTime: js.Date = js.native
+trait BadgeNotification
+  extends StObject
+     with IBadgeNotification
+object BadgeNotification {
+  
+  inline def apply(content: XmlDocument, expirationTime: js.Date): BadgeNotification = {
+    val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BadgeNotification]
+  }
 }
-

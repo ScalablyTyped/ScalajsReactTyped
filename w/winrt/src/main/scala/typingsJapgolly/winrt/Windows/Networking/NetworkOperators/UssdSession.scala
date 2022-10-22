@@ -1,24 +1,18 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
-@js.native
-class UssdSession () extends IUssdSession {
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def sendMessageAndGetReplyAsync(message: UssdMessage): IAsyncOperation[UssdReply] = js.native
+trait UssdSession
+  extends StObject
+     with IUssdSession
+object UssdSession {
+  
+  inline def apply(close: Callback, sendMessageAndGetReplyAsync: UssdMessage => IAsyncOperation[UssdReply]): UssdSession = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, sendMessageAndGetReplyAsync = js.Any.fromFunction1(sendMessageAndGetReplyAsync))
+    __obj.asInstanceOf[UssdSession]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
-@js.native
-object UssdSession extends js.Object {
-  def createFromNetworkAccountId(networkAccountId: String): UssdSession = js.native
-  def createFromNetworkInterfaceId(networkInterfaceId: String): UssdSession = js.native
-}
-

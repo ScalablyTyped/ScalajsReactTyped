@@ -1,22 +1,24 @@
 package typingsJapgolly.lodashDecorators
 
-import typingsJapgolly.lodashDecorators.commonMod.LodashMethodDecorator
-import typingsJapgolly.lodashDecorators.commonMod.ResolvableFunction
+import typingsJapgolly.lodashDecorators.factoryCommonMod.LodashMethodDecorator
+import typingsJapgolly.lodashDecorators.factoryCommonMod.ResolvableFunction
 import typingsJapgolly.std.MethodDecorator
 import typingsJapgolly.std.PropertyDecorator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("lodash-decorators/wrap", JSImport.Namespace)
-@js.native
-object wrapMod extends js.Object {
-  @JSName("Wrap")
-  def Wrap_(): LodashMethodDecorator = js.native
-  @JSName("Wrap")
-  def Wrap_(fnToWrap: ResolvableFunction): LodashMethodDecorator = js.native
-  def default(args: js.Any*): MethodDecorator with PropertyDecorator = js.native
-  def wrap(): LodashMethodDecorator = js.native
-  def wrap(fnToWrap: ResolvableFunction): LodashMethodDecorator = js.native
+object wrapMod {
+  
+  @JSImport("lodash-decorators/wrap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(args: Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[MethodDecorator & PropertyDecorator]
+  
+  inline def Wrap_(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")().asInstanceOf[LodashMethodDecorator]
+  inline def Wrap_(fnToWrap: ResolvableFunction): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(fnToWrap.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  
+  inline def wrap(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")().asInstanceOf[LodashMethodDecorator]
+  inline def wrap(fnToWrap: ResolvableFunction): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fnToWrap.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
 }
-

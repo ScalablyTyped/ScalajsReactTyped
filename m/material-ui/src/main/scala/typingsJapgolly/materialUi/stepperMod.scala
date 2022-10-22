@@ -6,32 +6,34 @@ import typingsJapgolly.materialUi.MaterialUI.Stepper.StepLabelProps
 import typingsJapgolly.materialUi.MaterialUI.Stepper.StepProps
 import typingsJapgolly.materialUi.MaterialUI.Stepper.StepperProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Stepper", JSImport.Namespace)
-@js.native
-object stepperMod extends js.Object {
-  @js.native
-  class Step ()
-    extends Component[StepProps, js.Object, js.Any]
+object stepperMod {
   
+  @JSImport("material-ui/Stepper", "Step")
   @js.native
-  class StepButton ()
-    extends Component[StepButtonProps, js.Object, js.Any]
+  open class Step ()
+    extends Component[StepProps, js.Object, Any]
   
+  @JSImport("material-ui/Stepper", "StepButton")
   @js.native
-  class StepContent ()
-    extends Component[StepContentProps, js.Object, js.Any]
+  open class StepButton ()
+    extends Component[StepButtonProps, js.Object, Any]
   
+  @JSImport("material-ui/Stepper", "StepContent")
   @js.native
-  class StepLabel ()
-    extends Component[StepLabelProps, js.Object, js.Any]
+  open class StepContent ()
+    extends Component[StepContentProps, js.Object, Any]
   
+  @JSImport("material-ui/Stepper", "StepLabel")
   @js.native
-  class Stepper ()
-    extends Component[StepperProps, js.Object, js.Any]
+  open class StepLabel ()
+    extends Component[StepLabelProps, js.Object, Any]
   
+  @JSImport("material-ui/Stepper", "Stepper")
+  @js.native
+  open class Stepper ()
+    extends Component[StepperProps, js.Object, Any]
 }
-

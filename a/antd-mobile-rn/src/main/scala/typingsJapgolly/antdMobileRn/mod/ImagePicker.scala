@@ -1,22 +1,26 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonFiles
-import typingsJapgolly.antdMobileRn.imagePickerIndexNativeMod.ImagePickerNativeProps
-import typingsJapgolly.antdMobileRn.imagePickerIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.Files
+import typingsJapgolly.antdMobileRn.libImagePickerIndexDotnativeMod.ImagePickerNativeProps
+import typingsJapgolly.antdMobileRn.libImagePickerIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "ImagePicker")
 @js.native
-class ImagePicker protected () extends default {
+open class ImagePicker protected () extends default {
   def this(props: ImagePickerNativeProps) = this()
 }
-
 /* static members */
-@JSImport("antd-mobile-rn", "ImagePicker")
-@js.native
-object ImagePicker extends js.Object {
-  var defaultProps: AnonFiles = js.native
+object ImagePicker {
+  
+  @JSImport("antd-mobile-rn", "ImagePicker")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "ImagePicker.defaultProps")
+  @js.native
+  def defaultProps: Files = js.native
+  inline def defaultProps_=(x: Files): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

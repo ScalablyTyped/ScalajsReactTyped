@@ -1,0 +1,42 @@
+package typingsJapgolly.wixUiIconsCommon
+
+import org.scalablytyped.runtime.Shortcut
+import org.scalajs.dom.SVGElement
+import typingsJapgolly.react.mod.FC
+import typingsJapgolly.react.mod.SVGAttributes
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distEsSrcGeneralDistComponentsTaxSmallMod extends Shortcut {
+  
+  @JSImport("wix-ui-icons-common/dist/es/src/general/dist/components/TaxSmall", JSImport.Default)
+  @js.native
+  val default: FC[TaxSmallProps] = js.native
+  
+  trait TaxSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
+    
+    var size: js.UndefOr[String | Double] = js.undefined
+  }
+  object TaxSmallProps {
+    
+    inline def apply(): TaxSmallProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[TaxSmallProps]
+    }
+    
+    extension [Self <: TaxSmallProps](x: Self) {
+      
+      inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    }
+  }
+  
+  type _To = FC[TaxSmallProps]
+  
+  /* This means you don't have to write `default`, but can instead just say `distEsSrcGeneralDistComponentsTaxSmallMod.foo` */
+  override def _to: FC[TaxSmallProps] = default
+}

@@ -10,14 +10,15 @@ The lodash method `_.uniq` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.uniq |
 | Keywords           | lodash-modularized, uniq |
-| # releases         | 0 |
-| # dependents       | 552 |
-| # downloads        | 226081991 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5.6935400333333336E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.uniq)
     
 

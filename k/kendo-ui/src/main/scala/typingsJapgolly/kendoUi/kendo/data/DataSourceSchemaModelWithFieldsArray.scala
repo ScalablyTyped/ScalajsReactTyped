@@ -1,21 +1,29 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceSchemaModelWithFieldsArray extends DataSourceSchemaModel {
+trait DataSourceSchemaModelWithFieldsArray
+  extends StObject
+     with DataSourceSchemaModel {
+  
   @JSName("fields")
   var fields_DataSourceSchemaModelWithFieldsArray: js.UndefOr[js.Array[DataSourceSchemaModelField]] = js.undefined
 }
-
 object DataSourceSchemaModelWithFieldsArray {
-  @scala.inline
-  def apply(fields: js.Array[DataSourceSchemaModelField] = null, id: String = null): DataSourceSchemaModelWithFieldsArray = {
+  
+  inline def apply(): DataSourceSchemaModelWithFieldsArray = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaModelWithFieldsArray]
   }
+  
+  extension [Self <: DataSourceSchemaModelWithFieldsArray](x: Self) {
+    
+    inline def setFields(value: js.Array[DataSourceSchemaModelField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: DataSourceSchemaModelField*): Self = StObject.set(x, "fields", js.Array(value*))
+  }
 }
-

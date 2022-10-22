@@ -1,32 +1,27 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.NullLiteralTypeAnnotation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NullLiteralTypeAnnotation_ extends Node {
+trait NullLiteralTypeAnnotation_
+  extends StObject
+     with Node {
+  
   @JSName("type")
   var type_NullLiteralTypeAnnotation_ : NullLiteralTypeAnnotation
 }
-
 object NullLiteralTypeAnnotation_ {
-  @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NullLiteralTypeAnnotation,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): NullLiteralTypeAnnotation_ = {
+  
+  inline def apply(end: Double, loc: SourceLocation, start: Double): NullLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullLiteralTypeAnnotation")
     __obj.asInstanceOf[NullLiteralTypeAnnotation_]
   }
+  
+  extension [Self <: NullLiteralTypeAnnotation_](x: Self) {
+    
+    inline def setType(value: NullLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

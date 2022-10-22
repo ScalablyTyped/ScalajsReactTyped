@@ -11,14 +11,12 @@ file downloading using client-side javascript
 | Full name          | downloadjs |
 | Keywords           | files, dataURL, blob, download |
 | # releases         | 1 |
-| # dependents       | 107 |
-| # downloads        | 2956662 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 852587.6666666666 |
+| # stars            | 1981.0 |
 
 ## Links
 - [Homepage](http://danml.com/download.html)
-- [Bugs](https://github.com/rndme/download/issues)
-- [Repository](https://github.com/rndme/download)
 - [Npm](https://www.npmjs.com/package/downloadjs)
     
 

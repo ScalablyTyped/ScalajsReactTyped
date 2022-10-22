@@ -1,13 +1,13 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.HemisphereLightHelper")
 @js.native
-class HemisphereLightHelper protected ()
+open class HemisphereLightHelper protected ()
   extends typingsJapgolly.three.mod.HemisphereLightHelper {
-  def this(light: typingsJapgolly.three.hemisphereLightMod.HemisphereLight, size: Double) = this()
+  def this(light: typingsJapgolly.three.srcLightsHemisphereLightMod.HemisphereLight, size: Double) = this()
 }
-

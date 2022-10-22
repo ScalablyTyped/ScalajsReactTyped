@@ -1,66 +1,114 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBodyOptions extends js.Object {
+trait IBodyOptions extends StObject {
+  
   var allowSleep: js.UndefOr[Boolean] = js.undefined
+  
   var angularDamping: js.UndefOr[Double] = js.undefined
+  
   var angularVelocity: js.UndefOr[Vec3] = js.undefined
+  
   var collisionFilterGroup: js.UndefOr[Double] = js.undefined
+  
   var collisionFilterMask: js.UndefOr[Double] = js.undefined
+  
   var fixedRotation: js.UndefOr[Boolean] = js.undefined
+  
   var linearDamping: js.UndefOr[Double] = js.undefined
+  
   var mass: js.UndefOr[Double] = js.undefined
+  
   var material: js.UndefOr[Material] = js.undefined
+  
   var position: js.UndefOr[Vec3] = js.undefined
+  
   var quaternion: js.UndefOr[Quaternion] = js.undefined
+  
   var shape: js.UndefOr[Shape] = js.undefined
+  
   var sleepSpeedLimit: js.UndefOr[Double] = js.undefined
+  
   var sleepTimeLimit: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[Double] = js.undefined
+  
   var velocity: js.UndefOr[Vec3] = js.undefined
 }
-
 object IBodyOptions {
-  @scala.inline
-  def apply(
-    allowSleep: js.UndefOr[Boolean] = js.undefined,
-    angularDamping: Int | Double = null,
-    angularVelocity: Vec3 = null,
-    collisionFilterGroup: Int | Double = null,
-    collisionFilterMask: Int | Double = null,
-    fixedRotation: js.UndefOr[Boolean] = js.undefined,
-    linearDamping: Int | Double = null,
-    mass: Int | Double = null,
-    material: Material = null,
-    position: Vec3 = null,
-    quaternion: Quaternion = null,
-    shape: Shape = null,
-    sleepSpeedLimit: Int | Double = null,
-    sleepTimeLimit: Int | Double = null,
-    `type`: Int | Double = null,
-    velocity: Vec3 = null
-  ): IBodyOptions = {
+  
+  inline def apply(): IBodyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowSleep)) __obj.updateDynamic("allowSleep")(allowSleep.asInstanceOf[js.Any])
-    if (angularDamping != null) __obj.updateDynamic("angularDamping")(angularDamping.asInstanceOf[js.Any])
-    if (angularVelocity != null) __obj.updateDynamic("angularVelocity")(angularVelocity.asInstanceOf[js.Any])
-    if (collisionFilterGroup != null) __obj.updateDynamic("collisionFilterGroup")(collisionFilterGroup.asInstanceOf[js.Any])
-    if (collisionFilterMask != null) __obj.updateDynamic("collisionFilterMask")(collisionFilterMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(fixedRotation)) __obj.updateDynamic("fixedRotation")(fixedRotation.asInstanceOf[js.Any])
-    if (linearDamping != null) __obj.updateDynamic("linearDamping")(linearDamping.asInstanceOf[js.Any])
-    if (mass != null) __obj.updateDynamic("mass")(mass.asInstanceOf[js.Any])
-    if (material != null) __obj.updateDynamic("material")(material.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (quaternion != null) __obj.updateDynamic("quaternion")(quaternion.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (sleepSpeedLimit != null) __obj.updateDynamic("sleepSpeedLimit")(sleepSpeedLimit.asInstanceOf[js.Any])
-    if (sleepTimeLimit != null) __obj.updateDynamic("sleepTimeLimit")(sleepTimeLimit.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (velocity != null) __obj.updateDynamic("velocity")(velocity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyOptions]
   }
+  
+  extension [Self <: IBodyOptions](x: Self) {
+    
+    inline def setAllowSleep(value: Boolean): Self = StObject.set(x, "allowSleep", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSleepUndefined: Self = StObject.set(x, "allowSleep", js.undefined)
+    
+    inline def setAngularDamping(value: Double): Self = StObject.set(x, "angularDamping", value.asInstanceOf[js.Any])
+    
+    inline def setAngularDampingUndefined: Self = StObject.set(x, "angularDamping", js.undefined)
+    
+    inline def setAngularVelocity(value: Vec3): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setAngularVelocityUndefined: Self = StObject.set(x, "angularVelocity", js.undefined)
+    
+    inline def setCollisionFilterGroup(value: Double): Self = StObject.set(x, "collisionFilterGroup", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionFilterGroupUndefined: Self = StObject.set(x, "collisionFilterGroup", js.undefined)
+    
+    inline def setCollisionFilterMask(value: Double): Self = StObject.set(x, "collisionFilterMask", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionFilterMaskUndefined: Self = StObject.set(x, "collisionFilterMask", js.undefined)
+    
+    inline def setFixedRotation(value: Boolean): Self = StObject.set(x, "fixedRotation", value.asInstanceOf[js.Any])
+    
+    inline def setFixedRotationUndefined: Self = StObject.set(x, "fixedRotation", js.undefined)
+    
+    inline def setLinearDamping(value: Double): Self = StObject.set(x, "linearDamping", value.asInstanceOf[js.Any])
+    
+    inline def setLinearDampingUndefined: Self = StObject.set(x, "linearDamping", js.undefined)
+    
+    inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    
+    inline def setMassUndefined: Self = StObject.set(x, "mass", js.undefined)
+    
+    inline def setMaterial(value: Material): Self = StObject.set(x, "material", value.asInstanceOf[js.Any])
+    
+    inline def setMaterialUndefined: Self = StObject.set(x, "material", js.undefined)
+    
+    inline def setPosition(value: Vec3): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setQuaternion(value: Quaternion): Self = StObject.set(x, "quaternion", value.asInstanceOf[js.Any])
+    
+    inline def setQuaternionUndefined: Self = StObject.set(x, "quaternion", js.undefined)
+    
+    inline def setShape(value: Shape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setSleepSpeedLimit(value: Double): Self = StObject.set(x, "sleepSpeedLimit", value.asInstanceOf[js.Any])
+    
+    inline def setSleepSpeedLimitUndefined: Self = StObject.set(x, "sleepSpeedLimit", js.undefined)
+    
+    inline def setSleepTimeLimit(value: Double): Self = StObject.set(x, "sleepTimeLimit", value.asInstanceOf[js.Any])
+    
+    inline def setSleepTimeLimitUndefined: Self = StObject.set(x, "sleepTimeLimit", js.undefined)
+    
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVelocity(value: Vec3): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    
+    inline def setVelocityUndefined: Self = StObject.set(x, "velocity", js.undefined)
+  }
 }
-

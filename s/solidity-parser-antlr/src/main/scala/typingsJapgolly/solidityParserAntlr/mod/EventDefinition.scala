@@ -1,32 +1,37 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait EventDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
+  
   var name: String
+  
   var parameters: js.Array[VariableDeclaration]
+  
   @JSName("type")
   var type_EventDefinition: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition
 }
-
 object EventDefinition {
-  @scala.inline
-  def apply(
-    name: String,
-    parameters: js.Array[VariableDeclaration],
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): EventDefinition = {
+  
+  inline def apply(name: String, parameters: js.Array[VariableDeclaration]): EventDefinition = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EventDefinition")
     __obj.asInstanceOf[EventDefinition]
   }
+  
+  extension [Self <: EventDefinition](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setParameters(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    
+    inline def setParametersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "parameters", js.Array(value*))
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.EventDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

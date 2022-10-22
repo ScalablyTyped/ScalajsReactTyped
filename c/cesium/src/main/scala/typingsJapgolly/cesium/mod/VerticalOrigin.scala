@@ -1,35 +1,51 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalOrigin extends js.Object
-
+sealed trait VerticalOrigin extends StObject
 @JSImport("cesium", "VerticalOrigin")
 @js.native
-object VerticalOrigin extends js.Object {
-  @js.native
-  sealed trait BOTTOM extends VerticalOrigin
-  
-  @js.native
-  sealed trait CENTER extends VerticalOrigin
-  
-  @js.native
-  sealed trait TOP extends VerticalOrigin
+object VerticalOrigin extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VerticalOrigin with Double] = js.native
-  /* 1 */ @js.native
-  object BOTTOM extends TopLevel[BOTTOM with Double]
+  def apply(value: Double): js.UndefOr[VerticalOrigin & Double] = js.native
   
-  /* 0 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
+  /**
+    * If the object contains text, the origin is at the baseline of the text, else the origin is at the bottom of the object.
+    */
+  @js.native
+  sealed trait BASELINE
+    extends StObject
+       with VerticalOrigin
+  /* 2 */ val BASELINE: typingsJapgolly.cesium.mod.VerticalOrigin.BASELINE & Double = js.native
   
-  /* 2 */ @js.native
-  object TOP extends TopLevel[TOP with Double]
+  /**
+    * The origin is at the bottom of the object.
+    */
+  @js.native
+  sealed trait BOTTOM
+    extends StObject
+       with VerticalOrigin
+  /* 1 */ val BOTTOM: typingsJapgolly.cesium.mod.VerticalOrigin.BOTTOM & Double = js.native
   
+  /**
+    * The origin is at the vertical center between <code>BASELINE</code> and <code>TOP</code>.
+    */
+  @js.native
+  sealed trait CENTER
+    extends StObject
+       with VerticalOrigin
+  /* 0 */ val CENTER: typingsJapgolly.cesium.mod.VerticalOrigin.CENTER & Double = js.native
+  
+  /**
+    * The origin is at the top of the object.
+    */
+  @js.native
+  sealed trait TOP
+    extends StObject
+       with VerticalOrigin
+  /* -1 */ val TOP: typingsJapgolly.cesium.mod.VerticalOrigin.TOP & Double = js.native
 }
-

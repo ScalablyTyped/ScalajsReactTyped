@@ -1,69 +1,102 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.button
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.empty
-import typingsJapgolly.devextreme.devextremeStrings.group
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.simple
-import typingsJapgolly.devextreme.devextremeStrings.tabbed
-import typingsJapgolly.devextreme.devextremeStrings.top
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.common.VerticalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxForm.FormItemType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxFormButtonItem extends js.Object {
-  /** @deprecated Use horizontalAlignment instead. */
-  /** Specifies the button's horizontal alignment. */
-  var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Configures the button. */
+trait dxFormButtonItem extends StObject {
+  
+  /**
+    * Configures the button.
+    */
   var buttonOptions: js.UndefOr[dxButtonOptions] = js.undefined
-  /** Specifies how many columns the item spans. */
+  
+  /**
+    * Specifies how many columns the item spans.
+    */
   var colSpan: js.UndefOr[Double] = js.undefined
-  /** Specifies a CSS class to be applied to the item. */
+  
+  /**
+    * Specifies a CSS class to be applied to the item.
+    */
   var cssClass: js.UndefOr[String] = js.undefined
-  /** Specifies the button's horizontal alignment. */
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies the item's type. Set it to "button" to create a button item. */
-  var itemType: js.UndefOr[empty | group | simple | tabbed | button] = js.undefined
-  /** Specifies the item's identifier. */
+  
+  /**
+    * Specifies the button&apos;s horizontal alignment.
+    */
+  var horizontalAlignment: js.UndefOr[HorizontalAlignment] = js.undefined
+  
+  /**
+    * Specifies the item&apos;s type. Set it to &apos;button&apos; to create a button item.
+    */
+  var itemType: js.UndefOr[FormItemType] = js.undefined
+  
+  /**
+    * Specifies the item&apos;s identifier.
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** Specifies the button's vertical alignment. */
-  var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
-  /** Specifies whether the item is visible. */
+  
+  /**
+    * Specifies the button&apos;s vertical alignment.
+    */
+  var verticalAlignment: js.UndefOr[VerticalAlignment] = js.undefined
+  
+  /**
+    * Specifies whether the item is visible.
+    */
   var visible: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the item's position regarding other items in a group, tab, or the whole widget. */
+  
+  /**
+    * Specifies the item&apos;s position regarding other items in a group, tab, or the whole UI component.
+    */
   var visibleIndex: js.UndefOr[Double] = js.undefined
 }
-
 object dxFormButtonItem {
-  @scala.inline
-  def apply(
-    alignment: center | left | right = null,
-    buttonOptions: dxButtonOptions = null,
-    colSpan: Int | Double = null,
-    cssClass: String = null,
-    horizontalAlignment: center | left | right = null,
-    itemType: empty | group | simple | tabbed | button = null,
-    name: String = null,
-    verticalAlignment: bottom | center | top = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visibleIndex: Int | Double = null
-  ): dxFormButtonItem = {
+  
+  inline def apply(): dxFormButtonItem = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (buttonOptions != null) __obj.updateDynamic("buttonOptions")(buttonOptions.asInstanceOf[js.Any])
-    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (itemType != null) __obj.updateDynamic("itemType")(itemType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visibleIndex != null) __obj.updateDynamic("visibleIndex")(visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxFormButtonItem]
   }
+  
+  extension [Self <: dxFormButtonItem](x: Self) {
+    
+    inline def setButtonOptions(value: dxButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
+    
+    inline def setButtonOptionsUndefined: Self = StObject.set(x, "buttonOptions", js.undefined)
+    
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    
+    inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    
+    inline def setHorizontalAlignment(value: HorizontalAlignment): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setItemType(value: FormItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+    
+    inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setVerticalAlignment(value: VerticalAlignment): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndexUndefined: Self = StObject.set(x, "visibleIndex", js.undefined)
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

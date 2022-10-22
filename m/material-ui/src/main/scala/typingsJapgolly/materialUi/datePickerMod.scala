@@ -1,19 +1,17 @@
 package typingsJapgolly.materialUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/DatePicker", JSImport.Namespace)
-@js.native
-object datePickerMod extends js.Object {
-  @js.native
-  class DatePicker ()
-    extends typingsJapgolly.materialUi.MaterialUI.DatePicker.DatePicker
+object datePickerMod {
   
+  @JSImport("material-ui/DatePicker", JSImport.Default)
   @js.native
-  class default ()
-    extends typingsJapgolly.materialUi.MaterialUI.DatePicker.DatePicker
+  open class default () extends DatePicker
   
+  @JSImport("material-ui/DatePicker", "DatePicker")
+  @js.native
+  open class DatePicker ()
+    extends typingsJapgolly.materialUi.MaterialUI.DatePicker.DatePicker
 }
-

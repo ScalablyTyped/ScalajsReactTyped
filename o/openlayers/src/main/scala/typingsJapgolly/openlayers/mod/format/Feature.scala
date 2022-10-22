@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -29,5 +29,4 @@ import scala.scalajs.js.annotation._
   *
   * @api stable
   */
-class Feature () extends js.Object
-
+open class Feature () extends StObject

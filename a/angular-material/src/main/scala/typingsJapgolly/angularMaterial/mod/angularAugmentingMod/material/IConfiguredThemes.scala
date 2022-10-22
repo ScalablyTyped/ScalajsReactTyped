@@ -1,20 +1,18 @@
 package typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IConfiguredThemes
-  extends IThemes
+  extends StObject
+     with IThemes
      with /* name */ StringDictionary[ITheme]
-
 object IConfiguredThemes {
-  @scala.inline
-  def apply(default: ITheme, StringDictionary: /* name */ StringDictionary[ITheme] = null): IConfiguredThemes = {
+  
+  inline def apply(default: ITheme): IConfiguredThemes = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[IConfiguredThemes]
   }
 }
-

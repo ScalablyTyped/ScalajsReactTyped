@@ -9,10 +9,10 @@ Lightweight URL manipulation with JavaScript.
 | ------------------ | :-------------: |
 | Full name          | domurl |
 | Keywords           | url, querystring |
-| # releases         | 6 |
-| # dependents       | 4 |
-| # downloads        | 626959 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 95715.66666666667 |
+| # stars            | 502.0 |
 
 ## Links
 - [Homepage](https://github.com/Mikhus/jsurl)

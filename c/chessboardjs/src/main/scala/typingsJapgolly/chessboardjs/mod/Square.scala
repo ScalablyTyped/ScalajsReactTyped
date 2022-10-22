@@ -1,401 +1,399 @@
 package typingsJapgolly.chessboardjs.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Square extends js.Object
-
+sealed trait Square extends StObject
 @JSImport("chessboardjs", "Square")
 @js.native
-object Square extends js.Object {
-  @js.native
-  sealed trait a1 extends Square
-  
-  @js.native
-  sealed trait a2 extends Square
-  
-  @js.native
-  sealed trait a3 extends Square
-  
-  @js.native
-  sealed trait a4 extends Square
-  
-  @js.native
-  sealed trait a5 extends Square
-  
-  @js.native
-  sealed trait a6 extends Square
-  
-  @js.native
-  sealed trait a7 extends Square
-  
-  @js.native
-  sealed trait a8 extends Square
-  
-  @js.native
-  sealed trait b1 extends Square
-  
-  @js.native
-  sealed trait b2 extends Square
-  
-  @js.native
-  sealed trait b3 extends Square
-  
-  @js.native
-  sealed trait b4 extends Square
-  
-  @js.native
-  sealed trait b5 extends Square
-  
-  @js.native
-  sealed trait b6 extends Square
-  
-  @js.native
-  sealed trait b7 extends Square
-  
-  @js.native
-  sealed trait b8 extends Square
-  
-  @js.native
-  sealed trait c1 extends Square
-  
-  @js.native
-  sealed trait c2 extends Square
-  
-  @js.native
-  sealed trait c3 extends Square
-  
-  @js.native
-  sealed trait c4 extends Square
-  
-  @js.native
-  sealed trait c5 extends Square
-  
-  @js.native
-  sealed trait c6 extends Square
-  
-  @js.native
-  sealed trait c7 extends Square
-  
-  @js.native
-  sealed trait c8 extends Square
-  
-  @js.native
-  sealed trait d1 extends Square
-  
-  @js.native
-  sealed trait d2 extends Square
-  
-  @js.native
-  sealed trait d3 extends Square
-  
-  @js.native
-  sealed trait d4 extends Square
-  
-  @js.native
-  sealed trait d5 extends Square
-  
-  @js.native
-  sealed trait d6 extends Square
-  
-  @js.native
-  sealed trait d7 extends Square
-  
-  @js.native
-  sealed trait d8 extends Square
-  
-  @js.native
-  sealed trait e1 extends Square
-  
-  @js.native
-  sealed trait e2 extends Square
-  
-  @js.native
-  sealed trait e3 extends Square
-  
-  @js.native
-  sealed trait e4 extends Square
-  
-  @js.native
-  sealed trait e5 extends Square
-  
-  @js.native
-  sealed trait e6 extends Square
-  
-  @js.native
-  sealed trait e7 extends Square
-  
-  @js.native
-  sealed trait e8 extends Square
-  
-  @js.native
-  sealed trait f1 extends Square
-  
-  @js.native
-  sealed trait f2 extends Square
-  
-  @js.native
-  sealed trait f3 extends Square
-  
-  @js.native
-  sealed trait f4 extends Square
-  
-  @js.native
-  sealed trait f5 extends Square
-  
-  @js.native
-  sealed trait f6 extends Square
-  
-  @js.native
-  sealed trait f7 extends Square
-  
-  @js.native
-  sealed trait f8 extends Square
-  
-  @js.native
-  sealed trait g1 extends Square
-  
-  @js.native
-  sealed trait g2 extends Square
-  
-  @js.native
-  sealed trait g3 extends Square
-  
-  @js.native
-  sealed trait g4 extends Square
-  
-  @js.native
-  sealed trait g5 extends Square
-  
-  @js.native
-  sealed trait g6 extends Square
-  
-  @js.native
-  sealed trait g7 extends Square
-  
-  @js.native
-  sealed trait g8 extends Square
-  
-  @js.native
-  sealed trait h1 extends Square
-  
-  @js.native
-  sealed trait h2 extends Square
-  
-  @js.native
-  sealed trait h3 extends Square
-  
-  @js.native
-  sealed trait h4 extends Square
-  
-  @js.native
-  sealed trait h5 extends Square
-  
-  @js.native
-  sealed trait h6 extends Square
-  
-  @js.native
-  sealed trait h7 extends Square
-  
-  @js.native
-  sealed trait h8 extends Square
+object Square extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[Square with String] = js.native
-  /* "a1" */ @js.native
-  object a1 extends TopLevel[a1 with String]
-  
-  /* "a2" */ @js.native
-  object a2 extends TopLevel[a2 with String]
-  
-  /* "a3" */ @js.native
-  object a3 extends TopLevel[a3 with String]
-  
-  /* "a4" */ @js.native
-  object a4 extends TopLevel[a4 with String]
-  
-  /* "a5" */ @js.native
-  object a5 extends TopLevel[a5 with String]
-  
-  /* "a6" */ @js.native
-  object a6 extends TopLevel[a6 with String]
-  
-  /* "a7" */ @js.native
-  object a7 extends TopLevel[a7 with String]
-  
-  /* "a8" */ @js.native
-  object a8 extends TopLevel[a8 with String]
-  
-  /* "b1" */ @js.native
-  object b1 extends TopLevel[b1 with String]
-  
-  /* "b2" */ @js.native
-  object b2 extends TopLevel[b2 with String]
-  
-  /* "b3" */ @js.native
-  object b3 extends TopLevel[b3 with String]
-  
-  /* "b4" */ @js.native
-  object b4 extends TopLevel[b4 with String]
-  
-  /* "b5" */ @js.native
-  object b5 extends TopLevel[b5 with String]
-  
-  /* "b6" */ @js.native
-  object b6 extends TopLevel[b6 with String]
-  
-  /* "b7" */ @js.native
-  object b7 extends TopLevel[b7 with String]
-  
-  /* "b8" */ @js.native
-  object b8 extends TopLevel[b8 with String]
-  
-  /* "c1" */ @js.native
-  object c1 extends TopLevel[c1 with String]
-  
-  /* "c2" */ @js.native
-  object c2 extends TopLevel[c2 with String]
-  
-  /* "c3" */ @js.native
-  object c3 extends TopLevel[c3 with String]
-  
-  /* "c4" */ @js.native
-  object c4 extends TopLevel[c4 with String]
-  
-  /* "c5" */ @js.native
-  object c5 extends TopLevel[c5 with String]
-  
-  /* "c6" */ @js.native
-  object c6 extends TopLevel[c6 with String]
-  
-  /* "c7" */ @js.native
-  object c7 extends TopLevel[c7 with String]
-  
-  /* "c8" */ @js.native
-  object c8 extends TopLevel[c8 with String]
-  
-  /* "d1" */ @js.native
-  object d1 extends TopLevel[d1 with String]
-  
-  /* "d2" */ @js.native
-  object d2 extends TopLevel[d2 with String]
-  
-  /* "d3" */ @js.native
-  object d3 extends TopLevel[d3 with String]
-  
-  /* "d4" */ @js.native
-  object d4 extends TopLevel[d4 with String]
-  
-  /* "d5" */ @js.native
-  object d5 extends TopLevel[d5 with String]
-  
-  /* "d6" */ @js.native
-  object d6 extends TopLevel[d6 with String]
-  
-  /* "d7" */ @js.native
-  object d7 extends TopLevel[d7 with String]
-  
-  /* "d8" */ @js.native
-  object d8 extends TopLevel[d8 with String]
-  
-  /* "e1" */ @js.native
-  object e1 extends TopLevel[e1 with String]
-  
-  /* "e2" */ @js.native
-  object e2 extends TopLevel[e2 with String]
-  
-  /* "e3" */ @js.native
-  object e3 extends TopLevel[e3 with String]
-  
-  /* "e4" */ @js.native
-  object e4 extends TopLevel[e4 with String]
-  
-  /* "e5" */ @js.native
-  object e5 extends TopLevel[e5 with String]
-  
-  /* "e6" */ @js.native
-  object e6 extends TopLevel[e6 with String]
-  
-  /* "e7" */ @js.native
-  object e7 extends TopLevel[e7 with String]
-  
-  /* "e8" */ @js.native
-  object e8 extends TopLevel[e8 with String]
-  
-  /* "f1" */ @js.native
-  object f1 extends TopLevel[f1 with String]
-  
-  /* "f2" */ @js.native
-  object f2 extends TopLevel[f2 with String]
-  
-  /* "f3" */ @js.native
-  object f3 extends TopLevel[f3 with String]
-  
-  /* "f4" */ @js.native
-  object f4 extends TopLevel[f4 with String]
-  
-  /* "f5" */ @js.native
-  object f5 extends TopLevel[f5 with String]
-  
-  /* "f6" */ @js.native
-  object f6 extends TopLevel[f6 with String]
-  
-  /* "f7" */ @js.native
-  object f7 extends TopLevel[f7 with String]
-  
-  /* "f8" */ @js.native
-  object f8 extends TopLevel[f8 with String]
-  
-  /* "g7" */ @js.native
-  object g1 extends TopLevel[g1 with String]
-  
-  /* "g7" */ @js.native
-  object g2 extends TopLevel[g2 with String]
-  
-  /* "g7" */ @js.native
-  object g3 extends TopLevel[g3 with String]
-  
-  /* "g7" */ @js.native
-  object g4 extends TopLevel[g4 with String]
-  
-  /* "g7" */ @js.native
-  object g5 extends TopLevel[g5 with String]
-  
-  /* "g7" */ @js.native
-  object g6 extends TopLevel[g6 with String]
-  
-  /* "g7" */ @js.native
-  object g7 extends TopLevel[g7 with String]
-  
-  /* "g7" */ @js.native
-  object g8 extends TopLevel[g8 with String]
-  
-  /* "h1" */ @js.native
-  object h1 extends TopLevel[h1 with String]
-  
-  /* "h2" */ @js.native
-  object h2 extends TopLevel[h2 with String]
-  
-  /* "h3" */ @js.native
-  object h3 extends TopLevel[h3 with String]
-  
-  /* "h4" */ @js.native
-  object h4 extends TopLevel[h4 with String]
-  
-  /* "h5" */ @js.native
-  object h5 extends TopLevel[h5 with String]
-  
-  /* "h6" */ @js.native
-  object h6 extends TopLevel[h6 with String]
-  
-  /* "h7" */ @js.native
-  object h7 extends TopLevel[h7 with String]
-  
-  /* "h8" */ @js.native
-  object h8 extends TopLevel[h8 with String]
-  
+  def apply(value: String): js.UndefOr[Square & String] = js.native
+  
+  @js.native
+  sealed trait a1
+    extends StObject
+       with Square
+  /* "a1" */ val a1: typingsJapgolly.chessboardjs.mod.Square.a1 & String = js.native
+  
+  @js.native
+  sealed trait a2
+    extends StObject
+       with Square
+  /* "a2" */ val a2: typingsJapgolly.chessboardjs.mod.Square.a2 & String = js.native
+  
+  @js.native
+  sealed trait a3
+    extends StObject
+       with Square
+  /* "a3" */ val a3: typingsJapgolly.chessboardjs.mod.Square.a3 & String = js.native
+  
+  @js.native
+  sealed trait a4
+    extends StObject
+       with Square
+  /* "a4" */ val a4: typingsJapgolly.chessboardjs.mod.Square.a4 & String = js.native
+  
+  @js.native
+  sealed trait a5
+    extends StObject
+       with Square
+  /* "a5" */ val a5: typingsJapgolly.chessboardjs.mod.Square.a5 & String = js.native
+  
+  @js.native
+  sealed trait a6
+    extends StObject
+       with Square
+  /* "a6" */ val a6: typingsJapgolly.chessboardjs.mod.Square.a6 & String = js.native
+  
+  @js.native
+  sealed trait a7
+    extends StObject
+       with Square
+  /* "a7" */ val a7: typingsJapgolly.chessboardjs.mod.Square.a7 & String = js.native
+  
+  @js.native
+  sealed trait a8
+    extends StObject
+       with Square
+  /* "a8" */ val a8: typingsJapgolly.chessboardjs.mod.Square.a8 & String = js.native
+  
+  @js.native
+  sealed trait b1
+    extends StObject
+       with Square
+  /* "b1" */ val b1: typingsJapgolly.chessboardjs.mod.Square.b1 & String = js.native
+  
+  @js.native
+  sealed trait b2
+    extends StObject
+       with Square
+  /* "b2" */ val b2: typingsJapgolly.chessboardjs.mod.Square.b2 & String = js.native
+  
+  @js.native
+  sealed trait b3
+    extends StObject
+       with Square
+  /* "b3" */ val b3: typingsJapgolly.chessboardjs.mod.Square.b3 & String = js.native
+  
+  @js.native
+  sealed trait b4
+    extends StObject
+       with Square
+  /* "b4" */ val b4: typingsJapgolly.chessboardjs.mod.Square.b4 & String = js.native
+  
+  @js.native
+  sealed trait b5
+    extends StObject
+       with Square
+  /* "b5" */ val b5: typingsJapgolly.chessboardjs.mod.Square.b5 & String = js.native
+  
+  @js.native
+  sealed trait b6
+    extends StObject
+       with Square
+  /* "b6" */ val b6: typingsJapgolly.chessboardjs.mod.Square.b6 & String = js.native
+  
+  @js.native
+  sealed trait b7
+    extends StObject
+       with Square
+  /* "b7" */ val b7: typingsJapgolly.chessboardjs.mod.Square.b7 & String = js.native
+  
+  @js.native
+  sealed trait b8
+    extends StObject
+       with Square
+  /* "b8" */ val b8: typingsJapgolly.chessboardjs.mod.Square.b8 & String = js.native
+  
+  @js.native
+  sealed trait c1
+    extends StObject
+       with Square
+  /* "c1" */ val c1: typingsJapgolly.chessboardjs.mod.Square.c1 & String = js.native
+  
+  @js.native
+  sealed trait c2
+    extends StObject
+       with Square
+  /* "c2" */ val c2: typingsJapgolly.chessboardjs.mod.Square.c2 & String = js.native
+  
+  @js.native
+  sealed trait c3
+    extends StObject
+       with Square
+  /* "c3" */ val c3: typingsJapgolly.chessboardjs.mod.Square.c3 & String = js.native
+  
+  @js.native
+  sealed trait c4
+    extends StObject
+       with Square
+  /* "c4" */ val c4: typingsJapgolly.chessboardjs.mod.Square.c4 & String = js.native
+  
+  @js.native
+  sealed trait c5
+    extends StObject
+       with Square
+  /* "c5" */ val c5: typingsJapgolly.chessboardjs.mod.Square.c5 & String = js.native
+  
+  @js.native
+  sealed trait c6
+    extends StObject
+       with Square
+  /* "c6" */ val c6: typingsJapgolly.chessboardjs.mod.Square.c6 & String = js.native
+  
+  @js.native
+  sealed trait c7
+    extends StObject
+       with Square
+  /* "c7" */ val c7: typingsJapgolly.chessboardjs.mod.Square.c7 & String = js.native
+  
+  @js.native
+  sealed trait c8
+    extends StObject
+       with Square
+  /* "c8" */ val c8: typingsJapgolly.chessboardjs.mod.Square.c8 & String = js.native
+  
+  @js.native
+  sealed trait d1
+    extends StObject
+       with Square
+  /* "d1" */ val d1: typingsJapgolly.chessboardjs.mod.Square.d1 & String = js.native
+  
+  @js.native
+  sealed trait d2
+    extends StObject
+       with Square
+  /* "d2" */ val d2: typingsJapgolly.chessboardjs.mod.Square.d2 & String = js.native
+  
+  @js.native
+  sealed trait d3
+    extends StObject
+       with Square
+  /* "d3" */ val d3: typingsJapgolly.chessboardjs.mod.Square.d3 & String = js.native
+  
+  @js.native
+  sealed trait d4
+    extends StObject
+       with Square
+  /* "d4" */ val d4: typingsJapgolly.chessboardjs.mod.Square.d4 & String = js.native
+  
+  @js.native
+  sealed trait d5
+    extends StObject
+       with Square
+  /* "d5" */ val d5: typingsJapgolly.chessboardjs.mod.Square.d5 & String = js.native
+  
+  @js.native
+  sealed trait d6
+    extends StObject
+       with Square
+  /* "d6" */ val d6: typingsJapgolly.chessboardjs.mod.Square.d6 & String = js.native
+  
+  @js.native
+  sealed trait d7
+    extends StObject
+       with Square
+  /* "d7" */ val d7: typingsJapgolly.chessboardjs.mod.Square.d7 & String = js.native
+  
+  @js.native
+  sealed trait d8
+    extends StObject
+       with Square
+  /* "d8" */ val d8: typingsJapgolly.chessboardjs.mod.Square.d8 & String = js.native
+  
+  @js.native
+  sealed trait e1
+    extends StObject
+       with Square
+  /* "e1" */ val e1: typingsJapgolly.chessboardjs.mod.Square.e1 & String = js.native
+  
+  @js.native
+  sealed trait e2
+    extends StObject
+       with Square
+  /* "e2" */ val e2: typingsJapgolly.chessboardjs.mod.Square.e2 & String = js.native
+  
+  @js.native
+  sealed trait e3
+    extends StObject
+       with Square
+  /* "e3" */ val e3: typingsJapgolly.chessboardjs.mod.Square.e3 & String = js.native
+  
+  @js.native
+  sealed trait e4
+    extends StObject
+       with Square
+  /* "e4" */ val e4: typingsJapgolly.chessboardjs.mod.Square.e4 & String = js.native
+  
+  @js.native
+  sealed trait e5
+    extends StObject
+       with Square
+  /* "e5" */ val e5: typingsJapgolly.chessboardjs.mod.Square.e5 & String = js.native
+  
+  @js.native
+  sealed trait e6
+    extends StObject
+       with Square
+  /* "e6" */ val e6: typingsJapgolly.chessboardjs.mod.Square.e6 & String = js.native
+  
+  @js.native
+  sealed trait e7
+    extends StObject
+       with Square
+  /* "e7" */ val e7: typingsJapgolly.chessboardjs.mod.Square.e7 & String = js.native
+  
+  @js.native
+  sealed trait e8
+    extends StObject
+       with Square
+  /* "e8" */ val e8: typingsJapgolly.chessboardjs.mod.Square.e8 & String = js.native
+  
+  @js.native
+  sealed trait f1
+    extends StObject
+       with Square
+  /* "f1" */ val f1: typingsJapgolly.chessboardjs.mod.Square.f1 & String = js.native
+  
+  @js.native
+  sealed trait f2
+    extends StObject
+       with Square
+  /* "f2" */ val f2: typingsJapgolly.chessboardjs.mod.Square.f2 & String = js.native
+  
+  @js.native
+  sealed trait f3
+    extends StObject
+       with Square
+  /* "f3" */ val f3: typingsJapgolly.chessboardjs.mod.Square.f3 & String = js.native
+  
+  @js.native
+  sealed trait f4
+    extends StObject
+       with Square
+  /* "f4" */ val f4: typingsJapgolly.chessboardjs.mod.Square.f4 & String = js.native
+  
+  @js.native
+  sealed trait f5
+    extends StObject
+       with Square
+  /* "f5" */ val f5: typingsJapgolly.chessboardjs.mod.Square.f5 & String = js.native
+  
+  @js.native
+  sealed trait f6
+    extends StObject
+       with Square
+  /* "f6" */ val f6: typingsJapgolly.chessboardjs.mod.Square.f6 & String = js.native
+  
+  @js.native
+  sealed trait f7
+    extends StObject
+       with Square
+  /* "f7" */ val f7: typingsJapgolly.chessboardjs.mod.Square.f7 & String = js.native
+  
+  @js.native
+  sealed trait f8
+    extends StObject
+       with Square
+  /* "f8" */ val f8: typingsJapgolly.chessboardjs.mod.Square.f8 & String = js.native
+  
+  @js.native
+  sealed trait g1
+    extends StObject
+       with Square
+  /* "g7" */ val g1: typingsJapgolly.chessboardjs.mod.Square.g1 & String = js.native
+  
+  @js.native
+  sealed trait g2
+    extends StObject
+       with Square
+  /* "g7" */ val g2: typingsJapgolly.chessboardjs.mod.Square.g2 & String = js.native
+  
+  @js.native
+  sealed trait g3
+    extends StObject
+       with Square
+  /* "g7" */ val g3: typingsJapgolly.chessboardjs.mod.Square.g3 & String = js.native
+  
+  @js.native
+  sealed trait g4
+    extends StObject
+       with Square
+  /* "g7" */ val g4: typingsJapgolly.chessboardjs.mod.Square.g4 & String = js.native
+  
+  @js.native
+  sealed trait g5
+    extends StObject
+       with Square
+  /* "g7" */ val g5: typingsJapgolly.chessboardjs.mod.Square.g5 & String = js.native
+  
+  @js.native
+  sealed trait g6
+    extends StObject
+       with Square
+  /* "g7" */ val g6: typingsJapgolly.chessboardjs.mod.Square.g6 & String = js.native
+  
+  @js.native
+  sealed trait g7
+    extends StObject
+       with Square
+  /* "g7" */ val g7: typingsJapgolly.chessboardjs.mod.Square.g7 & String = js.native
+  
+  @js.native
+  sealed trait g8
+    extends StObject
+       with Square
+  /* "g7" */ val g8: typingsJapgolly.chessboardjs.mod.Square.g8 & String = js.native
+  
+  @js.native
+  sealed trait h1
+    extends StObject
+       with Square
+  /* "h1" */ val h1: typingsJapgolly.chessboardjs.mod.Square.h1 & String = js.native
+  
+  @js.native
+  sealed trait h2
+    extends StObject
+       with Square
+  /* "h2" */ val h2: typingsJapgolly.chessboardjs.mod.Square.h2 & String = js.native
+  
+  @js.native
+  sealed trait h3
+    extends StObject
+       with Square
+  /* "h3" */ val h3: typingsJapgolly.chessboardjs.mod.Square.h3 & String = js.native
+  
+  @js.native
+  sealed trait h4
+    extends StObject
+       with Square
+  /* "h4" */ val h4: typingsJapgolly.chessboardjs.mod.Square.h4 & String = js.native
+  
+  @js.native
+  sealed trait h5
+    extends StObject
+       with Square
+  /* "h5" */ val h5: typingsJapgolly.chessboardjs.mod.Square.h5 & String = js.native
+  
+  @js.native
+  sealed trait h6
+    extends StObject
+       with Square
+  /* "h6" */ val h6: typingsJapgolly.chessboardjs.mod.Square.h6 & String = js.native
+  
+  @js.native
+  sealed trait h7
+    extends StObject
+       with Square
+  /* "h7" */ val h7: typingsJapgolly.chessboardjs.mod.Square.h7 & String = js.native
+  
+  @js.native
+  sealed trait h8
+    extends StObject
+       with Square
+  /* "h8" */ val h8: typingsJapgolly.chessboardjs.mod.Square.h8 & String = js.native
 }
-

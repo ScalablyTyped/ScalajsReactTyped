@@ -1,19 +1,24 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PanOptions extends js.Object {
+trait PanOptions extends StObject {
+  
   var noAnimation: js.UndefOr[Boolean] = js.undefined
 }
-
 object PanOptions {
-  @scala.inline
-  def apply(noAnimation: js.UndefOr[Boolean] = js.undefined): PanOptions = {
+  
+  inline def apply(): PanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(noAnimation)) __obj.updateDynamic("noAnimation")(noAnimation.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanOptions]
   }
+  
+  extension [Self <: PanOptions](x: Self) {
+    
+    inline def setNoAnimation(value: Boolean): Self = StObject.set(x, "noAnimation", value.asInstanceOf[js.Any])
+    
+    inline def setNoAnimationUndefined: Self = StObject.set(x, "noAnimation", js.undefined)
+  }
 }
-

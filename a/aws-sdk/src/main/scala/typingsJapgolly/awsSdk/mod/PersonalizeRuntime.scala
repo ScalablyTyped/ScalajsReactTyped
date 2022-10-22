@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.personalizeruntimeMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsPersonalizeruntimeMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "PersonalizeRuntime")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class PersonalizeRuntime ()
-  extends typingsJapgolly.awsSdk.allMod.PersonalizeRuntime {
+open class PersonalizeRuntime ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.PersonalizeRuntime {
   def this(options: ClientConfiguration) = this()
 }
-

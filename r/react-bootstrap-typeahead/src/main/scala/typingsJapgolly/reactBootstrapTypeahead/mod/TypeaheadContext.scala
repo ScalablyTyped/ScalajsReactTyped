@@ -1,47 +1,74 @@
 package typingsJapgolly.reactBootstrapTypeahead.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeaheadContext[T /* <: TypeaheadModel */] extends js.Object {
+trait TypeaheadContext[T /* <: TypeaheadModel */] extends StObject {
+  
   var activeIndex: js.UndefOr[Double] = js.undefined
+  
   var hintText: js.UndefOr[String] = js.undefined
+  
   var initialItem: js.UndefOr[T] = js.undefined
+  
   var isOnlyResult: js.UndefOr[Boolean] = js.undefined
+  
   var onActiveItemChange: js.UndefOr[js.Function1[/* options */ T, Unit]] = js.undefined
+  
   var onAdd: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
+  
   var onInitialItemChange: js.UndefOr[js.Function1[/* option */ T, Unit]] = js.undefined
-  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event_, Unit]] = js.undefined
+  
+  var onMenuItemClick: js.UndefOr[js.Function2[/* option */ T, /* e */ Event, Unit]] = js.undefined
+  
   var selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
 }
-
 object TypeaheadContext {
-  @scala.inline
-  def apply[T /* <: TypeaheadModel */](
-    activeIndex: Int | Double = null,
-    hintText: String = null,
-    initialItem: T = null,
-    isOnlyResult: js.UndefOr[Boolean] = js.undefined,
-    onActiveItemChange: /* options */ T => Callback = null,
-    onAdd: /* option */ T => Callback = null,
-    onInitialItemChange: /* option */ T => Callback = null,
-    onMenuItemClick: (/* option */ T, /* e */ Event_) => Callback = null,
-    selectHintOnEnter: js.UndefOr[Boolean] = js.undefined
-  ): TypeaheadContext[T] = {
+  
+  inline def apply[T /* <: TypeaheadModel */](): TypeaheadContext[T] = {
     val __obj = js.Dynamic.literal()
-    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
-    if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
-    if (initialItem != null) __obj.updateDynamic("initialItem")(initialItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOnlyResult)) __obj.updateDynamic("isOnlyResult")(isOnlyResult.asInstanceOf[js.Any])
-    if (onActiveItemChange != null) __obj.updateDynamic("onActiveItemChange")(js.Any.fromFunction1((t0: /* options */ T) => onActiveItemChange(t0).runNow()))
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction1((t0: /* option */ T) => onAdd(t0).runNow()))
-    if (onInitialItemChange != null) __obj.updateDynamic("onInitialItemChange")(js.Any.fromFunction1((t0: /* option */ T) => onInitialItemChange(t0).runNow()))
-    if (onMenuItemClick != null) __obj.updateDynamic("onMenuItemClick")(js.Any.fromFunction2((t0: /* option */ T, t1: /* e */ typingsJapgolly.std.Event_) => onMenuItemClick(t0, t1).runNow()))
-    if (!js.isUndefined(selectHintOnEnter)) __obj.updateDynamic("selectHintOnEnter")(selectHintOnEnter.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeaheadContext[T]]
   }
+  
+  extension [Self <: TypeaheadContext[?], T /* <: TypeaheadModel */](x: Self & TypeaheadContext[T]) {
+    
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+    
+    inline def setHintText(value: String): Self = StObject.set(x, "hintText", value.asInstanceOf[js.Any])
+    
+    inline def setHintTextUndefined: Self = StObject.set(x, "hintText", js.undefined)
+    
+    inline def setInitialItem(value: T): Self = StObject.set(x, "initialItem", value.asInstanceOf[js.Any])
+    
+    inline def setInitialItemUndefined: Self = StObject.set(x, "initialItem", js.undefined)
+    
+    inline def setIsOnlyResult(value: Boolean): Self = StObject.set(x, "isOnlyResult", value.asInstanceOf[js.Any])
+    
+    inline def setIsOnlyResultUndefined: Self = StObject.set(x, "isOnlyResult", js.undefined)
+    
+    inline def setOnActiveItemChange(value: /* options */ T => Callback): Self = StObject.set(x, "onActiveItemChange", js.Any.fromFunction1((t0: /* options */ T) => value(t0).runNow()))
+    
+    inline def setOnActiveItemChangeUndefined: Self = StObject.set(x, "onActiveItemChange", js.undefined)
+    
+    inline def setOnAdd(value: /* option */ T => Callback): Self = StObject.set(x, "onAdd", js.Any.fromFunction1((t0: /* option */ T) => value(t0).runNow()))
+    
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    
+    inline def setOnInitialItemChange(value: /* option */ T => Callback): Self = StObject.set(x, "onInitialItemChange", js.Any.fromFunction1((t0: /* option */ T) => value(t0).runNow()))
+    
+    inline def setOnInitialItemChangeUndefined: Self = StObject.set(x, "onInitialItemChange", js.undefined)
+    
+    inline def setOnMenuItemClick(value: (/* option */ T, /* e */ Event) => Callback): Self = StObject.set(x, "onMenuItemClick", js.Any.fromFunction2((t0: /* option */ T, t1: /* e */ Event) => (value(t0, t1)).runNow()))
+    
+    inline def setOnMenuItemClickUndefined: Self = StObject.set(x, "onMenuItemClick", js.undefined)
+    
+    inline def setSelectHintOnEnter(value: Boolean): Self = StObject.set(x, "selectHintOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def setSelectHintOnEnterUndefined: Self = StObject.set(x, "selectHintOnEnter", js.undefined)
+  }
 }
-

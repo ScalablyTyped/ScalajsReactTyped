@@ -1,8 +1,8 @@
 package typingsJapgolly.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.escpos.escposStrings.imageSlashpng
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.escpos.escposStrings.imageSlashgif
   - typingsJapgolly.escpos.escposStrings.imageSlashbmp
 */
-trait MIME_TYPE extends js.Object
-
+trait MIME_TYPE extends StObject
 object MIME_TYPE {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def imageSlashbmp: typingsJapgolly.escpos.escposStrings.imageSlashbmp = this.cast("image/bmp")
-  @scala.inline
-  def imageSlashgif: typingsJapgolly.escpos.escposStrings.imageSlashgif = this.cast("image/gif")
-  @scala.inline
-  def imageSlashjpeg: typingsJapgolly.escpos.escposStrings.imageSlashjpeg = this.cast("image/jpeg")
-  @scala.inline
-  def imageSlashjpg: typingsJapgolly.escpos.escposStrings.imageSlashjpg = this.cast("image/jpg")
-  @scala.inline
-  def imageSlashpng: typingsJapgolly.escpos.escposStrings.imageSlashpng = this.cast("image/png")
+  
+  inline def imageSlashbmp: typingsJapgolly.escpos.escposStrings.imageSlashbmp = "image/bmp".asInstanceOf[typingsJapgolly.escpos.escposStrings.imageSlashbmp]
+  
+  inline def imageSlashgif: typingsJapgolly.escpos.escposStrings.imageSlashgif = "image/gif".asInstanceOf[typingsJapgolly.escpos.escposStrings.imageSlashgif]
+  
+  inline def imageSlashjpeg: typingsJapgolly.escpos.escposStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typingsJapgolly.escpos.escposStrings.imageSlashjpeg]
+  
+  inline def imageSlashjpg: typingsJapgolly.escpos.escposStrings.imageSlashjpg = "image/jpg".asInstanceOf[typingsJapgolly.escpos.escposStrings.imageSlashjpg]
+  
+  inline def imageSlashpng: typingsJapgolly.escpos.escposStrings.imageSlashpng = "image/png".asInstanceOf[typingsJapgolly.escpos.escposStrings.imageSlashpng]
 }
-

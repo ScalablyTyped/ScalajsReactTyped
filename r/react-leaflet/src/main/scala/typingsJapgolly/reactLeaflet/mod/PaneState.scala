@@ -1,21 +1,34 @@
 package typingsJapgolly.reactLeaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaneState extends js.Object {
+trait PaneState extends StObject {
+  
   var context: js.UndefOr[LeafletContext | Null] = js.undefined
+  
   var name: js.UndefOr[String | Null] = js.undefined
 }
-
 object PaneState {
-  @scala.inline
-  def apply(context: LeafletContext = null, name: String = null): PaneState = {
+  
+  inline def apply(): PaneState = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneState]
   }
+  
+  extension [Self <: PaneState](x: Self) {
+    
+    inline def setContext(value: LeafletContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextNull: Self = StObject.set(x, "context", null)
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

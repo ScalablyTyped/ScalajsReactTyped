@@ -1,21 +1,30 @@
 package typingsJapgolly.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestRecipient extends js.Object {
+trait RequestRecipient extends StObject {
+  
   var did: js.UndefOr[DID] = js.undefined
+  
   var name: js.UndefOr[AgentName] = js.undefined
 }
-
 object RequestRecipient {
-  @scala.inline
-  def apply(did: DID = null, name: AgentName = null): RequestRecipient = {
+  
+  inline def apply(): RequestRecipient = {
     val __obj = js.Dynamic.literal()
-    if (did != null) __obj.updateDynamic("did")(did.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestRecipient]
   }
+  
+  extension [Self <: RequestRecipient](x: Self) {
+    
+    inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+    
+    inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
+    
+    inline def setName(value: AgentName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

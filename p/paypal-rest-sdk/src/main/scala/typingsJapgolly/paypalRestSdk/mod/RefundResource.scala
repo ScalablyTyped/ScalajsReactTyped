@@ -1,65 +1,62 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefundResource extends Resource {
+trait RefundResource
+  extends StObject
+     with Resource {
+  
   val capture_id: js.UndefOr[String] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var invoice_number: js.UndefOr[String] = js.undefined
+  
   var reason: js.UndefOr[String] = js.undefined
+  
   val refund_funding_type: js.UndefOr[String] = js.undefined
+  
   val refund_reason_code: js.UndefOr[String] = js.undefined
+  
   val sale_id: js.UndefOr[String] = js.undefined
 }
-
 object RefundResource {
-  @scala.inline
-  def apply(
-    amount: Amount,
-    id: String,
-    capture_id: String = null,
-    create_time: String = null,
-    description: String = null,
-    fmf_details: FraudManagementFiltersDetails = null,
-    invoice_number: String = null,
-    links: js.Array[Link] = null,
-    parent_payment: String = null,
-    payment_mode: String = null,
-    processor_response: js.Any = null,
-    protection_eligibility: String = null,
-    protection_eligibility_type: String = null,
-    reason: String = null,
-    reason_code: String = null,
-    receipt_id: String = null,
-    refund_funding_type: String = null,
-    refund_reason_code: String = null,
-    sale_id: String = null,
-    state: String = null,
-    update_time: String = null
-  ): RefundResource = {
+  
+  inline def apply(amount: Amount, id: String): RefundResource = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    if (capture_id != null) __obj.updateDynamic("capture_id")(capture_id.asInstanceOf[js.Any])
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fmf_details != null) __obj.updateDynamic("fmf_details")(fmf_details.asInstanceOf[js.Any])
-    if (invoice_number != null) __obj.updateDynamic("invoice_number")(invoice_number.asInstanceOf[js.Any])
-    if (links != null) __obj.updateDynamic("links")(links.asInstanceOf[js.Any])
-    if (parent_payment != null) __obj.updateDynamic("parent_payment")(parent_payment.asInstanceOf[js.Any])
-    if (payment_mode != null) __obj.updateDynamic("payment_mode")(payment_mode.asInstanceOf[js.Any])
-    if (processor_response != null) __obj.updateDynamic("processor_response")(processor_response.asInstanceOf[js.Any])
-    if (protection_eligibility != null) __obj.updateDynamic("protection_eligibility")(protection_eligibility.asInstanceOf[js.Any])
-    if (protection_eligibility_type != null) __obj.updateDynamic("protection_eligibility_type")(protection_eligibility_type.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
-    if (reason_code != null) __obj.updateDynamic("reason_code")(reason_code.asInstanceOf[js.Any])
-    if (receipt_id != null) __obj.updateDynamic("receipt_id")(receipt_id.asInstanceOf[js.Any])
-    if (refund_funding_type != null) __obj.updateDynamic("refund_funding_type")(refund_funding_type.asInstanceOf[js.Any])
-    if (refund_reason_code != null) __obj.updateDynamic("refund_reason_code")(refund_reason_code.asInstanceOf[js.Any])
-    if (sale_id != null) __obj.updateDynamic("sale_id")(sale_id.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (update_time != null) __obj.updateDynamic("update_time")(update_time.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefundResource]
   }
+  
+  extension [Self <: RefundResource](x: Self) {
+    
+    inline def setCapture_id(value: String): Self = StObject.set(x, "capture_id", value.asInstanceOf[js.Any])
+    
+    inline def setCapture_idUndefined: Self = StObject.set(x, "capture_id", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setInvoice_number(value: String): Self = StObject.set(x, "invoice_number", value.asInstanceOf[js.Any])
+    
+    inline def setInvoice_numberUndefined: Self = StObject.set(x, "invoice_number", js.undefined)
+    
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    
+    inline def setRefund_funding_type(value: String): Self = StObject.set(x, "refund_funding_type", value.asInstanceOf[js.Any])
+    
+    inline def setRefund_funding_typeUndefined: Self = StObject.set(x, "refund_funding_type", js.undefined)
+    
+    inline def setRefund_reason_code(value: String): Self = StObject.set(x, "refund_reason_code", value.asInstanceOf[js.Any])
+    
+    inline def setRefund_reason_codeUndefined: Self = StObject.set(x, "refund_reason_code", js.undefined)
+    
+    inline def setSale_id(value: String): Self = StObject.set(x, "sale_id", value.asInstanceOf[js.Any])
+    
+    inline def setSale_idUndefined: Self = StObject.set(x, "sale_id", js.undefined)
+  }
 }
-

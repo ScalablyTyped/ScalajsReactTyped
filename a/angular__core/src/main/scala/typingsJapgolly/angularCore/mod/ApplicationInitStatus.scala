@@ -1,19 +1,43 @@
 package typingsJapgolly.angularCore.mod
 
-import typingsJapgolly.angularCore.angularCoreBooleans.`false`
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "ApplicationInitStatus")
 @js.native
-class ApplicationInitStatus protected () extends js.Object {
-  def this(appInits: js.Array[js.Function0[_]]) = this()
-  var appInits: js.Any = js.native
-  val done: `false` = js.native
-  val donePromise: js.Promise[_] = js.native
-  var initialized: js.Any = js.native
-  var reject: js.Any = js.native
-  var resolve: js.Any = js.native
+open class ApplicationInitStatus protected () extends StObject {
+  def this(appInits: js.Array[js.Function0[Observable_[Any] | js.Promise[Any] | Unit]]) = this()
+  
+  /* private */ val appInits: Any = js.native
+  
+  val done: /* false */ Boolean = js.native
+  
+  val donePromise: js.Promise[Any] = js.native
+  
+  /* private */ var initialized: Any = js.native
+  
+  /* private */ var reject: Any = js.native
+  
+  /* private */ var resolve: Any = js.native
 }
-
+/* static members */
+object ApplicationInitStatus {
+  
+  @JSImport("@angular/core", "ApplicationInitStatus")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/core", "ApplicationInitStatus.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[ApplicationInitStatus, js.Array[typingsJapgolly.angularCore.anon.Optional]] = js.native
+  inline def ɵfac_=(
+    x: ɵɵFactoryDeclaration[ApplicationInitStatus, js.Array[typingsJapgolly.angularCore.anon.Optional]]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/core", "ApplicationInitStatus.\u0275prov")
+  @js.native
+  def ɵprov: ɵɵInjectableDeclaration[ApplicationInitStatus] = js.native
+  inline def ɵprov_=(x: ɵɵInjectableDeclaration[ApplicationInitStatus]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
+}

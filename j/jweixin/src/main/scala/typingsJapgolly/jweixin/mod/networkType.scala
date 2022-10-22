@@ -1,8 +1,8 @@
 package typingsJapgolly.jweixin.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================智能接口================================*/
 /*=============================设备信息================================*/
@@ -12,18 +12,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.jweixin.jweixinStrings.`4g`
   - typingsJapgolly.jweixin.jweixinStrings.wifi
 */
-trait networkType extends js.Object
-
+trait networkType extends StObject
 object networkType {
-  @scala.inline
-  def `2g`: typingsJapgolly.jweixin.jweixinStrings.`2g` = this.cast("2g")
-  @scala.inline
-  def `3g`: typingsJapgolly.jweixin.jweixinStrings.`3g` = this.cast("3g")
-  @scala.inline
-  def `4g`: typingsJapgolly.jweixin.jweixinStrings.`4g` = this.cast("4g")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wifi: typingsJapgolly.jweixin.jweixinStrings.wifi = this.cast("wifi")
+  
+  inline def `2g`: typingsJapgolly.jweixin.jweixinStrings.`2g` = "2g".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.`2g`]
+  
+  inline def `3g`: typingsJapgolly.jweixin.jweixinStrings.`3g` = "3g".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.`3g`]
+  
+  inline def `4g`: typingsJapgolly.jweixin.jweixinStrings.`4g` = "4g".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.`4g`]
+  
+  inline def wifi: typingsJapgolly.jweixin.jweixinStrings.wifi = "wifi".asInstanceOf[typingsJapgolly.jweixin.jweixinStrings.wifi]
 }
-

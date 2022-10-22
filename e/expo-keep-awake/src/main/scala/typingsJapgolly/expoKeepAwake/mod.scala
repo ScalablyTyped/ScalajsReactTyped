@@ -1,43 +1,28 @@
 package typingsJapgolly.expoKeepAwake
 
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.expoKeepAwake.anon.SuppressDeactivateWarnings
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("expo-keep-awake", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  trait KeepAwake
-    extends Component[js.Object, js.Object, js.Any] {
-    @JSName("componentDidMount")
-    def componentDidMount_MKeepAwake(): Unit = js.native
-    @JSName("componentWillUnmount")
-    def componentWillUnmount_MKeepAwake(): Unit = js.native
-  }
+object mod {
   
+  @JSImport("expo-keep-awake", JSImport.Namespace)
   @js.native
-  class default () extends KeepAwake
+  val ^ : js.Any = js.native
   
-  def activate(): Unit = js.native
-  def activate(tag: String): Unit = js.native
-  def activateKeepAwake(): Unit = js.native
-  def activateKeepAwake(tag: String): Unit = js.native
-  def deactivate(): Unit = js.native
-  def deactivate(tag: String): Unit = js.native
-  def deactivateKeepAwake(): Unit = js.native
-  def deactivateKeepAwake(tag: String): Unit = js.native
-  def useKeepAwake(): Unit = js.native
-  def useKeepAwake(tag: String): Unit = js.native
-  /* static members */
+  @JSImport("expo-keep-awake", "ExpoKeepAwakeTag")
   @js.native
-  object default extends js.Object {
-    def activate(): Unit = js.native
-    def activate(tag: String): Unit = js.native
-    def deactivate(): Unit = js.native
-    def deactivate(tag: String): Unit = js.native
-  }
+  val ExpoKeepAwakeTag: /* "ExpoKeepAwakeDefaultTag" */ String = js.native
   
+  inline def activateKeepAwake(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")().asInstanceOf[js.Promise[Unit]]
+  inline def activateKeepAwake(tag: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("activateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def deactivateKeepAwake(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")().asInstanceOf[js.Promise[Unit]]
+  inline def deactivateKeepAwake(tag: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("deactivateKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
+  inline def useKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")().asInstanceOf[Unit]
+  inline def useKeepAwake(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useKeepAwake(tag: String, options: SuppressDeactivateWarnings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useKeepAwake(tag: Unit, options: SuppressDeactivateWarnings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useKeepAwake")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

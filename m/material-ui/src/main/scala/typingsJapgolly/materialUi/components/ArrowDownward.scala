@@ -1,14 +1,18 @@
 package typingsJapgolly.materialUi.components
 
-import typingsJapgolly.materialUi.arrowDownwardMod.default
+import typingsJapgolly.materialUi.MaterialUI.SvgIconProps
+import typingsJapgolly.materialUi.svgIconsNavigationArrowDownwardMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ArrowDownward extends SharedApply_SvgIconProps_1100155871[default] {
+object ArrowDownward {
+  
   @JSImport("material-ui/svg-icons/navigation/arrow-downward", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: ArrowDownward.type): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SvgIconProps): SharedBuilder_SvgIconProps_115160895[default] = new SharedBuilder_SvgIconProps_115160895[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

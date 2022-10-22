@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TetheringOperationalState extends js.Object
-
+sealed trait TetheringOperationalState extends StObject
 /** Defines values used by the TetheringOperationalState property to indicate the operational state of a device's tethering capabilities. */
 @JSGlobal("Windows.Networking.NetworkOperators.TetheringOperationalState")
 @js.native
-object TetheringOperationalState extends js.Object {
+object TetheringOperationalState extends StObject {
+  
   /** The tethering feature is currently in transition between the On and Off states. */
   @js.native
-  sealed trait inTransition extends TetheringOperationalState
+  sealed trait inTransition
+    extends StObject
+       with TetheringOperationalState
   
   /** Tethering is off. */
   @js.native
-  sealed trait off extends TetheringOperationalState
+  sealed trait off
+    extends StObject
+       with TetheringOperationalState
   
   /** Tethering is on. */
   @js.native
-  sealed trait on extends TetheringOperationalState
+  sealed trait on
+    extends StObject
+       with TetheringOperationalState
   
   /** Current operational state is unknown. */
   @js.native
-  sealed trait unknown extends TetheringOperationalState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TetheringOperationalState with Double] = js.native
-  /* 3 */ @js.native
-  object inTransition extends TopLevel[inTransition with Double]
-  
-  /* 2 */ @js.native
-  object off extends TopLevel[off with Double]
-  
-  /* 1 */ @js.native
-  object on extends TopLevel[on with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with TetheringOperationalState
 }
-

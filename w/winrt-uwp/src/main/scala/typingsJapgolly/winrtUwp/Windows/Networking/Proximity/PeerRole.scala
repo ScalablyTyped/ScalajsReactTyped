@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Proximity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PeerRole extends js.Object
-
+sealed trait PeerRole extends StObject
 /** Describes the role of the peer app when connected to multiple peers. */
 @JSGlobal("Windows.Networking.Proximity.PeerRole")
 @js.native
-object PeerRole extends js.Object {
+object PeerRole extends StObject {
+  
   /** The app is a client peer app in a multi-peer connection. */
   @js.native
-  sealed trait client extends PeerRole
+  sealed trait client
+    extends StObject
+       with PeerRole
   
   /** The app is the host peer app in a multi-peer connection. */
   @js.native
-  sealed trait host extends PeerRole
+  sealed trait host
+    extends StObject
+       with PeerRole
   
   /** The app is part of a two-peer connection. */
   @js.native
-  sealed trait peer extends PeerRole
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PeerRole with Double] = js.native
-  /* 2 */ @js.native
-  object client extends TopLevel[client with Double]
-  
-  /* 1 */ @js.native
-  object host extends TopLevel[host with Double]
-  
-  /* 0 */ @js.native
-  object peer extends TopLevel[peer with Double]
-  
+  sealed trait peer
+    extends StObject
+       with PeerRole
 }
-

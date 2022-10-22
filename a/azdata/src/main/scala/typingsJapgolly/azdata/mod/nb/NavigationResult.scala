@@ -1,23 +1,35 @@
 package typingsJapgolly.azdata.mod.nb
 
 import typingsJapgolly.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationResult extends js.Object {
+trait NavigationResult extends StObject {
+  
   var hasNavigation: Boolean
+  
   var next: js.UndefOr[Uri] = js.undefined
+  
   var previous: js.UndefOr[Uri] = js.undefined
 }
-
 object NavigationResult {
-  @scala.inline
-  def apply(hasNavigation: Boolean, next: Uri = null, previous: Uri = null): NavigationResult = {
+  
+  inline def apply(hasNavigation: Boolean): NavigationResult = {
     val __obj = js.Dynamic.literal(hasNavigation = hasNavigation.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (previous != null) __obj.updateDynamic("previous")(previous.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationResult]
   }
+  
+  extension [Self <: NavigationResult](x: Self) {
+    
+    inline def setHasNavigation(value: Boolean): Self = StObject.set(x, "hasNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setNext(value: Uri): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    
+    inline def setPrevious(value: Uri): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+  }
 }
-

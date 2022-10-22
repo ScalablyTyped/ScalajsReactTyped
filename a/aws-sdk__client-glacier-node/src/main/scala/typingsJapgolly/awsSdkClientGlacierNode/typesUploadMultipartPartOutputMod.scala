@@ -1,26 +1,42 @@
 package typingsJapgolly.awsSdkClientGlacierNode
 
-import typingsJapgolly.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientGlacierNode.typesOutputTypesUnionMod._OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-glacier-node/types/UploadMultipartPartOutput", JSImport.Namespace)
-@js.native
-object typesUploadMultipartPartOutputMod extends js.Object {
-  @js.native
-  trait UploadMultipartPartOutput extends _OutputTypesUnion {
+object typesUploadMultipartPartOutputMod {
+  
+  trait UploadMultipartPartOutput
+    extends StObject
+       with _OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The SHA256 tree hash that Amazon Glacier computed for the uploaded part.</p>
       */
-    var checksum: js.UndefOr[String] = js.native
+    var checksum: js.UndefOr[String] = js.undefined
   }
-  
+  object UploadMultipartPartOutput {
+    
+    inline def apply($metadata: ResponseMetadata): UploadMultipartPartOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UploadMultipartPartOutput]
+    }
+    
+    extension [Self <: UploadMultipartPartOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
+      
+      inline def setChecksumUndefined: Self = StObject.set(x, "checksum", js.undefined)
+    }
+  }
 }
-

@@ -1,30 +1,37 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Loader plugin for handling Texture resources.
-  * @class
-  * @memberof PIXI
-  * @implements PIXI.ILoaderPlugin
-  */
 @JSImport("pixi.js", "TextureLoader")
 @js.native
-class TextureLoader ()
-  extends typingsJapgolly.pixiJs.PIXI.TextureLoader
-
+open class TextureLoader ()
+  extends typingsJapgolly.pixiLoaders.mod.TextureLoader
 /* static members */
-@JSImport("pixi.js", "TextureLoader")
-@js.native
-object TextureLoader extends js.Object {
+object TextureLoader {
+  
+  @JSImport("pixi.js", "TextureLoader")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /** Handle SVG elements a text, render with SVGResource. */
+  inline def add(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Unit]
+  
+  /** @ignore */
+  @JSImport("pixi.js", "TextureLoader.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+  
   /**
     * Called after a resource is loaded.
     * @see PIXI.Loader.loaderMiddleware
-    * @param {PIXI.LoaderResource} resource
-    * @param {function} next
+    * @param resource
+    * @param {Function} next
     */
-  def use(resource: typingsJapgolly.pixiJs.PIXI.LoaderResource, next: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  inline def use(
+    resource: typingsJapgolly.pixiLoaders.mod.LoaderResource,
+    next: js.Function1[/* repeated */ Any, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(resource.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

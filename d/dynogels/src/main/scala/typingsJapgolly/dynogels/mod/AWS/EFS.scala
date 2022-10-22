@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.efsMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsEfsMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.EFS")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class EFS ()
+open class EFS ()
   extends typingsJapgolly.awsSdk.mod.EFS {
   def this(options: ClientConfiguration) = this()
 }
-

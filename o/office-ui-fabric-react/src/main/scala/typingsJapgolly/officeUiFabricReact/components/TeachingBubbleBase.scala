@@ -1,14 +1,17 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsTeachingBubbleTeachingBubbleDottypesMod.ITeachingBubbleProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object TeachingBubbleBase
-  extends SharedApply_ITeachingBubbleProps_1249831983[typingsJapgolly.officeUiFabricReact.mod.TeachingBubbleBase] {
+object TeachingBubbleBase {
+  
   @JSImport("office-ui-fabric-react", "TeachingBubbleBase")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: TeachingBubbleBase.type): SharedBuilder_ITeachingBubbleProps1563295964[typingsJapgolly.officeUiFabricReact.mod.TeachingBubbleBase] = new SharedBuilder_ITeachingBubbleProps1563295964[typingsJapgolly.officeUiFabricReact.mod.TeachingBubbleBase](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ITeachingBubbleProps): SharedBuilder_ITeachingBubbleProps1563295964[typingsJapgolly.officeUiFabricReact.mod.TeachingBubbleBase] = new SharedBuilder_ITeachingBubbleProps1563295964[typingsJapgolly.officeUiFabricReact.mod.TeachingBubbleBase](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

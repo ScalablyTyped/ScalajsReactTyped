@@ -1,43 +1,79 @@
 package typingsJapgolly.plotlyJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotDatum> */
-trait PlotSelectedData extends js.Object {
+trait PlotSelectedData extends StObject {
+  
   var curveNumber: js.UndefOr[Double] = js.undefined
+  
+  var customdata: js.UndefOr[Datum] = js.undefined
+  
   var data: js.UndefOr[PlotData] = js.undefined
+  
   var pointIndex: js.UndefOr[Double] = js.undefined
+  
   var pointNumber: js.UndefOr[Double] = js.undefined
+  
   var x: js.UndefOr[Datum] = js.undefined
+  
   var xaxis: js.UndefOr[LayoutAxis] = js.undefined
+  
   var y: js.UndefOr[Datum] = js.undefined
+  
   var yaxis: js.UndefOr[LayoutAxis] = js.undefined
 }
-
 object PlotSelectedData {
-  @scala.inline
-  def apply(
-    curveNumber: Int | Double = null,
-    data: PlotData = null,
-    pointIndex: Int | Double = null,
-    pointNumber: Int | Double = null,
-    x: Datum = null,
-    xaxis: LayoutAxis = null,
-    y: Datum = null,
-    yaxis: LayoutAxis = null
-  ): PlotSelectedData = {
+  
+  inline def apply(): PlotSelectedData = {
     val __obj = js.Dynamic.literal()
-    if (curveNumber != null) __obj.updateDynamic("curveNumber")(curveNumber.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
-    if (pointNumber != null) __obj.updateDynamic("pointNumber")(pointNumber.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (xaxis != null) __obj.updateDynamic("xaxis")(xaxis.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (yaxis != null) __obj.updateDynamic("yaxis")(yaxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotSelectedData]
   }
+  
+  extension [Self <: PlotSelectedData](x: Self) {
+    
+    inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
+    
+    inline def setCurveNumberUndefined: Self = StObject.set(x, "curveNumber", js.undefined)
+    
+    inline def setCustomdata(value: Datum): Self = StObject.set(x, "customdata", value.asInstanceOf[js.Any])
+    
+    inline def setCustomdataNull: Self = StObject.set(x, "customdata", null)
+    
+    inline def setCustomdataUndefined: Self = StObject.set(x, "customdata", js.undefined)
+    
+    inline def setData(value: PlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
+    
+    inline def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
+    
+    inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPointNumberUndefined: Self = StObject.set(x, "pointNumber", js.undefined)
+    
+    inline def setX(value: Datum): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXNull: Self = StObject.set(x, "x", null)
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setXaxis(value: LayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    
+    inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
+    
+    inline def setY(value: Datum): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYNull: Self = StObject.set(x, "y", null)
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    
+    inline def setYaxis(value: LayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    
+    inline def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
+  }
 }
-

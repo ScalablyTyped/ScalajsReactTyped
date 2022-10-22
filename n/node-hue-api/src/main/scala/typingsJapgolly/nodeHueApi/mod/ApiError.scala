@@ -1,19 +1,26 @@
 package typingsJapgolly.nodeHueApi.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-hue-api", "ApiError")
 @js.native
-class ApiError protected () extends Error {
+open class ApiError protected ()
+  extends StObject
+     with Error {
   def this(error: js.Object) = this()
+  
   var address: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var message: String = js.native
+  var message: String = js.native
+  
+  /* standard es5 */
   /* CompleteClass */
-  override var name: String = js.native
-  var `type`: js.Any = js.native
+  var name: String = js.native
+  
+  var `type`: Any = js.native
 }
-

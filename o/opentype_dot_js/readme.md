@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentype_dot_js
 
-Typings are for version 0.7
+Typings are for version 1.3
 
 ## Library description:
 OpenType font parser
@@ -9,11 +9,11 @@ OpenType font parser
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | opentype.js |
-| Keywords           | graphics, fonts, opentype, otf, ttf, woff, type |
-| # releases         | 9 |
-| # dependents       | 124 |
-| # downloads        | 1039249 |
-| # stars            | 9 |
+| Keywords           | graphics, fonts, font, opentype, otf, ttf, woff, type |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 838278.0 |
+| # stars            | 3605.0 |
 
 ## Links
 - [Homepage](https://github.com/opentypejs/opentype.js#readme)

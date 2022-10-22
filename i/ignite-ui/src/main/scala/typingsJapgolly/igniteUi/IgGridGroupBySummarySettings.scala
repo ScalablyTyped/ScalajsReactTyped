@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridGroupBySummarySettings
-  extends /**
-	 * Option for IgGridGroupBySummarySettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies the delimiter for multiple summaries.
-  	 *
-  	 */
+    * Specifies the delimiter for multiple summaries.
+    *
+    */
   var multiSummaryDelimiter: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Format of the summary value. By default, two digits are shown after the decimal place. Checkout [Formatting Dates, Numbers and Strings](http://www.igniteui.com/help/formatting-dates-numbers-and-strings) for details on the valid formatting specifiers.
-  	 *
-  	 */
+    * Format of the summary value. By default, two digits are shown after the decimal place. Checkout [Formatting Dates, Numbers and Strings](http://www.igniteui.com/help/formatting-dates-numbers-and-strings) for details on the valid formatting specifiers.
+    *
+    */
   var summaryFormat: js.UndefOr[String] = js.undefined
 }
-
 object IgGridGroupBySummarySettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridGroupBySummarySettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    multiSummaryDelimiter: String = null,
-    summaryFormat: String = null
-  ): IgGridGroupBySummarySettings = {
+  
+  inline def apply(): IgGridGroupBySummarySettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (multiSummaryDelimiter != null) __obj.updateDynamic("multiSummaryDelimiter")(multiSummaryDelimiter.asInstanceOf[js.Any])
-    if (summaryFormat != null) __obj.updateDynamic("summaryFormat")(summaryFormat.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridGroupBySummarySettings]
   }
+  
+  extension [Self <: IgGridGroupBySummarySettings](x: Self) {
+    
+    inline def setMultiSummaryDelimiter(value: String): Self = StObject.set(x, "multiSummaryDelimiter", value.asInstanceOf[js.Any])
+    
+    inline def setMultiSummaryDelimiterUndefined: Self = StObject.set(x, "multiSummaryDelimiter", js.undefined)
+    
+    inline def setSummaryFormat(value: String): Self = StObject.set(x, "summaryFormat", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryFormatUndefined: Self = StObject.set(x, "summaryFormat", js.undefined)
+  }
 }
-

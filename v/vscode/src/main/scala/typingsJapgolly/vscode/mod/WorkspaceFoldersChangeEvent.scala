@@ -1,26 +1,36 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkspaceFoldersChangeEvent extends js.Object {
+trait WorkspaceFoldersChangeEvent extends StObject {
+  
   /**
-  		 * Added workspace folders.
-  		 */
+    * Added workspace folders.
+    */
   val added: js.Array[WorkspaceFolder]
+  
   /**
-  		 * Removed workspace folders.
-  		 */
+    * Removed workspace folders.
+    */
   val removed: js.Array[WorkspaceFolder]
 }
-
 object WorkspaceFoldersChangeEvent {
-  @scala.inline
-  def apply(added: js.Array[WorkspaceFolder], removed: js.Array[WorkspaceFolder]): WorkspaceFoldersChangeEvent = {
-    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
   
+  inline def apply(added: js.Array[WorkspaceFolder], removed: js.Array[WorkspaceFolder]): WorkspaceFoldersChangeEvent = {
+    val __obj = js.Dynamic.literal(added = added.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceFoldersChangeEvent]
   }
+  
+  extension [Self <: WorkspaceFoldersChangeEvent](x: Self) {
+    
+    inline def setAdded(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    
+    inline def setAddedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "added", js.Array(value*))
+    
+    inline def setRemoved(value: js.Array[WorkspaceFolder]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+    
+    inline def setRemovedVarargs(value: WorkspaceFolder*): Self = StObject.set(x, "removed", js.Array(value*))
+  }
 }
-

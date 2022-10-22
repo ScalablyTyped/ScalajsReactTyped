@@ -3,118 +3,219 @@ package typingsJapgolly.googleVisualization.google.visualization
 import org.scalablytyped.runtime.NumberDictionary
 import typingsJapgolly.googleVisualization.googleVisualizationStrings.function
 import typingsJapgolly.googleVisualization.googleVisualizationStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScatterChartOptions extends js.Object {
+trait ScatterChartOptions extends StObject {
+  
   var aggregationTarget: js.UndefOr[String] = js.undefined
+  
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
+  
   var annotations: js.UndefOr[ChartAnnotations] = js.undefined
+  
   var axisTitlesPosition: js.UndefOr[ChartAxisTitlesPosition] = js.undefined
+  
   var backgroundColor: js.UndefOr[String | ChartStrokeFill] = js.undefined
+  
   var chartArea: js.UndefOr[ChartArea] = js.undefined
+  
   var colors: js.UndefOr[js.Array[String]] = js.undefined
+  
   var crosshair: js.UndefOr[ChartCrosshair] = js.undefined
+  
   var curveType: js.UndefOr[none | function] = js.undefined
+  
   var dataOpacity: js.UndefOr[Double] = js.undefined
+  
   var enableInteractivity: js.UndefOr[Boolean] = js.undefined
+  
   var explorer: js.UndefOr[ChartExplorer] = js.undefined
+  
   var fontName: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[Double] = js.undefined
+  
   var forceIFrame: js.UndefOr[Boolean] = js.undefined
+  
   var hAxis: js.UndefOr[ChartAxis] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var legend: js.UndefOr[ChartLegend | none] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   var orientation: js.UndefOr[ChartOrientation] = js.undefined
+  
   var pointShape: js.UndefOr[ChartPointShape] = js.undefined
+  
   var pointSize: js.UndefOr[Double] = js.undefined
+  
   var pointsVisible: js.UndefOr[Boolean] = js.undefined
+  
   var selectionMode: js.UndefOr[ChartSelectionMode] = js.undefined
-  var series: js.UndefOr[js.Any] = js.undefined
+  
+  var series: js.UndefOr[Any] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var titlePosition: js.UndefOr[String] = js.undefined
+  
   var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
+  
   var tooltip: js.UndefOr[ChartTooltip] = js.undefined
+  
   var trendlines: js.UndefOr[NumberDictionary[ChartTrendlineOptions]] = js.undefined
+  
   var vAxis: js.UndefOr[ChartAxis] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ScatterChartOptions {
-  @scala.inline
-  def apply(
-    aggregationTarget: String = null,
-    animation: TransitionAnimation = null,
-    annotations: ChartAnnotations = null,
-    axisTitlesPosition: ChartAxisTitlesPosition = null,
-    backgroundColor: String | ChartStrokeFill = null,
-    chartArea: ChartArea = null,
-    colors: js.Array[String] = null,
-    crosshair: ChartCrosshair = null,
-    curveType: none | function = null,
-    dataOpacity: Int | Double = null,
-    enableInteractivity: js.UndefOr[Boolean] = js.undefined,
-    explorer: ChartExplorer = null,
-    fontName: String = null,
-    fontSize: Int | Double = null,
-    forceIFrame: js.UndefOr[Boolean] = js.undefined,
-    hAxis: ChartAxis = null,
-    height: Int | Double = null,
-    legend: ChartLegend | none = null,
-    lineWidth: Int | Double = null,
-    orientation: ChartOrientation = null,
-    pointShape: ChartPointShape = null,
-    pointSize: Int | Double = null,
-    pointsVisible: js.UndefOr[Boolean] = js.undefined,
-    selectionMode: ChartSelectionMode = null,
-    series: js.Any = null,
-    theme: String = null,
-    title: String = null,
-    titlePosition: String = null,
-    titleTextStyle: ChartTextStyle = null,
-    tooltip: ChartTooltip = null,
-    trendlines: NumberDictionary[ChartTrendlineOptions] = null,
-    vAxis: ChartAxis = null,
-    width: Int | Double = null
-  ): ScatterChartOptions = {
+  
+  inline def apply(): ScatterChartOptions = {
     val __obj = js.Dynamic.literal()
-    if (aggregationTarget != null) __obj.updateDynamic("aggregationTarget")(aggregationTarget.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
-    if (axisTitlesPosition != null) __obj.updateDynamic("axisTitlesPosition")(axisTitlesPosition.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (chartArea != null) __obj.updateDynamic("chartArea")(chartArea.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
-    if (curveType != null) __obj.updateDynamic("curveType")(curveType.asInstanceOf[js.Any])
-    if (dataOpacity != null) __obj.updateDynamic("dataOpacity")(dataOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableInteractivity)) __obj.updateDynamic("enableInteractivity")(enableInteractivity.asInstanceOf[js.Any])
-    if (explorer != null) __obj.updateDynamic("explorer")(explorer.asInstanceOf[js.Any])
-    if (fontName != null) __obj.updateDynamic("fontName")(fontName.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIFrame)) __obj.updateDynamic("forceIFrame")(forceIFrame.asInstanceOf[js.Any])
-    if (hAxis != null) __obj.updateDynamic("hAxis")(hAxis.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (pointShape != null) __obj.updateDynamic("pointShape")(pointShape.asInstanceOf[js.Any])
-    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(pointsVisible)) __obj.updateDynamic("pointsVisible")(pointsVisible.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (titlePosition != null) __obj.updateDynamic("titlePosition")(titlePosition.asInstanceOf[js.Any])
-    if (titleTextStyle != null) __obj.updateDynamic("titleTextStyle")(titleTextStyle.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines.asInstanceOf[js.Any])
-    if (vAxis != null) __obj.updateDynamic("vAxis")(vAxis.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScatterChartOptions]
   }
+  
+  extension [Self <: ScatterChartOptions](x: Self) {
+    
+    inline def setAggregationTarget(value: String): Self = StObject.set(x, "aggregationTarget", value.asInstanceOf[js.Any])
+    
+    inline def setAggregationTargetUndefined: Self = StObject.set(x, "aggregationTarget", js.undefined)
+    
+    inline def setAnimation(value: TransitionAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAnnotations(value: ChartAnnotations): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    
+    inline def setAxisTitlesPosition(value: ChartAxisTitlesPosition): Self = StObject.set(x, "axisTitlesPosition", value.asInstanceOf[js.Any])
+    
+    inline def setAxisTitlesPositionUndefined: Self = StObject.set(x, "axisTitlesPosition", js.undefined)
+    
+    inline def setBackgroundColor(value: String | ChartStrokeFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setChartArea(value: ChartArea): Self = StObject.set(x, "chartArea", value.asInstanceOf[js.Any])
+    
+    inline def setChartAreaUndefined: Self = StObject.set(x, "chartArea", js.undefined)
+    
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setCrosshair(value: ChartCrosshair): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    
+    inline def setCurveType(value: none | function): Self = StObject.set(x, "curveType", value.asInstanceOf[js.Any])
+    
+    inline def setCurveTypeUndefined: Self = StObject.set(x, "curveType", js.undefined)
+    
+    inline def setDataOpacity(value: Double): Self = StObject.set(x, "dataOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setDataOpacityUndefined: Self = StObject.set(x, "dataOpacity", js.undefined)
+    
+    inline def setEnableInteractivity(value: Boolean): Self = StObject.set(x, "enableInteractivity", value.asInstanceOf[js.Any])
+    
+    inline def setEnableInteractivityUndefined: Self = StObject.set(x, "enableInteractivity", js.undefined)
+    
+    inline def setExplorer(value: ChartExplorer): Self = StObject.set(x, "explorer", value.asInstanceOf[js.Any])
+    
+    inline def setExplorerUndefined: Self = StObject.set(x, "explorer", js.undefined)
+    
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    
+    inline def setFontNameUndefined: Self = StObject.set(x, "fontName", js.undefined)
+    
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setForceIFrame(value: Boolean): Self = StObject.set(x, "forceIFrame", value.asInstanceOf[js.Any])
+    
+    inline def setForceIFrameUndefined: Self = StObject.set(x, "forceIFrame", js.undefined)
+    
+    inline def setHAxis(value: ChartAxis): Self = StObject.set(x, "hAxis", value.asInstanceOf[js.Any])
+    
+    inline def setHAxisUndefined: Self = StObject.set(x, "hAxis", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLegend(value: ChartLegend | none): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setOrientation(value: ChartOrientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPointShape(value: ChartPointShape): Self = StObject.set(x, "pointShape", value.asInstanceOf[js.Any])
+    
+    inline def setPointShapeUndefined: Self = StObject.set(x, "pointShape", js.undefined)
+    
+    inline def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
+    
+    inline def setPointSizeUndefined: Self = StObject.set(x, "pointSize", js.undefined)
+    
+    inline def setPointsVisible(value: Boolean): Self = StObject.set(x, "pointsVisible", value.asInstanceOf[js.Any])
+    
+    inline def setPointsVisibleUndefined: Self = StObject.set(x, "pointsVisible", js.undefined)
+    
+    inline def setSelectionMode(value: ChartSelectionMode): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionModeUndefined: Self = StObject.set(x, "selectionMode", js.undefined)
+    
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitlePosition(value: String): Self = StObject.set(x, "titlePosition", value.asInstanceOf[js.Any])
+    
+    inline def setTitlePositionUndefined: Self = StObject.set(x, "titlePosition", js.undefined)
+    
+    inline def setTitleTextStyle(value: ChartTextStyle): Self = StObject.set(x, "titleTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def setTitleTextStyleUndefined: Self = StObject.set(x, "titleTextStyle", js.undefined)
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTooltip(value: ChartTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTrendlines(value: NumberDictionary[ChartTrendlineOptions]): Self = StObject.set(x, "trendlines", value.asInstanceOf[js.Any])
+    
+    inline def setTrendlinesUndefined: Self = StObject.set(x, "trendlines", js.undefined)
+    
+    inline def setVAxis(value: ChartAxis): Self = StObject.set(x, "vAxis", value.asInstanceOf[js.Any])
+    
+    inline def setVAxisUndefined: Self = StObject.set(x, "vAxis", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

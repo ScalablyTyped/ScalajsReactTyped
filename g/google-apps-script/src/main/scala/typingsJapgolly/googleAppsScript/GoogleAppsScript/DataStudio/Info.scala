@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains info data for the config. Its properties determine how the info is displayed in Data
@@ -16,18 +15,23 @@ import scala.scalajs.js.annotation._
   *       .setId("info1")
   *       .setText("This text gives some context on the configuration.");
   */
-trait Info extends js.Object {
+trait Info extends StObject {
+  
   def setId(id: String): Info
+  
   def setText(text: String): Info
 }
-
 object Info {
-  @scala.inline
-  def apply(setId: String => CallbackTo[Info], setText: String => CallbackTo[Info]): Info = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setId")(js.Any.fromFunction1((t0: java.lang.String) => setId(t0).runNow()))
-    __obj.updateDynamic("setText")(js.Any.fromFunction1((t0: java.lang.String) => setText(t0).runNow()))
+  
+  inline def apply(setId: String => Info, setText: String => Info): Info = {
+    val __obj = js.Dynamic.literal(setId = js.Any.fromFunction1(setId), setText = js.Any.fromFunction1(setText))
     __obj.asInstanceOf[Info]
   }
+  
+  extension [Self <: Info](x: Self) {
+    
+    inline def setSetId(value: String => Info): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    
+    inline def setSetText(value: String => Info): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+  }
 }
-

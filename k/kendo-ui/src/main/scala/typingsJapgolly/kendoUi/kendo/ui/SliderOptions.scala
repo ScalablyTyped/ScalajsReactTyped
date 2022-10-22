@@ -1,64 +1,111 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderOptions extends js.Object {
+trait SliderOptions
+  extends StObject
+     with AllEditorOptions {
+  
   var change: js.UndefOr[js.Function1[/* e */ SliderChangeEvent, Unit]] = js.undefined
+  
   var decreaseButtonTitle: js.UndefOr[String] = js.undefined
+  
   var dragHandleTitle: js.UndefOr[String] = js.undefined
+  
   var increaseButtonTitle: js.UndefOr[String] = js.undefined
+  
   var largeStep: js.UndefOr[Double] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var orientation: js.UndefOr[String] = js.undefined
+  
   var showButtons: js.UndefOr[Boolean] = js.undefined
+  
   var slide: js.UndefOr[js.Function1[/* e */ SliderSlideEvent, Unit]] = js.undefined
+  
   var smallStep: js.UndefOr[Double] = js.undefined
+  
   var tickPlacement: js.UndefOr[String] = js.undefined
+  
   var tooltip: js.UndefOr[SliderTooltip] = js.undefined
+  
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object SliderOptions {
-  @scala.inline
-  def apply(
-    change: /* e */ SliderChangeEvent => Callback = null,
-    decreaseButtonTitle: String = null,
-    dragHandleTitle: String = null,
-    increaseButtonTitle: String = null,
-    largeStep: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    name: String = null,
-    orientation: String = null,
-    showButtons: js.UndefOr[Boolean] = js.undefined,
-    slide: /* e */ SliderSlideEvent => Callback = null,
-    smallStep: Int | Double = null,
-    tickPlacement: String = null,
-    tooltip: SliderTooltip = null,
-    value: Int | Double = null
-  ): SliderOptions = {
+  
+  inline def apply(): SliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.SliderChangeEvent) => change(t0).runNow()))
-    if (decreaseButtonTitle != null) __obj.updateDynamic("decreaseButtonTitle")(decreaseButtonTitle.asInstanceOf[js.Any])
-    if (dragHandleTitle != null) __obj.updateDynamic("dragHandleTitle")(dragHandleTitle.asInstanceOf[js.Any])
-    if (increaseButtonTitle != null) __obj.updateDynamic("increaseButtonTitle")(increaseButtonTitle.asInstanceOf[js.Any])
-    if (largeStep != null) __obj.updateDynamic("largeStep")(largeStep.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons.asInstanceOf[js.Any])
-    if (slide != null) __obj.updateDynamic("slide")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.SliderSlideEvent) => slide(t0).runNow()))
-    if (smallStep != null) __obj.updateDynamic("smallStep")(smallStep.asInstanceOf[js.Any])
-    if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderOptions]
   }
+  
+  extension [Self <: SliderOptions](x: Self) {
+    
+    inline def setChange(value: /* e */ SliderChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ SliderChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setDecreaseButtonTitle(value: String): Self = StObject.set(x, "decreaseButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setDecreaseButtonTitleUndefined: Self = StObject.set(x, "decreaseButtonTitle", js.undefined)
+    
+    inline def setDragHandleTitle(value: String): Self = StObject.set(x, "dragHandleTitle", value.asInstanceOf[js.Any])
+    
+    inline def setDragHandleTitleUndefined: Self = StObject.set(x, "dragHandleTitle", js.undefined)
+    
+    inline def setIncreaseButtonTitle(value: String): Self = StObject.set(x, "increaseButtonTitle", value.asInstanceOf[js.Any])
+    
+    inline def setIncreaseButtonTitleUndefined: Self = StObject.set(x, "increaseButtonTitle", js.undefined)
+    
+    inline def setLargeStep(value: Double): Self = StObject.set(x, "largeStep", value.asInstanceOf[js.Any])
+    
+    inline def setLargeStepUndefined: Self = StObject.set(x, "largeStep", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setShowButtons(value: Boolean): Self = StObject.set(x, "showButtons", value.asInstanceOf[js.Any])
+    
+    inline def setShowButtonsUndefined: Self = StObject.set(x, "showButtons", js.undefined)
+    
+    inline def setSlide(value: /* e */ SliderSlideEvent => Callback): Self = StObject.set(x, "slide", js.Any.fromFunction1((t0: /* e */ SliderSlideEvent) => value(t0).runNow()))
+    
+    inline def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
+    
+    inline def setSmallStep(value: Double): Self = StObject.set(x, "smallStep", value.asInstanceOf[js.Any])
+    
+    inline def setSmallStepUndefined: Self = StObject.set(x, "smallStep", js.undefined)
+    
+    inline def setTickPlacement(value: String): Self = StObject.set(x, "tickPlacement", value.asInstanceOf[js.Any])
+    
+    inline def setTickPlacementUndefined: Self = StObject.set(x, "tickPlacement", js.undefined)
+    
+    inline def setTooltip(value: SliderTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

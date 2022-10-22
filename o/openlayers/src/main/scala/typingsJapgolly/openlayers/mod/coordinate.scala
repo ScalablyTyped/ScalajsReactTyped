@@ -1,12 +1,15 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "coordinate")
-@js.native
-object coordinate extends js.Object {
+object coordinate {
+  
+  @JSImport("openlayers", "coordinate")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Add `delta` to `coordinate`. `coordinate` is modified in place and returned
     * by the function.
@@ -22,7 +25,8 @@ object coordinate extends js.Object {
     * @return The input coordinate adjusted by the given delta.
     * @api stable
     */
-  def add(coordinate: Coordinate_, delta: Coordinate_): Coordinate_ = js.native
+  inline def add(coordinate: Coordinate_, delta: Coordinate_): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(coordinate.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
+  
   /**
     * Returns a {@link ol.CoordinateFormatType} function that can be used to format
     * a {ol.Coordinate} to a string.
@@ -46,8 +50,9 @@ object coordinate extends js.Object {
     * @return Coordinate format.
     * @api stable
     */
-  def createStringXY(): CoordinateFormatType = js.native
-  def createStringXY(opt_fractionDigits: Double): CoordinateFormatType = js.native
+  inline def createStringXY(): CoordinateFormatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringXY")().asInstanceOf[CoordinateFormatType]
+  inline def createStringXY(opt_fractionDigits: Double): CoordinateFormatType = ^.asInstanceOf[js.Dynamic].applyDynamic("createStringXY")(opt_fractionDigits.asInstanceOf[js.Any]).asInstanceOf[CoordinateFormatType]
+  
   /**
     * Transforms the given {@link ol.Coordinate} to a string using the given string
     * template. The strings `{x}` and `{y}` in the template will be replaced with
@@ -75,8 +80,9 @@ object coordinate extends js.Object {
     * @return Formatted coordinate.
     * @api stable
     */
-  def format(coordinate: Coordinate_, template: String): String = js.native
-  def format(coordinate: Coordinate_, template: String, opt_fractionDigits: Double): String = js.native
+  inline def format(coordinate: Coordinate_, template: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def format(coordinate: Coordinate_, template: String, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(coordinate.asInstanceOf[js.Any], template.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Rotate `coordinate` by `angle`. `coordinate` is modified in place and
     * returned by the function.
@@ -93,7 +99,8 @@ object coordinate extends js.Object {
     * @return Coordinate.
     * @api stable
     */
-  def rotate(coordinate: Coordinate_, angle: Double): Coordinate_ = js.native
+  inline def rotate(coordinate: Coordinate_, angle: Double): Coordinate_ = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(coordinate.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Coordinate_]
+  
   /**
     * Format a geographic coordinate with the hemisphere, degrees, minutes, and
     * seconds.
@@ -116,9 +123,11 @@ object coordinate extends js.Object {
     * @return Hemisphere, degrees, minutes and seconds.
     * @api stable
     */
-  def toStringHDMS(): String = js.native
-  def toStringHDMS(coordinate: Coordinate_): String = js.native
-  def toStringHDMS(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
+  inline def toStringHDMS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")().asInstanceOf[String]
+  inline def toStringHDMS(coordinate: Unit, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toStringHDMS(coordinate: Coordinate_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")(coordinate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toStringHDMS(coordinate: Coordinate_, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringHDMS")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Format a coordinate as a comma delimited string.
     *
@@ -140,8 +149,8 @@ object coordinate extends js.Object {
     * @return XY.
     * @api stable
     */
-  def toStringXY(): String = js.native
-  def toStringXY(coordinate: Coordinate_): String = js.native
-  def toStringXY(coordinate: Coordinate_, opt_fractionDigits: Double): String = js.native
+  inline def toStringXY(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")().asInstanceOf[String]
+  inline def toStringXY(coordinate: Unit, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toStringXY(coordinate: Coordinate_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toStringXY(coordinate: Coordinate_, opt_fractionDigits: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toStringXY")(coordinate.asInstanceOf[js.Any], opt_fractionDigits.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

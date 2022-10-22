@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.notification
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.register
   - typingsJapgolly.reactNative.reactNativeStrings.registrationError
 */
-trait PushNotificationEventName extends js.Object
-
+trait PushNotificationEventName extends StObject
 object PushNotificationEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def localNotification: typingsJapgolly.reactNative.reactNativeStrings.localNotification = this.cast("localNotification")
-  @scala.inline
-  def notification: typingsJapgolly.reactNative.reactNativeStrings.notification = this.cast("notification")
-  @scala.inline
-  def register: typingsJapgolly.reactNative.reactNativeStrings.register = this.cast("register")
-  @scala.inline
-  def registrationError: typingsJapgolly.reactNative.reactNativeStrings.registrationError = this.cast("registrationError")
+  
+  inline def localNotification: typingsJapgolly.reactNative.reactNativeStrings.localNotification = "localNotification".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.localNotification]
+  
+  inline def notification: typingsJapgolly.reactNative.reactNativeStrings.notification = "notification".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.notification]
+  
+  inline def register: typingsJapgolly.reactNative.reactNativeStrings.register = "register".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.register]
+  
+  inline def registrationError: typingsJapgolly.reactNative.reactNativeStrings.registrationError = "registrationError".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.registrationError]
 }
-

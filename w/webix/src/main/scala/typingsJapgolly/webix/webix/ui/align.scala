@@ -1,16 +1,19 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.align")
 @js.native
-class align () extends baseview {
+trait align
+  extends StObject
+     with baseview {
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
+  
   @JSName("config")
   var config_align: alignConfig = js.native
+  
   def getBody(): baseview = js.native
 }
-

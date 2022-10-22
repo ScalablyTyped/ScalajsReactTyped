@@ -10,10 +10,10 @@ The lodash method `_.rangeRight` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.rangeright |
 | Keywords           | lodash-modularized, rangeright |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 5931 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2464.6666666666665 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

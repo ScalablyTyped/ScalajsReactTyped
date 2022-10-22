@@ -1,30 +1,42 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RedirectOptions extends js.Object {
+trait RedirectOptions extends StObject {
+  
   var redirectFile: js.UndefOr[String] = js.undefined
+  
   var redirectUrl: js.UndefOr[String] = js.undefined
+  
   var rememberUser: js.UndefOr[Boolean] = js.undefined
+  
   var scope: js.UndefOr[String] = js.undefined
 }
-
 object RedirectOptions {
-  @scala.inline
-  def apply(
-    redirectFile: String = null,
-    redirectUrl: String = null,
-    rememberUser: js.UndefOr[Boolean] = js.undefined,
-    scope: String = null
-  ): RedirectOptions = {
+  
+  inline def apply(): RedirectOptions = {
     val __obj = js.Dynamic.literal()
-    if (redirectFile != null) __obj.updateDynamic("redirectFile")(redirectFile.asInstanceOf[js.Any])
-    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl.asInstanceOf[js.Any])
-    if (!js.isUndefined(rememberUser)) __obj.updateDynamic("rememberUser")(rememberUser.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectOptions]
   }
+  
+  extension [Self <: RedirectOptions](x: Self) {
+    
+    inline def setRedirectFile(value: String): Self = StObject.set(x, "redirectFile", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectFileUndefined: Self = StObject.set(x, "redirectFile", js.undefined)
+    
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    
+    inline def setRememberUser(value: Boolean): Self = StObject.set(x, "rememberUser", value.asInstanceOf[js.Any])
+    
+    inline def setRememberUserUndefined: Self = StObject.set(x, "rememberUser", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+  }
 }
-

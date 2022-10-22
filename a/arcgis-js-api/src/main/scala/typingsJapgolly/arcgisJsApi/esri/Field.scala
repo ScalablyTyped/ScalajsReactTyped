@@ -1,6 +1,5 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`count-or-amount`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`date-and-time`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`global-id`
@@ -21,116 +20,105 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.guid
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.integer
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.long
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.measurement
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.oid
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.raster
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.single
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Field
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * The display name for the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
     */
   var alias: String = js.native
+  
   /**
     * The default value set for the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
-    *
     * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: Double | String | js.Any = js.native
+  var defaultValue: Double | String | Any = js.native
+  
   /**
     * Contains information describing the purpose of each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#description)
     */
   var description: String = js.native
+  
   /**
-    * The domain associated with the field. Domains are used to constrain the values allowed in a field. There are two types of domains: [RangeDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) and [CodedValueDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
+    * The domain associated with the field.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
     */
-  var domain: Domain = js.native
+  var domain: CodedValueDomain | RangeDomain | InheritedDomain = js.native
+  
   /**
     * Indicates whether the field is editable.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
     */
   var editable: Boolean = js.native
+  
   /**
     * The field length.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
-    *
     * @default -1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
     */
   var length: Double = js.native
+  
   /**
     * The name of the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
     */
   var name: String = js.native
+  
   /**
-    * Indicates if the field can accept `null` values. *Requires ArcGIS Server version 10.1 or greater.*
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
+    * Indicates if the field can accept `null` values.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
     */
   var nullable: Boolean = js.native
+  
   /**
     * The data type of the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
     */
-  var `type`: `small-integer` | integer | single | double | long | string | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
+  var `type`: `small-integer` | integer | single | double | long | string_ | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = js.native
+  
   /**
-    * The types of values that can be assigned to a field. See the table below for a list of possible values.
-    *
-    * | Mode | Description |
-    * | ------|------------ |
-    * | name-or-title | Text that represents a name, title, label, or keyword for each feature. |
-    * | description | Text that provides a longer description of the feature, more than just a name or title. |
-    * | type-or-category | Types or categories that group features based on common characteristics. |
-    * | count-or-amount | Integers (no decimal) that represent how many or how much there is of a specific attribute. |
-    * | percentage-or-ratio | Number values in this field reflect the relationship between different quantities. |
-    * | measurement | A number that reflects a characteristic that you can precisely measure. |
-    * | unique-identifier | The values in this field are used to positively distinguish one feature or entity from another. |
-    * | ordered-or-ranked | The values in this field represent a feature's status in an ordered or ranked list. For example, a feature could be one of the following: `Small, medium, large`, `First, second, third, fourth`, or `Informational, warning, error, failure`.|
-    * | binary | Only one of two values are possible for each feature. Some examples include the following: `On or off`, `Yes or no`, `True or false`, or `Inhabited or vacant`. |
-    * | location-or-place-name | Values in this field represent a geographic location. Examples of values in such a field include a street address, city name, region, building name (such as A.K. Smiley Public Library), attraction name (such as Alameda County Fairgrounds or Cairngorms National Park), postal code, or country. |
-    * | coordinate | These fields store a geographic coordinate value such as x, y, z, latitude, or longitude. |
-    * | date-and-time | Values in this field store explicit dates and times or date references such as days of the week, months, or years. |
-    * | none | No specified type. |
-    *
+    * The types of values that can be assigned to a field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#valueType)
     */
-  var valueType: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier` = js.native
+  var valueType: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier` = js.native
 }
-
-@JSGlobal("__esri.Field")
-@js.native
-object Field extends TopLevel[FieldConstructor]
-

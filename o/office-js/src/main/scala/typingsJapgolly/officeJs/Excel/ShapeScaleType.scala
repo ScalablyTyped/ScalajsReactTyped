@@ -1,35 +1,36 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeScaleType extends js.Object
-
+sealed trait ShapeScaleType extends StObject
 /**
-  *
   * Specifies whether the shape is scaled relative to its original or current size.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeScaleType")
 @js.native
-object ShapeScaleType extends js.Object {
+object ShapeScaleType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait currentSize extends ShapeScaleType
+  sealed trait currentSize
+    extends StObject
+       with ShapeScaleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait originalSize extends ShapeScaleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeScaleType with String] = js.native
-  /* "CurrentSize" */ @js.native
-  object currentSize extends TopLevel[currentSize with String]
-  
-  /* "OriginalSize" */ @js.native
-  object originalSize extends TopLevel[originalSize with String]
-  
+  sealed trait originalSize
+    extends StObject
+       with ShapeScaleType
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for git-semver-tags
 
-Typings are for version 3.0
+Typings are for version 4.1
 
 ## Library description:
 Get all git semver tags of your repository in reverse chronological order
@@ -10,10 +10,10 @@ Get all git semver tags of your repository in reverse chronological order
 | ------------------ | :-------------: |
 | Full name          | git-semver-tags |
 | Keywords           | git-semver-tags, order, semver, tag, git-tag, git |
-| # releases         | 13 |
-| # dependents       | 32 |
-| # downloads        | 33513140 |
-| # stars            | 1 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8536186.333333334 |
+| # stars            | 6431.0 |
 
 ## Links
 - [Homepage](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/git-semver-tags#readme)

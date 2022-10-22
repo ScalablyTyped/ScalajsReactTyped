@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.UI.StartScreen
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JumpListSystemGroupKind extends js.Object
-
+sealed trait JumpListSystemGroupKind extends StObject
 /** Indicates the kind of system group used by an app's jump list. */
 @JSGlobal("Windows.UI.StartScreen.JumpListSystemGroupKind")
 @js.native
-object JumpListSystemGroupKind extends js.Object {
+object JumpListSystemGroupKind extends StObject {
+  
   /** Specifies that the system managed frequent group be used in the jump list. */
   @js.native
-  sealed trait frequent extends JumpListSystemGroupKind
+  sealed trait frequent
+    extends StObject
+       with JumpListSystemGroupKind
   
   /** Specifies that no system managed group be used in the jump list. */
   @js.native
-  sealed trait none extends JumpListSystemGroupKind
+  sealed trait none
+    extends StObject
+       with JumpListSystemGroupKind
   
   /** Specifies that the system managed recent group be used in the jump list. */
   @js.native
-  sealed trait recent extends JumpListSystemGroupKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JumpListSystemGroupKind with Double] = js.native
-  /* 1 */ @js.native
-  object frequent extends TopLevel[frequent with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object recent extends TopLevel[recent with Double]
-  
+  sealed trait recent
+    extends StObject
+       with JumpListSystemGroupKind
 }
-

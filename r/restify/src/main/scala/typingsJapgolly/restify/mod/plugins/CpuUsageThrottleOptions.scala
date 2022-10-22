@@ -1,30 +1,42 @@
 package typingsJapgolly.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CpuUsageThrottleOptions extends js.Object {
+trait CpuUsageThrottleOptions extends StObject {
+  
   var halfLife: js.UndefOr[Double] = js.undefined
+  
   var interval: js.UndefOr[Double] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
 }
-
 object CpuUsageThrottleOptions {
-  @scala.inline
-  def apply(
-    halfLife: Int | Double = null,
-    interval: Int | Double = null,
-    limit: Int | Double = null,
-    max: Int | Double = null
-  ): CpuUsageThrottleOptions = {
+  
+  inline def apply(): CpuUsageThrottleOptions = {
     val __obj = js.Dynamic.literal()
-    if (halfLife != null) __obj.updateDynamic("halfLife")(halfLife.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
     __obj.asInstanceOf[CpuUsageThrottleOptions]
   }
+  
+  extension [Self <: CpuUsageThrottleOptions](x: Self) {
+    
+    inline def setHalfLife(value: Double): Self = StObject.set(x, "halfLife", value.asInstanceOf[js.Any])
+    
+    inline def setHalfLifeUndefined: Self = StObject.set(x, "halfLife", js.undefined)
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+  }
 }
-

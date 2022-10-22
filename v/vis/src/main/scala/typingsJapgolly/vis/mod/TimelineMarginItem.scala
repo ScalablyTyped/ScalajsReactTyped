@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineMarginItem extends js.Object {
+trait TimelineMarginItem extends StObject {
+  
   var horizontal: js.UndefOr[Double] = js.undefined
+  
   var vertical: js.UndefOr[Double] = js.undefined
 }
-
 object TimelineMarginItem {
-  @scala.inline
-  def apply(horizontal: Int | Double = null, vertical: Int | Double = null): TimelineMarginItem = {
+  
+  inline def apply(): TimelineMarginItem = {
     val __obj = js.Dynamic.literal()
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineMarginItem]
   }
+  
+  extension [Self <: TimelineMarginItem](x: Self) {
+    
+    inline def setHorizontal(value: Double): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    
+    inline def setVertical(value: Double): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+  }
 }
-

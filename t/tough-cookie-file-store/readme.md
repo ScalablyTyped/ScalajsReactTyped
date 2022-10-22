@@ -1,19 +1,19 @@
 
 # Scala.js typings for tough-cookie-file-store
 
-Typings are for version 1.2
+Typings are for version 2.0
 
 ## Library description:
-Another file store for tough-cookie module
+A JSON file store for tough-cookie module
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | tough-cookie-file-store |
-| Keywords           | cookie, cookies, cookiejar, file, store |
-| # releases         | 0 |
-| # dependents       | 25 |
-| # downloads        | 71954 |
-| # stars            | 0 |
+| Keywords           | HTTP, cookie, cookies, set-cookie, cookiejar, jar, RFC6265, RFC2965, store, file, json |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 8280.333333333334 |
+| # stars            | 20.0 |
 
 ## Links
 - [Homepage](https://github.com/ivanmarban/tough-cookie-file-store)

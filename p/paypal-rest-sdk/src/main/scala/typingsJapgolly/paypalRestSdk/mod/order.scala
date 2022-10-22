@@ -1,18 +1,22 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("paypal-rest-sdk", "order")
-@js.native
-object order extends js.Object {
-  def authorize(id: String, data: js.Any, config: js.Any): Unit = js.native
-  def authorize(id: String, data: js.Any, config: js.Any, cb: js.Any): Unit = js.native
-  def capture(id: String, data: js.Any, config: js.Any): Unit = js.native
-  def capture(id: String, data: js.Any, config: js.Any, cb: js.Any): Unit = js.native
+object order {
+  
+  @JSImport("paypal-rest-sdk", "order")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def authorize(id: String, data: Any, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def authorize(id: String, data: Any, config: Any, cb: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def capture(id: String, data: Any, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def capture(id: String, data: Any, config: Any, cb: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   // function void(id: string, config: any, cb?: any): void;
-  def get(id: String, config: js.Any): Unit = js.native
-  def get(id: String, config: js.Any, cb: js.Any): Unit = js.native
+  inline def get(id: String, config: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get(id: String, config: Any, cb: Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

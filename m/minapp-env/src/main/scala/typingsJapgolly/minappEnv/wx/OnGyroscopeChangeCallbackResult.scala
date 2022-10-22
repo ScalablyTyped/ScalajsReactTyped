@@ -1,19 +1,22 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnGyroscopeChangeCallbackResult extends js.Object {
+trait OnGyroscopeChangeCallbackResult extends StObject {
+  
   var res: Result
 }
-
 object OnGyroscopeChangeCallbackResult {
-  @scala.inline
-  def apply(res: Result): OnGyroscopeChangeCallbackResult = {
-    val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
   
+  inline def apply(res: Result): OnGyroscopeChangeCallbackResult = {
+    val __obj = js.Dynamic.literal(res = res.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnGyroscopeChangeCallbackResult]
   }
+  
+  extension [Self <: OnGyroscopeChangeCallbackResult](x: Self) {
+    
+    inline def setRes(value: Result): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+  }
 }
-

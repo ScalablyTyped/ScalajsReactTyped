@@ -1,60 +1,72 @@
 package typingsJapgolly.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents the necessary strings to get/set a hyperlink (XHL) object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
-trait RangeHyperlink extends js.Object {
+trait RangeHyperlink extends StObject {
+  
   /**
+    * Represents the URL target for the hyperlink.
     *
-    * Represents the url target for the hyperlink.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the document reference target for the hyperlink.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var documentReference: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the string displayed when hovering over the hyperlink.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var screenTip: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the string that is displayed in the top left most cell in the range.
     *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var textToDisplay: js.UndefOr[String] = js.undefined
 }
-
 object RangeHyperlink {
-  @scala.inline
-  def apply(
-    address: String = null,
-    documentReference: String = null,
-    screenTip: String = null,
-    textToDisplay: String = null
-  ): RangeHyperlink = {
+  
+  inline def apply(): RangeHyperlink = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (documentReference != null) __obj.updateDynamic("documentReference")(documentReference.asInstanceOf[js.Any])
-    if (screenTip != null) __obj.updateDynamic("screenTip")(screenTip.asInstanceOf[js.Any])
-    if (textToDisplay != null) __obj.updateDynamic("textToDisplay")(textToDisplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeHyperlink]
   }
+  
+  extension [Self <: RangeHyperlink](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setDocumentReference(value: String): Self = StObject.set(x, "documentReference", value.asInstanceOf[js.Any])
+    
+    inline def setDocumentReferenceUndefined: Self = StObject.set(x, "documentReference", js.undefined)
+    
+    inline def setScreenTip(value: String): Self = StObject.set(x, "screenTip", value.asInstanceOf[js.Any])
+    
+    inline def setScreenTipUndefined: Self = StObject.set(x, "screenTip", js.undefined)
+    
+    inline def setTextToDisplay(value: String): Self = StObject.set(x, "textToDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setTextToDisplayUndefined: Self = StObject.set(x, "textToDisplay", js.undefined)
+  }
 }
-

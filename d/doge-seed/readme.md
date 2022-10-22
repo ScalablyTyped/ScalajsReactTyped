@@ -10,10 +10,10 @@ Dank mnemonic seed phrases
 | ------------------ | :-------------: |
 | Full name          | doge-seed |
 | Keywords           | bitcoin, cryptocurrency, seed, phrase, bip39 |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 442 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52.0 |
+| # stars            | 85.0 |
 
 ## Links
 - [Homepage](https://github.com/lukechilds/doge-seed#readme)

@@ -1,35 +1,45 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ClockStep extends js.Object
-
+sealed trait ClockStep extends StObject
 @JSImport("cesium", "ClockStep")
 @js.native
-object ClockStep extends js.Object {
-  @js.native
-  sealed trait SYSTEM_CLOCK extends ClockStep
-  
-  @js.native
-  sealed trait SYSTEM_CLOCK_MULTIPLIER extends ClockStep
-  
-  @js.native
-  sealed trait TICK_DEPENDENT extends ClockStep
+object ClockStep extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ClockStep with Double] = js.native
-  /* 2 */ @js.native
-  object SYSTEM_CLOCK extends TopLevel[SYSTEM_CLOCK with Double]
+  def apply(value: Double): js.UndefOr[ClockStep & Double] = js.native
   
-  /* 1 */ @js.native
-  object SYSTEM_CLOCK_MULTIPLIER extends TopLevel[SYSTEM_CLOCK_MULTIPLIER with Double]
+  /**
+    * {@link Clock#tick} sets the clock to the current system time;
+    * ignoring all other settings.
+    */
+  @js.native
+  sealed trait SYSTEM_CLOCK
+    extends StObject
+       with ClockStep
+  /* 2 */ val SYSTEM_CLOCK: typingsJapgolly.cesium.mod.ClockStep.SYSTEM_CLOCK & Double = js.native
   
-  /* 0 */ @js.native
-  object TICK_DEPENDENT extends TopLevel[TICK_DEPENDENT with Double]
+  /**
+    * {@link Clock#tick} advances the current time by the amount of system
+    * time elapsed since the previous call multiplied by {@link Clock#multiplier}.
+    */
+  @js.native
+  sealed trait SYSTEM_CLOCK_MULTIPLIER
+    extends StObject
+       with ClockStep
+  /* 1 */ val SYSTEM_CLOCK_MULTIPLIER: typingsJapgolly.cesium.mod.ClockStep.SYSTEM_CLOCK_MULTIPLIER & Double = js.native
   
+  /**
+    * {@link Clock#tick} advances the current time by a fixed step,
+    * which is the number of seconds specified by {@link Clock#multiplier}.
+    */
+  @js.native
+  sealed trait TICK_DEPENDENT
+    extends StObject
+       with ClockStep
+  /* 0 */ val TICK_DEPENDENT: typingsJapgolly.cesium.mod.ClockStep.TICK_DEPENDENT & Double = js.native
 }
-

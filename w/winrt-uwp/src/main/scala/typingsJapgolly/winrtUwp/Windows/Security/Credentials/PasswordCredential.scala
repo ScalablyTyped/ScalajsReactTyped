@@ -1,31 +1,52 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Credentials
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IPropertySet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the password credential store. */
-@JSGlobal("Windows.Security.Credentials.PasswordCredential")
-@js.native
-/** Creates and initializes a new, empty instance of the PasswordCredential object. */
-class PasswordCredential () extends js.Object {
-  /**
-    * Creates and initializes a new instance of the PasswordCredential object that contains the provided credential data.
-    * @param resource The resource for which the credentials are used.
-    * @param userName The user name that must be present in the credentials.
-    * @param password The password for the created credentials.
-    */
-  def this(resource: String, userName: String, password: String) = this()
+trait PasswordCredential extends StObject {
+  
   /** Gets or sets the password string of the credential. */
-  var password: String = js.native
+  var password: String
+  
   /** This API is intended for internal use only should not be used in your code. */
-  var properties: IPropertySet = js.native
+  var properties: IPropertySet
+  
   /** Gets or sets the resource of the credential. */
-  var resource: String = js.native
-  /** Gets or sets the user name of the credential. */
-  var userName: String = js.native
+  var resource: String
+  
   /** Populates the password for the credential. After the operation returns successfully, you can get the password from the Password property. */
-  def retrievePassword(): Unit = js.native
+  def retrievePassword(): Unit
+  
+  /** Gets or sets the user name of the credential. */
+  var userName: String
 }
-
+object PasswordCredential {
+  
+  inline def apply(
+    password: String,
+    properties: IPropertySet,
+    resource: String,
+    retrievePassword: Callback,
+    userName: String
+  ): PasswordCredential = {
+    val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any], retrievePassword = retrievePassword.toJsFn, userName = userName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PasswordCredential]
+  }
+  
+  extension [Self <: PasswordCredential](x: Self) {
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: IPropertySet): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    
+    inline def setRetrievePassword(value: Callback): Self = StObject.set(x, "retrievePassword", value.toJsFn)
+    
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+  }
+}

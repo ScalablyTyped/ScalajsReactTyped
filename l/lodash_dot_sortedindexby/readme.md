@@ -10,10 +10,10 @@ The lodash method `_.sortedIndexBy` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.sortedindexby |
 | Keywords           | lodash-modularized, sortedindexby |
-| # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 42209 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 31855.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

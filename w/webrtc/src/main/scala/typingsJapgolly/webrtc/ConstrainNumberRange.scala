@@ -1,28 +1,32 @@
 package typingsJapgolly.webrtc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstrainNumberRange extends NumberRange {
+trait ConstrainNumberRange
+  extends StObject
+     with NumberRange {
+  
   var exact: js.UndefOr[Double] = js.undefined
+  
   var ideal: js.UndefOr[Double] = js.undefined
 }
-
 object ConstrainNumberRange {
-  @scala.inline
-  def apply(
-    exact: Int | Double = null,
-    ideal: Int | Double = null,
-    max: Int | Double = null,
-    min: Int | Double = null
-  ): ConstrainNumberRange = {
+  
+  inline def apply(): ConstrainNumberRange = {
     val __obj = js.Dynamic.literal()
-    if (exact != null) __obj.updateDynamic("exact")(exact.asInstanceOf[js.Any])
-    if (ideal != null) __obj.updateDynamic("ideal")(ideal.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstrainNumberRange]
   }
+  
+  extension [Self <: ConstrainNumberRange](x: Self) {
+    
+    inline def setExact(value: Double): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    
+    inline def setIdeal(value: Double): Self = StObject.set(x, "ideal", value.asInstanceOf[js.Any])
+    
+    inline def setIdealUndefined: Self = StObject.set(x, "ideal", js.undefined)
+  }
 }
-

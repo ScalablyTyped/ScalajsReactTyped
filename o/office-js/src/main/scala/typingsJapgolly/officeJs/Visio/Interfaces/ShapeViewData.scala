@@ -1,12 +1,13 @@
 package typingsJapgolly.officeJs.Visio.Interfaces
 
 import typingsJapgolly.officeJs.Visio.Highlight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "shapeView.toJSON()". */
-trait ShapeViewData extends js.Object {
+/** An interface describing the data returned by calling `shapeView.toJSON()`. */
+trait ShapeViewData extends StObject {
+  
   /**
     *
     * Represents the highlight around the shape.
@@ -15,13 +16,17 @@ trait ShapeViewData extends js.Object {
     */
   var highlight: js.UndefOr[Highlight] = js.undefined
 }
-
 object ShapeViewData {
-  @scala.inline
-  def apply(highlight: Highlight = null): ShapeViewData = {
+  
+  inline def apply(): ShapeViewData = {
     val __obj = js.Dynamic.literal()
-    if (highlight != null) __obj.updateDynamic("highlight")(highlight.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeViewData]
   }
+  
+  extension [Self <: ShapeViewData](x: Self) {
+    
+    inline def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+  }
 }
-

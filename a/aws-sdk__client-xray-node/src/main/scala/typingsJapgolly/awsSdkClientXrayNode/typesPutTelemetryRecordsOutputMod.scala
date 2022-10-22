@@ -1,22 +1,33 @@
 package typingsJapgolly.awsSdkClientXrayNode
 
-import typingsJapgolly.awsSdkClientXrayNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientXrayNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-xray-node/types/PutTelemetryRecordsOutput", JSImport.Namespace)
-@js.native
-object typesPutTelemetryRecordsOutputMod extends js.Object {
-  @js.native
-  trait PutTelemetryRecordsOutput extends OutputTypesUnion {
+object typesPutTelemetryRecordsOutputMod {
+  
+  trait PutTelemetryRecordsOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
   }
-  
+  object PutTelemetryRecordsOutput {
+    
+    inline def apply($metadata: ResponseMetadata): PutTelemetryRecordsOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PutTelemetryRecordsOutput]
+    }
+    
+    extension [Self <: PutTelemetryRecordsOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

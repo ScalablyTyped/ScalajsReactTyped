@@ -1,12 +1,15 @@
 package typingsJapgolly.coreJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("core-js/library/fn/get-iterator", JSImport.Namespace)
-@js.native
-object fnGetIteratorMod extends js.Object {
-  def apply[T](iterable: js.Iterable[T]): js.Iterator[T] = js.native
+object fnGetIteratorMod {
+  
+  /* was `typeof core.getIterator` */
+  inline def apply[T](iterable: js.Iterable[T]): js.Iterator[T] = ^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any]).asInstanceOf[js.Iterator[T]]
+  
+  @JSImport("core-js/fn/get-iterator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

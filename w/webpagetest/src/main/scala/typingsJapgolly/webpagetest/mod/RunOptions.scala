@@ -1,23 +1,32 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunOptions extends js.Object {
+trait RunOptions extends StObject {
+  
   /** if true returns the repeat view (cached) data */
   var repeatView: js.UndefOr[Boolean] = js.undefined
+  
   /** the test run number for multiple runs tests (default: 1, first test) */
   var run: js.UndefOr[Double] = js.undefined
 }
-
 object RunOptions {
-  @scala.inline
-  def apply(repeatView: js.UndefOr[Boolean] = js.undefined, run: Int | Double = null): RunOptions = {
+  
+  inline def apply(): RunOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(repeatView)) __obj.updateDynamic("repeatView")(repeatView.asInstanceOf[js.Any])
-    if (run != null) __obj.updateDynamic("run")(run.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions]
   }
+  
+  extension [Self <: RunOptions](x: Self) {
+    
+    inline def setRepeatView(value: Boolean): Self = StObject.set(x, "repeatView", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatViewUndefined: Self = StObject.set(x, "repeatView", js.undefined)
+    
+    inline def setRun(value: Double): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+    
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+  }
 }
-

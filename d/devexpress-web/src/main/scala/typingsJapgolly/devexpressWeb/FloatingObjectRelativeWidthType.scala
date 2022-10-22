@@ -1,74 +1,63 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FloatingObjectRelativeWidthType extends js.Object
-
+sealed trait FloatingObjectRelativeWidthType extends StObject
 /**
   * Lists values specifying to what element the floating object width is relative.
   */
 @JSGlobal("FloatingObjectRelativeWidthType")
 @js.native
-object FloatingObjectRelativeWidthType extends js.Object {
+object FloatingObjectRelativeWidthType extends StObject {
+  
   /**
     * Relative to inside margin.
     */
   @js.native
-  sealed trait InsideMargin extends FloatingObjectRelativeWidthType
+  sealed trait InsideMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to left margin.
     */
   @js.native
-  sealed trait LeftMargin extends FloatingObjectRelativeWidthType
+  sealed trait LeftMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to margin.
     */
   @js.native
-  sealed trait Margin extends FloatingObjectRelativeWidthType
+  sealed trait Margin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to outside margin.
     */
   @js.native
-  sealed trait OutsideMargin extends FloatingObjectRelativeWidthType
+  sealed trait OutsideMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to page.
     */
   @js.native
-  sealed trait Page extends FloatingObjectRelativeWidthType
+  sealed trait Page
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to right margin.
     */
   @js.native
-  sealed trait RightMargin extends FloatingObjectRelativeWidthType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FloatingObjectRelativeWidthType with Double] = js.native
-  /* 4 */ @js.native
-  object InsideMargin extends TopLevel[InsideMargin with Double]
-  
-  /* 2 */ @js.native
-  object LeftMargin extends TopLevel[LeftMargin with Double]
-  
-  /* 0 */ @js.native
-  object Margin extends TopLevel[Margin with Double]
-  
-  /* 5 */ @js.native
-  object OutsideMargin extends TopLevel[OutsideMargin with Double]
-  
-  /* 1 */ @js.native
-  object Page extends TopLevel[Page with Double]
-  
-  /* 3 */ @js.native
-  object RightMargin extends TopLevel[RightMargin with Double]
-  
+  sealed trait RightMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
 }
-

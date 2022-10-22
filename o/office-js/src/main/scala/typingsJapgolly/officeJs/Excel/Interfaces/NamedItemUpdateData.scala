@@ -1,42 +1,55 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the NamedItem object, for use in `namedItem.set({ ... })`. */
-trait NamedItemUpdateData extends js.Object {
+trait NamedItemUpdateData extends StObject {
+  
   /**
+    * Specifies the comment associated with this name.
     *
-    * Represents the comment associated with this name.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.4]
     */
   var comment: js.UndefOr[String] = js.undefined
+  
   /**
+    * The formula of the named item. Formulas always start with an equal sign ("=").
     *
-    * Gets or sets the formula of the named item.  Formula always starts with a '=' sign.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
-  var formula: js.UndefOr[js.Any] = js.undefined
+  var formula: js.UndefOr[Any] = js.undefined
+  
   /**
+    * Specifies if the object is visible.
     *
-    * Specifies whether the object is visible or not.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object NamedItemUpdateData {
-  @scala.inline
-  def apply(comment: String = null, formula: js.Any = null, visible: js.UndefOr[Boolean] = js.undefined): NamedItemUpdateData = {
+  
+  inline def apply(): NamedItemUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (formula != null) __obj.updateDynamic("formula")(formula.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedItemUpdateData]
   }
+  
+  extension [Self <: NamedItemUpdateData](x: Self) {
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setFormula(value: Any): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

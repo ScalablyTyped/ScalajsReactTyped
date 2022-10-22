@@ -1,7 +1,7 @@
 
 # Scala.js typings for tensorflow__tfjs-layers
 
-Typings are for version 1.5.2
+Typings are for version 4.0.0
 
 ## Library description:
 TensorFlow layers API in JavaScript
@@ -10,12 +10,15 @@ TensorFlow layers API in JavaScript
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-layers |
 | Keywords           | - |
-| # releases         | 75 |
-| # dependents       | 4 |
-| # downloads        | 586464 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 376751.3333333333 |
+| # stars            | 16632.0 |
 
 ## Links
+- [Homepage](https://github.com/tensorflow/tfjs#readme)
+- [Bugs](https://github.com/tensorflow/tfjs/issues)
+- [Repository](https://github.com/tensorflow/tfjs)
 - [Npm](https://www.npmjs.com/package/%40tensorflow%2Ftfjs-layers)
     
 

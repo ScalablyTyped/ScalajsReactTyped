@@ -1,15 +1,19 @@
 package typingsJapgolly.photonui.photonui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("photonui.TabLayout")
 @js.native
-class TabLayout () extends Layout {
+trait TabLayout
+  extends StObject
+     with Layout {
+  
   var activeTab: Widget = js.native
+  
   var activeTabName: String = js.native
+  
   var padding: Double = js.native
+  
   var tabsPosition: String = js.native
 }
-

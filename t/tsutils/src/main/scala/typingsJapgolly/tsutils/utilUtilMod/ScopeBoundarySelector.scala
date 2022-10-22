@@ -1,41 +1,39 @@
 package typingsJapgolly.tsutils.utilUtilMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ScopeBoundarySelector extends js.Object
-
+sealed trait ScopeBoundarySelector extends StObject
 @JSImport("tsutils/util/util", "ScopeBoundarySelector")
 @js.native
-object ScopeBoundarySelector extends js.Object {
-  @js.native
-  sealed trait Block extends ScopeBoundarySelector
-  
-  @js.native
-  sealed trait Function extends ScopeBoundarySelector
-  
-  @js.native
-  sealed trait InferType extends ScopeBoundarySelector
-  
-  @js.native
-  sealed trait Type extends ScopeBoundarySelector
+object ScopeBoundarySelector extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ScopeBoundarySelector with Double] = js.native
-  /* 3 */ @js.native
-  object Block extends TopLevel[Block with Double]
+  def apply(value: Double): js.UndefOr[ScopeBoundarySelector & Double] = js.native
   
-  /* 1 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait Block
+    extends StObject
+       with ScopeBoundarySelector
+  /* 3 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Block & Double = js.native
   
-  /* 8 */ @js.native
-  object InferType extends TopLevel[InferType with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with ScopeBoundarySelector
+  /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Function & Double = js.native
   
-  /* 7 */ @js.native
-  object Type extends TopLevel[Type with Double]
+  @js.native
+  sealed trait InferType
+    extends StObject
+       with ScopeBoundarySelector
+  /* 8 */ val InferType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.InferType & Double = js.native
   
+  @js.native
+  sealed trait Type
+    extends StObject
+       with ScopeBoundarySelector
+  /* 7 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Type & Double = js.native
 }
-

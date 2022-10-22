@@ -1,25 +1,37 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.JQuery
-import typingsJapgolly.kendoUi.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DropTargetEvent extends JQueryEventObject {
+trait DropTargetEvent extends StObject {
+  
   var draggable: js.UndefOr[Draggable] = js.undefined
+  
   var dropTarget: js.UndefOr[JQuery] = js.undefined
+  
   var sender: js.UndefOr[DropTarget] = js.undefined
 }
-
 object DropTargetEvent {
-  @scala.inline
-  def apply(draggable: Draggable = null, dropTarget: JQuery = null, sender: DropTarget = null): DropTargetEvent = {
+  
+  inline def apply(): DropTargetEvent = {
     val __obj = js.Dynamic.literal()
-    if (draggable != null) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetEvent]
   }
+  
+  extension [Self <: DropTargetEvent](x: Self) {
+    
+    inline def setDraggable(value: Draggable): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setDropTarget(value: JQuery): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+    
+    inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+    
+    inline def setSender(value: DropTarget): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    
+    inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+  }
 }
-

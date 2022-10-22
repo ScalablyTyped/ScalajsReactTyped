@@ -1,11 +1,12 @@
 package typingsJapgolly.xadesjs.mod.xml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "xml.RefsOnlyTimeStamp")
 @js.native
-class RefsOnlyTimeStamp ()
-  extends typingsJapgolly.xadesjs.xmlMod.RefsOnlyTimeStamp
-
+open class RefsOnlyTimeStamp ()
+  extends typingsJapgolly.xadesjs.buildTypesXmlMod.RefsOnlyTimeStamp {
+  def this(properties: js.Object) = this()
+}

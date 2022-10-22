@@ -1,0 +1,29 @@
+package typingsJapgolly.angularForms.anon
+
+import org.scalablytyped.runtime.Instantiable0
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.mod.RangeValueAccessor
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait TypeofRangeValueAccessor
+  extends StObject
+     with Instantiable0[RangeValueAccessor] {
+  
+  var ɵdir: ɵɵDirectiveDeclaration[
+    RangeValueAccessor, 
+    /* input[type=range][formControlName],input[type=range][formControl],input[type=range][ngModel] */ String, 
+    scala.Nothing, 
+    js.Object, 
+    js.Object, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  
+  var ɵfac: ɵɵFactoryDeclaration[RangeValueAccessor, scala.Nothing] = js.native
+}

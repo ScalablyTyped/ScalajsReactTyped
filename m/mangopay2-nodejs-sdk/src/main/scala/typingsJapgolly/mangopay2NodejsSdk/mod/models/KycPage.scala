@@ -1,14 +1,17 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.mod.kycDocument.CreateKycPage
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsKycDocumentMod.kycDocument.CreateKycPage
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "models.KycPage")
 @js.native
-class KycPage protected () extends CreateKycPage {
+open class KycPage protected ()
+  extends StObject
+     with CreateKycPage {
   def this(data: CreateKycPage) = this()
+  
   /**
     * The base64 encoded file which needs to be uploaded
     *
@@ -23,6 +26,5 @@ class KycPage protected () extends CreateKycPage {
     * ```
     */
   /* CompleteClass */
-  override var File: String = js.native
+  var File: String = js.native
 }
-

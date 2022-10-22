@@ -1,26 +1,40 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReadableSpecification extends js.Object {
+trait ReadableSpecification extends StObject {
+  
   /** A Database. */
   var db: Database
+  
   /** Whether the object is a materialized view (default false). */
   var is_matview: js.UndefOr[Boolean] = js.undefined
+  
   /** The table or view's name. */
   var name: String
+  
   /** The name of the schema owning the table or view. */
   var schema: String
 }
-
 object ReadableSpecification {
-  @scala.inline
-  def apply(db: Database, name: String, schema: String, is_matview: js.UndefOr[Boolean] = js.undefined): ReadableSpecification = {
+  
+  inline def apply(db: Database, name: String, schema: String): ReadableSpecification = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_matview)) __obj.updateDynamic("is_matview")(is_matview.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableSpecification]
   }
+  
+  extension [Self <: ReadableSpecification](x: Self) {
+    
+    inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    
+    inline def setIs_matview(value: Boolean): Self = StObject.set(x, "is_matview", value.asInstanceOf[js.Any])
+    
+    inline def setIs_matviewUndefined: Self = StObject.set(x, "is_matview", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+  }
 }
-

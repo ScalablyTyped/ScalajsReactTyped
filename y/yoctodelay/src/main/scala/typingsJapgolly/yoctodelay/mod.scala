@@ -1,12 +1,14 @@
 package typingsJapgolly.yoctodelay
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yoctodelay", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(ms: Double): js.Promise[Unit] = js.native
+object mod {
+  
+  @JSImport("yoctodelay", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(milliseconds: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }
-

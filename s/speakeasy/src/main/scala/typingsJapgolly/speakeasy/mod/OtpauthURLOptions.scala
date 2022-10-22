@@ -1,66 +1,83 @@
 package typingsJapgolly.speakeasy.mod
 
 import typingsJapgolly.speakeasy.speakeasyStrings.htop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OtpauthURLOptions extends SharedOptions {
+trait OtpauthURLOptions
+  extends StObject
+     with SharedOptions {
+  
   /**
     * The initial counter value, required for HOTP.
     */
   var counter: js.UndefOr[Double] = js.undefined
+  
   /**
     * The number of digits for the one-time passcode. Currently ignored
     * by Google Authenticator, defaults to 6
     */
   var digits: js.UndefOr[Double] = js.undefined
+  
   /**
     * The provider or service with which the secret key is associated.
     */
   var issuer: js.UndefOr[String] = js.undefined
+  
   /**
     * Used to identify the account with which the secret key is associated,
     * e.g. the user's email address.
     */
   var label: String
+  
   /**
     * The length of time for which a TOTP code will be valid, in seconds.
     * Currently ignored by Google Authenticator, defaults to 30
     */
   var period: js.UndefOr[Double] = js.undefined
+  
   /**
     * Shared secret key
     */
   var secret: String
+  
   /**
     * Either 'hotp' or 'totp', defaults to 'totp'
     */
   var `type`: js.UndefOr[htop | typingsJapgolly.speakeasy.speakeasyStrings.totp] = js.undefined
 }
-
 object OtpauthURLOptions {
-  @scala.inline
-  def apply(
-    label: String,
-    secret: String,
-    algorithm: Algorithm = null,
-    counter: Int | Double = null,
-    digits: Int | Double = null,
-    encoding: Encoding = null,
-    issuer: String = null,
-    period: Int | Double = null,
-    `type`: htop | typingsJapgolly.speakeasy.speakeasyStrings.totp = null
-  ): OtpauthURLOptions = {
+  
+  inline def apply(label: String, secret: String): OtpauthURLOptions = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
-    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[OtpauthURLOptions]
   }
+  
+  extension [Self <: OtpauthURLOptions](x: Self) {
+    
+    inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+    
+    inline def setCounterUndefined: Self = StObject.set(x, "counter", js.undefined)
+    
+    inline def setDigits(value: Double): Self = StObject.set(x, "digits", value.asInstanceOf[js.Any])
+    
+    inline def setDigitsUndefined: Self = StObject.set(x, "digits", js.undefined)
+    
+    inline def setIssuer(value: String): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+    
+    inline def setIssuerUndefined: Self = StObject.set(x, "issuer", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: htop | typingsJapgolly.speakeasy.speakeasyStrings.totp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

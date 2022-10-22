@@ -1,172 +1,321 @@
 package typingsJapgolly.webix.webix.ui
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.webix.webix.EventHash
 import typingsJapgolly.webix.webix.WebixCallback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorpickerConfig extends js.Object {
+trait colorpickerConfig extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
-  var animate: js.UndefOr[js.Any] = js.undefined
-  var attributes: js.UndefOr[js.Any] = js.undefined
+  
+  var animate: js.UndefOr[Any] = js.undefined
+  
+  var attributes: js.UndefOr[Any] = js.undefined
+  
   var autowidth: js.UndefOr[Boolean] = js.undefined
+  
   var borderless: js.UndefOr[Boolean] = js.undefined
+  
   var bottomLabel: js.UndefOr[String] = js.undefined
+  
   var bottomPadding: js.UndefOr[Double] = js.undefined
+  
   var click: js.UndefOr[WebixCallback] = js.undefined
+  
   var container: js.UndefOr[String | HTMLElement] = js.undefined
-  var css: js.UndefOr[js.Any] = js.undefined
+  
+  var css: js.UndefOr[Any] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
+  
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var gravity: js.UndefOr[Double] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var hotkey: js.UndefOr[String] = js.undefined
+  
   var icons: js.UndefOr[Boolean] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var inputAlign: js.UndefOr[String] = js.undefined
+  
   var inputHeight: js.UndefOr[Double] = js.undefined
+  
   var inputWidth: js.UndefOr[Double] = js.undefined
+  
   var invalid: js.UndefOr[Boolean] = js.undefined
+  
   var invalidMessage: js.UndefOr[String] = js.undefined
+  
   var keyPressTimeout: js.UndefOr[Double] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var labelAlign: js.UndefOr[String] = js.undefined
+  
   var labelPosition: js.UndefOr[String] = js.undefined
+  
   var labelWidth: js.UndefOr[Double] = js.undefined
+  
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
+  
   var placeholder: js.UndefOr[String] = js.undefined
+  
   var point: js.UndefOr[Boolean] = js.undefined
+  
   var popup: js.UndefOr[String] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
   var relatedAction: js.UndefOr[String] = js.undefined
+  
   var relatedView: js.UndefOr[String] = js.undefined
+  
   var required: js.UndefOr[Boolean] = js.undefined
+  
   var stringResult: js.UndefOr[Boolean] = js.undefined
-  var suggest: js.UndefOr[js.Any] = js.undefined
-  var tooltip: js.UndefOr[js.Any] = js.undefined
+  
+  var suggest: js.UndefOr[Any] = js.undefined
+  
+  var tooltip: js.UndefOr[Any] = js.undefined
+  
   var validate: js.UndefOr[WebixCallback] = js.undefined
+  
   var validateEvent: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String | Double] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object colorpickerConfig {
-  @scala.inline
-  def apply(
-    align: String = null,
-    animate: js.Any = null,
-    attributes: js.Any = null,
-    autowidth: js.UndefOr[Boolean] = js.undefined,
-    borderless: js.UndefOr[Boolean] = js.undefined,
-    bottomLabel: String = null,
-    bottomPadding: Int | Double = null,
-    click: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    container: String | HTMLElement = null,
-    css: js.Any = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    format: String = null,
-    gravity: Int | Double = null,
-    height: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hotkey: String = null,
-    icons: js.UndefOr[Boolean] = js.undefined,
-    id: String | Double = null,
-    inputAlign: String = null,
-    inputHeight: Int | Double = null,
-    inputWidth: Int | Double = null,
-    invalid: js.UndefOr[Boolean] = js.undefined,
-    invalidMessage: String = null,
-    keyPressTimeout: Int | Double = null,
-    label: String = null,
-    labelAlign: String = null,
-    labelPosition: String = null,
-    labelWidth: Int | Double = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    name: String = null,
-    on: EventHash = null,
-    placeholder: String = null,
-    point: js.UndefOr[Boolean] = js.undefined,
-    popup: String = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    relatedAction: String = null,
-    relatedView: String = null,
-    required: js.UndefOr[Boolean] = js.undefined,
-    stringResult: js.UndefOr[Boolean] = js.undefined,
-    suggest: js.Any = null,
-    tooltip: js.Any = null,
-    validate: /* repeated */ js.Any => CallbackTo[js.Any] = null,
-    validateEvent: String = null,
-    value: String | Double = null,
-    view: String = null,
-    width: Int | Double = null
-  ): colorpickerConfig = {
+  
+  inline def apply(): colorpickerConfig = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (animate != null) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(autowidth)) __obj.updateDynamic("autowidth")(autowidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(borderless)) __obj.updateDynamic("borderless")(borderless.asInstanceOf[js.Any])
-    if (bottomLabel != null) __obj.updateDynamic("bottomLabel")(bottomLabel.asInstanceOf[js.Any])
-    if (bottomPadding != null) __obj.updateDynamic("bottomPadding")(bottomPadding.asInstanceOf[js.Any])
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => click(t0).runNow()))
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (hotkey != null) __obj.updateDynamic("hotkey")(hotkey.asInstanceOf[js.Any])
-    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inputAlign != null) __obj.updateDynamic("inputAlign")(inputAlign.asInstanceOf[js.Any])
-    if (inputHeight != null) __obj.updateDynamic("inputHeight")(inputHeight.asInstanceOf[js.Any])
-    if (inputWidth != null) __obj.updateDynamic("inputWidth")(inputWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(invalid)) __obj.updateDynamic("invalid")(invalid.asInstanceOf[js.Any])
-    if (invalidMessage != null) __obj.updateDynamic("invalidMessage")(invalidMessage.asInstanceOf[js.Any])
-    if (keyPressTimeout != null) __obj.updateDynamic("keyPressTimeout")(keyPressTimeout.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (labelAlign != null) __obj.updateDynamic("labelAlign")(labelAlign.asInstanceOf[js.Any])
-    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
-    if (labelWidth != null) __obj.updateDynamic("labelWidth")(labelWidth.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(point)) __obj.updateDynamic("point")(point.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (relatedAction != null) __obj.updateDynamic("relatedAction")(relatedAction.asInstanceOf[js.Any])
-    if (relatedView != null) __obj.updateDynamic("relatedView")(relatedView.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringResult)) __obj.updateDynamic("stringResult")(stringResult.asInstanceOf[js.Any])
-    if (suggest != null) __obj.updateDynamic("suggest")(suggest.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => validate(t0).runNow()))
-    if (validateEvent != null) __obj.updateDynamic("validateEvent")(validateEvent.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[colorpickerConfig]
   }
+  
+  extension [Self <: colorpickerConfig](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setAutowidth(value: Boolean): Self = StObject.set(x, "autowidth", value.asInstanceOf[js.Any])
+    
+    inline def setAutowidthUndefined: Self = StObject.set(x, "autowidth", js.undefined)
+    
+    inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
+    
+    inline def setBorderlessUndefined: Self = StObject.set(x, "borderless", js.undefined)
+    
+    inline def setBottomLabel(value: String): Self = StObject.set(x, "bottomLabel", value.asInstanceOf[js.Any])
+    
+    inline def setBottomLabelUndefined: Self = StObject.set(x, "bottomLabel", js.undefined)
+    
+    inline def setBottomPadding(value: Double): Self = StObject.set(x, "bottomPadding", value.asInstanceOf[js.Any])
+    
+    inline def setBottomPaddingUndefined: Self = StObject.set(x, "bottomPadding", js.undefined)
+    
+    inline def setClick(value: WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGravity(value: Double): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    
+    inline def setGravityUndefined: Self = StObject.set(x, "gravity", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setHotkey(value: String): Self = StObject.set(x, "hotkey", value.asInstanceOf[js.Any])
+    
+    inline def setHotkeyUndefined: Self = StObject.set(x, "hotkey", js.undefined)
+    
+    inline def setIcons(value: Boolean): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setInputAlign(value: String): Self = StObject.set(x, "inputAlign", value.asInstanceOf[js.Any])
+    
+    inline def setInputAlignUndefined: Self = StObject.set(x, "inputAlign", js.undefined)
+    
+    inline def setInputHeight(value: Double): Self = StObject.set(x, "inputHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInputHeightUndefined: Self = StObject.set(x, "inputHeight", js.undefined)
+    
+    inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
+    
+    inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    
+    inline def setInvalidMessage(value: String): Self = StObject.set(x, "invalidMessage", value.asInstanceOf[js.Any])
+    
+    inline def setInvalidMessageUndefined: Self = StObject.set(x, "invalidMessage", js.undefined)
+    
+    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+    
+    inline def setKeyPressTimeout(value: Double): Self = StObject.set(x, "keyPressTimeout", value.asInstanceOf[js.Any])
+    
+    inline def setKeyPressTimeoutUndefined: Self = StObject.set(x, "keyPressTimeout", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelAlign(value: String): Self = StObject.set(x, "labelAlign", value.asInstanceOf[js.Any])
+    
+    inline def setLabelAlignUndefined: Self = StObject.set(x, "labelAlign", js.undefined)
+    
+    inline def setLabelPosition(value: String): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+    
+    inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLabelWidth(value: Double): Self = StObject.set(x, "labelWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLabelWidthUndefined: Self = StObject.set(x, "labelWidth", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setPoint(value: Boolean): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    
+    inline def setPopup(value: String): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setRelatedAction(value: String): Self = StObject.set(x, "relatedAction", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedActionUndefined: Self = StObject.set(x, "relatedAction", js.undefined)
+    
+    inline def setRelatedView(value: String): Self = StObject.set(x, "relatedView", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedViewUndefined: Self = StObject.set(x, "relatedView", js.undefined)
+    
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    
+    inline def setStringResult(value: Boolean): Self = StObject.set(x, "stringResult", value.asInstanceOf[js.Any])
+    
+    inline def setStringResultUndefined: Self = StObject.set(x, "stringResult", js.undefined)
+    
+    inline def setSuggest(value: Any): Self = StObject.set(x, "suggest", value.asInstanceOf[js.Any])
+    
+    inline def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
+    
+    inline def setTooltip(value: Any): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setValidate(value: WebixCallback): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    
+    inline def setValidateEvent(value: String): Self = StObject.set(x, "validateEvent", value.asInstanceOf[js.Any])
+    
+    inline def setValidateEventUndefined: Self = StObject.set(x, "validateEvent", js.undefined)
+    
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    
+    inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.cssToStyle
 
-import org.scalajs.dom.raw.CSSStyleDeclaration
+import org.scalajs.dom.CSSStyleDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("css-to-style", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(cssText: String): CSSStyleDeclaration = js.native
+object mod {
+  
+  @JSImport("css-to-style", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(cssText: String): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssText.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
 }
-

@@ -1,16 +1,16 @@
 package typingsJapgolly.plottable.mod
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import typingsJapgolly.plottable.canvasDrawerMod.CanvasDrawer
-import typingsJapgolly.plottable.svgDrawerMod.SVGDrawer
+import org.scalajs.dom.CanvasRenderingContext2D
+import typingsJapgolly.plottable.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
+import typingsJapgolly.plottable.buildSrcDrawersSvgDrawerMod.SVGDrawer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "ProxyDrawer")
 @js.native
-class ProxyDrawer protected ()
-  extends typingsJapgolly.plottable.drawerMod.ProxyDrawer {
+open class ProxyDrawer protected ()
+  extends typingsJapgolly.plottable.buildSrcDrawersDrawerMod.ProxyDrawer {
   /**
     * A Drawer draws svg elements based on the input Dataset.
     *
@@ -23,4 +23,3 @@ class ProxyDrawer protected ()
     _canvasDrawerFactory: js.Function1[/* ctx */ CanvasRenderingContext2D, CanvasDrawer]
   ) = this()
 }
-

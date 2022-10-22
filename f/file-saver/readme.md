@@ -10,10 +10,10 @@ An HTML5 saveAs() FileSaver implementation
 | ------------------ | :-------------: |
 | Full name          | file-saver |
 | Keywords           | filesaver, saveas, blob |
-| # releases         | 11 |
-| # dependents       | 842 |
-| # downloads        | 25950610 |
-| # stars            | 24 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 9154022.666666666 |
+| # stars            | 19140.0 |
 
 ## Links
 - [Homepage](https://github.com/eligrey/FileSaver.js#readme)

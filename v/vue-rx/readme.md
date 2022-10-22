@@ -10,10 +10,10 @@ RxJS bindings for Vue
 | ------------------ | :-------------: |
 | Full name          | vue-rx |
 | Keywords           | vue, rx, rxjs |
-| # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 337325 |
-| # stars            | 3 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 55036.333333333336 |
+| # stars            | 3282.0 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue-rx#readme)

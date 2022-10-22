@@ -1,41 +1,62 @@
 package typingsJapgolly.navermaps.naver.maps
 
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.ImageData
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.ImageData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CanvasTileOptions extends js.Object {
+trait CanvasTileOptions extends StObject {
+  
   var imageData: js.UndefOr[ImageData] = js.undefined
+  
   var offset: js.UndefOr[Point] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var pane: js.UndefOr[HTMLElement] = js.undefined
+  
   var size: js.UndefOr[Size] = js.undefined
+  
   var transition: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object CanvasTileOptions {
-  @scala.inline
-  def apply(
-    imageData: ImageData = null,
-    offset: Point = null,
-    opacity: Int | Double = null,
-    pane: HTMLElement = null,
-    size: Size = null,
-    transition: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): CanvasTileOptions = {
+  
+  inline def apply(): CanvasTileOptions = {
     val __obj = js.Dynamic.literal()
-    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanvasTileOptions]
   }
+  
+  extension [Self <: CanvasTileOptions](x: Self) {
+    
+    inline def setImageData(value: ImageData): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+    
+    inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+    
+    inline def setOffset(value: Point): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPane(value: HTMLElement): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

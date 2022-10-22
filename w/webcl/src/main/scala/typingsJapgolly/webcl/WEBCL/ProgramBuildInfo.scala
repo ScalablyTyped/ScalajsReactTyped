@@ -1,28 +1,24 @@
 package typingsJapgolly.webcl.WEBCL
 
-import typingsJapgolly.webcl.webclNumbers.`0x1181`
-import typingsJapgolly.webcl.webclNumbers.`0x1182`
-import typingsJapgolly.webcl.webclNumbers.`0x1183`
+import typingsJapgolly.webcl.webclInts.`0x1181`
+import typingsJapgolly.webcl.webclInts.`0x1182`
+import typingsJapgolly.webcl.webclInts.`0x1183`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* cl_program_build_info */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.webcl.webclNumbers.`0x1181`
-  - typingsJapgolly.webcl.webclNumbers.`0x1182`
-  - typingsJapgolly.webcl.webclNumbers.`0x1183`
+  - typingsJapgolly.webcl.webclInts.`0x1181`
+  - typingsJapgolly.webcl.webclInts.`0x1182`
+  - typingsJapgolly.webcl.webclInts.`0x1183`
 */
-trait ProgramBuildInfo extends js.Object
-
+trait ProgramBuildInfo extends StObject
 object ProgramBuildInfo {
-  @scala.inline
-  def PROGRAM_BUILD_LOG: `0x1183` = this.cast(0x1183)
-  @scala.inline
-  def PROGRAM_BUILD_OPTIONS: `0x1182` = this.cast(0x1182)
-  @scala.inline
-  def PROGRAM_BUILD_STATUS: `0x1181` = this.cast(0x1181)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def PROGRAM_BUILD_LOG: `0x1183` = 0x1183.asInstanceOf[`0x1183`]
+  
+  inline def PROGRAM_BUILD_OPTIONS: `0x1182` = 0x1182.asInstanceOf[`0x1182`]
+  
+  inline def PROGRAM_BUILD_STATUS: `0x1181` = 0x1181.asInstanceOf[`0x1181`]
 }
-

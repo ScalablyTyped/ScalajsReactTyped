@@ -1,31 +1,27 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-1`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4`
-import typingsJapgolly.activexWord.activexWordNumbers.`-5`
-import typingsJapgolly.activexWord.activexWordNumbers.`-6`
+import typingsJapgolly.activexWord.activexWordInts.`-1`
+import typingsJapgolly.activexWord.activexWordInts.`-4`
+import typingsJapgolly.activexWord.activexWordInts.`-5`
+import typingsJapgolly.activexWord.activexWordInts.`-6`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`-6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4`
+  - typingsJapgolly.activexWord.activexWordInts.`-6`
+  - typingsJapgolly.activexWord.activexWordInts.`-5`
+  - typingsJapgolly.activexWord.activexWordInts.`-1`
+  - typingsJapgolly.activexWord.activexWordInts.`-4`
 */
-trait WdEditorType extends js.Object
-
+trait WdEditorType extends StObject
 object WdEditorType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdEditorCurrent: `-6` = this.cast(-6)
-  @scala.inline
-  def wdEditorEditors: `-5` = this.cast(-5)
-  @scala.inline
-  def wdEditorEveryone: `-1` = this.cast(-1)
-  @scala.inline
-  def wdEditorOwners: `-4` = this.cast(-4)
+  
+  inline def wdEditorCurrent: `-6` = -6.asInstanceOf[`-6`]
+  
+  inline def wdEditorEditors: `-5` = -5.asInstanceOf[`-5`]
+  
+  inline def wdEditorEveryone: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def wdEditorOwners: `-4` = -4.asInstanceOf[`-4`]
 }
-

@@ -1,87 +1,83 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1024`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`128`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`131072`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`16384`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2048`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`256`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`262144`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`32768`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4096`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`64`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`65536`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`8192`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`8`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1024`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`128`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`131072`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`16384`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2048`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`256`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`262144`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`32768`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4096`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`64`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`65536`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`8192`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`256`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1024`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2048`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`262144`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4096`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`8192`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`64`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`16384`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`0`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`32768`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`128`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`65536`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`131072`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`8`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`256`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1024`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2048`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`262144`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4096`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`8192`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`64`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`16384`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`0`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`32768`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`128`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`65536`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`131072`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`8`
 */
-trait RecordStatusEnum extends js.Object
-
+trait RecordStatusEnum extends StObject
 object RecordStatusEnum {
-  @scala.inline
-  def adRecCanceled: `256` = this.cast(256)
-  @scala.inline
-  def adRecCantRelease: `1024` = this.cast(1024)
-  @scala.inline
-  def adRecConcurrencyViolation: `2048` = this.cast(2048)
-  @scala.inline
-  def adRecDBDeleted: `262144` = this.cast(262144)
-  @scala.inline
-  def adRecDeleted: `4` = this.cast(4)
-  @scala.inline
-  def adRecIntegrityViolation: `4096` = this.cast(4096)
-  @scala.inline
-  def adRecInvalid: `16` = this.cast(16)
-  @scala.inline
-  def adRecMaxChangesExceeded: `8192` = this.cast(8192)
-  @scala.inline
-  def adRecModified: `2` = this.cast(2)
-  @scala.inline
-  def adRecMultipleChanges: `64` = this.cast(64)
-  @scala.inline
-  def adRecNew: `1` = this.cast(1)
-  @scala.inline
-  def adRecOK: `0` = this.cast(0)
-  @scala.inline
-  def adRecObjectOpen: `16384` = this.cast(16384)
-  @scala.inline
-  def adRecOutOfMemory: `32768` = this.cast(32768)
-  @scala.inline
-  def adRecPendingChanges: `128` = this.cast(128)
-  @scala.inline
-  def adRecPermissionDenied: `65536` = this.cast(65536)
-  @scala.inline
-  def adRecSchemaViolation: `131072` = this.cast(131072)
-  @scala.inline
-  def adRecUnmodified: `8` = this.cast(8)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adRecCanceled: `256` = 256.asInstanceOf[`256`]
+  
+  inline def adRecCantRelease: `1024` = 1024.asInstanceOf[`1024`]
+  
+  inline def adRecConcurrencyViolation: `2048` = 2048.asInstanceOf[`2048`]
+  
+  inline def adRecDBDeleted: `262144` = 262144.asInstanceOf[`262144`]
+  
+  inline def adRecDeleted: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adRecIntegrityViolation: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def adRecInvalid: `16` = 16.asInstanceOf[`16`]
+  
+  inline def adRecMaxChangesExceeded: `8192` = 8192.asInstanceOf[`8192`]
+  
+  inline def adRecModified: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adRecMultipleChanges: `64` = 64.asInstanceOf[`64`]
+  
+  inline def adRecNew: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adRecOK: `0` = 0.asInstanceOf[`0`]
+  
+  inline def adRecObjectOpen: `16384` = 16384.asInstanceOf[`16384`]
+  
+  inline def adRecOutOfMemory: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def adRecPendingChanges: `128` = 128.asInstanceOf[`128`]
+  
+  inline def adRecPermissionDenied: `65536` = 65536.asInstanceOf[`65536`]
+  
+  inline def adRecSchemaViolation: `131072` = 131072.asInstanceOf[`131072`]
+  
+  inline def adRecUnmodified: `8` = 8.asInstanceOf[`8`]
 }
-

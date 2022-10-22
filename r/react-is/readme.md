@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-is
 
-Typings are for version 16.7
+Typings are for version 17.0
 
 ## Library description:
 Brand checking of React Elements.
@@ -10,10 +10,10 @@ Brand checking of React Elements.
 | ------------------ | :-------------: |
 | Full name          | react-is |
 | Keywords           | react |
-| # releases         | 107 |
-| # dependents       | 308 |
-| # downloads        | 310659129 |
-| # stars            | 2 |
+| # releases         | 751 |
+| # dependents       | 0.0 |
+| # downloads        | 2.1563826233333334E8 |
+| # stars            | 195014.0 |
 
 ## Links
 - [Homepage](https://reactjs.org/)

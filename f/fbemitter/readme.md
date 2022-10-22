@@ -10,10 +10,10 @@ Facebook's EventEmitter is a simple emitter implementation that prioritizes spee
 | ------------------ | :-------------: |
 | Full name          | fbemitter |
 | Keywords           | clientside |
-| # releases         | 0 |
-| # dependents       | 151 |
-| # downloads        | 9670192 |
-| # stars            | 4 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3430518.0 |
+| # stars            | 1008.0 |
 
 ## Links
 - [Homepage](https://github.com/facebook/emitter#readme)

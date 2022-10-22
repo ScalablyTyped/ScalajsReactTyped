@@ -1,26 +1,34 @@
 package typingsJapgolly.phaser.Phaser.Types.GameObjects.Particles
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ParticleEmitterDeathZoneConfig extends js.Object {
+trait ParticleEmitterDeathZoneConfig extends StObject {
+  
   /**
     * A shape representing the zone. See {@link Phaser.GameObjects.Particles.Zones.DeathZone#source}.
     */
   var source: DeathZoneSource
+  
   /**
     * 'onEnter' or 'onLeave'.
     */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object ParticleEmitterDeathZoneConfig {
-  @scala.inline
-  def apply(source: DeathZoneSource, `type`: String = null): ParticleEmitterDeathZoneConfig = {
+  
+  inline def apply(source: DeathZoneSource): ParticleEmitterDeathZoneConfig = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticleEmitterDeathZoneConfig]
   }
+  
+  extension [Self <: ParticleEmitterDeathZoneConfig](x: Self) {
+    
+    inline def setSource(value: DeathZoneSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

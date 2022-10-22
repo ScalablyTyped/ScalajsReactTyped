@@ -1,55 +1,46 @@
 package typingsJapgolly.readableStream.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined readable-stream.readable-stream.ReadableStateOptions & {  read ? :(this : readable-stream.readable-stream._Readable, size : number): void,   destroy ? :(this : readable-stream.readable-stream._Readable, error : std.Error | null, callback : (error : std.Error | null): void): void} */
-trait ReadableOptions extends js.Object {
-  var defaultEncoding: js.UndefOr[String] = js.undefined
+trait ReadableOptions
+  extends StObject
+     with ReadableStateOptions {
+  
   var destroy: js.UndefOr[
     js.ThisFunction2[
-      /* this */ _Readable, 
+      /* this */ IReadable, 
       /* error */ js.Error | Null, 
       /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
       Unit
     ]
   ] = js.undefined
-  var encoding: js.UndefOr[String] = js.undefined
-  var highWaterMark: js.UndefOr[Double] = js.undefined
-  var objectMode: js.UndefOr[Boolean] = js.undefined
-  var read: js.UndefOr[js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit]] = js.undefined
-  var readableHighWaterMark: js.UndefOr[Double] = js.undefined
-  var readableObjectMode: js.UndefOr[Boolean] = js.undefined
+  
+  var read: js.UndefOr[js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]] = js.undefined
 }
-
 object ReadableOptions {
-  @scala.inline
-  def apply(
-    defaultEncoding: String = null,
-    destroy: js.ThisFunction2[
-      /* this */ _Readable, 
-      /* error */ js.Error | Null, 
-      /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
-      Unit
-    ] = null,
-    encoding: String = null,
-    highWaterMark: Int | Double = null,
-    objectMode: js.UndefOr[Boolean] = js.undefined,
-    read: js.ThisFunction1[/* this */ _Readable, /* size */ Double, Unit] = null,
-    readableHighWaterMark: Int | Double = null,
-    readableObjectMode: js.UndefOr[Boolean] = js.undefined
-  ): ReadableOptions = {
+  
+  inline def apply(): ReadableOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding.asInstanceOf[js.Any])
-    if (destroy != null) __obj.updateDynamic("destroy")(destroy.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
-    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadableOptions]
   }
+  
+  extension [Self <: ReadableOptions](x: Self) {
+    
+    inline def setDestroy(
+      value: js.ThisFunction2[
+          /* this */ IReadable, 
+          /* error */ js.Error | Null, 
+          /* callback */ js.Function1[/* error */ js.Error | Null, Unit], 
+          Unit
+        ]
+    ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    
+    inline def setRead(value: js.ThisFunction1[/* this */ IReadable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+  }
 }
-

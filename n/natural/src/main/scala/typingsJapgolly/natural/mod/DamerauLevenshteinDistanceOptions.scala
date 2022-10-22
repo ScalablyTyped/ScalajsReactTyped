@@ -1,42 +1,60 @@
 package typingsJapgolly.natural.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DamerauLevenshteinDistanceOptions extends js.Object {
+trait DamerauLevenshteinDistanceOptions extends StObject {
+  
   /** @default 1 */
   var deletion_cost: js.UndefOr[Double] = js.undefined
+  
   /** @default 1 */
   var insertion_cost: js.UndefOr[Double] = js.undefined
+  
   /** @default false */
   var restricted: js.UndefOr[Boolean] = js.undefined
+  
   /** @default false */
   var search: js.UndefOr[Boolean] = js.undefined
+  
   /** @default 1 */
   var substitution_cost: js.UndefOr[Double] = js.undefined
+  
   /** @default 1 */
   var transposition_cost: js.UndefOr[Double] = js.undefined
 }
-
 object DamerauLevenshteinDistanceOptions {
-  @scala.inline
-  def apply(
-    deletion_cost: Int | Double = null,
-    insertion_cost: Int | Double = null,
-    restricted: js.UndefOr[Boolean] = js.undefined,
-    search: js.UndefOr[Boolean] = js.undefined,
-    substitution_cost: Int | Double = null,
-    transposition_cost: Int | Double = null
-  ): DamerauLevenshteinDistanceOptions = {
+  
+  inline def apply(): DamerauLevenshteinDistanceOptions = {
     val __obj = js.Dynamic.literal()
-    if (deletion_cost != null) __obj.updateDynamic("deletion_cost")(deletion_cost.asInstanceOf[js.Any])
-    if (insertion_cost != null) __obj.updateDynamic("insertion_cost")(insertion_cost.asInstanceOf[js.Any])
-    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (substitution_cost != null) __obj.updateDynamic("substitution_cost")(substitution_cost.asInstanceOf[js.Any])
-    if (transposition_cost != null) __obj.updateDynamic("transposition_cost")(transposition_cost.asInstanceOf[js.Any])
     __obj.asInstanceOf[DamerauLevenshteinDistanceOptions]
   }
+  
+  extension [Self <: DamerauLevenshteinDistanceOptions](x: Self) {
+    
+    inline def setDeletion_cost(value: Double): Self = StObject.set(x, "deletion_cost", value.asInstanceOf[js.Any])
+    
+    inline def setDeletion_costUndefined: Self = StObject.set(x, "deletion_cost", js.undefined)
+    
+    inline def setInsertion_cost(value: Double): Self = StObject.set(x, "insertion_cost", value.asInstanceOf[js.Any])
+    
+    inline def setInsertion_costUndefined: Self = StObject.set(x, "insertion_cost", js.undefined)
+    
+    inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSubstitution_cost(value: Double): Self = StObject.set(x, "substitution_cost", value.asInstanceOf[js.Any])
+    
+    inline def setSubstitution_costUndefined: Self = StObject.set(x, "substitution_cost", js.undefined)
+    
+    inline def setTransposition_cost(value: Double): Self = StObject.set(x, "transposition_cost", value.asInstanceOf[js.Any])
+    
+    inline def setTransposition_costUndefined: Self = StObject.set(x, "transposition_cost", js.undefined)
+  }
 }
-

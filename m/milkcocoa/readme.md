@@ -10,10 +10,10 @@ milkcocoa client for Node.js.
 | ------------------ | :-------------: |
 | Full name          | milkcocoa |
 | Keywords           | milkcocoa, realtime |
-| # releases         | 0 |
-| # dependents       | 5 |
-| # downloads        | 14518 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 275.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/milkcocoa)

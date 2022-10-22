@@ -1,80 +1,115 @@
 package typingsJapgolly.reactBootstrapTable.mod
 
-import typingsJapgolly.reactBootstrapTable.AnonComparator
-import typingsJapgolly.reactBootstrapTable.AnonNumber
+import typingsJapgolly.reactBootstrapTable.anon.ComparatorNumber
+import typingsJapgolly.reactBootstrapTable.anon.Number
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NumberFilter extends _Filter {
+trait NumberFilter
+  extends StObject
+     with _Filter {
+  
   /**
-  	 * Default value for the filter.
-  	 */
-  var defaultValue: js.UndefOr[AnonComparator] = js.undefined
+    * Default value for the filter.
+    */
+  var defaultValue: js.UndefOr[Number] = js.undefined
+  
   /**
-  	 * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
-  	 */
+    * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
+    */
   var delay: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Number filter comparators
-  	 */
+    * Number filter comparators
+    */
   var numberComparators: js.UndefOr[js.Array[FilterComparator]] = js.undefined
+  
   /**
-  	 * List of number options that can be selected, if the number field is a select dropdown instead of a text edit.
-  	 */
+    * List of number options that can be selected, if the number field is a select dropdown instead of a text edit.
+    */
   var options: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
-  	 * Placeholder text to show in the filter.
-  	 */
+    * Placeholder text to show in the filter.
+    */
   var placeholder: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * CSS Style to use for the select filter.
-  	 */
-  var style: js.UndefOr[AnonNumber] = js.undefined
+    * CSS Style to use for the select filter.
+    */
+  var style: js.UndefOr[ComparatorNumber] = js.undefined
+  
   /**
-  	 * Filter type must be 'NumberFilter'
-  	 */
+    * Filter type must be 'NumberFilter'
+    */
   var `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter
+  
   /**
-  	 * Specify that the comparator field MUST have a comparator selected.
-  	 */
+    * Specify that the comparator field MUST have a comparator selected.
+    */
   var withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Specify that the value field MUST have a number value specified.
-  	 */
+    * Specify that the value field MUST have a number value specified.
+    */
   var withoutEmptyNumberOption: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * If this is a select number field, disable the empty option in the dropdown.
-  	 */
+    * If this is a select number field, disable the empty option in the dropdown.
+    */
   var withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
 }
-
 object NumberFilter {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter,
-    defaultValue: AnonComparator = null,
-    delay: Int | Double = null,
-    numberComparators: js.Array[FilterComparator] = null,
-    options: js.Array[Double] = null,
-    placeholder: String = null,
-    style: AnonNumber = null,
-    withoutEmptyComparatorOption: js.UndefOr[Boolean] = js.undefined,
-    withoutEmptyNumberOption: js.UndefOr[Boolean] = js.undefined,
-    withoutEmptyOption: js.UndefOr[Boolean] = js.undefined
-  ): NumberFilter = {
+  
+  inline def apply(): NumberFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (numberComparators != null) __obj.updateDynamic("numberComparators")(numberComparators.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyComparatorOption)) __obj.updateDynamic("withoutEmptyComparatorOption")(withoutEmptyComparatorOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyNumberOption)) __obj.updateDynamic("withoutEmptyNumberOption")(withoutEmptyNumberOption.asInstanceOf[js.Any])
-    if (!js.isUndefined(withoutEmptyOption)) __obj.updateDynamic("withoutEmptyOption")(withoutEmptyOption.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NumberFilter")
     __obj.asInstanceOf[NumberFilter]
   }
+  
+  extension [Self <: NumberFilter](x: Self) {
+    
+    inline def setDefaultValue(value: Number): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setNumberComparators(value: js.Array[FilterComparator]): Self = StObject.set(x, "numberComparators", value.asInstanceOf[js.Any])
+    
+    inline def setNumberComparatorsUndefined: Self = StObject.set(x, "numberComparators", js.undefined)
+    
+    inline def setNumberComparatorsVarargs(value: FilterComparator*): Self = StObject.set(x, "numberComparators", js.Array(value*))
+    
+    inline def setOptions(value: js.Array[Double]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setOptionsVarargs(value: Double*): Self = StObject.set(x, "options", js.Array(value*))
+    
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    
+    inline def setStyle(value: ComparatorNumber): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setType(value: typingsJapgolly.reactBootstrapTable.reactBootstrapTableStrings.NumberFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyComparatorOption(value: Boolean): Self = StObject.set(x, "withoutEmptyComparatorOption", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyComparatorOptionUndefined: Self = StObject.set(x, "withoutEmptyComparatorOption", js.undefined)
+    
+    inline def setWithoutEmptyNumberOption(value: Boolean): Self = StObject.set(x, "withoutEmptyNumberOption", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyNumberOptionUndefined: Self = StObject.set(x, "withoutEmptyNumberOption", js.undefined)
+    
+    inline def setWithoutEmptyOption(value: Boolean): Self = StObject.set(x, "withoutEmptyOption", value.asInstanceOf[js.Any])
+    
+    inline def setWithoutEmptyOptionUndefined: Self = StObject.set(x, "withoutEmptyOption", js.undefined)
+  }
 }
-

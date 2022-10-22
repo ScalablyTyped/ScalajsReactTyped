@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.mobileMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsMobileMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.Mobile")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class Mobile ()
+open class Mobile ()
   extends typingsJapgolly.awsSdk.mod.Mobile {
   def this(options: ClientConfiguration) = this()
 }
-

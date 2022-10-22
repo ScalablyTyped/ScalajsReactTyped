@@ -1,16 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ReadableByteStreamController extends js.Object {
-  val byobRequest: js.UndefOr[ReadableStreamBYOBRequest] = js.native
-  val desiredSize: Double | Null = js.native
+trait ReadableByteStreamController extends StObject {
+  
+  /* standard dom */
+  val byobRequest: ReadableStreamBYOBRequest | Null = js.native
+  
+  /* standard dom */
   def close(): Unit = js.native
-  def enqueue(chunk: scala.scalajs.js.typedarray.ArrayBufferView): Unit = js.native
+  
+  /* standard dom */
+  val desiredSize: Double | Null = js.native
+  
+  /* standard dom */
+  def enqueue(chunk: js.typedarray.ArrayBufferView): Unit = js.native
+  
+  /* standard dom */
   def error(): Unit = js.native
-  def error(error: js.Any): Unit = js.native
+  def error(e: Any): Unit = js.native
 }
-

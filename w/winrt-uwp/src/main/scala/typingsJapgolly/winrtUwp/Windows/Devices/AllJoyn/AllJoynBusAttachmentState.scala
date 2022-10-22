@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.AllJoyn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AllJoynBusAttachmentState extends js.Object
-
+sealed trait AllJoynBusAttachmentState extends StObject
 /** Defines values used to indicate the state of a connection with an AllJoyn bus that is managed by an AllJoynBusAttachment object. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynBusAttachmentState")
 @js.native
-object AllJoynBusAttachmentState extends js.Object {
+object AllJoynBusAttachmentState extends StObject {
+  
   /** Currently connected to the bus. */
   @js.native
-  sealed trait connected extends AllJoynBusAttachmentState
+  sealed trait connected
+    extends StObject
+       with AllJoynBusAttachmentState
   
   /** Connecting to the bus. */
   @js.native
-  sealed trait connecting extends AllJoynBusAttachmentState
+  sealed trait connecting
+    extends StObject
+       with AllJoynBusAttachmentState
   
   /** Disconnected from the bus. */
   @js.native
-  sealed trait disconnected extends AllJoynBusAttachmentState
+  sealed trait disconnected
+    extends StObject
+       with AllJoynBusAttachmentState
   
   /** Currently disconnecting from the bus. */
   @js.native
-  sealed trait disconnecting extends AllJoynBusAttachmentState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AllJoynBusAttachmentState with Double] = js.native
-  /* 2 */ @js.native
-  object connected extends TopLevel[connected with Double]
-  
-  /* 1 */ @js.native
-  object connecting extends TopLevel[connecting with Double]
-  
-  /* 0 */ @js.native
-  object disconnected extends TopLevel[disconnected with Double]
-  
-  /* 3 */ @js.native
-  object disconnecting extends TopLevel[disconnecting with Double]
-  
+  sealed trait disconnecting
+    extends StObject
+       with AllJoynBusAttachmentState
 }
-

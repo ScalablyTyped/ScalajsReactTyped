@@ -10,10 +10,10 @@ Multidimensional Arrays
 | ------------------ | :-------------: |
 | Full name          | ndarray |
 | Keywords           | ndarray, array, multi, multidimensional, dimension, higher, image, volume, webgl, tensor, matrix, linear, algebra, science, numerical, computing, stride, shape |
-| # releases         | 0 |
-| # dependents       | 288 |
-| # downloads        | 6617578 |
-| # stars            | 28 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1666979.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/mikolalysenko/ndarray#readme)

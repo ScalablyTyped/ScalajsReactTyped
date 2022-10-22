@@ -1,52 +1,49 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.typescriptServices.TypeScript.ByteOrderMark
 import typingsJapgolly.typescriptServices.TypeScript.CompilationSettings
 import typingsJapgolly.typescriptServices.TypeScript.IScriptSnapshot
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.LanguageServiceShimHostAdapter")
-@js.native
-class LanguageServiceShimHostAdapter protected () extends ILanguageServiceHost {
-  def this(shimHost: ILanguageServiceShimHost) = this()
-  var shimHost: js.Any = js.native
-  /* CompleteClass */
-  override def debug(): Boolean = js.native
-  /* CompleteClass */
-  override def directoryExists(path: String): Boolean = js.native
-  /* CompleteClass */
-  override def error(): Boolean = js.native
-  /* CompleteClass */
-  override def fatal(): Boolean = js.native
-  /* CompleteClass */
-  override def fileExists(path: String): Boolean = js.native
-  /* CompleteClass */
-  override def getCompilationSettings(): CompilationSettings = js.native
-  /* CompleteClass */
-  override def getDiagnosticsObject(): ILanguageServicesDiagnostics = js.native
-  /* CompleteClass */
-  override def getLocalizedDiagnosticMessages(): js.Any = js.native
-  /* CompleteClass */
-  override def getParentDirectory(path: String): String = js.native
-  /* CompleteClass */
-  override def getScriptByteOrderMark(fileName: String): ByteOrderMark = js.native
-  /* CompleteClass */
-  override def getScriptFileNames(): js.Array[String] = js.native
-  /* CompleteClass */
-  override def getScriptIsOpen(fileName: String): Boolean = js.native
-  /* CompleteClass */
-  override def getScriptSnapshot(fileName: String): IScriptSnapshot = js.native
-  /* CompleteClass */
-  override def getScriptVersion(fileName: String): Double = js.native
-  /* CompleteClass */
-  override def information(): Boolean = js.native
-  /* CompleteClass */
-  override def log(s: String): Unit = js.native
-  /* CompleteClass */
-  override def resolveRelativePath(path: String, directory: String): String = js.native
-  /* CompleteClass */
-  override def warning(): Boolean = js.native
+trait LanguageServiceShimHostAdapter
+  extends StObject
+     with ILanguageServiceHost {
+  
+  /* private */ var shimHost: Any
 }
-
+object LanguageServiceShimHostAdapter {
+  
+  inline def apply(
+    debug: CallbackTo[Boolean],
+    directoryExists: String => Boolean,
+    error: CallbackTo[Boolean],
+    fatal: CallbackTo[Boolean],
+    fileExists: String => Boolean,
+    getCompilationSettings: CallbackTo[CompilationSettings],
+    getDiagnosticsObject: CallbackTo[ILanguageServicesDiagnostics],
+    getLocalizedDiagnosticMessages: CallbackTo[Any],
+    getParentDirectory: String => String,
+    getScriptByteOrderMark: String => ByteOrderMark,
+    getScriptFileNames: CallbackTo[js.Array[String]],
+    getScriptIsOpen: String => Boolean,
+    getScriptSnapshot: String => IScriptSnapshot,
+    getScriptVersion: String => Double,
+    information: CallbackTo[Boolean],
+    log: String => Callback,
+    resolveRelativePath: (String, String) => String,
+    shimHost: Any,
+    warning: CallbackTo[Boolean]
+  ): LanguageServiceShimHostAdapter = {
+    val __obj = js.Dynamic.literal(debug = debug.toJsFn, directoryExists = js.Any.fromFunction1(directoryExists), error = error.toJsFn, fatal = fatal.toJsFn, fileExists = js.Any.fromFunction1(fileExists), getCompilationSettings = getCompilationSettings.toJsFn, getDiagnosticsObject = getDiagnosticsObject.toJsFn, getLocalizedDiagnosticMessages = getLocalizedDiagnosticMessages.toJsFn, getParentDirectory = js.Any.fromFunction1(getParentDirectory), getScriptByteOrderMark = js.Any.fromFunction1(getScriptByteOrderMark), getScriptFileNames = getScriptFileNames.toJsFn, getScriptIsOpen = js.Any.fromFunction1(getScriptIsOpen), getScriptSnapshot = js.Any.fromFunction1(getScriptSnapshot), getScriptVersion = js.Any.fromFunction1(getScriptVersion), information = information.toJsFn, log = js.Any.fromFunction1((t0: String) => log(t0).runNow()), resolveRelativePath = js.Any.fromFunction2(resolveRelativePath), shimHost = shimHost.asInstanceOf[js.Any], warning = warning.toJsFn)
+    __obj.asInstanceOf[LanguageServiceShimHostAdapter]
+  }
+  
+  extension [Self <: LanguageServiceShimHostAdapter](x: Self) {
+    
+    inline def setShimHost(value: Any): Self = StObject.set(x, "shimHost", value.asInstanceOf[js.Any])
+  }
+}

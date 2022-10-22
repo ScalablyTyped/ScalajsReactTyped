@@ -10,10 +10,10 @@ Topological sorting with grouping support
 | ------------------ | :-------------: |
 | Full name          | topo |
 | Keywords           | topological, sort, toposort, topsort |
-| # releases         | 4 |
-| # dependents       | 15 |
-| # downloads        | 101971194 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 4773797.666666667 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/topo#readme)

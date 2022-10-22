@@ -2,73 +2,105 @@ package typingsJapgolly.minappEnv.DB
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.minappEnv.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatabaseCommand extends js.Object {
+trait DatabaseCommand extends StObject {
+  
   def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
-  def eq(`val`: js.Any): DatabaseQueryCommand
-  def gt(`val`: js.Any): DatabaseQueryCommand
-  def gte(`val`: js.Any): DatabaseQueryCommand
-  def in(`val`: Array[_]): DatabaseQueryCommand
+  
+  def gt(`val`: Any): DatabaseQueryCommand
+  
+  def gte(`val`: Any): DatabaseQueryCommand
+  
+  def in(`val`: Array[Any]): DatabaseQueryCommand
+  
   def inc(`val`: Double): DatabaseUpdateCommand
-  def lt(`val`: js.Any): DatabaseQueryCommand
-  def lte(`val`: js.Any): DatabaseQueryCommand
+  
+  def lt(`val`: Any): DatabaseQueryCommand
+  
+  def lte(`val`: Any): DatabaseQueryCommand
+  
   def mul(`val`: Double): DatabaseUpdateCommand
-  def neq(`val`: js.Any): DatabaseQueryCommand
-  def nin(`val`: Array[_]): DatabaseQueryCommand
+  
+  def neq(`val`: Any): DatabaseQueryCommand
+  
+  def nin(`val`: Array[Any]): DatabaseQueryCommand
+  
   def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
+  
   def pop(): DatabaseUpdateCommand
-  def push(values: js.Any*): DatabaseUpdateCommand
+  
+  def push(values: Any*): DatabaseUpdateCommand
+  
   def remove(): DatabaseUpdateCommand
-  def set(`val`: js.Any): DatabaseUpdateCommand
+  
+  def set(`val`: Any): DatabaseUpdateCommand
+  
   def shift(): DatabaseUpdateCommand
-  def unshift(values: js.Any*): DatabaseUpdateCommand
+  
+  def unshift(values: Any*): DatabaseUpdateCommand
 }
-
 object DatabaseCommand {
-  @scala.inline
-  def apply(
-    and: /* repeated */ DatabaseLogicCommand | IQueryCondition => CallbackTo[DatabaseLogicCommand],
-    eq: js.Any => CallbackTo[DatabaseQueryCommand],
-    gt: js.Any => CallbackTo[DatabaseQueryCommand],
-    gte: js.Any => CallbackTo[DatabaseQueryCommand],
-    in: Array[js.Any] => CallbackTo[DatabaseQueryCommand],
-    inc: Double => CallbackTo[DatabaseUpdateCommand],
-    lt: js.Any => CallbackTo[DatabaseQueryCommand],
-    lte: js.Any => CallbackTo[DatabaseQueryCommand],
-    mul: Double => CallbackTo[DatabaseUpdateCommand],
-    neq: js.Any => CallbackTo[DatabaseQueryCommand],
-    nin: Array[js.Any] => CallbackTo[DatabaseQueryCommand],
-    or: /* repeated */ DatabaseLogicCommand | IQueryCondition => CallbackTo[DatabaseLogicCommand],
+  
+  inline def apply(
+    and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
+    gt: Any => DatabaseQueryCommand,
+    gte: Any => DatabaseQueryCommand,
+    in: Array[Any] => DatabaseQueryCommand,
+    inc: Double => DatabaseUpdateCommand,
+    lt: Any => DatabaseQueryCommand,
+    lte: Any => DatabaseQueryCommand,
+    mul: Double => DatabaseUpdateCommand,
+    neq: Any => DatabaseQueryCommand,
+    nin: Array[Any] => DatabaseQueryCommand,
+    or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     pop: CallbackTo[DatabaseUpdateCommand],
-    push: /* repeated */ js.Any => CallbackTo[DatabaseUpdateCommand],
+    push: /* repeated */ Any => DatabaseUpdateCommand,
     remove: CallbackTo[DatabaseUpdateCommand],
-    set: js.Any => CallbackTo[DatabaseUpdateCommand],
+    set: Any => DatabaseUpdateCommand,
     shift: CallbackTo[DatabaseUpdateCommand],
-    unshift: /* repeated */ js.Any => CallbackTo[DatabaseUpdateCommand]
+    unshift: /* repeated */ Any => DatabaseUpdateCommand
   ): DatabaseCommand = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(js.Any.fromFunction1((t0: /* repeated */ typingsJapgolly.minappEnv.DB.DatabaseLogicCommand | typingsJapgolly.minappEnv.DB.IQueryCondition) => and(t0).runNow()))
-    __obj.updateDynamic("eq")(js.Any.fromFunction1((t0: js.Any) => eq(t0).runNow()))
-    __obj.updateDynamic("gt")(js.Any.fromFunction1((t0: js.Any) => gt(t0).runNow()))
-    __obj.updateDynamic("gte")(js.Any.fromFunction1((t0: js.Any) => gte(t0).runNow()))
-    __obj.updateDynamic("in")(js.Any.fromFunction1((t0: typingsJapgolly.minappEnv.Array[js.Any]) => in(t0).runNow()))
-    __obj.updateDynamic("inc")(js.Any.fromFunction1((t0: scala.Double) => inc(t0).runNow()))
-    __obj.updateDynamic("lt")(js.Any.fromFunction1((t0: js.Any) => lt(t0).runNow()))
-    __obj.updateDynamic("lte")(js.Any.fromFunction1((t0: js.Any) => lte(t0).runNow()))
-    __obj.updateDynamic("mul")(js.Any.fromFunction1((t0: scala.Double) => mul(t0).runNow()))
-    __obj.updateDynamic("neq")(js.Any.fromFunction1((t0: js.Any) => neq(t0).runNow()))
-    __obj.updateDynamic("nin")(js.Any.fromFunction1((t0: typingsJapgolly.minappEnv.Array[js.Any]) => nin(t0).runNow()))
-    __obj.updateDynamic("or")(js.Any.fromFunction1((t0: /* repeated */ typingsJapgolly.minappEnv.DB.DatabaseLogicCommand | typingsJapgolly.minappEnv.DB.IQueryCondition) => or(t0).runNow()))
-    __obj.updateDynamic("pop")(pop.toJsFn)
-    __obj.updateDynamic("push")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => push(t0).runNow()))
-    __obj.updateDynamic("remove")(remove.toJsFn)
-    __obj.updateDynamic("set")(js.Any.fromFunction1((t0: js.Any) => set(t0).runNow()))
-    __obj.updateDynamic("shift")(shift.toJsFn)
-    __obj.updateDynamic("unshift")(js.Any.fromFunction1((t0: /* repeated */ js.Any) => unshift(t0).runNow()))
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), gt = js.Any.fromFunction1(gt), gte = js.Any.fromFunction1(gte), in = js.Any.fromFunction1(in), inc = js.Any.fromFunction1(inc), lt = js.Any.fromFunction1(lt), lte = js.Any.fromFunction1(lte), mul = js.Any.fromFunction1(mul), neq = js.Any.fromFunction1(neq), nin = js.Any.fromFunction1(nin), or = js.Any.fromFunction1(or), pop = pop.toJsFn, push = js.Any.fromFunction1(push), remove = remove.toJsFn, set = js.Any.fromFunction1(set), shift = shift.toJsFn, unshift = js.Any.fromFunction1(unshift))
     __obj.asInstanceOf[DatabaseCommand]
   }
+  
+  extension [Self <: DatabaseCommand](x: Self) {
+    
+    inline def setAnd(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
+    
+    inline def setGt(value: Any => DatabaseQueryCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
+    
+    inline def setGte(value: Any => DatabaseQueryCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
+    
+    inline def setIn(value: Array[Any] => DatabaseQueryCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    
+    inline def setInc(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "inc", js.Any.fromFunction1(value))
+    
+    inline def setLt(value: Any => DatabaseQueryCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
+    
+    inline def setLte(value: Any => DatabaseQueryCommand): Self = StObject.set(x, "lte", js.Any.fromFunction1(value))
+    
+    inline def setMul(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "mul", js.Any.fromFunction1(value))
+    
+    inline def setNeq(value: Any => DatabaseQueryCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
+    
+    inline def setNin(value: Array[Any] => DatabaseQueryCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    
+    inline def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))
+    
+    inline def setPop(value: CallbackTo[DatabaseUpdateCommand]): Self = StObject.set(x, "pop", value.toJsFn)
+    
+    inline def setPush(value: /* repeated */ Any => DatabaseUpdateCommand): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+    
+    inline def setRemove(value: CallbackTo[DatabaseUpdateCommand]): Self = StObject.set(x, "remove", value.toJsFn)
+    
+    inline def setSet(value: Any => DatabaseUpdateCommand): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    
+    inline def setShift(value: CallbackTo[DatabaseUpdateCommand]): Self = StObject.set(x, "shift", value.toJsFn)
+    
+    inline def setUnshift(value: /* repeated */ Any => DatabaseUpdateCommand): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+  }
 }
-

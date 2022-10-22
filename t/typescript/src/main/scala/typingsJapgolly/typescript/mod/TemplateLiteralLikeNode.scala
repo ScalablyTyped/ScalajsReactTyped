@@ -1,11 +1,13 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateLiteralLikeNode extends LiteralLikeNode {
+trait TemplateLiteralLikeNode
+  extends StObject
+     with LiteralLikeNode {
+  
   var rawText: js.UndefOr[java.lang.String] = js.native
 }
-

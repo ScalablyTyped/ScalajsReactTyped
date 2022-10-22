@@ -1,8 +1,8 @@
 package typingsJapgolly.toastr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.toastr.toastrStrings.error
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.toastr.toastrStrings.success
   - typingsJapgolly.toastr.toastrStrings.warning
 */
-trait ToastrType extends js.Object
-
+trait ToastrType extends StObject
 object ToastrType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def error: typingsJapgolly.toastr.toastrStrings.error = this.cast("error")
-  @scala.inline
-  def info: typingsJapgolly.toastr.toastrStrings.info = this.cast("info")
-  @scala.inline
-  def success: typingsJapgolly.toastr.toastrStrings.success = this.cast("success")
-  @scala.inline
-  def warning: typingsJapgolly.toastr.toastrStrings.warning = this.cast("warning")
+  
+  inline def error: typingsJapgolly.toastr.toastrStrings.error = "error".asInstanceOf[typingsJapgolly.toastr.toastrStrings.error]
+  
+  inline def info: typingsJapgolly.toastr.toastrStrings.info = "info".asInstanceOf[typingsJapgolly.toastr.toastrStrings.info]
+  
+  inline def success: typingsJapgolly.toastr.toastrStrings.success = "success".asInstanceOf[typingsJapgolly.toastr.toastrStrings.success]
+  
+  inline def warning: typingsJapgolly.toastr.toastrStrings.warning = "warning".asInstanceOf[typingsJapgolly.toastr.toastrStrings.warning]
 }
-

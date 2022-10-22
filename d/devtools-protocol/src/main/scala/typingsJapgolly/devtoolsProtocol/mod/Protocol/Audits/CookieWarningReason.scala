@@ -1,0 +1,41 @@
+package typingsJapgolly.devtoolsProtocol.mod.Protocol.Audits
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedCrossSiteContext
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteNoneInsecure
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedLaxAllowUnsafe
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictLaxDowngradeStrict
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeStrict
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeLax
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeStrict
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeLax
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnAttributeValueExceedsMaxSize
+  - typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnDomainNonASCII
+*/
+trait CookieWarningReason extends StObject
+object CookieWarningReason {
+  
+  inline def WarnAttributeValueExceedsMaxSize: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnAttributeValueExceedsMaxSize = "WarnAttributeValueExceedsMaxSize".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnAttributeValueExceedsMaxSize]
+  
+  inline def WarnDomainNonASCII: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnDomainNonASCII = "WarnDomainNonASCII".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnDomainNonASCII]
+  
+  inline def WarnSameSiteLaxCrossDowngradeLax: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeLax = "WarnSameSiteLaxCrossDowngradeLax".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeLax]
+  
+  inline def WarnSameSiteLaxCrossDowngradeStrict: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeStrict = "WarnSameSiteLaxCrossDowngradeStrict".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteLaxCrossDowngradeStrict]
+  
+  inline def WarnSameSiteNoneInsecure: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteNoneInsecure = "WarnSameSiteNoneInsecure".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteNoneInsecure]
+  
+  inline def WarnSameSiteStrictCrossDowngradeLax: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeLax = "WarnSameSiteStrictCrossDowngradeLax".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeLax]
+  
+  inline def WarnSameSiteStrictCrossDowngradeStrict: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeStrict = "WarnSameSiteStrictCrossDowngradeStrict".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictCrossDowngradeStrict]
+  
+  inline def WarnSameSiteStrictLaxDowngradeStrict: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictLaxDowngradeStrict = "WarnSameSiteStrictLaxDowngradeStrict".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteStrictLaxDowngradeStrict]
+  
+  inline def WarnSameSiteUnspecifiedCrossSiteContext: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedCrossSiteContext = "WarnSameSiteUnspecifiedCrossSiteContext".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedCrossSiteContext]
+  
+  inline def WarnSameSiteUnspecifiedLaxAllowUnsafe: typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedLaxAllowUnsafe = "WarnSameSiteUnspecifiedLaxAllowUnsafe".asInstanceOf[typingsJapgolly.devtoolsProtocol.devtoolsProtocolStrings.WarnSameSiteUnspecifiedLaxAllowUnsafe]
+}

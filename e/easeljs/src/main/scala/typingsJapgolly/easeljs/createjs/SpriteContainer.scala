@@ -1,13 +1,13 @@
 package typingsJapgolly.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.SpriteContainer")
 @js.native
-class SpriteContainer () extends Container {
-  def this(spriteSheet: SpriteSheet) = this()
+trait SpriteContainer
+  extends StObject
+     with Container {
+  
   var spriteSheet: SpriteSheet = js.native
 }
-

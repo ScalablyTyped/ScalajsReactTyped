@@ -1,26 +1,33 @@
 package typingsJapgolly.rsocketCore
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.rsocketCore.rsocketencodingMod.Encoders
 import typingsJapgolly.rsocketTypes.reactiveSocketTypesMod.Frame
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-core/RSocketBinaryFraming", JSImport.Namespace)
-@js.native
-object rsocketbinaryframingMod extends js.Object {
-  def deserializeFrame(buffer: Buffer): Frame = js.native
-  def deserializeFrame(buffer: Buffer, encoders: Encoders[_]): Frame = js.native
-  def deserializeFrameWithLength(buffer: Buffer): Frame = js.native
-  def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[_]): Frame = js.native
-  def deserializeFrames(buffer: Buffer): js.Tuple2[js.Array[Frame], Buffer] = js.native
-  def deserializeFrames(buffer: Buffer, encoders: Encoders[_]): js.Tuple2[js.Array[Frame], Buffer] = js.native
-  def serializeFrame(frame: Frame): Buffer = js.native
-  def serializeFrame(frame: Frame, encoders: Encoders[_]): Buffer = js.native
-  def serializeFrameWithLength(frame: Frame): Buffer = js.native
-  def serializeFrameWithLength(frame: Frame, encoders: Encoders[_]): Buffer = js.native
-  def sizeOfFrame(frame: Frame): Double = js.native
-  def sizeOfFrame(frame: Frame, encoders: Encoders[_]): Double = js.native
+object rsocketbinaryframingMod {
+  
+  @JSImport("rsocket-core/RSocketBinaryFraming", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def deserializeFrame(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
+  inline def deserializeFrame(buffer: Buffer, encoders: Encoders[Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrame")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
+  
+  inline def deserializeFrameWithLength(buffer: Buffer): Frame = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any]).asInstanceOf[Frame]
+  inline def deserializeFrameWithLength(buffer: Buffer, encoders: Encoders[Any]): Frame = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrameWithLength")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Frame]
+  
+  inline def deserializeFrames(buffer: Buffer): js.Tuple2[js.Array[Frame], Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
+  inline def deserializeFrames(buffer: Buffer, encoders: Encoders[Any]): js.Tuple2[js.Array[Frame], Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeFrames")(buffer.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Array[Frame], Buffer]]
+  
+  inline def serializeFrame(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def serializeFrame(frame: Frame, encoders: Encoders[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrame")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def serializeFrameWithLength(frame: Frame): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def serializeFrameWithLength(frame: Frame, encoders: Encoders[Any]): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeFrameWithLength")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def sizeOfFrame(frame: Frame): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeOfFrame")(frame.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def sizeOfFrame(frame: Frame, encoders: Encoders[Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sizeOfFrame")(frame.asInstanceOf[js.Any], encoders.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

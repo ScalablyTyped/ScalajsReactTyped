@@ -1,11 +1,12 @@
 package typingsJapgolly.angular.mod
 
 import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("angular", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[IAngularStatic]
-
+object ^
+  extends StObject
+     with TopLevel[IAngularStatic]

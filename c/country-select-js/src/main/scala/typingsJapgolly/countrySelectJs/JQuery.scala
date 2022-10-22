@@ -5,18 +5,19 @@ import typingsJapgolly.countrySelectJs.CountrySelectJs.Options
 import typingsJapgolly.countrySelectJs.countrySelectJsStrings.destroy
 import typingsJapgolly.countrySelectJs.countrySelectJsStrings.getSelectedCountryData
 import typingsJapgolly.jquery.JQueryDeferred
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
   /**
     * initialize the plugin with optional options.
     */
-  def countrySelect(): JQueryDeferred[_] = js.native
+  def countrySelect(): JQueryDeferred[Any] = js.native
   def countrySelect(method: String, value: String): Unit = js.native
-  def countrySelect(options: Options): JQueryDeferred[_] = js.native
+  def countrySelect(options: Options): JQueryDeferred[Any] = js.native
   /**
     * Remove the plugin from the input, and unbind any event listeners.
     */
@@ -28,4 +29,3 @@ trait JQuery extends js.Object {
   @JSName("countrySelect")
   def countrySelect_getSelectedCountryData(method: getSelectedCountryData): CountryData = js.native
 }
-

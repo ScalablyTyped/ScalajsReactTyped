@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@commitlint/load" : "17.1.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@commitlint/load" : "17.1.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

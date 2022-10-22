@@ -1,88 +1,120 @@
 package typingsJapgolly.reactToastify.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactToastify.mod.PositionOptions
-import typingsJapgolly.reactToastify.mod.ToastContainerProps
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.reactToastify.anon.DefaultClassName
+import typingsJapgolly.reactToastify.distComponentsCloseButtonMod.CloseButtonProps
+import typingsJapgolly.reactToastify.distComponentsIconsMod.IconProps
+import typingsJapgolly.reactToastify.distTypesMod.DraggableDirection
+import typingsJapgolly.reactToastify.distTypesMod.Id
+import typingsJapgolly.reactToastify.distTypesMod.Theme
+import typingsJapgolly.reactToastify.distTypesMod.ToastClassName
+import typingsJapgolly.reactToastify.distTypesMod.ToastContainerProps
+import typingsJapgolly.reactToastify.distTypesMod.ToastPosition
+import typingsJapgolly.reactToastify.distTypesMod.ToastTransition
 import typingsJapgolly.reactToastify.reactToastifyBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ToastContainer {
-  def apply(
-    autoClose: Double | `false` = null,
-    bodyClassName: String | js.Object = null,
-    className: String | js.Object = null,
-    closeButton: Node | Boolean = null,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    containerId: String | Double = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    draggablePercent: Int | Double = null,
-    enableMultiContainer: js.UndefOr[Boolean] = js.undefined,
-    hideProgressBar: js.UndefOr[Boolean] = js.undefined,
-    newestOnTop: js.UndefOr[Boolean] = js.undefined,
-    onClick: js.Function = null,
-    pauseOnFocusLoss: js.UndefOr[Boolean] = js.undefined,
-    pauseOnHover: js.UndefOr[Boolean] = js.undefined,
-    position: PositionOptions = null,
-    progressClassName: String | js.Object = null,
-    progressStyle: js.Object = null,
-    role: String = null,
-    rtl: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    toastClassName: String | js.Object = null,
-    transition: ComponentType[js.Object] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ToastContainerProps, 
-    typingsJapgolly.reactToastify.mod.ToastContainer, 
-    Unit, 
-    ToastContainerProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (autoClose != null) __obj.updateDynamic("autoClose")(autoClose.asInstanceOf[js.Any])
-    if (bodyClassName != null) __obj.updateDynamic("bodyClassName")(bodyClassName.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeButton != null) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (containerId != null) __obj.updateDynamic("containerId")(containerId.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (draggablePercent != null) __obj.updateDynamic("draggablePercent")(draggablePercent.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultiContainer)) __obj.updateDynamic("enableMultiContainer")(enableMultiContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideProgressBar)) __obj.updateDynamic("hideProgressBar")(hideProgressBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnFocusLoss)) __obj.updateDynamic("pauseOnFocusLoss")(pauseOnFocusLoss.asInstanceOf[js.Any])
-    if (!js.isUndefined(pauseOnHover)) __obj.updateDynamic("pauseOnHover")(pauseOnHover.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (progressClassName != null) __obj.updateDynamic("progressClassName")(progressClassName.asInstanceOf[js.Any])
-    if (progressStyle != null) __obj.updateDynamic("progressStyle")(progressStyle.asInstanceOf[js.Any])
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (toastClassName != null) __obj.updateDynamic("toastClassName")(toastClassName.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactToastify.mod.ToastContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactToastify.mod.ToastContainer](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactToastify.mod.ToastContainerProps])(children: _*)
-  }
   @JSImport("react-toastify", "ToastContainer")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLDivElement] {
+    
+    inline def autoClose(value: Double | `false`): this.type = set("autoClose", value.asInstanceOf[js.Any])
+    
+    inline def bodyClassName(value: ToastClassName): this.type = set("bodyClassName", value.asInstanceOf[js.Any])
+    
+    inline def bodyClassNameFunction1(value: /* context */ js.UndefOr[DefaultClassName] => String): this.type = set("bodyClassName", js.Any.fromFunction1(value))
+    
+    inline def bodyStyle(value: CSSProperties): this.type = set("bodyStyle", value.asInstanceOf[js.Any])
+    
+    inline def className(value: ToastClassName): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classNameFunction1(value: /* context */ js.UndefOr[DefaultClassName] => String): this.type = set("className", js.Any.fromFunction1(value))
+    
+    inline def closeButton(value: Boolean | (js.Function1[/* props */ CloseButtonProps, Node]) | Element): this.type = set("closeButton", value.asInstanceOf[js.Any])
+    
+    inline def closeButtonFunction1(value: /* props */ CloseButtonProps => Node): this.type = set("closeButton", js.Any.fromFunction1(value))
+    
+    inline def closeButtonVdomElement(value: VdomElement): this.type = set("closeButton", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def closeOnClick(value: Boolean): this.type = set("closeOnClick", value.asInstanceOf[js.Any])
+    
+    inline def containerId(value: Id): this.type = set("containerId", value.asInstanceOf[js.Any])
+    
+    inline def draggable(value: Boolean): this.type = set("draggable", value.asInstanceOf[js.Any])
+    
+    inline def draggableDirection(value: DraggableDirection): this.type = set("draggableDirection", value.asInstanceOf[js.Any])
+    
+    inline def draggablePercent(value: Double): this.type = set("draggablePercent", value.asInstanceOf[js.Any])
+    
+    inline def enableMultiContainer(value: Boolean): this.type = set("enableMultiContainer", value.asInstanceOf[js.Any])
+    
+    inline def hideProgressBar(value: Boolean): this.type = set("hideProgressBar", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: Boolean | (js.Function1[/* props */ IconProps, Node]) | Element | String | Double | Node): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def iconFunction1(value: /* props */ IconProps => Node): this.type = set("icon", js.Any.fromFunction1(value))
+    
+    inline def iconNull: this.type = set("icon", null)
+    
+    inline def iconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("icon", js.Array(value*))
+    
+    inline def iconVdomElement(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def limit(value: Double): this.type = set("limit", value.asInstanceOf[js.Any])
+    
+    inline def newestOnTop(value: Boolean): this.type = set("newestOnTop", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: /* event */ ReactMouseEventFrom[org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* event */ ReactMouseEventFrom[org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def pauseOnFocusLoss(value: Boolean): this.type = set("pauseOnFocusLoss", value.asInstanceOf[js.Any])
+    
+    inline def pauseOnHover(value: Boolean): this.type = set("pauseOnHover", value.asInstanceOf[js.Any])
+    
+    inline def position(value: ToastPosition): this.type = set("position", value.asInstanceOf[js.Any])
+    
+    inline def progressClassName(value: ToastClassName): this.type = set("progressClassName", value.asInstanceOf[js.Any])
+    
+    inline def progressClassNameFunction1(value: /* context */ js.UndefOr[DefaultClassName] => String): this.type = set("progressClassName", js.Any.fromFunction1(value))
+    
+    inline def progressStyle(value: CSSProperties): this.type = set("progressStyle", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def rtl(value: Boolean): this.type = set("rtl", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def toastClassName(value: ToastClassName): this.type = set("toastClassName", value.asInstanceOf[js.Any])
+    
+    inline def toastClassNameFunction1(value: /* context */ js.UndefOr[DefaultClassName] => String): this.type = set("toastClassName", js.Any.fromFunction1(value))
+    
+    inline def toastStyle(value: CSSProperties): this.type = set("toastStyle", value.asInstanceOf[js.Any])
+    
+    inline def transition(value: ToastTransition): this.type = set("transition", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ToastContainer.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ToastContainerProps & RefAttributes[HTMLDivElement]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineGroupEditableOption extends js.Object {
+trait TimelineGroupEditableOption extends StObject {
+  
   var add: js.UndefOr[Boolean] = js.undefined
+  
   var order: js.UndefOr[Boolean] = js.undefined
+  
   var remove: js.UndefOr[Boolean] = js.undefined
 }
-
 object TimelineGroupEditableOption {
-  @scala.inline
-  def apply(
-    add: js.UndefOr[Boolean] = js.undefined,
-    order: js.UndefOr[Boolean] = js.undefined,
-    remove: js.UndefOr[Boolean] = js.undefined
-  ): TimelineGroupEditableOption = {
+  
+  inline def apply(): TimelineGroupEditableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (!js.isUndefined(order)) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineGroupEditableOption]
   }
+  
+  extension [Self <: TimelineGroupEditableOption](x: Self) {
+    
+    inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    
+    inline def setOrder(value: Boolean): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+  }
 }
-

@@ -1,45 +1,69 @@
 package typingsJapgolly.xrm.Xrm
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * properties of the current business app in Customer Engagement.
   */
-trait AppProperties extends js.Object {
+trait AppProperties extends StObject {
+  
   var appId: js.UndefOr[String] = js.undefined
+  
   var displayName: js.UndefOr[String] = js.undefined
+  
   var uniqueName: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var webResourceId: js.UndefOr[String] = js.undefined
+  
   var webResourceName: js.UndefOr[String] = js.undefined
+  
   var welcomePageId: js.UndefOr[String] = js.undefined
+  
   var welcomePageName: js.UndefOr[String] = js.undefined
 }
-
 object AppProperties {
-  @scala.inline
-  def apply(
-    appId: String = null,
-    displayName: String = null,
-    uniqueName: String = null,
-    url: String = null,
-    webResourceId: String = null,
-    webResourceName: String = null,
-    welcomePageId: String = null,
-    welcomePageName: String = null
-  ): AppProperties = {
+  
+  inline def apply(): AppProperties = {
     val __obj = js.Dynamic.literal()
-    if (appId != null) __obj.updateDynamic("appId")(appId.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (webResourceId != null) __obj.updateDynamic("webResourceId")(webResourceId.asInstanceOf[js.Any])
-    if (webResourceName != null) __obj.updateDynamic("webResourceName")(webResourceName.asInstanceOf[js.Any])
-    if (welcomePageId != null) __obj.updateDynamic("welcomePageId")(welcomePageId.asInstanceOf[js.Any])
-    if (welcomePageName != null) __obj.updateDynamic("welcomePageName")(welcomePageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AppProperties]
   }
+  
+  extension [Self <: AppProperties](x: Self) {
+    
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setUniqueName(value: String): Self = StObject.set(x, "uniqueName", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueNameUndefined: Self = StObject.set(x, "uniqueName", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWebResourceId(value: String): Self = StObject.set(x, "webResourceId", value.asInstanceOf[js.Any])
+    
+    inline def setWebResourceIdUndefined: Self = StObject.set(x, "webResourceId", js.undefined)
+    
+    inline def setWebResourceName(value: String): Self = StObject.set(x, "webResourceName", value.asInstanceOf[js.Any])
+    
+    inline def setWebResourceNameUndefined: Self = StObject.set(x, "webResourceName", js.undefined)
+    
+    inline def setWelcomePageId(value: String): Self = StObject.set(x, "welcomePageId", value.asInstanceOf[js.Any])
+    
+    inline def setWelcomePageIdUndefined: Self = StObject.set(x, "welcomePageId", js.undefined)
+    
+    inline def setWelcomePageName(value: String): Self = StObject.set(x, "welcomePageName", value.asInstanceOf[js.Any])
+    
+    inline def setWelcomePageNameUndefined: Self = StObject.set(x, "welcomePageName", js.undefined)
+  }
 }
-

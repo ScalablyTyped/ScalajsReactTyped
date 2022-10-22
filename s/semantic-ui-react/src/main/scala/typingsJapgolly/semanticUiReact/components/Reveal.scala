@@ -1,13 +1,13 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.revealRevealMod.RevealProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsElementsRevealRevealContentMod.RevealContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsRevealRevealMod.RevealProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`move down`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`move right`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`move up`
@@ -16,50 +16,56 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.`small fade`
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.fade
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.move
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.rotate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Reveal {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    animated: fade | (`small fade`) | move | (`move right`) | (`move up`) | (`move down`) | rotate | (`rotate left`) = null,
-    as: js.Any = null,
-    className: String = null,
-    content: SemanticShorthandContent = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    instant: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    RevealProps, 
-    MountedWithRawType[RevealProps, js.Object, RawMounted[RevealProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (animated != null) __obj.updateDynamic("animated")(animated.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(instant)) __obj.updateDynamic("instant")(instant.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.revealRevealMod.RevealProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.revealRevealMod.RevealProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Reveal.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_RevealContentProps272703396 = new SharedBuilder_RevealContentProps272703396(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: RevealContentProps): SharedBuilder_RevealContentProps272703396 = new SharedBuilder_RevealContentProps272703396(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Reveal", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("semantic-ui-react", "Reveal")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def animated(
+      value: fade | (`small fade`) | move | (`move right`) | (`move up`) | (`move down`) | rotate | (`rotate left`)
+    ): this.type = set("animated", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def instant(value: Boolean): this.type = set("instant", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Reveal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RevealProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

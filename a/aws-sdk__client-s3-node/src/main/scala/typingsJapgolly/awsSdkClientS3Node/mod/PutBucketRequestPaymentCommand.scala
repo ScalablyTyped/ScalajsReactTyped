@@ -1,14 +1,13 @@
 package typingsJapgolly.awsSdkClientS3Node.mod
 
 import typingsJapgolly.awsSdkClientS3Node.typesPutBucketRequestPaymentInputMod.PutBucketRequestPaymentInput
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@aws-sdk/client-s3-node", "PutBucketRequestPaymentCommand")
 @js.native
-class PutBucketRequestPaymentCommand protected ()
-  extends typingsJapgolly.awsSdkClientS3Node.putBucketRequestPaymentCommandMod.PutBucketRequestPaymentCommand {
+open class PutBucketRequestPaymentCommand protected ()
+  extends typingsJapgolly.awsSdkClientS3Node.commandsPutBucketRequestPaymentCommandMod.PutBucketRequestPaymentCommand {
   def this(input: PutBucketRequestPaymentInput) = this()
 }
-

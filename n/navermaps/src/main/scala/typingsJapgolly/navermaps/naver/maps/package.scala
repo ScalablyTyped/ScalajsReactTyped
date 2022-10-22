@@ -1,49 +1,74 @@
-package typingsJapgolly.navermaps.naver
+package typingsJapgolly.navermaps.naver.maps
 
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object maps {
-  type ArrayOfBounds = js.Array[
-    typingsJapgolly.navermaps.naver.maps.LatLngBounds | typingsJapgolly.navermaps.naver.maps.PointBounds
-  ]
-  type ArrayOfBoundsLiteral = js.Array[
-    typingsJapgolly.navermaps.naver.maps.LatLngBoundsLiteral | typingsJapgolly.navermaps.naver.maps.PointBoundsLiteral
-  ]
-  type ArrayOfCoords = js.Array[
-    typingsJapgolly.navermaps.naver.maps.LatLng | typingsJapgolly.navermaps.naver.maps.Point
-  ]
-  type ArrayOfCoordsLiteral = js.Array[
-    typingsJapgolly.navermaps.naver.maps.LatLngLiteral | typingsJapgolly.navermaps.naver.maps.PointLiteral
-  ]
-  type BoundsLiteral = typingsJapgolly.navermaps.naver.maps.PointBoundsLiteral | typingsJapgolly.navermaps.naver.maps.LatLngBoundsLiteral
-  type CoordLiteral = typingsJapgolly.navermaps.naver.maps.PointLiteral | typingsJapgolly.navermaps.naver.maps.LatLngLiteral
-  type DOMEvent = typingsJapgolly.std.Event_
-  type GPX = js.Any
-  type GeoJSON = js.Any
-  type KML = js.Any
-  type KVOArrayOfCoords = js.Any
-  type LatLngBoundsLiteral = typingsJapgolly.navermaps.naver.maps.PointBoundsLiteral | typingsJapgolly.navermaps.naver.maps.LatLngBoundsObjectLiteral
-  type LatLngLiteral = typingsJapgolly.navermaps.naver.maps.PointLiteral | typingsJapgolly.navermaps.naver.maps.LatLngObjectLiteral
-  type MapTypeId = java.lang.String
-  /**
-    * Types
-    */
-  type PointArrayLiteral = js.Tuple2[scala.Double, scala.Double]
-  type PointBoundsArrayLiteral = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
-  type PointBoundsLiteral = typingsJapgolly.navermaps.naver.maps.PointBoundsArrayLiteral | typingsJapgolly.navermaps.naver.maps.PointBoundsObjectLiteral
-  type PointLiteral = typingsJapgolly.navermaps.naver.maps.PointArrayLiteral | typingsJapgolly.navermaps.naver.maps.PointObjectLiteral
-  type SizeArrayLiteral = js.Tuple2[scala.Double, scala.Double]
-  type SizeLiteral = typingsJapgolly.navermaps.naver.maps.SizeArrayLiteral | typingsJapgolly.navermaps.naver.maps.SizeObjectLiteral
-  type StylingFunction = js.Function1[
-    /* feature */ typingsJapgolly.navermaps.naver.maps.Feature, 
-    typingsJapgolly.navermaps.naver.maps.StyleOptions
-  ]
-  type SymbolStyle = java.lang.String
-  type forEachOverlayCallback = js.Function2[
-    /* overlay */ typingsJapgolly.navermaps.naver.maps.Marker | typingsJapgolly.navermaps.naver.maps.Polyline | typingsJapgolly.navermaps.naver.maps.Polygon, 
-    /* index */ scala.Double, 
-    scala.Unit
-  ]
-}
+
+type AroundControl = CustomControl
+
+type ArrayOfBounds = js.Array[LatLngBounds | PointBounds]
+
+type ArrayOfBoundsLiteral = js.Array[LatLngBoundsLiteral | PointBoundsLiteral]
+
+type ArrayOfCoords = js.Array[LatLng | Point]
+
+type ArrayOfCoordsLiteral = js.Array[LatLngLiteral | PointLiteral]
+
+type BoundsLiteral = PointBoundsLiteral | LatLngBoundsLiteral
+
+type CanvasTile = Tile
+
+type CoordLiteral = PointLiteral | LatLngLiteral
+
+type DOMEvent = Event
+
+type GPX = Any
+
+type GeoJSON = Any
+
+type KML = Any
+
+type KVOArrayOfCoords = Any
+
+// Naver Layers
+type LabelLayer = Layer
+
+type LatLngBoundsLiteral = PointBoundsLiteral | LatLngBoundsObjectLiteral
+
+type LatLngLiteral = PointLiteral | LatLngObjectLiteral
+
+// Naver Controls
+type LogoControl = CustomControl
+
+type MapDataControl = CustomControl
+
+type MapTypeControl = CustomControl
+
+type MapTypeId = String
+
+/**
+  * Types
+  */
+type PointArrayLiteral = js.Tuple2[Double, Double]
+
+type PointBoundsArrayLiteral = js.Tuple4[Double, Double, Double, Double]
+
+type PointBoundsLiteral = PointBoundsArrayLiteral | PointBoundsObjectLiteral
+
+type PointLiteral = PointArrayLiteral | PointObjectLiteral
+
+type ScaleControl = CustomControl
+
+type SizeArrayLiteral = js.Tuple2[Double, Double]
+
+type SizeLiteral = SizeArrayLiteral | SizeObjectLiteral
+
+type StylingFunction = js.Function1[/* feature */ Feature, StyleOptions]
+
+type SymbolStyle = String
+
+type ZoomControl = CustomControl
+
+type forEachOverlayCallback = js.Function2[/* overlay */ Marker | Polyline | Polygon, /* index */ Double, Unit]

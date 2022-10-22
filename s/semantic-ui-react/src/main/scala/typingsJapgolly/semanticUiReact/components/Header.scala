@@ -1,16 +1,17 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticFLOATS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticTEXTALIGNMENTS
-import typingsJapgolly.semanticUiReact.headerHeaderMod.HeaderProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsElementsHeaderHeaderContentMod.HeaderContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsHeaderHeaderMod.HeaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsHeaderHeaderSubheaderMod.HeaderSubheaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticFLOATS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticTEXTALIGNMENTS
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.bottom
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.huge
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.large
@@ -18,68 +19,83 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.medium
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.small
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.tiny
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Header {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    attached: Boolean | top | bottom = null,
-    block: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    content: VdomNode = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dividing: js.UndefOr[Boolean] = js.undefined,
-    floated: SemanticFLOATS = null,
-    icon: js.Any = null,
-    image: js.Any = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    size: tiny | small | medium | large | huge = null,
-    sub: js.UndefOr[Boolean] = js.undefined,
-    subheader: js.Any = null,
-    textAlign: SemanticTEXTALIGNMENTS = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    HeaderProps, 
-    MountedWithRawType[HeaderProps, js.Object, RawMounted[HeaderProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(dividing)) __obj.updateDynamic("dividing")(dividing.asInstanceOf[js.Any])
-    if (floated != null) __obj.updateDynamic("floated")(floated.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(sub)) __obj.updateDynamic("sub")(sub.asInstanceOf[js.Any])
-    if (subheader != null) __obj.updateDynamic("subheader")(subheader.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.semanticUiReact.headerHeaderMod.HeaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.headerHeaderMod.HeaderProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Header.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_HeaderContentProps_525501621 = new SharedBuilder_HeaderContentProps_525501621(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: HeaderContentProps): SharedBuilder_HeaderContentProps_525501621 = new SharedBuilder_HeaderContentProps_525501621(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/elements/Header", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Subheader {
+    
+    @JSImport("semantic-ui-react", "Header.Subheader")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Subheader.type): SharedBuilder_HeaderSubheaderProps1061802056 = new SharedBuilder_HeaderSubheaderProps1061802056(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: HeaderSubheaderProps): SharedBuilder_HeaderSubheaderProps1061802056 = new SharedBuilder_HeaderSubheaderProps1061802056(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Header")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def attached(value: Boolean | top | bottom): this.type = set("attached", value.asInstanceOf[js.Any])
+    
+    inline def block(value: Boolean): this.type = set("block", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def content(value: VdomNode): this.type = set("content", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def dividing(value: Boolean): this.type = set("dividing", value.asInstanceOf[js.Any])
+    
+    inline def floated(value: SemanticFLOATS): this.type = set("floated", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: Any): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def image(value: Any): this.type = set("image", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def size(value: tiny | small | medium | large | huge): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def sub(value: Boolean): this.type = set("sub", value.asInstanceOf[js.Any])
+    
+    inline def subheader(value: Any): this.type = set("subheader", value.asInstanceOf[js.Any])
+    
+    inline def textAlign(value: SemanticTEXTALIGNMENTS): this.type = set("textAlign", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Header.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HeaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,29 +1,28 @@
 package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StyleSetOpts extends SetOpts {
+trait StyleSetOpts
+  extends StObject
+     with SetOpts {
+  
   /** Whether or not to apply the new styles immediately. Defaults to updating the Ractive-managed style tag (true) */
   @JSName("apply")
   var apply: js.UndefOr[Boolean] = js.undefined
 }
-
 object StyleSetOpts {
-  @scala.inline
-  def apply(
-    apply: js.UndefOr[Boolean] = js.undefined,
-    deep: js.UndefOr[Boolean] = js.undefined,
-    keep: js.UndefOr[Boolean] = js.undefined,
-    shuffle: Shuffler = null
-  ): StyleSetOpts = {
+  
+  inline def apply(): StyleSetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(apply)) __obj.updateDynamic("apply")(apply.asInstanceOf[js.Any])
-    if (!js.isUndefined(deep)) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
-    if (!js.isUndefined(keep)) __obj.updateDynamic("keep")(keep.asInstanceOf[js.Any])
-    if (shuffle != null) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSetOpts]
   }
+  
+  extension [Self <: StyleSetOpts](x: Self) {
+    
+    inline def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    
+    inline def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
+  }
 }
-

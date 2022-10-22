@@ -1,31 +1,37 @@
 package typingsJapgolly.webAnimationsJs
 
 import typingsJapgolly.std.EventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationPlaybackEventInit extends EventInit {
+trait AnimationPlaybackEventInit
+  extends StObject
+     with EventInit {
+  
   var currentTime: js.UndefOr[Double | Null] = js.undefined
+  
   var timelineTime: js.UndefOr[Double | Null] = js.undefined
 }
-
 object AnimationPlaybackEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    currentTime: Int | Double = null,
-    timelineTime: Int | Double = null
-  ): AnimationPlaybackEventInit = {
+  
+  inline def apply(): AnimationPlaybackEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (currentTime != null) __obj.updateDynamic("currentTime")(currentTime.asInstanceOf[js.Any])
-    if (timelineTime != null) __obj.updateDynamic("timelineTime")(timelineTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationPlaybackEventInit]
   }
+  
+  extension [Self <: AnimationPlaybackEventInit](x: Self) {
+    
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentTimeNull: Self = StObject.set(x, "currentTime", null)
+    
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    
+    inline def setTimelineTime(value: Double): Self = StObject.set(x, "timelineTime", value.asInstanceOf[js.Any])
+    
+    inline def setTimelineTimeNull: Self = StObject.set(x, "timelineTime", null)
+    
+    inline def setTimelineTimeUndefined: Self = StObject.set(x, "timelineTime", js.undefined)
+  }
 }
-

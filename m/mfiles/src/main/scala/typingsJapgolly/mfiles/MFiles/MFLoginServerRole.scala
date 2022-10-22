@@ -1,35 +1,31 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
 */
-trait MFLoginServerRole extends js.Object
-
+trait MFLoginServerRole extends StObject
 object MFLoginServerRole {
-  @scala.inline
-  def BackupOperator: `4` = this.cast(4)
-  @scala.inline
-  def LogIn: `8` = this.cast(8)
-  @scala.inline
-  def None: `0` = this.cast(0)
-  @scala.inline
-  def SystemAdministrator: `1` = this.cast(1)
-  @scala.inline
-  def VaultCreator: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BackupOperator: `4` = 4.asInstanceOf[`4`]
+  
+  inline def LogIn: `8` = 8.asInstanceOf[`8`]
+  
+  inline def None: `0` = 0.asInstanceOf[`0`]
+  
+  inline def SystemAdministrator: `1` = 1.asInstanceOf[`1`]
+  
+  inline def VaultCreator: `2` = 2.asInstanceOf[`2`]
 }
-

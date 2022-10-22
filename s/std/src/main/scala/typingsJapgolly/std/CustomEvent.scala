@@ -1,27 +1,26 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomEvent[T] extends Event_ {
-  /**
-    * Returns any custom data event was created with. Typically used for synthetic events.
-    */
+trait CustomEvent[T]
+  extends StObject
+     with Event {
+  
+  /** Returns any custom data event was created with. Typically used for synthetic events. */
+  /* standard dom */
   val detail: T = js.native
-  def initCustomEvent(typeArg: java.lang.String, canBubbleArg: scala.Boolean, cancelableArg: scala.Boolean, detailArg: T): Unit = js.native
+  
+  /** @deprecated */
+  /* standard dom */
+  def initCustomEvent(`type`: java.lang.String): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: scala.Boolean): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: scala.Boolean, cancelable: scala.Boolean): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: scala.Boolean, cancelable: scala.Boolean, detail: T): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: scala.Boolean, cancelable: Unit, detail: T): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: Unit, cancelable: scala.Boolean): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: Unit, cancelable: scala.Boolean, detail: T): Unit = js.native
+  def initCustomEvent(`type`: java.lang.String, bubbles: Unit, cancelable: Unit, detail: T): Unit = js.native
 }
-
-@JSGlobal("CustomEvent")
-@js.native
-object CustomEvent
-  extends Instantiable1[/* typeArg */ java.lang.String, CustomEvent[js.Object]]
-     with Instantiable2[
-      /* typeArg */ java.lang.String, 
-      /* eventInitDict */ CustomEventInit[js.Object], 
-      CustomEvent[js.Object]
-    ]
-

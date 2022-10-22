@@ -1,67 +1,63 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`10`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`11`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`6`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`7`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`8`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`9`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`10`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`11`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`6`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`7`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`8`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`4`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`5`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`11`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`7`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`10`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`8`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`6`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`3`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`9`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`2`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`4`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`5`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`11`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`7`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`10`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`8`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`6`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`3`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`9`
 */
-trait styleBorderStyle extends js.Object
-
+trait styleBorderStyle extends StObject
 object styleBorderStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def styleBorderStyleDashed: `2` = this.cast(2)
-  @scala.inline
-  def styleBorderStyleDotted: `1` = this.cast(1)
-  @scala.inline
-  def styleBorderStyleDouble: `4` = this.cast(4)
-  @scala.inline
-  def styleBorderStyleGroove: `5` = this.cast(5)
-  @scala.inline
-  def styleBorderStyleHidden: `11` = this.cast(11)
-  @scala.inline
-  def styleBorderStyleInset: `7` = this.cast(7)
-  @scala.inline
-  def styleBorderStyleNone: `10` = this.cast(10)
-  @scala.inline
-  def styleBorderStyleNotSet: `0` = this.cast(0)
-  @scala.inline
-  def styleBorderStyleOutset: `8` = this.cast(8)
-  @scala.inline
-  def styleBorderStyleRidge: `6` = this.cast(6)
-  @scala.inline
-  def styleBorderStyleSolid: `3` = this.cast(3)
-  @scala.inline
-  def styleBorderStyleWindowInset: `9` = this.cast(9)
-  @scala.inline
-  def styleBorderStyle_Max: `2147483647` = this.cast(2147483647)
+  
+  inline def styleBorderStyleDashed: `2` = 2.asInstanceOf[`2`]
+  
+  inline def styleBorderStyleDotted: `1` = 1.asInstanceOf[`1`]
+  
+  inline def styleBorderStyleDouble: `4` = 4.asInstanceOf[`4`]
+  
+  inline def styleBorderStyleGroove: `5` = 5.asInstanceOf[`5`]
+  
+  inline def styleBorderStyleHidden: `11` = 11.asInstanceOf[`11`]
+  
+  inline def styleBorderStyleInset: `7` = 7.asInstanceOf[`7`]
+  
+  inline def styleBorderStyleNone: `10` = 10.asInstanceOf[`10`]
+  
+  inline def styleBorderStyleNotSet: `0` = 0.asInstanceOf[`0`]
+  
+  inline def styleBorderStyleOutset: `8` = 8.asInstanceOf[`8`]
+  
+  inline def styleBorderStyleRidge: `6` = 6.asInstanceOf[`6`]
+  
+  inline def styleBorderStyleSolid: `3` = 3.asInstanceOf[`3`]
+  
+  inline def styleBorderStyleWindowInset: `9` = 9.asInstanceOf[`9`]
+  
+  inline def styleBorderStyle_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

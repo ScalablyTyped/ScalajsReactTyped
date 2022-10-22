@@ -1,15 +1,17 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Streams
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.IClosable
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperationWithProgress
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a sequential stream of bytes to be read. */
-trait IInputStream extends IClosable {
+trait IInputStream
+  extends StObject
+     with IClosable {
+  
   /**
     * Reads data from the stream asynchronously.
     * @param buffer A buffer that may be used to return the bytes that are read. The return value contains the buffer that holds the results.
@@ -19,17 +21,20 @@ trait IInputStream extends IClosable {
     */
   def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
 }
-
 object IInputStream {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     close: Callback,
-    readAsync: (IBuffer, Double, InputStreamOptions) => CallbackTo[IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]]
+    readAsync: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   ): IInputStream = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("close")(close.toJsFn)
-    __obj.updateDynamic("readAsync")(js.Any.fromFunction3((t0: typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer, t1: scala.Double, t2: typingsJapgolly.winrtUwp.Windows.Storage.Streams.InputStreamOptions) => readAsync(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(close = close.toJsFn, readAsync = js.Any.fromFunction3(readAsync))
     __obj.asInstanceOf[IInputStream]
   }
+  
+  extension [Self <: IInputStream](x: Self) {
+    
+    inline def setReadAsync(
+      value: (IBuffer, Double, InputStreamOptions) => IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
+    ): Self = StObject.set(x, "readAsync", js.Any.fromFunction3(value))
+  }
 }
-

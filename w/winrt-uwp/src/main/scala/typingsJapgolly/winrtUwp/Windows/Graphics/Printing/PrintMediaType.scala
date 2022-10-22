@@ -1,242 +1,205 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintMediaType extends js.Object
-
+sealed trait PrintMediaType extends StObject
 /** Specifies the media types for the printed output. */
 @JSGlobal("Windows.Graphics.Printing.PrintMediaType")
 @js.native
-object PrintMediaType extends js.Object {
-  /** The Archival media type. */
-  @js.native
-  sealed trait archival extends PrintMediaType
-  
-  /** The option to auto select a media type. */
-  @js.native
-  sealed trait autoSelect extends PrintMediaType
-  
-  /** The BackPrintFilm media type. */
-  @js.native
-  sealed trait backPrintFilm extends PrintMediaType
-  
-  /** The Bond media type. */
-  @js.native
-  sealed trait bond extends PrintMediaType
-  
-  /** The CardStock media type. */
-  @js.native
-  sealed trait cardStock extends PrintMediaType
-  
-  /** The Continous media type. */
-  @js.native
-  sealed trait continuous extends PrintMediaType
+object PrintMediaType extends StObject {
   
   /** The default media type for the printed output. */
   @js.native
-  sealed trait default extends PrintMediaType
+  sealed trait default
+    extends StObject
+       with PrintMediaType
+  
+  /** The Archival media type. */
+  @js.native
+  sealed trait archival
+    extends StObject
+       with PrintMediaType
+  
+  /** The option to auto select a media type. */
+  @js.native
+  sealed trait autoSelect
+    extends StObject
+       with PrintMediaType
+  
+  /** The BackPrintFilm media type. */
+  @js.native
+  sealed trait backPrintFilm
+    extends StObject
+       with PrintMediaType
+  
+  /** The Bond media type. */
+  @js.native
+  sealed trait bond
+    extends StObject
+       with PrintMediaType
+  
+  /** The CardStock media type. */
+  @js.native
+  sealed trait cardStock
+    extends StObject
+       with PrintMediaType
+  
+  /** The Continous media type. */
+  @js.native
+  sealed trait continuous
+    extends StObject
+       with PrintMediaType
   
   /** The EnvelopePlain media type. */
   @js.native
-  sealed trait envelopePlain extends PrintMediaType
+  sealed trait envelopePlain
+    extends StObject
+       with PrintMediaType
   
   /** The EnvelopeWindow media type. */
   @js.native
-  sealed trait envelopeWindow extends PrintMediaType
+  sealed trait envelopeWindow
+    extends StObject
+       with PrintMediaType
   
   /** The Fabric media type. */
   @js.native
-  sealed trait fabric extends PrintMediaType
+  sealed trait fabric
+    extends StObject
+       with PrintMediaType
   
   /** The HighResolution media type. */
   @js.native
-  sealed trait highResolution extends PrintMediaType
+  sealed trait highResolution
+    extends StObject
+       with PrintMediaType
   
   /** The Label media type. */
   @js.native
-  sealed trait label extends PrintMediaType
+  sealed trait label
+    extends StObject
+       with PrintMediaType
   
   /** The MultiLayerForm media type. */
   @js.native
-  sealed trait multiLayerForm extends PrintMediaType
+  sealed trait multiLayerForm
+    extends StObject
+       with PrintMediaType
   
   /** The MultiPartForm media type. */
   @js.native
-  sealed trait multiPartForm extends PrintMediaType
+  sealed trait multiPartForm
+    extends StObject
+       with PrintMediaType
   
   /** The option to indicate that a media type has not been selected. */
   @js.native
-  sealed trait none extends PrintMediaType
+  sealed trait none
+    extends StObject
+       with PrintMediaType
   
   /** A media type that is not available with the application or one that is not supported by the print device. */
   @js.native
-  sealed trait notAvailable extends PrintMediaType
+  sealed trait notAvailable
+    extends StObject
+       with PrintMediaType
   
   /** The Photographic media type. */
   @js.native
-  sealed trait photographic extends PrintMediaType
+  sealed trait photographic
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicFilm media type. */
   @js.native
-  sealed trait photographicFilm extends PrintMediaType
+  sealed trait photographicFilm
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicGlossy media type. */
   @js.native
-  sealed trait photographicGlossy extends PrintMediaType
+  sealed trait photographicGlossy
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicHighGloss media type. */
   @js.native
-  sealed trait photographicHighGloss extends PrintMediaType
+  sealed trait photographicHighGloss
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicMatte media type. */
   @js.native
-  sealed trait photographicMatte extends PrintMediaType
+  sealed trait photographicMatte
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicSatin media type. */
   @js.native
-  sealed trait photographicSatin extends PrintMediaType
+  sealed trait photographicSatin
+    extends StObject
+       with PrintMediaType
   
   /** The PhotographicSemiGloss media type. */
   @js.native
-  sealed trait photographicSemiGloss extends PrintMediaType
+  sealed trait photographicSemiGloss
+    extends StObject
+       with PrintMediaType
   
   /** The Plain media type. */
   @js.native
-  sealed trait plain extends PrintMediaType
+  sealed trait plain
+    extends StObject
+       with PrintMediaType
   
   /** A custom media type that is specific to the print device. */
   @js.native
-  sealed trait printerCustom extends PrintMediaType
+  sealed trait printerCustom
+    extends StObject
+       with PrintMediaType
   
   /** The Screen media type. */
   @js.native
-  sealed trait screen extends PrintMediaType
+  sealed trait screen
+    extends StObject
+       with PrintMediaType
   
   /** The ScreenPaged media type. */
   @js.native
-  sealed trait screenPaged extends PrintMediaType
+  sealed trait screenPaged
+    extends StObject
+       with PrintMediaType
   
   /** The Stationery media type. */
   @js.native
-  sealed trait stationery extends PrintMediaType
+  sealed trait stationery
+    extends StObject
+       with PrintMediaType
   
   /** The TabStockFull media type. */
   @js.native
-  sealed trait tabStockFull extends PrintMediaType
+  sealed trait tabStockFull
+    extends StObject
+       with PrintMediaType
   
   /** The TabStockPreCut media type. */
   @js.native
-  sealed trait tabStockPreCut extends PrintMediaType
+  sealed trait tabStockPreCut
+    extends StObject
+       with PrintMediaType
   
   /** The Transparency media type. */
   @js.native
-  sealed trait transparency extends PrintMediaType
+  sealed trait transparency
+    extends StObject
+       with PrintMediaType
   
   /** The TShirtTransfer media type. */
   @js.native
-  sealed trait tshirtTransfer extends PrintMediaType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintMediaType with Double] = js.native
-  /* 4 */ @js.native
-  object archival extends TopLevel[archival with Double]
-  
-  /* 3 */ @js.native
-  object autoSelect extends TopLevel[autoSelect with Double]
-  
-  /* 5 */ @js.native
-  object backPrintFilm extends TopLevel[backPrintFilm with Double]
-  
-  /* 6 */ @js.native
-  object bond extends TopLevel[bond with Double]
-  
-  /* 7 */ @js.native
-  object cardStock extends TopLevel[cardStock with Double]
-  
-  /* 8 */ @js.native
-  object continuous extends TopLevel[continuous with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 9 */ @js.native
-  object envelopePlain extends TopLevel[envelopePlain with Double]
-  
-  /* 10 */ @js.native
-  object envelopeWindow extends TopLevel[envelopeWindow with Double]
-  
-  /* 11 */ @js.native
-  object fabric extends TopLevel[fabric with Double]
-  
-  /* 12 */ @js.native
-  object highResolution extends TopLevel[highResolution with Double]
-  
-  /* 13 */ @js.native
-  object label extends TopLevel[label with Double]
-  
-  /* 14 */ @js.native
-  object multiLayerForm extends TopLevel[multiLayerForm with Double]
-  
-  /* 15 */ @js.native
-  object multiPartForm extends TopLevel[multiPartForm with Double]
-  
-  /* 31 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 16 */ @js.native
-  object photographic extends TopLevel[photographic with Double]
-  
-  /* 17 */ @js.native
-  object photographicFilm extends TopLevel[photographicFilm with Double]
-  
-  /* 18 */ @js.native
-  object photographicGlossy extends TopLevel[photographicGlossy with Double]
-  
-  /* 19 */ @js.native
-  object photographicHighGloss extends TopLevel[photographicHighGloss with Double]
-  
-  /* 20 */ @js.native
-  object photographicMatte extends TopLevel[photographicMatte with Double]
-  
-  /* 21 */ @js.native
-  object photographicSatin extends TopLevel[photographicSatin with Double]
-  
-  /* 22 */ @js.native
-  object photographicSemiGloss extends TopLevel[photographicSemiGloss with Double]
-  
-  /* 23 */ @js.native
-  object plain extends TopLevel[plain with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
-  /* 24 */ @js.native
-  object screen extends TopLevel[screen with Double]
-  
-  /* 25 */ @js.native
-  object screenPaged extends TopLevel[screenPaged with Double]
-  
-  /* 26 */ @js.native
-  object stationery extends TopLevel[stationery with Double]
-  
-  /* 27 */ @js.native
-  object tabStockFull extends TopLevel[tabStockFull with Double]
-  
-  /* 28 */ @js.native
-  object tabStockPreCut extends TopLevel[tabStockPreCut with Double]
-  
-  /* 29 */ @js.native
-  object transparency extends TopLevel[transparency with Double]
-  
-  /* 30 */ @js.native
-  object tshirtTransfer extends TopLevel[tshirtTransfer with Double]
-  
+  sealed trait tshirtTransfer
+    extends StObject
+       with PrintMediaType
 }
-

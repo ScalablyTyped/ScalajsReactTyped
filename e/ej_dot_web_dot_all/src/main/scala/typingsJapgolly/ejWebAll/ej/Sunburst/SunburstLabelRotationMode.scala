@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstLabelRotationMode extends js.Object
-
+sealed trait SunburstLabelRotationMode extends StObject
 @JSGlobal("ej.Sunburst.SunburstLabelRotationMode")
 @js.native
-object SunburstLabelRotationMode extends js.Object {
-  //string
-  @js.native
-  sealed trait Angle extends SunburstLabelRotationMode
+object SunburstLabelRotationMode extends StObject {
   
   //string
   @js.native
-  sealed trait Normal extends SunburstLabelRotationMode
+  sealed trait Angle
+    extends StObject
+       with SunburstLabelRotationMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstLabelRotationMode with Double] = js.native
-  /* 0 */ @js.native
-  object Angle extends TopLevel[Angle with Double]
-  
-  /* 1 */ @js.native
-  object Normal extends TopLevel[Normal with Double]
-  
+  //string
+  @js.native
+  sealed trait Normal
+    extends StObject
+       with SunburstLabelRotationMode
 }
-

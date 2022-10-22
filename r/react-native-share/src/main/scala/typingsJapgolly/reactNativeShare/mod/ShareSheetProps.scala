@@ -1,37 +1,61 @@
 package typingsJapgolly.reactNativeShare.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShareSheetProps extends js.Object {
+trait ShareSheetProps extends StObject {
+  
   var children: Node
-  var overlayStyle: js.UndefOr[StyleProp[ViewProps]] = js.undefined
-  var style: js.UndefOr[StyleProp[ViewProps]] = js.undefined
-  var visible: Boolean
+  
   def onCancel(): Unit
+  
+  var overlayStyle: js.UndefOr[StyleProp[ViewProps]] = js.undefined
+  
+  var style: js.UndefOr[StyleProp[ViewProps]] = js.undefined
+  
+  var visible: Boolean
 }
-
 object ShareSheetProps {
-  @scala.inline
-  def apply(
-    onCancel: Callback,
-    visible: Boolean,
-    children: VdomNode = null,
-    overlayStyle: StyleProp[ViewProps] = null,
-    style: StyleProp[ViewProps] = null
-  ): ShareSheetProps = {
-    val __obj = js.Dynamic.literal(visible = visible.asInstanceOf[js.Any])
-    __obj.updateDynamic("onCancel")(onCancel.toJsFn)
-    if (children != null) __obj.updateDynamic("children")(children.rawNode.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+  
+  inline def apply(onCancel: Callback, visible: Boolean): ShareSheetProps = {
+    val __obj = js.Dynamic.literal(onCancel = onCancel.toJsFn, visible = visible.asInstanceOf[js.Any], children = null)
     __obj.asInstanceOf[ShareSheetProps]
   }
+  
+  extension [Self <: ShareSheetProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setOnCancel(value: Callback): Self = StObject.set(x, "onCancel", value.toJsFn)
+    
+    inline def setOverlayStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayStyleNull: Self = StObject.set(x, "overlayStyle", null)
+    
+    inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+  }
 }
-

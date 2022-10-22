@@ -10,10 +10,10 @@ Info output parser for Redis
 | ------------------ | :-------------: |
 | Full name          | redis-info |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 10066 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 347478.3333333333 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/FGRibreau/node-redis-info#readme)

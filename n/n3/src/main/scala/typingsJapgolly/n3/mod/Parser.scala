@@ -1,17 +1,17 @@
 package typingsJapgolly.n3.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("n3", "Parser")
 @js.native
-class Parser[Q /* <: BaseQuad */] () extends N3Parser[Q] {
+open class Parser[Q /* <: BaseQuad */] () extends StObject {
   def this(options: ParserOptions) = this()
+  
+  def parse(input: String): js.Array[Q] = js.native
+  def parse(input: String, callback: Null, prefixCallback: PrefixCallback): js.Array[Q] = js.native
+  def parse(input: String, callback: Unit, prefixCallback: PrefixCallback): js.Array[Q] = js.native
+  def parse(input: String, callback: ParseCallback[Q]): Unit = js.native
+  def parse(input: String, callback: ParseCallback[Q], prefixCallback: PrefixCallback): Unit = js.native
 }
-
-@JSImport("n3", "Parser")
-@js.native
-object Parser extends TopLevel[ParserConstructor]
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.akuminaCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // class OrExpression extends Expression { }
 // class EqualExpression extends Expression { }
@@ -15,12 +15,16 @@ import scala.scalajs.js.annotation._
 // class ContainsExpression extends Expression { }
 @JSImport("akumina-core", "SortDirection")
 @js.native
-class SortDirection () extends js.Object
-
-/* static members */
-@JSImport("akumina-core", "SortDirection")
-@js.native
-object SortDirection extends js.Object {
-  var Descending: String = js.native
+open class SortDirection () extends StObject
+object SortDirection {
+  
+  @JSImport("akumina-core", "SortDirection")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("akumina-core", "SortDirection.Descending")
+  @js.native
+  def Descending: String = js.native
+  inline def Descending_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
 }
-

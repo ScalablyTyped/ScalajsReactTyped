@@ -1,22 +1,28 @@
 package typingsJapgolly.nodal.mod
 
 import typingsJapgolly.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "ItemArray")
 @js.native
-class ItemArray[T] () extends Array[T] {
-  var _meta: js.Any = js.native
+open class ItemArray[T] ()
+  extends StObject
+     with Array[T] {
+  
+  /* private */ var _meta: Any = js.native
+  
   def setMeta(data: IArrayMetadata): IArrayMetadata = js.native
+  
   def toObject(arrInterface: js.Array[String]): js.Object = js.native
 }
-
 /* static members */
-@JSImport("nodal", "ItemArray")
-@js.native
-object ItemArray extends js.Object {
-  def from(arr: js.Array[js.Object]): ItemArray[js.Object] = js.native
+object ItemArray {
+  
+  @JSImport("nodal", "ItemArray")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def from(arr: js.Array[js.Object]): ItemArray[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(arr.asInstanceOf[js.Any]).asInstanceOf[ItemArray[js.Object]]
 }
-

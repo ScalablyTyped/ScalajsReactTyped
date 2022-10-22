@@ -1,8 +1,8 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 //  Sequelize
@@ -16,30 +16,43 @@ import scala.scalajs.js.annotation._
   * @see Define
   * @see AssociationForeignKeyOptions
   */
-trait ColumnOptions extends js.Object {
+trait ColumnOptions extends StObject {
+  
   /**
     * If false, the column will have a NOT NULL constraint, and a not null validation will be run before an
     * instance is saved.
     */
   var allowNull: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * A literal default value, a JavaScript function, or an SQL function (see `sequelize.fn`)
     */
-  var defaultValue: js.UndefOr[js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Any] = js.undefined
+  
   /**
     *  If set, sequelize will map the attribute name to a different name in the database
     */
   var field: js.UndefOr[String] = js.undefined
 }
-
 object ColumnOptions {
-  @scala.inline
-  def apply(allowNull: js.UndefOr[Boolean] = js.undefined, defaultValue: js.Any = null, field: String = null): ColumnOptions = {
+  
+  inline def apply(): ColumnOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowNull)) __obj.updateDynamic("allowNull")(allowNull.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnOptions]
   }
+  
+  extension [Self <: ColumnOptions](x: Self) {
+    
+    inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
+    
+    inline def setAllowNullUndefined: Self = StObject.set(x, "allowNull", js.undefined)
+    
+    inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

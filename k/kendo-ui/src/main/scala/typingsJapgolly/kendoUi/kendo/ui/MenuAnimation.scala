@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MenuAnimation extends js.Object {
+trait MenuAnimation extends StObject {
+  
   var close: js.UndefOr[MenuAnimationClose] = js.undefined
+  
   var open: js.UndefOr[MenuAnimationOpen] = js.undefined
 }
-
 object MenuAnimation {
-  @scala.inline
-  def apply(close: MenuAnimationClose = null, open: MenuAnimationOpen = null): MenuAnimation = {
+  
+  inline def apply(): MenuAnimation = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuAnimation]
   }
+  
+  extension [Self <: MenuAnimation](x: Self) {
+    
+    inline def setClose(value: MenuAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setOpen(value: MenuAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+  }
 }
-

@@ -1,55 +1,96 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerPlan extends Entity {
+trait PlannerPlan
+  extends StObject
+     with Entity {
+  
   // Read-only. Nullable. Collection of buckets in the plan.
-  var buckets: js.UndefOr[js.Array[PlannerBucket]] = js.undefined
+  var buckets: js.UndefOr[NullableOption[js.Array[PlannerBucket]]] = js.undefined
+  
+  // Identifies the container of the plan. After it is set, this property can’t be updated. Required.
+  var container: js.UndefOr[NullableOption[PlannerPlanContainer]] = js.undefined
+  
   // Read-only. The user who created the plan.
-  var createdBy: js.UndefOr[IdentitySet] = js.undefined
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
   /**
     * Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using
-    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
-    * '2014-01-01T00:00:00Z'
+    * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     */
-  var createdDateTime: js.UndefOr[String] = js.undefined
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Read-only. Nullable. Additional details about the plan.
-  var details: js.UndefOr[PlannerPlanDetails] = js.undefined
-  /**
-    * ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this
-    * property can’t be updated.
-    */
-  var owner: js.UndefOr[String] = js.undefined
+  var details: js.UndefOr[NullableOption[PlannerPlanDetails]] = js.undefined
+  
+  var owner: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Read-only. Nullable. Collection of tasks in the plan.
-  var tasks: js.UndefOr[js.Array[PlannerTask]] = js.undefined
+  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.undefined
+  
   // Required. Title of the plan.
   var title: js.UndefOr[String] = js.undefined
 }
-
 object PlannerPlan {
-  @scala.inline
-  def apply(
-    buckets: js.Array[PlannerBucket] = null,
-    createdBy: IdentitySet = null,
-    createdDateTime: String = null,
-    details: PlannerPlanDetails = null,
-    id: String = null,
-    owner: String = null,
-    tasks: js.Array[PlannerTask] = null,
-    title: String = null
-  ): PlannerPlan = {
+  
+  inline def apply(): PlannerPlan = {
     val __obj = js.Dynamic.literal()
-    if (buckets != null) __obj.updateDynamic("buckets")(buckets.asInstanceOf[js.Any])
-    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerPlan]
   }
+  
+  extension [Self <: PlannerPlan](x: Self) {
+    
+    inline def setBuckets(value: NullableOption[js.Array[PlannerBucket]]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    
+    inline def setBucketsNull: Self = StObject.set(x, "buckets", null)
+    
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    
+    inline def setBucketsVarargs(value: PlannerBucket*): Self = StObject.set(x, "buckets", js.Array(value*))
+    
+    inline def setContainer(value: NullableOption[PlannerPlanContainer]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
+    
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    
+    inline def setCreatedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedByNull: Self = StObject.set(x, "createdBy", null)
+    
+    inline def setCreatedByUndefined: Self = StObject.set(x, "createdBy", js.undefined)
+    
+    inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setCreatedDateTimeNull: Self = StObject.set(x, "createdDateTime", null)
+    
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    
+    inline def setDetails(value: NullableOption[PlannerPlanDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsNull: Self = StObject.set(x, "details", null)
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setOwner(value: NullableOption[String]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    
+    inline def setTasksNull: Self = StObject.set(x, "tasks", null)
+    
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

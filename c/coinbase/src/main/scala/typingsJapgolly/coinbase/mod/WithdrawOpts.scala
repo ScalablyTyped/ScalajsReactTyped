@@ -1,40 +1,50 @@
 package typingsJapgolly.coinbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WithdrawOpts extends js.Object {
+trait WithdrawOpts extends StObject {
+  
   /**
     * Withdrawal amount
     */
   var amount: String
+  
   /**
     * If set to false, this withdrawal will not be immediately completed. Use the commit call to complete it. Default value: true
     */
   var commit: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Currency for the amount (see Client#getCurrencies() for available strings)
     */
   var currency: String
+  
   /**
     * The ID of the payment method that should be used for the buy. (todo get payment methods)
     */
   var payment_method: js.UndefOr[String] = js.undefined
 }
-
 object WithdrawOpts {
-  @scala.inline
-  def apply(
-    amount: String,
-    currency: String,
-    commit: js.UndefOr[Boolean] = js.undefined,
-    payment_method: String = null
-  ): WithdrawOpts = {
+  
+  inline def apply(amount: String, currency: String): WithdrawOpts = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], currency = currency.asInstanceOf[js.Any])
-    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit.asInstanceOf[js.Any])
-    if (payment_method != null) __obj.updateDynamic("payment_method")(payment_method.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithdrawOpts]
   }
+  
+  extension [Self <: WithdrawOpts](x: Self) {
+    
+    inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    
+    inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    
+    inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+    
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    
+    inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
+    
+    inline def setPayment_methodUndefined: Self = StObject.set(x, "payment_method", js.undefined)
+  }
 }
-

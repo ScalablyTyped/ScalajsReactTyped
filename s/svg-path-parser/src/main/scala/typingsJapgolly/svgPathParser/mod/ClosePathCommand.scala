@@ -3,22 +3,32 @@ package typingsJapgolly.svgPathParser.mod
 import typingsJapgolly.svgPathParser.svgPathParserStrings.Z
 import typingsJapgolly.svgPathParser.svgPathParserStrings.closepath
 import typingsJapgolly.svgPathParser.svgPathParserStrings.z_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClosePathCommand extends js.Object {
-  var code: z_ | Z
-  var command: closepath
-  var relative: js.UndefOr[Boolean] = js.undefined
+trait ClosePathCommand
+  extends StObject
+     with BaseCommand
+     with Command {
+  
+  @JSName("code")
+  var code_ClosePathCommand: z_ | Z
+  
+  @JSName("command")
+  var command_ClosePathCommand: closepath
 }
-
 object ClosePathCommand {
-  @scala.inline
-  def apply(code: z_ | Z, command: closepath, relative: js.UndefOr[Boolean] = js.undefined): ClosePathCommand = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
-    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative.asInstanceOf[js.Any])
+  
+  inline def apply(code: z_ | Z): ClosePathCommand = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], command = "closepath")
     __obj.asInstanceOf[ClosePathCommand]
   }
+  
+  extension [Self <: ClosePathCommand](x: Self) {
+    
+    inline def setCode(value: z_ | Z): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setCommand(value: closepath): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,77 +1,130 @@
 package typingsJapgolly.materialTabScroller
 
+import org.scalajs.dom.Event
 import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialTabScroller.adapterMod.MDCTabScrollerAdapter
+import typingsJapgolly.materialTabScroller.anon.PartialMDCTabScrollerAdap
 import typingsJapgolly.materialTabScroller.rtlScrollerMod.MDCTabScrollerRTL
-import typingsJapgolly.std.Event_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-scroller/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/tab-scroller/foundation", JSImport.Default)
   @js.native
-  class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
+  open class default () extends MDCTabScrollerFoundation {
     def this(adapter: PartialMDCTabScrollerAdap) = this()
-    // Subclasses should override this method to perform de-initialization routines (de-registering events, etc.)
-    /* CompleteClass */
-    override def destroy(): Unit = js.native
+  }
+  
+  @JSImport("@material/tab-scroller/foundation", "MDCTabScrollerFoundation")
+  @js.native
+  open class MDCTabScrollerFoundation () extends MDCFoundation[MDCTabScrollerAdapter] {
+    def this(adapter: PartialMDCTabScrollerAdap) = this()
+    
+    /**
+      * Animates the tab scrolling
+      * @param animation The animation to apply
+      */
+    /* private */ var animate: Any = js.native
+    
+    /**
+      * @return translateX value from a CSS matrix transform function string.
+      */
+    /* private */ var calculateCurrentTranslateX: Any = js.native
+    
+    /* private */ var calculateScrollEdges: Any = js.native
+    
+    /**
+      * Calculates a safe scroll value that is > 0 and < the max scroll value
+      * @param scrollX The distance to scroll
+      */
+    /* private */ var clampScrollValue: Any = js.native
+    
+    /* private */ var computeCurrentScrollPositionRTL: Any = js.native
+    
+    /**
+      * Gets the current scroll position during animation
+      */
+    /* private */ var getAnimatingScrollPosition: Any = js.native
+    
+    /**
+      * Internal method to compute the increment scroll operation values.
+      * @param scrollX The desired scroll position increment
+      * @return MDCTabScrollerAnimation with the sanitized values for performing the scroll operation.
+      */
+    /* private */ var getIncrementScrollOperation: Any = js.native
+    
     /**
       * @return Browser-specific {@link MDCTabScrollerRTL} instance.
       */
     def getRTLScroller(): MDCTabScrollerRTL = js.native
+    
     /**
       * Computes the current visual scroll position
       */
     def getScrollPosition(): Double = js.native
+    
     /**
       * Handles interaction events that occur during transition
       */
     def handleInteraction(): Unit = js.native
+    
     /**
       * Handles the transitionend event
       */
-    def handleTransitionEnd(evt: Event_): Unit = js.native
+    def handleTransitionEnd(evt: Event): Unit = js.native
+    
     /**
       * Increment the scroll value by the scrollXIncrement using animation.
       * @param scrollXIncrement The value by which to increment the scroll position
       */
     def incrementScroll(scrollXIncrement: Double): Unit = js.native
+    
     /**
       * Increment the scroll value by the scrollXIncrement without animation.
       * @param scrollXIncrement The value by which to increment the scroll position
       */
     def incrementScrollImmediate(scrollXIncrement: Double): Unit = js.native
-    // Subclasses should override this method to perform initialization routines (registering events, etc.)
-    /* CompleteClass */
-    override def init(): Unit = js.native
+    
+    /**
+      * Controls whether we should handle the transitionend and interaction events during the animation.
+      */
+    /* private */ var isAnimating: Any = js.native
+    
+    /* private */ var isRTL: Any = js.native
+    
+    /**
+      * Determines the RTL Scroller to use
+      */
+    /* private */ var rtlScrollerFactory: Any = js.native
+    
+    /**
+      * The MDCTabScrollerRTL instance varies per browser and allows us to encapsulate the peculiar browser behavior
+      * of RTL scrolling in it's own class.
+      */
+    /* private */ var rtlScrollerInstance: Any = js.native
+    
     /**
       * Scrolls to the given scrollX value
       */
     def scrollTo(scrollX: Double): Unit = js.native
+    
+    /**
+      * Internal scroll method
+      * @param scrollX The new scroll position
+      */
+    /* private */ var scrollToImpl: Any = js.native
+    
+    /**
+      * Internal RTL scroll method
+      * @param scrollX The new scroll position
+      */
+    /* private */ var scrollToImplRTL: Any = js.native
+    
+    /**
+      * Stops scroll animation
+      */
+    /* private */ var stopScrollAnimation: Any = js.native
   }
-  
-  @js.native
-  class default () extends MDCTabScrollerFoundation {
-    def this(adapter: PartialMDCTabScrollerAdap) = this()
-  }
-  
-  /* static members */
-  @js.native
-  object MDCTabScrollerFoundation extends js.Object {
-    val cssClasses: AnonANIMATING = js.native
-    val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AnonAREASELECTOR = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: AnonANIMATING = js.native
-    val defaultAdapter: MDCTabScrollerAdapter = js.native
-    val strings: AnonAREASELECTOR = js.native
-  }
-  
 }
-

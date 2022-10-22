@@ -11,14 +11,11 @@ recursively Object.freeze() objects and functions
 | Full name          | deep-freeze |
 | Keywords           | freeze, deep, object, recursive |
 | # releases         | 1 |
-| # dependents       | 142 |
-| # downloads        | 5137069 |
-| # stars            | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 2600040.6666666665 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/substack/deep-freeze)
-- [Bugs](https://github.com/substack/deep-freeze/issues)
-- [Repository](https://github.com/substack/deep-freeze)
 - [Npm](https://www.npmjs.com/package/deep-freeze)
     
 

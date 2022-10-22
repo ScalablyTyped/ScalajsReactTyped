@@ -1,24 +1,40 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Credentials extends js.Object {
+trait Credentials extends StObject {
+  
   var key: String
+  
   var secret: js.UndefOr[String] = js.undefined
+  
   var token: js.UndefOr[String] = js.undefined
+  
   var uid: js.UndefOr[String] = js.undefined
 }
-
 object Credentials {
-  @scala.inline
-  def apply(key: String, secret: String = null, token: String = null, uid: String = null): Credentials = {
+  
+  inline def apply(key: String): Credentials = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
-    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Credentials]
   }
+  
+  extension [Self <: Credentials](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+  }
 }
-

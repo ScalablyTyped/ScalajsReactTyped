@@ -1,13 +1,15 @@
 package typingsJapgolly.sudoBlock
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sudo-block", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): Unit = js.native
-  def apply(message: String): Unit = js.native
+object mod {
+  
+  @JSImport("sudo-block", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

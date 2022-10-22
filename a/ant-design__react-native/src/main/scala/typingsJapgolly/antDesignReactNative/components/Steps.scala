@@ -1,50 +1,42 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.horizontal
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.vertical
-import typingsJapgolly.antDesignReactNative.stepsMod.StepsProps
-import typingsJapgolly.antDesignReactNative.stepsMod.default
-import typingsJapgolly.antDesignReactNative.stepsStyleMod.StepsStyle
+import typingsJapgolly.antDesignReactNative.libStepsMod.StepsProps
+import typingsJapgolly.antDesignReactNative.libStepsStyleMod.StepsStyle
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Steps {
-  def apply(
-    current: Int | Double = null,
-    direction: vertical | horizontal = null,
-    finishIcon: String = null,
-    size: String = null,
-    styles: Partial[StepsStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: js.Array[Element]
-  ): UnmountedWithRoot[StepsProps, default, Unit, StepsProps] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
-      if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (finishIcon != null) __obj.updateDynamic("finishIcon")(finishIcon.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.stepsMod.StepsProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.antDesignReactNative.stepsMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.stepsMod.StepsProps])
+  inline def apply(children: js.Array[Element]): Builder = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StepsProps]))
   }
-  @JSImport("@ant-design/react-native/lib/steps", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "Steps")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.Steps] {
+    
+    inline def current(value: Double): this.type = set("current", value.asInstanceOf[js.Any])
+    
+    inline def direction(value: vertical | horizontal): this.type = set("direction", value.asInstanceOf[js.Any])
+    
+    inline def finishIcon(value: String): this.type = set("finishIcon", value.asInstanceOf[js.Any])
+    
+    inline def size(value: String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: Partial[StepsStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: StepsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

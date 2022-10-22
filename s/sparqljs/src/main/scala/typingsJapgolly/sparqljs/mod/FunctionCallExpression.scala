@@ -1,31 +1,38 @@
 package typingsJapgolly.sparqljs.mod
 
 import typingsJapgolly.sparqljs.sparqljsStrings.functionCall
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait FunctionCallExpression
-  extends BaseExpression
+  extends StObject
+     with BaseExpression
      with _Expression {
+  
   var args: js.Array[Expression]
+  
   var function: String
+  
   @JSName("type")
   var type_FunctionCallExpression: functionCall
 }
-
 object FunctionCallExpression {
-  @scala.inline
-  def apply(
-    args: js.Array[Expression],
-    function: String,
-    `type`: functionCall,
-    distinct: js.UndefOr[Boolean] = js.undefined
-  ): FunctionCallExpression = {
+  
+  inline def apply(args: js.Array[Expression], function: String): FunctionCallExpression = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("functionCall")
     __obj.asInstanceOf[FunctionCallExpression]
   }
+  
+  extension [Self <: FunctionCallExpression](x: Self) {
+    
+    inline def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: functionCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

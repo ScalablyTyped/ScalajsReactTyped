@@ -2,116 +2,148 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridAppendRowsOnDemand
-  extends /**
-	 * Option for igGridAppendRowsOnDemand
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk index
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk index
+    *
+    */
   var chunkIndexUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Default number of records per chunk
-  	 *
-  	 */
+    * Default number of records per chunk
+    *
+    */
   var chunkSize: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk size
-  	 *
-  	 */
+    * Denotes the name of the encoded URL parameter that will state what is the currently requested chunk size
+    *
+    */
   var chunkSizeUrlKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Current chunk index position
-  	 *
-  	 */
+    * Current chunk index position
+    *
+    */
   var currentChunkIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Initial chunk index position
-  	 *
-  	 */
+    * Initial chunk index position
+    *
+    */
   var defaultChunkIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * This option has been removed as of 2017.2 Volume release.
-  	 *             Specifies caption text for the "load more data" button. Use option [locale.loadMoreDataButtonText](ui.iggridappendrowsondemand#options:locale.loadMoreDataButtonText).
-  	 */
+    * This option has been removed as of 2017.2 Volume release.
+    *             Specifies caption text for the "load more data" button. Use option [locale.loadMoreDataButtonText](ui.iggridappendrowsondemand#options:locale.loadMoreDataButtonText).
+    */
   var loadMoreDataButtonText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * denotes the append rows on demand request method
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "auto" new record will be appended to the grid while the user scrolls the scrollbar
-  	 * "button" a button will be rendered at the bottom of the grid. The user should press it to load more rows
-  	 */
+    * denotes the append rows on demand request method
+    *
+    *
+    * Valid values:
+    * "auto" new record will be appended to the grid while the user scrolls the scrollbar
+    * "button" a button will be rendered at the bottom of the grid. The user should press it to load more rows
+    */
   var loadTrigger: js.UndefOr[String] = js.undefined
+  
   var locale: js.UndefOr[IgGridAppendRowsOnDemandLocale] = js.undefined
+  
   /**
-  	 * The property in the response that will hold the total number of records in the data source
-  	 *
-  	 */
+    * The property in the response that will hold the total number of records in the data source
+    *
+    */
   var recordCountKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event fired after the requested rows are returned from the remote endpoint, but before grid data rebinds
-  	 */
+    * Event fired after the requested rows are returned from the remote endpoint, but before grid data rebinds
+    */
   var rowsRequested: js.UndefOr[RowsRequestedEvent] = js.undefined
+  
   /**
-  	 * Event fired before the rows are requested from the remote endpoint.
-  	 * Return false in order to cancel requesting of rows.
-  	 */
+    * Event fired before the rows are requested from the remote endpoint.
+    * Return false in order to cancel requesting of rows.
+    */
   var rowsRequesting: js.UndefOr[RowsRequestingEvent] = js.undefined
+  
   /**
-  	 * Defines local or remote type of appending rows on demand in igGrid
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "remote" request data from the remote endpoint
-  	 * "local" loading data on the client-side
-  	 */
+    * Defines local or remote type of appending rows on demand in igGrid
+    *
+    *
+    * Valid values:
+    * "remote" request data from the remote endpoint
+    * "local" loading data on the client-side
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object IgGridAppendRowsOnDemand {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igGridAppendRowsOnDemand
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    chunkIndexUrlKey: String = null,
-    chunkSize: Int | Double = null,
-    chunkSizeUrlKey: String = null,
-    currentChunkIndex: Int | Double = null,
-    defaultChunkIndex: Int | Double = null,
-    loadMoreDataButtonText: String = null,
-    loadTrigger: String = null,
-    locale: IgGridAppendRowsOnDemandLocale = null,
-    recordCountKey: String = null,
-    rowsRequested: (/* event */ Event_, /* ui */ RowsRequestedEventUIParam) => Callback = null,
-    rowsRequesting: (/* event */ Event_, /* ui */ RowsRequestingEventUIParam) => Callback = null,
-    `type`: String = null
-  ): IgGridAppendRowsOnDemand = {
+  
+  inline def apply(): IgGridAppendRowsOnDemand = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (chunkIndexUrlKey != null) __obj.updateDynamic("chunkIndexUrlKey")(chunkIndexUrlKey.asInstanceOf[js.Any])
-    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
-    if (chunkSizeUrlKey != null) __obj.updateDynamic("chunkSizeUrlKey")(chunkSizeUrlKey.asInstanceOf[js.Any])
-    if (currentChunkIndex != null) __obj.updateDynamic("currentChunkIndex")(currentChunkIndex.asInstanceOf[js.Any])
-    if (defaultChunkIndex != null) __obj.updateDynamic("defaultChunkIndex")(defaultChunkIndex.asInstanceOf[js.Any])
-    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText.asInstanceOf[js.Any])
-    if (loadTrigger != null) __obj.updateDynamic("loadTrigger")(loadTrigger.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey.asInstanceOf[js.Any])
-    if (rowsRequested != null) __obj.updateDynamic("rowsRequested")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowsRequestedEventUIParam) => rowsRequested(t0, t1).runNow()))
-    if (rowsRequesting != null) __obj.updateDynamic("rowsRequesting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RowsRequestingEventUIParam) => rowsRequesting(t0, t1).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridAppendRowsOnDemand]
   }
+  
+  extension [Self <: IgGridAppendRowsOnDemand](x: Self) {
+    
+    inline def setChunkIndexUrlKey(value: String): Self = StObject.set(x, "chunkIndexUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setChunkIndexUrlKeyUndefined: Self = StObject.set(x, "chunkIndexUrlKey", js.undefined)
+    
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    
+    inline def setChunkSizeUrlKey(value: String): Self = StObject.set(x, "chunkSizeUrlKey", value.asInstanceOf[js.Any])
+    
+    inline def setChunkSizeUrlKeyUndefined: Self = StObject.set(x, "chunkSizeUrlKey", js.undefined)
+    
+    inline def setCurrentChunkIndex(value: Double): Self = StObject.set(x, "currentChunkIndex", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentChunkIndexUndefined: Self = StObject.set(x, "currentChunkIndex", js.undefined)
+    
+    inline def setDefaultChunkIndex(value: Double): Self = StObject.set(x, "defaultChunkIndex", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultChunkIndexUndefined: Self = StObject.set(x, "defaultChunkIndex", js.undefined)
+    
+    inline def setLoadMoreDataButtonText(value: String): Self = StObject.set(x, "loadMoreDataButtonText", value.asInstanceOf[js.Any])
+    
+    inline def setLoadMoreDataButtonTextUndefined: Self = StObject.set(x, "loadMoreDataButtonText", js.undefined)
+    
+    inline def setLoadTrigger(value: String): Self = StObject.set(x, "loadTrigger", value.asInstanceOf[js.Any])
+    
+    inline def setLoadTriggerUndefined: Self = StObject.set(x, "loadTrigger", js.undefined)
+    
+    inline def setLocale(value: IgGridAppendRowsOnDemandLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setRecordCountKey(value: String): Self = StObject.set(x, "recordCountKey", value.asInstanceOf[js.Any])
+    
+    inline def setRecordCountKeyUndefined: Self = StObject.set(x, "recordCountKey", js.undefined)
+    
+    inline def setRowsRequested(value: (/* event */ Event, /* ui */ RowsRequestedEventUIParam) => Callback): Self = StObject.set(x, "rowsRequested", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowsRequestedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowsRequestedUndefined: Self = StObject.set(x, "rowsRequested", js.undefined)
+    
+    inline def setRowsRequesting(value: (/* event */ Event, /* ui */ RowsRequestingEventUIParam) => Callback): Self = StObject.set(x, "rowsRequesting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RowsRequestingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRowsRequestingUndefined: Self = StObject.set(x, "rowsRequesting", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

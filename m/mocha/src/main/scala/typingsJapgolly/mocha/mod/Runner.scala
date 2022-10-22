@@ -1,10 +1,11 @@
 package typingsJapgolly.mocha.mod
 
-import typingsJapgolly.mocha.Mocha_.ISuite
-import typingsJapgolly.mocha.Mocha_.RunnerConstants
+import typingsJapgolly.mocha.Mocha.RunnerConstants
+import typingsJapgolly.mocha.Mocha.RunnerOptions
+import typingsJapgolly.mocha.Mocha.Suite
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runner "pending" event
 // #region Runner untyped events
@@ -38,21 +39,33 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Runner")
 @js.native
-class Runner protected ()
-  extends typingsJapgolly.mocha.Mocha_.Runner {
-  /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
-  def this(suite: ISuite, delay: Boolean) = this()
-  def this(suite: typingsJapgolly.mocha.Mocha_.Suite_, delay: Boolean) = this()
+open class Runner protected ()
+  extends StObject
+     with typingsJapgolly.mocha.Mocha.Runner {
+  /**
+    * Initialize a `Runner` at the Root Suite, which represents a hierarchy of Suites and Tests.
+    *
+    * @param suite Root suite
+    * @param optionsOrDelay Options. If boolean (deprecated), whether or not to delay execution of root suite until ready.
+    */
+  def this(suite: Suite) = this()
+  def this(suite: Suite, optionsOrDelay: Boolean) = this()
+  def this(suite: Suite, optionsOrDelay: RunnerOptions) = this()
 }
-
-/* static members */
-@JSImport("mocha", "Runner")
-@js.native
-object Runner extends js.Object {
+object Runner {
+  
+  @JSImport("mocha", "Runner")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mocha", "Runner.constants")
+  @js.native
   val constants: RunnerConstants = js.native
+  
   /**
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
-  /* protected */ def immediately(callback: js.Function): Unit = js.native
+  /* static member */
+  inline def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

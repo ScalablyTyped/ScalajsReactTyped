@@ -1,11 +1,16 @@
 package typingsJapgolly.webpack.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** @deprecated use config.optimization.noEmitOnErrors */
 @JSImport("webpack", "NoEmitOnErrorsPlugin")
 @js.native
-class NoEmitOnErrorsPlugin () extends Plugin
-
+open class NoEmitOnErrorsPlugin () extends StObject {
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit = js.native
+}

@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VectorTileLayerCapabilitiesOperations extends Object {
+trait VectorTileLayerCapabilitiesOperations
+  extends StObject
+     with Object {
+  
   /**
     * Indicates if the tiles from the service can be exported.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-VectorTileLayer.html#capabilities)
     */
   var supportsExportTiles: Boolean
+  
   /**
     * Indicates if the service exposes a tile map that describes the presence of tiles.
     *
@@ -21,20 +24,23 @@ trait VectorTileLayerCapabilitiesOperations extends Object {
     */
   var supportsTileMap: Boolean
 }
-
 object VectorTileLayerCapabilitiesOperations {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     supportsExportTiles: Boolean,
     supportsTileMap: Boolean
   ): VectorTileLayerCapabilitiesOperations = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsExportTiles = supportsExportTiles.asInstanceOf[js.Any], supportsTileMap = supportsTileMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorTileLayerCapabilitiesOperations]
   }
+  
+  extension [Self <: VectorTileLayerCapabilitiesOperations](x: Self) {
+    
+    inline def setSupportsExportTiles(value: Boolean): Self = StObject.set(x, "supportsExportTiles", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsTileMap(value: Boolean): Self = StObject.set(x, "supportsTileMap", value.asInstanceOf[js.Any])
+  }
 }
-

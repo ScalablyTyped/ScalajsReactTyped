@@ -1,21 +1,32 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenericFormat extends SchemaFormatConstraints {
+trait GenericFormat
+  extends StObject
+     with SchemaFormatConstraints {
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[ParameterType] = js.undefined
 }
-
 object GenericFormat {
-  @scala.inline
-  def apply(format: String = null, `type`: ParameterType = null): GenericFormat = {
+  
+  inline def apply(): GenericFormat = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenericFormat]
   }
+  
+  extension [Self <: GenericFormat](x: Self) {
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setType(value: ParameterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

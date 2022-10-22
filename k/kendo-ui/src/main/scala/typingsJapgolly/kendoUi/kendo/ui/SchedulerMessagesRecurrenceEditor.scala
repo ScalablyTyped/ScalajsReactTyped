@@ -1,45 +1,72 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchedulerMessagesRecurrenceEditor extends js.Object {
+trait SchedulerMessagesRecurrenceEditor extends StObject {
+  
   var daily: js.UndefOr[SchedulerMessagesRecurrenceEditorDaily] = js.undefined
+  
   var end: js.UndefOr[SchedulerMessagesRecurrenceEditorEnd] = js.undefined
+  
   var frequencies: js.UndefOr[SchedulerMessagesRecurrenceEditorFrequencies] = js.undefined
+  
   var monthly: js.UndefOr[SchedulerMessagesRecurrenceEditorMonthly] = js.undefined
+  
   var offsetPositions: js.UndefOr[SchedulerMessagesRecurrenceEditorOffsetPositions] = js.undefined
+  
   var recurrenceEditorTitle: js.UndefOr[String] = js.undefined
+  
   var weekdays: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekdays] = js.undefined
+  
   var weekly: js.UndefOr[SchedulerMessagesRecurrenceEditorWeekly] = js.undefined
+  
   var yearly: js.UndefOr[SchedulerMessagesRecurrenceEditorYearly] = js.undefined
 }
-
 object SchedulerMessagesRecurrenceEditor {
-  @scala.inline
-  def apply(
-    daily: SchedulerMessagesRecurrenceEditorDaily = null,
-    end: SchedulerMessagesRecurrenceEditorEnd = null,
-    frequencies: SchedulerMessagesRecurrenceEditorFrequencies = null,
-    monthly: SchedulerMessagesRecurrenceEditorMonthly = null,
-    offsetPositions: SchedulerMessagesRecurrenceEditorOffsetPositions = null,
-    recurrenceEditorTitle: String = null,
-    weekdays: SchedulerMessagesRecurrenceEditorWeekdays = null,
-    weekly: SchedulerMessagesRecurrenceEditorWeekly = null,
-    yearly: SchedulerMessagesRecurrenceEditorYearly = null
-  ): SchedulerMessagesRecurrenceEditor = {
+  
+  inline def apply(): SchedulerMessagesRecurrenceEditor = {
     val __obj = js.Dynamic.literal()
-    if (daily != null) __obj.updateDynamic("daily")(daily.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies.asInstanceOf[js.Any])
-    if (monthly != null) __obj.updateDynamic("monthly")(monthly.asInstanceOf[js.Any])
-    if (offsetPositions != null) __obj.updateDynamic("offsetPositions")(offsetPositions.asInstanceOf[js.Any])
-    if (recurrenceEditorTitle != null) __obj.updateDynamic("recurrenceEditorTitle")(recurrenceEditorTitle.asInstanceOf[js.Any])
-    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays.asInstanceOf[js.Any])
-    if (weekly != null) __obj.updateDynamic("weekly")(weekly.asInstanceOf[js.Any])
-    if (yearly != null) __obj.updateDynamic("yearly")(yearly.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditor]
   }
+  
+  extension [Self <: SchedulerMessagesRecurrenceEditor](x: Self) {
+    
+    inline def setDaily(value: SchedulerMessagesRecurrenceEditorDaily): Self = StObject.set(x, "daily", value.asInstanceOf[js.Any])
+    
+    inline def setDailyUndefined: Self = StObject.set(x, "daily", js.undefined)
+    
+    inline def setEnd(value: SchedulerMessagesRecurrenceEditorEnd): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setFrequencies(value: SchedulerMessagesRecurrenceEditorFrequencies): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
+    
+    inline def setFrequenciesUndefined: Self = StObject.set(x, "frequencies", js.undefined)
+    
+    inline def setMonthly(value: SchedulerMessagesRecurrenceEditorMonthly): Self = StObject.set(x, "monthly", value.asInstanceOf[js.Any])
+    
+    inline def setMonthlyUndefined: Self = StObject.set(x, "monthly", js.undefined)
+    
+    inline def setOffsetPositions(value: SchedulerMessagesRecurrenceEditorOffsetPositions): Self = StObject.set(x, "offsetPositions", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetPositionsUndefined: Self = StObject.set(x, "offsetPositions", js.undefined)
+    
+    inline def setRecurrenceEditorTitle(value: String): Self = StObject.set(x, "recurrenceEditorTitle", value.asInstanceOf[js.Any])
+    
+    inline def setRecurrenceEditorTitleUndefined: Self = StObject.set(x, "recurrenceEditorTitle", js.undefined)
+    
+    inline def setWeekdays(value: SchedulerMessagesRecurrenceEditorWeekdays): Self = StObject.set(x, "weekdays", value.asInstanceOf[js.Any])
+    
+    inline def setWeekdaysUndefined: Self = StObject.set(x, "weekdays", js.undefined)
+    
+    inline def setWeekly(value: SchedulerMessagesRecurrenceEditorWeekly): Self = StObject.set(x, "weekly", value.asInstanceOf[js.Any])
+    
+    inline def setWeeklyUndefined: Self = StObject.set(x, "weekly", js.undefined)
+    
+    inline def setYearly(value: SchedulerMessagesRecurrenceEditorYearly): Self = StObject.set(x, "yearly", value.asInstanceOf[js.Any])
+    
+    inline def setYearlyUndefined: Self = StObject.set(x, "yearly", js.undefined)
+  }
 }
-

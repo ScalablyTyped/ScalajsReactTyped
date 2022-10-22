@@ -1,52 +1,83 @@
 package typingsJapgolly.ssh2.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.ssh2Streams.mod.Algorithms
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerConfig extends js.Object {
+trait ServerConfig extends StObject {
+  
   /** Explicit overrides for the default transport layer algorithms used for the connection. */
   var algorithms: js.UndefOr[Algorithms] = js.undefined
+  
   /** A message that is sent to clients once, right before authentication begins. */
   var banner: js.UndefOr[String] = js.undefined
+  
   /** A function that receives a single string argument to get detailed (local) debug information. */
-  var debug: js.UndefOr[js.Function1[/* information */ String, _]] = js.undefined
+  var debug: js.UndefOr[DebugFunction] = js.undefined
+  
   /** A message that is sent to clients immediately upon connection, before handshaking begins. */
   var greeting: js.UndefOr[String] = js.undefined
+  
   /** This is the highWaterMark to use for the parser stream (default: `32 * 1024`). */
   var highWaterMark: js.UndefOr[Double] = js.undefined
+  
   /** An array of host private keys. */
-  var hostKeys: js.Array[Buffer | String | EncryptedPrivateKey]
+  var hostKeys: PrivateKeys
+  
   /** A custom server software name/version identifier. */
   var ident: js.UndefOr[String] = js.undefined
-  /** This is the maximum packet size that will be accepted. It should be 35000 bytes or larger to be compatible with other SSH2 implementations. */
-  var maxPacketSize: js.UndefOr[Double] = js.undefined
+  
+  /** The most allowed failed keep alive attempts before closing a connection */
+  var keepaliveCountMax: js.UndefOr[Double] = js.undefined
+  
+  // in docs but not in code
+  /** The keep alive interval for this server */
+  var keepaliveInterval: js.UndefOr[Double] = js.undefined
 }
-
 object ServerConfig {
-  @scala.inline
-  def apply(
-    hostKeys: js.Array[Buffer | String | EncryptedPrivateKey],
-    algorithms: Algorithms = null,
-    banner: String = null,
-    debug: /* information */ String => CallbackTo[js.Any] = null,
-    greeting: String = null,
-    highWaterMark: Int | Double = null,
-    ident: String = null,
-    maxPacketSize: Int | Double = null
-  ): ServerConfig = {
+  
+  inline def apply(hostKeys: PrivateKeys): ServerConfig = {
     val __obj = js.Dynamic.literal(hostKeys = hostKeys.asInstanceOf[js.Any])
-    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms.asInstanceOf[js.Any])
-    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
-    if (debug != null) __obj.updateDynamic("debug")(js.Any.fromFunction1((t0: /* information */ java.lang.String) => debug(t0).runNow()))
-    if (greeting != null) __obj.updateDynamic("greeting")(greeting.asInstanceOf[js.Any])
-    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
-    if (ident != null) __obj.updateDynamic("ident")(ident.asInstanceOf[js.Any])
-    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
+  
+  extension [Self <: ServerConfig](x: Self) {
+    
+    inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    
+    inline def setBanner(value: String): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    
+    inline def setDebug(value: /* message */ String => japgolly.scalajs.react.Callback): Self = StObject.set(x, "debug", js.Any.fromFunction1((t0: /* message */ String) => value(t0).runNow()))
+    
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    
+    inline def setGreeting(value: String): Self = StObject.set(x, "greeting", value.asInstanceOf[js.Any])
+    
+    inline def setGreetingUndefined: Self = StObject.set(x, "greeting", js.undefined)
+    
+    inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
+    
+    inline def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
+    
+    inline def setHostKeys(value: PrivateKeys): Self = StObject.set(x, "hostKeys", value.asInstanceOf[js.Any])
+    
+    inline def setHostKeysVarargs(value: (Buffer | ParsedKey | EncryptedPrivateKey | String)*): Self = StObject.set(x, "hostKeys", js.Array(value*))
+    
+    inline def setIdent(value: String): Self = StObject.set(x, "ident", value.asInstanceOf[js.Any])
+    
+    inline def setIdentUndefined: Self = StObject.set(x, "ident", js.undefined)
+    
+    inline def setKeepaliveCountMax(value: Double): Self = StObject.set(x, "keepaliveCountMax", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveCountMaxUndefined: Self = StObject.set(x, "keepaliveCountMax", js.undefined)
+    
+    inline def setKeepaliveInterval(value: Double): Self = StObject.set(x, "keepaliveInterval", value.asInstanceOf[js.Any])
+    
+    inline def setKeepaliveIntervalUndefined: Self = StObject.set(x, "keepaliveInterval", js.undefined)
+  }
 }
-

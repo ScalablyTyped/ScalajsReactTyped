@@ -1,19 +1,19 @@
 
 # Scala.js typings for mdx-js__react
 
-Typings are for version 1.5
+Typings are for version 2.1.3
 
 ## Library description:
-React implementation for MDX
+React context for MDX
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @mdx-js/react |
 | Keywords           | mdx, markdown, react, jsx, remark, mdxast |
-| # releases         | 53 |
-| # dependents       | 494 |
-| # downloads        | 4221355 |
-| # stars            | 0 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 1.4624673E7 |
+| # stars            | 13963.0 |
 
 ## Links
 - [Homepage](https://mdxjs.com)
@@ -24,7 +24,7 @@ React implementation for MDX
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

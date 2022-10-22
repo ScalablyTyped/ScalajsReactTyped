@@ -1,42 +1,30 @@
 package typingsJapgolly.reactColor.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactColor.checkboardMod.CheckboardProps
-import typingsJapgolly.reactColor.checkboardMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactColor.libComponentsCommonCheckboardMod.CheckboardProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Checkboard {
-  def apply(
-    grey: String = null,
-    size: Int | Double = null,
-    white: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CheckboardProps, default, Unit, CheckboardProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (grey != null) __obj.updateDynamic("grey")(grey.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (white != null) __obj.updateDynamic("white")(white.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactColor.checkboardMod.CheckboardProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactColor.checkboardMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactColor.checkboardMod.CheckboardProps])(children: _*)
-  }
-  @JSImport("react-color/lib/components/common/Checkboard", JSImport.Default)
+  @JSImport("react-color", "Checkboard")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactColor.mod.Checkboard] {
+    
+    inline def grey(value: String): this.type = set("grey", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def white(value: String): this.type = set("white", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Checkboard.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CheckboardProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

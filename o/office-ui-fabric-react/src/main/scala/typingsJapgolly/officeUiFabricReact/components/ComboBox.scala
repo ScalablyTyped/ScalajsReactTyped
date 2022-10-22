@@ -1,14 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsComboBoxComboBoxDottypesMod.IComboBoxOption
+import typingsJapgolly.officeUiFabricReact.libComponentsComboBoxComboBoxDottypesMod.IComboBoxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object ComboBox
-  extends SharedApply_IComboBoxProps1956028297[typingsJapgolly.officeUiFabricReact.mod.ComboBox] {
+object ComboBox {
+  
+  inline def apply(options: js.Array[IComboBoxOption]): SharedBuilder_IComboBoxProps_213115227[typingsJapgolly.officeUiFabricReact.mod.ComboBox] = {
+    val __props = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
+    new SharedBuilder_IComboBoxProps_213115227[typingsJapgolly.officeUiFabricReact.mod.ComboBox](js.Array(this.component, __props.asInstanceOf[IComboBoxProps]))
+  }
+  
   @JSImport("office-ui-fabric-react", "ComboBox")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: IComboBoxProps): SharedBuilder_IComboBoxProps_213115227[typingsJapgolly.officeUiFabricReact.mod.ComboBox] = new SharedBuilder_IComboBoxProps_213115227[typingsJapgolly.officeUiFabricReact.mod.ComboBox](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,11 +1,12 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Serializable[T] extends js.Object {
+trait Serializable[T] extends StObject {
+  
   /**
     * Returns either this instance's serialized represention, if immediately
     * available, or a promise for its serialized representation. This function is
@@ -17,13 +18,15 @@ trait Serializable[T] extends js.Object {
     */
   def serialize(): T | js.Promise[T]
 }
-
 object Serializable {
-  @scala.inline
-  def apply[T](serialize: CallbackTo[T | js.Promise[T]]): Serializable[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("serialize")(serialize.toJsFn)
+  
+  inline def apply[T](serialize: CallbackTo[T | js.Promise[T]]): Serializable[T] = {
+    val __obj = js.Dynamic.literal(serialize = serialize.toJsFn)
     __obj.asInstanceOf[Serializable[T]]
   }
+  
+  extension [Self <: Serializable[?], T](x: Self & Serializable[T]) {
+    
+    inline def setSerialize(value: CallbackTo[T | js.Promise[T]]): Self = StObject.set(x, "serialize", value.toJsFn)
+  }
 }
-

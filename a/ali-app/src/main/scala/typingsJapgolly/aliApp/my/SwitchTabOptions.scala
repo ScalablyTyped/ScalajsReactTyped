@@ -1,34 +1,30 @@
 package typingsJapgolly.aliApp.my
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region TabBar https://docs.alipay.com/mini/api/ui-tabbar
 trait SwitchTabOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   /**
-  		 * 需要跳转的 tabBar 页面的路径
-  		 * （需在 app.json 的 tabBar 字段定义的页面），路径后不能带参数
-  		 */
+    * 需要跳转的 tabBar 页面的路径
+    * （需在 app.json 的 tabBar 字段定义的页面），路径后不能带参数
+    */
   var url: String
 }
-
 object SwitchTabOptions {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: js.Any => Callback = null
-  ): SwitchTabOptions = {
+  
+  inline def apply(url: String): SwitchTabOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[SwitchTabOptions]
   }
+  
+  extension [Self <: SwitchTabOptions](x: Self) {
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

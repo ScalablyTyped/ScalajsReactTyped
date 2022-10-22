@@ -1,18 +1,40 @@
 package typingsJapgolly.activexFaxcomexlib.FAXCOMEXLib
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccountIncomingQueue Class */
-@JSGlobal("FAXCOMEXLib.FaxAccountIncomingQueue")
-@js.native
-class FaxAccountIncomingQueue protected () extends js.Object {
-  @JSName("FAXCOMEXLib.FaxAccountIncomingQueue_typekey")
-  var FAXCOMEXLibDotFaxAccountIncomingQueue_typekey: FaxAccountIncomingQueue = js.native
+trait FaxAccountIncomingQueue extends StObject {
+  
+  /* private */ @JSName("FAXCOMEXLib.FaxAccountIncomingQueue_typekey")
+  var FAXCOMEXLibDotFaxAccountIncomingQueue_typekey: FaxAccountIncomingQueue
+  
   /** Get incoming job by ID */
-  def GetJob(bstrJobId: String): FaxIncomingJob = js.native
+  def GetJob(bstrJobId: String): FaxIncomingJob
+  
   /** Collection of incoming jobs */
-  def GetJobs(): FaxIncomingJobs = js.native
+  def GetJobs(): FaxIncomingJobs
 }
-
+object FaxAccountIncomingQueue {
+  
+  inline def apply(
+    FAXCOMEXLibDotFaxAccountIncomingQueue_typekey: FaxAccountIncomingQueue,
+    GetJob: String => FaxIncomingJob,
+    GetJobs: CallbackTo[FaxIncomingJobs]
+  ): FaxAccountIncomingQueue = {
+    val __obj = js.Dynamic.literal(GetJob = js.Any.fromFunction1(GetJob), GetJobs = GetJobs.toJsFn)
+    __obj.updateDynamic("FAXCOMEXLib.FaxAccountIncomingQueue_typekey")(FAXCOMEXLibDotFaxAccountIncomingQueue_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FaxAccountIncomingQueue]
+  }
+  
+  extension [Self <: FaxAccountIncomingQueue](x: Self) {
+    
+    inline def setFAXCOMEXLibDotFaxAccountIncomingQueue_typekey(value: FaxAccountIncomingQueue): Self = StObject.set(x, "FAXCOMEXLib.FaxAccountIncomingQueue_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setGetJob(value: String => FaxIncomingJob): Self = StObject.set(x, "GetJob", js.Any.fromFunction1(value))
+    
+    inline def setGetJobs(value: CallbackTo[FaxIncomingJobs]): Self = StObject.set(x, "GetJobs", value.toJsFn)
+  }
+}

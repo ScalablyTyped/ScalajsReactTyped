@@ -1,33 +1,36 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesMetadata extends Object {
+trait FeatureLayerCapabilitiesMetadata
+  extends StObject
+     with Object {
+  
   /**
-    * Indicates whether to provide a user-defined field description. See [Describe attribute fields](https://doc.arcgis.com/en/arcgis-online/manage-data/describe-fields.htm) for additional information.
+    * Indicates whether to provide a user-defined field description.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsAdvancedFieldProperties: Boolean
 }
-
 object FeatureLayerCapabilitiesMetadata {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     supportsAdvancedFieldProperties: Boolean
   ): FeatureLayerCapabilitiesMetadata = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], supportsAdvancedFieldProperties = supportsAdvancedFieldProperties.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsAdvancedFieldProperties = supportsAdvancedFieldProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesMetadata]
   }
+  
+  extension [Self <: FeatureLayerCapabilitiesMetadata](x: Self) {
+    
+    inline def setSupportsAdvancedFieldProperties(value: Boolean): Self = StObject.set(x, "supportsAdvancedFieldProperties", value.asInstanceOf[js.Any])
+  }
 }
-

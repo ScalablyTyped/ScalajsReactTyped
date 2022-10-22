@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Builder of DataTable objects. Building a data table consists of first specifying its columns, and
@@ -21,27 +21,36 @@ import scala.scalajs.js.annotation._
   *         .addRow(["May", 30, 4])
   *         .build();
   */
-trait DataTableBuilder extends js.Object {
+trait DataTableBuilder extends StObject {
+  
   def addColumn(`type`: ColumnType, label: String): DataTableBuilder
-  def addRow(values: js.Array[_]): DataTableBuilder
+  
+  def addRow(values: js.Array[Any]): DataTableBuilder
+  
   def build(): DataTable
-  def setValue(row: Integer, column: Integer, value: js.Any): DataTableBuilder
+  
+  def setValue(row: Integer, column: Integer, value: Any): DataTableBuilder
 }
-
 object DataTableBuilder {
-  @scala.inline
-  def apply(
-    addColumn: (ColumnType, String) => CallbackTo[DataTableBuilder],
-    addRow: js.Array[js.Any] => CallbackTo[DataTableBuilder],
+  
+  inline def apply(
+    addColumn: (ColumnType, String) => DataTableBuilder,
+    addRow: js.Array[Any] => DataTableBuilder,
     build: CallbackTo[DataTable],
-    setValue: (Integer, Integer, js.Any) => CallbackTo[DataTableBuilder]
+    setValue: (Integer, Integer, Any) => DataTableBuilder
   ): DataTableBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addColumn")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts.ColumnType, t1: java.lang.String) => addColumn(t0, t1).runNow()))
-    __obj.updateDynamic("addRow")(js.Any.fromFunction1((t0: js.Array[js.Any]) => addRow(t0).runNow()))
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setValue")(js.Any.fromFunction3((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer, t2: js.Any) => setValue(t0, t1, t2).runNow()))
+    val __obj = js.Dynamic.literal(addColumn = js.Any.fromFunction2(addColumn), addRow = js.Any.fromFunction1(addRow), build = build.toJsFn, setValue = js.Any.fromFunction3(setValue))
     __obj.asInstanceOf[DataTableBuilder]
   }
+  
+  extension [Self <: DataTableBuilder](x: Self) {
+    
+    inline def setAddColumn(value: (ColumnType, String) => DataTableBuilder): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
+    
+    inline def setAddRow(value: js.Array[Any] => DataTableBuilder): Self = StObject.set(x, "addRow", js.Any.fromFunction1(value))
+    
+    inline def setBuild(value: CallbackTo[DataTable]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetValue(value: (Integer, Integer, Any) => DataTableBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction3(value))
+  }
 }
-

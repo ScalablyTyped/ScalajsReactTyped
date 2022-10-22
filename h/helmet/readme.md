@@ -1,6 +1,7 @@
 
 # Scala.js typings for helmet
 
+Typings are for version 6.0.0
 
 ## Library description:
 help secure Express/Connect apps with various HTTP headers
@@ -8,11 +9,11 @@ help secure Express/Connect apps with various HTTP headers
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | helmet |
-| Keywords           | security, headers, express, connect, x-frame-options, x-powered-by, csp, hsts, clickjack |
-| # releases         | 19 |
-| # dependents       | 1208 |
-| # downloads        | 27760905 |
-| # stars            | 284 |
+| Keywords           | express, security, headers, backend |
+| # releases         | 17 |
+| # dependents       | 0.0 |
+| # downloads        | 8760070.0 |
+| # stars            | 9108.0 |
 
 ## Links
 - [Homepage](https://helmetjs.github.io/)
@@ -23,7 +24,7 @@ help secure Express/Connect apps with various HTTP headers
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

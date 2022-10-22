@@ -1,13 +1,15 @@
 package typingsJapgolly.knockoutPaging
 
+import typingsJapgolly.knockoutPaging.anon.Paged
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait KnockoutObservableArray[T]
-  extends KnockoutObservable[js.Array[T]]
+  extends StObject
+     with KnockoutObservable[js.Array[T]]
      with KnockoutObservableArrayFunctions[T] {
-  def extend(requestedExtenders: AnonPaged): KnockoutPagedObservableArray[T] = js.native
+  
+  def extend(requestedExtenders: Paged): KnockoutPagedObservableArray[T] = js.native
 }
-

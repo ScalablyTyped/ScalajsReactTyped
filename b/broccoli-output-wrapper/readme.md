@@ -1,7 +1,7 @@
 
 # Scala.js typings for broccoli-output-wrapper
 
-Typings are for version 2.0.0
+Typings are for version 3.2.5
 
 ## Library description:
 Output wrapper is a library to write output file to outputpath.
@@ -10,10 +10,10 @@ Output wrapper is a library to write output file to outputpath.
 | ------------------ | :-------------: |
 | Full name          | broccoli-output-wrapper |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 1 |
-| # downloads        | 135941 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1451422.6666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/broccoli-output-wrapper)

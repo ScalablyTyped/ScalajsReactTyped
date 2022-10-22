@@ -1,23 +1,32 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonDomButtomButton extends ButtonDomButtomCommon {
+trait ButtonDomButtomButton
+  extends StObject
+     with ButtonDomButtomCommon {
+  
   var active: js.UndefOr[String] = js.undefined
+  
   var disabled: js.UndefOr[String] = js.undefined
 }
-
 object ButtonDomButtomButton {
-  @scala.inline
-  def apply(active: String = null, className: String = null, disabled: String = null, tag: String = null): ButtonDomButtomButton = {
+  
+  inline def apply(): ButtonDomButtomButton = {
     val __obj = js.Dynamic.literal()
-    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonDomButtomButton]
   }
+  
+  extension [Self <: ButtonDomButtomButton](x: Self) {
+    
+    inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+  }
 }
-

@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditModeEnteringEventUIParam extends js.Object {
+trait EditModeEnteringEventUIParam extends StObject {
+  
   /**
-  	 * Gets the cell for which the control is going into edit mode.
-  	 */
+    * Gets the cell for which the control is going into edit mode.
+    */
   var cell: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the spreadsheet widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object EditModeEnteringEventUIParam {
-  @scala.inline
-  def apply(cell: String = null, owner: js.Any = null): EditModeEnteringEventUIParam = {
+  
+  inline def apply(): EditModeEnteringEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditModeEnteringEventUIParam]
   }
+  
+  extension [Self <: EditModeEnteringEventUIParam](x: Self) {
+    
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

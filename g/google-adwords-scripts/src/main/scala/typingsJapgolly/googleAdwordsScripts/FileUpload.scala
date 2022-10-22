@@ -2,31 +2,32 @@ package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileUpload extends BulkUpload[FileUpload] {
+trait FileUpload
+  extends StObject
+     with BulkUpload[FileUpload] {
+  
   @JSName("apply")
   def apply(): Unit
 }
-
 object FileUpload {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     apply: Callback,
     forCampaignManagement: CallbackTo[FileUpload],
     forOfflineConversions: CallbackTo[FileUpload],
     preview: Callback,
-    setFileName: String => CallbackTo[FileUpload]
+    setFileName: String => FileUpload
   ): FileUpload = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("apply")(apply.toJsFn)
-    __obj.updateDynamic("forCampaignManagement")(forCampaignManagement.toJsFn)
-    __obj.updateDynamic("forOfflineConversions")(forOfflineConversions.toJsFn)
-    __obj.updateDynamic("preview")(preview.toJsFn)
-    __obj.updateDynamic("setFileName")(js.Any.fromFunction1((t0: java.lang.String) => setFileName(t0).runNow()))
+    val __obj = js.Dynamic.literal(apply = apply.toJsFn, forCampaignManagement = forCampaignManagement.toJsFn, forOfflineConversions = forOfflineConversions.toJsFn, preview = preview.toJsFn, setFileName = js.Any.fromFunction1(setFileName))
     __obj.asInstanceOf[FileUpload]
   }
+  
+  extension [Self <: FileUpload](x: Self) {
+    
+    inline def setApply(value: Callback): Self = StObject.set(x, "apply", value.toJsFn)
+  }
 }
-

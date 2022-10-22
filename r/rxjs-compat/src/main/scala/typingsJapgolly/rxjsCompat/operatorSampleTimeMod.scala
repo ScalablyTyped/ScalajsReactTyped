@@ -1,16 +1,17 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.SchedulerLike
+import typingsJapgolly.rxjs.mod.Observable_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/sampleTime", JSImport.Namespace)
-@js.native
-object operatorSampleTimeMod extends js.Object {
-  def sampleTime[T](period: Double): js.Any = js.native
-  def sampleTime[T](
-    period: Double,
-    scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+object operatorSampleTimeMod {
+  
+  @JSImport("rxjs-compat/operator/sampleTime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def sampleTime[T](period: Double): Observable_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("sampleTime")(period.asInstanceOf[js.Any]).asInstanceOf[Observable_[T]]
+  inline def sampleTime[T](period: Double, scheduler: SchedulerLike): Observable_[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("sampleTime")(period.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable_[T]]
 }
-

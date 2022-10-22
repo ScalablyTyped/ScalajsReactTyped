@@ -1,10 +1,16 @@
 package typingsJapgolly.bson.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("bson", "MaxKey")
 @js.native
-class MaxKey () extends js.Object
-
+open class MaxKey () extends StObject {
+  
+  var _bsontype: typingsJapgolly.bson.bsonStrings.MaxKey = js.native
+  
+  /* Excluded from this release type: toExtendedJSON */
+  /* Excluded from this release type: fromExtendedJSON */
+  def inspect(): String = js.native
+}

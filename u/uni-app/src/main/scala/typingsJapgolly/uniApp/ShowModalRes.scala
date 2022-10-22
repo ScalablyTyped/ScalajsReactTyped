@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShowModalRes extends js.Object {
+trait ShowModalRes extends StObject {
+  
   /**
     * 为 true 时，表示用户点击了取消
     */
   var cancel: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 为 true 时，表示用户点击了确定按钮
     */
   var confirm: js.UndefOr[Boolean] = js.undefined
 }
-
 object ShowModalRes {
-  @scala.inline
-  def apply(cancel: js.UndefOr[Boolean] = js.undefined, confirm: js.UndefOr[Boolean] = js.undefined): ShowModalRes = {
+  
+  inline def apply(): ShowModalRes = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (!js.isUndefined(confirm)) __obj.updateDynamic("confirm")(confirm.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowModalRes]
   }
+  
+  extension [Self <: ShowModalRes](x: Self) {
+    
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    
+    inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
+  }
 }
-

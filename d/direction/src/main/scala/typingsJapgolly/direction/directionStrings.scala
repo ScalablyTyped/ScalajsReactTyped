@@ -1,25 +1,20 @@
 package typingsJapgolly.direction
 
-import typingsJapgolly.direction.mod.Direction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directionStrings {
-  @js.native
-  sealed trait ltr extends Direction
   
   @js.native
-  sealed trait neutral extends Direction
+  sealed trait ltr extends StObject
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
-  sealed trait rtl extends Direction
+  sealed trait neutral extends StObject
+  inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @js.native
+  sealed trait rtl extends StObject
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
 }
-

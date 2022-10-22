@@ -1,29 +1,27 @@
 package typingsJapgolly.bull.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EveryRepeatOptions extends RepeatOptions {
+trait EveryRepeatOptions
+  extends StObject
+     with RepeatOptions {
+  
   /**
     * Repeat every millis (cron setting cannot be used together with this setting.)
     */
   var every: Double
 }
-
 object EveryRepeatOptions {
-  @scala.inline
-  def apply(
-    every: Double,
-    endDate: js.Date | String | Double = null,
-    limit: Int | Double = null,
-    tz: String = null
-  ): EveryRepeatOptions = {
+  
+  inline def apply(every: Double): EveryRepeatOptions = {
     val __obj = js.Dynamic.literal(every = every.asInstanceOf[js.Any])
-    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (tz != null) __obj.updateDynamic("tz")(tz.asInstanceOf[js.Any])
     __obj.asInstanceOf[EveryRepeatOptions]
   }
+  
+  extension [Self <: EveryRepeatOptions](x: Self) {
+    
+    inline def setEvery(value: Double): Self = StObject.set(x, "every", value.asInstanceOf[js.Any])
+  }
 }
-

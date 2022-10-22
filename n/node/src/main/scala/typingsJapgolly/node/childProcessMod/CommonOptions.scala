@@ -1,39 +1,38 @@
 package typingsJapgolly.node.childProcessMod
 
-import typingsJapgolly.node.NodeJS.ProcessEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonOptions extends ProcessEnvOptions {
+trait CommonOptions
+  extends StObject
+     with ProcessEnvOptions {
+  
   /**
     * @default 0
     */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default true
     */
   var windowsHide: js.UndefOr[Boolean] = js.undefined
 }
-
 object CommonOptions {
-  @scala.inline
-  def apply(
-    cwd: String = null,
-    env: ProcessEnv = null,
-    gid: Int | Double = null,
-    timeout: Int | Double = null,
-    uid: Int | Double = null,
-    windowsHide: js.UndefOr[Boolean] = js.undefined
-  ): CommonOptions = {
+  
+  inline def apply(): CommonOptions = {
     val __obj = js.Dynamic.literal()
-    if (cwd != null) __obj.updateDynamic("cwd")(cwd.asInstanceOf[js.Any])
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (gid != null) __obj.updateDynamic("gid")(gid.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (uid != null) __obj.updateDynamic("uid")(uid.asInstanceOf[js.Any])
-    if (!js.isUndefined(windowsHide)) __obj.updateDynamic("windowsHide")(windowsHide.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonOptions]
   }
+  
+  extension [Self <: CommonOptions](x: Self) {
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setWindowsHide(value: Boolean): Self = StObject.set(x, "windowsHide", value.asInstanceOf[js.Any])
+    
+    inline def setWindowsHideUndefined: Self = StObject.set(x, "windowsHide", js.undefined)
+  }
 }
-

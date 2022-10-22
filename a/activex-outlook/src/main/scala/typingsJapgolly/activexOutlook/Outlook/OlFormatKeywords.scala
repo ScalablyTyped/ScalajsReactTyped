@@ -1,14 +1,11 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OlFormatKeywords {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olFormatKeywordsText: `1` = this.cast(1)
+  
+  inline def olFormatKeywordsText: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -1,13 +1,17 @@
-package typingsJapgolly.openlayers.mod
+package typingsJapgolly.openlayers.mod.format
 
+import typingsJapgolly.std.JSON
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object format {
-  type EsriJSONGeometry = typingsJapgolly.std.JSON
-  type GeoJSONFeature = typingsJapgolly.std.JSON
-  type GeoJSONFeatureCollection = typingsJapgolly.std.JSON
-  type GeoJSONGeometry = typingsJapgolly.std.JSON
-  type GeoJSONGeometryCollection = typingsJapgolly.std.JSON
-}
+
+type EsriJSONGeometry = JSON
+
+type GeoJSONFeature = JSON
+
+type GeoJSONFeatureCollection = JSON
+
+type GeoJSONGeometry = JSON
+
+type GeoJSONGeometryCollection = JSON

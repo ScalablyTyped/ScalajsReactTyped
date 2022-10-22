@@ -1,34 +1,29 @@
 package typingsJapgolly.recharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.recharts.AnonXBoolean
-  - typingsJapgolly.recharts.AnonY
-  - typingsJapgolly.recharts.AnonXY
+  - typingsJapgolly.recharts.anon.X
+  - typingsJapgolly.recharts.anon.Y
+  - typingsJapgolly.recharts.anon.XY
 */
-trait AllowEscapeViewBox extends js.Object
-
+trait AllowEscapeViewBox extends StObject
 object AllowEscapeViewBox {
-  @scala.inline
-  def AnonXBoolean(x: Boolean): AllowEscapeViewBox = {
+  
+  inline def X(x: Boolean): typingsJapgolly.recharts.anon.X = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[AllowEscapeViewBox]
+    __obj.asInstanceOf[typingsJapgolly.recharts.anon.X]
   }
-  @scala.inline
-  def AnonY(y: Boolean): AllowEscapeViewBox = {
-    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[AllowEscapeViewBox]
-  }
-  @scala.inline
-  def AnonXY(x: Boolean, y: Boolean): AllowEscapeViewBox = {
+  inline def XY(x: Boolean, y: Boolean): typingsJapgolly.recharts.anon.XY = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.recharts.anon.XY]
+  }
   
-    __obj.asInstanceOf[AllowEscapeViewBox]
+  inline def Y(y: Boolean): typingsJapgolly.recharts.anon.Y = {
+    val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.recharts.anon.Y]
   }
 }
-

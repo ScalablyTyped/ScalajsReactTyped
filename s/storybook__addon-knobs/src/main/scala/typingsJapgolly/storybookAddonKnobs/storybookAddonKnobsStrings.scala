@@ -1,115 +1,113 @@
 package typingsJapgolly.storybookAddonKnobs
 
-import typingsJapgolly.storybookAddonKnobs.optionsMod.OptionsKnobOptionsDisplay
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesMod.KnobType
+import typingsJapgolly.storybookAddonKnobs.distComponentsTypesOptionsMod.OptionsKnobOptionsDisplay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storybookAddonKnobsStrings {
-  @js.native
-  sealed trait Mutable extends js.Object
   
   @js.native
-  sealed trait Other extends js.Object
+  sealed trait array
+    extends StObject
+       with KnobType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait boolean
+    extends StObject
+       with KnobType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait button
+    extends StObject
+       with KnobType
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait check
+    extends StObject
+       with OptionsKnobOptionsDisplay
+  inline def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait check extends OptionsKnobOptionsDisplay
+  sealed trait color
+    extends StObject
+       with KnobType
+  inline def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait date
+    extends StObject
+       with KnobType
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait files
+    extends StObject
+       with KnobType
+  inline def files: files = "files".asInstanceOf[files]
   
   @js.native
-  sealed trait files extends js.Object
+  sealed trait `inline-check`
+    extends StObject
+       with OptionsKnobOptionsDisplay
+  inline def `inline-check`: `inline-check` = "inline-check".asInstanceOf[`inline-check`]
   
   @js.native
-  sealed trait `inline-check` extends OptionsKnobOptionsDisplay
+  sealed trait `inline-radio`
+    extends StObject
+       with OptionsKnobOptionsDisplay
+  inline def `inline-radio`: `inline-radio` = "inline-radio".asInstanceOf[`inline-radio`]
   
   @js.native
-  sealed trait `inline-radio` extends OptionsKnobOptionsDisplay
+  sealed trait `multi-select`
+    extends StObject
+       with OptionsKnobOptionsDisplay
+  inline def `multi-select`: `multi-select` = "multi-select".asInstanceOf[`multi-select`]
   
   @js.native
-  sealed trait knobs extends js.Object
+  sealed trait number
+    extends StObject
+       with KnobType
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `multi-select` extends OptionsKnobOptionsDisplay
+  sealed trait `object`
+    extends StObject
+       with KnobType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait options
+    extends StObject
+       with KnobType
+  inline def options: options = "options".asInstanceOf[options]
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait radio
+    extends StObject
+       with OptionsKnobOptionsDisplay
+  inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait radios
+    extends StObject
+       with KnobType
+  inline def radios: radios = "radios".asInstanceOf[radios]
   
   @js.native
-  sealed trait radio extends OptionsKnobOptionsDisplay
+  sealed trait select
+    extends StObject
+       with KnobType
+       with OptionsKnobOptionsDisplay
+  inline def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait radios extends js.Object
-  
-  @js.native
-  sealed trait select extends OptionsKnobOptionsDisplay
-  
-  @js.native
-  sealed trait storybookjsSlashknobs extends js.Object
-  
-  @js.native
-  sealed trait text extends js.Object
-  
-  @scala.inline
-  def Mutable: Mutable = "Mutable".asInstanceOf[Mutable]
-  @scala.inline
-  def Other: Other = "Other".asInstanceOf[Other]
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def check: check = "check".asInstanceOf[check]
-  @scala.inline
-  def color: color = "color".asInstanceOf[color]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
-  @scala.inline
-  def `inline-check`: `inline-check` = "inline-check".asInstanceOf[`inline-check`]
-  @scala.inline
-  def `inline-radio`: `inline-radio` = "inline-radio".asInstanceOf[`inline-radio`]
-  @scala.inline
-  def knobs: knobs = "knobs".asInstanceOf[knobs]
-  @scala.inline
-  def `multi-select`: `multi-select` = "multi-select".asInstanceOf[`multi-select`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def options: options = "options".asInstanceOf[options]
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
-  @scala.inline
-  def radios: radios = "radios".asInstanceOf[radios]
-  @scala.inline
-  def select: select = "select".asInstanceOf[select]
-  @scala.inline
-  def storybookjsSlashknobs: storybookjsSlashknobs = "storybookjs/knobs".asInstanceOf[storybookjsSlashknobs]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  sealed trait text
+    extends StObject
+       with KnobType
+  inline def text: text = "text".asInstanceOf[text]
 }
-

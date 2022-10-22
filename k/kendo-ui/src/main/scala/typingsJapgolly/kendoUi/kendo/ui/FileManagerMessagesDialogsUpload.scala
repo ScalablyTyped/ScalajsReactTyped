@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerMessagesDialogsUpload extends js.Object {
+trait FileManagerMessagesDialogsUpload extends StObject {
+  
   var clear: js.UndefOr[String] = js.undefined
+  
   var done: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object FileManagerMessagesDialogsUpload {
-  @scala.inline
-  def apply(clear: String = null, done: String = null, title: String = null): FileManagerMessagesDialogsUpload = {
+  
+  inline def apply(): FileManagerMessagesDialogsUpload = {
     val __obj = js.Dynamic.literal()
-    if (clear != null) __obj.updateDynamic("clear")(clear.asInstanceOf[js.Any])
-    if (done != null) __obj.updateDynamic("done")(done.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerMessagesDialogsUpload]
   }
+  
+  extension [Self <: FileManagerMessagesDialogsUpload](x: Self) {
+    
+    inline def setClear(value: String): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+    
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    
+    inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

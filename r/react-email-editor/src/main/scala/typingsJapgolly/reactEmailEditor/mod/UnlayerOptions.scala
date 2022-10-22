@@ -1,66 +1,144 @@
 package typingsJapgolly.reactEmailEditor.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnlayerOptions extends js.Object {
+trait UnlayerOptions extends StObject {
+  
   val appearance: js.UndefOr[AppearanceConfig] = js.undefined
+  
   val blocks: js.UndefOr[js.Array[js.Object]] = js.undefined
+  
   val customCSS: js.UndefOr[js.Array[String]] = js.undefined
+  
   val customJS: js.UndefOr[js.Array[String]] = js.undefined
+  
   val designTags: js.UndefOr[StringList] = js.undefined
+  
   val designTagsConfig: js.UndefOr[DesignTagConfig] = js.undefined
+  
+  val displayConditions: js.UndefOr[js.Array[DisplayCondition]] = js.undefined
+  
   val displayMode: js.UndefOr[DisplayMode] = js.undefined
+  
   val editor: js.UndefOr[EditorConfig] = js.undefined
+  
   val features: js.UndefOr[Features] = js.undefined
+  
   val id: js.UndefOr[String] = js.undefined
+  
   val locale: js.UndefOr[String] = js.undefined
+  
   val mergeTags: js.UndefOr[js.Array[MergeTag]] = js.undefined
+  
   val projectId: js.UndefOr[Double] = js.undefined
+  
   val safeHtml: js.UndefOr[Boolean] = js.undefined
+  
+  val specialLinks: js.UndefOr[js.Array[SpecialLink]] = js.undefined
+  
   val tools: js.UndefOr[ToolsConfig] = js.undefined
+  
+  val translations: js.UndefOr[Translations] = js.undefined
+  
   val user: js.UndefOr[User] = js.undefined
 }
-
 object UnlayerOptions {
-  @scala.inline
-  def apply(
-    appearance: AppearanceConfig = null,
-    blocks: js.Array[js.Object] = null,
-    customCSS: js.Array[String] = null,
-    customJS: js.Array[String] = null,
-    designTags: StringList = null,
-    designTagsConfig: DesignTagConfig = null,
-    displayMode: DisplayMode = null,
-    editor: EditorConfig = null,
-    features: Features = null,
-    id: String = null,
-    locale: String = null,
-    mergeTags: js.Array[MergeTag] = null,
-    projectId: Int | Double = null,
-    safeHtml: js.UndefOr[Boolean] = js.undefined,
-    tools: ToolsConfig = null,
-    user: User = null
-  ): UnlayerOptions = {
+  
+  inline def apply(): UnlayerOptions = {
     val __obj = js.Dynamic.literal()
-    if (appearance != null) __obj.updateDynamic("appearance")(appearance.asInstanceOf[js.Any])
-    if (blocks != null) __obj.updateDynamic("blocks")(blocks.asInstanceOf[js.Any])
-    if (customCSS != null) __obj.updateDynamic("customCSS")(customCSS.asInstanceOf[js.Any])
-    if (customJS != null) __obj.updateDynamic("customJS")(customJS.asInstanceOf[js.Any])
-    if (designTags != null) __obj.updateDynamic("designTags")(designTags.asInstanceOf[js.Any])
-    if (designTagsConfig != null) __obj.updateDynamic("designTagsConfig")(designTagsConfig.asInstanceOf[js.Any])
-    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(editor.asInstanceOf[js.Any])
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mergeTags != null) __obj.updateDynamic("mergeTags")(mergeTags.asInstanceOf[js.Any])
-    if (projectId != null) __obj.updateDynamic("projectId")(projectId.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeHtml)) __obj.updateDynamic("safeHtml")(safeHtml.asInstanceOf[js.Any])
-    if (tools != null) __obj.updateDynamic("tools")(tools.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlayerOptions]
   }
+  
+  extension [Self <: UnlayerOptions](x: Self) {
+    
+    inline def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+    
+    inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+    
+    inline def setBlocks(value: js.Array[js.Object]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
+    
+    inline def setBlocksUndefined: Self = StObject.set(x, "blocks", js.undefined)
+    
+    inline def setBlocksVarargs(value: js.Object*): Self = StObject.set(x, "blocks", js.Array(value*))
+    
+    inline def setCustomCSS(value: js.Array[String]): Self = StObject.set(x, "customCSS", value.asInstanceOf[js.Any])
+    
+    inline def setCustomCSSUndefined: Self = StObject.set(x, "customCSS", js.undefined)
+    
+    inline def setCustomCSSVarargs(value: String*): Self = StObject.set(x, "customCSS", js.Array(value*))
+    
+    inline def setCustomJS(value: js.Array[String]): Self = StObject.set(x, "customJS", value.asInstanceOf[js.Any])
+    
+    inline def setCustomJSUndefined: Self = StObject.set(x, "customJS", js.undefined)
+    
+    inline def setCustomJSVarargs(value: String*): Self = StObject.set(x, "customJS", js.Array(value*))
+    
+    inline def setDesignTags(value: StringList): Self = StObject.set(x, "designTags", value.asInstanceOf[js.Any])
+    
+    inline def setDesignTagsConfig(value: DesignTagConfig): Self = StObject.set(x, "designTagsConfig", value.asInstanceOf[js.Any])
+    
+    inline def setDesignTagsConfigUndefined: Self = StObject.set(x, "designTagsConfig", js.undefined)
+    
+    inline def setDesignTagsUndefined: Self = StObject.set(x, "designTags", js.undefined)
+    
+    inline def setDisplayConditions(value: js.Array[DisplayCondition]): Self = StObject.set(x, "displayConditions", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayConditionsUndefined: Self = StObject.set(x, "displayConditions", js.undefined)
+    
+    inline def setDisplayConditionsVarargs(value: DisplayCondition*): Self = StObject.set(x, "displayConditions", js.Array(value*))
+    
+    inline def setDisplayMode(value: DisplayMode): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayModeUndefined: Self = StObject.set(x, "displayMode", js.undefined)
+    
+    inline def setEditor(value: EditorConfig): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setFeatures(value: Features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMergeTags(value: js.Array[MergeTag]): Self = StObject.set(x, "mergeTags", value.asInstanceOf[js.Any])
+    
+    inline def setMergeTagsUndefined: Self = StObject.set(x, "mergeTags", js.undefined)
+    
+    inline def setMergeTagsVarargs(value: MergeTag*): Self = StObject.set(x, "mergeTags", js.Array(value*))
+    
+    inline def setProjectId(value: Double): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    
+    inline def setSafeHtml(value: Boolean): Self = StObject.set(x, "safeHtml", value.asInstanceOf[js.Any])
+    
+    inline def setSafeHtmlUndefined: Self = StObject.set(x, "safeHtml", js.undefined)
+    
+    inline def setSpecialLinks(value: js.Array[SpecialLink]): Self = StObject.set(x, "specialLinks", value.asInstanceOf[js.Any])
+    
+    inline def setSpecialLinksUndefined: Self = StObject.set(x, "specialLinks", js.undefined)
+    
+    inline def setSpecialLinksVarargs(value: SpecialLink*): Self = StObject.set(x, "specialLinks", js.Array(value*))
+    
+    inline def setTools(value: ToolsConfig): Self = StObject.set(x, "tools", value.asInstanceOf[js.Any])
+    
+    inline def setToolsUndefined: Self = StObject.set(x, "tools", js.undefined)
+    
+    inline def setTranslations(value: Translations): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

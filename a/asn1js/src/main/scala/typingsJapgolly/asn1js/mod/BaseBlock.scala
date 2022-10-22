@@ -1,20 +1,32 @@
 package typingsJapgolly.asn1js.mod
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("asn1js", "BaseBlock")
 @js.native
-class BaseBlock[T /* <: LocalValueBlock */] () extends LocalBaseBlock {
-  def this(parameters: BaseBlockParams) = this()
-  def this(parameters: BaseBlockParams, valueBlockType: Instantiable0[LocalValueBlock]) = this()
+trait BaseBlock[T /* <: ValueBlock */, J /* <: ValueBlockJson */]
+  extends StObject
+     with LocalBaseBlock
+     with IBaseBlock
+     with IBerConvertible {
+  
   var idBlock: LocalIdentificationBlock = js.native
+  
+  /**
+    * Determines whether two object instances are equal
+    * @param other Object to compare with the current object
+    */
+  def isEqual(other: scala.Any): scala.Boolean = js.native
+  
   var lenBlock: LocalLengthBlock = js.native
+  
+  /* protected */ def onAsciiEncoding(): String = js.native
+  
+  def toBER(sizeOnly: scala.Boolean, writer: ViewWriter): js.typedarray.ArrayBuffer = js.native
+  def toBER(sizeOnly: Unit, writer: ViewWriter): js.typedarray.ArrayBuffer = js.native
+  
+  def toString(encoding: StringEncoding): String = js.native
+  
   var valueBlock: T = js.native
-  def fromBER(inputBuffer: scala.scalajs.js.typedarray.ArrayBuffer, inputOffset: Double, inputLength: Double): Double = js.native
-  def toBER(): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def toBER(sizeOnly: scala.Boolean): scala.scalajs.js.typedarray.ArrayBuffer = js.native
 }
-

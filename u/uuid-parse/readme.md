@@ -10,10 +10,10 @@ RFC4122 UUID parser
 | ------------------ | :-------------: |
 | Full name          | uuid-parse |
 | Keywords           | uuid, parse, guid, rfc4122 |
-| # releases         | 2 |
-| # dependents       | 22 |
-| # downloads        | 1973053 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 758525.3333333334 |
+| # stars            | 11.0 |
 
 ## Links
 - [Homepage](https://github.com/zefferus/uuid-parse#readme)

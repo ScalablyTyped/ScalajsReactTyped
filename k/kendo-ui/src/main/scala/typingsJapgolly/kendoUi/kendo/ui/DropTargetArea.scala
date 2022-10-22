@@ -1,16 +1,14 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.DropTargetArea")
 @js.native
-class DropTargetArea protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DropTargetAreaOptions) = this()
+trait DropTargetArea
+  extends StObject
+     with Widget {
+  
   @JSName("options")
   var options_DropTargetArea: DropTargetAreaOptions = js.native
 }
-

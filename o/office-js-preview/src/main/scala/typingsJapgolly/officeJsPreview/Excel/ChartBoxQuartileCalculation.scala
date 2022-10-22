@@ -1,35 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartBoxQuartileCalculation extends js.Object
-
+sealed trait ChartBoxQuartileCalculation extends StObject
 /**
-  *
   * Represents the quartile calculation type of chart series layout. Only applies to a box and whisker chart.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartBoxQuartileCalculation")
 @js.native
-object ChartBoxQuartileCalculation extends js.Object {
+object ChartBoxQuartileCalculation extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait exclusive extends ChartBoxQuartileCalculation
+  sealed trait exclusive
+    extends StObject
+       with ChartBoxQuartileCalculation
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait inclusive extends ChartBoxQuartileCalculation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartBoxQuartileCalculation with String] = js.native
-  /* "Exclusive" */ @js.native
-  object exclusive extends TopLevel[exclusive with String]
-  
-  /* "Inclusive" */ @js.native
-  object inclusive extends TopLevel[inclusive with String]
-  
+  sealed trait inclusive
+    extends StObject
+       with ChartBoxQuartileCalculation
 }
-

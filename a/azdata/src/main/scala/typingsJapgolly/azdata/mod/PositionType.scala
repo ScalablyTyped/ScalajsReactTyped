@@ -1,8 +1,8 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.static
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.azdata.azdataStrings.initial
   - typingsJapgolly.azdata.azdataStrings.inherit
 */
-trait PositionType extends js.Object
-
+trait PositionType extends StObject
 object PositionType {
-  @scala.inline
-  def absolute: typingsJapgolly.azdata.azdataStrings.absolute = this.cast("absolute")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def fixed: typingsJapgolly.azdata.azdataStrings.fixed = this.cast("fixed")
-  @scala.inline
-  def inherit: typingsJapgolly.azdata.azdataStrings.inherit = this.cast("inherit")
-  @scala.inline
-  def initial: typingsJapgolly.azdata.azdataStrings.initial = this.cast("initial")
-  @scala.inline
-  def relative: typingsJapgolly.azdata.azdataStrings.relative = this.cast("relative")
-  @scala.inline
-  def static: typingsJapgolly.azdata.azdataStrings.static = this.cast("static")
-  @scala.inline
-  def sticky: typingsJapgolly.azdata.azdataStrings.sticky = this.cast("sticky")
+  
+  inline def absolute: typingsJapgolly.azdata.azdataStrings.absolute = "absolute".asInstanceOf[typingsJapgolly.azdata.azdataStrings.absolute]
+  
+  inline def fixed: typingsJapgolly.azdata.azdataStrings.fixed = "fixed".asInstanceOf[typingsJapgolly.azdata.azdataStrings.fixed]
+  
+  inline def inherit: typingsJapgolly.azdata.azdataStrings.inherit = "inherit".asInstanceOf[typingsJapgolly.azdata.azdataStrings.inherit]
+  
+  inline def initial: typingsJapgolly.azdata.azdataStrings.initial = "initial".asInstanceOf[typingsJapgolly.azdata.azdataStrings.initial]
+  
+  inline def relative: typingsJapgolly.azdata.azdataStrings.relative = "relative".asInstanceOf[typingsJapgolly.azdata.azdataStrings.relative]
+  
+  inline def static: typingsJapgolly.azdata.azdataStrings.static = "static".asInstanceOf[typingsJapgolly.azdata.azdataStrings.static]
+  
+  inline def sticky: typingsJapgolly.azdata.azdataStrings.sticky = "sticky".asInstanceOf[typingsJapgolly.azdata.azdataStrings.sticky]
 }
-

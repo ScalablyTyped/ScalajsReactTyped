@@ -1,16 +1,19 @@
 package typingsJapgolly.writeFileAtomically
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.writeFileAtomic.mod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("write-file-atomically", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(path: String, data: Data): js.Promise[Unit] = js.native
-  def apply(path: String, data: Data, options: Options): js.Promise[Unit] = js.native
-  type Data = String | Buffer | scala.scalajs.js.typedarray.Uint8Array
+object mod {
+  
+  inline def apply(path: String, data: Data): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def apply(path: String, data: Data, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @JSImport("write-file-atomically", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type Data = String | Buffer | js.typedarray.Uint8Array
 }
-

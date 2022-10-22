@@ -1,16 +1,15 @@
 package typingsJapgolly.tcomb.mod
 
-import typingsJapgolly.tcomb.AnonKind
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // irreducible
 //
 @js.native
 trait Irreducible_[T] extends Type[T] {
+  
   @JSName("meta")
-  var meta_Irreducible_ : AnonKind[T] = js.native
+  var meta_Irreducible_ : typingsJapgolly.tcomb.anon.Predicate[T] = js.native
 }
-

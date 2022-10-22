@@ -7,420 +7,627 @@ import typingsJapgolly.nodeTelegramBotApi.mod.DocumentMimeType
 import typingsJapgolly.nodeTelegramBotApi.mod.MessageEntityType
 import typingsJapgolly.nodeTelegramBotApi.mod.MessageType
 import typingsJapgolly.nodeTelegramBotApi.mod.ParseMode
+import typingsJapgolly.nodeTelegramBotApi.mod.PollType
+import typingsJapgolly.nodeTelegramBotApi.mod.StickerType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeTelegramBotApiStrings {
+  
+  @js.native
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
+  
+  @js.native
+  sealed trait HTML
+    extends StObject
+       with ParseMode
+  inline def HTML: HTML = "HTML".asInstanceOf[HTML]
+  
+  @js.native
+  sealed trait Markdown
+    extends StObject
+       with ParseMode
+  inline def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
+  
+  @js.native
+  sealed trait MarkdownV2
+    extends StObject
+       with ParseMode
+  inline def MarkdownV2: MarkdownV2 = "MarkdownV2".asInstanceOf[MarkdownV2]
+  
+  @js.native
+  sealed trait administrator
+    extends StObject
+       with ChatMemberStatus
+  inline def administrator: administrator = "administrator".asInstanceOf[administrator]
+  
+  @js.native
+  sealed trait all_chat_administrators extends StObject
+  inline def all_chat_administrators: all_chat_administrators = "all_chat_administrators".asInstanceOf[all_chat_administrators]
+  
+  @js.native
+  sealed trait all_group_chats extends StObject
+  inline def all_group_chats: all_group_chats = "all_group_chats".asInstanceOf[all_group_chats]
+  
+  @js.native
+  sealed trait all_private_chats extends StObject
+  inline def all_private_chats: all_private_chats = "all_private_chats".asInstanceOf[all_private_chats]
+  
+  @js.native
+  sealed trait animation
+    extends StObject
+       with MessageType
+  inline def animation: animation = "animation".asInstanceOf[animation]
+  
+  @js.native
+  sealed trait applicationSlashpdf
+    extends StObject
+       with DocumentMimeType
+  inline def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
+  
+  @js.native
+  sealed trait applicationSlashzip
+    extends StObject
+       with DocumentMimeType
+  inline def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
+  
+  @js.native
+  sealed trait article extends StObject
+  inline def article: article = "article".asInstanceOf[article]
+  
+  @js.native
+  sealed trait audio
+    extends StObject
+       with MessageType
+  inline def audio: audio = "audio".asInstanceOf[audio]
+  
+  @js.native
+  sealed trait bold
+    extends StObject
+       with MessageEntityType
+  inline def bold: bold = "bold".asInstanceOf[bold]
+  
+  @js.native
+  sealed trait bot_command
+    extends StObject
+       with MessageEntityType
+  inline def bot_command: bot_command = "bot_command".asInstanceOf[bot_command]
+  
+  @js.native
+  sealed trait callback_query extends StObject
+  inline def callback_query: callback_query = "callback_query".asInstanceOf[callback_query]
+  
+  @js.native
+  sealed trait cashtag
+    extends StObject
+       with MessageEntityType
+  inline def cashtag: cashtag = "cashtag".asInstanceOf[cashtag]
+  
+  @js.native
+  sealed trait channel
+    extends StObject
+       with ChatType
+  inline def channel: channel = "channel".asInstanceOf[channel]
+  
+  @js.native
+  sealed trait channel_chat_created
+    extends StObject
+       with MessageType
+  inline def channel_chat_created: channel_chat_created = "channel_chat_created".asInstanceOf[channel_chat_created]
+  
+  @js.native
+  sealed trait channel_post extends StObject
+  inline def channel_post: channel_post = "channel_post".asInstanceOf[channel_post]
+  
+  @js.native
+  sealed trait chat extends StObject
+  inline def chat: chat = "chat".asInstanceOf[chat]
+  
+  @js.native
+  sealed trait chat_administrators extends StObject
+  inline def chat_administrators: chat_administrators = "chat_administrators".asInstanceOf[chat_administrators]
+  
+  @js.native
+  sealed trait chat_invite_link
+    extends StObject
+       with MessageType
+  inline def chat_invite_link: chat_invite_link = "chat_invite_link".asInstanceOf[chat_invite_link]
+  
+  @js.native
+  sealed trait chat_join_request extends StObject
+  inline def chat_join_request: chat_join_request = "chat_join_request".asInstanceOf[chat_join_request]
+  
+  @js.native
+  sealed trait chat_member extends StObject
+  inline def chat_member: chat_member = "chat_member".asInstanceOf[chat_member]
+  
+  @js.native
+  sealed trait chat_member_updated
+    extends StObject
+       with MessageType
+  inline def chat_member_updated: chat_member_updated = "chat_member_updated".asInstanceOf[chat_member_updated]
+  
+  @js.native
+  sealed trait chosen_inline_result extends StObject
+  inline def chosen_inline_result: chosen_inline_result = "chosen_inline_result".asInstanceOf[chosen_inline_result]
+  
+  @js.native
+  sealed trait code
+    extends StObject
+       with MessageEntityType
+  inline def code: code = "code".asInstanceOf[code]
+  
+  @js.native
+  sealed trait commands extends StObject
+  inline def commands: commands = "commands".asInstanceOf[commands]
+  
+  @js.native
+  sealed trait contact
+    extends StObject
+       with MessageType
+  inline def contact: contact = "contact".asInstanceOf[contact]
+  
+  @js.native
+  sealed trait creator
+    extends StObject
+       with ChatMemberStatus
+  inline def creator: creator = "creator".asInstanceOf[creator]
+  
   @js.native
-  sealed trait HTML extends ParseMode
+  sealed trait custom_emoji
+    extends StObject
+       with MessageEntityType
+       with StickerType
+  inline def custom_emoji: custom_emoji = "custom_emoji".asInstanceOf[custom_emoji]
   
   @js.native
-  sealed trait Markdown extends ParseMode
+  sealed trait delete_chat_photo
+    extends StObject
+       with MessageType
+  inline def delete_chat_photo: delete_chat_photo = "delete_chat_photo".asInstanceOf[delete_chat_photo]
   
   @js.native
-  sealed trait MarkdownV2 extends ParseMode
+  sealed trait document
+    extends StObject
+       with MessageType
+  inline def document: document = "document".asInstanceOf[document]
   
   @js.native
-  sealed trait administrator extends ChatMemberStatus
+  sealed trait edited_channel_post extends StObject
+  inline def edited_channel_post: edited_channel_post = "edited_channel_post".asInstanceOf[edited_channel_post]
   
   @js.native
-  sealed trait animation extends MessageType
+  sealed trait edited_channel_post_caption extends StObject
+  inline def edited_channel_post_caption: edited_channel_post_caption = "edited_channel_post_caption".asInstanceOf[edited_channel_post_caption]
   
   @js.native
-  sealed trait applicationSlashpdf extends DocumentMimeType
+  sealed trait edited_channel_post_text extends StObject
+  inline def edited_channel_post_text: edited_channel_post_text = "edited_channel_post_text".asInstanceOf[edited_channel_post_text]
   
   @js.native
-  sealed trait applicationSlashzip extends DocumentMimeType
+  sealed trait edited_message extends StObject
+  inline def edited_message: edited_message = "edited_message".asInstanceOf[edited_message]
   
   @js.native
-  sealed trait article extends js.Object
+  sealed trait edited_message_caption extends StObject
+  inline def edited_message_caption: edited_message_caption = "edited_message_caption".asInstanceOf[edited_message_caption]
   
   @js.native
-  sealed trait audio extends MessageType
+  sealed trait edited_message_text extends StObject
+  inline def edited_message_text: edited_message_text = "edited_message_text".asInstanceOf[edited_message_text]
   
   @js.native
-  sealed trait bold extends MessageEntityType
+  sealed trait email
+    extends StObject
+       with MessageEntityType
+  inline def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait bot_command extends MessageEntityType
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait callback_query extends js.Object
+  sealed trait find_location
+    extends StObject
+       with ChatAction
+  inline def find_location: find_location = "find_location".asInstanceOf[find_location]
   
   @js.native
-  sealed trait channel extends ChatType
+  sealed trait game
+    extends StObject
+       with MessageType
+  inline def game: game = "game".asInstanceOf[game]
   
   @js.native
-  sealed trait channel_chat_created extends MessageType
+  sealed trait gif extends StObject
+  inline def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait channel_post extends js.Object
+  sealed trait group
+    extends StObject
+       with ChatType
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait chosen_inline_result extends js.Object
+  sealed trait group_chat_created
+    extends StObject
+       with MessageType
+  inline def group_chat_created: group_chat_created = "group_chat_created".asInstanceOf[group_chat_created]
   
   @js.native
-  sealed trait code extends MessageEntityType
+  sealed trait hashtag
+    extends StObject
+       with MessageEntityType
+  inline def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
   
   @js.native
-  sealed trait contact extends MessageType
+  sealed trait inline_query extends StObject
+  inline def inline_query: inline_query = "inline_query".asInstanceOf[inline_query]
   
   @js.native
-  sealed trait creator extends ChatMemberStatus
+  sealed trait invoice
+    extends StObject
+       with MessageType
+  inline def invoice: invoice = "invoice".asInstanceOf[invoice]
   
   @js.native
-  sealed trait delete_chat_photo extends MessageType
+  sealed trait italic
+    extends StObject
+       with MessageEntityType
+  inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait document extends MessageType
+  sealed trait kicked
+    extends StObject
+       with ChatMemberStatus
+  inline def kicked: kicked = "kicked".asInstanceOf[kicked]
   
   @js.native
-  sealed trait edited_channel_post extends js.Object
+  sealed trait left
+    extends StObject
+       with ChatMemberStatus
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait edited_channel_post_caption extends js.Object
+  sealed trait left_chat_member
+    extends StObject
+       with MessageType
+  inline def left_chat_member: left_chat_member = "left_chat_member".asInstanceOf[left_chat_member]
   
   @js.native
-  sealed trait edited_channel_post_text extends js.Object
+  sealed trait location
+    extends StObject
+       with MessageType
+  inline def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait edited_message extends js.Object
+  sealed trait mask
+    extends StObject
+       with StickerType
+  inline def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait edited_message_caption extends js.Object
+  sealed trait member
+    extends StObject
+       with ChatMemberStatus
+  inline def member: member = "member".asInstanceOf[member]
   
   @js.native
-  sealed trait edited_message_text extends js.Object
+  sealed trait mention
+    extends StObject
+       with MessageEntityType
+  inline def mention: mention = "mention".asInstanceOf[mention]
   
   @js.native
-  sealed trait email extends MessageEntityType
+  sealed trait message extends StObject
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait message_auto_delete_timer_changed
+    extends StObject
+       with MessageType
+  inline def message_auto_delete_timer_changed: message_auto_delete_timer_changed = "message_auto_delete_timer_changed".asInstanceOf[message_auto_delete_timer_changed]
   
   @js.native
-  sealed trait find_location extends ChatAction
+  sealed trait migrate_from_chat_id
+    extends StObject
+       with MessageType
+  inline def migrate_from_chat_id: migrate_from_chat_id = "migrate_from_chat_id".asInstanceOf[migrate_from_chat_id]
   
   @js.native
-  sealed trait game extends MessageType
+  sealed trait migrate_to_chat_id
+    extends StObject
+       with MessageType
+  inline def migrate_to_chat_id: migrate_to_chat_id = "migrate_to_chat_id".asInstanceOf[migrate_to_chat_id]
   
   @js.native
-  sealed trait gif extends js.Object
+  sealed trait mpeg4_gif extends StObject
+  inline def mpeg4_gif: mpeg4_gif = "mpeg4_gif".asInstanceOf[mpeg4_gif]
   
   @js.native
-  sealed trait group extends ChatType
+  sealed trait my_chat_member extends StObject
+  inline def my_chat_member: my_chat_member = "my_chat_member".asInstanceOf[my_chat_member]
   
   @js.native
-  sealed trait group_chat_created extends MessageType
+  sealed trait new_chat_members
+    extends StObject
+       with MessageType
+  inline def new_chat_members: new_chat_members = "new_chat_members".asInstanceOf[new_chat_members]
   
   @js.native
-  sealed trait hashtag extends MessageEntityType
+  sealed trait new_chat_photo
+    extends StObject
+       with MessageType
+  inline def new_chat_photo: new_chat_photo = "new_chat_photo".asInstanceOf[new_chat_photo]
   
   @js.native
-  sealed trait inline_query extends js.Object
+  sealed trait new_chat_title
+    extends StObject
+       with MessageType
+  inline def new_chat_title: new_chat_title = "new_chat_title".asInstanceOf[new_chat_title]
   
   @js.native
-  sealed trait invoice extends MessageType
+  sealed trait passport_data
+    extends StObject
+       with MessageType
+  inline def passport_data: passport_data = "passport_data".asInstanceOf[passport_data]
   
   @js.native
-  sealed trait italic extends MessageEntityType
+  sealed trait phone_number
+    extends StObject
+       with MessageEntityType
+  inline def phone_number: phone_number = "phone_number".asInstanceOf[phone_number]
   
   @js.native
-  sealed trait kicked extends ChatMemberStatus
+  sealed trait photo
+    extends StObject
+       with MessageType
+  inline def photo: photo = "photo".asInstanceOf[photo]
   
   @js.native
-  sealed trait left extends ChatMemberStatus
+  sealed trait pinned_message
+    extends StObject
+       with MessageType
+  inline def pinned_message: pinned_message = "pinned_message".asInstanceOf[pinned_message]
   
   @js.native
-  sealed trait left_chat_member extends MessageType
+  sealed trait png_sticker extends StObject
+  inline def png_sticker: png_sticker = "png_sticker".asInstanceOf[png_sticker]
   
   @js.native
-  sealed trait location extends MessageType
+  sealed trait poll_answer extends StObject
+  inline def poll_answer: poll_answer = "poll_answer".asInstanceOf[poll_answer]
   
   @js.native
-  sealed trait member extends ChatMemberStatus
+  sealed trait polling_error extends StObject
+  inline def polling_error: polling_error = "polling_error".asInstanceOf[polling_error]
   
   @js.native
-  sealed trait mention extends MessageEntityType
+  sealed trait pre
+    extends StObject
+       with MessageEntityType
+  inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait pre_checkout_query extends StObject
+  inline def pre_checkout_query: pre_checkout_query = "pre_checkout_query".asInstanceOf[pre_checkout_query]
   
   @js.native
-  sealed trait migrate_from_chat_id extends MessageType
+  sealed trait `private`
+    extends StObject
+       with ChatType
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
-  sealed trait migrate_to_chat_id extends MessageType
+  sealed trait quiz
+    extends StObject
+       with PollType
+  inline def quiz: quiz = "quiz".asInstanceOf[quiz]
   
   @js.native
-  sealed trait mpeg4_gif extends js.Object
+  sealed trait record_video
+    extends StObject
+       with ChatAction
+  inline def record_video: record_video = "record_video".asInstanceOf[record_video]
   
   @js.native
-  sealed trait new_chat_members extends MessageType
+  sealed trait record_video_note
+    extends StObject
+       with ChatAction
+  inline def record_video_note: record_video_note = "record_video_note".asInstanceOf[record_video_note]
   
   @js.native
-  sealed trait new_chat_photo extends MessageType
+  sealed trait record_voice
+    extends StObject
+       with ChatAction
+  inline def record_voice: record_voice = "record_voice".asInstanceOf[record_voice]
   
   @js.native
-  sealed trait new_chat_title extends MessageType
+  sealed trait regular
+    extends StObject
+       with PollType
+       with StickerType
+  inline def regular: regular = "regular".asInstanceOf[regular]
   
   @js.native
-  sealed trait passport_data extends MessageType
+  sealed trait restricted
+    extends StObject
+       with ChatMemberStatus
+  inline def restricted: restricted = "restricted".asInstanceOf[restricted]
   
   @js.native
-  sealed trait photo extends MessageType
+  sealed trait shipping_query extends StObject
+  inline def shipping_query: shipping_query = "shipping_query".asInstanceOf[shipping_query]
   
   @js.native
-  sealed trait pinned_message extends MessageType
+  sealed trait spoiler
+    extends StObject
+       with MessageEntityType
+  inline def spoiler: spoiler = "spoiler".asInstanceOf[spoiler]
   
   @js.native
-  sealed trait polling_error extends js.Object
+  sealed trait sticker
+    extends StObject
+       with MessageType
+  inline def sticker: sticker = "sticker".asInstanceOf[sticker]
   
   @js.native
-  sealed trait pre extends MessageEntityType
+  sealed trait strikethrough
+    extends StObject
+       with MessageEntityType
+  inline def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   
   @js.native
-  sealed trait pre_checkout_query extends js.Object
+  sealed trait successful_payment
+    extends StObject
+       with MessageType
+  inline def successful_payment: successful_payment = "successful_payment".asInstanceOf[successful_payment]
   
   @js.native
-  sealed trait `private` extends ChatType
+  sealed trait supergroup
+    extends StObject
+       with ChatType
+  inline def supergroup: supergroup = "supergroup".asInstanceOf[supergroup]
   
   @js.native
-  sealed trait record_audio extends ChatAction
+  sealed trait supergroup_chat_created
+    extends StObject
+       with MessageType
+  inline def supergroup_chat_created: supergroup_chat_created = "supergroup_chat_created".asInstanceOf[supergroup_chat_created]
   
   @js.native
-  sealed trait record_video extends ChatAction
+  sealed trait text
+    extends StObject
+       with MessageType
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait record_video_note extends ChatAction
+  sealed trait text_link
+    extends StObject
+       with MessageEntityType
+  inline def text_link: text_link = "text_link".asInstanceOf[text_link]
   
   @js.native
-  sealed trait restricted extends ChatMemberStatus
+  sealed trait text_mention
+    extends StObject
+       with MessageEntityType
+  inline def text_mention: text_mention = "text_mention".asInstanceOf[text_mention]
   
   @js.native
-  sealed trait shipping_query extends js.Object
+  sealed trait tgs_sticker extends StObject
+  inline def tgs_sticker: tgs_sticker = "tgs_sticker".asInstanceOf[tgs_sticker]
   
   @js.native
-  sealed trait sticker extends MessageType
+  sealed trait typing
+    extends StObject
+       with ChatAction
+  inline def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
-  sealed trait successful_payment extends MessageType
+  sealed trait underline
+    extends StObject
+       with MessageEntityType
+  inline def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait supergroup extends ChatType
+  sealed trait upload_document
+    extends StObject
+       with ChatAction
+  inline def upload_document: upload_document = "upload_document".asInstanceOf[upload_document]
   
   @js.native
-  sealed trait supergroup_chat_created extends MessageType
+  sealed trait upload_photo
+    extends StObject
+       with ChatAction
+  inline def upload_photo: upload_photo = "upload_photo".asInstanceOf[upload_photo]
   
   @js.native
-  sealed trait text extends MessageType
+  sealed trait upload_video
+    extends StObject
+       with ChatAction
+  inline def upload_video: upload_video = "upload_video".asInstanceOf[upload_video]
   
   @js.native
-  sealed trait text_link extends MessageEntityType
+  sealed trait upload_video_note
+    extends StObject
+       with ChatAction
+  inline def upload_video_note: upload_video_note = "upload_video_note".asInstanceOf[upload_video_note]
   
   @js.native
-  sealed trait text_mention extends MessageEntityType
+  sealed trait upload_voice
+    extends StObject
+       with ChatAction
+  inline def upload_voice: upload_voice = "upload_voice".asInstanceOf[upload_voice]
   
   @js.native
-  sealed trait typing extends ChatAction
+  sealed trait url
+    extends StObject
+       with MessageEntityType
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait upload_audio extends ChatAction
+  sealed trait venue extends StObject
+  inline def venue: venue = "venue".asInstanceOf[venue]
   
   @js.native
-  sealed trait upload_document extends ChatAction
+  sealed trait video
+    extends StObject
+       with MessageType
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
-  sealed trait upload_photo extends ChatAction
+  sealed trait video_chat_ended
+    extends StObject
+       with MessageType
+  inline def video_chat_ended: video_chat_ended = "video_chat_ended".asInstanceOf[video_chat_ended]
   
   @js.native
-  sealed trait upload_video extends ChatAction
+  sealed trait video_chat_participants_invited
+    extends StObject
+       with MessageType
+  inline def video_chat_participants_invited: video_chat_participants_invited = "video_chat_participants_invited".asInstanceOf[video_chat_participants_invited]
   
   @js.native
-  sealed trait upload_video_note extends ChatAction
+  sealed trait video_chat_scheduled
+    extends StObject
+       with MessageType
+  inline def video_chat_scheduled: video_chat_scheduled = "video_chat_scheduled".asInstanceOf[video_chat_scheduled]
   
   @js.native
-  sealed trait url extends MessageEntityType
+  sealed trait video_chat_started
+    extends StObject
+       with MessageType
+  inline def video_chat_started: video_chat_started = "video_chat_started".asInstanceOf[video_chat_started]
   
   @js.native
-  sealed trait venue extends js.Object
+  sealed trait video_note
+    extends StObject
+       with MessageType
+  inline def video_note: video_note = "video_note".asInstanceOf[video_note]
   
   @js.native
-  sealed trait video extends MessageType
+  sealed trait voice
+    extends StObject
+       with MessageType
+  inline def voice: voice = "voice".asInstanceOf[voice]
   
   @js.native
-  sealed trait video_note extends MessageType
+  sealed trait web_app extends StObject
+  inline def web_app: web_app = "web_app".asInstanceOf[web_app]
   
   @js.native
-  sealed trait voice extends MessageType
+  sealed trait web_app_data
+    extends StObject
+       with MessageType
+  inline def web_app_data: web_app_data = "web_app_data".asInstanceOf[web_app_data]
   
   @js.native
-  sealed trait webhook_error extends js.Object
+  sealed trait webhook_error extends StObject
+  inline def webhook_error: webhook_error = "webhook_error".asInstanceOf[webhook_error]
   
-  @scala.inline
-  def HTML: HTML = "HTML".asInstanceOf[HTML]
-  @scala.inline
-  def Markdown: Markdown = "Markdown".asInstanceOf[Markdown]
-  @scala.inline
-  def MarkdownV2: MarkdownV2 = "MarkdownV2".asInstanceOf[MarkdownV2]
-  @scala.inline
-  def administrator: administrator = "administrator".asInstanceOf[administrator]
-  @scala.inline
-  def animation: animation = "animation".asInstanceOf[animation]
-  @scala.inline
-  def applicationSlashpdf: applicationSlashpdf = "application/pdf".asInstanceOf[applicationSlashpdf]
-  @scala.inline
-  def applicationSlashzip: applicationSlashzip = "application/zip".asInstanceOf[applicationSlashzip]
-  @scala.inline
-  def article: article = "article".asInstanceOf[article]
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
-  @scala.inline
-  def bold: bold = "bold".asInstanceOf[bold]
-  @scala.inline
-  def bot_command: bot_command = "bot_command".asInstanceOf[bot_command]
-  @scala.inline
-  def callback_query: callback_query = "callback_query".asInstanceOf[callback_query]
-  @scala.inline
-  def channel: channel = "channel".asInstanceOf[channel]
-  @scala.inline
-  def channel_chat_created: channel_chat_created = "channel_chat_created".asInstanceOf[channel_chat_created]
-  @scala.inline
-  def channel_post: channel_post = "channel_post".asInstanceOf[channel_post]
-  @scala.inline
-  def chosen_inline_result: chosen_inline_result = "chosen_inline_result".asInstanceOf[chosen_inline_result]
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def contact: contact = "contact".asInstanceOf[contact]
-  @scala.inline
-  def creator: creator = "creator".asInstanceOf[creator]
-  @scala.inline
-  def delete_chat_photo: delete_chat_photo = "delete_chat_photo".asInstanceOf[delete_chat_photo]
-  @scala.inline
-  def document: document = "document".asInstanceOf[document]
-  @scala.inline
-  def edited_channel_post: edited_channel_post = "edited_channel_post".asInstanceOf[edited_channel_post]
-  @scala.inline
-  def edited_channel_post_caption: edited_channel_post_caption = "edited_channel_post_caption".asInstanceOf[edited_channel_post_caption]
-  @scala.inline
-  def edited_channel_post_text: edited_channel_post_text = "edited_channel_post_text".asInstanceOf[edited_channel_post_text]
-  @scala.inline
-  def edited_message: edited_message = "edited_message".asInstanceOf[edited_message]
-  @scala.inline
-  def edited_message_caption: edited_message_caption = "edited_message_caption".asInstanceOf[edited_message_caption]
-  @scala.inline
-  def edited_message_text: edited_message_text = "edited_message_text".asInstanceOf[edited_message_text]
-  @scala.inline
-  def email: email = "email".asInstanceOf[email]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def find_location: find_location = "find_location".asInstanceOf[find_location]
-  @scala.inline
-  def game: game = "game".asInstanceOf[game]
-  @scala.inline
-  def gif: gif = "gif".asInstanceOf[gif]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def group_chat_created: group_chat_created = "group_chat_created".asInstanceOf[group_chat_created]
-  @scala.inline
-  def hashtag: hashtag = "hashtag".asInstanceOf[hashtag]
-  @scala.inline
-  def inline_query: inline_query = "inline_query".asInstanceOf[inline_query]
-  @scala.inline
-  def invoice: invoice = "invoice".asInstanceOf[invoice]
-  @scala.inline
-  def italic: italic = "italic".asInstanceOf[italic]
-  @scala.inline
-  def kicked: kicked = "kicked".asInstanceOf[kicked]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def left_chat_member: left_chat_member = "left_chat_member".asInstanceOf[left_chat_member]
-  @scala.inline
-  def location: location = "location".asInstanceOf[location]
-  @scala.inline
-  def member: member = "member".asInstanceOf[member]
-  @scala.inline
-  def mention: mention = "mention".asInstanceOf[mention]
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
-  @scala.inline
-  def migrate_from_chat_id: migrate_from_chat_id = "migrate_from_chat_id".asInstanceOf[migrate_from_chat_id]
-  @scala.inline
-  def migrate_to_chat_id: migrate_to_chat_id = "migrate_to_chat_id".asInstanceOf[migrate_to_chat_id]
-  @scala.inline
-  def mpeg4_gif: mpeg4_gif = "mpeg4_gif".asInstanceOf[mpeg4_gif]
-  @scala.inline
-  def new_chat_members: new_chat_members = "new_chat_members".asInstanceOf[new_chat_members]
-  @scala.inline
-  def new_chat_photo: new_chat_photo = "new_chat_photo".asInstanceOf[new_chat_photo]
-  @scala.inline
-  def new_chat_title: new_chat_title = "new_chat_title".asInstanceOf[new_chat_title]
-  @scala.inline
-  def passport_data: passport_data = "passport_data".asInstanceOf[passport_data]
-  @scala.inline
-  def photo: photo = "photo".asInstanceOf[photo]
-  @scala.inline
-  def pinned_message: pinned_message = "pinned_message".asInstanceOf[pinned_message]
-  @scala.inline
-  def polling_error: polling_error = "polling_error".asInstanceOf[polling_error]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def pre_checkout_query: pre_checkout_query = "pre_checkout_query".asInstanceOf[pre_checkout_query]
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
-  @scala.inline
-  def record_audio: record_audio = "record_audio".asInstanceOf[record_audio]
-  @scala.inline
-  def record_video: record_video = "record_video".asInstanceOf[record_video]
-  @scala.inline
-  def record_video_note: record_video_note = "record_video_note".asInstanceOf[record_video_note]
-  @scala.inline
-  def restricted: restricted = "restricted".asInstanceOf[restricted]
-  @scala.inline
-  def shipping_query: shipping_query = "shipping_query".asInstanceOf[shipping_query]
-  @scala.inline
-  def sticker: sticker = "sticker".asInstanceOf[sticker]
-  @scala.inline
-  def successful_payment: successful_payment = "successful_payment".asInstanceOf[successful_payment]
-  @scala.inline
-  def supergroup: supergroup = "supergroup".asInstanceOf[supergroup]
-  @scala.inline
-  def supergroup_chat_created: supergroup_chat_created = "supergroup_chat_created".asInstanceOf[supergroup_chat_created]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
-  @scala.inline
-  def text_link: text_link = "text_link".asInstanceOf[text_link]
-  @scala.inline
-  def text_mention: text_mention = "text_mention".asInstanceOf[text_mention]
-  @scala.inline
-  def typing: typing = "typing".asInstanceOf[typing]
-  @scala.inline
-  def upload_audio: upload_audio = "upload_audio".asInstanceOf[upload_audio]
-  @scala.inline
-  def upload_document: upload_document = "upload_document".asInstanceOf[upload_document]
-  @scala.inline
-  def upload_photo: upload_photo = "upload_photo".asInstanceOf[upload_photo]
-  @scala.inline
-  def upload_video: upload_video = "upload_video".asInstanceOf[upload_video]
-  @scala.inline
-  def upload_video_note: upload_video_note = "upload_video_note".asInstanceOf[upload_video_note]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def venue: venue = "venue".asInstanceOf[venue]
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
-  @scala.inline
-  def video_note: video_note = "video_note".asInstanceOf[video_note]
-  @scala.inline
-  def voice: voice = "voice".asInstanceOf[voice]
-  @scala.inline
-  def webhook_error: webhook_error = "webhook_error".asInstanceOf[webhook_error]
+  @js.native
+  sealed trait webm_sticker extends StObject
+  inline def webm_sticker: webm_sticker = "webm_sticker".asInstanceOf[webm_sticker]
 }
-

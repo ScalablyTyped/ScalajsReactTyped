@@ -1,8 +1,8 @@
 package typingsJapgolly.nightwatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nightwatch.nightwatchStrings.`class name`
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nightwatch.nightwatchStrings.`tag name`
   - typingsJapgolly.nightwatch.nightwatchStrings.xpath
 */
-trait LocateStrategy extends js.Object
-
+trait LocateStrategy extends StObject
 object LocateStrategy {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `class name`: typingsJapgolly.nightwatch.nightwatchStrings.`class name` = this.cast("class name")
-  @scala.inline
-  def `css selector`: typingsJapgolly.nightwatch.nightwatchStrings.`css selector` = this.cast("css selector")
-  @scala.inline
-  def id: typingsJapgolly.nightwatch.nightwatchStrings.id = this.cast("id")
-  @scala.inline
-  def `link text`: typingsJapgolly.nightwatch.nightwatchStrings.`link text` = this.cast("link text")
-  @scala.inline
-  def name: typingsJapgolly.nightwatch.nightwatchStrings.name = this.cast("name")
-  @scala.inline
-  def `partial link text`: typingsJapgolly.nightwatch.nightwatchStrings.`partial link text` = this.cast("partial link text")
-  @scala.inline
-  def `tag name`: typingsJapgolly.nightwatch.nightwatchStrings.`tag name` = this.cast("tag name")
-  @scala.inline
-  def xpath: typingsJapgolly.nightwatch.nightwatchStrings.xpath = this.cast("xpath")
+  
+  inline def `class name`: typingsJapgolly.nightwatch.nightwatchStrings.`class name` = ("class name").asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.`class name`]
+  
+  inline def `css selector`: typingsJapgolly.nightwatch.nightwatchStrings.`css selector` = ("css selector").asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.`css selector`]
+  
+  inline def id: typingsJapgolly.nightwatch.nightwatchStrings.id = "id".asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.id]
+  
+  inline def `link text`: typingsJapgolly.nightwatch.nightwatchStrings.`link text` = ("link text").asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.`link text`]
+  
+  inline def name: typingsJapgolly.nightwatch.nightwatchStrings.name = "name".asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.name]
+  
+  inline def `partial link text`: typingsJapgolly.nightwatch.nightwatchStrings.`partial link text` = ("partial link text").asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.`partial link text`]
+  
+  inline def `tag name`: typingsJapgolly.nightwatch.nightwatchStrings.`tag name` = ("tag name").asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.`tag name`]
+  
+  inline def xpath: typingsJapgolly.nightwatch.nightwatchStrings.xpath = "xpath".asInstanceOf[typingsJapgolly.nightwatch.nightwatchStrings.xpath]
 }
-

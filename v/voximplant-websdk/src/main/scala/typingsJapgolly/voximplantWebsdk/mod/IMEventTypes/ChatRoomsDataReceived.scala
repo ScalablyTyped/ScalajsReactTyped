@@ -2,26 +2,33 @@ package typingsJapgolly.voximplantWebsdk.mod.IMEventTypes
 
 import typingsJapgolly.voximplantWebsdk.mod.ChatRoom
 import typingsJapgolly.voximplantWebsdk.mod.VoxImplantIMEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-		*	Event dispatched when information about chat rooms where user participates received
-		*/
-trait ChatRoomsDataReceived extends VoxImplantIMEvent {
+  *    Event dispatched when information about chat rooms where user participates received
+  */
+trait ChatRoomsDataReceived
+  extends StObject
+     with VoxImplantIMEvent {
+  
   /**
-  			* Rooms list
-  			*/
+    * Rooms list
+    */
   var rooms: js.Array[ChatRoom]
 }
-
 object ChatRoomsDataReceived {
-  @scala.inline
-  def apply(rooms: js.Array[ChatRoom]): ChatRoomsDataReceived = {
-    val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any])
   
+  inline def apply(rooms: js.Array[ChatRoom]): ChatRoomsDataReceived = {
+    val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomsDataReceived]
   }
+  
+  extension [Self <: ChatRoomsDataReceived](x: Self) {
+    
+    inline def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+    
+    inline def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value*))
+  }
 }
-

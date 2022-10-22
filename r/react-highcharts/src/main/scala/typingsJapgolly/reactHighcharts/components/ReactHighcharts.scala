@@ -1,43 +1,36 @@
 package typingsJapgolly.reactHighcharts.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.highcharts.mod.Options
 import typingsJapgolly.reactHighcharts.mod.ReactHighchartsProps
 import typingsJapgolly.reactHighcharts.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactHighcharts {
-  def apply(
-    config: Options,
-    callback: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any => Callback = null,
-    isPureConfig: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactHighchartsProps, default, Unit, ReactHighchartsProps] = {
-    val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
   
-      if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction1((t0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any) => callback(t0).runNow()))
-    if (!js.isUndefined(isPureConfig)) __obj.updateDynamic("isPureConfig")(isPureConfig.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactHighcharts.mod.ReactHighchartsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactHighcharts.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactHighcharts.mod.ReactHighchartsProps])(children: _*)
+  inline def apply(config: Options): Builder = {
+    val __props = js.Dynamic.literal(config = config.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ReactHighchartsProps]))
   }
+  
   @JSImport("react-highcharts", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def callback(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ Any => Callback
+    ): this.type = set("callback", js.Any.fromFunction1((t0: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ Any) => value(t0).runNow()))
+    
+    inline def isPureConfig(value: Boolean): this.type = set("isPureConfig", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ReactHighchartsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

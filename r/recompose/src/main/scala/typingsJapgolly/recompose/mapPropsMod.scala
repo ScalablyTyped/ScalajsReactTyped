@@ -2,14 +2,16 @@ package typingsJapgolly.recompose
 
 import typingsJapgolly.recompose.mod.InferableComponentEnhancerWithProps
 import typingsJapgolly.recompose.mod.mapper
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#mapprops
-@JSImport("recompose/mapProps", JSImport.Namespace)
-@js.native
-object mapPropsMod extends js.Object {
-  def default[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = js.native
+object mapPropsMod {
+  
+  @JSImport("recompose/mapProps", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(propsMapper.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner, TOutter]]
 }
-

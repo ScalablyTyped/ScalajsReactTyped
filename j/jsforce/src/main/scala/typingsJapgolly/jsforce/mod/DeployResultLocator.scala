@@ -1,11 +1,13 @@
 package typingsJapgolly.jsforce.mod
 
+import typingsJapgolly.node.eventsMod.EventEmitterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce", "DeployResultLocator")
 @js.native
-class DeployResultLocator[T] ()
-  extends typingsJapgolly.jsforce.metadataMod.AsyncResultLocator[T]
-
+open class DeployResultLocator[T] ()
+  extends typingsJapgolly.jsforce.apiMetadataMod.DeployResultLocator[T] {
+  def this(options: EventEmitterOptions) = this()
+}

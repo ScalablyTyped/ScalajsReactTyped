@@ -1,79 +1,72 @@
 package typingsJapgolly.reactNativeMultiSlider.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeMultiSlider.AnonBorderRadius
+import typingsJapgolly.reactNativeMultiSlider.anon.BorderRadius
 import typingsJapgolly.reactNativeMultiSlider.mod.MarkerProps
 import typingsJapgolly.reactNativeMultiSlider.mod.MultiSliderProps
 import typingsJapgolly.reactNativeMultiSlider.mod.default
 import typingsJapgolly.reactNativeMultiSlider.reactNativeMultiSliderStrings.horizontal
 import typingsJapgolly.reactNativeMultiSlider.reactNativeMultiSliderStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeMultiSlider {
-  def apply(
-    containerStyle: ViewStyle = null,
-    customMarker: ComponentType[MarkerProps] = null,
-    markerStyle: ViewStyle = null,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    onValuesChange: /* change */ js.Array[Double] => Callback = null,
-    onValuesChangeFinish: /* change */ js.Array[Double] => Callback = null,
-    onValuesChangeStart: js.UndefOr[Callback] = js.undefined,
-    optionsArray: js.Array[Double] = null,
-    pressedMarkerStyle: ViewStyle = null,
-    selectedStyle: ViewStyle = null,
-    sliderLength: Int | Double = null,
-    sliderOrientation: horizontal | vertical = null,
-    step: Int | Double = null,
-    touchDimensions: AnonBorderRadius = null,
-    trackStyle: ViewStyle = null,
-    unselectedStyle: ViewStyle = null,
-    values: js.Array[Double] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MultiSliderProps, default, Unit, MultiSliderProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (customMarker != null) __obj.updateDynamic("customMarker")(customMarker.asInstanceOf[js.Any])
-    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(js.Any.fromFunction1((t0: /* change */ js.Array[scala.Double]) => onValuesChange(t0).runNow()))
-    if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(js.Any.fromFunction1((t0: /* change */ js.Array[scala.Double]) => onValuesChangeFinish(t0).runNow()))
-    onValuesChangeStart.foreach(p => __obj.updateDynamic("onValuesChangeStart")(p.toJsFn))
-    if (optionsArray != null) __obj.updateDynamic("optionsArray")(optionsArray.asInstanceOf[js.Any])
-    if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle.asInstanceOf[js.Any])
-    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle.asInstanceOf[js.Any])
-    if (sliderLength != null) __obj.updateDynamic("sliderLength")(sliderLength.asInstanceOf[js.Any])
-    if (sliderOrientation != null) __obj.updateDynamic("sliderOrientation")(sliderOrientation.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (touchDimensions != null) __obj.updateDynamic("touchDimensions")(touchDimensions.asInstanceOf[js.Any])
-    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle.asInstanceOf[js.Any])
-    if (unselectedStyle != null) __obj.updateDynamic("unselectedStyle")(unselectedStyle.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMultiSlider.mod.MultiSliderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMultiSlider.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMultiSlider.mod.MultiSliderProps])(children: _*)
-  }
   @JSImport("react-native-multi-slider", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def containerStyle(value: ViewStyle): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def customMarker(value: ComponentType[MarkerProps]): this.type = set("customMarker", value.asInstanceOf[js.Any])
+    
+    inline def markerStyle(value: ViewStyle): this.type = set("markerStyle", value.asInstanceOf[js.Any])
+    
+    inline def max(value: Double): this.type = set("max", value.asInstanceOf[js.Any])
+    
+    inline def min(value: Double): this.type = set("min", value.asInstanceOf[js.Any])
+    
+    inline def onValuesChange(value: /* change */ js.Array[Double] => Callback): this.type = set("onValuesChange", js.Any.fromFunction1((t0: /* change */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def onValuesChangeFinish(value: /* change */ js.Array[Double] => Callback): this.type = set("onValuesChangeFinish", js.Any.fromFunction1((t0: /* change */ js.Array[Double]) => value(t0).runNow()))
+    
+    inline def onValuesChangeStart(value: Callback): this.type = set("onValuesChangeStart", value.toJsFn)
+    
+    inline def optionsArray(value: js.Array[Double]): this.type = set("optionsArray", value.asInstanceOf[js.Any])
+    
+    inline def optionsArrayVarargs(value: Double*): this.type = set("optionsArray", js.Array(value*))
+    
+    inline def pressedMarkerStyle(value: ViewStyle): this.type = set("pressedMarkerStyle", value.asInstanceOf[js.Any])
+    
+    inline def selectedStyle(value: ViewStyle): this.type = set("selectedStyle", value.asInstanceOf[js.Any])
+    
+    inline def sliderLength(value: Double): this.type = set("sliderLength", value.asInstanceOf[js.Any])
+    
+    inline def sliderOrientation(value: horizontal | vertical): this.type = set("sliderOrientation", value.asInstanceOf[js.Any])
+    
+    inline def step(value: Double): this.type = set("step", value.asInstanceOf[js.Any])
+    
+    inline def touchDimensions(value: BorderRadius): this.type = set("touchDimensions", value.asInstanceOf[js.Any])
+    
+    inline def trackStyle(value: ViewStyle): this.type = set("trackStyle", value.asInstanceOf[js.Any])
+    
+    inline def unselectedStyle(value: ViewStyle): this.type = set("unselectedStyle", value.asInstanceOf[js.Any])
+    
+    inline def values(value: js.Array[Double]): this.type = set("values", value.asInstanceOf[js.Any])
+    
+    inline def valuesVarargs(value: Double*): this.type = set("values", js.Array(value*))
+  }
+  
+  implicit def make(companion: ReactNativeMultiSlider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MultiSliderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

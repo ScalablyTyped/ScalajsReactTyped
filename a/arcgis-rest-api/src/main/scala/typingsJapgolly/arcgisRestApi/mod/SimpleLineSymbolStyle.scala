@@ -1,8 +1,8 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDash
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSNull
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid
 */
-trait SimpleLineSymbolStyle extends js.Object
-
+trait SimpleLineSymbolStyle extends StObject
 object SimpleLineSymbolStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def esriSLSDash: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = this.cast("esriSLSDash")
-  @scala.inline
-  def esriSLSDashDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = this.cast("esriSLSDashDot")
-  @scala.inline
-  def esriSLSDashDotDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = this.cast("esriSLSDashDotDot")
-  @scala.inline
-  def esriSLSDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = this.cast("esriSLSDot")
-  @scala.inline
-  def esriSLSNull: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = this.cast("esriSLSNull")
-  @scala.inline
-  def esriSLSSolid: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = this.cast("esriSLSSolid")
+  
+  inline def esriSLSDash: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDash = "esriSLSDash".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDash]
+  
+  inline def esriSLSDashDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot = "esriSLSDashDot".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDot]
+  
+  inline def esriSLSDashDotDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot = "esriSLSDashDotDot".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDashDotDot]
+  
+  inline def esriSLSDot: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDot = "esriSLSDot".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSDot]
+  
+  inline def esriSLSNull: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSNull = "esriSLSNull".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSNull]
+  
+  inline def esriSLSSolid: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid = "esriSLSSolid".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLSSolid]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for ismobilejs
 
-Typings are for version 1.0.3
+Typings are for version 1.1.1
 
 ## Library description:
 A simple JS library that detects mobile devices.
@@ -10,10 +10,10 @@ A simple JS library that detects mobile devices.
 | ------------------ | :-------------: |
 | Full name          | ismobilejs |
 | Keywords           | ismobile, device detection, mobile devices, useragent |
-| # releases         | 8 |
-| # dependents       | 86 |
-| # downloads        | 9501770 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 891111.0 |
+| # stars            | 2214.0 |
 
 ## Links
 - [Homepage](https://github.com/kaimallea/isMobile)

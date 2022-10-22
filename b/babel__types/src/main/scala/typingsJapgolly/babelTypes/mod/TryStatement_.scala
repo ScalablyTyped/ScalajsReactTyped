@@ -1,46 +1,46 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.TryStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait TryStatement_
-  extends Statement
-     with BaseNode {
-  var block: js.Any
+  extends StObject
+     with BaseNode
+     with Standardized
+     with Statement {
+  
+  var block: BlockStatement_
+  
   var finalizer: BlockStatement_ | Null
+  
   var handler: CatchClause_ | Null
+  
   @JSName("type")
   var type_TryStatement_ : TryStatement
 }
-
 object TryStatement_ {
-  @scala.inline
-  def apply(
-    block: js.Any,
-    `type`: TryStatement,
-    end: Int | Double = null,
-    finalizer: BlockStatement_ = null,
-    handler: CatchClause_ = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null
-  ): TryStatement_ = {
-    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (finalizer != null) __obj.updateDynamic("finalizer")(finalizer.asInstanceOf[js.Any])
-    if (handler != null) __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+  
+  inline def apply(block: BlockStatement_): TryStatement_ = {
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], end = null, finalizer = null, handler = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TryStatement")
     __obj.asInstanceOf[TryStatement_]
   }
+  
+  extension [Self <: TryStatement_](x: Self) {
+    
+    inline def setBlock(value: BlockStatement_): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setFinalizer(value: BlockStatement_): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
+    
+    inline def setFinalizerNull: Self = StObject.set(x, "finalizer", null)
+    
+    inline def setHandler(value: CatchClause_): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    inline def setHandlerNull: Self = StObject.set(x, "handler", null)
+    
+    inline def setType(value: TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

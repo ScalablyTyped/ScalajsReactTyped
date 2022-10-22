@@ -10,10 +10,10 @@ pipe streams together and close all of them if one of them closes
 | ------------------ | :-------------: |
 | Full name          | pump |
 | Keywords           | streams, pipe, destroy, callback |
-| # releases         | 3 |
-| # dependents       | 971 |
-| # downloads        | 744418740 |
-| # stars            | 69 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6338490733333334E8 |
+| # stars            | 875.0 |
 
 ## Links
 - [Homepage](https://github.com/mafintosh/pump#readme)

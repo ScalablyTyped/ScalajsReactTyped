@@ -2,32 +2,39 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.kendo.spreadsheet.Range
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetChangingEvent extends SpreadsheetEvent {
+trait SpreadsheetChangingEvent
+  extends StObject
+     with SpreadsheetEvent {
+  
   var changeType: js.UndefOr[String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var range: js.UndefOr[Range] = js.undefined
 }
-
 object SpreadsheetChangingEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Spreadsheet,
-    changeType: String = null,
-    data: js.Any = null,
-    range: Range = null
-  ): SpreadsheetChangingEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (changeType != null) __obj.updateDynamic("changeType")(changeType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Spreadsheet): SpreadsheetChangingEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetChangingEvent]
   }
+  
+  extension [Self <: SpreadsheetChangingEvent](x: Self) {
+    
+    inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    
+    inline def setChangeTypeUndefined: Self = StObject.set(x, "changeType", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+  }
 }
-

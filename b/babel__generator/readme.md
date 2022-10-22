@@ -3,23 +3,6 @@
 
 Typings are for version 7.6
 
-## Library description:
-Turns an AST into code.
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @babel/generator |
-| Keywords           | - |
-| # releases         | 49 |
-| # dependents       | 466 |
-| # downloads        | 485969241 |
-| # stars            | 2 |
-
-## Links
-- [Homepage](https://babeljs.io/)
-- [Bugs](https://github.com/babel/babel/issues)
-- [Npm](https://www.npmjs.com/package/%40babel%2Fgenerator)
-    
 
 
 ## Note

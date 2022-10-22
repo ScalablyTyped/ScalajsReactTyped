@@ -1,15 +1,18 @@
 package typingsJapgolly.blueprintjsTable.mod
 
-import org.scalajs.dom.raw.Element
-import org.scalajs.dom.raw.MouseEvent
-import org.scalajs.dom.raw.TextMetrics
+import org.scalajs.dom.Element
+import org.scalajs.dom.MouseEvent
+import org.scalajs.dom.TextMetrics
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@blueprintjs/table", "Utils")
-@js.native
-object Utils extends js.Object {
+object Utils {
+  
+  @JSImport("@blueprintjs/table", "Utils")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Takes an array of numbers, returns an array of numbers of the same length in which each
     * value is the sum of current and previous values in the input array.
@@ -17,7 +20,8 @@ object Utils extends js.Object {
     * Example input:  [10, 20, 50]
     *         output: [10, 30, 80]
     */
-  def accumulate(numbers: js.Array[Double]): js.Array[Double] = js.native
+  inline def accumulate(numbers: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("accumulate")(numbers.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  
   /**
     * Returns a copy of the array that will have a length of the supplied parameter.
     * If the array is too long, it will be truncated. If it is too short, it will be
@@ -26,8 +30,11 @@ object Utils extends js.Object {
     * @param array - the `Array` to copy and adjust
     * @param length - the target length of the array
     * @param fillValue - the value to add to the array if it is too short
+    *
+    * @deprecated this function is no longer used in the table component, so it will be removed in a future major version
     */
-  def arrayOfLength[T](array: js.Array[T], length: Double, fillValue: T): js.Array[T] = js.native
+  inline def arrayOfLength[T_1](array: js.Array[T_1], length: Double, fillValue: T_1): js.Array[T_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayOfLength")(array.asInstanceOf[js.Any], length.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_1]]
+  
   /**
     * Takes in one full array of values and one sparse array of the same
     * length and type. Returns a copy of the `defaults` array, where each
@@ -37,7 +44,8 @@ object Utils extends js.Object {
     * @param defaults - the full array of default values
     * @param sparseOverrides - the sparse array of override values
     */
-  def assignSparseValues[T](defaults: js.Array[T], sparseOverrides: js.Array[T]): js.Array[T] = js.native
+  inline def assignSparseValues[T_2](defaults: js.Array[T_2], sparseOverrides: js.Array[js.UndefOr[T_2 | Null]]): js.Array[T_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("assignSparseValues")(defaults.asInstanceOf[js.Any], sparseOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Array[T_2]]
+  
   /**
     * Performs the binary search algorithm to find the index of the `value`
     * parameter in a sorted list of numbers. If `value` is not in the list, the
@@ -56,7 +64,8 @@ object Utils extends js.Object {
     * @param high - the length of the sorted list of numbers
     * @param lookup - returns the number from the list at the supplied index
     */
-  def binarySearch(value: Double, high: Double, lookup: js.Function1[/* index */ Double, Double]): Double = js.native
+  inline def binarySearch(value: Double, high: Double, lookup: js.Function1[/* index */ Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("binarySearch")(value.asInstanceOf[js.Any], high.asInstanceOf[js.Any], lookup.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Given a number, returns a value that is clamped within a
     * minimum/maximum bounded range. The minimum and maximum are optional. If
@@ -64,17 +73,30 @@ object Utils extends js.Object {
     *
     * Assumes max >= min.
     */
-  def clamp(value: Double): Double = js.native
-  def clamp(value: Double, min: Double): Double = js.native
-  def clamp(value: Double, min: Double, max: Double): Double = js.native
-  def getApproxCellHeight(
+  inline def clamp(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def clamp(value: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def clamp(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def clamp(value: Double, min: Unit, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /**
+    * Shallow comparison of potentially sparse arrays.
+    *
+    * @returns true if the array values are equal
+    */
+  inline def compareSparseArrays(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")().asInstanceOf[Boolean]
+  inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def compareSparseArrays(a: js.Array[js.UndefOr[Double | Null]], b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def compareSparseArrays(a: Unit, b: js.Array[js.UndefOr[Double | Null]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareSparseArrays")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def getApproxCellHeight(
     cellText: String,
     columnWidth: Double,
     approxCharWidth: Double,
     approxLineHeight: Double,
     horizontalPadding: Double,
     numBufferLines: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getApproxCellHeight")(cellText.asInstanceOf[js.Any], columnWidth.asInstanceOf[js.Any], approxCharWidth.asInstanceOf[js.Any], approxLineHeight.asInstanceOf[js.Any], horizontalPadding.asInstanceOf[js.Any], numBufferLines.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
     * at the absolute index in the original ordering but emit the new index in the reordered list.
@@ -106,17 +128,20 @@ object Utils extends js.Object {
     *
     * The return value will then be 2, the left-most index of the columns in the new ordering.
     */
-  def guideIndexToReorderedIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+  inline def guideIndexToReorderedIndex(oldIndex: Double, newIndex: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("guideIndexToReorderedIndex")(oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Returns true if the mouse event was triggered by the left mouse button.
     */
-  def isLeftClick(event: MouseEvent): Boolean = js.native
+  inline def isLeftClick(event: MouseEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeftClick")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /**
     * Measures the bounds of supplied element's textContent.
     * We use the computed font from the supplied element and a non-DOM canvas
     * context to measure the text.
     */
-  def measureElementTextContent(element: Element): TextMetrics = js.native
+  inline def measureElementTextContent(element: Element): TextMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("measureElementTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[TextMetrics]
+  
   /**
     * Returns a copy of the provided array with the `length` contiguous elements starting at the
     * `from` index reordered to start at the `to` index.
@@ -124,8 +149,9 @@ object Utils extends js.Object {
     * For example, given the array [A,B,C,D,E,F], reordering the 3 contiguous elements starting at
     * index 1 (B, C, and D) to start at index 2 would yield [A,E,B,C,D,F].
     */
-  def reorderArray[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = js.native
-  def reorderArray[T](array: js.Array[T], from: Double, to: Double, length: Double): js.Array[T] = js.native
+  inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
+  inline def reorderArray[T_3](array: js.Array[T_3], from: Double, to: Double, length: Double): js.UndefOr[js.Array[T_3]] = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderArray")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[js.Array[T_3]]]
+  
   /**
     * When reordering a contiguous block of rows or columns to a new index, we show a preview guide
     * at the absolute index in the original ordering but emit the new index in the reordered list.
@@ -139,12 +165,14 @@ object Utils extends js.Object {
     * The return value will then be 5, the index on whose left boundary the guide should appear in
     * the original ordering.
     */
-  def reorderedIndexToGuideIndex(oldIndex: Double, newIndex: Double, length: Double): Double = js.native
+  inline def reorderedIndexToGuideIndex(oldIndex: Double, newIndex: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reorderedIndexToGuideIndex")(oldIndex.asInstanceOf[js.Any], newIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   /**
     * Invokes the callback `n` times, collecting the results in an array, which
     * is the return value. Similar to _.times
     */
-  def times[T](n: Double, callback: js.Function1[/* i */ Double, T]): js.Array[T] = js.native
+  inline def times[T](n: Double, callback: js.Function1[/* i */ Double, T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("times")(n.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
   /**
     * Returns traditional spreadsheet-style column names
     * e.g. (A, B, ..., Z, AA, AB, ..., ZZ, AAA, AAB, ...).
@@ -152,11 +180,11 @@ object Utils extends js.Object {
     * Note that this isn't technically mathematically equivalent to base 26 since
     * there is no zero element.
     */
-  def toBase26Alpha(num: Double): String = js.native
+  inline def toBase26Alpha(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBase26Alpha")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Returns traditional spreadsheet-style cell names
     * e.g. (A1, B2, ..., Z44, AA1) with rows 1-indexed.
     */
-  def toBase26CellName(rowIndex: Double, columnIndex: Double): String = js.native
+  inline def toBase26CellName(rowIndex: Double, columnIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase26CellName")(rowIndex.asInstanceOf[js.Any], columnIndex.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

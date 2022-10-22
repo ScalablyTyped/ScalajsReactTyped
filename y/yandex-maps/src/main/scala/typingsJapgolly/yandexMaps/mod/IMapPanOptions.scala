@@ -1,35 +1,38 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapPanOptions extends IMapPositionOptions {
+trait IMapPanOptions
+  extends StObject
+     with IMapPositionOptions {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var flying: js.UndefOr[Boolean] = js.undefined
+  
   var safe: js.UndefOr[Boolean] = js.undefined
 }
-
 object IMapPanOptions {
-  @scala.inline
-  def apply(
-    checkZoomRange: js.UndefOr[Boolean] = js.undefined,
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    flying: js.UndefOr[Boolean] = js.undefined,
-    safe: js.UndefOr[Boolean] = js.undefined,
-    timingFunction: String = null,
-    useMapMargin: js.UndefOr[Boolean] = js.undefined
-  ): IMapPanOptions = {
+  
+  inline def apply(): IMapPanOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(flying)) __obj.updateDynamic("flying")(flying.asInstanceOf[js.Any])
-    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe.asInstanceOf[js.Any])
-    if (timingFunction != null) __obj.updateDynamic("timingFunction")(timingFunction.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapPanOptions]
   }
+  
+  extension [Self <: IMapPanOptions](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setFlying(value: Boolean): Self = StObject.set(x, "flying", value.asInstanceOf[js.Any])
+    
+    inline def setFlyingUndefined: Self = StObject.set(x, "flying", js.undefined)
+    
+    inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+    
+    inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+  }
 }
-

@@ -1,23 +1,39 @@
 package typingsJapgolly.devexpressWeb
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the selected table's preferred column width.
   */
-@JSGlobal("ChangeTableColumnPreferredWidthCommand")
-@js.native
-class ChangeTableColumnPreferredWidthCommand () extends CommandBase {
+trait ChangeTableColumnPreferredWidthCommand
+  extends StObject
+     with CommandBase {
+  
   /**
     * Executes the ChangeTableColumnPreferredWidthCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param preferredWidth A TableWidthUnit object specifying preferred width of the selected table columns.
     */
-  def execute(preferredWidth: TableWidthUnit): Boolean = js.native
+  def execute(preferredWidth: TableWidthUnit): Boolean
+  
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[TableWidthUnit] = js.native
+  def getState(): CommandState[TableWidthUnit]
 }
-
+object ChangeTableColumnPreferredWidthCommand {
+  
+  inline def apply(execute: TableWidthUnit => Boolean, getState: CallbackTo[CommandState[TableWidthUnit]]): ChangeTableColumnPreferredWidthCommand = {
+    val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = getState.toJsFn)
+    __obj.asInstanceOf[ChangeTableColumnPreferredWidthCommand]
+  }
+  
+  extension [Self <: ChangeTableColumnPreferredWidthCommand](x: Self) {
+    
+    inline def setExecute(value: TableWidthUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    
+    inline def setGetState(value: CallbackTo[CommandState[TableWidthUnit]]): Self = StObject.set(x, "getState", value.toJsFn)
+  }
+}

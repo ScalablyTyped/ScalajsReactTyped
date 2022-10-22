@@ -1,169 +1,87 @@
 package typingsJapgolly.fsExtra.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.fsExtra.anon.`2`
+import typingsJapgolly.fsExtra.anon.`3`
 import typingsJapgolly.fsExtra.fsExtraStrings.buffer
-import typingsJapgolly.node.Anon2
-import typingsJapgolly.node.Anon3
-import typingsJapgolly.node.AnonEncoding
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.node.BufferEncoding
 import typingsJapgolly.node.NodeJS.ErrnoException
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.node.bufferMod.global.BufferEncoding
+import typingsJapgolly.node.fsMod.BufferEncodingOption
+import typingsJapgolly.node.fsMod.EncodingOption
 import typingsJapgolly.node.fsMod.PathLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-@JSImport("fs-extra", "realpath")
-@js.native
-object realpath extends js.Object {
-  def apply(path: String): js.Promise[String] = js.native
-  def apply(path: String, cache: StringDictionary[String]): js.Promise[String] = js.native
-  def apply(
-    path: String,
+object realpath {
+  
+  inline def apply(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(path: PathLike, cache: StringDictionary[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def apply(
+    path: PathLike,
     cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  def apply(path: String, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
-  def apply(path: Buffer): js.Promise[String] = js.native
-  def apply(path: Buffer, cache: StringDictionary[String]): js.Promise[String] = js.native
-  def apply(
-    path: Buffer,
-    cache: StringDictionary[String],
-    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]
-  ): Unit = js.native
-  def apply(path: Buffer, callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, _]): Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    */
-  def apply(
+    callback: js.Function2[/* err */ ErrnoException, /* resolvedPath */ String, Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], cache.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  def apply(
+    callback: js.Function2[(/* err */ ErrnoException) | Null, /* resolvedPath */ String, Any | Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
-    options: String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
-    options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
-    options: buffer,
+    options: BufferEncodingOption,
     callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def apply(
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(
     path: PathLike,
-    options: Anon2,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def apply(
-    path: PathLike,
-    options: Anon3,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  def apply(
-    path: PathLike,
-    options: AnonEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  def apply(
-    path: PathLike,
-    options: BufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: EncodingOption,
     callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: String,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: Null,
-    callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: Anon2,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: Anon3,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: AnonEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  def native(
-    path: PathLike,
-    options: BufferEncoding,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String, Unit]
-  ): Unit = js.native
-  @JSName("native")
-  def native_buffer(
-    path: PathLike,
-    options: buffer,
-    callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
-  ): Unit = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  @JSName("__promisify__")
-  def promisify(path: PathLike): js.Promise[String] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: String): js.Promise[String | Buffer] = js.native
-  /**
-    * Asynchronous realpath(3) - return the canonicalized absolute pathname.
-    * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-    * @param options The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.
-    */
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: Anon2): js.Promise[Buffer] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: Anon3): js.Promise[String | Buffer] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: AnonEncoding): js.Promise[String] = js.native
-  @JSName("__promisify__")
-  def promisify(path: PathLike, options: BufferEncoding): js.Promise[String] = js.native
-  @JSName("__promisify__")
-  def promisify_buffer(path: PathLike, options: buffer): js.Promise[Buffer] = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("fs-extra", "realpath")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* Inlined {None (path : node.fs.PathLike, options : {  encoding :'buffer'} | 'buffer'): std.Promise<node.buffer.<global>.Buffer>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | node.buffer.<global>.BufferEncoding | string | undefined | null): std.Promise<string>, None (path : node.fs.PathLike, options : {  encoding :node.buffer.<global>.BufferEncoding | string | null} | string | undefined | null): std.Promise<string | node.buffer.<global>.Buffer>, None (path : node.fs.PathLike): std.Promise<string>} & {None (path : node.fs.PathLike, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string | node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.BufferEncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : node.buffer.<global>.Buffer): void): void, None (path : node.fs.PathLike, options : node.fs.EncodingOption, callback : (err : node.NodeJS.ErrnoException | null, resolvedPath : string): void): void} */
+  object native {
+    
+    inline def apply(path: PathLike): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+    inline def apply(path: PathLike, callback: js.Function2[ErrnoException | Null, /* resolvedPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def apply(path: PathLike, options: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def apply(path: PathLike, options: `2`): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+    inline def apply(path: PathLike, options: `3`): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def apply(path: PathLike, options: buffer): js.Promise[Buffer] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer]]
+    inline def apply(path: PathLike, options: BufferEncoding): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    inline def apply(
+      path: PathLike,
+      options: BufferEncodingOption,
+      callback: js.Function2[ErrnoException | Null, /* resolvedPath */ Buffer, Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    /**
+      * Asynchronous [`realpath(3)`](http://man7.org/linux/man-pages/man3/realpath.3.html).
+      *
+      * The `callback` gets two arguments `(err, resolvedPath)`.
+      *
+      * Only paths that can be converted to UTF8 strings are supported.
+      *
+      * The optional `options` argument can be a string specifying an encoding, or an
+      * object with an `encoding` property specifying the character encoding to use for
+      * the path passed to the callback. If the `encoding` is set to `'buffer'`,
+      * the path returned will be passed as a `Buffer` object.
+      *
+      * On Linux, when Node.js is linked against musl libc, the procfs file system must
+      * be mounted on `/proc` in order for this function to work. Glibc does not have
+      * this restriction.
+      * @since v9.2.0
+      */
+    inline def apply(
+      path: PathLike,
+      options: EncodingOption,
+      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    ): Unit = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @JSImport("fs-extra", "realpath.native")
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

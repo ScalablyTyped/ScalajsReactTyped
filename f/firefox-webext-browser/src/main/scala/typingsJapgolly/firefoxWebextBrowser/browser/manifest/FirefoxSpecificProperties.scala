@@ -1,30 +1,42 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FirefoxSpecificProperties extends js.Object {
+trait FirefoxSpecificProperties extends StObject {
+  
   var id: js.UndefOr[ExtensionID] = js.undefined
+  
   var strict_max_version: js.UndefOr[String] = js.undefined
+  
   var strict_min_version: js.UndefOr[String] = js.undefined
+  
   var update_url: js.UndefOr[String] = js.undefined
 }
-
 object FirefoxSpecificProperties {
-  @scala.inline
-  def apply(
-    id: ExtensionID = null,
-    strict_max_version: String = null,
-    strict_min_version: String = null,
-    update_url: String = null
-  ): FirefoxSpecificProperties = {
+  
+  inline def apply(): FirefoxSpecificProperties = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (strict_max_version != null) __obj.updateDynamic("strict_max_version")(strict_max_version.asInstanceOf[js.Any])
-    if (strict_min_version != null) __obj.updateDynamic("strict_min_version")(strict_min_version.asInstanceOf[js.Any])
-    if (update_url != null) __obj.updateDynamic("update_url")(update_url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirefoxSpecificProperties]
   }
+  
+  extension [Self <: FirefoxSpecificProperties](x: Self) {
+    
+    inline def setId(value: ExtensionID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setStrict_max_version(value: String): Self = StObject.set(x, "strict_max_version", value.asInstanceOf[js.Any])
+    
+    inline def setStrict_max_versionUndefined: Self = StObject.set(x, "strict_max_version", js.undefined)
+    
+    inline def setStrict_min_version(value: String): Self = StObject.set(x, "strict_min_version", value.asInstanceOf[js.Any])
+    
+    inline def setStrict_min_versionUndefined: Self = StObject.set(x, "strict_min_version", js.undefined)
+    
+    inline def setUpdate_url(value: String): Self = StObject.set(x, "update_url", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate_urlUndefined: Self = StObject.set(x, "update_url", js.undefined)
+  }
 }
-

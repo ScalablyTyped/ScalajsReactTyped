@@ -1,27 +1,36 @@
 package typingsJapgolly.dropboxjs.Dropbox
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientFileWriteOptions extends js.Object {
+trait ClientFileWriteOptions extends StObject {
+  
   var lastVersionTag: js.UndefOr[String] = js.undefined
+  
   var noOverwrite: js.UndefOr[Boolean] = js.undefined
+  
   var parentRev: js.UndefOr[String] = js.undefined
 }
-
 object ClientFileWriteOptions {
-  @scala.inline
-  def apply(
-    lastVersionTag: String = null,
-    noOverwrite: js.UndefOr[Boolean] = js.undefined,
-    parentRev: String = null
-  ): ClientFileWriteOptions = {
+  
+  inline def apply(): ClientFileWriteOptions = {
     val __obj = js.Dynamic.literal()
-    if (lastVersionTag != null) __obj.updateDynamic("lastVersionTag")(lastVersionTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(noOverwrite)) __obj.updateDynamic("noOverwrite")(noOverwrite.asInstanceOf[js.Any])
-    if (parentRev != null) __obj.updateDynamic("parentRev")(parentRev.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientFileWriteOptions]
   }
+  
+  extension [Self <: ClientFileWriteOptions](x: Self) {
+    
+    inline def setLastVersionTag(value: String): Self = StObject.set(x, "lastVersionTag", value.asInstanceOf[js.Any])
+    
+    inline def setLastVersionTagUndefined: Self = StObject.set(x, "lastVersionTag", js.undefined)
+    
+    inline def setNoOverwrite(value: Boolean): Self = StObject.set(x, "noOverwrite", value.asInstanceOf[js.Any])
+    
+    inline def setNoOverwriteUndefined: Self = StObject.set(x, "noOverwrite", js.undefined)
+    
+    inline def setParentRev(value: String): Self = StObject.set(x, "parentRev", value.asInstanceOf[js.Any])
+    
+    inline def setParentRevUndefined: Self = StObject.set(x, "parentRev", js.undefined)
+  }
 }
-

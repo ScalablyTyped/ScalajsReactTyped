@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-pagination
 
-Typings are for version 2.0.1
+Typings are for version 3.1.17
 
 ## Library description:
 pagination ui component for react
@@ -9,14 +9,14 @@ pagination ui component for react
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rc-pagination |
-| Keywords           | react, react-component, react-pagination, pagination |
-| # releases         | 39 |
-| # dependents       | 233 |
-| # downloads        | 11158758 |
-| # stars            | 4 |
+| Keywords           | react, react-component, react-pagination, pagination, antd, pager |
+| # releases         | 27 |
+| # dependents       | 0.0 |
+| # downloads        | 3476431.6666666665 |
+| # stars            | 581.0 |
 
 ## Links
-- [Homepage](http://github.com/react-component/pagination)
+- [Homepage](https://react-component.github.io/pagination)
 - [Bugs](http://github.com/react-component/pagination/issues)
 - [Repository](https://github.com/react-component/pagination)
 - [Npm](https://www.npmjs.com/package/rc-pagination)

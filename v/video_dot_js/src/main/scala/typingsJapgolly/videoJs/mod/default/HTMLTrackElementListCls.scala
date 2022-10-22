@@ -1,11 +1,13 @@
 package typingsJapgolly.videoJs.mod.default
 
-import org.scalajs.dom.raw.HTMLTrackElement
+import org.scalajs.dom.HTMLTrackElement
+import typingsJapgolly.videoJs.mod.videojs.HTMLTrackElementList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "HTMLTrackElementList")
+/* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+@JSImport("video.js", "default.HTMLTrackElementList")
 @js.native
 /**
   * Create an instance of this class.
@@ -13,13 +15,14 @@ import scala.scalajs.js.annotation._
   * @param [tracks=[]]
   *        A list of `HtmlTrackElement` to instantiate the list with.
   */
-class HTMLTrackElementListCls ()
-  extends typingsJapgolly.videoJs.mod.videojs.HTMLTrackElementList {
+open class HTMLTrackElementListCls ()
+  extends StObject
+     with HTMLTrackElementList {
   def this(tracks: js.Array[HTMLTrackElement]) = this()
+  
   /**
     * The current number of `Track`s in the this Trackist.
     */
   /* CompleteClass */
-  override var length: Double = js.native
+  var length: Double = js.native
 }
-

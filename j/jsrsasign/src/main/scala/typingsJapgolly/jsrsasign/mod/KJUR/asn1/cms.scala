@@ -1,23 +1,24 @@
 package typingsJapgolly.jsrsasign.mod.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.AnonArray
-import typingsJapgolly.jsrsasign.AnonCertString
-import typingsJapgolly.jsrsasign.AnonCerts
-import typingsJapgolly.jsrsasign.AnonCms
-import typingsJapgolly.jsrsasign.AnonHex
-import typingsJapgolly.jsrsasign.AnonIsValid
-import typingsJapgolly.jsrsasign.AnonIssuer
-import typingsJapgolly.jsrsasign.AnonName
-import typingsJapgolly.jsrsasign.AnonOidString
-import typingsJapgolly.jsrsasign.AnonSorted
+import typingsJapgolly.jsrsasign.anon.Array
+import typingsJapgolly.jsrsasign.anon.CertString
+import typingsJapgolly.jsrsasign.anon.Certs
+import typingsJapgolly.jsrsasign.anon.Cms
+import typingsJapgolly.jsrsasign.anon.Hex
+import typingsJapgolly.jsrsasign.anon.IsValid
+import typingsJapgolly.jsrsasign.anon.Issuer
+import typingsJapgolly.jsrsasign.anon.Name
+import typingsJapgolly.jsrsasign.anon.OidString
+import typingsJapgolly.jsrsasign.anon.Sorted
+import typingsJapgolly.jsrsasign.anon.Tlv
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1ObjectParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ArrayParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.TypeParam
 import typingsJapgolly.jsrsasign.jsrsasignStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for Cryptographic Message Syntax(CMS)
@@ -48,9 +49,8 @@ import scala.scalajs.js.annotation._
   * - `KJUR.asn1.cms.SigningCertificate`
   * - `KJUR.asn1.cms.SigningCertificateV2`
   */
-@JSImport("jsrsasign", "KJUR.asn1.cms")
-@js.native
-object cms extends js.Object {
+object cms {
+  
   /**
     * Attribute class for base of CMS attribute
     * @param params associative array of parameters
@@ -63,9 +63,60 @@ object cms extends js.Object {
     * AttributeSetValue ::= SET OF ANY
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.Attribute")
   @js.native
-  class Attribute ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+  open class Attribute ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+  }
   
   /**
     * class for Attributes ASN.1 structure for CMS
@@ -86,10 +137,129 @@ object cms extends js.Object {
     * o.add(new KJUR.asn1.cms.SigningTime()); // add SigningTime attribute
     * hex = o.getEncodedHex();                // get hex encoded ASN.1 data
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.AttributeList")
   @js.native
-  class AttributeList ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.AttributeList {
-    def this(params: AnonSorted) = this()
+  open class AttributeList ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.AttributeList {
+    def this(params: Sorted) = this()
+    
+    /* CompleteClass */
+    override def add(item: typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute): Unit = js.native
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /* CompleteClass */
+    override def length(): Double = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+  }
+  
+  object CMSUtil {
+    
+    @JSImport("jsrsasign", "KJUR.asn1.cms.CMSUtil")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * generate SignedData object specified by JSON parameters
+      * @param param JSON parameter to generate CMS SignedData
+      * @return object just generated
+      * @description
+      * This method provides more easy way to genereate
+      * CMS SignedData ASN.1 structure by JSON data.
+      * @example
+      * var sd = KJUR.asn1.cms.CMSUtil.newSignedData({
+      *   content: {str: "jsrsasign"},
+      *   certs: [certPEM],
+      *   signerInfos: [{
+      *     hashAlg: 'sha256',
+      *     sAttr: {
+      *       SigningTime: {}
+      *       SigningCertificateV2: {array: [certPEM]},
+      *     },
+      *     signerCert: certPEM,
+      *     sigAlg: 'SHA256withRSA',
+      *     signerPrvKey: prvPEM
+      *   }]
+      * });
+      */
+    inline def SignedData(): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")().asInstanceOf[typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
+    inline def SignedData(param: Certs): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("SignedData")(param.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData]
+    
+    /**
+      * verify SignedData specified by JSON parameters
+      *
+      * @param param JSON parameter to verify CMS SignedData
+      * @return JSON data as the result of validation
+      * @description
+      * This method provides validation for CMS SignedData.
+      * Following parameters can be applied:
+      *
+      * - cms - hexadecimal data of DER CMS SignedData (aka. PKCS#7 or p7s)
+      *     to verify (OPTION)
+      *
+      * @example
+      * KJUR.asn1.cms.CMSUtil.verifySignedData({ cms: "3082058a..." })
+      * →
+      * {
+      *   isValid: true,
+      *   parse: ... // parsed data
+      *   signerInfos: [
+      *     {
+      *     }
+      *   ]
+      * }
+      */
+    inline def verifySignedData(): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")().asInstanceOf[IsValid]
+    inline def verifySignedData(param: Cms): IsValid = ^.asInstanceOf[js.Dynamic].applyDynamic("verifySignedData")(param.asInstanceOf[js.Any]).asInstanceOf[IsValid]
   }
   
   /**
@@ -108,11 +278,64 @@ object cms extends js.Object {
     * seq = new KJUR.asn1.DERSequence({array: a});
     * o = new KJUR.asn1.cms.ContentInfo({type: 'data', obj: seq});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.ContentInfo")
   @js.native
-  class ContentInfo ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentInfo {
+  open class ContentInfo ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentInfo {
     def this(params: ASN1ObjectParam) = this()
     def this(params: TypeParam) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /* CompleteClass */
+    override def setContentType(params: String): Unit = js.native
   }
   
   /**
@@ -130,11 +353,61 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.ContentType({name: 'data'});
     * o = new KJUR.asn1.cms.ContentType({oid: '1.2.840.113549.1.9.16.1.4'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.ContentType")
   @js.native
-  class ContentType ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentType {
-    def this(params: AnonName) = this()
-    def this(params: AnonOidString) = this()
+  open class ContentType ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
+    def this(params: Name) = this()
+    def this(params: OidString) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -156,10 +429,60 @@ object cms extends js.Object {
     * // for detached contents (i.e. data not concluded in eContent)
     * o.isDetached = true;               // false as default
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.EncapsulatedContentInfo")
   @js.native
-  class EncapsulatedContentInfo ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo {
+  open class EncapsulatedContentInfo ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo {
     def this(params: string) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -180,12 +503,65 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber({cert: certPEM});
     * o = new KJUR.asn1.cms.IssuerAndSerialNumber(certPEM); // since 1.0.3
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.IssuerAndSerialNumber")
   @js.native
-  class IssuerAndSerialNumber ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.IssuerAndSerialNumber {
+  open class IssuerAndSerialNumber ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.IssuerAndSerialNumber {
     def this(params: String) = this()
-    def this(params: AnonCertString) = this()
-    def this(params: AnonIssuer) = this()
+    def this(params: CertString) = this()
+    def this(params: Issuer) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /* CompleteClass */
+    override def setByCertPEM(certPEM: String): Unit = js.native
   }
   
   /**
@@ -202,10 +578,60 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.MessageDigest({hex: 'a1a2a3a4...'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.MessageDigest")
   @js.native
-  class MessageDigest ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.MessageDigest {
-    def this(params: AnonHex) = this()
+  open class MessageDigest ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
+    def this(params: Hex) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -238,9 +664,75 @@ object cms extends js.Object {
     * sd.signerInfoList[0].sign(prvP8PEM, "SHA256withRSA");
     * hex = sd.getContentInfoEncodedHex();
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SignedData")
   @js.native
-  class SignedData ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
+  open class SignedData ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData {
+    
+    /* CompleteClass */
+    override def addCertificatesByPEM(certPEM: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def getContentInfo(): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.ContentInfo = js.native
+    
+    /* CompleteClass */
+    override def getContentInfoEncodedHex(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /* CompleteClass */
+    override def getPEM(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /* CompleteClass */
+    var signerInfoList: js.Array[typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo] = js.native
+  }
   
   /**
     * class for SignerInfo ASN.1 structure of CMS SignedData
@@ -264,10 +756,60 @@ object cms extends js.Object {
     * o.dSignedAttrs.add(new KJUR.asn1.cms.SigningTime());
     * o.sign(privteKeyParam, "SHA1withRSA");
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SignerInfo")
   @js.native
-  class SignerInfo ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo {
+  open class SignerInfo ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignerInfo {
     def this(params: String) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -292,10 +834,63 @@ object cms extends js.Object {
     * @example
     * o = new KJUR.asn1.cms.SigningCertificate({array: [certPEM]});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningCertificate")
   @js.native
-  class SigningCertificate ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificate {
+  open class SigningCertificate ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificate {
     def this(params: ArrayParam[String]) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /* CompleteClass */
+    override def setCerts(listPEM: js.Array[String]): Unit = js.native
   }
   
   /**
@@ -327,11 +922,64 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningCertificateV2({array: [certPEM],
     *                                             hashAlg: 'sha512'});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningCertificateV2")
   @js.native
-  class SigningCertificateV2 ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2 {
-    def this(params: AnonArray) = this()
+  open class SigningCertificateV2 ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningCertificateV2 {
+    def this(params: Array) = this()
     def this(params: ArrayParam[String]) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /* CompleteClass */
+    override def setCerts(listPEM: js.Array[String], hashAlg: String): Unit = js.native
   }
   
   /**
@@ -354,67 +1002,60 @@ object cms extends js.Object {
     * o = new KJUR.asn1.cms.SigningTime({str: '20140517093800Z'}); // specified GeneralizedTime
     * o = new KJUR.asn1.cms.SigningTime({str: '140517093800Z'}); // specified UTCTime
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cms.SigningTime")
   @js.native
-  class SigningTime ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SigningTime {
+  open class SigningTime ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute {
     def this(params: StringParam) = this()
     def this(params: TypeParam) = this()
-  }
-  
-  @js.native
-  object CMSUtil extends js.Object {
+    
     /**
-      * generate SignedData object specified by JSON parameters
-      * @param param JSON parameter to generate CMS SignedData
-      * @return object just generated
-      * @description
-      * This method provides more easy way to genereate
-      * CMS SignedData ASN.1 structure by JSON data.
-      * @example
-      * var sd = KJUR.asn1.cms.CMSUtil.newSignedData({
-      *   content: {str: "jsrsasign"},
-      *   certs: [certPEM],
-      *   signerInfos: [{
-      *     hashAlg: 'sha256',
-      *     sAttr: {
-      *       SigningTime: {}
-      *       SigningCertificateV2: {array: [certPEM]},
-      *     },
-      *     signerCert: certPEM,
-      *     sigAlg: 'SHA256withRSA',
-      *     signerPrvKey: prvPEM
-      *   }]
-      * });
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
       */
-    def SignedData(): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
-    def SignedData(param: AnonCerts): typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData = js.native
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
     /**
-      * verify SignedData specified by JSON parameters
-      *
-      * @param param JSON parameter to verify CMS SignedData
-      * @return JSON data as the result of validation
-      * @description
-      * This method provides validation for CMS SignedData.
-      * Following parameters can be applied:
-      *
-      * - cms - hexadecimal data of DER CMS SignedData (aka. PKCS#7 or p7s)
-      *     to verify (OPTION)
-      *
-      * @example
-      * KJUR.asn1.cms.CMSUtil.verifySignedData({ cms: "3082058a..." })
-      * →
-      * {
-      *   isValid: true,
-      *   parse: ... // parsed data
-      *   signerInfos: [
-      *     {
-      *     }
-      *   ]
-      * }
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
       */
-    def verifySignedData(): AnonIsValid = js.native
-    def verifySignedData(param: AnonCms): AnonIsValid = js.native
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
-  
 }
-

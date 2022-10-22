@@ -10,10 +10,10 @@ A simple mock for requestAnimationFrame testing with fake timers.
 | ------------------ | :-------------: |
 | Full name          | mock-raf |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 3 |
-| # downloads        | 139487 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 28417.0 |
+| # stars            | 25.0 |
 
 ## Links
 - [Homepage](https://github.com/FormidableLabs/mock-raf#readme)

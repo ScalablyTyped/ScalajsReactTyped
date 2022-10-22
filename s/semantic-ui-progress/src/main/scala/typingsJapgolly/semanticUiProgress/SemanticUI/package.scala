@@ -1,13 +1,12 @@
-package typingsJapgolly.semanticUiProgress
+package typingsJapgolly.semanticUiProgress.SemanticUI
 
+import typingsJapgolly.semanticUiProgress.SemanticUI.ProgressSettings.Param
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object SemanticUI {
-  type Progress = typingsJapgolly.semanticUiProgress.SemanticUI.Progress_
-  /**
-    * @see {@link http://semantic-ui.com/modules/progress.html#/settings}
-    */
-  type ProgressSettings = typingsJapgolly.semanticUiProgress.SemanticUI.ProgressSettings.Param
-}
+
+/**
+  * @see {@link http://semantic-ui.com/modules/progress.html#/settings}
+  */
+type ProgressSettings = Param

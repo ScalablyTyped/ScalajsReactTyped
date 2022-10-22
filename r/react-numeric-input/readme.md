@@ -10,15 +10,12 @@ Number input component that can replace the native number input which is not yet
 | ------------------ | :-------------: |
 | Full name          | react-numeric-input |
 | Keywords           | react, input, number, numeric, widget, component |
-| # releases         | 4 |
-| # dependents       | 41 |
-| # downloads        | 1587482 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 185257.66666666666 |
+| # stars            | 271.0 |
 
 ## Links
-- [Homepage](https://github.com/vlad-ignatov/react-numeric-input#readme)
-- [Bugs](https://github.com/vlad-ignatov/react-numeric-input/issues)
-- [Repository](https://github.com/vlad-ignatov/react-numeric-input)
 - [Npm](https://www.npmjs.com/package/react-numeric-input)
     
 

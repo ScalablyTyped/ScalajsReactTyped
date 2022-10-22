@@ -1,53 +1,44 @@
 package typingsJapgolly.reactFlagIconCss.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactFlagIconCss.mod.FlagIconFlip
 import typingsJapgolly.reactFlagIconCss.mod.FlagIconProps
 import typingsJapgolly.reactFlagIconCss.mod.FlagIconRotate
 import typingsJapgolly.reactFlagIconCss.mod.FlagIconSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FlagIcon {
-  def apply(
-    code: String,
-    Component: String = null,
-    className: String = null,
-    flip: FlagIconFlip = null,
-    rotate: FlagIconRotate = null,
-    size: FlagIconSize = null,
-    squared: js.UndefOr[Boolean] = js.undefined,
-    styleName: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FlagIconProps, typingsJapgolly.reactFlagIconCss.mod.FlagIcon, Unit, FlagIconProps] = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
   
-      if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (flip != null) __obj.updateDynamic("flip")(flip.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(squared)) __obj.updateDynamic("squared")(squared.asInstanceOf[js.Any])
-    if (styleName != null) __obj.updateDynamic("styleName")(styleName.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactFlagIconCss.mod.FlagIconProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactFlagIconCss.mod.FlagIcon](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactFlagIconCss.mod.FlagIconProps])(children: _*)
+  inline def apply(code: String): Builder = {
+    val __props = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[FlagIconProps]))
   }
+  
   @JSImport("react-flag-icon-css", "FlagIcon")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactFlagIconCss.mod.FlagIcon] {
+    
+    inline def Component(value: String): this.type = set("Component", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def flip(value: FlagIconFlip): this.type = set("flip", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: FlagIconRotate): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def size(value: FlagIconSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def squared(value: Boolean): this.type = set("squared", value.asInstanceOf[js.Any])
+    
+    inline def styleName(value: String): this.type = set("styleName", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: FlagIconProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,47 +1,49 @@
 package typingsJapgolly.copyTextToClipboard
 
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("copy-text-to-clipboard", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function copyTextToClipboard(text: string): boolean;
-  // export = copyTextToClipboard;
-  @JSName("default")
-  var default_Original: AnonCall = js.native
-  /**
-  	Copy text to the clipboard.
-  	Must be called in response to a user gesture event, like `click` or `keyup`.
-  	@param text - The text to copy to clipboard.
-  	@returns Whether it succeeded to copy the text.
-  	@example
-  	```
-  	import copy = require('copy-text-to-clipboard');
-  	button.addEventListener('click', () => {
-  		copy('🦄🌈');
-  	});
-  	```
-  	*/
-  def apply(text: String): Boolean = js.native
-  /**
-  	Copy text to the clipboard.
-  	Must be called in response to a user gesture event, like `click` or `keyup`.
-  	@param text - The text to copy to clipboard.
-  	@returns Whether it succeeded to copy the text.
-  	@example
-  	```
-  	import copy = require('copy-text-to-clipboard');
-  	button.addEventListener('click', () => {
-  		copy('🦄🌈');
-  	});
-  	```
-  	*/
-  // TODO: Remove this for the next major release, refactor the whole definition to:
-  // declare function copyTextToClipboard(text: string): boolean;
-  // export = copyTextToClipboard;
-  def default(text: String): Boolean = js.native
+object mod {
+  
+  @JSImport("copy-text-to-clipboard", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(text: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  trait Options extends StObject {
+    
+    /**
+    	Specify a DOM element where the temporary, behind-the-scenes `textarea` should be appended, in cases where you need to stay within a focus trap, like in a modal.
+    	@default document.body
+    	@example
+    	```
+    	import copy from 'copy-text-to-clipboard';
+    	const modalWithFocusTrap = document.getElementById('modal');
+    	button.addEventListener('click', () => {
+    		copy('🦄🌈', {
+    			target: modalWithFocusTrap
+    		});
+    	});
+    	```
+    	*/
+    val target: js.UndefOr[HTMLElement] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    }
+  }
 }
-

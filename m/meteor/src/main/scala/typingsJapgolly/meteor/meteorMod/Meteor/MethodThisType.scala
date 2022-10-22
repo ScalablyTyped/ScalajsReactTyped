@@ -1,35 +1,32 @@
 package typingsJapgolly.meteor.meteorMod.Meteor
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Error **/
 /** Method **/
-trait MethodThisType extends js.Object {
-  var connection: Connection | Null
-  var isSimulation: Boolean
-  var userId: String | Null
-  def setUserId(userId: String): Unit
-  def unblock(): Unit
+@js.native
+trait MethodThisType extends StObject {
+  
+  /**
+    * Access inside a method invocation. The connection that this method was received on. `null` if the method is not associated with a connection, eg. a server initiated method call. Calls
+    * to methods made from a server method which was in turn initiated from the client share the same `connection`. */
+  var connection: Connection | Null = js.native
+  
+  /** Access inside a method invocation. Boolean value, true if this invocation is a stub. */
+  var isSimulation: Boolean = js.native
+  
+  /**
+    * Set the logged in user.
+    * @param userId The value that should be returned by `userId` on this connection.
+    */
+  def setUserId(): Unit = js.native
+  def setUserId(userId: String): Unit = js.native
+  
+  /** Call inside a method invocation. Allow subsequent method from this client to begin running in a new fiber. */
+  def unblock(): Unit = js.native
+  
+  /** The id of the user that made this method call, or `null` if no user was logged in. */
+  var userId: String | Null = js.native
 }
-
-object MethodThisType {
-  @scala.inline
-  def apply(
-    isSimulation: Boolean,
-    setUserId: String => Callback,
-    unblock: Callback,
-    connection: Connection = null,
-    userId: String = null
-  ): MethodThisType = {
-    val __obj = js.Dynamic.literal(isSimulation = isSimulation.asInstanceOf[js.Any])
-    __obj.updateDynamic("setUserId")(js.Any.fromFunction1((t0: java.lang.String) => setUserId(t0).runNow()))
-    __obj.updateDynamic("unblock")(unblock.toJsFn)
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (userId != null) __obj.updateDynamic("userId")(userId.asInstanceOf[js.Any])
-    __obj.asInstanceOf[MethodThisType]
-  }
-}
-

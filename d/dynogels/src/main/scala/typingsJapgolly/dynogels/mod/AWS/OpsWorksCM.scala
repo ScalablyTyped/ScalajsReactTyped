@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.opsworkscmMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsOpsworkscmMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.OpsWorksCM")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class OpsWorksCM ()
+open class OpsWorksCM ()
   extends typingsJapgolly.awsSdk.mod.OpsWorksCM {
   def this(options: ClientConfiguration) = this()
 }
-

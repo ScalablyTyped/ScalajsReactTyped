@@ -1,15 +1,18 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Spherical")
 @js.native
-class Spherical ()
-  extends typingsJapgolly.three.sphericalMod.Spherical {
+open class Spherical ()
+  extends typingsJapgolly.three.srcThreeMod.Spherical {
   def this(radius: Double) = this()
   def this(radius: Double, phi: Double) = this()
+  def this(radius: Unit, phi: Double) = this()
   def this(radius: Double, phi: Double, theta: Double) = this()
+  def this(radius: Double, phi: Unit, theta: Double) = this()
+  def this(radius: Unit, phi: Double, theta: Double) = this()
+  def this(radius: Unit, phi: Unit, theta: Double) = this()
 }
-

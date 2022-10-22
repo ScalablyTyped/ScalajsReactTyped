@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.FontSizeProperty
+import typingsJapgolly.csstype.mod.Property.FontSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FontSizeProps[TLength] extends js.Object {
-  val fontSize: js.UndefOr[ResponsiveValue[FontSizeProperty[TLength]]] = js.undefined
+trait FontSizeProps[TLength] extends StObject {
+  
+  val fontSize: js.UndefOr[ResponsiveValue[FontSize[TLength]]] = js.undefined
 }
-
 object FontSizeProps {
-  @scala.inline
-  def apply[TLength](fontSize: ResponsiveValue[FontSizeProperty[TLength]] = null): FontSizeProps[TLength] = {
+  
+  inline def apply[TLength](): FontSizeProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[FontSizeProps[TLength]]
   }
+  
+  extension [Self <: FontSizeProps[?], TLength](x: Self & FontSizeProps[TLength]) {
+    
+    inline def setFontSize(value: ResponsiveValue[FontSize[TLength]]): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setFontSizeVarargs(value: FontSize[TLength]*): Self = StObject.set(x, "fontSize", js.Array(value*))
+  }
 }
-

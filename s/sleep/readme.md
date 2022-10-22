@@ -9,10 +9,10 @@ Add sleep() and usleep() to nodejs
 | ------------------ | :-------------: |
 | Full name          | sleep |
 | Keywords           | sleep, usleep |
-| # releases         | 8 |
-| # dependents       | 205 |
-| # downloads        | 1725990 |
-| # stars            | 23 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 210125.33333333334 |
+| # stars            | 454.0 |
 
 ## Links
 - [Homepage](http://github.com/erikdubbelboer/node-sleep)

@@ -1,16 +1,42 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.HTMLPerformance")
-@js.native
-class HTMLPerformance protected () extends js.Object {
-  @JSName("MSHTML.HTMLPerformance_typekey")
-  var MSHTMLDotHTMLPerformance_typekey: HTMLPerformance = js.native
-  val navigation: IHTMLPerformanceNavigation = js.native
-  val timing: IHTMLPerformanceTiming = js.native
-  def toJSON(): js.Any = js.native
+trait HTMLPerformance extends StObject {
+  
+  /* private */ @JSName("MSHTML.HTMLPerformance_typekey")
+  var MSHTMLDotHTMLPerformance_typekey: HTMLPerformance
+  
+  val navigation: IHTMLPerformanceNavigation
+  
+  val timing: IHTMLPerformanceTiming
+  
+  def toJSON(): Any
 }
-
+object HTMLPerformance {
+  
+  inline def apply(
+    MSHTMLDotHTMLPerformance_typekey: HTMLPerformance,
+    navigation: IHTMLPerformanceNavigation,
+    timing: IHTMLPerformanceTiming,
+    toJSON: CallbackTo[Any]
+  ): HTMLPerformance = {
+    val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], timing = timing.asInstanceOf[js.Any], toJSON = toJSON.toJsFn)
+    __obj.updateDynamic("MSHTML.HTMLPerformance_typekey")(MSHTMLDotHTMLPerformance_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HTMLPerformance]
+  }
+  
+  extension [Self <: HTMLPerformance](x: Self) {
+    
+    inline def setMSHTMLDotHTMLPerformance_typekey(value: HTMLPerformance): Self = StObject.set(x, "MSHTML.HTMLPerformance_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setNavigation(value: IHTMLPerformanceNavigation): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    
+    inline def setTiming(value: IHTMLPerformanceTiming): Self = StObject.set(x, "timing", value.asInstanceOf[js.Any])
+    
+    inline def setToJSON(value: CallbackTo[Any]): Self = StObject.set(x, "toJSON", value.toJsFn)
+  }
+}

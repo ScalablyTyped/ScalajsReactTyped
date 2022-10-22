@@ -4,16 +4,16 @@
 Typings are for version 0.5
 
 ## Library description:
-Impress Application Server for Node.js
+Enterprise application server for Node.js
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | impress |
-| Keywords           | application, server, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, cloud, cache, http, https, sse, eventstream, static, websocket, websockets |
-| # releases         | 58 |
-| # dependents       | 2 |
-| # downloads        | 40679 |
-| # stars            | 12 |
+| Keywords           | application, server, isolation, enterprise, security, lightweight, scalable, api, rpc, soa, service, stateful, rest, restful, web, framework, router, routing, cluster, private, cloud, http, https, websocket, websockets, interactive, app, backend, fullstack |
+| # releases         | 70 |
+| # dependents       | 0.0 |
+| # downloads        | 2812.0 |
+| # stars            | 846.0 |
 
 ## Links
 - [Homepage](https://github.com/metarhia/impress#readme)

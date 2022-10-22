@@ -1,38 +1,58 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Item extends js.Object {
+trait Item extends StObject {
+  
   var currency: String
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var name: String
+  
   var price: String
+  
   var quantity: Double
+  
   var sku: js.UndefOr[String] = js.undefined
+  
   var tax: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object Item {
-  @scala.inline
-  def apply(
-    currency: String,
-    name: String,
-    price: String,
-    quantity: Double,
-    description: String = null,
-    sku: String = null,
-    tax: String = null,
-    url: String = null
-  ): Item = {
+  
+  inline def apply(currency: String, name: String, price: String, quantity: Double): Item = {
     val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], price = price.asInstanceOf[js.Any], quantity = quantity.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (sku != null) __obj.updateDynamic("sku")(sku.asInstanceOf[js.Any])
-    if (tax != null) __obj.updateDynamic("tax")(tax.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Item]
   }
+  
+  extension [Self <: Item](x: Self) {
+    
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPrice(value: String): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+    
+    inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
+    
+    inline def setSku(value: String): Self = StObject.set(x, "sku", value.asInstanceOf[js.Any])
+    
+    inline def setSkuUndefined: Self = StObject.set(x, "sku", js.undefined)
+    
+    inline def setTax(value: String): Self = StObject.set(x, "tax", value.asInstanceOf[js.Any])
+    
+    inline def setTaxUndefined: Self = StObject.set(x, "tax", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

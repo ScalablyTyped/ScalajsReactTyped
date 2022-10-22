@@ -1,737 +1,733 @@
 package typingsJapgolly.mfiles.MFiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
-import typingsJapgolly.mfiles.mfilesNumbers.`100`
-import typingsJapgolly.mfiles.mfilesNumbers.`101`
-import typingsJapgolly.mfiles.mfilesNumbers.`102`
-import typingsJapgolly.mfiles.mfilesNumbers.`103`
-import typingsJapgolly.mfiles.mfilesNumbers.`104`
-import typingsJapgolly.mfiles.mfilesNumbers.`105`
-import typingsJapgolly.mfiles.mfilesNumbers.`106`
-import typingsJapgolly.mfiles.mfilesNumbers.`107`
-import typingsJapgolly.mfiles.mfilesNumbers.`108`
-import typingsJapgolly.mfiles.mfilesNumbers.`109`
-import typingsJapgolly.mfiles.mfilesNumbers.`10`
-import typingsJapgolly.mfiles.mfilesNumbers.`110`
-import typingsJapgolly.mfiles.mfilesNumbers.`111`
-import typingsJapgolly.mfiles.mfilesNumbers.`112`
-import typingsJapgolly.mfiles.mfilesNumbers.`113`
-import typingsJapgolly.mfiles.mfilesNumbers.`114`
-import typingsJapgolly.mfiles.mfilesNumbers.`115`
-import typingsJapgolly.mfiles.mfilesNumbers.`116`
-import typingsJapgolly.mfiles.mfilesNumbers.`117`
-import typingsJapgolly.mfiles.mfilesNumbers.`118`
-import typingsJapgolly.mfiles.mfilesNumbers.`119`
-import typingsJapgolly.mfiles.mfilesNumbers.`11`
-import typingsJapgolly.mfiles.mfilesNumbers.`120`
-import typingsJapgolly.mfiles.mfilesNumbers.`121`
-import typingsJapgolly.mfiles.mfilesNumbers.`122`
-import typingsJapgolly.mfiles.mfilesNumbers.`123`
-import typingsJapgolly.mfiles.mfilesNumbers.`124`
-import typingsJapgolly.mfiles.mfilesNumbers.`125`
-import typingsJapgolly.mfiles.mfilesNumbers.`126`
-import typingsJapgolly.mfiles.mfilesNumbers.`127`
-import typingsJapgolly.mfiles.mfilesNumbers.`128`
-import typingsJapgolly.mfiles.mfilesNumbers.`129`
-import typingsJapgolly.mfiles.mfilesNumbers.`12`
-import typingsJapgolly.mfiles.mfilesNumbers.`130`
-import typingsJapgolly.mfiles.mfilesNumbers.`131`
-import typingsJapgolly.mfiles.mfilesNumbers.`132`
-import typingsJapgolly.mfiles.mfilesNumbers.`133`
-import typingsJapgolly.mfiles.mfilesNumbers.`134`
-import typingsJapgolly.mfiles.mfilesNumbers.`135`
-import typingsJapgolly.mfiles.mfilesNumbers.`136`
-import typingsJapgolly.mfiles.mfilesNumbers.`137`
-import typingsJapgolly.mfiles.mfilesNumbers.`138`
-import typingsJapgolly.mfiles.mfilesNumbers.`139`
-import typingsJapgolly.mfiles.mfilesNumbers.`13`
-import typingsJapgolly.mfiles.mfilesNumbers.`140`
-import typingsJapgolly.mfiles.mfilesNumbers.`141`
-import typingsJapgolly.mfiles.mfilesNumbers.`142`
-import typingsJapgolly.mfiles.mfilesNumbers.`143`
-import typingsJapgolly.mfiles.mfilesNumbers.`144`
-import typingsJapgolly.mfiles.mfilesNumbers.`145`
-import typingsJapgolly.mfiles.mfilesNumbers.`146`
-import typingsJapgolly.mfiles.mfilesNumbers.`147`
-import typingsJapgolly.mfiles.mfilesNumbers.`148`
-import typingsJapgolly.mfiles.mfilesNumbers.`149`
-import typingsJapgolly.mfiles.mfilesNumbers.`14`
-import typingsJapgolly.mfiles.mfilesNumbers.`150`
-import typingsJapgolly.mfiles.mfilesNumbers.`151`
-import typingsJapgolly.mfiles.mfilesNumbers.`152`
-import typingsJapgolly.mfiles.mfilesNumbers.`153`
-import typingsJapgolly.mfiles.mfilesNumbers.`154`
-import typingsJapgolly.mfiles.mfilesNumbers.`155`
-import typingsJapgolly.mfiles.mfilesNumbers.`156`
-import typingsJapgolly.mfiles.mfilesNumbers.`157`
-import typingsJapgolly.mfiles.mfilesNumbers.`158`
-import typingsJapgolly.mfiles.mfilesNumbers.`159`
-import typingsJapgolly.mfiles.mfilesNumbers.`15`
-import typingsJapgolly.mfiles.mfilesNumbers.`160`
-import typingsJapgolly.mfiles.mfilesNumbers.`161`
-import typingsJapgolly.mfiles.mfilesNumbers.`162`
-import typingsJapgolly.mfiles.mfilesNumbers.`163`
-import typingsJapgolly.mfiles.mfilesNumbers.`164`
-import typingsJapgolly.mfiles.mfilesNumbers.`165`
-import typingsJapgolly.mfiles.mfilesNumbers.`166`
-import typingsJapgolly.mfiles.mfilesNumbers.`167`
-import typingsJapgolly.mfiles.mfilesNumbers.`168`
-import typingsJapgolly.mfiles.mfilesNumbers.`169`
-import typingsJapgolly.mfiles.mfilesNumbers.`16`
-import typingsJapgolly.mfiles.mfilesNumbers.`170`
-import typingsJapgolly.mfiles.mfilesNumbers.`171`
-import typingsJapgolly.mfiles.mfilesNumbers.`172`
-import typingsJapgolly.mfiles.mfilesNumbers.`173`
-import typingsJapgolly.mfiles.mfilesNumbers.`174`
-import typingsJapgolly.mfiles.mfilesNumbers.`17`
-import typingsJapgolly.mfiles.mfilesNumbers.`18`
-import typingsJapgolly.mfiles.mfilesNumbers.`19`
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`20`
-import typingsJapgolly.mfiles.mfilesNumbers.`21`
-import typingsJapgolly.mfiles.mfilesNumbers.`22`
-import typingsJapgolly.mfiles.mfilesNumbers.`23`
-import typingsJapgolly.mfiles.mfilesNumbers.`24`
-import typingsJapgolly.mfiles.mfilesNumbers.`25`
-import typingsJapgolly.mfiles.mfilesNumbers.`268435455`
-import typingsJapgolly.mfiles.mfilesNumbers.`26`
-import typingsJapgolly.mfiles.mfilesNumbers.`27`
-import typingsJapgolly.mfiles.mfilesNumbers.`28`
-import typingsJapgolly.mfiles.mfilesNumbers.`29`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`30`
-import typingsJapgolly.mfiles.mfilesNumbers.`31`
-import typingsJapgolly.mfiles.mfilesNumbers.`32`
-import typingsJapgolly.mfiles.mfilesNumbers.`33`
-import typingsJapgolly.mfiles.mfilesNumbers.`34`
-import typingsJapgolly.mfiles.mfilesNumbers.`35`
-import typingsJapgolly.mfiles.mfilesNumbers.`36`
-import typingsJapgolly.mfiles.mfilesNumbers.`37`
-import typingsJapgolly.mfiles.mfilesNumbers.`38`
-import typingsJapgolly.mfiles.mfilesNumbers.`39`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`40`
-import typingsJapgolly.mfiles.mfilesNumbers.`41`
-import typingsJapgolly.mfiles.mfilesNumbers.`42`
-import typingsJapgolly.mfiles.mfilesNumbers.`43`
-import typingsJapgolly.mfiles.mfilesNumbers.`44`
-import typingsJapgolly.mfiles.mfilesNumbers.`45`
-import typingsJapgolly.mfiles.mfilesNumbers.`46`
-import typingsJapgolly.mfiles.mfilesNumbers.`47`
-import typingsJapgolly.mfiles.mfilesNumbers.`48`
-import typingsJapgolly.mfiles.mfilesNumbers.`49`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
-import typingsJapgolly.mfiles.mfilesNumbers.`50`
-import typingsJapgolly.mfiles.mfilesNumbers.`51`
-import typingsJapgolly.mfiles.mfilesNumbers.`52`
-import typingsJapgolly.mfiles.mfilesNumbers.`53`
-import typingsJapgolly.mfiles.mfilesNumbers.`54`
-import typingsJapgolly.mfiles.mfilesNumbers.`55`
-import typingsJapgolly.mfiles.mfilesNumbers.`56`
-import typingsJapgolly.mfiles.mfilesNumbers.`57`
-import typingsJapgolly.mfiles.mfilesNumbers.`58`
-import typingsJapgolly.mfiles.mfilesNumbers.`59`
-import typingsJapgolly.mfiles.mfilesNumbers.`5`
-import typingsJapgolly.mfiles.mfilesNumbers.`60`
-import typingsJapgolly.mfiles.mfilesNumbers.`61`
-import typingsJapgolly.mfiles.mfilesNumbers.`62`
-import typingsJapgolly.mfiles.mfilesNumbers.`63`
-import typingsJapgolly.mfiles.mfilesNumbers.`64`
-import typingsJapgolly.mfiles.mfilesNumbers.`65`
-import typingsJapgolly.mfiles.mfilesNumbers.`66`
-import typingsJapgolly.mfiles.mfilesNumbers.`67`
-import typingsJapgolly.mfiles.mfilesNumbers.`68`
-import typingsJapgolly.mfiles.mfilesNumbers.`69`
-import typingsJapgolly.mfiles.mfilesNumbers.`6`
-import typingsJapgolly.mfiles.mfilesNumbers.`70`
-import typingsJapgolly.mfiles.mfilesNumbers.`71`
-import typingsJapgolly.mfiles.mfilesNumbers.`72`
-import typingsJapgolly.mfiles.mfilesNumbers.`73`
-import typingsJapgolly.mfiles.mfilesNumbers.`74`
-import typingsJapgolly.mfiles.mfilesNumbers.`75`
-import typingsJapgolly.mfiles.mfilesNumbers.`76`
-import typingsJapgolly.mfiles.mfilesNumbers.`77`
-import typingsJapgolly.mfiles.mfilesNumbers.`78`
-import typingsJapgolly.mfiles.mfilesNumbers.`79`
-import typingsJapgolly.mfiles.mfilesNumbers.`7`
-import typingsJapgolly.mfiles.mfilesNumbers.`80`
-import typingsJapgolly.mfiles.mfilesNumbers.`81`
-import typingsJapgolly.mfiles.mfilesNumbers.`82`
-import typingsJapgolly.mfiles.mfilesNumbers.`83`
-import typingsJapgolly.mfiles.mfilesNumbers.`84`
-import typingsJapgolly.mfiles.mfilesNumbers.`85`
-import typingsJapgolly.mfiles.mfilesNumbers.`86`
-import typingsJapgolly.mfiles.mfilesNumbers.`87`
-import typingsJapgolly.mfiles.mfilesNumbers.`88`
-import typingsJapgolly.mfiles.mfilesNumbers.`89`
-import typingsJapgolly.mfiles.mfilesNumbers.`8`
-import typingsJapgolly.mfiles.mfilesNumbers.`90`
-import typingsJapgolly.mfiles.mfilesNumbers.`91`
-import typingsJapgolly.mfiles.mfilesNumbers.`92`
-import typingsJapgolly.mfiles.mfilesNumbers.`93`
-import typingsJapgolly.mfiles.mfilesNumbers.`94`
-import typingsJapgolly.mfiles.mfilesNumbers.`95`
-import typingsJapgolly.mfiles.mfilesNumbers.`96`
-import typingsJapgolly.mfiles.mfilesNumbers.`97`
-import typingsJapgolly.mfiles.mfilesNumbers.`98`
-import typingsJapgolly.mfiles.mfilesNumbers.`99`
-import typingsJapgolly.mfiles.mfilesNumbers.`9`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import typingsJapgolly.mfiles.mfilesInts.`100`
+import typingsJapgolly.mfiles.mfilesInts.`101`
+import typingsJapgolly.mfiles.mfilesInts.`102`
+import typingsJapgolly.mfiles.mfilesInts.`103`
+import typingsJapgolly.mfiles.mfilesInts.`104`
+import typingsJapgolly.mfiles.mfilesInts.`105`
+import typingsJapgolly.mfiles.mfilesInts.`106`
+import typingsJapgolly.mfiles.mfilesInts.`107`
+import typingsJapgolly.mfiles.mfilesInts.`108`
+import typingsJapgolly.mfiles.mfilesInts.`109`
+import typingsJapgolly.mfiles.mfilesInts.`10`
+import typingsJapgolly.mfiles.mfilesInts.`110`
+import typingsJapgolly.mfiles.mfilesInts.`111`
+import typingsJapgolly.mfiles.mfilesInts.`112`
+import typingsJapgolly.mfiles.mfilesInts.`113`
+import typingsJapgolly.mfiles.mfilesInts.`114`
+import typingsJapgolly.mfiles.mfilesInts.`115`
+import typingsJapgolly.mfiles.mfilesInts.`116`
+import typingsJapgolly.mfiles.mfilesInts.`117`
+import typingsJapgolly.mfiles.mfilesInts.`118`
+import typingsJapgolly.mfiles.mfilesInts.`119`
+import typingsJapgolly.mfiles.mfilesInts.`11`
+import typingsJapgolly.mfiles.mfilesInts.`120`
+import typingsJapgolly.mfiles.mfilesInts.`121`
+import typingsJapgolly.mfiles.mfilesInts.`122`
+import typingsJapgolly.mfiles.mfilesInts.`123`
+import typingsJapgolly.mfiles.mfilesInts.`124`
+import typingsJapgolly.mfiles.mfilesInts.`125`
+import typingsJapgolly.mfiles.mfilesInts.`126`
+import typingsJapgolly.mfiles.mfilesInts.`127`
+import typingsJapgolly.mfiles.mfilesInts.`128`
+import typingsJapgolly.mfiles.mfilesInts.`129`
+import typingsJapgolly.mfiles.mfilesInts.`12`
+import typingsJapgolly.mfiles.mfilesInts.`130`
+import typingsJapgolly.mfiles.mfilesInts.`131`
+import typingsJapgolly.mfiles.mfilesInts.`132`
+import typingsJapgolly.mfiles.mfilesInts.`133`
+import typingsJapgolly.mfiles.mfilesInts.`134`
+import typingsJapgolly.mfiles.mfilesInts.`135`
+import typingsJapgolly.mfiles.mfilesInts.`136`
+import typingsJapgolly.mfiles.mfilesInts.`137`
+import typingsJapgolly.mfiles.mfilesInts.`138`
+import typingsJapgolly.mfiles.mfilesInts.`139`
+import typingsJapgolly.mfiles.mfilesInts.`13`
+import typingsJapgolly.mfiles.mfilesInts.`140`
+import typingsJapgolly.mfiles.mfilesInts.`141`
+import typingsJapgolly.mfiles.mfilesInts.`142`
+import typingsJapgolly.mfiles.mfilesInts.`143`
+import typingsJapgolly.mfiles.mfilesInts.`144`
+import typingsJapgolly.mfiles.mfilesInts.`145`
+import typingsJapgolly.mfiles.mfilesInts.`146`
+import typingsJapgolly.mfiles.mfilesInts.`147`
+import typingsJapgolly.mfiles.mfilesInts.`148`
+import typingsJapgolly.mfiles.mfilesInts.`149`
+import typingsJapgolly.mfiles.mfilesInts.`14`
+import typingsJapgolly.mfiles.mfilesInts.`150`
+import typingsJapgolly.mfiles.mfilesInts.`151`
+import typingsJapgolly.mfiles.mfilesInts.`152`
+import typingsJapgolly.mfiles.mfilesInts.`153`
+import typingsJapgolly.mfiles.mfilesInts.`154`
+import typingsJapgolly.mfiles.mfilesInts.`155`
+import typingsJapgolly.mfiles.mfilesInts.`156`
+import typingsJapgolly.mfiles.mfilesInts.`157`
+import typingsJapgolly.mfiles.mfilesInts.`158`
+import typingsJapgolly.mfiles.mfilesInts.`159`
+import typingsJapgolly.mfiles.mfilesInts.`15`
+import typingsJapgolly.mfiles.mfilesInts.`160`
+import typingsJapgolly.mfiles.mfilesInts.`161`
+import typingsJapgolly.mfiles.mfilesInts.`162`
+import typingsJapgolly.mfiles.mfilesInts.`163`
+import typingsJapgolly.mfiles.mfilesInts.`164`
+import typingsJapgolly.mfiles.mfilesInts.`165`
+import typingsJapgolly.mfiles.mfilesInts.`166`
+import typingsJapgolly.mfiles.mfilesInts.`167`
+import typingsJapgolly.mfiles.mfilesInts.`168`
+import typingsJapgolly.mfiles.mfilesInts.`169`
+import typingsJapgolly.mfiles.mfilesInts.`16`
+import typingsJapgolly.mfiles.mfilesInts.`170`
+import typingsJapgolly.mfiles.mfilesInts.`171`
+import typingsJapgolly.mfiles.mfilesInts.`172`
+import typingsJapgolly.mfiles.mfilesInts.`173`
+import typingsJapgolly.mfiles.mfilesInts.`174`
+import typingsJapgolly.mfiles.mfilesInts.`17`
+import typingsJapgolly.mfiles.mfilesInts.`18`
+import typingsJapgolly.mfiles.mfilesInts.`19`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`20`
+import typingsJapgolly.mfiles.mfilesInts.`21`
+import typingsJapgolly.mfiles.mfilesInts.`22`
+import typingsJapgolly.mfiles.mfilesInts.`23`
+import typingsJapgolly.mfiles.mfilesInts.`24`
+import typingsJapgolly.mfiles.mfilesInts.`25`
+import typingsJapgolly.mfiles.mfilesInts.`268435455`
+import typingsJapgolly.mfiles.mfilesInts.`26`
+import typingsJapgolly.mfiles.mfilesInts.`27`
+import typingsJapgolly.mfiles.mfilesInts.`28`
+import typingsJapgolly.mfiles.mfilesInts.`29`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`30`
+import typingsJapgolly.mfiles.mfilesInts.`31`
+import typingsJapgolly.mfiles.mfilesInts.`32`
+import typingsJapgolly.mfiles.mfilesInts.`33`
+import typingsJapgolly.mfiles.mfilesInts.`34`
+import typingsJapgolly.mfiles.mfilesInts.`35`
+import typingsJapgolly.mfiles.mfilesInts.`36`
+import typingsJapgolly.mfiles.mfilesInts.`37`
+import typingsJapgolly.mfiles.mfilesInts.`38`
+import typingsJapgolly.mfiles.mfilesInts.`39`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`40`
+import typingsJapgolly.mfiles.mfilesInts.`41`
+import typingsJapgolly.mfiles.mfilesInts.`42`
+import typingsJapgolly.mfiles.mfilesInts.`43`
+import typingsJapgolly.mfiles.mfilesInts.`44`
+import typingsJapgolly.mfiles.mfilesInts.`45`
+import typingsJapgolly.mfiles.mfilesInts.`46`
+import typingsJapgolly.mfiles.mfilesInts.`47`
+import typingsJapgolly.mfiles.mfilesInts.`48`
+import typingsJapgolly.mfiles.mfilesInts.`49`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import typingsJapgolly.mfiles.mfilesInts.`50`
+import typingsJapgolly.mfiles.mfilesInts.`51`
+import typingsJapgolly.mfiles.mfilesInts.`52`
+import typingsJapgolly.mfiles.mfilesInts.`53`
+import typingsJapgolly.mfiles.mfilesInts.`54`
+import typingsJapgolly.mfiles.mfilesInts.`55`
+import typingsJapgolly.mfiles.mfilesInts.`56`
+import typingsJapgolly.mfiles.mfilesInts.`57`
+import typingsJapgolly.mfiles.mfilesInts.`58`
+import typingsJapgolly.mfiles.mfilesInts.`59`
+import typingsJapgolly.mfiles.mfilesInts.`5`
+import typingsJapgolly.mfiles.mfilesInts.`60`
+import typingsJapgolly.mfiles.mfilesInts.`61`
+import typingsJapgolly.mfiles.mfilesInts.`62`
+import typingsJapgolly.mfiles.mfilesInts.`63`
+import typingsJapgolly.mfiles.mfilesInts.`64`
+import typingsJapgolly.mfiles.mfilesInts.`65`
+import typingsJapgolly.mfiles.mfilesInts.`66`
+import typingsJapgolly.mfiles.mfilesInts.`67`
+import typingsJapgolly.mfiles.mfilesInts.`68`
+import typingsJapgolly.mfiles.mfilesInts.`69`
+import typingsJapgolly.mfiles.mfilesInts.`6`
+import typingsJapgolly.mfiles.mfilesInts.`70`
+import typingsJapgolly.mfiles.mfilesInts.`71`
+import typingsJapgolly.mfiles.mfilesInts.`72`
+import typingsJapgolly.mfiles.mfilesInts.`73`
+import typingsJapgolly.mfiles.mfilesInts.`74`
+import typingsJapgolly.mfiles.mfilesInts.`75`
+import typingsJapgolly.mfiles.mfilesInts.`76`
+import typingsJapgolly.mfiles.mfilesInts.`77`
+import typingsJapgolly.mfiles.mfilesInts.`78`
+import typingsJapgolly.mfiles.mfilesInts.`79`
+import typingsJapgolly.mfiles.mfilesInts.`7`
+import typingsJapgolly.mfiles.mfilesInts.`80`
+import typingsJapgolly.mfiles.mfilesInts.`81`
+import typingsJapgolly.mfiles.mfilesInts.`82`
+import typingsJapgolly.mfiles.mfilesInts.`83`
+import typingsJapgolly.mfiles.mfilesInts.`84`
+import typingsJapgolly.mfiles.mfilesInts.`85`
+import typingsJapgolly.mfiles.mfilesInts.`86`
+import typingsJapgolly.mfiles.mfilesInts.`87`
+import typingsJapgolly.mfiles.mfilesInts.`88`
+import typingsJapgolly.mfiles.mfilesInts.`89`
+import typingsJapgolly.mfiles.mfilesInts.`8`
+import typingsJapgolly.mfiles.mfilesInts.`90`
+import typingsJapgolly.mfiles.mfilesInts.`91`
+import typingsJapgolly.mfiles.mfilesInts.`92`
+import typingsJapgolly.mfiles.mfilesInts.`93`
+import typingsJapgolly.mfiles.mfilesInts.`94`
+import typingsJapgolly.mfiles.mfilesInts.`95`
+import typingsJapgolly.mfiles.mfilesInts.`96`
+import typingsJapgolly.mfiles.mfilesInts.`97`
+import typingsJapgolly.mfiles.mfilesInts.`98`
+import typingsJapgolly.mfiles.mfilesInts.`99`
+import typingsJapgolly.mfiles.mfilesInts.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.mfiles.mfilesNumbers.`0`
-  - typingsJapgolly.mfiles.mfilesNumbers.`1`
-  - typingsJapgolly.mfiles.mfilesNumbers.`2`
-  - typingsJapgolly.mfiles.mfilesNumbers.`3`
-  - typingsJapgolly.mfiles.mfilesNumbers.`4`
-  - typingsJapgolly.mfiles.mfilesNumbers.`5`
-  - typingsJapgolly.mfiles.mfilesNumbers.`6`
-  - typingsJapgolly.mfiles.mfilesNumbers.`7`
-  - typingsJapgolly.mfiles.mfilesNumbers.`8`
-  - typingsJapgolly.mfiles.mfilesNumbers.`9`
-  - typingsJapgolly.mfiles.mfilesNumbers.`10`
-  - typingsJapgolly.mfiles.mfilesNumbers.`11`
-  - typingsJapgolly.mfiles.mfilesNumbers.`12`
-  - typingsJapgolly.mfiles.mfilesNumbers.`13`
-  - typingsJapgolly.mfiles.mfilesNumbers.`14`
-  - typingsJapgolly.mfiles.mfilesNumbers.`15`
-  - typingsJapgolly.mfiles.mfilesNumbers.`16`
-  - typingsJapgolly.mfiles.mfilesNumbers.`17`
-  - typingsJapgolly.mfiles.mfilesNumbers.`18`
-  - typingsJapgolly.mfiles.mfilesNumbers.`19`
-  - typingsJapgolly.mfiles.mfilesNumbers.`20`
-  - typingsJapgolly.mfiles.mfilesNumbers.`21`
-  - typingsJapgolly.mfiles.mfilesNumbers.`22`
-  - typingsJapgolly.mfiles.mfilesNumbers.`23`
-  - typingsJapgolly.mfiles.mfilesNumbers.`24`
-  - typingsJapgolly.mfiles.mfilesNumbers.`25`
-  - typingsJapgolly.mfiles.mfilesNumbers.`26`
-  - typingsJapgolly.mfiles.mfilesNumbers.`27`
-  - typingsJapgolly.mfiles.mfilesNumbers.`28`
-  - typingsJapgolly.mfiles.mfilesNumbers.`29`
-  - typingsJapgolly.mfiles.mfilesNumbers.`30`
-  - typingsJapgolly.mfiles.mfilesNumbers.`31`
-  - typingsJapgolly.mfiles.mfilesNumbers.`32`
-  - typingsJapgolly.mfiles.mfilesNumbers.`33`
-  - typingsJapgolly.mfiles.mfilesNumbers.`34`
-  - typingsJapgolly.mfiles.mfilesNumbers.`35`
-  - typingsJapgolly.mfiles.mfilesNumbers.`36`
-  - typingsJapgolly.mfiles.mfilesNumbers.`37`
-  - typingsJapgolly.mfiles.mfilesNumbers.`38`
-  - typingsJapgolly.mfiles.mfilesNumbers.`39`
-  - typingsJapgolly.mfiles.mfilesNumbers.`40`
-  - typingsJapgolly.mfiles.mfilesNumbers.`41`
-  - typingsJapgolly.mfiles.mfilesNumbers.`42`
-  - typingsJapgolly.mfiles.mfilesNumbers.`43`
-  - typingsJapgolly.mfiles.mfilesNumbers.`44`
-  - typingsJapgolly.mfiles.mfilesNumbers.`45`
-  - typingsJapgolly.mfiles.mfilesNumbers.`46`
-  - typingsJapgolly.mfiles.mfilesNumbers.`47`
-  - typingsJapgolly.mfiles.mfilesNumbers.`48`
-  - typingsJapgolly.mfiles.mfilesNumbers.`49`
-  - typingsJapgolly.mfiles.mfilesNumbers.`50`
-  - typingsJapgolly.mfiles.mfilesNumbers.`51`
-  - typingsJapgolly.mfiles.mfilesNumbers.`52`
-  - typingsJapgolly.mfiles.mfilesNumbers.`53`
-  - typingsJapgolly.mfiles.mfilesNumbers.`54`
-  - typingsJapgolly.mfiles.mfilesNumbers.`55`
-  - typingsJapgolly.mfiles.mfilesNumbers.`56`
-  - typingsJapgolly.mfiles.mfilesNumbers.`57`
-  - typingsJapgolly.mfiles.mfilesNumbers.`58`
-  - typingsJapgolly.mfiles.mfilesNumbers.`59`
-  - typingsJapgolly.mfiles.mfilesNumbers.`60`
-  - typingsJapgolly.mfiles.mfilesNumbers.`61`
-  - typingsJapgolly.mfiles.mfilesNumbers.`62`
-  - typingsJapgolly.mfiles.mfilesNumbers.`63`
-  - typingsJapgolly.mfiles.mfilesNumbers.`64`
-  - typingsJapgolly.mfiles.mfilesNumbers.`65`
-  - typingsJapgolly.mfiles.mfilesNumbers.`66`
-  - typingsJapgolly.mfiles.mfilesNumbers.`67`
-  - typingsJapgolly.mfiles.mfilesNumbers.`68`
-  - typingsJapgolly.mfiles.mfilesNumbers.`69`
-  - typingsJapgolly.mfiles.mfilesNumbers.`70`
-  - typingsJapgolly.mfiles.mfilesNumbers.`71`
-  - typingsJapgolly.mfiles.mfilesNumbers.`72`
-  - typingsJapgolly.mfiles.mfilesNumbers.`73`
-  - typingsJapgolly.mfiles.mfilesNumbers.`74`
-  - typingsJapgolly.mfiles.mfilesNumbers.`75`
-  - typingsJapgolly.mfiles.mfilesNumbers.`76`
-  - typingsJapgolly.mfiles.mfilesNumbers.`77`
-  - typingsJapgolly.mfiles.mfilesNumbers.`78`
-  - typingsJapgolly.mfiles.mfilesNumbers.`79`
-  - typingsJapgolly.mfiles.mfilesNumbers.`80`
-  - typingsJapgolly.mfiles.mfilesNumbers.`81`
-  - typingsJapgolly.mfiles.mfilesNumbers.`82`
-  - typingsJapgolly.mfiles.mfilesNumbers.`83`
-  - typingsJapgolly.mfiles.mfilesNumbers.`84`
-  - typingsJapgolly.mfiles.mfilesNumbers.`85`
-  - typingsJapgolly.mfiles.mfilesNumbers.`86`
-  - typingsJapgolly.mfiles.mfilesNumbers.`87`
-  - typingsJapgolly.mfiles.mfilesNumbers.`88`
-  - typingsJapgolly.mfiles.mfilesNumbers.`89`
-  - typingsJapgolly.mfiles.mfilesNumbers.`90`
-  - typingsJapgolly.mfiles.mfilesNumbers.`91`
-  - typingsJapgolly.mfiles.mfilesNumbers.`92`
-  - typingsJapgolly.mfiles.mfilesNumbers.`93`
-  - typingsJapgolly.mfiles.mfilesNumbers.`94`
-  - typingsJapgolly.mfiles.mfilesNumbers.`95`
-  - typingsJapgolly.mfiles.mfilesNumbers.`96`
-  - typingsJapgolly.mfiles.mfilesNumbers.`97`
-  - typingsJapgolly.mfiles.mfilesNumbers.`98`
-  - typingsJapgolly.mfiles.mfilesNumbers.`99`
-  - typingsJapgolly.mfiles.mfilesNumbers.`100`
-  - typingsJapgolly.mfiles.mfilesNumbers.`101`
-  - typingsJapgolly.mfiles.mfilesNumbers.`102`
-  - typingsJapgolly.mfiles.mfilesNumbers.`103`
-  - typingsJapgolly.mfiles.mfilesNumbers.`104`
-  - typingsJapgolly.mfiles.mfilesNumbers.`105`
-  - typingsJapgolly.mfiles.mfilesNumbers.`106`
-  - typingsJapgolly.mfiles.mfilesNumbers.`107`
-  - typingsJapgolly.mfiles.mfilesNumbers.`108`
-  - typingsJapgolly.mfiles.mfilesNumbers.`109`
-  - typingsJapgolly.mfiles.mfilesNumbers.`110`
-  - typingsJapgolly.mfiles.mfilesNumbers.`111`
-  - typingsJapgolly.mfiles.mfilesNumbers.`112`
-  - typingsJapgolly.mfiles.mfilesNumbers.`113`
-  - typingsJapgolly.mfiles.mfilesNumbers.`114`
-  - typingsJapgolly.mfiles.mfilesNumbers.`115`
-  - typingsJapgolly.mfiles.mfilesNumbers.`116`
-  - typingsJapgolly.mfiles.mfilesNumbers.`117`
-  - typingsJapgolly.mfiles.mfilesNumbers.`118`
-  - typingsJapgolly.mfiles.mfilesNumbers.`119`
-  - typingsJapgolly.mfiles.mfilesNumbers.`120`
-  - typingsJapgolly.mfiles.mfilesNumbers.`121`
-  - typingsJapgolly.mfiles.mfilesNumbers.`122`
-  - typingsJapgolly.mfiles.mfilesNumbers.`123`
-  - typingsJapgolly.mfiles.mfilesNumbers.`124`
-  - typingsJapgolly.mfiles.mfilesNumbers.`125`
-  - typingsJapgolly.mfiles.mfilesNumbers.`126`
-  - typingsJapgolly.mfiles.mfilesNumbers.`127`
-  - typingsJapgolly.mfiles.mfilesNumbers.`128`
-  - typingsJapgolly.mfiles.mfilesNumbers.`129`
-  - typingsJapgolly.mfiles.mfilesNumbers.`130`
-  - typingsJapgolly.mfiles.mfilesNumbers.`131`
-  - typingsJapgolly.mfiles.mfilesNumbers.`132`
-  - typingsJapgolly.mfiles.mfilesNumbers.`133`
-  - typingsJapgolly.mfiles.mfilesNumbers.`134`
-  - typingsJapgolly.mfiles.mfilesNumbers.`135`
-  - typingsJapgolly.mfiles.mfilesNumbers.`136`
-  - typingsJapgolly.mfiles.mfilesNumbers.`137`
-  - typingsJapgolly.mfiles.mfilesNumbers.`138`
-  - typingsJapgolly.mfiles.mfilesNumbers.`139`
-  - typingsJapgolly.mfiles.mfilesNumbers.`140`
-  - typingsJapgolly.mfiles.mfilesNumbers.`141`
-  - typingsJapgolly.mfiles.mfilesNumbers.`142`
-  - typingsJapgolly.mfiles.mfilesNumbers.`143`
-  - typingsJapgolly.mfiles.mfilesNumbers.`144`
-  - typingsJapgolly.mfiles.mfilesNumbers.`145`
-  - typingsJapgolly.mfiles.mfilesNumbers.`146`
-  - typingsJapgolly.mfiles.mfilesNumbers.`147`
-  - typingsJapgolly.mfiles.mfilesNumbers.`148`
-  - typingsJapgolly.mfiles.mfilesNumbers.`149`
-  - typingsJapgolly.mfiles.mfilesNumbers.`150`
-  - typingsJapgolly.mfiles.mfilesNumbers.`151`
-  - typingsJapgolly.mfiles.mfilesNumbers.`152`
-  - typingsJapgolly.mfiles.mfilesNumbers.`153`
-  - typingsJapgolly.mfiles.mfilesNumbers.`154`
-  - typingsJapgolly.mfiles.mfilesNumbers.`155`
-  - typingsJapgolly.mfiles.mfilesNumbers.`156`
-  - typingsJapgolly.mfiles.mfilesNumbers.`157`
-  - typingsJapgolly.mfiles.mfilesNumbers.`158`
-  - typingsJapgolly.mfiles.mfilesNumbers.`159`
-  - typingsJapgolly.mfiles.mfilesNumbers.`160`
-  - typingsJapgolly.mfiles.mfilesNumbers.`161`
-  - typingsJapgolly.mfiles.mfilesNumbers.`162`
-  - typingsJapgolly.mfiles.mfilesNumbers.`163`
-  - typingsJapgolly.mfiles.mfilesNumbers.`164`
-  - typingsJapgolly.mfiles.mfilesNumbers.`165`
-  - typingsJapgolly.mfiles.mfilesNumbers.`166`
-  - typingsJapgolly.mfiles.mfilesNumbers.`167`
-  - typingsJapgolly.mfiles.mfilesNumbers.`168`
-  - typingsJapgolly.mfiles.mfilesNumbers.`169`
-  - typingsJapgolly.mfiles.mfilesNumbers.`170`
-  - typingsJapgolly.mfiles.mfilesNumbers.`171`
-  - typingsJapgolly.mfiles.mfilesNumbers.`172`
-  - typingsJapgolly.mfiles.mfilesNumbers.`173`
-  - typingsJapgolly.mfiles.mfilesNumbers.`174`
-  - typingsJapgolly.mfiles.mfilesNumbers.`268435455`
+  - typingsJapgolly.mfiles.mfilesInts.`0`
+  - typingsJapgolly.mfiles.mfilesInts.`1`
+  - typingsJapgolly.mfiles.mfilesInts.`2`
+  - typingsJapgolly.mfiles.mfilesInts.`3`
+  - typingsJapgolly.mfiles.mfilesInts.`4`
+  - typingsJapgolly.mfiles.mfilesInts.`5`
+  - typingsJapgolly.mfiles.mfilesInts.`6`
+  - typingsJapgolly.mfiles.mfilesInts.`7`
+  - typingsJapgolly.mfiles.mfilesInts.`8`
+  - typingsJapgolly.mfiles.mfilesInts.`9`
+  - typingsJapgolly.mfiles.mfilesInts.`10`
+  - typingsJapgolly.mfiles.mfilesInts.`11`
+  - typingsJapgolly.mfiles.mfilesInts.`12`
+  - typingsJapgolly.mfiles.mfilesInts.`13`
+  - typingsJapgolly.mfiles.mfilesInts.`14`
+  - typingsJapgolly.mfiles.mfilesInts.`15`
+  - typingsJapgolly.mfiles.mfilesInts.`16`
+  - typingsJapgolly.mfiles.mfilesInts.`17`
+  - typingsJapgolly.mfiles.mfilesInts.`18`
+  - typingsJapgolly.mfiles.mfilesInts.`19`
+  - typingsJapgolly.mfiles.mfilesInts.`20`
+  - typingsJapgolly.mfiles.mfilesInts.`21`
+  - typingsJapgolly.mfiles.mfilesInts.`22`
+  - typingsJapgolly.mfiles.mfilesInts.`23`
+  - typingsJapgolly.mfiles.mfilesInts.`24`
+  - typingsJapgolly.mfiles.mfilesInts.`25`
+  - typingsJapgolly.mfiles.mfilesInts.`26`
+  - typingsJapgolly.mfiles.mfilesInts.`27`
+  - typingsJapgolly.mfiles.mfilesInts.`28`
+  - typingsJapgolly.mfiles.mfilesInts.`29`
+  - typingsJapgolly.mfiles.mfilesInts.`30`
+  - typingsJapgolly.mfiles.mfilesInts.`31`
+  - typingsJapgolly.mfiles.mfilesInts.`32`
+  - typingsJapgolly.mfiles.mfilesInts.`33`
+  - typingsJapgolly.mfiles.mfilesInts.`34`
+  - typingsJapgolly.mfiles.mfilesInts.`35`
+  - typingsJapgolly.mfiles.mfilesInts.`36`
+  - typingsJapgolly.mfiles.mfilesInts.`37`
+  - typingsJapgolly.mfiles.mfilesInts.`38`
+  - typingsJapgolly.mfiles.mfilesInts.`39`
+  - typingsJapgolly.mfiles.mfilesInts.`40`
+  - typingsJapgolly.mfiles.mfilesInts.`41`
+  - typingsJapgolly.mfiles.mfilesInts.`42`
+  - typingsJapgolly.mfiles.mfilesInts.`43`
+  - typingsJapgolly.mfiles.mfilesInts.`44`
+  - typingsJapgolly.mfiles.mfilesInts.`45`
+  - typingsJapgolly.mfiles.mfilesInts.`46`
+  - typingsJapgolly.mfiles.mfilesInts.`47`
+  - typingsJapgolly.mfiles.mfilesInts.`48`
+  - typingsJapgolly.mfiles.mfilesInts.`49`
+  - typingsJapgolly.mfiles.mfilesInts.`50`
+  - typingsJapgolly.mfiles.mfilesInts.`51`
+  - typingsJapgolly.mfiles.mfilesInts.`52`
+  - typingsJapgolly.mfiles.mfilesInts.`53`
+  - typingsJapgolly.mfiles.mfilesInts.`54`
+  - typingsJapgolly.mfiles.mfilesInts.`55`
+  - typingsJapgolly.mfiles.mfilesInts.`56`
+  - typingsJapgolly.mfiles.mfilesInts.`57`
+  - typingsJapgolly.mfiles.mfilesInts.`58`
+  - typingsJapgolly.mfiles.mfilesInts.`59`
+  - typingsJapgolly.mfiles.mfilesInts.`60`
+  - typingsJapgolly.mfiles.mfilesInts.`61`
+  - typingsJapgolly.mfiles.mfilesInts.`62`
+  - typingsJapgolly.mfiles.mfilesInts.`63`
+  - typingsJapgolly.mfiles.mfilesInts.`64`
+  - typingsJapgolly.mfiles.mfilesInts.`65`
+  - typingsJapgolly.mfiles.mfilesInts.`66`
+  - typingsJapgolly.mfiles.mfilesInts.`67`
+  - typingsJapgolly.mfiles.mfilesInts.`68`
+  - typingsJapgolly.mfiles.mfilesInts.`69`
+  - typingsJapgolly.mfiles.mfilesInts.`70`
+  - typingsJapgolly.mfiles.mfilesInts.`71`
+  - typingsJapgolly.mfiles.mfilesInts.`72`
+  - typingsJapgolly.mfiles.mfilesInts.`73`
+  - typingsJapgolly.mfiles.mfilesInts.`74`
+  - typingsJapgolly.mfiles.mfilesInts.`75`
+  - typingsJapgolly.mfiles.mfilesInts.`76`
+  - typingsJapgolly.mfiles.mfilesInts.`77`
+  - typingsJapgolly.mfiles.mfilesInts.`78`
+  - typingsJapgolly.mfiles.mfilesInts.`79`
+  - typingsJapgolly.mfiles.mfilesInts.`80`
+  - typingsJapgolly.mfiles.mfilesInts.`81`
+  - typingsJapgolly.mfiles.mfilesInts.`82`
+  - typingsJapgolly.mfiles.mfilesInts.`83`
+  - typingsJapgolly.mfiles.mfilesInts.`84`
+  - typingsJapgolly.mfiles.mfilesInts.`85`
+  - typingsJapgolly.mfiles.mfilesInts.`86`
+  - typingsJapgolly.mfiles.mfilesInts.`87`
+  - typingsJapgolly.mfiles.mfilesInts.`88`
+  - typingsJapgolly.mfiles.mfilesInts.`89`
+  - typingsJapgolly.mfiles.mfilesInts.`90`
+  - typingsJapgolly.mfiles.mfilesInts.`91`
+  - typingsJapgolly.mfiles.mfilesInts.`92`
+  - typingsJapgolly.mfiles.mfilesInts.`93`
+  - typingsJapgolly.mfiles.mfilesInts.`94`
+  - typingsJapgolly.mfiles.mfilesInts.`95`
+  - typingsJapgolly.mfiles.mfilesInts.`96`
+  - typingsJapgolly.mfiles.mfilesInts.`97`
+  - typingsJapgolly.mfiles.mfilesInts.`98`
+  - typingsJapgolly.mfiles.mfilesInts.`99`
+  - typingsJapgolly.mfiles.mfilesInts.`100`
+  - typingsJapgolly.mfiles.mfilesInts.`101`
+  - typingsJapgolly.mfiles.mfilesInts.`102`
+  - typingsJapgolly.mfiles.mfilesInts.`103`
+  - typingsJapgolly.mfiles.mfilesInts.`104`
+  - typingsJapgolly.mfiles.mfilesInts.`105`
+  - typingsJapgolly.mfiles.mfilesInts.`106`
+  - typingsJapgolly.mfiles.mfilesInts.`107`
+  - typingsJapgolly.mfiles.mfilesInts.`108`
+  - typingsJapgolly.mfiles.mfilesInts.`109`
+  - typingsJapgolly.mfiles.mfilesInts.`110`
+  - typingsJapgolly.mfiles.mfilesInts.`111`
+  - typingsJapgolly.mfiles.mfilesInts.`112`
+  - typingsJapgolly.mfiles.mfilesInts.`113`
+  - typingsJapgolly.mfiles.mfilesInts.`114`
+  - typingsJapgolly.mfiles.mfilesInts.`115`
+  - typingsJapgolly.mfiles.mfilesInts.`116`
+  - typingsJapgolly.mfiles.mfilesInts.`117`
+  - typingsJapgolly.mfiles.mfilesInts.`118`
+  - typingsJapgolly.mfiles.mfilesInts.`119`
+  - typingsJapgolly.mfiles.mfilesInts.`120`
+  - typingsJapgolly.mfiles.mfilesInts.`121`
+  - typingsJapgolly.mfiles.mfilesInts.`122`
+  - typingsJapgolly.mfiles.mfilesInts.`123`
+  - typingsJapgolly.mfiles.mfilesInts.`124`
+  - typingsJapgolly.mfiles.mfilesInts.`125`
+  - typingsJapgolly.mfiles.mfilesInts.`126`
+  - typingsJapgolly.mfiles.mfilesInts.`127`
+  - typingsJapgolly.mfiles.mfilesInts.`128`
+  - typingsJapgolly.mfiles.mfilesInts.`129`
+  - typingsJapgolly.mfiles.mfilesInts.`130`
+  - typingsJapgolly.mfiles.mfilesInts.`131`
+  - typingsJapgolly.mfiles.mfilesInts.`132`
+  - typingsJapgolly.mfiles.mfilesInts.`133`
+  - typingsJapgolly.mfiles.mfilesInts.`134`
+  - typingsJapgolly.mfiles.mfilesInts.`135`
+  - typingsJapgolly.mfiles.mfilesInts.`136`
+  - typingsJapgolly.mfiles.mfilesInts.`137`
+  - typingsJapgolly.mfiles.mfilesInts.`138`
+  - typingsJapgolly.mfiles.mfilesInts.`139`
+  - typingsJapgolly.mfiles.mfilesInts.`140`
+  - typingsJapgolly.mfiles.mfilesInts.`141`
+  - typingsJapgolly.mfiles.mfilesInts.`142`
+  - typingsJapgolly.mfiles.mfilesInts.`143`
+  - typingsJapgolly.mfiles.mfilesInts.`144`
+  - typingsJapgolly.mfiles.mfilesInts.`145`
+  - typingsJapgolly.mfiles.mfilesInts.`146`
+  - typingsJapgolly.mfiles.mfilesInts.`147`
+  - typingsJapgolly.mfiles.mfilesInts.`148`
+  - typingsJapgolly.mfiles.mfilesInts.`149`
+  - typingsJapgolly.mfiles.mfilesInts.`150`
+  - typingsJapgolly.mfiles.mfilesInts.`151`
+  - typingsJapgolly.mfiles.mfilesInts.`152`
+  - typingsJapgolly.mfiles.mfilesInts.`153`
+  - typingsJapgolly.mfiles.mfilesInts.`154`
+  - typingsJapgolly.mfiles.mfilesInts.`155`
+  - typingsJapgolly.mfiles.mfilesInts.`156`
+  - typingsJapgolly.mfiles.mfilesInts.`157`
+  - typingsJapgolly.mfiles.mfilesInts.`158`
+  - typingsJapgolly.mfiles.mfilesInts.`159`
+  - typingsJapgolly.mfiles.mfilesInts.`160`
+  - typingsJapgolly.mfiles.mfilesInts.`161`
+  - typingsJapgolly.mfiles.mfilesInts.`162`
+  - typingsJapgolly.mfiles.mfilesInts.`163`
+  - typingsJapgolly.mfiles.mfilesInts.`164`
+  - typingsJapgolly.mfiles.mfilesInts.`165`
+  - typingsJapgolly.mfiles.mfilesInts.`166`
+  - typingsJapgolly.mfiles.mfilesInts.`167`
+  - typingsJapgolly.mfiles.mfilesInts.`168`
+  - typingsJapgolly.mfiles.mfilesInts.`169`
+  - typingsJapgolly.mfiles.mfilesInts.`170`
+  - typingsJapgolly.mfiles.mfilesInts.`171`
+  - typingsJapgolly.mfiles.mfilesInts.`172`
+  - typingsJapgolly.mfiles.mfilesInts.`173`
+  - typingsJapgolly.mfiles.mfilesInts.`174`
+  - typingsJapgolly.mfiles.mfilesInts.`268435455`
 */
-trait BuiltinCommand extends js.Object
-
+trait BuiltinCommand extends StObject
 object BuiltinCommand {
-  @scala.inline
-  def ALL: `268435455` = this.cast(268435455)
-  @scala.inline
-  def AboutMFiles: `162` = this.cast(162)
-  @scala.inline
-  def AddCollectionMember: `95` = this.cast(95)
-  @scala.inline
-  def AddDashboardToViewLocBottom: `69` = this.cast(69)
-  @scala.inline
-  def AddDashboardToViewLocMain: `67` = this.cast(67)
-  @scala.inline
-  def AddDashboardToViewLocRight: `68` = this.cast(68)
-  @scala.inline
-  def AddDocumentFromScanner: `43` = this.cast(43)
-  @scala.inline
-  def AddFileFromScanner: `44` = this.cast(44)
-  @scala.inline
-  def AddGroupingLevel: `116` = this.cast(116)
-  @scala.inline
-  def AddRelationship: `98` = this.cast(98)
-  @scala.inline
-  def AddReportToViewLocBottom: `69` = this.cast(69)
-  @scala.inline
-  def AddReportToViewLocMain: `67` = this.cast(67)
-  @scala.inline
-  def AddReportToViewLocRight: `68` = this.cast(68)
-  @scala.inline
-  def AddShortcutToTaskPane: `66` = this.cast(66)
-  @scala.inline
-  def AddToFavorites: `62` = this.cast(62)
-  @scala.inline
-  def Applications: `136` = this.cast(136)
-  @scala.inline
-  def ApproveAssignment: `165` = this.cast(165)
-  @scala.inline
-  def BeginCoauthoring: `130` = this.cast(130)
-  @scala.inline
-  def BottomPane_Minimized: `152` = this.cast(152)
-  @scala.inline
-  def BottomPane_Normal: `151` = this.cast(151)
-  @scala.inline
-  def BottomPane_Off: `153` = this.cast(153)
-  @scala.inline
-  def BrowseInThisWindow: `120` = this.cast(120)
-  @scala.inline
-  def ChangeLanguage: `42` = this.cast(42)
-  @scala.inline
-  def ChangePassword: `41` = this.cast(41)
-  @scala.inline
-  def ChangeState: `26` = this.cast(26)
-  @scala.inline
-  def ChangeStateAdmin: `167` = this.cast(167)
-  @scala.inline
-  def ChangeViewMode: `106` = this.cast(106)
-  @scala.inline
-  def CheckIn: `11` = this.cast(11)
-  @scala.inline
-  def CheckInWithComments: `12` = this.cast(12)
-  @scala.inline
-  def CheckOut: `10` = this.cast(10)
-  @scala.inline
-  def CheckOutForCoauthoring: `129` = this.cast(129)
-  @scala.inline
-  def ChooseColumns: `83` = this.cast(83)
-  @scala.inline
-  def CleanView: `58` = this.cast(58)
-  @scala.inline
-  def ClearArchiveMarker: `29` = this.cast(29)
-  @scala.inline
-  def ClearLocalCache: `40` = this.cast(40)
-  @scala.inline
-  def ClientSettings: `37` = this.cast(37)
-  @scala.inline
-  def CompleteAssignment: `25` = this.cast(25)
-  @scala.inline
-  def ConvertToDocument: `6` = this.cast(6)
-  @scala.inline
-  def ConvertToDocumentFiles: `7` = this.cast(7)
-  @scala.inline
-  def ConvertToMultiFilePDF: `82` = this.cast(82)
-  @scala.inline
-  def ConvertToOneMultiFileDocument: `32` = this.cast(32)
-  @scala.inline
-  def ConvertToSearchablePDF: `46` = this.cast(46)
-  @scala.inline
-  def ConvertToSingleFileDocument: `31` = this.cast(31)
-  @scala.inline
-  def ConvertToSingleFilePDF: `81` = this.cast(81)
-  @scala.inline
-  def Copy: `73` = this.cast(73)
-  @scala.inline
-  def CreateOrGetShortcut: `64` = this.cast(64)
-  @scala.inline
-  def CreateShortcut: `65` = this.cast(65)
-  @scala.inline
-  def CurrentGroupingLevel: `117` = this.cast(117)
-  @scala.inline
-  def CustomizePropertyFolder: `144` = this.cast(144)
-  @scala.inline
-  def Cut: `74` = this.cast(74)
-  @scala.inline
-  def Delete: `76` = this.cast(76)
-  @scala.inline
-  def DeleteAll: `90` = this.cast(90)
-  @scala.inline
-  def Destroy: `91` = this.cast(91)
-  @scala.inline
-  def DiscardFileModifications: `171` = this.cast(171)
-  @scala.inline
-  def EditCollectionMembership: `96` = this.cast(96)
-  @scala.inline
-  def EditOneAnnotation: `159` = this.cast(159)
-  @scala.inline
-  def EditRelationship: `99` = this.cast(99)
-  @scala.inline
-  def EndCoauthoring: `131` = this.cast(131)
-  @scala.inline
-  def ExportObjects: `79` = this.cast(79)
-  @scala.inline
-  def ExportSearchBarConditions: `80` = this.cast(80)
-  @scala.inline
-  def FIRST: `1` = this.cast(1)
-  @scala.inline
-  def GoOffline: `35` = this.cast(35)
-  @scala.inline
-  def GoOnline: `34` = this.cast(34)
-  @scala.inline
-  def GoToCustomView: `124` = this.cast(124)
-  @scala.inline
-  def GroupBy: `121` = this.cast(121)
-  @scala.inline
-  def GroupFoldersBy: `122` = this.cast(122)
-  @scala.inline
-  def GroupFoldersByFirstLetters: `115` = this.cast(115)
-  @scala.inline
-  def GroupObjectsByFirstLetters: `114` = this.cast(114)
-  @scala.inline
-  def GroupObjectsByObjectType: `54` = this.cast(54)
-  @scala.inline
-  def GroupViewsAndFolders: `55` = this.cast(55)
-  @scala.inline
-  def HideAllVisualAnnotations: `158` = this.cast(158)
-  @scala.inline
-  def HideOrShowEmptyFolders: `119` = this.cast(119)
-  @scala.inline
-  def HideView: `56` = this.cast(56)
-  @scala.inline
-  def HitHighlighting: `128` = this.cast(128)
-  @scala.inline
-  def ImportFilesAndFolders: `8` = this.cast(8)
-  @scala.inline
-  def InvertSelection: `86` = this.cast(86)
-  @scala.inline
-  def LAST: `174` = this.cast(174)
-  @scala.inline
-  def LabelThisVersion: `93` = this.cast(93)
-  @scala.inline
-  def LogOut: `36` = this.cast(36)
-  @scala.inline
-  def MFilesGuidedTour: `142` = this.cast(142)
-  @scala.inline
-  def MFilesHelp: `141` = this.cast(141)
-  @scala.inline
-  def MakeCopy: `9` = this.cast(9)
-  @scala.inline
-  def MarkApproved: `163` = this.cast(163)
-  @scala.inline
-  def MarkComplete: `123` = this.cast(123)
-  @scala.inline
-  def MarkFolderForOfflineAvailability: `15` = this.cast(15)
-  @scala.inline
-  def MarkForArchiving: `28` = this.cast(28)
-  @scala.inline
-  def MarkForOfflineAvailability: `16` = this.cast(16)
-  @scala.inline
-  def MarkRejected: `164` = this.cast(164)
-  @scala.inline
-  def ModifyVersionDetails: `92` = this.cast(92)
-  @scala.inline
-  def NavigationPane_Off: `155` = this.cast(155)
-  @scala.inline
-  def NavigationPane_On: `154` = this.cast(154)
-  @scala.inline
-  def NewAnnotation: `161` = this.cast(161)
-  @scala.inline
-  def NewAssignment: `23` = this.cast(23)
-  @scala.inline
-  def NewObject: `87` = this.cast(87)
-  @scala.inline
-  def NewOfflineFilter: `3` = this.cast(3)
-  @scala.inline
-  def NewPropertyFolder: `5` = this.cast(5)
-  @scala.inline
-  def NewSubobject: `94` = this.cast(94)
-  @scala.inline
-  def NewTraditionalFolder: `4` = this.cast(4)
-  @scala.inline
-  def NewView: `2` = this.cast(2)
-  @scala.inline
-  def NewWindow: `78` = this.cast(78)
-  @scala.inline
-  def NotificationSettings: `39` = this.cast(39)
-  @scala.inline
-  def Paste: `75` = this.cast(75)
-  @scala.inline
-  def PasteAsMultiFileDocument: `84` = this.cast(84)
-  @scala.inline
-  def Properties: `14` = this.cast(14)
-  @scala.inline
-  def Refresh: `88` = this.cast(88)
-  @scala.inline
-  def RejectAssignment: `166` = this.cast(166)
-  @scala.inline
-  def RemoveCollectionMembership: `97` = this.cast(97)
-  @scala.inline
-  def RemoveCurrentGroupingLevel: `118` = this.cast(118)
-  @scala.inline
-  def RemoveDashboardFromViewLocBottom: `72` = this.cast(72)
-  @scala.inline
-  def RemoveDashboardFromViewLocMain: `70` = this.cast(70)
-  @scala.inline
-  def RemoveDashboardFromViewLocRight: `71` = this.cast(71)
-  @scala.inline
-  def RemoveFromFavorites: `63` = this.cast(63)
-  @scala.inline
-  def RemoveOfflineAvailability: `17` = this.cast(17)
-  @scala.inline
-  def RemoveRelationship: `100` = this.cast(100)
-  @scala.inline
-  def RemoveReportFromViewLocBottom: `72` = this.cast(72)
-  @scala.inline
-  def RemoveReportFromViewLocMain: `70` = this.cast(70)
-  @scala.inline
-  def RemoveReportFromViewLocRight: `71` = this.cast(71)
-  @scala.inline
-  def Rename: `77` = this.cast(77)
-  @scala.inline
-  def ReplaceWithFile: `33` = this.cast(33)
-  @scala.inline
-  def ReplaceWithFileFromScanner: `45` = this.cast(45)
-  @scala.inline
-  def ResetUISettingsToDefaults: `60` = this.cast(60)
-  @scala.inline
-  def ResolveConflictDiscardThis: `135` = this.cast(135)
-  @scala.inline
-  def ResolveConflictKeepThis: `134` = this.cast(134)
-  @scala.inline
-  def RightPane_Minimized: `149` = this.cast(149)
-  @scala.inline
-  def RightPane_Normal: `148` = this.cast(148)
-  @scala.inline
-  def RightPane_Off: `150` = this.cast(150)
-  @scala.inline
-  def RollBack: `89` = this.cast(89)
-  @scala.inline
-  def SaveAnnotation: `160` = this.cast(160)
-  @scala.inline
-  def SaveAsCommonUISettings: `61` = this.cast(61)
-  @scala.inline
-  def SaveAsPDF: `50` = this.cast(50)
-  @scala.inline
-  def SelectAll: `85` = this.cast(85)
-  @scala.inline
-  def SendCoauthoringLink: `133` = this.cast(133)
-  @scala.inline
-  def SendCopyByEmail: `48` = this.cast(48)
-  @scala.inline
-  def SendLinkByEmail: `47` = this.cast(47)
-  @scala.inline
-  def SendPDFByEmail: `49` = this.cast(49)
-  @scala.inline
-  def ServerAdmin: `38` = this.cast(38)
-  @scala.inline
-  def SharePublicLink: `168` = this.cast(168)
-  @scala.inline
-  def ShareViaSkyDrive: `137` = this.cast(137)
-  @scala.inline
-  def ShareViaSkyDriveAsPDF: `138` = this.cast(138)
-  @scala.inline
-  def SharedByMe: `169` = this.cast(169)
-  @scala.inline
-  def ShowAllVisualAnnotations: `157` = this.cast(157)
-  @scala.inline
-  def ShowAssignments: `24` = this.cast(24)
-  @scala.inline
-  def ShowBottomPane: `52` = this.cast(52)
-  @scala.inline
-  def ShowCollectionMembers: `20` = this.cast(20)
-  @scala.inline
-  def ShowComments: `22` = this.cast(22)
-  @scala.inline
-  def ShowHistory: `18` = this.cast(18)
-  @scala.inline
-  def ShowMetadataInBottomPane: `140` = this.cast(140)
-  @scala.inline
-  def ShowMetadataInRightPane: `139` = this.cast(139)
-  @scala.inline
-  def ShowNavigationPane: `143` = this.cast(143)
-  @scala.inline
-  def ShowOriginalObject: `132` = this.cast(132)
-  @scala.inline
-  def ShowPreviewPane: `53` = this.cast(53)
-  @scala.inline
-  def ShowPropertiesPane: `52` = this.cast(52)
-  @scala.inline
-  def ShowRelationships: `19` = this.cast(19)
-  @scala.inline
-  def ShowRightPane: `53` = this.cast(53)
-  @scala.inline
-  def ShowSearchRefinementOptions: `173` = this.cast(173)
-  @scala.inline
-  def ShowSearchResultsFromMultipleVaults: `172` = this.cast(172)
-  @scala.inline
-  def ShowVisualAnnotations: `156` = this.cast(156)
-  @scala.inline
-  def SubMenu_Archiving: `109` = this.cast(109)
-  @scala.inline
-  def SubMenu_BrowseRelatedObjects: `108` = this.cast(108)
-  @scala.inline
-  def SubMenu_Dashboards: `113` = this.cast(113)
-  @scala.inline
-  def SubMenu_DisplayMode: `105` = this.cast(105)
-  @scala.inline
-  def SubMenu_NewFile: `102` = this.cast(102)
-  @scala.inline
-  def SubMenu_NewObject: `101` = this.cast(101)
-  @scala.inline
-  def SubMenu_OfflineAvailability: `107` = this.cast(107)
-  @scala.inline
-  def SubMenu_RefreshExtObjects: `112` = this.cast(112)
-  @scala.inline
-  def SubMenu_Reports: `113` = this.cast(113)
-  @scala.inline
-  def SubMenu_ScanningAndOCR: `111` = this.cast(111)
-  @scala.inline
-  def SubMenu_Send: `104` = this.cast(104)
-  @scala.inline
-  def SubMenu_WindowsCommands: `103` = this.cast(103)
-  @scala.inline
-  def SubMenu_Workflow: `110` = this.cast(110)
-  @scala.inline
-  def Submenu_DocumentX: `127` = this.cast(127)
-  @scala.inline
-  def Submenu_VaultX: `125` = this.cast(125)
-  @scala.inline
-  def Submenu_ViewX: `126` = this.cast(126)
-  @scala.inline
-  def SubstituteUsers: `51` = this.cast(51)
-  @scala.inline
-  def UncustomizePropertyFolder: `145` = this.cast(145)
-  @scala.inline
-  def Undefined: `0` = this.cast(0)
-  @scala.inline
-  def Undelete: `30` = this.cast(30)
-  @scala.inline
-  def UndoCheckOut: `13` = this.cast(13)
-  @scala.inline
-  def UnhideView: `57` = this.cast(57)
-  @scala.inline
-  def UnhideViews: `59` = this.cast(59)
-  @scala.inline
-  def UploadFiles: `170` = this.cast(170)
-  @scala.inline
-  def UseCompactLayout: `147` = this.cast(147)
-  @scala.inline
-  def UseNormalLayout: `146` = this.cast(146)
-  @scala.inline
-  def ViewEditSubobjects: `21` = this.cast(21)
-  @scala.inline
-  def Workflow: `27` = this.cast(27)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ALL: `268435455` = 268435455.asInstanceOf[`268435455`]
+  
+  inline def AboutMFiles: `162` = 162.asInstanceOf[`162`]
+  
+  inline def AddCollectionMember: `95` = 95.asInstanceOf[`95`]
+  
+  inline def AddDashboardToViewLocBottom: `69` = 69.asInstanceOf[`69`]
+  
+  inline def AddDashboardToViewLocMain: `67` = 67.asInstanceOf[`67`]
+  
+  inline def AddDashboardToViewLocRight: `68` = 68.asInstanceOf[`68`]
+  
+  inline def AddDocumentFromScanner: `43` = 43.asInstanceOf[`43`]
+  
+  inline def AddFileFromScanner: `44` = 44.asInstanceOf[`44`]
+  
+  inline def AddGroupingLevel: `116` = 116.asInstanceOf[`116`]
+  
+  inline def AddRelationship: `98` = 98.asInstanceOf[`98`]
+  
+  inline def AddReportToViewLocBottom: `69` = 69.asInstanceOf[`69`]
+  
+  inline def AddReportToViewLocMain: `67` = 67.asInstanceOf[`67`]
+  
+  inline def AddReportToViewLocRight: `68` = 68.asInstanceOf[`68`]
+  
+  inline def AddShortcutToTaskPane: `66` = 66.asInstanceOf[`66`]
+  
+  inline def AddToFavorites: `62` = 62.asInstanceOf[`62`]
+  
+  inline def Applications: `136` = 136.asInstanceOf[`136`]
+  
+  inline def ApproveAssignment: `165` = 165.asInstanceOf[`165`]
+  
+  inline def BeginCoauthoring: `130` = 130.asInstanceOf[`130`]
+  
+  inline def BottomPane_Minimized: `152` = 152.asInstanceOf[`152`]
+  
+  inline def BottomPane_Normal: `151` = 151.asInstanceOf[`151`]
+  
+  inline def BottomPane_Off: `153` = 153.asInstanceOf[`153`]
+  
+  inline def BrowseInThisWindow: `120` = 120.asInstanceOf[`120`]
+  
+  inline def ChangeLanguage: `42` = 42.asInstanceOf[`42`]
+  
+  inline def ChangePassword: `41` = 41.asInstanceOf[`41`]
+  
+  inline def ChangeState: `26` = 26.asInstanceOf[`26`]
+  
+  inline def ChangeStateAdmin: `167` = 167.asInstanceOf[`167`]
+  
+  inline def ChangeViewMode: `106` = 106.asInstanceOf[`106`]
+  
+  inline def CheckIn: `11` = 11.asInstanceOf[`11`]
+  
+  inline def CheckInWithComments: `12` = 12.asInstanceOf[`12`]
+  
+  inline def CheckOut: `10` = 10.asInstanceOf[`10`]
+  
+  inline def CheckOutForCoauthoring: `129` = 129.asInstanceOf[`129`]
+  
+  inline def ChooseColumns: `83` = 83.asInstanceOf[`83`]
+  
+  inline def CleanView: `58` = 58.asInstanceOf[`58`]
+  
+  inline def ClearArchiveMarker: `29` = 29.asInstanceOf[`29`]
+  
+  inline def ClearLocalCache: `40` = 40.asInstanceOf[`40`]
+  
+  inline def ClientSettings: `37` = 37.asInstanceOf[`37`]
+  
+  inline def CompleteAssignment: `25` = 25.asInstanceOf[`25`]
+  
+  inline def ConvertToDocument: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ConvertToDocumentFiles: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ConvertToMultiFilePDF: `82` = 82.asInstanceOf[`82`]
+  
+  inline def ConvertToOneMultiFileDocument: `32` = 32.asInstanceOf[`32`]
+  
+  inline def ConvertToSearchablePDF: `46` = 46.asInstanceOf[`46`]
+  
+  inline def ConvertToSingleFileDocument: `31` = 31.asInstanceOf[`31`]
+  
+  inline def ConvertToSingleFilePDF: `81` = 81.asInstanceOf[`81`]
+  
+  inline def Copy: `73` = 73.asInstanceOf[`73`]
+  
+  inline def CreateOrGetShortcut: `64` = 64.asInstanceOf[`64`]
+  
+  inline def CreateShortcut: `65` = 65.asInstanceOf[`65`]
+  
+  inline def CurrentGroupingLevel: `117` = 117.asInstanceOf[`117`]
+  
+  inline def CustomizePropertyFolder: `144` = 144.asInstanceOf[`144`]
+  
+  inline def Cut: `74` = 74.asInstanceOf[`74`]
+  
+  inline def Delete: `76` = 76.asInstanceOf[`76`]
+  
+  inline def DeleteAll: `90` = 90.asInstanceOf[`90`]
+  
+  inline def Destroy: `91` = 91.asInstanceOf[`91`]
+  
+  inline def DiscardFileModifications: `171` = 171.asInstanceOf[`171`]
+  
+  inline def EditCollectionMembership: `96` = 96.asInstanceOf[`96`]
+  
+  inline def EditOneAnnotation: `159` = 159.asInstanceOf[`159`]
+  
+  inline def EditRelationship: `99` = 99.asInstanceOf[`99`]
+  
+  inline def EndCoauthoring: `131` = 131.asInstanceOf[`131`]
+  
+  inline def ExportObjects: `79` = 79.asInstanceOf[`79`]
+  
+  inline def ExportSearchBarConditions: `80` = 80.asInstanceOf[`80`]
+  
+  inline def FIRST: `1` = 1.asInstanceOf[`1`]
+  
+  inline def GoOffline: `35` = 35.asInstanceOf[`35`]
+  
+  inline def GoOnline: `34` = 34.asInstanceOf[`34`]
+  
+  inline def GoToCustomView: `124` = 124.asInstanceOf[`124`]
+  
+  inline def GroupBy: `121` = 121.asInstanceOf[`121`]
+  
+  inline def GroupFoldersBy: `122` = 122.asInstanceOf[`122`]
+  
+  inline def GroupFoldersByFirstLetters: `115` = 115.asInstanceOf[`115`]
+  
+  inline def GroupObjectsByFirstLetters: `114` = 114.asInstanceOf[`114`]
+  
+  inline def GroupObjectsByObjectType: `54` = 54.asInstanceOf[`54`]
+  
+  inline def GroupViewsAndFolders: `55` = 55.asInstanceOf[`55`]
+  
+  inline def HideAllVisualAnnotations: `158` = 158.asInstanceOf[`158`]
+  
+  inline def HideOrShowEmptyFolders: `119` = 119.asInstanceOf[`119`]
+  
+  inline def HideView: `56` = 56.asInstanceOf[`56`]
+  
+  inline def HitHighlighting: `128` = 128.asInstanceOf[`128`]
+  
+  inline def ImportFilesAndFolders: `8` = 8.asInstanceOf[`8`]
+  
+  inline def InvertSelection: `86` = 86.asInstanceOf[`86`]
+  
+  inline def LAST: `174` = 174.asInstanceOf[`174`]
+  
+  inline def LabelThisVersion: `93` = 93.asInstanceOf[`93`]
+  
+  inline def LogOut: `36` = 36.asInstanceOf[`36`]
+  
+  inline def MFilesGuidedTour: `142` = 142.asInstanceOf[`142`]
+  
+  inline def MFilesHelp: `141` = 141.asInstanceOf[`141`]
+  
+  inline def MakeCopy: `9` = 9.asInstanceOf[`9`]
+  
+  inline def MarkApproved: `163` = 163.asInstanceOf[`163`]
+  
+  inline def MarkComplete: `123` = 123.asInstanceOf[`123`]
+  
+  inline def MarkFolderForOfflineAvailability: `15` = 15.asInstanceOf[`15`]
+  
+  inline def MarkForArchiving: `28` = 28.asInstanceOf[`28`]
+  
+  inline def MarkForOfflineAvailability: `16` = 16.asInstanceOf[`16`]
+  
+  inline def MarkRejected: `164` = 164.asInstanceOf[`164`]
+  
+  inline def ModifyVersionDetails: `92` = 92.asInstanceOf[`92`]
+  
+  inline def NavigationPane_Off: `155` = 155.asInstanceOf[`155`]
+  
+  inline def NavigationPane_On: `154` = 154.asInstanceOf[`154`]
+  
+  inline def NewAnnotation: `161` = 161.asInstanceOf[`161`]
+  
+  inline def NewAssignment: `23` = 23.asInstanceOf[`23`]
+  
+  inline def NewObject: `87` = 87.asInstanceOf[`87`]
+  
+  inline def NewOfflineFilter: `3` = 3.asInstanceOf[`3`]
+  
+  inline def NewPropertyFolder: `5` = 5.asInstanceOf[`5`]
+  
+  inline def NewSubobject: `94` = 94.asInstanceOf[`94`]
+  
+  inline def NewTraditionalFolder: `4` = 4.asInstanceOf[`4`]
+  
+  inline def NewView: `2` = 2.asInstanceOf[`2`]
+  
+  inline def NewWindow: `78` = 78.asInstanceOf[`78`]
+  
+  inline def NotificationSettings: `39` = 39.asInstanceOf[`39`]
+  
+  inline def Paste: `75` = 75.asInstanceOf[`75`]
+  
+  inline def PasteAsMultiFileDocument: `84` = 84.asInstanceOf[`84`]
+  
+  inline def Properties: `14` = 14.asInstanceOf[`14`]
+  
+  inline def Refresh: `88` = 88.asInstanceOf[`88`]
+  
+  inline def RejectAssignment: `166` = 166.asInstanceOf[`166`]
+  
+  inline def RemoveCollectionMembership: `97` = 97.asInstanceOf[`97`]
+  
+  inline def RemoveCurrentGroupingLevel: `118` = 118.asInstanceOf[`118`]
+  
+  inline def RemoveDashboardFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
+  
+  inline def RemoveDashboardFromViewLocMain: `70` = 70.asInstanceOf[`70`]
+  
+  inline def RemoveDashboardFromViewLocRight: `71` = 71.asInstanceOf[`71`]
+  
+  inline def RemoveFromFavorites: `63` = 63.asInstanceOf[`63`]
+  
+  inline def RemoveOfflineAvailability: `17` = 17.asInstanceOf[`17`]
+  
+  inline def RemoveRelationship: `100` = 100.asInstanceOf[`100`]
+  
+  inline def RemoveReportFromViewLocBottom: `72` = 72.asInstanceOf[`72`]
+  
+  inline def RemoveReportFromViewLocMain: `70` = 70.asInstanceOf[`70`]
+  
+  inline def RemoveReportFromViewLocRight: `71` = 71.asInstanceOf[`71`]
+  
+  inline def Rename: `77` = 77.asInstanceOf[`77`]
+  
+  inline def ReplaceWithFile: `33` = 33.asInstanceOf[`33`]
+  
+  inline def ReplaceWithFileFromScanner: `45` = 45.asInstanceOf[`45`]
+  
+  inline def ResetUISettingsToDefaults: `60` = 60.asInstanceOf[`60`]
+  
+  inline def ResolveConflictDiscardThis: `135` = 135.asInstanceOf[`135`]
+  
+  inline def ResolveConflictKeepThis: `134` = 134.asInstanceOf[`134`]
+  
+  inline def RightPane_Minimized: `149` = 149.asInstanceOf[`149`]
+  
+  inline def RightPane_Normal: `148` = 148.asInstanceOf[`148`]
+  
+  inline def RightPane_Off: `150` = 150.asInstanceOf[`150`]
+  
+  inline def RollBack: `89` = 89.asInstanceOf[`89`]
+  
+  inline def SaveAnnotation: `160` = 160.asInstanceOf[`160`]
+  
+  inline def SaveAsCommonUISettings: `61` = 61.asInstanceOf[`61`]
+  
+  inline def SaveAsPDF: `50` = 50.asInstanceOf[`50`]
+  
+  inline def SelectAll: `85` = 85.asInstanceOf[`85`]
+  
+  inline def SendCoauthoringLink: `133` = 133.asInstanceOf[`133`]
+  
+  inline def SendCopyByEmail: `48` = 48.asInstanceOf[`48`]
+  
+  inline def SendLinkByEmail: `47` = 47.asInstanceOf[`47`]
+  
+  inline def SendPDFByEmail: `49` = 49.asInstanceOf[`49`]
+  
+  inline def ServerAdmin: `38` = 38.asInstanceOf[`38`]
+  
+  inline def SharePublicLink: `168` = 168.asInstanceOf[`168`]
+  
+  inline def ShareViaSkyDrive: `137` = 137.asInstanceOf[`137`]
+  
+  inline def ShareViaSkyDriveAsPDF: `138` = 138.asInstanceOf[`138`]
+  
+  inline def SharedByMe: `169` = 169.asInstanceOf[`169`]
+  
+  inline def ShowAllVisualAnnotations: `157` = 157.asInstanceOf[`157`]
+  
+  inline def ShowAssignments: `24` = 24.asInstanceOf[`24`]
+  
+  inline def ShowBottomPane: `52` = 52.asInstanceOf[`52`]
+  
+  inline def ShowCollectionMembers: `20` = 20.asInstanceOf[`20`]
+  
+  inline def ShowComments: `22` = 22.asInstanceOf[`22`]
+  
+  inline def ShowHistory: `18` = 18.asInstanceOf[`18`]
+  
+  inline def ShowMetadataInBottomPane: `140` = 140.asInstanceOf[`140`]
+  
+  inline def ShowMetadataInRightPane: `139` = 139.asInstanceOf[`139`]
+  
+  inline def ShowNavigationPane: `143` = 143.asInstanceOf[`143`]
+  
+  inline def ShowOriginalObject: `132` = 132.asInstanceOf[`132`]
+  
+  inline def ShowPreviewPane: `53` = 53.asInstanceOf[`53`]
+  
+  inline def ShowPropertiesPane: `52` = 52.asInstanceOf[`52`]
+  
+  inline def ShowRelationships: `19` = 19.asInstanceOf[`19`]
+  
+  inline def ShowRightPane: `53` = 53.asInstanceOf[`53`]
+  
+  inline def ShowSearchRefinementOptions: `173` = 173.asInstanceOf[`173`]
+  
+  inline def ShowSearchResultsFromMultipleVaults: `172` = 172.asInstanceOf[`172`]
+  
+  inline def ShowVisualAnnotations: `156` = 156.asInstanceOf[`156`]
+  
+  inline def SubMenu_Archiving: `109` = 109.asInstanceOf[`109`]
+  
+  inline def SubMenu_BrowseRelatedObjects: `108` = 108.asInstanceOf[`108`]
+  
+  inline def SubMenu_Dashboards: `113` = 113.asInstanceOf[`113`]
+  
+  inline def SubMenu_DisplayMode: `105` = 105.asInstanceOf[`105`]
+  
+  inline def SubMenu_NewFile: `102` = 102.asInstanceOf[`102`]
+  
+  inline def SubMenu_NewObject: `101` = 101.asInstanceOf[`101`]
+  
+  inline def SubMenu_OfflineAvailability: `107` = 107.asInstanceOf[`107`]
+  
+  inline def SubMenu_RefreshExtObjects: `112` = 112.asInstanceOf[`112`]
+  
+  inline def SubMenu_Reports: `113` = 113.asInstanceOf[`113`]
+  
+  inline def SubMenu_ScanningAndOCR: `111` = 111.asInstanceOf[`111`]
+  
+  inline def SubMenu_Send: `104` = 104.asInstanceOf[`104`]
+  
+  inline def SubMenu_WindowsCommands: `103` = 103.asInstanceOf[`103`]
+  
+  inline def SubMenu_Workflow: `110` = 110.asInstanceOf[`110`]
+  
+  inline def Submenu_DocumentX: `127` = 127.asInstanceOf[`127`]
+  
+  inline def Submenu_VaultX: `125` = 125.asInstanceOf[`125`]
+  
+  inline def Submenu_ViewX: `126` = 126.asInstanceOf[`126`]
+  
+  inline def SubstituteUsers: `51` = 51.asInstanceOf[`51`]
+  
+  inline def UncustomizePropertyFolder: `145` = 145.asInstanceOf[`145`]
+  
+  inline def Undefined: `0` = 0.asInstanceOf[`0`]
+  
+  inline def Undelete: `30` = 30.asInstanceOf[`30`]
+  
+  inline def UndoCheckOut: `13` = 13.asInstanceOf[`13`]
+  
+  inline def UnhideView: `57` = 57.asInstanceOf[`57`]
+  
+  inline def UnhideViews: `59` = 59.asInstanceOf[`59`]
+  
+  inline def UploadFiles: `170` = 170.asInstanceOf[`170`]
+  
+  inline def UseCompactLayout: `147` = 147.asInstanceOf[`147`]
+  
+  inline def UseNormalLayout: `146` = 146.asInstanceOf[`146`]
+  
+  inline def ViewEditSubobjects: `21` = 21.asInstanceOf[`21`]
+  
+  inline def Workflow: `27` = 27.asInstanceOf[`27`]
 }
-

@@ -1,19 +1,52 @@
 package typingsJapgolly.reactElemental.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-elemental", "sizes")
-@js.native
-object sizes extends js.Object {
-  var alpha: String = js.native
-  var beta: String = js.native
-  var delta: String = js.native
-  var epsilon: String = js.native
-  var gamma: String = js.native
-  var iota: String = js.native
-  var kilo: String = js.native
-  var lambda: String = js.native
+object sizes {
+  
+  @JSImport("react-elemental", "sizes")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-elemental", "sizes.alpha")
+  @js.native
+  def alpha: String = js.native
+  inline def alpha_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("alpha")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.beta")
+  @js.native
+  def beta: String = js.native
+  inline def beta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("beta")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.delta")
+  @js.native
+  def delta: String = js.native
+  inline def delta_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delta")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.epsilon")
+  @js.native
+  def epsilon: String = js.native
+  inline def epsilon_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("epsilon")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.gamma")
+  @js.native
+  def gamma: String = js.native
+  inline def gamma_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gamma")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.iota")
+  @js.native
+  def iota: String = js.native
+  inline def iota_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("iota")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.kilo")
+  @js.native
+  def kilo: String = js.native
+  inline def kilo_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("kilo")(x.asInstanceOf[js.Any])
+  
+  @JSImport("react-elemental", "sizes.lambda")
+  @js.native
+  def lambda: String = js.native
+  inline def lambda_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lambda")(x.asInstanceOf[js.Any])
 }
-

@@ -1,16 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the current network security settings. */
-@JSGlobal("Windows.Networking.Connectivity.NetworkSecuritySettings")
-@js.native
-abstract class NetworkSecuritySettings () extends js.Object {
+trait NetworkSecuritySettings extends StObject {
+  
   /** Retrieves the type of authentication used by the network. */
-  var networkAuthenticationType: NetworkAuthenticationType = js.native
+  var networkAuthenticationType: NetworkAuthenticationType
+  
   /** Retrieves the type of encryption used by the network. */
-  var networkEncryptionType: NetworkEncryptionType = js.native
+  var networkEncryptionType: NetworkEncryptionType
 }
-
+object NetworkSecuritySettings {
+  
+  inline def apply(networkAuthenticationType: NetworkAuthenticationType, networkEncryptionType: NetworkEncryptionType): NetworkSecuritySettings = {
+    val __obj = js.Dynamic.literal(networkAuthenticationType = networkAuthenticationType.asInstanceOf[js.Any], networkEncryptionType = networkEncryptionType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkSecuritySettings]
+  }
+  
+  extension [Self <: NetworkSecuritySettings](x: Self) {
+    
+    inline def setNetworkAuthenticationType(value: NetworkAuthenticationType): Self = StObject.set(x, "networkAuthenticationType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkEncryptionType(value: NetworkEncryptionType): Self = StObject.set(x, "networkEncryptionType", value.asInstanceOf[js.Any])
+  }
+}

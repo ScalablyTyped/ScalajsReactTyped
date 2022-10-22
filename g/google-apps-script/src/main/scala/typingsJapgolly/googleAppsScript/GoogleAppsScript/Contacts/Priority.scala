@@ -1,38 +1,30 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Priority extends js.Object
-
+sealed trait Priority extends StObject
 /**
   * An enum for contact priority.
   */
 @JSGlobal("GoogleAppsScript.Contacts.Priority")
 @js.native
-object Priority extends js.Object {
-  @js.native
-  sealed trait HIGH extends Priority
+object Priority extends StObject {
   
   @js.native
-  sealed trait LOW extends Priority
+  sealed trait HIGH
+    extends StObject
+       with Priority
   
   @js.native
-  sealed trait NORMAL extends Priority
+  sealed trait LOW
+    extends StObject
+       with Priority
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Priority with Double] = js.native
-  /* 0 */ @js.native
-  object HIGH extends TopLevel[HIGH with Double]
-  
-  /* 1 */ @js.native
-  object LOW extends TopLevel[LOW with Double]
-  
-  /* 2 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
-  
+  @js.native
+  sealed trait NORMAL
+    extends StObject
+       with Priority
 }
-

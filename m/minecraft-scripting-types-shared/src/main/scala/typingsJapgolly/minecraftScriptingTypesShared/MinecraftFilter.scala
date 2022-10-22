@@ -15,42 +15,69 @@ import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesShar
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.player
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.self
 import typingsJapgolly.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.target
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MinecraftFilter extends js.Object {
+trait MinecraftFilter extends StObject {
+  
   var all_of: js.UndefOr[js.Array[MinecraftFilter]] = js.undefined
+  
   var any_of: js.UndefOr[js.Array[MinecraftFilter]] = js.undefined
+  
   var domain: js.UndefOr[String] = js.undefined
+  
   var operator: js.UndefOr[
     ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not
   ] = js.undefined
+  
   var subject: js.UndefOr[other | parent | player | self | target] = js.undefined
+  
   var test: js.UndefOr[String] = js.undefined
-  var value: js.UndefOr[js.Any] = js.undefined
+  
+  var value: js.UndefOr[Any] = js.undefined
 }
-
 object MinecraftFilter {
-  @scala.inline
-  def apply(
-    all_of: js.Array[MinecraftFilter] = null,
-    any_of: js.Array[MinecraftFilter] = null,
-    domain: String = null,
-    operator: ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not = null,
-    subject: other | parent | player | self | target = null,
-    test: String = null,
-    value: js.Any = null
-  ): MinecraftFilter = {
+  
+  inline def apply(): MinecraftFilter = {
     val __obj = js.Dynamic.literal()
-    if (all_of != null) __obj.updateDynamic("all_of")(all_of.asInstanceOf[js.Any])
-    if (any_of != null) __obj.updateDynamic("any_of")(any_of.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (operator != null) __obj.updateDynamic("operator")(operator.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MinecraftFilter]
   }
+  
+  extension [Self <: MinecraftFilter](x: Self) {
+    
+    inline def setAll_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "all_of", value.asInstanceOf[js.Any])
+    
+    inline def setAll_ofUndefined: Self = StObject.set(x, "all_of", js.undefined)
+    
+    inline def setAll_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "all_of", js.Array(value*))
+    
+    inline def setAny_of(value: js.Array[MinecraftFilter]): Self = StObject.set(x, "any_of", value.asInstanceOf[js.Any])
+    
+    inline def setAny_ofUndefined: Self = StObject.set(x, "any_of", js.undefined)
+    
+    inline def setAny_ofVarargs(value: MinecraftFilter*): Self = StObject.set(x, "any_of", js.Array(value*))
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setOperator(
+      value: ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not
+    ): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    
+    inline def setSubject(value: other | parent | player | self | target): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setTest(value: String): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    
+    inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+    
+    inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.escpos.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.escpos.escposStrings.NORMAL
@@ -18,34 +18,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.escpos.escposStrings.IU
   - typingsJapgolly.escpos.escposStrings.IU2
 */
-trait TXT_STYLE extends js.Object
-
+trait TXT_STYLE extends StObject
 object TXT_STYLE {
-  @scala.inline
-  def B: typingsJapgolly.escpos.escposStrings.B = this.cast("B")
-  @scala.inline
-  def BI: typingsJapgolly.escpos.escposStrings.BI = this.cast("BI")
-  @scala.inline
-  def BIU: typingsJapgolly.escpos.escposStrings.BIU = this.cast("BIU")
-  @scala.inline
-  def BIU2: typingsJapgolly.escpos.escposStrings.BIU2 = this.cast("BIU2")
-  @scala.inline
-  def BU: typingsJapgolly.escpos.escposStrings.BU = this.cast("BU")
-  @scala.inline
-  def BU2: typingsJapgolly.escpos.escposStrings.BU2 = this.cast("BU2")
-  @scala.inline
-  def I: typingsJapgolly.escpos.escposStrings.I = this.cast("I")
-  @scala.inline
-  def IU: typingsJapgolly.escpos.escposStrings.IU = this.cast("IU")
-  @scala.inline
-  def IU2: typingsJapgolly.escpos.escposStrings.IU2 = this.cast("IU2")
-  @scala.inline
-  def NORMAL: typingsJapgolly.escpos.escposStrings.NORMAL = this.cast("NORMAL")
-  @scala.inline
-  def U: typingsJapgolly.escpos.escposStrings.U = this.cast("U")
-  @scala.inline
-  def U2: typingsJapgolly.escpos.escposStrings.U2 = this.cast("U2")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def B: typingsJapgolly.escpos.escposStrings.B = "B".asInstanceOf[typingsJapgolly.escpos.escposStrings.B]
+  
+  inline def BI: typingsJapgolly.escpos.escposStrings.BI = "BI".asInstanceOf[typingsJapgolly.escpos.escposStrings.BI]
+  
+  inline def BIU: typingsJapgolly.escpos.escposStrings.BIU = "BIU".asInstanceOf[typingsJapgolly.escpos.escposStrings.BIU]
+  
+  inline def BIU2: typingsJapgolly.escpos.escposStrings.BIU2 = "BIU2".asInstanceOf[typingsJapgolly.escpos.escposStrings.BIU2]
+  
+  inline def BU: typingsJapgolly.escpos.escposStrings.BU = "BU".asInstanceOf[typingsJapgolly.escpos.escposStrings.BU]
+  
+  inline def BU2: typingsJapgolly.escpos.escposStrings.BU2 = "BU2".asInstanceOf[typingsJapgolly.escpos.escposStrings.BU2]
+  
+  inline def I: typingsJapgolly.escpos.escposStrings.I = "I".asInstanceOf[typingsJapgolly.escpos.escposStrings.I]
+  
+  inline def IU: typingsJapgolly.escpos.escposStrings.IU = "IU".asInstanceOf[typingsJapgolly.escpos.escposStrings.IU]
+  
+  inline def IU2: typingsJapgolly.escpos.escposStrings.IU2 = "IU2".asInstanceOf[typingsJapgolly.escpos.escposStrings.IU2]
+  
+  inline def NORMAL: typingsJapgolly.escpos.escposStrings.NORMAL = "NORMAL".asInstanceOf[typingsJapgolly.escpos.escposStrings.NORMAL]
+  
+  inline def U: typingsJapgolly.escpos.escposStrings.U = "U".asInstanceOf[typingsJapgolly.escpos.escposStrings.U]
+  
+  inline def U2: typingsJapgolly.escpos.escposStrings.U2 = "U2".asInstanceOf[typingsJapgolly.escpos.escposStrings.U2]
 }
-

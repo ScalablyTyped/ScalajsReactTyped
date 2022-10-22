@@ -1,20 +1,22 @@
 package typingsJapgolly.nodegit
 
 import typingsJapgolly.nodegit.oidMod.Oid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("nodegit/push-update", JSImport.Namespace)
-@js.native
-object pushUpdateMod extends js.Object {
+object pushUpdateMod {
+  
+  @JSImport("nodegit/push-update", "PushUpdate")
   @js.native
-  class PushUpdate () extends js.Object {
+  open class PushUpdate () extends StObject {
+    
     var dst: Oid = js.native
+    
     var dstRefname: String = js.native
+    
     var src: Oid = js.native
+    
     var srcRefname: String = js.native
   }
-  
 }
-

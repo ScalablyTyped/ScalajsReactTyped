@@ -1,65 +1,64 @@
 package typingsJapgolly.reactSortablePane.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.reactSortablePane.AnonHeight
-import typingsJapgolly.reactSortablePane.paneMod.IsPaneResizable
-import typingsJapgolly.reactSortablePane.paneMod.PaneProps
-import typingsJapgolly.reactSortablePane.paneMod.PaneSize
+import typingsJapgolly.reactSortablePane.anon.Height
+import typingsJapgolly.reactSortablePane.libPaneMod.IsPaneResizable
+import typingsJapgolly.reactSortablePane.libPaneMod.PaneProps
+import typingsJapgolly.reactSortablePane.libPaneMod.PaneSize
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pane {
-  def apply(
-    StringDictionary: /* otherProps */ StringDictionary[js.Any] = null,
-    className: String = null,
-    defaultSize: AnonHeight = null,
-    grid: js.Tuple2[Double, Double] = null,
-    maxHeight: PaneSize = null,
-    maxWidth: PaneSize = null,
-    minHeight: PaneSize = null,
-    minWidth: PaneSize = null,
-    onSizeChange: js.UndefOr[Callback] = js.undefined,
-    resizable: IsPaneResizable = null,
-    size: AnonHeight = null,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: String | Node = null
-  ): UnmountedWithRoot[PaneProps, typingsJapgolly.reactSortablePane.mod.Pane, Unit, PaneProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    onSizeChange.foreach(p => __obj.updateDynamic("onSizeChange")(p.toJsFn))
-    if (resizable != null) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSortablePane.paneMod.PaneProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactSortablePane.mod.Pane](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSortablePane.paneMod.PaneProps])
-  }
   @JSImport("react-sortable-pane", "Pane")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactSortablePane.mod.Pane] {
+    
+    inline def children(value: String | Node): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultSize(value: Height): this.type = set("defaultSize", value.asInstanceOf[js.Any])
+    
+    inline def grid(value: js.Tuple2[Double, Double]): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def maxHeight(value: PaneSize): this.type = set("maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def maxWidth(value: PaneSize): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def minHeight(value: PaneSize): this.type = set("minHeight", value.asInstanceOf[js.Any])
+    
+    inline def minWidth(value: PaneSize): this.type = set("minWidth", value.asInstanceOf[js.Any])
+    
+    inline def onSizeChange(value: Callback): this.type = set("onSizeChange", value.toJsFn)
+    
+    inline def resizable(value: IsPaneResizable): this.type = set("resizable", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Height): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Pane.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PaneProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

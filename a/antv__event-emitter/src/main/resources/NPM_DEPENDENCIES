@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@antv/event-emitter" : "0.1.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@antv/event-emitter" : "0.1.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

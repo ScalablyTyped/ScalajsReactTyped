@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTitlePosition extends js.Object
-
+sealed trait ChartTitlePosition extends StObject
 /**
+  * Represents the position of the chart title.
   *
-  * Represents the position of chart title.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTitlePosition")
 @js.native
-object ChartTitlePosition extends js.Object {
+object ChartTitlePosition extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait automatic extends ChartTitlePosition
+  sealed trait automatic
+    extends StObject
+       with ChartTitlePosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait bottom extends ChartTitlePosition
+  sealed trait bottom
+    extends StObject
+       with ChartTitlePosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait left extends ChartTitlePosition
+  sealed trait left
+    extends StObject
+       with ChartTitlePosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait right extends ChartTitlePosition
+  sealed trait right
+    extends StObject
+       with ChartTitlePosition
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait top extends ChartTitlePosition
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartTitlePosition with String] = js.native
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Bottom" */ @js.native
-  object bottom extends TopLevel[bottom with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
-  /* "Top" */ @js.native
-  object top extends TopLevel[top with String]
-  
+  sealed trait top
+    extends StObject
+       with ChartTitlePosition
 }
-

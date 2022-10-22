@@ -3,64 +3,129 @@ package typingsJapgolly.yandexMaps.mod
 import typingsJapgolly.yandexMaps.yandexMapsStrings.always
 import typingsJapgolly.yandexMaps.yandexMapsStrings.ifNull
 import typingsJapgolly.yandexMaps.yandexMapsStrings.none
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMapOptions extends js.Object {
+trait IMapOptions extends StObject {
+  
   var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.undefined
+  
   var avoidFractionalZoom: js.UndefOr[Boolean] = js.undefined
+  
+  var copyrightLogoVisible: js.UndefOr[Boolean] = js.undefined
+  
+  var copyrightProvidersVisible: js.UndefOr[Boolean] = js.undefined
+  
+  var copyrightUaVisible: js.UndefOr[Boolean] = js.undefined
+  
   var exitFullscreenByEsc: js.UndefOr[Boolean] = js.undefined
+  
   var fullscreenZIndex: js.UndefOr[Double] = js.undefined
+  
   var mapAutoFocus: js.UndefOr[Boolean] = js.undefined
+  
   var maxAnimationZoomDifference: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var nativeFullscreen: js.UndefOr[Boolean] = js.undefined
+  
   var projection: js.UndefOr[IProjection] = js.undefined
-  var restrictMapArea: js.UndefOr[Boolean] = js.undefined
+  
+  var restrictMapArea: js.UndefOr[Boolean | js.Array[js.Array[Double]]] = js.undefined
+  
   var suppressMapOpenBlock: js.UndefOr[Boolean] = js.undefined
+  
   var suppressObsoleteBrowserNotifier: js.UndefOr[Boolean] = js.undefined
+  
   var yandexMapAutoSwitch: js.UndefOr[Boolean] = js.undefined
+  
   var yandexMapDisablePoiInteractivity: js.UndefOr[Boolean] = js.undefined
 }
-
 object IMapOptions {
-  @scala.inline
-  def apply(
-    autoFitToViewport: none | ifNull | always = null,
-    avoidFractionalZoom: js.UndefOr[Boolean] = js.undefined,
-    exitFullscreenByEsc: js.UndefOr[Boolean] = js.undefined,
-    fullscreenZIndex: Int | Double = null,
-    mapAutoFocus: js.UndefOr[Boolean] = js.undefined,
-    maxAnimationZoomDifference: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    nativeFullscreen: js.UndefOr[Boolean] = js.undefined,
-    projection: IProjection = null,
-    restrictMapArea: js.UndefOr[Boolean] = js.undefined,
-    suppressMapOpenBlock: js.UndefOr[Boolean] = js.undefined,
-    suppressObsoleteBrowserNotifier: js.UndefOr[Boolean] = js.undefined,
-    yandexMapAutoSwitch: js.UndefOr[Boolean] = js.undefined,
-    yandexMapDisablePoiInteractivity: js.UndefOr[Boolean] = js.undefined
-  ): IMapOptions = {
+  
+  inline def apply(): IMapOptions = {
     val __obj = js.Dynamic.literal()
-    if (autoFitToViewport != null) __obj.updateDynamic("autoFitToViewport")(autoFitToViewport.asInstanceOf[js.Any])
-    if (!js.isUndefined(avoidFractionalZoom)) __obj.updateDynamic("avoidFractionalZoom")(avoidFractionalZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(exitFullscreenByEsc)) __obj.updateDynamic("exitFullscreenByEsc")(exitFullscreenByEsc.asInstanceOf[js.Any])
-    if (fullscreenZIndex != null) __obj.updateDynamic("fullscreenZIndex")(fullscreenZIndex.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapAutoFocus)) __obj.updateDynamic("mapAutoFocus")(mapAutoFocus.asInstanceOf[js.Any])
-    if (maxAnimationZoomDifference != null) __obj.updateDynamic("maxAnimationZoomDifference")(maxAnimationZoomDifference.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(nativeFullscreen)) __obj.updateDynamic("nativeFullscreen")(nativeFullscreen.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (!js.isUndefined(restrictMapArea)) __obj.updateDynamic("restrictMapArea")(restrictMapArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressMapOpenBlock)) __obj.updateDynamic("suppressMapOpenBlock")(suppressMapOpenBlock.asInstanceOf[js.Any])
-    if (!js.isUndefined(suppressObsoleteBrowserNotifier)) __obj.updateDynamic("suppressObsoleteBrowserNotifier")(suppressObsoleteBrowserNotifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(yandexMapAutoSwitch)) __obj.updateDynamic("yandexMapAutoSwitch")(yandexMapAutoSwitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(yandexMapDisablePoiInteractivity)) __obj.updateDynamic("yandexMapDisablePoiInteractivity")(yandexMapDisablePoiInteractivity.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapOptions]
   }
+  
+  extension [Self <: IMapOptions](x: Self) {
+    
+    inline def setAutoFitToViewport(value: none | ifNull | always): Self = StObject.set(x, "autoFitToViewport", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFitToViewportUndefined: Self = StObject.set(x, "autoFitToViewport", js.undefined)
+    
+    inline def setAvoidFractionalZoom(value: Boolean): Self = StObject.set(x, "avoidFractionalZoom", value.asInstanceOf[js.Any])
+    
+    inline def setAvoidFractionalZoomUndefined: Self = StObject.set(x, "avoidFractionalZoom", js.undefined)
+    
+    inline def setCopyrightLogoVisible(value: Boolean): Self = StObject.set(x, "copyrightLogoVisible", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightLogoVisibleUndefined: Self = StObject.set(x, "copyrightLogoVisible", js.undefined)
+    
+    inline def setCopyrightProvidersVisible(value: Boolean): Self = StObject.set(x, "copyrightProvidersVisible", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightProvidersVisibleUndefined: Self = StObject.set(x, "copyrightProvidersVisible", js.undefined)
+    
+    inline def setCopyrightUaVisible(value: Boolean): Self = StObject.set(x, "copyrightUaVisible", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightUaVisibleUndefined: Self = StObject.set(x, "copyrightUaVisible", js.undefined)
+    
+    inline def setExitFullscreenByEsc(value: Boolean): Self = StObject.set(x, "exitFullscreenByEsc", value.asInstanceOf[js.Any])
+    
+    inline def setExitFullscreenByEscUndefined: Self = StObject.set(x, "exitFullscreenByEsc", js.undefined)
+    
+    inline def setFullscreenZIndex(value: Double): Self = StObject.set(x, "fullscreenZIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFullscreenZIndexUndefined: Self = StObject.set(x, "fullscreenZIndex", js.undefined)
+    
+    inline def setMapAutoFocus(value: Boolean): Self = StObject.set(x, "mapAutoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setMapAutoFocusUndefined: Self = StObject.set(x, "mapAutoFocus", js.undefined)
+    
+    inline def setMaxAnimationZoomDifference(value: Double): Self = StObject.set(x, "maxAnimationZoomDifference", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAnimationZoomDifferenceUndefined: Self = StObject.set(x, "maxAnimationZoomDifference", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setNativeFullscreen(value: Boolean): Self = StObject.set(x, "nativeFullscreen", value.asInstanceOf[js.Any])
+    
+    inline def setNativeFullscreenUndefined: Self = StObject.set(x, "nativeFullscreen", js.undefined)
+    
+    inline def setProjection(value: IProjection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    
+    inline def setRestrictMapArea(value: Boolean | js.Array[js.Array[Double]]): Self = StObject.set(x, "restrictMapArea", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictMapAreaUndefined: Self = StObject.set(x, "restrictMapArea", js.undefined)
+    
+    inline def setRestrictMapAreaVarargs(value: js.Array[Double]*): Self = StObject.set(x, "restrictMapArea", js.Array(value*))
+    
+    inline def setSuppressMapOpenBlock(value: Boolean): Self = StObject.set(x, "suppressMapOpenBlock", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressMapOpenBlockUndefined: Self = StObject.set(x, "suppressMapOpenBlock", js.undefined)
+    
+    inline def setSuppressObsoleteBrowserNotifier(value: Boolean): Self = StObject.set(x, "suppressObsoleteBrowserNotifier", value.asInstanceOf[js.Any])
+    
+    inline def setSuppressObsoleteBrowserNotifierUndefined: Self = StObject.set(x, "suppressObsoleteBrowserNotifier", js.undefined)
+    
+    inline def setYandexMapAutoSwitch(value: Boolean): Self = StObject.set(x, "yandexMapAutoSwitch", value.asInstanceOf[js.Any])
+    
+    inline def setYandexMapAutoSwitchUndefined: Self = StObject.set(x, "yandexMapAutoSwitch", js.undefined)
+    
+    inline def setYandexMapDisablePoiInteractivity(value: Boolean): Self = StObject.set(x, "yandexMapDisablePoiInteractivity", value.asInstanceOf[js.Any])
+    
+    inline def setYandexMapDisablePoiInteractivityUndefined: Self = StObject.set(x, "yandexMapDisablePoiInteractivity", js.undefined)
+  }
 }
-

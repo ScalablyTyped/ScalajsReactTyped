@@ -1,693 +1,649 @@
 package typingsJapgolly.webpack
 
-import typingsJapgolly.webpack.mod.LibraryTarget
-import typingsJapgolly.webpack.mod.Options._Devtool
-import typingsJapgolly.webpack.mod.Stats.ReasonType
-import typingsJapgolly.webpack.mod.Stats._Preset
+import typingsJapgolly.webpack.mod.ContextMode
+import typingsJapgolly.webpack.mod.ExternalsType
+import typingsJapgolly.webpack.mod.ProblemType
+import typingsJapgolly.webpack.mod._StatsValue
+import typingsJapgolly.webpack.webpack.HotUpdateStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackStrings {
-  @js.native
-  sealed trait `@cheap-eval-source-map` extends _Devtool
   
   @js.native
-  sealed trait `@cheap-module-eval-source-map` extends _Devtool
+  sealed trait default extends StObject
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait `@cheap-module-source-map` extends _Devtool
+  sealed trait DotDotDot extends StObject
+  inline def DotDotDot: DotDotDot = "...".asInstanceOf[DotDotDot]
   
   @js.native
-  sealed trait `@cheap-source-map` extends _Devtool
+  sealed trait RegExp extends StObject
+  inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
   
   @js.native
-  sealed trait `@eval` extends _Devtool
+  sealed trait __webpack_require__ extends StObject
+  inline def __webpack_require__ : __webpack_require__ = "__webpack_require__".asInstanceOf[__webpack_require__]
   
   @js.native
-  sealed trait `@eval-source-map` extends _Devtool
+  sealed trait abort
+    extends StObject
+       with HotUpdateStatus
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait `@hidden-source-map` extends _Devtool
+  sealed trait `accept-error-handler-errored` extends StObject
+  inline def `accept-error-handler-errored`: `accept-error-handler-errored` = "accept-error-handler-errored".asInstanceOf[`accept-error-handler-errored`]
   
   @js.native
-  sealed trait `@inline-source-map` extends _Devtool
+  sealed trait `accept-errored` extends StObject
+  inline def `accept-errored`: `accept-errored` = "accept-errored".asInstanceOf[`accept-errored`]
   
   @js.native
-  sealed trait `@nosources-source-map` extends _Devtool
+  sealed trait accepted extends StObject
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
-  sealed trait `@source-map` extends _Devtool
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait `Numbersign@cheap-eval-source-map` extends _Devtool
+  sealed trait amd
+    extends StObject
+       with ExternalsType
+  inline def amd: amd = "amd".asInstanceOf[amd]
   
   @js.native
-  sealed trait `Numbersign@cheap-module-eval-source-map` extends _Devtool
+  sealed trait `amd-require`
+    extends StObject
+       with ExternalsType
+  inline def `amd-require`: `amd-require` = "amd-require".asInstanceOf[`amd-require`]
   
   @js.native
-  sealed trait `Numbersign@cheap-module-source-map` extends _Devtool
+  sealed trait anonymous extends StObject
+  inline def anonymous: anonymous = "anonymous".asInstanceOf[anonymous]
   
   @js.native
-  sealed trait `Numbersign@cheap-source-map` extends _Devtool
+  sealed trait apply
+    extends StObject
+       with HotUpdateStatus
+  inline def apply: apply = "apply".asInstanceOf[apply]
   
   @js.native
-  sealed trait `Numbersign@eval` extends _Devtool
+  sealed trait arrow extends StObject
+  inline def arrow: arrow = "arrow".asInstanceOf[arrow]
   
   @js.native
-  sealed trait `Numbersign@eval-source-map` extends _Devtool
+  sealed trait assign
+    extends StObject
+       with ExternalsType
+  inline def assign: assign = "assign".asInstanceOf[assign]
   
   @js.native
-  sealed trait `Numbersign@hidden-source-map` extends _Devtool
+  sealed trait async extends StObject
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
-  sealed trait `Numbersign@inline-source-map` extends _Devtool
+  sealed trait `async-weak`
+    extends StObject
+       with ContextMode
+  inline def `async-weak`: `async-weak` = "async-weak".asInstanceOf[`async-weak`]
   
   @js.native
-  sealed trait `Numbersign@nosources-source-map` extends _Devtool
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `Numbersign@source-map` extends _Devtool
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait `Numbersigncheap-eval-source-map` extends _Devtool
+  sealed trait boolean extends StObject
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait `Numbersigncheap-module-eval-source-map` extends _Devtool
+  sealed trait brotli extends StObject
+  inline def brotli: brotli = "brotli".asInstanceOf[brotli]
   
   @js.native
-  sealed trait `Numbersigncheap-module-source-map` extends _Devtool
+  sealed trait call extends StObject
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
-  sealed trait `Numbersigncheap-source-map` extends _Devtool
+  sealed trait check
+    extends StObject
+       with HotUpdateStatus
+  inline def check: check = "check".asInstanceOf[check]
   
   @js.native
-  sealed trait Numbersigneval extends _Devtool
+  sealed trait child extends StObject
+  inline def child: child = "child".asInstanceOf[child]
   
   @js.native
-  sealed trait `Numbersigneval-source-map` extends _Devtool
+  sealed trait chunk extends StObject
+  inline def chunk: chunk = "chunk".asInstanceOf[chunk]
   
   @js.native
-  sealed trait `Numbersignhidden-source-map` extends _Devtool
+  sealed trait commonjs
+    extends StObject
+       with ExternalsType
+  inline def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   
   @js.native
-  sealed trait `Numbersigninline-source-map` extends _Devtool
+  sealed trait `commonjs-module`
+    extends StObject
+       with ExternalsType
+  inline def `commonjs-module`: `commonjs-module` = "commonjs-module".asInstanceOf[`commonjs-module`]
   
   @js.native
-  sealed trait `Numbersignnosources-source-map` extends _Devtool
+  sealed trait `commonjs-static`
+    extends StObject
+       with ExternalsType
+  inline def `commonjs-static`: `commonjs-static` = "commonjs-static".asInstanceOf[`commonjs-static`]
   
   @js.native
-  sealed trait `Numbersignsource-map` extends _Devtool
+  sealed trait commonjs2
+    extends StObject
+       with ExternalsType
+  inline def commonjs2: commonjs2 = "commonjs2".asInstanceOf[commonjs2]
   
   @js.native
-  sealed trait `accepted harmony modules` extends ReasonType
+  sealed trait declined extends StObject
+  inline def declined: declined = "declined".asInstanceOf[declined]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait `default-only` extends StObject
+  inline def `default-only`: `default-only` = "default-only".asInstanceOf[`default-only`]
   
   @js.native
-  sealed trait amd extends LibraryTarget
+  sealed trait `default-with-named` extends StObject
+  inline def `default-with-named`: `default-with-named` = "default-with-named".asInstanceOf[`default-with-named`]
   
   @js.native
-  sealed trait `amd define` extends ReasonType
+  sealed trait dependencies extends StObject
+  inline def dependencies: dependencies = "dependencies".asInstanceOf[dependencies]
   
   @js.native
-  sealed trait `amd require` extends ReasonType
+  sealed trait detailed
+    extends StObject
+       with _StatsValue
+  inline def detailed: detailed = "detailed".asInstanceOf[detailed]
   
   @js.native
-  sealed trait `amd require array` extends ReasonType
+  sealed trait deterministic extends StObject
+  inline def deterministic: deterministic = "deterministic".asInstanceOf[deterministic]
   
   @js.native
-  sealed trait `amd require context` extends ReasonType
+  sealed trait development extends StObject
+  inline def development: development = "development".asInstanceOf[development]
   
   @js.native
-  sealed trait assign extends LibraryTarget
+  sealed trait dispose
+    extends StObject
+       with HotUpdateStatus
+  inline def dispose: dispose = "dispose".asInstanceOf[dispose]
   
   @js.native
-  sealed trait async extends js.Object
+  sealed trait disposed extends StObject
+  inline def disposed: disposed = "disposed".asInstanceOf[disposed]
   
   @js.native
-  sealed trait `async-node` extends js.Object
+  sealed trait dynamic extends StObject
+  inline def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
   
   @js.native
-  sealed trait atom extends js.Object
+  sealed trait eager
+    extends StObject
+       with ContextMode
+  inline def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait entries extends StObject
+  inline def entries: entries = "entries".asInstanceOf[entries]
   
   @js.native
-  sealed trait `cheap-eval-source-map` extends _Devtool
+  sealed trait `enum` extends StObject
+  inline def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
-  sealed trait `cheap-module-eval-source-map` extends _Devtool
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `cheap-module-source-map` extends _Devtool
+  sealed trait `errors-only`
+    extends StObject
+       with _StatsValue
+  inline def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
   
   @js.native
-  sealed trait `cheap-source-map` extends _Devtool
+  sealed trait `errors-warnings`
+    extends StObject
+       with _StatsValue
+  inline def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
   
   @js.native
-  sealed trait `cjs require` extends ReasonType
+  sealed trait `eval-only` extends StObject
+  inline def `eval-only`: `eval-only` = "eval-only".asInstanceOf[`eval-only`]
   
   @js.native
-  sealed trait `cjs require context` extends ReasonType
+  sealed trait expression extends StObject
+  inline def expression: expression = "expression".asInstanceOf[expression]
   
   @js.native
-  sealed trait commonjs extends LibraryTarget
+  sealed trait fail
+    extends StObject
+       with HotUpdateStatus
+  inline def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait commonjs2 extends LibraryTarget
+  sealed trait filesystem extends StObject
+  inline def filesystem: filesystem = "filesystem".asInstanceOf[filesystem]
   
   @js.native
-  sealed trait `context element` extends ReasonType
+  sealed trait flag extends StObject
+  inline def flag: flag = "flag".asInstanceOf[flag]
   
   @js.native
-  sealed trait `delegated exports` extends ReasonType
+  sealed trait flagged extends StObject
+  inline def flagged: flagged = "flagged".asInstanceOf[flagged]
   
   @js.native
-  sealed trait `delegated source` extends ReasonType
+  sealed trait global
+    extends StObject
+       with ExternalsType
+  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
-  sealed trait development extends js.Object
+  sealed trait gzip extends StObject
+  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
   
   @js.native
-  sealed trait `dll entry` extends ReasonType
+  sealed trait hashed extends StObject
+  inline def hashed: hashed = "hashed".asInstanceOf[hashed]
   
   @js.native
-  sealed trait electron extends js.Object
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait `electron-main` extends js.Object
+  sealed trait http extends StObject
+  inline def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait `electron-preload` extends js.Object
+  sealed trait https extends StObject
+  inline def https: https = "https".asInstanceOf[https]
   
   @js.native
-  sealed trait `electron-renderer` extends js.Object
+  sealed trait idle
+    extends StObject
+       with HotUpdateStatus
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
-  sealed trait empty extends js.Object
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait `import`
+    extends StObject
+       with ExternalsType
+  inline def `import`: `import` = "import".asInstanceOf[`import`]
   
   @js.native
-  sealed trait `errors-only` extends _Preset
+  sealed trait info extends StObject
+  inline def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait `errors-warnings` extends _Preset
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait eval extends _Devtool
+  sealed trait `invalid-value`
+    extends StObject
+       with ProblemType
+  inline def `invalid-value`: `invalid-value` = "invalid-value".asInstanceOf[`invalid-value`]
   
   @js.native
-  sealed trait `eval-source-map` extends _Devtool
+  sealed trait jsonp
+    extends StObject
+       with ExternalsType
+  inline def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
   
   @js.native
-  sealed trait exports extends js.Object
+  sealed trait latin1 extends StObject
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait global extends LibraryTarget
+  sealed trait `lazy`
+    extends StObject
+       with ContextMode
+  inline def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
-  sealed trait `harmony accept` extends ReasonType
+  sealed trait `lazy-once`
+    extends StObject
+       with ContextMode
+  inline def `lazy-once`: `lazy-once` = "lazy-once".asInstanceOf[`lazy-once`]
   
   @js.native
-  sealed trait `harmony export expression` extends ReasonType
+  sealed trait log extends StObject
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
-  sealed trait `harmony export header` extends ReasonType
+  sealed trait memory extends StObject
+  inline def memory: memory = "memory".asInstanceOf[memory]
   
   @js.native
-  sealed trait `harmony export imported specifier` extends ReasonType
+  sealed trait minimal
+    extends StObject
+       with _StatsValue
+  inline def minimal: minimal = "minimal".asInstanceOf[minimal]
   
   @js.native
-  sealed trait `harmony export specifier` extends ReasonType
+  sealed trait mock extends StObject
+  inline def mock: mock = "mock".asInstanceOf[mock]
   
   @js.native
-  sealed trait `harmony import specifier` extends ReasonType
+  sealed trait module
+    extends StObject
+       with ExternalsType
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
-  sealed trait `harmony init` extends ReasonType
+  sealed trait modules extends StObject
+  inline def modules: modules = "modules".asInstanceOf[modules]
   
   @js.native
-  sealed trait `harmony side effect evaluation` extends ReasonType
+  sealed trait multiple extends StObject
+  inline def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
-  sealed trait hashed extends js.Object
+  sealed trait `multiple-values-unexpected`
+    extends StObject
+       with ProblemType
+  inline def `multiple-values-unexpected`: `multiple-values-unexpected` = "multiple-values-unexpected".asInstanceOf[`multiple-values-unexpected`]
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait named extends StObject
+  inline def named: named = "named".asInstanceOf[named]
   
   @js.native
-  sealed trait `hidden-source-map` extends _Devtool
+  sealed trait namespace extends StObject
+  inline def namespace: namespace = "namespace".asInstanceOf[namespace]
   
   @js.native
-  sealed trait importLeftparenthesisRightparenthesis extends ReasonType
+  sealed trait natural extends StObject
+  inline def natural: natural = "natural".asInstanceOf[natural]
   
   @js.native
-  sealed trait `importLeftparenthesisRightparenthesis context development` extends ReasonType
+  sealed trait nested extends StObject
+  inline def nested: nested = "nested".asInstanceOf[nested]
   
   @js.native
-  sealed trait `importLeftparenthesisRightparenthesis context production` extends ReasonType
+  sealed trait `no provided info` extends StObject
+  inline def `no provided info`: `no provided info` = ("no provided info").asInstanceOf[`no provided info`]
   
   @js.native
-  sealed trait `importLeftparenthesisRightparenthesis eager` extends ReasonType
+  sealed trait `node-commonjs`
+    extends StObject
+       with ExternalsType
+  inline def `node-commonjs`: `node-commonjs` = "node-commonjs".asInstanceOf[`node-commonjs`]
   
   @js.native
-  sealed trait `importLeftparenthesisRightparenthesis weak` extends ReasonType
+  sealed trait none
+    extends StObject
+       with _StatsValue
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait normal
+    extends StObject
+       with _StatsValue
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait `inline-cheap-module-source-map` extends _Devtool
+  sealed trait `not provided` extends StObject
+  inline def `not provided`: `not provided` = ("not provided").asInstanceOf[`not provided`]
   
   @js.native
-  sealed trait `inline-cheap-source-map` extends _Devtool
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `inline-source-map` extends _Devtool
+  sealed trait `object` extends StObject
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait javascriptSlashauto extends js.Object
+  sealed trait pack extends StObject
+  inline def pack: pack = "pack".asInstanceOf[pack]
   
   @js.native
-  sealed trait javascriptSlashdynamic extends js.Object
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
   
   @js.native
-  sealed trait javascriptSlashesm extends js.Object
+  sealed trait path extends StObject
+  inline def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait post extends StObject
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait `json exports` extends ReasonType
+  sealed trait pre extends StObject
+  inline def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait jsonp extends LibraryTarget
+  sealed trait prepare
+    extends StObject
+       with HotUpdateStatus
+  inline def prepare: prepare = "prepare".asInstanceOf[prepare]
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait production extends StObject
+  inline def production: production = "production".asInstanceOf[production]
   
   @js.native
-  sealed trait loader extends ReasonType
+  sealed trait promise
+    extends StObject
+       with ExternalsType
+  inline def promise: promise = "promise".asInstanceOf[promise]
   
   @js.native
-  sealed trait minimal extends _Preset
+  sealed trait provided extends StObject
+  inline def provided: provided = "provided".asInstanceOf[provided]
   
   @js.native
-  sealed trait mock extends js.Object
+  sealed trait ready
+    extends StObject
+       with HotUpdateStatus
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait module extends js.Object
+  sealed trait redirect extends StObject
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait moduleDothotDotaccept extends ReasonType
+  sealed trait `redirect-warn` extends StObject
+  inline def `redirect-warn`: `redirect-warn` = "redirect-warn".asInstanceOf[`redirect-warn`]
   
   @js.native
-  sealed trait moduleDothotDotdecline extends ReasonType
+  sealed trait relative extends StObject
+  inline def relative: relative = "relative".asInstanceOf[relative]
   
   @js.native
-  sealed trait `multi entry` extends ReasonType
+  sealed trait require extends StObject
+  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
-  sealed trait multiple extends js.Object
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait named extends js.Object
+  sealed trait `root-of-chunk` extends StObject
+  inline def `root-of-chunk`: `root-of-chunk` = "root-of-chunk".asInstanceOf[`root-of-chunk`]
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait script
+    extends StObject
+       with ExternalsType
+  inline def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait node extends js.Object
+  sealed trait self
+    extends StObject
+       with ExternalsType
+  inline def self: self = "self".asInstanceOf[self]
   
   @js.native
-  sealed trait `node-webkit` extends js.Object
+  sealed trait `self-accept-error-handler-errored` extends StObject
+  inline def `self-accept-error-handler-errored`: `self-accept-error-handler-errored` = "self-accept-error-handler-errored".asInstanceOf[`self-accept-error-handler-errored`]
   
   @js.native
-  sealed trait none extends _Preset
+  sealed trait `self-accept-errored` extends StObject
+  inline def `self-accept-errored`: `self-accept-errored` = "self-accept-errored".asInstanceOf[`self-accept-errored`]
   
   @js.native
-  sealed trait normal extends _Preset
+  sealed trait `self-declined` extends StObject
+  inline def `self-declined`: `self-declined` = "self-declined".asInstanceOf[`self-declined`]
   
   @js.native
-  sealed trait `nosources-source-map` extends _Devtool
+  sealed trait sibling extends StObject
+  inline def sibling: sibling = "sibling".asInstanceOf[sibling]
   
   @js.native
-  sealed trait `null` extends ReasonType
+  sealed trait single extends StObject
+  inline def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait size extends StObject
+  inline def size: size = "size".asInstanceOf[size]
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait statements extends StObject
+  inline def statements: statements = "statements".asInstanceOf[statements]
   
   @js.native
-  sealed trait prefetch extends ReasonType
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait production extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait requireDotcontext extends ReasonType
+  sealed trait summary
+    extends StObject
+       with _StatsValue
+  inline def summary: summary = "summary".asInstanceOf[summary]
   
   @js.native
-  sealed trait requireDotensure extends ReasonType
+  sealed trait sync
+    extends StObject
+       with ContextMode
+  inline def sync: sync = "sync".asInstanceOf[sync]
   
   @js.native
-  sealed trait `requireDotensure item` extends ReasonType
+  sealed trait system
+    extends StObject
+       with ExternalsType
+  inline def system: system = "system".asInstanceOf[system]
   
   @js.native
-  sealed trait requireDotinclude extends ReasonType
+  sealed trait textSlashjavascript extends StObject
+  inline def textSlashjavascript: textSlashjavascript = "text/javascript".asInstanceOf[textSlashjavascript]
   
   @js.native
-  sealed trait requireDotresolve extends ReasonType
+  sealed trait `this`
+    extends StObject
+       with ExternalsType
+  inline def `this`: `this` = "this".asInstanceOf[`this`]
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait `total-size` extends StObject
+  inline def `total-size`: `total-size` = "total-size".asInstanceOf[`total-size`]
   
   @js.native
-  sealed trait `single entry` extends ReasonType
+  sealed trait `type` extends StObject
+  inline def `type`: `type` = "type".asInstanceOf[`type`]
   
   @js.native
-  sealed trait size extends js.Object
+  sealed trait umd
+    extends StObject
+       with ExternalsType
+  inline def umd: umd = "umd".asInstanceOf[umd]
   
   @js.native
-  sealed trait `source-map` extends _Devtool
+  sealed trait umd2
+    extends StObject
+       with ExternalsType
+  inline def umd2: umd2 = "umd2".asInstanceOf[umd2]
   
   @js.native
-  sealed trait textSlashjavascript extends js.Object
+  sealed trait unaccepted extends StObject
+  inline def unaccepted: unaccepted = "unaccepted".asInstanceOf[unaccepted]
   
   @js.native
-  sealed trait `this` extends LibraryTarget
+  sealed trait `unexpected-non-array-in-path`
+    extends StObject
+       with ProblemType
+  inline def `unexpected-non-array-in-path`: `unexpected-non-array-in-path` = "unexpected-non-array-in-path".asInstanceOf[`unexpected-non-array-in-path`]
   
   @js.native
-  sealed trait `total-size` extends js.Object
+  sealed trait `unexpected-non-object-in-path`
+    extends StObject
+       with ProblemType
+  inline def `unexpected-non-object-in-path`: `unexpected-non-object-in-path` = "unexpected-non-object-in-path".asInstanceOf[`unexpected-non-object-in-path`]
   
   @js.native
-  sealed trait umd extends LibraryTarget
+  sealed trait `unknown-argument`
+    extends StObject
+       with ProblemType
+  inline def `unknown-argument`: `unknown-argument` = "unknown-argument".asInstanceOf[`unknown-argument`]
   
   @js.native
-  sealed trait `var` extends LibraryTarget
+  sealed trait `use-credentials` extends StObject
+  inline def `use-credentials`: `use-credentials` = "use-credentials".asInstanceOf[`use-credentials`]
   
   @js.native
-  sealed trait verbose extends _Preset
+  sealed trait `var`
+    extends StObject
+       with ExternalsType
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait verbose
+    extends StObject
+       with _StatsValue
+  inline def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
-  sealed trait `wasm export import` extends ReasonType
+  sealed trait warn extends StObject
+  inline def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait `wasm import` extends ReasonType
+  sealed trait `warn-mock` extends StObject
+  inline def `warn-mock`: `warn-mock` = "warn-mock".asInstanceOf[`warn-mock`]
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait warning extends StObject
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait webassemblySlashexperimental extends js.Object
+  sealed trait weak
+    extends StObject
+       with ContextMode
+  inline def weak: weak = "weak".asInstanceOf[weak]
   
   @js.native
-  sealed trait webworker extends js.Object
+  sealed trait window
+    extends StObject
+       with ExternalsType
+  inline def window: window = "window".asInstanceOf[window]
   
   @js.native
-  sealed trait window extends LibraryTarget
-  
-  @scala.inline
-  def `@cheap-eval-source-map`: `@cheap-eval-source-map` = "@cheap-eval-source-map".asInstanceOf[`@cheap-eval-source-map`]
-  @scala.inline
-  def `@cheap-module-eval-source-map`: `@cheap-module-eval-source-map` = "@cheap-module-eval-source-map".asInstanceOf[`@cheap-module-eval-source-map`]
-  @scala.inline
-  def `@cheap-module-source-map`: `@cheap-module-source-map` = "@cheap-module-source-map".asInstanceOf[`@cheap-module-source-map`]
-  @scala.inline
-  def `@cheap-source-map`: `@cheap-source-map` = "@cheap-source-map".asInstanceOf[`@cheap-source-map`]
-  @scala.inline
-  def `@eval`: `@eval` = "@eval".asInstanceOf[`@eval`]
-  @scala.inline
-  def `@eval-source-map`: `@eval-source-map` = "@eval-source-map".asInstanceOf[`@eval-source-map`]
-  @scala.inline
-  def `@hidden-source-map`: `@hidden-source-map` = "@hidden-source-map".asInstanceOf[`@hidden-source-map`]
-  @scala.inline
-  def `@inline-source-map`: `@inline-source-map` = "@inline-source-map".asInstanceOf[`@inline-source-map`]
-  @scala.inline
-  def `@nosources-source-map`: `@nosources-source-map` = "@nosources-source-map".asInstanceOf[`@nosources-source-map`]
-  @scala.inline
-  def `@source-map`: `@source-map` = "@source-map".asInstanceOf[`@source-map`]
-  @scala.inline
-  def `Numbersign@cheap-eval-source-map`: `Numbersign@cheap-eval-source-map` = "#@cheap-eval-source-map".asInstanceOf[`Numbersign@cheap-eval-source-map`]
-  @scala.inline
-  def `Numbersign@cheap-module-eval-source-map`: `Numbersign@cheap-module-eval-source-map` = "#@cheap-module-eval-source-map".asInstanceOf[`Numbersign@cheap-module-eval-source-map`]
-  @scala.inline
-  def `Numbersign@cheap-module-source-map`: `Numbersign@cheap-module-source-map` = "#@cheap-module-source-map".asInstanceOf[`Numbersign@cheap-module-source-map`]
-  @scala.inline
-  def `Numbersign@cheap-source-map`: `Numbersign@cheap-source-map` = "#@cheap-source-map".asInstanceOf[`Numbersign@cheap-source-map`]
-  @scala.inline
-  def `Numbersign@eval`: `Numbersign@eval` = "#@eval".asInstanceOf[`Numbersign@eval`]
-  @scala.inline
-  def `Numbersign@eval-source-map`: `Numbersign@eval-source-map` = "#@eval-source-map".asInstanceOf[`Numbersign@eval-source-map`]
-  @scala.inline
-  def `Numbersign@hidden-source-map`: `Numbersign@hidden-source-map` = "#@hidden-source-map".asInstanceOf[`Numbersign@hidden-source-map`]
-  @scala.inline
-  def `Numbersign@inline-source-map`: `Numbersign@inline-source-map` = "#@inline-source-map".asInstanceOf[`Numbersign@inline-source-map`]
-  @scala.inline
-  def `Numbersign@nosources-source-map`: `Numbersign@nosources-source-map` = "#@nosources-source-map".asInstanceOf[`Numbersign@nosources-source-map`]
-  @scala.inline
-  def `Numbersign@source-map`: `Numbersign@source-map` = "#@source-map".asInstanceOf[`Numbersign@source-map`]
-  @scala.inline
-  def `Numbersigncheap-eval-source-map`: `Numbersigncheap-eval-source-map` = "#cheap-eval-source-map".asInstanceOf[`Numbersigncheap-eval-source-map`]
-  @scala.inline
-  def `Numbersigncheap-module-eval-source-map`: `Numbersigncheap-module-eval-source-map` = "#cheap-module-eval-source-map".asInstanceOf[`Numbersigncheap-module-eval-source-map`]
-  @scala.inline
-  def `Numbersigncheap-module-source-map`: `Numbersigncheap-module-source-map` = "#cheap-module-source-map".asInstanceOf[`Numbersigncheap-module-source-map`]
-  @scala.inline
-  def `Numbersigncheap-source-map`: `Numbersigncheap-source-map` = "#cheap-source-map".asInstanceOf[`Numbersigncheap-source-map`]
-  @scala.inline
-  def Numbersigneval: Numbersigneval = "#eval".asInstanceOf[Numbersigneval]
-  @scala.inline
-  def `Numbersigneval-source-map`: `Numbersigneval-source-map` = "#eval-source-map".asInstanceOf[`Numbersigneval-source-map`]
-  @scala.inline
-  def `Numbersignhidden-source-map`: `Numbersignhidden-source-map` = "#hidden-source-map".asInstanceOf[`Numbersignhidden-source-map`]
-  @scala.inline
-  def `Numbersigninline-source-map`: `Numbersigninline-source-map` = "#inline-source-map".asInstanceOf[`Numbersigninline-source-map`]
-  @scala.inline
-  def `Numbersignnosources-source-map`: `Numbersignnosources-source-map` = "#nosources-source-map".asInstanceOf[`Numbersignnosources-source-map`]
-  @scala.inline
-  def `Numbersignsource-map`: `Numbersignsource-map` = "#source-map".asInstanceOf[`Numbersignsource-map`]
-  @scala.inline
-  def `accepted harmony modules`: `accepted harmony modules` = "accepted harmony modules".asInstanceOf[`accepted harmony modules`]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def amd: amd = "amd".asInstanceOf[amd]
-  @scala.inline
-  def `amd define`: `amd define` = "amd define".asInstanceOf[`amd define`]
-  @scala.inline
-  def `amd require`: `amd require` = "amd require".asInstanceOf[`amd require`]
-  @scala.inline
-  def `amd require array`: `amd require array` = "amd require array".asInstanceOf[`amd require array`]
-  @scala.inline
-  def `amd require context`: `amd require context` = "amd require context".asInstanceOf[`amd require context`]
-  @scala.inline
-  def assign: assign = "assign".asInstanceOf[assign]
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
-  @scala.inline
-  def `async-node`: `async-node` = "async-node".asInstanceOf[`async-node`]
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def `cheap-eval-source-map`: `cheap-eval-source-map` = "cheap-eval-source-map".asInstanceOf[`cheap-eval-source-map`]
-  @scala.inline
-  def `cheap-module-eval-source-map`: `cheap-module-eval-source-map` = "cheap-module-eval-source-map".asInstanceOf[`cheap-module-eval-source-map`]
-  @scala.inline
-  def `cheap-module-source-map`: `cheap-module-source-map` = "cheap-module-source-map".asInstanceOf[`cheap-module-source-map`]
-  @scala.inline
-  def `cheap-source-map`: `cheap-source-map` = "cheap-source-map".asInstanceOf[`cheap-source-map`]
-  @scala.inline
-  def `cjs require`: `cjs require` = "cjs require".asInstanceOf[`cjs require`]
-  @scala.inline
-  def `cjs require context`: `cjs require context` = "cjs require context".asInstanceOf[`cjs require context`]
-  @scala.inline
-  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  @scala.inline
-  def commonjs2: commonjs2 = "commonjs2".asInstanceOf[commonjs2]
-  @scala.inline
-  def `context element`: `context element` = "context element".asInstanceOf[`context element`]
-  @scala.inline
-  def `delegated exports`: `delegated exports` = "delegated exports".asInstanceOf[`delegated exports`]
-  @scala.inline
-  def `delegated source`: `delegated source` = "delegated source".asInstanceOf[`delegated source`]
-  @scala.inline
-  def development: development = "development".asInstanceOf[development]
-  @scala.inline
-  def `dll entry`: `dll entry` = "dll entry".asInstanceOf[`dll entry`]
-  @scala.inline
-  def electron: electron = "electron".asInstanceOf[electron]
-  @scala.inline
-  def `electron-main`: `electron-main` = "electron-main".asInstanceOf[`electron-main`]
-  @scala.inline
-  def `electron-preload`: `electron-preload` = "electron-preload".asInstanceOf[`electron-preload`]
-  @scala.inline
-  def `electron-renderer`: `electron-renderer` = "electron-renderer".asInstanceOf[`electron-renderer`]
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def `errors-only`: `errors-only` = "errors-only".asInstanceOf[`errors-only`]
-  @scala.inline
-  def `errors-warnings`: `errors-warnings` = "errors-warnings".asInstanceOf[`errors-warnings`]
-  @scala.inline
-  def eval: eval = "eval".asInstanceOf[eval]
-  @scala.inline
-  def `eval-source-map`: `eval-source-map` = "eval-source-map".asInstanceOf[`eval-source-map`]
-  @scala.inline
-  def exports: exports = "exports".asInstanceOf[exports]
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
-  @scala.inline
-  def `harmony accept`: `harmony accept` = "harmony accept".asInstanceOf[`harmony accept`]
-  @scala.inline
-  def `harmony export expression`: `harmony export expression` = "harmony export expression".asInstanceOf[`harmony export expression`]
-  @scala.inline
-  def `harmony export header`: `harmony export header` = "harmony export header".asInstanceOf[`harmony export header`]
-  @scala.inline
-  def `harmony export imported specifier`: `harmony export imported specifier` = "harmony export imported specifier".asInstanceOf[`harmony export imported specifier`]
-  @scala.inline
-  def `harmony export specifier`: `harmony export specifier` = "harmony export specifier".asInstanceOf[`harmony export specifier`]
-  @scala.inline
-  def `harmony import specifier`: `harmony import specifier` = "harmony import specifier".asInstanceOf[`harmony import specifier`]
-  @scala.inline
-  def `harmony init`: `harmony init` = "harmony init".asInstanceOf[`harmony init`]
-  @scala.inline
-  def `harmony side effect evaluation`: `harmony side effect evaluation` = "harmony side effect evaluation".asInstanceOf[`harmony side effect evaluation`]
-  @scala.inline
-  def hashed: hashed = "hashed".asInstanceOf[hashed]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def `hidden-source-map`: `hidden-source-map` = "hidden-source-map".asInstanceOf[`hidden-source-map`]
-  @scala.inline
-  def importLeftparenthesisRightparenthesis: importLeftparenthesisRightparenthesis = "import()".asInstanceOf[importLeftparenthesisRightparenthesis]
-  @scala.inline
-  def `importLeftparenthesisRightparenthesis context development`: `importLeftparenthesisRightparenthesis context development` = "import() context development".asInstanceOf[`importLeftparenthesisRightparenthesis context development`]
-  @scala.inline
-  def `importLeftparenthesisRightparenthesis context production`: `importLeftparenthesisRightparenthesis context production` = "import() context production".asInstanceOf[`importLeftparenthesisRightparenthesis context production`]
-  @scala.inline
-  def `importLeftparenthesisRightparenthesis eager`: `importLeftparenthesisRightparenthesis eager` = "import() eager".asInstanceOf[`importLeftparenthesisRightparenthesis eager`]
-  @scala.inline
-  def `importLeftparenthesisRightparenthesis weak`: `importLeftparenthesisRightparenthesis weak` = "import() weak".asInstanceOf[`importLeftparenthesisRightparenthesis weak`]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def `inline-cheap-module-source-map`: `inline-cheap-module-source-map` = "inline-cheap-module-source-map".asInstanceOf[`inline-cheap-module-source-map`]
-  @scala.inline
-  def `inline-cheap-source-map`: `inline-cheap-source-map` = "inline-cheap-source-map".asInstanceOf[`inline-cheap-source-map`]
-  @scala.inline
-  def `inline-source-map`: `inline-source-map` = "inline-source-map".asInstanceOf[`inline-source-map`]
-  @scala.inline
-  def javascriptSlashauto: javascriptSlashauto = "javascript/auto".asInstanceOf[javascriptSlashauto]
-  @scala.inline
-  def javascriptSlashdynamic: javascriptSlashdynamic = "javascript/dynamic".asInstanceOf[javascriptSlashdynamic]
-  @scala.inline
-  def javascriptSlashesm: javascriptSlashesm = "javascript/esm".asInstanceOf[javascriptSlashesm]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def `json exports`: `json exports` = "json exports".asInstanceOf[`json exports`]
-  @scala.inline
-  def jsonp: jsonp = "jsonp".asInstanceOf[jsonp]
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def loader: loader = "loader".asInstanceOf[loader]
-  @scala.inline
-  def minimal: minimal = "minimal".asInstanceOf[minimal]
-  @scala.inline
-  def mock: mock = "mock".asInstanceOf[mock]
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def moduleDothotDotaccept: moduleDothotDotaccept = "module.hot.accept".asInstanceOf[moduleDothotDotaccept]
-  @scala.inline
-  def moduleDothotDotdecline: moduleDothotDotdecline = "module.hot.decline".asInstanceOf[moduleDothotDotdecline]
-  @scala.inline
-  def `multi entry`: `multi entry` = "multi entry".asInstanceOf[`multi entry`]
-  @scala.inline
-  def multiple: multiple = "multiple".asInstanceOf[multiple]
-  @scala.inline
-  def named: named = "named".asInstanceOf[named]
-  @scala.inline
-  def natural: natural = "natural".asInstanceOf[natural]
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
-  @scala.inline
-  def `node-webkit`: `node-webkit` = "node-webkit".asInstanceOf[`node-webkit`]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
-  @scala.inline
-  def `nosources-source-map`: `nosources-source-map` = "nosources-source-map".asInstanceOf[`nosources-source-map`]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def pre: pre = "pre".asInstanceOf[pre]
-  @scala.inline
-  def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
-  @scala.inline
-  def production: production = "production".asInstanceOf[production]
-  @scala.inline
-  def requireDotcontext: requireDotcontext = "require.context".asInstanceOf[requireDotcontext]
-  @scala.inline
-  def requireDotensure: requireDotensure = "require.ensure".asInstanceOf[requireDotensure]
-  @scala.inline
-  def `requireDotensure item`: `requireDotensure item` = "require.ensure item".asInstanceOf[`requireDotensure item`]
-  @scala.inline
-  def requireDotinclude: requireDotinclude = "require.include".asInstanceOf[requireDotinclude]
-  @scala.inline
-  def requireDotresolve: requireDotresolve = "require.resolve".asInstanceOf[requireDotresolve]
-  @scala.inline
-  def single: single = "single".asInstanceOf[single]
-  @scala.inline
-  def `single entry`: `single entry` = "single entry".asInstanceOf[`single entry`]
-  @scala.inline
-  def size: size = "size".asInstanceOf[size]
-  @scala.inline
-  def `source-map`: `source-map` = "source-map".asInstanceOf[`source-map`]
-  @scala.inline
-  def textSlashjavascript: textSlashjavascript = "text/javascript".asInstanceOf[textSlashjavascript]
-  @scala.inline
-  def `this`: `this` = "this".asInstanceOf[`this`]
-  @scala.inline
-  def `total-size`: `total-size` = "total-size".asInstanceOf[`total-size`]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
-  @scala.inline
-  def `wasm export import`: `wasm export import` = "wasm export import".asInstanceOf[`wasm export import`]
-  @scala.inline
-  def `wasm import`: `wasm import` = "wasm import".asInstanceOf[`wasm import`]
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
-  @scala.inline
-  def webassemblySlashexperimental: webassemblySlashexperimental = "webassembly/experimental".asInstanceOf[webassemblySlashexperimental]
-  @scala.inline
-  def webworker: webworker = "webworker".asInstanceOf[webworker]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  sealed trait `x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket` extends StObject
+  inline def `x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`: `x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket` = ("x => {}").asInstanceOf[`x EqualssignGreaterthansign LeftcurlybracketRightcurlybracket`]
 }
-

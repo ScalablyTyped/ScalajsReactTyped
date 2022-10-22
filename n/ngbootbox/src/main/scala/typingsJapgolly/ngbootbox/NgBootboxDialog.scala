@@ -2,58 +2,97 @@ package typingsJapgolly.ngbootbox
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.bootbox.BootboxButtonMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NgBootboxDialog extends js.Object {
+trait NgBootboxDialog extends StObject {
+  
   var animate: js.UndefOr[Boolean] = js.undefined
+  
   var backdrop: js.UndefOr[Boolean] = js.undefined
+  
   var buttons: js.UndefOr[BootboxButtonMap] = js.undefined
-  var callback: js.UndefOr[js.Function0[_]] = js.undefined
+  
+  var callback: js.UndefOr[js.Function0[Any]] = js.undefined
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var closeButton: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var message: js.UndefOr[String] = js.undefined
-  var onEscape: js.UndefOr[js.Function0[_ | Boolean]] = js.undefined
+  
+  var onEscape: js.UndefOr[js.Function0[Any | Boolean]] = js.undefined
+  
   var show: js.UndefOr[Boolean] = js.undefined
+  
   var size: js.UndefOr[String] = js.undefined
+  
   var templateUrl: js.UndefOr[String] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
 }
-
 object NgBootboxDialog {
-  @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    backdrop: js.UndefOr[Boolean] = js.undefined,
-    buttons: BootboxButtonMap = null,
-    callback: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    className: String = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    locale: String = null,
-    message: String = null,
-    onEscape: js.UndefOr[CallbackTo[js.Any | Boolean]] = js.undefined,
-    show: js.UndefOr[Boolean] = js.undefined,
-    size: String = null,
-    templateUrl: String = null,
-    title: String = null
-  ): NgBootboxDialog = {
+  
+  inline def apply(): NgBootboxDialog = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (!js.isUndefined(backdrop)) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    onEscape.foreach(p => __obj.updateDynamic("onEscape")(p.toJsFn))
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgBootboxDialog]
   }
+  
+  extension [Self <: NgBootboxDialog](x: Self) {
+    
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    
+    inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    
+    inline def setButtons(value: BootboxButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setCallback(value: CallbackTo[Any]): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setOnEscape(value: CallbackTo[Any | Boolean]): Self = StObject.set(x, "onEscape", value.toJsFn)
+    
+    inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
+    
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

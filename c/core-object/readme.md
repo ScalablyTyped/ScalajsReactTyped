@@ -10,10 +10,10 @@ A lightweight implementation of OOP Class in JavaScript
 | ------------------ | :-------------: |
 | Full name          | core-object |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 17264710 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1037289.3333333334 |
+| # stars            | 16.0 |
 
 ## Links
 - [Homepage](https://github.com/ember-cli/core-object)

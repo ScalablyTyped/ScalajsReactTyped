@@ -2,43 +2,67 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AutocompleteEvents extends js.Object {
+trait AutocompleteEvents extends StObject {
+  
   var change: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var close: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var create: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var focus: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var open: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var response: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var search: js.UndefOr[AutocompleteEvent] = js.undefined
+  
   var select: js.UndefOr[AutocompleteEvent] = js.undefined
 }
-
 object AutocompleteEvents {
-  @scala.inline
-  def apply(
-    change: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    close: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    focus: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    open: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    response: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    search: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null,
-    select: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback = null
-  ): AutocompleteEvents = {
+  
+  inline def apply(): AutocompleteEvents = {
     val __obj = js.Dynamic.literal()
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => change(t0, t1).runNow()))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => close(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => create(t0, t1).runNow()))
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => focus(t0, t1).runNow()))
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => open(t0, t1).runNow()))
-    if (response != null) __obj.updateDynamic("response")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => response(t0, t1).runNow()))
-    if (search != null) __obj.updateDynamic("search")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => search(t0, t1).runNow()))
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AutocompleteUIParams) => select(t0, t1).runNow()))
     __obj.asInstanceOf[AutocompleteEvents]
   }
+  
+  extension [Self <: AutocompleteEvents](x: Self) {
+    
+    inline def setChange(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "change", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setClose(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "close", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "focus", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setOpen(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "open", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setResponse(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "response", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    
+    inline def setSearch(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "search", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelect(value: (/* event */ JQueryEventObject, /* ui */ AutocompleteUIParams) => Callback): Self = StObject.set(x, "select", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AutocompleteUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+  }
 }
-

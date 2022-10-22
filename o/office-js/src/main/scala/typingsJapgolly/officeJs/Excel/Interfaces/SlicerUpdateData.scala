@@ -4,105 +4,132 @@ import typingsJapgolly.officeJs.Excel.SlicerSortType
 import typingsJapgolly.officeJs.officeJsStrings.Ascending
 import typingsJapgolly.officeJs.officeJsStrings.DataSourceOrder
 import typingsJapgolly.officeJs.officeJsStrings.Descending
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Slicer object, for use in `slicer.set({ ... })`. */
-trait SlicerUpdateData extends js.Object {
+trait SlicerUpdateData extends StObject {
+  
   /**
+    * Represents the caption of the slicer.
     *
-    * Represents the caption of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var caption: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the height, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the distance, in points, from the left side of the slicer to the left of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Represents the name of the slicer.
     *
-    * Represents the name of slicer.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the sort order of the items in the slicer. Possible values are: "DataSourceOrder", "Ascending", "Descending".
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var sortBy: js.UndefOr[SlicerSortType | DataSourceOrder | Ascending | Descending] = js.undefined
+  
   /**
+    * Constant value that represents the slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
     *
-    * Constant value that represents the Slicer style. Possible values are: "SlicerStyleLight1" through "SlicerStyleLight6", "TableStyleOther1" through "TableStyleOther2", "SlicerStyleDark1" through "SlicerStyleDark6". A custom user-defined style present in the workbook can also be specified.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var style: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value as input.
+    Throws an `InvalidArgument` error when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the width, in points, of the slicer.
-    Throws an "The argument is invalid or missing or has an incorrect format." exception when set with negative value or zero as input.
+    Throws an `InvalidArgument` error when set with a negative value or zero as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var width: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * Represents the worksheet containing the slicer.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var worksheet: js.UndefOr[WorksheetUpdateData] = js.undefined
 }
-
 object SlicerUpdateData {
-  @scala.inline
-  def apply(
-    caption: String = null,
-    height: Int | Double = null,
-    left: Int | Double = null,
-    name: String = null,
-    sortBy: SlicerSortType | DataSourceOrder | Ascending | Descending = null,
-    style: String = null,
-    top: Int | Double = null,
-    width: Int | Double = null,
-    worksheet: WorksheetUpdateData = null
-  ): SlicerUpdateData = {
+  
+  inline def apply(): SlicerUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SlicerUpdateData]
   }
+  
+  extension [Self <: SlicerUpdateData](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSortBy(value: SlicerSortType | DataSourceOrder | Ascending | Descending): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWorksheet(value: WorksheetUpdateData): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+  }
 }
-

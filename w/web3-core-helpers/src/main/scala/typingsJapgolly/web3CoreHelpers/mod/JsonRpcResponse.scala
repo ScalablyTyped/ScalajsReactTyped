@@ -1,23 +1,39 @@
 package typingsJapgolly.web3CoreHelpers.mod
 
+import typingsJapgolly.web3CoreHelpers.anon.Code
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JsonRpcResponse extends js.Object {
-  var error: js.UndefOr[String] = js.undefined
-  var id: Double
+trait JsonRpcResponse extends StObject {
+  
+  var error: js.UndefOr[Code] = js.undefined
+  
+  var id: String | Double
+  
   var jsonrpc: String
-  var result: js.UndefOr[js.Any] = js.undefined
+  
+  var result: js.UndefOr[Any] = js.undefined
 }
-
 object JsonRpcResponse {
-  @scala.inline
-  def apply(id: Double, jsonrpc: String, error: String = null, result: js.Any = null): JsonRpcResponse = {
+  
+  inline def apply(id: String | Double, jsonrpc: String): JsonRpcResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], jsonrpc = jsonrpc.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonRpcResponse]
   }
+  
+  extension [Self <: JsonRpcResponse](x: Self) {
+    
+    inline def setError(value: Code): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setJsonrpc(value: String): Self = StObject.set(x, "jsonrpc", value.asInstanceOf[js.Any])
+    
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+  }
 }
-

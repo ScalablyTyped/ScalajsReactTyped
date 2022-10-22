@@ -1,21 +1,29 @@
 package typingsJapgolly.winrtUwp.Windows.Services.Store
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains additional details that you can pass to a purchase request for a product, including the product name to display to the user during the purchase. */
-@JSGlobal("Windows.Services.Store.StorePurchaseProperties")
-@js.native
-/** Initializes a new instance of the StorePurchaseProperties class. */
-class StorePurchaseProperties () extends js.Object {
-  /** Initializes a new instance of the StorePurchaseProperties class. This overload provides the option to specify the product name that is displayed to the user during the purchase.
-    * @param name The product name that is displayed to the user during the purchase.
-    */
-  def this(name: String) = this()
+trait StorePurchaseProperties extends StObject {
+  
   /** Gets or sets a JSON-formatted string that contains extended data to pass with the purchase request to the Windows Store. */
-  var extendedJsonData: String = js.native
+  var extendedJsonData: String
+  
   /** Gets or sets the product name that is displayed to the user during the purchase. The specified name appears in the title bar of the purchase UI. */
-  var name: String = js.native
+  var name: String
 }
-
+object StorePurchaseProperties {
+  
+  inline def apply(extendedJsonData: String, name: String): StorePurchaseProperties = {
+    val __obj = js.Dynamic.literal(extendedJsonData = extendedJsonData.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StorePurchaseProperties]
+  }
+  
+  extension [Self <: StorePurchaseProperties](x: Self) {
+    
+    inline def setExtendedJsonData(value: String): Self = StObject.set(x, "extendedJsonData", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
+}

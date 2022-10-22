@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadialGaugeGaugeArea extends js.Object {
+trait RadialGaugeGaugeArea extends StObject {
+  
   var background: js.UndefOr[String] = js.undefined
+  
   var border: js.UndefOr[RadialGaugeGaugeAreaBorder] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var margin: js.UndefOr[Double | RadialGaugeGaugeAreaMargin] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object RadialGaugeGaugeArea {
-  @scala.inline
-  def apply(
-    background: String = null,
-    border: RadialGaugeGaugeAreaBorder = null,
-    height: Int | Double = null,
-    margin: Double | RadialGaugeGaugeAreaMargin = null,
-    width: Int | Double = null
-  ): RadialGaugeGaugeArea = {
+  
+  inline def apply(): RadialGaugeGaugeArea = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadialGaugeGaugeArea]
   }
+  
+  extension [Self <: RadialGaugeGaugeArea](x: Self) {
+    
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBorder(value: RadialGaugeGaugeAreaBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMargin(value: Double | RadialGaugeGaugeAreaMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

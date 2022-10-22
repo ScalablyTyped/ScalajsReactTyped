@@ -1,22 +1,29 @@
 package typingsJapgolly.activexOutlook.Outlook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Outlook.OutlookBarShortcuts")
 @js.native
-class OutlookBarShortcuts protected () extends js.Object {
+trait OutlookBarShortcuts extends StObject {
+  
+  def Add(Target: Any, Name: String): OutlookBarShortcut = js.native
+  def Add(Target: Any, Name: String, Index: Any): OutlookBarShortcut = js.native
+  
   val Application: typingsJapgolly.activexOutlook.Outlook.Application = js.native
+  
   val Class: OlObjectClass = js.native
+  
   val Count: Double = js.native
-  @JSName("Outlook.OutlookBarShortcuts_typekey")
+  
+  def Item(Index: Any): OutlookBarShortcut = js.native
+  
+  /* private */ @JSName("Outlook.OutlookBarShortcuts_typekey")
   var OutlookDotOutlookBarShortcuts_typekey: OutlookBarShortcuts = js.native
-  val Parent: js.Any = js.native
+  
+  val Parent: Any = js.native
+  
+  def Remove(Index: Any): Unit = js.native
+  
   val Session: NameSpace = js.native
-  def Add(Target: js.Any, Name: String): OutlookBarShortcut = js.native
-  def Add(Target: js.Any, Name: String, Index: js.Any): OutlookBarShortcut = js.native
-  def Item(Index: js.Any): OutlookBarShortcut = js.native
-  def Remove(Index: js.Any): Unit = js.native
 }
-

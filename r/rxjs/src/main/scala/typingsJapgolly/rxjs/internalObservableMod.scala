@@ -1,21 +1,15 @@
 package typingsJapgolly.rxjs
 
-import typingsJapgolly.rxjs.operatorMod.Operator
-import typingsJapgolly.rxjs.subscriberMod.Subscriber
-import typingsJapgolly.rxjs.typesMod.OperatorFunction
-import typingsJapgolly.rxjs.typesMod.SchedulerLike
-import typingsJapgolly.rxjs.typesMod.Subscribable
-import typingsJapgolly.rxjs.typesMod.SubscribableOrPromise
-import typingsJapgolly.rxjs.typesMod.TeardownLogic
-import typingsJapgolly.std.PromiseConstructor
-import typingsJapgolly.std.PromiseConstructorLike
+import typingsJapgolly.rxjs.distTypesInternalSubscriberMod.Subscriber
+import typingsJapgolly.rxjs.distTypesInternalTypesMod.TeardownLogic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs/internal/Observable", JSImport.Namespace)
-@js.native
-object internalObservableMod extends js.Object {
+/* from `exports` in `package.json` */
+object internalObservableMod {
+  
+  @JSImport("rxjs/internal/Observable", "Observable")
   @js.native
   /**
     * @constructor
@@ -24,155 +18,30 @@ object internalObservableMod extends js.Object {
     * can be `next`ed, or an `error` method can be called to raise an error, or
     * `complete` can be called to notify of a successful completion.
     */
-  class Observable[T] () extends Subscribable[T] {
-    def this(subscribe: js.ThisFunction1[/* this */ Observable[T], /* subscriber */ Subscriber[T], TeardownLogic]) = this()
-    /** Internal implementation detail, do not use directly. */
-    var _isScalar: Boolean = js.native
-    /** @deprecated This is an internal implementation detail, do not use. */
-    var operator: Operator[_, T] = js.native
-    /** @deprecated This is an internal implementation detail, do not use. */
-    var source: Observable[_] = js.native
-    /** @internal This is an internal implementation detail, do not use. */
-    def _subscribe(subscriber: Subscriber[_]): TeardownLogic = js.native
-    /** @deprecated This is an internal implementation detail, do not use. */
-    def _trySubscribe(sink: Subscriber[T]): TeardownLogic = js.native
-    /**
-      * @method forEach
-      * @param {Function} next a handler for each value emitted by the observable
-      * @param {PromiseConstructor} [promiseCtor] a constructor function used to instantiate the Promise
-      * @return {Promise} a promise that either resolves on observable completion or
-      *  rejects with the handled error
-      */
-    def forEach(next: js.Function1[/* value */ T, Unit]): js.Promise[Unit] = js.native
-    def forEach(next: js.Function1[/* value */ T, Unit], promiseCtor: PromiseConstructorLike): js.Promise[Unit] = js.native
-    /**
-      * Creates a new Observable, with this Observable as the source, and the passed
-      * operator defined as the new observable's operator.
-      * @method lift
-      * @param {Operator} operator the operator defining the operation to take on the observable
-      * @return {Observable} a new observable with the Operator applied
-      */
-    def lift[R](operator: Operator[T, R]): Observable[R] = js.native
-    def pipe(): Observable[T] = js.native
-    def pipe[A](op1: OperatorFunction[T, A]): Observable[A] = js.native
-    def pipe[A, B](op1: OperatorFunction[T, A], op2: OperatorFunction[A, B]): Observable[B] = js.native
-    def pipe[A, B, C](op1: OperatorFunction[T, A], op2: OperatorFunction[A, B], op3: OperatorFunction[B, C]): Observable[C] = js.native
-    def pipe[A, B, C, D](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D]
-    ): Observable[D] = js.native
-    def pipe[A, B, C, D, E](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E]
-    ): Observable[E] = js.native
-    def pipe[A, B, C, D, E, F](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E],
-      op6: OperatorFunction[E, F]
-    ): Observable[F] = js.native
-    def pipe[A, B, C, D, E, F, G](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E],
-      op6: OperatorFunction[E, F],
-      op7: OperatorFunction[F, G]
-    ): Observable[G] = js.native
-    def pipe[A, B, C, D, E, F, G, H](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E],
-      op6: OperatorFunction[E, F],
-      op7: OperatorFunction[F, G],
-      op8: OperatorFunction[G, H]
-    ): Observable[H] = js.native
-    def pipe[A, B, C, D, E, F, G, H, I](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E],
-      op6: OperatorFunction[E, F],
-      op7: OperatorFunction[F, G],
-      op8: OperatorFunction[G, H],
-      op9: OperatorFunction[H, I]
-    ): Observable[I] = js.native
-    def pipe[A, B, C, D, E, F, G, H, I](
-      op1: OperatorFunction[T, A],
-      op2: OperatorFunction[A, B],
-      op3: OperatorFunction[B, C],
-      op4: OperatorFunction[C, D],
-      op5: OperatorFunction[D, E],
-      op6: OperatorFunction[E, F],
-      op7: OperatorFunction[F, G],
-      op8: OperatorFunction[G, H],
-      op9: OperatorFunction[H, I],
-      operations: (OperatorFunction[_, _])*
-    ): Observable[js.Object] = js.native
-    def toPromise[T](): js.Promise[T] = js.native
-    def toPromise[T](PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
-    def toPromise[T](PromiseCtor: PromiseConstructorLike): js.Promise[T] = js.native
+  open class Observable[T] ()
+    extends typingsJapgolly.rxjs.distTypesInternalObservableMod.Observable[T] {
+    def this(subscribe: js.ThisFunction1[
+            /* this */ typingsJapgolly.rxjs.distTypesInternalObservableMod.Observable[T], 
+            /* subscriber */ Subscriber[T], 
+            TeardownLogic
+          ]) = this()
   }
-  
   /* static members */
-  @js.native
-  object Observable extends js.Object {
+  object Observable {
+    
+    @JSImport("rxjs/internal/Observable", "Observable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Creates a new cold Observable by calling the Observable constructor
-      * @static true
+      * Creates a new Observable by calling the Observable constructor
       * @owner Observable
       * @method create
       * @param {Function} subscribe? the subscriber function to be passed to the Observable constructor
-      * @return {Observable} a new cold observable
+      * @return {Observable} a new observable
       * @nocollapse
-      * @deprecated use new Observable() instead
+      * @deprecated Use `new Observable()` instead. Will be removed in v8.
       */
-    var create: js.Function = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-      */
-    @JSName("if")
-    var if_Original: FnCall = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
-      */
-    @JSName("throw")
-    var throw_Original: js.Function2[
-        /* error */ js.Any, 
-        /* scheduler */ js.UndefOr[SchedulerLike], 
-        Observable[scala.Nothing]
-      ] = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
-      */
-    def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
-    def `if`[T, F](
-      condition: js.Function0[Boolean],
-      trueResult: SubscribableOrPromise[T],
-      falseResult: SubscribableOrPromise[F]
-    ): Observable[T | F] = js.native
-    /**
-      * @nocollapse
-      * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
-      */
-    def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
-    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+    inline def create(args: Any*): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[Seq[js.Any]]*).asInstanceOf[Any]
   }
-  
 }
-

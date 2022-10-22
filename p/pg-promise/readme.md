@@ -1,7 +1,7 @@
 
 # Scala.js typings for pg-promise
 
-Typings are for version 9.3.6
+Typings are for version 10.12.1
 
 ## Library description:
 PostgreSQL interface for Node.js
@@ -10,10 +10,10 @@ PostgreSQL interface for Node.js
 | ------------------ | :-------------: |
 | Full name          | pg-promise |
 | Keywords           | pg, promise, postgres |
-| # releases         | 84 |
-| # dependents       | 253 |
-| # downloads        | 4580524 |
-| # stars            | 35 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 1363099.3333333333 |
+| # stars            | 3171.0 |
 
 ## Links
 - [Homepage](https://github.com/vitaly-t/pg-promise)

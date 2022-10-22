@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewChangedEventUIParam extends js.Object {
+trait ViewChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the newly selected view.
-  	 */
+    * Gets a reference to the newly selected view.
+    */
   var newSelectedView: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the scheduler.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the scheduler.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ViewChangedEventUIParam {
-  @scala.inline
-  def apply(newSelectedView: String = null, owner: js.Any = null): ViewChangedEventUIParam = {
+  
+  inline def apply(): ViewChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newSelectedView != null) __obj.updateDynamic("newSelectedView")(newSelectedView.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewChangedEventUIParam]
   }
+  
+  extension [Self <: ViewChangedEventUIParam](x: Self) {
+    
+    inline def setNewSelectedView(value: String): Self = StObject.set(x, "newSelectedView", value.asInstanceOf[js.Any])
+    
+    inline def setNewSelectedViewUndefined: Self = StObject.set(x, "newSelectedView", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

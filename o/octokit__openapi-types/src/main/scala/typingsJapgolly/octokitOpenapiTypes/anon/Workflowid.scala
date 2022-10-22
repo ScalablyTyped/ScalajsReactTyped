@@ -1,0 +1,33 @@
+package typingsJapgolly.octokitOpenapiTypes.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Workflowid extends StObject {
+  
+  /** The account owner of the repository. The name is not case sensitive. */
+  var owner: String
+  
+  /** The name of the repository. The name is not case sensitive. */
+  var repo: String
+  
+  /** The ID of the workflow. You can also pass the workflow file name as a string. */
+  var workflow_id: Double | String
+}
+object Workflowid {
+  
+  inline def apply(owner: String, repo: String, workflow_id: Double | String): Workflowid = {
+    val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], workflow_id = workflow_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Workflowid]
+  }
+  
+  extension [Self <: Workflowid](x: Self) {
+    
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    
+    inline def setWorkflow_id(value: Double | String): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
+  }
+}

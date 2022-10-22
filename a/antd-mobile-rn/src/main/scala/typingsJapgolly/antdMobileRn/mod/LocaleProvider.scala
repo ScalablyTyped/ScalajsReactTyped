@@ -1,21 +1,29 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonAntLocale
-import typingsJapgolly.antdMobileRn.AnonLocale
-import typingsJapgolly.antdMobileRn.localeProviderIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.AntLocale
+import typingsJapgolly.antdMobileRn.anon.Locale
+import typingsJapgolly.antdMobileRn.libLocaleProviderIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "LocaleProvider")
 @js.native
-class LocaleProvider () extends default
-
+open class LocaleProvider () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "LocaleProvider")
-@js.native
-object LocaleProvider extends js.Object {
-  var childContextTypes: AnonAntLocale = js.native
-  var propTypes: AnonLocale = js.native
+object LocaleProvider {
+  
+  @JSImport("antd-mobile-rn", "LocaleProvider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "LocaleProvider.childContextTypes")
+  @js.native
+  def childContextTypes: AntLocale = js.native
+  inline def childContextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("childContextTypes")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "LocaleProvider.propTypes")
+  @js.native
+  def propTypes: Locale = js.native
+  inline def propTypes_=(x: Locale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }
-

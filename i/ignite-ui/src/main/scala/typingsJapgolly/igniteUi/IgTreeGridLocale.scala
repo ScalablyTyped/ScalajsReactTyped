@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgTreeGridLocale
-  extends /**
-	 * Option for IgTreeGridLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies the collapse indicator tooltip text.
-  	 *
-  	 */
+    * Specifies the collapse indicator tooltip text.
+    *
+    */
   var collapseTooltipText: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the expansion indicator tooltip text.
-  	 *
-  	 */
+    * Specifies the expansion indicator tooltip text.
+    *
+    */
   var expandTooltipText: js.UndefOr[String] = js.undefined
 }
-
 object IgTreeGridLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgTreeGridLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    collapseTooltipText: String = null,
-    expandTooltipText: String = null
-  ): IgTreeGridLocale = {
+  
+  inline def apply(): IgTreeGridLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (collapseTooltipText != null) __obj.updateDynamic("collapseTooltipText")(collapseTooltipText.asInstanceOf[js.Any])
-    if (expandTooltipText != null) __obj.updateDynamic("expandTooltipText")(expandTooltipText.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgTreeGridLocale]
   }
+  
+  extension [Self <: IgTreeGridLocale](x: Self) {
+    
+    inline def setCollapseTooltipText(value: String): Self = StObject.set(x, "collapseTooltipText", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseTooltipTextUndefined: Self = StObject.set(x, "collapseTooltipText", js.undefined)
+    
+    inline def setExpandTooltipText(value: String): Self = StObject.set(x, "expandTooltipText", value.asInstanceOf[js.Any])
+    
+    inline def setExpandTooltipTextUndefined: Self = StObject.set(x, "expandTooltipText", js.undefined)
+  }
 }
-

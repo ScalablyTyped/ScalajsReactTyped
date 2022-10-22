@@ -1,23 +1,32 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   /** if true, method does not make an actual request to the API Server but rather returns an object with url which contains the actual URL to make the GET request to WebPageTest API Server */
   var dryRun: js.UndefOr[Boolean] = js.undefined
+  
   /** if specified, overrides the WebPageTest server informed in the constructor only for that method call */
   var server: js.UndefOr[String] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(dryRun: js.UndefOr[Boolean] = js.undefined, server: String = null): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+  }
 }
-

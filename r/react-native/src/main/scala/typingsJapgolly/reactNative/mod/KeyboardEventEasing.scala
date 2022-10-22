@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNative.reactNativeStrings.easeIn
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNative.reactNativeStrings.linear
   - typingsJapgolly.reactNative.reactNativeStrings.keyboard
 */
-trait KeyboardEventEasing extends js.Object
-
+trait KeyboardEventEasing extends StObject
 object KeyboardEventEasing {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def easeIn: typingsJapgolly.reactNative.reactNativeStrings.easeIn = this.cast("easeIn")
-  @scala.inline
-  def easeInEaseOut: typingsJapgolly.reactNative.reactNativeStrings.easeInEaseOut = this.cast("easeInEaseOut")
-  @scala.inline
-  def easeOut: typingsJapgolly.reactNative.reactNativeStrings.easeOut = this.cast("easeOut")
-  @scala.inline
-  def keyboard: typingsJapgolly.reactNative.reactNativeStrings.keyboard = this.cast("keyboard")
-  @scala.inline
-  def linear: typingsJapgolly.reactNative.reactNativeStrings.linear = this.cast("linear")
+  
+  inline def easeIn: typingsJapgolly.reactNative.reactNativeStrings.easeIn = "easeIn".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.easeIn]
+  
+  inline def easeInEaseOut: typingsJapgolly.reactNative.reactNativeStrings.easeInEaseOut = "easeInEaseOut".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.easeInEaseOut]
+  
+  inline def easeOut: typingsJapgolly.reactNative.reactNativeStrings.easeOut = "easeOut".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.easeOut]
+  
+  inline def keyboard: typingsJapgolly.reactNative.reactNativeStrings.keyboard = "keyboard".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.keyboard]
+  
+  inline def linear: typingsJapgolly.reactNative.reactNativeStrings.linear = "linear".asInstanceOf[typingsJapgolly.reactNative.reactNativeStrings.linear]
 }
-

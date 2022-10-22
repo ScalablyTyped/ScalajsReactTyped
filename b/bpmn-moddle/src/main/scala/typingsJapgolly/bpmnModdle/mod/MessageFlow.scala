@@ -1,14 +1,44 @@
 package typingsJapgolly.bpmnModdle.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MessageFlow extends BaseElement {
-  var messageRef: Message = js.native
-  var name: String = js.native
-  var sourceRef: InteractionNode = js.native
-  var targetRef: InteractionNode = js.native
+trait MessageFlow
+  extends StObject
+     with BaseElement {
+  
+  var messageRef: Message
+  
+  var name: String
+  
+  var sourceRef: InteractionNode
+  
+  var targetRef: InteractionNode
 }
-
+object MessageFlow {
+  
+  inline def apply(
+    $parent: TypeDerived,
+    $type: ElementType,
+    id: String,
+    messageRef: Message,
+    name: String,
+    sourceRef: InteractionNode,
+    targetRef: InteractionNode
+  ): MessageFlow = {
+    val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], messageRef = messageRef.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sourceRef = sourceRef.asInstanceOf[js.Any], targetRef = targetRef.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessageFlow]
+  }
+  
+  extension [Self <: MessageFlow](x: Self) {
+    
+    inline def setMessageRef(value: Message): Self = StObject.set(x, "messageRef", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSourceRef(value: InteractionNode): Self = StObject.set(x, "sourceRef", value.asInstanceOf[js.Any])
+    
+    inline def setTargetRef(value: InteractionNode): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
+  }
+}

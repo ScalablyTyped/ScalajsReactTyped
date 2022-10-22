@@ -1,34 +1,31 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ThrowStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
+  
   var argument: Expression
+  
   @JSName("type")
   var type_ThrowStatement: typingsJapgolly.estree.estreeStrings.ThrowStatement
 }
-
 object ThrowStatement {
-  @scala.inline
-  def apply(
-    argument: Expression,
-    `type`: typingsJapgolly.estree.estreeStrings.ThrowStatement,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ThrowStatement = {
+  
+  inline def apply(argument: Expression): ThrowStatement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[ThrowStatement]
   }
+  
+  extension [Self <: ThrowStatement](x: Self) {
+    
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

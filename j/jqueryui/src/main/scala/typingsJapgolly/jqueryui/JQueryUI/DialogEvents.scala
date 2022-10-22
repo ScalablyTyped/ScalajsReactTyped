@@ -2,52 +2,85 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogEvents extends js.Object {
+trait DialogEvents extends StObject {
+  
   var beforeClose: js.UndefOr[DialogEvent] = js.undefined
+  
   var close: js.UndefOr[DialogEvent] = js.undefined
+  
   var create: js.UndefOr[DialogEvent] = js.undefined
+  
   var drag: js.UndefOr[DialogEvent] = js.undefined
+  
   var dragStart: js.UndefOr[DialogEvent] = js.undefined
+  
   var dragStop: js.UndefOr[DialogEvent] = js.undefined
+  
   var focus: js.UndefOr[DialogEvent] = js.undefined
+  
   var open: js.UndefOr[DialogEvent] = js.undefined
+  
   var resize: js.UndefOr[DialogEvent] = js.undefined
+  
   var resizeStart: js.UndefOr[DialogEvent] = js.undefined
+  
   var resizeStop: js.UndefOr[DialogEvent] = js.undefined
 }
-
 object DialogEvents {
-  @scala.inline
-  def apply(
-    beforeClose: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    close: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    drag: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    dragStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    dragStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    focus: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    open: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    resize: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    resizeStart: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null,
-    resizeStop: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback = null
-  ): DialogEvents = {
+  
+  inline def apply(): DialogEvents = {
     val __obj = js.Dynamic.literal()
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => beforeClose(t0, t1).runNow()))
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => close(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => create(t0, t1).runNow()))
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => drag(t0, t1).runNow()))
-    if (dragStart != null) __obj.updateDynamic("dragStart")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => dragStart(t0, t1).runNow()))
-    if (dragStop != null) __obj.updateDynamic("dragStop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => dragStop(t0, t1).runNow()))
-    if (focus != null) __obj.updateDynamic("focus")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => focus(t0, t1).runNow()))
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => open(t0, t1).runNow()))
-    if (resize != null) __obj.updateDynamic("resize")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => resize(t0, t1).runNow()))
-    if (resizeStart != null) __obj.updateDynamic("resizeStart")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => resizeStart(t0, t1).runNow()))
-    if (resizeStop != null) __obj.updateDynamic("resizeStop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DialogUIParams) => resizeStop(t0, t1).runNow()))
     __obj.asInstanceOf[DialogEvents]
   }
+  
+  extension [Self <: DialogEvents](x: Self) {
+    
+    inline def setBeforeClose(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "beforeClose", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+    
+    inline def setClose(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "close", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setDrag(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setDragStart(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "dragStart", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
+    
+    inline def setDragStop(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "dragStop", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setDragStopUndefined: Self = StObject.set(x, "dragStop", js.undefined)
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setFocus(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "focus", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setFocusUndefined: Self = StObject.set(x, "focus", js.undefined)
+    
+    inline def setOpen(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "open", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setResize(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "resize", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setResizeStart(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "resizeStart", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setResizeStartUndefined: Self = StObject.set(x, "resizeStart", js.undefined)
+    
+    inline def setResizeStop(value: (/* event */ JQueryEventObject, /* ui */ DialogUIParams) => Callback): Self = StObject.set(x, "resizeStop", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DialogUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setResizeStopUndefined: Self = StObject.set(x, "resizeStop", js.undefined)
+    
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+  }
 }
-

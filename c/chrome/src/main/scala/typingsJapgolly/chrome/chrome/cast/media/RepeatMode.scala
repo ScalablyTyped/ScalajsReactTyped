@@ -1,41 +1,32 @@
 package typingsJapgolly.chrome.chrome.cast.media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RepeatMode extends js.Object
-
+sealed trait RepeatMode extends StObject
 @JSGlobal("chrome.cast.media.RepeatMode")
 @js.native
-object RepeatMode extends js.Object {
-  @js.native
-  sealed trait ALL extends RepeatMode
+object RepeatMode extends StObject {
   
   @js.native
-  sealed trait ALL_AND_SHUFFLE extends RepeatMode
+  sealed trait ALL
+    extends StObject
+       with RepeatMode
   
   @js.native
-  sealed trait OFF extends RepeatMode
+  sealed trait ALL_AND_SHUFFLE
+    extends StObject
+       with RepeatMode
   
   @js.native
-  sealed trait SINGLE extends RepeatMode
+  sealed trait OFF
+    extends StObject
+       with RepeatMode
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RepeatMode with String] = js.native
-  /* "REPEAT_ALL" */ @js.native
-  object ALL extends TopLevel[ALL with String]
-  
-  /* "REPEAT_ALL_AND_SHUFFLE" */ @js.native
-  object ALL_AND_SHUFFLE extends TopLevel[ALL_AND_SHUFFLE with String]
-  
-  /* "REPEAT_OFF" */ @js.native
-  object OFF extends TopLevel[OFF with String]
-  
-  /* "REPEAT_SINGLE" */ @js.native
-  object SINGLE extends TopLevel[SINGLE with String]
-  
+  @js.native
+  sealed trait SINGLE
+    extends StObject
+       with RepeatMode
 }
-

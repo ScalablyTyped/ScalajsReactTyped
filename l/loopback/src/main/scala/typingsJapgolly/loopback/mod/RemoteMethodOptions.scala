@@ -1,8 +1,8 @@
 package typingsJapgolly.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @interface
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   * @property {string | string[]} notes Additional notes, used by API documentation generators like Swagger.
   * @property {RemoteMethodArgument} returns Describes the remote method's callback arguments
   */
-trait RemoteMethodOptions extends js.Object {
+trait RemoteMethodOptions extends StObject {
+  
   /**
     * Defines arguments that the remote method accepts. These arguments map to the static method you define. For the example above, you can see the function signature:
     Person.greet(name, age, callback)...
@@ -27,27 +28,32 @@ trait RemoteMethodOptions extends js.Object {
     ... }
     */
   var accepts: js.UndefOr[js.Array[RemoteMethodArgument]] = js.undefined
+  
   /**
     * Text description of the method, used by API documentation generators such as Swagger.
     You can put long strings in an array if needed (see note below).
     */
   var description: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /**
     *
     */
   var http: js.UndefOr[RemoteHttpOptions] = js.undefined
+  
   /**
     *
     * boolean. Whether the method is static (eg. `MyModel.myMethod`). Use `false` to define the method on the prototype (for example, `MyModel.prototype.myMethod`). Default is true.
     * default: true
     */
   var isStatic: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     Additional notes, used by API documentation generators like Swagger.
     You can put long strings in an array if needed (see note below).
     */
   var notes: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /**
     * Describes the remote method's callback arguments; See Argument descriptions. The err argument is assumed; do not specify.
     * Default if not provided is the empty array,  [].
@@ -57,25 +63,43 @@ trait RemoteMethodOptions extends js.Object {
     */
   var returns: js.UndefOr[RemoteMethodArgument] = js.undefined
 }
-
 object RemoteMethodOptions {
-  @scala.inline
-  def apply(
-    accepts: js.Array[RemoteMethodArgument] = null,
-    description: String | js.Array[String] = null,
-    http: RemoteHttpOptions = null,
-    isStatic: js.UndefOr[Boolean] = js.undefined,
-    notes: String | js.Array[String] = null,
-    returns: RemoteMethodArgument = null
-  ): RemoteMethodOptions = {
+  
+  inline def apply(): RemoteMethodOptions = {
     val __obj = js.Dynamic.literal()
-    if (accepts != null) __obj.updateDynamic("accepts")(accepts.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
-    if (!js.isUndefined(isStatic)) __obj.updateDynamic("isStatic")(isStatic.asInstanceOf[js.Any])
-    if (notes != null) __obj.updateDynamic("notes")(notes.asInstanceOf[js.Any])
-    if (returns != null) __obj.updateDynamic("returns")(returns.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteMethodOptions]
   }
+  
+  extension [Self <: RemoteMethodOptions](x: Self) {
+    
+    inline def setAccepts(value: js.Array[RemoteMethodArgument]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
+    
+    inline def setAcceptsUndefined: Self = StObject.set(x, "accepts", js.undefined)
+    
+    inline def setAcceptsVarargs(value: RemoteMethodArgument*): Self = StObject.set(x, "accepts", js.Array(value*))
+    
+    inline def setDescription(value: String | js.Array[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDescriptionVarargs(value: String*): Self = StObject.set(x, "description", js.Array(value*))
+    
+    inline def setHttp(value: RemoteHttpOptions): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    
+    inline def setHttpUndefined: Self = StObject.set(x, "http", js.undefined)
+    
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    
+    inline def setIsStaticUndefined: Self = StObject.set(x, "isStatic", js.undefined)
+    
+    inline def setNotes(value: String | js.Array[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    
+    inline def setNotesVarargs(value: String*): Self = StObject.set(x, "notes", js.Array(value*))
+    
+    inline def setReturns(value: RemoteMethodArgument): Self = StObject.set(x, "returns", value.asInstanceOf[js.Any])
+    
+    inline def setReturnsUndefined: Self = StObject.set(x, "returns", js.undefined)
+  }
 }
-

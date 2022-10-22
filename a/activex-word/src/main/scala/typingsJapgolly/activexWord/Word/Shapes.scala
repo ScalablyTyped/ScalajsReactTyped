@@ -9,37 +9,37 @@ import typingsJapgolly.activexOffice.Office.MsoTextOrientation
 import typingsJapgolly.activexOffice.Office.MsoTriState
 import typingsJapgolly.activexOffice.Office.SmartArtLayout
 import typingsJapgolly.activexOffice.Office.XlChartType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.Shapes")
 @js.native
-class Shapes protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.Shapes_typekey")
-  var WordDotShapes_typekey: Shapes = js.native
+trait Shapes extends StObject {
+  
   def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
-  def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
+  def AddCallout(Type: MsoCalloutType, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: Any): Shape = js.native
+  
   def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
-  def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
+  def AddCanvas(Left: Double, Top: Double, Width: Double, Height: Double, Anchor: Any): Shape = js.native
+  
   /** @param Office.XlChartType [Type=-1] */
   def AddChart(
     Type: js.UndefOr[XlChartType],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Anchor: js.UndefOr[js.Any]
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Anchor: js.UndefOr[Any]
   ): Shape = js.native
+  
   def AddConnector(Type: MsoConnectorType, BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
-  def AddCurve(SafeArrayOfPoints: js.Any): Shape = js.native
-  def AddCurve(SafeArrayOfPoints: js.Any, Anchor: js.Any): Shape = js.native
+  
+  def AddCurve(SafeArrayOfPoints: Any): Shape = js.native
+  def AddCurve(SafeArrayOfPoints: Any, Anchor: Any): Shape = js.native
+  
   def AddDiagram(Type: MsoDiagramType, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
-  def AddDiagram(Type: MsoDiagramType, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
+  def AddDiagram(Type: MsoDiagramType, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: Any): Shape = js.native
+  
   def AddLabel(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddLabel(
     Orientation: MsoTextOrientation,
@@ -47,52 +47,86 @@ class Shapes protected () extends js.Object {
     Top: Double,
     Width: Double,
     Height: Double,
-    Anchor: js.Any
+    Anchor: Any
   ): Shape = js.native
+  
   def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double): Shape = js.native
-  def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double, Anchor: js.Any): Shape = js.native
+  def AddLine(BeginX: Double, BeginY: Double, EndX: Double, EndY: Double, Anchor: Any): Shape = js.native
+  
   def AddOLEControl(
-    ClassType: js.UndefOr[js.Any],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Anchor: js.UndefOr[js.Any]
+    ClassType: js.UndefOr[Any],
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Anchor: js.UndefOr[Any]
   ): Shape = js.native
+  
   def AddOLEObject(
-    ClassType: js.UndefOr[js.Any],
-    FileName: js.UndefOr[js.Any],
-    LinkToFile: js.UndefOr[js.Any],
-    DisplayAsIcon: js.UndefOr[js.Any],
-    IconFileName: js.UndefOr[js.Any],
-    IconIndex: js.UndefOr[js.Any],
-    IconLabel: js.UndefOr[js.Any],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Anchor: js.UndefOr[js.Any]
+    ClassType: js.UndefOr[Any],
+    FileName: js.UndefOr[Any],
+    LinkToFile: js.UndefOr[Any],
+    DisplayAsIcon: js.UndefOr[Any],
+    IconFileName: js.UndefOr[Any],
+    IconIndex: js.UndefOr[Any],
+    IconLabel: js.UndefOr[Any],
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Anchor: js.UndefOr[Any]
   ): Shape = js.native
+  
   def AddPicture(
     FileName: String,
-    LinkToFile: js.UndefOr[js.Any],
-    SaveWithDocument: js.UndefOr[js.Any],
-    Left: js.UndefOr[js.Any],
-    Top: js.UndefOr[js.Any],
-    Width: js.UndefOr[js.Any],
-    Height: js.UndefOr[js.Any],
-    Anchor: js.UndefOr[js.Any]
+    LinkToFile: js.UndefOr[Any],
+    SaveWithDocument: js.UndefOr[Any],
+    Left: js.UndefOr[Any],
+    Top: js.UndefOr[Any],
+    Width: js.UndefOr[Any],
+    Height: js.UndefOr[Any],
+    Anchor: js.UndefOr[Any]
   ): Shape = js.native
-  def AddPolyline(SafeArrayOfPoints: js.Any): Shape = js.native
-  def AddPolyline(SafeArrayOfPoints: js.Any, Anchor: js.Any): Shape = js.native
+  
+  def AddPolyline(SafeArrayOfPoints: Any): Shape = js.native
+  def AddPolyline(SafeArrayOfPoints: Any, Anchor: Any): Shape = js.native
+  
   def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
-  def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: js.Any): Shape = js.native
+  def AddShape(Type: Double, Left: Double, Top: Double, Width: Double, Height: Double, Anchor: Any): Shape = js.native
+  
   def AddSmartArt(Layout: SmartArtLayout): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Shape = js.native
-  def AddSmartArt(Layout: SmartArtLayout, Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any, Anchor: js.Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Any, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Any, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Any, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Unit, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Unit, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Any, Width: Unit, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Any, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Any, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Any, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Unit, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Unit, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Any, Top: Unit, Width: Unit, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Any, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Any, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Any, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Unit, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Unit, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Any, Width: Unit, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Any, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Any, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Any, Height: Unit, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Any, Anchor: Any): Shape = js.native
+  def AddSmartArt(Layout: SmartArtLayout, Left: Unit, Top: Unit, Width: Unit, Height: Unit, Anchor: Any): Shape = js.native
+  
   def AddTextEffect(
     PresetTextEffect: MsoPresetTextEffect,
     Text: String,
@@ -112,8 +146,9 @@ class Shapes protected () extends js.Object {
     FontItalic: MsoTriState,
     Left: Double,
     Top: Double,
-    Anchor: js.Any
+    Anchor: Any
   ): Shape = js.native
+  
   def AddTextbox(Orientation: MsoTextOrientation, Left: Double, Top: Double, Width: Double, Height: Double): Shape = js.native
   def AddTextbox(
     Orientation: MsoTextOrientation,
@@ -121,11 +156,25 @@ class Shapes protected () extends js.Object {
     Top: Double,
     Width: Double,
     Height: Double,
-    Anchor: js.Any
+    Anchor: Any
   ): Shape = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
   def BuildFreeform(EditingType: MsoEditingType, X1: Double, Y1: Double): FreeformBuilder = js.native
-  def Item(Index: js.Any): Shape = js.native
-  def Range(Index: js.Any): ShapeRange = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  def Item(Index: Any): Shape = js.native
+  
+  val Parent: Any = js.native
+  
+  def Range(Index: Any): ShapeRange = js.native
+  
   def SelectAll(): Unit = js.native
+  
+  /* private */ @JSName("Word.Shapes_typekey")
+  var WordDotShapes_typekey: Shapes = js.native
 }
-

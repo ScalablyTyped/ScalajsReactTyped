@@ -1,21 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnenoteEntityBaseModel extends Entity {
+trait OnenoteEntityBaseModel
+  extends StObject
+     with Entity {
+  
   // The endpoint where you can get details about the page. Read-only.
-  var self: js.UndefOr[String] = js.undefined
+  var self: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object OnenoteEntityBaseModel {
-  @scala.inline
-  def apply(id: String = null, self: String = null): OnenoteEntityBaseModel = {
+  
+  inline def apply(): OnenoteEntityBaseModel = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnenoteEntityBaseModel]
   }
+  
+  extension [Self <: OnenoteEntityBaseModel](x: Self) {
+    
+    inline def setSelf(value: NullableOption[String]): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    
+    inline def setSelfNull: Self = StObject.set(x, "self", null)
+    
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+  }
 }
-

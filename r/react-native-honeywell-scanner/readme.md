@@ -10,10 +10,10 @@ A barcode scanner for Honeywell handheld devices like Honeywell Dolphin CT50
 | ------------------ | :-------------: |
 | Full name          | react-native-honeywell-scanner |
 | Keywords           | honeywell, barcode, scanner |
-| # releases         | 5 |
-| # dependents       | 0 |
-| # downloads        | 14526 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 203.0 |
+| # stars            | 14.0 |
 
 ## Links
 - [Homepage](https://github.com/Volst/react-native-honeywell-scanner#readme)

@@ -1,38 +1,33 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SemicolonPreference extends js.Object
-
+sealed trait SemicolonPreference extends StObject
 @JSImport("typescript", "SemicolonPreference")
 @js.native
-object SemicolonPreference extends js.Object {
-  @js.native
-  sealed trait Ignore extends SemicolonPreference
-  
-  @js.native
-  sealed trait Insert extends SemicolonPreference
-  
-  @js.native
-  sealed trait Remove extends SemicolonPreference
+object SemicolonPreference extends StObject {
   
   @JSBracketAccess
-  def apply(value: java.lang.String): js.UndefOr[SemicolonPreference with java.lang.String] = js.native
-  /* "ignore" */ @js.native
-  object Ignore
-    extends TopLevel[Ignore with java.lang.String]
+  def apply(value: java.lang.String): js.UndefOr[SemicolonPreference & java.lang.String] = js.native
   
-  /* "insert" */ @js.native
-  object Insert
-    extends TopLevel[Insert with java.lang.String]
+  @js.native
+  sealed trait Ignore
+    extends StObject
+       with SemicolonPreference
+  /* "ignore" */ val Ignore: typingsJapgolly.typescript.mod.SemicolonPreference.Ignore & java.lang.String = js.native
   
-  /* "remove" */ @js.native
-  object Remove
-    extends TopLevel[Remove with java.lang.String]
+  @js.native
+  sealed trait Insert
+    extends StObject
+       with SemicolonPreference
+  /* "insert" */ val Insert: typingsJapgolly.typescript.mod.SemicolonPreference.Insert & java.lang.String = js.native
   
+  @js.native
+  sealed trait Remove
+    extends StObject
+       with SemicolonPreference
+  /* "remove" */ val Remove: typingsJapgolly.typescript.mod.SemicolonPreference.Remove & java.lang.String = js.native
 }
-

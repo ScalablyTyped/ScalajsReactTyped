@@ -10,10 +10,10 @@ a promise-based ftp client for node.js
 | ------------------ | :-------------: |
 | Full name          | promise-ftp |
 | Keywords           | ftp, client, promise, node |
-| # releases         | 2 |
-| # dependents       | 24 |
-| # downloads        | 539940 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 99782.33333333333 |
+| # stars            | 79.0 |
 
 ## Links
 - [Homepage](https://github.com/realtymaps/promise-ftp#readme)

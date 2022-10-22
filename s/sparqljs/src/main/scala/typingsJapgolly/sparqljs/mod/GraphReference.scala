@@ -1,31 +1,33 @@
 package typingsJapgolly.sparqljs.mod
 
-import typingsJapgolly.sparqljs.sparqljsStrings.graph
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GraphReference extends GraphOrDefault {
+trait GraphReference
+  extends StObject
+     with GraphOrDefault {
+  
   var all: js.UndefOr[Boolean] = js.undefined
+  
   var named: js.UndefOr[Boolean] = js.undefined
 }
-
 object GraphReference {
-  @scala.inline
-  def apply(
-    `type`: graph,
-    all: js.UndefOr[Boolean] = js.undefined,
-    default: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    named: js.UndefOr[Boolean] = js.undefined
-  ): GraphReference = {
+  
+  inline def apply(): GraphReference = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(named)) __obj.updateDynamic("named")(named.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[GraphReference]
   }
+  
+  extension [Self <: GraphReference](x: Self) {
+    
+    inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+    
+    inline def setNamed(value: Boolean): Self = StObject.set(x, "named", value.asInstanceOf[js.Any])
+    
+    inline def setNamedUndefined: Self = StObject.set(x, "named", js.undefined)
+  }
 }
-

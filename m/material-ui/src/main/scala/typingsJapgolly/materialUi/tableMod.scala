@@ -8,44 +8,48 @@ import typingsJapgolly.materialUi.MaterialUI.Table.TableProps
 import typingsJapgolly.materialUi.MaterialUI.Table.TableRowColumnProps
 import typingsJapgolly.materialUi.MaterialUI.Table.TableRowProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("material-ui/Table", JSImport.Namespace)
-@js.native
-object tableMod extends js.Object {
-  @js.native
-  class Table ()
-    extends Component[TableProps, js.Object, js.Any]
+object tableMod {
   
+  @JSImport("material-ui/Table", JSImport.Default)
   @js.native
-  class TableBody ()
-    extends Component[TableBodyProps, js.Object, js.Any]
+  open class default () extends Table
   
+  @JSImport("material-ui/Table", "Table")
   @js.native
-  class TableFooter ()
-    extends Component[TableFooterProps, js.Object, js.Any]
+  open class Table ()
+    extends Component[TableProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableBody")
   @js.native
-  class TableHeader ()
-    extends Component[TableHeaderProps, js.Object, js.Any]
+  open class TableBody ()
+    extends Component[TableBodyProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableFooter")
   @js.native
-  class TableHeaderColumn ()
-    extends Component[TableHeaderColumnProps, js.Object, js.Any]
+  open class TableFooter ()
+    extends Component[TableFooterProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableHeader")
   @js.native
-  class TableRow ()
-    extends Component[TableRowProps, js.Object, js.Any]
+  open class TableHeader ()
+    extends Component[TableHeaderProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableHeaderColumn")
   @js.native
-  class TableRowColumn ()
-    extends Component[TableRowColumnProps, js.Object, js.Any]
+  open class TableHeaderColumn ()
+    extends Component[TableHeaderColumnProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableRow")
   @js.native
-  class default ()
-    extends Component[TableProps, js.Object, js.Any]
+  open class TableRow ()
+    extends Component[TableRowProps, js.Object, Any]
   
+  @JSImport("material-ui/Table", "TableRowColumn")
+  @js.native
+  open class TableRowColumn ()
+    extends Component[TableRowColumnProps, js.Object, Any]
 }
-

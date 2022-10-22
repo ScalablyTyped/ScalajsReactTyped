@@ -1,7 +1,7 @@
 
 # Scala.js typings for array-uniq
 
-Typings are for version 2.1.0
+Typings are for version 3.0.0
 
 ## Library description:
 Create an array without duplicates
@@ -10,10 +10,10 @@ Create an array without duplicates
 | ------------------ | :-------------: |
 | Full name          | array-uniq |
 | Keywords           | array, set, uniq, unique, duplicate, remove |
-| # releases         | 3 |
-| # dependents       | 135 |
-| # downloads        | 390007191 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5.4787203333333336E7 |
+| # stars            | 66.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/array-uniq#readme)

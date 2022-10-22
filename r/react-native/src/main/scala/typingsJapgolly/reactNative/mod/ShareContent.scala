@@ -1,27 +1,23 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.reactNative.AnonMessage
-  - typingsJapgolly.reactNative.AnonTitle
+  - typingsJapgolly.reactNative.anon.Message
+  - typingsJapgolly.reactNative.anon.Title
 */
-trait ShareContent extends js.Object
-
+trait ShareContent extends StObject
 object ShareContent {
-  @scala.inline
-  def AnonMessage(message: String, title: String = null): ShareContent = {
+  
+  inline def Message(message: String): typingsJapgolly.reactNative.anon.Message = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+    __obj.asInstanceOf[typingsJapgolly.reactNative.anon.Message]
   }
-  @scala.inline
-  def AnonTitle(url: String, title: String = null): ShareContent = {
+  
+  inline def Title(url: String): typingsJapgolly.reactNative.anon.Title = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ShareContent]
+    __obj.asInstanceOf[typingsJapgolly.reactNative.anon.Title]
   }
 }
-

@@ -1,21 +1,27 @@
 package typingsJapgolly.typescript.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConditionalType extends Type {
+trait ConditionalType
+  extends StObject
+     with Type {
+  
   var checkType: Type
+  
   var extendsType: Type
-  var resolvedFalseType: Type
-  var resolvedTrueType: Type
+  
+  var resolvedFalseType: js.UndefOr[Type] = js.undefined
+  
+  var resolvedTrueType: js.UndefOr[Type] = js.undefined
+  
   var root: ConditionalRoot
 }
-
 object ConditionalType {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     checkType: Type,
     extendsType: Type,
     flags: TypeFlags,
@@ -29,11 +35,12 @@ object ConditionalType {
     getNonNullableType: CallbackTo[Type],
     getNumberIndexType: CallbackTo[js.UndefOr[Type]],
     getProperties: CallbackTo[js.Array[Symbol]],
-    getProperty: java.lang.String => CallbackTo[js.UndefOr[Symbol]],
+    getProperty: java.lang.String => js.UndefOr[Symbol],
     getStringIndexType: CallbackTo[js.UndefOr[Type]],
     getSymbol: CallbackTo[js.UndefOr[Symbol]],
     isClass: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
     isClassOrInterface: CallbackTo[/* is typescript.typescript.InterfaceType */ Boolean],
+    isIndexType: CallbackTo[/* is typescript.typescript.IndexType */ Boolean],
     isIntersection: CallbackTo[/* is typescript.typescript.IntersectionType */ Boolean],
     isLiteral: CallbackTo[/* is typescript.typescript.LiteralType */ Boolean],
     isNumberLiteral: CallbackTo[/* is typescript.typescript.NumberLiteralType */ Boolean],
@@ -41,41 +48,27 @@ object ConditionalType {
     isTypeParameter: CallbackTo[/* is typescript.typescript.TypeParameter */ Boolean],
     isUnion: CallbackTo[/* is typescript.typescript.UnionType */ Boolean],
     isUnionOrIntersection: CallbackTo[/* is typescript.typescript.UnionOrIntersectionType */ Boolean],
-    resolvedFalseType: Type,
-    resolvedTrueType: Type,
     root: ConditionalRoot,
-    symbol: Symbol,
-    aliasSymbol: Symbol = null,
-    aliasTypeArguments: js.Array[Type] = null,
-    pattern: DestructuringPattern = null
+    symbol: Symbol
   ): ConditionalType = {
-    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], resolvedFalseType = resolvedFalseType.asInstanceOf[js.Any], resolvedTrueType = resolvedTrueType.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
-    __obj.updateDynamic("getApparentProperties")(getApparentProperties.toJsFn)
-    __obj.updateDynamic("getBaseTypes")(getBaseTypes.toJsFn)
-    __obj.updateDynamic("getCallSignatures")(getCallSignatures.toJsFn)
-    __obj.updateDynamic("getConstraint")(getConstraint.toJsFn)
-    __obj.updateDynamic("getConstructSignatures")(getConstructSignatures.toJsFn)
-    __obj.updateDynamic("getDefault")(getDefault.toJsFn)
-    __obj.updateDynamic("getFlags")(getFlags.toJsFn)
-    __obj.updateDynamic("getNonNullableType")(getNonNullableType.toJsFn)
-    __obj.updateDynamic("getNumberIndexType")(getNumberIndexType.toJsFn)
-    __obj.updateDynamic("getProperties")(getProperties.toJsFn)
-    __obj.updateDynamic("getProperty")(js.Any.fromFunction1((t0: java.lang.String) => getProperty(t0).runNow()))
-    __obj.updateDynamic("getStringIndexType")(getStringIndexType.toJsFn)
-    __obj.updateDynamic("getSymbol")(getSymbol.toJsFn)
-    __obj.updateDynamic("isClass")(isClass.toJsFn)
-    __obj.updateDynamic("isClassOrInterface")(isClassOrInterface.toJsFn)
-    __obj.updateDynamic("isIntersection")(isIntersection.toJsFn)
-    __obj.updateDynamic("isLiteral")(isLiteral.toJsFn)
-    __obj.updateDynamic("isNumberLiteral")(isNumberLiteral.toJsFn)
-    __obj.updateDynamic("isStringLiteral")(isStringLiteral.toJsFn)
-    __obj.updateDynamic("isTypeParameter")(isTypeParameter.toJsFn)
-    __obj.updateDynamic("isUnion")(isUnion.toJsFn)
-    __obj.updateDynamic("isUnionOrIntersection")(isUnionOrIntersection.toJsFn)
-    if (aliasSymbol != null) __obj.updateDynamic("aliasSymbol")(aliasSymbol.asInstanceOf[js.Any])
-    if (aliasTypeArguments != null) __obj.updateDynamic("aliasTypeArguments")(aliasTypeArguments.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(checkType = checkType.asInstanceOf[js.Any], extendsType = extendsType.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], getApparentProperties = getApparentProperties.toJsFn, getBaseTypes = getBaseTypes.toJsFn, getCallSignatures = getCallSignatures.toJsFn, getConstraint = getConstraint.toJsFn, getConstructSignatures = getConstructSignatures.toJsFn, getDefault = getDefault.toJsFn, getFlags = getFlags.toJsFn, getNonNullableType = getNonNullableType.toJsFn, getNumberIndexType = getNumberIndexType.toJsFn, getProperties = getProperties.toJsFn, getProperty = js.Any.fromFunction1(getProperty), getStringIndexType = getStringIndexType.toJsFn, getSymbol = getSymbol.toJsFn, isClass = isClass.toJsFn, isClassOrInterface = isClassOrInterface.toJsFn, isIndexType = isIndexType.toJsFn, isIntersection = isIntersection.toJsFn, isLiteral = isLiteral.toJsFn, isNumberLiteral = isNumberLiteral.toJsFn, isStringLiteral = isStringLiteral.toJsFn, isTypeParameter = isTypeParameter.toJsFn, isUnion = isUnion.toJsFn, isUnionOrIntersection = isUnionOrIntersection.toJsFn, root = root.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConditionalType]
   }
+  
+  extension [Self <: ConditionalType](x: Self) {
+    
+    inline def setCheckType(value: Type): Self = StObject.set(x, "checkType", value.asInstanceOf[js.Any])
+    
+    inline def setExtendsType(value: Type): Self = StObject.set(x, "extendsType", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedFalseType(value: Type): Self = StObject.set(x, "resolvedFalseType", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedFalseTypeUndefined: Self = StObject.set(x, "resolvedFalseType", js.undefined)
+    
+    inline def setResolvedTrueType(value: Type): Self = StObject.set(x, "resolvedTrueType", value.asInstanceOf[js.Any])
+    
+    inline def setResolvedTrueTypeUndefined: Self = StObject.set(x, "resolvedTrueType", js.undefined)
+    
+    inline def setRoot(value: ConditionalRoot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+  }
 }
-

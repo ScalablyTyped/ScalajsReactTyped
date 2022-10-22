@@ -1,119 +1,117 @@
 package typingsJapgolly.thrift.mod.Thrift
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Type extends js.Object
-
+sealed trait Type extends StObject
 @JSImport("thrift", "Thrift.Type")
 @js.native
-object Type extends js.Object {
-  @js.native
-  sealed trait BOOL extends Type
-  
-  @js.native
-  sealed trait BYTE extends Type
-  
-  @js.native
-  sealed trait DOUBLE extends Type
-  
-  @js.native
-  sealed trait I08 extends Type
-  
-  @js.native
-  sealed trait I16 extends Type
-  
-  @js.native
-  sealed trait I32 extends Type
-  
-  @js.native
-  sealed trait I64 extends Type
-  
-  @js.native
-  sealed trait LIST extends Type
-  
-  @js.native
-  sealed trait MAP extends Type
-  
-  @js.native
-  sealed trait SET extends Type
-  
-  @js.native
-  sealed trait STOP extends Type
-  
-  @js.native
-  sealed trait STRING extends Type
-  
-  @js.native
-  sealed trait STRUCT extends Type
-  
-  @js.native
-  sealed trait UTF16 extends Type
-  
-  @js.native
-  sealed trait UTF7 extends Type
-  
-  @js.native
-  sealed trait UTF8 extends Type
-  
-  @js.native
-  sealed trait VOID extends Type
+object Type extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Type with Double] = js.native
-  /* 2 */ @js.native
-  object BOOL extends TopLevel[BOOL with Double]
+  def apply(value: Double): js.UndefOr[Type & Double] = js.native
   
-  /* 3 */ @js.native
-  object BYTE extends TopLevel[BYTE with Double]
+  @js.native
+  sealed trait BOOL
+    extends StObject
+       with Type
+  /* 2 */ val BOOL: typingsJapgolly.thrift.mod.Thrift.Type.BOOL & Double = js.native
   
-  /* 4 */ @js.native
-  object DOUBLE extends TopLevel[DOUBLE with Double]
+  @js.native
+  sealed trait BYTE
+    extends StObject
+       with Type
+  /* 3 */ val BYTE: typingsJapgolly.thrift.mod.Thrift.Type.BYTE & Double = js.native
   
-  /* 3 */ @js.native
-  object I08 extends TopLevel[I08 with Double]
+  @js.native
+  sealed trait DOUBLE
+    extends StObject
+       with Type
+  /* 4 */ val DOUBLE: typingsJapgolly.thrift.mod.Thrift.Type.DOUBLE & Double = js.native
   
-  /* 6 */ @js.native
-  object I16 extends TopLevel[I16 with Double]
+  @js.native
+  sealed trait I08
+    extends StObject
+       with Type
+  /* 3 */ val I08: typingsJapgolly.thrift.mod.Thrift.Type.I08 & Double = js.native
   
-  /* 8 */ @js.native
-  object I32 extends TopLevel[I32 with Double]
+  @js.native
+  sealed trait I16
+    extends StObject
+       with Type
+  /* 6 */ val I16: typingsJapgolly.thrift.mod.Thrift.Type.I16 & Double = js.native
   
-  /* 10 */ @js.native
-  object I64 extends TopLevel[I64 with Double]
+  @js.native
+  sealed trait I32
+    extends StObject
+       with Type
+  /* 8 */ val I32: typingsJapgolly.thrift.mod.Thrift.Type.I32 & Double = js.native
   
-  /* 15 */ @js.native
-  object LIST extends TopLevel[LIST with Double]
+  @js.native
+  sealed trait I64
+    extends StObject
+       with Type
+  /* 10 */ val I64: typingsJapgolly.thrift.mod.Thrift.Type.I64 & Double = js.native
   
-  /* 13 */ @js.native
-  object MAP extends TopLevel[MAP with Double]
+  @js.native
+  sealed trait LIST
+    extends StObject
+       with Type
+  /* 15 */ val LIST: typingsJapgolly.thrift.mod.Thrift.Type.LIST & Double = js.native
   
-  /* 14 */ @js.native
-  object SET extends TopLevel[SET with Double]
+  @js.native
+  sealed trait MAP
+    extends StObject
+       with Type
+  /* 13 */ val MAP: typingsJapgolly.thrift.mod.Thrift.Type.MAP & Double = js.native
   
-  /* 0 */ @js.native
-  object STOP extends TopLevel[STOP with Double]
+  @js.native
+  sealed trait SET
+    extends StObject
+       with Type
+  /* 14 */ val SET: typingsJapgolly.thrift.mod.Thrift.Type.SET & Double = js.native
   
-  /* 11 */ @js.native
-  object STRING extends TopLevel[STRING with Double]
+  @js.native
+  sealed trait STOP
+    extends StObject
+       with Type
+  /* 0 */ val STOP: typingsJapgolly.thrift.mod.Thrift.Type.STOP & Double = js.native
   
-  /* 12 */ @js.native
-  object STRUCT extends TopLevel[STRUCT with Double]
+  @js.native
+  sealed trait STRING
+    extends StObject
+       with Type
+  /* 11 */ val STRING: typingsJapgolly.thrift.mod.Thrift.Type.STRING & Double = js.native
   
-  /* 17 */ @js.native
-  object UTF16 extends TopLevel[UTF16 with Double]
+  @js.native
+  sealed trait STRUCT
+    extends StObject
+       with Type
+  /* 12 */ val STRUCT: typingsJapgolly.thrift.mod.Thrift.Type.STRUCT & Double = js.native
   
-  /* 11 */ @js.native
-  object UTF7 extends TopLevel[UTF7 with Double]
+  @js.native
+  sealed trait UTF16
+    extends StObject
+       with Type
+  /* 17 */ val UTF16: typingsJapgolly.thrift.mod.Thrift.Type.UTF16 & Double = js.native
   
-  /* 16 */ @js.native
-  object UTF8 extends TopLevel[UTF8 with Double]
+  @js.native
+  sealed trait UTF7
+    extends StObject
+       with Type
+  /* 11 */ val UTF7: typingsJapgolly.thrift.mod.Thrift.Type.UTF7 & Double = js.native
   
-  /* 1 */ @js.native
-  object VOID extends TopLevel[VOID with Double]
+  @js.native
+  sealed trait UTF8
+    extends StObject
+       with Type
+  /* 16 */ val UTF8: typingsJapgolly.thrift.mod.Thrift.Type.UTF8 & Double = js.native
   
+  @js.native
+  sealed trait VOID
+    extends StObject
+       with Type
+  /* 1 */ val VOID: typingsJapgolly.thrift.mod.Thrift.Type.VOID & Double = js.native
 }
-

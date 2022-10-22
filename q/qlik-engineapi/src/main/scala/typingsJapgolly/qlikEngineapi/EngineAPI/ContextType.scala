@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -22,16 +22,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CurrentSelections
 */
-trait ContextType extends js.Object
-
+trait ContextType extends StObject
 object ContextType {
-  @scala.inline
-  def Cleared: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Cleared = this.cast("Cleared")
-  @scala.inline
-  def CurrentSelections: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CurrentSelections = this.cast("CurrentSelections")
-  @scala.inline
-  def LockedFieldsOnly: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly = this.cast("LockedFieldsOnly")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Cleared: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Cleared = "Cleared".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.Cleared]
+  
+  inline def CurrentSelections: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CurrentSelections = "CurrentSelections".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CurrentSelections]
+  
+  inline def LockedFieldsOnly: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly = "LockedFieldsOnly".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.LockedFieldsOnly]
 }
-

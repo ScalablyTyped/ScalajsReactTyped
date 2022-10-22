@@ -1,41 +1,23 @@
 package typingsJapgolly.catalog.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.catalog.mod.ConfigPage
   - typingsJapgolly.catalog.mod.ConfigPageGroup
 */
-trait ConfigPageOrGroup extends js.Object
-
+trait ConfigPageOrGroup extends StObject
 object ConfigPageOrGroup {
-  @scala.inline
-  def ConfigPage(
-    path: String,
-    title: String,
-    content: ComponentType[js.Object] = null,
-    hideFromMenu: js.UndefOr[Boolean] = js.undefined,
-    imports: StringDictionary[js.Any] = null,
-    scripts: js.Array[String] = null,
-    styles: js.Array[String] = null
-  ): ConfigPageOrGroup = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFromMenu)) __obj.updateDynamic("hideFromMenu")(hideFromMenu.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ConfigPageOrGroup]
-  }
-  @scala.inline
-  def ConfigPageGroup(pages: js.Array[ConfigPage], title: String): ConfigPageOrGroup = {
-    val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[ConfigPageOrGroup]
+  inline def ConfigPage(path: String, title: String): typingsJapgolly.catalog.mod.ConfigPage = {
+    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.catalog.mod.ConfigPage]
+  }
+  
+  inline def ConfigPageGroup(pages: js.Array[ConfigPage], title: String): typingsJapgolly.catalog.mod.ConfigPageGroup = {
+    val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.catalog.mod.ConfigPageGroup]
   }
 }
-

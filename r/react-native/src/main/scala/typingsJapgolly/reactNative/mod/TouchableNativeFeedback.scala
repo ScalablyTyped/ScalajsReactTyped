@@ -1,20 +1,22 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.TouchableMixin */ @JSImport("react-native", "TouchableNativeFeedback")
 @js.native
-class TouchableNativeFeedback ()
-  extends Component[TouchableNativeFeedbackProps, js.Object, js.Any]
-
+open class TouchableNativeFeedback ()
+  extends Component[TouchableNativeFeedbackProps, js.Object, Any]
 /* static members */
-@JSImport("react-native", "TouchableNativeFeedback")
-@js.native
-object TouchableNativeFeedback extends js.Object {
+object TouchableNativeFeedback {
+  
+  @JSImport("react-native", "TouchableNativeFeedback")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates an object that represents ripple drawable with specified color (as a
     * string). If property `borderless` evaluates to true the ripple will
@@ -24,20 +26,29 @@ object TouchableNativeFeedback extends js.Object {
     *
     * @param color The ripple color
     * @param borderless If the ripple can render outside it's bounds
+    * @param rippleRadius The radius of ripple effect
     */
-  def Ripple(color: String): RippleBackgroundPropType = js.native
-  def Ripple(color: String, borderless: Boolean): RippleBackgroundPropType = js.native
+  inline def Ripple(color: ColorValue, borderless: Boolean): RippleBackgroundPropType = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any])).asInstanceOf[RippleBackgroundPropType]
+  inline def Ripple(color: ColorValue, borderless: Boolean, rippleRadius: Double): RippleBackgroundPropType = (^.asInstanceOf[js.Dynamic].applyDynamic("Ripple")(color.asInstanceOf[js.Any], borderless.asInstanceOf[js.Any], rippleRadius.asInstanceOf[js.Any])).asInstanceOf[RippleBackgroundPropType]
+  
   /**
     * Creates an object that represents android theme's default background for
     * selectable elements (?android:attr/selectableItemBackground).
+    *
+    * @param rippleRadius The radius of ripple effect
     */
-  def SelectableBackground(): ThemeAttributeBackgroundPropType = js.native
+  inline def SelectableBackground(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")().asInstanceOf[ThemeAttributeBackgroundPropType]
+  inline def SelectableBackground(rippleRadius: Double): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackground")(rippleRadius.asInstanceOf[js.Any]).asInstanceOf[ThemeAttributeBackgroundPropType]
+  
   /**
     * Creates an object that represent android theme's default background for borderless
     * selectable elements (?android:attr/selectableItemBackgroundBorderless).
     * Available on android API level 21+.
+    *
+    * @param rippleRadius The radius of ripple effect
     */
-  def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = js.native
-  def canUseNativeForeground(): Boolean = js.native
+  inline def SelectableBackgroundBorderless(): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackgroundBorderless")().asInstanceOf[ThemeAttributeBackgroundPropType]
+  inline def SelectableBackgroundBorderless(rippleRadius: Double): ThemeAttributeBackgroundPropType = ^.asInstanceOf[js.Dynamic].applyDynamic("SelectableBackgroundBorderless")(rippleRadius.asInstanceOf[js.Any]).asInstanceOf[ThemeAttributeBackgroundPropType]
+  
+  inline def canUseNativeForeground(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseNativeForeground")().asInstanceOf[Boolean]
 }
-

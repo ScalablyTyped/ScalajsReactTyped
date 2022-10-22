@@ -11,14 +11,11 @@ An abstract class implementing Passport's strategy API.
 | Full name          | passport-strategy |
 | Keywords           | passport, strategy |
 | # releases         | 1 |
-| # dependents       | 443 |
-| # downloads        | 29570433 |
-| # stars            | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 6178145.666666667 |
+| # stars            | 100.0 |
 
 ## Links
-- [Homepage](https://github.com/jaredhanson/passport-strategy#readme)
-- [Bugs](http://github.com/jaredhanson/passport-strategy/issues)
-- [Repository](https://github.com/jaredhanson/passport-strategy)
 - [Npm](https://www.npmjs.com/package/passport-strategy)
     
 

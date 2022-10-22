@@ -1,15 +1,14 @@
 package typingsJapgolly.koPlus
 
-import typingsJapgolly.knockout.KnockoutObservable
 import typingsJapgolly.koPlus.KoPlus.Command
 import typingsJapgolly.koPlus.KoPlus.CommandOptions
 import typingsJapgolly.koPlus.KoPlus.Editable
 import typingsJapgolly.koPlus.KoPlus.EditableArray
 import typingsJapgolly.koPlus.KoPlus.EditableArrayStatic
 import typingsJapgolly.koPlus.KoPlus.EditableStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -34,25 +33,20 @@ import scala.scalajs.js.annotation._
 // Add methods to the 'ko' Knockout object
 //
 @js.native
-trait KnockoutStatic extends js.Object {
-  @JSName("editableArray")
-  var editableArray_Original: EditableArrayStatic = js.native
-  @JSName("editable")
-  var editable_Original: EditableStatic = js.native
+trait KnockoutStatic extends StObject {
+  
   // create a command - two overloads
   def command(param: js.Function): Command = js.native
   def command(param: CommandOptions): Command = js.native
-  def editable[T](): KnockoutObservable[T | Null] = js.native
-  def editable[T](value: T): KnockoutObservable[T] = js.native
+  
+  def editable[T](): Editable[T] = js.native
+  def editable[T](value: T): Editable[T] = js.native
+  
   def editableArray[T](): EditableArray[T] = js.native
   def editableArray[T](value: js.Array[T]): EditableArray[T] = js.native
   @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](): typingsJapgolly.knockout.KnockoutObservableArray[T] = js.native
-  @JSName("editableArray")
-  def editableArray_T_KnockoutObservableArray[T](value: js.Array[T]): typingsJapgolly.knockout.KnockoutObservableArray[T] = js.native
+  var editableArray_Original: EditableArrayStatic = js.native
+  
   @JSName("editable")
-  def editable_T_Editable[T](): Editable[T] = js.native
-  @JSName("editable")
-  def editable_T_Editable[T](value: T): Editable[T] = js.native
+  var editable_Original: EditableStatic = js.native
 }
-

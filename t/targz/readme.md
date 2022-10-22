@@ -10,10 +10,10 @@ TarGz for NodeJS
 | ------------------ | :-------------: |
 | Full name          | targz |
 | Keywords           | targz, tar.gz, tar, gz, gzip, node |
-| # releases         | 1 |
-| # dependents       | 106 |
-| # downloads        | 2549157 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 227489.33333333334 |
+| # stars            | 29.0 |
 
 ## Links
 - [Homepage](https://github.com/miskun/targz#readme)

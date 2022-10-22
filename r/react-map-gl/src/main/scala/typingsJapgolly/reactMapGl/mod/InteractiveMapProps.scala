@@ -1,200 +1,290 @@
 package typingsJapgolly.reactMapGl.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.reactMapGl.AnonHeight
-import typingsJapgolly.reactMapGl.AnonMaxPitch
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
 import typingsJapgolly.reactMapGl.reactMapGlStrings.auto
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InteractiveMapProps extends StaticMapProps {
+trait InteractiveMapProps
+  extends StObject
+     with StaticMapProps {
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
   var clickRadius: js.UndefOr[Double] = js.undefined
+  
   var controller: js.UndefOr[MapController] = js.undefined
+  
   var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
+  
   var dragPan: js.UndefOr[Boolean] = js.undefined
+  
   var dragRotate: js.UndefOr[Boolean] = js.undefined
+  
   var getCursor: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.undefined
+  
   var interactiveLayerIds: js.UndefOr[js.Array[String]] = js.undefined
+  
   var keyboard: js.UndefOr[Boolean] = js.undefined
+  
   var maxPitch: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minPitch: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var onClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onContextMenu: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onDblClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onHover: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onInteractionStateChange: js.UndefOr[js.Function1[/* state */ ExtraState, Unit]] = js.undefined
+  
   var onMouseDown: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onMouseEnter: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onMouseLeave: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onMouseMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onMouseOut: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onMouseUp: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onNativeClick: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onTouchEnd: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onTouchMove: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onTouchStart: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var onTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onTransitionInterrupt: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onViewStateChange: js.UndefOr[ContextViewStateChangeHandler] = js.undefined
+  
   var onViewportChange: js.UndefOr[ContextViewportChangeHandler] = js.undefined
+  
   var onWheel: js.UndefOr[js.Function1[/* event */ PointerEvent, Unit]] = js.undefined
+  
   var scrollZoom: js.UndefOr[Boolean] = js.undefined
+  
   var touchAction: js.UndefOr[String] = js.undefined
+  
   var touchRotate: js.UndefOr[Boolean] = js.undefined
+  
   var touchZoom: js.UndefOr[Boolean] = js.undefined
+  
   var transitionDuration: js.UndefOr[Double | auto] = js.undefined
+  
   var transitionEasing: js.UndefOr[EasingFunction] = js.undefined
+  
   var transitionInterpolator: js.UndefOr[TransitionInterpolator] = js.undefined
+  
   var transitionInterruption: js.UndefOr[TRANSITION_EVENTS] = js.undefined
 }
-
 object InteractiveMapProps {
-  @scala.inline
-  def apply(
-    height: Double | String,
-    width: Double | String,
-    altitude: Int | Double = null,
-    attributionControl: js.UndefOr[Boolean] = js.undefined,
-    bearing: Int | Double = null,
-    className: String = null,
-    clickRadius: Int | Double = null,
-    container: js.Object = null,
-    controller: MapController = null,
-    disableTokenWarning: js.UndefOr[Boolean] = js.undefined,
-    doubleClickZoom: js.UndefOr[Boolean] = js.undefined,
-    dragPan: js.UndefOr[Boolean] = js.undefined,
-    dragRotate: js.UndefOr[Boolean] = js.undefined,
-    getCursor: /* state */ ExtraState => Callback = null,
-    gl: js.Object = null,
-    interactiveLayerIds: js.Array[String] = null,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    latitude: Int | Double = null,
-    longitude: Int | Double = null,
-    mapOptions: js.Object = null,
-    mapStyle: String | js.Object = null,
-    mapboxApiAccessToken: String = null,
-    maxPitch: Int | Double = null,
-    maxZoom: Int | Double = null,
-    minPitch: Int | Double = null,
-    minZoom: Int | Double = null,
-    onClick: /* event */ PointerEvent => Callback = null,
-    onContextMenu: /* event */ PointerEvent => Callback = null,
-    onDblClick: /* event */ PointerEvent => Callback = null,
-    onError: /* e */ MapError => Callback = null,
-    onHover: /* event */ PointerEvent => Callback = null,
-    onInteractionStateChange: /* state */ ExtraState => Callback = null,
-    onLoad: /* event */ MapLoadEvent => Callback = null,
-    onMouseDown: /* event */ PointerEvent => Callback = null,
-    onMouseEnter: /* event */ PointerEvent => Callback = null,
-    onMouseLeave: /* event */ PointerEvent => Callback = null,
-    onMouseMove: /* event */ PointerEvent => Callback = null,
-    onMouseOut: /* event */ PointerEvent => Callback = null,
-    onMouseUp: /* event */ PointerEvent => Callback = null,
-    onNativeClick: /* event */ PointerEvent => Callback = null,
-    onResize: /* dimensions */ AnonHeight => Callback = null,
-    onTouchEnd: /* event */ PointerEvent => Callback = null,
-    onTouchMove: /* event */ PointerEvent => Callback = null,
-    onTouchStart: /* event */ PointerEvent => Callback = null,
-    onTransitionEnd: js.UndefOr[Callback] = js.undefined,
-    onTransitionInterrupt: js.UndefOr[Callback] = js.undefined,
-    onTransitionStart: js.UndefOr[Callback] = js.undefined,
-    onViewStateChange: /* info */ ContextViewStateChangeInfo => Callback = null,
-    onViewportChange: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Callback = null,
-    onWheel: /* event */ PointerEvent => Callback = null,
-    pitch: Int | Double = null,
-    preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined,
-    preventStyleDiffing: js.UndefOr[Boolean] = js.undefined,
-    reuseMap: js.UndefOr[Boolean] = js.undefined,
-    reuseMaps: js.UndefOr[Boolean] = js.undefined,
-    scrollZoom: js.UndefOr[Boolean] = js.undefined,
-    style: js.Object = null,
-    touchAction: String = null,
-    touchRotate: js.UndefOr[Boolean] = js.undefined,
-    touchZoom: js.UndefOr[Boolean] = js.undefined,
-    transformRequest: (/* url */ js.UndefOr[String], /* resourceType */ js.UndefOr[String]) => CallbackTo[MapRequest] = null,
-    transitionDuration: Double | auto = null,
-    transitionEasing: /* t */ Double => CallbackTo[Double] = null,
-    transitionInterpolator: TransitionInterpolator = null,
-    transitionInterruption: TRANSITION_EVENTS = null,
-    viewState: ViewState = null,
-    visibilityConstraints: AnonMaxPitch = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null
-  ): InteractiveMapProps = {
+  
+  inline def apply(height: Double | String, width: Double | String): InteractiveMapProps = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
-    if (!js.isUndefined(attributionControl)) __obj.updateDynamic("attributionControl")(attributionControl.asInstanceOf[js.Any])
-    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clickRadius != null) __obj.updateDynamic("clickRadius")(clickRadius.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTokenWarning)) __obj.updateDynamic("disableTokenWarning")(disableTokenWarning.asInstanceOf[js.Any])
-    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan.asInstanceOf[js.Any])
-    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate.asInstanceOf[js.Any])
-    if (getCursor != null) __obj.updateDynamic("getCursor")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.reactMapGl.mod.ExtraState) => getCursor(t0).runNow()))
-    if (gl != null) __obj.updateDynamic("gl")(gl.asInstanceOf[js.Any])
-    if (interactiveLayerIds != null) __obj.updateDynamic("interactiveLayerIds")(interactiveLayerIds.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
-    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
-    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions.asInstanceOf[js.Any])
-    if (mapStyle != null) __obj.updateDynamic("mapStyle")(mapStyle.asInstanceOf[js.Any])
-    if (mapboxApiAccessToken != null) __obj.updateDynamic("mapboxApiAccessToken")(mapboxApiAccessToken.asInstanceOf[js.Any])
-    if (maxPitch != null) __obj.updateDynamic("maxPitch")(maxPitch.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minPitch != null) __obj.updateDynamic("minPitch")(minPitch.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onClick(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onContextMenu(t0).runNow()))
-    if (onDblClick != null) __obj.updateDynamic("onDblClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onDblClick(t0).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactMapGl.mod.MapError) => onError(t0).runNow()))
-    if (onHover != null) __obj.updateDynamic("onHover")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onHover(t0).runNow()))
-    if (onInteractionStateChange != null) __obj.updateDynamic("onInteractionStateChange")(js.Any.fromFunction1((t0: /* state */ typingsJapgolly.reactMapGl.mod.ExtraState) => onInteractionStateChange(t0).runNow()))
-    if (onLoad != null) __obj.updateDynamic("onLoad")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.MapLoadEvent) => onLoad(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseLeave(t0).runNow()))
-    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseMove(t0).runNow()))
-    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseOut(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onMouseUp(t0).runNow()))
-    if (onNativeClick != null) __obj.updateDynamic("onNativeClick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onNativeClick(t0).runNow()))
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction1((t0: /* dimensions */ typingsJapgolly.reactMapGl.AnonHeight) => onResize(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onTouchEnd(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onTouchStart(t0).runNow()))
-    onTransitionEnd.foreach(p => __obj.updateDynamic("onTransitionEnd")(p.toJsFn))
-    onTransitionInterrupt.foreach(p => __obj.updateDynamic("onTransitionInterrupt")(p.toJsFn))
-    onTransitionStart.foreach(p => __obj.updateDynamic("onTransitionStart")(p.toJsFn))
-    if (onViewStateChange != null) __obj.updateDynamic("onViewStateChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.reactMapGl.mod.ContextViewStateChangeInfo) => onViewStateChange(t0).runNow()))
-    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(js.Any.fromFunction3((t0: /* viewState */ typingsJapgolly.reactMapGl.mod.ViewportProps, t1: /* interactionState */ typingsJapgolly.reactMapGl.mod.ExtraState, t2: /* oldViewState */ typingsJapgolly.reactMapGl.mod.ViewportProps) => onViewportChange(t0, t1, t2).runNow()))
-    if (onWheel != null) __obj.updateDynamic("onWheel")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactMapGl.mod.PointerEvent) => onWheel(t0).runNow()))
-    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer.asInstanceOf[js.Any])
-    if (!js.isUndefined(preventStyleDiffing)) __obj.updateDynamic("preventStyleDiffing")(preventStyleDiffing.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMap)) __obj.updateDynamic("reuseMap")(reuseMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(reuseMaps)) __obj.updateDynamic("reuseMaps")(reuseMaps.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (touchAction != null) __obj.updateDynamic("touchAction")(touchAction.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate.asInstanceOf[js.Any])
-    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom.asInstanceOf[js.Any])
-    if (transformRequest != null) __obj.updateDynamic("transformRequest")(js.Any.fromFunction2((t0: /* url */ js.UndefOr[java.lang.String], t1: /* resourceType */ js.UndefOr[java.lang.String]) => transformRequest(t0, t1).runNow()))
-    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
-    if (transitionEasing != null) __obj.updateDynamic("transitionEasing")(js.Any.fromFunction1((t0: /* t */ scala.Double) => transitionEasing(t0).runNow()))
-    if (transitionInterpolator != null) __obj.updateDynamic("transitionInterpolator")(transitionInterpolator.asInstanceOf[js.Any])
-    if (transitionInterruption != null) __obj.updateDynamic("transitionInterruption")(transitionInterruption.asInstanceOf[js.Any])
-    if (viewState != null) __obj.updateDynamic("viewState")(viewState.asInstanceOf[js.Any])
-    if (visibilityConstraints != null) __obj.updateDynamic("visibilityConstraints")(visibilityConstraints.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[InteractiveMapProps]
   }
+  
+  extension [Self <: InteractiveMapProps](x: Self) {
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setClickRadius(value: Double): Self = StObject.set(x, "clickRadius", value.asInstanceOf[js.Any])
+    
+    inline def setClickRadiusUndefined: Self = StObject.set(x, "clickRadius", js.undefined)
+    
+    inline def setController(value: MapController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    
+    inline def setControllerUndefined: Self = StObject.set(x, "controller", js.undefined)
+    
+    inline def setDoubleClickZoom(value: Boolean): Self = StObject.set(x, "doubleClickZoom", value.asInstanceOf[js.Any])
+    
+    inline def setDoubleClickZoomUndefined: Self = StObject.set(x, "doubleClickZoom", js.undefined)
+    
+    inline def setDragPan(value: Boolean): Self = StObject.set(x, "dragPan", value.asInstanceOf[js.Any])
+    
+    inline def setDragPanUndefined: Self = StObject.set(x, "dragPan", js.undefined)
+    
+    inline def setDragRotate(value: Boolean): Self = StObject.set(x, "dragRotate", value.asInstanceOf[js.Any])
+    
+    inline def setDragRotateUndefined: Self = StObject.set(x, "dragRotate", js.undefined)
+    
+    inline def setGetCursor(value: /* state */ ExtraState => Callback): Self = StObject.set(x, "getCursor", js.Any.fromFunction1((t0: /* state */ ExtraState) => value(t0).runNow()))
+    
+    inline def setGetCursorUndefined: Self = StObject.set(x, "getCursor", js.undefined)
+    
+    inline def setInteractiveLayerIds(value: js.Array[String]): Self = StObject.set(x, "interactiveLayerIds", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveLayerIdsUndefined: Self = StObject.set(x, "interactiveLayerIds", js.undefined)
+    
+    inline def setInteractiveLayerIdsVarargs(value: String*): Self = StObject.set(x, "interactiveLayerIds", js.Array(value*))
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setMaxPitch(value: Double): Self = StObject.set(x, "maxPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPitchUndefined: Self = StObject.set(x, "maxPitch", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinPitch(value: Double): Self = StObject.set(x, "minPitch", value.asInstanceOf[js.Any])
+    
+    inline def setMinPitchUndefined: Self = StObject.set(x, "minPitch", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setOnClick(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onClick", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+    
+    inline def setOnContextMenu(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onContextMenu", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
+    
+    inline def setOnDblClick(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onDblClick", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
+    
+    inline def setOnHover(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onHover", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnHoverUndefined: Self = StObject.set(x, "onHover", js.undefined)
+    
+    inline def setOnInteractionStateChange(value: /* state */ ExtraState => Callback): Self = StObject.set(x, "onInteractionStateChange", js.Any.fromFunction1((t0: /* state */ ExtraState) => value(t0).runNow()))
+    
+    inline def setOnInteractionStateChangeUndefined: Self = StObject.set(x, "onInteractionStateChange", js.undefined)
+    
+    inline def setOnMouseDown(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+    
+    inline def setOnMouseEnter(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    
+    inline def setOnMouseLeave(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    
+    inline def setOnMouseMove(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
+    
+    inline def setOnMouseOut(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
+    
+    inline def setOnMouseUp(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
+    
+    inline def setOnNativeClick(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onNativeClick", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnNativeClickUndefined: Self = StObject.set(x, "onNativeClick", js.undefined)
+    
+    inline def setOnTouchEnd(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
+    
+    inline def setOnTouchMove(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
+    
+    inline def setOnTouchStart(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+    
+    inline def setOnTransitionEnd(value: Callback): Self = StObject.set(x, "onTransitionEnd", value.toJsFn)
+    
+    inline def setOnTransitionEndUndefined: Self = StObject.set(x, "onTransitionEnd", js.undefined)
+    
+    inline def setOnTransitionInterrupt(value: Callback): Self = StObject.set(x, "onTransitionInterrupt", value.toJsFn)
+    
+    inline def setOnTransitionInterruptUndefined: Self = StObject.set(x, "onTransitionInterrupt", js.undefined)
+    
+    inline def setOnTransitionStart(value: Callback): Self = StObject.set(x, "onTransitionStart", value.toJsFn)
+    
+    inline def setOnTransitionStartUndefined: Self = StObject.set(x, "onTransitionStart", js.undefined)
+    
+    inline def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Callback): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1((t0: /* info */ ContextViewStateChangeInfo) => value(t0).runNow()))
+    
+    inline def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
+    
+    inline def setOnViewportChange(
+      value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Callback
+    ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3((t0: /* viewState */ ViewportProps, t1: /* interactionState */ ExtraState, t2: /* oldViewState */ ViewportProps) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    
+    inline def setOnWheel(value: /* event */ PointerEvent => Callback): Self = StObject.set(x, "onWheel", js.Any.fromFunction1((t0: /* event */ PointerEvent) => value(t0).runNow()))
+    
+    inline def setOnWheelUndefined: Self = StObject.set(x, "onWheel", js.undefined)
+    
+    inline def setScrollZoom(value: Boolean): Self = StObject.set(x, "scrollZoom", value.asInstanceOf[js.Any])
+    
+    inline def setScrollZoomUndefined: Self = StObject.set(x, "scrollZoom", js.undefined)
+    
+    inline def setTouchAction(value: String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+    
+    inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
+    
+    inline def setTouchRotate(value: Boolean): Self = StObject.set(x, "touchRotate", value.asInstanceOf[js.Any])
+    
+    inline def setTouchRotateUndefined: Self = StObject.set(x, "touchRotate", js.undefined)
+    
+    inline def setTouchZoom(value: Boolean): Self = StObject.set(x, "touchZoom", value.asInstanceOf[js.Any])
+    
+    inline def setTouchZoomUndefined: Self = StObject.set(x, "touchZoom", js.undefined)
+    
+    inline def setTransitionDuration(value: Double | auto): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+    
+    inline def setTransitionEasing(value: /* t */ Double => Double): Self = StObject.set(x, "transitionEasing", js.Any.fromFunction1(value))
+    
+    inline def setTransitionEasingUndefined: Self = StObject.set(x, "transitionEasing", js.undefined)
+    
+    inline def setTransitionInterpolator(value: TransitionInterpolator): Self = StObject.set(x, "transitionInterpolator", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionInterpolatorUndefined: Self = StObject.set(x, "transitionInterpolator", js.undefined)
+    
+    inline def setTransitionInterruption(value: TRANSITION_EVENTS): Self = StObject.set(x, "transitionInterruption", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionInterruptionUndefined: Self = StObject.set(x, "transitionInterruption", js.undefined)
+  }
 }
-

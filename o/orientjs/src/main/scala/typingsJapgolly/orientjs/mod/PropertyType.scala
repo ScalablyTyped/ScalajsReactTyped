@@ -1,8 +1,8 @@
 package typingsJapgolly.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.orientjs.orientjsStrings.Boolean
@@ -29,56 +29,52 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.orientjs.orientjsStrings.Decimal
   - typingsJapgolly.orientjs.orientjsStrings.LinkBag
 */
-trait PropertyType extends js.Object
-
+trait PropertyType extends StObject
 object PropertyType {
-  @scala.inline
-  def Binary: typingsJapgolly.orientjs.orientjsStrings.Binary = this.cast("Binary")
-  @scala.inline
-  def Boolean: typingsJapgolly.orientjs.orientjsStrings.Boolean = this.cast("Boolean")
-  @scala.inline
-  def Byte: typingsJapgolly.orientjs.orientjsStrings.Byte = this.cast("Byte")
-  @scala.inline
-  def Custom: typingsJapgolly.orientjs.orientjsStrings.Custom = this.cast("Custom")
-  @scala.inline
-  def Date: typingsJapgolly.orientjs.orientjsStrings.Date = this.cast("Date")
-  @scala.inline
-  def DateTime: typingsJapgolly.orientjs.orientjsStrings.DateTime = this.cast("DateTime")
-  @scala.inline
-  def Decimal: typingsJapgolly.orientjs.orientjsStrings.Decimal = this.cast("Decimal")
-  @scala.inline
-  def Double: typingsJapgolly.orientjs.orientjsStrings.Double = this.cast("Double")
-  @scala.inline
-  def Embedded: typingsJapgolly.orientjs.orientjsStrings.Embedded = this.cast("Embedded")
-  @scala.inline
-  def EmbeddedList: typingsJapgolly.orientjs.orientjsStrings.EmbeddedList = this.cast("EmbeddedList")
-  @scala.inline
-  def EmbeddedMap: typingsJapgolly.orientjs.orientjsStrings.EmbeddedMap = this.cast("EmbeddedMap")
-  @scala.inline
-  def EmbeddedSet: typingsJapgolly.orientjs.orientjsStrings.EmbeddedSet = this.cast("EmbeddedSet")
-  @scala.inline
-  def Float: typingsJapgolly.orientjs.orientjsStrings.Float = this.cast("Float")
-  @scala.inline
-  def Integer: typingsJapgolly.orientjs.orientjsStrings.Integer = this.cast("Integer")
-  @scala.inline
-  def Link: typingsJapgolly.orientjs.orientjsStrings.Link = this.cast("Link")
-  @scala.inline
-  def LinkBag: typingsJapgolly.orientjs.orientjsStrings.LinkBag = this.cast("LinkBag")
-  @scala.inline
-  def LinkList: typingsJapgolly.orientjs.orientjsStrings.LinkList = this.cast("LinkList")
-  @scala.inline
-  def LinkMap: typingsJapgolly.orientjs.orientjsStrings.LinkMap = this.cast("LinkMap")
-  @scala.inline
-  def LinkSet: typingsJapgolly.orientjs.orientjsStrings.LinkSet = this.cast("LinkSet")
-  @scala.inline
-  def Long: typingsJapgolly.orientjs.orientjsStrings.Long = this.cast("Long")
-  @scala.inline
-  def Short: typingsJapgolly.orientjs.orientjsStrings.Short = this.cast("Short")
-  @scala.inline
-  def String: typingsJapgolly.orientjs.orientjsStrings.String = this.cast("String")
-  @scala.inline
-  def Transient: typingsJapgolly.orientjs.orientjsStrings.Transient = this.cast("Transient")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Binary: typingsJapgolly.orientjs.orientjsStrings.Binary = "Binary".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Binary]
+  
+  inline def Boolean: typingsJapgolly.orientjs.orientjsStrings.Boolean = "Boolean".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Boolean]
+  
+  inline def Byte: typingsJapgolly.orientjs.orientjsStrings.Byte = "Byte".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Byte]
+  
+  inline def Custom: typingsJapgolly.orientjs.orientjsStrings.Custom = "Custom".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Custom]
+  
+  inline def Date: typingsJapgolly.orientjs.orientjsStrings.Date = "Date".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Date]
+  
+  inline def DateTime: typingsJapgolly.orientjs.orientjsStrings.DateTime = "DateTime".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.DateTime]
+  
+  inline def Decimal: typingsJapgolly.orientjs.orientjsStrings.Decimal = "Decimal".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Decimal]
+  
+  inline def Double: typingsJapgolly.orientjs.orientjsStrings.Double = "Double".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Double]
+  
+  inline def Embedded: typingsJapgolly.orientjs.orientjsStrings.Embedded = "Embedded".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Embedded]
+  
+  inline def EmbeddedList: typingsJapgolly.orientjs.orientjsStrings.EmbeddedList = "EmbeddedList".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.EmbeddedList]
+  
+  inline def EmbeddedMap: typingsJapgolly.orientjs.orientjsStrings.EmbeddedMap = "EmbeddedMap".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.EmbeddedMap]
+  
+  inline def EmbeddedSet: typingsJapgolly.orientjs.orientjsStrings.EmbeddedSet = "EmbeddedSet".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.EmbeddedSet]
+  
+  inline def Float: typingsJapgolly.orientjs.orientjsStrings.Float = "Float".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Float]
+  
+  inline def Integer: typingsJapgolly.orientjs.orientjsStrings.Integer = "Integer".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Integer]
+  
+  inline def Link: typingsJapgolly.orientjs.orientjsStrings.Link = "Link".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Link]
+  
+  inline def LinkBag: typingsJapgolly.orientjs.orientjsStrings.LinkBag = "LinkBag".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.LinkBag]
+  
+  inline def LinkList: typingsJapgolly.orientjs.orientjsStrings.LinkList = "LinkList".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.LinkList]
+  
+  inline def LinkMap: typingsJapgolly.orientjs.orientjsStrings.LinkMap = "LinkMap".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.LinkMap]
+  
+  inline def LinkSet: typingsJapgolly.orientjs.orientjsStrings.LinkSet = "LinkSet".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.LinkSet]
+  
+  inline def Long: typingsJapgolly.orientjs.orientjsStrings.Long = "Long".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Long]
+  
+  inline def Short: typingsJapgolly.orientjs.orientjsStrings.Short = "Short".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Short]
+  
+  inline def String: typingsJapgolly.orientjs.orientjsStrings.String = "String".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.String]
+  
+  inline def Transient: typingsJapgolly.orientjs.orientjsStrings.Transient = "Transient".asInstanceOf[typingsJapgolly.orientjs.orientjsStrings.Transient]
 }
-

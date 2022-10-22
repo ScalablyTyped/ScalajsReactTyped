@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartMapProjectionType extends js.Object
-
+sealed trait ChartMapProjectionType extends StObject
 /**
-  *
   * Represents the region projection type of a chart series layout. This only applies to region map charts.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ChartMapProjectionType")
 @js.native
-object ChartMapProjectionType extends js.Object {
+object ChartMapProjectionType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait albers extends ChartMapProjectionType
+  sealed trait albers
+    extends StObject
+       with ChartMapProjectionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait automatic extends ChartMapProjectionType
+  sealed trait automatic
+    extends StObject
+       with ChartMapProjectionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait mercator extends ChartMapProjectionType
+  sealed trait mercator
+    extends StObject
+       with ChartMapProjectionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait miller extends ChartMapProjectionType
+  sealed trait miller
+    extends StObject
+       with ChartMapProjectionType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait robinson extends ChartMapProjectionType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartMapProjectionType with String] = js.native
-  /* "Albers" */ @js.native
-  object albers extends TopLevel[albers with String]
-  
-  /* "Automatic" */ @js.native
-  object automatic extends TopLevel[automatic with String]
-  
-  /* "Mercator" */ @js.native
-  object mercator extends TopLevel[mercator with String]
-  
-  /* "Miller" */ @js.native
-  object miller extends TopLevel[miller with String]
-  
-  /* "Robinson" */ @js.native
-  object robinson extends TopLevel[robinson with String]
-  
+  sealed trait robinson
+    extends StObject
+       with ChartMapProjectionType
 }
-

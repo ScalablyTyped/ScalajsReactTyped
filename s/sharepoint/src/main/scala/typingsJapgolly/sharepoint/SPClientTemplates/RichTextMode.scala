@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RichTextMode extends js.Object
-
+sealed trait RichTextMode extends StObject
 @JSGlobal("SPClientTemplates.RichTextMode")
 @js.native
-object RichTextMode extends js.Object {
-  @js.native
-  sealed trait Compatible extends RichTextMode
+object RichTextMode extends StObject {
   
   @js.native
-  sealed trait FullHtml extends RichTextMode
+  sealed trait Compatible
+    extends StObject
+       with RichTextMode
   
   @js.native
-  sealed trait HtmlAsXml extends RichTextMode
+  sealed trait FullHtml
+    extends StObject
+       with RichTextMode
   
   @js.native
-  sealed trait ThemeHtml extends RichTextMode
+  sealed trait HtmlAsXml
+    extends StObject
+       with RichTextMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RichTextMode with Double] = js.native
-  /* 0 */ @js.native
-  object Compatible extends TopLevel[Compatible with Double]
-  
-  /* 1 */ @js.native
-  object FullHtml extends TopLevel[FullHtml with Double]
-  
-  /* 2 */ @js.native
-  object HtmlAsXml extends TopLevel[HtmlAsXml with Double]
-  
-  /* 3 */ @js.native
-  object ThemeHtml extends TopLevel[ThemeHtml with Double]
-  
+  @js.native
+  sealed trait ThemeHtml
+    extends StObject
+       with RichTextMode
 }
-

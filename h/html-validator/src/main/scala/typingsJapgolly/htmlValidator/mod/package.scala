@@ -1,11 +1,18 @@
-package typingsJapgolly.htmlValidator
+package typingsJapgolly.htmlValidator.mod
 
+import typingsJapgolly.htmlValidator.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ValidationMessageLocationObject = typingsJapgolly.htmlValidator.mod.ValidationMessageSimpleObject with typingsJapgolly.htmlValidator.mod.ValidationMessageBasicLocationObject
-  type ValidationMessageObject = typingsJapgolly.htmlValidator.mod.ValidationMessageSimpleObject | typingsJapgolly.htmlValidator.mod.ValidationMessageLocationObject
-  type ValidationMessageSimpleObject = (typingsJapgolly.htmlValidator.mod.ValidationMessageBasicErrorObject | typingsJapgolly.htmlValidator.mod.ValidationMessageBasicInfoObject | typingsJapgolly.htmlValidator.mod.ValidationMessageBasicNonDocumentErrorObject) with typingsJapgolly.htmlValidator.mod.ValidationMessageBasicObject
-}
+
+inline def apply(options: OptionsForExternalUrlAsValidationTargetAndObjectAsResult): js.Promise[ParsedJsonAsValidationResults] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedJsonAsValidationResults]]
+inline def apply(options: OptionsForExternalUrlAsValidationTargetAndTextAsResults): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+inline def apply(options: OptionsForHtmlFileAsValidationTargetAndObjectAsResult): js.Promise[ParsedJsonAsValidationResults] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParsedJsonAsValidationResults]]
+inline def apply(options: OptionsForHtmlFileAsValidationTargetAndTextAsResults): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+
+type ValidationMessageLocationObject = ValidationMessageSimpleObject & ValidationMessageBasicLocationObject
+
+type ValidationMessageObject = ValidationMessageSimpleObject | ValidationMessageLocationObject
+
+type ValidationMessageSimpleObject = (ValidationMessageBasicErrorObject & ValidationMessageBasicObject) | (ValidationMessageBasicInfoObject & ValidationMessageBasicObject) | (ValidationMessageBasicNonDocumentErrorObject & ValidationMessageBasicObject)

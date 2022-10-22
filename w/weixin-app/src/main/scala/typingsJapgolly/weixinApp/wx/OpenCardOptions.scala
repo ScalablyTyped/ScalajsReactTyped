@@ -1,29 +1,27 @@
 package typingsJapgolly.weixinApp.wx
 
-import japgolly.scalajs.react.Callback
-import typingsJapgolly.weixinApp.AnonCardId
+import typingsJapgolly.weixinApp.anon.CardId
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait OpenCardOptions
-  extends BaseOptions[js.Any, js.Any] {
-  var cardList: js.Array[AnonCardId]
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
+  var cardList: js.Array[CardId]
 }
-
 object OpenCardOptions {
-  @scala.inline
-  def apply(
-    cardList: js.Array[AnonCardId],
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: js.Any => Callback = null
-  ): OpenCardOptions = {
+  
+  inline def apply(cardList: js.Array[CardId]): OpenCardOptions = {
     val __obj = js.Dynamic.literal(cardList = cardList.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[OpenCardOptions]
   }
+  
+  extension [Self <: OpenCardOptions](x: Self) {
+    
+    inline def setCardList(value: js.Array[CardId]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
+    
+    inline def setCardListVarargs(value: CardId*): Self = StObject.set(x, "cardList", js.Array(value*))
+  }
 }
-

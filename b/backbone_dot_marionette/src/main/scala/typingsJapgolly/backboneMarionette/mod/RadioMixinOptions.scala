@@ -1,35 +1,48 @@
 package typingsJapgolly.backboneMarionette.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RadioMixinOptions extends js.Object {
+trait RadioMixinOptions extends StObject {
+  
   /**
     * Defines the Radio channel that will be used for the requests and/or
     * events.
     */
   var channelName: js.UndefOr[String] = js.undefined
+  
   /**
     * Defines an events hash with the events to be listened and its respective
     * handlers.
     */
-  var radioEvents: js.UndefOr[js.Any] = js.undefined
+  var radioEvents: js.UndefOr[Any] = js.undefined
+  
   /**
     * Defines an events hash with the requests to be replied and its respective
     * handlers
     */
-  var radioRequests: js.UndefOr[js.Any] = js.undefined
+  var radioRequests: js.UndefOr[Any] = js.undefined
 }
-
 object RadioMixinOptions {
-  @scala.inline
-  def apply(channelName: String = null, radioEvents: js.Any = null, radioRequests: js.Any = null): RadioMixinOptions = {
+  
+  inline def apply(): RadioMixinOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelName != null) __obj.updateDynamic("channelName")(channelName.asInstanceOf[js.Any])
-    if (radioEvents != null) __obj.updateDynamic("radioEvents")(radioEvents.asInstanceOf[js.Any])
-    if (radioRequests != null) __obj.updateDynamic("radioRequests")(radioRequests.asInstanceOf[js.Any])
     __obj.asInstanceOf[RadioMixinOptions]
   }
+  
+  extension [Self <: RadioMixinOptions](x: Self) {
+    
+    inline def setChannelName(value: String): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    
+    inline def setChannelNameUndefined: Self = StObject.set(x, "channelName", js.undefined)
+    
+    inline def setRadioEvents(value: Any): Self = StObject.set(x, "radioEvents", value.asInstanceOf[js.Any])
+    
+    inline def setRadioEventsUndefined: Self = StObject.set(x, "radioEvents", js.undefined)
+    
+    inline def setRadioRequests(value: Any): Self = StObject.set(x, "radioRequests", value.asInstanceOf[js.Any])
+    
+    inline def setRadioRequestsUndefined: Self = StObject.set(x, "radioRequests", js.undefined)
+  }
 }
-

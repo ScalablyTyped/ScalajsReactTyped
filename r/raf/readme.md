@@ -10,10 +10,10 @@ requestAnimationFrame polyfill for node and the browser
 | ------------------ | :-------------: |
 | Full name          | raf |
 | Keywords           | requestAnimationFrame, polyfill |
-| # releases         | 2 |
-| # dependents       | 2085 |
-| # downloads        | 163242869 |
-| # stars            | 25 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2.7650334E7 |
+| # stars            | 728.0 |
 
 ## Links
 - [Homepage](https://github.com/chrisdickinson/raf#readme)

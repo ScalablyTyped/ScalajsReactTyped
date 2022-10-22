@@ -1,41 +1,31 @@
 package typingsJapgolly.qlik.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.qlik.qlikStrings.array
-import typingsJapgolly.qlik.qlikStrings.boolean
 import typingsJapgolly.qlik.qlikStrings.button
-import typingsJapgolly.qlik.qlikStrings.integer
-import typingsJapgolly.qlik.qlikStrings.items
-import typingsJapgolly.qlik.qlikStrings.number
-import typingsJapgolly.qlik.qlikStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CustomPropertyButton
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
-  var component: button
+  
   def action(data: VisualizationOptions): Unit
+  
+  var component: button
 }
-
 object CustomPropertyButton {
-  @scala.inline
-  def apply(
-    action: VisualizationOptions => Callback,
-    component: button,
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null
-  ): CustomPropertyButton = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("action")(js.Any.fromFunction1((t0: typingsJapgolly.qlik.mod.VisualizationOptions) => action(t0).runNow()))
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(action: VisualizationOptions => Callback): CustomPropertyButton = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1((t0: VisualizationOptions) => action(t0).runNow()), component = "button")
     __obj.asInstanceOf[CustomPropertyButton]
   }
+  
+  extension [Self <: CustomPropertyButton](x: Self) {
+    
+    inline def setAction(value: VisualizationOptions => Callback): Self = StObject.set(x, "action", js.Any.fromFunction1((t0: VisualizationOptions) => value(t0).runNow()))
+    
+    inline def setComponent(value: button): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+  }
 }
-

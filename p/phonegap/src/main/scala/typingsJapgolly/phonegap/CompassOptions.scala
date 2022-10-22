@@ -1,21 +1,30 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompassOptions extends js.Object {
+trait CompassOptions extends StObject {
+  
   var filter: js.UndefOr[Double] = js.undefined
+  
   var frequency: js.UndefOr[Double] = js.undefined
 }
-
 object CompassOptions {
-  @scala.inline
-  def apply(filter: Int | Double = null, frequency: Int | Double = null): CompassOptions = {
+  
+  inline def apply(): CompassOptions = {
     val __obj = js.Dynamic.literal()
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompassOptions]
   }
+  
+  extension [Self <: CompassOptions](x: Self) {
+    
+    inline def setFilter(value: Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+  }
 }
-

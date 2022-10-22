@@ -1,17 +1,16 @@
 package typingsJapgolly.senchaTouch.Ext.chart
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISpaceFillingChart extends IAbstractChart
-
+trait ISpaceFillingChart
+  extends StObject
+     with IAbstractChart
 object ISpaceFillingChart {
-  @scala.inline
-  def apply(IAbstractChart: IAbstractChart = null): ISpaceFillingChart = {
+  
+  inline def apply(): ISpaceFillingChart = {
     val __obj = js.Dynamic.literal()
-    if (IAbstractChart != null) js.Dynamic.global.Object.assign(__obj, IAbstractChart)
     __obj.asInstanceOf[ISpaceFillingChart]
   }
 }
-

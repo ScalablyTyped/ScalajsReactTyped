@@ -10,10 +10,10 @@ A JavaScript 2D vector class with methods for common vector operations
 | ------------------ | :-------------: |
 | Full name          | victor |
 | Keywords           | vector, 2d |
-| # releases         | 1 |
-| # dependents       | 32 |
-| # downloads        | 99683 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8393.0 |
+| # stars            | 790.0 |
 
 ## Links
 - [Homepage](http://victorjs.org/)

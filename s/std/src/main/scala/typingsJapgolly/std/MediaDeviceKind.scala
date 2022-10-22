@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.audioinput
   - typingsJapgolly.std.stdStrings.audiooutput
   - typingsJapgolly.std.stdStrings.videoinput
 */
-trait MediaDeviceKind extends js.Object
-
+trait MediaDeviceKind extends StObject
 object MediaDeviceKind {
-  @scala.inline
-  def audioinput: typingsJapgolly.std.stdStrings.audioinput = this.cast("audioinput")
-  @scala.inline
-  def audiooutput: typingsJapgolly.std.stdStrings.audiooutput = this.cast("audiooutput")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def videoinput: typingsJapgolly.std.stdStrings.videoinput = this.cast("videoinput")
+  
+  inline def audioinput: typingsJapgolly.std.stdStrings.audioinput = "audioinput".asInstanceOf[typingsJapgolly.std.stdStrings.audioinput]
+  
+  inline def audiooutput: typingsJapgolly.std.stdStrings.audiooutput = "audiooutput".asInstanceOf[typingsJapgolly.std.stdStrings.audiooutput]
+  
+  inline def videoinput: typingsJapgolly.std.stdStrings.videoinput = "videoinput".asInstanceOf[typingsJapgolly.std.stdStrings.videoinput]
 }
-

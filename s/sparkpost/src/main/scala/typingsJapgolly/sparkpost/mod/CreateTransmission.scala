@@ -1,66 +1,101 @@
 package typingsJapgolly.sparkpost.mod
 
-import typingsJapgolly.sparkpost.AnonEmailrfc822
-import typingsJapgolly.sparkpost.AnonListid
-import typingsJapgolly.sparkpost.AnonTemplateid
+import typingsJapgolly.sparkpost.anon.Emailrfc822
+import typingsJapgolly.sparkpost.anon.Listid
+import typingsJapgolly.sparkpost.anon.Templateid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateTransmission extends js.Object {
+trait CreateTransmission extends StObject {
+  
   /**
     * Recipients to discreetly receive a carbon copy of the transmission
     *
     */
   var bcc: js.UndefOr[js.Array[Recipient]] = js.undefined
+  
   /** Name of the campaign */
   var campaign_id: js.UndefOr[String] = js.undefined
+  
   /**
     * Recipients to receive a carbon copy of the transmission
     *
     */
   var cc: js.UndefOr[js.Array[Recipient]] = js.undefined
+  
   /** Content that will be used to construct a message */
-  var content: InlineContent | AnonTemplateid | AnonEmailrfc822
+  var content: InlineContent | Templateid | Emailrfc822
+  
   /** Description of the transmission */
   var description: js.UndefOr[String] = js.undefined
+  
   /** Transmission level metadata containing key/value pairs */
-  var metadata: js.UndefOr[js.Any] = js.undefined
+  var metadata: js.UndefOr[Any] = js.undefined
+  
   /** JSON object in which transmission options are defined */
   var options: js.UndefOr[TransmissionOptions] = js.undefined
+  
   /** Inline recipient objects or object containing stored recipient list ID */
-  var recipients: js.UndefOr[js.Array[Recipient] | AnonListid] = js.undefined
+  var recipients: js.UndefOr[js.Array[Recipient] | Listid] = js.undefined
+  
   /** SparkPost Enterprise API only: email to use for envelope FROM */
   var return_path: js.UndefOr[String] = js.undefined
+  
   /** Key/value pairs that are provided to the substitution engine */
-  var substitution_data: js.UndefOr[js.Any] = js.undefined
+  var substitution_data: js.UndefOr[Any] = js.undefined
 }
-
 object CreateTransmission {
-  @scala.inline
-  def apply(
-    content: InlineContent | AnonTemplateid | AnonEmailrfc822,
-    bcc: js.Array[Recipient] = null,
-    campaign_id: String = null,
-    cc: js.Array[Recipient] = null,
-    description: String = null,
-    metadata: js.Any = null,
-    options: TransmissionOptions = null,
-    recipients: js.Array[Recipient] | AnonListid = null,
-    return_path: String = null,
-    substitution_data: js.Any = null
-  ): CreateTransmission = {
+  
+  inline def apply(content: InlineContent | Templateid | Emailrfc822): CreateTransmission = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    if (bcc != null) __obj.updateDynamic("bcc")(bcc.asInstanceOf[js.Any])
-    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id.asInstanceOf[js.Any])
-    if (cc != null) __obj.updateDynamic("cc")(cc.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
-    if (return_path != null) __obj.updateDynamic("return_path")(return_path.asInstanceOf[js.Any])
-    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTransmission]
   }
+  
+  extension [Self <: CreateTransmission](x: Self) {
+    
+    inline def setBcc(value: js.Array[Recipient]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+    
+    inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+    
+    inline def setBccVarargs(value: Recipient*): Self = StObject.set(x, "bcc", js.Array(value*))
+    
+    inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
+    
+    inline def setCampaign_idUndefined: Self = StObject.set(x, "campaign_id", js.undefined)
+    
+    inline def setCc(value: js.Array[Recipient]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+    
+    inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+    
+    inline def setCcVarargs(value: Recipient*): Self = StObject.set(x, "cc", js.Array(value*))
+    
+    inline def setContent(value: InlineContent | Templateid | Emailrfc822): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setMetadata(value: Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    
+    inline def setOptions(value: TransmissionOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setRecipients(value: js.Array[Recipient] | Listid): Self = StObject.set(x, "recipients", value.asInstanceOf[js.Any])
+    
+    inline def setRecipientsUndefined: Self = StObject.set(x, "recipients", js.undefined)
+    
+    inline def setRecipientsVarargs(value: Recipient*): Self = StObject.set(x, "recipients", js.Array(value*))
+    
+    inline def setReturn_path(value: String): Self = StObject.set(x, "return_path", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_pathUndefined: Self = StObject.set(x, "return_path", js.undefined)
+    
+    inline def setSubstitution_data(value: Any): Self = StObject.set(x, "substitution_data", value.asInstanceOf[js.Any])
+    
+    inline def setSubstitution_dataUndefined: Self = StObject.set(x, "substitution_data", js.undefined)
+  }
 }
-

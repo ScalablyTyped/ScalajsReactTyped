@@ -1,7 +1,7 @@
 
 # Scala.js typings for shell-quote
 
-Typings are for version 1.6
+Typings are for version 1.7
 
 ## Library description:
 quote and parse shell commands
@@ -10,15 +10,15 @@ quote and parse shell commands
 | ------------------ | :-------------: |
 | Full name          | shell-quote |
 | Keywords           | command, parse, quote, shell |
-| # releases         | 6 |
-| # dependents       | 488 |
-| # downloads        | 186639450 |
-| # stars            | 6 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 5.3465811666666664E7 |
+| # stars            | 1.0 |
 
 ## Links
-- [Homepage](https://github.com/substack/node-shell-quote)
-- [Bugs](https://github.com/substack/node-shell-quote/issues)
-- [Repository](https://github.com/substack/node-shell-quote)
+- [Homepage](https://github.com/ljharb/shell-quote)
+- [Bugs](https://github.com/ljharb/shell-quote/issues)
+- [Repository](https://github.com/ljharb/shell-quote)
 - [Npm](https://www.npmjs.com/package/shell-quote)
     
 

@@ -1,35 +1,29 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GridProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends StObject
+     with HTMLProps[Any]
      with CustomRenderedComponent
      with ShadowedComponent {
+  
   var noSpacing: js.UndefOr[Boolean] = js.undefined
 }
-
 object GridProps {
-  @scala.inline
-  def apply(
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    CustomRenderedComponent: CustomRenderedComponent = null,
-    ShadowedComponent: ShadowedComponent = null,
-    noSpacing: js.UndefOr[Boolean] = js.undefined
-  ): GridProps = {
+  
+  inline def apply(): GridProps = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (CustomRenderedComponent != null) js.Dynamic.global.Object.assign(__obj, CustomRenderedComponent)
-    if (ShadowedComponent != null) js.Dynamic.global.Object.assign(__obj, ShadowedComponent)
-    if (!js.isUndefined(noSpacing)) __obj.updateDynamic("noSpacing")(noSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridProps]
   }
+  
+  extension [Self <: GridProps](x: Self) {
+    
+    inline def setNoSpacing(value: Boolean): Self = StObject.set(x, "noSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setNoSpacingUndefined: Self = StObject.set(x, "noSpacing", js.undefined)
+  }
 }
-

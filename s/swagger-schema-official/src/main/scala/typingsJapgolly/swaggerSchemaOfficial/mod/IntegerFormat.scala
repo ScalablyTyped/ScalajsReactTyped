@@ -3,22 +3,32 @@ package typingsJapgolly.swaggerSchemaOfficial.mod
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.int32
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.int64
 import typingsJapgolly.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IntegerFormat extends SchemaFormatConstraints {
+trait IntegerFormat
+  extends StObject
+     with SchemaFormatConstraints {
+  
   var format: js.UndefOr[int32 | int64] = js.undefined
+  
   var `type`: integer
 }
-
 object IntegerFormat {
-  @scala.inline
-  def apply(`type`: integer, format: int32 | int64 = null): IntegerFormat = {
+  
+  inline def apply(): IntegerFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[IntegerFormat]
   }
+  
+  extension [Self <: IntegerFormat](x: Self) {
+    
+    inline def setFormat(value: int32 | int64): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

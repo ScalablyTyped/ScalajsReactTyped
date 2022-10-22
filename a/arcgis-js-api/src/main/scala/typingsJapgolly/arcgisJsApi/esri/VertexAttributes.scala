@@ -1,49 +1,58 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VertexAttributes extends Object {
+trait VertexAttributes
+  extends StObject
+     with Object {
+  
   /**
     * The normal buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var normal: js.UndefOr[scala.scalajs.js.typedarray.Float32Array] = js.undefined
+  var normal: js.UndefOr[js.typedarray.Float32Array] = js.undefined
+  
   /**
     * The position buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var position: scala.scalajs.js.typedarray.Float64Array
+  var position: js.typedarray.Float64Array
+  
   /**
     * The tangent buffer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-meshUtils.html#VertexAttributes)
     */
-  var tangent: js.UndefOr[scala.scalajs.js.typedarray.Float32Array] = js.undefined
+  var tangent: js.UndefOr[js.typedarray.Float32Array] = js.undefined
 }
-
 object VertexAttributes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    position: scala.scalajs.js.typedarray.Float64Array,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    normal: scala.scalajs.js.typedarray.Float32Array = null,
-    tangent: scala.scalajs.js.typedarray.Float32Array = null
+    hasOwnProperty: PropertyKey => Boolean,
+    position: js.typedarray.Float64Array,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): VertexAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (normal != null) __obj.updateDynamic("normal")(normal.asInstanceOf[js.Any])
-    if (tangent != null) __obj.updateDynamic("tangent")(tangent.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), position = position.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[VertexAttributes]
   }
+  
+  extension [Self <: VertexAttributes](x: Self) {
+    
+    inline def setNormal(value: js.typedarray.Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    
+    inline def setPosition(value: js.typedarray.Float64Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setTangent(value: js.typedarray.Float32Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    
+    inline def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
+  }
 }
-

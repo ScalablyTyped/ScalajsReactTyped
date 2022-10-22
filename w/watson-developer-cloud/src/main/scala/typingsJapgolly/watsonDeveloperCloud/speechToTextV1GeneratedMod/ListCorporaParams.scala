@@ -1,28 +1,36 @@
 package typingsJapgolly.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listCorpora` operation. */
-trait ListCorporaParams extends js.Object {
+trait ListCorporaParams extends StObject {
+  
   /** The customization ID (GUID) of the custom language model that is to be used for the request. You must make the request with credentials for the instance of the service that owns the custom model. */
   var customization_id: String
+  
   var headers: js.UndefOr[js.Object] = js.undefined
+  
   var return_response: js.UndefOr[Boolean] = js.undefined
 }
-
 object ListCorporaParams {
-  @scala.inline
-  def apply(
-    customization_id: String,
-    headers: js.Object = null,
-    return_response: js.UndefOr[Boolean] = js.undefined
-  ): ListCorporaParams = {
+  
+  inline def apply(customization_id: String): ListCorporaParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (!js.isUndefined(return_response)) __obj.updateDynamic("return_response")(return_response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListCorporaParams]
   }
+  
+  extension [Self <: ListCorporaParams](x: Self) {
+    
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+  }
 }
-

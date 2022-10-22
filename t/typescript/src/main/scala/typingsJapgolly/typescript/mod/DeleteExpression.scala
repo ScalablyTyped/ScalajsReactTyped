@@ -1,13 +1,16 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DeleteExpression extends UnaryExpression {
-  var expression: UnaryExpression = js.native
+trait DeleteExpression
+  extends StObject
+     with UnaryExpression {
+  
+  val expression: UnaryExpression = js.native
+  
   @JSName("kind")
-  var kind_DeleteExpression: typingsJapgolly.typescript.mod.SyntaxKind.DeleteExpression = js.native
+  val kind_DeleteExpression: typingsJapgolly.typescript.mod.SyntaxKind.DeleteExpression = js.native
 }
-

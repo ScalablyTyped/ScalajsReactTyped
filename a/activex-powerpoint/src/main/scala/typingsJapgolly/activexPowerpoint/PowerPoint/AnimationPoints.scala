@@ -1,22 +1,27 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
 import typingsJapgolly.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.AnimationPoints")
 @js.native
-class AnimationPoints protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  val Count: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.AnimationPoints_typekey")
-  var PowerPointDotAnimationPoints_typekey: AnimationPoints = js.native
-  var Smooth: MsoTriState = js.native
+trait AnimationPoints extends StObject {
+  
   /** @param number [Index=-1] */
   def Add(): AnimationPoint = js.native
   def Add(Index: Double): AnimationPoint = js.native
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
+  
+  val Count: Double = js.native
+  
   def Item(Index: Double): AnimationPoint = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("PowerPoint.AnimationPoints_typekey")
+  var PowerPointDotAnimationPoints_typekey: AnimationPoints = js.native
+  
+  var Smooth: MsoTriState = js.native
 }
-

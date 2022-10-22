@@ -1,28 +1,25 @@
 package typingsJapgolly.twitterForWeb
 
-import typingsJapgolly.twitterForWeb.twitterForWebStrings.list
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.twitterForWeb.AnonOwnerScreenName
-  - typingsJapgolly.twitterForWeb.AnonId
+  - typingsJapgolly.twitterForWeb.anon.OwnerScreenName
+  - typingsJapgolly.twitterForWeb.anon.Id
 */
-trait TwitterTimelineWidgetListDataSource extends _TwitterTimelineWidgetDataSource
-
+trait TwitterTimelineWidgetListDataSource
+  extends StObject
+     with _TwitterTimelineWidgetDataSource
 object TwitterTimelineWidgetListDataSource {
-  @scala.inline
-  def AnonOwnerScreenName(ownerScreenName: String, slug: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
-    val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetListDataSource]
+  inline def Id(id: String): typingsJapgolly.twitterForWeb.anon.Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = "list")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.Id]
   }
-  @scala.inline
-  def AnonId(id: String, sourceType: list): TwitterTimelineWidgetListDataSource = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[TwitterTimelineWidgetListDataSource]
+  inline def OwnerScreenName(ownerScreenName: String, slug: String): typingsJapgolly.twitterForWeb.anon.OwnerScreenName = {
+    val __obj = js.Dynamic.literal(ownerScreenName = ownerScreenName.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any], sourceType = "list")
+    __obj.asInstanceOf[typingsJapgolly.twitterForWeb.anon.OwnerScreenName]
   }
 }
-

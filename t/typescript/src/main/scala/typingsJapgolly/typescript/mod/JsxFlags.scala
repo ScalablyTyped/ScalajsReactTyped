@@ -1,43 +1,41 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JsxFlags extends js.Object
-
+sealed trait JsxFlags extends StObject
 @JSImport("typescript", "JsxFlags")
 @js.native
-object JsxFlags extends js.Object {
+object JsxFlags extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[JsxFlags & Double] = js.native
+  
   @js.native
-  sealed trait IntrinsicElement extends JsxFlags
+  sealed trait IntrinsicElement
+    extends StObject
+       with JsxFlags
+  /* 3 */ val IntrinsicElement: typingsJapgolly.typescript.mod.JsxFlags.IntrinsicElement & Double = js.native
   
   /** An element inferred from the string index signature of the JSX.IntrinsicElements interface */
   @js.native
-  sealed trait IntrinsicIndexedElement extends JsxFlags
+  sealed trait IntrinsicIndexedElement
+    extends StObject
+       with JsxFlags
+  /* 2 */ val IntrinsicIndexedElement: typingsJapgolly.typescript.mod.JsxFlags.IntrinsicIndexedElement & Double = js.native
   
   /** An element from a named property of the JSX.IntrinsicElements interface */
   @js.native
-  sealed trait IntrinsicNamedElement extends JsxFlags
+  sealed trait IntrinsicNamedElement
+    extends StObject
+       with JsxFlags
+  /* 1 */ val IntrinsicNamedElement: typingsJapgolly.typescript.mod.JsxFlags.IntrinsicNamedElement & Double = js.native
   
   @js.native
-  sealed trait None extends JsxFlags
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JsxFlags with Double] = js.native
-  /* 3 */ @js.native
-  object IntrinsicElement extends TopLevel[IntrinsicElement with Double]
-  
-  /* 2 */ @js.native
-  object IntrinsicIndexedElement extends TopLevel[IntrinsicIndexedElement with Double]
-  
-  /* 1 */ @js.native
-  object IntrinsicNamedElement extends TopLevel[IntrinsicNamedElement with Double]
-  
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
-  
+  sealed trait None
+    extends StObject
+       with JsxFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.JsxFlags.None & Double = js.native
 }
-

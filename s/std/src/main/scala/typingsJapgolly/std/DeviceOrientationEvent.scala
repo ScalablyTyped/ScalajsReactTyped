@@ -1,29 +1,27 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** The DeviceOrientationEvent provides web developers with information from the physical orientation of the device running the web page. */
+/**
+  * The DeviceOrientationEvent provides web developers with information from the physical orientation of the device running the web page.
+  * Available only in secure contexts.
+  */
 @js.native
-trait DeviceOrientationEvent extends Event_ {
+trait DeviceOrientationEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
   val absolute: scala.Boolean = js.native
+  
+  /* standard dom */
   val alpha: Double | Null = js.native
+  
+  /* standard dom */
   val beta: Double | Null = js.native
+  
+  /* standard dom */
   val gamma: Double | Null = js.native
 }
-
-@JSGlobal("DeviceOrientationEvent")
-@js.native
-object DeviceOrientationEvent
-  extends Instantiable1[/* type */ java.lang.String, DeviceOrientationEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ DeviceOrientationEventInit, 
-      DeviceOrientationEvent
-    ] {
-  def requestPermission(): js.Promise[PermissionState] = js.native
-}
-

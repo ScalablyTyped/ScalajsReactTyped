@@ -1,23 +1,27 @@
 package typingsJapgolly.esquery.mod
 
-import typingsJapgolly.esquery.esqueryStrings.literal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait NumericLiteral
-  extends LiteralAtom
+  extends StObject
+     with LiteralAtom
      with Literal {
+  
   @JSName("value")
   var value_NumericLiteral: Double
 }
-
 object NumericLiteral {
-  @scala.inline
-  def apply(`type`: literal, value: Double): NumericLiteral = {
+  
+  inline def apply(value: Double): NumericLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("literal")
     __obj.asInstanceOf[NumericLiteral]
   }
+  
+  extension [Self <: NumericLiteral](x: Self) {
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,29 +1,27 @@
 package typingsJapgolly.lovefield.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TransactionType extends js.Object
-
+sealed trait TransactionType extends StObject
 @JSImport("lovefield", "TransactionType")
 @js.native
-object TransactionType extends js.Object {
-  @js.native
-  sealed trait READ_ONLY extends TransactionType
-  
-  @js.native
-  sealed trait READ_WRITE extends TransactionType
+object TransactionType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TransactionType with Double] = js.native
-  /* 0 */ @js.native
-  object READ_ONLY extends TopLevel[READ_ONLY with Double]
+  def apply(value: Double): js.UndefOr[TransactionType & Double] = js.native
   
-  /* 1 */ @js.native
-  object READ_WRITE extends TopLevel[READ_WRITE with Double]
+  @js.native
+  sealed trait READ_ONLY
+    extends StObject
+       with TransactionType
+  /* 0 */ val READ_ONLY: typingsJapgolly.lovefield.mod.TransactionType.READ_ONLY & Double = js.native
   
+  @js.native
+  sealed trait READ_WRITE
+    extends StObject
+       with TransactionType
+  /* 1 */ val READ_WRITE: typingsJapgolly.lovefield.mod.TransactionType.READ_WRITE & Double = js.native
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "stylelint-webpack-plugin" : "3.3.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "stylelint-webpack-plugin" : "3.3.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

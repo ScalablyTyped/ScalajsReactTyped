@@ -1,20 +1,22 @@
 package typingsJapgolly.kiiCloudSdk.KiiCloud
 
-import typingsJapgolly.kiiCloudSdk.Anon11
-import typingsJapgolly.kiiCloudSdk.Anon12
-import typingsJapgolly.kiiCloudSdk.Anon13
-import typingsJapgolly.kiiCloudSdk.Anon14
-import typingsJapgolly.kiiCloudSdk.AnonSuccess
+import typingsJapgolly.kiiCloudSdk.anon.`10`
+import typingsJapgolly.kiiCloudSdk.anon.`11`
+import typingsJapgolly.kiiCloudSdk.anon.`4`
+import typingsJapgolly.kiiCloudSdk.anon.`8`
+import typingsJapgolly.kiiCloudSdk.anon.`9`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a KiiGroup object
   */
-@JSGlobal("KiiCloud.KiiGroup")
 @js.native
-class KiiGroup () extends KiiACLSubject {
+trait KiiGroup
+  extends StObject
+     with KiiACLSubject {
+  
   /**
     * Adds a user to the given group
     *
@@ -29,6 +31,7 @@ class KiiGroup () extends KiiACLSubject {
     *     group.save(callbacks);
     */
   def addUser(member: KiiUser): Unit = js.native
+  
   /**
     * Creates a reference to a bucket for this group
     *
@@ -43,6 +46,7 @@ class KiiGroup () extends KiiACLSubject {
     *     var bucket = group.bucketWithName("myBucket");
     */
   def bucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Updates the group name on the server
     *
@@ -85,7 +89,8 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def changeGroupName(newName: String): js.Promise[KiiGroup] = js.native
-  def changeGroupName(newName: String, callbacks: Anon13): js.Promise[KiiGroup] = js.native
+  def changeGroupName(newName: String, callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Delete the group from the server
     *
@@ -133,7 +138,8 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def delete(): js.Promise[KiiGroup] = js.native
-  def delete(callbacks: Anon13): js.Promise[KiiGroup] = js.native
+  def delete(callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Creates a reference to a encrypted bucket for this group
     *
@@ -148,6 +154,7 @@ class KiiGroup () extends KiiACLSubject {
     *     var bucket = group.encryptedBucketWithName("myBucket");
     */
   def encryptedBucketWithName(bucketName: String): KiiBucket = js.native
+  
   /**
     * Returns the owner of this group if this group holds the information of owner.
     *
@@ -166,12 +173,14 @@ class KiiGroup () extends KiiACLSubject {
     * @see KiiGroup#getOwner
     */
   def getCachedOwner(): KiiUser = js.native
+  
   /**
     * Get the ID of the current KiiGroup instance.
     *
     * @return Id of the group or null if the group has not saved to cloud.
     */
   def getID(): String = js.native
+  
   /**
     * Gets a list of all current members of a group
     *
@@ -226,12 +235,14 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def getMemberList(): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
-  def getMemberList(callbacks: Anon12): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
+  def getMemberList(callbacks: `8`): js.Promise[js.Tuple2[KiiGroup, js.Array[KiiUser]]] = js.native
+  
   /**
     * The name of this group
     *
     */
   def getName(): String = js.native
+  
   /**
     * Gets the owner of the associated group
     *
@@ -280,7 +291,8 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def getOwner(): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
-  def getOwner(callbacks: Anon14): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
+  def getOwner(callbacks: `11`): js.Promise[js.Tuple2[KiiGroup, KiiUser]] = js.native
+  
   /**
     *
     *
@@ -289,6 +301,7 @@ class KiiGroup () extends KiiACLSubject {
     *
     */
   def getUUID(): String = js.native
+  
   /**
     * Gets a list of topics in this group scope
     *
@@ -356,8 +369,10 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def listTopics(): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
-  def listTopics(callbacks: AnonSuccess, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: Unit, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  def listTopics(callbacks: `4`, paginationKey: String): js.Promise[js.Tuple2[js.Array[KiiTopic], String]] = js.native
+  
   /**
     * Get a specifically formatted string referencing the group
     *
@@ -370,6 +385,7 @@ class KiiGroup () extends KiiACLSubject {
     *     var uri = group.objectURI();
     */
   def objectURI(): String = js.native
+  
   /**
     * Updates the local group's data with the group data on the server
     *
@@ -413,7 +429,8 @@ class KiiGroup () extends KiiACLSubject {
     *     );
     */
   def refresh(): js.Promise[KiiGroup] = js.native
-  def refresh(callbacks: Anon13): js.Promise[KiiGroup] = js.native
+  def refresh(callbacks: `9`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Removes a user from the given group
     *
@@ -428,6 +445,7 @@ class KiiGroup () extends KiiACLSubject {
     *     group.save(callbacks);
     */
   def removeUser(member: KiiUser): Unit = js.native
+  
   /**
     * Saves the latest group values to the server
     *
@@ -477,7 +495,8 @@ class KiiGroup () extends KiiACLSubject {
     *     });
     */
   def save(): js.Promise[KiiGroup] = js.native
-  def save(callbacks: Anon11): js.Promise[KiiGroup] = js.native
+  def save(callbacks: `10`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Saves the latest group values to the server with specified owner.
     * This method can be used only by the group owner or app admin.
@@ -529,7 +548,8 @@ class KiiGroup () extends KiiACLSubject {
     *     });
     */
   def saveWithOwner(user: String): js.Promise[KiiGroup] = js.native
-  def saveWithOwner(user: String, callbacks: Anon11): js.Promise[KiiGroup] = js.native
+  def saveWithOwner(user: String, callbacks: `10`): js.Promise[KiiGroup] = js.native
+  
   /**
     * Instantiate topic belongs to this group.
     *
@@ -539,127 +559,3 @@ class KiiGroup () extends KiiACLSubject {
     */
   def topicWithName(topicName: String): KiiTopic = js.native
 }
-
-/* static members */
-@JSGlobal("KiiCloud.KiiGroup")
-@js.native
-object KiiGroup extends js.Object {
-  /**
-    * Instantiate KiiGroup that refers to existing group which has specified ID.
-    * You have to specify the ID of existing KiiGroup. Unlike KiiObject,
-    * you can not assign ID in the client side.<br>
-    * <b>NOTE</b>: This API does not access to the server.
-    * After instantiation, call {@link KiiGroup#refresh} to fetch the properties.
-    *
-    * @param groupId ID of the KiiGroup to instantiate.
-    *
-    * @return instance of KiiGroup.
-    *
-    * @throws when passed groupID is empty or null.
-    *
-    * @example
-    *     var group = new KiiUser.groupWithID("__GROUP_ID__");
-    */
-  def groupWithID(groupId: String): KiiGroup = js.native
-  /**
-    * Creates a reference to a group with the given name
-    * <br><br>
-    * <b>Note:</b>
-    * Returned instance from this API can not operate existing KiiGroup.<br>
-    * If you want to operate existing KiiGroup, please use {@link KiiGroup.groupWithURI}.
-    *
-    * @param groupName An application-specific group name
-    *
-    * @return A new KiiGroup reference
-    *
-    * @example
-    *     var group = new KiiGroup.groupWithName("myGroup");
-    */
-  def groupWithName(groupName: String): KiiGroup = js.native
-  /**
-    * Creates a reference to a group with the given name and a list of default members
-    * <br><br>
-    * <b>Note:</b>
-    * Returned instance from this API can not operate existing KiiGroup.<br>
-    * If you want to operate existing KiiGroup, please use {@link KiiGroup.groupWithURI}.
-    *
-    * @param groupName An application-specific group name
-    * @param members An array of KiiUser objects to add to the group
-    *
-    * @return A new KiiGroup reference
-    *
-    * @example
-    *     var group = new KiiGroup.groupWithName("myGroup", members);
-    */
-  def groupWithNameAndMembers(groupName: String, members: js.Array[KiiUser]): KiiGroup = js.native
-  /**
-    * Generate a new KiiGroup based on a given URI
-    * <br><br>
-    * <b>Note:</b>
-    * Returned instance from this API can operate existing KiiGroup.<br>
-    * If you want to create a new KiiGroup, please use {@link KiiGroup.groupWithName}.
-    *
-    * @param uri The URI of the group to be represented
-    *
-    * @return A new KiiGroup with its parameters filled in from the URI
-    *
-    * @throws If the URI given is invalid
-    *
-    * @example
-    *     var group = new KiiGroup.groupWithURI("kiicloud://myuri");
-    */
-  def groupWithURI(uri: String): KiiGroup = js.native
-  /**
-    * Register new group own by current user on Kii Cloud with specified ID.
-    *
-    * <br><br>If the group that has specified id already exists, registration will be failed.
-    *
-    * @param groupID ID of the KiiGroup
-    * @param groupName Name of the KiiGroup
-    * @param members An array of KiiUser objects to add to the group
-    * @param callbacks An object with callback methods defined
-    *
-    * @return return promise object.
-    *       <ul>
-    *         <li>fulfill callback function: function(theSavedGroup). theSavedGroup is KiiGroup instance.</li>
-    *         <li>reject callback function: function(error). error is an Error instance.
-    *           <ul>
-    *             <li>error.target is the KiiGroup instance which this method was called on.</li>
-    *             <li>error.message</li>
-    *             <li>error.addMembersArray is array of KiiUser to be added as memebers of this group.</li>
-    *             <li>error.removeMembersArray is array of KiiUser to be removed from the memebers list of this group.</li>
-    *           </ul>
-    *         </li>
-    *       </ul>
-    *
-    * @example
-    *     // example to use callbacks directly
-    *     var members = [];
-    *     members.push(KiiUser.userWithID("Member User Id"));
-    *     KiiGroup.registerGroupWithID("Group ID", "Group Name", members, {
-    *         success: function(theSavedGroup) {
-    *             // do something with the saved group
-    *         },
-    *         failure: function(theGroup, anErrorString, addMembersArray, removeMembersArray) {
-    *             // do something with the error response
-    *         }
-    *     });
-    *
-    *     // example to use Promise
-    *     var members = [];
-    *     members.push(KiiUser.userWithID("Member User Id"));
-    *     KiiGroup.registerGroupWithID("Group ID", "Group Name", members).then(
-    *         function(theSavedGroup) {
-    *             // do something with the saved group
-    *         },
-    *         function(error) {
-    *             var theGroup = error.target;
-    *             var anErrorString = error.message;
-    *             var addMembersArray = error.addMembersArray;
-    *             // do something with the error response
-    *     });
-    */
-  def registerGroupWithID(groupID: String, groupName: String, members: js.Array[KiiUser]): js.Promise[KiiGroup] = js.native
-  def registerGroupWithID(groupID: String, groupName: String, members: js.Array[KiiUser], callbacks: Anon11): js.Promise[KiiGroup] = js.native
-}
-

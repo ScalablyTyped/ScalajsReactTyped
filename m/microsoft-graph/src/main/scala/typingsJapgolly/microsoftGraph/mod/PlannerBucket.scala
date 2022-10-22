@@ -1,36 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlannerBucket extends Entity {
+trait PlannerBucket
+  extends StObject
+     with Entity {
+  
   // Name of the bucket.
   var name: js.UndefOr[String] = js.undefined
+  
   // Hint used to order items of this type in a list view. The format is defined as outlined here.
-  var orderHint: js.UndefOr[String] = js.undefined
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Plan ID to which the bucket belongs.
-  var planId: js.UndefOr[String] = js.undefined
+  var planId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Read-only. Nullable. The collection of tasks in the bucket.
-  var tasks: js.UndefOr[js.Array[PlannerTask]] = js.undefined
+  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.undefined
 }
-
 object PlannerBucket {
-  @scala.inline
-  def apply(
-    id: String = null,
-    name: String = null,
-    orderHint: String = null,
-    planId: String = null,
-    tasks: js.Array[PlannerTask] = null
-  ): PlannerBucket = {
+  
+  inline def apply(): PlannerBucket = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (orderHint != null) __obj.updateDynamic("orderHint")(orderHint.asInstanceOf[js.Any])
-    if (planId != null) __obj.updateDynamic("planId")(planId.asInstanceOf[js.Any])
-    if (tasks != null) __obj.updateDynamic("tasks")(tasks.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlannerBucket]
   }
+  
+  extension [Self <: PlannerBucket](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOrderHint(value: NullableOption[String]): Self = StObject.set(x, "orderHint", value.asInstanceOf[js.Any])
+    
+    inline def setOrderHintNull: Self = StObject.set(x, "orderHint", null)
+    
+    inline def setOrderHintUndefined: Self = StObject.set(x, "orderHint", js.undefined)
+    
+    inline def setPlanId(value: NullableOption[String]): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    
+    inline def setPlanIdNull: Self = StObject.set(x, "planId", null)
+    
+    inline def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
+    
+    inline def setTasks(value: NullableOption[js.Array[PlannerTask]]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    
+    inline def setTasksNull: Self = StObject.set(x, "tasks", null)
+    
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    
+    inline def setTasksVarargs(value: PlannerTask*): Self = StObject.set(x, "tasks", js.Array(value*))
+  }
 }
-

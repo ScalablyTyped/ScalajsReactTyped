@@ -1,37 +1,54 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LayoutAnimationAnim extends js.Object {
+trait LayoutAnimationAnim extends StObject {
+  
   var delay: js.UndefOr[Double] = js.undefined
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var initialVelocity: js.UndefOr[Double] = js.undefined
-   //LayoutAnimationTypes
-  var property: js.UndefOr[String] = js.undefined
+  
+  var property: js.UndefOr[LayoutAnimationProperty] = js.undefined
+  
   var springDamping: js.UndefOr[Double] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+  
+  var `type`: js.UndefOr[LayoutAnimationType] = js.undefined
 }
-
 object LayoutAnimationAnim {
-  @scala.inline
-  def apply(
-    delay: Int | Double = null,
-    duration: Int | Double = null,
-    initialVelocity: Int | Double = null,
-    property: String = null,
-    springDamping: Int | Double = null,
-    `type`: String = null
-  ): LayoutAnimationAnim = {
+  
+  inline def apply(): LayoutAnimationAnim = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (initialVelocity != null) __obj.updateDynamic("initialVelocity")(initialVelocity.asInstanceOf[js.Any])
-    if (property != null) __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
-    if (springDamping != null) __obj.updateDynamic("springDamping")(springDamping.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutAnimationAnim]
   }
+  
+  extension [Self <: LayoutAnimationAnim](x: Self) {
+    
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setInitialVelocity(value: Double): Self = StObject.set(x, "initialVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setInitialVelocityUndefined: Self = StObject.set(x, "initialVelocity", js.undefined)
+    
+    inline def setProperty(value: LayoutAnimationProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    
+    inline def setSpringDamping(value: Double): Self = StObject.set(x, "springDamping", value.asInstanceOf[js.Any])
+    
+    inline def setSpringDampingUndefined: Self = StObject.set(x, "springDamping", js.undefined)
+    
+    inline def setType(value: LayoutAnimationType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

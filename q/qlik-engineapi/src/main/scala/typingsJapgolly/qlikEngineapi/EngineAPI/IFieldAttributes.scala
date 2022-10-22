@@ -1,19 +1,21 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sets the formatting of a field.
   * The properties of qFieldAttributes and the formatting mechanism are described below.
   */
-trait IFieldAttributes extends js.Object {
+trait IFieldAttributes extends StObject {
+  
   /**
     * Defines the decimal separator.
     * Example: .
     */
   var qDec: String
+  
   /**
     * Defines the format pattern that applies to qText.
     * Is used in connection to the type of the field (parameter qType).
@@ -21,16 +23,19 @@ trait IFieldAttributes extends js.Object {
     * Example: YYYY-MM-DD for a date
     */
   var qFmt: String
+  
   /**
     * no / empty docu
     */
-  var qSAFEARRAY: js.Array[_]
+  var qSAFEARRAY: js.Array[Any]
+  
   /**
     * Defines the thousand separator (if any).
     * Is used if qUseThou is set to 1.
     * Example: ,
     */
   var qThou: String
+  
   /**
     * Type of the field.
     * One of:
@@ -48,11 +53,13 @@ trait IFieldAttributes extends js.Object {
     *
     */
   var qType: FieldAttributesType
+  
   /**
     * Defines whether or not a thousands separator must be used.
     * default is 0 (false) or  1 (true).
     */
   var qUseThou: Boolean
+  
   /**
     * Number of decimals.
     * (Integer between 0 and 15.)
@@ -60,21 +67,37 @@ trait IFieldAttributes extends js.Object {
     */
   var qnDec: Double
 }
-
 object IFieldAttributes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     qDec: String,
     qFmt: String,
-    qSAFEARRAY: js.Array[_],
+    qSAFEARRAY: js.Array[Any],
     qThou: String,
     qType: FieldAttributesType,
     qUseThou: Boolean,
     qnDec: Double
   ): IFieldAttributes = {
     val __obj = js.Dynamic.literal(qDec = qDec.asInstanceOf[js.Any], qFmt = qFmt.asInstanceOf[js.Any], qSAFEARRAY = qSAFEARRAY.asInstanceOf[js.Any], qThou = qThou.asInstanceOf[js.Any], qType = qType.asInstanceOf[js.Any], qUseThou = qUseThou.asInstanceOf[js.Any], qnDec = qnDec.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[IFieldAttributes]
   }
+  
+  extension [Self <: IFieldAttributes](x: Self) {
+    
+    inline def setQDec(value: String): Self = StObject.set(x, "qDec", value.asInstanceOf[js.Any])
+    
+    inline def setQFmt(value: String): Self = StObject.set(x, "qFmt", value.asInstanceOf[js.Any])
+    
+    inline def setQSAFEARRAY(value: js.Array[Any]): Self = StObject.set(x, "qSAFEARRAY", value.asInstanceOf[js.Any])
+    
+    inline def setQSAFEARRAYVarargs(value: Any*): Self = StObject.set(x, "qSAFEARRAY", js.Array(value*))
+    
+    inline def setQThou(value: String): Self = StObject.set(x, "qThou", value.asInstanceOf[js.Any])
+    
+    inline def setQType(value: FieldAttributesType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    
+    inline def setQUseThou(value: Boolean): Self = StObject.set(x, "qUseThou", value.asInstanceOf[js.Any])
+    
+    inline def setQnDec(value: Double): Self = StObject.set(x, "qnDec", value.asInstanceOf[js.Any])
+  }
 }
-

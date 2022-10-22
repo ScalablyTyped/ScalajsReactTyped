@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CoreProcessEventsOption extends js.Object
-
+sealed trait CoreProcessEventsOption extends StObject
 @JSGlobal("Windows.UI.Core.CoreProcessEventsOption")
 @js.native
-object CoreProcessEventsOption extends js.Object {
-  @js.native
-  sealed trait processAllIfPresent extends CoreProcessEventsOption
+object CoreProcessEventsOption extends StObject {
   
   @js.native
-  sealed trait processOneAndAllPending extends CoreProcessEventsOption
+  sealed trait processAllIfPresent
+    extends StObject
+       with CoreProcessEventsOption
   
   @js.native
-  sealed trait processOneIfPresent extends CoreProcessEventsOption
+  sealed trait processOneAndAllPending
+    extends StObject
+       with CoreProcessEventsOption
   
   @js.native
-  sealed trait processUntilQuit extends CoreProcessEventsOption
+  sealed trait processOneIfPresent
+    extends StObject
+       with CoreProcessEventsOption
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CoreProcessEventsOption with Double] = js.native
-  /* 3 */ @js.native
-  object processAllIfPresent extends TopLevel[processAllIfPresent with Double]
-  
-  /* 0 */ @js.native
-  object processOneAndAllPending extends TopLevel[processOneAndAllPending with Double]
-  
-  /* 1 */ @js.native
-  object processOneIfPresent extends TopLevel[processOneIfPresent with Double]
-  
-  /* 2 */ @js.native
-  object processUntilQuit extends TopLevel[processUntilQuit with Double]
-  
+  @js.native
+  sealed trait processUntilQuit
+    extends StObject
+       with CoreProcessEventsOption
 }
-

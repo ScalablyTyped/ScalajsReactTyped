@@ -1,20 +1,26 @@
 package typingsJapgolly.maskedinput
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MaskedInputDefaults extends js.Object {
-  var aliases: js.Any
-  var definitions: js.Any
-}
-
-object MaskedInputDefaults {
-  @scala.inline
-  def apply(aliases: js.Any, definitions: js.Any): MaskedInputDefaults = {
-    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any])
+trait MaskedInputDefaults extends StObject {
   
+  var aliases: Any
+  
+  var definitions: Any
+}
+object MaskedInputDefaults {
+  
+  inline def apply(aliases: Any, definitions: Any): MaskedInputDefaults = {
+    val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], definitions = definitions.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaskedInputDefaults]
   }
+  
+  extension [Self <: MaskedInputDefaults](x: Self) {
+    
+    inline def setAliases(value: Any): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setDefinitions(value: Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+  }
 }
-

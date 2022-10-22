@@ -1,54 +1,87 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxTreeViewItem extends CollectionWidgetItem {
-  /** Specifies whether or not the tree view item is displayed expanded. */
+trait dxTreeViewItem
+  extends StObject
+     with CollectionWidgetItem
+     with /* key */ StringDictionary[Any] {
+  
+  /**
+    * Specifies whether or not the tree view item is displayed expanded.
+    */
   var expanded: js.UndefOr[Boolean] = js.undefined
-  /** Specifies whether or not the tree view item has children. */
+  
+  /**
+    * Specifies whether or not the tree view item has children.
+    */
   var hasItems: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the tree view item's icon. */
+  
+  /**
+    * Specifies the tree view item&apos;s icon.
+    */
   var icon: js.UndefOr[String] = js.undefined
-  /** Specifies nested tree view items. */
+  
+  /**
+    * Holds the unique key of an item.
+    */
+  var id: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * Specifies nested tree view items.
+    */
   var items: js.UndefOr[js.Array[dxTreeViewItem]] = js.undefined
-  /** Holds the key of the parent item. */
+  
+  /**
+    * Holds the key of the parent item.
+    */
   var parentId: js.UndefOr[Double | String] = js.undefined
-  /** Specifies whether or not the tree view item is displayed selected. */
+  
+  /**
+    * Specifies whether the TreeView item should be displayed as selected.
+    */
   var selected: js.UndefOr[Boolean] = js.undefined
 }
-
 object dxTreeViewItem {
-  @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    expanded: js.UndefOr[Boolean] = js.undefined,
-    hasItems: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    icon: String = null,
-    items: js.Array[dxTreeViewItem] = null,
-    parentId: Double | String = null,
-    selected: js.UndefOr[Boolean] = js.undefined,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxTreeViewItem = {
+  
+  inline def apply(): dxTreeViewItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasItems)) __obj.updateDynamic("hasItems")(hasItems.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxTreeViewItem]
   }
+  
+  extension [Self <: dxTreeViewItem](x: Self) {
+    
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    
+    inline def setHasItems(value: Boolean): Self = StObject.set(x, "hasItems", value.asInstanceOf[js.Any])
+    
+    inline def setHasItemsUndefined: Self = StObject.set(x, "hasItems", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setItems(value: js.Array[dxTreeViewItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: dxTreeViewItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setParentId(value: Double | String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+    
+    inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+    
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+  }
 }
-

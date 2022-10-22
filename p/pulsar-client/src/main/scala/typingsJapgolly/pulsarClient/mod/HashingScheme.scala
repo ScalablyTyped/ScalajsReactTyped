@@ -1,24 +1,20 @@
 package typingsJapgolly.pulsarClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.pulsarClient.pulsarClientStrings.Murmur3_32Hash
   - typingsJapgolly.pulsarClient.pulsarClientStrings.BoostHash
   - typingsJapgolly.pulsarClient.pulsarClientStrings.JavaStringHash
-  - typingsJapgolly.pulsarClient.pulsarClientStrings.Murmur3_32Hash
 */
-trait HashingScheme extends js.Object
-
+trait HashingScheme extends StObject
 object HashingScheme {
-  @scala.inline
-  def BoostHash: typingsJapgolly.pulsarClient.pulsarClientStrings.BoostHash = this.cast("BoostHash")
-  @scala.inline
-  def JavaStringHash: typingsJapgolly.pulsarClient.pulsarClientStrings.JavaStringHash = this.cast("JavaStringHash")
-  @scala.inline
-  def Murmur3_32Hash: typingsJapgolly.pulsarClient.pulsarClientStrings.Murmur3_32Hash = this.cast("Murmur3_32Hash")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BoostHash: typingsJapgolly.pulsarClient.pulsarClientStrings.BoostHash = "BoostHash".asInstanceOf[typingsJapgolly.pulsarClient.pulsarClientStrings.BoostHash]
+  
+  inline def JavaStringHash: typingsJapgolly.pulsarClient.pulsarClientStrings.JavaStringHash = "JavaStringHash".asInstanceOf[typingsJapgolly.pulsarClient.pulsarClientStrings.JavaStringHash]
+  
+  inline def Murmur3_32Hash: typingsJapgolly.pulsarClient.pulsarClientStrings.Murmur3_32Hash = "Murmur3_32Hash".asInstanceOf[typingsJapgolly.pulsarClient.pulsarClientStrings.Murmur3_32Hash]
 }
-

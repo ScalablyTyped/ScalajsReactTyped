@@ -2,30 +2,34 @@ package typingsJapgolly.facebookJsSdk.facebook
 
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.canvas_preview
 import typingsJapgolly.facebookJsSdk.facebookJsSdkStrings.popup
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait InstantExperiencesPreviewDialogParams extends DialogParams {
+trait InstantExperiencesPreviewDialogParams
+  extends StObject
+     with DialogParams {
+  
   var canvas_id: String
+  
   @JSName("display")
   var display_InstantExperiencesPreviewDialogParams: popup
+  
   var method: canvas_preview
 }
-
 object InstantExperiencesPreviewDialogParams {
-  @scala.inline
-  def apply(
-    canvas_id: String,
-    display: popup,
-    method: canvas_preview,
-    app_id: String = null,
-    redirect_uri: String = null
-  ): InstantExperiencesPreviewDialogParams = {
-    val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
+  
+  inline def apply(canvas_id: String): InstantExperiencesPreviewDialogParams = {
+    val __obj = js.Dynamic.literal(canvas_id = canvas_id.asInstanceOf[js.Any], display = "popup", method = "canvas_preview")
     __obj.asInstanceOf[InstantExperiencesPreviewDialogParams]
   }
+  
+  extension [Self <: InstantExperiencesPreviewDialogParams](x: Self) {
+    
+    inline def setCanvas_id(value: String): Self = StObject.set(x, "canvas_id", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay(value: popup): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: canvas_preview): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+  }
 }
-

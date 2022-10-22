@@ -1,11 +1,13 @@
 package typingsJapgolly.fsExtra.mod
 
+import typingsJapgolly.node.streamMod.ReadableOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fs-extra", "ReadStream")
 @js.native
-class ReadStream ()
-  extends typingsJapgolly.node.fsMod.ReadStream
-
+open class ReadStream ()
+  extends typingsJapgolly.node.fsMod.ReadStream {
+  def this(opts: ReadableOptions) = this()
+}

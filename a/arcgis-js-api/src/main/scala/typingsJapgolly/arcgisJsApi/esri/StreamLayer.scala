@@ -1,54 +1,243 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.point
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polygon
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.polyline
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.stream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StreamLayer extends FeatureLayer {
+trait StreamLayer
+  extends StObject
+     with Layer
+     with ScaleRangeLayer
+     with TemporalLayer
+     with BlendLayer
+     with FeatureEffectLayer {
+  
   /**
-    * Configures the method for reducing the number of point features in the view. By default this property is `null`, which indicates the layer view should draw every feature.  StreamLayer supports one type feature reduction: `selection`. [Selection](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-FeatureReductionSelection.html) only applies to points in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) and involves thinning overlapping features so no features intersect on screen.
+    * Copyright information for the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#copyright)
+    */
+  var copyright: String = js.native
+  
+  /**
+    * Creates a popup template for the layer, populated with all the fields of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#createPopupTemplate)
+    */
+  def createPopupTemplate(): PopupTemplate = js.native
+  def createPopupTemplate(options: CreatePopupTemplateOptions): PopupTemplate = js.native
+  
+  /**
+    * A list of custom parameters appended to the URL of all resources fetched by the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#customParameters)
+    */
+  var customParameters: Any = js.native
+  
+  /**
+    * The SQL where clause used to filter features based on their attributes.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#definitionExpression)
+    */
+  var definitionExpression: String = js.native
+  
+  /**
+    * The name of the layer's primary display field.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#displayField)
+    */
+  var displayField: String = js.native
+  
+  /**
+    * Specifies how features are placed on the vertical axis (z).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#elevationInfo)
+    */
+  var elevationInfo: StreamLayerElevationInfo = js.native
+  
+  /**
+    * Configures the method for reducing the number of point features in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#featureReduction)
     */
-  @JSName("featureReduction")
-  var featureReduction_StreamLayer: FeatureReductionSelection = js.native
+  var featureReduction: FeatureReductionSelection = js.native
+  
   /**
-    * An extent object used to filter features. Only features intersecting the extent are displayed in the view.
+    * An array of fields in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields)
+    */
+  var fields: js.Array[Field] = js.native
+  
+  /**
+    * A convenient property that can be used to make case-insensitive lookups for a field by name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fieldsIndex)
+    */
+  val fieldsIndex: FieldsIndex = js.native
+  
+  /**
+    * An [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object used to filter features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryDefinition)
     */
   var geometryDefinition: Extent = js.native
+  
   /**
     * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#geometryType)
     */
-  @JSName("geometryType")
-  val geometryType_StreamLayer: point | multipoint | polyline | polygon = js.native
+  var geometryType: point | polygon | polyline | multipoint = js.native
+  
   /**
-    * Maximum number of features to show per [trackId](https://enterprise.arcgis.com/en/geoevent/latest/get-started/essential-geoevent-server-vocabulary.htm#ESRI_SECTION1_F45BBCE9ADFA4E57AF38DD225921EFCD). If `trackId` is not configured on the GeoEvent Service, the `maximumTrackPoints` property will have no effect and an error will be logged in the console.
+    * Returns the [Field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html) instance for a field name (case-insensitive).
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maximumTrackPoints)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#getField)
     */
-  var maximumTrackPoints: Double = js.native
+  def getField(fieldName: String): Field = js.native
+  
   /**
-    * Options for purging stale features. Use these options to avoid overloading the browser with graphics.
+    * Returns the [Domain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Domain.html) associated with the given field name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#getFieldDomain)
+    */
+  def getFieldDomain(fieldName: String): Domain = js.native
+  def getFieldDomain(fieldName: String, options: StreamLayerGetFieldDomainOptions): Domain = js.native
+  
+  /**
+    * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelingInfo)
+    */
+  var labelingInfo: js.Array[LabelClass] = js.native
+  
+  /**
+    * Indicates whether to display labels for this layer.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#labelsVisible)
+    */
+  var labelsVisible: Boolean = js.native
+  
+  /**
+    * Indicates whether the layer will be included in the legend.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#legendEnabled)
+    */
+  var legendEnabled: Boolean = js.native
+  
+  /**
+    * The maximum number of attempts to reconnect.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionAttempts)
+    */
+  var maxReconnectionAttempts: Double = js.native
+  
+  /**
+    * The maximum time to wait in seconds between attempts to reconnect.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#maxReconnectionInterval)
+    */
+  var maxReconnectionInterval: Double = js.native
+  
+  /**
+    * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#fields) containing a unique value or identifier for each feature in the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#objectIdField)
+    */
+  var objectIdField: String = js.native
+  
+  /**
+    * Indicates whether to display popups when features in the layer are clicked.
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupEnabled)
+    */
+  var popupEnabled: Boolean = js.native
+  
+  /**
+    * The popup template for the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#popupTemplate)
+    */
+  var popupTemplate: PopupTemplate = js.native
+  
+  /**
+    * Options for purging stale features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#purgeOptions)
     */
   var purgeOptions: StreamLayerPurgeOptions = js.native
+  
+  /**
+    * The renderer assigned to the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#renderer)
+    */
+  var renderer: Renderer = js.native
+  
+  /**
+    * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
+    *
+    * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#screenSizePerspectiveEnabled)
+    */
+  var screenSizePerspectiveEnabled: Boolean = js.native
+  
+  /**
+    * The [stream service's metadata JSON](https://developers.arcgis.com/rest/services-reference/stream-service.htm) exposed by the ArcGIS REST API.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#sourceJSON)
+    */
+  var sourceJSON: Any = js.native
+  
+  /**
+    * The spatial reference of the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#spatialReference)
+    */
+  var spatialReference: SpatialReference = js.native
+  
+  /**
+    * For [StreamLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html) the type is `stream`.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#type)
+    */
   @JSName("type")
   val type_StreamLayer: stream = js.native
+  
+  /**
+    * The minimum rate (ms) at which to poll for updates over the websocket connection.
+    *
+    * @default 300
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#updateInterval)
+    */
+  var updateInterval: Double = js.native
+  
+  /**
+    * The URL of the stream service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#url)
+    */
+  var url: String = js.native
+  
+  /**
+    * The URL of a websocket connection.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-StreamLayer.html#webSocketUrl)
+    */
+  var webSocketUrl: String = js.native
 }
-
-@JSGlobal("__esri.StreamLayer")
-@js.native
-object StreamLayer extends TopLevel[StreamLayerConstructor]
-

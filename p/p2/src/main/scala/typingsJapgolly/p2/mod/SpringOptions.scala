@@ -1,36 +1,54 @@
 package typingsJapgolly.p2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpringOptions extends js.Object {
+trait SpringOptions extends StObject {
+  
   var damping: js.UndefOr[Double] = js.undefined
+  
   var localAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var localAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var stiffness: js.UndefOr[Double] = js.undefined
+  
   var worldAnchorA: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
+  
   var worldAnchorB: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
-
 object SpringOptions {
-  @scala.inline
-  def apply(
-    damping: Int | Double = null,
-    localAnchorA: js.Tuple2[Double, Double] = null,
-    localAnchorB: js.Tuple2[Double, Double] = null,
-    stiffness: Int | Double = null,
-    worldAnchorA: js.Tuple2[Double, Double] = null,
-    worldAnchorB: js.Tuple2[Double, Double] = null
-  ): SpringOptions = {
+  
+  inline def apply(): SpringOptions = {
     val __obj = js.Dynamic.literal()
-    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
-    if (localAnchorA != null) __obj.updateDynamic("localAnchorA")(localAnchorA.asInstanceOf[js.Any])
-    if (localAnchorB != null) __obj.updateDynamic("localAnchorB")(localAnchorB.asInstanceOf[js.Any])
-    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
-    if (worldAnchorA != null) __obj.updateDynamic("worldAnchorA")(worldAnchorA.asInstanceOf[js.Any])
-    if (worldAnchorB != null) __obj.updateDynamic("worldAnchorB")(worldAnchorB.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpringOptions]
   }
+  
+  extension [Self <: SpringOptions](x: Self) {
+    
+    inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+    
+    inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+    
+    inline def setLocalAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorA", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAnchorAUndefined: Self = StObject.set(x, "localAnchorA", js.undefined)
+    
+    inline def setLocalAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "localAnchorB", value.asInstanceOf[js.Any])
+    
+    inline def setLocalAnchorBUndefined: Self = StObject.set(x, "localAnchorB", js.undefined)
+    
+    inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+    
+    inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+    
+    inline def setWorldAnchorA(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorA", value.asInstanceOf[js.Any])
+    
+    inline def setWorldAnchorAUndefined: Self = StObject.set(x, "worldAnchorA", js.undefined)
+    
+    inline def setWorldAnchorB(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "worldAnchorB", value.asInstanceOf[js.Any])
+    
+    inline def setWorldAnchorBUndefined: Self = StObject.set(x, "worldAnchorB", js.undefined)
+  }
 }
-

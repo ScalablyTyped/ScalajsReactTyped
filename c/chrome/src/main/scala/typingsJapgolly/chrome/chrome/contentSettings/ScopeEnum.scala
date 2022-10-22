@@ -1,21 +1,17 @@
 package typingsJapgolly.chrome.chrome.contentSettings
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chrome.chromeStrings.regular
   - typingsJapgolly.chrome.chromeStrings.incognito_session_only
 */
-trait ScopeEnum extends js.Object
-
+trait ScopeEnum extends StObject
 object ScopeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def incognito_session_only: typingsJapgolly.chrome.chromeStrings.incognito_session_only = this.cast("incognito_session_only")
-  @scala.inline
-  def regular: typingsJapgolly.chrome.chromeStrings.regular = this.cast("regular")
+  
+  inline def incognito_session_only: typingsJapgolly.chrome.chromeStrings.incognito_session_only = "incognito_session_only".asInstanceOf[typingsJapgolly.chrome.chromeStrings.incognito_session_only]
+  
+  inline def regular: typingsJapgolly.chrome.chromeStrings.regular = "regular".asInstanceOf[typingsJapgolly.chrome.chromeStrings.regular]
 }
-

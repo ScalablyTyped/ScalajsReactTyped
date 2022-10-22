@@ -1,29 +1,21 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.mobile.ui.Drawer")
 @js.native
-class Drawer protected ()
-  extends typingsJapgolly.kendoUi.kendo.ui.Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DrawerOptions) = this()
+trait Drawer
+  extends StObject
+     with typingsJapgolly.kendoUi.kendo.ui.Widget {
+  
+  def hide(): Unit = js.native
+  
   @JSName("options")
   var options_Drawer: DrawerOptions = js.native
-  var wrapper: JQuery = js.native
-  def hide(): Unit = js.native
+  
   def show(): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.mobile.ui.Drawer")
-@js.native
-object Drawer extends js.Object {
-  var fn: Drawer = js.native
-  def extend(proto: js.Object): Drawer = js.native
-}
-

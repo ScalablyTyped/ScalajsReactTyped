@@ -4,21 +4,27 @@ import typingsJapgolly.qlik.qlikStrings.N
 import typingsJapgolly.qlik.qlikStrings.P
 import typingsJapgolly.qlik.qlikStrings.R
 import typingsJapgolly.qlik.qlikStrings.V
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetDataOptions extends js.Object {
+trait GetDataOptions extends StObject {
+  
   var frequencyMode: V | P | R | N
+  
   var rows: Double
 }
-
 object GetDataOptions {
-  @scala.inline
-  def apply(frequencyMode: V | P | R | N, rows: Double): GetDataOptions = {
-    val __obj = js.Dynamic.literal(frequencyMode = frequencyMode.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
   
+  inline def apply(frequencyMode: V | P | R | N, rows: Double): GetDataOptions = {
+    val __obj = js.Dynamic.literal(frequencyMode = frequencyMode.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDataOptions]
   }
+  
+  extension [Self <: GetDataOptions](x: Self) {
+    
+    inline def setFrequencyMode(value: V | P | R | N): Self = StObject.set(x, "frequencyMode", value.asInstanceOf[js.Any])
+    
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+  }
 }
-

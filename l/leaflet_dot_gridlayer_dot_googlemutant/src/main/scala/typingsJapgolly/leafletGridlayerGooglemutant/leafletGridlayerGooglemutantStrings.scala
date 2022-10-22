@@ -1,30 +1,33 @@
 package typingsJapgolly.leafletGridlayerGooglemutant
 
-import typingsJapgolly.leafletGridlayerGooglemutant.mod.gridLayer.GoogleMutantType
+import typingsJapgolly.leafletGridlayerGooglemutant.leafletMod.gridLayer.GoogleMutantType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafletGridlayerGooglemutantStrings {
-  @js.native
-  sealed trait hybrid extends GoogleMutantType
   
   @js.native
-  sealed trait roadmap extends GoogleMutantType
+  sealed trait hybrid
+    extends StObject
+       with GoogleMutantType
+  inline def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
-  sealed trait satellite extends GoogleMutantType
+  sealed trait roadmap
+    extends StObject
+       with GoogleMutantType
+  inline def roadmap: roadmap = "roadmap".asInstanceOf[roadmap]
   
   @js.native
-  sealed trait terrain extends GoogleMutantType
+  sealed trait satellite
+    extends StObject
+       with GoogleMutantType
+  inline def satellite: satellite = "satellite".asInstanceOf[satellite]
   
-  @scala.inline
-  def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
-  @scala.inline
-  def roadmap: roadmap = "roadmap".asInstanceOf[roadmap]
-  @scala.inline
-  def satellite: satellite = "satellite".asInstanceOf[satellite]
-  @scala.inline
-  def terrain: terrain = "terrain".asInstanceOf[terrain]
+  @js.native
+  sealed trait terrain
+    extends StObject
+       with GoogleMutantType
+  inline def terrain: terrain = "terrain".asInstanceOf[terrain]
 }
-

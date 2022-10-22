@@ -1,31 +1,32 @@
 package typingsJapgolly.domMediacaptureRecord
 
-import org.scalajs.dom.raw.Blob
+import org.scalajs.dom.Blob
 import typingsJapgolly.std.EventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BlobEventInit extends EventInit {
+trait BlobEventInit
+  extends StObject
+     with EventInit {
+  
   var data: Blob
+  
   var timecode: js.UndefOr[Double] = js.undefined
 }
-
 object BlobEventInit {
-  @scala.inline
-  def apply(
-    data: Blob,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined,
-    timecode: Int | Double = null
-  ): BlobEventInit = {
+  
+  inline def apply(data: Blob): BlobEventInit = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (timecode != null) __obj.updateDynamic("timecode")(timecode.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlobEventInit]
   }
+  
+  extension [Self <: BlobEventInit](x: Self) {
+    
+    inline def setData(value: Blob): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setTimecode(value: Double): Self = StObject.set(x, "timecode", value.asInstanceOf[js.Any])
+    
+    inline def setTimecodeUndefined: Self = StObject.set(x, "timecode", js.undefined)
+  }
 }
-

@@ -1,19 +1,21 @@
 package typingsJapgolly.angular.mod
 
-import typingsJapgolly.angular.mod._Global_.Function
+import typingsJapgolly.angular.mod.global.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // IntervalService
-// see http://docs.angularjs.org/api/ng.$interval
+// see http://docs.angularjs.org/api/ng/service/$interval
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait IIntervalService extends js.Object {
-  def apply(func: Function, delay: Double): IPromise[_] = js.native
-  def apply(func: Function, delay: Double, count: Double): IPromise[_] = js.native
-  def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: js.Any*): IPromise[_] = js.native
-  def cancel(promise: IPromise[_]): Boolean = js.native
+trait IIntervalService extends StObject {
+  
+  def apply(func: Function, delay: Double, count: Double, invokeApply: Boolean, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Double, invokeApply: Unit, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Unit, invokeApply: Boolean, args: Any*): IPromise[Any] = js.native
+  def apply(func: Function, delay: Double, count: Unit, invokeApply: Unit, args: Any*): IPromise[Any] = js.native
+  
+  def cancel(promise: IPromise[Any]): Boolean = js.native
 }
-

@@ -1,26 +1,32 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlaylistDetailsOptions extends PublicOptions {
+trait PlaylistDetailsOptions
+  extends StObject
+     with PublicOptions {
+  
   var collaborative: js.UndefOr[Boolean] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
 }
-
 object PlaylistDetailsOptions {
-  @scala.inline
-  def apply(
-    collaborative: js.UndefOr[Boolean] = js.undefined,
-    description: String = null,
-    public: js.UndefOr[Boolean] = js.undefined
-  ): PlaylistDetailsOptions = {
+  
+  inline def apply(): PlaylistDetailsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collaborative)) __obj.updateDynamic("collaborative")(collaborative.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(public)) __obj.updateDynamic("public")(public.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlaylistDetailsOptions]
   }
+  
+  extension [Self <: PlaylistDetailsOptions](x: Self) {
+    
+    inline def setCollaborative(value: Boolean): Self = StObject.set(x, "collaborative", value.asInstanceOf[js.Any])
+    
+    inline def setCollaborativeUndefined: Self = StObject.set(x, "collaborative", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+  }
 }
-

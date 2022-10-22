@@ -1,49 +1,47 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Table2SheetOpts
-  extends CommonOptions
-     with DateNFOption {
+  extends StObject
+     with CommonOptions
+     with DateNFOption
+     with OriginOption
+     with SheetOption {
+  
   /** If true, hidden rows and cells will not be parsed */
   var display: js.UndefOr[Boolean] = js.undefined
-  /* If true, plaintext parsing will not parse values */
+  
+  /** If true, plaintext parsing will not parse values */
   var raw: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * If >0, read the first sheetRows rows
     * @default 0
     */
   var sheetRows: js.UndefOr[Double] = js.undefined
 }
-
 object Table2SheetOpts {
-  @scala.inline
-  def apply(
-    WTF: js.UndefOr[Boolean] = js.undefined,
-    bookVBA: js.UndefOr[Boolean] = js.undefined,
-    cellDates: js.UndefOr[Boolean] = js.undefined,
-    cellStyles: js.UndefOr[Boolean] = js.undefined,
-    dateNF: NumberFormat = null,
-    display: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    raw: js.UndefOr[Boolean] = js.undefined,
-    sheetRows: Int | Double = null,
-    sheetStubs: js.UndefOr[Boolean] = js.undefined
-  ): Table2SheetOpts = {
+  
+  inline def apply(): Table2SheetOpts = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
-    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF.asInstanceOf[js.Any])
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw.asInstanceOf[js.Any])
-    if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table2SheetOpts]
   }
+  
+  extension [Self <: Table2SheetOpts](x: Self) {
+    
+    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    
+    inline def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
+    
+    inline def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
+  }
 }
-

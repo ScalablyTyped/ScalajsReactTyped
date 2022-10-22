@@ -1,20 +1,26 @@
 package typingsJapgolly.hlsJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait fpsDropLevelCappingData extends js.Object {
-  var droppedLevel: Level
-  var level: Level
-}
-
-object fpsDropLevelCappingData {
-  @scala.inline
-  def apply(droppedLevel: Level, level: Level): fpsDropLevelCappingData = {
-    val __obj = js.Dynamic.literal(droppedLevel = droppedLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+trait FPSDropLevelCappingData extends StObject {
   
-    __obj.asInstanceOf[fpsDropLevelCappingData]
+  var droppedLevel: Double
+  
+  var level: Double
+}
+object FPSDropLevelCappingData {
+  
+  inline def apply(droppedLevel: Double, level: Double): FPSDropLevelCappingData = {
+    val __obj = js.Dynamic.literal(droppedLevel = droppedLevel.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FPSDropLevelCappingData]
+  }
+  
+  extension [Self <: FPSDropLevelCappingData](x: Self) {
+    
+    inline def setDroppedLevel(value: Double): Self = StObject.set(x, "droppedLevel", value.asInstanceOf[js.Any])
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }
-

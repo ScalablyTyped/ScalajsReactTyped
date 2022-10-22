@@ -2,418 +2,334 @@ package typingsJapgolly.extjs.Ext.dd
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.extjs.Ext.Array
-import typingsJapgolly.extjs.Ext.IClass
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDragSource extends IDDProxy {
+trait IDragSource
+  extends StObject
+     with IDDProxy {
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drag drop has occurr
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dropped element
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dropped element
+    */
   var afterDragDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action when the dragged item enters the d
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    */
   var afterDragEnter: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action after the dragged item is dragged
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    */
   var afterDragOut: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action while the dragged item is over the
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    */
   var afterDragOver: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action after an invalid drop has occurred
-  		* @param e Event The event object
-  		* @param id String The id of the dropped element
-  		*/
-  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String], Unit]] = js.undefined
+    * @param e Event The event object
+    * @param id String The id of the dropped element
+    */
+  var afterInvalidDrop: js.UndefOr[js.Function2[/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String], Unit]] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drop has occurred by
-  		* @param target Object The target DD
-  		* @param e Event The event object
-  		* @param id String The id of the dropped element
-  		*/
+    * @param target Object The target DD
+    * @param e Event The event object
+    * @param id String The id of the dropped element
+    */
   var afterValidDrop: js.UndefOr[
     js.Function3[
-      /* target */ js.UndefOr[js.Any], 
-      /* e */ js.UndefOr[Event_], 
+      /* target */ js.UndefOr[Any], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Unit
     ]
   ] = js.undefined
+  
   /** [Method] Sets the element to the location of the mousedown or click event maintaining the cursor location relative to the loc  */
   @JSName("alignElWithMouse")
   var alignElWithMouse_IDragSource: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Config Option] (Boolean) */
   var animRepair: js.UndefOr[Boolean] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item is dropped
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		* @returns Boolean isValid True if the drag drop event is valid, else false to cancel
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    * @returns Boolean isValid True if the drag drop event is valid, else false to cancel
+    */
   var beforeDragDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item enters the
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		* @returns Boolean isValid True if the drag event is valid, else false to cancel
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    * @returns Boolean isValid True if the drag event is valid, else false to cancel
+    */
   var beforeDragEnter: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action before the dragged item is dragged
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		* @returns Boolean isValid True if the drag event is valid, else false to cancel
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    * @returns Boolean isValid True if the drag event is valid, else false to cancel
+    */
   var beforeDragOut: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action while the dragged item is over the
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		* @returns Boolean isValid True if the drag event is valid, else false to cancel
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    * @returns Boolean isValid True if the drag event is valid, else false to cancel
+    */
   var beforeDragOver: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action after an invalid drop has occurred
-  		* @param target Ext.dd.DragDrop The drop target
-  		* @param e Event The event object
-  		* @param id String The id of the dragged element
-  		* @returns Boolean isValid True if the invalid drop should proceed, else false to cancel
-  		*/
+    * @param target Ext.dd.DragDrop The drop target
+    * @param e Event The event object
+    * @param id String The id of the dragged element
+    * @returns Boolean isValid True if the invalid drop should proceed, else false to cancel
+    */
   var beforeInvalidDrop: js.UndefOr[
     js.Function3[
       /* target */ js.UndefOr[IDragDrop], 
-      /* e */ js.UndefOr[Event_], 
+      /* e */ js.UndefOr[Event], 
       /* id */ js.UndefOr[String], 
       Boolean
     ]
   ] = js.undefined
+  
   /** [Config Option] (String) */
   var ddGroup: js.UndefOr[String] = js.undefined
+  
   /** [Property] (Object) */
-  var dragData: js.UndefOr[js.Any] = js.undefined
+  var dragData: js.UndefOr[Any] = js.undefined
+  
   /** [Config Option] (String) */
   var dropAllowed: js.UndefOr[String] = js.undefined
+  
   /** [Config Option] (String) */
   var dropNotAllowed: js.UndefOr[String] = js.undefined
+  
   /** [Method] Returns the data object associated with this drag source
-  		* @param e Object
-  		* @returns Object data An object containing arbitrary data
-  		*/
-  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], _]] = js.undefined
+    * @param e Object
+    * @returns Object data An object containing arbitrary data
+    */
+  var getDragData: js.UndefOr[js.Function1[/* e */ js.UndefOr[Any], Any]] = js.undefined
+  
   /** [Method] Returns the drag source s underlying Ext dd StatusProxy
-  		* @returns Ext.dd.StatusProxy proxy The StatusProxy
-  		*/
+    * @returns Ext.dd.StatusProxy proxy The StatusProxy
+    */
   var getProxy: js.UndefOr[js.Function0[IStatusProxy]] = js.undefined
+  
   /** [Method] Hides the drag source s Ext dd StatusProxy */
   var hideProxy: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action before the initial drag event begi
-  		* @param data Object An object containing arbitrary data to be shared with drop targets
-  		* @param e Event The event object
-  		* @returns Boolean isValid True if the drag event is valid, else false to cancel
-  		*/
-  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_], Boolean]] = js.undefined
+    * @param data Object An object containing arbitrary data to be shared with drop targets
+    * @param e Event The event object
+    * @returns Boolean isValid True if the drag event is valid, else false to cancel
+    */
+  var onBeforeDrag: js.UndefOr[js.Function2[/* data */ js.UndefOr[Any], /* e */ js.UndefOr[Event], Boolean]] = js.undefined
+  
   /** [Method] An empty function by default but provided so that you can perform a custom action once the initial drag event has be
-  		* @param x Number The x position of the click on the dragged object
-  		* @param y Number The y position of the click on the dragged object
-  		*/
+    * @param x Number The x position of the click on the dragged object
+    * @param y Number The y position of the click on the dragged object
+    */
   var onStartDrag: js.UndefOr[js.Function2[/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double], Unit]] = js.undefined
+  
   /** [Config Option] (String) */
   var repairHighlightColor: js.UndefOr[String] = js.undefined
 }
-
 object IDragSource {
-  @scala.inline
-  def apply(
-    addInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Callback = null,
-    addInvalidHandleId: /* id */ js.UndefOr[String] => Callback = null,
-    addInvalidHandleType: /* tagName */ js.UndefOr[String] => Callback = null,
-    addToGroup: /* sGroup */ js.UndefOr[String] => Callback = null,
-    afterDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    afterDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    afterDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    afterDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    afterInvalidDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    afterValidDrop: (/* target */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => Callback = null,
-    alias: Array = null,
-    alignElWithMouse: js.UndefOr[Callback] = js.undefined,
-    alternateClassName: js.Any = null,
-    animRepair: js.UndefOr[Boolean] = js.undefined,
-    applyConfig: js.UndefOr[Callback] = js.undefined,
-    autoOffset: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Callback = null,
-    available: js.UndefOr[Boolean] = js.undefined,
-    b4Drag: /* e */ js.UndefOr[js.Any] => Callback = null,
-    b4MouseDown: /* e */ js.UndefOr[js.Any] => Callback = null,
-    beforeDragDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    beforeDragEnter: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    beforeDragOut: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    beforeDragOver: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    beforeInvalidDrop: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event_], /* id */ js.UndefOr[String]) => CallbackTo[Boolean] = null,
-    cachePosition: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Callback = null,
-    callOverridden: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callParent: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    callSuper: /* args */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    centerFrame: js.UndefOr[Boolean] = js.undefined,
-    clearConstraints: js.UndefOr[Callback] = js.undefined,
-    clearTicks: js.UndefOr[Callback] = js.undefined,
-    config: js.Any = null,
-    constrainTo: (/* constrainTo */ js.UndefOr[js.Any], /* pad */ js.UndefOr[js.Any], /* inContent */ js.UndefOr[Boolean]) => Callback = null,
-    createFrame: js.UndefOr[Callback] = js.undefined,
-    ddGroup: String = null,
-    defaultPadding: js.Any = null,
-    destroy: js.UndefOr[Callback] = js.undefined,
-    dragData: js.Any = null,
-    dragElId: String = null,
-    dropAllowed: String = null,
-    dropNotAllowed: String = null,
-    endDrag: /* e */ js.UndefOr[js.Any] => Callback = null,
-    extend: String = null,
-    getDragData: /* e */ js.UndefOr[js.Any] => CallbackTo[js.Any] = null,
-    getDragEl: js.UndefOr[CallbackTo[HTMLElement]] = js.undefined,
-    getEl: js.UndefOr[CallbackTo[HTMLElement]] = js.undefined,
-    getInitialConfig: /* name */ js.UndefOr[String] => CallbackTo[js.Any] = null,
-    getProxy: js.UndefOr[CallbackTo[IStatusProxy]] = js.undefined,
-    groups: js.Any = null,
-    hasOuterHandles: js.UndefOr[Boolean] = js.undefined,
-    hideProxy: js.UndefOr[Callback] = js.undefined,
-    id: String = null,
-    ignoreSelf: js.UndefOr[Boolean] = js.undefined,
-    inheritableStatics: js.Any = null,
-    init: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Callback = null,
-    initConfig: /* config */ js.UndefOr[js.Any] => CallbackTo[IDragSource] = null,
-    initFrame: js.UndefOr[Callback] = js.undefined,
-    initTarget: (/* id */ js.UndefOr[String], /* sGroup */ js.UndefOr[String], /* config */ js.UndefOr[js.Any]) => Callback = null,
-    invalidHandleClasses: Array = null,
-    invalidHandleIds: js.Any = null,
-    invalidHandleTypes: js.Any = null,
-    isLocked: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    isTarget: js.UndefOr[Boolean] = js.undefined,
-    isValidHandleChild: /* node */ js.UndefOr[HTMLElement] => CallbackTo[Boolean] = null,
-    lock: js.UndefOr[Callback] = js.undefined,
-    maintainOffset: js.UndefOr[Boolean] = js.undefined,
-    mixins: js.Any = null,
-    moveOnly: js.UndefOr[Boolean] = js.undefined,
-    onAvailable: js.UndefOr[Callback] = js.undefined,
-    onBeforeDrag: (/* data */ js.UndefOr[js.Any], /* e */ js.UndefOr[Event_]) => CallbackTo[Boolean] = null,
-    onDrag: /* e */ js.UndefOr[Event_] => Callback = null,
-    onDragDrop: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Callback = null,
-    onDragEnter: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Callback = null,
-    onDragOut: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Callback = null,
-    onDragOver: (/* e */ js.UndefOr[Event_], /* id */ js.UndefOr[js.Any]) => Callback = null,
-    onInvalidDrop: /* e */ js.UndefOr[Event_] => Callback = null,
-    onMouseDown: /* e */ js.UndefOr[Event_] => Callback = null,
-    onMouseUp: /* e */ js.UndefOr[Event_] => Callback = null,
-    onStartDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Callback = null,
-    padding: Array = null,
-    primaryButtonOnly: js.UndefOr[Boolean] = js.undefined,
-    removeFromGroup: /* sGroup */ js.UndefOr[String] => Callback = null,
-    removeInvalidHandleClass: /* cssClass */ js.UndefOr[String] => Callback = null,
-    removeInvalidHandleId: /* id */ js.UndefOr[String] => Callback = null,
-    removeInvalidHandleType: /* tagName */ js.UndefOr[String] => Callback = null,
-    repairHighlightColor: String = null,
-    requires: Array = null,
-    resetConstraints: /* maintainOffset */ js.UndefOr[Boolean] => Callback = null,
-    resizeFrame: js.UndefOr[Boolean] = js.undefined,
-    scroll: js.UndefOr[Boolean] = js.undefined,
-    self: IClass = null,
-    setDelta: (/* iDeltaX */ js.UndefOr[Double], /* iDeltaY */ js.UndefOr[Double]) => Callback = null,
-    setDragElId: /* id */ js.UndefOr[String] => Callback = null,
-    setDragElPos: (/* iPageX */ js.UndefOr[Double], /* iPageY */ js.UndefOr[Double]) => Callback = null,
-    setHandleElId: /* id */ js.UndefOr[String] => Callback = null,
-    setInitPosition: (/* diffX */ js.UndefOr[Double], /* diffY */ js.UndefOr[Double]) => Callback = null,
-    setOuterHandleElId: /* id */ js.UndefOr[String] => Callback = null,
-    setPadding: (/* iTop */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iBot */ js.UndefOr[Double], /* iLeft */ js.UndefOr[Double]) => Callback = null,
-    setXConstraint: (/* iLeft */ js.UndefOr[Double], /* iRight */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Callback = null,
-    setYConstraint: (/* iUp */ js.UndefOr[Double], /* iDown */ js.UndefOr[Double], /* iTickSize */ js.UndefOr[Double]) => Callback = null,
-    singleton: js.UndefOr[Boolean] = js.undefined,
-    startDrag: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Callback = null,
-    statics: js.Any = null,
-    toString: js.UndefOr[CallbackTo[String]] = js.undefined,
-    unlock: js.UndefOr[Callback] = js.undefined,
-    unreg: js.UndefOr[Callback] = js.undefined,
-    uses: Array = null,
-    xTicks: Array = null,
-    yTicks: Array = null
-  ): IDragSource = {
+  
+  inline def apply(): IDragSource = {
     val __obj = js.Dynamic.literal()
-    if (addInvalidHandleClass != null) __obj.updateDynamic("addInvalidHandleClass")(js.Any.fromFunction1((t0: /* cssClass */ js.UndefOr[java.lang.String]) => addInvalidHandleClass(t0).runNow()))
-    if (addInvalidHandleId != null) __obj.updateDynamic("addInvalidHandleId")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => addInvalidHandleId(t0).runNow()))
-    if (addInvalidHandleType != null) __obj.updateDynamic("addInvalidHandleType")(js.Any.fromFunction1((t0: /* tagName */ js.UndefOr[java.lang.String]) => addInvalidHandleType(t0).runNow()))
-    if (addToGroup != null) __obj.updateDynamic("addToGroup")(js.Any.fromFunction1((t0: /* sGroup */ js.UndefOr[java.lang.String]) => addToGroup(t0).runNow()))
-    if (afterDragDrop != null) __obj.updateDynamic("afterDragDrop")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => afterDragDrop(t0, t1, t2).runNow()))
-    if (afterDragEnter != null) __obj.updateDynamic("afterDragEnter")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => afterDragEnter(t0, t1, t2).runNow()))
-    if (afterDragOut != null) __obj.updateDynamic("afterDragOut")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => afterDragOut(t0, t1, t2).runNow()))
-    if (afterDragOver != null) __obj.updateDynamic("afterDragOver")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => afterDragOver(t0, t1, t2).runNow()))
-    if (afterInvalidDrop != null) __obj.updateDynamic("afterInvalidDrop")(js.Any.fromFunction2((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t1: /* id */ js.UndefOr[java.lang.String]) => afterInvalidDrop(t0, t1).runNow()))
-    if (afterValidDrop != null) __obj.updateDynamic("afterValidDrop")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[js.Any], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => afterValidDrop(t0, t1, t2).runNow()))
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    alignElWithMouse.foreach(p => __obj.updateDynamic("alignElWithMouse")(p.toJsFn))
-    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName.asInstanceOf[js.Any])
-    if (!js.isUndefined(animRepair)) __obj.updateDynamic("animRepair")(animRepair.asInstanceOf[js.Any])
-    applyConfig.foreach(p => __obj.updateDynamic("applyConfig")(p.toJsFn))
-    if (autoOffset != null) __obj.updateDynamic("autoOffset")(js.Any.fromFunction2((t0: /* iPageX */ js.UndefOr[scala.Double], t1: /* iPageY */ js.UndefOr[scala.Double]) => autoOffset(t0, t1).runNow()))
-    if (!js.isUndefined(available)) __obj.updateDynamic("available")(available.asInstanceOf[js.Any])
-    if (b4Drag != null) __obj.updateDynamic("b4Drag")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => b4Drag(t0).runNow()))
-    if (b4MouseDown != null) __obj.updateDynamic("b4MouseDown")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => b4MouseDown(t0).runNow()))
-    if (beforeDragDrop != null) __obj.updateDynamic("beforeDragDrop")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => beforeDragDrop(t0, t1, t2).runNow()))
-    if (beforeDragEnter != null) __obj.updateDynamic("beforeDragEnter")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => beforeDragEnter(t0, t1, t2).runNow()))
-    if (beforeDragOut != null) __obj.updateDynamic("beforeDragOut")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => beforeDragOut(t0, t1, t2).runNow()))
-    if (beforeDragOver != null) __obj.updateDynamic("beforeDragOver")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => beforeDragOver(t0, t1, t2).runNow()))
-    if (beforeInvalidDrop != null) __obj.updateDynamic("beforeInvalidDrop")(js.Any.fromFunction3((t0: /* target */ js.UndefOr[typingsJapgolly.extjs.Ext.dd.IDragDrop], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t2: /* id */ js.UndefOr[java.lang.String]) => beforeInvalidDrop(t0, t1, t2).runNow()))
-    if (cachePosition != null) __obj.updateDynamic("cachePosition")(js.Any.fromFunction2((t0: /* iPageX */ js.UndefOr[scala.Double], t1: /* iPageY */ js.UndefOr[scala.Double]) => cachePosition(t0, t1).runNow()))
-    if (callOverridden != null) __obj.updateDynamic("callOverridden")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callOverridden(t0).runNow()))
-    if (callParent != null) __obj.updateDynamic("callParent")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callParent(t0).runNow()))
-    if (callSuper != null) __obj.updateDynamic("callSuper")(js.Any.fromFunction1((t0: /* args */ js.UndefOr[js.Any]) => callSuper(t0).runNow()))
-    if (!js.isUndefined(centerFrame)) __obj.updateDynamic("centerFrame")(centerFrame.asInstanceOf[js.Any])
-    clearConstraints.foreach(p => __obj.updateDynamic("clearConstraints")(p.toJsFn))
-    clearTicks.foreach(p => __obj.updateDynamic("clearTicks")(p.toJsFn))
-    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
-    if (constrainTo != null) __obj.updateDynamic("constrainTo")(js.Any.fromFunction3((t0: /* constrainTo */ js.UndefOr[js.Any], t1: /* pad */ js.UndefOr[js.Any], t2: /* inContent */ js.UndefOr[scala.Boolean]) => constrainTo(t0, t1, t2).runNow()))
-    createFrame.foreach(p => __obj.updateDynamic("createFrame")(p.toJsFn))
-    if (ddGroup != null) __obj.updateDynamic("ddGroup")(ddGroup.asInstanceOf[js.Any])
-    if (defaultPadding != null) __obj.updateDynamic("defaultPadding")(defaultPadding.asInstanceOf[js.Any])
-    destroy.foreach(p => __obj.updateDynamic("destroy")(p.toJsFn))
-    if (dragData != null) __obj.updateDynamic("dragData")(dragData.asInstanceOf[js.Any])
-    if (dragElId != null) __obj.updateDynamic("dragElId")(dragElId.asInstanceOf[js.Any])
-    if (dropAllowed != null) __obj.updateDynamic("dropAllowed")(dropAllowed.asInstanceOf[js.Any])
-    if (dropNotAllowed != null) __obj.updateDynamic("dropNotAllowed")(dropNotAllowed.asInstanceOf[js.Any])
-    if (endDrag != null) __obj.updateDynamic("endDrag")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => endDrag(t0).runNow()))
-    if (extend != null) __obj.updateDynamic("extend")(extend.asInstanceOf[js.Any])
-    if (getDragData != null) __obj.updateDynamic("getDragData")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => getDragData(t0).runNow()))
-    getDragEl.foreach(p => __obj.updateDynamic("getDragEl")(p.toJsFn))
-    getEl.foreach(p => __obj.updateDynamic("getEl")(p.toJsFn))
-    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(js.Any.fromFunction1((t0: /* name */ js.UndefOr[java.lang.String]) => getInitialConfig(t0).runNow()))
-    getProxy.foreach(p => __obj.updateDynamic("getProxy")(p.toJsFn))
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasOuterHandles)) __obj.updateDynamic("hasOuterHandles")(hasOuterHandles.asInstanceOf[js.Any])
-    hideProxy.foreach(p => __obj.updateDynamic("hideProxy")(p.toJsFn))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreSelf)) __obj.updateDynamic("ignoreSelf")(ignoreSelf.asInstanceOf[js.Any])
-    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction3((t0: /* id */ js.UndefOr[java.lang.String], t1: /* sGroup */ js.UndefOr[java.lang.String], t2: /* config */ js.UndefOr[js.Any]) => init(t0, t1, t2).runNow()))
-    if (initConfig != null) __obj.updateDynamic("initConfig")(js.Any.fromFunction1((t0: /* config */ js.UndefOr[js.Any]) => initConfig(t0).runNow()))
-    initFrame.foreach(p => __obj.updateDynamic("initFrame")(p.toJsFn))
-    if (initTarget != null) __obj.updateDynamic("initTarget")(js.Any.fromFunction3((t0: /* id */ js.UndefOr[java.lang.String], t1: /* sGroup */ js.UndefOr[java.lang.String], t2: /* config */ js.UndefOr[js.Any]) => initTarget(t0, t1, t2).runNow()))
-    if (invalidHandleClasses != null) __obj.updateDynamic("invalidHandleClasses")(invalidHandleClasses.asInstanceOf[js.Any])
-    if (invalidHandleIds != null) __obj.updateDynamic("invalidHandleIds")(invalidHandleIds.asInstanceOf[js.Any])
-    if (invalidHandleTypes != null) __obj.updateDynamic("invalidHandleTypes")(invalidHandleTypes.asInstanceOf[js.Any])
-    isLocked.foreach(p => __obj.updateDynamic("isLocked")(p.toJsFn))
-    if (!js.isUndefined(isTarget)) __obj.updateDynamic("isTarget")(isTarget.asInstanceOf[js.Any])
-    if (isValidHandleChild != null) __obj.updateDynamic("isValidHandleChild")(js.Any.fromFunction1((t0: /* node */ js.UndefOr[org.scalajs.dom.raw.HTMLElement]) => isValidHandleChild(t0).runNow()))
-    lock.foreach(p => __obj.updateDynamic("lock")(p.toJsFn))
-    if (!js.isUndefined(maintainOffset)) __obj.updateDynamic("maintainOffset")(maintainOffset.asInstanceOf[js.Any])
-    if (mixins != null) __obj.updateDynamic("mixins")(mixins.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveOnly)) __obj.updateDynamic("moveOnly")(moveOnly.asInstanceOf[js.Any])
-    onAvailable.foreach(p => __obj.updateDynamic("onAvailable")(p.toJsFn))
-    if (onBeforeDrag != null) __obj.updateDynamic("onBeforeDrag")(js.Any.fromFunction2((t0: /* data */ js.UndefOr[js.Any], t1: /* e */ js.UndefOr[typingsJapgolly.std.Event_]) => onBeforeDrag(t0, t1).runNow()))
-    if (onDrag != null) __obj.updateDynamic("onDrag")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_]) => onDrag(t0).runNow()))
-    if (onDragDrop != null) __obj.updateDynamic("onDragDrop")(js.Any.fromFunction2((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t1: /* id */ js.UndefOr[js.Any]) => onDragDrop(t0, t1).runNow()))
-    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(js.Any.fromFunction2((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t1: /* id */ js.UndefOr[js.Any]) => onDragEnter(t0, t1).runNow()))
-    if (onDragOut != null) __obj.updateDynamic("onDragOut")(js.Any.fromFunction2((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t1: /* id */ js.UndefOr[js.Any]) => onDragOut(t0, t1).runNow()))
-    if (onDragOver != null) __obj.updateDynamic("onDragOver")(js.Any.fromFunction2((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_], t1: /* id */ js.UndefOr[js.Any]) => onDragOver(t0, t1).runNow()))
-    if (onInvalidDrop != null) __obj.updateDynamic("onInvalidDrop")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_]) => onInvalidDrop(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_]) => onMouseDown(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[typingsJapgolly.std.Event_]) => onMouseUp(t0).runNow()))
-    if (onStartDrag != null) __obj.updateDynamic("onStartDrag")(js.Any.fromFunction2((t0: /* x */ js.UndefOr[scala.Double], t1: /* y */ js.UndefOr[scala.Double]) => onStartDrag(t0, t1).runNow()))
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(primaryButtonOnly)) __obj.updateDynamic("primaryButtonOnly")(primaryButtonOnly.asInstanceOf[js.Any])
-    if (removeFromGroup != null) __obj.updateDynamic("removeFromGroup")(js.Any.fromFunction1((t0: /* sGroup */ js.UndefOr[java.lang.String]) => removeFromGroup(t0).runNow()))
-    if (removeInvalidHandleClass != null) __obj.updateDynamic("removeInvalidHandleClass")(js.Any.fromFunction1((t0: /* cssClass */ js.UndefOr[java.lang.String]) => removeInvalidHandleClass(t0).runNow()))
-    if (removeInvalidHandleId != null) __obj.updateDynamic("removeInvalidHandleId")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => removeInvalidHandleId(t0).runNow()))
-    if (removeInvalidHandleType != null) __obj.updateDynamic("removeInvalidHandleType")(js.Any.fromFunction1((t0: /* tagName */ js.UndefOr[java.lang.String]) => removeInvalidHandleType(t0).runNow()))
-    if (repairHighlightColor != null) __obj.updateDynamic("repairHighlightColor")(repairHighlightColor.asInstanceOf[js.Any])
-    if (requires != null) __obj.updateDynamic("requires")(requires.asInstanceOf[js.Any])
-    if (resetConstraints != null) __obj.updateDynamic("resetConstraints")(js.Any.fromFunction1((t0: /* maintainOffset */ js.UndefOr[scala.Boolean]) => resetConstraints(t0).runNow()))
-    if (!js.isUndefined(resizeFrame)) __obj.updateDynamic("resizeFrame")(resizeFrame.asInstanceOf[js.Any])
-    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll.asInstanceOf[js.Any])
-    if (self != null) __obj.updateDynamic("self")(self.asInstanceOf[js.Any])
-    if (setDelta != null) __obj.updateDynamic("setDelta")(js.Any.fromFunction2((t0: /* iDeltaX */ js.UndefOr[scala.Double], t1: /* iDeltaY */ js.UndefOr[scala.Double]) => setDelta(t0, t1).runNow()))
-    if (setDragElId != null) __obj.updateDynamic("setDragElId")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => setDragElId(t0).runNow()))
-    if (setDragElPos != null) __obj.updateDynamic("setDragElPos")(js.Any.fromFunction2((t0: /* iPageX */ js.UndefOr[scala.Double], t1: /* iPageY */ js.UndefOr[scala.Double]) => setDragElPos(t0, t1).runNow()))
-    if (setHandleElId != null) __obj.updateDynamic("setHandleElId")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => setHandleElId(t0).runNow()))
-    if (setInitPosition != null) __obj.updateDynamic("setInitPosition")(js.Any.fromFunction2((t0: /* diffX */ js.UndefOr[scala.Double], t1: /* diffY */ js.UndefOr[scala.Double]) => setInitPosition(t0, t1).runNow()))
-    if (setOuterHandleElId != null) __obj.updateDynamic("setOuterHandleElId")(js.Any.fromFunction1((t0: /* id */ js.UndefOr[java.lang.String]) => setOuterHandleElId(t0).runNow()))
-    if (setPadding != null) __obj.updateDynamic("setPadding")(js.Any.fromFunction4((t0: /* iTop */ js.UndefOr[scala.Double], t1: /* iRight */ js.UndefOr[scala.Double], t2: /* iBot */ js.UndefOr[scala.Double], t3: /* iLeft */ js.UndefOr[scala.Double]) => setPadding(t0, t1, t2, t3).runNow()))
-    if (setXConstraint != null) __obj.updateDynamic("setXConstraint")(js.Any.fromFunction3((t0: /* iLeft */ js.UndefOr[scala.Double], t1: /* iRight */ js.UndefOr[scala.Double], t2: /* iTickSize */ js.UndefOr[scala.Double]) => setXConstraint(t0, t1, t2).runNow()))
-    if (setYConstraint != null) __obj.updateDynamic("setYConstraint")(js.Any.fromFunction3((t0: /* iUp */ js.UndefOr[scala.Double], t1: /* iDown */ js.UndefOr[scala.Double], t2: /* iTickSize */ js.UndefOr[scala.Double]) => setYConstraint(t0, t1, t2).runNow()))
-    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton.asInstanceOf[js.Any])
-    if (startDrag != null) __obj.updateDynamic("startDrag")(js.Any.fromFunction2((t0: /* x */ js.UndefOr[scala.Double], t1: /* y */ js.UndefOr[scala.Double]) => startDrag(t0, t1).runNow()))
-    if (statics != null) __obj.updateDynamic("statics")(statics.asInstanceOf[js.Any])
-    toString.foreach(p => __obj.updateDynamic("toString")(p.toJsFn))
-    unlock.foreach(p => __obj.updateDynamic("unlock")(p.toJsFn))
-    unreg.foreach(p => __obj.updateDynamic("unreg")(p.toJsFn))
-    if (uses != null) __obj.updateDynamic("uses")(uses.asInstanceOf[js.Any])
-    if (xTicks != null) __obj.updateDynamic("xTicks")(xTicks.asInstanceOf[js.Any])
-    if (yTicks != null) __obj.updateDynamic("yTicks")(yTicks.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDragSource]
   }
+  
+  extension [Self <: IDragSource](x: Self) {
+    
+    inline def setAfterDragDrop(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback
+    ): Self = StObject.set(x, "afterDragDrop", js.Any.fromFunction3((t0: /* target */ js.UndefOr[IDragDrop], t1: /* e */ js.UndefOr[Event], t2: /* id */ js.UndefOr[String]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setAfterDragDropUndefined: Self = StObject.set(x, "afterDragDrop", js.undefined)
+    
+    inline def setAfterDragEnter(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback
+    ): Self = StObject.set(x, "afterDragEnter", js.Any.fromFunction3((t0: /* target */ js.UndefOr[IDragDrop], t1: /* e */ js.UndefOr[Event], t2: /* id */ js.UndefOr[String]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setAfterDragEnterUndefined: Self = StObject.set(x, "afterDragEnter", js.undefined)
+    
+    inline def setAfterDragOut(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback
+    ): Self = StObject.set(x, "afterDragOut", js.Any.fromFunction3((t0: /* target */ js.UndefOr[IDragDrop], t1: /* e */ js.UndefOr[Event], t2: /* id */ js.UndefOr[String]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setAfterDragOutUndefined: Self = StObject.set(x, "afterDragOut", js.undefined)
+    
+    inline def setAfterDragOver(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback
+    ): Self = StObject.set(x, "afterDragOver", js.Any.fromFunction3((t0: /* target */ js.UndefOr[IDragDrop], t1: /* e */ js.UndefOr[Event], t2: /* id */ js.UndefOr[String]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setAfterDragOverUndefined: Self = StObject.set(x, "afterDragOver", js.undefined)
+    
+    inline def setAfterInvalidDrop(value: (/* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback): Self = StObject.set(x, "afterInvalidDrop", js.Any.fromFunction2((t0: /* e */ js.UndefOr[Event], t1: /* id */ js.UndefOr[String]) => (value(t0, t1)).runNow()))
+    
+    inline def setAfterInvalidDropUndefined: Self = StObject.set(x, "afterInvalidDrop", js.undefined)
+    
+    inline def setAfterValidDrop(
+      value: (/* target */ js.UndefOr[Any], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Callback
+    ): Self = StObject.set(x, "afterValidDrop", js.Any.fromFunction3((t0: /* target */ js.UndefOr[Any], t1: /* e */ js.UndefOr[Event], t2: /* id */ js.UndefOr[String]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setAfterValidDropUndefined: Self = StObject.set(x, "afterValidDrop", js.undefined)
+    
+    inline def setAlignElWithMouse(value: Callback): Self = StObject.set(x, "alignElWithMouse", value.toJsFn)
+    
+    inline def setAlignElWithMouseUndefined: Self = StObject.set(x, "alignElWithMouse", js.undefined)
+    
+    inline def setAnimRepair(value: Boolean): Self = StObject.set(x, "animRepair", value.asInstanceOf[js.Any])
+    
+    inline def setAnimRepairUndefined: Self = StObject.set(x, "animRepair", js.undefined)
+    
+    inline def setBeforeDragDrop(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
+    ): Self = StObject.set(x, "beforeDragDrop", js.Any.fromFunction3(value))
+    
+    inline def setBeforeDragDropUndefined: Self = StObject.set(x, "beforeDragDrop", js.undefined)
+    
+    inline def setBeforeDragEnter(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
+    ): Self = StObject.set(x, "beforeDragEnter", js.Any.fromFunction3(value))
+    
+    inline def setBeforeDragEnterUndefined: Self = StObject.set(x, "beforeDragEnter", js.undefined)
+    
+    inline def setBeforeDragOut(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
+    ): Self = StObject.set(x, "beforeDragOut", js.Any.fromFunction3(value))
+    
+    inline def setBeforeDragOutUndefined: Self = StObject.set(x, "beforeDragOut", js.undefined)
+    
+    inline def setBeforeDragOver(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
+    ): Self = StObject.set(x, "beforeDragOver", js.Any.fromFunction3(value))
+    
+    inline def setBeforeDragOverUndefined: Self = StObject.set(x, "beforeDragOver", js.undefined)
+    
+    inline def setBeforeInvalidDrop(
+      value: (/* target */ js.UndefOr[IDragDrop], /* e */ js.UndefOr[Event], /* id */ js.UndefOr[String]) => Boolean
+    ): Self = StObject.set(x, "beforeInvalidDrop", js.Any.fromFunction3(value))
+    
+    inline def setBeforeInvalidDropUndefined: Self = StObject.set(x, "beforeInvalidDrop", js.undefined)
+    
+    inline def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
+    
+    inline def setDdGroupUndefined: Self = StObject.set(x, "ddGroup", js.undefined)
+    
+    inline def setDragData(value: Any): Self = StObject.set(x, "dragData", value.asInstanceOf[js.Any])
+    
+    inline def setDragDataUndefined: Self = StObject.set(x, "dragData", js.undefined)
+    
+    inline def setDropAllowed(value: String): Self = StObject.set(x, "dropAllowed", value.asInstanceOf[js.Any])
+    
+    inline def setDropAllowedUndefined: Self = StObject.set(x, "dropAllowed", js.undefined)
+    
+    inline def setDropNotAllowed(value: String): Self = StObject.set(x, "dropNotAllowed", value.asInstanceOf[js.Any])
+    
+    inline def setDropNotAllowedUndefined: Self = StObject.set(x, "dropNotAllowed", js.undefined)
+    
+    inline def setGetDragData(value: /* e */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getDragData", js.Any.fromFunction1(value))
+    
+    inline def setGetDragDataUndefined: Self = StObject.set(x, "getDragData", js.undefined)
+    
+    inline def setGetProxy(value: CallbackTo[IStatusProxy]): Self = StObject.set(x, "getProxy", value.toJsFn)
+    
+    inline def setGetProxyUndefined: Self = StObject.set(x, "getProxy", js.undefined)
+    
+    inline def setHideProxy(value: Callback): Self = StObject.set(x, "hideProxy", value.toJsFn)
+    
+    inline def setHideProxyUndefined: Self = StObject.set(x, "hideProxy", js.undefined)
+    
+    inline def setOnBeforeDrag(value: (/* data */ js.UndefOr[Any], /* e */ js.UndefOr[Event]) => Boolean): Self = StObject.set(x, "onBeforeDrag", js.Any.fromFunction2(value))
+    
+    inline def setOnBeforeDragUndefined: Self = StObject.set(x, "onBeforeDrag", js.undefined)
+    
+    inline def setOnStartDrag(value: (/* x */ js.UndefOr[Double], /* y */ js.UndefOr[Double]) => Callback): Self = StObject.set(x, "onStartDrag", js.Any.fromFunction2((t0: /* x */ js.UndefOr[Double], t1: /* y */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnStartDragUndefined: Self = StObject.set(x, "onStartDrag", js.undefined)
+    
+    inline def setRepairHighlightColor(value: String): Self = StObject.set(x, "repairHighlightColor", value.asInstanceOf[js.Any])
+    
+    inline def setRepairHighlightColorUndefined: Self = StObject.set(x, "repairHighlightColor", js.undefined)
+  }
 }
-

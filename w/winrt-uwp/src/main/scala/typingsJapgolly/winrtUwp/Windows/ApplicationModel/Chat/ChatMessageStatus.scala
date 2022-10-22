@@ -1,116 +1,97 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageStatus extends js.Object
-
+sealed trait ChatMessageStatus extends StObject
 /** Specifies the current status of a chat message such as draft, sent, or received. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageStatus")
 @js.native
-object ChatMessageStatus extends js.Object {
+object ChatMessageStatus extends StObject {
+  
   /** Cancelled */
   @js.native
-  sealed trait cancelled extends ChatMessageStatus
+  sealed trait cancelled
+    extends StObject
+       with ChatMessageStatus
   
   /** Declined */
   @js.native
-  sealed trait declined extends ChatMessageStatus
+  sealed trait declined
+    extends StObject
+       with ChatMessageStatus
   
   /** Deleted */
   @js.native
-  sealed trait deleted extends ChatMessageStatus
+  sealed trait deleted
+    extends StObject
+       with ChatMessageStatus
   
   /** Draft */
   @js.native
-  sealed trait draft extends ChatMessageStatus
+  sealed trait draft
+    extends StObject
+       with ChatMessageStatus
   
   /** Recalled */
   @js.native
-  sealed trait recalled extends ChatMessageStatus
+  sealed trait recalled
+    extends StObject
+       with ChatMessageStatus
   
   /** Receive download failed */
   @js.native
-  sealed trait receiveDownloadFailed extends ChatMessageStatus
+  sealed trait receiveDownloadFailed
+    extends StObject
+       with ChatMessageStatus
   
   /** Received download needed */
   @js.native
-  sealed trait receiveDownloadNeeded extends ChatMessageStatus
+  sealed trait receiveDownloadNeeded
+    extends StObject
+       with ChatMessageStatus
   
   /** Receive downloading */
   @js.native
-  sealed trait receiveDownloading extends ChatMessageStatus
+  sealed trait receiveDownloading
+    extends StObject
+       with ChatMessageStatus
   
   /** Receive retry needed */
   @js.native
-  sealed trait receiveRetryNeeded extends ChatMessageStatus
+  sealed trait receiveRetryNeeded
+    extends StObject
+       with ChatMessageStatus
   
   /** Received */
   @js.native
-  sealed trait received extends ChatMessageStatus
+  sealed trait received
+    extends StObject
+       with ChatMessageStatus
   
   /** Send failed */
   @js.native
-  sealed trait sendFailed extends ChatMessageStatus
+  sealed trait sendFailed
+    extends StObject
+       with ChatMessageStatus
   
   /** Send retry needed */
   @js.native
-  sealed trait sendRetryNeeded extends ChatMessageStatus
+  sealed trait sendRetryNeeded
+    extends StObject
+       with ChatMessageStatus
   
   /** Sending */
   @js.native
-  sealed trait sending extends ChatMessageStatus
+  sealed trait sending
+    extends StObject
+       with ChatMessageStatus
   
   /** Sent */
   @js.native
-  sealed trait sent extends ChatMessageStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageStatus with Double] = js.native
-  /* 11 */ @js.native
-  object cancelled extends TopLevel[cancelled with Double]
-  
-  /* 10 */ @js.native
-  object declined extends TopLevel[declined with Double]
-  
-  /* 9 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 0 */ @js.native
-  object draft extends TopLevel[draft with Double]
-  
-  /* 12 */ @js.native
-  object recalled extends TopLevel[recalled with Double]
-  
-  /* 7 */ @js.native
-  object receiveDownloadFailed extends TopLevel[receiveDownloadFailed with Double]
-  
-  /* 6 */ @js.native
-  object receiveDownloadNeeded extends TopLevel[receiveDownloadNeeded with Double]
-  
-  /* 8 */ @js.native
-  object receiveDownloading extends TopLevel[receiveDownloading with Double]
-  
-  /* 13 */ @js.native
-  object receiveRetryNeeded extends TopLevel[receiveRetryNeeded with Double]
-  
-  /* 5 */ @js.native
-  object received extends TopLevel[received with Double]
-  
-  /* 4 */ @js.native
-  object sendFailed extends TopLevel[sendFailed with Double]
-  
-  /* 3 */ @js.native
-  object sendRetryNeeded extends TopLevel[sendRetryNeeded with Double]
-  
-  /* 1 */ @js.native
-  object sending extends TopLevel[sending with Double]
-  
-  /* 2 */ @js.native
-  object sent extends TopLevel[sent with Double]
-  
+  sealed trait sent
+    extends StObject
+       with ChatMessageStatus
 }
-

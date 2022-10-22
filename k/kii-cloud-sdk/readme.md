@@ -10,13 +10,13 @@ This is the Kii Cloud SDK
 | ------------------ | :-------------: |
 | Full name          | kii-cloud-sdk |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 1230 |
-| # stars            | 1 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 189.33333333333334 |
+| # stars            | 49.0 |
 
 ## Links
-- [Homepage](https://github.com/KiiCorp/KiiCloudSDK-JS#readme)
+- [Homepage](https://www.kii.com)
 - [Bugs](https://github.com/KiiCorp/KiiCloudSDK-JS/issues)
 - [Repository](https://github.com/KiiCorp/KiiCloudSDK-JS)
 - [Npm](https://www.npmjs.com/package/kii-cloud-sdk)

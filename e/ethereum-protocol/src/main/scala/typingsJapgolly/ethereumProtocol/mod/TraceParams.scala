@@ -1,27 +1,36 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TraceParams extends js.Object {
+trait TraceParams extends StObject {
+  
   var disableMemory: js.UndefOr[Boolean] = js.undefined
+  
   var disableStack: js.UndefOr[Boolean] = js.undefined
+  
   var disableStorage: js.UndefOr[Boolean] = js.undefined
 }
-
 object TraceParams {
-  @scala.inline
-  def apply(
-    disableMemory: js.UndefOr[Boolean] = js.undefined,
-    disableStack: js.UndefOr[Boolean] = js.undefined,
-    disableStorage: js.UndefOr[Boolean] = js.undefined
-  ): TraceParams = {
+  
+  inline def apply(): TraceParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disableMemory)) __obj.updateDynamic("disableMemory")(disableMemory.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStack)) __obj.updateDynamic("disableStack")(disableStack.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStorage)) __obj.updateDynamic("disableStorage")(disableStorage.asInstanceOf[js.Any])
     __obj.asInstanceOf[TraceParams]
   }
+  
+  extension [Self <: TraceParams](x: Self) {
+    
+    inline def setDisableMemory(value: Boolean): Self = StObject.set(x, "disableMemory", value.asInstanceOf[js.Any])
+    
+    inline def setDisableMemoryUndefined: Self = StObject.set(x, "disableMemory", js.undefined)
+    
+    inline def setDisableStack(value: Boolean): Self = StObject.set(x, "disableStack", value.asInstanceOf[js.Any])
+    
+    inline def setDisableStackUndefined: Self = StObject.set(x, "disableStack", js.undefined)
+    
+    inline def setDisableStorage(value: Boolean): Self = StObject.set(x, "disableStorage", value.asInstanceOf[js.Any])
+    
+    inline def setDisableStorageUndefined: Self = StObject.set(x, "disableStorage", js.undefined)
+  }
 }
-

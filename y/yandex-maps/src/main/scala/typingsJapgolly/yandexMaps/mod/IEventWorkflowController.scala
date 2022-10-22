@@ -1,33 +1,51 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEventWorkflowController extends IEventController {
+trait IEventWorkflowController
+  extends StObject
+     with IEventController {
+  
   var onAfterEventFiring: js.UndefOr[
-    js.Function3[/* events */ IEventManager, /* type */ String, /* event */ js.UndefOr[IEvent], Unit]
+    js.Function3[
+      /* events */ IEventManager[js.Object], 
+      /* type */ String, 
+      /* event */ js.UndefOr[IEvent[js.Object, js.Object]], 
+      Unit
+    ]
   ] = js.undefined
+  
   var onBeforeEventFiring: js.UndefOr[
-    js.Function3[/* events */ IEventManager, /* type */ String, /* event */ js.UndefOr[IEvent], Unit]
+    js.Function3[
+      /* events */ IEventManager[js.Object], 
+      /* type */ String, 
+      /* event */ js.UndefOr[IEvent[js.Object, js.Object]], 
+      Unit
+    ]
   ] = js.undefined
 }
-
 object IEventWorkflowController {
-  @scala.inline
-  def apply(
-    onAfterEventFiring: (/* events */ IEventManager, /* type */ String, /* event */ js.UndefOr[IEvent]) => Callback = null,
-    onBeforeEventFiring: (/* events */ IEventManager, /* type */ String, /* event */ js.UndefOr[IEvent]) => Callback = null,
-    onStartListening: (/* events */ IEventManager, /* type */ String) => Callback = null,
-    onStopListening: (/* events */ IEventManager, /* type */ String) => Callback = null
-  ): IEventWorkflowController = {
+  
+  inline def apply(): IEventWorkflowController = {
     val __obj = js.Dynamic.literal()
-    if (onAfterEventFiring != null) __obj.updateDynamic("onAfterEventFiring")(js.Any.fromFunction3((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String, t2: /* event */ js.UndefOr[typingsJapgolly.yandexMaps.mod.IEvent]) => onAfterEventFiring(t0, t1, t2).runNow()))
-    if (onBeforeEventFiring != null) __obj.updateDynamic("onBeforeEventFiring")(js.Any.fromFunction3((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String, t2: /* event */ js.UndefOr[typingsJapgolly.yandexMaps.mod.IEvent]) => onBeforeEventFiring(t0, t1, t2).runNow()))
-    if (onStartListening != null) __obj.updateDynamic("onStartListening")(js.Any.fromFunction2((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String) => onStartListening(t0, t1).runNow()))
-    if (onStopListening != null) __obj.updateDynamic("onStopListening")(js.Any.fromFunction2((t0: /* events */ typingsJapgolly.yandexMaps.mod.IEventManager, t1: /* type */ java.lang.String) => onStopListening(t0, t1).runNow()))
     __obj.asInstanceOf[IEventWorkflowController]
   }
+  
+  extension [Self <: IEventWorkflowController](x: Self) {
+    
+    inline def setOnAfterEventFiring(
+      value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Callback
+    ): Self = StObject.set(x, "onAfterEventFiring", js.Any.fromFunction3((t0: /* events */ IEventManager[js.Object], t1: /* type */ String, t2: /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnAfterEventFiringUndefined: Self = StObject.set(x, "onAfterEventFiring", js.undefined)
+    
+    inline def setOnBeforeEventFiring(
+      value: (/* events */ IEventManager[js.Object], /* type */ String, /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => Callback
+    ): Self = StObject.set(x, "onBeforeEventFiring", js.Any.fromFunction3((t0: /* events */ IEventManager[js.Object], t1: /* type */ String, t2: /* event */ js.UndefOr[IEvent[js.Object, js.Object]]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setOnBeforeEventFiringUndefined: Self = StObject.set(x, "onBeforeEventFiring", js.undefined)
+  }
 }
-

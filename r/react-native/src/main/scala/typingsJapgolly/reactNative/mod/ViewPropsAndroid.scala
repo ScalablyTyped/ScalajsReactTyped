@@ -1,16 +1,23 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewPropsAndroid extends js.Object {
+trait ViewPropsAndroid extends StObject {
+  
   /**
     * Views that are only used to layout their children or otherwise don't draw anything
     * may be automatically removed from the native hierarchy as an optimization.
     * Set this property to false to disable this optimization and ensure that this View exists in the native view hierarchy.
     */
   var collapsable: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
+    */
+  var focusable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether this view needs to rendered offscreen and composited with an alpha in order to preserve 100% correct colors and blending behavior.
     * The default (false) falls back to drawing the component and its children
@@ -26,6 +33,7 @@ trait ViewPropsAndroid extends js.Object {
     * saved in a hardware texture, and then composited onto the screen with an alpha each frame without having to switch rendering targets on the GPU.
     */
   var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether this view should render itself (and all of its children) into a single hardware texture on the GPU.
     *
@@ -35,19 +43,29 @@ trait ViewPropsAndroid extends js.Object {
     */
   var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
 }
-
 object ViewPropsAndroid {
-  @scala.inline
-  def apply(
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
-  ): ViewPropsAndroid = {
+  
+  inline def apply(): ViewPropsAndroid = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewPropsAndroid]
   }
+  
+  extension [Self <: ViewPropsAndroid](x: Self) {
+    
+    inline def setCollapsable(value: Boolean): Self = StObject.set(x, "collapsable", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsableUndefined: Self = StObject.set(x, "collapsable", js.undefined)
+    
+    inline def setFocusable(value: Boolean): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+    
+    inline def setFocusableUndefined: Self = StObject.set(x, "focusable", js.undefined)
+    
+    inline def setNeedsOffscreenAlphaCompositing(value: Boolean): Self = StObject.set(x, "needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    
+    inline def setNeedsOffscreenAlphaCompositingUndefined: Self = StObject.set(x, "needsOffscreenAlphaCompositing", js.undefined)
+    
+    inline def setRenderToHardwareTextureAndroid(value: Boolean): Self = StObject.set(x, "renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    
+    inline def setRenderToHardwareTextureAndroidUndefined: Self = StObject.set(x, "renderToHardwareTextureAndroid", js.undefined)
+  }
 }
-

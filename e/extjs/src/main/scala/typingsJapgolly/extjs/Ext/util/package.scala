@@ -1,13 +1,17 @@
-package typingsJapgolly.extjs.Ext
+package typingsJapgolly.extjs.Ext.util
 
+import typingsJapgolly.extjs.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object util {
-  type ICSS = typingsJapgolly.extjs.Ext.IBase
-  type ICookies = typingsJapgolly.extjs.Ext.IBase
-  type IInflector = typingsJapgolly.extjs.Ext.IBase
-  type IOffset = typingsJapgolly.extjs.Ext.IBase
-  type ITaskManager = typingsJapgolly.extjs.Ext.util.ITaskRunner
-}
+
+type ICSS = IBase
+
+type ICookies = IBase
+
+type IInflector = IBase
+
+type IOffset = IBase
+
+type ITaskManager = ITaskRunner

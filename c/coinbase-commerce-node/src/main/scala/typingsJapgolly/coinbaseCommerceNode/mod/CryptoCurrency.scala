@@ -1,8 +1,8 @@
 package typingsJapgolly.coinbaseCommerceNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Crypto currency.
@@ -14,20 +14,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.LTC
   - typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.USDC
 */
-trait CryptoCurrency extends js.Object
-
+trait CryptoCurrency extends StObject
 object CryptoCurrency {
-  @scala.inline
-  def BCH: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BCH = this.cast("BCH")
-  @scala.inline
-  def BTC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BTC = this.cast("BTC")
-  @scala.inline
-  def ETH: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ETH = this.cast("ETH")
-  @scala.inline
-  def LTC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.LTC = this.cast("LTC")
-  @scala.inline
-  def USDC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.USDC = this.cast("USDC")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def BCH: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BCH = "BCH".asInstanceOf[typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BCH]
+  
+  inline def BTC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BTC = "BTC".asInstanceOf[typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.BTC]
+  
+  inline def ETH: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ETH = "ETH".asInstanceOf[typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.ETH]
+  
+  inline def LTC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.LTC = "LTC".asInstanceOf[typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.LTC]
+  
+  inline def USDC: typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.USDC = "USDC".asInstanceOf[typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.USDC]
 }
-

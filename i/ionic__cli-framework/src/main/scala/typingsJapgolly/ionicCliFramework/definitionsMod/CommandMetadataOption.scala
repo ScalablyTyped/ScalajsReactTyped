@@ -1,39 +1,47 @@
 package typingsJapgolly.ionicCliFramework.definitionsMod
 
-import typingsJapgolly.ionicCliFramework.AnonValue
+import typingsJapgolly.ionicCliFramework.anon.Value
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommandMetadataOption extends Metadata {
-  var aliases: js.UndefOr[js.Array[String]] = js.undefined
+trait CommandMetadataOption
+  extends StObject
+     with Metadata {
+  
   var default: js.UndefOr[String | Boolean] = js.undefined
-  var spec: js.UndefOr[AnonValue] = js.undefined
+  
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var spec: js.UndefOr[Value] = js.undefined
+  
   var `type`: js.UndefOr[CommandOptionType] = js.undefined
 }
-
 object CommandMetadataOption {
-  @scala.inline
-  def apply(
-    name: String,
-    summary: String,
-    aliases: js.Array[String] = null,
-    default: String | Boolean = null,
-    description: String = null,
-    footnotes: js.Array[Footnote] = null,
-    groups: js.Array[String] = null,
-    spec: AnonValue = null,
-    `type`: CommandOptionType = null
-  ): CommandMetadataOption = {
+  
+  inline def apply(name: String, summary: String): CommandMetadataOption = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any])
-    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (footnotes != null) __obj.updateDynamic("footnotes")(footnotes.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandMetadataOption]
   }
+  
+  extension [Self <: CommandMetadataOption](x: Self) {
+    
+    inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+    
+    inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+    
+    inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value*))
+    
+    inline def setDefault(value: String | Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setSpec(value: Value): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    
+    inline def setType(value: CommandOptionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

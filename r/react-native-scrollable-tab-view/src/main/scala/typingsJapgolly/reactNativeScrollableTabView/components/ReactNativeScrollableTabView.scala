@@ -1,16 +1,13 @@
 package typingsJapgolly.reactNativeScrollableTabView.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.reactNative.mod.ScrollViewProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeScrollableTabView.TabBarProps
+import typingsJapgolly.reactNativeScrollableTabView.anon.TabBarProps
 import typingsJapgolly.reactNativeScrollableTabView.mod.ChangeTabProperties
 import typingsJapgolly.reactNativeScrollableTabView.mod.ScrollableTabViewProperties
 import typingsJapgolly.reactNativeScrollableTabView.mod.default
@@ -19,63 +16,63 @@ import typingsJapgolly.reactNativeScrollableTabView.reactNativeScrollableTabView
 import typingsJapgolly.reactNativeScrollableTabView.reactNativeScrollableTabViewStrings.overlayBottom
 import typingsJapgolly.reactNativeScrollableTabView.reactNativeScrollableTabViewStrings.overlayTop
 import typingsJapgolly.reactNativeScrollableTabView.reactNativeScrollableTabViewStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeScrollableTabView {
-  def apply(
-    contentProps: ScrollViewProps = null,
-    initialPage: Int | Double = null,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    onChangeTab: /* value */ ChangeTabProperties => Callback = null,
-    onScroll: /* value */ Double => Callback = null,
-    page: Int | Double = null,
-    prerenderingSiblingsNumber: Int | Double = null,
-    renderTabBar: (js.Function1[/* props */ TabBarProps, Element]) | `false` = null,
-    scrollWithoutAnimation: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    tabBarActiveTextColor: String = null,
-    tabBarBackgroundColor: String = null,
-    tabBarInactiveTextColor: String = null,
-    tabBarPosition: top | bottom | overlayTop | overlayBottom = null,
-    tabBarTextStyle: StyleProp[TextStyle] = null,
-    tabBarUnderlineStyle: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ScrollableTabViewProperties, default, Unit, ScrollableTabViewProperties] = {
-    val __obj = js.Dynamic.literal()
   
-      if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps.asInstanceOf[js.Any])
-    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(js.Any.fromFunction1((t0: /* value */ typingsJapgolly.reactNativeScrollableTabView.mod.ChangeTabProperties) => onChangeTab(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: /* value */ scala.Double) => onScroll(t0).runNow()))
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (prerenderingSiblingsNumber != null) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.asInstanceOf[js.Any])
-    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollWithoutAnimation)) __obj.updateDynamic("scrollWithoutAnimation")(scrollWithoutAnimation.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (tabBarActiveTextColor != null) __obj.updateDynamic("tabBarActiveTextColor")(tabBarActiveTextColor.asInstanceOf[js.Any])
-    if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor.asInstanceOf[js.Any])
-    if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor.asInstanceOf[js.Any])
-    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
-    if (tabBarTextStyle != null) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
-    if (tabBarUnderlineStyle != null) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeScrollableTabView.mod.ScrollableTabViewProperties, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeScrollableTabView.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeScrollableTabView.mod.ScrollableTabViewProperties])(children: _*)
-  }
   @JSImport("react-native-scrollable-tab-view", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def contentProps(value: ScrollViewProps): this.type = set("contentProps", value.asInstanceOf[js.Any])
+    
+    inline def initialPage(value: Double): this.type = set("initialPage", value.asInstanceOf[js.Any])
+    
+    inline def locked(value: Boolean): this.type = set("locked", value.asInstanceOf[js.Any])
+    
+    inline def onChangeTab(value: /* value */ ChangeTabProperties => Callback): this.type = set("onChangeTab", js.Any.fromFunction1((t0: /* value */ ChangeTabProperties) => value(t0).runNow()))
+    
+    inline def onScroll(value: /* value */ Double => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: /* value */ Double) => value(t0).runNow()))
+    
+    inline def page(value: Double): this.type = set("page", value.asInstanceOf[js.Any])
+    
+    inline def prerenderingSiblingsNumber(value: Double): this.type = set("prerenderingSiblingsNumber", value.asInstanceOf[js.Any])
+    
+    inline def renderTabBar(value: (js.Function1[/* props */ TabBarProps, Element]) | `false`): this.type = set("renderTabBar", value.asInstanceOf[js.Any])
+    
+    inline def renderTabBarFunction1(value: /* props */ TabBarProps => Element): this.type = set("renderTabBar", js.Any.fromFunction1(value))
+    
+    inline def scrollWithoutAnimation(value: Boolean): this.type = set("scrollWithoutAnimation", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def tabBarActiveTextColor(value: String): this.type = set("tabBarActiveTextColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarBackgroundColor(value: String): this.type = set("tabBarBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarInactiveTextColor(value: String): this.type = set("tabBarInactiveTextColor", value.asInstanceOf[js.Any])
+    
+    inline def tabBarPosition(value: top | bottom | overlayTop | overlayBottom): this.type = set("tabBarPosition", value.asInstanceOf[js.Any])
+    
+    inline def tabBarTextStyle(value: StyleProp[TextStyle]): this.type = set("tabBarTextStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarTextStyleNull: this.type = set("tabBarTextStyle", null)
+    
+    inline def tabBarUnderlineStyle(value: StyleProp[ViewStyle]): this.type = set("tabBarUnderlineStyle", value.asInstanceOf[js.Any])
+    
+    inline def tabBarUnderlineStyleNull: this.type = set("tabBarUnderlineStyle", null)
+  }
+  
+  implicit def make(companion: ReactNativeScrollableTabView.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ScrollableTabViewProperties): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,27 +1,32 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
 import typingsJapgolly.officeJs.Excel.FilterCriteria
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `filter.toJSON()`. */
-trait FilterData extends js.Object {
+trait FilterData extends StObject {
+  
   /**
+    * The currently applied filter on the given column.
     *
-    * The currently applied filter on the given column. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.2]
     */
   var criteria: js.UndefOr[FilterCriteria] = js.undefined
 }
-
 object FilterData {
-  @scala.inline
-  def apply(criteria: FilterCriteria = null): FilterData = {
+  
+  inline def apply(): FilterData = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterData]
   }
+  
+  extension [Self <: FilterData](x: Self) {
+    
+    inline def setCriteria(value: FilterCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+  }
 }
-

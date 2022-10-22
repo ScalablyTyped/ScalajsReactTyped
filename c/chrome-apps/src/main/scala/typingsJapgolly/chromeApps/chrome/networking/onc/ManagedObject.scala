@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.managed
   - typingsJapgolly.chromeApps.chromeAppsStrings.unmanaged
 */
-trait ManagedObject extends js.Object
-
+trait ManagedObject extends StObject
 object ManagedObject {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def managed: typingsJapgolly.chromeApps.chromeAppsStrings.managed = this.cast("managed")
-  @scala.inline
-  def unmanaged: typingsJapgolly.chromeApps.chromeAppsStrings.unmanaged = this.cast("unmanaged")
+  
+  inline def managed: typingsJapgolly.chromeApps.chromeAppsStrings.managed = "managed".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.managed]
+  
+  inline def unmanaged: typingsJapgolly.chromeApps.chromeAppsStrings.unmanaged = "unmanaged".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.unmanaged]
 }
-

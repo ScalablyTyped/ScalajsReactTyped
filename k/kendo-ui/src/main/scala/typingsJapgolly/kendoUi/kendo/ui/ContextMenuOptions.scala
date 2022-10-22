@@ -3,94 +3,169 @@ package typingsJapgolly.kendoUi.kendo.ui
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.JQuery
 import typingsJapgolly.kendoUi.kendo.data.HierarchicalDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContextMenuOptions extends js.Object {
+trait ContextMenuOptions extends StObject {
+  
   var activate: js.UndefOr[js.Function1[/* e */ ContextMenuActivateEvent, Unit]] = js.undefined
+  
   var alignToAnchor: js.UndefOr[Boolean] = js.undefined
+  
   var animation: js.UndefOr[Boolean | ContextMenuAnimation] = js.undefined
+  
   var appendTo: js.UndefOr[String | JQuery] = js.undefined
+  
   var close: js.UndefOr[js.Function1[/* e */ ContextMenuCloseEvent, Unit]] = js.undefined
+  
   var closeOnClick: js.UndefOr[Boolean] = js.undefined
+  
   var copyAnchorStyles: js.UndefOr[Boolean] = js.undefined
+  
   var dataContentField: js.UndefOr[String] = js.undefined
+  
   var dataImageUrlField: js.UndefOr[String] = js.undefined
-  var dataSource: js.UndefOr[js.Any | HierarchicalDataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | HierarchicalDataSource] = js.undefined
+  
   var dataSpriteCssClassField: js.UndefOr[String] = js.undefined
+  
   var dataTextField: js.UndefOr[String] = js.undefined
+  
   var dataUrlField: js.UndefOr[String] = js.undefined
+  
   var deactivate: js.UndefOr[js.Function1[/* e */ ContextMenuDeactivateEvent, Unit]] = js.undefined
+  
   var direction: js.UndefOr[String] = js.undefined
+  
   var filter: js.UndefOr[String] = js.undefined
+  
   var hoverDelay: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var open: js.UndefOr[js.Function1[/* e */ ContextMenuOpenEvent, Unit]] = js.undefined
+  
   var orientation: js.UndefOr[String] = js.undefined
+  
   var popupCollision: js.UndefOr[String] = js.undefined
+  
   var scrollable: js.UndefOr[Boolean | ContextMenuScrollable] = js.undefined
+  
   var select: js.UndefOr[js.Function1[/* e */ ContextMenuSelectEvent, Unit]] = js.undefined
+  
   var showOn: js.UndefOr[String] = js.undefined
+  
   var target: js.UndefOr[String | JQuery] = js.undefined
 }
-
 object ContextMenuOptions {
-  @scala.inline
-  def apply(
-    activate: /* e */ ContextMenuActivateEvent => Callback = null,
-    alignToAnchor: js.UndefOr[Boolean] = js.undefined,
-    animation: Boolean | ContextMenuAnimation = null,
-    appendTo: String | JQuery = null,
-    close: /* e */ ContextMenuCloseEvent => Callback = null,
-    closeOnClick: js.UndefOr[Boolean] = js.undefined,
-    copyAnchorStyles: js.UndefOr[Boolean] = js.undefined,
-    dataContentField: String = null,
-    dataImageUrlField: String = null,
-    dataSource: js.Any | HierarchicalDataSource = null,
-    dataSpriteCssClassField: String = null,
-    dataTextField: String = null,
-    dataUrlField: String = null,
-    deactivate: /* e */ ContextMenuDeactivateEvent => Callback = null,
-    direction: String = null,
-    filter: String = null,
-    hoverDelay: Int | Double = null,
-    name: String = null,
-    open: /* e */ ContextMenuOpenEvent => Callback = null,
-    orientation: String = null,
-    popupCollision: String = null,
-    scrollable: Boolean | ContextMenuScrollable = null,
-    select: /* e */ ContextMenuSelectEvent => Callback = null,
-    showOn: String = null,
-    target: String | JQuery = null
-  ): ContextMenuOptions = {
+  
+  inline def apply(): ContextMenuOptions = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ContextMenuActivateEvent) => activate(t0).runNow()))
-    if (!js.isUndefined(alignToAnchor)) __obj.updateDynamic("alignToAnchor")(alignToAnchor.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ContextMenuCloseEvent) => close(t0).runNow()))
-    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick.asInstanceOf[js.Any])
-    if (!js.isUndefined(copyAnchorStyles)) __obj.updateDynamic("copyAnchorStyles")(copyAnchorStyles.asInstanceOf[js.Any])
-    if (dataContentField != null) __obj.updateDynamic("dataContentField")(dataContentField.asInstanceOf[js.Any])
-    if (dataImageUrlField != null) __obj.updateDynamic("dataImageUrlField")(dataImageUrlField.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (dataSpriteCssClassField != null) __obj.updateDynamic("dataSpriteCssClassField")(dataSpriteCssClassField.asInstanceOf[js.Any])
-    if (dataTextField != null) __obj.updateDynamic("dataTextField")(dataTextField.asInstanceOf[js.Any])
-    if (dataUrlField != null) __obj.updateDynamic("dataUrlField")(dataUrlField.asInstanceOf[js.Any])
-    if (deactivate != null) __obj.updateDynamic("deactivate")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ContextMenuDeactivateEvent) => deactivate(t0).runNow()))
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (hoverDelay != null) __obj.updateDynamic("hoverDelay")(hoverDelay.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ContextMenuOpenEvent) => open(t0).runNow()))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (popupCollision != null) __obj.updateDynamic("popupCollision")(popupCollision.asInstanceOf[js.Any])
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (select != null) __obj.updateDynamic("select")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.ContextMenuSelectEvent) => select(t0).runNow()))
-    if (showOn != null) __obj.updateDynamic("showOn")(showOn.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextMenuOptions]
   }
+  
+  extension [Self <: ContextMenuOptions](x: Self) {
+    
+    inline def setActivate(value: /* e */ ContextMenuActivateEvent => Callback): Self = StObject.set(x, "activate", js.Any.fromFunction1((t0: /* e */ ContextMenuActivateEvent) => value(t0).runNow()))
+    
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    
+    inline def setAlignToAnchor(value: Boolean): Self = StObject.set(x, "alignToAnchor", value.asInstanceOf[js.Any])
+    
+    inline def setAlignToAnchorUndefined: Self = StObject.set(x, "alignToAnchor", js.undefined)
+    
+    inline def setAnimation(value: Boolean | ContextMenuAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setClose(value: /* e */ ContextMenuCloseEvent => Callback): Self = StObject.set(x, "close", js.Any.fromFunction1((t0: /* e */ ContextMenuCloseEvent) => value(t0).runNow()))
+    
+    inline def setCloseOnClick(value: Boolean): Self = StObject.set(x, "closeOnClick", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOnClickUndefined: Self = StObject.set(x, "closeOnClick", js.undefined)
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setCopyAnchorStyles(value: Boolean): Self = StObject.set(x, "copyAnchorStyles", value.asInstanceOf[js.Any])
+    
+    inline def setCopyAnchorStylesUndefined: Self = StObject.set(x, "copyAnchorStyles", js.undefined)
+    
+    inline def setDataContentField(value: String): Self = StObject.set(x, "dataContentField", value.asInstanceOf[js.Any])
+    
+    inline def setDataContentFieldUndefined: Self = StObject.set(x, "dataContentField", js.undefined)
+    
+    inline def setDataImageUrlField(value: String): Self = StObject.set(x, "dataImageUrlField", value.asInstanceOf[js.Any])
+    
+    inline def setDataImageUrlFieldUndefined: Self = StObject.set(x, "dataImageUrlField", js.undefined)
+    
+    inline def setDataSource(value: Any | HierarchicalDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSpriteCssClassField(value: String): Self = StObject.set(x, "dataSpriteCssClassField", value.asInstanceOf[js.Any])
+    
+    inline def setDataSpriteCssClassFieldUndefined: Self = StObject.set(x, "dataSpriteCssClassField", js.undefined)
+    
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    
+    inline def setDataUrlField(value: String): Self = StObject.set(x, "dataUrlField", value.asInstanceOf[js.Any])
+    
+    inline def setDataUrlFieldUndefined: Self = StObject.set(x, "dataUrlField", js.undefined)
+    
+    inline def setDeactivate(value: /* e */ ContextMenuDeactivateEvent => Callback): Self = StObject.set(x, "deactivate", js.Any.fromFunction1((t0: /* e */ ContextMenuDeactivateEvent) => value(t0).runNow()))
+    
+    inline def setDeactivateUndefined: Self = StObject.set(x, "deactivate", js.undefined)
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setHoverDelay(value: Double): Self = StObject.set(x, "hoverDelay", value.asInstanceOf[js.Any])
+    
+    inline def setHoverDelayUndefined: Self = StObject.set(x, "hoverDelay", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpen(value: /* e */ ContextMenuOpenEvent => Callback): Self = StObject.set(x, "open", js.Any.fromFunction1((t0: /* e */ ContextMenuOpenEvent) => value(t0).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPopupCollision(value: String): Self = StObject.set(x, "popupCollision", value.asInstanceOf[js.Any])
+    
+    inline def setPopupCollisionUndefined: Self = StObject.set(x, "popupCollision", js.undefined)
+    
+    inline def setScrollable(value: Boolean | ContextMenuScrollable): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSelect(value: /* e */ ContextMenuSelectEvent => Callback): Self = StObject.set(x, "select", js.Any.fromFunction1((t0: /* e */ ContextMenuSelectEvent) => value(t0).runNow()))
+    
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    
+    inline def setShowOn(value: String): Self = StObject.set(x, "showOn", value.asInstanceOf[js.Any])
+    
+    inline def setShowOnUndefined: Self = StObject.set(x, "showOn", js.undefined)
+    
+    inline def setTarget(value: String | JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+  }
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WSStatus extends js.Object
-
+sealed trait WSStatus extends StObject
 @JSImport("jsprintmanager", "JSPM.WSStatus")
 @js.native
-object WSStatus extends js.Object {
-  @js.native
-  sealed trait BlackListed extends WSStatus
-  
-  @js.native
-  sealed trait Closed extends WSStatus
-  
-  @js.native
-  sealed trait Open extends WSStatus
-  
-  @js.native
-  sealed trait WaitingForUserResponse extends WSStatus
+object WSStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WSStatus with Double] = js.native
-  /* 2 */ @js.native
-  object BlackListed extends TopLevel[BlackListed with Double]
+  def apply(value: Double): js.UndefOr[WSStatus & Double] = js.native
   
-  /* 1 */ @js.native
-  object Closed extends TopLevel[Closed with Double]
+  @js.native
+  sealed trait BlackListed
+    extends StObject
+       with WSStatus
+  /* 2 */ val BlackListed: typingsJapgolly.jsprintmanager.mod.JSPM.WSStatus.BlackListed & Double = js.native
   
-  /* 0 */ @js.native
-  object Open extends TopLevel[Open with Double]
+  @js.native
+  sealed trait Closed
+    extends StObject
+       with WSStatus
+  /* 1 */ val Closed: typingsJapgolly.jsprintmanager.mod.JSPM.WSStatus.Closed & Double = js.native
   
-  /* 3 */ @js.native
-  object WaitingForUserResponse extends TopLevel[WaitingForUserResponse with Double]
+  @js.native
+  sealed trait Open
+    extends StObject
+       with WSStatus
+  /* 0 */ val Open: typingsJapgolly.jsprintmanager.mod.JSPM.WSStatus.Open & Double = js.native
   
+  @js.native
+  sealed trait WaitingForUserResponse
+    extends StObject
+       with WSStatus
+  /* 3 */ val WaitingForUserResponse: typingsJapgolly.jsprintmanager.mod.JSPM.WSStatus.WaitingForUserResponse & Double = js.native
 }
-

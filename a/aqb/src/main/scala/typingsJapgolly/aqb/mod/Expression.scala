@@ -1,11 +1,14 @@
 package typingsJapgolly.aqb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Expression extends PartialStatement {
+trait Expression
+  extends StObject
+     with PartialStatement {
+  
   /**
     * Addition
     *
@@ -24,7 +27,8 @@ trait Expression extends PartialStatement {
     *
     * qb.ref('x').plus('y'): (x + y)
     */
-  def add(x: js.Any*): NAryOperation = js.native
+  def add(x: Any*): NAryOperation = js.native
+  
   /**
     * Boolean And
     *
@@ -41,7 +45,8 @@ trait Expression extends PartialStatement {
     *
     * qb.ref('x').and('y') =>(x && y)
     */
-  def and(x: js.Any*): NAryOperation = js.native
+  def and(x: Any*): NAryOperation = js.native
+  
   /**
     * Division
     *
@@ -57,26 +62,10 @@ trait Expression extends PartialStatement {
     * Examples
     * qb.ref('x').div('y'): (x / y)
     */
-  def div(x: js.Any*): NAryOperation = js.native
-  /**
-    * Equality
-    *
-    * Creates an equality comparison from the given values.
-    *
-    * qb.eq(a, b): (a == b)
-    * OR:
-    * qbValue.eq(b): (a == b)
-    *
-    * If the values are not already  values, they will be converted automatically.
-    *
-    * Examples
-    *
-    * qb.ref('x').eq('y'): (x == y)
-    *
-    *
-    */
-  def eq(x: js.Any): BinaryOperation = js.native
-  def eq(x: js.Any, y: js.Any): BinaryOperation = js.native
+  def div(x: Any*): NAryOperation = js.native
+  
+  def eq(x: Any, y: Any): BinaryOperation = js.native
+  
   /**
     * Property Access
     *
@@ -92,7 +81,8 @@ trait Expression extends PartialStatement {
     * qb.ref('x').get('y'): x[y]`
     *
     */
-  def get(value: js.Any): PropertyAccess = js.native
+  def get(value: Any): PropertyAccess = js.native
+  
   /**
     * Greater Than
     *
@@ -110,8 +100,9 @@ trait Expression extends PartialStatement {
     *
     *
     */
-  def gt(x: js.Any): BinaryOperation = js.native
-  def gt(x: js.Any, y: js.Any): BinaryOperation = js.native
+  def gt(x: Any): BinaryOperation = js.native
+  def gt(x: Any, y: Any): BinaryOperation = js.native
+  
   /**
     * Greater Than Or Equal To
     *
@@ -129,8 +120,9 @@ trait Expression extends PartialStatement {
     *
     *
     */
-  def gte(x: js.Any): BinaryOperation = js.native
-  def gte(x: js.Any, y: js.Any): BinaryOperation = js.native
+  def gte(x: Any): BinaryOperation = js.native
+  def gte(x: Any, y: Any): BinaryOperation = js.native
+  
   /**
     * Contains
     *
@@ -145,7 +137,8 @@ trait Expression extends PartialStatement {
     * Examples
     * qb.ref('x').in('y'): (x in y)
     */
-  def in(x: js.Any*): BinaryOperation = js.native
+  def in(x: Any*): BinaryOperation = js.native
+  
   /**
     * Less Than
     *
@@ -162,8 +155,9 @@ trait Expression extends PartialStatement {
     * qb.ref('x').lt('y'): (x < y)
     *
     */
-  def lt(x: js.Any): BinaryOperation = js.native
-  def lt(x: js.Any, y: js.Any): BinaryOperation = js.native
+  def lt(x: Any): BinaryOperation = js.native
+  def lt(x: Any, y: Any): BinaryOperation = js.native
+  
   /**
     * Less Than Or Equal To
     *
@@ -180,9 +174,11 @@ trait Expression extends PartialStatement {
     * qb.ref('x').lte('y'): (x <= y)
     *
     */
-  def lte(x: js.Any): BinaryOperation = js.native
-  def lte(x: js.Any, y: js.Any): BinaryOperation = js.native
-  def minus(x: js.Any*): NAryOperation = js.native
+  def lte(x: Any): BinaryOperation = js.native
+  def lte(x: Any, y: Any): BinaryOperation = js.native
+  
+  def minus(x: Any*): NAryOperation = js.native
+  
   /**
     * Modulus
     *
@@ -198,7 +194,8 @@ trait Expression extends PartialStatement {
     * Examples
     * qb.ref('x').mod('y'): (x % y)
     */
-  def mod(x: js.Any*): NAryOperation = js.native
+  def mod(x: Any*): NAryOperation = js.native
+  
   /**
     * Multiplication
     *
@@ -217,7 +214,8 @@ trait Expression extends PartialStatement {
     *
     * qb.ref('x').times('y'): (x * y)
     */
-  def mul(x: js.Any*): NAryOperation = js.native
+  def mul(x: Any*): NAryOperation = js.native
+  
   /**
     * Negative Value
     *
@@ -234,7 +232,8 @@ trait Expression extends PartialStatement {
     * qb.neg('x') => -(x)
     */
   def neg(): UnaryOperation = js.native
-  def neg(x: js.Any): UnaryOperation = js.native
+  def neg(x: Any): UnaryOperation = js.native
+  
   /**
     * Inequality
     *
@@ -251,8 +250,9 @@ trait Expression extends PartialStatement {
     * qb.ref('x').neq('y'): (x != y)
     *
     */
-  def neq(x: js.Any): BinaryOperation = js.native
-  def neq(x: js.Any, y: js.Any): BinaryOperation = js.native
+  def neq(x: Any): BinaryOperation = js.native
+  def neq(x: Any, y: Any): BinaryOperation = js.native
+  
   /**
     * Negation
     *
@@ -269,7 +269,8 @@ trait Expression extends PartialStatement {
     * qb.not('x') => !(x)
     */
   def not(): UnaryOperation = js.native
-  def not(x: js.Any): UnaryOperation = js.native
+  def not(x: Any): UnaryOperation = js.native
+  
   /**
     * Negated Contains
     *
@@ -285,7 +286,8 @@ trait Expression extends PartialStatement {
     *
     * qb.ref('x').notIn('y'): (x not in y)
     */
-  def notIn(x: js.Any*): BinaryOperation = js.native
+  def notIn(x: Any*): BinaryOperation = js.native
+  
   /**
     * Boolean Or
     *
@@ -299,8 +301,10 @@ trait Expression extends PartialStatement {
     *
     * This declare function can take any number of arguments.
     */
-  def or(x: js.Any*): NAryOperation = js.native
-  def plus(x: js.Any*): NAryOperation = js.native
+  def or(x: Any*): NAryOperation = js.native
+  
+  def plus(x: Any*): NAryOperation = js.native
+  
   /**
     * Range
     *
@@ -321,6 +325,7 @@ trait Expression extends PartialStatement {
     *
     */
   def range(value: Double*): RangeExpression = js.native
+  
   /**
     * Subtraction
     *
@@ -339,7 +344,8 @@ trait Expression extends PartialStatement {
     *
     * qb.ref('x').minus('y'): (x - y)
     */
-  def sub(x: js.Any*): NAryOperation = js.native
+  def sub(x: Any*): NAryOperation = js.native
+  
   /**
     * Ternary(if / else)
     *
@@ -357,7 +363,7 @@ trait Expression extends PartialStatement {
     * qb.ref('x').then('y').else('z'): (x ? y: z)
     *
     */
-  def `then`(value: js.Any): ThenRet = js.native
-  def times(x: js.Any*): NAryOperation = js.native
+  def `then`(value: Any): ThenRet = js.native
+  
+  def times(x: Any*): NAryOperation = js.native
 }
-

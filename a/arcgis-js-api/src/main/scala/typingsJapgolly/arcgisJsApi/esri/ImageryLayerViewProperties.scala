@@ -1,25 +1,31 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageryLayerViewProperties extends LayerViewProperties {
+trait ImageryLayerViewProperties
+  extends StObject
+     with LayerViewProperties {
+  
   /**
-    * An object that provides the user access to [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) and their values in the layer. See the object specifications table below for details about each property. This object is used as input in the [pixelFilter()](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#pixelFilter) function for filtering and processing each pixel in the block.
+    * An object that provides the user access to [pixels](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-PixelBlock.html#pixels) and their values in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-ImageryLayerView.html#pixelData)
     */
-  var pixelData: js.UndefOr[ImageryLayerViewPixelData] = js.undefined
+  var pixelData: js.UndefOr[PixelData] = js.undefined
 }
-
 object ImageryLayerViewProperties {
-  @scala.inline
-  def apply(pixelData: ImageryLayerViewPixelData = null, visible: js.UndefOr[Boolean] = js.undefined): ImageryLayerViewProperties = {
+  
+  inline def apply(): ImageryLayerViewProperties = {
     val __obj = js.Dynamic.literal()
-    if (pixelData != null) __obj.updateDynamic("pixelData")(pixelData.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageryLayerViewProperties]
   }
+  
+  extension [Self <: ImageryLayerViewProperties](x: Self) {
+    
+    inline def setPixelData(value: PixelData): Self = StObject.set(x, "pixelData", value.asInstanceOf[js.Any])
+    
+    inline def setPixelDataUndefined: Self = StObject.set(x, "pixelData", js.undefined)
+  }
 }
-

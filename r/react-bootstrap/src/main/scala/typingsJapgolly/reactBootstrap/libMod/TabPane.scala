@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.libMod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.tabPaneMod.TabPaneProps
+import typingsJapgolly.reactBootstrap.libTabPaneMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "TabPane")
 @js.native
-class TabPane ()
-  extends Component[TabPaneProps, js.Object, js.Any]
-
+open class TabPane () extends ^

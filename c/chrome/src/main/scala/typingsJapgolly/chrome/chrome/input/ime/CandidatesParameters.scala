@@ -1,22 +1,30 @@
 package typingsJapgolly.chrome.chrome.input.ime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CandidatesParameters extends js.Object {
+trait CandidatesParameters extends StObject {
+  
   /** List of candidates to show in the candidate window */
   var candidates: js.Array[CandidateTemplate]
+  
   /** ID of the context that owns the candidate window. */
   var contextID: Double
 }
-
 object CandidatesParameters {
-  @scala.inline
-  def apply(candidates: js.Array[CandidateTemplate], contextID: Double): CandidatesParameters = {
-    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
   
+  inline def apply(candidates: js.Array[CandidateTemplate], contextID: Double): CandidatesParameters = {
+    val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidatesParameters]
   }
+  
+  extension [Self <: CandidatesParameters](x: Self) {
+    
+    inline def setCandidates(value: js.Array[CandidateTemplate]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    
+    inline def setCandidatesVarargs(value: CandidateTemplate*): Self = StObject.set(x, "candidates", js.Array(value*))
+    
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,22 +1,30 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResolvedModule extends js.Object {
+trait ResolvedModule extends StObject {
+  
   /** True if `resolvedFileName` comes from `node_modules`. */
   var isExternalLibraryImport: js.UndefOr[Boolean] = js.undefined
+  
   /** Path of the file the module was resolved to. */
   var resolvedFileName: java.lang.String
 }
-
 object ResolvedModule {
-  @scala.inline
-  def apply(resolvedFileName: java.lang.String, isExternalLibraryImport: js.UndefOr[Boolean] = js.undefined): ResolvedModule = {
+  
+  inline def apply(resolvedFileName: java.lang.String): ResolvedModule = {
     val __obj = js.Dynamic.literal(resolvedFileName = resolvedFileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedModule]
   }
+  
+  extension [Self <: ResolvedModule](x: Self) {
+    
+    inline def setIsExternalLibraryImport(value: Boolean): Self = StObject.set(x, "isExternalLibraryImport", value.asInstanceOf[js.Any])
+    
+    inline def setIsExternalLibraryImportUndefined: Self = StObject.set(x, "isExternalLibraryImport", js.undefined)
+    
+    inline def setResolvedFileName(value: java.lang.String): Self = StObject.set(x, "resolvedFileName", value.asInstanceOf[js.Any])
+  }
 }
-

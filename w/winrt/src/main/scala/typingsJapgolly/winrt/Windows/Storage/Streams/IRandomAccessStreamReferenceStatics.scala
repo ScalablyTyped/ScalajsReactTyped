@@ -1,30 +1,36 @@
 package typingsJapgolly.winrt.Windows.Storage.Streams
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Uri
 import typingsJapgolly.winrt.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRandomAccessStreamReferenceStatics extends js.Object {
+trait IRandomAccessStreamReferenceStatics extends StObject {
+  
   def createFromFile(file: IStorageFile): RandomAccessStreamReference
+  
   def createFromStream(stream: IRandomAccessStream): RandomAccessStreamReference
+  
   def createFromUri(uri: Uri): RandomAccessStreamReference
 }
-
 object IRandomAccessStreamReferenceStatics {
-  @scala.inline
-  def apply(
-    createFromFile: IStorageFile => CallbackTo[RandomAccessStreamReference],
-    createFromStream: IRandomAccessStream => CallbackTo[RandomAccessStreamReference],
-    createFromUri: Uri => CallbackTo[RandomAccessStreamReference]
+  
+  inline def apply(
+    createFromFile: IStorageFile => RandomAccessStreamReference,
+    createFromStream: IRandomAccessStream => RandomAccessStreamReference,
+    createFromUri: Uri => RandomAccessStreamReference
   ): IRandomAccessStreamReferenceStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createFromFile")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.IStorageFile) => createFromFile(t0).runNow()))
-    __obj.updateDynamic("createFromStream")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IRandomAccessStream) => createFromStream(t0).runNow()))
-    __obj.updateDynamic("createFromUri")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Uri) => createFromUri(t0).runNow()))
+    val __obj = js.Dynamic.literal(createFromFile = js.Any.fromFunction1(createFromFile), createFromStream = js.Any.fromFunction1(createFromStream), createFromUri = js.Any.fromFunction1(createFromUri))
     __obj.asInstanceOf[IRandomAccessStreamReferenceStatics]
   }
+  
+  extension [Self <: IRandomAccessStreamReferenceStatics](x: Self) {
+    
+    inline def setCreateFromFile(value: IStorageFile => RandomAccessStreamReference): Self = StObject.set(x, "createFromFile", js.Any.fromFunction1(value))
+    
+    inline def setCreateFromStream(value: IRandomAccessStream => RandomAccessStreamReference): Self = StObject.set(x, "createFromStream", js.Any.fromFunction1(value))
+    
+    inline def setCreateFromUri(value: Uri => RandomAccessStreamReference): Self = StObject.set(x, "createFromUri", js.Any.fromFunction1(value))
+  }
 }
-

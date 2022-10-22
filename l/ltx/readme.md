@@ -1,7 +1,7 @@
 
 # Scala.js typings for ltx
 
-Typings are for version 2.8
+Typings are for version 3.0
 
 ## Library description:
 <xml for="JavaScript">
@@ -10,15 +10,15 @@ Typings are for version 2.8
 | ------------------ | :-------------: |
 | Full name          | ltx |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 85 |
-| # downloads        | 1130830 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 160986.33333333334 |
+| # stars            | 80.0 |
 
 ## Links
-- [Homepage](http://github.com/node-xmpp/ltx)
-- [Bugs](http://github.com/node-xmpp/ltx/issues)
-- [Repository](https://github.com/node-xmpp/ltx)
+- [Homepage](http://github.com/xmppjs/ltx)
+- [Bugs](http://github.com/xmppjs/ltx/issues)
+- [Repository](https://github.com/xmppjs/ltx)
 - [Npm](https://www.npmjs.com/package/ltx)
     
 

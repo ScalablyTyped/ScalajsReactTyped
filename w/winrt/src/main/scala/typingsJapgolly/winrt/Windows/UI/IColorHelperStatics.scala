@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IColorHelperStatics extends js.Object {
+trait IColorHelperStatics extends StObject {
+  
   def fromArgb(a: Double, r: Double, g: Double, b: Double): Color
 }
-
 object IColorHelperStatics {
-  @scala.inline
-  def apply(fromArgb: (Double, Double, Double, Double) => CallbackTo[Color]): IColorHelperStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("fromArgb")(js.Any.fromFunction4((t0: scala.Double, t1: scala.Double, t2: scala.Double, t3: scala.Double) => fromArgb(t0, t1, t2, t3).runNow()))
+  
+  inline def apply(fromArgb: (Double, Double, Double, Double) => Color): IColorHelperStatics = {
+    val __obj = js.Dynamic.literal(fromArgb = js.Any.fromFunction4(fromArgb))
     __obj.asInstanceOf[IColorHelperStatics]
   }
+  
+  extension [Self <: IColorHelperStatics](x: Self) {
+    
+    inline def setFromArgb(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "fromArgb", js.Any.fromFunction4(value))
+  }
 }
-

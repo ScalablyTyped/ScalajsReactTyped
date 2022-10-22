@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "DataTextureLoader")
 @js.native
-class DataTextureLoader ()
-  extends typingsJapgolly.three.dataTextureLoaderMod.DataTextureLoader {
-  def this(manager: typingsJapgolly.three.loadingManagerMod.LoadingManager) = this()
+open class DataTextureLoader ()
+  extends typingsJapgolly.three.srcThreeMod.DataTextureLoader {
+  def this(manager: typingsJapgolly.three.srcLoadersLoadingManagerMod.LoadingManager) = this()
 }
-

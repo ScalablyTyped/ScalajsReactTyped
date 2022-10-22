@@ -1,8 +1,8 @@
 package typingsJapgolly.googleMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.googleMaps.googleMapsStrings.ar
@@ -67,132 +67,128 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.googleMaps.googleMapsStrings.`zh-CN`
   - typingsJapgolly.googleMaps.googleMapsStrings.`zh-TW`
 */
-trait Language extends js.Object
-
+trait Language extends StObject
 object Language {
-  @scala.inline
-  def ar: typingsJapgolly.googleMaps.googleMapsStrings.ar = this.cast("ar")
-  @scala.inline
-  def be: typingsJapgolly.googleMaps.googleMapsStrings.be = this.cast("be")
-  @scala.inline
-  def bg: typingsJapgolly.googleMaps.googleMapsStrings.bg = this.cast("bg")
-  @scala.inline
-  def bn: typingsJapgolly.googleMaps.googleMapsStrings.bn = this.cast("bn")
-  @scala.inline
-  def ca: typingsJapgolly.googleMaps.googleMapsStrings.ca = this.cast("ca")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cs: typingsJapgolly.googleMaps.googleMapsStrings.cs = this.cast("cs")
-  @scala.inline
-  def da: typingsJapgolly.googleMaps.googleMapsStrings.da = this.cast("da")
-  @scala.inline
-  def de: typingsJapgolly.googleMaps.googleMapsStrings.de = this.cast("de")
-  @scala.inline
-  def el: typingsJapgolly.googleMaps.googleMapsStrings.el = this.cast("el")
-  @scala.inline
-  def en: typingsJapgolly.googleMaps.googleMapsStrings.en = this.cast("en")
-  @scala.inline
-  def `en-Au`: typingsJapgolly.googleMaps.googleMapsStrings.`en-Au` = this.cast("en-Au")
-  @scala.inline
-  def `en-GB`: typingsJapgolly.googleMaps.googleMapsStrings.`en-GB` = this.cast("en-GB")
-  @scala.inline
-  def es: typingsJapgolly.googleMaps.googleMapsStrings.es = this.cast("es")
-  @scala.inline
-  def eu: typingsJapgolly.googleMaps.googleMapsStrings.eu = this.cast("eu")
-  @scala.inline
-  def fa: typingsJapgolly.googleMaps.googleMapsStrings.fa = this.cast("fa")
-  @scala.inline
-  def fi: typingsJapgolly.googleMaps.googleMapsStrings.fi = this.cast("fi")
-  @scala.inline
-  def fil: typingsJapgolly.googleMaps.googleMapsStrings.fil = this.cast("fil")
-  @scala.inline
-  def fr: typingsJapgolly.googleMaps.googleMapsStrings.fr = this.cast("fr")
-  @scala.inline
-  def gl: typingsJapgolly.googleMaps.googleMapsStrings.gl = this.cast("gl")
-  @scala.inline
-  def gu: typingsJapgolly.googleMaps.googleMapsStrings.gu = this.cast("gu")
-  @scala.inline
-  def hi: typingsJapgolly.googleMaps.googleMapsStrings.hi = this.cast("hi")
-  @scala.inline
-  def hr: typingsJapgolly.googleMaps.googleMapsStrings.hr = this.cast("hr")
-  @scala.inline
-  def hu: typingsJapgolly.googleMaps.googleMapsStrings.hu = this.cast("hu")
-  @scala.inline
-  def id: typingsJapgolly.googleMaps.googleMapsStrings.id = this.cast("id")
-  @scala.inline
-  def it: typingsJapgolly.googleMaps.googleMapsStrings.it = this.cast("it")
-  @scala.inline
-  def iw: typingsJapgolly.googleMaps.googleMapsStrings.iw = this.cast("iw")
-  @scala.inline
-  def ja: typingsJapgolly.googleMaps.googleMapsStrings.ja = this.cast("ja")
-  @scala.inline
-  def kk: typingsJapgolly.googleMaps.googleMapsStrings.kk = this.cast("kk")
-  @scala.inline
-  def kn: typingsJapgolly.googleMaps.googleMapsStrings.kn = this.cast("kn")
-  @scala.inline
-  def ko: typingsJapgolly.googleMaps.googleMapsStrings.ko = this.cast("ko")
-  @scala.inline
-  def ky: typingsJapgolly.googleMaps.googleMapsStrings.ky = this.cast("ky")
-  @scala.inline
-  def lt: typingsJapgolly.googleMaps.googleMapsStrings.lt = this.cast("lt")
-  @scala.inline
-  def lv: typingsJapgolly.googleMaps.googleMapsStrings.lv = this.cast("lv")
-  @scala.inline
-  def mk: typingsJapgolly.googleMaps.googleMapsStrings.mk = this.cast("mk")
-  @scala.inline
-  def ml: typingsJapgolly.googleMaps.googleMapsStrings.ml = this.cast("ml")
-  @scala.inline
-  def mr: typingsJapgolly.googleMaps.googleMapsStrings.mr = this.cast("mr")
-  @scala.inline
-  def my: typingsJapgolly.googleMaps.googleMapsStrings.my = this.cast("my")
-  @scala.inline
-  def nl: typingsJapgolly.googleMaps.googleMapsStrings.nl = this.cast("nl")
-  @scala.inline
-  def no: typingsJapgolly.googleMaps.googleMapsStrings.no = this.cast("no")
-  @scala.inline
-  def pa: typingsJapgolly.googleMaps.googleMapsStrings.pa = this.cast("pa")
-  @scala.inline
-  def pl: typingsJapgolly.googleMaps.googleMapsStrings.pl = this.cast("pl")
-  @scala.inline
-  def pt: typingsJapgolly.googleMaps.googleMapsStrings.pt = this.cast("pt")
-  @scala.inline
-  def `pt-BR`: typingsJapgolly.googleMaps.googleMapsStrings.`pt-BR` = this.cast("pt-BR")
-  @scala.inline
-  def `pt-PT`: typingsJapgolly.googleMaps.googleMapsStrings.`pt-PT` = this.cast("pt-PT")
-  @scala.inline
-  def ro: typingsJapgolly.googleMaps.googleMapsStrings.ro = this.cast("ro")
-  @scala.inline
-  def ru: typingsJapgolly.googleMaps.googleMapsStrings.ru = this.cast("ru")
-  @scala.inline
-  def sk: typingsJapgolly.googleMaps.googleMapsStrings.sk = this.cast("sk")
-  @scala.inline
-  def sl: typingsJapgolly.googleMaps.googleMapsStrings.sl = this.cast("sl")
-  @scala.inline
-  def sq: typingsJapgolly.googleMaps.googleMapsStrings.sq = this.cast("sq")
-  @scala.inline
-  def sr: typingsJapgolly.googleMaps.googleMapsStrings.sr = this.cast("sr")
-  @scala.inline
-  def sv: typingsJapgolly.googleMaps.googleMapsStrings.sv = this.cast("sv")
-  @scala.inline
-  def ta: typingsJapgolly.googleMaps.googleMapsStrings.ta = this.cast("ta")
-  @scala.inline
-  def te: typingsJapgolly.googleMaps.googleMapsStrings.te = this.cast("te")
-  @scala.inline
-  def th: typingsJapgolly.googleMaps.googleMapsStrings.th = this.cast("th")
-  @scala.inline
-  def tl: typingsJapgolly.googleMaps.googleMapsStrings.tl = this.cast("tl")
-  @scala.inline
-  def tr: typingsJapgolly.googleMaps.googleMapsStrings.tr = this.cast("tr")
-  @scala.inline
-  def uk: typingsJapgolly.googleMaps.googleMapsStrings.uk = this.cast("uk")
-  @scala.inline
-  def uz: typingsJapgolly.googleMaps.googleMapsStrings.uz = this.cast("uz")
-  @scala.inline
-  def vi: typingsJapgolly.googleMaps.googleMapsStrings.vi = this.cast("vi")
-  @scala.inline
-  def `zh-CN`: typingsJapgolly.googleMaps.googleMapsStrings.`zh-CN` = this.cast("zh-CN")
-  @scala.inline
-  def `zh-TW`: typingsJapgolly.googleMaps.googleMapsStrings.`zh-TW` = this.cast("zh-TW")
+  
+  inline def ar: typingsJapgolly.googleMaps.googleMapsStrings.ar = "ar".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ar]
+  
+  inline def be: typingsJapgolly.googleMaps.googleMapsStrings.be = "be".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.be]
+  
+  inline def bg: typingsJapgolly.googleMaps.googleMapsStrings.bg = "bg".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.bg]
+  
+  inline def bn: typingsJapgolly.googleMaps.googleMapsStrings.bn = "bn".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.bn]
+  
+  inline def ca: typingsJapgolly.googleMaps.googleMapsStrings.ca = "ca".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ca]
+  
+  inline def cs: typingsJapgolly.googleMaps.googleMapsStrings.cs = "cs".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.cs]
+  
+  inline def da: typingsJapgolly.googleMaps.googleMapsStrings.da = "da".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.da]
+  
+  inline def de: typingsJapgolly.googleMaps.googleMapsStrings.de = "de".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.de]
+  
+  inline def el: typingsJapgolly.googleMaps.googleMapsStrings.el = "el".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.el]
+  
+  inline def en: typingsJapgolly.googleMaps.googleMapsStrings.en = "en".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.en]
+  
+  inline def `en-Au`: typingsJapgolly.googleMaps.googleMapsStrings.`en-Au` = "en-Au".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`en-Au`]
+  
+  inline def `en-GB`: typingsJapgolly.googleMaps.googleMapsStrings.`en-GB` = "en-GB".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`en-GB`]
+  
+  inline def es: typingsJapgolly.googleMaps.googleMapsStrings.es = "es".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.es]
+  
+  inline def eu: typingsJapgolly.googleMaps.googleMapsStrings.eu = "eu".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.eu]
+  
+  inline def fa: typingsJapgolly.googleMaps.googleMapsStrings.fa = "fa".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.fa]
+  
+  inline def fi: typingsJapgolly.googleMaps.googleMapsStrings.fi = "fi".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.fi]
+  
+  inline def fil: typingsJapgolly.googleMaps.googleMapsStrings.fil = "fil".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.fil]
+  
+  inline def fr: typingsJapgolly.googleMaps.googleMapsStrings.fr = "fr".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.fr]
+  
+  inline def gl: typingsJapgolly.googleMaps.googleMapsStrings.gl = "gl".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.gl]
+  
+  inline def gu: typingsJapgolly.googleMaps.googleMapsStrings.gu = "gu".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.gu]
+  
+  inline def hi: typingsJapgolly.googleMaps.googleMapsStrings.hi = "hi".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.hi]
+  
+  inline def hr: typingsJapgolly.googleMaps.googleMapsStrings.hr = "hr".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.hr]
+  
+  inline def hu: typingsJapgolly.googleMaps.googleMapsStrings.hu = "hu".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.hu]
+  
+  inline def id: typingsJapgolly.googleMaps.googleMapsStrings.id = "id".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.id]
+  
+  inline def it: typingsJapgolly.googleMaps.googleMapsStrings.it = "it".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.it]
+  
+  inline def iw: typingsJapgolly.googleMaps.googleMapsStrings.iw = "iw".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.iw]
+  
+  inline def ja: typingsJapgolly.googleMaps.googleMapsStrings.ja = "ja".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ja]
+  
+  inline def kk: typingsJapgolly.googleMaps.googleMapsStrings.kk = "kk".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.kk]
+  
+  inline def kn: typingsJapgolly.googleMaps.googleMapsStrings.kn = "kn".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.kn]
+  
+  inline def ko: typingsJapgolly.googleMaps.googleMapsStrings.ko = "ko".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ko]
+  
+  inline def ky: typingsJapgolly.googleMaps.googleMapsStrings.ky = "ky".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ky]
+  
+  inline def lt: typingsJapgolly.googleMaps.googleMapsStrings.lt = "lt".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.lt]
+  
+  inline def lv: typingsJapgolly.googleMaps.googleMapsStrings.lv = "lv".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.lv]
+  
+  inline def mk: typingsJapgolly.googleMaps.googleMapsStrings.mk = "mk".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.mk]
+  
+  inline def ml: typingsJapgolly.googleMaps.googleMapsStrings.ml = "ml".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ml]
+  
+  inline def mr: typingsJapgolly.googleMaps.googleMapsStrings.mr = "mr".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.mr]
+  
+  inline def my: typingsJapgolly.googleMaps.googleMapsStrings.my = "my".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.my]
+  
+  inline def nl: typingsJapgolly.googleMaps.googleMapsStrings.nl = "nl".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.nl]
+  
+  inline def no: typingsJapgolly.googleMaps.googleMapsStrings.no = "no".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.no]
+  
+  inline def pa: typingsJapgolly.googleMaps.googleMapsStrings.pa = "pa".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.pa]
+  
+  inline def pl: typingsJapgolly.googleMaps.googleMapsStrings.pl = "pl".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.pl]
+  
+  inline def pt: typingsJapgolly.googleMaps.googleMapsStrings.pt = "pt".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.pt]
+  
+  inline def `pt-BR`: typingsJapgolly.googleMaps.googleMapsStrings.`pt-BR` = "pt-BR".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`pt-BR`]
+  
+  inline def `pt-PT`: typingsJapgolly.googleMaps.googleMapsStrings.`pt-PT` = "pt-PT".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`pt-PT`]
+  
+  inline def ro: typingsJapgolly.googleMaps.googleMapsStrings.ro = "ro".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ro]
+  
+  inline def ru: typingsJapgolly.googleMaps.googleMapsStrings.ru = "ru".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ru]
+  
+  inline def sk: typingsJapgolly.googleMaps.googleMapsStrings.sk = "sk".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.sk]
+  
+  inline def sl: typingsJapgolly.googleMaps.googleMapsStrings.sl = "sl".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.sl]
+  
+  inline def sq: typingsJapgolly.googleMaps.googleMapsStrings.sq = "sq".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.sq]
+  
+  inline def sr: typingsJapgolly.googleMaps.googleMapsStrings.sr = "sr".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.sr]
+  
+  inline def sv: typingsJapgolly.googleMaps.googleMapsStrings.sv = "sv".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.sv]
+  
+  inline def ta: typingsJapgolly.googleMaps.googleMapsStrings.ta = "ta".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.ta]
+  
+  inline def te: typingsJapgolly.googleMaps.googleMapsStrings.te = "te".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.te]
+  
+  inline def th: typingsJapgolly.googleMaps.googleMapsStrings.th = "th".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.th]
+  
+  inline def tl: typingsJapgolly.googleMaps.googleMapsStrings.tl = "tl".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.tl]
+  
+  inline def tr: typingsJapgolly.googleMaps.googleMapsStrings.tr = "tr".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.tr]
+  
+  inline def uk: typingsJapgolly.googleMaps.googleMapsStrings.uk = "uk".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.uk]
+  
+  inline def uz: typingsJapgolly.googleMaps.googleMapsStrings.uz = "uz".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.uz]
+  
+  inline def vi: typingsJapgolly.googleMaps.googleMapsStrings.vi = "vi".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.vi]
+  
+  inline def `zh-CN`: typingsJapgolly.googleMaps.googleMapsStrings.`zh-CN` = "zh-CN".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`zh-CN`]
+  
+  inline def `zh-TW`: typingsJapgolly.googleMaps.googleMapsStrings.`zh-TW` = "zh-TW".asInstanceOf[typingsJapgolly.googleMaps.googleMapsStrings.`zh-TW`]
 }
-

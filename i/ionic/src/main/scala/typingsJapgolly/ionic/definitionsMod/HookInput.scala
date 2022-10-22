@@ -2,43 +2,35 @@ package typingsJapgolly.ionic.definitionsMod
 
 import typingsJapgolly.ionic.ionicStrings.buildColonafter
 import typingsJapgolly.ionic.ionicStrings.buildColonbefore
-import typingsJapgolly.ionic.ionicStrings.serveColonafter
-import typingsJapgolly.ionic.ionicStrings.serveColonbefore
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.definitionsMod.BuildHookInput
   - typingsJapgolly.ionic.definitionsMod.ServeBeforeHookInput
   - typingsJapgolly.ionic.definitionsMod.ServeAfterHookInput
 */
-trait HookInput extends js.Object
-
+trait HookInput extends StObject
 object HookInput {
-  @scala.inline
-  def BuildHookInput(
+  
+  inline def BuildHookInput(
     build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions,
     name: buildColonbefore | buildColonafter
-  ): HookInput = {
+  ): typingsJapgolly.ionic.definitionsMod.BuildHookInput = {
     val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-  
-    __obj.asInstanceOf[HookInput]
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.BuildHookInput]
   }
-  @scala.inline
-  def ServeBeforeHookInput(name: serveColonbefore, serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): HookInput = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[HookInput]
+  inline def ServeAfterHookInput(
+    serve: (AngularServeOptions & ServeDetails) | (IonicAngularServeOptions & ServeDetails) | (Ionic1ServeOptions & ServeDetails)
+  ): typingsJapgolly.ionic.definitionsMod.ServeAfterHookInput = {
+    val __obj = js.Dynamic.literal(name = "serve:after", serve = serve.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.ServeAfterHookInput]
   }
-  @scala.inline
-  def ServeAfterHookInput(
-    name: serveColonafter,
-    serve: (AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions) with ServeDetails
-  ): HookInput = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serve = serve.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[HookInput]
+  inline def ServeBeforeHookInput(serve: AngularServeOptions | IonicAngularServeOptions | Ionic1ServeOptions): typingsJapgolly.ionic.definitionsMod.ServeBeforeHookInput = {
+    val __obj = js.Dynamic.literal(name = "serve:before", serve = serve.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.ionic.definitionsMod.ServeBeforeHookInput]
   }
 }
-

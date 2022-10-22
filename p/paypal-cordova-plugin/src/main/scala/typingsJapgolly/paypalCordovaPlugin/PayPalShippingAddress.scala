@@ -1,57 +1,75 @@
 package typingsJapgolly.paypalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PayPalShippingAddress")
-@js.native
-class PayPalShippingAddress protected () extends js.Object {
-  /**
-    * @param recipientName Name of the recipient at this address. 50 characters max.
-    * @param line1 Line 1 of the address (e.g., Number, street, etc). 100 characters max.
-    * @param line2 Line 2 of the address (e.g., Suite, apt #, etc). 100 characters max. Optional.
-    * @param city City name. 50 characters max.
-    * @param state 2-letter code for US states, and the equivalent for other countries. 100 characters max. Required in certain countries.
-    * @param postalCode ZIP code or equivalent is usually required for countries that have them. 20 characters max. Required in certain countries.
-    * @param countryCode 2-letter country code. 2 characters max.
-    */
-  def this(
-    recipientName: String,
-    line1: String,
-    line2: String,
-    city: String,
-    state: String,
-    postalCode: String,
-    countryCode: String
-  ) = this()
+trait PayPalShippingAddress extends StObject {
+  
   /**
     * City name. 50 characters max.
     */
-  var city: String = js.native
+  var city: String
+  
   /**
     * 2-letter country code. 2 characters max.
     */
-  var countryCode: String = js.native
+  var countryCode: String
+  
   /**
     * Line 1 of the address (e.g., Number, street, etc). 100 characters max.
     */
-  var line1: String = js.native
+  var line1: String
+  
   /**
     * Line 2 of the address (e.g., Suite, apt #, etc). 100 characters max. Optional.
     */
-  var line2: String = js.native
+  var line2: String
+  
   /**
     * ZIP code or equivalent is usually required for countries that have them. 20 characters max. Required in certain countries.
     */
-  var postalCode: String = js.native
+  var postalCode: String
+  
   /**
     * Name of the recipient at this address. 50 characters max.
     */
-  var recipientName: String = js.native
+  var recipientName: String
+  
   /**
     * 2-letter code for US states, and the equivalent for other countries. 100 characters max. Required in certain countries.
     */
-  var state: String = js.native
+  var state: String
 }
-
+object PayPalShippingAddress {
+  
+  inline def apply(
+    city: String,
+    countryCode: String,
+    line1: String,
+    line2: String,
+    postalCode: String,
+    recipientName: String,
+    state: String
+  ): PayPalShippingAddress = {
+    val __obj = js.Dynamic.literal(city = city.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], line1 = line1.asInstanceOf[js.Any], line2 = line2.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any], recipientName = recipientName.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PayPalShippingAddress]
+  }
+  
+  extension [Self <: PayPalShippingAddress](x: Self) {
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    
+    inline def setLine1(value: String): Self = StObject.set(x, "line1", value.asInstanceOf[js.Any])
+    
+    inline def setLine2(value: String): Self = StObject.set(x, "line2", value.asInstanceOf[js.Any])
+    
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    
+    inline def setRecipientName(value: String): Self = StObject.set(x, "recipientName", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+  }
+}

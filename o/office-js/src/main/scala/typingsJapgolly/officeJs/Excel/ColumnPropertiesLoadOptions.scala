@@ -1,9 +1,9 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.CellPropertiesFormatLoadOAutoIndent
+import typingsJapgolly.officeJs.anon.CellPropertiesFormatLoadOAutoIndent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
+trait ColumnPropertiesLoadOptions
+  extends StObject
+     with CellPropertiesLoadOptions {
+  
   /**
     *
     * Specifies whether to load on the `columnHidden` property.
@@ -19,6 +22,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   var columnHidden: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Specifies whether to load on the `columnIndex` property.
@@ -26,6 +30,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   var columnIndex: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Specifies whether to load on the `format` property.
@@ -35,29 +40,25 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
   @JSName("format")
   var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOAutoIndent] = js.undefined
 }
-
 object ColumnPropertiesLoadOptions {
-  @scala.inline
-  def apply(
-    address: js.UndefOr[Boolean] = js.undefined,
-    addressLocal: js.UndefOr[Boolean] = js.undefined,
-    columnHidden: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: js.UndefOr[Boolean] = js.undefined,
-    format: CellPropertiesFormatLoadOAutoIndent = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    hyperlink: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined
-  ): ColumnPropertiesLoadOptions = {
+  
+  inline def apply(): ColumnPropertiesLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(columnIndex)) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnPropertiesLoadOptions]
   }
+  
+  extension [Self <: ColumnPropertiesLoadOptions](x: Self) {
+    
+    inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
+    
+    inline def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
+    
+    inline def setColumnIndex(value: Boolean): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setFormat(value: CellPropertiesFormatLoadOAutoIndent): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+  }
 }
-

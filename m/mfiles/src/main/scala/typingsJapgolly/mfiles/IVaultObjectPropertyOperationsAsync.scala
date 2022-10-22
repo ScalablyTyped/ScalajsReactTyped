@@ -2,12 +2,13 @@ package typingsJapgolly.mfiles
 
 import typingsJapgolly.mfiles.MFiles.MFACLEnforcingMode
 import typingsJapgolly.mfiles.MFiles.MFMetadataSyncFormat
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IVaultObjectPropertyOperationsAsync extends js.Object {
+trait IVaultObjectPropertyOperationsAsync extends StObject {
+  
   def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: Boolean): Unit = js.native
   def ApproveOrRejectAssignment(
     ObjVer: IObjVer,
@@ -18,15 +19,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     Approve: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignment(
     ObjVer: IObjVer,
     Approve: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignment(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def ApproveOrRejectAssignmentByUser(ObjVer: IObjVer, Approve: Boolean, UserID: Double): Unit = js.native
   def ApproveOrRejectAssignmentByUser(
     ObjVer: IObjVer,
@@ -39,16 +68,48 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     Approve: Boolean,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def ApproveOrRejectAssignmentByUser(
     ObjVer: IObjVer,
     Approve: Boolean,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def ApproveOrRejectAssignmentByUser(
+    ObjVer: IObjVer,
+    Approve: Boolean,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def CreatePropertiesFromFileInformation(FileInformation: IFileInformation): Unit = js.native
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
@@ -57,14 +118,38 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def CreatePropertiesFromFileInformation(
     FileInformation: IFileInformation,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def CreatePropertiesFromFileInformation(
+    FileInformation: IFileInformation,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GenerateAutomaticPermissionsFromPropertyValues(PropertyValues: IPropertyValues): Unit = js.native
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
@@ -73,14 +158,38 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IAccessControlList, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GenerateAutomaticPermissionsFromPropertyValues(
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IAccessControlList, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IAccessControlList, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GenerateAutomaticPermissionsFromPropertyValues(
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetProperties(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
   def GetProperties(
     ObjVer: IObjVer,
@@ -91,15 +200,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetProperties(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperties(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesAsXML(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
   def GetPropertiesAsXML(
     ObjVer: IObjVer,
@@ -110,15 +247,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesAsXML(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ String, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ String, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesAsXML(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesForDisplay(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
   def GetPropertiesForDisplay(
     ObjVer: IObjVer,
@@ -129,15 +294,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesForDisplay(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValuesForDisplay, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForDisplay(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesForMetadataSync(ObjVer: IObjVer, Format: MFMetadataSyncFormat): Unit = js.native
   def GetPropertiesForMetadataSync(
     ObjVer: IObjVer,
@@ -148,15 +341,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     Format: MFMetadataSyncFormat,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesForMetadataSync(
     ObjVer: IObjVer,
     Format: MFMetadataSyncFormat,
     successCallback: js.Function1[/* result */ INamedValues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: js.Function1[/* result */ INamedValues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesForMetadataSync(
+    ObjVer: IObjVer,
+    Format: MFMetadataSyncFormat,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesOfMultipleObjects(ObjectVersions: IObjVers): Unit = js.native
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
@@ -165,14 +386,38 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: js.Function1[/* result */ IPropertyValuesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesWithIconClues(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
   def GetPropertiesWithIconClues(
     ObjVer: IObjVer,
@@ -183,15 +428,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesWithIconClues(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IPropertyValuesWithIconClues, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconClues(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetPropertiesWithIconCluesOfMultipleObjects(ObjectVersions: IObjVers): Unit = js.native
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
@@ -200,14 +473,38 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetPropertiesWithIconCluesOfMultipleObjects(
     ObjectVersions: IObjVers,
     successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: js.Function1[/* result */ IPropertyValuesWithIconCluesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetPropertiesWithIconCluesOfMultipleObjects(
+    ObjectVersions: IObjVers,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetProperty(ObjVer: IObjVer, Property: Double): Unit = js.native
   def GetProperty(
     ObjVer: IObjVer,
@@ -218,41 +515,107 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IPropertyValue, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetProperty(
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IPropertyValue, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: js.Function1[/* result */ IPropertyValue, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def GetVersionComment(ObjVer: IObjVer): Unit = js.native
   def GetVersionComment(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IVersionComment, Unit]): Unit = js.native
   def GetVersionComment(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComment, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVersionComment(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComment, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IVersionComment, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetVersionComment(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionComment(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
+  
   def GetVersionCommentHistory(ObjVer: IObjVer): Unit = js.native
   def GetVersionCommentHistory(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IVersionComments, Unit]): Unit = js.native
   def GetVersionCommentHistory(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComments, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetVersionCommentHistory(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IVersionComments, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IVersionComments, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetVersionCommentHistory(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
+  
   def GetWorkflowState(ObjVer: IObjVer, UpdateFromServer: Boolean): Unit = js.native
   def GetWorkflowState(
     ObjVer: IObjVer,
@@ -263,28 +626,75 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def GetWorkflowState(
     ObjVer: IObjVer,
     UpdateFromServer: Boolean,
     successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: js.Function1[/* result */ IObjectVersionWorkflowState, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def GetWorkflowState(
+    ObjVer: IObjVer,
+    UpdateFromServer: Boolean,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def MarkAssignmentComplete(ObjVer: IObjVer): Unit = js.native
   def MarkAssignmentComplete(ObjVer: IObjVer, successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]): Unit = js.native
   def MarkAssignmentComplete(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MarkAssignmentComplete(
     ObjVer: IObjVer,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(
+    ObjVer: IObjVer,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentComplete(ObjVer: IObjVer, successCallback: Unit, errorCallback: Unit, finallyCallback: js.Function0[Unit]): Unit = js.native
+  
   def MarkAssignmentCompleteByUser(ObjVer: IObjVer, UserID: Double): Unit = js.native
   def MarkAssignmentCompleteByUser(
     ObjVer: IObjVer,
@@ -295,15 +705,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def MarkAssignmentCompleteByUser(
     ObjVer: IObjVer,
     UserID: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def MarkAssignmentCompleteByUser(
+    ObjVer: IObjVer,
+    UserID: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def RemoveProperty(ObjVer: IObjVer, Property: Double): Unit = js.native
   def RemoveProperty(
     ObjVer: IObjVer,
@@ -314,15 +752,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def RemoveProperty(
     ObjVer: IObjVer,
     Property: Double,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def RemoveProperty(
+    ObjVer: IObjVer,
+    Property: Double,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetAllProperties(ObjVer: IObjVer, AllowModifyingCheckedInObject: Boolean, PropertyValues: IPropertyValues): Unit = js.native
   def SetAllProperties(
     ObjVer: IObjVer,
@@ -335,16 +801,48 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     AllowModifyingCheckedInObject: Boolean,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetAllProperties(
     ObjVer: IObjVer,
     AllowModifyingCheckedInObject: Boolean,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllProperties(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetAllPropertiesWithPermissions(
     ObjVer: IObjVer,
     AllowModifyingCheckedInObject: Boolean,
@@ -367,7 +865,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissions(
     ObjVer: IObjVer,
@@ -376,16 +874,56 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetAllPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
     AllowModifyingCheckedInObject: Boolean,
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): Unit = js.native
   def SetAllPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
@@ -393,7 +931,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissionsEx(
@@ -402,9 +940,9 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetAllPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
@@ -412,11 +950,55 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetAllPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    AllowModifyingCheckedInObject: Boolean,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetCreationInfoAdmin(
     ObjVer: IObjVer,
     UpdateCreatedBy: Boolean,
@@ -439,7 +1021,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     UpdateCreated: Boolean,
     CreatedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetCreationInfoAdmin(
     ObjVer: IObjVer,
@@ -448,9 +1030,49 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     UpdateCreated: Boolean,
     CreatedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetCreationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateCreatedBy: Boolean,
+    CreatedBy: ITypedValue,
+    UpdateCreated: Boolean,
+    CreatedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetLastModificationInfoAdmin(
     ObjVer: IObjVer,
     UpdateLastModifiedBy: Boolean,
@@ -473,7 +1095,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     UpdateLastModified: Boolean,
     LastModifiedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetLastModificationInfoAdmin(
     ObjVer: IObjVer,
@@ -482,9 +1104,49 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     UpdateLastModified: Boolean,
     LastModifiedUtc: ITypedValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetLastModificationInfoAdmin(
+    ObjVer: IObjVer,
+    UpdateLastModifiedBy: Boolean,
+    LastModifiedBy: ITypedValue,
+    UpdateLastModified: Boolean,
+    LastModifiedUtc: ITypedValue,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetProperties(ObjVer: IObjVer, PropertyValues: IPropertyValues): Unit = js.native
   def SetProperties(
     ObjVer: IObjVer,
@@ -495,15 +1157,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetProperties(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperties(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetPropertiesOfMultipleObjects(SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects): Unit = js.native
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
@@ -512,14 +1202,38 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetPropertiesOfMultipleObjects(
     SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
     successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: js.Function1[/* result */ IObjectVersionAndPropertiesOfMultipleObjects, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesOfMultipleObjects(
+    SetPropertiesParamsOfObjects: ISetPropertiesParamsOfMultipleObjects,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetPropertiesWithPermissions(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
@@ -539,7 +1253,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissions(
     ObjVer: IObjVer,
@@ -547,22 +1261,58 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissions(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): Unit = js.native
   def SetPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissionsEx(
@@ -570,20 +1320,60 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetPropertiesWithPermissionsEx(
     ObjVer: IObjVer,
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     ACLProvided: IAccessControlList,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetPropertiesWithPermissionsEx(
+    ObjVer: IObjVer,
+    PropertyValues: IPropertyValues,
+    ACLEnforcingMode: MFACLEnforcingMode,
+    ACLProvided: IAccessControlList,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetProperty(ObjVer: IObjVer, PropertyValue: IPropertyValue): Unit = js.native
   def SetProperty(
     ObjVer: IObjVer,
@@ -594,15 +1384,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     PropertyValue: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetProperty(
     ObjVer: IObjVer,
     PropertyValue: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetProperty(
+    ObjVer: IObjVer,
+    PropertyValue: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetVersionComment(ObjVer: IObjVer, VersionComment: IPropertyValue): Unit = js.native
   def SetVersionComment(
     ObjVer: IObjVer,
@@ -613,15 +1431,43 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     VersionComment: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetVersionComment(
     ObjVer: IObjVer,
     VersionComment: IPropertyValue,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetVersionComment(
+    ObjVer: IObjVer,
+    VersionComment: IPropertyValue,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetWorkflowState(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState): Unit = js.native
   def SetWorkflowState(
     ObjVer: IObjVer,
@@ -632,37 +1478,97 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetWorkflowState(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
-  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: js.Any): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowState(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
+  def SetWorkflowStateEx(ObjVer: IObjVer, WorkflowState: IObjectVersionWorkflowState, ElectronicSignature: Any): Unit = js.native
   def SetWorkflowStateEx(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowStateEx(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateEx(
     ObjVer: IObjVer,
     WorkflowState: IObjectVersionWorkflowState,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateEx(
+    ObjVer: IObjVer,
+    WorkflowState: IObjectVersionWorkflowState,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetWorkflowStateTransition(ObjVer: IObjVer, Workflow: Double, lStateTransition: Double, lVersionComment: String): Unit = js.native
   def SetWorkflowStateTransition(
     ObjVer: IObjVer,
@@ -677,7 +1583,7 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     lStateTransition: Double,
     lVersionComment: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransition(
     ObjVer: IObjVer,
@@ -685,22 +1591,58 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     lStateTransition: Double,
     lVersionComment: String,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransition(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    lStateTransition: Double,
+    lVersionComment: String,
+    successCallback: Unit,
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  
   def SetWorkflowStateTransitionEx(
     ObjVer: IObjVer,
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any
+    ElectronicSignature: Any
   ): Unit = js.native
   def SetWorkflowStateTransitionEx(
     ObjVer: IObjVer,
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransitionEx(
@@ -708,19 +1650,57 @@ trait IVaultObjectPropertyOperationsAsync extends js.Object {
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit]
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
   ): Unit = js.native
   def SetWorkflowStateTransitionEx(
     ObjVer: IObjVer,
     Workflow: Double,
     StateTransition: Double,
     VersionComment: String,
-    ElectronicSignature: js.Any,
+    ElectronicSignature: Any,
     successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
-    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ js.Any, Unit],
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: Any,
+    successCallback: js.Function1[/* result */ IObjectVersionAndProperties, Unit],
+    errorCallback: Unit,
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: js.Function3[/* shorterror */ String, /* longerror */ String, /* errorobj */ Any, Unit],
+    finallyCallback: js.Function0[Unit]
+  ): Unit = js.native
+  def SetWorkflowStateTransitionEx(
+    ObjVer: IObjVer,
+    Workflow: Double,
+    StateTransition: Double,
+    VersionComment: String,
+    ElectronicSignature: Any,
+    successCallback: Unit,
+    errorCallback: Unit,
     finallyCallback: js.Function0[Unit]
   ): Unit = js.native
 }
-

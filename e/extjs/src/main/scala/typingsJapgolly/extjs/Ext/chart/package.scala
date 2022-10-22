@@ -1,12 +1,16 @@
-package typingsJapgolly.extjs.Ext
+package typingsJapgolly.extjs.Ext.chart
 
+import typingsJapgolly.extjs.Ext.IBase
+import typingsJapgolly.extjs.Ext.draw.IComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object chart {
-  type ICallout = typingsJapgolly.extjs.Ext.IBase
-  type IShape = typingsJapgolly.extjs.Ext.IBase
-  type ITip = typingsJapgolly.extjs.Ext.IBase
-  type ITipSurface = typingsJapgolly.extjs.Ext.draw.IComponent
-}
+
+type ICallout = IBase
+
+type IShape = IBase
+
+type ITip = IBase
+
+type ITipSurface = IComponent

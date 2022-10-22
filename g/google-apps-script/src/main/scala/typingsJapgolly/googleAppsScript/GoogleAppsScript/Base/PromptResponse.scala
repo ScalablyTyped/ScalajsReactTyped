@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Base
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to a prompt dialog displayed in the
@@ -24,18 +24,23 @@ import scala.scalajs.js.annotation._
   *       Logger.log('The user clicked the close button in the dialog\'s title bar.');
   *     }
   */
-trait PromptResponse extends js.Object {
+trait PromptResponse extends StObject {
+  
   def getResponseText(): String
+  
   def getSelectedButton(): Button
 }
-
 object PromptResponse {
-  @scala.inline
-  def apply(getResponseText: CallbackTo[String], getSelectedButton: CallbackTo[Button]): PromptResponse = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getResponseText")(getResponseText.toJsFn)
-    __obj.updateDynamic("getSelectedButton")(getSelectedButton.toJsFn)
+  
+  inline def apply(getResponseText: CallbackTo[String], getSelectedButton: CallbackTo[Button]): PromptResponse = {
+    val __obj = js.Dynamic.literal(getResponseText = getResponseText.toJsFn, getSelectedButton = getSelectedButton.toJsFn)
     __obj.asInstanceOf[PromptResponse]
   }
+  
+  extension [Self <: PromptResponse](x: Self) {
+    
+    inline def setGetResponseText(value: CallbackTo[String]): Self = StObject.set(x, "getResponseText", value.toJsFn)
+    
+    inline def setGetSelectedButton(value: CallbackTo[Button]): Self = StObject.set(x, "getSelectedButton", value.toJsFn)
+  }
 }
-

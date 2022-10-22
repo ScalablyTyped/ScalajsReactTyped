@@ -1,17 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PropertyAccessEntityNameExpression
-  extends PropertyAccessExpression
+  extends StObject
+     with PropertyAccessExpression
      with EntityNameExpression {
-  var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[js.Any] = js.native
+  
+  var _propertyAccessExpressionLikeQualifiedNameBrand: js.UndefOr[Any] = js.native
+  
   @JSName("expression")
-  var expression_PropertyAccessEntityNameExpression: EntityNameExpression = js.native
+  val expression_PropertyAccessEntityNameExpression: EntityNameExpression = js.native
+  
   @JSName("name")
-  var name_PropertyAccessEntityNameExpression: Identifier = js.native
+  val name_PropertyAccessEntityNameExpression: Identifier = js.native
 }
-

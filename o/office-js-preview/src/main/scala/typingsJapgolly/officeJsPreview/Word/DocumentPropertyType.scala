@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DocumentPropertyType extends js.Object
-
+sealed trait DocumentPropertyType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.DocumentPropertyType")
 @js.native
-object DocumentPropertyType extends js.Object {
+object DocumentPropertyType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait boolean extends DocumentPropertyType
+  sealed trait boolean
+    extends StObject
+       with DocumentPropertyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait date extends DocumentPropertyType
+  sealed trait date
+    extends StObject
+       with DocumentPropertyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait number extends DocumentPropertyType
+  sealed trait number
+    extends StObject
+       with DocumentPropertyType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait string extends DocumentPropertyType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[DocumentPropertyType with String] = js.native
-  /* "Boolean" */ @js.native
-  object boolean extends TopLevel[boolean with String]
-  
-  /* "Date" */ @js.native
-  object date extends TopLevel[date with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "String" */ @js.native
-  object string extends TopLevel[string with String]
-  
+  sealed trait string
+    extends StObject
+       with DocumentPropertyType
 }
-

@@ -1,13 +1,11 @@
 package typingsJapgolly.cookieSession
 
 import typingsJapgolly.cookieSession.CookieSessionInterfaces.CookieSessionRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Express")
-@js.native
-object Express extends js.Object {
+object Express {
+  
   type Request = CookieSessionRequest
 }
-

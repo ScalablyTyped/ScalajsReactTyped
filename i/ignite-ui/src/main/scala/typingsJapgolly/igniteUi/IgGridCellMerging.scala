@@ -2,124 +2,158 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridCellMerging
-  extends /**
-	 * Option for igGridCellMerging
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   var cellsMerged: js.UndefOr[CellsMergedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a new merged cells group is created.
-  	 */
+    * Event fired before a new merged cells group is created.
+    */
   var cellsMerging: js.UndefOr[CellsMergingEvent] = js.undefined
+  
   /**
-  	 * A list of column settings that specifies hiding options on a per column basis.
-  	 *
-  	 */
+    * A list of column settings that specifies hiding options on a per column basis.
+    *
+    */
   var columnSettings: js.UndefOr[js.Array[IgGridCellMergingColumnSetting]] = js.undefined
+  
   /**
-  	 * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
-  	 */
+    * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
+    */
   var inherit: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Defines when merging should be applied.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "sorting" Only sorted columns will have merging applied
-  	 * "always" Merging will be applied to all columns always
-  	 * "never" No merging will be applied
-  	 */
+    * Defines when merging should be applied.
+    *
+    *
+    * Valid values:
+    * "sorting" Only sorted columns will have merging applied
+    * "always" Merging will be applied to all columns always
+    * "never" No merging will be applied
+    */
   var mergeOn: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Defines the whether the rows will be merged or not.
-  	 *
-  	 */
-  var mergeRows: js.UndefOr[js.Any] = js.undefined
+    * Defines the whether the rows will be merged or not.
+    *
+    */
+  var mergeRows: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Defines the rules merging is based on.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "duplicate" Duplicate values in the column will be merged together.
-  	 * "null" Merging will be applied for each subsequent null value after a non-null value.
-  	 */
+    * Defines the rules merging is based on.
+    *
+    *
+    * Valid values:
+    * "duplicate" Duplicate values in the column will be merged together.
+    * "null" Merging will be applied for each subsequent null value after a non-null value.
+    */
   var mergeStrategy: js.UndefOr[String | js.Function] = js.undefined
+  
   /**
-  	 * Defines the type of merging.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "visual" the grid cells will be merged only visually
-  	 * "physical" the grid cell will be merged physically throughout rowspan
-  	 */
+    * Defines the type of merging.
+    *
+    *
+    * Valid values:
+    * "visual" the grid cells will be merged only visually
+    * "physical" the grid cell will be merged physically throughout rowspan
+    */
   var mergeType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Defines the rules merging is based on.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "duplicate" Duplicate values in the column will be merged together.
-  	 * "null" Merging will be applied for each subsequent null value after a non-null value.
-  	 */
+    * Defines the rules merging is based on.
+    *
+    *
+    * Valid values:
+    * "duplicate" Duplicate values in the column will be merged together.
+    * "null" Merging will be applied for each subsequent null value after a non-null value.
+    */
   var rowMergeStrategy: js.UndefOr[String | js.Function] = js.undefined
 }
-
 object IgGridCellMerging {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igGridCellMerging
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cellsMerged: (/* event */ Event_, /* ui */ CellsMergedEventUIParam) => Callback = null,
-    cellsMerging: (/* event */ Event_, /* ui */ CellsMergingEventUIParam) => Callback = null,
-    columnSettings: js.Array[IgGridCellMergingColumnSetting] = null,
-    inherit: js.UndefOr[Boolean] = js.undefined,
-    language: String = null,
-    locale: js.Any = null,
-    mergeOn: String = null,
-    mergeRows: js.Any = null,
-    mergeStrategy: String | js.Function = null,
-    mergeType: String = null,
-    regional: String | js.Object = null,
-    rowMergeStrategy: String | js.Function = null
-  ): IgGridCellMerging = {
+  
+  inline def apply(): IgGridCellMerging = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cellsMerged != null) __obj.updateDynamic("cellsMerged")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CellsMergedEventUIParam) => cellsMerged(t0, t1).runNow()))
-    if (cellsMerging != null) __obj.updateDynamic("cellsMerging")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CellsMergingEventUIParam) => cellsMerging(t0, t1).runNow()))
-    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings.asInstanceOf[js.Any])
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mergeOn != null) __obj.updateDynamic("mergeOn")(mergeOn.asInstanceOf[js.Any])
-    if (mergeRows != null) __obj.updateDynamic("mergeRows")(mergeRows.asInstanceOf[js.Any])
-    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
-    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rowMergeStrategy != null) __obj.updateDynamic("rowMergeStrategy")(rowMergeStrategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridCellMerging]
   }
+  
+  extension [Self <: IgGridCellMerging](x: Self) {
+    
+    inline def setCellsMerged(value: (/* event */ Event, /* ui */ CellsMergedEventUIParam) => Callback): Self = StObject.set(x, "cellsMerged", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CellsMergedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCellsMergedUndefined: Self = StObject.set(x, "cellsMerged", js.undefined)
+    
+    inline def setCellsMerging(value: (/* event */ Event, /* ui */ CellsMergingEventUIParam) => Callback): Self = StObject.set(x, "cellsMerging", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CellsMergingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCellsMergingUndefined: Self = StObject.set(x, "cellsMerging", js.undefined)
+    
+    inline def setColumnSettings(value: js.Array[IgGridCellMergingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    
+    inline def setColumnSettingsVarargs(value: IgGridCellMergingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value*))
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
+    
+    inline def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
+    
+    inline def setMergeRows(value: Any): Self = StObject.set(x, "mergeRows", value.asInstanceOf[js.Any])
+    
+    inline def setMergeRowsUndefined: Self = StObject.set(x, "mergeRows", js.undefined)
+    
+    inline def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    
+    inline def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
+    
+    inline def setMergeTypeUndefined: Self = StObject.set(x, "mergeType", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRowMergeStrategy(value: String | js.Function): Self = StObject.set(x, "rowMergeStrategy", value.asInstanceOf[js.Any])
+    
+    inline def setRowMergeStrategyUndefined: Self = StObject.set(x, "rowMergeStrategy", js.undefined)
+  }
 }
-

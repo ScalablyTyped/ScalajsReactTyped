@@ -1,19 +1,26 @@
-package typingsJapgolly.reactNativeChartsWrapper
+package typingsJapgolly.reactNativeChartsWrapper.mod
 
+import typingsJapgolly.reactNative.mod.NativeSyntheticEvent
+import typingsJapgolly.reactNativeChartsWrapper.anon.Action
+import typingsJapgolly.reactNativeChartsWrapper.anon.FnCall
+import typingsJapgolly.reactNativeChartsWrapper.anon.Y
+import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ChartChangeEvent = japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]
-  type ChartSelectEvent = japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]
-  type Color = scala.Double
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.largeValue
-    - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.percent
-    - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.date
-    - java.lang.String
-    - js.Array[java.lang.String]
-  */
-  type ValueFormatter = typingsJapgolly.reactNativeChartsWrapper.mod._ValueFormatter | js.Array[java.lang.String] | java.lang.String
-}
+
+type ChartChangeEvent = NativeSyntheticEvent[Action]
+
+type ChartSelectEvent = NativeSyntheticEvent[Y | Null]
+
+type Color = ReturnType[FnCall]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.largeValue
+  - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.percent
+  - typingsJapgolly.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.date
+  - java.lang.String
+  - js.Array[java.lang.String]
+*/
+type ValueFormatter = _ValueFormatter | js.Array[String] | String

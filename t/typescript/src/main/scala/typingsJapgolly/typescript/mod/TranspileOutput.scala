@@ -1,26 +1,36 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TranspileOutput extends js.Object {
+trait TranspileOutput extends StObject {
+  
   var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
+  
   var outputText: java.lang.String
+  
   var sourceMapText: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object TranspileOutput {
-  @scala.inline
-  def apply(
-    outputText: java.lang.String,
-    diagnostics: js.Array[Diagnostic] = null,
-    sourceMapText: java.lang.String = null
-  ): TranspileOutput = {
+  
+  inline def apply(outputText: java.lang.String): TranspileOutput = {
     val __obj = js.Dynamic.literal(outputText = outputText.asInstanceOf[js.Any])
-    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics.asInstanceOf[js.Any])
-    if (sourceMapText != null) __obj.updateDynamic("sourceMapText")(sourceMapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranspileOutput]
   }
+  
+  extension [Self <: TranspileOutput](x: Self) {
+    
+    inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    
+    inline def setDiagnosticsVarargs(value: Diagnostic*): Self = StObject.set(x, "diagnostics", js.Array(value*))
+    
+    inline def setOutputText(value: java.lang.String): Self = StObject.set(x, "outputText", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapText(value: java.lang.String): Self = StObject.set(x, "sourceMapText", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapTextUndefined: Self = StObject.set(x, "sourceMapText", js.undefined)
+  }
 }
-

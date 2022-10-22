@@ -1,0 +1,32 @@
+package typingsJapgolly.actionsOnGoogle.distServiceActionssdkApiV2Mod
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_OK
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ERROR
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_USER_CANCELLED
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ALREADY_OWNED
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_UNAVAILABLE
+  - typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_CHANGE_REQUESTED
+*/
+trait GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus extends StObject
+object GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus {
+  
+  inline def PURCHASE_STATUS_ALREADY_OWNED: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ALREADY_OWNED = "PURCHASE_STATUS_ALREADY_OWNED".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ALREADY_OWNED]
+  
+  inline def PURCHASE_STATUS_ERROR: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ERROR = "PURCHASE_STATUS_ERROR".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ERROR]
+  
+  inline def PURCHASE_STATUS_ITEM_CHANGE_REQUESTED: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_CHANGE_REQUESTED = "PURCHASE_STATUS_ITEM_CHANGE_REQUESTED".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_CHANGE_REQUESTED]
+  
+  inline def PURCHASE_STATUS_ITEM_UNAVAILABLE: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_UNAVAILABLE = "PURCHASE_STATUS_ITEM_UNAVAILABLE".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_ITEM_UNAVAILABLE]
+  
+  inline def PURCHASE_STATUS_OK: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_OK = "PURCHASE_STATUS_OK".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_OK]
+  
+  inline def PURCHASE_STATUS_UNSPECIFIED: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED = "PURCHASE_STATUS_UNSPECIFIED".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_UNSPECIFIED]
+  
+  inline def PURCHASE_STATUS_USER_CANCELLED: typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_USER_CANCELLED = "PURCHASE_STATUS_USER_CANCELLED".asInstanceOf[typingsJapgolly.actionsOnGoogle.actionsOnGoogleStrings.PURCHASE_STATUS_USER_CANCELLED]
+}

@@ -1,18 +1,19 @@
 package typingsJapgolly.cytoscape.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.dijkstra
   */
-trait SearchDijkstraResult extends js.Object {
+trait SearchDijkstraResult extends StObject {
+  
   /**
     * Returns the distance from the source node to node.
     */
   def distanceTo(node: NodeSingular): Double
+  
   /**
     * Returns a collection containing the shortest path from the source node to node.
     * The path starts with the source node and includes the edges between the nodes in the path such that if pathTo(node)[i] is an edge,
@@ -20,17 +21,17 @@ trait SearchDijkstraResult extends js.Object {
     */
   def pathTo(node: NodeSingular): CollectionReturnValue
 }
-
 object SearchDijkstraResult {
-  @scala.inline
-  def apply(
-    distanceTo: NodeSingular => CallbackTo[Double],
-    pathTo: NodeSingular => CallbackTo[CollectionReturnValue]
-  ): SearchDijkstraResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("distanceTo")(js.Any.fromFunction1((t0: typingsJapgolly.cytoscape.mod.NodeSingular) => distanceTo(t0).runNow()))
-    __obj.updateDynamic("pathTo")(js.Any.fromFunction1((t0: typingsJapgolly.cytoscape.mod.NodeSingular) => pathTo(t0).runNow()))
+  
+  inline def apply(distanceTo: NodeSingular => Double, pathTo: NodeSingular => CollectionReturnValue): SearchDijkstraResult = {
+    val __obj = js.Dynamic.literal(distanceTo = js.Any.fromFunction1(distanceTo), pathTo = js.Any.fromFunction1(pathTo))
     __obj.asInstanceOf[SearchDijkstraResult]
   }
+  
+  extension [Self <: SearchDijkstraResult](x: Self) {
+    
+    inline def setDistanceTo(value: NodeSingular => Double): Self = StObject.set(x, "distanceTo", js.Any.fromFunction1(value))
+    
+    inline def setPathTo(value: NodeSingular => CollectionReturnValue): Self = StObject.set(x, "pathTo", js.Any.fromFunction1(value))
+  }
 }
-

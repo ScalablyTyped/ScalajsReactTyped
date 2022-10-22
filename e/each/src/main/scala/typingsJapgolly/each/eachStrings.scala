@@ -1,29 +1,24 @@
 package typingsJapgolly.each
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eachStrings {
-  @js.native
-  sealed trait both extends js.Object
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait both extends StObject
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
+  @js.native
+  sealed trait item extends StObject
+  inline def item: item = "item".asInstanceOf[item]
 }
-

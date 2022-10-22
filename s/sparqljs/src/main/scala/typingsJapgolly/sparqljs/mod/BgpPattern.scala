@@ -1,24 +1,34 @@
 package typingsJapgolly.sparqljs.mod
 
 import typingsJapgolly.sparqljs.sparqljsStrings.bgp
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait BgpPattern
-  extends Pattern
+  extends StObject
+     with Pattern
      with Quads
      with _Expression {
+  
   var triples: js.Array[Triple]
+  
   var `type`: bgp
 }
-
 object BgpPattern {
-  @scala.inline
-  def apply(triples: js.Array[Triple], `type`: bgp): BgpPattern = {
+  
+  inline def apply(triples: js.Array[Triple]): BgpPattern = {
     val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bgp")
     __obj.asInstanceOf[BgpPattern]
   }
+  
+  extension [Self <: BgpPattern](x: Self) {
+    
+    inline def setTriples(value: js.Array[Triple]): Self = StObject.set(x, "triples", value.asInstanceOf[js.Any])
+    
+    inline def setTriplesVarargs(value: Triple*): Self = StObject.set(x, "triples", js.Array(value*))
+    
+    inline def setType(value: bgp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

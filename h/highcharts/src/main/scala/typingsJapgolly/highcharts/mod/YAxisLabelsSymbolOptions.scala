@@ -1,40 +1,58 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait YAxisLabelsSymbolOptions extends js.Object {
+trait YAxisLabelsSymbolOptions extends StObject {
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var padding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Gantt) The symbol type. Points to a definition function in the
     * `Highcharts.Renderer.symbols` collection.
     */
   var `type`: js.UndefOr[SymbolKeyValue] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
+  
   var x: js.UndefOr[Double] = js.undefined
+  
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object YAxisLabelsSymbolOptions {
-  @scala.inline
-  def apply(
-    height: Int | Double = null,
-    padding: Int | Double = null,
-    `type`: SymbolKeyValue = null,
-    width: Int | Double = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): YAxisLabelsSymbolOptions = {
+  
+  inline def apply(): YAxisLabelsSymbolOptions = {
     val __obj = js.Dynamic.literal()
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[YAxisLabelsSymbolOptions]
   }
+  
+  extension [Self <: YAxisLabelsSymbolOptions](x: Self) {
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setType(value: SymbolKeyValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

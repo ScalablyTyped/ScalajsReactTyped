@@ -1,13 +1,12 @@
 package typingsJapgolly.jsforce.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsforce", "ReportInstance")
 @js.native
-class ReportInstance protected ()
-  extends typingsJapgolly.jsforce.analyticsMod.ReportInstance {
-  def this(report: typingsJapgolly.jsforce.analyticsMod.Report, id: String) = this()
+open class ReportInstance protected ()
+  extends typingsJapgolly.jsforce.apiAnalyticsMod.ReportInstance {
+  def this(report: typingsJapgolly.jsforce.apiAnalyticsMod.Report, id: String) = this()
 }
-

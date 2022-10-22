@@ -1,36 +1,51 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Button //////////////////////////////////////////////////
-trait ButtonOptions extends js.Object {
-  var click: js.UndefOr[js.Function1[/* event */ js.UndefOr[Event_], Unit]] = js.undefined
+trait ButtonOptions extends StObject {
+  
+  var click: js.UndefOr[js.Function1[/* event */ js.UndefOr[Event], Unit]] = js.undefined
+  
   var disabled: js.UndefOr[Boolean] = js.undefined
-  var icons: js.UndefOr[js.Any] = js.undefined
+  
+  var icons: js.UndefOr[Any] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String | Boolean] = js.undefined
 }
-
 object ButtonOptions {
-  @scala.inline
-  def apply(
-    click: /* event */ js.UndefOr[Event_] => Callback = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icons: js.Any = null,
-    label: String = null,
-    text: String | Boolean = null
-  ): ButtonOptions = {
+  
+  inline def apply(): ButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(js.Any.fromFunction1((t0: /* event */ js.UndefOr[typingsJapgolly.std.Event_]) => click(t0).runNow()))
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
+  
+  extension [Self <: ButtonOptions](x: Self) {
+    
+    inline def setClick(value: /* event */ js.UndefOr[Event] => Callback): Self = StObject.set(x, "click", js.Any.fromFunction1((t0: /* event */ js.UndefOr[Event]) => value(t0).runNow()))
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    
+    inline def setIcons(value: Any): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setText(value: String | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

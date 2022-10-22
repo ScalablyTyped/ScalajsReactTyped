@@ -1,33 +1,46 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosNetworkUsageRule extends js.Object {
+trait IosNetworkUsageRule extends StObject {
+  
   // If set to true, corresponding managed apps will not be allowed to use cellular data when roaming.
   var cellularDataBlockWhenRoaming: js.UndefOr[Boolean] = js.undefined
+  
   // If set to true, corresponding managed apps will not be allowed to use cellular data at any time.
   var cellularDataBlocked: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Information about the managed apps that this rule is going to apply to. This collection can contain a maximum of 500
     * elements.
     */
-  var managedApps: js.UndefOr[js.Array[AppListItem]] = js.undefined
+  var managedApps: js.UndefOr[NullableOption[js.Array[AppListItem]]] = js.undefined
 }
-
 object IosNetworkUsageRule {
-  @scala.inline
-  def apply(
-    cellularDataBlockWhenRoaming: js.UndefOr[Boolean] = js.undefined,
-    cellularDataBlocked: js.UndefOr[Boolean] = js.undefined,
-    managedApps: js.Array[AppListItem] = null
-  ): IosNetworkUsageRule = {
+  
+  inline def apply(): IosNetworkUsageRule = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cellularDataBlockWhenRoaming)) __obj.updateDynamic("cellularDataBlockWhenRoaming")(cellularDataBlockWhenRoaming.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellularDataBlocked)) __obj.updateDynamic("cellularDataBlocked")(cellularDataBlocked.asInstanceOf[js.Any])
-    if (managedApps != null) __obj.updateDynamic("managedApps")(managedApps.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosNetworkUsageRule]
   }
+  
+  extension [Self <: IosNetworkUsageRule](x: Self) {
+    
+    inline def setCellularDataBlockWhenRoaming(value: Boolean): Self = StObject.set(x, "cellularDataBlockWhenRoaming", value.asInstanceOf[js.Any])
+    
+    inline def setCellularDataBlockWhenRoamingUndefined: Self = StObject.set(x, "cellularDataBlockWhenRoaming", js.undefined)
+    
+    inline def setCellularDataBlocked(value: Boolean): Self = StObject.set(x, "cellularDataBlocked", value.asInstanceOf[js.Any])
+    
+    inline def setCellularDataBlockedUndefined: Self = StObject.set(x, "cellularDataBlocked", js.undefined)
+    
+    inline def setManagedApps(value: NullableOption[js.Array[AppListItem]]): Self = StObject.set(x, "managedApps", value.asInstanceOf[js.Any])
+    
+    inline def setManagedAppsNull: Self = StObject.set(x, "managedApps", null)
+    
+    inline def setManagedAppsUndefined: Self = StObject.set(x, "managedApps", js.undefined)
+    
+    inline def setManagedAppsVarargs(value: AppListItem*): Self = StObject.set(x, "managedApps", js.Array(value*))
+  }
 }
-

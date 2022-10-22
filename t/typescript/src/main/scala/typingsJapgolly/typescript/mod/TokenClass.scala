@@ -1,80 +1,75 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TokenClass extends js.Object
-
+sealed trait TokenClass extends StObject
 @JSImport("typescript", "TokenClass")
 @js.native
-object TokenClass extends js.Object {
-  @js.native
-  sealed trait BigIntLiteral extends TokenClass
-  
-  @js.native
-  sealed trait Comment extends TokenClass
-  
-  @js.native
-  sealed trait Identifier extends TokenClass
-  
-  @js.native
-  sealed trait Keyword extends TokenClass
-  
-  @js.native
-  sealed trait NumberLiteral extends TokenClass
-  
-  @js.native
-  sealed trait Operator extends TokenClass
-  
-  @js.native
-  sealed trait Punctuation extends TokenClass
-  
-  @js.native
-  sealed trait RegExpLiteral extends TokenClass
-  
-  @js.native
-  sealed trait StringLiteral extends TokenClass
-  
-  @js.native
-  sealed trait Whitespace extends TokenClass
+object TokenClass extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TokenClass with Double] = js.native
-  /* 7 */ @js.native
-  object BigIntLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.TokenClass.BigIntLiteral with Double]
+  def apply(value: Double): js.UndefOr[TokenClass & Double] = js.native
   
-  /* 3 */ @js.native
-  object Comment extends TopLevel[Comment with Double]
+  @js.native
+  sealed trait BigIntLiteral
+    extends StObject
+       with TokenClass
+  /* 7 */ val BigIntLiteral: typingsJapgolly.typescript.mod.TokenClass.BigIntLiteral & Double = js.native
   
-  /* 5 */ @js.native
-  object Identifier
-    extends TopLevel[typingsJapgolly.typescript.mod.TokenClass.Identifier with Double]
+  @js.native
+  sealed trait Comment
+    extends StObject
+       with TokenClass
+  /* 3 */ val Comment: typingsJapgolly.typescript.mod.TokenClass.Comment & Double = js.native
   
-  /* 1 */ @js.native
-  object Keyword extends TopLevel[Keyword with Double]
+  @js.native
+  sealed trait Identifier
+    extends StObject
+       with TokenClass
+  /* 5 */ val Identifier: typingsJapgolly.typescript.mod.TokenClass.Identifier & Double = js.native
   
-  /* 6 */ @js.native
-  object NumberLiteral extends TopLevel[NumberLiteral with Double]
+  @js.native
+  sealed trait Keyword
+    extends StObject
+       with TokenClass
+  /* 1 */ val Keyword: typingsJapgolly.typescript.mod.TokenClass.Keyword & Double = js.native
   
-  /* 2 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
+  @js.native
+  sealed trait NumberLiteral
+    extends StObject
+       with TokenClass
+  /* 6 */ val NumberLiteral: typingsJapgolly.typescript.mod.TokenClass.NumberLiteral & Double = js.native
   
-  /* 0 */ @js.native
-  object Punctuation extends TopLevel[Punctuation with Double]
+  @js.native
+  sealed trait Operator
+    extends StObject
+       with TokenClass
+  /* 2 */ val Operator: typingsJapgolly.typescript.mod.TokenClass.Operator & Double = js.native
   
-  /* 9 */ @js.native
-  object RegExpLiteral extends TopLevel[RegExpLiteral with Double]
+  @js.native
+  sealed trait Punctuation
+    extends StObject
+       with TokenClass
+  /* 0 */ val Punctuation: typingsJapgolly.typescript.mod.TokenClass.Punctuation & Double = js.native
   
-  /* 8 */ @js.native
-  object StringLiteral
-    extends TopLevel[typingsJapgolly.typescript.mod.TokenClass.StringLiteral with Double]
+  @js.native
+  sealed trait RegExpLiteral
+    extends StObject
+       with TokenClass
+  /* 9 */ val RegExpLiteral: typingsJapgolly.typescript.mod.TokenClass.RegExpLiteral & Double = js.native
   
-  /* 4 */ @js.native
-  object Whitespace extends TopLevel[Whitespace with Double]
+  @js.native
+  sealed trait StringLiteral
+    extends StObject
+       with TokenClass
+  /* 8 */ val StringLiteral: typingsJapgolly.typescript.mod.TokenClass.StringLiteral & Double = js.native
   
+  @js.native
+  sealed trait Whitespace
+    extends StObject
+       with TokenClass
+  /* 4 */ val Whitespace: typingsJapgolly.typescript.mod.TokenClass.Whitespace & Double = js.native
 }
-

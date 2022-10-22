@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDockZone.BeforeDock event.
   */
-@JSGlobal("ASPxClientDockZoneCancelEventArgs")
-@js.native
-class ASPxClientDockZoneCancelEventArgs protected () extends ASPxClientProcessingModeCancelEventArgs {
-  /**
-    * Initializes a new object of the ASPxClientDockZoneCancelEventArgs type with the specified settings.
-    * @param processOnServer true to process the event on the server side; false to completely handle it on the client side.
-    * @param panel An ASPxClientDockPanel object that is a panel related to the event.
-    */
-  def this(processOnServer: Boolean, panel: ASPxClientDockPanel) = this()
+trait ASPxClientDockZoneCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
+  
   /**
     * Gets the panel currently being processed.
     */
-  var panel: ASPxClientDockPanel = js.native
+  var panel: ASPxClientDockPanel
 }
-
+object ASPxClientDockZoneCancelEventArgs {
+  
+  inline def apply(cancel: Boolean, panel: ASPxClientDockPanel, processOnServer: Boolean): ASPxClientDockZoneCancelEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], panel = panel.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientDockZoneCancelEventArgs]
+  }
+  
+  extension [Self <: ASPxClientDockZoneCancelEventArgs](x: Self) {
+    
+    inline def setPanel(value: ASPxClientDockPanel): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+  }
+}

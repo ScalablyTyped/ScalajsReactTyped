@@ -1,71 +1,147 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlashFrame extends js.Object {
-  var actionScript: js.Any
-  var duration: js.Any
+trait FlashFrame extends StObject {
+  
+  var actionScript: Any
+  
+  var duration: Any
+  
   var elements: js.Array[FlashElement]
-  var hasCustomEase: js.Any
-  var labelType: js.Any
-  var motionTweenOrientToPath: js.Any
-  var motionTweenRotate: js.Any
-  var motionTweenRotateTimes: js.Any
-  var motionTweenScale: js.Any
-  var motionTweenSnap: js.Any
-  var motionTweenSync: js.Any
-  var name: js.Any
-  var shapeTweenBlend: js.Any
-  var soundEffect: js.Any
+  
+  def getCustomEase(): Any
+  
+  var hasCustomEase: Any
+  
+  var labelType: Any
+  
+  var motionTweenOrientToPath: Any
+  
+  var motionTweenRotate: Any
+  
+  var motionTweenRotateTimes: Any
+  
+  var motionTweenScale: Any
+  
+  var motionTweenSnap: Any
+  
+  var motionTweenSync: Any
+  
+  var name: Any
+  
+  def setCustomEase(): Any
+  
+  var shapeTweenBlend: Any
+  
+  var soundEffect: Any
+  
   var soundLibraryItem: FlashSoundItem
-  var soundLoop: js.Any
-  var soundLoopMode: js.Any
-  var soundName: js.Any
-  var soundSync: js.Any
-  var startFrame: js.Any
-  var tweenEasing: js.Any
-  var tweenType: js.Any
-  var useSingleEaseCurve: js.Any
-  def getCustomEase(): js.Any
-  def setCustomEase(): js.Any
+  
+  var soundLoop: Any
+  
+  var soundLoopMode: Any
+  
+  var soundName: Any
+  
+  var soundSync: Any
+  
+  var startFrame: Any
+  
+  var tweenEasing: Any
+  
+  var tweenType: Any
+  
+  var useSingleEaseCurve: Any
 }
-
 object FlashFrame {
-  @scala.inline
-  def apply(
-    actionScript: js.Any,
-    duration: js.Any,
+  
+  inline def apply(
+    actionScript: Any,
+    duration: Any,
     elements: js.Array[FlashElement],
-    getCustomEase: CallbackTo[js.Any],
-    hasCustomEase: js.Any,
-    labelType: js.Any,
-    motionTweenOrientToPath: js.Any,
-    motionTweenRotate: js.Any,
-    motionTweenRotateTimes: js.Any,
-    motionTweenScale: js.Any,
-    motionTweenSnap: js.Any,
-    motionTweenSync: js.Any,
-    name: js.Any,
-    setCustomEase: CallbackTo[js.Any],
-    shapeTweenBlend: js.Any,
-    soundEffect: js.Any,
+    getCustomEase: CallbackTo[Any],
+    hasCustomEase: Any,
+    labelType: Any,
+    motionTweenOrientToPath: Any,
+    motionTweenRotate: Any,
+    motionTweenRotateTimes: Any,
+    motionTweenScale: Any,
+    motionTweenSnap: Any,
+    motionTweenSync: Any,
+    name: Any,
+    setCustomEase: CallbackTo[Any],
+    shapeTweenBlend: Any,
+    soundEffect: Any,
     soundLibraryItem: FlashSoundItem,
-    soundLoop: js.Any,
-    soundLoopMode: js.Any,
-    soundName: js.Any,
-    soundSync: js.Any,
-    startFrame: js.Any,
-    tweenEasing: js.Any,
-    tweenType: js.Any,
-    useSingleEaseCurve: js.Any
+    soundLoop: Any,
+    soundLoopMode: Any,
+    soundName: Any,
+    soundSync: Any,
+    startFrame: Any,
+    tweenEasing: Any,
+    tweenType: Any,
+    useSingleEaseCurve: Any
   ): FlashFrame = {
-    val __obj = js.Dynamic.literal(actionScript = actionScript.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], hasCustomEase = hasCustomEase.asInstanceOf[js.Any], labelType = labelType.asInstanceOf[js.Any], motionTweenOrientToPath = motionTweenOrientToPath.asInstanceOf[js.Any], motionTweenRotate = motionTweenRotate.asInstanceOf[js.Any], motionTweenRotateTimes = motionTweenRotateTimes.asInstanceOf[js.Any], motionTweenScale = motionTweenScale.asInstanceOf[js.Any], motionTweenSnap = motionTweenSnap.asInstanceOf[js.Any], motionTweenSync = motionTweenSync.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], shapeTweenBlend = shapeTweenBlend.asInstanceOf[js.Any], soundEffect = soundEffect.asInstanceOf[js.Any], soundLibraryItem = soundLibraryItem.asInstanceOf[js.Any], soundLoop = soundLoop.asInstanceOf[js.Any], soundLoopMode = soundLoopMode.asInstanceOf[js.Any], soundName = soundName.asInstanceOf[js.Any], soundSync = soundSync.asInstanceOf[js.Any], startFrame = startFrame.asInstanceOf[js.Any], tweenEasing = tweenEasing.asInstanceOf[js.Any], tweenType = tweenType.asInstanceOf[js.Any], useSingleEaseCurve = useSingleEaseCurve.asInstanceOf[js.Any])
-    __obj.updateDynamic("getCustomEase")(getCustomEase.toJsFn)
-    __obj.updateDynamic("setCustomEase")(setCustomEase.toJsFn)
+    val __obj = js.Dynamic.literal(actionScript = actionScript.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], elements = elements.asInstanceOf[js.Any], getCustomEase = getCustomEase.toJsFn, hasCustomEase = hasCustomEase.asInstanceOf[js.Any], labelType = labelType.asInstanceOf[js.Any], motionTweenOrientToPath = motionTweenOrientToPath.asInstanceOf[js.Any], motionTweenRotate = motionTweenRotate.asInstanceOf[js.Any], motionTweenRotateTimes = motionTweenRotateTimes.asInstanceOf[js.Any], motionTweenScale = motionTweenScale.asInstanceOf[js.Any], motionTweenSnap = motionTweenSnap.asInstanceOf[js.Any], motionTweenSync = motionTweenSync.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], setCustomEase = setCustomEase.toJsFn, shapeTweenBlend = shapeTweenBlend.asInstanceOf[js.Any], soundEffect = soundEffect.asInstanceOf[js.Any], soundLibraryItem = soundLibraryItem.asInstanceOf[js.Any], soundLoop = soundLoop.asInstanceOf[js.Any], soundLoopMode = soundLoopMode.asInstanceOf[js.Any], soundName = soundName.asInstanceOf[js.Any], soundSync = soundSync.asInstanceOf[js.Any], startFrame = startFrame.asInstanceOf[js.Any], tweenEasing = tweenEasing.asInstanceOf[js.Any], tweenType = tweenType.asInstanceOf[js.Any], useSingleEaseCurve = useSingleEaseCurve.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashFrame]
   }
+  
+  extension [Self <: FlashFrame](x: Self) {
+    
+    inline def setActionScript(value: Any): Self = StObject.set(x, "actionScript", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setElements(value: js.Array[FlashElement]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    
+    inline def setElementsVarargs(value: FlashElement*): Self = StObject.set(x, "elements", js.Array(value*))
+    
+    inline def setGetCustomEase(value: CallbackTo[Any]): Self = StObject.set(x, "getCustomEase", value.toJsFn)
+    
+    inline def setHasCustomEase(value: Any): Self = StObject.set(x, "hasCustomEase", value.asInstanceOf[js.Any])
+    
+    inline def setLabelType(value: Any): Self = StObject.set(x, "labelType", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenOrientToPath(value: Any): Self = StObject.set(x, "motionTweenOrientToPath", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenRotate(value: Any): Self = StObject.set(x, "motionTweenRotate", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenRotateTimes(value: Any): Self = StObject.set(x, "motionTweenRotateTimes", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenScale(value: Any): Self = StObject.set(x, "motionTweenScale", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenSnap(value: Any): Self = StObject.set(x, "motionTweenSnap", value.asInstanceOf[js.Any])
+    
+    inline def setMotionTweenSync(value: Any): Self = StObject.set(x, "motionTweenSync", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSetCustomEase(value: CallbackTo[Any]): Self = StObject.set(x, "setCustomEase", value.toJsFn)
+    
+    inline def setShapeTweenBlend(value: Any): Self = StObject.set(x, "shapeTweenBlend", value.asInstanceOf[js.Any])
+    
+    inline def setSoundEffect(value: Any): Self = StObject.set(x, "soundEffect", value.asInstanceOf[js.Any])
+    
+    inline def setSoundLibraryItem(value: FlashSoundItem): Self = StObject.set(x, "soundLibraryItem", value.asInstanceOf[js.Any])
+    
+    inline def setSoundLoop(value: Any): Self = StObject.set(x, "soundLoop", value.asInstanceOf[js.Any])
+    
+    inline def setSoundLoopMode(value: Any): Self = StObject.set(x, "soundLoopMode", value.asInstanceOf[js.Any])
+    
+    inline def setSoundName(value: Any): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
+    
+    inline def setSoundSync(value: Any): Self = StObject.set(x, "soundSync", value.asInstanceOf[js.Any])
+    
+    inline def setStartFrame(value: Any): Self = StObject.set(x, "startFrame", value.asInstanceOf[js.Any])
+    
+    inline def setTweenEasing(value: Any): Self = StObject.set(x, "tweenEasing", value.asInstanceOf[js.Any])
+    
+    inline def setTweenType(value: Any): Self = StObject.set(x, "tweenType", value.asInstanceOf[js.Any])
+    
+    inline def setUseSingleEaseCurve(value: Any): Self = StObject.set(x, "useSingleEaseCurve", value.asInstanceOf[js.Any])
+  }
 }
-

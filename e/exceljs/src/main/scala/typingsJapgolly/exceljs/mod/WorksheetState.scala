@@ -1,24 +1,20 @@
 package typingsJapgolly.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.exceljs.exceljsStrings.visible
   - typingsJapgolly.exceljs.exceljsStrings.hidden
   - typingsJapgolly.exceljs.exceljsStrings.veryHidden
 */
-trait WorksheetState extends js.Object
-
+trait WorksheetState extends StObject
 object WorksheetState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hidden: typingsJapgolly.exceljs.exceljsStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def veryHidden: typingsJapgolly.exceljs.exceljsStrings.veryHidden = this.cast("veryHidden")
-  @scala.inline
-  def visible: typingsJapgolly.exceljs.exceljsStrings.visible = this.cast("visible")
+  
+  inline def hidden: typingsJapgolly.exceljs.exceljsStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.hidden]
+  
+  inline def veryHidden: typingsJapgolly.exceljs.exceljsStrings.veryHidden = "veryHidden".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.veryHidden]
+  
+  inline def visible: typingsJapgolly.exceljs.exceljsStrings.visible = "visible".asInstanceOf[typingsJapgolly.exceljs.exceljsStrings.visible]
 }
-

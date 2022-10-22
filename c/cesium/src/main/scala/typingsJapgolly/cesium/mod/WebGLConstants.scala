@@ -1,3498 +1,3507 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WebGLConstants extends js.Object
-
+sealed trait WebGLConstants extends StObject
 @JSImport("cesium", "WebGLConstants")
 @js.native
-object WebGLConstants extends js.Object {
-  @js.native
-  sealed trait ACTIVE_ATTRIBUTES extends WebGLConstants
-  
-  @js.native
-  sealed trait ACTIVE_TEXTURE extends WebGLConstants
-  
-  @js.native
-  sealed trait ACTIVE_UNIFORMS extends WebGLConstants
-  
-  @js.native
-  sealed trait ACTIVE_UNIFORM_BLOCKS extends WebGLConstants
-  
-  @js.native
-  sealed trait ALIASED_LINE_WIDTH_RANGE extends WebGLConstants
-  
-  @js.native
-  sealed trait ALIASED_POINT_SIZE_RANGE extends WebGLConstants
-  
-  @js.native
-  sealed trait ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait ALPHA_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait ALREADY_SIGNALED extends WebGLConstants
-  
-  @js.native
-  sealed trait ALWAYS extends WebGLConstants
-  
-  @js.native
-  sealed trait ANY_SAMPLES_PASSED extends WebGLConstants
-  
-  @js.native
-  sealed trait ANY_SAMPLES_PASSED_CONSERVATIVE extends WebGLConstants
-  
-  @js.native
-  sealed trait ARRAY_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait ARRAY_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait ATTACHED_SHADERS extends WebGLConstants
-  
-  @js.native
-  sealed trait BACK extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_DST_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_DST_RGB extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_EQUATION extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_EQUATION_ALPHA extends WebGLConstants
-  
-   // same as BLEND_EQUATION
-  @js.native
-  sealed trait BLEND_EQUATION_RGB extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_SRC_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait BLEND_SRC_RGB extends WebGLConstants
-  
-  @js.native
-  sealed trait BLUE_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait BOOL extends WebGLConstants
-  
-  @js.native
-  sealed trait BOOL_VEC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait BOOL_VEC3 extends WebGLConstants
-  
-  @js.native
-  sealed trait BOOL_VEC4 extends WebGLConstants
-  
-  @js.native
-  sealed trait BROWSER_DEFAULT_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait BUFFER_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait BUFFER_USAGE extends WebGLConstants
-  
-  @js.native
-  sealed trait BYTE extends WebGLConstants
-  
-  @js.native
-  sealed trait CCW extends WebGLConstants
-  
-  @js.native
-  sealed trait CLAMP_TO_EDGE extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT0 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT1 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT10 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT11 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT12 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT13 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT14 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT15 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT2 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT3 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT4 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT5 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT6 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT7 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT8 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_ATTACHMENT9 extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_BUFFER_BIT extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_CLEAR_VALUE extends WebGLConstants
-  
-  @js.native
-  sealed trait COLOR_WRITEMASK extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPARE_REF_TO_TEXTURE extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPILE_STATUS extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_R11_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RG11_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB8_ETC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA8_ETC2_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA_PVRTC_2BPPV1_IMG extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA_PVRTC_4BPPV1_IMG extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA_S3TC_DXT1_EXT extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA_S3TC_DXT3_EXT extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGBA_S3TC_DXT5_EXT extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB_ETC1_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB_PVRTC_2BPPV1_IMG extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB_PVRTC_4BPPV1_IMG extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_RGB_S3TC_DXT1_EXT extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_SIGNED_R11_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_SIGNED_RG11_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_SRGB8_ALPHA8_ETC2_EAC extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_SRGB8_ETC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait COMPRESSED_TEXTURE_FORMATS extends WebGLConstants
-  
-  @js.native
-  sealed trait CONDITION_SATISFIED extends WebGLConstants
-  
-  @js.native
-  sealed trait CONSTANT_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait CONSTANT_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait CONTEXT_LOST_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait COPY_READ_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait COPY_READ_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait COPY_WRITE_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait COPY_WRITE_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait CULL_FACE extends WebGLConstants
-  
-  @js.native
-  sealed trait CULL_FACE_MODE extends WebGLConstants
-  
-  @js.native
-  sealed trait CURRENT_PROGRAM extends WebGLConstants
-  
-  @js.native
-  sealed trait CURRENT_QUERY extends WebGLConstants
-  
-  @js.native
-  sealed trait CURRENT_VERTEX_ATTRIB extends WebGLConstants
-  
-  @js.native
-  sealed trait CW extends WebGLConstants
-  
-  @js.native
-  sealed trait DECR extends WebGLConstants
-  
-  @js.native
-  sealed trait DECR_WRAP extends WebGLConstants
-  
-  @js.native
-  sealed trait DELETE_STATUS extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH24_STENCIL8 extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH32F_STENCIL8 extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_ATTACHMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_BUFFER_BIT extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_CLEAR_VALUE extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_COMPONENT extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_COMPONENT16 extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_COMPONENT24 extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_COMPONENT32F extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_FUNC extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_RANGE extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_STENCIL extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_STENCIL_ATTACHMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_TEST extends WebGLConstants
-  
-  @js.native
-  sealed trait DEPTH_WRITEMASK extends WebGLConstants
-  
-  @js.native
-  sealed trait DITHER extends WebGLConstants
-  
-  @js.native
-  sealed trait DONT_CARE extends WebGLConstants
-  
-  @js.native
-  sealed trait DOUBLE extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER0 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER1 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER10 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER11 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER12 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER13 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER14 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER15 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER2 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER3 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER4 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER5 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER6 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER7 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER8 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_BUFFER9 extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_FRAMEBUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait DRAW_FRAMEBUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait DST_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait DST_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait DYNAMIC_COPY extends WebGLConstants
-  
-  @js.native
-  sealed trait DYNAMIC_DRAW extends WebGLConstants
-  
-  @js.native
-  sealed trait DYNAMIC_READ extends WebGLConstants
-  
-  @js.native
-  sealed trait ELEMENT_ARRAY_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait ELEMENT_ARRAY_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait EQUAL extends WebGLConstants
-  
-  @js.native
-  sealed trait FASTEST extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_32_UNSIGNED_INT_24_8_REV extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT2 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT2x3 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT2x4 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT3 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT3x2 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT3x4 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT4 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT4x2 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_MAT4x3 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_VEC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_VEC3 extends WebGLConstants
-  
-  @js.native
-  sealed trait FLOAT_VEC4 extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAGMENT_SHADER extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAGMENT_SHADER_DERIVATIVE_HINT extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_BLUE_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_GREEN_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_NAME extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_RED_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_COMPLETE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_DEFAULT extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_INCOMPLETE_ATTACHMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_INCOMPLETE_DIMENSIONS extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_INCOMPLETE_MULTISAMPLE extends WebGLConstants
-  
-  @js.native
-  sealed trait FRAMEBUFFER_UNSUPPORTED extends WebGLConstants
-  
-  @js.native
-  sealed trait FRONT extends WebGLConstants
-  
-  @js.native
-  sealed trait FRONT_AND_BACK extends WebGLConstants
-  
-  @js.native
-  sealed trait FRONT_FACE extends WebGLConstants
-  
-  @js.native
-  sealed trait FUNC_ADD extends WebGLConstants
-  
-  @js.native
-  sealed trait FUNC_REVERSE_SUBTRACT extends WebGLConstants
-  
-  @js.native
-  sealed trait FUNC_SUBTRACT extends WebGLConstants
-  
-  @js.native
-  sealed trait GENERATE_MIPMAP_HINT extends WebGLConstants
-  
-  @js.native
-  sealed trait GEQUAL extends WebGLConstants
-  
-  @js.native
-  sealed trait GREATER extends WebGLConstants
-  
-  @js.native
-  sealed trait GREEN_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait HALF_FLOAT extends WebGLConstants
-  
-  @js.native
-  sealed trait HALF_FLOAT_OES extends WebGLConstants
-  
-  @js.native
-  sealed trait HIGH_FLOAT extends WebGLConstants
-  
-  @js.native
-  sealed trait HIGH_INT extends WebGLConstants
-  
-  @js.native
-  sealed trait IMPLEMENTATION_COLOR_READ_FORMAT extends WebGLConstants
-  
-  @js.native
-  sealed trait IMPLEMENTATION_COLOR_READ_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait INCR extends WebGLConstants
-  
-  @js.native
-  sealed trait INCR_WRAP extends WebGLConstants
-  
-  @js.native
-  sealed trait INT extends WebGLConstants
-  
-  @js.native
-  sealed trait INTERLEAVED_ATTRIBS extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_2_10_10_10_REV extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_SAMPLER_2D extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_SAMPLER_2D_ARRAY extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_SAMPLER_3D extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_SAMPLER_CUBE extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_VEC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_VEC3 extends WebGLConstants
-  
-  @js.native
-  sealed trait INT_VEC4 extends WebGLConstants
-  
-  @js.native
-  sealed trait INVALID_ENUM extends WebGLConstants
-  
-  @js.native
-  sealed trait INVALID_FRAMEBUFFER_OPERATION extends WebGLConstants
-  
-  @js.native
-  sealed trait INVALID_INDEX extends WebGLConstants
-  
-  @js.native
-  sealed trait INVALID_OPERATION extends WebGLConstants
-  
-  @js.native
-  sealed trait INVALID_VALUE extends WebGLConstants
-  
-  @js.native
-  sealed trait INVERT extends WebGLConstants
-  
-  @js.native
-  sealed trait KEEP extends WebGLConstants
-  
-  @js.native
-  sealed trait LEQUAL extends WebGLConstants
-  
-  @js.native
-  sealed trait LESS extends WebGLConstants
-  
-  @js.native
-  sealed trait LINEAR extends WebGLConstants
-  
-  @js.native
-  sealed trait LINEAR_MIPMAP_LINEAR extends WebGLConstants
-  
-  @js.native
-  sealed trait LINEAR_MIPMAP_NEAREST extends WebGLConstants
-  
-  @js.native
-  sealed trait LINES extends WebGLConstants
-  
-  @js.native
-  sealed trait LINE_LOOP extends WebGLConstants
-  
-  @js.native
-  sealed trait LINE_STRIP extends WebGLConstants
-  
-  @js.native
-  sealed trait LINE_WIDTH extends WebGLConstants
-  
-  @js.native
-  sealed trait LINK_STATUS extends WebGLConstants
-  
-  @js.native
-  sealed trait LOW_FLOAT extends WebGLConstants
-  
-  @js.native
-  sealed trait LOW_INT extends WebGLConstants
-  
-  @js.native
-  sealed trait LUMINANCE extends WebGLConstants
-  
-  @js.native
-  sealed trait LUMINANCE_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_3D_TEXTURE_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_ARRAY_TEXTURE_LAYERS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_COLOR_ATTACHMENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_COMBINED_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_COMBINED_UNIFORM_BLOCKS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_CUBE_MAP_TEXTURE_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_DRAW_BUFFERS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_ELEMENTS_INDICES extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_ELEMENTS_VERTICES extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_ELEMENT_INDEX extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_FRAGMENT_INPUT_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_FRAGMENT_UNIFORM_BLOCKS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_FRAGMENT_UNIFORM_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_FRAGMENT_UNIFORM_VECTORS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_PROGRAM_TEXEL_OFFSET extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_RENDERBUFFER_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_SAMPLES extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_SERVER_WAIT_TIMEOUT extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TEXTURE_LOD_BIAS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TEXTURE_MAX_ANISOTROPY_EXT extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TEXTURE_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_UNIFORM_BLOCK_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_UNIFORM_BUFFER_BINDINGS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VARYING_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VARYING_VECTORS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_ATTRIBS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_OUTPUT_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_TEXTURE_IMAGE_UNITS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_UNIFORM_BLOCKS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_UNIFORM_COMPONENTS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VERTEX_UNIFORM_VECTORS extends WebGLConstants
-  
-  @js.native
-  sealed trait MAX_VIEWPORT_DIMS extends WebGLConstants
-  
-  @js.native
-  sealed trait MEDIUM_FLOAT extends WebGLConstants
-  
-  @js.native
-  sealed trait MEDIUM_INT extends WebGLConstants
-  
-  @js.native
-  sealed trait MIN extends WebGLConstants
-  
-  @js.native
-  sealed trait MIN_PROGRAM_TEXEL_OFFSET extends WebGLConstants
-  
-  @js.native
-  sealed trait MIRRORED_REPEAT extends WebGLConstants
-  
-  @js.native
-  sealed trait NEAREST extends WebGLConstants
-  
-  @js.native
-  sealed trait NEAREST_MIPMAP_LINEAR extends WebGLConstants
-  
-  @js.native
-  sealed trait NEAREST_MIPMAP_NEAREST extends WebGLConstants
-  
-  @js.native
-  sealed trait NEVER extends WebGLConstants
-  
-  @js.native
-  sealed trait NICEST extends WebGLConstants
-  
-  @js.native
-  sealed trait NONE extends WebGLConstants
-  
-  @js.native
-  sealed trait NOTEQUAL extends WebGLConstants
-  
-  @js.native
-  sealed trait NO_ERROR extends WebGLConstants
-  
-  @js.native
-  sealed trait OBJECT_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_CONSTANT_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_CONSTANT_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_DST_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_DST_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_SRC_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait ONE_MINUS_SRC_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait OUT_OF_MEMORY extends WebGLConstants
-  
-  @js.native
-  sealed trait PACK_ALIGNMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait PACK_ROW_LENGTH extends WebGLConstants
-  
-  @js.native
-  sealed trait PACK_SKIP_PIXELS extends WebGLConstants
-  
-  @js.native
-  sealed trait PACK_SKIP_ROWS extends WebGLConstants
-  
-  @js.native
-  sealed trait PIXEL_PACK_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait PIXEL_PACK_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait PIXEL_UNPACK_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait PIXEL_UNPACK_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait POINTS extends WebGLConstants
-  
-  @js.native
-  sealed trait POLYGON_OFFSET_FACTOR extends WebGLConstants
-  
-  @js.native
-  sealed trait POLYGON_OFFSET_FILL extends WebGLConstants
-  
-  @js.native
-  sealed trait POLYGON_OFFSET_UNITS extends WebGLConstants
-  
-  @js.native
-  sealed trait QUERY_RESULT extends WebGLConstants
-  
-  @js.native
-  sealed trait QUERY_RESULT_AVAILABLE extends WebGLConstants
-  
-  @js.native
-  sealed trait R11F_G11F_B10F extends WebGLConstants
-  
-  @js.native
-  sealed trait R16F extends WebGLConstants
-  
-  @js.native
-  sealed trait R16I extends WebGLConstants
-  
-  @js.native
-  sealed trait R16UI extends WebGLConstants
-  
-  @js.native
-  sealed trait R32F extends WebGLConstants
-  
-  @js.native
-  sealed trait R32I extends WebGLConstants
-  
-  @js.native
-  sealed trait R32UI extends WebGLConstants
-  
-  @js.native
-  sealed trait R8 extends WebGLConstants
-  
-  @js.native
-  sealed trait R8I extends WebGLConstants
-  
-  @js.native
-  sealed trait R8UI extends WebGLConstants
-  
-  @js.native
-  sealed trait R8_SNORM extends WebGLConstants
-  
-  @js.native
-  sealed trait RASTERIZER_DISCARD extends WebGLConstants
-  
-  @js.native
-  sealed trait READ_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait READ_FRAMEBUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait READ_FRAMEBUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait RED extends WebGLConstants
-  
-  @js.native
-  sealed trait RED_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait RED_INTEGER extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_ALPHA_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_BLUE_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_DEPTH_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_GREEN_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_HEIGHT extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_INTERNAL_FORMAT extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_RED_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_SAMPLES extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_STENCIL_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERBUFFER_WIDTH extends WebGLConstants
-  
-  @js.native
-  sealed trait RENDERER extends WebGLConstants
-  
-  @js.native
-  sealed trait REPEAT extends WebGLConstants
-  
-  @js.native
-  sealed trait REPLACE extends WebGLConstants
-  
-  @js.native
-  sealed trait RG extends WebGLConstants
-  
-  @js.native
-  sealed trait RG16F extends WebGLConstants
-  
-  @js.native
-  sealed trait RG16I extends WebGLConstants
-  
-  @js.native
-  sealed trait RG16UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RG32F extends WebGLConstants
-  
-  @js.native
-  sealed trait RG32I extends WebGLConstants
-  
-  @js.native
-  sealed trait RG32UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RG8 extends WebGLConstants
-  
-  @js.native
-  sealed trait RG8I extends WebGLConstants
-  
-  @js.native
-  sealed trait RG8UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RG8_SNORM extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB10_A2 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB10_A2UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB16F extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB16I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB16UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB32F extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB32I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB32UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB565 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB5_A1 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB8 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB8I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB8UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB8_SNORM extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB9_E5 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA16F extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA16I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA16UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA32F extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA32I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA32UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA4 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA8 extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA8I extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA8UI extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA8_SNORM extends WebGLConstants
-  
-  @js.native
-  sealed trait RGBA_INTEGER extends WebGLConstants
-  
-  @js.native
-  sealed trait RGB_INTEGER extends WebGLConstants
-  
-  @js.native
-  sealed trait RG_INTEGER extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_2D extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_2D_ARRAY extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_2D_ARRAY_SHADOW extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_2D_SHADOW extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_3D extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_CUBE extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLER_CUBE_SHADOW extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLES extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLE_ALPHA_TO_COVERAGE extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLE_BUFFERS extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLE_COVERAGE extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLE_COVERAGE_INVERT extends WebGLConstants
-  
-  @js.native
-  sealed trait SAMPLE_COVERAGE_VALUE extends WebGLConstants
-  
-  @js.native
-  sealed trait SCISSOR_BOX extends WebGLConstants
-  
-  @js.native
-  sealed trait SCISSOR_TEST extends WebGLConstants
-  
-  @js.native
-  sealed trait SEPARATE_ATTRIBS extends WebGLConstants
-  
-  @js.native
-  sealed trait SHADER_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait SHADING_LANGUAGE_VERSION extends WebGLConstants
-  
-  @js.native
-  sealed trait SHORT extends WebGLConstants
-  
-  @js.native
-  sealed trait SIGNALED extends WebGLConstants
-  
-  @js.native
-  sealed trait SIGNED_NORMALIZED extends WebGLConstants
-  
-  @js.native
-  sealed trait SRC_ALPHA extends WebGLConstants
-  
-  @js.native
-  sealed trait SRC_ALPHA_SATURATE extends WebGLConstants
-  
-  @js.native
-  sealed trait SRC_COLOR extends WebGLConstants
-  
-  @js.native
-  sealed trait SRGB extends WebGLConstants
-  
-  @js.native
-  sealed trait SRGB8 extends WebGLConstants
-  
-  @js.native
-  sealed trait SRGB8_ALPHA8 extends WebGLConstants
-  
-  @js.native
-  sealed trait STATIC_COPY extends WebGLConstants
-  
-  @js.native
-  sealed trait STATIC_DRAW extends WebGLConstants
-  
-  @js.native
-  sealed trait STATIC_READ extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_ATTACHMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_FAIL extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_FUNC extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_PASS_DEPTH_FAIL extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_PASS_DEPTH_PASS extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_REF extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_VALUE_MASK extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BACK_WRITEMASK extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_BUFFER_BIT extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_CLEAR_VALUE extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_FAIL extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_FUNC extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_INDEX extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_INDEX8 extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_PASS_DEPTH_FAIL extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_PASS_DEPTH_PASS extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_REF extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_TEST extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_VALUE_MASK extends WebGLConstants
-  
-  @js.native
-  sealed trait STENCIL_WRITEMASK extends WebGLConstants
-  
-  @js.native
-  sealed trait STREAM_COPY extends WebGLConstants
-  
-  @js.native
-  sealed trait STREAM_DRAW extends WebGLConstants
-  
-  @js.native
-  sealed trait STREAM_READ extends WebGLConstants
-  
-  @js.native
-  sealed trait SUBPIXEL_BITS extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_CONDITION extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_FENCE extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_FLAGS extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_FLUSH_COMMANDS_BIT extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_GPU_COMMANDS_COMPLETE extends WebGLConstants
-  
-  @js.native
-  sealed trait SYNC_STATUS extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE0 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE1 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE10 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE11 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE12 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE13 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE14 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE15 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE16 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE17 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE18 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE19 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE2 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE20 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE21 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE22 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE23 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE24 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE25 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE26 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE27 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE28 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE29 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE3 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE30 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE31 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE4 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE5 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE6 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE7 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE8 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE9 extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_2D extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_2D_ARRAY extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_3D extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_BASE_LEVEL extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_BINDING_2D extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_BINDING_2D_ARRAY extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_BINDING_3D extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_BINDING_CUBE_MAP extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_COMPARE_FUNC extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_COMPARE_MODE extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_X extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Y extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Z extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_X extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Y extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_IMMUTABLE_FORMAT extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_IMMUTABLE_LEVELS extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_MAG_FILTER extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_MAX_LEVEL extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_MAX_LOD extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_MIN_FILTER extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_MIN_LOD extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_WRAP_R extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_WRAP_S extends WebGLConstants
-  
-  @js.native
-  sealed trait TEXTURE_WRAP_T extends WebGLConstants
-  
-  @js.native
-  sealed trait TIMEOUT_EXPIRED extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_ACTIVE extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BUFFER_MODE extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BUFFER_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_BUFFER_START extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_PAUSED extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN extends WebGLConstants
-  
-  @js.native
-  sealed trait TRANSFORM_FEEDBACK_VARYINGS extends WebGLConstants
-  
-  @js.native
-  sealed trait TRIANGLES extends WebGLConstants
-  
-  @js.native
-  sealed trait TRIANGLE_FAN extends WebGLConstants
-  
-  @js.native
-  sealed trait TRIANGLE_STRIP extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_ARRAY_STRIDE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORMS extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_DATA_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_INDEX extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BUFFER extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BUFFER_OFFSET_ALIGNMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BUFFER_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_BUFFER_START extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_IS_ROW_MAJOR extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_MATRIX_STRIDE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_OFFSET extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNIFORM_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_ALIGNMENT extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_COLORSPACE_CONVERSION_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_FLIP_Y_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_IMAGE_HEIGHT extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_PREMULTIPLY_ALPHA_WEBGL extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_ROW_LENGTH extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_SKIP_IMAGES extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_SKIP_PIXELS extends WebGLConstants
-  
-  @js.native
-  sealed trait UNPACK_SKIP_ROWS extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNALED extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_BYTE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_10F_11F_11F_REV extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_24_8 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_2_10_10_10_REV extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_5_9_9_9_REV extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_SAMPLER_2D extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_SAMPLER_2D_ARRAY extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_SAMPLER_3D extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_SAMPLER_CUBE extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_VEC2 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_VEC3 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_INT_VEC4 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_NORMALIZED extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_SHORT extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_SHORT_4_4_4_4 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_SHORT_5_5_5_1 extends WebGLConstants
-  
-  @js.native
-  sealed trait UNSIGNED_SHORT_5_6_5 extends WebGLConstants
-  
-  @js.native
-  sealed trait VALIDATE_STATUS extends WebGLConstants
-  
-  @js.native
-  sealed trait VENDOR extends WebGLConstants
-  
-  @js.native
-  sealed trait VERSION extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ARRAY_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_BUFFER_BINDING extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_DIVISOR extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_ENABLED extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_INTEGER extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_NORMALIZED extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_POINTER extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_SIZE extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_STRIDE extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_ATTRIB_ARRAY_TYPE extends WebGLConstants
-  
-  @js.native
-  sealed trait VERTEX_SHADER extends WebGLConstants
-  
-  @js.native
-  sealed trait VIEWPORT extends WebGLConstants
-  
-  @js.native
-  sealed trait WAIT_FAILED extends WebGLConstants
-  
-  @js.native
-  sealed trait ZERO extends WebGLConstants
+object WebGLConstants extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WebGLConstants with Double] = js.native
-  /* 147 */ @js.native
-  object ACTIVE_ATTRIBUTES extends TopLevel[ACTIVE_ATTRIBUTES with Double]
-  
-  /* 221 */ @js.native
-  object ACTIVE_TEXTURE extends TopLevel[ACTIVE_TEXTURE with Double]
-  
-  /* 146 */ @js.native
-  object ACTIVE_UNIFORMS extends TopLevel[ACTIVE_UNIFORMS with Double]
-  
-  /* 525 */ @js.native
-  object ACTIVE_UNIFORM_BLOCKS extends TopLevel[ACTIVE_UNIFORM_BLOCKS with Double]
-  
-  /* 67 */ @js.native
-  object ALIASED_LINE_WIDTH_RANGE extends TopLevel[ALIASED_LINE_WIDTH_RANGE with Double]
-  
-  /* 66 */ @js.native
-  object ALIASED_POINT_SIZE_RANGE extends TopLevel[ALIASED_POINT_SIZE_RANGE with Double]
-  
-  /* 124 */ @js.native
-  object ALPHA extends TopLevel[ALPHA with Double]
-  
-  /* 101 */ @js.native
-  object ALPHA_BITS extends TopLevel[ALPHA_BITS with Double]
-  
-  /* 551 */ @js.native
-  object ALREADY_SIGNALED extends TopLevel[ALREADY_SIGNALED with Double]
-  
-  /* 157 */ @js.native
-  object ALWAYS extends TopLevel[ALWAYS with Double]
-  
-  /* 557 */ @js.native
-  object ANY_SAMPLES_PASSED extends TopLevel[ANY_SAMPLES_PASSED with Double]
-  
-  /* 558 */ @js.native
-  object ANY_SAMPLES_PASSED_CONSERVATIVE extends TopLevel[ANY_SAMPLES_PASSED_CONSERVATIVE with Double]
-  
-  /* 36 */ @js.native
-  object ARRAY_BUFFER extends TopLevel[ARRAY_BUFFER with Double]
-  
-  /* 38 */ @js.native
-  object ARRAY_BUFFER_BINDING extends TopLevel[ARRAY_BUFFER_BINDING with Double]
-  
-  /* 145 */ @js.native
-  object ATTACHED_SHADERS extends TopLevel[ATTACHED_SHADERS with Double]
-  
-  /* 47 */ @js.native
-  object BACK extends TopLevel[BACK with Double]
-  
-  /* 50 */ @js.native
-  object BLEND extends TopLevel[BLEND with Double]
-  
-  /* 35 */ @js.native
-  object BLEND_COLOR extends TopLevel[BLEND_COLOR with Double]
-  
-  /* 29 */ @js.native
-  object BLEND_DST_ALPHA extends TopLevel[BLEND_DST_ALPHA with Double]
-  
-  /* 27 */ @js.native
-  object BLEND_DST_RGB extends TopLevel[BLEND_DST_RGB with Double]
-  
-  /* 22 */ @js.native
-  object BLEND_EQUATION extends TopLevel[BLEND_EQUATION with Double]
-  
-  /* 24 */ @js.native
-  object BLEND_EQUATION_ALPHA extends TopLevel[BLEND_EQUATION_ALPHA with Double]
-  
-  /* 23 */ @js.native
-  object BLEND_EQUATION_RGB extends TopLevel[BLEND_EQUATION_RGB with Double]
-  
-  /* 30 */ @js.native
-  object BLEND_SRC_ALPHA extends TopLevel[BLEND_SRC_ALPHA with Double]
-  
-  /* 28 */ @js.native
-  object BLEND_SRC_RGB extends TopLevel[BLEND_SRC_RGB with Double]
-  
-  /* 100 */ @js.native
-  object BLUE_BITS extends TopLevel[BLUE_BITS with Double]
-  
-  /* 231 */ @js.native
-  object BOOL extends TopLevel[BOOL with Double]
-  
-  /* 232 */ @js.native
-  object BOOL_VEC2 extends TopLevel[BOOL_VEC2 with Double]
-  
-  /* 233 */ @js.native
-  object BOOL_VEC3 extends TopLevel[BOOL_VEC3 with Double]
-  
-  /* 234 */ @js.native
-  object BOOL_VEC4 extends TopLevel[BOOL_VEC4 with Double]
-  
-  /* 296 */ @js.native
-  object BROWSER_DEFAULT_WEBGL extends TopLevel[BROWSER_DEFAULT_WEBGL with Double]
-  
-  /* 43 */ @js.native
-  object BUFFER_SIZE extends TopLevel[BUFFER_SIZE with Double]
-  
-  /* 44 */ @js.native
-  object BUFFER_USAGE extends TopLevel[BUFFER_USAGE with Double]
-  
-  /* 116 */ @js.native
-  object BYTE extends TopLevel[BYTE with Double]
-  
-  /* 64 */ @js.native
-  object CCW extends TopLevel[CCW with Double]
-  
-  /* 223 */ @js.native
-  object CLAMP_TO_EDGE extends TopLevel[CLAMP_TO_EDGE with Double]
-  
-  /* 315 */ @js.native
-  object COLOR extends TopLevel[COLOR with Double]
-  
-  /* 278 */ @js.native
-  object COLOR_ATTACHMENT0 extends TopLevel[COLOR_ATTACHMENT0 with Double]
-  
-  /* 465 */ @js.native
-  object COLOR_ATTACHMENT1 extends TopLevel[COLOR_ATTACHMENT1 with Double]
-  
-  /* 474 */ @js.native
-  object COLOR_ATTACHMENT10 extends TopLevel[COLOR_ATTACHMENT10 with Double]
-  
-  /* 475 */ @js.native
-  object COLOR_ATTACHMENT11 extends TopLevel[COLOR_ATTACHMENT11 with Double]
-  
-  /* 476 */ @js.native
-  object COLOR_ATTACHMENT12 extends TopLevel[COLOR_ATTACHMENT12 with Double]
-  
-  /* 477 */ @js.native
-  object COLOR_ATTACHMENT13 extends TopLevel[COLOR_ATTACHMENT13 with Double]
-  
-  /* 478 */ @js.native
-  object COLOR_ATTACHMENT14 extends TopLevel[COLOR_ATTACHMENT14 with Double]
-  
-  /* 479 */ @js.native
-  object COLOR_ATTACHMENT15 extends TopLevel[COLOR_ATTACHMENT15 with Double]
-  
-  /* 466 */ @js.native
-  object COLOR_ATTACHMENT2 extends TopLevel[COLOR_ATTACHMENT2 with Double]
-  
-  /* 467 */ @js.native
-  object COLOR_ATTACHMENT3 extends TopLevel[COLOR_ATTACHMENT3 with Double]
-  
-  /* 468 */ @js.native
-  object COLOR_ATTACHMENT4 extends TopLevel[COLOR_ATTACHMENT4 with Double]
-  
-  /* 469 */ @js.native
-  object COLOR_ATTACHMENT5 extends TopLevel[COLOR_ATTACHMENT5 with Double]
-  
-  /* 470 */ @js.native
-  object COLOR_ATTACHMENT6 extends TopLevel[COLOR_ATTACHMENT6 with Double]
-  
-  /* 471 */ @js.native
-  object COLOR_ATTACHMENT7 extends TopLevel[COLOR_ATTACHMENT7 with Double]
-  
-  /* 472 */ @js.native
-  object COLOR_ATTACHMENT8 extends TopLevel[COLOR_ATTACHMENT8 with Double]
-  
-  /* 473 */ @js.native
-  object COLOR_ATTACHMENT9 extends TopLevel[COLOR_ATTACHMENT9 with Double]
-  
-  /* 2 */ @js.native
-  object COLOR_BUFFER_BIT extends TopLevel[COLOR_BUFFER_BIT with Double]
-  
-  /* 91 */ @js.native
-  object COLOR_CLEAR_VALUE extends TopLevel[COLOR_CLEAR_VALUE with Double]
-  
-  /* 92 */ @js.native
-  object COLOR_WRITEMASK extends TopLevel[COLOR_WRITEMASK with Double]
-  
-  /* 385 */ @js.native
-  object COMPARE_REF_TO_TEXTURE extends TopLevel[COMPARE_REF_TO_TEXTURE with Double]
-  
-  /* 249 */ @js.native
-  object COMPILE_STATUS extends TopLevel[COMPILE_STATUS with Double]
-  
-  /* 566 */ @js.native
-  object COMPRESSED_R11_EAC extends TopLevel[COMPRESSED_R11_EAC with Double]
-  
-  /* 568 */ @js.native
-  object COMPRESSED_RG11_EAC extends TopLevel[COMPRESSED_RG11_EAC with Double]
-  
-  /* 570 */ @js.native
-  object COMPRESSED_RGB8_ETC2 extends TopLevel[COMPRESSED_RGB8_ETC2 with Double]
-  
-  /* 572 */ @js.native
-  object COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends TopLevel[COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double]
-  
-  /* 574 */ @js.native
-  object COMPRESSED_RGBA8_ETC2_EAC extends TopLevel[COMPRESSED_RGBA8_ETC2_EAC with Double]
-  
-  /* 304 */ @js.native
-  object COMPRESSED_RGBA_PVRTC_2BPPV1_IMG extends TopLevel[COMPRESSED_RGBA_PVRTC_2BPPV1_IMG with Double]
-  
-  /* 303 */ @js.native
-  object COMPRESSED_RGBA_PVRTC_4BPPV1_IMG extends TopLevel[COMPRESSED_RGBA_PVRTC_4BPPV1_IMG with Double]
-  
-  /* 298 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT1_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT1_EXT with Double]
-  
-  /* 299 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT3_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT3_EXT with Double]
-  
-  /* 300 */ @js.native
-  object COMPRESSED_RGBA_S3TC_DXT5_EXT extends TopLevel[COMPRESSED_RGBA_S3TC_DXT5_EXT with Double]
-  
-  /* 305 */ @js.native
-  object COMPRESSED_RGB_ETC1_WEBGL extends TopLevel[COMPRESSED_RGB_ETC1_WEBGL with Double]
-  
-  /* 302 */ @js.native
-  object COMPRESSED_RGB_PVRTC_2BPPV1_IMG extends TopLevel[COMPRESSED_RGB_PVRTC_2BPPV1_IMG with Double]
-  
-  /* 301 */ @js.native
-  object COMPRESSED_RGB_PVRTC_4BPPV1_IMG extends TopLevel[COMPRESSED_RGB_PVRTC_4BPPV1_IMG with Double]
-  
-  /* 297 */ @js.native
-  object COMPRESSED_RGB_S3TC_DXT1_EXT extends TopLevel[COMPRESSED_RGB_S3TC_DXT1_EXT with Double]
-  
-  /* 567 */ @js.native
-  object COMPRESSED_SIGNED_R11_EAC extends TopLevel[COMPRESSED_SIGNED_R11_EAC with Double]
-  
-  /* 569 */ @js.native
-  object COMPRESSED_SIGNED_RG11_EAC extends TopLevel[COMPRESSED_SIGNED_RG11_EAC with Double]
-  
-  /* 575 */ @js.native
-  object COMPRESSED_SRGB8_ALPHA8_ETC2_EAC extends TopLevel[COMPRESSED_SRGB8_ALPHA8_ETC2_EAC with Double]
-  
-  /* 571 */ @js.native
-  object COMPRESSED_SRGB8_ETC2 extends TopLevel[COMPRESSED_SRGB8_ETC2 with Double]
-  
-  /* 573 */ @js.native
-  object COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 extends TopLevel[COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 with Double]
-  
-  /* 111 */ @js.native
-  object COMPRESSED_TEXTURE_FORMATS extends TopLevel[COMPRESSED_TEXTURE_FORMATS with Double]
-  
-  /* 553 */ @js.native
-  object CONDITION_SATISFIED extends TopLevel[CONDITION_SATISFIED with Double]
-  
-  /* 33 */ @js.native
-  object CONSTANT_ALPHA extends TopLevel[CONSTANT_ALPHA with Double]
-  
-  /* 31 */ @js.native
-  object CONSTANT_COLOR extends TopLevel[CONSTANT_COLOR with Double]
-  
-  /* 294 */ @js.native
-  object CONTEXT_LOST_WEBGL extends TopLevel[CONTEXT_LOST_WEBGL with Double]
-  
-  /* 509 */ @js.native
-  object COPY_READ_BUFFER extends TopLevel[COPY_READ_BUFFER with Double]
-  
-  /* 511 */ @js.native
-  object COPY_READ_BUFFER_BINDING extends TopLevel[COPY_READ_BUFFER_BINDING with Double]
-  
-  /* 510 */ @js.native
-  object COPY_WRITE_BUFFER extends TopLevel[COPY_WRITE_BUFFER with Double]
-  
-  /* 512 */ @js.native
-  object COPY_WRITE_BUFFER_BINDING extends TopLevel[COPY_WRITE_BUFFER_BINDING with Double]
-  
-  /* 49 */ @js.native
-  object CULL_FACE extends TopLevel[CULL_FACE with Double]
-  
-  /* 68 */ @js.native
-  object CULL_FACE_MODE extends TopLevel[CULL_FACE_MODE with Double]
-  
-  /* 149 */ @js.native
-  object CURRENT_PROGRAM extends TopLevel[CURRENT_PROGRAM with Double]
-  
-  /* 341 */ @js.native
-  object CURRENT_QUERY extends TopLevel[CURRENT_QUERY with Double]
-  
-  /* 45 */ @js.native
-  object CURRENT_VERTEX_ATTRIB extends TopLevel[CURRENT_VERTEX_ATTRIB with Double]
-  
-  /* 63 */ @js.native
-  object CW extends TopLevel[CW with Double]
-  
-  /* 161 */ @js.native
-  object DECR extends TopLevel[DECR with Double]
-  
-  /* 164 */ @js.native
-  object DECR_WRAP extends TopLevel[DECR_WRAP with Double]
-  
-  /* 142 */ @js.native
-  object DELETE_STATUS extends TopLevel[DELETE_STATUS with Double]
-  
-  /* 316 */ @js.native
-  object DEPTH extends TopLevel[DEPTH with Double]
-  
-  /* 456 */ @js.native
-  object DEPTH24_STENCIL8 extends TopLevel[DEPTH24_STENCIL8 with Double]
-  
-  /* 444 */ @js.native
-  object DEPTH32F_STENCIL8 extends TopLevel[DEPTH32F_STENCIL8 with Double]
-  
-  /* 279 */ @js.native
-  object DEPTH_ATTACHMENT extends TopLevel[DEPTH_ATTACHMENT with Double]
-  
-  /* 102 */ @js.native
-  object DEPTH_BITS extends TopLevel[DEPTH_BITS with Double]
-  
-  /* 0 */ @js.native
-  object DEPTH_BUFFER_BIT extends TopLevel[DEPTH_BUFFER_BIT with Double]
-  
-  /* 72 */ @js.native
-  object DEPTH_CLEAR_VALUE extends TopLevel[DEPTH_CLEAR_VALUE with Double]
-  
-  /* 123 */ @js.native
-  object DEPTH_COMPONENT extends TopLevel[DEPTH_COMPONENT with Double]
-  
-  /* 261 */ @js.native
-  object DEPTH_COMPONENT16 extends TopLevel[DEPTH_COMPONENT16 with Double]
-  
-  /* 337 */ @js.native
-  object DEPTH_COMPONENT24 extends TopLevel[DEPTH_COMPONENT24 with Double]
-  
-  /* 443 */ @js.native
-  object DEPTH_COMPONENT32F extends TopLevel[DEPTH_COMPONENT32F with Double]
-  
-  /* 73 */ @js.native
-  object DEPTH_FUNC extends TopLevel[DEPTH_FUNC with Double]
-  
-  /* 70 */ @js.native
-  object DEPTH_RANGE extends TopLevel[DEPTH_RANGE with Double]
-  
-  /* 264 */ @js.native
-  object DEPTH_STENCIL extends TopLevel[DEPTH_STENCIL with Double]
-  
-  /* 281 */ @js.native
-  object DEPTH_STENCIL_ATTACHMENT extends TopLevel[DEPTH_STENCIL_ATTACHMENT with Double]
-  
-  /* 53 */ @js.native
-  object DEPTH_TEST extends TopLevel[DEPTH_TEST with Double]
-  
-  /* 71 */ @js.native
-  object DEPTH_WRITEMASK extends TopLevel[DEPTH_WRITEMASK with Double]
-  
-  /* 51 */ @js.native
-  object DITHER extends TopLevel[DITHER with Double]
-  
-  /* 112 */ @js.native
-  object DONT_CARE extends TopLevel[DONT_CARE with Double]
-  
-  /* 307 */ @js.native
-  object DOUBLE extends TopLevel[DOUBLE with Double]
-  
-  /* 351 */ @js.native
-  object DRAW_BUFFER0 extends TopLevel[DRAW_BUFFER0 with Double]
-  
-  /* 352 */ @js.native
-  object DRAW_BUFFER1 extends TopLevel[DRAW_BUFFER1 with Double]
-  
-  /* 361 */ @js.native
-  object DRAW_BUFFER10 extends TopLevel[DRAW_BUFFER10 with Double]
-  
-  /* 362 */ @js.native
-  object DRAW_BUFFER11 extends TopLevel[DRAW_BUFFER11 with Double]
-  
-  /* 363 */ @js.native
-  object DRAW_BUFFER12 extends TopLevel[DRAW_BUFFER12 with Double]
-  
-  /* 364 */ @js.native
-  object DRAW_BUFFER13 extends TopLevel[DRAW_BUFFER13 with Double]
-  
-  /* 365 */ @js.native
-  object DRAW_BUFFER14 extends TopLevel[DRAW_BUFFER14 with Double]
-  
-  /* 366 */ @js.native
-  object DRAW_BUFFER15 extends TopLevel[DRAW_BUFFER15 with Double]
-  
-  /* 353 */ @js.native
-  object DRAW_BUFFER2 extends TopLevel[DRAW_BUFFER2 with Double]
-  
-  /* 354 */ @js.native
-  object DRAW_BUFFER3 extends TopLevel[DRAW_BUFFER3 with Double]
-  
-  /* 355 */ @js.native
-  object DRAW_BUFFER4 extends TopLevel[DRAW_BUFFER4 with Double]
-  
-  /* 356 */ @js.native
-  object DRAW_BUFFER5 extends TopLevel[DRAW_BUFFER5 with Double]
-  
-  /* 357 */ @js.native
-  object DRAW_BUFFER6 extends TopLevel[DRAW_BUFFER6 with Double]
-  
-  /* 358 */ @js.native
-  object DRAW_BUFFER7 extends TopLevel[DRAW_BUFFER7 with Double]
-  
-  /* 359 */ @js.native
-  object DRAW_BUFFER8 extends TopLevel[DRAW_BUFFER8 with Double]
-  
-  /* 360 */ @js.native
-  object DRAW_BUFFER9 extends TopLevel[DRAW_BUFFER9 with Double]
-  
-  /* 460 */ @js.native
-  object DRAW_FRAMEBUFFER extends TopLevel[DRAW_FRAMEBUFFER with Double]
-  
-  /* 458 */ @js.native
-  object DRAW_FRAMEBUFFER_BINDING extends TopLevel[DRAW_FRAMEBUFFER_BINDING with Double]
-  
-  /* 16 */ @js.native
-  object DST_ALPHA extends TopLevel[DST_ALPHA with Double]
-  
-  /* 18 */ @js.native
-  object DST_COLOR extends TopLevel[DST_COLOR with Double]
-  
-  /* 349 */ @js.native
-  object DYNAMIC_COPY extends TopLevel[DYNAMIC_COPY with Double]
-  
-  /* 42 */ @js.native
-  object DYNAMIC_DRAW extends TopLevel[DYNAMIC_DRAW with Double]
-  
-  /* 348 */ @js.native
-  object DYNAMIC_READ extends TopLevel[DYNAMIC_READ with Double]
-  
-  /* 37 */ @js.native
-  object ELEMENT_ARRAY_BUFFER extends TopLevel[ELEMENT_ARRAY_BUFFER with Double]
-  
-  /* 39 */ @js.native
-  object ELEMENT_ARRAY_BUFFER_BINDING extends TopLevel[ELEMENT_ARRAY_BUFFER_BINDING with Double]
-  
-  /* 152 */ @js.native
-  object EQUAL extends TopLevel[EQUAL with Double]
-  
-  /* 113 */ @js.native
-  object FASTEST extends TopLevel[FASTEST with Double]
-  
-  /* 122 */ @js.native
-  object FLOAT extends TopLevel[FLOAT with Double]
-  
-  /* 445 */ @js.native
-  object FLOAT_32_UNSIGNED_INT_24_8_REV extends TopLevel[FLOAT_32_UNSIGNED_INT_24_8_REV with Double]
-  
-  /* 235 */ @js.native
-  object FLOAT_MAT2 extends TopLevel[FLOAT_MAT2 with Double]
-  
-  /* 376 */ @js.native
-  object FLOAT_MAT2x3 extends TopLevel[FLOAT_MAT2x3 with Double]
-  
-  /* 377 */ @js.native
-  object FLOAT_MAT2x4 extends TopLevel[FLOAT_MAT2x4 with Double]
-  
-  /* 236 */ @js.native
-  object FLOAT_MAT3 extends TopLevel[FLOAT_MAT3 with Double]
-  
-  /* 378 */ @js.native
-  object FLOAT_MAT3x2 extends TopLevel[FLOAT_MAT3x2 with Double]
-  
-  /* 379 */ @js.native
-  object FLOAT_MAT3x4 extends TopLevel[FLOAT_MAT3x4 with Double]
-  
-  /* 237 */ @js.native
-  object FLOAT_MAT4 extends TopLevel[FLOAT_MAT4 with Double]
-  
-  /* 380 */ @js.native
-  object FLOAT_MAT4x2 extends TopLevel[FLOAT_MAT4x2 with Double]
-  
-  /* 381 */ @js.native
-  object FLOAT_MAT4x3 extends TopLevel[FLOAT_MAT4x3 with Double]
-  
-  /* 225 */ @js.native
-  object FLOAT_VEC2 extends TopLevel[FLOAT_VEC2 with Double]
-  
-  /* 226 */ @js.native
-  object FLOAT_VEC3 extends TopLevel[FLOAT_VEC3 with Double]
-  
-  /* 227 */ @js.native
-  object FLOAT_VEC4 extends TopLevel[FLOAT_VEC4 with Double]
-  
-  /* 132 */ @js.native
-  object FRAGMENT_SHADER extends TopLevel[FRAGMENT_SHADER with Double]
-  
-  /* 371 */ @js.native
-  object FRAGMENT_SHADER_DERIVATIVE_HINT extends TopLevel[FRAGMENT_SHADER_DERIVATIVE_HINT with Double]
-  
-  /* 256 */ @js.native
-  object FRAMEBUFFER extends TopLevel[FRAMEBUFFER with Double]
-  
-  /* 451 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE with Double]
-  
-  /* 450 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_BLUE_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_BLUE_SIZE with Double]
-  
-  /* 446 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING extends TopLevel[FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING with Double]
-  
-  /* 447 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE extends TopLevel[FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE with Double]
-  
-  /* 452 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE with Double]
-  
-  /* 449 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_GREEN_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_GREEN_SIZE with Double]
-  
-  /* 275 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_OBJECT_NAME extends TopLevel[FRAMEBUFFER_ATTACHMENT_OBJECT_NAME with Double]
-  
-  /* 274 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE extends TopLevel[FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE with Double]
-  
-  /* 448 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_RED_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_RED_SIZE with Double]
-  
-  /* 453 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE extends TopLevel[FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE with Double]
-  
-  /* 277 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE with Double]
-  
-  /* 463 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER with Double]
-  
-  /* 276 */ @js.native
-  object FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL extends TopLevel[FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL with Double]
-  
-  /* 288 */ @js.native
-  object FRAMEBUFFER_BINDING extends TopLevel[FRAMEBUFFER_BINDING with Double]
-  
-  /* 283 */ @js.native
-  object FRAMEBUFFER_COMPLETE extends TopLevel[FRAMEBUFFER_COMPLETE with Double]
-  
-  /* 454 */ @js.native
-  object FRAMEBUFFER_DEFAULT extends TopLevel[FRAMEBUFFER_DEFAULT with Double]
-  
-  /* 284 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_ATTACHMENT extends TopLevel[FRAMEBUFFER_INCOMPLETE_ATTACHMENT with Double]
-  
-  /* 286 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_DIMENSIONS extends TopLevel[FRAMEBUFFER_INCOMPLETE_DIMENSIONS with Double]
-  
-  /* 285 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT extends TopLevel[FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT with Double]
-  
-  /* 480 */ @js.native
-  object FRAMEBUFFER_INCOMPLETE_MULTISAMPLE extends TopLevel[FRAMEBUFFER_INCOMPLETE_MULTISAMPLE with Double]
-  
-  /* 287 */ @js.native
-  object FRAMEBUFFER_UNSUPPORTED extends TopLevel[FRAMEBUFFER_UNSUPPORTED with Double]
-  
-  /* 46 */ @js.native
-  object FRONT extends TopLevel[FRONT with Double]
-  
-  /* 48 */ @js.native
-  object FRONT_AND_BACK extends TopLevel[FRONT_AND_BACK with Double]
-  
-  /* 69 */ @js.native
-  object FRONT_FACE extends TopLevel[FRONT_FACE with Double]
-  
-  /* 21 */ @js.native
-  object FUNC_ADD extends TopLevel[FUNC_ADD with Double]
-  
-  /* 26 */ @js.native
-  object FUNC_REVERSE_SUBTRACT extends TopLevel[FUNC_REVERSE_SUBTRACT with Double]
-  
-  /* 25 */ @js.native
-  object FUNC_SUBTRACT extends TopLevel[FUNC_SUBTRACT with Double]
-  
-  /* 115 */ @js.native
-  object GENERATE_MIPMAP_HINT extends TopLevel[GENERATE_MIPMAP_HINT with Double]
-  
-  /* 156 */ @js.native
-  object GEQUAL extends TopLevel[GEQUAL with Double]
-  
-  /* 154 */ @js.native
-  object GREATER extends TopLevel[GREATER with Double]
-  
-  /* 99 */ @js.native
-  object GREEN_BITS extends TopLevel[GREEN_BITS with Double]
-  
-  /* 482 */ @js.native
-  object HALF_FLOAT extends TopLevel[HALF_FLOAT with Double]
-  
-  /* 306 */ @js.native
-  object HALF_FLOAT_OES extends TopLevel[HALF_FLOAT_OES with Double]
-  
-  /* 252 */ @js.native
-  object HIGH_FLOAT extends TopLevel[HIGH_FLOAT with Double]
-  
-  /* 255 */ @js.native
-  object HIGH_INT extends TopLevel[HIGH_INT with Double]
-  
-  /* 248 */ @js.native
-  object IMPLEMENTATION_COLOR_READ_FORMAT extends TopLevel[IMPLEMENTATION_COLOR_READ_FORMAT with Double]
-  
-  /* 247 */ @js.native
-  object IMPLEMENTATION_COLOR_READ_TYPE extends TopLevel[IMPLEMENTATION_COLOR_READ_TYPE with Double]
-  
-  /* 160 */ @js.native
-  object INCR extends TopLevel[INCR with Double]
-  
-  /* 163 */ @js.native
-  object INCR_WRAP extends TopLevel[INCR_WRAP with Double]
-  
-  /* 120 */ @js.native
-  object INT extends TopLevel[INT with Double]
-  
-  /* 410 */ @js.native
-  object INTERLEAVED_ATTRIBS extends TopLevel[INTERLEAVED_ATTRIBS with Double]
-  
-  /* 561 */ @js.native
-  object INT_2_10_10_10_REV extends TopLevel[INT_2_10_10_10_REV with Double]
-  
-  /* 435 */ @js.native
-  object INT_SAMPLER_2D extends TopLevel[INT_SAMPLER_2D with Double]
-  
-  /* 438 */ @js.native
-  object INT_SAMPLER_2D_ARRAY extends TopLevel[INT_SAMPLER_2D_ARRAY with Double]
-  
-  /* 436 */ @js.native
-  object INT_SAMPLER_3D extends TopLevel[INT_SAMPLER_3D with Double]
-  
-  /* 437 */ @js.native
-  object INT_SAMPLER_CUBE extends TopLevel[INT_SAMPLER_CUBE with Double]
-  
-  /* 228 */ @js.native
-  object INT_VEC2 extends TopLevel[INT_VEC2 with Double]
-  
-  /* 229 */ @js.native
-  object INT_VEC3 extends TopLevel[INT_VEC3 with Double]
-  
-  /* 230 */ @js.native
-  object INT_VEC4 extends TopLevel[INT_VEC4 with Double]
-  
-  /* 59 */ @js.native
-  object INVALID_ENUM extends TopLevel[INVALID_ENUM with Double]
-  
-  /* 291 */ @js.native
-  object INVALID_FRAMEBUFFER_OPERATION extends TopLevel[INVALID_FRAMEBUFFER_OPERATION with Double]
-  
-  /* 539 */ @js.native
-  object INVALID_INDEX extends TopLevel[INVALID_INDEX with Double]
-  
-  /* 61 */ @js.native
-  object INVALID_OPERATION extends TopLevel[INVALID_OPERATION with Double]
-  
-  /* 60 */ @js.native
-  object INVALID_VALUE extends TopLevel[INVALID_VALUE with Double]
-  
-  /* 162 */ @js.native
-  object INVERT extends TopLevel[INVERT with Double]
-  
-  /* 158 */ @js.native
-  object KEEP extends TopLevel[KEEP with Double]
-  
-  /* 153 */ @js.native
-  object LEQUAL extends TopLevel[LEQUAL with Double]
-  
-  /* 151 */ @js.native
-  object LESS extends TopLevel[LESS with Double]
-  
-  /* 169 */ @js.native
-  object LINEAR extends TopLevel[LINEAR with Double]
-  
-  /* 173 */ @js.native
-  object LINEAR_MIPMAP_LINEAR extends TopLevel[LINEAR_MIPMAP_LINEAR with Double]
-  
-  /* 171 */ @js.native
-  object LINEAR_MIPMAP_NEAREST extends TopLevel[LINEAR_MIPMAP_NEAREST with Double]
-  
-  /* 4 */ @js.native
-  object LINES extends TopLevel[LINES with Double]
-  
-  /* 5 */ @js.native
-  object LINE_LOOP extends TopLevel[LINE_LOOP with Double]
-  
-  /* 6 */ @js.native
-  object LINE_STRIP extends TopLevel[LINE_STRIP with Double]
-  
-  /* 65 */ @js.native
-  object LINE_WIDTH extends TopLevel[LINE_WIDTH with Double]
-  
-  /* 143 */ @js.native
-  object LINK_STATUS extends TopLevel[LINK_STATUS with Double]
-  
-  /* 250 */ @js.native
-  object LOW_FLOAT extends TopLevel[LOW_FLOAT with Double]
-  
-  /* 253 */ @js.native
-  object LOW_INT extends TopLevel[LOW_INT with Double]
-  
-  /* 127 */ @js.native
-  object LUMINANCE extends TopLevel[LUMINANCE with Double]
-  
-  /* 128 */ @js.native
-  object LUMINANCE_ALPHA extends TopLevel[LUMINANCE_ALPHA with Double]
-  
-  /* 336 */ @js.native
-  object MAX extends TopLevel[MAX with Double]
-  
-  /* 327 */ @js.native
-  object MAX_3D_TEXTURE_SIZE extends TopLevel[MAX_3D_TEXTURE_SIZE with Double]
-  
-  /* 391 */ @js.native
-  object MAX_ARRAY_TEXTURE_LAYERS extends TopLevel[MAX_ARRAY_TEXTURE_LAYERS with Double]
-  
-  /* 464 */ @js.native
-  object MAX_COLOR_ATTACHMENTS extends TopLevel[MAX_COLOR_ATTACHMENTS with Double]
-  
-  /* 523 */ @js.native
-  object MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS extends TopLevel[MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS with Double]
-  
-  /* 137 */ @js.native
-  object MAX_COMBINED_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_COMBINED_TEXTURE_IMAGE_UNITS with Double]
-  
-  /* 519 */ @js.native
-  object MAX_COMBINED_UNIFORM_BLOCKS extends TopLevel[MAX_COMBINED_UNIFORM_BLOCKS with Double]
-  
-  /* 522 */ @js.native
-  object MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS extends TopLevel[MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS with Double]
-  
-  /* 188 */ @js.native
-  object MAX_CUBE_MAP_TEXTURE_SIZE extends TopLevel[MAX_CUBE_MAP_TEXTURE_SIZE with Double]
-  
-  /* 350 */ @js.native
-  object MAX_DRAW_BUFFERS extends TopLevel[MAX_DRAW_BUFFERS with Double]
-  
-  /* 330 */ @js.native
-  object MAX_ELEMENTS_INDICES extends TopLevel[MAX_ELEMENTS_INDICES with Double]
-  
-  /* 329 */ @js.native
-  object MAX_ELEMENTS_VERTICES extends TopLevel[MAX_ELEMENTS_VERTICES with Double]
-  
-  /* 577 */ @js.native
-  object MAX_ELEMENT_INDEX extends TopLevel[MAX_ELEMENT_INDEX with Double]
-  
-  /* 541 */ @js.native
-  object MAX_FRAGMENT_INPUT_COMPONENTS extends TopLevel[MAX_FRAGMENT_INPUT_COMPONENTS with Double]
-  
-  /* 518 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_BLOCKS extends TopLevel[MAX_FRAGMENT_UNIFORM_BLOCKS with Double]
-  
-  /* 367 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_COMPONENTS extends TopLevel[MAX_FRAGMENT_UNIFORM_COMPONENTS with Double]
-  
-  /* 140 */ @js.native
-  object MAX_FRAGMENT_UNIFORM_VECTORS extends TopLevel[MAX_FRAGMENT_UNIFORM_VECTORS with Double]
-  
-  /* 393 */ @js.native
-  object MAX_PROGRAM_TEXEL_OFFSET extends TopLevel[MAX_PROGRAM_TEXEL_OFFSET with Double]
-  
-  /* 290 */ @js.native
-  object MAX_RENDERBUFFER_SIZE extends TopLevel[MAX_RENDERBUFFER_SIZE with Double]
-  
-  /* 481 */ @js.native
-  object MAX_SAMPLES extends TopLevel[MAX_SAMPLES with Double]
-  
-  /* 542 */ @js.native
-  object MAX_SERVER_WAIT_TIMEOUT extends TopLevel[MAX_SERVER_WAIT_TIMEOUT with Double]
-  
-  /* 139 */ @js.native
-  object MAX_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_TEXTURE_IMAGE_UNITS with Double]
-  
-  /* 338 */ @js.native
-  object MAX_TEXTURE_LOD_BIAS extends TopLevel[MAX_TEXTURE_LOD_BIAS with Double]
-  
-  /* 579 */ @js.native
-  object MAX_TEXTURE_MAX_ANISOTROPY_EXT extends TopLevel[MAX_TEXTURE_MAX_ANISOTROPY_EXT with Double]
-  
-  /* 95 */ @js.native
-  object MAX_TEXTURE_SIZE extends TopLevel[MAX_TEXTURE_SIZE with Double]
-  
-  /* 408 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS extends TopLevel[MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS with Double]
-  
-  /* 409 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS extends TopLevel[MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS with Double]
-  
-  /* 402 */ @js.native
-  object MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS extends TopLevel[MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS with Double]
-  
-  /* 521 */ @js.native
-  object MAX_UNIFORM_BLOCK_SIZE extends TopLevel[MAX_UNIFORM_BLOCK_SIZE with Double]
-  
-  /* 520 */ @js.native
-  object MAX_UNIFORM_BUFFER_BINDINGS extends TopLevel[MAX_UNIFORM_BUFFER_BINDINGS with Double]
-  
-  /* 394 */ @js.native
-  object MAX_VARYING_COMPONENTS extends TopLevel[MAX_VARYING_COMPONENTS with Double]
-  
-  /* 136 */ @js.native
-  object MAX_VARYING_VECTORS extends TopLevel[MAX_VARYING_VECTORS with Double]
-  
-  /* 134 */ @js.native
-  object MAX_VERTEX_ATTRIBS extends TopLevel[MAX_VERTEX_ATTRIBS with Double]
-  
-  /* 540 */ @js.native
-  object MAX_VERTEX_OUTPUT_COMPONENTS extends TopLevel[MAX_VERTEX_OUTPUT_COMPONENTS with Double]
-  
-  /* 138 */ @js.native
-  object MAX_VERTEX_TEXTURE_IMAGE_UNITS extends TopLevel[MAX_VERTEX_TEXTURE_IMAGE_UNITS with Double]
-  
-  /* 517 */ @js.native
-  object MAX_VERTEX_UNIFORM_BLOCKS extends TopLevel[MAX_VERTEX_UNIFORM_BLOCKS with Double]
-  
-  /* 368 */ @js.native
-  object MAX_VERTEX_UNIFORM_COMPONENTS extends TopLevel[MAX_VERTEX_UNIFORM_COMPONENTS with Double]
-  
-  /* 135 */ @js.native
-  object MAX_VERTEX_UNIFORM_VECTORS extends TopLevel[MAX_VERTEX_UNIFORM_VECTORS with Double]
-  
-  /* 96 */ @js.native
-  object MAX_VIEWPORT_DIMS extends TopLevel[MAX_VIEWPORT_DIMS with Double]
-  
-  /* 251 */ @js.native
-  object MEDIUM_FLOAT extends TopLevel[MEDIUM_FLOAT with Double]
-  
-  /* 254 */ @js.native
-  object MEDIUM_INT extends TopLevel[MEDIUM_INT with Double]
-  
-  /* 335 */ @js.native
-  object MIN extends TopLevel[MIN with Double]
-  
-  /* 392 */ @js.native
-  object MIN_PROGRAM_TEXEL_OFFSET extends TopLevel[MIN_PROGRAM_TEXEL_OFFSET with Double]
-  
-  /* 224 */ @js.native
-  object MIRRORED_REPEAT extends TopLevel[MIRRORED_REPEAT with Double]
-  
-  /* 168 */ @js.native
-  object NEAREST extends TopLevel[NEAREST with Double]
-  
-  /* 172 */ @js.native
-  object NEAREST_MIPMAP_LINEAR extends TopLevel[NEAREST_MIPMAP_LINEAR with Double]
-  
-  /* 170 */ @js.native
-  object NEAREST_MIPMAP_NEAREST extends TopLevel[NEAREST_MIPMAP_NEAREST with Double]
-  
-  /* 150 */ @js.native
-  object NEVER extends TopLevel[NEVER with Double]
-  
-  /* 114 */ @js.native
-  object NICEST extends TopLevel[NICEST with Double]
-  
-  /* 282 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 155 */ @js.native
-  object NOTEQUAL extends TopLevel[NOTEQUAL with Double]
-  
-  /* 58 */ @js.native
-  object NO_ERROR extends TopLevel[NO_ERROR with Double]
-  
-  /* 543 */ @js.native
-  object OBJECT_TYPE extends TopLevel[OBJECT_TYPE with Double]
-  
-  /* 11 */ @js.native
-  object ONE extends TopLevel[ONE with Double]
-  
-  /* 34 */ @js.native
-  object ONE_MINUS_CONSTANT_ALPHA extends TopLevel[ONE_MINUS_CONSTANT_ALPHA with Double]
-  
-  /* 32 */ @js.native
-  object ONE_MINUS_CONSTANT_COLOR extends TopLevel[ONE_MINUS_CONSTANT_COLOR with Double]
-  
-  /* 17 */ @js.native
-  object ONE_MINUS_DST_ALPHA extends TopLevel[ONE_MINUS_DST_ALPHA with Double]
-  
-  /* 19 */ @js.native
-  object ONE_MINUS_DST_COLOR extends TopLevel[ONE_MINUS_DST_COLOR with Double]
-  
-  /* 15 */ @js.native
-  object ONE_MINUS_SRC_ALPHA extends TopLevel[ONE_MINUS_SRC_ALPHA with Double]
-  
-  /* 13 */ @js.native
-  object ONE_MINUS_SRC_COLOR extends TopLevel[ONE_MINUS_SRC_COLOR with Double]
-  
-  /* 62 */ @js.native
-  object OUT_OF_MEMORY extends TopLevel[OUT_OF_MEMORY with Double]
-  
-  /* 94 */ @js.native
-  object PACK_ALIGNMENT extends TopLevel[PACK_ALIGNMENT with Double]
-  
-  /* 312 */ @js.native
-  object PACK_ROW_LENGTH extends TopLevel[PACK_ROW_LENGTH with Double]
-  
-  /* 314 */ @js.native
-  object PACK_SKIP_PIXELS extends TopLevel[PACK_SKIP_PIXELS with Double]
-  
-  /* 313 */ @js.native
-  object PACK_SKIP_ROWS extends TopLevel[PACK_SKIP_ROWS with Double]
-  
-  /* 372 */ @js.native
-  object PIXEL_PACK_BUFFER extends TopLevel[PIXEL_PACK_BUFFER with Double]
-  
-  /* 374 */ @js.native
-  object PIXEL_PACK_BUFFER_BINDING extends TopLevel[PIXEL_PACK_BUFFER_BINDING with Double]
-  
-  /* 373 */ @js.native
-  object PIXEL_UNPACK_BUFFER extends TopLevel[PIXEL_UNPACK_BUFFER with Double]
-  
-  /* 375 */ @js.native
-  object PIXEL_UNPACK_BUFFER_BINDING extends TopLevel[PIXEL_UNPACK_BUFFER_BINDING with Double]
-  
-  /* 3 */ @js.native
-  object POINTS extends TopLevel[POINTS with Double]
-  
-  /* 105 */ @js.native
-  object POLYGON_OFFSET_FACTOR extends TopLevel[POLYGON_OFFSET_FACTOR with Double]
-  
-  /* 55 */ @js.native
-  object POLYGON_OFFSET_FILL extends TopLevel[POLYGON_OFFSET_FILL with Double]
-  
-  /* 104 */ @js.native
-  object POLYGON_OFFSET_UNITS extends TopLevel[POLYGON_OFFSET_UNITS with Double]
-  
-  /* 342 */ @js.native
-  object QUERY_RESULT extends TopLevel[QUERY_RESULT with Double]
-  
-  /* 343 */ @js.native
-  object QUERY_RESULT_AVAILABLE extends TopLevel[QUERY_RESULT_AVAILABLE with Double]
-  
-  /* 397 */ @js.native
-  object R11F_G11F_B10F extends TopLevel[R11F_G11F_B10F with Double]
-  
-  /* 487 */ @js.native
-  object R16F extends TopLevel[R16F with Double]
-  
-  /* 493 */ @js.native
-  object R16I extends TopLevel[R16I with Double]
-  
-  /* 494 */ @js.native
-  object R16UI extends TopLevel[R16UI with Double]
-  
-  /* 488 */ @js.native
-  object R32F extends TopLevel[R32F with Double]
-  
-  /* 495 */ @js.native
-  object R32I extends TopLevel[R32I with Double]
-  
-  /* 496 */ @js.native
-  object R32UI extends TopLevel[R32UI with Double]
-  
-  /* 485 */ @js.native
-  object R8 extends TopLevel[R8 with Double]
-  
-  /* 491 */ @js.native
-  object R8I extends TopLevel[R8I with Double]
-  
-  /* 492 */ @js.native
-  object R8UI extends TopLevel[R8UI with Double]
-  
-  /* 504 */ @js.native
-  object R8_SNORM extends TopLevel[R8_SNORM with Double]
-  
-  /* 407 */ @js.native
-  object RASTERIZER_DISCARD extends TopLevel[RASTERIZER_DISCARD with Double]
-  
-  /* 308 */ @js.native
-  object READ_BUFFER extends TopLevel[READ_BUFFER with Double]
-  
-  /* 459 */ @js.native
-  object READ_FRAMEBUFFER extends TopLevel[READ_FRAMEBUFFER with Double]
-  
-  /* 461 */ @js.native
-  object READ_FRAMEBUFFER_BINDING extends TopLevel[READ_FRAMEBUFFER_BINDING with Double]
-  
-  /* 318 */ @js.native
-  object RED extends TopLevel[RED with Double]
-  
-  /* 98 */ @js.native
-  object RED_BITS extends TopLevel[RED_BITS with Double]
-  
-  /* 426 */ @js.native
-  object RED_INTEGER extends TopLevel[RED_INTEGER with Double]
-  
-  /* 257 */ @js.native
-  object RENDERBUFFER extends TopLevel[RENDERBUFFER with Double]
-  
-  /* 271 */ @js.native
-  object RENDERBUFFER_ALPHA_SIZE extends TopLevel[RENDERBUFFER_ALPHA_SIZE with Double]
-  
-  /* 289 */ @js.native
-  object RENDERBUFFER_BINDING extends TopLevel[RENDERBUFFER_BINDING with Double]
-  
-  /* 270 */ @js.native
-  object RENDERBUFFER_BLUE_SIZE extends TopLevel[RENDERBUFFER_BLUE_SIZE with Double]
-  
-  /* 272 */ @js.native
-  object RENDERBUFFER_DEPTH_SIZE extends TopLevel[RENDERBUFFER_DEPTH_SIZE with Double]
-  
-  /* 269 */ @js.native
-  object RENDERBUFFER_GREEN_SIZE extends TopLevel[RENDERBUFFER_GREEN_SIZE with Double]
-  
-  /* 266 */ @js.native
-  object RENDERBUFFER_HEIGHT extends TopLevel[RENDERBUFFER_HEIGHT with Double]
-  
-  /* 267 */ @js.native
-  object RENDERBUFFER_INTERNAL_FORMAT extends TopLevel[RENDERBUFFER_INTERNAL_FORMAT with Double]
-  
-  /* 268 */ @js.native
-  object RENDERBUFFER_RED_SIZE extends TopLevel[RENDERBUFFER_RED_SIZE with Double]
-  
-  /* 462 */ @js.native
-  object RENDERBUFFER_SAMPLES extends TopLevel[RENDERBUFFER_SAMPLES with Double]
-  
-  /* 273 */ @js.native
-  object RENDERBUFFER_STENCIL_SIZE extends TopLevel[RENDERBUFFER_STENCIL_SIZE with Double]
-  
-  /* 265 */ @js.native
-  object RENDERBUFFER_WIDTH extends TopLevel[RENDERBUFFER_WIDTH with Double]
-  
-  /* 166 */ @js.native
-  object RENDERER extends TopLevel[RENDERER with Double]
-  
-  /* 222 */ @js.native
-  object REPEAT extends TopLevel[REPEAT with Double]
-  
-  /* 159 */ @js.native
-  object REPLACE extends TopLevel[REPLACE with Double]
-  
-  /* 483 */ @js.native
-  object RG extends TopLevel[RG with Double]
-  
-  /* 489 */ @js.native
-  object RG16F extends TopLevel[RG16F with Double]
-  
-  /* 499 */ @js.native
-  object RG16I extends TopLevel[RG16I with Double]
-  
-  /* 500 */ @js.native
-  object RG16UI extends TopLevel[RG16UI with Double]
-  
-  /* 490 */ @js.native
-  object RG32F extends TopLevel[RG32F with Double]
-  
-  /* 501 */ @js.native
-  object RG32I extends TopLevel[RG32I with Double]
-  
-  /* 502 */ @js.native
-  object RG32UI extends TopLevel[RG32UI with Double]
-  
-  /* 486 */ @js.native
-  object RG8 extends TopLevel[RG8 with Double]
-  
-  /* 497 */ @js.native
-  object RG8I extends TopLevel[RG8I with Double]
-  
-  /* 498 */ @js.native
-  object RG8UI extends TopLevel[RG8UI with Double]
-  
-  /* 505 */ @js.native
-  object RG8_SNORM extends TopLevel[RG8_SNORM with Double]
-  
-  /* 125 */ @js.native
-  object RGB extends TopLevel[RGB with Double]
-  
-  /* 321 */ @js.native
-  object RGB10_A2 extends TopLevel[RGB10_A2 with Double]
-  
-  /* 560 */ @js.native
-  object RGB10_A2UI extends TopLevel[RGB10_A2UI with Double]
-  
-  /* 389 */ @js.native
-  object RGB16F extends TopLevel[RGB16F with Double]
-  
-  /* 423 */ @js.native
-  object RGB16I extends TopLevel[RGB16I with Double]
-  
-  /* 417 */ @js.native
-  object RGB16UI extends TopLevel[RGB16UI with Double]
-  
-  /* 387 */ @js.native
-  object RGB32F extends TopLevel[RGB32F with Double]
-  
-  /* 421 */ @js.native
-  object RGB32I extends TopLevel[RGB32I with Double]
-  
-  /* 415 */ @js.native
-  object RGB32UI extends TopLevel[RGB32UI with Double]
-  
-  /* 260 */ @js.native
-  object RGB565 extends TopLevel[RGB565 with Double]
-  
-  /* 259 */ @js.native
-  object RGB5_A1 extends TopLevel[RGB5_A1 with Double]
-  
-  /* 319 */ @js.native
-  object RGB8 extends TopLevel[RGB8 with Double]
-  
-  /* 425 */ @js.native
-  object RGB8I extends TopLevel[RGB8I with Double]
-  
-  /* 419 */ @js.native
-  object RGB8UI extends TopLevel[RGB8UI with Double]
-  
-  /* 506 */ @js.native
-  object RGB8_SNORM extends TopLevel[RGB8_SNORM with Double]
-  
-  /* 399 */ @js.native
-  object RGB9_E5 extends TopLevel[RGB9_E5 with Double]
-  
-  /* 126 */ @js.native
-  object RGBA extends TopLevel[RGBA with Double]
-  
-  /* 388 */ @js.native
-  object RGBA16F extends TopLevel[RGBA16F with Double]
-  
-  /* 422 */ @js.native
-  object RGBA16I extends TopLevel[RGBA16I with Double]
-  
-  /* 416 */ @js.native
-  object RGBA16UI extends TopLevel[RGBA16UI with Double]
-  
-  /* 386 */ @js.native
-  object RGBA32F extends TopLevel[RGBA32F with Double]
-  
-  /* 420 */ @js.native
-  object RGBA32I extends TopLevel[RGBA32I with Double]
-  
-  /* 414 */ @js.native
-  object RGBA32UI extends TopLevel[RGBA32UI with Double]
-  
-  /* 258 */ @js.native
-  object RGBA4 extends TopLevel[RGBA4 with Double]
-  
-  /* 320 */ @js.native
-  object RGBA8 extends TopLevel[RGBA8 with Double]
-  
-  /* 424 */ @js.native
-  object RGBA8I extends TopLevel[RGBA8I with Double]
-  
-  /* 418 */ @js.native
-  object RGBA8UI extends TopLevel[RGBA8UI with Double]
-  
-  /* 507 */ @js.native
-  object RGBA8_SNORM extends TopLevel[RGBA8_SNORM with Double]
-  
-  /* 428 */ @js.native
-  object RGBA_INTEGER extends TopLevel[RGBA_INTEGER with Double]
-  
-  /* 427 */ @js.native
-  object RGB_INTEGER extends TopLevel[RGB_INTEGER with Double]
-  
-  /* 484 */ @js.native
-  object RG_INTEGER extends TopLevel[RG_INTEGER with Double]
-  
-  /* 238 */ @js.native
-  object SAMPLER_2D extends TopLevel[SAMPLER_2D with Double]
-  
-  /* 429 */ @js.native
-  object SAMPLER_2D_ARRAY extends TopLevel[SAMPLER_2D_ARRAY with Double]
-  
-  /* 430 */ @js.native
-  object SAMPLER_2D_ARRAY_SHADOW extends TopLevel[SAMPLER_2D_ARRAY_SHADOW with Double]
-  
-  /* 370 */ @js.native
-  object SAMPLER_2D_SHADOW extends TopLevel[SAMPLER_2D_SHADOW with Double]
-  
-  /* 369 */ @js.native
-  object SAMPLER_3D extends TopLevel[SAMPLER_3D with Double]
-  
-  /* 559 */ @js.native
-  object SAMPLER_BINDING extends TopLevel[SAMPLER_BINDING with Double]
-  
-  /* 239 */ @js.native
-  object SAMPLER_CUBE extends TopLevel[SAMPLER_CUBE with Double]
-  
-  /* 431 */ @js.native
-  object SAMPLER_CUBE_SHADOW extends TopLevel[SAMPLER_CUBE_SHADOW with Double]
-  
-  /* 108 */ @js.native
-  object SAMPLES extends TopLevel[SAMPLES with Double]
-  
-  /* 56 */ @js.native
-  object SAMPLE_ALPHA_TO_COVERAGE extends TopLevel[SAMPLE_ALPHA_TO_COVERAGE with Double]
-  
-  /* 107 */ @js.native
-  object SAMPLE_BUFFERS extends TopLevel[SAMPLE_BUFFERS with Double]
-  
-  /* 57 */ @js.native
-  object SAMPLE_COVERAGE extends TopLevel[SAMPLE_COVERAGE with Double]
-  
-  /* 110 */ @js.native
-  object SAMPLE_COVERAGE_INVERT extends TopLevel[SAMPLE_COVERAGE_INVERT with Double]
-  
-  /* 109 */ @js.native
-  object SAMPLE_COVERAGE_VALUE extends TopLevel[SAMPLE_COVERAGE_VALUE with Double]
-  
-  /* 90 */ @js.native
-  object SCISSOR_BOX extends TopLevel[SCISSOR_BOX with Double]
-  
-  /* 54 */ @js.native
-  object SCISSOR_TEST extends TopLevel[SCISSOR_TEST with Double]
-  
-  /* 411 */ @js.native
-  object SEPARATE_ATTRIBS extends TopLevel[SEPARATE_ATTRIBS with Double]
-  
-  /* 141 */ @js.native
-  object SHADER_TYPE extends TopLevel[SHADER_TYPE with Double]
-  
-  /* 148 */ @js.native
-  object SHADING_LANGUAGE_VERSION extends TopLevel[SHADING_LANGUAGE_VERSION with Double]
-  
-  /* 118 */ @js.native
-  object SHORT extends TopLevel[SHORT with Double]
-  
-  /* 550 */ @js.native
-  object SIGNALED extends TopLevel[SIGNALED with Double]
-  
-  /* 508 */ @js.native
-  object SIGNED_NORMALIZED extends TopLevel[SIGNED_NORMALIZED with Double]
-  
-  /* 14 */ @js.native
-  object SRC_ALPHA extends TopLevel[SRC_ALPHA with Double]
-  
-  /* 20 */ @js.native
-  object SRC_ALPHA_SATURATE extends TopLevel[SRC_ALPHA_SATURATE with Double]
-  
-  /* 12 */ @js.native
-  object SRC_COLOR extends TopLevel[SRC_COLOR with Double]
-  
-  /* 382 */ @js.native
-  object SRGB extends TopLevel[SRGB with Double]
-  
-  /* 383 */ @js.native
-  object SRGB8 extends TopLevel[SRGB8 with Double]
-  
-  /* 384 */ @js.native
-  object SRGB8_ALPHA8 extends TopLevel[SRGB8_ALPHA8 with Double]
-  
-  /* 347 */ @js.native
-  object STATIC_COPY extends TopLevel[STATIC_COPY with Double]
-  
-  /* 41 */ @js.native
-  object STATIC_DRAW extends TopLevel[STATIC_DRAW with Double]
-  
-  /* 346 */ @js.native
-  object STATIC_READ extends TopLevel[STATIC_READ with Double]
-  
-  /* 317 */ @js.native
-  object STENCIL extends TopLevel[STENCIL with Double]
-  
-  /* 280 */ @js.native
-  object STENCIL_ATTACHMENT extends TopLevel[STENCIL_ATTACHMENT with Double]
-  
-  /* 83 */ @js.native
-  object STENCIL_BACK_FAIL extends TopLevel[STENCIL_BACK_FAIL with Double]
-  
-  /* 82 */ @js.native
-  object STENCIL_BACK_FUNC extends TopLevel[STENCIL_BACK_FUNC with Double]
-  
-  /* 84 */ @js.native
-  object STENCIL_BACK_PASS_DEPTH_FAIL extends TopLevel[STENCIL_BACK_PASS_DEPTH_FAIL with Double]
-  
-  /* 85 */ @js.native
-  object STENCIL_BACK_PASS_DEPTH_PASS extends TopLevel[STENCIL_BACK_PASS_DEPTH_PASS with Double]
-  
-  /* 86 */ @js.native
-  object STENCIL_BACK_REF extends TopLevel[STENCIL_BACK_REF with Double]
-  
-  /* 87 */ @js.native
-  object STENCIL_BACK_VALUE_MASK extends TopLevel[STENCIL_BACK_VALUE_MASK with Double]
-  
-  /* 88 */ @js.native
-  object STENCIL_BACK_WRITEMASK extends TopLevel[STENCIL_BACK_WRITEMASK with Double]
-  
-  /* 103 */ @js.native
-  object STENCIL_BITS extends TopLevel[STENCIL_BITS with Double]
-  
-  /* 1 */ @js.native
-  object STENCIL_BUFFER_BIT extends TopLevel[STENCIL_BUFFER_BIT with Double]
-  
-  /* 74 */ @js.native
-  object STENCIL_CLEAR_VALUE extends TopLevel[STENCIL_CLEAR_VALUE with Double]
-  
-  /* 76 */ @js.native
-  object STENCIL_FAIL extends TopLevel[STENCIL_FAIL with Double]
-  
-  /* 75 */ @js.native
-  object STENCIL_FUNC extends TopLevel[STENCIL_FUNC with Double]
-  
-  /* 262 */ @js.native
-  object STENCIL_INDEX extends TopLevel[STENCIL_INDEX with Double]
-  
-  /* 263 */ @js.native
-  object STENCIL_INDEX8 extends TopLevel[STENCIL_INDEX8 with Double]
-  
-  /* 77 */ @js.native
-  object STENCIL_PASS_DEPTH_FAIL extends TopLevel[STENCIL_PASS_DEPTH_FAIL with Double]
-  
-  /* 78 */ @js.native
-  object STENCIL_PASS_DEPTH_PASS extends TopLevel[STENCIL_PASS_DEPTH_PASS with Double]
-  
-  /* 79 */ @js.native
-  object STENCIL_REF extends TopLevel[STENCIL_REF with Double]
-  
-  /* 52 */ @js.native
-  object STENCIL_TEST extends TopLevel[STENCIL_TEST with Double]
-  
-  /* 80 */ @js.native
-  object STENCIL_VALUE_MASK extends TopLevel[STENCIL_VALUE_MASK with Double]
-  
-  /* 81 */ @js.native
-  object STENCIL_WRITEMASK extends TopLevel[STENCIL_WRITEMASK with Double]
-  
-  /* 345 */ @js.native
-  object STREAM_COPY extends TopLevel[STREAM_COPY with Double]
-  
-  /* 40 */ @js.native
-  object STREAM_DRAW extends TopLevel[STREAM_DRAW with Double]
-  
-  /* 344 */ @js.native
-  object STREAM_READ extends TopLevel[STREAM_READ with Double]
-  
-  /* 97 */ @js.native
-  object SUBPIXEL_BITS extends TopLevel[SUBPIXEL_BITS with Double]
-  
-  /* 544 */ @js.native
-  object SYNC_CONDITION extends TopLevel[SYNC_CONDITION with Double]
-  
-  /* 547 */ @js.native
-  object SYNC_FENCE extends TopLevel[SYNC_FENCE with Double]
-  
-  /* 546 */ @js.native
-  object SYNC_FLAGS extends TopLevel[SYNC_FLAGS with Double]
-  
-  /* 555 */ @js.native
-  object SYNC_FLUSH_COMMANDS_BIT extends TopLevel[SYNC_FLUSH_COMMANDS_BIT with Double]
-  
-  /* 548 */ @js.native
-  object SYNC_GPU_COMMANDS_COMPLETE extends TopLevel[SYNC_GPU_COMMANDS_COMPLETE with Double]
-  
-  /* 545 */ @js.native
-  object SYNC_STATUS extends TopLevel[SYNC_STATUS with Double]
-  
-  /* 179 */ @js.native
-  object TEXTURE extends TopLevel[TEXTURE with Double]
-  
-  /* 189 */ @js.native
-  object TEXTURE0 extends TopLevel[TEXTURE0 with Double]
-  
-  /* 190 */ @js.native
-  object TEXTURE1 extends TopLevel[TEXTURE1 with Double]
-  
-  /* 199 */ @js.native
-  object TEXTURE10 extends TopLevel[TEXTURE10 with Double]
-  
-  /* 200 */ @js.native
-  object TEXTURE11 extends TopLevel[TEXTURE11 with Double]
-  
-  /* 201 */ @js.native
-  object TEXTURE12 extends TopLevel[TEXTURE12 with Double]
-  
-  /* 202 */ @js.native
-  object TEXTURE13 extends TopLevel[TEXTURE13 with Double]
-  
-  /* 203 */ @js.native
-  object TEXTURE14 extends TopLevel[TEXTURE14 with Double]
-  
-  /* 204 */ @js.native
-  object TEXTURE15 extends TopLevel[TEXTURE15 with Double]
-  
-  /* 205 */ @js.native
-  object TEXTURE16 extends TopLevel[TEXTURE16 with Double]
-  
-  /* 206 */ @js.native
-  object TEXTURE17 extends TopLevel[TEXTURE17 with Double]
-  
-  /* 207 */ @js.native
-  object TEXTURE18 extends TopLevel[TEXTURE18 with Double]
-  
-  /* 208 */ @js.native
-  object TEXTURE19 extends TopLevel[TEXTURE19 with Double]
-  
-  /* 191 */ @js.native
-  object TEXTURE2 extends TopLevel[TEXTURE2 with Double]
-  
-  /* 209 */ @js.native
-  object TEXTURE20 extends TopLevel[TEXTURE20 with Double]
-  
-  /* 210 */ @js.native
-  object TEXTURE21 extends TopLevel[TEXTURE21 with Double]
-  
-  /* 211 */ @js.native
-  object TEXTURE22 extends TopLevel[TEXTURE22 with Double]
-  
-  /* 212 */ @js.native
-  object TEXTURE23 extends TopLevel[TEXTURE23 with Double]
-  
-  /* 213 */ @js.native
-  object TEXTURE24 extends TopLevel[TEXTURE24 with Double]
-  
-  /* 214 */ @js.native
-  object TEXTURE25 extends TopLevel[TEXTURE25 with Double]
-  
-  /* 215 */ @js.native
-  object TEXTURE26 extends TopLevel[TEXTURE26 with Double]
-  
-  /* 216 */ @js.native
-  object TEXTURE27 extends TopLevel[TEXTURE27 with Double]
-  
-  /* 217 */ @js.native
-  object TEXTURE28 extends TopLevel[TEXTURE28 with Double]
-  
-  /* 218 */ @js.native
-  object TEXTURE29 extends TopLevel[TEXTURE29 with Double]
-  
-  /* 192 */ @js.native
-  object TEXTURE3 extends TopLevel[TEXTURE3 with Double]
-  
-  /* 219 */ @js.native
-  object TEXTURE30 extends TopLevel[TEXTURE30 with Double]
-  
-  /* 220 */ @js.native
-  object TEXTURE31 extends TopLevel[TEXTURE31 with Double]
-  
-  /* 193 */ @js.native
-  object TEXTURE4 extends TopLevel[TEXTURE4 with Double]
-  
-  /* 194 */ @js.native
-  object TEXTURE5 extends TopLevel[TEXTURE5 with Double]
-  
-  /* 195 */ @js.native
-  object TEXTURE6 extends TopLevel[TEXTURE6 with Double]
-  
-  /* 196 */ @js.native
-  object TEXTURE7 extends TopLevel[TEXTURE7 with Double]
-  
-  /* 197 */ @js.native
-  object TEXTURE8 extends TopLevel[TEXTURE8 with Double]
-  
-  /* 198 */ @js.native
-  object TEXTURE9 extends TopLevel[TEXTURE9 with Double]
-  
-  /* 178 */ @js.native
-  object TEXTURE_2D extends TopLevel[TEXTURE_2D with Double]
-  
-  /* 395 */ @js.native
-  object TEXTURE_2D_ARRAY extends TopLevel[TEXTURE_2D_ARRAY with Double]
-  
-  /* 325 */ @js.native
-  object TEXTURE_3D extends TopLevel[TEXTURE_3D with Double]
-  
-  /* 333 */ @js.native
-  object TEXTURE_BASE_LEVEL extends TopLevel[TEXTURE_BASE_LEVEL with Double]
-  
-  /* 106 */ @js.native
-  object TEXTURE_BINDING_2D extends TopLevel[TEXTURE_BINDING_2D with Double]
-  
-  /* 396 */ @js.native
-  object TEXTURE_BINDING_2D_ARRAY extends TopLevel[TEXTURE_BINDING_2D_ARRAY with Double]
-  
-  /* 322 */ @js.native
-  object TEXTURE_BINDING_3D extends TopLevel[TEXTURE_BINDING_3D with Double]
-  
-  /* 181 */ @js.native
-  object TEXTURE_BINDING_CUBE_MAP extends TopLevel[TEXTURE_BINDING_CUBE_MAP with Double]
-  
-  /* 340 */ @js.native
-  object TEXTURE_COMPARE_FUNC extends TopLevel[TEXTURE_COMPARE_FUNC with Double]
-  
-  /* 339 */ @js.native
-  object TEXTURE_COMPARE_MODE extends TopLevel[TEXTURE_COMPARE_MODE with Double]
-  
-  /* 180 */ @js.native
-  object TEXTURE_CUBE_MAP extends TopLevel[TEXTURE_CUBE_MAP with Double]
-  
-  /* 183 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_X extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_X with Double]
-  
-  /* 185 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Y with Double]
-  
-  /* 187 */ @js.native
-  object TEXTURE_CUBE_MAP_NEGATIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_NEGATIVE_Z with Double]
-  
-  /* 182 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_X extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_X with Double]
-  
-  /* 184 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Y extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Y with Double]
-  
-  /* 186 */ @js.native
-  object TEXTURE_CUBE_MAP_POSITIVE_Z extends TopLevel[TEXTURE_CUBE_MAP_POSITIVE_Z with Double]
-  
-  /* 576 */ @js.native
-  object TEXTURE_IMMUTABLE_FORMAT extends TopLevel[TEXTURE_IMMUTABLE_FORMAT with Double]
-  
-  /* 578 */ @js.native
-  object TEXTURE_IMMUTABLE_LEVELS extends TopLevel[TEXTURE_IMMUTABLE_LEVELS with Double]
-  
-  /* 174 */ @js.native
-  object TEXTURE_MAG_FILTER extends TopLevel[TEXTURE_MAG_FILTER with Double]
-  
-  /* 334 */ @js.native
-  object TEXTURE_MAX_LEVEL extends TopLevel[TEXTURE_MAX_LEVEL with Double]
-  
-  /* 332 */ @js.native
-  object TEXTURE_MAX_LOD extends TopLevel[TEXTURE_MAX_LOD with Double]
-  
-  /* 175 */ @js.native
-  object TEXTURE_MIN_FILTER extends TopLevel[TEXTURE_MIN_FILTER with Double]
-  
-  /* 331 */ @js.native
-  object TEXTURE_MIN_LOD extends TopLevel[TEXTURE_MIN_LOD with Double]
-  
-  /* 326 */ @js.native
-  object TEXTURE_WRAP_R extends TopLevel[TEXTURE_WRAP_R with Double]
-  
-  /* 176 */ @js.native
-  object TEXTURE_WRAP_S extends TopLevel[TEXTURE_WRAP_S with Double]
-  
-  /* 177 */ @js.native
-  object TEXTURE_WRAP_T extends TopLevel[TEXTURE_WRAP_T with Double]
-  
-  /* 552 */ @js.native
-  object TIMEOUT_EXPIRED extends TopLevel[TIMEOUT_EXPIRED with Double]
-  
-  /* 562 */ @js.native
-  object TRANSFORM_FEEDBACK extends TopLevel[TRANSFORM_FEEDBACK with Double]
-  
-  /* 564 */ @js.native
-  object TRANSFORM_FEEDBACK_ACTIVE extends TopLevel[TRANSFORM_FEEDBACK_ACTIVE with Double]
-  
-  /* 565 */ @js.native
-  object TRANSFORM_FEEDBACK_BINDING extends TopLevel[TRANSFORM_FEEDBACK_BINDING with Double]
-  
-  /* 412 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER extends TopLevel[TRANSFORM_FEEDBACK_BUFFER with Double]
-  
-  /* 413 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_BINDING extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_BINDING with Double]
-  
-  /* 401 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_MODE extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_MODE with Double]
-  
-  /* 405 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_SIZE extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_SIZE with Double]
-  
-  /* 404 */ @js.native
-  object TRANSFORM_FEEDBACK_BUFFER_START extends TopLevel[TRANSFORM_FEEDBACK_BUFFER_START with Double]
-  
-  /* 563 */ @js.native
-  object TRANSFORM_FEEDBACK_PAUSED extends TopLevel[TRANSFORM_FEEDBACK_PAUSED with Double]
-  
-  /* 406 */ @js.native
-  object TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN extends TopLevel[TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN with Double]
-  
-  /* 403 */ @js.native
-  object TRANSFORM_FEEDBACK_VARYINGS extends TopLevel[TRANSFORM_FEEDBACK_VARYINGS with Double]
-  
-  /* 7 */ @js.native
-  object TRIANGLES extends TopLevel[TRIANGLES with Double]
-  
-  /* 9 */ @js.native
-  object TRIANGLE_FAN extends TopLevel[TRIANGLE_FAN with Double]
-  
-  /* 8 */ @js.native
-  object TRIANGLE_STRIP extends TopLevel[TRIANGLE_STRIP with Double]
-  
-  /* 530 */ @js.native
-  object UNIFORM_ARRAY_STRIDE extends TopLevel[UNIFORM_ARRAY_STRIDE with Double]
-  
-  /* 535 */ @js.native
-  object UNIFORM_BLOCK_ACTIVE_UNIFORMS extends TopLevel[UNIFORM_BLOCK_ACTIVE_UNIFORMS with Double]
-  
-  /* 536 */ @js.native
-  object UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES extends TopLevel[UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES with Double]
-  
-  /* 533 */ @js.native
-  object UNIFORM_BLOCK_BINDING extends TopLevel[UNIFORM_BLOCK_BINDING with Double]
-  
-  /* 534 */ @js.native
-  object UNIFORM_BLOCK_DATA_SIZE extends TopLevel[UNIFORM_BLOCK_DATA_SIZE with Double]
-  
-  /* 528 */ @js.native
-  object UNIFORM_BLOCK_INDEX extends TopLevel[UNIFORM_BLOCK_INDEX with Double]
-  
-  /* 538 */ @js.native
-  object UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER extends TopLevel[UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER with Double]
-  
-  /* 537 */ @js.native
-  object UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER extends TopLevel[UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER with Double]
-  
-  /* 513 */ @js.native
-  object UNIFORM_BUFFER extends TopLevel[UNIFORM_BUFFER with Double]
-  
-  /* 514 */ @js.native
-  object UNIFORM_BUFFER_BINDING extends TopLevel[UNIFORM_BUFFER_BINDING with Double]
-  
-  /* 524 */ @js.native
-  object UNIFORM_BUFFER_OFFSET_ALIGNMENT extends TopLevel[UNIFORM_BUFFER_OFFSET_ALIGNMENT with Double]
-  
-  /* 516 */ @js.native
-  object UNIFORM_BUFFER_SIZE extends TopLevel[UNIFORM_BUFFER_SIZE with Double]
-  
-  /* 515 */ @js.native
-  object UNIFORM_BUFFER_START extends TopLevel[UNIFORM_BUFFER_START with Double]
-  
-  /* 532 */ @js.native
-  object UNIFORM_IS_ROW_MAJOR extends TopLevel[UNIFORM_IS_ROW_MAJOR with Double]
-  
-  /* 531 */ @js.native
-  object UNIFORM_MATRIX_STRIDE extends TopLevel[UNIFORM_MATRIX_STRIDE with Double]
-  
-  /* 529 */ @js.native
-  object UNIFORM_OFFSET extends TopLevel[UNIFORM_OFFSET with Double]
-  
-  /* 527 */ @js.native
-  object UNIFORM_SIZE extends TopLevel[UNIFORM_SIZE with Double]
-  
-  /* 526 */ @js.native
-  object UNIFORM_TYPE extends TopLevel[UNIFORM_TYPE with Double]
-  
-  /* 93 */ @js.native
-  object UNPACK_ALIGNMENT extends TopLevel[UNPACK_ALIGNMENT with Double]
-  
-  /* 295 */ @js.native
-  object UNPACK_COLORSPACE_CONVERSION_WEBGL extends TopLevel[UNPACK_COLORSPACE_CONVERSION_WEBGL with Double]
-  
-  /* 292 */ @js.native
-  object UNPACK_FLIP_Y_WEBGL extends TopLevel[UNPACK_FLIP_Y_WEBGL with Double]
-  
-  /* 324 */ @js.native
-  object UNPACK_IMAGE_HEIGHT extends TopLevel[UNPACK_IMAGE_HEIGHT with Double]
-  
-  /* 293 */ @js.native
-  object UNPACK_PREMULTIPLY_ALPHA_WEBGL extends TopLevel[UNPACK_PREMULTIPLY_ALPHA_WEBGL with Double]
-  
-  /* 309 */ @js.native
-  object UNPACK_ROW_LENGTH extends TopLevel[UNPACK_ROW_LENGTH with Double]
-  
-  /* 323 */ @js.native
-  object UNPACK_SKIP_IMAGES extends TopLevel[UNPACK_SKIP_IMAGES with Double]
-  
-  /* 311 */ @js.native
-  object UNPACK_SKIP_PIXELS extends TopLevel[UNPACK_SKIP_PIXELS with Double]
-  
-  /* 310 */ @js.native
-  object UNPACK_SKIP_ROWS extends TopLevel[UNPACK_SKIP_ROWS with Double]
-  
-  /* 549 */ @js.native
-  object UNSIGNALED extends TopLevel[UNSIGNALED with Double]
-  
-  /* 117 */ @js.native
-  object UNSIGNED_BYTE extends TopLevel[UNSIGNED_BYTE with Double]
-  
-  /* 121 */ @js.native
-  object UNSIGNED_INT extends TopLevel[UNSIGNED_INT with Double]
-  
-  /* 398 */ @js.native
-  object UNSIGNED_INT_10F_11F_11F_REV extends TopLevel[UNSIGNED_INT_10F_11F_11F_REV with Double]
-  
-  /* 455 */ @js.native
-  object UNSIGNED_INT_24_8 extends TopLevel[UNSIGNED_INT_24_8 with Double]
-  
-  /* 328 */ @js.native
-  object UNSIGNED_INT_2_10_10_10_REV extends TopLevel[UNSIGNED_INT_2_10_10_10_REV with Double]
-  
-  /* 400 */ @js.native
-  object UNSIGNED_INT_5_9_9_9_REV extends TopLevel[UNSIGNED_INT_5_9_9_9_REV with Double]
-  
-  /* 439 */ @js.native
-  object UNSIGNED_INT_SAMPLER_2D extends TopLevel[UNSIGNED_INT_SAMPLER_2D with Double]
-  
-  /* 442 */ @js.native
-  object UNSIGNED_INT_SAMPLER_2D_ARRAY extends TopLevel[UNSIGNED_INT_SAMPLER_2D_ARRAY with Double]
-  
-  /* 440 */ @js.native
-  object UNSIGNED_INT_SAMPLER_3D extends TopLevel[UNSIGNED_INT_SAMPLER_3D with Double]
-  
-  /* 441 */ @js.native
-  object UNSIGNED_INT_SAMPLER_CUBE extends TopLevel[UNSIGNED_INT_SAMPLER_CUBE with Double]
-  
-  /* 432 */ @js.native
-  object UNSIGNED_INT_VEC2 extends TopLevel[UNSIGNED_INT_VEC2 with Double]
-  
-  /* 433 */ @js.native
-  object UNSIGNED_INT_VEC3 extends TopLevel[UNSIGNED_INT_VEC3 with Double]
-  
-  /* 434 */ @js.native
-  object UNSIGNED_INT_VEC4 extends TopLevel[UNSIGNED_INT_VEC4 with Double]
-  
-  /* 457 */ @js.native
-  object UNSIGNED_NORMALIZED extends TopLevel[UNSIGNED_NORMALIZED with Double]
-  
-  /* 119 */ @js.native
-  object UNSIGNED_SHORT extends TopLevel[UNSIGNED_SHORT with Double]
-  
-  /* 129 */ @js.native
-  object UNSIGNED_SHORT_4_4_4_4 extends TopLevel[UNSIGNED_SHORT_4_4_4_4 with Double]
-  
-  /* 130 */ @js.native
-  object UNSIGNED_SHORT_5_5_5_1 extends TopLevel[UNSIGNED_SHORT_5_5_5_1 with Double]
-  
-  /* 131 */ @js.native
-  object UNSIGNED_SHORT_5_6_5 extends TopLevel[UNSIGNED_SHORT_5_6_5 with Double]
-  
-  /* 144 */ @js.native
-  object VALIDATE_STATUS extends TopLevel[VALIDATE_STATUS with Double]
-  
-  /* 165 */ @js.native
-  object VENDOR extends TopLevel[VENDOR with Double]
-  
-  /* 167 */ @js.native
-  object VERSION extends TopLevel[VERSION with Double]
-  
-  /* 503 */ @js.native
-  object VERTEX_ARRAY_BINDING extends TopLevel[VERTEX_ARRAY_BINDING with Double]
-  
-  /* 246 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_BUFFER_BINDING extends TopLevel[VERTEX_ATTRIB_ARRAY_BUFFER_BINDING with Double]
-  
-  /* 556 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_DIVISOR extends TopLevel[VERTEX_ATTRIB_ARRAY_DIVISOR with Double]
-  
-  /* 240 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_ENABLED extends TopLevel[VERTEX_ATTRIB_ARRAY_ENABLED with Double]
-  
-  /* 390 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_INTEGER extends TopLevel[VERTEX_ATTRIB_ARRAY_INTEGER with Double]
-  
-  /* 244 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_NORMALIZED extends TopLevel[VERTEX_ATTRIB_ARRAY_NORMALIZED with Double]
-  
-  /* 245 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_POINTER extends TopLevel[VERTEX_ATTRIB_ARRAY_POINTER with Double]
-  
-  /* 241 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_SIZE extends TopLevel[VERTEX_ATTRIB_ARRAY_SIZE with Double]
-  
-  /* 242 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_STRIDE extends TopLevel[VERTEX_ATTRIB_ARRAY_STRIDE with Double]
-  
-  /* 243 */ @js.native
-  object VERTEX_ATTRIB_ARRAY_TYPE extends TopLevel[VERTEX_ATTRIB_ARRAY_TYPE with Double]
-  
-  /* 133 */ @js.native
-  object VERTEX_SHADER extends TopLevel[VERTEX_SHADER with Double]
-  
-  /* 89 */ @js.native
-  object VIEWPORT extends TopLevel[VIEWPORT with Double]
-  
-  /* 554 */ @js.native
-  object WAIT_FAILED extends TopLevel[WAIT_FAILED with Double]
-  
-  /* 10 */ @js.native
-  object ZERO extends TopLevel[ZERO with Double]
-  
+  def apply(value: Double): js.UndefOr[WebGLConstants & Double] = js.native
+  
+  @js.native
+  sealed trait ACTIVE_ATTRIBUTES
+    extends StObject
+       with WebGLConstants
+  /* 35721 */ val ACTIVE_ATTRIBUTES: typingsJapgolly.cesium.mod.WebGLConstants.ACTIVE_ATTRIBUTES & Double = js.native
+  
+  @js.native
+  sealed trait ACTIVE_TEXTURE
+    extends StObject
+       with WebGLConstants
+  /* 34016 */ val ACTIVE_TEXTURE: typingsJapgolly.cesium.mod.WebGLConstants.ACTIVE_TEXTURE & Double = js.native
+  
+  @js.native
+  sealed trait ACTIVE_UNIFORMS
+    extends StObject
+       with WebGLConstants
+  /* 35718 */ val ACTIVE_UNIFORMS: typingsJapgolly.cesium.mod.WebGLConstants.ACTIVE_UNIFORMS & Double = js.native
+  
+  @js.native
+  sealed trait ACTIVE_UNIFORM_BLOCKS
+    extends StObject
+       with WebGLConstants
+  /* 35382 */ val ACTIVE_UNIFORM_BLOCKS: typingsJapgolly.cesium.mod.WebGLConstants.ACTIVE_UNIFORM_BLOCKS & Double = js.native
+  
+  @js.native
+  sealed trait ALIASED_LINE_WIDTH_RANGE
+    extends StObject
+       with WebGLConstants
+  /* 33902 */ val ALIASED_LINE_WIDTH_RANGE: typingsJapgolly.cesium.mod.WebGLConstants.ALIASED_LINE_WIDTH_RANGE & Double = js.native
+  
+  @js.native
+  sealed trait ALIASED_POINT_SIZE_RANGE
+    extends StObject
+       with WebGLConstants
+  /* 33901 */ val ALIASED_POINT_SIZE_RANGE: typingsJapgolly.cesium.mod.WebGLConstants.ALIASED_POINT_SIZE_RANGE & Double = js.native
+  
+  @js.native
+  sealed trait ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 6406 */ val ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait ALPHA_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3413 */ val ALPHA_BITS: typingsJapgolly.cesium.mod.WebGLConstants.ALPHA_BITS & Double = js.native
+  
+  @js.native
+  sealed trait ALREADY_SIGNALED
+    extends StObject
+       with WebGLConstants
+  /* 37146 */ val ALREADY_SIGNALED: typingsJapgolly.cesium.mod.WebGLConstants.ALREADY_SIGNALED & Double = js.native
+  
+  @js.native
+  sealed trait ALWAYS
+    extends StObject
+       with WebGLConstants
+  /* 519 */ val ALWAYS: typingsJapgolly.cesium.mod.WebGLConstants.ALWAYS & Double = js.native
+  
+  @js.native
+  sealed trait ANY_SAMPLES_PASSED
+    extends StObject
+       with WebGLConstants
+  /* 35887 */ val ANY_SAMPLES_PASSED: typingsJapgolly.cesium.mod.WebGLConstants.ANY_SAMPLES_PASSED & Double = js.native
+  
+  @js.native
+  sealed trait ANY_SAMPLES_PASSED_CONSERVATIVE
+    extends StObject
+       with WebGLConstants
+  /* 36202 */ val ANY_SAMPLES_PASSED_CONSERVATIVE: typingsJapgolly.cesium.mod.WebGLConstants.ANY_SAMPLES_PASSED_CONSERVATIVE & Double = js.native
+  
+  @js.native
+  sealed trait ARRAY_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 34962 */ val ARRAY_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.ARRAY_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait ARRAY_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 34964 */ val ARRAY_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.ARRAY_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait ATTACHED_SHADERS
+    extends StObject
+       with WebGLConstants
+  /* 35717 */ val ATTACHED_SHADERS: typingsJapgolly.cesium.mod.WebGLConstants.ATTACHED_SHADERS & Double = js.native
+  
+  @js.native
+  sealed trait BACK
+    extends StObject
+       with WebGLConstants
+  /* 1029 */ val BACK: typingsJapgolly.cesium.mod.WebGLConstants.BACK & Double = js.native
+  
+  @js.native
+  sealed trait BLEND
+    extends StObject
+       with WebGLConstants
+  /* 3042 */ val BLEND: typingsJapgolly.cesium.mod.WebGLConstants.BLEND & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 32773 */ val BLEND_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_DST_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 32970 */ val BLEND_DST_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_DST_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_DST_RGB
+    extends StObject
+       with WebGLConstants
+  /* 32968 */ val BLEND_DST_RGB: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_DST_RGB & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_EQUATION
+    extends StObject
+       with WebGLConstants
+  /* 32777 */ val BLEND_EQUATION: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_EQUATION & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_EQUATION_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 34877 */ val BLEND_EQUATION_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_EQUATION_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_EQUATION_RGB
+    extends StObject
+       with WebGLConstants
+  /* 32777 */ val BLEND_EQUATION_RGB: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_EQUATION_RGB & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_SRC_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 32971 */ val BLEND_SRC_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_SRC_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait BLEND_SRC_RGB
+    extends StObject
+       with WebGLConstants
+  /* 32969 */ val BLEND_SRC_RGB: typingsJapgolly.cesium.mod.WebGLConstants.BLEND_SRC_RGB & Double = js.native
+  
+  @js.native
+  sealed trait BLUE_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3412 */ val BLUE_BITS: typingsJapgolly.cesium.mod.WebGLConstants.BLUE_BITS & Double = js.native
+  
+  @js.native
+  sealed trait BOOL
+    extends StObject
+       with WebGLConstants
+  /* 35670 */ val BOOL: typingsJapgolly.cesium.mod.WebGLConstants.BOOL & Double = js.native
+  
+  @js.native
+  sealed trait BOOL_VEC2
+    extends StObject
+       with WebGLConstants
+  /* 35671 */ val BOOL_VEC2: typingsJapgolly.cesium.mod.WebGLConstants.BOOL_VEC2 & Double = js.native
+  
+  @js.native
+  sealed trait BOOL_VEC3
+    extends StObject
+       with WebGLConstants
+  /* 35672 */ val BOOL_VEC3: typingsJapgolly.cesium.mod.WebGLConstants.BOOL_VEC3 & Double = js.native
+  
+  @js.native
+  sealed trait BOOL_VEC4
+    extends StObject
+       with WebGLConstants
+  /* 35673 */ val BOOL_VEC4: typingsJapgolly.cesium.mod.WebGLConstants.BOOL_VEC4 & Double = js.native
+  
+  @js.native
+  sealed trait BROWSER_DEFAULT_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37444 */ val BROWSER_DEFAULT_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.BROWSER_DEFAULT_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait BUFFER_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 34660 */ val BUFFER_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.BUFFER_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait BUFFER_USAGE
+    extends StObject
+       with WebGLConstants
+  /* 34661 */ val BUFFER_USAGE: typingsJapgolly.cesium.mod.WebGLConstants.BUFFER_USAGE & Double = js.native
+  
+  @js.native
+  sealed trait BYTE
+    extends StObject
+       with WebGLConstants
+  /* 5120 */ val BYTE: typingsJapgolly.cesium.mod.WebGLConstants.BYTE & Double = js.native
+  
+  @js.native
+  sealed trait CCW
+    extends StObject
+       with WebGLConstants
+  /* 2305 */ val CCW: typingsJapgolly.cesium.mod.WebGLConstants.CCW & Double = js.native
+  
+  @js.native
+  sealed trait CLAMP_TO_EDGE
+    extends StObject
+       with WebGLConstants
+  /* 33071 */ val CLAMP_TO_EDGE: typingsJapgolly.cesium.mod.WebGLConstants.CLAMP_TO_EDGE & Double = js.native
+  
+  @js.native
+  sealed trait COLOR
+    extends StObject
+       with WebGLConstants
+  /* 6144 */ val COLOR: typingsJapgolly.cesium.mod.WebGLConstants.COLOR & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT0
+    extends StObject
+       with WebGLConstants
+  /* 36064 */ val COLOR_ATTACHMENT0: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT0 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT1
+    extends StObject
+       with WebGLConstants
+  /* 36065 */ val COLOR_ATTACHMENT1: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT1 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT10
+    extends StObject
+       with WebGLConstants
+  /* 36074 */ val COLOR_ATTACHMENT10: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT10 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT11
+    extends StObject
+       with WebGLConstants
+  /* 36075 */ val COLOR_ATTACHMENT11: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT11 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT12
+    extends StObject
+       with WebGLConstants
+  /* 36076 */ val COLOR_ATTACHMENT12: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT12 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT13
+    extends StObject
+       with WebGLConstants
+  /* 36077 */ val COLOR_ATTACHMENT13: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT13 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT14
+    extends StObject
+       with WebGLConstants
+  /* 36078 */ val COLOR_ATTACHMENT14: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT14 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT15
+    extends StObject
+       with WebGLConstants
+  /* 36079 */ val COLOR_ATTACHMENT15: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT15 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT2
+    extends StObject
+       with WebGLConstants
+  /* 36066 */ val COLOR_ATTACHMENT2: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT2 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT3
+    extends StObject
+       with WebGLConstants
+  /* 36067 */ val COLOR_ATTACHMENT3: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT3 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT4
+    extends StObject
+       with WebGLConstants
+  /* 36068 */ val COLOR_ATTACHMENT4: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT4 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT5
+    extends StObject
+       with WebGLConstants
+  /* 36069 */ val COLOR_ATTACHMENT5: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT5 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT6
+    extends StObject
+       with WebGLConstants
+  /* 36070 */ val COLOR_ATTACHMENT6: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT6 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT7
+    extends StObject
+       with WebGLConstants
+  /* 36071 */ val COLOR_ATTACHMENT7: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT7 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT8
+    extends StObject
+       with WebGLConstants
+  /* 36072 */ val COLOR_ATTACHMENT8: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT8 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_ATTACHMENT9
+    extends StObject
+       with WebGLConstants
+  /* 36073 */ val COLOR_ATTACHMENT9: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_ATTACHMENT9 & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_BUFFER_BIT
+    extends StObject
+       with WebGLConstants
+  /* 16384 */ val COLOR_BUFFER_BIT: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_BUFFER_BIT & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_CLEAR_VALUE
+    extends StObject
+       with WebGLConstants
+  /* 3106 */ val COLOR_CLEAR_VALUE: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_CLEAR_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait COLOR_WRITEMASK
+    extends StObject
+       with WebGLConstants
+  /* 3107 */ val COLOR_WRITEMASK: typingsJapgolly.cesium.mod.WebGLConstants.COLOR_WRITEMASK & Double = js.native
+  
+  @js.native
+  sealed trait COMPARE_REF_TO_TEXTURE
+    extends StObject
+       with WebGLConstants
+  /* 34894 */ val COMPARE_REF_TO_TEXTURE: typingsJapgolly.cesium.mod.WebGLConstants.COMPARE_REF_TO_TEXTURE & Double = js.native
+  
+  @js.native
+  sealed trait COMPILE_STATUS
+    extends StObject
+       with WebGLConstants
+  /* 35713 */ val COMPILE_STATUS: typingsJapgolly.cesium.mod.WebGLConstants.COMPILE_STATUS & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_R11_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37488 */ val COMPRESSED_R11_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_R11_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RG11_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37490 */ val COMPRESSED_RG11_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RG11_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB8_ETC2
+    extends StObject
+       with WebGLConstants
+  /* 37492 */ val COMPRESSED_RGB8_ETC2: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB8_ETC2 & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2
+    extends StObject
+       with WebGLConstants
+  /* 37494 */ val COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB8_PUNCHTHROUGH_ALPHA1_ETC2 & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA8_ETC2_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37496 */ val COMPRESSED_RGBA8_ETC2_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA8_ETC2_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_ASTC_4x4_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37808 */ val COMPRESSED_RGBA_ASTC_4x4_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_ASTC_4x4_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_BPTC_UNORM
+    extends StObject
+       with WebGLConstants
+  /* 36492 */ val COMPRESSED_RGBA_BPTC_UNORM: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_BPTC_UNORM & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_PVRTC_2BPPV1_IMG
+    extends StObject
+       with WebGLConstants
+  /* 35843 */ val COMPRESSED_RGBA_PVRTC_2BPPV1_IMG: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_PVRTC_2BPPV1_IMG & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_PVRTC_4BPPV1_IMG
+    extends StObject
+       with WebGLConstants
+  /* 35842 */ val COMPRESSED_RGBA_PVRTC_4BPPV1_IMG: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_PVRTC_4BPPV1_IMG & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_S3TC_DXT1_EXT
+    extends StObject
+       with WebGLConstants
+  /* 33777 */ val COMPRESSED_RGBA_S3TC_DXT1_EXT: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT1_EXT & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_S3TC_DXT3_EXT
+    extends StObject
+       with WebGLConstants
+  /* 33778 */ val COMPRESSED_RGBA_S3TC_DXT3_EXT: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT3_EXT & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGBA_S3TC_DXT5_EXT
+    extends StObject
+       with WebGLConstants
+  /* 33779 */ val COMPRESSED_RGBA_S3TC_DXT5_EXT: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGBA_S3TC_DXT5_EXT & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB_ETC1_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 36196 */ val COMPRESSED_RGB_ETC1_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB_ETC1_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB_PVRTC_2BPPV1_IMG
+    extends StObject
+       with WebGLConstants
+  /* 35841 */ val COMPRESSED_RGB_PVRTC_2BPPV1_IMG: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB_PVRTC_2BPPV1_IMG & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB_PVRTC_4BPPV1_IMG
+    extends StObject
+       with WebGLConstants
+  /* 35840 */ val COMPRESSED_RGB_PVRTC_4BPPV1_IMG: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB_PVRTC_4BPPV1_IMG & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_RGB_S3TC_DXT1_EXT
+    extends StObject
+       with WebGLConstants
+  /* 33776 */ val COMPRESSED_RGB_S3TC_DXT1_EXT: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_RGB_S3TC_DXT1_EXT & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_SIGNED_R11_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37489 */ val COMPRESSED_SIGNED_R11_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_SIGNED_R11_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_SIGNED_RG11_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37491 */ val COMPRESSED_SIGNED_RG11_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_SIGNED_RG11_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_SRGB8_ALPHA8_ETC2_EAC
+    extends StObject
+       with WebGLConstants
+  /* 37497 */ val COMPRESSED_SRGB8_ALPHA8_ETC2_EAC: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_ALPHA8_ETC2_EAC & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_SRGB8_ETC2
+    extends StObject
+       with WebGLConstants
+  /* 37493 */ val COMPRESSED_SRGB8_ETC2: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_ETC2 & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2
+    extends StObject
+       with WebGLConstants
+  /* 37495 */ val COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_SRGB8_PUNCHTHROUGH_ALPHA1_ETC2 & Double = js.native
+  
+  @js.native
+  sealed trait COMPRESSED_TEXTURE_FORMATS
+    extends StObject
+       with WebGLConstants
+  /* 34467 */ val COMPRESSED_TEXTURE_FORMATS: typingsJapgolly.cesium.mod.WebGLConstants.COMPRESSED_TEXTURE_FORMATS & Double = js.native
+  
+  @js.native
+  sealed trait CONDITION_SATISFIED
+    extends StObject
+       with WebGLConstants
+  /* 37148 */ val CONDITION_SATISFIED: typingsJapgolly.cesium.mod.WebGLConstants.CONDITION_SATISFIED & Double = js.native
+  
+  @js.native
+  sealed trait CONSTANT_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 32771 */ val CONSTANT_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.CONSTANT_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait CONSTANT_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 32769 */ val CONSTANT_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.CONSTANT_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait CONTEXT_LOST_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37442 */ val CONTEXT_LOST_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.CONTEXT_LOST_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait COPY_READ_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36662 */ val COPY_READ_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.COPY_READ_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait COPY_READ_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36662 */ val COPY_READ_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.COPY_READ_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait COPY_WRITE_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36663 */ val COPY_WRITE_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.COPY_WRITE_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait COPY_WRITE_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36663 */ val COPY_WRITE_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.COPY_WRITE_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait CULL_FACE
+    extends StObject
+       with WebGLConstants
+  /* 2884 */ val CULL_FACE: typingsJapgolly.cesium.mod.WebGLConstants.CULL_FACE & Double = js.native
+  
+  @js.native
+  sealed trait CULL_FACE_MODE
+    extends StObject
+       with WebGLConstants
+  /* 2885 */ val CULL_FACE_MODE: typingsJapgolly.cesium.mod.WebGLConstants.CULL_FACE_MODE & Double = js.native
+  
+  @js.native
+  sealed trait CURRENT_PROGRAM
+    extends StObject
+       with WebGLConstants
+  /* 35725 */ val CURRENT_PROGRAM: typingsJapgolly.cesium.mod.WebGLConstants.CURRENT_PROGRAM & Double = js.native
+  
+  @js.native
+  sealed trait CURRENT_QUERY
+    extends StObject
+       with WebGLConstants
+  /* 34917 */ val CURRENT_QUERY: typingsJapgolly.cesium.mod.WebGLConstants.CURRENT_QUERY & Double = js.native
+  
+  @js.native
+  sealed trait CURRENT_VERTEX_ATTRIB
+    extends StObject
+       with WebGLConstants
+  /* 34342 */ val CURRENT_VERTEX_ATTRIB: typingsJapgolly.cesium.mod.WebGLConstants.CURRENT_VERTEX_ATTRIB & Double = js.native
+  
+  @js.native
+  sealed trait CW
+    extends StObject
+       with WebGLConstants
+  /* 2304 */ val CW: typingsJapgolly.cesium.mod.WebGLConstants.CW & Double = js.native
+  
+  @js.native
+  sealed trait DECR
+    extends StObject
+       with WebGLConstants
+  /* 7683 */ val DECR: typingsJapgolly.cesium.mod.WebGLConstants.DECR & Double = js.native
+  
+  @js.native
+  sealed trait DECR_WRAP
+    extends StObject
+       with WebGLConstants
+  /* 34056 */ val DECR_WRAP: typingsJapgolly.cesium.mod.WebGLConstants.DECR_WRAP & Double = js.native
+  
+  @js.native
+  sealed trait DELETE_STATUS
+    extends StObject
+       with WebGLConstants
+  /* 35712 */ val DELETE_STATUS: typingsJapgolly.cesium.mod.WebGLConstants.DELETE_STATUS & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH
+    extends StObject
+       with WebGLConstants
+  /* 6145 */ val DEPTH: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH24_STENCIL8
+    extends StObject
+       with WebGLConstants
+  /* 35056 */ val DEPTH24_STENCIL8: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH24_STENCIL8 & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH32F_STENCIL8
+    extends StObject
+       with WebGLConstants
+  /* 36013 */ val DEPTH32F_STENCIL8: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH32F_STENCIL8 & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_ATTACHMENT
+    extends StObject
+       with WebGLConstants
+  /* 36096 */ val DEPTH_ATTACHMENT: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_ATTACHMENT & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3414 */ val DEPTH_BITS: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_BITS & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_BUFFER_BIT
+    extends StObject
+       with WebGLConstants
+  /* 256 */ val DEPTH_BUFFER_BIT: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_BUFFER_BIT & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_CLEAR_VALUE
+    extends StObject
+       with WebGLConstants
+  /* 2931 */ val DEPTH_CLEAR_VALUE: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_CLEAR_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_COMPONENT
+    extends StObject
+       with WebGLConstants
+  /* 6402 */ val DEPTH_COMPONENT: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_COMPONENT & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_COMPONENT16
+    extends StObject
+       with WebGLConstants
+  /* 33189 */ val DEPTH_COMPONENT16: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_COMPONENT16 & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_COMPONENT24
+    extends StObject
+       with WebGLConstants
+  /* 33190 */ val DEPTH_COMPONENT24: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_COMPONENT24 & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_COMPONENT32F
+    extends StObject
+       with WebGLConstants
+  /* 36012 */ val DEPTH_COMPONENT32F: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_COMPONENT32F & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_FUNC
+    extends StObject
+       with WebGLConstants
+  /* 2932 */ val DEPTH_FUNC: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_FUNC & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_RANGE
+    extends StObject
+       with WebGLConstants
+  /* 2928 */ val DEPTH_RANGE: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_RANGE & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_STENCIL
+    extends StObject
+       with WebGLConstants
+  /* 34041 */ val DEPTH_STENCIL: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_STENCIL & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_STENCIL_ATTACHMENT
+    extends StObject
+       with WebGLConstants
+  /* 33306 */ val DEPTH_STENCIL_ATTACHMENT: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_STENCIL_ATTACHMENT & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_TEST
+    extends StObject
+       with WebGLConstants
+  /* 2929 */ val DEPTH_TEST: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_TEST & Double = js.native
+  
+  @js.native
+  sealed trait DEPTH_WRITEMASK
+    extends StObject
+       with WebGLConstants
+  /* 2930 */ val DEPTH_WRITEMASK: typingsJapgolly.cesium.mod.WebGLConstants.DEPTH_WRITEMASK & Double = js.native
+  
+  @js.native
+  sealed trait DITHER
+    extends StObject
+       with WebGLConstants
+  /* 3024 */ val DITHER: typingsJapgolly.cesium.mod.WebGLConstants.DITHER & Double = js.native
+  
+  @js.native
+  sealed trait DONT_CARE
+    extends StObject
+       with WebGLConstants
+  /* 4352 */ val DONT_CARE: typingsJapgolly.cesium.mod.WebGLConstants.DONT_CARE & Double = js.native
+  
+  @js.native
+  sealed trait DOUBLE
+    extends StObject
+       with WebGLConstants
+  /* 5130 */ val DOUBLE: typingsJapgolly.cesium.mod.WebGLConstants.DOUBLE & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER0
+    extends StObject
+       with WebGLConstants
+  /* 34853 */ val DRAW_BUFFER0: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER0 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER1
+    extends StObject
+       with WebGLConstants
+  /* 34854 */ val DRAW_BUFFER1: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER1 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER10
+    extends StObject
+       with WebGLConstants
+  /* 34863 */ val DRAW_BUFFER10: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER10 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER11
+    extends StObject
+       with WebGLConstants
+  /* 34864 */ val DRAW_BUFFER11: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER11 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER12
+    extends StObject
+       with WebGLConstants
+  /* 34865 */ val DRAW_BUFFER12: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER12 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER13
+    extends StObject
+       with WebGLConstants
+  /* 34866 */ val DRAW_BUFFER13: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER13 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER14
+    extends StObject
+       with WebGLConstants
+  /* 34867 */ val DRAW_BUFFER14: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER14 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER15
+    extends StObject
+       with WebGLConstants
+  /* 34868 */ val DRAW_BUFFER15: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER15 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER2
+    extends StObject
+       with WebGLConstants
+  /* 34855 */ val DRAW_BUFFER2: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER2 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER3
+    extends StObject
+       with WebGLConstants
+  /* 34856 */ val DRAW_BUFFER3: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER3 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER4
+    extends StObject
+       with WebGLConstants
+  /* 34857 */ val DRAW_BUFFER4: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER4 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER5
+    extends StObject
+       with WebGLConstants
+  /* 34858 */ val DRAW_BUFFER5: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER5 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER6
+    extends StObject
+       with WebGLConstants
+  /* 34859 */ val DRAW_BUFFER6: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER6 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER7
+    extends StObject
+       with WebGLConstants
+  /* 34860 */ val DRAW_BUFFER7: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER7 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER8
+    extends StObject
+       with WebGLConstants
+  /* 34861 */ val DRAW_BUFFER8: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER8 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_BUFFER9
+    extends StObject
+       with WebGLConstants
+  /* 34862 */ val DRAW_BUFFER9: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_BUFFER9 & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_FRAMEBUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36009 */ val DRAW_FRAMEBUFFER: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_FRAMEBUFFER & Double = js.native
+  
+  @js.native
+  sealed trait DRAW_FRAMEBUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36006 */ val DRAW_FRAMEBUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.DRAW_FRAMEBUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait DST_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 772 */ val DST_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.DST_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait DST_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 774 */ val DST_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.DST_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait DYNAMIC_COPY
+    extends StObject
+       with WebGLConstants
+  /* 35050 */ val DYNAMIC_COPY: typingsJapgolly.cesium.mod.WebGLConstants.DYNAMIC_COPY & Double = js.native
+  
+  @js.native
+  sealed trait DYNAMIC_DRAW
+    extends StObject
+       with WebGLConstants
+  /* 35048 */ val DYNAMIC_DRAW: typingsJapgolly.cesium.mod.WebGLConstants.DYNAMIC_DRAW & Double = js.native
+  
+  @js.native
+  sealed trait DYNAMIC_READ
+    extends StObject
+       with WebGLConstants
+  /* 35049 */ val DYNAMIC_READ: typingsJapgolly.cesium.mod.WebGLConstants.DYNAMIC_READ & Double = js.native
+  
+  @js.native
+  sealed trait ELEMENT_ARRAY_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 34963 */ val ELEMENT_ARRAY_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.ELEMENT_ARRAY_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait ELEMENT_ARRAY_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 34965 */ val ELEMENT_ARRAY_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.ELEMENT_ARRAY_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait EQUAL
+    extends StObject
+       with WebGLConstants
+  /* 514 */ val EQUAL: typingsJapgolly.cesium.mod.WebGLConstants.EQUAL & Double = js.native
+  
+  @js.native
+  sealed trait FASTEST
+    extends StObject
+       with WebGLConstants
+  /* 4353 */ val FASTEST: typingsJapgolly.cesium.mod.WebGLConstants.FASTEST & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT
+    extends StObject
+       with WebGLConstants
+  /* 5126 */ val FLOAT: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_32_UNSIGNED_INT_24_8_REV
+    extends StObject
+       with WebGLConstants
+  /* 36269 */ val FLOAT_32_UNSIGNED_INT_24_8_REV: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_32_UNSIGNED_INT_24_8_REV & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT2
+    extends StObject
+       with WebGLConstants
+  /* 35674 */ val FLOAT_MAT2: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT2 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT2x3
+    extends StObject
+       with WebGLConstants
+  /* 35685 */ val FLOAT_MAT2x3: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT2x3 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT2x4
+    extends StObject
+       with WebGLConstants
+  /* 35686 */ val FLOAT_MAT2x4: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT2x4 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT3
+    extends StObject
+       with WebGLConstants
+  /* 35675 */ val FLOAT_MAT3: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT3 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT3x2
+    extends StObject
+       with WebGLConstants
+  /* 35687 */ val FLOAT_MAT3x2: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT3x2 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT3x4
+    extends StObject
+       with WebGLConstants
+  /* 35688 */ val FLOAT_MAT3x4: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT3x4 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT4
+    extends StObject
+       with WebGLConstants
+  /* 35676 */ val FLOAT_MAT4: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT4 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT4x2
+    extends StObject
+       with WebGLConstants
+  /* 35689 */ val FLOAT_MAT4x2: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT4x2 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_MAT4x3
+    extends StObject
+       with WebGLConstants
+  /* 35690 */ val FLOAT_MAT4x3: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_MAT4x3 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_VEC2
+    extends StObject
+       with WebGLConstants
+  /* 35664 */ val FLOAT_VEC2: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_VEC2 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_VEC3
+    extends StObject
+       with WebGLConstants
+  /* 35665 */ val FLOAT_VEC3: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_VEC3 & Double = js.native
+  
+  @js.native
+  sealed trait FLOAT_VEC4
+    extends StObject
+       with WebGLConstants
+  /* 35666 */ val FLOAT_VEC4: typingsJapgolly.cesium.mod.WebGLConstants.FLOAT_VEC4 & Double = js.native
+  
+  @js.native
+  sealed trait FRAGMENT_SHADER
+    extends StObject
+       with WebGLConstants
+  /* 35632 */ val FRAGMENT_SHADER: typingsJapgolly.cesium.mod.WebGLConstants.FRAGMENT_SHADER & Double = js.native
+  
+  @js.native
+  sealed trait FRAGMENT_SHADER_DERIVATIVE_HINT
+    extends StObject
+       with WebGLConstants
+  /* 35723 */ val FRAGMENT_SHADER_DERIVATIVE_HINT: typingsJapgolly.cesium.mod.WebGLConstants.FRAGMENT_SHADER_DERIVATIVE_HINT & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36160 */ val FRAMEBUFFER: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33301 */ val FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_ALPHA_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_BLUE_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33300 */ val FRAMEBUFFER_ATTACHMENT_BLUE_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_BLUE_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING
+    extends StObject
+       with WebGLConstants
+  /* 33296 */ val FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_COLOR_ENCODING & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 33297 */ val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33302 */ val FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_DEPTH_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_GREEN_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33299 */ val FRAMEBUFFER_ATTACHMENT_GREEN_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_GREEN_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_NAME
+    extends StObject
+       with WebGLConstants
+  /* 36049 */ val FRAMEBUFFER_ATTACHMENT_OBJECT_NAME: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_OBJECT_NAME & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 36048 */ val FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_OBJECT_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_RED_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33298 */ val FRAMEBUFFER_ATTACHMENT_RED_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_RED_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 33303 */ val FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_STENCIL_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE
+    extends StObject
+       with WebGLConstants
+  /* 36051 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_CUBE_MAP_FACE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER
+    extends StObject
+       with WebGLConstants
+  /* 36052 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_LAYER & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL
+    extends StObject
+       with WebGLConstants
+  /* 36050 */ val FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_ATTACHMENT_TEXTURE_LEVEL & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36006 */ val FRAMEBUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_COMPLETE
+    extends StObject
+       with WebGLConstants
+  /* 36053 */ val FRAMEBUFFER_COMPLETE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_COMPLETE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_DEFAULT
+    extends StObject
+       with WebGLConstants
+  /* 33304 */ val FRAMEBUFFER_DEFAULT: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_DEFAULT & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_INCOMPLETE_ATTACHMENT
+    extends StObject
+       with WebGLConstants
+  /* 36054 */ val FRAMEBUFFER_INCOMPLETE_ATTACHMENT: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_ATTACHMENT & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_INCOMPLETE_DIMENSIONS
+    extends StObject
+       with WebGLConstants
+  /* 36057 */ val FRAMEBUFFER_INCOMPLETE_DIMENSIONS: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_DIMENSIONS & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT
+    extends StObject
+       with WebGLConstants
+  /* 36055 */ val FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_MISSING_ATTACHMENT & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_INCOMPLETE_MULTISAMPLE
+    extends StObject
+       with WebGLConstants
+  /* 36182 */ val FRAMEBUFFER_INCOMPLETE_MULTISAMPLE: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_INCOMPLETE_MULTISAMPLE & Double = js.native
+  
+  @js.native
+  sealed trait FRAMEBUFFER_UNSUPPORTED
+    extends StObject
+       with WebGLConstants
+  /* 36061 */ val FRAMEBUFFER_UNSUPPORTED: typingsJapgolly.cesium.mod.WebGLConstants.FRAMEBUFFER_UNSUPPORTED & Double = js.native
+  
+  @js.native
+  sealed trait FRONT
+    extends StObject
+       with WebGLConstants
+  /* 1028 */ val FRONT: typingsJapgolly.cesium.mod.WebGLConstants.FRONT & Double = js.native
+  
+  @js.native
+  sealed trait FRONT_AND_BACK
+    extends StObject
+       with WebGLConstants
+  /* 1032 */ val FRONT_AND_BACK: typingsJapgolly.cesium.mod.WebGLConstants.FRONT_AND_BACK & Double = js.native
+  
+  @js.native
+  sealed trait FRONT_FACE
+    extends StObject
+       with WebGLConstants
+  /* 2886 */ val FRONT_FACE: typingsJapgolly.cesium.mod.WebGLConstants.FRONT_FACE & Double = js.native
+  
+  @js.native
+  sealed trait FUNC_ADD
+    extends StObject
+       with WebGLConstants
+  /* 32774 */ val FUNC_ADD: typingsJapgolly.cesium.mod.WebGLConstants.FUNC_ADD & Double = js.native
+  
+  @js.native
+  sealed trait FUNC_REVERSE_SUBTRACT
+    extends StObject
+       with WebGLConstants
+  /* 32779 */ val FUNC_REVERSE_SUBTRACT: typingsJapgolly.cesium.mod.WebGLConstants.FUNC_REVERSE_SUBTRACT & Double = js.native
+  
+  @js.native
+  sealed trait FUNC_SUBTRACT
+    extends StObject
+       with WebGLConstants
+  /* 32778 */ val FUNC_SUBTRACT: typingsJapgolly.cesium.mod.WebGLConstants.FUNC_SUBTRACT & Double = js.native
+  
+  @js.native
+  sealed trait GENERATE_MIPMAP_HINT
+    extends StObject
+       with WebGLConstants
+  /* 33170 */ val GENERATE_MIPMAP_HINT: typingsJapgolly.cesium.mod.WebGLConstants.GENERATE_MIPMAP_HINT & Double = js.native
+  
+  @js.native
+  sealed trait GEQUAL
+    extends StObject
+       with WebGLConstants
+  /* 518 */ val GEQUAL: typingsJapgolly.cesium.mod.WebGLConstants.GEQUAL & Double = js.native
+  
+  @js.native
+  sealed trait GREATER
+    extends StObject
+       with WebGLConstants
+  /* 516 */ val GREATER: typingsJapgolly.cesium.mod.WebGLConstants.GREATER & Double = js.native
+  
+  @js.native
+  sealed trait GREEN_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3411 */ val GREEN_BITS: typingsJapgolly.cesium.mod.WebGLConstants.GREEN_BITS & Double = js.native
+  
+  @js.native
+  sealed trait HALF_FLOAT
+    extends StObject
+       with WebGLConstants
+  /* 5131 */ val HALF_FLOAT: typingsJapgolly.cesium.mod.WebGLConstants.HALF_FLOAT & Double = js.native
+  
+  @js.native
+  sealed trait HALF_FLOAT_OES
+    extends StObject
+       with WebGLConstants
+  /* 36193 */ val HALF_FLOAT_OES: typingsJapgolly.cesium.mod.WebGLConstants.HALF_FLOAT_OES & Double = js.native
+  
+  @js.native
+  sealed trait HIGH_FLOAT
+    extends StObject
+       with WebGLConstants
+  /* 36338 */ val HIGH_FLOAT: typingsJapgolly.cesium.mod.WebGLConstants.HIGH_FLOAT & Double = js.native
+  
+  @js.native
+  sealed trait HIGH_INT
+    extends StObject
+       with WebGLConstants
+  /* 36341 */ val HIGH_INT: typingsJapgolly.cesium.mod.WebGLConstants.HIGH_INT & Double = js.native
+  
+  @js.native
+  sealed trait IMPLEMENTATION_COLOR_READ_FORMAT
+    extends StObject
+       with WebGLConstants
+  /* 35739 */ val IMPLEMENTATION_COLOR_READ_FORMAT: typingsJapgolly.cesium.mod.WebGLConstants.IMPLEMENTATION_COLOR_READ_FORMAT & Double = js.native
+  
+  @js.native
+  sealed trait IMPLEMENTATION_COLOR_READ_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 35738 */ val IMPLEMENTATION_COLOR_READ_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.IMPLEMENTATION_COLOR_READ_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait INCR
+    extends StObject
+       with WebGLConstants
+  /* 7682 */ val INCR: typingsJapgolly.cesium.mod.WebGLConstants.INCR & Double = js.native
+  
+  @js.native
+  sealed trait INCR_WRAP
+    extends StObject
+       with WebGLConstants
+  /* 34055 */ val INCR_WRAP: typingsJapgolly.cesium.mod.WebGLConstants.INCR_WRAP & Double = js.native
+  
+  @js.native
+  sealed trait INT
+    extends StObject
+       with WebGLConstants
+  /* 5124 */ val INT: typingsJapgolly.cesium.mod.WebGLConstants.INT & Double = js.native
+  
+  @js.native
+  sealed trait INTERLEAVED_ATTRIBS
+    extends StObject
+       with WebGLConstants
+  /* 35980 */ val INTERLEAVED_ATTRIBS: typingsJapgolly.cesium.mod.WebGLConstants.INTERLEAVED_ATTRIBS & Double = js.native
+  
+  @js.native
+  sealed trait INT_2_10_10_10_REV
+    extends StObject
+       with WebGLConstants
+  /* 36255 */ val INT_2_10_10_10_REV: typingsJapgolly.cesium.mod.WebGLConstants.INT_2_10_10_10_REV & Double = js.native
+  
+  @js.native
+  sealed trait INT_SAMPLER_2D
+    extends StObject
+       with WebGLConstants
+  /* 36298 */ val INT_SAMPLER_2D: typingsJapgolly.cesium.mod.WebGLConstants.INT_SAMPLER_2D & Double = js.native
+  
+  @js.native
+  sealed trait INT_SAMPLER_2D_ARRAY
+    extends StObject
+       with WebGLConstants
+  /* 36303 */ val INT_SAMPLER_2D_ARRAY: typingsJapgolly.cesium.mod.WebGLConstants.INT_SAMPLER_2D_ARRAY & Double = js.native
+  
+  @js.native
+  sealed trait INT_SAMPLER_3D
+    extends StObject
+       with WebGLConstants
+  /* 36299 */ val INT_SAMPLER_3D: typingsJapgolly.cesium.mod.WebGLConstants.INT_SAMPLER_3D & Double = js.native
+  
+  @js.native
+  sealed trait INT_SAMPLER_CUBE
+    extends StObject
+       with WebGLConstants
+  /* 36300 */ val INT_SAMPLER_CUBE: typingsJapgolly.cesium.mod.WebGLConstants.INT_SAMPLER_CUBE & Double = js.native
+  
+  @js.native
+  sealed trait INT_VEC2
+    extends StObject
+       with WebGLConstants
+  /* 35667 */ val INT_VEC2: typingsJapgolly.cesium.mod.WebGLConstants.INT_VEC2 & Double = js.native
+  
+  @js.native
+  sealed trait INT_VEC3
+    extends StObject
+       with WebGLConstants
+  /* 35668 */ val INT_VEC3: typingsJapgolly.cesium.mod.WebGLConstants.INT_VEC3 & Double = js.native
+  
+  @js.native
+  sealed trait INT_VEC4
+    extends StObject
+       with WebGLConstants
+  /* 35669 */ val INT_VEC4: typingsJapgolly.cesium.mod.WebGLConstants.INT_VEC4 & Double = js.native
+  
+  @js.native
+  sealed trait INVALID_ENUM
+    extends StObject
+       with WebGLConstants
+  /* 1280 */ val INVALID_ENUM: typingsJapgolly.cesium.mod.WebGLConstants.INVALID_ENUM & Double = js.native
+  
+  @js.native
+  sealed trait INVALID_FRAMEBUFFER_OPERATION
+    extends StObject
+       with WebGLConstants
+  /* 1286 */ val INVALID_FRAMEBUFFER_OPERATION: typingsJapgolly.cesium.mod.WebGLConstants.INVALID_FRAMEBUFFER_OPERATION & Double = js.native
+  
+  @js.native
+  sealed trait INVALID_INDEX
+    extends StObject
+       with WebGLConstants
+  /* 4294967295.0 */ val INVALID_INDEX: typingsJapgolly.cesium.mod.WebGLConstants.INVALID_INDEX & Double = js.native
+  
+  @js.native
+  sealed trait INVALID_OPERATION
+    extends StObject
+       with WebGLConstants
+  /* 1282 */ val INVALID_OPERATION: typingsJapgolly.cesium.mod.WebGLConstants.INVALID_OPERATION & Double = js.native
+  
+  @js.native
+  sealed trait INVALID_VALUE
+    extends StObject
+       with WebGLConstants
+  /* 1281 */ val INVALID_VALUE: typingsJapgolly.cesium.mod.WebGLConstants.INVALID_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait INVERT
+    extends StObject
+       with WebGLConstants
+  /* 5386 */ val INVERT: typingsJapgolly.cesium.mod.WebGLConstants.INVERT & Double = js.native
+  
+  @js.native
+  sealed trait KEEP
+    extends StObject
+       with WebGLConstants
+  /* 7680 */ val KEEP: typingsJapgolly.cesium.mod.WebGLConstants.KEEP & Double = js.native
+  
+  @js.native
+  sealed trait LEQUAL
+    extends StObject
+       with WebGLConstants
+  /* 515 */ val LEQUAL: typingsJapgolly.cesium.mod.WebGLConstants.LEQUAL & Double = js.native
+  
+  @js.native
+  sealed trait LESS
+    extends StObject
+       with WebGLConstants
+  /* 513 */ val LESS: typingsJapgolly.cesium.mod.WebGLConstants.LESS & Double = js.native
+  
+  @js.native
+  sealed trait LINEAR
+    extends StObject
+       with WebGLConstants
+  /* 9729 */ val LINEAR: typingsJapgolly.cesium.mod.WebGLConstants.LINEAR & Double = js.native
+  
+  @js.native
+  sealed trait LINEAR_MIPMAP_LINEAR
+    extends StObject
+       with WebGLConstants
+  /* 9987 */ val LINEAR_MIPMAP_LINEAR: typingsJapgolly.cesium.mod.WebGLConstants.LINEAR_MIPMAP_LINEAR & Double = js.native
+  
+  @js.native
+  sealed trait LINEAR_MIPMAP_NEAREST
+    extends StObject
+       with WebGLConstants
+  /* 9985 */ val LINEAR_MIPMAP_NEAREST: typingsJapgolly.cesium.mod.WebGLConstants.LINEAR_MIPMAP_NEAREST & Double = js.native
+  
+  @js.native
+  sealed trait LINES
+    extends StObject
+       with WebGLConstants
+  /* 1 */ val LINES: typingsJapgolly.cesium.mod.WebGLConstants.LINES & Double = js.native
+  
+  @js.native
+  sealed trait LINE_LOOP
+    extends StObject
+       with WebGLConstants
+  /* 2 */ val LINE_LOOP: typingsJapgolly.cesium.mod.WebGLConstants.LINE_LOOP & Double = js.native
+  
+  @js.native
+  sealed trait LINE_STRIP
+    extends StObject
+       with WebGLConstants
+  /* 3 */ val LINE_STRIP: typingsJapgolly.cesium.mod.WebGLConstants.LINE_STRIP & Double = js.native
+  
+  @js.native
+  sealed trait LINE_WIDTH
+    extends StObject
+       with WebGLConstants
+  /* 2849 */ val LINE_WIDTH: typingsJapgolly.cesium.mod.WebGLConstants.LINE_WIDTH & Double = js.native
+  
+  @js.native
+  sealed trait LINK_STATUS
+    extends StObject
+       with WebGLConstants
+  /* 35714 */ val LINK_STATUS: typingsJapgolly.cesium.mod.WebGLConstants.LINK_STATUS & Double = js.native
+  
+  @js.native
+  sealed trait LOW_FLOAT
+    extends StObject
+       with WebGLConstants
+  /* 36336 */ val LOW_FLOAT: typingsJapgolly.cesium.mod.WebGLConstants.LOW_FLOAT & Double = js.native
+  
+  @js.native
+  sealed trait LOW_INT
+    extends StObject
+       with WebGLConstants
+  /* 36339 */ val LOW_INT: typingsJapgolly.cesium.mod.WebGLConstants.LOW_INT & Double = js.native
+  
+  @js.native
+  sealed trait LUMINANCE
+    extends StObject
+       with WebGLConstants
+  /* 6409 */ val LUMINANCE: typingsJapgolly.cesium.mod.WebGLConstants.LUMINANCE & Double = js.native
+  
+  @js.native
+  sealed trait LUMINANCE_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 6410 */ val LUMINANCE_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.LUMINANCE_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait MAX
+    extends StObject
+       with WebGLConstants
+  /* 32776 */ val MAX: typingsJapgolly.cesium.mod.WebGLConstants.MAX & Double = js.native
+  
+  @js.native
+  sealed trait MAX_3D_TEXTURE_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 32883 */ val MAX_3D_TEXTURE_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.MAX_3D_TEXTURE_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait MAX_ARRAY_TEXTURE_LAYERS
+    extends StObject
+       with WebGLConstants
+  /* 35071 */ val MAX_ARRAY_TEXTURE_LAYERS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_ARRAY_TEXTURE_LAYERS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_COLOR_ATTACHMENTS
+    extends StObject
+       with WebGLConstants
+  /* 36063 */ val MAX_COLOR_ATTACHMENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_COLOR_ATTACHMENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35379 */ val MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_COMBINED_TEXTURE_IMAGE_UNITS
+    extends StObject
+       with WebGLConstants
+  /* 35661 */ val MAX_COMBINED_TEXTURE_IMAGE_UNITS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_COMBINED_TEXTURE_IMAGE_UNITS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_COMBINED_UNIFORM_BLOCKS
+    extends StObject
+       with WebGLConstants
+  /* 35374 */ val MAX_COMBINED_UNIFORM_BLOCKS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_COMBINED_UNIFORM_BLOCKS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35377 */ val MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_CUBE_MAP_TEXTURE_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 34076 */ val MAX_CUBE_MAP_TEXTURE_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.MAX_CUBE_MAP_TEXTURE_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait MAX_DRAW_BUFFERS
+    extends StObject
+       with WebGLConstants
+  /* 34852 */ val MAX_DRAW_BUFFERS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_DRAW_BUFFERS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_ELEMENTS_INDICES
+    extends StObject
+       with WebGLConstants
+  /* 33001 */ val MAX_ELEMENTS_INDICES: typingsJapgolly.cesium.mod.WebGLConstants.MAX_ELEMENTS_INDICES & Double = js.native
+  
+  @js.native
+  sealed trait MAX_ELEMENTS_VERTICES
+    extends StObject
+       with WebGLConstants
+  /* 33000 */ val MAX_ELEMENTS_VERTICES: typingsJapgolly.cesium.mod.WebGLConstants.MAX_ELEMENTS_VERTICES & Double = js.native
+  
+  @js.native
+  sealed trait MAX_ELEMENT_INDEX
+    extends StObject
+       with WebGLConstants
+  /* 36203 */ val MAX_ELEMENT_INDEX: typingsJapgolly.cesium.mod.WebGLConstants.MAX_ELEMENT_INDEX & Double = js.native
+  
+  @js.native
+  sealed trait MAX_FRAGMENT_INPUT_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 37157 */ val MAX_FRAGMENT_INPUT_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_FRAGMENT_INPUT_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_FRAGMENT_UNIFORM_BLOCKS
+    extends StObject
+       with WebGLConstants
+  /* 35373 */ val MAX_FRAGMENT_UNIFORM_BLOCKS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_BLOCKS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_FRAGMENT_UNIFORM_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35657 */ val MAX_FRAGMENT_UNIFORM_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_FRAGMENT_UNIFORM_VECTORS
+    extends StObject
+       with WebGLConstants
+  /* 36349 */ val MAX_FRAGMENT_UNIFORM_VECTORS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_FRAGMENT_UNIFORM_VECTORS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_PROGRAM_TEXEL_OFFSET
+    extends StObject
+       with WebGLConstants
+  /* 35077 */ val MAX_PROGRAM_TEXEL_OFFSET: typingsJapgolly.cesium.mod.WebGLConstants.MAX_PROGRAM_TEXEL_OFFSET & Double = js.native
+  
+  @js.native
+  sealed trait MAX_RENDERBUFFER_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 34024 */ val MAX_RENDERBUFFER_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.MAX_RENDERBUFFER_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait MAX_SAMPLES
+    extends StObject
+       with WebGLConstants
+  /* 36183 */ val MAX_SAMPLES: typingsJapgolly.cesium.mod.WebGLConstants.MAX_SAMPLES & Double = js.native
+  
+  @js.native
+  sealed trait MAX_SERVER_WAIT_TIMEOUT
+    extends StObject
+       with WebGLConstants
+  /* 37137 */ val MAX_SERVER_WAIT_TIMEOUT: typingsJapgolly.cesium.mod.WebGLConstants.MAX_SERVER_WAIT_TIMEOUT & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TEXTURE_IMAGE_UNITS
+    extends StObject
+       with WebGLConstants
+  /* 34930 */ val MAX_TEXTURE_IMAGE_UNITS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TEXTURE_IMAGE_UNITS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TEXTURE_LOD_BIAS
+    extends StObject
+       with WebGLConstants
+  /* 34045 */ val MAX_TEXTURE_LOD_BIAS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TEXTURE_LOD_BIAS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TEXTURE_MAX_ANISOTROPY_EXT
+    extends StObject
+       with WebGLConstants
+  /* 34047 */ val MAX_TEXTURE_MAX_ANISOTROPY_EXT: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TEXTURE_MAX_ANISOTROPY_EXT & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TEXTURE_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 3379 */ val MAX_TEXTURE_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TEXTURE_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35978 */ val MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS
+    extends StObject
+       with WebGLConstants
+  /* 35979 */ val MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35968 */ val MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_UNIFORM_BLOCK_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 35376 */ val MAX_UNIFORM_BLOCK_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.MAX_UNIFORM_BLOCK_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait MAX_UNIFORM_BUFFER_BINDINGS
+    extends StObject
+       with WebGLConstants
+  /* 35375 */ val MAX_UNIFORM_BUFFER_BINDINGS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_UNIFORM_BUFFER_BINDINGS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VARYING_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35659 */ val MAX_VARYING_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VARYING_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VARYING_VECTORS
+    extends StObject
+       with WebGLConstants
+  /* 36348 */ val MAX_VARYING_VECTORS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VARYING_VECTORS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_ATTRIBS
+    extends StObject
+       with WebGLConstants
+  /* 34921 */ val MAX_VERTEX_ATTRIBS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_ATTRIBS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_OUTPUT_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 37154 */ val MAX_VERTEX_OUTPUT_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_OUTPUT_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_TEXTURE_IMAGE_UNITS
+    extends StObject
+       with WebGLConstants
+  /* 35660 */ val MAX_VERTEX_TEXTURE_IMAGE_UNITS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_TEXTURE_IMAGE_UNITS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_UNIFORM_BLOCKS
+    extends StObject
+       with WebGLConstants
+  /* 35371 */ val MAX_VERTEX_UNIFORM_BLOCKS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_BLOCKS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_UNIFORM_COMPONENTS
+    extends StObject
+       with WebGLConstants
+  /* 35658 */ val MAX_VERTEX_UNIFORM_COMPONENTS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_COMPONENTS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VERTEX_UNIFORM_VECTORS
+    extends StObject
+       with WebGLConstants
+  /* 36347 */ val MAX_VERTEX_UNIFORM_VECTORS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VERTEX_UNIFORM_VECTORS & Double = js.native
+  
+  @js.native
+  sealed trait MAX_VIEWPORT_DIMS
+    extends StObject
+       with WebGLConstants
+  /* 3386 */ val MAX_VIEWPORT_DIMS: typingsJapgolly.cesium.mod.WebGLConstants.MAX_VIEWPORT_DIMS & Double = js.native
+  
+  @js.native
+  sealed trait MEDIUM_FLOAT
+    extends StObject
+       with WebGLConstants
+  /* 36337 */ val MEDIUM_FLOAT: typingsJapgolly.cesium.mod.WebGLConstants.MEDIUM_FLOAT & Double = js.native
+  
+  @js.native
+  sealed trait MEDIUM_INT
+    extends StObject
+       with WebGLConstants
+  /* 36340 */ val MEDIUM_INT: typingsJapgolly.cesium.mod.WebGLConstants.MEDIUM_INT & Double = js.native
+  
+  @js.native
+  sealed trait MIN
+    extends StObject
+       with WebGLConstants
+  /* 32775 */ val MIN: typingsJapgolly.cesium.mod.WebGLConstants.MIN & Double = js.native
+  
+  @js.native
+  sealed trait MIN_PROGRAM_TEXEL_OFFSET
+    extends StObject
+       with WebGLConstants
+  /* 35076 */ val MIN_PROGRAM_TEXEL_OFFSET: typingsJapgolly.cesium.mod.WebGLConstants.MIN_PROGRAM_TEXEL_OFFSET & Double = js.native
+  
+  @js.native
+  sealed trait MIRRORED_REPEAT
+    extends StObject
+       with WebGLConstants
+  /* 33648 */ val MIRRORED_REPEAT: typingsJapgolly.cesium.mod.WebGLConstants.MIRRORED_REPEAT & Double = js.native
+  
+  @js.native
+  sealed trait NEAREST
+    extends StObject
+       with WebGLConstants
+  /* 9728 */ val NEAREST: typingsJapgolly.cesium.mod.WebGLConstants.NEAREST & Double = js.native
+  
+  @js.native
+  sealed trait NEAREST_MIPMAP_LINEAR
+    extends StObject
+       with WebGLConstants
+  /* 9986 */ val NEAREST_MIPMAP_LINEAR: typingsJapgolly.cesium.mod.WebGLConstants.NEAREST_MIPMAP_LINEAR & Double = js.native
+  
+  @js.native
+  sealed trait NEAREST_MIPMAP_NEAREST
+    extends StObject
+       with WebGLConstants
+  /* 9984 */ val NEAREST_MIPMAP_NEAREST: typingsJapgolly.cesium.mod.WebGLConstants.NEAREST_MIPMAP_NEAREST & Double = js.native
+  
+  @js.native
+  sealed trait NEVER
+    extends StObject
+       with WebGLConstants
+  /* 512 */ val NEVER: typingsJapgolly.cesium.mod.WebGLConstants.NEVER & Double = js.native
+  
+  @js.native
+  sealed trait NICEST
+    extends StObject
+       with WebGLConstants
+  /* 4354 */ val NICEST: typingsJapgolly.cesium.mod.WebGLConstants.NICEST & Double = js.native
+  
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with WebGLConstants
+  /* 0 */ val NONE: typingsJapgolly.cesium.mod.WebGLConstants.NONE & Double = js.native
+  
+  @js.native
+  sealed trait NOTEQUAL
+    extends StObject
+       with WebGLConstants
+  /* 517 */ val NOTEQUAL: typingsJapgolly.cesium.mod.WebGLConstants.NOTEQUAL & Double = js.native
+  
+  @js.native
+  sealed trait NO_ERROR
+    extends StObject
+       with WebGLConstants
+  /* 0 */ val NO_ERROR: typingsJapgolly.cesium.mod.WebGLConstants.NO_ERROR & Double = js.native
+  
+  @js.native
+  sealed trait OBJECT_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 37138 */ val OBJECT_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.OBJECT_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait ONE
+    extends StObject
+       with WebGLConstants
+  /* 1 */ val ONE: typingsJapgolly.cesium.mod.WebGLConstants.ONE & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_CONSTANT_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 32772 */ val ONE_MINUS_CONSTANT_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_CONSTANT_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_CONSTANT_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 32770 */ val ONE_MINUS_CONSTANT_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_CONSTANT_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_DST_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 773 */ val ONE_MINUS_DST_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_DST_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_DST_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 775 */ val ONE_MINUS_DST_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_DST_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_SRC_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 771 */ val ONE_MINUS_SRC_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_SRC_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait ONE_MINUS_SRC_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 769 */ val ONE_MINUS_SRC_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.ONE_MINUS_SRC_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait OUT_OF_MEMORY
+    extends StObject
+       with WebGLConstants
+  /* 1285 */ val OUT_OF_MEMORY: typingsJapgolly.cesium.mod.WebGLConstants.OUT_OF_MEMORY & Double = js.native
+  
+  @js.native
+  sealed trait PACK_ALIGNMENT
+    extends StObject
+       with WebGLConstants
+  /* 3333 */ val PACK_ALIGNMENT: typingsJapgolly.cesium.mod.WebGLConstants.PACK_ALIGNMENT & Double = js.native
+  
+  @js.native
+  sealed trait PACK_ROW_LENGTH
+    extends StObject
+       with WebGLConstants
+  /* 3330 */ val PACK_ROW_LENGTH: typingsJapgolly.cesium.mod.WebGLConstants.PACK_ROW_LENGTH & Double = js.native
+  
+  @js.native
+  sealed trait PACK_SKIP_PIXELS
+    extends StObject
+       with WebGLConstants
+  /* 3332 */ val PACK_SKIP_PIXELS: typingsJapgolly.cesium.mod.WebGLConstants.PACK_SKIP_PIXELS & Double = js.native
+  
+  @js.native
+  sealed trait PACK_SKIP_ROWS
+    extends StObject
+       with WebGLConstants
+  /* 3331 */ val PACK_SKIP_ROWS: typingsJapgolly.cesium.mod.WebGLConstants.PACK_SKIP_ROWS & Double = js.native
+  
+  @js.native
+  sealed trait PIXEL_PACK_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 35051 */ val PIXEL_PACK_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.PIXEL_PACK_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait PIXEL_PACK_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35053 */ val PIXEL_PACK_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.PIXEL_PACK_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait PIXEL_UNPACK_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 35052 */ val PIXEL_UNPACK_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.PIXEL_UNPACK_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait PIXEL_UNPACK_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35055 */ val PIXEL_UNPACK_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.PIXEL_UNPACK_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait POINTS
+    extends StObject
+       with WebGLConstants
+  /* 0 */ val POINTS: typingsJapgolly.cesium.mod.WebGLConstants.POINTS & Double = js.native
+  
+  @js.native
+  sealed trait POLYGON_OFFSET_FACTOR
+    extends StObject
+       with WebGLConstants
+  /* 32824 */ val POLYGON_OFFSET_FACTOR: typingsJapgolly.cesium.mod.WebGLConstants.POLYGON_OFFSET_FACTOR & Double = js.native
+  
+  @js.native
+  sealed trait POLYGON_OFFSET_FILL
+    extends StObject
+       with WebGLConstants
+  /* 32823 */ val POLYGON_OFFSET_FILL: typingsJapgolly.cesium.mod.WebGLConstants.POLYGON_OFFSET_FILL & Double = js.native
+  
+  @js.native
+  sealed trait POLYGON_OFFSET_UNITS
+    extends StObject
+       with WebGLConstants
+  /* 10752 */ val POLYGON_OFFSET_UNITS: typingsJapgolly.cesium.mod.WebGLConstants.POLYGON_OFFSET_UNITS & Double = js.native
+  
+  @js.native
+  sealed trait QUERY_RESULT
+    extends StObject
+       with WebGLConstants
+  /* 34918 */ val QUERY_RESULT: typingsJapgolly.cesium.mod.WebGLConstants.QUERY_RESULT & Double = js.native
+  
+  @js.native
+  sealed trait QUERY_RESULT_AVAILABLE
+    extends StObject
+       with WebGLConstants
+  /* 34919 */ val QUERY_RESULT_AVAILABLE: typingsJapgolly.cesium.mod.WebGLConstants.QUERY_RESULT_AVAILABLE & Double = js.native
+  
+  @js.native
+  sealed trait R11F_G11F_B10F
+    extends StObject
+       with WebGLConstants
+  /* 35898 */ val R11F_G11F_B10F: typingsJapgolly.cesium.mod.WebGLConstants.R11F_G11F_B10F & Double = js.native
+  
+  @js.native
+  sealed trait R16F
+    extends StObject
+       with WebGLConstants
+  /* 33325 */ val R16F: typingsJapgolly.cesium.mod.WebGLConstants.R16F & Double = js.native
+  
+  @js.native
+  sealed trait R16I
+    extends StObject
+       with WebGLConstants
+  /* 33331 */ val R16I: typingsJapgolly.cesium.mod.WebGLConstants.R16I & Double = js.native
+  
+  @js.native
+  sealed trait R16UI
+    extends StObject
+       with WebGLConstants
+  /* 33332 */ val R16UI: typingsJapgolly.cesium.mod.WebGLConstants.R16UI & Double = js.native
+  
+  @js.native
+  sealed trait R32F
+    extends StObject
+       with WebGLConstants
+  /* 33326 */ val R32F: typingsJapgolly.cesium.mod.WebGLConstants.R32F & Double = js.native
+  
+  @js.native
+  sealed trait R32I
+    extends StObject
+       with WebGLConstants
+  /* 33333 */ val R32I: typingsJapgolly.cesium.mod.WebGLConstants.R32I & Double = js.native
+  
+  @js.native
+  sealed trait R32UI
+    extends StObject
+       with WebGLConstants
+  /* 33334 */ val R32UI: typingsJapgolly.cesium.mod.WebGLConstants.R32UI & Double = js.native
+  
+  @js.native
+  sealed trait R8
+    extends StObject
+       with WebGLConstants
+  /* 33321 */ val R8: typingsJapgolly.cesium.mod.WebGLConstants.R8 & Double = js.native
+  
+  @js.native
+  sealed trait R8I
+    extends StObject
+       with WebGLConstants
+  /* 33329 */ val R8I: typingsJapgolly.cesium.mod.WebGLConstants.R8I & Double = js.native
+  
+  @js.native
+  sealed trait R8UI
+    extends StObject
+       with WebGLConstants
+  /* 33330 */ val R8UI: typingsJapgolly.cesium.mod.WebGLConstants.R8UI & Double = js.native
+  
+  @js.native
+  sealed trait R8_SNORM
+    extends StObject
+       with WebGLConstants
+  /* 36756 */ val R8_SNORM: typingsJapgolly.cesium.mod.WebGLConstants.R8_SNORM & Double = js.native
+  
+  @js.native
+  sealed trait RASTERIZER_DISCARD
+    extends StObject
+       with WebGLConstants
+  /* 35977 */ val RASTERIZER_DISCARD: typingsJapgolly.cesium.mod.WebGLConstants.RASTERIZER_DISCARD & Double = js.native
+  
+  @js.native
+  sealed trait READ_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 3074 */ val READ_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.READ_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait READ_FRAMEBUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36008 */ val READ_FRAMEBUFFER: typingsJapgolly.cesium.mod.WebGLConstants.READ_FRAMEBUFFER & Double = js.native
+  
+  @js.native
+  sealed trait READ_FRAMEBUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36010 */ val READ_FRAMEBUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.READ_FRAMEBUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait RED
+    extends StObject
+       with WebGLConstants
+  /* 6403 */ val RED: typingsJapgolly.cesium.mod.WebGLConstants.RED & Double = js.native
+  
+  @js.native
+  sealed trait RED_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3410 */ val RED_BITS: typingsJapgolly.cesium.mod.WebGLConstants.RED_BITS & Double = js.native
+  
+  @js.native
+  sealed trait RED_INTEGER
+    extends StObject
+       with WebGLConstants
+  /* 36244 */ val RED_INTEGER: typingsJapgolly.cesium.mod.WebGLConstants.RED_INTEGER & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER
+    extends StObject
+       with WebGLConstants
+  /* 36161 */ val RENDERBUFFER: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_ALPHA_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36179 */ val RENDERBUFFER_ALPHA_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_ALPHA_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36007 */ val RENDERBUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_BLUE_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36178 */ val RENDERBUFFER_BLUE_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_BLUE_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_DEPTH_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36180 */ val RENDERBUFFER_DEPTH_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_DEPTH_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_GREEN_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36177 */ val RENDERBUFFER_GREEN_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_GREEN_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_HEIGHT
+    extends StObject
+       with WebGLConstants
+  /* 36163 */ val RENDERBUFFER_HEIGHT: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_HEIGHT & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_INTERNAL_FORMAT
+    extends StObject
+       with WebGLConstants
+  /* 36164 */ val RENDERBUFFER_INTERNAL_FORMAT: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_INTERNAL_FORMAT & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_RED_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36176 */ val RENDERBUFFER_RED_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_RED_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_SAMPLES
+    extends StObject
+       with WebGLConstants
+  /* 36011 */ val RENDERBUFFER_SAMPLES: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_SAMPLES & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_STENCIL_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 36181 */ val RENDERBUFFER_STENCIL_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_STENCIL_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait RENDERBUFFER_WIDTH
+    extends StObject
+       with WebGLConstants
+  /* 36162 */ val RENDERBUFFER_WIDTH: typingsJapgolly.cesium.mod.WebGLConstants.RENDERBUFFER_WIDTH & Double = js.native
+  
+  @js.native
+  sealed trait RENDERER
+    extends StObject
+       with WebGLConstants
+  /* 7937 */ val RENDERER: typingsJapgolly.cesium.mod.WebGLConstants.RENDERER & Double = js.native
+  
+  @js.native
+  sealed trait REPEAT
+    extends StObject
+       with WebGLConstants
+  /* 10497 */ val REPEAT: typingsJapgolly.cesium.mod.WebGLConstants.REPEAT & Double = js.native
+  
+  @js.native
+  sealed trait REPLACE
+    extends StObject
+       with WebGLConstants
+  /* 7681 */ val REPLACE: typingsJapgolly.cesium.mod.WebGLConstants.REPLACE & Double = js.native
+  
+  @js.native
+  sealed trait RG
+    extends StObject
+       with WebGLConstants
+  /* 33319 */ val RG: typingsJapgolly.cesium.mod.WebGLConstants.RG & Double = js.native
+  
+  @js.native
+  sealed trait RG16F
+    extends StObject
+       with WebGLConstants
+  /* 33327 */ val RG16F: typingsJapgolly.cesium.mod.WebGLConstants.RG16F & Double = js.native
+  
+  @js.native
+  sealed trait RG16I
+    extends StObject
+       with WebGLConstants
+  /* 33337 */ val RG16I: typingsJapgolly.cesium.mod.WebGLConstants.RG16I & Double = js.native
+  
+  @js.native
+  sealed trait RG16UI
+    extends StObject
+       with WebGLConstants
+  /* 33338 */ val RG16UI: typingsJapgolly.cesium.mod.WebGLConstants.RG16UI & Double = js.native
+  
+  @js.native
+  sealed trait RG32F
+    extends StObject
+       with WebGLConstants
+  /* 33328 */ val RG32F: typingsJapgolly.cesium.mod.WebGLConstants.RG32F & Double = js.native
+  
+  @js.native
+  sealed trait RG32I
+    extends StObject
+       with WebGLConstants
+  /* 33339 */ val RG32I: typingsJapgolly.cesium.mod.WebGLConstants.RG32I & Double = js.native
+  
+  @js.native
+  sealed trait RG32UI
+    extends StObject
+       with WebGLConstants
+  /* 33340 */ val RG32UI: typingsJapgolly.cesium.mod.WebGLConstants.RG32UI & Double = js.native
+  
+  @js.native
+  sealed trait RG8
+    extends StObject
+       with WebGLConstants
+  /* 33323 */ val RG8: typingsJapgolly.cesium.mod.WebGLConstants.RG8 & Double = js.native
+  
+  @js.native
+  sealed trait RG8I
+    extends StObject
+       with WebGLConstants
+  /* 33335 */ val RG8I: typingsJapgolly.cesium.mod.WebGLConstants.RG8I & Double = js.native
+  
+  @js.native
+  sealed trait RG8UI
+    extends StObject
+       with WebGLConstants
+  /* 33336 */ val RG8UI: typingsJapgolly.cesium.mod.WebGLConstants.RG8UI & Double = js.native
+  
+  @js.native
+  sealed trait RG8_SNORM
+    extends StObject
+       with WebGLConstants
+  /* 36757 */ val RG8_SNORM: typingsJapgolly.cesium.mod.WebGLConstants.RG8_SNORM & Double = js.native
+  
+  @js.native
+  sealed trait RGB
+    extends StObject
+       with WebGLConstants
+  /* 6407 */ val RGB: typingsJapgolly.cesium.mod.WebGLConstants.RGB & Double = js.native
+  
+  @js.native
+  sealed trait RGB10_A2
+    extends StObject
+       with WebGLConstants
+  /* 32857 */ val RGB10_A2: typingsJapgolly.cesium.mod.WebGLConstants.RGB10_A2 & Double = js.native
+  
+  @js.native
+  sealed trait RGB10_A2UI
+    extends StObject
+       with WebGLConstants
+  /* 36975 */ val RGB10_A2UI: typingsJapgolly.cesium.mod.WebGLConstants.RGB10_A2UI & Double = js.native
+  
+  @js.native
+  sealed trait RGB16F
+    extends StObject
+       with WebGLConstants
+  /* 34843 */ val RGB16F: typingsJapgolly.cesium.mod.WebGLConstants.RGB16F & Double = js.native
+  
+  @js.native
+  sealed trait RGB16I
+    extends StObject
+       with WebGLConstants
+  /* 36233 */ val RGB16I: typingsJapgolly.cesium.mod.WebGLConstants.RGB16I & Double = js.native
+  
+  @js.native
+  sealed trait RGB16UI
+    extends StObject
+       with WebGLConstants
+  /* 36215 */ val RGB16UI: typingsJapgolly.cesium.mod.WebGLConstants.RGB16UI & Double = js.native
+  
+  @js.native
+  sealed trait RGB32F
+    extends StObject
+       with WebGLConstants
+  /* 34837 */ val RGB32F: typingsJapgolly.cesium.mod.WebGLConstants.RGB32F & Double = js.native
+  
+  @js.native
+  sealed trait RGB32I
+    extends StObject
+       with WebGLConstants
+  /* 36227 */ val RGB32I: typingsJapgolly.cesium.mod.WebGLConstants.RGB32I & Double = js.native
+  
+  @js.native
+  sealed trait RGB32UI
+    extends StObject
+       with WebGLConstants
+  /* 36209 */ val RGB32UI: typingsJapgolly.cesium.mod.WebGLConstants.RGB32UI & Double = js.native
+  
+  @js.native
+  sealed trait RGB565
+    extends StObject
+       with WebGLConstants
+  /* 36194 */ val RGB565: typingsJapgolly.cesium.mod.WebGLConstants.RGB565 & Double = js.native
+  
+  @js.native
+  sealed trait RGB5_A1
+    extends StObject
+       with WebGLConstants
+  /* 32855 */ val RGB5_A1: typingsJapgolly.cesium.mod.WebGLConstants.RGB5_A1 & Double = js.native
+  
+  @js.native
+  sealed trait RGB8
+    extends StObject
+       with WebGLConstants
+  /* 32849 */ val RGB8: typingsJapgolly.cesium.mod.WebGLConstants.RGB8 & Double = js.native
+  
+  @js.native
+  sealed trait RGB8I
+    extends StObject
+       with WebGLConstants
+  /* 36239 */ val RGB8I: typingsJapgolly.cesium.mod.WebGLConstants.RGB8I & Double = js.native
+  
+  @js.native
+  sealed trait RGB8UI
+    extends StObject
+       with WebGLConstants
+  /* 36221 */ val RGB8UI: typingsJapgolly.cesium.mod.WebGLConstants.RGB8UI & Double = js.native
+  
+  @js.native
+  sealed trait RGB8_SNORM
+    extends StObject
+       with WebGLConstants
+  /* 36758 */ val RGB8_SNORM: typingsJapgolly.cesium.mod.WebGLConstants.RGB8_SNORM & Double = js.native
+  
+  @js.native
+  sealed trait RGB9_E5
+    extends StObject
+       with WebGLConstants
+  /* 35901 */ val RGB9_E5: typingsJapgolly.cesium.mod.WebGLConstants.RGB9_E5 & Double = js.native
+  
+  @js.native
+  sealed trait RGBA
+    extends StObject
+       with WebGLConstants
+  /* 6408 */ val RGBA: typingsJapgolly.cesium.mod.WebGLConstants.RGBA & Double = js.native
+  
+  @js.native
+  sealed trait RGBA16F
+    extends StObject
+       with WebGLConstants
+  /* 34842 */ val RGBA16F: typingsJapgolly.cesium.mod.WebGLConstants.RGBA16F & Double = js.native
+  
+  @js.native
+  sealed trait RGBA16I
+    extends StObject
+       with WebGLConstants
+  /* 36232 */ val RGBA16I: typingsJapgolly.cesium.mod.WebGLConstants.RGBA16I & Double = js.native
+  
+  @js.native
+  sealed trait RGBA16UI
+    extends StObject
+       with WebGLConstants
+  /* 36214 */ val RGBA16UI: typingsJapgolly.cesium.mod.WebGLConstants.RGBA16UI & Double = js.native
+  
+  @js.native
+  sealed trait RGBA32F
+    extends StObject
+       with WebGLConstants
+  /* 34836 */ val RGBA32F: typingsJapgolly.cesium.mod.WebGLConstants.RGBA32F & Double = js.native
+  
+  @js.native
+  sealed trait RGBA32I
+    extends StObject
+       with WebGLConstants
+  /* 36226 */ val RGBA32I: typingsJapgolly.cesium.mod.WebGLConstants.RGBA32I & Double = js.native
+  
+  @js.native
+  sealed trait RGBA32UI
+    extends StObject
+       with WebGLConstants
+  /* 36208 */ val RGBA32UI: typingsJapgolly.cesium.mod.WebGLConstants.RGBA32UI & Double = js.native
+  
+  @js.native
+  sealed trait RGBA4
+    extends StObject
+       with WebGLConstants
+  /* 32854 */ val RGBA4: typingsJapgolly.cesium.mod.WebGLConstants.RGBA4 & Double = js.native
+  
+  @js.native
+  sealed trait RGBA8
+    extends StObject
+       with WebGLConstants
+  /* 32856 */ val RGBA8: typingsJapgolly.cesium.mod.WebGLConstants.RGBA8 & Double = js.native
+  
+  @js.native
+  sealed trait RGBA8I
+    extends StObject
+       with WebGLConstants
+  /* 36238 */ val RGBA8I: typingsJapgolly.cesium.mod.WebGLConstants.RGBA8I & Double = js.native
+  
+  @js.native
+  sealed trait RGBA8UI
+    extends StObject
+       with WebGLConstants
+  /* 36220 */ val RGBA8UI: typingsJapgolly.cesium.mod.WebGLConstants.RGBA8UI & Double = js.native
+  
+  @js.native
+  sealed trait RGBA8_SNORM
+    extends StObject
+       with WebGLConstants
+  /* 36759 */ val RGBA8_SNORM: typingsJapgolly.cesium.mod.WebGLConstants.RGBA8_SNORM & Double = js.native
+  
+  @js.native
+  sealed trait RGBA_INTEGER
+    extends StObject
+       with WebGLConstants
+  /* 36249 */ val RGBA_INTEGER: typingsJapgolly.cesium.mod.WebGLConstants.RGBA_INTEGER & Double = js.native
+  
+  @js.native
+  sealed trait RGB_INTEGER
+    extends StObject
+       with WebGLConstants
+  /* 36248 */ val RGB_INTEGER: typingsJapgolly.cesium.mod.WebGLConstants.RGB_INTEGER & Double = js.native
+  
+  @js.native
+  sealed trait RG_INTEGER
+    extends StObject
+       with WebGLConstants
+  /* 33320 */ val RG_INTEGER: typingsJapgolly.cesium.mod.WebGLConstants.RG_INTEGER & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_2D
+    extends StObject
+       with WebGLConstants
+  /* 35678 */ val SAMPLER_2D: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_2D & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_2D_ARRAY
+    extends StObject
+       with WebGLConstants
+  /* 36289 */ val SAMPLER_2D_ARRAY: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_2D_ARRAY & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_2D_ARRAY_SHADOW
+    extends StObject
+       with WebGLConstants
+  /* 36292 */ val SAMPLER_2D_ARRAY_SHADOW: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_2D_ARRAY_SHADOW & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_2D_SHADOW
+    extends StObject
+       with WebGLConstants
+  /* 35682 */ val SAMPLER_2D_SHADOW: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_2D_SHADOW & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_3D
+    extends StObject
+       with WebGLConstants
+  /* 35679 */ val SAMPLER_3D: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_3D & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35097 */ val SAMPLER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_CUBE
+    extends StObject
+       with WebGLConstants
+  /* 35680 */ val SAMPLER_CUBE: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_CUBE & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLER_CUBE_SHADOW
+    extends StObject
+       with WebGLConstants
+  /* 36293 */ val SAMPLER_CUBE_SHADOW: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLER_CUBE_SHADOW & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLES
+    extends StObject
+       with WebGLConstants
+  /* 32937 */ val SAMPLES: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLES & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLE_ALPHA_TO_COVERAGE
+    extends StObject
+       with WebGLConstants
+  /* 32926 */ val SAMPLE_ALPHA_TO_COVERAGE: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLE_ALPHA_TO_COVERAGE & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLE_BUFFERS
+    extends StObject
+       with WebGLConstants
+  /* 32936 */ val SAMPLE_BUFFERS: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLE_BUFFERS & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLE_COVERAGE
+    extends StObject
+       with WebGLConstants
+  /* 32928 */ val SAMPLE_COVERAGE: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLE_COVERAGE & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLE_COVERAGE_INVERT
+    extends StObject
+       with WebGLConstants
+  /* 32939 */ val SAMPLE_COVERAGE_INVERT: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLE_COVERAGE_INVERT & Double = js.native
+  
+  @js.native
+  sealed trait SAMPLE_COVERAGE_VALUE
+    extends StObject
+       with WebGLConstants
+  /* 32938 */ val SAMPLE_COVERAGE_VALUE: typingsJapgolly.cesium.mod.WebGLConstants.SAMPLE_COVERAGE_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait SCISSOR_BOX
+    extends StObject
+       with WebGLConstants
+  /* 3088 */ val SCISSOR_BOX: typingsJapgolly.cesium.mod.WebGLConstants.SCISSOR_BOX & Double = js.native
+  
+  @js.native
+  sealed trait SCISSOR_TEST
+    extends StObject
+       with WebGLConstants
+  /* 3089 */ val SCISSOR_TEST: typingsJapgolly.cesium.mod.WebGLConstants.SCISSOR_TEST & Double = js.native
+  
+  @js.native
+  sealed trait SEPARATE_ATTRIBS
+    extends StObject
+       with WebGLConstants
+  /* 35981 */ val SEPARATE_ATTRIBS: typingsJapgolly.cesium.mod.WebGLConstants.SEPARATE_ATTRIBS & Double = js.native
+  
+  @js.native
+  sealed trait SHADER_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 35663 */ val SHADER_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.SHADER_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait SHADING_LANGUAGE_VERSION
+    extends StObject
+       with WebGLConstants
+  /* 35724 */ val SHADING_LANGUAGE_VERSION: typingsJapgolly.cesium.mod.WebGLConstants.SHADING_LANGUAGE_VERSION & Double = js.native
+  
+  @js.native
+  sealed trait SHORT
+    extends StObject
+       with WebGLConstants
+  /* 5122 */ val SHORT: typingsJapgolly.cesium.mod.WebGLConstants.SHORT & Double = js.native
+  
+  @js.native
+  sealed trait SIGNALED
+    extends StObject
+       with WebGLConstants
+  /* 37145 */ val SIGNALED: typingsJapgolly.cesium.mod.WebGLConstants.SIGNALED & Double = js.native
+  
+  @js.native
+  sealed trait SIGNED_NORMALIZED
+    extends StObject
+       with WebGLConstants
+  /* 36764 */ val SIGNED_NORMALIZED: typingsJapgolly.cesium.mod.WebGLConstants.SIGNED_NORMALIZED & Double = js.native
+  
+  @js.native
+  sealed trait SRC_ALPHA
+    extends StObject
+       with WebGLConstants
+  /* 770 */ val SRC_ALPHA: typingsJapgolly.cesium.mod.WebGLConstants.SRC_ALPHA & Double = js.native
+  
+  @js.native
+  sealed trait SRC_ALPHA_SATURATE
+    extends StObject
+       with WebGLConstants
+  /* 776 */ val SRC_ALPHA_SATURATE: typingsJapgolly.cesium.mod.WebGLConstants.SRC_ALPHA_SATURATE & Double = js.native
+  
+  @js.native
+  sealed trait SRC_COLOR
+    extends StObject
+       with WebGLConstants
+  /* 768 */ val SRC_COLOR: typingsJapgolly.cesium.mod.WebGLConstants.SRC_COLOR & Double = js.native
+  
+  @js.native
+  sealed trait SRGB
+    extends StObject
+       with WebGLConstants
+  /* 35904 */ val SRGB: typingsJapgolly.cesium.mod.WebGLConstants.SRGB & Double = js.native
+  
+  @js.native
+  sealed trait SRGB8
+    extends StObject
+       with WebGLConstants
+  /* 35905 */ val SRGB8: typingsJapgolly.cesium.mod.WebGLConstants.SRGB8 & Double = js.native
+  
+  @js.native
+  sealed trait SRGB8_ALPHA8
+    extends StObject
+       with WebGLConstants
+  /* 35907 */ val SRGB8_ALPHA8: typingsJapgolly.cesium.mod.WebGLConstants.SRGB8_ALPHA8 & Double = js.native
+  
+  @js.native
+  sealed trait STATIC_COPY
+    extends StObject
+       with WebGLConstants
+  /* 35046 */ val STATIC_COPY: typingsJapgolly.cesium.mod.WebGLConstants.STATIC_COPY & Double = js.native
+  
+  @js.native
+  sealed trait STATIC_DRAW
+    extends StObject
+       with WebGLConstants
+  /* 35044 */ val STATIC_DRAW: typingsJapgolly.cesium.mod.WebGLConstants.STATIC_DRAW & Double = js.native
+  
+  @js.native
+  sealed trait STATIC_READ
+    extends StObject
+       with WebGLConstants
+  /* 35045 */ val STATIC_READ: typingsJapgolly.cesium.mod.WebGLConstants.STATIC_READ & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL
+    extends StObject
+       with WebGLConstants
+  /* 6146 */ val STENCIL: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_ATTACHMENT
+    extends StObject
+       with WebGLConstants
+  /* 36128 */ val STENCIL_ATTACHMENT: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_ATTACHMENT & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_FAIL
+    extends StObject
+       with WebGLConstants
+  /* 34817 */ val STENCIL_BACK_FAIL: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_FAIL & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_FUNC
+    extends StObject
+       with WebGLConstants
+  /* 34816 */ val STENCIL_BACK_FUNC: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_FUNC & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_PASS_DEPTH_FAIL
+    extends StObject
+       with WebGLConstants
+  /* 34818 */ val STENCIL_BACK_PASS_DEPTH_FAIL: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_PASS_DEPTH_FAIL & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_PASS_DEPTH_PASS
+    extends StObject
+       with WebGLConstants
+  /* 34819 */ val STENCIL_BACK_PASS_DEPTH_PASS: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_PASS_DEPTH_PASS & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_REF
+    extends StObject
+       with WebGLConstants
+  /* 36003 */ val STENCIL_BACK_REF: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_REF & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_VALUE_MASK
+    extends StObject
+       with WebGLConstants
+  /* 36004 */ val STENCIL_BACK_VALUE_MASK: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_VALUE_MASK & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BACK_WRITEMASK
+    extends StObject
+       with WebGLConstants
+  /* 36005 */ val STENCIL_BACK_WRITEMASK: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BACK_WRITEMASK & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3415 */ val STENCIL_BITS: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BITS & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_BUFFER_BIT
+    extends StObject
+       with WebGLConstants
+  /* 1024 */ val STENCIL_BUFFER_BIT: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_BUFFER_BIT & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_CLEAR_VALUE
+    extends StObject
+       with WebGLConstants
+  /* 2961 */ val STENCIL_CLEAR_VALUE: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_CLEAR_VALUE & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_FAIL
+    extends StObject
+       with WebGLConstants
+  /* 2964 */ val STENCIL_FAIL: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_FAIL & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_FUNC
+    extends StObject
+       with WebGLConstants
+  /* 2962 */ val STENCIL_FUNC: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_FUNC & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_INDEX
+    extends StObject
+       with WebGLConstants
+  /* 6401 */ val STENCIL_INDEX: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_INDEX & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_INDEX8
+    extends StObject
+       with WebGLConstants
+  /* 36168 */ val STENCIL_INDEX8: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_INDEX8 & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_PASS_DEPTH_FAIL
+    extends StObject
+       with WebGLConstants
+  /* 2965 */ val STENCIL_PASS_DEPTH_FAIL: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_PASS_DEPTH_FAIL & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_PASS_DEPTH_PASS
+    extends StObject
+       with WebGLConstants
+  /* 2966 */ val STENCIL_PASS_DEPTH_PASS: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_PASS_DEPTH_PASS & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_REF
+    extends StObject
+       with WebGLConstants
+  /* 2967 */ val STENCIL_REF: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_REF & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_TEST
+    extends StObject
+       with WebGLConstants
+  /* 2960 */ val STENCIL_TEST: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_TEST & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_VALUE_MASK
+    extends StObject
+       with WebGLConstants
+  /* 2963 */ val STENCIL_VALUE_MASK: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_VALUE_MASK & Double = js.native
+  
+  @js.native
+  sealed trait STENCIL_WRITEMASK
+    extends StObject
+       with WebGLConstants
+  /* 2968 */ val STENCIL_WRITEMASK: typingsJapgolly.cesium.mod.WebGLConstants.STENCIL_WRITEMASK & Double = js.native
+  
+  @js.native
+  sealed trait STREAM_COPY
+    extends StObject
+       with WebGLConstants
+  /* 35042 */ val STREAM_COPY: typingsJapgolly.cesium.mod.WebGLConstants.STREAM_COPY & Double = js.native
+  
+  @js.native
+  sealed trait STREAM_DRAW
+    extends StObject
+       with WebGLConstants
+  /* 35040 */ val STREAM_DRAW: typingsJapgolly.cesium.mod.WebGLConstants.STREAM_DRAW & Double = js.native
+  
+  @js.native
+  sealed trait STREAM_READ
+    extends StObject
+       with WebGLConstants
+  /* 35041 */ val STREAM_READ: typingsJapgolly.cesium.mod.WebGLConstants.STREAM_READ & Double = js.native
+  
+  @js.native
+  sealed trait SUBPIXEL_BITS
+    extends StObject
+       with WebGLConstants
+  /* 3408 */ val SUBPIXEL_BITS: typingsJapgolly.cesium.mod.WebGLConstants.SUBPIXEL_BITS & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_CONDITION
+    extends StObject
+       with WebGLConstants
+  /* 37139 */ val SYNC_CONDITION: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_CONDITION & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_FENCE
+    extends StObject
+       with WebGLConstants
+  /* 37142 */ val SYNC_FENCE: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_FENCE & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_FLAGS
+    extends StObject
+       with WebGLConstants
+  /* 37141 */ val SYNC_FLAGS: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_FLAGS & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_FLUSH_COMMANDS_BIT
+    extends StObject
+       with WebGLConstants
+  /* 1 */ val SYNC_FLUSH_COMMANDS_BIT: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_FLUSH_COMMANDS_BIT & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_GPU_COMMANDS_COMPLETE
+    extends StObject
+       with WebGLConstants
+  /* 37143 */ val SYNC_GPU_COMMANDS_COMPLETE: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_GPU_COMMANDS_COMPLETE & Double = js.native
+  
+  @js.native
+  sealed trait SYNC_STATUS
+    extends StObject
+       with WebGLConstants
+  /* 37140 */ val SYNC_STATUS: typingsJapgolly.cesium.mod.WebGLConstants.SYNC_STATUS & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE
+    extends StObject
+       with WebGLConstants
+  /* 5890 */ val TEXTURE: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE0
+    extends StObject
+       with WebGLConstants
+  /* 33984 */ val TEXTURE0: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE0 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE1
+    extends StObject
+       with WebGLConstants
+  /* 33985 */ val TEXTURE1: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE1 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE10
+    extends StObject
+       with WebGLConstants
+  /* 33994 */ val TEXTURE10: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE10 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE11
+    extends StObject
+       with WebGLConstants
+  /* 33995 */ val TEXTURE11: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE11 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE12
+    extends StObject
+       with WebGLConstants
+  /* 33996 */ val TEXTURE12: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE12 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE13
+    extends StObject
+       with WebGLConstants
+  /* 33997 */ val TEXTURE13: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE13 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE14
+    extends StObject
+       with WebGLConstants
+  /* 33998 */ val TEXTURE14: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE14 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE15
+    extends StObject
+       with WebGLConstants
+  /* 33999 */ val TEXTURE15: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE15 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE16
+    extends StObject
+       with WebGLConstants
+  /* 34000 */ val TEXTURE16: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE16 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE17
+    extends StObject
+       with WebGLConstants
+  /* 34001 */ val TEXTURE17: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE17 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE18
+    extends StObject
+       with WebGLConstants
+  /* 34002 */ val TEXTURE18: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE18 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE19
+    extends StObject
+       with WebGLConstants
+  /* 34003 */ val TEXTURE19: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE19 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE2
+    extends StObject
+       with WebGLConstants
+  /* 33986 */ val TEXTURE2: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE2 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE20
+    extends StObject
+       with WebGLConstants
+  /* 34004 */ val TEXTURE20: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE20 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE21
+    extends StObject
+       with WebGLConstants
+  /* 34005 */ val TEXTURE21: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE21 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE22
+    extends StObject
+       with WebGLConstants
+  /* 34006 */ val TEXTURE22: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE22 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE23
+    extends StObject
+       with WebGLConstants
+  /* 34007 */ val TEXTURE23: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE23 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE24
+    extends StObject
+       with WebGLConstants
+  /* 34008 */ val TEXTURE24: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE24 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE25
+    extends StObject
+       with WebGLConstants
+  /* 34009 */ val TEXTURE25: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE25 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE26
+    extends StObject
+       with WebGLConstants
+  /* 34010 */ val TEXTURE26: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE26 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE27
+    extends StObject
+       with WebGLConstants
+  /* 34011 */ val TEXTURE27: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE27 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE28
+    extends StObject
+       with WebGLConstants
+  /* 34012 */ val TEXTURE28: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE28 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE29
+    extends StObject
+       with WebGLConstants
+  /* 34013 */ val TEXTURE29: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE29 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE3
+    extends StObject
+       with WebGLConstants
+  /* 33987 */ val TEXTURE3: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE3 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE30
+    extends StObject
+       with WebGLConstants
+  /* 34014 */ val TEXTURE30: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE30 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE31
+    extends StObject
+       with WebGLConstants
+  /* 34015 */ val TEXTURE31: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE31 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE4
+    extends StObject
+       with WebGLConstants
+  /* 33988 */ val TEXTURE4: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE4 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE5
+    extends StObject
+       with WebGLConstants
+  /* 33989 */ val TEXTURE5: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE5 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE6
+    extends StObject
+       with WebGLConstants
+  /* 33990 */ val TEXTURE6: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE6 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE7
+    extends StObject
+       with WebGLConstants
+  /* 33991 */ val TEXTURE7: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE7 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE8
+    extends StObject
+       with WebGLConstants
+  /* 33992 */ val TEXTURE8: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE8 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE9
+    extends StObject
+       with WebGLConstants
+  /* 33993 */ val TEXTURE9: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE9 & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_2D
+    extends StObject
+       with WebGLConstants
+  /* 3553 */ val TEXTURE_2D: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_2D & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_2D_ARRAY
+    extends StObject
+       with WebGLConstants
+  /* 35866 */ val TEXTURE_2D_ARRAY: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_2D_ARRAY & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_3D
+    extends StObject
+       with WebGLConstants
+  /* 32879 */ val TEXTURE_3D: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_3D & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_BASE_LEVEL
+    extends StObject
+       with WebGLConstants
+  /* 33084 */ val TEXTURE_BASE_LEVEL: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_BASE_LEVEL & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_BINDING_2D
+    extends StObject
+       with WebGLConstants
+  /* 32873 */ val TEXTURE_BINDING_2D: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_BINDING_2D & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_BINDING_2D_ARRAY
+    extends StObject
+       with WebGLConstants
+  /* 35869 */ val TEXTURE_BINDING_2D_ARRAY: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_BINDING_2D_ARRAY & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_BINDING_3D
+    extends StObject
+       with WebGLConstants
+  /* 32874 */ val TEXTURE_BINDING_3D: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_BINDING_3D & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_BINDING_CUBE_MAP
+    extends StObject
+       with WebGLConstants
+  /* 34068 */ val TEXTURE_BINDING_CUBE_MAP: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_BINDING_CUBE_MAP & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_COMPARE_FUNC
+    extends StObject
+       with WebGLConstants
+  /* 34893 */ val TEXTURE_COMPARE_FUNC: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_COMPARE_FUNC & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_COMPARE_MODE
+    extends StObject
+       with WebGLConstants
+  /* 34892 */ val TEXTURE_COMPARE_MODE: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_COMPARE_MODE & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP
+    extends StObject
+       with WebGLConstants
+  /* 34067 */ val TEXTURE_CUBE_MAP: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_X
+    extends StObject
+       with WebGLConstants
+  /* 34070 */ val TEXTURE_CUBE_MAP_NEGATIVE_X: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_X & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Y
+    extends StObject
+       with WebGLConstants
+  /* 34072 */ val TEXTURE_CUBE_MAP_NEGATIVE_Y: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_Y & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Z
+    extends StObject
+       with WebGLConstants
+  /* 34074 */ val TEXTURE_CUBE_MAP_NEGATIVE_Z: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_NEGATIVE_Z & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_X
+    extends StObject
+       with WebGLConstants
+  /* 34069 */ val TEXTURE_CUBE_MAP_POSITIVE_X: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_X & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Y
+    extends StObject
+       with WebGLConstants
+  /* 34071 */ val TEXTURE_CUBE_MAP_POSITIVE_Y: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_Y & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z
+    extends StObject
+       with WebGLConstants
+  /* 34073 */ val TEXTURE_CUBE_MAP_POSITIVE_Z: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_CUBE_MAP_POSITIVE_Z & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_IMMUTABLE_FORMAT
+    extends StObject
+       with WebGLConstants
+  /* 37167 */ val TEXTURE_IMMUTABLE_FORMAT: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_IMMUTABLE_FORMAT & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_IMMUTABLE_LEVELS
+    extends StObject
+       with WebGLConstants
+  /* 33503 */ val TEXTURE_IMMUTABLE_LEVELS: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_IMMUTABLE_LEVELS & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_MAG_FILTER
+    extends StObject
+       with WebGLConstants
+  /* 10240 */ val TEXTURE_MAG_FILTER: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_MAG_FILTER & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_MAX_LEVEL
+    extends StObject
+       with WebGLConstants
+  /* 33085 */ val TEXTURE_MAX_LEVEL: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_MAX_LEVEL & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_MAX_LOD
+    extends StObject
+       with WebGLConstants
+  /* 33083 */ val TEXTURE_MAX_LOD: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_MAX_LOD & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_MIN_FILTER
+    extends StObject
+       with WebGLConstants
+  /* 10241 */ val TEXTURE_MIN_FILTER: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_MIN_FILTER & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_MIN_LOD
+    extends StObject
+       with WebGLConstants
+  /* 33082 */ val TEXTURE_MIN_LOD: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_MIN_LOD & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_WRAP_R
+    extends StObject
+       with WebGLConstants
+  /* 32882 */ val TEXTURE_WRAP_R: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_WRAP_R & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_WRAP_S
+    extends StObject
+       with WebGLConstants
+  /* 10242 */ val TEXTURE_WRAP_S: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_WRAP_S & Double = js.native
+  
+  @js.native
+  sealed trait TEXTURE_WRAP_T
+    extends StObject
+       with WebGLConstants
+  /* 10243 */ val TEXTURE_WRAP_T: typingsJapgolly.cesium.mod.WebGLConstants.TEXTURE_WRAP_T & Double = js.native
+  
+  @js.native
+  sealed trait TIMEOUT_EXPIRED
+    extends StObject
+       with WebGLConstants
+  /* 37147 */ val TIMEOUT_EXPIRED: typingsJapgolly.cesium.mod.WebGLConstants.TIMEOUT_EXPIRED & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK
+    extends StObject
+       with WebGLConstants
+  /* 36386 */ val TRANSFORM_FEEDBACK: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_ACTIVE
+    extends StObject
+       with WebGLConstants
+  /* 36388 */ val TRANSFORM_FEEDBACK_ACTIVE: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_ACTIVE & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 36389 */ val TRANSFORM_FEEDBACK_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 35982 */ val TRANSFORM_FEEDBACK_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35983 */ val TRANSFORM_FEEDBACK_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BUFFER_MODE
+    extends StObject
+       with WebGLConstants
+  /* 35967 */ val TRANSFORM_FEEDBACK_BUFFER_MODE: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_MODE & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BUFFER_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 35973 */ val TRANSFORM_FEEDBACK_BUFFER_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_BUFFER_START
+    extends StObject
+       with WebGLConstants
+  /* 35972 */ val TRANSFORM_FEEDBACK_BUFFER_START: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_BUFFER_START & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_PAUSED
+    extends StObject
+       with WebGLConstants
+  /* 36387 */ val TRANSFORM_FEEDBACK_PAUSED: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_PAUSED & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN
+    extends StObject
+       with WebGLConstants
+  /* 35976 */ val TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_PRIMITIVES_WRITTEN & Double = js.native
+  
+  @js.native
+  sealed trait TRANSFORM_FEEDBACK_VARYINGS
+    extends StObject
+       with WebGLConstants
+  /* 35971 */ val TRANSFORM_FEEDBACK_VARYINGS: typingsJapgolly.cesium.mod.WebGLConstants.TRANSFORM_FEEDBACK_VARYINGS & Double = js.native
+  
+  @js.native
+  sealed trait TRIANGLES
+    extends StObject
+       with WebGLConstants
+  /* 4 */ val TRIANGLES: typingsJapgolly.cesium.mod.WebGLConstants.TRIANGLES & Double = js.native
+  
+  @js.native
+  sealed trait TRIANGLE_FAN
+    extends StObject
+       with WebGLConstants
+  /* 6 */ val TRIANGLE_FAN: typingsJapgolly.cesium.mod.WebGLConstants.TRIANGLE_FAN & Double = js.native
+  
+  @js.native
+  sealed trait TRIANGLE_STRIP
+    extends StObject
+       with WebGLConstants
+  /* 5 */ val TRIANGLE_STRIP: typingsJapgolly.cesium.mod.WebGLConstants.TRIANGLE_STRIP & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_ARRAY_STRIDE
+    extends StObject
+       with WebGLConstants
+  /* 35388 */ val UNIFORM_ARRAY_STRIDE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_ARRAY_STRIDE & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORMS
+    extends StObject
+       with WebGLConstants
+  /* 35394 */ val UNIFORM_BLOCK_ACTIVE_UNIFORMS: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_ACTIVE_UNIFORMS & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES
+    extends StObject
+       with WebGLConstants
+  /* 35395 */ val UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_ACTIVE_UNIFORM_INDICES & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35391 */ val UNIFORM_BLOCK_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_DATA_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 35392 */ val UNIFORM_BLOCK_DATA_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_DATA_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_INDEX
+    extends StObject
+       with WebGLConstants
+  /* 35386 */ val UNIFORM_BLOCK_INDEX: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_INDEX & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER
+    extends StObject
+       with WebGLConstants
+  /* 35398 */ val UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_REFERENCED_BY_FRAGMENT_SHADER & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER
+    extends StObject
+       with WebGLConstants
+  /* 35396 */ val UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BLOCK_REFERENCED_BY_VERTEX_SHADER & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BUFFER
+    extends StObject
+       with WebGLConstants
+  /* 35345 */ val UNIFORM_BUFFER: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BUFFER & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 35368 */ val UNIFORM_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BUFFER_OFFSET_ALIGNMENT
+    extends StObject
+       with WebGLConstants
+  /* 35380 */ val UNIFORM_BUFFER_OFFSET_ALIGNMENT: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BUFFER_OFFSET_ALIGNMENT & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BUFFER_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 35370 */ val UNIFORM_BUFFER_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BUFFER_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_BUFFER_START
+    extends StObject
+       with WebGLConstants
+  /* 35369 */ val UNIFORM_BUFFER_START: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_BUFFER_START & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_IS_ROW_MAJOR
+    extends StObject
+       with WebGLConstants
+  /* 35390 */ val UNIFORM_IS_ROW_MAJOR: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_IS_ROW_MAJOR & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_MATRIX_STRIDE
+    extends StObject
+       with WebGLConstants
+  /* 35389 */ val UNIFORM_MATRIX_STRIDE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_MATRIX_STRIDE & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_OFFSET
+    extends StObject
+       with WebGLConstants
+  /* 35387 */ val UNIFORM_OFFSET: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_OFFSET & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 35384 */ val UNIFORM_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait UNIFORM_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 35383 */ val UNIFORM_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.UNIFORM_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_ALIGNMENT
+    extends StObject
+       with WebGLConstants
+  /* 3317 */ val UNPACK_ALIGNMENT: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_ALIGNMENT & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_COLORSPACE_CONVERSION_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37443 */ val UNPACK_COLORSPACE_CONVERSION_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_COLORSPACE_CONVERSION_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_FLIP_Y_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37440 */ val UNPACK_FLIP_Y_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_FLIP_Y_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_IMAGE_HEIGHT
+    extends StObject
+       with WebGLConstants
+  /* 32878 */ val UNPACK_IMAGE_HEIGHT: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_IMAGE_HEIGHT & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_PREMULTIPLY_ALPHA_WEBGL
+    extends StObject
+       with WebGLConstants
+  /* 37441 */ val UNPACK_PREMULTIPLY_ALPHA_WEBGL: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_PREMULTIPLY_ALPHA_WEBGL & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_ROW_LENGTH
+    extends StObject
+       with WebGLConstants
+  /* 3314 */ val UNPACK_ROW_LENGTH: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_ROW_LENGTH & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_SKIP_IMAGES
+    extends StObject
+       with WebGLConstants
+  /* 32877 */ val UNPACK_SKIP_IMAGES: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_SKIP_IMAGES & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_SKIP_PIXELS
+    extends StObject
+       with WebGLConstants
+  /* 3316 */ val UNPACK_SKIP_PIXELS: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_SKIP_PIXELS & Double = js.native
+  
+  @js.native
+  sealed trait UNPACK_SKIP_ROWS
+    extends StObject
+       with WebGLConstants
+  /* 3315 */ val UNPACK_SKIP_ROWS: typingsJapgolly.cesium.mod.WebGLConstants.UNPACK_SKIP_ROWS & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNALED
+    extends StObject
+       with WebGLConstants
+  /* 37144 */ val UNSIGNALED: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNALED & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_BYTE
+    extends StObject
+       with WebGLConstants
+  /* 5121 */ val UNSIGNED_BYTE: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_BYTE & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT
+    extends StObject
+       with WebGLConstants
+  /* 5125 */ val UNSIGNED_INT: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_10F_11F_11F_REV
+    extends StObject
+       with WebGLConstants
+  /* 35899 */ val UNSIGNED_INT_10F_11F_11F_REV: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_10F_11F_11F_REV & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_24_8
+    extends StObject
+       with WebGLConstants
+  /* 34042 */ val UNSIGNED_INT_24_8: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_24_8 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_2_10_10_10_REV
+    extends StObject
+       with WebGLConstants
+  /* 33640 */ val UNSIGNED_INT_2_10_10_10_REV: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_2_10_10_10_REV & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_5_9_9_9_REV
+    extends StObject
+       with WebGLConstants
+  /* 35902 */ val UNSIGNED_INT_5_9_9_9_REV: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_5_9_9_9_REV & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_SAMPLER_2D
+    extends StObject
+       with WebGLConstants
+  /* 36306 */ val UNSIGNED_INT_SAMPLER_2D: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_2D & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_SAMPLER_2D_ARRAY
+    extends StObject
+       with WebGLConstants
+  /* 36311 */ val UNSIGNED_INT_SAMPLER_2D_ARRAY: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_2D_ARRAY & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_SAMPLER_3D
+    extends StObject
+       with WebGLConstants
+  /* 36307 */ val UNSIGNED_INT_SAMPLER_3D: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_3D & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_SAMPLER_CUBE
+    extends StObject
+       with WebGLConstants
+  /* 36308 */ val UNSIGNED_INT_SAMPLER_CUBE: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_SAMPLER_CUBE & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_VEC2
+    extends StObject
+       with WebGLConstants
+  /* 36294 */ val UNSIGNED_INT_VEC2: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC2 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_VEC3
+    extends StObject
+       with WebGLConstants
+  /* 36295 */ val UNSIGNED_INT_VEC3: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC3 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_INT_VEC4
+    extends StObject
+       with WebGLConstants
+  /* 36296 */ val UNSIGNED_INT_VEC4: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_INT_VEC4 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_NORMALIZED
+    extends StObject
+       with WebGLConstants
+  /* 35863 */ val UNSIGNED_NORMALIZED: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_NORMALIZED & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_SHORT
+    extends StObject
+       with WebGLConstants
+  /* 5123 */ val UNSIGNED_SHORT: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_SHORT & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_SHORT_4_4_4_4
+    extends StObject
+       with WebGLConstants
+  /* 32819 */ val UNSIGNED_SHORT_4_4_4_4: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_SHORT_4_4_4_4 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_SHORT_5_5_5_1
+    extends StObject
+       with WebGLConstants
+  /* 32820 */ val UNSIGNED_SHORT_5_5_5_1: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_SHORT_5_5_5_1 & Double = js.native
+  
+  @js.native
+  sealed trait UNSIGNED_SHORT_5_6_5
+    extends StObject
+       with WebGLConstants
+  /* 33635 */ val UNSIGNED_SHORT_5_6_5: typingsJapgolly.cesium.mod.WebGLConstants.UNSIGNED_SHORT_5_6_5 & Double = js.native
+  
+  @js.native
+  sealed trait VALIDATE_STATUS
+    extends StObject
+       with WebGLConstants
+  /* 35715 */ val VALIDATE_STATUS: typingsJapgolly.cesium.mod.WebGLConstants.VALIDATE_STATUS & Double = js.native
+  
+  @js.native
+  sealed trait VENDOR
+    extends StObject
+       with WebGLConstants
+  /* 7936 */ val VENDOR: typingsJapgolly.cesium.mod.WebGLConstants.VENDOR & Double = js.native
+  
+  @js.native
+  sealed trait VERSION
+    extends StObject
+       with WebGLConstants
+  /* 7938 */ val VERSION: typingsJapgolly.cesium.mod.WebGLConstants.VERSION & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ARRAY_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 34229 */ val VERTEX_ARRAY_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ARRAY_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_BUFFER_BINDING
+    extends StObject
+       with WebGLConstants
+  /* 34975 */ val VERTEX_ATTRIB_ARRAY_BUFFER_BINDING: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_BUFFER_BINDING & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_DIVISOR
+    extends StObject
+       with WebGLConstants
+  /* 35070 */ val VERTEX_ATTRIB_ARRAY_DIVISOR: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_DIVISOR & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_ENABLED
+    extends StObject
+       with WebGLConstants
+  /* 34338 */ val VERTEX_ATTRIB_ARRAY_ENABLED: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_ENABLED & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_INTEGER
+    extends StObject
+       with WebGLConstants
+  /* 35069 */ val VERTEX_ATTRIB_ARRAY_INTEGER: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_INTEGER & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_NORMALIZED
+    extends StObject
+       with WebGLConstants
+  /* 34922 */ val VERTEX_ATTRIB_ARRAY_NORMALIZED: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_NORMALIZED & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_POINTER
+    extends StObject
+       with WebGLConstants
+  /* 34373 */ val VERTEX_ATTRIB_ARRAY_POINTER: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_POINTER & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_SIZE
+    extends StObject
+       with WebGLConstants
+  /* 34339 */ val VERTEX_ATTRIB_ARRAY_SIZE: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_SIZE & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_STRIDE
+    extends StObject
+       with WebGLConstants
+  /* 34340 */ val VERTEX_ATTRIB_ARRAY_STRIDE: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_STRIDE & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_ATTRIB_ARRAY_TYPE
+    extends StObject
+       with WebGLConstants
+  /* 34341 */ val VERTEX_ATTRIB_ARRAY_TYPE: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_ATTRIB_ARRAY_TYPE & Double = js.native
+  
+  @js.native
+  sealed trait VERTEX_SHADER
+    extends StObject
+       with WebGLConstants
+  /* 35633 */ val VERTEX_SHADER: typingsJapgolly.cesium.mod.WebGLConstants.VERTEX_SHADER & Double = js.native
+  
+  @js.native
+  sealed trait VIEWPORT
+    extends StObject
+       with WebGLConstants
+  /* 2978 */ val VIEWPORT: typingsJapgolly.cesium.mod.WebGLConstants.VIEWPORT & Double = js.native
+  
+  @js.native
+  sealed trait WAIT_FAILED
+    extends StObject
+       with WebGLConstants
+  /* 37149 */ val WAIT_FAILED: typingsJapgolly.cesium.mod.WebGLConstants.WAIT_FAILED & Double = js.native
+  
+  @js.native
+  sealed trait ZERO
+    extends StObject
+       with WebGLConstants
+  /* 0 */ val ZERO: typingsJapgolly.cesium.mod.WebGLConstants.ZERO & Double = js.native
 }
-

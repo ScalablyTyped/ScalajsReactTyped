@@ -1,19 +1,26 @@
 organization := "org.scalablytyped.japgolly"
 name := "testing-library__vue"
-version := "2.0-dt-20190816Z-08efff"
-scalaVersion := "2.13.1"
+version := "6.6.1-b93ed0"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "pretty-format" % "24.9.0-47ff69",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5",
-  "org.scalablytyped.japgolly" %%% "testing-library__dom" % "6.12-dt-20200210Z-f8b538",
-  "org.scalablytyped.japgolly" %%% "vue" % "2.6.11-c0c123",
-  "org.scalablytyped.japgolly" %%% "vue-router" % "3.1.5-e32299",
-  "org.scalablytyped.japgolly" %%% "vuex" % "3.1.2-cb386c")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "aria-query" % "5.0-dt-20211202Z-3dd6d4",
+  "org.scalablytyped.japgolly" %%% "babel__parser" % "7.19.4-03fc7e",
+  "org.scalablytyped.japgolly" %%% "babel__types" % "7.19.4-3aab9c",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "pretty-format" % "29.2.0-dde28b",
+  "org.scalablytyped.japgolly" %%% "source-map" % "0.7.4-4daf59",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7",
+  "org.scalablytyped.japgolly" %%% "testing-library__dom" % "8.19.0-41ac32",
+  "org.scalablytyped.japgolly" %%% "vue" % "3.2.41-ce1272",
+  "org.scalablytyped.japgolly" %%% "vue__compiler-core" % "3.2.41-c71b8b",
+  "org.scalablytyped.japgolly" %%% "vue__reactivity" % "3.2.41-30a97e",
+  "org.scalablytyped.japgolly" %%% "vue__runtime-core" % "3.2.41-0507a9",
+  "org.scalablytyped.japgolly" %%% "vue__runtime-dom" % "3.2.41-2ca7ab",
+  "org.scalablytyped.japgolly" %%% "vue__shared" % "3.2.41-27d6be",
+  "org.scalablytyped.japgolly" %%% "vue__test-utils" % "2.1.0-2aa9ca")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

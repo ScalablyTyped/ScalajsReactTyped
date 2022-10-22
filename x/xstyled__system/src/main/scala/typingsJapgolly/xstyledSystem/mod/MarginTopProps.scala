@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MarginTopProperty
+import typingsJapgolly.csstype.mod.Property.MarginTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MarginTopProps[TLength] extends js.Object {
-  val marginTop: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
-  val mt: js.UndefOr[ResponsiveValue[MarginTopProperty[TLength]]] = js.undefined
+trait MarginTopProps[TLength] extends StObject {
+  
+  val marginTop: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
+  
+  val mt: js.UndefOr[ResponsiveValue[MarginTop[TLength]]] = js.undefined
 }
-
 object MarginTopProps {
-  @scala.inline
-  def apply[TLength](
-    marginTop: ResponsiveValue[MarginTopProperty[TLength]] = null,
-    mt: ResponsiveValue[MarginTopProperty[TLength]] = null
-  ): MarginTopProps[TLength] = {
+  
+  inline def apply[TLength](): MarginTopProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
-    if (mt != null) __obj.updateDynamic("mt")(mt.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginTopProps[TLength]]
   }
+  
+  extension [Self <: MarginTopProps[?], TLength](x: Self & MarginTopProps[TLength]) {
+    
+    inline def setMarginTop(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    
+    inline def setMarginTopVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "marginTop", js.Array(value*))
+    
+    inline def setMt(value: ResponsiveValue[MarginTop[TLength]]): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    
+    inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+    
+    inline def setMtVarargs(value: MarginTop[TLength]*): Self = StObject.set(x, "mt", js.Array(value*))
+  }
 }
-

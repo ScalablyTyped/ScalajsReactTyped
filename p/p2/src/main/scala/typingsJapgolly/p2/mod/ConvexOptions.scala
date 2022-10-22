@@ -1,37 +1,37 @@
 package typingsJapgolly.p2.mod
 
 import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConvexOptions extends SharedShapeOptions {
-  var axes: js.UndefOr[(js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]] = js.undefined
-  var vertices: js.UndefOr[(js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]]] = js.undefined
+trait ConvexOptions
+  extends StObject
+     with SharedShapeOptions {
+  
+  var axes: js.UndefOr[js.Array[(js.Tuple2[Double, Double]) | ArrayLike[Double]]] = js.undefined
+  
+  var vertices: js.UndefOr[js.Array[(js.Tuple2[Double, Double]) | ArrayLike[Double]]] = js.undefined
 }
-
 object ConvexOptions {
-  @scala.inline
-  def apply(
-    angle: Int | Double = null,
-    axes: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]] = null,
-    collisionGroup: Int | Double = null,
-    collisionMask: Int | Double = null,
-    collisionResponse: js.UndefOr[Boolean] = js.undefined,
-    position: js.Tuple2[Double, Double] = null,
-    sensor: js.UndefOr[Boolean] = js.undefined,
-    vertices: (js.Tuple2[Double, Double]) | js.Array[ArrayLike[Double]] = null
-  ): ConvexOptions = {
+  
+  inline def apply(): ConvexOptions = {
     val __obj = js.Dynamic.literal()
-    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
-    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (collisionGroup != null) __obj.updateDynamic("collisionGroup")(collisionGroup.asInstanceOf[js.Any])
-    if (collisionMask != null) __obj.updateDynamic("collisionMask")(collisionMask.asInstanceOf[js.Any])
-    if (!js.isUndefined(collisionResponse)) __obj.updateDynamic("collisionResponse")(collisionResponse.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(sensor)) __obj.updateDynamic("sensor")(sensor.asInstanceOf[js.Any])
-    if (vertices != null) __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvexOptions]
   }
+  
+  extension [Self <: ConvexOptions](x: Self) {
+    
+    inline def setAxes(value: js.Array[(js.Tuple2[Double, Double]) | ArrayLike[Double]]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    
+    inline def setAxesVarargs(value: ((js.Tuple2[Double, Double]) | ArrayLike[Double])*): Self = StObject.set(x, "axes", js.Array(value*))
+    
+    inline def setVertices(value: js.Array[(js.Tuple2[Double, Double]) | ArrayLike[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    
+    inline def setVerticesVarargs(value: ((js.Tuple2[Double, Double]) | ArrayLike[Double])*): Self = StObject.set(x, "vertices", js.Array(value*))
+  }
 }
-

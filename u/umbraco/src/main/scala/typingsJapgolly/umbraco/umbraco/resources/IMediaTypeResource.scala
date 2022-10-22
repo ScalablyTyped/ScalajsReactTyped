@@ -1,17 +1,17 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.mediaTypeResource
   * @description Loads in data for media types
   **/
-trait IMediaTypeResource extends js.Object {
+trait IMediaTypeResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.mediaTypeResource#getAllowedTypes
@@ -33,13 +33,15 @@ trait IMediaTypeResource extends js.Object {
     */
   def getAllowedTypes(mediaId: Double): IPromise[IResourcePromise]
 }
-
 object IMediaTypeResource {
-  @scala.inline
-  def apply(getAllowedTypes: Double => CallbackTo[IPromise[IResourcePromise]]): IMediaTypeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAllowedTypes")(js.Any.fromFunction1((t0: scala.Double) => getAllowedTypes(t0).runNow()))
+  
+  inline def apply(getAllowedTypes: Double => IPromise[IResourcePromise]): IMediaTypeResource = {
+    val __obj = js.Dynamic.literal(getAllowedTypes = js.Any.fromFunction1(getAllowedTypes))
     __obj.asInstanceOf[IMediaTypeResource]
   }
+  
+  extension [Self <: IMediaTypeResource](x: Self) {
+    
+    inline def setGetAllowedTypes(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllowedTypes", js.Any.fromFunction1(value))
+  }
 }
-

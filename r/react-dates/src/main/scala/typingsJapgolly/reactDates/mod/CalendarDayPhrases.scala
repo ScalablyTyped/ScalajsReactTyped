@@ -1,29 +1,48 @@
 package typingsJapgolly.reactDates.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// defaultPhrases.js
-trait CalendarDayPhrases extends js.Object {
-  def chooseAvailableDate(date: String): String
-  def dateIsSelected(date: String): String
-  def dateIsUnavailable(date: String): String
+trait CalendarDayPhrases extends StObject {
+  
+  var chooseAvailableDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  
+  var dateIsSelected: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  
+  var dateIsSelectedAsEndDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  
+  var dateIsSelectedAsStartDate: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
+  
+  var dateIsUnavailable: js.UndefOr[js.Function1[/* phraseArg */ PhraseArg, String]] = js.undefined
 }
-
 object CalendarDayPhrases {
-  @scala.inline
-  def apply(
-    chooseAvailableDate: String => CallbackTo[String],
-    dateIsSelected: String => CallbackTo[String],
-    dateIsUnavailable: String => CallbackTo[String]
-  ): CalendarDayPhrases = {
+  
+  inline def apply(): CalendarDayPhrases = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("chooseAvailableDate")(js.Any.fromFunction1((t0: java.lang.String) => chooseAvailableDate(t0).runNow()))
-    __obj.updateDynamic("dateIsSelected")(js.Any.fromFunction1((t0: java.lang.String) => dateIsSelected(t0).runNow()))
-    __obj.updateDynamic("dateIsUnavailable")(js.Any.fromFunction1((t0: java.lang.String) => dateIsUnavailable(t0).runNow()))
     __obj.asInstanceOf[CalendarDayPhrases]
   }
+  
+  extension [Self <: CalendarDayPhrases](x: Self) {
+    
+    inline def setChooseAvailableDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "chooseAvailableDate", js.Any.fromFunction1(value))
+    
+    inline def setChooseAvailableDateUndefined: Self = StObject.set(x, "chooseAvailableDate", js.undefined)
+    
+    inline def setDateIsSelected(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelected", js.Any.fromFunction1(value))
+    
+    inline def setDateIsSelectedAsEndDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsEndDate", js.Any.fromFunction1(value))
+    
+    inline def setDateIsSelectedAsEndDateUndefined: Self = StObject.set(x, "dateIsSelectedAsEndDate", js.undefined)
+    
+    inline def setDateIsSelectedAsStartDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsSelectedAsStartDate", js.Any.fromFunction1(value))
+    
+    inline def setDateIsSelectedAsStartDateUndefined: Self = StObject.set(x, "dateIsSelectedAsStartDate", js.undefined)
+    
+    inline def setDateIsSelectedUndefined: Self = StObject.set(x, "dateIsSelected", js.undefined)
+    
+    inline def setDateIsUnavailable(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "dateIsUnavailable", js.Any.fromFunction1(value))
+    
+    inline def setDateIsUnavailableUndefined: Self = StObject.set(x, "dateIsUnavailable", js.undefined)
+  }
 }
-

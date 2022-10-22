@@ -1,18 +1,20 @@
 package typingsJapgolly.matterJs.mod
 
-import org.scalajs.dom.raw.SVGPathElement
+import org.scalajs.dom.SVGPathElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Svg")
 @js.native
-class Svg () extends js.Object
-
+open class Svg () extends StObject
 /* static members */
-@JSImport("matter-js", "Svg")
-@js.native
-object Svg extends js.Object {
+object Svg {
+  
+  @JSImport("matter-js", "Svg")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Converts an SVG path into an array of vector points.
     * If the input path forms a concave shape, you must decompose the result into convex parts before use.
@@ -21,8 +23,7 @@ object Svg extends js.Object {
     * @method pathToVertices
     * @param {SVGPathElement} path
     * @param {Number} [sampleLength=15]
-    * @return {Vector[]} points
+    * @returns {Vector[]} points
     */
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
+  inline def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("pathToVertices")(path.asInstanceOf[js.Any], sampleLength.asInstanceOf[js.Any])).asInstanceOf[js.Array[Vector]]
 }
-

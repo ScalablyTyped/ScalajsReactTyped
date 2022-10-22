@@ -1,36 +1,60 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileManagerMessagesViews extends js.Object {
+trait FileManagerMessagesViews extends StObject {
+  
   var dateCreatedField: js.UndefOr[String] = js.undefined
+  
   var dateModifiedField: js.UndefOr[String] = js.undefined
+  
   var items: js.UndefOr[String] = js.undefined
+  
+  var listViewLabel: js.UndefOr[String] = js.undefined
+  
   var nameField: js.UndefOr[String] = js.undefined
+  
   var sizeField: js.UndefOr[String] = js.undefined
+  
   var typeField: js.UndefOr[String] = js.undefined
 }
-
 object FileManagerMessagesViews {
-  @scala.inline
-  def apply(
-    dateCreatedField: String = null,
-    dateModifiedField: String = null,
-    items: String = null,
-    nameField: String = null,
-    sizeField: String = null,
-    typeField: String = null
-  ): FileManagerMessagesViews = {
+  
+  inline def apply(): FileManagerMessagesViews = {
     val __obj = js.Dynamic.literal()
-    if (dateCreatedField != null) __obj.updateDynamic("dateCreatedField")(dateCreatedField.asInstanceOf[js.Any])
-    if (dateModifiedField != null) __obj.updateDynamic("dateModifiedField")(dateModifiedField.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (nameField != null) __obj.updateDynamic("nameField")(nameField.asInstanceOf[js.Any])
-    if (sizeField != null) __obj.updateDynamic("sizeField")(sizeField.asInstanceOf[js.Any])
-    if (typeField != null) __obj.updateDynamic("typeField")(typeField.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileManagerMessagesViews]
   }
+  
+  extension [Self <: FileManagerMessagesViews](x: Self) {
+    
+    inline def setDateCreatedField(value: String): Self = StObject.set(x, "dateCreatedField", value.asInstanceOf[js.Any])
+    
+    inline def setDateCreatedFieldUndefined: Self = StObject.set(x, "dateCreatedField", js.undefined)
+    
+    inline def setDateModifiedField(value: String): Self = StObject.set(x, "dateModifiedField", value.asInstanceOf[js.Any])
+    
+    inline def setDateModifiedFieldUndefined: Self = StObject.set(x, "dateModifiedField", js.undefined)
+    
+    inline def setItems(value: String): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setListViewLabel(value: String): Self = StObject.set(x, "listViewLabel", value.asInstanceOf[js.Any])
+    
+    inline def setListViewLabelUndefined: Self = StObject.set(x, "listViewLabel", js.undefined)
+    
+    inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
+    
+    inline def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
+    
+    inline def setSizeField(value: String): Self = StObject.set(x, "sizeField", value.asInstanceOf[js.Any])
+    
+    inline def setSizeFieldUndefined: Self = StObject.set(x, "sizeField", js.undefined)
+    
+    inline def setTypeField(value: String): Self = StObject.set(x, "typeField", value.asInstanceOf[js.Any])
+    
+    inline def setTypeFieldUndefined: Self = StObject.set(x, "typeField", js.undefined)
+  }
 }
-

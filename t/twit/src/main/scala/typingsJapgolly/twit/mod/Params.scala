@@ -1,143 +1,357 @@
 package typingsJapgolly.twit.mod
 
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.twit.AnonText
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.twit.anon.Text
 import typingsJapgolly.twit.mod.Twitter.ResultType
+import typingsJapgolly.twit.twitStrings.`private`
+import typingsJapgolly.twit.twitStrings.public
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Params extends js.Object {
-  var alt_text: js.UndefOr[AnonText] = js.undefined
+trait Params extends StObject {
+  
+  var alt_text: js.UndefOr[Text] = js.undefined
+  
+  var attachment_url: js.UndefOr[String] = js.undefined
+  
+  var auto_populate_reply_metadata: js.UndefOr[Boolean] = js.undefined
+  
+  var card_uri: js.UndefOr[String] = js.undefined
+  
   var count: js.UndefOr[Double] = js.undefined
+  
   var cursor: js.UndefOr[Double | String] = js.undefined
+  
+  var description: js.UndefOr[String] = js.undefined
+  
+  var display_coordinates: js.UndefOr[Boolean] = js.undefined
+  
+  var enable_dmcommands: js.UndefOr[Boolean] = js.undefined
+  
+  var event: js.UndefOr[MessageCreateEvent] = js.undefined
+  
   var exclude_replies: js.UndefOr[Boolean] = js.undefined
+  
+  var exclude_reply_user_ids: js.UndefOr[String | js.Array[String]] = js.undefined
+  
+  var fail_dmcommands: js.UndefOr[Boolean] = js.undefined
+  
   var follow: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
+  
   var geocode: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String] = js.undefined
+  
   var in_reply_to_status_id: js.UndefOr[Double | String] = js.undefined
+  
   var include_email: js.UndefOr[Boolean] = js.undefined
+  
   var include_entities: js.UndefOr[Boolean] = js.undefined
+  
   var include_rts: js.UndefOr[Boolean] = js.undefined
+  
   var include_user_entities: js.UndefOr[Boolean] = js.undefined
+  
   var lang: js.UndefOr[String] = js.undefined
+  
   var lat: js.UndefOr[Double] = js.undefined
+  
+  var list_id: js.UndefOr[Double | String] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var long: js.UndefOr[Double] = js.undefined
+  
   var max_id: js.UndefOr[String] = js.undefined
+  
   var media_data: js.UndefOr[Buffer | String] = js.undefined
+  
   var media_id: js.UndefOr[String] = js.undefined
+  
   var media_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
+  var mode: js.UndefOr[public | `private`] = js.undefined
+  
+  var name: js.UndefOr[String] = js.undefined
+  
   var owner_screen_name: js.UndefOr[String] = js.undefined
+  
+  var page: js.UndefOr[Double] = js.undefined
+  
+  var place_id: js.UndefOr[String] = js.undefined
+  
   // search/tweets
   var q: js.UndefOr[String] = js.undefined
+  
   var result_type: js.UndefOr[ResultType] = js.undefined
+  
   var results_per_page: js.UndefOr[Double] = js.undefined
+  
   var screen_name: js.UndefOr[String] = js.undefined
+  
   var since_id: js.UndefOr[String] = js.undefined
+  
   var skip_status: js.UndefOr[Boolean] = js.undefined
+  
   var slug: js.UndefOr[String] = js.undefined
+  
   var source_id: js.UndefOr[Double] = js.undefined
+  
   var source_screen_name: js.UndefOr[String] = js.undefined
+  
   var status: js.UndefOr[String] = js.undefined
+  
   var stringify_ids: js.UndefOr[Boolean] = js.undefined
+  
   var target_id: js.UndefOr[Double] = js.undefined
+  
   var target_screen_name: js.UndefOr[String] = js.undefined
+  
   // Other params from various endpoints
   var track: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   var trim_user: js.UndefOr[Boolean] = js.undefined
+  
   var tweet_mode: js.UndefOr[String] = js.undefined
+  
   var until: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var user_id: js.UndefOr[Double | String] = js.undefined
 }
-
 object Params {
-  @scala.inline
-  def apply(
-    alt_text: AnonText = null,
-    count: Int | Double = null,
-    cursor: Double | String = null,
-    exclude_replies: js.UndefOr[Boolean] = js.undefined,
-    follow: Boolean | String | js.Array[String] = null,
-    geocode: String = null,
-    id: String = null,
-    in_reply_to_status_id: Double | String = null,
-    include_email: js.UndefOr[Boolean] = js.undefined,
-    include_entities: js.UndefOr[Boolean] = js.undefined,
-    include_rts: js.UndefOr[Boolean] = js.undefined,
-    include_user_entities: js.UndefOr[Boolean] = js.undefined,
-    lang: String = null,
-    lat: Int | Double = null,
-    locale: String = null,
-    long: Int | Double = null,
-    max_id: String = null,
-    media_data: Buffer | String = null,
-    media_id: String = null,
-    media_ids: js.Array[String] = null,
-    owner_screen_name: String = null,
-    q: String = null,
-    result_type: ResultType = null,
-    results_per_page: Int | Double = null,
-    screen_name: String = null,
-    since_id: String = null,
-    skip_status: js.UndefOr[Boolean] = js.undefined,
-    slug: String = null,
-    source_id: Int | Double = null,
-    source_screen_name: String = null,
-    status: String = null,
-    stringify_ids: js.UndefOr[Boolean] = js.undefined,
-    target_id: Int | Double = null,
-    target_screen_name: String = null,
-    track: String | js.Array[String] = null,
-    trim_user: js.UndefOr[Boolean] = js.undefined,
-    tweet_mode: String = null,
-    until: String = null,
-    url: String = null,
-    user_id: Double | String = null
-  ): Params = {
+  
+  inline def apply(): Params = {
     val __obj = js.Dynamic.literal()
-    if (alt_text != null) __obj.updateDynamic("alt_text")(alt_text.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(exclude_replies)) __obj.updateDynamic("exclude_replies")(exclude_replies.asInstanceOf[js.Any])
-    if (follow != null) __obj.updateDynamic("follow")(follow.asInstanceOf[js.Any])
-    if (geocode != null) __obj.updateDynamic("geocode")(geocode.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (in_reply_to_status_id != null) __obj.updateDynamic("in_reply_to_status_id")(in_reply_to_status_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_email)) __obj.updateDynamic("include_email")(include_email.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_entities)) __obj.updateDynamic("include_entities")(include_entities.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_rts)) __obj.updateDynamic("include_rts")(include_rts.asInstanceOf[js.Any])
-    if (!js.isUndefined(include_user_entities)) __obj.updateDynamic("include_user_entities")(include_user_entities.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
-    if (max_id != null) __obj.updateDynamic("max_id")(max_id.asInstanceOf[js.Any])
-    if (media_data != null) __obj.updateDynamic("media_data")(media_data.asInstanceOf[js.Any])
-    if (media_id != null) __obj.updateDynamic("media_id")(media_id.asInstanceOf[js.Any])
-    if (media_ids != null) __obj.updateDynamic("media_ids")(media_ids.asInstanceOf[js.Any])
-    if (owner_screen_name != null) __obj.updateDynamic("owner_screen_name")(owner_screen_name.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (result_type != null) __obj.updateDynamic("result_type")(result_type.asInstanceOf[js.Any])
-    if (results_per_page != null) __obj.updateDynamic("results_per_page")(results_per_page.asInstanceOf[js.Any])
-    if (screen_name != null) __obj.updateDynamic("screen_name")(screen_name.asInstanceOf[js.Any])
-    if (since_id != null) __obj.updateDynamic("since_id")(since_id.asInstanceOf[js.Any])
-    if (!js.isUndefined(skip_status)) __obj.updateDynamic("skip_status")(skip_status.asInstanceOf[js.Any])
-    if (slug != null) __obj.updateDynamic("slug")(slug.asInstanceOf[js.Any])
-    if (source_id != null) __obj.updateDynamic("source_id")(source_id.asInstanceOf[js.Any])
-    if (source_screen_name != null) __obj.updateDynamic("source_screen_name")(source_screen_name.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (!js.isUndefined(stringify_ids)) __obj.updateDynamic("stringify_ids")(stringify_ids.asInstanceOf[js.Any])
-    if (target_id != null) __obj.updateDynamic("target_id")(target_id.asInstanceOf[js.Any])
-    if (target_screen_name != null) __obj.updateDynamic("target_screen_name")(target_screen_name.asInstanceOf[js.Any])
-    if (track != null) __obj.updateDynamic("track")(track.asInstanceOf[js.Any])
-    if (!js.isUndefined(trim_user)) __obj.updateDynamic("trim_user")(trim_user.asInstanceOf[js.Any])
-    if (tweet_mode != null) __obj.updateDynamic("tweet_mode")(tweet_mode.asInstanceOf[js.Any])
-    if (until != null) __obj.updateDynamic("until")(until.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Params]
   }
+  
+  extension [Self <: Params](x: Self) {
+    
+    inline def setAlt_text(value: Text): Self = StObject.set(x, "alt_text", value.asInstanceOf[js.Any])
+    
+    inline def setAlt_textUndefined: Self = StObject.set(x, "alt_text", js.undefined)
+    
+    inline def setAttachment_url(value: String): Self = StObject.set(x, "attachment_url", value.asInstanceOf[js.Any])
+    
+    inline def setAttachment_urlUndefined: Self = StObject.set(x, "attachment_url", js.undefined)
+    
+    inline def setAuto_populate_reply_metadata(value: Boolean): Self = StObject.set(x, "auto_populate_reply_metadata", value.asInstanceOf[js.Any])
+    
+    inline def setAuto_populate_reply_metadataUndefined: Self = StObject.set(x, "auto_populate_reply_metadata", js.undefined)
+    
+    inline def setCard_uri(value: String): Self = StObject.set(x, "card_uri", value.asInstanceOf[js.Any])
+    
+    inline def setCard_uriUndefined: Self = StObject.set(x, "card_uri", js.undefined)
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setCursor(value: Double | String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDisplay_coordinates(value: Boolean): Self = StObject.set(x, "display_coordinates", value.asInstanceOf[js.Any])
+    
+    inline def setDisplay_coordinatesUndefined: Self = StObject.set(x, "display_coordinates", js.undefined)
+    
+    inline def setEnable_dmcommands(value: Boolean): Self = StObject.set(x, "enable_dmcommands", value.asInstanceOf[js.Any])
+    
+    inline def setEnable_dmcommandsUndefined: Self = StObject.set(x, "enable_dmcommands", js.undefined)
+    
+    inline def setEvent(value: MessageCreateEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    
+    inline def setExclude_replies(value: Boolean): Self = StObject.set(x, "exclude_replies", value.asInstanceOf[js.Any])
+    
+    inline def setExclude_repliesUndefined: Self = StObject.set(x, "exclude_replies", js.undefined)
+    
+    inline def setExclude_reply_user_ids(value: String | js.Array[String]): Self = StObject.set(x, "exclude_reply_user_ids", value.asInstanceOf[js.Any])
+    
+    inline def setExclude_reply_user_idsUndefined: Self = StObject.set(x, "exclude_reply_user_ids", js.undefined)
+    
+    inline def setExclude_reply_user_idsVarargs(value: String*): Self = StObject.set(x, "exclude_reply_user_ids", js.Array(value*))
+    
+    inline def setFail_dmcommands(value: Boolean): Self = StObject.set(x, "fail_dmcommands", value.asInstanceOf[js.Any])
+    
+    inline def setFail_dmcommandsUndefined: Self = StObject.set(x, "fail_dmcommands", js.undefined)
+    
+    inline def setFollow(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "follow", value.asInstanceOf[js.Any])
+    
+    inline def setFollowUndefined: Self = StObject.set(x, "follow", js.undefined)
+    
+    inline def setFollowVarargs(value: String*): Self = StObject.set(x, "follow", js.Array(value*))
+    
+    inline def setGeocode(value: String): Self = StObject.set(x, "geocode", value.asInstanceOf[js.Any])
+    
+    inline def setGeocodeUndefined: Self = StObject.set(x, "geocode", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setIn_reply_to_status_id(value: Double | String): Self = StObject.set(x, "in_reply_to_status_id", value.asInstanceOf[js.Any])
+    
+    inline def setIn_reply_to_status_idUndefined: Self = StObject.set(x, "in_reply_to_status_id", js.undefined)
+    
+    inline def setInclude_email(value: Boolean): Self = StObject.set(x, "include_email", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_emailUndefined: Self = StObject.set(x, "include_email", js.undefined)
+    
+    inline def setInclude_entities(value: Boolean): Self = StObject.set(x, "include_entities", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_entitiesUndefined: Self = StObject.set(x, "include_entities", js.undefined)
+    
+    inline def setInclude_rts(value: Boolean): Self = StObject.set(x, "include_rts", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_rtsUndefined: Self = StObject.set(x, "include_rts", js.undefined)
+    
+    inline def setInclude_user_entities(value: Boolean): Self = StObject.set(x, "include_user_entities", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_user_entitiesUndefined: Self = StObject.set(x, "include_user_entities", js.undefined)
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+    
+    inline def setLatUndefined: Self = StObject.set(x, "lat", js.undefined)
+    
+    inline def setList_id(value: Double | String): Self = StObject.set(x, "list_id", value.asInstanceOf[js.Any])
+    
+    inline def setList_idUndefined: Self = StObject.set(x, "list_id", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setLong(value: Double): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    
+    inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+    
+    inline def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    
+    inline def setMax_idUndefined: Self = StObject.set(x, "max_id", js.undefined)
+    
+    inline def setMedia_data(value: Buffer | String): Self = StObject.set(x, "media_data", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_dataUndefined: Self = StObject.set(x, "media_data", js.undefined)
+    
+    inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_idUndefined: Self = StObject.set(x, "media_id", js.undefined)
+    
+    inline def setMedia_ids(value: js.Array[String]): Self = StObject.set(x, "media_ids", value.asInstanceOf[js.Any])
+    
+    inline def setMedia_idsUndefined: Self = StObject.set(x, "media_ids", js.undefined)
+    
+    inline def setMedia_idsVarargs(value: String*): Self = StObject.set(x, "media_ids", js.Array(value*))
+    
+    inline def setMode(value: public | `private`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOwner_screen_name(value: String): Self = StObject.set(x, "owner_screen_name", value.asInstanceOf[js.Any])
+    
+    inline def setOwner_screen_nameUndefined: Self = StObject.set(x, "owner_screen_name", js.undefined)
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    
+    inline def setPlace_idUndefined: Self = StObject.set(x, "place_id", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setResult_type(value: ResultType): Self = StObject.set(x, "result_type", value.asInstanceOf[js.Any])
+    
+    inline def setResult_typeUndefined: Self = StObject.set(x, "result_type", js.undefined)
+    
+    inline def setResults_per_page(value: Double): Self = StObject.set(x, "results_per_page", value.asInstanceOf[js.Any])
+    
+    inline def setResults_per_pageUndefined: Self = StObject.set(x, "results_per_page", js.undefined)
+    
+    inline def setScreen_name(value: String): Self = StObject.set(x, "screen_name", value.asInstanceOf[js.Any])
+    
+    inline def setScreen_nameUndefined: Self = StObject.set(x, "screen_name", js.undefined)
+    
+    inline def setSince_id(value: String): Self = StObject.set(x, "since_id", value.asInstanceOf[js.Any])
+    
+    inline def setSince_idUndefined: Self = StObject.set(x, "since_id", js.undefined)
+    
+    inline def setSkip_status(value: Boolean): Self = StObject.set(x, "skip_status", value.asInstanceOf[js.Any])
+    
+    inline def setSkip_statusUndefined: Self = StObject.set(x, "skip_status", js.undefined)
+    
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    
+    inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+    
+    inline def setSource_id(value: Double): Self = StObject.set(x, "source_id", value.asInstanceOf[js.Any])
+    
+    inline def setSource_idUndefined: Self = StObject.set(x, "source_id", js.undefined)
+    
+    inline def setSource_screen_name(value: String): Self = StObject.set(x, "source_screen_name", value.asInstanceOf[js.Any])
+    
+    inline def setSource_screen_nameUndefined: Self = StObject.set(x, "source_screen_name", js.undefined)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    
+    inline def setStringify_ids(value: Boolean): Self = StObject.set(x, "stringify_ids", value.asInstanceOf[js.Any])
+    
+    inline def setStringify_idsUndefined: Self = StObject.set(x, "stringify_ids", js.undefined)
+    
+    inline def setTarget_id(value: Double): Self = StObject.set(x, "target_id", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_idUndefined: Self = StObject.set(x, "target_id", js.undefined)
+    
+    inline def setTarget_screen_name(value: String): Self = StObject.set(x, "target_screen_name", value.asInstanceOf[js.Any])
+    
+    inline def setTarget_screen_nameUndefined: Self = StObject.set(x, "target_screen_name", js.undefined)
+    
+    inline def setTrack(value: String | js.Array[String]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    
+    inline def setTrackVarargs(value: String*): Self = StObject.set(x, "track", js.Array(value*))
+    
+    inline def setTrim_user(value: Boolean): Self = StObject.set(x, "trim_user", value.asInstanceOf[js.Any])
+    
+    inline def setTrim_userUndefined: Self = StObject.set(x, "trim_user", js.undefined)
+    
+    inline def setTweet_mode(value: String): Self = StObject.set(x, "tweet_mode", value.asInstanceOf[js.Any])
+    
+    inline def setTweet_modeUndefined: Self = StObject.set(x, "tweet_mode", js.undefined)
+    
+    inline def setUntil(value: String): Self = StObject.set(x, "until", value.asInstanceOf[js.Any])
+    
+    inline def setUntilUndefined: Self = StObject.set(x, "until", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUser_id(value: Double | String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+  }
 }
-

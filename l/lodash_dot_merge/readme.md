@@ -10,10 +10,10 @@ The Lodash method `_.merge` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.merge |
 | Keywords           | lodash-modularized, merge |
-| # releases         | 3 |
-| # dependents       | 2079 |
-| # downloads        | 143016505 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 7.208088433333333E7 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

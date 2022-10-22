@@ -1,48 +1,62 @@
 package typingsJapgolly.materialLineRipple
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materialLineRipple.adapterMod.MDCLineRippleAdapter
-import typingsJapgolly.materialLineRipple.foundationMod.default
+import typingsJapgolly.materialBase.Element
+import typingsJapgolly.materialLineRipple.anon.PartialMDCLineRippleAdapt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/line-ripple", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@material/line-ripple", JSImport.Default)
   @js.native
-  class MDCLineRipple ()
-    extends typingsJapgolly.materialBase.componentMod.default[MDCLineRippleAdapter, default] {
-    /**
-      * Activates the line ripple
-      */
-    def activate(): Unit = js.native
-    /**
-      * Deactivates the line ripple
-      */
-    def deactivate(): Unit = js.native
-    /**
-      * Sets the transform origin given a user's click location. The `rippleCenter` is the
-      * x-coordinate of the middle of the ripple.
-      */
-    def setRippleCenter(xCoordinate: Double): Unit = js.native
+  open class default ()
+    extends typingsJapgolly.materialLineRipple.foundationMod.default {
+    def this(adapter: PartialMDCLineRippleAdapt) = this()
   }
   
+  @JSImport("@material/line-ripple", "MDCLineRipple")
   @js.native
-  class MDCLineRippleFoundation () extends default
-  
+  open class MDCLineRipple protected ()
+    extends typingsJapgolly.materialLineRipple.componentMod.MDCLineRipple {
+    def this(root: Element, foundation: Unit, args: Any*) = this()
+    def this(
+      root: Element,
+      foundation: typingsJapgolly.materialLineRipple.foundationMod.MDCLineRippleFoundation,
+      args: Any*
+    ) = this()
+  }
   /* static members */
-  @js.native
-  object MDCLineRipple extends js.Object {
-    def attachTo(root: Element): MDCLineRipple = js.native
+  object MDCLineRipple {
+    
+    @JSImport("@material/line-ripple", "MDCLineRipple")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def attachTo(root: org.scalajs.dom.Element): typingsJapgolly.materialLineRipple.componentMod.MDCLineRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materialLineRipple.componentMod.MDCLineRipple]
   }
   
-  /* static members */
+  @JSImport("@material/line-ripple", "MDCLineRippleFoundation")
   @js.native
-  object MDCLineRippleFoundation extends js.Object {
-    val cssClasses: typingsJapgolly.materialLineRipple.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCLineRippleAdapter = js.native
+  open class MDCLineRippleFoundation ()
+    extends typingsJapgolly.materialLineRipple.foundationMod.MDCLineRippleFoundation {
+    def this(adapter: PartialMDCLineRippleAdapt) = this()
   }
   
+  object cssClasses {
+    
+    @JSImport("@material/line-ripple", "cssClasses")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("@material/line-ripple", "cssClasses.LINE_RIPPLE_ACTIVE")
+    @js.native
+    def LINE_RIPPLE_ACTIVE: String = js.native
+    inline def LINE_RIPPLE_ACTIVE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_ACTIVE")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@material/line-ripple", "cssClasses.LINE_RIPPLE_DEACTIVATING")
+    @js.native
+    def LINE_RIPPLE_DEACTIVATING: String = js.native
+    inline def LINE_RIPPLE_DEACTIVATING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINE_RIPPLE_DEACTIVATING")(x.asInstanceOf[js.Any])
+  }
 }
-

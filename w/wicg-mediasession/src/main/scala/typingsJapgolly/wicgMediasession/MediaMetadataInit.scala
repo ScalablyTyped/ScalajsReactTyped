@@ -1,34 +1,48 @@
 package typingsJapgolly.wicgMediasession
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaMetadataInit extends js.Object {
+trait MediaMetadataInit extends StObject {
+  
   // Media's album.
   var album: js.UndefOr[String] = js.undefined
+  
   // Media's artist.
   var artist: js.UndefOr[String] = js.undefined
+  
   // Media's artwork.
   var artwork: js.UndefOr[js.Array[MediaImage]] = js.undefined
+  
   // Media's title.
   var title: js.UndefOr[String] = js.undefined
 }
-
 object MediaMetadataInit {
-  @scala.inline
-  def apply(
-    album: String = null,
-    artist: String = null,
-    artwork: js.Array[MediaImage] = null,
-    title: String = null
-  ): MediaMetadataInit = {
+  
+  inline def apply(): MediaMetadataInit = {
     val __obj = js.Dynamic.literal()
-    if (album != null) __obj.updateDynamic("album")(album.asInstanceOf[js.Any])
-    if (artist != null) __obj.updateDynamic("artist")(artist.asInstanceOf[js.Any])
-    if (artwork != null) __obj.updateDynamic("artwork")(artwork.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaMetadataInit]
   }
+  
+  extension [Self <: MediaMetadataInit](x: Self) {
+    
+    inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    
+    inline def setAlbumUndefined: Self = StObject.set(x, "album", js.undefined)
+    
+    inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
+    
+    inline def setArtistUndefined: Self = StObject.set(x, "artist", js.undefined)
+    
+    inline def setArtwork(value: js.Array[MediaImage]): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+    
+    inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
+    
+    inline def setArtworkVarargs(value: MediaImage*): Self = StObject.set(x, "artwork", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

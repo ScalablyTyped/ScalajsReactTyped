@@ -1,27 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorImageBrowserSchemaModelFields extends js.Object {
+trait EditorImageBrowserSchemaModelFields extends StObject {
+  
   var name: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsName] = js.undefined
+  
   var size: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsSize] = js.undefined
+  
   var `type`: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsType] = js.undefined
 }
-
 object EditorImageBrowserSchemaModelFields {
-  @scala.inline
-  def apply(
-    name: String | EditorImageBrowserSchemaModelFieldsName = null,
-    size: String | EditorImageBrowserSchemaModelFieldsSize = null,
-    `type`: String | EditorImageBrowserSchemaModelFieldsType = null
-  ): EditorImageBrowserSchemaModelFields = {
+  
+  inline def apply(): EditorImageBrowserSchemaModelFields = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorImageBrowserSchemaModelFields]
   }
+  
+  extension [Self <: EditorImageBrowserSchemaModelFields](x: Self) {
+    
+    inline def setName(value: String | EditorImageBrowserSchemaModelFieldsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSize(value: String | EditorImageBrowserSchemaModelFieldsSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setType(value: String | EditorImageBrowserSchemaModelFieldsType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

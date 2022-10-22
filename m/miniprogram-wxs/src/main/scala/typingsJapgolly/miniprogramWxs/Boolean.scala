@@ -1,12 +1,11 @@
 package typingsJapgolly.miniprogramWxs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allows manipulation and formatting of text strings and determination and location of substrings within strings.
   */
 // declare var String: StringConstructor;
-trait Boolean extends js.Object
-
+trait Boolean extends StObject

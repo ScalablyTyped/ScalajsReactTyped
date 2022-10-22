@@ -1,14 +1,14 @@
 package typingsJapgolly.lodash.fpMod
 
 import typingsJapgolly.lodash.mod.__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashWrap extends js.Object {
+trait LodashWrap extends StObject {
+  
   def apply[T](wrapper: __, value: T): LodashWrap1x2[T] = js.native
-  def apply[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ js.Any, TResult]): LodashWrap2x1[T, TResult] = js.native
-  def apply[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ js.Any, TResult], value: T): js.Function1[/* repeated */ js.Any, TResult] = js.native
+  def apply[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ TArgs, TResult]): LodashWrap1x1[T, TArgs, TResult] = js.native
+  def apply[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ TArgs, TResult], value: T): js.Function1[/* repeated */ TArgs, TResult] = js.native
 }
-

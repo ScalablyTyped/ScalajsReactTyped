@@ -1,11 +1,11 @@
 package typingsJapgolly.gaeaModel.FitGaea
 
-import typingsJapgolly.gaeaModel.AnonBeforeName
-import typingsJapgolly.gaeaModel.AnonComponentInfo
-import typingsJapgolly.gaeaModel.AnonIndex
-import typingsJapgolly.gaeaModel.AnonNewIndex
-import typingsJapgolly.gaeaModel.AnonNewValue
-import typingsJapgolly.gaeaModel.AnonSourceIndex
+import typingsJapgolly.gaeaModel.anon.BeforeName
+import typingsJapgolly.gaeaModel.anon.ComponentInfo
+import typingsJapgolly.gaeaModel.anon.Index
+import typingsJapgolly.gaeaModel.anon.NewIndex
+import typingsJapgolly.gaeaModel.anon.NewValue
+import typingsJapgolly.gaeaModel.anon.SourceIndex
 import typingsJapgolly.gaeaModel.gaeaModelStrings.add
 import typingsJapgolly.gaeaModel.gaeaModelStrings.addCombo
 import typingsJapgolly.gaeaModel.gaeaModelStrings.addSource
@@ -15,62 +15,96 @@ import typingsJapgolly.gaeaModel.gaeaModelStrings.paste
 import typingsJapgolly.gaeaModel.gaeaModelStrings.remove
 import typingsJapgolly.gaeaModel.gaeaModelStrings.reset
 import typingsJapgolly.gaeaModel.gaeaModelStrings.update
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Diff extends js.Object {
+trait Diff extends StObject {
+  
   // 新增操作
-  var add: js.UndefOr[AnonIndex] = js.undefined
+  var add: js.UndefOr[Index] = js.undefined
+  
   // 新增组合
-  var addCombo: js.UndefOr[AnonComponentInfo] = js.undefined
+  var addCombo: js.UndefOr[ComponentInfo] = js.undefined
+  
   // 新增模板
-  var addSource: js.UndefOr[AnonComponentInfo] = js.undefined
+  var addSource: js.UndefOr[ComponentInfo] = js.undefined
+  
   // 内部交换顺序
-  var exchange: js.UndefOr[AnonNewIndex] = js.undefined
+  var exchange: js.UndefOr[NewIndex] = js.undefined
+  
   // 操作组件的 mapUniqueKey
   var mapUniqueKey: String
+  
   // 移动到另一个父元素
-  var move: js.UndefOr[AnonSourceIndex] = js.undefined
+  var move: js.UndefOr[SourceIndex] = js.undefined
+  
   // 粘贴操作
   var paste: js.UndefOr[DiffRemove] = js.undefined
+  
   // 删除组件
   var remove: js.UndefOr[DiffRemove] = js.undefined
+  
   // 重置组件
-  var reset: js.UndefOr[AnonBeforeName] = js.undefined
+  var reset: js.UndefOr[BeforeName] = js.undefined
+  
   // 操作类型
   var `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource
+  
   // 更新操作
-  var update: js.UndefOr[AnonNewValue] = js.undefined
+  var update: js.UndefOr[NewValue] = js.undefined
 }
-
 object Diff {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     mapUniqueKey: String,
-    `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource,
-    add: AnonIndex = null,
-    addCombo: AnonComponentInfo = null,
-    addSource: AnonComponentInfo = null,
-    exchange: AnonNewIndex = null,
-    move: AnonSourceIndex = null,
-    paste: DiffRemove = null,
-    remove: DiffRemove = null,
-    reset: AnonBeforeName = null,
-    update: AnonNewValue = null
+    `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource
   ): Diff = {
     val __obj = js.Dynamic.literal(mapUniqueKey = mapUniqueKey.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (add != null) __obj.updateDynamic("add")(add.asInstanceOf[js.Any])
-    if (addCombo != null) __obj.updateDynamic("addCombo")(addCombo.asInstanceOf[js.Any])
-    if (addSource != null) __obj.updateDynamic("addSource")(addSource.asInstanceOf[js.Any])
-    if (exchange != null) __obj.updateDynamic("exchange")(exchange.asInstanceOf[js.Any])
-    if (move != null) __obj.updateDynamic("move")(move.asInstanceOf[js.Any])
-    if (paste != null) __obj.updateDynamic("paste")(paste.asInstanceOf[js.Any])
-    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (reset != null) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
-    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Diff]
   }
+  
+  extension [Self <: Diff](x: Self) {
+    
+    inline def setAdd(value: Index): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    
+    inline def setAddCombo(value: ComponentInfo): Self = StObject.set(x, "addCombo", value.asInstanceOf[js.Any])
+    
+    inline def setAddComboUndefined: Self = StObject.set(x, "addCombo", js.undefined)
+    
+    inline def setAddSource(value: ComponentInfo): Self = StObject.set(x, "addSource", value.asInstanceOf[js.Any])
+    
+    inline def setAddSourceUndefined: Self = StObject.set(x, "addSource", js.undefined)
+    
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    
+    inline def setExchange(value: NewIndex): Self = StObject.set(x, "exchange", value.asInstanceOf[js.Any])
+    
+    inline def setExchangeUndefined: Self = StObject.set(x, "exchange", js.undefined)
+    
+    inline def setMapUniqueKey(value: String): Self = StObject.set(x, "mapUniqueKey", value.asInstanceOf[js.Any])
+    
+    inline def setMove(value: SourceIndex): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+    
+    inline def setMoveUndefined: Self = StObject.set(x, "move", js.undefined)
+    
+    inline def setPaste(value: DiffRemove): Self = StObject.set(x, "paste", value.asInstanceOf[js.Any])
+    
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    
+    inline def setRemove(value: DiffRemove): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setReset(value: BeforeName): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    
+    inline def setType(value: add | move | remove | exchange | update | paste | reset | addCombo | addSource): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUpdate(value: NewValue): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+  }
 }
-

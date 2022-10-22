@@ -1,8 +1,8 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.mapboxGl.mapboxGlStrings.unavailable
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.mapboxGl.mapboxGlStrings.loaded
   - typingsJapgolly.mapboxGl.mapboxGlStrings.error
 */
-trait PluginStatus extends js.Object
-
+trait PluginStatus extends StObject
 object PluginStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def error: typingsJapgolly.mapboxGl.mapboxGlStrings.error = this.cast("error")
-  @scala.inline
-  def loaded: typingsJapgolly.mapboxGl.mapboxGlStrings.loaded = this.cast("loaded")
-  @scala.inline
-  def loading: typingsJapgolly.mapboxGl.mapboxGlStrings.loading = this.cast("loading")
-  @scala.inline
-  def unavailable: typingsJapgolly.mapboxGl.mapboxGlStrings.unavailable = this.cast("unavailable")
+  
+  inline def error: typingsJapgolly.mapboxGl.mapboxGlStrings.error = "error".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.error]
+  
+  inline def loaded: typingsJapgolly.mapboxGl.mapboxGlStrings.loaded = "loaded".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.loaded]
+  
+  inline def loading: typingsJapgolly.mapboxGl.mapboxGlStrings.loading = "loading".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.loading]
+  
+  inline def unavailable: typingsJapgolly.mapboxGl.mapboxGlStrings.unavailable = "unavailable".asInstanceOf[typingsJapgolly.mapboxGl.mapboxGlStrings.unavailable]
 }
-

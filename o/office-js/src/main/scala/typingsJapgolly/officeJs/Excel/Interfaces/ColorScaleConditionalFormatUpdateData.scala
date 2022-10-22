@@ -1,27 +1,32 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
 import typingsJapgolly.officeJs.Excel.ConditionalColorScaleCriteria
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
-trait ColorScaleConditionalFormatUpdateData extends js.Object {
+trait ColorScaleConditionalFormatUpdateData extends StObject {
+  
   /**
-    *
     * The criteria of the color scale. Midpoint is optional when using a two point color scale.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined
 }
-
 object ColorScaleConditionalFormatUpdateData {
-  @scala.inline
-  def apply(criteria: ConditionalColorScaleCriteria = null): ColorScaleConditionalFormatUpdateData = {
+  
+  inline def apply(): ColorScaleConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (criteria != null) __obj.updateDynamic("criteria")(criteria.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorScaleConditionalFormatUpdateData]
   }
+  
+  extension [Self <: ColorScaleConditionalFormatUpdateData](x: Self) {
+    
+    inline def setCriteria(value: ConditionalColorScaleCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+  }
 }
-

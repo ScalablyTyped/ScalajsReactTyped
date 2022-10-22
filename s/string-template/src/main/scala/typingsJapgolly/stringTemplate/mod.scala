@@ -1,15 +1,22 @@
 package typingsJapgolly.stringTemplate
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.stringTemplate.StringTemplate.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * MODULES
   */
-@JSImport("string-template", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[Format]
-
+object mod extends Shortcut {
+  
+  @JSImport("string-template", JSImport.Namespace)
+  @js.native
+  val ^ : Format = js.native
+  
+  type _To = Format
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: Format = ^
+}

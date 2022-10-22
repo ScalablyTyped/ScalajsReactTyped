@@ -1,58 +1,68 @@
 package typingsJapgolly.antDesignPro.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignPro.antDesignProStrings.down
 import typingsJapgolly.antDesignPro.antDesignProStrings.up
-import typingsJapgolly.antDesignPro.numberInfoMod.NumberInfoProps
-import typingsJapgolly.antDesignPro.numberInfoMod.default
+import typingsJapgolly.antDesignPro.libNumberInfoMod.NumberInfoProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NumberInfo {
-  def apply(
-    gap: Int | Double = null,
-    status: up | down = null,
-    style: CSSProperties = null,
-    subTitle: Node | String = null,
-    subTotal: Int | Double = null,
-    suffix: String = null,
-    theme: String = null,
-    title: Node | String = null,
-    total: Node | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[NumberInfoProps, default, Unit, NumberInfoProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle.asInstanceOf[js.Any])
-    if (subTotal != null) __obj.updateDynamic("subTotal")(subTotal.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.numberInfoMod.NumberInfoProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.numberInfoMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.numberInfoMod.NumberInfoProps])(children: _*)
-  }
-  @JSImport("ant-design-pro/lib/NumberInfo", JSImport.Default)
+  @JSImport("ant-design-pro", "NumberInfo")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.NumberInfo] {
+    
+    inline def gap(value: Double): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def status(value: up | down): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def subTitle(value: Node | String): this.type = set("subTitle", value.asInstanceOf[js.Any])
+    
+    inline def subTitleNull: this.type = set("subTitle", null)
+    
+    inline def subTitleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("subTitle", js.Array(value*))
+    
+    inline def subTitleVdomElement(value: VdomElement): this.type = set("subTitle", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def subTotal(value: Double): this.type = set("subTotal", value.asInstanceOf[js.Any])
+    
+    inline def suffix(value: String): this.type = set("suffix", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: String): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def title(value: Node | String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def titleVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("title", js.Array(value*))
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def total(value: Node | String): this.type = set("total", value.asInstanceOf[js.Any])
+    
+    inline def totalNull: this.type = set("total", null)
+    
+    inline def totalVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("total", js.Array(value*))
+    
+    inline def totalVdomElement(value: VdomElement): this.type = set("total", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: NumberInfo.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: NumberInfoProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

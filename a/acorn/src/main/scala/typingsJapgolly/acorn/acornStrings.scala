@@ -1,19 +1,27 @@
 package typingsJapgolly.acorn
 
+import typingsJapgolly.acorn.mod.ecmaVersion
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object acornStrings {
-  @js.native
-  sealed trait module extends js.Object
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait latest
+    extends StObject
+       with ecmaVersion
+  inline def latest: latest = "latest".asInstanceOf[latest]
   
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
-  @scala.inline
-  def script: script = "script".asInstanceOf[script]
+  @js.native
+  sealed trait module extends StObject
+  inline def module: module = "module".asInstanceOf[module]
+  
+  @js.native
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
+  
+  @js.native
+  sealed trait script extends StObject
+  inline def script: script = "script".asInstanceOf[script]
 }
-

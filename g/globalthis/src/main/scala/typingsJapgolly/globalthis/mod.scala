@@ -1,33 +1,48 @@
 package typingsJapgolly.globalthis
 
 import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("globalthis", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  inline def apply(): Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Any]
+  
+  @JSImport("globalthis", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
-  	 * The `globalThis` object.
-  	 */
-  val implementation: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof globalThis */ js.Any = js.native
-  def apply(): js.Any = js.native
-  /**
-  	 * Gets the `globalThis` object.
-  	 */
-  def getPolyfill(): ReturnType[
+    * Gets the `globalThis` object.
+    */
+  inline def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
-  ] = js.native
-  /**
-  	 * Installs the `globalThis` property onto the global object.
-  	 */
-  def shim(): ReturnType[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolyfill")().asInstanceOf[ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
     ]
-  ] = js.native
+  ]]
+  
+  /**
+    * The `globalThis` object.
+    */
+  @JSImport("globalthis", "implementation")
+  @js.native
+  val implementation: /* globalThis */ Any = js.native
+  
+  /**
+    * Installs the `globalThis` property onto the global object.
+    */
+  inline def shim(): ReturnType[
+    js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
+    ]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[ReturnType[
+    js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof implementation */ js.Any
+    ]
+  ]]
 }
-

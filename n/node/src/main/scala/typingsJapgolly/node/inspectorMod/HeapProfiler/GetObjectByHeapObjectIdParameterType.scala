@@ -1,23 +1,31 @@
 package typingsJapgolly.node.inspectorMod.HeapProfiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetObjectByHeapObjectIdParameterType extends js.Object {
+trait GetObjectByHeapObjectIdParameterType extends StObject {
+  
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
   var objectGroup: js.UndefOr[String] = js.undefined
+  
   var objectId: HeapSnapshotObjectId
 }
-
 object GetObjectByHeapObjectIdParameterType {
-  @scala.inline
-  def apply(objectId: HeapSnapshotObjectId, objectGroup: String = null): GetObjectByHeapObjectIdParameterType = {
+  
+  inline def apply(objectId: HeapSnapshotObjectId): GetObjectByHeapObjectIdParameterType = {
     val __obj = js.Dynamic.literal(objectId = objectId.asInstanceOf[js.Any])
-    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectByHeapObjectIdParameterType]
   }
+  
+  extension [Self <: GetObjectByHeapObjectIdParameterType](x: Self) {
+    
+    inline def setObjectGroup(value: String): Self = StObject.set(x, "objectGroup", value.asInstanceOf[js.Any])
+    
+    inline def setObjectGroupUndefined: Self = StObject.set(x, "objectGroup", js.undefined)
+    
+    inline def setObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+  }
 }
-

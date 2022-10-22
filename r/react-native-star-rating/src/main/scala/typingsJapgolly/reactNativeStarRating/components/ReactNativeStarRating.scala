@@ -1,10 +1,7 @@
 package typingsJapgolly.reactNativeStarRating.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.ImageURISource
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
@@ -20,69 +17,67 @@ import typingsJapgolly.reactNativeStarRating.reactNativeStarRatingStrings.shake
 import typingsJapgolly.reactNativeStarRating.reactNativeStarRatingStrings.swing
 import typingsJapgolly.reactNativeStarRating.reactNativeStarRatingStrings.tada
 import typingsJapgolly.reactNativeStarRating.reactNativeStarRatingStrings.wobble
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeStarRating {
-  def apply(
-    activeOpacity: Int | Double = null,
-    animation: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble = null,
-    buttonStyle: StyleProp[ViewStyle] = null,
-    containerStyle: StyleProp[ViewStyle] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    emptyStar: String | ImageURISource = null,
-    emptyStarColor: String = null,
-    fullStar: String | ImageURISource = null,
-    fullStarColor: String = null,
-    halfStar: String | ImageURISource = null,
-    halfStarColor: String = null,
-    halfStarEnabled: js.UndefOr[Boolean] = js.undefined,
-    iconSet: String = null,
-    maxStars: Int | Double = null,
-    rating: Int | Double = null,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    selectedStar: /* rating */ Double => Callback = null,
-    starSize: Int | Double = null,
-    starStyle: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[StarRatingProps, default, Unit, StarRatingProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
-    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (emptyStar != null) __obj.updateDynamic("emptyStar")(emptyStar.asInstanceOf[js.Any])
-    if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor.asInstanceOf[js.Any])
-    if (fullStar != null) __obj.updateDynamic("fullStar")(fullStar.asInstanceOf[js.Any])
-    if (fullStarColor != null) __obj.updateDynamic("fullStarColor")(fullStarColor.asInstanceOf[js.Any])
-    if (halfStar != null) __obj.updateDynamic("halfStar")(halfStar.asInstanceOf[js.Any])
-    if (halfStarColor != null) __obj.updateDynamic("halfStarColor")(halfStarColor.asInstanceOf[js.Any])
-    if (!js.isUndefined(halfStarEnabled)) __obj.updateDynamic("halfStarEnabled")(halfStarEnabled.asInstanceOf[js.Any])
-    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet.asInstanceOf[js.Any])
-    if (maxStars != null) __obj.updateDynamic("maxStars")(maxStars.asInstanceOf[js.Any])
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (selectedStar != null) __obj.updateDynamic("selectedStar")(js.Any.fromFunction1((t0: /* rating */ scala.Double) => selectedStar(t0).runNow()))
-    if (starSize != null) __obj.updateDynamic("starSize")(starSize.asInstanceOf[js.Any])
-    if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeStarRating.mod.StarRatingProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeStarRating.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeStarRating.mod.StarRatingProps])(children: _*)
-  }
   @JSImport("react-native-star-rating", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def activeOpacity(value: Double): this.type = set("activeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def animation(value: bounce | flash | jello | pulse | rotate | rubberBand | shake | swing | tada | wobble): this.type = set("animation", value.asInstanceOf[js.Any])
+    
+    inline def buttonStyle(value: StyleProp[ViewStyle]): this.type = set("buttonStyle", value.asInstanceOf[js.Any])
+    
+    inline def buttonStyleNull: this.type = set("buttonStyle", null)
+    
+    inline def containerStyle(value: StyleProp[ViewStyle]): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def containerStyleNull: this.type = set("containerStyle", null)
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def emptyStar(value: String | ImageURISource): this.type = set("emptyStar", value.asInstanceOf[js.Any])
+    
+    inline def emptyStarColor(value: String): this.type = set("emptyStarColor", value.asInstanceOf[js.Any])
+    
+    inline def fullStar(value: String | ImageURISource): this.type = set("fullStar", value.asInstanceOf[js.Any])
+    
+    inline def fullStarColor(value: String): this.type = set("fullStarColor", value.asInstanceOf[js.Any])
+    
+    inline def halfStar(value: String | ImageURISource): this.type = set("halfStar", value.asInstanceOf[js.Any])
+    
+    inline def halfStarColor(value: String): this.type = set("halfStarColor", value.asInstanceOf[js.Any])
+    
+    inline def halfStarEnabled(value: Boolean): this.type = set("halfStarEnabled", value.asInstanceOf[js.Any])
+    
+    inline def iconSet(value: String): this.type = set("iconSet", value.asInstanceOf[js.Any])
+    
+    inline def maxStars(value: Double): this.type = set("maxStars", value.asInstanceOf[js.Any])
+    
+    inline def rating(value: Double): this.type = set("rating", value.asInstanceOf[js.Any])
+    
+    inline def reversed(value: Boolean): this.type = set("reversed", value.asInstanceOf[js.Any])
+    
+    inline def selectedStar(value: /* rating */ Double => Callback): this.type = set("selectedStar", js.Any.fromFunction1((t0: /* rating */ Double) => value(t0).runNow()))
+    
+    inline def starSize(value: Double): this.type = set("starSize", value.asInstanceOf[js.Any])
+    
+    inline def starStyle(value: StyleProp[ViewStyle]): this.type = set("starStyle", value.asInstanceOf[js.Any])
+    
+    inline def starStyleNull: this.type = set("starStyle", null)
+  }
+  
+  implicit def make(companion: ReactNativeStarRating.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StarRatingProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

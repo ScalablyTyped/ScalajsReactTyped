@@ -1,63 +1,60 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait armor extends js.Object
-
+sealed trait armor extends StObject
 /**
   * Armor type
   */
 @JSImport("openpgp", "enums.armor")
 @js.native
-object armor extends js.Object {
-  @js.native
-  sealed trait message extends armor
-  
-  @js.native
-  sealed trait multipart_last extends armor
-  
-  @js.native
-  sealed trait multipart_section extends armor
-  
-  @js.native
-  sealed trait private_key extends armor
-  
-  @js.native
-  sealed trait public_key extends armor
-  
-  @js.native
-  sealed trait signature extends armor
-  
-  @js.native
-  sealed trait signed extends armor
+object armor extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[armor with Double] = js.native
-  /* 3 */ @js.native
-  object message extends TopLevel[message with Double]
+  def apply(value: Double): js.UndefOr[armor & Double] = js.native
   
-  /* 1 */ @js.native
-  object multipart_last extends TopLevel[multipart_last with Double]
+  @js.native
+  sealed trait message
+    extends StObject
+       with armor
+  /* 3 */ val message: typingsJapgolly.openpgp.mod.enums.armor.message & Double = js.native
   
-  /* 0 */ @js.native
-  object multipart_section extends TopLevel[multipart_section with Double]
+  @js.native
+  sealed trait multipart_last
+    extends StObject
+       with armor
+  /* 1 */ val multipart_last: typingsJapgolly.openpgp.mod.enums.armor.multipart_last & Double = js.native
   
-  /* 5 */ @js.native
-  object private_key extends TopLevel[private_key with Double]
+  @js.native
+  sealed trait multipart_section
+    extends StObject
+       with armor
+  /* 0 */ val multipart_section: typingsJapgolly.openpgp.mod.enums.armor.multipart_section & Double = js.native
   
-  /* 4 */ @js.native
-  object public_key extends TopLevel[public_key with Double]
+  @js.native
+  sealed trait private_key
+    extends StObject
+       with armor
+  /* 5 */ val private_key: typingsJapgolly.openpgp.mod.enums.armor.private_key & Double = js.native
   
-  /* 6 */ @js.native
-  object signature
-    extends TopLevel[typingsJapgolly.openpgp.mod.enums.armor.signature with Double]
+  @js.native
+  sealed trait public_key
+    extends StObject
+       with armor
+  /* 4 */ val public_key: typingsJapgolly.openpgp.mod.enums.armor.public_key & Double = js.native
   
-  /* 2 */ @js.native
-  object signed extends TopLevel[signed with Double]
+  @js.native
+  sealed trait signature
+    extends StObject
+       with armor
+  /* 6 */ val signature: typingsJapgolly.openpgp.mod.enums.armor.signature & Double = js.native
   
+  @js.native
+  sealed trait signed
+    extends StObject
+       with armor
+  /* 2 */ val signed: typingsJapgolly.openpgp.mod.enums.armor.signed & Double = js.native
 }
-

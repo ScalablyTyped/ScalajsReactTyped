@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains select multiple information for the config. Its properties determine how the select
@@ -27,33 +26,46 @@ import scala.scalajs.js.annotation._
   *       .addOption(option1)
   *       .addOption(option2);
   */
-trait SelectMultiple extends js.Object {
+trait SelectMultiple extends StObject {
+  
   def addOption(optionBuilder: OptionBuilder): SelectMultiple
+  
   def setAllowOverride(allowOverride: Boolean): SelectMultiple
+  
   def setHelpText(helpText: String): SelectMultiple
+  
   def setId(id: String): SelectMultiple
+  
   def setIsDynamic(isDynamic: Boolean): SelectMultiple
+  
   def setName(name: String): SelectMultiple
 }
-
 object SelectMultiple {
-  @scala.inline
-  def apply(
-    addOption: OptionBuilder => CallbackTo[SelectMultiple],
-    setAllowOverride: Boolean => CallbackTo[SelectMultiple],
-    setHelpText: String => CallbackTo[SelectMultiple],
-    setId: String => CallbackTo[SelectMultiple],
-    setIsDynamic: Boolean => CallbackTo[SelectMultiple],
-    setName: String => CallbackTo[SelectMultiple]
+  
+  inline def apply(
+    addOption: OptionBuilder => SelectMultiple,
+    setAllowOverride: Boolean => SelectMultiple,
+    setHelpText: String => SelectMultiple,
+    setId: String => SelectMultiple,
+    setIsDynamic: Boolean => SelectMultiple,
+    setName: String => SelectMultiple
   ): SelectMultiple = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addOption")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio.OptionBuilder) => addOption(t0).runNow()))
-    __obj.updateDynamic("setAllowOverride")(js.Any.fromFunction1((t0: scala.Boolean) => setAllowOverride(t0).runNow()))
-    __obj.updateDynamic("setHelpText")(js.Any.fromFunction1((t0: java.lang.String) => setHelpText(t0).runNow()))
-    __obj.updateDynamic("setId")(js.Any.fromFunction1((t0: java.lang.String) => setId(t0).runNow()))
-    __obj.updateDynamic("setIsDynamic")(js.Any.fromFunction1((t0: scala.Boolean) => setIsDynamic(t0).runNow()))
-    __obj.updateDynamic("setName")(js.Any.fromFunction1((t0: java.lang.String) => setName(t0).runNow()))
+    val __obj = js.Dynamic.literal(addOption = js.Any.fromFunction1(addOption), setAllowOverride = js.Any.fromFunction1(setAllowOverride), setHelpText = js.Any.fromFunction1(setHelpText), setId = js.Any.fromFunction1(setId), setIsDynamic = js.Any.fromFunction1(setIsDynamic), setName = js.Any.fromFunction1(setName))
     __obj.asInstanceOf[SelectMultiple]
   }
+  
+  extension [Self <: SelectMultiple](x: Self) {
+    
+    inline def setAddOption(value: OptionBuilder => SelectMultiple): Self = StObject.set(x, "addOption", js.Any.fromFunction1(value))
+    
+    inline def setSetAllowOverride(value: Boolean => SelectMultiple): Self = StObject.set(x, "setAllowOverride", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => SelectMultiple): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    
+    inline def setSetId(value: String => SelectMultiple): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    
+    inline def setSetIsDynamic(value: Boolean => SelectMultiple): Self = StObject.set(x, "setIsDynamic", js.Any.fromFunction1(value))
+    
+    inline def setSetName(value: String => SelectMultiple): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+  }
 }
-

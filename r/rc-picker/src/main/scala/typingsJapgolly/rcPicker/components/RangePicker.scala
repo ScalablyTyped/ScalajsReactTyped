@@ -2,30 +2,41 @@ package typingsJapgolly.rcPicker.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.rcPicker.generateMod.GenerateConfig
-import typingsJapgolly.rcPicker.interfaceMod.Components
-import typingsJapgolly.rcPicker.interfaceMod.DisabledTimes
-import typingsJapgolly.rcPicker.interfaceMod.EventValue
-import typingsJapgolly.rcPicker.interfaceMod.Locale
-import typingsJapgolly.rcPicker.interfaceMod.PanelMode
-import typingsJapgolly.rcPicker.interfaceMod.PickerMode
-import typingsJapgolly.rcPicker.interfaceMod.RangeValue
-import typingsJapgolly.rcPicker.pickerMod.PickerRefConfig
-import typingsJapgolly.rcPicker.rangePickerMod.RangeShowTimeObject
-import typingsJapgolly.rcPicker.rangePickerMod.default
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.rcPicker.esGenerateMod.GenerateConfig
+import typingsJapgolly.rcPicker.esInterfaceMod.Components
+import typingsJapgolly.rcPicker.esInterfaceMod.CustomFormat
+import typingsJapgolly.rcPicker.esInterfaceMod.DisabledTimes
+import typingsJapgolly.rcPicker.esInterfaceMod.EventValue
+import typingsJapgolly.rcPicker.esInterfaceMod.Locale
+import typingsJapgolly.rcPicker.esInterfaceMod.PanelMode
+import typingsJapgolly.rcPicker.esInterfaceMod.PickerMode
+import typingsJapgolly.rcPicker.esInterfaceMod.RangeValue
+import typingsJapgolly.rcPicker.esPickerMod.PickerRefConfig
+import typingsJapgolly.rcPicker.esRangePickerMod.RangeInfo
+import typingsJapgolly.rcPicker.esRangePickerMod.RangeShowTimeObject
+import typingsJapgolly.rcPicker.esRangePickerMod.RangeType
+import typingsJapgolly.rcPicker.rcPickerInts.`0`
+import typingsJapgolly.rcPicker.rcPickerInts.`1`
+import typingsJapgolly.rcPicker.rcPickerStrings.`additions removals`
 import typingsJapgolly.rcPicker.rcPickerStrings.`additions text`
 import typingsJapgolly.rcPicker.rcPickerStrings.`inline`
+import typingsJapgolly.rcPicker.rcPickerStrings.`removals additions`
+import typingsJapgolly.rcPicker.rcPickerStrings.`removals text`
+import typingsJapgolly.rcPicker.rcPickerStrings.`text additions`
+import typingsJapgolly.rcPicker.rcPickerStrings.`text removals`
 import typingsJapgolly.rcPicker.rcPickerStrings.additions
 import typingsJapgolly.rcPicker.rcPickerStrings.all
 import typingsJapgolly.rcPicker.rcPickerStrings.ascending
@@ -35,7 +46,6 @@ import typingsJapgolly.rcPicker.rcPickerStrings.copy
 import typingsJapgolly.rcPicker.rcPickerStrings.date
 import typingsJapgolly.rcPicker.rcPickerStrings.descending
 import typingsJapgolly.rcPicker.rcPickerStrings.dialog
-import typingsJapgolly.rcPicker.rcPickerStrings.end
 import typingsJapgolly.rcPicker.rcPickerStrings.execute
 import typingsJapgolly.rcPicker.rcPickerStrings.grammar
 import typingsJapgolly.rcPicker.rcPickerStrings.grid
@@ -57,747 +67,952 @@ import typingsJapgolly.rcPicker.rcPickerStrings.popup
 import typingsJapgolly.rcPicker.rcPickerStrings.removals
 import typingsJapgolly.rcPicker.rcPickerStrings.rtl
 import typingsJapgolly.rcPicker.rcPickerStrings.spelling
-import typingsJapgolly.rcPicker.rcPickerStrings.start
 import typingsJapgolly.rcPicker.rcPickerStrings.step
 import typingsJapgolly.rcPicker.rcPickerStrings.text
 import typingsJapgolly.rcPicker.rcPickerStrings.time
 import typingsJapgolly.rcPicker.rcPickerStrings.tree
 import typingsJapgolly.rcPicker.rcPickerStrings.vertical
+import typingsJapgolly.rcTrigger.esInterfaceMod.AlignType
+import typingsJapgolly.react.mod.Booleanish
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.InputHTMLAttributes
 import typingsJapgolly.react.mod.MutableRefObject
 import typingsJapgolly.std.Exclude
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RangePicker {
-  def RangePickerBaseProps[DateType](
-    generateConfig: GenerateConfig[DateType],
-    locale: Locale,
-    picker: Exclude[PickerMode, date | time],
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowEmpty: js.Tuple2[Boolean, Boolean] = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearIcon: VdomNode = null,
-    components: Components = null,
-    dateRender: (DateType, DateType) => CallbackTo[Node] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultPickerValue: js.Tuple2[DateType, DateType] = null,
-    defaultValue: RangeValue[DateType] = null,
-    direction: ltr | rtl = null,
-    disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
-    disabledDate: DateType => CallbackTo[Boolean] = null,
-    disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => CallbackTo[DisabledTimes] = null,
-    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
-    dropdownClassName: String = null,
-    format: String | js.Array[String] = null,
-    getPopupContainer: /* node */ HTMLElement => CallbackTo[HTMLElement] = null,
-    inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    mode: js.Tuple2[PanelMode, PanelMode] = null,
-    monthCellRender: (DateType, /* locale */ Locale) => CallbackTo[Node] = null,
-    name: String = null,
-    nextIcon: VdomNode = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onCalendarChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onClick: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onOk: /* dates */ RangeValue[DateType] => Callback = null,
-    onOpenChange: /* open */ Boolean => Callback = null,
-    onPanelChange: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    pickerRef: MutableRefObject[PickerRefConfig] = null,
-    placeholder: js.Tuple2[String, String] = null,
-    popupStyle: CSSProperties = null,
-    prefixCls: String = null,
-    prevIcon: VdomNode = null,
-    ranges: Record[
-      String, 
-      (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
-    ] = null,
-    renderExtraFooter: /* mode */ PanelMode => CallbackTo[Node] = null,
-    role: String = null,
-    separator: VdomNode = null,
-    style: CSSProperties = null,
-    suffixIcon: VdomNode = null,
-    superNextIcon: VdomNode = null,
-    superPrevIcon: VdomNode = null,
-    tabIndex: Int | Double = null,
-    transitionName: String = null,
-    value: RangeValue[DateType] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerBaseProps[DateType], 
-    default[DateType], 
-    Unit, 
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerBaseProps[DateType]
-  ] = {
-    val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.rawNode.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2((t0: DateType, t1: DateType) => dateRender(t0, t1).runNow()))
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1((t0: DateType) => disabledDate(t0).runNow()))
-    if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction2((t0: /* date */ typingsJapgolly.rcPicker.interfaceMod.EventValue[DateType], t1: /* type */ typingsJapgolly.rcPicker.rcPickerStrings.start | typingsJapgolly.rcPicker.rcPickerStrings.end) => disabledTime(t0, t1).runNow()))
-    if (dropdownAlign != null) __obj.updateDynamic("dropdownAlign")(dropdownAlign.asInstanceOf[js.Any])
-    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2((t0: DateType, t1: /* locale */ typingsJapgolly.rcPicker.interfaceMod.Locale) => monthCellRender(t0, t1).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.rawNode.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onCalendarChange(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onChange(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onContextMenu(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseLeave(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseUp(t0).runNow()))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* dates */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType]) => onOk(t0).runNow()))
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* open */ scala.Boolean) => onOpenChange(t0).runNow()))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* modes */ js.Tuple2[
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode, 
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode]) => onPanelChange(t0, t1).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.rawNode.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1((t0: /* mode */ typingsJapgolly.rcPicker.interfaceMod.PanelMode) => renderExtraFooter(t0).runNow()))
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.rawNode.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.rawNode.asInstanceOf[js.Any])
-    if (superNextIcon != null) __obj.updateDynamic("superNextIcon")(superNextIcon.rawNode.asInstanceOf[js.Any])
-    if (superPrevIcon != null) __obj.updateDynamic("superPrevIcon")(superPrevIcon.rawNode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcPicker.rangePickerMod.RangePickerBaseProps[DateType], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcPicker.rangePickerMod.default[DateType]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcPicker.rangePickerMod.RangePickerBaseProps[DateType]])(children: _*)
+  object RangePickerBaseProps {
+    
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale, picker: Exclude[PickerMode, date | time]): Builder[DateType] = {
+      val __props = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
+      new Builder[DateType](js.Array(this.component, __props.asInstanceOf[typingsJapgolly.rcPicker.esRangePickerMod.RangePickerBaseProps[DateType]]))
+    }
+    
+    @JSImport("rc-picker", "RangePicker")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder[DateType] (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[typingsJapgolly.rcPicker.mod.RangePicker[DateType]] {
+      
+      inline def activePickerIndex(value: `0` | `1`): this.type = set("activePickerIndex", value.asInstanceOf[js.Any])
+      
+      inline def allowClear(value: Boolean): this.type = set("allowClear", value.asInstanceOf[js.Any])
+      
+      inline def allowEmpty(value: js.Tuple2[Boolean, Boolean]): this.type = set("allowEmpty", value.asInstanceOf[js.Any])
+      
+      inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `aria-relevant`(
+        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+      
+      inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def clearIcon(value: VdomNode): this.type = set("clearIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def clearIconNull: this.type = set("clearIcon", null)
+      
+      inline def clearIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("clearIcon", js.Array(value*))
+      
+      inline def clearIconVdomElement(value: VdomElement): this.type = set("clearIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def components(value: Components): this.type = set("components", value.asInstanceOf[js.Any])
+      
+      inline def dateRender(value: (DateType, DateType, /* info */ RangeInfo) => Node): this.type = set("dateRender", js.Any.fromFunction3(value))
+      
+      inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+      
+      inline def defaultPickerValue(value: js.Tuple2[DateType, DateType]): this.type = set("defaultPickerValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValue(value: RangeValue[DateType]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValueNull: this.type = set("defaultValue", null)
+      
+      inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+      
+      inline def disabled(value: Boolean | (js.Tuple2[Boolean, Boolean])): this.type = set("disabled", value.asInstanceOf[js.Any])
+      
+      inline def disabledDate(value: DateType => Boolean): this.type = set("disabledDate", js.Any.fromFunction1(value))
+      
+      inline def disabledTime(value: (/* date */ EventValue[DateType], /* type */ RangeType) => DisabledTimes): this.type = set("disabledTime", js.Any.fromFunction2(value))
+      
+      inline def dropdownAlign(value: AlignType): this.type = set("dropdownAlign", value.asInstanceOf[js.Any])
+      
+      inline def dropdownClassName(value: String): this.type = set("dropdownClassName", value.asInstanceOf[js.Any])
+      
+      inline def format(value: String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])): this.type = set("format", value.asInstanceOf[js.Any])
+      
+      inline def formatFunction1(value: DateType => String): this.type = set("format", js.Any.fromFunction1(value))
+      
+      inline def formatVarargs(value: (String | CustomFormat[DateType])*): this.type = set("format", js.Array(value*))
+      
+      inline def getPopupContainer(value: /* node */ HTMLElement => HTMLElement): this.type = set("getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+      
+      inline def inputReadOnly(value: Boolean): this.type = set("inputReadOnly", value.asInstanceOf[js.Any])
+      
+      inline def inputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => Node): this.type = set("inputRender", js.Any.fromFunction1(value))
+      
+      inline def mode(value: js.Tuple2[PanelMode, PanelMode]): this.type = set("mode", value.asInstanceOf[js.Any])
+      
+      inline def monthCellRender(value: (DateType, /* locale */ Locale) => Node): this.type = set("monthCellRender", js.Any.fromFunction2(value))
+      
+      inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+      
+      inline def nextIcon(value: VdomNode): this.type = set("nextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def nextIconNull: this.type = set("nextIcon", null)
+      
+      inline def nextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("nextIcon", js.Array(value*))
+      
+      inline def nextIconVdomElement(value: VdomElement): this.type = set("nextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def onBlur(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onCalendarChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String], /* info */ RangeInfo) => Callback
+      ): this.type = set("onCalendarChange", js.Any.fromFunction3((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String], t2: /* info */ RangeInfo) => (value(t0, t1, t2)).runNow()))
+      
+      inline def onChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback
+      ): this.type = set("onChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String]) => (value(t0, t1)).runNow()))
+      
+      inline def onClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onContextMenu(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onFocus(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onKeyDown(
+        value: (/* event */ ReactKeyboardEventFrom[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Callback
+      ): this.type = set("onKeyDown", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLInputElement], t1: /* preventDefault */ js.Function0[Unit]) => (value(t0, t1)).runNow()))
+      
+      inline def onMouseDown(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseEnter(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseLeave(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseUp(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onOk(value: /* dates */ RangeValue[DateType] => Callback): this.type = set("onOk", js.Any.fromFunction1((t0: /* dates */ RangeValue[DateType]) => value(t0).runNow()))
+      
+      inline def onOpenChange(value: /* open */ Boolean => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+      
+      inline def onPanelChange(
+        value: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback
+      ): this.type = set("onPanelChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* modes */ js.Tuple2[PanelMode, PanelMode]) => (value(t0, t1)).runNow()))
+      
+      inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+      
+      inline def panelRender(value: /* originPanel */ Node => Node): this.type = set("panelRender", js.Any.fromFunction1(value))
+      
+      inline def pickerRef(value: MutableRefObject[PickerRefConfig]): this.type = set("pickerRef", value.asInstanceOf[js.Any])
+      
+      inline def placeholder(value: js.Tuple2[String, String]): this.type = set("placeholder", value.asInstanceOf[js.Any])
+      
+      inline def popupStyle(value: CSSProperties): this.type = set("popupStyle", value.asInstanceOf[js.Any])
+      
+      inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def prevIcon(value: VdomNode): this.type = set("prevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def prevIconNull: this.type = set("prevIcon", null)
+      
+      inline def prevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("prevIcon", js.Array(value*))
+      
+      inline def prevIconVdomElement(value: VdomElement): this.type = set("prevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def ranges(
+        value: Record[
+              String, 
+              (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
+            ]
+      ): this.type = set("ranges", value.asInstanceOf[js.Any])
+      
+      inline def renderExtraFooter(value: /* mode */ PanelMode => Node): this.type = set("renderExtraFooter", js.Any.fromFunction1(value))
+      
+      inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+      
+      inline def separator(value: VdomNode): this.type = set("separator", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def separatorNull: this.type = set("separator", null)
+      
+      inline def separatorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("separator", js.Array(value*))
+      
+      inline def separatorVdomElement(value: VdomElement): this.type = set("separator", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def suffixIcon(value: VdomNode): this.type = set("suffixIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def suffixIconNull: this.type = set("suffixIcon", null)
+      
+      inline def suffixIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("suffixIcon", js.Array(value*))
+      
+      inline def suffixIconVdomElement(value: VdomElement): this.type = set("suffixIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superNextIcon(value: VdomNode): this.type = set("superNextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superNextIconNull: this.type = set("superNextIcon", null)
+      
+      inline def superNextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superNextIcon", js.Array(value*))
+      
+      inline def superNextIconVdomElement(value: VdomElement): this.type = set("superNextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superPrevIcon(value: VdomNode): this.type = set("superPrevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superPrevIconNull: this.type = set("superPrevIcon", null)
+      
+      inline def superPrevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superPrevIcon", js.Array(value*))
+      
+      inline def superPrevIconVdomElement(value: VdomElement): this.type = set("superPrevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+      
+      inline def value(value: RangeValue[DateType]): this.type = set("value", value.asInstanceOf[js.Any])
+      
+      inline def valueNull: this.type = set("value", null)
+    }
+    
+    def withProps[DateType](p: typingsJapgolly.rcPicker.esRangePickerMod.RangePickerBaseProps[DateType]): Builder[DateType] = new Builder[DateType](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  def RangePickerDateProps[DateType](
-    generateConfig: GenerateConfig[DateType],
-    locale: Locale,
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowEmpty: js.Tuple2[Boolean, Boolean] = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearIcon: VdomNode = null,
-    components: Components = null,
-    dateRender: (DateType, DateType) => CallbackTo[Node] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultPickerValue: js.Tuple2[DateType, DateType] = null,
-    defaultValue: RangeValue[DateType] = null,
-    direction: ltr | rtl = null,
-    disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
-    disabledDate: DateType => CallbackTo[Boolean] = null,
-    disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => CallbackTo[DisabledTimes] = null,
-    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
-    dropdownClassName: String = null,
-    format: String | js.Array[String] = null,
-    getPopupContainer: /* node */ HTMLElement => CallbackTo[HTMLElement] = null,
-    inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    mode: js.Tuple2[PanelMode, PanelMode] = null,
-    monthCellRender: (DateType, /* locale */ Locale) => CallbackTo[Node] = null,
-    name: String = null,
-    nextIcon: VdomNode = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onCalendarChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onClick: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onOk: /* dates */ RangeValue[DateType] => Callback = null,
-    onOpenChange: /* open */ Boolean => Callback = null,
-    onPanelChange: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    picker: date = null,
-    pickerRef: MutableRefObject[PickerRefConfig] = null,
-    placeholder: js.Tuple2[String, String] = null,
-    popupStyle: CSSProperties = null,
-    prefixCls: String = null,
-    prevIcon: VdomNode = null,
-    ranges: Record[
-      String, 
-      (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
-    ] = null,
-    renderExtraFooter: /* mode */ PanelMode => CallbackTo[Node] = null,
-    role: String = null,
-    separator: VdomNode = null,
-    showTime: Boolean | RangeShowTimeObject[DateType] = null,
-    style: CSSProperties = null,
-    suffixIcon: VdomNode = null,
-    superNextIcon: VdomNode = null,
-    superPrevIcon: VdomNode = null,
-    tabIndex: Int | Double = null,
-    transitionName: String = null,
-    value: RangeValue[DateType] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerDateProps[DateType], 
-    default[DateType], 
-    Unit, 
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerDateProps[DateType]
-  ] = {
-    val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.rawNode.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2((t0: DateType, t1: DateType) => dateRender(t0, t1).runNow()))
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1((t0: DateType) => disabledDate(t0).runNow()))
-    if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction2((t0: /* date */ typingsJapgolly.rcPicker.interfaceMod.EventValue[DateType], t1: /* type */ typingsJapgolly.rcPicker.rcPickerStrings.start | typingsJapgolly.rcPicker.rcPickerStrings.end) => disabledTime(t0, t1).runNow()))
-    if (dropdownAlign != null) __obj.updateDynamic("dropdownAlign")(dropdownAlign.asInstanceOf[js.Any])
-    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2((t0: DateType, t1: /* locale */ typingsJapgolly.rcPicker.interfaceMod.Locale) => monthCellRender(t0, t1).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.rawNode.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onCalendarChange(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onChange(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onContextMenu(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseLeave(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseUp(t0).runNow()))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* dates */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType]) => onOk(t0).runNow()))
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* open */ scala.Boolean) => onOpenChange(t0).runNow()))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* modes */ js.Tuple2[
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode, 
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode]) => onPanelChange(t0, t1).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (picker != null) __obj.updateDynamic("picker")(picker.asInstanceOf[js.Any])
-    if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.rawNode.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1((t0: /* mode */ typingsJapgolly.rcPicker.interfaceMod.PanelMode) => renderExtraFooter(t0).runNow()))
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.rawNode.asInstanceOf[js.Any])
-    if (showTime != null) __obj.updateDynamic("showTime")(showTime.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.rawNode.asInstanceOf[js.Any])
-    if (superNextIcon != null) __obj.updateDynamic("superNextIcon")(superNextIcon.rawNode.asInstanceOf[js.Any])
-    if (superPrevIcon != null) __obj.updateDynamic("superPrevIcon")(superPrevIcon.rawNode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcPicker.rangePickerMod.RangePickerDateProps[DateType], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcPicker.rangePickerMod.default[DateType]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcPicker.rangePickerMod.RangePickerDateProps[DateType]])(children: _*)
+  object RangePickerDateProps {
+    
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): Builder[DateType] = {
+      val __props = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
+      new Builder[DateType](js.Array(this.component, __props.asInstanceOf[typingsJapgolly.rcPicker.esRangePickerMod.RangePickerDateProps[DateType]]))
+    }
+    
+    @JSImport("rc-picker", "RangePicker")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder[DateType] (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[typingsJapgolly.rcPicker.mod.RangePicker[DateType]] {
+      
+      inline def activePickerIndex(value: `0` | `1`): this.type = set("activePickerIndex", value.asInstanceOf[js.Any])
+      
+      inline def allowClear(value: Boolean): this.type = set("allowClear", value.asInstanceOf[js.Any])
+      
+      inline def allowEmpty(value: js.Tuple2[Boolean, Boolean]): this.type = set("allowEmpty", value.asInstanceOf[js.Any])
+      
+      inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `aria-relevant`(
+        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+      
+      inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def clearIcon(value: VdomNode): this.type = set("clearIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def clearIconNull: this.type = set("clearIcon", null)
+      
+      inline def clearIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("clearIcon", js.Array(value*))
+      
+      inline def clearIconVdomElement(value: VdomElement): this.type = set("clearIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def components(value: Components): this.type = set("components", value.asInstanceOf[js.Any])
+      
+      inline def dateRender(value: (DateType, DateType, /* info */ RangeInfo) => Node): this.type = set("dateRender", js.Any.fromFunction3(value))
+      
+      inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+      
+      inline def defaultPickerValue(value: js.Tuple2[DateType, DateType]): this.type = set("defaultPickerValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValue(value: RangeValue[DateType]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValueNull: this.type = set("defaultValue", null)
+      
+      inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+      
+      inline def disabled(value: Boolean | (js.Tuple2[Boolean, Boolean])): this.type = set("disabled", value.asInstanceOf[js.Any])
+      
+      inline def disabledDate(value: DateType => Boolean): this.type = set("disabledDate", js.Any.fromFunction1(value))
+      
+      inline def disabledTime(value: (/* date */ EventValue[DateType], /* type */ RangeType) => DisabledTimes): this.type = set("disabledTime", js.Any.fromFunction2(value))
+      
+      inline def dropdownAlign(value: AlignType): this.type = set("dropdownAlign", value.asInstanceOf[js.Any])
+      
+      inline def dropdownClassName(value: String): this.type = set("dropdownClassName", value.asInstanceOf[js.Any])
+      
+      inline def format(value: String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])): this.type = set("format", value.asInstanceOf[js.Any])
+      
+      inline def formatFunction1(value: DateType => String): this.type = set("format", js.Any.fromFunction1(value))
+      
+      inline def formatVarargs(value: (String | CustomFormat[DateType])*): this.type = set("format", js.Array(value*))
+      
+      inline def getPopupContainer(value: /* node */ HTMLElement => HTMLElement): this.type = set("getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+      
+      inline def inputReadOnly(value: Boolean): this.type = set("inputReadOnly", value.asInstanceOf[js.Any])
+      
+      inline def inputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => Node): this.type = set("inputRender", js.Any.fromFunction1(value))
+      
+      inline def mode(value: js.Tuple2[PanelMode, PanelMode]): this.type = set("mode", value.asInstanceOf[js.Any])
+      
+      inline def monthCellRender(value: (DateType, /* locale */ Locale) => Node): this.type = set("monthCellRender", js.Any.fromFunction2(value))
+      
+      inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+      
+      inline def nextIcon(value: VdomNode): this.type = set("nextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def nextIconNull: this.type = set("nextIcon", null)
+      
+      inline def nextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("nextIcon", js.Array(value*))
+      
+      inline def nextIconVdomElement(value: VdomElement): this.type = set("nextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def onBlur(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onCalendarChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String], /* info */ RangeInfo) => Callback
+      ): this.type = set("onCalendarChange", js.Any.fromFunction3((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String], t2: /* info */ RangeInfo) => (value(t0, t1, t2)).runNow()))
+      
+      inline def onChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback
+      ): this.type = set("onChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String]) => (value(t0, t1)).runNow()))
+      
+      inline def onClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onContextMenu(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onFocus(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onKeyDown(
+        value: (/* event */ ReactKeyboardEventFrom[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Callback
+      ): this.type = set("onKeyDown", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLInputElement], t1: /* preventDefault */ js.Function0[Unit]) => (value(t0, t1)).runNow()))
+      
+      inline def onMouseDown(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseEnter(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseLeave(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseUp(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onOk(value: /* dates */ RangeValue[DateType] => Callback): this.type = set("onOk", js.Any.fromFunction1((t0: /* dates */ RangeValue[DateType]) => value(t0).runNow()))
+      
+      inline def onOpenChange(value: /* open */ Boolean => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+      
+      inline def onPanelChange(
+        value: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback
+      ): this.type = set("onPanelChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* modes */ js.Tuple2[PanelMode, PanelMode]) => (value(t0, t1)).runNow()))
+      
+      inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+      
+      inline def panelRender(value: /* originPanel */ Node => Node): this.type = set("panelRender", js.Any.fromFunction1(value))
+      
+      inline def picker(value: date): this.type = set("picker", value.asInstanceOf[js.Any])
+      
+      inline def pickerRef(value: MutableRefObject[PickerRefConfig]): this.type = set("pickerRef", value.asInstanceOf[js.Any])
+      
+      inline def placeholder(value: js.Tuple2[String, String]): this.type = set("placeholder", value.asInstanceOf[js.Any])
+      
+      inline def popupStyle(value: CSSProperties): this.type = set("popupStyle", value.asInstanceOf[js.Any])
+      
+      inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def prevIcon(value: VdomNode): this.type = set("prevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def prevIconNull: this.type = set("prevIcon", null)
+      
+      inline def prevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("prevIcon", js.Array(value*))
+      
+      inline def prevIconVdomElement(value: VdomElement): this.type = set("prevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def ranges(
+        value: Record[
+              String, 
+              (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
+            ]
+      ): this.type = set("ranges", value.asInstanceOf[js.Any])
+      
+      inline def renderExtraFooter(value: /* mode */ PanelMode => Node): this.type = set("renderExtraFooter", js.Any.fromFunction1(value))
+      
+      inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+      
+      inline def separator(value: VdomNode): this.type = set("separator", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def separatorNull: this.type = set("separator", null)
+      
+      inline def separatorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("separator", js.Array(value*))
+      
+      inline def separatorVdomElement(value: VdomElement): this.type = set("separator", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def showNow(value: Boolean): this.type = set("showNow", value.asInstanceOf[js.Any])
+      
+      inline def showTime(value: Boolean | RangeShowTimeObject[DateType]): this.type = set("showTime", value.asInstanceOf[js.Any])
+      
+      inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def suffixIcon(value: VdomNode): this.type = set("suffixIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def suffixIconNull: this.type = set("suffixIcon", null)
+      
+      inline def suffixIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("suffixIcon", js.Array(value*))
+      
+      inline def suffixIconVdomElement(value: VdomElement): this.type = set("suffixIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superNextIcon(value: VdomNode): this.type = set("superNextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superNextIconNull: this.type = set("superNextIcon", null)
+      
+      inline def superNextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superNextIcon", js.Array(value*))
+      
+      inline def superNextIconVdomElement(value: VdomElement): this.type = set("superNextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superPrevIcon(value: VdomNode): this.type = set("superPrevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superPrevIconNull: this.type = set("superPrevIcon", null)
+      
+      inline def superPrevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superPrevIcon", js.Array(value*))
+      
+      inline def superPrevIconVdomElement(value: VdomElement): this.type = set("superPrevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+      
+      inline def value(value: RangeValue[DateType]): this.type = set("value", value.asInstanceOf[js.Any])
+      
+      inline def valueNull: this.type = set("value", null)
+    }
+    
+    def withProps[DateType](p: typingsJapgolly.rcPicker.esRangePickerMod.RangePickerDateProps[DateType]): Builder[DateType] = new Builder[DateType](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  def RangePickerTimeProps[DateType](
-    generateConfig: GenerateConfig[DateType],
-    locale: Locale,
-    picker: time,
-    allowClear: js.UndefOr[Boolean] = js.undefined,
-    allowEmpty: js.Tuple2[Boolean, Boolean] = null,
-    `aria-activedescendant`: String = null,
-    `aria-atomic`: js.UndefOr[Boolean] = js.undefined,
-    `aria-autocomplete`: none | `inline` | list | both = null,
-    `aria-busy`: js.UndefOr[Boolean] = js.undefined,
-    `aria-checked`: Boolean | mixed = null,
-    `aria-colcount`: Int | Double = null,
-    `aria-colindex`: Int | Double = null,
-    `aria-colspan`: Int | Double = null,
-    `aria-controls`: String = null,
-    `aria-current`: Boolean | page | step | location | date | time = null,
-    `aria-describedby`: String = null,
-    `aria-details`: String = null,
-    `aria-disabled`: js.UndefOr[Boolean] = js.undefined,
-    `aria-dropeffect`: none | copy | execute | link | move | popup = null,
-    `aria-errormessage`: String = null,
-    `aria-expanded`: js.UndefOr[Boolean] = js.undefined,
-    `aria-flowto`: String = null,
-    `aria-grabbed`: js.UndefOr[Boolean] = js.undefined,
-    `aria-haspopup`: Boolean | menu | listbox | tree | grid | dialog = null,
-    `aria-hidden`: js.UndefOr[Boolean] = js.undefined,
-    `aria-invalid`: Boolean | grammar | spelling = null,
-    `aria-keyshortcuts`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    `aria-level`: Int | Double = null,
-    `aria-live`: off | assertive | polite = null,
-    `aria-modal`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiline`: js.UndefOr[Boolean] = js.undefined,
-    `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined,
-    `aria-orientation`: horizontal | vertical = null,
-    `aria-owns`: String = null,
-    `aria-placeholder`: String = null,
-    `aria-posinset`: Int | Double = null,
-    `aria-pressed`: Boolean | mixed = null,
-    `aria-readonly`: js.UndefOr[Boolean] = js.undefined,
-    `aria-relevant`: additions | (`additions text`) | all | removals | text = null,
-    `aria-required`: js.UndefOr[Boolean] = js.undefined,
-    `aria-roledescription`: String = null,
-    `aria-rowcount`: Int | Double = null,
-    `aria-rowindex`: Int | Double = null,
-    `aria-rowspan`: Int | Double = null,
-    `aria-selected`: js.UndefOr[Boolean] = js.undefined,
-    `aria-setsize`: Int | Double = null,
-    `aria-sort`: none | ascending | descending | other = null,
-    `aria-valuemax`: Int | Double = null,
-    `aria-valuemin`: Int | Double = null,
-    `aria-valuenow`: Int | Double = null,
-    `aria-valuetext`: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    clearIcon: VdomNode = null,
-    components: Components = null,
-    dateRender: (DateType, DateType) => CallbackTo[Node] = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultOpenValue: DateType = null,
-    defaultPickerValue: js.Tuple2[DateType, DateType] = null,
-    defaultValue: RangeValue[DateType] = null,
-    direction: ltr | rtl = null,
-    disabled: Boolean | (js.Tuple2[Boolean, Boolean]) = null,
-    disabledDate: DateType => CallbackTo[Boolean] = null,
-    disabledHours: js.UndefOr[CallbackTo[js.Array[Double]]] = js.undefined,
-    disabledMinutes: /* hour */ Double => CallbackTo[js.Array[Double]] = null,
-    disabledSeconds: (/* hour */ Double, /* minute */ Double) => CallbackTo[js.Array[Double]] = null,
-    disabledTime: (/* date */ EventValue[DateType], /* type */ start | end) => CallbackTo[DisabledTimes] = null,
-    dropdownAlign: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AlignType */ js.Any = null,
-    dropdownClassName: String = null,
-    format: String | js.Array[String] = null,
-    getPopupContainer: /* node */ HTMLElement => CallbackTo[HTMLElement] = null,
-    hideDisabledOptions: js.UndefOr[Boolean] = js.undefined,
-    hourStep: Int | Double = null,
-    inputReadOnly: js.UndefOr[Boolean] = js.undefined,
-    minuteStep: Int | Double = null,
-    mode: js.Tuple2[PanelMode, PanelMode] = null,
-    monthCellRender: (DateType, /* locale */ Locale) => CallbackTo[Node] = null,
-    name: String = null,
-    nextIcon: VdomNode = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onCalendarChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onChange: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback = null,
-    onClick: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onContextMenu: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onMouseDown: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onMouseUp: ReactMouseEventFrom[HTMLDivElement] => Callback = null,
-    onOk: /* dates */ RangeValue[DateType] => Callback = null,
-    onOpenChange: /* open */ Boolean => Callback = null,
-    onPanelChange: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    pickerRef: MutableRefObject[PickerRefConfig] = null,
-    placeholder: js.Tuple2[String, String] = null,
-    popupStyle: CSSProperties = null,
-    prefixCls: String = null,
-    prevIcon: VdomNode = null,
-    ranges: Record[
-      String, 
-      (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
-    ] = null,
-    renderExtraFooter: /* mode */ PanelMode => CallbackTo[Node] = null,
-    role: String = null,
-    secondStep: Int | Double = null,
-    separator: VdomNode = null,
-    showHour: js.UndefOr[Boolean] = js.undefined,
-    showMinute: js.UndefOr[Boolean] = js.undefined,
-    showSecond: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    suffixIcon: VdomNode = null,
-    superNextIcon: VdomNode = null,
-    superPrevIcon: VdomNode = null,
-    tabIndex: Int | Double = null,
-    transitionName: String = null,
-    use12Hours: js.UndefOr[Boolean] = js.undefined,
-    value: RangeValue[DateType] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerTimeProps[DateType], 
-    default[DateType], 
-    Unit, 
-    typingsJapgolly.rcPicker.rangePickerMod.RangePickerTimeProps[DateType]
-  ] = {
-    val __obj = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = picker.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear.asInstanceOf[js.Any])
-    if (allowEmpty != null) __obj.updateDynamic("allowEmpty")(allowEmpty.asInstanceOf[js.Any])
-    if (`aria-activedescendant` != null) __obj.updateDynamic("aria-activedescendant")(`aria-activedescendant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-atomic`)) __obj.updateDynamic("aria-atomic")(`aria-atomic`.asInstanceOf[js.Any])
-    if (`aria-autocomplete` != null) __obj.updateDynamic("aria-autocomplete")(`aria-autocomplete`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-busy`)) __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
-    if (`aria-checked` != null) __obj.updateDynamic("aria-checked")(`aria-checked`.asInstanceOf[js.Any])
-    if (`aria-colcount` != null) __obj.updateDynamic("aria-colcount")(`aria-colcount`.asInstanceOf[js.Any])
-    if (`aria-colindex` != null) __obj.updateDynamic("aria-colindex")(`aria-colindex`.asInstanceOf[js.Any])
-    if (`aria-colspan` != null) __obj.updateDynamic("aria-colspan")(`aria-colspan`.asInstanceOf[js.Any])
-    if (`aria-controls` != null) __obj.updateDynamic("aria-controls")(`aria-controls`.asInstanceOf[js.Any])
-    if (`aria-current` != null) __obj.updateDynamic("aria-current")(`aria-current`.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-details` != null) __obj.updateDynamic("aria-details")(`aria-details`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-disabled`)) __obj.updateDynamic("aria-disabled")(`aria-disabled`.asInstanceOf[js.Any])
-    if (`aria-dropeffect` != null) __obj.updateDynamic("aria-dropeffect")(`aria-dropeffect`.asInstanceOf[js.Any])
-    if (`aria-errormessage` != null) __obj.updateDynamic("aria-errormessage")(`aria-errormessage`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-expanded`)) __obj.updateDynamic("aria-expanded")(`aria-expanded`.asInstanceOf[js.Any])
-    if (`aria-flowto` != null) __obj.updateDynamic("aria-flowto")(`aria-flowto`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-grabbed`)) __obj.updateDynamic("aria-grabbed")(`aria-grabbed`.asInstanceOf[js.Any])
-    if (`aria-haspopup` != null) __obj.updateDynamic("aria-haspopup")(`aria-haspopup`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-hidden`)) __obj.updateDynamic("aria-hidden")(`aria-hidden`.asInstanceOf[js.Any])
-    if (`aria-invalid` != null) __obj.updateDynamic("aria-invalid")(`aria-invalid`.asInstanceOf[js.Any])
-    if (`aria-keyshortcuts` != null) __obj.updateDynamic("aria-keyshortcuts")(`aria-keyshortcuts`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (`aria-level` != null) __obj.updateDynamic("aria-level")(`aria-level`.asInstanceOf[js.Any])
-    if (`aria-live` != null) __obj.updateDynamic("aria-live")(`aria-live`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-modal`)) __obj.updateDynamic("aria-modal")(`aria-modal`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiline`)) __obj.updateDynamic("aria-multiline")(`aria-multiline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-multiselectable`)) __obj.updateDynamic("aria-multiselectable")(`aria-multiselectable`.asInstanceOf[js.Any])
-    if (`aria-orientation` != null) __obj.updateDynamic("aria-orientation")(`aria-orientation`.asInstanceOf[js.Any])
-    if (`aria-owns` != null) __obj.updateDynamic("aria-owns")(`aria-owns`.asInstanceOf[js.Any])
-    if (`aria-placeholder` != null) __obj.updateDynamic("aria-placeholder")(`aria-placeholder`.asInstanceOf[js.Any])
-    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
-    if (`aria-pressed` != null) __obj.updateDynamic("aria-pressed")(`aria-pressed`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-readonly`)) __obj.updateDynamic("aria-readonly")(`aria-readonly`.asInstanceOf[js.Any])
-    if (`aria-relevant` != null) __obj.updateDynamic("aria-relevant")(`aria-relevant`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-required`)) __obj.updateDynamic("aria-required")(`aria-required`.asInstanceOf[js.Any])
-    if (`aria-roledescription` != null) __obj.updateDynamic("aria-roledescription")(`aria-roledescription`.asInstanceOf[js.Any])
-    if (`aria-rowcount` != null) __obj.updateDynamic("aria-rowcount")(`aria-rowcount`.asInstanceOf[js.Any])
-    if (`aria-rowindex` != null) __obj.updateDynamic("aria-rowindex")(`aria-rowindex`.asInstanceOf[js.Any])
-    if (`aria-rowspan` != null) __obj.updateDynamic("aria-rowspan")(`aria-rowspan`.asInstanceOf[js.Any])
-    if (!js.isUndefined(`aria-selected`)) __obj.updateDynamic("aria-selected")(`aria-selected`.asInstanceOf[js.Any])
-    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
-    if (`aria-sort` != null) __obj.updateDynamic("aria-sort")(`aria-sort`.asInstanceOf[js.Any])
-    if (`aria-valuemax` != null) __obj.updateDynamic("aria-valuemax")(`aria-valuemax`.asInstanceOf[js.Any])
-    if (`aria-valuemin` != null) __obj.updateDynamic("aria-valuemin")(`aria-valuemin`.asInstanceOf[js.Any])
-    if (`aria-valuenow` != null) __obj.updateDynamic("aria-valuenow")(`aria-valuenow`.asInstanceOf[js.Any])
-    if (`aria-valuetext` != null) __obj.updateDynamic("aria-valuetext")(`aria-valuetext`.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearIcon != null) __obj.updateDynamic("clearIcon")(clearIcon.rawNode.asInstanceOf[js.Any])
-    if (components != null) __obj.updateDynamic("components")(components.asInstanceOf[js.Any])
-    if (dateRender != null) __obj.updateDynamic("dateRender")(js.Any.fromFunction2((t0: DateType, t1: DateType) => dateRender(t0, t1).runNow()))
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (defaultOpenValue != null) __obj.updateDynamic("defaultOpenValue")(defaultOpenValue.asInstanceOf[js.Any])
-    if (defaultPickerValue != null) __obj.updateDynamic("defaultPickerValue")(defaultPickerValue.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1((t0: DateType) => disabledDate(t0).runNow()))
-    disabledHours.foreach(p => __obj.updateDynamic("disabledHours")(p.toJsFn))
-    if (disabledMinutes != null) __obj.updateDynamic("disabledMinutes")(js.Any.fromFunction1((t0: /* hour */ scala.Double) => disabledMinutes(t0).runNow()))
-    if (disabledSeconds != null) __obj.updateDynamic("disabledSeconds")(js.Any.fromFunction2((t0: /* hour */ scala.Double, t1: /* minute */ scala.Double) => disabledSeconds(t0, t1).runNow()))
-    if (disabledTime != null) __obj.updateDynamic("disabledTime")(js.Any.fromFunction2((t0: /* date */ typingsJapgolly.rcPicker.interfaceMod.EventValue[DateType], t1: /* type */ typingsJapgolly.rcPicker.rcPickerStrings.start | typingsJapgolly.rcPicker.rcPickerStrings.end) => disabledTime(t0, t1).runNow()))
-    if (dropdownAlign != null) __obj.updateDynamic("dropdownAlign")(dropdownAlign.asInstanceOf[js.Any])
-    if (dropdownClassName != null) __obj.updateDynamic("dropdownClassName")(dropdownClassName.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* node */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
-    if (!js.isUndefined(hideDisabledOptions)) __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions.asInstanceOf[js.Any])
-    if (hourStep != null) __obj.updateDynamic("hourStep")(hourStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputReadOnly)) __obj.updateDynamic("inputReadOnly")(inputReadOnly.asInstanceOf[js.Any])
-    if (minuteStep != null) __obj.updateDynamic("minuteStep")(minuteStep.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction2((t0: DateType, t1: /* locale */ typingsJapgolly.rcPicker.interfaceMod.Locale) => monthCellRender(t0, t1).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (nextIcon != null) __obj.updateDynamic("nextIcon")(nextIcon.rawNode.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onCalendarChange != null) __obj.updateDynamic("onCalendarChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onCalendarChange(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* formatString */ js.Tuple2[java.lang.String, java.lang.String]) => onChange(t0, t1).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onClick(t0).runNow()))
-    if (onContextMenu != null) __obj.updateDynamic("onContextMenu")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onContextMenu(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseDown(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseLeave(t0).runNow()))
-    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement]) => onMouseUp(t0).runNow()))
-    if (onOk != null) __obj.updateDynamic("onOk")(js.Any.fromFunction1((t0: /* dates */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType]) => onOk(t0).runNow()))
-    if (onOpenChange != null) __obj.updateDynamic("onOpenChange")(js.Any.fromFunction1((t0: /* open */ scala.Boolean) => onOpenChange(t0).runNow()))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: /* values */ typingsJapgolly.rcPicker.interfaceMod.RangeValue[DateType], t1: /* modes */ js.Tuple2[
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode, 
-  typingsJapgolly.rcPicker.interfaceMod.PanelMode]) => onPanelChange(t0, t1).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (pickerRef != null) __obj.updateDynamic("pickerRef")(pickerRef.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (popupStyle != null) __obj.updateDynamic("popupStyle")(popupStyle.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (prevIcon != null) __obj.updateDynamic("prevIcon")(prevIcon.rawNode.asInstanceOf[js.Any])
-    if (ranges != null) __obj.updateDynamic("ranges")(ranges.asInstanceOf[js.Any])
-    if (renderExtraFooter != null) __obj.updateDynamic("renderExtraFooter")(js.Any.fromFunction1((t0: /* mode */ typingsJapgolly.rcPicker.interfaceMod.PanelMode) => renderExtraFooter(t0).runNow()))
-    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
-    if (secondStep != null) __obj.updateDynamic("secondStep")(secondStep.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.rawNode.asInstanceOf[js.Any])
-    if (!js.isUndefined(showHour)) __obj.updateDynamic("showHour")(showHour.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinute)) __obj.updateDynamic("showMinute")(showMinute.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSecond)) __obj.updateDynamic("showSecond")(showSecond.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (suffixIcon != null) __obj.updateDynamic("suffixIcon")(suffixIcon.rawNode.asInstanceOf[js.Any])
-    if (superNextIcon != null) __obj.updateDynamic("superNextIcon")(superNextIcon.rawNode.asInstanceOf[js.Any])
-    if (superPrevIcon != null) __obj.updateDynamic("superPrevIcon")(superPrevIcon.rawNode.asInstanceOf[js.Any])
-    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (!js.isUndefined(use12Hours)) __obj.updateDynamic("use12Hours")(use12Hours.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rcPicker.rangePickerMod.RangePickerTimeProps[DateType], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.rcPicker.rangePickerMod.default[DateType]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rcPicker.rangePickerMod.RangePickerTimeProps[DateType]])(children: _*)
+  object RangePickerTimeProps {
+    
+    inline def apply[DateType](generateConfig: GenerateConfig[DateType], locale: Locale): Builder[DateType] = {
+      val __props = js.Dynamic.literal(generateConfig = generateConfig.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], picker = "time")
+      new Builder[DateType](js.Array(this.component, __props.asInstanceOf[typingsJapgolly.rcPicker.esRangePickerMod.RangePickerTimeProps[DateType]]))
+    }
+    
+    @JSImport("rc-picker", "RangePicker")
+    @js.native
+    val component: js.Object = js.native
+    
+    @scala.inline
+    open class Builder[DateType] (val args: js.Array[Any])
+      extends AnyVal
+         with StBuildingComponent[typingsJapgolly.rcPicker.mod.RangePicker[DateType]] {
+      
+      inline def activePickerIndex(value: `0` | `1`): this.type = set("activePickerIndex", value.asInstanceOf[js.Any])
+      
+      inline def allowClear(value: Boolean): this.type = set("allowClear", value.asInstanceOf[js.Any])
+      
+      inline def allowEmpty(value: js.Tuple2[Boolean, Boolean]): this.type = set("allowEmpty", value.asInstanceOf[js.Any])
+      
+      inline def `aria-activedescendant`(value: String): this.type = set("aria-activedescendant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-atomic`(value: Booleanish): this.type = set("aria-atomic", value.asInstanceOf[js.Any])
+      
+      inline def `aria-autocomplete`(value: none | `inline` | list | both): this.type = set("aria-autocomplete", value.asInstanceOf[js.Any])
+      
+      inline def `aria-busy`(value: Booleanish): this.type = set("aria-busy", value.asInstanceOf[js.Any])
+      
+      inline def `aria-checked`(value: Boolean | mixed): this.type = set("aria-checked", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colcount`(value: Double): this.type = set("aria-colcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colindex`(value: Double): this.type = set("aria-colindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-colspan`(value: Double): this.type = set("aria-colspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-controls`(value: String): this.type = set("aria-controls", value.asInstanceOf[js.Any])
+      
+      inline def `aria-current`(value: Boolean | page | step | location | date | time): this.type = set("aria-current", value.asInstanceOf[js.Any])
+      
+      inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-details`(value: String): this.type = set("aria-details", value.asInstanceOf[js.Any])
+      
+      inline def `aria-disabled`(value: Booleanish): this.type = set("aria-disabled", value.asInstanceOf[js.Any])
+      
+      inline def `aria-dropeffect`(value: none | copy | execute | link | move | popup): this.type = set("aria-dropeffect", value.asInstanceOf[js.Any])
+      
+      inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+      
+      inline def `aria-expanded`(value: Booleanish): this.type = set("aria-expanded", value.asInstanceOf[js.Any])
+      
+      inline def `aria-flowto`(value: String): this.type = set("aria-flowto", value.asInstanceOf[js.Any])
+      
+      inline def `aria-grabbed`(value: Booleanish): this.type = set("aria-grabbed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-haspopup`(value: Boolean | menu | listbox | tree | grid | dialog): this.type = set("aria-haspopup", value.asInstanceOf[js.Any])
+      
+      inline def `aria-hidden`(value: Booleanish): this.type = set("aria-hidden", value.asInstanceOf[js.Any])
+      
+      inline def `aria-invalid`(value: Boolean | grammar | spelling): this.type = set("aria-invalid", value.asInstanceOf[js.Any])
+      
+      inline def `aria-keyshortcuts`(value: String): this.type = set("aria-keyshortcuts", value.asInstanceOf[js.Any])
+      
+      inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+      
+      inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+      
+      inline def `aria-level`(value: Double): this.type = set("aria-level", value.asInstanceOf[js.Any])
+      
+      inline def `aria-live`(value: off | assertive | polite): this.type = set("aria-live", value.asInstanceOf[js.Any])
+      
+      inline def `aria-modal`(value: Booleanish): this.type = set("aria-modal", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiline`(value: Booleanish): this.type = set("aria-multiline", value.asInstanceOf[js.Any])
+      
+      inline def `aria-multiselectable`(value: Booleanish): this.type = set("aria-multiselectable", value.asInstanceOf[js.Any])
+      
+      inline def `aria-orientation`(value: horizontal | vertical): this.type = set("aria-orientation", value.asInstanceOf[js.Any])
+      
+      inline def `aria-owns`(value: String): this.type = set("aria-owns", value.asInstanceOf[js.Any])
+      
+      inline def `aria-placeholder`(value: String): this.type = set("aria-placeholder", value.asInstanceOf[js.Any])
+      
+      inline def `aria-posinset`(value: Double): this.type = set("aria-posinset", value.asInstanceOf[js.Any])
+      
+      inline def `aria-pressed`(value: Boolean | mixed): this.type = set("aria-pressed", value.asInstanceOf[js.Any])
+      
+      inline def `aria-readonly`(value: Booleanish): this.type = set("aria-readonly", value.asInstanceOf[js.Any])
+      
+      inline def `aria-relevant`(
+        value: additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
+      ): this.type = set("aria-relevant", value.asInstanceOf[js.Any])
+      
+      inline def `aria-required`(value: Booleanish): this.type = set("aria-required", value.asInstanceOf[js.Any])
+      
+      inline def `aria-roledescription`(value: String): this.type = set("aria-roledescription", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowcount`(value: Double): this.type = set("aria-rowcount", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowindex`(value: Double): this.type = set("aria-rowindex", value.asInstanceOf[js.Any])
+      
+      inline def `aria-rowspan`(value: Double): this.type = set("aria-rowspan", value.asInstanceOf[js.Any])
+      
+      inline def `aria-selected`(value: Booleanish): this.type = set("aria-selected", value.asInstanceOf[js.Any])
+      
+      inline def `aria-setsize`(value: Double): this.type = set("aria-setsize", value.asInstanceOf[js.Any])
+      
+      inline def `aria-sort`(value: none | ascending | descending | other): this.type = set("aria-sort", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemax`(value: Double): this.type = set("aria-valuemax", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuemin`(value: Double): this.type = set("aria-valuemin", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuenow`(value: Double): this.type = set("aria-valuenow", value.asInstanceOf[js.Any])
+      
+      inline def `aria-valuetext`(value: String): this.type = set("aria-valuetext", value.asInstanceOf[js.Any])
+      
+      inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+      
+      inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+      
+      inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+      
+      inline def clearIcon(value: VdomNode): this.type = set("clearIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def clearIconNull: this.type = set("clearIcon", null)
+      
+      inline def clearIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("clearIcon", js.Array(value*))
+      
+      inline def clearIconVdomElement(value: VdomElement): this.type = set("clearIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def components(value: Components): this.type = set("components", value.asInstanceOf[js.Any])
+      
+      inline def dateRender(value: (DateType, DateType, /* info */ RangeInfo) => Node): this.type = set("dateRender", js.Any.fromFunction3(value))
+      
+      inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+      
+      inline def defaultOpenValue(value: DateType): this.type = set("defaultOpenValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultPickerValue(value: js.Tuple2[DateType, DateType]): this.type = set("defaultPickerValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValue(value: RangeValue[DateType]): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+      
+      inline def defaultValueNull: this.type = set("defaultValue", null)
+      
+      inline def direction(value: ltr | rtl): this.type = set("direction", value.asInstanceOf[js.Any])
+      
+      inline def disabled(value: Boolean | (js.Tuple2[Boolean, Boolean])): this.type = set("disabled", value.asInstanceOf[js.Any])
+      
+      inline def disabledDate(value: DateType => Boolean): this.type = set("disabledDate", js.Any.fromFunction1(value))
+      
+      inline def disabledHours(value: CallbackTo[js.Array[Double]]): this.type = set("disabledHours", value.toJsFn)
+      
+      inline def disabledMinutes(value: /* hour */ Double => js.Array[Double]): this.type = set("disabledMinutes", js.Any.fromFunction1(value))
+      
+      inline def disabledSeconds(value: (/* hour */ Double, /* minute */ Double) => js.Array[Double]): this.type = set("disabledSeconds", js.Any.fromFunction2(value))
+      
+      inline def disabledTime(value: (/* date */ EventValue[DateType], /* type */ RangeType) => DisabledTimes): this.type = set("disabledTime", js.Any.fromFunction2(value))
+      
+      inline def dropdownAlign(value: AlignType): this.type = set("dropdownAlign", value.asInstanceOf[js.Any])
+      
+      inline def dropdownClassName(value: String): this.type = set("dropdownClassName", value.asInstanceOf[js.Any])
+      
+      inline def format(value: String | CustomFormat[DateType] | (js.Array[String | CustomFormat[DateType]])): this.type = set("format", value.asInstanceOf[js.Any])
+      
+      inline def formatFunction1(value: DateType => String): this.type = set("format", js.Any.fromFunction1(value))
+      
+      inline def formatVarargs(value: (String | CustomFormat[DateType])*): this.type = set("format", js.Array(value*))
+      
+      inline def getPopupContainer(value: /* node */ HTMLElement => HTMLElement): this.type = set("getPopupContainer", js.Any.fromFunction1(value))
+      
+      inline def hideDisabledOptions(value: Boolean): this.type = set("hideDisabledOptions", value.asInstanceOf[js.Any])
+      
+      inline def hourStep(value: Double): this.type = set("hourStep", value.asInstanceOf[js.Any])
+      
+      inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+      
+      inline def inputReadOnly(value: Boolean): this.type = set("inputReadOnly", value.asInstanceOf[js.Any])
+      
+      inline def inputRender(value: /* props */ InputHTMLAttributes[HTMLInputElement] => Node): this.type = set("inputRender", js.Any.fromFunction1(value))
+      
+      inline def minuteStep(value: Double): this.type = set("minuteStep", value.asInstanceOf[js.Any])
+      
+      inline def mode(value: js.Tuple2[PanelMode, PanelMode]): this.type = set("mode", value.asInstanceOf[js.Any])
+      
+      inline def monthCellRender(value: (DateType, /* locale */ Locale) => Node): this.type = set("monthCellRender", js.Any.fromFunction2(value))
+      
+      inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+      
+      inline def nextIcon(value: VdomNode): this.type = set("nextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def nextIconNull: this.type = set("nextIcon", null)
+      
+      inline def nextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("nextIcon", js.Array(value*))
+      
+      inline def nextIconVdomElement(value: VdomElement): this.type = set("nextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def onBlur(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onBlur", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onCalendarChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String], /* info */ RangeInfo) => Callback
+      ): this.type = set("onCalendarChange", js.Any.fromFunction3((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String], t2: /* info */ RangeInfo) => (value(t0, t1, t2)).runNow()))
+      
+      inline def onChange(
+        value: (/* values */ RangeValue[DateType], /* formatString */ js.Tuple2[String, String]) => Callback
+      ): this.type = set("onChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* formatString */ js.Tuple2[String, String]) => (value(t0, t1)).runNow()))
+      
+      inline def onClick(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onContextMenu(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onContextMenu", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onFocus(value: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element] => Callback): this.type = set("onFocus", js.Any.fromFunction1((t0: ReactFocusEventFrom[HTMLInputElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onKeyDown(
+        value: (/* event */ ReactKeyboardEventFrom[HTMLInputElement], /* preventDefault */ js.Function0[Unit]) => Callback
+      ): this.type = set("onKeyDown", js.Any.fromFunction2((t0: /* event */ ReactKeyboardEventFrom[HTMLInputElement], t1: /* preventDefault */ js.Function0[Unit]) => (value(t0, t1)).runNow()))
+      
+      inline def onMouseDown(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseDown", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseEnter(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseEnter", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseLeave(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseLeave", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onMouseUp(value: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element] => Callback): this.type = set("onMouseUp", js.Any.fromFunction1((t0: ReactMouseEventFrom[HTMLDivElement & org.scalajs.dom.Element]) => value(t0).runNow()))
+      
+      inline def onOk(value: /* dates */ RangeValue[DateType] => Callback): this.type = set("onOk", js.Any.fromFunction1((t0: /* dates */ RangeValue[DateType]) => value(t0).runNow()))
+      
+      inline def onOpenChange(value: /* open */ Boolean => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+      
+      inline def onPanelChange(
+        value: (/* values */ RangeValue[DateType], /* modes */ js.Tuple2[PanelMode, PanelMode]) => Callback
+      ): this.type = set("onPanelChange", js.Any.fromFunction2((t0: /* values */ RangeValue[DateType], t1: /* modes */ js.Tuple2[PanelMode, PanelMode]) => (value(t0, t1)).runNow()))
+      
+      inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+      
+      inline def order(value: Boolean): this.type = set("order", value.asInstanceOf[js.Any])
+      
+      inline def panelRender(value: /* originPanel */ Node => Node): this.type = set("panelRender", js.Any.fromFunction1(value))
+      
+      inline def pickerRef(value: MutableRefObject[PickerRefConfig]): this.type = set("pickerRef", value.asInstanceOf[js.Any])
+      
+      inline def placeholder(value: js.Tuple2[String, String]): this.type = set("placeholder", value.asInstanceOf[js.Any])
+      
+      inline def popupStyle(value: CSSProperties): this.type = set("popupStyle", value.asInstanceOf[js.Any])
+      
+      inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+      
+      inline def prevIcon(value: VdomNode): this.type = set("prevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def prevIconNull: this.type = set("prevIcon", null)
+      
+      inline def prevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("prevIcon", js.Array(value*))
+      
+      inline def prevIconVdomElement(value: VdomElement): this.type = set("prevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def ranges(
+        value: Record[
+              String, 
+              (Exclude[RangeValue[DateType], Null]) | (js.Function0[Exclude[RangeValue[DateType], Null]])
+            ]
+      ): this.type = set("ranges", value.asInstanceOf[js.Any])
+      
+      inline def renderExtraFooter(value: /* mode */ PanelMode => Node): this.type = set("renderExtraFooter", js.Any.fromFunction1(value))
+      
+      inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+      
+      inline def secondStep(value: Double): this.type = set("secondStep", value.asInstanceOf[js.Any])
+      
+      inline def separator(value: VdomNode): this.type = set("separator", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def separatorNull: this.type = set("separator", null)
+      
+      inline def separatorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("separator", js.Array(value*))
+      
+      inline def separatorVdomElement(value: VdomElement): this.type = set("separator", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def showHour(value: Boolean): this.type = set("showHour", value.asInstanceOf[js.Any])
+      
+      inline def showMinute(value: Boolean): this.type = set("showMinute", value.asInstanceOf[js.Any])
+      
+      inline def showNow(value: Boolean): this.type = set("showNow", value.asInstanceOf[js.Any])
+      
+      inline def showSecond(value: Boolean): this.type = set("showSecond", value.asInstanceOf[js.Any])
+      
+      inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+      
+      inline def suffixIcon(value: VdomNode): this.type = set("suffixIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def suffixIconNull: this.type = set("suffixIcon", null)
+      
+      inline def suffixIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("suffixIcon", js.Array(value*))
+      
+      inline def suffixIconVdomElement(value: VdomElement): this.type = set("suffixIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superNextIcon(value: VdomNode): this.type = set("superNextIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superNextIconNull: this.type = set("superNextIcon", null)
+      
+      inline def superNextIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superNextIcon", js.Array(value*))
+      
+      inline def superNextIconVdomElement(value: VdomElement): this.type = set("superNextIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def superPrevIcon(value: VdomNode): this.type = set("superPrevIcon", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def superPrevIconNull: this.type = set("superPrevIcon", null)
+      
+      inline def superPrevIconVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("superPrevIcon", js.Array(value*))
+      
+      inline def superPrevIconVdomElement(value: VdomElement): this.type = set("superPrevIcon", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def tabIndex(value: Double): this.type = set("tabIndex", value.asInstanceOf[js.Any])
+      
+      inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+      
+      inline def use12Hours(value: Boolean): this.type = set("use12Hours", value.asInstanceOf[js.Any])
+      
+      inline def value(value: RangeValue[DateType]): this.type = set("value", value.asInstanceOf[js.Any])
+      
+      inline def valueNull: this.type = set("value", null)
+    }
+    
+    def withProps[DateType](p: typingsJapgolly.rcPicker.esRangePickerMod.RangePickerTimeProps[DateType]): Builder[DateType] = new Builder[DateType](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("rc-picker/lib/RangePicker", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
-  
 }
-

@@ -1,37 +1,29 @@
 package typingsJapgolly.kendoUi.kendo.data
 
-import typingsJapgolly.kendoUi.TypeofModel
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.kendoUi.anon.TypeofModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceSchemaWithConstructorModel extends DataSourceSchema {
+trait DataSourceSchemaWithConstructorModel
+  extends StObject
+     with DataSourceSchema {
+  
   @JSName("model")
-  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel] = js.undefined
+  var model_DataSourceSchemaWithConstructorModel: js.UndefOr[TypeofModel & (Instantiable1[/* data */ js.UndefOr[Any], Model])] = js.undefined
 }
-
 object DataSourceSchemaWithConstructorModel {
-  @scala.inline
-  def apply(
-    aggregates: js.Any = null,
-    data: js.Any = null,
-    errors: js.Any = null,
-    groups: js.Any = null,
-    model: TypeofModel = null,
-    parse: js.Function = null,
-    total: js.Any = null,
-    `type`: String = null
-  ): DataSourceSchemaWithConstructorModel = {
+  
+  inline def apply(): DataSourceSchemaWithConstructorModel = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (model != null) __obj.updateDynamic("model")(model.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSchemaWithConstructorModel]
   }
+  
+  extension [Self <: DataSourceSchemaWithConstructorModel](x: Self) {
+    
+    inline def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+  }
 }
-

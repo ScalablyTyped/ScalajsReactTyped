@@ -1,53 +1,52 @@
 package typingsJapgolly.opentracing
 
-import typingsJapgolly.opentracing.binaryCarrierMod.default
-import typingsJapgolly.opentracing.opentracingStrings.binary
-import typingsJapgolly.opentracing.opentracingStrings.child_of
-import typingsJapgolly.opentracing.opentracingStrings.client
-import typingsJapgolly.opentracing.opentracingStrings.component
-import typingsJapgolly.opentracing.opentracingStrings.consumer
-import typingsJapgolly.opentracing.opentracingStrings.dbDotinstance
-import typingsJapgolly.opentracing.opentracingStrings.dbDotstatement
-import typingsJapgolly.opentracing.opentracingStrings.dbDottype
-import typingsJapgolly.opentracing.opentracingStrings.dbDotuser
-import typingsJapgolly.opentracing.opentracingStrings.error
-import typingsJapgolly.opentracing.opentracingStrings.follows_from
-import typingsJapgolly.opentracing.opentracingStrings.httpDotmethod
-import typingsJapgolly.opentracing.opentracingStrings.httpDotstatus_code
-import typingsJapgolly.opentracing.opentracingStrings.httpDoturl
-import typingsJapgolly.opentracing.opentracingStrings.http_headers
-import typingsJapgolly.opentracing.opentracingStrings.message_busDotdestination
-import typingsJapgolly.opentracing.opentracingStrings.peerDotaddress
-import typingsJapgolly.opentracing.opentracingStrings.peerDothostname
-import typingsJapgolly.opentracing.opentracingStrings.peerDotipv4
-import typingsJapgolly.opentracing.opentracingStrings.peerDotipv6
-import typingsJapgolly.opentracing.opentracingStrings.peerDotport
-import typingsJapgolly.opentracing.opentracingStrings.peerDotservice
-import typingsJapgolly.opentracing.opentracingStrings.producer
-import typingsJapgolly.opentracing.opentracingStrings.samplingDotpriority
-import typingsJapgolly.opentracing.opentracingStrings.server
-import typingsJapgolly.opentracing.opentracingStrings.spanDotkind
-import typingsJapgolly.opentracing.opentracingStrings.text_map
+import typingsJapgolly.opentracing.libBinaryCarrierMod.default
 import typingsJapgolly.std.ArrayLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("opentracing", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("opentracing", JSImport.Namespace)
   @js.native
-  class BinaryCarrier protected () extends default {
+  val ^ : js.Any = js.native
+  
+  @JSImport("opentracing", "BinaryCarrier")
+  @js.native
+  open class BinaryCarrier protected () extends default {
     def this(buffer: ArrayLike[Double]) = this()
   }
   
+  @JSImport("opentracing", "FORMAT_BINARY")
   @js.native
-  class MockTracer ()
-    extends typingsJapgolly.opentracing.mockTracerMod.MockTracer
+  val FORMAT_BINARY: /* "binary" */ String = js.native
   
+  @JSImport("opentracing", "FORMAT_HTTP_HEADERS")
   @js.native
-  class Reference protected ()
-    extends typingsJapgolly.opentracing.referenceMod.default {
+  val FORMAT_HTTP_HEADERS: /* "http_headers" */ String = js.native
+  
+  @JSImport("opentracing", "FORMAT_TEXT_MAP")
+  @js.native
+  val FORMAT_TEXT_MAP: /* "text_map" */ String = js.native
+  
+  @JSImport("opentracing", "MockTracer")
+  @js.native
+  open class MockTracer ()
+    extends typingsJapgolly.opentracing.libMockTracerMod.MockTracer
+  
+  @JSImport("opentracing", "REFERENCE_CHILD_OF")
+  @js.native
+  val REFERENCE_CHILD_OF: /* "child_of" */ String = js.native
+  
+  @JSImport("opentracing", "REFERENCE_FOLLOWS_FROM")
+  @js.native
+  val REFERENCE_FOLLOWS_FROM: /* "follows_from" */ String = js.native
+  
+  @JSImport("opentracing", "Reference")
+  @js.native
+  open class Reference protected ()
+    extends typingsJapgolly.opentracing.libReferenceMod.default {
     /**
       * Initialize a new Reference instance.
       *
@@ -57,58 +56,123 @@ object mod extends js.Object {
       *        to. As a convenience, a Span instance may be passed in instead
       *        (in which case its .context() is used here).
       */
-    def this(`type`: String, referencedContext: typingsJapgolly.opentracing.spanContextMod.default) = this()
-    def this(`type`: String, referencedContext: typingsJapgolly.opentracing.spanMod.default) = this()
+    def this(`type`: String, referencedContext: typingsJapgolly.opentracing.libSpanContextMod.default) = this()
+    def this(`type`: String, referencedContext: typingsJapgolly.opentracing.libSpanMod.default) = this()
   }
   
+  @JSImport("opentracing", "Span")
   @js.native
-  class Span ()
-    extends typingsJapgolly.opentracing.spanMod.Span
+  open class Span ()
+    extends typingsJapgolly.opentracing.libSpanMod.default
   
+  @JSImport("opentracing", "SpanContext")
   @js.native
-  class SpanContext ()
-    extends typingsJapgolly.opentracing.spanContextMod.SpanContext
+  open class SpanContext ()
+    extends typingsJapgolly.opentracing.libSpanContextMod.default
   
-  @js.native
-  class Tracer ()
-    extends typingsJapgolly.opentracing.tracerMod.Tracer
-  
-  val FORMAT_BINARY: binary = js.native
-  val FORMAT_HTTP_HEADERS: http_headers = js.native
-  val FORMAT_TEXT_MAP: text_map = js.native
-  val REFERENCE_CHILD_OF: child_of = js.native
-  val REFERENCE_FOLLOWS_FROM: follows_from = js.native
-  def childOf(spanContext: typingsJapgolly.opentracing.spanContextMod.default): typingsJapgolly.opentracing.referenceMod.default = js.native
-  def childOf(spanContext: typingsJapgolly.opentracing.spanMod.default): typingsJapgolly.opentracing.referenceMod.default = js.native
-  def followsFrom(spanContext: typingsJapgolly.opentracing.spanContextMod.default): typingsJapgolly.opentracing.referenceMod.default = js.native
-  def followsFrom(spanContext: typingsJapgolly.opentracing.spanMod.default): typingsJapgolly.opentracing.referenceMod.default = js.native
-  def globalTracer(): typingsJapgolly.opentracing.tracerMod.default = js.native
-  def initGlobalTracer(tracer: typingsJapgolly.opentracing.tracerMod.default): Unit = js.native
-  @js.native
-  object Tags extends js.Object {
-    val COMPONENT: component = js.native
-    val DB_INSTANCE: dbDotinstance = js.native
-    val DB_STATEMENT: dbDotstatement = js.native
-    val DB_TYPE: dbDottype = js.native
-    val DB_USER: dbDotuser = js.native
-    val ERROR: error = js.native
-    val HTTP_METHOD: httpDotmethod = js.native
-    val HTTP_STATUS_CODE: httpDotstatus_code = js.native
-    val HTTP_URL: httpDoturl = js.native
-    val MESSAGE_BUS_DESTINATION: message_busDotdestination = js.native
-    val PEER_ADDRESS: peerDotaddress = js.native
-    val PEER_HOSTNAME: peerDothostname = js.native
-    val PEER_HOST_IPV4: peerDotipv4 = js.native
-    val PEER_HOST_IPV6: peerDotipv6 = js.native
-    val PEER_PORT: peerDotport = js.native
-    val PEER_SERVICE: peerDotservice = js.native
-    val SAMPLING_PRIORITY: samplingDotpriority = js.native
-    val SPAN_KIND: spanDotkind = js.native
-    val SPAN_KIND_MESSAGING_CONSUMER: consumer = js.native
-    val SPAN_KIND_MESSAGING_PRODUCER: producer = js.native
-    val SPAN_KIND_RPC_CLIENT: client = js.native
-    val SPAN_KIND_RPC_SERVER: server = js.native
+  object Tags {
+    
+    @JSImport("opentracing", "Tags.COMPONENT")
+    @js.native
+    val COMPONENT: /* "component" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.DB_INSTANCE")
+    @js.native
+    val DB_INSTANCE: /* "db.instance" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.DB_STATEMENT")
+    @js.native
+    val DB_STATEMENT: /* "db.statement" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.DB_TYPE")
+    @js.native
+    val DB_TYPE: /* "db.type" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.DB_USER")
+    @js.native
+    val DB_USER: /* "db.user" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.ERROR")
+    @js.native
+    val ERROR: /* "error" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.HTTP_METHOD")
+    @js.native
+    val HTTP_METHOD: /* "http.method" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.HTTP_STATUS_CODE")
+    @js.native
+    val HTTP_STATUS_CODE: /* "http.status_code" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.HTTP_URL")
+    @js.native
+    val HTTP_URL: /* "http.url" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.MESSAGE_BUS_DESTINATION")
+    @js.native
+    val MESSAGE_BUS_DESTINATION: /* "message_bus.destination" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_ADDRESS")
+    @js.native
+    val PEER_ADDRESS: /* "peer.address" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_HOSTNAME")
+    @js.native
+    val PEER_HOSTNAME: /* "peer.hostname" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_HOST_IPV4")
+    @js.native
+    val PEER_HOST_IPV4: /* "peer.ipv4" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_HOST_IPV6")
+    @js.native
+    val PEER_HOST_IPV6: /* "peer.ipv6" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_PORT")
+    @js.native
+    val PEER_PORT: /* "peer.port" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.PEER_SERVICE")
+    @js.native
+    val PEER_SERVICE: /* "peer.service" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SAMPLING_PRIORITY")
+    @js.native
+    val SAMPLING_PRIORITY: /* "sampling.priority" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SPAN_KIND")
+    @js.native
+    val SPAN_KIND: /* "span.kind" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SPAN_KIND_MESSAGING_CONSUMER")
+    @js.native
+    val SPAN_KIND_MESSAGING_CONSUMER: /* "consumer" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SPAN_KIND_MESSAGING_PRODUCER")
+    @js.native
+    val SPAN_KIND_MESSAGING_PRODUCER: /* "producer" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SPAN_KIND_RPC_CLIENT")
+    @js.native
+    val SPAN_KIND_RPC_CLIENT: /* "client" */ String = js.native
+    
+    @JSImport("opentracing", "Tags.SPAN_KIND_RPC_SERVER")
+    @js.native
+    val SPAN_KIND_RPC_SERVER: /* "server" */ String = js.native
   }
   
+  @JSImport("opentracing", "Tracer")
+  @js.native
+  open class Tracer ()
+    extends typingsJapgolly.opentracing.libTracerMod.Tracer
+  
+  inline def childOf(spanContext: typingsJapgolly.opentracing.libSpanContextMod.default): typingsJapgolly.opentracing.libReferenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("childOf")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.opentracing.libReferenceMod.default]
+  inline def childOf(spanContext: typingsJapgolly.opentracing.libSpanMod.default): typingsJapgolly.opentracing.libReferenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("childOf")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.opentracing.libReferenceMod.default]
+  
+  inline def followsFrom(spanContext: typingsJapgolly.opentracing.libSpanContextMod.default): typingsJapgolly.opentracing.libReferenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("followsFrom")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.opentracing.libReferenceMod.default]
+  inline def followsFrom(spanContext: typingsJapgolly.opentracing.libSpanMod.default): typingsJapgolly.opentracing.libReferenceMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("followsFrom")(spanContext.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.opentracing.libReferenceMod.default]
+  
+  inline def globalTracer(): typingsJapgolly.opentracing.libTracerMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("globalTracer")().asInstanceOf[typingsJapgolly.opentracing.libTracerMod.default]
+  
+  inline def initGlobalTracer(tracer: typingsJapgolly.opentracing.libTracerMod.default): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initGlobalTracer")(tracer.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

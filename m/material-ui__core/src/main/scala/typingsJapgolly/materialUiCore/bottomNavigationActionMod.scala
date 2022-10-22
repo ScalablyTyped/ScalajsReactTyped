@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.bottomNavigationActionBottomNavigationActionMod.BottomNavigationActionTypeMap
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.button
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/BottomNavigationAction", JSImport.Namespace)
-@js.native
-object bottomNavigationActionMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[BottomNavigationActionProps, ComponentState, js.Any] {
-    def this(props: BottomNavigationActionProps) = this()
-    def this(props: BottomNavigationActionProps, context: js.Any) = this()
-  }
+object bottomNavigationActionMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Bottom Navigation](https://mui.com/components/bottom-navigation/)
+    *
+    * API:
+    *
+    * - [BottomNavigationAction API](https://mui.com/api/bottom-navigation-action/)
+    * - inherits [ButtonBase API](https://mui.com/api/button-base/)
+    */
+  @JSImport("@material-ui/core/BottomNavigationAction", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[BottomNavigationActionProps]]
+  val default: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]] = js.native
   
+  type _To = ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]]
+  
+  /* This means you don't have to write `default`, but can instead just say `bottomNavigationActionMod.foo` */
+  override def _to: ExtendButtonBase[BottomNavigationActionTypeMap[js.Object, button]] = default
 }
-

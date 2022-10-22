@@ -1,51 +1,55 @@
 package typingsJapgolly.reactIntl.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ElementType
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.react.mod.ReactNodeArray
-import typingsJapgolly.reactIntl.messageMod.Props
-import typingsJapgolly.reactIntl.messageMod.default
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.intlMessageformat.srcFormattersMod.FormatXMLElementFn
+import typingsJapgolly.react.mod.ReactFragment
+import typingsJapgolly.react.mod.ReactPortal
+import typingsJapgolly.reactIntl.libSrcComponentsMessageMod.Props
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Message {
-  def apply[V /* <: Record[String, js.Any] */](
-    defaultMessage: String = null,
-    description: String | js.Object = null,
-    id: String | Double = null,
-    tagName: ElementType = null,
-    values: V = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* nodes */ ReactNodeArray => CallbackTo[Node] = null
-  ): UnmountedWithRoot[Props[V], default[V], Unit, Props[V]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* nodes */ typingsJapgolly.react.mod.ReactNodeArray) => children(t0).runNow()))
-    if (defaultMessage != null) __obj.updateDynamic("defaultMessage")(defaultMessage.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactIntl.messageMod.Props[V], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactIntl.messageMod.default[V]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactIntl.messageMod.Props[V]])
-  }
-  @JSImport("react-intl/lib/components/message", JSImport.Default)
+  @JSImport("react-intl/lib/src/components/message", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: /* nodes */ js.Array[Node] => Element | Null): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def ignoreTag(value: Boolean): this.type = set("ignoreTag", value.asInstanceOf[js.Any])
+    
+    inline def tagName(value: ElementType): this.type = set("tagName", value.asInstanceOf[js.Any])
+    
+    inline def values(
+      value: Record[
+          String, 
+          js.UndefOr[
+            String | Double | Boolean | Element | ReactFragment | ReactPortal | js.Date | (FormatXMLElementFn[Node, Node]) | Null
+          ]
+        ]
+    ): this.type = set("values", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Message.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(
+    p: Props[
+      Record[
+        String, 
+        js.UndefOr[
+          String | Double | Boolean | Element | ReactFragment | ReactPortal | js.Date | (FormatXMLElementFn[Node, Node]) | Null
+        ]
+      ]
+    ]
+  ): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

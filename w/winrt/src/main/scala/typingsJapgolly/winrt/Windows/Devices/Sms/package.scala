@@ -1,14 +1,10 @@
-package typingsJapgolly.winrt.Windows.Devices
+package typingsJapgolly.winrt.Windows.Devices.Sms
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Sms {
-  type SmsDeviceStatusChangedEventHandler = js.Function1[/* sender */ typingsJapgolly.winrt.Windows.Devices.Sms.SmsDevice, scala.Unit]
-  type SmsMessageReceivedEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.Devices.Sms.SmsDevice, 
-    /* e */ typingsJapgolly.winrt.Windows.Devices.Sms.SmsMessageReceivedEventArgs, 
-    scala.Unit
-  ]
-}
+
+type SmsDeviceStatusChangedEventHandler = js.Function1[/* sender */ SmsDevice, Unit]
+
+type SmsMessageReceivedEventHandler = js.Function2[/* sender */ SmsDevice, /* e */ SmsMessageReceivedEventArgs, Unit]

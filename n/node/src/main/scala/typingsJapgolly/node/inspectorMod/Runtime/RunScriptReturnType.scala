@@ -1,26 +1,34 @@
 package typingsJapgolly.node.inspectorMod.Runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunScriptReturnType extends js.Object {
+trait RunScriptReturnType extends StObject {
+  
   /**
     * Exception details.
     */
   var exceptionDetails: js.UndefOr[ExceptionDetails] = js.undefined
+  
   /**
     * Run result.
     */
   var result: RemoteObject
 }
-
 object RunScriptReturnType {
-  @scala.inline
-  def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): RunScriptReturnType = {
+  
+  inline def apply(result: RemoteObject): RunScriptReturnType = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
-    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunScriptReturnType]
   }
+  
+  extension [Self <: RunScriptReturnType](x: Self) {
+    
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    
+    inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+  }
 }
-

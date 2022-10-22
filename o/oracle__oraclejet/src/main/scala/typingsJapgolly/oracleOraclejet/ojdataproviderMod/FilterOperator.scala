@@ -1,23 +1,28 @@
 package typingsJapgolly.oracleOraclejet.ojdataproviderMod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.AttributeFilterOperator.AttributeOperator
 import typingsJapgolly.oracleOraclejet.ojdataproviderMod.CompoundFilterOperator.CompoundOperator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterOperator[D] extends js.Object {
+trait FilterOperator[D] extends StObject {
+  
+  def filter(data: js.Array[Any]): js.Array[Any]
+  
   var op: AttributeOperator | CompoundOperator
-  def filter(data: js.Array[_]): js.Array[_]
 }
-
 object FilterOperator {
-  @scala.inline
-  def apply[D](filter: js.Array[js.Any] => CallbackTo[js.Array[js.Any]], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
-    val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any])
-    __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: js.Array[js.Any]) => filter(t0).runNow()))
+  
+  inline def apply[D](filter: js.Array[Any] => js.Array[Any], op: AttributeOperator | CompoundOperator): FilterOperator[D] = {
+    val __obj = js.Dynamic.literal(filter = js.Any.fromFunction1(filter), op = op.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperator[D]]
   }
+  
+  extension [Self <: FilterOperator[?], D](x: Self & FilterOperator[D]) {
+    
+    inline def setFilter(value: js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    
+    inline def setOp(value: AttributeOperator | CompoundOperator): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+  }
 }
-

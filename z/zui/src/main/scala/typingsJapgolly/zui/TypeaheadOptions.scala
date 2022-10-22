@@ -1,40 +1,60 @@
 package typingsJapgolly.zui
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypeaheadOptions extends js.Object {
-  var highlighter: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
+trait TypeaheadOptions extends StObject {
+  
+  var highlighter: js.UndefOr[js.Function1[/* item */ Any, String]] = js.undefined
+  
   var items: js.UndefOr[Double] = js.undefined
-  var matcher: js.UndefOr[js.Function1[/* item */ js.Any, Boolean]] = js.undefined
+  
+  var matcher: js.UndefOr[js.Function1[/* item */ Any, Boolean]] = js.undefined
+  
   var minLength: js.UndefOr[Double] = js.undefined
-  var sorter: js.UndefOr[js.Function1[/* items */ js.Array[_], js.Array[_]]] = js.undefined
-  var source: js.UndefOr[js.Any] = js.undefined
-  var updater: js.UndefOr[js.Function1[/* item */ js.Any, _]] = js.undefined
+  
+  var sorter: js.UndefOr[js.Function1[/* items */ js.Array[Any], js.Array[Any]]] = js.undefined
+  
+  var source: js.UndefOr[Any] = js.undefined
+  
+  var updater: js.UndefOr[js.Function1[/* item */ Any, Any]] = js.undefined
 }
-
 object TypeaheadOptions {
-  @scala.inline
-  def apply(
-    highlighter: /* item */ js.Any => CallbackTo[String] = null,
-    items: Int | Double = null,
-    matcher: /* item */ js.Any => CallbackTo[Boolean] = null,
-    minLength: Int | Double = null,
-    sorter: /* items */ js.Array[js.Any] => CallbackTo[js.Array[js.Any]] = null,
-    source: js.Any = null,
-    updater: /* item */ js.Any => CallbackTo[js.Any] = null
-  ): TypeaheadOptions = {
+  
+  inline def apply(): TypeaheadOptions = {
     val __obj = js.Dynamic.literal()
-    if (highlighter != null) __obj.updateDynamic("highlighter")(js.Any.fromFunction1((t0: /* item */ js.Any) => highlighter(t0).runNow()))
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (matcher != null) __obj.updateDynamic("matcher")(js.Any.fromFunction1((t0: /* item */ js.Any) => matcher(t0).runNow()))
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (sorter != null) __obj.updateDynamic("sorter")(js.Any.fromFunction1((t0: /* items */ js.Array[js.Any]) => sorter(t0).runNow()))
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (updater != null) __obj.updateDynamic("updater")(js.Any.fromFunction1((t0: /* item */ js.Any) => updater(t0).runNow()))
     __obj.asInstanceOf[TypeaheadOptions]
   }
+  
+  extension [Self <: TypeaheadOptions](x: Self) {
+    
+    inline def setHighlighter(value: /* item */ Any => String): Self = StObject.set(x, "highlighter", js.Any.fromFunction1(value))
+    
+    inline def setHighlighterUndefined: Self = StObject.set(x, "highlighter", js.undefined)
+    
+    inline def setItems(value: Double): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setMatcher(value: /* item */ Any => Boolean): Self = StObject.set(x, "matcher", js.Any.fromFunction1(value))
+    
+    inline def setMatcherUndefined: Self = StObject.set(x, "matcher", js.undefined)
+    
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setSorter(value: /* items */ js.Array[Any] => js.Array[Any]): Self = StObject.set(x, "sorter", js.Any.fromFunction1(value))
+    
+    inline def setSorterUndefined: Self = StObject.set(x, "sorter", js.undefined)
+    
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setUpdater(value: /* item */ Any => Any): Self = StObject.set(x, "updater", js.Any.fromFunction1(value))
+    
+    inline def setUpdaterUndefined: Self = StObject.set(x, "updater", js.undefined)
+  }
 }
-

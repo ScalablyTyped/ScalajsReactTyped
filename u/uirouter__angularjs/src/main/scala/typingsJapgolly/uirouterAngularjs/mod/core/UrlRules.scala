@@ -1,14 +1,13 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.UrlRules")
 @js.native
-class UrlRules protected ()
+open class UrlRules protected ()
   extends typingsJapgolly.uirouterCore.mod.UrlRules {
-  /** @hidden */
-  def this(/** @hidden */ router: typingsJapgolly.uirouterCore.routerMod.UIRouter) = this()
+  /** @internal */
+  def this(/** @internal */ router: typingsJapgolly.uirouterCore.libRouterMod.UIRouter) = this()
 }
-

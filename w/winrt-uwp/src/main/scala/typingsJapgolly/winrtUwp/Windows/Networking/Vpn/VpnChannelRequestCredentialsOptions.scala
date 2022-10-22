@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.Vpn
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VpnChannelRequestCredentialsOptions extends js.Object
-
+sealed trait VpnChannelRequestCredentialsOptions extends StObject
 /** Specifies the values defining whether a requested credential is a retry case, or should be used for single sign on. */
 @JSGlobal("Windows.Networking.Vpn.VpnChannelRequestCredentialsOptions")
 @js.native
-object VpnChannelRequestCredentialsOptions extends js.Object {
+object VpnChannelRequestCredentialsOptions extends StObject {
+  
   /** None. */
   @js.native
-  sealed trait none extends VpnChannelRequestCredentialsOptions
+  sealed trait none
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
   
   /** Retrying. */
   @js.native
-  sealed trait retrying extends VpnChannelRequestCredentialsOptions
+  sealed trait retrying
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
   
   /** Use for single sign on. */
   @js.native
-  sealed trait useForSingleSignIn extends VpnChannelRequestCredentialsOptions
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VpnChannelRequestCredentialsOptions with Double] = js.native
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object retrying extends TopLevel[retrying with Double]
-  
-  /* 2 */ @js.native
-  object useForSingleSignIn extends TopLevel[useForSingleSignIn with Double]
-  
+  sealed trait useForSingleSignIn
+    extends StObject
+       with VpnChannelRequestCredentialsOptions
 }
-

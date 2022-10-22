@@ -1,8 +1,8 @@
 package typingsJapgolly.reactWindow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactWindow.reactWindowStrings.auto
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactWindow.reactWindowStrings.end
   - typingsJapgolly.reactWindow.reactWindowStrings.start
 */
-trait Align extends js.Object
-
+trait Align extends StObject
 object Align {
-  @scala.inline
-  def auto: typingsJapgolly.reactWindow.reactWindowStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.reactWindow.reactWindowStrings.center = this.cast("center")
-  @scala.inline
-  def end: typingsJapgolly.reactWindow.reactWindowStrings.end = this.cast("end")
-  @scala.inline
-  def smart: typingsJapgolly.reactWindow.reactWindowStrings.smart = this.cast("smart")
-  @scala.inline
-  def start: typingsJapgolly.reactWindow.reactWindowStrings.start = this.cast("start")
+  
+  inline def auto: typingsJapgolly.reactWindow.reactWindowStrings.auto = "auto".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.auto]
+  
+  inline def center: typingsJapgolly.reactWindow.reactWindowStrings.center = "center".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.center]
+  
+  inline def end: typingsJapgolly.reactWindow.reactWindowStrings.end = "end".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.end]
+  
+  inline def smart: typingsJapgolly.reactWindow.reactWindowStrings.smart = "smart".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.smart]
+  
+  inline def start: typingsJapgolly.reactWindow.reactWindowStrings.start = "start".asInstanceOf[typingsJapgolly.reactWindow.reactWindowStrings.start]
 }
-

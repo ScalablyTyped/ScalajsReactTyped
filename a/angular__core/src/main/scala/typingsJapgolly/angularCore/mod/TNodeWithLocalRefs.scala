@@ -1,146 +1,76 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Type representing a set of TNodes that can have local refs (`#foo`) placed on them.
   */
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.angularCore.mod.TContainerNode
-  - typingsJapgolly.angularCore.mod.ɵangularPackagesCoreCoreBf
+  - typingsJapgolly.angularCore.mod.TElementNode
   - typingsJapgolly.angularCore.mod.TElementContainerNode
 */
-trait TNodeWithLocalRefs extends js.Object
-
+trait TNodeWithLocalRefs extends StObject
 object TNodeWithLocalRefs {
-  @scala.inline
-  def TContainerNode(
+  
+  inline def TContainerNode(
     child: Null,
+    classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
+    directiveStylingLast: Double,
     flags: TNodeFlags,
     index: Double,
     injectorIndex: Double,
     projection: Null,
-    propertyMetadataEndIndex: Double,
-    propertyMetadataStartIndex: Double,
     providerIndexes: TNodeProviderIndexes,
+    styleBindings: TStylingRange,
     `type`: TNodeType,
-    attrs: TAttributes = null,
-    classes: StylingMapArray | TStylingContext = null,
-    initialInputs: InitialInputData = null,
-    inputs: PropertyAliases = null,
-    localNames: js.Array[String | Double] = null,
-    next: TNode = null,
-    outputs: PropertyAliases = null,
-    parent: ɵangularPackagesCoreCoreBf | TElementContainerNode = null,
-    projectionNext: TNode = null,
-    styles: StylingMapArray | TStylingContext = null,
-    tViews: TView | js.Array[TView] = null,
-    tagName: String = null
-  ): TNodeWithLocalRefs = {
-    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], propertyMetadataEndIndex = propertyMetadataEndIndex.asInstanceOf[js.Any], propertyMetadataStartIndex = propertyMetadataStartIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any])
+    value: Null
+  ): typingsJapgolly.angularCore.mod.TContainerNode = {
+    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (localNames != null) __obj.updateDynamic("localNames")(localNames.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tViews != null) __obj.updateDynamic("tViews")(tViews.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TNodeWithLocalRefs]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.TContainerNode]
   }
-  @scala.inline
-  def ɵangularPackagesCoreCoreBf(
+  
+  inline def TElementContainerNode(
+    classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
-    flags: TNodeFlags,
-    index: Double,
-    injectorIndex: Double,
-    propertyMetadataEndIndex: Double,
-    propertyMetadataStartIndex: Double,
-    providerIndexes: TNodeProviderIndexes,
-    tViews: Null,
-    `type`: TNodeType,
-    attrs: TAttributes = null,
-    child: typingsJapgolly.angularCore.mod.ɵangularPackagesCoreCoreBf | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode = null,
-    classes: StylingMapArray | TStylingContext = null,
-    initialInputs: InitialInputData = null,
-    inputs: PropertyAliases = null,
-    localNames: js.Array[String | Double] = null,
-    next: TNode = null,
-    outputs: PropertyAliases = null,
-    parent: typingsJapgolly.angularCore.mod.ɵangularPackagesCoreCoreBf | TElementContainerNode = null,
-    projection: js.Array[TNode | js.Array[RNode]] = null,
-    projectionNext: TNode = null,
-    styles: StylingMapArray | TStylingContext = null,
-    tagName: String = null
-  ): TNodeWithLocalRefs = {
-    val __obj = js.Dynamic.literal(directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], propertyMetadataEndIndex = propertyMetadataEndIndex.asInstanceOf[js.Any], propertyMetadataStartIndex = propertyMetadataStartIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (localNames != null) __obj.updateDynamic("localNames")(localNames.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projection != null) __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
-    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TNodeWithLocalRefs]
-  }
-  @scala.inline
-  def TElementContainerNode(
-    directiveEnd: Double,
-    directiveStart: Double,
+    directiveStylingLast: Double,
     flags: TNodeFlags,
     index: Double,
     injectorIndex: Double,
     projection: Null,
-    propertyMetadataEndIndex: Double,
-    propertyMetadataStartIndex: Double,
     providerIndexes: TNodeProviderIndexes,
+    styleBindings: TStylingRange,
     tViews: Null,
     `type`: TNodeType,
-    attrs: TAttributes = null,
-    child: ɵangularPackagesCoreCoreBf | TTextNode | TContainerNode | typingsJapgolly.angularCore.mod.TElementContainerNode | TProjectionNode = null,
-    classes: StylingMapArray | TStylingContext = null,
-    initialInputs: InitialInputData = null,
-    inputs: PropertyAliases = null,
-    localNames: js.Array[String | Double] = null,
-    next: TNode = null,
-    outputs: PropertyAliases = null,
-    parent: ɵangularPackagesCoreCoreBf | typingsJapgolly.angularCore.mod.TElementContainerNode = null,
-    projectionNext: TNode = null,
-    styles: StylingMapArray | TStylingContext = null,
-    tagName: String = null
-  ): TNodeWithLocalRefs = {
-    val __obj = js.Dynamic.literal(directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], propertyMetadataEndIndex = propertyMetadataEndIndex.asInstanceOf[js.Any], propertyMetadataStartIndex = propertyMetadataStartIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any])
+    value: Any
+  ): typingsJapgolly.angularCore.mod.TElementContainerNode = {
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attrs != null) __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
-    if (child != null) __obj.updateDynamic("child")(child.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (initialInputs != null) __obj.updateDynamic("initialInputs")(initialInputs.asInstanceOf[js.Any])
-    if (inputs != null) __obj.updateDynamic("inputs")(inputs.asInstanceOf[js.Any])
-    if (localNames != null) __obj.updateDynamic("localNames")(localNames.asInstanceOf[js.Any])
-    if (next != null) __obj.updateDynamic("next")(next.asInstanceOf[js.Any])
-    if (outputs != null) __obj.updateDynamic("outputs")(outputs.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (projectionNext != null) __obj.updateDynamic("projectionNext")(projectionNext.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TNodeWithLocalRefs]
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.TElementContainerNode]
+  }
+  
+  inline def TElementNode(
+    classBindings: TStylingRange,
+    directiveEnd: Double,
+    directiveStart: Double,
+    directiveStylingLast: Double,
+    flags: TNodeFlags,
+    index: Double,
+    injectorIndex: Double,
+    providerIndexes: TNodeProviderIndexes,
+    styleBindings: TStylingRange,
+    tViews: Null,
+    `type`: TNodeType,
+    value: String
+  ): typingsJapgolly.angularCore.mod.TElementNode = {
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[typingsJapgolly.angularCore.mod.TElementNode]
   }
 }
-

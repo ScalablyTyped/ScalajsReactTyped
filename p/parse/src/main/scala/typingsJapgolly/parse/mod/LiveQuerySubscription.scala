@@ -1,8 +1,8 @@
 package typingsJapgolly.parse.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a LiveQuery Subscription.
@@ -71,8 +71,8 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("parse", "LiveQuerySubscription")
 @js.native
-class LiveQuerySubscription protected ()
-  extends typingsJapgolly.parse.mod._Global_.Parse.LiveQuerySubscription {
+open class LiveQuerySubscription protected ()
+  extends typingsJapgolly.parse.mod.global.Parse.LiveQuerySubscription {
   /**
     * Creates an instance of LiveQuerySubscription.
     *
@@ -83,4 +83,3 @@ class LiveQuerySubscription protected ()
   def this(id: String, query: String) = this()
   def this(id: String, query: String, sessionToken: String) = this()
 }
-

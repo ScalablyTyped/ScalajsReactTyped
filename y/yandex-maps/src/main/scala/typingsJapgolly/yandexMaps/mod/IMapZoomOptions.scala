@@ -1,27 +1,27 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IMapZoomOptions
-  extends IMapMarginOptions
+  extends StObject
+     with IMapMarginOptions
      with IMapCheckZoomRangeOptions {
+  
   var duration: js.UndefOr[Double] = js.undefined
 }
-
 object IMapZoomOptions {
-  @scala.inline
-  def apply(
-    checkZoomRange: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    useMapMargin: js.UndefOr[Boolean] = js.undefined
-  ): IMapZoomOptions = {
+  
+  inline def apply(): IMapZoomOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(checkZoomRange)) __obj.updateDynamic("checkZoomRange")(checkZoomRange.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMapMargin)) __obj.updateDynamic("useMapMargin")(useMapMargin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapZoomOptions]
   }
+  
+  extension [Self <: IMapZoomOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+  }
 }
-

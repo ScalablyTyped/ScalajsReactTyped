@@ -1,14 +1,12 @@
 package typingsJapgolly.lunr
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lunrStrings {
-  @js.native
-  sealed trait QueryParseError extends js.Object
   
-  @scala.inline
-  def QueryParseError: QueryParseError = "QueryParseError".asInstanceOf[QueryParseError]
+  @js.native
+  sealed trait QueryParseError extends StObject
+  inline def QueryParseError: QueryParseError = "QueryParseError".asInstanceOf[QueryParseError]
 }
-

@@ -1,73 +1,195 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MatrixDropdownColumn")
 @js.native
-class MatrixDropdownColumn protected ()
+open class MatrixDropdownColumn protected ()
   extends Base
-     with ILocalizableOwner {
+     with ILocalizableOwner
+     with IWrapperObject {
   def this(name: String) = this()
   def this(name: String, title: String) = this()
-  var cellType: String = js.native
-  var colCount: Double = js.native
-  var colOwner: IMatrixColumnOwner = js.native
-  var enableIf: String = js.native
-  val fullTitle: String = js.native
-  val hasCondition: Boolean = js.native
-  var hasOther: Boolean = js.native
-  val hasTotal: Boolean = js.native
-  var hasVisibleCell: Boolean = js.native
-  val index: Double = js.native
-  var isRequired: Boolean = js.native
-  val isVisible: Boolean = js.native
-  val locRequiredErrorText: LocalizableString = js.native
-  val locTitle: LocalizableString = js.native
-  val locTotalFormat: LocalizableString = js.native
-  var minWidth: String = js.native
-  var name: String = js.native
-  var readOnly: Boolean = js.native
-  var requiredErrorText: String = js.native
-  var requiredIf: String = js.native
-  val templateQuestion: Question = js.native
-  var title: String = js.native
-  var totalCurrency: String = js.native
-  var totalDisplayStyle: String = js.native
-  var totalExpression: String = js.native
-  var totalFormat: String = js.native
-  var totalMaximumFractionDigits: Double = js.native
-  var totalMinimumFractionDigits: Double = js.native
-  var totalType: String = js.native
-  var validators: js.Array[SurveyValidator] = js.native
-  val value: String = js.native
-  var visibleIf: String = js.native
-  var width: String = js.native
-  /* protected */ def calcCellQuestionType(): String = js.native
-  def createCellQuestion(data: js.Any): Question = js.native
+  
+  var _hasVisibleCell: Boolean = js.native
+  
+  var _isVisible: Boolean = js.native
+  
+  /* protected */ def calcCellQuestionType(row: MatrixDropdownRowModelBase): String = js.native
+  
+  def cellHint: String = js.native
+  def cellHint_=(`val`: String): Unit = js.native
+  
+  def cellType: String = js.native
+  def cellType_=(`val`: String): Unit = js.native
+  
+  def colCount: Double = js.native
+  def colCount_=(`val`: Double): Unit = js.native
+  
+  def colOwner: IMatrixColumnOwner = js.native
+  
+  var colOwnerValue: IMatrixColumnOwner = js.native
+  
+  def colOwner_=(`val`: IMatrixColumnOwner): Unit = js.native
+  
+  def createCellQuestion(row: MatrixDropdownRowModelBase): Question = js.native
+  
   /* protected */ def createNewQuestion(cellType: String): Question = js.native
+  
   def defaultCellTypeChanged(): Unit = js.native
-  def getDynamicProperties(): js.Array[String] = js.native
+  
+  def enableIf: String = js.native
+  def enableIf_=(`val`: String): Unit = js.native
+  
+  def fullTitle: String = js.native
+  
+  /* CompleteClass */
+  override def getClassNameProperty(): String = js.native
+  
   def getDynamicPropertyName(): String = js.native
+  
   def getDynamicType(): String = js.native
-  /* CompleteClass */
+  
+  /* InferMemberOverrides */
   override def getLocale(): String = js.native
+  
   /* CompleteClass */
-  override def getMarkdownHtml(text: String): String = js.native
+  override def getMarkdownHtml(text: String, name: String): String = js.native
+  
+  /* CompleteClass */
+  override def getOriginalObj(): Base = js.native
+  
   /* CompleteClass */
   override def getProcessedText(text: String): String = js.native
+  
+  /* CompleteClass */
+  override def getRenderer(name: String): String = js.native
+  
+  /* CompleteClass */
+  override def getRendererContext(locStr: LocalizableString): Any = js.native
+  
+  def hasOther: Boolean = js.native
+  def hasOther_=(`val`: Boolean): Unit = js.native
+  
+  def hasTotal: Boolean = js.native
+  
+  def hasVisibleCell: Boolean = js.native
+  def hasVisibleCell_=(`val`: Boolean): Unit = js.native
+  
+  def index: Double = js.native
+  
+  var indexValue: Double = js.native
+  
+  def isRenderedRequired: Boolean = js.native
+  def isRenderedRequired_=(`val`: Boolean): Unit = js.native
+  
+  def isRequired: Boolean = js.native
+  def isRequired_=(`val`: Boolean): Unit = js.native
+  
+  def isShowInMultipleColumns: Boolean = js.native
+  
+  def isSupportMultipleColumns: Boolean = js.native
+  
+  def isUnique: Boolean = js.native
+  def isUnique_=(`val`: Boolean): Unit = js.native
+  
+  def isVisible: Boolean = js.native
+  
+  def locCellHint: LocalizableString = js.native
+  
+  def locRequiredErrorText: LocalizableString = js.native
+  
+  def locTitle: LocalizableString = js.native
+  
+  def locTotalFormat: LocalizableString = js.native
+  
+  def minWidth: String = js.native
+  def minWidth_=(`val`: String): Unit = js.native
+  
+  def name: String = js.native
+  def name_=(`val`: String): Unit = js.native
+  
+  var previousChoicesId: String = js.native
+  
+  def readOnly: Boolean = js.native
+  def readOnly_=(`val`: Boolean): Unit = js.native
+  
+  def renderAs: String = js.native
+  def renderAs_=(`val`: String): Unit = js.native
+  
+  def requiredErrorText: String = js.native
+  def requiredErrorText_=(`val`: String): Unit = js.native
+  
+  def requiredIf: String = js.native
+  def requiredIf_=(`val`: String): Unit = js.native
+  
+  def requiredText: String = js.native
+  
   def setIndex(`val`: Double): Unit = js.native
+  
   def setIsVisible(newVal: Boolean): Unit = js.native
+  
   /* protected */ def setQuestionProperties(question: Question): Unit = js.native
-  def updateCellQuestion(cellQuestion: Question, data: js.Any): Unit = js.native
+  /* protected */ def setQuestionProperties(question: Question, onUpdateJson: js.Function1[/* json */ Any, Any]): Unit = js.native
+  
+  def showInMultipleColumns: Boolean = js.native
+  def showInMultipleColumns_=(`val`: Boolean): Unit = js.native
+  
+  def templateQuestion: Question = js.native
+  
+  var templateQuestionValue: Question = js.native
+  
+  def title: String = js.native
+  def title_=(`val`: String): Unit = js.native
+  
+  def totalCurrency: String = js.native
+  def totalCurrency_=(`val`: String): Unit = js.native
+  
+  def totalDisplayStyle: String = js.native
+  def totalDisplayStyle_=(`val`: String): Unit = js.native
+  
+  def totalExpression: String = js.native
+  def totalExpression_=(`val`: String): Unit = js.native
+  
+  def totalFormat: String = js.native
+  def totalFormat_=(`val`: String): Unit = js.native
+  
+  def totalMaximumFractionDigits: Double = js.native
+  def totalMaximumFractionDigits_=(`val`: Double): Unit = js.native
+  
+  def totalMinimumFractionDigits: Double = js.native
+  def totalMinimumFractionDigits_=(`val`: Double): Unit = js.native
+  
+  def totalType: String = js.native
+  def totalType_=(`val`: String): Unit = js.native
+  
+  def updateCellQuestion(cellQuestion: Question, data: Any): Unit = js.native
+  def updateCellQuestion(cellQuestion: Question, data: Any, onUpdateJson: js.Function1[/* json */ Any, Any]): Unit = js.native
+  
+  def updateIsRenderedRequired(`val`: Boolean): Unit = js.native
+  
   /* protected */ def updateTemplateQuestion(): Unit = js.native
+  /* protected */ def updateTemplateQuestion(newCellType: String): Unit = js.native
+  
+  def validators: Any = js.native
+  def validators_=(`val`: Any): Unit = js.native
+  
+  def value: String = js.native
+  
+  def visibleIf: String = js.native
+  def visibleIf_=(`val`: String): Unit = js.native
+  
+  def width: String = js.native
+  def width_=(`val`: String): Unit = js.native
 }
-
 /* static members */
-@JSImport("survey-knockout", "MatrixDropdownColumn")
-@js.native
-object MatrixDropdownColumn extends js.Object {
-  def getColumnTypes(): js.Array[String] = js.native
+object MatrixDropdownColumn {
+  
+  @JSImport("survey-knockout", "MatrixDropdownColumn")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getColumnTypes(): js.Array[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnTypes")().asInstanceOf[js.Array[Any]]
 }
-

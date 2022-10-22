@@ -1,17 +1,19 @@
 package typingsJapgolly.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Bodies")
 @js.native
-class Bodies () extends js.Object
-
+open class Bodies () extends StObject
 /* static members */
-@JSImport("matter-js", "Bodies")
-@js.native
-object Bodies extends js.Object {
+object Bodies {
+  
+  @JSImport("matter-js", "Bodies")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new rigid body model with a circle hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -20,13 +22,15 @@ object Bodies extends js.Object {
     * @param {number} x
     * @param {number} y
     * @param {number} radius
-    * @param {object} [options]
+    * @param {any} [options]
     * @param {number} [maxSides]
-    * @return {body} A new circle body
+    * @returns {Body} A new circle body
     */
-  def circle(x: Double, y: Double, radius: Double): Body = js.native
-  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): Body = js.native
-  def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): Body = js.native
+  inline def circle(x: Double, y: Double, radius: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def circle(x: Double, y: Double, radius: Double, options: Unit, maxSides: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any], maxSides.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def circle(x: Double, y: Double, radius: Double, options: IBodyDefinition, maxSides: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any], maxSides.asInstanceOf[js.Any])).asInstanceOf[Body]
+  
   /**
     * Creates a body using the supplied vertices (or an array containing multiple sets of vertices).
     * If the vertices are convex, they will pass through as supplied.
@@ -40,31 +44,165 @@ object Bodies extends js.Object {
     * @method fromVertices
     * @param {number} x
     * @param {number} y
-    * @param [[vector]] vertexSets
-    * @param {object} [options]
-    * @param {bool} [flagInternal=false]
+    * @param {Vertex[][]} vertexSets
+    * @param {any} [options]
+    * @param {boolean} [flagInternal=false]
     * @param {number} [removeCollinear=0.01]
     * @param {number} [minimumArea=10]
-    * @return {body}
+    * @param {number} [removeDuplicatePoints=0.01]
+    * @returns {Body}
     */
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]]): Body = js.native
-  def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]], options: IBodyDefinition): Body = js.native
-  def fromVertices(
+  inline def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]]): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]], options: Unit, flagInternal: Boolean): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: Unit,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(x: Double, y: Double, vertexSets: js.Array[js.Array[Vector]], options: IBodyDefinition): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[Vector]],
     options: IBodyDefinition,
     flagInternal: Boolean
-  ): Body = js.native
-  def fromVertices(
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[Vector]],
     options: IBodyDefinition,
     flagInternal: Boolean,
     removeCollinear: Double
-  ): Body = js.native
-  def fromVertices(
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
     x: Double,
     y: Double,
     vertexSets: js.Array[js.Array[Vector]],
@@ -72,7 +210,123 @@ object Bodies extends js.Object {
     flagInternal: Boolean,
     removeCollinear: Double,
     minimumArea: Double
-  ): Body = js.native
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Double,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Boolean,
+    removeCollinear: Unit,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Double,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Double,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def fromVertices(
+    x: Double,
+    y: Double,
+    vertexSets: js.Array[js.Array[Vector]],
+    options: IBodyDefinition,
+    flagInternal: Unit,
+    removeCollinear: Unit,
+    minimumArea: Unit,
+    removeDuplicatePoints: Double
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], vertexSets.asInstanceOf[js.Any], options.asInstanceOf[js.Any], flagInternal.asInstanceOf[js.Any], removeCollinear.asInstanceOf[js.Any], minimumArea.asInstanceOf[js.Any], removeDuplicatePoints.asInstanceOf[js.Any])).asInstanceOf[Body]
+  
   /**
     * Creates a new rigid body model with a regular polygon hull with the given number of sides.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -82,11 +336,12 @@ object Bodies extends js.Object {
     * @param {number} y
     * @param {number} sides
     * @param {number} radius
-    * @param {object} [options]
-    * @return {body} A new regular polygon body
+    * @param {any} [options]
+    * @returns {Body} A new regular polygon body
     */
-  def polygon(x: Double, y: Double, sides: Double, radius: Double): Body = js.native
-  def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): Body = js.native
+  inline def polygon(x: Double, y: Double, sides: Double, radius: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], sides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def polygon(x: Double, y: Double, sides: Double, radius: Double, options: IChamferableBodyDefinition): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("polygon")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], sides.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
+  
   /**
     * Creates a new rigid body model with a rectangle hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -96,11 +351,12 @@ object Bodies extends js.Object {
     * @param {number} y
     * @param {number} width
     * @param {number} height
-    * @param {object} [options]
-    * @return {body} A new rectangle body
+    * @param {any} [options]
+    * @returns {Body} A new rectangle body
     */
-  def rectangle(x: Double, y: Double, width: Double, height: Double): Body = js.native
-  def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): Body = js.native
+  inline def rectangle(x: Double, y: Double, width: Double, height: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def rectangle(x: Double, y: Double, width: Double, height: Double, options: IChamferableBodyDefinition): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("rectangle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
+  
   /**
     * Creates a new rigid body model with a trapezoid hull.
     * The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -111,17 +367,16 @@ object Bodies extends js.Object {
     * @param {number} width
     * @param {number} height
     * @param {number} slope
-    * @param {object} [options]
-    * @return {body} A new trapezoid body
+    * @param {any} [options]
+    * @returns {Body} A new trapezoid body
     */
-  def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): Body = js.native
-  def trapezoid(
+  inline def trapezoid(x: Double, y: Double, width: Double, height: Double, slope: Double): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("trapezoid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], slope.asInstanceOf[js.Any])).asInstanceOf[Body]
+  inline def trapezoid(
     x: Double,
     y: Double,
     width: Double,
     height: Double,
     slope: Double,
     options: IChamferableBodyDefinition
-  ): Body = js.native
+  ): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("trapezoid")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], slope.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
 }
-

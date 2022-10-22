@@ -2,29 +2,33 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.kendoUi.kendo.ooxml.Workbook
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetExcelExportEvent extends SpreadsheetEvent {
-  var data: js.UndefOr[js.Any] = js.undefined
+trait SpreadsheetExcelExportEvent
+  extends StObject
+     with SpreadsheetEvent {
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var workbook: js.UndefOr[Workbook] = js.undefined
 }
-
 object SpreadsheetExcelExportEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Spreadsheet,
-    data: js.Any = null,
-    workbook: Workbook = null
-  ): SpreadsheetExcelExportEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (workbook != null) __obj.updateDynamic("workbook")(workbook.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Spreadsheet): SpreadsheetExcelExportEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetExcelExportEvent]
   }
+  
+  extension [Self <: SpreadsheetExcelExportEvent](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setWorkbook(value: Workbook): Self = StObject.set(x, "workbook", value.asInstanceOf[js.Any])
+    
+    inline def setWorkbookUndefined: Self = StObject.set(x, "workbook", js.undefined)
+  }
 }
-

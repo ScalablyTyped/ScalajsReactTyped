@@ -1,30 +1,16 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.dash
-import typingsJapgolly.devextreme.devextremeStrings.dot
-import typingsJapgolly.devextreme.devextremeStrings.longDash
-import typingsJapgolly.devextreme.devextremeStrings.solid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** Configures the series border (in area-like series) or the series point border (in bar-like and bubble series). */
-trait dxChartSeriesTypesStepAreaSeriesBorder extends dxChartSeriesTypesCommonSeriesBorder
-
+trait dxChartSeriesTypesStepAreaSeriesBorder
+  extends StObject
+     with dxChartSeriesTypesCommonSeriesBorder
 object dxChartSeriesTypesStepAreaSeriesBorder {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashStyle: dash | dot | longDash | solid = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): dxChartSeriesTypesStepAreaSeriesBorder = {
+  
+  inline def apply(): dxChartSeriesTypesStepAreaSeriesBorder = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartSeriesTypesStepAreaSeriesBorder]
   }
 }
-

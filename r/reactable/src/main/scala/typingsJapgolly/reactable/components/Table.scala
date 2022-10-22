@@ -1,73 +1,70 @@
 package typingsJapgolly.reactable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactable.AnonColumn
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactable.anon.Column
 import typingsJapgolly.reactable.mod.ColumnsType
 import typingsJapgolly.reactable.mod.TableComponentProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Table {
-  def apply[T](
-    className: String = null,
-    columns: js.Array[ColumnsType] = null,
-    currentPage: Int | Double = null,
-    data: js.Array[T] = null,
-    defaultSort: AnonColumn = null,
-    filterBy: String = null,
-    filterable: js.Array[String] = null,
-    hideFilterInput: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    itemsPerPage: Int | Double = null,
-    noDataText: String = null,
-    onFilter: /* text */ String => Callback = null,
-    pageButtonLimit: Int | Double = null,
-    sortBy: js.UndefOr[Boolean] = js.undefined,
-    sortable: js.Array[String] | Boolean = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    TableComponentProperties[T], 
-    typingsJapgolly.reactable.mod.Table[T], 
-    Unit, 
-    TableComponentProperties[T]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort.asInstanceOf[js.Any])
-    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy.asInstanceOf[js.Any])
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideFilterInput)) __obj.updateDynamic("hideFilterInput")(hideFilterInput.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
-    if (noDataText != null) __obj.updateDynamic("noDataText")(noDataText.asInstanceOf[js.Any])
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1((t0: /* text */ java.lang.String) => onFilter(t0).runNow()))
-    if (pageButtonLimit != null) __obj.updateDynamic("pageButtonLimit")(pageButtonLimit.asInstanceOf[js.Any])
-    if (!js.isUndefined(sortBy)) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactable.mod.TableComponentProperties[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactable.mod.Table[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactable.mod.TableComponentProperties[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[TableComponentProperties[T]]))
   }
+  
   @JSImport("reactable", "Table")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactable.mod.Table[T]] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def columns(value: js.Array[ColumnsType]): this.type = set("columns", value.asInstanceOf[js.Any])
+    
+    inline def columnsVarargs(value: ColumnsType*): this.type = set("columns", js.Array(value*))
+    
+    inline def currentPage(value: Double): this.type = set("currentPage", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Array[T]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataVarargs(value: T*): this.type = set("data", js.Array(value*))
+    
+    inline def defaultSort(value: Column): this.type = set("defaultSort", value.asInstanceOf[js.Any])
+    
+    inline def filterBy(value: String): this.type = set("filterBy", value.asInstanceOf[js.Any])
+    
+    inline def filterable(value: js.Array[String]): this.type = set("filterable", value.asInstanceOf[js.Any])
+    
+    inline def filterableVarargs(value: String*): this.type = set("filterable", js.Array(value*))
+    
+    inline def hideFilterInput(value: Boolean): this.type = set("hideFilterInput", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def itemsPerPage(value: Double): this.type = set("itemsPerPage", value.asInstanceOf[js.Any])
+    
+    inline def noDataText(value: String): this.type = set("noDataText", value.asInstanceOf[js.Any])
+    
+    inline def onFilter(value: /* text */ String => Callback): this.type = set("onFilter", js.Any.fromFunction1((t0: /* text */ String) => value(t0).runNow()))
+    
+    inline def pageButtonLimit(value: Double): this.type = set("pageButtonLimit", value.asInstanceOf[js.Any])
+    
+    inline def sortBy(value: Boolean): this.type = set("sortBy", value.asInstanceOf[js.Any])
+    
+    inline def sortable(value: js.Array[String] | Boolean): this.type = set("sortable", value.asInstanceOf[js.Any])
+    
+    inline def sortableVarargs(value: String*): this.type = set("sortable", js.Array(value*))
+  }
+  
+  implicit def make[T](companion: Table.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: TableComponentProperties[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

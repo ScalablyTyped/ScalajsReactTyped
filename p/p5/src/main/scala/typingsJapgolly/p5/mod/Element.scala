@@ -1,23 +1,20 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.Node
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Element extends js.Object {
-  /**
-    *   Underlying HTML element. All normal HTML methods
-    *   can be called on this.
-    */
-  var elt: js.Any = js.native
+trait Element extends StObject {
+  
   /**
     *   Adds specified class to the element.
     *   @param class name of class to add
     *   @chainable
     */
   def addClass(theClass: String): Element = js.native
+  
   /**
     *   Adds a new attribute or changes the value of an
     *   existing attribute on the specified element. If no
@@ -36,6 +33,7 @@ trait Element extends js.Object {
     *   @chainable
     */
   def attribute(attr: String, value: String): Element = js.native
+  
   /**
     *   Centers a p5 Element either vertically,
     *   horizontally, or both, relative to its parent or
@@ -48,6 +46,7 @@ trait Element extends js.Object {
     */
   def center(): Element = js.native
   def center(align: String): Element = js.native
+  
   /**
     *   Attaches the element as a child to the parent
     *   specified. Accepts either a string ID, DOM node,
@@ -69,6 +68,7 @@ trait Element extends js.Object {
     */
   @JSName("child")
   def child_Array(): js.Array[Node] = js.native
+  
   /**
     *   Adds given class to the element. If no class
     *   argument is passed in, it instead returns a string
@@ -84,6 +84,7 @@ trait Element extends js.Object {
     *   @chainable
     */
   def `class`(theClass: String): Element = js.native
+  
   /**
     *   The .doubleClicked() function is called once after
     *   every time a mouse button is pressed twice over
@@ -94,8 +95,9 @@ trait Element extends js.Object {
     *   passed instead, the previously firing function
     *   will no longer fire.
     */
-  def doubleClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def doubleClicked(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def doubleClicked(fxn: Boolean): Element = js.native
+  
   /**
     *   The .dragLeave() function is called once after
     *   every time a dragged file leaves the element area.
@@ -107,8 +109,9 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def dragLeave(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def dragLeave(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def dragLeave(fxn: Boolean): Element = js.native
+  
   /**
     *   The .dragOver() function is called once after
     *   every time a file is dragged over the element.
@@ -120,8 +123,9 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def dragOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def dragOver(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def dragOver(fxn: Boolean): Element = js.native
+  
   /**
     *   Registers a callback that gets called every time a
     *   file that is dropped on the element has been
@@ -142,8 +146,15 @@ trait Element extends js.Object {
     *   are dropped with the drop event.
     *   @chainable
     */
-  def drop(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-  def drop(callback: js.Function1[/* repeated */ js.Any, _], fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def drop(callback: js.Function1[/* repeated */ Any, Any]): Element = js.native
+  def drop(callback: js.Function1[/* repeated */ Any, Any], fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
+  
+  /**
+    *   Underlying HTML element. All normal HTML methods
+    *   can be called on this.
+    */
+  var elt: Any = js.native
+  
   /**
     *   Checks if specified class already set to element
     *   @param c class name of class to check
@@ -151,12 +162,14 @@ trait Element extends js.Object {
     *   class
     */
   def hasClass(c: String): Boolean = js.native
+  
   /**
     *   Hides the current element. Essentially, setting
     *   display:none for the style.
     *   @chainable
     */
   def hide(): Element = js.native
+  
   /**
     *   If an argument is given, sets the inner HTML of
     *   the element, replacing any existing html. If true
@@ -172,6 +185,7 @@ trait Element extends js.Object {
   def html(): Element = js.native
   def html(html: String): Element = js.native
   def html(html: String, append: Boolean): Element = js.native
+  def html(html: Unit, append: Boolean): Element = js.native
   /**
     *   If an argument is given, sets the inner HTML of
     *   the element, replacing any existing html. If true
@@ -183,6 +197,7 @@ trait Element extends js.Object {
     */
   @JSName("html")
   def html_String(): String = js.native
+  
   /**
     *   Sets the ID of the element. If no ID argument is
     *   passed in, it instead returns the current ID of
@@ -204,12 +219,13 @@ trait Element extends js.Object {
     *   @chainable
     */
   def id(id: String): Element = js.native
+  
   /**
     *   The .mouseClicked() function is called once after
     *   a mouse button is pressed and released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
-    *   a quick tap. This can be used to attach element
+    *   a quick tap.This can be used to attach element
     *   specific event listeners.
     *   @param fxn function to be fired when mouse is
     *   clicked over the element. if false is passed
@@ -217,8 +233,9 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def mouseClicked(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseClicked(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseClicked(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseMoved() function is called once every
     *   time a mouse moves over the element. This can be
@@ -228,8 +245,9 @@ trait Element extends js.Object {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseMoved(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseMoved(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseOut() function is called once after
     *   every time a mouse moves off the element. This can
@@ -240,8 +258,9 @@ trait Element extends js.Object {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOut(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseOut(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseOut(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mouseOver() function is called once after
     *   every time a mouse moves onto the element. This
@@ -252,8 +271,9 @@ trait Element extends js.Object {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def mouseOver(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseOver(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseOver(fxn: Boolean): Element = js.native
+  
   /**
     *   The .mousePressed() function is called once after
     *   every time a mouse button is pressed over the
@@ -267,10 +287,11 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def mousePressed(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mousePressed(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mousePressed(fxn: Boolean): Element = js.native
+  
   /**
-    *   The .mouseReleased() function is called once after
+    *   The mouseReleased() function is called once after
     *   every time a mouse button is released over the
     *   element. Some mobile browsers may also trigger
     *   this event on a touch screen, if the user performs
@@ -282,13 +303,14 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def mouseReleased(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseReleased(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseReleased(fxn: Boolean): Element = js.native
+  
   /**
-    *   The .mouseWheel() function is called once after
+    *   The mouseWheel() function is called once after
     *   every time a mouse wheel is scrolled over the
     *   element. This can be used to attach element
-    *   specific event listeners.  The function accepts a
+    *   specific event listeners. The function accepts a
     *   callback function as argument which will be
     *   executed when the wheel event is triggered on the
     *   element, the callback function is passed one
@@ -299,7 +321,6 @@ trait Element extends js.Object {
     *   event.deltaY except it reads the horizontal wheel
     *   scroll of the mouse wheel.
     *
-    *
     *   On OS X with "natural" scrolling enabled, the
     *   event.deltaY values are reversed.
     *   @param fxn function to be fired when mouse is
@@ -308,19 +329,16 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def mouseWheel(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def mouseWheel(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def mouseWheel(fxn: Boolean): Element = js.native
+  
   /**
     *   Attaches the element to the parent specified. A
     *   way of setting the container for the element.
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page. All
-    *   above examples except for the first one require
-    *   the inclusion of the p5.dom library in your
-    *   index.html. See the using a library section for
-    *   information on how to include this library.
+    *   see the  positioning the canvas wiki page.
     */
   def parent(): Element = js.native
   /**
@@ -329,11 +347,7 @@ trait Element extends js.Object {
     *   Accepts either a string ID, DOM node, or
     *   p5.Element. If no arguments given, parent node is
     *   returned. For more ways to position the canvas,
-    *   see the  positioning the canvas wiki page. All
-    *   above examples except for the first one require
-    *   the inclusion of the p5.dom library in your
-    *   index.html. See the using a library section for
-    *   information on how to include this library.
+    *   see the  positioning the canvas wiki page.
     *   @param parent the ID, DOM node, or p5.Element of
     *   desired parent element
     *   @chainable
@@ -341,54 +355,82 @@ trait Element extends js.Object {
   def parent(parent: String): Element = js.native
   def parent(parent: js.Object): Element = js.native
   def parent(parent: Element): Element = js.native
+  
   /**
-    *   Sets the position of the element relative to (0,
-    *   0) of the window. Essentially, sets
-    *   position:absolute and left and top properties of
-    *   style. If no arguments given returns the x and y
-    *   position of the element in an object.
+    *   Sets the position of the element. If no position
+    *   type argument is given, the position will be
+    *   relative to (0, 0) of the window. Essentially,
+    *   this sets position:absolute and left and top
+    *   properties of style. If an optional third argument
+    *   specifying position type is given, the x and y
+    *   coordinates will be interpreted based on the
+    *   positioning scheme. If no arguments given, the
+    *   function returns the x and y position of the
+    *   element. found documentation on how to be more
+    *   specific with object type
+    *   https://stackoverflow.com/questions/14714314/how-do-i-comment-object-literals-in-yuidoc
     *   @param [x] x-position relative to upper left of
-    *   window
+    *   window (optional)
     *   @param [y] y-position relative to upper left of
-    *   window
+    *   window (optional)
+    *   @param [positionType] it can be static, fixed,
+    *   relative, sticky, initial or inherit (optional)
     *   @chainable
     */
   def position(): Element = js.native
   def position(x: Double): Element = js.native
   def position(x: Double, y: Double): Element = js.native
+  def position(x: Double, y: Double, positionType: String): Element = js.native
+  def position(x: Double, y: Unit, positionType: String): Element = js.native
+  def position(x: Unit, y: Double): Element = js.native
+  def position(x: Unit, y: Double, positionType: String): Element = js.native
+  def position(x: Unit, y: Unit, positionType: String): Element = js.native
   /**
-    *   Sets the position of the element relative to (0,
-    *   0) of the window. Essentially, sets
-    *   position:absolute and left and top properties of
-    *   style. If no arguments given returns the x and y
-    *   position of the element in an object.
-    *   @return the x and y position of the element in an
-    *   object
+    *   Sets the position of the element. If no position
+    *   type argument is given, the position will be
+    *   relative to (0, 0) of the window. Essentially,
+    *   this sets position:absolute and left and top
+    *   properties of style. If an optional third argument
+    *   specifying position type is given, the x and y
+    *   coordinates will be interpreted based on the
+    *   positioning scheme. If no arguments given, the
+    *   function returns the x and y position of the
+    *   element. found documentation on how to be more
+    *   specific with object type
+    *   https://stackoverflow.com/questions/14714314/how-do-i-comment-object-literals-in-yuidoc
+    *   @return object of form { x: 0, y: 0 } containing
+    *   the position of the element in an object
     */
   @JSName("position")
   def position_Object(): js.Object = js.native
+  
   /**
-    *   Removes the element and deregisters all listeners.
+    *   Removes the element, stops all media streams, and
+    *   deregisters all listeners.
     */
   def remove(): Unit = js.native
+  
   /**
     *   Removes an attribute on the specified element.
     *   @param attr attribute to remove
     *   @chainable
     */
   def removeAttribute(attr: String): Element = js.native
+  
   /**
     *   Removes specified class from the element.
     *   @param class name of class to remove
     *   @chainable
     */
   def removeClass(theClass: String): Element = js.native
+  
   /**
     *   Shows the current element. Essentially, setting
     *   display:block for the style.
     *   @chainable
     */
   def show(): Element = js.native
+  
   /**
     *   Sets the width and height of the element. AUTO can
     *   be used to only adjust one dimension at a time. If
@@ -421,6 +463,7 @@ trait Element extends js.Object {
   def size(w: SIZE_W): Element = js.native
   def size(w: SIZE_W, h: Double): Element = js.native
   def size(w: SIZE_W, h: SIZE_H): Element = js.native
+  
   /**
     *   Sets the given style (css) property (1st arg) of
     *   the element with the given value (2nd arg). If a
@@ -446,14 +489,15 @@ trait Element extends js.Object {
     *   @chainable
     */
   def style(property: String, value: String): Element = js.native
-  def style(property: String, value: Double): Element = js.native
   def style(property: String, value: Color): Element = js.native
+  
   /**
     *   Toggles element class
     *   @param c class name to toggle
     *   @chainable
     */
   def toggleClass(c: String): Element = js.native
+  
   /**
     *   The .touchEnded() function is called once after
     *   every time a touch is registered. This can be used
@@ -463,8 +507,9 @@ trait Element extends js.Object {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchEnded(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchEnded(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchEnded(fxn: Boolean): Element = js.native
+  
   /**
     *   The .touchMoved() function is called once after
     *   every time a touch move is registered. This can be
@@ -474,8 +519,9 @@ trait Element extends js.Object {
     *   previously firing function will no longer fire.
     *   @chainable
     */
-  def touchMoved(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchMoved(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchMoved(fxn: Boolean): Element = js.native
+  
   /**
     *   The .touchStarted() function is called once after
     *   every time a touch is registered. This can be used
@@ -486,8 +532,9 @@ trait Element extends js.Object {
     *   longer fire.
     *   @chainable
     */
-  def touchStarted(fxn: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+  def touchStarted(fxn: js.Function1[/* repeated */ Any, Any]): Element = js.native
   def touchStarted(fxn: Boolean): Element = js.native
+  
   /**
     *   Either returns the value of the element if no
     *   arguments given, or sets the value of the element.
@@ -502,4 +549,3 @@ trait Element extends js.Object {
   def value(value: String): Element = js.native
   def value(value: Double): Element = js.native
 }
-

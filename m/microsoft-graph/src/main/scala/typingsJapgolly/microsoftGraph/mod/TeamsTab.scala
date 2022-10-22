@@ -1,36 +1,56 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TeamsTab extends Entity {
+trait TeamsTab
+  extends StObject
+     with Entity {
+  
   // Container for custom settings applied to a tab. The tab is considered configured only once this property is set.
-  var configuration: js.UndefOr[TeamsTabConfiguration] = js.undefined
+  var configuration: js.UndefOr[NullableOption[TeamsTabConfiguration]] = js.undefined
+  
   // Name of the tab.
-  var displayName: js.UndefOr[String] = js.undefined
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The application that is linked to the tab. This cannot be changed after tab creation.
-  var teamsApp: js.UndefOr[TeamsApp] = js.undefined
-  // Deep link url of the tab instance. Read only.
-  var webUrl: js.UndefOr[String] = js.undefined
+  var teamsApp: js.UndefOr[NullableOption[TeamsApp]] = js.undefined
+  
+  // Deep link URL of the tab instance. Read only.
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object TeamsTab {
-  @scala.inline
-  def apply(
-    configuration: TeamsTabConfiguration = null,
-    displayName: String = null,
-    id: String = null,
-    teamsApp: TeamsApp = null,
-    webUrl: String = null
-  ): TeamsTab = {
+  
+  inline def apply(): TeamsTab = {
     val __obj = js.Dynamic.literal()
-    if (configuration != null) __obj.updateDynamic("configuration")(configuration.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (teamsApp != null) __obj.updateDynamic("teamsApp")(teamsApp.asInstanceOf[js.Any])
-    if (webUrl != null) __obj.updateDynamic("webUrl")(webUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsTab]
   }
+  
+  extension [Self <: TeamsTab](x: Self) {
+    
+    inline def setConfiguration(value: NullableOption[TeamsTabConfiguration]): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    
+    inline def setConfigurationNull: Self = StObject.set(x, "configuration", null)
+    
+    inline def setConfigurationUndefined: Self = StObject.set(x, "configuration", js.undefined)
+    
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setTeamsApp(value: NullableOption[TeamsApp]): Self = StObject.set(x, "teamsApp", value.asInstanceOf[js.Any])
+    
+    inline def setTeamsAppNull: Self = StObject.set(x, "teamsApp", null)
+    
+    inline def setTeamsAppUndefined: Self = StObject.set(x, "teamsApp", js.undefined)
+    
+    inline def setWebUrl(value: NullableOption[String]): Self = StObject.set(x, "webUrl", value.asInstanceOf[js.Any])
+    
+    inline def setWebUrlNull: Self = StObject.set(x, "webUrl", null)
+    
+    inline def setWebUrlUndefined: Self = StObject.set(x, "webUrl", js.undefined)
+  }
 }
-

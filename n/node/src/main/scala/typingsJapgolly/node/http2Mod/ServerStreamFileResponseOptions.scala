@@ -1,15 +1,17 @@
 package typingsJapgolly.node.http2Mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.node.fsMod.Stats
 import typingsJapgolly.node.httpMod.OutgoingHttpHeaders
+import typingsJapgolly.node.nodeColonfsMod.Stats
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerStreamFileResponseOptions extends js.Object {
+trait ServerStreamFileResponseOptions extends StObject {
+  
   var length: js.UndefOr[Double] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var statCheck: js.UndefOr[
     js.Function3[
       /* stats */ Stats, 
@@ -18,23 +20,34 @@ trait ServerStreamFileResponseOptions extends js.Object {
       Unit | Boolean
     ]
   ] = js.undefined
+  
   var waitForTrailers: js.UndefOr[Boolean] = js.undefined
 }
-
 object ServerStreamFileResponseOptions {
-  @scala.inline
-  def apply(
-    length: Int | Double = null,
-    offset: Int | Double = null,
-    statCheck: (/* stats */ Stats, /* headers */ OutgoingHttpHeaders, /* statOptions */ StatOptions) => CallbackTo[Unit | Boolean] = null,
-    waitForTrailers: js.UndefOr[Boolean] = js.undefined
-  ): ServerStreamFileResponseOptions = {
+  
+  inline def apply(): ServerStreamFileResponseOptions = {
     val __obj = js.Dynamic.literal()
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (statCheck != null) __obj.updateDynamic("statCheck")(js.Any.fromFunction3((t0: /* stats */ typingsJapgolly.node.fsMod.Stats, t1: /* headers */ typingsJapgolly.node.httpMod.OutgoingHttpHeaders, t2: /* statOptions */ typingsJapgolly.node.http2Mod.StatOptions) => statCheck(t0, t1, t2).runNow()))
-    if (!js.isUndefined(waitForTrailers)) __obj.updateDynamic("waitForTrailers")(waitForTrailers.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerStreamFileResponseOptions]
   }
+  
+  extension [Self <: ServerStreamFileResponseOptions](x: Self) {
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setStatCheck(
+      value: (/* stats */ Stats, /* headers */ OutgoingHttpHeaders, /* statOptions */ StatOptions) => Unit | Boolean
+    ): Self = StObject.set(x, "statCheck", js.Any.fromFunction3(value))
+    
+    inline def setStatCheckUndefined: Self = StObject.set(x, "statCheck", js.undefined)
+    
+    inline def setWaitForTrailers(value: Boolean): Self = StObject.set(x, "waitForTrailers", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForTrailersUndefined: Self = StObject.set(x, "waitForTrailers", js.undefined)
+  }
 }
-

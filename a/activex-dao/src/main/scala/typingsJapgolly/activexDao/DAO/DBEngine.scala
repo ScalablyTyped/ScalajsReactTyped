@@ -1,32 +1,19 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`1024`
+import typingsJapgolly.activexDao.activexDaoInts.`1024`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DAO.DBEngine")
 @js.native
-class DBEngine protected () extends js.Object {
-  @JSName("DAO.DBEngine_typekey")
-  var DAODotDBEngine_typekey: DBEngine = js.native
-  val DefaultPassword: String = js.native
-  var DefaultType: Double = js.native
-  val DefaultUser: String = js.native
-  @JSName("Errors")
-  val Errors_Original: Errors = js.native
-  var IniPath: String = js.native
-  var LoginTimeout: Double = js.native
-  @JSName("Properties")
-  val Properties_Original: Properties = js.native
-  var SystemDB: String = js.native
-  val Version: String = js.native
-  @JSName("Workspaces")
-  val Workspaces_Original: Workspaces = js.native
+trait DBEngine extends StObject {
+  
   def BeginTrans(): Unit = js.native
+  
   /** @param Option [Option=0] */
   def CommitTrans(): Unit = js.native
   def CommitTrans(Option: Double): Unit = js.native
+  
   /**
     * Compact a closed database
     *
@@ -40,9 +27,14 @@ class DBEngine protected () extends js.Object {
     */
   def CompactDatabase(SrcName: String, DstName: String): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: String, Options: Unit, password: String): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String, Options: DatabaseTypeEnum): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: String, Options: DatabaseTypeEnum, password: String): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: Unit, Options: Unit, password: String): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: Unit, Options: DatabaseTypeEnum): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: Unit, Options: DatabaseTypeEnum, password: String): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: LanguageConstants): Unit = js.native
+  def CompactDatabase(SrcName: String, DstName: String, DstLocale: LanguageConstants, Options: Unit, password: String): Unit = js.native
   def CompactDatabase(SrcName: String, DstName: String, DstLocale: LanguageConstants, Options: DatabaseTypeEnum): Unit = js.native
   def CompactDatabase(
     SrcName: String,
@@ -51,6 +43,7 @@ class DBEngine protected () extends js.Object {
     Options: DatabaseTypeEnum,
     password: String
   ): Unit = js.native
+  
   def CreateDatabase(Name: String, Locale: String): Database = js.native
   def CreateDatabase(Name: String, Locale: String, Option: DatabaseTypeEnum): Database = js.native
   /**
@@ -61,38 +54,82 @@ class DBEngine protected () extends js.Object {
     */
   def CreateDatabase(Name: String, Locale: LanguageConstants): Database = js.native
   def CreateDatabase(Name: String, Locale: LanguageConstants, Option: DatabaseTypeEnum): Database = js.native
+  
   def CreateWorkspace(Name: String, UserName: String, Password: String): Workspace = js.native
   def CreateWorkspace(Name: String, UserName: String, Password: String, UseType: WorkspaceTypeEnum): Workspace = js.native
-  def Errors(Item: js.Any): Error = js.native
+  
+  /* private */ @JSName("DAO.DBEngine_typekey")
+  var DAODotDBEngine_typekey: DBEngine = js.native
+  
+  val DefaultPassword: String = js.native
+  
+  var DefaultType: Double = js.native
+  
+  val DefaultUser: String = js.native
+  
+  def Errors(Item: Any): Error = js.native
+  @JSName("Errors")
+  val Errors_Original: Errors = js.native
+  
   /** Returns various statistics from the Jet engine */
   def ISAMStats(StatNum: ISAMStatsEnum): Double = js.native
   def ISAMStats(StatNum: ISAMStatsEnum, Reset: Boolean): Double = js.native
+  
   def Idle(): Unit = js.native
   def Idle(Action: IdleEnum): Unit = js.native
+  
+  var IniPath: String = js.native
+  
+  var LoginTimeout: Double = js.native
+  
   /**
     * @param Connect ODBC connection string; prepend with `ODBC;`
     */
   def OpenConnection(Name: String): Connection = js.native
+  def OpenConnection(Name: String, Options: Unit, ReadOnly: Boolean): Connection = js.native
+  def OpenConnection(Name: String, Options: Unit, ReadOnly: Boolean, Connect: String): Connection = js.native
+  def OpenConnection(Name: String, Options: Unit, ReadOnly: Unit, Connect: String): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean): Connection = js.native
   def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Boolean, Connect: String): Connection = js.native
+  def OpenConnection(Name: String, Options: DriverPromptEnum, ReadOnly: Unit, Connect: String): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean): Connection = js.native
   @JSName("OpenConnection")
   def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Boolean, Connect: String): Connection = js.native
+  @JSName("OpenConnection")
+  def OpenConnection_1024(Name: String, Options: `1024`, ReadOnly: Unit, Connect: String): Connection = js.native
+  
   def OpenDatabase(Name: String): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean): Database = js.native
   def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Boolean, Connect: String): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Boolean, ReadOnly: Unit, Connect: String): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Unit, ReadOnly: Boolean): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Unit, ReadOnly: Boolean, Connect: String): Database = js.native
+  def OpenDatabase(Name: String, Exclusive: Unit, ReadOnly: Unit, Connect: String): Database = js.native
+  
   def Properties(Item: String): Property = js.native
   def Properties(Item: Double): Property = js.native
+  @JSName("Properties")
+  val Properties_Original: Properties = js.native
+  
   def RegisterDatabase(Dsn: String, Driver: String, Silent: Boolean, Attributes: String): Unit = js.native
+  
   def RepairDatabase(Name: String): Unit = js.native
+  
   def Rollback(): Unit = js.native
-  def SetOption(Option: SetOptionEnum, Value: js.Any): Unit = js.native
+  
+  def SetOption(Option: SetOptionEnum, Value: Any): Unit = js.native
+  
+  var SystemDB: String = js.native
+  
+  val Version: String = js.native
+  
   def Workspaces(Item: String): Workspace = js.native
   def Workspaces(Item: Double): Workspace = js.native
+  @JSName("Workspaces")
+  val Workspaces_Original: Workspaces = js.native
 }
-

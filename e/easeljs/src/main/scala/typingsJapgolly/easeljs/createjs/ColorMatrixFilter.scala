@@ -1,15 +1,14 @@
 package typingsJapgolly.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.ColorMatrixFilter")
 @js.native
-class ColorMatrixFilter protected () extends Filter {
-  def this(matrix: js.Array[Double]) = this()
-  def this(matrix: ColorMatrix) = this()
+trait ColorMatrixFilter
+  extends StObject
+     with Filter {
+  
   // properties
   var matrix: js.Array[Double] | ColorMatrix = js.native
 }
-

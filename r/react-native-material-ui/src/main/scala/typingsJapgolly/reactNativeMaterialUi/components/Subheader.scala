@@ -1,48 +1,34 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeMaterialUi.AnonText
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNativeMaterialUi.anon.Text
 import typingsJapgolly.reactNativeMaterialUi.mod.SubheaderProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Subheader {
-  def apply(
-    text: String,
-    inset: js.UndefOr[Boolean] = js.undefined,
-    lines: Int | Double = null,
-    style: AnonText = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SubheaderProps, 
-    typingsJapgolly.reactNativeMaterialUi.mod.Subheader, 
-    Unit, 
-    SubheaderProps
-  ] = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset.asInstanceOf[js.Any])
-    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.SubheaderProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.Subheader](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.SubheaderProps])(children: _*)
+  inline def apply(text: String): Builder = {
+    val __props = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SubheaderProps]))
   }
+  
   @JSImport("react-native-material-ui", "Subheader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.Subheader] {
+    
+    inline def inset(value: Boolean): this.type = set("inset", value.asInstanceOf[js.Any])
+    
+    inline def lines(value: Double): this.type = set("lines", value.asInstanceOf[js.Any])
+    
+    inline def style(value: Text): this.type = set("style", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SubheaderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

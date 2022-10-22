@@ -1,21 +1,69 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "LatheGeometry")
 @js.native
-class LatheGeometry protected ()
-  extends typingsJapgolly.three.geometriesMod.LatheGeometry {
-  def this(points: js.Array[typingsJapgolly.three.vector2Mod.Vector2]) = this()
-  def this(points: js.Array[typingsJapgolly.three.vector2Mod.Vector2], segments: Double) = this()
-  def this(points: js.Array[typingsJapgolly.three.vector2Mod.Vector2], segments: Double, phiStart: Double) = this()
+/**
+  * @param points
+  * @param [segments=12]
+  * @param [phiStart=0]
+  * @param [phiLength=Math.PI * 2]
+  */
+open class LatheGeometry ()
+  extends typingsJapgolly.three.srcThreeMod.LatheGeometry {
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2]) = this()
+  def this(points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2], segments: Double) = this()
+  def this(points: Unit, segments: Double) = this()
   def this(
-    points: js.Array[typingsJapgolly.three.vector2Mod.Vector2],
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
+    segments: Double,
+    phiStart: Double
+  ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
+    segments: Unit,
+    phiStart: Double
+  ) = this()
+  def this(points: Unit, segments: Double, phiStart: Double) = this()
+  def this(points: Unit, segments: Unit, phiStart: Double) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
     segments: Double,
     phiStart: Double,
     phiLength: Double
   ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
+    segments: Double,
+    phiStart: Unit,
+    phiLength: Double
+  ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
+    segments: Unit,
+    phiStart: Double,
+    phiLength: Double
+  ) = this()
+  def this(
+    points: js.Array[typingsJapgolly.three.srcMathVector2Mod.Vector2],
+    segments: Unit,
+    phiStart: Unit,
+    phiLength: Double
+  ) = this()
+  def this(points: Unit, segments: Double, phiStart: Double, phiLength: Double) = this()
+  def this(points: Unit, segments: Double, phiStart: Unit, phiLength: Double) = this()
+  def this(points: Unit, segments: Unit, phiStart: Double, phiLength: Double) = this()
+  def this(points: Unit, segments: Unit, phiStart: Unit, phiLength: Double) = this()
 }
-
+/* static members */
+object LatheGeometry {
+  
+  @JSImport("three", "LatheGeometry")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromJSON(data: Any): typingsJapgolly.three.srcGeometriesLatheGeometryMod.LatheGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(data.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.three.srcGeometriesLatheGeometryMod.LatheGeometry]
+}

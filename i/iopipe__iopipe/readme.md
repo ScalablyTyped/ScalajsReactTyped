@@ -10,10 +10,10 @@ The IOpipe agent and plugins
 | ------------------ | :-------------: |
 | Full name          | @iopipe/iopipe |
 | Keywords           | serverless, agent, analytics, metrics, telemetry, tracing, distributed tracing, profiling |
-| # releases         | 27 |
-| # dependents       | 5 |
-| # downloads        | 77658 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 291.6666666666667 |
+| # stars            | 33.0 |
 
 ## Links
 - [Homepage](https://github.com/iopipe/the-meta-package#readme)

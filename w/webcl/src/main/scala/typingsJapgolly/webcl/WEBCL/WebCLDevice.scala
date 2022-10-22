@@ -1,29 +1,36 @@
 package typingsJapgolly.webcl.WEBCL
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.3
-trait WebCLDevice extends js.Object {
+trait WebCLDevice extends StObject {
+  
   def enableExtension(extensionName: String): Boolean
-  def getInfo(name: DeviceInfo): js.Any
+  
+  def getInfo(name: DeviceInfo): Any
+  
   def getSupportedExtensions(): js.Array[String]
 }
-
 object WebCLDevice {
-  @scala.inline
-  def apply(
-    enableExtension: String => CallbackTo[Boolean],
-    getInfo: DeviceInfo => CallbackTo[js.Any],
+  
+  inline def apply(
+    enableExtension: String => Boolean,
+    getInfo: DeviceInfo => Any,
     getSupportedExtensions: CallbackTo[js.Array[String]]
   ): WebCLDevice = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("enableExtension")(js.Any.fromFunction1((t0: java.lang.String) => enableExtension(t0).runNow()))
-    __obj.updateDynamic("getInfo")(js.Any.fromFunction1((t0: typingsJapgolly.webcl.WEBCL.DeviceInfo) => getInfo(t0).runNow()))
-    __obj.updateDynamic("getSupportedExtensions")(getSupportedExtensions.toJsFn)
+    val __obj = js.Dynamic.literal(enableExtension = js.Any.fromFunction1(enableExtension), getInfo = js.Any.fromFunction1(getInfo), getSupportedExtensions = getSupportedExtensions.toJsFn)
     __obj.asInstanceOf[WebCLDevice]
   }
+  
+  extension [Self <: WebCLDevice](x: Self) {
+    
+    inline def setEnableExtension(value: String => Boolean): Self = StObject.set(x, "enableExtension", js.Any.fromFunction1(value))
+    
+    inline def setGetInfo(value: DeviceInfo => Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    
+    inline def setGetSupportedExtensions(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "getSupportedExtensions", value.toJsFn)
+  }
 }
-

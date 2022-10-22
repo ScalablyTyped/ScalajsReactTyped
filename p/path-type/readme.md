@@ -1,7 +1,7 @@
 
 # Scala.js typings for path-type
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0
 
 ## Library description:
 Check if a path is a file, directory, or symlink
@@ -9,11 +9,11 @@ Check if a path is a file, directory, or symlink
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | path-type |
-| Keywords           | path, fs, type, is, check, directory, dir, file, filepath, symlink, symbolic, link, stat, stats, filesystem |
+| Keywords           | path, fs, type, is, check, directory, file, filepath, symlink, symbolic, link, stat, stats, filesystem |
 | # releases         | 2 |
-| # dependents       | 86 |
-| # downloads        | 899242984 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8976717933333334E8 |
+| # stars            | 65.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/path-type#readme)

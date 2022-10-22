@@ -1,12 +1,12 @@
 package typingsJapgolly.dynogels.mod.AWS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.FileSystemCredentials")
 @js.native
-class FileSystemCredentials protected ()
+open class FileSystemCredentials protected ()
   extends typingsJapgolly.awsSdk.mod.FileSystemCredentials {
   /**
     * Creates a new FileSystemCredentials object from a filename.
@@ -14,4 +14,3 @@ class FileSystemCredentials protected ()
     */
   def this(filename: String) = this()
 }
-

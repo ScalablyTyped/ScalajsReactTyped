@@ -1,39 +1,32 @@
 package typingsJapgolly.less
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lessStrings {
-  @js.native
-  sealed trait always extends js.Object
   
   @js.native
-  sealed trait comment extends js.Object
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait parens extends js.Object
+  sealed trait comment extends StObject
+  inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
-  sealed trait `parens-division` extends js.Object
+  sealed trait parens extends StObject
+  inline def parens: parens = "parens".asInstanceOf[parens]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait `parens-division` extends StObject
+  inline def `parens-division`: `parens-division` = "parens-division".asInstanceOf[`parens-division`]
   
   @js.native
-  sealed trait `strict-legacy` extends js.Object
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
-  @scala.inline
-  def parens: parens = "parens".asInstanceOf[parens]
-  @scala.inline
-  def `parens-division`: `parens-division` = "parens-division".asInstanceOf[`parens-division`]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def `strict-legacy`: `strict-legacy` = "strict-legacy".asInstanceOf[`strict-legacy`]
+  @js.native
+  sealed trait `strict-legacy` extends StObject
+  inline def `strict-legacy`: `strict-legacy` = "strict-legacy".asInstanceOf[`strict-legacy`]
 }
-

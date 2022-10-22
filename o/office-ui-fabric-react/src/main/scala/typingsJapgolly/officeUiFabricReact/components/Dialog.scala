@@ -2,122 +2,118 @@ package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLButtonElement
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typingsJapgolly.officeUiFabricReact.dialogContentTypesMod.DialogType
-import typingsJapgolly.officeUiFabricReact.dialogContentTypesMod.IDialogContentProps
-import typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialog
-import typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialogProps
-import typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialogStyleProps
-import typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialogStyles
-import typingsJapgolly.officeUiFabricReact.modalTypesMod.IModalProps
-import typingsJapgolly.officeUiFabricReact.withResponsiveModeMod.ResponsiveMode
-import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.uifabricMergeStyles.irawstylebaseMod.ICSSPixelUnitRule
-import typingsJapgolly.uifabricMergeStyles.irawstylebaseMod.ICSSRule
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLButtonElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.DialogType
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogContentDottypesMod.IDialogContentProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogDottypesMod.IDialog
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogDottypesMod.IDialogProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogDottypesMod.IDialogStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogDottypesMod.IDialogStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsModalModalDottypesMod.IModalProps
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithResponsiveModeMod.ResponsiveMode
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIrawstylebaseMod.ICSSPixelUnitRule
+import typingsJapgolly.uifabricMergeStyles.libIrawstylebaseMod.ICSSRule
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dialog {
-  def apply(
-    ariaDescribedById: String = null,
-    ariaLabelledById: String = null,
-    className: String = null,
-    closeButtonAriaLabel: String = null,
-    componentRef: IRefObject[IDialog] = null,
-    containerClassName: String = null,
-    contentClassName: String = null,
-    dialogContentProps: IDialogContentProps = null,
-    elementToFocusOnDismiss: HTMLElement = null,
-    firstFocusableSelector: String | js.Function0[String] = null,
-    forceFocusInsideTrap: js.UndefOr[Boolean] = js.undefined,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    ignoreExternalFocusing: js.UndefOr[Boolean] = js.undefined,
-    isBlocking: js.UndefOr[Boolean] = js.undefined,
-    isClickableOutsideFocusTrap: js.UndefOr[Boolean] = js.undefined,
-    isDarkOverlay: js.UndefOr[Boolean] = js.undefined,
-    isOpen: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: ICSSRule | ICSSPixelUnitRule = null,
-    minWidth: ICSSRule | ICSSPixelUnitRule = null,
-    modalProps: IModalProps = null,
-    onDismiss: /* ev */ js.UndefOr[ReactMouseEventFrom[HTMLButtonElement]] => CallbackTo[js.Any] = null,
-    onDismissed: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onLayerDidMount: js.UndefOr[Callback] = js.undefined,
-    onLayerMounted: js.UndefOr[Callback] = js.undefined,
-    responsiveMode: ResponsiveMode = null,
-    styles: IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles] = null,
-    subText: String = null,
-    theme: ITheme = null,
-    title: String | Element = null,
-    topButtonsProps: js.Array[IButtonProps] = null,
-    `type`: DialogType = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDialogProps, 
-    LegacyRef[typingsJapgolly.officeUiFabricReact.dialogBaseMod.DialogBase], 
-    Unit, 
-    IDialogProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaDescribedById != null) __obj.updateDynamic("ariaDescribedById")(ariaDescribedById.asInstanceOf[js.Any])
-    if (ariaLabelledById != null) __obj.updateDynamic("ariaLabelledById")(ariaLabelledById.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (closeButtonAriaLabel != null) __obj.updateDynamic("closeButtonAriaLabel")(closeButtonAriaLabel.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
-    if (dialogContentProps != null) __obj.updateDynamic("dialogContentProps")(dialogContentProps.asInstanceOf[js.Any])
-    if (elementToFocusOnDismiss != null) __obj.updateDynamic("elementToFocusOnDismiss")(elementToFocusOnDismiss.asInstanceOf[js.Any])
-    if (firstFocusableSelector != null) __obj.updateDynamic("firstFocusableSelector")(firstFocusableSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceFocusInsideTrap)) __obj.updateDynamic("forceFocusInsideTrap")(forceFocusInsideTrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreExternalFocusing)) __obj.updateDynamic("ignoreExternalFocusing")(ignoreExternalFocusing.asInstanceOf[js.Any])
-    if (!js.isUndefined(isBlocking)) __obj.updateDynamic("isBlocking")(isBlocking.asInstanceOf[js.Any])
-    if (!js.isUndefined(isClickableOutsideFocusTrap)) __obj.updateDynamic("isClickableOutsideFocusTrap")(isClickableOutsideFocusTrap.asInstanceOf[js.Any])
-    if (!js.isUndefined(isDarkOverlay)) __obj.updateDynamic("isDarkOverlay")(isDarkOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (modalProps != null) __obj.updateDynamic("modalProps")(modalProps.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction1((t0: /* ev */ js.UndefOr[
-  japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLButtonElement]]) => onDismiss(t0).runNow()))
-    onDismissed.foreach(p => __obj.updateDynamic("onDismissed")(p.toJsFn))
-    onLayerDidMount.foreach(p => __obj.updateDynamic("onLayerDidMount")(p.toJsFn))
-    onLayerMounted.foreach(p => __obj.updateDynamic("onLayerMounted")(p.toJsFn))
-    if (responsiveMode != null) __obj.updateDynamic("responsiveMode")(responsiveMode.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (subText != null) __obj.updateDynamic("subText")(subText.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (topButtonsProps != null) __obj.updateDynamic("topButtonsProps")(topButtonsProps.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialogProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.react.mod.LegacyRef[typingsJapgolly.officeUiFabricReact.dialogBaseMod.DialogBase]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.dialogTypesMod.IDialogProps])(children: _*)
-  }
-  @JSImport("office-ui-fabric-react/lib/Dialog", JSImport.Default)
+  @JSImport("office-ui-fabric-react", "Dialog")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDialogDialogDotbaseMod.DialogBase
+        ] {
+    
+    inline def ariaDescribedById(value: String): this.type = set("ariaDescribedById", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelledById(value: String): this.type = set("ariaLabelledById", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def closeButtonAriaLabel(value: String): this.type = set("closeButtonAriaLabel", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IDialog]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDialog | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDialog | Null) => value(t0).runNow()))
+    
+    inline def containerClassName(value: String): this.type = set("containerClassName", value.asInstanceOf[js.Any])
+    
+    inline def contentClassName(value: String): this.type = set("contentClassName", value.asInstanceOf[js.Any])
+    
+    inline def dialogContentProps(value: IDialogContentProps): this.type = set("dialogContentProps", value.asInstanceOf[js.Any])
+    
+    inline def elementToFocusOnDismiss(value: HTMLElement): this.type = set("elementToFocusOnDismiss", value.asInstanceOf[js.Any])
+    
+    inline def firstFocusableSelector(value: String | js.Function0[String]): this.type = set("firstFocusableSelector", value.asInstanceOf[js.Any])
+    
+    inline def firstFocusableSelectorCallbackTo(value: CallbackTo[String]): this.type = set("firstFocusableSelector", value.toJsFn)
+    
+    inline def forceFocusInsideTrap(value: Boolean): this.type = set("forceFocusInsideTrap", value.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def ignoreExternalFocusing(value: Boolean): this.type = set("ignoreExternalFocusing", value.asInstanceOf[js.Any])
+    
+    inline def isBlocking(value: Boolean): this.type = set("isBlocking", value.asInstanceOf[js.Any])
+    
+    inline def isClickableOutsideFocusTrap(value: Boolean): this.type = set("isClickableOutsideFocusTrap", value.asInstanceOf[js.Any])
+    
+    inline def isDarkOverlay(value: Boolean): this.type = set("isDarkOverlay", value.asInstanceOf[js.Any])
+    
+    inline def isOpen(value: Boolean): this.type = set("isOpen", value.asInstanceOf[js.Any])
+    
+    inline def maxWidth(value: ICSSRule | ICSSPixelUnitRule): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def minWidth(value: ICSSRule | ICSSPixelUnitRule): this.type = set("minWidth", value.asInstanceOf[js.Any])
+    
+    inline def modalProps(value: IModalProps): this.type = set("modalProps", value.asInstanceOf[js.Any])
+    
+    inline def onDismiss(value: /* ev */ js.UndefOr[ReactMouseEventFrom[HTMLButtonElement]] => Any): this.type = set("onDismiss", js.Any.fromFunction1(value))
+    
+    inline def onDismissed(value: CallbackTo[Any]): this.type = set("onDismissed", value.toJsFn)
+    
+    inline def onLayerDidMount(value: Callback): this.type = set("onLayerDidMount", value.toJsFn)
+    
+    inline def onLayerMounted(value: Callback): this.type = set("onLayerMounted", value.toJsFn)
+    
+    inline def responsiveMode(value: ResponsiveMode): this.type = set("responsiveMode", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IDialogStyleProps, IDialogStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDialogStyleProps => DeepPartial[IDialogStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def subText(value: String): this.type = set("subText", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String | Element): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleVdomElement(value: VdomElement): this.type = set("title", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def topButtonsProps(value: js.Array[IButtonProps]): this.type = set("topButtonsProps", value.asInstanceOf[js.Any])
+    
+    inline def topButtonsPropsVarargs(value: IButtonProps*): this.type = set("topButtonsProps", js.Array(value*))
+    
+    inline def `type`(value: DialogType): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Dialog.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IDialogProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

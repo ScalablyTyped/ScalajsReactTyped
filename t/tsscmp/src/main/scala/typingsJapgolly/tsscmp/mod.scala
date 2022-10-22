@@ -1,13 +1,15 @@
 package typingsJapgolly.tsscmp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tsscmp", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(a: String, b: String): Boolean = js.native
-  def apply(a: Double, b: Double): Boolean = js.native
+object mod {
+  
+  inline def apply(a: String, b: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("tsscmp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,64 +1,118 @@
 package typingsJapgolly.wampy.mod
 
-import japgolly.scalajs.react.CallbackTo
+import typingsJapgolly.wampy.wampyStrings.loose
+import typingsJapgolly.wampy.wampyStrings.strict
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WampyOptions extends js.Object {
+trait WampyOptions extends StObject {
+  
   var authid: js.UndefOr[String] = js.undefined
+  
   var authmethods: js.UndefOr[js.Array[String]] = js.undefined
+  
   var autoReconnect: js.UndefOr[Boolean] = js.undefined
-  var helloCustomDetails: js.UndefOr[js.Any] = js.undefined
+  
+  var helloCustomDetails: js.UndefOr[Any] = js.undefined
+  
   var maxRetries: js.UndefOr[Double] = js.undefined
+  
   var onChallenge: js.UndefOr[ChallengeCallback] = js.undefined
+  
   var onClose: js.UndefOr[Callback] = js.undefined
+  
   var onConnect: js.UndefOr[Callback] = js.undefined
+  
   var onError: js.UndefOr[Callback] = js.undefined
+  
   var onReconnect: js.UndefOr[Callback] = js.undefined
+  
   var onReconnectSuccess: js.UndefOr[Callback] = js.undefined
+  
   var realm: js.UndefOr[String] = js.undefined
+  
   var reconnectInterval: js.UndefOr[Double] = js.undefined
-  var serializer: js.UndefOr[js.Any] = js.undefined
-  var ws: js.UndefOr[js.Any] = js.undefined
+  
+  var serializer: js.UndefOr[Any] = js.undefined
+  
+  var uriValidation: js.UndefOr[strict | loose] = js.undefined
+  
+  var ws: js.UndefOr[Any] = js.undefined
 }
-
 object WampyOptions {
-  @scala.inline
-  def apply(
-    authid: String = null,
-    authmethods: js.Array[String] = null,
-    autoReconnect: js.UndefOr[Boolean] = js.undefined,
-    helloCustomDetails: js.Any = null,
-    maxRetries: Int | Double = null,
-    onChallenge: (/* auth_method */ String, /* extra */ Dict) => CallbackTo[String] = null,
-    onClose: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    onConnect: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    onError: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    onReconnect: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    onReconnectSuccess: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    realm: String = null,
-    reconnectInterval: Int | Double = null,
-    serializer: js.Any = null,
-    ws: js.Any = null
-  ): WampyOptions = {
+  
+  inline def apply(): WampyOptions = {
     val __obj = js.Dynamic.literal()
-    if (authid != null) __obj.updateDynamic("authid")(authid.asInstanceOf[js.Any])
-    if (authmethods != null) __obj.updateDynamic("authmethods")(authmethods.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect.asInstanceOf[js.Any])
-    if (helloCustomDetails != null) __obj.updateDynamic("helloCustomDetails")(helloCustomDetails.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (onChallenge != null) __obj.updateDynamic("onChallenge")(js.Any.fromFunction2((t0: /* auth_method */ java.lang.String, t1: /* extra */ typingsJapgolly.wampy.mod.Dict) => onChallenge(t0, t1).runNow()))
-    onClose.foreach(p => __obj.updateDynamic("onClose")(p.toJsFn))
-    onConnect.foreach(p => __obj.updateDynamic("onConnect")(p.toJsFn))
-    onError.foreach(p => __obj.updateDynamic("onError")(p.toJsFn))
-    onReconnect.foreach(p => __obj.updateDynamic("onReconnect")(p.toJsFn))
-    onReconnectSuccess.foreach(p => __obj.updateDynamic("onReconnectSuccess")(p.toJsFn))
-    if (realm != null) __obj.updateDynamic("realm")(realm.asInstanceOf[js.Any])
-    if (reconnectInterval != null) __obj.updateDynamic("reconnectInterval")(reconnectInterval.asInstanceOf[js.Any])
-    if (serializer != null) __obj.updateDynamic("serializer")(serializer.asInstanceOf[js.Any])
-    if (ws != null) __obj.updateDynamic("ws")(ws.asInstanceOf[js.Any])
     __obj.asInstanceOf[WampyOptions]
   }
+  
+  extension [Self <: WampyOptions](x: Self) {
+    
+    inline def setAuthid(value: String): Self = StObject.set(x, "authid", value.asInstanceOf[js.Any])
+    
+    inline def setAuthidUndefined: Self = StObject.set(x, "authid", js.undefined)
+    
+    inline def setAuthmethods(value: js.Array[String]): Self = StObject.set(x, "authmethods", value.asInstanceOf[js.Any])
+    
+    inline def setAuthmethodsUndefined: Self = StObject.set(x, "authmethods", js.undefined)
+    
+    inline def setAuthmethodsVarargs(value: String*): Self = StObject.set(x, "authmethods", js.Array(value*))
+    
+    inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
+    
+    inline def setAutoReconnectUndefined: Self = StObject.set(x, "autoReconnect", js.undefined)
+    
+    inline def setHelloCustomDetails(value: Any): Self = StObject.set(x, "helloCustomDetails", value.asInstanceOf[js.Any])
+    
+    inline def setHelloCustomDetailsUndefined: Self = StObject.set(x, "helloCustomDetails", js.undefined)
+    
+    inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+    
+    inline def setOnChallenge(value: (/* auth_method */ String, /* extra */ Dict) => String): Self = StObject.set(x, "onChallenge", js.Any.fromFunction2(value))
+    
+    inline def setOnChallengeUndefined: Self = StObject.set(x, "onChallenge", js.undefined)
+    
+    inline def setOnClose(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onClose", value.toJsFn)
+    
+    inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+    
+    inline def setOnConnect(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onConnect", value.toJsFn)
+    
+    inline def setOnConnectUndefined: Self = StObject.set(x, "onConnect", js.undefined)
+    
+    inline def setOnError(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onError", value.toJsFn)
+    
+    inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+    
+    inline def setOnReconnect(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onReconnect", value.toJsFn)
+    
+    inline def setOnReconnectSuccess(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onReconnectSuccess", value.toJsFn)
+    
+    inline def setOnReconnectSuccessUndefined: Self = StObject.set(x, "onReconnectSuccess", js.undefined)
+    
+    inline def setOnReconnectUndefined: Self = StObject.set(x, "onReconnect", js.undefined)
+    
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    
+    inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+    
+    inline def setReconnectInterval(value: Double): Self = StObject.set(x, "reconnectInterval", value.asInstanceOf[js.Any])
+    
+    inline def setReconnectIntervalUndefined: Self = StObject.set(x, "reconnectInterval", js.undefined)
+    
+    inline def setSerializer(value: Any): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
+    
+    inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+    
+    inline def setUriValidation(value: strict | loose): Self = StObject.set(x, "uriValidation", value.asInstanceOf[js.Any])
+    
+    inline def setUriValidationUndefined: Self = StObject.set(x, "uriValidation", js.undefined)
+    
+    inline def setWs(value: Any): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+    
+    inline def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
+  }
 }
-

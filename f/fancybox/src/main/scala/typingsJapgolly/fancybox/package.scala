@@ -1,16 +1,19 @@
-package typingsJapgolly
+package typingsJapgolly.fancybox
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.jquery.JQuery.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object fancybox {
-  type FancyBoxInteractionMethod = js.Function2[
-    /* slide */ js.UndefOr[typingsJapgolly.fancybox.FancyBoxSlide], 
-    /* event */ js.UndefOr[typingsJapgolly.jquery.JQuery_.Event], 
-    typingsJapgolly.fancybox.FancyBoxInteractionTypes
-  ]
-  type FancyBoxInteractions = typingsJapgolly.fancybox.FancyBoxInteractionTypes | typingsJapgolly.fancybox.FancyBoxInteractionMethod
-  type FancyBoxInternationalizationOptions = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.fancybox.FancyBoxInternationalizatioObject]
-  type FancyBoxPlainObject = org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean | js.Function0[scala.Unit]]
-}
+
+type FancyBoxInteractionMethod = js.Function2[
+/* slide */ js.UndefOr[FancyBoxSlide], 
+/* event */ js.UndefOr[Event], 
+FancyBoxInteractionTypes]
+
+type FancyBoxInteractions = FancyBoxInteractionTypes | FancyBoxInteractionMethod
+
+type FancyBoxInternationalizationOptions = StringDictionary[FancyBoxInternationalizatioObject]
+
+type FancyBoxPlainObject = StringDictionary[String | Double | Boolean | js.Function0[Unit]]

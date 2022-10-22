@@ -1,11 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RangeSelectorOptions extends js.Object {
+trait RangeSelectorOptions extends StObject {
+  
   /**
     * (Highstock, Gantt) Whether to enable all buttons from the start. By
     * default buttons are only enabled if the corresponding time range exists
@@ -13,15 +13,18 @@ trait RangeSelectorOptions extends js.Object {
     * different time ranges.
     */
   var allButtonsEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock, Gantt) Positioning for the button row.
     */
   var buttonPosition: js.UndefOr[RangeSelectorButtonPositionOptions] = js.undefined
+  
   /**
     * (Highstock, Gantt) The space in pixels between the buttons in the range
     * selector.
     */
   var buttonSpacing: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) A collection of attributes for the buttons. The object
     * takes SVG attributes like `fill`, `stroke`, `stroke-width`, as well as
@@ -37,63 +40,107 @@ trait RangeSelectorOptions extends js.Object {
     * different states.
     */
   var buttonTheme: js.UndefOr[SVGAttributes] = js.undefined
+  
   /**
     * (Highstock, Gantt) An array of configuration objects for the buttons.
     *
-    * Defaults to
-    *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var buttons: js.UndefOr[js.Array[RangeSelectorButtonsOptions]] = js.undefined
+  
   /**
-    * (Highstock, Gantt) Enable or disable the range selector.
+    * (Highstock, Gantt) Whether to collapse the range selector buttons into a
+    * dropdown when there is not enough room to show everything in a single
+    * row, instead of dividing the range selector into multiple rows. Can be
+    * one of the following:
+    *
+    * - `always`: Always collapse
+    *
+    * - `responsive`: Only collapse when there is not enough room
+    *
+    * - `never`: Never collapse
+    */
+  var dropdown: js.UndefOr[OptionsDropdownValue] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) Enable or disable the range selector. Default to
+    * `true` for stock charts, using the `stockChart` factory.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock, Gantt) When the rangeselector is floating, the plot area does
     * not reserve space for it. This opens for positioning anywhere on the
     * chart.
     */
   var floating: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock, Gantt) The border color of the date input boxes.
     */
   var inputBoxBorderColor: js.UndefOr[ColorString] = js.undefined
+  
   /**
     * (Highstock, Gantt) The pixel height of the date input boxes.
     */
   var inputBoxHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-    * (Highstock, Gantt) The pixel width of the date input boxes.
+    * (Highstock, Gantt) The pixel width of the date input boxes. When
+    * `undefined`, the width is fitted to the rendered content.
     */
   var inputBoxWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) The date format in the input boxes when not selected
     * for editing. Defaults to `%b %e, %Y`.
+    *
+    * This is used to determine which type of input to show, `datetime-local`,
+    * `date` or `time` and falling back to `text` when the browser does not
+    * support the input type or the format contains milliseconds.
     */
   var inputDateFormat: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock, Gantt) A custom callback function to parse values entered in
     * the input boxes and return a valid JavaScript time as milliseconds since
-    * 1970.
+    * 1970. The first argument passed is a value to parse, second is a boolean
+    * indicating use of the UTC time.
+    *
+    * This will only get called for inputs of type `text`. Since v8.2.3, the
+    * input type is dynamically determined based on the granularity of the
+    * `inputDateFormat` and the browser support.
     */
   var inputDateParser: js.UndefOr[RangeSelectorParseCallbackFunction] = js.undefined
+  
   /**
     * (Highstock, Gantt) The date format in the input boxes when they are
     * selected for editing. This must be a format that is recognized by
     * JavaScript Date.parse.
+    *
+    * This will only be used for inputs of type `text`. Since v8.2.3, the input
+    * type is dynamically determined based on the granularity of the
+    * `inputDateFormat` and the browser support.
     */
   var inputEditDateFormat: js.UndefOr[String] = js.undefined
+  
   /**
-    * (Highstock, Gantt) Enable or disable the date input boxes. Defaults to
-    * enabled when there is enough space, disabled if not (typically mobile).
+    * (Highstock, Gantt) Enable or disable the date input boxes.
     */
   var inputEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock, Gantt) Positioning for the input boxes. Allowed properties
     * are `align`, `x` and `y`.
     */
   var inputPosition: js.UndefOr[RangeSelectorInputPositionOptions] = js.undefined
+  
+  /**
+    * (Highstock, Gantt) The space in pixels between the labels and the date
+    * input boxes in the range selector.
+    */
+  var inputSpacing: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) CSS for the HTML inputs in the range selector.
     *
@@ -102,6 +149,7 @@ trait RangeSelectorOptions extends js.Object {
     * active.
     */
   var inputStyle: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highstock, Gantt) CSS styles for the labels - the Zoom, From and To
     * texts.
@@ -110,75 +158,131 @@ trait RangeSelectorOptions extends js.Object {
     * class.
     */
   var labelStyle: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highstock, Gantt) The index of the button to appear pre-selected.
     */
   var selected: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) The vertical alignment of the rangeselector box.
     * Allowed properties are `top`, `middle`, `bottom`.
     */
   var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
+  
   /**
     * (Highstock, Gantt) The x offset of the range selector relative to its
     * horizontal alignment within `chart.spacingLeft` and `chart.spacingRight`.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) The y offset of the range selector relative to its
     * horizontal alignment within `chart.spacingLeft` and `chart.spacingRight`.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object RangeSelectorOptions {
-  @scala.inline
-  def apply(
-    allButtonsEnabled: js.UndefOr[Boolean] = js.undefined,
-    buttonPosition: RangeSelectorButtonPositionOptions = null,
-    buttonSpacing: Int | Double = null,
-    buttonTheme: SVGAttributes = null,
-    buttons: js.Array[RangeSelectorButtonsOptions] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    inputBoxBorderColor: ColorString = null,
-    inputBoxHeight: Int | Double = null,
-    inputBoxWidth: Int | Double = null,
-    inputDateFormat: String = null,
-    inputDateParser: /* value */ String => CallbackTo[Double] = null,
-    inputEditDateFormat: String = null,
-    inputEnabled: js.UndefOr[Boolean] = js.undefined,
-    inputPosition: RangeSelectorInputPositionOptions = null,
-    inputStyle: CSSObject = null,
-    labelStyle: CSSObject = null,
-    selected: Int | Double = null,
-    verticalAlign: VerticalAlignValue = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): RangeSelectorOptions = {
+  
+  inline def apply(): RangeSelectorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allButtonsEnabled)) __obj.updateDynamic("allButtonsEnabled")(allButtonsEnabled.asInstanceOf[js.Any])
-    if (buttonPosition != null) __obj.updateDynamic("buttonPosition")(buttonPosition.asInstanceOf[js.Any])
-    if (buttonSpacing != null) __obj.updateDynamic("buttonSpacing")(buttonSpacing.asInstanceOf[js.Any])
-    if (buttonTheme != null) __obj.updateDynamic("buttonTheme")(buttonTheme.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
-    if (inputBoxBorderColor != null) __obj.updateDynamic("inputBoxBorderColor")(inputBoxBorderColor.asInstanceOf[js.Any])
-    if (inputBoxHeight != null) __obj.updateDynamic("inputBoxHeight")(inputBoxHeight.asInstanceOf[js.Any])
-    if (inputBoxWidth != null) __obj.updateDynamic("inputBoxWidth")(inputBoxWidth.asInstanceOf[js.Any])
-    if (inputDateFormat != null) __obj.updateDynamic("inputDateFormat")(inputDateFormat.asInstanceOf[js.Any])
-    if (inputDateParser != null) __obj.updateDynamic("inputDateParser")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => inputDateParser(t0).runNow()))
-    if (inputEditDateFormat != null) __obj.updateDynamic("inputEditDateFormat")(inputEditDateFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(inputEnabled)) __obj.updateDynamic("inputEnabled")(inputEnabled.asInstanceOf[js.Any])
-    if (inputPosition != null) __obj.updateDynamic("inputPosition")(inputPosition.asInstanceOf[js.Any])
-    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle.asInstanceOf[js.Any])
-    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle.asInstanceOf[js.Any])
-    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
-    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[RangeSelectorOptions]
   }
+  
+  extension [Self <: RangeSelectorOptions](x: Self) {
+    
+    inline def setAllButtonsEnabled(value: Boolean): Self = StObject.set(x, "allButtonsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAllButtonsEnabledUndefined: Self = StObject.set(x, "allButtonsEnabled", js.undefined)
+    
+    inline def setButtonPosition(value: RangeSelectorButtonPositionOptions): Self = StObject.set(x, "buttonPosition", value.asInstanceOf[js.Any])
+    
+    inline def setButtonPositionUndefined: Self = StObject.set(x, "buttonPosition", js.undefined)
+    
+    inline def setButtonSpacing(value: Double): Self = StObject.set(x, "buttonSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setButtonSpacingUndefined: Self = StObject.set(x, "buttonSpacing", js.undefined)
+    
+    inline def setButtonTheme(value: SVGAttributes): Self = StObject.set(x, "buttonTheme", value.asInstanceOf[js.Any])
+    
+    inline def setButtonThemeUndefined: Self = StObject.set(x, "buttonTheme", js.undefined)
+    
+    inline def setButtons(value: js.Array[RangeSelectorButtonsOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: RangeSelectorButtonsOptions*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setDropdown(value: OptionsDropdownValue): Self = StObject.set(x, "dropdown", value.asInstanceOf[js.Any])
+    
+    inline def setDropdownUndefined: Self = StObject.set(x, "dropdown", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+    
+    inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+    
+    inline def setInputBoxBorderColor(value: ColorString): Self = StObject.set(x, "inputBoxBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def setInputBoxBorderColorUndefined: Self = StObject.set(x, "inputBoxBorderColor", js.undefined)
+    
+    inline def setInputBoxHeight(value: Double): Self = StObject.set(x, "inputBoxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setInputBoxHeightUndefined: Self = StObject.set(x, "inputBoxHeight", js.undefined)
+    
+    inline def setInputBoxWidth(value: Double): Self = StObject.set(x, "inputBoxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setInputBoxWidthUndefined: Self = StObject.set(x, "inputBoxWidth", js.undefined)
+    
+    inline def setInputDateFormat(value: String): Self = StObject.set(x, "inputDateFormat", value.asInstanceOf[js.Any])
+    
+    inline def setInputDateFormatUndefined: Self = StObject.set(x, "inputDateFormat", js.undefined)
+    
+    inline def setInputDateParser(value: /* value */ String => Double): Self = StObject.set(x, "inputDateParser", js.Any.fromFunction1(value))
+    
+    inline def setInputDateParserUndefined: Self = StObject.set(x, "inputDateParser", js.undefined)
+    
+    inline def setInputEditDateFormat(value: String): Self = StObject.set(x, "inputEditDateFormat", value.asInstanceOf[js.Any])
+    
+    inline def setInputEditDateFormatUndefined: Self = StObject.set(x, "inputEditDateFormat", js.undefined)
+    
+    inline def setInputEnabled(value: Boolean): Self = StObject.set(x, "inputEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setInputEnabledUndefined: Self = StObject.set(x, "inputEnabled", js.undefined)
+    
+    inline def setInputPosition(value: RangeSelectorInputPositionOptions): Self = StObject.set(x, "inputPosition", value.asInstanceOf[js.Any])
+    
+    inline def setInputPositionUndefined: Self = StObject.set(x, "inputPosition", js.undefined)
+    
+    inline def setInputSpacing(value: Double): Self = StObject.set(x, "inputSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setInputSpacingUndefined: Self = StObject.set(x, "inputSpacing", js.undefined)
+    
+    inline def setInputStyle(value: CSSObject): Self = StObject.set(x, "inputStyle", value.asInstanceOf[js.Any])
+    
+    inline def setInputStyleUndefined: Self = StObject.set(x, "inputStyle", js.undefined)
+    
+    inline def setLabelStyle(value: CSSObject): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLabelStyleUndefined: Self = StObject.set(x, "labelStyle", js.undefined)
+    
+    inline def setSelected(value: Double): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    
+    inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

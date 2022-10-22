@@ -1,38 +1,63 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextColumn extends js.Object {
+trait TextColumn extends StObject {
+  
   // Whether to allow multiple lines of text.
-  var allowMultipleLines: js.UndefOr[Boolean] = js.undefined
+  var allowMultipleLines: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Whether updates to this column should replace existing text, or append to it.
-  var appendChangesToExistingText: js.UndefOr[Boolean] = js.undefined
+  var appendChangesToExistingText: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // The size of the text box.
-  var linesForEditing: js.UndefOr[Double] = js.undefined
+  var linesForEditing: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The maximum number of characters for the value.
-  var maxLength: js.UndefOr[Double] = js.undefined
+  var maxLength: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // The type of text being stored. Must be one of plain or richText
-  var textType: js.UndefOr[String] = js.undefined
+  var textType: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object TextColumn {
-  @scala.inline
-  def apply(
-    allowMultipleLines: js.UndefOr[Boolean] = js.undefined,
-    appendChangesToExistingText: js.UndefOr[Boolean] = js.undefined,
-    linesForEditing: Int | Double = null,
-    maxLength: Int | Double = null,
-    textType: String = null
-  ): TextColumn = {
+  
+  inline def apply(): TextColumn = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowMultipleLines)) __obj.updateDynamic("allowMultipleLines")(allowMultipleLines.asInstanceOf[js.Any])
-    if (!js.isUndefined(appendChangesToExistingText)) __obj.updateDynamic("appendChangesToExistingText")(appendChangesToExistingText.asInstanceOf[js.Any])
-    if (linesForEditing != null) __obj.updateDynamic("linesForEditing")(linesForEditing.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (textType != null) __obj.updateDynamic("textType")(textType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextColumn]
   }
+  
+  extension [Self <: TextColumn](x: Self) {
+    
+    inline def setAllowMultipleLines(value: NullableOption[Boolean]): Self = StObject.set(x, "allowMultipleLines", value.asInstanceOf[js.Any])
+    
+    inline def setAllowMultipleLinesNull: Self = StObject.set(x, "allowMultipleLines", null)
+    
+    inline def setAllowMultipleLinesUndefined: Self = StObject.set(x, "allowMultipleLines", js.undefined)
+    
+    inline def setAppendChangesToExistingText(value: NullableOption[Boolean]): Self = StObject.set(x, "appendChangesToExistingText", value.asInstanceOf[js.Any])
+    
+    inline def setAppendChangesToExistingTextNull: Self = StObject.set(x, "appendChangesToExistingText", null)
+    
+    inline def setAppendChangesToExistingTextUndefined: Self = StObject.set(x, "appendChangesToExistingText", js.undefined)
+    
+    inline def setLinesForEditing(value: NullableOption[Double]): Self = StObject.set(x, "linesForEditing", value.asInstanceOf[js.Any])
+    
+    inline def setLinesForEditingNull: Self = StObject.set(x, "linesForEditing", null)
+    
+    inline def setLinesForEditingUndefined: Self = StObject.set(x, "linesForEditing", js.undefined)
+    
+    inline def setMaxLength(value: NullableOption[Double]): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthNull: Self = StObject.set(x, "maxLength", null)
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setTextType(value: NullableOption[String]): Self = StObject.set(x, "textType", value.asInstanceOf[js.Any])
+    
+    inline def setTextTypeNull: Self = StObject.set(x, "textType", null)
+    
+    inline def setTextTypeUndefined: Self = StObject.set(x, "textType", js.undefined)
+  }
 }
-

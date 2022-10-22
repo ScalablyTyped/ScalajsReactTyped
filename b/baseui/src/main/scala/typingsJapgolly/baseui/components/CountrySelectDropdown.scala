@@ -1,56 +1,46 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.baseui.AnonCountrySelectDropdown
-import typingsJapgolly.baseui.ReadonlyArrayReactNode
-import typingsJapgolly.baseui.phoneInputMod.Country
-import typingsJapgolly.baseui.phoneInputMod.CountrySelectDropdownProps
+import japgolly.scalajs.react.facade.React.Element
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.anon.CountrySelectContainer
+import typingsJapgolly.baseui.anon.CountrySelectDropdownProp
+import typingsJapgolly.baseui.phoneInputTypesMod.Country
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CountrySelectDropdown {
-  def apply(
-    country: Country = null,
-    mapIsoToLabel: /* iso */ String => CallbackTo[String] = null,
-    maxDropdownHeight: String = null,
-    overrides: AnonCountrySelectDropdown = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ReadonlyArrayReactNode = null
-  ): UnmountedSimple[
-    CountrySelectDropdownProps, 
-    MountedWithRawType[
-      CountrySelectDropdownProps, 
-      js.Object, 
-      RawMounted[CountrySelectDropdownProps, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (mapIsoToLabel != null) __obj.updateDynamic("mapIsoToLabel")(js.Any.fromFunction1((t0: /* iso */ java.lang.String) => mapIsoToLabel(t0).runNow()))
-    if (maxDropdownHeight != null) __obj.updateDynamic("maxDropdownHeight")(maxDropdownHeight.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.phoneInputMod.CountrySelectDropdownProps, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.phoneInputMod.CountrySelectDropdownProps])
+  inline def apply(
+    $country: Country,
+    $maxDropdownHeight: String,
+    $noResultsMsg: String,
+    $overrides: CountrySelectContainer,
+    children: js.Array[Element]
+  ): Builder = {
+    val __props = js.Dynamic.literal($country = $country.asInstanceOf[js.Any], $maxDropdownHeight = $maxDropdownHeight.asInstanceOf[js.Any], $noResultsMsg = $noResultsMsg.asInstanceOf[js.Any], $overrides = $overrides.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[CountrySelectDropdownProp]))
   }
-  @JSImport("baseui/phone-input", "CountrySelectDropdown")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("baseui/phone-input/country-select-dropdown", JSImport.Default)
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[HTMLElement] {
+    
+    inline def $forwardedRef(value: Ref[HTMLElement] | (js.Function1[/* a */ Null | HTMLElement, Any])): this.type = set("$forwardedRef", value.asInstanceOf[js.Any])
+    
+    inline def $forwardedRefFunction1(value: HTMLElement | Null => Any | Unit): this.type = set("$forwardedRef", js.Any.fromFunction1(value))
+    
+    inline def $forwardedRefNull: this.type = set("$forwardedRef", null)
+    
+    inline def $mapIsoToLabel(value: /* iso */ String => String): this.type = set("$mapIsoToLabel", js.Any.fromFunction1(value))
+  }
+  
+  def withProps(p: CountrySelectDropdownProp): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

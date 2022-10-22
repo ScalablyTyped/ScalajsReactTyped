@@ -1,8 +1,8 @@
 package typingsJapgolly.msRest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.msRest.msRestStrings.GET
@@ -14,26 +14,22 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.msRest.msRestStrings.OPTIONS
   - typingsJapgolly.msRest.msRestStrings.TRACE
 */
-trait HttpMethods extends js.Object
-
+trait HttpMethods extends StObject
 object HttpMethods {
-  @scala.inline
-  def DELETE: typingsJapgolly.msRest.msRestStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.msRest.msRestStrings.GET = this.cast("GET")
-  @scala.inline
-  def HEAD: typingsJapgolly.msRest.msRestStrings.HEAD = this.cast("HEAD")
-  @scala.inline
-  def OPTIONS: typingsJapgolly.msRest.msRestStrings.OPTIONS = this.cast("OPTIONS")
-  @scala.inline
-  def PATCH: typingsJapgolly.msRest.msRestStrings.PATCH = this.cast("PATCH")
-  @scala.inline
-  def POST: typingsJapgolly.msRest.msRestStrings.POST = this.cast("POST")
-  @scala.inline
-  def PUT: typingsJapgolly.msRest.msRestStrings.PUT = this.cast("PUT")
-  @scala.inline
-  def TRACE: typingsJapgolly.msRest.msRestStrings.TRACE = this.cast("TRACE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DELETE: typingsJapgolly.msRest.msRestStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.msRest.msRestStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.msRest.msRestStrings.GET = "GET".asInstanceOf[typingsJapgolly.msRest.msRestStrings.GET]
+  
+  inline def HEAD: typingsJapgolly.msRest.msRestStrings.HEAD = "HEAD".asInstanceOf[typingsJapgolly.msRest.msRestStrings.HEAD]
+  
+  inline def OPTIONS: typingsJapgolly.msRest.msRestStrings.OPTIONS = "OPTIONS".asInstanceOf[typingsJapgolly.msRest.msRestStrings.OPTIONS]
+  
+  inline def PATCH: typingsJapgolly.msRest.msRestStrings.PATCH = "PATCH".asInstanceOf[typingsJapgolly.msRest.msRestStrings.PATCH]
+  
+  inline def POST: typingsJapgolly.msRest.msRestStrings.POST = "POST".asInstanceOf[typingsJapgolly.msRest.msRestStrings.POST]
+  
+  inline def PUT: typingsJapgolly.msRest.msRestStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.msRest.msRestStrings.PUT]
+  
+  inline def TRACE: typingsJapgolly.msRest.msRestStrings.TRACE = "TRACE".asInstanceOf[typingsJapgolly.msRest.msRestStrings.TRACE]
 }
-

@@ -3,9 +3,9 @@ package typingsJapgolly.openlayers.mod.source
 import typingsJapgolly.openlayers.mod.ProjectionLike
 import typingsJapgolly.openlayers.mod.olx.source.TileImageOptions
 import typingsJapgolly.openlayers.mod.tilegrid.TileGrid
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -17,7 +17,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.TileImage")
 @js.native
-class TileImage protected () extends UrlTile {
+open class TileImage protected () extends UrlTile {
   /**
     * @classdesc
     * Base class for sources providing images divided into a tile grid.
@@ -27,12 +27,14 @@ class TileImage protected () extends UrlTile {
     * @api
     */
   def this(options: TileImageOptions) = this()
+  
   /**
     * Sets whether to render reprojection edges or not (usually for debugging).
     * @param render Render the edges.
     * @api
     */
   def setRenderReprojectionEdges(render: Boolean): Unit = js.native
+  
   /**
     * Sets the tile grid to use when reprojecting the tiles to the given
     * projection instead of the default tile grid for the projection.
@@ -47,4 +49,3 @@ class TileImage protected () extends UrlTile {
     */
   def setTileGridForProjection(projection: ProjectionLike, tilegrid: TileGrid): Unit = js.native
 }
-

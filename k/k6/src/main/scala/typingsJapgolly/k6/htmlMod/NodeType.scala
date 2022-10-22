@@ -1,47 +1,45 @@
 package typingsJapgolly.k6.htmlMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NodeType extends js.Object
-
+sealed trait NodeType extends StObject
 @JSImport("k6/html", "NodeType")
 @js.native
-object NodeType extends js.Object {
-  @js.native
-  sealed trait CommentNode extends NodeType
-  
-  @js.native
-  sealed trait DoctypeNode extends NodeType
-  
-  @js.native
-  sealed trait DocumentNode extends NodeType
-  
-  @js.native
-  sealed trait ElementNode extends NodeType
-  
-  @js.native
-  sealed trait TextNode extends NodeType
+object NodeType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NodeType with Double] = js.native
-  /* 8 */ @js.native
-  object CommentNode extends TopLevel[CommentNode with Double]
+  def apply(value: Double): js.UndefOr[NodeType & Double] = js.native
   
-  /* 10 */ @js.native
-  object DoctypeNode extends TopLevel[DoctypeNode with Double]
+  @js.native
+  sealed trait CommentNode
+    extends StObject
+       with NodeType
+  /* 8 */ val CommentNode: typingsJapgolly.k6.htmlMod.NodeType.CommentNode & Double = js.native
   
-  /* 9 */ @js.native
-  object DocumentNode extends TopLevel[DocumentNode with Double]
+  @js.native
+  sealed trait DoctypeNode
+    extends StObject
+       with NodeType
+  /* 10 */ val DoctypeNode: typingsJapgolly.k6.htmlMod.NodeType.DoctypeNode & Double = js.native
   
-  /* 1 */ @js.native
-  object ElementNode extends TopLevel[ElementNode with Double]
+  @js.native
+  sealed trait DocumentNode
+    extends StObject
+       with NodeType
+  /* 9 */ val DocumentNode: typingsJapgolly.k6.htmlMod.NodeType.DocumentNode & Double = js.native
   
-  /* 3 */ @js.native
-  object TextNode extends TopLevel[TextNode with Double]
+  @js.native
+  sealed trait ElementNode
+    extends StObject
+       with NodeType
+  /* 1 */ val ElementNode: typingsJapgolly.k6.htmlMod.NodeType.ElementNode & Double = js.native
   
+  @js.native
+  sealed trait TextNode
+    extends StObject
+       with NodeType
+  /* 3 */ val TextNode: typingsJapgolly.k6.htmlMod.NodeType.TextNode & Double = js.native
 }
-

@@ -1,37 +1,26 @@
 package typingsJapgolly.reactNativeSvg.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeSvg.mod.ClipPathProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNativeSvg.libTypescriptElementsClipPathMod.ClipPathProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ClipPath {
-  def apply(
-    id: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ClipPathProps, typingsJapgolly.reactNativeSvg.mod.ClipPath, Unit, ClipPathProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSvg.mod.ClipPathProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSvg.mod.ClipPath](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSvg.mod.ClipPathProps])(children: _*)
-  }
   @JSImport("react-native-svg", "ClipPath")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeSvg.mod.ClipPath] {
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ClipPath.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ClipPathProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,23 +1,65 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.datatablesNet.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtButtonsCollectionSettings extends js.Object {
+trait ExtButtonsCollectionSettings extends StObject {
+  
+  def action(e: Any, dt: Api, node: JQuery, config: ButtonSettings): Unit
   @JSName("action")
-  var action_Original: FunctionButtonAction = js.native
-  var autoClose: Boolean = js.native
-  var background: Boolean = js.native
-  var backgroundClassName: String = js.native
-  var className: String = js.native
-  var collectionLayout: String = js.native
-  var fade: Double = js.native
+  var action_Original: FunctionButtonAction
+  
+  var autoClose: Boolean
+  
+  var background: Boolean
+  
+  var backgroundClassName: String
+  
+  var className: String
+  
+  var collectionLayout: String
+  
+  var fade: Double
+  
+  def text(a: Any): String
   @JSName("text")
-  var text_Original: FunctionExtButtonsCollectionText = js.native
-  def action(e: js.Any, dt: Api, node: JQuery, config: ButtonSettings): Unit = js.native
-  def text(a: js.Any): String = js.native
+  var text_Original: FunctionExtButtonsCollectionText
 }
-
+object ExtButtonsCollectionSettings {
+  
+  inline def apply(
+    action: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Callback,
+    autoClose: Boolean,
+    background: Boolean,
+    backgroundClassName: String,
+    className: String,
+    collectionLayout: String,
+    fade: Double,
+    text: /* a */ Any => String
+  ): ExtButtonsCollectionSettings = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction4((t0: /* e */ Any, t1: /* dt */ Api, t2: /* node */ JQuery, t3: /* config */ ButtonSettings) => (action(t0, t1, t2, t3)).runNow()), autoClose = autoClose.asInstanceOf[js.Any], background = background.asInstanceOf[js.Any], backgroundClassName = backgroundClassName.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], collectionLayout = collectionLayout.asInstanceOf[js.Any], fade = fade.asInstanceOf[js.Any], text = js.Any.fromFunction1(text))
+    __obj.asInstanceOf[ExtButtonsCollectionSettings]
+  }
+  
+  extension [Self <: ExtButtonsCollectionSettings](x: Self) {
+    
+    inline def setAction(value: (/* e */ Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Callback): Self = StObject.set(x, "action", js.Any.fromFunction4((t0: /* e */ Any, t1: /* dt */ Api, t2: /* node */ JQuery, t3: /* config */ ButtonSettings) => (value(t0, t1, t2, t3)).runNow()))
+    
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundClassName(value: String): Self = StObject.set(x, "backgroundClassName", value.asInstanceOf[js.Any])
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setCollectionLayout(value: String): Self = StObject.set(x, "collectionLayout", value.asInstanceOf[js.Any])
+    
+    inline def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: /* a */ Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+  }
+}

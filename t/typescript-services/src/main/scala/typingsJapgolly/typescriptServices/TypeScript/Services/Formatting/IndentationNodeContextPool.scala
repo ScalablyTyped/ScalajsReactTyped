@@ -1,14 +1,13 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
 import typingsJapgolly.typescriptServices.TypeScript.SyntaxNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.Formatting.IndentationNodeContextPool")
 @js.native
-class IndentationNodeContextPool () extends js.Object {
-  var nodes: js.Any = js.native
+trait IndentationNodeContextPool extends StObject {
+  
   def getNode(
     parent: IndentationNodeContext,
     node: SyntaxNode,
@@ -16,7 +15,9 @@ class IndentationNodeContextPool () extends js.Object {
     indentationLevel: Double,
     childIndentationLevelDelta: Double
   ): IndentationNodeContext = js.native
+  
+  /* private */ var nodes: Any = js.native
+  
   def releaseNode(node: IndentationNodeContext): Unit = js.native
   def releaseNode(node: IndentationNodeContext, recursive: Boolean): Unit = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.loopback.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource owner grants/delegates permissions to client application
@@ -13,12 +13,13 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Scope")
 @js.native
-class Scope () extends js.Object
-
-/* static members */
-@JSImport("loopback", "Scope")
-@js.native
-object Scope extends js.Object {
+open class Scope () extends StObject
+object Scope {
+  
+  @JSImport("loopback", "Scope")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the given scope is allowed to access the model/property
     * @param {string} scope The scope name
@@ -29,12 +30,12 @@ object Scope extends js.Object {
     * @param {string|Error} err The error object
     * @param {AccessRequest} result The access permission
     */
-  def checkPermission(
+  /* static member */
+  inline def checkPermission(
     scope: String,
     model: String,
     property: String,
     accessType: String,
     callback: js.Function2[/* err */ String | js.Error, /* result */ AccessRequest, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPermission")(scope.asInstanceOf[js.Any], model.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

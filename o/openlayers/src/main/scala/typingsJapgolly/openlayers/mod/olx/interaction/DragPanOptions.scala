@@ -1,25 +1,33 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.EventsConditionType
 import typingsJapgolly.openlayers.mod.Kinetic
 import typingsJapgolly.openlayers.mod.MapBrowserEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DragPanOptions extends js.Object {
+trait DragPanOptions extends StObject {
+  
   var condition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var kinetic: js.UndefOr[Kinetic] = js.undefined
 }
-
 object DragPanOptions {
-  @scala.inline
-  def apply(condition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null, kinetic: Kinetic = null): DragPanOptions = {
+  
+  inline def apply(): DragPanOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => condition(t0).runNow()))
-    if (kinetic != null) __obj.updateDynamic("kinetic")(kinetic.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragPanOptions]
   }
+  
+  extension [Self <: DragPanOptions](x: Self) {
+    
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setKinetic(value: Kinetic): Self = StObject.set(x, "kinetic", value.asInstanceOf[js.Any])
+    
+    inline def setKineticUndefined: Self = StObject.set(x, "kinetic", js.undefined)
+  }
 }
-

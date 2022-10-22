@@ -1,34 +1,38 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DecorationInstanceRenderOptions extends ThemableDecorationInstanceRenderOptions {
+trait DecorationInstanceRenderOptions
+  extends StObject
+     with ThemableDecorationInstanceRenderOptions {
+  
   /**
-  		 * Overwrite options for dark themes.
-  		 */
+    * Overwrite options for dark themes.
+    */
   var dark: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
+  
   /**
-  		 * Overwrite options for light themes.
-  		 */
+    * Overwrite options for light themes.
+    */
   var light: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
 }
-
 object DecorationInstanceRenderOptions {
-  @scala.inline
-  def apply(
-    after: ThemableDecorationAttachmentRenderOptions = null,
-    before: ThemableDecorationAttachmentRenderOptions = null,
-    dark: ThemableDecorationInstanceRenderOptions = null,
-    light: ThemableDecorationInstanceRenderOptions = null
-  ): DecorationInstanceRenderOptions = {
+  
+  inline def apply(): DecorationInstanceRenderOptions = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (dark != null) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
-    if (light != null) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecorationInstanceRenderOptions]
   }
+  
+  extension [Self <: DecorationInstanceRenderOptions](x: Self) {
+    
+    inline def setDark(value: ThemableDecorationInstanceRenderOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    
+    inline def setLight(value: ThemableDecorationInstanceRenderOptions): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+  }
 }
-

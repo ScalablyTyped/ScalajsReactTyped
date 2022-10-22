@@ -1,21 +1,30 @@
 package typingsJapgolly.phonegap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CaptureImageOptions extends js.Object {
+trait CaptureImageOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var mode: js.UndefOr[Double] = js.undefined
 }
-
 object CaptureImageOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, mode: Int | Double = null): CaptureImageOptions = {
+  
+  inline def apply(): CaptureImageOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[CaptureImageOptions]
   }
+  
+  extension [Self <: CaptureImageOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+  }
 }
-

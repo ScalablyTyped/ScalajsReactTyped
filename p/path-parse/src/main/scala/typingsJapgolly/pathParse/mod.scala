@@ -1,13 +1,15 @@
 package typingsJapgolly.pathParse
 
 import typingsJapgolly.node.pathMod.ParsedPath
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("path-parse", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(src: String): ParsedPath = js.native
+object mod {
+  
+  inline def apply(src: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  
+  @JSImport("path-parse", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,29 +1,52 @@
 package typingsJapgolly.mangopay2NodejsSdk.mod.models
 
-import typingsJapgolly.mangopay2NodejsSdk.PartialAddressData
-import typingsJapgolly.mangopay2NodejsSdk.mod.address.AddressData
+import typingsJapgolly.mangopay2NodejsSdk.anon.PartialAddressData
+import typingsJapgolly.mangopay2NodejsSdk.typingsModelsAddressMod.address.AddressData
+import typingsJapgolly.mangopay2NodejsSdk.typingsTypesMod.CountryISO
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.mangopay2NodejsSdk.mod.address._AddressType because Already inherited */ @JSImport("mangopay2-nodejs-sdk", "models.Address")
+@JSImport("mangopay2-nodejs-sdk", "models.Address")
 @js.native
-class Address protected ()
+open class Address protected ()
   extends EntityBase[AddressData]
      with AddressData {
   def this(data: PartialAddressData) = this()
+  
+  /**
+    * The first line of the address
+    */
   /* CompleteClass */
-  override var AddressLine1: String = js.native
+  var AddressLine1: String = js.native
+  
+  /**
+    * The second line of the address
+    */
   /* CompleteClass */
-  override var AddressLine2: String = js.native
+  var AddressLine2: String = js.native
+  
+  /**
+    * The city of the address
+    */
   /* CompleteClass */
-  override var City: String = js.native
+  var City: String = js.native
+  
+  /**
+    * The Country of the Address
+    */
   /* CompleteClass */
-  override var Country: String = js.native
+  var Country: CountryISO = js.native
+  
+  /**
+    * The postal code of the address - can be alphanumeric, dashes or spaces
+    */
   /* CompleteClass */
-  override var PostalCode: String = js.native
+  var PostalCode: String = js.native
+  
+  /**
+    * The region of the address - this is optional except if the Country is US, CA or MX
+    */
   /* CompleteClass */
-  override var Region: String = js.native
+  var Region: String = js.native
 }
-

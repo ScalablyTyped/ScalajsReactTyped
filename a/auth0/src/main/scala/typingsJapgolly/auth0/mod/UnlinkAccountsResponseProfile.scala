@@ -1,42 +1,66 @@
 package typingsJapgolly.auth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UnlinkAccountsResponseProfile extends js.Object {
+trait UnlinkAccountsResponseProfile extends StObject {
+  
   var email: js.UndefOr[String] = js.undefined
+  
   var email_verified: js.UndefOr[Boolean] = js.undefined
+  
   var family_name: js.UndefOr[String] = js.undefined
+  
   var given_name: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var phone_number: js.UndefOr[String] = js.undefined
+  
   var phone_verified: js.UndefOr[Boolean] = js.undefined
+  
   var username: js.UndefOr[String] = js.undefined
 }
-
 object UnlinkAccountsResponseProfile {
-  @scala.inline
-  def apply(
-    email: String = null,
-    email_verified: js.UndefOr[Boolean] = js.undefined,
-    family_name: String = null,
-    given_name: String = null,
-    name: String = null,
-    phone_number: String = null,
-    phone_verified: js.UndefOr[Boolean] = js.undefined,
-    username: String = null
-  ): UnlinkAccountsResponseProfile = {
+  
+  inline def apply(): UnlinkAccountsResponseProfile = {
     val __obj = js.Dynamic.literal()
-    if (email != null) __obj.updateDynamic("email")(email.asInstanceOf[js.Any])
-    if (!js.isUndefined(email_verified)) __obj.updateDynamic("email_verified")(email_verified.asInstanceOf[js.Any])
-    if (family_name != null) __obj.updateDynamic("family_name")(family_name.asInstanceOf[js.Any])
-    if (given_name != null) __obj.updateDynamic("given_name")(given_name.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (phone_number != null) __obj.updateDynamic("phone_number")(phone_number.asInstanceOf[js.Any])
-    if (!js.isUndefined(phone_verified)) __obj.updateDynamic("phone_verified")(phone_verified.asInstanceOf[js.Any])
-    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnlinkAccountsResponseProfile]
   }
+  
+  extension [Self <: UnlinkAccountsResponseProfile](x: Self) {
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    
+    inline def setEmail_verified(value: Boolean): Self = StObject.set(x, "email_verified", value.asInstanceOf[js.Any])
+    
+    inline def setEmail_verifiedUndefined: Self = StObject.set(x, "email_verified", js.undefined)
+    
+    inline def setFamily_name(value: String): Self = StObject.set(x, "family_name", value.asInstanceOf[js.Any])
+    
+    inline def setFamily_nameUndefined: Self = StObject.set(x, "family_name", js.undefined)
+    
+    inline def setGiven_name(value: String): Self = StObject.set(x, "given_name", value.asInstanceOf[js.Any])
+    
+    inline def setGiven_nameUndefined: Self = StObject.set(x, "given_name", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPhone_number(value: String): Self = StObject.set(x, "phone_number", value.asInstanceOf[js.Any])
+    
+    inline def setPhone_numberUndefined: Self = StObject.set(x, "phone_number", js.undefined)
+    
+    inline def setPhone_verified(value: Boolean): Self = StObject.set(x, "phone_verified", value.asInstanceOf[js.Any])
+    
+    inline def setPhone_verifiedUndefined: Self = StObject.set(x, "phone_verified", js.undefined)
+    
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+  }
 }
-

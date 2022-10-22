@@ -2,204 +2,285 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgHtmlEditor
-  extends /**
-	 * Option for igHtmlEditor
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Event fired after a toolbar item is clicked.
-  	 */
+    * Event fired after a toolbar item is clicked.
+    */
   var actionExecuted: js.UndefOr[ActionExecutedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a toolbar item is clicked.
-  	 */
+    * Event fired before a toolbar item is clicked.
+    */
   var actionExecuting: js.UndefOr[ActionExecutingEvent] = js.undefined
+  
   /**
-  	 * Event is fired on keyboard copy action.
-  	 */
+    * Event is fired on keyboard copy action.
+    */
   var copy: js.UndefOr[CopyEvent] = js.undefined
+  
   /**
-  	 * The html editor custom toolbars list.
-  	 *
-  	 */
-  var customToolbars: js.UndefOr[js.Array[_]] = js.undefined
+    * The html editor custom toolbars list.
+    *
+    */
+  var customToolbars: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Event is fired on keyboard cut action.
-  	 */
+    * Event is fired on keyboard cut action.
+    */
   var cut: js.UndefOr[CutEvent] = js.undefined
+  
   /**
-  	 * The height of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 */
+    * The height of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
+    *
+    */
   var height: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * The name attribute of the html editor source view.
-  	 *
-  	 */
+    * The name attribute of the html editor source view.
+    *
+    */
   var inputName: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Event is fired on keyboard paste action.
-  	 */
+    * Event is fired on keyboard paste action.
+    */
   var paste: js.UndefOr[PasteEvent] = js.undefined
+  
   /**
-  	 * Event is fired on keyboard redo action.
-  	 */
+    * Event is fired on keyboard redo action.
+    */
   var redo: js.UndefOr[RedoEvent] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Event fired after the html editor widget has been rendered.
-  	 */
+    * Event fired after the html editor widget has been rendered.
+    */
   var rendered: js.UndefOr[RenderedEvent] = js.undefined
+  
   /**
-  	 * Event fired before the html editor widget is rendered.
-  	 */
+    * Event fired before the html editor widget is rendered.
+    */
   var rendering: js.UndefOr[RenderingEvent] = js.undefined
+  
   /**
-  	 * Shows/hides the "Copy Paste" toolbar.
-  	 *
-  	 */
+    * Shows/hides the "Copy Paste" toolbar.
+    *
+    */
   var showCopyPasteToolbar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Shows/hides the "Formatting" toolbar.
-  	 *
-  	 */
+    * Shows/hides the "Formatting" toolbar.
+    *
+    */
   var showFormattingToolbar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Shows/hides the "Insert Object" toolbar.
-  	 *
-  	 */
+    * Shows/hides the "Insert Object" toolbar.
+    *
+    */
   var showInsertObjectToolbar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Shows/hides the "Text" toolbar.
-  	 *
-  	 */
+    * Shows/hides the "Text" toolbar.
+    *
+    */
   var showTextToolbar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Event fired after a toolbar is collapsed.
-  	 */
+    * Event fired after a toolbar is collapsed.
+    */
   var toolbarCollapsed: js.UndefOr[ToolbarCollapsedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a toolbar is collapsed.
-  	 */
+    * Event fired before a toolbar is collapsed.
+    */
   var toolbarCollapsing: js.UndefOr[ToolbarCollapsingEvent] = js.undefined
+  
   /**
-  	 * Event fired after a toolbar is expanded.
-  	 */
+    * Event fired after a toolbar is expanded.
+    */
   var toolbarExpanded: js.UndefOr[ToolbarExpandedEvent] = js.undefined
+  
   /**
-  	 * Event fired before a toolbar is expanded.
-  	 */
+    * Event fired before a toolbar is expanded.
+    */
   var toolbarExpanding: js.UndefOr[ToolbarExpandingEvent] = js.undefined
+  
   /**
-  	 * The html editor toolbars list.
-  	 *
-  	 */
-  var toolbarSettings: js.UndefOr[js.Array[_]] = js.undefined
+    * The html editor toolbars list.
+    *
+    */
+  var toolbarSettings: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Event is fired on keyboard undo action.
-  	 */
+    * Event is fired on keyboard undo action.
+    */
   var undo: js.UndefOr[UndoEvent] = js.undefined
+  
   /**
-  	 * Used to render inside the html editor as initial content
-  	 *
-  	 */
+    * Used to render inside the html editor as initial content
+    *
+    */
   var value: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * The width of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
-  	 *
-  	 */
+    * The width of the html editor. It can be set as a number in pixels, string (px) or percentage (%).
+    *
+    */
   var width: js.UndefOr[String | Double] = js.undefined
+  
   /**
-  	 * Event is fired after the workspace has been resized
-  	 */
+    * Event is fired after the workspace has been resized
+    */
   var workspaceResized: js.UndefOr[WorkspaceResizedEvent] = js.undefined
 }
-
 object IgHtmlEditor {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igHtmlEditor
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    actionExecuted: (/* event */ Event_, /* ui */ ActionExecutedEventUIParam) => Callback = null,
-    actionExecuting: (/* event */ Event_, /* ui */ ActionExecutingEventUIParam) => Callback = null,
-    copy: (/* event */ Event_, /* ui */ CopyEventUIParam) => Callback = null,
-    customToolbars: js.Array[_] = null,
-    cut: (/* event */ Event_, /* ui */ CutEventUIParam) => Callback = null,
-    height: String | Double = null,
-    inputName: String = null,
-    language: String = null,
-    locale: js.Any = null,
-    paste: (/* event */ Event_, /* ui */ PasteEventUIParam) => Callback = null,
-    redo: (/* event */ Event_, /* ui */ RedoEventUIParam) => Callback = null,
-    regional: String | js.Object = null,
-    rendered: (/* event */ Event_, /* ui */ RenderedEventUIParam) => Callback = null,
-    rendering: (/* event */ Event_, /* ui */ RenderingEventUIParam) => Callback = null,
-    showCopyPasteToolbar: js.UndefOr[Boolean] = js.undefined,
-    showFormattingToolbar: js.UndefOr[Boolean] = js.undefined,
-    showInsertObjectToolbar: js.UndefOr[Boolean] = js.undefined,
-    showTextToolbar: js.UndefOr[Boolean] = js.undefined,
-    toolbarCollapsed: (/* event */ Event_, /* ui */ ToolbarCollapsedEventUIParam) => Callback = null,
-    toolbarCollapsing: (/* event */ Event_, /* ui */ ToolbarCollapsingEventUIParam) => Callback = null,
-    toolbarExpanded: (/* event */ Event_, /* ui */ ToolbarExpandedEventUIParam) => Callback = null,
-    toolbarExpanding: (/* event */ Event_, /* ui */ ToolbarExpandingEventUIParam) => Callback = null,
-    toolbarSettings: js.Array[_] = null,
-    undo: (/* event */ Event_, /* ui */ UndoEventUIParam) => Callback = null,
-    value: String = null,
-    width: String | Double = null,
-    workspaceResized: (/* event */ Event_, /* ui */ WorkspaceResizedEventUIParam) => Callback = null
-  ): IgHtmlEditor = {
+  
+  inline def apply(): IgHtmlEditor = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (actionExecuted != null) __obj.updateDynamic("actionExecuted")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ActionExecutedEventUIParam) => actionExecuted(t0, t1).runNow()))
-    if (actionExecuting != null) __obj.updateDynamic("actionExecuting")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ActionExecutingEventUIParam) => actionExecuting(t0, t1).runNow()))
-    if (copy != null) __obj.updateDynamic("copy")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CopyEventUIParam) => copy(t0, t1).runNow()))
-    if (customToolbars != null) __obj.updateDynamic("customToolbars")(customToolbars.asInstanceOf[js.Any])
-    if (cut != null) __obj.updateDynamic("cut")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.CutEventUIParam) => cut(t0, t1).runNow()))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (inputName != null) __obj.updateDynamic("inputName")(inputName.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (paste != null) __obj.updateDynamic("paste")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.PasteEventUIParam) => paste(t0, t1).runNow()))
-    if (redo != null) __obj.updateDynamic("redo")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RedoEventUIParam) => redo(t0, t1).runNow()))
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderedEventUIParam) => rendered(t0, t1).runNow()))
-    if (rendering != null) __obj.updateDynamic("rendering")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderingEventUIParam) => rendering(t0, t1).runNow()))
-    if (!js.isUndefined(showCopyPasteToolbar)) __obj.updateDynamic("showCopyPasteToolbar")(showCopyPasteToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFormattingToolbar)) __obj.updateDynamic("showFormattingToolbar")(showFormattingToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInsertObjectToolbar)) __obj.updateDynamic("showInsertObjectToolbar")(showInsertObjectToolbar.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTextToolbar)) __obj.updateDynamic("showTextToolbar")(showTextToolbar.asInstanceOf[js.Any])
-    if (toolbarCollapsed != null) __obj.updateDynamic("toolbarCollapsed")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ToolbarCollapsedEventUIParam) => toolbarCollapsed(t0, t1).runNow()))
-    if (toolbarCollapsing != null) __obj.updateDynamic("toolbarCollapsing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ToolbarCollapsingEventUIParam) => toolbarCollapsing(t0, t1).runNow()))
-    if (toolbarExpanded != null) __obj.updateDynamic("toolbarExpanded")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ToolbarExpandedEventUIParam) => toolbarExpanded(t0, t1).runNow()))
-    if (toolbarExpanding != null) __obj.updateDynamic("toolbarExpanding")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ToolbarExpandingEventUIParam) => toolbarExpanding(t0, t1).runNow()))
-    if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings.asInstanceOf[js.Any])
-    if (undo != null) __obj.updateDynamic("undo")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.UndoEventUIParam) => undo(t0, t1).runNow()))
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (workspaceResized != null) __obj.updateDynamic("workspaceResized")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.WorkspaceResizedEventUIParam) => workspaceResized(t0, t1).runNow()))
     __obj.asInstanceOf[IgHtmlEditor]
   }
+  
+  extension [Self <: IgHtmlEditor](x: Self) {
+    
+    inline def setActionExecuted(value: (/* event */ Event, /* ui */ ActionExecutedEventUIParam) => Callback): Self = StObject.set(x, "actionExecuted", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ActionExecutedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setActionExecutedUndefined: Self = StObject.set(x, "actionExecuted", js.undefined)
+    
+    inline def setActionExecuting(value: (/* event */ Event, /* ui */ ActionExecutingEventUIParam) => Callback): Self = StObject.set(x, "actionExecuting", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ActionExecutingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setActionExecutingUndefined: Self = StObject.set(x, "actionExecuting", js.undefined)
+    
+    inline def setCopy(value: (/* event */ Event, /* ui */ CopyEventUIParam) => Callback): Self = StObject.set(x, "copy", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CopyEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCopyUndefined: Self = StObject.set(x, "copy", js.undefined)
+    
+    inline def setCustomToolbars(value: js.Array[Any]): Self = StObject.set(x, "customToolbars", value.asInstanceOf[js.Any])
+    
+    inline def setCustomToolbarsUndefined: Self = StObject.set(x, "customToolbars", js.undefined)
+    
+    inline def setCustomToolbarsVarargs(value: Any*): Self = StObject.set(x, "customToolbars", js.Array(value*))
+    
+    inline def setCut(value: (/* event */ Event, /* ui */ CutEventUIParam) => Callback): Self = StObject.set(x, "cut", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ CutEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setCutUndefined: Self = StObject.set(x, "cut", js.undefined)
+    
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setInputName(value: String): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    
+    inline def setInputNameUndefined: Self = StObject.set(x, "inputName", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setPaste(value: (/* event */ Event, /* ui */ PasteEventUIParam) => Callback): Self = StObject.set(x, "paste", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ PasteEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+    
+    inline def setRedo(value: (/* event */ Event, /* ui */ RedoEventUIParam) => Callback): Self = StObject.set(x, "redo", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RedoEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRedoUndefined: Self = StObject.set(x, "redo", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Callback): Self = StObject.set(x, "rendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    
+    inline def setRendering(value: (/* event */ Event, /* ui */ RenderingEventUIParam) => Callback): Self = StObject.set(x, "rendering", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderingUndefined: Self = StObject.set(x, "rendering", js.undefined)
+    
+    inline def setShowCopyPasteToolbar(value: Boolean): Self = StObject.set(x, "showCopyPasteToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setShowCopyPasteToolbarUndefined: Self = StObject.set(x, "showCopyPasteToolbar", js.undefined)
+    
+    inline def setShowFormattingToolbar(value: Boolean): Self = StObject.set(x, "showFormattingToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setShowFormattingToolbarUndefined: Self = StObject.set(x, "showFormattingToolbar", js.undefined)
+    
+    inline def setShowInsertObjectToolbar(value: Boolean): Self = StObject.set(x, "showInsertObjectToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setShowInsertObjectToolbarUndefined: Self = StObject.set(x, "showInsertObjectToolbar", js.undefined)
+    
+    inline def setShowTextToolbar(value: Boolean): Self = StObject.set(x, "showTextToolbar", value.asInstanceOf[js.Any])
+    
+    inline def setShowTextToolbarUndefined: Self = StObject.set(x, "showTextToolbar", js.undefined)
+    
+    inline def setToolbarCollapsed(value: (/* event */ Event, /* ui */ ToolbarCollapsedEventUIParam) => Callback): Self = StObject.set(x, "toolbarCollapsed", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ToolbarCollapsedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setToolbarCollapsedUndefined: Self = StObject.set(x, "toolbarCollapsed", js.undefined)
+    
+    inline def setToolbarCollapsing(value: (/* event */ Event, /* ui */ ToolbarCollapsingEventUIParam) => Callback): Self = StObject.set(x, "toolbarCollapsing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ToolbarCollapsingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setToolbarCollapsingUndefined: Self = StObject.set(x, "toolbarCollapsing", js.undefined)
+    
+    inline def setToolbarExpanded(value: (/* event */ Event, /* ui */ ToolbarExpandedEventUIParam) => Callback): Self = StObject.set(x, "toolbarExpanded", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ToolbarExpandedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setToolbarExpandedUndefined: Self = StObject.set(x, "toolbarExpanded", js.undefined)
+    
+    inline def setToolbarExpanding(value: (/* event */ Event, /* ui */ ToolbarExpandingEventUIParam) => Callback): Self = StObject.set(x, "toolbarExpanding", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ToolbarExpandingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setToolbarExpandingUndefined: Self = StObject.set(x, "toolbarExpanding", js.undefined)
+    
+    inline def setToolbarSettings(value: js.Array[Any]): Self = StObject.set(x, "toolbarSettings", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarSettingsUndefined: Self = StObject.set(x, "toolbarSettings", js.undefined)
+    
+    inline def setToolbarSettingsVarargs(value: Any*): Self = StObject.set(x, "toolbarSettings", js.Array(value*))
+    
+    inline def setUndo(value: (/* event */ Event, /* ui */ UndoEventUIParam) => Callback): Self = StObject.set(x, "undo", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ UndoEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setUndoUndefined: Self = StObject.set(x, "undo", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWorkspaceResized(value: (/* event */ Event, /* ui */ WorkspaceResizedEventUIParam) => Callback): Self = StObject.set(x, "workspaceResized", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ WorkspaceResizedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setWorkspaceResizedUndefined: Self = StObject.set(x, "workspaceResized", js.undefined)
+  }
 }
-

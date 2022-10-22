@@ -1,28 +1,48 @@
 package typingsJapgolly.slonik.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionContextType extends js.Object {
+trait ConnectionContextType extends StObject {
+  
   /**
     * Unique connection ID
     */
-  var connectionId: String = js.native
-  var connectionType: ConnectionTypeType = js.native
+  var connectionId: String
+  
+  var connectionType: ConnectionTypeType
+  
+  /**
+    * Instance of Roarr logger with bound connection context parameters
+    */
+  def log(args: String*): scala.Nothing
   /**
     * Instance of Roarr logger with bound connection context parameters
     */
   @JSName("log")
-  var log_Original: LoggerType = js.native
+  var log_Original: LoggerType
+  
   /**
     * Unique connection pool ID
     */
-  var poolId: String = js.native
-  /**
-    * Instance of Roarr logger with bound connection context parameters
-    */
-  def log(args: String*): scala.Nothing = js.native
+  var poolId: String
 }
-
+object ConnectionContextType {
+  
+  inline def apply(connectionId: String, connectionType: ConnectionTypeType, log: LoggerType, poolId: String): ConnectionContextType = {
+    val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any], connectionType = connectionType.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], poolId = poolId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectionContextType]
+  }
+  
+  extension [Self <: ConnectionContextType](x: Self) {
+    
+    inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionType(value: ConnectionTypeType): Self = StObject.set(x, "connectionType", value.asInstanceOf[js.Any])
+    
+    inline def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    
+    inline def setPoolId(value: String): Self = StObject.set(x, "poolId", value.asInstanceOf[js.Any])
+  }
+}

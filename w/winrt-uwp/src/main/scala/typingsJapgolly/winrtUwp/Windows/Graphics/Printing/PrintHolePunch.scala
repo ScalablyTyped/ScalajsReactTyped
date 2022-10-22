@@ -1,74 +1,61 @@
 package typingsJapgolly.winrtUwp.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintHolePunch extends js.Object
-
+sealed trait PrintHolePunch extends StObject
 /** Specifies the hole punch option. */
 @JSGlobal("Windows.Graphics.Printing.PrintHolePunch")
 @js.native
-object PrintHolePunch extends js.Object {
-  /** The option to indicate that hole punching required along the bottom edges of the sheets. */
-  @js.native
-  sealed trait bottomEdge extends PrintHolePunch
+object PrintHolePunch extends StObject {
   
   /** The default hole punch option. */
   @js.native
-  sealed trait default extends PrintHolePunch
+  sealed trait default
+    extends StObject
+       with PrintHolePunch
+  
+  /** The option to indicate that hole punching required along the bottom edges of the sheets. */
+  @js.native
+  sealed trait bottomEdge
+    extends StObject
+       with PrintHolePunch
   
   /** The option to indicate that hole punching required along the left edges of the sheets. */
   @js.native
-  sealed trait leftEdge extends PrintHolePunch
+  sealed trait leftEdge
+    extends StObject
+       with PrintHolePunch
   
   /** The option to indicate that hole punching is not required. */
   @js.native
-  sealed trait none extends PrintHolePunch
+  sealed trait none
+    extends StObject
+       with PrintHolePunch
   
   /** An unsupported hole punch option. */
   @js.native
-  sealed trait notAvailable extends PrintHolePunch
+  sealed trait notAvailable
+    extends StObject
+       with PrintHolePunch
   
   /** A custom hole punch option that is specific to the print device. */
   @js.native
-  sealed trait printerCustom extends PrintHolePunch
+  sealed trait printerCustom
+    extends StObject
+       with PrintHolePunch
   
   /** The option to indicate that hole punching required along the right edges of the sheets. */
   @js.native
-  sealed trait rightEdge extends PrintHolePunch
+  sealed trait rightEdge
+    extends StObject
+       with PrintHolePunch
   
   /** The option to indicate that hole punching required along the top edges of the sheets. */
   @js.native
-  sealed trait topEdge extends PrintHolePunch
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintHolePunch with Double] = js.native
-  /* 7 */ @js.native
-  object bottomEdge extends TopLevel[bottomEdge with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 4 */ @js.native
-  object leftEdge extends TopLevel[leftEdge with Double]
-  
-  /* 3 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
-  /* 5 */ @js.native
-  object rightEdge extends TopLevel[rightEdge with Double]
-  
-  /* 6 */ @js.native
-  object topEdge extends TopLevel[topEdge with Double]
-  
+  sealed trait topEdge
+    extends StObject
+       with PrintHolePunch
 }
-

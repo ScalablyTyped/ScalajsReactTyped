@@ -1,26 +1,29 @@
 package typingsJapgolly.diff.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WordsOptions extends BaseOptions {
+trait WordsOptions
+  extends StObject
+     with BaseOptions {
+  
   /**
     * `true` to ignore leading and trailing whitespace. This is the same as `diffWords()`.
     */
   var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
 }
-
 object WordsOptions {
-  @scala.inline
-  def apply(
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
-  ): WordsOptions = {
+  
+  inline def apply(): WordsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreWhitespace)) __obj.updateDynamic("ignoreWhitespace")(ignoreWhitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[WordsOptions]
   }
+  
+  extension [Self <: WordsOptions](x: Self) {
+    
+    inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
+  }
 }
-

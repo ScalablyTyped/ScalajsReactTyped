@@ -1,7 +1,7 @@
 
 # Scala.js typings for braft-editor
 
-Typings are for version 2.3.8
+Typings are for version 2.3.9
 
 ## Library description:
 Rich Text Editor Based On Draft.js
@@ -10,10 +10,10 @@ Rich Text Editor Based On Draft.js
 | ------------------ | :-------------: |
 | Full name          | braft-editor |
 | Keywords           | braft, draft, draft-js, rich, text, editor, rich-text-editor, wysiwyg |
-| # releases         | 118 |
-| # dependents       | 50 |
-| # downloads        | 131446 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 34937.333333333336 |
+| # stars            | 4447.0 |
 
 ## Links
 - [Homepage](https://github.com/margox/braft#readme)

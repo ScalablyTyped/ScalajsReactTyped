@@ -1,15 +1,58 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.CallSignature")
-@js.native
-class CallSignature protected () extends AST {
-  def this(typeParameterList: TypeParameterList, parameterList: ParameterList, typeAnnotation: TypeAnnotation) = this()
-  var parameterList: ParameterList = js.native
-  var typeAnnotation: TypeAnnotation = js.native
-  var typeParameterList: TypeParameterList = js.native
+trait CallSignature
+  extends StObject
+     with AST {
+  
+  var parameterList: ParameterList
+  
+  var typeAnnotation: TypeAnnotation
+  
+  var typeParameterList: TypeParameterList
 }
-
+object CallSignature {
+  
+  inline def apply(
+    _astID: Any,
+    _end: Double,
+    _postComments: Any,
+    _preComments: Any,
+    _start: Double,
+    _trailingTriviaWidth: Double,
+    end: CallbackTo[Double],
+    fileName: CallbackTo[String],
+    isExpression: CallbackTo[Boolean],
+    kind: CallbackTo[SyntaxKind],
+    parameterList: ParameterList,
+    parent: AST,
+    postComments: CallbackTo[js.Array[Comment]],
+    preComments: CallbackTo[js.Array[Comment]],
+    setPostComments: js.Array[Comment] => Callback,
+    setPreComments: js.Array[Comment] => Callback,
+    start: CallbackTo[Double],
+    structuralEquals: (AST, Boolean) => Boolean,
+    syntaxID: CallbackTo[Double],
+    trailingTriviaWidth: CallbackTo[Double],
+    typeAnnotation: TypeAnnotation,
+    typeParameterList: TypeParameterList,
+    width: CallbackTo[Double]
+  ): CallSignature = {
+    val __obj = js.Dynamic.literal(_astID = _astID.asInstanceOf[js.Any], _end = _end.asInstanceOf[js.Any], _postComments = _postComments.asInstanceOf[js.Any], _preComments = _preComments.asInstanceOf[js.Any], _start = _start.asInstanceOf[js.Any], _trailingTriviaWidth = _trailingTriviaWidth.asInstanceOf[js.Any], end = end.toJsFn, fileName = fileName.toJsFn, isExpression = isExpression.toJsFn, kind = kind.toJsFn, parameterList = parameterList.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], postComments = postComments.toJsFn, preComments = preComments.toJsFn, setPostComments = js.Any.fromFunction1((t0: js.Array[Comment]) => setPostComments(t0).runNow()), setPreComments = js.Any.fromFunction1((t0: js.Array[Comment]) => setPreComments(t0).runNow()), start = start.toJsFn, structuralEquals = js.Any.fromFunction2(structuralEquals), syntaxID = syntaxID.toJsFn, trailingTriviaWidth = trailingTriviaWidth.toJsFn, typeAnnotation = typeAnnotation.asInstanceOf[js.Any], typeParameterList = typeParameterList.asInstanceOf[js.Any], width = width.toJsFn)
+    __obj.asInstanceOf[CallSignature]
+  }
+  
+  extension [Self <: CallSignature](x: Self) {
+    
+    inline def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeParameterList(value: TypeParameterList): Self = StObject.set(x, "typeParameterList", value.asInstanceOf[js.Any])
+  }
+}

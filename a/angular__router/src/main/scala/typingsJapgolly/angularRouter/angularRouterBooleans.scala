@@ -1,20 +1,16 @@
 package typingsJapgolly.angularRouter
 
-import typingsJapgolly.angularRouter.mod.InitialNavigation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularRouterBooleans {
-  @js.native
-  sealed trait `false` extends InitialNavigation
   
   @js.native
-  sealed trait `true` extends InitialNavigation
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  @js.native
+  sealed trait `true` extends StObject
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

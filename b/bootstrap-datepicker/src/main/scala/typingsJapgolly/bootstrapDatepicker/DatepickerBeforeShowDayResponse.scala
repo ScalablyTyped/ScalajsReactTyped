@@ -1,27 +1,26 @@
 package typingsJapgolly.bootstrapDatepicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatepickerBeforeShowDayResponse extends DatepickerBeforeShowResponse {
+trait DatepickerBeforeShowDayResponse
+  extends StObject
+     with DatepickerBeforeShowResponse {
+  
   var content: js.UndefOr[String] = js.undefined
 }
-
 object DatepickerBeforeShowDayResponse {
-  @scala.inline
-  def apply(
-    classes: String = null,
-    content: String = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    tooltip: String = null
-  ): DatepickerBeforeShowDayResponse = {
+  
+  inline def apply(): DatepickerBeforeShowDayResponse = {
     val __obj = js.Dynamic.literal()
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatepickerBeforeShowDayResponse]
   }
+  
+  extension [Self <: DatepickerBeforeShowDayResponse](x: Self) {
+    
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+  }
 }
-

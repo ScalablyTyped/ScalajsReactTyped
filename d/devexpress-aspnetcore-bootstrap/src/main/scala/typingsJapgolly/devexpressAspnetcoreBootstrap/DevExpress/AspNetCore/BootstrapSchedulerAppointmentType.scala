@@ -1,47 +1,37 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BootstrapSchedulerAppointmentType extends js.Object
-
+sealed trait BootstrapSchedulerAppointmentType extends StObject
 @JSGlobal("DevExpress.AspNetCore.BootstrapSchedulerAppointmentType")
 @js.native
-object BootstrapSchedulerAppointmentType extends js.Object {
-  @js.native
-  sealed trait ChangedOccurrence extends BootstrapSchedulerAppointmentType
+object BootstrapSchedulerAppointmentType extends StObject {
   
   @js.native
-  sealed trait DeletedOccurrence extends BootstrapSchedulerAppointmentType
+  sealed trait ChangedOccurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Normal extends BootstrapSchedulerAppointmentType
+  sealed trait DeletedOccurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Occurrence extends BootstrapSchedulerAppointmentType
+  sealed trait Normal
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
   @js.native
-  sealed trait Pattern extends BootstrapSchedulerAppointmentType
+  sealed trait Occurrence
+    extends StObject
+       with BootstrapSchedulerAppointmentType
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[BootstrapSchedulerAppointmentType with String] = js.native
-  /* "ChangedOccurrence" */ @js.native
-  object ChangedOccurrence extends TopLevel[ChangedOccurrence with String]
-  
-  /* "DeletedOccurrence" */ @js.native
-  object DeletedOccurrence extends TopLevel[DeletedOccurrence with String]
-  
-  /* "Normal" */ @js.native
-  object Normal extends TopLevel[Normal with String]
-  
-  /* "Occurrence" */ @js.native
-  object Occurrence extends TopLevel[Occurrence with String]
-  
-  /* "Pattern" */ @js.native
-  object Pattern extends TopLevel[Pattern with String]
-  
+  @js.native
+  sealed trait Pattern
+    extends StObject
+       with BootstrapSchedulerAppointmentType
 }
-

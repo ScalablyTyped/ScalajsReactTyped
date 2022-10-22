@@ -1,14 +1,17 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "Line3")
 @js.native
-class Line3 ()
-  extends typingsJapgolly.three.line3Mod.Line3 {
-  def this(start: typingsJapgolly.three.vector3Mod.Vector3) = this()
-  def this(start: typingsJapgolly.three.vector3Mod.Vector3, end: typingsJapgolly.three.vector3Mod.Vector3) = this()
+open class Line3 ()
+  extends typingsJapgolly.three.srcThreeMod.Line3 {
+  def this(start: typingsJapgolly.three.srcMathVector3Mod.Vector3) = this()
+  def this(start: Unit, end: typingsJapgolly.three.srcMathVector3Mod.Vector3) = this()
+  def this(
+    start: typingsJapgolly.three.srcMathVector3Mod.Vector3,
+    end: typingsJapgolly.three.srcMathVector3Mod.Vector3
+  ) = this()
 }
-

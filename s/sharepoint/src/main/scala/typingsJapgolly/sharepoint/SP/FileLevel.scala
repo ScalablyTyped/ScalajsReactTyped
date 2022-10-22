@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileLevel extends js.Object
-
+sealed trait FileLevel extends StObject
 @JSGlobal("SP.FileLevel")
 @js.native
-object FileLevel extends js.Object {
-  @js.native
-  sealed trait checkout extends FileLevel
+object FileLevel extends StObject {
   
   @js.native
-  sealed trait draft extends FileLevel
+  sealed trait checkout
+    extends StObject
+       with FileLevel
   
   @js.native
-  sealed trait published extends FileLevel
+  sealed trait draft
+    extends StObject
+       with FileLevel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileLevel with Double] = js.native
-  /* 2 */ @js.native
-  object checkout extends TopLevel[checkout with Double]
-  
-  /* 1 */ @js.native
-  object draft extends TopLevel[draft with Double]
-  
-  /* 0 */ @js.native
-  object published extends TopLevel[published with Double]
-  
+  @js.native
+  sealed trait published
+    extends StObject
+       with FileLevel
 }
-

@@ -1,173 +1,171 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolKind extends js.Object
-
+sealed trait SymbolKind extends StObject
 @JSImport("monaco-editor", "languages.SymbolKind")
 @js.native
-object SymbolKind extends js.Object {
-  @js.native
-  sealed trait Array extends SymbolKind
-  
-  @js.native
-  sealed trait Boolean extends SymbolKind
-  
-  @js.native
-  sealed trait Class extends SymbolKind
-  
-  @js.native
-  sealed trait Constant extends SymbolKind
-  
-  @js.native
-  sealed trait Constructor extends SymbolKind
-  
-  @js.native
-  sealed trait Enum extends SymbolKind
-  
-  @js.native
-  sealed trait EnumMember extends SymbolKind
-  
-  @js.native
-  sealed trait Event extends SymbolKind
-  
-  @js.native
-  sealed trait Field extends SymbolKind
-  
-  @js.native
-  sealed trait File extends SymbolKind
-  
-  @js.native
-  sealed trait Function extends SymbolKind
-  
-  @js.native
-  sealed trait Interface extends SymbolKind
-  
-  @js.native
-  sealed trait Key extends SymbolKind
-  
-  @js.native
-  sealed trait Method extends SymbolKind
-  
-  @js.native
-  sealed trait Module extends SymbolKind
-  
-  @js.native
-  sealed trait Namespace extends SymbolKind
-  
-  @js.native
-  sealed trait Null extends SymbolKind
-  
-  @js.native
-  sealed trait Number extends SymbolKind
-  
-  @js.native
-  sealed trait Object extends SymbolKind
-  
-  @js.native
-  sealed trait Operator extends SymbolKind
-  
-  @js.native
-  sealed trait Package extends SymbolKind
-  
-  @js.native
-  sealed trait Property extends SymbolKind
-  
-  @js.native
-  sealed trait String extends SymbolKind
-  
-  @js.native
-  sealed trait Struct extends SymbolKind
-  
-  @js.native
-  sealed trait TypeParameter extends SymbolKind
-  
-  @js.native
-  sealed trait Variable extends SymbolKind
+object SymbolKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SymbolKind with Double] = js.native
-  /* 17 */ @js.native
-  object Array extends TopLevel[Array with Double]
+  def apply(value: Double): js.UndefOr[SymbolKind & Double] = js.native
   
-  /* 16 */ @js.native
-  object Boolean extends TopLevel[Boolean with Double]
+  @js.native
+  sealed trait Array
+    extends StObject
+       with SymbolKind
+  /* 17 */ val Array: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Array & Double = js.native
   
-  /* 4 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  @js.native
+  sealed trait Boolean
+    extends StObject
+       with SymbolKind
+  /* 16 */ val Boolean: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Boolean & Double = js.native
   
-  /* 13 */ @js.native
-  object Constant extends TopLevel[Constant with Double]
+  @js.native
+  sealed trait Class
+    extends StObject
+       with SymbolKind
+  /* 4 */ val Class: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Class & Double = js.native
   
-  /* 8 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  @js.native
+  sealed trait Constant
+    extends StObject
+       with SymbolKind
+  /* 13 */ val Constant: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Constant & Double = js.native
   
-  /* 9 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with SymbolKind
+  /* 8 */ val Constructor: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Constructor & Double = js.native
   
-  /* 21 */ @js.native
-  object EnumMember extends TopLevel[EnumMember with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with SymbolKind
+  /* 9 */ val Enum: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Enum & Double = js.native
   
-  /* 23 */ @js.native
-  object Event extends TopLevel[Event with Double]
+  @js.native
+  sealed trait EnumMember
+    extends StObject
+       with SymbolKind
+  /* 21 */ val EnumMember: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.EnumMember & Double = js.native
   
-  /* 7 */ @js.native
-  object Field extends TopLevel[Field with Double]
+  @js.native
+  sealed trait Event
+    extends StObject
+       with SymbolKind
+  /* 23 */ val Event: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Event & Double = js.native
   
-  /* 0 */ @js.native
-  object File extends TopLevel[File with Double]
+  @js.native
+  sealed trait Field
+    extends StObject
+       with SymbolKind
+  /* 7 */ val Field: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Field & Double = js.native
   
-  /* 11 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait File
+    extends StObject
+       with SymbolKind
+  /* 0 */ val File: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.File & Double = js.native
   
-  /* 10 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with SymbolKind
+  /* 11 */ val Function: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Function & Double = js.native
   
-  /* 19 */ @js.native
-  object Key extends TopLevel[Key with Double]
+  @js.native
+  sealed trait Interface
+    extends StObject
+       with SymbolKind
+  /* 10 */ val Interface: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Interface & Double = js.native
   
-  /* 5 */ @js.native
-  object Method extends TopLevel[Method with Double]
+  @js.native
+  sealed trait Key
+    extends StObject
+       with SymbolKind
+  /* 19 */ val Key: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Key & Double = js.native
   
-  /* 1 */ @js.native
-  object Module extends TopLevel[Module with Double]
+  @js.native
+  sealed trait Method
+    extends StObject
+       with SymbolKind
+  /* 5 */ val Method: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Method & Double = js.native
   
-  /* 2 */ @js.native
-  object Namespace extends TopLevel[Namespace with Double]
+  @js.native
+  sealed trait Module
+    extends StObject
+       with SymbolKind
+  /* 1 */ val Module: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Module & Double = js.native
   
-  /* 20 */ @js.native
-  object Null extends TopLevel[Null with Double]
+  @js.native
+  sealed trait Namespace
+    extends StObject
+       with SymbolKind
+  /* 2 */ val Namespace: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Namespace & Double = js.native
   
-  /* 15 */ @js.native
-  object Number extends TopLevel[Number with Double]
+  @js.native
+  sealed trait Null
+    extends StObject
+       with SymbolKind
+  /* 20 */ val Null: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Null & Double = js.native
   
-  /* 18 */ @js.native
-  object Object extends TopLevel[Object with Double]
+  @js.native
+  sealed trait Number
+    extends StObject
+       with SymbolKind
+  /* 15 */ val Number: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Number & Double = js.native
   
-  /* 24 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
+  @js.native
+  sealed trait Object
+    extends StObject
+       with SymbolKind
+  /* 18 */ val Object: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Object & Double = js.native
   
-  /* 3 */ @js.native
-  object Package extends TopLevel[Package with Double]
+  @js.native
+  sealed trait Operator
+    extends StObject
+       with SymbolKind
+  /* 24 */ val Operator: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Operator & Double = js.native
   
-  /* 6 */ @js.native
-  object Property extends TopLevel[Property with Double]
+  @js.native
+  sealed trait Package
+    extends StObject
+       with SymbolKind
+  /* 3 */ val Package: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Package & Double = js.native
   
-  /* 14 */ @js.native
-  object String extends TopLevel[String with Double]
+  @js.native
+  sealed trait Property
+    extends StObject
+       with SymbolKind
+  /* 6 */ val Property: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Property & Double = js.native
   
-  /* 22 */ @js.native
-  object Struct extends TopLevel[Struct with Double]
+  @js.native
+  sealed trait String
+    extends StObject
+       with SymbolKind
+  /* 14 */ val String: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.String & Double = js.native
   
-  /* 25 */ @js.native
-  object TypeParameter extends TopLevel[TypeParameter with Double]
+  @js.native
+  sealed trait Struct
+    extends StObject
+       with SymbolKind
+  /* 22 */ val Struct: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Struct & Double = js.native
   
-  /* 12 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  @js.native
+  sealed trait TypeParameter
+    extends StObject
+       with SymbolKind
+  /* 25 */ val TypeParameter: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.TypeParameter & Double = js.native
   
+  @js.native
+  sealed trait Variable
+    extends StObject
+       with SymbolKind
+  /* 12 */ val Variable: typingsJapgolly.monacoEditor.mod.languages.SymbolKind.Variable & Double = js.native
 }
-

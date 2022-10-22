@@ -1,13 +1,13 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.data.FileManagerDataSource")
 @js.native
-class FileManagerDataSource () extends HierarchicalDataSource {
-  def this(options: FileManagerDataSourceOptions) = this()
+trait FileManagerDataSource
+  extends StObject
+     with HierarchicalDataSource {
+  
   def init(options: FileManagerDataSourceOptions): Unit = js.native
 }
-

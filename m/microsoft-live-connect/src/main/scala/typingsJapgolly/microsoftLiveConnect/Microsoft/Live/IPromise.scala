@@ -1,19 +1,21 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The promise API implemented by this library.
   */
 @js.native
-trait IPromise[T] extends js.Object {
+trait IPromise[T] extends StObject {
+  
   /**
     * Cancels the pending request represented by the Promise, and triggers
     * the error callback if the promised event has not yet occurred.
     */
   def cancel(): Unit = js.native
+  
   /**
     * Adds event listeners for particular events.
     * @param onSuccess Called when the promised event successfully occurs.
@@ -23,11 +25,15 @@ trait IPromise[T] extends js.Object {
     *   making progress toward completion.
     */
   def `then`(onSuccess: js.Function1[/* response */ T, Unit]): IPromise[T] = js.native
-  def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): IPromise[T] = js.native
+  def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ Any, Unit]): IPromise[T] = js.native
   def `then`(
     onSuccess: js.Function1[/* response */ T, Unit],
-    onError: js.Function1[/* error */ js.Any, Unit],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
+    onError: js.Function1[/* error */ Any, Unit],
+    onProgress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[T] = js.native
+  def `then`(
+    onSuccess: js.Function1[/* response */ T, Unit],
+    onError: Unit,
+    onProgress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[T] = js.native
 }
-

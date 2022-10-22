@@ -1,6 +1,7 @@
 
 # Scala.js typings for estraverse
 
+Typings are for version 5.1
 
 ## Library description:
 ECMAScript JS AST traversal functions
@@ -9,10 +10,10 @@ ECMAScript JS AST traversal functions
 | ------------------ | :-------------: |
 | Full name          | estraverse |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 629 |
-| # downloads        | 529821992 |
-| # stars            | 10 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6162521333333334E8 |
+| # stars            | 867.0 |
 
 ## Links
 - [Homepage](https://github.com/estools/estraverse)

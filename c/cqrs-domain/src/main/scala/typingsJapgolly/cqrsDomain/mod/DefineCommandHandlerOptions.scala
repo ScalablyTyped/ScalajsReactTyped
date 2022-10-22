@@ -1,34 +1,47 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineCommandHandler
-trait DefineCommandHandlerOptions extends js.Object {
+trait DefineCommandHandlerOptions extends StObject {
+  
   /**
     * optional, default is file name without extension
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * optional, if not defined it will pass the whole command...
     */
   var payload: js.UndefOr[String] = js.undefined
+  
   /**
     * optional, default 0
     */
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DefineCommandHandlerOptions {
-  @scala.inline
-  def apply(name: String = null, payload: String = null, version: Int | Double = null): DefineCommandHandlerOptions = {
+  
+  inline def apply(): DefineCommandHandlerOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineCommandHandlerOptions]
   }
+  
+  extension [Self <: DefineCommandHandlerOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

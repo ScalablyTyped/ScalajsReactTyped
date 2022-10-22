@@ -1,18 +1,10 @@
 package typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.x509
 
-import typingsJapgolly.jsrsasign.AnonCriticalBoolean
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
-import typingsJapgolly.jsrsasign.jsrsasignStrings.authorityinfoaccess
-import typingsJapgolly.jsrsasign.jsrsasignStrings.authoritykeyidentifier
-import typingsJapgolly.jsrsasign.jsrsasignStrings.basicconstraints
-import typingsJapgolly.jsrsasign.jsrsasignStrings.crldistributionpoints
-import typingsJapgolly.jsrsasign.jsrsasignStrings.extkeyusage
-import typingsJapgolly.jsrsasign.jsrsasignStrings.issueraltname
-import typingsJapgolly.jsrsasign.jsrsasignStrings.keyusage
-import typingsJapgolly.jsrsasign.jsrsasignStrings.subjectaltname
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * base Extension ASN.1 structure class
@@ -25,45 +17,23 @@ import scala.scalajs.js.annotation._
   * //     extnValue   OCTET STRING  }
   * ```
   */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.Extension")
-@js.native
-class Extension () extends ASN1Object {
-  def this(params: AnonCriticalBoolean) = this()
+trait Extension
+  extends StObject
+     with ASN1Object
+object Extension {
+  
+  inline def apply(
+    getEncodedHex: CallbackTo[String],
+    getFreshValueHex: CallbackTo[String],
+    getLengthHexFromValue: CallbackTo[String],
+    getValueHex: CallbackTo[String],
+    hL: String,
+    hT: String,
+    hTLV: String,
+    hV: String,
+    isModified: String
+  ): Extension = {
+    val __obj = js.Dynamic.literal(getEncodedHex = getEncodedHex.toJsFn, getFreshValueHex = getFreshValueHex.toJsFn, getLengthHexFromValue = getLengthHexFromValue.toJsFn, getValueHex = getValueHex.toJsFn, hL = hL.asInstanceOf[js.Any], hT = hT.asInstanceOf[js.Any], hTLV = hTLV.asInstanceOf[js.Any], hV = hV.asInstanceOf[js.Any], isModified = isModified.asInstanceOf[js.Any], params = null)
+    __obj.asInstanceOf[Extension]
+  }
 }
-
-/* static members */
-@JSGlobal("jsrsasign.KJUR.asn1.x509.Extension")
-@js.native
-object Extension extends js.Object {
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_authorityinfoaccess(name: authorityinfoaccess, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_authoritykeyidentifier(name: authoritykeyidentifier, extParams: Extension, a: js.Array[_]): Unit = js.native
-  /**
-    * append X.509v3 extension to any specified array
-    * @param name X.509v3 extension name
-    * @param extParams associative array of extension parameters
-    * @param a array to add specified extension
-    * @see KJUR.asn1.x509.Extension
-    * @description
-    * This static function add a X.509v3 extension specified by name and extParams to
-    * array 'a' so that 'a' will be an array of X.509v3 extension objects.
-    * @example
-    * var a = new Array();
-    * KJUR.asn1.x509.Extension.appendByNameToArray("BasicConstraints", {'cA':true, 'critical': true}, a);
-    * KJUR.asn1.x509.Extension.appendByNameToArray("KeyUsage", {'bin':'11'}, a);
-    */
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_basicconstraints(name: basicconstraints, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_crldistributionpoints(name: crldistributionpoints, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_extkeyusage(name: extkeyusage, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_issueraltname(name: issueraltname, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_keyusage(name: keyusage, extParams: Extension, a: js.Array[_]): Unit = js.native
-  @JSName("appendByNameToArray")
-  def appendByNameToArray_subjectaltname(name: subjectaltname, extParams: Extension, a: js.Array[_]): Unit = js.native
-}
-

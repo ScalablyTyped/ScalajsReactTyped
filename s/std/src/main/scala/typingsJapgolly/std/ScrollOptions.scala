@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollOptions extends js.Object {
+trait ScrollOptions extends StObject {
+  
+  /* standard dom */
   var behavior: js.UndefOr[ScrollBehavior] = js.undefined
 }
-
 object ScrollOptions {
-  @scala.inline
-  def apply(behavior: ScrollBehavior = null): ScrollOptions = {
+  
+  inline def apply(): ScrollOptions = {
     val __obj = js.Dynamic.literal()
-    if (behavior != null) __obj.updateDynamic("behavior")(behavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollOptions]
   }
+  
+  extension [Self <: ScrollOptions](x: Self) {
+    
+    inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+  }
 }
-

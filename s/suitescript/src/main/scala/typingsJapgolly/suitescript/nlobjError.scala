@@ -1,9 +1,10 @@
 package typingsJapgolly.suitescript
 
-import org.scalablytyped.runtime.Instantiable0
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Return a new instance of nlobjError used system or user-defined error object.
@@ -12,17 +13,8 @@ import scala.scalajs.js.annotation._
   * @return {nlobjError}
   * @constructor
   */
-@JSGlobal("nlobjError")
-@js.native
-class nlobjError protected ()
-  extends /**
-  *
-  * @return
-  */
-Instantiable0[js.Any] {
-  def this(name: String) = this()
-  def this(name: String, join: String) = this()
-  def this(name: String, join: String, summary: String) = this()
+trait nlobjError extends StObject {
+  
   /**
     * return the error code for this system or user-defined error.
     * @return {string}
@@ -33,7 +25,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getCode(): String = js.native
+  def getCode(): String
+  
   /**
     * return the error description for this error.
     * @return {string}
@@ -44,7 +37,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getDetails(): String = js.native
+  def getDetails(): String
+  
   /**
     * return the error db ID for this error (if it was an unhandled unexpected error).
     * @return {string}
@@ -55,7 +49,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getId(): String = js.native
+  def getId(): String
+  
   /**
     * return the internalid of the record if this error was thrown in an aftersubmit script.
     * @return {int}
@@ -66,7 +61,8 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getInternalId(): js.Any = js.native
+  def getInternalId(): Any
+  
   /**
     * return a stacktrace containing the location of the error.
     * @return {string[]}
@@ -76,7 +72,8 @@ Instantiable0[js.Any] {
     *
     * @since 2008.2
     */
-  def getStackTrace(): Unit = js.native
+  def getStackTrace(): Unit
+  
   /**
     * return the userevent script name where this error was thrown.
     * @return {string}
@@ -87,6 +84,34 @@ Instantiable0[js.Any] {
     * @since 2008.2
     * @return
     */
-  def getUserEvent(): String = js.native
+  def getUserEvent(): String
 }
-
+object nlobjError {
+  
+  inline def apply(
+    getCode: CallbackTo[String],
+    getDetails: CallbackTo[String],
+    getId: CallbackTo[String],
+    getInternalId: CallbackTo[Any],
+    getStackTrace: Callback,
+    getUserEvent: CallbackTo[String]
+  ): nlobjError = {
+    val __obj = js.Dynamic.literal(getCode = getCode.toJsFn, getDetails = getDetails.toJsFn, getId = getId.toJsFn, getInternalId = getInternalId.toJsFn, getStackTrace = getStackTrace.toJsFn, getUserEvent = getUserEvent.toJsFn)
+    __obj.asInstanceOf[nlobjError]
+  }
+  
+  extension [Self <: nlobjError](x: Self) {
+    
+    inline def setGetCode(value: CallbackTo[String]): Self = StObject.set(x, "getCode", value.toJsFn)
+    
+    inline def setGetDetails(value: CallbackTo[String]): Self = StObject.set(x, "getDetails", value.toJsFn)
+    
+    inline def setGetId(value: CallbackTo[String]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetInternalId(value: CallbackTo[Any]): Self = StObject.set(x, "getInternalId", value.toJsFn)
+    
+    inline def setGetStackTrace(value: Callback): Self = StObject.set(x, "getStackTrace", value.toJsFn)
+    
+    inline def setGetUserEvent(value: CallbackTo[String]): Self = StObject.set(x, "getUserEvent", value.toJsFn)
+  }
+}

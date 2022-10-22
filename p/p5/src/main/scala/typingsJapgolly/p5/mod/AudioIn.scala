@@ -1,30 +1,15 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.experimental.mediastream.MediaStream
-import org.scalajs.dom.raw.GainNode
-import org.scalajs.dom.raw.MediaStreamAudioSourceNode
+import org.scalajs.dom.GainNode
+import org.scalajs.dom.MediaStream
+import org.scalajs.dom.MediaStreamAudioSourceNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AudioIn extends js.Object {
-  /**
-    *   Input amplitude, connect to it by default but not
-    *   to master out
-    */
-  var amplitude: Amplitude = js.native
-  var currentSource: Double | Null = js.native
-  /**
-    *   Client must allow browser to access their
-    *   microphone / audioin source. Default: false. Will
-    *   become true when the client enables acces.
-    */
-  var enabled: Boolean = js.native
-  var input: GainNode = js.native
-  var mediaStream: MediaStreamAudioSourceNode | Null = js.native
-  var output: GainNode = js.native
-  var stream: MediaStream | Null = js.native
+trait AudioIn extends StObject {
+  
   /**
     *   Set amplitude (volume) of a mic input between 0
     *   and 1.0.
@@ -33,15 +18,25 @@ trait AudioIn extends js.Object {
     */
   def amp(vol: Double): Unit = js.native
   def amp(vol: Double, time: Double): Unit = js.native
+  
+  /**
+    *   Input amplitude, connect to it by default but not
+    *   to master out
+    */
+  var amplitude: Amplitude = js.native
+  
   /**
     *   Connect to an audio unit. If no parameter is
-    *   provided, will connect to the master output (i.e.
+    *   provided, will connect to the main output (i.e.
     *   your speakers).
     *   @param [unit] An object that accepts audio input,
     *   such as an FFT
     */
   def connect(): Unit = js.native
   def connect(unit: js.Object): Unit = js.native
+  
+  var currentSource: Double | Null = js.native
+  
   /**
     *   Disconnect the AudioIn from all audio units. For
     *   example, if connect() had been called,
@@ -49,6 +44,14 @@ trait AudioIn extends js.Object {
     *   speakers.
     */
   def disconnect(): Unit = js.native
+  
+  /**
+    *   Client must allow browser to access their
+    *   microphone / audioin source. Default: false. Will
+    *   become true when the client enables access.
+    */
+  var enabled: Boolean = js.native
+  
   /**
     *   Read the Amplitude (volume level) of an AudioIn.
     *   The AudioIn class contains its own instance of the
@@ -62,13 +65,11 @@ trait AudioIn extends js.Object {
     */
   def getLevel(): Double = js.native
   def getLevel(smoothing: Double): Double = js.native
+  
   /**
     *   Returns a list of available input sources. This is
-    *   a wrapper for <a
-    *   title="MediaDevices.enumerateDevices() - Web APIs
-    *   | MDN" target="_blank" href=
-    *   "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices"
-    *   and it returns a Promise.
+    *   a wrapper for  MediaDevices.enumerateDevices() -
+    *   Web APIs | MDN and it returns a Promise.
     *   @param [successCallback] This callback function
     *   handles the sources when they have been
     *   enumerated. The callback function receives the
@@ -79,24 +80,30 @@ trait AudioIn extends js.Object {
     *   place of the callbacks, similar to the
     *   enumerateDevices() method
     */
-  def getSources(): js.Promise[_] = js.native
-  def getSources(successCallback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
+  def getSources(): js.Promise[Any] = js.native
+  def getSources(successCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
   def getSources(
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
-  ): js.Promise[_] = js.native
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
+  ): js.Promise[Any] = js.native
+  def getSources(successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): js.Promise[Any] = js.native
+  
+  var input: GainNode = js.native
+  
+  var mediaStream: MediaStreamAudioSourceNode | Null = js.native
+  
+  var output: GainNode = js.native
+  
   /**
     *   Set the input source. Accepts a number
     *   representing a position in the array returned by
     *   getSources(). This is only available in browsers
-    *   that support <a
-    *   title="MediaDevices.enumerateDevices() - Web APIs
-    *   | MDN" target="_blank" href=
-    *   "https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/enumerateDevices"
-    *   navigator.mediaDevices.enumerateDevices().
+    *   that support
+    *   navigator.mediaDevices.enumerateDevices()
     *   @param num position of input source in the array
     */
   def setSource(num: Double): Unit = js.native
+  
   /**
     *   Start processing audio input. This enables the use
     *   of other AudioIn methods like getLevel(). Note
@@ -117,16 +124,19 @@ trait AudioIn extends js.Object {
     *   do not support getUserMedia.
     */
   def start(): Unit = js.native
-  def start(successCallback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def start(successCallback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
   def start(
-    successCallback: js.Function1[/* repeated */ js.Any, _],
-    errorCallback: js.Function1[/* repeated */ js.Any, _]
+    successCallback: js.Function1[/* repeated */ Any, Any],
+    errorCallback: js.Function1[/* repeated */ Any, Any]
   ): Unit = js.native
+  def start(successCallback: Unit, errorCallback: js.Function1[/* repeated */ Any, Any]): Unit = js.native
+  
   /**
     *   Turn the AudioIn off. If the AudioIn is stopped,
     *   it cannot getLevel(). If re-starting, the user may
     *   be prompted for permission access.
     */
   def stop(): Unit = js.native
+  
+  var stream: MediaStream | Null = js.native
 }
-

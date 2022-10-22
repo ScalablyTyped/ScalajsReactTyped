@@ -1,126 +1,115 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.AnonHighlight
-import typingsJapgolly.antDesignReactNative.listViewMod.ListViewProps
-import typingsJapgolly.antDesignReactNative.listViewMod.default
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.anon.Highlight
+import typingsJapgolly.antDesignReactNative.libListViewMod.ListViewProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListView {
-  def apply[T](
-    onFetch: (Double, js.Function0[js.Any], js.Function0[Unit]) => Callback,
-    renderItem: (T, Double, AnonHighlight) => CallbackTo[Element | Null],
-    allLoadedText: js.Any = null,
-    arrowImageSource: js.Any = null,
-    arrowImageStyle: js.Any = null,
-    autoPagination: js.Any = null,
-    customRefreshControl: js.Any = null,
-    customRefreshView: js.Any = null,
-    dateFormat: js.Any = null,
-    dateStyle: js.Any = null,
-    dateTitle: js.Any = null,
-    displayDate: js.Any = null,
-    emptyView: js.Any = null,
-    enableEmptySections: js.Any = null,
-    fetchingSpinnerSize: js.Any = null,
-    firstLoader: js.Any = null,
-    header: js.Any = null,
-    horizontal: js.Any = null,
-    initialNumToRender: js.Any = null,
-    keyExtractor: (T, /* index */ Double) => CallbackTo[String] = null,
-    numColumns: Int | Double = null,
-    pagination: js.Any = null,
-    paginationAllLoadedView: js.Any = null,
-    paginationBtnText: js.Any = null,
-    paginationFetchingView: js.Any = null,
-    paginationWaitingView: js.Any = null,
-    refreshViewHeight: js.Any = null,
-    refreshViewStyle: js.Any = null,
-    refreshable: js.Any = null,
-    refreshableColors: js.Any = null,
-    refreshableMode: js.Any = null,
-    refreshableProgressBackgroundColor: js.Any = null,
-    refreshableSize: js.Any = null,
-    refreshableTintColor: js.Any = null,
-    refreshableTitle: js.Any = null,
-    refreshableTitlePull: js.Any = null,
-    refreshableTitleRefreshing: js.Any = null,
-    refreshableTitleRelease: js.Any = null,
-    scrollEnabled: js.Any = null,
-    separator: js.Any = null,
-    spinnerColor: js.Any = null,
-    waitingSpinnerSize: js.Any = null,
-    waitingSpinnerText: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListViewProps[T], default[T], Unit, ListViewProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onFetch")(js.Any.fromFunction3((t0: scala.Double, t1: js.Function0[js.Any], t2: js.Function0[scala.Unit]) => onFetch(t0, t1, t2).runNow()))
-    __obj.updateDynamic("renderItem")(js.Any.fromFunction3((t0: T, t1: scala.Double, t2: typingsJapgolly.antDesignReactNative.AnonHighlight) => renderItem(t0, t1, t2).runNow()))
-    if (allLoadedText != null) __obj.updateDynamic("allLoadedText")(allLoadedText.asInstanceOf[js.Any])
-    if (arrowImageSource != null) __obj.updateDynamic("arrowImageSource")(arrowImageSource.asInstanceOf[js.Any])
-    if (arrowImageStyle != null) __obj.updateDynamic("arrowImageStyle")(arrowImageStyle.asInstanceOf[js.Any])
-    if (autoPagination != null) __obj.updateDynamic("autoPagination")(autoPagination.asInstanceOf[js.Any])
-    if (customRefreshControl != null) __obj.updateDynamic("customRefreshControl")(customRefreshControl.asInstanceOf[js.Any])
-    if (customRefreshView != null) __obj.updateDynamic("customRefreshView")(customRefreshView.asInstanceOf[js.Any])
-    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat.asInstanceOf[js.Any])
-    if (dateStyle != null) __obj.updateDynamic("dateStyle")(dateStyle.asInstanceOf[js.Any])
-    if (dateTitle != null) __obj.updateDynamic("dateTitle")(dateTitle.asInstanceOf[js.Any])
-    if (displayDate != null) __obj.updateDynamic("displayDate")(displayDate.asInstanceOf[js.Any])
-    if (emptyView != null) __obj.updateDynamic("emptyView")(emptyView.asInstanceOf[js.Any])
-    if (enableEmptySections != null) __obj.updateDynamic("enableEmptySections")(enableEmptySections.asInstanceOf[js.Any])
-    if (fetchingSpinnerSize != null) __obj.updateDynamic("fetchingSpinnerSize")(fetchingSpinnerSize.asInstanceOf[js.Any])
-    if (firstLoader != null) __obj.updateDynamic("firstLoader")(firstLoader.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (initialNumToRender != null) __obj.updateDynamic("initialNumToRender")(initialNumToRender.asInstanceOf[js.Any])
-    if (keyExtractor != null) __obj.updateDynamic("keyExtractor")(js.Any.fromFunction2((t0: T, t1: /* index */ scala.Double) => keyExtractor(t0, t1).runNow()))
-    if (numColumns != null) __obj.updateDynamic("numColumns")(numColumns.asInstanceOf[js.Any])
-    if (pagination != null) __obj.updateDynamic("pagination")(pagination.asInstanceOf[js.Any])
-    if (paginationAllLoadedView != null) __obj.updateDynamic("paginationAllLoadedView")(paginationAllLoadedView.asInstanceOf[js.Any])
-    if (paginationBtnText != null) __obj.updateDynamic("paginationBtnText")(paginationBtnText.asInstanceOf[js.Any])
-    if (paginationFetchingView != null) __obj.updateDynamic("paginationFetchingView")(paginationFetchingView.asInstanceOf[js.Any])
-    if (paginationWaitingView != null) __obj.updateDynamic("paginationWaitingView")(paginationWaitingView.asInstanceOf[js.Any])
-    if (refreshViewHeight != null) __obj.updateDynamic("refreshViewHeight")(refreshViewHeight.asInstanceOf[js.Any])
-    if (refreshViewStyle != null) __obj.updateDynamic("refreshViewStyle")(refreshViewStyle.asInstanceOf[js.Any])
-    if (refreshable != null) __obj.updateDynamic("refreshable")(refreshable.asInstanceOf[js.Any])
-    if (refreshableColors != null) __obj.updateDynamic("refreshableColors")(refreshableColors.asInstanceOf[js.Any])
-    if (refreshableMode != null) __obj.updateDynamic("refreshableMode")(refreshableMode.asInstanceOf[js.Any])
-    if (refreshableProgressBackgroundColor != null) __obj.updateDynamic("refreshableProgressBackgroundColor")(refreshableProgressBackgroundColor.asInstanceOf[js.Any])
-    if (refreshableSize != null) __obj.updateDynamic("refreshableSize")(refreshableSize.asInstanceOf[js.Any])
-    if (refreshableTintColor != null) __obj.updateDynamic("refreshableTintColor")(refreshableTintColor.asInstanceOf[js.Any])
-    if (refreshableTitle != null) __obj.updateDynamic("refreshableTitle")(refreshableTitle.asInstanceOf[js.Any])
-    if (refreshableTitlePull != null) __obj.updateDynamic("refreshableTitlePull")(refreshableTitlePull.asInstanceOf[js.Any])
-    if (refreshableTitleRefreshing != null) __obj.updateDynamic("refreshableTitleRefreshing")(refreshableTitleRefreshing.asInstanceOf[js.Any])
-    if (refreshableTitleRelease != null) __obj.updateDynamic("refreshableTitleRelease")(refreshableTitleRelease.asInstanceOf[js.Any])
-    if (scrollEnabled != null) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (spinnerColor != null) __obj.updateDynamic("spinnerColor")(spinnerColor.asInstanceOf[js.Any])
-    if (waitingSpinnerSize != null) __obj.updateDynamic("waitingSpinnerSize")(waitingSpinnerSize.asInstanceOf[js.Any])
-    if (waitingSpinnerText != null) __obj.updateDynamic("waitingSpinnerText")(waitingSpinnerText.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.listViewMod.ListViewProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.listViewMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.listViewMod.ListViewProps[T]])(children: _*)
+  inline def apply[T](
+    onFetch: (Double, js.Function2[/* rows */ js.Array[T], /* limit */ Double, Any], js.Function0[Unit]) => Callback,
+    renderItem: (T, Double, Highlight) => Element | Null
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(onFetch = js.Any.fromFunction3((t0: Double, t1: js.Function2[/* rows */ js.Array[T], /* limit */ Double, Any], t2: js.Function0[Unit]) => (onFetch(t0, t1, t2)).runNow()), renderItem = js.Any.fromFunction3(renderItem))
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[ListViewProps[T]]))
   }
-  @JSImport("@ant-design/react-native/lib/list-view", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@ant-design/react-native", "ListView")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.ListView[T]] {
+    
+    inline def allLoadedText(value: Any): this.type = set("allLoadedText", value.asInstanceOf[js.Any])
+    
+    inline def arrowImageSource(value: Any): this.type = set("arrowImageSource", value.asInstanceOf[js.Any])
+    
+    inline def arrowImageStyle(value: Any): this.type = set("arrowImageStyle", value.asInstanceOf[js.Any])
+    
+    inline def autoPagination(value: Any): this.type = set("autoPagination", value.asInstanceOf[js.Any])
+    
+    inline def customRefreshControl(value: Any): this.type = set("customRefreshControl", value.asInstanceOf[js.Any])
+    
+    inline def customRefreshView(value: Any): this.type = set("customRefreshView", value.asInstanceOf[js.Any])
+    
+    inline def dateFormat(value: Any): this.type = set("dateFormat", value.asInstanceOf[js.Any])
+    
+    inline def dateStyle(value: Any): this.type = set("dateStyle", value.asInstanceOf[js.Any])
+    
+    inline def dateTitle(value: Any): this.type = set("dateTitle", value.asInstanceOf[js.Any])
+    
+    inline def displayDate(value: Any): this.type = set("displayDate", value.asInstanceOf[js.Any])
+    
+    inline def emptyView(value: Any): this.type = set("emptyView", value.asInstanceOf[js.Any])
+    
+    inline def enableEmptySections(value: Any): this.type = set("enableEmptySections", value.asInstanceOf[js.Any])
+    
+    inline def fetchingSpinnerSize(value: Any): this.type = set("fetchingSpinnerSize", value.asInstanceOf[js.Any])
+    
+    inline def firstLoader(value: Any): this.type = set("firstLoader", value.asInstanceOf[js.Any])
+    
+    inline def header(value: Any): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Any): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def initialNumToRender(value: Any): this.type = set("initialNumToRender", value.asInstanceOf[js.Any])
+    
+    inline def keyExtractor(value: (T, /* index */ Double) => String): this.type = set("keyExtractor", js.Any.fromFunction2(value))
+    
+    inline def numColumns(value: Double): this.type = set("numColumns", value.asInstanceOf[js.Any])
+    
+    inline def pagination(value: Any): this.type = set("pagination", value.asInstanceOf[js.Any])
+    
+    inline def paginationAllLoadedView(value: Any): this.type = set("paginationAllLoadedView", value.asInstanceOf[js.Any])
+    
+    inline def paginationBtnText(value: Any): this.type = set("paginationBtnText", value.asInstanceOf[js.Any])
+    
+    inline def paginationFetchingView(value: Any): this.type = set("paginationFetchingView", value.asInstanceOf[js.Any])
+    
+    inline def paginationWaitingView(value: Any): this.type = set("paginationWaitingView", value.asInstanceOf[js.Any])
+    
+    inline def refreshViewHeight(value: Any): this.type = set("refreshViewHeight", value.asInstanceOf[js.Any])
+    
+    inline def refreshViewStyle(value: Any): this.type = set("refreshViewStyle", value.asInstanceOf[js.Any])
+    
+    inline def refreshable(value: Any): this.type = set("refreshable", value.asInstanceOf[js.Any])
+    
+    inline def refreshableColors(value: Any): this.type = set("refreshableColors", value.asInstanceOf[js.Any])
+    
+    inline def refreshableMode(value: Any): this.type = set("refreshableMode", value.asInstanceOf[js.Any])
+    
+    inline def refreshableProgressBackgroundColor(value: Any): this.type = set("refreshableProgressBackgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def refreshableSize(value: Any): this.type = set("refreshableSize", value.asInstanceOf[js.Any])
+    
+    inline def refreshableTintColor(value: Any): this.type = set("refreshableTintColor", value.asInstanceOf[js.Any])
+    
+    inline def refreshableTitle(value: Any): this.type = set("refreshableTitle", value.asInstanceOf[js.Any])
+    
+    inline def refreshableTitlePull(value: Any): this.type = set("refreshableTitlePull", value.asInstanceOf[js.Any])
+    
+    inline def refreshableTitleRefreshing(value: Any): this.type = set("refreshableTitleRefreshing", value.asInstanceOf[js.Any])
+    
+    inline def refreshableTitleRelease(value: Any): this.type = set("refreshableTitleRelease", value.asInstanceOf[js.Any])
+    
+    inline def scrollEnabled(value: Any): this.type = set("scrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def separator(value: Any): this.type = set("separator", value.asInstanceOf[js.Any])
+    
+    inline def spinnerColor(value: Any): this.type = set("spinnerColor", value.asInstanceOf[js.Any])
+    
+    inline def waitingSpinnerSize(value: Any): this.type = set("waitingSpinnerSize", value.asInstanceOf[js.Any])
+    
+    inline def waitingSpinnerText(value: Any): this.type = set("waitingSpinnerText", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: ListViewProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

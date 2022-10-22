@@ -1,10 +1,11 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StatFailCallbackResult extends js.Object {
+trait StatFailCallbackResult extends StObject {
+  
   /** 错误信息
     *
     * 可选值：
@@ -12,13 +13,15 @@ trait StatFailCallbackResult extends js.Object {
     * - 'fail no such file or directory ${path}': 文件不存在; */
   var errMsg: String
 }
-
 object StatFailCallbackResult {
-  @scala.inline
-  def apply(errMsg: String): StatFailCallbackResult = {
-    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
   
+  inline def apply(errMsg: String): StatFailCallbackResult = {
+    val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatFailCallbackResult]
   }
+  
+  extension [Self <: StatFailCallbackResult](x: Self) {
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+  }
 }
-

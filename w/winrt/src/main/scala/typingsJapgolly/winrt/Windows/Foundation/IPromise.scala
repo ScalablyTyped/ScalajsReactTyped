@@ -1,17 +1,44 @@
 package typingsJapgolly.winrt.Windows.Foundation
 
-import org.scalajs.dom.raw.CustomEvent
+import org.scalajs.dom.CustomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromise[T] extends js.Object {
+trait IPromise[T] extends StObject {
+  
   var addEventListener: js.UndefOr[
     js.Function3[/* type */ String, /* listener */ js.Function, /* capture */ js.UndefOr[Boolean], Unit]
   ] = js.native
-  var dispatchEvent: js.UndefOr[js.Function2[/* type */ String, /* details */ js.Any, Boolean]] = js.native
+  
+  def cancel(): Unit = js.native
+  
+  var dispatchEvent: js.UndefOr[js.Function2[/* type */ String, /* details */ Any, Boolean]] = js.native
+  
+  def done[U](): Unit = js.native
+  def done[U](success: js.Function1[/* value */ T, Any]): Unit = js.native
+  def done[U](success: js.Function1[/* value */ T, Any], error: js.Function1[/* error */ Any, Any]): Unit = js.native
+  def done[U](
+    success: js.Function1[/* value */ T, Any],
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Unit = js.native
+  def done[U](
+    success: js.Function1[/* value */ T, Any],
+    error: Unit,
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Unit = js.native
+  def done[U](success: Unit, error: js.Function1[/* error */ Any, Any]): Unit = js.native
+  def done[U](
+    success: Unit,
+    error: js.Function1[/* error */ Any, Any],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): Unit = js.native
+  def done[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): Unit = js.native
+  
   var onerror: js.UndefOr[js.Function1[/* eventInfo */ CustomEvent, Unit]] = js.native
+  
   var removeEventListener: js.UndefOr[
     js.Function3[
       /* eventType */ String, 
@@ -20,25 +47,28 @@ trait IPromise[T] extends js.Object {
       Unit
     ]
   ] = js.native
-  def cancel(): Unit = js.native
-  def done[U](): Unit = js.native
-  def done[U](success: js.Function1[/* value */ T, _]): Unit = js.native
-  def done[U](success: js.Function1[/* value */ T, _], error: js.Function1[/* error */ js.Any, _]): Unit = js.native
-  def done[U](
-    success: js.Function1[/* value */ T, _],
-    error: js.Function1[/* error */ js.Any, _],
-    progress: js.Function1[/* progress */ js.Any, Unit]
-  ): Unit = js.native
+  
   def `then`[U](): IPromise[U] = js.native
   def `then`[U](success: js.Function1[/* value */ T, IPromise[U] | U]): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ T, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U]
+    error: js.Function1[/* error */ Any, IPromise[U] | U]
   ): IPromise[U] = js.native
   def `then`[U](
     success: js.Function1[/* value */ T, IPromise[U] | U],
-    error: js.Function1[/* error */ js.Any, IPromise[U] | U],
-    progress: js.Function1[/* progress */ js.Any, Unit]
+    error: js.Function1[/* error */ Any, IPromise[U] | U],
+    progress: js.Function1[/* progress */ Any, Unit]
   ): IPromise[U] = js.native
+  def `then`[U](
+    success: js.Function1[/* value */ T, IPromise[U] | U],
+    error: Unit,
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[U] = js.native
+  def `then`[U](success: Unit, error: js.Function1[/* error */ Any, IPromise[U] | U]): IPromise[U] = js.native
+  def `then`[U](
+    success: Unit,
+    error: js.Function1[/* error */ Any, IPromise[U] | U],
+    progress: js.Function1[/* progress */ Any, Unit]
+  ): IPromise[U] = js.native
+  def `then`[U](success: Unit, error: Unit, progress: js.Function1[/* progress */ Any, Unit]): IPromise[U] = js.native
 }
-

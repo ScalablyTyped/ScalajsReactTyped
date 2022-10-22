@@ -1,24 +1,20 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ionic.ionicStrings.testing
   - typingsJapgolly.ionic.ionicStrings.canary
   - typingsJapgolly.ionic.ionicStrings.latest
 */
-trait DistTag extends js.Object
-
+trait DistTag extends StObject
 object DistTag {
-  @scala.inline
-  def canary: typingsJapgolly.ionic.ionicStrings.canary = this.cast("canary")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def latest: typingsJapgolly.ionic.ionicStrings.latest = this.cast("latest")
-  @scala.inline
-  def testing: typingsJapgolly.ionic.ionicStrings.testing = this.cast("testing")
+  
+  inline def canary: typingsJapgolly.ionic.ionicStrings.canary = "canary".asInstanceOf[typingsJapgolly.ionic.ionicStrings.canary]
+  
+  inline def latest: typingsJapgolly.ionic.ionicStrings.latest = "latest".asInstanceOf[typingsJapgolly.ionic.ionicStrings.latest]
+  
+  inline def testing: typingsJapgolly.ionic.ionicStrings.testing = "testing".asInstanceOf[typingsJapgolly.ionic.ionicStrings.testing]
 }
-

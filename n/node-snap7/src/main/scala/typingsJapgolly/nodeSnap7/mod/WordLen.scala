@@ -1,59 +1,57 @@
 package typingsJapgolly.nodeSnap7.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WordLen extends js.Object
-
+sealed trait WordLen extends StObject
 @JSImport("node-snap7", "WordLen")
 @js.native
-object WordLen extends js.Object {
-  @js.native
-  sealed trait S7WLBit extends WordLen
-  
-  @js.native
-  sealed trait S7WLByte extends WordLen
-  
-  @js.native
-  sealed trait S7WLCounter extends WordLen
-  
-  @js.native
-  sealed trait S7WLDWord extends WordLen
-  
-  @js.native
-  sealed trait S7WLReal extends WordLen
-  
-  @js.native
-  sealed trait S7WLTimer extends WordLen
-  
-  @js.native
-  sealed trait S7WLWord extends WordLen
+object WordLen extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WordLen with Double] = js.native
-  /* 0x01 */ @js.native
-  object S7WLBit extends TopLevel[S7WLBit with Double]
+  def apply(value: Double): js.UndefOr[WordLen & Double] = js.native
   
-  /* 0x02 */ @js.native
-  object S7WLByte extends TopLevel[S7WLByte with Double]
+  @js.native
+  sealed trait S7WLBit
+    extends StObject
+       with WordLen
+  /* 0x01 */ val S7WLBit: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLBit & Double = js.native
   
-  /* 0x1C */ @js.native
-  object S7WLCounter extends TopLevel[S7WLCounter with Double]
+  @js.native
+  sealed trait S7WLByte
+    extends StObject
+       with WordLen
+  /* 0x02 */ val S7WLByte: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLByte & Double = js.native
   
-  /* 0x06 */ @js.native
-  object S7WLDWord extends TopLevel[S7WLDWord with Double]
+  @js.native
+  sealed trait S7WLCounter
+    extends StObject
+       with WordLen
+  /* 0x1C */ val S7WLCounter: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLCounter & Double = js.native
   
-  /* 0x08 */ @js.native
-  object S7WLReal extends TopLevel[S7WLReal with Double]
+  @js.native
+  sealed trait S7WLDWord
+    extends StObject
+       with WordLen
+  /* 0x06 */ val S7WLDWord: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLDWord & Double = js.native
   
-  /* 0x1D */ @js.native
-  object S7WLTimer extends TopLevel[S7WLTimer with Double]
+  @js.native
+  sealed trait S7WLReal
+    extends StObject
+       with WordLen
+  /* 0x08 */ val S7WLReal: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLReal & Double = js.native
   
-  /* 0x04 */ @js.native
-  object S7WLWord extends TopLevel[S7WLWord with Double]
+  @js.native
+  sealed trait S7WLTimer
+    extends StObject
+       with WordLen
+  /* 0x1D */ val S7WLTimer: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLTimer & Double = js.native
   
+  @js.native
+  sealed trait S7WLWord
+    extends StObject
+       with WordLen
+  /* 0x04 */ val S7WLWord: typingsJapgolly.nodeSnap7.mod.WordLen.S7WLWord & Double = js.native
 }
-

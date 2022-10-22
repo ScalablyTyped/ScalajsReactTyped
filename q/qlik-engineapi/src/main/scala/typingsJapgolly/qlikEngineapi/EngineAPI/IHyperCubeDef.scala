@@ -1,39 +1,45 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HyperCubeDef...
   */
-trait IHyperCubeDef extends js.Object {
+trait IHyperCubeDef extends StObject {
+  
   /**
     * If this property is set to true, the cells are always expanded.
     * It implies that it is not possible to collapse any cells.
     * >> The default value is false.
     */
   var qAlwaysFullyExpanded: Boolean
+  
   /**
     * Specifies a calculation condition, which must be fulfilled for the hypercube to be (re)calculated.
     * As long as the condition is not met, the engine does not perform a new calculation.
     * This property is optional. By default, there is no calculation condition.
     */
   var qCalcCond: js.UndefOr[IValueExpr] = js.undefined
+  
   /**
     * Array of dimensions.
     */
   var qDimensions: js.Array[INxDimension]
+  
   /**
     * This property applies for pivot tables and allows to change the layout of the table.
     * An indentation is added to the beginning of each row.
     * >> The default value is false.
     */
   var qIndentMode: Boolean
+  
   /**
     * Initial data set.
     */
   var qInitialDataFetch: js.Array[INxPage]
+  
   /**
     * Defines the sort order of the columns in the hypercube.
     * Column numbers are separated by a comma.
@@ -48,15 +54,18 @@ trait IHyperCubeDef extends js.Object {
     * Stacked pivot tables can only contain one measure.
     */
   var qInterColumnSortOrder: js.Array[Double]
+  
   /**
     * Maximum number of cells for an initial data fetch (set in qInitialDataFetch) when in stacked mode (qMode is K).
     * >> The default value is 5000.
     */
   var qMaxStackedCells: Double
+  
   /**
     * Array of measures.
     */
   var qMeasures: js.Array[INxMeasure]
+  
   /**
     * Defines the way the data are handled internally by the engine.
     * Default value is DATA_MODE_STRAIGHT.
@@ -64,6 +73,7 @@ trait IHyperCubeDef extends js.Object {
     * table can contain several dimensions but only one measure.
     */
   var qMode: NxHypercubeMode
+  
   /**
     * Number of left dimensions.
     * Default value is -1. In that case, all dimensions are left dimensions.
@@ -99,20 +109,25 @@ trait IHyperCubeDef extends js.Object {
     * - The pseudo dimension is a top dimension
     */
   var qNoOfLeftDims: Double
+  
   /**
     * If this property is set to true, the missing symbols (if any) are replaced by 0 if the value is a numeric
     * and by an empty string if the value is a string.
     * >> The default value is false.
     */
   var qPopulateMissing: Boolean
+  
   var qPseudoDimPos: Double
-   // ?Dokufehler
+  
+  // ?Dokufehler
   var qReductionMode: ReductionModeType
+  
   /**
     * If set to true, the total (if any) is shown on the first row.
     * >> The default value is false.
     */
   var qShowTotalsAbove: Boolean
+  
   /**
     * To enable the sorting by ascending or descending order in the values of a measure.
     * This property applies to pivot tables and stacked pivot tables.
@@ -120,24 +135,26 @@ trait IHyperCubeDef extends js.Object {
     * The sorting is restricted to the values of the first measure in a pivot table.
     */
   var qSortbyYValue: String
+  
   /**
     * Name of the alternate state.
     * Default is current selections $.
     */
   var qStateName: String
+  
   /**
     * Removes missing values.
     */
   var qSuppressMissing: Boolean
+  
   /**
     * Removes zero values.
     */
   var qSuppressZero: Boolean
 }
-
 object IHyperCubeDef {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     qAlwaysFullyExpanded: Boolean,
     qDimensions: js.Array[INxDimension],
     qIndentMode: Boolean,
@@ -154,12 +171,58 @@ object IHyperCubeDef {
     qSortbyYValue: String,
     qStateName: String,
     qSuppressMissing: Boolean,
-    qSuppressZero: Boolean,
-    qCalcCond: IValueExpr = null
+    qSuppressZero: Boolean
   ): IHyperCubeDef = {
     val __obj = js.Dynamic.literal(qAlwaysFullyExpanded = qAlwaysFullyExpanded.asInstanceOf[js.Any], qDimensions = qDimensions.asInstanceOf[js.Any], qIndentMode = qIndentMode.asInstanceOf[js.Any], qInitialDataFetch = qInitialDataFetch.asInstanceOf[js.Any], qInterColumnSortOrder = qInterColumnSortOrder.asInstanceOf[js.Any], qMaxStackedCells = qMaxStackedCells.asInstanceOf[js.Any], qMeasures = qMeasures.asInstanceOf[js.Any], qMode = qMode.asInstanceOf[js.Any], qNoOfLeftDims = qNoOfLeftDims.asInstanceOf[js.Any], qPopulateMissing = qPopulateMissing.asInstanceOf[js.Any], qPseudoDimPos = qPseudoDimPos.asInstanceOf[js.Any], qReductionMode = qReductionMode.asInstanceOf[js.Any], qShowTotalsAbove = qShowTotalsAbove.asInstanceOf[js.Any], qSortbyYValue = qSortbyYValue.asInstanceOf[js.Any], qStateName = qStateName.asInstanceOf[js.Any], qSuppressMissing = qSuppressMissing.asInstanceOf[js.Any], qSuppressZero = qSuppressZero.asInstanceOf[js.Any])
-    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond.asInstanceOf[js.Any])
     __obj.asInstanceOf[IHyperCubeDef]
   }
+  
+  extension [Self <: IHyperCubeDef](x: Self) {
+    
+    inline def setQAlwaysFullyExpanded(value: Boolean): Self = StObject.set(x, "qAlwaysFullyExpanded", value.asInstanceOf[js.Any])
+    
+    inline def setQCalcCond(value: IValueExpr): Self = StObject.set(x, "qCalcCond", value.asInstanceOf[js.Any])
+    
+    inline def setQCalcCondUndefined: Self = StObject.set(x, "qCalcCond", js.undefined)
+    
+    inline def setQDimensions(value: js.Array[INxDimension]): Self = StObject.set(x, "qDimensions", value.asInstanceOf[js.Any])
+    
+    inline def setQDimensionsVarargs(value: INxDimension*): Self = StObject.set(x, "qDimensions", js.Array(value*))
+    
+    inline def setQIndentMode(value: Boolean): Self = StObject.set(x, "qIndentMode", value.asInstanceOf[js.Any])
+    
+    inline def setQInitialDataFetch(value: js.Array[INxPage]): Self = StObject.set(x, "qInitialDataFetch", value.asInstanceOf[js.Any])
+    
+    inline def setQInitialDataFetchVarargs(value: INxPage*): Self = StObject.set(x, "qInitialDataFetch", js.Array(value*))
+    
+    inline def setQInterColumnSortOrder(value: js.Array[Double]): Self = StObject.set(x, "qInterColumnSortOrder", value.asInstanceOf[js.Any])
+    
+    inline def setQInterColumnSortOrderVarargs(value: Double*): Self = StObject.set(x, "qInterColumnSortOrder", js.Array(value*))
+    
+    inline def setQMaxStackedCells(value: Double): Self = StObject.set(x, "qMaxStackedCells", value.asInstanceOf[js.Any])
+    
+    inline def setQMeasures(value: js.Array[INxMeasure]): Self = StObject.set(x, "qMeasures", value.asInstanceOf[js.Any])
+    
+    inline def setQMeasuresVarargs(value: INxMeasure*): Self = StObject.set(x, "qMeasures", js.Array(value*))
+    
+    inline def setQMode(value: NxHypercubeMode): Self = StObject.set(x, "qMode", value.asInstanceOf[js.Any])
+    
+    inline def setQNoOfLeftDims(value: Double): Self = StObject.set(x, "qNoOfLeftDims", value.asInstanceOf[js.Any])
+    
+    inline def setQPopulateMissing(value: Boolean): Self = StObject.set(x, "qPopulateMissing", value.asInstanceOf[js.Any])
+    
+    inline def setQPseudoDimPos(value: Double): Self = StObject.set(x, "qPseudoDimPos", value.asInstanceOf[js.Any])
+    
+    inline def setQReductionMode(value: ReductionModeType): Self = StObject.set(x, "qReductionMode", value.asInstanceOf[js.Any])
+    
+    inline def setQShowTotalsAbove(value: Boolean): Self = StObject.set(x, "qShowTotalsAbove", value.asInstanceOf[js.Any])
+    
+    inline def setQSortbyYValue(value: String): Self = StObject.set(x, "qSortbyYValue", value.asInstanceOf[js.Any])
+    
+    inline def setQStateName(value: String): Self = StObject.set(x, "qStateName", value.asInstanceOf[js.Any])
+    
+    inline def setQSuppressMissing(value: Boolean): Self = StObject.set(x, "qSuppressMissing", value.asInstanceOf[js.Any])
+    
+    inline def setQSuppressZero(value: Boolean): Self = StObject.set(x, "qSuppressZero", value.asInstanceOf[js.Any])
+  }
 }
-

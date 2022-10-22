@@ -1,54 +1,31 @@
 package typingsJapgolly.inquirer.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.inquirer.AnonIsFinal
 import typingsJapgolly.inquirer.inquirerStrings.input
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Provides options for a question for the `InputPrompt`.
-  *
-  * @template T
-  * The type of the answers.
-  */
 trait InputQuestion[T /* <: Answers */]
-  extends InputQuestionOptions[T]
-     with DistinctQuestion[T] {
+  extends StObject
+     with InputQuestionOptions[T] {
+  
   /**
     * @inheritdoc
     */
   @JSName("type")
   var type_InputQuestion: js.UndefOr[input] = js.undefined
 }
-
 object InputQuestion {
-  @scala.inline
-  def apply[T /* <: Answers */](
-    default: AsyncDynamicQuestionProperty[_, T] = null,
-    filter: /* input */ js.Any => CallbackTo[js.Any] = null,
-    message: AsyncDynamicQuestionProperty[String, T] = null,
-    name: KeyUnion[T] = null,
-    prefix: String = null,
-    suffix: String = null,
-    transformer: (/* input */ js.Any, T, /* flags */ AnonIsFinal) => CallbackTo[String | js.Promise[String]] = null,
-    `type`: input = null,
-    validate: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => CallbackTo[Boolean | String | (js.Promise[Boolean | String])] = null,
-    when: AsyncDynamicQuestionProperty[Boolean, T] = null
-  ): InputQuestion[T] = {
+  
+  inline def apply[T /* <: Answers */](): InputQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(js.Any.fromFunction1((t0: /* input */ js.Any) => filter(t0).runNow()))
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
-    if (suffix != null) __obj.updateDynamic("suffix")(suffix.asInstanceOf[js.Any])
-    if (transformer != null) __obj.updateDynamic("transformer")(js.Any.fromFunction3((t0: /* input */ js.Any, t1: T, t2: /* flags */ typingsJapgolly.inquirer.AnonIsFinal) => transformer(t0, t1, t2).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: /* input */ js.Any, t1: /* answers */ js.UndefOr[T]) => validate(t0, t1).runNow()))
-    if (when != null) __obj.updateDynamic("when")(when.asInstanceOf[js.Any])
     __obj.asInstanceOf[InputQuestion[T]]
   }
+  
+  extension [Self <: InputQuestion[?], T /* <: Answers */](x: Self & InputQuestion[T]) {
+    
+    inline def setType(value: input): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridTemplateRowsProperty
+import typingsJapgolly.csstype.mod.Property.GridTemplateRows
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridTemplateRowsProps[TLength] extends js.Object {
-  val gridTemplateRows: js.UndefOr[ResponsiveValue[GridTemplateRowsProperty[TLength]]] = js.undefined
+trait GridTemplateRowsProps[TLength] extends StObject {
+  
+  val gridTemplateRows: js.UndefOr[ResponsiveValue[GridTemplateRows[TLength]]] = js.undefined
 }
-
 object GridTemplateRowsProps {
-  @scala.inline
-  def apply[TLength](gridTemplateRows: ResponsiveValue[GridTemplateRowsProperty[TLength]] = null): GridTemplateRowsProps[TLength] = {
+  
+  inline def apply[TLength](): GridTemplateRowsProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (gridTemplateRows != null) __obj.updateDynamic("gridTemplateRows")(gridTemplateRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridTemplateRowsProps[TLength]]
   }
+  
+  extension [Self <: GridTemplateRowsProps[?], TLength](x: Self & GridTemplateRowsProps[TLength]) {
+    
+    inline def setGridTemplateRows(value: ResponsiveValue[GridTemplateRows[TLength]]): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
+    
+    inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
+    
+    inline def setGridTemplateRowsVarargs(value: GridTemplateRows[TLength]*): Self = StObject.set(x, "gridTemplateRows", js.Array(value*))
+  }
 }
-

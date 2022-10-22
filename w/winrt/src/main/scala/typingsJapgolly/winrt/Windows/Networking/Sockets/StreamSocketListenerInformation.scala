@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.StreamSocketListenerInformation")
-@js.native
-class StreamSocketListenerInformation () extends IStreamSocketListenerInformation {
-  /* CompleteClass */
-  override var localPort: String = js.native
+trait StreamSocketListenerInformation
+  extends StObject
+     with IStreamSocketListenerInformation
+object StreamSocketListenerInformation {
+  
+  inline def apply(localPort: String): StreamSocketListenerInformation = {
+    val __obj = js.Dynamic.literal(localPort = localPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StreamSocketListenerInformation]
+  }
 }
-

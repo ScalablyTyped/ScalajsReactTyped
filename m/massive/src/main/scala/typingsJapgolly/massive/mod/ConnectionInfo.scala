@@ -1,42 +1,68 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConnectionInfo extends js.Object {
+trait ConnectionInfo extends StObject {
+  
   var application_name: js.UndefOr[String] = js.undefined
+  
   var database: js.UndefOr[String] = js.undefined
+  
   var fallback_application_name: js.UndefOr[Boolean] = js.undefined
+  
   var host: js.UndefOr[String] = js.undefined
+  
   var password: js.UndefOr[String | Null] = js.undefined
+  
   var port: js.UndefOr[Double] = js.undefined
+  
   var ssl: js.UndefOr[Boolean] = js.undefined
+  
   var user: js.UndefOr[String] = js.undefined
 }
-
 object ConnectionInfo {
-  @scala.inline
-  def apply(
-    application_name: String = null,
-    database: String = null,
-    fallback_application_name: js.UndefOr[Boolean] = js.undefined,
-    host: String = null,
-    password: String = null,
-    port: Int | Double = null,
-    ssl: js.UndefOr[Boolean] = js.undefined,
-    user: String = null
-  ): ConnectionInfo = {
+  
+  inline def apply(): ConnectionInfo = {
     val __obj = js.Dynamic.literal()
-    if (application_name != null) __obj.updateDynamic("application_name")(application_name.asInstanceOf[js.Any])
-    if (database != null) __obj.updateDynamic("database")(database.asInstanceOf[js.Any])
-    if (!js.isUndefined(fallback_application_name)) __obj.updateDynamic("fallback_application_name")(fallback_application_name.asInstanceOf[js.Any])
-    if (host != null) __obj.updateDynamic("host")(host.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl.asInstanceOf[js.Any])
-    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionInfo]
   }
+  
+  extension [Self <: ConnectionInfo](x: Self) {
+    
+    inline def setApplication_name(value: String): Self = StObject.set(x, "application_name", value.asInstanceOf[js.Any])
+    
+    inline def setApplication_nameUndefined: Self = StObject.set(x, "application_name", js.undefined)
+    
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    
+    inline def setFallback_application_name(value: Boolean): Self = StObject.set(x, "fallback_application_name", value.asInstanceOf[js.Any])
+    
+    inline def setFallback_application_nameUndefined: Self = StObject.set(x, "fallback_application_name", js.undefined)
+    
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordNull: Self = StObject.set(x, "password", null)
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+  }
 }
-

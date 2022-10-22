@@ -1,8 +1,8 @@
 package typingsJapgolly.aliApp.my
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.aliApp.aliAppStrings.input
@@ -21,40 +21,36 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.aliApp.aliAppStrings.animationiteration
   - typingsJapgolly.aliApp.aliAppStrings.animationend
 */
-trait EventType extends js.Object
-
+trait EventType extends StObject
 object EventType {
-  @scala.inline
-  def animationend: typingsJapgolly.aliApp.aliAppStrings.animationend = this.cast("animationend")
-  @scala.inline
-  def animationiteration: typingsJapgolly.aliApp.aliAppStrings.animationiteration = this.cast("animationiteration")
-  @scala.inline
-  def animationstart: typingsJapgolly.aliApp.aliAppStrings.animationstart = this.cast("animationstart")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def form: typingsJapgolly.aliApp.aliAppStrings.form = this.cast("form")
-  @scala.inline
-  def input: typingsJapgolly.aliApp.aliAppStrings.input = this.cast("input")
-  @scala.inline
-  def longpress: typingsJapgolly.aliApp.aliAppStrings.longpress = this.cast("longpress")
-  @scala.inline
-  def scroll: typingsJapgolly.aliApp.aliAppStrings.scroll = this.cast("scroll")
-  @scala.inline
-  def submit: typingsJapgolly.aliApp.aliAppStrings.submit = this.cast("submit")
-  @scala.inline
-  def tap: typingsJapgolly.aliApp.aliAppStrings.tap = this.cast("tap")
-  @scala.inline
-  def touchcancel: typingsJapgolly.aliApp.aliAppStrings.touchcancel = this.cast("touchcancel")
-  @scala.inline
-  def touchend: typingsJapgolly.aliApp.aliAppStrings.touchend = this.cast("touchend")
-  @scala.inline
-  def touchforcechange: typingsJapgolly.aliApp.aliAppStrings.touchforcechange = this.cast("touchforcechange")
-  @scala.inline
-  def touchmove: typingsJapgolly.aliApp.aliAppStrings.touchmove = this.cast("touchmove")
-  @scala.inline
-  def touchstart: typingsJapgolly.aliApp.aliAppStrings.touchstart = this.cast("touchstart")
-  @scala.inline
-  def transitionend: typingsJapgolly.aliApp.aliAppStrings.transitionend = this.cast("transitionend")
+  
+  inline def animationend: typingsJapgolly.aliApp.aliAppStrings.animationend = "animationend".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.animationend]
+  
+  inline def animationiteration: typingsJapgolly.aliApp.aliAppStrings.animationiteration = "animationiteration".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.animationiteration]
+  
+  inline def animationstart: typingsJapgolly.aliApp.aliAppStrings.animationstart = "animationstart".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.animationstart]
+  
+  inline def form: typingsJapgolly.aliApp.aliAppStrings.form = "form".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.form]
+  
+  inline def input: typingsJapgolly.aliApp.aliAppStrings.input = "input".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.input]
+  
+  inline def longpress: typingsJapgolly.aliApp.aliAppStrings.longpress = "longpress".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.longpress]
+  
+  inline def scroll: typingsJapgolly.aliApp.aliAppStrings.scroll = "scroll".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.scroll]
+  
+  inline def submit: typingsJapgolly.aliApp.aliAppStrings.submit = "submit".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.submit]
+  
+  inline def tap: typingsJapgolly.aliApp.aliAppStrings.tap = "tap".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.tap]
+  
+  inline def touchcancel: typingsJapgolly.aliApp.aliAppStrings.touchcancel = "touchcancel".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchcancel]
+  
+  inline def touchend: typingsJapgolly.aliApp.aliAppStrings.touchend = "touchend".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchend]
+  
+  inline def touchforcechange: typingsJapgolly.aliApp.aliAppStrings.touchforcechange = "touchforcechange".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchforcechange]
+  
+  inline def touchmove: typingsJapgolly.aliApp.aliAppStrings.touchmove = "touchmove".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchmove]
+  
+  inline def touchstart: typingsJapgolly.aliApp.aliAppStrings.touchstart = "touchstart".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.touchstart]
+  
+  inline def transitionend: typingsJapgolly.aliApp.aliAppStrings.transitionend = "transitionend".asInstanceOf[typingsJapgolly.aliApp.aliAppStrings.transitionend]
 }
-

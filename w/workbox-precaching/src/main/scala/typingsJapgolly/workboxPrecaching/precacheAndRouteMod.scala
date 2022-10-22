@@ -1,15 +1,17 @@
 package typingsJapgolly.workboxPrecaching
 
-import typingsJapgolly.workboxPrecaching.fetchListenerOptionsMod.FetchListenerOptions
-import typingsJapgolly.workboxPrecaching.precacheEntryMod.PrecacheEntry
+import typingsJapgolly.workboxPrecaching.typesFetchListenerOptionsMod.FetchListenerOptions
+import typingsJapgolly.workboxPrecaching.typesPrecacheEntryMod.PrecacheEntry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-precaching/precacheAndRoute", JSImport.Namespace)
-@js.native
-object precacheAndRouteMod extends js.Object {
-  def precacheAndRoute(entries: js.Array[String | PrecacheEntry]): Unit = js.native
-  def precacheAndRoute(entries: js.Array[String | PrecacheEntry], options: FetchListenerOptions): Unit = js.native
+object precacheAndRouteMod {
+  
+  @JSImport("workbox-precaching/precacheAndRoute", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def precacheAndRoute(entries: js.Array[String | PrecacheEntry]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("precacheAndRoute")(entries.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def precacheAndRoute(entries: js.Array[String | PrecacheEntry], options: FetchListenerOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("precacheAndRoute")(entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

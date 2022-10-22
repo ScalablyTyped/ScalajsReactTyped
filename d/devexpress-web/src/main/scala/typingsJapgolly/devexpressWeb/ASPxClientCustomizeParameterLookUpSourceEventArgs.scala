@@ -1,32 +1,50 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeParameterLookUpSource and ASPxClientWebDocumentViewer.CustomizeParameterLookUpSource events.
   */
-@JSGlobal("ASPxClientCustomizeParameterLookUpSourceEventArgs")
-@js.native
-class ASPxClientCustomizeParameterLookUpSourceEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCustomizeParameterLookUpSourceEventArgs class with the specified settings.
-    * @param parameter An IParameterDescriptor object that stores information about a parameter. This value is assigned to the ASPxClientCustomizeParameterLookUpSourceEventArgs.parameter property.
-    * @param items An array of IDisplayedValue objects that stores information about look-up parameter values. This value is assigned to the ASPxClientCustomizeParameterLookUpSourceEventArgs.items property.
-    */
-  def this(parameter: ASPxDesignerElementParameterDescriptor, items: js.Array[ASPxDesignerElementEditorItem]) = this()
+trait ASPxClientCustomizeParameterLookUpSourceEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Specifies the data source that provides look-up values for the parameter editor.
     */
-  var dataSource: js.Any = js.native
+  var dataSource: Any
+  
   /**
     * Provides access to the collection of look-up parameter values.
     */
-  var items: js.Array[ASPxDesignerElementEditorItem] = js.native
+  var items: js.Array[ASPxDesignerElementEditorItem]
+  
   /**
     * Provides access to an object that stores information about a parameter.
     */
-  var parameter: ASPxDesignerElementParameterDescriptor = js.native
+  var parameter: ASPxDesignerElementParameterDescriptor
 }
-
+object ASPxClientCustomizeParameterLookUpSourceEventArgs {
+  
+  inline def apply(
+    dataSource: Any,
+    items: js.Array[ASPxDesignerElementEditorItem],
+    parameter: ASPxDesignerElementParameterDescriptor
+  ): ASPxClientCustomizeParameterLookUpSourceEventArgs = {
+    val __obj = js.Dynamic.literal(dataSource = dataSource.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs](x: Self) {
+    
+    inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setItems(value: js.Array[ASPxDesignerElementEditorItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsVarargs(value: ASPxDesignerElementEditorItem*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setParameter(value: ASPxDesignerElementParameterDescriptor): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,13 +1,15 @@
 package typingsJapgolly.feathersjsConfiguration
 
 import typingsJapgolly.feathersjsFeathers.mod.Application
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@feathersjs/configuration", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(): js.Function1[/* app */ Application[_], Application[_]] = js.native
+object mod {
+  
+  @JSImport("@feathersjs/configuration", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): js.Function1[/* app */ Application[Any], Application[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* app */ Application[Any], Application[Any]]]
 }
-

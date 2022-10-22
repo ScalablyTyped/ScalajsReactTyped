@@ -1,15 +1,25 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "ExpressionValidator")
 @js.native
-class ExpressionValidator () extends SurveyValidator {
+open class ExpressionValidator () extends SurveyValidator {
   def this(expression: String) = this()
-  var expression: String = js.native
+  
+  var conditionRunner: ConditionRunner = js.native
+  
   /* protected */ def ensureConditionRunner(): Boolean = js.native
-  /* protected */ def generateError(res: Boolean, value: js.Any): ValidatorResult = js.native
+  
+  /*
+    * The expression property.
+    */
+  def expression: String = js.native
+  def expression_=(`val`: String): Unit = js.native
+  
+  /* protected */ def generateError(res: Boolean, value: Any, name: String): ValidatorResult = js.native
+  
+  var isRunningValue: Boolean = js.native
 }
-

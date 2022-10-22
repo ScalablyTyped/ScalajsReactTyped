@@ -1,12 +1,12 @@
 package typingsJapgolly.cordovaPluginMediaCapture
 
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates the error code resulting from a failed media capture operation. */
-trait CaptureError extends js.Object {
+trait CaptureError extends StObject {
+  
   /**
     * One of the pre-defined error codes listed below.
     *     CaptureError.CAPTURE_INTERNAL_ERR
@@ -21,18 +21,20 @@ trait CaptureError extends js.Object {
     *         The requested capture operation is not supported.
     */
   var code: Double
+  
   var message: String
 }
-
-@JSGlobal("CaptureError")
-@js.native
-object CaptureError extends /** Constructor for CaptureError  */
-Instantiable2[/* code */ Double, /* message */ String, CaptureError] {
-  var CAPTURE_APPLICATION_BUSY: Double = js.native
-  var CAPTURE_INTERNAL_ERR: Double = js.native
-  var CAPTURE_INVALID_ARGUMENT: Double = js.native
-  var CAPTURE_NOT_SUPPORTED: Double = js.native
-  var CAPTURE_NO_MEDIA_FILES: Double = js.native
-  var CAPTURE_PERMISSION_DENIED: Double = js.native
+object CaptureError {
+  
+  inline def apply(code: Double, message: String): CaptureError = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CaptureError]
+  }
+  
+  extension [Self <: CaptureError](x: Self) {
+    
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__linear-progress
 
-Typings are for version 0.35
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web linear progress indicator component
@@ -10,10 +10,10 @@ The Material Components for the web linear progress indicator component
 | ------------------ | :-------------: |
 | Full name          | @material/linear-progress |
 | Keywords           | material components, material design, linear progress |
-| # releases         | 149 |
-| # dependents       | 42 |
-| # downloads        | 1237563 |
-| # stars            | 0 |
+| # releases         | 735 |
+| # dependents       | 0.0 |
+| # downloads        | 237962.66666666666 |
+| # stars            | 16410.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)
@@ -24,7 +24,7 @@ The Material Components for the web linear progress indicator component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

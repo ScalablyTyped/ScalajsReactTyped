@@ -2,27 +2,33 @@ package typingsJapgolly.googleAdwordsScripts
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Blob
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageBuilder[Media] extends AdWordsBuilder[Media] {
+trait ImageBuilder[Media]
+  extends StObject
+     with AdWordsBuilder[Media] {
+  
   def withData(data: Blob): ImageBuilder[Media]
+  
   def withName(name: String): ImageBuilder[Media]
 }
-
 object ImageBuilder {
-  @scala.inline
-  def apply[Media](
+  
+  inline def apply[Media](
     build: CallbackTo[AdWordsOperation[Media]],
-    withData: Blob => CallbackTo[ImageBuilder[Media]],
-    withName: String => CallbackTo[ImageBuilder[Media]]
+    withData: Blob => ImageBuilder[Media],
+    withName: String => ImageBuilder[Media]
   ): ImageBuilder[Media] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("withData")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Blob) => withData(t0).runNow()))
-    __obj.updateDynamic("withName")(js.Any.fromFunction1((t0: java.lang.String) => withName(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, withData = js.Any.fromFunction1(withData), withName = js.Any.fromFunction1(withName))
     __obj.asInstanceOf[ImageBuilder[Media]]
   }
+  
+  extension [Self <: ImageBuilder[?], Media](x: Self & ImageBuilder[Media]) {
+    
+    inline def setWithData(value: Blob => ImageBuilder[Media]): Self = StObject.set(x, "withData", js.Any.fromFunction1(value))
+    
+    inline def setWithName(value: String => ImageBuilder[Media]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.jsprintmanager.mod.JSPM
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextAlignment extends js.Object
-
+sealed trait TextAlignment extends StObject
 @JSImport("jsprintmanager", "JSPM.TextAlignment")
 @js.native
-object TextAlignment extends js.Object {
-  @js.native
-  sealed trait Center extends TextAlignment
-  
-  @js.native
-  sealed trait Justify extends TextAlignment
-  
-  @js.native
-  sealed trait Left extends TextAlignment
-  
-  @js.native
-  sealed trait Right extends TextAlignment
+object TextAlignment extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object Center extends TopLevel[Center with Double]
+  def apply(value: Double): js.UndefOr[TextAlignment & Double] = js.native
   
-  /* 3 */ @js.native
-  object Justify extends TopLevel[Justify with Double]
+  @js.native
+  sealed trait Center
+    extends StObject
+       with TextAlignment
+  /* 1 */ val Center: typingsJapgolly.jsprintmanager.mod.JSPM.TextAlignment.Center & Double = js.native
   
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
+  @js.native
+  sealed trait Justify
+    extends StObject
+       with TextAlignment
+  /* 3 */ val Justify: typingsJapgolly.jsprintmanager.mod.JSPM.TextAlignment.Justify & Double = js.native
   
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
+  @js.native
+  sealed trait Left
+    extends StObject
+       with TextAlignment
+  /* 0 */ val Left: typingsJapgolly.jsprintmanager.mod.JSPM.TextAlignment.Left & Double = js.native
   
+  @js.native
+  sealed trait Right
+    extends StObject
+       with TextAlignment
+  /* 2 */ val Right: typingsJapgolly.jsprintmanager.mod.JSPM.TextAlignment.Right & Double = js.native
 }
-

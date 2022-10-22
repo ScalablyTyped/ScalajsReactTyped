@@ -1,13 +1,15 @@
 package typingsJapgolly.googleP12Pem
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("google-p12-pem", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getPem(filename: String): js.Promise[String] = js.native
-  def getPem(filename: String, callback: js.Function2[/* err */ js.Error | Null, /* pem */ String | Null, Unit]): Unit = js.native
+object mod {
+  
+  @JSImport("google-p12-pem", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getPem(filename: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getPem(filename: String, callback: js.Function2[/* err */ js.Error | Null, /* pem */ String | Null, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getPem")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

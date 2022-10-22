@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ChartAxisFormat object, for use in `chartAxisFormat.set({ ... })`. */
-trait ChartAxisFormatUpdateData extends js.Object {
+trait ChartAxisFormatUpdateData extends StObject {
+  
   /**
+    * Specifies the font attributes (font name, font size, color, etc.) for a chart axis element.
     *
-    * Represents the font attributes (font name, font size, color, etc.) for a chart axis element.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var font: js.UndefOr[ChartFontUpdateData] = js.undefined
+  
   /**
+    * Specifies chart line formatting.
     *
-    * Represents chart line formatting.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
 }
-
 object ChartAxisFormatUpdateData {
-  @scala.inline
-  def apply(font: ChartFontUpdateData = null, line: ChartLineFormatUpdateData = null): ChartAxisFormatUpdateData = {
+  
+  inline def apply(): ChartAxisFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxisFormatUpdateData]
   }
+  
+  extension [Self <: ChartAxisFormatUpdateData](x: Self) {
+    
+    inline def setFont(value: ChartFontUpdateData): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setLine(value: ChartLineFormatUpdateData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+  }
 }
-

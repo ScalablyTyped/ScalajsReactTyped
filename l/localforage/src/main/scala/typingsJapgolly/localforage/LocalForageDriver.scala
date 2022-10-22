@@ -1,15 +1,17 @@
 package typingsJapgolly.localforage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LocalForageDriver
-  extends LocalForageDbMethodsCore
-     with LocalForageDriverMethodsOptional {
+  extends StObject
+     with LocalForageDriverDbMethods {
+  
   var _driver: String = js.native
-  var _support: js.UndefOr[Boolean | LocalForageDriverSupportFunc] = js.native
+  
   def _initStorage(options: LocalForageOptions): Unit = js.native
+  
+  var _support: js.UndefOr[Boolean | LocalForageDriverSupportFunc] = js.native
 }
-

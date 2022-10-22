@@ -2,15 +2,17 @@ package typingsJapgolly.fridaGum.Java
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.fridaGum.NativePointer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnumerateLoadedClassesCallbacks extends js.Object {
+trait EnumerateLoadedClassesCallbacks extends StObject {
+  
   /**
     * Called when all loaded classes have been enumerated.
     */
   def onComplete(): Unit
+  
   /**
     * Called with the name of each currently loaded class, and a JNI
     * reference for its Java Class object.
@@ -20,14 +22,17 @@ trait EnumerateLoadedClassesCallbacks extends js.Object {
     */
   def onMatch(name: String, handle: NativePointer): Unit
 }
-
 object EnumerateLoadedClassesCallbacks {
-  @scala.inline
-  def apply(onComplete: Callback, onMatch: (String, NativePointer) => Callback): EnumerateLoadedClassesCallbacks = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("onComplete")(onComplete.toJsFn)
-    __obj.updateDynamic("onMatch")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.fridaGum.NativePointer) => onMatch(t0, t1).runNow()))
+  
+  inline def apply(onComplete: Callback, onMatch: (String, NativePointer) => Callback): EnumerateLoadedClassesCallbacks = {
+    val __obj = js.Dynamic.literal(onComplete = onComplete.toJsFn, onMatch = js.Any.fromFunction2((t0: String, t1: NativePointer) => (onMatch(t0, t1)).runNow()))
     __obj.asInstanceOf[EnumerateLoadedClassesCallbacks]
   }
+  
+  extension [Self <: EnumerateLoadedClassesCallbacks](x: Self) {
+    
+    inline def setOnComplete(value: Callback): Self = StObject.set(x, "onComplete", value.toJsFn)
+    
+    inline def setOnMatch(value: (String, NativePointer) => Callback): Self = StObject.set(x, "onMatch", js.Any.fromFunction2((t0: String, t1: NativePointer) => (value(t0, t1)).runNow()))
+  }
 }
-

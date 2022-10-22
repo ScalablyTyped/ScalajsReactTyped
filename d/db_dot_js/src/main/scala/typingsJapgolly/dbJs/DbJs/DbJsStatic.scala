@@ -1,28 +1,34 @@
 package typingsJapgolly.dbJs.DbJs
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DbJsStatic extends js.Object {
-  def cmp(key1: js.Any, key2: js.Any): Double
+trait DbJsStatic extends StObject {
+  
+  def cmp(key1: Any, key2: Any): Double
+  
   def delete(dbName: String): js.Promise[Unit]
+  
   def open(options: OpenOptions): js.Promise[Server]
 }
-
 object DbJsStatic {
-  @scala.inline
-  def apply(
-    cmp: (js.Any, js.Any) => CallbackTo[Double],
-    delete: String => CallbackTo[js.Promise[Unit]],
-    open: OpenOptions => CallbackTo[js.Promise[Server]]
+  
+  inline def apply(
+    cmp: (Any, Any) => Double,
+    delete: String => js.Promise[Unit],
+    open: OpenOptions => js.Promise[Server]
   ): DbJsStatic = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("cmp")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => cmp(t0, t1).runNow()))
-    __obj.updateDynamic("delete")(js.Any.fromFunction1((t0: java.lang.String) => delete(t0).runNow()))
-    __obj.updateDynamic("open")(js.Any.fromFunction1((t0: typingsJapgolly.dbJs.DbJs.OpenOptions) => open(t0).runNow()))
+    val __obj = js.Dynamic.literal(cmp = js.Any.fromFunction2(cmp), delete = js.Any.fromFunction1(delete), open = js.Any.fromFunction1(open))
     __obj.asInstanceOf[DbJsStatic]
   }
+  
+  extension [Self <: DbJsStatic](x: Self) {
+    
+    inline def setCmp(value: (Any, Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
+    
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    
+    inline def setOpen(value: OpenOptions => js.Promise[Server]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+  }
 }
-

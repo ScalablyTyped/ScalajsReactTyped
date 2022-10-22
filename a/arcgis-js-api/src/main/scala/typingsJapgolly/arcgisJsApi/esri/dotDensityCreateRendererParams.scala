@@ -1,69 +1,76 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dotDensityCreateRendererParams extends Object {
+trait dotDensityCreateRendererParams
+  extends StObject
+     with Object {
+  
   /**
-    * A set of complementary numeric fields/expressions used as the basis of the dot density visualization. For example, if creating an election map, you would indicate the names of each field representing the candidate or political party where total votes are stored.
+    * A set of complementary numeric fields/expressions used as the basis of the dot density visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var attributes: js.Array[dotDensityCreateRendererParamsAttributes]
+  
   /**
-    * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization. Determines optimal colors for the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
-    *
-    * @default gray
-    */
-  var basemap: js.UndefOr[String | Basemap] = js.undefined
-  /**
-    * Indicates whether to enable color blending of different colored dots rendered at the same pixel. This is only visible in highly dense and highly diverse features.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * Indicates whether to enable color blending of different colored dots rendered at the same pixel.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * In authoring apps, the user may select a pre-defined dot density scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
+    * In authoring apps, the user may select a pre-defined dot density scheme.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var dotDensityScheme: js.UndefOr[DotDensityScheme] = js.undefined
+  
   /**
-    * Indicates whether to vary the value of each dot by the view's scale. This will set the [referenceScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-DotDensityRenderer.html#referenceScale) of the output renderer.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * Indicates whether to vary the value of each dot by the view's scale.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The **polygon** layer for which the visualization is generated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
-  var layer: FeatureLayer | GeoJSONLayer
+  var layer: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var legendOptions: js.UndefOr[dotDensityCreateRendererParamsLegendOptions] = js.undefined
+  
   /**
-    * Indicates whether the polygon outline width should vary based on view scale. When false, no outline will be used in the output renderer.
+    * Indicates whether the polygon outline width should vary based on view scale.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-dotDensity.html#createRenderer)
-    *
-    * @default false
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
     */
   var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Allows for cancelable requests.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-dotDensity.html#createRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   /**
     * The MapView instance in which the visualization will be rendered.
     *
@@ -71,33 +78,52 @@ trait dotDensityCreateRendererParams extends Object {
     */
   var view: MapView
 }
-
 object dotDensityCreateRendererParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     attributes: js.Array[dotDensityCreateRendererParamsAttributes],
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    view: MapView,
-    basemap: String | Basemap = null,
-    dotBlendingEnabled: js.UndefOr[Boolean] = js.undefined,
-    dotDensityScheme: DotDensityScheme = null,
-    dotValueOptimizationEnabled: js.UndefOr[Boolean] = js.undefined,
-    legendOptions: dotDensityCreateRendererParamsLegendOptions = null,
-    outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    view: MapView
   ): dotDensityCreateRendererParams = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotBlendingEnabled)) __obj.updateDynamic("dotBlendingEnabled")(dotBlendingEnabled.asInstanceOf[js.Any])
-    if (dotDensityScheme != null) __obj.updateDynamic("dotDensityScheme")(dotDensityScheme.asInstanceOf[js.Any])
-    if (!js.isUndefined(dotValueOptimizationEnabled)) __obj.updateDynamic("dotValueOptimizationEnabled")(dotValueOptimizationEnabled.asInstanceOf[js.Any])
-    if (legendOptions != null) __obj.updateDynamic("legendOptions")(legendOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(outlineOptimizationEnabled)) __obj.updateDynamic("outlineOptimizationEnabled")(outlineOptimizationEnabled.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[dotDensityCreateRendererParams]
   }
+  
+  extension [Self <: dotDensityCreateRendererParams](x: Self) {
+    
+    inline def setAttributes(value: js.Array[dotDensityCreateRendererParamsAttributes]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesVarargs(value: dotDensityCreateRendererParamsAttributes*): Self = StObject.set(x, "attributes", js.Array(value*))
+    
+    inline def setDotBlendingEnabled(value: Boolean): Self = StObject.set(x, "dotBlendingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDotBlendingEnabledUndefined: Self = StObject.set(x, "dotBlendingEnabled", js.undefined)
+    
+    inline def setDotDensityScheme(value: DotDensityScheme): Self = StObject.set(x, "dotDensityScheme", value.asInstanceOf[js.Any])
+    
+    inline def setDotDensitySchemeUndefined: Self = StObject.set(x, "dotDensityScheme", js.undefined)
+    
+    inline def setDotValueOptimizationEnabled(value: Boolean): Self = StObject.set(x, "dotValueOptimizationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDotValueOptimizationEnabledUndefined: Self = StObject.set(x, "dotValueOptimizationEnabled", js.undefined)
+    
+    inline def setLayer(value: FeatureLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptions(value: dotDensityCreateRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    
+    inline def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setView(value: MapView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+  }
 }
-

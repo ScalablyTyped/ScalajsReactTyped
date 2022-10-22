@@ -11,9 +11,9 @@ A wrapper for the Piwik tracking HTTP API
 | Full name          | piwik-tracker |
 | Keywords           | piwik, analytics, tracking |
 | # releases         | 1 |
-| # dependents       | 3 |
-| # downloads        | 10241 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 123.66666666666667 |
+| # stars            | 107.0 |
 
 ## Links
 - [Homepage](https://github.com/fhemberger/piwik-tracker)

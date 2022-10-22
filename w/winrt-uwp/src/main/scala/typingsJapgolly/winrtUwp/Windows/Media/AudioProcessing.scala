@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioProcessing extends js.Object
-
+sealed trait AudioProcessing extends StObject
 /** Defines the audio processing modes. */
 @JSGlobal("Windows.Media.AudioProcessing")
 @js.native
-object AudioProcessing extends js.Object {
+object AudioProcessing extends StObject {
+  
   /** Normal audio signal processing. */
   @js.native
-  sealed trait default extends AudioProcessing
+  sealed trait default
+    extends StObject
+       with AudioProcessing
   
   /** Minimal audio signal processing. */
   @js.native
-  sealed trait raw extends AudioProcessing
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AudioProcessing with Double] = js.native
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 1 */ @js.native
-  object raw extends TopLevel[raw with Double]
-  
+  sealed trait raw
+    extends StObject
+       with AudioProcessing
 }
-

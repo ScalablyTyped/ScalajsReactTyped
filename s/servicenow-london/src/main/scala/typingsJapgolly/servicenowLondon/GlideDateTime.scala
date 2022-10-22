@@ -1,30 +1,12 @@
 package typingsJapgolly.servicenowLondon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("GlideDateTime")
 @js.native
-/**
-  * Instantiates a new GlideDateTime object with the current date and time in Greenwich Mean Time
-  * (GMT).
-  */
-class GlideDateTime () extends js.Object {
-  /**
-    * Instantiates a new GlideDateTime object with the current date and time in Greenwich Mean Time
-    * (GMT).
-    *
-    * @param g The GlideDateTime object to use for setting the time of the new object.
-    */
-  def this(g: GlideDateTime) = this()
-  /**
-    * Instantiates a new GlideDateTime object with the current date and time in Greenwich Mean Time
-    * (GMT).
-    *
-    * @param value A UTC date and time using the internal format yyyy-MM-dd HH:mm:ss.
-    */
-  def this(value: String) = this()
+trait GlideDateTime extends StObject {
+  
   /**
     * Adds a GlideTime object to the current GlideDateTime object.
     *
@@ -51,6 +33,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getNumericValue());
     */
   def add(milliseconds: Double): Unit = js.native
+  
   /**
     * Adds a specified number of days to the current GlideDateTime object. A negative parameter
     * subtracts days. The method determines the local date and time equivalent to the value stored by
@@ -64,6 +47,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getLocalDate());
     */
   def addDaysLocalTime(days: Double): Unit = js.native
+  
   /**
     * Adds a specified number of days to the current GlideDateTime object. A negative parameter
     * subtracts days. The method determines the UTC date and time equivalent to the value stored by
@@ -77,6 +61,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addDaysUTC(amount: Double): Unit = js.native
+  
   /**
     * Adds a specified number of months to the current GlideDateTime object. A negative parameter
     * subtracts months. The method determines the local date and time equivalent to the value stored
@@ -91,6 +76,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addMonthsLocalTime(amount: Double): Unit = js.native
+  
   /**
     * Adds a specified number of months to the current GlideDateTime object. A negative parameter
     * subtracts months. The method determines the UTC date and time equivalent to the value stored by
@@ -104,6 +90,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addMonthsUTC(amount: Double): Unit = js.native
+  
   /**
     * Adds the specified number of seconds to the current GlideDateTime object.
     *
@@ -115,6 +102,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getValue());
     */
   def addSeconds(value: Double): Unit = js.native
+  
   /**
     * Adds a specified number of weeks to the current GlideDateTime object. A negative parameter
     * subtracts weeks. The method determines the local date and time equivalent to the value stored
@@ -128,6 +116,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addWeeksLocalTime(amount: Double): Unit = js.native
+  
   /**
     * Adds a specified number of weeks to the current GlideDateTime object. A negative parameter
     * subtracts weeks. The method determines the UTC date and time equivalent to the value stored by
@@ -141,6 +130,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addWeeksUTC(amount: Double): Unit = js.native
+  
   /**
     * Adds a specified number of years to the current GlideDateTime object. A negative parameter
     * subtracts years. The method determines the local date and time equivalent to the value stored
@@ -154,6 +144,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addYearsLocalTime(amount: Double): Unit = js.native
+  
   /**
     * Adds a specified number of years to the current GlideDateTime object. A negative parameter
     * subtracts years. The date and time value stored by GlideDateTime object is interpreted as being
@@ -167,6 +158,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def addYearsUTC(amount: Double): Unit = js.native
+  
   /**
     * Determines if the GlideDateTime object occurs after the specified GlideDateTime.
     *
@@ -180,6 +172,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt1.after(gdt2));
     */
   def after(gdt: GlideDateTime): Boolean = js.native
+  
   /**
     * Determines if the GlideDateTime object occurs before the specified GlideDateTime.
     *
@@ -193,6 +186,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt1.before(gdt2));
     */
   def before(gdt: GlideDateTime): Boolean = js.native
+  
   /**
     * Compares two date and time objects to determine whether they are equivalent or one occurs
     * before or after the other.
@@ -214,6 +208,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(initDate.compareTo(compDate3)); // initDate is before compDate3 (-1)
     */
   def compareTo(o: js.Object): Double = js.native
+  
   def equals(dateTime: String): Boolean = js.native
   /**
     * Compares a datetime with an existing value for equality.
@@ -226,6 +221,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.equals('2011-09-30 00:12:01'));
     */
   def equals(dateTime: GlideDateTime): Boolean = js.native
+  
   /**
     * Gets the amount of time that daylight saving time is offset.
     *
@@ -237,6 +233,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDSTOffset()); //uses current user session time zone (US/Pacific)
     */
   def getDSTOffset(): Double = js.native
+  
   /**
     * Gets the date stored by the GlideDateTime object, expressed in the standard format, yyyy-MM-dd,
     * and the system time zone, UTC by default.
@@ -248,6 +245,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDate());
     */
   def getDate(): GlideTime = js.native
+  
   /**
     * Gets the day of the month stored by the GlideDateTime object, expressed in the current user's
     * time zone.
@@ -259,6 +257,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfMonthLocalTime());
     */
   def getDayOfMonthLocalTime(): Double = js.native
+  
   /**
     * Gets the day of the month stored by the GlideDateTime object, expressed in the UTC time zone.
     *
@@ -269,6 +268,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfMonthUTC());
     */
   def getDayOfMonthUTC(): Double = js.native
+  
   /**
     * Gets the day of the week stored by the GlideDateTime object, expressed in the user's time zone.
     *
@@ -280,6 +280,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfWeekLocalTime());
     */
   def getDayOfWeekLocalTime(): Double = js.native
+  
   /**
     * Gets the day of the week stored by the GlideDateTime object, expressed in the UTC time zone.
     *
@@ -290,6 +291,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfWeekLocalTime());
     */
   def getDayOfWeekUTC(): Double = js.native
+  
   /**
     * Gets the number of days in the month stored by the GlideDateTime object, expressed in the
     * current user's time zone.
@@ -301,6 +303,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDaysInMonthLocalTime());
     */
   def getDaysInMonthLocalTime(): Double = js.native
+  
   /**
     * Gets the number of days in the month stored by the GlideDateTime object, expressed in the UTC
     * time zone.
@@ -313,6 +316,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDaysInMonthUTC());
     */
   def getDaysInMonthUTC(): Double = js.native
+  
   /**
     * Gets the date and time value in the current user's display format and time zone.
     *
@@ -325,6 +329,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDisplayValue()); //uses current user session time zone (US/Pacific)
     */
   def getDisplayValue(): String = js.native
+  
   /**
     * Gets the display value in the internal format (yyyy-MM-dd HH:mm:ss).
     *
@@ -336,6 +341,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDisplayValueInternal()); //uses current user session time zone (US/Pacific)
     */
   def getDisplayValueInternal(): String = js.native
+  
   /**
     * Gets the current error message.
     *
@@ -347,12 +353,14 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getErrorMsg());
     */
   def getErrorMsg(): String = js.native
+  
   /**
     * Returns the object's time in the local time zone and in the internal format.
     *
     * @returns The object's time in the local time zone and the internal format.
     */
   def getInternalFormattedLocalTime(): String = js.native
+  
   /**
     * Gets the date stored by the GlideDateTime object, expressed in the standard format, yyyy-MM-dd,
     * and the current user's time zone.
@@ -364,6 +372,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getLocalDate());
     */
   def getLocalDate(): GlideTime = js.native
+  
   /**
     * Returns a GlideTime object that represents the time portion of the GlideDateTime object in the
     * user's time zone.
@@ -376,6 +385,7 @@ class GlideDateTime () extends js.Object {
     * gs.info("local time is " + gt.getByFormat('hh:mm:ss'));
     */
   def getLocalTime(): GlideTime = js.native
+  
   /**
     * Gets the month stored by the GlideDateTime object, expressed in the current user's time zone.
     *
@@ -386,6 +396,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getMonthLocalTime());
     */
   def getMonthLocalTime(): Double = js.native
+  
   /**
     * Gets the month stored by the GlideDateTime object, expressed in the UTC time zone.
     *
@@ -396,6 +407,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getMonthUTC());
     */
   def getMonthUTC(): Double = js.native
+  
   /**
     * Gets the number of milliseconds since January 1, 1970, 00:00:00 GMT.
     *
@@ -406,6 +418,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getNumericValue());
     */
   def getNumericValue(): Double = js.native
+  
   /**
     * Gets the time zone offset in milliseconds.
     *
@@ -417,6 +430,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getTZOffset());
     */
   def getTZOffset(): Double = js.native
+  
   /**
     * Returns a GlideTime object that represents the time portion of the GlideDateTime object.
     *
@@ -428,12 +442,14 @@ class GlideDateTime () extends js.Object {
     * gs.info(gt.getByFormat('hh:mm:ss'));
     */
   def getTime(): GlideTime = js.native
+  
   /**
     * Returns the object's time in the local time zone and in the user's format.
     *
     * @returns The object's time in the local time zone and in the user's format.
     */
   def getUserFormattedLocalTime(): String = js.native
+  
   /**
     * Gets the date and time value stored by the GlideDateTime object in the internal format,
     * yyyy-MM-dd HH:mm:ss, and the system time zone, UTC by default.
@@ -445,6 +461,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getValue());
     */
   def getValue(): String = js.native
+  
   /**
     * Gets the number of the week stored by the GlideDateTime object, expressed in the current user's
     * time zone. All weeks begin on Sunday. The first week of the year is the week that contains at
@@ -459,6 +476,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getWeekOfYearLocalTime());
     */
   def getWeekOfYearLocalTime(): Double = js.native
+  
   /**
     * Gets the number of the week stored by the GlideDateTime object, expressed in the UTC time zone.
     * All weeks begin on Sunday. The first week of the year is the week that contains at least one
@@ -473,6 +491,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getWeekOfYearUTC());
     */
   def getWeekOfYearUTC(): Double = js.native
+  
   /**
     * Gets the year stored by the GlideDateTime object, expressed in the current user's time zone.
     *
@@ -483,6 +502,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getYearLocalTime());
     */
   def getYearLocalTime(): Double = js.native
+  
   /**
     * Gets the year stored by the GlideDateTime object, expressed in the UTC time zone.
     *
@@ -493,6 +513,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getYearUTC());
     */
   def getYearUTC(): Double = js.native
+  
   /**
     * Determines if an object's date is set.
     *
@@ -503,6 +524,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.hasDate());
     */
   def hasDate(): Boolean = js.native
+  
   /**
     * Determines if an object's time uses a daylight saving offset.
     *
@@ -513,6 +535,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.isDST()); //true
     */
   def isDST(): Boolean = js.native
+  
   /**
     * Determines if a value is a valid date and time.
     *
@@ -524,6 +547,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.isValid());
     */
   def isValid(): Boolean = js.native
+  
   /**
     * Determines if the GlideDateTime object occurs on or after the specified GlideDateTime.
     *
@@ -537,6 +561,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt1.onOrAfter(gdt2));
     */
   def onOrAfter(gdt: GlideDateTime): Boolean = js.native
+  
   /**
     * Determines if the GlideDateTime object occurs on or before the specified GlideDateTime.
     *
@@ -550,6 +575,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt1.onOrBefore(gdt2));
     */
   def onOrBefore(gdt: GlideDateTime): Boolean = js.native
+  
   /**
     * Sets the day of the month to a specified value in the current user's time zone.
     *
@@ -562,6 +588,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfMonthLocalTime());
     */
   def setDayOfMonthLocalTime(day: Double): Unit = js.native
+  
   /**
     * Sets the day of the month to a specified value in the UTC time zone.
     *
@@ -574,6 +601,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getDayOfMonthUTC());
     */
   def setDayOfMonthUTC(day: Double): Unit = js.native
+  
   /**
     * Sets a date and time value using the current user's display format and time zone.
     *
@@ -606,6 +634,7 @@ class GlideDateTime () extends js.Object {
     */
   def setDisplayValue(asDisplayed: String): Unit = js.native
   def setDisplayValue(value: String, format: String): Unit = js.native
+  
   /**
     * Sets a date and time value using the internal format (yyyy-MM-dd HH:mm:ss) and the current
     * user's time zone.
@@ -619,6 +648,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getValue());
     */
   def setDisplayValueInternal(value: String): Unit = js.native
+  
   /**
     * Sets the date and time of the current object using an existing GlideDateTime object. This
     * method is equivalent to instantiating a new object with a GlideDateTime parameter.
@@ -632,6 +662,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(dt1.getValue());
     */
   def setGlideDateTime(g: GlideDateTime): Unit = js.native
+  
   /**
     * Sets the month stored by the GlideDateTime object to the specified value using the current
     * user's time zone.
@@ -644,6 +675,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getMonthLocalTime());
     */
   def setMonthLocalTime(month: Double): Unit = js.native
+  
   /**
     * Sets the month stored by the GlideDateTime object to the specified value using the UTC time
     * zone.
@@ -656,6 +688,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getMonthUTC());
     */
   def setMonthUTC(month: Double): Unit = js.native
+  
   /**
     * Sets the date and time of the GlideDateTime object.
     *
@@ -682,6 +715,7 @@ class GlideDateTime () extends js.Object {
   def setValue(o: String): Unit = js.native
   def setValue(o: Double): Unit = js.native
   def setValue(o: GlideDateTime): Unit = js.native
+  
   /**
     * Sets a date and time value using the UTC time zone and the specified date and time format. This
     * method throws a runtime exception if the date and time format used in the `dt` parameter does
@@ -697,6 +731,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getValue());
     */
   def setValueUTC(dt: String, format: String): Unit = js.native
+  
   /**
     * Sets the year stored by the GlideDateTime object to the specified value using the current
     * user's time zone.
@@ -707,6 +742,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getYearLocalTime());
     */
   def setYearLocalTime(year: Double): Unit = js.native
+  
   /**
     * Sets the year stored by the GlideDateTime object to the specified value using the UTC time
     * zone.
@@ -719,6 +755,7 @@ class GlideDateTime () extends js.Object {
     * gs.info(gdt.getYearUTC());
     */
   def setYearUTC(year: Double): Unit = js.native
+  
   /**
     * Subtracts the specified number of milliseconds from the GlideDateTime object.
     *
@@ -745,25 +782,3 @@ class GlideDateTime () extends js.Object {
     */
   def subtract(time: GlideTime): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("GlideDateTime")
-@js.native
-object GlideDateTime extends js.Object {
-  /**
-    * Gets the duration difference between two GlideDateTime values.
-    *
-    * @param Start The start value.
-    * @param End The end value.
-    * @returns The duration between the two values.
-    * @example
-    *
-    * var gdt1 = new GlideDateTime('2011-08-28 09:00:00');
-    * var gdt2 = new GlideDateTime('2011-08-31 08:00:00');
-    * var dur = GlideDateTime.subtract(gdt1, gdt2); //the difference between gdt1 and gdt2
-    * gs.info(dur.getDisplayValue());
-    */
-  def subtract(start: GlideDateTime): GlideDuration = js.native
-  def subtract(start: GlideDateTime, end: GlideDateTime): GlideDuration = js.native
-}
-

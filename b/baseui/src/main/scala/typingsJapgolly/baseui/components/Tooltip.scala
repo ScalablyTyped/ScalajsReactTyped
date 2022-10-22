@@ -1,110 +1,110 @@
 package typingsJapgolly.baseui.components
 
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.baseui.baseuiStrings.auto
-import typingsJapgolly.baseui.baseuiStrings.bottom
-import typingsJapgolly.baseui.baseuiStrings.bottomLeft
-import typingsJapgolly.baseui.baseuiStrings.bottomRight
-import typingsJapgolly.baseui.baseuiStrings.click
-import typingsJapgolly.baseui.baseuiStrings.hover
-import typingsJapgolly.baseui.baseuiStrings.left
-import typingsJapgolly.baseui.baseuiStrings.leftBottom
-import typingsJapgolly.baseui.baseuiStrings.leftTop
-import typingsJapgolly.baseui.baseuiStrings.menu
-import typingsJapgolly.baseui.baseuiStrings.none
-import typingsJapgolly.baseui.baseuiStrings.right
-import typingsJapgolly.baseui.baseuiStrings.rightBottom
-import typingsJapgolly.baseui.baseuiStrings.rightTop
-import typingsJapgolly.baseui.baseuiStrings.tooltip
-import typingsJapgolly.baseui.baseuiStrings.top
-import typingsJapgolly.baseui.baseuiStrings.topLeft
-import typingsJapgolly.baseui.baseuiStrings.topRight
-import typingsJapgolly.baseui.popoverMod.Overrides
-import typingsJapgolly.baseui.tooltipMod.TooltipProps
-import typingsJapgolly.std.Event_
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.ReactFocusEventFrom
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.layerTypesMod.TetherPlacement
+import typingsJapgolly.baseui.popoverTypesMod.AccessibilityType
+import typingsJapgolly.baseui.popoverTypesMod.ContentRenderProp
+import typingsJapgolly.baseui.popoverTypesMod.PopoverOverrides
+import typingsJapgolly.baseui.popoverTypesMod.PopoverProps
+import typingsJapgolly.baseui.popoverTypesMod.TriggerType
+import typingsJapgolly.std.FocusOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tooltip {
-  def apply(
-    isOpen: Boolean,
-    accessibilityType: none | menu | tooltip = null,
-    animateOutTime: Int | Double = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    content: Node | js.Function0[Node] = null,
-    `data-baseweb`: String = null,
-    focusLock: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    ignoreBoundary: js.UndefOr[Boolean] = js.undefined,
-    mountNode: HTMLElement = null,
-    onBlur: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onClick: /* e */ Event_ => CallbackTo[js.Any] = null,
-    onClickOutside: /* event */ MouseEvent => CallbackTo[js.Any] = null,
-    onEsc: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onFocus: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onMouseEnter: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onMouseEnterDelay: Int | Double = null,
-    onMouseLeave: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    onMouseLeaveDelay: Int | Double = null,
-    overrides: Overrides = null,
-    placement: topLeft | leftBottom | topRight | rightBottom | bottomLeft | right | auto | bottomRight | leftTop | left | bottom | rightTop | top = null,
-    popperOptions: js.Any = null,
-    renderAll: js.UndefOr[Boolean] = js.undefined,
-    returnFocus: js.UndefOr[Boolean] = js.undefined,
-    showArrow: js.UndefOr[Boolean] = js.undefined,
-    triggerType: click | hover = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TooltipProps, typingsJapgolly.baseui.tooltipMod.Tooltip, Unit, TooltipProps] = {
-    val __obj = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
   
-      if (accessibilityType != null) __obj.updateDynamic("accessibilityType")(accessibilityType.asInstanceOf[js.Any])
-    if (animateOutTime != null) __obj.updateDynamic("animateOutTime")(animateOutTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (`data-baseweb` != null) __obj.updateDynamic("data-baseweb")(`data-baseweb`.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusLock)) __obj.updateDynamic("focusLock")(focusLock.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreBoundary)) __obj.updateDynamic("ignoreBoundary")(ignoreBoundary.asInstanceOf[js.Any])
-    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode.asInstanceOf[js.Any])
-    onBlur.foreach(p => __obj.updateDynamic("onBlur")(p.toJsFn))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.std.Event_) => onClick(t0).runNow()))
-    if (onClickOutside != null) __obj.updateDynamic("onClickOutside")(js.Any.fromFunction1((t0: /* event */ org.scalajs.dom.raw.MouseEvent) => onClickOutside(t0).runNow()))
-    onEsc.foreach(p => __obj.updateDynamic("onEsc")(p.toJsFn))
-    onFocus.foreach(p => __obj.updateDynamic("onFocus")(p.toJsFn))
-    onMouseEnter.foreach(p => __obj.updateDynamic("onMouseEnter")(p.toJsFn))
-    if (onMouseEnterDelay != null) __obj.updateDynamic("onMouseEnterDelay")(onMouseEnterDelay.asInstanceOf[js.Any])
-    onMouseLeave.foreach(p => __obj.updateDynamic("onMouseLeave")(p.toJsFn))
-    if (onMouseLeaveDelay != null) __obj.updateDynamic("onMouseLeaveDelay")(onMouseLeaveDelay.asInstanceOf[js.Any])
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (popperOptions != null) __obj.updateDynamic("popperOptions")(popperOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAll)) __obj.updateDynamic("renderAll")(renderAll.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(showArrow)) __obj.updateDynamic("showArrow")(showArrow.asInstanceOf[js.Any])
-    if (triggerType != null) __obj.updateDynamic("triggerType")(triggerType.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.baseui.tooltipMod.TooltipProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.baseui.tooltipMod.Tooltip](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.tooltipMod.TooltipProps])(children: _*)
+  inline def apply(isOpen: Boolean): Builder = {
+    val __props = js.Dynamic.literal(isOpen = isOpen.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[PopoverProps]))
   }
+  
   @JSImport("baseui/tooltip", "Tooltip")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.baseui.tooltipMod.Tooltip] {
+    
+    inline def accessibilityType(value: AccessibilityType): this.type = set("accessibilityType", value.asInstanceOf[js.Any])
+    
+    inline def animateOutTime(value: Double): this.type = set("animateOutTime", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def content(value: Node | ContentRenderProp): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentCallbackTo(value: CallbackTo[Node]): this.type = set("content", value.toJsFn)
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def `data-baseweb`(value: String): this.type = set("data-baseweb", value.asInstanceOf[js.Any])
+    
+    inline def focusLock(value: Boolean): this.type = set("focusLock", value.asInstanceOf[js.Any])
+    
+    inline def focusOptions(value: FocusOptions): this.type = set("focusOptions", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def ignoreBoundary(value: Boolean): this.type = set("ignoreBoundary", value.asInstanceOf[js.Any])
+    
+    inline def mountNode(value: HTMLElement): this.type = set("mountNode", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* e */ ReactFocusEventFrom[org.scalajs.dom.Element] => Any): this.type = set("onBlur", js.Any.fromFunction1(value))
+    
+    inline def onClick(value: /* e */ ReactEventFrom[org.scalajs.dom.Element] => Any): this.type = set("onClick", js.Any.fromFunction1(value))
+    
+    inline def onClickOutside(value: /* event */ MouseEvent => Any): this.type = set("onClickOutside", js.Any.fromFunction1(value))
+    
+    inline def onEsc(value: CallbackTo[Any]): this.type = set("onEsc", value.toJsFn)
+    
+    inline def onFocus(value: /* e */ ReactFocusEventFrom[org.scalajs.dom.Element] => Any): this.type = set("onFocus", js.Any.fromFunction1(value))
+    
+    inline def onMouseEnter(value: /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] => Any): this.type = set("onMouseEnter", js.Any.fromFunction1(value))
+    
+    inline def onMouseEnterDelay(value: Double): this.type = set("onMouseEnterDelay", value.asInstanceOf[js.Any])
+    
+    inline def onMouseLeave(value: /* e */ ReactMouseEventFrom[org.scalajs.dom.Element] => Any): this.type = set("onMouseLeave", js.Any.fromFunction1(value))
+    
+    inline def onMouseLeaveDelay(value: Double): this.type = set("onMouseLeaveDelay", value.asInstanceOf[js.Any])
+    
+    inline def overrides(value: PopoverOverrides): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def placement(value: TetherPlacement): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def popoverMargin(value: Double): this.type = set("popoverMargin", value.asInstanceOf[js.Any])
+    
+    inline def popperOptions(value: Any): this.type = set("popperOptions", value.asInstanceOf[js.Any])
+    
+    inline def renderAll(value: Boolean): this.type = set("renderAll", value.asInstanceOf[js.Any])
+    
+    inline def returnFocus(
+      value: Boolean | FocusOptions | (js.Function1[/* returnTo */ org.scalajs.dom.Element, Boolean | FocusOptions])
+    ): this.type = set("returnFocus", value.asInstanceOf[js.Any])
+    
+    inline def returnFocusFunction1(value: /* returnTo */ org.scalajs.dom.Element => Boolean | FocusOptions): this.type = set("returnFocus", js.Any.fromFunction1(value))
+    
+    inline def showArrow(value: Boolean): this.type = set("showArrow", value.asInstanceOf[js.Any])
+    
+    inline def triggerType(value: TriggerType): this.type = set("triggerType", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

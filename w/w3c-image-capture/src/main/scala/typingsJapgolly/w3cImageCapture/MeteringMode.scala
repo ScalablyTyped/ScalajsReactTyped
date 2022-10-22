@@ -1,8 +1,8 @@
 package typingsJapgolly.w3cImageCapture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.none
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.`single-shot`
   - typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.continuous
 */
-trait MeteringMode extends js.Object
-
+trait MeteringMode extends StObject
 object MeteringMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def continuous: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.continuous = this.cast("continuous")
-  @scala.inline
-  def manual: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.manual = this.cast("manual")
-  @scala.inline
-  def none: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.none = this.cast("none")
-  @scala.inline
-  def `single-shot`: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.`single-shot` = this.cast("single-shot")
+  
+  inline def continuous: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.continuous = "continuous".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.continuous]
+  
+  inline def manual: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.manual = "manual".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.manual]
+  
+  inline def none: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.none = "none".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.none]
+  
+  inline def `single-shot`: typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.`single-shot` = "single-shot".asInstanceOf[typingsJapgolly.w3cImageCapture.w3cImageCaptureStrings.`single-shot`]
 }
-

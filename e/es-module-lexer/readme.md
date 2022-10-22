@@ -1,7 +1,7 @@
 
 # Scala.js typings for es-module-lexer
 
-Typings are for version 0.3
+Typings are for version 1.0.5
 
 ## Library description:
 Lexes ES modules returning their import/export metadata
@@ -11,9 +11,9 @@ Lexes ES modules returning their import/export metadata
 | Full name          | es-module-lexer |
 | Keywords           | - |
 | # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 72404 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3.7503264666666664E7 |
+| # stars            | 650.0 |
 
 ## Links
 - [Homepage](https://github.com/guybedford/es-module-lexer#readme)
@@ -24,7 +24,7 @@ Lexes ES modules returning their import/export metadata
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

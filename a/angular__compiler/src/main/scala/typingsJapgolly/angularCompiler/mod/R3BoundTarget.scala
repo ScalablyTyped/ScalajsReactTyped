@@ -1,39 +1,49 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.AnonDirective
-import typingsJapgolly.angularCompiler.r3AstMod.BoundAttribute
-import typingsJapgolly.angularCompiler.r3AstMod.BoundEvent
-import typingsJapgolly.angularCompiler.r3AstMod.Reference
-import typingsJapgolly.angularCompiler.r3AstMod.Template
-import typingsJapgolly.angularCompiler.r3AstMod.TextAttribute
-import typingsJapgolly.angularCompiler.r3AstMod.Variable
-import typingsJapgolly.angularCompiler.t2ApiMod.DirectiveMeta
-import typingsJapgolly.angularCompiler.t2ApiMod.Target
+import typingsJapgolly.angularCompiler.anon.Directive
 import typingsJapgolly.std.Map
+import typingsJapgolly.std.ReadonlySet
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "R3BoundTarget")
 @js.native
-class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.R3BoundTarget[DirectiveT] {
+open class R3BoundTarget[DirectiveT /* <: DirectiveMeta */] protected ()
+  extends StObject
+     with BoundTarget[DirectiveT] {
   def this(
     target: Target,
-    directives: Map[typingsJapgolly.angularCompiler.r3AstMod.Element | Template, js.Array[DirectiveT]],
+    directives: Map[TmplAstElement | TmplAstTemplate, js.Array[DirectiveT]],
     bindings: Map[
-        BoundAttribute | BoundEvent | TextAttribute, 
-        DirectiveT | typingsJapgolly.angularCompiler.r3AstMod.Element | Template
+        TmplAstBoundAttribute | TmplAstBoundEvent | TmplAstTextAttribute, 
+        DirectiveT | TmplAstElement | TmplAstTemplate
       ],
     references: Map[
-        BoundAttribute | BoundEvent | Reference | TextAttribute, 
-        AnonDirective[DirectiveT] | typingsJapgolly.angularCompiler.r3AstMod.Element | Template
+        TmplAstBoundAttribute | TmplAstBoundEvent | TmplAstReference | TmplAstTextAttribute, 
+        Directive[DirectiveT] | TmplAstElement | TmplAstTemplate
       ],
-    exprTargets: Map[typingsJapgolly.angularCompiler.astMod.AST, Reference | Variable],
-    symbols: Map[Reference | Variable, Template],
-    nestingLevel: Map[Template, Double],
+    exprTargets: Map[AST, TmplAstReference | TmplAstVariable],
+    symbols: Map[TmplAstReference | TmplAstVariable, TmplAstTemplate],
+    nestingLevel: Map[TmplAstTemplate, Double],
+    templateEntities: Map[TmplAstTemplate | Null, ReadonlySet[TmplAstReference | TmplAstVariable]],
     usedPipes: Set[String]
   ) = this()
+  
+  /* private */ var bindings: Any = js.native
+  
+  /* private */ var directives: Any = js.native
+  
+  /* private */ var exprTargets: Any = js.native
+  
+  /* private */ var nestingLevel: Any = js.native
+  
+  /* private */ var references: Any = js.native
+  
+  /* private */ var symbols: Any = js.native
+  
+  /* private */ var templateEntities: Any = js.native
+  
+  /* private */ var usedPipes: Any = js.native
 }
-

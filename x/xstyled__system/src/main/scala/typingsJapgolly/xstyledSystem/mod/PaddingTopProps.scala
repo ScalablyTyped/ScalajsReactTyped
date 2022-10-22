@@ -1,25 +1,35 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.PaddingTopProperty
+import typingsJapgolly.csstype.mod.Property.PaddingTop
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaddingTopProps[TLength] extends js.Object {
-  val paddingTop: js.UndefOr[ResponsiveValue[PaddingTopProperty[TLength]]] = js.undefined
-  val pt: js.UndefOr[ResponsiveValue[PaddingTopProperty[TLength]]] = js.undefined
+trait PaddingTopProps[TLength] extends StObject {
+  
+  val paddingTop: js.UndefOr[ResponsiveValue[PaddingTop[TLength]]] = js.undefined
+  
+  val pt: js.UndefOr[ResponsiveValue[PaddingTop[TLength]]] = js.undefined
 }
-
 object PaddingTopProps {
-  @scala.inline
-  def apply[TLength](
-    paddingTop: ResponsiveValue[PaddingTopProperty[TLength]] = null,
-    pt: ResponsiveValue[PaddingTopProperty[TLength]] = null
-  ): PaddingTopProps[TLength] = {
+  
+  inline def apply[TLength](): PaddingTopProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
-    if (pt != null) __obj.updateDynamic("pt")(pt.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingTopProps[TLength]]
   }
+  
+  extension [Self <: PaddingTopProps[?], TLength](x: Self & PaddingTopProps[TLength]) {
+    
+    inline def setPaddingTop(value: ResponsiveValue[PaddingTop[TLength]]): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    
+    inline def setPaddingTopVarargs(value: PaddingTop[TLength]*): Self = StObject.set(x, "paddingTop", js.Array(value*))
+    
+    inline def setPt(value: ResponsiveValue[PaddingTop[TLength]]): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    
+    inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+    
+    inline def setPtVarargs(value: PaddingTop[TLength]*): Self = StObject.set(x, "pt", js.Array(value*))
+  }
 }
-

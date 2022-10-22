@@ -1,21 +1,23 @@
 package typingsJapgolly.jaegerClient.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.opentracing.mod.SpanContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Extractor extends js.Object {
-  def extract(carrier: js.Any): SpanContext | Null
+trait Extractor extends StObject {
+  
+  def extract(carrier: Any): SpanContext | Null
 }
-
 object Extractor {
-  @scala.inline
-  def apply(extract: js.Any => CallbackTo[SpanContext | Null]): Extractor = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("extract")(js.Any.fromFunction1((t0: js.Any) => extract(t0).runNow()))
+  
+  inline def apply(extract: Any => SpanContext | Null): Extractor = {
+    val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
     __obj.asInstanceOf[Extractor]
   }
+  
+  extension [Self <: Extractor](x: Self) {
+    
+    inline def setExtract(value: Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+  }
 }
-

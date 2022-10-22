@@ -1,169 +1,177 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CompletionItemKind extends js.Object
-
+sealed trait CompletionItemKind extends StObject
 @JSImport("vscode", "CompletionItemKind")
 @js.native
-object CompletionItemKind extends js.Object {
-  @js.native
-  sealed trait Class extends CompletionItemKind
-  
-  @js.native
-  sealed trait Color extends CompletionItemKind
-  
-  @js.native
-  sealed trait Constant extends CompletionItemKind
-  
-  @js.native
-  sealed trait Constructor extends CompletionItemKind
-  
-  @js.native
-  sealed trait Enum extends CompletionItemKind
-  
-  @js.native
-  sealed trait EnumMember extends CompletionItemKind
-  
-  @js.native
-  sealed trait Event extends CompletionItemKind
-  
-  @js.native
-  sealed trait Field extends CompletionItemKind
-  
-  @js.native
-  sealed trait File extends CompletionItemKind
-  
-  @js.native
-  sealed trait Folder extends CompletionItemKind
-  
-  @js.native
-  sealed trait Function extends CompletionItemKind
-  
-  @js.native
-  sealed trait Interface extends CompletionItemKind
-  
-  @js.native
-  sealed trait Keyword extends CompletionItemKind
-  
-  @js.native
-  sealed trait Method extends CompletionItemKind
-  
-  @js.native
-  sealed trait Module extends CompletionItemKind
-  
-  @js.native
-  sealed trait Operator extends CompletionItemKind
-  
-  @js.native
-  sealed trait Property extends CompletionItemKind
-  
-  @js.native
-  sealed trait Reference extends CompletionItemKind
-  
-  @js.native
-  sealed trait Snippet extends CompletionItemKind
-  
-  @js.native
-  sealed trait Struct extends CompletionItemKind
-  
-  @js.native
-  sealed trait Text extends CompletionItemKind
-  
-  @js.native
-  sealed trait TypeParameter extends CompletionItemKind
-  
-  @js.native
-  sealed trait Unit extends CompletionItemKind
-  
-  @js.native
-  sealed trait Value extends CompletionItemKind
-  
-  @js.native
-  sealed trait Variable extends CompletionItemKind
+object CompletionItemKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CompletionItemKind with Double] = js.native
-  /* 6 */ @js.native
-  object Class extends TopLevel[Class with Double]
+  def apply(value: Double): js.UndefOr[CompletionItemKind & Double] = js.native
   
-  /* 15 */ @js.native
-  object Color
-    extends TopLevel[typingsJapgolly.vscode.mod.CompletionItemKind.Color with Double]
+  @js.native
+  sealed trait Class
+    extends StObject
+       with CompletionItemKind
+  /* 6 */ val Class: typingsJapgolly.vscode.mod.CompletionItemKind.Class & Double = js.native
   
-  /* 20 */ @js.native
-  object Constant extends TopLevel[Constant with Double]
+  @js.native
+  sealed trait Color
+    extends StObject
+       with CompletionItemKind
+  /* 15 */ val Color: typingsJapgolly.vscode.mod.CompletionItemKind.Color & Double = js.native
   
-  /* 3 */ @js.native
-  object Constructor extends TopLevel[Constructor with Double]
+  @js.native
+  sealed trait Constant
+    extends StObject
+       with CompletionItemKind
+  /* 20 */ val Constant: typingsJapgolly.vscode.mod.CompletionItemKind.Constant & Double = js.native
   
-  /* 12 */ @js.native
-  object Enum extends TopLevel[Enum with Double]
+  @js.native
+  sealed trait Constructor
+    extends StObject
+       with CompletionItemKind
+  /* 3 */ val Constructor: typingsJapgolly.vscode.mod.CompletionItemKind.Constructor & Double = js.native
   
-  /* 19 */ @js.native
-  object EnumMember extends TopLevel[EnumMember with Double]
+  @js.native
+  sealed trait Enum
+    extends StObject
+       with CompletionItemKind
+  /* 12 */ val Enum: typingsJapgolly.vscode.mod.CompletionItemKind.Enum & Double = js.native
   
-  /* 22 */ @js.native
-  object Event
-    extends TopLevel[typingsJapgolly.vscode.mod.CompletionItemKind.Event with Double]
+  @js.native
+  sealed trait EnumMember
+    extends StObject
+       with CompletionItemKind
+  /* 19 */ val EnumMember: typingsJapgolly.vscode.mod.CompletionItemKind.EnumMember & Double = js.native
   
-  /* 4 */ @js.native
-  object Field extends TopLevel[Field with Double]
+  @js.native
+  sealed trait Event
+    extends StObject
+       with CompletionItemKind
+  /* 22 */ val Event: typingsJapgolly.vscode.mod.CompletionItemKind.Event & Double = js.native
   
-  /* 16 */ @js.native
-  object File extends TopLevel[File with Double]
+  @js.native
+  sealed trait Field
+    extends StObject
+       with CompletionItemKind
+  /* 4 */ val Field: typingsJapgolly.vscode.mod.CompletionItemKind.Field & Double = js.native
   
-  /* 18 */ @js.native
-  object Folder extends TopLevel[Folder with Double]
+  @js.native
+  sealed trait File
+    extends StObject
+       with CompletionItemKind
+  /* 16 */ val File: typingsJapgolly.vscode.mod.CompletionItemKind.File & Double = js.native
   
-  /* 2 */ @js.native
-  object Function extends TopLevel[Function with Double]
+  @js.native
+  sealed trait Folder
+    extends StObject
+       with CompletionItemKind
+  /* 18 */ val Folder: typingsJapgolly.vscode.mod.CompletionItemKind.Folder & Double = js.native
   
-  /* 7 */ @js.native
-  object Interface extends TopLevel[Interface with Double]
+  @js.native
+  sealed trait Function
+    extends StObject
+       with CompletionItemKind
+  /* 2 */ val Function: typingsJapgolly.vscode.mod.CompletionItemKind.Function & Double = js.native
   
-  /* 13 */ @js.native
-  object Keyword extends TopLevel[Keyword with Double]
+  @js.native
+  sealed trait Interface
+    extends StObject
+       with CompletionItemKind
+  /* 7 */ val Interface: typingsJapgolly.vscode.mod.CompletionItemKind.Interface & Double = js.native
   
-  /* 1 */ @js.native
-  object Method extends TopLevel[Method with Double]
+  @js.native
+  sealed trait Issue
+    extends StObject
+       with CompletionItemKind
+  /* 26 */ val Issue: typingsJapgolly.vscode.mod.CompletionItemKind.Issue & Double = js.native
   
-  /* 8 */ @js.native
-  object Module extends TopLevel[Module with Double]
+  @js.native
+  sealed trait Keyword
+    extends StObject
+       with CompletionItemKind
+  /* 13 */ val Keyword: typingsJapgolly.vscode.mod.CompletionItemKind.Keyword & Double = js.native
   
-  /* 23 */ @js.native
-  object Operator extends TopLevel[Operator with Double]
+  @js.native
+  sealed trait Method
+    extends StObject
+       with CompletionItemKind
+  /* 1 */ val Method: typingsJapgolly.vscode.mod.CompletionItemKind.Method & Double = js.native
   
-  /* 9 */ @js.native
-  object Property extends TopLevel[Property with Double]
+  @js.native
+  sealed trait Module
+    extends StObject
+       with CompletionItemKind
+  /* 8 */ val Module: typingsJapgolly.vscode.mod.CompletionItemKind.Module & Double = js.native
   
-  /* 17 */ @js.native
-  object Reference extends TopLevel[Reference with Double]
+  @js.native
+  sealed trait Operator
+    extends StObject
+       with CompletionItemKind
+  /* 23 */ val Operator: typingsJapgolly.vscode.mod.CompletionItemKind.Operator & Double = js.native
   
-  /* 14 */ @js.native
-  object Snippet extends TopLevel[Snippet with Double]
+  @js.native
+  sealed trait Property
+    extends StObject
+       with CompletionItemKind
+  /* 9 */ val Property: typingsJapgolly.vscode.mod.CompletionItemKind.Property & Double = js.native
   
-  /* 21 */ @js.native
-  object Struct extends TopLevel[Struct with Double]
+  @js.native
+  sealed trait Reference
+    extends StObject
+       with CompletionItemKind
+  /* 17 */ val Reference: typingsJapgolly.vscode.mod.CompletionItemKind.Reference & Double = js.native
   
-  /* 0 */ @js.native
-  object Text extends TopLevel[Text with Double]
+  @js.native
+  sealed trait Snippet
+    extends StObject
+       with CompletionItemKind
+  /* 14 */ val Snippet: typingsJapgolly.vscode.mod.CompletionItemKind.Snippet & Double = js.native
   
-  /* 24 */ @js.native
-  object TypeParameter extends TopLevel[TypeParameter with Double]
+  @js.native
+  sealed trait Struct
+    extends StObject
+       with CompletionItemKind
+  /* 21 */ val Struct: typingsJapgolly.vscode.mod.CompletionItemKind.Struct & Double = js.native
   
-  /* 10 */ @js.native
-  object Unit extends TopLevel[Unit with Double]
+  @js.native
+  sealed trait Text
+    extends StObject
+       with CompletionItemKind
+  /* 0 */ val Text: typingsJapgolly.vscode.mod.CompletionItemKind.Text & Double = js.native
   
-  /* 11 */ @js.native
-  object Value extends TopLevel[Value with Double]
+  @js.native
+  sealed trait TypeParameter
+    extends StObject
+       with CompletionItemKind
+  /* 24 */ val TypeParameter: typingsJapgolly.vscode.mod.CompletionItemKind.TypeParameter & Double = js.native
   
-  /* 5 */ @js.native
-  object Variable extends TopLevel[Variable with Double]
+  @js.native
+  sealed trait Unit
+    extends StObject
+       with CompletionItemKind
+  /* 10 */ val Unit: typingsJapgolly.vscode.mod.CompletionItemKind.Unit & Double = js.native
   
+  @js.native
+  sealed trait User
+    extends StObject
+       with CompletionItemKind
+  /* 25 */ val User: typingsJapgolly.vscode.mod.CompletionItemKind.User & Double = js.native
+  
+  @js.native
+  sealed trait Value
+    extends StObject
+       with CompletionItemKind
+  /* 11 */ val Value: typingsJapgolly.vscode.mod.CompletionItemKind.Value & Double = js.native
+  
+  @js.native
+  sealed trait Variable
+    extends StObject
+       with CompletionItemKind
+  /* 5 */ val Variable: typingsJapgolly.vscode.mod.CompletionItemKind.Variable & Double = js.native
 }
-

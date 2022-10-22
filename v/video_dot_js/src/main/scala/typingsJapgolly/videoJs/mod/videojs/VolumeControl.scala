@@ -1,15 +1,18 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The component for controlling the volume level
   */
 @js.native
-trait VolumeControl extends Component {
+trait VolumeControl
+  extends StObject
+     with Component {
+  
   /**
     * Handle `mousedown` or `touchstart` events on the `VolumeControl`.
     *
@@ -20,6 +23,7 @@ trait VolumeControl extends Component {
     * @listens touchstart
     */
   def handleMouseDown(event: Event): Unit = js.native
+  
   /**
     * Handle `mousedown` or `touchstart` events on the `VolumeControl`.
     *
@@ -30,6 +34,7 @@ trait VolumeControl extends Component {
     * @listens touchstart
     */
   def handleMouseMove(event: Event): Unit = js.native
+  
   /**
     * Handle `mouseup` or `touchend` events on the `VolumeControl`.
     *
@@ -41,4 +46,3 @@ trait VolumeControl extends Component {
     */
   def handleMouseUp(event: Event): Unit = js.native
 }
-

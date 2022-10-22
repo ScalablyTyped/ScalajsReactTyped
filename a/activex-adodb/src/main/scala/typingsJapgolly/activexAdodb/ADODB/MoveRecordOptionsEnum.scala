@@ -1,31 +1,27 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
 */
-trait MoveRecordOptionsEnum extends js.Object
-
+trait MoveRecordOptionsEnum extends StObject
 object MoveRecordOptionsEnum {
-  @scala.inline
-  def adMoveAllowEmulation: `4` = this.cast(4)
-  @scala.inline
-  def adMoveDontUpdateLinks: `2` = this.cast(2)
-  @scala.inline
-  def adMoveOverWrite: `1` = this.cast(1)
-  @scala.inline
-  def adMoveUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adMoveAllowEmulation: `4` = 4.asInstanceOf[`4`]
+  
+  inline def adMoveDontUpdateLinks: `2` = 2.asInstanceOf[`2`]
+  
+  inline def adMoveOverWrite: `1` = 1.asInstanceOf[`1`]
+  
+  inline def adMoveUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
-

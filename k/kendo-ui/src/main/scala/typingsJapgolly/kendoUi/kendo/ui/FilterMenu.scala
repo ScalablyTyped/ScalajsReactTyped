@@ -1,28 +1,21 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.FilterMenu")
 @js.native
-class FilterMenu protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: FilterMenuOptions) = this()
+trait FilterMenu
+  extends StObject
+     with Widget {
+  
+  def clear(): Unit = js.native
+  
   var field: String = js.native
+  
   @JSName("options")
   var options_FilterMenu: FilterMenuOptions = js.native
+  
   var wrapper: JQuery = js.native
-  def clear(): Unit = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.FilterMenu")
-@js.native
-object FilterMenu extends js.Object {
-  var fn: FilterMenu = js.native
-  def extend(proto: js.Object): FilterMenu = js.native
-}
-

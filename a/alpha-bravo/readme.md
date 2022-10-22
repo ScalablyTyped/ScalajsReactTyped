@@ -4,16 +4,16 @@
 Typings are for version 2.0
 
 ## Library description:
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
+Alpha Bravo parses a string and returns the NATO phonetic word for each charcter.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | alpha-bravo |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 0 |
-| # downloads        | 557 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 64.66666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/alpha-bravo)

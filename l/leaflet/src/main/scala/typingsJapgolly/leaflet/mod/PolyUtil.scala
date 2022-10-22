@@ -1,13 +1,17 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("leaflet", "PolyUtil")
-@js.native
-object PolyUtil extends js.Object {
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = js.native
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = js.native
+object PolyUtil {
+  
+  @JSImport("leaflet", "PolyUtil")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  inline def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  
+  inline def polygonCenter(latlngs: js.Array[LatLngExpression], crs: CRS): LatLng_ = (^.asInstanceOf[js.Dynamic].applyDynamic("polygonCenter")(latlngs.asInstanceOf[js.Any], crs.asInstanceOf[js.Any])).asInstanceOf[LatLng_]
 }
-

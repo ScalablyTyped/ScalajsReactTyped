@@ -1,7 +1,7 @@
 
 # Scala.js typings for styled-components
 
-Typings are for version 5.0
+Typings are for version 5.3.6
 
 ## Library description:
 Visual primitives for the component age. Use the best bits of ES6 and CSS to style your apps without stress
@@ -10,10 +10,10 @@ Visual primitives for the component age. Use the best bits of ES6 and CSS to sty
 | ------------------ | :-------------: |
 | Full name          | styled-components |
 | Keywords           | react, css, css-in-js, styled-components, babel-macro, babel-macros, styling |
-| # releases         | 167 |
-| # dependents       | 4927 |
-| # downloads        | 51565784 |
-| # stars            | 47 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 1.8329986666666668E7 |
+| # stars            | 37288.0 |
 
 ## Links
 - [Homepage](https://styled-components.com/)
@@ -24,7 +24,7 @@ Visual primitives for the component age. Use the best bits of ES6 and CSS to sty
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

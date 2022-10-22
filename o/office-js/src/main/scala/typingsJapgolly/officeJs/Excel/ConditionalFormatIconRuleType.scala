@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ConditionalFormatIconRuleType extends js.Object
-
+sealed trait ConditionalFormatIconRuleType extends StObject
 /**
+  * Represents the types of icon conditional format.
   *
-  * Represents the types of conditional format values.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
 @JSGlobal("Excel.ConditionalFormatIconRuleType")
 @js.native
-object ConditionalFormatIconRuleType extends js.Object {
+object ConditionalFormatIconRuleType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait formula extends ConditionalFormatIconRuleType
+  sealed trait formula
+    extends StObject
+       with ConditionalFormatIconRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait invalid extends ConditionalFormatIconRuleType
+  sealed trait invalid
+    extends StObject
+       with ConditionalFormatIconRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait number extends ConditionalFormatIconRuleType
+  sealed trait number
+    extends StObject
+       with ConditionalFormatIconRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percent extends ConditionalFormatIconRuleType
+  sealed trait percent
+    extends StObject
+       with ConditionalFormatIconRuleType
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.6]
+    */
   @js.native
-  sealed trait percentile extends ConditionalFormatIconRuleType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ConditionalFormatIconRuleType with String] = js.native
-  /* "Formula" */ @js.native
-  object formula extends TopLevel[formula with String]
-  
-  /* "Invalid" */ @js.native
-  object invalid extends TopLevel[invalid with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Percent" */ @js.native
-  object percent extends TopLevel[percent with String]
-  
-  /* "Percentile" */ @js.native
-  object percentile extends TopLevel[percentile with String]
-  
+  sealed trait percentile
+    extends StObject
+       with ConditionalFormatIconRuleType
 }
-

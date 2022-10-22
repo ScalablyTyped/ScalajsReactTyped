@@ -1,21 +1,23 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，原生选择按钮框的样式参数
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-trait PlusNativeUIActionSheetStyles extends js.Object {
+trait PlusNativeUIActionSheetStyles extends StObject {
+  
   /**
     * 选择框上的按钮，ActionButtonStyles对象数组
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var buttons: js.UndefOr[js.Array[PlusNativeUI]] = js.undefined
+  
   /**
     * 取消按钮上显示的文字内容
     * 不设置此属性，则不显示取消按钮。
@@ -23,6 +25,7 @@ trait PlusNativeUIActionSheetStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
   var cancel: js.UndefOr[String] = js.undefined
+  
   /**
     * 选择按钮框的标题
     * 
@@ -30,15 +33,27 @@ trait PlusNativeUIActionSheetStyles extends js.Object {
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object PlusNativeUIActionSheetStyles {
-  @scala.inline
-  def apply(buttons: js.Array[PlusNativeUI] = null, cancel: String = null, title: String = null): PlusNativeUIActionSheetStyles = {
+  
+  inline def apply(): PlusNativeUIActionSheetStyles = {
     val __obj = js.Dynamic.literal()
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (cancel != null) __obj.updateDynamic("cancel")(cancel.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusNativeUIActionSheetStyles]
   }
+  
+  extension [Self <: PlusNativeUIActionSheetStyles](x: Self) {
+    
+    inline def setButtons(value: js.Array[PlusNativeUI]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setButtonsVarargs(value: PlusNativeUI*): Self = StObject.set(x, "buttons", js.Array(value*))
+    
+    inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

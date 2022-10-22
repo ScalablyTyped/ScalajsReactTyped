@@ -1,18 +1,18 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/eachWeekendOfMonth", JSImport.Namespace)
-@js.native
-object esmEachWeekendOfMonthMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): js.Array[js.Date] = js.native
-    def apply(date: Date): js.Array[js.Date] = js.native
-  }
+object esmEachWeekendOfMonthMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): js.Array[js.Date] = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Date]]
+    inline def apply(date: Double): js.Array[js.Date] = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Date]]
+    
+    @JSImport("date-fns/esm/eachWeekendOfMonth", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.workboxPrecaching
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-precaching/cleanupOutdatedCaches", JSImport.Namespace)
-@js.native
-object cleanupOutdatedCachesMod extends js.Object {
-  def cleanupOutdatedCaches(): Unit = js.native
+object cleanupOutdatedCachesMod {
+  
+  @JSImport("workbox-precaching/cleanupOutdatedCaches", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def cleanupOutdatedCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupOutdatedCaches")().asInstanceOf[Unit]
 }
-

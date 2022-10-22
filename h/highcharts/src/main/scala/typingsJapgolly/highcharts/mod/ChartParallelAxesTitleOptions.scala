@@ -1,12 +1,15 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartParallelAxesTitleOptions extends js.Object {
+trait ChartParallelAxesTitleOptions extends StObject {
+  
   var reserveSpace: js.UndefOr[Boolean] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts) Alignment of the text, can be `"left"`, `"right"` or
     * `"center"`. Default alignment depends on the title.align:
@@ -37,19 +40,25 @@ trait ChartParallelAxesTitleOptions extends js.Object {
     */
   var textAlign: js.UndefOr[AlignValue] = js.undefined
 }
-
 object ChartParallelAxesTitleOptions {
-  @scala.inline
-  def apply(
-    reserveSpace: js.UndefOr[Boolean] = js.undefined,
-    text: String = null,
-    textAlign: AlignValue = null
-  ): ChartParallelAxesTitleOptions = {
+  
+  inline def apply(): ChartParallelAxesTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesTitleOptions]
   }
+  
+  extension [Self <: ChartParallelAxesTitleOptions](x: Self) {
+    
+    inline def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
+    
+    inline def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

@@ -3,11 +3,12 @@ package typingsJapgolly.highcharts.mod
 import typingsJapgolly.highcharts.highchartsStrings.`reingold-fruchterman`
 import typingsJapgolly.highcharts.highchartsStrings.circle
 import typingsJapgolly.highcharts.highchartsStrings.random
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
+trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
+  
   /**
     * (Highcharts) Approximation used to calculate repulsive forces affecting
     * nodes. By default, when calculateing net force, nodes are compared
@@ -19,6 +20,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * separate node with center of mass.
     */
   var approximation: js.UndefOr[OptionsApproximationValue] = js.undefined
+  
   /**
     * (Highcharts) Attraction force applied on a node which is conected to
     * another node by a link. Passed are two arguments:
@@ -31,27 +33,32 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * d; }`
     */
   var attractiveForce: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * (Highcharts) Experimental. Enables live simulation of the algorithm
     * implementation. All nodes are animated as the forces applies on them.
     */
   var enableSimulation: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Friction applied on forces to prevent nodes rushing to fast
     * to the desired positions.
     */
   var friction: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Gravitational const used in the barycenter force of the
     * algorithm.
     */
   var gravitationalConstant: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) When `initialPositions` are set to 'circle',
     * `initialPositionRadius` is a distance from the center of circle, in which
     * nodes are created.
     */
   var initialPositionRadius: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Initial layout algorithm for positioning nodes. Can be one
     * of built-in options ("circle", "random") or a function where positions
@@ -59,6 +66,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * `node.plotY`
     */
   var initialPositions: js.UndefOr[circle | random | js.Function] = js.undefined
+  
   /**
     * (Highcharts) Integration type. Available options are `'euler'` and
     * `'verlet'`. Integration determines how forces are applied on particles.
@@ -73,6 +81,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * In Highcharts v7.0.x only `'euler'` integration was supported.
     */
   var integration: js.UndefOr[OptionsIntegrationValue] = js.undefined
+  
   /**
     * (Highcharts) Ideal length (px) of the link between two nodes. When not
     * defined, length is calculated as: `Math.pow(availableWidth *
@@ -82,6 +91,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * be not exactly as specified.
     */
   var linkLength: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Max number of iterations before algorithm will stop. In
     * general, algorithm should find positions sooner, but when rendering huge
@@ -89,6 +99,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * perfect graph positions can require more time.
     */
   var maxIterations: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Verlet integration only. Max speed that node can get in one
     * iteration. In terms of simulation, it's a maximum translation (in pixels)
@@ -97,6 +108,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * fast, for example small or disconnected ones.
     */
   var maxSpeed: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Repulsive force applied on a node. Passed are two arguments:
     *
@@ -108,6 +120,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * d * (k > d ? 1 : 0) }`
     */
   var repulsiveForce: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * (Highcharts) Barnes-Hut approximation only. Deteremines when distance
     * between cell and node is small enough to caculate forces. Value of
@@ -116,46 +129,75 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends js.Object {
     * currently compared node.
     */
   var theta: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
     */
   var `type`: js.UndefOr[`reingold-fruchterman`] = js.undefined
 }
-
 object PlotNetworkgraphLayoutAlgorithmOptions {
-  @scala.inline
-  def apply(
-    approximation: OptionsApproximationValue = null,
-    attractiveForce: js.Function = null,
-    enableSimulation: js.UndefOr[Boolean] = js.undefined,
-    friction: Int | Double = null,
-    gravitationalConstant: Int | Double = null,
-    initialPositionRadius: Int | Double = null,
-    initialPositions: circle | random | js.Function = null,
-    integration: OptionsIntegrationValue = null,
-    linkLength: Int | Double = null,
-    maxIterations: Int | Double = null,
-    maxSpeed: Int | Double = null,
-    repulsiveForce: js.Function = null,
-    theta: Int | Double = null,
-    `type`: `reingold-fruchterman` = null
-  ): PlotNetworkgraphLayoutAlgorithmOptions = {
+  
+  inline def apply(): PlotNetworkgraphLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
-    if (approximation != null) __obj.updateDynamic("approximation")(approximation.asInstanceOf[js.Any])
-    if (attractiveForce != null) __obj.updateDynamic("attractiveForce")(attractiveForce.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSimulation)) __obj.updateDynamic("enableSimulation")(enableSimulation.asInstanceOf[js.Any])
-    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
-    if (gravitationalConstant != null) __obj.updateDynamic("gravitationalConstant")(gravitationalConstant.asInstanceOf[js.Any])
-    if (initialPositionRadius != null) __obj.updateDynamic("initialPositionRadius")(initialPositionRadius.asInstanceOf[js.Any])
-    if (initialPositions != null) __obj.updateDynamic("initialPositions")(initialPositions.asInstanceOf[js.Any])
-    if (integration != null) __obj.updateDynamic("integration")(integration.asInstanceOf[js.Any])
-    if (linkLength != null) __obj.updateDynamic("linkLength")(linkLength.asInstanceOf[js.Any])
-    if (maxIterations != null) __obj.updateDynamic("maxIterations")(maxIterations.asInstanceOf[js.Any])
-    if (maxSpeed != null) __obj.updateDynamic("maxSpeed")(maxSpeed.asInstanceOf[js.Any])
-    if (repulsiveForce != null) __obj.updateDynamic("repulsiveForce")(repulsiveForce.asInstanceOf[js.Any])
-    if (theta != null) __obj.updateDynamic("theta")(theta.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotNetworkgraphLayoutAlgorithmOptions]
   }
+  
+  extension [Self <: PlotNetworkgraphLayoutAlgorithmOptions](x: Self) {
+    
+    inline def setApproximation(value: OptionsApproximationValue): Self = StObject.set(x, "approximation", value.asInstanceOf[js.Any])
+    
+    inline def setApproximationUndefined: Self = StObject.set(x, "approximation", js.undefined)
+    
+    inline def setAttractiveForce(value: js.Function): Self = StObject.set(x, "attractiveForce", value.asInstanceOf[js.Any])
+    
+    inline def setAttractiveForceUndefined: Self = StObject.set(x, "attractiveForce", js.undefined)
+    
+    inline def setEnableSimulation(value: Boolean): Self = StObject.set(x, "enableSimulation", value.asInstanceOf[js.Any])
+    
+    inline def setEnableSimulationUndefined: Self = StObject.set(x, "enableSimulation", js.undefined)
+    
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    
+    inline def setFrictionUndefined: Self = StObject.set(x, "friction", js.undefined)
+    
+    inline def setGravitationalConstant(value: Double): Self = StObject.set(x, "gravitationalConstant", value.asInstanceOf[js.Any])
+    
+    inline def setGravitationalConstantUndefined: Self = StObject.set(x, "gravitationalConstant", js.undefined)
+    
+    inline def setInitialPositionRadius(value: Double): Self = StObject.set(x, "initialPositionRadius", value.asInstanceOf[js.Any])
+    
+    inline def setInitialPositionRadiusUndefined: Self = StObject.set(x, "initialPositionRadius", js.undefined)
+    
+    inline def setInitialPositions(value: circle | random | js.Function): Self = StObject.set(x, "initialPositions", value.asInstanceOf[js.Any])
+    
+    inline def setInitialPositionsUndefined: Self = StObject.set(x, "initialPositions", js.undefined)
+    
+    inline def setIntegration(value: OptionsIntegrationValue): Self = StObject.set(x, "integration", value.asInstanceOf[js.Any])
+    
+    inline def setIntegrationUndefined: Self = StObject.set(x, "integration", js.undefined)
+    
+    inline def setLinkLength(value: Double): Self = StObject.set(x, "linkLength", value.asInstanceOf[js.Any])
+    
+    inline def setLinkLengthUndefined: Self = StObject.set(x, "linkLength", js.undefined)
+    
+    inline def setMaxIterations(value: Double): Self = StObject.set(x, "maxIterations", value.asInstanceOf[js.Any])
+    
+    inline def setMaxIterationsUndefined: Self = StObject.set(x, "maxIterations", js.undefined)
+    
+    inline def setMaxSpeed(value: Double): Self = StObject.set(x, "maxSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setMaxSpeedUndefined: Self = StObject.set(x, "maxSpeed", js.undefined)
+    
+    inline def setRepulsiveForce(value: js.Function): Self = StObject.set(x, "repulsiveForce", value.asInstanceOf[js.Any])
+    
+    inline def setRepulsiveForceUndefined: Self = StObject.set(x, "repulsiveForce", js.undefined)
+    
+    inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+    
+    inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+    
+    inline def setType(value: `reingold-fruchterman`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

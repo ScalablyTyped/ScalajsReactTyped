@@ -1,67 +1,63 @@
 package typingsJapgolly.reactYoutube.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactYoutube.AnonData
-import typingsJapgolly.reactYoutube.AnonDataTarget
-import typingsJapgolly.reactYoutube.AnonTarget
-import typingsJapgolly.reactYoutube.mod.Options
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.reactYoutube.mod.YouTubeEvent
 import typingsJapgolly.reactYoutube.mod.YouTubeProps
 import typingsJapgolly.reactYoutube.mod.default
+import typingsJapgolly.reactYoutube.reactYoutubeStrings.`lazy`
+import typingsJapgolly.reactYoutube.reactYoutubeStrings.eager
+import typingsJapgolly.youtubePlayer.distTypesMod.Options
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactYoutube {
-  def apply(
-    className: String = null,
-    containerClassName: String = null,
-    id: String = null,
-    onEnd: /* event */ AnonData => Callback = null,
-    onError: /* event */ AnonData => Callback = null,
-    onPause: /* event */ AnonData => Callback = null,
-    onPlay: /* event */ AnonData => Callback = null,
-    onPlaybackQualityChange: /* event */ AnonDataTarget => Callback = null,
-    onPlaybackRateChange: /* event */ AnonData => Callback = null,
-    onReady: /* event */ AnonTarget => Callback = null,
-    onStateChange: /* event */ AnonData => Callback = null,
-    opts: Options = null,
-    videoId: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[YouTubeProps, default, Unit, YouTubeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (containerClassName != null) __obj.updateDynamic("containerClassName")(containerClassName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (onEnd != null) __obj.updateDynamic("onEnd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onEnd(t0).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onError(t0).runNow()))
-    if (onPause != null) __obj.updateDynamic("onPause")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onPause(t0).runNow()))
-    if (onPlay != null) __obj.updateDynamic("onPlay")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onPlay(t0).runNow()))
-    if (onPlaybackQualityChange != null) __obj.updateDynamic("onPlaybackQualityChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonDataTarget) => onPlaybackQualityChange(t0).runNow()))
-    if (onPlaybackRateChange != null) __obj.updateDynamic("onPlaybackRateChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onPlaybackRateChange(t0).runNow()))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonTarget) => onReady(t0).runNow()))
-    if (onStateChange != null) __obj.updateDynamic("onStateChange")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactYoutube.AnonData) => onStateChange(t0).runNow()))
-    if (opts != null) __obj.updateDynamic("opts")(opts.asInstanceOf[js.Any])
-    if (videoId != null) __obj.updateDynamic("videoId")(videoId.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactYoutube.mod.YouTubeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactYoutube.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactYoutube.mod.YouTubeProps])(children: _*)
-  }
   @JSImport("react-youtube", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def iframeClassName(value: String): this.type = set("iframeClassName", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: eager | `lazy`): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onEnd(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onEnd", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def onError(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onError", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def onPause(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onPause", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def onPlay(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onPlay", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def onPlaybackQualityChange(value: /* event */ YouTubeEvent[String] => Callback): this.type = set("onPlaybackQualityChange", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[String]) => value(t0).runNow()))
+    
+    inline def onPlaybackRateChange(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onPlaybackRateChange", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def onReady(value: /* event */ YouTubeEvent[Any] => Callback): this.type = set("onReady", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Any]) => value(t0).runNow()))
+    
+    inline def onStateChange(value: /* event */ YouTubeEvent[Double] => Callback): this.type = set("onStateChange", js.Any.fromFunction1((t0: /* event */ YouTubeEvent[Double]) => value(t0).runNow()))
+    
+    inline def opts(value: Options): this.type = set("opts", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def videoId(value: String): this.type = set("videoId", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactYoutube.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: YouTubeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

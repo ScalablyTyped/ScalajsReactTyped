@@ -1,90 +1,147 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticCOLORS
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandCollection
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandContent
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.messageHeaderMod.MessageHeaderProps
-import typingsJapgolly.semanticUiReact.messageItemMod.MessageItemProps
-import typingsJapgolly.semanticUiReact.messageMessageMod.MessageProps
-import typingsJapgolly.semanticUiReact.messageMessageMod.MessageSizeProp
-import typingsJapgolly.semanticUiReact.messageMod.default
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageListMod.MessageListProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageMod.MessageProps
+import typingsJapgolly.semanticUiReact.distCommonjsCollectionsMessageMessageMod.MessageSizeProp
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticCOLORS
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandCollection
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandContent
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.bottom
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Message {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    attached: Boolean | bottom | top = null,
-    className: String = null,
-    color: SemanticCOLORS = null,
-    compact: js.UndefOr[Boolean] = js.undefined,
-    content: SemanticShorthandContent = null,
-    error: js.UndefOr[Boolean] = js.undefined,
-    floating: js.UndefOr[Boolean] = js.undefined,
-    header: SemanticShorthandItem[MessageHeaderProps] = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    icon: js.Any | Boolean = null,
-    info: js.UndefOr[Boolean] = js.undefined,
-    list: SemanticShorthandCollection[MessageItemProps] = null,
-    negative: js.UndefOr[Boolean] = js.undefined,
-    onDismiss: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ MessageProps) => Callback = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    size: MessageSizeProp = null,
-    success: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    warning: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MessageProps, default, Unit, MessageProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (attached != null) __obj.updateDynamic("attached")(attached.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (list != null) __obj.updateDynamic("list")(list.asInstanceOf[js.Any])
-    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative.asInstanceOf[js.Any])
-    if (onDismiss != null) __obj.updateDynamic("onDismiss")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.messageMessageMod.MessageProps) => onDismiss(t0, t1).runNow()))
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.messageMessageMod.MessageProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.messageMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.messageMessageMod.MessageProps])(children: _*)
+  object Content {
+    
+    @JSImport("semantic-ui-react", "Message.Content")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Content.type): SharedBuilder_MessageContentProps_1436092918 = new SharedBuilder_MessageContentProps_1436092918(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: MessageContentProps): SharedBuilder_MessageContentProps_1436092918 = new SharedBuilder_MessageContentProps_1436092918(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/collections/Message", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Header {
+    
+    @JSImport("semantic-ui-react", "Message.Header")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Header.type): SharedBuilder_MessageHeaderProps_1959897789 = new SharedBuilder_MessageHeaderProps_1959897789(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: MessageHeaderProps): SharedBuilder_MessageHeaderProps_1959897789 = new SharedBuilder_MessageHeaderProps_1959897789(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Item {
+    
+    @JSImport("semantic-ui-react", "Message.Item")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Item.type): SharedBuilder_MessageItemProps1591511845 = new SharedBuilder_MessageItemProps1591511845(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: MessageItemProps): SharedBuilder_MessageItemProps1591511845 = new SharedBuilder_MessageItemProps1591511845(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object List {
+    
+    @JSImport("semantic-ui-react", "Message.List")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: List.type): SharedBuilder_MessageListProps_2026924381 = new SharedBuilder_MessageListProps_2026924381(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: MessageListProps): SharedBuilder_MessageListProps_2026924381 = new SharedBuilder_MessageListProps_2026924381(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Message")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def attached(value: Boolean | bottom | top): this.type = set("attached", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: SemanticCOLORS): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def compact(value: Boolean): this.type = set("compact", value.asInstanceOf[js.Any])
+    
+    inline def content(value: SemanticShorthandContent): this.type = set("content", value.asInstanceOf[js.Any])
+    
+    inline def contentNull: this.type = set("content", null)
+    
+    inline def contentVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("content", js.Array(value*))
+    
+    inline def contentVdomElement(value: VdomElement): this.type = set("content", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def floating(value: Boolean): this.type = set("floating", value.asInstanceOf[js.Any])
+    
+    inline def header(value: SemanticShorthandItem[MessageHeaderProps]): this.type = set("header", value.asInstanceOf[js.Any])
+    
+    inline def headerFunction3(
+      value: (/* component */ ElementType, MessageHeaderProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("header", js.Any.fromFunction3(value))
+    
+    inline def headerNull: this.type = set("header", null)
+    
+    inline def headerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("header", js.Array(value*))
+    
+    inline def headerVdomElement(value: VdomElement): this.type = set("header", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def hidden(value: Boolean): this.type = set("hidden", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: Any | Boolean): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def info(value: Boolean): this.type = set("info", value.asInstanceOf[js.Any])
+    
+    inline def list(value: SemanticShorthandCollection[MessageItemProps]): this.type = set("list", value.asInstanceOf[js.Any])
+    
+    inline def listVarargs(value: SemanticShorthandItem[MessageItemProps]*): this.type = set("list", js.Array(value*))
+    
+    inline def negative(value: Boolean): this.type = set("negative", value.asInstanceOf[js.Any])
+    
+    inline def onDismiss(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ MessageProps) => Callback): this.type = set("onDismiss", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ MessageProps) => (value(t0, t1)).runNow()))
+    
+    inline def positive(value: Boolean): this.type = set("positive", value.asInstanceOf[js.Any])
+    
+    inline def size(value: MessageSizeProp): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def success(value: Boolean): this.type = set("success", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+    
+    inline def warning(value: Boolean): this.type = set("warning", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Message.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MessageProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

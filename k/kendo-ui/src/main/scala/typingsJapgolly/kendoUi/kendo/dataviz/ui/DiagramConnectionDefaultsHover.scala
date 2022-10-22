@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramConnectionDefaultsHover extends js.Object {
+trait DiagramConnectionDefaultsHover extends StObject {
+  
   var stroke: js.UndefOr[DiagramConnectionDefaultsHoverStroke] = js.undefined
 }
-
 object DiagramConnectionDefaultsHover {
-  @scala.inline
-  def apply(stroke: DiagramConnectionDefaultsHoverStroke = null): DiagramConnectionDefaultsHover = {
+  
+  inline def apply(): DiagramConnectionDefaultsHover = {
     val __obj = js.Dynamic.literal()
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramConnectionDefaultsHover]
   }
+  
+  extension [Self <: DiagramConnectionDefaultsHover](x: Self) {
+    
+    inline def setStroke(value: DiagramConnectionDefaultsHoverStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

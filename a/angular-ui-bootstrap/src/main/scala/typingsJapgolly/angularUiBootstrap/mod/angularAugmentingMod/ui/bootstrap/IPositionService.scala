@@ -1,32 +1,33 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPositionService extends js.Object {
+trait IPositionService extends StObject {
+  
   /**
     * Provides a read-only equivalent of jQuery's offset function.
     */
   def offset(element: JQuery): IPositionCoordinates
+  
   /**
     * Provides a read-only equivalent of jQuery's position function.
     */
   def position(element: JQuery): IPositionCoordinates
 }
-
 object IPositionService {
-  @scala.inline
-  def apply(
-    offset: JQuery => CallbackTo[IPositionCoordinates],
-    position: JQuery => CallbackTo[IPositionCoordinates]
-  ): IPositionService = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("offset")(js.Any.fromFunction1((t0: typingsJapgolly.angular.JQuery) => offset(t0).runNow()))
-    __obj.updateDynamic("position")(js.Any.fromFunction1((t0: typingsJapgolly.angular.JQuery) => position(t0).runNow()))
+  
+  inline def apply(offset: JQuery => IPositionCoordinates, position: JQuery => IPositionCoordinates): IPositionService = {
+    val __obj = js.Dynamic.literal(offset = js.Any.fromFunction1(offset), position = js.Any.fromFunction1(position))
     __obj.asInstanceOf[IPositionService]
   }
+  
+  extension [Self <: IPositionService](x: Self) {
+    
+    inline def setOffset(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
+    
+    inline def setPosition(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "position", js.Any.fromFunction1(value))
+  }
 }
-

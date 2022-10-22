@@ -2,24 +2,23 @@ package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for reading messages from the message store. */
-@JSGlobal("Windows.ApplicationModel.Chat.ChatMessageReader")
 @js.native
-abstract class ChatMessageReader () extends js.Object {
+trait ChatMessageReader extends StObject {
+  
   /**
     * Returns a batch list of chat messages from the message store.
     * @return An asynchronous operation that returns a list of chat messages upon successful completion.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def readBatchAsync(): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
   /**
     * Returns a batch list of chat messages from the message store limited to the specified size.
     * @param count The size of the batch to read.
     * @return An asynchronous operation that returns a list of chat messages upon successful completion.
     */
-  def readBatchAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def readBatchAsync(count: Double): IPromiseWithIAsyncOperation[IVectorView[Any]] = js.native
 }
-

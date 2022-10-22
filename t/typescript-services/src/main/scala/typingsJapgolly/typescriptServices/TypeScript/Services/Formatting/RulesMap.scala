@@ -1,25 +1,57 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.Formatting.RulesMap")
-@js.native
-class RulesMap () extends js.Object {
-  var map: js.Array[RulesBucket] = js.native
-  var mapRowLength: Double = js.native
-  /* private */ def FillRule(rule: js.Any, rulesBucketConstructionStateList: js.Any): js.Any = js.native
-  def FillRules(rules: js.Array[Rule], rulesBucketConstructionStateList: js.Array[RulesBucketConstructionState]): Unit = js.native
-  def GetRule(context: FormattingContext): Rule = js.native
-  /* private */ def GetRuleBucketIndex(row: js.Any, column: js.Any): js.Any = js.native
-  def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket] = js.native
+trait RulesMap extends StObject {
+  
+  /* private */ def FillRule(rule: Any, rulesBucketConstructionStateList: Any): Any
+  
+  def FillRules(rules: js.Array[Rule], rulesBucketConstructionStateList: js.Array[RulesBucketConstructionState]): Unit
+  
+  def GetRule(context: FormattingContext): Rule
+  
+  /* private */ def GetRuleBucketIndex(row: Any, column: Any): Any
+  
+  def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket]
+  
+  var map: js.Array[RulesBucket]
+  
+  var mapRowLength: Double
 }
-
-/* static members */
-@JSGlobal("TypeScript.Services.Formatting.RulesMap")
-@js.native
-object RulesMap extends js.Object {
-  def create(rules: js.Array[Rule]): RulesMap = js.native
+object RulesMap {
+  
+  inline def apply(
+    FillRule: (Any, Any) => Any,
+    FillRules: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Callback,
+    GetRule: FormattingContext => Rule,
+    GetRuleBucketIndex: (Any, Any) => Any,
+    Initialize: js.Array[Rule] => js.Array[RulesBucket],
+    map: js.Array[RulesBucket],
+    mapRowLength: Double
+  ): RulesMap = {
+    val __obj = js.Dynamic.literal(FillRule = js.Any.fromFunction2(FillRule), FillRules = js.Any.fromFunction2((t0: js.Array[Rule], t1: js.Array[RulesBucketConstructionState]) => (FillRules(t0, t1)).runNow()), GetRule = js.Any.fromFunction1(GetRule), GetRuleBucketIndex = js.Any.fromFunction2(GetRuleBucketIndex), Initialize = js.Any.fromFunction1(Initialize), map = map.asInstanceOf[js.Any], mapRowLength = mapRowLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RulesMap]
+  }
+  
+  extension [Self <: RulesMap](x: Self) {
+    
+    inline def setFillRule(value: (Any, Any) => Any): Self = StObject.set(x, "FillRule", js.Any.fromFunction2(value))
+    
+    inline def setFillRules(value: (js.Array[Rule], js.Array[RulesBucketConstructionState]) => Callback): Self = StObject.set(x, "FillRules", js.Any.fromFunction2((t0: js.Array[Rule], t1: js.Array[RulesBucketConstructionState]) => (value(t0, t1)).runNow()))
+    
+    inline def setGetRule(value: FormattingContext => Rule): Self = StObject.set(x, "GetRule", js.Any.fromFunction1(value))
+    
+    inline def setGetRuleBucketIndex(value: (Any, Any) => Any): Self = StObject.set(x, "GetRuleBucketIndex", js.Any.fromFunction2(value))
+    
+    inline def setInitialize(value: js.Array[Rule] => js.Array[RulesBucket]): Self = StObject.set(x, "Initialize", js.Any.fromFunction1(value))
+    
+    inline def setMap(value: js.Array[RulesBucket]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapRowLength(value: Double): Self = StObject.set(x, "mapRowLength", value.asInstanceOf[js.Any])
+    
+    inline def setMapVarargs(value: RulesBucket*): Self = StObject.set(x, "map", js.Array(value*))
+  }
 }
-

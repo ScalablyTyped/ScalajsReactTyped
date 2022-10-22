@@ -1,14 +1,16 @@
 package typingsJapgolly.ioTs.mod
 
-import typingsJapgolly.std.BigInt
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("io-ts", "BigIntType")
 @js.native
-class BigIntType ()
-  extends Type_[BigInt, BigInt, js.Any] {
+open class BigIntType ()
+  extends Type_[js.BigInt, js.BigInt, Any] {
+  
+  /**
+    * @since 1.0.0
+    */
   val _tag: typingsJapgolly.ioTs.ioTsStrings.BigIntType = js.native
 }
-

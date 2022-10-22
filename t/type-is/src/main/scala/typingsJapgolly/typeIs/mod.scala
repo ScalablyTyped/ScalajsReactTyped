@@ -2,21 +2,27 @@ package typingsJapgolly.typeIs
 
 import typingsJapgolly.node.httpMod.IncomingMessage
 import typingsJapgolly.typeIs.typeIsBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("type-is", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(request: IncomingMessage, types: String*): String | `false` | Null = js.native
-  def apply(request: IncomingMessage, types: js.Array[String]): String | `false` | Null = js.native
-  def hasBody(request: IncomingMessage): Boolean = js.native
-  def is(mediaType: String, types: String*): String | `false` = js.native
-  def is(mediaType: String, types: js.Array[String]): String | `false` = js.native
-  def mimeMatch(expected: String, actual: String): Boolean = js.native
-  @JSName("mimeMatch")
-  def mimeMatch_false(expected: `false`, actual: String): Boolean = js.native
-  def normalize(`type`: String): String | `false` = js.native
+object mod {
+  
+  inline def apply(request: IncomingMessage, types: String*): String | `false` | Null = ^.asInstanceOf[js.Dynamic].apply(scala.List(request.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String | `false` | Null]
+  inline def apply(request: IncomingMessage, types: js.Array[String]): String | `false` | Null = (^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false` | Null]
+  
+  @JSImport("type-is", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def hasBody(request: IncomingMessage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasBody")(request.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def is(mediaType: String, types: String*): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(scala.List(mediaType.asInstanceOf[js.Any]).`++`(types.asInstanceOf[Seq[js.Any]])*).asInstanceOf[String | `false`]
+  inline def is(mediaType: String, types: js.Array[String]): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("is")(mediaType.asInstanceOf[js.Any], types.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  
+  inline def mimeMatch(expected: String, actual: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mimeMatch")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def mimeMatch_false(expected: `false`, actual: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("mimeMatch")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def normalize(`type`: String): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(`type`.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
 }
-

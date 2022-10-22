@@ -1,15 +1,16 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Sockets.WebSocketClosedEventArgs")
-@js.native
-class WebSocketClosedEventArgs () extends IWebSocketClosedEventArgs {
-  /* CompleteClass */
-  override var code: Double = js.native
-  /* CompleteClass */
-  override var reason: String = js.native
+trait WebSocketClosedEventArgs
+  extends StObject
+     with IWebSocketClosedEventArgs
+object WebSocketClosedEventArgs {
+  
+  inline def apply(code: Double, reason: String): WebSocketClosedEventArgs = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebSocketClosedEventArgs]
+  }
 }
-

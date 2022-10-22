@@ -1,18 +1,17 @@
 package typingsJapgolly.typedoc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typedoc", "Reflection")
+/* note: abstract class */ @JSImport("typedoc", "Reflection")
 @js.native
-abstract class Reflection protected ()
-  extends typingsJapgolly.typedoc.reflectionsMod.Reflection {
-  def this(name: String, kind: typingsJapgolly.typedoc.abstractMod.ReflectionKind) = this()
+open class Reflection protected ()
+  extends typingsJapgolly.typedoc.distLibModelsMod.Reflection {
+  def this(name: String, kind: typingsJapgolly.typedoc.distLibModelsReflectionsKindMod.ReflectionKind) = this()
   def this(
     name: String,
-    kind: typingsJapgolly.typedoc.abstractMod.ReflectionKind,
-    parent: typingsJapgolly.typedoc.abstractMod.Reflection
+    kind: typingsJapgolly.typedoc.distLibModelsReflectionsKindMod.ReflectionKind,
+    parent: typingsJapgolly.typedoc.distLibModelsReflectionsAbstractMod.Reflection
   ) = this()
 }
-

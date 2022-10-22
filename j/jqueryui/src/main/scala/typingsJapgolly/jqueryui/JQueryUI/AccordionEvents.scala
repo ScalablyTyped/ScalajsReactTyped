@@ -2,28 +2,37 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AccordionEvents extends js.Object {
+trait AccordionEvents extends StObject {
+  
   var activate: js.UndefOr[AccordionEvent] = js.undefined
+  
   var beforeActivate: js.UndefOr[AccordionEvent] = js.undefined
+  
   var create: js.UndefOr[AccordionEvent] = js.undefined
 }
-
 object AccordionEvents {
-  @scala.inline
-  def apply(
-    activate: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback = null,
-    beforeActivate: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback = null,
-    create: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback = null
-  ): AccordionEvents = {
+  
+  inline def apply(): AccordionEvents = {
     val __obj = js.Dynamic.literal()
-    if (activate != null) __obj.updateDynamic("activate")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AccordionUIParams) => activate(t0, t1).runNow()))
-    if (beforeActivate != null) __obj.updateDynamic("beforeActivate")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AccordionUIParams) => beforeActivate(t0, t1).runNow()))
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.AccordionUIParams) => create(t0, t1).runNow()))
     __obj.asInstanceOf[AccordionEvents]
   }
+  
+  extension [Self <: AccordionEvents](x: Self) {
+    
+    inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback): Self = StObject.set(x, "activate", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AccordionUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setActivateUndefined: Self = StObject.set(x, "activate", js.undefined)
+    
+    inline def setBeforeActivate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback): Self = StObject.set(x, "beforeActivate", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AccordionUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setBeforeActivateUndefined: Self = StObject.set(x, "beforeActivate", js.undefined)
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ AccordionUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ AccordionUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+  }
 }
-

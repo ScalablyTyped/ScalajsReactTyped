@@ -1,30 +1,44 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Bluetooth.GenericAttributeProfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the value of a single Presentation Format GATT Descriptor. */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
-@js.native
-abstract class GattPresentationFormat () extends js.Object {
+trait GattPresentationFormat extends StObject {
+  
   /** Gets the Description of the GattPresentationFormat object. */
-  var description: Double = js.native
+  var description: Double
+  
   /** Gets the Exponent of the GattPresentationFormat object. */
-  var exponent: Double = js.native
+  var exponent: Double
+  
   /** Gets the Format Type of the GattPresentationFormat object. */
-  var formatType: Double = js.native
+  var formatType: Double
+  
   /** Gets the Namespace of the GattPresentationFormat object. */
-  var namespace: Double = js.native
+  var namespace: Double
+  
   /** Gets the Unit of the GattPresentationFormat object. */
-  var unit: Double = js.native
+  var unit: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
-@js.native
-object GattPresentationFormat extends js.Object {
-  /** Gets the value of the Bluetooth SIG Assigned Numbers Namespace. */
-  var bluetoothSigAssignedNumbers: Double = js.native
+object GattPresentationFormat {
+  
+  inline def apply(description: Double, exponent: Double, formatType: Double, namespace: Double, unit: Double): GattPresentationFormat = {
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], exponent = exponent.asInstanceOf[js.Any], formatType = formatType.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GattPresentationFormat]
+  }
+  
+  extension [Self <: GattPresentationFormat](x: Self) {
+    
+    inline def setDescription(value: Double): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+    
+    inline def setFormatType(value: Double): Self = StObject.set(x, "formatType", value.asInstanceOf[js.Any])
+    
+    inline def setNamespace(value: Double): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    
+    inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+  }
 }
-

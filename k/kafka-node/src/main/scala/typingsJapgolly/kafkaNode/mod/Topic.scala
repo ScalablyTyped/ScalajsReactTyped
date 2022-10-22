@@ -1,29 +1,40 @@
 package typingsJapgolly.kafkaNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Topic extends js.Object {
+trait Topic extends StObject {
+  
   var autoCommit: js.UndefOr[Boolean] = js.undefined
+  
   var encoding: js.UndefOr[String] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var topic: String
 }
-
 object Topic {
-  @scala.inline
-  def apply(
-    topic: String,
-    autoCommit: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    offset: Int | Double = null
-  ): Topic = {
+  
+  inline def apply(topic: String): Topic = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topic]
   }
+  
+  extension [Self <: Topic](x: Self) {
+    
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+  }
 }
-

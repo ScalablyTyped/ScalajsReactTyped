@@ -10,10 +10,10 @@ Single component release of checkbox
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-checkbox |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 1 |
-| # downloads        | 24486 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1629.3333333333333 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

@@ -1,19 +1,7 @@
 package typingsJapgolly.easeljs.createjs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.EaselJS")
-@js.native
-class EaselJS () extends js.Object
-
-/* static members */
-@JSGlobal("createjs.EaselJS")
-@js.native
-object EaselJS extends js.Object {
-  // properties
-  var buildDate: String = js.native
-  var version: String = js.native
-}
-
+trait EaselJS extends StObject

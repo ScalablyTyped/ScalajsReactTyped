@@ -1,17 +1,20 @@
 package typingsJapgolly.xrm.Xrm
 
-import org.scalajs.dom.experimental.Response
+import org.scalajs.dom.Response
 import typingsJapgolly.xrm.Xrm.Async.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.WebApi.online API
   * Execute and ExecuteMultiple are only available when online, not offline.
   */
 @js.native
-trait WebApiOnline extends WebApiOffline {
+trait WebApiOnline
+  extends StObject
+     with WebApiOffline {
+  
   /**
     * Execute a single action, function, or CRUD operation.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/execute External Link: execute (Client API reference)}
@@ -38,7 +41,8 @@ trait WebApiOnline extends WebApiOffline {
     *       * 5: EntityType
     *   - typeName: String. The fully qualified name of the parameter type.
     */
-  def execute(request: js.Any): PromiseLike[Response] = js.native
+  def execute(request: Any): PromiseLike[Response] = js.native
+  
   /**
     * Execute a collection of action, function, or CRUD operations.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-webapi/executemultiple External Link: executeMultiple (Client API reference)}
@@ -51,6 +55,5 @@ trait WebApiOnline extends WebApiOffline {
     *        * In this case, all the request objects specified in the change set will get executed in a
     *        transaction.
     */
-  def executeMultiple(request: js.Array[_]): PromiseLike[js.Array[Response]] = js.native
+  def executeMultiple(request: js.Array[Any]): PromiseLike[js.Array[Response]] = js.native
 }
-

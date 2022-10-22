@@ -1,19 +1,16 @@
 package typingsJapgolly.gulpFileInclude
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gulpFileIncludeStrings {
-  @js.native
-  sealed trait `@file` extends js.Object
   
   @js.native
-  sealed trait `@root` extends js.Object
+  sealed trait `@file` extends StObject
+  inline def `@file`: `@file` = "@file".asInstanceOf[`@file`]
   
-  @scala.inline
-  def `@file`: `@file` = "@file".asInstanceOf[`@file`]
-  @scala.inline
-  def `@root`: `@root` = "@root".asInstanceOf[`@root`]
+  @js.native
+  sealed trait `@root` extends StObject
+  inline def `@root`: `@root` = "@root".asInstanceOf[`@root`]
 }
-

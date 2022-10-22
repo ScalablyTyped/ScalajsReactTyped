@@ -1,7 +1,7 @@
 
 # Scala.js typings for node-schedule
 
-Typings are for version 1.3
+Typings are for version 2.1
 
 ## Library description:
 A cron-like and not-cron-like job scheduler for Node.
@@ -9,11 +9,11 @@ A cron-like and not-cron-like job scheduler for Node.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | node-schedule |
-| Keywords           | schedule, task, job, cron |
+| Keywords           | schedule, task, job, cron, recurrent, in-memory |
 | # releases         | 4 |
-| # dependents       | 656 |
-| # downloads        | 9395033 |
-| # stars            | 257 |
+| # dependents       | 0.0 |
+| # downloads        | 3121118.3333333335 |
+| # stars            | 8403.0 |
 
 ## Links
 - [Homepage](https://github.com/node-schedule/node-schedule#readme)

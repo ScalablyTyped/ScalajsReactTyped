@@ -1,84 +1,104 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridUpdatingLocale
-  extends /**
-	 * Option for IgGridUpdatingLocale
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
-  	 *
-  	 */
+    * Specifies the label for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowLabel is used.
+    *
+    */
   var addRowLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the title for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowTooltip is used.
-  	 *
-  	 */
+    * Specifies the title for the button starting edit mode for row adding. If not set, $.ig.GridUpdating.locale.addRowTooltip is used.
+    *
+    */
   var addRowTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the label for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelLabel is used.
-  	 *
-  	 */
+    * Specifies the label for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelLabel is used.
+    *
+    */
   var cancelLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the title for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelTooltip is used.
-  	 *
-  	 */
+    * Specifies the title for the Cancel editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.cancelTooltip is used.
+    *
+    */
   var cancelTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the label for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowLabel is used.
-  	 *
-  	 */
+    * Specifies the label for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowLabel is used.
+    *
+    */
   var deleteRowLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the title for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowTooltip is used.
-  	 *
-  	 */
+    * Specifies the title for the delete button. If not set, $.ig.GridUpdating.locale.deleteRowTooltip is used.
+    *
+    */
   var deleteRowTooltip: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the label for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneLabel is used.
-  	 *
-  	 */
+    * Specifies the label for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneLabel is used.
+    *
+    */
   var doneLabel: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Specifies the title for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneTooltip is used.
-  	 *
-  	 */
+    * Specifies the title for the Done editing button (only applicable when the [showDoneCancelButtons](ui.iggridupdating#options:showDoneCancelButtons) option is enabled). If not set, $.ig.GridUpdating.locale.doneTooltip is used.
+    *
+    */
   var doneTooltip: js.UndefOr[String] = js.undefined
 }
-
 object IgGridUpdatingLocale {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridUpdatingLocale
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    addRowLabel: String = null,
-    addRowTooltip: String = null,
-    cancelLabel: String = null,
-    cancelTooltip: String = null,
-    deleteRowLabel: String = null,
-    deleteRowTooltip: String = null,
-    doneLabel: String = null,
-    doneTooltip: String = null
-  ): IgGridUpdatingLocale = {
+  
+  inline def apply(): IgGridUpdatingLocale = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (addRowLabel != null) __obj.updateDynamic("addRowLabel")(addRowLabel.asInstanceOf[js.Any])
-    if (addRowTooltip != null) __obj.updateDynamic("addRowTooltip")(addRowTooltip.asInstanceOf[js.Any])
-    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
-    if (cancelTooltip != null) __obj.updateDynamic("cancelTooltip")(cancelTooltip.asInstanceOf[js.Any])
-    if (deleteRowLabel != null) __obj.updateDynamic("deleteRowLabel")(deleteRowLabel.asInstanceOf[js.Any])
-    if (deleteRowTooltip != null) __obj.updateDynamic("deleteRowTooltip")(deleteRowTooltip.asInstanceOf[js.Any])
-    if (doneLabel != null) __obj.updateDynamic("doneLabel")(doneLabel.asInstanceOf[js.Any])
-    if (doneTooltip != null) __obj.updateDynamic("doneTooltip")(doneTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridUpdatingLocale]
   }
+  
+  extension [Self <: IgGridUpdatingLocale](x: Self) {
+    
+    inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowLabelUndefined: Self = StObject.set(x, "addRowLabel", js.undefined)
+    
+    inline def setAddRowTooltip(value: String): Self = StObject.set(x, "addRowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setAddRowTooltipUndefined: Self = StObject.set(x, "addRowTooltip", js.undefined)
+    
+    inline def setCancelLabel(value: String): Self = StObject.set(x, "cancelLabel", value.asInstanceOf[js.Any])
+    
+    inline def setCancelLabelUndefined: Self = StObject.set(x, "cancelLabel", js.undefined)
+    
+    inline def setCancelTooltip(value: String): Self = StObject.set(x, "cancelTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setCancelTooltipUndefined: Self = StObject.set(x, "cancelTooltip", js.undefined)
+    
+    inline def setDeleteRowLabel(value: String): Self = StObject.set(x, "deleteRowLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteRowLabelUndefined: Self = StObject.set(x, "deleteRowLabel", js.undefined)
+    
+    inline def setDeleteRowTooltip(value: String): Self = StObject.set(x, "deleteRowTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setDeleteRowTooltipUndefined: Self = StObject.set(x, "deleteRowTooltip", js.undefined)
+    
+    inline def setDoneLabel(value: String): Self = StObject.set(x, "doneLabel", value.asInstanceOf[js.Any])
+    
+    inline def setDoneLabelUndefined: Self = StObject.set(x, "doneLabel", js.undefined)
+    
+    inline def setDoneTooltip(value: String): Self = StObject.set(x, "doneTooltip", value.asInstanceOf[js.Any])
+    
+    inline def setDoneTooltipUndefined: Self = StObject.set(x, "doneTooltip", js.undefined)
+  }
 }
-

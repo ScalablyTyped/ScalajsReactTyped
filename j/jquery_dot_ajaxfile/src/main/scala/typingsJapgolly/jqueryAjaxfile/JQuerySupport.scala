@@ -1,79 +1,136 @@
 package typingsJapgolly.jqueryAjaxfile
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   Collection of properties of the current browser
 */
-trait JQuerySupport extends js.Object {
+trait JQuerySupport extends StObject {
+  
   var ajax: js.UndefOr[Boolean] = js.undefined
+  
   var boxModel: js.UndefOr[Boolean] = js.undefined
+  
   var changeBubbles: js.UndefOr[Boolean] = js.undefined
+  
   var checkClone: js.UndefOr[Boolean] = js.undefined
+  
   var checkOn: js.UndefOr[Boolean] = js.undefined
+  
   var cors: js.UndefOr[Boolean] = js.undefined
+  
   var cssFloat: js.UndefOr[Boolean] = js.undefined
+  
   var hrefNormalized: js.UndefOr[Boolean] = js.undefined
+  
   var htmlSerialize: js.UndefOr[Boolean] = js.undefined
+  
   var leadingWhitespace: js.UndefOr[Boolean] = js.undefined
+  
   var noCloneChecked: js.UndefOr[Boolean] = js.undefined
+  
   var noCloneEvent: js.UndefOr[Boolean] = js.undefined
+  
   var opacity: js.UndefOr[Boolean] = js.undefined
+  
   var optDisabled: js.UndefOr[Boolean] = js.undefined
+  
   var optSelected: js.UndefOr[Boolean] = js.undefined
+  
   var scriptEval: js.UndefOr[js.Function0[Boolean]] = js.undefined
+  
   var style: js.UndefOr[Boolean] = js.undefined
+  
   var submitBubbles: js.UndefOr[Boolean] = js.undefined
+  
   var tbody: js.UndefOr[Boolean] = js.undefined
 }
-
 object JQuerySupport {
-  @scala.inline
-  def apply(
-    ajax: js.UndefOr[Boolean] = js.undefined,
-    boxModel: js.UndefOr[Boolean] = js.undefined,
-    changeBubbles: js.UndefOr[Boolean] = js.undefined,
-    checkClone: js.UndefOr[Boolean] = js.undefined,
-    checkOn: js.UndefOr[Boolean] = js.undefined,
-    cors: js.UndefOr[Boolean] = js.undefined,
-    cssFloat: js.UndefOr[Boolean] = js.undefined,
-    hrefNormalized: js.UndefOr[Boolean] = js.undefined,
-    htmlSerialize: js.UndefOr[Boolean] = js.undefined,
-    leadingWhitespace: js.UndefOr[Boolean] = js.undefined,
-    noCloneChecked: js.UndefOr[Boolean] = js.undefined,
-    noCloneEvent: js.UndefOr[Boolean] = js.undefined,
-    opacity: js.UndefOr[Boolean] = js.undefined,
-    optDisabled: js.UndefOr[Boolean] = js.undefined,
-    optSelected: js.UndefOr[Boolean] = js.undefined,
-    scriptEval: js.UndefOr[CallbackTo[Boolean]] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined,
-    submitBubbles: js.UndefOr[Boolean] = js.undefined,
-    tbody: js.UndefOr[Boolean] = js.undefined
-  ): JQuerySupport = {
+  
+  inline def apply(): JQuerySupport = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
-    if (!js.isUndefined(boxModel)) __obj.updateDynamic("boxModel")(boxModel.asInstanceOf[js.Any])
-    if (!js.isUndefined(changeBubbles)) __obj.updateDynamic("changeBubbles")(changeBubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkClone)) __obj.updateDynamic("checkClone")(checkClone.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkOn)) __obj.updateDynamic("checkOn")(checkOn.asInstanceOf[js.Any])
-    if (!js.isUndefined(cors)) __obj.updateDynamic("cors")(cors.asInstanceOf[js.Any])
-    if (!js.isUndefined(cssFloat)) __obj.updateDynamic("cssFloat")(cssFloat.asInstanceOf[js.Any])
-    if (!js.isUndefined(hrefNormalized)) __obj.updateDynamic("hrefNormalized")(hrefNormalized.asInstanceOf[js.Any])
-    if (!js.isUndefined(htmlSerialize)) __obj.updateDynamic("htmlSerialize")(htmlSerialize.asInstanceOf[js.Any])
-    if (!js.isUndefined(leadingWhitespace)) __obj.updateDynamic("leadingWhitespace")(leadingWhitespace.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCloneChecked)) __obj.updateDynamic("noCloneChecked")(noCloneChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(noCloneEvent)) __obj.updateDynamic("noCloneEvent")(noCloneEvent.asInstanceOf[js.Any])
-    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(optDisabled)) __obj.updateDynamic("optDisabled")(optDisabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(optSelected)) __obj.updateDynamic("optSelected")(optSelected.asInstanceOf[js.Any])
-    scriptEval.foreach(p => __obj.updateDynamic("scriptEval")(p.toJsFn))
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(submitBubbles)) __obj.updateDynamic("submitBubbles")(submitBubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(tbody)) __obj.updateDynamic("tbody")(tbody.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQuerySupport]
   }
+  
+  extension [Self <: JQuerySupport](x: Self) {
+    
+    inline def setAjax(value: Boolean): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
+    
+    inline def setAjaxUndefined: Self = StObject.set(x, "ajax", js.undefined)
+    
+    inline def setBoxModel(value: Boolean): Self = StObject.set(x, "boxModel", value.asInstanceOf[js.Any])
+    
+    inline def setBoxModelUndefined: Self = StObject.set(x, "boxModel", js.undefined)
+    
+    inline def setChangeBubbles(value: Boolean): Self = StObject.set(x, "changeBubbles", value.asInstanceOf[js.Any])
+    
+    inline def setChangeBubblesUndefined: Self = StObject.set(x, "changeBubbles", js.undefined)
+    
+    inline def setCheckClone(value: Boolean): Self = StObject.set(x, "checkClone", value.asInstanceOf[js.Any])
+    
+    inline def setCheckCloneUndefined: Self = StObject.set(x, "checkClone", js.undefined)
+    
+    inline def setCheckOn(value: Boolean): Self = StObject.set(x, "checkOn", value.asInstanceOf[js.Any])
+    
+    inline def setCheckOnUndefined: Self = StObject.set(x, "checkOn", js.undefined)
+    
+    inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    
+    inline def setCssFloat(value: Boolean): Self = StObject.set(x, "cssFloat", value.asInstanceOf[js.Any])
+    
+    inline def setCssFloatUndefined: Self = StObject.set(x, "cssFloat", js.undefined)
+    
+    inline def setHrefNormalized(value: Boolean): Self = StObject.set(x, "hrefNormalized", value.asInstanceOf[js.Any])
+    
+    inline def setHrefNormalizedUndefined: Self = StObject.set(x, "hrefNormalized", js.undefined)
+    
+    inline def setHtmlSerialize(value: Boolean): Self = StObject.set(x, "htmlSerialize", value.asInstanceOf[js.Any])
+    
+    inline def setHtmlSerializeUndefined: Self = StObject.set(x, "htmlSerialize", js.undefined)
+    
+    inline def setLeadingWhitespace(value: Boolean): Self = StObject.set(x, "leadingWhitespace", value.asInstanceOf[js.Any])
+    
+    inline def setLeadingWhitespaceUndefined: Self = StObject.set(x, "leadingWhitespace", js.undefined)
+    
+    inline def setNoCloneChecked(value: Boolean): Self = StObject.set(x, "noCloneChecked", value.asInstanceOf[js.Any])
+    
+    inline def setNoCloneCheckedUndefined: Self = StObject.set(x, "noCloneChecked", js.undefined)
+    
+    inline def setNoCloneEvent(value: Boolean): Self = StObject.set(x, "noCloneEvent", value.asInstanceOf[js.Any])
+    
+    inline def setNoCloneEventUndefined: Self = StObject.set(x, "noCloneEvent", js.undefined)
+    
+    inline def setOpacity(value: Boolean): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setOptDisabled(value: Boolean): Self = StObject.set(x, "optDisabled", value.asInstanceOf[js.Any])
+    
+    inline def setOptDisabledUndefined: Self = StObject.set(x, "optDisabled", js.undefined)
+    
+    inline def setOptSelected(value: Boolean): Self = StObject.set(x, "optSelected", value.asInstanceOf[js.Any])
+    
+    inline def setOptSelectedUndefined: Self = StObject.set(x, "optSelected", js.undefined)
+    
+    inline def setScriptEval(value: CallbackTo[Boolean]): Self = StObject.set(x, "scriptEval", value.toJsFn)
+    
+    inline def setScriptEvalUndefined: Self = StObject.set(x, "scriptEval", js.undefined)
+    
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setSubmitBubbles(value: Boolean): Self = StObject.set(x, "submitBubbles", value.asInstanceOf[js.Any])
+    
+    inline def setSubmitBubblesUndefined: Self = StObject.set(x, "submitBubbles", js.undefined)
+    
+    inline def setTbody(value: Boolean): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+    
+    inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
+  }
 }
-

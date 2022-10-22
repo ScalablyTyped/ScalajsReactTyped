@@ -1,32 +1,24 @@
 package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LogEntryEvent extends LogEntry {
+trait LogEntryEvent
+  extends StObject
+     with LogEntry {
+  
   var removed: Boolean
 }
-
 object LogEntryEvent {
-  @scala.inline
-  def apply(
-    address: String,
-    data: String,
-    removed: Boolean,
-    topics: js.Array[String],
-    transactionHash: String,
-    blockHash: String = null,
-    blockNumber: Int | Double = null,
-    logIndex: Int | Double = null,
-    transactionIndex: Int | Double = null
-  ): LogEntryEvent = {
-    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any])
-    if (blockHash != null) __obj.updateDynamic("blockHash")(blockHash.asInstanceOf[js.Any])
-    if (blockNumber != null) __obj.updateDynamic("blockNumber")(blockNumber.asInstanceOf[js.Any])
-    if (logIndex != null) __obj.updateDynamic("logIndex")(logIndex.asInstanceOf[js.Any])
-    if (transactionIndex != null) __obj.updateDynamic("transactionIndex")(transactionIndex.asInstanceOf[js.Any])
+  
+  inline def apply(address: String, data: String, removed: Boolean, topics: js.Array[String], transactionHash: String): LogEntryEvent = {
+    val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], blockHash = null, blockNumber = null, logIndex = null, transactionIndex = null)
     __obj.asInstanceOf[LogEntryEvent]
   }
+  
+  extension [Self <: LogEntryEvent](x: Self) {
+    
+    inline def setRemoved(value: Boolean): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+  }
 }
-

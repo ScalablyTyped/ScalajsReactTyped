@@ -1,47 +1,66 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureLayerCapabilitiesQueryRelated extends Object {
+trait FeatureLayerCapabilitiesQueryRelated
+  extends StObject
+     with Object {
+  
+  /**
+    * Indicates if the [relationship query operation](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html) supports a cache hint.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
+    */
+  var supportsCacheHint: Boolean
+  
   /**
     * Indicates if the layer's query response includes the number of features or records related to features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsCount: Boolean
+  
   /**
-    * Indicates if the related features or records returned in the query response can be ordered by one or more fields. Requires ArcGIS Server service 10.3 or greater.
+    * Indicates if the related features or records returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsOrderBy: Boolean
+  
   /**
-    * Indicates if the query response supports pagination for related features or records. Requires ArcGIS Server service 10.3 or greater.
+    * Indicates if the query response supports pagination for related features or records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities)
     */
   var supportsPagination: Boolean
 }
-
 object FeatureLayerCapabilitiesQueryRelated {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    supportsCacheHint: Boolean,
     supportsCount: Boolean,
     supportsOrderBy: Boolean,
     supportsPagination: Boolean
   ): FeatureLayerCapabilitiesQueryRelated = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supportsCacheHint = supportsCacheHint.asInstanceOf[js.Any], supportsCount = supportsCount.asInstanceOf[js.Any], supportsOrderBy = supportsOrderBy.asInstanceOf[js.Any], supportsPagination = supportsPagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
+  
+  extension [Self <: FeatureLayerCapabilitiesQueryRelated](x: Self) {
+    
+    inline def setSupportsCacheHint(value: Boolean): Self = StObject.set(x, "supportsCacheHint", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsCount(value: Boolean): Self = StObject.set(x, "supportsCount", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
+    
+    inline def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
+  }
 }
-

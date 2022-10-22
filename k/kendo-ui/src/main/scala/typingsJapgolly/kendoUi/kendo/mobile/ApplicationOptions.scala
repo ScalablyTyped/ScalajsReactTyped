@@ -1,64 +1,133 @@
 package typingsJapgolly.kendoUi.kendo.mobile
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ApplicationOptions extends js.Object {
+trait ApplicationOptions extends StObject {
+  
   var browserHistory: js.UndefOr[Boolean] = js.undefined
+  
+  var hashBang: js.UndefOr[Boolean] = js.undefined
+  
   var hideAddressBar: js.UndefOr[Boolean] = js.undefined
+  
   var init: js.UndefOr[js.Function1[/* e */ ApplicationEvent, Unit]] = js.undefined
+  
   var initial: js.UndefOr[String] = js.undefined
+  
   var layout: js.UndefOr[String] = js.undefined
+  
   var loading: js.UndefOr[String] = js.undefined
+  
   var modelScope: js.UndefOr[js.Object] = js.undefined
+  
   var platform: js.UndefOr[String] = js.undefined
+  
+  var pushState: js.UndefOr[Boolean] = js.undefined
+  
   var retina: js.UndefOr[Boolean] = js.undefined
+  
+  var root: js.UndefOr[String] = js.undefined
+  
   var serverNavigation: js.UndefOr[Boolean] = js.undefined
+  
   var skin: js.UndefOr[String] = js.undefined
+  
   var statusBarStyle: js.UndefOr[String] = js.undefined
+  
   var transition: js.UndefOr[String] = js.undefined
+  
   var updateDocumentTitle: js.UndefOr[Boolean] = js.undefined
+  
   var useNativeScrolling: js.UndefOr[Boolean] = js.undefined
+  
+  var webAppCapable: js.UndefOr[Boolean] = js.undefined
 }
-
 object ApplicationOptions {
-  @scala.inline
-  def apply(
-    browserHistory: js.UndefOr[Boolean] = js.undefined,
-    hideAddressBar: js.UndefOr[Boolean] = js.undefined,
-    init: /* e */ ApplicationEvent => Callback = null,
-    initial: String = null,
-    layout: String = null,
-    loading: String = null,
-    modelScope: js.Object = null,
-    platform: String = null,
-    retina: js.UndefOr[Boolean] = js.undefined,
-    serverNavigation: js.UndefOr[Boolean] = js.undefined,
-    skin: String = null,
-    statusBarStyle: String = null,
-    transition: String = null,
-    updateDocumentTitle: js.UndefOr[Boolean] = js.undefined,
-    useNativeScrolling: js.UndefOr[Boolean] = js.undefined
-  ): ApplicationOptions = {
+  
+  inline def apply(): ApplicationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(browserHistory)) __obj.updateDynamic("browserHistory")(browserHistory.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideAddressBar)) __obj.updateDynamic("hideAddressBar")(hideAddressBar.asInstanceOf[js.Any])
-    if (init != null) __obj.updateDynamic("init")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ApplicationEvent) => init(t0).runNow()))
-    if (initial != null) __obj.updateDynamic("initial")(initial.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (modelScope != null) __obj.updateDynamic("modelScope")(modelScope.asInstanceOf[js.Any])
-    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
-    if (!js.isUndefined(retina)) __obj.updateDynamic("retina")(retina.asInstanceOf[js.Any])
-    if (!js.isUndefined(serverNavigation)) __obj.updateDynamic("serverNavigation")(serverNavigation.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (statusBarStyle != null) __obj.updateDynamic("statusBarStyle")(statusBarStyle.asInstanceOf[js.Any])
-    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateDocumentTitle)) __obj.updateDynamic("updateDocumentTitle")(updateDocumentTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeScrolling)) __obj.updateDynamic("useNativeScrolling")(useNativeScrolling.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationOptions]
   }
+  
+  extension [Self <: ApplicationOptions](x: Self) {
+    
+    inline def setBrowserHistory(value: Boolean): Self = StObject.set(x, "browserHistory", value.asInstanceOf[js.Any])
+    
+    inline def setBrowserHistoryUndefined: Self = StObject.set(x, "browserHistory", js.undefined)
+    
+    inline def setHashBang(value: Boolean): Self = StObject.set(x, "hashBang", value.asInstanceOf[js.Any])
+    
+    inline def setHashBangUndefined: Self = StObject.set(x, "hashBang", js.undefined)
+    
+    inline def setHideAddressBar(value: Boolean): Self = StObject.set(x, "hideAddressBar", value.asInstanceOf[js.Any])
+    
+    inline def setHideAddressBarUndefined: Self = StObject.set(x, "hideAddressBar", js.undefined)
+    
+    inline def setInit(value: /* e */ ApplicationEvent => Callback): Self = StObject.set(x, "init", js.Any.fromFunction1((t0: /* e */ ApplicationEvent) => value(t0).runNow()))
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    
+    inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    
+    inline def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+    
+    inline def setModelScope(value: js.Object): Self = StObject.set(x, "modelScope", value.asInstanceOf[js.Any])
+    
+    inline def setModelScopeUndefined: Self = StObject.set(x, "modelScope", js.undefined)
+    
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    
+    inline def setPushState(value: Boolean): Self = StObject.set(x, "pushState", value.asInstanceOf[js.Any])
+    
+    inline def setPushStateUndefined: Self = StObject.set(x, "pushState", js.undefined)
+    
+    inline def setRetina(value: Boolean): Self = StObject.set(x, "retina", value.asInstanceOf[js.Any])
+    
+    inline def setRetinaUndefined: Self = StObject.set(x, "retina", js.undefined)
+    
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    
+    inline def setServerNavigation(value: Boolean): Self = StObject.set(x, "serverNavigation", value.asInstanceOf[js.Any])
+    
+    inline def setServerNavigationUndefined: Self = StObject.set(x, "serverNavigation", js.undefined)
+    
+    inline def setSkin(value: String): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    
+    inline def setStatusBarStyle(value: String): Self = StObject.set(x, "statusBarStyle", value.asInstanceOf[js.Any])
+    
+    inline def setStatusBarStyleUndefined: Self = StObject.set(x, "statusBarStyle", js.undefined)
+    
+    inline def setTransition(value: String): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+    
+    inline def setUpdateDocumentTitle(value: Boolean): Self = StObject.set(x, "updateDocumentTitle", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateDocumentTitleUndefined: Self = StObject.set(x, "updateDocumentTitle", js.undefined)
+    
+    inline def setUseNativeScrolling(value: Boolean): Self = StObject.set(x, "useNativeScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setUseNativeScrollingUndefined: Self = StObject.set(x, "useNativeScrolling", js.undefined)
+    
+    inline def setWebAppCapable(value: Boolean): Self = StObject.set(x, "webAppCapable", value.asInstanceOf[js.Any])
+    
+    inline def setWebAppCapableUndefined: Self = StObject.set(x, "webAppCapable", js.undefined)
+  }
 }
-

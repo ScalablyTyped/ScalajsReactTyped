@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.DataStudio
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for creating options for SelectSingles and SelectMultiples.
@@ -26,18 +25,23 @@ import scala.scalajs.js.annotation._
   *       .addOption(option1)
   *       .addOption(option2);
   */
-trait OptionBuilder extends js.Object {
+trait OptionBuilder extends StObject {
+  
   def setLabel(label: String): OptionBuilder
+  
   def setValue(value: String): OptionBuilder
 }
-
 object OptionBuilder {
-  @scala.inline
-  def apply(setLabel: String => CallbackTo[OptionBuilder], setValue: String => CallbackTo[OptionBuilder]): OptionBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
-    __obj.updateDynamic("setValue")(js.Any.fromFunction1((t0: java.lang.String) => setValue(t0).runNow()))
+  
+  inline def apply(setLabel: String => OptionBuilder, setValue: String => OptionBuilder): OptionBuilder = {
+    val __obj = js.Dynamic.literal(setLabel = js.Any.fromFunction1(setLabel), setValue = js.Any.fromFunction1(setValue))
     __obj.asInstanceOf[OptionBuilder]
   }
+  
+  extension [Self <: OptionBuilder](x: Self) {
+    
+    inline def setSetLabel(value: String => OptionBuilder): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    
+    inline def setSetValue(value: String => OptionBuilder): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+  }
 }
-

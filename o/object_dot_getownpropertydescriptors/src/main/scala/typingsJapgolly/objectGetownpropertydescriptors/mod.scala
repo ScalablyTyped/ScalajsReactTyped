@@ -1,36 +1,46 @@
 package typingsJapgolly.objectGetownpropertydescriptors
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.^
 import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("object.getownpropertydescriptors", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Returns an object containing all own property descriptors of an object
     * @param o Object that contains the properties and methods. This can be an object that you created or an existing Document Object Model (DOM) object.
     */
-  def apply[T](o: T): ^  with T with StringDictionary[js.PropertyDescriptor] = js.native
-  def getPolyfill(): ReturnType[
+  inline def apply[T](o: T): (/* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.TypedPropertyDescriptor<T[P]>} */ js.Any) & StringDictionary[js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.TypedPropertyDescriptor<T[P]>} */ js.Any) & StringDictionary[js.PropertyDescriptor]]
+  
+  @JSImport("object.getownpropertydescriptors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getPolyfill(): ReturnType[
     js.Function0[
       /* import warning: importer.ImportType#apply Failed type conversion: typeof getOwnPropertyDescriptors */ js.Any
     ]
-  ] = js.native
-  def shim(): ReturnType[
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolyfill")().asInstanceOf[ReturnType[
+    js.Function0[
+      /* import warning: importer.ImportType#apply Failed type conversion: typeof getOwnPropertyDescriptors */ js.Any
+    ]
+  ]]
+  
+  inline def implementation[T](o: T): (/* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.TypedPropertyDescriptor<T[P]>} */ js.Any) & StringDictionary[js.PropertyDescriptor] = ^.asInstanceOf[js.Dynamic].applyDynamic("implementation")(o.asInstanceOf[js.Any]).asInstanceOf[(/* import warning: importer.ImportType#apply Failed type conversion: {-readonly [ P in keyof T ]: std.TypedPropertyDescriptor<T[P]>} */ js.Any) & StringDictionary[js.PropertyDescriptor]]
+  
+  inline def shim(): ReturnType[
     js.Function0[
       ReturnType[
         /* import warning: importer.ImportType#apply Failed type conversion: typeof getPolyfill */ js.Any
       ]
     ]
-  ] = js.native
-  @js.native
-  object implementation extends js.Object {
-    def apply[T](o: T): typingsJapgolly.objectGetownpropertydescriptors.objectGetownpropertydescriptorsStrings.implementation with T with StringDictionary[js.PropertyDescriptor] = js.native
-  }
-  
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("shim")().asInstanceOf[ReturnType[
+    js.Function0[
+      ReturnType[
+        /* import warning: importer.ImportType#apply Failed type conversion: typeof getPolyfill */ js.Any
+      ]
+    ]
+  ]]
 }
-

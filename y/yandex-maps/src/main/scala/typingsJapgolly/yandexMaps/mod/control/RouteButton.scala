@@ -5,20 +5,25 @@ import typingsJapgolly.yandexMaps.mod.IControlParent
 import typingsJapgolly.yandexMaps.mod.IEventManager
 import typingsJapgolly.yandexMaps.mod.IOptionManager
 import typingsJapgolly.yandexMaps.mod.IRoutePanel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.yandexMaps.mod.IEventEmitter because Already inherited
 - typingsJapgolly.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "control.RouteButton")
 @js.native
-class RouteButton () extends IChild[IControlParent] {
+open class RouteButton ()
+  extends StObject
+     with IChild[IControlParent] {
   def this(parameters: IRouteButtonParameters) = this()
+  
   /* CompleteClass */
-  override var events: IEventManager = js.native
+  var events: IEventManager[js.Object] = js.native
+  
   var options: IOptionManager = js.native
+  
   var routePanel: IRoutePanel = js.native
+  
   def setParent(parent: IControlParent): this.type = js.native
 }
-

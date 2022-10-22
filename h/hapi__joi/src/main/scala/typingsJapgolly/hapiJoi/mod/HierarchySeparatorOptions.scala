@@ -1,11 +1,12 @@
 package typingsJapgolly.hapiJoi.mod
 
 import typingsJapgolly.hapiJoi.hapiJoiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HierarchySeparatorOptions extends js.Object {
+trait HierarchySeparatorOptions extends StObject {
+  
   /**
     * overrides the default `.` hierarchy separator. Set to false to treat the key as a literal value.
     *
@@ -13,13 +14,17 @@ trait HierarchySeparatorOptions extends js.Object {
     */
   var separator: js.UndefOr[String | `false`] = js.undefined
 }
-
 object HierarchySeparatorOptions {
-  @scala.inline
-  def apply(separator: String | `false` = null): HierarchySeparatorOptions = {
+  
+  inline def apply(): HierarchySeparatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchySeparatorOptions]
   }
+  
+  extension [Self <: HierarchySeparatorOptions](x: Self) {
+    
+    inline def setSeparator(value: String | `false`): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+  }
 }
-

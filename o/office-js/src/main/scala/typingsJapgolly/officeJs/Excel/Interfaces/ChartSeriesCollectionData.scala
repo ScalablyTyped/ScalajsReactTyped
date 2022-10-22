@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartSeriesCollection.toJSON()`. */
-trait ChartSeriesCollectionData extends js.Object {
+trait ChartSeriesCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[ChartSeriesData]] = js.undefined
 }
-
 object ChartSeriesCollectionData {
-  @scala.inline
-  def apply(items: js.Array[ChartSeriesData] = null): ChartSeriesCollectionData = {
+  
+  inline def apply(): ChartSeriesCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesCollectionData]
   }
+  
+  extension [Self <: ChartSeriesCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[ChartSeriesData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: ChartSeriesData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

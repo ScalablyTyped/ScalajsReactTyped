@@ -1,16 +1,21 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.FirstWeekContainsDateLocaleWeekStartsOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/startOfWeekYear", JSImport.Namespace)
-@js.native
-object startOfWeekYearMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn1[Date | Double, Date]]
+object startOfWeekYearMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: js.Date, options: FirstWeekContainsDateLocaleWeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    inline def apply(date: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(date: Double, options: FirstWeekContainsDateLocaleWeekStartsOn): js.Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/startOfWeekYear", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

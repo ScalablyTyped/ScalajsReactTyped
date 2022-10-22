@@ -1,14 +1,48 @@
 package typingsJapgolly.gulpCsso
 
 import typingsJapgolly.node.NodeJS.ReadWriteStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gulp-csso", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): ReadWriteStream = js.native
-  def apply(structureMinimization: Boolean): ReadWriteStream = js.native
+object mod {
+  
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: Boolean): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
+  @JSImport("gulp-csso", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  trait Options extends StObject {
+    
+    var debug: js.UndefOr[Boolean] = js.undefined
+    
+    var restructure: js.UndefOr[Boolean] = js.undefined
+    
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
+  }
+  object Options {
+    
+    inline def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+    
+    extension [Self <: Options](x: Self) {
+      
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      
+      inline def setRestructure(value: Boolean): Self = StObject.set(x, "restructure", value.asInstanceOf[js.Any])
+      
+      inline def setRestructureUndefined: Self = StObject.set(x, "restructure", js.undefined)
+      
+      inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+      
+      inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+    }
+  }
 }
-

@@ -1,41 +1,39 @@
 package typingsJapgolly.thrift.mod.Thrift
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MessageType extends js.Object
-
+sealed trait MessageType extends StObject
 @JSImport("thrift", "Thrift.MessageType")
 @js.native
-object MessageType extends js.Object {
-  @js.native
-  sealed trait CALL extends MessageType
-  
-  @js.native
-  sealed trait EXCEPTION extends MessageType
-  
-  @js.native
-  sealed trait ONEWAY extends MessageType
-  
-  @js.native
-  sealed trait REPLY extends MessageType
+object MessageType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MessageType with Double] = js.native
-  /* 1 */ @js.native
-  object CALL extends TopLevel[CALL with Double]
+  def apply(value: Double): js.UndefOr[MessageType & Double] = js.native
   
-  /* 3 */ @js.native
-  object EXCEPTION extends TopLevel[EXCEPTION with Double]
+  @js.native
+  sealed trait CALL
+    extends StObject
+       with MessageType
+  /* 1 */ val CALL: typingsJapgolly.thrift.mod.Thrift.MessageType.CALL & Double = js.native
   
-  /* 4 */ @js.native
-  object ONEWAY extends TopLevel[ONEWAY with Double]
+  @js.native
+  sealed trait EXCEPTION
+    extends StObject
+       with MessageType
+  /* 3 */ val EXCEPTION: typingsJapgolly.thrift.mod.Thrift.MessageType.EXCEPTION & Double = js.native
   
-  /* 2 */ @js.native
-  object REPLY extends TopLevel[REPLY with Double]
+  @js.native
+  sealed trait ONEWAY
+    extends StObject
+       with MessageType
+  /* 4 */ val ONEWAY: typingsJapgolly.thrift.mod.Thrift.MessageType.ONEWAY & Double = js.native
   
+  @js.native
+  sealed trait REPLY
+    extends StObject
+       with MessageType
+  /* 2 */ val REPLY: typingsJapgolly.thrift.mod.Thrift.MessageType.REPLY & Double = js.native
 }
-

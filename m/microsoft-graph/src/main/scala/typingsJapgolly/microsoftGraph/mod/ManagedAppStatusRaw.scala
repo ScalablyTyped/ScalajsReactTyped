@@ -1,23 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedAppStatusRaw extends ManagedAppStatus {
+trait ManagedAppStatusRaw
+  extends StObject
+     with ManagedAppStatus {
+  
   // Status report content.
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
 }
-
 object ManagedAppStatusRaw {
-  @scala.inline
-  def apply(content: js.Any = null, displayName: String = null, id: String = null, version: String = null): ManagedAppStatusRaw = {
+  
+  inline def apply(): ManagedAppStatusRaw = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppStatusRaw]
   }
+  
+  extension [Self <: ManagedAppStatusRaw](x: Self) {
+    
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentNull: Self = StObject.set(x, "content", null)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+  }
 }
-

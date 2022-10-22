@@ -2,9 +2,9 @@ package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -24,42 +24,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.compromisedPassword
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp
 */
-trait DeviceManagementExchangeAccessStateReason extends js.Object
-
+trait DeviceManagementExchangeAccessStateReason extends StObject
 object DeviceManagementExchangeAccessStateReason {
-  @scala.inline
-  def azureADBlockDueToAccessPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy = this.cast("azureADBlockDueToAccessPolicy")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def compliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant = this.cast("compliant")
-  @scala.inline
-  def compromisedPassword: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compromisedPassword = this.cast("compromisedPassword")
-  @scala.inline
-  def deviceNotKnownWithManagedApp: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp = this.cast("deviceNotKnownWithManagedApp")
-  @scala.inline
-  def exchangeDeviceRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule = this.cast("exchangeDeviceRule")
-  @scala.inline
-  def exchangeGlobalRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule = this.cast("exchangeGlobalRule")
-  @scala.inline
-  def exchangeIndividualRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule = this.cast("exchangeIndividualRule")
-  @scala.inline
-  def exchangeMailboxPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy = this.cast("exchangeMailboxPolicy")
-  @scala.inline
-  def exchangeUpgrade: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeUpgrade = this.cast("exchangeUpgrade")
-  @scala.inline
-  def mfaRequired: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mfaRequired = this.cast("mfaRequired")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def notCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notCompliant = this.cast("notCompliant")
-  @scala.inline
-  def notEnrolled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnrolled = this.cast("notEnrolled")
-  @scala.inline
-  def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownLocation: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownLocation = this.cast("unknownLocation")
+  
+  inline def azureADBlockDueToAccessPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy = "azureADBlockDueToAccessPolicy".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureADBlockDueToAccessPolicy]
+  
+  inline def compliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant = "compliant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.compliant]
+  
+  inline def compromisedPassword: typingsJapgolly.microsoftGraph.microsoftGraphStrings.compromisedPassword = "compromisedPassword".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.compromisedPassword]
+  
+  inline def deviceNotKnownWithManagedApp: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp = "deviceNotKnownWithManagedApp".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deviceNotKnownWithManagedApp]
+  
+  inline def exchangeDeviceRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule = "exchangeDeviceRule".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeDeviceRule]
+  
+  inline def exchangeGlobalRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule = "exchangeGlobalRule".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeGlobalRule]
+  
+  inline def exchangeIndividualRule: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule = "exchangeIndividualRule".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeIndividualRule]
+  
+  inline def exchangeMailboxPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy = "exchangeMailboxPolicy".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeMailboxPolicy]
+  
+  inline def exchangeUpgrade: typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeUpgrade = "exchangeUpgrade".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.exchangeUpgrade]
+  
+  inline def mfaRequired: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mfaRequired = "mfaRequired".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mfaRequired]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def notCompliant: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notCompliant = "notCompliant".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notCompliant]
+  
+  inline def notEnrolled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnrolled = "notEnrolled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnrolled]
+  
+  inline def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.other]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  
+  inline def unknownLocation: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownLocation = "unknownLocation".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownLocation]
 }
-

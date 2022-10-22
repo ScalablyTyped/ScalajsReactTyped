@@ -1,42 +1,72 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxPolarChartSeriesTypes extends js.Object {
-  /** An object that defines configuration options for polar chart series. */
+trait dxPolarChartSeriesTypes extends StObject {
+  
+  /**
+    * An object that defines configuration properties for polar chart series.
+    */
   var CommonPolarChartSeries: js.UndefOr[dxPolarChartSeriesTypesCommonPolarChartSeries] = js.undefined
-  /** An object defining a series of the area type. */
+  
+  /**
+    * An object defining a series of the area type.
+    */
   var areapolarseries: js.UndefOr[dxPolarChartSeriesTypesAreapolarseries] = js.undefined
-  /** An object defining a series of the bar type. */
+  
+  /**
+    * An object defining a series of the bar type.
+    */
   var barpolarseries: js.UndefOr[dxPolarChartSeriesTypesBarpolarseries] = js.undefined
-  /** An object defining a series of the line type. */
+  
+  /**
+    * An object defining a series of the line type.
+    */
   var linepolarseries: js.UndefOr[dxPolarChartSeriesTypesLinepolarseries] = js.undefined
-  /** An object defining a series of the scatter type. */
-  var scatterpolarseries: js.UndefOr[js.Any] = js.undefined
-  /** An object defining a series of the stackedBar type. */
+  
+  /**
+    * An object defining a series of the scatter type.
+    */
+  var scatterpolarseries: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * An object defining a series of the stackedBar type.
+    */
   var stackedbarpolarseries: js.UndefOr[dxPolarChartSeriesTypesStackedbarpolarseries] = js.undefined
 }
-
 object dxPolarChartSeriesTypes {
-  @scala.inline
-  def apply(
-    CommonPolarChartSeries: dxPolarChartSeriesTypesCommonPolarChartSeries = null,
-    areapolarseries: dxPolarChartSeriesTypesAreapolarseries = null,
-    barpolarseries: dxPolarChartSeriesTypesBarpolarseries = null,
-    linepolarseries: dxPolarChartSeriesTypesLinepolarseries = null,
-    scatterpolarseries: js.Any = null,
-    stackedbarpolarseries: dxPolarChartSeriesTypesStackedbarpolarseries = null
-  ): dxPolarChartSeriesTypes = {
+  
+  inline def apply(): dxPolarChartSeriesTypes = {
     val __obj = js.Dynamic.literal()
-    if (CommonPolarChartSeries != null) __obj.updateDynamic("CommonPolarChartSeries")(CommonPolarChartSeries.asInstanceOf[js.Any])
-    if (areapolarseries != null) __obj.updateDynamic("areapolarseries")(areapolarseries.asInstanceOf[js.Any])
-    if (barpolarseries != null) __obj.updateDynamic("barpolarseries")(barpolarseries.asInstanceOf[js.Any])
-    if (linepolarseries != null) __obj.updateDynamic("linepolarseries")(linepolarseries.asInstanceOf[js.Any])
-    if (scatterpolarseries != null) __obj.updateDynamic("scatterpolarseries")(scatterpolarseries.asInstanceOf[js.Any])
-    if (stackedbarpolarseries != null) __obj.updateDynamic("stackedbarpolarseries")(stackedbarpolarseries.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxPolarChartSeriesTypes]
   }
+  
+  extension [Self <: dxPolarChartSeriesTypes](x: Self) {
+    
+    inline def setAreapolarseries(value: dxPolarChartSeriesTypesAreapolarseries): Self = StObject.set(x, "areapolarseries", value.asInstanceOf[js.Any])
+    
+    inline def setAreapolarseriesUndefined: Self = StObject.set(x, "areapolarseries", js.undefined)
+    
+    inline def setBarpolarseries(value: dxPolarChartSeriesTypesBarpolarseries): Self = StObject.set(x, "barpolarseries", value.asInstanceOf[js.Any])
+    
+    inline def setBarpolarseriesUndefined: Self = StObject.set(x, "barpolarseries", js.undefined)
+    
+    inline def setCommonPolarChartSeries(value: dxPolarChartSeriesTypesCommonPolarChartSeries): Self = StObject.set(x, "CommonPolarChartSeries", value.asInstanceOf[js.Any])
+    
+    inline def setCommonPolarChartSeriesUndefined: Self = StObject.set(x, "CommonPolarChartSeries", js.undefined)
+    
+    inline def setLinepolarseries(value: dxPolarChartSeriesTypesLinepolarseries): Self = StObject.set(x, "linepolarseries", value.asInstanceOf[js.Any])
+    
+    inline def setLinepolarseriesUndefined: Self = StObject.set(x, "linepolarseries", js.undefined)
+    
+    inline def setScatterpolarseries(value: Any): Self = StObject.set(x, "scatterpolarseries", value.asInstanceOf[js.Any])
+    
+    inline def setScatterpolarseriesUndefined: Self = StObject.set(x, "scatterpolarseries", js.undefined)
+    
+    inline def setStackedbarpolarseries(value: dxPolarChartSeriesTypesStackedbarpolarseries): Self = StObject.set(x, "stackedbarpolarseries", value.asInstanceOf[js.Any])
+    
+    inline def setStackedbarpolarseriesUndefined: Self = StObject.set(x, "stackedbarpolarseries", js.undefined)
+  }
 }
-

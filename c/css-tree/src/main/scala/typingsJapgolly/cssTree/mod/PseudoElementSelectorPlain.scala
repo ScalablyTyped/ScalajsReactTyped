@@ -1,31 +1,39 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PseudoElementSelectorPlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
+  
   var children: js.Array[CssNodePlain] | Null
+  
   var name: String
+  
   @JSName("type")
   var type_PseudoElementSelectorPlain: typingsJapgolly.cssTree.cssTreeStrings.PseudoElementSelector
 }
-
 object PseudoElementSelectorPlain {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.PseudoElementSelector,
-    children: js.Array[CssNodePlain] = null,
-    loc: CssLocation = null
-  ): PseudoElementSelectorPlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+  
+  inline def apply(name: String): PseudoElementSelectorPlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], children = null)
+    __obj.updateDynamic("type")("PseudoElementSelector")
     __obj.asInstanceOf[PseudoElementSelectorPlain]
   }
+  
+  extension [Self <: PseudoElementSelectorPlain](x: Self) {
+    
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.PseudoElementSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

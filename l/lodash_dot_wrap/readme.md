@@ -10,14 +10,15 @@ The lodash method `_.wrap` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.wrap |
 | Keywords           | lodash-modularized, wrap |
-| # releases         | 0 |
-| # dependents       | 20 |
-| # downloads        | 1000063 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 48693.333333333336 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
 - [Bugs](https://github.com/lodash/lodash/issues)
+- [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.wrap)
     
 

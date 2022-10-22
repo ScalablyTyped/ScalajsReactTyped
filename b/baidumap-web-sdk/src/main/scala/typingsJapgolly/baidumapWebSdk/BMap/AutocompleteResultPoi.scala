@@ -1,22 +1,27 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AutocompleteResultPoi extends js.Object {
+trait AutocompleteResultPoi extends StObject {
+  
   var City: String
+  
   var business: String
-  			// wtf
+  
+  // wtf
   var district: String
+  
   var province: String
+  
   var street: String
+  
   var streetNumber: String
 }
-
 object AutocompleteResultPoi {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     City: String,
     business: String,
     district: String,
@@ -25,8 +30,21 @@ object AutocompleteResultPoi {
     streetNumber: String
   ): AutocompleteResultPoi = {
     val __obj = js.Dynamic.literal(City = City.asInstanceOf[js.Any], business = business.asInstanceOf[js.Any], district = district.asInstanceOf[js.Any], province = province.asInstanceOf[js.Any], street = street.asInstanceOf[js.Any], streetNumber = streetNumber.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[AutocompleteResultPoi]
   }
+  
+  extension [Self <: AutocompleteResultPoi](x: Self) {
+    
+    inline def setBusiness(value: String): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
+    
+    inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
+    
+    inline def setDistrict(value: String): Self = StObject.set(x, "district", value.asInstanceOf[js.Any])
+    
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    
+    inline def setStreetNumber(value: String): Self = StObject.set(x, "streetNumber", value.asInstanceOf[js.Any])
+  }
 }
-

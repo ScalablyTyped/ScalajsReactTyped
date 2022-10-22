@@ -1,54 +1,85 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WorkbookNamedItem extends Entity {
+trait WorkbookNamedItem
+  extends StObject
+     with Entity {
+  
   // Represents the comment associated with this name.
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The name of the object. Read-only.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Indicates whether the name is scoped to the workbook or to a specific worksheet. Read-only.
   var scope: js.UndefOr[String] = js.undefined
+  
   /**
     * Indicates what type of reference is associated with the name. The possible values are: String, Integer, Double,
     * Boolean, Range. Read-only.
     */
-  var `type`: js.UndefOr[String] = js.undefined
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Represents the formula that the name is defined to refer to. E.g. =Sheet14!$B$2:$H$12, =4.75, etc. Read-only.
-  var value: js.UndefOr[js.Any] = js.undefined
+  var value: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // Specifies whether the object is visible or not.
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Returns the worksheet on which the named item is scoped to. Available only if the item is scoped to the worksheet.
     * Read-only.
     */
-  var worksheet: js.UndefOr[WorkbookWorksheet] = js.undefined
+  var worksheet: js.UndefOr[NullableOption[WorkbookWorksheet]] = js.undefined
 }
-
 object WorkbookNamedItem {
-  @scala.inline
-  def apply(
-    comment: String = null,
-    id: String = null,
-    name: String = null,
-    scope: String = null,
-    `type`: String = null,
-    value: js.Any = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    worksheet: WorkbookWorksheet = null
-  ): WorkbookNamedItem = {
+  
+  inline def apply(): WorkbookNamedItem = {
     val __obj = js.Dynamic.literal()
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkbookNamedItem]
   }
+  
+  extension [Self <: WorkbookNamedItem](x: Self) {
+    
+    inline def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentNull: Self = StObject.set(x, "comment", null)
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValue(value: NullableOption[Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWorksheet(value: NullableOption[WorkbookWorksheet]): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetNull: Self = StObject.set(x, "worksheet", null)
+    
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+  }
 }
-

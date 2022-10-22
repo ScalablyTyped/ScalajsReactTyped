@@ -1,51 +1,89 @@
 package typingsJapgolly.opentypeJs.mod
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GlyphOptions extends js.Object {
+trait GlyphOptions extends StObject {
+  
   var advanceWidth: js.UndefOr[Double] = js.undefined
-  var font: js.UndefOr[Font] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
+  
+  var leftSideBearing: js.UndefOr[Double] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
-  var path: js.UndefOr[Path] = js.undefined
+  
+  var path: js.UndefOr[Path | js.Function0[Path]] = js.undefined
+  
   var unicode: js.UndefOr[Double] = js.undefined
+  
   var unicodes: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var xMax: js.UndefOr[Double] = js.undefined
+  
   var xMin: js.UndefOr[Double] = js.undefined
+  
   var yMax: js.UndefOr[Double] = js.undefined
+  
   var yMin: js.UndefOr[Double] = js.undefined
 }
-
 object GlyphOptions {
-  @scala.inline
-  def apply(
-    advanceWidth: Int | Double = null,
-    font: Font = null,
-    index: Int | Double = null,
-    name: String = null,
-    path: Path = null,
-    unicode: Int | Double = null,
-    unicodes: js.Array[Double] = null,
-    xMax: Int | Double = null,
-    xMin: Int | Double = null,
-    yMax: Int | Double = null,
-    yMin: Int | Double = null
-  ): GlyphOptions = {
+  
+  inline def apply(): GlyphOptions = {
     val __obj = js.Dynamic.literal()
-    if (advanceWidth != null) __obj.updateDynamic("advanceWidth")(advanceWidth.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (unicode != null) __obj.updateDynamic("unicode")(unicode.asInstanceOf[js.Any])
-    if (unicodes != null) __obj.updateDynamic("unicodes")(unicodes.asInstanceOf[js.Any])
-    if (xMax != null) __obj.updateDynamic("xMax")(xMax.asInstanceOf[js.Any])
-    if (xMin != null) __obj.updateDynamic("xMin")(xMin.asInstanceOf[js.Any])
-    if (yMax != null) __obj.updateDynamic("yMax")(yMax.asInstanceOf[js.Any])
-    if (yMin != null) __obj.updateDynamic("yMin")(yMin.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlyphOptions]
   }
+  
+  extension [Self <: GlyphOptions](x: Self) {
+    
+    inline def setAdvanceWidth(value: Double): Self = StObject.set(x, "advanceWidth", value.asInstanceOf[js.Any])
+    
+    inline def setAdvanceWidthUndefined: Self = StObject.set(x, "advanceWidth", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setLeftSideBearing(value: Double): Self = StObject.set(x, "leftSideBearing", value.asInstanceOf[js.Any])
+    
+    inline def setLeftSideBearingUndefined: Self = StObject.set(x, "leftSideBearing", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPath(value: Path | js.Function0[Path]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathCallbackTo(value: CallbackTo[Path]): Self = StObject.set(x, "path", value.toJsFn)
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setUnicode(value: Double): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodeUndefined: Self = StObject.set(x, "unicode", js.undefined)
+    
+    inline def setUnicodes(value: js.Array[Double]): Self = StObject.set(x, "unicodes", value.asInstanceOf[js.Any])
+    
+    inline def setUnicodesUndefined: Self = StObject.set(x, "unicodes", js.undefined)
+    
+    inline def setUnicodesVarargs(value: Double*): Self = StObject.set(x, "unicodes", js.Array(value*))
+    
+    inline def setXMax(value: Double): Self = StObject.set(x, "xMax", value.asInstanceOf[js.Any])
+    
+    inline def setXMaxUndefined: Self = StObject.set(x, "xMax", js.undefined)
+    
+    inline def setXMin(value: Double): Self = StObject.set(x, "xMin", value.asInstanceOf[js.Any])
+    
+    inline def setXMinUndefined: Self = StObject.set(x, "xMin", js.undefined)
+    
+    inline def setYMax(value: Double): Self = StObject.set(x, "yMax", value.asInstanceOf[js.Any])
+    
+    inline def setYMaxUndefined: Self = StObject.set(x, "yMax", js.undefined)
+    
+    inline def setYMin(value: Double): Self = StObject.set(x, "yMin", value.asInstanceOf[js.Any])
+    
+    inline def setYMinUndefined: Self = StObject.set(x, "yMin", js.undefined)
+  }
 }
-

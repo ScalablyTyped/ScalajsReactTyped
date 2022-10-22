@@ -10,10 +10,10 @@ OpenAPI(aka Swagger) API docs generator for koa-joi-router.
 | ------------------ | :-------------: |
 | Full name          | koa-joi-router-docs |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 28997 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6799.0 |
+| # stars            | 70.0 |
 
 ## Links
 - [Homepage](https://github.com/o2team/koa-joi-router-docs#readme)

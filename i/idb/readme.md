@@ -1,7 +1,7 @@
 
 # Scala.js typings for idb
 
-Typings are for version 3.0.2
+Typings are for version 7.1.0
 
 ## Library description:
 A small wrapper that makes IndexedDB usable
@@ -10,10 +10,10 @@ A small wrapper that makes IndexedDB usable
 | ------------------ | :-------------: |
 | Full name          | idb |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 68 |
-| # downloads        | 8550770 |
-| # stars            | 35 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 1.5581091333333334E7 |
+| # stars            | 4795.0 |
 
 ## Links
 - [Homepage](https://github.com/jakearchibald/idb#readme)

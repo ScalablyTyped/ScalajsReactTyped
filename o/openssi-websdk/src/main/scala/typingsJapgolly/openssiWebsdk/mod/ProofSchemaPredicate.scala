@@ -1,22 +1,36 @@
 package typingsJapgolly.openssiWebsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProofSchemaPredicate extends js.Object {
+trait ProofSchemaPredicate extends StObject {
+  
   var name: String
+  
   var p_type: String
+  
   var p_value: Double
+  
   var restrictions: js.Array[Restriction]
 }
-
 object ProofSchemaPredicate {
-  @scala.inline
-  def apply(name: String, p_type: String, p_value: Double, restrictions: js.Array[Restriction]): ProofSchemaPredicate = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], p_type = p_type.asInstanceOf[js.Any], p_value = p_value.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any])
   
+  inline def apply(name: String, p_type: String, p_value: Double, restrictions: js.Array[Restriction]): ProofSchemaPredicate = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], p_type = p_type.asInstanceOf[js.Any], p_value = p_value.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProofSchemaPredicate]
   }
+  
+  extension [Self <: ProofSchemaPredicate](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setP_type(value: String): Self = StObject.set(x, "p_type", value.asInstanceOf[js.Any])
+    
+    inline def setP_value(value: Double): Self = StObject.set(x, "p_value", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictions(value: js.Array[Restriction]): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    
+    inline def setRestrictionsVarargs(value: Restriction*): Self = StObject.set(x, "restrictions", js.Array(value*))
+  }
 }
-

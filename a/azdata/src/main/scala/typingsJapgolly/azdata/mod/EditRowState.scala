@@ -1,41 +1,39 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditRowState extends js.Object
-
+sealed trait EditRowState extends StObject
 @JSImport("azdata", "EditRowState")
 @js.native
-object EditRowState extends js.Object {
-  @js.native
-  sealed trait clean extends EditRowState
-  
-  @js.native
-  sealed trait dirtyDelete extends EditRowState
-  
-  @js.native
-  sealed trait dirtyInsert extends EditRowState
-  
-  @js.native
-  sealed trait dirtyUpdate extends EditRowState
+object EditRowState extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditRowState with Double] = js.native
-  /* 0 */ @js.native
-  object clean extends TopLevel[clean with Double]
+  def apply(value: Double): js.UndefOr[EditRowState & Double] = js.native
   
-  /* 2 */ @js.native
-  object dirtyDelete extends TopLevel[dirtyDelete with Double]
+  @js.native
+  sealed trait clean
+    extends StObject
+       with EditRowState
+  /* 0 */ val clean: typingsJapgolly.azdata.mod.EditRowState.clean & Double = js.native
   
-  /* 1 */ @js.native
-  object dirtyInsert extends TopLevel[dirtyInsert with Double]
+  @js.native
+  sealed trait dirtyDelete
+    extends StObject
+       with EditRowState
+  /* 2 */ val dirtyDelete: typingsJapgolly.azdata.mod.EditRowState.dirtyDelete & Double = js.native
   
-  /* 3 */ @js.native
-  object dirtyUpdate extends TopLevel[dirtyUpdate with Double]
+  @js.native
+  sealed trait dirtyInsert
+    extends StObject
+       with EditRowState
+  /* 1 */ val dirtyInsert: typingsJapgolly.azdata.mod.EditRowState.dirtyInsert & Double = js.native
   
+  @js.native
+  sealed trait dirtyUpdate
+    extends StObject
+       with EditRowState
+  /* 3 */ val dirtyUpdate: typingsJapgolly.azdata.mod.EditRowState.dirtyUpdate & Double = js.native
 }
-

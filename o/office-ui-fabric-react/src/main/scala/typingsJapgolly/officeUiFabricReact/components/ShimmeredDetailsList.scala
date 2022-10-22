@@ -1,72 +1,56 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IDetailsListStyleProps
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IDetailsListStyles
-import typingsJapgolly.officeUiFabricReact.detailsRowTypesMod.IDetailsRowProps
-import typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps
-import typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyleProps
-import typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListStyles
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IDetailsListStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IDetailsListStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.IDetailsRowProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListShimmeredDetailsListDottypesMod.IShimmeredDetailsListStyles
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ShimmeredDetailsList {
-  def apply(
-    ariaLabelForShimmer: String = null,
-    detailsListStyles: IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles] = null,
-    enableShimmer: js.UndefOr[Boolean] = js.undefined,
-    onRenderCustomPlaceholder: (/* rowProps */ IDetailsRowProps, /* index */ js.UndefOr[Double], /* defaultRender */ js.UndefOr[js.Function1[/* props */ IDetailsRowProps, Node]]) => CallbackTo[Node] = null,
-    removeFadingOverlay: js.UndefOr[Boolean] = js.undefined,
-    shimmerLines: Int | Double = null,
-    shimmerOverlayStyles: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles] = null,
-    styles: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IShimmeredDetailsListProps, 
-    MountedWithRawType[
-      IShimmeredDetailsListProps, 
-      js.Object, 
-      RawMounted[IShimmeredDetailsListProps, js.Object]
-    ]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (ariaLabelForShimmer != null) __obj.updateDynamic("ariaLabelForShimmer")(ariaLabelForShimmer.asInstanceOf[js.Any])
-    if (detailsListStyles != null) __obj.updateDynamic("detailsListStyles")(detailsListStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableShimmer)) __obj.updateDynamic("enableShimmer")(enableShimmer.asInstanceOf[js.Any])
-    if (onRenderCustomPlaceholder != null) __obj.updateDynamic("onRenderCustomPlaceholder")(js.Any.fromFunction3((t0: /* rowProps */ typingsJapgolly.officeUiFabricReact.detailsRowTypesMod.IDetailsRowProps, t1: /* index */ js.UndefOr[scala.Double], t2: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ typingsJapgolly.officeUiFabricReact.detailsRowTypesMod.IDetailsRowProps, 
-    japgolly.scalajs.react.raw.React.Node
-  ]]) => onRenderCustomPlaceholder(t0, t1, t2).runNow()))
-    if (!js.isUndefined(removeFadingOverlay)) __obj.updateDynamic("removeFadingOverlay")(removeFadingOverlay.asInstanceOf[js.Any])
-    if (shimmerLines != null) __obj.updateDynamic("shimmerLines")(shimmerLines.asInstanceOf[js.Any])
-    if (shimmerOverlayStyles != null) __obj.updateDynamic("shimmerOverlayStyles")(shimmerOverlayStyles.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.shimmeredDetailsListTypesMod.IShimmeredDetailsListProps])(children: _*)
-  }
   @JSImport("office-ui-fabric-react", "ShimmeredDetailsList")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def ariaLabelForShimmer(value: String): this.type = set("ariaLabelForShimmer", value.asInstanceOf[js.Any])
+    
+    inline def detailsListStyles(value: IStyleFunctionOrObject[IDetailsListStyleProps, IDetailsListStyles]): this.type = set("detailsListStyles", value.asInstanceOf[js.Any])
+    
+    inline def detailsListStylesFunction1(value: IDetailsListStyleProps => DeepPartial[IDetailsListStyles]): this.type = set("detailsListStyles", js.Any.fromFunction1(value))
+    
+    inline def enableShimmer(value: Boolean): this.type = set("enableShimmer", value.asInstanceOf[js.Any])
+    
+    inline def onRenderCustomPlaceholder(
+      value: (/* rowProps */ IDetailsRowProps, /* index */ js.UndefOr[Double], /* defaultRender */ js.UndefOr[js.Function1[/* props */ IDetailsRowProps, Node]]) => Node
+    ): this.type = set("onRenderCustomPlaceholder", js.Any.fromFunction3(value))
+    
+    inline def removeFadingOverlay(value: Boolean): this.type = set("removeFadingOverlay", value.asInstanceOf[js.Any])
+    
+    inline def shimmerLines(value: Double): this.type = set("shimmerLines", value.asInstanceOf[js.Any])
+    
+    inline def shimmerOverlayStyles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): this.type = set("shimmerOverlayStyles", value.asInstanceOf[js.Any])
+    
+    inline def shimmerOverlayStylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): this.type = set("shimmerOverlayStyles", js.Any.fromFunction1(value))
+    
+    inline def styles(value: IStyleFunctionOrObject[IShimmeredDetailsListStyleProps, IShimmeredDetailsListStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IShimmeredDetailsListStyleProps => DeepPartial[IShimmeredDetailsListStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+  }
+  
+  implicit def make(companion: ShimmeredDetailsList.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IShimmeredDetailsListProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

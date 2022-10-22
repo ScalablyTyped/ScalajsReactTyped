@@ -1,74 +1,66 @@
 package typingsJapgolly.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PlatformType extends js.Object
-
+sealed trait PlatformType extends StObject
 /**
-  * Specifies the OS or other platform on which the Office host application is running.
+  * Specifies the OS or other platform on which the Office application is running.
+  * 
+  * @remarks
+  * **Important**: In Outlook, this enum is available from Mailbox requirement set 1.5.
   */
 @JSGlobal("Office.PlatformType")
 @js.native
-object PlatformType extends js.Object {
+object PlatformType extends StObject {
+  
   /**
     * The platform is an Android device.
     */
   @js.native
-  sealed trait Android extends PlatformType
+  sealed trait Android
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is Mac.
     */
   @js.native
-  sealed trait Mac extends PlatformType
+  sealed trait Mac
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is Office on the web (in a browser).
     */
   @js.native
-  sealed trait OfficeOnline extends PlatformType
+  sealed trait OfficeOnline
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is PC (Windows).
     */
   @js.native
-  sealed trait PC extends PlatformType
+  sealed trait PC
+    extends StObject
+       with PlatformType
   
   /**
     * The platform is WinRT.
     */
   @js.native
-  sealed trait Universal extends PlatformType
+  sealed trait Universal
+    extends StObject
+       with PlatformType
   
   /**
-    * The platform an iOS device.
+    * The platform is an iOS device.
     */
   @js.native
-  sealed trait iOS extends PlatformType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PlatformType with Double] = js.native
-  /* 4 */ @js.native
-  object Android extends TopLevel[Android with Double]
-  
-  /* 2 */ @js.native
-  object Mac extends TopLevel[Mac with Double]
-  
-  /* 1 */ @js.native
-  object OfficeOnline extends TopLevel[OfficeOnline with Double]
-  
-  /* 0 */ @js.native
-  object PC extends TopLevel[PC with Double]
-  
-  /* 5 */ @js.native
-  object Universal extends TopLevel[Universal with Double]
-  
-  /* 3 */ @js.native
-  object iOS extends TopLevel[iOS with Double]
-  
+  sealed trait iOS
+    extends StObject
+       with PlatformType
 }
-

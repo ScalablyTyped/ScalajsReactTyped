@@ -1,47 +1,47 @@
 package typingsJapgolly.officeJs.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ErrorCodes extends js.Object
-
+sealed trait ErrorCodes extends StObject
 @JSGlobal("Word.ErrorCodes")
 @js.native
-object ErrorCodes extends js.Object {
-  @js.native
-  sealed trait accessDenied extends ErrorCodes
+object ErrorCodes extends StObject {
   
   @js.native
-  sealed trait generalException extends ErrorCodes
+  sealed trait accessDenied
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidArgument extends ErrorCodes
+  sealed trait generalException
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait itemNotFound extends ErrorCodes
+  sealed trait invalidArgument
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait notImplemented extends ErrorCodes
+  sealed trait itemNotFound
+    extends StObject
+       with ErrorCodes
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ErrorCodes with String] = js.native
-  /* "AccessDenied" */ @js.native
-  object accessDenied extends TopLevel[accessDenied with String]
+  @js.native
+  sealed trait notImplemented
+    extends StObject
+       with ErrorCodes
   
-  /* "GeneralException" */ @js.native
-  object generalException extends TopLevel[generalException with String]
+  @js.native
+  sealed trait searchDialogIsOpen
+    extends StObject
+       with ErrorCodes
   
-  /* "InvalidArgument" */ @js.native
-  object invalidArgument extends TopLevel[invalidArgument with String]
-  
-  /* "ItemNotFound" */ @js.native
-  object itemNotFound extends TopLevel[itemNotFound with String]
-  
-  /* "NotImplemented" */ @js.native
-  object notImplemented extends TopLevel[notImplemented with String]
-  
+  @js.native
+  sealed trait searchStringInvalidOrTooLong
+    extends StObject
+       with ErrorCodes
 }
-

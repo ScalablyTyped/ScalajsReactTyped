@@ -1,34 +1,28 @@
 package typingsJapgolly.webpackNodeExternals
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackNodeExternalsStrings {
-  @js.native
-  sealed trait amd extends js.Object
   
   @js.native
-  sealed trait commonjs extends js.Object
+  sealed trait amd extends StObject
+  inline def amd: amd = "amd".asInstanceOf[amd]
   
   @js.native
-  sealed trait `this` extends js.Object
+  sealed trait commonjs extends StObject
+  inline def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
   
   @js.native
-  sealed trait umd extends js.Object
+  sealed trait `this` extends StObject
+  inline def `this`: `this` = "this".asInstanceOf[`this`]
   
   @js.native
-  sealed trait `var` extends js.Object
+  sealed trait umd extends StObject
+  inline def umd: umd = "umd".asInstanceOf[umd]
   
-  @scala.inline
-  def amd: amd = "amd".asInstanceOf[amd]
-  @scala.inline
-  def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
-  @scala.inline
-  def `this`: `this` = "this".asInstanceOf[`this`]
-  @scala.inline
-  def umd: umd = "umd".asInstanceOf[umd]
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
+  @js.native
+  sealed trait `var` extends StObject
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
 }
-

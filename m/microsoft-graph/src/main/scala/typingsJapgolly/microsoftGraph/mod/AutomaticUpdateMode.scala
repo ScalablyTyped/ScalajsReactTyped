@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl
 */
-trait AutomaticUpdateMode extends js.Object
-
+trait AutomaticUpdateMode extends StObject
 object AutomaticUpdateMode {
-  @scala.inline
-  def autoInstallAndRebootAtMaintenanceTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime = this.cast("autoInstallAndRebootAtMaintenanceTime")
-  @scala.inline
-  def autoInstallAndRebootAtScheduledTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime = this.cast("autoInstallAndRebootAtScheduledTime")
-  @scala.inline
-  def autoInstallAndRebootWithoutEndUserControl: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl = this.cast("autoInstallAndRebootWithoutEndUserControl")
-  @scala.inline
-  def autoInstallAtMaintenanceTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime = this.cast("autoInstallAtMaintenanceTime")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def notifyDownload: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyDownload = this.cast("notifyDownload")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def autoInstallAndRebootAtMaintenanceTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime = "autoInstallAndRebootAtMaintenanceTime".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtMaintenanceTime]
+  
+  inline def autoInstallAndRebootAtScheduledTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime = "autoInstallAndRebootAtScheduledTime".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootAtScheduledTime]
+  
+  inline def autoInstallAndRebootWithoutEndUserControl: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl = "autoInstallAndRebootWithoutEndUserControl".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAndRebootWithoutEndUserControl]
+  
+  inline def autoInstallAtMaintenanceTime: typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime = "autoInstallAtMaintenanceTime".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.autoInstallAtMaintenanceTime]
+  
+  inline def notifyDownload: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyDownload = "notifyDownload".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notifyDownload]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

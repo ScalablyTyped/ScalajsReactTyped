@@ -1,21 +1,30 @@
 package typingsJapgolly.onsenui.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DialogOptions extends js.Object {
+trait DialogOptions extends StObject {
+  
   var animation: js.UndefOr[String] = js.undefined
+  
   var callback: js.UndefOr[js.Function] = js.undefined
 }
-
 object DialogOptions {
-  @scala.inline
-  def apply(animation: String = null, callback: js.Function = null): DialogOptions = {
+  
+  inline def apply(): DialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogOptions]
   }
+  
+  extension [Self <: DialogOptions](x: Self) {
+    
+    inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    
+    inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+  }
 }
-

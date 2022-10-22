@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationPreloadState extends js.Object {
+trait NavigationPreloadState extends StObject {
+  
+  /* standard dom */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var headerValue: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object NavigationPreloadState {
-  @scala.inline
-  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined, headerValue: java.lang.String = null): NavigationPreloadState = {
+  
+  inline def apply(): NavigationPreloadState = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (headerValue != null) __obj.updateDynamic("headerValue")(headerValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationPreloadState]
   }
+  
+  extension [Self <: NavigationPreloadState](x: Self) {
+    
+    inline def setEnabled(value: scala.Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setHeaderValue(value: java.lang.String): Self = StObject.set(x, "headerValue", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderValueUndefined: Self = StObject.set(x, "headerValue", js.undefined)
+  }
 }
-

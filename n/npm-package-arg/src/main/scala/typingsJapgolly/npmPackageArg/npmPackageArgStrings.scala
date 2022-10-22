@@ -1,49 +1,40 @@
 package typingsJapgolly.npmPackageArg
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object npmPackageArgStrings {
-  @js.native
-  sealed trait alias extends js.Object
   
   @js.native
-  sealed trait directory extends js.Object
+  sealed trait alias extends StObject
+  inline def alias: alias = "alias".asInstanceOf[alias]
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait directory extends StObject
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
-  sealed trait git extends js.Object
+  sealed trait file extends StObject
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait git extends StObject
+  inline def git: git = "git".asInstanceOf[git]
   
   @js.native
-  sealed trait remote extends js.Object
+  sealed trait range extends StObject
+  inline def range: range = "range".asInstanceOf[range]
   
   @js.native
-  sealed trait tag extends js.Object
+  sealed trait remote extends StObject
+  inline def remote: remote = "remote".asInstanceOf[remote]
   
   @js.native
-  sealed trait version extends js.Object
+  sealed trait tag extends StObject
+  inline def tag: tag = "tag".asInstanceOf[tag]
   
-  @scala.inline
-  def alias: alias = "alias".asInstanceOf[alias]
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
-  def git: git = "git".asInstanceOf[git]
-  @scala.inline
-  def range: range = "range".asInstanceOf[range]
-  @scala.inline
-  def remote: remote = "remote".asInstanceOf[remote]
-  @scala.inline
-  def tag: tag = "tag".asInstanceOf[tag]
-  @scala.inline
-  def version: version = "version".asInstanceOf[version]
+  @js.native
+  sealed trait version extends StObject
+  inline def version: version = "version".asInstanceOf[version]
 }
-

@@ -1,59 +1,47 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ViewType extends js.Object
-
+sealed trait ViewType extends StObject
 @JSGlobal("SP.ViewType")
 @js.native
-object ViewType extends js.Object {
-  @js.native
-  sealed trait calendar extends ViewType
+object ViewType extends StObject {
   
   @js.native
-  sealed trait chart extends ViewType
+  sealed trait calendar
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait gantt extends ViewType
+  sealed trait chart
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait grid extends ViewType
+  sealed trait gantt
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait html extends ViewType
+  sealed trait grid
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait none extends ViewType
+  sealed trait html
+    extends StObject
+       with ViewType
   
   @js.native
-  sealed trait recurrence extends ViewType
+  sealed trait none
+    extends StObject
+       with ViewType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ViewType with Double] = js.native
-  /* 3 */ @js.native
-  object calendar extends TopLevel[calendar with Double]
-  
-  /* 5 */ @js.native
-  object chart extends TopLevel[chart with Double]
-  
-  /* 6 */ @js.native
-  object gantt extends TopLevel[gantt with Double]
-  
-  /* 2 */ @js.native
-  object grid extends TopLevel[grid with Double]
-  
-  /* 1 */ @js.native
-  object html extends TopLevel[html with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 4 */ @js.native
-  object recurrence extends TopLevel[recurrence with Double]
-  
+  @js.native
+  sealed trait recurrence
+    extends StObject
+       with ViewType
 }
-

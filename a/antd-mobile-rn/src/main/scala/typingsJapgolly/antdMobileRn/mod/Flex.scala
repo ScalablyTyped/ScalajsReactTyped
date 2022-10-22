@@ -1,20 +1,28 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonAlign
-import typingsJapgolly.antdMobileRn.flexIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.Align
+import typingsJapgolly.antdMobileRn.libFlexIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Flex")
 @js.native
-class Flex () extends default
-
+open class Flex () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Flex")
-@js.native
-object Flex extends js.Object {
-  var Item: js.Any = js.native
-  var defaultProps: AnonAlign = js.native
+object Flex {
+  
+  @JSImport("antd-mobile-rn", "Flex")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Flex.Item")
+  @js.native
+  def Item: Any = js.native
+  inline def Item_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Flex.defaultProps")
+  @js.native
+  def defaultProps: Align = js.native
+  inline def defaultProps_=(x: Align): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

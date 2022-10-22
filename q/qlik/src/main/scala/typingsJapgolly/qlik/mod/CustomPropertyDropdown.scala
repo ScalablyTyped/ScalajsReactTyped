@@ -1,41 +1,55 @@
 package typingsJapgolly.qlik.mod
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.qlik.qlikStrings.dropdown
 import typingsJapgolly.qlik.qlikStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CustomPropertyDropdown
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
+  
   var component: dropdown
+  
   var defaultValue: js.UndefOr[String] = js.undefined
+  
   var options: js.UndefOr[CustomPropertyOptions] = js.undefined
+  
   @JSName("ref")
   var ref_CustomPropertyDropdown: String
+  
   @JSName("type")
   var type_CustomPropertyDropdown: string
 }
-
 object CustomPropertyDropdown {
-  @scala.inline
-  def apply(
-    component: dropdown,
-    ref: String,
-    `type`: string,
-    defaultValue: String = null,
-    label: String = null,
-    options: CustomPropertyOptions = null,
-    show: Boolean | ShowFunction = null
-  ): CustomPropertyDropdown = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
+  
+  inline def apply(ref: String): CustomPropertyDropdown = {
+    val __obj = js.Dynamic.literal(component = "dropdown", ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyDropdown]
   }
+  
+  extension [Self <: CustomPropertyDropdown](x: Self) {
+    
+    inline def setComponent(value: dropdown): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setOptions(value: CustomPropertyOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsCallbackTo(value: CallbackTo[js.Array[CustomPropertyOption]]): Self = StObject.set(x, "options", value.toJsFn)
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setOptionsVarargs(value: CustomPropertyOption*): Self = StObject.set(x, "options", js.Array(value*))
+    
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

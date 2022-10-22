@@ -1,30 +1,24 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextTrackMenuItemOptions extends MenuItemOptions {
+trait TextTrackMenuItemOptions
+  extends StObject
+     with MenuItemOptions {
+  
   var track: TextTrack
 }
-
 object TextTrackMenuItemOptions {
-  @scala.inline
-  def apply(
-    track: TextTrack,
-    children: js.Array[Child] = null,
-    label: String = null,
-    multiSelectable: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    selected: js.UndefOr[Boolean] = js.undefined
-  ): TextTrackMenuItemOptions = {
+  
+  inline def apply(track: TextTrack): TextTrackMenuItemOptions = {
     val __obj = js.Dynamic.literal(track = track.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiSelectable)) __obj.updateDynamic("multiSelectable")(multiSelectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextTrackMenuItemOptions]
   }
+  
+  extension [Self <: TextTrackMenuItemOptions](x: Self) {
+    
+    inline def setTrack(value: TextTrack): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+  }
 }
-

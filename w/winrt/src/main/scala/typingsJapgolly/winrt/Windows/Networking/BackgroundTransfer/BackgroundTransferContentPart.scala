@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Networking.BackgroundTransfer
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrt.Windows.Storage.IStorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferContentPart")
-@js.native
-class BackgroundTransferContentPart () extends IBackgroundTransferContentPart {
-  def this(name: String) = this()
-  def this(name: String, fileName: String) = this()
-  /* CompleteClass */
-  override def setFile(value: IStorageFile): Unit = js.native
-  /* CompleteClass */
-  override def setHeader(headerName: String, headerValue: String): Unit = js.native
-  /* CompleteClass */
-  override def setText(value: String): Unit = js.native
+trait BackgroundTransferContentPart
+  extends StObject
+     with IBackgroundTransferContentPart
+object BackgroundTransferContentPart {
+  
+  inline def apply(
+    setFile: IStorageFile => Callback,
+    setHeader: (String, String) => Callback,
+    setText: String => Callback
+  ): BackgroundTransferContentPart = {
+    val __obj = js.Dynamic.literal(setFile = js.Any.fromFunction1((t0: IStorageFile) => setFile(t0).runNow()), setHeader = js.Any.fromFunction2((t0: String, t1: String) => (setHeader(t0, t1)).runNow()), setText = js.Any.fromFunction1((t0: String) => setText(t0).runNow()))
+    __obj.asInstanceOf[BackgroundTransferContentPart]
+  }
 }
-

@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartAxisTickMark extends js.Object
-
+sealed trait ChartAxisTickMark extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartAxisTickMark")
 @js.native
-object ChartAxisTickMark extends js.Object {
+object ChartAxisTickMark extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait cross extends ChartAxisTickMark
+  sealed trait cross
+    extends StObject
+       with ChartAxisTickMark
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait inside extends ChartAxisTickMark
+  sealed trait inside
+    extends StObject
+       with ChartAxisTickMark
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait none extends ChartAxisTickMark
+  sealed trait none
+    extends StObject
+       with ChartAxisTickMark
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait outside extends ChartAxisTickMark
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartAxisTickMark with String] = js.native
-  /* "Cross" */ @js.native
-  object cross extends TopLevel[cross with String]
-  
-  /* "Inside" */ @js.native
-  object inside extends TopLevel[inside with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Outside" */ @js.native
-  object outside extends TopLevel[outside with String]
-  
+  sealed trait outside
+    extends StObject
+       with ChartAxisTickMark
 }
-

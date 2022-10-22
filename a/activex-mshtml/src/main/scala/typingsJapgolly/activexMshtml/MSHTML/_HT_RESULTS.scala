@@ -1,23 +1,19 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
 */
-trait _HT_RESULTS extends js.Object
-
+trait _HT_RESULTS extends StObject
 object _HT_RESULTS {
-  @scala.inline
-  def HT_RESULTS_Glyph: `1` = this.cast(1)
-  @scala.inline
-  def HT_RESULTS_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HT_RESULTS_Glyph: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HT_RESULTS_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

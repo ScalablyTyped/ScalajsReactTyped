@@ -1,8 +1,8 @@
 package typingsJapgolly.xrm.XrmEnum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Client States for {@link ClientContext.getClientState clientContext.getClientState()}.
@@ -12,14 +12,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.Online
   - typingsJapgolly.xrm.xrmStrings.Offline
 */
-trait ClientState extends js.Object
-
+trait ClientState extends StObject
 object ClientState {
-  @scala.inline
-  def Offline: typingsJapgolly.xrm.xrmStrings.Offline = this.cast("Offline")
-  @scala.inline
-  def Online: typingsJapgolly.xrm.xrmStrings.Online = this.cast("Online")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Offline: typingsJapgolly.xrm.xrmStrings.Offline = "Offline".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Offline]
+  
+  inline def Online: typingsJapgolly.xrm.xrmStrings.Online = "Online".asInstanceOf[typingsJapgolly.xrm.xrmStrings.Online]
 }
-

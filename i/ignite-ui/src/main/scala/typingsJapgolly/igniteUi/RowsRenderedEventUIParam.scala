@@ -1,28 +1,37 @@
 package typingsJapgolly.igniteUi
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowsRenderedEventUIParam extends js.Object {
+trait RowsRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the grid.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the grid.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets reference to the grid's table body.
-  	 */
+    * Gets reference to the grid's table body.
+    */
   var tbody: js.UndefOr[Element] = js.undefined
 }
-
 object RowsRenderedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, tbody: Element = null): RowsRenderedEventUIParam = {
+  
+  inline def apply(): RowsRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (tbody != null) __obj.updateDynamic("tbody")(tbody.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowsRenderedEventUIParam]
   }
+  
+  extension [Self <: RowsRenderedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setTbody(value: Element): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+    
+    inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
+  }
 }
-

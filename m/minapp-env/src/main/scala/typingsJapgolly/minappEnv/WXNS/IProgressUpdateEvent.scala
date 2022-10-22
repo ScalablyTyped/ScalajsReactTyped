@@ -1,21 +1,30 @@
 package typingsJapgolly.minappEnv.WXNS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProgressUpdateEvent extends js.Object {
+trait IProgressUpdateEvent extends StObject {
+  
   var progress: Double
+  
   var totalBytesExpectedToWrite: Double
+  
   var totalBytesWritten: Double
 }
-
 object IProgressUpdateEvent {
-  @scala.inline
-  def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): IProgressUpdateEvent = {
-    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
   
+  inline def apply(progress: Double, totalBytesExpectedToWrite: Double, totalBytesWritten: Double): IProgressUpdateEvent = {
+    val __obj = js.Dynamic.literal(progress = progress.asInstanceOf[js.Any], totalBytesExpectedToWrite = totalBytesExpectedToWrite.asInstanceOf[js.Any], totalBytesWritten = totalBytesWritten.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressUpdateEvent]
   }
+  
+  extension [Self <: IProgressUpdateEvent](x: Self) {
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setTotalBytesExpectedToWrite(value: Double): Self = StObject.set(x, "totalBytesExpectedToWrite", value.asInstanceOf[js.Any])
+    
+    inline def setTotalBytesWritten(value: Double): Self = StObject.set(x, "totalBytesWritten", value.asInstanceOf[js.Any])
+  }
 }
-

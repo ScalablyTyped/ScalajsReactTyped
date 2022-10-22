@@ -10,10 +10,10 @@ The lodash method `_.isNil` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.isnil |
 | Keywords           | lodash, lodash-modularized, stdlib, util, isnil |
-| # releases         | 0 |
-| # dependents       | 85 |
-| # downloads        | 4746368 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 5057998.666666667 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

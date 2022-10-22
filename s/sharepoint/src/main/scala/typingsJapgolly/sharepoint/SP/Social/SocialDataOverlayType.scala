@@ -1,30 +1,23 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialDataOverlayType extends js.Object
-
+sealed trait SocialDataOverlayType extends StObject
 /** Specifies whether the overlay is a link or one or more actors. */
 @JSGlobal("SP.Social.SocialDataOverlayType")
 @js.native
-object SocialDataOverlayType extends js.Object {
-  @js.native
-  sealed trait actors extends SocialDataOverlayType
+object SocialDataOverlayType extends StObject {
   
   @js.native
-  sealed trait link extends SocialDataOverlayType
+  sealed trait actors
+    extends StObject
+       with SocialDataOverlayType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialDataOverlayType with Double] = js.native
-  /* 1 */ @js.native
-  object actors extends TopLevel[actors with Double]
-  
-  /* 0 */ @js.native
-  object link extends TopLevel[link with Double]
-  
+  @js.native
+  sealed trait link
+    extends StObject
+       with SocialDataOverlayType
 }
-

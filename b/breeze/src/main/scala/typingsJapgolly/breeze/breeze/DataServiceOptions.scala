@@ -1,36 +1,54 @@
 package typingsJapgolly.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataServiceOptions extends js.Object {
+trait DataServiceOptions extends StObject {
+  
   var adapterName: js.UndefOr[String] = js.undefined
+  
   var hasServerMetadata: js.UndefOr[Boolean] = js.undefined
+  
   var jsonResultsAdapter: js.UndefOr[JsonResultsAdapter] = js.undefined
+  
   var serviceName: js.UndefOr[String] = js.undefined
+  
   var uriBuilderName: js.UndefOr[String] = js.undefined
+  
   var useJsonp: js.UndefOr[Boolean] = js.undefined
 }
-
 object DataServiceOptions {
-  @scala.inline
-  def apply(
-    adapterName: String = null,
-    hasServerMetadata: js.UndefOr[Boolean] = js.undefined,
-    jsonResultsAdapter: JsonResultsAdapter = null,
-    serviceName: String = null,
-    uriBuilderName: String = null,
-    useJsonp: js.UndefOr[Boolean] = js.undefined
-  ): DataServiceOptions = {
+  
+  inline def apply(): DataServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (adapterName != null) __obj.updateDynamic("adapterName")(adapterName.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasServerMetadata)) __obj.updateDynamic("hasServerMetadata")(hasServerMetadata.asInstanceOf[js.Any])
-    if (jsonResultsAdapter != null) __obj.updateDynamic("jsonResultsAdapter")(jsonResultsAdapter.asInstanceOf[js.Any])
-    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName.asInstanceOf[js.Any])
-    if (uriBuilderName != null) __obj.updateDynamic("uriBuilderName")(uriBuilderName.asInstanceOf[js.Any])
-    if (!js.isUndefined(useJsonp)) __obj.updateDynamic("useJsonp")(useJsonp.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataServiceOptions]
   }
+  
+  extension [Self <: DataServiceOptions](x: Self) {
+    
+    inline def setAdapterName(value: String): Self = StObject.set(x, "adapterName", value.asInstanceOf[js.Any])
+    
+    inline def setAdapterNameUndefined: Self = StObject.set(x, "adapterName", js.undefined)
+    
+    inline def setHasServerMetadata(value: Boolean): Self = StObject.set(x, "hasServerMetadata", value.asInstanceOf[js.Any])
+    
+    inline def setHasServerMetadataUndefined: Self = StObject.set(x, "hasServerMetadata", js.undefined)
+    
+    inline def setJsonResultsAdapter(value: JsonResultsAdapter): Self = StObject.set(x, "jsonResultsAdapter", value.asInstanceOf[js.Any])
+    
+    inline def setJsonResultsAdapterUndefined: Self = StObject.set(x, "jsonResultsAdapter", js.undefined)
+    
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    
+    inline def setUriBuilderName(value: String): Self = StObject.set(x, "uriBuilderName", value.asInstanceOf[js.Any])
+    
+    inline def setUriBuilderNameUndefined: Self = StObject.set(x, "uriBuilderName", js.undefined)
+    
+    inline def setUseJsonp(value: Boolean): Self = StObject.set(x, "useJsonp", value.asInstanceOf[js.Any])
+    
+    inline def setUseJsonpUndefined: Self = StObject.set(x, "useJsonp", js.undefined)
+  }
 }
-

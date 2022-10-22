@@ -1,20 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Recipient extends js.Object {
+trait Recipient extends StObject {
+  
   // The recipient's email address.
-  var emailAddress: js.UndefOr[EmailAddress] = js.undefined
+  var emailAddress: js.UndefOr[NullableOption[EmailAddress]] = js.undefined
 }
-
 object Recipient {
-  @scala.inline
-  def apply(emailAddress: EmailAddress = null): Recipient = {
+  
+  inline def apply(): Recipient = {
     val __obj = js.Dynamic.literal()
-    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recipient]
   }
+  
+  extension [Self <: Recipient](x: Self) {
+    
+    inline def setEmailAddress(value: NullableOption[EmailAddress]): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    
+    inline def setEmailAddressNull: Self = StObject.set(x, "emailAddress", null)
+    
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+  }
 }
-

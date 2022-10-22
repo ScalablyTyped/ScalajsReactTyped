@@ -1,59 +1,64 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.popoverIndexNativeMod.PopoverProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libPopoverIndexDotnativeMod.PopoverProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
-  def apply(
-    contextStyle: StyleProp[ViewStyle] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onSelect: (/* node */ js.Any, /* index */ js.UndefOr[Double]) => Callback = null,
-    overlay: VdomNode = null,
-    overlayStyle: StyleProp[ViewStyle] = null,
-    renderOverlayComponent: /* values */ js.Any => CallbackTo[Element] = null,
-    style: StyleProp[ViewStyle] = null,
-    triggerStyle: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PopoverProps, typingsJapgolly.antdMobileRn.mod.Popover, Unit, PopoverProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (contextStyle != null) __obj.updateDynamic("contextStyle")(contextStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction2((t0: /* node */ js.Any, t1: /* index */ js.UndefOr[scala.Double]) => onSelect(t0, t1).runNow()))
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.rawNode.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (renderOverlayComponent != null) __obj.updateDynamic("renderOverlayComponent")(js.Any.fromFunction1((t0: /* values */ js.Any) => renderOverlayComponent(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (triggerStyle != null) __obj.updateDynamic("triggerStyle")(triggerStyle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.popoverIndexNativeMod.PopoverProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.mod.Popover](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.popoverIndexNativeMod.PopoverProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn", "Popover")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.mod.Popover] {
+    
+    inline def contextStyle(value: StyleProp[ViewStyle]): this.type = set("contextStyle", value.asInstanceOf[js.Any])
+    
+    inline def contextStyleNull: this.type = set("contextStyle", null)
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onSelect(value: (/* node */ Any, /* index */ js.UndefOr[Double]) => Callback): this.type = set("onSelect", js.Any.fromFunction2((t0: /* node */ Any, t1: /* index */ js.UndefOr[Double]) => (value(t0, t1)).runNow()))
+    
+    inline def overlay(value: VdomNode): this.type = set("overlay", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def overlayNull: this.type = set("overlay", null)
+    
+    inline def overlayStyle(value: StyleProp[ViewStyle]): this.type = set("overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayStyleNull: this.type = set("overlayStyle", null)
+    
+    inline def overlayVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("overlay", js.Array(value*))
+    
+    inline def overlayVdomElement(value: VdomElement): this.type = set("overlay", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def renderOverlayComponent(value: /* values */ Any => typingsJapgolly.react.mod.global.JSX.Element): this.type = set("renderOverlayComponent", js.Any.fromFunction1(value))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def triggerStyle(value: StyleProp[ViewStyle]): this.type = set("triggerStyle", value.asInstanceOf[js.Any])
+    
+    inline def triggerStyleNull: this.type = set("triggerStyle", null)
+  }
+  
+  implicit def make(companion: Popover.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PopoverProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

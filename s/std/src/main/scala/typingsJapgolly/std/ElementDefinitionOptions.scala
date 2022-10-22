@@ -1,19 +1,25 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ElementDefinitionOptions extends js.Object {
+trait ElementDefinitionOptions extends StObject {
+  
+  /* standard dom */
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
 }
-
 object ElementDefinitionOptions {
-  @scala.inline
-  def apply(`extends`: java.lang.String = null): ElementDefinitionOptions = {
+  
+  inline def apply(): ElementDefinitionOptions = {
     val __obj = js.Dynamic.literal()
-    if (`extends` != null) __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionOptions]
   }
+  
+  extension [Self <: ElementDefinitionOptions](x: Self) {
+    
+    inline def setExtends(value: java.lang.String): Self = StObject.set(x, "extends", value.asInstanceOf[js.Any])
+    
+    inline def setExtendsUndefined: Self = StObject.set(x, "extends", js.undefined)
+  }
 }
-

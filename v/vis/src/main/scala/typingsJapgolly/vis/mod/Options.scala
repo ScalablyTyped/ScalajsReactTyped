@@ -1,64 +1,105 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var autoResize: js.UndefOr[Boolean] = js.undefined
+  
   var clickToUse: js.UndefOr[Boolean] = js.undefined
-  var configure: js.UndefOr[js.Any] = js.undefined
-   // http://visjs.org/docs/network/configure.html#
+  
+  var configure: js.UndefOr[NetworkConfigure] = js.undefined
+  
   var edges: js.UndefOr[EdgeOptions] = js.undefined
-  var groups: js.UndefOr[js.Any] = js.undefined
+  
+  var groups: js.UndefOr[Any] = js.undefined
+  
   var height: js.UndefOr[String] = js.undefined
-   // http://visjs.org/docs/network/layout.html
-  var interaction: js.UndefOr[js.Any] = js.undefined
-  var layout: js.UndefOr[js.Any] = js.undefined
+  
+  // http://visjs.org/docs/network/layout.html
+  var interaction: js.UndefOr[Any] = js.undefined
+  
+  var layout: js.UndefOr[Any] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
+  
   var locales: js.UndefOr[Locales] = js.undefined
-   // visjs.org/docs/network/interaction.html?keywords=edges
-  var manipulation: js.UndefOr[js.Any] = js.undefined
+  
+  // visjs.org/docs/network/interaction.html?keywords=edges
+  var manipulation: js.UndefOr[Any] = js.undefined
+  
   var nodes: js.UndefOr[NodeOptions] = js.undefined
-   // http://visjs.org/docs/network/manipulation.html#
-  var physics: js.UndefOr[js.Any] = js.undefined
+  
+  // http://visjs.org/docs/network/manipulation.html#
+  var physics: js.UndefOr[Any] = js.undefined
+  
   var width: js.UndefOr[String] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    clickToUse: js.UndefOr[Boolean] = js.undefined,
-    configure: js.Any = null,
-    edges: EdgeOptions = null,
-    groups: js.Any = null,
-    height: String = null,
-    interaction: js.Any = null,
-    layout: js.Any = null,
-    locale: String = null,
-    locales: Locales = null,
-    manipulation: js.Any = null,
-    nodes: NodeOptions = null,
-    physics: js.Any = null,
-    width: String = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.asInstanceOf[js.Any])
-    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
-    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
-    if (groups != null) __obj.updateDynamic("groups")(groups.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (interaction != null) __obj.updateDynamic("interaction")(interaction.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (manipulation != null) __obj.updateDynamic("manipulation")(manipulation.asInstanceOf[js.Any])
-    if (nodes != null) __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
-    if (physics != null) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+    
+    inline def setClickToUse(value: Boolean): Self = StObject.set(x, "clickToUse", value.asInstanceOf[js.Any])
+    
+    inline def setClickToUseUndefined: Self = StObject.set(x, "clickToUse", js.undefined)
+    
+    inline def setConfigure(value: NetworkConfigure): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+    
+    inline def setEdges(value: EdgeOptions): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    
+    inline def setGroups(value: Any): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setInteraction(value: Any): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    
+    inline def setInteractionUndefined: Self = StObject.set(x, "interaction", js.undefined)
+    
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setLocales(value: Locales): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    
+    inline def setManipulation(value: Any): Self = StObject.set(x, "manipulation", value.asInstanceOf[js.Any])
+    
+    inline def setManipulationUndefined: Self = StObject.set(x, "manipulation", js.undefined)
+    
+    inline def setNodes(value: NodeOptions): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    
+    inline def setPhysics(value: Any): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
+    
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

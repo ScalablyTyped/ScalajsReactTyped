@@ -1,21 +1,32 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Binding extends js.Object {
+trait Binding extends StObject {
+  
   var condition: Expr
+  
   var members: js.Array[String]
+  
   var role: String
 }
-
 object Binding {
-  @scala.inline
-  def apply(condition: Expr, members: js.Array[String], role: String): Binding = {
-    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
   
+  inline def apply(condition: Expr, members: js.Array[String], role: String): Binding = {
+    val __obj = js.Dynamic.literal(condition = condition.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[Binding]
   }
+  
+  extension [Self <: Binding](x: Self) {
+    
+    inline def setCondition(value: Expr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    
+    inline def setMembersVarargs(value: String*): Self = StObject.set(x, "members", js.Array(value*))
+    
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+  }
 }
-

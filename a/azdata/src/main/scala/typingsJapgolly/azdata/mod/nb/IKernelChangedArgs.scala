@@ -1,21 +1,30 @@
 package typingsJapgolly.azdata.mod.nb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IKernelChangedArgs extends js.Object {
-  var newValue: IKernel | Null
-  var oldValue: IKernel | Null
+trait IKernelChangedArgs extends StObject {
+  
+  var newValue: js.UndefOr[IKernel] = js.undefined
+  
+  var oldValue: js.UndefOr[IKernel] = js.undefined
 }
-
 object IKernelChangedArgs {
-  @scala.inline
-  def apply(newValue: IKernel = null, oldValue: IKernel = null): IKernelChangedArgs = {
+  
+  inline def apply(): IKernelChangedArgs = {
     val __obj = js.Dynamic.literal()
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[IKernelChangedArgs]
   }
+  
+  extension [Self <: IKernelChangedArgs](x: Self) {
+    
+    inline def setNewValue(value: IKernel): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    
+    inline def setOldValue(value: IKernel): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+  }
 }
-

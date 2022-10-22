@@ -1,32 +1,27 @@
 package typingsJapgolly.reactMdl.mod
 
-import typingsJapgolly.react.mod.AllHTMLAttributes
-import typingsJapgolly.react.mod.ClassAttributes
+import typingsJapgolly.react.mod.HTMLProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IconToggleProps
-  extends AllHTMLAttributes[js.Any]
-     with ClassAttributes[js.Any]
+  extends StObject
+     with HTMLProps[Any]
      with RippleComponent {
+  
   @JSName("name")
   var name_IconToggleProps: String
 }
-
 object IconToggleProps {
-  @scala.inline
-  def apply(
-    name: String,
-    AllHTMLAttributes: AllHTMLAttributes[js.Any] = null,
-    ClassAttributes: ClassAttributes[js.Any] = null,
-    RippleComponent: RippleComponent = null
-  ): IconToggleProps = {
+  
+  inline def apply(name: String): IconToggleProps = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
-    if (RippleComponent != null) js.Dynamic.global.Object.assign(__obj, RippleComponent)
     __obj.asInstanceOf[IconToggleProps]
   }
+  
+  extension [Self <: IconToggleProps](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+  }
 }
-

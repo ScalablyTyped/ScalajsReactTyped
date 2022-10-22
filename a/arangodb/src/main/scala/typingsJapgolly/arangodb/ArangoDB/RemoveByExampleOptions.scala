@@ -1,21 +1,30 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RemoveByExampleOptions extends js.Object {
+trait RemoveByExampleOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
-
 object RemoveByExampleOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, waitForSync: js.UndefOr[Boolean] = js.undefined): RemoveByExampleOptions = {
+  
+  inline def apply(): RemoveByExampleOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(waitForSync)) __obj.updateDynamic("waitForSync")(waitForSync.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveByExampleOptions]
   }
+  
+  extension [Self <: RemoveByExampleOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setWaitForSync(value: Boolean): Self = StObject.set(x, "waitForSync", value.asInstanceOf[js.Any])
+    
+    inline def setWaitForSyncUndefined: Self = StObject.set(x, "waitForSync", js.undefined)
+  }
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactQuerySearchScope extends js.Object
-
+sealed trait ContactQuerySearchScope extends StObject
 /** Defines whether to search the local ContactStore or a server. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactQuerySearchScope")
 @js.native
-object ContactQuerySearchScope extends js.Object {
+object ContactQuerySearchScope extends StObject {
+  
   /** Local */
   @js.native
-  sealed trait local extends ContactQuerySearchScope
+  sealed trait local
+    extends StObject
+       with ContactQuerySearchScope
   
   /** Server */
   @js.native
-  sealed trait server extends ContactQuerySearchScope
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactQuerySearchScope with Double] = js.native
-  /* 0 */ @js.native
-  object local extends TopLevel[local with Double]
-  
-  /* 1 */ @js.native
-  object server extends TopLevel[server with Double]
-  
+  sealed trait server
+    extends StObject
+       with ContactQuerySearchScope
 }
-

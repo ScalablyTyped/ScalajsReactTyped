@@ -1,21 +1,35 @@
 package typingsJapgolly.reactNativeSvgCharts.mod
 
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.react.mod.PureComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-svg-charts", "StackedAreaChart")
 @js.native
-class StackedAreaChart[T] ()
-  extends Component[StackedAreaChartProps[T], js.Object, js.Any]
-
-/* static members */
-@JSImport("react-native-svg-charts", "StackedAreaChart")
-@js.native
-object StackedAreaChart extends js.Object {
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String]): js.Array[Double] = js.native
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String], order: OrderFunction): js.Array[Double] = js.native
-  def extractDataPoints[T](data: js.Array[T], keys: js.Array[String], order: OrderFunction, offset: OffsetFunction): js.Array[Double] = js.native
+open class StackedAreaChart[T] protected ()
+  extends PureComponent[StackedAreaChartProps[T], js.Object, Any] {
+  def this(props: StackedAreaChartProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: StackedAreaChartProps[T], context: Any) = this()
 }
-
+/* static members */
+object StackedAreaChart {
+  
+  @JSImport("react-native-svg-charts", "StackedAreaChart")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def extractDataPoints[T](data: js.Array[T], keys: js.Array[/* keyof T */ String]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDataPoints")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def extractDataPoints[T](data: js.Array[T], keys: js.Array[/* keyof T */ String], order: Unit, offset: OffsetFunction): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDataPoints")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], order.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def extractDataPoints[T](data: js.Array[T], keys: js.Array[/* keyof T */ String], order: OrderFunction): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDataPoints")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def extractDataPoints[T](
+    data: js.Array[T],
+    keys: js.Array[/* keyof T */ String],
+    order: OrderFunction,
+    offset: OffsetFunction
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractDataPoints")(data.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], order.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+}

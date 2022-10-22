@@ -1,45 +1,36 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps.Directions
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RouteMode extends js.Object
-
+sealed trait RouteMode extends StObject
 @JSGlobal("Microsoft.Maps.Directions.RouteMode")
 @js.native
-object RouteMode extends js.Object {
+object RouteMode extends StObject {
+  
   /** Driving directions are calculated. */
   @js.native
-  sealed trait driving extends RouteMode
+  sealed trait driving
+    extends StObject
+       with RouteMode
   
   /** Transit directions are calculated. */
   @js.native
-  sealed trait transit extends RouteMode
+  sealed trait transit
+    extends StObject
+       with RouteMode
   
   /** Driving directions using truck attributes are calculationed. */
   @js.native
-  sealed trait truck extends RouteMode
+  sealed trait truck
+    extends StObject
+       with RouteMode
   
   /** Walking directions are calculated. */
   @js.native
-  sealed trait walking extends RouteMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RouteMode with Double] = js.native
-  /* 0 */ @js.native
-  object driving extends TopLevel[driving with Double]
-  
-  /* 1 */ @js.native
-  object transit extends TopLevel[transit with Double]
-  
-  /* 2 */ @js.native
-  object truck extends TopLevel[truck with Double]
-  
-  /* 3 */ @js.native
-  object walking extends TopLevel[walking with Double]
-  
+  sealed trait walking
+    extends StObject
+       with RouteMode
 }
-

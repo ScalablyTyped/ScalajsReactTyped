@@ -1,19 +1,24 @@
 package typingsJapgolly.googleCloudTasks.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunTaskRequest extends js.Object {
+trait RunTaskRequest extends StObject {
+  
   var responseView: js.UndefOr[View] = js.undefined
 }
-
 object RunTaskRequest {
-  @scala.inline
-  def apply(responseView: View = null): RunTaskRequest = {
+  
+  inline def apply(): RunTaskRequest = {
     val __obj = js.Dynamic.literal()
-    if (responseView != null) __obj.updateDynamic("responseView")(responseView.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunTaskRequest]
   }
+  
+  extension [Self <: RunTaskRequest](x: Self) {
+    
+    inline def setResponseView(value: View): Self = StObject.set(x, "responseView", value.asInstanceOf[js.Any])
+    
+    inline def setResponseViewUndefined: Self = StObject.set(x, "responseView", js.undefined)
+  }
 }
-

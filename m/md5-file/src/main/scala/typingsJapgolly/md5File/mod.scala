@@ -1,13 +1,19 @@
 package typingsJapgolly.md5File
 
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.md5File.anon.Sync
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("md5-file", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(filename: String, cb: js.Function2[/* err */ js.Error, /* hash */ String, Unit]): Unit = js.native
-  def sync(filename: String): String = js.native
+object mod extends Shortcut {
+  
+  @JSImport("md5-file", JSImport.Namespace)
+  @js.native
+  val ^ : (js.Function1[/* path */ String, js.Promise[String]]) & Sync = js.native
+  
+  type _To = (js.Function1[/* path */ String, js.Promise[String]]) & Sync
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: (js.Function1[/* path */ String, js.Promise[String]]) & Sync = ^
 }
-

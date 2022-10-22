@@ -1,44 +1,93 @@
 package typingsJapgolly.tempy
 
-import typingsJapgolly.typeFest.mod.MergeExclusive
+import typingsJapgolly.node.NodeJS.ReadableStream
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.tempy.anon.Extension
+import typingsJapgolly.tempy.anon.Name
+import typingsJapgolly.typeFest.sourceMergeExclusiveMod.MergeExclusive
+import typingsJapgolly.typeFest.sourceTypedArrayMod.TypedArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tempy", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  /**
-  	Get the root temporary directory path. For example: `/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T`.
-  	*/
-  val root: String = js.native
-  /**
-  	Get a temporary directory path. The directory is created for you.
-  	@example
-  	```
-  	import tempy = require('tempy');
-  	tempy.directory();
-  	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/2f3d094aec2cb1b93bb0f4cffce5ebd6'
-  	```
-  	*/
-  def directory(): String = js.native
-  /**
-  	Get a temporary file path you can write to.
-  	@example
-  	```
-  	import tempy = require('tempy');
-  	tempy.file();
-  	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/4f504b9edb5ba0e89451617bf9f971dd'
-  	tempy.file({extension: 'png'});
-  	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/a9fb0decd08179eb6cf4691568aa2018.png'
-  	tempy.file({name: 'unicorn.png'});
-  	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/f7f62bfd4e2a05f1589947647ed3f9ec/unicorn.png'
-  	tempy.directory();
-  	//=> '/private/var/folders/3x/jf5977fn79jbglr7rk0tq4d00000gn/T/2f3d094aec2cb1b93bb0f4cffce5ebd6'
-  	```
-  	*/
-  def file(): String = js.native
-  def file(options: Options): String = js.native
-  type Options = MergeExclusive[AnonExtension, AnonName]
+object mod {
+  
+  @JSImport("tempy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("tempy", "rootTemporaryDirectory")
+  @js.native
+  val rootTemporaryDirectory: String = js.native
+  
+  inline def temporaryDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDirectory")().asInstanceOf[String]
+  inline def temporaryDirectory(options: DirectoryOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDirectory")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def temporaryDirectoryTask[ReturnValueType](callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDirectoryTask")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryDirectoryTask[ReturnValueType](callback: TaskCallback[ReturnValueType], options: DirectoryOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryDirectoryTask")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  
+  inline def temporaryFile(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryFile")().asInstanceOf[String]
+  inline def temporaryFile(options: FileOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryFile")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def temporaryFileTask[ReturnValueType](callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryFileTask")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryFileTask[ReturnValueType](callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryFileTask")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  
+  inline def temporaryWrite(fileContent: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: String, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: js.typedarray.DataView): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: js.typedarray.DataView, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: ReadableStream): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: ReadableStream, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: Buffer): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: Buffer, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: TypedArray): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def temporaryWrite(fileContent: TypedArray, options: FileOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWrite")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  inline def temporaryWriteSync(fileContent: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: String, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: js.typedarray.DataView): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: js.typedarray.DataView, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: Buffer, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: TypedArray): String = ^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def temporaryWriteSync(fileContent: TypedArray, options: FileOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteSync")(fileContent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def temporaryWriteTask[ReturnValueType](fileContent: String, callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: String, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: js.typedarray.DataView, callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: js.typedarray.DataView, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: ReadableStream, callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: ReadableStream, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: Buffer, callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: Buffer, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: TypedArray, callback: TaskCallback[ReturnValueType]): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  inline def temporaryWriteTask[ReturnValueType](fileContent: TypedArray, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporaryWriteTask")(fileContent.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnValueType]]
+  
+  trait DirectoryOptions extends StObject {
+    
+    /**
+    	Directory prefix.
+    	_You usually won't need this option. Specify it only when actually needed._
+    	Useful for testing by making it easier to identify cache directories that are created.
+    	*/
+    val prefix: js.UndefOr[String] = js.undefined
+  }
+  object DirectoryOptions {
+    
+    inline def apply(): DirectoryOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[DirectoryOptions]
+    }
+    
+    extension [Self <: DirectoryOptions](x: Self) {
+      
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    }
+  }
+  
+  type FileOptions = MergeExclusive[Extension, Name]
+  
+  type TaskCallback[ReturnValueType] = js.Function1[/* temporaryPath */ String, js.Promise[ReturnValueType] | ReturnValueType]
 }
-

@@ -1,71 +1,38 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Events
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-sealed trait SheetsOnChangeChangeType extends js.Object
-
-@JSGlobal("GoogleAppsScript.Events.SheetsOnChangeChangeType")
-@js.native
-object SheetsOnChangeChangeType extends js.Object {
-  @js.native
-  sealed trait EDIT extends SheetsOnChangeChangeType
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.EDIT
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_ROW
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_COLUMN
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_ROW
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_COLUMN
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_GRID
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_GRID
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.FORMAT
+  - typingsJapgolly.googleAppsScript.googleAppsScriptStrings.OTHER
+*/
+trait SheetsOnChangeChangeType extends StObject
+object SheetsOnChangeChangeType {
   
-  @js.native
-  sealed trait FORMAT extends SheetsOnChangeChangeType
+  inline def EDIT: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.EDIT = "EDIT".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.EDIT]
   
-  @js.native
-  sealed trait INSERT_COLUMN extends SheetsOnChangeChangeType
+  inline def FORMAT: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.FORMAT = "FORMAT".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.FORMAT]
   
-  @js.native
-  sealed trait INSERT_GRID extends SheetsOnChangeChangeType
+  inline def INSERT_COLUMN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_COLUMN = "INSERT_COLUMN".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_COLUMN]
   
-  @js.native
-  sealed trait INSERT_ROW extends SheetsOnChangeChangeType
+  inline def INSERT_GRID: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_GRID = "INSERT_GRID".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_GRID]
   
-  @js.native
-  sealed trait OTHER extends SheetsOnChangeChangeType
+  inline def INSERT_ROW: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_ROW = "INSERT_ROW".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INSERT_ROW]
   
-  @js.native
-  sealed trait REMOVE_COLUMN extends SheetsOnChangeChangeType
+  inline def OTHER: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.OTHER = "OTHER".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.OTHER]
   
-  @js.native
-  sealed trait REMOVE_GRID extends SheetsOnChangeChangeType
+  inline def REMOVE_COLUMN: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_COLUMN = "REMOVE_COLUMN".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_COLUMN]
   
-  @js.native
-  sealed trait REMOVE_ROW extends SheetsOnChangeChangeType
+  inline def REMOVE_GRID: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_GRID = "REMOVE_GRID".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_GRID]
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SheetsOnChangeChangeType with Double] = js.native
-  /* 0 */ @js.native
-  object EDIT extends TopLevel[EDIT with Double]
-  
-  /* 7 */ @js.native
-  object FORMAT extends TopLevel[FORMAT with Double]
-  
-  /* 2 */ @js.native
-  object INSERT_COLUMN extends TopLevel[INSERT_COLUMN with Double]
-  
-  /* 5 */ @js.native
-  object INSERT_GRID extends TopLevel[INSERT_GRID with Double]
-  
-  /* 1 */ @js.native
-  object INSERT_ROW extends TopLevel[INSERT_ROW with Double]
-  
-  /* 8 */ @js.native
-  object OTHER extends TopLevel[OTHER with Double]
-  
-  /* 4 */ @js.native
-  object REMOVE_COLUMN extends TopLevel[REMOVE_COLUMN with Double]
-  
-  /* 6 */ @js.native
-  object REMOVE_GRID extends TopLevel[REMOVE_GRID with Double]
-  
-  /* 3 */ @js.native
-  object REMOVE_ROW extends TopLevel[REMOVE_ROW with Double]
-  
+  inline def REMOVE_ROW: typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_ROW = "REMOVE_ROW".asInstanceOf[typingsJapgolly.googleAppsScript.googleAppsScriptStrings.REMOVE_ROW]
 }
-

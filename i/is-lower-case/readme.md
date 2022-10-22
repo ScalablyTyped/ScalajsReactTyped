@@ -1,7 +1,7 @@
 
 # Scala.js typings for is-lower-case
 
-Typings are for version 1.1.3
+Typings are for version 2.0.2
 
 ## Library description:
 Returns `true` if the string is lower case only
@@ -10,10 +10,10 @@ Returns `true` if the string is lower case only
 | ------------------ | :-------------: |
 | Full name          | is-lower-case |
 | Keywords           | is, lower, case, check, boolean |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 40884455 |
-| # stars            | 1 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1164501666666666E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/is-lower-case#readme)

@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollerMessages extends js.Object {
+trait ScrollerMessages extends StObject {
+  
   var pullTemplate: js.UndefOr[String] = js.undefined
+  
   var refreshTemplate: js.UndefOr[String] = js.undefined
+  
   var releaseTemplate: js.UndefOr[String] = js.undefined
 }
-
 object ScrollerMessages {
-  @scala.inline
-  def apply(pullTemplate: String = null, refreshTemplate: String = null, releaseTemplate: String = null): ScrollerMessages = {
+  
+  inline def apply(): ScrollerMessages = {
     val __obj = js.Dynamic.literal()
-    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate.asInstanceOf[js.Any])
-    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate.asInstanceOf[js.Any])
-    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerMessages]
   }
+  
+  extension [Self <: ScrollerMessages](x: Self) {
+    
+    inline def setPullTemplate(value: String): Self = StObject.set(x, "pullTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setPullTemplateUndefined: Self = StObject.set(x, "pullTemplate", js.undefined)
+    
+    inline def setRefreshTemplate(value: String): Self = StObject.set(x, "refreshTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshTemplateUndefined: Self = StObject.set(x, "refreshTemplate", js.undefined)
+    
+    inline def setReleaseTemplate(value: String): Self = StObject.set(x, "releaseTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setReleaseTemplateUndefined: Self = StObject.set(x, "releaseTemplate", js.undefined)
+  }
 }
-

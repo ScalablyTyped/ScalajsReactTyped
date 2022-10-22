@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.BorderColorProperty
+import typingsJapgolly.csstype.mod.Property.BorderColor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BorderColorProps extends js.Object {
-  val borderColor: js.UndefOr[ResponsiveValue[BorderColorProperty]] = js.undefined
+trait BorderColorProps extends StObject {
+  
+  val borderColor: js.UndefOr[ResponsiveValue[BorderColor]] = js.undefined
 }
-
 object BorderColorProps {
-  @scala.inline
-  def apply(borderColor: ResponsiveValue[BorderColorProperty] = null): BorderColorProps = {
+  
+  inline def apply(): BorderColorProps = {
     val __obj = js.Dynamic.literal()
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderColorProps]
   }
+  
+  extension [Self <: BorderColorProps](x: Self) {
+    
+    inline def setBorderColor(value: ResponsiveValue[BorderColor]): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderColorVarargs(value: BorderColor*): Self = StObject.set(x, "borderColor", js.Array(value*))
+  }
 }
-

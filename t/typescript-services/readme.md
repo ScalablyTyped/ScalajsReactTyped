@@ -10,10 +10,10 @@ Open up TypeScript language services for nodejs consumption
 | ------------------ | :-------------: |
 | Full name          | typescript-services |
 | Keywords           | typescript, api, compiler, language, microsoft |
-| # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 9843 |
-| # stars            | 1 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 257.6666666666667 |
+| # stars            | 5.0 |
 
 ## Links
 - [Homepage](https://github.com/basarat/typescript-services)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for tmp
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Temporary file and directory creator
@@ -10,10 +10,10 @@ Temporary file and directory creator
 | ------------------ | :-------------: |
 | Full name          | tmp |
 | Keywords           | temporary, tmp, temp, tempdir, tempfile, tmpdir, tmpfile |
-| # releases         | 2 |
-| # dependents       | 2205 |
-| # downloads        | 532748463 |
-| # stars            | 48 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1869708666666667E8 |
+| # stars            | 677.0 |
 
 ## Links
 - [Homepage](http://github.com/raszi/node-tmp)

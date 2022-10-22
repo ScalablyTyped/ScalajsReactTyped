@@ -1,90 +1,90 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdStrings.statechange
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** This ServiceWorker API interface provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object. */
+/**
+  * This ServiceWorker API interface provides a reference to a service worker. Multiple browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a unique ServiceWorker object.
+  * Available only in secure contexts.
+  */
 @js.native
 trait ServiceWorker
-  extends EventTarget
-     with AbstractWorker
-     with _MessageEventSource {
-  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val scriptURL: java.lang.String = js.native
-  val state: org.scalajs.dom.experimental.serviceworkers.ServiceWorkerState = js.native
-  /**
-    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-    * 
-    * The options argument sets listener-specific options. For compatibility this can be a boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-    * 
-    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-    * 
-    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in § 2.8 Observing event listeners.
-    * 
-    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will be removed.
-    * 
-    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-    */
+  extends StObject
+     with EventTarget
+     with AbstractWorker {
+  
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
   /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  override def addEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
+    callback: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  def postMessage(message: js.Any): Unit = js.native
-  def postMessage(message: js.Any, options: PostMessageOptions): Unit = js.native
-  def postMessage(message: js.Any, transfer: js.Array[Transferable]): Unit = js.native
-  /**
-    * Removes the event listener in target's event listener list with the same type, callback, and options.
-    */
+  
+  /* standard dom */
+  var onstatechange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  def postMessage(message: Any): Unit = js.native
+  def postMessage(message: Any, options: StructuredSerializeOptions): Unit = js.native
+  /* standard dom */
+  def postMessage(message: Any, transfer: js.Array[Transferable]): Unit = js.native
+  
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,
     callback: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(`type`: statechange, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_statechange(
     `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_statechange(
+    `type`: statechange,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_statechange(
-    `type`: statechange,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  val scriptURL: java.lang.String = js.native
+  
+  /* standard dom */
+  val state: org.scalajs.dom.ServiceWorkerState = js.native
 }
-
-@JSGlobal("ServiceWorker")
-@js.native
-object ServiceWorker extends Instantiable0[ServiceWorker]
-

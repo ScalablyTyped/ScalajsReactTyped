@@ -1,28 +1,24 @@
 package typingsJapgolly.angularCompiler.mod
 
-import typingsJapgolly.angularCompiler.i18nAstMod.Message
-import typingsJapgolly.angularCompiler.i18nAstMod.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "TmplAstBoundText")
 @js.native
-class TmplAstBoundText protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.TmplAstBoundText {
-  def this(
-    value: typingsJapgolly.angularCompiler.astMod.AST,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.astMod.AST,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Message
-  ) = this()
-  def this(
-    value: typingsJapgolly.angularCompiler.astMod.AST,
-    sourceSpan: typingsJapgolly.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    i18n: Node
-  ) = this()
+open class TmplAstBoundText protected ()
+  extends StObject
+     with TmplAstNode {
+  def this(value: AST, sourceSpan: ParseSourceSpan) = this()
+  def this(value: AST, sourceSpan: ParseSourceSpan, i18n: I18nMeta2) = this()
+  
+  var i18n: js.UndefOr[I18nMeta2] = js.native
+  
+  /* CompleteClass */
+  var sourceSpan: ParseSourceSpan = js.native
+  
+  var value: AST = js.native
+  
+  /* CompleteClass */
+  override def visit[Result](visitor: Visitor3[Result]): Result = js.native
 }
-

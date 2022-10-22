@@ -2,13 +2,13 @@ package typingsJapgolly.pulumiPulumi.mod
 
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.stackReferenceMod.StackReferenceArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/pulumi", "StackReference")
 @js.native
-class StackReference protected ()
+open class StackReference protected ()
   extends typingsJapgolly.pulumiPulumi.stackReferenceMod.StackReference {
   /**
     * Create a StackReference resource with the given unique name, arguments, and options.
@@ -21,6 +21,6 @@ class StackReference protected ()
     */
   def this(name: String) = this()
   def this(name: String, args: StackReferenceArgs) = this()
+  def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
   def this(name: String, args: StackReferenceArgs, opts: CustomResourceOptions) = this()
 }
-

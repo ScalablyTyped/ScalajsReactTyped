@@ -11,9 +11,9 @@ This plugin for Jasmine 2.x allows you to easily create data driven tests.
 | Full name          | jasmine-data_driven_tests |
 | Keywords           | jasmine, unit, test, testing, helpers, all |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 60255 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1990.3333333333333 |
+| # stars            | 1.0 |
 
 ## Links
 - [Homepage](https://github.com/dakolech/jasmine-data_driven_tests#readme)

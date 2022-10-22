@@ -1,23 +1,32 @@
 package typingsJapgolly.officeJs.Word
 
-import typingsJapgolly.officeJs.AnonExpand
-import typingsJapgolly.officeJs.AnonIgnorePunct
 import typingsJapgolly.officeJs.OfficeExtension.ClientObject
 import typingsJapgolly.officeJs.OfficeExtension.ClientResult
 import typingsJapgolly.officeJs.OfficeExtension.UpdateOptions
+import typingsJapgolly.officeJs.Word.InsertLocation.before
+import typingsJapgolly.officeJs.Word.InsertLocation.replace
 import typingsJapgolly.officeJs.Word.Interfaces.ParagraphData
 import typingsJapgolly.officeJs.Word.Interfaces.ParagraphLoadOptions
 import typingsJapgolly.officeJs.Word.Interfaces.ParagraphUpdateData
+import typingsJapgolly.officeJs.Word.RangeLocation.after
+import typingsJapgolly.officeJs.Word.RangeLocation.content
+import typingsJapgolly.officeJs.Word.RangeLocation.end
+import typingsJapgolly.officeJs.Word.RangeLocation.start
+import typingsJapgolly.officeJs.Word.RangeLocation.whole
+import typingsJapgolly.officeJs.anon.Expand
+import typingsJapgolly.officeJs.anon.IgnorePunct
 import typingsJapgolly.officeJs.officeJsStrings.After
 import typingsJapgolly.officeJs.officeJsStrings.Before
 import typingsJapgolly.officeJs.officeJsStrings.Centered
 import typingsJapgolly.officeJs.officeJsStrings.Content
+import typingsJapgolly.officeJs.officeJsStrings.Current
 import typingsJapgolly.officeJs.officeJsStrings.End
 import typingsJapgolly.officeJs.officeJsStrings.Justified
 import typingsJapgolly.officeJs.officeJsStrings.Left
 import typingsJapgolly.officeJs.officeJsStrings.Line
 import typingsJapgolly.officeJs.officeJsStrings.Mixed
 import typingsJapgolly.officeJs.officeJsStrings.Next
+import typingsJapgolly.officeJs.officeJsStrings.Original
 import typingsJapgolly.officeJs.officeJsStrings.Page
 import typingsJapgolly.officeJs.officeJsStrings.Replace
 import typingsJapgolly.officeJs.officeJsStrings.Right
@@ -29,331 +38,204 @@ import typingsJapgolly.officeJs.officeJsStrings.Select
 import typingsJapgolly.officeJs.officeJsStrings.Start
 import typingsJapgolly.officeJs.officeJsStrings.Unknown_
 import typingsJapgolly.officeJs.officeJsStrings.Whole
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Represents a single paragraph in a selection, range, content control, or document body.
   *
+  * @remarks
   * [Api set: WordApi 1.1]
   */
-@JSGlobal("Word.Paragraph")
 @js.native
-class Paragraph () extends ClientObject {
+trait Paragraph
+  extends StObject
+     with ClientObject {
+  
   /**
-    *
     * Gets or sets the alignment for a paragraph. The value can be 'left', 'centered', 'right', or 'justified'.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   var alignment: Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified = js.native
+  
   /**
-    *
-    * Gets the collection of content control objects in the paragraph. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val contentControls: ContentControlCollection = js.native
-  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
-  @JSName("context")
-  var context_Paragraph: RequestContext = js.native
-  /**
-    *
-    * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var firstLineIndent: Double = js.native
-  /**
-    *
-    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val font: Font = js.native
-  /**
-    *
-    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val inlinePictures: InlinePictureCollection = js.native
-  /**
-    *
-    * Indicates the paragraph is the last one inside its parent body. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val isLastParagraph: Boolean = js.native
-  /**
-    *
-    * Checks whether the paragraph is a list item. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val isListItem: Boolean = js.native
-  /**
-    *
-    * Gets or sets the left indent value, in points, for the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var leftIndent: Double = js.native
-  /**
-    *
-    * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var lineSpacing: Double = js.native
-  /**
-    *
-    * Gets or sets the amount of spacing, in grid lines, after the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var lineUnitAfter: Double = js.native
-  /**
-    *
-    * Gets or sets the amount of spacing, in grid lines, before the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var lineUnitBefore: Double = js.native
-  /**
-    *
-    * Gets the List to which this paragraph belongs. Throws an error if the paragraph is not in a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val list: List = js.native
-  /**
-    *
-    * Gets the ListItem for the paragraph. Throws an error if the paragraph is not part of a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val listItem: ListItem = js.native
-  /**
-    *
-    * Gets the ListItem for the paragraph. Returns a null object if the paragraph is not part of a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val listItemOrNullObject: ListItem = js.native
-  /**
-    *
-    * Gets the List to which this paragraph belongs. Returns a null object if the paragraph is not in a list. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val listOrNullObject: List = js.native
-  /**
-    *
-    * Gets or sets the outline level for the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var outlineLevel: Double = js.native
-  /**
-    *
-    * Gets the parent body of the paragraph. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentBody: Body = js.native
-  /**
-    *
-    * Gets the content control that contains the paragraph. Throws an error if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val parentContentControl: ContentControl = js.native
-  /**
-    *
-    * Gets the content control that contains the paragraph. Returns a null object if there isn't a parent content control. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentContentControlOrNullObject: ContentControl = js.native
-  /**
-    *
-    * Gets the table that contains the paragraph. Throws an error if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentTable: Table = js.native
-  /**
-    *
-    * Gets the table cell that contains the paragraph. Throws an error if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentTableCell: TableCell = js.native
-  /**
-    *
-    * Gets the table cell that contains the paragraph. Returns a null object if it is not contained in a table cell. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentTableCellOrNullObject: TableCell = js.native
-  /**
-    *
-    * Gets the table that contains the paragraph. Returns a null object if it is not contained in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val parentTableOrNullObject: Table = js.native
-  /**
-    *
-    * Gets or sets the right indent value, in points, for the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var rightIndent: Double = js.native
-  /**
-    *
-    * Gets or sets the spacing, in points, after the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var spaceAfter: Double = js.native
-  /**
-    *
-    * Gets or sets the spacing, in points, before the paragraph.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var spaceBefore: Double = js.native
-  /**
-    *
-    * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  var style: String = js.native
-  /**
-    *
-    * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149 */ js.Any = js.native
-  /**
-    *
-    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table. Read-only.
-    *
-    * [Api set: WordApi 1.3]
-    */
-  val tableNestingLevel: Double = js.native
-  /**
-    *
-    * Gets the text of the paragraph. Read-only.
-    *
-    * [Api set: WordApi 1.1]
-    */
-  val text: String = js.native
-  /**
-    *
     * Lets the paragraph join an existing list at the specified level. Fails if the paragraph cannot join the list or if the paragraph is already a list item.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param listId Required. The ID of an existing list.
     * @param level Required. The level in the list.
     */
-  def attachToList(listId: Double, level: Double): List = js.native
+  def attachToList(listId: Double, level: Double): typingsJapgolly.officeJs.Word.List = js.native
+  
   /**
-    *
     * Clears the contents of the paragraph object. The user can perform the undo operation on the cleared content.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def clear(): Unit = js.native
+  
   /**
+    * Gets the collection of content control objects in the paragraph.
     *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  val contentControls: ContentControlCollection = js.native
+  
+  /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
+  @JSName("context")
+  var context_Paragraph: RequestContext = js.native
+  
+  /**
     * Deletes the paragraph and its content from the document.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def delete(): Unit = js.native
+  
   /**
-    *
     * Moves this paragraph out of its list, if the paragraph is a list item.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def detachFromList(): Unit = js.native
+  
   /**
+    * Gets the collection of endnotes in the paragraph.
     *
-    * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word for the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
+  val endnotes: NoteItemCollection = js.native
+  
+  /**
+    * Gets the collection of fields in the paragraph.
     *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  val fields: FieldCollection = js.native
+  
+  /**
+    * Gets or sets the value, in points, for a first line or hanging indent. Use a positive value to set a first-line indent, and use a negative value to set a hanging indent.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var firstLineIndent: Double = js.native
+  
+  /**
+    * Gets the text format of the paragraph. Use this to get and set font name, size, color, and other properties.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  val font: Font = js.native
+  
+  /**
+    * Gets the collection of footnotes in the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApiOnline 1.1]
+    */
+  val footnotes: NoteItemCollection = js.native
+  
+  /**
+    * Gets comments associated with the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    */
+  def getComments(): CommentCollection = js.native
+  
+  /**
+    * Gets an HTML representation of the paragraph object. When rendered in a web page or HTML viewer, the formatting will be a close, but not exact, match for of the formatting of the document. This method does not return the exact same HTML for the same document on different platforms (Windows, Mac, Word on the web, etc.). If you need exact fidelity, or consistency across platforms, use `Paragraph.getOoxml()` and convert the returned XML to HTML.
+    *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def getHtml(): ClientResult[String] = js.native
+  
   /**
+    * Gets the next paragraph. Throws an `ItemNotFound` error if the paragraph is the last one.
     *
-    * Gets the next paragraph. Throws an error if the paragraph is the last one.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getNext(): Paragraph = js.native
+  
   /**
+    * Gets the next paragraph. If the paragraph is the last one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
-    * Gets the next paragraph. Returns a null object if the paragraph is the last one.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getNextOrNullObject(): Paragraph = js.native
+  
   /**
-    *
     * Gets the Office Open XML (OOXML) representation of the paragraph object.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def getOoxml(): ClientResult[String] = js.native
+  
   /**
+    * Gets the previous paragraph. Throws an `ItemNotFound` error if the paragraph is the first one.
     *
-    * Gets the previous paragraph. Throws an error if the paragraph is the first one.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getPrevious(): Paragraph = js.native
+  
   /**
+    * Gets the previous paragraph. If the paragraph is the first one, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
     *
-    * Gets the previous paragraph. Returns a null object if the paragraph is the first one.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   def getPreviousOrNullObject(): Paragraph = js.native
+  
   /**
-    *
     * Gets the whole paragraph, or the starting or ending point of the paragraph, as a range.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
-    * @param rangeLocation Optional. The range location can be 'Whole', 'Start', 'End', 'After', or 'Content'.
+    * @param rangeLocation Optional. The range location must be 'Whole', 'Start', 'End', 'After', or 'Content'.
     */
   def getRange(): Range = js.native
-  def getRange(rangeLocation: RangeLocation): Range = js.native
-  @JSName("getRange")
-  def getRange_After(rangeLocation: After): Range = js.native
-  @JSName("getRange")
-  def getRange_Before(rangeLocation: Before): Range = js.native
-  @JSName("getRange")
-  def getRange_Content(rangeLocation: Content): Range = js.native
-  @JSName("getRange")
-  def getRange_End(rangeLocation: End): Range = js.native
-  @JSName("getRange")
-  def getRange_Start(rangeLocation: Start): Range = js.native
-  @JSName("getRange")
-  def getRange_Whole(rangeLocation: Whole): Range = js.native
+  def getRange(rangeLocation: Whole | Start | End | After | Content): Range = js.native
+  def getRange(rangeLocation: after): Range = js.native
+  def getRange(rangeLocation: content): Range = js.native
+  def getRange(rangeLocation: end): Range = js.native
+  def getRange(rangeLocation: start): Range = js.native
+  def getRange(rangeLocation: whole): Range = js.native
+  
   /**
+    * Gets reviewed text based on ChangeTrackingVersion selection.
     *
+    * @remarks
+    * [Api set: WordApi 1.4]
+    *
+    * @param changeTrackingVersion Optional. The value must be 'Original' or 'Current'. The default is 'Current'.
+    */
+  def getReviewedText(): ClientResult[String] = js.native
+  def getReviewedText(changeTrackingVersion: Original | Current): ClientResult[String] = js.native
+  def getReviewedText(changeTrackingVersion: ChangeTrackingVersion): ClientResult[String] = js.native
+  
+  /**
     * Gets the text ranges in the paragraph by using punctuation marks and/or other ending marks.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param endingMarks Required. The punctuation marks and/or other ending marks as an array of strings.
@@ -361,315 +243,379 @@ class Paragraph () extends ClientObject {
     */
   def getTextRanges(endingMarks: js.Array[String]): RangeCollection = js.native
   def getTextRanges(endingMarks: js.Array[String], trimSpacing: Boolean): RangeCollection = js.native
+  
   /**
+    * Gets the collection of InlinePicture objects in the paragraph. The collection does not include floating images.
     *
-    * Inserts a break at the specified location in the main document.
-    *
+    * @remarks
     * [Api set: WordApi 1.1]
-    *
-    * @param breakType Required. The break type to add to the document.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
     */
+  val inlinePictures: InlinePictureCollection = js.native
+  
   def insertBreak(
     breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
-    insertLocation: Before | After | Start | End | Replace
+    insertLocation: Before | After
   ): Unit = js.native
+  def insertBreak(
+    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.after
+  ): Unit = js.native
+  def insertBreak(
+    breakType: Page | Next | SectionNext | SectionContinuous | SectionEven | SectionOdd | Line,
+    insertLocation: before
+  ): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: Before | After): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.after): Unit = js.native
   /**
-    *
     * Inserts a break at the specified location in the main document.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param breakType Required. The break type to add to the document.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertBreak(breakType: BreakType, insertLocation: InsertLocation): Unit = js.native
+  def insertBreak(breakType: BreakType, insertLocation: before): Unit = js.native
+  
   /**
-    *
     * Wraps the paragraph object with a rich text content control.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     */
   def insertContentControl(): ContentControl = js.native
+  
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end,
+    asNewParagraph: Boolean
+  ): Range = js.native
   /**
-    *
     * Inserts a document into the paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param base64File Required. The base64 encoded content of a .docx file.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the content as new paragraphs. Default is false which indicates that the base64 content is merged as inline text into the existing paragraph.
     */
-  def insertFileFromBase64(base64File: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_After(base64File: String, insertLocation: After): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
+  def insertFileFromBase64(base64File: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertFileFromBase64(
+    base64File: String,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start,
+    asNewParagraph: Boolean
+  ): Range = js.native
+  
+  def insertHtml(html: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertHtml(html: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end): Range = js.native
   /**
-    *
-    * Inserts a document into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param base64File Required. The base64 encoded content of a .docx file.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Before(base64File: String, insertLocation: Before): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_End(base64File: String, insertLocation: End): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Replace(base64File: String, insertLocation: Replace): Range = js.native
-  @JSName("insertFileFromBase64")
-  def insertFileFromBase64_Start(base64File: String, insertLocation: Start): Range = js.native
-  /**
-    *
     * Inserts HTML into the paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param html Required. The HTML to be inserted in the paragraph.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
     */
-  def insertHtml(html: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_After(html: String, insertLocation: After): Range = js.native
+  def insertHtml(html: String, insertLocation: replace): Range = js.native
+  def insertHtml(html: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start): Range = js.native
+  
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: Replace | Start | End): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end): InlinePicture = js.native
   /**
-    *
-    * Inserts HTML into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param html Required. The HTML to be inserted in the paragraph.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  @JSName("insertHtml")
-  def insertHtml_Before(html: String, insertLocation: Before): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_End(html: String, insertLocation: End): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_Replace(html: String, insertLocation: Replace): Range = js.native
-  @JSName("insertHtml")
-  def insertHtml_Start(html: String, insertLocation: Start): Range = js.native
-  /**
-    *
     * Inserts a picture into the paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
     */
-  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: InsertLocation): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_After(base64EncodedImage: String, insertLocation: After): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: replace): InlinePicture = js.native
+  def insertInlinePictureFromBase64(base64EncodedImage: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start): InlinePicture = js.native
+  
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: Replace | Start | End, asNewParagraph: Boolean): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end): Range = js.native
+  def insertOoxml(
+    ooxml: String,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end,
+    asNewParagraph: Boolean
+  ): Range = js.native
   /**
-    *
-    * Inserts a picture into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param base64EncodedImage Required. The base64 encoded image to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Before(base64EncodedImage: String, insertLocation: Before): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_End(base64EncodedImage: String, insertLocation: End): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Replace(base64EncodedImage: String, insertLocation: Replace): InlinePicture = js.native
-  @JSName("insertInlinePictureFromBase64")
-  def insertInlinePictureFromBase64_Start(base64EncodedImage: String, insertLocation: Start): InlinePicture = js.native
-  /**
-    *
     * Inserts OOXML into the paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param ooxml Required. The OOXML to be inserted in the paragraph.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    * @param asNewParagraph Optional. Indicates whether to insert the OOXML as new paragraphs. Default is false which indicates that the OOXML is merged as inline text into the existing paragraph.
     */
-  def insertOoxml(ooxml: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_After(ooxml: String, insertLocation: After): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: replace): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: replace, asNewParagraph: Boolean): Range = js.native
+  def insertOoxml(ooxml: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start): Range = js.native
+  def insertOoxml(
+    ooxml: String,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start,
+    asNewParagraph: Boolean
+  ): Range = js.native
+  
+  def insertParagraph(paragraphText: String, insertLocation: Before | After): Paragraph = js.native
+  def insertParagraph(paragraphText: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.after): Paragraph = js.native
   /**
-    *
-    * Inserts OOXML into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param ooxml Required. The OOXML to be inserted in the paragraph.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  @JSName("insertOoxml")
-  def insertOoxml_Before(ooxml: String, insertLocation: Before): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_End(ooxml: String, insertLocation: End): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_Replace(ooxml: String, insertLocation: Replace): Range = js.native
-  @JSName("insertOoxml")
-  def insertOoxml_Start(ooxml: String, insertLocation: Start): Range = js.native
-  /**
-    *
     * Inserts a paragraph at the specified location.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param paragraphText Required. The paragraph text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     */
-  def insertParagraph(paragraphText: String, insertLocation: InsertLocation): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_After(paragraphText: String, insertLocation: After): Paragraph = js.native
-  /**
-    *
-    * Inserts a paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param paragraphText Required. The paragraph text to be inserted.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    */
-  @JSName("insertParagraph")
-  def insertParagraph_Before(paragraphText: String, insertLocation: Before): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_End(paragraphText: String, insertLocation: End): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_Replace(paragraphText: String, insertLocation: Replace): Paragraph = js.native
-  @JSName("insertParagraph")
-  def insertParagraph_Start(paragraphText: String, insertLocation: Start): Paragraph = js.native
-  /**
-    *
-    * Inserts a table with the specified number of rows and columns.
-    *
-    * [Api set: WordApi 1.3]
-    *
-    * @param rowCount Required. The number of rows in the table.
-    * @param columnCount Required. The number of columns in the table.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
-    * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
-    */
-  def insertTable(rowCount: Double, columnCount: Double, insertLocation: InsertLocation): Table = js.native
+  def insertParagraph(paragraphText: String, insertLocation: before): Paragraph = js.native
+  
+  def insertTable(rowCount: Double, columnCount: Double, insertLocation: Before | After): Table = js.native
   def insertTable(
     rowCount: Double,
     columnCount: Double,
-    insertLocation: InsertLocation,
+    insertLocation: Before | After,
     values: js.Array[js.Array[String]]
   ): Table = js.native
-  @JSName("insertTable")
-  def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After): Table = js.native
-  @JSName("insertTable")
-  def insertTable_After(rowCount: Double, columnCount: Double, insertLocation: After, values: js.Array[js.Array[String]]): Table = js.native
+  def insertTable(
+    rowCount: Double,
+    columnCount: Double,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.after
+  ): Table = js.native
+  def insertTable(
+    rowCount: Double,
+    columnCount: Double,
+    insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.after,
+    values: js.Array[js.Array[String]]
+  ): Table = js.native
   /**
-    *
     * Inserts a table with the specified number of rows and columns.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param rowCount Required. The number of rows in the table.
     * @param columnCount Required. The number of columns in the table.
-    * @param insertLocation Required. The value can be 'Before' or 'After'.
+    * @param insertLocation Required. The value must be 'Before' or 'After'.
     * @param values Optional 2D array. Cells are filled if the corresponding strings are specified in the array.
     */
-  @JSName("insertTable")
-  def insertTable_Before(rowCount: Double, columnCount: Double, insertLocation: Before): Table = js.native
-  @JSName("insertTable")
-  def insertTable_Before(rowCount: Double, columnCount: Double, insertLocation: Before, values: js.Array[js.Array[String]]): Table = js.native
-  @JSName("insertTable")
-  def insertTable_End(rowCount: Double, columnCount: Double, insertLocation: End): Table = js.native
-  @JSName("insertTable")
-  def insertTable_End(rowCount: Double, columnCount: Double, insertLocation: End, values: js.Array[js.Array[String]]): Table = js.native
-  @JSName("insertTable")
-  def insertTable_Replace(rowCount: Double, columnCount: Double, insertLocation: Replace): Table = js.native
-  @JSName("insertTable")
-  def insertTable_Replace(rowCount: Double, columnCount: Double, insertLocation: Replace, values: js.Array[js.Array[String]]): Table = js.native
-  @JSName("insertTable")
-  def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start): Table = js.native
-  @JSName("insertTable")
-  def insertTable_Start(rowCount: Double, columnCount: Double, insertLocation: Start, values: js.Array[js.Array[String]]): Table = js.native
+  def insertTable(rowCount: Double, columnCount: Double, insertLocation: before): Table = js.native
+  def insertTable(rowCount: Double, columnCount: Double, insertLocation: before, values: js.Array[js.Array[String]]): Table = js.native
+  
+  def insertText(text: String, insertLocation: Replace | Start | End): Range = js.native
+  def insertText(text: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.end): Range = js.native
   /**
-    *
     * Inserts text into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param text Required. Text to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  def insertText(text: String, insertLocation: InsertLocation): Range = js.native
-  @JSName("insertText")
-  def insertText_After(text: String, insertLocation: After): Range = js.native
-  /**
-    *
-    * Inserts text into the paragraph at the specified location.
-    *
-    * [Api set: WordApi 1.1]
-    *
-    * @param text Required. Text to be inserted.
-    * @param insertLocation Required. The value can be 'Replace', 'Start', or 'End'.
-    */
-  @JSName("insertText")
-  def insertText_Before(text: String, insertLocation: Before): Range = js.native
-  @JSName("insertText")
-  def insertText_End(text: String, insertLocation: End): Range = js.native
-  @JSName("insertText")
-  def insertText_Replace(text: String, insertLocation: Replace): Range = js.native
-  @JSName("insertText")
-  def insertText_Start(text: String, insertLocation: Start): Range = js.native
-  /**
-    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *
     * @remarks
+    * [Api set: WordApi 1.1]
     *
-    * In addition to this signature, this method has the following signatures:
+    * @param text Required. Text to be inserted.
+    * @param insertLocation Required. The value must be 'Replace', 'Start', or 'End'.
+    */
+  def insertText(text: String, insertLocation: replace): Range = js.native
+  def insertText(text: String, insertLocation: typingsJapgolly.officeJs.Word.InsertLocation.start): Range = js.native
+  
+  /**
+    * Indicates the paragraph is the last one inside its parent body.
     *
-    * `load(option?: string | string[]): Word.Paragraph` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val isLastParagraph: Boolean = js.native
+  
+  /**
+    * Checks whether the paragraph is a list item.
     *
-    * `load(option?: { select?: string; expand?: string; }): Word.Paragraph` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val isListItem: Boolean = js.native
+  
+  /**
+    * Gets or sets the left indent value, in points, for the paragraph.
     *
-    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Word.Paragraph` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var leftIndent: Double = js.native
+  
+  /**
+    * Gets or sets the line spacing, in points, for the specified paragraph. In the Word UI, this value is divided by 12.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var lineSpacing: Double = js.native
+  
+  /**
+    * Gets or sets the amount of spacing, in grid lines, after the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var lineUnitAfter: Double = js.native
+  
+  /**
+    * Gets or sets the amount of spacing, in grid lines, before the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var lineUnitBefore: Double = js.native
+  
+  /**
+    * Gets the List to which this paragraph belongs. Throws an `ItemNotFound` error if the paragraph is not in a list.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val list: typingsJapgolly.officeJs.Word.List = js.native
+  
+  /**
+    * Gets the ListItem for the paragraph. Throws an `ItemNotFound` error if the paragraph is not part of a list.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val listItem: ListItem = js.native
+  
+  /**
+    * Gets the ListItem for the paragraph. If the paragraph is not part of a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val listItemOrNullObject: ListItem = js.native
+  
+  /**
+    * Gets the List to which this paragraph belongs. If the paragraph is not in a list, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val listOrNullObject: typingsJapgolly.officeJs.Word.List = js.native
+  
+  /**
+    * Queues up a command to load the specified properties of the object. You must call `context.sync()` before reading the properties.
     *
     * @param options Provides options for which properties of the object to load.
     */
   def load(): Paragraph = js.native
-  def load(option: String): Paragraph = js.native
-  def load(option: js.Array[String]): Paragraph = js.native
-  def load(option: AnonExpand): Paragraph = js.native
-  def load(option: ParagraphLoadOptions): Paragraph = js.native
+  def load(options: ParagraphLoadOptions): Paragraph = js.native
+  def load(propertyNamesAndPaths: Expand): Paragraph = js.native
+  def load(propertyNames: String): Paragraph = js.native
+  def load(propertyNames: js.Array[String]): Paragraph = js.native
+  
   /**
+    * Gets or sets the outline level for the paragraph.
     *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var outlineLevel: Double = js.native
+  
+  /**
+    * Gets the parent body of the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentBody: Body = js.native
+  
+  /**
+    * Gets the content control that contains the paragraph. Throws an `ItemNotFound` error if there isn't a parent content control.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  val parentContentControl: ContentControl = js.native
+  
+  /**
+    * Gets the content control that contains the paragraph. If there isn't a parent content control, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentContentControlOrNullObject: ContentControl = js.native
+  
+  /**
+    * Gets the table that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentTable: Table = js.native
+  
+  /**
+    * Gets the table cell that contains the paragraph. Throws an `ItemNotFound` error if it is not contained in a table cell.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentTableCell: TableCell = js.native
+  
+  /**
+    * Gets the table cell that contains the paragraph. If it is not contained in a table cell, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentTableCellOrNullObject: TableCell = js.native
+  
+  /**
+    * Gets the table that contains the paragraph. If it is not contained in a table, then this method will return an object with its `isNullObject` property set to `true`. For further information, see {@link https://docs.microsoft.com/office/dev/add-ins/develop/application-specific-api-model#ornullobject-methods-and-properties | *OrNullObject methods and properties}.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val parentTableOrNullObject: Table = js.native
+  
+  /**
+    * Gets or sets the right indent value, in points, for the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var rightIndent: Double = js.native
+  
+  /**
     * Performs a search with the specified SearchOptions on the scope of the paragraph object. The search results are a collection of range objects.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
     * @param searchText Required. The search text.
     * @param searchOptions Optional. Options for the search.
     */
   def search(searchText: String): RangeCollection = js.native
-  def search(searchText: String, searchOptions: AnonIgnorePunct): RangeCollection = js.native
   def search(searchText: String, searchOptions: SearchOptions): RangeCollection = js.native
+  def search(searchText: String, searchOptions: IgnorePunct): RangeCollection = js.native
+  
   /**
-    *
     * Selects and navigates the Word UI to the paragraph.
     *
+    * @remarks
     * [Api set: WordApi 1.1]
     *
-    * @param selectionMode Optional. The selection mode can be 'Select', 'Start', or 'End'. 'Select' is the default.
+    * @param selectionMode Optional. The selection mode must be 'Select', 'Start', or 'End'. 'Select' is the default.
     */
   def select(): Unit = js.native
+  def select(selectionMode: Select | Start | End): Unit = js.native
   def select(selectionMode: SelectionMode): Unit = js.native
-  @JSName("select")
-  def select_End(selectionMode: End): Unit = js.native
-  @JSName("select")
-  def select_Select(selectionMode: Select): Unit = js.native
-  @JSName("select")
-  def select_Start(selectionMode: Start): Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-    *
-    * @remarks
-    *
-    * This method has the following additional signature:
-    *
-    * `set(properties: Word.Paragraph): void`
-    *
+  
+  /**
+    * Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
     * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
     * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
     */
@@ -677,10 +623,27 @@ class Paragraph () extends ClientObject {
   def set(properties: ParagraphUpdateData, options: UpdateOptions): Unit = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: Paragraph): Unit = js.native
+  
   /**
+    * Gets or sets the spacing, in points, after the paragraph.
     *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var spaceAfter: Double = js.native
+  
+  /**
+    * Gets or sets the spacing, in points, before the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var spaceBefore: Double = js.native
+  
+  /**
     * Splits the paragraph into child ranges by using delimiters.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     *
     * @param delimiters Required. The delimiters as an array of strings.
@@ -690,25 +653,61 @@ class Paragraph () extends ClientObject {
   def split(delimiters: js.Array[String]): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean): RangeCollection = js.native
   def split(delimiters: js.Array[String], trimDelimiters: Boolean, trimSpacing: Boolean): RangeCollection = js.native
+  def split(delimiters: js.Array[String], trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
+  
   /**
-    *
     * Starts a new list with this paragraph. Fails if the paragraph is already a list item.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
-  def startNewList(): List = js.native
+  def startNewList(): typingsJapgolly.officeJs.Word.List = js.native
+  
+  /**
+    * Gets or sets the style name for the paragraph. Use this property for custom styles and localized style names. To use the built-in styles that are portable between locales, see the "styleBuiltIn" property.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  var style: String = js.native
+  
+  /**
+    * Gets or sets the built-in style name for the paragraph. Use this property for built-in styles that are portable between locales. To use custom styles or localized style names, see the "style" property.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  var styleBuiltIn: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 149, starting with typingsJapgolly.officeJs.Word.Style, typingsJapgolly.officeJs.officeJsStrings.Other, typingsJapgolly.officeJs.officeJsStrings.Normal */ Any = js.native
+  
+  /**
+    * Gets the level of the paragraph's table. It returns 0 if the paragraph is not in a table.
+    *
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
+  val tableNestingLevel: Double = js.native
+  
+  /**
+    * Gets the text of the paragraph.
+    *
+    * @remarks
+    * [Api set: WordApi 1.1]
+    */
+  val text: String = js.native
+  
   /**
     * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
     * Whereas the original Word.Paragraph object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Word.Interfaces.ParagraphData`) that contains shallow copies of any loaded child properties from the original object.
     */
   def toJSON(): ParagraphData = js.native
+  
   /**
-    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for context.trackedObjects.add(thisObject). If you are using this object across ".sync" calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you needed to have added the object to the tracked object collection when the object was first created.
+    * Track the object for automatic adjustment based on surrounding changes in the document. This call is a shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.add(thisObject)}. If you are using this object across `.sync` calls and outside the sequential execution of a ".run" batch, and get an "InvalidObjectPath" error when setting a property or invoking a method on the object, you need to add the object to the tracked object collection when the object was first created. If this object is part of a collection, you should also track the parent collection.
     */
   def track(): Paragraph = js.native
+  
   /**
-    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for context.trackedObjects.remove(thisObject). Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call "context.sync()" before the memory release takes effect.
+    * Release the memory associated with this object, if it has previously been tracked. This call is shorthand for {@link https://docs.microsoft.com/javascript/api/office/officeextension.clientrequestcontext#office-officeextension-clientrequestcontext-trackedobjects-member | context.trackedObjects.remove(thisObject)}. Having many tracked objects slows down the host application, so please remember to free any objects you add, once you're done using them. You will need to call `context.sync()` before the memory release takes effect.
     */
   def untrack(): Paragraph = js.native
 }
-

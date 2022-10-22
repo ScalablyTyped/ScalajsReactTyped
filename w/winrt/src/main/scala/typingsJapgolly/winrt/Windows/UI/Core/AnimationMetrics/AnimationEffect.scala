@@ -1,233 +1,192 @@
 package typingsJapgolly.winrt.Windows.UI.Core.AnimationMetrics
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AnimationEffect extends js.Object
-
+sealed trait AnimationEffect extends StObject
 @JSGlobal("Windows.UI.Core.AnimationMetrics.AnimationEffect")
 @js.native
-object AnimationEffect extends js.Object {
-  @js.native
-  sealed trait addToGrid extends AnimationEffect
+object AnimationEffect extends StObject {
   
   @js.native
-  sealed trait addToList extends AnimationEffect
+  sealed trait addToGrid
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait addToSearchGrid extends AnimationEffect
+  sealed trait addToList
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait addToSearchList extends AnimationEffect
+  sealed trait addToSearchGrid
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait collapse extends AnimationEffect
+  sealed trait addToSearchList
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait crossFade extends AnimationEffect
+  sealed trait collapse
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait deleteFromGrid extends AnimationEffect
+  sealed trait crossFade
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait deleteFromList extends AnimationEffect
+  sealed trait deleteFromGrid
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait deleteFromSearchGrid extends AnimationEffect
+  sealed trait deleteFromList
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait deleteFromSearchList extends AnimationEffect
+  sealed trait deleteFromSearchGrid
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait dragBetweenEnter extends AnimationEffect
+  sealed trait deleteFromSearchList
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait dragBetweenLeave extends AnimationEffect
+  sealed trait dragBetweenEnter
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait dragSourceEnd extends AnimationEffect
+  sealed trait dragBetweenLeave
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait dragSourceStart extends AnimationEffect
+  sealed trait dragSourceEnd
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait enterPage extends AnimationEffect
+  sealed trait dragSourceStart
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait expand extends AnimationEffect
+  sealed trait enterPage
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait fadeIn extends AnimationEffect
+  sealed trait expand
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait fadeOut extends AnimationEffect
+  sealed trait fadeIn
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait hide extends AnimationEffect
+  sealed trait fadeOut
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait hideEdgeUI extends AnimationEffect
+  sealed trait hide
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait hidePanel extends AnimationEffect
+  sealed trait hideEdgeUI
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait hidePopup extends AnimationEffect
+  sealed trait hidePanel
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait peek extends AnimationEffect
+  sealed trait hidePopup
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait pointerDown extends AnimationEffect
+  sealed trait peek
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait pointerUp extends AnimationEffect
+  sealed trait pointerDown
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait reposition extends AnimationEffect
+  sealed trait pointerUp
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait reveal extends AnimationEffect
+  sealed trait reposition
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait showEdgeUI extends AnimationEffect
+  sealed trait reveal
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait showPanel extends AnimationEffect
+  sealed trait showEdgeUI
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait showPopup extends AnimationEffect
+  sealed trait showPanel
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait swipeDeselect extends AnimationEffect
+  sealed trait showPopup
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait swipeReveal extends AnimationEffect
+  sealed trait swipeDeselect
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait swipeSelect extends AnimationEffect
+  sealed trait swipeReveal
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait transitionContent extends AnimationEffect
+  sealed trait swipeSelect
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait transitionPage extends AnimationEffect
+  sealed trait transitionContent
+    extends StObject
+       with AnimationEffect
   
   @js.native
-  sealed trait updateBadge extends AnimationEffect
+  sealed trait transitionPage
+    extends StObject
+       with AnimationEffect
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AnimationEffect with Double] = js.native
-  /* 7 */ @js.native
-  object addToGrid extends TopLevel[addToGrid with Double]
-  
-  /* 5 */ @js.native
-  object addToList extends TopLevel[addToList with Double]
-  
-  /* 9 */ @js.native
-  object addToSearchGrid extends TopLevel[addToSearchGrid with Double]
-  
-  /* 11 */ @js.native
-  object addToSearchList extends TopLevel[addToSearchList with Double]
-  
-  /* 1 */ @js.native
-  object collapse extends TopLevel[collapse with Double]
-  
-  /* 33 */ @js.native
-  object crossFade extends TopLevel[crossFade with Double]
-  
-  /* 8 */ @js.native
-  object deleteFromGrid extends TopLevel[deleteFromGrid with Double]
-  
-  /* 6 */ @js.native
-  object deleteFromList extends TopLevel[deleteFromList with Double]
-  
-  /* 10 */ @js.native
-  object deleteFromSearchGrid extends TopLevel[deleteFromSearchGrid with Double]
-  
-  /* 12 */ @js.native
-  object deleteFromSearchList extends TopLevel[deleteFromSearchList with Double]
-  
-  /* 26 */ @js.native
-  object dragBetweenEnter extends TopLevel[dragBetweenEnter with Double]
-  
-  /* 27 */ @js.native
-  object dragBetweenLeave extends TopLevel[dragBetweenLeave with Double]
-  
-  /* 22 */ @js.native
-  object dragSourceEnd extends TopLevel[dragSourceEnd with Double]
-  
-  /* 21 */ @js.native
-  object dragSourceStart extends TopLevel[dragSourceStart with Double]
-  
-  /* 31 */ @js.native
-  object enterPage extends TopLevel[enterPage with Double]
-  
-  /* 0 */ @js.native
-  object expand extends TopLevel[expand with Double]
-  
-  /* 3 */ @js.native
-  object fadeIn extends TopLevel[fadeIn with Double]
-  
-  /* 4 */ @js.native
-  object fadeOut extends TopLevel[fadeOut with Double]
-  
-  /* 25 */ @js.native
-  object hide extends TopLevel[hide with Double]
-  
-  /* 15 */ @js.native
-  object hideEdgeUI extends TopLevel[hideEdgeUI with Double]
-  
-  /* 16 */ @js.native
-  object hidePanel extends TopLevel[hidePanel with Double]
-  
-  /* 18 */ @js.native
-  object hidePopup extends TopLevel[hidePopup with Double]
-  
-  /* 34 */ @js.native
-  object peek extends TopLevel[peek with Double]
-  
-  /* 19 */ @js.native
-  object pointerDown extends TopLevel[pointerDown with Double]
-  
-  /* 20 */ @js.native
-  object pointerUp extends TopLevel[pointerUp with Double]
-  
-  /* 2 */ @js.native
-  object reposition extends TopLevel[reposition with Double]
-  
-  /* 24 */ @js.native
-  object reveal extends TopLevel[reveal with Double]
-  
-  /* 13 */ @js.native
-  object showEdgeUI extends TopLevel[showEdgeUI with Double]
-  
-  /* 14 */ @js.native
-  object showPanel extends TopLevel[showPanel with Double]
-  
-  /* 17 */ @js.native
-  object showPopup extends TopLevel[showPopup with Double]
-  
-  /* 29 */ @js.native
-  object swipeDeselect extends TopLevel[swipeDeselect with Double]
-  
-  /* 30 */ @js.native
-  object swipeReveal extends TopLevel[swipeReveal with Double]
-  
-  /* 28 */ @js.native
-  object swipeSelect extends TopLevel[swipeSelect with Double]
-  
-  /* 23 */ @js.native
-  object transitionContent extends TopLevel[transitionContent with Double]
-  
-  /* 32 */ @js.native
-  object transitionPage extends TopLevel[transitionPage with Double]
-  
-  /* 35 */ @js.native
-  object updateBadge extends TopLevel[updateBadge with Double]
-  
+  @js.native
+  sealed trait updateBadge
+    extends StObject
+       with AnimationEffect
 }
-

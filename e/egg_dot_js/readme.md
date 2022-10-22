@@ -10,10 +10,10 @@ node.js mvc framework
 | ------------------ | :-------------: |
 | Full name          | egg.js |
 | Keywords           | egg, framework, mvc, node, javascript, js, framework |
-| # releases         | 0 |
-| # dependents       | 0 |
-| # downloads        | 255 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 52.333333333333336 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/artisangang/egg#readme)

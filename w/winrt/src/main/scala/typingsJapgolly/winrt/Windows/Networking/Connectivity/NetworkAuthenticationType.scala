@@ -1,77 +1,62 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NetworkAuthenticationType extends js.Object
-
+sealed trait NetworkAuthenticationType extends StObject
 @JSGlobal("Windows.Networking.Connectivity.NetworkAuthenticationType")
 @js.native
-object NetworkAuthenticationType extends js.Object {
-  @js.native
-  sealed trait ihv extends NetworkAuthenticationType
+object NetworkAuthenticationType extends StObject {
   
   @js.native
-  sealed trait none extends NetworkAuthenticationType
+  sealed trait ihv
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait open80211 extends NetworkAuthenticationType
+  sealed trait none
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait rsna extends NetworkAuthenticationType
+  sealed trait open80211
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait rsnaPsk extends NetworkAuthenticationType
+  sealed trait rsna
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait sharedKey80211 extends NetworkAuthenticationType
+  sealed trait rsnaPsk
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait unknown extends NetworkAuthenticationType
+  sealed trait sharedKey80211
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait wpa extends NetworkAuthenticationType
+  sealed trait unknown
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait wpaNone extends NetworkAuthenticationType
+  sealed trait wpa
+    extends StObject
+       with NetworkAuthenticationType
   
   @js.native
-  sealed trait wpaPsk extends NetworkAuthenticationType
+  sealed trait wpaNone
+    extends StObject
+       with NetworkAuthenticationType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NetworkAuthenticationType with Double] = js.native
-  /* 9 */ @js.native
-  object ihv extends TopLevel[ihv with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object open80211 extends TopLevel[open80211 with Double]
-  
-  /* 7 */ @js.native
-  object rsna extends TopLevel[rsna with Double]
-  
-  /* 8 */ @js.native
-  object rsnaPsk extends TopLevel[rsnaPsk with Double]
-  
-  /* 3 */ @js.native
-  object sharedKey80211 extends TopLevel[sharedKey80211 with Double]
-  
-  /* 1 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 4 */ @js.native
-  object wpa extends TopLevel[wpa with Double]
-  
-  /* 6 */ @js.native
-  object wpaNone extends TopLevel[wpaNone with Double]
-  
-  /* 5 */ @js.native
-  object wpaPsk extends TopLevel[wpaPsk with Double]
-  
+  @js.native
+  sealed trait wpaPsk
+    extends StObject
+       with NetworkAuthenticationType
 }
-

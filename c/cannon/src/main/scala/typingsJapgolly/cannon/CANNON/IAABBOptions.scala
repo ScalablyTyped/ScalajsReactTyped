@@ -1,21 +1,30 @@
 package typingsJapgolly.cannon.CANNON
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAABBOptions extends js.Object {
+trait IAABBOptions extends StObject {
+  
   var lowerBound: js.UndefOr[Vec3] = js.undefined
+  
   var upperBound: js.UndefOr[Vec3] = js.undefined
 }
-
 object IAABBOptions {
-  @scala.inline
-  def apply(lowerBound: Vec3 = null, upperBound: Vec3 = null): IAABBOptions = {
+  
+  inline def apply(): IAABBOptions = {
     val __obj = js.Dynamic.literal()
-    if (lowerBound != null) __obj.updateDynamic("lowerBound")(lowerBound.asInstanceOf[js.Any])
-    if (upperBound != null) __obj.updateDynamic("upperBound")(upperBound.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAABBOptions]
   }
+  
+  extension [Self <: IAABBOptions](x: Self) {
+    
+    inline def setLowerBound(value: Vec3): Self = StObject.set(x, "lowerBound", value.asInstanceOf[js.Any])
+    
+    inline def setLowerBoundUndefined: Self = StObject.set(x, "lowerBound", js.undefined)
+    
+    inline def setUpperBound(value: Vec3): Self = StObject.set(x, "upperBound", value.asInstanceOf[js.Any])
+    
+    inline def setUpperBoundUndefined: Self = StObject.set(x, "upperBound", js.undefined)
+  }
 }
-

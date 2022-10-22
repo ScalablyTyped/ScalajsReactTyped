@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalSupervision
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.mature
 */
-trait RatingIrelandTelevisionType extends js.Object
-
+trait RatingIrelandTelevisionType extends StObject
 object RatingIrelandTelevisionType {
-  @scala.inline
-  def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = this.cast("allAllowed")
-  @scala.inline
-  def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = this.cast("allBlocked")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def children: typingsJapgolly.microsoftGraph.microsoftGraphStrings.children = this.cast("children")
-  @scala.inline
-  def general: typingsJapgolly.microsoftGraph.microsoftGraphStrings.general = this.cast("general")
-  @scala.inline
-  def mature: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mature = this.cast("mature")
-  @scala.inline
-  def parentalSupervision: typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalSupervision = this.cast("parentalSupervision")
-  @scala.inline
-  def youngAdults: typingsJapgolly.microsoftGraph.microsoftGraphStrings.youngAdults = this.cast("youngAdults")
+  
+  inline def allAllowed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allAllowed]
+  
+  inline def allBlocked: typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.allBlocked]
+  
+  inline def children: typingsJapgolly.microsoftGraph.microsoftGraphStrings.children = "children".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.children]
+  
+  inline def general: typingsJapgolly.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.general]
+  
+  inline def mature: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mature = "mature".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mature]
+  
+  inline def parentalSupervision: typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalSupervision = "parentalSupervision".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.parentalSupervision]
+  
+  inline def youngAdults: typingsJapgolly.microsoftGraph.microsoftGraphStrings.youngAdults = "youngAdults".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.youngAdults]
 }
-

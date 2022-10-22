@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.WiFiDirect.Services
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WiFiDirectServiceError extends js.Object
-
+sealed trait WiFiDirectServiceError extends StObject
 /** Values used for the WiFiDirectServiceAdvertiser.ServiceError property. */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectServiceError")
 @js.native
-object WiFiDirectServiceError extends js.Object {
+object WiFiDirectServiceError extends StObject {
+  
   /** No Wi-Fi adapter is found. */
   @js.native
-  sealed trait noHardware extends WiFiDirectServiceError
+  sealed trait noHardware
+    extends StObject
+       with WiFiDirectServiceError
   
   /** The Wi-Fi Direct radio is not available. */
   @js.native
-  sealed trait radioNotAvailable extends WiFiDirectServiceError
+  sealed trait radioNotAvailable
+    extends StObject
+       with WiFiDirectServiceError
   
   /** A required resource is in use. */
   @js.native
-  sealed trait resourceInUse extends WiFiDirectServiceError
+  sealed trait resourceInUse
+    extends StObject
+       with WiFiDirectServiceError
   
   /** No error. */
   @js.native
-  sealed trait success extends WiFiDirectServiceError
+  sealed trait success
+    extends StObject
+       with WiFiDirectServiceError
   
   /** The Wi-Fi adapter does not support Wi-Fi Direct. */
   @js.native
-  sealed trait unsupportedHardware extends WiFiDirectServiceError
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WiFiDirectServiceError with Double] = js.native
-  /* 4 */ @js.native
-  object noHardware extends TopLevel[noHardware with Double]
-  
-  /* 1 */ @js.native
-  object radioNotAvailable extends TopLevel[radioNotAvailable with Double]
-  
-  /* 2 */ @js.native
-  object resourceInUse extends TopLevel[resourceInUse with Double]
-  
-  /* 0 */ @js.native
-  object success extends TopLevel[success with Double]
-  
-  /* 3 */ @js.native
-  object unsupportedHardware extends TopLevel[unsupportedHardware with Double]
-  
+  sealed trait unsupportedHardware
+    extends StObject
+       with WiFiDirectServiceError
 }
-

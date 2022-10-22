@@ -1,12 +1,12 @@
 package typingsJapgolly.kurentoClient.mod
 
 import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.kurentoClient.mod.KurentoClient.Constructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kurento-client", JSImport.Namespace)
 @js.native
-object ^ extends TopLevel[Constructor]
-
+object ^
+  extends StObject
+     with TopLevel[Constructor]

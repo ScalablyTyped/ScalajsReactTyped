@@ -1,27 +1,23 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`3`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`3`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
 */
-trait XdSignatureRelation extends js.Object
-
+trait XdSignatureRelation extends StObject
 object XdSignatureRelation {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xdSignatureRelationCoSign: `2` = this.cast(2)
-  @scala.inline
-  def xdSignatureRelationCounterSign: `3` = this.cast(3)
-  @scala.inline
-  def xdSignatureRelationSingle: `1` = this.cast(1)
+  
+  inline def xdSignatureRelationCoSign: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xdSignatureRelationCounterSign: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xdSignatureRelationSingle: `1` = 1.asInstanceOf[`1`]
 }
-

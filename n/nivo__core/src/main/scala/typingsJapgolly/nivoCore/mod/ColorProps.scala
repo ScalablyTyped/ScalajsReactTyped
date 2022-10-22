@@ -1,21 +1,34 @@
 package typingsJapgolly.nivoCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColorProps[T] extends js.Object {
+trait ColorProps[T] extends StObject {
+  
   var colorBy: js.UndefOr[String | GetColor[T]] = js.undefined
+  
   var colors: js.UndefOr[Colors] = js.undefined
 }
-
 object ColorProps {
-  @scala.inline
-  def apply[T](colorBy: String | GetColor[T] = null, colors: Colors = null): ColorProps[T] = {
+  
+  inline def apply[T](): ColorProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (colorBy != null) __obj.updateDynamic("colorBy")(colorBy.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorProps[T]]
   }
+  
+  extension [Self <: ColorProps[?], T](x: Self & ColorProps[T]) {
+    
+    inline def setColorBy(value: String | GetColor[T]): Self = StObject.set(x, "colorBy", value.asInstanceOf[js.Any])
+    
+    inline def setColorByFunction1(value: T => String): Self = StObject.set(x, "colorBy", js.Any.fromFunction1(value))
+    
+    inline def setColorByUndefined: Self = StObject.set(x, "colorBy", js.undefined)
+    
+    inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
+  }
 }
-

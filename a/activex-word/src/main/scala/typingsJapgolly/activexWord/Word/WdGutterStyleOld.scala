@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-10`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
+import typingsJapgolly.activexWord.activexWordInts.`-10`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-10`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`-10`
 */
-trait WdGutterStyleOld extends js.Object
-
+trait WdGutterStyleOld extends StObject
 object WdGutterStyleOld {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdGutterStyleBidi: `2` = this.cast(2)
-  @scala.inline
-  def wdGutterStyleLatin: `-10` = this.cast(-10)
+  
+  inline def wdGutterStyleBidi: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdGutterStyleLatin: `-10` = -10.asInstanceOf[`-10`]
 }
-

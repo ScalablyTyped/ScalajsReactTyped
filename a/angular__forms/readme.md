@@ -1,7 +1,7 @@
 
 # Scala.js typings for angular__forms
 
-Typings are for version 8.2.14
+Typings are for version 14.2.6
 
 ## Library description:
 Angular - directives and services for creating forms
@@ -10,10 +10,10 @@ Angular - directives and services for creating forms
 | ------------------ | :-------------: |
 | Full name          | @angular/forms |
 | Keywords           | - |
-| # releases         | 180 |
-| # dependents       | 6143 |
-| # downloads        | 54106634 |
-| # stars            | 11 |
+| # releases         | 220 |
+| # dependents       | 0.0 |
+| # downloads        | 9178776.666666666 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/angular/angular#readme)

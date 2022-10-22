@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings._empty
   - typingsJapgolly.std.stdStrings.maybe
   - typingsJapgolly.std.stdStrings.probably
 */
-trait CanPlayTypeResult extends js.Object
-
+trait CanPlayTypeResult extends StObject
 object CanPlayTypeResult {
-  @scala.inline
-  def _empty: typingsJapgolly.std.stdStrings._empty = this.cast("")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def maybe: typingsJapgolly.std.stdStrings.maybe = this.cast("maybe")
-  @scala.inline
-  def probably: typingsJapgolly.std.stdStrings.probably = this.cast("probably")
+  
+  inline def _empty: typingsJapgolly.std.stdStrings._empty = "".asInstanceOf[typingsJapgolly.std.stdStrings._empty]
+  
+  inline def maybe: typingsJapgolly.std.stdStrings.maybe = "maybe".asInstanceOf[typingsJapgolly.std.stdStrings.maybe]
+  
+  inline def probably: typingsJapgolly.std.stdStrings.probably = "probably".asInstanceOf[typingsJapgolly.std.stdStrings.probably]
 }
-

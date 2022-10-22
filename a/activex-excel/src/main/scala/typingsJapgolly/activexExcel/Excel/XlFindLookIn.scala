@@ -1,27 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4123`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4144`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4163`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4123`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4144`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4163`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4144`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4123`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4163`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4144`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4123`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4163`
 */
-trait XlFindLookIn extends js.Object
-
+trait XlFindLookIn extends StObject
 object XlFindLookIn {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlComments: `-4144` = this.cast(-4144)
-  @scala.inline
-  def xlFormulas: `-4123` = this.cast(-4123)
-  @scala.inline
-  def xlValues: `-4163` = this.cast(-4163)
+  
+  inline def xlComments: `-4144` = -4144.asInstanceOf[`-4144`]
+  
+  inline def xlFormulas: `-4123` = -4123.asInstanceOf[`-4123`]
+  
+  inline def xlValues: `-4163` = -4163.asInstanceOf[`-4163`]
 }
-

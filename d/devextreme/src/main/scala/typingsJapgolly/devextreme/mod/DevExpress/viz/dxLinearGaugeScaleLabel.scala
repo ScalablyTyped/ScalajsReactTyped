@@ -1,39 +1,29 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.devextreme.AnonValueText
-import typingsJapgolly.devextreme.devextremeStrings.hide
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.mod.DevExpress.ui.format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxLinearGaugeScaleLabel extends BaseGaugeScaleLabel {
-  /** Specifies the spacing between scale labels and ticks. */
+trait dxLinearGaugeScaleLabel
+  extends StObject
+     with BaseGaugeScaleLabel {
+  
+  /**
+    * Specifies the spacing between scale labels and ticks.
+    */
   var indentFromTick: js.UndefOr[Double] = js.undefined
 }
-
 object dxLinearGaugeScaleLabel {
-  @scala.inline
-  def apply(
-    customizeText: /* scaleValue */ AnonValueText => CallbackTo[String] = null,
-    font: Font = null,
-    format: format = null,
-    indentFromTick: Int | Double = null,
-    overlappingBehavior: hide | none = null,
-    useRangeColors: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxLinearGaugeScaleLabel = {
+  
+  inline def apply(): dxLinearGaugeScaleLabel = {
     val __obj = js.Dynamic.literal()
-    if (customizeText != null) __obj.updateDynamic("customizeText")(js.Any.fromFunction1((t0: /* scaleValue */ typingsJapgolly.devextreme.AnonValueText) => customizeText(t0).runNow()))
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (indentFromTick != null) __obj.updateDynamic("indentFromTick")(indentFromTick.asInstanceOf[js.Any])
-    if (overlappingBehavior != null) __obj.updateDynamic("overlappingBehavior")(overlappingBehavior.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRangeColors)) __obj.updateDynamic("useRangeColors")(useRangeColors.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxLinearGaugeScaleLabel]
   }
+  
+  extension [Self <: dxLinearGaugeScaleLabel](x: Self) {
+    
+    inline def setIndentFromTick(value: Double): Self = StObject.set(x, "indentFromTick", value.asInstanceOf[js.Any])
+    
+    inline def setIndentFromTickUndefined: Self = StObject.set(x, "indentFromTick", js.undefined)
+  }
 }
-

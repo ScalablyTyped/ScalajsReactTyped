@@ -1,13 +1,13 @@
 package typingsJapgolly.uirouterAngularjs.mod.core
 
-import typingsJapgolly.uirouterCore.urlInterfaceMod.UrlMatcherCompileConfig
+import typingsJapgolly.uirouterCore.libUrlInterfaceMod.UrlMatcherCompileConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "core.UrlMatcher")
 @js.native
-class UrlMatcher protected ()
+open class UrlMatcher protected ()
   extends typingsJapgolly.uirouterCore.mod.UrlMatcher {
   /**
     * @param pattern The pattern to compile into a matcher.
@@ -17,23 +17,23 @@ class UrlMatcher protected ()
     */
   def this(
     pattern: String,
-    paramTypes: typingsJapgolly.uirouterCore.paramTypesMod.ParamTypes,
-    paramFactory: typingsJapgolly.uirouterCore.urlMatcherFactoryMod.ParamFactory
+    paramTypes: typingsJapgolly.uirouterCore.libParamsParamTypesMod.ParamTypes,
+    paramFactory: typingsJapgolly.uirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory
   ) = this()
   def this(
     pattern: String,
-    paramTypes: typingsJapgolly.uirouterCore.paramTypesMod.ParamTypes,
-    paramFactory: typingsJapgolly.uirouterCore.urlMatcherFactoryMod.ParamFactory,
+    paramTypes: typingsJapgolly.uirouterCore.libParamsParamTypesMod.ParamTypes,
+    paramFactory: typingsJapgolly.uirouterCore.libUrlUrlMatcherFactoryMod.ParamFactory,
     config: UrlMatcherCompileConfig
   ) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "core.UrlMatcher")
-@js.native
-object UrlMatcher extends js.Object {
-  /** @hidden */
-  var nameValidator: js.RegExp = js.native
+object UrlMatcher {
+  
+  @JSImport("@uirouter/angularjs", "core.UrlMatcher")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Compare two UrlMatchers
     *
@@ -43,15 +43,23 @@ object UrlMatcher extends js.Object {
     *
     * The comparison function sorts static segments before dynamic ones.
     */
-  def compare(
-    a: typingsJapgolly.uirouterCore.urlMatcherMod.UrlMatcher,
-    b: typingsJapgolly.uirouterCore.urlMatcherMod.UrlMatcher
-  ): Double = js.native
-  /** @hidden */
-  def encodeDashes(str: String): String = js.native
-  /** @hidden Given a matcher, return an array with the matcher's path segments and path params, in order */
-  def pathSegmentsAndParams(matcher: typingsJapgolly.uirouterCore.urlMatcherMod.UrlMatcher): js.Any = js.native
-  /** @hidden Given a matcher, return an array with the matcher's query params */
-  def queryParams(matcher: typingsJapgolly.uirouterCore.urlMatcherMod.UrlMatcher): js.Array[typingsJapgolly.uirouterCore.paramMod.Param] = js.native
+  inline def compare(
+    a: typingsJapgolly.uirouterCore.libUrlUrlMatcherMod.UrlMatcher,
+    b: typingsJapgolly.uirouterCore.libUrlUrlMatcherMod.UrlMatcher
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /** @internal */
+  inline def encodeDashes(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDashes")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /** @internal */
+  @JSImport("@uirouter/angularjs", "core.UrlMatcher.nameValidator")
+  @js.native
+  def nameValidator: js.RegExp = js.native
+  inline def nameValidator_=(x: js.RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameValidator")(x.asInstanceOf[js.Any])
+  
+  /** @internal Given a matcher, return an array with the matcher's path segments and path params, in order */
+  inline def pathSegmentsAndParams(matcher: typingsJapgolly.uirouterCore.libUrlUrlMatcherMod.UrlMatcher): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pathSegmentsAndParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  /** @internal Given a matcher, return an array with the matcher's query params */
+  inline def queryParams(matcher: typingsJapgolly.uirouterCore.libUrlUrlMatcherMod.UrlMatcher): js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("queryParams")(matcher.asInstanceOf[js.Any]).asInstanceOf[js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]]
 }
-

@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.FocusedCellChanging event.
   */
-@JSGlobal("ASPxClientGridViewFocusedCellChangingEventArgs")
-@js.native
-class ASPxClientGridViewFocusedCellChangingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientGridViewFocusedCellChangingEventArgs class with specified settings.
-    * @param cellInfo A ASPxClientGridViewCellInfo object providing information about the focused cell.
-    */
-  def this(cellInfo: ASPxClientGridViewCellInfo) = this()
+trait ASPxClientGridViewFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Provides information on a cell currently being focused.
     */
-  var cellInfo: ASPxClientGridViewCellInfo = js.native
+  var cellInfo: ASPxClientGridViewCellInfo
 }
-
+object ASPxClientGridViewFocusedCellChangingEventArgs {
+  
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientGridViewCellInfo): ASPxClientGridViewFocusedCellChangingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientGridViewFocusedCellChangingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientGridViewFocusedCellChangingEventArgs](x: Self) {
+    
+    inline def setCellInfo(value: ASPxClientGridViewCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+  }
+}

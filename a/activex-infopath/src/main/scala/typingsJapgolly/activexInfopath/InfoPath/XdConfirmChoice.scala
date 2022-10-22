@@ -1,31 +1,27 @@
 package typingsJapgolly.activexInfopath.InfoPath
 
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`6`
-import typingsJapgolly.activexInfopath.activexInfopathNumbers.`7`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`6`
+import typingsJapgolly.activexInfopath.activexInfopathInts.`7`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`2`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`7`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`1`
-  - typingsJapgolly.activexInfopath.activexInfopathNumbers.`6`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`2`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`7`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`1`
+  - typingsJapgolly.activexInfopath.activexInfopathInts.`6`
 */
-trait XdConfirmChoice extends js.Object
-
+trait XdConfirmChoice extends StObject
 object XdConfirmChoice {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xdCancel: `2` = this.cast(2)
-  @scala.inline
-  def xdNo: `7` = this.cast(7)
-  @scala.inline
-  def xdOK: `1` = this.cast(1)
-  @scala.inline
-  def xdYes: `6` = this.cast(6)
+  
+  inline def xdCancel: `2` = 2.asInstanceOf[`2`]
+  
+  inline def xdNo: `7` = 7.asInstanceOf[`7`]
+  
+  inline def xdOK: `1` = 1.asInstanceOf[`1`]
+  
+  inline def xdYes: `6` = 6.asInstanceOf[`6`]
 }
-

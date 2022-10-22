@@ -10,13 +10,13 @@ The second AsciiMath – MathML converter
 | ------------------ | :-------------: |
 | Full name          | ascii2mathml |
 | Keywords           | mathml, asciimath, asciimathml |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 13689 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1537.0 |
+| # stars            | 47.0 |
 
 ## Links
-- [Homepage](https://runarberg.github.io/ascii2mathml/)
+- [Homepage](https://github.com/runarberg/ascii2mathml#readme)
 - [Bugs](https://github.com/runarberg/ascii2mathml/issues)
 - [Repository](https://github.com/runarberg/ascii2mathml)
 - [Npm](https://www.npmjs.com/package/ascii2mathml)

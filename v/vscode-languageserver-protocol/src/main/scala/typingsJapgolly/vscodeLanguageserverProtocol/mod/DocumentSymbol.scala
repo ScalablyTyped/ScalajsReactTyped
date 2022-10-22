@@ -1,27 +1,15 @@
 package typingsJapgolly.vscodeLanguageserverProtocol.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver-protocol", "DocumentSymbol")
-@js.native
-object DocumentSymbol extends js.Object {
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
-    range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
-    selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
-  def create(
-    name: String,
-    detail: js.UndefOr[scala.Nothing],
-    kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
-    range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
-    selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
-    children: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
+object DocumentSymbol {
+  
+  @JSImport("vscode-languageserver-protocol", "DocumentSymbol")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new symbol information literal.
     *
@@ -32,24 +20,39 @@ object DocumentSymbol extends js.Object {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
-  def create(
+  inline def create(
     name: String,
     detail: String,
     kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
     selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
-  def create(
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
+  inline def create(
     name: String,
     detail: String,
     kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
     range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
     selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
     children: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
-  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = js.native
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
+  inline def create(
+    name: String,
+    detail: Unit,
+    kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
+    range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
+    selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
+  inline def create(
+    name: String,
+    detail: Unit,
+    kind: typingsJapgolly.vscodeLanguageserverTypes.mod.SymbolKind,
+    range: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
+    selectionRange: typingsJapgolly.vscodeLanguageserverTypes.mod.Range,
+    children: js.Array[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
+  ): typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.vscodeLanguageserverTypes.mod.DocumentSymbol]
+  
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = js.native
+  inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
 }
-

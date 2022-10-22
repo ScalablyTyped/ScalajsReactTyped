@@ -1,17 +1,7 @@
 package typingsJapgolly.phaser.spine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("spine.DebugUtils")
-@js.native
-class DebugUtils () extends js.Object
-
-/* static members */
-@JSGlobal("spine.DebugUtils")
-@js.native
-object DebugUtils extends js.Object {
-  def logBones(skeleton: Skeleton): Unit = js.native
-}
-
+trait DebugUtils extends StObject

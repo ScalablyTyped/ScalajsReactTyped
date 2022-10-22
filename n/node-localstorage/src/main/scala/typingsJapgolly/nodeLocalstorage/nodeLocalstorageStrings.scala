@@ -1,14 +1,12 @@
 package typingsJapgolly.nodeLocalstorage
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeLocalstorageStrings {
-  @js.native
-  sealed trait storage extends js.Object
   
-  @scala.inline
-  def storage: storage = "storage".asInstanceOf[storage]
+  @js.native
+  sealed trait storage extends StObject
+  inline def storage: storage = "storage".asInstanceOf[storage]
 }
-

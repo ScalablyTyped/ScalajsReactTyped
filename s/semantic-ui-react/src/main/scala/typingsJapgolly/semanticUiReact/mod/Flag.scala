@@ -1,13 +1,10 @@
 package typingsJapgolly.semanticUiReact.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.semanticUiReact.flagFlagMod.FlagProps
+import typingsJapgolly.semanticUiReact.distCommonjsElementsFlagMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Flag")
 @js.native
-class Flag ()
-  extends Component[FlagProps, js.Object, js.Any]
-
+open class Flag () extends default

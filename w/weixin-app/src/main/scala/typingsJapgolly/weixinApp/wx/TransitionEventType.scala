@@ -1,8 +1,8 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.transitionend
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.weixinApp.weixinAppStrings.animationiteration
   - typingsJapgolly.weixinApp.weixinAppStrings.animationend
 */
-trait TransitionEventType extends js.Object
-
+trait TransitionEventType extends StObject
 object TransitionEventType {
-  @scala.inline
-  def animationend: typingsJapgolly.weixinApp.weixinAppStrings.animationend = this.cast("animationend")
-  @scala.inline
-  def animationiteration: typingsJapgolly.weixinApp.weixinAppStrings.animationiteration = this.cast("animationiteration")
-  @scala.inline
-  def animationstart: typingsJapgolly.weixinApp.weixinAppStrings.animationstart = this.cast("animationstart")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def transitionend: typingsJapgolly.weixinApp.weixinAppStrings.transitionend = this.cast("transitionend")
+  
+  inline def animationend: typingsJapgolly.weixinApp.weixinAppStrings.animationend = "animationend".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.animationend]
+  
+  inline def animationiteration: typingsJapgolly.weixinApp.weixinAppStrings.animationiteration = "animationiteration".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.animationiteration]
+  
+  inline def animationstart: typingsJapgolly.weixinApp.weixinAppStrings.animationstart = "animationstart".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.animationstart]
+  
+  inline def transitionend: typingsJapgolly.weixinApp.weixinAppStrings.transitionend = "transitionend".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.transitionend]
 }
-

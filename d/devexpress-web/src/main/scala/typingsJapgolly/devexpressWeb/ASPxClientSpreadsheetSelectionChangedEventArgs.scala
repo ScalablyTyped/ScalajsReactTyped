@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.SelectionChanged event.
   */
-@JSGlobal("ASPxClientSpreadsheetSelectionChangedEventArgs")
-@js.native
-class ASPxClientSpreadsheetSelectionChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpreadsheetSelectionChangedEventArgs within the specified setting.
-    * @param selection An ASPxClientSpreadsheetSelection object defining the selection in the Spreadsheet.
-    */
-  def this(selection: ASPxClientSpreadsheetSelection) = this()
+trait ASPxClientSpreadsheetSelectionChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets an object that determines the currently selected region within the Spreadsheet.
     */
-  var selection: ASPxClientSpreadsheetSelection = js.native
+  var selection: ASPxClientSpreadsheetSelection
 }
-
+object ASPxClientSpreadsheetSelectionChangedEventArgs {
+  
+  inline def apply(selection: ASPxClientSpreadsheetSelection): ASPxClientSpreadsheetSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpreadsheetSelectionChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSpreadsheetSelectionChangedEventArgs](x: Self) {
+    
+    inline def setSelection(value: ASPxClientSpreadsheetSelection): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+  }
+}

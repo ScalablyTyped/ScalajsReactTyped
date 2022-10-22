@@ -1,43 +1,37 @@
 package typingsJapgolly.cswAasJs.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.cswAasJs.checkLoginMod.CheckLoginProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.cswAasJs.distComponentsAuthenticationCheckLoginMod.CheckLoginProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CheckLogin {
-  def apply(
-    error: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    CheckLoginProps, 
-    MountedWithRawType[CheckLoginProps, js.Object, RawMounted[CheckLoginProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (error != null) __obj.updateDynamic("error")(error.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.cswAasJs.checkLoginMod.CheckLoginProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.cswAasJs.checkLoginMod.CheckLoginProps])(children: _*)
-  }
-  @JSImport("csw-aas-js/dist/components/authentication/CheckLogin", JSImport.Default)
+  @JSImport("csw-aas-js", "CheckLogin")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def error(value: VdomNode): this.type = set("error", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def errorNull: this.type = set("error", null)
+    
+    inline def errorVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("error", js.Array(value*))
+    
+    inline def errorVdomElement(value: VdomElement): this.type = set("error", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: CheckLogin.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CheckLoginProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

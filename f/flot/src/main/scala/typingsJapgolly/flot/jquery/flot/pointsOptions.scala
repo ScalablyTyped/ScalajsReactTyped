@@ -1,32 +1,32 @@
 package typingsJapgolly.flot.jquery.flot
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait pointsOptions extends seriesTypeBase {
+trait pointsOptions
+  extends StObject
+     with seriesTypeBase {
+  
   var radius: js.UndefOr[Double] = js.undefined
-  var symbol: js.UndefOr[js.Any] = js.undefined
+  
+  var symbol: js.UndefOr[Any] = js.undefined
 }
-
 object pointsOptions {
-  @scala.inline
-  def apply(
-    fill: js.Any = null,
-    fillColor: js.Any = null,
-    lineWidth: Int | Double = null,
-    radius: Int | Double = null,
-    show: js.UndefOr[Boolean] = js.undefined,
-    symbol: js.Any = null
-  ): pointsOptions = {
+  
+  inline def apply(): pointsOptions = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
-    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
     __obj.asInstanceOf[pointsOptions]
   }
+  
+  extension [Self <: pointsOptions](x: Self) {
+    
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    
+    inline def setSymbol(value: Any): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+  }
 }
-

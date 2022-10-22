@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Contacts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ContactCardHeaderKind extends js.Object
-
+sealed trait ContactCardHeaderKind extends StObject
 /** Specifies the type of header information to show on a contact card. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactCardHeaderKind")
 @js.native
-object ContactCardHeaderKind extends js.Object {
-  /** Display a basic header. */
-  @js.native
-  sealed trait basic extends ContactCardHeaderKind
+object ContactCardHeaderKind extends StObject {
   
   /** Display the default header. */
   @js.native
-  sealed trait default extends ContactCardHeaderKind
+  sealed trait default
+    extends StObject
+       with ContactCardHeaderKind
+  
+  /** Display a basic header. */
+  @js.native
+  sealed trait basic
+    extends StObject
+       with ContactCardHeaderKind
   
   /** Display an enterprise header. */
   @js.native
-  sealed trait enterprise extends ContactCardHeaderKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ContactCardHeaderKind with Double] = js.native
-  /* 1 */ @js.native
-  object basic extends TopLevel[basic with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 2 */ @js.native
-  object enterprise extends TopLevel[enterprise with Double]
-  
+  sealed trait enterprise
+    extends StObject
+       with ContactCardHeaderKind
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponsiveRulesConditionOptions extends js.Object {
+trait ResponsiveRulesConditionOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to gain
     * complete control on when the responsive rule applies. Return `true` if it
@@ -12,44 +13,58 @@ trait ResponsiveRulesConditionOptions extends js.Object {
     * size, for example the document size or other elements.
     */
   var callback: js.UndefOr[ResponsiveCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The responsive rule applies if
     * the chart height is less than this.
     */
   var maxHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The responsive rule applies if
     * the chart width is less than this.
     */
   var maxWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The responsive rule applies if
     * the chart height is greater than this.
     */
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The responsive rule applies if
     * the chart width is greater than this.
     */
   var minWidth: js.UndefOr[Double] = js.undefined
 }
-
 object ResponsiveRulesConditionOptions {
-  @scala.inline
-  def apply(
-    callback: ResponsiveCallbackFunction = null,
-    maxHeight: Int | Double = null,
-    maxWidth: Int | Double = null,
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null
-  ): ResponsiveRulesConditionOptions = {
+  
+  inline def apply(): ResponsiveRulesConditionOptions = {
     val __obj = js.Dynamic.literal()
-    if (callback != null) __obj.updateDynamic("callback")(callback.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveRulesConditionOptions]
   }
+  
+  extension [Self <: ResponsiveRulesConditionOptions](x: Self) {
+    
+    inline def setCallback(value: ResponsiveCallbackFunction): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+  }
 }
-

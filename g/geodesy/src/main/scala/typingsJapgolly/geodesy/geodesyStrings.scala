@@ -2,35 +2,39 @@ package typingsJapgolly.geodesy
 
 import typingsJapgolly.geodesy.mod.Format
 import typingsJapgolly.geodesy.utmMod.Hemisphere
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geodesyStrings {
-  @js.native
-  sealed trait N extends Hemisphere
   
   @js.native
-  sealed trait S extends Hemisphere
+  sealed trait N
+    extends StObject
+       with Hemisphere
+  inline def N: N = "N".asInstanceOf[N]
   
   @js.native
-  sealed trait d extends Format
+  sealed trait S
+    extends StObject
+       with Hemisphere
+  inline def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait dm extends Format
+  sealed trait d
+    extends StObject
+       with Format
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
-  sealed trait dms extends Format
+  sealed trait dm
+    extends StObject
+       with Format
+  inline def dm: dm = "dm".asInstanceOf[dm]
   
-  @scala.inline
-  def N: N = "N".asInstanceOf[N]
-  @scala.inline
-  def S: S = "S".asInstanceOf[S]
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
-  @scala.inline
-  def dm: dm = "dm".asInstanceOf[dm]
-  @scala.inline
-  def dms: dms = "dms".asInstanceOf[dms]
+  @js.native
+  sealed trait dms
+    extends StObject
+       with Format
+  inline def dms: dms = "dms".asInstanceOf[dms]
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.classTransformer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classTransformerStrings {
-  @js.native
-  sealed trait excludeAll extends js.Object
   
   @js.native
-  sealed trait exposeAll extends js.Object
+  sealed trait excludeAll extends StObject
+  inline def excludeAll: excludeAll = "excludeAll".asInstanceOf[excludeAll]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait exposeAll extends StObject
+  inline def exposeAll: exposeAll = "exposeAll".asInstanceOf[exposeAll]
   
-  @scala.inline
-  def excludeAll: excludeAll = "excludeAll".asInstanceOf[excludeAll]
-  @scala.inline
-  def exposeAll: exposeAll = "exposeAll".asInstanceOf[exposeAll]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
 }
-

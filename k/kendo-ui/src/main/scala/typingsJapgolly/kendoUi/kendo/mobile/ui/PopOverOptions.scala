@@ -1,34 +1,49 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopOverOptions extends js.Object {
+trait PopOverOptions extends StObject {
+  
   var close: js.UndefOr[js.Function1[/* e */ PopOverCloseEvent, Unit]] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var open: js.UndefOr[js.Function1[/* e */ PopOverOpenEvent, Unit]] = js.undefined
+  
   var pane: js.UndefOr[PopOverPane] = js.undefined
+  
   var popup: js.UndefOr[PopOverPopup] = js.undefined
 }
-
 object PopOverOptions {
-  @scala.inline
-  def apply(
-    close: /* e */ PopOverCloseEvent => Callback = null,
-    name: String = null,
-    open: /* e */ PopOverOpenEvent => Callback = null,
-    pane: PopOverPane = null,
-    popup: PopOverPopup = null
-  ): PopOverOptions = {
+  
+  inline def apply(): PopOverOptions = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.PopOverCloseEvent) => close(t0).runNow()))
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.mobile.ui.PopOverOpenEvent) => open(t0).runNow()))
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (popup != null) __obj.updateDynamic("popup")(popup.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopOverOptions]
   }
+  
+  extension [Self <: PopOverOptions](x: Self) {
+    
+    inline def setClose(value: /* e */ PopOverCloseEvent => Callback): Self = StObject.set(x, "close", js.Any.fromFunction1((t0: /* e */ PopOverCloseEvent) => value(t0).runNow()))
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOpen(value: /* e */ PopOverOpenEvent => Callback): Self = StObject.set(x, "open", js.Any.fromFunction1((t0: /* e */ PopOverOpenEvent) => value(t0).runNow()))
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    
+    inline def setPane(value: PopOverPane): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    
+    inline def setPopup(value: PopOverPopup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    
+    inline def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
+  }
 }
-

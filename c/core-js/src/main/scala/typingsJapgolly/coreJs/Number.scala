@@ -1,20 +1,20 @@
 package typingsJapgolly.coreJs
 
 import typingsJapgolly.std.IterableIterator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #############################################################################################
 // Number - https://github.com/zloirock/core-js/#number
 // Modules: core.number.iterator
 // #############################################################################################
 @js.native
-trait Number extends js.Object {
+trait Number extends StObject {
+  
   /**
     * Non-standard.
     */
-  @JSName(scala.scalajs.js.Symbol.iterator)
+  @JSName(js.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Double]] = js.native
 }
-

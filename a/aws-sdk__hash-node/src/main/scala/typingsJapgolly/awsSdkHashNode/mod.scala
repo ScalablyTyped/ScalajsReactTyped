@@ -1,29 +1,20 @@
 package typingsJapgolly.awsSdkHashNode
 
-import typingsJapgolly.awsSdkHashNode.awsSdkHashNodeStrings.ascii
-import typingsJapgolly.awsSdkHashNode.awsSdkHashNodeStrings.latin1
-import typingsJapgolly.awsSdkHashNode.awsSdkHashNodeStrings.utf8
-import typingsJapgolly.awsSdkTypes.cryptoMod.SourceData
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.SourceData
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/hash-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/hash-node", "Hash")
   @js.native
-  class Hash protected ()
-    extends typingsJapgolly.awsSdkTypes.cryptoMod.Hash {
+  open class Hash protected ()
+    extends StObject
+       with typingsJapgolly.awsSdkTypes.distTypesCryptoMod.Hash {
     def this(algorithmIdentifier: String) = this()
     def this(algorithmIdentifier: String, secret: SourceData) = this()
-    val hash: js.Any = js.native
-    @JSName("update")
-    def update_ascii(toHash: SourceData, encoding: ascii): Unit = js.native
-    @JSName("update")
-    def update_latin1(toHash: SourceData, encoding: latin1): Unit = js.native
-    @JSName("update")
-    def update_utf8(toHash: SourceData, encoding: utf8): Unit = js.native
+    
+    /* private */ val hash: Any = js.native
   }
-  
 }
-

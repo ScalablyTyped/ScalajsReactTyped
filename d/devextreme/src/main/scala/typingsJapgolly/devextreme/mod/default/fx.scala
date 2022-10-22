@@ -1,18 +1,30 @@
 package typingsJapgolly.devextreme.mod.default
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.animationConfig
-import typingsJapgolly.devextreme.mod._Global_.JQueryPromise
-import typingsJapgolly.devextreme.mod._Global_.Promise
+import org.scalajs.dom.Element
+import typingsJapgolly.devextreme.mod.DevExpress.AnimationConfig
+import typingsJapgolly.devextreme.mod.DevExpress.core.utils.DxPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "fx")
-@js.native
-object fx extends js.Object {
-  def animate(element: Element, config: animationConfig): Promise[Unit] with JQueryPromise[Unit] = js.native
-  def isAnimating(element: Element): Boolean = js.native
-  def stop(element: Element, jumpToEnd: Boolean): Unit = js.native
+object fx {
+  
+  @JSImport("devextreme", "default.fx")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Animates an element.
+    */
+  inline def animate(element: Element, config: AnimationConfig): DxPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[DxPromise[Unit]]
+  
+  /**
+    * Checks whether an element is being animated.
+    */
+  inline def isAnimating(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimating")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  /**
+    * Stops an element&apos;s animation.
+    */
+  inline def stop(element: Element, jumpToEnd: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stop")(element.asInstanceOf[js.Any], jumpToEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

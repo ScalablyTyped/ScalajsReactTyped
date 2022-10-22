@@ -1,12 +1,13 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.one_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.one
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.one_
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.two
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.three
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.four
@@ -27,52 +28,48 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyOne
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyFive
 */
-trait MiracastChannel extends js.Object
-
+trait MiracastChannel extends StObject
 object MiracastChannel {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def eight: typingsJapgolly.microsoftGraph.microsoftGraphStrings.eight = this.cast("eight")
-  @scala.inline
-  def eleven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.eleven = this.cast("eleven")
-  @scala.inline
-  def five: typingsJapgolly.microsoftGraph.microsoftGraphStrings.five = this.cast("five")
-  @scala.inline
-  def forty: typingsJapgolly.microsoftGraph.microsoftGraphStrings.forty = this.cast("forty")
-  @scala.inline
-  def fortyEight: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyEight = this.cast("fortyEight")
-  @scala.inline
-  def fortyFour: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyFour = this.cast("fortyFour")
-  @scala.inline
-  def four: typingsJapgolly.microsoftGraph.microsoftGraphStrings.four = this.cast("four")
-  @scala.inline
-  def nine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.nine = this.cast("nine")
-  @scala.inline
-  def one: typingsJapgolly.microsoftGraph.microsoftGraphStrings.one = this.cast("one")
-  @scala.inline
-  def oneHundredFiftySeven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftySeven = this.cast("oneHundredFiftySeven")
-  @scala.inline
-  def oneHundredFiftyThree: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftyThree = this.cast("oneHundredFiftyThree")
-  @scala.inline
-  def oneHundredFortyNine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFortyNine = this.cast("oneHundredFortyNine")
-  @scala.inline
-  def oneHundredSixtyFive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyFive = this.cast("oneHundredSixtyFive")
-  @scala.inline
-  def oneHundredSixtyOne: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyOne = this.cast("oneHundredSixtyOne")
-  @scala.inline
-  def seven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.seven = this.cast("seven")
-  @scala.inline
-  def six: typingsJapgolly.microsoftGraph.microsoftGraphStrings.six = this.cast("six")
-  @scala.inline
-  def ten: typingsJapgolly.microsoftGraph.microsoftGraphStrings.ten = this.cast("ten")
-  @scala.inline
-  def thirtySix: typingsJapgolly.microsoftGraph.microsoftGraphStrings.thirtySix = this.cast("thirtySix")
-  @scala.inline
-  def three: typingsJapgolly.microsoftGraph.microsoftGraphStrings.three = this.cast("three")
-  @scala.inline
-  def two: typingsJapgolly.microsoftGraph.microsoftGraphStrings.two = this.cast("two")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
+  
+  inline def eight: typingsJapgolly.microsoftGraph.microsoftGraphStrings.eight = "eight".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.eight]
+  
+  inline def eleven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.eleven = "eleven".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.eleven]
+  
+  inline def five: typingsJapgolly.microsoftGraph.microsoftGraphStrings.five = "five".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.five]
+  
+  inline def forty: typingsJapgolly.microsoftGraph.microsoftGraphStrings.forty = "forty".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.forty]
+  
+  inline def fortyEight: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyEight = "fortyEight".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyEight]
+  
+  inline def fortyFour: typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyFour = "fortyFour".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.fortyFour]
+  
+  inline def four: typingsJapgolly.microsoftGraph.microsoftGraphStrings.four = "four".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.four]
+  
+  inline def nine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.nine = "nine".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.nine]
+  
+  inline def one: one_ = "one".asInstanceOf[one_]
+  
+  inline def oneHundredFiftySeven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftySeven = "oneHundredFiftySeven".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftySeven]
+  
+  inline def oneHundredFiftyThree: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftyThree = "oneHundredFiftyThree".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFiftyThree]
+  
+  inline def oneHundredFortyNine: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFortyNine = "oneHundredFortyNine".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredFortyNine]
+  
+  inline def oneHundredSixtyFive: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyFive = "oneHundredSixtyFive".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyFive]
+  
+  inline def oneHundredSixtyOne: typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyOne = "oneHundredSixtyOne".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.oneHundredSixtyOne]
+  
+  inline def seven: typingsJapgolly.microsoftGraph.microsoftGraphStrings.seven = "seven".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.seven]
+  
+  inline def six: typingsJapgolly.microsoftGraph.microsoftGraphStrings.six = "six".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.six]
+  
+  inline def ten: typingsJapgolly.microsoftGraph.microsoftGraphStrings.ten = "ten".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.ten]
+  
+  inline def thirtySix: typingsJapgolly.microsoftGraph.microsoftGraphStrings.thirtySix = "thirtySix".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.thirtySix]
+  
+  inline def three: typingsJapgolly.microsoftGraph.microsoftGraphStrings.three = "three".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.three]
+  
+  inline def two: typingsJapgolly.microsoftGraph.microsoftGraphStrings.two = "two".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.two]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
 }
-

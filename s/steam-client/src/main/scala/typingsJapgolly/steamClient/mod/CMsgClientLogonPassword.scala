@@ -1,30 +1,27 @@
 package typingsJapgolly.steamClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CMsgClientLogonPassword extends CMsgClientLogon {
+trait CMsgClientLogonPassword
+  extends StObject
+     with CMsgClientLogon {
+  
   /**
     * Required unless login_key is used
     */
   var password: String
 }
-
 object CMsgClientLogonPassword {
-  @scala.inline
-  def apply(
-    account_name: String,
-    password: String,
-    auth_code: String = null,
-    sha_sentryfile: String = null,
-    two_factor_code: String = null
-  ): CMsgClientLogonPassword = {
+  
+  inline def apply(account_name: String, password: String): CMsgClientLogonPassword = {
     val __obj = js.Dynamic.literal(account_name = account_name.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
-    if (auth_code != null) __obj.updateDynamic("auth_code")(auth_code.asInstanceOf[js.Any])
-    if (sha_sentryfile != null) __obj.updateDynamic("sha_sentryfile")(sha_sentryfile.asInstanceOf[js.Any])
-    if (two_factor_code != null) __obj.updateDynamic("two_factor_code")(two_factor_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogonPassword]
   }
+  
+  extension [Self <: CMsgClientLogonPassword](x: Self) {
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+  }
 }
-

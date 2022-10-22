@@ -1,24 +1,31 @@
 package typingsJapgolly.ionic.definitionsMod
 
 import typingsJapgolly.ionic.ionicStrings.managed
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ManagedStarterTemplate
-  extends BaseStarterTemplate
+  extends StObject
+     with BaseStarterTemplate
      with StarterTemplate {
+  
   var id: String
+  
   var `type`: managed
 }
-
 object ManagedStarterTemplate {
-  @scala.inline
-  def apply(id: String, name: String, projectType: ProjectType, `type`: managed, description: String = null): ManagedStarterTemplate = {
+  
+  inline def apply(id: String, name: String, projectType: ProjectType): ManagedStarterTemplate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("managed")
     __obj.asInstanceOf[ManagedStarterTemplate]
   }
+  
+  extension [Self <: ManagedStarterTemplate](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: managed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

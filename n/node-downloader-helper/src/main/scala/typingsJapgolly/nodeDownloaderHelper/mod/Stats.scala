@@ -1,25 +1,38 @@
 package typingsJapgolly.nodeDownloaderHelper.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Stats extends js.Object {
-   // total size that needs to be downloaded in bytes
+trait Stats extends StObject {
+  
   var downloaded: Double
-   // downloaded size in bytes
+  
+  var name: String
+  
   var progress: Double
-   // progress porcentage 0-100%
+  
   var speed: Double
+  
   var total: Double
 }
-
 object Stats {
-  @scala.inline
-  def apply(downloaded: Double, progress: Double, speed: Double, total: Double): Stats = {
-    val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
   
+  inline def apply(downloaded: Double, name: String, progress: Double, speed: Double, total: Double): Stats = {
+    val __obj = js.Dynamic.literal(downloaded = downloaded.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Stats]
   }
+  
+  extension [Self <: Stats](x: Self) {
+    
+    inline def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+  }
 }
-

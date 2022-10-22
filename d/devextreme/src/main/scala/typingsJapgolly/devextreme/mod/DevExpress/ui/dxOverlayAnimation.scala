@@ -1,24 +1,37 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import typingsJapgolly.devextreme.mod.DevExpress.animationConfig
+import typingsJapgolly.devextreme.mod.DevExpress.AnimationConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxOverlayAnimation extends js.Object {
-  /** An object that defines the animation options used when the widget is being hidden. */
-  var hide: js.UndefOr[animationConfig] = js.undefined
-  /** An object that defines the animation options used when the widget is being shown. */
-  var show: js.UndefOr[animationConfig] = js.undefined
+trait dxOverlayAnimation extends StObject {
+  
+  /**
+    * An object that defines the animation properties used when the UI component is being hidden.
+    */
+  var hide: js.UndefOr[AnimationConfig] = js.undefined
+  
+  /**
+    * An object that defines the animation properties used when the UI component is being shown.
+    */
+  var show: js.UndefOr[AnimationConfig] = js.undefined
 }
-
 object dxOverlayAnimation {
-  @scala.inline
-  def apply(hide: animationConfig = null, show: animationConfig = null): dxOverlayAnimation = {
+  
+  inline def apply(): dxOverlayAnimation = {
     val __obj = js.Dynamic.literal()
-    if (hide != null) __obj.updateDynamic("hide")(hide.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxOverlayAnimation]
   }
+  
+  extension [Self <: dxOverlayAnimation](x: Self) {
+    
+    inline def setHide(value: AnimationConfig): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
+    
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    
+    inline def setShow(value: AnimationConfig): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+  }
 }
-

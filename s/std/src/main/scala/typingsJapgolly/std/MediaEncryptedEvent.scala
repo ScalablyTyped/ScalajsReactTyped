@@ -1,24 +1,17 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaEncryptedEvent extends Event_ {
-  val initData: scala.scalajs.js.typedarray.ArrayBuffer | Null = js.native
+trait MediaEncryptedEvent
+  extends StObject
+     with Event {
+  
+  /* standard dom */
+  val initData: js.typedarray.ArrayBuffer | Null = js.native
+  
+  /* standard dom */
   val initDataType: java.lang.String = js.native
 }
-
-@JSGlobal("MediaEncryptedEvent")
-@js.native
-object MediaEncryptedEvent
-  extends Instantiable1[/* type */ java.lang.String, MediaEncryptedEvent]
-     with Instantiable2[
-      /* type */ java.lang.String, 
-      /* eventInitDict */ MediaEncryptedEventInit, 
-      MediaEncryptedEvent
-    ]
-

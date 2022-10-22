@@ -1,19 +1,19 @@
 package typingsJapgolly.ethereumProtocol.mod
 
-import typingsJapgolly.ethereumProtocol.ethereumProtocolNumbers.`0`
-import typingsJapgolly.ethereumProtocol.ethereumProtocolNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TransactionReceiptWithDecodedLogs extends TransactionReceipt {
+trait TransactionReceiptWithDecodedLogs
+  extends StObject
+     with TransactionReceipt {
+  
   @JSName("logs")
   var logs_TransactionReceiptWithDecodedLogs: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]
 }
-
 object TransactionReceiptWithDecodedLogs {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     blockHash: String,
     blockNumber: Double,
     cumulativeGasUsed: Double,
@@ -22,14 +22,16 @@ object TransactionReceiptWithDecodedLogs {
     logs: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry],
     to: String,
     transactionHash: String,
-    transactionIndex: Double,
-    contractAddress: String = null,
-    status: String | `0` | `1` = null
+    transactionIndex: Double
   ): TransactionReceiptWithDecodedLogs = {
-    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any])
-    if (contractAddress != null) __obj.updateDynamic("contractAddress")(contractAddress.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blockHash = blockHash.asInstanceOf[js.Any], blockNumber = blockNumber.asInstanceOf[js.Any], cumulativeGasUsed = cumulativeGasUsed.asInstanceOf[js.Any], from = from.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any], transactionHash = transactionHash.asInstanceOf[js.Any], transactionIndex = transactionIndex.asInstanceOf[js.Any], contractAddress = null, status = null)
     __obj.asInstanceOf[TransactionReceiptWithDecodedLogs]
   }
+  
+  extension [Self <: TransactionReceiptWithDecodedLogs](x: Self) {
+    
+    inline def setLogs(value: js.Array[LogWithDecodedArgs[DecodedLogArgs] | LogEntry]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+    
+    inline def setLogsVarargs(value: (LogWithDecodedArgs[DecodedLogArgs] | LogEntry)*): Self = StObject.set(x, "logs", js.Array(value*))
+  }
 }
-

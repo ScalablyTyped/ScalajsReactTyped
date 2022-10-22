@@ -1,12 +1,14 @@
 package typingsJapgolly.glVec3
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec3/angle", JSImport.Namespace)
-@js.native
-object angleMod extends js.Object {
-  def default(a: js.Array[Double], b: js.Array[Double]): Double = js.native
+object angleMod {
+  
+  @JSImport("gl-vec3/angle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(a: js.Array[Double], b: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

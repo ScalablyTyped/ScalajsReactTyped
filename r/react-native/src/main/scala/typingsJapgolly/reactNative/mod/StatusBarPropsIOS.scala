@@ -1,39 +1,46 @@
 package typingsJapgolly.reactNative.mod
 
 import typingsJapgolly.reactNative.reactNativeStrings.fade
+import typingsJapgolly.reactNative.reactNativeStrings.none
 import typingsJapgolly.reactNative.reactNativeStrings.slide
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StatusBarPropsIOS extends js.Object {
-  /**
-    * Sets the color of the status bar text.
-    */
-  var barStyle: js.UndefOr[StatusBarStyle] = js.undefined
+trait StatusBarPropsIOS extends StObject {
+  
   /**
     * If the network activity indicator should be visible.
+    *
+    * @platform ios
     */
   var networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The transition effect when showing and hiding the status bar using
     * the hidden prop. Defaults to 'fade'.
+    *
+    * @platform ios
     */
-  var showHideTransition: js.UndefOr[fade | slide] = js.undefined
+  var showHideTransition: js.UndefOr[Null | fade | slide | none] = js.undefined
 }
-
 object StatusBarPropsIOS {
-  @scala.inline
-  def apply(
-    barStyle: StatusBarStyle = null,
-    networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined,
-    showHideTransition: fade | slide = null
-  ): StatusBarPropsIOS = {
+  
+  inline def apply(): StatusBarPropsIOS = {
     val __obj = js.Dynamic.literal()
-    if (barStyle != null) __obj.updateDynamic("barStyle")(barStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(networkActivityIndicatorVisible)) __obj.updateDynamic("networkActivityIndicatorVisible")(networkActivityIndicatorVisible.asInstanceOf[js.Any])
-    if (showHideTransition != null) __obj.updateDynamic("showHideTransition")(showHideTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusBarPropsIOS]
   }
+  
+  extension [Self <: StatusBarPropsIOS](x: Self) {
+    
+    inline def setNetworkActivityIndicatorVisible(value: Boolean): Self = StObject.set(x, "networkActivityIndicatorVisible", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkActivityIndicatorVisibleUndefined: Self = StObject.set(x, "networkActivityIndicatorVisible", js.undefined)
+    
+    inline def setShowHideTransition(value: fade | slide | none): Self = StObject.set(x, "showHideTransition", value.asInstanceOf[js.Any])
+    
+    inline def setShowHideTransitionNull: Self = StObject.set(x, "showHideTransition", null)
+    
+    inline def setShowHideTransitionUndefined: Self = StObject.set(x, "showHideTransition", js.undefined)
+  }
 }
-

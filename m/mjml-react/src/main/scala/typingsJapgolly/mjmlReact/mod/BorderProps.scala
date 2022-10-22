@@ -1,36 +1,54 @@
 package typingsJapgolly.mjmlReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BorderProps extends js.Object {
+trait BorderProps extends StObject {
+  
   var border: js.UndefOr[String] = js.undefined
+  
   var borderBottom: js.UndefOr[String] = js.undefined
+  
   var borderLeft: js.UndefOr[String] = js.undefined
+  
   var borderRadius: js.UndefOr[String | Double] = js.undefined
+  
   var borderRight: js.UndefOr[String] = js.undefined
+  
   var borderTop: js.UndefOr[String] = js.undefined
 }
-
 object BorderProps {
-  @scala.inline
-  def apply(
-    border: String = null,
-    borderBottom: String = null,
-    borderLeft: String = null,
-    borderRadius: String | Double = null,
-    borderRight: String = null,
-    borderTop: String = null
-  ): BorderProps = {
+  
+  inline def apply(): BorderProps = {
     val __obj = js.Dynamic.literal()
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (borderBottom != null) __obj.updateDynamic("borderBottom")(borderBottom.asInstanceOf[js.Any])
-    if (borderLeft != null) __obj.updateDynamic("borderLeft")(borderLeft.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (borderRight != null) __obj.updateDynamic("borderRight")(borderRight.asInstanceOf[js.Any])
-    if (borderTop != null) __obj.updateDynamic("borderTop")(borderTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderProps]
   }
+  
+  extension [Self <: BorderProps](x: Self) {
+    
+    inline def setBorder(value: String): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottom(value: String): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    
+    inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+    
+    inline def setBorderLeft(value: String): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    
+    inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+    
+    inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setBorderRight(value: String): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+    
+    inline def setBorderTop(value: String): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    
+    inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+  }
 }
-

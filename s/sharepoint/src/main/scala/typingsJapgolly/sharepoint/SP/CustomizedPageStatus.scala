@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CustomizedPageStatus extends js.Object
-
+sealed trait CustomizedPageStatus extends StObject
 @JSGlobal("SP.CustomizedPageStatus")
 @js.native
-object CustomizedPageStatus extends js.Object {
-  @js.native
-  sealed trait customized extends CustomizedPageStatus
+object CustomizedPageStatus extends StObject {
   
   @js.native
-  sealed trait none extends CustomizedPageStatus
+  sealed trait customized
+    extends StObject
+       with CustomizedPageStatus
   
   @js.native
-  sealed trait uncustomized extends CustomizedPageStatus
+  sealed trait none
+    extends StObject
+       with CustomizedPageStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CustomizedPageStatus with Double] = js.native
-  /* 2 */ @js.native
-  object customized extends TopLevel[customized with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object uncustomized extends TopLevel[uncustomized with Double]
-  
+  @js.native
+  sealed trait uncustomized
+    extends StObject
+       with CustomizedPageStatus
 }
-

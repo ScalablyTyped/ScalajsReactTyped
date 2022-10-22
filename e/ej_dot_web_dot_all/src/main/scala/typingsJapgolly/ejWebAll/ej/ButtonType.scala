@@ -1,39 +1,30 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ButtonType extends js.Object
-
+sealed trait ButtonType extends StObject
 @JSGlobal("ej.ButtonType")
 @js.native
-object ButtonType extends js.Object {
+object ButtonType extends StObject {
+  
   //Creates button with Built-in button type specified
   @js.native
-  sealed trait Button extends ButtonType
+  sealed trait Button
+    extends StObject
+       with ButtonType
   
   //Creates button with Built-in reset type specified
   @js.native
-  sealed trait Reset extends ButtonType
+  sealed trait Reset
+    extends StObject
+       with ButtonType
   
   //Creates button with Built-in submit type specified
   @js.native
-  sealed trait Submit extends ButtonType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ButtonType with Double] = js.native
-  /* 0 */ @js.native
-  object Button
-    extends TopLevel[typingsJapgolly.ejWebAll.ej.ButtonType.Button with Double]
-  
-  /* 1 */ @js.native
-  object Reset extends TopLevel[Reset with Double]
-  
-  /* 2 */ @js.native
-  object Submit extends TopLevel[Submit with Double]
-  
+  sealed trait Submit
+    extends StObject
+       with ButtonType
 }
-

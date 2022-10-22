@@ -1,8 +1,8 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.debugger
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.chromeApps.chromeAppsStrings.tts
   - typingsJapgolly.chromeApps.chromeAppsStrings.wallpaper
 */
-trait NotAllowedAsOptionalPermissions extends js.Object
-
+trait NotAllowedAsOptionalPermissions extends StObject
 object NotAllowedAsOptionalPermissions {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def debugger: typingsJapgolly.chromeApps.chromeAppsStrings.debugger = this.cast("debugger")
-  @scala.inline
-  def experimental: typingsJapgolly.chromeApps.chromeAppsStrings.experimental = this.cast("experimental")
-  @scala.inline
-  def geolocation: typingsJapgolly.chromeApps.chromeAppsStrings.geolocation = this.cast("geolocation")
-  @scala.inline
-  def mdns: typingsJapgolly.chromeApps.chromeAppsStrings.mdns = this.cast("mdns")
-  @scala.inline
-  def proxy: typingsJapgolly.chromeApps.chromeAppsStrings.proxy = this.cast("proxy")
-  @scala.inline
-  def tts: typingsJapgolly.chromeApps.chromeAppsStrings.tts = this.cast("tts")
-  @scala.inline
-  def wallpaper: typingsJapgolly.chromeApps.chromeAppsStrings.wallpaper = this.cast("wallpaper")
+  
+  inline def debugger: typingsJapgolly.chromeApps.chromeAppsStrings.debugger = "debugger".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.debugger]
+  
+  inline def experimental: typingsJapgolly.chromeApps.chromeAppsStrings.experimental = "experimental".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.experimental]
+  
+  inline def geolocation: typingsJapgolly.chromeApps.chromeAppsStrings.geolocation = "geolocation".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.geolocation]
+  
+  inline def mdns: typingsJapgolly.chromeApps.chromeAppsStrings.mdns = "mdns".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.mdns]
+  
+  inline def proxy: typingsJapgolly.chromeApps.chromeAppsStrings.proxy = "proxy".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.proxy]
+  
+  inline def tts: typingsJapgolly.chromeApps.chromeAppsStrings.tts = "tts".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.tts]
+  
+  inline def wallpaper: typingsJapgolly.chromeApps.chromeAppsStrings.wallpaper = "wallpaper".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.wallpaper]
 }
-

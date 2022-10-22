@@ -10,15 +10,12 @@ Timers with near-infinite duration support
 | ------------------ | :-------------: |
 | Full name          | safe-timers |
 | Keywords           | setTimeout, setInterval, timer, timeout, interval, timers, timeouts, intervals |
-| # releases         | 1 |
-| # dependents       | 9 |
-| # downloads        | 286149 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 225691.66666666666 |
+| # stars            | 34.0 |
 
 ## Links
-- [Homepage](https://github.com/Wizcorp/safe-timers#readme)
-- [Bugs](https://github.com/Wizcorp/safe-timers/issues)
-- [Repository](https://github.com/Wizcorp/safe-timers)
 - [Npm](https://www.npmjs.com/package/safe-timers)
     
 

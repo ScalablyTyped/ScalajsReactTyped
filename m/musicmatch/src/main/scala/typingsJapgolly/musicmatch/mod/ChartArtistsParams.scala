@@ -1,21 +1,26 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartArtistsParams extends Pageable {
+trait ChartArtistsParams
+  extends StObject
+     with Pageable {
+  
   var country: js.UndefOr[String] = js.undefined
 }
-
 object ChartArtistsParams {
-  @scala.inline
-  def apply(country: String = null, page: Int | Double = null, page_size: Int | Double = null): ChartArtistsParams = {
+  
+  inline def apply(): ChartArtistsParams = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartArtistsParams]
   }
+  
+  extension [Self <: ChartArtistsParams](x: Self) {
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+  }
 }
-

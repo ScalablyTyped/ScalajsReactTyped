@@ -1,8 +1,8 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.azdata.azdataStrings.left
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.azdata.azdataStrings.initial
   - typingsJapgolly.azdata.azdataStrings.inherit
 */
-trait TextAlignType extends js.Object
-
+trait TextAlignType extends StObject
 object TextAlignType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def center: typingsJapgolly.azdata.azdataStrings.center = this.cast("center")
-  @scala.inline
-  def inherit: typingsJapgolly.azdata.azdataStrings.inherit = this.cast("inherit")
-  @scala.inline
-  def initial: typingsJapgolly.azdata.azdataStrings.initial = this.cast("initial")
-  @scala.inline
-  def justify: typingsJapgolly.azdata.azdataStrings.justify = this.cast("justify")
-  @scala.inline
-  def left: typingsJapgolly.azdata.azdataStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.azdata.azdataStrings.right = this.cast("right")
+  
+  inline def center: typingsJapgolly.azdata.azdataStrings.center = "center".asInstanceOf[typingsJapgolly.azdata.azdataStrings.center]
+  
+  inline def inherit: typingsJapgolly.azdata.azdataStrings.inherit = "inherit".asInstanceOf[typingsJapgolly.azdata.azdataStrings.inherit]
+  
+  inline def initial: typingsJapgolly.azdata.azdataStrings.initial = "initial".asInstanceOf[typingsJapgolly.azdata.azdataStrings.initial]
+  
+  inline def justify: typingsJapgolly.azdata.azdataStrings.justify = "justify".asInstanceOf[typingsJapgolly.azdata.azdataStrings.justify]
+  
+  inline def left: typingsJapgolly.azdata.azdataStrings.left = "left".asInstanceOf[typingsJapgolly.azdata.azdataStrings.left]
+  
+  inline def right: typingsJapgolly.azdata.azdataStrings.right = "right".asInstanceOf[typingsJapgolly.azdata.azdataStrings.right]
 }
-

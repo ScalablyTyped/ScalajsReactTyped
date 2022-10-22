@@ -1,19 +1,24 @@
 package typingsJapgolly.evernote.mod.Types
 
-import typingsJapgolly.evernote.AnonFormat
+import typingsJapgolly.evernote.anon.Format
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "Types.SavedSearch")
 @js.native
-class SavedSearch () extends js.Object {
-  def this(args: AnonFormat) = this()
+open class SavedSearch () extends StObject {
+  def this(args: Format) = this()
+  
   var format: js.UndefOr[QueryFormat] = js.native
+  
   var guid: js.UndefOr[Guid] = js.native
+  
   var name: js.UndefOr[String] = js.native
+  
   var query: js.UndefOr[String] = js.native
+  
   var scope: js.UndefOr[SavedSearchScope] = js.native
+  
   var updateSequenceNum: js.UndefOr[Double] = js.native
 }
-

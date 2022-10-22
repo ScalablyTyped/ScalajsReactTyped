@@ -10,10 +10,10 @@ Encode keys, values and range options, with built-in or custom encodings
 | ------------------ | :-------------: |
 | Full name          | level-codec |
 | Keywords           | level |
-| # releases         | 3 |
-| # dependents       | 16 |
-| # downloads        | 5802624 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 2865660.3333333335 |
+| # stars            | 27.0 |
 
 ## Links
 - [Homepage](https://github.com/Level/codec)

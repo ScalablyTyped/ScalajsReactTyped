@@ -1,27 +1,23 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-2`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-3`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-2`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-3`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-2`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-3`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-2`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-3`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
 */
-trait PositionEnum extends js.Object
-
+trait PositionEnum extends StObject
 object PositionEnum {
-  @scala.inline
-  def adPosBOF: `-2` = this.cast(-2)
-  @scala.inline
-  def adPosEOF: `-3` = this.cast(-3)
-  @scala.inline
-  def adPosUnknown: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adPosBOF: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def adPosEOF: `-3` = -3.asInstanceOf[`-3`]
+  
+  inline def adPosUnknown: `-1` = -1.asInstanceOf[`-1`]
 }
-

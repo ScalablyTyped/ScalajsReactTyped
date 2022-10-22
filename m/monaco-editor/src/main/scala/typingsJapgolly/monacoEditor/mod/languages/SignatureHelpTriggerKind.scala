@@ -1,35 +1,33 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SignatureHelpTriggerKind extends js.Object
-
+sealed trait SignatureHelpTriggerKind extends StObject
 @JSImport("monaco-editor", "languages.SignatureHelpTriggerKind")
 @js.native
-object SignatureHelpTriggerKind extends js.Object {
-  @js.native
-  sealed trait ContentChange extends SignatureHelpTriggerKind
-  
-  @js.native
-  sealed trait Invoke extends SignatureHelpTriggerKind
-  
-  @js.native
-  sealed trait TriggerCharacter extends SignatureHelpTriggerKind
+object SignatureHelpTriggerKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind with Double] = js.native
-  /* 3 */ @js.native
-  object ContentChange extends TopLevel[ContentChange with Double]
+  def apply(value: Double): js.UndefOr[SignatureHelpTriggerKind & Double] = js.native
   
-  /* 1 */ @js.native
-  object Invoke extends TopLevel[Invoke with Double]
+  @js.native
+  sealed trait ContentChange
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 3 */ val ContentChange: typingsJapgolly.monacoEditor.mod.languages.SignatureHelpTriggerKind.ContentChange & Double = js.native
   
-  /* 2 */ @js.native
-  object TriggerCharacter extends TopLevel[TriggerCharacter with Double]
+  @js.native
+  sealed trait Invoke
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 1 */ val Invoke: typingsJapgolly.monacoEditor.mod.languages.SignatureHelpTriggerKind.Invoke & Double = js.native
   
+  @js.native
+  sealed trait TriggerCharacter
+    extends StObject
+       with SignatureHelpTriggerKind
+  /* 2 */ val TriggerCharacter: typingsJapgolly.monacoEditor.mod.languages.SignatureHelpTriggerKind.TriggerCharacter & Double = js.native
 }
-

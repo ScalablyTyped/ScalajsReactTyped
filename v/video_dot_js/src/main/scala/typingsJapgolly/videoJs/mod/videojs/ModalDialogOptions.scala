@@ -1,8 +1,8 @@
 package typingsJapgolly.videoJs.mod.videojs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for this class
@@ -30,35 +30,53 @@ import scala.scalajs.js.annotation._
   *        through the UI in the normal ways. Programmatic closing is
   *        still possible.
   */
-trait ModalDialogOptions extends ComponentOptions {
-  var content: js.UndefOr[js.Any] = js.undefined
+trait ModalDialogOptions
+  extends StObject
+     with ComponentOptions {
+  
+  var content: js.UndefOr[Any] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var fillAlways: js.UndefOr[Boolean] = js.undefined
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var temporary: js.UndefOr[Boolean] = js.undefined
+  
   var uncloseable: js.UndefOr[Boolean] = js.undefined
 }
-
 object ModalDialogOptions {
-  @scala.inline
-  def apply(
-    children: js.Array[Child] = null,
-    content: js.Any = null,
-    description: String = null,
-    fillAlways: js.UndefOr[Boolean] = js.undefined,
-    label: String = null,
-    temporary: js.UndefOr[Boolean] = js.undefined,
-    uncloseable: js.UndefOr[Boolean] = js.undefined
-  ): ModalDialogOptions = {
+  
+  inline def apply(): ModalDialogOptions = {
     val __obj = js.Dynamic.literal()
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (!js.isUndefined(fillAlways)) __obj.updateDynamic("fillAlways")(fillAlways.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary.asInstanceOf[js.Any])
-    if (!js.isUndefined(uncloseable)) __obj.updateDynamic("uncloseable")(uncloseable.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModalDialogOptions]
   }
+  
+  extension [Self <: ModalDialogOptions](x: Self) {
+    
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFillAlways(value: Boolean): Self = StObject.set(x, "fillAlways", value.asInstanceOf[js.Any])
+    
+    inline def setFillAlwaysUndefined: Self = StObject.set(x, "fillAlways", js.undefined)
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+    
+    inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+    
+    inline def setUncloseable(value: Boolean): Self = StObject.set(x, "uncloseable", value.asInstanceOf[js.Any])
+    
+    inline def setUncloseableUndefined: Self = StObject.set(x, "uncloseable", js.undefined)
+  }
 }
-

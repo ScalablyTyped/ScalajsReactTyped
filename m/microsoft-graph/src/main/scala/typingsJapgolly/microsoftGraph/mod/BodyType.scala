@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.text
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.html
 */
-trait BodyType extends js.Object
-
+trait BodyType extends StObject
 object BodyType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def html: typingsJapgolly.microsoftGraph.microsoftGraphStrings.html = this.cast("html")
-  @scala.inline
-  def text: typingsJapgolly.microsoftGraph.microsoftGraphStrings.text = this.cast("text")
+  
+  inline def html: typingsJapgolly.microsoftGraph.microsoftGraphStrings.html = "html".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.html]
+  
+  inline def text: typingsJapgolly.microsoftGraph.microsoftGraphStrings.text = "text".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.text]
 }
-

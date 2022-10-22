@@ -1,21 +1,32 @@
 package typingsJapgolly.clearbladejsServer.CbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait APIUser extends js.Object {
+trait APIUser extends StObject {
+  
   var authToken: String
+  
   var email: String
+  
   var user_id: js.UndefOr[String] = js.undefined
 }
-
 object APIUser {
-  @scala.inline
-  def apply(authToken: String, email: String, user_id: String = null): APIUser = {
+  
+  inline def apply(authToken: String, email: String): APIUser = {
     val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any])
-    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[APIUser]
   }
+  
+  extension [Self <: APIUser](x: Self) {
+    
+    inline def setAuthToken(value: String): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    
+    inline def setUser_idUndefined: Self = StObject.set(x, "user_id", js.undefined)
+  }
 }
-

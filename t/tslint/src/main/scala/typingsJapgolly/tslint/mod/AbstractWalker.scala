@@ -1,11 +1,13 @@
 package typingsJapgolly.tslint.mod
 
+import typingsJapgolly.typescript.mod.SourceFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint", "AbstractWalker")
+/* note: abstract class */ @JSImport("tslint", "AbstractWalker")
 @js.native
-abstract class AbstractWalker[T] ()
-  extends typingsJapgolly.tslint.walkerWalkerMod.AbstractWalker[T]
-
+open class AbstractWalker[T] protected ()
+  extends typingsJapgolly.tslint.libLanguageWalkerMod.AbstractWalker[T] {
+  def this(sourceFile: SourceFile, ruleName: String, options: T) = this()
+}

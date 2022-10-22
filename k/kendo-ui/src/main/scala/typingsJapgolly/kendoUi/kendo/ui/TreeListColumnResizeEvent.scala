@@ -1,32 +1,39 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListColumnResizeEvent extends TreeListEvent {
-  var column: js.UndefOr[js.Any] = js.undefined
+trait TreeListColumnResizeEvent
+  extends StObject
+     with TreeListEvent {
+  
+  var column: js.UndefOr[Any] = js.undefined
+  
   var newWidth: js.UndefOr[Double] = js.undefined
+  
   var oldWidth: js.UndefOr[Double] = js.undefined
 }
-
 object TreeListColumnResizeEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: TreeList,
-    column: js.Any = null,
-    newWidth: Int | Double = null,
-    oldWidth: Int | Double = null
-  ): TreeListColumnResizeEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
-    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: TreeList): TreeListColumnResizeEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListColumnResizeEvent]
   }
+  
+  extension [Self <: TreeListColumnResizeEvent](x: Self) {
+    
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    
+    inline def setNewWidth(value: Double): Self = StObject.set(x, "newWidth", value.asInstanceOf[js.Any])
+    
+    inline def setNewWidthUndefined: Self = StObject.set(x, "newWidth", js.undefined)
+    
+    inline def setOldWidth(value: Double): Self = StObject.set(x, "oldWidth", value.asInstanceOf[js.Any])
+    
+    inline def setOldWidthUndefined: Self = StObject.set(x, "oldWidth", js.undefined)
+  }
 }
-

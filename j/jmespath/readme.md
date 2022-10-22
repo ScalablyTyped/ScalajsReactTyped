@@ -10,10 +10,10 @@ JMESPath implementation in javascript
 | ------------------ | :-------------: |
 | Full name          | jmespath |
 | Keywords           | jmespath, jsonpath, json, xpath |
-| # releases         | 1 |
-| # dependents       | 71 |
-| # downloads        | 105851190 |
-| # stars            | 8 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 3.5399355333333336E7 |
+| # stars            | 601.0 |
 
 ## Links
 - [Homepage](https://github.com/jmespath/jmespath.js)

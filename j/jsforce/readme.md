@@ -1,7 +1,7 @@
 
 # Scala.js typings for jsforce
 
-Typings are for version 1.9
+Typings are for version 1.11
 
 ## Library description:
 Salesforce API Library for JavaScript
@@ -10,10 +10,10 @@ Salesforce API Library for JavaScript
 | ------------------ | :-------------: |
 | Full name          | jsforce |
 | Keywords           | salesforce, salesforce.com, sfdc, force.com, database.com |
-| # releases         | 16 |
-| # dependents       | 148 |
-| # downloads        | 4707659 |
-| # stars            | 11 |
+| # releases         | 23 |
+| # dependents       | 0.0 |
+| # downloads        | 2009253.0 |
+| # stars            | 1211.0 |
 
 ## Links
 - [Homepage](http://github.com/jsforce/jsforce)

@@ -1,18 +1,22 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Any CSS at-rule that contains other rules nested within it. */
-trait CSSGroupingRule extends CSSRule {
-  val cssRules: org.scalajs.dom.raw.CSSRuleList
-  def deleteRule(index: Double): Unit
-  def insertRule(rule: java.lang.String, index: Double): Double
-}
-
-@JSGlobal("CSSGroupingRule")
 @js.native
-object CSSGroupingRule extends Instantiable0[CSSGroupingRule]
-
+trait CSSGroupingRule
+  extends StObject
+     with CSSRule {
+  
+  /* standard dom */
+  val cssRules: org.scalajs.dom.CSSRuleList = js.native
+  
+  /* standard dom */
+  def deleteRule(index: Double): Unit = js.native
+  
+  /* standard dom */
+  def insertRule(rule: java.lang.String): Double = js.native
+  def insertRule(rule: java.lang.String, index: Double): Double = js.native
+}

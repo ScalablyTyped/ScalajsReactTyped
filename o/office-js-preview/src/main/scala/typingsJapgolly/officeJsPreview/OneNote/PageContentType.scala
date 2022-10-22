@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.OneNote
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PageContentType extends js.Object
-
+sealed trait PageContentType extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.PageContentType")
 @js.native
-object PageContentType extends js.Object {
+object PageContentType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait image extends PageContentType
+  sealed trait image
+    extends StObject
+       with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait ink extends PageContentType
+  sealed trait ink
+    extends StObject
+       with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait other extends PageContentType
+  sealed trait other
+    extends StObject
+       with PageContentType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait outline extends PageContentType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PageContentType with String] = js.native
-  /* "Image" */ @js.native
-  object image extends TopLevel[image with String]
-  
-  /* "Ink" */ @js.native
-  object ink extends TopLevel[ink with String]
-  
-  /* "Other" */ @js.native
-  object other extends TopLevel[other with String]
-  
-  /* "Outline" */ @js.native
-  object outline extends TopLevel[outline with String]
-  
+  sealed trait outline
+    extends StObject
+       with PageContentType
 }
-

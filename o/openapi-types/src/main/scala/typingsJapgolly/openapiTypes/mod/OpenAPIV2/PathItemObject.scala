@@ -1,21 +1,14 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PathItemObject extends js.Object {
+trait PathItemObject[T /* <: js.Object */] extends StObject {
+  
   @JSName("$ref")
   var $ref: js.UndefOr[String] = js.native
-  var del: js.UndefOr[OperationObject] = js.native
-  var delete: js.UndefOr[OperationObject] = js.native
-  var get: js.UndefOr[OperationObject] = js.native
-  var head: js.UndefOr[OperationObject] = js.native
-  var options: js.UndefOr[OperationObject] = js.native
+  
   var parameters: js.UndefOr[Parameters] = js.native
-  var patch: js.UndefOr[OperationObject] = js.native
-  var post: js.UndefOr[OperationObject] = js.native
-  var put: js.UndefOr[OperationObject] = js.native
 }
-

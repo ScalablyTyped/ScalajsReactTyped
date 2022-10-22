@@ -1,11 +1,12 @@
 package typingsJapgolly.arcgisJsApi.esri
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GoToProperties extends js.Object {
+trait GoToProperties extends StObject {
+  
   /**
     * This function provides the ability to override either the [MapView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#goTo) or [SceneView goTo()](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo) methods.
     *
@@ -13,13 +14,17 @@ trait GoToProperties extends js.Object {
     */
   var goToOverride: js.UndefOr[GoToOverride] = js.undefined
 }
-
 object GoToProperties {
-  @scala.inline
-  def apply(goToOverride: (/* view */ MapView | SceneView, /* goToParameters */ js.Any) => Callback = null): GoToProperties = {
+  
+  inline def apply(): GoToProperties = {
     val __obj = js.Dynamic.literal()
-    if (goToOverride != null) __obj.updateDynamic("goToOverride")(js.Any.fromFunction2((t0: /* view */ typingsJapgolly.arcgisJsApi.esri.MapView | typingsJapgolly.arcgisJsApi.esri.SceneView, t1: /* goToParameters */ js.Any) => goToOverride(t0, t1).runNow()))
     __obj.asInstanceOf[GoToProperties]
   }
+  
+  extension [Self <: GoToProperties](x: Self) {
+    
+    inline def setGoToOverride(value: (/* view */ MapView | SceneView, /* goToParameters */ Any) => Callback): Self = StObject.set(x, "goToOverride", js.Any.fromFunction2((t0: /* view */ MapView | SceneView, t1: /* goToParameters */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setGoToOverrideUndefined: Self = StObject.set(x, "goToOverride", js.undefined)
+  }
 }
-

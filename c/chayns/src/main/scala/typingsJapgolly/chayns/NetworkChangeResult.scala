@@ -1,21 +1,28 @@
 package typingsJapgolly.chayns
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.setNetworkChangeCallback()
-trait NetworkChangeResult extends js.Object {
+trait NetworkChangeResult extends StObject {
+  
   var isConnected: Boolean
+  
   var `type`: Double
 }
-
 object NetworkChangeResult {
-  @scala.inline
-  def apply(isConnected: Boolean, `type`: Double): NetworkChangeResult = {
+  
+  inline def apply(isConnected: Boolean, `type`: Double): NetworkChangeResult = {
     val __obj = js.Dynamic.literal(isConnected = isConnected.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkChangeResult]
   }
+  
+  extension [Self <: NetworkChangeResult](x: Self) {
+    
+    inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

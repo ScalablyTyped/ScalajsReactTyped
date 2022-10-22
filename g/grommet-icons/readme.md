@@ -1,7 +1,7 @@
 
 # Scala.js typings for grommet-icons
 
-Typings are for version 4.4.0
+Typings are for version 4.8.0
 
 ## Library description:
 iconography for grommet apps.
@@ -10,10 +10,10 @@ iconography for grommet apps.
 | ------------------ | :-------------: |
 | Full name          | grommet-icons |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 20 |
-| # downloads        | 498260 |
-| # stars            | 0 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 109175.0 |
+| # stars            | 299.0 |
 
 ## Links
 - [Homepage](http://grommet.io/grommet-icons/)

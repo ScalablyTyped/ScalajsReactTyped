@@ -1,44 +1,24 @@
 package typingsJapgolly.pixiJs.mod
 
+import typingsJapgolly.pixiExtensions.mod.ExtensionMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * The prepare plugin provides renderer-specific plugins for pre-rendering DisplayObjects. These plugins are useful for
-  * asynchronously preparing and uploading to the GPU assets, textures, graphics waiting to be displayed.
-  *
-  * Do not instantiate this plugin directly. It is available from the `renderer.plugins` property.
-  * See {@link PIXI.CanvasRenderer#plugins} or {@link PIXI.Renderer#plugins}.
-  * @example
-  * // Create a new application
-  * const app = new PIXI.Application();
-  * document.body.appendChild(app.view);
-  *
-  * // Don't start rendering right away
-  * app.stop();
-  *
-  * // create a display object
-  * const rect = new PIXI.Graphics()
-  *     .beginFill(0x00ff00)
-  *     .drawRect(40, 40, 200, 200);
-  *
-  * // Add to the stage
-  * app.stage.addChild(rect);
-  *
-  * // Don't start rendering until the graphic is uploaded to the GPU
-  * app.renderer.plugins.prepare.upload(app.stage, () => {
-  *     app.start();
-  * });
-  *
-  * @class
-  * @extends PIXI.BasePrepare
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "Prepare")
 @js.native
-class Prepare protected ()
-  extends typingsJapgolly.pixiJs.PIXI.Prepare {
-  def this(renderer: typingsJapgolly.pixiJs.PIXI.Renderer) = this()
+open class Prepare protected ()
+  extends typingsJapgolly.pixiPrepare.mod.Prepare {
+  /**
+    * @param {PIXI.Renderer} renderer - A reference to the current renderer
+    */
+  def this(renderer: typingsJapgolly.pixiCore.mod.Renderer) = this()
 }
-
+/* static members */
+object Prepare {
+  
+  /** @ignore */
+  @JSImport("pixi.js", "Prepare.extension")
+  @js.native
+  val `extension`: ExtensionMetadata = js.native
+}

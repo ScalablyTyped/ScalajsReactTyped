@@ -1,9 +1,9 @@
 package typingsJapgolly.angularCore.mod
 
 import typingsJapgolly.std.Array
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The state associated with a container.
@@ -15,5 +15,5 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait LContainer
-  extends Array[js.Any]
-
+  extends StObject
+     with Array[Any]

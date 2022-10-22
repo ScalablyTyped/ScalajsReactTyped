@@ -1,35 +1,39 @@
 package typingsJapgolly.logger
 
 import typingsJapgolly.logger.mod.LogLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerStrings {
-  @js.native
-  sealed trait debug extends LogLevel
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
+  inline def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait fatal
+    extends StObject
+       with LogLevel
+  inline def fatal: fatal = "fatal".asInstanceOf[fatal]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
+  inline def info: info = "info".asInstanceOf[info]
   
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def fatal: fatal = "fatal".asInstanceOf[fatal]
-  @scala.inline
-  def info: info = "info".asInstanceOf[info]
-  @scala.inline
-  def warn: warn = "warn".asInstanceOf[warn]
+  @js.native
+  sealed trait warn
+    extends StObject
+       with LogLevel
+  inline def warn: warn = "warn".asInstanceOf[warn]
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.auto
   - typingsJapgolly.std.stdStrings.manual
 */
-trait ScrollRestoration extends js.Object
-
+trait ScrollRestoration extends StObject
 object ScrollRestoration {
-  @scala.inline
-  def auto: typingsJapgolly.std.stdStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def manual: typingsJapgolly.std.stdStrings.manual = this.cast("manual")
+  
+  inline def auto: typingsJapgolly.std.stdStrings.auto = "auto".asInstanceOf[typingsJapgolly.std.stdStrings.auto]
+  
+  inline def manual: typingsJapgolly.std.stdStrings.manual = "manual".asInstanceOf[typingsJapgolly.std.stdStrings.manual]
 }
-

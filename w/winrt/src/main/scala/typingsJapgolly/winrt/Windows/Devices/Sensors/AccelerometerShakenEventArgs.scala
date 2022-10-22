@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.AccelerometerShakenEventArgs")
-@js.native
-class AccelerometerShakenEventArgs () extends IAccelerometerShakenEventArgs {
-  /* CompleteClass */
-  override var timestamp: js.Date = js.native
+trait AccelerometerShakenEventArgs
+  extends StObject
+     with IAccelerometerShakenEventArgs
+object AccelerometerShakenEventArgs {
+  
+  inline def apply(timestamp: js.Date): AccelerometerShakenEventArgs = {
+    val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccelerometerShakenEventArgs]
+  }
 }
-

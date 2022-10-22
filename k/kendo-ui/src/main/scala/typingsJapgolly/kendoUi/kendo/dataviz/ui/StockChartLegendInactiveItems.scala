@@ -1,24 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StockChartLegendInactiveItems extends js.Object {
+trait StockChartLegendInactiveItems extends StObject {
+  
   var labels: js.UndefOr[StockChartLegendInactiveItemsLabels] = js.undefined
+  
   var markers: js.UndefOr[StockChartLegendInactiveItemsMarkers] = js.undefined
 }
-
 object StockChartLegendInactiveItems {
-  @scala.inline
-  def apply(
-    labels: StockChartLegendInactiveItemsLabels = null,
-    markers: StockChartLegendInactiveItemsMarkers = null
-  ): StockChartLegendInactiveItems = {
+  
+  inline def apply(): StockChartLegendInactiveItems = {
     val __obj = js.Dynamic.literal()
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (markers != null) __obj.updateDynamic("markers")(markers.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartLegendInactiveItems]
   }
+  
+  extension [Self <: StockChartLegendInactiveItems](x: Self) {
+    
+    inline def setLabels(value: StockChartLegendInactiveItemsLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setMarkers(value: StockChartLegendInactiveItemsMarkers): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
+    
+    inline def setMarkersUndefined: Self = StObject.set(x, "markers", js.undefined)
+  }
 }
-

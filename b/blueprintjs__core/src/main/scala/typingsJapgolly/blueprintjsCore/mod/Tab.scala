@@ -1,20 +1,32 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.tabMod.ITabProps
+import typingsJapgolly.blueprintjsCore.anon.PartialTabProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTabsTabMod.TabProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Tab")
 @js.native
-class Tab ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Tab
-
-/* static members */
-@JSImport("@blueprintjs/core", "Tab")
-@js.native
-object Tab extends js.Object {
-  var defaultProps: ITabProps = js.native
-  var displayName: String = js.native
+open class Tab protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Tab {
+  def this(props: TabProps) = this()
+  def this(props: TabProps, context: Any) = this()
 }
-
+/* static members */
+object Tab {
+  
+  @JSImport("@blueprintjs/core", "Tab")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Tab.defaultProps")
+  @js.native
+  def defaultProps: PartialTabProps = js.native
+  inline def defaultProps_=(x: PartialTabProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Tab.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

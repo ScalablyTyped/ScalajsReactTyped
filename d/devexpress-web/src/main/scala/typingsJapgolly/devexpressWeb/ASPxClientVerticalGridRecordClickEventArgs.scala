@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.RecordClick event.
   */
-@JSGlobal("ASPxClientVerticalGridRecordClickEventArgs")
-@js.native
-class ASPxClientVerticalGridRecordClickEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientVerticalGridRecordClickEventArgs class.
-    * @param visibleIndex A zero-based integer index that identifies the clicked record.
-    * @param htmlEvent An object that contains parameters associated with the event. This value is assigned to the ASPxClientVerticalGridRecordClickEventArgs.htmlEvent property.
-    */
-  def this(visibleIndex: Double, htmlEvent: js.Any) = this()
+trait ASPxClientVerticalGridRecordClickEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Provides access to the parameters associated with the ASPxClientVerticalGrid.RecordClick event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: Any
+  
   /**
     * Gets the processed record's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
-
+object ASPxClientVerticalGridRecordClickEventArgs {
+  
+  inline def apply(cancel: Boolean, htmlEvent: Any, visibleIndex: Double): ASPxClientVerticalGridRecordClickEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientVerticalGridRecordClickEventArgs]
+  }
+  
+  extension [Self <: ASPxClientVerticalGridRecordClickEventArgs](x: Self) {
+    
+    inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+  }
+}

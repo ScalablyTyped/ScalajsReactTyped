@@ -1,16 +1,17 @@
 package typingsJapgolly.reactNative.mod
 
 import org.scalablytyped.runtime.Instantiable4
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EmitterSubscription represents a subscription with listener and context data.
   */
 @js.native
 trait EmitterSubscription
-  extends EventSubscription
+  extends StObject
+     with EventSubscription
      with /**
   * @param emitter - The event emitter that registered this
   *   subscription
@@ -24,12 +25,14 @@ trait EmitterSubscription
 Instantiable4[
       /* emitter */ EventEmitter, 
       /* subscriber */ EventSubscriptionVendor, 
-      /* listener */ js.Function0[js.Any], 
-      /* context */ js.Any, 
+      /* listener */ js.Function0[Any], 
+      /* context */ Any, 
       EmitterSubscription
     ] {
-  var context: js.Any = js.native
+  
+  var context: Any = js.native
+  
   var emitter: EventEmitter = js.native
-  def listener(): js.Any = js.native
+  
+  def listener(): Any = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tracking flags that match our internal tracking classification */
 /* Rewritten from type alias, can be one of: 
@@ -19,34 +19,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_strict_tracking
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_social_tracking
 */
-trait UrlClassificationFlags extends js.Object
-
+trait UrlClassificationFlags extends StObject
 object UrlClassificationFlags {
-  @scala.inline
-  def any_basic_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_basic_tracking = this.cast("any_basic_tracking")
-  @scala.inline
-  def any_social_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_social_tracking = this.cast("any_social_tracking")
-  @scala.inline
-  def any_strict_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_strict_tracking = this.cast("any_strict_tracking")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def cryptomining: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining = this.cast("cryptomining")
-  @scala.inline
-  def cryptomining_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content = this.cast("cryptomining_content")
-  @scala.inline
-  def fingerprinting: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting = this.cast("fingerprinting")
-  @scala.inline
-  def fingerprinting_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting_content = this.cast("fingerprinting_content")
-  @scala.inline
-  def tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking = this.cast("tracking")
-  @scala.inline
-  def tracking_ad: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_ad = this.cast("tracking_ad")
-  @scala.inline
-  def tracking_analytics: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_analytics = this.cast("tracking_analytics")
-  @scala.inline
-  def tracking_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_content = this.cast("tracking_content")
-  @scala.inline
-  def tracking_social: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_social = this.cast("tracking_social")
+  
+  inline def any_basic_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_basic_tracking = "any_basic_tracking".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_basic_tracking]
+  
+  inline def any_social_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_social_tracking = "any_social_tracking".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_social_tracking]
+  
+  inline def any_strict_tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_strict_tracking = "any_strict_tracking".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.any_strict_tracking]
+  
+  inline def cryptomining: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining = "cryptomining".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining]
+  
+  inline def cryptomining_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content = "cryptomining_content".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.cryptomining_content]
+  
+  inline def fingerprinting: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting = "fingerprinting".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting]
+  
+  inline def fingerprinting_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting_content = "fingerprinting_content".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.fingerprinting_content]
+  
+  inline def tracking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking = "tracking".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking]
+  
+  inline def tracking_ad: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_ad = "tracking_ad".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_ad]
+  
+  inline def tracking_analytics: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_analytics = "tracking_analytics".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_analytics]
+  
+  inline def tracking_content: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_content = "tracking_content".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_content]
+  
+  inline def tracking_social: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_social = "tracking_social".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.tracking_social]
 }
-

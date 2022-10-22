@@ -10,10 +10,10 @@ Easily unzip an HTTP stream
 | ------------------ | :-------------: |
 | Full name          | inflation |
 | Keywords           | decompress, unzip, inflate, zlib, gunzip |
-| # releases         | 0 |
-| # dependents       | 31 |
-| # downloads        | 9800862 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2884179.6666666665 |
+| # stars            | 18.0 |
 
 ## Links
 - [Homepage](https://github.com/stream-utils/inflation#readme)

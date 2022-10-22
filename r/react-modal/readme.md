@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-modal
 
-Typings are for version 3.10
+Typings are for version 3.13
 
 ## Library description:
 Accessible modal dialog component for React.JS
@@ -10,10 +10,10 @@ Accessible modal dialog component for React.JS
 | ------------------ | :-------------: |
 | Full name          | react-modal |
 | Keywords           | react, react-component, modal, dialog |
-| # releases         | 20 |
-| # dependents       | 604 |
-| # downloads        | 49663698 |
-| # stars            | 45 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 6704959.333333333 |
+| # stars            | 6971.0 |
 
 ## Links
 - [Homepage](https://github.com/reactjs/react-modal)

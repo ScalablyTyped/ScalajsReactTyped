@@ -1,107 +1,109 @@
 package typingsJapgolly.uirouterCore
 
-import typingsJapgolly.uirouterCore.resolveInterfaceMod.PolicyWhen
-import typingsJapgolly.uirouterCore.resolveInterfaceMod._PolicyAsync
-import typingsJapgolly.uirouterCore.urlInterfaceMod.UrlRuleType
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod.PolicyWhen
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod._PolicyAsync
+import typingsJapgolly.uirouterCore.libUrlInterfaceMod.UrlRuleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uirouterCoreStrings {
-  @js.native
-  sealed trait EAGER extends PolicyWhen
   
   @js.native
-  sealed trait LAZY extends PolicyWhen
+  sealed trait EAGER
+    extends StObject
+       with PolicyWhen
+  inline def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
   
   @js.native
-  sealed trait NOWAIT extends _PolicyAsync
+  sealed trait LAZY
+    extends StObject
+       with PolicyWhen
+  inline def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
   
   @js.native
-  sealed trait OTHER extends UrlRuleType
+  sealed trait NOWAIT
+    extends StObject
+       with _PolicyAsync
+  inline def NOWAIT: NOWAIT = "NOWAIT".asInstanceOf[NOWAIT]
   
   @js.native
-  sealed trait RAW extends UrlRuleType
+  sealed trait OTHER
+    extends StObject
+       with UrlRuleType
+  inline def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
   
   @js.native
-  sealed trait REGEXP extends UrlRuleType
+  sealed trait RAW
+    extends StObject
+       with UrlRuleType
+  inline def RAW: RAW = "RAW".asInstanceOf[RAW]
   
   @js.native
-  sealed trait STATE extends UrlRuleType
+  sealed trait REGEXP
+    extends StObject
+       with UrlRuleType
+  inline def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
   
   @js.native
-  sealed trait SameAsCurrent extends js.Object
+  sealed trait STATE
+    extends StObject
+       with UrlRuleType
+  inline def STATE: STATE = "STATE".asInstanceOf[STATE]
   
   @js.native
-  sealed trait SameAsPending extends js.Object
+  sealed trait SameAsCurrent extends StObject
+  inline def SameAsCurrent: SameAsCurrent = "SameAsCurrent".asInstanceOf[SameAsCurrent]
   
   @js.native
-  sealed trait URLMATCHER extends UrlRuleType
+  sealed trait SameAsPending extends StObject
+  inline def SameAsPending: SameAsPending = "SameAsPending".asInstanceOf[SameAsPending]
   
   @js.native
-  sealed trait WAIT extends _PolicyAsync
+  sealed trait URLMATCHER
+    extends StObject
+       with UrlRuleType
+  inline def URLMATCHER: URLMATCHER = "URLMATCHER".asInstanceOf[URLMATCHER]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait WAIT
+    extends StObject
+       with _PolicyAsync
+  inline def WAIT: WAIT = "WAIT".asInstanceOf[WAIT]
   
   @js.native
-  sealed trait deregistered extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait otherwise extends js.Object
+  sealed trait deregistered extends StObject
+  inline def deregistered: deregistered = "deregistered".asInstanceOf[deregistered]
   
   @js.native
-  sealed trait redirect extends js.Object
+  sealed trait otherwise extends StObject
+  inline def otherwise: otherwise = "otherwise".asInstanceOf[otherwise]
   
   @js.native
-  sealed trait registered extends js.Object
+  sealed trait redirect extends StObject
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
-  sealed trait sref extends js.Object
+  sealed trait registered extends StObject
+  inline def registered: registered = "registered".asInstanceOf[registered]
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait sref extends StObject
+  inline def sref: sref = "sref".asInstanceOf[sref]
   
-  @scala.inline
-  def EAGER: EAGER = "EAGER".asInstanceOf[EAGER]
-  @scala.inline
-  def LAZY: LAZY = "LAZY".asInstanceOf[LAZY]
-  @scala.inline
-  def NOWAIT: NOWAIT = "NOWAIT".asInstanceOf[NOWAIT]
-  @scala.inline
-  def OTHER: OTHER = "OTHER".asInstanceOf[OTHER]
-  @scala.inline
-  def RAW: RAW = "RAW".asInstanceOf[RAW]
-  @scala.inline
-  def REGEXP: REGEXP = "REGEXP".asInstanceOf[REGEXP]
-  @scala.inline
-  def STATE: STATE = "STATE".asInstanceOf[STATE]
-  @scala.inline
-  def SameAsCurrent: SameAsCurrent = "SameAsCurrent".asInstanceOf[SameAsCurrent]
-  @scala.inline
-  def SameAsPending: SameAsPending = "SameAsPending".asInstanceOf[SameAsPending]
-  @scala.inline
-  def URLMATCHER: URLMATCHER = "URLMATCHER".asInstanceOf[URLMATCHER]
-  @scala.inline
-  def WAIT: WAIT = "WAIT".asInstanceOf[WAIT]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def deregistered: deregistered = "deregistered".asInstanceOf[deregistered]
-  @scala.inline
-  def otherwise: otherwise = "otherwise".asInstanceOf[otherwise]
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
-  @scala.inline
-  def registered: registered = "registered".asInstanceOf[registered]
-  @scala.inline
-  def sref: sref = "sref".asInstanceOf[sref]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  @js.native
+  sealed trait unknown extends StObject
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
+  
+  @js.native
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
 }
-

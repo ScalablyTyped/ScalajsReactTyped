@@ -10,14 +10,13 @@ The lodash method `_.zipObject` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.zipobject |
 | Keywords           | lodash-modularized, zipobject |
-| # releases         | 0 |
-| # dependents       | 82 |
-| # downloads        | 1802510 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 681626.0 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)
-- [Bugs](https://github.com/lodash/lodash/issues)
 - [Repository](https://github.com/lodash/lodash)
 - [Npm](https://www.npmjs.com/package/lodash.zipobject)
     

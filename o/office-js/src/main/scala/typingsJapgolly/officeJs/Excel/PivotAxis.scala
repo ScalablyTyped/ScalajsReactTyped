@@ -1,78 +1,68 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PivotAxis extends js.Object
-
+sealed trait PivotAxis extends StObject
 /**
+  * Represents the axis from which to get the PivotItems.
   *
-  * The ShowAs Calculation function for the Data Pivot Field.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.PivotAxis")
 @js.native
-object PivotAxis extends js.Object {
+object PivotAxis extends StObject {
+  
   /**
-    *
     * The column axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait column extends PivotAxis
+  sealed trait column
+    extends StObject
+       with PivotAxis
   
   /**
-    *
     * The data axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait data extends PivotAxis
+  sealed trait data
+    extends StObject
+       with PivotAxis
   
   /**
-    *
     * The filter axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait filter extends PivotAxis
+  sealed trait filter
+    extends StObject
+       with PivotAxis
   
   /**
-    *
     * The row axis.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait row extends PivotAxis
+  sealed trait row
+    extends StObject
+       with PivotAxis
   
   /**
-    *
     * The axis or region is unknown or unsupported.
-    *
+    * @remarks
+    * [Api set: ExcelApi 1.9]
     */
   @js.native
-  sealed trait unknown extends PivotAxis
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[PivotAxis with String] = js.native
-  /* "Column" */ @js.native
-  object column extends TopLevel[column with String]
-  
-  /* "Data" */ @js.native
-  object data extends TopLevel[data with String]
-  
-  /* "Filter" */ @js.native
-  object filter extends TopLevel[filter with String]
-  
-  /* "Row" */ @js.native
-  object row extends TopLevel[row with String]
-  
-  /* "Unknown" */ @js.native
-  object unknown extends TopLevel[unknown with String]
-  
+  sealed trait unknown
+    extends StObject
+       with PivotAxis
 }
-

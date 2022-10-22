@@ -1,27 +1,32 @@
 package typingsJapgolly.kissfftJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("kissfft-js", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("kissfft-js", "FFT")
   @js.native
-  class FFT protected () extends js.Object {
+  open class FFT protected () extends StObject {
     def this(size: Double) = this()
+    
     def dispose(): Unit = js.native
+    
     def forward(input: js.Array[Double]): js.Array[Double] = js.native
+    
     def inverse(input: js.Array[Double]): js.Array[Double] = js.native
   }
   
+  @JSImport("kissfft-js", "FFTR")
   @js.native
-  class FFTR protected () extends js.Object {
+  open class FFTR protected () extends StObject {
     def this(size: Double) = this()
+    
     def dispose(): Unit = js.native
+    
     def forward(input: js.Array[Double]): js.Array[Double] = js.native
+    
     def inverse(input: js.Array[Double]): js.Array[Double] = js.native
   }
-  
 }
-

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "amqp-connection-manager" : "4.1.7"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "amqp-connection-manager" : "4.1.7"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

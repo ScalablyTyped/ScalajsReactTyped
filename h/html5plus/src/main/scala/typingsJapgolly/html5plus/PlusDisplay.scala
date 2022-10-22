@@ -1,40 +1,49 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Display模块管理应用可使用的显示区域信息
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
   */
-trait PlusDisplay extends js.Object {
+trait PlusDisplay extends StObject {
+  
   /**
     * 应用可使用的屏幕高度逻辑分辨率
     * 设备屏幕区域包括系统状态栏显示区域和应用显示区域，display获取的是应用显示区域的逻辑分辨率，单位为px。
-    * 	如果需要获取实际分辨率则需要乘以比例值scale。
+    *     如果需要获取实际分辨率则需要乘以比例值scale。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var resolutionHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * 应用可使用的屏幕宽度逻辑分辨率
     * 设备屏幕区域包括系统状态栏显示区域和应用显示区域，display获取的是应用显示区域的逻辑分辨率，单位为px。
-    * 	如果需要获取实际分辨率则需要乘以比例值scale。
+    *     如果需要获取实际分辨率则需要乘以比例值scale。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/device.html](http://www.html5plus.org/doc/zh_cn/device.html)
     */
   var resolutionWidth: js.UndefOr[Double] = js.undefined
 }
-
 object PlusDisplay {
-  @scala.inline
-  def apply(resolutionHeight: Int | Double = null, resolutionWidth: Int | Double = null): PlusDisplay = {
+  
+  inline def apply(): PlusDisplay = {
     val __obj = js.Dynamic.literal()
-    if (resolutionHeight != null) __obj.updateDynamic("resolutionHeight")(resolutionHeight.asInstanceOf[js.Any])
-    if (resolutionWidth != null) __obj.updateDynamic("resolutionWidth")(resolutionWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusDisplay]
   }
+  
+  extension [Self <: PlusDisplay](x: Self) {
+    
+    inline def setResolutionHeight(value: Double): Self = StObject.set(x, "resolutionHeight", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionHeightUndefined: Self = StObject.set(x, "resolutionHeight", js.undefined)
+    
+    inline def setResolutionWidth(value: Double): Self = StObject.set(x, "resolutionWidth", value.asInstanceOf[js.Any])
+    
+    inline def setResolutionWidthUndefined: Self = StObject.set(x, "resolutionWidth", js.undefined)
+  }
 }
-

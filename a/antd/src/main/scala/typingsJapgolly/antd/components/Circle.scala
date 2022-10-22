@@ -1,13 +1,6 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antd.antdStrings.active
 import typingsJapgolly.antd.antdStrings.bottom
 import typingsJapgolly.antd.antdStrings.butt
@@ -19,75 +12,70 @@ import typingsJapgolly.antd.antdStrings.round
 import typingsJapgolly.antd.antdStrings.square
 import typingsJapgolly.antd.antdStrings.success
 import typingsJapgolly.antd.antdStrings.top
-import typingsJapgolly.antd.circleMod.CircleProps
-import typingsJapgolly.antd.progressProgressMod.ProgressGradient
-import typingsJapgolly.antd.progressProgressMod.ProgressSize
-import typingsJapgolly.antd.progressProgressMod.ProgressType
+import typingsJapgolly.antd.libProgressCircleMod.CircleProps
+import typingsJapgolly.antd.libProgressProgressMod.ProgressGradient
+import typingsJapgolly.antd.libProgressProgressMod.ProgressSize
+import typingsJapgolly.antd.libProgressProgressMod.ProgressType
+import typingsJapgolly.antd.libProgressProgressMod.SuccessProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Circle {
-  def apply(
-    prefixCls: String,
-    progressStatus: String,
-    className: String = null,
-    format: (/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double]) => CallbackTo[Node] = null,
-    gapDegree: Int | Double = null,
-    gapPosition: top | bottom | left | right = null,
-    percent: Int | Double = null,
-    showInfo: js.UndefOr[Boolean] = js.undefined,
-    size: ProgressSize = null,
-    status: normal | exception | active | success = null,
-    steps: Int | Double = null,
-    strokeColor: String | ProgressGradient = null,
-    strokeLinecap: butt | square | round = null,
-    strokeWidth: Int | Double = null,
-    style: CSSProperties = null,
-    successPercent: Int | Double = null,
-    trailColor: String = null,
-    `type`: ProgressType = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    CircleProps, 
-    MountedWithRawType[CircleProps, js.Object, RawMounted[CircleProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], progressStatus = progressStatus.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(js.Any.fromFunction2((t0: /* percent */ js.UndefOr[scala.Double], t1: /* successPercent */ js.UndefOr[scala.Double]) => format(t0, t1).runNow()))
-    if (gapDegree != null) __obj.updateDynamic("gapDegree")(gapDegree.asInstanceOf[js.Any])
-    if (gapPosition != null) __obj.updateDynamic("gapPosition")(gapPosition.asInstanceOf[js.Any])
-    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
-    if (!js.isUndefined(showInfo)) __obj.updateDynamic("showInfo")(showInfo.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
-    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (successPercent != null) __obj.updateDynamic("successPercent")(successPercent.asInstanceOf[js.Any])
-    if (trailColor != null) __obj.updateDynamic("trailColor")(trailColor.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.circleMod.CircleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.circleMod.CircleProps])(children: _*)
+  inline def apply(prefixCls: String, progressStatus: String): Builder = {
+    val __props = js.Dynamic.literal(prefixCls = prefixCls.asInstanceOf[js.Any], progressStatus = progressStatus.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[CircleProps]))
   }
+  
   @JSImport("antd/lib/progress/Circle", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def format(
+      value: (/* percent */ js.UndefOr[Double], /* successPercent */ js.UndefOr[Double]) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("format", js.Any.fromFunction2(value))
+    
+    inline def gapDegree(value: Double): this.type = set("gapDegree", value.asInstanceOf[js.Any])
+    
+    inline def gapPosition(value: top | bottom | left | right): this.type = set("gapPosition", value.asInstanceOf[js.Any])
+    
+    inline def percent(value: Double): this.type = set("percent", value.asInstanceOf[js.Any])
+    
+    inline def showInfo(value: Boolean): this.type = set("showInfo", value.asInstanceOf[js.Any])
+    
+    inline def size(value: ProgressSize): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def status(value: normal | exception | active | success): this.type = set("status", value.asInstanceOf[js.Any])
+    
+    inline def steps(value: Double): this.type = set("steps", value.asInstanceOf[js.Any])
+    
+    inline def strokeColor(value: String | ProgressGradient): this.type = set("strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinecap(value: butt | square | round): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def strokeWidth(value: Double): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def success(value: SuccessProps): this.type = set("success", value.asInstanceOf[js.Any])
+    
+    inline def successPercent(value: Double): this.type = set("successPercent", value.asInstanceOf[js.Any])
+    
+    inline def trailColor(value: String): this.type = set("trailColor", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: ProgressType): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: CircleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

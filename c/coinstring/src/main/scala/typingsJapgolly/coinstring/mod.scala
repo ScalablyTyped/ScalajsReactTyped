@@ -1,35 +1,45 @@
 package typingsJapgolly.coinstring
 
-import typingsJapgolly.node.Buffer
-import typingsJapgolly.std.Uint8Array
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("coinstring", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def createDecoder(version: Double): js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Buffer] = js.native
-  def createEncoder(version: Double): js.Function2[
-    /* payload */ Buffer | js.Array[Double] | scala.scalajs.js.typedarray.Uint8Array, 
+object mod {
+  
+  @JSImport("coinstring", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def createDecoder(version: Double): js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecoder")(version.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Buffer]]
+  
+  inline def createEncoder(version: Double): js.Function2[
+    /* payload */ Buffer | js.Array[Double] | js.typedarray.Uint8Array, 
     /* version */ js.UndefOr[Double | Buffer], 
     String
-  ] = js.native
-  def createValidator(version: Double): js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Boolean] = js.native
-  def decode(base58str: String): Buffer = js.native
-  def decode(base58str: String, version: Double): Buffer = js.native
-  def decode(base58str: String, version: Buffer): Buffer = js.native
-  def encode(payload: js.Array[Double]): String = js.native
-  def encode(payload: js.Array[Double], version: Double): String = js.native
-  def encode(payload: js.Array[Double], version: Buffer): String = js.native
-  def encode(payload: Buffer): String = js.native
-  def encode(payload: Buffer, version: Double): String = js.native
-  def encode(payload: Buffer, version: Buffer): String = js.native
-  def encode(payload: Uint8Array): String = js.native
-  def encode(payload: Uint8Array, version: Double): String = js.native
-  def encode(payload: Uint8Array, version: Buffer): String = js.native
-  def isValid(base58str: String): Boolean = js.native
-  def isValid(base58str: String, version: Double): Boolean = js.native
-  def isValid(base58str: String, version: Buffer): Boolean = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEncoder")(version.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* payload */ Buffer | js.Array[Double] | js.typedarray.Uint8Array, 
+    /* version */ js.UndefOr[Double | Buffer], 
+    String
+  ]]
+  
+  inline def createValidator(version: Double): js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("createValidator")(version.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* base58str */ String, /* version */ js.UndefOr[Double | Buffer], Boolean]]
+  
+  inline def decode(base58str: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base58str.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def decode(base58str: String, version: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base58str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def decode(base58str: String, version: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base58str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
+  inline def encode(payload: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(payload: js.Array[Double], version: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(payload: js.Array[Double], version: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(payload: js.typedarray.Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(payload: js.typedarray.Uint8Array, version: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(payload: js.typedarray.Uint8Array, version: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(payload: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encode(payload: Buffer, version: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encode(payload: Buffer, version: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(payload.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def isValid(base58str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(base58str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValid(base58str: String, version: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(base58str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValid(base58str: String, version: Buffer): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(base58str.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

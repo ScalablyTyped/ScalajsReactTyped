@@ -1,21 +1,30 @@
 package typingsJapgolly.pgPromise.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IColumnSetOptions extends js.Object {
+trait IColumnSetOptions extends StObject {
+  
   var inherit: js.UndefOr[Boolean] = js.undefined
+  
   var table: js.UndefOr[String | ITable | TableName] = js.undefined
 }
-
 object IColumnSetOptions {
-  @scala.inline
-  def apply(inherit: js.UndefOr[Boolean] = js.undefined, table: String | ITable | TableName = null): IColumnSetOptions = {
+  
+  inline def apply(): IColumnSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit.asInstanceOf[js.Any])
-    if (table != null) __obj.updateDynamic("table")(table.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnSetOptions]
   }
+  
+  extension [Self <: IColumnSetOptions](x: Self) {
+    
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    
+    inline def setTable(value: String | ITable | TableName): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+  }
 }
-

@@ -10,15 +10,12 @@ Event emitter
 | ------------------ | :-------------: |
 | Full name          | component-emitter |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 427 |
-| # downloads        | 560033166 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.597955533333333E7 |
+| # stars            | 549.0 |
 
 ## Links
-- [Homepage](https://github.com/component/emitter#readme)
-- [Bugs](https://github.com/component/emitter/issues)
-- [Repository](https://github.com/component/emitter)
 - [Npm](https://www.npmjs.com/package/component-emitter)
     
 

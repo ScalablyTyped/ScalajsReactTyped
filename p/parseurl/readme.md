@@ -10,10 +10,10 @@ parse a url with memoization
 | ------------------ | :-------------: |
 | Full name          | parseurl |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 577 |
-| # downloads        | 466113273 |
-| # stars            | 22 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.2827167E7 |
+| # stars            | 174.0 |
 
 ## Links
 - [Homepage](https://github.com/pillarjs/parseurl#readme)

@@ -1,14 +1,17 @@
 package typingsJapgolly.uuidValidate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("uuid-validate", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(uuid: String): Boolean = js.native
-  def apply(uuid: String, version: Double): Boolean = js.native
-  def version(uuid: String): Double = js.native
+object mod {
+  
+  inline def apply(uuid: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(uuid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(uuid: String, version: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(uuid.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @JSImport("uuid-validate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def version(uuid: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(uuid.asInstanceOf[js.Any]).asInstanceOf[Double]
 }
-

@@ -10,10 +10,10 @@ shared, synchronous, independent state for javascript apps
 | ------------------ | :-------------: |
 | Full name          | atom |
 | Keywords           | shared, synchronous, independent, state |
-| # releases         | 6 |
-| # dependents       | 2 |
-| # downloads        | 7852 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 678.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/staydecent/atom#readme)

@@ -1,103 +1,141 @@
 package typingsJapgolly.reactLeaflet.mod
 
-import japgolly.scalajs.react.Callback
 import typingsJapgolly.leaflet.mod.DivIcon_
-import typingsJapgolly.leaflet.mod.DragEndEvent
 import typingsJapgolly.leaflet.mod.IconOptions
 import typingsJapgolly.leaflet.mod.Icon_
 import typingsJapgolly.leaflet.mod.LatLngExpression
-import typingsJapgolly.leaflet.mod.LeafletEvent
-import typingsJapgolly.leaflet.mod.LeafletMouseEvent
-import typingsJapgolly.leaflet.mod.MarkerOptions
 import typingsJapgolly.leaflet.mod.PointExpression
-import typingsJapgolly.leaflet.mod.PopupEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.reactLeaflet.mod.MapComponentProps because var conflicts: pane. Inlined leaflet
-- typingsJapgolly.reactLeaflet.mod.MapLayerProps because var conflicts: attribution, pane. Inlined children */ trait MarkerProps
-  extends MarkerOptions
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.leaflet.mod.LayerOptions because var conflicts: attribution, pane. Inlined 
+- typingsJapgolly.leaflet.mod.InteractiveLayerOptions because var conflicts: attribution, pane. Inlined bubblingMouseEvents, interactive
+- typingsJapgolly.leaflet.mod.MarkerOptions because var conflicts: attribution, pane. Inlined alt, autoPanOnFocus, autoPanSpeed, autoPanPadding, shadowPane, riseOffset, draggable, zIndexOffset, icon, keyboard, autoPan, opacity, riseOnHover, title */ trait MarkerProps
+  extends StObject
+     with MapLayerProps
      with MarkerEvents {
-  var children: js.UndefOr[Children] = js.undefined
-  var leaflet: js.UndefOr[LeafletContext] = js.undefined
+  
+  /** Text for the `alt` attribute of the icon image (useful for accessibility). */
+  var alt: js.UndefOr[String] = js.undefined
+  
+  /** Whether to pan the map when dragging this marker near its edge or not. */
+  var autoPan: js.UndefOr[Boolean] = js.undefined
+  
+  var autoPanOnFocus: js.UndefOr[Boolean] = js.undefined
+  
+  /** Distance (in pixels to the left/right and to the top/bottom) of the map edge to start panning the map. */
+  var autoPanPadding: js.UndefOr[PointExpression] = js.undefined
+  
+  /** Number of pixels the map should pan by. */
+  var autoPanSpeed: js.UndefOr[Double] = js.undefined
+  
+  var bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined
+  
+  /** Whether the marker is draggable with mouse/touch or not. */
+  var draggable: js.UndefOr[Boolean] = js.undefined
+  
+  var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
+  
+  var interactive: js.UndefOr[Boolean] = js.undefined
+  
+  /** Whether the marker can be tabbed to with a keyboard and clicked by pressing enter. */
+  var keyboard: js.UndefOr[Boolean] = js.undefined
+  
+  /** The opacity of the marker. */
+  var opacity: js.UndefOr[Double] = js.undefined
+  
   var position: LatLngExpression
+  
+  /** The z-index offset used for the `riseOnHover` feature. */
+  var riseOffset: js.UndefOr[Double] = js.undefined
+  
+  /** If `true`, the marker will get on top of others when you hover the mouse over it. */
+  var riseOnHover: js.UndefOr[Boolean] = js.undefined
+  
+  /** `Map pane` where the markers shadow will be added. */
+  var shadowPane: js.UndefOr[String] = js.undefined
+  
+  /** Text for the browser tooltip that appear on marker hover (no tooltip by default). */
+  var title: js.UndefOr[String] = js.undefined
+  
+  /** Option for putting the marker on top of all others (or below). */
+  var zIndexOffset: js.UndefOr[Double] = js.undefined
 }
-
 object MarkerProps {
-  @scala.inline
-  def apply(
-    position: LatLngExpression,
-    alt: String = null,
-    attribution: String = null,
-    autoPan: js.UndefOr[Boolean] = js.undefined,
-    autoPanPadding: PointExpression = null,
-    autoPanSpeed: Int | Double = null,
-    bubblingMouseEvents: js.UndefOr[Boolean] = js.undefined,
-    children: Children = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    icon: Icon_[IconOptions] | DivIcon_ = null,
-    interactive: js.UndefOr[Boolean] = js.undefined,
-    keyboard: js.UndefOr[Boolean] = js.undefined,
-    leaflet: LeafletContext = null,
-    onadd: /* event */ LeafletEvent => Callback = null,
-    onclick: /* event */ LeafletMouseEvent => Callback = null,
-    oncontextmenu: /* event */ LeafletMouseEvent => Callback = null,
-    ondblclick: /* event */ LeafletMouseEvent => Callback = null,
-    ondrag: /* event */ LeafletEvent => Callback = null,
-    ondragend: /* event */ DragEndEvent => Callback = null,
-    ondragstart: /* event */ LeafletEvent => Callback = null,
-    onmousedown: /* event */ LeafletMouseEvent => Callback = null,
-    onmouseout: /* event */ LeafletMouseEvent => Callback = null,
-    onmouseover: /* event */ LeafletMouseEvent => Callback = null,
-    onmove: /* event */ LeafletEvent => Callback = null,
-    onpopupclose: /* event */ PopupEvent => Callback = null,
-    onpopupopen: /* event */ PopupEvent => Callback = null,
-    onremove: /* event */ LeafletEvent => Callback = null,
-    opacity: Int | Double = null,
-    pane: String = null,
-    riseOffset: Int | Double = null,
-    riseOnHover: js.UndefOr[Boolean] = js.undefined,
-    shadowPane: String = null,
-    title: String = null,
-    zIndexOffset: Int | Double = null
-  ): MarkerProps = {
+  
+  inline def apply(position: LatLngExpression): MarkerProps = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (attribution != null) __obj.updateDynamic("attribution")(attribution.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoPan)) __obj.updateDynamic("autoPan")(autoPan.asInstanceOf[js.Any])
-    if (autoPanPadding != null) __obj.updateDynamic("autoPanPadding")(autoPanPadding.asInstanceOf[js.Any])
-    if (autoPanSpeed != null) __obj.updateDynamic("autoPanSpeed")(autoPanSpeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubblingMouseEvents)) __obj.updateDynamic("bubblingMouseEvents")(bubblingMouseEvents.asInstanceOf[js.Any])
-    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard.asInstanceOf[js.Any])
-    if (leaflet != null) __obj.updateDynamic("leaflet")(leaflet.asInstanceOf[js.Any])
-    if (onadd != null) __obj.updateDynamic("onadd")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletEvent) => onadd(t0).runNow()))
-    if (onclick != null) __obj.updateDynamic("onclick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onclick(t0).runNow()))
-    if (oncontextmenu != null) __obj.updateDynamic("oncontextmenu")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => oncontextmenu(t0).runNow()))
-    if (ondblclick != null) __obj.updateDynamic("ondblclick")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => ondblclick(t0).runNow()))
-    if (ondrag != null) __obj.updateDynamic("ondrag")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletEvent) => ondrag(t0).runNow()))
-    if (ondragend != null) __obj.updateDynamic("ondragend")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.DragEndEvent) => ondragend(t0).runNow()))
-    if (ondragstart != null) __obj.updateDynamic("ondragstart")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletEvent) => ondragstart(t0).runNow()))
-    if (onmousedown != null) __obj.updateDynamic("onmousedown")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onmousedown(t0).runNow()))
-    if (onmouseout != null) __obj.updateDynamic("onmouseout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onmouseout(t0).runNow()))
-    if (onmouseover != null) __obj.updateDynamic("onmouseover")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletMouseEvent) => onmouseover(t0).runNow()))
-    if (onmove != null) __obj.updateDynamic("onmove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletEvent) => onmove(t0).runNow()))
-    if (onpopupclose != null) __obj.updateDynamic("onpopupclose")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.PopupEvent) => onpopupclose(t0).runNow()))
-    if (onpopupopen != null) __obj.updateDynamic("onpopupopen")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.PopupEvent) => onpopupopen(t0).runNow()))
-    if (onremove != null) __obj.updateDynamic("onremove")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.leaflet.mod.LeafletEvent) => onremove(t0).runNow()))
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (riseOffset != null) __obj.updateDynamic("riseOffset")(riseOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(riseOnHover)) __obj.updateDynamic("riseOnHover")(riseOnHover.asInstanceOf[js.Any])
-    if (shadowPane != null) __obj.updateDynamic("shadowPane")(shadowPane.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerProps]
   }
+  
+  extension [Self <: MarkerProps](x: Self) {
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocus(value: Boolean): Self = StObject.set(x, "autoPanOnFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanOnFocusUndefined: Self = StObject.set(x, "autoPanOnFocus", js.undefined)
+    
+    inline def setAutoPanPadding(value: PointExpression): Self = StObject.set(x, "autoPanPadding", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanPaddingUndefined: Self = StObject.set(x, "autoPanPadding", js.undefined)
+    
+    inline def setAutoPanSpeed(value: Double): Self = StObject.set(x, "autoPanSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setAutoPanSpeedUndefined: Self = StObject.set(x, "autoPanSpeed", js.undefined)
+    
+    inline def setAutoPanUndefined: Self = StObject.set(x, "autoPan", js.undefined)
+    
+    inline def setBubblingMouseEvents(value: Boolean): Self = StObject.set(x, "bubblingMouseEvents", value.asInstanceOf[js.Any])
+    
+    inline def setBubblingMouseEventsUndefined: Self = StObject.set(x, "bubblingMouseEvents", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setIcon(value: Icon_[IconOptions] | DivIcon_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    
+    inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+    
+    inline def setKeyboardUndefined: Self = StObject.set(x, "keyboard", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setPosition(value: LatLngExpression): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setRiseOffset(value: Double): Self = StObject.set(x, "riseOffset", value.asInstanceOf[js.Any])
+    
+    inline def setRiseOffsetUndefined: Self = StObject.set(x, "riseOffset", js.undefined)
+    
+    inline def setRiseOnHover(value: Boolean): Self = StObject.set(x, "riseOnHover", value.asInstanceOf[js.Any])
+    
+    inline def setRiseOnHoverUndefined: Self = StObject.set(x, "riseOnHover", js.undefined)
+    
+    inline def setShadowPane(value: String): Self = StObject.set(x, "shadowPane", value.asInstanceOf[js.Any])
+    
+    inline def setShadowPaneUndefined: Self = StObject.set(x, "shadowPane", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setZIndexOffset(value: Double): Self = StObject.set(x, "zIndexOffset", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexOffsetUndefined: Self = StObject.set(x, "zIndexOffset", js.undefined)
+  }
 }
-

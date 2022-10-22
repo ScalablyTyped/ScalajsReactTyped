@@ -1,211 +1,436 @@
 package typingsJapgolly.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OSNotification extends js.Object {
+trait OSNotification extends StObject {
+  
   var adm_big_picture: js.UndefOr[String] = js.undefined
+  
   var adm_group: js.UndefOr[String] = js.undefined
-  var adm_group_message: js.UndefOr[js.Any] = js.undefined
+  
+  var adm_group_message: js.UndefOr[Any] = js.undefined
+  
   var adm_large_icon: js.UndefOr[String] = js.undefined
+  
   var adm_small_icon: js.UndefOr[String] = js.undefined
+  
   var adm_sound: js.UndefOr[String] = js.undefined
+  
   var amazon_background_data: js.UndefOr[Boolean] = js.undefined
+  
   var androidNotificationId: js.UndefOr[Double] = js.undefined
+  
   var android_accent_color: js.UndefOr[String] = js.undefined
+  
   var android_group: js.UndefOr[String] = js.undefined
-  var android_group_message: js.UndefOr[js.Any] = js.undefined
+  
+  var android_group_message: js.UndefOr[Any] = js.undefined
+  
   var android_led_color: js.UndefOr[String] = js.undefined
+  
   var android_sound: js.UndefOr[String] = js.undefined
+  
   var android_visibility: js.UndefOr[Double] = js.undefined
+  
   var app_id: js.UndefOr[String] = js.undefined
+  
   var app_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var big_picture: js.UndefOr[String] = js.undefined
-  var buttons: js.UndefOr[js.Any] = js.undefined
+  
+  var buttons: js.UndefOr[Any] = js.undefined
+  
   var chrome_big_picture: js.UndefOr[String] = js.undefined
+  
   var chrome_icon: js.UndefOr[String] = js.undefined
+  
   var chrome_web_icon: js.UndefOr[String] = js.undefined
+  
   var content_available: js.UndefOr[Boolean] = js.undefined
-  var contents: js.Any
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  var contents: Any
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
   var delayed_option: js.UndefOr[String] = js.undefined
+  
   var delivery_time_of_day: js.UndefOr[String] = js.undefined
+  
   var displayType: OSDisplayType
+  
   var excluded_segments: js.UndefOr[js.Array[String]] = js.undefined
+  
   var firefox_icon: js.UndefOr[String] = js.undefined
+  
   var groupedNotifications: js.UndefOr[js.Array[OSNotificationPayload]] = js.undefined
-  var headings: js.UndefOr[js.Any] = js.undefined
+  
+  var headings: js.UndefOr[Any] = js.undefined
+  
   var include_amazon_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_android_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_chrome_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_chrome_web_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_ios_tokens: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_player_ids: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_wp_uris: js.UndefOr[js.Array[String]] = js.undefined
+  
   var include_wp_wns_uris: js.UndefOr[js.Array[String]] = js.undefined
+  
   var included_segments: js.UndefOr[js.Array[String]] = js.undefined
+  
   var ios_badgeCount: js.UndefOr[Double] = js.undefined
+  
   var ios_badgeType: js.UndefOr[String] = js.undefined
+  
   var ios_category: js.UndefOr[String] = js.undefined
+  
   var ios_sound: js.UndefOr[String] = js.undefined
+  
   var isAdm: js.UndefOr[Boolean] = js.undefined
+  
   var isAndroid: js.UndefOr[Boolean] = js.undefined
+  
   var isAnyWeb: js.UndefOr[Boolean] = js.undefined
+  
   var isAppInFocus: Boolean
+  
   var isChrome: js.UndefOr[Boolean] = js.undefined
+  
   var isChromeWeb: js.UndefOr[Boolean] = js.undefined
+  
   var isIos: js.UndefOr[Boolean] = js.undefined
+  
   var isSafari: js.UndefOr[Boolean] = js.undefined
+  
   var isWP: js.UndefOr[Boolean] = js.undefined
+  
   var isWP_WNS: js.UndefOr[Boolean] = js.undefined
+  
   var large_icon: js.UndefOr[String] = js.undefined
+  
   var payload: OSNotificationPayload
+  
   var priority: js.UndefOr[Double] = js.undefined
+  
   var send_after: js.UndefOr[String] = js.undefined
+  
   var shown: Boolean
+  
   var small_icon: js.UndefOr[String] = js.undefined
-  var tags: js.UndefOr[js.Array[_]] = js.undefined
+  
+  var tags: js.UndefOr[js.Array[Any]] = js.undefined
+  
   var template_id: js.UndefOr[String] = js.undefined
+  
   var ttl: js.UndefOr[Double] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var wp_sound: js.UndefOr[String] = js.undefined
+  
   var wp_wns_sound: js.UndefOr[String] = js.undefined
 }
-
 object OSNotification {
-  @scala.inline
-  def apply(
-    contents: js.Any,
+  
+  inline def apply(
+    contents: Any,
     displayType: OSDisplayType,
     isAppInFocus: Boolean,
     payload: OSNotificationPayload,
-    shown: Boolean,
-    adm_big_picture: String = null,
-    adm_group: String = null,
-    adm_group_message: js.Any = null,
-    adm_large_icon: String = null,
-    adm_small_icon: String = null,
-    adm_sound: String = null,
-    amazon_background_data: js.UndefOr[Boolean] = js.undefined,
-    androidNotificationId: Int | Double = null,
-    android_accent_color: String = null,
-    android_group: String = null,
-    android_group_message: js.Any = null,
-    android_led_color: String = null,
-    android_sound: String = null,
-    android_visibility: Int | Double = null,
-    app_id: String = null,
-    app_ids: js.Array[String] = null,
-    big_picture: String = null,
-    buttons: js.Any = null,
-    chrome_big_picture: String = null,
-    chrome_icon: String = null,
-    chrome_web_icon: String = null,
-    content_available: js.UndefOr[Boolean] = js.undefined,
-    data: js.Any = null,
-    delayed_option: String = null,
-    delivery_time_of_day: String = null,
-    excluded_segments: js.Array[String] = null,
-    firefox_icon: String = null,
-    groupedNotifications: js.Array[OSNotificationPayload] = null,
-    headings: js.Any = null,
-    include_amazon_reg_ids: js.Array[String] = null,
-    include_android_reg_ids: js.Array[String] = null,
-    include_chrome_reg_ids: js.Array[String] = null,
-    include_chrome_web_reg_ids: js.Array[String] = null,
-    include_ios_tokens: js.Array[String] = null,
-    include_player_ids: js.Array[String] = null,
-    include_wp_uris: js.Array[String] = null,
-    include_wp_wns_uris: js.Array[String] = null,
-    included_segments: js.Array[String] = null,
-    ios_badgeCount: Int | Double = null,
-    ios_badgeType: String = null,
-    ios_category: String = null,
-    ios_sound: String = null,
-    isAdm: js.UndefOr[Boolean] = js.undefined,
-    isAndroid: js.UndefOr[Boolean] = js.undefined,
-    isAnyWeb: js.UndefOr[Boolean] = js.undefined,
-    isChrome: js.UndefOr[Boolean] = js.undefined,
-    isChromeWeb: js.UndefOr[Boolean] = js.undefined,
-    isIos: js.UndefOr[Boolean] = js.undefined,
-    isSafari: js.UndefOr[Boolean] = js.undefined,
-    isWP: js.UndefOr[Boolean] = js.undefined,
-    isWP_WNS: js.UndefOr[Boolean] = js.undefined,
-    large_icon: String = null,
-    priority: Int | Double = null,
-    send_after: String = null,
-    small_icon: String = null,
-    tags: js.Array[_] = null,
-    template_id: String = null,
-    ttl: Int | Double = null,
-    url: String = null,
-    wp_sound: String = null,
-    wp_wns_sound: String = null
+    shown: Boolean
   ): OSNotification = {
     val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], displayType = displayType.asInstanceOf[js.Any], isAppInFocus = isAppInFocus.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], shown = shown.asInstanceOf[js.Any])
-    if (adm_big_picture != null) __obj.updateDynamic("adm_big_picture")(adm_big_picture.asInstanceOf[js.Any])
-    if (adm_group != null) __obj.updateDynamic("adm_group")(adm_group.asInstanceOf[js.Any])
-    if (adm_group_message != null) __obj.updateDynamic("adm_group_message")(adm_group_message.asInstanceOf[js.Any])
-    if (adm_large_icon != null) __obj.updateDynamic("adm_large_icon")(adm_large_icon.asInstanceOf[js.Any])
-    if (adm_small_icon != null) __obj.updateDynamic("adm_small_icon")(adm_small_icon.asInstanceOf[js.Any])
-    if (adm_sound != null) __obj.updateDynamic("adm_sound")(adm_sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(amazon_background_data)) __obj.updateDynamic("amazon_background_data")(amazon_background_data.asInstanceOf[js.Any])
-    if (androidNotificationId != null) __obj.updateDynamic("androidNotificationId")(androidNotificationId.asInstanceOf[js.Any])
-    if (android_accent_color != null) __obj.updateDynamic("android_accent_color")(android_accent_color.asInstanceOf[js.Any])
-    if (android_group != null) __obj.updateDynamic("android_group")(android_group.asInstanceOf[js.Any])
-    if (android_group_message != null) __obj.updateDynamic("android_group_message")(android_group_message.asInstanceOf[js.Any])
-    if (android_led_color != null) __obj.updateDynamic("android_led_color")(android_led_color.asInstanceOf[js.Any])
-    if (android_sound != null) __obj.updateDynamic("android_sound")(android_sound.asInstanceOf[js.Any])
-    if (android_visibility != null) __obj.updateDynamic("android_visibility")(android_visibility.asInstanceOf[js.Any])
-    if (app_id != null) __obj.updateDynamic("app_id")(app_id.asInstanceOf[js.Any])
-    if (app_ids != null) __obj.updateDynamic("app_ids")(app_ids.asInstanceOf[js.Any])
-    if (big_picture != null) __obj.updateDynamic("big_picture")(big_picture.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (chrome_big_picture != null) __obj.updateDynamic("chrome_big_picture")(chrome_big_picture.asInstanceOf[js.Any])
-    if (chrome_icon != null) __obj.updateDynamic("chrome_icon")(chrome_icon.asInstanceOf[js.Any])
-    if (chrome_web_icon != null) __obj.updateDynamic("chrome_web_icon")(chrome_web_icon.asInstanceOf[js.Any])
-    if (!js.isUndefined(content_available)) __obj.updateDynamic("content_available")(content_available.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (delayed_option != null) __obj.updateDynamic("delayed_option")(delayed_option.asInstanceOf[js.Any])
-    if (delivery_time_of_day != null) __obj.updateDynamic("delivery_time_of_day")(delivery_time_of_day.asInstanceOf[js.Any])
-    if (excluded_segments != null) __obj.updateDynamic("excluded_segments")(excluded_segments.asInstanceOf[js.Any])
-    if (firefox_icon != null) __obj.updateDynamic("firefox_icon")(firefox_icon.asInstanceOf[js.Any])
-    if (groupedNotifications != null) __obj.updateDynamic("groupedNotifications")(groupedNotifications.asInstanceOf[js.Any])
-    if (headings != null) __obj.updateDynamic("headings")(headings.asInstanceOf[js.Any])
-    if (include_amazon_reg_ids != null) __obj.updateDynamic("include_amazon_reg_ids")(include_amazon_reg_ids.asInstanceOf[js.Any])
-    if (include_android_reg_ids != null) __obj.updateDynamic("include_android_reg_ids")(include_android_reg_ids.asInstanceOf[js.Any])
-    if (include_chrome_reg_ids != null) __obj.updateDynamic("include_chrome_reg_ids")(include_chrome_reg_ids.asInstanceOf[js.Any])
-    if (include_chrome_web_reg_ids != null) __obj.updateDynamic("include_chrome_web_reg_ids")(include_chrome_web_reg_ids.asInstanceOf[js.Any])
-    if (include_ios_tokens != null) __obj.updateDynamic("include_ios_tokens")(include_ios_tokens.asInstanceOf[js.Any])
-    if (include_player_ids != null) __obj.updateDynamic("include_player_ids")(include_player_ids.asInstanceOf[js.Any])
-    if (include_wp_uris != null) __obj.updateDynamic("include_wp_uris")(include_wp_uris.asInstanceOf[js.Any])
-    if (include_wp_wns_uris != null) __obj.updateDynamic("include_wp_wns_uris")(include_wp_wns_uris.asInstanceOf[js.Any])
-    if (included_segments != null) __obj.updateDynamic("included_segments")(included_segments.asInstanceOf[js.Any])
-    if (ios_badgeCount != null) __obj.updateDynamic("ios_badgeCount")(ios_badgeCount.asInstanceOf[js.Any])
-    if (ios_badgeType != null) __obj.updateDynamic("ios_badgeType")(ios_badgeType.asInstanceOf[js.Any])
-    if (ios_category != null) __obj.updateDynamic("ios_category")(ios_category.asInstanceOf[js.Any])
-    if (ios_sound != null) __obj.updateDynamic("ios_sound")(ios_sound.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAdm)) __obj.updateDynamic("isAdm")(isAdm.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAndroid)) __obj.updateDynamic("isAndroid")(isAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAnyWeb)) __obj.updateDynamic("isAnyWeb")(isAnyWeb.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChrome)) __obj.updateDynamic("isChrome")(isChrome.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChromeWeb)) __obj.updateDynamic("isChromeWeb")(isChromeWeb.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIos)) __obj.updateDynamic("isIos")(isIos.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSafari)) __obj.updateDynamic("isSafari")(isSafari.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWP)) __obj.updateDynamic("isWP")(isWP.asInstanceOf[js.Any])
-    if (!js.isUndefined(isWP_WNS)) __obj.updateDynamic("isWP_WNS")(isWP_WNS.asInstanceOf[js.Any])
-    if (large_icon != null) __obj.updateDynamic("large_icon")(large_icon.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (send_after != null) __obj.updateDynamic("send_after")(send_after.asInstanceOf[js.Any])
-    if (small_icon != null) __obj.updateDynamic("small_icon")(small_icon.asInstanceOf[js.Any])
-    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
-    if (template_id != null) __obj.updateDynamic("template_id")(template_id.asInstanceOf[js.Any])
-    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (wp_sound != null) __obj.updateDynamic("wp_sound")(wp_sound.asInstanceOf[js.Any])
-    if (wp_wns_sound != null) __obj.updateDynamic("wp_wns_sound")(wp_wns_sound.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSNotification]
   }
+  
+  extension [Self <: OSNotification](x: Self) {
+    
+    inline def setAdm_big_picture(value: String): Self = StObject.set(x, "adm_big_picture", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_big_pictureUndefined: Self = StObject.set(x, "adm_big_picture", js.undefined)
+    
+    inline def setAdm_group(value: String): Self = StObject.set(x, "adm_group", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_groupUndefined: Self = StObject.set(x, "adm_group", js.undefined)
+    
+    inline def setAdm_group_message(value: Any): Self = StObject.set(x, "adm_group_message", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_group_messageUndefined: Self = StObject.set(x, "adm_group_message", js.undefined)
+    
+    inline def setAdm_large_icon(value: String): Self = StObject.set(x, "adm_large_icon", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_large_iconUndefined: Self = StObject.set(x, "adm_large_icon", js.undefined)
+    
+    inline def setAdm_small_icon(value: String): Self = StObject.set(x, "adm_small_icon", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_small_iconUndefined: Self = StObject.set(x, "adm_small_icon", js.undefined)
+    
+    inline def setAdm_sound(value: String): Self = StObject.set(x, "adm_sound", value.asInstanceOf[js.Any])
+    
+    inline def setAdm_soundUndefined: Self = StObject.set(x, "adm_sound", js.undefined)
+    
+    inline def setAmazon_background_data(value: Boolean): Self = StObject.set(x, "amazon_background_data", value.asInstanceOf[js.Any])
+    
+    inline def setAmazon_background_dataUndefined: Self = StObject.set(x, "amazon_background_data", js.undefined)
+    
+    inline def setAndroidNotificationId(value: Double): Self = StObject.set(x, "androidNotificationId", value.asInstanceOf[js.Any])
+    
+    inline def setAndroidNotificationIdUndefined: Self = StObject.set(x, "androidNotificationId", js.undefined)
+    
+    inline def setAndroid_accent_color(value: String): Self = StObject.set(x, "android_accent_color", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_accent_colorUndefined: Self = StObject.set(x, "android_accent_color", js.undefined)
+    
+    inline def setAndroid_group(value: String): Self = StObject.set(x, "android_group", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_groupUndefined: Self = StObject.set(x, "android_group", js.undefined)
+    
+    inline def setAndroid_group_message(value: Any): Self = StObject.set(x, "android_group_message", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_group_messageUndefined: Self = StObject.set(x, "android_group_message", js.undefined)
+    
+    inline def setAndroid_led_color(value: String): Self = StObject.set(x, "android_led_color", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_led_colorUndefined: Self = StObject.set(x, "android_led_color", js.undefined)
+    
+    inline def setAndroid_sound(value: String): Self = StObject.set(x, "android_sound", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_soundUndefined: Self = StObject.set(x, "android_sound", js.undefined)
+    
+    inline def setAndroid_visibility(value: Double): Self = StObject.set(x, "android_visibility", value.asInstanceOf[js.Any])
+    
+    inline def setAndroid_visibilityUndefined: Self = StObject.set(x, "android_visibility", js.undefined)
+    
+    inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
+    
+    inline def setApp_idUndefined: Self = StObject.set(x, "app_id", js.undefined)
+    
+    inline def setApp_ids(value: js.Array[String]): Self = StObject.set(x, "app_ids", value.asInstanceOf[js.Any])
+    
+    inline def setApp_idsUndefined: Self = StObject.set(x, "app_ids", js.undefined)
+    
+    inline def setApp_idsVarargs(value: String*): Self = StObject.set(x, "app_ids", js.Array(value*))
+    
+    inline def setBig_picture(value: String): Self = StObject.set(x, "big_picture", value.asInstanceOf[js.Any])
+    
+    inline def setBig_pictureUndefined: Self = StObject.set(x, "big_picture", js.undefined)
+    
+    inline def setButtons(value: Any): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setChrome_big_picture(value: String): Self = StObject.set(x, "chrome_big_picture", value.asInstanceOf[js.Any])
+    
+    inline def setChrome_big_pictureUndefined: Self = StObject.set(x, "chrome_big_picture", js.undefined)
+    
+    inline def setChrome_icon(value: String): Self = StObject.set(x, "chrome_icon", value.asInstanceOf[js.Any])
+    
+    inline def setChrome_iconUndefined: Self = StObject.set(x, "chrome_icon", js.undefined)
+    
+    inline def setChrome_web_icon(value: String): Self = StObject.set(x, "chrome_web_icon", value.asInstanceOf[js.Any])
+    
+    inline def setChrome_web_iconUndefined: Self = StObject.set(x, "chrome_web_icon", js.undefined)
+    
+    inline def setContent_available(value: Boolean): Self = StObject.set(x, "content_available", value.asInstanceOf[js.Any])
+    
+    inline def setContent_availableUndefined: Self = StObject.set(x, "content_available", js.undefined)
+    
+    inline def setContents(value: Any): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDelayed_option(value: String): Self = StObject.set(x, "delayed_option", value.asInstanceOf[js.Any])
+    
+    inline def setDelayed_optionUndefined: Self = StObject.set(x, "delayed_option", js.undefined)
+    
+    inline def setDelivery_time_of_day(value: String): Self = StObject.set(x, "delivery_time_of_day", value.asInstanceOf[js.Any])
+    
+    inline def setDelivery_time_of_dayUndefined: Self = StObject.set(x, "delivery_time_of_day", js.undefined)
+    
+    inline def setDisplayType(value: OSDisplayType): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
+    
+    inline def setExcluded_segments(value: js.Array[String]): Self = StObject.set(x, "excluded_segments", value.asInstanceOf[js.Any])
+    
+    inline def setExcluded_segmentsUndefined: Self = StObject.set(x, "excluded_segments", js.undefined)
+    
+    inline def setExcluded_segmentsVarargs(value: String*): Self = StObject.set(x, "excluded_segments", js.Array(value*))
+    
+    inline def setFirefox_icon(value: String): Self = StObject.set(x, "firefox_icon", value.asInstanceOf[js.Any])
+    
+    inline def setFirefox_iconUndefined: Self = StObject.set(x, "firefox_icon", js.undefined)
+    
+    inline def setGroupedNotifications(value: js.Array[OSNotificationPayload]): Self = StObject.set(x, "groupedNotifications", value.asInstanceOf[js.Any])
+    
+    inline def setGroupedNotificationsUndefined: Self = StObject.set(x, "groupedNotifications", js.undefined)
+    
+    inline def setGroupedNotificationsVarargs(value: OSNotificationPayload*): Self = StObject.set(x, "groupedNotifications", js.Array(value*))
+    
+    inline def setHeadings(value: Any): Self = StObject.set(x, "headings", value.asInstanceOf[js.Any])
+    
+    inline def setHeadingsUndefined: Self = StObject.set(x, "headings", js.undefined)
+    
+    inline def setInclude_amazon_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_amazon_reg_ids", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_amazon_reg_idsUndefined: Self = StObject.set(x, "include_amazon_reg_ids", js.undefined)
+    
+    inline def setInclude_amazon_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_amazon_reg_ids", js.Array(value*))
+    
+    inline def setInclude_android_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_android_reg_ids", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_android_reg_idsUndefined: Self = StObject.set(x, "include_android_reg_ids", js.undefined)
+    
+    inline def setInclude_android_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_android_reg_ids", js.Array(value*))
+    
+    inline def setInclude_chrome_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_chrome_reg_ids", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_chrome_reg_idsUndefined: Self = StObject.set(x, "include_chrome_reg_ids", js.undefined)
+    
+    inline def setInclude_chrome_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_reg_ids", js.Array(value*))
+    
+    inline def setInclude_chrome_web_reg_ids(value: js.Array[String]): Self = StObject.set(x, "include_chrome_web_reg_ids", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_chrome_web_reg_idsUndefined: Self = StObject.set(x, "include_chrome_web_reg_ids", js.undefined)
+    
+    inline def setInclude_chrome_web_reg_idsVarargs(value: String*): Self = StObject.set(x, "include_chrome_web_reg_ids", js.Array(value*))
+    
+    inline def setInclude_ios_tokens(value: js.Array[String]): Self = StObject.set(x, "include_ios_tokens", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_ios_tokensUndefined: Self = StObject.set(x, "include_ios_tokens", js.undefined)
+    
+    inline def setInclude_ios_tokensVarargs(value: String*): Self = StObject.set(x, "include_ios_tokens", js.Array(value*))
+    
+    inline def setInclude_player_ids(value: js.Array[String]): Self = StObject.set(x, "include_player_ids", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_player_idsUndefined: Self = StObject.set(x, "include_player_ids", js.undefined)
+    
+    inline def setInclude_player_idsVarargs(value: String*): Self = StObject.set(x, "include_player_ids", js.Array(value*))
+    
+    inline def setInclude_wp_uris(value: js.Array[String]): Self = StObject.set(x, "include_wp_uris", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_wp_urisUndefined: Self = StObject.set(x, "include_wp_uris", js.undefined)
+    
+    inline def setInclude_wp_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_uris", js.Array(value*))
+    
+    inline def setInclude_wp_wns_uris(value: js.Array[String]): Self = StObject.set(x, "include_wp_wns_uris", value.asInstanceOf[js.Any])
+    
+    inline def setInclude_wp_wns_urisUndefined: Self = StObject.set(x, "include_wp_wns_uris", js.undefined)
+    
+    inline def setInclude_wp_wns_urisVarargs(value: String*): Self = StObject.set(x, "include_wp_wns_uris", js.Array(value*))
+    
+    inline def setIncluded_segments(value: js.Array[String]): Self = StObject.set(x, "included_segments", value.asInstanceOf[js.Any])
+    
+    inline def setIncluded_segmentsUndefined: Self = StObject.set(x, "included_segments", js.undefined)
+    
+    inline def setIncluded_segmentsVarargs(value: String*): Self = StObject.set(x, "included_segments", js.Array(value*))
+    
+    inline def setIos_badgeCount(value: Double): Self = StObject.set(x, "ios_badgeCount", value.asInstanceOf[js.Any])
+    
+    inline def setIos_badgeCountUndefined: Self = StObject.set(x, "ios_badgeCount", js.undefined)
+    
+    inline def setIos_badgeType(value: String): Self = StObject.set(x, "ios_badgeType", value.asInstanceOf[js.Any])
+    
+    inline def setIos_badgeTypeUndefined: Self = StObject.set(x, "ios_badgeType", js.undefined)
+    
+    inline def setIos_category(value: String): Self = StObject.set(x, "ios_category", value.asInstanceOf[js.Any])
+    
+    inline def setIos_categoryUndefined: Self = StObject.set(x, "ios_category", js.undefined)
+    
+    inline def setIos_sound(value: String): Self = StObject.set(x, "ios_sound", value.asInstanceOf[js.Any])
+    
+    inline def setIos_soundUndefined: Self = StObject.set(x, "ios_sound", js.undefined)
+    
+    inline def setIsAdm(value: Boolean): Self = StObject.set(x, "isAdm", value.asInstanceOf[js.Any])
+    
+    inline def setIsAdmUndefined: Self = StObject.set(x, "isAdm", js.undefined)
+    
+    inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
+    
+    inline def setIsAndroidUndefined: Self = StObject.set(x, "isAndroid", js.undefined)
+    
+    inline def setIsAnyWeb(value: Boolean): Self = StObject.set(x, "isAnyWeb", value.asInstanceOf[js.Any])
+    
+    inline def setIsAnyWebUndefined: Self = StObject.set(x, "isAnyWeb", js.undefined)
+    
+    inline def setIsAppInFocus(value: Boolean): Self = StObject.set(x, "isAppInFocus", value.asInstanceOf[js.Any])
+    
+    inline def setIsChrome(value: Boolean): Self = StObject.set(x, "isChrome", value.asInstanceOf[js.Any])
+    
+    inline def setIsChromeUndefined: Self = StObject.set(x, "isChrome", js.undefined)
+    
+    inline def setIsChromeWeb(value: Boolean): Self = StObject.set(x, "isChromeWeb", value.asInstanceOf[js.Any])
+    
+    inline def setIsChromeWebUndefined: Self = StObject.set(x, "isChromeWeb", js.undefined)
+    
+    inline def setIsIos(value: Boolean): Self = StObject.set(x, "isIos", value.asInstanceOf[js.Any])
+    
+    inline def setIsIosUndefined: Self = StObject.set(x, "isIos", js.undefined)
+    
+    inline def setIsSafari(value: Boolean): Self = StObject.set(x, "isSafari", value.asInstanceOf[js.Any])
+    
+    inline def setIsSafariUndefined: Self = StObject.set(x, "isSafari", js.undefined)
+    
+    inline def setIsWP(value: Boolean): Self = StObject.set(x, "isWP", value.asInstanceOf[js.Any])
+    
+    inline def setIsWPUndefined: Self = StObject.set(x, "isWP", js.undefined)
+    
+    inline def setIsWP_WNS(value: Boolean): Self = StObject.set(x, "isWP_WNS", value.asInstanceOf[js.Any])
+    
+    inline def setIsWP_WNSUndefined: Self = StObject.set(x, "isWP_WNS", js.undefined)
+    
+    inline def setLarge_icon(value: String): Self = StObject.set(x, "large_icon", value.asInstanceOf[js.Any])
+    
+    inline def setLarge_iconUndefined: Self = StObject.set(x, "large_icon", js.undefined)
+    
+    inline def setPayload(value: OSNotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setSend_after(value: String): Self = StObject.set(x, "send_after", value.asInstanceOf[js.Any])
+    
+    inline def setSend_afterUndefined: Self = StObject.set(x, "send_after", js.undefined)
+    
+    inline def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+    
+    inline def setSmall_icon(value: String): Self = StObject.set(x, "small_icon", value.asInstanceOf[js.Any])
+    
+    inline def setSmall_iconUndefined: Self = StObject.set(x, "small_icon", js.undefined)
+    
+    inline def setTags(value: js.Array[Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    
+    inline def setTagsVarargs(value: Any*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setTemplate_id(value: String): Self = StObject.set(x, "template_id", value.asInstanceOf[js.Any])
+    
+    inline def setTemplate_idUndefined: Self = StObject.set(x, "template_id", js.undefined)
+    
+    inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setWp_sound(value: String): Self = StObject.set(x, "wp_sound", value.asInstanceOf[js.Any])
+    
+    inline def setWp_soundUndefined: Self = StObject.set(x, "wp_sound", js.undefined)
+    
+    inline def setWp_wns_sound(value: String): Self = StObject.set(x, "wp_wns_sound", value.asInstanceOf[js.Any])
+    
+    inline def setWp_wns_soundUndefined: Self = StObject.set(x, "wp_wns_sound", js.undefined)
+  }
 }
-

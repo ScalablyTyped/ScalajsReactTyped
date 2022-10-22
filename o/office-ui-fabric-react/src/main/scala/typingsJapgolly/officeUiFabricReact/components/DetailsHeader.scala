@@ -1,147 +1,130 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnRenderTooltipProps
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IColumnReorderHeaderProps
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeader
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyleProps
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderStyles
-import typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.DetailsListLayoutMode
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn
-import typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumnReorderOptions
-import typingsJapgolly.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsCheckboxProps
-import typingsJapgolly.officeUiFabricReact.detailsRowTypesMod.ICellStyleProps
-import typingsJapgolly.officeUiFabricReact.groupedListTypesMod.CollapseAllVisibility
-import typingsJapgolly.officeUiFabricReact.withViewportMod.IViewport
-import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.IObjectWithKey
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.ISelection
-import typingsJapgolly.uifabricUtilities.selectionTypesMod.SelectionMode
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsColumnDottypesMod.IDetailsColumnRenderTooltipProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IColumnReorderHeaderProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeader
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderBaseProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.IDetailsHeaderStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDottypesMod.SelectAllVisibility
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.CheckboxVisibility
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.DetailsListLayoutMode
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IColumn
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsListDottypesMod.IColumnReorderOptions
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsRowCheckDottypesMod.IDetailsCheckboxProps
+import typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsRowDottypesMod.ICellStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsGroupedListGroupedListDottypesMod.CollapseAllVisibility
+import typingsJapgolly.officeUiFabricReact.libUtilitiesDecoratorsWithViewportMod.IViewport
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.IObjectWithKey
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.ISelection
+import typingsJapgolly.uifabricUtilities.libSelectionSelectionDottypesMod.SelectionMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DetailsHeader {
-  def apply(
-    layoutMode: DetailsListLayoutMode,
-    ariaLabel: String = null,
-    ariaLabelForSelectAllCheckbox: String = null,
-    ariaLabelForSelectionColumn: String = null,
-    ariaLabelForToggleAllGroupsButton: String = null,
-    cellStyleProps: ICellStyleProps = null,
-    checkboxVisibility: CheckboxVisibility = null,
-    className: String = null,
-    collapseAllVisibility: CollapseAllVisibility = null,
-    columnReorderOptions: IColumnReorderOptions = null,
-    columnReorderProps: IColumnReorderHeaderProps = null,
-    columns: js.Array[IColumn] = null,
-    componentRef: IRefObject[IDetailsHeader] = null,
-    groupNestingDepth: Int | Double = null,
-    indentWidth: Int | Double = null,
-    isAllCollapsed: js.UndefOr[Boolean] = js.undefined,
-    minimumPixelsForDrag: Int | Double = null,
-    onColumnAutoResized: (/* column */ IColumn, /* columnIndex */ Double) => Callback = null,
-    onColumnClick: (/* ev */ ReactMouseEventFrom[HTMLElement], /* column */ IColumn) => Callback = null,
-    onColumnContextMenu: (/* column */ IColumn, /* ev */ ReactMouseEventFrom[HTMLElement]) => Callback = null,
-    onColumnIsSizingChanged: (/* column */ IColumn, /* isSizing */ Boolean) => Callback = null,
-    onColumnResized: (/* column */ IColumn, /* newWidth */ Double, /* columnIndex */ Double) => Callback = null,
-    onRenderColumnHeaderTooltip: (/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], /* defaultRender */ js.UndefOr[
-      js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
-    ]) => CallbackTo[Element | Null] = null,
-    onRenderDetailsCheckbox: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => CallbackTo[Element | Null] = null,
-    onToggleCollapseAll: /* isAllCollapsed */ Boolean => Callback = null,
-    rowWidth: Int | Double = null,
-    selectAllVisibility: SelectAllVisibility = null,
-    selection: ISelection[IObjectWithKey] = null,
-    selectionMode: SelectionMode = null,
-    styles: IStyleFunctionOrObject[IDetailsHeaderStyleProps, IDetailsHeaderStyles] = null,
-    theme: ITheme = null,
-    useFastIcons: js.UndefOr[Boolean] = js.undefined,
-    viewport: IViewport = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IDetailsHeaderBaseProps, 
-    LegacyRef[typingsJapgolly.officeUiFabricReact.detailsHeaderBaseMod.DetailsHeaderBase], 
-    Unit, 
-    IDetailsHeaderBaseProps
-  ] = {
-    val __obj = js.Dynamic.literal(layoutMode = layoutMode.asInstanceOf[js.Any])
   
-      if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaLabelForSelectAllCheckbox != null) __obj.updateDynamic("ariaLabelForSelectAllCheckbox")(ariaLabelForSelectAllCheckbox.asInstanceOf[js.Any])
-    if (ariaLabelForSelectionColumn != null) __obj.updateDynamic("ariaLabelForSelectionColumn")(ariaLabelForSelectionColumn.asInstanceOf[js.Any])
-    if (ariaLabelForToggleAllGroupsButton != null) __obj.updateDynamic("ariaLabelForToggleAllGroupsButton")(ariaLabelForToggleAllGroupsButton.asInstanceOf[js.Any])
-    if (cellStyleProps != null) __obj.updateDynamic("cellStyleProps")(cellStyleProps.asInstanceOf[js.Any])
-    if (checkboxVisibility != null) __obj.updateDynamic("checkboxVisibility")(checkboxVisibility.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (collapseAllVisibility != null) __obj.updateDynamic("collapseAllVisibility")(collapseAllVisibility.asInstanceOf[js.Any])
-    if (columnReorderOptions != null) __obj.updateDynamic("columnReorderOptions")(columnReorderOptions.asInstanceOf[js.Any])
-    if (columnReorderProps != null) __obj.updateDynamic("columnReorderProps")(columnReorderProps.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (groupNestingDepth != null) __obj.updateDynamic("groupNestingDepth")(groupNestingDepth.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(isAllCollapsed)) __obj.updateDynamic("isAllCollapsed")(isAllCollapsed.asInstanceOf[js.Any])
-    if (minimumPixelsForDrag != null) __obj.updateDynamic("minimumPixelsForDrag")(minimumPixelsForDrag.asInstanceOf[js.Any])
-    if (onColumnAutoResized != null) __obj.updateDynamic("onColumnAutoResized")(js.Any.fromFunction2((t0: /* column */ typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn, t1: /* columnIndex */ scala.Double) => onColumnAutoResized(t0, t1).runNow()))
-    if (onColumnClick != null) __obj.updateDynamic("onColumnClick")(js.Any.fromFunction2((t0: /* ev */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* column */ typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn) => onColumnClick(t0, t1).runNow()))
-    if (onColumnContextMenu != null) __obj.updateDynamic("onColumnContextMenu")(js.Any.fromFunction2((t0: /* column */ typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn, t1: /* ev */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onColumnContextMenu(t0, t1).runNow()))
-    if (onColumnIsSizingChanged != null) __obj.updateDynamic("onColumnIsSizingChanged")(js.Any.fromFunction2((t0: /* column */ typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn, t1: /* isSizing */ scala.Boolean) => onColumnIsSizingChanged(t0, t1).runNow()))
-    if (onColumnResized != null) __obj.updateDynamic("onColumnResized")(js.Any.fromFunction3((t0: /* column */ typingsJapgolly.officeUiFabricReact.detailsListTypesMod.IColumn, t1: /* newWidth */ scala.Double, t2: /* columnIndex */ scala.Double) => onColumnResized(t0, t1, t2).runNow()))
-    if (onRenderColumnHeaderTooltip != null) __obj.updateDynamic("onRenderColumnHeaderTooltip")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[
-  typingsJapgolly.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnRenderTooltipProps], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[
-      typingsJapgolly.officeUiFabricReact.detailsColumnTypesMod.IDetailsColumnRenderTooltipProps
-    ], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderColumnHeaderTooltip(t0, t1).runNow()))
-    if (onRenderDetailsCheckbox != null) __obj.updateDynamic("onRenderDetailsCheckbox")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[
-  typingsJapgolly.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsCheckboxProps], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[
-      typingsJapgolly.officeUiFabricReact.detailsRowCheckTypesMod.IDetailsCheckboxProps
-    ], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderDetailsCheckbox(t0, t1).runNow()))
-    if (onToggleCollapseAll != null) __obj.updateDynamic("onToggleCollapseAll")(js.Any.fromFunction1((t0: /* isAllCollapsed */ scala.Boolean) => onToggleCollapseAll(t0).runNow()))
-    if (rowWidth != null) __obj.updateDynamic("rowWidth")(rowWidth.asInstanceOf[js.Any])
-    if (selectAllVisibility != null) __obj.updateDynamic("selectAllVisibility")(selectAllVisibility.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useFastIcons)) __obj.updateDynamic("useFastIcons")(useFastIcons.asInstanceOf[js.Any])
-    if (viewport != null) __obj.updateDynamic("viewport")(viewport.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.react.mod.LegacyRef[typingsJapgolly.officeUiFabricReact.detailsHeaderBaseMod.DetailsHeaderBase]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderBaseProps])(children: _*)
+  inline def apply(layoutMode: DetailsListLayoutMode): Builder = {
+    val __props = js.Dynamic.literal(layoutMode = layoutMode.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IDetailsHeaderBaseProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "DetailsHeader")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[
+          typingsJapgolly.officeUiFabricReact.libComponentsDetailsListDetailsHeaderDotbaseMod.DetailsHeaderBase
+        ] {
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelForSelectAllCheckbox(value: String): this.type = set("ariaLabelForSelectAllCheckbox", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelForSelectionColumn(value: String): this.type = set("ariaLabelForSelectionColumn", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelForToggleAllGroupsButton(value: String): this.type = set("ariaLabelForToggleAllGroupsButton", value.asInstanceOf[js.Any])
+    
+    inline def cellStyleProps(value: ICellStyleProps): this.type = set("cellStyleProps", value.asInstanceOf[js.Any])
+    
+    inline def checkboxVisibility(value: CheckboxVisibility): this.type = set("checkboxVisibility", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def collapseAllVisibility(value: CollapseAllVisibility): this.type = set("collapseAllVisibility", value.asInstanceOf[js.Any])
+    
+    inline def columnReorderOptions(value: IColumnReorderOptions): this.type = set("columnReorderOptions", value.asInstanceOf[js.Any])
+    
+    inline def columnReorderProps(value: IColumnReorderHeaderProps): this.type = set("columnReorderProps", value.asInstanceOf[js.Any])
+    
+    inline def columns(value: js.Array[IColumn]): this.type = set("columns", value.asInstanceOf[js.Any])
+    
+    inline def columnsVarargs(value: IColumn*): this.type = set("columns", js.Array(value*))
+    
+    inline def componentRef(value: IRefObject[IDetailsHeader]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IDetailsHeader | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IDetailsHeader | Null) => value(t0).runNow()))
+    
+    inline def groupNestingDepth(value: Double): this.type = set("groupNestingDepth", value.asInstanceOf[js.Any])
+    
+    inline def indentWidth(value: Double): this.type = set("indentWidth", value.asInstanceOf[js.Any])
+    
+    inline def isAllCollapsed(value: Boolean): this.type = set("isAllCollapsed", value.asInstanceOf[js.Any])
+    
+    inline def minimumPixelsForDrag(value: Double): this.type = set("minimumPixelsForDrag", value.asInstanceOf[js.Any])
+    
+    inline def onColumnAutoResized(value: (/* column */ IColumn, /* columnIndex */ Double) => Callback): this.type = set("onColumnAutoResized", js.Any.fromFunction2((t0: /* column */ IColumn, t1: /* columnIndex */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onColumnClick(value: (/* ev */ ReactMouseEventFrom[HTMLElement], /* column */ IColumn) => Callback): this.type = set("onColumnClick", js.Any.fromFunction2((t0: /* ev */ ReactMouseEventFrom[HTMLElement], t1: /* column */ IColumn) => (value(t0, t1)).runNow()))
+    
+    inline def onColumnContextMenu(value: (/* column */ IColumn, /* ev */ ReactMouseEventFrom[HTMLElement]) => Callback): this.type = set("onColumnContextMenu", js.Any.fromFunction2((t0: /* column */ IColumn, t1: /* ev */ ReactMouseEventFrom[HTMLElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onColumnIsSizingChanged(value: (/* column */ IColumn, /* isSizing */ Boolean) => Callback): this.type = set("onColumnIsSizingChanged", js.Any.fromFunction2((t0: /* column */ IColumn, t1: /* isSizing */ Boolean) => (value(t0, t1)).runNow()))
+    
+    inline def onColumnResized(value: (/* column */ IColumn, /* newWidth */ Double, /* columnIndex */ Double) => Callback): this.type = set("onColumnResized", js.Any.fromFunction3((t0: /* column */ IColumn, t1: /* newWidth */ Double, t2: /* columnIndex */ Double) => (value(t0, t1, t2)).runNow()))
+    
+    inline def onRenderColumnHeaderTooltip(
+      value: (/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], /* defaultRender */ js.UndefOr[
+          js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
+        ]) => Element | Null
+    ): this.type = set("onRenderColumnHeaderTooltip", js.Any.fromFunction2(value))
+    
+    inline def onRenderDetailsCheckbox(
+      value: (/* props */ js.UndefOr[IDetailsCheckboxProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IDetailsCheckboxProps], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderDetailsCheckbox", js.Any.fromFunction2(value))
+    
+    inline def onToggleCollapseAll(value: /* isAllCollapsed */ Boolean => Callback): this.type = set("onToggleCollapseAll", js.Any.fromFunction1((t0: /* isAllCollapsed */ Boolean) => value(t0).runNow()))
+    
+    inline def rowWidth(value: Double): this.type = set("rowWidth", value.asInstanceOf[js.Any])
+    
+    inline def selectAllVisibility(value: SelectAllVisibility): this.type = set("selectAllVisibility", value.asInstanceOf[js.Any])
+    
+    inline def selection(value: ISelection[IObjectWithKey]): this.type = set("selection", value.asInstanceOf[js.Any])
+    
+    inline def selectionMode(value: SelectionMode): this.type = set("selectionMode", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IDetailsHeaderStyleProps, IDetailsHeaderStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IDetailsHeaderStyleProps => DeepPartial[IDetailsHeaderStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def useFastIcons(value: Boolean): this.type = set("useFastIcons", value.asInstanceOf[js.Any])
+    
+    inline def viewport(value: IViewport): this.type = set("viewport", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IDetailsHeaderBaseProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

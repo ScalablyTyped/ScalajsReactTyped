@@ -1,53 +1,36 @@
 package typingsJapgolly.stormReactDiagrams.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.stormReactDiagrams.diagramEngineMod.DiagramEngine
-import typingsJapgolly.stormReactDiagrams.linkLayerWidgetMod.LinkLayerProps
-import typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.stormReactDiagrams.distSrcDiagramEngineMod.DiagramEngine
+import typingsJapgolly.stormReactDiagrams.distSrcModelsPointModelMod.PointModel
+import typingsJapgolly.stormReactDiagrams.distSrcWidgetsLayersLinkLayerWidgetMod.LinkLayerProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LinkLayerWidget {
-  def apply(
-    diagramEngine: DiagramEngine,
-    pointAdded: (PointModel, MouseEvent) => CallbackTo[js.Any],
-    baseClass: String = null,
-    className: String = null,
-    extraProps: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    LinkLayerProps, 
-    typingsJapgolly.stormReactDiagrams.mod.LinkLayerWidget, 
-    Unit, 
-    LinkLayerProps
-  ] = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("pointAdded")(js.Any.fromFunction2((t0: typingsJapgolly.stormReactDiagrams.pointModelMod.PointModel, t1: org.scalajs.dom.raw.MouseEvent) => pointAdded(t0, t1).runNow()))
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.stormReactDiagrams.linkLayerWidgetMod.LinkLayerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.stormReactDiagrams.mod.LinkLayerWidget](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.linkLayerWidgetMod.LinkLayerProps])(children: _*)
+  inline def apply(diagramEngine: DiagramEngine, pointAdded: (PointModel, MouseEvent) => Any): Builder = {
+    val __props = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], pointAdded = js.Any.fromFunction2(pointAdded))
+    new Builder(js.Array(this.component, __props.asInstanceOf[LinkLayerProps]))
   }
+  
   @JSImport("storm-react-diagrams", "LinkLayerWidget")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.stormReactDiagrams.mod.LinkLayerWidget] {
+    
+    inline def baseClass(value: String): this.type = set("baseClass", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extraProps(value: Any): this.type = set("extraProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: LinkLayerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

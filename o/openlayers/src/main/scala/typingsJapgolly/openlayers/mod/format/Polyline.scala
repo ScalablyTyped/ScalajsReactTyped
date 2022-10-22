@@ -1,16 +1,16 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalajs.dom.Document
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.geom.Geometry
 import typingsJapgolly.openlayers.mod.olx.format.PolylineOptions
 import typingsJapgolly.openlayers.mod.olx.format.ReadOptions
 import typingsJapgolly.openlayers.mod.olx.format.WriteOptions
 import typingsJapgolly.openlayers.mod.proj.Projection
-import typingsJapgolly.std.Document_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -32,12 +32,11 @@ import scala.scalajs.js.annotation._
   *     Optional configuration object.
   * @api stable
   */
-class Polyline () extends TextFeature {
+open class Polyline () extends TextFeature {
   def this(opt_options: PolylineOptions) = this()
+  
   def readFeature(source: String): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   /**
     * Read the feature from the Polyline source. The coordinates are assumed to be
     * in two dimensions and in latitude, longitude order.
@@ -47,14 +46,15 @@ class Polyline () extends TextFeature {
     * @return Feature.
     * @api stable
     */
-  def readFeature(source: Document_): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: Document_, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  
   def readFeatures(source: String): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   /**
     * Read the feature from the source. As Polyline sources contain a single
     * feature, this will return the feature in an array.
@@ -64,14 +64,15 @@ class Polyline () extends TextFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  
   def readGeometry(source: String): Geometry = js.native
   def readGeometry(source: String, opt_options: ReadOptions): Geometry = js.native
-  def readGeometry(source: GlobalObject): Geometry = js.native
-  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
   /**
     * Read the geometry from the source.
     *
@@ -80,12 +81,14 @@ class Polyline () extends TextFeature {
     * @return Geometry.
     * @api stable
     */
-  def readGeometry(source: Document_): Geometry = js.native
-  def readGeometry(source: Document_, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: Document): Geometry = js.native
+  def readGeometry(source: Document, opt_options: ReadOptions): Geometry = js.native
   def readGeometry(source: Node): Geometry = js.native
   def readGeometry(source: Node, opt_options: ReadOptions): Geometry = js.native
+  def readGeometry(source: GlobalObject): Geometry = js.native
+  def readGeometry(source: GlobalObject, opt_options: ReadOptions): Geometry = js.native
+  
   def readProjection(source: String): Projection = js.native
-  def readProjection(source: GlobalObject): Projection = js.native
   /**
     * Read the projection from a Polyline source.
     *
@@ -93,8 +96,10 @@ class Polyline () extends TextFeature {
     * @return Projection.
     * @api stable
     */
-  def readProjection(source: Document_): Projection = js.native
+  def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
+  def readProjection(source: GlobalObject): Projection = js.native
+  
   /**
     * Write a single geometry in Polyline format.
     *
@@ -106,11 +111,12 @@ class Polyline () extends TextFeature {
   def writeGeometry(geometry: Geometry): String = js.native
   def writeGeometry(geometry: Geometry, opt_options: WriteOptions): String = js.native
 }
-
-/* static members */
-@JSImport("openlayers", "format.Polyline")
-@js.native
-object Polyline extends js.Object {
+object Polyline {
+  
+  @JSImport("openlayers", "format.Polyline")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Decode a list of n-dimensional points from an encoded string
     *
@@ -122,8 +128,10 @@ object Polyline extends js.Object {
     * @return A list of n-dimensional points.
     * @api
     */
-  def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = js.native
-  def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = js.native
+  /* static member */
+  inline def decodeDeltas(encoded: String, stride: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def decodeDeltas(encoded: String, stride: Double, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeDeltas")(encoded.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
   /**
     * Decode a list of floating point numbers from an encoded string
     *
@@ -133,8 +141,10 @@ object Polyline extends js.Object {
     * @return A list of floating point numbers.
     * @api
     */
-  def decodeFloats(encoded: String): js.Array[Double] = js.native
-  def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = js.native
+  /* static member */
+  inline def decodeFloats(encoded: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def decodeFloats(encoded: String, opt_factor: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFloats")(encoded.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
   /**
     * Encode a list of n-dimensional points and return an encoded string
     *
@@ -148,8 +158,10 @@ object Polyline extends js.Object {
     * @return The encoded string.
     * @api
     */
-  def encodeDeltas(numbers: js.Array[Double], stride: Double): String = js.native
-  def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = js.native
+  /* static member */
+  inline def encodeDeltas(numbers: js.Array[Double], stride: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeDeltas(numbers: js.Array[Double], stride: Double, opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDeltas")(numbers.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   /**
     * Encode a list of floating point numbers and return an encoded string
     *
@@ -162,7 +174,7 @@ object Polyline extends js.Object {
     * @return The encoded string.
     * @api
     */
-  def encodeFloats(numbers: js.Array[Double]): String = js.native
-  def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = js.native
+  /* static member */
+  inline def encodeFloats(numbers: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeFloats(numbers: js.Array[Double], opt_factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeFloats")(numbers.asInstanceOf[js.Any], opt_factor.asInstanceOf[js.Any])).asInstanceOf[String]
 }
-

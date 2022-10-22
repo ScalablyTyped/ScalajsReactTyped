@@ -1,37 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Http.Headers
 
-import typingsJapgolly.winrtUwp.AnonContentCodingHeaderValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents content encoding information used in the Content-Encoding HTTP header on HTTP content in a request or a response. */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentCodingHeaderValue")
-@js.native
-class HttpContentCodingHeaderValue protected () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpContentCodingHeaderValue class.
-    * @param contentCoding The value of the content-coding to use.
-    */
-  def this(contentCoding: String) = this()
+trait HttpContentCodingHeaderValue extends StObject {
+  
   /** Gets the value of the content-coding information used in the Content-Encoding HTTP header. */
-  var contentCoding: String = js.native
+  var contentCoding: String
 }
-
-/* static members */
-@JSGlobal("Windows.Web.Http.Headers.HttpContentCodingHeaderValue")
-@js.native
-object HttpContentCodingHeaderValue extends js.Object {
-  /**
-    * Converts a string to an HttpContentCodingHeaderValue instance.
-    * @param input A string that represents the content coding information in the Content-Encoding HTTP header.
-    * @return An HttpContentCodingHeaderValue instance.
-    */
-  def parse(input: String): HttpContentCodingHeaderValue = js.native
-  /**
-    * Determines whether a string is valid HttpContentCodingHeaderValue information.
-    * @param input The string to validate.
-    */
-  def tryParse(input: String): AnonContentCodingHeaderValue = js.native
+object HttpContentCodingHeaderValue {
+  
+  inline def apply(contentCoding: String): HttpContentCodingHeaderValue = {
+    val __obj = js.Dynamic.literal(contentCoding = contentCoding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpContentCodingHeaderValue]
+  }
+  
+  extension [Self <: HttpContentCodingHeaderValue](x: Self) {
+    
+    inline def setContentCoding(value: String): Self = StObject.set(x, "contentCoding", value.asInstanceOf[js.Any])
+  }
 }
-

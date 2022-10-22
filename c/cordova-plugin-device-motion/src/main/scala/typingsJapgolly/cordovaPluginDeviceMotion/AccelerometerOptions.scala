@@ -1,21 +1,26 @@
 package typingsJapgolly.cordovaPluginDeviceMotion
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object with options for watchAcceleration */
-trait AccelerometerOptions extends js.Object {
+trait AccelerometerOptions extends StObject {
+  
   /** How often to retrieve the Acceleration in milliseconds. (Default: 10000) */
   var frequency: js.UndefOr[Double] = js.undefined
 }
-
 object AccelerometerOptions {
-  @scala.inline
-  def apply(frequency: Int | Double = null): AccelerometerOptions = {
+  
+  inline def apply(): AccelerometerOptions = {
     val __obj = js.Dynamic.literal()
-    if (frequency != null) __obj.updateDynamic("frequency")(frequency.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccelerometerOptions]
   }
+  
+  extension [Self <: AccelerometerOptions](x: Self) {
+    
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+  }
 }
-

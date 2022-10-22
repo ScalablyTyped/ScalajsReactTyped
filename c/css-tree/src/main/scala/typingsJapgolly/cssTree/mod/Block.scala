@@ -1,28 +1,31 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Block
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
-  var children: List[CssNode]
+  
+  var children: typingsJapgolly.cssTree.mod.List[CssNode]
+  
   @JSName("type")
   var type_Block: typingsJapgolly.cssTree.cssTreeStrings.Block
 }
-
 object Block {
-  @scala.inline
-  def apply(
-    children: List[CssNode],
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.Block,
-    loc: CssLocation = null
-  ): Block = {
+  
+  inline def apply(children: typingsJapgolly.cssTree.mod.List[CssNode]): Block = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Block")
     __obj.asInstanceOf[Block]
   }
+  
+  extension [Self <: Block](x: Self) {
+    
+    inline def setChildren(value: typingsJapgolly.cssTree.mod.List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.Block): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

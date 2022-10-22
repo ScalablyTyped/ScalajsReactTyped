@@ -1,29 +1,66 @@
 package typingsJapgolly.playcanvas.mod
 
+import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.Instantiable2
+import org.scalajs.dom.AudioContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  * @class
-  * @name pc.SoundComponentSystem
-  * @augments pc.ComponentSystem
-  * @classdesc Manages creation of {@link pc.SoundComponent}s.
-  * @description Create a SoundComponentSystem.
-  * @param {pc.Application} app - The Application.
-  * @param {pc.SoundManager} manager - The sound manager.
-  * @property {number} volume Sets / gets the volume for the entire Sound system. All sounds will have their volume
-  * multiplied by this value. Valid between [0, 1].
-  * @property {AudioContext} context Gets the AudioContext currently used by the sound manager. Requires Web Audio API support.
-  * @property {pc.SoundManager} manager Gets / sets the sound manager.
+  * Manages creation of {@link SoundComponent}s.
+  *
+  * @augments ComponentSystem
+  * @ignore
   */
 @JSImport("playcanvas", "SoundComponentSystem")
 @js.native
-class SoundComponentSystem protected ()
-  extends typingsJapgolly.playcanvas.pc.SoundComponentSystem {
-  def this(
-    app: typingsJapgolly.playcanvas.pc.Application,
-    manager: typingsJapgolly.playcanvas.pc.SoundManager
-  ) = this()
+open class SoundComponentSystem protected () extends ComponentSystem {
+  /**
+    * Create a new ComponentSystem instance.
+    *
+    * @param {AppBase} app - The application managing this system.
+    */
+  def this(app: AppBase) = this()
+  
+  var ComponentType: Instantiable2[/* system */ SoundComponentSystem, /* entity */ Entity, SoundComponent] = js.native
+  
+  var DataType: Instantiable0[SoundComponentData] = js.native
+  
+  def cloneComponent(entity: Any, clone: Any): Component = js.native
+  
+  /**
+    * Gets the AudioContext currently used by the sound manager. Requires Web Audio API support.
+    * Returns null if the device does not support the Web Audio API.
+    *
+    * @type {AudioContext|null}
+    */
+  def context: AudioContext = js.native
+  
+  var id: String = js.native
+  
+  def initializeComponentData(component: Any, data: Any, properties: Any): Unit = js.native
+  
+  /**
+    * Gets / sets the sound manager.
+    *
+    * @type {SoundManager}
+    */
+  var manager: SoundManager = js.native
+  
+  def onBeforeRemove(entity: Any, component: Any): Unit = js.native
+  
+  def onUpdate(dt: Any): Unit = js.native
+  
+  @JSName("schema")
+  var schema_SoundComponentSystem: js.Array[String] = js.native
+  
+  def volume: Double = js.native
+  /**
+    * Sets / gets the volume for the entire Sound system. All sounds will have their volume
+    * multiplied by this value. Valid between [0, 1].
+    *
+    * @type {number}
+    */
+  def volume_=(arg: Double): Unit = js.native
 }
-

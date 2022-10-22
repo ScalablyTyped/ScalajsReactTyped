@@ -11,45 +11,80 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`job-submitted`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`job-succeeded`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`job-timed-out`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`job-waiting`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JobInfoProperties extends js.Object {
+trait JobInfoProperties extends StObject {
+  
   /**
     * The unique job ID assigned by ArcGIS Server.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#jobId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobId)
     */
   var jobId: js.UndefOr[String] = js.undefined
+  
   /**
     * The job status.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#jobStatus)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#jobStatus)
     */
   var jobStatus: js.UndefOr[
     `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting`
   ] = js.undefined
+  
   /**
     * An array of messages that include the message type and a description.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-JobInfo.html#messages)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#messages)
     */
   var messages: js.UndefOr[js.Array[GPMessageProperties]] = js.undefined
+  
+  /**
+    * The [options](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#esriRequest) to be used for data requests.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#requestOptions)
+    */
+  var requestOptions: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * ArcGIS Server Rest API endpoint to the resource that receives the geoprocessing request.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-JobInfo.html#sourceUrl)
+    */
+  var sourceUrl: js.UndefOr[String] = js.undefined
 }
-
 object JobInfoProperties {
-  @scala.inline
-  def apply(
-    jobId: String = null,
-    jobStatus: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting` = null,
-    messages: js.Array[GPMessageProperties] = null
-  ): JobInfoProperties = {
+  
+  inline def apply(): JobInfoProperties = {
     val __obj = js.Dynamic.literal()
-    if (jobId != null) __obj.updateDynamic("jobId")(jobId.asInstanceOf[js.Any])
-    if (jobStatus != null) __obj.updateDynamic("jobStatus")(jobStatus.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobInfoProperties]
   }
+  
+  extension [Self <: JobInfoProperties](x: Self) {
+    
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    
+    inline def setJobStatus(
+      value: `job-cancelled` | `job-cancelling` | `job-deleted` | `job-deleting` | `job-timed-out` | `job-executing` | `job-failed` | `job-new` | `job-submitted` | `job-succeeded` | `job-waiting`
+    ): Self = StObject.set(x, "jobStatus", value.asInstanceOf[js.Any])
+    
+    inline def setJobStatusUndefined: Self = StObject.set(x, "jobStatus", js.undefined)
+    
+    inline def setMessages(value: js.Array[GPMessageProperties]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setMessagesVarargs(value: GPMessageProperties*): Self = StObject.set(x, "messages", js.Array(value*))
+    
+    inline def setRequestOptions(value: Any): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+  }
 }
-

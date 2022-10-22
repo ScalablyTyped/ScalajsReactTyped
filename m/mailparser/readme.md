@@ -1,7 +1,7 @@
 
 # Scala.js typings for mailparser
 
-Typings are for version 2.7
+Typings are for version 3.4
 
 ## Library description:
 Parse e-mails
@@ -10,10 +10,10 @@ Parse e-mails
 | ------------------ | :-------------: |
 | Full name          | mailparser |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 210 |
-| # downloads        | 5288794 |
-| # stars            | 27 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 1912694.6666666667 |
+| # stars            | 1422.0 |
 
 ## Links
 - [Homepage](https://github.com/nodemailer/mailparser#readme)

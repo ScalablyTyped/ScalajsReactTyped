@@ -1,11 +1,13 @@
 package typingsJapgolly.hapiJoi.mod
 
-import typingsJapgolly.hapiJoi.hapiJoiBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArrayUniqueOptions extends HierarchySeparatorOptions {
+trait ArrayUniqueOptions
+  extends StObject
+     with HierarchySeparatorOptions {
+  
   /**
     * if true, undefined values for the dot notation string comparator will not cause the array to fail on uniqueness.
     *
@@ -13,14 +15,17 @@ trait ArrayUniqueOptions extends HierarchySeparatorOptions {
     */
   var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
 }
-
 object ArrayUniqueOptions {
-  @scala.inline
-  def apply(ignoreUndefined: js.UndefOr[Boolean] = js.undefined, separator: String | `false` = null): ArrayUniqueOptions = {
+  
+  inline def apply(): ArrayUniqueOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreUndefined)) __obj.updateDynamic("ignoreUndefined")(ignoreUndefined.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayUniqueOptions]
   }
+  
+  extension [Self <: ArrayUniqueOptions](x: Self) {
+    
+    inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+  }
 }
-

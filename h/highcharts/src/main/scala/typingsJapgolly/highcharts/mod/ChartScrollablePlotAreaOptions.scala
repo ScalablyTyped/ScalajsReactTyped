@@ -1,25 +1,29 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartScrollablePlotAreaOptions extends js.Object {
+trait ChartScrollablePlotAreaOptions extends StObject {
+  
   /**
     * (Highcharts, Gantt) The minimum height for the plot area. If it gets
     * smaller than this, the plot area will become scrollable.
     */
   var minHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The minimum width for the plot area. If it gets
     * smaller than this, the plot area will become scrollable.
     */
   var minWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The opacity of mask applied on one of the sides of
     * the plot area.
     */
   var opacity: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The initial scrolling position of the scrollable plot
     * area. Ranges from 0 to 1, where 0 aligns the plot area to the left and 1
@@ -27,6 +31,7 @@ trait ChartScrollablePlotAreaOptions extends js.Object {
     * aligned Y axes.
     */
   var scrollPositionX: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The initial scrolling position of the scrollable plot
     * area. Ranges from 0 to 1, where 0 aligns the plot area to the top and 1
@@ -34,23 +39,33 @@ trait ChartScrollablePlotAreaOptions extends js.Object {
     */
   var scrollPositionY: js.UndefOr[Double] = js.undefined
 }
-
 object ChartScrollablePlotAreaOptions {
-  @scala.inline
-  def apply(
-    minHeight: Int | Double = null,
-    minWidth: Int | Double = null,
-    opacity: Int | Double = null,
-    scrollPositionX: Int | Double = null,
-    scrollPositionY: Int | Double = null
-  ): ChartScrollablePlotAreaOptions = {
+  
+  inline def apply(): ChartScrollablePlotAreaOptions = {
     val __obj = js.Dynamic.literal()
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (scrollPositionX != null) __obj.updateDynamic("scrollPositionX")(scrollPositionX.asInstanceOf[js.Any])
-    if (scrollPositionY != null) __obj.updateDynamic("scrollPositionY")(scrollPositionY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartScrollablePlotAreaOptions]
   }
+  
+  extension [Self <: ChartScrollablePlotAreaOptions](x: Self) {
+    
+    inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setScrollPositionX(value: Double): Self = StObject.set(x, "scrollPositionX", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPositionXUndefined: Self = StObject.set(x, "scrollPositionX", js.undefined)
+    
+    inline def setScrollPositionY(value: Double): Self = StObject.set(x, "scrollPositionY", value.asInstanceOf[js.Any])
+    
+    inline def setScrollPositionYUndefined: Self = StObject.set(x, "scrollPositionY", js.undefined)
+  }
 }
-

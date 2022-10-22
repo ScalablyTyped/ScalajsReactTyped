@@ -1,34 +1,54 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Shared extends js.Object {
+trait Shared extends StObject {
+  
   // The identity of the owner of the shared item. Read-only.
-  var owner: js.UndefOr[IdentitySet] = js.undefined
+  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
   // Indicates the scope of how the item is shared: anonymous, organization, or users. Read-only.
-  var scope: js.UndefOr[String] = js.undefined
+  var scope: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The identity of the user who shared the item. Read-only.
-  var sharedBy: js.UndefOr[IdentitySet] = js.undefined
+  var sharedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
+  
   // The UTC date and time when the item was shared. Read-only.
-  var sharedDateTime: js.UndefOr[String] = js.undefined
+  var sharedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object Shared {
-  @scala.inline
-  def apply(
-    owner: IdentitySet = null,
-    scope: String = null,
-    sharedBy: IdentitySet = null,
-    sharedDateTime: String = null
-  ): Shared = {
+  
+  inline def apply(): Shared = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
-    if (sharedBy != null) __obj.updateDynamic("sharedBy")(sharedBy.asInstanceOf[js.Any])
-    if (sharedDateTime != null) __obj.updateDynamic("sharedDateTime")(sharedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shared]
   }
+  
+  extension [Self <: Shared](x: Self) {
+    
+    inline def setOwner(value: NullableOption[IdentitySet]): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerNull: Self = StObject.set(x, "owner", null)
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setScope(value: NullableOption[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setScopeNull: Self = StObject.set(x, "scope", null)
+    
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    
+    inline def setSharedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "sharedBy", value.asInstanceOf[js.Any])
+    
+    inline def setSharedByNull: Self = StObject.set(x, "sharedBy", null)
+    
+    inline def setSharedByUndefined: Self = StObject.set(x, "sharedBy", js.undefined)
+    
+    inline def setSharedDateTime(value: NullableOption[String]): Self = StObject.set(x, "sharedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setSharedDateTimeNull: Self = StObject.set(x, "sharedDateTime", null)
+    
+    inline def setSharedDateTimeUndefined: Self = StObject.set(x, "sharedDateTime", js.undefined)
+  }
 }
-

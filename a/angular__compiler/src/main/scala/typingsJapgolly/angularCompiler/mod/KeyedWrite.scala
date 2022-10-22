@@ -1,18 +1,17 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "KeyedWrite")
 @js.native
-class KeyedWrite protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.KeyedWrite {
-  def this(
-    span: typingsJapgolly.angularCompiler.astMod.ParseSpan,
-    obj: typingsJapgolly.angularCompiler.astMod.AST,
-    key: typingsJapgolly.angularCompiler.astMod.AST,
-    value: typingsJapgolly.angularCompiler.astMod.AST
-  ) = this()
+open class KeyedWrite protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, receiver: AST, key: AST, value: AST) = this()
+  
+  var key: AST = js.native
+  
+  var receiver: AST = js.native
+  
+  var value: AST = js.native
 }
-

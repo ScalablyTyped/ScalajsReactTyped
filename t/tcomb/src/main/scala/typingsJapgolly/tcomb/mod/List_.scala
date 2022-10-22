@@ -1,9 +1,8 @@
 package typingsJapgolly.tcomb.mod
 
-import typingsJapgolly.tcomb.AnonType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // list
@@ -11,10 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait List_[T]
   extends Type[js.Array[T]] {
+  
   @JSName("meta")
-  var meta_List_ : AnonType[T] = js.native
+  var meta_List_ : typingsJapgolly.tcomb.anon.Type[T] = js.native
+  
+  def update(instance: js.Array[T], spec: UpdatePatch): js.Array[T] = js.native
   @JSName("update")
   var update_Original: Update_[js.Array[T]] = js.native
-  def update(instance: js.Array[T], spec: UpdatePatch): js.Array[T] = js.native
 }
-

@@ -1,13 +1,15 @@
 package typingsJapgolly.tempfile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tempfile", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): String = js.native
-  def apply(extension: String): String = js.native
+object mod {
+  
+  @JSImport("tempfile", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  inline def default(`extension`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`extension`.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

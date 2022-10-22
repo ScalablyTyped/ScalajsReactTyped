@@ -1,79 +1,75 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`0`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1048575`
-import typingsJapgolly.activexDao.activexDaoNumbers.`128`
-import typingsJapgolly.activexDao.activexDaoNumbers.`131072`
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`20`
-import typingsJapgolly.activexDao.activexDaoNumbers.`262144`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`32`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4`
-import typingsJapgolly.activexDao.activexDaoNumbers.`524288`
-import typingsJapgolly.activexDao.activexDaoNumbers.`64`
-import typingsJapgolly.activexDao.activexDaoNumbers.`65536`
-import typingsJapgolly.activexDao.activexDaoNumbers.`65548`
-import typingsJapgolly.activexDao.activexDaoNumbers.`8`
+import typingsJapgolly.activexDao.activexDaoInts.`0`
+import typingsJapgolly.activexDao.activexDaoInts.`1048575`
+import typingsJapgolly.activexDao.activexDaoInts.`128`
+import typingsJapgolly.activexDao.activexDaoInts.`131072`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`20`
+import typingsJapgolly.activexDao.activexDaoInts.`262144`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`32`
+import typingsJapgolly.activexDao.activexDaoInts.`4`
+import typingsJapgolly.activexDao.activexDaoInts.`524288`
+import typingsJapgolly.activexDao.activexDaoInts.`64`
+import typingsJapgolly.activexDao.activexDaoInts.`65536`
+import typingsJapgolly.activexDao.activexDaoInts.`65548`
+import typingsJapgolly.activexDao.activexDaoInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`8`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`65536`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`128`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1048575`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`32`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`0`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`131072`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`64`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`20`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`65548`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`524288`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`262144`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`8`
+  - typingsJapgolly.activexDao.activexDaoInts.`4`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`65536`
+  - typingsJapgolly.activexDao.activexDaoInts.`128`
+  - typingsJapgolly.activexDao.activexDaoInts.`1048575`
+  - typingsJapgolly.activexDao.activexDaoInts.`32`
+  - typingsJapgolly.activexDao.activexDaoInts.`0`
+  - typingsJapgolly.activexDao.activexDaoInts.`131072`
+  - typingsJapgolly.activexDao.activexDaoInts.`64`
+  - typingsJapgolly.activexDao.activexDaoInts.`20`
+  - typingsJapgolly.activexDao.activexDaoInts.`65548`
+  - typingsJapgolly.activexDao.activexDaoInts.`524288`
+  - typingsJapgolly.activexDao.activexDaoInts.`262144`
 */
-trait PermissionEnum extends js.Object
-
+trait PermissionEnum extends StObject
 object PermissionEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbSecCreate: `1` = this.cast(1)
-  @scala.inline
-  def dbSecDBAdmin: `8` = this.cast(8)
-  @scala.inline
-  def dbSecDBCreate: `1` = this.cast(1)
-  @scala.inline
-  def dbSecDBExclusive: `4` = this.cast(4)
-  @scala.inline
-  def dbSecDBOpen: `2` = this.cast(2)
-  @scala.inline
-  def dbSecDelete: `65536` = this.cast(65536)
-  @scala.inline
-  def dbSecDeleteData: `128` = this.cast(128)
-  @scala.inline
-  def dbSecFullAccess: `1048575` = this.cast(1048575)
-  @scala.inline
-  def dbSecInsertData: `32` = this.cast(32)
-  @scala.inline
-  def dbSecNoAccess: `0` = this.cast(0)
-  @scala.inline
-  def dbSecReadDef: `4` = this.cast(4)
-  @scala.inline
-  def dbSecReadSec: `131072` = this.cast(131072)
-  @scala.inline
-  def dbSecReplaceData: `64` = this.cast(64)
-  @scala.inline
-  def dbSecRetrieveData: `20` = this.cast(20)
-  @scala.inline
-  def dbSecWriteDef: `65548` = this.cast(65548)
-  @scala.inline
-  def dbSecWriteOwner: `524288` = this.cast(524288)
-  @scala.inline
-  def dbSecWriteSec: `262144` = this.cast(262144)
+  
+  inline def dbSecCreate: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbSecDBAdmin: `8` = 8.asInstanceOf[`8`]
+  
+  inline def dbSecDBCreate: `1` = 1.asInstanceOf[`1`]
+  
+  inline def dbSecDBExclusive: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbSecDBOpen: `2` = 2.asInstanceOf[`2`]
+  
+  inline def dbSecDelete: `65536` = 65536.asInstanceOf[`65536`]
+  
+  inline def dbSecDeleteData: `128` = 128.asInstanceOf[`128`]
+  
+  inline def dbSecFullAccess: `1048575` = 1048575.asInstanceOf[`1048575`]
+  
+  inline def dbSecInsertData: `32` = 32.asInstanceOf[`32`]
+  
+  inline def dbSecNoAccess: `0` = 0.asInstanceOf[`0`]
+  
+  inline def dbSecReadDef: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbSecReadSec: `131072` = 131072.asInstanceOf[`131072`]
+  
+  inline def dbSecReplaceData: `64` = 64.asInstanceOf[`64`]
+  
+  inline def dbSecRetrieveData: `20` = 20.asInstanceOf[`20`]
+  
+  inline def dbSecWriteDef: `65548` = 65548.asInstanceOf[`65548`]
+  
+  inline def dbSecWriteOwner: `524288` = 524288.asInstanceOf[`524288`]
+  
+  inline def dbSecWriteSec: `262144` = 262144.asInstanceOf[`262144`]
 }
-

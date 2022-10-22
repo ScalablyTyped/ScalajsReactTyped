@@ -1,14 +1,16 @@
 package typingsJapgolly.materialTabScroller
 
-import typingsJapgolly.std.Document_
+import org.scalajs.dom.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/tab-scroller/util", JSImport.Namespace)
-@js.native
-object utilMod extends js.Object {
-  def computeHorizontalScrollbarHeight(documentObj: Document_): Double = js.native
-  def computeHorizontalScrollbarHeight(documentObj: Document_, shouldCacheResult: Boolean): Double = js.native
+object utilMod {
+  
+  @JSImport("@material/tab-scroller/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def computeHorizontalScrollbarHeight(documentObj: Document): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHorizontalScrollbarHeight")(documentObj.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def computeHorizontalScrollbarHeight(documentObj: Document, shouldCacheResult: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("computeHorizontalScrollbarHeight")(documentObj.asInstanceOf[js.Any], shouldCacheResult.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

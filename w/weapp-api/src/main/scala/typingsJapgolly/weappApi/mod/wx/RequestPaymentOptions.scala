@@ -1,48 +1,73 @@
 package typingsJapgolly.weappApi.mod.wx
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestPaymentOptions extends js.Object {
+trait RequestPaymentOptions extends StObject {
+  
   /** 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=* */
   @JSName("package")
   var _package: String
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[ResponseCallback] = js.undefined
+  
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[ResponseCallback] = js.undefined
+  
   /** 随机字符串，长度为32个字符以下。 */
   var nonceStr: String
+  
   /** 签名,具体签名方案参见微信公众号支付帮助文档; */
   var paySign: String
+  
   /** 签名算法，暂支持 MD5 */
   var signType: PaymentSignType
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[ResponseCallback] = js.undefined
+  
   /** 时间戳从1970年1月1日00:00:00至今的秒数,即当前的时间 */
   var timeStamp: String | Double
 }
-
 object RequestPaymentOptions {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     _package: String,
     nonceStr: String,
     paySign: String,
     signType: PaymentSignType,
-    timeStamp: String | Double,
-    complete: /* res */ js.Any => Callback = null,
-    fail: /* res */ js.Any => Callback = null,
-    success: /* res */ js.Any => Callback = null
+    timeStamp: String | Double
   ): RequestPaymentOptions = {
     val __obj = js.Dynamic.literal(nonceStr = nonceStr.asInstanceOf[js.Any], paySign = paySign.asInstanceOf[js.Any], signType = signType.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("package")(_package.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* res */ js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[RequestPaymentOptions]
   }
+  
+  extension [Self <: RequestPaymentOptions](x: Self) {
+    
+    inline def setComplete(value: /* res */ Any => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* res */ Any) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setFail(value: /* res */ Any => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* res */ Any) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setNonceStr(value: String): Self = StObject.set(x, "nonceStr", value.asInstanceOf[js.Any])
+    
+    inline def setPaySign(value: String): Self = StObject.set(x, "paySign", value.asInstanceOf[js.Any])
+    
+    inline def setSignType(value: PaymentSignType): Self = StObject.set(x, "signType", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ Any => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ Any) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setTimeStamp(value: String | Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    
+    inline def set_package(value: String): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+  }
 }
-

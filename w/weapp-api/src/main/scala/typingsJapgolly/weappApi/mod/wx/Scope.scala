@@ -1,8 +1,8 @@
 package typingsJapgolly.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  授权
 /**
@@ -28,28 +28,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.weappApi.weappApiStrings.writePhotosAlbum
   - typingsJapgolly.weappApi.weappApiStrings.camera
 */
-trait Scope extends js.Object
-
+trait Scope extends StObject
 object Scope {
-  @scala.inline
-  def address: typingsJapgolly.weappApi.weappApiStrings.address = this.cast("address")
-  @scala.inline
-  def camera: typingsJapgolly.weappApi.weappApiStrings.camera = this.cast("camera")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def invoice: typingsJapgolly.weappApi.weappApiStrings.invoice = this.cast("invoice")
-  @scala.inline
-  def invoiceTitle: typingsJapgolly.weappApi.weappApiStrings.invoiceTitle = this.cast("invoiceTitle")
-  @scala.inline
-  def record: typingsJapgolly.weappApi.weappApiStrings.record = this.cast("record")
-  @scala.inline
-  def userInfo: typingsJapgolly.weappApi.weappApiStrings.userInfo = this.cast("userInfo")
-  @scala.inline
-  def userLocation: typingsJapgolly.weappApi.weappApiStrings.userLocation = this.cast("userLocation")
-  @scala.inline
-  def werun: typingsJapgolly.weappApi.weappApiStrings.werun = this.cast("werun")
-  @scala.inline
-  def writePhotosAlbum: typingsJapgolly.weappApi.weappApiStrings.writePhotosAlbum = this.cast("writePhotosAlbum")
+  
+  inline def address: typingsJapgolly.weappApi.weappApiStrings.address = "address".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.address]
+  
+  inline def camera: typingsJapgolly.weappApi.weappApiStrings.camera = "camera".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.camera]
+  
+  inline def invoice: typingsJapgolly.weappApi.weappApiStrings.invoice = "invoice".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.invoice]
+  
+  inline def invoiceTitle: typingsJapgolly.weappApi.weappApiStrings.invoiceTitle = "invoiceTitle".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.invoiceTitle]
+  
+  inline def record: typingsJapgolly.weappApi.weappApiStrings.record = "record".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.record]
+  
+  inline def userInfo: typingsJapgolly.weappApi.weappApiStrings.userInfo = "userInfo".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.userInfo]
+  
+  inline def userLocation: typingsJapgolly.weappApi.weappApiStrings.userLocation = "userLocation".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.userLocation]
+  
+  inline def werun: typingsJapgolly.weappApi.weappApiStrings.werun = "werun".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.werun]
+  
+  inline def writePhotosAlbum: typingsJapgolly.weappApi.weappApiStrings.writePhotosAlbum = "writePhotosAlbum".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.writePhotosAlbum]
 }
-

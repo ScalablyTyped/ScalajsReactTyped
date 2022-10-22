@@ -1,13 +1,15 @@
 package typingsJapgolly.ttf2woff2
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ttf2woff2", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(inputContent: Buffer): Buffer = js.native
+object mod {
+  
+  inline def apply(inputContent: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].apply(inputContent.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @JSImport("ttf2woff2", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

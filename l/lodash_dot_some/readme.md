@@ -10,10 +10,10 @@ The lodash method `_.some` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.some |
 | Keywords           | lodash-modularized, some |
-| # releases         | 0 |
-| # dependents       | 95 |
-| # downloads        | 70514516 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6492946.333333333 |
+| # stars            | 53664.0 |
 
 ## Links
 - [Homepage](https://lodash.com/)

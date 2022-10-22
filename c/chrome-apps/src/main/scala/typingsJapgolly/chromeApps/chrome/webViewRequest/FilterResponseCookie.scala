@@ -2,12 +2,13 @@ package typingsJapgolly.chromeApps.chrome.webViewRequest
 
 import typingsJapgolly.chromeApps.chrome.double
 import typingsJapgolly.chromeApps.chrome.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A filter of a cookie in HTTP Responses. */
-trait FilterResponseCookie extends js.Object {
+trait FilterResponseCookie extends StObject {
+  
   /**
     * Inclusive lower bound on the cookie lifetime (specified in seconds after current time).
     * Only cookies whose expiration date-time is set to 'now + ageLowerBound' or later fulfill
@@ -16,6 +17,7 @@ trait FilterResponseCookie extends js.Object {
     * are specified, 'max-age' is used to calculate the cookie lifetime.
     */
   var ageLowerBound: js.UndefOr[integer] = js.undefined
+  
   /**
     * Inclusive upper bound on the cookie lifetime (specified in seconds after current time).
     * Only cookies whose expiration date-time is in the interval [now, now + ageUpperBound]
@@ -25,57 +27,88 @@ trait FilterResponseCookie extends js.Object {
     * is used to calculate the cookie lifetime.
     */
   var ageUpperBound: js.UndefOr[integer] = js.undefined
+  
   /** Value of the Domain cookie attribute. */
   var domain: js.UndefOr[String] = js.undefined
+  
   /** Value of the Expires cookie attribute. */
   var expires: js.UndefOr[String] = js.undefined
+  
   /** Existence of the HttpOnly cookie attribute */
   var httpOnly: js.UndefOr[String] = js.undefined
+  
   /** Value of the Max-Age cookie attribute */
   var maxAge: js.UndefOr[double] = js.undefined
+  
   /** Name of a cookie. */
   var name: js.UndefOr[String] = js.undefined
+  
   /** Value of the Path cookie attribute. */
   var path: js.UndefOr[String] = js.undefined
+  
   /** Existence of the Secure cookie attribute. */
   var secure: js.UndefOr[String] = js.undefined
+  
   /**
     * Filters session cookies.
     * Session cookies have no lifetime specified in any of 'max-age' or 'expires' attributes.
     */
   var sessionCookie: js.UndefOr[Boolean] = js.undefined
+  
   /** Value of a cookie, may be padded in double-quotes. */
   var value: js.UndefOr[String] = js.undefined
 }
-
 object FilterResponseCookie {
-  @scala.inline
-  def apply(
-    ageLowerBound: Int | Double = null,
-    ageUpperBound: Int | Double = null,
-    domain: String = null,
-    expires: String = null,
-    httpOnly: String = null,
-    maxAge: Int | Double = null,
-    name: String = null,
-    path: String = null,
-    secure: String = null,
-    sessionCookie: js.UndefOr[Boolean] = js.undefined,
-    value: String = null
-  ): FilterResponseCookie = {
+  
+  inline def apply(): FilterResponseCookie = {
     val __obj = js.Dynamic.literal()
-    if (ageLowerBound != null) __obj.updateDynamic("ageLowerBound")(ageLowerBound.asInstanceOf[js.Any])
-    if (ageUpperBound != null) __obj.updateDynamic("ageUpperBound")(ageUpperBound.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
-    if (httpOnly != null) __obj.updateDynamic("httpOnly")(httpOnly.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
-    if (!js.isUndefined(sessionCookie)) __obj.updateDynamic("sessionCookie")(sessionCookie.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterResponseCookie]
   }
+  
+  extension [Self <: FilterResponseCookie](x: Self) {
+    
+    inline def setAgeLowerBound(value: integer): Self = StObject.set(x, "ageLowerBound", value.asInstanceOf[js.Any])
+    
+    inline def setAgeLowerBoundUndefined: Self = StObject.set(x, "ageLowerBound", js.undefined)
+    
+    inline def setAgeUpperBound(value: integer): Self = StObject.set(x, "ageUpperBound", value.asInstanceOf[js.Any])
+    
+    inline def setAgeUpperBoundUndefined: Self = StObject.set(x, "ageUpperBound", js.undefined)
+    
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setExpires(value: String): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    
+    inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+    
+    inline def setHttpOnly(value: String): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+    
+    inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+    
+    inline def setMaxAge(value: double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setSecure(value: String): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+    
+    inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+    
+    inline def setSessionCookie(value: Boolean): Self = StObject.set(x, "sessionCookie", value.asInstanceOf[js.Any])
+    
+    inline def setSessionCookieUndefined: Self = StObject.set(x, "sessionCookie", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

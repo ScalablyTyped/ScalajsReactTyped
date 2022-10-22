@@ -1,13 +1,22 @@
 package typingsJapgolly.sinonChrome.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "power")
-@js.native
-object power extends js.Object {
-  var releaseKeepAwake: SinonChromeStub = js.native
-  var requestKeepAwake: SinonChromeStub = js.native
+object power {
+  
+  @JSImport("sinon-chrome", "power")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "power.releaseKeepAwake")
+  @js.native
+  def releaseKeepAwake: SinonChromeStub = js.native
+  inline def releaseKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("releaseKeepAwake")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "power.requestKeepAwake")
+  @js.native
+  def requestKeepAwake: SinonChromeStub = js.native
+  inline def requestKeepAwake_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestKeepAwake")(x.asInstanceOf[js.Any])
 }
-

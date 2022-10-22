@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.denied
   - typingsJapgolly.std.stdStrings.granted
   - typingsJapgolly.std.stdStrings.prompt
 */
-trait PermissionState extends js.Object
-
+trait PermissionState extends StObject
 object PermissionState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def denied: typingsJapgolly.std.stdStrings.denied = this.cast("denied")
-  @scala.inline
-  def granted: typingsJapgolly.std.stdStrings.granted = this.cast("granted")
-  @scala.inline
-  def prompt: typingsJapgolly.std.stdStrings.prompt = this.cast("prompt")
+  
+  inline def denied: typingsJapgolly.std.stdStrings.denied = "denied".asInstanceOf[typingsJapgolly.std.stdStrings.denied]
+  
+  inline def granted: typingsJapgolly.std.stdStrings.granted = "granted".asInstanceOf[typingsJapgolly.std.stdStrings.granted]
+  
+  inline def prompt: typingsJapgolly.std.stdStrings.prompt = "prompt".asInstanceOf[typingsJapgolly.std.stdStrings.prompt]
 }
-

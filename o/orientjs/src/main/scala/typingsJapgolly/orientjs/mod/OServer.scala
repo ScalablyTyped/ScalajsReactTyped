@@ -1,8 +1,8 @@
 package typingsJapgolly.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * # Server
@@ -12,16 +12,18 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("orientjs", "OServer")
 @js.native
-class OServer () extends js.Object {
+open class OServer () extends StObject {
   def this(options: ServerConfig) = this()
-  var config: ServerConfiguration = js.native
-  var logger: OLogger = js.native
+  
   /**
     * Close the connection to the server.
     *
     * @return the disconnected server instance
     */
   def close(): OServer = js.native
+  
+  var config: ServerConfiguration = js.native
+  
   /**
     * Configure the server instance.
     *
@@ -29,6 +31,7 @@ class OServer () extends js.Object {
     * @return            The configured server object.
     */
   def configure(config: ServerConfig): OServer = js.native
+  
   /**
     * Configure the logger for the server.
     *
@@ -36,13 +39,15 @@ class OServer () extends js.Object {
     * @return        The server instance with the configured logger.
     */
   def configureLogger(logger: OLogger): OServer = js.native
+  
   /**
     * Configure the transport for the server.
     *
     * @param  config The server config.
     * @return        The configured server object.
     */
-  def configureTransport(config: js.Any): OServer = js.native
+  def configureTransport(config: Any): OServer = js.native
+  
   /**
     * Create a database with the given name / config.
     *
@@ -51,6 +56,7 @@ class OServer () extends js.Object {
     */
   def create(name: String): js.Promise[ODB] = js.native
   def create(name: DbConfig): js.Promise[ODB] = js.native
+  
   /**
     * Destroy a database with the given name / config.
     *
@@ -59,6 +65,7 @@ class OServer () extends js.Object {
     */
   def drop(name: String): js.Promise[ODB] = js.native
   def drop(name: DbConfig): js.Promise[ODB] = js.native
+  
   /**
     * Determine whether a database exists with the given name.
     *
@@ -68,6 +75,7 @@ class OServer () extends js.Object {
     */
   def exists(name: String): js.Promise[Boolean] = js.native
   def exists(name: String, storageType: String): js.Promise[Boolean] = js.native
+  
   /**
     * Freeze the database with the given name.
     *
@@ -75,18 +83,23 @@ class OServer () extends js.Object {
     * @param   storageType The storage type, defaults to `plocal`.
     * @return              The response from the server.
     */
-  def freeze(name: String): js.Any = js.native
-  def freeze(name: String, storageType: String): js.Any = js.native
+  def freeze(name: String): Any = js.native
+  def freeze(name: String, storageType: String): Any = js.native
+  
   /**
     * Initialize the server instance.
     */
   def init(): Unit = js.native
+  
   /**
     * List all the databases on the server.
     *
     * @return An array of databases.
     */
   def list(): js.Promise[js.Array[ODB]] = js.native
+  
+  var logger: OLogger = js.native
+  
   /**
     * Release the database with the given name.
     *
@@ -94,8 +107,9 @@ class OServer () extends js.Object {
     * @param   storageType The storage type, defaults to `plocal`.
     * @return              The response from the server.
     */
-  def release(name: String): js.Any = js.native
-  def release(name: String, storageType: String): js.Any = js.native
+  def release(name: String): Any = js.native
+  def release(name: String, storageType: String): Any = js.native
+  
   /**
     * Send an operation to the server,
     *
@@ -103,8 +117,10 @@ class OServer () extends js.Object {
     * @param  options    The options for the operation.
     * @promise {Mixed}            The result of the operation.
     */
-  def send(operation: Double, options: js.Any): js.Any = js.native
-  def shutdown(): js.Promise[_] = js.native
+  def send(operation: Double, options: Any): Any = js.native
+  
+  def shutdown(): js.Promise[Any] = js.native
+  
   /**
     * Use the database with the given name / config.
     *
@@ -114,4 +130,3 @@ class OServer () extends js.Object {
   def use(name: String): ODB = js.native
   def use(name: DbConfig): ODB = js.native
 }
-

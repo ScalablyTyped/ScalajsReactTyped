@@ -3,72 +3,81 @@ package typingsJapgolly.azdata.mod.nb
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.vscode.Thenable
 import typingsJapgolly.vscode.mod.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotebookDocument extends js.Object {
+trait NotebookDocument extends StObject {
+  
   /**
-  			 * All cells.
-  			 */
+    * All cells.
+    */
   val cells: js.Array[NotebookCell]
+  
   /**
-  			 * The file system path of the associated resource. Shorthand
-  			 * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
-  			 */
+    * The file system path of the associated resource. Shorthand
+    * notation for [TextDocument.uri.fsPath](#TextDocument.uri). Independent of the uri scheme.
+    */
   val fileName: String
+  
   /**
-  			 * `true` if the document have been closed. A closed document isn't synchronized anymore
-  			 * and won't be re-used when the same resource is opened again.
-  			 */
+    * `true` if the document have been closed. A closed document isn't synchronized anymore
+    * and won't be re-used when the same resource is opened again.
+    */
   val isClosed: Boolean
+  
   /**
-  			 * `true` if there are unpersisted changes.
-  			 */
+    * `true` if there are unpersisted changes.
+    */
   val isDirty: Boolean
+  
   /**
-  			 * Is this document representing an untitled file which has never been saved yet. *Note* that
-  			 * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
-  			 * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
-  			 */
+    * Is this document representing an untitled file which has never been saved yet. *Note* that
+    * this does not mean the document will be saved to disk, use [`uri.scheme`](#Uri.scheme)
+    * to figure out where a document will be [saved](#FileSystemProvider), e.g. `file`, `ftp` etc.
+    */
   val isUntitled: Boolean
+  
   /**
-  			 * The spec for current kernel, if applicable. This will be undefined
-  			 * until a kernel has been started
-  			 */
+    * The spec for current kernel, if applicable. This will be undefined
+    * until a kernel has been started
+    */
   val kernelSpec: IKernelSpec
+  
   /**
-  			 * The identifier of the Notebook provider associated with this document.
-  			 */
+    * The identifier of the Notebook provider associated with this document.
+    */
   val providerId: String
+  
   /**
-  			 * The associated uri for this notebook document.
-  			 *
-  			 * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
-  			 * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
-  			 *
-  			 */
-  val uri: Uri
-  /**
-  			 * Save the underlying file.
-  			 *
-  			 * @return A promise that will resolve to true when the file
-  			 * has been saved. If the file was not dirty or the save failed,
-  			 * will return false.
-  			 */
+    * Save the underlying file.
+    *
+    * @return A promise that will resolve to true when the file
+    * has been saved. If the file was not dirty or the save failed,
+    * will return false.
+    */
   def save(): Thenable[Boolean]
+  
   /**
-  			 * Ensure a cell range is completely contained in this document.
-  			 *
-  			 * @param range A cell range.
-  			 * @return The given range or a new, adjusted range.
-  			 */
+    * The associated uri for this notebook document.
+    *
+    * *Note* that most documents use the `file`-scheme, which means they are files on disk. However, **not** all documents are
+    * saved on disk and therefore the `scheme` must be checked before trying to access the underlying file or siblings on disk.
+    *
+    */
+  val uri: Uri
+  
+  /**
+    * Ensure a cell range is completely contained in this document.
+    *
+    * @param range A cell range.
+    * @return The given range or a new, adjusted range.
+    */
   def validateCellRange(range: CellRange): CellRange
 }
-
 object NotebookDocument {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     cells: js.Array[NotebookCell],
     fileName: String,
     isClosed: Boolean,
@@ -78,12 +87,34 @@ object NotebookDocument {
     providerId: String,
     save: CallbackTo[Thenable[Boolean]],
     uri: Uri,
-    validateCellRange: CellRange => CallbackTo[CellRange]
+    validateCellRange: CellRange => CellRange
   ): NotebookDocument = {
-    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isClosed = isClosed.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isUntitled = isUntitled.asInstanceOf[js.Any], kernelSpec = kernelSpec.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("save")(save.toJsFn)
-    __obj.updateDynamic("validateCellRange")(js.Any.fromFunction1((t0: typingsJapgolly.azdata.mod.nb.CellRange) => validateCellRange(t0).runNow()))
+    val __obj = js.Dynamic.literal(cells = cells.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], isClosed = isClosed.asInstanceOf[js.Any], isDirty = isDirty.asInstanceOf[js.Any], isUntitled = isUntitled.asInstanceOf[js.Any], kernelSpec = kernelSpec.asInstanceOf[js.Any], providerId = providerId.asInstanceOf[js.Any], save = save.toJsFn, uri = uri.asInstanceOf[js.Any], validateCellRange = js.Any.fromFunction1(validateCellRange))
     __obj.asInstanceOf[NotebookDocument]
   }
+  
+  extension [Self <: NotebookDocument](x: Self) {
+    
+    inline def setCells(value: js.Array[NotebookCell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    
+    inline def setCellsVarargs(value: NotebookCell*): Self = StObject.set(x, "cells", js.Array(value*))
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
+    
+    inline def setIsDirty(value: Boolean): Self = StObject.set(x, "isDirty", value.asInstanceOf[js.Any])
+    
+    inline def setIsUntitled(value: Boolean): Self = StObject.set(x, "isUntitled", value.asInstanceOf[js.Any])
+    
+    inline def setKernelSpec(value: IKernelSpec): Self = StObject.set(x, "kernelSpec", value.asInstanceOf[js.Any])
+    
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    
+    inline def setSave(value: CallbackTo[Thenable[Boolean]]): Self = StObject.set(x, "save", value.toJsFn)
+    
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    
+    inline def setValidateCellRange(value: CellRange => CellRange): Self = StObject.set(x, "validateCellRange", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,57 +1,49 @@
 package typingsJapgolly.recharts.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.recharts.AnonErrorVal
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.recharts.anon.ErrorVal
 import typingsJapgolly.recharts.mod.DataKey
 import typingsJapgolly.recharts.mod.ErrorBarProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ErrorBar {
-  def apply(
-    dataKey: DataKey,
-    data: js.Array[_] = null,
-    dataPointFormatter: (/* entry */ js.Any, /* dataKey */ DataKey) => CallbackTo[AnonErrorVal] = null,
-    layout: String = null,
-    offset: Int | Double = null,
-    stroke: String = null,
-    strokeWidth: Int | Double = null,
-    width: Int | Double = null,
-    xAxis: js.Object = null,
-    yAxis: js.Object = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ErrorBarProps, typingsJapgolly.recharts.mod.ErrorBar, Unit, ErrorBarProps] = {
-    val __obj = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
   
-      if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(js.Any.fromFunction2((t0: /* entry */ js.Any, t1: /* dataKey */ typingsJapgolly.recharts.mod.DataKey) => dataPointFormatter(t0, t1).runNow()))
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
-    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.recharts.mod.ErrorBarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.recharts.mod.ErrorBar](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.recharts.mod.ErrorBarProps])(children: _*)
+  inline def apply(dataKey: DataKey): Builder = {
+    val __props = js.Dynamic.literal(dataKey = dataKey.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ErrorBarProps]))
   }
+  
   @JSImport("recharts", "ErrorBar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.recharts.mod.ErrorBar] {
+    
+    inline def data(value: js.Array[Any]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataPointFormatter(value: (/* entry */ Any, /* dataKey */ DataKey) => ErrorVal): this.type = set("dataPointFormatter", js.Any.fromFunction2(value))
+    
+    inline def dataVarargs(value: Any*): this.type = set("data", js.Array(value*))
+    
+    inline def layout(value: String): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def offset(value: Double): this.type = set("offset", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: String): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def strokeWidth(value: Double): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def xAxis(value: js.Object): this.type = set("xAxis", value.asInstanceOf[js.Any])
+    
+    inline def yAxis(value: js.Object): this.type = set("yAxis", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ErrorBarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

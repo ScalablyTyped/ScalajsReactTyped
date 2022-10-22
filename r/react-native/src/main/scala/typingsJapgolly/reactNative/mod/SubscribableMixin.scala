@@ -1,11 +1,12 @@
 package typingsJapgolly.reactNative.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SubscribableMixin extends js.Object {
+trait SubscribableMixin extends StObject {
+  
   /**
     * Special form of calling `addListener` that *guarantees* that a
     * subscription *must* be tied to a component instance, and therefore will
@@ -19,15 +20,17 @@ trait SubscribableMixin extends js.Object {
     * @param listener Function to invoke when event occurs.
     * @param context Object to use as listener context.
     */
-  def addListenerOn(eventEmitter: js.Any, eventType: String, listener: js.Function0[_], context: js.Any): Unit
+  def addListenerOn(eventEmitter: Any, eventType: String, listener: js.Function0[Any], context: Any): Unit
 }
-
 object SubscribableMixin {
-  @scala.inline
-  def apply(addListenerOn: (js.Any, String, js.Function0[js.Any], js.Any) => Callback): SubscribableMixin = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addListenerOn")(js.Any.fromFunction4((t0: js.Any, t1: java.lang.String, t2: js.Function0[js.Any], t3: js.Any) => addListenerOn(t0, t1, t2, t3).runNow()))
+  
+  inline def apply(addListenerOn: (Any, String, js.Function0[Any], Any) => Callback): SubscribableMixin = {
+    val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4((t0: Any, t1: String, t2: js.Function0[Any], t3: Any) => (addListenerOn(t0, t1, t2, t3)).runNow()))
     __obj.asInstanceOf[SubscribableMixin]
   }
+  
+  extension [Self <: SubscribableMixin](x: Self) {
+    
+    inline def setAddListenerOn(value: (Any, String, js.Function0[Any], Any) => Callback): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4((t0: Any, t1: String, t2: js.Function0[Any], t3: Any) => (value(t0, t1, t2, t3)).runNow()))
+  }
 }
-

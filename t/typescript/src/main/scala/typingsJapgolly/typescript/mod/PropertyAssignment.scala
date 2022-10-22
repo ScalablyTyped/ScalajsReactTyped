@@ -1,25 +1,34 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PropertyAssignment
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JSDocContainer
      with HasExpressionInitializer
+     with HasJSDoc
+     with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with VariableLikeDeclaration
-     with _BindingOrAssignmentElement
-     with _HasJSDoc {
-  var initializer: Expression = js.native
+     with VariableLikeDeclaration {
+  
+  /** @deprecated A property assignment cannot have an exclamation token */
+  val exclamationToken: js.UndefOr[ExclamationToken] = js.native
+  
+  val initializer: Expression = js.native
+  
   @JSName("kind")
-  var kind_PropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.PropertyAssignment = js.native
+  val kind_PropertyAssignment: typingsJapgolly.typescript.mod.SyntaxKind.PropertyAssignment = js.native
+  
   @JSName("name")
-  var name_PropertyAssignment: PropertyName = js.native
+  val name_PropertyAssignment: PropertyName = js.native
+  
   @JSName("parent")
-  var parent_PropertyAssignment: ObjectLiteralExpression = js.native
-  var questionToken: js.UndefOr[QuestionToken] = js.native
+  val parent_PropertyAssignment: ObjectLiteralExpression = js.native
+  
+  /** @deprecated A property assignment cannot have a question token */
+  val questionToken: js.UndefOr[QuestionToken] = js.native
 }
-

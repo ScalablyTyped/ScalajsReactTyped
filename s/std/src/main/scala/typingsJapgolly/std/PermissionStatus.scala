@@ -1,46 +1,56 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
 import typingsJapgolly.std.stdStrings.change
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PermissionStatus extends EventTarget {
-  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  val state: PermissionState = js.native
-  @JSName("addEventListener")
-  def addEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+trait PermissionStatus
+  extends StObject
+     with EventTarget {
+  
+  /* standard dom */
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_change(`type`: change, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  
+  /* standard dom */
+  var onchange: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
   @JSName("removeEventListener")
   def removeEventListener_change(
     `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_change(
+    `type`: change,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_change(
-    `type`: change,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  val state: PermissionState = js.native
 }
-
-@JSGlobal("PermissionStatus")
-@js.native
-object PermissionStatus extends Instantiable0[PermissionStatus]
-

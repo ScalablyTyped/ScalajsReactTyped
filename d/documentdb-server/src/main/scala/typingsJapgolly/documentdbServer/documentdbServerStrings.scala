@@ -1,29 +1,24 @@
 package typingsJapgolly.documentdbServer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentdbServerStrings {
-  @js.native
-  sealed trait Create extends js.Object
   
   @js.native
-  sealed trait Delete extends js.Object
+  sealed trait Create extends StObject
+  inline def Create: Create = "Create".asInstanceOf[Create]
   
   @js.native
-  sealed trait Replace extends js.Object
+  sealed trait Delete extends StObject
+  inline def Delete: Delete = "Delete".asInstanceOf[Delete]
   
   @js.native
-  sealed trait Upsert extends js.Object
+  sealed trait Replace extends StObject
+  inline def Replace: Replace = "Replace".asInstanceOf[Replace]
   
-  @scala.inline
-  def Create: Create = "Create".asInstanceOf[Create]
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
-  @scala.inline
-  def Replace: Replace = "Replace".asInstanceOf[Replace]
-  @scala.inline
-  def Upsert: Upsert = "Upsert".asInstanceOf[Upsert]
+  @js.native
+  sealed trait Upsert extends StObject
+  inline def Upsert: Upsert = "Upsert".asInstanceOf[Upsert]
 }
-

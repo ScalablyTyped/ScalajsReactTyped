@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValueChangedEventUIParam extends js.Object {
+trait ValueChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the editor input.
-  	 */
-  var editorInput: js.UndefOr[js.Any] = js.undefined
+    * Gets the editor input.
+    */
+  var editorInput: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the value entered from the user after internal formatting. The argument type might differ depending on the editor type.
-  	 */
-  var newValue: js.UndefOr[js.Any] = js.undefined
+    * Gets the value entered from the user after internal formatting. The argument type might differ depending on the editor type.
+    */
+  var newValue: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the value entered from the user before internal formatting. The argument type might differ depending on the editor type.
-  	 */
-  var originalValue: js.UndefOr[js.Any] = js.undefined
+    * Gets the value entered from the user before internal formatting. The argument type might differ depending on the editor type.
+    */
+  var originalValue: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the editor.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the editor.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ValueChangedEventUIParam {
-  @scala.inline
-  def apply(
-    editorInput: js.Any = null,
-    newValue: js.Any = null,
-    originalValue: js.Any = null,
-    owner: js.Any = null
-  ): ValueChangedEventUIParam = {
+  
+  inline def apply(): ValueChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput.asInstanceOf[js.Any])
-    if (newValue != null) __obj.updateDynamic("newValue")(newValue.asInstanceOf[js.Any])
-    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueChangedEventUIParam]
   }
+  
+  extension [Self <: ValueChangedEventUIParam](x: Self) {
+    
+    inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
+    
+    inline def setEditorInputUndefined: Self = StObject.set(x, "editorInput", js.undefined)
+    
+    inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    
+    inline def setNewValueUndefined: Self = StObject.set(x, "newValue", js.undefined)
+    
+    inline def setOriginalValue(value: Any): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
+    
+    inline def setOriginalValueUndefined: Self = StObject.set(x, "originalValue", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

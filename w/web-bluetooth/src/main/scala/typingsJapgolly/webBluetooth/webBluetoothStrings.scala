@@ -1,44 +1,36 @@
 package typingsJapgolly.webBluetooth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webBluetoothStrings {
-  @js.native
-  sealed trait advertisementreceived extends js.Object
   
   @js.native
-  sealed trait availabilitychanged extends js.Object
+  sealed trait advertisementreceived extends StObject
+  inline def advertisementreceived: advertisementreceived = "advertisementreceived".asInstanceOf[advertisementreceived]
   
   @js.native
-  sealed trait characteristicvaluechanged extends js.Object
+  sealed trait availabilitychanged extends StObject
+  inline def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
   
   @js.native
-  sealed trait gattserverdisconnected extends js.Object
+  sealed trait characteristicvaluechanged extends StObject
+  inline def characteristicvaluechanged: characteristicvaluechanged = "characteristicvaluechanged".asInstanceOf[characteristicvaluechanged]
   
   @js.native
-  sealed trait serviceadded extends js.Object
+  sealed trait gattserverdisconnected extends StObject
+  inline def gattserverdisconnected: gattserverdisconnected = "gattserverdisconnected".asInstanceOf[gattserverdisconnected]
   
   @js.native
-  sealed trait servicechanged extends js.Object
+  sealed trait serviceadded extends StObject
+  inline def serviceadded: serviceadded = "serviceadded".asInstanceOf[serviceadded]
   
   @js.native
-  sealed trait serviceremoved extends js.Object
+  sealed trait servicechanged extends StObject
+  inline def servicechanged: servicechanged = "servicechanged".asInstanceOf[servicechanged]
   
-  @scala.inline
-  def advertisementreceived: advertisementreceived = "advertisementreceived".asInstanceOf[advertisementreceived]
-  @scala.inline
-  def availabilitychanged: availabilitychanged = "availabilitychanged".asInstanceOf[availabilitychanged]
-  @scala.inline
-  def characteristicvaluechanged: characteristicvaluechanged = "characteristicvaluechanged".asInstanceOf[characteristicvaluechanged]
-  @scala.inline
-  def gattserverdisconnected: gattserverdisconnected = "gattserverdisconnected".asInstanceOf[gattserverdisconnected]
-  @scala.inline
-  def serviceadded: serviceadded = "serviceadded".asInstanceOf[serviceadded]
-  @scala.inline
-  def servicechanged: servicechanged = "servicechanged".asInstanceOf[servicechanged]
-  @scala.inline
-  def serviceremoved: serviceremoved = "serviceremoved".asInstanceOf[serviceremoved]
+  @js.native
+  sealed trait serviceremoved extends StObject
+  inline def serviceremoved: serviceremoved = "serviceremoved".asInstanceOf[serviceremoved]
 }
-

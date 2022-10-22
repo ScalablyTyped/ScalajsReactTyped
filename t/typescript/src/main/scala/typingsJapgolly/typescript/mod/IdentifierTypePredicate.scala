@@ -1,23 +1,27 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IdentifierTypePredicate
-  extends TypePredicateBase
+  extends StObject
+     with TypePredicateBase
      with TypePredicate {
+  
   @JSName("kind")
   var kind_IdentifierTypePredicate: typingsJapgolly.typescript.mod.TypePredicateKind.Identifier
+  
   var parameterIndex: Double
+  
   var parameterName: java.lang.String
+  
   @JSName("type")
   var type_IdentifierTypePredicate: Type
 }
-
 object IdentifierTypePredicate {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     kind: typingsJapgolly.typescript.mod.TypePredicateKind.Identifier,
     parameterIndex: Double,
     parameterName: java.lang.String,
@@ -27,5 +31,15 @@ object IdentifierTypePredicate {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierTypePredicate]
   }
+  
+  extension [Self <: IdentifierTypePredicate](x: Self) {
+    
+    inline def setKind(value: typingsJapgolly.typescript.mod.TypePredicateKind.Identifier): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setParameterIndex(value: Double): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    
+    inline def setParameterName(value: java.lang.String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

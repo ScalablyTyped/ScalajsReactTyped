@@ -1,31 +1,32 @@
 package typingsJapgolly.solidityParserAntlr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.solidityParserAntlr.mod.ASTNode because Already inherited */ trait ElementaryTypeNameExpression
-  extends PrimaryExpression
-     with BaseASTNode {
+trait ElementaryTypeNameExpression
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with PrimaryExpression {
+  
   var typeName: ElementaryTypeName
+  
   @JSName("type")
   var type_ElementaryTypeNameExpression: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression
 }
-
 object ElementaryTypeNameExpression {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression,
-    typeName: ElementaryTypeName,
-    loc: Location = null,
-    range: js.Tuple2[Double, Double] = null
-  ): ElementaryTypeNameExpression = {
+  
+  inline def apply(typeName: ElementaryTypeName): ElementaryTypeNameExpression = {
     val __obj = js.Dynamic.literal(typeName = typeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ElementaryTypeNameExpression")
     __obj.asInstanceOf[ElementaryTypeNameExpression]
   }
+  
+  extension [Self <: ElementaryTypeNameExpression](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeName(value: ElementaryTypeName): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+  }
 }
-

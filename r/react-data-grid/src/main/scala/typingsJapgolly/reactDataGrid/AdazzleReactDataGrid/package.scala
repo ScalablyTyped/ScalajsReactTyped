@@ -1,14 +1,11 @@
-package typingsJapgolly.reactDataGrid
+package typingsJapgolly.reactDataGrid.AdazzleReactDataGrid
 
+import japgolly.scalajs.react.ReactEventFrom
+import org.scalajs.dom.Element
+import typingsJapgolly.reactDataGrid.anon.Name
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object AdazzleReactDataGrid {
-  type ColumnEventCallback = js.Function2[
-    /* ev */ japgolly.scalajs.react.ReactEventFrom[js.Any with org.scalajs.dom.raw.Element], 
-    /* args */ typingsJapgolly.reactDataGrid.AnonName, 
-    scala.Unit
-  ]
-  type ReactDataGrid[T] = typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid_[T]
-}
+
+type ColumnEventCallback = js.Function2[/* ev */ ReactEventFrom[Any & Element], /* args */ Name, Unit]

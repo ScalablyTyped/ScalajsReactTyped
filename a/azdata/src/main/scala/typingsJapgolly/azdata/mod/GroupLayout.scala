@@ -1,30 +1,42 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GroupLayout extends js.Object {
+trait GroupLayout extends StObject {
+  
   var collapsed: js.UndefOr[Boolean] = js.undefined
+  
   var collapsible: js.UndefOr[Boolean] = js.undefined
+  
   var header: js.UndefOr[String] = js.undefined
+  
   var width: js.UndefOr[Double | String] = js.undefined
 }
-
 object GroupLayout {
-  @scala.inline
-  def apply(
-    collapsed: js.UndefOr[Boolean] = js.undefined,
-    collapsible: js.UndefOr[Boolean] = js.undefined,
-    header: String = null,
-    width: Double | String = null
-  ): GroupLayout = {
+  
+  inline def apply(): GroupLayout = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLayout]
   }
+  
+  extension [Self <: GroupLayout](x: Self) {
+    
+    inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+    
+    inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
+    
+    inline def setCollapsibleUndefined: Self = StObject.set(x, "collapsible", js.undefined)
+    
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,22 +1,12 @@
-package typingsJapgolly.winrt.Windows.Media
+package typingsJapgolly.winrt.Windows.Media.Protection
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Protection {
-  type ComponentLoadFailedEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.Media.Protection.MediaProtectionManager, 
-    /* e */ typingsJapgolly.winrt.Windows.Media.Protection.ComponentLoadFailedEventArgs, 
-    scala.Unit
-  ]
-  type RebootNeededEventHandler = js.Function1[
-    /* sender */ typingsJapgolly.winrt.Windows.Media.Protection.MediaProtectionManager, 
-    scala.Unit
-  ]
-  type ServiceRequestedEventHandler = js.Function2[
-    /* sender */ typingsJapgolly.winrt.Windows.Media.Protection.MediaProtectionManager, 
-    /* e */ typingsJapgolly.winrt.Windows.Media.Protection.ServiceRequestedEventArgs, 
-    scala.Unit
-  ]
-}
+
+type ComponentLoadFailedEventHandler = js.Function2[/* sender */ MediaProtectionManager, /* e */ ComponentLoadFailedEventArgs, Unit]
+
+type RebootNeededEventHandler = js.Function1[/* sender */ MediaProtectionManager, Unit]
+
+type ServiceRequestedEventHandler = js.Function2[/* sender */ MediaProtectionManager, /* e */ ServiceRequestedEventArgs, Unit]

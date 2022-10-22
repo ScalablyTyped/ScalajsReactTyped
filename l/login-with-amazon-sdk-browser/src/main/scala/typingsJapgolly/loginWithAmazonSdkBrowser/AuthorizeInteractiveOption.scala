@@ -1,24 +1,20 @@
 package typingsJapgolly.loginWithAmazonSdkBrowser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.auto
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.always
   - typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.never
 */
-trait AuthorizeInteractiveOption extends js.Object
-
+trait AuthorizeInteractiveOption extends StObject
 object AuthorizeInteractiveOption {
-  @scala.inline
-  def always: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.always = this.cast("always")
-  @scala.inline
-  def auto: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.auto = this.cast("auto")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def never: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.never = this.cast("never")
+  
+  inline def always: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.always = "always".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.always]
+  
+  inline def auto: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.auto = "auto".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.auto]
+  
+  inline def never: typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.never = "never".asInstanceOf[typingsJapgolly.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.never]
 }
-

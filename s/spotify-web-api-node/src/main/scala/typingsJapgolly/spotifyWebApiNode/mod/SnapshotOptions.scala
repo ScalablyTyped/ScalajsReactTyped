@@ -1,19 +1,24 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SnapshotOptions extends js.Object {
+trait SnapshotOptions extends StObject {
+  
   var snapshot_id: js.UndefOr[String] = js.undefined
 }
-
 object SnapshotOptions {
-  @scala.inline
-  def apply(snapshot_id: String = null): SnapshotOptions = {
+  
+  inline def apply(): SnapshotOptions = {
     val __obj = js.Dynamic.literal()
-    if (snapshot_id != null) __obj.updateDynamic("snapshot_id")(snapshot_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotOptions]
   }
+  
+  extension [Self <: SnapshotOptions](x: Self) {
+    
+    inline def setSnapshot_id(value: String): Self = StObject.set(x, "snapshot_id", value.asInstanceOf[js.Any])
+    
+    inline def setSnapshot_idUndefined: Self = StObject.set(x, "snapshot_id", js.undefined)
+  }
 }
-

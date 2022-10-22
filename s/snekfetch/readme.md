@@ -10,10 +10,10 @@ Just do http requests without all that weird nastiness from other libs
 | ------------------ | :-------------: |
 | Full name          | snekfetch |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 171 |
-| # downloads        | 4287390 |
-| # stars            | 8 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 40774.666666666664 |
+| # stars            | 77.0 |
 
 ## Links
 - [Homepage](https://snekfetch.js.org/)

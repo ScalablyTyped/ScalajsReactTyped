@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILanguageFactory extends js.Object {
+trait ILanguageFactory extends StObject {
+  
   def createLanguage(languageTag: String): Language
 }
-
 object ILanguageFactory {
-  @scala.inline
-  def apply(createLanguage: String => CallbackTo[Language]): ILanguageFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createLanguage")(js.Any.fromFunction1((t0: java.lang.String) => createLanguage(t0).runNow()))
+  
+  inline def apply(createLanguage: String => Language): ILanguageFactory = {
+    val __obj = js.Dynamic.literal(createLanguage = js.Any.fromFunction1(createLanguage))
     __obj.asInstanceOf[ILanguageFactory]
   }
+  
+  extension [Self <: ILanguageFactory](x: Self) {
+    
+    inline def setCreateLanguage(value: String => Language): Self = StObject.set(x, "createLanguage", js.Any.fromFunction1(value))
+  }
 }
-

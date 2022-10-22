@@ -1,52 +1,66 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartMediaInfoValueProperties extends js.Object {
+trait ChartMediaInfoValueProperties extends StObject {
+  
   /**
     * An array of strings, with each string containing the name of a field to display in the chart.
-    * > In order to work with related fields within a chart, the fields must either be set as a [fields](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html) element in the [PopupTemplate's content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content) or as [popupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property outside of the PopupTemplate's content.
-    * > Set the [popupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property for any fields that need to have number formatting for chart/text elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#fields)
     */
   var fields: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * A string containing the name of a field. The values of all fields in the chart will be normalized (divided) by the value of this field.
+    * A string containing the name of a field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#normalizeField)
     */
   var normalizeField: js.UndefOr[String] = js.undefined
+  
   /**
-    * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data data that is plotted in a chart.
+    * An array of [ChartMediaInfoValueSeries](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValueSeries.html) objects which provide information of x/y data that is plotted in a chart.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#series)
     */
   var series: js.UndefOr[js.Array[ChartMediaInfoValueSeriesProperties]] = js.undefined
+  
   /**
-    * String value indicating the tooltip for a chart specified from another field. It is used for showing tooltips from another field in the same layer or related layer/table.
+    * String value indicating the tooltip for a chart specified from another field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-support-ChartMediaInfoValue.html#tooltipField)
     */
   var tooltipField: js.UndefOr[String] = js.undefined
 }
-
 object ChartMediaInfoValueProperties {
-  @scala.inline
-  def apply(
-    fields: js.Array[String] = null,
-    normalizeField: String = null,
-    series: js.Array[ChartMediaInfoValueSeriesProperties] = null,
-    tooltipField: String = null
-  ): ChartMediaInfoValueProperties = {
+  
+  inline def apply(): ChartMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (normalizeField != null) __obj.updateDynamic("normalizeField")(normalizeField.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
-    if (tooltipField != null) __obj.updateDynamic("tooltipField")(tooltipField.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartMediaInfoValueProperties]
   }
+  
+  extension [Self <: ChartMediaInfoValueProperties](x: Self) {
+    
+    inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setNormalizeField(value: String): Self = StObject.set(x, "normalizeField", value.asInstanceOf[js.Any])
+    
+    inline def setNormalizeFieldUndefined: Self = StObject.set(x, "normalizeField", js.undefined)
+    
+    inline def setSeries(value: js.Array[ChartMediaInfoValueSeriesProperties]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    
+    inline def setSeriesVarargs(value: ChartMediaInfoValueSeriesProperties*): Self = StObject.set(x, "series", js.Array(value*))
+    
+    inline def setTooltipField(value: String): Self = StObject.set(x, "tooltipField", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipFieldUndefined: Self = StObject.set(x, "tooltipField", js.undefined)
+  }
 }
-

@@ -1,17 +1,19 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PositionedToken")
 @js.native
-class PositionedToken protected () extends PositionedNodeOrToken {
-  def this(parent: PositionedElement, token: ISyntaxToken, fullStart: Double) = this()
+trait PositionedToken
+  extends StObject
+     with PositionedNodeOrToken {
+  
   def nextToken(): PositionedToken = js.native
   def nextToken(includeSkippedTokens: Boolean): PositionedToken = js.native
+  
   def previousToken(): PositionedToken = js.native
   def previousToken(includeSkippedTokens: Boolean): PositionedToken = js.native
+  
   def token(): ISyntaxToken = js.native
 }
-

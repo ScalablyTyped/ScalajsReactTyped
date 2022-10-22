@@ -1,27 +1,40 @@
 package typingsJapgolly.yandexMaps.mod.control
 
-import typingsJapgolly.yandexMaps.AnonBottom
+import typingsJapgolly.yandexMaps.anon.Bottom
 import typingsJapgolly.yandexMaps.yandexMapsStrings.left
 import typingsJapgolly.yandexMaps.yandexMapsStrings.none
 import typingsJapgolly.yandexMaps.yandexMapsStrings.right
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IManagerControlOptions extends js.Object {
+trait IManagerControlOptions extends StObject {
+  
   var float: js.UndefOr[none | left | right] = js.undefined
+  
   var floatIndex: js.UndefOr[Double] = js.undefined
-  var position: js.UndefOr[AnonBottom] = js.undefined
+  
+  var position: js.UndefOr[Bottom] = js.undefined
 }
-
 object IManagerControlOptions {
-  @scala.inline
-  def apply(float: none | left | right = null, floatIndex: Int | Double = null, position: AnonBottom = null): IManagerControlOptions = {
+  
+  inline def apply(): IManagerControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (float != null) __obj.updateDynamic("float")(float.asInstanceOf[js.Any])
-    if (floatIndex != null) __obj.updateDynamic("floatIndex")(floatIndex.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[IManagerControlOptions]
   }
+  
+  extension [Self <: IManagerControlOptions](x: Self) {
+    
+    inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    
+    inline def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
+    
+    inline def setFloatIndexUndefined: Self = StObject.set(x, "floatIndex", js.undefined)
+    
+    inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+    
+    inline def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

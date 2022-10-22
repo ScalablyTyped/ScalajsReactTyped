@@ -1,13 +1,17 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "RegexValidator")
 @js.native
-class RegexValidator () extends SurveyValidator {
+open class RegexValidator () extends SurveyValidator {
   def this(regex: String) = this()
-  var regex: String = js.native
+  
+  /*
+    * The regex property.
+    */
+  def regex: String = js.native
+  def regex_=(`val`: String): Unit = js.native
 }
-

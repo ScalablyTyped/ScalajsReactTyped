@@ -1,42 +1,38 @@
 package typingsJapgolly.protonNative.mod
 
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TabProps extends GridChildrenProps {
+trait TabProps
+  extends StObject
+     with GridChildrenProps {
+  
   /**
     * Whether the Tab is enabled.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Whether the Tab can be seen.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
 }
-
 object TabProps {
-  @scala.inline
-  def apply(
-    align: AnonH = null,
-    column: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    expand: AnonH = null,
-    row: Int | Double = null,
-    span: AnonX = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): TabProps = {
+  
+  inline def apply(): TabProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabProps]
   }
+  
+  extension [Self <: TabProps](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

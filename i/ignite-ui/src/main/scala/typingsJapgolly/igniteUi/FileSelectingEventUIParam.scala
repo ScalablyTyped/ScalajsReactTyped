@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FileSelectingEventUIParam extends js.Object {
+trait FileSelectingEventUIParam extends StObject {
+  
   /**
-  	 * Gets the igUpload widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igUpload widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object FileSelectingEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): FileSelectingEventUIParam = {
+  
+  inline def apply(): FileSelectingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileSelectingEventUIParam]
   }
+  
+  extension [Self <: FileSelectingEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

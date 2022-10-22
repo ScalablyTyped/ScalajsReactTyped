@@ -1,15 +1,16 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Range
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DocumentRangeFormattingEditProvider extends js.Object {
+trait DocumentRangeFormattingEditProvider extends StObject {
+  
   val displayName: js.UndefOr[String] = js.undefined
+  
   /**
     * Provide formatting edits for a range in a document.
     *
@@ -19,17 +20,23 @@ trait DocumentRangeFormattingEditProvider extends js.Object {
     */
   def provideDocumentRangeFormattingEdits(model: ITextModel, range: Range, options: FormattingOptions, token: CancellationToken): ProviderResult[js.Array[TextEdit]]
 }
-
 object DocumentRangeFormattingEditProvider {
-  @scala.inline
-  def apply(
-    provideDocumentRangeFormattingEdits: (ITextModel, Range, FormattingOptions, CancellationToken) => CallbackTo[ProviderResult[js.Array[TextEdit]]],
-    displayName: String = null
+  
+  inline def apply(
+    provideDocumentRangeFormattingEdits: (ITextModel, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
   ): DocumentRangeFormattingEditProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideDocumentRangeFormattingEdits")(js.Any.fromFunction4((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Range, t2: typingsJapgolly.monacoEditor.mod.languages.FormattingOptions, t3: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideDocumentRangeFormattingEdits(t0, t1, t2, t3).runNow()))
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(provideDocumentRangeFormattingEdits = js.Any.fromFunction4(provideDocumentRangeFormattingEdits))
     __obj.asInstanceOf[DocumentRangeFormattingEditProvider]
   }
+  
+  extension [Self <: DocumentRangeFormattingEditProvider](x: Self) {
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setProvideDocumentRangeFormattingEdits(
+      value: (ITextModel, Range, FormattingOptions, CancellationToken) => ProviderResult[js.Array[TextEdit]]
+    ): Self = StObject.set(x, "provideDocumentRangeFormattingEdits", js.Any.fromFunction4(value))
+  }
 }
-

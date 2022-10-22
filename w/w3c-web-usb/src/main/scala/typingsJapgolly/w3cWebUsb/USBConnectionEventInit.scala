@@ -1,27 +1,25 @@
 package typingsJapgolly.w3cWebUsb
 
 import typingsJapgolly.std.EventInit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait USBConnectionEventInit extends EventInit {
+trait USBConnectionEventInit
+  extends StObject
+     with EventInit {
+  
   var device: USBDevice
 }
-
 object USBConnectionEventInit {
-  @scala.inline
-  def apply(
-    device: USBDevice,
-    bubbles: js.UndefOr[Boolean] = js.undefined,
-    cancelable: js.UndefOr[Boolean] = js.undefined,
-    composed: js.UndefOr[Boolean] = js.undefined
-  ): USBConnectionEventInit = {
+  
+  inline def apply(device: USBDevice): USBConnectionEventInit = {
     val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBConnectionEventInit]
   }
+  
+  extension [Self <: USBConnectionEventInit](x: Self) {
+    
+    inline def setDevice(value: USBDevice): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,24 +1,16 @@
 package typingsJapgolly.ionicDiscover
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicDiscoverStrings {
-  @js.native
-  sealed trait Slash extends js.Object
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait connect extends StObject
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
-  sealed trait error extends js.Object
-  
-  @scala.inline
-  def Slash: Slash = "/".asInstanceOf[Slash]
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
 }
-

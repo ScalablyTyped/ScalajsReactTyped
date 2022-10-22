@@ -10,10 +10,10 @@ Check license info for a package
 | ------------------ | :-------------: |
 | Full name          | license-checker |
 | Keywords           | license, cli, checker, oss |
-| # releases         | 17 |
-| # dependents       | 67 |
-| # downloads        | 3735565 |
-| # stars            | 20 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1397803.3333333333 |
+| # stars            | 1398.0 |
 
 ## Links
 - [Homepage](https://github.com/davglass/license-checker#readme)

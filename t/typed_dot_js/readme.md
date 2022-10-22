@@ -1,7 +1,7 @@
 
 # Scala.js typings for typed_dot_js
 
-Typings are for version 2.0.11
+Typings are for version 2.0.12
 
 ## Library description:
 A JavaScript Typing Animation Library
@@ -10,15 +10,12 @@ A JavaScript Typing Animation Library
 | ------------------ | :-------------: |
 | Full name          | typed.js |
 | Keywords           | typed, animation |
-| # releases         | 6 |
-| # dependents       | 18 |
-| # downloads        | 626534 |
-| # stars            | 2 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 131739.66666666666 |
+| # stars            | 12084.0 |
 
 ## Links
-- [Homepage](https://github.com/mattboldt/typed.js)
-- [Bugs](https://github.com/mattboldt/typed.js/issues)
-- [Repository](https://github.com/mattboldt/typed.js)
 - [Npm](https://www.npmjs.com/package/typed.js)
     
 

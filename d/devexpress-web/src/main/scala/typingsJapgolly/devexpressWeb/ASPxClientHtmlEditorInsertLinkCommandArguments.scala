@@ -1,40 +1,65 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTLINK_COMMAND command parameter.
   */
-@JSGlobal("ASPxClientHtmlEditorInsertLinkCommandArguments")
-@js.native
-class ASPxClientHtmlEditorInsertLinkCommandArguments protected () extends ASPxClientHtmlEditorCommandArguments {
-  /**
-    * Initializes a new instance of the ASPxClientHtmlEditorInsertLinkCommandArguments class.
-    * @param htmlEditor An HTML editor in which you want to insert an element.
-    * @param selectedElement An object containing the currently selected element in the HTML editor. This element will be replaced with the inserted link.
-    */
-  def this(htmlEditor: ASPxClientHtmlEditor, selectedElement: js.Any) = this()
+trait ASPxClientHtmlEditorInsertLinkCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
+  
   /**
     * Contains the style settings defining the appearance of the target link element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  
   /**
     * Determines where to open the target link.
     */
-  var target: String = js.native
+  var target: String
+  
   /**
     * Specifiies the text of the target link.
     */
-  var text: String = js.native
+  var text: String
+  
   /**
     * Defines the title of the target link.
     */
-  var title: String = js.native
+  var title: String
+  
   /**
     * Specifies the url of the page the target link goes to.
     */
-  var url: String = js.native
+  var url: String
 }
-
+object ASPxClientHtmlEditorInsertLinkCommandArguments {
+  
+  inline def apply(
+    selectedElement: Any,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    target: String,
+    text: String,
+    title: String,
+    url: String
+  ): ASPxClientHtmlEditorInsertLinkCommandArguments = {
+    val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientHtmlEditorInsertLinkCommandArguments]
+  }
+  
+  extension [Self <: ASPxClientHtmlEditorInsertLinkCommandArguments](x: Self) {
+    
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
+}

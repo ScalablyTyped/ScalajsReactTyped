@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.left
   - typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked
 */
-trait ChatMemberStatus extends js.Object
-
+trait ChatMemberStatus extends StObject
 object ChatMemberStatus {
-  @scala.inline
-  def administrator: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator = this.cast("administrator")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def creator: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator = this.cast("creator")
-  @scala.inline
-  def kicked: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked = this.cast("kicked")
-  @scala.inline
-  def left: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.left = this.cast("left")
-  @scala.inline
-  def member: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.member = this.cast("member")
-  @scala.inline
-  def restricted: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted = this.cast("restricted")
+  
+  inline def administrator: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator = "administrator".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.administrator]
+  
+  inline def creator: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator = "creator".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.creator]
+  
+  inline def kicked: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked = "kicked".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.kicked]
+  
+  inline def left: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.left = "left".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.left]
+  
+  inline def member: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.member = "member".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.member]
+  
+  inline def restricted: typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted = "restricted".asInstanceOf[typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.restricted]
 }
-

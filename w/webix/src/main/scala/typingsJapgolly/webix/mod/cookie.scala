@@ -1,32 +1,35 @@
 package typingsJapgolly.webix.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait cookie extends js.Object {
+trait cookie extends StObject {
+  
   def clear(): Unit
-  def get(name: String): js.Any
-  def put(name: String, value: js.Any): Unit
+  
+  def get(name: String): Any
+  
+  def put(name: String, value: Any): Unit
+  
   def remove(name: String): Unit
 }
-
 object cookie {
-  @scala.inline
-  def apply(
-    clear: Callback,
-    get: String => CallbackTo[js.Any],
-    put: (String, js.Any) => Callback,
-    remove: String => Callback
-  ): cookie = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear.toJsFn)
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: java.lang.String) => get(t0).runNow()))
-    __obj.updateDynamic("put")(js.Any.fromFunction2((t0: java.lang.String, t1: js.Any) => put(t0, t1).runNow()))
-    __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: java.lang.String) => remove(t0).runNow()))
+  
+  inline def apply(clear: Callback, get: String => Any, put: (String, Any) => Callback, remove: String => Callback): cookie = {
+    val __obj = js.Dynamic.literal(clear = clear.toJsFn, get = js.Any.fromFunction1(get), put = js.Any.fromFunction2((t0: String, t1: Any) => (put(t0, t1)).runNow()), remove = js.Any.fromFunction1((t0: String) => remove(t0).runNow()))
     __obj.asInstanceOf[cookie]
   }
+  
+  extension [Self <: cookie](x: Self) {
+    
+    inline def setClear(value: Callback): Self = StObject.set(x, "clear", value.toJsFn)
+    
+    inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    
+    inline def setPut(value: (String, Any) => Callback): Self = StObject.set(x, "put", js.Any.fromFunction2((t0: String, t1: Any) => (value(t0, t1)).runNow()))
+    
+    inline def setRemove(value: String => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: String) => value(t0).runNow()))
+  }
 }
-

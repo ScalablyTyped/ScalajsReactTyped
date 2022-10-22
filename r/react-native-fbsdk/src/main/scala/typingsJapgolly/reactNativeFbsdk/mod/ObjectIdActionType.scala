@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.unknown
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.page
 */
-trait ObjectIdActionType extends js.Object
-
+trait ObjectIdActionType extends StObject
 object ObjectIdActionType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def open_graph: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = this.cast("open_graph")
-  @scala.inline
-  def page: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.page = this.cast("page")
-  @scala.inline
-  def unknown: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = this.cast("unknown")
+  
+  inline def open_graph: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph = "open_graph".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.open_graph]
+  
+  inline def page: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.page = "page".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.page]
+  
+  inline def unknown: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.unknown]
 }
-

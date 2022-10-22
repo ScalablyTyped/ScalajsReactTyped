@@ -1,40 +1,46 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ObjectPattern
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ObjectPattern_
-  extends Node
+  extends StObject
+     with Node
      with LVal
      with Pattern {
+  
   var properties: js.Array[AssignmentProperty | RestProperty_]
+  
   var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
+  
   @JSName("type")
   var type_ObjectPattern_ : ObjectPattern
 }
-
 object ObjectPattern_ {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     properties: js.Array[AssignmentProperty | RestProperty_],
-    start: Double,
-    `type`: ObjectPattern,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null,
-    typeAnnotation: TypeAnnotation_ = null
+    start: Double
   ): ObjectPattern_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[ObjectPattern_]
   }
+  
+  extension [Self <: ObjectPattern_](x: Self) {
+    
+    inline def setProperties(value: js.Array[AssignmentProperty | RestProperty_]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesVarargs(value: (AssignmentProperty | RestProperty_)*): Self = StObject.set(x, "properties", js.Array(value*))
+    
+    inline def setType(value: ObjectPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+  }
 }
-

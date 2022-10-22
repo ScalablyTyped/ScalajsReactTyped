@@ -1,17 +1,20 @@
 package typingsJapgolly.angularAnimations.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationQueryOptions extends AnimationOptions {
+trait AnimationQueryOptions
+  extends StObject
+     with AnimationOptions {
+  
   /**
     * A maximum total number of results to return from the query.
     * If negative, results are limited from the end of the query list towards the beginning.
     * By default, results are not limited.
     */
   var limit: js.UndefOr[Double] = js.undefined
+  
   /**
     * True if this query is optional, false if it is required. Default is false.
     * A required query throws an error if no elements are retrieved when
@@ -20,21 +23,21 @@ trait AnimationQueryOptions extends AnimationOptions {
     */
   var optional: js.UndefOr[Boolean] = js.undefined
 }
-
 object AnimationQueryOptions {
-  @scala.inline
-  def apply(
-    delay: Double | String = null,
-    limit: Int | Double = null,
-    optional: js.UndefOr[Boolean] = js.undefined,
-    params: StringDictionary[js.Any] = null
-  ): AnimationQueryOptions = {
+  
+  inline def apply(): AnimationQueryOptions = {
     val __obj = js.Dynamic.literal()
-    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationQueryOptions]
   }
+  
+  extension [Self <: AnimationQueryOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+  }
 }
-

@@ -1,41 +1,49 @@
 package typingsJapgolly.cssSelectorTokenizer.mod
 
 import typingsJapgolly.cssSelectorTokenizer.cssSelectorTokenizerStrings.url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait UrlNode
-  extends ValueNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with ValueNodeType {
+  
   var innerSpacingAfter: js.UndefOr[String] = js.undefined
+  
   var innerSpacingBefore: js.UndefOr[String] = js.undefined
+  
   var stringType: js.UndefOr[String] = js.undefined
+  
   var `type`: url
+  
   var url: String
 }
-
 object UrlNode {
-  @scala.inline
-  def apply(
-    `type`: url,
-    url: String,
-    after: String = null,
-    before: String = null,
-    innerSpacingAfter: String = null,
-    innerSpacingBefore: String = null,
-    name: String = null,
-    stringType: String = null
-  ): UrlNode = {
+  
+  inline def apply(url: String): UrlNode = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
-    if (innerSpacingAfter != null) __obj.updateDynamic("innerSpacingAfter")(innerSpacingAfter.asInstanceOf[js.Any])
-    if (innerSpacingBefore != null) __obj.updateDynamic("innerSpacingBefore")(innerSpacingBefore.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (stringType != null) __obj.updateDynamic("stringType")(stringType.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("url")
     __obj.asInstanceOf[UrlNode]
   }
+  
+  extension [Self <: UrlNode](x: Self) {
+    
+    inline def setInnerSpacingAfter(value: String): Self = StObject.set(x, "innerSpacingAfter", value.asInstanceOf[js.Any])
+    
+    inline def setInnerSpacingAfterUndefined: Self = StObject.set(x, "innerSpacingAfter", js.undefined)
+    
+    inline def setInnerSpacingBefore(value: String): Self = StObject.set(x, "innerSpacingBefore", value.asInstanceOf[js.Any])
+    
+    inline def setInnerSpacingBeforeUndefined: Self = StObject.set(x, "innerSpacingBefore", js.undefined)
+    
+    inline def setStringType(value: String): Self = StObject.set(x, "stringType", value.asInstanceOf[js.Any])
+    
+    inline def setStringTypeUndefined: Self = StObject.set(x, "stringType", js.undefined)
+    
+    inline def setType(value: url): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

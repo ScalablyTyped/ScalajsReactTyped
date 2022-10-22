@@ -1,11 +1,13 @@
-package typingsJapgolly.senchaTouch.Ext
+package typingsJapgolly.senchaTouch.Ext.device
 
+import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object device {
-  type ICommunicator = typingsJapgolly.senchaTouch.Ext.IBase
-  type IGlobalization = typingsJapgolly.senchaTouch.Ext.IBase
-  type ISplashscreen = typingsJapgolly.senchaTouch.Ext.IBase
-}
+
+type ICommunicator = IBase
+
+type IGlobalization = IBase
+
+type ISplashscreen = IBase

@@ -1,37 +1,43 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SeriesNetworkgraphDataLabelsFormatterContextObject extends DataLabelsFormatterContextObject {
+trait SeriesNetworkgraphDataLabelsFormatterContextObject
+  extends StObject
+     with PointLabelObject {
+  
   /**
     * The color of the node.
     */
-  var color: ColorString
+  @JSName("color")
+  var color_SeriesNetworkgraphDataLabelsFormatterContextObject: ColorString
+  
   /**
     * The ID of the node.
     */
-  var key: String
+  @JSName("key")
+  var key_SeriesNetworkgraphDataLabelsFormatterContextObject: String
 }
-
 object SeriesNetworkgraphDataLabelsFormatterContextObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     color: ColorString,
+    colorIndex: Double,
     key: String,
+    percentage: Double,
     point: Point,
-    series: Series,
-    x: Double,
-    percentage: Int | Double = null,
-    total: Int | Double = null,
-    y: Int | Double = null
+    series: Series
   ): SeriesNetworkgraphDataLabelsFormatterContextObject = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any])
-    if (percentage != null) __obj.updateDynamic("percentage")(percentage.asInstanceOf[js.Any])
-    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], colorIndex = colorIndex.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any], series = series.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesNetworkgraphDataLabelsFormatterContextObject]
   }
+  
+  extension [Self <: SeriesNetworkgraphDataLabelsFormatterContextObject](x: Self) {
+    
+    inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+  }
 }
-

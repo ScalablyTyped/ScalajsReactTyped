@@ -2,31 +2,43 @@ package typingsJapgolly.jqueryui.JQueryUI
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.jquery.JQueryEventObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DraggableEvents extends js.Object {
+trait DraggableEvents extends StObject {
+  
   var create: js.UndefOr[DraggableEvent] = js.undefined
+  
   var drag: js.UndefOr[DraggableEvent] = js.undefined
+  
   var start: js.UndefOr[DraggableEvent] = js.undefined
+  
   var stop: js.UndefOr[DraggableEvent] = js.undefined
 }
-
 object DraggableEvents {
-  @scala.inline
-  def apply(
-    create: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    drag: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    start: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null,
-    stop: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback = null
-  ): DraggableEvents = {
+  
+  inline def apply(): DraggableEvents = {
     val __obj = js.Dynamic.literal()
-    if (create != null) __obj.updateDynamic("create")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => create(t0, t1).runNow()))
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => drag(t0, t1).runNow()))
-    if (start != null) __obj.updateDynamic("start")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => start(t0, t1).runNow()))
-    if (stop != null) __obj.updateDynamic("stop")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.jquery.JQueryEventObject, t1: /* ui */ typingsJapgolly.jqueryui.JQueryUI.DraggableEventUIParams) => stop(t0, t1).runNow()))
     __obj.asInstanceOf[DraggableEvents]
   }
+  
+  extension [Self <: DraggableEvents](x: Self) {
+    
+    inline def setCreate(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback): Self = StObject.set(x, "create", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DraggableEventUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+    
+    inline def setDrag(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DraggableEventUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setStart(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback): Self = StObject.set(x, "start", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DraggableEventUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setStop(value: (/* event */ JQueryEventObject, /* ui */ DraggableEventUIParams) => Callback): Self = StObject.set(x, "stop", js.Any.fromFunction2((t0: /* event */ JQueryEventObject, t1: /* ui */ DraggableEventUIParams) => (value(t0, t1)).runNow()))
+    
+    inline def setStopUndefined: Self = StObject.set(x, "stop", js.undefined)
+  }
 }
-

@@ -1,27 +1,43 @@
 package typingsJapgolly.awsSdkClientCodecommitNode
 
-import typingsJapgolly.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typingsJapgolly.awsSdkClientCodecommitNode.typesCommentMod.UnmarshalledComment
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientCodecommitNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-codecommit-node/types/GetCommentOutput", JSImport.Namespace)
-@js.native
-object typesGetCommentOutputMod extends js.Object {
-  @js.native
-  trait GetCommentOutput extends OutputTypesUnion {
+object typesGetCommentOutputMod {
+  
+  trait GetCommentOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
+    
     /**
       * <p>The contents of the comment.</p>
       */
-    var comment: js.UndefOr[UnmarshalledComment] = js.native
+    var comment: js.UndefOr[UnmarshalledComment] = js.undefined
   }
-  
+  object GetCommentOutput {
+    
+    inline def apply($metadata: ResponseMetadata): GetCommentOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GetCommentOutput]
+    }
+    
+    extension [Self <: GetCommentOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      
+      inline def setComment(value: UnmarshalledComment): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    }
+  }
 }
-

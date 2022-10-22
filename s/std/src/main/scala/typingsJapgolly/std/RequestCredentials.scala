@@ -1,24 +1,20 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.include
   - typingsJapgolly.std.stdStrings.omit
   - typingsJapgolly.std.stdStrings.`same-origin`
 */
-trait RequestCredentials extends js.Object
-
+trait RequestCredentials extends StObject
 object RequestCredentials {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def include: typingsJapgolly.std.stdStrings.include = this.cast("include")
-  @scala.inline
-  def omit: typingsJapgolly.std.stdStrings.omit = this.cast("omit")
-  @scala.inline
-  def `same-origin`: typingsJapgolly.std.stdStrings.`same-origin` = this.cast("same-origin")
+  
+  inline def include: typingsJapgolly.std.stdStrings.include = "include".asInstanceOf[typingsJapgolly.std.stdStrings.include]
+  
+  inline def omit: typingsJapgolly.std.stdStrings.omit = "omit".asInstanceOf[typingsJapgolly.std.stdStrings.omit]
+  
+  inline def `same-origin`: typingsJapgolly.std.stdStrings.`same-origin` = "same-origin".asInstanceOf[typingsJapgolly.std.stdStrings.`same-origin`]
 }
-

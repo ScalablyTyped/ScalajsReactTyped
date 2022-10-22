@@ -1,56 +1,46 @@
 package typingsJapgolly.formol.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.formol.mod.FieldSetProps
+import typingsJapgolly.react.mod.Ref
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FieldSet {
-  def apply(
-    choices: js.Array[_] = null,
-    dangerousRawHTMLLabels: js.UndefOr[Boolean] = js.undefined,
-    elementRef: Ref = null,
-    isChecked: js.UndefOr[Boolean] = js.undefined,
-    onChange: js.UndefOr[Callback] = js.undefined,
-    `type`: String = null,
-    value: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    FieldSetProps[js.Any], 
-    typingsJapgolly.formol.mod.FieldSet, 
-    Unit, 
-    FieldSetProps[js.Any]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (choices != null) __obj.updateDynamic("choices")(choices.asInstanceOf[js.Any])
-    if (!js.isUndefined(dangerousRawHTMLLabels)) __obj.updateDynamic("dangerousRawHTMLLabels")(dangerousRawHTMLLabels.asInstanceOf[js.Any])
-    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked.asInstanceOf[js.Any])
-    onChange.foreach(p => __obj.updateDynamic("onChange")(p.toJsFn))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.formol.mod.FieldSetProps[js.Any], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.formol.mod.FieldSet](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.formol.mod.FieldSetProps[js.Any]])(children: _*)
-  }
   @JSImport("formol", "FieldSet")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def choices(value: js.Array[Any]): this.type = set("choices", value.asInstanceOf[js.Any])
+    
+    inline def choicesVarargs(value: Any*): this.type = set("choices", js.Array(value*))
+    
+    inline def dangerousRawHTMLLabels(value: Boolean): this.type = set("dangerousRawHTMLLabels", value.asInstanceOf[js.Any])
+    
+    inline def elementRef(value: Ref[Any]): this.type = set("elementRef", value.asInstanceOf[js.Any])
+    
+    inline def elementRefFunction1(value: Any | Null => Callback): this.type = set("elementRef", js.Any.fromFunction1((t0: Any | Null) => value(t0).runNow()))
+    
+    inline def elementRefNull: this.type = set("elementRef", null)
+    
+    inline def isChecked(value: Boolean): this.type = set("isChecked", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: Callback): this.type = set("onChange", value.toJsFn)
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Any): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: FieldSet.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FieldSetProps[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

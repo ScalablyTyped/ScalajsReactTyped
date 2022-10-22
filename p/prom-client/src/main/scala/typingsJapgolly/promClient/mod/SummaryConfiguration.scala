@@ -1,43 +1,53 @@
 package typingsJapgolly.promClient.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SummaryConfiguration extends js.Object {
+trait SummaryConfiguration[T /* <: String */]
+  extends StObject
+     with MetricConfiguration[T] {
+  
   var ageBuckets: js.UndefOr[Double] = js.undefined
-  var aggregator: js.UndefOr[Aggregator] = js.undefined
+  
+  @JSName("collect")
+  var collect_SummaryConfiguration: js.UndefOr[CollectFunction[Summary[T]]] = js.undefined
+  
   var compressCount: js.UndefOr[Double] = js.undefined
-  var help: String
-  var labelNames: js.UndefOr[js.Array[String]] = js.undefined
+  
   var maxAgeSeconds: js.UndefOr[Double] = js.undefined
-  var name: String
+  
   var percentiles: js.UndefOr[js.Array[Double]] = js.undefined
-  var registers: js.UndefOr[js.Array[Registry]] = js.undefined
 }
-
 object SummaryConfiguration {
-  @scala.inline
-  def apply(
-    help: String,
-    name: String,
-    ageBuckets: Int | Double = null,
-    aggregator: Aggregator = null,
-    compressCount: Int | Double = null,
-    labelNames: js.Array[String] = null,
-    maxAgeSeconds: Int | Double = null,
-    percentiles: js.Array[Double] = null,
-    registers: js.Array[Registry] = null
-  ): SummaryConfiguration = {
+  
+  inline def apply[T /* <: String */](help: String, name: String): SummaryConfiguration[T] = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (ageBuckets != null) __obj.updateDynamic("ageBuckets")(ageBuckets.asInstanceOf[js.Any])
-    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator.asInstanceOf[js.Any])
-    if (compressCount != null) __obj.updateDynamic("compressCount")(compressCount.asInstanceOf[js.Any])
-    if (labelNames != null) __obj.updateDynamic("labelNames")(labelNames.asInstanceOf[js.Any])
-    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
-    if (percentiles != null) __obj.updateDynamic("percentiles")(percentiles.asInstanceOf[js.Any])
-    if (registers != null) __obj.updateDynamic("registers")(registers.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SummaryConfiguration]
+    __obj.asInstanceOf[SummaryConfiguration[T]]
+  }
+  
+  extension [Self <: SummaryConfiguration[?], T /* <: String */](x: Self & SummaryConfiguration[T]) {
+    
+    inline def setAgeBuckets(value: Double): Self = StObject.set(x, "ageBuckets", value.asInstanceOf[js.Any])
+    
+    inline def setAgeBucketsUndefined: Self = StObject.set(x, "ageBuckets", js.undefined)
+    
+    inline def setCollect(value: CollectFunction[Summary[T]]): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
+    
+    inline def setCollectUndefined: Self = StObject.set(x, "collect", js.undefined)
+    
+    inline def setCompressCount(value: Double): Self = StObject.set(x, "compressCount", value.asInstanceOf[js.Any])
+    
+    inline def setCompressCountUndefined: Self = StObject.set(x, "compressCount", js.undefined)
+    
+    inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+    
+    inline def setPercentiles(value: js.Array[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+    
+    inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
+    
+    inline def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value*))
   }
 }
-

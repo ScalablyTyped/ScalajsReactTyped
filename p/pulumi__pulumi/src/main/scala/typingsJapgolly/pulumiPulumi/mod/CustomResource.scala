@@ -2,13 +2,13 @@ package typingsJapgolly.pulumiPulumi.mod
 
 import typingsJapgolly.pulumiPulumi.outputMod.Inputs
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/pulumi", "CustomResource")
+/* note: abstract class */ @JSImport("@pulumi/pulumi", "CustomResource")
 @js.native
-abstract class CustomResource protected ()
+open class CustomResource protected ()
   extends typingsJapgolly.pulumiPulumi.resourceMod.CustomResource {
   /**
     * Creates and registers a new managed resource.  t is the fully qualified type token and name
@@ -22,20 +22,27 @@ abstract class CustomResource protected ()
     * @param name The _unique_ name of the resource.
     * @param props The arguments to use to populate the new resource.
     * @param opts A bag of options that control this resource's behavior.
+    * @param dependency True if this is a synthetic resource used internally for dependency tracking.
     */
   def this(t: String, name: String) = this()
   def this(t: String, name: String, props: Inputs) = this()
+  def this(t: String, name: String, props: Unit, opts: CustomResourceOptions) = this()
   def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions) = this()
+  def this(t: String, name: String, props: Unit, opts: Unit, dependency: Boolean) = this()
+  def this(t: String, name: String, props: Unit, opts: CustomResourceOptions, dependency: Boolean) = this()
+  def this(t: String, name: String, props: Inputs, opts: Unit, dependency: Boolean) = this()
+  def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions, dependency: Boolean) = this()
 }
-
 /* static members */
-@JSImport("@pulumi/pulumi", "CustomResource")
-@js.native
-object CustomResource extends js.Object {
+object CustomResource {
+  
+  @JSImport("@pulumi/pulumi", "CustomResource")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
     * multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = js.native
+  inline def isInstance(obj: Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
 }
-

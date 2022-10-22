@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.partial
   - typingsJapgolly.chromeApps.chromeAppsStrings.full
 */
-trait InterfaceType extends js.Object
-
+trait InterfaceType extends StObject
 object InterfaceType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def full: typingsJapgolly.chromeApps.chromeAppsStrings.full = this.cast("full")
-  @scala.inline
-  def partial: typingsJapgolly.chromeApps.chromeAppsStrings.partial = this.cast("partial")
+  
+  inline def full: typingsJapgolly.chromeApps.chromeAppsStrings.full = "full".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.full]
+  
+  inline def partial: typingsJapgolly.chromeApps.chromeAppsStrings.partial = "partial".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.partial]
 }
-

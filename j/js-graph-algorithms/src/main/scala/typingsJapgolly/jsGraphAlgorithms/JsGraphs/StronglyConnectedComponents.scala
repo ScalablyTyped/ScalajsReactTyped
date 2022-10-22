@@ -1,18 +1,51 @@
 package typingsJapgolly.jsGraphAlgorithms.JsGraphs
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("JsGraphs.StronglyConnectedComponents")
-@js.native
-class StronglyConnectedComponents protected () extends js.Object {
-  def this(G: DiGraph) = this()
-  var count: js.Any = js.native
-  var id: js.Any = js.native
-  var marked: js.Any = js.native
-  def componentCount(): Double = js.native
-  def componentId(v: Double): Double = js.native
-  def dfs(G: DiGraph, v: Double): Unit = js.native
+trait StronglyConnectedComponents extends StObject {
+  
+  def componentCount(): Double
+  
+  def componentId(v: Double): Double
+  
+  /* private */ var count: Any
+  
+  def dfs(G: DiGraph, v: Double): Unit
+  
+  /* private */ var id: Any
+  
+  /* private */ var marked: Any
 }
-
+object StronglyConnectedComponents {
+  
+  inline def apply(
+    componentCount: CallbackTo[Double],
+    componentId: Double => Double,
+    count: Any,
+    dfs: (DiGraph, Double) => Callback,
+    id: Any,
+    marked: Any
+  ): StronglyConnectedComponents = {
+    val __obj = js.Dynamic.literal(componentCount = componentCount.toJsFn, componentId = js.Any.fromFunction1(componentId), count = count.asInstanceOf[js.Any], dfs = js.Any.fromFunction2((t0: DiGraph, t1: Double) => (dfs(t0, t1)).runNow()), id = id.asInstanceOf[js.Any], marked = marked.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StronglyConnectedComponents]
+  }
+  
+  extension [Self <: StronglyConnectedComponents](x: Self) {
+    
+    inline def setComponentCount(value: CallbackTo[Double]): Self = StObject.set(x, "componentCount", value.toJsFn)
+    
+    inline def setComponentId(value: Double => Double): Self = StObject.set(x, "componentId", js.Any.fromFunction1(value))
+    
+    inline def setCount(value: Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setDfs(value: (DiGraph, Double) => Callback): Self = StObject.set(x, "dfs", js.Any.fromFunction2((t0: DiGraph, t1: Double) => (value(t0, t1)).runNow()))
+    
+    inline def setId(value: Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMarked(value: Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+  }
+}

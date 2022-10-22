@@ -1,12 +1,15 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("selenium-webdriver", "promise")
-@js.native
-object promise extends js.Object {
+object promise {
+  
+  @JSImport("selenium-webdriver", "promise")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Wraps a function that expects a node-style callback as its final
     * argument. This callback expects two arguments: an error value (which will
@@ -14,12 +17,13 @@ object promise extends js.Object {
     * argument. The callback will the resolve or reject the returned promise,
     * based on its arguments.
     */
-  // tslint:disable-next-line:no-any  Variable args have variable types.
-  def checkedNodeCall[T](fn: js.Function, varArgs: js.Any*): js.Promise[T] = js.native
+  inline def checkedNodeCall[T](fn: js.Function, varArgs: Any*): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkedNodeCall")(scala.List(fn.asInstanceOf[js.Any]).`++`(varArgs.asInstanceOf[Seq[js.Any]])*).asInstanceOf[js.Promise[T]]
+  
   /**
     * Creates a promise that will be resolved at a set time in the future.
     */
-  def delayed(ms: Double): js.Promise[Unit] = js.native
+  inline def delayed(ms: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delayed")(ms.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   /**
     * Calls a function for each element in an array, and if the function returns
     * true adds the element to a new array.
@@ -33,28 +37,27 @@ object promise extends js.Object {
     * first failure will be reported; all subsequent errors will be silently
     * ignored.
     */
-  def filter[T, V](
+  inline def filter[T, V](
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  def filter[T, V](
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def filter[T, V](
     arr: js.Array[T],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
-    // tslint:disable-next-line:no-any The type of archaic `self` adds no
-  // value
-  optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
-  def filter[T, V](
+    // value
+  optSelf: Any
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def filter[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  def filter[T, V](
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def filter[T, V](
     arr: js.Promise[js.Array[T]],
     fn: js.Function3[/* element */ T, /* index */ Double, /* array */ js.Array[T], V],
-    // tslint:disable-next-line:no-any The type of archaic `self` adds no
-  // value
-  optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
+    // value
+  optSelf: Any
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  
   /**
     * Returns a promise that will be resolved with the input value in a
     * fully-resolved state. If the value is an array, each element will be fully
@@ -70,15 +73,16 @@ object promise extends js.Object {
     *     value['self'] = value;
     *     promise.fullyResolved(value);  // Stack overflow.
     */
-  // tslint:disable-next-line:no-any Complex relation between input and output
-  def fullyResolved(value: js.Any): js.Promise[_] = js.native
+  inline def fullyResolved(value: Any): js.Promise[Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fullyResolved")(value.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Any]]
+  
   // region Functions
   /**
     * Determines whether a {@code value} should be treated as a promise.
     * Any object whose 'then' property is a function will be considered a
     * promise.
     */
-  def isPromise(value: js.Any): Boolean = js.native
+  inline def isPromise(value: Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   /**
     * Calls a function for each element in an array and inserts the result into a
     * new array, which is used as the fulfillment value of the promise returned
@@ -92,25 +96,25 @@ object promise extends js.Object {
     * Only the first failure will be reported; all subsequent errors will be
     * silently ignored.
     */
-  // tslint:disable-next-line:no-any The type of archaic `self` adds no value
-  def map[T, V](
+  inline def map[T, V](
     arr: js.Array[T],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  def map[T, V](
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def map[T, V](
     arr: js.Array[T],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
-    optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
-  def map[T, V](
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
+    optSelf: Any
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def map[T, V](
     arr: js.Promise[js.Array[T]],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
-  ): js.Promise[js.Array[V]] = js.native
-  def map[T, V](
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V]
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  inline def map[T, V](
     arr: js.Promise[js.Array[T]],
-    fn: js.Function4[/* self */ js.Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
-    optSelf: js.Any
-  ): js.Promise[js.Array[V]] = js.native
+    fn: js.Function4[/* self */ Any, /* type */ T, /* index */ Double, /* array */ js.Array[T], V],
+    optSelf: Any
+  ): js.Promise[js.Array[V]] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], optSelf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[V]]]
+  
   /**
     * Registers a listener to invoke when a promise is resolved, regardless
     * of whether the promise's value was successfully computed. This function
@@ -141,6 +145,5 @@ object promise extends js.Object {
     *       throw Error('two');  // Hides Error: one
     *     });
     */
-  def thenFinally[R](promise: js.Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = js.native
+  inline def thenFinally[R](promise: Any, callback: js.Function0[R | js.Promise[R]]): js.Promise[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("thenFinally")(promise.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[R]]
 }
-

@@ -10,10 +10,10 @@ Typings are for version 0.5
 | ------------------ | :-------------: |
 | Full name          | moji |
 | Keywords           | 半角, 全角, kataカタカナ, 半角カナ, 変換 |
-| # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 161406 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 100861.0 |
+| # stars            | 161.0 |
 
 ## Links
 - [Homepage](https://github.com/niwaringo/moji)

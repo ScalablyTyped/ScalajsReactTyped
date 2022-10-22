@@ -1,15 +1,34 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.webix.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadDriver extends js.Object {
-  var html5: js.Any
-}
-
-@JSImport("webix", "UploadDriver")
 @js.native
-object UploadDriver extends TopLevel[UploadDriver]
-
+trait UploadDriver extends StObject {
+  
+  @JSName("$drop")
+  def $drop(args: Any*): Any = js.native
+  @JSName("$drop")
+  var $drop_Original: WebixCallback = js.native
+  
+  @JSName("$render")
+  var $render: Any = js.native
+  
+  def fileDialog(): Unit = js.native
+  def fileDialog(content: Any): Unit = js.native
+  
+  var html5: Any = js.native
+  
+  def send(id: String): Unit = js.native
+  def send(id: Double): Unit = js.native
+  def send(id: WebixCallback): Unit = js.native
+  
+  def stopUpload(id: String): Unit = js.native
+  def stopUpload(id: Double): Unit = js.native
+}
+object UploadDriver {
+  
+  inline def apply: UploadDriver = ^.asInstanceOf[js.Dynamic].selectDynamic("UploadDriver").asInstanceOf[UploadDriver]
+}

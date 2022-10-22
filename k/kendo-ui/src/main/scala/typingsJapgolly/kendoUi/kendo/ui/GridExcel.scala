@@ -1,33 +1,48 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridExcel extends js.Object {
+trait GridExcel extends StObject {
+  
   var allPages: js.UndefOr[Boolean] = js.undefined
+  
   var fileName: js.UndefOr[String] = js.undefined
+  
   var filterable: js.UndefOr[Boolean] = js.undefined
+  
   var forceProxy: js.UndefOr[Boolean] = js.undefined
+  
   var proxyURL: js.UndefOr[String] = js.undefined
 }
-
 object GridExcel {
-  @scala.inline
-  def apply(
-    allPages: js.UndefOr[Boolean] = js.undefined,
-    fileName: String = null,
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    forceProxy: js.UndefOr[Boolean] = js.undefined,
-    proxyURL: String = null
-  ): GridExcel = {
+  
+  inline def apply(): GridExcel = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allPages)) __obj.updateDynamic("allPages")(allPages.asInstanceOf[js.Any])
-    if (fileName != null) __obj.updateDynamic("fileName")(fileName.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceProxy)) __obj.updateDynamic("forceProxy")(forceProxy.asInstanceOf[js.Any])
-    if (proxyURL != null) __obj.updateDynamic("proxyURL")(proxyURL.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridExcel]
   }
+  
+  extension [Self <: GridExcel](x: Self) {
+    
+    inline def setAllPages(value: Boolean): Self = StObject.set(x, "allPages", value.asInstanceOf[js.Any])
+    
+    inline def setAllPagesUndefined: Self = StObject.set(x, "allPages", js.undefined)
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setForceProxy(value: Boolean): Self = StObject.set(x, "forceProxy", value.asInstanceOf[js.Any])
+    
+    inline def setForceProxyUndefined: Self = StObject.set(x, "forceProxy", js.undefined)
+    
+    inline def setProxyURL(value: String): Self = StObject.set(x, "proxyURL", value.asInstanceOf[js.Any])
+    
+    inline def setProxyURLUndefined: Self = StObject.set(x, "proxyURL", js.undefined)
+  }
 }
-

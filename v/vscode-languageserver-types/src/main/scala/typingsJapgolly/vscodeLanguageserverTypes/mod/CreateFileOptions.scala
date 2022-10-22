@@ -1,27 +1,36 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateFileOptions extends js.Object {
+trait CreateFileOptions extends StObject {
+  
   /**
     * Ignore if exists.
     */
   var ignoreIfExists: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Overwrite existing file. Overwrite wins over `ignoreIfExists`
     */
   var overwrite: js.UndefOr[Boolean] = js.undefined
 }
-
 object CreateFileOptions {
-  @scala.inline
-  def apply(ignoreIfExists: js.UndefOr[Boolean] = js.undefined, overwrite: js.UndefOr[Boolean] = js.undefined): CreateFileOptions = {
+  
+  inline def apply(): CreateFileOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(ignoreIfExists)) __obj.updateDynamic("ignoreIfExists")(ignoreIfExists.asInstanceOf[js.Any])
-    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFileOptions]
   }
+  
+  extension [Self <: CreateFileOptions](x: Self) {
+    
+    inline def setIgnoreIfExists(value: Boolean): Self = StObject.set(x, "ignoreIfExists", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreIfExistsUndefined: Self = StObject.set(x, "ignoreIfExists", js.undefined)
+    
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+  }
 }
-

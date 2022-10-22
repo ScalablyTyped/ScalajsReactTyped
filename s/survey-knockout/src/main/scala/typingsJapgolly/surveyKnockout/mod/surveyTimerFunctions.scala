@@ -1,13 +1,16 @@
 package typingsJapgolly.surveyKnockout.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("survey-knockout", "surveyTimerFunctions")
-@js.native
-object surveyTimerFunctions extends js.Object {
-  def clearTimeout(timerId: Double): Unit = js.native
-  def setTimeout(func: js.Function0[_]): Double = js.native
+object surveyTimerFunctions {
+  
+  @JSImport("survey-knockout", "surveyTimerFunctions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def clearTimeout(timerId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearTimeout")(timerId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def setTimeout(func: Any): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(func.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

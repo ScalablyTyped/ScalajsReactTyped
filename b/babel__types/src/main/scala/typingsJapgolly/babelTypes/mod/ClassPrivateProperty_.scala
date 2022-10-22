@@ -1,47 +1,77 @@
 package typingsJapgolly.babelTypes.mod
 
 import typingsJapgolly.babelTypes.babelTypesStrings.ClassPrivateProperty
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.babelTypes.mod._Node because Already inherited */ trait ClassPrivateProperty_
-  extends Private
+  extends StObject
      with BaseNode
-     with Property {
+     with Private
+     with Property
+     with Standardized {
+  
   var decorators: js.Array[Decorator_] | Null
+  
+  var definite: Boolean | Null
+  
   var key: PrivateName_
+  
+  var readonly: Boolean | Null
+  
+  var static: Boolean
+  
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
+  
   @JSName("type")
   var type_ClassPrivateProperty_ : ClassPrivateProperty
+  
   var value: Expression | Null
+  
+  var variance: Variance_ | Null
 }
-
 object ClassPrivateProperty_ {
-  @scala.inline
-  def apply(
-    key: PrivateName_,
-    `type`: ClassPrivateProperty,
-    decorators: js.Array[Decorator_] = null,
-    end: Int | Double = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    start: Int | Double = null,
-    trailingComments: js.Array[Comment] = null,
-    value: Expression = null
-  ): ClassPrivateProperty_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (decorators != null) __obj.updateDynamic("decorators")(decorators.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+  
+  inline def apply(key: PrivateName_, static: Boolean): ClassPrivateProperty_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, definite = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null, value = null, variance = null)
+    __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[ClassPrivateProperty_]
   }
+  
+  extension [Self <: ClassPrivateProperty_](x: Self) {
+    
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    
+    inline def setDecoratorsNull: Self = StObject.set(x, "decorators", null)
+    
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value*))
+    
+    inline def setDefinite(value: Boolean): Self = StObject.set(x, "definite", value.asInstanceOf[js.Any])
+    
+    inline def setDefiniteNull: Self = StObject.set(x, "definite", null)
+    
+    inline def setKey(value: PrivateName_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: ClassPrivateProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotation(value: TypeAnnotation_ | TSTypeAnnotation_ | Noop_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    
+    inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    
+    inline def setVarianceNull: Self = StObject.set(x, "variance", null)
+  }
 }
-

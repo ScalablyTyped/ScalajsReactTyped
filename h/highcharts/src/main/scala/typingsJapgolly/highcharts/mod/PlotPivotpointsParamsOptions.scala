@@ -1,16 +1,20 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PlotPivotpointsParamsOptions extends js.Object {
+trait PlotPivotpointsParamsOptions extends StObject {
+  
   /**
     * (Highstock) Algorithm used to calculate ressistance and support lines
     * based on pivot points. Implemented algorithms: `'standard'`,
     * `'fibonacci'` and `'camarilla'`
     */
   var algorithm: js.UndefOr[String] = js.undefined
+  
+  var index: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highstock) The base period for indicator calculations. This is the
     * number of data points which are taken into account for the indicator
@@ -18,14 +22,25 @@ trait PlotPivotpointsParamsOptions extends js.Object {
     */
   var period: js.UndefOr[Double] = js.undefined
 }
-
 object PlotPivotpointsParamsOptions {
-  @scala.inline
-  def apply(algorithm: String = null, period: Int | Double = null): PlotPivotpointsParamsOptions = {
+  
+  inline def apply(): PlotPivotpointsParamsOptions = {
     val __obj = js.Dynamic.literal()
-    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm.asInstanceOf[js.Any])
-    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlotPivotpointsParamsOptions]
   }
+  
+  extension [Self <: PlotPivotpointsParamsOptions](x: Self) {
+    
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
+    
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+  }
 }
-

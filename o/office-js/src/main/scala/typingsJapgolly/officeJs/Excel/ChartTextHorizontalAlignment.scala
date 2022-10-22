@@ -1,53 +1,63 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartTextHorizontalAlignment extends js.Object
-
+sealed trait ChartTextHorizontalAlignment extends StObject
 /**
-  *
   * Represents the horizontal alignment for the specified object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
 @JSGlobal("Excel.ChartTextHorizontalAlignment")
 @js.native
-object ChartTextHorizontalAlignment extends js.Object {
+object ChartTextHorizontalAlignment extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait center extends ChartTextHorizontalAlignment
+  sealed trait center
+    extends StObject
+       with ChartTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait distributed extends ChartTextHorizontalAlignment
+  sealed trait distributed
+    extends StObject
+       with ChartTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait justify extends ChartTextHorizontalAlignment
+  sealed trait justify
+    extends StObject
+       with ChartTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait left extends ChartTextHorizontalAlignment
+  sealed trait left
+    extends StObject
+       with ChartTextHorizontalAlignment
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.7]
+    */
   @js.native
-  sealed trait right extends ChartTextHorizontalAlignment
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ChartTextHorizontalAlignment with String] = js.native
-  /* "Center" */ @js.native
-  object center extends TopLevel[center with String]
-  
-  /* "Distributed" */ @js.native
-  object distributed extends TopLevel[distributed with String]
-  
-  /* "Justify" */ @js.native
-  object justify extends TopLevel[justify with String]
-  
-  /* "Left" */ @js.native
-  object left extends TopLevel[left with String]
-  
-  /* "Right" */ @js.native
-  object right extends TopLevel[right with String]
-  
+  sealed trait right
+    extends StObject
+       with ChartTextHorizontalAlignment
 }
-

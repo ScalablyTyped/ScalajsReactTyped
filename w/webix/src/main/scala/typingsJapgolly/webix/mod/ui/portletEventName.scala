@@ -1,8 +1,8 @@
 package typingsJapgolly.webix.mod.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.webix.webixStrings.onAfterPortletMove
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.webix.webixStrings.onDestruct
   - typingsJapgolly.webix.webixStrings.onViewShow
 */
-trait portletEventName extends js.Object
-
+trait portletEventName extends StObject
 object portletEventName {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def onAfterPortletMove: typingsJapgolly.webix.webixStrings.onAfterPortletMove = this.cast("onAfterPortletMove")
-  @scala.inline
-  def onBeforePortletMove: typingsJapgolly.webix.webixStrings.onBeforePortletMove = this.cast("onBeforePortletMove")
-  @scala.inline
-  def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = this.cast("onBindRequest")
-  @scala.inline
-  def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = this.cast("onDestruct")
-  @scala.inline
-  def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = this.cast("onViewShow")
+  
+  inline def onAfterPortletMove: typingsJapgolly.webix.webixStrings.onAfterPortletMove = "onAfterPortletMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onAfterPortletMove]
+  
+  inline def onBeforePortletMove: typingsJapgolly.webix.webixStrings.onBeforePortletMove = "onBeforePortletMove".asInstanceOf[typingsJapgolly.webix.webixStrings.onBeforePortletMove]
+  
+  inline def onBindRequest: typingsJapgolly.webix.webixStrings.onBindRequest = "onBindRequest".asInstanceOf[typingsJapgolly.webix.webixStrings.onBindRequest]
+  
+  inline def onDestruct: typingsJapgolly.webix.webixStrings.onDestruct = "onDestruct".asInstanceOf[typingsJapgolly.webix.webixStrings.onDestruct]
+  
+  inline def onViewShow: typingsJapgolly.webix.webixStrings.onViewShow = "onViewShow".asInstanceOf[typingsJapgolly.webix.webixStrings.onViewShow]
 }
-

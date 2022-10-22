@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColumnSortedEventUIParam extends js.Object {
+trait ColumnSortedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key.
-  	 */
+    * Gets the column key.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the sorting direction.
-  	 */
+    * Gets the sorting direction.
+    */
   var direction: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the sorted expressions.
-  	 */
-  var expressions: js.UndefOr[js.Any] = js.undefined
+    * Gets the sorted expressions.
+    */
+  var expressions: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to GridSorting.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to GridSorting.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ColumnSortedEventUIParam {
-  @scala.inline
-  def apply(
-    columnKey: String = null,
-    direction: String = null,
-    expressions: js.Any = null,
-    owner: js.Any = null
-  ): ColumnSortedEventUIParam = {
+  
+  inline def apply(): ColumnSortedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (expressions != null) __obj.updateDynamic("expressions")(expressions.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnSortedEventUIParam]
   }
+  
+  extension [Self <: ColumnSortedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setExpressions(value: Any): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

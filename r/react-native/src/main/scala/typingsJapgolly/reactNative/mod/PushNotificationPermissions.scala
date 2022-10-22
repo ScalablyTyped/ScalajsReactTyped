@@ -1,27 +1,36 @@
 package typingsJapgolly.reactNative.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushNotificationPermissions extends js.Object {
+trait PushNotificationPermissions extends StObject {
+  
   var alert: js.UndefOr[Boolean] = js.undefined
+  
   var badge: js.UndefOr[Boolean] = js.undefined
+  
   var sound: js.UndefOr[Boolean] = js.undefined
 }
-
 object PushNotificationPermissions {
-  @scala.inline
-  def apply(
-    alert: js.UndefOr[Boolean] = js.undefined,
-    badge: js.UndefOr[Boolean] = js.undefined,
-    sound: js.UndefOr[Boolean] = js.undefined
-  ): PushNotificationPermissions = {
+  
+  inline def apply(): PushNotificationPermissions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(alert)) __obj.updateDynamic("alert")(alert.asInstanceOf[js.Any])
-    if (!js.isUndefined(badge)) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound.asInstanceOf[js.Any])
     __obj.asInstanceOf[PushNotificationPermissions]
   }
+  
+  extension [Self <: PushNotificationPermissions](x: Self) {
+    
+    inline def setAlert(value: Boolean): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+    
+    inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+    
+    inline def setBadge(value: Boolean): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setSound(value: Boolean): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+  }
 }
-

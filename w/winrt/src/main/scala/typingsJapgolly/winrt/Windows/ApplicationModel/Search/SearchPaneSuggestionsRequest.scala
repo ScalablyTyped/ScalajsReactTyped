@@ -1,17 +1,21 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Search
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Search.SearchPaneSuggestionsRequest")
-@js.native
-class SearchPaneSuggestionsRequest () extends ISearchPaneSuggestionsRequest {
-  /* CompleteClass */
-  override var isCanceled: Boolean = js.native
-  /* CompleteClass */
-  override var searchSuggestionCollection: SearchSuggestionCollection = js.native
-  /* CompleteClass */
-  override def getDeferral(): SearchPaneSuggestionsRequestDeferral = js.native
+trait SearchPaneSuggestionsRequest
+  extends StObject
+     with ISearchPaneSuggestionsRequest
+object SearchPaneSuggestionsRequest {
+  
+  inline def apply(
+    getDeferral: CallbackTo[SearchPaneSuggestionsRequestDeferral],
+    isCanceled: Boolean,
+    searchSuggestionCollection: SearchSuggestionCollection
+  ): SearchPaneSuggestionsRequest = {
+    val __obj = js.Dynamic.literal(getDeferral = getDeferral.toJsFn, isCanceled = isCanceled.asInstanceOf[js.Any], searchSuggestionCollection = searchSuggestionCollection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchPaneSuggestionsRequest]
+  }
 }
-

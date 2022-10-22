@@ -1,15 +1,16 @@
 package typingsJapgolly.xrm.Xrm
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.Panel API
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-panel External Link: Xrm.Panel}
   */
-trait Panel extends js.Object {
+trait Panel extends StObject {
+  
   /**
     * Displays the web page represented by a URL in the static area in the side pane, which appears on all pages in the Customer Engagement web client.
     * @param url URL of the page to be loaded in the side pane static area.
@@ -19,13 +20,15 @@ trait Panel extends js.Object {
     */
   def loadPanel(url: String, title: String): Unit
 }
-
 object Panel {
-  @scala.inline
-  def apply(loadPanel: (String, String) => Callback): Panel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadPanel")(js.Any.fromFunction2((t0: java.lang.String, t1: java.lang.String) => loadPanel(t0, t1).runNow()))
+  
+  inline def apply(loadPanel: (String, String) => Callback): Panel = {
+    val __obj = js.Dynamic.literal(loadPanel = js.Any.fromFunction2((t0: String, t1: String) => (loadPanel(t0, t1)).runNow()))
     __obj.asInstanceOf[Panel]
   }
+  
+  extension [Self <: Panel](x: Self) {
+    
+    inline def setLoadPanel(value: (String, String) => Callback): Self = StObject.set(x, "loadPanel", js.Any.fromFunction2((t0: String, t1: String) => (value(t0, t1)).runNow()))
+  }
 }
-

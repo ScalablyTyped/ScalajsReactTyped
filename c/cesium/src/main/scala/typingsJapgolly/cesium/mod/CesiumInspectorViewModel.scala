@@ -1,64 +1,258 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CesiumInspectorViewModel")
 @js.native
-class CesiumInspectorViewModel protected () extends js.Object {
-  def this(scene: Scene) = this()
-  var doFilterPrimitive: Command = js.native
-  var doFilterTile: Command = js.native
-  var doSuspendUpdates: Command = js.native
-  var dropDownVisible: Boolean = js.native
-  var filterPrimitive: Boolean = js.native
-  var filterTile: Boolean = js.native
-  var frustumStatisticText: String = js.native
-  var frustums: Boolean = js.native
-  var generalSwitchText: String = js.native
-  var generalVisible: Boolean = js.native
-  var hasPickedPrimitive: Boolean = js.native
-  var hasPickedTile: Boolean = js.native
-  var performance: Boolean = js.native
-  var performanceContainer: Element = js.native
-  var pickPimitiveActive: Boolean = js.native
-  var pickPrimitive: Command = js.native
-  var pickTile: Command = js.native
-  var pickTileActive: Boolean = js.native
-  var primitive: Command = js.native
-  var primitiveBoundingSphere: Boolean = js.native
-  var primitiveReferenceFrame: Boolean = js.native
-  var primitivesSwitchText: String = js.native
-  var primitivesVisible: Boolean = js.native
-  var scene: Scene = js.native
-  var selectNE: Command = js.native
-  var selectNW: Command = js.native
-  var selectParent: Command = js.native
-  var selectSE: Command = js.native
-  var selectSW: Command = js.native
-  var shaderCacheText: String = js.native
-  var showFrustums: Command = js.native
-  var showPerformance: Command = js.native
-  var showPrimitiveBoundingSphere: Command = js.native
-  var showPrimitiveReferenceFrame: Command = js.native
-  var showTileBoundingSphere: Command = js.native
-  var showTileCoordinates: Command = js.native
-  var showWireframe: Command = js.native
-  var suspendUpdates: Boolean = js.native
-  var terrainSwitchText: String = js.native
-  var terrainVisible: Boolean = js.native
-  var tile: Command = js.native
-  var tileBoundingSphere: Boolean = js.native
-  var tileCoordinates: Boolean = js.native
-  var tileText: String = js.native
-  var toggleDropDown: Command = js.native
-  var toggleGeneral: Command = js.native
-  var togglePrimitives: Command = js.native
-  var toggleTerrain: Command = js.native
-  var wireframe: Boolean = js.native
+open class CesiumInspectorViewModel protected () extends StObject {
+  def this(scene: Scene, performanceContainer: Element) = this()
+  
+  /**
+    * Gets the command to decrement the depth frustum index to be shown
+    */
+  var decrementDepthFrustum: Command = js.native
+  
+  /**
+    * Gets or sets the index of the depth frustum to display.  This property is observable.
+    */
+  var depthFrustum: Double = js.native
+  
+  /**
+    * Gets or sets the index of the depth frustum text.  This property is observable.
+    */
+  var depthFrustumText: String = js.native
+  
+  /**
+    * Destroys the widget.  Should be called if permanently
+    * removing the widget from layout.
+    */
   def destroy(): Unit = js.native
+  
+  /**
+    * Gets the command to toggle a filter that renders only a selected primitive
+    */
+  var doFilterPrimitive: Command = js.native
+  
+  /**
+    * Gets the command to toggle a filter that renders only a selected tile
+    */
+  var doFilterTile: Command = js.native
+  
+  /**
+    * Gets or sets if the cesium inspector drop down is visible.  This property is observable.
+    */
+  var dropDownVisible: Boolean = js.native
+  
+  /**
+    * Gets or sets the filter primitive state.  This property is observable.
+    */
+  var filterPrimitive: Boolean = js.native
+  
+  /**
+    * Gets or sets the filter tile state.  This property is observable.
+    */
+  var filterTile: Boolean = js.native
+  
+  /**
+    * Gets or sets the show frustum planes state.  This property is observable.
+    */
+  var frustumPlanes: Boolean = js.native
+  
+  /**
+    * Gets or sets the frustum statistic text.  This property is observable.
+    */
+  var frustumStatisticText: String = js.native
+  
+  /**
+    * Gets or sets the show frustums state.  This property is observable.
+    */
+  var frustums: Boolean = js.native
+  
+  /**
+    * Gets or sets if the general section is visible.  This property is observable.
+    */
+  var generalVisible: Boolean = js.native
+  
+  /**
+    * Gets if a primitive has been selected.  This property is observable.
+    */
+  var hasPickedPrimitive: Boolean = js.native
+  
+  /**
+    * Gets if a tile has been selected.  This property is observable
+    */
+  var hasPickedTile: Boolean = js.native
+  
+  /**
+    * Gets the command to increment the depth frustum index to be shown
+    */
+  var incrementDepthFrustum: Command = js.native
+  
+  /**
+    * @returns true if the object has been destroyed, false otherwise.
+    */
   def isDestroyed(): Boolean = js.native
+  
+  /**
+    * Gets or sets the show performance display state.  This property is observable.
+    */
+  var performance: Boolean = js.native
+  
+  /**
+    * Gets the container of the PerformanceDisplay
+    */
+  var performanceContainer: Element = js.native
+  
+  /**
+    * Gets the command to pick a primitive
+    */
+  var pickPrimitive: Command = js.native
+  
+  /**
+    * Gets if the picking primitive command is active.  This property is observable.
+    */
+  var pickPrimitiveActive: Boolean = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var pickTile: Command = js.native
+  
+  /**
+    * Gets if the picking tile command is active.  This property is observable.
+    */
+  var pickTileActive: Boolean = js.native
+  
+  /**
+    * Gets or sets the current selected primitive
+    */
+  var primitive: Command = js.native
+  
+  /**
+    * Gets or sets the show primitive bounding sphere state.  This property is observable.
+    */
+  var primitiveBoundingSphere: Boolean = js.native
+  
+  /**
+    * Gets or sets the show primitive reference frame state.  This property is observable.
+    */
+  var primitiveReferenceFrame: Boolean = js.native
+  
+  /**
+    * Gets or sets if the primitive section is visible.  This property is observable.
+    */
+  var primitivesVisible: Boolean = js.native
+  
+  /**
+    * Gets the scene to control.
+    */
+  var scene: Scene = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var selectNE: Command = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var selectNW: Command = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var selectParent: Command = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var selectSE: Command = js.native
+  
+  /**
+    * Gets the command to pick a tile
+    */
+  var selectSW: Command = js.native
+  
+  /**
+    * Gets or sets the shader cache text.  This property is observable.
+    */
+  var shaderCacheText: String = js.native
+  
+  /**
+    * Gets the command to toggle the visibility of a BoundingSphere for a primitive
+    */
+  var showPrimitiveBoundingSphere: Command = js.native
+  
+  /**
+    * Gets the command to toggle the visibility of a {@link DebugModelMatrixPrimitive} for the model matrix of a primitive
+    */
+  var showPrimitiveReferenceFrame: Command = js.native
+  
+  /**
+    * Gets the command to toggle the visibility of a BoundingSphere for a selected tile
+    */
+  var showTileBoundingSphere: Command = js.native
+  
+  /**
+    * Gets the command to toggle the visibility of tile coordinates
+    */
+  var showTileCoordinates: Command = js.native
+  
+  /**
+    * Gets or sets the suspend updates state.  This property is observable.
+    */
+  var suspendUpdates: Boolean = js.native
+  
+  /**
+    * Gets or sets if the terrain section is visible.  This property is observable.
+    */
+  var terrainVisible: Boolean = js.native
+  
+  /**
+    * Gets or sets the current selected tile
+    */
+  var tile: Command = js.native
+  
+  /**
+    * Gets or sets the show tile bounding sphere state.  This property is observable.
+    */
+  var tileBoundingSphere: Boolean = js.native
+  
+  /**
+    * Gets or sets the show tile coordinates state.  This property is observable.
+    */
+  var tileCoordinates: Boolean = js.native
+  
+  /**
+    * Gets or sets the selected tile information text.  This property is observable.
+    */
+  var tileText: String = js.native
+  
+  /**
+    * Gets the command to toggle the visibility of the drop down.
+    */
+  var toggleDropDown: Command = js.native
+  
+  /**
+    * Gets the command to expand and collapse the general section
+    */
+  var toggleGeneral: Command = js.native
+  
+  /**
+    * Gets the command to expand and collapse the primitives section
+    */
+  var togglePrimitives: Command = js.native
+  
+  /**
+    * Gets the command to expand and collapse the terrain section
+    */
+  var toggleTerrain: Command = js.native
+  
+  /**
+    * Gets or sets the show wireframe state.  This property is observable.
+    */
+  var wireframe: Boolean = js.native
 }
-

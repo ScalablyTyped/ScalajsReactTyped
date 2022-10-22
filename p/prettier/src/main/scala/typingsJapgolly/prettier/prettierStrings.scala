@@ -1,270 +1,337 @@
 package typingsJapgolly.prettier
 
 import typingsJapgolly.prettier.mod.BuiltInParserName
+import typingsJapgolly.prettier.mod.CoreCategoryType
+import typingsJapgolly.prettier.mod.SupportOptionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prettierStrings {
-  @js.native
-  sealed trait Apostrophe extends js.Object
   
   @js.native
-  sealed trait Quotationmark extends js.Object
+  sealed trait Config
+    extends StObject
+       with CoreCategoryType
+  inline def Config: Config = "Config".asInstanceOf[Config]
   
   @js.native
-  sealed trait align extends js.Object
+  sealed trait Editor
+    extends StObject
+       with CoreCategoryType
+  inline def Editor: Editor = "Editor".asInstanceOf[Editor]
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait Format
+    extends StObject
+       with CoreCategoryType
+  inline def Format: Format = "Format".asInstanceOf[Format]
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait Global
+    extends StObject
+       with CoreCategoryType
+  inline def Global: Global = "Global".asInstanceOf[Global]
   
   @js.native
-  sealed trait angular extends BuiltInParserName
+  sealed trait Other
+    extends StObject
+       with CoreCategoryType
+  inline def Other: Other = "Other".asInstanceOf[Other]
   
   @js.native
-  sealed trait `as-needed` extends js.Object
+  sealed trait Output
+    extends StObject
+       with CoreCategoryType
+  inline def Output: Output = "Output".asInstanceOf[Output]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait Quotationmark extends StObject
+  inline def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
   
   @js.native
-  sealed trait avoid extends js.Object
+  sealed trait Special
+    extends StObject
+       with CoreCategoryType
+  inline def Special: Special = "Special".asInstanceOf[Special]
   
   @js.native
-  sealed trait babel extends BuiltInParserName
+  sealed trait align extends StObject
+  inline def align: align = "align".asInstanceOf[align]
   
   @js.native
-  sealed trait `babel-flow` extends BuiltInParserName
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait babylon extends BuiltInParserName
+  sealed trait always extends StObject
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait angular
+    extends StObject
+       with BuiltInParserName
+  inline def angular: angular = "angular".asInstanceOf[angular]
   
   @js.native
-  sealed trait `break-parent` extends js.Object
+  sealed trait `as-needed` extends StObject
+  inline def `as-needed`: `as-needed` = "as-needed".asInstanceOf[`as-needed`]
   
   @js.native
-  sealed trait choice extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait concat extends js.Object
+  sealed trait avoid extends StObject
+  inline def avoid: avoid = "avoid".asInstanceOf[avoid]
   
   @js.native
-  sealed trait consistent extends js.Object
+  sealed trait babel
+    extends StObject
+       with BuiltInParserName
+  inline def babel: babel = "babel".asInstanceOf[babel]
   
   @js.native
-  sealed trait cr extends js.Object
+  sealed trait `babel-flow`
+    extends StObject
+       with BuiltInParserName
+  inline def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
   
   @js.native
-  sealed trait crlf extends js.Object
+  sealed trait `babel-ts`
+    extends StObject
+       with BuiltInParserName
+  inline def `babel-ts`: `babel-ts` = "babel-ts".asInstanceOf[`babel-ts`]
   
   @js.native
-  sealed trait css extends BuiltInParserName
+  sealed trait boolean
+    extends StObject
+       with SupportOptionType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait es5 extends js.Object
+  sealed trait `break-parent` extends StObject
+  inline def `break-parent`: `break-parent` = "break-parent".asInstanceOf[`break-parent`]
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait choice
+    extends StObject
+       with SupportOptionType
+  inline def choice: choice = "choice".asInstanceOf[choice]
   
   @js.native
-  sealed trait flow extends BuiltInParserName
+  sealed trait concat extends StObject
+  inline def concat: concat = "concat".asInstanceOf[concat]
   
   @js.native
-  sealed trait graphql extends BuiltInParserName
+  sealed trait consistent extends StObject
+  inline def consistent: consistent = "consistent".asInstanceOf[consistent]
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait cr extends StObject
+  inline def cr: cr = "cr".asInstanceOf[cr]
   
   @js.native
-  sealed trait html extends BuiltInParserName
+  sealed trait crlf extends StObject
+  inline def crlf: crlf = "crlf".asInstanceOf[crlf]
   
   @js.native
-  sealed trait `if-break` extends js.Object
+  sealed trait css
+    extends StObject
+       with BuiltInParserName
+  inline def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait cursor extends StObject
+  inline def cursor: cursor = "cursor".asInstanceOf[cursor]
   
   @js.native
-  sealed trait indent extends js.Object
+  sealed trait es5 extends StObject
+  inline def es5: es5 = "es5".asInstanceOf[es5]
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait espree
+    extends StObject
+       with BuiltInParserName
+  inline def espree: espree = "espree".asInstanceOf[espree]
   
   @js.native
-  sealed trait json extends BuiltInParserName
+  sealed trait fill extends StObject
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait `json-stringify` extends BuiltInParserName
+  sealed trait flow
+    extends StObject
+       with BuiltInParserName
+  inline def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
-  sealed trait json5 extends BuiltInParserName
+  sealed trait glimmer
+    extends StObject
+       with BuiltInParserName
+  inline def glimmer: glimmer = "glimmer".asInstanceOf[glimmer]
   
   @js.native
-  sealed trait less extends BuiltInParserName
+  sealed trait graphql
+    extends StObject
+       with BuiltInParserName
+  inline def graphql: graphql = "graphql".asInstanceOf[graphql]
   
   @js.native
-  sealed trait lf extends js.Object
+  sealed trait group extends StObject
+  inline def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait html
+    extends StObject
+       with BuiltInParserName
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
-  sealed trait `line-suffix` extends js.Object
+  sealed trait `if-break` extends StObject
+  inline def `if-break`: `if-break` = "if-break".asInstanceOf[`if-break`]
   
   @js.native
-  sealed trait `line-suffix-boundary` extends js.Object
+  sealed trait ignore extends StObject
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
-  sealed trait lwc extends BuiltInParserName
+  sealed trait indent extends StObject
+  inline def indent: indent = "indent".asInstanceOf[indent]
   
   @js.native
-  sealed trait markdown extends BuiltInParserName
+  sealed trait `indent-if-break` extends StObject
+  inline def `indent-if-break`: `indent-if-break` = "indent-if-break".asInstanceOf[`indent-if-break`]
   
   @js.native
-  sealed trait mdx extends BuiltInParserName
+  sealed trait int
+    extends StObject
+       with SupportOptionType
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait json
+    extends StObject
+       with BuiltInParserName
+  inline def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait `json-stringify`
+    extends StObject
+       with BuiltInParserName
+  inline def `json-stringify`: `json-stringify` = "json-stringify".asInstanceOf[`json-stringify`]
   
   @js.native
-  sealed trait path extends js.Object
+  sealed trait json5
+    extends StObject
+       with BuiltInParserName
+  inline def json5: json5 = "json5".asInstanceOf[json5]
   
   @js.native
-  sealed trait postcss extends BuiltInParserName
+  sealed trait label extends StObject
+  inline def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait preserve extends js.Object
+  sealed trait less
+    extends StObject
+       with BuiltInParserName
+  inline def less: less = "less".asInstanceOf[less]
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait lf extends StObject
+  inline def lf: lf = "lf".asInstanceOf[lf]
   
   @js.native
-  sealed trait scss extends BuiltInParserName
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait `line-suffix` extends StObject
+  inline def `line-suffix`: `line-suffix` = "line-suffix".asInstanceOf[`line-suffix`]
   
   @js.native
-  sealed trait typescript extends BuiltInParserName
+  sealed trait `line-suffix-boundary` extends StObject
+  inline def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
   
   @js.native
-  sealed trait vue extends BuiltInParserName
+  sealed trait lwc
+    extends StObject
+       with BuiltInParserName
+  inline def lwc: lwc = "lwc".asInstanceOf[lwc]
   
   @js.native
-  sealed trait yaml extends BuiltInParserName
+  sealed trait markdown
+    extends StObject
+       with BuiltInParserName
+  inline def markdown: markdown = "markdown".asInstanceOf[markdown]
   
-  @scala.inline
-  def Apostrophe: Apostrophe = "'".asInstanceOf[Apostrophe]
-  @scala.inline
-  def Quotationmark: Quotationmark = "\"".asInstanceOf[Quotationmark]
-  @scala.inline
-  def align: align = "align".asInstanceOf[align]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def angular: angular = "angular".asInstanceOf[angular]
-  @scala.inline
-  def `as-needed`: `as-needed` = "as-needed".asInstanceOf[`as-needed`]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def avoid: avoid = "avoid".asInstanceOf[avoid]
-  @scala.inline
-  def babel: babel = "babel".asInstanceOf[babel]
-  @scala.inline
-  def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
-  @scala.inline
-  def babylon: babylon = "babylon".asInstanceOf[babylon]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def `break-parent`: `break-parent` = "break-parent".asInstanceOf[`break-parent`]
-  @scala.inline
-  def choice: choice = "choice".asInstanceOf[choice]
-  @scala.inline
-  def concat: concat = "concat".asInstanceOf[concat]
-  @scala.inline
-  def consistent: consistent = "consistent".asInstanceOf[consistent]
-  @scala.inline
-  def cr: cr = "cr".asInstanceOf[cr]
-  @scala.inline
-  def crlf: crlf = "crlf".asInstanceOf[crlf]
-  @scala.inline
-  def css: css = "css".asInstanceOf[css]
-  @scala.inline
-  def es5: es5 = "es5".asInstanceOf[es5]
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
-  @scala.inline
-  def flow: flow = "flow".asInstanceOf[flow]
-  @scala.inline
-  def graphql: graphql = "graphql".asInstanceOf[graphql]
-  @scala.inline
-  def group: group = "group".asInstanceOf[group]
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
-  @scala.inline
-  def `if-break`: `if-break` = "if-break".asInstanceOf[`if-break`]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def indent: indent = "indent".asInstanceOf[indent]
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
-  @scala.inline
-  def json: json = "json".asInstanceOf[json]
-  @scala.inline
-  def `json-stringify`: `json-stringify` = "json-stringify".asInstanceOf[`json-stringify`]
-  @scala.inline
-  def json5: json5 = "json5".asInstanceOf[json5]
-  @scala.inline
-  def less: less = "less".asInstanceOf[less]
-  @scala.inline
-  def lf: lf = "lf".asInstanceOf[lf]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def `line-suffix`: `line-suffix` = "line-suffix".asInstanceOf[`line-suffix`]
-  @scala.inline
-  def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
-  @scala.inline
-  def lwc: lwc = "lwc".asInstanceOf[lwc]
-  @scala.inline
-  def markdown: markdown = "markdown".asInstanceOf[markdown]
-  @scala.inline
-  def mdx: mdx = "mdx".asInstanceOf[mdx]
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
-  @scala.inline
-  def postcss: postcss = "postcss".asInstanceOf[postcss]
-  @scala.inline
-  def preserve: preserve = "preserve".asInstanceOf[preserve]
-  @scala.inline
-  def root: root = "root".asInstanceOf[root]
-  @scala.inline
-  def scss: scss = "scss".asInstanceOf[scss]
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
-  @scala.inline
-  def typescript: typescript = "typescript".asInstanceOf[typescript]
-  @scala.inline
-  def vue: vue = "vue".asInstanceOf[vue]
-  @scala.inline
-  def yaml: yaml = "yaml".asInstanceOf[yaml]
+  @js.native
+  sealed trait mdx
+    extends StObject
+       with BuiltInParserName
+  inline def mdx: mdx = "mdx".asInstanceOf[mdx]
+  
+  @js.native
+  sealed trait meriyah
+    extends StObject
+       with BuiltInParserName
+  inline def meriyah: meriyah = "meriyah".asInstanceOf[meriyah]
+  
+  @js.native
+  sealed trait never extends StObject
+  inline def never: never = "never".asInstanceOf[never]
+  
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait off extends StObject
+  inline def off: off = "off".asInstanceOf[off]
+  
+  @js.native
+  sealed trait path
+    extends StObject
+       with SupportOptionType
+  inline def path: path = "path".asInstanceOf[path]
+  
+  @js.native
+  sealed trait preserve extends StObject
+  inline def preserve: preserve = "preserve".asInstanceOf[preserve]
+  
+  @js.native
+  sealed trait root extends StObject
+  inline def root: root = "root".asInstanceOf[root]
+  
+  @js.native
+  sealed trait scss
+    extends StObject
+       with BuiltInParserName
+  inline def scss: scss = "scss".asInstanceOf[scss]
+  
+  @js.native
+  sealed trait strict extends StObject
+  inline def strict: strict = "strict".asInstanceOf[strict]
+  
+  @js.native
+  sealed trait trim extends StObject
+  inline def trim: trim = "trim".asInstanceOf[trim]
+  
+  @js.native
+  sealed trait typescript
+    extends StObject
+       with BuiltInParserName
+  inline def typescript: typescript = "typescript".asInstanceOf[typescript]
+  
+  @js.native
+  sealed trait vue
+    extends StObject
+       with BuiltInParserName
+  inline def vue: vue = "vue".asInstanceOf[vue]
+  
+  @js.native
+  sealed trait yaml
+    extends StObject
+       with BuiltInParserName
+  inline def yaml: yaml = "yaml".asInstanceOf[yaml]
 }
-

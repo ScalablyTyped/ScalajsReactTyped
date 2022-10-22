@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Chat
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatMessageKind extends js.Object
-
+sealed trait ChatMessageKind extends StObject
 /** Specifies the type of chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageKind")
 @js.native
-object ChatMessageKind extends js.Object {
+object ChatMessageKind extends StObject {
+  
   /** A file transfer request */
   @js.native
-  sealed trait fileTransferRequest extends ChatMessageKind
+  sealed trait fileTransferRequest
+    extends StObject
+       with ChatMessageKind
   
   /** A conversation the user joined */
   @js.native
-  sealed trait joinedConversation extends ChatMessageKind
+  sealed trait joinedConversation
+    extends StObject
+       with ChatMessageKind
   
   /** A conversation the user left */
   @js.native
-  sealed trait leftConversation extends ChatMessageKind
+  sealed trait leftConversation
+    extends StObject
+       with ChatMessageKind
   
   /** A conversation that another user joined */
   @js.native
-  sealed trait otherParticipantJoinedConversation extends ChatMessageKind
+  sealed trait otherParticipantJoinedConversation
+    extends StObject
+       with ChatMessageKind
   
   /** A conversation that another user left */
   @js.native
-  sealed trait otherParticipantLeftConversation extends ChatMessageKind
+  sealed trait otherParticipantLeftConversation
+    extends StObject
+       with ChatMessageKind
   
   /** A standard chat message */
   @js.native
-  sealed trait standard extends ChatMessageKind
+  sealed trait standard
+    extends StObject
+       with ChatMessageKind
   
   /** A non-SMS/MMS message written to the device by the app */
   @js.native
-  sealed trait transportCustom extends ChatMessageKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatMessageKind with Double] = js.native
-  /* 1 */ @js.native
-  object fileTransferRequest extends TopLevel[fileTransferRequest with Double]
-  
-  /* 3 */ @js.native
-  object joinedConversation extends TopLevel[joinedConversation with Double]
-  
-  /* 4 */ @js.native
-  object leftConversation extends TopLevel[leftConversation with Double]
-  
-  /* 5 */ @js.native
-  object otherParticipantJoinedConversation extends TopLevel[otherParticipantJoinedConversation with Double]
-  
-  /* 6 */ @js.native
-  object otherParticipantLeftConversation extends TopLevel[otherParticipantLeftConversation with Double]
-  
-  /* 0 */ @js.native
-  object standard extends TopLevel[standard with Double]
-  
-  /* 2 */ @js.native
-  object transportCustom extends TopLevel[transportCustom with Double]
-  
+  sealed trait transportCustom
+    extends StObject
+       with ChatMessageKind
 }
-

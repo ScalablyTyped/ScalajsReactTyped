@@ -1,33 +1,40 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait AnPlusB
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
+  
   var a: String | Null
+  
   var b: String | Null
+  
   @JSName("type")
   var type_AnPlusB: typingsJapgolly.cssTree.cssTreeStrings.AnPlusB
 }
-
 object AnPlusB {
-  @scala.inline
-  def apply(
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.AnPlusB,
-    a: String = null,
-    b: String = null,
-    loc: CssLocation = null
-  ): AnPlusB = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+  
+  inline def apply(): AnPlusB = {
+    val __obj = js.Dynamic.literal(a = null, b = null)
+    __obj.updateDynamic("type")("AnPlusB")
     __obj.asInstanceOf[AnPlusB]
   }
+  
+  extension [Self <: AnPlusB](x: Self) {
+    
+    inline def setA(value: String): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    
+    inline def setANull: Self = StObject.set(x, "a", null)
+    
+    inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    
+    inline def setBNull: Self = StObject.set(x, "b", null)
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.AnPlusB): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

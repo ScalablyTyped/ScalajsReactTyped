@@ -1,36 +1,54 @@
 package typingsJapgolly.ibmMobilefirst.WL
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BusyIndicatorOptions extends js.Object {
+trait BusyIndicatorOptions extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var contentTextText: js.UndefOr[String] = js.undefined
+  
   var contentTitle: js.UndefOr[String] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var notificationId: js.UndefOr[Double] = js.undefined
+  
   var tickerText: js.UndefOr[String] = js.undefined
 }
-
 object BusyIndicatorOptions {
-  @scala.inline
-  def apply(
-    className: String = null,
-    contentTextText: String = null,
-    contentTitle: String = null,
-    icon: String = null,
-    notificationId: Int | Double = null,
-    tickerText: String = null
-  ): BusyIndicatorOptions = {
+  
+  inline def apply(): BusyIndicatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (contentTextText != null) __obj.updateDynamic("contentTextText")(contentTextText.asInstanceOf[js.Any])
-    if (contentTitle != null) __obj.updateDynamic("contentTitle")(contentTitle.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (notificationId != null) __obj.updateDynamic("notificationId")(notificationId.asInstanceOf[js.Any])
-    if (tickerText != null) __obj.updateDynamic("tickerText")(tickerText.asInstanceOf[js.Any])
     __obj.asInstanceOf[BusyIndicatorOptions]
   }
+  
+  extension [Self <: BusyIndicatorOptions](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setContentTextText(value: String): Self = StObject.set(x, "contentTextText", value.asInstanceOf[js.Any])
+    
+    inline def setContentTextTextUndefined: Self = StObject.set(x, "contentTextText", js.undefined)
+    
+    inline def setContentTitle(value: String): Self = StObject.set(x, "contentTitle", value.asInstanceOf[js.Any])
+    
+    inline def setContentTitleUndefined: Self = StObject.set(x, "contentTitle", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setNotificationId(value: Double): Self = StObject.set(x, "notificationId", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationIdUndefined: Self = StObject.set(x, "notificationId", js.undefined)
+    
+    inline def setTickerText(value: String): Self = StObject.set(x, "tickerText", value.asInstanceOf[js.Any])
+    
+    inline def setTickerTextUndefined: Self = StObject.set(x, "tickerText", js.undefined)
+  }
 }
-

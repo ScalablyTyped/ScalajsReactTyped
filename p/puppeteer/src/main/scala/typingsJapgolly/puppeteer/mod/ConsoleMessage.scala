@@ -1,34 +1,46 @@
 package typingsJapgolly.puppeteer.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConsoleMessage extends js.Object {
-  /** The message arguments. */
-  def args(): js.Array[JSHandle[_]]
-  /** The location the message originated from */
-  def location(): ConsoleMessageLocation
-  /** The message text. */
-  def text(): String
-  def `type`(): ConsoleMessageType
+@JSImport("puppeteer", "ConsoleMessage")
+@js.native
+open class ConsoleMessage protected () extends StObject {
+  /**
+    * @public
+    */
+  def this(
+    `type`: ConsoleMessageType,
+    text: String,
+    args: js.Array[JSHandle[Any]],
+    stackTraceLocations: js.Array[ConsoleMessageLocation]
+  ) = this()
+  
+  /**
+    * @returns An array of arguments passed to the console.
+    */
+  def args(): js.Array[JSHandle[Any]] = js.native
+  
+  /**
+    * @returns The location of the console message.
+    */
+  def location(): ConsoleMessageLocation = js.native
+  
+  /* private */ var `private`: Any = js.native
+  
+  /**
+    * @returns The array of locations on the stack of the console message.
+    */
+  def stackTrace(): js.Array[ConsoleMessageLocation] = js.native
+  
+  /**
+    * @returns The text of the console message.
+    */
+  def text(): String = js.native
+  
+  /**
+    * @returns The type of the console message.
+    */
+  def `type`(): ConsoleMessageType = js.native
 }
-
-object ConsoleMessage {
-  @scala.inline
-  def apply(
-    args: CallbackTo[js.Array[JSHandle[js.Any]]],
-    location: CallbackTo[ConsoleMessageLocation],
-    text: CallbackTo[String],
-    `type`: CallbackTo[ConsoleMessageType]
-  ): ConsoleMessage = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("args")(args.toJsFn)
-    __obj.updateDynamic("location")(location.toJsFn)
-    __obj.updateDynamic("text")(text.toJsFn)
-    __obj.updateDynamic("type")(`type`.toJsFn)
-    __obj.asInstanceOf[ConsoleMessage]
-  }
-}
-

@@ -1,10 +1,10 @@
 package typingsJapgolly.uirouterCore.mod
 
-import typingsJapgolly.uirouterCore.coreservicesMod.LocationConfig
-import typingsJapgolly.uirouterCore.coreservicesMod.LocationServices
+import typingsJapgolly.uirouterCore.libCommonCoreservicesMod.LocationConfig
+import typingsJapgolly.uirouterCore.libCommonCoreservicesMod.LocationServices
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "UIRouter")
 @js.native
@@ -13,11 +13,11 @@ import scala.scalajs.js.annotation._
   *
   * @param locationService a [[LocationServices]] implementation
   * @param locationConfig a [[LocationConfig]] implementation
-  * @internalapi
+  * @internal
   */
-class UIRouter ()
-  extends typingsJapgolly.uirouterCore.routerMod.UIRouter {
+open class UIRouter ()
+  extends typingsJapgolly.uirouterCore.libRouterMod.UIRouter {
   def this(locationService: LocationServices) = this()
+  def this(locationService: Unit, locationConfig: LocationConfig) = this()
   def this(locationService: LocationServices, locationConfig: LocationConfig) = this()
 }
-

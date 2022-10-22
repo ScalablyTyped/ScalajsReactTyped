@@ -10,197 +10,270 @@ import typingsJapgolly.officeJs.officeJsStrings.Line
 import typingsJapgolly.officeJs.officeJsStrings.OneCell
 import typingsJapgolly.officeJs.officeJsStrings.TwoCell
 import typingsJapgolly.officeJs.officeJsStrings.Unsupported
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shape.toJSON()`. */
-trait ShapeData extends js.Object {
+trait ShapeData extends StObject {
+  
   /**
+    * Specifies the alternative description text for a `Shape` object.
     *
-    * Returns or sets the alternative description text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextDescription: js.UndefOr[String] = js.undefined
+  
   /**
+    * Specifies the alternative title text for a `Shape` object.
     *
-    * Returns or sets the alternative title text for a Shape object.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var altTextTitle: js.UndefOr[String] = js.undefined
+  
   /**
+    * Returns the number of connection sites on this shape.
     *
-    * Returns the number of connection sites on this shape. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var connectionSiteCount: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Gets the display name of the shape. A newly created shape has a generated name
+    that is localized and may not match its `name`. In this scenario, you can use
+    this API to get the name that is displayed in the UI.
     *
-    * Returns the fill formatting of this shape. Read-only.
+    * @remarks
+    * [Api set: ExcelApi 1.15]
+    */
+  var displayName: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Returns the fill formatting of this shape.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var fill: js.UndefOr[ShapeFillData] = js.undefined
+  
   /**
+    * Specifies the geometric shape type of this geometric shape. See `Excel.GeometricShapeType` for details. Returns `null` if the shape type is not "GeometricShape".
     *
-    * Represents the geometric shape type of this geometric shape. See Excel.GeometricShapeType for details. Returns null if the shape type is not "GeometricShape".
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var geometricShapeType: js.UndefOr[
-    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typingsJapgolly.officeJs.Excel.GeometricShapeType, typingsJapgolly.officeJs.officeJsStrings.LineInverse, typingsJapgolly.officeJs.officeJsStrings.Triangle */ Any
   ] = js.undefined
+  
   /**
+    * Specifies the height, in points, of the shape.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
-    * Represents the height, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var height: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the shape identifier.
     *
-    * Represents the shape identifier. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * The distance, in points, from the left side of the shape to the left side of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var left: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Specifies the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
     *
-    * Represents the level of the specified shape. For example, a level of 0 means that the shape is not part of any groups, a level of 1 means the shape is part of a top-level group, and a level of 2 means the shape is part of a sub-group of the top level.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var level: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Returns the line formatting of this shape.
     *
-    * Returns the line formatting of this shape. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lineFormat: js.UndefOr[ShapeLineFormatData] = js.undefined
+  
   /**
+    * Specifies if the aspect ratio of this shape is locked.
     *
-    * Specifies whether or not the aspect ratio of this shape is locked.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the name of the shape.
     *
-    * Represents the name of the shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Represents how the object is attached to the cells below it.
     *
+    * @remarks
     * [Api set: ExcelApi 1.10]
     */
   var placement: js.UndefOr[Placement | TwoCell | OneCell | Absolute] = js.undefined
+  
   /**
+    * Specifies the rotation, in degrees, of the shape.
     *
-    * Represents the rotation, in degrees, of the shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
-    *
     * The distance, in points, from the top edge of the shape to the top edge of the worksheet.
-    Throws an invalid argument exception when set with a negative value as input.
+    Throws an `InvalidArgument` exception when set with a negative value as an input.
     *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var top: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Returns the type of this shape. See `Excel.ShapeType` for details.
     *
-    * Returns the type of this shape. See Excel.ShapeType for details. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var `type`: js.UndefOr[ShapeType | Unsupported | Image | GeometricShape | Group | Line] = js.undefined
+  
   /**
+    * Specifies if the shape is visible.
     *
-    * Represents the visibility of this shape.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies the width, in points, of the shape.
+    Throws an `InvalidArgument` exception when set with a negative value or zero as an input.
     *
-    * Represents the width, in points, of the shape.
-    Throws an invalid argument exception when set with a negative value or zero as input.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var width: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack.
     *
-    * Returns the position of the specified shape in the z-order, with 0 representing the bottom of the order stack. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var zOrderPosition: js.UndefOr[Double] = js.undefined
 }
-
 object ShapeData {
-  @scala.inline
-  def apply(
-    altTextDescription: String = null,
-    altTextTitle: String = null,
-    connectionSiteCount: Int | Double = null,
-    fill: ShapeFillData = null,
-    geometricShapeType: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179 */ js.Any = null,
-    height: Int | Double = null,
-    id: String = null,
-    left: Int | Double = null,
-    level: Int | Double = null,
-    lineFormat: ShapeLineFormatData = null,
-    lockAspectRatio: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    placement: Placement | TwoCell | OneCell | Absolute = null,
-    rotation: Int | Double = null,
-    top: Int | Double = null,
-    `type`: ShapeType | Unsupported | Image | GeometricShape | Group | Line = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    zOrderPosition: Int | Double = null
-  ): ShapeData = {
+  
+  inline def apply(): ShapeData = {
     val __obj = js.Dynamic.literal()
-    if (altTextDescription != null) __obj.updateDynamic("altTextDescription")(altTextDescription.asInstanceOf[js.Any])
-    if (altTextTitle != null) __obj.updateDynamic("altTextTitle")(altTextTitle.asInstanceOf[js.Any])
-    if (connectionSiteCount != null) __obj.updateDynamic("connectionSiteCount")(connectionSiteCount.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (geometricShapeType != null) __obj.updateDynamic("geometricShapeType")(geometricShapeType.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (lineFormat != null) __obj.updateDynamic("lineFormat")(lineFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zOrderPosition != null) __obj.updateDynamic("zOrderPosition")(zOrderPosition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeData]
   }
+  
+  extension [Self <: ShapeData](x: Self) {
+    
+    inline def setAltTextDescription(value: String): Self = StObject.set(x, "altTextDescription", value.asInstanceOf[js.Any])
+    
+    inline def setAltTextDescriptionUndefined: Self = StObject.set(x, "altTextDescription", js.undefined)
+    
+    inline def setAltTextTitle(value: String): Self = StObject.set(x, "altTextTitle", value.asInstanceOf[js.Any])
+    
+    inline def setAltTextTitleUndefined: Self = StObject.set(x, "altTextTitle", js.undefined)
+    
+    inline def setConnectionSiteCount(value: Double): Self = StObject.set(x, "connectionSiteCount", value.asInstanceOf[js.Any])
+    
+    inline def setConnectionSiteCountUndefined: Self = StObject.set(x, "connectionSiteCount", js.undefined)
+    
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    
+    inline def setFill(value: ShapeFillData): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setGeometricShapeType(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 179, starting with typingsJapgolly.officeJs.Excel.GeometricShapeType, typingsJapgolly.officeJs.officeJsStrings.LineInverse, typingsJapgolly.officeJs.officeJsStrings.Triangle */ Any
+    ): Self = StObject.set(x, "geometricShapeType", value.asInstanceOf[js.Any])
+    
+    inline def setGeometricShapeTypeUndefined: Self = StObject.set(x, "geometricShapeType", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setLineFormat(value: ShapeLineFormatData): Self = StObject.set(x, "lineFormat", value.asInstanceOf[js.Any])
+    
+    inline def setLineFormatUndefined: Self = StObject.set(x, "lineFormat", js.undefined)
+    
+    inline def setLockAspectRatio(value: Boolean): Self = StObject.set(x, "lockAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def setLockAspectRatioUndefined: Self = StObject.set(x, "lockAspectRatio", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPlacement(value: Placement | TwoCell | OneCell | Absolute): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setType(value: ShapeType | Unsupported | Image | GeometricShape | Group | Line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZOrderPosition(value: Double): Self = StObject.set(x, "zOrderPosition", value.asInstanceOf[js.Any])
+    
+    inline def setZOrderPositionUndefined: Self = StObject.set(x, "zOrderPosition", js.undefined)
+  }
 }
-

@@ -1,32 +1,59 @@
 package typingsJapgolly.storybookAddonActions
 
-import typingsJapgolly.storybookAddonActions.actionOptionsMod.ActionOptions
-import typingsJapgolly.storybookAddonActions.actionsFunctionMod.ActionsFunction
-import typingsJapgolly.storybookAddonActions.decoratorFunctionMod.DecoratorFunction
-import typingsJapgolly.storybookAddonActions.handlerFunctionMod.HandlerFunction
-import typingsJapgolly.storybookAddonActions.storybookAddonActionsStrings.$___storybookDotisCyclic
-import typingsJapgolly.storybookAddonActions.storybookAddonActionsStrings.storybookSlashactions
+import typingsJapgolly.storybookAddonActions.anon.Action
+import typingsJapgolly.storybookAddonActions.distTs3Dot9ModelsActionOptionsMod.ActionOptions
+import typingsJapgolly.storybookAddonActions.distTs3Dot9ModelsActionsFunctionMod.ActionsFunction
+import typingsJapgolly.storybookAddonActions.distTs3Dot9ModelsDecoratorFunctionMod.DecoratorFunction
+import typingsJapgolly.storybookAddonActions.distTs3Dot9ModelsHandlerFunctionMod.HandlerFunction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@storybook/addon-actions", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val ADDON_ID: storybookSlashactions = js.native
-  val CYCLIC_KEY: $___storybookDotisCyclic = js.native
+object mod {
+  
+  @JSImport("@storybook/addon-actions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@storybook/addon-actions", "ADDON_ID")
+  @js.native
+  val ADDON_ID: /* "storybook/actions" */ String = js.native
+  
+  @JSImport("@storybook/addon-actions", "CYCLIC_KEY")
+  @js.native
+  val CYCLIC_KEY: /* "$___storybook.isCyclic" */ String = js.native
+  
+  @JSImport("@storybook/addon-actions", "EVENT_ID")
+  @js.native
   val EVENT_ID: String = js.native
+  
+  @JSImport("@storybook/addon-actions", "PANEL_ID")
+  @js.native
   val PANEL_ID: String = js.native
-  val PARAM_KEY: typingsJapgolly.storybookAddonActions.storybookAddonActionsStrings.actions = js.native
+  
+  @JSImport("@storybook/addon-actions", "PARAM_KEY")
+  @js.native
+  val PARAM_KEY: /* "actions" */ String = js.native
+  
+  inline def action(name: String): HandlerFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("action")(name.asInstanceOf[js.Any]).asInstanceOf[HandlerFunction]
+  inline def action(name: String, options: ActionOptions): HandlerFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("action")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HandlerFunction]
+  
+  @JSImport("@storybook/addon-actions", "actions")
+  @js.native
   val actions: ActionsFunction = js.native
+  
+  @JSImport("@storybook/addon-actions", "config")
+  @js.native
   val config: ActionOptions = js.native
-  def action(name: String): HandlerFunction = js.native
-  def action(name: String, options: ActionOptions): HandlerFunction = js.native
-  def configureActions(): Unit = js.native
-  def configureActions(options: ActionOptions): Unit = js.native
-  def createDecorator(actionsFn: js.Any): js.Function1[/* repeated */ js.Any, js.Function1[/* storyFn */ js.Function0[_], _]] = js.native
-  def decorate(decorators: js.Array[DecoratorFunction]): AnonAction = js.native
-  def decorateAction(decorators: js.Array[DecoratorFunction]): js.Function2[/* name */ String, /* options */ js.UndefOr[ActionOptions], HandlerFunction] = js.native
-  def withActions(args: js.Any*): js.Function1[/* storyFn */ js.Function0[_], _] = js.native
+  
+  inline def configureActions(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureActions")().asInstanceOf[Unit]
+  inline def configureActions(options: ActionOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureActions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def decorate(_decorators: js.Array[DecoratorFunction]): js.Function0[Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("decorate")(_decorators.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Action]]
+  
+  inline def decorateAction(_decorators: js.Array[DecoratorFunction]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("decorateAction")(_decorators.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  
+  inline def withActions(
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: Any
+  ): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("withActions")(args.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

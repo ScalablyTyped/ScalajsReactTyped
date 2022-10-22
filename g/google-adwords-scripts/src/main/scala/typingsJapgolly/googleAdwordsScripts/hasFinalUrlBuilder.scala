@@ -1,22 +1,26 @@
 package typingsJapgolly.googleAdwordsScripts
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait hasFinalUrlBuilder[B] extends js.Object {
+trait hasFinalUrlBuilder[B] extends StObject {
+  
   def withFinalUrl(url: String): B
+  
   def withMobileFinalUrl(url: String): B
 }
-
 object hasFinalUrlBuilder {
-  @scala.inline
-  def apply[B](withFinalUrl: String => CallbackTo[B], withMobileFinalUrl: String => CallbackTo[B]): hasFinalUrlBuilder[B] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("withFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withFinalUrl(t0).runNow()))
-    __obj.updateDynamic("withMobileFinalUrl")(js.Any.fromFunction1((t0: java.lang.String) => withMobileFinalUrl(t0).runNow()))
+  
+  inline def apply[B](withFinalUrl: String => B, withMobileFinalUrl: String => B): hasFinalUrlBuilder[B] = {
+    val __obj = js.Dynamic.literal(withFinalUrl = js.Any.fromFunction1(withFinalUrl), withMobileFinalUrl = js.Any.fromFunction1(withMobileFinalUrl))
     __obj.asInstanceOf[hasFinalUrlBuilder[B]]
   }
+  
+  extension [Self <: hasFinalUrlBuilder[?], B](x: Self & hasFinalUrlBuilder[B]) {
+    
+    inline def setWithFinalUrl(value: String => B): Self = StObject.set(x, "withFinalUrl", js.Any.fromFunction1(value))
+    
+    inline def setWithMobileFinalUrl(value: String => B): Self = StObject.set(x, "withMobileFinalUrl", js.Any.fromFunction1(value))
+  }
 }
-

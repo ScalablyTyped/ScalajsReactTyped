@@ -1,30 +1,42 @@
 package typingsJapgolly.reactMapGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlyToInterpolatorProps extends js.Object {
+trait FlyToInterpolatorProps extends StObject {
+  
   var curve: js.UndefOr[Double] = js.undefined
-  var maxDuraiton: js.UndefOr[Double] = js.undefined
+  
+  var maxDuration: js.UndefOr[Double] = js.undefined
+  
   var screenSpeed: js.UndefOr[Double] = js.undefined
+  
   var speed: js.UndefOr[Double] = js.undefined
 }
-
 object FlyToInterpolatorProps {
-  @scala.inline
-  def apply(
-    curve: Int | Double = null,
-    maxDuraiton: Int | Double = null,
-    screenSpeed: Int | Double = null,
-    speed: Int | Double = null
-  ): FlyToInterpolatorProps = {
+  
+  inline def apply(): FlyToInterpolatorProps = {
     val __obj = js.Dynamic.literal()
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (maxDuraiton != null) __obj.updateDynamic("maxDuraiton")(maxDuraiton.asInstanceOf[js.Any])
-    if (screenSpeed != null) __obj.updateDynamic("screenSpeed")(screenSpeed.asInstanceOf[js.Any])
-    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlyToInterpolatorProps]
   }
+  
+  extension [Self <: FlyToInterpolatorProps](x: Self) {
+    
+    inline def setCurve(value: Double): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    
+    inline def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)
+    
+    inline def setMaxDuration(value: Double): Self = StObject.set(x, "maxDuration", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDurationUndefined: Self = StObject.set(x, "maxDuration", js.undefined)
+    
+    inline def setScreenSpeed(value: Double): Self = StObject.set(x, "screenSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setScreenSpeedUndefined: Self = StObject.set(x, "screenSpeed", js.undefined)
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+  }
 }
-

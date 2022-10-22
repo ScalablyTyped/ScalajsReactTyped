@@ -1,35 +1,42 @@
 package typingsJapgolly.appleMusicApi.AppleMusicApi
 
-import typingsJapgolly.appleMusicApi.AnonAlbumName
+import typingsJapgolly.appleMusicApi.anon.AlbumName
 import typingsJapgolly.appleMusicApi.appleMusicApiStrings.songs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/song
-trait Song extends Resource {
+trait Song
+  extends StObject
+     with Resource {
+  
   // https://developer.apple.com/documentation/applemusicapi/song/attributes
-  var attributes: js.UndefOr[AnonAlbumName] = js.undefined
+  var attributes: js.UndefOr[AlbumName] = js.undefined
+  
   var relationships: js.UndefOr[SongRelationships] = js.undefined
+  
   @JSName("type")
   var type_Song: songs
 }
-
 object Song {
-  @scala.inline
-  def apply(
-    id: String,
-    `type`: songs,
-    attributes: AnonAlbumName = null,
-    href: String = null,
-    relationships: SongRelationships = null
-  ): Song = {
+  
+  inline def apply(id: String): Song = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (relationships != null) __obj.updateDynamic("relationships")(relationships.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("songs")
     __obj.asInstanceOf[Song]
   }
+  
+  extension [Self <: Song](x: Self) {
+    
+    inline def setAttributes(value: AlbumName): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setRelationships(value: SongRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    
+    inline def setType(value: songs): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,49 +1,90 @@
 package typingsJapgolly.simonwepSelectionJs.mod
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.Document
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SelectionOptions extends js.Object {
-  var boundaries: js.UndefOr[js.Array[String]] = js.undefined
-  var `class`: js.UndefOr[String] = js.undefined
-  var disableTouch: js.UndefOr[Boolean] = js.undefined
-  var mode: js.UndefOr[Mode] = js.undefined
-  var scrollSpeedDivider: js.UndefOr[Double] = js.undefined
-  var selectables: js.UndefOr[js.Array[String]] = js.undefined
-  var selectionAreaContainer: js.UndefOr[String | HTMLElement | (js.Array[String | HTMLElement])] = js.undefined
-  var singleClick: js.UndefOr[Boolean] = js.undefined
-  var startThreshold: js.UndefOr[Double] = js.undefined
-  var startareas: js.UndefOr[js.Array[String]] = js.undefined
+trait SelectionOptions extends StObject {
+  
+  var allowTouch: Boolean
+  
+  var boundaries: js.Array[String]
+  
+  var `class`: String
+  
+  var container: String | HTMLElement | (js.Array[String | HTMLElement])
+  
+  var document: Document
+  
+  var intersect: Intersection
+  
+  var overlap: OverlapMode
+  
+  var scrolling: Scrolling
+  
+  var selectables: js.Array[String]
+  
+  var singleTap: SingleTap
+  
+  var startThreshold: Double | Coordinates
+  
+  var startareas: js.Array[String]
 }
-
 object SelectionOptions {
-  @scala.inline
-  def apply(
-    boundaries: js.Array[String] = null,
-    `class`: String = null,
-    disableTouch: js.UndefOr[Boolean] = js.undefined,
-    mode: Mode = null,
-    scrollSpeedDivider: Int | Double = null,
-    selectables: js.Array[String] = null,
-    selectionAreaContainer: String | HTMLElement | (js.Array[String | HTMLElement]) = null,
-    singleClick: js.UndefOr[Boolean] = js.undefined,
-    startThreshold: Int | Double = null,
-    startareas: js.Array[String] = null
+  
+  inline def apply(
+    allowTouch: Boolean,
+    boundaries: js.Array[String],
+    `class`: String,
+    container: String | HTMLElement | (js.Array[String | HTMLElement]),
+    document: Document,
+    intersect: Intersection,
+    overlap: OverlapMode,
+    scrolling: Scrolling,
+    selectables: js.Array[String],
+    singleTap: SingleTap,
+    startThreshold: Double | Coordinates,
+    startareas: js.Array[String]
   ): SelectionOptions = {
-    val __obj = js.Dynamic.literal()
-    if (boundaries != null) __obj.updateDynamic("boundaries")(boundaries.asInstanceOf[js.Any])
-    if (`class` != null) __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableTouch)) __obj.updateDynamic("disableTouch")(disableTouch.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (scrollSpeedDivider != null) __obj.updateDynamic("scrollSpeedDivider")(scrollSpeedDivider.asInstanceOf[js.Any])
-    if (selectables != null) __obj.updateDynamic("selectables")(selectables.asInstanceOf[js.Any])
-    if (selectionAreaContainer != null) __obj.updateDynamic("selectionAreaContainer")(selectionAreaContainer.asInstanceOf[js.Any])
-    if (!js.isUndefined(singleClick)) __obj.updateDynamic("singleClick")(singleClick.asInstanceOf[js.Any])
-    if (startThreshold != null) __obj.updateDynamic("startThreshold")(startThreshold.asInstanceOf[js.Any])
-    if (startareas != null) __obj.updateDynamic("startareas")(startareas.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(allowTouch = allowTouch.asInstanceOf[js.Any], boundaries = boundaries.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], document = document.asInstanceOf[js.Any], intersect = intersect.asInstanceOf[js.Any], overlap = overlap.asInstanceOf[js.Any], scrolling = scrolling.asInstanceOf[js.Any], selectables = selectables.asInstanceOf[js.Any], singleTap = singleTap.asInstanceOf[js.Any], startThreshold = startThreshold.asInstanceOf[js.Any], startareas = startareas.asInstanceOf[js.Any])
+    __obj.updateDynamic("class")(`class`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SelectionOptions]
   }
+  
+  extension [Self <: SelectionOptions](x: Self) {
+    
+    inline def setAllowTouch(value: Boolean): Self = StObject.set(x, "allowTouch", value.asInstanceOf[js.Any])
+    
+    inline def setBoundaries(value: js.Array[String]): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
+    
+    inline def setBoundariesVarargs(value: String*): Self = StObject.set(x, "boundaries", js.Array(value*))
+    
+    inline def setClass(value: String): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    
+    inline def setContainer(value: String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    
+    inline def setContainerVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "container", js.Array(value*))
+    
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    
+    inline def setIntersect(value: Intersection): Self = StObject.set(x, "intersect", value.asInstanceOf[js.Any])
+    
+    inline def setOverlap(value: OverlapMode): Self = StObject.set(x, "overlap", value.asInstanceOf[js.Any])
+    
+    inline def setScrolling(value: Scrolling): Self = StObject.set(x, "scrolling", value.asInstanceOf[js.Any])
+    
+    inline def setSelectables(value: js.Array[String]): Self = StObject.set(x, "selectables", value.asInstanceOf[js.Any])
+    
+    inline def setSelectablesVarargs(value: String*): Self = StObject.set(x, "selectables", js.Array(value*))
+    
+    inline def setSingleTap(value: SingleTap): Self = StObject.set(x, "singleTap", value.asInstanceOf[js.Any])
+    
+    inline def setStartThreshold(value: Double | Coordinates): Self = StObject.set(x, "startThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setStartareas(value: js.Array[String]): Self = StObject.set(x, "startareas", value.asInstanceOf[js.Any])
+    
+    inline def setStartareasVarargs(value: String*): Self = StObject.set(x, "startareas", js.Array(value*))
+  }
 }
-

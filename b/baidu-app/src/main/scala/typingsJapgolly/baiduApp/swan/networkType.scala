@@ -1,8 +1,8 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 设备-----网络状态
 /* Rewritten from type alias, can be one of: 
@@ -13,22 +13,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.baiduApp.baiduAppStrings.unknown
   - typingsJapgolly.baiduApp.baiduAppStrings.none
 */
-trait networkType extends js.Object
-
+trait networkType extends StObject
 object networkType {
-  @scala.inline
-  def `2g`: typingsJapgolly.baiduApp.baiduAppStrings.`2g` = this.cast("2g")
-  @scala.inline
-  def `3g`: typingsJapgolly.baiduApp.baiduAppStrings.`3g` = this.cast("3g")
-  @scala.inline
-  def `4g`: typingsJapgolly.baiduApp.baiduAppStrings.`4g` = this.cast("4g")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def none: typingsJapgolly.baiduApp.baiduAppStrings.none = this.cast("none")
-  @scala.inline
-  def unknown: typingsJapgolly.baiduApp.baiduAppStrings.unknown = this.cast("unknown")
-  @scala.inline
-  def wifi: typingsJapgolly.baiduApp.baiduAppStrings.wifi = this.cast("wifi")
+  
+  inline def `2g`: typingsJapgolly.baiduApp.baiduAppStrings.`2g` = "2g".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.`2g`]
+  
+  inline def `3g`: typingsJapgolly.baiduApp.baiduAppStrings.`3g` = "3g".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.`3g`]
+  
+  inline def `4g`: typingsJapgolly.baiduApp.baiduAppStrings.`4g` = "4g".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.`4g`]
+  
+  inline def none: typingsJapgolly.baiduApp.baiduAppStrings.none = "none".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.none]
+  
+  inline def unknown: typingsJapgolly.baiduApp.baiduAppStrings.unknown = "unknown".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.unknown]
+  
+  inline def wifi: typingsJapgolly.baiduApp.baiduAppStrings.wifi = "wifi".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.wifi]
 }
-

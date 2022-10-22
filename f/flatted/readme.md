@@ -1,7 +1,7 @@
 
 # Scala.js typings for flatted
 
-Typings are for version 2.0.1
+Typings are for version 3.2.7
 
 ## Library description:
 A super light and fast circular JSON parser.
@@ -10,10 +10,10 @@ A super light and fast circular JSON parser.
 | ------------------ | :-------------: |
 | Full name          | flatted |
 | Keywords           | circular, JSON, fast, parser, minimal |
-| # releases         | 13 |
-| # dependents       | 128 |
-| # downloads        | 174590094 |
-| # stars            | 0 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 1.04925941E8 |
+| # stars            | 828.0 |
 
 ## Links
 - [Homepage](https://github.com/WebReflection/flatted#readme)

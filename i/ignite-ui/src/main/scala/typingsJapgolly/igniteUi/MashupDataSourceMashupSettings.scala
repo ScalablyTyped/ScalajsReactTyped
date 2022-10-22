@@ -1,40 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait MashupDataSourceMashupSettings
-  extends /**
-	 * Option for MashupDataSourceMashupSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * An array of $.ig.DataSource instances holding the disperse data.
-  	 */
-  var dataSource: js.UndefOr[js.Array[_]] = js.undefined
+    * An array of $.ig.DataSource instances holding the disperse data.
+    */
+  var dataSource: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Indicates whether to ignore records that have no corresponding data in all of the provided data sources.
-  	 */
+    * Indicates whether to ignore records that have no corresponding data in all of the provided data sources.
+    */
   var ignorePartialRecords: js.UndefOr[Boolean] = js.undefined
 }
-
 object MashupDataSourceMashupSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for MashupDataSourceMashupSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    dataSource: js.Array[_] = null,
-    ignorePartialRecords: js.UndefOr[Boolean] = js.undefined
-  ): MashupDataSourceMashupSettings = {
+  
+  inline def apply(): MashupDataSourceMashupSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignorePartialRecords)) __obj.updateDynamic("ignorePartialRecords")(ignorePartialRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[MashupDataSourceMashupSettings]
   }
+  
+  extension [Self <: MashupDataSourceMashupSettings](x: Self) {
+    
+    inline def setDataSource(value: js.Array[Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataSourceVarargs(value: Any*): Self = StObject.set(x, "dataSource", js.Array(value*))
+    
+    inline def setIgnorePartialRecords(value: Boolean): Self = StObject.set(x, "ignorePartialRecords", value.asInstanceOf[js.Any])
+    
+    inline def setIgnorePartialRecordsUndefined: Self = StObject.set(x, "ignorePartialRecords", js.undefined)
+  }
 }
-

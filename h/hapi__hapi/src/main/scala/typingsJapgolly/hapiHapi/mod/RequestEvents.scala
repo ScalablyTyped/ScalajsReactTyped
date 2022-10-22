@@ -3,17 +3,16 @@ package typingsJapgolly.hapiHapi.mod
 import typingsJapgolly.hapiHapi.hapiHapiStrings.disconnect
 import typingsJapgolly.hapiHapi.hapiHapiStrings.finish
 import typingsJapgolly.hapiHapi.hapiHapiStrings.peek
-import typingsJapgolly.hapiPodium.mod.Podium
+import typingsJapgolly.std.Parameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestEvents extends Podium {
-  @JSName("on")
-  def on_disconnect(criteria: disconnect, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
-  @JSName("on")
-  def on_finish(criteria: finish, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Podium * / any */ @js.native
+trait RequestEvents extends StObject {
+  
+  def on(criteria: finish | disconnect, listener: js.Function1[/* data */ Unit, Unit]): this.type = js.native
   /**
     * Access: read only and the public podium interface.
     * The request.events supports the following events:
@@ -23,11 +22,11 @@ trait RequestEvents extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestevents)
     */
   @JSName("on")
-  def on_peek(criteria: peek, listener: PeekListener): Unit = js.native
+  def on_peek(criteria: peek, listener: PeekListener): this.type = js.native
+  
+  def once(criteria: finish | disconnect, listener: js.Function1[/* data */ Unit, Unit]): this.type = js.native
   @JSName("once")
-  def once_disconnect(criteria: disconnect, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
-  @JSName("once")
-  def once_finish(criteria: finish, listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], Unit]): Unit = js.native
+  def once_peek(criteria: peek): js.Promise[Parameters[PeekListener]] = js.native
   /**
     * Access: read only and the public podium interface.
     * The request.events supports the following events:
@@ -37,6 +36,5 @@ trait RequestEvents extends Podium {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-requestevents)
     */
   @JSName("once")
-  def once_peek(criteria: peek, listener: PeekListener): Unit = js.native
+  def once_peek(criteria: peek, listener: PeekListener): this.type = js.native
 }
-

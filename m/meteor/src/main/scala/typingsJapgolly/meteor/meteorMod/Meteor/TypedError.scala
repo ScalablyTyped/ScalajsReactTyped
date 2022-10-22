@@ -1,16 +1,23 @@
 package typingsJapgolly.meteor.meteorMod.Meteor
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TypedError
-  extends typingsJapgolly.std.Error {
+  extends StObject
+     with typingsJapgolly.std.Error {
+  
   var errorType: String
 }
-
-@JSImport("meteor/meteor", "Meteor.TypedError")
-@js.native
-object TypedError extends TopLevel[TypedErrorStatic]
-
+object TypedError {
+  
+  @JSImport("meteor/meteor", "Meteor.TypedError")
+  @js.native
+  val ^ : TypedErrorStatic = js.native
+  
+  extension [Self <: TypedError](x: Self) {
+    
+    inline def setErrorType(value: String): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+  }
+}

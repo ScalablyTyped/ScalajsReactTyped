@@ -1,17 +1,20 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import typingsJapgolly.devextreme.AnonButtons
-import typingsJapgolly.devextreme.mod._Global_.JQueryPromise
-import typingsJapgolly.devextreme.mod._Global_.Promise
+import typingsJapgolly.devextreme.mod.DevExpress.core.utils.DxPromise
+import typingsJapgolly.devextreme.mod.DevExpress.ui.CustomDialogOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dialog")
-@js.native
-object dialog extends js.Object {
-  def alert(messageHtml: String, title: String): Promise[Unit] with JQueryPromise[Unit] = js.native
-  def confirm(messageHtml: String, title: String): Promise[Boolean] with JQueryPromise[Boolean] = js.native
-  def custom(options: AnonButtons): js.Any = js.native
+object dialog {
+  
+  @JSImport("devextreme", "default.ui.dialog")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def alert(messageHtml: String, title: String): DxPromise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[DxPromise[Unit]]
+  
+  inline def confirm(messageHtml: String, title: String): DxPromise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(messageHtml.asInstanceOf[js.Any], title.asInstanceOf[js.Any])).asInstanceOf[DxPromise[Boolean]]
+  
+  inline def custom(options: CustomDialogOptions): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

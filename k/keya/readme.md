@@ -1,7 +1,7 @@
 
 # Scala.js typings for keya
 
-Typings are for version 1.1.3
+Typings are for version 2.0.0
 
 ## Library description:
 A simple, universal document store
@@ -10,10 +10,10 @@ A simple, universal document store
 | ------------------ | :-------------: |
 | Full name          | keya |
 | Keywords           | - |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 1099 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 69.66666666666667 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/MayorMonty/keya#readme)

@@ -1,15 +1,35 @@
-package typingsJapgolly.evernote.mod
+package typingsJapgolly.evernote.mod.Types
 
+import typingsJapgolly.evernote.mod.Types.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Types {
-  type Guid = java.lang.String
-  type IdentityID = scala.Double
-  type InvalidationSequenceNumber = scala.Double
-  type MessageEventID = scala.Double
-  type MessageThreadID = scala.Double
-  type Timestamp = scala.Double
-  type UserID = scala.Double
-}
+
+inline def CLASSIFICATION_RECIPE_SERVICE_RECIPE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASSIFICATION_RECIPE_SERVICE_RECIPE").asInstanceOf[String]
+
+inline def CLASSIFICATION_RECIPE_USER_NON_RECIPE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASSIFICATION_RECIPE_USER_NON_RECIPE").asInstanceOf[String]
+
+inline def CLASSIFICATION_RECIPE_USER_RECIPE: String = ^.asInstanceOf[js.Dynamic].selectDynamic("CLASSIFICATION_RECIPE_USER_RECIPE").asInstanceOf[String]
+
+inline def EDAM_NOTE_SOURCE_MAIL_CLIP: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EDAM_NOTE_SOURCE_MAIL_CLIP").asInstanceOf[String]
+
+inline def EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EDAM_NOTE_SOURCE_MAIL_SMTP_GATEWAY").asInstanceOf[String]
+
+inline def EDAM_NOTE_SOURCE_WEB_CLIP: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EDAM_NOTE_SOURCE_WEB_CLIP").asInstanceOf[String]
+
+inline def EDAM_NOTE_SOURCE_WEB_CLIP_SIMPLIFIED: String = ^.asInstanceOf[js.Dynamic].selectDynamic("EDAM_NOTE_SOURCE_WEB_CLIP_SIMPLIFIED").asInstanceOf[String]
+
+type Guid = String
+
+type IdentityID = Double
+
+type InvalidationSequenceNumber = Double
+
+type MessageEventID = Double
+
+type MessageThreadID = Double
+
+type Timestamp = Double
+
+type UserID = Double

@@ -1,32 +1,46 @@
 package typingsJapgolly.ssh2.mod
 
-import typingsJapgolly.node.NodeJS.ProcessEnv
-import typingsJapgolly.ssh2.ssh2Booleans.`true`
+import typingsJapgolly.node.processMod.global.NodeJS.ProcessEnv
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExecOptions extends js.Object {
+trait ExecOptions extends StObject {
+  
+  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
+  
   /** An environment to use for the execution of the command. */
   var env: js.UndefOr[ProcessEnv] = js.undefined
+  
   /** Set to `true` to allocate a pseudo-tty with defaults, or an object containing specific pseudo-tty settings. */
-  var pty: js.UndefOr[`true` | PseudoTtyOptions] = js.undefined
+  var pty: js.UndefOr[PseudoTtyOptions | Boolean] = js.undefined
+  
   /** Set either to `true` to use defaults, a number to specify a specific screen number, or an object containing x11 settings. */
-  var x11: js.UndefOr[Boolean | Double | X11Options] = js.undefined
+  var x11: js.UndefOr[X11Options | Double | Boolean] = js.undefined
 }
-
 object ExecOptions {
-  @scala.inline
-  def apply(
-    env: ProcessEnv = null,
-    pty: `true` | PseudoTtyOptions = null,
-    x11: Boolean | Double | X11Options = null
-  ): ExecOptions = {
+  
+  inline def apply(): ExecOptions = {
     val __obj = js.Dynamic.literal()
-    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
-    if (pty != null) __obj.updateDynamic("pty")(pty.asInstanceOf[js.Any])
-    if (x11 != null) __obj.updateDynamic("x11")(x11.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecOptions]
   }
+  
+  extension [Self <: ExecOptions](x: Self) {
+    
+    inline def setAllowHalfOpen(value: Boolean): Self = StObject.set(x, "allowHalfOpen", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHalfOpenUndefined: Self = StObject.set(x, "allowHalfOpen", js.undefined)
+    
+    inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    
+    inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+    
+    inline def setPty(value: PseudoTtyOptions | Boolean): Self = StObject.set(x, "pty", value.asInstanceOf[js.Any])
+    
+    inline def setPtyUndefined: Self = StObject.set(x, "pty", js.undefined)
+    
+    inline def setX11(value: X11Options | Double | Boolean): Self = StObject.set(x, "x11", value.asInstanceOf[js.Any])
+    
+    inline def setX11Undefined: Self = StObject.set(x, "x11", js.undefined)
+  }
 }
-

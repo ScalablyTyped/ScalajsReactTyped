@@ -2,19 +2,17 @@ package typingsJapgolly.rsocketTcpServer
 
 import typingsJapgolly.rsocketCore.rsocketencodingMod.Encoders
 import typingsJapgolly.rsocketTcpServer.rsockettcpserverMod.ServerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rsocket-tcp-server", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("rsocket-tcp-server", JSImport.Default)
   @js.native
-  class default protected ()
+  open class default protected ()
     extends typingsJapgolly.rsocketTcpServer.rsockettcpserverMod.default {
     def this(options: ServerOptions) = this()
-    def this(options: ServerOptions, encoders: Encoders[_]) = this()
+    def this(options: ServerOptions, encoders: Encoders[Any]) = this()
   }
-  
 }
-

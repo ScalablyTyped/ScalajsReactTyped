@@ -1,12 +1,15 @@
 package typingsJapgolly.angularCore.mod
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkipSelfDecorator extends Instantiable0[SkipSelf] {
+trait SkipSelfDecorator
+  extends StObject
+     with Instantiable0[SkipSelf] {
+  
   /**
     * Parameter decorator to be used on constructor parameters,
     * which tells the DI framework to start dependency resolution from the parent injector.
@@ -21,13 +24,10 @@ trait SkipSelfDecorator extends Instantiable0[SkipSelf] {
     * <code-example path="core/di/ts/metadata_spec.ts" region="SkipSelf">
     * </code-example>
     *
-    * Learn more in the
-    * [Dependency Injection guide](guide/dependency-injection-in-action#skip).
-    *
+    * @see [Dependency Injection guide](guide/dependency-injection-in-action#skip).
     * @see `Self`
     * @see `Optional`
     *
     */
-  def apply(): js.Any = js.native
+  def apply(): Any = js.native
 }
-

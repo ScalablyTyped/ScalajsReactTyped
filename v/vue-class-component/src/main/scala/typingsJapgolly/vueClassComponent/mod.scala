@@ -1,58 +1,70 @@
 package typingsJapgolly.vueClassComponent
 
 import typingsJapgolly.std.ThisType
-import typingsJapgolly.vue.optionsMod.ComponentOptions
-import typingsJapgolly.vue.optionsMod.DefaultComputed
-import typingsJapgolly.vue.optionsMod.DefaultData
-import typingsJapgolly.vue.optionsMod.DefaultMethods
-import typingsJapgolly.vue.optionsMod.DefaultProps
-import typingsJapgolly.vue.optionsMod.PropsDefinition
-import typingsJapgolly.vue.vueMod.Vue
-import typingsJapgolly.vueClassComponent.declarationsMod.VueClass
-import typingsJapgolly.vueClassComponent.utilMod.VueDecorator
+import typingsJapgolly.vueClassComponent.libDeclarationsMod.VueClass
+import typingsJapgolly.vueClassComponent.libUtilMod.MixedVueClass
+import typingsJapgolly.vueClassComponent.libUtilMod.VueDecorator
+import typingsJapgolly.vueRuntimeCore.mod.ComponentOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vue-class-component", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def createDecorator(
+object mod {
+  
+  @JSImport("vue-class-component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  object default {
+    
+    inline def apply[V /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any */](options: (ComponentOptions[V, Any, Any, Any, Any, Any, Any, Any]) & ThisType[V]): js.Function1[/* target */ VueClass[V], VueClass[V]] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ VueClass[V], VueClass[V]]]
+    inline def apply[VC /* <: VueClass[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+      ] */](target: VC): VC = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[VC]
+    
+    @JSImport("vue-class-component", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("vue-class-component", "default.registerHooks")
+    @js.native
+    def registerHooks: js.Function1[/* keys */ js.Array[String], Unit] = js.native
+    inline def registerHooks_=(x: js.Function1[/* keys */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerHooks")(x.asInstanceOf[js.Any])
+  }
+  
+  inline def createDecorator(
     factory: js.Function3[
       /* options */ ComponentOptions[
-        Vue, 
-        DefaultData[Vue], 
-        DefaultMethods[Vue], 
-        DefaultComputed, 
-        PropsDefinition[DefaultProps], 
-        DefaultProps
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any, 
+        Any, 
+        Any, 
+        Any, 
+        Any, 
+        Any, 
+        Any, 
+        Any
       ], 
       /* key */ String, 
       /* index */ Double, 
       Unit
     ]
-  ): VueDecorator = js.native
-  def mixins[A](CtorA: VueClass[A]): VueClass[A] = js.native
-  def mixins[T](Ctors: VueClass[Vue]*): VueClass[T] = js.native
-  def mixins[A, B](CtorA: VueClass[A], CtorB: VueClass[B]): VueClass[A with B] = js.native
-  def mixins[A, B, C](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C]): VueClass[A with B with C] = js.native
-  def mixins[A, B, C, D](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C], CtorD: VueClass[D]): VueClass[A with B with C with D] = js.native
-  def mixins[A, B, C, D, E](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C], CtorD: VueClass[D], CtorE: VueClass[E]): VueClass[A with B with C with D with E] = js.native
-  @js.native
-  object default extends js.Object {
-    var registerHooks: js.Function1[/* keys */ js.Array[String], Unit] = js.native
-    def apply[V /* <: Vue */](
-      options: (ComponentOptions[
-          V, 
-          DefaultData[V], 
-          DefaultMethods[V], 
-          DefaultComputed, 
-          PropsDefinition[DefaultProps], 
-          DefaultProps
-        ]) with ThisType[V]
-    ): js.Function1[/* target */ VueClass[V], VueClass[V]] = js.native
-    def apply[VC /* <: VueClass[Vue] */](target: VC): VC = js.native
-  }
+  ): VueDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("createDecorator")(factory.asInstanceOf[js.Any]).asInstanceOf[VueDecorator]
   
+  inline def mixins[A](CtorA: VueClass[A]): VueClass[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(CtorA.asInstanceOf[js.Any]).asInstanceOf[VueClass[A]]
+  inline def mixins[T /* <: js.Array[
+    VueClass[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ]
+  ] */](
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param Ctors because its type T is not an array type */ Ctors: T
+  ): MixedVueClass[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(Ctors.asInstanceOf[js.Any]).asInstanceOf[MixedVueClass[T]]
+  inline def mixins[T](
+    Ctors: (VueClass[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Vue */ Any
+    ])*
+  ): VueClass[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(Ctors.asInstanceOf[Seq[js.Any]]*).asInstanceOf[VueClass[T]]
+  inline def mixins[A, B](CtorA: VueClass[A], CtorB: VueClass[B]): VueClass[A & B] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(CtorA.asInstanceOf[js.Any], CtorB.asInstanceOf[js.Any])).asInstanceOf[VueClass[A & B]]
+  inline def mixins[A, B, C](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C]): VueClass[A & B & C] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(CtorA.asInstanceOf[js.Any], CtorB.asInstanceOf[js.Any], CtorC.asInstanceOf[js.Any])).asInstanceOf[VueClass[A & B & C]]
+  inline def mixins[A, B, C, D](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C], CtorD: VueClass[D]): VueClass[A & B & C & D] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(CtorA.asInstanceOf[js.Any], CtorB.asInstanceOf[js.Any], CtorC.asInstanceOf[js.Any], CtorD.asInstanceOf[js.Any])).asInstanceOf[VueClass[A & B & C & D]]
+  inline def mixins[A, B, C, D, E](CtorA: VueClass[A], CtorB: VueClass[B], CtorC: VueClass[C], CtorD: VueClass[D], CtorE: VueClass[E]): VueClass[A & B & C & D & E] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixins")(CtorA.asInstanceOf[js.Any], CtorB.asInstanceOf[js.Any], CtorC.asInstanceOf[js.Any], CtorD.asInstanceOf[js.Any], CtorE.asInstanceOf[js.Any])).asInstanceOf[VueClass[A & B & C & D & E]]
 }
-

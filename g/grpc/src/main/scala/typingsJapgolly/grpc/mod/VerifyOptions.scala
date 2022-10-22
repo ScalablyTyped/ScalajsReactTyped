@@ -1,26 +1,28 @@
 package typingsJapgolly.grpc.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VerifyOptions extends js.Object {
+trait VerifyOptions extends StObject {
+  
   /**
     * If set, this callback will be invoked after the usual hostname verification
     * has been performed on the peer certificate.
     */
   var checkServerIdentity: js.UndefOr[CheckServerIdentityCallback] = js.undefined
 }
-
 object VerifyOptions {
-  @scala.inline
-  def apply(
-    checkServerIdentity: (/* hostname */ String, /* cert */ Certificate) => CallbackTo[js.UndefOr[js.Error]] = null
-  ): VerifyOptions = {
+  
+  inline def apply(): VerifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(js.Any.fromFunction2((t0: /* hostname */ java.lang.String, t1: /* cert */ typingsJapgolly.grpc.mod.Certificate) => checkServerIdentity(t0, t1).runNow()))
     __obj.asInstanceOf[VerifyOptions]
   }
+  
+  extension [Self <: VerifyOptions](x: Self) {
+    
+    inline def setCheckServerIdentity(value: (/* hostname */ String, /* cert */ Certificate) => js.UndefOr[js.Error]): Self = StObject.set(x, "checkServerIdentity", js.Any.fromFunction2(value))
+    
+    inline def setCheckServerIdentityUndefined: Self = StObject.set(x, "checkServerIdentity", js.undefined)
+  }
 }
-

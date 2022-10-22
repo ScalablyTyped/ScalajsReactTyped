@@ -1,10 +1,11 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAccordionConfig extends js.Object {
+trait IAccordionConfig extends StObject {
+  
   /**
     * Controls whether expanding an item will cause the other items to close.
     *
@@ -12,13 +13,17 @@ trait IAccordionConfig extends js.Object {
     */
   var closeOthers: js.UndefOr[Boolean] = js.undefined
 }
-
 object IAccordionConfig {
-  @scala.inline
-  def apply(closeOthers: js.UndefOr[Boolean] = js.undefined): IAccordionConfig = {
+  
+  inline def apply(): IAccordionConfig = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(closeOthers)) __obj.updateDynamic("closeOthers")(closeOthers.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAccordionConfig]
   }
+  
+  extension [Self <: IAccordionConfig](x: Self) {
+    
+    inline def setCloseOthers(value: Boolean): Self = StObject.set(x, "closeOthers", value.asInstanceOf[js.Any])
+    
+    inline def setCloseOthersUndefined: Self = StObject.set(x, "closeOthers", js.undefined)
+  }
 }
-

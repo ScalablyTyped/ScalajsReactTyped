@@ -2,31 +2,45 @@ package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.IAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IBitmapDecoder extends js.Object {
+trait IBitmapDecoder extends StObject {
+  
   var bitmapContainerProperties: BitmapPropertiesView
+  
   var decoderInformation: BitmapCodecInformation
+  
   var frameCount: Double
+  
   def getFrameAsync(frameIndex: Double): IAsyncOperation[BitmapFrame]
+  
   def getPreviewAsync(): IAsyncOperation[ImageStream]
 }
-
 object IBitmapDecoder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bitmapContainerProperties: BitmapPropertiesView,
     decoderInformation: BitmapCodecInformation,
     frameCount: Double,
-    getFrameAsync: Double => CallbackTo[IAsyncOperation[BitmapFrame]],
+    getFrameAsync: Double => IAsyncOperation[BitmapFrame],
     getPreviewAsync: CallbackTo[IAsyncOperation[ImageStream]]
   ): IBitmapDecoder = {
-    val __obj = js.Dynamic.literal(bitmapContainerProperties = bitmapContainerProperties.asInstanceOf[js.Any], decoderInformation = decoderInformation.asInstanceOf[js.Any], frameCount = frameCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("getFrameAsync")(js.Any.fromFunction1((t0: scala.Double) => getFrameAsync(t0).runNow()))
-    __obj.updateDynamic("getPreviewAsync")(getPreviewAsync.toJsFn)
+    val __obj = js.Dynamic.literal(bitmapContainerProperties = bitmapContainerProperties.asInstanceOf[js.Any], decoderInformation = decoderInformation.asInstanceOf[js.Any], frameCount = frameCount.asInstanceOf[js.Any], getFrameAsync = js.Any.fromFunction1(getFrameAsync), getPreviewAsync = getPreviewAsync.toJsFn)
     __obj.asInstanceOf[IBitmapDecoder]
   }
+  
+  extension [Self <: IBitmapDecoder](x: Self) {
+    
+    inline def setBitmapContainerProperties(value: BitmapPropertiesView): Self = StObject.set(x, "bitmapContainerProperties", value.asInstanceOf[js.Any])
+    
+    inline def setDecoderInformation(value: BitmapCodecInformation): Self = StObject.set(x, "decoderInformation", value.asInstanceOf[js.Any])
+    
+    inline def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
+    
+    inline def setGetFrameAsync(value: Double => IAsyncOperation[BitmapFrame]): Self = StObject.set(x, "getFrameAsync", js.Any.fromFunction1(value))
+    
+    inline def setGetPreviewAsync(value: CallbackTo[IAsyncOperation[ImageStream]]): Self = StObject.set(x, "getPreviewAsync", value.toJsFn)
+  }
 }
-

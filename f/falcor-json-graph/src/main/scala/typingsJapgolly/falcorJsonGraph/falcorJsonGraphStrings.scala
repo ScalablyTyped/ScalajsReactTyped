@@ -1,24 +1,20 @@
 package typingsJapgolly.falcorJsonGraph
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object falcorJsonGraphStrings {
-  @js.native
-  sealed trait atom extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait atom extends StObject
+  inline def atom: atom = "atom".asInstanceOf[atom]
   
   @js.native
-  sealed trait reference extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
-  @scala.inline
-  def atom: atom = "atom".asInstanceOf[atom]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
+  @js.native
+  sealed trait reference extends StObject
+  inline def reference: reference = "reference".asInstanceOf[reference]
 }
-

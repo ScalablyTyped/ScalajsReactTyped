@@ -1,69 +1,54 @@
 package typingsJapgolly.reactLifecycleComponent.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ErrorInfo
 import typingsJapgolly.reactLifecycleComponent.mod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LifecycleComponent {
-  def apply(
-    component: ComponentClassP[js.Any with js.Object],
-    UNSAFE_componentWillMount: js.UndefOr[Callback] = js.undefined,
-    UNSAFE_componentWillReceiveProps: (js.Any, /* nextContext */ js.Any) => Callback = null,
-    UNSAFE_componentWillUpdate: (js.Any, js.Any, /* nextContext */ js.Any) => Callback = null,
-    componentDidCatch: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Callback = null,
-    componentDidMount: js.UndefOr[Callback] = js.undefined,
-    componentDidUpdate: (js.Any, js.Any, /* snapshot */ js.UndefOr[js.Any]) => Callback = null,
-    componentWillMount: js.UndefOr[Callback] = js.undefined,
-    componentWillReceiveProps: (js.Any, /* nextContext */ js.Any) => Callback = null,
-    componentWillUnmount: js.UndefOr[Callback] = js.undefined,
-    componentWillUpdate: (js.Any, js.Any, /* nextContext */ js.Any) => Callback = null,
-    getSnapshotBeforeUpdate: (js.Any, js.Any) => CallbackTo[js.Any | Null] = null,
-    shouldComponentUpdate: (js.Any, js.Any, /* nextContext */ js.Any) => CallbackTo[Boolean] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    Props[js.Any, js.Any], 
-    typingsJapgolly.reactLifecycleComponent.mod.LifecycleComponent, 
-    Unit, 
-    Props[js.Any, js.Any]
-  ] = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
   
-      UNSAFE_componentWillMount.foreach(p => __obj.updateDynamic("UNSAFE_componentWillMount")(p.toJsFn))
-    if (UNSAFE_componentWillReceiveProps != null) __obj.updateDynamic("UNSAFE_componentWillReceiveProps")(js.Any.fromFunction2((t0: js.Any, t1: /* nextContext */ js.Any) => UNSAFE_componentWillReceiveProps(t0, t1).runNow()))
-    if (UNSAFE_componentWillUpdate != null) __obj.updateDynamic("UNSAFE_componentWillUpdate")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: /* nextContext */ js.Any) => UNSAFE_componentWillUpdate(t0, t1, t2).runNow()))
-    if (componentDidCatch != null) __obj.updateDynamic("componentDidCatch")(js.Any.fromFunction2((t0: /* error */ js.Error, t1: /* errorInfo */ typingsJapgolly.react.mod.ErrorInfo) => componentDidCatch(t0, t1).runNow()))
-    componentDidMount.foreach(p => __obj.updateDynamic("componentDidMount")(p.toJsFn))
-    if (componentDidUpdate != null) __obj.updateDynamic("componentDidUpdate")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: /* snapshot */ js.UndefOr[js.Any]) => componentDidUpdate(t0, t1, t2).runNow()))
-    componentWillMount.foreach(p => __obj.updateDynamic("componentWillMount")(p.toJsFn))
-    if (componentWillReceiveProps != null) __obj.updateDynamic("componentWillReceiveProps")(js.Any.fromFunction2((t0: js.Any, t1: /* nextContext */ js.Any) => componentWillReceiveProps(t0, t1).runNow()))
-    componentWillUnmount.foreach(p => __obj.updateDynamic("componentWillUnmount")(p.toJsFn))
-    if (componentWillUpdate != null) __obj.updateDynamic("componentWillUpdate")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: /* nextContext */ js.Any) => componentWillUpdate(t0, t1, t2).runNow()))
-    if (getSnapshotBeforeUpdate != null) __obj.updateDynamic("getSnapshotBeforeUpdate")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => getSnapshotBeforeUpdate(t0, t1).runNow()))
-    if (shouldComponentUpdate != null) __obj.updateDynamic("shouldComponentUpdate")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: /* nextContext */ js.Any) => shouldComponentUpdate(t0, t1, t2).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactLifecycleComponent.mod.Props[js.Any, js.Any], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactLifecycleComponent.mod.LifecycleComponent](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactLifecycleComponent.mod.Props[js.Any, js.Any]])(children: _*)
+  inline def apply(component: ComponentClassP[Any & js.Object]): Builder = {
+    val __props = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[Props[Any, Any]]))
   }
+  
   @JSImport("react-lifecycle-component", "LifecycleComponent")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactLifecycleComponent.mod.LifecycleComponent] {
+    
+    inline def UNSAFE_componentWillMount(value: Callback): this.type = set("UNSAFE_componentWillMount", value.toJsFn)
+    
+    inline def UNSAFE_componentWillReceiveProps(value: (Any, /* nextContext */ Any) => Callback): this.type = set("UNSAFE_componentWillReceiveProps", js.Any.fromFunction2((t0: Any, t1: /* nextContext */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def UNSAFE_componentWillUpdate(value: (Any, Any, /* nextContext */ Any) => Callback): this.type = set("UNSAFE_componentWillUpdate", js.Any.fromFunction3((t0: Any, t1: Any, t2: /* nextContext */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def componentDidCatch(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Callback): this.type = set("componentDidCatch", js.Any.fromFunction2((t0: /* error */ js.Error, t1: /* errorInfo */ ErrorInfo) => (value(t0, t1)).runNow()))
+    
+    inline def componentDidMount(value: Callback): this.type = set("componentDidMount", value.toJsFn)
+    
+    inline def componentDidUpdate(value: (Any, Any, /* snapshot */ js.UndefOr[Any]) => Callback): this.type = set("componentDidUpdate", js.Any.fromFunction3((t0: Any, t1: Any, t2: /* snapshot */ js.UndefOr[Any]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def componentWillMount(value: Callback): this.type = set("componentWillMount", value.toJsFn)
+    
+    inline def componentWillReceiveProps(value: (Any, /* nextContext */ Any) => Callback): this.type = set("componentWillReceiveProps", js.Any.fromFunction2((t0: Any, t1: /* nextContext */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def componentWillUnmount(value: Callback): this.type = set("componentWillUnmount", value.toJsFn)
+    
+    inline def componentWillUpdate(value: (Any, Any, /* nextContext */ Any) => Callback): this.type = set("componentWillUpdate", js.Any.fromFunction3((t0: Any, t1: Any, t2: /* nextContext */ Any) => (value(t0, t1, t2)).runNow()))
+    
+    inline def getSnapshotBeforeUpdate(value: (Any, Any) => Any | Null): this.type = set("getSnapshotBeforeUpdate", js.Any.fromFunction2(value))
+    
+    inline def shouldComponentUpdate(value: (Any, Any, /* nextContext */ Any) => Boolean): this.type = set("shouldComponentUpdate", js.Any.fromFunction3(value))
+  }
+  
+  def withProps(p: Props[Any, Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

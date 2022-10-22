@@ -1,18 +1,26 @@
 package typingsJapgolly.blueprintjsCore.mod
 
+import typingsJapgolly.blueprintjsCore.libEsmComponentsHotkeysKeyComboMod.KeyComboTagProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "KeyCombo")
 @js.native
-class KeyCombo ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.KeyCombo
-
-/* static members */
-@JSImport("@blueprintjs/core", "KeyCombo")
-@js.native
-object KeyCombo extends js.Object {
-  var displayName: String = js.native
+open class KeyCombo protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.KeyCombo {
+  def this(props: KeyComboTagProps) = this()
+  def this(props: KeyComboTagProps, context: Any) = this()
 }
-
+/* static members */
+object KeyCombo {
+  
+  @JSImport("@blueprintjs/core", "KeyCombo")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "KeyCombo.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

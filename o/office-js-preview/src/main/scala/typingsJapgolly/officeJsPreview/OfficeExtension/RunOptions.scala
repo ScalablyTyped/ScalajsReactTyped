@@ -1,32 +1,40 @@
 package typingsJapgolly.officeJsPreview.OfficeExtension
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RunOptions[T] extends js.Object {
+trait RunOptions[T] extends StObject {
+  
   /**
-    *  A previously-created context, or API object, or array of objects. 
-    * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up 
+    *  A previously-created context, or API object, or array of objects.
+    * The batch will use the same RequestContext as the passed-in object, which means that any changes applied to the object will be picked up
     * by `context.sync()`.
     */
   var previousObjects: js.UndefOr[ClientObject | js.Array[ClientObject] | ClientRequestContext] = js.undefined
+  
   /**
     * The URL of the remote workbook and the request headers to be sent.
     */
   var session: js.UndefOr[RequestUrlAndHeaderInfo | T] = js.undefined
 }
-
 object RunOptions {
-  @scala.inline
-  def apply[T](
-    previousObjects: ClientObject | js.Array[ClientObject] | ClientRequestContext = null,
-    session: RequestUrlAndHeaderInfo | T = null
-  ): RunOptions[T] = {
+  
+  inline def apply[T](): RunOptions[T] = {
     val __obj = js.Dynamic.literal()
-    if (previousObjects != null) __obj.updateDynamic("previousObjects")(previousObjects.asInstanceOf[js.Any])
-    if (session != null) __obj.updateDynamic("session")(session.asInstanceOf[js.Any])
     __obj.asInstanceOf[RunOptions[T]]
   }
+  
+  extension [Self <: RunOptions[?], T](x: Self & RunOptions[T]) {
+    
+    inline def setPreviousObjects(value: ClientObject | js.Array[ClientObject] | ClientRequestContext): Self = StObject.set(x, "previousObjects", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousObjectsUndefined: Self = StObject.set(x, "previousObjects", js.undefined)
+    
+    inline def setPreviousObjectsVarargs(value: ClientObject*): Self = StObject.set(x, "previousObjects", js.Array(value*))
+    
+    inline def setSession(value: RequestUrlAndHeaderInfo | T): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    
+    inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+  }
 }
-

@@ -1,47 +1,70 @@
 package typingsJapgolly.angularMaterial.mod.angularAugmentingMod.material
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IProgressCircularConfig extends js.Object {
+trait IProgressCircularConfig extends StObject {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var durationIndeterminate: js.UndefOr[Double] = js.undefined
+  
   var easeFn: js.UndefOr[
     js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
   ] = js.undefined
+  
   var easeFnIndeterminate: js.UndefOr[
     js.Function4[/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double, Double]
   ] = js.undefined
+  
   var endIndeterminate: js.UndefOr[Double] = js.undefined
+  
   var progressSize: js.UndefOr[Double] = js.undefined
+  
   var startIndeterminate: js.UndefOr[Double] = js.undefined
+  
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object IProgressCircularConfig {
-  @scala.inline
-  def apply(
-    duration: Int | Double = null,
-    durationIndeterminate: Int | Double = null,
-    easeFn: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => CallbackTo[Double] = null,
-    easeFnIndeterminate: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => CallbackTo[Double] = null,
-    endIndeterminate: Int | Double = null,
-    progressSize: Int | Double = null,
-    startIndeterminate: Int | Double = null,
-    strokeWidth: Int | Double = null
-  ): IProgressCircularConfig = {
+  
+  inline def apply(): IProgressCircularConfig = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (durationIndeterminate != null) __obj.updateDynamic("durationIndeterminate")(durationIndeterminate.asInstanceOf[js.Any])
-    if (easeFn != null) __obj.updateDynamic("easeFn")(js.Any.fromFunction4((t0: /* t */ scala.Double, t1: /* b */ scala.Double, t2: /* c */ scala.Double, t3: /* d */ scala.Double) => easeFn(t0, t1, t2, t3).runNow()))
-    if (easeFnIndeterminate != null) __obj.updateDynamic("easeFnIndeterminate")(js.Any.fromFunction4((t0: /* t */ scala.Double, t1: /* b */ scala.Double, t2: /* c */ scala.Double, t3: /* d */ scala.Double) => easeFnIndeterminate(t0, t1, t2, t3).runNow()))
-    if (endIndeterminate != null) __obj.updateDynamic("endIndeterminate")(endIndeterminate.asInstanceOf[js.Any])
-    if (progressSize != null) __obj.updateDynamic("progressSize")(progressSize.asInstanceOf[js.Any])
-    if (startIndeterminate != null) __obj.updateDynamic("startIndeterminate")(startIndeterminate.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProgressCircularConfig]
   }
+  
+  extension [Self <: IProgressCircularConfig](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationIndeterminate(value: Double): Self = StObject.set(x, "durationIndeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setDurationIndeterminateUndefined: Self = StObject.set(x, "durationIndeterminate", js.undefined)
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEaseFn(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFn", js.Any.fromFunction4(value))
+    
+    inline def setEaseFnIndeterminate(value: (/* t */ Double, /* b */ Double, /* c */ Double, /* d */ Double) => Double): Self = StObject.set(x, "easeFnIndeterminate", js.Any.fromFunction4(value))
+    
+    inline def setEaseFnIndeterminateUndefined: Self = StObject.set(x, "easeFnIndeterminate", js.undefined)
+    
+    inline def setEaseFnUndefined: Self = StObject.set(x, "easeFn", js.undefined)
+    
+    inline def setEndIndeterminate(value: Double): Self = StObject.set(x, "endIndeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setEndIndeterminateUndefined: Self = StObject.set(x, "endIndeterminate", js.undefined)
+    
+    inline def setProgressSize(value: Double): Self = StObject.set(x, "progressSize", value.asInstanceOf[js.Any])
+    
+    inline def setProgressSizeUndefined: Self = StObject.set(x, "progressSize", js.undefined)
+    
+    inline def setStartIndeterminate(value: Double): Self = StObject.set(x, "startIndeterminate", value.asInstanceOf[js.Any])
+    
+    inline def setStartIndeterminateUndefined: Self = StObject.set(x, "startIndeterminate", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

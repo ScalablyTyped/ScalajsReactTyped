@@ -1,12 +1,18 @@
 package typingsJapgolly.reactMapGl.mod
 
-import typingsJapgolly.react.mod.Component
+import typingsJapgolly.react.mod.PureComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-map-gl", "Layer")
 @js.native
-class Layer ()
-  extends Component[LayerProps, js.Object, js.Any]
-
+open class Layer protected ()
+  extends PureComponent[LayerProps, js.Object, Any] {
+  def this(props: LayerProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: LayerProps, context: Any) = this()
+}

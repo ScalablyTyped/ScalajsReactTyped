@@ -1,29 +1,28 @@
 package typingsJapgolly.youtube.YT
 
-import typingsJapgolly.youtube.youtubeNumbers.`0`
-import typingsJapgolly.youtube.youtubeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.youtube.youtubeNumbers.`0`
-  - typingsJapgolly.youtube.youtubeNumbers.`1`
-*/
-trait AutoPlay extends js.Object
-
-object AutoPlay {
+@js.native
+sealed trait AutoPlay extends StObject
+@JSGlobal("YT.AutoPlay")
+@js.native
+object AutoPlay extends StObject {
+  
   /**
-  		 * Video will autoplay when loaded.
-  		 */
-  @scala.inline
-  def AutoPlay: `1` = this.cast(1)
+    * Video will autoplay when loaded.
+    */
+  @js.native
+  sealed trait AutoPlay
+    extends StObject
+       with typingsJapgolly.youtube.YT.AutoPlay
+  
   /**
-  		 * Video does not autoplay.
-  		 */
-  @scala.inline
-  def NoAutoPlay: `0` = this.cast(0)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+    * Video does not autoplay.
+    */
+  @js.native
+  sealed trait NoAutoPlay
+    extends StObject
+       with typingsJapgolly.youtube.YT.AutoPlay
 }
-

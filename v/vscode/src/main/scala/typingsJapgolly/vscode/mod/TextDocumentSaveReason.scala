@@ -1,45 +1,43 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextDocumentSaveReason extends js.Object
-
+sealed trait TextDocumentSaveReason extends StObject
 @JSImport("vscode", "TextDocumentSaveReason")
 @js.native
-object TextDocumentSaveReason extends js.Object {
-  /**
-  		 * Automatic after a delay.
-  		 */
-  @js.native
-  sealed trait AfterDelay extends TextDocumentSaveReason
-  
-  /**
-  		 * When the editor lost focus.
-  		 */
-  @js.native
-  sealed trait FocusOut extends TextDocumentSaveReason
-  
-  /**
-  		 * Manually triggered, e.g. by the user pressing save, by starting debugging,
-  		 * or by an API call.
-  		 */
-  @js.native
-  sealed trait Manual extends TextDocumentSaveReason
+object TextDocumentSaveReason extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextDocumentSaveReason with Double] = js.native
-  /* 2 */ @js.native
-  object AfterDelay extends TopLevel[AfterDelay with Double]
+  def apply(value: Double): js.UndefOr[TextDocumentSaveReason & Double] = js.native
   
-  /* 3 */ @js.native
-  object FocusOut extends TopLevel[FocusOut with Double]
+  /**
+    * Automatic after a delay.
+    */
+  @js.native
+  sealed trait AfterDelay
+    extends StObject
+       with TextDocumentSaveReason
+  /* 2 */ val AfterDelay: typingsJapgolly.vscode.mod.TextDocumentSaveReason.AfterDelay & Double = js.native
   
-  /* 1 */ @js.native
-  object Manual extends TopLevel[Manual with Double]
+  /**
+    * When the editor lost focus.
+    */
+  @js.native
+  sealed trait FocusOut
+    extends StObject
+       with TextDocumentSaveReason
+  /* 3 */ val FocusOut: typingsJapgolly.vscode.mod.TextDocumentSaveReason.FocusOut & Double = js.native
   
+  /**
+    * Manually triggered, e.g. by the user pressing save, by starting debugging,
+    * or by an API call.
+    */
+  @js.native
+  sealed trait Manual
+    extends StObject
+       with TextDocumentSaveReason
+  /* 1 */ val Manual: typingsJapgolly.vscode.mod.TextDocumentSaveReason.Manual & Double = js.native
 }
-

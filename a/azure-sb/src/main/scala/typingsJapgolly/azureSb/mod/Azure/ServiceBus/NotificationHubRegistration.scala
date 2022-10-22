@@ -1,44 +1,77 @@
 package typingsJapgolly.azureSb.mod.Azure.ServiceBus
 
+import typingsJapgolly.azureSb.anon.ContentRootElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotificationHubRegistration extends js.Object {
-  var BodyTemplate: js.UndefOr[js.Any] = js.undefined
+trait NotificationHubRegistration extends StObject {
+  
+  var BodyTemplate: js.UndefOr[Any] = js.undefined
+  
   var ChannelUri: js.UndefOr[String] = js.undefined
+  
   var DeviceToken: js.UndefOr[String] = js.undefined
+  
   var Expiry: js.UndefOr[js.Date] = js.undefined
-  var MpnsHeaders: js.UndefOr[js.Any] = js.undefined
+  
+  var GcmRegistrationId: js.UndefOr[String] = js.undefined
+  
+  var MpnsHeaders: js.UndefOr[Any] = js.undefined
+  
   var RegistrationId: String
+  
   var Tags: js.UndefOr[String] = js.undefined
-  var WnsHeaders: js.UndefOr[js.Any] = js.undefined
-  var gcmRegistrationId: js.UndefOr[String] = js.undefined
+  
+  var WnsHeaders: js.UndefOr[Any] = js.undefined
+  
+  @JSName("_")
+  var _underscore: ContentRootElement
 }
-
 object NotificationHubRegistration {
-  @scala.inline
-  def apply(
-    RegistrationId: String,
-    BodyTemplate: js.Any = null,
-    ChannelUri: String = null,
-    DeviceToken: String = null,
-    Expiry: js.Date = null,
-    MpnsHeaders: js.Any = null,
-    Tags: String = null,
-    WnsHeaders: js.Any = null,
-    gcmRegistrationId: String = null
-  ): NotificationHubRegistration = {
+  
+  inline def apply(RegistrationId: String, _underscore: ContentRootElement): NotificationHubRegistration = {
     val __obj = js.Dynamic.literal(RegistrationId = RegistrationId.asInstanceOf[js.Any])
-    if (BodyTemplate != null) __obj.updateDynamic("BodyTemplate")(BodyTemplate.asInstanceOf[js.Any])
-    if (ChannelUri != null) __obj.updateDynamic("ChannelUri")(ChannelUri.asInstanceOf[js.Any])
-    if (DeviceToken != null) __obj.updateDynamic("DeviceToken")(DeviceToken.asInstanceOf[js.Any])
-    if (Expiry != null) __obj.updateDynamic("Expiry")(Expiry.asInstanceOf[js.Any])
-    if (MpnsHeaders != null) __obj.updateDynamic("MpnsHeaders")(MpnsHeaders.asInstanceOf[js.Any])
-    if (Tags != null) __obj.updateDynamic("Tags")(Tags.asInstanceOf[js.Any])
-    if (WnsHeaders != null) __obj.updateDynamic("WnsHeaders")(WnsHeaders.asInstanceOf[js.Any])
-    if (gcmRegistrationId != null) __obj.updateDynamic("gcmRegistrationId")(gcmRegistrationId.asInstanceOf[js.Any])
+    __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationHubRegistration]
   }
+  
+  extension [Self <: NotificationHubRegistration](x: Self) {
+    
+    inline def setBodyTemplate(value: Any): Self = StObject.set(x, "BodyTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setBodyTemplateUndefined: Self = StObject.set(x, "BodyTemplate", js.undefined)
+    
+    inline def setChannelUri(value: String): Self = StObject.set(x, "ChannelUri", value.asInstanceOf[js.Any])
+    
+    inline def setChannelUriUndefined: Self = StObject.set(x, "ChannelUri", js.undefined)
+    
+    inline def setDeviceToken(value: String): Self = StObject.set(x, "DeviceToken", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceTokenUndefined: Self = StObject.set(x, "DeviceToken", js.undefined)
+    
+    inline def setExpiry(value: js.Date): Self = StObject.set(x, "Expiry", value.asInstanceOf[js.Any])
+    
+    inline def setExpiryUndefined: Self = StObject.set(x, "Expiry", js.undefined)
+    
+    inline def setGcmRegistrationId(value: String): Self = StObject.set(x, "GcmRegistrationId", value.asInstanceOf[js.Any])
+    
+    inline def setGcmRegistrationIdUndefined: Self = StObject.set(x, "GcmRegistrationId", js.undefined)
+    
+    inline def setMpnsHeaders(value: Any): Self = StObject.set(x, "MpnsHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setMpnsHeadersUndefined: Self = StObject.set(x, "MpnsHeaders", js.undefined)
+    
+    inline def setRegistrationId(value: String): Self = StObject.set(x, "RegistrationId", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: String): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    
+    inline def setWnsHeaders(value: Any): Self = StObject.set(x, "WnsHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setWnsHeadersUndefined: Self = StObject.set(x, "WnsHeaders", js.undefined)
+    
+    inline def set_underscore(value: ContentRootElement): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+  }
 }
-

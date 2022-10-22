@@ -1,23 +1,17 @@
 package typingsJapgolly.phaser.spine.webgl
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VertexAttributeType extends js.Object
-
+sealed trait VertexAttributeType extends StObject
 @JSGlobal("spine.webgl.VertexAttributeType")
 @js.native
-object VertexAttributeType extends js.Object {
+object VertexAttributeType extends StObject {
+  
   @js.native
-  sealed trait Float extends VertexAttributeType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VertexAttributeType with Double] = js.native
-  /* 0 */ @js.native
-  object Float extends TopLevel[Float with Double]
-  
+  sealed trait Float
+    extends StObject
+       with VertexAttributeType
 }
-

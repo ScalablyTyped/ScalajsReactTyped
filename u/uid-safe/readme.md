@@ -10,10 +10,10 @@ URL and cookie safe UIDs
 | ------------------ | :-------------: |
 | Full name          | uid-safe |
 | Keywords           | random, generator, uid, safe |
-| # releases         | 1 |
-| # dependents       | 160 |
-| # downloads        | 46565775 |
-| # stars            | 15 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6956243.0 |
+| # stars            | 138.0 |
 
 ## Links
 - [Homepage](https://github.com/crypto-utils/uid-safe#readme)

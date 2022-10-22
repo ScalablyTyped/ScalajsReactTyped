@@ -1,33 +1,48 @@
 package typingsJapgolly.reactNativeJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceOptions extends js.Object {
+trait ReferenceOptions extends StObject {
+  
+  var default: js.UndefOr[Any] = js.undefined
+  
   var contextPrefix: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
+  
   var functions: js.UndefOr[Boolean] = js.undefined
+  
   var separator: js.UndefOr[String] = js.undefined
+  
   var strict: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReferenceOptions {
-  @scala.inline
-  def apply(
-    contextPrefix: String = null,
-    default: js.Any = null,
-    functions: js.UndefOr[Boolean] = js.undefined,
-    separator: String = null,
-    strict: js.UndefOr[Boolean] = js.undefined
-  ): ReferenceOptions = {
+  
+  inline def apply(): ReferenceOptions = {
     val __obj = js.Dynamic.literal()
-    if (contextPrefix != null) __obj.updateDynamic("contextPrefix")(contextPrefix.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (!js.isUndefined(functions)) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
-    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
-    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceOptions]
   }
+  
+  extension [Self <: ReferenceOptions](x: Self) {
+    
+    inline def setContextPrefix(value: String): Self = StObject.set(x, "contextPrefix", value.asInstanceOf[js.Any])
+    
+    inline def setContextPrefixUndefined: Self = StObject.set(x, "contextPrefix", js.undefined)
+    
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setFunctions(value: Boolean): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+  }
 }
-

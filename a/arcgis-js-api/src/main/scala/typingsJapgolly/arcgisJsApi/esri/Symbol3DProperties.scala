@@ -1,36 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Symbol3DProperties extends SymbolProperties {
+trait Symbol3DProperties
+  extends StObject
+     with SymbolProperties {
+  
   /**
-    * The origin of the style from which the symbol was originally referenced. A reference to the style origin can be either by styleName or by styleUrl (but not both). This information is part of the WebScene persistence model and may be used to understand where a symbol was originally sourced from. It does not affect actual appearance or rendering of the symbol.
+    * The origin of the style from which the symbol was originally referenced.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#styleOrigin)
     */
   var styleOrigin: js.UndefOr[Symbol3DStyleOrigin] = js.undefined
+  
   /**
-    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature. Individual symbol layers may be autocast as objects and specified using the `type` property.
+    * A Collection of [Symbol3DLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3DLayer.html) objects used to visualize the graphic or feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol3D.html#symbolLayers)
     */
   var symbolLayers: js.UndefOr[CollectionProperties[Symbol3DLayerProperties]] = js.undefined
 }
-
 object Symbol3DProperties {
-  @scala.inline
-  def apply(
-    color: Color_ | js.Array[Double] | String = null,
-    styleOrigin: Symbol3DStyleOrigin = null,
-    symbolLayers: CollectionProperties[Symbol3DLayerProperties] = null
-  ): Symbol3DProperties = {
+  
+  inline def apply(): Symbol3DProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (styleOrigin != null) __obj.updateDynamic("styleOrigin")(styleOrigin.asInstanceOf[js.Any])
-    if (symbolLayers != null) __obj.updateDynamic("symbolLayers")(symbolLayers.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol3DProperties]
   }
+  
+  extension [Self <: Symbol3DProperties](x: Self) {
+    
+    inline def setStyleOrigin(value: Symbol3DStyleOrigin): Self = StObject.set(x, "styleOrigin", value.asInstanceOf[js.Any])
+    
+    inline def setStyleOriginUndefined: Self = StObject.set(x, "styleOrigin", js.undefined)
+    
+    inline def setSymbolLayers(value: CollectionProperties[Symbol3DLayerProperties]): Self = StObject.set(x, "symbolLayers", value.asInstanceOf[js.Any])
+    
+    inline def setSymbolLayersUndefined: Self = StObject.set(x, "symbolLayers", js.undefined)
+    
+    inline def setSymbolLayersVarargs(value: Symbol3DLayerProperties*): Self = StObject.set(x, "symbolLayers", js.Array(value*))
+  }
 }
-

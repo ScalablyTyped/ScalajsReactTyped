@@ -1,12 +1,11 @@
 package typingsJapgolly.promisifyNode
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("promisify-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
     * Public API for Promisify.  Will resolve modules names using `require`.
     *
@@ -15,14 +14,20 @@ object mod extends js.Object {
     * @param {Boolean} noMutate - Optional set to true to avoid mutating the target.
     * @returns {*} exports - The resolved value from require or passed in value.
     */
-  def apply(name: String): js.Any = js.native
-  def apply(name: String, test: js.Function): js.Any = js.native
-  def apply(name: String, test: js.Function, noMutate: Boolean): js.Any = js.native
-  def apply(name: js.Function): js.Any = js.native
-  def apply(name: js.Function, test: js.Function): js.Any = js.native
-  def apply(name: js.Function, test: js.Function, noMutate: Boolean): js.Any = js.native
-  def apply(name: js.Object): js.Any = js.native
-  def apply(name: js.Object, test: js.Function): js.Any = js.native
-  def apply(name: js.Object, test: js.Function, noMutate: Boolean): js.Any = js.native
+  inline def apply(name: String): Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(name: String, test: js.Function): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: String, test: js.Function, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: String, test: Unit, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Function): Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(name: js.Function, test: js.Function): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Function, test: js.Function, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Function, test: Unit, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Object): Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(name: js.Object, test: js.Function): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Object, test: js.Function, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: js.Object, test: Unit, noMutate: Boolean): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], test.asInstanceOf[js.Any], noMutate.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("promisify-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

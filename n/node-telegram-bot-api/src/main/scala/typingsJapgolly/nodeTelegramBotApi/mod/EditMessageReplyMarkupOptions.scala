@@ -1,23 +1,36 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditMessageReplyMarkupOptions extends js.Object {
+trait EditMessageReplyMarkupOptions extends StObject {
+  
   var chat_id: js.UndefOr[Double | String] = js.undefined
+  
   var inline_message_id: js.UndefOr[String] = js.undefined
+  
   var message_id: js.UndefOr[Double] = js.undefined
 }
-
 object EditMessageReplyMarkupOptions {
-  @scala.inline
-  def apply(chat_id: Double | String = null, inline_message_id: String = null, message_id: Int | Double = null): EditMessageReplyMarkupOptions = {
+  
+  inline def apply(): EditMessageReplyMarkupOptions = {
     val __obj = js.Dynamic.literal()
-    if (chat_id != null) __obj.updateDynamic("chat_id")(chat_id.asInstanceOf[js.Any])
-    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id.asInstanceOf[js.Any])
-    if (message_id != null) __obj.updateDynamic("message_id")(message_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditMessageReplyMarkupOptions]
   }
+  
+  extension [Self <: EditMessageReplyMarkupOptions](x: Self) {
+    
+    inline def setChat_id(value: Double | String): Self = StObject.set(x, "chat_id", value.asInstanceOf[js.Any])
+    
+    inline def setChat_idUndefined: Self = StObject.set(x, "chat_id", js.undefined)
+    
+    inline def setInline_message_id(value: String): Self = StObject.set(x, "inline_message_id", value.asInstanceOf[js.Any])
+    
+    inline def setInline_message_idUndefined: Self = StObject.set(x, "inline_message_id", js.undefined)
+    
+    inline def setMessage_id(value: Double): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    
+    inline def setMessage_idUndefined: Self = StObject.set(x, "message_id", js.undefined)
+  }
 }
-

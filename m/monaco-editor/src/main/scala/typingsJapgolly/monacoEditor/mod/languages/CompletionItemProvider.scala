@@ -1,48 +1,60 @@
 package typingsJapgolly.monacoEditor.mod.languages
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.monacoEditor.mod.CancellationToken
 import typingsJapgolly.monacoEditor.mod.Position
 import typingsJapgolly.monacoEditor.mod.editor.ITextModel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CompletionItemProvider extends js.Object {
+trait CompletionItemProvider extends StObject {
+  
   /**
-    * Given a completion item fill in more data, like [doc-comment](#CompletionItem.documentation)
-    * or [details](#CompletionItem.detail).
+    * Provide completion items for the given position and document.
+    */
+  def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList]
+  
+  /**
+    * Given a completion item fill in more data, like {@link CompletionItem.documentation doc-comment}
+    * or {@link CompletionItem.detail details}.
     *
     * The editor will only resolve a completion item once.
     */
   var resolveCompletionItem: js.UndefOr[
-    js.Function4[
-      /* model */ ITextModel, 
-      /* position */ Position, 
+    js.Function2[
       /* item */ CompletionItem, 
       /* token */ CancellationToken, 
       ProviderResult[CompletionItem]
     ]
   ] = js.undefined
+  
   var triggerCharacters: js.UndefOr[js.Array[String]] = js.undefined
-  /**
-    * Provide completion items for the given position and document.
-    */
-  def provideCompletionItems(model: ITextModel, position: Position, context: CompletionContext, token: CancellationToken): ProviderResult[CompletionList]
 }
-
 object CompletionItemProvider {
-  @scala.inline
-  def apply(
-    provideCompletionItems: (ITextModel, Position, CompletionContext, CancellationToken) => CallbackTo[ProviderResult[CompletionList]],
-    resolveCompletionItem: (/* model */ ITextModel, /* position */ Position, /* item */ CompletionItem, /* token */ CancellationToken) => CallbackTo[ProviderResult[CompletionItem]] = null,
-    triggerCharacters: js.Array[String] = null
+  
+  inline def apply(
+    provideCompletionItems: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]
   ): CompletionItemProvider = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("provideCompletionItems")(js.Any.fromFunction4((t0: typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: typingsJapgolly.monacoEditor.mod.Position, t2: typingsJapgolly.monacoEditor.mod.languages.CompletionContext, t3: typingsJapgolly.monacoEditor.mod.CancellationToken) => provideCompletionItems(t0, t1, t2, t3).runNow()))
-    if (resolveCompletionItem != null) __obj.updateDynamic("resolveCompletionItem")(js.Any.fromFunction4((t0: /* model */ typingsJapgolly.monacoEditor.mod.editor.ITextModel, t1: /* position */ typingsJapgolly.monacoEditor.mod.Position, t2: /* item */ typingsJapgolly.monacoEditor.mod.languages.CompletionItem, t3: /* token */ typingsJapgolly.monacoEditor.mod.CancellationToken) => resolveCompletionItem(t0, t1, t2, t3).runNow()))
-    if (triggerCharacters != null) __obj.updateDynamic("triggerCharacters")(triggerCharacters.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(provideCompletionItems = js.Any.fromFunction4(provideCompletionItems))
     __obj.asInstanceOf[CompletionItemProvider]
   }
+  
+  extension [Self <: CompletionItemProvider](x: Self) {
+    
+    inline def setProvideCompletionItems(
+      value: (ITextModel, Position, CompletionContext, CancellationToken) => ProviderResult[CompletionList]
+    ): Self = StObject.set(x, "provideCompletionItems", js.Any.fromFunction4(value))
+    
+    inline def setResolveCompletionItem(
+      value: (/* item */ CompletionItem, /* token */ CancellationToken) => ProviderResult[CompletionItem]
+    ): Self = StObject.set(x, "resolveCompletionItem", js.Any.fromFunction2(value))
+    
+    inline def setResolveCompletionItemUndefined: Self = StObject.set(x, "resolveCompletionItem", js.undefined)
+    
+    inline def setTriggerCharacters(value: js.Array[String]): Self = StObject.set(x, "triggerCharacters", value.asInstanceOf[js.Any])
+    
+    inline def setTriggerCharactersUndefined: Self = StObject.set(x, "triggerCharacters", js.undefined)
+    
+    inline def setTriggerCharactersVarargs(value: String*): Self = StObject.set(x, "triggerCharacters", js.Array(value*))
+  }
 }
-

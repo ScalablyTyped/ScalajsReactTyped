@@ -1,9 +1,8 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A widget that displays one or more "keys" around a text "value". The possible keys include an
@@ -25,57 +24,86 @@ import scala.scalajs.js.annotation._
   *         .setMultiline(true)
   *         .setBottomLabel("Bottom label - single line");
   */
-trait KeyValue extends js.Object {
+trait KeyValue extends StObject {
+  
   def setAuthorizationAction(action: AuthorizationAction): KeyValue
+  
   def setBottomLabel(text: String): KeyValue
+  
   def setButton(button: Button): KeyValue
+  
   def setComposeAction(action: Action, composedEmailType: ComposedEmailType): KeyValue
+  
   def setContent(text: String): KeyValue
+  
   def setIcon(icon: Icon): KeyValue
+  
   def setIconAltText(altText: String): KeyValue
+  
   def setIconUrl(url: String): KeyValue
+  
   def setMultiline(multiline: Boolean): KeyValue
+  
   def setOnClickAction(action: Action): KeyValue
+  
   def setOnClickOpenLinkAction(action: Action): KeyValue
+  
   def setOpenLink(openLink: OpenLink): KeyValue
+  
   def setSwitch(switchToSet: Switch): KeyValue
+  
   def setTopLabel(text: String): KeyValue
 }
-
 object KeyValue {
-  @scala.inline
-  def apply(
-    setAuthorizationAction: AuthorizationAction => CallbackTo[KeyValue],
-    setBottomLabel: String => CallbackTo[KeyValue],
-    setButton: Button => CallbackTo[KeyValue],
-    setComposeAction: (Action, ComposedEmailType) => CallbackTo[KeyValue],
-    setContent: String => CallbackTo[KeyValue],
-    setIcon: Icon => CallbackTo[KeyValue],
-    setIconAltText: String => CallbackTo[KeyValue],
-    setIconUrl: String => CallbackTo[KeyValue],
-    setMultiline: Boolean => CallbackTo[KeyValue],
-    setOnClickAction: Action => CallbackTo[KeyValue],
-    setOnClickOpenLinkAction: Action => CallbackTo[KeyValue],
-    setOpenLink: OpenLink => CallbackTo[KeyValue],
-    setSwitch: Switch => CallbackTo[KeyValue],
-    setTopLabel: String => CallbackTo[KeyValue]
+  
+  inline def apply(
+    setAuthorizationAction: AuthorizationAction => KeyValue,
+    setBottomLabel: String => KeyValue,
+    setButton: Button => KeyValue,
+    setComposeAction: (Action, ComposedEmailType) => KeyValue,
+    setContent: String => KeyValue,
+    setIcon: Icon => KeyValue,
+    setIconAltText: String => KeyValue,
+    setIconUrl: String => KeyValue,
+    setMultiline: Boolean => KeyValue,
+    setOnClickAction: Action => KeyValue,
+    setOnClickOpenLinkAction: Action => KeyValue,
+    setOpenLink: OpenLink => KeyValue,
+    setSwitch: Switch => KeyValue,
+    setTopLabel: String => KeyValue
   ): KeyValue = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("setAuthorizationAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.AuthorizationAction) => setAuthorizationAction(t0).runNow()))
-    __obj.updateDynamic("setBottomLabel")(js.Any.fromFunction1((t0: java.lang.String) => setBottomLabel(t0).runNow()))
-    __obj.updateDynamic("setButton")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Button) => setButton(t0).runNow()))
-    __obj.updateDynamic("setComposeAction")(js.Any.fromFunction2((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action, t1: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.ComposedEmailType) => setComposeAction(t0, t1).runNow()))
-    __obj.updateDynamic("setContent")(js.Any.fromFunction1((t0: java.lang.String) => setContent(t0).runNow()))
-    __obj.updateDynamic("setIcon")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Icon) => setIcon(t0).runNow()))
-    __obj.updateDynamic("setIconAltText")(js.Any.fromFunction1((t0: java.lang.String) => setIconAltText(t0).runNow()))
-    __obj.updateDynamic("setIconUrl")(js.Any.fromFunction1((t0: java.lang.String) => setIconUrl(t0).runNow()))
-    __obj.updateDynamic("setMultiline")(js.Any.fromFunction1((t0: scala.Boolean) => setMultiline(t0).runNow()))
-    __obj.updateDynamic("setOnClickAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickAction(t0).runNow()))
-    __obj.updateDynamic("setOnClickOpenLinkAction")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Action) => setOnClickOpenLinkAction(t0).runNow()))
-    __obj.updateDynamic("setOpenLink")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenLink) => setOpenLink(t0).runNow()))
-    __obj.updateDynamic("setSwitch")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Switch) => setSwitch(t0).runNow()))
-    __obj.updateDynamic("setTopLabel")(js.Any.fromFunction1((t0: java.lang.String) => setTopLabel(t0).runNow()))
+    val __obj = js.Dynamic.literal(setAuthorizationAction = js.Any.fromFunction1(setAuthorizationAction), setBottomLabel = js.Any.fromFunction1(setBottomLabel), setButton = js.Any.fromFunction1(setButton), setComposeAction = js.Any.fromFunction2(setComposeAction), setContent = js.Any.fromFunction1(setContent), setIcon = js.Any.fromFunction1(setIcon), setIconAltText = js.Any.fromFunction1(setIconAltText), setIconUrl = js.Any.fromFunction1(setIconUrl), setMultiline = js.Any.fromFunction1(setMultiline), setOnClickAction = js.Any.fromFunction1(setOnClickAction), setOnClickOpenLinkAction = js.Any.fromFunction1(setOnClickOpenLinkAction), setOpenLink = js.Any.fromFunction1(setOpenLink), setSwitch = js.Any.fromFunction1(setSwitch), setTopLabel = js.Any.fromFunction1(setTopLabel))
     __obj.asInstanceOf[KeyValue]
   }
+  
+  extension [Self <: KeyValue](x: Self) {
+    
+    inline def setSetAuthorizationAction(value: AuthorizationAction => KeyValue): Self = StObject.set(x, "setAuthorizationAction", js.Any.fromFunction1(value))
+    
+    inline def setSetBottomLabel(value: String => KeyValue): Self = StObject.set(x, "setBottomLabel", js.Any.fromFunction1(value))
+    
+    inline def setSetButton(value: Button => KeyValue): Self = StObject.set(x, "setButton", js.Any.fromFunction1(value))
+    
+    inline def setSetComposeAction(value: (Action, ComposedEmailType) => KeyValue): Self = StObject.set(x, "setComposeAction", js.Any.fromFunction2(value))
+    
+    inline def setSetContent(value: String => KeyValue): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    
+    inline def setSetIcon(value: Icon => KeyValue): Self = StObject.set(x, "setIcon", js.Any.fromFunction1(value))
+    
+    inline def setSetIconAltText(value: String => KeyValue): Self = StObject.set(x, "setIconAltText", js.Any.fromFunction1(value))
+    
+    inline def setSetIconUrl(value: String => KeyValue): Self = StObject.set(x, "setIconUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetMultiline(value: Boolean => KeyValue): Self = StObject.set(x, "setMultiline", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickAction(value: Action => KeyValue): Self = StObject.set(x, "setOnClickAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOnClickOpenLinkAction(value: Action => KeyValue): Self = StObject.set(x, "setOnClickOpenLinkAction", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenLink(value: OpenLink => KeyValue): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    
+    inline def setSetSwitch(value: Switch => KeyValue): Self = StObject.set(x, "setSwitch", js.Any.fromFunction1(value))
+    
+    inline def setSetTopLabel(value: String => KeyValue): Self = StObject.set(x, "setTopLabel", js.Any.fromFunction1(value))
+  }
 }
-

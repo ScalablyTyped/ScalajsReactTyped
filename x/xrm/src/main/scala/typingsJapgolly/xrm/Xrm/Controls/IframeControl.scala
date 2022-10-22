@@ -2,18 +2,21 @@ package typingsJapgolly.xrm.Xrm.Controls
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLIFrameElement
+import org.scalajs.dom.HTMLIFrameElement
+import typingsJapgolly.xrm.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for an Iframe control.
   * @see {@link FramedControl}
   */
 trait IframeControl
-  extends FramedControl
+  extends StObject
+     with FramedControl
      with UiCanSetVisibleElement {
+  
   /**
     * Gets initial URL defined for the Iframe.
     * @returns The initial URL.
@@ -21,10 +24,10 @@ trait IframeControl
     */
   def getInitialUrl(): String
 }
-
 object IframeControl {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
+    getContentWindow: CallbackTo[js.Promise[Window]],
     getControlType: CallbackTo[ControlType | String],
     getInitialUrl: CallbackTo[String],
     getLabel: CallbackTo[String],
@@ -37,19 +40,12 @@ object IframeControl {
     setSrc: String => Callback,
     setVisible: Boolean => Callback
   ): IframeControl = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getControlType")(getControlType.toJsFn)
-    __obj.updateDynamic("getInitialUrl")(getInitialUrl.toJsFn)
-    __obj.updateDynamic("getLabel")(getLabel.toJsFn)
-    __obj.updateDynamic("getName")(getName.toJsFn)
-    __obj.updateDynamic("getObject")(getObject.toJsFn)
-    __obj.updateDynamic("getParent")(getParent.toJsFn)
-    __obj.updateDynamic("getSrc")(getSrc.toJsFn)
-    __obj.updateDynamic("getVisible")(getVisible.toJsFn)
-    __obj.updateDynamic("setLabel")(js.Any.fromFunction1((t0: java.lang.String) => setLabel(t0).runNow()))
-    __obj.updateDynamic("setSrc")(js.Any.fromFunction1((t0: java.lang.String) => setSrc(t0).runNow()))
-    __obj.updateDynamic("setVisible")(js.Any.fromFunction1((t0: scala.Boolean) => setVisible(t0).runNow()))
+    val __obj = js.Dynamic.literal(getContentWindow = getContentWindow.toJsFn, getControlType = getControlType.toJsFn, getInitialUrl = getInitialUrl.toJsFn, getLabel = getLabel.toJsFn, getName = getName.toJsFn, getObject = getObject.toJsFn, getParent = getParent.toJsFn, getSrc = getSrc.toJsFn, getVisible = getVisible.toJsFn, setLabel = js.Any.fromFunction1((t0: String) => setLabel(t0).runNow()), setSrc = js.Any.fromFunction1((t0: String) => setSrc(t0).runNow()), setVisible = js.Any.fromFunction1((t0: Boolean) => setVisible(t0).runNow()))
     __obj.asInstanceOf[IframeControl]
   }
+  
+  extension [Self <: IframeControl](x: Self) {
+    
+    inline def setGetInitialUrl(value: CallbackTo[String]): Self = StObject.set(x, "getInitialUrl", value.toJsFn)
+  }
 }
-

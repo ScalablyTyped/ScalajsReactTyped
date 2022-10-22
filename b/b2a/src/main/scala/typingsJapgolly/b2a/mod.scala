@@ -1,16 +1,29 @@
 package typingsJapgolly.b2a
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("b2a", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def atob(base64: String): String = js.native
+object mod {
+  
+  @JSImport("b2a", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def atob(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atob")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Converts base64url string back into original text
+    */
+  inline def atobu(base64: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("atobu")(base64.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   /**
     * Converts text into base64 string
     */
-  def btoa(text: String): String = js.native
+  inline def btoa(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoa")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  /**
+    * Converts text into base64url string
+    */
+  inline def btoau(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("btoau")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

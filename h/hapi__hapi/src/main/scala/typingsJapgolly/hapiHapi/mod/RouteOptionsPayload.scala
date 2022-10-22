@@ -1,15 +1,17 @@
 package typingsJapgolly.hapiHapi.mod
 
-import typingsJapgolly.hapiHapi.AnonOutput
+import typingsJapgolly.hapiHapi.anon.Output
 import typingsJapgolly.hapiHapi.hapiHapiBooleans.`false`
 import typingsJapgolly.hapiHapi.hapiHapiStrings.gunzip
 import typingsJapgolly.hapiHapi.mod.Lifecycle.FailAction
+import typingsJapgolly.hapiHapi.mod.Lifecycle.ReturnValue
 import typingsJapgolly.hapiHapi.mod.Util.Dictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteOptionsPayload extends js.Object {
+trait RouteOptionsPayload extends StObject {
+  
   /**
     * @default allows parsing of the following mime types:
     * * application/json
@@ -23,30 +25,35 @@ trait RouteOptionsPayload extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadallow)
     */
   var allow: js.UndefOr[String | js.Array[String]] = js.undefined
+  
   /**
     * @default none.
     * An object where each key is a content-encoding name and each value is an object with the desired decoder settings. Note that encoder settings are set in compression.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadcompression)
     */
   var compression: js.UndefOr[Dictionary[PayloadCompressionDecoderSettings]] = js.undefined
+  
   /**
     * @default 'application/json'.
     * The default content type if the 'Content-Type' request header is missing.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloaddefaultcontenttype)
     */
   var defaultContentType: js.UndefOr[String] = js.undefined
+  
   /**
     * @default 'error' (return a Bad Request (400) error response).
     * A failAction value which determines how to handle payload parsing errors.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadfailaction)
     */
   var failAction: js.UndefOr[FailAction] = js.undefined
+  
   /**
     * @default 1048576 (1MB).
     * Limits the size of incoming payloads to the specified byte count. Allowing very large payloads may cause the server to run out of memory.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmaxbytes)
     */
   var maxBytes: js.UndefOr[Double] = js.undefined
+  
   /**
     * @default none.
     * Overrides payload processing for multipart requests. Value can be one of:
@@ -59,7 +66,8 @@ trait RouteOptionsPayload extends js.Object {
     * * * * payload - the processed part payload.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadmultipart)
     */
-  var multipart: js.UndefOr[`false` | AnonOutput] = js.undefined
+  var multipart: js.UndefOr[`false` | Output] = js.undefined
+  
   /**
     * @default 'data'.
     * The processed payload format. The value must be one of:
@@ -75,12 +83,14 @@ trait RouteOptionsPayload extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadoutput)
     */
   var output: js.UndefOr[PayloadOutput] = js.undefined
+  
   /**
     * @default none.
     * A mime type string overriding the 'Content-Type' header value received.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadoverride)
     */
   var `override`: js.UndefOr[String] = js.undefined
+  
   /**
     * @default true.
     * Determines if the incoming payload is processed or presented raw. Available values:
@@ -91,6 +101,7 @@ trait RouteOptionsPayload extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadparse)
     */
   var parse: js.UndefOr[Boolean | gunzip] = js.undefined
+  
   /**
     * @default to 10000 (10 seconds).
     * Payload reception timeout in milliseconds. Sets the maximum time allowed for the client to transmit the request payload (body) before giving up and responding with a Request Timeout (408)
@@ -98,6 +109,7 @@ trait RouteOptionsPayload extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionspayloadtimeout)
     */
   var timeout: js.UndefOr[`false` | Double] = js.undefined
+  
   /**
     * @default os.tmpdir().
     * The directory used for writing file uploads.
@@ -105,35 +117,63 @@ trait RouteOptionsPayload extends js.Object {
     */
   var uploads: js.UndefOr[String] = js.undefined
 }
-
 object RouteOptionsPayload {
-  @scala.inline
-  def apply(
-    allow: String | js.Array[String] = null,
-    compression: Dictionary[PayloadCompressionDecoderSettings] = null,
-    defaultContentType: String = null,
-    failAction: FailAction = null,
-    maxBytes: Int | Double = null,
-    multipart: `false` | AnonOutput = null,
-    output: PayloadOutput = null,
-    `override`: String = null,
-    parse: Boolean | gunzip = null,
-    timeout: `false` | Double = null,
-    uploads: String = null
-  ): RouteOptionsPayload = {
+  
+  inline def apply(): RouteOptionsPayload = {
     val __obj = js.Dynamic.literal()
-    if (allow != null) __obj.updateDynamic("allow")(allow.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (defaultContentType != null) __obj.updateDynamic("defaultContentType")(defaultContentType.asInstanceOf[js.Any])
-    if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
-    if (maxBytes != null) __obj.updateDynamic("maxBytes")(maxBytes.asInstanceOf[js.Any])
-    if (multipart != null) __obj.updateDynamic("multipart")(multipart.asInstanceOf[js.Any])
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (`override` != null) __obj.updateDynamic("override")(`override`.asInstanceOf[js.Any])
-    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (uploads != null) __obj.updateDynamic("uploads")(uploads.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptionsPayload]
   }
+  
+  extension [Self <: RouteOptionsPayload](x: Self) {
+    
+    inline def setAllow(value: String | js.Array[String]): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
+    
+    inline def setAllowUndefined: Self = StObject.set(x, "allow", js.undefined)
+    
+    inline def setAllowVarargs(value: String*): Self = StObject.set(x, "allow", js.Array(value*))
+    
+    inline def setCompression(value: Dictionary[PayloadCompressionDecoderSettings]): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    
+    inline def setDefaultContentType(value: String): Self = StObject.set(x, "defaultContentType", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultContentTypeUndefined: Self = StObject.set(x, "defaultContentType", js.undefined)
+    
+    inline def setFailAction(value: FailAction): Self = StObject.set(x, "failAction", value.asInstanceOf[js.Any])
+    
+    inline def setFailActionFunction3(
+      value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[js.Error]) => ReturnValue
+    ): Self = StObject.set(x, "failAction", js.Any.fromFunction3(value))
+    
+    inline def setFailActionUndefined: Self = StObject.set(x, "failAction", js.undefined)
+    
+    inline def setMaxBytes(value: Double): Self = StObject.set(x, "maxBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxBytesUndefined: Self = StObject.set(x, "maxBytes", js.undefined)
+    
+    inline def setMultipart(value: `false` | Output): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+    
+    inline def setMultipartUndefined: Self = StObject.set(x, "multipart", js.undefined)
+    
+    inline def setOutput(value: PayloadOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    
+    inline def setOverride(value: String): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
+    
+    inline def setOverrideUndefined: Self = StObject.set(x, "override", js.undefined)
+    
+    inline def setParse(value: Boolean | gunzip): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    
+    inline def setTimeout(value: `false` | Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setUploads(value: String): Self = StObject.set(x, "uploads", value.asInstanceOf[js.Any])
+    
+    inline def setUploadsUndefined: Self = StObject.set(x, "uploads", js.undefined)
+  }
 }
-

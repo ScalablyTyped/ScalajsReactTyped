@@ -1,17 +1,19 @@
 package typingsJapgolly.ldapjs.mod
 
-import typingsJapgolly.ldapjs.AnonAttribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ldapjs", "LessThanEqualsFilter")
 @js.native
-class LessThanEqualsFilter protected () extends Filter {
-  def this(options: AnonAttribute) = this()
+open class LessThanEqualsFilter protected ()
+  extends StObject
+     with Filter {
+  def this(options: typingsJapgolly.ldapjs.anon.Attribute) = this()
+  
   /* CompleteClass */
-  override var `type`: String = js.native
+  override def matches(obj: Any): Boolean = js.native
+  
   /* CompleteClass */
-  override def matches(obj: js.Any): Boolean = js.native
+  var `type`: String = js.native
 }
-

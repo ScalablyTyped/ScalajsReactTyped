@@ -1,210 +1,440 @@
 package typingsJapgolly.vis.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.vis.AnonTemplate
+import typingsJapgolly.moment.mod.Moment
+import typingsJapgolly.moment.mod.MomentFormatSpecification
+import typingsJapgolly.moment.mod.MomentInput
+import typingsJapgolly.vis.anon.Template
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineOptions extends js.Object {
+trait TimelineOptions extends StObject {
+  
   var align: js.UndefOr[TimelineAlignType] = js.undefined
+  
   var autoResize: js.UndefOr[Boolean] = js.undefined
+  
   var clickToUse: js.UndefOr[Boolean] = js.undefined
+  
   var configure: js.UndefOr[TimelineOptionsConfigureType] = js.undefined
+  
   var dataAttributes: js.UndefOr[TimelineOptionsDataAttributesType] = js.undefined
+  
   var editable: js.UndefOr[TimelineOptionsEditableType] = js.undefined
+  
   var end: js.UndefOr[DateType] = js.undefined
+  
   var format: js.UndefOr[TimelineFormatOption] = js.undefined
+  
   var groupEditable: js.UndefOr[TimelineOptionsGroupEditableType] = js.undefined
+  
   var groupOrder: js.UndefOr[TimelineOptionsGroupOrderType] = js.undefined
+  
   var groupOrderSwap: js.UndefOr[TimelineOptionsGroupOrderSwapFunction] = js.undefined
+  
   var groupTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
+  
   var height: js.UndefOr[HeightWidthType] = js.undefined
+  
   var hiddenDates: js.UndefOr[TimelineOptionsHiddenDatesType] = js.undefined
+  
   var horizontalScroll: js.UndefOr[Boolean] = js.undefined
+  
   var itemsAlwaysDraggable: js.UndefOr[TimelineOptionsItemsAlwaysDraggableType] = js.undefined
+  
   var locale: js.UndefOr[String] = js.undefined
-  var locales: js.UndefOr[js.Any] = js.undefined
+  
+  var locales: js.UndefOr[Locales] = js.undefined
+  
   var margin: js.UndefOr[TimelineOptionsMarginType] = js.undefined
+  
   var max: js.UndefOr[DateType] = js.undefined
+  
   var maxHeight: js.UndefOr[HeightWidthType] = js.undefined
+  
   var maxMinorChars: js.UndefOr[Double] = js.undefined
+  
   var min: js.UndefOr[DateType] = js.undefined
+  
   var minHeight: js.UndefOr[HeightWidthType] = js.undefined
-   // TODO
+  
   var moment: js.UndefOr[MomentConstructor] = js.undefined
+  
   var moveable: js.UndefOr[Boolean] = js.undefined
+  
   var multiselect: js.UndefOr[Boolean] = js.undefined
+  
   var multiselectPerGroup: js.UndefOr[Boolean] = js.undefined
+  
   var onAdd: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
+  
   var onAddGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
+  
   var onInitialDrawComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   var onMove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
+  
   var onMoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
+  
   var onMoving: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
+  
   var onRemove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
+  
   var onRemoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
+  
   var onUpdate: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
+  
   var order: js.UndefOr[TimelineOptionsComparisonFunction] = js.undefined
+  
   var orientation: js.UndefOr[TimelineOptionsOrientationType] = js.undefined
+  
   var rollingMode: js.UndefOr[TimelineRollingModeOption] = js.undefined
+  
   var rtl: js.UndefOr[Boolean] = js.undefined
+  
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   var showCurrentTime: js.UndefOr[Boolean] = js.undefined
+  
   var showMajorLabels: js.UndefOr[Boolean] = js.undefined
+  
   var showMinorLabels: js.UndefOr[Boolean] = js.undefined
+  
   var showTooltips: js.UndefOr[Boolean] = js.undefined
+  
   var snap: js.UndefOr[TimelineOptionsSnapFunction] = js.undefined
+  
   var stack: js.UndefOr[Boolean] = js.undefined
+  
   var stackSubgroups: js.UndefOr[Boolean] = js.undefined
+  
   var start: js.UndefOr[DateType] = js.undefined
+  
   var template: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
+  
   var throttleRedraw: js.UndefOr[Double] = js.undefined
+  
   var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
+  
   var tooltip: js.UndefOr[TimelineTooltipOption] = js.undefined
-  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | AnonTemplate] = js.undefined
+  
+  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | Template] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
+  
   var verticalScroll: js.UndefOr[Boolean] = js.undefined
+  
   var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
+  
   var width: js.UndefOr[HeightWidthType] = js.undefined
+  
   var zoomKey: js.UndefOr[String] = js.undefined
+  
   var zoomMax: js.UndefOr[Double] = js.undefined
+  
   var zoomMin: js.UndefOr[Double] = js.undefined
+  
   var zoomable: js.UndefOr[Boolean] = js.undefined
 }
-
 object TimelineOptions {
-  @scala.inline
-  def apply(
-    align: TimelineAlignType = null,
-    autoResize: js.UndefOr[Boolean] = js.undefined,
-    clickToUse: js.UndefOr[Boolean] = js.undefined,
-    configure: TimelineOptionsConfigureType = null,
-    dataAttributes: TimelineOptionsDataAttributesType = null,
-    editable: TimelineOptionsEditableType = null,
-    end: DateType = null,
-    format: TimelineFormatOption = null,
-    groupEditable: TimelineOptionsGroupEditableType = null,
-    groupOrder: TimelineOptionsGroupOrderType = null,
-    groupOrderSwap: (/* fromGroup */ js.Any, /* toGroup */ js.Any, /* groups */ DataSet[DataGroup]) => japgolly.scalajs.react.Callback = null,
-    groupTemplate: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => CallbackTo[String] = null,
-    height: HeightWidthType = null,
-    hiddenDates: TimelineOptionsHiddenDatesType = null,
-    horizontalScroll: js.UndefOr[Boolean] = js.undefined,
-    itemsAlwaysDraggable: TimelineOptionsItemsAlwaysDraggableType = null,
-    locale: String = null,
-    locales: js.Any = null,
-    margin: TimelineOptionsMarginType = null,
-    max: DateType = null,
-    maxHeight: HeightWidthType = null,
-    maxMinorChars: Int | Double = null,
-    min: DateType = null,
-    minHeight: HeightWidthType = null,
-    moment: MomentConstructor = null,
-    moveable: js.UndefOr[Boolean] = js.undefined,
-    multiselect: js.UndefOr[Boolean] = js.undefined,
-    multiselectPerGroup: js.UndefOr[Boolean] = js.undefined,
-    onAdd: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onAddGroup: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onInitialDrawComplete: js.UndefOr[japgolly.scalajs.react.Callback] = js.undefined,
-    onMove: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onMoveGroup: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onMoving: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onRemove: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onRemoveGroup: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    onUpdate: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback = null,
-    order: (/* a */ js.Any, /* b */ js.Any) => CallbackTo[Double] = null,
-    orientation: TimelineOptionsOrientationType = null,
-    rollingMode: TimelineRollingModeOption = null,
-    rtl: js.UndefOr[Boolean] = js.undefined,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    showCurrentTime: js.UndefOr[Boolean] = js.undefined,
-    showMajorLabels: js.UndefOr[Boolean] = js.undefined,
-    showMinorLabels: js.UndefOr[Boolean] = js.undefined,
-    showTooltips: js.UndefOr[Boolean] = js.undefined,
-    snap: (/* date */ js.Date, /* scale */ String, /* step */ Double) => CallbackTo[js.Date | Double] = null,
-    stack: js.UndefOr[Boolean] = js.undefined,
-    stackSubgroups: js.UndefOr[Boolean] = js.undefined,
-    start: DateType = null,
-    template: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => CallbackTo[String] = null,
-    throttleRedraw: Int | Double = null,
-    timeAxis: TimelineTimeAxisOption = null,
-    tooltip: TimelineTooltipOption = null,
-    tooltipOnItemUpdateTime: Boolean | AnonTemplate = null,
-    `type`: String = null,
-    verticalScroll: js.UndefOr[Boolean] = js.undefined,
-    visibleFrameTemplate: (/* item */ js.UndefOr[js.Any], /* element */ js.UndefOr[js.Any], /* data */ js.UndefOr[js.Any]) => CallbackTo[String] = null,
-    width: HeightWidthType = null,
-    zoomKey: String = null,
-    zoomMax: Int | Double = null,
-    zoomMin: Int | Double = null,
-    zoomable: js.UndefOr[Boolean] = js.undefined
-  ): TimelineOptions = {
+  
+  inline def apply(): TimelineOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickToUse)) __obj.updateDynamic("clickToUse")(clickToUse.asInstanceOf[js.Any])
-    if (configure != null) __obj.updateDynamic("configure")(configure.asInstanceOf[js.Any])
-    if (dataAttributes != null) __obj.updateDynamic("dataAttributes")(dataAttributes.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (groupEditable != null) __obj.updateDynamic("groupEditable")(groupEditable.asInstanceOf[js.Any])
-    if (groupOrder != null) __obj.updateDynamic("groupOrder")(groupOrder.asInstanceOf[js.Any])
-    if (groupOrderSwap != null) __obj.updateDynamic("groupOrderSwap")(js.Any.fromFunction3((t0: /* fromGroup */ js.Any, t1: /* toGroup */ js.Any, t2: /* groups */ typingsJapgolly.vis.mod.DataSet[typingsJapgolly.vis.mod.DataGroup]) => groupOrderSwap(t0, t1, t2).runNow()))
-    if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(js.Any.fromFunction3((t0: /* item */ js.UndefOr[js.Any], t1: /* element */ js.UndefOr[js.Any], t2: /* data */ js.UndefOr[js.Any]) => groupTemplate(t0, t1, t2).runNow()))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (hiddenDates != null) __obj.updateDynamic("hiddenDates")(hiddenDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontalScroll)) __obj.updateDynamic("horizontalScroll")(horizontalScroll.asInstanceOf[js.Any])
-    if (itemsAlwaysDraggable != null) __obj.updateDynamic("itemsAlwaysDraggable")(itemsAlwaysDraggable.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (locales != null) __obj.updateDynamic("locales")(locales.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
-    if (maxMinorChars != null) __obj.updateDynamic("maxMinorChars")(maxMinorChars.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
-    if (moment != null) __obj.updateDynamic("moment")(moment.asInstanceOf[js.Any])
-    if (!js.isUndefined(moveable)) __obj.updateDynamic("moveable")(moveable.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiselectPerGroup)) __obj.updateDynamic("multiselectPerGroup")(multiselectPerGroup.asInstanceOf[js.Any])
-    if (onAdd != null) __obj.updateDynamic("onAdd")(js.Any.fromFunction2((t0: /* item */ typingsJapgolly.vis.mod.TimelineItem, t1: /* callback */ js.Function1[/* item */ typingsJapgolly.vis.mod.TimelineItem | scala.Null, scala.Unit]) => onAdd(t0, t1).runNow()))
-    if (onAddGroup != null) __obj.updateDynamic("onAddGroup")(js.Any.fromFunction2((t0: /* group */ typingsJapgolly.vis.mod.TimelineGroup, t1: /* callback */ js.Function1[/* group */ typingsJapgolly.vis.mod.TimelineGroup | scala.Null, scala.Unit]) => onAddGroup(t0, t1).runNow()))
-    onInitialDrawComplete.foreach(p => __obj.updateDynamic("onInitialDrawComplete")(p.toJsFn))
-    if (onMove != null) __obj.updateDynamic("onMove")(js.Any.fromFunction2((t0: /* item */ typingsJapgolly.vis.mod.TimelineItem, t1: /* callback */ js.Function1[/* item */ typingsJapgolly.vis.mod.TimelineItem | scala.Null, scala.Unit]) => onMove(t0, t1).runNow()))
-    if (onMoveGroup != null) __obj.updateDynamic("onMoveGroup")(js.Any.fromFunction2((t0: /* group */ typingsJapgolly.vis.mod.TimelineGroup, t1: /* callback */ js.Function1[/* group */ typingsJapgolly.vis.mod.TimelineGroup | scala.Null, scala.Unit]) => onMoveGroup(t0, t1).runNow()))
-    if (onMoving != null) __obj.updateDynamic("onMoving")(js.Any.fromFunction2((t0: /* item */ typingsJapgolly.vis.mod.TimelineItem, t1: /* callback */ js.Function1[/* item */ typingsJapgolly.vis.mod.TimelineItem | scala.Null, scala.Unit]) => onMoving(t0, t1).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction2((t0: /* item */ typingsJapgolly.vis.mod.TimelineItem, t1: /* callback */ js.Function1[/* item */ typingsJapgolly.vis.mod.TimelineItem | scala.Null, scala.Unit]) => onRemove(t0, t1).runNow()))
-    if (onRemoveGroup != null) __obj.updateDynamic("onRemoveGroup")(js.Any.fromFunction2((t0: /* group */ typingsJapgolly.vis.mod.TimelineGroup, t1: /* callback */ js.Function1[/* group */ typingsJapgolly.vis.mod.TimelineGroup | scala.Null, scala.Unit]) => onRemoveGroup(t0, t1).runNow()))
-    if (onUpdate != null) __obj.updateDynamic("onUpdate")(js.Any.fromFunction2((t0: /* item */ typingsJapgolly.vis.mod.TimelineItem, t1: /* callback */ js.Function1[/* item */ typingsJapgolly.vis.mod.TimelineItem | scala.Null, scala.Unit]) => onUpdate(t0, t1).runNow()))
-    if (order != null) __obj.updateDynamic("order")(js.Any.fromFunction2((t0: /* a */ js.Any, t1: /* b */ js.Any) => order(t0, t1).runNow()))
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (rollingMode != null) __obj.updateDynamic("rollingMode")(rollingMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCurrentTime)) __obj.updateDynamic("showCurrentTime")(showCurrentTime.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMajorLabels)) __obj.updateDynamic("showMajorLabels")(showMajorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showMinorLabels)) __obj.updateDynamic("showMinorLabels")(showMinorLabels.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTooltips)) __obj.updateDynamic("showTooltips")(showTooltips.asInstanceOf[js.Any])
-    if (snap != null) __obj.updateDynamic("snap")(js.Any.fromFunction3((t0: /* date */ js.Date, t1: /* scale */ java.lang.String, t2: /* step */ scala.Double) => snap(t0, t1, t2).runNow()))
-    if (!js.isUndefined(stack)) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (!js.isUndefined(stackSubgroups)) __obj.updateDynamic("stackSubgroups")(stackSubgroups.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(js.Any.fromFunction3((t0: /* item */ js.UndefOr[js.Any], t1: /* element */ js.UndefOr[js.Any], t2: /* data */ js.UndefOr[js.Any]) => template(t0, t1, t2).runNow()))
-    if (throttleRedraw != null) __obj.updateDynamic("throttleRedraw")(throttleRedraw.asInstanceOf[js.Any])
-    if (timeAxis != null) __obj.updateDynamic("timeAxis")(timeAxis.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (tooltipOnItemUpdateTime != null) __obj.updateDynamic("tooltipOnItemUpdateTime")(tooltipOnItemUpdateTime.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalScroll)) __obj.updateDynamic("verticalScroll")(verticalScroll.asInstanceOf[js.Any])
-    if (visibleFrameTemplate != null) __obj.updateDynamic("visibleFrameTemplate")(js.Any.fromFunction3((t0: /* item */ js.UndefOr[js.Any], t1: /* element */ js.UndefOr[js.Any], t2: /* data */ js.UndefOr[js.Any]) => visibleFrameTemplate(t0, t1, t2).runNow()))
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoomKey != null) __obj.updateDynamic("zoomKey")(zoomKey.asInstanceOf[js.Any])
-    if (zoomMax != null) __obj.updateDynamic("zoomMax")(zoomMax.asInstanceOf[js.Any])
-    if (zoomMin != null) __obj.updateDynamic("zoomMin")(zoomMin.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomable)) __obj.updateDynamic("zoomable")(zoomable.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineOptions]
   }
+  
+  extension [Self <: TimelineOptions](x: Self) {
+    
+    inline def setAlign(value: TimelineAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+    
+    inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+    
+    inline def setClickToUse(value: Boolean): Self = StObject.set(x, "clickToUse", value.asInstanceOf[js.Any])
+    
+    inline def setClickToUseUndefined: Self = StObject.set(x, "clickToUse", js.undefined)
+    
+    inline def setConfigure(value: TimelineOptionsConfigureType): Self = StObject.set(x, "configure", value.asInstanceOf[js.Any])
+    
+    inline def setConfigureFunction2(value: (/* option */ String, /* path */ js.Array[String]) => Boolean): Self = StObject.set(x, "configure", js.Any.fromFunction2(value))
+    
+    inline def setConfigureUndefined: Self = StObject.set(x, "configure", js.undefined)
+    
+    inline def setDataAttributes(value: TimelineOptionsDataAttributesType): Self = StObject.set(x, "dataAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setDataAttributesUndefined: Self = StObject.set(x, "dataAttributes", js.undefined)
+    
+    inline def setDataAttributesVarargs(value: String*): Self = StObject.set(x, "dataAttributes", js.Array(value*))
+    
+    inline def setEditable(value: TimelineOptionsEditableType): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEnd(value: DateType): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setFormat(value: TimelineFormatOption): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGroupEditable(value: TimelineOptionsGroupEditableType): Self = StObject.set(x, "groupEditable", value.asInstanceOf[js.Any])
+    
+    inline def setGroupEditableUndefined: Self = StObject.set(x, "groupEditable", js.undefined)
+    
+    inline def setGroupOrder(value: TimelineOptionsGroupOrderType): Self = StObject.set(x, "groupOrder", value.asInstanceOf[js.Any])
+    
+    inline def setGroupOrderFunction2(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "groupOrder", js.Any.fromFunction2(value))
+    
+    inline def setGroupOrderSwap(
+      value: (/* fromGroup */ Any, /* toGroup */ Any, /* groups */ DataSet[DataGroup]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "groupOrderSwap", js.Any.fromFunction3((t0: /* fromGroup */ Any, t1: /* toGroup */ Any, t2: /* groups */ DataSet[DataGroup]) => (value(t0, t1, t2)).runNow()))
+    
+    inline def setGroupOrderSwapUndefined: Self = StObject.set(x, "groupOrderSwap", js.undefined)
+    
+    inline def setGroupOrderUndefined: Self = StObject.set(x, "groupOrder", js.undefined)
+    
+    inline def setGroupTemplate(
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
+    ): Self = StObject.set(x, "groupTemplate", js.Any.fromFunction3(value))
+    
+    inline def setGroupTemplateUndefined: Self = StObject.set(x, "groupTemplate", js.undefined)
+    
+    inline def setHeight(value: HeightWidthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setHiddenDates(value: TimelineOptionsHiddenDatesType): Self = StObject.set(x, "hiddenDates", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenDatesUndefined: Self = StObject.set(x, "hiddenDates", js.undefined)
+    
+    inline def setHiddenDatesVarargs(value: TimelineHiddenDateOption*): Self = StObject.set(x, "hiddenDates", js.Array(value*))
+    
+    inline def setHorizontalScroll(value: Boolean): Self = StObject.set(x, "horizontalScroll", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalScrollUndefined: Self = StObject.set(x, "horizontalScroll", js.undefined)
+    
+    inline def setItemsAlwaysDraggable(value: TimelineOptionsItemsAlwaysDraggableType): Self = StObject.set(x, "itemsAlwaysDraggable", value.asInstanceOf[js.Any])
+    
+    inline def setItemsAlwaysDraggableUndefined: Self = StObject.set(x, "itemsAlwaysDraggable", js.undefined)
+    
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setLocales(value: Locales): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+    
+    inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+    
+    inline def setMargin(value: TimelineOptionsMarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMax(value: DateType): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeight(value: HeightWidthType): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxMinorChars(value: Double): Self = StObject.set(x, "maxMinorChars", value.asInstanceOf[js.Any])
+    
+    inline def setMaxMinorCharsUndefined: Self = StObject.set(x, "maxMinorChars", js.undefined)
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: DateType): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeight(value: HeightWidthType): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMoment(value: MomentConstructor): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
+    
+    inline def setMomentFunction3(
+      value: (/* inp */ js.UndefOr[MomentInput], /* format */ js.UndefOr[MomentFormatSpecification], /* strict */ js.UndefOr[Boolean]) => Moment
+    ): Self = StObject.set(x, "moment", js.Any.fromFunction3(value))
+    
+    inline def setMomentFunction4(
+      value: (/* inp */ js.UndefOr[MomentInput], /* format */ js.UndefOr[MomentFormatSpecification], /* language */ js.UndefOr[String], /* strict */ js.UndefOr[Boolean]) => Moment
+    ): Self = StObject.set(x, "moment", js.Any.fromFunction4(value))
+    
+    inline def setMomentUndefined: Self = StObject.set(x, "moment", js.undefined)
+    
+    inline def setMoveable(value: Boolean): Self = StObject.set(x, "moveable", value.asInstanceOf[js.Any])
+    
+    inline def setMoveableUndefined: Self = StObject.set(x, "moveable", js.undefined)
+    
+    inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    
+    inline def setMultiselectPerGroup(value: Boolean): Self = StObject.set(x, "multiselectPerGroup", value.asInstanceOf[js.Any])
+    
+    inline def setMultiselectPerGroupUndefined: Self = StObject.set(x, "multiselectPerGroup", js.undefined)
+    
+    inline def setMultiselectUndefined: Self = StObject.set(x, "multiselect", js.undefined)
+    
+    inline def setOnAdd(
+      value: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onAdd", js.Any.fromFunction2((t0: /* item */ TimelineItem, t1: /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnAddGroup(
+      value: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onAddGroup", js.Any.fromFunction2((t0: /* group */ TimelineGroup, t1: /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnAddGroupUndefined: Self = StObject.set(x, "onAddGroup", js.undefined)
+    
+    inline def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
+    
+    inline def setOnInitialDrawComplete(value: japgolly.scalajs.react.Callback): Self = StObject.set(x, "onInitialDrawComplete", value.toJsFn)
+    
+    inline def setOnInitialDrawCompleteUndefined: Self = StObject.set(x, "onInitialDrawComplete", js.undefined)
+    
+    inline def setOnMove(
+      value: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onMove", js.Any.fromFunction2((t0: /* item */ TimelineItem, t1: /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnMoveGroup(
+      value: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onMoveGroup", js.Any.fromFunction2((t0: /* group */ TimelineGroup, t1: /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnMoveGroupUndefined: Self = StObject.set(x, "onMoveGroup", js.undefined)
+    
+    inline def setOnMoveUndefined: Self = StObject.set(x, "onMove", js.undefined)
+    
+    inline def setOnMoving(
+      value: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onMoving", js.Any.fromFunction2((t0: /* item */ TimelineItem, t1: /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnMovingUndefined: Self = StObject.set(x, "onMoving", js.undefined)
+    
+    inline def setOnRemove(
+      value: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onRemove", js.Any.fromFunction2((t0: /* item */ TimelineItem, t1: /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnRemoveGroup(
+      value: (/* group */ TimelineGroup, /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onRemoveGroup", js.Any.fromFunction2((t0: /* group */ TimelineGroup, t1: /* callback */ js.Function1[/* group */ TimelineGroup | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnRemoveGroupUndefined: Self = StObject.set(x, "onRemoveGroup", js.undefined)
+    
+    inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+    
+    inline def setOnUpdate(
+      value: (/* item */ TimelineItem, /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => japgolly.scalajs.react.Callback
+    ): Self = StObject.set(x, "onUpdate", js.Any.fromFunction2((t0: /* item */ TimelineItem, t1: /* callback */ js.Function1[/* item */ TimelineItem | Null, Unit]) => (value(t0, t1)).runNow()))
+    
+    inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+    
+    inline def setOrder(value: (/* a */ Any, /* b */ Any) => Double): Self = StObject.set(x, "order", js.Any.fromFunction2(value))
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setOrientation(value: TimelineOptionsOrientationType): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setRollingMode(value: TimelineRollingModeOption): Self = StObject.set(x, "rollingMode", value.asInstanceOf[js.Any])
+    
+    inline def setRollingModeUndefined: Self = StObject.set(x, "rollingMode", js.undefined)
+    
+    inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+    
+    inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setShowCurrentTime(value: Boolean): Self = StObject.set(x, "showCurrentTime", value.asInstanceOf[js.Any])
+    
+    inline def setShowCurrentTimeUndefined: Self = StObject.set(x, "showCurrentTime", js.undefined)
+    
+    inline def setShowMajorLabels(value: Boolean): Self = StObject.set(x, "showMajorLabels", value.asInstanceOf[js.Any])
+    
+    inline def setShowMajorLabelsUndefined: Self = StObject.set(x, "showMajorLabels", js.undefined)
+    
+    inline def setShowMinorLabels(value: Boolean): Self = StObject.set(x, "showMinorLabels", value.asInstanceOf[js.Any])
+    
+    inline def setShowMinorLabelsUndefined: Self = StObject.set(x, "showMinorLabels", js.undefined)
+    
+    inline def setShowTooltips(value: Boolean): Self = StObject.set(x, "showTooltips", value.asInstanceOf[js.Any])
+    
+    inline def setShowTooltipsUndefined: Self = StObject.set(x, "showTooltips", js.undefined)
+    
+    inline def setSnap(value: (/* date */ js.Date, /* scale */ String, /* step */ Double) => js.Date | Double): Self = StObject.set(x, "snap", js.Any.fromFunction3(value))
+    
+    inline def setSnapUndefined: Self = StObject.set(x, "snap", js.undefined)
+    
+    inline def setStack(value: Boolean): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    
+    inline def setStackSubgroups(value: Boolean): Self = StObject.set(x, "stackSubgroups", value.asInstanceOf[js.Any])
+    
+    inline def setStackSubgroupsUndefined: Self = StObject.set(x, "stackSubgroups", js.undefined)
+    
+    inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+    
+    inline def setStart(value: DateType): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setTemplate(
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
+    ): Self = StObject.set(x, "template", js.Any.fromFunction3(value))
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setThrottleRedraw(value: Double): Self = StObject.set(x, "throttleRedraw", value.asInstanceOf[js.Any])
+    
+    inline def setThrottleRedrawUndefined: Self = StObject.set(x, "throttleRedraw", js.undefined)
+    
+    inline def setTimeAxis(value: TimelineTimeAxisOption): Self = StObject.set(x, "timeAxis", value.asInstanceOf[js.Any])
+    
+    inline def setTimeAxisUndefined: Self = StObject.set(x, "timeAxis", js.undefined)
+    
+    inline def setTooltip(value: TimelineTooltipOption): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipOnItemUpdateTime(value: Boolean | Template): Self = StObject.set(x, "tooltipOnItemUpdateTime", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipOnItemUpdateTimeUndefined: Self = StObject.set(x, "tooltipOnItemUpdateTime", js.undefined)
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setVerticalScroll(value: Boolean): Self = StObject.set(x, "verticalScroll", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalScrollUndefined: Self = StObject.set(x, "verticalScroll", js.undefined)
+    
+    inline def setVisibleFrameTemplate(
+      value: (/* item */ js.UndefOr[Any], /* element */ js.UndefOr[Any], /* data */ js.UndefOr[Any]) => String
+    ): Self = StObject.set(x, "visibleFrameTemplate", js.Any.fromFunction3(value))
+    
+    inline def setVisibleFrameTemplateUndefined: Self = StObject.set(x, "visibleFrameTemplate", js.undefined)
+    
+    inline def setWidth(value: HeightWidthType): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZoomKey(value: String): Self = StObject.set(x, "zoomKey", value.asInstanceOf[js.Any])
+    
+    inline def setZoomKeyUndefined: Self = StObject.set(x, "zoomKey", js.undefined)
+    
+    inline def setZoomMax(value: Double): Self = StObject.set(x, "zoomMax", value.asInstanceOf[js.Any])
+    
+    inline def setZoomMaxUndefined: Self = StObject.set(x, "zoomMax", js.undefined)
+    
+    inline def setZoomMin(value: Double): Self = StObject.set(x, "zoomMin", value.asInstanceOf[js.Any])
+    
+    inline def setZoomMinUndefined: Self = StObject.set(x, "zoomMin", js.undefined)
+    
+    inline def setZoomable(value: Boolean): Self = StObject.set(x, "zoomable", value.asInstanceOf[js.Any])
+    
+    inline def setZoomableUndefined: Self = StObject.set(x, "zoomable", js.undefined)
+  }
 }
-

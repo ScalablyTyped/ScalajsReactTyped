@@ -1,0 +1,56 @@
+organization := "org.scalablytyped.japgolly"
+name := "ant-design__pro-utils"
+version := "2.2.6-966dfb"
+scalaVersion := "3.1.2"
+enablePlugins(ScalaJSPlugin)
+libraryDependencies ++= Seq(
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "ant-design__cssinjs" % "0.0.0-alpha.54-5e10d8",
+  "org.scalablytyped.japgolly" %%% "ant-design__icons" % "4.7.0-45ea6a",
+  "org.scalablytyped.japgolly" %%% "ant-design__icons-svg" % "4.2.1-19a588",
+  "org.scalablytyped.japgolly" %%% "ant-design__pro-provider" % "2.0.6-986576",
+  "org.scalablytyped.japgolly" %%% "ant-design__react-slick" % "0.29.2-8d3dd4",
+  "org.scalablytyped.japgolly" %%% "antd" % "4.23.6-89705f",
+  "org.scalablytyped.japgolly" %%% "csstype" % "3.1.1-6f6894",
+  "org.scalablytyped.japgolly" %%% "dayjs" % "1.11.5-cb7bfd",
+  "org.scalablytyped.japgolly" %%% "memoize-one" % "6.0.0-1d9c34",
+  "org.scalablytyped.japgolly" %%% "moment" % "2.29.4-49fb6c",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "prop-types" % "15.7-dt-20220407Z-2e1de8",
+  "org.scalablytyped.japgolly" %%% "rc-cascader" % "3.7.0-5968ff",
+  "org.scalablytyped.japgolly" %%% "rc-component__portal" % "1.0.0-9-13e859",
+  "org.scalablytyped.japgolly" %%% "rc-dialog" % "9.0.0-68815f",
+  "org.scalablytyped.japgolly" %%% "rc-drawer" % "6.0.0-a1be45",
+  "org.scalablytyped.japgolly" %%% "rc-field-form" % "1.27.2-694319",
+  "org.scalablytyped.japgolly" %%% "rc-image" % "5.9.0-4702f9",
+  "org.scalablytyped.japgolly" %%% "rc-input" % "0.1.2-9cbbc4",
+  "org.scalablytyped.japgolly" %%% "rc-input-number" % "7.3.9-aa6c45",
+  "org.scalablytyped.japgolly" %%% "rc-mentions" % "1.10.0-76ba3d",
+  "org.scalablytyped.japgolly" %%% "rc-menu" % "9.6.4-93bfe0",
+  "org.scalablytyped.japgolly" %%% "rc-motion" % "2.6.2-bc92e1",
+  "org.scalablytyped.japgolly" %%% "rc-pagination" % "3.1.17-bc0428",
+  "org.scalablytyped.japgolly" %%% "rc-picker" % "2.6.11-bc7ec4",
+  "org.scalablytyped.japgolly" %%% "rc-rate" % "2.9.2-7f6e0d",
+  "org.scalablytyped.japgolly" %%% "rc-segmented" % "2.1.0-bed095",
+  "org.scalablytyped.japgolly" %%% "rc-select" % "14.1.13-a3235d",
+  "org.scalablytyped.japgolly" %%% "rc-slider" % "10.0.1-852376",
+  "org.scalablytyped.japgolly" %%% "rc-steps" % "5.0.0-alpha.0-031045",
+  "org.scalablytyped.japgolly" %%% "rc-table" % "7.27.2-e83e1a",
+  "org.scalablytyped.japgolly" %%% "rc-tabs" % "12.2.1-e72a88",
+  "org.scalablytyped.japgolly" %%% "rc-textarea" % "0.4.5-493970",
+  "org.scalablytyped.japgolly" %%% "rc-tooltip" % "5.2.2-a1b612",
+  "org.scalablytyped.japgolly" %%% "rc-tree" % "5.7.0-488636",
+  "org.scalablytyped.japgolly" %%% "rc-tree-select" % "5.5.0-884b68",
+  "org.scalablytyped.japgolly" %%% "rc-trigger" % "5.3.1-954195",
+  "org.scalablytyped.japgolly" %%% "rc-upload" % "4.3.4-1c0b21",
+  "org.scalablytyped.japgolly" %%% "rc-util" % "5.24.4-3924ca",
+  "org.scalablytyped.japgolly" %%% "rc-virtual-list" % "3.4.8-e60a6f",
+  "org.scalablytyped.japgolly" %%% "react" % "18.0-dt-20220922Z-c9da7d",
+  "org.scalablytyped.japgolly" %%% "react-dom" % "18.0-dt-20220819Z-74fd4f",
+  "org.scalablytyped.japgolly" %%% "scheduler" % "0.16-dt-20211202Z-ea969a",
+  "org.scalablytyped.japgolly" %%% "scroll-into-view-if-needed" % "2.2.29-35719b",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
+publishArtifact in packageDoc := false
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

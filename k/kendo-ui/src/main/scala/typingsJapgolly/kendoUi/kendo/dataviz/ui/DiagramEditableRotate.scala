@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DiagramEditableRotate extends js.Object {
+trait DiagramEditableRotate extends StObject {
+  
   var fill: js.UndefOr[DiagramEditableRotateFill] = js.undefined
+  
   var stroke: js.UndefOr[DiagramEditableRotateStroke] = js.undefined
 }
-
 object DiagramEditableRotate {
-  @scala.inline
-  def apply(fill: DiagramEditableRotateFill = null, stroke: DiagramEditableRotateStroke = null): DiagramEditableRotate = {
+  
+  inline def apply(): DiagramEditableRotate = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditableRotate]
   }
+  
+  extension [Self <: DiagramEditableRotate](x: Self) {
+    
+    inline def setFill(value: DiagramEditableRotateFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setStroke(value: DiagramEditableRotateStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+  }
 }
-

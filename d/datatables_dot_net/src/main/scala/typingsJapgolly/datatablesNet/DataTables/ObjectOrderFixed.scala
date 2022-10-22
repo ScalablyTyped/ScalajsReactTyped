@@ -1,31 +1,44 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObjectOrderFixed extends js.Object {
+trait ObjectOrderFixed extends StObject {
+  
   /**
     * Two-element array:
     * 0: Column index to order upon.
     * 1: Direction so order to apply ("asc" for ascending order or "desc" for descending order).
     */
-  var post: js.UndefOr[js.Array[_]] = js.undefined
+  var post: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
     * Two-element array:
     * 0: Column index to order upon.
     * 1: Direction so order to apply ("asc" for ascending order or "desc" for descending order).
     */
-  var pre: js.UndefOr[js.Array[_]] = js.undefined
+  var pre: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object ObjectOrderFixed {
-  @scala.inline
-  def apply(post: js.Array[_] = null, pre: js.Array[_] = null): ObjectOrderFixed = {
+  
+  inline def apply(): ObjectOrderFixed = {
     val __obj = js.Dynamic.literal()
-    if (post != null) __obj.updateDynamic("post")(post.asInstanceOf[js.Any])
-    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectOrderFixed]
   }
+  
+  extension [Self <: ObjectOrderFixed](x: Self) {
+    
+    inline def setPost(value: js.Array[Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    
+    inline def setPostVarargs(value: Any*): Self = StObject.set(x, "post", js.Array(value*))
+    
+    inline def setPre(value: js.Array[Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    
+    inline def setPreVarargs(value: Any*): Self = StObject.set(x, "pre", js.Array(value*))
+  }
 }
-

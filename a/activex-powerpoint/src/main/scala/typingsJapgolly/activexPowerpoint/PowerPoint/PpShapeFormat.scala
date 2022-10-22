@@ -1,39 +1,35 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`0`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`0`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
 */
-trait PpShapeFormat extends js.Object
-
+trait PpShapeFormat extends StObject
 object PpShapeFormat {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppShapeFormatBMP: `3` = this.cast(3)
-  @scala.inline
-  def ppShapeFormatEMF: `5` = this.cast(5)
-  @scala.inline
-  def ppShapeFormatGIF: `0` = this.cast(0)
-  @scala.inline
-  def ppShapeFormatJPG: `1` = this.cast(1)
-  @scala.inline
-  def ppShapeFormatPNG: `2` = this.cast(2)
-  @scala.inline
-  def ppShapeFormatWMF: `4` = this.cast(4)
+  
+  inline def ppShapeFormatBMP: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppShapeFormatEMF: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppShapeFormatGIF: `0` = 0.asInstanceOf[`0`]
+  
+  inline def ppShapeFormatJPG: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppShapeFormatPNG: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppShapeFormatWMF: `4` = 4.asInstanceOf[`4`]
 }
-

@@ -2,46 +2,48 @@ package typingsJapgolly.sane
 
 import typingsJapgolly.sane.mod.AllEventType
 import typingsJapgolly.sane.mod.EventType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object saneStrings {
-  @js.native
-  sealed trait add
-    extends AllEventType
-       with EventType
   
   @js.native
-  sealed trait all extends EventType
+  sealed trait add
+    extends StObject
+       with AllEventType
+       with EventType
+  inline def add: add = "add".asInstanceOf[add]
+  
+  @js.native
+  sealed trait all
+    extends StObject
+       with EventType
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait change
-    extends AllEventType
+    extends StObject
+       with AllEventType
        with EventType
+  inline def change: change = "change".asInstanceOf[change]
   
   @js.native
   sealed trait delete
-    extends AllEventType
+    extends StObject
+       with AllEventType
        with EventType
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait error extends EventType
+  sealed trait error
+    extends StObject
+       with EventType
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait ready extends EventType
-  
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def change: change = "change".asInstanceOf[change]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  sealed trait ready
+    extends StObject
+       with EventType
+  inline def ready: ready = "ready".asInstanceOf[ready]
 }
-

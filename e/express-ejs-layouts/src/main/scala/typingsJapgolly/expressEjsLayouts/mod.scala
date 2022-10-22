@@ -1,14 +1,38 @@
 package typingsJapgolly.expressEjsLayouts
 
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.express.mod.RequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-ejs-layouts", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(): RequestHandler[ParamsDictionary] = js.native
+object mod extends Shortcut {
+  
+  @JSImport("express-ejs-layouts", JSImport.Namespace)
+  @js.native
+  val ^ : RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = js.native
+  
+  type _To = RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^
 }
-

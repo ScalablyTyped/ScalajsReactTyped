@@ -1,16 +1,17 @@
 package typingsJapgolly.winrt.Windows.UI.Core
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.UI.Core.CoreCursor")
-@js.native
-class CoreCursor protected () extends ICoreCursor {
-  def this(`type`: CoreCursorType, id: Double) = this()
-  /* CompleteClass */
-  override var id: Double = js.native
-  /* CompleteClass */
-  override var `type`: CoreCursorType = js.native
+trait CoreCursor
+  extends StObject
+     with ICoreCursor
+object CoreCursor {
+  
+  inline def apply(id: Double, `type`: CoreCursorType): CoreCursor = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoreCursor]
+  }
 }
-

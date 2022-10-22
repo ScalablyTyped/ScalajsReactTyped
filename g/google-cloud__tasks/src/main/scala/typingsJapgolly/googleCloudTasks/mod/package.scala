@@ -1,33 +1,32 @@
-package typingsJapgolly.googleCloudTasks
+package typingsJapgolly.googleCloudTasks.mod
 
+import typingsJapgolly.googleGax.mod.GoogleError
+import typingsJapgolly.std.Partial
+import typingsJapgolly.std.Pick
+import typingsJapgolly.std.Required
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type APICallback[T] = js.Function2[
-    /* err */ typingsJapgolly.googleCloudTasks.mod.GoogleError | scala.Null, 
-    /* response */ js.UndefOr[T], 
-    scala.Unit
-  ]
-  type APIPaginatedCallback[T, U, V] = js.Function4[
-    /* err */ typingsJapgolly.googleCloudTasks.mod.GoogleError | scala.Null, 
-    /* response */ js.UndefOr[T], 
-    /* next */ js.UndefOr[U | scala.Null], 
-    /* rawResponse */ js.UndefOr[V], 
-    scala.Unit
-  ]
-  type CallOptions = js.Any
-  type CreateNamedRequest[N /* <: java.lang.String */, T] = typingsJapgolly.googleCloudTasks.mod.ParentRequest with typingsJapgolly.googleCloudTasks.googleCloudTasksStrings.CreateNamedRequest with js.Any
-  type EnhancedPick[T, Req /* <: java.lang.String */, Opt /* <: java.lang.String */] = (typingsJapgolly.std.Required[typingsJapgolly.std.Pick[T, Req]]) with (typingsJapgolly.std.Partial[typingsJapgolly.std.Pick[T, Req]])
-  type GoogleAuth = js.Any
-  type GoogleAuthOptions = js.Any
-  type GoogleError = js.Any
-  type Keys[T] = java.lang.String
-  type ProjectIdCallback = js.Function2[
-    /* err */ js.UndefOr[js.Error | scala.Null], 
-    /* projectId */ js.UndefOr[java.lang.String | scala.Null], 
-    scala.Unit
-  ]
-  type UpdateNamedRequest[N /* <: java.lang.String */, T] = typingsJapgolly.googleCloudTasks.mod.ParentRequest with typingsJapgolly.googleCloudTasks.googleCloudTasksStrings.UpdateNamedRequest with js.Any
-}
+
+type APICallback[T] = js.Function2[/* err */ GoogleError | Null, /* response */ js.UndefOr[T], Unit]
+
+type APIPaginatedCallback[T, U, V] = js.Function4[
+/* err */ GoogleError | Null, 
+/* response */ js.UndefOr[T], 
+/* next */ js.UndefOr[U | Null], 
+/* rawResponse */ js.UndefOr[V], 
+Unit]
+
+type CreateNamedRequest[N /* <: String */, T] = ParentRequest & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in N ]: T} */ js.Any)
+
+type EnhancedPick[T, Req /* <: /* keyof T */ String */, Opt /* <: /* keyof T */ String */] = (Required[Pick[T, Req]]) & (Partial[Pick[T, Req]])
+
+type Keys[T] = /* keyof T */ String
+
+type ProjectIdCallback = js.Function2[
+/* err */ js.UndefOr[js.Error | Null], 
+/* projectId */ js.UndefOr[String | Null], 
+Unit]
+
+type UpdateNamedRequest[N /* <: String */, T] = ParentRequest & (/* import warning: importer.ImportType#apply Failed type conversion: {[ P in N ]: T} */ js.Any)

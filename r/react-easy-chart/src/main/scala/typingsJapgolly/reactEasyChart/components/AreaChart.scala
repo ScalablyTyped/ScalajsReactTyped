@@ -1,13 +1,9 @@
 package typingsJapgolly.reactEasyChart.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.reactEasyChart.AnonBottom
-import typingsJapgolly.reactEasyChart.AnonY
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactEasyChart.anon.Bottom
+import typingsJapgolly.reactEasyChart.anon.Y
 import typingsJapgolly.reactEasyChart.mod.AreaChartProps
 import typingsJapgolly.reactEasyChart.mod.LineData
 import typingsJapgolly.reactEasyChart.reactEasyChartStrings.`basis-closed`
@@ -25,78 +21,80 @@ import typingsJapgolly.reactEasyChart.reactEasyChartStrings.monotone
 import typingsJapgolly.reactEasyChart.reactEasyChartStrings.step
 import typingsJapgolly.reactEasyChart.reactEasyChartStrings.text
 import typingsJapgolly.reactEasyChart.reactEasyChartStrings.time
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AreaChart {
-  def apply(
-    data: js.Array[js.Array[LineData]],
-    axes: js.UndefOr[Boolean] = js.undefined,
-    axisLabels: AnonY = null,
-    clickHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => CallbackTo[js.Any] = null,
-    dataPoints: js.UndefOr[Boolean] = js.undefined,
-    grid: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    interpolate: linear | `linear-closed` | step | `step-before` | `step-after` | basis | `basis-open` | `basis-closed` | bundle | cardinal | `cardinal-open` | `cardinal-closed` | monotone = null,
-    lineColors: js.Array[String] = null,
-    margin: AnonBottom = null,
-    mouseMoveHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => CallbackTo[js.Any] = null,
-    mouseOutHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => CallbackTo[js.Any] = null,
-    mouseOverHandler: (/* data */ LineData, /* mouseEvent */ MouseEvent) => CallbackTo[js.Any] = null,
-    noAreaGradient: js.UndefOr[Boolean] = js.undefined,
-    tickTimeDisplayFormat: String = null,
-    verticalGrid: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null,
-    xDomainRange: js.Array[js.Date | Double | String] = null,
-    xTicks: Int | Double = null,
-    xType: time | text | linear = null,
-    yAxisOrientRight: js.UndefOr[Boolean] = js.undefined,
-    yDomainRange: js.Array[Double | String] = null,
-    yTicks: Int | Double = null,
-    yType: time | text | linear = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AreaChartProps, typingsJapgolly.reactEasyChart.mod.AreaChart, Unit, AreaChartProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(axes)) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (axisLabels != null) __obj.updateDynamic("axisLabels")(axisLabels.asInstanceOf[js.Any])
-    if (clickHandler != null) __obj.updateDynamic("clickHandler")(js.Any.fromFunction2((t0: /* data */ typingsJapgolly.reactEasyChart.mod.LineData, t1: /* mouseEvent */ org.scalajs.dom.raw.MouseEvent) => clickHandler(t0, t1).runNow()))
-    if (!js.isUndefined(dataPoints)) __obj.updateDynamic("dataPoints")(dataPoints.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate.asInstanceOf[js.Any])
-    if (lineColors != null) __obj.updateDynamic("lineColors")(lineColors.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (mouseMoveHandler != null) __obj.updateDynamic("mouseMoveHandler")(js.Any.fromFunction2((t0: /* data */ typingsJapgolly.reactEasyChart.mod.LineData, t1: /* mouseEvent */ org.scalajs.dom.raw.MouseEvent) => mouseMoveHandler(t0, t1).runNow()))
-    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(js.Any.fromFunction2((t0: /* data */ typingsJapgolly.reactEasyChart.mod.LineData, t1: /* mouseEvent */ org.scalajs.dom.raw.MouseEvent) => mouseOutHandler(t0, t1).runNow()))
-    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(js.Any.fromFunction2((t0: /* data */ typingsJapgolly.reactEasyChart.mod.LineData, t1: /* mouseEvent */ org.scalajs.dom.raw.MouseEvent) => mouseOverHandler(t0, t1).runNow()))
-    if (!js.isUndefined(noAreaGradient)) __obj.updateDynamic("noAreaGradient")(noAreaGradient.asInstanceOf[js.Any])
-    if (tickTimeDisplayFormat != null) __obj.updateDynamic("tickTimeDisplayFormat")(tickTimeDisplayFormat.asInstanceOf[js.Any])
-    if (!js.isUndefined(verticalGrid)) __obj.updateDynamic("verticalGrid")(verticalGrid.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (xDomainRange != null) __obj.updateDynamic("xDomainRange")(xDomainRange.asInstanceOf[js.Any])
-    if (xTicks != null) __obj.updateDynamic("xTicks")(xTicks.asInstanceOf[js.Any])
-    if (xType != null) __obj.updateDynamic("xType")(xType.asInstanceOf[js.Any])
-    if (!js.isUndefined(yAxisOrientRight)) __obj.updateDynamic("yAxisOrientRight")(yAxisOrientRight.asInstanceOf[js.Any])
-    if (yDomainRange != null) __obj.updateDynamic("yDomainRange")(yDomainRange.asInstanceOf[js.Any])
-    if (yTicks != null) __obj.updateDynamic("yTicks")(yTicks.asInstanceOf[js.Any])
-    if (yType != null) __obj.updateDynamic("yType")(yType.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactEasyChart.mod.AreaChartProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactEasyChart.mod.AreaChart](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactEasyChart.mod.AreaChartProps])(children: _*)
+  inline def apply(data: js.Array[js.Array[LineData]]): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[AreaChartProps]))
   }
+  
   @JSImport("react-easy-chart", "AreaChart")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactEasyChart.mod.AreaChart] {
+    
+    inline def axes(value: Boolean): this.type = set("axes", value.asInstanceOf[js.Any])
+    
+    inline def axisLabels(value: Y): this.type = set("axisLabels", value.asInstanceOf[js.Any])
+    
+    inline def clickHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): this.type = set("clickHandler", js.Any.fromFunction2(value))
+    
+    inline def dataPoints(value: Boolean): this.type = set("dataPoints", value.asInstanceOf[js.Any])
+    
+    inline def grid(value: Boolean): this.type = set("grid", value.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def interpolate(
+      value: linear | `linear-closed` | step | `step-before` | `step-after` | basis | `basis-open` | `basis-closed` | bundle | cardinal | `cardinal-open` | `cardinal-closed` | monotone
+    ): this.type = set("interpolate", value.asInstanceOf[js.Any])
+    
+    inline def lineColors(value: js.Array[String]): this.type = set("lineColors", value.asInstanceOf[js.Any])
+    
+    inline def lineColorsVarargs(value: String*): this.type = set("lineColors", js.Array(value*))
+    
+    inline def margin(value: Bottom): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def mouseMoveHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): this.type = set("mouseMoveHandler", js.Any.fromFunction2(value))
+    
+    inline def mouseOutHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): this.type = set("mouseOutHandler", js.Any.fromFunction2(value))
+    
+    inline def mouseOverHandler(value: (/* data */ LineData, /* mouseEvent */ MouseEvent) => Any): this.type = set("mouseOverHandler", js.Any.fromFunction2(value))
+    
+    inline def noAreaGradient(value: Boolean): this.type = set("noAreaGradient", value.asInstanceOf[js.Any])
+    
+    inline def tickTimeDisplayFormat(value: String): this.type = set("tickTimeDisplayFormat", value.asInstanceOf[js.Any])
+    
+    inline def verticalGrid(value: Boolean): this.type = set("verticalGrid", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def xDomainRange(value: js.Array[js.Date | Double | String]): this.type = set("xDomainRange", value.asInstanceOf[js.Any])
+    
+    inline def xDomainRangeVarargs(value: (js.Date | Double | String)*): this.type = set("xDomainRange", js.Array(value*))
+    
+    inline def xTicks(value: Double): this.type = set("xTicks", value.asInstanceOf[js.Any])
+    
+    inline def xType(value: time | text | linear): this.type = set("xType", value.asInstanceOf[js.Any])
+    
+    inline def yAxisOrientRight(value: Boolean): this.type = set("yAxisOrientRight", value.asInstanceOf[js.Any])
+    
+    inline def yDomainRange(value: js.Array[Double | String]): this.type = set("yDomainRange", value.asInstanceOf[js.Any])
+    
+    inline def yDomainRangeVarargs(value: (Double | String)*): this.type = set("yDomainRange", js.Array(value*))
+    
+    inline def yTicks(value: Double): this.type = set("yTicks", value.asInstanceOf[js.Any])
+    
+    inline def yType(value: time | text | linear): this.type = set("yType", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: AreaChartProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

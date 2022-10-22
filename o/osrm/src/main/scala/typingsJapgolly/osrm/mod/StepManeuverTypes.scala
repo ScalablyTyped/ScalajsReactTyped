@@ -1,8 +1,8 @@
 package typingsJapgolly.osrm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.osrm.osrmStrings.turn
@@ -24,46 +24,42 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.osrm.osrmStrings.`exit roundabout`
   - typingsJapgolly.osrm.osrmStrings.`exit rotary`
 */
-trait StepManeuverTypes extends js.Object
-
+trait StepManeuverTypes extends StObject
 object StepManeuverTypes {
-  @scala.inline
-  def arrive: typingsJapgolly.osrm.osrmStrings.arrive = this.cast("arrive")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def continue: typingsJapgolly.osrm.osrmStrings.continue = this.cast("continue")
-  @scala.inline
-  def depart: typingsJapgolly.osrm.osrmStrings.depart = this.cast("depart")
-  @scala.inline
-  def `end of road`: typingsJapgolly.osrm.osrmStrings.`end of road` = this.cast("end of road")
-  @scala.inline
-  def `exit rotary`: typingsJapgolly.osrm.osrmStrings.`exit rotary` = this.cast("exit rotary")
-  @scala.inline
-  def `exit roundabout`: typingsJapgolly.osrm.osrmStrings.`exit roundabout` = this.cast("exit roundabout")
-  @scala.inline
-  def fork: typingsJapgolly.osrm.osrmStrings.fork = this.cast("fork")
-  @scala.inline
-  def merge: typingsJapgolly.osrm.osrmStrings.merge = this.cast("merge")
-  @scala.inline
-  def `new name`: typingsJapgolly.osrm.osrmStrings.`new name` = this.cast("new name")
-  @scala.inline
-  def notification: typingsJapgolly.osrm.osrmStrings.notification = this.cast("notification")
-  @scala.inline
-  def `off ramp`: typingsJapgolly.osrm.osrmStrings.`off ramp` = this.cast("off ramp")
-  @scala.inline
-  def `on ramp`: typingsJapgolly.osrm.osrmStrings.`on ramp` = this.cast("on ramp")
-  @scala.inline
-  def ramp: typingsJapgolly.osrm.osrmStrings.ramp = this.cast("ramp")
-  @scala.inline
-  def rotary: typingsJapgolly.osrm.osrmStrings.rotary = this.cast("rotary")
-  @scala.inline
-  def roundabout: typingsJapgolly.osrm.osrmStrings.roundabout = this.cast("roundabout")
-  @scala.inline
-  def `roundabout turn`: typingsJapgolly.osrm.osrmStrings.`roundabout turn` = this.cast("roundabout turn")
-  @scala.inline
-  def turn: typingsJapgolly.osrm.osrmStrings.turn = this.cast("turn")
-  @scala.inline
-  def `use lane`: typingsJapgolly.osrm.osrmStrings.`use lane` = this.cast("use lane")
+  
+  inline def arrive: typingsJapgolly.osrm.osrmStrings.arrive = "arrive".asInstanceOf[typingsJapgolly.osrm.osrmStrings.arrive]
+  
+  inline def continue: typingsJapgolly.osrm.osrmStrings.continue = "continue".asInstanceOf[typingsJapgolly.osrm.osrmStrings.continue]
+  
+  inline def depart: typingsJapgolly.osrm.osrmStrings.depart = "depart".asInstanceOf[typingsJapgolly.osrm.osrmStrings.depart]
+  
+  inline def `end of road`: typingsJapgolly.osrm.osrmStrings.`end of road` = ("end of road").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`end of road`]
+  
+  inline def `exit rotary`: typingsJapgolly.osrm.osrmStrings.`exit rotary` = ("exit rotary").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`exit rotary`]
+  
+  inline def `exit roundabout`: typingsJapgolly.osrm.osrmStrings.`exit roundabout` = ("exit roundabout").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`exit roundabout`]
+  
+  inline def fork: typingsJapgolly.osrm.osrmStrings.fork = "fork".asInstanceOf[typingsJapgolly.osrm.osrmStrings.fork]
+  
+  inline def merge: typingsJapgolly.osrm.osrmStrings.merge = "merge".asInstanceOf[typingsJapgolly.osrm.osrmStrings.merge]
+  
+  inline def `new name`: typingsJapgolly.osrm.osrmStrings.`new name` = ("new name").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`new name`]
+  
+  inline def notification: typingsJapgolly.osrm.osrmStrings.notification = "notification".asInstanceOf[typingsJapgolly.osrm.osrmStrings.notification]
+  
+  inline def `off ramp`: typingsJapgolly.osrm.osrmStrings.`off ramp` = ("off ramp").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`off ramp`]
+  
+  inline def `on ramp`: typingsJapgolly.osrm.osrmStrings.`on ramp` = ("on ramp").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`on ramp`]
+  
+  inline def ramp: typingsJapgolly.osrm.osrmStrings.ramp = "ramp".asInstanceOf[typingsJapgolly.osrm.osrmStrings.ramp]
+  
+  inline def rotary: typingsJapgolly.osrm.osrmStrings.rotary = "rotary".asInstanceOf[typingsJapgolly.osrm.osrmStrings.rotary]
+  
+  inline def roundabout: typingsJapgolly.osrm.osrmStrings.roundabout = "roundabout".asInstanceOf[typingsJapgolly.osrm.osrmStrings.roundabout]
+  
+  inline def `roundabout turn`: typingsJapgolly.osrm.osrmStrings.`roundabout turn` = ("roundabout turn").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`roundabout turn`]
+  
+  inline def turn: typingsJapgolly.osrm.osrmStrings.turn = "turn".asInstanceOf[typingsJapgolly.osrm.osrmStrings.turn]
+  
+  inline def `use lane`: typingsJapgolly.osrm.osrmStrings.`use lane` = ("use lane").asInstanceOf[typingsJapgolly.osrm.osrmStrings.`use lane`]
 }
-

@@ -1,41 +1,32 @@
 package typingsJapgolly.reactBroadcast.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactBroadcast.mod.Subscriber.Props
-import typingsJapgolly.reactBroadcast.mod.Subscriber_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Subscriber {
-  def apply[T](
-    channel: String,
-    quiet: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: T => CallbackTo[Node] = null
-  ): UnmountedWithRoot[Props[T], Subscriber_[T], Unit, Props[T]] = {
-    val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(js.Any.fromFunction1((t0: T) => children(t0).runNow()))
-    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBroadcast.mod.Subscriber.Props[T], 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactBroadcast.mod.Subscriber_[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBroadcast.mod.Subscriber.Props[T]])
+  inline def apply[T](channel: String): Builder[T] = {
+    val __props = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[Props[T]]))
   }
+  
   @JSImport("react-broadcast", "Subscriber")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBroadcast.mod.Subscriber[T]] {
+    
+    inline def children(value: T => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def quiet(value: Boolean): this.type = set("quiet", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[T](p: Props[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

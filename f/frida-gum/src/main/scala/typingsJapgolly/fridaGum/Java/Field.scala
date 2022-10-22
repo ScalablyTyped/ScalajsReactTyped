@@ -1,34 +1,46 @@
 package typingsJapgolly.fridaGum.Java
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Field extends js.Object {
+trait Field[Value, Holder /* <: Members[Holder] */] extends StObject {
+  
   /**
     * Type of value.
     */
   var fieldReturnType: Type
+  
   /**
     * What kind of field this is, i.e. static vs instance.
     */
   var fieldType: FieldType
+  
   /**
     * Class that this field belongs to.
     */
-  var holder: Wrapper
+  var holder: Wrapper[Holder]
+  
   /**
     * Current value of this field. Assign to update the field's value.
     */
-  var value: js.Any
+  var value: Value
 }
-
 object Field {
-  @scala.inline
-  def apply(fieldReturnType: Type, fieldType: FieldType, holder: Wrapper, value: js.Any): Field = {
-    val __obj = js.Dynamic.literal(fieldReturnType = fieldReturnType.asInstanceOf[js.Any], fieldType = fieldType.asInstanceOf[js.Any], holder = holder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
-    __obj.asInstanceOf[Field]
+  inline def apply[Value, Holder /* <: Members[Holder] */](fieldReturnType: Type, fieldType: FieldType, holder: Wrapper[Holder], value: Value): Field[Value, Holder] = {
+    val __obj = js.Dynamic.literal(fieldReturnType = fieldReturnType.asInstanceOf[js.Any], fieldType = fieldType.asInstanceOf[js.Any], holder = holder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Field[Value, Holder]]
+  }
+  
+  extension [Self <: Field[?, ?], Value, Holder /* <: Members[Holder] */](x: Self & (Field[Value, Holder])) {
+    
+    inline def setFieldReturnType(value: Type): Self = StObject.set(x, "fieldReturnType", value.asInstanceOf[js.Any])
+    
+    inline def setFieldType(value: FieldType): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
+    
+    inline def setHolder(value: Wrapper[Holder]): Self = StObject.set(x, "holder", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }
-

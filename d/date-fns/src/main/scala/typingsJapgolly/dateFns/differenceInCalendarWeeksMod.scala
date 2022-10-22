@@ -1,24 +1,24 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/differenceInCalendarWeeks", JSImport.Namespace)
-@js.native
-object differenceInCalendarWeeksMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(dateLeft: Double, dateRight: Double): Double = js.native
-    def apply(dateLeft: Double, dateRight: Double, options: AnonLocale): Double = js.native
-    def apply(dateLeft: Double, dateRight: Date): Double = js.native
-    def apply(dateLeft: Double, dateRight: Date, options: AnonLocale): Double = js.native
-    def apply(dateLeft: Date, dateRight: Double): Double = js.native
-    def apply(dateLeft: Date, dateRight: Double, options: AnonLocale): Double = js.native
-    def apply(dateLeft: Date, dateRight: Date): Double = js.native
-    def apply(dateLeft: Date, dateRight: Date, options: AnonLocale): Double = js.native
-  }
+object differenceInCalendarWeeksMod {
   
+  object default {
+    
+    inline def apply(dateLeft: js.Date, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: js.Date, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: Double, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: js.Date, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: Double, options: typingsJapgolly.dateFns.anon.Locale): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/differenceInCalendarWeeks", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

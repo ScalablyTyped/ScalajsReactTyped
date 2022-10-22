@@ -1,29 +1,33 @@
 package typingsJapgolly.oracleOraclejet.ojdatetimepickerMod
 
-import org.scalajs.dom.raw.CustomEvent
+import org.scalajs.dom.CustomEvent
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.disabled
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.jet
+import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.keyboardEdit
+import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.renderMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ojDatePicker extends ojInputDate[ojDatePickerSettableProperties] {
+trait ojDatePicker
+  extends StObject
+     with ojInputDate[ojDatePickerSettableProperties] {
+  
   @JSName("keyboardEdit")
   var keyboardEdit_ojDatePicker: disabled = js.native
-  @JSName("onOjAnimateEnd")
-  var onOjAnimateEnd_ojDatePicker: (js.Function1[CustomEvent, _]) | Null = js.native
-  @JSName("onOjAnimateStart")
-  var onOjAnimateStart_ojDatePicker: (js.Function1[CustomEvent, _]) | Null = js.native
+  
   @JSName("renderMode")
   var renderMode_ojDatePicker: jet = js.native
+  
   def setProperties(properties: ojDatePickerSettablePropertiesLenient): Unit = js.native
+  
+  def setProperty(property: keyboardEdit, value: disabled): Unit = js.native
+  def setProperty(property: renderMode, value: jet): Unit = js.native
 }
-
-@JSImport("@oracle/oraclejet/ojdatetimepicker", "ojDatePicker")
-@js.native
-object ojDatePicker extends js.Object {
+object ojDatePicker {
+  
   type ojAnimateEnd = CustomEvent
+  
   type ojAnimateStart = CustomEvent
 }
-

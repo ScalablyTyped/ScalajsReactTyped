@@ -1,11 +1,18 @@
-package typingsJapgolly.cassandraDriver
+package typingsJapgolly.cassandraDriver.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.cassandraDriver.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ArrayOrObject = js.Array[js.Any] | org.scalablytyped.runtime.StringDictionary[js.Any]
-  type EmptyCallback = js.Function1[/* err */ js.Error, scala.Unit]
-  type ValueCallback[T] = js.Function2[/* err */ js.Error, /* val */ T, scala.Unit]
-}
+
+inline def defaultOptions(): ClientOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[ClientOptions]
+
+inline def version: Double = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[Double]
+
+type ArrayOrObject = js.Array[Any] | StringDictionary[Any]
+
+type EmptyCallback = js.Function1[/* err */ js.Error, Unit]
+
+type ValueCallback[T] = js.Function2[/* err */ js.Error, /* val */ T, Unit]

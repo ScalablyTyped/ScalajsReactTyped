@@ -1,71 +1,176 @@
 package typingsJapgolly.diagnosticChannelPublishers
 
-import typingsJapgolly.diagnosticChannel.patchRequireMod.IModulePatcher
+import typingsJapgolly.diagnosticChannel.distSrcPatchRequireMod.IModulePatcher
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("diagnostic-channel-publishers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def enable(): Unit = js.native
+object mod {
+  
+  @JSImport("diagnostic-channel-publishers", JSImport.Namespace)
   @js.native
-  object bunyan extends js.Object {
+  val ^ : js.Any = js.native
+  
+  object azuresdk {
+    
+    @JSImport("diagnostic-channel-publishers", "azuresdk")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "azuresdk.AzureMonitorSymbol")
+    @js.native
+    val AzureMonitorSymbol: /* "Azure_Monitor_Tracer" */ String = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "azuresdk.azureCoreTracing")
+    @js.native
+    val azureCoreTracing: IModulePatcher = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  }
+  
+  object bunyan {
+    
+    @JSImport("diagnostic-channel-publishers", "bunyan")
+    @js.native
+    val ^ : js.Any = js.native
+    @JSImport("diagnostic-channel-publishers", "bunyan.bunyan")
+    @js.native
     val bunyan: IModulePatcher = js.native
-    def enable(): Unit = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   }
   
-  @js.native
-  object console extends js.Object {
+  object console {
+    
+    @JSImport("diagnostic-channel-publishers", "console")
+    @js.native
+    val ^ : js.Any = js.native
+    @JSImport("diagnostic-channel-publishers", "console.console")
+    @js.native
     val console: IModulePatcher = js.native
-    def enable(): Unit = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   }
   
-  @js.native
-  object mongodb extends js.Object {
+  inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  
+  object mongodb {
+    
+    @JSImport("diagnostic-channel-publishers", "mongodb")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo2")
+    @js.native
     val mongo2: IModulePatcher = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo3")
+    @js.native
     val mongo3: IModulePatcher = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "mongodb.mongo330")
+    @js.native
     val mongo330: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object mongodbCore extends js.Object {
+  object mongodbCore {
+    
+    @JSImport("diagnostic-channel-publishers", "mongodbCore")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "mongodbCore.mongoCore")
+    @js.native
     val mongoCore: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object mysql extends js.Object {
+  object mysql {
+    
+    @JSImport("diagnostic-channel-publishers", "mysql")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "mysql.mysql")
+    @js.native
     val mysql: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object pg extends js.Object {
+  object pg {
+    
+    @JSImport("diagnostic-channel-publishers", "pg")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "pg.postgres6")
+    @js.native
     val postgres6: IModulePatcher = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "pg.postgres7")
+    @js.native
     val postgres7: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object pgPool extends js.Object {
+  object pgPool {
+    
+    @JSImport("diagnostic-channel-publishers", "pgPool")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "pgPool.postgresPool1")
+    @js.native
     val postgresPool1: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object redis extends js.Object {
+  object redis {
+    
+    @JSImport("diagnostic-channel-publishers", "redis")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "redis.redis")
+    @js.native
     val redis: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
   
-  @js.native
-  object winston extends js.Object {
+  object tedious {
+    
+    @JSImport("diagnostic-channel-publishers", "tedious")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "tedious.tedious")
+    @js.native
+    val tedious: IModulePatcher = js.native
+  }
+  
+  object winston {
+    
+    @JSImport("diagnostic-channel-publishers", "winston")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+    
+    @JSImport("diagnostic-channel-publishers", "winston.winston2")
+    @js.native
     val winston2: IModulePatcher = js.native
+    
+    @JSImport("diagnostic-channel-publishers", "winston.winston3")
+    @js.native
     val winston3: IModulePatcher = js.native
-    def enable(): Unit = js.native
   }
-  
 }
-

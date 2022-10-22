@@ -1,12 +1,14 @@
 package typingsJapgolly.glVec2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("gl-vec2/div", JSImport.Namespace)
-@js.native
-object divMod extends js.Object {
-  def apply(out: js.Array[Double], a: js.Array[Double], b: js.Array[Double]): js.Array[Double] = js.native
+object divMod {
+  
+  inline def apply(out: js.Array[Double], a: js.Array[Double], b: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @JSImport("gl-vec2/div", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

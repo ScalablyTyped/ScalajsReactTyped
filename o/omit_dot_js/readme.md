@@ -1,7 +1,7 @@
 
 # Scala.js typings for omit_dot_js
 
-Typings are for version 1.0.2
+Typings are for version 2.0.2
 
 ## Library description:
 Utility function to create a shallow copy of an object which had dropped some fields.
@@ -10,10 +10,10 @@ Utility function to create a shallow copy of an object which had dropped some fi
 | ------------------ | :-------------: |
 | Full name          | omit.js |
 | Keywords           | object, omit |
-| # releases         | 3 |
-| # dependents       | 349 |
-| # downloads        | 9279509 |
-| # stars            | 3 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1663880.3333333333 |
+| # stars            | 158.0 |
 
 ## Links
 - [Homepage](https://github.com/benjycui/omit.js#readme)

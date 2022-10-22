@@ -4,91 +4,135 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.fall
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.spring
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.summer
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.winter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DaylightViewModelProperties extends js.Object {
+trait DaylightViewModelProperties extends StObject {
+  
   /**
-    * A season can be set instead of a date. Each season uses a fixed date corresponding to the seasonsal equinoxes and solstices.
+    * A season can be set instead of a date.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#currentSeason)
-    *
-    * @default "spring"
     */
   var currentSeason: js.UndefOr[spring | summer | fall | winter] = js.undefined
+  
   /**
-    * Starts or pauses the daytime animation cycling through the minutes of the day. Set to `true` to start the animation and to `false` to pause it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
+    * Starts or pauses the daytime animation cycling through the minutes of the day.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#dayPlaying)
     */
   var dayPlaying: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Indicates whether to show shadows cast by the sun.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#directShadowsEnabled)
+    */
+  var directShadowsEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The calendar date in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#localDate)
     */
   var localDate: js.UndefOr[DateProperties] = js.undefined
+  
   /**
     * Controls the daytime and date animation speed.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
-    *
     * @default 1.0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#playSpeedMultiplier)
     */
   var playSpeedMultiplier: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset). The position represents the time of the day in minutes. Possible values range between 0 and 1440.
+    * Indicates whether date and time are used to determine position of the light source.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#sunLightingEnabled)
+    */
+  var sunLightingEnabled: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Slider position for the time of day in the timezone given by [utcOffset](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#timeSliderPosition)
     */
   var timeSliderPosition: js.UndefOr[Double] = js.undefined
+  
   /**
     * The difference in hours between UTC time and the time displayed in the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#utcOffset)
     */
   var utcOffset: js.UndefOr[Double] = js.undefined
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#view)
     */
   var view: js.UndefOr[SceneViewProperties] = js.undefined
+  
   /**
-    * Starts or pauses the date animation cycling through the months of the year. Set to `true` to start the animation and to `false` to pause it.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
+    * Starts or pauses the date animation cycling through the months of the year.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Daylight-DaylightViewModel.html#yearPlaying)
     */
   var yearPlaying: js.UndefOr[Boolean] = js.undefined
 }
-
 object DaylightViewModelProperties {
-  @scala.inline
-  def apply(
-    currentSeason: spring | summer | fall | winter = null,
-    dayPlaying: js.UndefOr[Boolean] = js.undefined,
-    localDate: DateProperties = null,
-    playSpeedMultiplier: Int | Double = null,
-    timeSliderPosition: Int | Double = null,
-    utcOffset: Int | Double = null,
-    view: SceneViewProperties = null,
-    yearPlaying: js.UndefOr[Boolean] = js.undefined
-  ): DaylightViewModelProperties = {
+  
+  inline def apply(): DaylightViewModelProperties = {
     val __obj = js.Dynamic.literal()
-    if (currentSeason != null) __obj.updateDynamic("currentSeason")(currentSeason.asInstanceOf[js.Any])
-    if (!js.isUndefined(dayPlaying)) __obj.updateDynamic("dayPlaying")(dayPlaying.asInstanceOf[js.Any])
-    if (localDate != null) __obj.updateDynamic("localDate")(localDate.asInstanceOf[js.Any])
-    if (playSpeedMultiplier != null) __obj.updateDynamic("playSpeedMultiplier")(playSpeedMultiplier.asInstanceOf[js.Any])
-    if (timeSliderPosition != null) __obj.updateDynamic("timeSliderPosition")(timeSliderPosition.asInstanceOf[js.Any])
-    if (utcOffset != null) __obj.updateDynamic("utcOffset")(utcOffset.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
-    if (!js.isUndefined(yearPlaying)) __obj.updateDynamic("yearPlaying")(yearPlaying.asInstanceOf[js.Any])
     __obj.asInstanceOf[DaylightViewModelProperties]
   }
+  
+  extension [Self <: DaylightViewModelProperties](x: Self) {
+    
+    inline def setCurrentSeason(value: spring | summer | fall | winter): Self = StObject.set(x, "currentSeason", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentSeasonUndefined: Self = StObject.set(x, "currentSeason", js.undefined)
+    
+    inline def setDayPlaying(value: Boolean): Self = StObject.set(x, "dayPlaying", value.asInstanceOf[js.Any])
+    
+    inline def setDayPlayingUndefined: Self = StObject.set(x, "dayPlaying", js.undefined)
+    
+    inline def setDirectShadowsEnabled(value: Boolean): Self = StObject.set(x, "directShadowsEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setDirectShadowsEnabledUndefined: Self = StObject.set(x, "directShadowsEnabled", js.undefined)
+    
+    inline def setLocalDate(value: DateProperties): Self = StObject.set(x, "localDate", value.asInstanceOf[js.Any])
+    
+    inline def setLocalDateUndefined: Self = StObject.set(x, "localDate", js.undefined)
+    
+    inline def setPlaySpeedMultiplier(value: Double): Self = StObject.set(x, "playSpeedMultiplier", value.asInstanceOf[js.Any])
+    
+    inline def setPlaySpeedMultiplierUndefined: Self = StObject.set(x, "playSpeedMultiplier", js.undefined)
+    
+    inline def setSunLightingEnabled(value: Boolean): Self = StObject.set(x, "sunLightingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setSunLightingEnabledUndefined: Self = StObject.set(x, "sunLightingEnabled", js.undefined)
+    
+    inline def setTimeSliderPosition(value: Double): Self = StObject.set(x, "timeSliderPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTimeSliderPositionUndefined: Self = StObject.set(x, "timeSliderPosition", js.undefined)
+    
+    inline def setUtcOffset(value: Double): Self = StObject.set(x, "utcOffset", value.asInstanceOf[js.Any])
+    
+    inline def setUtcOffsetUndefined: Self = StObject.set(x, "utcOffset", js.undefined)
+    
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    
+    inline def setYearPlaying(value: Boolean): Self = StObject.set(x, "yearPlaying", value.asInstanceOf[js.Any])
+    
+    inline def setYearPlayingUndefined: Self = StObject.set(x, "yearPlaying", js.undefined)
+  }
 }
-

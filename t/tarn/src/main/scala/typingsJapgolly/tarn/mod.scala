@@ -1,27 +1,21 @@
 package typingsJapgolly.tarn
 
-import typingsJapgolly.std.Error
-import typingsJapgolly.tarn.poolMod.PoolOptions
+import typingsJapgolly.tarn.distPoolMod.PoolOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tarn", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("tarn", "Pool")
   @js.native
-  class Pool[T] protected ()
-    extends typingsJapgolly.tarn.poolMod.Pool[T] {
+  open class Pool[T] protected ()
+    extends typingsJapgolly.tarn.distPoolMod.Pool[T] {
     def this(opt: PoolOptions[T]) = this()
   }
   
+  @JSImport("tarn", "TimeoutError")
   @js.native
-  class TimeoutError () extends Error {
-    /* CompleteClass */
-    override var message: String = js.native
-    /* CompleteClass */
-    override var name: String = js.native
-  }
-  
+  open class TimeoutError ()
+    extends typingsJapgolly.tarn.distTimeoutErrorMod.TimeoutError
 }
-

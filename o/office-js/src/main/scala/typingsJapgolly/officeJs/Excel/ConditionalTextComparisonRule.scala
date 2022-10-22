@@ -5,42 +5,48 @@ import typingsJapgolly.officeJs.officeJsStrings.Contains
 import typingsJapgolly.officeJs.officeJsStrings.EndsWith
 import typingsJapgolly.officeJs.officeJsStrings.Invalid
 import typingsJapgolly.officeJs.officeJsStrings.NotContains
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Represents a cell value conditional format rule.
   *
-  * Represents a Cell Value Conditional Format Rule
-  *
+  * @remarks
   * [Api set: ExcelApi 1.6]
   */
-trait ConditionalTextComparisonRule extends js.Object {
+trait ConditionalTextComparisonRule extends StObject {
+  
   /**
-    *
     * The operator of the text conditional format.
     *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith
+  
   /**
+    * The text value of the conditional format.
     *
-    * The Text value of conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var text: String
 }
-
 object ConditionalTextComparisonRule {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     operator: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith,
     text: String
   ): ConditionalTextComparisonRule = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[ConditionalTextComparisonRule]
   }
+  
+  extension [Self <: ConditionalTextComparisonRule](x: Self) {
+    
+    inline def setOperator(value: ConditionalTextOperator | Invalid | Contains | NotContains | BeginsWith | EndsWith): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+  }
 }
-

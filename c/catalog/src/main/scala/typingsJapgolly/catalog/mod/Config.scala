@@ -1,48 +1,84 @@
 package typingsJapgolly.catalog.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.catalog.PartialTheme
+import typingsJapgolly.catalog.anon.PartialTheme
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Config extends js.Object {
+trait Config extends StObject {
+  
   var basePath: js.UndefOr[String] = js.undefined
-  var imports: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  
+  var imports: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var logoSrc: js.UndefOr[String] = js.undefined
+  
   var pages: js.Array[ConfigPageOrGroup]
+  
   var responsiveSizes: js.UndefOr[js.Array[ConfigResponsiveSize]] = js.undefined
+  
   var scripts: js.UndefOr[js.Array[String]] = js.undefined
+  
   var styles: js.UndefOr[js.Array[String]] = js.undefined
+  
   var theme: js.UndefOr[PartialTheme] = js.undefined
+  
   var title: String
+  
   var useBrowserHistory: js.UndefOr[Boolean] = js.undefined
 }
-
 object Config {
-  @scala.inline
-  def apply(
-    pages: js.Array[ConfigPageOrGroup],
-    title: String,
-    basePath: String = null,
-    imports: StringDictionary[js.Any] = null,
-    logoSrc: String = null,
-    responsiveSizes: js.Array[ConfigResponsiveSize] = null,
-    scripts: js.Array[String] = null,
-    styles: js.Array[String] = null,
-    theme: PartialTheme = null,
-    useBrowserHistory: js.UndefOr[Boolean] = js.undefined
-  ): Config = {
+  
+  inline def apply(pages: js.Array[ConfigPageOrGroup], title: String): Config = {
     val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
-    if (imports != null) __obj.updateDynamic("imports")(imports.asInstanceOf[js.Any])
-    if (logoSrc != null) __obj.updateDynamic("logoSrc")(logoSrc.asInstanceOf[js.Any])
-    if (responsiveSizes != null) __obj.updateDynamic("responsiveSizes")(responsiveSizes.asInstanceOf[js.Any])
-    if (scripts != null) __obj.updateDynamic("scripts")(scripts.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (!js.isUndefined(useBrowserHistory)) __obj.updateDynamic("useBrowserHistory")(useBrowserHistory.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
+  
+  extension [Self <: Config](x: Self) {
+    
+    inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+    
+    inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+    
+    inline def setImports(value: StringDictionary[Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    
+    inline def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
+    
+    inline def setLogoSrc(value: String): Self = StObject.set(x, "logoSrc", value.asInstanceOf[js.Any])
+    
+    inline def setLogoSrcUndefined: Self = StObject.set(x, "logoSrc", js.undefined)
+    
+    inline def setPages(value: js.Array[ConfigPageOrGroup]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    
+    inline def setPagesVarargs(value: ConfigPageOrGroup*): Self = StObject.set(x, "pages", js.Array(value*))
+    
+    inline def setResponsiveSizes(value: js.Array[ConfigResponsiveSize]): Self = StObject.set(x, "responsiveSizes", value.asInstanceOf[js.Any])
+    
+    inline def setResponsiveSizesUndefined: Self = StObject.set(x, "responsiveSizes", js.undefined)
+    
+    inline def setResponsiveSizesVarargs(value: ConfigResponsiveSize*): Self = StObject.set(x, "responsiveSizes", js.Array(value*))
+    
+    inline def setScripts(value: js.Array[String]): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+    
+    inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+    
+    inline def setScriptsVarargs(value: String*): Self = StObject.set(x, "scripts", js.Array(value*))
+    
+    inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value*))
+    
+    inline def setTheme(value: PartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setUseBrowserHistory(value: Boolean): Self = StObject.set(x, "useBrowserHistory", value.asInstanceOf[js.Any])
+    
+    inline def setUseBrowserHistoryUndefined: Self = StObject.set(x, "useBrowserHistory", js.undefined)
+  }
 }
-

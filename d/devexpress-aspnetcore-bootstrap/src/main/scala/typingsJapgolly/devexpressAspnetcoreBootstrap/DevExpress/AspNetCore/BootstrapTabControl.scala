@@ -6,19 +6,37 @@ import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstr
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.callbackError
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.endCallback
 import typingsJapgolly.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.tabClick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapTabControl")
 @js.native
-class BootstrapTabControl () extends Control {
+trait BootstrapTabControl
+  extends StObject
+     with Control {
+  
   def adjustSize(): Unit = js.native
+  
   def getActiveTab(): BootstrapTab | Null = js.native
+  
   def getActiveTabIndex(): Double = js.native
+  
   def getTab(index: Double): BootstrapTab | Null = js.native
+  
   def getTabByName(name: String): BootstrapTab | Null = js.native
+  
   def getTabCount(): Double = js.native
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[
+      /* this */ this.type, 
+      js.UndefOr[
+        BeginCallbackEventArgs | CallbackErrorEventArgs | EndCallbackEventArgs | EventArgs | TabControlTabCancelEventArgs | TabControlTabClickEventArgs | TabControlTabEventArgs
+      ], 
+      Unit
+    ]
+  ): this.type = js.native
   @JSName("off")
   def off_activeTabChanged(eventName: activeTabChanged): this.type = js.native
   @JSName("off")
@@ -61,6 +79,7 @@ class BootstrapTabControl () extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("on")
   def on_activeTabChanged(
     eventName: activeTabChanged,
@@ -91,6 +110,7 @@ class BootstrapTabControl () extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_activeTabChanged(
     eventName: activeTabChanged,
@@ -121,7 +141,8 @@ class BootstrapTabControl () extends Control {
     eventName: tabClick,
     callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[TabControlTabClickEventArgs], Unit]
   ): this.type = js.native
+  
   def setActiveTab(tab: BootstrapTab): Unit = js.native
+  
   def setActiveTabIndex(index: Double): Unit = js.native
 }
-

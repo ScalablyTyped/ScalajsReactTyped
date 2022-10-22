@@ -1,21 +1,27 @@
 package typingsJapgolly.natsHemera.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EncoderResult extends js.Object {
+trait EncoderResult extends StObject {
+  
   var error: js.Error
+  
   var value: String | Buffer
 }
-
 object EncoderResult {
-  @scala.inline
-  def apply(error: js.Error, value: String | Buffer): EncoderResult = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
+  inline def apply(error: js.Error, value: String | Buffer): EncoderResult = {
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncoderResult]
   }
+  
+  extension [Self <: EncoderResult](x: Self) {
+    
+    inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String | Buffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

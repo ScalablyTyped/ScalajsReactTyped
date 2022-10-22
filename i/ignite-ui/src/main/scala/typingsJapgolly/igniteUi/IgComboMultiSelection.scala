@@ -1,56 +1,64 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgComboMultiSelection
-  extends /**
-	 * Option for IgComboMultiSelection
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Set addWithKeyModifier to true to disable the additive selection, then additive selection can be done by ctrl + mouse click / enter.
-  	 *
-  	 */
+    * Set addWithKeyModifier to true to disable the additive selection, then additive selection can be done by ctrl + mouse click / enter.
+    *
+    */
   var addWithKeyModifier: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set enabled to true to turn multi selection on. Set to true by default when target element for the combo is a select with the multiple attribute set.
-  	 *
-  	 */
+    * Set enabled to true to turn multi selection on. Set to true by default when target element for the combo is a select with the multiple attribute set.
+    *
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Use itemSeparator to set what string to be rendered between items in field.
-  	 *
-  	 */
+    * Use itemSeparator to set what string to be rendered between items in field.
+    *
+    */
   var itemSeparator: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set showCheckboxes to true to render check boxes in front of each drop down item.
-  	 *
-  	 */
+    * Set showCheckboxes to true to render check boxes in front of each drop down item.
+    *
+    */
   var showCheckboxes: js.UndefOr[Boolean] = js.undefined
 }
-
 object IgComboMultiSelection {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgComboMultiSelection
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    addWithKeyModifier: js.UndefOr[Boolean] = js.undefined,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    itemSeparator: String = null,
-    showCheckboxes: js.UndefOr[Boolean] = js.undefined
-  ): IgComboMultiSelection = {
+  
+  inline def apply(): IgComboMultiSelection = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(addWithKeyModifier)) __obj.updateDynamic("addWithKeyModifier")(addWithKeyModifier.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (itemSeparator != null) __obj.updateDynamic("itemSeparator")(itemSeparator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showCheckboxes)) __obj.updateDynamic("showCheckboxes")(showCheckboxes.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboMultiSelection]
   }
+  
+  extension [Self <: IgComboMultiSelection](x: Self) {
+    
+    inline def setAddWithKeyModifier(value: Boolean): Self = StObject.set(x, "addWithKeyModifier", value.asInstanceOf[js.Any])
+    
+    inline def setAddWithKeyModifierUndefined: Self = StObject.set(x, "addWithKeyModifier", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setItemSeparator(value: String): Self = StObject.set(x, "itemSeparator", value.asInstanceOf[js.Any])
+    
+    inline def setItemSeparatorUndefined: Self = StObject.set(x, "itemSeparator", js.undefined)
+    
+    inline def setShowCheckboxes(value: Boolean): Self = StObject.set(x, "showCheckboxes", value.asInstanceOf[js.Any])
+    
+    inline def setShowCheckboxesUndefined: Self = StObject.set(x, "showCheckboxes", js.undefined)
+  }
 }
-

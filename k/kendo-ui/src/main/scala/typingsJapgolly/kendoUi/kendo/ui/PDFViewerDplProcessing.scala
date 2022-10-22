@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerDplProcessing extends js.Object {
+trait PDFViewerDplProcessing extends StObject {
+  
   var download: js.UndefOr[PDFViewerDplProcessingDownload] = js.undefined
+  
   var loadOnDemand: js.UndefOr[Boolean] = js.undefined
+  
   var read: js.UndefOr[PDFViewerDplProcessingRead] = js.undefined
+  
   var upload: js.UndefOr[PDFViewerDplProcessingUpload] = js.undefined
 }
-
 object PDFViewerDplProcessing {
-  @scala.inline
-  def apply(
-    download: PDFViewerDplProcessingDownload = null,
-    loadOnDemand: js.UndefOr[Boolean] = js.undefined,
-    read: PDFViewerDplProcessingRead = null,
-    upload: PDFViewerDplProcessingUpload = null
-  ): PDFViewerDplProcessing = {
+  
+  inline def apply(): PDFViewerDplProcessing = {
     val __obj = js.Dynamic.literal()
-    if (download != null) __obj.updateDynamic("download")(download.asInstanceOf[js.Any])
-    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand.asInstanceOf[js.Any])
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (upload != null) __obj.updateDynamic("upload")(upload.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerDplProcessing]
   }
+  
+  extension [Self <: PDFViewerDplProcessing](x: Self) {
+    
+    inline def setDownload(value: PDFViewerDplProcessingDownload): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
+    
+    inline def setDownloadUndefined: Self = StObject.set(x, "download", js.undefined)
+    
+    inline def setLoadOnDemand(value: Boolean): Self = StObject.set(x, "loadOnDemand", value.asInstanceOf[js.Any])
+    
+    inline def setLoadOnDemandUndefined: Self = StObject.set(x, "loadOnDemand", js.undefined)
+    
+    inline def setRead(value: PDFViewerDplProcessingRead): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setUpload(value: PDFViewerDplProcessingUpload): Self = StObject.set(x, "upload", value.asInstanceOf[js.Any])
+    
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+  }
 }
-

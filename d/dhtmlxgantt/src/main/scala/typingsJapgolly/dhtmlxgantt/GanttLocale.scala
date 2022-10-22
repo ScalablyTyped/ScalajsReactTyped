@@ -1,20 +1,26 @@
 package typingsJapgolly.dhtmlxgantt
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GanttLocale extends js.Object {
+trait GanttLocale extends StObject {
+  
   var date: GanttLocaleDate
+  
   var labels: GanttLocaleLabels
 }
-
 object GanttLocale {
-  @scala.inline
-  def apply(date: GanttLocaleDate, labels: GanttLocaleLabels): GanttLocale = {
-    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
   
+  inline def apply(date: GanttLocaleDate, labels: GanttLocaleLabels): GanttLocale = {
+    val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], labels = labels.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttLocale]
   }
+  
+  extension [Self <: GanttLocale](x: Self) {
+    
+    inline def setDate(value: GanttLocaleDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setLabels(value: GanttLocaleLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+  }
 }
-

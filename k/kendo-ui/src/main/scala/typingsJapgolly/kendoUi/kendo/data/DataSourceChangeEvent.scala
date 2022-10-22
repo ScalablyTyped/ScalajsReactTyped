@@ -1,38 +1,58 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceChangeEvent extends DataSourceEvent {
+trait DataSourceChangeEvent
+  extends StObject
+     with DataSourceEvent {
+  
   var action: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var index: js.UndefOr[Double] = js.undefined
+  
   var items: js.UndefOr[js.Array[DataSourceItemOrGroup]] = js.undefined
-  var node: js.UndefOr[js.Any] = js.undefined
+  
+  var node: js.UndefOr[Any] = js.undefined
+  
   var value: js.UndefOr[Model] = js.undefined
 }
-
 object DataSourceChangeEvent {
-  @scala.inline
-  def apply(
-    action: String = null,
-    field: String = null,
-    index: Int | Double = null,
-    items: js.Array[DataSourceItemOrGroup] = null,
-    node: js.Any = null,
-    sender: DataSource = null,
-    value: Model = null
-  ): DataSourceChangeEvent = {
+  
+  inline def apply(): DataSourceChangeEvent = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
-    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
-    if (sender != null) __obj.updateDynamic("sender")(sender.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceChangeEvent]
   }
+  
+  extension [Self <: DataSourceChangeEvent](x: Self) {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: DataSourceItemOrGroup*): Self = StObject.set(x, "items", js.Array(value*))
+    
+    inline def setNode(value: Any): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    
+    inline def setValue(value: Model): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

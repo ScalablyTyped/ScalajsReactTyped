@@ -1,49 +1,34 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
 import typingsJapgolly.mjmlReact.mod.ClassNameProps
 import typingsJapgolly.mjmlReact.mod.MjmlBodyProps
-import typingsJapgolly.mjmlReact.mod.RequiredChildrenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlBody {
-  def apply(
-    backgroundColor: BackgroundColorProperty = null,
-    cssClass: String = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RequiredChildrenProps with MjmlBodyProps with ClassNameProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlBody, 
-    Unit, 
-    RequiredChildrenProps with MjmlBodyProps with ClassNameProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.MjmlBodyProps with typingsJapgolly.mjmlReact.mod.ClassNameProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlBody](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.RequiredChildrenProps with typingsJapgolly.mjmlReact.mod.MjmlBodyProps with typingsJapgolly.mjmlReact.mod.ClassNameProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlBody")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlBody] {
+    
+    inline def backgroundColor(value: BackgroundColor): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def cssClass(value: String): this.type = set("cssClass", value.asInstanceOf[js.Any])
+    
+    inline def mjClass(value: String): this.type = set("mjClass", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlBody.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlBodyProps & ClassNameProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,30 +1,42 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanoramaMarkerIconSet extends js.Object {
+trait IPanoramaMarkerIconSet extends StObject {
+  
   var default: IPanoramaMarkerIcon | Null
+  
   var expanded: IPanoramaMarkerIcon | Null
+  
   var expandedHovered: IPanoramaMarkerIcon | Null
+  
   var hovered: IPanoramaMarkerIcon | Null
 }
-
 object IPanoramaMarkerIconSet {
-  @scala.inline
-  def apply(
-    default: IPanoramaMarkerIcon = null,
-    expanded: IPanoramaMarkerIcon = null,
-    expandedHovered: IPanoramaMarkerIcon = null,
-    hovered: IPanoramaMarkerIcon = null
-  ): IPanoramaMarkerIconSet = {
-    val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (expanded != null) __obj.updateDynamic("expanded")(expanded.asInstanceOf[js.Any])
-    if (expandedHovered != null) __obj.updateDynamic("expandedHovered")(expandedHovered.asInstanceOf[js.Any])
-    if (hovered != null) __obj.updateDynamic("hovered")(hovered.asInstanceOf[js.Any])
+  
+  inline def apply(): IPanoramaMarkerIconSet = {
+    val __obj = js.Dynamic.literal(default = null, expanded = null, expandedHovered = null, hovered = null)
     __obj.asInstanceOf[IPanoramaMarkerIconSet]
   }
+  
+  extension [Self <: IPanoramaMarkerIconSet](x: Self) {
+    
+    inline def setDefault(value: IPanoramaMarkerIcon): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
+    
+    inline def setExpanded(value: IPanoramaMarkerIcon): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedHovered(value: IPanoramaMarkerIcon): Self = StObject.set(x, "expandedHovered", value.asInstanceOf[js.Any])
+    
+    inline def setExpandedHoveredNull: Self = StObject.set(x, "expandedHovered", null)
+    
+    inline def setExpandedNull: Self = StObject.set(x, "expanded", null)
+    
+    inline def setHovered(value: IPanoramaMarkerIcon): Self = StObject.set(x, "hovered", value.asInstanceOf[js.Any])
+    
+    inline def setHoveredNull: Self = StObject.set(x, "hovered", null)
+  }
 }
-

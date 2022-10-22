@@ -10,10 +10,10 @@ Flexible ascii progress bar
 | ------------------ | :-------------: |
 | Full name          | progress |
 | Keywords           | cli, progress |
-| # releases         | 4 |
-| # dependents       | 2014 |
-| # downloads        | 398349701 |
-| # stars            | 125 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 7.909232333333333E7 |
+| # stars            | 2788.0 |
 
 ## Links
 - [Homepage](https://github.com/visionmedia/node-progress#readme)

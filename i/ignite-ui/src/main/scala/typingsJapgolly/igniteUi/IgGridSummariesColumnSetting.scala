@@ -1,56 +1,66 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgGridSummariesColumnSetting
-  extends /**
-	 * Option for IgGridSummariesColumnSetting
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Enables disables summaries for the column
-  	 *
-  	 */
+    * Enables disables summaries for the column
+    *
+    */
   var allowSummaries: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Column index. Can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers
-  	 *
-  	 */
+    * Column index. Can be used in place of column key. The preferred way of populating a column setting is to always use the column keys as identifiers
+    *
+    */
   var columnIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Column key. This is a required property in every column setting if columnIndex is not set
-  	 *
-  	 */
+    * Column key. This is a required property in every column setting if columnIndex is not set
+    *
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Check defaultSummaryOperands
-  	 *
-  	 */
+    * Check defaultSummaryOperands
+    *
+    */
   var summaryOperands: js.UndefOr[js.Array[IgGridSummariesColumnSettingSummaryOperand]] = js.undefined
 }
-
 object IgGridSummariesColumnSetting {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgGridSummariesColumnSetting
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    allowSummaries: js.UndefOr[Boolean] = js.undefined,
-    columnIndex: Int | Double = null,
-    columnKey: String = null,
-    summaryOperands: js.Array[IgGridSummariesColumnSettingSummaryOperand] = null
-  ): IgGridSummariesColumnSetting = {
+  
+  inline def apply(): IgGridSummariesColumnSetting = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(allowSummaries)) __obj.updateDynamic("allowSummaries")(allowSummaries.asInstanceOf[js.Any])
-    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (summaryOperands != null) __obj.updateDynamic("summaryOperands")(summaryOperands.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgGridSummariesColumnSetting]
   }
+  
+  extension [Self <: IgGridSummariesColumnSetting](x: Self) {
+    
+    inline def setAllowSummaries(value: Boolean): Self = StObject.set(x, "allowSummaries", value.asInstanceOf[js.Any])
+    
+    inline def setAllowSummariesUndefined: Self = StObject.set(x, "allowSummaries", js.undefined)
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setColumnIndexUndefined: Self = StObject.set(x, "columnIndex", js.undefined)
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setSummaryOperands(value: js.Array[IgGridSummariesColumnSettingSummaryOperand]): Self = StObject.set(x, "summaryOperands", value.asInstanceOf[js.Any])
+    
+    inline def setSummaryOperandsUndefined: Self = StObject.set(x, "summaryOperands", js.undefined)
+    
+    inline def setSummaryOperandsVarargs(value: IgGridSummariesColumnSettingSummaryOperand*): Self = StObject.set(x, "summaryOperands", js.Array(value*))
+  }
 }
-

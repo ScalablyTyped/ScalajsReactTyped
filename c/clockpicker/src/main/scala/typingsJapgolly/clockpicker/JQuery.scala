@@ -1,15 +1,26 @@
 package typingsJapgolly.clockpicker
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
+  def clockpicker(): JQuery
+  def clockpicker(methodName: String, params: Any*): JQuery
+  def clockpicker(options: ClockPickerOptions): JQuery
   @JSName("clockpicker")
-  var clockpicker_Original: ClockPicker = js.native
-  def clockpicker(): JQuery = js.native
-  def clockpicker(methodName: String, params: js.Any*): JQuery = js.native
-  def clockpicker(options: ClockPickerOptions): JQuery = js.native
+  var clockpicker_Original: ClockPicker
 }
-
+object JQuery {
+  
+  inline def apply(clockpicker: ClockPicker): JQuery = {
+    val __obj = js.Dynamic.literal(clockpicker = clockpicker.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setClockpicker(value: ClockPicker): Self = StObject.set(x, "clockpicker", value.asInstanceOf[js.Any])
+  }
+}

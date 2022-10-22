@@ -1,17 +1,23 @@
 package typingsJapgolly.activexExcel.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartTagActions extends js.Object {
+trait SmartTagActions extends StObject {
+  
+  def apply(Index: Any): SmartTagAction = js.native
+  
   val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
   val Count: Double = js.native
+  
   val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
-  def apply(Index: js.Any): SmartTagAction = js.native
-  def Item(Index: js.Any): SmartTagAction = js.native
-  def _Default(Index: js.Any): SmartTagAction = js.native
+  
+  def Item(Index: Any): SmartTagAction = js.native
+  
+  val Parent: Any = js.native
+  
+  def _Default(Index: Any): SmartTagAction = js.native
 }
-

@@ -1,64 +1,45 @@
 package typingsJapgolly.favicons
 
+import typingsJapgolly.favicons.mod.PlatformName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object faviconsStrings {
-  @js.native
-  sealed trait any extends js.Object
   
   @js.native
-  sealed trait black extends js.Object
+  sealed trait android
+    extends StObject
+       with PlatformName
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait `black-translucent` extends js.Object
+  sealed trait appleIcon
+    extends StObject
+       with PlatformName
+  inline def appleIcon: appleIcon = "appleIcon".asInstanceOf[appleIcon]
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait appleStartup
+    extends StObject
+       with PlatformName
+  inline def appleStartup: appleStartup = "appleStartup".asInstanceOf[appleStartup]
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait favicons
+    extends StObject
+       with PlatformName
+  inline def favicons: favicons = "favicons".asInstanceOf[favicons]
   
   @js.native
-  sealed trait fullscreen extends js.Object
+  sealed trait windows
+    extends StObject
+       with PlatformName
+  inline def windows: windows = "windows".asInstanceOf[windows]
   
   @js.native
-  sealed trait landscape extends js.Object
-  
-  @js.native
-  sealed trait `minimal-ui` extends js.Object
-  
-  @js.native
-  sealed trait natural extends js.Object
-  
-  @js.native
-  sealed trait portrait extends js.Object
-  
-  @js.native
-  sealed trait standalone extends js.Object
-  
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
-  @scala.inline
-  def black: black = "black".asInstanceOf[black]
-  @scala.inline
-  def `black-translucent`: `black-translucent` = "black-translucent".asInstanceOf[`black-translucent`]
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
-  @scala.inline
-  def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
-  @scala.inline
-  def landscape: landscape = "landscape".asInstanceOf[landscape]
-  @scala.inline
-  def `minimal-ui`: `minimal-ui` = "minimal-ui".asInstanceOf[`minimal-ui`]
-  @scala.inline
-  def natural: natural = "natural".asInstanceOf[natural]
-  @scala.inline
-  def portrait: portrait = "portrait".asInstanceOf[portrait]
-  @scala.inline
-  def standalone: standalone = "standalone".asInstanceOf[standalone]
+  sealed trait yandex
+    extends StObject
+       with PlatformName
+  inline def yandex: yandex = "yandex".asInstanceOf[yandex]
 }
-

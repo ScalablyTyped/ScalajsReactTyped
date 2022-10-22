@@ -1,20 +1,22 @@
 package typingsJapgolly.typescript.mod
 
 import typingsJapgolly.typescript.mod.SyntaxKind.KeyOfKeyword
-import typingsJapgolly.typescript.mod.SyntaxKind.ReadonlyKeyword
 import typingsJapgolly.typescript.mod.SyntaxKind.TypeOperator
 import typingsJapgolly.typescript.mod.SyntaxKind.UniqueKeyword
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeOperatorNode
-  extends TypeNode
+  extends StObject
+     with TypeNode
      with HasType {
+  
   @JSName("kind")
-  var kind_TypeOperatorNode: TypeOperator = js.native
-  var operator: KeyOfKeyword | UniqueKeyword | ReadonlyKeyword = js.native
-  var `type`: TypeNode = js.native
+  val kind_TypeOperatorNode: TypeOperator = js.native
+  
+  val operator: KeyOfKeyword | UniqueKeyword | typingsJapgolly.typescript.mod.SyntaxKind.ReadonlyKeyword = js.native
+  
+  val `type`: TypeNode = js.native
 }
-

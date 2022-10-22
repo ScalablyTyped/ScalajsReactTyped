@@ -1,12 +1,14 @@
 package typingsJapgolly.netTicks
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("net-ticks", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def netTicksToDate(ticks: Double, timezoneOffsetHours: Double): js.Date = js.native
+object mod {
+  
+  @JSImport("net-ticks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def netTicksToDate(ticks: Double, timezoneOffsetHours: Double): js.Date = (^.asInstanceOf[js.Dynamic].applyDynamic("netTicksToDate")(ticks.asInstanceOf[js.Any], timezoneOffsetHours.asInstanceOf[js.Any])).asInstanceOf[js.Date]
 }
-

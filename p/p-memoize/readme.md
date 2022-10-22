@@ -1,7 +1,7 @@
 
 # Scala.js typings for p-memoize
 
-Typings are for version 3.1.0
+Typings are for version 7.1.1
 
 ## Library description:
 Memoize promise-returning & async functions
@@ -10,10 +10,10 @@ Memoize promise-returning & async functions
 | ------------------ | :-------------: |
 | Full name          | p-memoize |
 | Keywords           | promise, memoize, mem, memoization, function, cache, caching, optimize, performance, ttl, expire, async, await, promises, time, out, cancel, bluebird |
-| # releases         | 7 |
-| # dependents       | 35 |
-| # downloads        | 1278894 |
-| # stars            | 0 |
+| # releases         | 12 |
+| # dependents       | 0.0 |
+| # downloads        | 2300591.6666666665 |
+| # stars            | 310.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/p-memoize#readme)

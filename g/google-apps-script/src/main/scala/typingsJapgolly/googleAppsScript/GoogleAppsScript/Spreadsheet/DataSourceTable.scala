@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify existing data source table. To create a new data source table on a new sheet,
@@ -50,33 +50,46 @@ import scala.scalajs.js.annotation._
   *     // Check status after execution.
   *     Logger.log("Data execution state: %s.", dataSourceTable.getStatus().getExecutionState());
   */
-trait DataSourceTable extends js.Object {
+trait DataSourceTable extends StObject {
+  
   def forceRefreshData(): DataSourceTable
+  
   def getDataSource(): DataSource
+  
   def getRange(): Range
+  
   def getStatus(): DataExecutionStatus
+  
   def refreshData(): DataSourceTable
+  
   def waitForCompletion(timeoutInSeconds: Integer): DataExecutionStatus
 }
-
 object DataSourceTable {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     forceRefreshData: CallbackTo[DataSourceTable],
     getDataSource: CallbackTo[DataSource],
     getRange: CallbackTo[Range],
     getStatus: CallbackTo[DataExecutionStatus],
     refreshData: CallbackTo[DataSourceTable],
-    waitForCompletion: Integer => CallbackTo[DataExecutionStatus]
+    waitForCompletion: Integer => DataExecutionStatus
   ): DataSourceTable = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("forceRefreshData")(forceRefreshData.toJsFn)
-    __obj.updateDynamic("getDataSource")(getDataSource.toJsFn)
-    __obj.updateDynamic("getRange")(getRange.toJsFn)
-    __obj.updateDynamic("getStatus")(getStatus.toJsFn)
-    __obj.updateDynamic("refreshData")(refreshData.toJsFn)
-    __obj.updateDynamic("waitForCompletion")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => waitForCompletion(t0).runNow()))
+    val __obj = js.Dynamic.literal(forceRefreshData = forceRefreshData.toJsFn, getDataSource = getDataSource.toJsFn, getRange = getRange.toJsFn, getStatus = getStatus.toJsFn, refreshData = refreshData.toJsFn, waitForCompletion = js.Any.fromFunction1(waitForCompletion))
     __obj.asInstanceOf[DataSourceTable]
   }
+  
+  extension [Self <: DataSourceTable](x: Self) {
+    
+    inline def setForceRefreshData(value: CallbackTo[DataSourceTable]): Self = StObject.set(x, "forceRefreshData", value.toJsFn)
+    
+    inline def setGetDataSource(value: CallbackTo[DataSource]): Self = StObject.set(x, "getDataSource", value.toJsFn)
+    
+    inline def setGetRange(value: CallbackTo[Range]): Self = StObject.set(x, "getRange", value.toJsFn)
+    
+    inline def setGetStatus(value: CallbackTo[DataExecutionStatus]): Self = StObject.set(x, "getStatus", value.toJsFn)
+    
+    inline def setRefreshData(value: CallbackTo[DataSourceTable]): Self = StObject.set(x, "refreshData", value.toJsFn)
+    
+    inline def setWaitForCompletion(value: Integer => DataExecutionStatus): Self = StObject.set(x, "waitForCompletion", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,50 +1,61 @@
 package typingsJapgolly.officeJs.OneNote
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ParagraphType extends js.Object
-
+sealed trait ParagraphType extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.ParagraphType")
 @js.native
-object ParagraphType extends js.Object {
+object ParagraphType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait image extends ParagraphType
+  sealed trait image
+    extends StObject
+       with ParagraphType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait ink extends ParagraphType
+  sealed trait ink
+    extends StObject
+       with ParagraphType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait other extends ParagraphType
+  sealed trait other
+    extends StObject
+       with ParagraphType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait richText extends ParagraphType
+  sealed trait richText
+    extends StObject
+       with ParagraphType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait table extends ParagraphType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ParagraphType with String] = js.native
-  /* "Image" */ @js.native
-  object image extends TopLevel[image with String]
-  
-  /* "Ink" */ @js.native
-  object ink extends TopLevel[ink with String]
-  
-  /* "Other" */ @js.native
-  object other extends TopLevel[other with String]
-  
-  /* "RichText" */ @js.native
-  object richText extends TopLevel[richText with String]
-  
-  /* "Table" */ @js.native
-  object table extends TopLevel[table with String]
-  
+  sealed trait table
+    extends StObject
+       with ParagraphType
 }
-

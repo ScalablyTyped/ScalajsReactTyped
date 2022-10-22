@@ -1,40 +1,69 @@
 package typingsJapgolly.xlsx.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ColInfo extends js.Object {
+trait ColInfo extends StObject {
+  
+  /** DBF Field Header */
+  var DBF: js.UndefOr[DBFField] = js.undefined
+  
   /** Excel's "Max Digit Width" unit, always integral */
   var MDW: js.UndefOr[Double] = js.undefined
+  
   /* --- visibility --- */
   /** if true, the column is hidden */
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
+  /** outline / group level */
+  var level: js.UndefOr[Double] = js.undefined
+  
   /** width in "characters" */
   var wch: js.UndefOr[Double] = js.undefined
+  
   /* --- column width --- */
   /** width in Excel's "Max Digit Width", width*256 is integral */
   var width: js.UndefOr[Double] = js.undefined
+  
   /** width in screen pixels */
   var wpx: js.UndefOr[Double] = js.undefined
 }
-
 object ColInfo {
-  @scala.inline
-  def apply(
-    MDW: Int | Double = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    wch: Int | Double = null,
-    width: Int | Double = null,
-    wpx: Int | Double = null
-  ): ColInfo = {
+  
+  inline def apply(): ColInfo = {
     val __obj = js.Dynamic.literal()
-    if (MDW != null) __obj.updateDynamic("MDW")(MDW.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (wch != null) __obj.updateDynamic("wch")(wch.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (wpx != null) __obj.updateDynamic("wpx")(wpx.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColInfo]
   }
+  
+  extension [Self <: ColInfo](x: Self) {
+    
+    inline def setDBF(value: DBFField): Self = StObject.set(x, "DBF", value.asInstanceOf[js.Any])
+    
+    inline def setDBFUndefined: Self = StObject.set(x, "DBF", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    
+    inline def setMDW(value: Double): Self = StObject.set(x, "MDW", value.asInstanceOf[js.Any])
+    
+    inline def setMDWUndefined: Self = StObject.set(x, "MDW", js.undefined)
+    
+    inline def setWch(value: Double): Self = StObject.set(x, "wch", value.asInstanceOf[js.Any])
+    
+    inline def setWchUndefined: Self = StObject.set(x, "wch", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setWpx(value: Double): Self = StObject.set(x, "wpx", value.asInstanceOf[js.Any])
+    
+    inline def setWpxUndefined: Self = StObject.set(x, "wpx", js.undefined)
+  }
 }
-

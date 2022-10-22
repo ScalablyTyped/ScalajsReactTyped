@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.SmartCards
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SmartCardReaderStatus extends js.Object
-
+sealed trait SmartCardReaderStatus extends StObject
 /** Specifies the smart card reader's status. */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardReaderStatus")
 @js.native
-object SmartCardReaderStatus extends js.Object {
+object SmartCardReaderStatus extends StObject {
+  
   /** The smart card reader is disconnected. */
   @js.native
-  sealed trait disconnected extends SmartCardReaderStatus
+  sealed trait disconnected
+    extends StObject
+       with SmartCardReaderStatus
   
   /** The smart card reader is allocated for exclusive use by another app. */
   @js.native
-  sealed trait exclusive extends SmartCardReaderStatus
+  sealed trait exclusive
+    extends StObject
+       with SmartCardReaderStatus
   
   /** The smart card reader is ready. */
   @js.native
-  sealed trait ready extends SmartCardReaderStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SmartCardReaderStatus with Double] = js.native
-  /* 0 */ @js.native
-  object disconnected extends TopLevel[disconnected with Double]
-  
-  /* 2 */ @js.native
-  object exclusive extends TopLevel[exclusive with Double]
-  
-  /* 1 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
+  sealed trait ready
+    extends StObject
+       with SmartCardReaderStatus
 }
-

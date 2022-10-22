@@ -1,21 +1,30 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartStem extends js.Object {
+trait ChartStem extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var length: js.UndefOr[Double] = js.undefined
 }
-
 object ChartStem {
-  @scala.inline
-  def apply(color: String = null, length: Int | Double = null): ChartStem = {
+  
+  inline def apply(): ChartStem = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartStem]
   }
+  
+  extension [Self <: ChartStem](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+  }
 }
-

@@ -1,47 +1,45 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SymbolFormatFlags extends js.Object
-
+sealed trait SymbolFormatFlags extends StObject
 @JSImport("typescript", "SymbolFormatFlags")
 @js.native
-object SymbolFormatFlags extends js.Object {
-  @js.native
-  sealed trait AllowAnyNodeKind extends SymbolFormatFlags
-  
-  @js.native
-  sealed trait None extends SymbolFormatFlags
-  
-  @js.native
-  sealed trait UseAliasDefinedOutsideCurrentScope extends SymbolFormatFlags
-  
-  @js.native
-  sealed trait UseOnlyExternalAliasing extends SymbolFormatFlags
-  
-  @js.native
-  sealed trait WriteTypeParametersOrArguments extends SymbolFormatFlags
+object SymbolFormatFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SymbolFormatFlags with Double] = js.native
-  /* 4 */ @js.native
-  object AllowAnyNodeKind extends TopLevel[AllowAnyNodeKind with Double]
+  def apply(value: Double): js.UndefOr[SymbolFormatFlags & Double] = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  @js.native
+  sealed trait AllowAnyNodeKind
+    extends StObject
+       with SymbolFormatFlags
+  /* 4 */ val AllowAnyNodeKind: typingsJapgolly.typescript.mod.SymbolFormatFlags.AllowAnyNodeKind & Double = js.native
   
-  /* 8 */ @js.native
-  object UseAliasDefinedOutsideCurrentScope extends TopLevel[UseAliasDefinedOutsideCurrentScope with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with SymbolFormatFlags
+  /* 0 */ val None: typingsJapgolly.typescript.mod.SymbolFormatFlags.None & Double = js.native
   
-  /* 2 */ @js.native
-  object UseOnlyExternalAliasing extends TopLevel[UseOnlyExternalAliasing with Double]
+  @js.native
+  sealed trait UseAliasDefinedOutsideCurrentScope
+    extends StObject
+       with SymbolFormatFlags
+  /* 8 */ val UseAliasDefinedOutsideCurrentScope: typingsJapgolly.typescript.mod.SymbolFormatFlags.UseAliasDefinedOutsideCurrentScope & Double = js.native
   
-  /* 1 */ @js.native
-  object WriteTypeParametersOrArguments extends TopLevel[WriteTypeParametersOrArguments with Double]
+  @js.native
+  sealed trait UseOnlyExternalAliasing
+    extends StObject
+       with SymbolFormatFlags
+  /* 2 */ val UseOnlyExternalAliasing: typingsJapgolly.typescript.mod.SymbolFormatFlags.UseOnlyExternalAliasing & Double = js.native
   
+  @js.native
+  sealed trait WriteTypeParametersOrArguments
+    extends StObject
+       with SymbolFormatFlags
+  /* 1 */ val WriteTypeParametersOrArguments: typingsJapgolly.typescript.mod.SymbolFormatFlags.WriteTypeParametersOrArguments & Double = js.native
 }
-

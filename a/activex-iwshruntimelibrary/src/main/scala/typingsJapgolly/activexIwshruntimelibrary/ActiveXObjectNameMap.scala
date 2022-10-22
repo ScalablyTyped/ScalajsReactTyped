@@ -4,23 +4,26 @@ import typingsJapgolly.activexIwshruntimelibrary.IWshRuntimeLibrary.WshNetwork
 import typingsJapgolly.activexIwshruntimelibrary.IWshRuntimeLibrary.WshShell
 import typingsJapgolly.activexIwshruntimelibrary.ScriptSigner.Signer
 import typingsJapgolly.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActiveXObjectNameMap extends js.Object {
+trait ActiveXObjectNameMap extends StObject {
+  
   @JSName("Scripting.Signer")
   var ScriptingDotSigner: Signer
+  
   var WSHController: typingsJapgolly.activexIwshruntimelibrary.WSHControllerLibrary.WSHController
+  
   @JSName("WScript.Network")
   var WScriptDotNetwork: WshNetwork
+  
   @JSName("WScript.Shell")
   var WScriptDotShell: WshShell
 }
-
 object ActiveXObjectNameMap {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     ScriptingDotSigner: Signer,
     WSHController: WSHController,
     WScriptDotNetwork: WshNetwork,
@@ -32,5 +35,15 @@ object ActiveXObjectNameMap {
     __obj.updateDynamic("WScript.Shell")(WScriptDotShell.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
+  
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
+    
+    inline def setScriptingDotSigner(value: Signer): Self = StObject.set(x, "Scripting.Signer", value.asInstanceOf[js.Any])
+    
+    inline def setWSHController(value: WSHController): Self = StObject.set(x, "WSHController", value.asInstanceOf[js.Any])
+    
+    inline def setWScriptDotNetwork(value: WshNetwork): Self = StObject.set(x, "WScript.Network", value.asInstanceOf[js.Any])
+    
+    inline def setWScriptDotShell(value: WshShell): Self = StObject.set(x, "WScript.Shell", value.asInstanceOf[js.Any])
+  }
 }
-

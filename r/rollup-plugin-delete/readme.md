@@ -1,7 +1,7 @@
 
 # Scala.js typings for rollup-plugin-delete
 
-Typings are for version 1.2.0
+Typings are for version 2.0.0
 
 ## Library description:
 Delete files and folders using Rollup
@@ -9,11 +9,11 @@ Delete files and folders using Rollup
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-delete |
-| Keywords           | rollup, rollup-plugin, delete, clear, clean, remove |
-| # releases         | 10 |
-| # dependents       | 9 |
-| # downloads        | 77842 |
-| # stars            | 0 |
+| Keywords           | rollup, rollup-plugin, delete, clear, clean, remove, file, folder, directory |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 206854.33333333334 |
+| # stars            | 58.0 |
 
 ## Links
 - [Homepage](https://github.com/vladshcherbin/rollup-plugin-delete#readme)

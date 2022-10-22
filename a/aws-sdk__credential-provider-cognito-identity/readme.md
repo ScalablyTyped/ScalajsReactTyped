@@ -1,20 +1,24 @@
 
 # Scala.js typings for aws-sdk__credential-provider-cognito-identity
 
-Typings are for version 0.1.0-preview.2
+Typings are for version 3.188.0
 
-
+## Library description:
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/credential-provider-cognito-identity/latest.svg)](https://www.npmjs.com/package/@aws-sdk/credential-provider-cognito-identity) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/credential-provid
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/credential-provider-cognito-identity |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 0 |
-| # downloads        | 1831 |
-| # stars            | 0 |
+| # releases         | 131 |
+| # dependents       | 0.0 |
+| # downloads        | 2418143.0 |
+| # stars            | 1888.0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/credential-provider-cognito-identity)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fcredential-provider-cognito-identity)
     
 

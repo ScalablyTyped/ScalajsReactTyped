@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.MaxHeightProperty
+import typingsJapgolly.csstype.mod.Property.MaxHeight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MaxHeightProps[TLength] extends js.Object {
-  val maxHeight: js.UndefOr[ResponsiveValue[MaxHeightProperty[TLength]]] = js.undefined
+trait MaxHeightProps[TLength] extends StObject {
+  
+  val maxHeight: js.UndefOr[ResponsiveValue[MaxHeight[TLength]]] = js.undefined
 }
-
 object MaxHeightProps {
-  @scala.inline
-  def apply[TLength](maxHeight: ResponsiveValue[MaxHeightProperty[TLength]] = null): MaxHeightProps[TLength] = {
+  
+  inline def apply[TLength](): MaxHeightProps[TLength] = {
     val __obj = js.Dynamic.literal()
-    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MaxHeightProps[TLength]]
   }
+  
+  extension [Self <: MaxHeightProps[?], TLength](x: Self & MaxHeightProps[TLength]) {
+    
+    inline def setMaxHeight(value: ResponsiveValue[MaxHeight[TLength]]): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+    
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+    
+    inline def setMaxHeightVarargs(value: MaxHeight[TLength]*): Self = StObject.set(x, "maxHeight", js.Array(value*))
+  }
 }
-

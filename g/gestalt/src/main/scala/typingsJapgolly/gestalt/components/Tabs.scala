@@ -1,44 +1,40 @@
 package typingsJapgolly.gestalt.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.gestalt.AnonActiveTabIndex
-import typingsJapgolly.gestalt.AnonHref
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.gestalt.anon.ActiveTabIndex
+import typingsJapgolly.gestalt.anon.Id
+import typingsJapgolly.gestalt.gestaltStrings.default
+import typingsJapgolly.gestalt.gestaltStrings.lg
+import typingsJapgolly.gestalt.gestaltStrings.md
+import typingsJapgolly.gestalt.gestaltStrings.transparent
 import typingsJapgolly.gestalt.mod.TabsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
-  def apply(
-    activeTabIndex: Double,
-    tabs: js.Array[AnonHref],
-    onChange: AnonActiveTabIndex => Callback,
-    wrap: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TabsProps, typingsJapgolly.gestalt.mod.Tabs, Unit, TabsProps] = {
-    val __obj = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.gestalt.AnonActiveTabIndex) => onChange(t0).runNow()))
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.gestalt.mod.TabsProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.gestalt.mod.Tabs](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.gestalt.mod.TabsProps])(children: _*)
+  inline def apply(activeTabIndex: Double, onChange: ActiveTabIndex => Callback, tabs: js.Array[Id]): Builder = {
+    val __props = js.Dynamic.literal(activeTabIndex = activeTabIndex.asInstanceOf[js.Any], onChange = js.Any.fromFunction1((t0: ActiveTabIndex) => onChange(t0).runNow()), tabs = tabs.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TabsProps]))
   }
+  
   @JSImport("gestalt", "Tabs")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def bgColor(value: default | transparent): this.type = set("bgColor", value.asInstanceOf[js.Any])
+    
+    inline def size(value: md | lg): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def wrap(value: Boolean): this.type = set("wrap", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TabsProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

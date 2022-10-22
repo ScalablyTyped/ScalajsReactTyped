@@ -1,29 +1,28 @@
 package typingsJapgolly.kendoUi.kendo.geometry
 
-import typingsJapgolly.kendoUi.kendo.Observable_
+import typingsJapgolly.kendoUi.kendo.Observable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.geometry.Size")
 @js.native
-class Size () extends Observable_ {
-  var height: Double = js.native
-  var options: SizeOptions = js.native
-  var width: Double = js.native
+trait Size
+  extends StObject
+     with Observable {
+  
   def equals(other: Size): Boolean = js.native
+  
   def getHeight(): Double = js.native
+  
   def getWidth(): Double = js.native
+  
+  var height: Double = js.native
+  
+  var options: SizeOptions = js.native
+  
   def setHeight(value: Double): Size = js.native
+  
   def setWidth(value: Double): Size = js.native
+  
+  var width: Double = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.geometry.Size")
-@js.native
-object Size extends js.Object {
-  def create(width: js.Any, height: Double): Size = js.native
-  def create(width: Double, height: Double): Size = js.native
-  def create(width: Size, height: Double): Size = js.native
-}
-

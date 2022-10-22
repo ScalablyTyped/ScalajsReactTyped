@@ -1,12 +1,14 @@
 package typingsJapgolly.workboxCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-core/registerQuotaErrorCallback", JSImport.Namespace)
-@js.native
-object registerQuotaErrorCallbackMod extends js.Object {
-  def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = js.native
+object registerQuotaErrorCallbackMod {
+  
+  @JSImport("workbox-core/registerQuotaErrorCallback", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def registerQuotaErrorCallback(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerQuotaErrorCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

@@ -1,14 +1,19 @@
 package typingsJapgolly.documentdb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Collection extends UniqueId {
+trait Collection
+  extends StObject
+     with UniqueId {
+  
   /** The default time to live in seconds for documents in a collection. */
   var defaultTtl: js.UndefOr[Double] = js.undefined
+  
   /** The indexing policy associated with the collection. */
   var indexingPolicy: js.UndefOr[IndexingPolicy] = js.undefined
+  
   /**
     * This value is used to configure the partition key to be used for partitioning data into multiple partitions.
     *
@@ -18,20 +23,25 @@ trait Collection extends UniqueId {
     */
   var partitionKey: js.UndefOr[CollectionPartitionKey] = js.undefined
 }
-
 object Collection {
-  @scala.inline
-  def apply(
-    id: String,
-    defaultTtl: Int | Double = null,
-    indexingPolicy: IndexingPolicy = null,
-    partitionKey: CollectionPartitionKey = null
-  ): Collection = {
+  
+  inline def apply(id: String): Collection = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    if (defaultTtl != null) __obj.updateDynamic("defaultTtl")(defaultTtl.asInstanceOf[js.Any])
-    if (indexingPolicy != null) __obj.updateDynamic("indexingPolicy")(indexingPolicy.asInstanceOf[js.Any])
-    if (partitionKey != null) __obj.updateDynamic("partitionKey")(partitionKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[Collection]
   }
+  
+  extension [Self <: Collection](x: Self) {
+    
+    inline def setDefaultTtl(value: Double): Self = StObject.set(x, "defaultTtl", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultTtlUndefined: Self = StObject.set(x, "defaultTtl", js.undefined)
+    
+    inline def setIndexingPolicy(value: IndexingPolicy): Self = StObject.set(x, "indexingPolicy", value.asInstanceOf[js.Any])
+    
+    inline def setIndexingPolicyUndefined: Self = StObject.set(x, "indexingPolicy", js.undefined)
+    
+    inline def setPartitionKey(value: CollectionPartitionKey): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+    
+    inline def setPartitionKeyUndefined: Self = StObject.set(x, "partitionKey", js.undefined)
+  }
 }
-

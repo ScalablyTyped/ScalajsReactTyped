@@ -1,24 +1,15 @@
 package typingsJapgolly.awsSdkMiddlewareStack
 
-import typingsJapgolly.awsSdkTypes.middlewareMod.Middleware
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.MiddlewareStack
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-stack", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class MiddlewareStack[Input /* <: js.Object */, Output /* <: js.Object */, Stream] ()
-    extends typingsJapgolly.awsSdkTypes.middlewareMod.MiddlewareStack[Input, Output, Stream] {
-    val entries: js.Any = js.native
-    var removeByIdentity: js.Any = js.native
-    var removeByTag: js.Any = js.native
-    var sort: js.Any = js.native
-    var sorted: js.Any = js.native
-    def add(middleware: Middleware[Input, Output], options: HandlerOptionsstepinitial): Unit = js.native
-    def concat[InputType /* <: Input */, OutputType /* <: Output */](from: MiddlewareStack[InputType, OutputType, Stream]): MiddlewareStack[InputType, OutputType, Stream] = js.native
-  }
+object mod {
   
+  @JSImport("@aws-sdk/middleware-stack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def constructStack[Input /* <: js.Object */, Output /* <: js.Object */](): MiddlewareStack[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("constructStack")().asInstanceOf[MiddlewareStack[Input, Output]]
 }
-

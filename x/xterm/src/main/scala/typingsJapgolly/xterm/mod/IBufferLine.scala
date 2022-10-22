@@ -1,23 +1,15 @@
 package typingsJapgolly.xterm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a line in the terminal's buffer.
   */
 @js.native
-trait IBufferLine extends js.Object {
-  /**
-    * Whether the line is wrapped from the previous line.
-    */
-  val isWrapped: Boolean = js.native
-  /**
-    * The length of the line, all call to getCell beyond the length will result
-    * in `undefined`.
-    */
-  val length: Double = js.native
+trait IBufferLine extends StObject {
+  
   /**
     * Gets a cell from the line, or undefined if the line index does not exist.
     *
@@ -32,6 +24,20 @@ trait IBufferLine extends js.Object {
     */
   def getCell(x: Double): js.UndefOr[IBufferCell] = js.native
   def getCell(x: Double, cell: IBufferCell): js.UndefOr[IBufferCell] = js.native
+  
+  /**
+    * Whether the line is wrapped from the previous line.
+    */
+  val isWrapped: Boolean = js.native
+  
+  /**
+    * The length of the line, all call to getCell beyond the length will result
+    * in `undefined`. Note that this may exceed columns as the line array may
+    * not be trimmed after a resize, compare against {@link Terminal.cols} to
+    * get the actual maximum length of a line.
+    */
+  val length: Double = js.native
+  
   /**
     * Gets the line as a string. Note that this is gets only the string for the
     * line, not taking isWrapped into account.
@@ -44,5 +50,8 @@ trait IBufferLine extends js.Object {
   def translateToString(trimRight: Boolean): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double): String = js.native
   def translateToString(trimRight: Boolean, startColumn: Double, endColumn: Double): String = js.native
+  def translateToString(trimRight: Boolean, startColumn: Unit, endColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Double, endColumn: Double): String = js.native
+  def translateToString(trimRight: Unit, startColumn: Unit, endColumn: Double): String = js.native
 }
-

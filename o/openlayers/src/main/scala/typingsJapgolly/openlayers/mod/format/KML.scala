@@ -1,15 +1,15 @@
 package typingsJapgolly.openlayers.mod.format
 
+import org.scalajs.dom.Document
+import org.scalajs.dom.Node
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.olx.format.KMLOptions
 import typingsJapgolly.openlayers.mod.olx.format.ReadOptions
 import typingsJapgolly.openlayers.mod.olx.format.WriteOptions
 import typingsJapgolly.openlayers.mod.proj.Projection
-import typingsJapgolly.std.Document_
-import typingsJapgolly.std.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -33,12 +33,11 @@ import scala.scalajs.js.annotation._
   * @param opt_options Options.
   * @api stable
   */
-class KML () extends XMLFeature {
+open class KML () extends XMLFeature {
   def this(opt_options: KMLOptions) = this()
+  
   def readFeature(source: String): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: String, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   /**
     * Read the first feature from a KML source. MultiGeometries are converted into
     * GeometryCollections if they are a mix of geometry types, and into MultiPoint/
@@ -49,14 +48,15 @@ class KML () extends XMLFeature {
     * @return Feature.
     * @api stable
     */
-  def readFeature(source: Document_): typingsJapgolly.openlayers.mod.Feature = js.native
-  def readFeature(source: Document_, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: Document, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node): typingsJapgolly.openlayers.mod.Feature = js.native
   def readFeature(source: Node, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject): typingsJapgolly.openlayers.mod.Feature = js.native
+  def readFeature(source: GlobalObject, opt_options: ReadOptions): typingsJapgolly.openlayers.mod.Feature = js.native
+  
   def readFeatures(source: String): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: String, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   /**
     * Read all features from a KML source. MultiGeometries are converted into
     * GeometryCollections if they are a mix of geometry types, and into MultiPoint/
@@ -67,10 +67,13 @@ class KML () extends XMLFeature {
     * @return Features.
     * @api stable
     */
-  def readFeatures(source: Document_): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
-  def readFeatures(source: Document_, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: Document, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
   def readFeatures(source: Node, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  def readFeatures(source: GlobalObject, opt_options: ReadOptions): js.Array[typingsJapgolly.openlayers.mod.Feature] = js.native
+  
   def readName(source: String): String = js.native
   /**
     * Read the name of the KML.
@@ -79,8 +82,9 @@ class KML () extends XMLFeature {
     * @return Name.
     * @api stable
     */
-  def readName(source: Document_): String = js.native
+  def readName(source: Document): String = js.native
   def readName(source: Node): String = js.native
+  
   def readNetworkLinks(source: String): js.Array[GlobalObject] = js.native
   /**
     * Read the network links of the KML.
@@ -89,10 +93,10 @@ class KML () extends XMLFeature {
     * @return Network links.
     * @api
     */
-  def readNetworkLinks(source: Document_): js.Array[GlobalObject] = js.native
+  def readNetworkLinks(source: Document): js.Array[GlobalObject] = js.native
   def readNetworkLinks(source: Node): js.Array[GlobalObject] = js.native
+  
   def readProjection(source: String): Projection = js.native
-  def readProjection(source: GlobalObject): Projection = js.native
   /**
     * Read the projection from a KML source.
     *
@@ -100,8 +104,10 @@ class KML () extends XMLFeature {
     * @return Projection.
     * @api stable
     */
-  def readProjection(source: Document_): Projection = js.native
+  def readProjection(source: Document): Projection = js.native
   def readProjection(source: Node): Projection = js.native
+  def readProjection(source: GlobalObject): Projection = js.native
+  
   /**
     * Encode an array of features in the KML format. GeometryCollections, MultiPoints,
     * MultiLineStrings, and MultiPolygons are output as MultiGeometries.
@@ -113,6 +119,7 @@ class KML () extends XMLFeature {
     */
   def writeFeatures(features: js.Array[typingsJapgolly.openlayers.mod.Feature]): String = js.native
   def writeFeatures(features: js.Array[typingsJapgolly.openlayers.mod.Feature], opt_options: WriteOptions): String = js.native
+  
   /**
     * Encode an array of features in the KML format as an XML node. GeometryCollections,
     * MultiPoints, MultiLineStrings, and MultiPolygons are output as MultiGeometries.
@@ -122,7 +129,6 @@ class KML () extends XMLFeature {
     * @return Node.
     * @api
     */
-  def writeFeaturesNode(features: js.Array[typingsJapgolly.openlayers.mod.Feature]): org.scalajs.dom.raw.Node = js.native
-  def writeFeaturesNode(features: js.Array[typingsJapgolly.openlayers.mod.Feature], opt_options: WriteOptions): org.scalajs.dom.raw.Node = js.native
+  def writeFeaturesNode(features: js.Array[typingsJapgolly.openlayers.mod.Feature]): Node = js.native
+  def writeFeaturesNode(features: js.Array[typingsJapgolly.openlayers.mod.Feature], opt_options: WriteOptions): Node = js.native
 }
-

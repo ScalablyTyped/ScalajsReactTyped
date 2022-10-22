@@ -1,19 +1,15 @@
 package typingsJapgolly.antvG2
 
+import typingsJapgolly.antvG2.libInterfaceMod.AriaOption
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antvG2Booleans {
-  @js.native
-  sealed trait `false` extends js.Object
   
   @js.native
-  sealed trait `true` extends js.Object
-  
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  sealed trait `false`
+    extends StObject
+       with AriaOption
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }
-

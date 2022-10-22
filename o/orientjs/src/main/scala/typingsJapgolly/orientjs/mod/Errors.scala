@@ -1,26 +1,30 @@
 package typingsJapgolly.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("orientjs", "Errors")
-@js.native
-object Errors extends js.Object {
+object Errors {
+  
+  @JSImport("orientjs", "Errors.BaseError")
   @js.native
-  class BaseError () extends js.Object {
-    var name: String = js.native
+  open class BaseError () extends StObject {
+    
     def init(name: String): Unit = js.native
+    
+    var name: String = js.native
   }
   
+  @JSImport("orientjs", "Errors.OperationError")
   @js.native
-  class OperationError () extends BaseError {
-    var date: js.Any = js.native
+  open class OperationError () extends BaseError {
+    
+    var date: Any = js.native
+    
     var message: String = js.native
   }
   
+  @JSImport("orientjs", "Errors.RequestError")
   @js.native
-  class RequestError () extends OperationError
-  
+  open class RequestError () extends OperationError
 }
-

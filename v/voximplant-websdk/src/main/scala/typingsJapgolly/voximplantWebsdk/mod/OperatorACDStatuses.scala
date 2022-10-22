@@ -1,59 +1,57 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait OperatorACDStatuses extends js.Object
-
+sealed trait OperatorACDStatuses extends StObject
 @JSImport("voximplant-websdk", "OperatorACDStatuses")
 @js.native
-object OperatorACDStatuses extends js.Object {
-  @js.native
-  sealed trait AfterService extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait DND extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait InService extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait Offline extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait Online extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait Ready extends OperatorACDStatuses
-  
-  @js.native
-  sealed trait Timeout extends OperatorACDStatuses
+object OperatorACDStatuses extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[OperatorACDStatuses with Double] = js.native
-  /* 0 */ @js.native
-  object AfterService extends TopLevel[AfterService with Double]
+  def apply(value: Double): js.UndefOr[OperatorACDStatuses & Double] = js.native
   
-  /* 1 */ @js.native
-  object DND extends TopLevel[DND with Double]
+  @js.native
+  sealed trait AfterService
+    extends StObject
+       with OperatorACDStatuses
+  /* 0 */ val AfterService: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.AfterService & Double = js.native
   
-  /* 2 */ @js.native
-  object InService extends TopLevel[InService with Double]
+  @js.native
+  sealed trait DND
+    extends StObject
+       with OperatorACDStatuses
+  /* 1 */ val DND: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.DND & Double = js.native
   
-  /* 3 */ @js.native
-  object Offline extends TopLevel[Offline with Double]
+  @js.native
+  sealed trait InService
+    extends StObject
+       with OperatorACDStatuses
+  /* 2 */ val InService: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.InService & Double = js.native
   
-  /* 4 */ @js.native
-  object Online extends TopLevel[Online with Double]
+  @js.native
+  sealed trait Offline
+    extends StObject
+       with OperatorACDStatuses
+  /* 3 */ val Offline: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.Offline & Double = js.native
   
-  /* 5 */ @js.native
-  object Ready extends TopLevel[Ready with Double]
+  @js.native
+  sealed trait Online
+    extends StObject
+       with OperatorACDStatuses
+  /* 4 */ val Online: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.Online & Double = js.native
   
-  /* 6 */ @js.native
-  object Timeout extends TopLevel[Timeout with Double]
+  @js.native
+  sealed trait Ready
+    extends StObject
+       with OperatorACDStatuses
+  /* 5 */ val Ready: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.Ready & Double = js.native
   
+  @js.native
+  sealed trait Timeout
+    extends StObject
+       with OperatorACDStatuses
+  /* 6 */ val Timeout: typingsJapgolly.voximplantWebsdk.mod.OperatorACDStatuses.Timeout & Double = js.native
 }
-

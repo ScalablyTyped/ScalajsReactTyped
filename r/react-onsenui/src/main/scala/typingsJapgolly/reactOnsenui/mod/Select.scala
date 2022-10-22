@@ -1,12 +1,18 @@
 package typingsJapgolly.reactOnsenui.mod
 
-import typingsJapgolly.reactOnsenui.HTMLAttributesidclassNameAutofocus
+import typingsJapgolly.reactOnsenui.anon.Autofocus
+import typingsJapgolly.reactOnsenui.anon.HTMLAttributesidclassName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-onsenui", "Select")
 @js.native
-class Select ()
-  extends typingsJapgolly.react.mod.Component[HTMLAttributesidclassNameAutofocus, js.Any, js.Any]
-
+open class Select protected () extends Component[Autofocus, Any] {
+  def this(props: HTMLAttributesidclassName & Autofocus) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: HTMLAttributesidclassName & Autofocus, context: Any) = this()
+}

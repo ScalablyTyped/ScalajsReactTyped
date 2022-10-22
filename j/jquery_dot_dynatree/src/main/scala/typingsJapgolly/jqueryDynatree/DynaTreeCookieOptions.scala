@@ -1,19 +1,22 @@
 package typingsJapgolly.jqueryDynatree
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynaTreeCookieOptions extends js.Object {
-  var expires: js.Any
-}
-
-object DynaTreeCookieOptions {
-  @scala.inline
-  def apply(expires: js.Any): DynaTreeCookieOptions = {
-    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
+trait DynaTreeCookieOptions extends StObject {
   
+  var expires: Any
+}
+object DynaTreeCookieOptions {
+  
+  inline def apply(expires: Any): DynaTreeCookieOptions = {
+    val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynaTreeCookieOptions]
   }
+  
+  extension [Self <: DynaTreeCookieOptions](x: Self) {
+    
+    inline def setExpires(value: Any): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+  }
 }
-

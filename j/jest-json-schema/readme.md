@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-json-schema
 
-Typings are for version 2.1
+Typings are for version 6.1
 
 ## Library description:
 JSON schema matcher for jest
@@ -10,10 +10,10 @@ JSON schema matcher for jest
 | ------------------ | :-------------: |
 | Full name          | jest-json-schema |
 | Keywords           | jest, json, schema, matcher, test |
-| # releases         | 7 |
-| # dependents       | 3 |
-| # downloads        | 456040 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 156963.66666666666 |
+| # stars            | 142.0 |
 
 ## Links
 - [Homepage](https://github.com/americanexpress/jest-json-schema#readme)

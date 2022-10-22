@@ -1,20 +1,25 @@
 package typingsJapgolly.naverWhale.whale.tabs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReloadProperties extends js.Object {
+trait ReloadProperties extends StObject {
+  
   /** Optional. Whether using any local cache. Default is false. */
   var bypassCache: js.UndefOr[Boolean] = js.undefined
 }
-
 object ReloadProperties {
-  @scala.inline
-  def apply(bypassCache: js.UndefOr[Boolean] = js.undefined): ReloadProperties = {
+  
+  inline def apply(): ReloadProperties = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bypassCache)) __obj.updateDynamic("bypassCache")(bypassCache.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReloadProperties]
   }
+  
+  extension [Self <: ReloadProperties](x: Self) {
+    
+    inline def setBypassCache(value: Boolean): Self = StObject.set(x, "bypassCache", value.asInstanceOf[js.Any])
+    
+    inline def setBypassCacheUndefined: Self = StObject.set(x, "bypassCache", js.undefined)
+  }
 }
-

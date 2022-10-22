@@ -10,10 +10,10 @@ SDK for PayPal REST APIs
 | ------------------ | :-------------: |
 | Full name          | paypal-rest-sdk |
 | Keywords           | paypal, rest, api, sdk |
-| # releases         | 4 |
-| # dependents       | 44 |
-| # downloads        | 1061180 |
-| # stars            | 11 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 126154.0 |
+| # stars            | 1250.0 |
 
 ## Links
 - [Homepage](https://github.com/paypal/PayPal-node-SDK)

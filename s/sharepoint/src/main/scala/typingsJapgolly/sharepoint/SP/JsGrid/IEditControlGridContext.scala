@@ -1,36 +1,41 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
 import japgolly.scalajs.react.Callback
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.microsoftAjax.Sys.UI.DomEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IEditControlGridContext extends IEditActorGridContext {
+trait IEditControlGridContext
+  extends StObject
+     with IEditActorGridContext {
+  
   def OnActivateActor(): Unit
+  
   def OnDeactivateActor(): Unit
 }
-
 object IEditControlGridContext {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     OnActivateActor: Callback,
     OnDeactivateActor: Callback,
     OnKeyDown: DomEvent => Callback,
-    RTL: js.Any,
+    RTL: Any,
     bLightFocus: Boolean,
-    emptyValue: js.Any,
+    emptyValue: Any,
     jsGridObj: JsGridControl,
     parentNode: HTMLElement,
     styleManager: IStyleManager
   ): IEditControlGridContext = {
-    val __obj = js.Dynamic.literal(RTL = RTL.asInstanceOf[js.Any], bLightFocus = bLightFocus.asInstanceOf[js.Any], emptyValue = emptyValue.asInstanceOf[js.Any], jsGridObj = jsGridObj.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], styleManager = styleManager.asInstanceOf[js.Any])
-    __obj.updateDynamic("OnActivateActor")(OnActivateActor.toJsFn)
-    __obj.updateDynamic("OnDeactivateActor")(OnDeactivateActor.toJsFn)
-    __obj.updateDynamic("OnKeyDown")(js.Any.fromFunction1((t0: typingsJapgolly.microsoftAjax.Sys.UI.DomEvent) => OnKeyDown(t0).runNow()))
+    val __obj = js.Dynamic.literal(OnActivateActor = OnActivateActor.toJsFn, OnDeactivateActor = OnDeactivateActor.toJsFn, OnKeyDown = js.Any.fromFunction1((t0: DomEvent) => OnKeyDown(t0).runNow()), RTL = RTL.asInstanceOf[js.Any], bLightFocus = bLightFocus.asInstanceOf[js.Any], emptyValue = emptyValue.asInstanceOf[js.Any], jsGridObj = jsGridObj.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], styleManager = styleManager.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEditControlGridContext]
   }
+  
+  extension [Self <: IEditControlGridContext](x: Self) {
+    
+    inline def setOnActivateActor(value: Callback): Self = StObject.set(x, "OnActivateActor", value.toJsFn)
+    
+    inline def setOnDeactivateActor(value: Callback): Self = StObject.set(x, "OnDeactivateActor", value.toJsFn)
+  }
 }
-

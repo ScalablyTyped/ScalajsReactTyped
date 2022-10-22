@@ -1,42 +1,72 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-leading`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-left`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-right`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`bottom-trailing`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-leading`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-left`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-right`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`top-trailing`
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.manual
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UIMoveComponent extends Object {
+trait UIMoveComponent
+  extends StObject
+     with Object {
+  
   /**
-    * The component to move. This can be a widget instance, HTML element, a string value representing a DOM node ID.
+    * The component to move.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
     */
   var component: Widget_ | HTMLElement | String
+  
   /**
-    * The destination position. The component will be placed in the UI [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#container) when not provided. If not specified, `manual` is used by default. Using `manual` allows you to place the component in a container where you can position it anywhere using CSS. **Possible Values:** bottom-leading | bottom-left | bottom-right | bottom-trailing | top-leading | top-left | top-right | top-trailing | manual
+    * The placement index of the component.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
     */
-  var position: js.UndefOr[String] = js.undefined
+  var index: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The destination position.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-ui-UI.html#move)
+    */
+  var position: js.UndefOr[
+    `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
+  ] = js.undefined
 }
-
 object UIMoveComponent {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     component: Widget_ | HTMLElement | String,
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    position: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): UIMoveComponent = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[UIMoveComponent]
   }
+  
+  extension [Self <: UIMoveComponent](x: Self) {
+    
+    inline def setComponent(value: Widget_ | HTMLElement | String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setPosition(
+      value: `bottom-leading` | `bottom-left` | `bottom-right` | `bottom-trailing` | `top-leading` | `top-left` | `top-right` | `top-trailing` | manual
+    ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

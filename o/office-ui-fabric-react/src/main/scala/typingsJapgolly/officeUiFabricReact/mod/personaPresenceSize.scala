@@ -1,30 +1,43 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`12px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`16px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`20px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`28px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`2px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`32px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`6px`
-import typingsJapgolly.officeUiFabricReact.officeUiFabricReactStrings.`8px`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react", "personaPresenceSize")
-@js.native
-object personaPresenceSize extends js.Object {
+object personaPresenceSize {
+  
   /**
     * @deprecated This is now unused
     */
-  val border: `2px` = js.native
-  val size12: `12px` = js.native
-  val size16: `16px` = js.native
-  val size20: `20px` = js.native
-  val size28: `28px` = js.native
-  val size32: `32px` = js.native
-  val size6: `6px` = js.native
-  val size8: `8px` = js.native
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.border")
+  @js.native
+  val border: /* "2px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size12")
+  @js.native
+  val size12: /* "12px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size16")
+  @js.native
+  val size16: /* "16px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size20")
+  @js.native
+  val size20: /* "20px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size28")
+  @js.native
+  val size28: /* "28px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size32")
+  @js.native
+  val size32: /* "32px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size6")
+  @js.native
+  val size6: /* "6px" */ String = js.native
+  
+  @JSImport("office-ui-fabric-react", "personaPresenceSize.size8")
+  @js.native
+  val size8: /* "8px" */ String = js.native
 }
-

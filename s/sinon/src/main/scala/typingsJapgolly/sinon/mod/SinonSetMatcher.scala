@@ -1,37 +1,40 @@
 package typingsJapgolly.sinon.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SinonSetMatcher extends SinonMatcher {
+trait SinonSetMatcher
+  extends StObject
+     with SinonMatcher {
+  
   /**
     * Requires a Set to contain each one of the items the given set has.
     */
   def contains(expected: SimplifiedSet): SinonMatcher
+  
   /**
     *  Requires a Set to be deep equal another one.
     */
   def deepEquals(expected: SimplifiedSet): SinonMatcher
 }
-
 object SinonSetMatcher {
-  @scala.inline
-  def apply(
-    and: SinonMatcher => CallbackTo[SinonMatcher],
-    contains: SimplifiedSet => CallbackTo[SinonMatcher],
-    deepEquals: SimplifiedSet => CallbackTo[SinonMatcher],
-    or: SinonMatcher => CallbackTo[SinonMatcher],
-    test: js.Any => CallbackTo[Boolean]
+  
+  inline def apply(
+    and: SinonMatcher => SinonMatcher,
+    contains: SimplifiedSet => SinonMatcher,
+    deepEquals: SimplifiedSet => SinonMatcher,
+    or: SinonMatcher => SinonMatcher,
+    test: Any => Boolean
   ): SinonSetMatcher = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("and")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SinonMatcher) => and(t0).runNow()))
-    __obj.updateDynamic("contains")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SimplifiedSet) => contains(t0).runNow()))
-    __obj.updateDynamic("deepEquals")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SimplifiedSet) => deepEquals(t0).runNow()))
-    __obj.updateDynamic("or")(js.Any.fromFunction1((t0: typingsJapgolly.sinon.mod.SinonMatcher) => or(t0).runNow()))
-    __obj.updateDynamic("test")(js.Any.fromFunction1((t0: js.Any) => test(t0).runNow()))
+    val __obj = js.Dynamic.literal(and = js.Any.fromFunction1(and), contains = js.Any.fromFunction1(contains), deepEquals = js.Any.fromFunction1(deepEquals), or = js.Any.fromFunction1(or), test = js.Any.fromFunction1(test))
     __obj.asInstanceOf[SinonSetMatcher]
   }
+  
+  extension [Self <: SinonSetMatcher](x: Self) {
+    
+    inline def setContains(value: SimplifiedSet => SinonMatcher): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+    
+    inline def setDeepEquals(value: SimplifiedSet => SinonMatcher): Self = StObject.set(x, "deepEquals", js.Any.fromFunction1(value))
+  }
 }
-

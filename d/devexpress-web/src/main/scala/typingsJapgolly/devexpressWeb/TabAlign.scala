@@ -1,65 +1,55 @@
 package typingsJapgolly.devexpressWeb
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TabAlign extends js.Object
-
+sealed trait TabAlign extends StObject
 /**
   * List alignment types for tab stops.
   */
 @JSGlobal("TabAlign")
 @js.native
-object TabAlign extends js.Object {
+object TabAlign extends StObject {
+  
   /**
     * Text is centered on the tab stop.
     */
   @js.native
-  sealed trait Center extends TabAlign
+  sealed trait Center
+    extends StObject
+       with TabAlign
   
   /**
     * The decimal point is located at the tab stop.
     */
   @js.native
-  sealed trait Decimal extends TabAlign
+  sealed trait Decimal
+    extends StObject
+       with TabAlign
   
   /**
     * Text is left aligned with the tab stop.
     */
   @js.native
-  sealed trait Left extends TabAlign
+  sealed trait Left
+    extends StObject
+       with TabAlign
   
   /**
     * For internal use only.
     */
   @js.native
-  sealed trait Numbering extends TabAlign
+  sealed trait Numbering
+    extends StObject
+       with TabAlign
   
   /**
     * Text is right aligned with the tab stop.
     */
   @js.native
-  sealed trait Right extends TabAlign
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TabAlign with Double] = js.native
-  /* 1 */ @js.native
-  object Center extends TopLevel[Center with Double]
-  
-  /* 3 */ @js.native
-  object Decimal extends TopLevel[Decimal with Double]
-  
-  /* 0 */ @js.native
-  object Left extends TopLevel[Left with Double]
-  
-  /* 4 */ @js.native
-  object Numbering extends TopLevel[Numbering with Double]
-  
-  /* 2 */ @js.native
-  object Right extends TopLevel[Right with Double]
-  
+  sealed trait Right
+    extends StObject
+       with TabAlign
 }
-

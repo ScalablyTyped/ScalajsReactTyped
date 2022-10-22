@@ -1,19 +1,28 @@
 package typingsJapgolly.reactBootstrap.libMod
 
 import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.reactBootstrap.breadcrumbMod.^
+import typingsJapgolly.reactBootstrap.libBreadcrumbMod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap/lib", "Breadcrumb")
 @js.native
-class Breadcrumb () extends ^
-
-/* static members */
-@JSImport("react-bootstrap/lib", "Breadcrumb")
-@js.native
-object Breadcrumb extends js.Object {
-  var Item: Instantiable0[typingsJapgolly.reactBootstrap.breadcrumbItemMod.^] = js.native
+open class Breadcrumb () extends ^
+object Breadcrumb {
+  
+  @JSImport("react-bootstrap/lib", "Breadcrumb")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("react-bootstrap/lib", "Breadcrumb.Item")
+  @js.native
+  open class Item ()
+    extends typingsJapgolly.reactBootstrap.libBreadcrumbItemMod.^
+  /* static member */
+  @JSImport("react-bootstrap/lib", "Breadcrumb.Item")
+  @js.native
+  def Item: Instantiable0[typingsJapgolly.reactBootstrap.libBreadcrumbItemMod.^] = js.native
+  inline def Item_=(x: Instantiable0[typingsJapgolly.reactBootstrap.libBreadcrumbItemMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }
-

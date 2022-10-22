@@ -1,16 +1,25 @@
 package typingsJapgolly.mjmlReact.mod
 
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mjml-react", "MjmlColumn")
 @js.native
-class MjmlColumn ()
+open class MjmlColumn protected ()
   extends Component[
-      RequiredChildrenProps with MjmlColumnProps with PaddingProps with ClassNameProps with BorderProps, 
+      MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps, 
       js.Object, 
-      js.Any
-    ]
-
+      Any
+    ] {
+  def this(props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(
+    props: MjmlColumnProps & PaddingProps & ClassNameProps & BorderProps & InnerBorderProps,
+    context: Any
+  ) = this()
+}

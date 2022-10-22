@@ -1,21 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextEncoderEncodeIntoResult extends js.Object {
+trait TextEncoderEncodeIntoResult extends StObject {
+  
+  /* standard dom */
   var read: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var written: js.UndefOr[Double] = js.undefined
 }
-
 object TextEncoderEncodeIntoResult {
-  @scala.inline
-  def apply(read: Int | Double = null, written: Int | Double = null): TextEncoderEncodeIntoResult = {
+  
+  inline def apply(): TextEncoderEncodeIntoResult = {
     val __obj = js.Dynamic.literal()
-    if (read != null) __obj.updateDynamic("read")(read.asInstanceOf[js.Any])
-    if (written != null) __obj.updateDynamic("written")(written.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEncoderEncodeIntoResult]
   }
+  
+  extension [Self <: TextEncoderEncodeIntoResult](x: Self) {
+    
+    inline def setRead(value: Double): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setWritten(value: Double): Self = StObject.set(x, "written", value.asInstanceOf[js.Any])
+    
+    inline def setWrittenUndefined: Self = StObject.set(x, "written", js.undefined)
+  }
 }
-

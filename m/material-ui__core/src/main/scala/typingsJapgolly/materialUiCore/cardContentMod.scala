@@ -1,26 +1,31 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.cardContentCardContentMod.CardContentProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.cardContentCardContentMod.CardContentTypeMap
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.div
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/CardContent", JSImport.Namespace)
-@js.native
-object cardContentMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[CardContentProps, ComponentState, js.Any] {
-    def this(props: CardContentProps) = this()
-    def this(props: CardContentProps, context: js.Any) = this()
-  }
+object cardContentMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Cards](https://mui.com/components/cards/)
+    *
+    * API:
+    *
+    * - [CardContent API](https://mui.com/api/card-content/)
+    */
+  @JSImport("@material-ui/core/CardContent", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[CardContentProps]]
+  val default: OverridableComponent[CardContentTypeMap[js.Object, div]] = js.native
   
+  type _To = OverridableComponent[CardContentTypeMap[js.Object, div]]
+  
+  /* This means you don't have to write `default`, but can instead just say `cardContentMod.foo` */
+  override def _to: OverridableComponent[CardContentTypeMap[js.Object, div]] = default
 }
-

@@ -8,36 +8,51 @@ import typingsJapgolly.reactJoyride.reactJoyrideStrings.ready
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.running
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.skipped
 import typingsJapgolly.reactJoyride.reactJoyrideStrings.waiting
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait status extends js.Object {
+trait status extends StObject {
+  
   var ERROR: error
+  
   var FINISHED: finished
+  
   var IDLE: idle
+  
   var PAUSED: paused
+  
   var READY: ready
+  
   var RUNNING: running
+  
   var SKIPPED: skipped
+  
   var WAITING: waiting
 }
-
 object status {
-  @scala.inline
-  def apply(
-    ERROR: error,
-    FINISHED: finished,
-    IDLE: idle,
-    PAUSED: paused,
-    READY: ready,
-    RUNNING: running,
-    SKIPPED: skipped,
-    WAITING: waiting
-  ): status = {
-    val __obj = js.Dynamic.literal(ERROR = ERROR.asInstanceOf[js.Any], FINISHED = FINISHED.asInstanceOf[js.Any], IDLE = IDLE.asInstanceOf[js.Any], PAUSED = PAUSED.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], SKIPPED = SKIPPED.asInstanceOf[js.Any], WAITING = WAITING.asInstanceOf[js.Any])
   
+  inline def apply(): status = {
+    val __obj = js.Dynamic.literal(ERROR = "error", FINISHED = "finished", IDLE = "idle", PAUSED = "paused", READY = "ready", RUNNING = "running", SKIPPED = "skipped", WAITING = "waiting")
     __obj.asInstanceOf[status]
   }
+  
+  extension [Self <: status](x: Self) {
+    
+    inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    
+    inline def setFINISHED(value: finished): Self = StObject.set(x, "FINISHED", value.asInstanceOf[js.Any])
+    
+    inline def setIDLE(value: idle): Self = StObject.set(x, "IDLE", value.asInstanceOf[js.Any])
+    
+    inline def setPAUSED(value: paused): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
+    
+    inline def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
+    
+    inline def setRUNNING(value: running): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
+    
+    inline def setSKIPPED(value: skipped): Self = StObject.set(x, "SKIPPED", value.asInstanceOf[js.Any])
+    
+    inline def setWAITING(value: waiting): Self = StObject.set(x, "WAITING", value.asInstanceOf[js.Any])
+  }
 }
-

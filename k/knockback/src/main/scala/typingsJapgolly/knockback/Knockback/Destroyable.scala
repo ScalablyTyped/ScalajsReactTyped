@@ -1,12 +1,23 @@
 package typingsJapgolly.knockback.Knockback
 
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Knockback.Destroyable")
-@js.native
-class Destroyable () extends js.Object {
-  def destroy(): js.Any = js.native
+trait Destroyable extends StObject {
+  
+  def destroy(): Any
 }
-
+object Destroyable {
+  
+  inline def apply(destroy: CallbackTo[Any]): Destroyable = {
+    val __obj = js.Dynamic.literal(destroy = destroy.toJsFn)
+    __obj.asInstanceOf[Destroyable]
+  }
+  
+  extension [Self <: Destroyable](x: Self) {
+    
+    inline def setDestroy(value: CallbackTo[Any]): Self = StObject.set(x, "destroy", value.toJsFn)
+  }
+}

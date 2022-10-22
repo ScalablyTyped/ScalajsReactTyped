@@ -1,28 +1,37 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.ParagraphPropertiesChanged event.
   */
-@JSGlobal("ASPxClientRichEditParagraphPropertiesChangedEventArgs")
-@js.native
-class ASPxClientRichEditParagraphPropertiesChangedEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRichEditParagraphPropertiesChangedEventArgs object. For internal use only.
-    * @param subDocumentId An identifier of a sub-document containing the changed paragraph.
-    * @param paragraphIndex The changed paragraph's index.
-    */
-  def this(subDocumentId: Double, paragraphIndex: Double) = this()
+trait ASPxClientRichEditParagraphPropertiesChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the changed paragraph's index.
     */
-  var paragraphIndex: Double = js.native
+  var paragraphIndex: Double
+  
   /**
     * Gets the active sub-document's identifier.
     */
-  var subDocumentId: Double = js.native
+  var subDocumentId: Double
 }
-
+object ASPxClientRichEditParagraphPropertiesChangedEventArgs {
+  
+  inline def apply(paragraphIndex: Double, subDocumentId: Double): ASPxClientRichEditParagraphPropertiesChangedEventArgs = {
+    val __obj = js.Dynamic.literal(paragraphIndex = paragraphIndex.asInstanceOf[js.Any], subDocumentId = subDocumentId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRichEditParagraphPropertiesChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientRichEditParagraphPropertiesChangedEventArgs](x: Self) {
+    
+    inline def setParagraphIndex(value: Double): Self = StObject.set(x, "paragraphIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSubDocumentId(value: Double): Self = StObject.set(x, "subDocumentId", value.asInstanceOf[js.Any])
+  }
+}

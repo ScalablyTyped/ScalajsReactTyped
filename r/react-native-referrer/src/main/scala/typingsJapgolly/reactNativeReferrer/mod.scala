@@ -1,16 +1,17 @@
 package typingsJapgolly.reactNativeReferrer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-referrer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def getReferrer(): js.Promise[String] = js.native
-  }
+object mod {
   
+  object default {
+    
+    @JSImport("react-native-referrer", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getReferrer(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReferrer")().asInstanceOf[js.Promise[String]]
+  }
 }
-

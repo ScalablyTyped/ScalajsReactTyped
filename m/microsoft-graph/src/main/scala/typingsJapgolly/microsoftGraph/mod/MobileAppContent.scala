@@ -1,21 +1,31 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MobileAppContent extends Entity {
+trait MobileAppContent
+  extends StObject
+     with Entity {
+  
   // The list of files for this app content version.
-  var files: js.UndefOr[js.Array[MobileAppContentFile]] = js.undefined
+  var files: js.UndefOr[NullableOption[js.Array[MobileAppContentFile]]] = js.undefined
 }
-
 object MobileAppContent {
-  @scala.inline
-  def apply(files: js.Array[MobileAppContentFile] = null, id: String = null): MobileAppContent = {
+  
+  inline def apply(): MobileAppContent = {
     val __obj = js.Dynamic.literal()
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileAppContent]
   }
+  
+  extension [Self <: MobileAppContent](x: Self) {
+    
+    inline def setFiles(value: NullableOption[js.Array[MobileAppContentFile]]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesNull: Self = StObject.set(x, "files", null)
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: MobileAppContentFile*): Self = StObject.set(x, "files", js.Array(value*))
+  }
 }
-

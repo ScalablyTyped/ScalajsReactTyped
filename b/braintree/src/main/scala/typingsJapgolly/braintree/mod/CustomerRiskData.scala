@@ -1,21 +1,30 @@
 package typingsJapgolly.braintree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomerRiskData extends js.Object {
+trait CustomerRiskData extends StObject {
+  
   var customerBrowser: js.UndefOr[String] = js.undefined
+  
   var customerIp: js.UndefOr[String] = js.undefined
 }
-
 object CustomerRiskData {
-  @scala.inline
-  def apply(customerBrowser: String = null, customerIp: String = null): CustomerRiskData = {
+  
+  inline def apply(): CustomerRiskData = {
     val __obj = js.Dynamic.literal()
-    if (customerBrowser != null) __obj.updateDynamic("customerBrowser")(customerBrowser.asInstanceOf[js.Any])
-    if (customerIp != null) __obj.updateDynamic("customerIp")(customerIp.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomerRiskData]
   }
+  
+  extension [Self <: CustomerRiskData](x: Self) {
+    
+    inline def setCustomerBrowser(value: String): Self = StObject.set(x, "customerBrowser", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerBrowserUndefined: Self = StObject.set(x, "customerBrowser", js.undefined)
+    
+    inline def setCustomerIp(value: String): Self = StObject.set(x, "customerIp", value.asInstanceOf[js.Any])
+    
+    inline def setCustomerIpUndefined: Self = StObject.set(x, "customerIp", js.undefined)
+  }
 }
-

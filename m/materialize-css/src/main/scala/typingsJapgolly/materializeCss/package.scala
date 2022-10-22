@@ -1,9 +1,13 @@
-package typingsJapgolly
+package typingsJapgolly.materializeCss
 
+import org.scalajs.dom.Element
+import org.scalajs.dom.Node
+import org.scalajs.dom.NodeList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object materializeCss {
-  type MElements = (org.scalajs.dom.raw.NodeListOf[org.scalajs.dom.raw.Element with org.scalajs.dom.raw.Node]) | typingsJapgolly.materializeCss.JQuery | typingsJapgolly.cash.Cash_
-}
+
+type Cash = typingsJapgolly.cashDom.mod.Cash
+
+type MElements = (NodeList[Element & Node]) | JQuery | Cash

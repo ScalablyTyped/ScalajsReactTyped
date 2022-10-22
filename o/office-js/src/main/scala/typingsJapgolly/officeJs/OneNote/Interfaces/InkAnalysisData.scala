@@ -1,34 +1,43 @@
 package typingsJapgolly.officeJs.OneNote.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "inkAnalysis.toJSON()". */
-trait InkAnalysisData extends js.Object {
+/** An interface describing the data returned by calling `inkAnalysis.toJSON()`. */
+trait InkAnalysisData extends StObject {
+  
   /**
-    *
     * Gets the ID of the InkAnalysis object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets the parent page object. Read-only.
     *
+    * @remarks
     * [Api set: OneNoteApi 1.1]
     */
   var page: js.UndefOr[PageData] = js.undefined
 }
-
 object InkAnalysisData {
-  @scala.inline
-  def apply(id: String = null, page: PageData = null): InkAnalysisData = {
+  
+  inline def apply(): InkAnalysisData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkAnalysisData]
   }
+  
+  extension [Self <: InkAnalysisData](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setPage(value: PageData): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+  }
 }
-

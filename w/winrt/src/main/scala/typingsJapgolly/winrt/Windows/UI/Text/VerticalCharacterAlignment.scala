@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait VerticalCharacterAlignment extends js.Object
-
+sealed trait VerticalCharacterAlignment extends StObject
 @JSGlobal("Windows.UI.Text.VerticalCharacterAlignment")
 @js.native
-object VerticalCharacterAlignment extends js.Object {
-  @js.native
-  sealed trait baseline extends VerticalCharacterAlignment
+object VerticalCharacterAlignment extends StObject {
   
   @js.native
-  sealed trait bottom extends VerticalCharacterAlignment
+  sealed trait baseline
+    extends StObject
+       with VerticalCharacterAlignment
   
   @js.native
-  sealed trait top extends VerticalCharacterAlignment
+  sealed trait bottom
+    extends StObject
+       with VerticalCharacterAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[VerticalCharacterAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object baseline extends TopLevel[baseline with Double]
-  
-  /* 2 */ @js.native
-  object bottom extends TopLevel[bottom with Double]
-  
-  /* 0 */ @js.native
-  object top extends TopLevel[top with Double]
-  
+  @js.native
+  sealed trait top
+    extends StObject
+       with VerticalCharacterAlignment
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders
 */
-trait OnHeadersReceivedOptions extends js.Object
-
+trait OnHeadersReceivedOptions extends StObject
 object OnHeadersReceivedOptions {
-  @scala.inline
-  def blocking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = this.cast("blocking")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def responseHeaders: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders = this.cast("responseHeaders")
+  
+  inline def blocking: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking = "blocking".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.blocking]
+  
+  inline def responseHeaders: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders = "responseHeaders".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.responseHeaders]
 }
-

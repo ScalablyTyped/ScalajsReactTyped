@@ -1,7 +1,7 @@
 
 # Scala.js typings for twilsock
 
-Typings are for version 0.5.11
+Typings are for version 0.12.2
 
 ## Library description:
 Client library for TwilSock service
@@ -10,10 +10,10 @@ Client library for TwilSock service
 | ------------------ | :-------------: |
 | Full name          | twilsock |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 5 |
-| # downloads        | 701714 |
-| # stars            | 1 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 616904.3333333334 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/twilsock)

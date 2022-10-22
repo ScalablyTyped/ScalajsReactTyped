@@ -11,9 +11,9 @@ Library for rolling dice based on dice-syntax used in RPGs.
 | Full name          | d20 |
 | Keywords           | dice, rpg, d20 |
 | # releases         | 1 |
-| # dependents       | 4 |
-| # downloads        | 3966 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 281.3333333333333 |
+| # stars            | 43.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelenger/d20.js#readme)

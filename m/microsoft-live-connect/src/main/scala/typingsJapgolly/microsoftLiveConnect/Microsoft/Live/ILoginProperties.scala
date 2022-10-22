@@ -1,13 +1,14 @@
 package typingsJapgolly.microsoftLiveConnect.Microsoft.Live
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.login method.
   */
-trait ILoginProperties extends js.Object {
+trait ILoginProperties extends StObject {
+  
   /**
     * This parameter only applies to web apps.
     * Contains the redirect URI to be used for OAuth authentication. This
@@ -15,6 +16,7 @@ trait ILoginProperties extends js.Object {
     * to WL.init.
     */
   var redirect_uri: js.UndefOr[String] = js.undefined
+  
   /**
     * Specifies the scopes to which the user who is signing in consents.
     *
@@ -30,7 +32,8 @@ trait ILoginProperties extends js.Object {
     * Server-side scenarios.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var scope: js.Any
+  var scope: Any
+  
   /**
     * Windows Store apps using JavaScript: not applicable.
     * Web apps: Optional. If the WL.init function's response_type object is
@@ -43,14 +46,23 @@ trait ILoginProperties extends js.Object {
     */
   var state: js.UndefOr[String] = js.undefined
 }
-
 object ILoginProperties {
-  @scala.inline
-  def apply(scope: js.Any, redirect_uri: String = null, state: String = null): ILoginProperties = {
+  
+  inline def apply(scope: Any): ILoginProperties = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
-    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILoginProperties]
   }
+  
+  extension [Self <: ILoginProperties](x: Self) {
+    
+    inline def setRedirect_uri(value: String): Self = StObject.set(x, "redirect_uri", value.asInstanceOf[js.Any])
+    
+    inline def setRedirect_uriUndefined: Self = StObject.set(x, "redirect_uri", js.undefined)
+    
+    inline def setScope(value: Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

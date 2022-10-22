@@ -1,17 +1,38 @@
 package typingsJapgolly.sinonChrome.mod
 
 import typingsJapgolly.sinonChrome.mod.events.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "omnibox")
-@js.native
-object omnibox extends js.Object {
-  var onInputCancelled: Event = js.native
-  var onInputChanged: Event = js.native
-  var onInputEntered: Event = js.native
-  var onInputStarted: Event = js.native
-  var setDefaultSuggestion: SinonChromeStub = js.native
+object omnibox {
+  
+  @JSImport("sinon-chrome", "omnibox")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "omnibox.onInputCancelled")
+  @js.native
+  def onInputCancelled: Event = js.native
+  inline def onInputCancelled_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputCancelled")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "omnibox.onInputChanged")
+  @js.native
+  def onInputChanged: Event = js.native
+  inline def onInputChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputChanged")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "omnibox.onInputEntered")
+  @js.native
+  def onInputEntered: Event = js.native
+  inline def onInputEntered_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputEntered")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "omnibox.onInputStarted")
+  @js.native
+  def onInputStarted: Event = js.native
+  inline def onInputStarted_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onInputStarted")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "omnibox.setDefaultSuggestion")
+  @js.native
+  def setDefaultSuggestion: SinonChromeStub = js.native
+  inline def setDefaultSuggestion_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setDefaultSuggestion")(x.asInstanceOf[js.Any])
 }
-

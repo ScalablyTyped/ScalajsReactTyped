@@ -1,14 +1,8 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.BooleanLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.NullLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.NumericLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.RegExpLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.StringLiteral
-import typingsJapgolly.babelTypes.babelTypesStrings.TemplateLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.StringLiteral_
@@ -18,118 +12,48 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.babelTypes.mod.RegExpLiteral_
   - typingsJapgolly.babelTypes.mod.TemplateLiteral_
 */
-trait Literal extends js.Object
-
+trait Literal extends StObject
 object Literal {
-  @scala.inline
-  def NumericLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NumericLiteral,
-    value: Double,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
+  
+  inline def BooleanLiteral_(end: Double, loc: SourceLocation, start: Double, value: Boolean): typingsJapgolly.babelTypes.mod.BooleanLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.updateDynamic("type")("BooleanLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.BooleanLiteral_]
   }
-  @scala.inline
-  def NullLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: NullLiteral,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
+  
+  inline def NullLiteral_(end: Double, loc: SourceLocation, start: Double): typingsJapgolly.babelTypes.mod.NullLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.updateDynamic("type")("NullLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NullLiteral_]
   }
-  @scala.inline
-  def StringLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: StringLiteral,
-    value: String,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
+  
+  inline def NumericLiteral_(end: Double, loc: SourceLocation, start: Double, value: Double): typingsJapgolly.babelTypes.mod.NumericLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.updateDynamic("type")("NumericLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.NumericLiteral_]
   }
-  @scala.inline
-  def TemplateLiteral_(
+  
+  inline def RegExpLiteral_(end: Double, loc: SourceLocation, pattern: String, start: Double): typingsJapgolly.babelTypes.mod.RegExpLiteral_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RegExpLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.RegExpLiteral_]
+  }
+  
+  inline def StringLiteral_(end: Double, loc: SourceLocation, start: Double, value: String): typingsJapgolly.babelTypes.mod.StringLiteral_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.StringLiteral_]
+  }
+  
+  inline def TemplateLiteral_(
     end: Double,
     expressions: js.Array[Expression],
     loc: SourceLocation,
     quasis: js.Array[TemplateElement_],
-    start: Double,
-    `type`: TemplateLiteral,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
+    start: Double
+  ): typingsJapgolly.babelTypes.mod.TemplateLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expressions = expressions.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
-  }
-  @scala.inline
-  def BooleanLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: BooleanLiteral,
-    value: Boolean,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
-  }
-  @scala.inline
-  def RegExpLiteral_(
-    end: Double,
-    loc: SourceLocation,
-    pattern: String,
-    start: Double,
-    `type`: RegExpLiteral,
-    flags: String = null,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): Literal = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Literal]
+    __obj.updateDynamic("type")("TemplateLiteral")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.TemplateLiteral_]
   }
 }
-

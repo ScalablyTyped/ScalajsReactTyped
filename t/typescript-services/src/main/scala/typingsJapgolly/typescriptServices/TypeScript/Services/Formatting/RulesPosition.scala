@@ -1,53 +1,42 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services.Formatting
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RulesPosition extends js.Object
-
+sealed trait RulesPosition extends StObject
 @JSGlobal("TypeScript.Services.Formatting.RulesPosition")
 @js.native
-object RulesPosition extends js.Object {
-  @js.native
-  sealed trait ContextRulesAny extends RulesPosition
+object RulesPosition extends StObject {
   
   @js.native
-  sealed trait ContextRulesSpecific extends RulesPosition
+  sealed trait ContextRulesAny
+    extends StObject
+       with RulesPosition
   
   @js.native
-  sealed trait IgnoreRulesAny extends RulesPosition
+  sealed trait ContextRulesSpecific
+    extends StObject
+       with RulesPosition
   
   @js.native
-  sealed trait IgnoreRulesSpecific extends RulesPosition
+  sealed trait IgnoreRulesAny
+    extends StObject
+       with RulesPosition
   
   @js.native
-  sealed trait NoContextRulesAny extends RulesPosition
+  sealed trait IgnoreRulesSpecific
+    extends StObject
+       with RulesPosition
   
   @js.native
-  sealed trait NoContextRulesSpecific extends RulesPosition
+  sealed trait NoContextRulesAny
+    extends StObject
+       with RulesPosition
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[RulesPosition with Double] = js.native
-  /* 2 */ @js.native
-  object ContextRulesAny extends TopLevel[ContextRulesAny with Double]
-  
-  /* 1 */ @js.native
-  object ContextRulesSpecific extends TopLevel[ContextRulesSpecific with Double]
-  
-  /* 0 */ @js.native
-  object IgnoreRulesAny extends TopLevel[IgnoreRulesAny with Double]
-  
-  /* 0 */ @js.native
-  object IgnoreRulesSpecific extends TopLevel[IgnoreRulesSpecific with Double]
-  
-  /* 4 */ @js.native
-  object NoContextRulesAny extends TopLevel[NoContextRulesAny with Double]
-  
-  /* 3 */ @js.native
-  object NoContextRulesSpecific extends TopLevel[NoContextRulesSpecific with Double]
-  
+  @js.native
+  sealed trait NoContextRulesSpecific
+    extends StObject
+       with RulesPosition
 }
-

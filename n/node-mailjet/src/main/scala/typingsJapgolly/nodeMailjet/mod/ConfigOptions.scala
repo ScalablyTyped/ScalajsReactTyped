@@ -1,33 +1,48 @@
 package typingsJapgolly.nodeMailjet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConfigOptions extends js.Object {
+trait ConfigOptions extends StObject {
+  
   val output: js.UndefOr[String] = js.undefined
+  
   val perform_api_call: js.UndefOr[Boolean] = js.undefined
+  
   val secured: js.UndefOr[Boolean] = js.undefined
+  
   val url: js.UndefOr[String] = js.undefined
+  
   val version: js.UndefOr[String] = js.undefined
 }
-
 object ConfigOptions {
-  @scala.inline
-  def apply(
-    output: String = null,
-    perform_api_call: js.UndefOr[Boolean] = js.undefined,
-    secured: js.UndefOr[Boolean] = js.undefined,
-    url: String = null,
-    version: String = null
-  ): ConfigOptions = {
+  
+  inline def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
-    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
-    if (!js.isUndefined(perform_api_call)) __obj.updateDynamic("perform_api_call")(perform_api_call.asInstanceOf[js.Any])
-    if (!js.isUndefined(secured)) __obj.updateDynamic("secured")(secured.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigOptions]
   }
+  
+  extension [Self <: ConfigOptions](x: Self) {
+    
+    inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    
+    inline def setPerform_api_call(value: Boolean): Self = StObject.set(x, "perform_api_call", value.asInstanceOf[js.Any])
+    
+    inline def setPerform_api_callUndefined: Self = StObject.set(x, "perform_api_call", js.undefined)
+    
+    inline def setSecured(value: Boolean): Self = StObject.set(x, "secured", value.asInstanceOf[js.Any])
+    
+    inline def setSecuredUndefined: Self = StObject.set(x, "secured", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

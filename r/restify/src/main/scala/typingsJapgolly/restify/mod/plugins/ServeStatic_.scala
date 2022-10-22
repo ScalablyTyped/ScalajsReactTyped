@@ -1,45 +1,72 @@
 package typingsJapgolly.restify.mod.plugins
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServeStatic_ extends js.Object {
+trait ServeStatic_ extends StObject {
+  
+  var default: js.UndefOr[Any] = js.undefined
+  
   var appendRequestPath: js.UndefOr[Boolean] = js.undefined
+  
   var charSet: js.UndefOr[String] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
+  
   var directory: js.UndefOr[String] = js.undefined
+  
   var etag: js.UndefOr[String] = js.undefined
+  
   var file: js.UndefOr[String] = js.undefined
+  
   var gzip: js.UndefOr[Boolean] = js.undefined
-  var `match`: js.UndefOr[js.Any] = js.undefined
+  
+  var `match`: js.UndefOr[Any] = js.undefined
+  
   var maxAge: js.UndefOr[Double] = js.undefined
 }
-
 object ServeStatic_ {
-  @scala.inline
-  def apply(
-    appendRequestPath: js.UndefOr[Boolean] = js.undefined,
-    charSet: String = null,
-    default: js.Any = null,
-    directory: String = null,
-    etag: String = null,
-    file: String = null,
-    gzip: js.UndefOr[Boolean] = js.undefined,
-    `match`: js.Any = null,
-    maxAge: Int | Double = null
-  ): ServeStatic_ = {
+  
+  inline def apply(): ServeStatic_ = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(appendRequestPath)) __obj.updateDynamic("appendRequestPath")(appendRequestPath.asInstanceOf[js.Any])
-    if (charSet != null) __obj.updateDynamic("charSet")(charSet.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (directory != null) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (etag != null) __obj.updateDynamic("etag")(etag.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (!js.isUndefined(gzip)) __obj.updateDynamic("gzip")(gzip.asInstanceOf[js.Any])
-    if (`match` != null) __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
-    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServeStatic_]
   }
+  
+  extension [Self <: ServeStatic_](x: Self) {
+    
+    inline def setAppendRequestPath(value: Boolean): Self = StObject.set(x, "appendRequestPath", value.asInstanceOf[js.Any])
+    
+    inline def setAppendRequestPathUndefined: Self = StObject.set(x, "appendRequestPath", js.undefined)
+    
+    inline def setCharSet(value: String): Self = StObject.set(x, "charSet", value.asInstanceOf[js.Any])
+    
+    inline def setCharSetUndefined: Self = StObject.set(x, "charSet", js.undefined)
+    
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+    
+    inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+    
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setGzip(value: Boolean): Self = StObject.set(x, "gzip", value.asInstanceOf[js.Any])
+    
+    inline def setGzipUndefined: Self = StObject.set(x, "gzip", js.undefined)
+    
+    inline def setMatch(value: Any): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+    
+    inline def setMatchUndefined: Self = StObject.set(x, "match", js.undefined)
+    
+    inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+  }
 }
-

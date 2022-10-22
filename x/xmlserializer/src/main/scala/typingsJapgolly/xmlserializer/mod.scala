@@ -1,13 +1,15 @@
 package typingsJapgolly.xmlserializer
 
-import typingsJapgolly.parse5.mod.Element
+import org.scalajs.dom.Node
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xmlserializer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def serializeToString(node: Element): String = js.native
+object mod {
+  
+  @JSImport("xmlserializer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def serializeToString(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeToString")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

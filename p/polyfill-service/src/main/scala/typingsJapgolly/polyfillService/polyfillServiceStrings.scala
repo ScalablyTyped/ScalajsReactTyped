@@ -2,30 +2,33 @@ package typingsJapgolly.polyfillService
 
 import typingsJapgolly.polyfillService.mod.PolyfillFlag
 import typingsJapgolly.polyfillService.mod.Unknown
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object polyfillServiceStrings {
-  @js.native
-  sealed trait always extends PolyfillFlag
   
   @js.native
-  sealed trait gated extends PolyfillFlag
+  sealed trait always
+    extends StObject
+       with PolyfillFlag
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait ignore extends Unknown
+  sealed trait gated
+    extends StObject
+       with PolyfillFlag
+  inline def gated: gated = "gated".asInstanceOf[gated]
   
   @js.native
-  sealed trait polyfill extends Unknown
+  sealed trait ignore
+    extends StObject
+       with Unknown
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
-  @scala.inline
-  def gated: gated = "gated".asInstanceOf[gated]
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
-  @scala.inline
-  def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
+  @js.native
+  sealed trait polyfill
+    extends StObject
+       with Unknown
+  inline def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }
-

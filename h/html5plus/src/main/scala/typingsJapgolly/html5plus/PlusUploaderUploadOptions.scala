@@ -1,15 +1,16 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON对象，创建上传任务的参数
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
   */
-trait PlusUploaderUploadOptions extends js.Object {
+trait PlusUploaderUploadOptions extends StObject {
+  
   /**
     * 上传任务每次上传的文件块大小（仅在支持断点续传的服务有效）
     * 数值类型，单位为Byte（字节），默认值为102400，若设置值小于等于0则表示不分块上传。
@@ -17,6 +18,7 @@ trait PlusUploaderUploadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var blocksize: js.UndefOr[Double] = js.undefined
+  
   /**
     * 网络请求类型
     * 仅支持http协议的“POST”请求。
@@ -24,6 +26,7 @@ trait PlusUploaderUploadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var method: js.UndefOr[String] = js.undefined
+  
   /**
     * 上传任务的优先级
     * 数值类型，数值越大优先级越高，默认优先级值为0。
@@ -31,6 +34,7 @@ trait PlusUploaderUploadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var priority: js.UndefOr[Double] = js.undefined
+  
   /**
     * 上传任务重试次数
     * 数值类型，默认为重试3次。
@@ -38,6 +42,7 @@ trait PlusUploaderUploadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var retry: js.UndefOr[Double] = js.undefined
+  
   /**
     * 上传任务重试间隔时间
     * 数值类型，单位为s(秒)，默认值为30s。
@@ -45,34 +50,47 @@ trait PlusUploaderUploadOptions extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var retryInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * 上传任务超时时间
     * 数值类型，单位为s(秒)，默认值为120s。
-    * 	超时时间为服务器响应请求的时间（不是上传任务完成的总时间），如果设置为0则表示永远不超时。
+    *     超时时间为服务器响应请求的时间（不是上传任务完成的总时间），如果设置为0则表示永远不超时。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/uploader.html](http://www.html5plus.org/doc/zh_cn/uploader.html)
     */
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object PlusUploaderUploadOptions {
-  @scala.inline
-  def apply(
-    blocksize: Int | Double = null,
-    method: String = null,
-    priority: Int | Double = null,
-    retry: Int | Double = null,
-    retryInterval: Int | Double = null,
-    timeout: Int | Double = null
-  ): PlusUploaderUploadOptions = {
+  
+  inline def apply(): PlusUploaderUploadOptions = {
     val __obj = js.Dynamic.literal()
-    if (blocksize != null) __obj.updateDynamic("blocksize")(blocksize.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
-    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
-    if (retryInterval != null) __obj.updateDynamic("retryInterval")(retryInterval.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusUploaderUploadOptions]
   }
+  
+  extension [Self <: PlusUploaderUploadOptions](x: Self) {
+    
+    inline def setBlocksize(value: Double): Self = StObject.set(x, "blocksize", value.asInstanceOf[js.Any])
+    
+    inline def setBlocksizeUndefined: Self = StObject.set(x, "blocksize", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    
+    inline def setRetry(value: Double): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    
+    inline def setRetryInterval(value: Double): Self = StObject.set(x, "retryInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRetryIntervalUndefined: Self = StObject.set(x, "retryInterval", js.undefined)
+    
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

@@ -1,0 +1,47 @@
+package typingsJapgolly.awsSdkClientDynamodbNode
+
+import typingsJapgolly.awsSdkClientDynamodbNode.dynamoDBConfigurationMod.DynamoDBResolvedConfiguration
+import typingsJapgolly.awsSdkClientDynamodbNode.typesDeleteItemInputMod.DeleteItemInput
+import typingsJapgolly.awsSdkClientDynamodbNode.typesDeleteItemOutputMod.DeleteItemOutput
+import typingsJapgolly.awsSdkClientDynamodbNode.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkClientDynamodbNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesCommandMod.Command
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Handler
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.MiddlewareStack
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object commandsDeleteItemCommandMod {
+  
+  @JSImport("@aws-sdk/client-dynamodb-node/commands/DeleteItemCommand", "DeleteItemCommand")
+  @js.native
+  open class DeleteItemCommand protected ()
+    extends StObject
+       with Command[
+          InputTypesUnion, 
+          DeleteItemInput, 
+          OutputTypesUnion, 
+          DeleteItemOutput, 
+          DynamoDBResolvedConfiguration
+        ] {
+    def this(input: DeleteItemInput) = this()
+    
+    /* CompleteClass */
+    override val input: DeleteItemInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteItemInput, DeleteItemOutput] = js.native
+    
+    def resolveMiddleware(
+      clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ Any,
+      configuration: DynamoDBResolvedConfiguration
+    ): Handler[DeleteItemInput, DeleteItemOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: DynamoDBResolvedConfiguration,
+      options: Any
+    ): Handler[DeleteItemInput, DeleteItemOutput] = js.native
+  }
+}

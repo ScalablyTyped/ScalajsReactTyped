@@ -1,15 +1,11 @@
 package typingsJapgolly.winrt.Windows.Storage.Search
 
-import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterator
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Search.SortEntryVector")
 @js.native
-class SortEntryVector () extends IVector[SortEntry] {
-  /* CompleteClass */
-  override def first(): IIterator[SortEntry] = js.native
-}
-
+trait SortEntryVector
+  extends StObject
+     with IVector[SortEntry]

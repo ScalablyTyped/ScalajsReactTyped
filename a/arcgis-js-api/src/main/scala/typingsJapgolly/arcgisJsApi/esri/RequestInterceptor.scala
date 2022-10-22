@@ -1,85 +1,106 @@
 package typingsJapgolly.arcgisJsApi.esri
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestInterceptor extends Object {
+trait RequestInterceptor
+  extends StObject
+     with Object {
+  
   /**
     * Makes changes to the response after the request is sent, but before it's returned to the caller.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
   var after: js.UndefOr[AfterInterceptorCallback] = js.undefined
+  
   /**
-    * Make changes to the request URL or options before the request is sent. A returned value will be used as the response data, which would prevent the request from being sent.
+    * Make changes to the request URL or options before the request is sent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
   var before: js.UndefOr[BeforeInterceptorCallback] = js.undefined
+  
   /**
-    * Sets or adds headers into `requestOptions.headers`. See also: [requestOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions).
+    * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var headers: js.UndefOr[js.Any] = js.undefined
+  var error: js.UndefOr[ErrorCallback] = js.undefined
+  
   /**
-    * Sets or adds query parameters into `requestOptions.query`. See also: [requestOptions](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestOptions).
+    * Sets or adds headers into `requestOptions.headers`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var query: js.UndefOr[js.Any] = js.undefined
+  var headers: js.UndefOr[Any] = js.undefined
+  
   /**
-    * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse). The request will not be sent. This is resolved as the response `data`.
+    * Sets or adds query parameters into `requestOptions.query`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var responseData: js.UndefOr[js.Any] = js.undefined
+  var query: js.UndefOr[Any] = js.undefined
+  
   /**
-    * Specifies the URL(s) to apply to the interceptors. If the value is type `String`, then it matches if the request URL starts with that string. If null or undefined, the interceptor will apply to all relevant requests.
+    * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse).
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
+    */
+  var responseData: js.UndefOr[Any] = js.undefined
+  
+  /**
+    * Specifies the URL(s) to apply to the interceptors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
   var urls: js.UndefOr[String | js.RegExp | (js.Array[String | js.RegExp])] = js.undefined
-  /**
-    * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened. For example, this could be used to log specific errors occurring with layers or services.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
-    *
-    *
-    */
-  def error(): Unit
 }
-
 object RequestInterceptor {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    error: Callback,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    after: /* response */ RequestResponse => Callback = null,
-    before: /* params */ js.Any => CallbackTo[js.Any] = null,
-    headers: js.Any = null,
-    query: js.Any = null,
-    responseData: js.Any = null,
-    urls: String | js.RegExp | (js.Array[String | js.RegExp]) = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): RequestInterceptor = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("error")(error.toJsFn)
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction1((t0: /* response */ typingsJapgolly.arcgisJsApi.esri.RequestResponse) => after(t0).runNow()))
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction1((t0: /* params */ js.Any) => before(t0).runNow()))
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
-    if (responseData != null) __obj.updateDynamic("responseData")(responseData.asInstanceOf[js.Any])
-    if (urls != null) __obj.updateDynamic("urls")(urls.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[RequestInterceptor]
   }
+  
+  extension [Self <: RequestInterceptor](x: Self) {
+    
+    inline def setAfter(value: /* response */ RequestResponse => Callback): Self = StObject.set(x, "after", js.Any.fromFunction1((t0: /* response */ RequestResponse) => value(t0).runNow()))
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setBefore(value: /* params */ Any => Any): Self = StObject.set(x, "before", js.Any.fromFunction1(value))
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setError(value: /* error */ Error => Callback): Self = StObject.set(x, "error", js.Any.fromFunction1((t0: /* error */ Error) => value(t0).runNow()))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setHeaders(value: Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setQuery(value: Any): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    
+    inline def setResponseData(value: Any): Self = StObject.set(x, "responseData", value.asInstanceOf[js.Any])
+    
+    inline def setResponseDataUndefined: Self = StObject.set(x, "responseData", js.undefined)
+    
+    inline def setUrls(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "urls", value.asInstanceOf[js.Any])
+    
+    inline def setUrlsUndefined: Self = StObject.set(x, "urls", js.undefined)
+    
+    inline def setUrlsVarargs(value: (String | js.RegExp)*): Self = StObject.set(x, "urls", js.Array(value*))
+  }
 }
-

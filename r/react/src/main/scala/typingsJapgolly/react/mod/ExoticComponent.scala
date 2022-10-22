@@ -1,9 +1,9 @@
 package typingsJapgolly.react.mod
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.React.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: similar to how Fragment is actually a symbol, the values returned from createContext,
 // forwardRef and memo are actually objects that are treated specially by the renderer; see:
@@ -13,15 +13,16 @@ import scala.scalajs.js.annotation._
 // However, we have no way of telling the JSX parser that it's a JSX element type or its props other than
 // by pretending to be a normal component.
 //
-// We don't just use ComponentType or SFC types because you are not supposed to attach statics to this
+// We don't just use ComponentType or FunctionComponent types because you are not supposed to attach statics to this
 // object, but rather to the original function.
 @js.native
-trait ExoticComponent[P] extends js.Object {
-  @JSName("$$typeof")
-  val DollarDollartypeof: js.Symbol = js.native
+trait ExoticComponent[P] extends StObject {
+  
   /**
     * **NOTE**: Exotic components are not callable.
     */
   def apply(props: P): Element | Null = js.native
+  
+  @JSName("$$typeof")
+  val DollarDollartypeof: js.Symbol = js.native
 }
-

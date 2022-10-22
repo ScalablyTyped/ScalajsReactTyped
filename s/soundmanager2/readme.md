@@ -10,10 +10,10 @@ A JavaScript Sound API supporting MP3, MPEG4 and HTML5 audio + RTMP, providing r
 | ------------------ | :-------------: |
 | Full name          | soundmanager2 |
 | Keywords           | soundmanager2, soundmanager 2, browser, audio, sound, mp3, mpeg4, html5 |
-| # releases         | 1 |
-| # dependents       | 14 |
-| # downloads        | 362564 |
-| # stars            | 5 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 104062.0 |
+| # stars            | 4812.0 |
 
 ## Links
 - [Homepage](http://www.schillmania.com/projects/soundmanager2/)

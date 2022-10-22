@@ -1,20 +1,23 @@
 package typingsJapgolly.wxServerSdk.mod
 
-import typingsJapgolly.wxServerSdk.AnonUpdated
+import typingsJapgolly.wxServerSdk.anon.UpdatedNumber
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpateCollectionResult extends js.Object {
-  var stats: AnonUpdated
-}
-
-object UpateCollectionResult {
-  @scala.inline
-  def apply(stats: AnonUpdated): UpateCollectionResult = {
-    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
+trait UpateCollectionResult extends StObject {
   
+  var stats: UpdatedNumber
+}
+object UpateCollectionResult {
+  
+  inline def apply(stats: UpdatedNumber): UpateCollectionResult = {
+    val __obj = js.Dynamic.literal(stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpateCollectionResult]
   }
+  
+  extension [Self <: UpateCollectionResult](x: Self) {
+    
+    inline def setStats(value: UpdatedNumber): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+  }
 }
-

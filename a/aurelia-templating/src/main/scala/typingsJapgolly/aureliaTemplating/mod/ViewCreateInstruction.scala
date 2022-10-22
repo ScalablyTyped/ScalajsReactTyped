@@ -1,27 +1,36 @@
 package typingsJapgolly.aureliaTemplating.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewCreateInstruction extends js.Object {
+trait ViewCreateInstruction extends StObject {
+  
   /**
-    * Indicates that the view is being created by enhancing existing DOM.
-    */
+  	* Indicates that the view is being created by enhancing existing DOM.
+  	*/
   var enhance: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * Specifies a key/value lookup of part replacements for the view being created.
-    */
+  	* Specifies a key/value lookup of part replacements for the view being created.
+  	*/
   var partReplacements: js.UndefOr[js.Object] = js.undefined
 }
-
 object ViewCreateInstruction {
-  @scala.inline
-  def apply(enhance: js.UndefOr[Boolean] = js.undefined, partReplacements: js.Object = null): ViewCreateInstruction = {
+  
+  inline def apply(): ViewCreateInstruction = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(enhance)) __obj.updateDynamic("enhance")(enhance.asInstanceOf[js.Any])
-    if (partReplacements != null) __obj.updateDynamic("partReplacements")(partReplacements.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewCreateInstruction]
   }
+  
+  extension [Self <: ViewCreateInstruction](x: Self) {
+    
+    inline def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
+    
+    inline def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
+    
+    inline def setPartReplacements(value: js.Object): Self = StObject.set(x, "partReplacements", value.asInstanceOf[js.Any])
+    
+    inline def setPartReplacementsUndefined: Self = StObject.set(x, "partReplacements", js.undefined)
+  }
 }
-

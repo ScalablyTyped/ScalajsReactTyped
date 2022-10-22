@@ -1,29 +1,42 @@
 package typingsJapgolly.googleFeeds
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MediaContent extends js.Object {
+trait MediaContent extends StObject {
+  
   var bitrate: Double
+  
   var channels: String
+  
   var duration: Double
+  
   var expression: String
+  
   var fileSize: Double
+  
   var framerate: Double
+  
   var height: Double
+  
   var isDefault: Boolean
+  
   var lang: String
+  
   var medium: String
+  
   var samplingrate: Double
+  
   var `type`: String
+  
   var url: String
+  
   var width: Double
 }
-
 object MediaContent {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bitrate: Double,
     channels: String,
     duration: Double,
@@ -43,5 +56,35 @@ object MediaContent {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaContent]
   }
+  
+  extension [Self <: MediaContent](x: Self) {
+    
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    
+    inline def setChannels(value: String): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setFileSize(value: Double): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    
+    inline def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setMedium(value: String): Self = StObject.set(x, "medium", value.asInstanceOf[js.Any])
+    
+    inline def setSamplingrate(value: Double): Self = StObject.set(x, "samplingrate", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

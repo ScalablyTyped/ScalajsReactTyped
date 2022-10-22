@@ -1,30 +1,32 @@
 package typingsJapgolly.matterJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Axes")
 @js.native
-class Axes () extends js.Object
-
+open class Axes () extends StObject
 /* static members */
-@JSImport("matter-js", "Axes")
-@js.native
-object Axes extends js.Object {
+object Axes {
+  
+  @JSImport("matter-js", "Axes")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new set of axes from the given vertices.
     * @method fromVertices
-    * @param {vertices} vertices
-    * @return {axes} A new axes from the given vertices
+    * @param {Vertices} vertices
+    * @returns {axes} A new axes from the given vertices
     */
-  def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = js.native
+  inline def fromVertices(vertices: js.Array[Vector]): js.Array[Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromVertices")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Vector]]
+  
   /**
     * Rotates a set of axes by the given angle.
     * @method rotate
     * @param {axes} axes
     * @param {number} angle
     */
-  def rotate(axes: js.Array[Vector], angle: Double): Unit = js.native
+  inline def rotate(axes: js.Array[Vector], angle: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(axes.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

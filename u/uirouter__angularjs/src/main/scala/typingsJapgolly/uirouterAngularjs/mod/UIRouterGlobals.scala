@@ -1,11 +1,10 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "UIRouterGlobals")
 @js.native
-class UIRouterGlobals ()
-  extends typingsJapgolly.uirouterCore.globalsMod.UIRouterGlobals
-
+open class UIRouterGlobals ()
+  extends typingsJapgolly.uirouterCore.mod.UIRouterGlobals

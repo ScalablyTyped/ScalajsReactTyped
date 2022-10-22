@@ -1,59 +1,53 @@
 package typingsJapgolly.angularCore.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InjectFlags extends js.Object
-
+sealed trait InjectFlags extends StObject
 @JSImport("@angular/core", "InjectFlags")
 @js.native
-object InjectFlags extends js.Object {
+object InjectFlags extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[InjectFlags & Double] = js.native
+  
   /** Check self and check parent injector if needed */
   @js.native
-  sealed trait Default extends InjectFlags
+  sealed trait Default
+    extends StObject
+       with InjectFlags
+  /* 0 */ val Default: typingsJapgolly.angularCore.mod.InjectFlags.Default & Double = js.native
   
   /**
     * Specifies that an injector should retrieve a dependency from any injector until reaching the
     * host element of the current component. (Only used with Element Injector)
     */
   @js.native
-  sealed trait Host extends InjectFlags
+  sealed trait Host
+    extends StObject
+       with InjectFlags
+  /* 1 */ val Host: typingsJapgolly.angularCore.mod.InjectFlags.Host & Double = js.native
   
   /** Inject `defaultValue` instead if token not found. */
   @js.native
-  sealed trait Optional extends InjectFlags
+  sealed trait Optional
+    extends StObject
+       with InjectFlags
+  /* 8 */ val Optional: typingsJapgolly.angularCore.mod.InjectFlags.Optional & Double = js.native
   
   /** Don't ascend to ancestors of the node requesting injection. */
   @js.native
-  sealed trait Self extends InjectFlags
+  sealed trait Self
+    extends StObject
+       with InjectFlags
+  /* 2 */ val Self: typingsJapgolly.angularCore.mod.InjectFlags.Self & Double = js.native
   
   /** Skip the node that is requesting injection. */
   @js.native
-  sealed trait SkipSelf extends InjectFlags
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InjectFlags with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 1 */ @js.native
-  object Host
-    extends TopLevel[typingsJapgolly.angularCore.mod.InjectFlags.Host with Double]
-  
-  /* 8 */ @js.native
-  object Optional
-    extends TopLevel[typingsJapgolly.angularCore.mod.InjectFlags.Optional with Double]
-  
-  /* 2 */ @js.native
-  object Self
-    extends TopLevel[typingsJapgolly.angularCore.mod.InjectFlags.Self with Double]
-  
-  /* 4 */ @js.native
-  object SkipSelf
-    extends TopLevel[typingsJapgolly.angularCore.mod.InjectFlags.SkipSelf with Double]
-  
+  sealed trait SkipSelf
+    extends StObject
+       with InjectFlags
+  /* 4 */ val SkipSelf: typingsJapgolly.angularCore.mod.InjectFlags.SkipSelf & Double = js.native
 }
-

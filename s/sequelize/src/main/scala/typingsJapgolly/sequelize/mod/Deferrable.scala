@@ -1,8 +1,8 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of properties related to deferrable constraints. It can be used to
@@ -35,44 +35,73 @@ import scala.scalajs.js.annotation._
   * });
   * ```
   */
-@js.native
-trait Deferrable extends js.Object {
-  @JSName("INITIALLY_DEFERRED")
-  var INITIALLY_DEFERRED_Original: DeferrableInitiallyDeferred = js.native
-  @JSName("INITIALLY_IMMEDIATE")
-  var INITIALLY_IMMEDIATE_Original: DeferrableInitiallyImmediate = js.native
-  @JSName("NOT")
-  var NOT_Original: DeferrableNot = js.native
-  @JSName("SET_DEFERRED")
-  var SET_DEFERRED_Original: DeferrableSetDeferred = js.native
-  @JSName("SET_IMMEDIATE")
-  var SET_IMMEDIATE_Original: DeferrableSetImmediate = js.native
+trait Deferrable extends StObject {
+  
   /**
     * A property that will defer constraints checks to the end of transactions.
     */
-  def INITIALLY_DEFERRED(): DeferrableInitiallyDeferred = js.native
+  def INITIALLY_DEFERRED(): DeferrableInitiallyDeferred
+  @JSName("INITIALLY_DEFERRED")
+  var INITIALLY_DEFERRED_Original: DeferrableInitiallyDeferred
+  
   /**
     * A property that will trigger the constraint checks immediately
     */
-  def INITIALLY_IMMEDIATE(): DeferrableInitiallyImmediate = js.native
+  def INITIALLY_IMMEDIATE(): DeferrableInitiallyImmediate
+  @JSName("INITIALLY_IMMEDIATE")
+  var INITIALLY_IMMEDIATE_Original: DeferrableInitiallyImmediate
+  
   /**
     * A property that will set the constraints to not deferred. This is the default in PostgreSQL and it make
     * it impossible to dynamically defer the constraints within a transaction.
     */
-  def NOT(): DeferrableNot = js.native
+  def NOT(): DeferrableNot
+  @JSName("NOT")
+  var NOT_Original: DeferrableNot
+  
   /**
     * A property that will trigger an additional query at the beginning of a
     * transaction which sets the constraints to deferred.
     *
     * @param constraints An array of constraint names. Will defer all constraints by default.
     */
-  def SET_DEFERRED(constraints: js.Array[String]): DeferrableSetDeferred = js.native
+  def SET_DEFERRED(constraints: js.Array[String]): DeferrableSetDeferred
+  @JSName("SET_DEFERRED")
+  var SET_DEFERRED_Original: DeferrableSetDeferred
+  
   /**
     * A property that will trigger an additional query at the beginning of a
     * transaction which sets the constraints to immediately.
     *
     * @param constraints An array of constraint names. Will defer all constraints by default.
     */
-  def SET_IMMEDIATE(constraints: js.Array[String]): DeferrableSetImmediate = js.native
+  def SET_IMMEDIATE(constraints: js.Array[String]): DeferrableSetImmediate
+  @JSName("SET_IMMEDIATE")
+  var SET_IMMEDIATE_Original: DeferrableSetImmediate
 }
-
+object Deferrable {
+  
+  inline def apply(
+    INITIALLY_DEFERRED: DeferrableInitiallyDeferred,
+    INITIALLY_IMMEDIATE: DeferrableInitiallyImmediate,
+    NOT: DeferrableNot,
+    SET_DEFERRED: DeferrableSetDeferred,
+    SET_IMMEDIATE: DeferrableSetImmediate
+  ): Deferrable = {
+    val __obj = js.Dynamic.literal(INITIALLY_DEFERRED = INITIALLY_DEFERRED.asInstanceOf[js.Any], INITIALLY_IMMEDIATE = INITIALLY_IMMEDIATE.asInstanceOf[js.Any], NOT = NOT.asInstanceOf[js.Any], SET_DEFERRED = SET_DEFERRED.asInstanceOf[js.Any], SET_IMMEDIATE = SET_IMMEDIATE.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Deferrable]
+  }
+  
+  extension [Self <: Deferrable](x: Self) {
+    
+    inline def setINITIALLY_DEFERRED(value: DeferrableInitiallyDeferred): Self = StObject.set(x, "INITIALLY_DEFERRED", value.asInstanceOf[js.Any])
+    
+    inline def setINITIALLY_IMMEDIATE(value: DeferrableInitiallyImmediate): Self = StObject.set(x, "INITIALLY_IMMEDIATE", value.asInstanceOf[js.Any])
+    
+    inline def setNOT(value: DeferrableNot): Self = StObject.set(x, "NOT", value.asInstanceOf[js.Any])
+    
+    inline def setSET_DEFERRED(value: DeferrableSetDeferred): Self = StObject.set(x, "SET_DEFERRED", value.asInstanceOf[js.Any])
+    
+    inline def setSET_IMMEDIATE(value: DeferrableSetImmediate): Self = StObject.set(x, "SET_IMMEDIATE", value.asInstanceOf[js.Any])
+  }
+}

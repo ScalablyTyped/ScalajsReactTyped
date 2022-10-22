@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.diagram
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShapeHover extends js.Object {
+trait ShapeHover extends StObject {
+  
   var fill: js.UndefOr[String | ShapeHoverFill] = js.undefined
 }
-
 object ShapeHover {
-  @scala.inline
-  def apply(fill: String | ShapeHoverFill = null): ShapeHover = {
+  
+  inline def apply(): ShapeHover = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShapeHover]
   }
+  
+  extension [Self <: ShapeHover](x: Self) {
+    
+    inline def setFill(value: String | ShapeHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+  }
 }
-

@@ -1,89 +1,143 @@
 package typingsJapgolly.fpsmeter
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FPSMeterOptions extends js.Object {
-  			// Meter right offset.
+trait FPSMeterOptions extends StObject {
+  
+  // Meter right offset.
   var bottom: js.UndefOr[String] = js.undefined
-  		// Toggle between show 'fps' and 'ms' on this event.
+  
+  // Toggle between show 'fps' and 'ms' on this event.
   var decimals: js.UndefOr[Double] = js.undefined
-  			// Allow themes to use coloring by FPS heat. 0 FPS = red, maxFps = green.
+  
+  // Allow themes to use coloring by FPS heat. 0 FPS = red, maxFps = green.
   var graph: js.UndefOr[Double] = js.undefined
-  			// Meter theme. Build in: 'dark', 'light', 'transparent', 'colorful'.
+  
+  // Meter theme. Build in: 'dark', 'light', 'transparent', 'colorful'.
   var heat: js.UndefOr[Double] = js.undefined
-  			// Whether to show history graph.
+  
+  // Whether to show history graph.
   var history: js.UndefOr[Double] = js.undefined
+  
   var interval: js.UndefOr[Double] = js.undefined
-  		// Meter Z index.
+  
+  // Meter Z index.
   var left: js.UndefOr[String] = js.undefined
-  		// Meter bottom offset.
+  
+  // Meter bottom offset.
   var margin: js.UndefOr[String] = js.undefined
-  		// Number of decimals in FPS number. 1 = 59.9, 2 = 59.94, ...
+  
+  // Number of decimals in FPS number. 1 = 59.9, 2 = 59.94, ...
   var maxFps: js.UndefOr[Double] = js.undefined
-  		// Minimal tick reporting interval in milliseconds.
+  
+  // Minimal tick reporting interval in milliseconds.
   var position: js.UndefOr[String] = js.undefined
-  			// Meter top offset.
+  
+  // Meter top offset.
   var right: js.UndefOr[String] = js.undefined
-  		// Spike smoothing strength. 1 means no smoothing.
+  
+  // Spike smoothing strength. 1 means no smoothing.
   var show: js.UndefOr[String] = js.undefined
-   		// Update interval in milliseconds.
+  
+  // Update interval in milliseconds.
   var smoothing: js.UndefOr[Double] = js.undefined
-  		// Meter margin. Helps with centering the counter when left: 50%;
+  
+  // Meter margin. Helps with centering the counter when left: 50%;
   var theme: js.UndefOr[String] = js.undefined
-  		// Max expected FPS value.
+  
+  // Max expected FPS value.
   var threshold: js.UndefOr[Double] = js.undefined
-  			// Whether to show 'fps', or 'ms' = frame duration in milliseconds.
+  
+  // Whether to show 'fps', or 'ms' = frame duration in milliseconds.
   var toggleOn: js.UndefOr[String] = js.undefined
-  			// Meter left offset.
+  
+  // Meter left offset.
   var top: js.UndefOr[String] = js.undefined
-  		// Meter position.
+  
+  // Meter position.
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object FPSMeterOptions {
-  @scala.inline
-  def apply(
-    bottom: String = null,
-    decimals: Int | Double = null,
-    graph: Int | Double = null,
-    heat: Int | Double = null,
-    history: Int | Double = null,
-    interval: Int | Double = null,
-    left: String = null,
-    margin: String = null,
-    maxFps: Int | Double = null,
-    position: String = null,
-    right: String = null,
-    show: String = null,
-    smoothing: Int | Double = null,
-    theme: String = null,
-    threshold: Int | Double = null,
-    toggleOn: String = null,
-    top: String = null,
-    zIndex: Int | Double = null
-  ): FPSMeterOptions = {
+  
+  inline def apply(): FPSMeterOptions = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
-    if (graph != null) __obj.updateDynamic("graph")(graph.asInstanceOf[js.Any])
-    if (heat != null) __obj.updateDynamic("heat")(heat.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (maxFps != null) __obj.updateDynamic("maxFps")(maxFps.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (smoothing != null) __obj.updateDynamic("smoothing")(smoothing.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
-    if (toggleOn != null) __obj.updateDynamic("toggleOn")(toggleOn.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[FPSMeterOptions]
   }
+  
+  extension [Self <: FPSMeterOptions](x: Self) {
+    
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setDecimals(value: Double): Self = StObject.set(x, "decimals", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalsUndefined: Self = StObject.set(x, "decimals", js.undefined)
+    
+    inline def setGraph(value: Double): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    
+    inline def setGraphUndefined: Self = StObject.set(x, "graph", js.undefined)
+    
+    inline def setHeat(value: Double): Self = StObject.set(x, "heat", value.asInstanceOf[js.Any])
+    
+    inline def setHeatUndefined: Self = StObject.set(x, "heat", js.undefined)
+    
+    inline def setHistory(value: Double): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMaxFps(value: Double): Self = StObject.set(x, "maxFps", value.asInstanceOf[js.Any])
+    
+    inline def setMaxFpsUndefined: Self = StObject.set(x, "maxFps", js.undefined)
+    
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setShow(value: String): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setSmoothing(value: Double): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    
+    inline def setToggleOn(value: String): Self = StObject.set(x, "toggleOn", value.asInstanceOf[js.Any])
+    
+    inline def setToggleOnUndefined: Self = StObject.set(x, "toggleOn", js.undefined)
+    
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

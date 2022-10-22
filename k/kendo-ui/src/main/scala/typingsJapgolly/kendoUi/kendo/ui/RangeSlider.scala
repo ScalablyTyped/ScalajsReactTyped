@@ -1,31 +1,25 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.RangeSlider")
 @js.native
-class RangeSlider protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: RangeSliderOptions) = this()
+trait RangeSlider
+  extends StObject
+     with Widget {
+  
+  def enable(enable: Boolean): Unit = js.native
+  
   @JSName("options")
   var options_RangeSlider: RangeSliderOptions = js.native
-  var wrapper: JQuery = js.native
-  def enable(enable: Boolean): Unit = js.native
-  def value(): js.Any = js.native
-  def value(startEndArray: js.Any): Unit = js.native
-  def values(): js.Any = js.native
+  
+  def value(): Any = js.native
+  def value(startEndArray: Any): Unit = js.native
+  
+  def values(): Any = js.native
   def values(selectionStart: Double, selectionEnd: Double): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.RangeSlider")
-@js.native
-object RangeSlider extends js.Object {
-  var fn: RangeSlider = js.native
-  def extend(proto: js.Object): RangeSlider = js.native
-}
-

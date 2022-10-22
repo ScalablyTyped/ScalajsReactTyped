@@ -1,8 +1,8 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.INTERNAL_SERVER_ERROR
@@ -97,192 +97,188 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.squareConnect.squareConnectStrings.SERVICE_UNAVAILABLE
   - typingsJapgolly.squareConnect.squareConnectStrings.GATEWAY_TIMEOUT
 */
-trait ErrorCodeType extends js.Object
-
+trait ErrorCodeType extends StObject
 object ErrorCodeType {
-  @scala.inline
-  def ACCESS_TOKEN_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_EXPIRED = this.cast("ACCESS_TOKEN_EXPIRED")
-  @scala.inline
-  def ACCESS_TOKEN_REVOKED: typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_REVOKED = this.cast("ACCESS_TOKEN_REVOKED")
-  @scala.inline
-  def AMOUNT_TOO_HIGH: typingsJapgolly.squareConnect.squareConnectStrings.AMOUNT_TOO_HIGH = this.cast("AMOUNT_TOO_HIGH")
-  @scala.inline
-  def API_VERSION_INCOMPATIBLE: typingsJapgolly.squareConnect.squareConnectStrings.API_VERSION_INCOMPATIBLE = this.cast("API_VERSION_INCOMPATIBLE")
-  @scala.inline
-  def APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND: typingsJapgolly.squareConnect.squareConnectStrings.APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND = this.cast("APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND")
-  @scala.inline
-  def APPLICATION_DISABLED: typingsJapgolly.squareConnect.squareConnectStrings.APPLICATION_DISABLED = this.cast("APPLICATION_DISABLED")
-  @scala.inline
-  def ARRAY_EMPTY: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_EMPTY = this.cast("ARRAY_EMPTY")
-  @scala.inline
-  def ARRAY_LENGTH_TOO_LONG: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_LONG = this.cast("ARRAY_LENGTH_TOO_LONG")
-  @scala.inline
-  def ARRAY_LENGTH_TOO_SHORT: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_SHORT = this.cast("ARRAY_LENGTH_TOO_SHORT")
-  @scala.inline
-  def BAD_CERTIFICATE: typingsJapgolly.squareConnect.squareConnectStrings.BAD_CERTIFICATE = this.cast("BAD_CERTIFICATE")
-  @scala.inline
-  def BAD_REQUEST: typingsJapgolly.squareConnect.squareConnectStrings.BAD_REQUEST = this.cast("BAD_REQUEST")
-  @scala.inline
-  def CARD_DECLINED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED = this.cast("CARD_DECLINED")
-  @scala.inline
-  def CARD_DECLINED_CALL_ISSUER: typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED_CALL_ISSUER = this.cast("CARD_DECLINED_CALL_ISSUER")
-  @scala.inline
-  def CARD_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_EXPIRED = this.cast("CARD_EXPIRED")
-  @scala.inline
-  def CARD_PROCESSING_NOT_ENABLED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_PROCESSING_NOT_ENABLED = this.cast("CARD_PROCESSING_NOT_ENABLED")
-  @scala.inline
-  def CARD_TOKEN_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_EXPIRED = this.cast("CARD_TOKEN_EXPIRED")
-  @scala.inline
-  def CARD_TOKEN_USED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_USED = this.cast("CARD_TOKEN_USED")
-  @scala.inline
-  def CHECKOUT_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CHECKOUT_EXPIRED = this.cast("CHECKOUT_EXPIRED")
-  @scala.inline
-  def CONFLICT: typingsJapgolly.squareConnect.squareConnectStrings.CONFLICT = this.cast("CONFLICT")
-  @scala.inline
-  def CONFLICTING_PARAMETERS: typingsJapgolly.squareConnect.squareConnectStrings.CONFLICTING_PARAMETERS = this.cast("CONFLICTING_PARAMETERS")
-  @scala.inline
-  def DELAYED_TRANSACTION_CANCELED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CANCELED = this.cast("DELAYED_TRANSACTION_CANCELED")
-  @scala.inline
-  def DELAYED_TRANSACTION_CAPTURED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CAPTURED = this.cast("DELAYED_TRANSACTION_CAPTURED")
-  @scala.inline
-  def DELAYED_TRANSACTION_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_EXPIRED = this.cast("DELAYED_TRANSACTION_EXPIRED")
-  @scala.inline
-  def DELAYED_TRANSACTION_FAILED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_FAILED = this.cast("DELAYED_TRANSACTION_FAILED")
-  @scala.inline
-  def DEPRECATED_FIELD_SET: typingsJapgolly.squareConnect.squareConnectStrings.DEPRECATED_FIELD_SET = this.cast("DEPRECATED_FIELD_SET")
-  @scala.inline
-  def EXPECTED_ARRAY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_ARRAY = this.cast("EXPECTED_ARRAY")
-  @scala.inline
-  def EXPECTED_BASE64_ENCODED_BYTE_ARRAY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BASE64_ENCODED_BYTE_ARRAY = this.cast("EXPECTED_BASE64_ENCODED_BYTE_ARRAY")
-  @scala.inline
-  def EXPECTED_BOOLEAN: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BOOLEAN = this.cast("EXPECTED_BOOLEAN")
-  @scala.inline
-  def EXPECTED_FLOAT: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_FLOAT = this.cast("EXPECTED_FLOAT")
-  @scala.inline
-  def EXPECTED_INTEGER: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_INTEGER = this.cast("EXPECTED_INTEGER")
-  @scala.inline
-  def EXPECTED_JSON_BODY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_JSON_BODY = this.cast("EXPECTED_JSON_BODY")
-  @scala.inline
-  def EXPECTED_MAP: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_MAP = this.cast("EXPECTED_MAP")
-  @scala.inline
-  def EXPECTED_OBJECT: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_OBJECT = this.cast("EXPECTED_OBJECT")
-  @scala.inline
-  def EXPECTED_STRING: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_STRING = this.cast("EXPECTED_STRING")
-  @scala.inline
-  def FORBIDDEN: typingsJapgolly.squareConnect.squareConnectStrings.FORBIDDEN = this.cast("FORBIDDEN")
-  @scala.inline
-  def GATEWAY_TIMEOUT: typingsJapgolly.squareConnect.squareConnectStrings.GATEWAY_TIMEOUT = this.cast("GATEWAY_TIMEOUT")
-  @scala.inline
-  def IDEMPOTENCY_KEY_REUSED: typingsJapgolly.squareConnect.squareConnectStrings.IDEMPOTENCY_KEY_REUSED = this.cast("IDEMPOTENCY_KEY_REUSED")
-  @scala.inline
-  def INCORRECT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.INCORRECT_TYPE = this.cast("INCORRECT_TYPE")
-  @scala.inline
-  def INSUFFICIENT_SCOPES: typingsJapgolly.squareConnect.squareConnectStrings.INSUFFICIENT_SCOPES = this.cast("INSUFFICIENT_SCOPES")
-  @scala.inline
-  def INTERNAL_SERVER_ERROR: typingsJapgolly.squareConnect.squareConnectStrings.INTERNAL_SERVER_ERROR = this.cast("INTERNAL_SERVER_ERROR")
-  @scala.inline
-  def INVALID_ARRAY_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ARRAY_VALUE = this.cast("INVALID_ARRAY_VALUE")
-  @scala.inline
-  def INVALID_CARD: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD = this.cast("INVALID_CARD")
-  @scala.inline
-  def INVALID_CARD_DATA: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD_DATA = this.cast("INVALID_CARD_DATA")
-  @scala.inline
-  def INVALID_CONTENT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CONTENT_TYPE = this.cast("INVALID_CONTENT_TYPE")
-  @scala.inline
-  def INVALID_CURSOR: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CURSOR = this.cast("INVALID_CURSOR")
-  @scala.inline
-  def INVALID_EMAIL_ADDRESS: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EMAIL_ADDRESS = this.cast("INVALID_EMAIL_ADDRESS")
-  @scala.inline
-  def INVALID_ENCRYPTED_CARD: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENCRYPTED_CARD = this.cast("INVALID_ENCRYPTED_CARD")
-  @scala.inline
-  def INVALID_ENUM_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENUM_VALUE = this.cast("INVALID_ENUM_VALUE")
-  @scala.inline
-  def INVALID_EXPIRATION: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION = this.cast("INVALID_EXPIRATION")
-  @scala.inline
-  def INVALID_EXPIRATION_DATE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_DATE = this.cast("INVALID_EXPIRATION_DATE")
-  @scala.inline
-  def INVALID_EXPIRATION_YEAR: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_YEAR = this.cast("INVALID_EXPIRATION_YEAR")
-  @scala.inline
-  def INVALID_FORM_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_FORM_VALUE = this.cast("INVALID_FORM_VALUE")
-  @scala.inline
-  def INVALID_PHONE_NUMBER: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_PHONE_NUMBER = this.cast("INVALID_PHONE_NUMBER")
-  @scala.inline
-  def INVALID_SORT_ORDER: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SORT_ORDER = this.cast("INVALID_SORT_ORDER")
-  @scala.inline
-  def INVALID_SQUARE_VERSION_FORMAT: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SQUARE_VERSION_FORMAT = this.cast("INVALID_SQUARE_VERSION_FORMAT")
-  @scala.inline
-  def INVALID_TIME: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME = this.cast("INVALID_TIME")
-  @scala.inline
-  def INVALID_TIME_RANGE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME_RANGE = this.cast("INVALID_TIME_RANGE")
-  @scala.inline
-  def INVALID_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_VALUE = this.cast("INVALID_VALUE")
-  @scala.inline
-  def LOCATION_MISMATCH: typingsJapgolly.squareConnect.squareConnectStrings.LOCATION_MISMATCH = this.cast("LOCATION_MISMATCH")
-  @scala.inline
-  def METHOD_NOT_ALLOWED: typingsJapgolly.squareConnect.squareConnectStrings.METHOD_NOT_ALLOWED = this.cast("METHOD_NOT_ALLOWED")
-  @scala.inline
-  def MISSING_REQUIRED_PARAMETER: typingsJapgolly.squareConnect.squareConnectStrings.MISSING_REQUIRED_PARAMETER = this.cast("MISSING_REQUIRED_PARAMETER")
-  @scala.inline
-  def NOT_ACCEPTABLE: typingsJapgolly.squareConnect.squareConnectStrings.NOT_ACCEPTABLE = this.cast("NOT_ACCEPTABLE")
-  @scala.inline
-  def NOT_FOUND: typingsJapgolly.squareConnect.squareConnectStrings.NOT_FOUND = this.cast("NOT_FOUND")
-  @scala.inline
-  def NOT_IMPLEMENTED: typingsJapgolly.squareConnect.squareConnectStrings.NOT_IMPLEMENTED = this.cast("NOT_IMPLEMENTED")
-  @scala.inline
-  def NO_FIELDS_SET: typingsJapgolly.squareConnect.squareConnectStrings.NO_FIELDS_SET = this.cast("NO_FIELDS_SET")
-  @scala.inline
-  def ONE_INSTRUMENT_EXPECTED: typingsJapgolly.squareConnect.squareConnectStrings.ONE_INSTRUMENT_EXPECTED = this.cast("ONE_INSTRUMENT_EXPECTED")
-  @scala.inline
-  def PAYMENT_NOT_REFUNDABLE: typingsJapgolly.squareConnect.squareConnectStrings.PAYMENT_NOT_REFUNDABLE = this.cast("PAYMENT_NOT_REFUNDABLE")
-  @scala.inline
-  def RATE_LIMITED: typingsJapgolly.squareConnect.squareConnectStrings.RATE_LIMITED = this.cast("RATE_LIMITED")
-  @scala.inline
-  def REFUND_ALREADY_PENDING: typingsJapgolly.squareConnect.squareConnectStrings.REFUND_ALREADY_PENDING = this.cast("REFUND_ALREADY_PENDING")
-  @scala.inline
-  def REFUND_AMOUNT_INVALID: typingsJapgolly.squareConnect.squareConnectStrings.REFUND_AMOUNT_INVALID = this.cast("REFUND_AMOUNT_INVALID")
-  @scala.inline
-  def REQUEST_ENTITY_TOO_LARGE: typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_ENTITY_TOO_LARGE = this.cast("REQUEST_ENTITY_TOO_LARGE")
-  @scala.inline
-  def REQUEST_TIMEOUT: typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_TIMEOUT = this.cast("REQUEST_TIMEOUT")
-  @scala.inline
-  def SANDBOX_NOT_SUPPORTED: typingsJapgolly.squareConnect.squareConnectStrings.SANDBOX_NOT_SUPPORTED = this.cast("SANDBOX_NOT_SUPPORTED")
-  @scala.inline
-  def SERVICE_UNAVAILABLE: typingsJapgolly.squareConnect.squareConnectStrings.SERVICE_UNAVAILABLE = this.cast("SERVICE_UNAVAILABLE")
-  @scala.inline
-  def UNAUTHORIZED: typingsJapgolly.squareConnect.squareConnectStrings.UNAUTHORIZED = this.cast("UNAUTHORIZED")
-  @scala.inline
-  def UNEXPECTED_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.UNEXPECTED_VALUE = this.cast("UNEXPECTED_VALUE")
-  @scala.inline
-  def UNKNOWN_QUERY_PARAMETER: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_QUERY_PARAMETER = this.cast("UNKNOWN_QUERY_PARAMETER")
-  @scala.inline
-  def UNSUPPORTED_CARD_BRAND: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_CARD_BRAND = this.cast("UNSUPPORTED_CARD_BRAND")
-  @scala.inline
-  def UNSUPPORTED_ENTRY_METHOD: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_ENTRY_METHOD = this.cast("UNSUPPORTED_ENTRY_METHOD")
-  @scala.inline
-  def UNSUPPORTED_INSTRUMENT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_INSTRUMENT_TYPE = this.cast("UNSUPPORTED_INSTRUMENT_TYPE")
-  @scala.inline
-  def UNSUPPORTED_MEDIA_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_MEDIA_TYPE = this.cast("UNSUPPORTED_MEDIA_TYPE")
-  @scala.inline
-  def V1_ACCESS_TOKEN: typingsJapgolly.squareConnect.squareConnectStrings.V1_ACCESS_TOKEN = this.cast("V1_ACCESS_TOKEN")
-  @scala.inline
-  def V1_APPLICATION: typingsJapgolly.squareConnect.squareConnectStrings.V1_APPLICATION = this.cast("V1_APPLICATION")
-  @scala.inline
-  def VALUE_EMPTY: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_EMPTY = this.cast("VALUE_EMPTY")
-  @scala.inline
-  def VALUE_REGEX_MISMATCH: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_REGEX_MISMATCH = this.cast("VALUE_REGEX_MISMATCH")
-  @scala.inline
-  def VALUE_TOO_HIGH: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_HIGH = this.cast("VALUE_TOO_HIGH")
-  @scala.inline
-  def VALUE_TOO_LONG: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LONG = this.cast("VALUE_TOO_LONG")
-  @scala.inline
-  def VALUE_TOO_LOW: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LOW = this.cast("VALUE_TOO_LOW")
-  @scala.inline
-  def VALUE_TOO_SHORT: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_SHORT = this.cast("VALUE_TOO_SHORT")
-  @scala.inline
-  def VERIFY_AVS_FAILURE: typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_AVS_FAILURE = this.cast("VERIFY_AVS_FAILURE")
-  @scala.inline
-  def VERIFY_CVV_FAILURE: typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_CVV_FAILURE = this.cast("VERIFY_CVV_FAILURE")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ACCESS_TOKEN_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_EXPIRED = "ACCESS_TOKEN_EXPIRED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_EXPIRED]
+  
+  inline def ACCESS_TOKEN_REVOKED: typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_REVOKED = "ACCESS_TOKEN_REVOKED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ACCESS_TOKEN_REVOKED]
+  
+  inline def AMOUNT_TOO_HIGH: typingsJapgolly.squareConnect.squareConnectStrings.AMOUNT_TOO_HIGH = "AMOUNT_TOO_HIGH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.AMOUNT_TOO_HIGH]
+  
+  inline def API_VERSION_INCOMPATIBLE: typingsJapgolly.squareConnect.squareConnectStrings.API_VERSION_INCOMPATIBLE = "API_VERSION_INCOMPATIBLE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.API_VERSION_INCOMPATIBLE]
+  
+  inline def APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND: typingsJapgolly.squareConnect.squareConnectStrings.APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND = "APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.APPLE_PAYMENT_PROCESSING_CERTIFICATE_HASH_NOT_FOUND]
+  
+  inline def APPLICATION_DISABLED: typingsJapgolly.squareConnect.squareConnectStrings.APPLICATION_DISABLED = "APPLICATION_DISABLED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.APPLICATION_DISABLED]
+  
+  inline def ARRAY_EMPTY: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_EMPTY = "ARRAY_EMPTY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_EMPTY]
+  
+  inline def ARRAY_LENGTH_TOO_LONG: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_LONG = "ARRAY_LENGTH_TOO_LONG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_LONG]
+  
+  inline def ARRAY_LENGTH_TOO_SHORT: typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_SHORT = "ARRAY_LENGTH_TOO_SHORT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ARRAY_LENGTH_TOO_SHORT]
+  
+  inline def BAD_CERTIFICATE: typingsJapgolly.squareConnect.squareConnectStrings.BAD_CERTIFICATE = "BAD_CERTIFICATE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BAD_CERTIFICATE]
+  
+  inline def BAD_REQUEST: typingsJapgolly.squareConnect.squareConnectStrings.BAD_REQUEST = "BAD_REQUEST".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.BAD_REQUEST]
+  
+  inline def CARD_DECLINED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED = "CARD_DECLINED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED]
+  
+  inline def CARD_DECLINED_CALL_ISSUER: typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED_CALL_ISSUER = "CARD_DECLINED_CALL_ISSUER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_DECLINED_CALL_ISSUER]
+  
+  inline def CARD_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_EXPIRED = "CARD_EXPIRED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_EXPIRED]
+  
+  inline def CARD_PROCESSING_NOT_ENABLED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_PROCESSING_NOT_ENABLED = "CARD_PROCESSING_NOT_ENABLED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_PROCESSING_NOT_ENABLED]
+  
+  inline def CARD_TOKEN_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_EXPIRED = "CARD_TOKEN_EXPIRED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_EXPIRED]
+  
+  inline def CARD_TOKEN_USED: typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_USED = "CARD_TOKEN_USED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CARD_TOKEN_USED]
+  
+  inline def CHECKOUT_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.CHECKOUT_EXPIRED = "CHECKOUT_EXPIRED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CHECKOUT_EXPIRED]
+  
+  inline def CONFLICT: typingsJapgolly.squareConnect.squareConnectStrings.CONFLICT = "CONFLICT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CONFLICT]
+  
+  inline def CONFLICTING_PARAMETERS: typingsJapgolly.squareConnect.squareConnectStrings.CONFLICTING_PARAMETERS = "CONFLICTING_PARAMETERS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CONFLICTING_PARAMETERS]
+  
+  inline def DELAYED_TRANSACTION_CANCELED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CANCELED = "DELAYED_TRANSACTION_CANCELED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CANCELED]
+  
+  inline def DELAYED_TRANSACTION_CAPTURED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CAPTURED = "DELAYED_TRANSACTION_CAPTURED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_CAPTURED]
+  
+  inline def DELAYED_TRANSACTION_EXPIRED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_EXPIRED = "DELAYED_TRANSACTION_EXPIRED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_EXPIRED]
+  
+  inline def DELAYED_TRANSACTION_FAILED: typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_FAILED = "DELAYED_TRANSACTION_FAILED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DELAYED_TRANSACTION_FAILED]
+  
+  inline def DEPRECATED_FIELD_SET: typingsJapgolly.squareConnect.squareConnectStrings.DEPRECATED_FIELD_SET = "DEPRECATED_FIELD_SET".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.DEPRECATED_FIELD_SET]
+  
+  inline def EXPECTED_ARRAY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_ARRAY = "EXPECTED_ARRAY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_ARRAY]
+  
+  inline def EXPECTED_BASE64_ENCODED_BYTE_ARRAY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BASE64_ENCODED_BYTE_ARRAY = "EXPECTED_BASE64_ENCODED_BYTE_ARRAY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BASE64_ENCODED_BYTE_ARRAY]
+  
+  inline def EXPECTED_BOOLEAN: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BOOLEAN = "EXPECTED_BOOLEAN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_BOOLEAN]
+  
+  inline def EXPECTED_FLOAT: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_FLOAT = "EXPECTED_FLOAT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_FLOAT]
+  
+  inline def EXPECTED_INTEGER: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_INTEGER = "EXPECTED_INTEGER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_INTEGER]
+  
+  inline def EXPECTED_JSON_BODY: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_JSON_BODY = "EXPECTED_JSON_BODY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_JSON_BODY]
+  
+  inline def EXPECTED_MAP: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_MAP = "EXPECTED_MAP".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_MAP]
+  
+  inline def EXPECTED_OBJECT: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_OBJECT = "EXPECTED_OBJECT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_OBJECT]
+  
+  inline def EXPECTED_STRING: typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_STRING = "EXPECTED_STRING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.EXPECTED_STRING]
+  
+  inline def FORBIDDEN: typingsJapgolly.squareConnect.squareConnectStrings.FORBIDDEN = "FORBIDDEN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.FORBIDDEN]
+  
+  inline def GATEWAY_TIMEOUT: typingsJapgolly.squareConnect.squareConnectStrings.GATEWAY_TIMEOUT = "GATEWAY_TIMEOUT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.GATEWAY_TIMEOUT]
+  
+  inline def IDEMPOTENCY_KEY_REUSED: typingsJapgolly.squareConnect.squareConnectStrings.IDEMPOTENCY_KEY_REUSED = "IDEMPOTENCY_KEY_REUSED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.IDEMPOTENCY_KEY_REUSED]
+  
+  inline def INCORRECT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.INCORRECT_TYPE = "INCORRECT_TYPE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INCORRECT_TYPE]
+  
+  inline def INSUFFICIENT_SCOPES: typingsJapgolly.squareConnect.squareConnectStrings.INSUFFICIENT_SCOPES = "INSUFFICIENT_SCOPES".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INSUFFICIENT_SCOPES]
+  
+  inline def INTERNAL_SERVER_ERROR: typingsJapgolly.squareConnect.squareConnectStrings.INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INTERNAL_SERVER_ERROR]
+  
+  inline def INVALID_ARRAY_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ARRAY_VALUE = "INVALID_ARRAY_VALUE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ARRAY_VALUE]
+  
+  inline def INVALID_CARD: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD = "INVALID_CARD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD]
+  
+  inline def INVALID_CARD_DATA: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD_DATA = "INVALID_CARD_DATA".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CARD_DATA]
+  
+  inline def INVALID_CONTENT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CONTENT_TYPE = "INVALID_CONTENT_TYPE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CONTENT_TYPE]
+  
+  inline def INVALID_CURSOR: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CURSOR = "INVALID_CURSOR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_CURSOR]
+  
+  inline def INVALID_EMAIL_ADDRESS: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EMAIL_ADDRESS = "INVALID_EMAIL_ADDRESS".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EMAIL_ADDRESS]
+  
+  inline def INVALID_ENCRYPTED_CARD: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENCRYPTED_CARD = "INVALID_ENCRYPTED_CARD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENCRYPTED_CARD]
+  
+  inline def INVALID_ENUM_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENUM_VALUE = "INVALID_ENUM_VALUE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_ENUM_VALUE]
+  
+  inline def INVALID_EXPIRATION: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION = "INVALID_EXPIRATION".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION]
+  
+  inline def INVALID_EXPIRATION_DATE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_DATE = "INVALID_EXPIRATION_DATE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_DATE]
+  
+  inline def INVALID_EXPIRATION_YEAR: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_YEAR = "INVALID_EXPIRATION_YEAR".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_EXPIRATION_YEAR]
+  
+  inline def INVALID_FORM_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_FORM_VALUE = "INVALID_FORM_VALUE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_FORM_VALUE]
+  
+  inline def INVALID_PHONE_NUMBER: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_PHONE_NUMBER = "INVALID_PHONE_NUMBER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_PHONE_NUMBER]
+  
+  inline def INVALID_SORT_ORDER: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SORT_ORDER = "INVALID_SORT_ORDER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SORT_ORDER]
+  
+  inline def INVALID_SQUARE_VERSION_FORMAT: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SQUARE_VERSION_FORMAT = "INVALID_SQUARE_VERSION_FORMAT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_SQUARE_VERSION_FORMAT]
+  
+  inline def INVALID_TIME: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME = "INVALID_TIME".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME]
+  
+  inline def INVALID_TIME_RANGE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME_RANGE = "INVALID_TIME_RANGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_TIME_RANGE]
+  
+  inline def INVALID_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.INVALID_VALUE = "INVALID_VALUE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INVALID_VALUE]
+  
+  inline def LOCATION_MISMATCH: typingsJapgolly.squareConnect.squareConnectStrings.LOCATION_MISMATCH = "LOCATION_MISMATCH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.LOCATION_MISMATCH]
+  
+  inline def METHOD_NOT_ALLOWED: typingsJapgolly.squareConnect.squareConnectStrings.METHOD_NOT_ALLOWED = "METHOD_NOT_ALLOWED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.METHOD_NOT_ALLOWED]
+  
+  inline def MISSING_REQUIRED_PARAMETER: typingsJapgolly.squareConnect.squareConnectStrings.MISSING_REQUIRED_PARAMETER = "MISSING_REQUIRED_PARAMETER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.MISSING_REQUIRED_PARAMETER]
+  
+  inline def NOT_ACCEPTABLE: typingsJapgolly.squareConnect.squareConnectStrings.NOT_ACCEPTABLE = "NOT_ACCEPTABLE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NOT_ACCEPTABLE]
+  
+  inline def NOT_FOUND: typingsJapgolly.squareConnect.squareConnectStrings.NOT_FOUND = "NOT_FOUND".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NOT_FOUND]
+  
+  inline def NOT_IMPLEMENTED: typingsJapgolly.squareConnect.squareConnectStrings.NOT_IMPLEMENTED = "NOT_IMPLEMENTED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NOT_IMPLEMENTED]
+  
+  inline def NO_FIELDS_SET: typingsJapgolly.squareConnect.squareConnectStrings.NO_FIELDS_SET = "NO_FIELDS_SET".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.NO_FIELDS_SET]
+  
+  inline def ONE_INSTRUMENT_EXPECTED: typingsJapgolly.squareConnect.squareConnectStrings.ONE_INSTRUMENT_EXPECTED = "ONE_INSTRUMENT_EXPECTED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ONE_INSTRUMENT_EXPECTED]
+  
+  inline def PAYMENT_NOT_REFUNDABLE: typingsJapgolly.squareConnect.squareConnectStrings.PAYMENT_NOT_REFUNDABLE = "PAYMENT_NOT_REFUNDABLE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.PAYMENT_NOT_REFUNDABLE]
+  
+  inline def RATE_LIMITED: typingsJapgolly.squareConnect.squareConnectStrings.RATE_LIMITED = "RATE_LIMITED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.RATE_LIMITED]
+  
+  inline def REFUND_ALREADY_PENDING: typingsJapgolly.squareConnect.squareConnectStrings.REFUND_ALREADY_PENDING = "REFUND_ALREADY_PENDING".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.REFUND_ALREADY_PENDING]
+  
+  inline def REFUND_AMOUNT_INVALID: typingsJapgolly.squareConnect.squareConnectStrings.REFUND_AMOUNT_INVALID = "REFUND_AMOUNT_INVALID".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.REFUND_AMOUNT_INVALID]
+  
+  inline def REQUEST_ENTITY_TOO_LARGE: typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_ENTITY_TOO_LARGE = "REQUEST_ENTITY_TOO_LARGE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_ENTITY_TOO_LARGE]
+  
+  inline def REQUEST_TIMEOUT: typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_TIMEOUT = "REQUEST_TIMEOUT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.REQUEST_TIMEOUT]
+  
+  inline def SANDBOX_NOT_SUPPORTED: typingsJapgolly.squareConnect.squareConnectStrings.SANDBOX_NOT_SUPPORTED = "SANDBOX_NOT_SUPPORTED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SANDBOX_NOT_SUPPORTED]
+  
+  inline def SERVICE_UNAVAILABLE: typingsJapgolly.squareConnect.squareConnectStrings.SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.SERVICE_UNAVAILABLE]
+  
+  inline def UNAUTHORIZED: typingsJapgolly.squareConnect.squareConnectStrings.UNAUTHORIZED = "UNAUTHORIZED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNAUTHORIZED]
+  
+  inline def UNEXPECTED_VALUE: typingsJapgolly.squareConnect.squareConnectStrings.UNEXPECTED_VALUE = "UNEXPECTED_VALUE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNEXPECTED_VALUE]
+  
+  inline def UNKNOWN_QUERY_PARAMETER: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_QUERY_PARAMETER = "UNKNOWN_QUERY_PARAMETER".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_QUERY_PARAMETER]
+  
+  inline def UNSUPPORTED_CARD_BRAND: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_CARD_BRAND = "UNSUPPORTED_CARD_BRAND".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_CARD_BRAND]
+  
+  inline def UNSUPPORTED_ENTRY_METHOD: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_ENTRY_METHOD = "UNSUPPORTED_ENTRY_METHOD".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_ENTRY_METHOD]
+  
+  inline def UNSUPPORTED_INSTRUMENT_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_INSTRUMENT_TYPE = "UNSUPPORTED_INSTRUMENT_TYPE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_INSTRUMENT_TYPE]
+  
+  inline def UNSUPPORTED_MEDIA_TYPE: typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_MEDIA_TYPE = "UNSUPPORTED_MEDIA_TYPE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNSUPPORTED_MEDIA_TYPE]
+  
+  inline def V1_ACCESS_TOKEN: typingsJapgolly.squareConnect.squareConnectStrings.V1_ACCESS_TOKEN = "V1_ACCESS_TOKEN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.V1_ACCESS_TOKEN]
+  
+  inline def V1_APPLICATION: typingsJapgolly.squareConnect.squareConnectStrings.V1_APPLICATION = "V1_APPLICATION".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.V1_APPLICATION]
+  
+  inline def VALUE_EMPTY: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_EMPTY = "VALUE_EMPTY".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_EMPTY]
+  
+  inline def VALUE_REGEX_MISMATCH: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_REGEX_MISMATCH = "VALUE_REGEX_MISMATCH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_REGEX_MISMATCH]
+  
+  inline def VALUE_TOO_HIGH: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_HIGH = "VALUE_TOO_HIGH".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_HIGH]
+  
+  inline def VALUE_TOO_LONG: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LONG = "VALUE_TOO_LONG".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LONG]
+  
+  inline def VALUE_TOO_LOW: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LOW = "VALUE_TOO_LOW".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_LOW]
+  
+  inline def VALUE_TOO_SHORT: typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_SHORT = "VALUE_TOO_SHORT".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VALUE_TOO_SHORT]
+  
+  inline def VERIFY_AVS_FAILURE: typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_AVS_FAILURE = "VERIFY_AVS_FAILURE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_AVS_FAILURE]
+  
+  inline def VERIFY_CVV_FAILURE: typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_CVV_FAILURE = "VERIFY_CVV_FAILURE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.VERIFY_CVV_FAILURE]
 }
-

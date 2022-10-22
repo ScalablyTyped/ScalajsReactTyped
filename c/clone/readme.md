@@ -1,7 +1,7 @@
 
 # Scala.js typings for clone
 
-Typings are for version 0.1.11
+Typings are for version 2.1
 
 ## Library description:
 deep cloning of objects and arrays
@@ -10,10 +10,10 @@ deep cloning of objects and arrays
 | ------------------ | :-------------: |
 | Full name          | clone |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 1788 |
-| # downloads        | 457364701 |
-| # stars            | 71 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 9.2001319E7 |
+| # stars            | 721.0 |
 
 ## Links
 - [Homepage](https://github.com/pvorb/node-clone#readme)

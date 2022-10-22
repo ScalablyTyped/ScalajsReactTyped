@@ -10,10 +10,10 @@ The lodash method `_.random` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.random |
 | Keywords           | lodash-modularized, random |
-| # releases         | 0 |
-| # dependents       | 52 |
-| # downloads        | 444239 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 108946.66666666667 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

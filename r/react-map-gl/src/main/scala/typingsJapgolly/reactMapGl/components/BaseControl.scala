@@ -1,44 +1,25 @@
 package typingsJapgolly.reactMapGl.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactMapGl.mod.BaseControlProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Could't extract props from T because couldn't resolve ClassTree. */
 object BaseControl {
-  def apply[T /* <: BaseControlProps */, S /* <: Element */](
-    props: T with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    T with js.Object, 
-    typingsJapgolly.reactMapGl.mod.BaseControl[T, S], 
-    Unit, 
-    T with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  def apply[T /* <: BaseControlProps */, S /* <: Element */](p: T): Builder[T, S] = new Builder[T, S](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  T with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactMapGl.mod.BaseControl[T, S]](this.componentImport)
-    f(__obj.asInstanceOf[T with js.Object])(children: _*)
-  }
   @JSImport("react-map-gl", "BaseControl")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T /* <: BaseControlProps */, S /* <: Element */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactMapGl.mod.BaseControl[T, S]]
+  
+  implicit def make[T /* <: BaseControlProps */, S /* <: Element */](companion: BaseControl.type): Builder[T, S] = new Builder[T, S](js.Array(this.component, js.Dictionary.empty))()
 }
-

@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.inputBaseInputBaseMod.InputBaseProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/InputBase", JSImport.Namespace)
-@js.native
-object inputBaseMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[InputBaseProps, ComponentState, js.Any] {
-    def this(props: InputBaseProps) = this()
-    def this(props: InputBaseProps, context: js.Any) = this()
-  }
+object inputBaseMod {
   
+  @JSImport("@material-ui/core/InputBase", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[InputBaseProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: InputBaseProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

@@ -1,18 +1,7 @@
 package typingsJapgolly.gapiCalendar.gapi.client.calendar
 
-import typingsJapgolly.gapi.gapi.client.HttpRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("gapi.client.calendar.freebusy")
-@js.native
-class freebusy () extends js.Object
-
-/* static members */
-@JSGlobal("gapi.client.calendar.freebusy")
-@js.native
-object freebusy extends js.Object {
-  def query(parameters: FreeBusyQueryParameters): HttpRequest[FreeBusy_] = js.native
-}
-
+trait freebusy extends StObject

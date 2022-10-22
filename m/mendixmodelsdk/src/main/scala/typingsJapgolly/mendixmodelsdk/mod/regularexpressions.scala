@@ -1,39 +1,50 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.projectsMod.projects.IFolderBase
+import typingsJapgolly.mendixmodelsdk.srcGenProjectsMod.projects.IFolderBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "regularexpressions")
-@js.native
-object regularexpressions extends js.Object {
+object regularexpressions {
+  
   /**
-    * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
+    * See: {@link https://docs.mendix.com/refguide/regular-expressions relevant section in reference guide}
     */
+  @JSImport("mendixmodelsdk", "regularexpressions.RegularExpression")
   @js.native
-  class RegularExpression protected ()
-    extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.regularexpressions.RegularExpression {
+  open class RegularExpression protected ()
+    extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.regularexpressions.RegularExpression {
     def this(
-      model: typingsJapgolly.mendixmodelsdk.internalMod.AbstractModel,
+      model: typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractModel,
       structureTypeName: String,
       id: String,
       isPartial: Boolean,
       container: IFolderBase
     ) = this()
   }
-  
-  /* static members */
-  @js.native
-  object RegularExpression extends js.Object {
-    var structureTypeName: String = js.native
-    var versionInfo: typingsJapgolly.mendixmodelsdk.regularexpressionsMod.StructureVersionInfo = js.native
+  object RegularExpression {
+    
+    @JSImport("mendixmodelsdk", "regularexpressions.RegularExpression")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new RegularExpression unit in the SDK and on the server.
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
-    def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.regularexpressionsMod.regularexpressions.RegularExpression = js.native
+    /* static member */
+    inline def createIn(container: IFolderBase): typingsJapgolly.mendixmodelsdk.srcGenRegularexpressionsMod.regularexpressions.RegularExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.mendixmodelsdk.srcGenRegularexpressionsMod.regularexpressions.RegularExpression]
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "regularexpressions.RegularExpression.structureTypeName")
+    @js.native
+    def structureTypeName: String = js.native
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    
+    /* static member */
+    @JSImport("mendixmodelsdk", "regularexpressions.RegularExpression.versionInfo")
+    @js.native
+    def versionInfo: typingsJapgolly.mendixmodelsdk.srcGenRegularexpressionsMod.StructureVersionInfo = js.native
+    inline def versionInfo_=(x: typingsJapgolly.mendixmodelsdk.srcGenRegularexpressionsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
-  
 }
-

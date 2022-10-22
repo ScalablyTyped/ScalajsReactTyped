@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNativeWebrtc.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new`
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected
   - typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.closed
 */
-trait RTCIceConnectionState extends js.Object
-
+trait RTCIceConnectionState extends StObject
 object RTCIceConnectionState {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def checking: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.checking = this.cast("checking")
-  @scala.inline
-  def closed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.closed = this.cast("closed")
-  @scala.inline
-  def completed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.completed = this.cast("completed")
-  @scala.inline
-  def connected: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.connected = this.cast("connected")
-  @scala.inline
-  def disconnected: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = this.cast("disconnected")
-  @scala.inline
-  def failed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.failed = this.cast("failed")
-  @scala.inline
-  def `new`: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = this.cast("new")
+  
+  inline def checking: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.checking = "checking".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.checking]
+  
+  inline def closed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.closed = "closed".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.closed]
+  
+  inline def completed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.completed = "completed".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.completed]
+  
+  inline def connected: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.connected = "connected".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.connected]
+  
+  inline def disconnected: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected = "disconnected".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.disconnected]
+  
+  inline def failed: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.failed = "failed".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.failed]
+  
+  inline def `new`: typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new` = "new".asInstanceOf[typingsJapgolly.reactNativeWebrtc.reactNativeWebrtcStrings.`new`]
 }
-

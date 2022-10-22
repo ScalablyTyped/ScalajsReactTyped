@@ -1,30 +1,65 @@
 package typingsJapgolly.awsSdkSsecMiddleware
 
-import typingsJapgolly.awsSdkTypes.middlewareMod.Middleware
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
-import typingsJapgolly.awsSdkTypes.utilMod.Encoder
+import typingsJapgolly.awsSdkSsecMiddleware.anon.Instantiable
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Decoder
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/ssec-middleware", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/ssec-middleware", JSImport.Namespace)
   @js.native
-  trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends js.Object {
+  val ^ : js.Any = js.native
+  
+  inline def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ssecMiddleware")(hasUtf8DecoderBase64EncoderHashConstructorSsecProperties.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  trait SsecMiddlewareConfiguration[Input /* <: js.Object */] extends StObject {
+    
+    def base64Encoder(input: js.typedarray.Uint8Array): String
     @JSName("base64Encoder")
-    var base64Encoder_Original: Encoder = js.native
-    var hashConstructor: AnonInstantiable = js.native
-    var ssecProperties: SsecPropertiesConfiguration[Input] = js.native
+    var base64Encoder_Original: Encoder
+    
+    var hashConstructor: Instantiable
+    
+    var ssecProperties: SsecPropertiesConfiguration[Input]
+    
+    def utf8Decoder(input: String): js.typedarray.Uint8Array
     @JSName("utf8Decoder")
-    var utf8Decoder_Original: Decoder = js.native
-    def base64Encoder(input: scala.scalajs.js.typedarray.Uint8Array): String = js.native
-    def utf8Decoder(input: String): scala.scalajs.js.typedarray.Uint8Array = js.native
+    var utf8Decoder_Original: Decoder
+  }
+  object SsecMiddlewareConfiguration {
+    
+    inline def apply[Input /* <: js.Object */](
+      base64Encoder: /* input */ js.typedarray.Uint8Array => String,
+      hashConstructor: Instantiable,
+      ssecProperties: SsecPropertiesConfiguration[Input],
+      utf8Decoder: /* input */ String => js.typedarray.Uint8Array
+    ): SsecMiddlewareConfiguration[Input] = {
+      val __obj = js.Dynamic.literal(base64Encoder = js.Any.fromFunction1(base64Encoder), hashConstructor = hashConstructor.asInstanceOf[js.Any], ssecProperties = ssecProperties.asInstanceOf[js.Any], utf8Decoder = js.Any.fromFunction1(utf8Decoder))
+      __obj.asInstanceOf[SsecMiddlewareConfiguration[Input]]
+    }
+    
+    extension [Self <: SsecMiddlewareConfiguration[?], Input /* <: js.Object */](x: Self & SsecMiddlewareConfiguration[Input]) {
+      
+      inline def setBase64Encoder(value: /* input */ js.typedarray.Uint8Array => String): Self = StObject.set(x, "base64Encoder", js.Any.fromFunction1(value))
+      
+      inline def setHashConstructor(value: Instantiable): Self = StObject.set(x, "hashConstructor", value.asInstanceOf[js.Any])
+      
+      inline def setSsecProperties(value: SsecPropertiesConfiguration[Input]): Self = StObject.set(x, "ssecProperties", value.asInstanceOf[js.Any])
+      
+      inline def setUtf8Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "utf8Decoder", js.Any.fromFunction1(value))
+    }
   }
   
-  def ssecMiddleware[Input /* <: js.Object */](hasUtf8DecoderBase64EncoderHashConstructorSsecProperties: SsecMiddlewareConfiguration[Input]): Middleware[Input, _] = js.native
-  type SsecPropertiesConfiguration[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ sourceProperty in keyof Input ]:? {  targetProperty  :string,   hashTargetProperty  :string}}
-    */ typingsJapgolly.awsSdkSsecMiddleware.awsSdkSsecMiddlewareStrings.SsecPropertiesConfiguration with js.Any
+  /** NOTE: Mapped type definitions are impossible to translate to Scala.
+    * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+    * You'll have to cast your way around this structure, unfortunately. 
+    * TS definition: {{{
+    {[ sourceProperty in keyof Input ]:? {  targetProperty :string,   hashTargetProperty :string}}
+    }}}
+    */
+  @js.native
+  trait SsecPropertiesConfiguration[Input /* <: js.Object */] extends StObject
 }
-

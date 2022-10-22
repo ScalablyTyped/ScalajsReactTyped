@@ -1,53 +1,47 @@
 package typingsJapgolly.reactNativeTabView.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.Animated.AnimatedInterpolation
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeTabView.tabBarIndicatorMod.Props
-import typingsJapgolly.reactNativeTabView.tabBarIndicatorMod.default
-import typingsJapgolly.reactNativeTabView.typesMod.Layout
-import typingsJapgolly.reactNativeTabView.typesMod.NavigationState
-import typingsJapgolly.reactNativeTabView.typesMod.Route
+import typingsJapgolly.reactNativeTabView.libTypescriptTabBarIndicatorMod.Props
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Layout
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.NavigationState
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TabBarIndicator {
-  def apply[T /* <: Route */](
+  
+  inline def apply[T /* <: Route */](
+    getTabWidth: /* index */ Double => Double,
+    jumpTo: String => Callback,
     layout: Layout,
     navigationState: NavigationState[T],
-    position: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Animated.Node<number> */ js.Any,
-    width: String,
-    getTabWidth: /* index */ Double => CallbackTo[Double],
-    jumpTo: String => Callback,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props[T], default[T], Unit, Props[T]] = {
-    val __obj = js.Dynamic.literal(layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("getTabWidth")(js.Any.fromFunction1((t0: /* index */ scala.Double) => getTabWidth(t0).runNow()))
-    __obj.updateDynamic("jumpTo")(js.Any.fromFunction1((t0: java.lang.String) => jumpTo(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeTabView.tabBarIndicatorMod.Props[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeTabView.tabBarIndicatorMod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeTabView.tabBarIndicatorMod.Props[T]])(children: _*)
+    position: AnimatedInterpolation[Double | String],
+    width: String | Double
+  ): Builder[T] = {
+    val __props = js.Dynamic.literal(getTabWidth = js.Any.fromFunction1(getTabWidth), jumpTo = js.Any.fromFunction1((t0: String) => jumpTo(t0).runNow()), layout = layout.asInstanceOf[js.Any], navigationState = navigationState.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[Props[T]]))
   }
-  @JSImport("react-native-tab-view/lib/typescript/src/TabBarIndicator", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-tab-view", "TabBarIndicator")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder[T /* <: Route */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def gap(value: Double): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+  }
+  
+  def withProps[T /* <: Route */](p: Props[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

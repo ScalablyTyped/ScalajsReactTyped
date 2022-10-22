@@ -4,43 +4,70 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.d3Scale.mod.ScaleBand_
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeSvgCharts.PartialTextProps
+import typingsJapgolly.reactNativeSvgCharts.anon.PartialTextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AxisProps[T] extends js.Object {
+trait AxisProps[T] extends StObject {
+  
   var data: js.Array[T]
-  var formatLabel: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, Double | String]] = js.undefined
+  
+  var formatLabel: js.UndefOr[js.Function2[/* value */ Any, /* index */ Double, Double | String]] = js.undefined
+  
   var numberOfTicks: js.UndefOr[Double] = js.undefined
+  
   var scale: js.UndefOr[ScaleFunction] = js.undefined
+  
   var spacingInner: js.UndefOr[Double] = js.undefined
+  
   var spacingOuter: js.UndefOr[Double] = js.undefined
+  
   var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
+  
   var svg: js.UndefOr[PartialTextProps] = js.undefined
 }
-
 object AxisProps {
-  @scala.inline
-  def apply[T](
-    data: js.Array[T],
-    formatLabel: (/* value */ js.Any, /* index */ Double) => CallbackTo[Double | String] = null,
-    numberOfTicks: Int | Double = null,
-    scale: js.UndefOr[CallbackTo[(ScaleType[js.Any, js.Any]) | ScaleBand_[js.Any]]] = js.undefined,
-    spacingInner: Int | Double = null,
-    spacingOuter: Int | Double = null,
-    style: StyleProp[ViewStyle] = null,
-    svg: PartialTextProps = null
-  ): AxisProps[T] = {
+  
+  inline def apply[T](data: js.Array[T]): AxisProps[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    if (formatLabel != null) __obj.updateDynamic("formatLabel")(js.Any.fromFunction2((t0: /* value */ js.Any, t1: /* index */ scala.Double) => formatLabel(t0, t1).runNow()))
-    if (numberOfTicks != null) __obj.updateDynamic("numberOfTicks")(numberOfTicks.asInstanceOf[js.Any])
-    scale.foreach(p => __obj.updateDynamic("scale")(p.toJsFn))
-    if (spacingInner != null) __obj.updateDynamic("spacingInner")(spacingInner.asInstanceOf[js.Any])
-    if (spacingOuter != null) __obj.updateDynamic("spacingOuter")(spacingOuter.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (svg != null) __obj.updateDynamic("svg")(svg.asInstanceOf[js.Any])
     __obj.asInstanceOf[AxisProps[T]]
   }
+  
+  extension [Self <: AxisProps[?], T](x: Self & AxisProps[T]) {
+    
+    inline def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: T*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setFormatLabel(value: (/* value */ Any, /* index */ Double) => Double | String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction2(value))
+    
+    inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
+    
+    inline def setNumberOfTicks(value: Double): Self = StObject.set(x, "numberOfTicks", value.asInstanceOf[js.Any])
+    
+    inline def setNumberOfTicksUndefined: Self = StObject.set(x, "numberOfTicks", js.undefined)
+    
+    inline def setScale(value: CallbackTo[(ScaleType[Any, Any]) | ScaleBand_[Any]]): Self = StObject.set(x, "scale", value.toJsFn)
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setSpacingInner(value: Double): Self = StObject.set(x, "spacingInner", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingInnerUndefined: Self = StObject.set(x, "spacingInner", js.undefined)
+    
+    inline def setSpacingOuter(value: Double): Self = StObject.set(x, "spacingOuter", value.asInstanceOf[js.Any])
+    
+    inline def setSpacingOuterUndefined: Self = StObject.set(x, "spacingOuter", js.undefined)
+    
+    inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setSvg(value: PartialTextProps): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    
+    inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+  }
 }
-

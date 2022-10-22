@@ -1,17 +1,16 @@
 organization := "org.scalablytyped.japgolly"
 name := "pg-query-stream"
-version := "1.0-dt-20190904Z-23dc1f"
-scalaVersion := "2.13.1"
+version := "4.2.4-0a67e4"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "pg" % "7.14-dt-20200226Z-3318c7",
-  "org.scalablytyped.japgolly" %%% "pg-types" % "1.11-dt-20191101Z-0cbb5d",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "pg" % "8.6-dt-20220307Z-4ef078",
+  "org.scalablytyped.japgolly" %%% "pg-protocol" % "1.5.0-819d0a",
+  "org.scalablytyped.japgolly" %%% "pg-types" % "4.0.0-b9c825",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

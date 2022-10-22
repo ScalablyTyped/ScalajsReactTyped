@@ -1,28 +1,37 @@
 package typingsJapgolly.msRest.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ApiKeyCredentialOptions extends js.Object {
+trait ApiKeyCredentialOptions extends StObject {
+  
   /**
     * @property {object} [inHeader]  A key value pair of the header parameters that need to be applied to the request.
     */
-  var inHeader: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var inHeader: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   /**
     * @property {object} [inQuery]   A key value pair of the query parameters that need to be applied to the request.
     */
-  var inQuery: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var inQuery: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object ApiKeyCredentialOptions {
-  @scala.inline
-  def apply(inHeader: StringDictionary[js.Any] = null, inQuery: StringDictionary[js.Any] = null): ApiKeyCredentialOptions = {
+  
+  inline def apply(): ApiKeyCredentialOptions = {
     val __obj = js.Dynamic.literal()
-    if (inHeader != null) __obj.updateDynamic("inHeader")(inHeader.asInstanceOf[js.Any])
-    if (inQuery != null) __obj.updateDynamic("inQuery")(inQuery.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiKeyCredentialOptions]
   }
+  
+  extension [Self <: ApiKeyCredentialOptions](x: Self) {
+    
+    inline def setInHeader(value: StringDictionary[Any]): Self = StObject.set(x, "inHeader", value.asInstanceOf[js.Any])
+    
+    inline def setInHeaderUndefined: Self = StObject.set(x, "inHeader", js.undefined)
+    
+    inline def setInQuery(value: StringDictionary[Any]): Self = StObject.set(x, "inQuery", value.asInstanceOf[js.Any])
+    
+    inline def setInQueryUndefined: Self = StObject.set(x, "inQuery", js.undefined)
+  }
 }
-

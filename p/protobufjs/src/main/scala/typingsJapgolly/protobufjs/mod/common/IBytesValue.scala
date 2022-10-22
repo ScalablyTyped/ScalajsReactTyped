@@ -1,20 +1,25 @@
 package typingsJapgolly.protobufjs.mod.common
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.BytesValue message. */
-trait IBytesValue extends js.Object {
-  var value: js.UndefOr[scala.scalajs.js.typedarray.Uint8Array] = js.undefined
+trait IBytesValue extends StObject {
+  
+  var value: js.UndefOr[js.typedarray.Uint8Array] = js.undefined
 }
-
 object IBytesValue {
-  @scala.inline
-  def apply(value: scala.scalajs.js.typedarray.Uint8Array = null): IBytesValue = {
+  
+  inline def apply(): IBytesValue = {
     val __obj = js.Dynamic.literal()
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBytesValue]
   }
+  
+  extension [Self <: IBytesValue](x: Self) {
+    
+    inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

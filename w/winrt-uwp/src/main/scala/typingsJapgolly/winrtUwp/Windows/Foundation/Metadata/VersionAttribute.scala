@@ -1,11 +1,8 @@
 package typingsJapgolly.winrtUwp.Windows.Foundation.Metadata
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Indicates the version of the type. */
-@JSGlobal("Windows.Foundation.Metadata.VersionAttribute")
-@js.native
-abstract class VersionAttribute () extends js.Object
-
+trait VersionAttribute extends StObject

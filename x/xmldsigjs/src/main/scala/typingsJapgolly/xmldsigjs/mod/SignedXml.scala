@@ -1,10 +1,10 @@
 package typingsJapgolly.xmldsigjs.mod
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.std.Document_
+import org.scalajs.dom.Document
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xmldsigjs", "SignedXml")
 @js.native
@@ -15,9 +15,8 @@ import scala.scalajs.js.annotation._
   *
   * @memberOf SignedXml
   */
-class SignedXml ()
-  extends typingsJapgolly.xmldsigjs.signedXmlMod.SignedXml {
-  def this(node: Document_) = this()
+open class SignedXml ()
+  extends typingsJapgolly.xmldsigjs.buildTypesSignedXmlMod.SignedXml {
+  def this(node: Document) = this()
   def this(node: Element) = this()
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** https://developer.mozilla.org/en-US/docs/Web/CSS/font-style */
 /* Rewritten from type alias, can be one of: 
@@ -10,16 +10,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.cytoscape.cytoscapeStrings.italic
   - typingsJapgolly.cytoscape.cytoscapeStrings.oblique
 */
-trait FontStyle extends js.Object
-
+trait FontStyle extends StObject
 object FontStyle {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def italic: typingsJapgolly.cytoscape.cytoscapeStrings.italic = this.cast("italic")
-  @scala.inline
-  def normal: typingsJapgolly.cytoscape.cytoscapeStrings.normal = this.cast("normal")
-  @scala.inline
-  def oblique: typingsJapgolly.cytoscape.cytoscapeStrings.oblique = this.cast("oblique")
+  
+  inline def italic: typingsJapgolly.cytoscape.cytoscapeStrings.italic = "italic".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.italic]
+  
+  inline def normal: typingsJapgolly.cytoscape.cytoscapeStrings.normal = "normal".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.normal]
+  
+  inline def oblique: typingsJapgolly.cytoscape.cytoscapeStrings.oblique = "oblique".asInstanceOf[typingsJapgolly.cytoscape.cytoscapeStrings.oblique]
 }
-

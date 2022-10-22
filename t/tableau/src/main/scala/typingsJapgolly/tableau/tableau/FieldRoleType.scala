@@ -1,35 +1,27 @@
 package typingsJapgolly.tableau.tableau
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FieldRoleType extends js.Object
-
+sealed trait FieldRoleType extends StObject
 @JSGlobal("tableau.FieldRoleType")
 @js.native
-object FieldRoleType extends js.Object {
-  @js.native
-  sealed trait DIMENSION extends FieldRoleType
+object FieldRoleType extends StObject {
   
   @js.native
-  sealed trait MEASURE extends FieldRoleType
+  sealed trait DIMENSION
+    extends StObject
+       with FieldRoleType
   
   @js.native
-  sealed trait UKNOWN extends FieldRoleType
+  sealed trait MEASURE
+    extends StObject
+       with FieldRoleType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FieldRoleType with Double] = js.native
-  /* 0 */ @js.native
-  object DIMENSION extends TopLevel[DIMENSION with Double]
-  
-  /* 1 */ @js.native
-  object MEASURE extends TopLevel[MEASURE with Double]
-  
-  /* 2 */ @js.native
-  object UKNOWN extends TopLevel[UKNOWN with Double]
-  
+  @js.native
+  sealed trait UKNOWN
+    extends StObject
+       with FieldRoleType
 }
-

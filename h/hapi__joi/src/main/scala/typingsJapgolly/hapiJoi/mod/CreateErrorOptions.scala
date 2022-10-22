@@ -1,21 +1,30 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateErrorOptions extends js.Object {
+trait CreateErrorOptions extends StObject {
+  
   var flags: js.UndefOr[Boolean] = js.undefined
+  
   var messages: js.UndefOr[LanguageMessages] = js.undefined
 }
-
 object CreateErrorOptions {
-  @scala.inline
-  def apply(flags: js.UndefOr[Boolean] = js.undefined, messages: LanguageMessages = null): CreateErrorOptions = {
+  
+  inline def apply(): CreateErrorOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(flags)) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateErrorOptions]
   }
+  
+  extension [Self <: CreateErrorOptions](x: Self) {
+    
+    inline def setFlags(value: Boolean): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    
+    inline def setMessages(value: LanguageMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+  }
 }
-

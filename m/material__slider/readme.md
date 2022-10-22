@@ -1,7 +1,7 @@
 
 # Scala.js typings for material__slider
 
-Typings are for version 0.35
+Typings are for version 14.0.0
 
 ## Library description:
 The Material Components for the web slider component
@@ -10,10 +10,10 @@ The Material Components for the web slider component
 | ------------------ | :-------------: |
 | Full name          | @material/slider |
 | Keywords           | material components, material design, slider |
-| # releases         | 155 |
-| # dependents       | 29 |
-| # downloads        | 1078070 |
-| # stars            | 0 |
+| # releases         | 735 |
+| # dependents       | 0.0 |
+| # downloads        | 191836.66666666666 |
+| # stars            | 16411.0 |
 
 ## Links
 - [Homepage](https://github.com/material-components/material-components-web#readme)
@@ -24,7 +24,7 @@ The Material Components for the web slider component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

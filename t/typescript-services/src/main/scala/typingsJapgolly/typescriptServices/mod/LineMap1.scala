@@ -2,15 +2,19 @@ package typingsJapgolly.typescriptServices.mod
 
 import typingsJapgolly.typescriptServices.TypeScript.IScriptSnapshot
 import typingsJapgolly.typescriptServices.TypeScript.ISimpleText
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "LineMap1")
-@js.native
-object LineMap1 extends js.Object {
-  def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): typingsJapgolly.typescriptServices.TypeScript.LineMap = js.native
-  def fromSimpleText(text: ISimpleText): typingsJapgolly.typescriptServices.TypeScript.LineMap = js.native
-  def fromString(text: String): typingsJapgolly.typescriptServices.TypeScript.LineMap = js.native
+object LineMap1 {
+  
+  @JSImport("typescript-services", "LineMap1")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromScriptSnapshot(scriptSnapshot: IScriptSnapshot): typingsJapgolly.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromScriptSnapshot")(scriptSnapshot.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.LineMap]
+  
+  inline def fromSimpleText(text: ISimpleText): typingsJapgolly.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSimpleText")(text.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.LineMap]
+  
+  inline def fromString(text: String): typingsJapgolly.typescriptServices.TypeScript.LineMap = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(text.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.typescriptServices.TypeScript.LineMap]
 }
-

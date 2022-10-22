@@ -1,13 +1,22 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapCardViewColumn")
-@js.native
-class BootstrapCardViewColumn protected () extends js.Object {
-  protected def this(instance: js.Any) = this()
-  val instance: js.Any = js.native
+trait BootstrapCardViewColumn extends StObject {
+  
+  /* protected */ val instance: Any
 }
-
+object BootstrapCardViewColumn {
+  
+  inline def apply(instance: Any): BootstrapCardViewColumn = {
+    val __obj = js.Dynamic.literal(instance = instance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BootstrapCardViewColumn]
+  }
+  
+  extension [Self <: BootstrapCardViewColumn](x: Self) {
+    
+    inline def setInstance(value: Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+  }
+}

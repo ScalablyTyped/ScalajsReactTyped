@@ -1,178 +1,131 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
-import typingsJapgolly.std.stdStrings.MSVideoFormatChanged
-import typingsJapgolly.std.stdStrings.MSVideoFrameStepCompleted
-import typingsJapgolly.std.stdStrings.MSVideoOptimalLayoutChanged
+import typingsJapgolly.std.stdStrings.enterpictureinpicture
+import typingsJapgolly.std.stdStrings.leavepictureinpicture
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties and methods for manipulating video objects. It also inherits properties and methods of HTMLMediaElement and HTMLElement. */
 @js.native
 trait HTMLVideoElement
-  extends HTMLMediaElement
-     with CanvasImageSource
-     with TexImageSource {
-  /**
-    * Gets or sets the height of the video element.
-    */
-  var height: Double = js.native
-  var msHorizontalMirror: scala.Boolean = js.native
-  val msIsLayoutOptimalForPlayback: scala.Boolean = js.native
-  val msIsStereo3D: scala.Boolean = js.native
-  var msStereo3DPackingMode: java.lang.String = js.native
-  var msStereo3DRenderMode: java.lang.String = js.native
-  var msZoom: scala.Boolean = js.native
-  var onMSVideoFormatChanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onMSVideoFrameStepCompleted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  var onMSVideoOptimalLayoutChanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]) | Null = js.native
-  /**
-    * Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available.
-    */
-  var poster: java.lang.String = js.native
-  /**
-    * Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known.
-    */
-  val videoHeight: Double = js.native
-  /**
-    * Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known.
-    */
-  val videoWidth: Double = js.native
-  val webkitDisplayingFullscreen: scala.Boolean = js.native
-  val webkitSupportsFullscreen: scala.Boolean = js.native
-  /**
-    * Gets or sets the width of the video element.
-    */
-  var width: Double = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def addEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: AddEventListenerOptions
+  extends StObject
+     with HTMLMediaElement {
+  
+  /* standard dom */
+  @JSName("addEventListener")
+  def addEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoFormatChanged(
-    `type`: MSVideoFormatChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFormatChanged(
-    `type`: MSVideoFormatChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  def addEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def addEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: AddEventListenerOptions
   ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: AddEventListenerOptions
-  ): Unit = js.native
+  
+  /* standard dom */
+  def cancelVideoFrameCallback(handle: Double): Unit = js.native
+  
+  /* standard dom */
+  var disablePictureInPicture: scala.Boolean = js.native
+  
+  /* standard dom */
   def getVideoPlaybackQuality(): VideoPlaybackQuality = js.native
-  def msFrameStep(forward: scala.Boolean): Unit = js.native
-  def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean): Unit = js.native
-  def msInsertVideoEffect(activatableClassId: java.lang.String, effectRequired: scala.Boolean, config: js.Any): Unit = js.native
-  def msSetVideoRectangle(left: Double, top: Double, right: Double, bottom: Double): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
-  /* InferMemberOverrides */
-  override def removeEventListener(
-    `type`: java.lang.String,
-    listener: EventListenerOrEventListenerObject,
-    options: EventListenerOptions
+  
+  /** Gets or sets the height of the video element. */
+  /* standard dom */
+  var height: Double = js.native
+  
+  /* standard dom */
+  var onenterpictureinpicture: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /* standard dom */
+  var onleavepictureinpicture: (js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]) | Null = js.native
+  
+  /** Gets or sets the playsinline of the video element. for example, On iPhone, video elements will now be allowed to play inline, and will not automatically enter fullscreen mode when playback begins. */
+  /* standard dom */
+  var playsInline: scala.Boolean = js.native
+  
+  /** Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available. */
+  /* standard dom */
+  var poster: java.lang.String = js.native
+  
+  /* standard dom */
+  @JSName("removeEventListener")
+  def removeEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSVideoFormatChanged(`type`: MSVideoFormatChanged, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]): Unit = js.native
+  def removeEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
+  ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSVideoFormatChanged(
-    `type`: MSVideoFormatChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def removeEventListener_enterpictureinpicture(
+    `type`: enterpictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSVideoFormatChanged(
-    `type`: MSVideoFormatChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
+  def removeEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
+  def removeEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
+    options: org.scalajs.dom.EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
+  def removeEventListener_leavepictureinpicture(
+    `type`: leavepictureinpicture,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ org.scalajs.dom.Event, Any],
     options: scala.Boolean
   ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSVideoFrameStepCompleted(
-    `type`: MSVideoFrameStepCompleted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_MSVideoOptimalLayoutChanged(
-    `type`: MSVideoOptimalLayoutChanged,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event_, _],
-    options: EventListenerOptions
-  ): Unit = js.native
-  def webkitEnterFullScreen(): Unit = js.native
-  def webkitEnterFullscreen(): Unit = js.native
-  def webkitExitFullScreen(): Unit = js.native
-  def webkitExitFullscreen(): Unit = js.native
+  
+  /* standard dom */
+  def requestPictureInPicture(): js.Promise[PictureInPictureWindow] = js.native
+  
+  /* standard dom */
+  def requestVideoFrameCallback(callback: VideoFrameRequestCallback): Double = js.native
+  
+  /** Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known. */
+  /* standard dom */
+  val videoHeight: Double = js.native
+  
+  /** Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known. */
+  /* standard dom */
+  val videoWidth: Double = js.native
+  
+  /** Gets or sets the width of the video element. */
+  /* standard dom */
+  var width: Double = js.native
 }
-
-@JSGlobal("HTMLVideoElement")
-@js.native
-object HTMLVideoElement extends Instantiable0[HTMLVideoElement]
-

@@ -1,32 +1,29 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.ui.Rating")
 @js.native
-class Rating protected () extends Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: RatingOptions) = this()
+trait Rating
+  extends StObject
+     with Widget {
+  
   var container: JQuery = js.native
+  
+  def enable(enable: Boolean): Unit = js.native
+  
   @JSName("options")
   var options_Rating: RatingOptions = js.native
-  var wrapper: JQuery = js.native
-  def enable(enable: Boolean): Unit = js.native
+  
   def readonly(enable: Boolean): Unit = js.native
+  
   def reset(): Unit = js.native
-  def setOptions(options: js.Any): Unit = js.native
+  
+  def setOptions(options: Any): Unit = js.native
+  
   def value(value: Double): Unit = js.native
+  
+  var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.ui.Rating")
-@js.native
-object Rating extends js.Object {
-  var fn: Rating = js.native
-  def extend(proto: js.Object): Rating = js.native
-}
-

@@ -1,12 +1,14 @@
 package typingsJapgolly.freeport
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("freeport", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(cb: js.Function2[/* err */ js.Error, /* port */ Double, Unit]): Unit = js.native
+object mod {
+  
+  inline def apply(cb: js.Function2[/* err */ js.Error | Null, /* port */ Double | Null, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @JSImport("freeport", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

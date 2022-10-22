@@ -1,13 +1,12 @@
 package typingsJapgolly.awsSdkS3ErrorUnmarshaller
 
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.ServiceExceptionParser
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/s3-error-unmarshaller", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val s3ErrorUnmarshaller: ServiceExceptionParser = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/s3-error-unmarshaller", "s3ErrorUnmarshaller")
+  @js.native
+  val s3ErrorUnmarshaller: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceExceptionParser */ Any = js.native
 }
-

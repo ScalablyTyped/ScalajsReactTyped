@@ -1,48 +1,78 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartSeriesItemLabelsFrom extends js.Object {
+trait ChartSeriesItemLabelsFrom extends StObject {
+  
   var background: js.UndefOr[String | js.Function] = js.undefined
+  
   var border: js.UndefOr[ChartSeriesItemLabelsFromBorder] = js.undefined
+  
   var color: js.UndefOr[String | js.Function] = js.undefined
+  
   var font: js.UndefOr[String | js.Function] = js.undefined
+  
   var format: js.UndefOr[String | js.Function] = js.undefined
+  
   var margin: js.UndefOr[Double | ChartSeriesItemLabelsFromMargin] = js.undefined
+  
   var padding: js.UndefOr[Double | ChartSeriesItemLabelsFromPadding] = js.undefined
+  
   var position: js.UndefOr[String | js.Function] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var visible: js.UndefOr[Boolean | js.Function] = js.undefined
 }
-
 object ChartSeriesItemLabelsFrom {
-  @scala.inline
-  def apply(
-    background: String | js.Function = null,
-    border: ChartSeriesItemLabelsFromBorder = null,
-    color: String | js.Function = null,
-    font: String | js.Function = null,
-    format: String | js.Function = null,
-    margin: Double | ChartSeriesItemLabelsFromMargin = null,
-    padding: Double | ChartSeriesItemLabelsFromPadding = null,
-    position: String | js.Function = null,
-    template: String | js.Function = null,
-    visible: Boolean | js.Function = null
-  ): ChartSeriesItemLabelsFrom = {
+  
+  inline def apply(): ChartSeriesItemLabelsFrom = {
     val __obj = js.Dynamic.literal()
-    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
-    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (visible != null) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartSeriesItemLabelsFrom]
   }
+  
+  extension [Self <: ChartSeriesItemLabelsFrom](x: Self) {
+    
+    inline def setBackground(value: String | js.Function): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    
+    inline def setBorder(value: ChartSeriesItemLabelsFromBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    
+    inline def setColor(value: String | js.Function): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setFont(value: String | js.Function): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setFormat(value: String | js.Function): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setMargin(value: Double | ChartSeriesItemLabelsFromMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setPadding(value: Double | ChartSeriesItemLabelsFromPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    
+    inline def setPosition(value: String | js.Function): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setVisible(value: Boolean | js.Function): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+  }
 }
-

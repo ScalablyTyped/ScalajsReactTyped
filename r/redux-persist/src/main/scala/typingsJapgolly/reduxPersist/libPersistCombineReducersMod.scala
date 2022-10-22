@@ -3,15 +3,17 @@ package typingsJapgolly.reduxPersist
 import typingsJapgolly.redux.mod.Action
 import typingsJapgolly.redux.mod.Reducer
 import typingsJapgolly.redux.mod.ReducersMapObject
-import typingsJapgolly.reduxPersist.persistReducerMod.PersistPartial
-import typingsJapgolly.reduxPersist.typesMod.PersistConfig
+import typingsJapgolly.reduxPersist.esPersistReducerMod.PersistPartial
+import typingsJapgolly.reduxPersist.esTypesMod.PersistConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-persist/lib/persistCombineReducers", JSImport.Namespace)
-@js.native
-object libPersistCombineReducersMod extends js.Object {
-  def default[S, A /* <: Action[_] */](config: PersistConfig[S, _, _, _], reducers: ReducersMapObject[S, A]): Reducer[S with PersistPartial, A] = js.native
+object libPersistCombineReducersMod {
+  
+  @JSImport("redux-persist/lib/persistCombineReducers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[S, A /* <: Action[Any] */](config: PersistConfig[S, Any, Any, Any], reducers: ReducersMapObject[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], reducers.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
 }
-

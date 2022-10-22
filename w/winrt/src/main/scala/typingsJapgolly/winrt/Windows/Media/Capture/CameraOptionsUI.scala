@@ -1,17 +1,7 @@
 package typingsJapgolly.winrt.Windows.Media.Capture
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Capture.CameraOptionsUI")
-@js.native
-class CameraOptionsUI () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.Media.Capture.CameraOptionsUI")
-@js.native
-object CameraOptionsUI extends js.Object {
-  def show(mediaCapture: MediaCapture): Unit = js.native
-}
-
+trait CameraOptionsUI extends StObject

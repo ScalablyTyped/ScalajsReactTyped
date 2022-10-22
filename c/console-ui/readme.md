@@ -10,10 +10,10 @@ common interface for abstracting a console ui
 | ------------------ | :-------------: |
 | Full name          | console-ui |
 | Keywords           | - |
-| # releases         | 12 |
-| # dependents       | 11 |
-| # downloads        | 5897982 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 611765.0 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/ember-cli/console-ui#readme)

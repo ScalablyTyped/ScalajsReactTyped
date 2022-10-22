@@ -1,35 +1,44 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
 import typingsJapgolly.officeJsPreview.Excel.ConditionalTopBottomRule
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TopBottomConditionalFormat object, for use in `topBottomConditionalFormat.set({ ... })`. */
-trait TopBottomConditionalFormatUpdateData extends js.Object {
+trait TopBottomConditionalFormatUpdateData extends StObject {
+  
   /**
+    * Returns a format object, encapsulating the conditional format's font, fill, borders, and other properties.
     *
-    * Returns a format object, encapsulating the conditional formats font, fill, borders, and other properties.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var format: js.UndefOr[ConditionalRangeFormatUpdateData] = js.undefined
+  
   /**
+    * The criteria of the top/bottom conditional format.
     *
-    * The criteria of the Top/Bottom conditional format.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.6]
     */
   var rule: js.UndefOr[ConditionalTopBottomRule] = js.undefined
 }
-
 object TopBottomConditionalFormatUpdateData {
-  @scala.inline
-  def apply(format: ConditionalRangeFormatUpdateData = null, rule: ConditionalTopBottomRule = null): TopBottomConditionalFormatUpdateData = {
+  
+  inline def apply(): TopBottomConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopBottomConditionalFormatUpdateData]
   }
+  
+  extension [Self <: TopBottomConditionalFormatUpdateData](x: Self) {
+    
+    inline def setFormat(value: ConditionalRangeFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setRule(value: ConditionalTopBottomRule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+  }
 }
-

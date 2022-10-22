@@ -1,34 +1,58 @@
 package typingsJapgolly.oracleOraclejet
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojtimeutils", JSImport.Namespace)
-@js.native
-object ojtimeutilsMod extends js.Object {
-  def getDate(pos: Double, rangeStartTime: String, rangeEndTime: String, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: String, rangeEndTime: Double, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: String, rangeEndTime: Date, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: String, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: Double, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: Date, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Date, rangeEndTime: String, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Date, rangeEndTime: Double, rangeWidth: Double): Double = js.native
-  def getDate(pos: Double, rangeStartTime: Date, rangeEndTime: Date, rangeWidth: Double): Double = js.native
-  def getLength(
+object ojtimeutilsMod {
+  
+  @JSImport("@oracle/oraclejet/ojtimeutils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getDate(pos: Double, rangeStartTime: String, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: String, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: String, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: js.Date, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: js.Date, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: js.Date, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getDate(pos: Double, rangeStartTime: Double, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDate")(pos.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getLength(
     startTime: js.Date | String | Double,
     endTime: js.Date | String | Double,
     rangeStartTime: js.Date | String | Double,
     rangeEndTime: js.Date | String | Double,
     rangeWidth: Double
-  ): Double = js.native
-  def getPosition(
-    time: js.Date | String | Double,
-    rangeStartTime: js.Date | String | Double,
-    rangeEndTime: js.Date | String | Double,
-    rangeWidth: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLength")(startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  inline def getPosition(time: String, rangeStartTime: String, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: String, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: String, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: js.Date, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: js.Date, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: js.Date, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: Double, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: Double, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: String, rangeStartTime: Double, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: String, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: String, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: String, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: js.Date, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: js.Date, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: js.Date, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: Double, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: Double, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: js.Date, rangeStartTime: Double, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: String, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: String, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: String, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: js.Date, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: js.Date, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: js.Date, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: Double, rangeEndTime: String, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: Double, rangeEndTime: js.Date, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPosition(time: Double, rangeStartTime: Double, rangeEndTime: Double, rangeWidth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(time.asInstanceOf[js.Any], rangeStartTime.asInstanceOf[js.Any], rangeEndTime.asInstanceOf[js.Any], rangeWidth.asInstanceOf[js.Any])).asInstanceOf[Double]
 }
-

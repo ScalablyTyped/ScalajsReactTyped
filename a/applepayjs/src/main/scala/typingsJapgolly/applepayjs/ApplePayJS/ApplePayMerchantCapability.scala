@@ -1,8 +1,8 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The payment capabilities supported by the merchant.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.applepayjs.applepayjsStrings.supportsCredit
   - typingsJapgolly.applepayjs.applepayjsStrings.supportsDebit
 */
-trait ApplePayMerchantCapability extends js.Object
-
+trait ApplePayMerchantCapability extends StObject
 object ApplePayMerchantCapability {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def supports3DS: typingsJapgolly.applepayjs.applepayjsStrings.supports3DS = this.cast("supports3DS")
-  @scala.inline
-  def supportsCredit: typingsJapgolly.applepayjs.applepayjsStrings.supportsCredit = this.cast("supportsCredit")
-  @scala.inline
-  def supportsDebit: typingsJapgolly.applepayjs.applepayjsStrings.supportsDebit = this.cast("supportsDebit")
-  @scala.inline
-  def supportsEMV: typingsJapgolly.applepayjs.applepayjsStrings.supportsEMV = this.cast("supportsEMV")
+  
+  inline def supports3DS: typingsJapgolly.applepayjs.applepayjsStrings.supports3DS = "supports3DS".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.supports3DS]
+  
+  inline def supportsCredit: typingsJapgolly.applepayjs.applepayjsStrings.supportsCredit = "supportsCredit".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.supportsCredit]
+  
+  inline def supportsDebit: typingsJapgolly.applepayjs.applepayjsStrings.supportsDebit = "supportsDebit".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.supportsDebit]
+  
+  inline def supportsEMV: typingsJapgolly.applepayjs.applepayjsStrings.supportsEMV = "supportsEMV".asInstanceOf[typingsJapgolly.applepayjs.applepayjsStrings.supportsEMV]
 }
-

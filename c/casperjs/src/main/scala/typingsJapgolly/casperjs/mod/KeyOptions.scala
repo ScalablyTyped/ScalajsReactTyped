@@ -1,27 +1,36 @@
 package typingsJapgolly.casperjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KeyOptions extends js.Object {
+trait KeyOptions extends StObject {
+  
   var keepFocus: js.UndefOr[Boolean] = js.undefined
+  
   var modifiers: js.UndefOr[String] = js.undefined
+  
   var reset: js.UndefOr[Boolean] = js.undefined
 }
-
 object KeyOptions {
-  @scala.inline
-  def apply(
-    keepFocus: js.UndefOr[Boolean] = js.undefined,
-    modifiers: String = null,
-    reset: js.UndefOr[Boolean] = js.undefined
-  ): KeyOptions = {
+  
+  inline def apply(): KeyOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(keepFocus)) __obj.updateDynamic("keepFocus")(keepFocus.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyOptions]
   }
+  
+  extension [Self <: KeyOptions](x: Self) {
+    
+    inline def setKeepFocus(value: Boolean): Self = StObject.set(x, "keepFocus", value.asInstanceOf[js.Any])
+    
+    inline def setKeepFocusUndefined: Self = StObject.set(x, "keepFocus", js.undefined)
+    
+    inline def setModifiers(value: String): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    
+    inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+    
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+  }
 }
-

@@ -1,39 +1,35 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`-1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-import typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`-1`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+import typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`2147483647`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`0`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`1`
-  - typingsJapgolly.activexMshtml.activexMshtmlNumbers.`-1`
+  - typingsJapgolly.activexMshtml.activexMshtmlDoubles.`2147483647`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`0`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`1`
+  - typingsJapgolly.activexMshtml.activexMshtmlInts.`-1`
 */
-trait HTMLDlgFlag extends js.Object
-
+trait HTMLDlgFlag extends StObject
 object HTMLDlgFlag {
-  @scala.inline
-  def HTMLDlgFlag0: `0` = this.cast(0)
-  @scala.inline
-  def HTMLDlgFlag1: `1` = this.cast(1)
-  @scala.inline
-  def HTMLDlgFlagNo: `0` = this.cast(0)
-  @scala.inline
-  def HTMLDlgFlagNotSet: `-1` = this.cast(-1)
-  @scala.inline
-  def HTMLDlgFlagOff: `0` = this.cast(0)
-  @scala.inline
-  def HTMLDlgFlagOn: `1` = this.cast(1)
-  @scala.inline
-  def HTMLDlgFlagYes: `1` = this.cast(1)
-  @scala.inline
-  def HTMLDlgFlag_Max: `2147483647` = this.cast(2147483647)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def HTMLDlgFlag0: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLDlgFlag1: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLDlgFlagNo: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLDlgFlagNotSet: `-1` = -1.asInstanceOf[`-1`]
+  
+  inline def HTMLDlgFlagOff: `0` = 0.asInstanceOf[`0`]
+  
+  inline def HTMLDlgFlagOn: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLDlgFlagYes: `1` = 1.asInstanceOf[`1`]
+  
+  inline def HTMLDlgFlag_Max: `2147483647` = 2147483647d.asInstanceOf[`2147483647`]
 }
-

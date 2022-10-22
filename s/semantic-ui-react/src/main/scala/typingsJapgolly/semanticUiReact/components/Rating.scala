@@ -1,14 +1,12 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.semanticUiReact.ratingMod.default
-import typingsJapgolly.semanticUiReact.ratingRatingMod.RatingProps
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.semanticUiReact.distCommonjsModulesRatingRatingIconMod.RatingIconProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesRatingRatingMod.RatingProps
+import typingsJapgolly.semanticUiReact.mod.Rating.IconCls
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.auto
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.heart
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.huge
@@ -18,53 +16,54 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.mini
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.small
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.star
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.tiny
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rating {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    as: js.Any = null,
-    className: String = null,
-    clearable: Boolean | auto = null,
-    defaultRating: Double | String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    icon: star | heart = null,
-    maxRating: Double | String = null,
-    onRate: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ RatingProps) => Callback = null,
-    rating: Double | String = null,
-    size: mini | tiny | small | large | huge | massive = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[RatingProps, default, Unit, RatingProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (clearable != null) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
-    if (defaultRating != null) __obj.updateDynamic("defaultRating")(defaultRating.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (maxRating != null) __obj.updateDynamic("maxRating")(maxRating.asInstanceOf[js.Any])
-    if (onRate != null) __obj.updateDynamic("onRate")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement], t1: /* data */ typingsJapgolly.semanticUiReact.ratingRatingMod.RatingProps) => onRate(t0, t1).runNow()))
-    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.ratingRatingMod.RatingProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.ratingMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.ratingRatingMod.RatingProps])(children: _*)
+  object Icon {
+    
+    @JSImport("semantic-ui-react", "Rating.Icon")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Icon.type): SharedBuilder_RatingIconProps_1213113030[IconCls] = new SharedBuilder_RatingIconProps_1213113030[IconCls](js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: RatingIconProps): SharedBuilder_RatingIconProps_1213113030[IconCls] = new SharedBuilder_RatingIconProps_1213113030[IconCls](js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Rating", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("semantic-ui-react", "Rating")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Rating] {
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def clearable(value: Boolean | auto): this.type = set("clearable", value.asInstanceOf[js.Any])
+    
+    inline def defaultRating(value: Double | String): this.type = set("defaultRating", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: star | heart): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def maxRating(value: Double | String): this.type = set("maxRating", value.asInstanceOf[js.Any])
+    
+    inline def onRate(value: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ RatingProps) => Callback): this.type = set("onRate", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLDivElement], t1: /* data */ RatingProps) => (value(t0, t1)).runNow()))
+    
+    inline def rating(value: Double | String): this.type = set("rating", value.asInstanceOf[js.Any])
+    
+    inline def size(value: mini | tiny | small | large | huge | massive): this.type = set("size", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Rating.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RatingProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

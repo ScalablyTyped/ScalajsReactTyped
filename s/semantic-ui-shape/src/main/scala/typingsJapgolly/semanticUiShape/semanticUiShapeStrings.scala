@@ -1,189 +1,96 @@
 package typingsJapgolly.semanticUiShape
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semanticUiShapeStrings {
-  @js.native
-  sealed trait beforeChange extends js.Object
   
   @js.native
-  sealed trait className extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait `flip back` extends StObject
+  inline def `flip back`: `flip back` = ("flip back").asInstanceOf[`flip back`]
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait `flip down` extends StObject
+  inline def `flip down`: `flip down` = ("flip down").asInstanceOf[`flip down`]
   
   @js.native
-  sealed trait duration extends js.Object
+  sealed trait `flip left` extends StObject
+  inline def `flip left`: `flip left` = ("flip left").asInstanceOf[`flip left`]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait `flip over` extends StObject
+  inline def `flip over`: `flip over` = ("flip over").asInstanceOf[`flip over`]
   
   @js.native
-  sealed trait `flip back` extends js.Object
+  sealed trait `flip right` extends StObject
+  inline def `flip right`: `flip right` = ("flip right").asInstanceOf[`flip right`]
   
   @js.native
-  sealed trait `flip down` extends js.Object
+  sealed trait `flip up` extends StObject
+  inline def `flip up`: `flip up` = ("flip up").asInstanceOf[`flip up`]
   
   @js.native
-  sealed trait `flip left` extends js.Object
+  sealed trait `get transform down` extends StObject
+  inline def `get transform down`: `get transform down` = ("get transform down").asInstanceOf[`get transform down`]
   
   @js.native
-  sealed trait `flip over` extends js.Object
+  sealed trait `get transform left` extends StObject
+  inline def `get transform left`: `get transform left` = ("get transform left").asInstanceOf[`get transform left`]
   
   @js.native
-  sealed trait `flip right` extends js.Object
+  sealed trait `get transform right` extends StObject
+  inline def `get transform right`: `get transform right` = ("get transform right").asInstanceOf[`get transform right`]
   
   @js.native
-  sealed trait `flip up` extends js.Object
+  sealed trait `get transform up` extends StObject
+  inline def `get transform up`: `get transform up` = ("get transform up").asInstanceOf[`get transform up`]
   
   @js.native
-  sealed trait `get transform down` extends js.Object
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait `get transform left` extends js.Object
+  sealed trait `is animating` extends StObject
+  inline def `is animating`: `is animating` = ("is animating").asInstanceOf[`is animating`]
   
   @js.native
-  sealed trait `get transform right` extends js.Object
+  sealed trait next extends StObject
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait `get transform up` extends js.Object
+  sealed trait queue extends StObject
+  inline def queue: queue = "queue".asInstanceOf[queue]
   
   @js.native
-  sealed trait height extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait repaint extends StObject
+  inline def repaint: repaint = "repaint".asInstanceOf[repaint]
   
   @js.native
-  sealed trait `is animating` extends js.Object
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait `set default side` extends StObject
+  inline def `set default side`: `set default side` = ("set default side").asInstanceOf[`set default side`]
   
   @js.native
-  sealed trait namespace extends js.Object
+  sealed trait `set next side` extends StObject
+  inline def `set next side`: `set next side` = ("set next side").asInstanceOf[`set next side`]
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait `set stage size` extends StObject
+  inline def `set stage size`: `set stage size` = ("set stage size").asInstanceOf[`set stage size`]
   
   @js.native
-  sealed trait onChange extends js.Object
-  
-  @js.native
-  sealed trait performance extends js.Object
-  
-  @js.native
-  sealed trait queue extends js.Object
-  
-  @js.native
-  sealed trait refresh extends js.Object
-  
-  @js.native
-  sealed trait repaint extends js.Object
-  
-  @js.native
-  sealed trait reset extends js.Object
-  
-  @js.native
-  sealed trait selector extends js.Object
-  
-  @js.native
-  sealed trait `set default side` extends js.Object
-  
-  @js.native
-  sealed trait `set next side` extends js.Object
-  
-  @js.native
-  sealed trait `set stage size` extends js.Object
-  
-  @js.native
-  sealed trait setting extends js.Object
-  
-  @js.native
-  sealed trait silent extends js.Object
-  
-  @js.native
-  sealed trait verbose extends js.Object
-  
-  @js.native
-  sealed trait width extends js.Object
-  
-  @scala.inline
-  def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
-  @scala.inline
-  def className: className = "className".asInstanceOf[className]
-  @scala.inline
-  def debug: debug = "debug".asInstanceOf[debug]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def duration: duration = "duration".asInstanceOf[duration]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def `flip back`: `flip back` = "flip back".asInstanceOf[`flip back`]
-  @scala.inline
-  def `flip down`: `flip down` = "flip down".asInstanceOf[`flip down`]
-  @scala.inline
-  def `flip left`: `flip left` = "flip left".asInstanceOf[`flip left`]
-  @scala.inline
-  def `flip over`: `flip over` = "flip over".asInstanceOf[`flip over`]
-  @scala.inline
-  def `flip right`: `flip right` = "flip right".asInstanceOf[`flip right`]
-  @scala.inline
-  def `flip up`: `flip up` = "flip up".asInstanceOf[`flip up`]
-  @scala.inline
-  def `get transform down`: `get transform down` = "get transform down".asInstanceOf[`get transform down`]
-  @scala.inline
-  def `get transform left`: `get transform left` = "get transform left".asInstanceOf[`get transform left`]
-  @scala.inline
-  def `get transform right`: `get transform right` = "get transform right".asInstanceOf[`get transform right`]
-  @scala.inline
-  def `get transform up`: `get transform up` = "get transform up".asInstanceOf[`get transform up`]
-  @scala.inline
-  def height: height = "height".asInstanceOf[height]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def `is animating`: `is animating` = "is animating".asInstanceOf[`is animating`]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def namespace: namespace = "namespace".asInstanceOf[namespace]
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
-  @scala.inline
-  def onChange: onChange = "onChange".asInstanceOf[onChange]
-  @scala.inline
-  def performance: performance = "performance".asInstanceOf[performance]
-  @scala.inline
-  def queue: queue = "queue".asInstanceOf[queue]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def repaint: repaint = "repaint".asInstanceOf[repaint]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def selector: selector = "selector".asInstanceOf[selector]
-  @scala.inline
-  def `set default side`: `set default side` = "set default side".asInstanceOf[`set default side`]
-  @scala.inline
-  def `set next side`: `set next side` = "set next side".asInstanceOf[`set next side`]
-  @scala.inline
-  def `set stage size`: `set stage size` = "set stage size".asInstanceOf[`set stage size`]
-  @scala.inline
-  def setting: setting = "setting".asInstanceOf[setting]
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
-  @scala.inline
-  def verbose: verbose = "verbose".asInstanceOf[verbose]
-  @scala.inline
-  def width: width = "width".asInstanceOf[width]
+  sealed trait setting extends StObject
+  inline def setting: setting = "setting".asInstanceOf[setting]
 }
-

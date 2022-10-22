@@ -1,19 +1,16 @@
 package typingsJapgolly.zipcelx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zipcelxStrings {
-  @js.native
-  sealed trait number extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait number extends StObject
+  inline def number: number = "number".asInstanceOf[number]
   
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  @js.native
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
 }
-

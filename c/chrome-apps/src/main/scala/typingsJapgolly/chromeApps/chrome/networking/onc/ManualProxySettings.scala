@@ -1,29 +1,46 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManualProxySettings[M, P] extends js.Object {
+trait ManualProxySettings[M, P] extends StObject {
+  
   /** Settings for FTP proxy. */
   var FTPProxy: js.UndefOr[P] = js.undefined
+  
   /** Settings for HTTP proxy. */
   var HTTPProxy: js.UndefOr[P] = js.undefined
+  
   /** Settings for SOCKS proxy. */
   var SOCKS: js.UndefOr[P] = js.undefined
+  
   /** Settings for secure HTTP proxy. */
   var SecureHTTPProxy: js.UndefOr[P] = js.undefined
 }
-
 object ManualProxySettings {
-  @scala.inline
-  def apply[M, P](FTPProxy: P = null, HTTPProxy: P = null, SOCKS: P = null, SecureHTTPProxy: P = null): ManualProxySettings[M, P] = {
+  
+  inline def apply[M, P](): ManualProxySettings[M, P] = {
     val __obj = js.Dynamic.literal()
-    if (FTPProxy != null) __obj.updateDynamic("FTPProxy")(FTPProxy.asInstanceOf[js.Any])
-    if (HTTPProxy != null) __obj.updateDynamic("HTTPProxy")(HTTPProxy.asInstanceOf[js.Any])
-    if (SOCKS != null) __obj.updateDynamic("SOCKS")(SOCKS.asInstanceOf[js.Any])
-    if (SecureHTTPProxy != null) __obj.updateDynamic("SecureHTTPProxy")(SecureHTTPProxy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManualProxySettings[M, P]]
   }
+  
+  extension [Self <: ManualProxySettings[?, ?], M, P](x: Self & (ManualProxySettings[M, P])) {
+    
+    inline def setFTPProxy(value: P): Self = StObject.set(x, "FTPProxy", value.asInstanceOf[js.Any])
+    
+    inline def setFTPProxyUndefined: Self = StObject.set(x, "FTPProxy", js.undefined)
+    
+    inline def setHTTPProxy(value: P): Self = StObject.set(x, "HTTPProxy", value.asInstanceOf[js.Any])
+    
+    inline def setHTTPProxyUndefined: Self = StObject.set(x, "HTTPProxy", js.undefined)
+    
+    inline def setSOCKS(value: P): Self = StObject.set(x, "SOCKS", value.asInstanceOf[js.Any])
+    
+    inline def setSOCKSUndefined: Self = StObject.set(x, "SOCKS", js.undefined)
+    
+    inline def setSecureHTTPProxy(value: P): Self = StObject.set(x, "SecureHTTPProxy", value.asInstanceOf[js.Any])
+    
+    inline def setSecureHTTPProxyUndefined: Self = StObject.set(x, "SecureHTTPProxy", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__alert-dialog
 
-Typings are for version 0.2
+Typings are for version 0.18.0
 
 ## Library description:
 Accessible React Alert Dialog.
@@ -10,10 +10,10 @@ Accessible React Alert Dialog.
 | ------------------ | :-------------: |
 | Full name          | @reach/alert-dialog |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 8 |
-| # downloads        | 67527 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 35167.666666666664 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Accessible React Alert Dialog.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

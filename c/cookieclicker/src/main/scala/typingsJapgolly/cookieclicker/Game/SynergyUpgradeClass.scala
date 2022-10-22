@@ -1,0 +1,22 @@
+package typingsJapgolly.cookieclicker.Game
+
+import typingsJapgolly.cookieclicker.cookieclickerStrings._empty
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+@js.native
+trait SynergyUpgradeClass[Tier /* <: String | Double */]
+  extends StObject
+     with Upgrade {
+  
+  var buildingTie1: GameObject = js.native
+  
+  var buildingTie2: GameObject = js.native
+  
+  @JSName("pool")
+  var pool_SynergyUpgradeClass: _empty = js.native
+  
+  @JSName("tier")
+  var tier_SynergyUpgradeClass: Tier = js.native
+}

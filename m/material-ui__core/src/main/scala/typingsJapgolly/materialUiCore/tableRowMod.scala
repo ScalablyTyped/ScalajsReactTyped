@@ -1,26 +1,32 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.tableRowTableRowMod.TableRowProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.tr
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import typingsJapgolly.materialUiCore.tableRowTableRowMod.TableRowTypeMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/TableRow", JSImport.Namespace)
-@js.native
-object tableRowMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TableRowProps, ComponentState, js.Any] {
-    def this(props: TableRowProps) = this()
-    def this(props: TableRowProps, context: js.Any) = this()
-  }
+object tableRowMod extends Shortcut {
   
+  /**
+    * Will automatically set dynamic row height
+    * based on the material table element parent (head, body, etc).
+    * Demos:
+    *
+    * - [Tables](https://mui.com/components/tables/)
+    *
+    * API:
+    *
+    * - [TableRow API](https://mui.com/api/table-row/)
+    */
+  @JSImport("@material-ui/core/TableRow", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[TableRowProps]]
+  val default: OverridableComponent[TableRowTypeMap[js.Object, tr]] = js.native
   
+  type _To = OverridableComponent[TableRowTypeMap[js.Object, tr]]
+  
+  /* This means you don't have to write `default`, but can instead just say `tableRowMod.foo` */
+  override def _to: OverridableComponent[TableRowTypeMap[js.Object, tr]] = default
 }
-

@@ -1,17 +1,23 @@
 package typingsJapgolly.oracleOraclejet
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.oracleOraclejet.anon.InitialRender
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@oracle/oraclejet/ojcomponentcore", JSImport.Namespace)
-@js.native
-object ojcomponentcoreMod extends js.Object {
-  def subtreeAttached(node: Element): Unit = js.native
-  def subtreeDetached(node: Element): Unit = js.native
-  def subtreeHidden(node: Element): Unit = js.native
-  def subtreeShown(node: Element): Unit = js.native
-  def subtreeShown(node: Element, options: AnonInitialRender): Unit = js.native
+object ojcomponentcoreMod {
+  
+  @JSImport("@oracle/oraclejet/ojcomponentcore", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def subtreeAttached(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subtreeAttached")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def subtreeDetached(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subtreeDetached")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def subtreeHidden(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subtreeHidden")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def subtreeShown(node: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subtreeShown")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def subtreeShown(node: Element, options: InitialRender): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("subtreeShown")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

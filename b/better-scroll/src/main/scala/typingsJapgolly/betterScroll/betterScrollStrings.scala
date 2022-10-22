@@ -1,64 +1,52 @@
 package typingsJapgolly.betterScroll
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object betterScrollStrings {
-  @js.native
-  sealed trait beforeScrollStart extends js.Object
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait beforeScrollStart extends StObject
+  inline def beforeScrollStart: beforeScrollStart = "beforeScrollStart".asInstanceOf[beforeScrollStart]
   
   @js.native
-  sealed trait flick extends js.Object
+  sealed trait destroy extends StObject
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
-  sealed trait pullingDown extends js.Object
+  sealed trait flick extends StObject
+  inline def flick: flick = "flick".asInstanceOf[flick]
   
   @js.native
-  sealed trait pullingUp extends js.Object
+  sealed trait pullingDown extends StObject
+  inline def pullingDown: pullingDown = "pullingDown".asInstanceOf[pullingDown]
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait pullingUp extends StObject
+  inline def pullingUp: pullingUp = "pullingUp".asInstanceOf[pullingUp]
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait refresh extends StObject
+  inline def refresh: refresh = "refresh".asInstanceOf[refresh]
   
   @js.native
-  sealed trait scrollCancel extends js.Object
+  sealed trait scroll extends StObject
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait scrollEnd extends js.Object
+  sealed trait scrollCancel extends StObject
+  inline def scrollCancel: scrollCancel = "scrollCancel".asInstanceOf[scrollCancel]
   
   @js.native
-  sealed trait scrollStart extends js.Object
+  sealed trait scrollEnd extends StObject
+  inline def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
   
   @js.native
-  sealed trait touchEnd extends js.Object
+  sealed trait scrollStart extends StObject
+  inline def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
   
-  @scala.inline
-  def beforeScrollStart: beforeScrollStart = "beforeScrollStart".asInstanceOf[beforeScrollStart]
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
-  @scala.inline
-  def flick: flick = "flick".asInstanceOf[flick]
-  @scala.inline
-  def pullingDown: pullingDown = "pullingDown".asInstanceOf[pullingDown]
-  @scala.inline
-  def pullingUp: pullingUp = "pullingUp".asInstanceOf[pullingUp]
-  @scala.inline
-  def refresh: refresh = "refresh".asInstanceOf[refresh]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def scrollCancel: scrollCancel = "scrollCancel".asInstanceOf[scrollCancel]
-  @scala.inline
-  def scrollEnd: scrollEnd = "scrollEnd".asInstanceOf[scrollEnd]
-  @scala.inline
-  def scrollStart: scrollStart = "scrollStart".asInstanceOf[scrollStart]
-  @scala.inline
-  def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
+  @js.native
+  sealed trait touchEnd extends StObject
+  inline def touchEnd: touchEnd = "touchEnd".asInstanceOf[touchEnd]
 }
-

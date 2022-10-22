@@ -1,29 +1,50 @@
 package typingsJapgolly.googleCloudCommon
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.googleCloudCommon.serviceMod.ServiceConfig
-import typingsJapgolly.googleCloudCommon.serviceMod.ServiceOptions
-import typingsJapgolly.googleCloudCommon.serviceObjectMod.ServiceObjectConfig
-import typingsJapgolly.googleCloudCommon.utilMod.GoogleErrorBody
-import typingsJapgolly.googleCloudCommon.utilMod.GoogleInnerError
-import typingsJapgolly.googleCloudCommon.utilMod.Util_
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.googleCloudCommon.buildSrcServiceMod.ServiceConfig
+import typingsJapgolly.googleCloudCommon.buildSrcServiceMod.ServiceOptions
+import typingsJapgolly.googleCloudCommon.buildSrcServiceObjectMod.ServiceObjectConfig
+import typingsJapgolly.googleCloudCommon.buildSrcUtilMod.GoogleErrorBody
+import typingsJapgolly.googleCloudCommon.buildSrcUtilMod.GoogleInnerError
+import typingsJapgolly.googleCloudCommon.buildSrcUtilMod.Util_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@google-cloud/common", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@google-cloud/common", "ApiError")
   @js.native
-  class ApiError protected ()
-    extends typingsJapgolly.googleCloudCommon.utilMod.ApiError {
+  open class ApiError protected ()
+    extends typingsJapgolly.googleCloudCommon.buildSrcUtilMod.ApiError {
     def this(errorBody: GoogleErrorBody) = this()
     def this(errorMessage: String) = this()
   }
+  /* static members */
+  object ApiError {
+    
+    @JSImport("@google-cloud/common", "ApiError")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Pieces together an error message by combining all unique error messages
+      * returned from a single GoogleError
+      *
+      * @private
+      *
+      * @param {GoogleErrorBody} err The original error.
+      * @param {GoogleInnerError[]} [errors] Inner errors, if any.
+      * @returns {string}
+      */
+    inline def createMultiErrorMessage(err: GoogleErrorBody): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createMultiErrorMessage")(err.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiErrorMessage")(err.asInstanceOf[js.Any], errors.asInstanceOf[js.Any])).asInstanceOf[String]
+  }
   
+  @JSImport("@google-cloud/common", "Operation")
   @js.native
-  class Operation[T] protected ()
-    extends typingsJapgolly.googleCloudCommon.operationMod.Operation[T] {
+  open class Operation[T] protected ()
+    extends typingsJapgolly.googleCloudCommon.buildSrcOperationMod.Operation[T] {
     /**
       * An Operation object allows you to interact with APIs that take longer to
       * process things.
@@ -37,9 +58,10 @@ object mod extends js.Object {
     def this(config: ServiceObjectConfig) = this()
   }
   
+  @JSImport("@google-cloud/common", "Service")
   @js.native
-  class Service protected ()
-    extends typingsJapgolly.googleCloudCommon.serviceMod.Service {
+  open class Service protected ()
+    extends typingsJapgolly.googleCloudCommon.buildSrcServiceMod.Service {
     /**
       * Service is a base class, meant to be inherited from by a "service," like
       * BigQuery or Storage.
@@ -70,38 +92,38 @@ object mod extends js.Object {
     * shared behaviors. Note that any method can be overridden when the service
     * object requires specific behavior.
     */
+  @JSImport("@google-cloud/common", "ServiceObject")
   @js.native
-  class ServiceObject[T] protected ()
-    extends typingsJapgolly.googleCloudCommon.serviceObjectMod.ServiceObject[T] {
+  open class ServiceObject[T] protected ()
+    extends typingsJapgolly.googleCloudCommon.buildSrcServiceObjectMod.ServiceObject[T] {
     def this(config: ServiceObjectConfig) = this()
   }
   
-  /* static members */
-  @js.native
-  object ApiError extends js.Object {
-    /**
-      * Pieces together an error message by combining all unique error messages
-      * returned from a single GoogleError
-      *
-      * @private
-      *
-      * @param {GoogleErrorBody} err The original error.
-      * @param {GoogleInnerError[]} [errors] Inner errors, if any.
-      * @returns {string}
-      */
-    def createMultiErrorMessage(err: GoogleErrorBody): String = js.native
-    def createMultiErrorMessage(err: GoogleErrorBody, errors: js.Array[GoogleInnerError]): String = js.native
-  }
-  
-  @js.native
-  object util extends TopLevel[Util_] {
+  object util extends Shortcut {
+    
+    @JSImport("@google-cloud/common", "util")
     @js.native
-    class PartialFailureError protected ()
-      extends typingsJapgolly.googleCloudCommon.utilMod.PartialFailureError {
+    val ^ : Util_ = js.native
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@google-cloud/common", "util.ApiError")
+    @js.native
+    open class ApiErrorCls protected ()
+      extends typingsJapgolly.googleCloudCommon.buildSrcUtilMod.ApiError {
+      def this(errorMessage: String) = this()
+    }
+    
+    /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+    @JSImport("@google-cloud/common", "util.PartialFailureError")
+    @js.native
+    open class PartialFailureError protected ()
+      extends typingsJapgolly.googleCloudCommon.buildSrcUtilMod.PartialFailureError {
       def this(b: GoogleErrorBody) = this()
     }
     
+    type _To = Util_
+    
+    /* This means you don't have to write `^`, but can instead just say `util.foo` */
+    override def _to: Util_ = ^
   }
-  
 }
-

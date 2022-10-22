@@ -1,24 +1,20 @@
 package typingsJapgolly.meteorUniverseI18n
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meteorUniverseI18nStrings {
-  @js.native
-  sealed trait code extends js.Object
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait code extends StObject
+  inline def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait nativeNames extends js.Object
+  sealed trait name extends StObject
+  inline def name: name = "name".asInstanceOf[name]
   
-  @scala.inline
-  def code: code = "code".asInstanceOf[code]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
-  def nativeNames: nativeNames = "nativeNames".asInstanceOf[nativeNames]
+  @js.native
+  sealed trait nativeNames extends StObject
+  inline def nativeNames: nativeNames = "nativeNames".asInstanceOf[nativeNames]
 }
-

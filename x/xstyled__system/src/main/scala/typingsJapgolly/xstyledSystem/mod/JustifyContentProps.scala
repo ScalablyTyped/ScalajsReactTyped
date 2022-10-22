@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.JustifyContentProperty
+import typingsJapgolly.csstype.mod.Property.JustifyContent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JustifyContentProps extends js.Object {
-  val justifyContent: js.UndefOr[ResponsiveValue[JustifyContentProperty]] = js.undefined
+trait JustifyContentProps extends StObject {
+  
+  val justifyContent: js.UndefOr[ResponsiveValue[JustifyContent]] = js.undefined
 }
-
 object JustifyContentProps {
-  @scala.inline
-  def apply(justifyContent: ResponsiveValue[JustifyContentProperty] = null): JustifyContentProps = {
+  
+  inline def apply(): JustifyContentProps = {
     val __obj = js.Dynamic.literal()
-    if (justifyContent != null) __obj.updateDynamic("justifyContent")(justifyContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[JustifyContentProps]
   }
+  
+  extension [Self <: JustifyContentProps](x: Self) {
+    
+    inline def setJustifyContent(value: ResponsiveValue[JustifyContent]): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
+    
+    inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+    
+    inline def setJustifyContentVarargs(value: JustifyContent*): Self = StObject.set(x, "justifyContent", js.Array(value*))
+  }
 }
-

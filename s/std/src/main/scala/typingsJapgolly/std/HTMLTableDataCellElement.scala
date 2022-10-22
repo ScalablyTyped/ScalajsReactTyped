@@ -1,14 +1,11 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/** @deprecated prefer HTMLTableCellElement */
 @js.native
-trait HTMLTableDataCellElement extends HTMLTableCellElement
-
-@JSGlobal("HTMLTableDataCellElement")
-@js.native
-object HTMLTableDataCellElement extends Instantiable0[HTMLTableDataCellElement]
-
+trait HTMLTableDataCellElement
+  extends StObject
+     with HTMLTableCellElement

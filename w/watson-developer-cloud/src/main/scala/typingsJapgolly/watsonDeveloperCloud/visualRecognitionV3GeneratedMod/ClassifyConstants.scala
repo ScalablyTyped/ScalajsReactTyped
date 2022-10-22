@@ -1,89 +1,86 @@
 package typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `classify` operation. */
-@JSImport("watson-developer-cloud/visual-recognition/v3-generated", "ClassifyConstants")
-@js.native
-object ClassifyConstants extends js.Object {
-  @js.native
-  sealed trait AcceptLanguage extends js.Object
+object ClassifyConstants {
   
-  /** The desired language of parts of the response. See the response for details. */
   @js.native
-  object AcceptLanguage extends js.Object {
-    @js.native
-    sealed trait AR extends AcceptLanguage
-    
-    @js.native
-    sealed trait DE extends AcceptLanguage
-    
-    @js.native
-    sealed trait EN extends AcceptLanguage
-    
-    @js.native
-    sealed trait ES extends AcceptLanguage
-    
-    @js.native
-    sealed trait FR extends AcceptLanguage
-    
-    @js.native
-    sealed trait IT extends AcceptLanguage
-    
-    @js.native
-    sealed trait JA extends AcceptLanguage
-    
-    @js.native
-    sealed trait KO extends AcceptLanguage
-    
-    @js.native
-    sealed trait PT_BR extends AcceptLanguage
-    
-    @js.native
-    sealed trait ZH_CN extends AcceptLanguage
-    
-    @js.native
-    sealed trait ZH_TW extends AcceptLanguage
+  sealed trait AcceptLanguage extends StObject
+  /** The desired language of parts of the response. See the response for details. */
+  @JSImport("watson-developer-cloud/visual-recognition/v3-generated", "ClassifyConstants.AcceptLanguage")
+  @js.native
+  object AcceptLanguage extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[AcceptLanguage with String] = js.native
-    /* "ar" */ @js.native
-    object AR extends TopLevel[AR with String]
+    def apply(value: String): js.UndefOr[AcceptLanguage & String] = js.native
     
-    /* "de" */ @js.native
-    object DE extends TopLevel[DE with String]
+    @js.native
+    sealed trait AR
+      extends StObject
+         with AcceptLanguage
+    /* "ar" */ val AR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.AR & String = js.native
     
-    /* "en" */ @js.native
-    object EN extends TopLevel[EN with String]
+    @js.native
+    sealed trait DE
+      extends StObject
+         with AcceptLanguage
+    /* "de" */ val DE: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.DE & String = js.native
     
-    /* "es" */ @js.native
-    object ES extends TopLevel[ES with String]
+    @js.native
+    sealed trait EN
+      extends StObject
+         with AcceptLanguage
+    /* "en" */ val EN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.EN & String = js.native
     
-    /* "fr" */ @js.native
-    object FR extends TopLevel[FR with String]
+    @js.native
+    sealed trait ES
+      extends StObject
+         with AcceptLanguage
+    /* "es" */ val ES: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ES & String = js.native
     
-    /* "it" */ @js.native
-    object IT extends TopLevel[IT with String]
+    @js.native
+    sealed trait FR
+      extends StObject
+         with AcceptLanguage
+    /* "fr" */ val FR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.FR & String = js.native
     
-    /* "ja" */ @js.native
-    object JA extends TopLevel[JA with String]
+    @js.native
+    sealed trait IT
+      extends StObject
+         with AcceptLanguage
+    /* "it" */ val IT: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.IT & String = js.native
     
-    /* "ko" */ @js.native
-    object KO extends TopLevel[KO with String]
+    @js.native
+    sealed trait JA
+      extends StObject
+         with AcceptLanguage
+    /* "ja" */ val JA: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.JA & String = js.native
     
-    /* "pt-br" */ @js.native
-    object PT_BR extends TopLevel[PT_BR with String]
+    @js.native
+    sealed trait KO
+      extends StObject
+         with AcceptLanguage
+    /* "ko" */ val KO: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.KO & String = js.native
     
-    /* "zh-cn" */ @js.native
-    object ZH_CN extends TopLevel[ZH_CN with String]
+    @js.native
+    sealed trait PT_BR
+      extends StObject
+         with AcceptLanguage
+    /* "pt-br" */ val PT_BR: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.PT_BR & String = js.native
     
-    /* "zh-tw" */ @js.native
-    object ZH_TW extends TopLevel[ZH_TW with String]
+    @js.native
+    sealed trait ZH_CN
+      extends StObject
+         with AcceptLanguage
+    /* "zh-cn" */ val ZH_CN: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_CN & String = js.native
     
+    @js.native
+    sealed trait ZH_TW
+      extends StObject
+         with AcceptLanguage
+    /* "zh-tw" */ val ZH_TW: typingsJapgolly.watsonDeveloperCloud.visualRecognitionV3GeneratedMod.ClassifyConstants.AcceptLanguage.ZH_TW & String = js.native
   }
-  
 }
-

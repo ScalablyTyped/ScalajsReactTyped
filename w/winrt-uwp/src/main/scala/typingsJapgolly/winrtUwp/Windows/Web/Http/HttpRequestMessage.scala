@@ -1,36 +1,66 @@
 package typingsJapgolly.winrtUwp.Windows.Web.Http
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IMap
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
 import typingsJapgolly.winrtUwp.Windows.Web.Http.Headers.HttpRequestHeaderCollection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an HTTP request message including headers. */
-@JSGlobal("Windows.Web.Http.HttpRequestMessage")
-@js.native
-/** Initializes a new instance of the HttpRequestMessage class. */
-class HttpRequestMessage () extends js.Object {
-  /**
-    * Initializes a new instance of the HttpRequestMessage class with an HTTP method and a request Uri .
-    * @param method The HTTP method to perform
-    * @param uri The Uri to request.
-    */
-  def this(method: HttpMethod, uri: Uri) = this()
-  /** Gets or sets the HTTP content to send to the server on the HttpRequestMessage object. */
-  var content: IHttpContent = js.native
-  /** Gets the collection of the HTTP request headers associated with the HttpRequestMessage . */
-  var headers: HttpRequestHeaderCollection = js.native
-  /** Gets or sets the HTTP method to be performed on the request URI. */
-  var method: HttpMethod = js.native
-  /** Gets a set of properties on the HttpRequestMessage instance that are for use by the developer. */
-  var properties: IMap[String, _] = js.native
-  /** Gets or sets the Uri used for the HttpRequestMessage object. */
-  var requestUri: Uri = js.native
-  /** Get information about the underlying transport socket used by an HTTP connection. */
-  var transportInformation: HttpTransportInformation = js.native
+trait HttpRequestMessage extends StObject {
+  
   /** Closes the HttpRequestMessage instance and releases allocated resources. */
-  def close(): Unit = js.native
+  def close(): Unit
+  
+  /** Gets or sets the HTTP content to send to the server on the HttpRequestMessage object. */
+  var content: IHttpContent
+  
+  /** Gets the collection of the HTTP request headers associated with the HttpRequestMessage . */
+  var headers: HttpRequestHeaderCollection
+  
+  /** Gets or sets the HTTP method to be performed on the request URI. */
+  var method: HttpMethod
+  
+  /** Gets a set of properties on the HttpRequestMessage instance that are for use by the developer. */
+  var properties: IMap[String, Any]
+  
+  /** Gets or sets the Uri used for the HttpRequestMessage object. */
+  var requestUri: Uri
+  
+  /** Get information about the underlying transport socket used by an HTTP connection. */
+  var transportInformation: HttpTransportInformation
 }
-
+object HttpRequestMessage {
+  
+  inline def apply(
+    close: Callback,
+    content: IHttpContent,
+    headers: HttpRequestHeaderCollection,
+    method: HttpMethod,
+    properties: IMap[String, Any],
+    requestUri: Uri,
+    transportInformation: HttpTransportInformation
+  ): HttpRequestMessage = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, content = content.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], requestUri = requestUri.asInstanceOf[js.Any], transportInformation = transportInformation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpRequestMessage]
+  }
+  
+  extension [Self <: HttpRequestMessage](x: Self) {
+    
+    inline def setClose(value: Callback): Self = StObject.set(x, "close", value.toJsFn)
+    
+    inline def setContent(value: IHttpContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setHeaders(value: HttpRequestHeaderCollection): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setMethod(value: HttpMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setProperties(value: IMap[String, Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setRequestUri(value: Uri): Self = StObject.set(x, "requestUri", value.asInstanceOf[js.Any])
+    
+    inline def setTransportInformation(value: HttpTransportInformation): Self = StObject.set(x, "transportInformation", value.asInstanceOf[js.Any])
+  }
+}

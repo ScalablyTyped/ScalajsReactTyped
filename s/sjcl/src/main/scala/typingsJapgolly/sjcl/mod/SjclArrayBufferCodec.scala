@@ -1,14 +1,17 @@
 package typingsJapgolly.sjcl.mod
 
-import typingsJapgolly.std.ArrayBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SjclArrayBufferCodec extends SjclCodec[ArrayBuffer] {
-  def fromBits(bits: BitArray_, padding: Boolean): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def fromBits(bits: BitArray_, padding: Boolean, padding_count: Double): scala.scalajs.js.typedarray.ArrayBuffer = js.native
-  def hexDumpBuffer(buffer: scala.scalajs.js.typedarray.ArrayBuffer): Unit = js.native
+trait SjclArrayBufferCodec
+  extends StObject
+     with SjclCodec[js.typedarray.ArrayBuffer] {
+  
+  def fromBits(bits: BitArray_, padding: Boolean): js.typedarray.ArrayBuffer = js.native
+  def fromBits(bits: BitArray_, padding: Boolean, padding_count: Double): js.typedarray.ArrayBuffer = js.native
+  def fromBits(bits: BitArray_, padding: Unit, padding_count: Double): js.typedarray.ArrayBuffer = js.native
+  
+  def hexDumpBuffer(buffer: js.typedarray.ArrayBuffer): Unit = js.native
 }
-

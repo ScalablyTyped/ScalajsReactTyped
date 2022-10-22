@@ -1,16 +1,18 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.Connectivity.LanIdentifierData")
-@js.native
-class LanIdentifierData () extends ILanIdentifierData {
-  /* CompleteClass */
-  override var `type`: Double = js.native
-  /* CompleteClass */
-  override var value: IVectorView[Double] = js.native
+trait LanIdentifierData
+  extends StObject
+     with ILanIdentifierData
+object LanIdentifierData {
+  
+  inline def apply(`type`: Double, value: IVectorView[Double]): LanIdentifierData = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LanIdentifierData]
+  }
 }
-

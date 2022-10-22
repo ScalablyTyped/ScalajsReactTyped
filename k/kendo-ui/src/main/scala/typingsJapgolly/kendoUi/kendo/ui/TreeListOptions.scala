@@ -2,160 +2,323 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.kendo.data.TreeListDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListOptions extends js.Object {
+trait TreeListOptions extends StObject {
+  
+  var altRowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var autoBind: js.UndefOr[Boolean] = js.undefined
+  
   var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, Unit]] = js.undefined
+  
   var cancel: js.UndefOr[js.Function1[/* e */ TreeListCancelEvent, Unit]] = js.undefined
+  
   var cellClose: js.UndefOr[js.Function1[/* e */ TreeListCellCloseEvent, Unit]] = js.undefined
+  
   var change: js.UndefOr[js.Function1[/* e */ TreeListChangeEvent, Unit]] = js.undefined
+  
   var collapse: js.UndefOr[js.Function1[/* e */ TreeListCollapseEvent, Unit]] = js.undefined
+  
   var columnHide: js.UndefOr[js.Function1[/* e */ TreeListColumnHideEvent, Unit]] = js.undefined
+  
   var columnLock: js.UndefOr[js.Function1[/* e */ TreeListColumnLockEvent, Unit]] = js.undefined
+  
   var columnMenu: js.UndefOr[Boolean | TreeListColumnMenu] = js.undefined
+  
   var columnMenuInit: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuInitEvent, Unit]] = js.undefined
+  
   var columnMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListColumnMenuOpenEvent, Unit]] = js.undefined
+  
   var columnReorder: js.UndefOr[js.Function1[/* e */ TreeListColumnReorderEvent, Unit]] = js.undefined
+  
   var columnResize: js.UndefOr[js.Function1[/* e */ TreeListColumnResizeEvent, Unit]] = js.undefined
+  
   var columnShow: js.UndefOr[js.Function1[/* e */ TreeListColumnShowEvent, Unit]] = js.undefined
+  
   var columnUnlock: js.UndefOr[js.Function1[/* e */ TreeListColumnUnlockEvent, Unit]] = js.undefined
+  
   var columns: js.UndefOr[js.Array[TreeListColumn]] = js.undefined
+  
   var dataBinding: js.UndefOr[js.Function1[/* e */ TreeListDataBindingEvent, Unit]] = js.undefined
+  
   var dataBound: js.UndefOr[js.Function1[/* e */ TreeListDataBoundEvent, Unit]] = js.undefined
-  var dataSource: js.UndefOr[js.Any | TreeListDataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | TreeListDataSource] = js.undefined
+  
   var drag: js.UndefOr[js.Function1[/* e */ TreeListDragEvent, Unit]] = js.undefined
+  
   var dragend: js.UndefOr[js.Function1[/* e */ TreeListDragendEvent, Unit]] = js.undefined
+  
   var dragstart: js.UndefOr[js.Function1[/* e */ TreeListDragstartEvent, Unit]] = js.undefined
+  
   var drop: js.UndefOr[js.Function1[/* e */ TreeListDropEvent, Unit]] = js.undefined
+  
   var edit: js.UndefOr[js.Function1[/* e */ TreeListEditEvent, Unit]] = js.undefined
+  
   var editable: js.UndefOr[Boolean | TreeListEditable] = js.undefined
+  
   var excel: js.UndefOr[TreeListExcel] = js.undefined
+  
   var excelExport: js.UndefOr[js.Function1[/* e */ TreeListExcelExportEvent, Unit]] = js.undefined
+  
   var expand: js.UndefOr[js.Function1[/* e */ TreeListExpandEvent, Unit]] = js.undefined
+  
   var filterMenuInit: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuInitEvent, Unit]] = js.undefined
+  
   var filterMenuOpen: js.UndefOr[js.Function1[/* e */ TreeListFilterMenuOpenEvent, Unit]] = js.undefined
+  
   var filterable: js.UndefOr[Boolean | TreeListFilterable] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var messages: js.UndefOr[TreeListMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var navigatable: js.UndefOr[Boolean] = js.undefined
+  
   var pageable: js.UndefOr[Boolean | TreeListPageable] = js.undefined
+  
   var pdf: js.UndefOr[TreeListPdf] = js.undefined
+  
   var pdfExport: js.UndefOr[js.Function1[/* e */ TreeListPdfExportEvent, Unit]] = js.undefined
+  
   var remove: js.UndefOr[js.Function1[/* e */ TreeListRemoveEvent, Unit]] = js.undefined
+  
   var reorderable: js.UndefOr[Boolean] = js.undefined
+  
   var resizable: js.UndefOr[Boolean] = js.undefined
+  
+  var rowTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var save: js.UndefOr[js.Function1[/* e */ TreeListSaveEvent, Unit]] = js.undefined
+  
   var saveChanges: js.UndefOr[js.Function1[/* e */ TreeListSaveChangesEvent, Unit]] = js.undefined
-  var scrollable: js.UndefOr[Boolean | js.Any] = js.undefined
+  
+  var scrollable: js.UndefOr[Boolean | Any] = js.undefined
+  
+  var search: js.UndefOr[TreeListSearch] = js.undefined
+  
   var selectable: js.UndefOr[Boolean | String] = js.undefined
+  
   var sortable: js.UndefOr[Boolean | TreeListSortable] = js.undefined
-  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | js.Any] = js.undefined
+  
+  var toolbar: js.UndefOr[js.Array[TreeListToolbarItem] | Any] = js.undefined
 }
-
 object TreeListOptions {
-  @scala.inline
-  def apply(
-    autoBind: js.UndefOr[Boolean] = js.undefined,
-    beforeEdit: /* e */ TreeListBeforeEditEvent => Callback = null,
-    cancel: /* e */ TreeListCancelEvent => Callback = null,
-    cellClose: /* e */ TreeListCellCloseEvent => Callback = null,
-    change: /* e */ TreeListChangeEvent => Callback = null,
-    collapse: /* e */ TreeListCollapseEvent => Callback = null,
-    columnHide: /* e */ TreeListColumnHideEvent => Callback = null,
-    columnLock: /* e */ TreeListColumnLockEvent => Callback = null,
-    columnMenu: Boolean | TreeListColumnMenu = null,
-    columnMenuInit: /* e */ TreeListColumnMenuInitEvent => Callback = null,
-    columnMenuOpen: /* e */ TreeListColumnMenuOpenEvent => Callback = null,
-    columnReorder: /* e */ TreeListColumnReorderEvent => Callback = null,
-    columnResize: /* e */ TreeListColumnResizeEvent => Callback = null,
-    columnShow: /* e */ TreeListColumnShowEvent => Callback = null,
-    columnUnlock: /* e */ TreeListColumnUnlockEvent => Callback = null,
-    columns: js.Array[TreeListColumn] = null,
-    dataBinding: /* e */ TreeListDataBindingEvent => Callback = null,
-    dataBound: /* e */ TreeListDataBoundEvent => Callback = null,
-    dataSource: js.Any | TreeListDataSource = null,
-    drag: /* e */ TreeListDragEvent => Callback = null,
-    dragend: /* e */ TreeListDragendEvent => Callback = null,
-    dragstart: /* e */ TreeListDragstartEvent => Callback = null,
-    drop: /* e */ TreeListDropEvent => Callback = null,
-    edit: /* e */ TreeListEditEvent => Callback = null,
-    editable: Boolean | TreeListEditable = null,
-    excel: TreeListExcel = null,
-    excelExport: /* e */ TreeListExcelExportEvent => Callback = null,
-    expand: /* e */ TreeListExpandEvent => Callback = null,
-    filterMenuInit: /* e */ TreeListFilterMenuInitEvent => Callback = null,
-    filterMenuOpen: /* e */ TreeListFilterMenuOpenEvent => Callback = null,
-    filterable: Boolean | TreeListFilterable = null,
-    height: Double | String = null,
-    messages: TreeListMessages = null,
-    name: String = null,
-    navigatable: js.UndefOr[Boolean] = js.undefined,
-    pageable: Boolean | TreeListPageable = null,
-    pdf: TreeListPdf = null,
-    pdfExport: /* e */ TreeListPdfExportEvent => Callback = null,
-    remove: /* e */ TreeListRemoveEvent => Callback = null,
-    reorderable: js.UndefOr[Boolean] = js.undefined,
-    resizable: js.UndefOr[Boolean] = js.undefined,
-    save: /* e */ TreeListSaveEvent => Callback = null,
-    saveChanges: /* e */ TreeListSaveChangesEvent => Callback = null,
-    scrollable: Boolean | js.Any = null,
-    selectable: Boolean | String = null,
-    sortable: Boolean | TreeListSortable = null,
-    toolbar: js.Array[TreeListToolbarItem] | js.Any = null
-  ): TreeListOptions = {
+  
+  inline def apply(): TreeListOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind.asInstanceOf[js.Any])
-    if (beforeEdit != null) __obj.updateDynamic("beforeEdit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListBeforeEditEvent) => beforeEdit(t0).runNow()))
-    if (cancel != null) __obj.updateDynamic("cancel")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListCancelEvent) => cancel(t0).runNow()))
-    if (cellClose != null) __obj.updateDynamic("cellClose")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListCellCloseEvent) => cellClose(t0).runNow()))
-    if (change != null) __obj.updateDynamic("change")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListChangeEvent) => change(t0).runNow()))
-    if (collapse != null) __obj.updateDynamic("collapse")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListCollapseEvent) => collapse(t0).runNow()))
-    if (columnHide != null) __obj.updateDynamic("columnHide")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnHideEvent) => columnHide(t0).runNow()))
-    if (columnLock != null) __obj.updateDynamic("columnLock")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnLockEvent) => columnLock(t0).runNow()))
-    if (columnMenu != null) __obj.updateDynamic("columnMenu")(columnMenu.asInstanceOf[js.Any])
-    if (columnMenuInit != null) __obj.updateDynamic("columnMenuInit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnMenuInitEvent) => columnMenuInit(t0).runNow()))
-    if (columnMenuOpen != null) __obj.updateDynamic("columnMenuOpen")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnMenuOpenEvent) => columnMenuOpen(t0).runNow()))
-    if (columnReorder != null) __obj.updateDynamic("columnReorder")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnReorderEvent) => columnReorder(t0).runNow()))
-    if (columnResize != null) __obj.updateDynamic("columnResize")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnResizeEvent) => columnResize(t0).runNow()))
-    if (columnShow != null) __obj.updateDynamic("columnShow")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnShowEvent) => columnShow(t0).runNow()))
-    if (columnUnlock != null) __obj.updateDynamic("columnUnlock")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListColumnUnlockEvent) => columnUnlock(t0).runNow()))
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataBinding != null) __obj.updateDynamic("dataBinding")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDataBindingEvent) => dataBinding(t0).runNow()))
-    if (dataBound != null) __obj.updateDynamic("dataBound")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDataBoundEvent) => dataBound(t0).runNow()))
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (drag != null) __obj.updateDynamic("drag")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDragEvent) => drag(t0).runNow()))
-    if (dragend != null) __obj.updateDynamic("dragend")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDragendEvent) => dragend(t0).runNow()))
-    if (dragstart != null) __obj.updateDynamic("dragstart")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDragstartEvent) => dragstart(t0).runNow()))
-    if (drop != null) __obj.updateDynamic("drop")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListDropEvent) => drop(t0).runNow()))
-    if (edit != null) __obj.updateDynamic("edit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListEditEvent) => edit(t0).runNow()))
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (excel != null) __obj.updateDynamic("excel")(excel.asInstanceOf[js.Any])
-    if (excelExport != null) __obj.updateDynamic("excelExport")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListExcelExportEvent) => excelExport(t0).runNow()))
-    if (expand != null) __obj.updateDynamic("expand")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListExpandEvent) => expand(t0).runNow()))
-    if (filterMenuInit != null) __obj.updateDynamic("filterMenuInit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListFilterMenuInitEvent) => filterMenuInit(t0).runNow()))
-    if (filterMenuOpen != null) __obj.updateDynamic("filterMenuOpen")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListFilterMenuOpenEvent) => filterMenuOpen(t0).runNow()))
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(navigatable)) __obj.updateDynamic("navigatable")(navigatable.asInstanceOf[js.Any])
-    if (pageable != null) __obj.updateDynamic("pageable")(pageable.asInstanceOf[js.Any])
-    if (pdf != null) __obj.updateDynamic("pdf")(pdf.asInstanceOf[js.Any])
-    if (pdfExport != null) __obj.updateDynamic("pdfExport")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListPdfExportEvent) => pdfExport(t0).runNow()))
-    if (remove != null) __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListRemoveEvent) => remove(t0).runNow()))
-    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable.asInstanceOf[js.Any])
-    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable.asInstanceOf[js.Any])
-    if (save != null) __obj.updateDynamic("save")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListSaveEvent) => save(t0).runNow()))
-    if (saveChanges != null) __obj.updateDynamic("saveChanges")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.kendoUi.kendo.ui.TreeListSaveChangesEvent) => saveChanges(t0).runNow()))
-    if (scrollable != null) __obj.updateDynamic("scrollable")(scrollable.asInstanceOf[js.Any])
-    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListOptions]
   }
+  
+  extension [Self <: TreeListOptions](x: Self) {
+    
+    inline def setAltRowTemplate(value: String | js.Function): Self = StObject.set(x, "altRowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAltRowTemplateUndefined: Self = StObject.set(x, "altRowTemplate", js.undefined)
+    
+    inline def setAutoBind(value: Boolean): Self = StObject.set(x, "autoBind", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBindUndefined: Self = StObject.set(x, "autoBind", js.undefined)
+    
+    inline def setBeforeEdit(value: /* e */ TreeListBeforeEditEvent => Callback): Self = StObject.set(x, "beforeEdit", js.Any.fromFunction1((t0: /* e */ TreeListBeforeEditEvent) => value(t0).runNow()))
+    
+    inline def setBeforeEditUndefined: Self = StObject.set(x, "beforeEdit", js.undefined)
+    
+    inline def setCancel(value: /* e */ TreeListCancelEvent => Callback): Self = StObject.set(x, "cancel", js.Any.fromFunction1((t0: /* e */ TreeListCancelEvent) => value(t0).runNow()))
+    
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    
+    inline def setCellClose(value: /* e */ TreeListCellCloseEvent => Callback): Self = StObject.set(x, "cellClose", js.Any.fromFunction1((t0: /* e */ TreeListCellCloseEvent) => value(t0).runNow()))
+    
+    inline def setCellCloseUndefined: Self = StObject.set(x, "cellClose", js.undefined)
+    
+    inline def setChange(value: /* e */ TreeListChangeEvent => Callback): Self = StObject.set(x, "change", js.Any.fromFunction1((t0: /* e */ TreeListChangeEvent) => value(t0).runNow()))
+    
+    inline def setChangeUndefined: Self = StObject.set(x, "change", js.undefined)
+    
+    inline def setCollapse(value: /* e */ TreeListCollapseEvent => Callback): Self = StObject.set(x, "collapse", js.Any.fromFunction1((t0: /* e */ TreeListCollapseEvent) => value(t0).runNow()))
+    
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    
+    inline def setColumnHide(value: /* e */ TreeListColumnHideEvent => Callback): Self = StObject.set(x, "columnHide", js.Any.fromFunction1((t0: /* e */ TreeListColumnHideEvent) => value(t0).runNow()))
+    
+    inline def setColumnHideUndefined: Self = StObject.set(x, "columnHide", js.undefined)
+    
+    inline def setColumnLock(value: /* e */ TreeListColumnLockEvent => Callback): Self = StObject.set(x, "columnLock", js.Any.fromFunction1((t0: /* e */ TreeListColumnLockEvent) => value(t0).runNow()))
+    
+    inline def setColumnLockUndefined: Self = StObject.set(x, "columnLock", js.undefined)
+    
+    inline def setColumnMenu(value: Boolean | TreeListColumnMenu): Self = StObject.set(x, "columnMenu", value.asInstanceOf[js.Any])
+    
+    inline def setColumnMenuInit(value: /* e */ TreeListColumnMenuInitEvent => Callback): Self = StObject.set(x, "columnMenuInit", js.Any.fromFunction1((t0: /* e */ TreeListColumnMenuInitEvent) => value(t0).runNow()))
+    
+    inline def setColumnMenuInitUndefined: Self = StObject.set(x, "columnMenuInit", js.undefined)
+    
+    inline def setColumnMenuOpen(value: /* e */ TreeListColumnMenuOpenEvent => Callback): Self = StObject.set(x, "columnMenuOpen", js.Any.fromFunction1((t0: /* e */ TreeListColumnMenuOpenEvent) => value(t0).runNow()))
+    
+    inline def setColumnMenuOpenUndefined: Self = StObject.set(x, "columnMenuOpen", js.undefined)
+    
+    inline def setColumnMenuUndefined: Self = StObject.set(x, "columnMenu", js.undefined)
+    
+    inline def setColumnReorder(value: /* e */ TreeListColumnReorderEvent => Callback): Self = StObject.set(x, "columnReorder", js.Any.fromFunction1((t0: /* e */ TreeListColumnReorderEvent) => value(t0).runNow()))
+    
+    inline def setColumnReorderUndefined: Self = StObject.set(x, "columnReorder", js.undefined)
+    
+    inline def setColumnResize(value: /* e */ TreeListColumnResizeEvent => Callback): Self = StObject.set(x, "columnResize", js.Any.fromFunction1((t0: /* e */ TreeListColumnResizeEvent) => value(t0).runNow()))
+    
+    inline def setColumnResizeUndefined: Self = StObject.set(x, "columnResize", js.undefined)
+    
+    inline def setColumnShow(value: /* e */ TreeListColumnShowEvent => Callback): Self = StObject.set(x, "columnShow", js.Any.fromFunction1((t0: /* e */ TreeListColumnShowEvent) => value(t0).runNow()))
+    
+    inline def setColumnShowUndefined: Self = StObject.set(x, "columnShow", js.undefined)
+    
+    inline def setColumnUnlock(value: /* e */ TreeListColumnUnlockEvent => Callback): Self = StObject.set(x, "columnUnlock", js.Any.fromFunction1((t0: /* e */ TreeListColumnUnlockEvent) => value(t0).runNow()))
+    
+    inline def setColumnUnlockUndefined: Self = StObject.set(x, "columnUnlock", js.undefined)
+    
+    inline def setColumns(value: js.Array[TreeListColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: TreeListColumn*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setDataBinding(value: /* e */ TreeListDataBindingEvent => Callback): Self = StObject.set(x, "dataBinding", js.Any.fromFunction1((t0: /* e */ TreeListDataBindingEvent) => value(t0).runNow()))
+    
+    inline def setDataBindingUndefined: Self = StObject.set(x, "dataBinding", js.undefined)
+    
+    inline def setDataBound(value: /* e */ TreeListDataBoundEvent => Callback): Self = StObject.set(x, "dataBound", js.Any.fromFunction1((t0: /* e */ TreeListDataBoundEvent) => value(t0).runNow()))
+    
+    inline def setDataBoundUndefined: Self = StObject.set(x, "dataBound", js.undefined)
+    
+    inline def setDataSource(value: Any | TreeListDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDrag(value: /* e */ TreeListDragEvent => Callback): Self = StObject.set(x, "drag", js.Any.fromFunction1((t0: /* e */ TreeListDragEvent) => value(t0).runNow()))
+    
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    
+    inline def setDragend(value: /* e */ TreeListDragendEvent => Callback): Self = StObject.set(x, "dragend", js.Any.fromFunction1((t0: /* e */ TreeListDragendEvent) => value(t0).runNow()))
+    
+    inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+    
+    inline def setDragstart(value: /* e */ TreeListDragstartEvent => Callback): Self = StObject.set(x, "dragstart", js.Any.fromFunction1((t0: /* e */ TreeListDragstartEvent) => value(t0).runNow()))
+    
+    inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+    
+    inline def setDrop(value: /* e */ TreeListDropEvent => Callback): Self = StObject.set(x, "drop", js.Any.fromFunction1((t0: /* e */ TreeListDropEvent) => value(t0).runNow()))
+    
+    inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+    
+    inline def setEdit(value: /* e */ TreeListEditEvent => Callback): Self = StObject.set(x, "edit", js.Any.fromFunction1((t0: /* e */ TreeListEditEvent) => value(t0).runNow()))
+    
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    
+    inline def setEditable(value: Boolean | TreeListEditable): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setExcel(value: TreeListExcel): Self = StObject.set(x, "excel", value.asInstanceOf[js.Any])
+    
+    inline def setExcelExport(value: /* e */ TreeListExcelExportEvent => Callback): Self = StObject.set(x, "excelExport", js.Any.fromFunction1((t0: /* e */ TreeListExcelExportEvent) => value(t0).runNow()))
+    
+    inline def setExcelExportUndefined: Self = StObject.set(x, "excelExport", js.undefined)
+    
+    inline def setExcelUndefined: Self = StObject.set(x, "excel", js.undefined)
+    
+    inline def setExpand(value: /* e */ TreeListExpandEvent => Callback): Self = StObject.set(x, "expand", js.Any.fromFunction1((t0: /* e */ TreeListExpandEvent) => value(t0).runNow()))
+    
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    
+    inline def setFilterMenuInit(value: /* e */ TreeListFilterMenuInitEvent => Callback): Self = StObject.set(x, "filterMenuInit", js.Any.fromFunction1((t0: /* e */ TreeListFilterMenuInitEvent) => value(t0).runNow()))
+    
+    inline def setFilterMenuInitUndefined: Self = StObject.set(x, "filterMenuInit", js.undefined)
+    
+    inline def setFilterMenuOpen(value: /* e */ TreeListFilterMenuOpenEvent => Callback): Self = StObject.set(x, "filterMenuOpen", js.Any.fromFunction1((t0: /* e */ TreeListFilterMenuOpenEvent) => value(t0).runNow()))
+    
+    inline def setFilterMenuOpenUndefined: Self = StObject.set(x, "filterMenuOpen", js.undefined)
+    
+    inline def setFilterable(value: Boolean | TreeListFilterable): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMessages(value: TreeListMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNavigatable(value: Boolean): Self = StObject.set(x, "navigatable", value.asInstanceOf[js.Any])
+    
+    inline def setNavigatableUndefined: Self = StObject.set(x, "navigatable", js.undefined)
+    
+    inline def setPageable(value: Boolean | TreeListPageable): Self = StObject.set(x, "pageable", value.asInstanceOf[js.Any])
+    
+    inline def setPageableUndefined: Self = StObject.set(x, "pageable", js.undefined)
+    
+    inline def setPdf(value: TreeListPdf): Self = StObject.set(x, "pdf", value.asInstanceOf[js.Any])
+    
+    inline def setPdfExport(value: /* e */ TreeListPdfExportEvent => Callback): Self = StObject.set(x, "pdfExport", js.Any.fromFunction1((t0: /* e */ TreeListPdfExportEvent) => value(t0).runNow()))
+    
+    inline def setPdfExportUndefined: Self = StObject.set(x, "pdfExport", js.undefined)
+    
+    inline def setPdfUndefined: Self = StObject.set(x, "pdf", js.undefined)
+    
+    inline def setRemove(value: /* e */ TreeListRemoveEvent => Callback): Self = StObject.set(x, "remove", js.Any.fromFunction1((t0: /* e */ TreeListRemoveEvent) => value(t0).runNow()))
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setReorderable(value: Boolean): Self = StObject.set(x, "reorderable", value.asInstanceOf[js.Any])
+    
+    inline def setReorderableUndefined: Self = StObject.set(x, "reorderable", js.undefined)
+    
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    
+    inline def setResizableUndefined: Self = StObject.set(x, "resizable", js.undefined)
+    
+    inline def setRowTemplate(value: String | js.Function): Self = StObject.set(x, "rowTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setRowTemplateUndefined: Self = StObject.set(x, "rowTemplate", js.undefined)
+    
+    inline def setSave(value: /* e */ TreeListSaveEvent => Callback): Self = StObject.set(x, "save", js.Any.fromFunction1((t0: /* e */ TreeListSaveEvent) => value(t0).runNow()))
+    
+    inline def setSaveChanges(value: /* e */ TreeListSaveChangesEvent => Callback): Self = StObject.set(x, "saveChanges", js.Any.fromFunction1((t0: /* e */ TreeListSaveChangesEvent) => value(t0).runNow()))
+    
+    inline def setSaveChangesUndefined: Self = StObject.set(x, "saveChanges", js.undefined)
+    
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    
+    inline def setScrollable(value: Boolean | Any): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    
+    inline def setSearch(value: TreeListSearch): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setSelectable(value: Boolean | String): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setSortable(value: Boolean | TreeListSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    
+    inline def setToolbar(value: js.Array[TreeListToolbarItem] | Any): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    
+    inline def setToolbarVarargs(value: TreeListToolbarItem*): Self = StObject.set(x, "toolbar", js.Array(value*))
+  }
 }
-

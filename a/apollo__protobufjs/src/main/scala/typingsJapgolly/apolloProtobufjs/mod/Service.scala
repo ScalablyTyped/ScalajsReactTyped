@@ -1,13 +1,13 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs", "Service")
 @js.native
-class Service protected () extends NamespaceBase {
+open class Service protected () extends NamespaceBase {
   /**
     * Constructs a new service instance.
     * @param name Service name
@@ -15,11 +15,8 @@ class Service protected () extends NamespaceBase {
     * @throws {TypeError} If arguments are invalid
     */
   def this(name: String) = this()
-  def this(name: String, options: StringDictionary[js.Any]) = this()
-  /** Service methods. */
-  var methods: StringDictionary[Method] = js.native
-  /** Methods of this service as an array for iteration. */
-  val methodsArray: js.Array[Method] = js.native
+  def this(name: String, options: StringDictionary[Any]) = this()
+  
   /**
     * Creates a runtime service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -30,12 +27,21 @@ class Service protected () extends NamespaceBase {
   def create(rpcImpl: RPCImpl): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
   def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): typingsJapgolly.apolloProtobufjs.mod.rpc.Service = js.native
+  
+  /** Service methods. */
+  var methods: StringDictionary[Method] = js.native
+  
+  /** Methods of this service as an array for iteration. */
+  val methodsArray: js.Array[Method] = js.native
 }
-
 /* static members */
-@JSImport("@apollo/protobufjs", "Service")
-@js.native
-object Service extends js.Object {
+object Service {
+  
+  @JSImport("@apollo/protobufjs", "Service")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Constructs a service from a service descriptor.
     * @param name Service name
@@ -43,6 +49,5 @@ object Service extends js.Object {
     * @returns Created service
     * @throws {TypeError} If arguments are invalid
     */
-  def fromJSON(name: String, json: IService): Service = js.native
+  inline def fromJSON(name: String, json: IService): Service = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Service]
 }
-

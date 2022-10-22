@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@wdio/utils" : "7.25.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@wdio/utils" : "7.25.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

@@ -1,40 +1,46 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditableItem extends Object {
+trait EditableItem
+  extends StObject
+     with Object {
+  
   /**
     * *Read-only* The feature layer associated with the editable item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#EditableItem)
     */
   var layer: FeatureLayer
+  
   /**
-    * *Read-only* The workflow type that this item supports. Can be either, `update` or `create`.
+    * *Read-only* The workflow type that this item supports.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#EditableItem)
     */
   var supports: String
 }
-
 object EditableItem {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    propertyIsEnumerable: PropertyKey => Boolean,
     supports: String
   ): EditableItem = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], supports = supports.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), supports = supports.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditableItem]
   }
+  
+  extension [Self <: EditableItem](x: Self) {
+    
+    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSupports(value: String): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+  }
 }
-

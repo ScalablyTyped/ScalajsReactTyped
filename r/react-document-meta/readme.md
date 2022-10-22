@@ -10,10 +10,10 @@ Declarative, nested and stateful HTML document meta tags for React
 | ------------------ | :-------------: |
 | Full name          | react-document-meta |
 | Keywords           | react, meta, html, document, tags, react-component |
-| # releases         | 5 |
-| # dependents       | 20 |
-| # downloads        | 278512 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 19162.666666666668 |
+| # stars            | 320.0 |
 
 ## Links
 - [Homepage](https://github.com/kodyl/react-document-meta#readme)

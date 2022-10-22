@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Orientation extends js.Object
-
+sealed trait Orientation extends StObject
 /**
   * An enumeration of the orientation of an object.
   */
 @JSGlobal("GoogleAppsScript.Charts.Orientation")
 @js.native
-object Orientation extends js.Object {
-  @js.native
-  sealed trait HORIZONTAL extends Orientation
+object Orientation extends StObject {
   
   @js.native
-  sealed trait VERTICAL extends Orientation
+  sealed trait HORIZONTAL
+    extends StObject
+       with Orientation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
-  /* 0 */ @js.native
-  object HORIZONTAL extends TopLevel[HORIZONTAL with Double]
-  
-  /* 1 */ @js.native
-  object VERTICAL extends TopLevel[VERTICAL with Double]
-  
+  @js.native
+  sealed trait VERTICAL
+    extends StObject
+       with Orientation
 }
-

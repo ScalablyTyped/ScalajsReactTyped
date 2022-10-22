@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`-4107`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4108`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4117`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4130`
-import typingsJapgolly.activexWord.activexWordNumbers.`-4160`
+import typingsJapgolly.activexWord.activexWordInts.`-4107`
+import typingsJapgolly.activexWord.activexWordInts.`-4108`
+import typingsJapgolly.activexWord.activexWordInts.`-4117`
+import typingsJapgolly.activexWord.activexWordInts.`-4130`
+import typingsJapgolly.activexWord.activexWordInts.`-4160`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4107`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4108`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4117`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4130`
-  - typingsJapgolly.activexWord.activexWordNumbers.`-4160`
+  - typingsJapgolly.activexWord.activexWordInts.`-4107`
+  - typingsJapgolly.activexWord.activexWordInts.`-4108`
+  - typingsJapgolly.activexWord.activexWordInts.`-4117`
+  - typingsJapgolly.activexWord.activexWordInts.`-4130`
+  - typingsJapgolly.activexWord.activexWordInts.`-4160`
 */
-trait XlVAlign extends js.Object
-
+trait XlVAlign extends StObject
 object XlVAlign {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlVAlignBottom: `-4107` = this.cast(-4107)
-  @scala.inline
-  def xlVAlignCenter: `-4108` = this.cast(-4108)
-  @scala.inline
-  def xlVAlignDistributed: `-4117` = this.cast(-4117)
-  @scala.inline
-  def xlVAlignJustify: `-4130` = this.cast(-4130)
-  @scala.inline
-  def xlVAlignTop: `-4160` = this.cast(-4160)
+  
+  inline def xlVAlignBottom: `-4107` = -4107.asInstanceOf[`-4107`]
+  
+  inline def xlVAlignCenter: `-4108` = -4108.asInstanceOf[`-4108`]
+  
+  inline def xlVAlignDistributed: `-4117` = -4117.asInstanceOf[`-4117`]
+  
+  inline def xlVAlignJustify: `-4130` = -4130.asInstanceOf[`-4130`]
+  
+  inline def xlVAlignTop: `-4160` = -4160.asInstanceOf[`-4160`]
 }
-

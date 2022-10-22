@@ -1,9 +1,11 @@
 package typingsJapgolly.chromeApps.chrome.runtime
 
+import typingsJapgolly.chromeApps.chromeAppsStrings.audio_
+import typingsJapgolly.chromeApps.chromeAppsStrings.background_
 import typingsJapgolly.chromeApps.chromeAppsStrings.usb_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Optional permissions
@@ -11,197 +13,193 @@ import scala.scalajs.js.annotation._
   */
 /* Inlined std.Exclude<chrome-apps.chrome.runtime.Permission, chrome-apps.chrome.runtime.NotAllowedAsOptionalPermissions> */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.chromeApps.chromeAppsStrings.browser
-  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape
-  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen
-  - typingsJapgolly.chromeApps.chromeAppsStrings.alarms
-  - typingsJapgolly.chromeApps.chromeAppsStrings.contextMenus
-  - typingsJapgolly.chromeApps.chromeAppsStrings.audio
-  - typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashAsteriskSlashAsterisk
-  - typingsJapgolly.chromeApps.chromeAppsStrings.gcm
-  - typingsJapgolly.chromeApps.chromeAppsStrings.idle
-  - typingsJapgolly.chromeApps.chromeAppsStrings.chromeColonSlashSlashfaviconSlash
-  - typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotdeviceAttributes
-  - typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotplatformKeys
-  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotnetwork
-  - typingsJapgolly.chromeApps.chromeAppsStrings.platformKeys
-  - typingsJapgolly.chromeApps.chromeAppsStrings.background
-  - typingsJapgolly.chromeApps.chromeAppsStrings.dns
-  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotpowerSource
-  - typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk
-  - typingsJapgolly.chromeApps.chromeAppsStrings.webview
-  - typingsJapgolly.chromeApps.chromeAppsStrings.unlimitedStorage
-  - typingsJapgolly.chromeApps.chromeAppsStrings.httpColonSlashSlashAsteriskSlashAsterisk
-  - typingsJapgolly.chromeApps.chromeAppsStrings.syncFileSystem
-  - typingsJapgolly.chromeApps.chromeAppsStrings.usbDevices
-  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotdisplay
-  - typingsJapgolly.chromeApps.chromeAppsStrings.fileColonSlashSlashSlashAsteriskSlashAsterisk
-  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop
-  - typingsJapgolly.chromeApps.chromeAppsStrings.serial
-  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotcpu
-  - typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotconfig
-  - typingsJapgolly.chromeApps.chromeAppsStrings.videoCapture
-  - typingsJapgolly.chromeApps.chromeAppsStrings.appview
-  - typingsJapgolly.chromeApps.chromeAppsStrings.nativeMessaging
-  - typingsJapgolly.chromeApps.chromeAppsStrings.`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`
-  - typingsJapgolly.chromeApps.chromeAppsStrings.mediaGalleries
-  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite
-  - typingsJapgolly.chromeApps.chromeAppsStrings.printerProvider
-  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboard
-  - typingsJapgolly.chromeApps.chromeAppsStrings.desktopCapture
-  - typingsJapgolly.chromeApps.chromeAppsStrings.fileSystemProvider
-  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead
-  - typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotonc
   - typingsJapgolly.chromeApps.chromeAppsStrings.pointerLock
-  - typingsJapgolly.chromeApps.chromeAppsStrings.usb_
-  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc
-  - typingsJapgolly.chromeApps.chromeAppsStrings.storage
-  - typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows
-  - typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture
+  - typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk
+  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead
   - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotstorage
-  - typingsJapgolly.chromeApps.chromeAppsStrings.fileBrowserHandler
-  - typingsJapgolly.chromeApps.chromeAppsStrings.power
-  - typingsJapgolly.chromeApps.chromeAppsStrings.vpnProvider
-  - typingsJapgolly.chromeApps.chromeAppsStrings.Lessthansignall_urlsGreaterthansign
-  - typingsJapgolly.chromeApps.chromeAppsStrings.virtualKeyboard
-  - typingsJapgolly.chromeApps.chromeAppsStrings.socket
-  - typingsJapgolly.chromeApps.chromeAppsStrings.documentScan
-  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotmemory
-  - typingsJapgolly.chromeApps.chromeAppsStrings.identity
-  - typingsJapgolly.chromeApps.chromeAppsStrings.certificateProvider
-  - typingsJapgolly.chromeApps.chromeAppsStrings.notifications
-  - typingsJapgolly.chromeApps.chromeAppsStrings.fileSystem
-  - typingsJapgolly.chromeApps.chromeAppsStrings.runtime
+  - typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotdeviceAttributes
+  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite
+  - typingsJapgolly.chromeApps.chromeAppsStrings.httpColonSlashSlashAsteriskSlashAsterisk
+  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotnetwork
+  - typingsJapgolly.chromeApps.chromeAppsStrings.background_
+  - typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows
+  - typingsJapgolly.chromeApps.chromeAppsStrings.webview
   - typingsJapgolly.chromeApps.chromeAppsStrings.hid
+  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen
+  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotdisplay
+  - typingsJapgolly.chromeApps.chromeAppsStrings.browser
+  - typingsJapgolly.chromeApps.chromeAppsStrings.mediaGalleries
+  - typingsJapgolly.chromeApps.chromeAppsStrings.alarms
+  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape
+  - typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotconfig
+  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotmemory
+  - typingsJapgolly.chromeApps.chromeAppsStrings.`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`
+  - typingsJapgolly.chromeApps.chromeAppsStrings.idle
+  - typingsJapgolly.chromeApps.chromeAppsStrings.vpnProvider
+  - typingsJapgolly.chromeApps.chromeAppsStrings.fileColonSlashSlashSlashAsteriskSlashAsterisk
+  - typingsJapgolly.chromeApps.chromeAppsStrings.documentScan
+  - typingsJapgolly.chromeApps.chromeAppsStrings.power
+  - typingsJapgolly.chromeApps.chromeAppsStrings.dns
+  - typingsJapgolly.chromeApps.chromeAppsStrings.fileSystem
+  - typingsJapgolly.chromeApps.chromeAppsStrings.unlimitedStorage
+  - typingsJapgolly.chromeApps.chromeAppsStrings.Lessthansignall_urlsGreaterthansign
+  - typingsJapgolly.chromeApps.chromeAppsStrings.notifications
+  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc
+  - typingsJapgolly.chromeApps.chromeAppsStrings.certificateProvider
+  - typingsJapgolly.chromeApps.chromeAppsStrings.usbDevices
+  - typingsJapgolly.chromeApps.chromeAppsStrings.fileBrowserHandler
+  - typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture
+  - typingsJapgolly.chromeApps.chromeAppsStrings.videoCapture
+  - typingsJapgolly.chromeApps.chromeAppsStrings.nativeMessaging
+  - typingsJapgolly.chromeApps.chromeAppsStrings.fileSystemProvider
+  - typingsJapgolly.chromeApps.chromeAppsStrings.socket
+  - typingsJapgolly.chromeApps.chromeAppsStrings.gcm
+  - typingsJapgolly.chromeApps.chromeAppsStrings.desktopCapture
+  - typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotonc
+  - typingsJapgolly.chromeApps.chromeAppsStrings.usb_
+  - typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashAsteriskSlashAsterisk
+  - typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop
+  - typingsJapgolly.chromeApps.chromeAppsStrings.virtualKeyboard
+  - typingsJapgolly.chromeApps.chromeAppsStrings.runtime
+  - typingsJapgolly.chromeApps.chromeAppsStrings.audio_
+  - typingsJapgolly.chromeApps.chromeAppsStrings.clipboard
+  - typingsJapgolly.chromeApps.chromeAppsStrings.platformKeys
+  - typingsJapgolly.chromeApps.chromeAppsStrings.contextMenus
+  - typingsJapgolly.chromeApps.chromeAppsStrings.chromeColonSlashSlashfaviconSlash
+  - typingsJapgolly.chromeApps.chromeAppsStrings.storage
+  - typingsJapgolly.chromeApps.chromeAppsStrings.printerProvider
+  - typingsJapgolly.chromeApps.chromeAppsStrings.appview
+  - typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotplatformKeys
+  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotpowerSource
+  - typingsJapgolly.chromeApps.chromeAppsStrings.systemDotcpu
+  - typingsJapgolly.chromeApps.chromeAppsStrings.syncFileSystem
+  - typingsJapgolly.chromeApps.chromeAppsStrings.serial
+  - typingsJapgolly.chromeApps.chromeAppsStrings.identity
 */
-trait OptionalPermission extends js.Object
-
+trait OptionalPermission extends StObject
 object OptionalPermission {
-  @scala.inline
-  def Lessthansignall_urlsGreaterthansign: typingsJapgolly.chromeApps.chromeAppsStrings.Lessthansignall_urlsGreaterthansign = this.cast("<all_urls>")
-  @scala.inline
-  def alarms: typingsJapgolly.chromeApps.chromeAppsStrings.alarms = this.cast("alarms")
-  @scala.inline
-  def alwaysOnTopWindows: typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows = this.cast("alwaysOnTopWindows")
-  @scala.inline
-  def appDotwindowDotalwaysOnTop: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop = this.cast("app.window.alwaysOnTop")
-  @scala.inline
-  def appDotwindowDotfullscreen: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen = this.cast("app.window.fullscreen")
-  @scala.inline
-  def appDotwindowDotfullscreenDotoverrideEsc: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc = this.cast("app.window.fullscreen.overrideEsc")
-  @scala.inline
-  def appDotwindowDotshape: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape = this.cast("app.window.shape")
-  @scala.inline
-  def appview: typingsJapgolly.chromeApps.chromeAppsStrings.appview = this.cast("appview")
-  @scala.inline
-  def audio: typingsJapgolly.chromeApps.chromeAppsStrings.audio = this.cast("audio")
-  @scala.inline
-  def audioCapture: typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture = this.cast("audioCapture")
-  @scala.inline
-  def background: typingsJapgolly.chromeApps.chromeAppsStrings.background = this.cast("background")
-  @scala.inline
-  def browser: typingsJapgolly.chromeApps.chromeAppsStrings.browser = this.cast("browser")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def certificateProvider: typingsJapgolly.chromeApps.chromeAppsStrings.certificateProvider = this.cast("certificateProvider")
-  @scala.inline
-  def chromeColonSlashSlashfaviconSlash: typingsJapgolly.chromeApps.chromeAppsStrings.chromeColonSlashSlashfaviconSlash = this.cast("chrome://favicon/")
-  @scala.inline
-  def clipboard: typingsJapgolly.chromeApps.chromeAppsStrings.clipboard = this.cast("clipboard")
-  @scala.inline
-  def clipboardRead: typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead = this.cast("clipboardRead")
-  @scala.inline
-  def clipboardWrite: typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite = this.cast("clipboardWrite")
-  @scala.inline
-  def contextMenus: typingsJapgolly.chromeApps.chromeAppsStrings.contextMenus = this.cast("contextMenus")
-  @scala.inline
-  def desktopCapture: typingsJapgolly.chromeApps.chromeAppsStrings.desktopCapture = this.cast("desktopCapture")
-  @scala.inline
-  def dns: typingsJapgolly.chromeApps.chromeAppsStrings.dns = this.cast("dns")
-  @scala.inline
-  def documentScan: typingsJapgolly.chromeApps.chromeAppsStrings.documentScan = this.cast("documentScan")
-  @scala.inline
-  def enterpriseDotdeviceAttributes: typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotdeviceAttributes = this.cast("enterprise.deviceAttributes")
-  @scala.inline
-  def enterpriseDotplatformKeys: typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotplatformKeys = this.cast("enterprise.platformKeys")
-  @scala.inline
-  def fileBrowserHandler: typingsJapgolly.chromeApps.chromeAppsStrings.fileBrowserHandler = this.cast("fileBrowserHandler")
-  @scala.inline
-  def fileColonSlashSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.fileColonSlashSlashSlashAsteriskSlashAsterisk = this.cast("file:///*/*")
-  @scala.inline
-  def fileSystem: typingsJapgolly.chromeApps.chromeAppsStrings.fileSystem = this.cast("fileSystem")
-  @scala.inline
-  def fileSystemProvider: typingsJapgolly.chromeApps.chromeAppsStrings.fileSystemProvider = this.cast("fileSystemProvider")
-  @scala.inline
-  def gcm: typingsJapgolly.chromeApps.chromeAppsStrings.gcm = this.cast("gcm")
-  @scala.inline
-  def hid: typingsJapgolly.chromeApps.chromeAppsStrings.hid = this.cast("hid")
-  @scala.inline
-  def httpColonSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpColonSlashSlashAsteriskSlashAsterisk = this.cast("http://*/*")
-  @scala.inline
-  def httpsColonSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashAsteriskSlashAsterisk = this.cast("https://*/*")
-  @scala.inline
-  def `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`: typingsJapgolly.chromeApps.chromeAppsStrings.`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk` = this.cast("https://www.google-analytics.com/*")
-  @scala.inline
-  def httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk = this.cast("https://www.googleapis.com/*")
-  @scala.inline
-  def identity: typingsJapgolly.chromeApps.chromeAppsStrings.identity = this.cast("identity")
-  @scala.inline
-  def idle: typingsJapgolly.chromeApps.chromeAppsStrings.idle = this.cast("idle")
-  @scala.inline
-  def mediaGalleries: typingsJapgolly.chromeApps.chromeAppsStrings.mediaGalleries = this.cast("mediaGalleries")
-  @scala.inline
-  def nativeMessaging: typingsJapgolly.chromeApps.chromeAppsStrings.nativeMessaging = this.cast("nativeMessaging")
-  @scala.inline
-  def networkingDotconfig: typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotconfig = this.cast("networking.config")
-  @scala.inline
-  def networkingDotonc: typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotonc = this.cast("networking.onc")
-  @scala.inline
-  def notifications: typingsJapgolly.chromeApps.chromeAppsStrings.notifications = this.cast("notifications")
-  @scala.inline
-  def platformKeys: typingsJapgolly.chromeApps.chromeAppsStrings.platformKeys = this.cast("platformKeys")
-  @scala.inline
-  def pointerLock: typingsJapgolly.chromeApps.chromeAppsStrings.pointerLock = this.cast("pointerLock")
-  @scala.inline
-  def power: typingsJapgolly.chromeApps.chromeAppsStrings.power = this.cast("power")
-  @scala.inline
-  def printerProvider: typingsJapgolly.chromeApps.chromeAppsStrings.printerProvider = this.cast("printerProvider")
-  @scala.inline
-  def runtime: typingsJapgolly.chromeApps.chromeAppsStrings.runtime = this.cast("runtime")
-  @scala.inline
-  def serial: typingsJapgolly.chromeApps.chromeAppsStrings.serial = this.cast("serial")
-  @scala.inline
-  def socket: typingsJapgolly.chromeApps.chromeAppsStrings.socket = this.cast("socket")
-  @scala.inline
-  def storage: typingsJapgolly.chromeApps.chromeAppsStrings.storage = this.cast("storage")
-  @scala.inline
-  def syncFileSystem: typingsJapgolly.chromeApps.chromeAppsStrings.syncFileSystem = this.cast("syncFileSystem")
-  @scala.inline
-  def systemDotcpu: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotcpu = this.cast("system.cpu")
-  @scala.inline
-  def systemDotdisplay: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotdisplay = this.cast("system.display")
-  @scala.inline
-  def systemDotmemory: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotmemory = this.cast("system.memory")
-  @scala.inline
-  def systemDotnetwork: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotnetwork = this.cast("system.network")
-  @scala.inline
-  def systemDotpowerSource: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotpowerSource = this.cast("system.powerSource")
-  @scala.inline
-  def systemDotstorage: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotstorage = this.cast("system.storage")
-  @scala.inline
-  def unlimitedStorage: typingsJapgolly.chromeApps.chromeAppsStrings.unlimitedStorage = this.cast("unlimitedStorage")
-  @scala.inline
-  def usb: usb_ = this.cast("usb")
-  @scala.inline
-  def usbDevices: typingsJapgolly.chromeApps.chromeAppsStrings.usbDevices = this.cast("usbDevices")
-  @scala.inline
-  def videoCapture: typingsJapgolly.chromeApps.chromeAppsStrings.videoCapture = this.cast("videoCapture")
-  @scala.inline
-  def virtualKeyboard: typingsJapgolly.chromeApps.chromeAppsStrings.virtualKeyboard = this.cast("virtualKeyboard")
-  @scala.inline
-  def vpnProvider: typingsJapgolly.chromeApps.chromeAppsStrings.vpnProvider = this.cast("vpnProvider")
-  @scala.inline
-  def webview: typingsJapgolly.chromeApps.chromeAppsStrings.webview = this.cast("webview")
+  
+  inline def Lessthansignall_urlsGreaterthansign: typingsJapgolly.chromeApps.chromeAppsStrings.Lessthansignall_urlsGreaterthansign = "<all_urls>".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Lessthansignall_urlsGreaterthansign]
+  
+  inline def alarms: typingsJapgolly.chromeApps.chromeAppsStrings.alarms = "alarms".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.alarms]
+  
+  inline def alwaysOnTopWindows: typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows = "alwaysOnTopWindows".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.alwaysOnTopWindows]
+  
+  inline def appDotwindowDotalwaysOnTop: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop = "app.window.alwaysOnTop".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotalwaysOnTop]
+  
+  inline def appDotwindowDotfullscreen: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen = "app.window.fullscreen".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreen]
+  
+  inline def appDotwindowDotfullscreenDotoverrideEsc: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc = "app.window.fullscreen.overrideEsc".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotfullscreenDotoverrideEsc]
+  
+  inline def appDotwindowDotshape: typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape = "app.window.shape".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appDotwindowDotshape]
+  
+  inline def appview: typingsJapgolly.chromeApps.chromeAppsStrings.appview = "appview".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.appview]
+  
+  inline def audio: audio_ = "audio".asInstanceOf[audio_]
+  
+  inline def audioCapture: typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture = "audioCapture".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.audioCapture]
+  
+  inline def background: background_ = "background".asInstanceOf[background_]
+  
+  inline def browser: typingsJapgolly.chromeApps.chromeAppsStrings.browser = "browser".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.browser]
+  
+  inline def certificateProvider: typingsJapgolly.chromeApps.chromeAppsStrings.certificateProvider = "certificateProvider".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.certificateProvider]
+  
+  inline def chromeColonSlashSlashfaviconSlash: typingsJapgolly.chromeApps.chromeAppsStrings.chromeColonSlashSlashfaviconSlash = "chrome://favicon/".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.chromeColonSlashSlashfaviconSlash]
+  
+  inline def clipboard: typingsJapgolly.chromeApps.chromeAppsStrings.clipboard = "clipboard".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.clipboard]
+  
+  inline def clipboardRead: typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead = "clipboardRead".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.clipboardRead]
+  
+  inline def clipboardWrite: typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite = "clipboardWrite".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.clipboardWrite]
+  
+  inline def contextMenus: typingsJapgolly.chromeApps.chromeAppsStrings.contextMenus = "contextMenus".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.contextMenus]
+  
+  inline def desktopCapture: typingsJapgolly.chromeApps.chromeAppsStrings.desktopCapture = "desktopCapture".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.desktopCapture]
+  
+  inline def dns: typingsJapgolly.chromeApps.chromeAppsStrings.dns = "dns".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.dns]
+  
+  inline def documentScan: typingsJapgolly.chromeApps.chromeAppsStrings.documentScan = "documentScan".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.documentScan]
+  
+  inline def enterpriseDotdeviceAttributes: typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotdeviceAttributes = "enterprise.deviceAttributes".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotdeviceAttributes]
+  
+  inline def enterpriseDotplatformKeys: typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotplatformKeys = "enterprise.platformKeys".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.enterpriseDotplatformKeys]
+  
+  inline def fileBrowserHandler: typingsJapgolly.chromeApps.chromeAppsStrings.fileBrowserHandler = "fileBrowserHandler".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.fileBrowserHandler]
+  
+  inline def fileColonSlashSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.fileColonSlashSlashSlashAsteriskSlashAsterisk = "file:///*/*".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.fileColonSlashSlashSlashAsteriskSlashAsterisk]
+  
+  inline def fileSystem: typingsJapgolly.chromeApps.chromeAppsStrings.fileSystem = "fileSystem".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.fileSystem]
+  
+  inline def fileSystemProvider: typingsJapgolly.chromeApps.chromeAppsStrings.fileSystemProvider = "fileSystemProvider".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.fileSystemProvider]
+  
+  inline def gcm: typingsJapgolly.chromeApps.chromeAppsStrings.gcm = "gcm".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.gcm]
+  
+  inline def hid: typingsJapgolly.chromeApps.chromeAppsStrings.hid = "hid".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.hid]
+  
+  inline def httpColonSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpColonSlashSlashAsteriskSlashAsterisk = "http://*/*".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.httpColonSlashSlashAsteriskSlashAsterisk]
+  
+  inline def httpsColonSlashSlashAsteriskSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashAsteriskSlashAsterisk = "https://*/*".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashAsteriskSlashAsterisk]
+  
+  inline def `httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`: typingsJapgolly.chromeApps.chromeAppsStrings.`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk` = "https://www.google-analytics.com/*".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.`httpsColonSlashSlashwwwDotgoogle-analyticsDotcomSlashAsterisk`]
+  
+  inline def httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk: typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk = "https://www.googleapis.com/*".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.httpsColonSlashSlashwwwDotgoogleapisDotcomSlashAsterisk]
+  
+  inline def identity: typingsJapgolly.chromeApps.chromeAppsStrings.identity = "identity".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.identity]
+  
+  inline def idle: typingsJapgolly.chromeApps.chromeAppsStrings.idle = "idle".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.idle]
+  
+  inline def mediaGalleries: typingsJapgolly.chromeApps.chromeAppsStrings.mediaGalleries = "mediaGalleries".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.mediaGalleries]
+  
+  inline def nativeMessaging: typingsJapgolly.chromeApps.chromeAppsStrings.nativeMessaging = "nativeMessaging".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.nativeMessaging]
+  
+  inline def networkingDotconfig: typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotconfig = "networking.config".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotconfig]
+  
+  inline def networkingDotonc: typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotonc = "networking.onc".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.networkingDotonc]
+  
+  inline def notifications: typingsJapgolly.chromeApps.chromeAppsStrings.notifications = "notifications".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.notifications]
+  
+  inline def platformKeys: typingsJapgolly.chromeApps.chromeAppsStrings.platformKeys = "platformKeys".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.platformKeys]
+  
+  inline def pointerLock: typingsJapgolly.chromeApps.chromeAppsStrings.pointerLock = "pointerLock".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.pointerLock]
+  
+  inline def power: typingsJapgolly.chromeApps.chromeAppsStrings.power = "power".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.power]
+  
+  inline def printerProvider: typingsJapgolly.chromeApps.chromeAppsStrings.printerProvider = "printerProvider".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.printerProvider]
+  
+  inline def runtime: typingsJapgolly.chromeApps.chromeAppsStrings.runtime = "runtime".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.runtime]
+  
+  inline def serial: typingsJapgolly.chromeApps.chromeAppsStrings.serial = "serial".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.serial]
+  
+  inline def socket: typingsJapgolly.chromeApps.chromeAppsStrings.socket = "socket".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.socket]
+  
+  inline def storage: typingsJapgolly.chromeApps.chromeAppsStrings.storage = "storage".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.storage]
+  
+  inline def syncFileSystem: typingsJapgolly.chromeApps.chromeAppsStrings.syncFileSystem = "syncFileSystem".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.syncFileSystem]
+  
+  inline def systemDotcpu: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotcpu = "system.cpu".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotcpu]
+  
+  inline def systemDotdisplay: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotdisplay = "system.display".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotdisplay]
+  
+  inline def systemDotmemory: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotmemory = "system.memory".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotmemory]
+  
+  inline def systemDotnetwork: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotnetwork = "system.network".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotnetwork]
+  
+  inline def systemDotpowerSource: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotpowerSource = "system.powerSource".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotpowerSource]
+  
+  inline def systemDotstorage: typingsJapgolly.chromeApps.chromeAppsStrings.systemDotstorage = "system.storage".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.systemDotstorage]
+  
+  inline def unlimitedStorage: typingsJapgolly.chromeApps.chromeAppsStrings.unlimitedStorage = "unlimitedStorage".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.unlimitedStorage]
+  
+  inline def usb: usb_ = "usb".asInstanceOf[usb_]
+  
+  inline def usbDevices: typingsJapgolly.chromeApps.chromeAppsStrings.usbDevices = "usbDevices".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.usbDevices]
+  
+  inline def videoCapture: typingsJapgolly.chromeApps.chromeAppsStrings.videoCapture = "videoCapture".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.videoCapture]
+  
+  inline def virtualKeyboard: typingsJapgolly.chromeApps.chromeAppsStrings.virtualKeyboard = "virtualKeyboard".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.virtualKeyboard]
+  
+  inline def vpnProvider: typingsJapgolly.chromeApps.chromeAppsStrings.vpnProvider = "vpnProvider".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.vpnProvider]
+  
+  inline def webview: typingsJapgolly.chromeApps.chromeAppsStrings.webview = "webview".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.webview]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-split-pane
 
-Typings are for version 0.1.89
+Typings are for version 0.1.92
 
 ## Library description:
 React split-pane component
@@ -10,10 +10,10 @@ React split-pane component
 | ------------------ | :-------------: |
 | Full name          | react-split-pane |
 | Keywords           | react, react-component, split-pane, react-split-pane, es6 |
-| # releases         | 15 |
-| # dependents       | 97 |
-| # downloads        | 19668387 |
-| # stars            | 8 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 879449.3333333334 |
+| # stars            | 2782.0 |
 
 ## Links
 - [Homepage](https://github.com/tomkp/react-split-pane)

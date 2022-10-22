@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-jsonrpc
 
-Typings are for version 4.0.0
+Typings are for version 8.0.2
 
 ## Library description:
 A json rpc implementation over streams
@@ -10,10 +10,10 @@ A json rpc implementation over streams
 | ------------------ | :-------------: |
 | Full name          | vscode-jsonrpc |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 67 |
-| # downloads        | 12390517 |
-| # stars            | 1 |
+| # releases         | 25 |
+| # dependents       | 0.0 |
+| # downloads        | 6356777.0 |
+| # stars            | 1051.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/vscode-languageserver-node#readme)

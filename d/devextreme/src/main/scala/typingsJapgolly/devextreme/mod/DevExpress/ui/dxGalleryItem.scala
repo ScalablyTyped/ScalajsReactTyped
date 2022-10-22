@@ -1,38 +1,38 @@
 package typingsJapgolly.devextreme.mod.DevExpress.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxGalleryItem extends CollectionWidgetItem {
-  /** Specifies the text passed to the alt attribute of the image markup element. */
+trait dxGalleryItem
+  extends StObject
+     with CollectionWidgetItem {
+  
+  /**
+    * Specifies the text passed to the alt attribute of the image markup element.
+    */
   var imageAlt: js.UndefOr[String] = js.undefined
-  /** Specifies the URL of the image displayed by the item. */
+  
+  /**
+    * Specifies the URL of the image displayed by the item.
+    */
   var imageSrc: js.UndefOr[String] = js.undefined
 }
-
 object dxGalleryItem {
-  @scala.inline
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    html: String = null,
-    imageAlt: String = null,
-    imageSrc: String = null,
-    template: typingsJapgolly.devextreme.mod.DevExpress.core.template | (js.Function0[String | Element | JQuery]) = null,
-    text: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): dxGalleryItem = {
+  
+  inline def apply(): dxGalleryItem = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (html != null) __obj.updateDynamic("html")(html.asInstanceOf[js.Any])
-    if (imageAlt != null) __obj.updateDynamic("imageAlt")(imageAlt.asInstanceOf[js.Any])
-    if (imageSrc != null) __obj.updateDynamic("imageSrc")(imageSrc.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxGalleryItem]
   }
+  
+  extension [Self <: dxGalleryItem](x: Self) {
+    
+    inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+    
+    inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+    
+    inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+    
+    inline def setImageSrcUndefined: Self = StObject.set(x, "imageSrc", js.undefined)
+  }
 }
-

@@ -1,51 +1,41 @@
 package typingsJapgolly.antDesignReactNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.activityIndicatorMod.ActivityIndicatorNativeProps
-import typingsJapgolly.antDesignReactNative.activityIndicatorMod.default
-import typingsJapgolly.antDesignReactNative.activityIndicatorStyleMod.ActivityIndicatorStyle
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.large
 import typingsJapgolly.antDesignReactNative.antDesignReactNativeStrings.small
+import typingsJapgolly.antDesignReactNative.libActivityIndicatorMod.ActivityIndicatorNativeProps
+import typingsJapgolly.antDesignReactNative.libActivityIndicatorStyleMod.ActivityIndicatorStyle
+import typingsJapgolly.reactNative.mod.ColorValue
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ActivityIndicator {
-  def apply(
-    animating: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    size: large | small = null,
-    styles: ActivityIndicatorStyle = null,
-    text: String = null,
-    toast: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ActivityIndicatorNativeProps, default, Unit, ActivityIndicatorNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(animating)) __obj.updateDynamic("animating")(animating.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (!js.isUndefined(toast)) __obj.updateDynamic("toast")(toast.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignReactNative.activityIndicatorMod.ActivityIndicatorNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignReactNative.activityIndicatorMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.activityIndicatorMod.ActivityIndicatorNativeProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/activity-indicator", JSImport.Default)
+  @JSImport("@ant-design/react-native", "ActivityIndicator")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignReactNative.mod.ActivityIndicator] {
+    
+    inline def animating(value: Boolean): this.type = set("animating", value.asInstanceOf[js.Any])
+    
+    inline def color(value: ColorValue): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def size(value: Double | large | small): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: Partial[ActivityIndicatorStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def text(value: String): this.type = set("text", value.asInstanceOf[js.Any])
+    
+    inline def toast(value: Boolean): this.type = set("toast", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ActivityIndicator.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ActivityIndicatorNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

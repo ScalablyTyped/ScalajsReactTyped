@@ -1,43 +1,72 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.CellCancelEdit event.
   */
-@JSGlobal("ASPxClientSpreadsheetCellCancelEditEventArgs")
-@js.native
-class ASPxClientSpreadsheetCellCancelEditEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientSpreadsheetCellCancelEditEventArgs object. For internal use only.
-    * @param columnIndex Gets the active cell's column index.
-    * @param rowIndex Gets the active cell's row index.
-    * @param formula Gets the active cell's formula.
-    * @param value Gets the active cell's current value.
-    * @param sheetName Gets the current worksheet's name.
-    */
-  def this(columnIndex: Double, rowIndex: Double, formula: String, value: String, sheetName: String) = this()
+trait ASPxClientSpreadsheetCellCancelEditEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Gets the active cell's column index.
     */
-  var columnIndex: Double = js.native
+  var columnIndex: Double
+  
+  /**
+    * Specifies the text displayed in the processed cell.
+    */
+  var displayText: String
+  
   /**
     * Gets the active cell's formula.
     */
-  var formula: String = js.native
+  var formula: String
+  
   /**
     * Gets the active cell's row index.
     */
-  var rowIndex: Double = js.native
+  var rowIndex: Double
+  
   /**
     * Gets the current worksheet's name.
     */
-  var sheetName: String = js.native
+  var sheetName: String
+  
   /**
     * Gets the active cell's current value.
     */
-  var value: String = js.native
+  var value: String
 }
-
+object ASPxClientSpreadsheetCellCancelEditEventArgs {
+  
+  inline def apply(
+    columnIndex: Double,
+    displayText: String,
+    formula: String,
+    rowIndex: Double,
+    sheetName: String,
+    value: String
+  ): ASPxClientSpreadsheetCellCancelEditEventArgs = {
+    val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], displayText = displayText.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any], rowIndex = rowIndex.asInstanceOf[js.Any], sheetName = sheetName.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientSpreadsheetCellCancelEditEventArgs]
+  }
+  
+  extension [Self <: ASPxClientSpreadsheetCellCancelEditEventArgs](x: Self) {
+    
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayText(value: String): Self = StObject.set(x, "displayText", value.asInstanceOf[js.Any])
+    
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setSheetName(value: String): Self = StObject.set(x, "sheetName", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
+}

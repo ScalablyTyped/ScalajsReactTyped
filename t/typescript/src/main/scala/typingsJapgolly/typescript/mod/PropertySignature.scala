@@ -1,22 +1,30 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PropertySignature
-  extends TypeElement
+  extends StObject
+     with TypeElement
      with JSDocContainer
-     with HasExpressionInitializer
+     with HasJSDoc
+     with HasModifiers
      with HasType
-     with VariableLikeDeclaration
-     with _HasJSDoc {
-  var initializer: js.UndefOr[Expression] = js.native
+     with VariableLikeDeclaration {
+  
+  /** @deprecated A property signature cannot have an initializer */
+  val initializer: js.UndefOr[Expression] = js.native
+  
   @JSName("kind")
-  var kind_PropertySignature: typingsJapgolly.typescript.mod.SyntaxKind.PropertySignature = js.native
+  val kind_PropertySignature: typingsJapgolly.typescript.mod.SyntaxKind.PropertySignature = js.native
+  
+  @JSName("modifiers")
+  val modifiers_PropertySignature: js.UndefOr[NodeArray[Modifier]] = js.native
+  
   @JSName("name")
-  var name_PropertySignature: PropertyName = js.native
-  var `type`: js.UndefOr[TypeNode] = js.native
+  val name_PropertySignature: PropertyName = js.native
+  
+  val `type`: js.UndefOr[TypeNode] = js.native
 }
-

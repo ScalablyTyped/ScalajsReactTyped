@@ -1,8 +1,8 @@
 package typingsJapgolly.nodeZendesk.mod.Tickets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.problem
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.question
   - typingsJapgolly.nodeZendesk.nodeZendeskStrings.task
 */
-trait TicketType extends js.Object
-
+trait TicketType extends StObject
 object TicketType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def incident: typingsJapgolly.nodeZendesk.nodeZendeskStrings.incident = this.cast("incident")
-  @scala.inline
-  def problem: typingsJapgolly.nodeZendesk.nodeZendeskStrings.problem = this.cast("problem")
-  @scala.inline
-  def question: typingsJapgolly.nodeZendesk.nodeZendeskStrings.question = this.cast("question")
-  @scala.inline
-  def task: typingsJapgolly.nodeZendesk.nodeZendeskStrings.task = this.cast("task")
+  
+  inline def incident: typingsJapgolly.nodeZendesk.nodeZendeskStrings.incident = "incident".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.incident]
+  
+  inline def problem: typingsJapgolly.nodeZendesk.nodeZendeskStrings.problem = "problem".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.problem]
+  
+  inline def question: typingsJapgolly.nodeZendesk.nodeZendeskStrings.question = "question".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.question]
+  
+  inline def task: typingsJapgolly.nodeZendesk.nodeZendeskStrings.task = "task".asInstanceOf[typingsJapgolly.nodeZendesk.nodeZendeskStrings.task]
 }
-

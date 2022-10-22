@@ -1,35 +1,33 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EndOfLine extends js.Object
-
+sealed trait EndOfLine extends StObject
 @JSImport("vscode", "EndOfLine")
 @js.native
-object EndOfLine extends js.Object {
-  /**
-  		 * The carriage return line feed `\r\n` sequence.
-  		 */
-  @js.native
-  sealed trait CRLF extends EndOfLine
-  
-  /**
-  		 * The line feed `\n` character.
-  		 */
-  @js.native
-  sealed trait LF extends EndOfLine
+object EndOfLine extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EndOfLine with Double] = js.native
-  /* 2 */ @js.native
-  object CRLF extends TopLevel[CRLF with Double]
+  def apply(value: Double): js.UndefOr[EndOfLine & Double] = js.native
   
-  /* 1 */ @js.native
-  object LF extends TopLevel[LF with Double]
+  /**
+    * The carriage return line feed `\r\n` sequence.
+    */
+  @js.native
+  sealed trait CRLF
+    extends StObject
+       with EndOfLine
+  /* 2 */ val CRLF: typingsJapgolly.vscode.mod.EndOfLine.CRLF & Double = js.native
   
+  /**
+    * The line feed `\n` character.
+    */
+  @js.native
+  sealed trait LF
+    extends StObject
+       with EndOfLine
+  /* 1 */ val LF: typingsJapgolly.vscode.mod.EndOfLine.LF & Double = js.native
 }
-

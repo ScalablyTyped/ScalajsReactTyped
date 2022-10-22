@@ -1,87 +1,83 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`10`
-import typingsJapgolly.activexWord.activexWordNumbers.`11`
-import typingsJapgolly.activexWord.activexWordNumbers.`12`
-import typingsJapgolly.activexWord.activexWordNumbers.`13`
-import typingsJapgolly.activexWord.activexWordNumbers.`14`
-import typingsJapgolly.activexWord.activexWordNumbers.`15`
-import typingsJapgolly.activexWord.activexWordNumbers.`16`
-import typingsJapgolly.activexWord.activexWordNumbers.`19`
-import typingsJapgolly.activexWord.activexWordNumbers.`20`
-import typingsJapgolly.activexWord.activexWordNumbers.`22`
-import typingsJapgolly.activexWord.activexWordNumbers.`23`
-import typingsJapgolly.activexWord.activexWordNumbers.`24`
-import typingsJapgolly.activexWord.activexWordNumbers.`25`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`10`
+import typingsJapgolly.activexWord.activexWordInts.`11`
+import typingsJapgolly.activexWord.activexWordInts.`12`
+import typingsJapgolly.activexWord.activexWordInts.`13`
+import typingsJapgolly.activexWord.activexWordInts.`14`
+import typingsJapgolly.activexWord.activexWordInts.`15`
+import typingsJapgolly.activexWord.activexWordInts.`16`
+import typingsJapgolly.activexWord.activexWordInts.`19`
+import typingsJapgolly.activexWord.activexWordInts.`20`
+import typingsJapgolly.activexWord.activexWordInts.`22`
+import typingsJapgolly.activexWord.activexWordInts.`23`
+import typingsJapgolly.activexWord.activexWordInts.`24`
+import typingsJapgolly.activexWord.activexWordInts.`25`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`14`
-  - typingsJapgolly.activexWord.activexWordNumbers.`15`
-  - typingsJapgolly.activexWord.activexWordNumbers.`13`
-  - typingsJapgolly.activexWord.activexWordNumbers.`16`
-  - typingsJapgolly.activexWord.activexWordNumbers.`22`
-  - typingsJapgolly.activexWord.activexWordNumbers.`20`
-  - typingsJapgolly.activexWord.activexWordNumbers.`24`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`25`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`10`
-  - typingsJapgolly.activexWord.activexWordNumbers.`11`
-  - typingsJapgolly.activexWord.activexWordNumbers.`12`
-  - typingsJapgolly.activexWord.activexWordNumbers.`23`
-  - typingsJapgolly.activexWord.activexWordNumbers.`19`
+  - typingsJapgolly.activexWord.activexWordInts.`14`
+  - typingsJapgolly.activexWord.activexWordInts.`15`
+  - typingsJapgolly.activexWord.activexWordInts.`13`
+  - typingsJapgolly.activexWord.activexWordInts.`16`
+  - typingsJapgolly.activexWord.activexWordInts.`22`
+  - typingsJapgolly.activexWord.activexWordInts.`20`
+  - typingsJapgolly.activexWord.activexWordInts.`24`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`25`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`10`
+  - typingsJapgolly.activexWord.activexWordInts.`11`
+  - typingsJapgolly.activexWord.activexWordInts.`12`
+  - typingsJapgolly.activexWord.activexWordInts.`23`
+  - typingsJapgolly.activexWord.activexWordInts.`19`
 */
-trait WdRecoveryType extends js.Object
-
+trait WdRecoveryType extends StObject
 object WdRecoveryType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdChart: `14` = this.cast(14)
-  @scala.inline
-  def wdChartLinked: `15` = this.cast(15)
-  @scala.inline
-  def wdChartPicture: `13` = this.cast(13)
-  @scala.inline
-  def wdFormatOriginalFormatting: `16` = this.cast(16)
-  @scala.inline
-  def wdFormatPlainText: `22` = this.cast(22)
-  @scala.inline
-  def wdFormatSurroundingFormattingWithEmphasis: `20` = this.cast(20)
-  @scala.inline
-  def wdListCombineWithExistingList: `24` = this.cast(24)
-  @scala.inline
-  def wdListContinueNumbering: `7` = this.cast(7)
-  @scala.inline
-  def wdListDontMerge: `25` = this.cast(25)
-  @scala.inline
-  def wdListRestartNumbering: `8` = this.cast(8)
-  @scala.inline
-  def wdPasteDefault: `0` = this.cast(0)
-  @scala.inline
-  def wdSingleCellTable: `6` = this.cast(6)
-  @scala.inline
-  def wdSingleCellText: `5` = this.cast(5)
-  @scala.inline
-  def wdTableAppendTable: `10` = this.cast(10)
-  @scala.inline
-  def wdTableInsertAsRows: `11` = this.cast(11)
-  @scala.inline
-  def wdTableOriginalFormatting: `12` = this.cast(12)
-  @scala.inline
-  def wdTableOverwriteCells: `23` = this.cast(23)
-  @scala.inline
-  def wdUseDestinationStylesRecovery: `19` = this.cast(19)
+  
+  inline def wdChart: `14` = 14.asInstanceOf[`14`]
+  
+  inline def wdChartLinked: `15` = 15.asInstanceOf[`15`]
+  
+  inline def wdChartPicture: `13` = 13.asInstanceOf[`13`]
+  
+  inline def wdFormatOriginalFormatting: `16` = 16.asInstanceOf[`16`]
+  
+  inline def wdFormatPlainText: `22` = 22.asInstanceOf[`22`]
+  
+  inline def wdFormatSurroundingFormattingWithEmphasis: `20` = 20.asInstanceOf[`20`]
+  
+  inline def wdListCombineWithExistingList: `24` = 24.asInstanceOf[`24`]
+  
+  inline def wdListContinueNumbering: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdListDontMerge: `25` = 25.asInstanceOf[`25`]
+  
+  inline def wdListRestartNumbering: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdPasteDefault: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdSingleCellTable: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdSingleCellText: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdTableAppendTable: `10` = 10.asInstanceOf[`10`]
+  
+  inline def wdTableInsertAsRows: `11` = 11.asInstanceOf[`11`]
+  
+  inline def wdTableOriginalFormatting: `12` = 12.asInstanceOf[`12`]
+  
+  inline def wdTableOverwriteCells: `23` = 23.asInstanceOf[`23`]
+  
+  inline def wdUseDestinationStylesRecovery: `19` = 19.asInstanceOf[`19`]
 }
-

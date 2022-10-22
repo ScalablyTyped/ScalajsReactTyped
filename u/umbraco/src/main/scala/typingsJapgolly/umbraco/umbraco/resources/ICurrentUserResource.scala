@@ -2,9 +2,9 @@ package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.angular.mod.IPromise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
@@ -13,7 +13,8 @@ import scala.scalajs.js.annotation._
   *
   *
   **/
-trait ICurrentUserResource extends js.Object {
+trait ICurrentUserResource extends StObject {
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.currentUserResource#changePassword
@@ -25,7 +26,8 @@ trait ICurrentUserResource extends js.Object {
     * @returns {Promise} resourcePromise object containing the user array.
     *
     */
-  def changePassword(changePasswordArgs: js.Any): IPromise[IResourcePromise]
+  def changePassword(changePasswordArgs: Any): IPromise[IResourcePromise]
+  
   /**
     * @ngdoc method
     * @name umbraco.resources.currentUserResource#getMembershipProviderConfig
@@ -34,19 +36,19 @@ trait ICurrentUserResource extends js.Object {
     * @description
     * Gets the configuration of the user membership provider which is used to configure the change password form
     */
-  def getMembershipProviderConfig(): js.Any
+  def getMembershipProviderConfig(): Any
 }
-
 object ICurrentUserResource {
-  @scala.inline
-  def apply(
-    changePassword: js.Any => CallbackTo[IPromise[IResourcePromise]],
-    getMembershipProviderConfig: CallbackTo[js.Any]
-  ): ICurrentUserResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("changePassword")(js.Any.fromFunction1((t0: js.Any) => changePassword(t0).runNow()))
-    __obj.updateDynamic("getMembershipProviderConfig")(getMembershipProviderConfig.toJsFn)
+  
+  inline def apply(changePassword: Any => IPromise[IResourcePromise], getMembershipProviderConfig: CallbackTo[Any]): ICurrentUserResource = {
+    val __obj = js.Dynamic.literal(changePassword = js.Any.fromFunction1(changePassword), getMembershipProviderConfig = getMembershipProviderConfig.toJsFn)
     __obj.asInstanceOf[ICurrentUserResource]
   }
+  
+  extension [Self <: ICurrentUserResource](x: Self) {
+    
+    inline def setChangePassword(value: Any => IPromise[IResourcePromise]): Self = StObject.set(x, "changePassword", js.Any.fromFunction1(value))
+    
+    inline def setGetMembershipProviderConfig(value: CallbackTo[Any]): Self = StObject.set(x, "getMembershipProviderConfig", value.toJsFn)
+  }
 }
-

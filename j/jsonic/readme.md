@@ -11,9 +11,9 @@ A JSON parser that isn't strict.
 | Full name          | jsonic |
 | Keywords           | json, parser |
 | # releases         | 2 |
-| # dependents       | 125 |
-| # downloads        | 787390 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 109573.33333333333 |
+| # stars            | 169.0 |
 
 ## Links
 - [Homepage](https://github.com/rjrodger/jsonic)

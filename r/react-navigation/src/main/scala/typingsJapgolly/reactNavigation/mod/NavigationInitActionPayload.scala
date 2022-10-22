@@ -1,19 +1,24 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationInitActionPayload extends js.Object {
+trait NavigationInitActionPayload extends StObject {
+  
   var params: js.UndefOr[NavigationParams] = js.undefined
 }
-
 object NavigationInitActionPayload {
-  @scala.inline
-  def apply(params: NavigationParams = null): NavigationInitActionPayload = {
+  
+  inline def apply(): NavigationInitActionPayload = {
     val __obj = js.Dynamic.literal()
-    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationInitActionPayload]
   }
+  
+  extension [Self <: NavigationInitActionPayload](x: Self) {
+    
+    inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+  }
 }
-

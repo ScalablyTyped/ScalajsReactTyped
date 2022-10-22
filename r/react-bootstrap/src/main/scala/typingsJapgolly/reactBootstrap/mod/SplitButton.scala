@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.splitButtonMod.SplitButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "SplitButton")
 @js.native
-class SplitButton ()
-  extends Component[SplitButtonProps, js.Object, js.Any]
-
+open class SplitButton ()
+  extends typingsJapgolly.reactBootstrap.libMod.SplitButton

@@ -1,9 +1,8 @@
 package typingsJapgolly.officeJs.Excel
 
-import typingsJapgolly.officeJs.CellPropertiesFormatrowHe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,7 +10,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait RowProperties extends SettableRowProperties {
+trait RowProperties
+  extends StObject
+     with SettableRowProperties {
+  
   /**
     *
     * Represents the `address` property.
@@ -19,6 +21,7 @@ trait RowProperties extends SettableRowProperties {
     * [Api set: ExcelApi 1.9]
     */
   var address: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `addressLocal` property.
@@ -26,6 +29,7 @@ trait RowProperties extends SettableRowProperties {
     * [Api set: ExcelApi 1.9]
     */
   var addressLocal: js.UndefOr[String] = js.undefined
+  
   /**
     *
     * Represents the `rowIndex` property.
@@ -34,27 +38,25 @@ trait RowProperties extends SettableRowProperties {
     */
   var rowIndex: js.UndefOr[Double] = js.undefined
 }
-
 object RowProperties {
-  @scala.inline
-  def apply(
-    address: String = null,
-    addressLocal: String = null,
-    format: CellPropertiesFormatrowHe = null,
-    hyperlink: RangeHyperlink = null,
-    rowHidden: js.UndefOr[Boolean] = js.undefined,
-    rowIndex: Int | Double = null,
-    style: String = null
-  ): RowProperties = {
+  
+  inline def apply(): RowProperties = {
     val __obj = js.Dynamic.literal()
-    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
-    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
-    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowProperties]
   }
+  
+  extension [Self <: RowProperties](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocal(value: String): Self = StObject.set(x, "addressLocal", value.asInstanceOf[js.Any])
+    
+    inline def setAddressLocalUndefined: Self = StObject.set(x, "addressLocal", js.undefined)
+    
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+  }
 }
-

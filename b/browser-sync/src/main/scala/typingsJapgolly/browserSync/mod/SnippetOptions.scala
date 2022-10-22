@@ -1,31 +1,47 @@
 package typingsJapgolly.browserSync.mod
 
-import typingsJapgolly.browserSync.AnonFn
+import typingsJapgolly.browserSync.anon.Fn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SnippetOptions extends js.Object {
+trait SnippetOptions extends StObject {
+  
   var async: js.UndefOr[Boolean] = js.undefined
+  
   var blacklist: js.UndefOr[js.Array[String]] = js.undefined
-  var rule: js.UndefOr[AnonFn] = js.undefined
+  
+  var rule: js.UndefOr[Fn] = js.undefined
+  
   var whitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object SnippetOptions {
-  @scala.inline
-  def apply(
-    async: js.UndefOr[Boolean] = js.undefined,
-    blacklist: js.Array[String] = null,
-    rule: AnonFn = null,
-    whitelist: js.Array[String] = null
-  ): SnippetOptions = {
+  
+  inline def apply(): SnippetOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnippetOptions]
   }
+  
+  extension [Self <: SnippetOptions](x: Self) {
+    
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    
+    inline def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
+    
+    inline def setBlacklistUndefined: Self = StObject.set(x, "blacklist", js.undefined)
+    
+    inline def setBlacklistVarargs(value: String*): Self = StObject.set(x, "blacklist", js.Array(value*))
+    
+    inline def setRule(value: Fn): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    
+    inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
+    
+    inline def setWhitelistUndefined: Self = StObject.set(x, "whitelist", js.undefined)
+    
+    inline def setWhitelistVarargs(value: String*): Self = StObject.set(x, "whitelist", js.Array(value*))
+  }
 }
-

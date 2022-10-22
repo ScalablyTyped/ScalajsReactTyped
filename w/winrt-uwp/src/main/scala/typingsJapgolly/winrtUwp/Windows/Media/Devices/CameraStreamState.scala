@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Devices
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraStreamState extends js.Object
-
+sealed trait CameraStreamState extends StObject
 /** Defines the state of a camera stream. */
 @JSGlobal("Windows.Media.Devices.CameraStreamState")
 @js.native
-object CameraStreamState extends js.Object {
+object CameraStreamState extends StObject {
+  
   /** Frames in the stream are being dropped for privacy reasons. */
   @js.native
-  sealed trait blockedForPrivacy extends CameraStreamState
+  sealed trait blockedForPrivacy
+    extends StObject
+       with CameraStreamState
   
   /** The camera stream is not currently streaming. */
   @js.native
-  sealed trait notStreaming extends CameraStreamState
+  sealed trait notStreaming
+    extends StObject
+       with CameraStreamState
   
   /** The camera stream has been shut down. */
   @js.native
-  sealed trait shutdown extends CameraStreamState
+  sealed trait shutdown
+    extends StObject
+       with CameraStreamState
   
   /** The camera stream is currently streaming. */
   @js.native
-  sealed trait streaming extends CameraStreamState
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraStreamState with Double] = js.native
-  /* 2 */ @js.native
-  object blockedForPrivacy extends TopLevel[blockedForPrivacy with Double]
-  
-  /* 0 */ @js.native
-  object notStreaming extends TopLevel[notStreaming with Double]
-  
-  /* 3 */ @js.native
-  object shutdown extends TopLevel[shutdown with Double]
-  
-  /* 1 */ @js.native
-  object streaming extends TopLevel[streaming with Double]
-  
+  sealed trait streaming
+    extends StObject
+       with CameraStreamState
 }
-

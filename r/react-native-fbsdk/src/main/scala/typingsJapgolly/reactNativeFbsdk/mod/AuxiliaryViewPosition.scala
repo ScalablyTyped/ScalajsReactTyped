@@ -1,24 +1,20 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.top
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.bottom
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.`inline`
 */
-trait AuxiliaryViewPosition extends js.Object
-
+trait AuxiliaryViewPosition extends StObject
 object AuxiliaryViewPosition {
-  @scala.inline
-  def bottom: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `inline`: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = this.cast("inline")
-  @scala.inline
-  def top: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.top = this.cast("top")
+  
+  inline def bottom: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.bottom]
+  
+  inline def `inline`: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.`inline` = "inline".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.`inline`]
+  
+  inline def top: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.top = "top".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.top]
 }
-

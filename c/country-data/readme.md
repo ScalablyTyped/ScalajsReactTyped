@@ -11,14 +11,11 @@ Data about countries - like their ISO codes and currencies
 | Full name          | country-data |
 | Keywords           | data, country |
 | # releases         | 1 |
-| # dependents       | 64 |
-| # downloads        | 1602079 |
-| # stars            | 21 |
+| # dependents       | 0.0 |
+| # downloads        | 323695.6666666667 |
+| # stars            | 491.0 |
 
 ## Links
-- [Homepage](https://github.com/OpenBookPrices/country-data)
-- [Bugs](https://github.com/OpenBookPrices/country-data/issues)
-- [Repository](https://github.com/OpenBookPrices/country-data)
 - [Npm](https://www.npmjs.com/package/country-data)
     
 

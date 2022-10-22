@@ -1,32 +1,36 @@
 package typingsJapgolly.reactNative.mod
 
-import japgolly.scalajs.react.raw.React.Element
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactNative.AnonAnimated
-import typingsJapgolly.reactNative.AnonAnimatedBoolean
+import typingsJapgolly.reactNative.anon.AnimatedBoolean
+import typingsJapgolly.reactNative.anon.AnimatedX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ScrollView")
 @js.native
-class ScrollView ()
-  extends Component[ScrollViewProps, js.Object, js.Any] {
+open class ScrollView ()
+  extends Component[ScrollViewProps, js.Object, Any] {
+  
   /**
-    * @deprecated Use scrollTo instead
+    * Displays the scroll indicators momentarily.
     */
-  var scrollWithoutAnimationTo: js.UndefOr[js.Function2[/* y */ Double, /* x */ Double, Unit]] = js.native
+  def flashScrollIndicators(): Unit = js.native
+  
   // Undocumented
-  def getInnerViewNode(): js.Any = js.native
+  def getInnerViewNode(): Any = js.native
+  
   /**
     * Returns a reference to the underlying scroll responder, which supports
     * operations like `scrollTo`. All ScrollView-like components should
     * implement this method so that they can be composed while providing access
     * to the underlying scroll responder's methods.
     */
-  def getScrollResponder(): Element = js.native
-  def getScrollableNode(): js.Any = js.native
+  def getScrollResponder(): ScrollResponderMixin = js.native
+  
+  def getScrollableNode(): Any = js.native
+  
   /**
     * Scrolls to a given x, y offset, either immediately or with a smooth animation.
     * Syntax:
@@ -41,9 +45,15 @@ class ScrollView ()
   def scrollTo(y: Double): Unit = js.native
   def scrollTo(y: Double, x: Double): Unit = js.native
   def scrollTo(y: Double, x: Double, animated: Boolean): Unit = js.native
-  def scrollTo(y: AnonAnimated): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double): Unit = js.native
-  def scrollTo(y: AnonAnimated, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: Double, x: Unit, animated: Boolean): Unit = js.native
+  def scrollTo(y: Unit, x: Double): Unit = js.native
+  def scrollTo(y: Unit, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: Unit, x: Unit, animated: Boolean): Unit = js.native
+  def scrollTo(y: AnimatedX): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Double): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Double, animated: Boolean): Unit = js.native
+  def scrollTo(y: AnimatedX, x: Unit, animated: Boolean): Unit = js.native
+  
   /**
     * A helper function that scrolls to the end of the scrollview;
     * If this is a vertical ScrollView, it scrolls to the bottom.
@@ -53,6 +63,18 @@ class ScrollView ()
     * The animated prop defaults to true
     */
   def scrollToEnd(): Unit = js.native
-  def scrollToEnd(options: AnonAnimatedBoolean): Unit = js.native
+  def scrollToEnd(options: AnimatedBoolean): Unit = js.native
+  
+  /**
+    * @deprecated Use scrollTo instead
+    */
+  var scrollWithoutAnimationTo: js.UndefOr[js.Function2[/* y */ Double, /* x */ Double, Unit]] = js.native
+  
+  /**
+    * This function sends props straight to native. They will not participate in
+    * future diff process - this means that if you do not include them in the
+    * next render, they will remain active (see [Direct
+    * Manipulation](https://reactnative.dev/docs/direct-manipulation)).
+    */
+  def setNativeProps(nativeProps: js.Object): Unit = js.native
 }
-

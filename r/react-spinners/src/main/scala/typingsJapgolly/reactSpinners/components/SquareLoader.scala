@@ -1,14 +1,18 @@
 package typingsJapgolly.reactSpinners.components
 
-import typingsJapgolly.reactSpinners.squareLoaderMod.default
+import org.scalajs.dom.HTMLSpanElement
+import typingsJapgolly.reactSpinners.esmHelpersPropsMod.LoaderSizeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object SquareLoader extends SharedApply_LoaderSizeProps_1408391938[default] {
-  @JSImport("react-spinners/SquareLoader", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object SquareLoader {
   
+  @JSImport("react-spinners/esm", "SquareLoader")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: SquareLoader.type): SharedBuilder_LoaderSizeProps_16572679[HTMLSpanElement] = new SharedBuilder_LoaderSizeProps_16572679[HTMLSpanElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LoaderSizeProps): SharedBuilder_LoaderSizeProps_16572679[HTMLSpanElement] = new SharedBuilder_LoaderSizeProps_16572679[HTMLSpanElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

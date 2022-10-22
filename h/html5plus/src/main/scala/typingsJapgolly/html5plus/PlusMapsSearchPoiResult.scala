@@ -1,16 +1,17 @@
 package typingsJapgolly.html5plus
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 保存位置检索、周边检索和范围检索返回的结果
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-trait PlusMapsSearchPoiResult extends js.Object {
+trait PlusMapsSearchPoiResult extends StObject {
+  
   /**
     * 当前页的POI检索结果数
     * 当前页POI检索结果数，若没有检索到则返回0。
@@ -18,34 +19,7 @@ trait PlusMapsSearchPoiResult extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   var currentNumber: js.UndefOr[Double] = js.undefined
-  /**
-    * 获取当前页的索引
-    * 当前页的索引值，从0开始，即0表示第一页。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
-    */
-  var pageIndex: js.UndefOr[Double] = js.undefined
-  /**
-    * 本次POI检索的总页数
-    * 本次POI检索的总页数，若没有检索到则返回0。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
-    */
-  var pageNumber: js.UndefOr[Double] = js.undefined
-  /**
-    * 本次POI检索结果数组
-    * POI检索结果数组，Array数组对象，数组内容为Position对象。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
-    */
-  var poiList: js.UndefOr[js.Array[_]] = js.undefined
-  /**
-    * POI检索总结果数
-    * POI检索总结果数，若没有检索到则返回0。
-    * 
-    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
-    */
-  var totalNumber: js.UndefOr[Double] = js.undefined
+  
   /**
     * 获取指定索引的检索结果
     * 如果index值超出范围则返回null对象。
@@ -53,26 +27,70 @@ trait PlusMapsSearchPoiResult extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def getPosition(): PlusMapsPosition
+  
+  /**
+    * 获取当前页的索引
+    * 当前页的索引值，从0开始，即0表示第一页。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
+    */
+  var pageIndex: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * 本次POI检索的总页数
+    * 本次POI检索的总页数，若没有检索到则返回0。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
+    */
+  var pageNumber: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * 本次POI检索结果数组
+    * POI检索结果数组，Array数组对象，数组内容为Position对象。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
+    */
+  var poiList: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  /**
+    * POI检索总结果数
+    * POI检索总结果数，若没有检索到则返回0。
+    * 
+    * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
+    */
+  var totalNumber: js.UndefOr[Double] = js.undefined
 }
-
 object PlusMapsSearchPoiResult {
-  @scala.inline
-  def apply(
-    getPosition: CallbackTo[PlusMapsPosition],
-    currentNumber: Int | Double = null,
-    pageIndex: Int | Double = null,
-    pageNumber: Int | Double = null,
-    poiList: js.Array[_] = null,
-    totalNumber: Int | Double = null
-  ): PlusMapsSearchPoiResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getPosition")(getPosition.toJsFn)
-    if (currentNumber != null) __obj.updateDynamic("currentNumber")(currentNumber.asInstanceOf[js.Any])
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (poiList != null) __obj.updateDynamic("poiList")(poiList.asInstanceOf[js.Any])
-    if (totalNumber != null) __obj.updateDynamic("totalNumber")(totalNumber.asInstanceOf[js.Any])
+  
+  inline def apply(getPosition: CallbackTo[PlusMapsPosition]): PlusMapsSearchPoiResult = {
+    val __obj = js.Dynamic.literal(getPosition = getPosition.toJsFn)
     __obj.asInstanceOf[PlusMapsSearchPoiResult]
   }
+  
+  extension [Self <: PlusMapsSearchPoiResult](x: Self) {
+    
+    inline def setCurrentNumber(value: Double): Self = StObject.set(x, "currentNumber", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentNumberUndefined: Self = StObject.set(x, "currentNumber", js.undefined)
+    
+    inline def setGetPosition(value: CallbackTo[PlusMapsPosition]): Self = StObject.set(x, "getPosition", value.toJsFn)
+    
+    inline def setPageIndex(value: Double): Self = StObject.set(x, "pageIndex", value.asInstanceOf[js.Any])
+    
+    inline def setPageIndexUndefined: Self = StObject.set(x, "pageIndex", js.undefined)
+    
+    inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
+    
+    inline def setPoiList(value: js.Array[Any]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
+    
+    inline def setPoiListUndefined: Self = StObject.set(x, "poiList", js.undefined)
+    
+    inline def setPoiListVarargs(value: Any*): Self = StObject.set(x, "poiList", js.Array(value*))
+    
+    inline def setTotalNumber(value: Double): Self = StObject.set(x, "totalNumber", value.asInstanceOf[js.Any])
+    
+    inline def setTotalNumberUndefined: Self = StObject.set(x, "totalNumber", js.undefined)
+  }
 }
-

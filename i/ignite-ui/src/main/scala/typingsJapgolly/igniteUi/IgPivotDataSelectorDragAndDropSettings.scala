@@ -1,47 +1,54 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotDataSelectorDragAndDropSettings
-  extends /**
-	 * Option for IgPivotDataSelectorDragAndDropSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Which element the draggable helper should be appended to while dragging.
-  	 */
-  var appendTo: js.UndefOr[js.Any] = js.undefined
+    * Which element the draggable helper should be appended to while dragging.
+    */
+  var appendTo: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Specifies the containment for the drag helper. The area inside of which thehelper is contained would be scrollable while dragging.
-  	 *
-  	 */
-  var containment: js.UndefOr[Boolean | String | js.Array[_]] = js.undefined
+    * Specifies the containment for the drag helper. The area inside of which thehelper is contained would be scrollable while dragging.
+    *
+    */
+  var containment: js.UndefOr[Boolean | String | js.Array[Any]] = js.undefined
+  
   /**
-  	 * Specifies z-index that would be set for the drag helper.
-  	 */
+    * Specifies z-index that would be set for the drag helper.
+    */
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object IgPivotDataSelectorDragAndDropSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotDataSelectorDragAndDropSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    appendTo: js.Any = null,
-    containment: Boolean | String | js.Array[_] = null,
-    zIndex: Int | Double = null
-  ): IgPivotDataSelectorDragAndDropSettings = {
+  
+  inline def apply(): IgPivotDataSelectorDragAndDropSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo.asInstanceOf[js.Any])
-    if (containment != null) __obj.updateDynamic("containment")(containment.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotDataSelectorDragAndDropSettings]
   }
+  
+  extension [Self <: IgPivotDataSelectorDragAndDropSettings](x: Self) {
+    
+    inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    
+    inline def setContainment(value: Boolean | String | js.Array[Any]): Self = StObject.set(x, "containment", value.asInstanceOf[js.Any])
+    
+    inline def setContainmentUndefined: Self = StObject.set(x, "containment", js.undefined)
+    
+    inline def setContainmentVarargs(value: Any*): Self = StObject.set(x, "containment", js.Array(value*))
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

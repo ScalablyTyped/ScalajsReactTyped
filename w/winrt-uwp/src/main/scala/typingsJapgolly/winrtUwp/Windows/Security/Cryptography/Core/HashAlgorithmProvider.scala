@@ -1,40 +1,53 @@
 package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Core
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a cryptographic hash provider. For more information about hashes, see MACs, hashes, and signatures. */
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-abstract class HashAlgorithmProvider () extends js.Object {
+trait HashAlgorithmProvider extends StObject {
+  
   /** Gets the name of the open hash algorithm. */
-  var algorithmName: String = js.native
-  /** Gets the length, in bytes, of the hash. */
-  var hashLength: Double = js.native
+  var algorithmName: String
+  
   /**
     * Creates a reusable CryptographicHash object.
     * @return Reusable hash object.
     */
-  def createHash(): CryptographicHash = js.native
+  def createHash(): CryptographicHash
+  
   /**
     * Hashes binary data.
     * @param data Data to be hashed.
     * @return Hashed data.
     */
-  def hashData(data: IBuffer): IBuffer = js.native
+  def hashData(data: IBuffer): IBuffer
+  
+  /** Gets the length, in bytes, of the hash. */
+  var hashLength: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-object HashAlgorithmProvider extends js.Object {
-  /**
-    * Creates a HashAlgorithmProvider object and opens the specified algorithm for use.
-    * @param algorithm Algorithm name.
-    * @return Represents a provider that implements hash algorithms.
-    */
-  def openAlgorithm(algorithm: String): HashAlgorithmProvider = js.native
+object HashAlgorithmProvider {
+  
+  inline def apply(
+    algorithmName: String,
+    createHash: CallbackTo[CryptographicHash],
+    hashData: IBuffer => IBuffer,
+    hashLength: Double
+  ): HashAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createHash = createHash.toJsFn, hashData = js.Any.fromFunction1(hashData), hashLength = hashLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HashAlgorithmProvider]
+  }
+  
+  extension [Self <: HashAlgorithmProvider](x: Self) {
+    
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    
+    inline def setCreateHash(value: CallbackTo[CryptographicHash]): Self = StObject.set(x, "createHash", value.toJsFn)
+    
+    inline def setHashData(value: IBuffer => IBuffer): Self = StObject.set(x, "hashData", js.Any.fromFunction1(value))
+    
+    inline def setHashLength(value: Double): Self = StObject.set(x, "hashLength", value.asInstanceOf[js.Any])
+  }
 }
-

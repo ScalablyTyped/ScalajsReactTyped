@@ -1,7 +1,7 @@
 
 # Scala.js typings for delay
 
-Typings are for version 4.3.0
+Typings are for version 5.0.0
 
 ## Library description:
 Delay a promise a specified amount of time
@@ -9,11 +9,11 @@ Delay a promise a specified amount of time
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | delay |
-| Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird |
-| # releases         | 8 |
-| # dependents       | 396 |
-| # downloads        | 9241588 |
-| # stars            | 12 |
+| Keywords           | promise, resolve, delay, defer, wait, stall, timeout, settimeout, event, loop, next, tick, delay, async, await, promises, bluebird, threshold, range, random |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 7588582.666666667 |
+| # stars            | 495.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/delay#readme)

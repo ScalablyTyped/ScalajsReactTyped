@@ -1,48 +1,89 @@
 package typingsJapgolly.awsSdkClientCognitoIdentityBrowser
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.inputTypesUnionMod.InputTypesUnion
-import typingsJapgolly.awsSdkTypes.abortMod.AbortSignal
-import typingsJapgolly.awsSdkTypes.httpMod.BrowserHttpOptions
+import typingsJapgolly.awsSdkClientCognitoIdentityBrowser.typesInputTypesUnionMod.InputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesAbortMod.AbortSignal
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-cognito-identity-browser/types/UnlinkIdentityInput", JSImport.Namespace)
-@js.native
-object typesUnlinkIdentityInputMod extends js.Object {
-  @js.native
-  trait UnlinkIdentityInput extends InputTypesUnion {
+object typesUnlinkIdentityInputMod {
+  
+  trait UnlinkIdentityInput
+    extends StObject
+       with InputTypesUnion {
+    
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
       *
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
+    
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
       */
     @JSName("$httpOptions")
-    var $httpOptions: js.UndefOr[BrowserHttpOptions] = js.native
+    var $httpOptions: js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
+      ] = js.undefined
+    
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
+    
     /**
       * <p>A unique identifier in the format REGION:GUID.</p>
       */
-    var IdentityId: String = js.native
+    var IdentityId: String
+    
     /**
       * <p>A set of optional name-value pairs that map provider names to provider tokens.</p>
       */
-    var Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]]) = js.native
+    var Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])
+    
     /**
       * <p>Provider names to unlink from this identity.</p>
       */
-    var LoginsToRemove: js.Array[String] | js.Iterable[String] = js.native
+    var LoginsToRemove: js.Array[String] | js.Iterable[String]
   }
-  
+  object UnlinkIdentityInput {
+    
+    inline def apply(
+      IdentityId: String,
+      Logins: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]]),
+      LoginsToRemove: js.Array[String] | js.Iterable[String]
+    ): UnlinkIdentityInput = {
+      val __obj = js.Dynamic.literal(IdentityId = IdentityId.asInstanceOf[js.Any], Logins = Logins.asInstanceOf[js.Any], LoginsToRemove = LoginsToRemove.asInstanceOf[js.Any])
+      __obj.asInstanceOf[UnlinkIdentityInput]
+    }
+    
+    extension [Self <: UnlinkIdentityInput](x: Self) {
+      
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      
+      inline def set$httpOptions(
+        value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ Any
+      ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
+      
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      
+      inline def setLogins(value: StringDictionary[String] | (js.Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "Logins", value.asInstanceOf[js.Any])
+      
+      inline def setLoginsToRemove(value: js.Array[String] | js.Iterable[String]): Self = StObject.set(x, "LoginsToRemove", value.asInstanceOf[js.Any])
+      
+      inline def setLoginsToRemoveVarargs(value: String*): Self = StObject.set(x, "LoginsToRemove", js.Array(value*))
+    }
+  }
 }
-

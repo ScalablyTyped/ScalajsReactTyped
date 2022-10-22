@@ -4,21 +4,22 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.rxCore.Rx.IPromise
 import typingsJapgolly.rxCore.Rx.IScheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Rx")
-@js.native
-object Rx extends js.Object {
+object Rx {
+  
   @js.native
-  trait Observable[T] extends js.Object {
+  trait Observable[T] extends StObject {
+    
     /**
       *  Repeats source as long as condition holds emulating a do while loop.
       * @param condition The condition which determines if the source will be repeated.
       * @returns An observable sequence which is repeated as long as the condition holds.
       */
     def doWhile(condition: js.Function0[Boolean]): Observable[T] = js.native
+    
     /**
       *  Expands an observable sequence by recursively invoking selector.
       *
@@ -28,6 +29,7 @@ object Rx extends js.Object {
       */
     def expand(selector: js.Function1[/* item */ T, Observable[T]]): Observable[T] = js.native
     def expand(selector: js.Function1[/* item */ T, Observable[T]], scheduler: IScheduler): Observable[T] = js.native
+    
     def forkJoin[TSecond, TResult](
       second: IPromise[TSecond],
       resultSelector: js.Function2[/* left */ T, /* right */ TSecond, TResult]
@@ -43,6 +45,7 @@ object Rx extends js.Object {
       second: Observable[TSecond],
       resultSelector: js.Function2[/* left */ T, /* right */ TSecond, TResult]
     ): Observable[TResult] = js.native
+    
     /**
       *  Returns an observable sequence that is the result of invoking the selector on the source sequence, without sharing subscriptions.
       *  This operator allows for a fluent style of writing queries that use the same sequence multiple times.
@@ -51,6 +54,7 @@ object Rx extends js.Object {
       * @returns An observable sequence that contains the elements of a sequence produced by multicasting the source sequence within a selector function.
       */
     def let[TResult](selector: js.Function1[/* source */ Observable[T], Observable[TResult]]): Observable[TResult] = js.native
+    
     /**
       *  Returns an observable sequence that is the result of invoking the selector on the source sequence, without sharing subscriptions.
       *  This operator allows for a fluent style of writing queries that use the same sequence multiple times.
@@ -59,6 +63,7 @@ object Rx extends js.Object {
       * @returns An observable sequence that contains the elements of a sequence produced by multicasting the source sequence within a selector function.
       */
     def letBind[TResult](selector: js.Function1[/* source */ Observable[T], Observable[TResult]]): Observable[TResult] = js.native
+    
     /**
       * Comonadic bind operator.
       * @param selector A transform function to apply to each element.
@@ -75,7 +80,8 @@ object Rx extends js.Object {
   }
   
   @js.native
-  trait ObservableStatic extends js.Object {
+  trait ObservableStatic extends StObject {
+    
     /**
       *  Uses selector to determine which source in sources to use.
       *  There is an alias 'switchCase' for browsers <IE9.
@@ -160,6 +166,7 @@ object Rx extends js.Object {
       sources: StringDictionary[IPromise[T] | Observable[T]],
       scheduler: IScheduler
     ): Observable[T] = js.native
+    
     /**
       *  Concatenates the observable sequences obtained by running the specified result selector for each element in source.
       * There is an alias for this method called 'forIn' for browsers <IE9
@@ -168,6 +175,7 @@ object Rx extends js.Object {
       * @returns An observable sequence from the concatenated observable sequences.
       */
     def `for`[T, TResult](sources: js.Array[T], resultSelector: js.Function1[/* item */ T, Observable[TResult]]): Observable[TResult] = js.native
+    
     /**
       *  Concatenates the observable sequences obtained by running the specified result selector for each element in source.
       * There is an alias for this method called 'forIn' for browsers <IE9
@@ -176,6 +184,7 @@ object Rx extends js.Object {
       * @returns An observable sequence from the concatenated observable sequences.
       */
     def forIn[T, TResult](sources: js.Array[T], resultSelector: js.Function1[/* item */ T, Observable[TResult]]): Observable[TResult] = js.native
+    
     /**
       *  Runs all observable sequences in parallel and collect their last elements.
       *
@@ -194,6 +203,7 @@ object Rx extends js.Object {
       * @returns An observable sequence with an array collecting the last elements of all the input sequences.
       */
     def forkJoin[T](sources: js.Array[IPromise[T] | Observable[T]]): Observable[js.Array[T]] = js.native
+    
     def `if`[T](condition: js.Function0[Boolean], thenSource: IPromise[T]): Observable[T] = js.native
     def `if`[T](condition: js.Function0[Boolean], thenSource: IPromise[T], elseSource: IPromise[T]): Observable[T] = js.native
     def `if`[T](condition: js.Function0[Boolean], thenSource: IPromise[T], elseSource: Observable[T]): Observable[T] = js.native
@@ -222,6 +232,7 @@ object Rx extends js.Object {
       */
     def `if`[T](condition: js.Function0[Boolean], thenSource: Observable[T], elseSource: Observable[T]): Observable[T] = js.native
     def `if`[T](condition: js.Function0[Boolean], thenSource: Observable[T], scheduler: IScheduler): Observable[T] = js.native
+    
     def ifThen[T](condition: js.Function0[Boolean], thenSource: IPromise[T]): Observable[T] = js.native
     def ifThen[T](condition: js.Function0[Boolean], thenSource: IPromise[T], elseSource: IPromise[T]): Observable[T] = js.native
     def ifThen[T](condition: js.Function0[Boolean], thenSource: IPromise[T], elseSource: Observable[T]): Observable[T] = js.native
@@ -250,6 +261,7 @@ object Rx extends js.Object {
       */
     def ifThen[T](condition: js.Function0[Boolean], thenSource: Observable[T], elseSource: Observable[T]): Observable[T] = js.native
     def ifThen[T](condition: js.Function0[Boolean], thenSource: Observable[T], scheduler: IScheduler): Observable[T] = js.native
+    
     /**
       *  Uses selector to determine which source in sources to use.
       *  There is an alias 'switchCase' for browsers <IE9.
@@ -334,6 +346,7 @@ object Rx extends js.Object {
       sources: StringDictionary[IPromise[T] | Observable[T]],
       scheduler: IScheduler
     ): Observable[T] = js.native
+    
     def `while`[T](condition: js.Function0[Boolean], source: IPromise[T]): Observable[T] = js.native
     /**
       *  Repeats source as long as condition holds emulating a while loop.
@@ -343,6 +356,7 @@ object Rx extends js.Object {
       * @returns An observable sequence which is repeated as long as the condition holds.
       */
     def `while`[T](condition: js.Function0[Boolean], source: Observable[T]): Observable[T] = js.native
+    
     def whileDo[T](condition: js.Function0[Boolean], source: IPromise[T]): Observable[T] = js.native
     /**
       *  Repeats source as long as condition holds emulating a while loop.
@@ -353,6 +367,4 @@ object Rx extends js.Object {
       */
     def whileDo[T](condition: js.Function0[Boolean], source: Observable[T]): Observable[T] = js.native
   }
-  
 }
-

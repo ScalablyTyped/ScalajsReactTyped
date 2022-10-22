@@ -1,84 +1,66 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.AnonLang
-import typingsJapgolly.antd.AnonOnChange
-import typingsJapgolly.antd.generateCalendarMod.CalendarMode
-import typingsJapgolly.antd.generateCalendarMod.CalendarProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.anon.OnChange
+import typingsJapgolly.antd.libCalendarGenerateCalendarMod.CalendarMode
+import typingsJapgolly.antd.libCalendarGenerateCalendarMod.CalendarProps
+import typingsJapgolly.antd.libDatePickerGeneratePickerMod.PickerLocale
 import typingsJapgolly.moment.mod.Moment
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Calendar {
-  def apply(
-    className: String = null,
-    dateCellRender: Moment => CallbackTo[Node] = null,
-    dateFullCellRender: Moment => CallbackTo[Node] = null,
-    defaultValue: Moment = null,
-    disabledDate: Moment => CallbackTo[Boolean] = null,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    headerRender: /* config */ AnonOnChange[Moment] => CallbackTo[Node] = null,
-    locale: AnonLang = null,
-    mode: CalendarMode = null,
-    monthCellRender: Moment => CallbackTo[Node] = null,
-    monthFullCellRender: Moment => CallbackTo[Node] = null,
-    onChange: Moment => Callback = null,
-    onPanelChange: (Moment, /* mode */ CalendarMode) => Callback = null,
-    onSelect: Moment => Callback = null,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    validRange: js.Tuple2[Moment, Moment] = null,
-    value: Moment = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    CalendarProps[Moment], 
-    MountedWithRawType[CalendarProps[Moment], js.Object, RawMounted[CalendarProps[Moment], js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (dateCellRender != null) __obj.updateDynamic("dateCellRender")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => dateCellRender(t0).runNow()))
-    if (dateFullCellRender != null) __obj.updateDynamic("dateFullCellRender")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => dateFullCellRender(t0).runNow()))
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (disabledDate != null) __obj.updateDynamic("disabledDate")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => disabledDate(t0).runNow()))
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (headerRender != null) __obj.updateDynamic("headerRender")(js.Any.fromFunction1((t0: /* config */ typingsJapgolly.antd.AnonOnChange[typingsJapgolly.moment.mod.Moment]) => headerRender(t0).runNow()))
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (monthCellRender != null) __obj.updateDynamic("monthCellRender")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => monthCellRender(t0).runNow()))
-    if (monthFullCellRender != null) __obj.updateDynamic("monthFullCellRender")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => monthFullCellRender(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => onChange(t0).runNow()))
-    if (onPanelChange != null) __obj.updateDynamic("onPanelChange")(js.Any.fromFunction2((t0: typingsJapgolly.moment.mod.Moment, t1: /* mode */ typingsJapgolly.antd.generateCalendarMod.CalendarMode) => onPanelChange(t0, t1).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: typingsJapgolly.moment.mod.Moment) => onSelect(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (validRange != null) __obj.updateDynamic("validRange")(validRange.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.generateCalendarMod.CalendarProps[typingsJapgolly.moment.mod.Moment], 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.generateCalendarMod.CalendarProps[typingsJapgolly.moment.mod.Moment]])(children: _*)
-  }
   @JSImport("antd", "Calendar")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def dateCellRender(value: Moment => japgolly.scalajs.react.facade.React.Node): this.type = set("dateCellRender", js.Any.fromFunction1(value))
+    
+    inline def dateFullCellRender(value: Moment => japgolly.scalajs.react.facade.React.Node): this.type = set("dateFullCellRender", js.Any.fromFunction1(value))
+    
+    inline def defaultValue(value: Moment): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def disabledDate(value: Moment => Boolean): this.type = set("disabledDate", js.Any.fromFunction1(value))
+    
+    inline def fullscreen(value: Boolean): this.type = set("fullscreen", value.asInstanceOf[js.Any])
+    
+    inline def headerRender(value: /* config */ OnChange[Moment] => japgolly.scalajs.react.facade.React.Node): this.type = set("headerRender", js.Any.fromFunction1(value))
+    
+    inline def locale(value: PickerLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def mode(value: CalendarMode): this.type = set("mode", value.asInstanceOf[js.Any])
+    
+    inline def monthCellRender(value: Moment => japgolly.scalajs.react.facade.React.Node): this.type = set("monthCellRender", js.Any.fromFunction1(value))
+    
+    inline def monthFullCellRender(value: Moment => japgolly.scalajs.react.facade.React.Node): this.type = set("monthFullCellRender", js.Any.fromFunction1(value))
+    
+    inline def onChange(value: Moment => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: Moment) => value(t0).runNow()))
+    
+    inline def onPanelChange(value: (Moment, /* mode */ CalendarMode) => Callback): this.type = set("onPanelChange", js.Any.fromFunction2((t0: Moment, t1: /* mode */ CalendarMode) => (value(t0, t1)).runNow()))
+    
+    inline def onSelect(value: Moment => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: Moment) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def validRange(value: js.Tuple2[Moment, Moment]): this.type = set("validRange", value.asInstanceOf[js.Any])
+    
+    inline def value(value: Moment): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Calendar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: CalendarProps[Moment]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

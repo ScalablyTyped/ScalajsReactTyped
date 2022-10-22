@@ -1,21 +1,17 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.manifest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning
 */
-trait WebExtensionManifestIncognito extends js.Object
-
+trait WebExtensionManifestIncognito extends StObject
 object WebExtensionManifestIncognito {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def not_allowed: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = this.cast("not_allowed")
-  @scala.inline
-  def spanning: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = this.cast("spanning")
+  
+  inline def not_allowed: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed = "not_allowed".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.not_allowed]
+  
+  inline def spanning: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning = "spanning".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.spanning]
 }
-

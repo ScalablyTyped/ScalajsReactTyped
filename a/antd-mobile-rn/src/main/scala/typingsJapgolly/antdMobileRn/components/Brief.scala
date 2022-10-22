@@ -1,44 +1,34 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.AnonBrief
-import typingsJapgolly.antdMobileRn.listItemNativeMod.BriefProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libListListItemDotnativeMod.BriefProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Brief {
-  def apply(
-    style: StyleProp[ViewStyle] = null,
-    styles: AnonBrief = null,
-    wrap: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[BriefProps, typingsJapgolly.antdMobileRn.listItemNativeMod.Brief, Unit, BriefProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.listItemNativeMod.BriefProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.listItemNativeMod.Brief](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.listItemNativeMod.BriefProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/list/ListItem.native", "Brief")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antdMobileRn.libListListItemDotnativeMod.Brief] {
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: typingsJapgolly.antdMobileRn.anon.Brief): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def wrap(value: Boolean): this.type = set("wrap", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Brief.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: BriefProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

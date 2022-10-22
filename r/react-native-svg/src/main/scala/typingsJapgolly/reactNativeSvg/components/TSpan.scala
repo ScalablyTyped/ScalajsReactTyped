@@ -1,217 +1,233 @@
 package typingsJapgolly.reactNativeSvg.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.ColorValue
+import typingsJapgolly.reactNative.mod.GestureResponderEvent
+import typingsJapgolly.reactNative.mod.LayoutChangeEvent
 import typingsJapgolly.reactNative.mod.NodeHandle
-import typingsJapgolly.reactNativeSvg.mod.Color
-import typingsJapgolly.reactNativeSvg.mod.ColumnMajorTransformMatrix
-import typingsJapgolly.reactNativeSvg.mod.FillRule
-import typingsJapgolly.reactNativeSvg.mod.FontObject
-import typingsJapgolly.reactNativeSvg.mod.FontStretch
-import typingsJapgolly.reactNativeSvg.mod.FontStyle
-import typingsJapgolly.reactNativeSvg.mod.FontVariant
-import typingsJapgolly.reactNativeSvg.mod.FontVariantLigatures
-import typingsJapgolly.reactNativeSvg.mod.FontWeight
-import typingsJapgolly.reactNativeSvg.mod.Linecap
-import typingsJapgolly.reactNativeSvg.mod.Linejoin
-import typingsJapgolly.reactNativeSvg.mod.NumberArray
-import typingsJapgolly.reactNativeSvg.mod.NumberProp
-import typingsJapgolly.reactNativeSvg.mod.TSpanProps
-import typingsJapgolly.reactNativeSvg.mod.TextAnchor
-import typingsJapgolly.reactNativeSvg.mod.TextDecoration
-import typingsJapgolly.reactNativeSvg.mod.TransformObject
+import typingsJapgolly.reactNativeSvg.libTypescriptElementsTspanMod.TSpanProps
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractExtractTextMod.TextChild
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FillRule
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontObject
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontStretch
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontStyle
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontVariant
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontVariantLigatures
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.FontWeight
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.Linecap
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.Linejoin
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberArray
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.TextAnchor
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.TextDecoration
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformObject
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.VectorEffect
 import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`box-none`
 import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`box-only`
-import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.`non-scaling-stroke`
 import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.auto
-import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.default
-import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.inherit
-import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.nonScalingStroke
 import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.none
-import typingsJapgolly.reactNativeSvg.reactNativeSvgStrings.uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TSpan {
-  def apply(
-    clipPath: String = null,
-    clipRule: FillRule = null,
-    delayLongPress: Int | Double = null,
-    delayPressIn: Int | Double = null,
-    delayPressOut: Int | Double = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    dx: NumberArray = null,
-    dy: NumberArray = null,
-    fill: Color = null,
-    fillOpacity: NumberProp = null,
-    fillRule: FillRule = null,
-    font: FontObject = null,
-    fontFamily: String = null,
-    fontFeatureSettings: String = null,
-    fontSize: NumberProp = null,
-    fontStretch: FontStretch = null,
-    fontStyle: FontStyle = null,
-    fontVariant: FontVariant = null,
-    fontVariantLigatures: FontVariantLigatures = null,
-    fontVariationSettings: String = null,
-    fontWeight: FontWeight = null,
-    id: String = null,
-    inlineSize: NumberProp = null,
-    kerning: NumberProp = null,
-    letterSpacing: NumberProp = null,
-    marker: String = null,
-    markerEnd: String = null,
-    markerMid: String = null,
-    markerStart: String = null,
-    mask: String = null,
-    onLongPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMoveShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onMoveShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressIn: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onPressOut: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderGrant: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderReject: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderRelease: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminate: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminationRequest: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    origin: NumberArray = null,
-    originX: NumberProp = null,
-    originY: NumberProp = null,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    rotate: NumberArray = null,
-    rotation: NumberProp = null,
-    scale: NumberArray = null,
-    scaleX: NumberProp = null,
-    scaleY: NumberProp = null,
-    skew: NumberArray = null,
-    skewX: NumberProp = null,
-    skewY: NumberProp = null,
-    stroke: Color = null,
-    strokeDasharray: js.Array[NumberProp] | NumberProp = null,
-    strokeDashoffset: NumberProp = null,
-    strokeLinecap: Linecap = null,
-    strokeLinejoin: Linejoin = null,
-    strokeMiterlimit: NumberProp = null,
-    strokeOpacity: NumberProp = null,
-    strokeWidth: NumberProp = null,
-    textAnchor: TextAnchor = null,
-    textDecoration: TextDecoration = null,
-    transform: ColumnMajorTransformMatrix | String | TransformObject = null,
-    translate: NumberArray = null,
-    translateX: NumberProp = null,
-    translateY: NumberProp = null,
-    vectorEffect: none | `non-scaling-stroke` | nonScalingStroke | default | inherit | uri = null,
-    wordSpacing: NumberProp = null,
-    x: NumberArray = null,
-    y: NumberArray = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TSpanProps, typingsJapgolly.reactNativeSvg.mod.TSpan, Unit, TSpanProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (clipPath != null) __obj.updateDynamic("clipPath")(clipPath.asInstanceOf[js.Any])
-    if (clipRule != null) __obj.updateDynamic("clipRule")(clipRule.asInstanceOf[js.Any])
-    if (delayLongPress != null) __obj.updateDynamic("delayLongPress")(delayLongPress.asInstanceOf[js.Any])
-    if (delayPressIn != null) __obj.updateDynamic("delayPressIn")(delayPressIn.asInstanceOf[js.Any])
-    if (delayPressOut != null) __obj.updateDynamic("delayPressOut")(delayPressOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
-    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontFeatureSettings != null) __obj.updateDynamic("fontFeatureSettings")(fontFeatureSettings.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStretch != null) __obj.updateDynamic("fontStretch")(fontStretch.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontVariant != null) __obj.updateDynamic("fontVariant")(fontVariant.asInstanceOf[js.Any])
-    if (fontVariantLigatures != null) __obj.updateDynamic("fontVariantLigatures")(fontVariantLigatures.asInstanceOf[js.Any])
-    if (fontVariationSettings != null) __obj.updateDynamic("fontVariationSettings")(fontVariationSettings.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (inlineSize != null) __obj.updateDynamic("inlineSize")(inlineSize.asInstanceOf[js.Any])
-    if (kerning != null) __obj.updateDynamic("kerning")(kerning.asInstanceOf[js.Any])
-    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
-    if (marker != null) __obj.updateDynamic("marker")(marker.asInstanceOf[js.Any])
-    if (markerEnd != null) __obj.updateDynamic("markerEnd")(markerEnd.asInstanceOf[js.Any])
-    if (markerMid != null) __obj.updateDynamic("markerMid")(markerMid.asInstanceOf[js.Any])
-    if (markerStart != null) __obj.updateDynamic("markerStart")(markerStart.asInstanceOf[js.Any])
-    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
-    if (onLongPress != null) __obj.updateDynamic("onLongPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onLongPress(t0).runNow()))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponder(t0).runNow()))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponderCapture(t0).runNow()))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (onPressIn != null) __obj.updateDynamic("onPressIn")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressIn(t0).runNow()))
-    if (onPressOut != null) __obj.updateDynamic("onPressOut")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPressOut(t0).runNow()))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderEnd(t0).runNow()))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderGrant(t0).runNow()))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderMove(t0).runNow()))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderReject(t0).runNow()))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderRelease(t0).runNow()))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderStart(t0).runNow()))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminate(t0).runNow()))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminationRequest(t0).runNow()))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponder(t0).runNow()))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponderCapture(t0).runNow()))
-    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
-    if (originX != null) __obj.updateDynamic("originX")(originX.asInstanceOf[js.Any])
-    if (originY != null) __obj.updateDynamic("originY")(originY.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (skew != null) __obj.updateDynamic("skew")(skew.asInstanceOf[js.Any])
-    if (skewX != null) __obj.updateDynamic("skewX")(skewX.asInstanceOf[js.Any])
-    if (skewY != null) __obj.updateDynamic("skewY")(skewY.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeDasharray != null) __obj.updateDynamic("strokeDasharray")(strokeDasharray.asInstanceOf[js.Any])
-    if (strokeDashoffset != null) __obj.updateDynamic("strokeDashoffset")(strokeDashoffset.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (translate != null) __obj.updateDynamic("translate")(translate.asInstanceOf[js.Any])
-    if (translateX != null) __obj.updateDynamic("translateX")(translateX.asInstanceOf[js.Any])
-    if (translateY != null) __obj.updateDynamic("translateY")(translateY.asInstanceOf[js.Any])
-    if (vectorEffect != null) __obj.updateDynamic("vectorEffect")(vectorEffect.asInstanceOf[js.Any])
-    if (wordSpacing != null) __obj.updateDynamic("wordSpacing")(wordSpacing.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSvg.mod.TSpanProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSvg.mod.TSpan](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSvg.mod.TSpanProps])(children: _*)
-  }
   @JSImport("react-native-svg", "TSpan")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeSvg.mod.TSpan] {
+    
+    inline def children(value: TextChild): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenVarargs(value: Any*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def clipPath(value: String): this.type = set("clipPath", value.asInstanceOf[js.Any])
+    
+    inline def clipRule(value: FillRule): this.type = set("clipRule", value.asInstanceOf[js.Any])
+    
+    inline def delayLongPress(value: Double): this.type = set("delayLongPress", value.asInstanceOf[js.Any])
+    
+    inline def delayPressIn(value: Double): this.type = set("delayPressIn", value.asInstanceOf[js.Any])
+    
+    inline def delayPressOut(value: Double): this.type = set("delayPressOut", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def dx(value: NumberArray): this.type = set("dx", value.asInstanceOf[js.Any])
+    
+    inline def dxVarargs(value: NumberProp*): this.type = set("dx", js.Array(value*))
+    
+    inline def dy(value: NumberArray): this.type = set("dy", value.asInstanceOf[js.Any])
+    
+    inline def dyVarargs(value: NumberProp*): this.type = set("dy", js.Array(value*))
+    
+    inline def fill(value: ColorValue): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillOpacity(value: NumberProp): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def fillRule(value: FillRule): this.type = set("fillRule", value.asInstanceOf[js.Any])
+    
+    inline def font(value: FontObject): this.type = set("font", value.asInstanceOf[js.Any])
+    
+    inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def fontFeatureSettings(value: String): this.type = set("fontFeatureSettings", value.asInstanceOf[js.Any])
+    
+    inline def fontSize(value: NumberProp): this.type = set("fontSize", value.asInstanceOf[js.Any])
+    
+    inline def fontStretch(value: FontStretch): this.type = set("fontStretch", value.asInstanceOf[js.Any])
+    
+    inline def fontStyle(value: FontStyle): this.type = set("fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def fontVariant(value: FontVariant): this.type = set("fontVariant", value.asInstanceOf[js.Any])
+    
+    inline def fontVariantLigatures(value: FontVariantLigatures): this.type = set("fontVariantLigatures", value.asInstanceOf[js.Any])
+    
+    inline def fontVariationSettings(value: String): this.type = set("fontVariationSettings", value.asInstanceOf[js.Any])
+    
+    inline def fontWeight(value: FontWeight): this.type = set("fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def inlineSize(value: NumberProp): this.type = set("inlineSize", value.asInstanceOf[js.Any])
+    
+    inline def kerning(value: NumberProp): this.type = set("kerning", value.asInstanceOf[js.Any])
+    
+    inline def letterSpacing(value: NumberProp): this.type = set("letterSpacing", value.asInstanceOf[js.Any])
+    
+    inline def marker(value: String): this.type = set("marker", value.asInstanceOf[js.Any])
+    
+    inline def markerEnd(value: String): this.type = set("markerEnd", value.asInstanceOf[js.Any])
+    
+    inline def markerMid(value: String): this.type = set("markerMid", value.asInstanceOf[js.Any])
+    
+    inline def markerStart(value: String): this.type = set("markerStart", value.asInstanceOf[js.Any])
+    
+    inline def mask(value: String): this.type = set("mask", value.asInstanceOf[js.Any])
+    
+    inline def onLayout(value: /* event */ LayoutChangeEvent => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: /* event */ LayoutChangeEvent) => value(t0).runNow()))
+    
+    inline def onLongPress(value: /* event */ GestureResponderEvent => Callback): this.type = set("onLongPress", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onMoveShouldSetResponder(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onMoveShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onMoveShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onPress(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onPressIn(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPressIn", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onPressOut(value: /* event */ GestureResponderEvent => Callback): this.type = set("onPressOut", js.Any.fromFunction1((t0: /* event */ GestureResponderEvent) => value(t0).runNow()))
+    
+    inline def onResponderEnd(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderGrant(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderGrant", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderMove(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderReject(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderReject", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderRelease(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderRelease", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderStart(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminate(value: ReactEventFrom[NodeHandle & Element] => Callback): this.type = set("onResponderTerminate", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminationRequest(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onResponderTerminationRequest", js.Any.fromFunction1(value))
+    
+    inline def onStartShouldSetResponder(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onStartShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & Element] => Boolean): this.type = set("onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def origin(value: NumberArray): this.type = set("origin", value.asInstanceOf[js.Any])
+    
+    inline def originVarargs(value: NumberProp*): this.type = set("origin", js.Array(value*))
+    
+    inline def originX(value: NumberProp): this.type = set("originX", value.asInstanceOf[js.Any])
+    
+    inline def originY(value: NumberProp): this.type = set("originY", value.asInstanceOf[js.Any])
+    
+    inline def pointerEvents(value: `box-none` | none | `box-only` | auto): this.type = set("pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: NumberArray): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def rotateVarargs(value: NumberProp*): this.type = set("rotate", js.Array(value*))
+    
+    inline def rotation(value: NumberProp): this.type = set("rotation", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: NumberArray): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def scaleVarargs(value: NumberProp*): this.type = set("scale", js.Array(value*))
+    
+    inline def scaleX(value: NumberProp): this.type = set("scaleX", value.asInstanceOf[js.Any])
+    
+    inline def scaleY(value: NumberProp): this.type = set("scaleY", value.asInstanceOf[js.Any])
+    
+    inline def skew(value: NumberArray): this.type = set("skew", value.asInstanceOf[js.Any])
+    
+    inline def skewVarargs(value: NumberProp*): this.type = set("skew", js.Array(value*))
+    
+    inline def skewX(value: NumberProp): this.type = set("skewX", value.asInstanceOf[js.Any])
+    
+    inline def skewY(value: NumberProp): this.type = set("skewY", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: ColorValue): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def strokeDasharray(value: js.Array[NumberProp] | NumberProp): this.type = set("strokeDasharray", value.asInstanceOf[js.Any])
+    
+    inline def strokeDasharrayVarargs(value: NumberProp*): this.type = set("strokeDasharray", js.Array(value*))
+    
+    inline def strokeDashoffset(value: NumberProp): this.type = set("strokeDashoffset", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinecap(value: Linecap): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinejoin(value: Linejoin): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def strokeMiterlimit(value: NumberProp): this.type = set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def strokeOpacity(value: NumberProp): this.type = set("strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def strokeWidth(value: NumberProp): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def textAnchor(value: TextAnchor): this.type = set("textAnchor", value.asInstanceOf[js.Any])
+    
+    inline def textDecoration(value: TextDecoration): this.type = set("textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def transform(value: ColumnMajorTransformMatrix | String | TransformObject): this.type = set("transform", value.asInstanceOf[js.Any])
+    
+    inline def translate(value: NumberArray): this.type = set("translate", value.asInstanceOf[js.Any])
+    
+    inline def translateVarargs(value: NumberProp*): this.type = set("translate", js.Array(value*))
+    
+    inline def translateX(value: NumberProp): this.type = set("translateX", value.asInstanceOf[js.Any])
+    
+    inline def translateY(value: NumberProp): this.type = set("translateY", value.asInstanceOf[js.Any])
+    
+    inline def vectorEffect(value: VectorEffect): this.type = set("vectorEffect", value.asInstanceOf[js.Any])
+    
+    inline def wordSpacing(value: NumberProp): this.type = set("wordSpacing", value.asInstanceOf[js.Any])
+    
+    inline def x(value: NumberArray): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def xVarargs(value: NumberProp*): this.type = set("x", js.Array(value*))
+    
+    inline def y(value: NumberArray): this.type = set("y", value.asInstanceOf[js.Any])
+    
+    inline def yVarargs(value: NumberProp*): this.type = set("y", js.Array(value*))
+  }
+  
+  implicit def make(companion: TSpan.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TSpanProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

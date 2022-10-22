@@ -1,72 +1,38 @@
 package typingsJapgolly.angularForms.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Event
 import typingsJapgolly.angularCore.mod.AfterViewInit
 import typingsJapgolly.angularCore.mod.EventEmitter
-import typingsJapgolly.angularForms.AnonUpdateOn
-import typingsJapgolly.std.Event_
+import typingsJapgolly.angularCore.mod.ɵɵDirectiveDeclaration
+import typingsJapgolly.angularCore.mod.ɵɵFactoryDeclaration
+import typingsJapgolly.angularForms.angularFormsBooleans.`false`
+import typingsJapgolly.angularForms.angularFormsStrings.ngForm
+import typingsJapgolly.angularForms.anon.NgSubmit
+import typingsJapgolly.angularForms.anon.Options
+import typingsJapgolly.angularForms.anon.Self
+import typingsJapgolly.angularForms.anon.UpdateOn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/forms", "NgForm")
 @js.native
-class NgForm protected ()
+open class NgForm protected ()
   extends ControlContainer
      with Form
      with AfterViewInit {
-  def this(validators: js.Array[_], asyncValidators: js.Array[_]) = this()
-  var _directives: js.Any = js.native
-  var _setUpdateStrategy: js.Any = js.native
-  /**
-    * @description
-    * The internal `FormGroup` instance.
-    */
-  @JSName("control")
-  val control_NgForm: FormGroup = js.native
-  /**
-    * @description
-    * Returns a map of the controls in this group.
-    */
-  val controls: StringDictionary[AbstractControl] = js.native
-  /**
-    * @description
-    * The `FormGroup` instance created for this form.
-    */
-  var form: FormGroup = js.native
-  /**
-    * @description
-    * The directive instance.
-    */
-  @JSName("formDirective")
-  val formDirective_NgForm: Form = js.native
-  /**
-    * @description
-    * Event emitter for the "ngSubmit" event
-    */
-  var ngSubmit: EventEmitter[_] = js.native
-  /**
-    * @description
-    * Tracks options for the `NgForm` instance.
-    *
-    * **updateOn**: Sets the default `updateOn` value for all child `NgModels` below it
-    * unless explicitly set by a child `NgModel` using `ngModelOptions`). Defaults to 'change'.
-    * Possible values: `'change'` | `'blur'` | `'submit'`.
-    *
-    */
-  var options: AnonUpdateOn = js.native
-  /**
-    * @description
-    * Returns an array representing the path to this group. Because this directive
-    * always lives at the top level of a form, it is always an empty array.
-    */
-  @JSName("path")
-  val path_NgForm: js.Array[String] = js.native
-  /**
-    * @description
-    * Returns whether the form submission has been triggered.
-    */
-  val submitted: Boolean = js.native
+  def this(
+    validators: js.Array[Validator | ValidatorFn],
+    asyncValidators: js.Array[AsyncValidator | AsyncValidatorFn]
+  ) = this()
+  
+  /* private */ var _directives: Any = js.native
+  
+  /* private */ var _findContainer: Any = js.native
+  
+  /* private */ var _setUpdateStrategy: Any = js.native
+  
   /**
     * @description
     * Add a control to this form.
@@ -83,6 +49,7 @@ class NgForm protected ()
     * @param dir The `NgModel` directive instance.
     */
   def addControl(dir: NgModel): Unit = js.native
+  
   /**
     * @description
     * Add a group of controls to this form.
@@ -98,6 +65,19 @@ class NgForm protected ()
     * @param dir The `NgModelGroup` directive instance.
     */
   def addFormGroup(dir: NgModelGroup): Unit = js.native
+  
+  /**
+    * @description
+    * Returns a map of the controls in this group.
+    */
+  def controls: StringDictionary[AbstractControl[Any, Any]] = js.native
+  
+  /**
+    * @description
+    * The `FormGroup` instance created for this form.
+    */
+  var form: FormGroup[Any] = js.native
+  
   /**
     * @description
     * The control directive from which to get the `FormControl`.
@@ -105,14 +85,15 @@ class NgForm protected ()
     * @param dir: The control directive.
     */
   /* CompleteClass */
-  override def getControl(dir: NgControl): FormControl = js.native
+  override def getControl(dir: NgControl): FormControl[Any] = js.native
   /**
     * @description
     * Retrieves the `FormControl` instance from the provided `NgModel` directive.
     *
     * @param dir The `NgModel` directive instance.
     */
-  def getControl(dir: NgModel): FormControl = js.native
+  def getControl(dir: NgModel): FormControl[Any] = js.native
+  
   /**
     * @description
     * The `FormGroup` associated with a particular `AbstractFormGroupDirective`.
@@ -120,14 +101,15 @@ class NgForm protected ()
     * @param dir: The form group directive from which to get the `FormGroup`.
     */
   /* CompleteClass */
-  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup = js.native
+  override def getFormGroup(dir: AbstractFormGroupDirective): FormGroup[Any] = js.native
   /**
     * @description
     * Retrieves the `FormGroup` for a provided `NgModelGroup` directive instance
     *
     * @param dir The `NgModelGroup` directive instance.
     */
-  def getFormGroup(dir: NgModelGroup): FormGroup = js.native
+  def getFormGroup(dir: NgModelGroup): FormGroup[Any] = js.native
+  
   /**
     * A callback method that is invoked immediately after
     * Angular has completed initialization of a component's view.
@@ -136,11 +118,19 @@ class NgForm protected ()
     */
   /* CompleteClass */
   override def ngAfterViewInit(): Unit = js.native
+  
+  /**
+    * @description
+    * Event emitter for the "ngSubmit" event
+    */
+  var ngSubmit: EventEmitter[Any] = js.native
+  
   /**
     * @description
     * Method called when the "reset" event is triggered on the form.
     */
   def onReset(): Unit = js.native
+  
   /**
     * @description
     * Method called when the "submit" event is triggered on the form.
@@ -148,7 +138,19 @@ class NgForm protected ()
     *
     * @param $event The "submit" event object
     */
-  def onSubmit($event: Event_): Boolean = js.native
+  def onSubmit($event: Event): Boolean = js.native
+  
+  /**
+    * @description
+    * Tracks options for the `NgForm` instance.
+    *
+    * **updateOn**: Sets the default `updateOn` value for all child `NgModels` below it
+    * unless explicitly set by a child `NgModel` using `ngModelOptions`). Defaults to 'change'.
+    * Possible values: `'change'` | `'blur'` | `'submit'`.
+    *
+    */
+  var options: UpdateOn = js.native
+  
   /**
     * @description
     * Remove a control from this form.
@@ -164,6 +166,7 @@ class NgForm protected ()
     * @param dir The `NgModel` directive instance.
     */
   def removeControl(dir: NgModel): Unit = js.native
+  
   /**
     * @description
     * Remove a group of controls to this form.
@@ -179,6 +182,7 @@ class NgForm protected ()
     * @param dir The `NgModelGroup` directive instance.
     */
   def removeFormGroup(dir: NgModelGroup): Unit = js.native
+  
   /**
     * @description
     * Resets the form to an initial value and resets its submitted status.
@@ -186,14 +190,22 @@ class NgForm protected ()
     * @param value The new value for the form.
     */
   def resetForm(): Unit = js.native
-  def resetForm(value: js.Any): Unit = js.native
+  def resetForm(value: Any): Unit = js.native
+  
   /**
     * @description
     * Sets the value for this `FormGroup`.
     *
     * @param value The new value
     */
-  def setValue(value: StringDictionary[js.Any]): Unit = js.native
+  def setValue(value: StringDictionary[Any]): Unit = js.native
+  
+  /**
+    * @description
+    * Returns whether the form submission has been triggered.
+    */
+  val submitted: Boolean = js.native
+  
   /**
     * @description
     * Update the model for a particular control with a new value.
@@ -202,6 +214,42 @@ class NgForm protected ()
     * @param value: The new value for the control.
     */
   /* CompleteClass */
-  override def updateModel(dir: NgControl, value: js.Any): Unit = js.native
+  override def updateModel(dir: NgControl, value: Any): Unit = js.native
 }
-
+/* static members */
+object NgForm {
+  
+  @JSImport("@angular/forms", "NgForm")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@angular/forms", "NgForm.\u0275dir")
+  @js.native
+  def ɵdir: ɵɵDirectiveDeclaration[
+    NgForm, 
+    /* form:not([ngNoForm]):not([formGroup]),ng-form,[ngForm] */ String, 
+    js.Array[ngForm], 
+    Options, 
+    NgSubmit, 
+    scala.Nothing, 
+    scala.Nothing, 
+    `false`
+  ] = js.native
+  inline def ɵdir_=(
+    x: ɵɵDirectiveDeclaration[
+      NgForm, 
+      /* form:not([ngNoForm]):not([formGroup]),ng-form,[ngForm] */ String, 
+      js.Array[ngForm], 
+      Options, 
+      NgSubmit, 
+      scala.Nothing, 
+      scala.Nothing, 
+      `false`
+    ]
+  ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275dir")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@angular/forms", "NgForm.\u0275fac")
+  @js.native
+  def ɵfac: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]] = js.native
+  inline def ɵfac_=(x: ɵɵFactoryDeclaration[NgForm, js.Tuple2[Self, Self]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275fac")(x.asInstanceOf[js.Any])
+}

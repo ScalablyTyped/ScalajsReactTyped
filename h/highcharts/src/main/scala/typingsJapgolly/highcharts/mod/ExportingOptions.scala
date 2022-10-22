@@ -1,16 +1,18 @@
 package typingsJapgolly.highcharts.mod
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExportingOptions extends js.Object {
+trait ExportingOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * exporting menu. Requires the Accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | ExportingAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[ExportingAccessibilityOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Experimental setting to allow
     * HTML inside the chart (added through the `useHTML` options), directly in
@@ -24,13 +26,15 @@ trait ExportingOptions extends js.Object {
     * client.
     */
   var allowHTML: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the export related
     * buttons, print and export. In addition to the default buttons listed
     * here, custom buttons can be added. See navigation.buttonOptions for
     * general options.
     */
-  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsContextButtonOptions]] = js.undefined
+  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional chart options to be
     * merged into the chart before exporting to an image format. This does not
@@ -41,6 +45,7 @@ trait ExportingOptions extends js.Object {
     * scheme to exported PDFs.
     */
   var chartOptions: js.UndefOr[Options] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for exporting data to
     * CSV or ExCel, or displaying the data in a HTML table or a JavaScript
@@ -56,12 +61,14 @@ trait ExportingOptions extends js.Object {
     * demonstrated in the sample below.
     */
   var csv: js.UndefOr[ExportingCsvOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to enable the exporting
     * module. Disabling the module will hide the context button, but API
     * methods will still be available.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Function to call if the
     * offline-exporting module fails to export a chart on the client side, and
@@ -70,6 +77,7 @@ trait ExportingOptions extends js.Object {
     * error from the module.
     */
   var error: js.UndefOr[ExportingErrorCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to fall back to
     * the export server if the offline-exporting module is unable to export the
@@ -81,11 +89,13 @@ trait ExportingOptions extends js.Object {
     * in order to notify users in case export fails.
     */
   var fallbackToExportServer: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The filename, without extension,
     * to use for the exported chart.
     */
   var filename: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An object containing additional
     * key value data for the POST form that sends the SVG to the export server.
@@ -94,14 +104,16 @@ trait ExportingOptions extends js.Object {
     * set.
     */
   var formAttributes: js.UndefOr[HTMLAttributes] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
     * for export module dependencies to load on demand if they don't already
     * exist on `window`. Should currently point to location of CanVG library,
-    * RGBColor.js, jsPDF and svg2pdf.js, required for client side export in
-    * certain browsers.
+    * jsPDF and svg2pdf.js, required for client side export in certain
+    * browsers.
     */
   var libURL: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An object consisting of
     * definitions for the menu items in the context menu. Each key value pair
@@ -114,8 +126,27 @@ trait ExportingOptions extends js.Object {
     *
     * - **textKey:** If internationalization is required, the key to a language
     * string
+    *
+    * Custom text for the "exitFullScreen" can be set only in lang options (it
+    * is not a separate button).
     */
   var menuItemDefinitions: js.UndefOr[Dictionary[ExportingMenuObject]] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Highmaps, Gantt) Settings for a custom font for
+    * the exported PDF, when using the `offline-exporting` module. This is used
+    * for languages containing non-ASCII characters, like Chinese, Russian,
+    * Japanese etc.
+    *
+    * As described in the jsPDF docs, the 14 standard fonts in PDF are limited
+    * to the ASCII-codepage. Therefore, in order to support other text in the
+    * exported PDF, one or more TTF font files have to be passed on to the
+    * exporting module.
+    *
+    * See more in the docs.
+    */
+  var pdfFont: js.UndefOr[ExportingPdfFontOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When printing the chart from the
     * menu item in the burger menu, if the on-screen chart exceeds this width,
@@ -124,6 +155,7 @@ trait ExportingOptions extends js.Object {
     * not affect the chart when printing the web page as a whole.
     */
   var printMaxWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Defines the scale or zoom factor
     * for the exported image compared to the on-screen display. While for
@@ -132,15 +164,18 @@ trait ExportingOptions extends js.Object {
     * or JPG.
     */
   var scale: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Show a HTML table below the
     * chart with the chart's current data.
     */
   var showTable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Analogous to sourceWidth.
     */
   var sourceHeight: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the original chart
     * when exported, unless an explicit chart.width is set, or a pixel width is
@@ -148,11 +183,13 @@ trait ExportingOptions extends js.Object {
     * by scale.
     */
   var sourceWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Caption for the data table. Same
     * as chart title by default. Set to `false` to disable.
     */
   var tableCaption: js.UndefOr[Boolean | String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Default MIME type for exporting
     * if `chart.exportChart()` is called without specifying a `type` option.
@@ -160,23 +197,27 @@ trait ExportingOptions extends js.Object {
     * `image/svg+xml`.
     */
   var `type`: js.UndefOr[ExportingMimeTypeValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for the server module
     * converting the SVG string to an image format. By default this points to
     * Highchart's free web service.
     */
   var url: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Use multi level headers in data
     * table. If csv.columnHeaderFormatter is defined, it has to return objects
     * in order for multi level headers to work.
     */
   var useMultiLevelHeaders: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If using multi level table
     * headers, use rowspans for headers that have only one level.
     */
   var useRowspanHeaders: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of charts
     * exported to PNG or JPG. As of Highcharts 3.0, the default pixel width is
@@ -185,59 +226,109 @@ trait ExportingOptions extends js.Object {
     */
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ExportingOptions {
-  @scala.inline
-  def apply(
-    accessibility: js.Object | ExportingAccessibilityOptions = null,
-    allowHTML: js.UndefOr[Boolean] = js.undefined,
-    buttons: ExportingButtonsOptions | Dictionary[ExportingButtonsContextButtonOptions] = null,
-    chartOptions: Options = null,
-    csv: ExportingCsvOptions = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    error: (/* options */ ExportingOptions, /* err */ js.Error) => Callback = null,
-    fallbackToExportServer: js.UndefOr[Boolean] = js.undefined,
-    filename: String = null,
-    formAttributes: HTMLAttributes = null,
-    libURL: String = null,
-    menuItemDefinitions: Dictionary[ExportingMenuObject] = null,
-    printMaxWidth: Int | Double = null,
-    scale: Int | Double = null,
-    showTable: js.UndefOr[Boolean] = js.undefined,
-    sourceHeight: Int | Double = null,
-    sourceWidth: Int | Double = null,
-    tableCaption: Boolean | String = null,
-    `type`: ExportingMimeTypeValue = null,
-    url: String = null,
-    useMultiLevelHeaders: js.UndefOr[Boolean] = js.undefined,
-    useRowspanHeaders: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): ExportingOptions = {
+  
+  inline def apply(): ExportingOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions.asInstanceOf[js.Any])
-    if (csv != null) __obj.updateDynamic("csv")(csv.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(js.Any.fromFunction2((t0: /* options */ typingsJapgolly.highcharts.mod.ExportingOptions, t1: /* err */ js.Error) => error(t0, t1).runNow()))
-    if (!js.isUndefined(fallbackToExportServer)) __obj.updateDynamic("fallbackToExportServer")(fallbackToExportServer.asInstanceOf[js.Any])
-    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
-    if (formAttributes != null) __obj.updateDynamic("formAttributes")(formAttributes.asInstanceOf[js.Any])
-    if (libURL != null) __obj.updateDynamic("libURL")(libURL.asInstanceOf[js.Any])
-    if (menuItemDefinitions != null) __obj.updateDynamic("menuItemDefinitions")(menuItemDefinitions.asInstanceOf[js.Any])
-    if (printMaxWidth != null) __obj.updateDynamic("printMaxWidth")(printMaxWidth.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showTable)) __obj.updateDynamic("showTable")(showTable.asInstanceOf[js.Any])
-    if (sourceHeight != null) __obj.updateDynamic("sourceHeight")(sourceHeight.asInstanceOf[js.Any])
-    if (sourceWidth != null) __obj.updateDynamic("sourceWidth")(sourceWidth.asInstanceOf[js.Any])
-    if (tableCaption != null) __obj.updateDynamic("tableCaption")(tableCaption.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (!js.isUndefined(useMultiLevelHeaders)) __obj.updateDynamic("useMultiLevelHeaders")(useMultiLevelHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(useRowspanHeaders)) __obj.updateDynamic("useRowspanHeaders")(useRowspanHeaders.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportingOptions]
   }
+  
+  extension [Self <: ExportingOptions](x: Self) {
+    
+    inline def setAccessibility(value: ExportingAccessibilityOptions): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAllowHTML(value: Boolean): Self = StObject.set(x, "allowHTML", value.asInstanceOf[js.Any])
+    
+    inline def setAllowHTMLUndefined: Self = StObject.set(x, "allowHTML", js.undefined)
+    
+    inline def setButtons(value: ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    
+    inline def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
+    
+    inline def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
+    
+    inline def setCsv(value: ExportingCsvOptions): Self = StObject.set(x, "csv", value.asInstanceOf[js.Any])
+    
+    inline def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setError(value: (/* options */ ExportingOptions, /* err */ js.Error) => Callback): Self = StObject.set(x, "error", js.Any.fromFunction2((t0: /* options */ ExportingOptions, t1: /* err */ js.Error) => (value(t0, t1)).runNow()))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setFallbackToExportServer(value: Boolean): Self = StObject.set(x, "fallbackToExportServer", value.asInstanceOf[js.Any])
+    
+    inline def setFallbackToExportServerUndefined: Self = StObject.set(x, "fallbackToExportServer", js.undefined)
+    
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    
+    inline def setFormAttributes(value: HTMLAttributes): Self = StObject.set(x, "formAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setFormAttributesUndefined: Self = StObject.set(x, "formAttributes", js.undefined)
+    
+    inline def setLibURL(value: String): Self = StObject.set(x, "libURL", value.asInstanceOf[js.Any])
+    
+    inline def setLibURLUndefined: Self = StObject.set(x, "libURL", js.undefined)
+    
+    inline def setMenuItemDefinitions(value: Dictionary[ExportingMenuObject]): Self = StObject.set(x, "menuItemDefinitions", value.asInstanceOf[js.Any])
+    
+    inline def setMenuItemDefinitionsUndefined: Self = StObject.set(x, "menuItemDefinitions", js.undefined)
+    
+    inline def setPdfFont(value: ExportingPdfFontOptions): Self = StObject.set(x, "pdfFont", value.asInstanceOf[js.Any])
+    
+    inline def setPdfFontUndefined: Self = StObject.set(x, "pdfFont", js.undefined)
+    
+    inline def setPrintMaxWidth(value: Double): Self = StObject.set(x, "printMaxWidth", value.asInstanceOf[js.Any])
+    
+    inline def setPrintMaxWidthUndefined: Self = StObject.set(x, "printMaxWidth", js.undefined)
+    
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setShowTable(value: Boolean): Self = StObject.set(x, "showTable", value.asInstanceOf[js.Any])
+    
+    inline def setShowTableUndefined: Self = StObject.set(x, "showTable", js.undefined)
+    
+    inline def setSourceHeight(value: Double): Self = StObject.set(x, "sourceHeight", value.asInstanceOf[js.Any])
+    
+    inline def setSourceHeightUndefined: Self = StObject.set(x, "sourceHeight", js.undefined)
+    
+    inline def setSourceWidth(value: Double): Self = StObject.set(x, "sourceWidth", value.asInstanceOf[js.Any])
+    
+    inline def setSourceWidthUndefined: Self = StObject.set(x, "sourceWidth", js.undefined)
+    
+    inline def setTableCaption(value: Boolean | String): Self = StObject.set(x, "tableCaption", value.asInstanceOf[js.Any])
+    
+    inline def setTableCaptionUndefined: Self = StObject.set(x, "tableCaption", js.undefined)
+    
+    inline def setType(value: ExportingMimeTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setUseMultiLevelHeaders(value: Boolean): Self = StObject.set(x, "useMultiLevelHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setUseMultiLevelHeadersUndefined: Self = StObject.set(x, "useMultiLevelHeaders", js.undefined)
+    
+    inline def setUseRowspanHeaders(value: Boolean): Self = StObject.set(x, "useRowspanHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setUseRowspanHeadersUndefined: Self = StObject.set(x, "useRowspanHeaders", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

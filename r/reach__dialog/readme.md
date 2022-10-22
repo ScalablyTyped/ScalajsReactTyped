@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__dialog
 
-Typings are for version 0.1
+Typings are for version 0.18.0
 
 ## Library description:
 Accessible React Modal Dialog.
@@ -10,10 +10,10 @@ Accessible React Modal Dialog.
 | ------------------ | :-------------: |
 | Full name          | @reach/dialog |
 | Keywords           | - |
-| # releases         | 30 |
-| # dependents       | 38 |
-| # downloads        | 1024358 |
-| # stars            | 0 |
+| # releases         | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 906377.3333333334 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Accessible React Modal Dialog.
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

@@ -1,20 +1,30 @@
 package typingsJapgolly.ionic.definitionsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PagePaginatorState extends PaginatorState {
+trait PagePaginatorState
+  extends StObject
+     with PaginatorState {
+  
   var page: Double
+  
   var page_size: js.UndefOr[Double] = js.undefined
 }
-
 object PagePaginatorState {
-  @scala.inline
-  def apply(done: Boolean, loaded: Double, page: Double, page_size: Int | Double = null): PagePaginatorState = {
+  
+  inline def apply(done: Boolean, loaded: Double, page: Double): PagePaginatorState = {
     val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], loaded = loaded.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PagePaginatorState]
   }
+  
+  extension [Self <: PagePaginatorState](x: Self) {
+    
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    
+    inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+    
+    inline def setPage_sizeUndefined: Self = StObject.set(x, "page_size", js.undefined)
+  }
 }
-

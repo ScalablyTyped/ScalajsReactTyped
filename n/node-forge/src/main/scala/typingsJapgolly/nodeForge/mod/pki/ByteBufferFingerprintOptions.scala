@@ -3,37 +3,46 @@ package typingsJapgolly.nodeForge.mod.pki
 import typingsJapgolly.nodeForge.mod.md.MessageDigest
 import typingsJapgolly.nodeForge.nodeForgeStrings.RSAPublicKey
 import typingsJapgolly.nodeForge.nodeForgeStrings.SubjectPublicKeyInfo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ByteBufferFingerprintOptions extends js.Object {
+trait ByteBufferFingerprintOptions extends StObject {
+  
   /**
     * @description the delimiter to use between bytes for `hex` encoded output
     */
   var delimiter: js.UndefOr[String] = js.undefined
+  
   /**
     * @description if not specified defaults to `md.md5`
     */
   var md: js.UndefOr[MessageDigest] = js.undefined
+  
   /**
     * @description The type of fingerprint. If not specified, defaults to 'RSAPublicKey'
     */
   var `type`: js.UndefOr[SubjectPublicKeyInfo | RSAPublicKey] = js.undefined
 }
-
 object ByteBufferFingerprintOptions {
-  @scala.inline
-  def apply(
-    delimiter: String = null,
-    md: MessageDigest = null,
-    `type`: SubjectPublicKeyInfo | RSAPublicKey = null
-  ): ByteBufferFingerprintOptions = {
+  
+  inline def apply(): ByteBufferFingerprintOptions = {
     val __obj = js.Dynamic.literal()
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ByteBufferFingerprintOptions]
   }
+  
+  extension [Self <: ByteBufferFingerprintOptions](x: Self) {
+    
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    
+    inline def setMd(value: MessageDigest): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+    
+    inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+    
+    inline def setType(value: SubjectPublicKeyInfo | RSAPublicKey): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

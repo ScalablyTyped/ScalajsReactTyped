@@ -1,16 +1,18 @@
 package typingsJapgolly.sharepoint.SP
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.microsoftAjax.Sys.Net.WebRequestExecutor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.ProxyWebRequestExecutorFactory")
-@js.native
-class ProxyWebRequestExecutorFactory protected () extends IWebRequestExecutorFactory {
-  def this(url: String) = this()
-  def this(url: String, options: js.Any) = this()
-  /* CompleteClass */
-  override def createWebRequestExecutor(): WebRequestExecutor = js.native
+trait ProxyWebRequestExecutorFactory
+  extends StObject
+     with IWebRequestExecutorFactory
+object ProxyWebRequestExecutorFactory {
+  
+  inline def apply(createWebRequestExecutor: CallbackTo[WebRequestExecutor]): ProxyWebRequestExecutorFactory = {
+    val __obj = js.Dynamic.literal(createWebRequestExecutor = createWebRequestExecutor.toJsFn)
+    __obj.asInstanceOf[ProxyWebRequestExecutorFactory]
+  }
 }
-

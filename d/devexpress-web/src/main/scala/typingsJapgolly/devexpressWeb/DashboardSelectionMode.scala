@@ -1,19 +1,10 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DashboardSelectionMode")
-@js.native
-class DashboardSelectionMode () extends js.Object
-
-/* static members */
-@JSGlobal("DashboardSelectionMode")
-@js.native
-object DashboardSelectionMode extends js.Object {
-  var Multiple: String = js.native
-  var None: String = js.native
-  var Single: String = js.native
-}
-
+/**
+  * Lists values that specify the selection mode for the Master-Filtering feature.
+  */
+trait DashboardSelectionMode extends StObject

@@ -1,27 +1,17 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.kendoUi.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("kendo.mobile.ui.DetailButton")
 @js.native
-class DetailButton protected ()
-  extends typingsJapgolly.kendoUi.kendo.ui.Widget {
-  def this(element: Element) = this()
-  def this(element: Element, options: DetailButtonOptions) = this()
+trait DetailButton
+  extends StObject
+     with typingsJapgolly.kendoUi.kendo.ui.Widget {
+  
   @JSName("options")
   var options_DetailButton: DetailButtonOptions = js.native
+  
   var wrapper: JQuery = js.native
 }
-
-/* static members */
-@JSGlobal("kendo.mobile.ui.DetailButton")
-@js.native
-object DetailButton extends js.Object {
-  var fn: DetailButton = js.native
-  def extend(proto: js.Object): DetailButton = js.native
-}
-

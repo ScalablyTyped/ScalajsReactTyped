@@ -1,20 +1,23 @@
 package typingsJapgolly.typescript.mod.server
 
 import typingsJapgolly.typescript.typescriptStrings.typesRegistry
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TypesRegistryRequest extends js.Object {
+trait TypesRegistryRequest extends StObject {
+  
   val kind: typesRegistry
 }
-
 object TypesRegistryRequest {
-  @scala.inline
-  def apply(kind: typesRegistry): TypesRegistryRequest = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
   
+  inline def apply(): TypesRegistryRequest = {
+    val __obj = js.Dynamic.literal(kind = "typesRegistry")
     __obj.asInstanceOf[TypesRegistryRequest]
   }
+  
+  extension [Self <: TypesRegistryRequest](x: Self) {
+    
+    inline def setKind(value: typesRegistry): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+  }
 }
-

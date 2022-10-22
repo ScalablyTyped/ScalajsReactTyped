@@ -1,14 +1,27 @@
 package typingsJapgolly.nodeSass.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncContext extends Context {
+trait AsyncContext
+  extends StObject
+     with Context {
+  
   @JSName("callback")
-  var callback_Original: SassRenderCallback = js.native
+  def callback_MAsyncContext(err: SassError, result: Result): Any
   @JSName("callback")
-  def callback_MAsyncContext(err: SassError, result: Result): js.Any = js.native
+  var callback_Original: SassRenderCallback
 }
-
+object AsyncContext {
+  
+  inline def apply(callback: (/* err */ SassError, /* result */ Result) => Any, options: Options): AsyncContext = {
+    val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AsyncContext]
+  }
+  
+  extension [Self <: AsyncContext](x: Self) {
+    
+    inline def setCallback(value: (/* err */ SassError, /* result */ Result) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+  }
+}

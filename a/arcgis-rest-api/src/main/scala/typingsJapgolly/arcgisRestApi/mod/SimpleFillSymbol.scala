@@ -1,33 +1,46 @@
 package typingsJapgolly.arcgisRestApi.mod
 
 import typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSFS
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SimpleFillSymbol extends Symbol {
+trait SimpleFillSymbol
+  extends StObject
+     with Symbol {
+  
   var color: js.UndefOr[Color] = js.undefined
+  
   var outline: js.UndefOr[SimpleLineSymbol] = js.undefined
+  
   @JSName("style")
   var style_SimpleFillSymbol: js.UndefOr[SimpleFillSymbolStyle] = js.undefined
+  
   @JSName("type")
   var type_SimpleFillSymbol: esriSFS
 }
-
 object SimpleFillSymbol {
-  @scala.inline
-  def apply(
-    `type`: esriSFS,
-    color: Color = null,
-    outline: SimpleLineSymbol = null,
-    style: SimpleFillSymbolStyle = null
-  ): SimpleFillSymbol = {
+  
+  inline def apply(): SimpleFillSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriSFS")
     __obj.asInstanceOf[SimpleFillSymbol]
   }
+  
+  extension [Self <: SimpleFillSymbol](x: Self) {
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setOutline(value: SimpleLineSymbol): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    inline def setStyle(value: SimpleFillSymbolStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setType(value: esriSFS): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

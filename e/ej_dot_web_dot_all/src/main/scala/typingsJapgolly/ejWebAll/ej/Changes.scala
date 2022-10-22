@@ -1,23 +1,42 @@
 package typingsJapgolly.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Changes extends js.Object {
-  var added: js.UndefOr[js.Array[_]] = js.undefined
-  var changed: js.UndefOr[js.Array[_]] = js.undefined
-  var deleted: js.UndefOr[js.Array[_]] = js.undefined
+trait Changes extends StObject {
+  
+  var added: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var changed: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var deleted: js.UndefOr[js.Array[Any]] = js.undefined
 }
-
 object Changes {
-  @scala.inline
-  def apply(added: js.Array[_] = null, changed: js.Array[_] = null, deleted: js.Array[_] = null): Changes = {
+  
+  inline def apply(): Changes = {
     val __obj = js.Dynamic.literal()
-    if (added != null) __obj.updateDynamic("added")(added.asInstanceOf[js.Any])
-    if (changed != null) __obj.updateDynamic("changed")(changed.asInstanceOf[js.Any])
-    if (deleted != null) __obj.updateDynamic("deleted")(deleted.asInstanceOf[js.Any])
     __obj.asInstanceOf[Changes]
   }
+  
+  extension [Self <: Changes](x: Self) {
+    
+    inline def setAdded(value: js.Array[Any]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+    
+    inline def setAddedUndefined: Self = StObject.set(x, "added", js.undefined)
+    
+    inline def setAddedVarargs(value: Any*): Self = StObject.set(x, "added", js.Array(value*))
+    
+    inline def setChanged(value: js.Array[Any]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
+    
+    inline def setChangedUndefined: Self = StObject.set(x, "changed", js.undefined)
+    
+    inline def setChangedVarargs(value: Any*): Self = StObject.set(x, "changed", js.Array(value*))
+    
+    inline def setDeleted(value: js.Array[Any]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    
+    inline def setDeletedVarargs(value: Any*): Self = StObject.set(x, "deleted", js.Array(value*))
+  }
 }
-

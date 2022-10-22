@@ -2,111 +2,116 @@ package typingsJapgolly.emojiMart.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Component
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.emojiMart.dataMod.Data
-import typingsJapgolly.emojiMart.nimbleEmojiIndexMod.CustomEmoji
-import typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiData
-import typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiSkin
-import typingsJapgolly.emojiMart.nimblePickerMod.NimblePickerProps
-import typingsJapgolly.emojiMart.nimblePickerMod.default
-import typingsJapgolly.emojiMart.sharedPropsMod.CategoryName
-import typingsJapgolly.emojiMart.sharedPropsMod.CustomIcons
-import typingsJapgolly.emojiMart.sharedPropsMod.EmojiSet
-import typingsJapgolly.emojiMart.sharedPropsMod.EmojiSheetSize
-import typingsJapgolly.emojiMart.sharedPropsMod.PartialI18n
+import japgolly.scalajs.react.facade.React.Component
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.emojiMart.distEsComponentsPickerNimblePickerMod.NimblePickerProps
+import typingsJapgolly.emojiMart.distEsUtilsDataMod.Data
+import typingsJapgolly.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.CustomEmoji
+import typingsJapgolly.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiData
+import typingsJapgolly.emojiMart.distEsUtilsEmojiIndexNimbleEmojiIndexMod.EmojiSkin
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.CategoryName
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.CustomIcons
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.EmojiSet
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.EmojiSheetSize
+import typingsJapgolly.emojiMart.distEsUtilsSharedPropsMod.PartialI18n
+import typingsJapgolly.emojiMart.emojiMartStrings.auto
+import typingsJapgolly.emojiMart.emojiMartStrings.dark
+import typingsJapgolly.emojiMart.emojiMartStrings.light
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NimblePicker {
-  def apply(
-    data: Data,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backgroundImageFn: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => CallbackTo[String] = null,
-    color: String = null,
-    custom: js.Array[CustomEmoji] = null,
-    darkMode: js.UndefOr[Boolean] = js.undefined,
-    defaultSkin: EmojiSkin = null,
-    emoji: String = null,
-    emojiSize: Int | Double = null,
-    emojiTooltip: js.UndefOr[Boolean] = js.undefined,
-    emojisToShowFilter: /* emoji */ EmojiData => CallbackTo[Boolean] = null,
-    exclude: js.Array[CategoryName] = null,
-    i18n: PartialI18n = null,
-    icons: CustomIcons = null,
-    include: js.Array[CategoryName] = null,
-    native: js.UndefOr[Boolean] = js.undefined,
-    notFound: js.UndefOr[CallbackTo[Component[js.Object, js.Object]]] = js.undefined,
-    notFoundEmoji: String = null,
-    onClick: (/* emoji */ EmojiData, /* e */ ReactMouseEventFrom[HTMLElement]) => Callback = null,
-    onSelect: /* emoji */ EmojiData => Callback = null,
-    onSkinChange: /* skin */ EmojiSkin => Callback = null,
-    perLine: Int | Double = null,
-    recent: js.Array[String] = null,
-    set: EmojiSet = null,
-    sheetSize: EmojiSheetSize = null,
-    showPreview: js.UndefOr[Boolean] = js.undefined,
-    showSkinTones: js.UndefOr[Boolean] = js.undefined,
-    skin: EmojiSkin = null,
-    skinEmoji: String = null,
-    style: CSSProperties = null,
-    title: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[NimblePickerProps, default, Unit, NimblePickerProps] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (backgroundImageFn != null) __obj.updateDynamic("backgroundImageFn")(js.Any.fromFunction2((t0: /* set */ typingsJapgolly.emojiMart.sharedPropsMod.EmojiSet, t1: /* sheetSize */ typingsJapgolly.emojiMart.sharedPropsMod.EmojiSheetSize) => backgroundImageFn(t0, t1).runNow()))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
-    if (!js.isUndefined(darkMode)) __obj.updateDynamic("darkMode")(darkMode.asInstanceOf[js.Any])
-    if (defaultSkin != null) __obj.updateDynamic("defaultSkin")(defaultSkin.asInstanceOf[js.Any])
-    if (emoji != null) __obj.updateDynamic("emoji")(emoji.asInstanceOf[js.Any])
-    if (emojiSize != null) __obj.updateDynamic("emojiSize")(emojiSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(emojiTooltip)) __obj.updateDynamic("emojiTooltip")(emojiTooltip.asInstanceOf[js.Any])
-    if (emojisToShowFilter != null) __obj.updateDynamic("emojisToShowFilter")(js.Any.fromFunction1((t0: /* emoji */ typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiData) => emojisToShowFilter(t0).runNow()))
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    if (i18n != null) __obj.updateDynamic("i18n")(i18n.asInstanceOf[js.Any])
-    if (icons != null) __obj.updateDynamic("icons")(icons.asInstanceOf[js.Any])
-    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
-    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native.asInstanceOf[js.Any])
-    notFound.foreach(p => __obj.updateDynamic("notFound")(p.toJsFn))
-    if (notFoundEmoji != null) __obj.updateDynamic("notFoundEmoji")(notFoundEmoji.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction2((t0: /* emoji */ typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiData, t1: /* e */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement]) => onClick(t0, t1).runNow()))
-    if (onSelect != null) __obj.updateDynamic("onSelect")(js.Any.fromFunction1((t0: /* emoji */ typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiData) => onSelect(t0).runNow()))
-    if (onSkinChange != null) __obj.updateDynamic("onSkinChange")(js.Any.fromFunction1((t0: /* skin */ typingsJapgolly.emojiMart.nimbleEmojiIndexMod.EmojiSkin) => onSkinChange(t0).runNow()))
-    if (perLine != null) __obj.updateDynamic("perLine")(perLine.asInstanceOf[js.Any])
-    if (recent != null) __obj.updateDynamic("recent")(recent.asInstanceOf[js.Any])
-    if (set != null) __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
-    if (sheetSize != null) __obj.updateDynamic("sheetSize")(sheetSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPreview)) __obj.updateDynamic("showPreview")(showPreview.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkinTones)) __obj.updateDynamic("showSkinTones")(showSkinTones.asInstanceOf[js.Any])
-    if (skin != null) __obj.updateDynamic("skin")(skin.asInstanceOf[js.Any])
-    if (skinEmoji != null) __obj.updateDynamic("skinEmoji")(skinEmoji.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.emojiMart.nimblePickerMod.NimblePickerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.emojiMart.nimblePickerMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.emojiMart.nimblePickerMod.NimblePickerProps])(children: _*)
+  inline def apply(data: Data): Builder = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[NimblePickerProps]))
   }
-  @JSImport("emoji-mart/dist-es/components/picker/nimble-picker", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("emoji-mart/dist-es/components", "NimblePicker")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.emojiMart.distEsComponentsMod.NimblePicker] {
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def backgroundImageFn(value: (/* set */ EmojiSet, /* sheetSize */ EmojiSheetSize) => String): this.type = set("backgroundImageFn", js.Any.fromFunction2(value))
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def custom(value: js.Array[CustomEmoji]): this.type = set("custom", value.asInstanceOf[js.Any])
+    
+    inline def customVarargs(value: CustomEmoji*): this.type = set("custom", js.Array(value*))
+    
+    inline def defaultSkin(value: EmojiSkin): this.type = set("defaultSkin", value.asInstanceOf[js.Any])
+    
+    inline def emoji(value: String): this.type = set("emoji", value.asInstanceOf[js.Any])
+    
+    inline def emojiSize(value: Double): this.type = set("emojiSize", value.asInstanceOf[js.Any])
+    
+    inline def emojiTooltip(value: Boolean): this.type = set("emojiTooltip", value.asInstanceOf[js.Any])
+    
+    inline def emojisToShowFilter(value: /* emoji */ EmojiData => Boolean): this.type = set("emojisToShowFilter", js.Any.fromFunction1(value))
+    
+    inline def enableFrequentEmojiSort(value: Boolean): this.type = set("enableFrequentEmojiSort", value.asInstanceOf[js.Any])
+    
+    inline def exclude(value: js.Array[CategoryName]): this.type = set("exclude", value.asInstanceOf[js.Any])
+    
+    inline def excludeVarargs(value: CategoryName*): this.type = set("exclude", js.Array(value*))
+    
+    inline def i18n(value: PartialI18n): this.type = set("i18n", value.asInstanceOf[js.Any])
+    
+    inline def icons(value: CustomIcons): this.type = set("icons", value.asInstanceOf[js.Any])
+    
+    inline def include(value: js.Array[CategoryName]): this.type = set("include", value.asInstanceOf[js.Any])
+    
+    inline def includeVarargs(value: CategoryName*): this.type = set("include", js.Array(value*))
+    
+    inline def native(value: Boolean): this.type = set("native", value.asInstanceOf[js.Any])
+    
+    inline def notFound(value: CallbackTo[Component[js.Object, js.Object]]): this.type = set("notFound", value.toJsFn)
+    
+    inline def notFoundEmoji(value: String): this.type = set("notFoundEmoji", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: (/* emoji */ EmojiData, /* e */ ReactMouseEventFrom[HTMLElement]) => Callback): this.type = set("onClick", js.Any.fromFunction2((t0: /* emoji */ EmojiData, t1: /* e */ ReactMouseEventFrom[HTMLElement]) => (value(t0, t1)).runNow()))
+    
+    inline def onSelect(value: /* emoji */ EmojiData => Callback): this.type = set("onSelect", js.Any.fromFunction1((t0: /* emoji */ EmojiData) => value(t0).runNow()))
+    
+    inline def onSkinChange(value: /* skin */ EmojiSkin => Callback): this.type = set("onSkinChange", js.Any.fromFunction1((t0: /* skin */ EmojiSkin) => value(t0).runNow()))
+    
+    inline def perLine(value: Double): this.type = set("perLine", value.asInstanceOf[js.Any])
+    
+    inline def recent(value: js.Array[String]): this.type = set("recent", value.asInstanceOf[js.Any])
+    
+    inline def recentVarargs(value: String*): this.type = set("recent", js.Array(value*))
+    
+    inline def set(value: EmojiSet): this.type = set("set", value.asInstanceOf[js.Any])
+    
+    inline def sheetSize(value: EmojiSheetSize): this.type = set("sheetSize", value.asInstanceOf[js.Any])
+    
+    inline def showPreview(value: Boolean): this.type = set("showPreview", value.asInstanceOf[js.Any])
+    
+    inline def showSkinTones(value: Boolean): this.type = set("showSkinTones", value.asInstanceOf[js.Any])
+    
+    inline def skin(value: EmojiSkin): this.type = set("skin", value.asInstanceOf[js.Any])
+    
+    inline def skinEmoji(value: String): this.type = set("skinEmoji", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: auto | light | dark): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def useButton(value: Boolean): this.type = set("useButton", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: NimblePickerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,34 +1,59 @@
 package typingsJapgolly.materializeCss.mod
 
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.materializeCss.M.ParallaxOptions
 import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialParallaxOptions
+import typingsJapgolly.materializeCss.anon.PartialParallaxOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "Parallax")
 @js.native
-class Parallax ()
-  extends typingsJapgolly.materializeCss.M.Parallax
-
-/* static members */
-@JSImport("materialize-css", "Parallax")
-@js.native
-object Parallax extends js.Object {
+open class Parallax ()
+  extends StObject
+     with typingsJapgolly.materializeCss.M.Component[ParallaxOptions] {
+  
+  /**
+    * Destroy plugin instance and teardown
+    */
+  /* CompleteClass */
+  override def destroy(): Unit = js.native
+  
+  /**
+    * The DOM element the plugin was initialized with
+    */
+  /* CompleteClass */
+  var el: Element = js.native
+  
+  /**
+    * The options the instance was initialized with
+    */
+  /* CompleteClass */
+  var options: ParallaxOptions = js.native
+}
+object Parallax {
+  
+  @JSImport("materialize-css", "Parallax")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get Instance
     */
-  def getInstance(elem: Element): typingsJapgolly.materializeCss.M.Parallax = js.native
-  /**
-    * Init Parallaxs
-    */
-  def init(els: MElements): js.Array[typingsJapgolly.materializeCss.M.Parallax] = js.native
-  def init(els: MElements, options: PartialParallaxOptions): js.Array[typingsJapgolly.materializeCss.M.Parallax] = js.native
+  /* static member */
+  inline def getInstance(elem: Element): typingsJapgolly.materializeCss.M.Parallax = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materializeCss.M.Parallax]
+  
   /**
     * Init Parallax
     */
-  def init(els: typingsJapgolly.std.Element): typingsJapgolly.materializeCss.M.Parallax = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialParallaxOptions): typingsJapgolly.materializeCss.M.Parallax = js.native
+  /* static member */
+  inline def init(els: Element): typingsJapgolly.materializeCss.M.Parallax = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.materializeCss.M.Parallax]
+  inline def init(els: Element, options: PartialParallaxOptions): typingsJapgolly.materializeCss.M.Parallax = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.materializeCss.M.Parallax]
+  /**
+    * Init Parallaxs
+    */
+  /* static member */
+  inline def init(els: MElements): js.Array[typingsJapgolly.materializeCss.M.Parallax] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typingsJapgolly.materializeCss.M.Parallax]]
+  inline def init(els: MElements, options: PartialParallaxOptions): js.Array[typingsJapgolly.materializeCss.M.Parallax] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typingsJapgolly.materializeCss.M.Parallax]]
 }
-

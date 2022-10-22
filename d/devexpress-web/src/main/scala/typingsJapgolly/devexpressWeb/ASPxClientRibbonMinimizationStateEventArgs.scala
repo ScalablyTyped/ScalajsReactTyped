@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRibbon.MinimizationStateChanged event.
   */
-@JSGlobal("ASPxClientRibbonMinimizationStateEventArgs")
-@js.native
-class ASPxClientRibbonMinimizationStateEventArgs protected () extends ASPxClientEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientRibbonMinimizationStateEventArgs class with the specified setting.
-    * @param ribbonState The integer value indicating the new ribbon minimization state.
-    */
-  def this(ribbonState: Double) = this()
+trait ASPxClientRibbonMinimizationStateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
+  
   /**
     * Returns the value indicating the new ribbon state.
     */
-  var ribbonState: Double = js.native
+  var ribbonState: Double
 }
-
+object ASPxClientRibbonMinimizationStateEventArgs {
+  
+  inline def apply(ribbonState: Double): ASPxClientRibbonMinimizationStateEventArgs = {
+    val __obj = js.Dynamic.literal(ribbonState = ribbonState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientRibbonMinimizationStateEventArgs]
+  }
+  
+  extension [Self <: ASPxClientRibbonMinimizationStateEventArgs](x: Self) {
+    
+    inline def setRibbonState(value: Double): Self = StObject.set(x, "ribbonState", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,21 +1,30 @@
 package typingsJapgolly.phaser.MatterJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICollisionFilter extends js.Object {
+trait ICollisionFilter extends StObject {
+  
   var category: Double
+  
   var group: Double
+  
   var mask: Double
 }
-
 object ICollisionFilter {
-  @scala.inline
-  def apply(category: Double, group: Double, mask: Double): ICollisionFilter = {
-    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any])
   
+  inline def apply(category: Double, group: Double, mask: Double): ICollisionFilter = {
+    val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICollisionFilter]
   }
+  
+  extension [Self <: ICollisionFilter](x: Self) {
+    
+    inline def setCategory(value: Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setGroup(value: Double): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    
+    inline def setMask(value: Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+  }
 }
-

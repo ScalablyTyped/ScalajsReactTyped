@@ -1,75 +1,59 @@
 package typingsJapgolly.nodeSql2
 
 import typingsJapgolly.nodeSql2.mod.SQLDialects
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeSql2Strings {
-  @js.native
-  sealed trait Columns extends js.Object
   
   @js.native
-  sealed trait Queryable extends js.Object
+  sealed trait cascade extends StObject
+  inline def cascade: cascade = "cascade".asInstanceOf[cascade]
   
   @js.native
-  sealed trait TableDefinition extends js.Object
+  sealed trait mssql
+    extends StObject
+       with SQLDialects
+  inline def mssql: mssql = "mssql".asInstanceOf[mssql]
   
   @js.native
-  sealed trait cascade extends js.Object
+  sealed trait mysql
+    extends StObject
+       with SQLDialects
+  inline def mysql: mysql = "mysql".asInstanceOf[mysql]
   
   @js.native
-  sealed trait mssql extends SQLDialects
+  sealed trait `no action` extends StObject
+  inline def `no action`: `no action` = ("no action").asInstanceOf[`no action`]
   
   @js.native
-  sealed trait mysql extends SQLDialects
+  sealed trait oracle
+    extends StObject
+       with SQLDialects
+  inline def oracle: oracle = "oracle".asInstanceOf[oracle]
   
   @js.native
-  sealed trait `no action` extends js.Object
+  sealed trait postgres
+    extends StObject
+       with SQLDialects
+  inline def postgres: postgres = "postgres".asInstanceOf[postgres]
   
   @js.native
-  sealed trait oracle extends SQLDialects
+  sealed trait restrict extends StObject
+  inline def restrict: restrict = "restrict".asInstanceOf[restrict]
   
   @js.native
-  sealed trait postgres extends SQLDialects
+  sealed trait `set default` extends StObject
+  inline def `set default`: `set default` = ("set default").asInstanceOf[`set default`]
   
   @js.native
-  sealed trait restrict extends js.Object
+  sealed trait `set null` extends StObject
+  inline def `set null`: `set null` = ("set null").asInstanceOf[`set null`]
   
   @js.native
-  sealed trait `set default` extends js.Object
-  
-  @js.native
-  sealed trait `set null` extends js.Object
-  
-  @js.native
-  sealed trait sqlite extends SQLDialects
-  
-  @scala.inline
-  def Columns: Columns = "Columns".asInstanceOf[Columns]
-  @scala.inline
-  def Queryable: Queryable = "Queryable".asInstanceOf[Queryable]
-  @scala.inline
-  def TableDefinition: TableDefinition = "TableDefinition".asInstanceOf[TableDefinition]
-  @scala.inline
-  def cascade: cascade = "cascade".asInstanceOf[cascade]
-  @scala.inline
-  def mssql: mssql = "mssql".asInstanceOf[mssql]
-  @scala.inline
-  def mysql: mysql = "mysql".asInstanceOf[mysql]
-  @scala.inline
-  def `no action`: `no action` = "no action".asInstanceOf[`no action`]
-  @scala.inline
-  def oracle: oracle = "oracle".asInstanceOf[oracle]
-  @scala.inline
-  def postgres: postgres = "postgres".asInstanceOf[postgres]
-  @scala.inline
-  def restrict: restrict = "restrict".asInstanceOf[restrict]
-  @scala.inline
-  def `set default`: `set default` = "set default".asInstanceOf[`set default`]
-  @scala.inline
-  def `set null`: `set null` = "set null".asInstanceOf[`set null`]
-  @scala.inline
-  def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
+  sealed trait sqlite
+    extends StObject
+       with SQLDialects
+  inline def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
 }
-

@@ -1,18 +1,19 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ApplePayShippingMethodSelectedEvent class defines the attribute contained by the ApplePaySession.onshippingmethodselected callback function.
   */
-@JSGlobal("ApplePayJS.ApplePayShippingMethodSelectedEvent")
 @js.native
-abstract class ApplePayShippingMethodSelectedEvent () extends Event {
+trait ApplePayShippingMethodSelectedEvent
+  extends StObject
+     with Event {
+  
   /**
     * The shipping method selected by the user.
     */
   val shippingMethod: ApplePayShippingMethod = js.native
 }
-

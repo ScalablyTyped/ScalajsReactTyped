@@ -1,24 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WindowsDeviceADAccount extends WindowsDeviceAccount {
+trait WindowsDeviceADAccount
+  extends StObject
+     with WindowsDeviceAccount {
+  
   // Not yet documented
-  var domainName: js.UndefOr[String] = js.undefined
+  var domainName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Not yet documented
-  var userName: js.UndefOr[String] = js.undefined
+  var userName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object WindowsDeviceADAccount {
-  @scala.inline
-  def apply(domainName: String = null, password: String = null, userName: String = null): WindowsDeviceADAccount = {
+  
+  inline def apply(): WindowsDeviceADAccount = {
     val __obj = js.Dynamic.literal()
-    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (userName != null) __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsDeviceADAccount]
   }
+  
+  extension [Self <: WindowsDeviceADAccount](x: Self) {
+    
+    inline def setDomainName(value: NullableOption[String]): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    
+    inline def setDomainNameNull: Self = StObject.set(x, "domainName", null)
+    
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    
+    inline def setUserName(value: NullableOption[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    
+    inline def setUserNameNull: Self = StObject.set(x, "userName", null)
+    
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+  }
 }
-

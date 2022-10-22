@@ -10,13 +10,13 @@ qs for koa
 | ------------------ | :-------------: |
 | Full name          | koa-qs |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 68 |
-| # downloads        | 530327 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 82858.66666666667 |
+| # stars            | 83.0 |
 
 ## Links
-- [Homepage](https://github.com/koajs/qs)
+- [Homepage](https://github.com/koajs/qs#readme)
 - [Bugs](https://github.com/koajs/qs/issues)
 - [Repository](https://github.com/koajs/qs)
 - [Npm](https://www.npmjs.com/package/koa-qs)

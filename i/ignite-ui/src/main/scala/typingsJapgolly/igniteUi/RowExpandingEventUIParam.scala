@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowExpandingEventUIParam extends js.Object {
+trait RowExpandingEventUIParam extends StObject {
+  
   /**
-  	 * Gets access the hierarchical grid object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets access the hierarchical grid object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets access the row element for the row that's about to be expanded.
-  	 */
+    * Gets access the row element for the row that's about to be expanded.
+    */
   var parentrow: js.UndefOr[String] = js.undefined
 }
-
 object RowExpandingEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null, parentrow: String = null): RowExpandingEventUIParam = {
+  
+  inline def apply(): RowExpandingEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowExpandingEventUIParam]
   }
+  
+  extension [Self <: RowExpandingEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setParentrow(value: String): Self = StObject.set(x, "parentrow", value.asInstanceOf[js.Any])
+    
+    inline def setParentrowUndefined: Self = StObject.set(x, "parentrow", js.undefined)
+  }
 }
-

@@ -1,60 +1,81 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SeriesCursorMouseMoveEventUIParam extends js.Object {
+trait SeriesCursorMouseMoveEventUIParam extends StObject {
+  
   /**
-  	 * Used to get item brush.
-  	 */
-  var actualItemBrush: js.UndefOr[js.Any] = js.undefined
+    * Used to get item brush.
+    */
+  var actualItemBrush: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get series brush.
-  	 */
-  var actualSeriesBrush: js.UndefOr[js.Any] = js.undefined
+    * Used to get series brush.
+    */
+  var actualSeriesBrush: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to chart object.
-  	 */
-  var chart: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to chart object.
+    */
+  var chart: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to current series item object.
-  	 */
-  var item: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to current series item object.
+    */
+  var item: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get mouse X position.
-  	 */
-  var positionX: js.UndefOr[js.Any] = js.undefined
+    * Used to get mouse X position.
+    */
+  var positionX: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get mouse Y position.
-  	 */
-  var positionY: js.UndefOr[js.Any] = js.undefined
+    * Used to get mouse Y position.
+    */
+  var positionY: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Used to get reference to current series object.
-  	 */
-  var series: js.UndefOr[js.Any] = js.undefined
+    * Used to get reference to current series object.
+    */
+  var series: js.UndefOr[Any] = js.undefined
 }
-
 object SeriesCursorMouseMoveEventUIParam {
-  @scala.inline
-  def apply(
-    actualItemBrush: js.Any = null,
-    actualSeriesBrush: js.Any = null,
-    chart: js.Any = null,
-    item: js.Any = null,
-    positionX: js.Any = null,
-    positionY: js.Any = null,
-    series: js.Any = null
-  ): SeriesCursorMouseMoveEventUIParam = {
+  
+  inline def apply(): SeriesCursorMouseMoveEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush.asInstanceOf[js.Any])
-    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush.asInstanceOf[js.Any])
-    if (chart != null) __obj.updateDynamic("chart")(chart.asInstanceOf[js.Any])
-    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (positionX != null) __obj.updateDynamic("positionX")(positionX.asInstanceOf[js.Any])
-    if (positionY != null) __obj.updateDynamic("positionY")(positionY.asInstanceOf[js.Any])
-    if (series != null) __obj.updateDynamic("series")(series.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesCursorMouseMoveEventUIParam]
   }
+  
+  extension [Self <: SeriesCursorMouseMoveEventUIParam](x: Self) {
+    
+    inline def setActualItemBrush(value: Any): Self = StObject.set(x, "actualItemBrush", value.asInstanceOf[js.Any])
+    
+    inline def setActualItemBrushUndefined: Self = StObject.set(x, "actualItemBrush", js.undefined)
+    
+    inline def setActualSeriesBrush(value: Any): Self = StObject.set(x, "actualSeriesBrush", value.asInstanceOf[js.Any])
+    
+    inline def setActualSeriesBrushUndefined: Self = StObject.set(x, "actualSeriesBrush", js.undefined)
+    
+    inline def setChart(value: Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    
+    inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setPositionX(value: Any): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
+    
+    inline def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
+    
+    inline def setPositionY(value: Any): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
+    
+    inline def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
+    
+    inline def setSeries(value: Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+  }
 }
-

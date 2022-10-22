@@ -13,9 +13,9 @@ import typingsJapgolly.officeJs.officeJsStrings.LeftToRight
 import typingsJapgolly.officeJs.officeJsStrings.Right
 import typingsJapgolly.officeJs.officeJsStrings.RightToLeft
 import typingsJapgolly.officeJs.officeJsStrings.Top
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -23,7 +23,8 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesFormat extends js.Object {
+trait CellPropertiesFormat extends StObject {
+  
   /**
     *
     * Represents the `autoIndent` property.
@@ -31,6 +32,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var autoIndent: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Represents the `borders` property.
@@ -38,6 +40,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var borders: js.UndefOr[CellBorderCollection] = js.undefined
+  
   /**
     *
     * Represents the `fill` property.
@@ -45,6 +48,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var fill: js.UndefOr[CellPropertiesFill] = js.undefined
+  
   /**
     *
     * Represents the `font` property.
@@ -52,6 +56,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var font: js.UndefOr[CellPropertiesFont] = js.undefined
+  
   /**
     *
     * Represents the `horizontalAlignment` property.
@@ -61,6 +66,7 @@ trait CellPropertiesFormat extends js.Object {
   var horizontalAlignment: js.UndefOr[
     HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
   ] = js.undefined
+  
   /**
     *
     * Represents the `indentLevel` property.
@@ -68,6 +74,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var indentLevel: js.UndefOr[Double] = js.undefined
+  
   /**
     *
     * Represents the `protection` property.
@@ -75,6 +82,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var protection: js.UndefOr[CellPropertiesProtection] = js.undefined
+  
   /**
     *
     * Represents the `readingOrder` property.
@@ -82,6 +90,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
+  
   /**
     *
     * Represents the `shrinkToFit` property.
@@ -89,6 +98,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var shrinkToFit: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Represents the `textOrientation` property.
@@ -96,6 +106,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var textOrientation: js.UndefOr[Double] = js.undefined
+  
   /**
     *
     * Represents the `useStandardHeight` property.
@@ -103,6 +114,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var useStandardHeight: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Represents the `useStandardWidth` property.
@@ -110,6 +122,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var useStandardWidth: js.UndefOr[Boolean] = js.undefined
+  
   /**
     *
     * Represents the `verticalAlignment` property.
@@ -117,6 +130,7 @@ trait CellPropertiesFormat extends js.Object {
     * [Api set: ExcelApi 1.9]
     */
   var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
+  
   /**
     *
     * Represents the `wrapText` property.
@@ -125,41 +139,71 @@ trait CellPropertiesFormat extends js.Object {
     */
   var wrapText: js.UndefOr[Boolean] = js.undefined
 }
-
 object CellPropertiesFormat {
-  @scala.inline
-  def apply(
-    autoIndent: js.UndefOr[Boolean] = js.undefined,
-    borders: CellBorderCollection = null,
-    fill: CellPropertiesFill = null,
-    font: CellPropertiesFont = null,
-    horizontalAlignment: HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed = null,
-    indentLevel: Int | Double = null,
-    protection: CellPropertiesProtection = null,
-    readingOrder: ReadingOrder | Context | LeftToRight | RightToLeft = null,
-    shrinkToFit: js.UndefOr[Boolean] = js.undefined,
-    textOrientation: Int | Double = null,
-    useStandardHeight: js.UndefOr[Boolean] = js.undefined,
-    useStandardWidth: js.UndefOr[Boolean] = js.undefined,
-    verticalAlignment: VerticalAlignment | Top | Center | Bottom | Justify | Distributed = null,
-    wrapText: js.UndefOr[Boolean] = js.undefined
-  ): CellPropertiesFormat = {
+  
+  inline def apply(): CellPropertiesFormat = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent.asInstanceOf[js.Any])
-    if (borders != null) __obj.updateDynamic("borders")(borders.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
-    if (indentLevel != null) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
-    if (protection != null) __obj.updateDynamic("protection")(protection.asInstanceOf[js.Any])
-    if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
-    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
-    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight.asInstanceOf[js.Any])
-    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth.asInstanceOf[js.Any])
-    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesFormat]
   }
+  
+  extension [Self <: CellPropertiesFormat](x: Self) {
+    
+    inline def setAutoIndent(value: Boolean): Self = StObject.set(x, "autoIndent", value.asInstanceOf[js.Any])
+    
+    inline def setAutoIndentUndefined: Self = StObject.set(x, "autoIndent", js.undefined)
+    
+    inline def setBorders(value: CellBorderCollection): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
+    
+    inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+    
+    inline def setFill(value: CellPropertiesFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFont(value: CellPropertiesFont): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setHorizontalAlignment(
+      value: HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
+    ): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    
+    inline def setIndentLevel(value: Double): Self = StObject.set(x, "indentLevel", value.asInstanceOf[js.Any])
+    
+    inline def setIndentLevelUndefined: Self = StObject.set(x, "indentLevel", js.undefined)
+    
+    inline def setProtection(value: CellPropertiesProtection): Self = StObject.set(x, "protection", value.asInstanceOf[js.Any])
+    
+    inline def setProtectionUndefined: Self = StObject.set(x, "protection", js.undefined)
+    
+    inline def setReadingOrder(value: ReadingOrder | Context | LeftToRight | RightToLeft): Self = StObject.set(x, "readingOrder", value.asInstanceOf[js.Any])
+    
+    inline def setReadingOrderUndefined: Self = StObject.set(x, "readingOrder", js.undefined)
+    
+    inline def setShrinkToFit(value: Boolean): Self = StObject.set(x, "shrinkToFit", value.asInstanceOf[js.Any])
+    
+    inline def setShrinkToFitUndefined: Self = StObject.set(x, "shrinkToFit", js.undefined)
+    
+    inline def setTextOrientation(value: Double): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    
+    inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
+    
+    inline def setUseStandardHeight(value: Boolean): Self = StObject.set(x, "useStandardHeight", value.asInstanceOf[js.Any])
+    
+    inline def setUseStandardHeightUndefined: Self = StObject.set(x, "useStandardHeight", js.undefined)
+    
+    inline def setUseStandardWidth(value: Boolean): Self = StObject.set(x, "useStandardWidth", value.asInstanceOf[js.Any])
+    
+    inline def setUseStandardWidthUndefined: Self = StObject.set(x, "useStandardWidth", js.undefined)
+    
+    inline def setVerticalAlignment(value: VerticalAlignment | Top | Center | Bottom | Justify | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    
+    inline def setWrapText(value: Boolean): Self = StObject.set(x, "wrapText", value.asInstanceOf[js.Any])
+    
+    inline def setWrapTextUndefined: Self = StObject.set(x, "wrapText", js.undefined)
+  }
 }
-

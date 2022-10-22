@@ -1,54 +1,66 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialSliderOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.Slider")
-@js.native
-class Slider () extends Component[SliderOptions] {
+trait Slider
+  extends StObject
+     with Component[SliderOptions] {
+  
   /**
     * Index of current slide
     */
-  var activeIndex: Double = js.native
+  var activeIndex: Double
+  
   /**
     * Move to next slider
     */
-  def next(): Unit = js.native
+  def next(): Unit
+  
   /**
     * Pause slider autoslide
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
+  
   /**
     * Move to prev slider
     */
-  def prev(): Unit = js.native
+  def prev(): Unit
+  
   /**
     * Start slider autoslide
     */
-  def start(): Unit = js.native
+  def start(): Unit
 }
-
-/* static members */
-@JSGlobal("M.Slider")
-@js.native
-object Slider extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Slider = js.native
-  /**
-    * Init Sliders
-    */
-  def init(els: MElements): js.Array[Slider] = js.native
-  def init(els: MElements, options: PartialSliderOptions): js.Array[Slider] = js.native
-  /**
-    * Init Slider
-    */
-  def init(els: typingsJapgolly.std.Element): Slider = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialSliderOptions): Slider = js.native
+object Slider {
+  
+  inline def apply(
+    activeIndex: Double,
+    destroy: Callback,
+    el: Element,
+    next: Callback,
+    options: SliderOptions,
+    pause: Callback,
+    prev: Callback,
+    start: Callback
+  ): Slider = {
+    val __obj = js.Dynamic.literal(activeIndex = activeIndex.asInstanceOf[js.Any], destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], next = next.toJsFn, options = options.asInstanceOf[js.Any], pause = pause.toJsFn, prev = prev.toJsFn, start = start.toJsFn)
+    __obj.asInstanceOf[Slider]
+  }
+  
+  extension [Self <: Slider](x: Self) {
+    
+    inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+    
+    inline def setNext(value: Callback): Self = StObject.set(x, "next", value.toJsFn)
+    
+    inline def setPause(value: Callback): Self = StObject.set(x, "pause", value.toJsFn)
+    
+    inline def setPrev(value: Callback): Self = StObject.set(x, "prev", value.toJsFn)
+    
+    inline def setStart(value: Callback): Self = StObject.set(x, "start", value.toJsFn)
+  }
 }
-

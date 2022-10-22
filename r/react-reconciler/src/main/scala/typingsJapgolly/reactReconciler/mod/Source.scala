@@ -1,21 +1,26 @@
 package typingsJapgolly.reactReconciler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// shared/ReactElementType
-trait Source extends js.Object {
+trait Source extends StObject {
+  
   var fileName: String
+  
   var lineNumber: Double
 }
-
 object Source {
-  @scala.inline
-  def apply(fileName: String, lineNumber: Double): Source = {
-    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
   
+  inline def apply(fileName: String, lineNumber: Double): Source = {
+    val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], lineNumber = lineNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[Source]
   }
+  
+  extension [Self <: Source](x: Self) {
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+  }
 }
-

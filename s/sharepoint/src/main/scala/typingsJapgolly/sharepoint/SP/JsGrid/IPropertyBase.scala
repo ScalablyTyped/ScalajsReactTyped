@@ -2,39 +2,51 @@ package typingsJapgolly.sharepoint.SP.JsGrid
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line: interface-name
-trait IPropertyBase extends js.Object {
+trait IPropertyBase extends StObject {
+  
   def Clone(): IPropertyBase
-  def GetData(): js.Any
+  
+  def GetData(): Any
+  
   def GetLocalized(): String
+  
   def HasDataValue(): Boolean
+  
   def HasLocalizedValue(): Boolean
+  
   /** dataValue actually is cloned */
-  def Update(dataValue: js.Any, localizedValue: String): Unit
+  def Update(dataValue: Any, localizedValue: String): Unit
 }
-
 object IPropertyBase {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     Clone: CallbackTo[IPropertyBase],
-    GetData: CallbackTo[js.Any],
+    GetData: CallbackTo[Any],
     GetLocalized: CallbackTo[String],
     HasDataValue: CallbackTo[Boolean],
     HasLocalizedValue: CallbackTo[Boolean],
-    Update: (js.Any, String) => Callback
+    Update: (Any, String) => Callback
   ): IPropertyBase = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
-    __obj.updateDynamic("GetData")(GetData.toJsFn)
-    __obj.updateDynamic("GetLocalized")(GetLocalized.toJsFn)
-    __obj.updateDynamic("HasDataValue")(HasDataValue.toJsFn)
-    __obj.updateDynamic("HasLocalizedValue")(HasLocalizedValue.toJsFn)
-    __obj.updateDynamic("Update")(js.Any.fromFunction2((t0: js.Any, t1: java.lang.String) => Update(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(Clone = Clone.toJsFn, GetData = GetData.toJsFn, GetLocalized = GetLocalized.toJsFn, HasDataValue = HasDataValue.toJsFn, HasLocalizedValue = HasLocalizedValue.toJsFn, Update = js.Any.fromFunction2((t0: Any, t1: String) => (Update(t0, t1)).runNow()))
     __obj.asInstanceOf[IPropertyBase]
   }
+  
+  extension [Self <: IPropertyBase](x: Self) {
+    
+    inline def setClone(value: CallbackTo[IPropertyBase]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setGetData(value: CallbackTo[Any]): Self = StObject.set(x, "GetData", value.toJsFn)
+    
+    inline def setGetLocalized(value: CallbackTo[String]): Self = StObject.set(x, "GetLocalized", value.toJsFn)
+    
+    inline def setHasDataValue(value: CallbackTo[Boolean]): Self = StObject.set(x, "HasDataValue", value.toJsFn)
+    
+    inline def setHasLocalizedValue(value: CallbackTo[Boolean]): Self = StObject.set(x, "HasLocalizedValue", value.toJsFn)
+    
+    inline def setUpdate(value: (Any, String) => Callback): Self = StObject.set(x, "Update", js.Any.fromFunction2((t0: Any, t1: String) => (value(t0, t1)).runNow()))
+  }
 }
-

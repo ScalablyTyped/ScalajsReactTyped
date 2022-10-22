@@ -1,56 +1,70 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FilterDatetimeSpecificity extends js.Object
-
+sealed trait FilterDatetimeSpecificity extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.2]
   */
 @JSGlobal("Excel.FilterDatetimeSpecificity")
 @js.native
-object FilterDatetimeSpecificity extends js.Object {
+object FilterDatetimeSpecificity extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait day extends FilterDatetimeSpecificity
+  sealed trait day
+    extends StObject
+       with FilterDatetimeSpecificity
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait hour extends FilterDatetimeSpecificity
+  sealed trait hour
+    extends StObject
+       with FilterDatetimeSpecificity
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait minute extends FilterDatetimeSpecificity
+  sealed trait minute
+    extends StObject
+       with FilterDatetimeSpecificity
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait month extends FilterDatetimeSpecificity
+  sealed trait month
+    extends StObject
+       with FilterDatetimeSpecificity
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait second extends FilterDatetimeSpecificity
+  sealed trait second
+    extends StObject
+       with FilterDatetimeSpecificity
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.2]
+    */
   @js.native
-  sealed trait year extends FilterDatetimeSpecificity
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[FilterDatetimeSpecificity with String] = js.native
-  /* "Day" */ @js.native
-  object day extends TopLevel[day with String]
-  
-  /* "Hour" */ @js.native
-  object hour extends TopLevel[hour with String]
-  
-  /* "Minute" */ @js.native
-  object minute extends TopLevel[minute with String]
-  
-  /* "Month" */ @js.native
-  object month extends TopLevel[month with String]
-  
-  /* "Second" */ @js.native
-  object second extends TopLevel[second with String]
-  
-  /* "Year" */ @js.native
-  object year extends TopLevel[year with String]
-  
+  sealed trait year
+    extends StObject
+       with FilterDatetimeSpecificity
 }
-

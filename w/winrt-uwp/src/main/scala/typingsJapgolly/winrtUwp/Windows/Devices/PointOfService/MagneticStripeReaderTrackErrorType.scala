@@ -1,60 +1,49 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MagneticStripeReaderTrackErrorType extends js.Object
-
+sealed trait MagneticStripeReaderTrackErrorType extends StObject
 /** Defines the constants that indicates the track error type. */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderTrackErrorType")
 @js.native
-object MagneticStripeReaderTrackErrorType extends js.Object {
+object MagneticStripeReaderTrackErrorType extends StObject {
+  
   /** An end sentinel error. */
   @js.native
-  sealed trait endSentinelError extends MagneticStripeReaderTrackErrorType
+  sealed trait endSentinelError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** An LRC error. */
   @js.native
-  sealed trait lrcError extends MagneticStripeReaderTrackErrorType
+  sealed trait lrcError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** No specified error. */
   @js.native
-  sealed trait none extends MagneticStripeReaderTrackErrorType
+  sealed trait none
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** A parity error. */
   @js.native
-  sealed trait parityError extends MagneticStripeReaderTrackErrorType
+  sealed trait parityError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** A start sentinel error. */
   @js.native
-  sealed trait startSentinelError extends MagneticStripeReaderTrackErrorType
+  sealed trait startSentinelError
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
   
   /** An unknown error. */
   @js.native
-  sealed trait unknown extends MagneticStripeReaderTrackErrorType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MagneticStripeReaderTrackErrorType with Double] = js.native
-  /* 2 */ @js.native
-  object endSentinelError extends TopLevel[endSentinelError with Double]
-  
-  /* 4 */ @js.native
-  object lrcError extends TopLevel[lrcError with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 3 */ @js.native
-  object parityError extends TopLevel[parityError with Double]
-  
-  /* 1 */ @js.native
-  object startSentinelError extends TopLevel[startSentinelError with Double]
-  
-  /* 5 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
+  sealed trait unknown
+    extends StObject
+       with MagneticStripeReaderTrackErrorType
 }
-

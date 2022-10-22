@@ -1,45 +1,72 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TemplateOverridesOptions extends js.Object {
+trait TemplateOverridesOptions extends StObject {
+  
   /** Base view ID (SPView.BaseViewID) for which the template should be applied.
     If not defined, the templates will be applied to all views. */
   var BaseViewID: js.UndefOr[Double | String] = js.undefined
+  
   /** List template type (SPList.BaseTemplate) for which the template should be applied.
     If not defined, the templates will be applied to all lists. */
   var ListTemplateType: js.UndefOr[Double] = js.undefined
+  
   /** Callbacks called after rendered html inserted into DOM. Can be function (ctx: RenderContext) => void or array of functions.*/
   var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
+  
   /** Callbacks called before rendering starts. Can be function (ctx: RenderContext) => void or array of functions.*/
   var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
+  
   /** Template overrides */
   var Templates: js.UndefOr[TemplateOverrides] = js.undefined
+  
   /** View style (SPView.StyleID) for which the templates should be applied.
     If not defined, the templates will be applied only to default view style. */
   var ViewStyle: js.UndefOr[Double] = js.undefined
 }
-
 object TemplateOverridesOptions {
-  @scala.inline
-  def apply(
-    BaseViewID: Double | String = null,
-    ListTemplateType: Int | Double = null,
-    OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
-    OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
-    Templates: TemplateOverrides = null,
-    ViewStyle: Int | Double = null
-  ): TemplateOverridesOptions = {
+  
+  inline def apply(): TemplateOverridesOptions = {
     val __obj = js.Dynamic.literal()
-    if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
-    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
-    if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
-    if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
-    if (Templates != null) __obj.updateDynamic("Templates")(Templates.asInstanceOf[js.Any])
-    if (ViewStyle != null) __obj.updateDynamic("ViewStyle")(ViewStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[TemplateOverridesOptions]
   }
+  
+  extension [Self <: TemplateOverridesOptions](x: Self) {
+    
+    inline def setBaseViewID(value: Double | String): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
+    
+    inline def setBaseViewIDUndefined: Self = StObject.set(x, "BaseViewID", js.undefined)
+    
+    inline def setListTemplateType(value: Double): Self = StObject.set(x, "ListTemplateType", value.asInstanceOf[js.Any])
+    
+    inline def setListTemplateTypeUndefined: Self = StObject.set(x, "ListTemplateType", js.undefined)
+    
+    inline def setOnPostRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPostRender", value.asInstanceOf[js.Any])
+    
+    inline def setOnPostRenderFunction1(value: /* ctx */ RenderContext => Callback): Self = StObject.set(x, "OnPostRender", js.Any.fromFunction1((t0: /* ctx */ RenderContext) => value(t0).runNow()))
+    
+    inline def setOnPostRenderUndefined: Self = StObject.set(x, "OnPostRender", js.undefined)
+    
+    inline def setOnPostRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPostRender", js.Array(value*))
+    
+    inline def setOnPreRender(value: RenderCallback | js.Array[RenderCallback]): Self = StObject.set(x, "OnPreRender", value.asInstanceOf[js.Any])
+    
+    inline def setOnPreRenderFunction1(value: /* ctx */ RenderContext => Callback): Self = StObject.set(x, "OnPreRender", js.Any.fromFunction1((t0: /* ctx */ RenderContext) => value(t0).runNow()))
+    
+    inline def setOnPreRenderUndefined: Self = StObject.set(x, "OnPreRender", js.undefined)
+    
+    inline def setOnPreRenderVarargs(value: RenderCallback*): Self = StObject.set(x, "OnPreRender", js.Array(value*))
+    
+    inline def setTemplates(value: TemplateOverrides): Self = StObject.set(x, "Templates", value.asInstanceOf[js.Any])
+    
+    inline def setTemplatesUndefined: Self = StObject.set(x, "Templates", js.undefined)
+    
+    inline def setViewStyle(value: Double): Self = StObject.set(x, "ViewStyle", value.asInstanceOf[js.Any])
+    
+    inline def setViewStyleUndefined: Self = StObject.set(x, "ViewStyle", js.undefined)
+  }
 }
-

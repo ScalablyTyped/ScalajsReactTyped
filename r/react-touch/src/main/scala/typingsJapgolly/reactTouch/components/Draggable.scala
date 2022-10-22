@@ -1,40 +1,24 @@
 package typingsJapgolly.reactTouch.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.reactTouch.mod.DraggableCallbackArgument
 import typingsJapgolly.reactTouch.mod.DraggableProps
 import typingsJapgolly.reactTouch.mod.DraggableStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Draggable {
-  def apply(
-    style: DraggableStyle,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: /* argument */ DraggableCallbackArgument => CallbackTo[Element]
-  ): UnmountedWithRoot[DraggableProps, typingsJapgolly.reactTouch.mod.Draggable, Unit, DraggableProps] = {
-    val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: /* argument */ typingsJapgolly.reactTouch.mod.DraggableCallbackArgument) => children(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTouch.mod.DraggableProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reactTouch.mod.Draggable](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTouch.mod.DraggableProps])
+  inline def apply(children: /* argument */ DraggableCallbackArgument => Element, style: DraggableStyle): Default[typingsJapgolly.reactTouch.mod.Draggable] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children), style = style.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactTouch.mod.Draggable](js.Array(this.component, __props.asInstanceOf[DraggableProps]))
   }
+  
   @JSImport("react-touch", "Draggable")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  def withProps(p: DraggableProps): Default[typingsJapgolly.reactTouch.mod.Draggable] = new Default[typingsJapgolly.reactTouch.mod.Draggable](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

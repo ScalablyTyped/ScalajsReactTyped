@@ -1,39 +1,38 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgValidatorField
-  extends /**
-	 * Option for IgValidatorField
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets the target element (input or control target) to be validated. This field setting is required.
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "string" A valid jQuery selector for the element
-  	 * "object" A reference to a jQuery object
-  	 */
+    * Gets the target element (input or control target) to be validated. This field setting is required.
+    *
+    *
+    * Valid values:
+    * "string" A valid jQuery selector for the element
+    * "object" A reference to a jQuery object
+    */
   var selector: js.UndefOr[String | js.Object] = js.undefined
 }
-
 object IgValidatorField {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgValidatorField
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    selector: String | js.Object = null
-  ): IgValidatorField = {
+  
+  inline def apply(): IgValidatorField = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgValidatorField]
   }
+  
+  extension [Self <: IgValidatorField](x: Self) {
+    
+    inline def setSelector(value: String | js.Object): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+  }
 }
-

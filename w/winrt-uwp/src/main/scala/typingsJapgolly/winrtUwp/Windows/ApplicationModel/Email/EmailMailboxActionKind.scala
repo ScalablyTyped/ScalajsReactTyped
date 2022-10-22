@@ -1,95 +1,79 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxActionKind extends js.Object
-
+sealed trait EmailMailboxActionKind extends StObject
 /** Defines the kind of action to be taken. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxActionKind")
 @js.native
-object EmailMailboxActionKind extends js.Object {
+object EmailMailboxActionKind extends StObject {
+  
   /** Change the flag state on the email message. */
   @js.native
-  sealed trait changeMessageFlagState extends EmailMailboxActionKind
+  sealed trait changeMessageFlagState
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Create an email message to be forwarded containing the content of this email message. */
   @js.native
-  sealed trait createResponseForwardMessage extends EmailMailboxActionKind
+  sealed trait createResponseForwardMessage
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Create a reply email message addressed to the sender and all recipients in response to this email message. */
   @js.native
-  sealed trait createResponseReplyAllMessage extends EmailMailboxActionKind
+  sealed trait createResponseReplyAllMessage
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Create a reply email message addressed to the sender in response to this email message. */
   @js.native
-  sealed trait createResponseReplyMessage extends EmailMailboxActionKind
+  sealed trait createResponseReplyMessage
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Enable sync for this folder. */
   @js.native
-  sealed trait markFolderForSyncEnabled extends EmailMailboxActionKind
+  sealed trait markFolderForSyncEnabled
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Mark the email message as seen. */
   @js.native
-  sealed trait markMessageAsSeen extends EmailMailboxActionKind
+  sealed trait markMessageAsSeen
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Mark the email message as having been read. */
   @js.native
-  sealed trait markMessageRead extends EmailMailboxActionKind
+  sealed trait markMessageRead
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Move this folder. */
   @js.native
-  sealed trait moveFolder extends EmailMailboxActionKind
+  sealed trait moveFolder
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Move the email message. */
   @js.native
-  sealed trait moveMessage extends EmailMailboxActionKind
+  sealed trait moveMessage
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Save a draft of the email message. */
   @js.native
-  sealed trait saveDraft extends EmailMailboxActionKind
+  sealed trait saveDraft
+    extends StObject
+       with EmailMailboxActionKind
   
   /** Send the email message. */
   @js.native
-  sealed trait sendMessage extends EmailMailboxActionKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxActionKind with Double] = js.native
-  /* 2 */ @js.native
-  object changeMessageFlagState extends TopLevel[changeMessageFlagState with Double]
-  
-  /* 8 */ @js.native
-  object createResponseForwardMessage extends TopLevel[createResponseForwardMessage with Double]
-  
-  /* 7 */ @js.native
-  object createResponseReplyAllMessage extends TopLevel[createResponseReplyAllMessage with Double]
-  
-  /* 6 */ @js.native
-  object createResponseReplyMessage extends TopLevel[createResponseReplyMessage with Double]
-  
-  /* 10 */ @js.native
-  object markFolderForSyncEnabled extends TopLevel[markFolderForSyncEnabled with Double]
-  
-  /* 0 */ @js.native
-  object markMessageAsSeen extends TopLevel[markMessageAsSeen with Double]
-  
-  /* 1 */ @js.native
-  object markMessageRead extends TopLevel[markMessageRead with Double]
-  
-  /* 9 */ @js.native
-  object moveFolder extends TopLevel[moveFolder with Double]
-  
-  /* 3 */ @js.native
-  object moveMessage extends TopLevel[moveMessage with Double]
-  
-  /* 4 */ @js.native
-  object saveDraft extends TopLevel[saveDraft with Double]
-  
-  /* 5 */ @js.native
-  object sendMessage extends TopLevel[sendMessage with Double]
-  
+  sealed trait sendMessage
+    extends StObject
+       with EmailMailboxActionKind
 }
-

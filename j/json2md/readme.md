@@ -10,10 +10,10 @@ A JSON to Markdown converter.
 | ------------------ | :-------------: |
 | Full name          | json2md |
 | Keywords           | json, markdown, converter, generator |
-| # releases         | 7 |
-| # dependents       | 33 |
-| # downloads        | 184772 |
-| # stars            | 1 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 84203.0 |
+| # stars            | 432.0 |
 
 ## Links
 - [Homepage](https://github.com/IonicaBizau/json2md#readme)

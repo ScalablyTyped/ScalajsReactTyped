@@ -1,23 +1,26 @@
 package typingsJapgolly.awsSdkHttpHeaders
 
 import typingsJapgolly.awsSdkHttpHeaders.awsSdkHttpHeadersStrings.Map
-import typingsJapgolly.awsSdkTypes.httpMod.Headers
+import typingsJapgolly.awsSdkTypes.distTypesHttpMod.Headers
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/http-headers", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@aws-sdk/http-headers", "HttpHeaders")
   @js.native
-  class HttpHeaders () extends Headers {
+  open class HttpHeaders ()
+    extends StObject
+       with Headers {
     def this(entries: js.Iterable[js.Tuple2[String, String]]) = this()
-    @JSName("clone")
-    var clone_FHttpHeaders: js.Any = js.native
-    var originalHeaders: js.Any = js.native
-    @JSName(scala.scalajs.js.Symbol.toStringTag)
+    
+    /* private */ @JSName("clone")
+    var clone_FHttpHeaders: Any = js.native
+    
+    /* private */ var originalHeaders: Any = js.native
+    
+    @JSName(js.Symbol.toStringTag)
     var toStringTag_HttpHeaders: Map = js.native
   }
-  
 }
-

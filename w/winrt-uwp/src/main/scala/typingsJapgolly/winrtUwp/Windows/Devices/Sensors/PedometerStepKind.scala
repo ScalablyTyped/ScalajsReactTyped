@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Sensors
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PedometerStepKind extends js.Object
-
+sealed trait PedometerStepKind extends StObject
 /** The type of step taken according to the pedometer. */
 @JSGlobal("Windows.Devices.Sensors.PedometerStepKind")
 @js.native
-object PedometerStepKind extends js.Object {
+object PedometerStepKind extends StObject {
+  
   /** A running step. */
   @js.native
-  sealed trait running extends PedometerStepKind
+  sealed trait running
+    extends StObject
+       with PedometerStepKind
   
   /** An unknown step type. */
   @js.native
-  sealed trait unknown extends PedometerStepKind
+  sealed trait unknown
+    extends StObject
+       with PedometerStepKind
   
   /** A walking step. */
   @js.native
-  sealed trait walking extends PedometerStepKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PedometerStepKind with Double] = js.native
-  /* 2 */ @js.native
-  object running extends TopLevel[running with Double]
-  
-  /* 0 */ @js.native
-  object unknown extends TopLevel[unknown with Double]
-  
-  /* 1 */ @js.native
-  object walking extends TopLevel[walking with Double]
-  
+  sealed trait walking
+    extends StObject
+       with PedometerStepKind
 }
-

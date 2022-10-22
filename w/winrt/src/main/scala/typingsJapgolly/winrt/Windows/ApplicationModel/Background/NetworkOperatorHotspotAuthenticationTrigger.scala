@@ -1,10 +1,9 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.Background.NetworkOperatorHotspotAuthenticationTrigger")
-@js.native
-class NetworkOperatorHotspotAuthenticationTrigger () extends IBackgroundTrigger
-
+trait NetworkOperatorHotspotAuthenticationTrigger
+  extends StObject
+     with IBackgroundTrigger

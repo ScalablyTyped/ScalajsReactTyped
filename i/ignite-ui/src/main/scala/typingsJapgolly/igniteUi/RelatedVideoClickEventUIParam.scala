@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelatedVideoClickEventUIParam extends js.Object {
+trait RelatedVideoClickEventUIParam extends StObject {
+  
   /**
-  	 * Get the relatedVideo object from the relatedVideos array.
-  	 */
-  var relatedVideo: js.UndefOr[js.Any] = js.undefined
+    * Get the relatedVideo object from the relatedVideos array.
+    */
+  var relatedVideo: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Get the relatedVideo html element in the DOM.
-  	 */
-  var relatedVideoElement: js.UndefOr[js.Any] = js.undefined
+    * Get the relatedVideo html element in the DOM.
+    */
+  var relatedVideoElement: js.UndefOr[Any] = js.undefined
 }
-
 object RelatedVideoClickEventUIParam {
-  @scala.inline
-  def apply(relatedVideo: js.Any = null, relatedVideoElement: js.Any = null): RelatedVideoClickEventUIParam = {
+  
+  inline def apply(): RelatedVideoClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (relatedVideo != null) __obj.updateDynamic("relatedVideo")(relatedVideo.asInstanceOf[js.Any])
-    if (relatedVideoElement != null) __obj.updateDynamic("relatedVideoElement")(relatedVideoElement.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelatedVideoClickEventUIParam]
   }
+  
+  extension [Self <: RelatedVideoClickEventUIParam](x: Self) {
+    
+    inline def setRelatedVideo(value: Any): Self = StObject.set(x, "relatedVideo", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedVideoElement(value: Any): Self = StObject.set(x, "relatedVideoElement", value.asInstanceOf[js.Any])
+    
+    inline def setRelatedVideoElementUndefined: Self = StObject.set(x, "relatedVideoElement", js.undefined)
+    
+    inline def setRelatedVideoUndefined: Self = StObject.set(x, "relatedVideo", js.undefined)
+  }
 }
-

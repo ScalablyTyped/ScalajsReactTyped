@@ -1,13 +1,11 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Document
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HorizontalAlignment extends js.Object
-
+sealed trait HorizontalAlignment extends StObject
 /**
   * An enumeration of the supported horizontal alignment types.
   *
@@ -32,32 +30,25 @@ sealed trait HorizontalAlignment extends js.Object
   */
 @JSGlobal("GoogleAppsScript.Document.HorizontalAlignment")
 @js.native
-object HorizontalAlignment extends js.Object {
-  @js.native
-  sealed trait CENTER extends HorizontalAlignment
+object HorizontalAlignment extends StObject {
   
   @js.native
-  sealed trait JUSTIFY extends HorizontalAlignment
+  sealed trait CENTER
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait LEFT extends HorizontalAlignment
+  sealed trait JUSTIFY
+    extends StObject
+       with HorizontalAlignment
   
   @js.native
-  sealed trait RIGHT extends HorizontalAlignment
+  sealed trait LEFT
+    extends StObject
+       with HorizontalAlignment
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HorizontalAlignment with Double] = js.native
-  /* 1 */ @js.native
-  object CENTER extends TopLevel[CENTER with Double]
-  
-  /* 3 */ @js.native
-  object JUSTIFY extends TopLevel[JUSTIFY with Double]
-  
-  /* 0 */ @js.native
-  object LEFT extends TopLevel[LEFT with Double]
-  
-  /* 2 */ @js.native
-  object RIGHT extends TopLevel[RIGHT with Double]
-  
+  @js.native
+  sealed trait RIGHT
+    extends StObject
+       with HorizontalAlignment
 }
-

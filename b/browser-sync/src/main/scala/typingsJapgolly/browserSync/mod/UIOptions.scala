@@ -1,24 +1,33 @@
 package typingsJapgolly.browserSync.mod
 
-import typingsJapgolly.browserSync.AnonPort
+import typingsJapgolly.browserSync.anon.Port
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UIOptions extends js.Object {
+trait UIOptions extends StObject {
+  
   /** set the default port */
   var port: js.UndefOr[Double] = js.undefined
+  
   /** set the default weinre port */
-  var weinre: js.UndefOr[AnonPort] = js.undefined
+  var weinre: js.UndefOr[Port] = js.undefined
 }
-
 object UIOptions {
-  @scala.inline
-  def apply(port: Int | Double = null, weinre: AnonPort = null): UIOptions = {
+  
+  inline def apply(): UIOptions = {
     val __obj = js.Dynamic.literal()
-    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
-    if (weinre != null) __obj.updateDynamic("weinre")(weinre.asInstanceOf[js.Any])
     __obj.asInstanceOf[UIOptions]
   }
+  
+  extension [Self <: UIOptions](x: Self) {
+    
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    
+    inline def setWeinre(value: Port): Self = StObject.set(x, "weinre", value.asInstanceOf[js.Any])
+    
+    inline def setWeinreUndefined: Self = StObject.set(x, "weinre", js.undefined)
+  }
 }
-

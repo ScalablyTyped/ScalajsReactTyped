@@ -1,30 +1,42 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Venue extends js.Object {
+trait Venue extends StObject {
+  
   var address: String
+  
   var foursquare_id: js.UndefOr[String] = js.undefined
+  
   var foursquare_type: js.UndefOr[String] = js.undefined
+  
   var location: Location
+  
   var title: String
 }
-
 object Venue {
-  @scala.inline
-  def apply(
-    address: String,
-    location: Location,
-    title: String,
-    foursquare_id: String = null,
-    foursquare_type: String = null
-  ): Venue = {
+  
+  inline def apply(address: String, location: Location, title: String): Venue = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (foursquare_id != null) __obj.updateDynamic("foursquare_id")(foursquare_id.asInstanceOf[js.Any])
-    if (foursquare_type != null) __obj.updateDynamic("foursquare_type")(foursquare_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[Venue]
   }
+  
+  extension [Self <: Venue](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setFoursquare_id(value: String): Self = StObject.set(x, "foursquare_id", value.asInstanceOf[js.Any])
+    
+    inline def setFoursquare_idUndefined: Self = StObject.set(x, "foursquare_id", js.undefined)
+    
+    inline def setFoursquare_type(value: String): Self = StObject.set(x, "foursquare_type", value.asInstanceOf[js.Any])
+    
+    inline def setFoursquare_typeUndefined: Self = StObject.set(x, "foursquare_type", js.undefined)
+    
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,14 +1,9 @@
 package typingsJapgolly.slackMock.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("slack-mock", JSImport.Namespace)
 @js.native
-object ^ extends js.Object {
-  var instance: Instance_ = js.native
-  def apply(): Instance_ = js.native
-  def apply(config: ConfigOptions): Instance_ = js.native
-}
-
+object ^ extends StObject

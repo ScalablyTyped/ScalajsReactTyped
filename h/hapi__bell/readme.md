@@ -10,10 +10,10 @@ Third-party login plugin for hapi
 | ------------------ | :-------------: |
 | Full name          | @hapi/bell |
 | Keywords           | hapi, login, authentication, oauth, plugin, auth0, arcgisonline, bitbucket, dropbox, facebook, fitbit, foursquare, github, gitlab, google, instagram, medium, linkedin, live, meetup, nest, phabricator, office365, okta, reddit, spotify, tumblr, twitter, vk, wordpress, yahoo |
-| # releases         | 6 |
-| # dependents       | 6 |
-| # downloads        | 33165 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 78982.33333333333 |
+| # stars            | 624.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/bell#readme)

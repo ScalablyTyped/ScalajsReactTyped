@@ -1,7 +1,7 @@
 
 # Scala.js typings for secure-random-password
 
-Typings are for version 0.1
+Typings are for version 0.2
 
 ## Library description:
 Generate passwords using a cryptographically-strong source of randomness
@@ -10,10 +10,10 @@ Generate passwords using a cryptographically-strong source of randomness
 | ------------------ | :-------------: |
 | Full name          | secure-random-password |
 | Keywords           | secure, random, password, generator |
-| # releases         | 5 |
-| # dependents       | 1 |
-| # downloads        | 17002 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 58486.0 |
+| # stars            | 7.0 |
 
 ## Links
 - [Homepage](https://github.com/mkropat/secure-random-password#readme)

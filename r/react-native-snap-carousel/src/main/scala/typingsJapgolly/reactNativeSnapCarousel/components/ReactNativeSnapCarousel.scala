@@ -1,31 +1,35 @@
 package typingsJapgolly.reactNativeSnapCarousel.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
+import japgolly.scalajs.react.facade.React.Element
 import japgolly.scalajs.react.vdom.VdomElement
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.reactNative.anon.AutoscrollToTopThreshold
+import typingsJapgolly.reactNative.anon.AverageItemLength
+import typingsJapgolly.reactNative.anon.Changed
+import typingsJapgolly.reactNative.anon.DistanceFromEnd
+import typingsJapgolly.reactNative.anon.Length
 import typingsJapgolly.reactNative.mod.AccessibilityActionInfo
 import typingsJapgolly.reactNative.mod.AccessibilityRole
 import typingsJapgolly.reactNative.mod.AccessibilityState
-import typingsJapgolly.reactNative.mod.AccessibilityStates
-import typingsJapgolly.reactNative.mod.AccessibilityTrait
+import typingsJapgolly.reactNative.mod.AccessibilityValue
 import typingsJapgolly.reactNative.mod.Animated.AnimatedValue
 import typingsJapgolly.reactNative.mod.Animated.DecayAnimationConfig
 import typingsJapgolly.reactNative.mod.Animated.SpringAnimationConfig
 import typingsJapgolly.reactNative.mod.Animated.TimingAnimationConfig
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.Insets
-import typingsJapgolly.reactNative.mod.LayoutChangeEvent
+import typingsJapgolly.reactNative.mod.ListRenderItemInfo
 import typingsJapgolly.reactNative.mod.NodeHandle
-import typingsJapgolly.reactNative.mod.PointPropType
+import typingsJapgolly.reactNative.mod.PointProp
+import typingsJapgolly.reactNative.mod.ScrollViewProps
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TVParallaxProperties
 import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.reactNative.mod.ViewabilityConfigCallbackPair
+import typingsJapgolly.reactNative.mod.ViewabilityConfigCallbackPairs
 import typingsJapgolly.reactNative.reactNativeStrings.`box-none`
 import typingsJapgolly.reactNative.reactNativeStrings.`box-only`
 import typingsJapgolly.reactNative.reactNativeStrings.`no-hide-descendants`
@@ -35,8 +39,6 @@ import typingsJapgolly.reactNative.reactNativeStrings.assertive
 import typingsJapgolly.reactNative.reactNativeStrings.auto
 import typingsJapgolly.reactNative.reactNativeStrings.automatic
 import typingsJapgolly.reactNative.reactNativeStrings.black
-import typingsJapgolly.reactNative.reactNativeStrings.button
-import typingsJapgolly.reactNative.reactNativeStrings.default
 import typingsJapgolly.reactNative.reactNativeStrings.fast
 import typingsJapgolly.reactNative.reactNativeStrings.handled
 import typingsJapgolly.reactNative.reactNativeStrings.interactive
@@ -45,16 +47,13 @@ import typingsJapgolly.reactNative.reactNativeStrings.no
 import typingsJapgolly.reactNative.reactNativeStrings.none
 import typingsJapgolly.reactNative.reactNativeStrings.normal_
 import typingsJapgolly.reactNative.reactNativeStrings.polite
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_checked
-import typingsJapgolly.reactNative.reactNativeStrings.radiobutton_unchecked
 import typingsJapgolly.reactNative.reactNativeStrings.scrollableAxes
 import typingsJapgolly.reactNative.reactNativeStrings.white
 import typingsJapgolly.reactNative.reactNativeStrings.yes
-import typingsJapgolly.reactNativeSnapCarousel.AnonIndex
-import typingsJapgolly.reactNativeSnapCarousel.AnonInputRange
-import typingsJapgolly.reactNativeSnapCarousel.mod.AdditionalParallaxProps
+import typingsJapgolly.reactNativeSnapCarousel.anon.InputRange
 import typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProperties
 import typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProps
+import typingsJapgolly.reactNativeSnapCarousel.mod.default
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.center
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.decay
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.end
@@ -63,327 +62,494 @@ import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.st
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.start
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.timing
 import typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.tinder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactNativeSnapCarousel {
-  def apply[T](
-    data: js.Array[T],
-    renderItem: (AnonIndex[T], js.UndefOr[AdditionalParallaxProps]) => CallbackTo[Node],
-    accessibilityActions: js.Array[AccessibilityActionInfo] = null,
-    accessibilityComponentType: none | button | radiobutton_checked | radiobutton_unchecked = null,
-    accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined,
-    accessibilityHint: String = null,
-    accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined,
-    accessibilityLabel: String = null,
-    accessibilityLiveRegion: none | polite | assertive = null,
-    accessibilityRole: AccessibilityRole = null,
-    accessibilityState: AccessibilityState = null,
-    accessibilityStates: js.Array[AccessibilityStates] = null,
-    accessibilityTraits: AccessibilityTrait | js.Array[AccessibilityTrait] = null,
-    accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined,
-    accessible: js.UndefOr[Boolean] = js.undefined,
-    activeAnimationOptions: DecayAnimationConfig | TimingAnimationConfig | SpringAnimationConfig = null,
-    activeAnimationType: decay | spring | timing = null,
-    activeSlideAlignment: start | center | end = null,
-    activeSlideOffset: Int | Double = null,
-    alwaysBounceHorizontal: js.UndefOr[Boolean] = js.undefined,
-    alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined,
-    apparitionDelay: Int | Double = null,
-    automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined,
-    autoplay: js.UndefOr[Boolean] = js.undefined,
-    autoplayDelay: Int | Double = null,
-    autoplayInterval: Int | Double = null,
-    bounces: js.UndefOr[Boolean] = js.undefined,
-    bouncesZoom: js.UndefOr[Boolean] = js.undefined,
-    callbackOffsetMargin: Int | Double = null,
-    canCancelContentTouches: js.UndefOr[Boolean] = js.undefined,
-    centerContent: js.UndefOr[Boolean] = js.undefined,
-    collapsable: js.UndefOr[Boolean] = js.undefined,
-    containerCustomStyle: StyleProp[ViewStyle] = null,
-    contentContainerCustomStyle: StyleProp[ViewStyle] = null,
-    contentContainerStyle: StyleProp[ViewStyle] = null,
-    contentInset: Insets = null,
-    contentInsetAdjustmentBehavior: automatic | scrollableAxes | never | always = null,
-    contentOffset: PointPropType = null,
-    decelerationRate: fast | normal_ | Double = null,
-    directionalLockEnabled: js.UndefOr[Boolean] = js.undefined,
-    disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined,
-    disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined,
-    enableMomentum: js.UndefOr[Boolean] = js.undefined,
-    enableSnap: js.UndefOr[Boolean] = js.undefined,
-    endFillColor: String = null,
-    firstItem: Int | Double = null,
-    hasParallaxImages: js.UndefOr[Boolean] = js.undefined,
-    hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined,
-    hitSlop: Insets = null,
-    horizontal: js.UndefOr[Boolean] = js.undefined,
-    importantForAccessibility: auto | yes | no | `no-hide-descendants` = null,
-    inactiveSlideOpacity: Int | Double = null,
-    inactiveSlideScale: Int | Double = null,
-    inactiveSlideShift: Int | Double = null,
-    indicatorStyle: default | black | white = null,
-    initialNumToRender: Int | Double = null,
-    invertStickyHeaders: js.UndefOr[Boolean] = js.undefined,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    isTVSelectable: js.UndefOr[Boolean] = js.undefined,
-    itemHeight: Int | Double = null,
-    itemWidth: Int | Double = null,
-    keyboardDismissMode: none | interactive | `on-drag` = null,
-    keyboardShouldPersistTaps: Boolean | always | never | handled = null,
-    layout: typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.default | stack | tinder = null,
-    layoutCardOffset: Int | Double = null,
-    lockScrollTimeoutDuration: Int | Double = null,
-    lockScrollWhileSnapping: js.UndefOr[Boolean] = js.undefined,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    loopClonesPerSide: Int | Double = null,
-    maximumZoomScale: Int | Double = null,
-    minimumZoomScale: Int | Double = null,
-    nativeID: String = null,
-    needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined,
-    nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    onAccessibilityAction: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onAccessibilityEscape: js.UndefOr[Callback] = js.undefined,
-    onAccessibilityTap: js.UndefOr[Callback] = js.undefined,
-    onBeforeSnapToItem: /* slideIndex */ Double => Callback = null,
-    onContentSizeChange: (/* w */ Double, /* h */ Double) => Callback = null,
-    onLayout: /* event */ LayoutChangeEvent => Callback = null,
-    onMagicTap: js.UndefOr[Callback] = js.undefined,
-    onMomentumScrollBegin: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMomentumScrollEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onMoveShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onMoveShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onResponderEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderGrant: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderReject: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderRelease: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminate: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onResponderTerminationRequest: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onScroll: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onScrollAnimationEnd: js.UndefOr[Callback] = js.undefined,
-    onScrollBeginDrag: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onScrollEndDrag: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onScrollToTop: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onSnapToItem: /* slideIndex */ Double => Callback = null,
-    onStartShouldSetResponder: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onStartShouldSetResponderCapture: ReactEventFrom[NodeHandle with Element] => CallbackTo[Boolean] = null,
-    onTouchCancel: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEnd: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchEndCapture: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchMove: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    onTouchStart: ReactEventFrom[NodeHandle with Element] => Callback = null,
-    overScrollMode: auto | always | never = null,
-    pagingEnabled: js.UndefOr[Boolean] = js.undefined,
-    pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined,
-    pointerEvents: `box-none` | none | `box-only` | auto = null,
-    refreshControl: VdomElement = null,
-    removeClippedSubviews: js.UndefOr[Boolean] = js.undefined,
-    renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined,
-    scrollEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollEndDragDebounceValue: Int | Double = null,
-    scrollEventThrottle: Int | Double = null,
-    scrollIndicatorInsets: Insets = null,
-    scrollInterpolator: (/* index */ Double, /* carouselProps */ CarouselProps[js.Any]) => CallbackTo[AnonInputRange] = null,
-    scrollPerfTag: String = null,
-    scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined,
-    scrollsToTop: js.UndefOr[Boolean] = js.undefined,
-    shouldOptimizeUpdates: js.UndefOr[Boolean] = js.undefined,
-    shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined,
-    showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined,
-    slideInterpolatedStyle: (/* index */ Double, /* animatedValue */ AnimatedValue, /* carouselProps */ CarouselProps[js.Any]) => CallbackTo[StyleProp[ViewStyle]] = null,
-    slideStyle: StyleProp[ViewStyle] = null,
-    sliderHeight: Int | Double = null,
-    sliderWidth: Int | Double = null,
-    snapToAlignment: typingsJapgolly.reactNative.reactNativeStrings.start | typingsJapgolly.reactNative.reactNativeStrings.center | typingsJapgolly.reactNative.reactNativeStrings.end = null,
-    snapToEnd: js.UndefOr[Boolean] = js.undefined,
-    snapToInterval: Int | Double = null,
-    snapToOffsets: js.Array[Double] = null,
-    snapToStart: js.UndefOr[Boolean] = js.undefined,
-    stickyHeaderIndices: js.Array[Double] = null,
-    style: StyleProp[ViewStyle] = null,
-    swipeThreshold: Int | Double = null,
-    testID: String = null,
-    tvParallaxMagnification: Int | Double = null,
-    tvParallaxProperties: TVParallaxProperties = null,
-    tvParallaxShiftDistanceX: Int | Double = null,
-    tvParallaxShiftDistanceY: Int | Double = null,
-    tvParallaxTiltAngle: Int | Double = null,
-    useScrollView: js.UndefOr[Boolean] = js.undefined,
-    vertical: js.UndefOr[Boolean] = js.undefined,
-    zoomScale: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    CarouselProperties[T], 
-    typingsJapgolly.reactNativeSnapCarousel.mod.default[T], 
-    Unit, 
-    CarouselProperties[T]
-  ] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("renderItem")(js.Any.fromFunction2((t0: typingsJapgolly.reactNativeSnapCarousel.AnonIndex[T], t1: js.UndefOr[typingsJapgolly.reactNativeSnapCarousel.mod.AdditionalParallaxProps]) => renderItem(t0, t1).runNow()))
-    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions.asInstanceOf[js.Any])
-    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden.asInstanceOf[js.Any])
-    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors.asInstanceOf[js.Any])
-    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel.asInstanceOf[js.Any])
-    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
-    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole.asInstanceOf[js.Any])
-    if (accessibilityState != null) __obj.updateDynamic("accessibilityState")(accessibilityState.asInstanceOf[js.Any])
-    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates.asInstanceOf[js.Any])
-    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal.asInstanceOf[js.Any])
-    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible.asInstanceOf[js.Any])
-    if (activeAnimationOptions != null) __obj.updateDynamic("activeAnimationOptions")(activeAnimationOptions.asInstanceOf[js.Any])
-    if (activeAnimationType != null) __obj.updateDynamic("activeAnimationType")(activeAnimationType.asInstanceOf[js.Any])
-    if (activeSlideAlignment != null) __obj.updateDynamic("activeSlideAlignment")(activeSlideAlignment.asInstanceOf[js.Any])
-    if (activeSlideOffset != null) __obj.updateDynamic("activeSlideOffset")(activeSlideOffset.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysBounceHorizontal)) __obj.updateDynamic("alwaysBounceHorizontal")(alwaysBounceHorizontal.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysBounceVertical)) __obj.updateDynamic("alwaysBounceVertical")(alwaysBounceVertical.asInstanceOf[js.Any])
-    if (apparitionDelay != null) __obj.updateDynamic("apparitionDelay")(apparitionDelay.asInstanceOf[js.Any])
-    if (!js.isUndefined(automaticallyAdjustContentInsets)) __obj.updateDynamic("automaticallyAdjustContentInsets")(automaticallyAdjustContentInsets.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay.asInstanceOf[js.Any])
-    if (autoplayDelay != null) __obj.updateDynamic("autoplayDelay")(autoplayDelay.asInstanceOf[js.Any])
-    if (autoplayInterval != null) __obj.updateDynamic("autoplayInterval")(autoplayInterval.asInstanceOf[js.Any])
-    if (!js.isUndefined(bounces)) __obj.updateDynamic("bounces")(bounces.asInstanceOf[js.Any])
-    if (!js.isUndefined(bouncesZoom)) __obj.updateDynamic("bouncesZoom")(bouncesZoom.asInstanceOf[js.Any])
-    if (callbackOffsetMargin != null) __obj.updateDynamic("callbackOffsetMargin")(callbackOffsetMargin.asInstanceOf[js.Any])
-    if (!js.isUndefined(canCancelContentTouches)) __obj.updateDynamic("canCancelContentTouches")(canCancelContentTouches.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerContent)) __obj.updateDynamic("centerContent")(centerContent.asInstanceOf[js.Any])
-    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable.asInstanceOf[js.Any])
-    if (containerCustomStyle != null) __obj.updateDynamic("containerCustomStyle")(containerCustomStyle.asInstanceOf[js.Any])
-    if (contentContainerCustomStyle != null) __obj.updateDynamic("contentContainerCustomStyle")(contentContainerCustomStyle.asInstanceOf[js.Any])
-    if (contentContainerStyle != null) __obj.updateDynamic("contentContainerStyle")(contentContainerStyle.asInstanceOf[js.Any])
-    if (contentInset != null) __obj.updateDynamic("contentInset")(contentInset.asInstanceOf[js.Any])
-    if (contentInsetAdjustmentBehavior != null) __obj.updateDynamic("contentInsetAdjustmentBehavior")(contentInsetAdjustmentBehavior.asInstanceOf[js.Any])
-    if (contentOffset != null) __obj.updateDynamic("contentOffset")(contentOffset.asInstanceOf[js.Any])
-    if (decelerationRate != null) __obj.updateDynamic("decelerationRate")(decelerationRate.asInstanceOf[js.Any])
-    if (!js.isUndefined(directionalLockEnabled)) __obj.updateDynamic("directionalLockEnabled")(directionalLockEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableIntervalMomentum)) __obj.updateDynamic("disableIntervalMomentum")(disableIntervalMomentum.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollViewPanResponder)) __obj.updateDynamic("disableScrollViewPanResponder")(disableScrollViewPanResponder.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMomentum)) __obj.updateDynamic("enableMomentum")(enableMomentum.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableSnap)) __obj.updateDynamic("enableSnap")(enableSnap.asInstanceOf[js.Any])
-    if (endFillColor != null) __obj.updateDynamic("endFillColor")(endFillColor.asInstanceOf[js.Any])
-    if (firstItem != null) __obj.updateDynamic("firstItem")(firstItem.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasParallaxImages)) __obj.updateDynamic("hasParallaxImages")(hasParallaxImages.asInstanceOf[js.Any])
-    if (!js.isUndefined(hasTVPreferredFocus)) __obj.updateDynamic("hasTVPreferredFocus")(hasTVPreferredFocus.asInstanceOf[js.Any])
-    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop.asInstanceOf[js.Any])
-    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
-    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
-    if (inactiveSlideOpacity != null) __obj.updateDynamic("inactiveSlideOpacity")(inactiveSlideOpacity.asInstanceOf[js.Any])
-    if (inactiveSlideScale != null) __obj.updateDynamic("inactiveSlideScale")(inactiveSlideScale.asInstanceOf[js.Any])
-    if (inactiveSlideShift != null) __obj.updateDynamic("inactiveSlideShift")(inactiveSlideShift.asInstanceOf[js.Any])
-    if (indicatorStyle != null) __obj.updateDynamic("indicatorStyle")(indicatorStyle.asInstanceOf[js.Any])
-    if (initialNumToRender != null) __obj.updateDynamic("initialNumToRender")(initialNumToRender.asInstanceOf[js.Any])
-    if (!js.isUndefined(invertStickyHeaders)) __obj.updateDynamic("invertStickyHeaders")(invertStickyHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (!js.isUndefined(isTVSelectable)) __obj.updateDynamic("isTVSelectable")(isTVSelectable.asInstanceOf[js.Any])
-    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
-    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
-    if (keyboardDismissMode != null) __obj.updateDynamic("keyboardDismissMode")(keyboardDismissMode.asInstanceOf[js.Any])
-    if (keyboardShouldPersistTaps != null) __obj.updateDynamic("keyboardShouldPersistTaps")(keyboardShouldPersistTaps.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (layoutCardOffset != null) __obj.updateDynamic("layoutCardOffset")(layoutCardOffset.asInstanceOf[js.Any])
-    if (lockScrollTimeoutDuration != null) __obj.updateDynamic("lockScrollTimeoutDuration")(lockScrollTimeoutDuration.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockScrollWhileSnapping)) __obj.updateDynamic("lockScrollWhileSnapping")(lockScrollWhileSnapping.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (loopClonesPerSide != null) __obj.updateDynamic("loopClonesPerSide")(loopClonesPerSide.asInstanceOf[js.Any])
-    if (maximumZoomScale != null) __obj.updateDynamic("maximumZoomScale")(maximumZoomScale.asInstanceOf[js.Any])
-    if (minimumZoomScale != null) __obj.updateDynamic("minimumZoomScale")(minimumZoomScale.asInstanceOf[js.Any])
-    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID.asInstanceOf[js.Any])
-    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing.asInstanceOf[js.Any])
-    if (!js.isUndefined(nestedScrollEnabled)) __obj.updateDynamic("nestedScrollEnabled")(nestedScrollEnabled.asInstanceOf[js.Any])
-    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onAccessibilityAction(t0).runNow()))
-    onAccessibilityEscape.foreach(p => __obj.updateDynamic("onAccessibilityEscape")(p.toJsFn))
-    onAccessibilityTap.foreach(p => __obj.updateDynamic("onAccessibilityTap")(p.toJsFn))
-    if (onBeforeSnapToItem != null) __obj.updateDynamic("onBeforeSnapToItem")(js.Any.fromFunction1((t0: /* slideIndex */ scala.Double) => onBeforeSnapToItem(t0).runNow()))
-    if (onContentSizeChange != null) __obj.updateDynamic("onContentSizeChange")(js.Any.fromFunction2((t0: /* w */ scala.Double, t1: /* h */ scala.Double) => onContentSizeChange(t0, t1).runNow()))
-    if (onLayout != null) __obj.updateDynamic("onLayout")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.reactNative.mod.LayoutChangeEvent) => onLayout(t0).runNow()))
-    onMagicTap.foreach(p => __obj.updateDynamic("onMagicTap")(p.toJsFn))
-    if (onMomentumScrollBegin != null) __obj.updateDynamic("onMomentumScrollBegin")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMomentumScrollBegin(t0).runNow()))
-    if (onMomentumScrollEnd != null) __obj.updateDynamic("onMomentumScrollEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMomentumScrollEnd(t0).runNow()))
-    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponder(t0).runNow()))
-    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onMoveShouldSetResponderCapture(t0).runNow()))
-    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderEnd(t0).runNow()))
-    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderGrant(t0).runNow()))
-    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderMove(t0).runNow()))
-    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderReject(t0).runNow()))
-    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderRelease(t0).runNow()))
-    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderStart(t0).runNow()))
-    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminate(t0).runNow()))
-    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onResponderTerminationRequest(t0).runNow()))
-    if (onScroll != null) __obj.updateDynamic("onScroll")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onScroll(t0).runNow()))
-    onScrollAnimationEnd.foreach(p => __obj.updateDynamic("onScrollAnimationEnd")(p.toJsFn))
-    if (onScrollBeginDrag != null) __obj.updateDynamic("onScrollBeginDrag")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onScrollBeginDrag(t0).runNow()))
-    if (onScrollEndDrag != null) __obj.updateDynamic("onScrollEndDrag")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onScrollEndDrag(t0).runNow()))
-    if (onScrollToTop != null) __obj.updateDynamic("onScrollToTop")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onScrollToTop(t0).runNow()))
-    if (onSnapToItem != null) __obj.updateDynamic("onSnapToItem")(js.Any.fromFunction1((t0: /* slideIndex */ scala.Double) => onSnapToItem(t0).runNow()))
-    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponder(t0).runNow()))
-    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onStartShouldSetResponderCapture(t0).runNow()))
-    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchCancel(t0).runNow()))
-    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEnd(t0).runNow()))
-    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchEndCapture(t0).runNow()))
-    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchMove(t0).runNow()))
-    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onTouchStart(t0).runNow()))
-    if (overScrollMode != null) __obj.updateDynamic("overScrollMode")(overScrollMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(pagingEnabled)) __obj.updateDynamic("pagingEnabled")(pagingEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(pinchGestureEnabled)) __obj.updateDynamic("pinchGestureEnabled")(pinchGestureEnabled.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (refreshControl != null) __obj.updateDynamic("refreshControl")(refreshControl.rawElement.asInstanceOf[js.Any])
-    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollEnabled)) __obj.updateDynamic("scrollEnabled")(scrollEnabled.asInstanceOf[js.Any])
-    if (scrollEndDragDebounceValue != null) __obj.updateDynamic("scrollEndDragDebounceValue")(scrollEndDragDebounceValue.asInstanceOf[js.Any])
-    if (scrollEventThrottle != null) __obj.updateDynamic("scrollEventThrottle")(scrollEventThrottle.asInstanceOf[js.Any])
-    if (scrollIndicatorInsets != null) __obj.updateDynamic("scrollIndicatorInsets")(scrollIndicatorInsets.asInstanceOf[js.Any])
-    if (scrollInterpolator != null) __obj.updateDynamic("scrollInterpolator")(js.Any.fromFunction2((t0: /* index */ scala.Double, t1: /* carouselProps */ typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProps[js.Any]) => scrollInterpolator(t0, t1).runNow()))
-    if (scrollPerfTag != null) __obj.updateDynamic("scrollPerfTag")(scrollPerfTag.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollToOverflowEnabled)) __obj.updateDynamic("scrollToOverflowEnabled")(scrollToOverflowEnabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollsToTop)) __obj.updateDynamic("scrollsToTop")(scrollsToTop.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldOptimizeUpdates)) __obj.updateDynamic("shouldOptimizeUpdates")(shouldOptimizeUpdates.asInstanceOf[js.Any])
-    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsHorizontalScrollIndicator)) __obj.updateDynamic("showsHorizontalScrollIndicator")(showsHorizontalScrollIndicator.asInstanceOf[js.Any])
-    if (!js.isUndefined(showsVerticalScrollIndicator)) __obj.updateDynamic("showsVerticalScrollIndicator")(showsVerticalScrollIndicator.asInstanceOf[js.Any])
-    if (slideInterpolatedStyle != null) __obj.updateDynamic("slideInterpolatedStyle")(js.Any.fromFunction3((t0: /* index */ scala.Double, t1: /* animatedValue */ typingsJapgolly.reactNative.mod.Animated.AnimatedValue, t2: /* carouselProps */ typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProps[js.Any]) => slideInterpolatedStyle(t0, t1, t2).runNow()))
-    if (slideStyle != null) __obj.updateDynamic("slideStyle")(slideStyle.asInstanceOf[js.Any])
-    if (sliderHeight != null) __obj.updateDynamic("sliderHeight")(sliderHeight.asInstanceOf[js.Any])
-    if (sliderWidth != null) __obj.updateDynamic("sliderWidth")(sliderWidth.asInstanceOf[js.Any])
-    if (snapToAlignment != null) __obj.updateDynamic("snapToAlignment")(snapToAlignment.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToEnd)) __obj.updateDynamic("snapToEnd")(snapToEnd.asInstanceOf[js.Any])
-    if (snapToInterval != null) __obj.updateDynamic("snapToInterval")(snapToInterval.asInstanceOf[js.Any])
-    if (snapToOffsets != null) __obj.updateDynamic("snapToOffsets")(snapToOffsets.asInstanceOf[js.Any])
-    if (!js.isUndefined(snapToStart)) __obj.updateDynamic("snapToStart")(snapToStart.asInstanceOf[js.Any])
-    if (stickyHeaderIndices != null) __obj.updateDynamic("stickyHeaderIndices")(stickyHeaderIndices.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    if (tvParallaxMagnification != null) __obj.updateDynamic("tvParallaxMagnification")(tvParallaxMagnification.asInstanceOf[js.Any])
-    if (tvParallaxProperties != null) __obj.updateDynamic("tvParallaxProperties")(tvParallaxProperties.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceX != null) __obj.updateDynamic("tvParallaxShiftDistanceX")(tvParallaxShiftDistanceX.asInstanceOf[js.Any])
-    if (tvParallaxShiftDistanceY != null) __obj.updateDynamic("tvParallaxShiftDistanceY")(tvParallaxShiftDistanceY.asInstanceOf[js.Any])
-    if (tvParallaxTiltAngle != null) __obj.updateDynamic("tvParallaxTiltAngle")(tvParallaxTiltAngle.asInstanceOf[js.Any])
-    if (!js.isUndefined(useScrollView)) __obj.updateDynamic("useScrollView")(useScrollView.asInstanceOf[js.Any])
-    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
-    if (zoomScale != null) __obj.updateDynamic("zoomScale")(zoomScale.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProperties[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSnapCarousel.mod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSnapCarousel.mod.CarouselProperties[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[CarouselProperties[T]]))
   }
+  
   @JSImport("react-native-snap-carousel", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default[T]] {
+    
+    inline def CellRendererComponent(value: ComponentType[Any]): this.type = set("CellRendererComponent", value.asInstanceOf[js.Any])
+    
+    inline def ItemSeparatorComponent(value: ComponentType[Any]): this.type = set("ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    
+    inline def ItemSeparatorComponentNull: this.type = set("ItemSeparatorComponent", null)
+    
+    inline def ListEmptyComponent(value: ComponentType[Any] | Element): this.type = set("ListEmptyComponent", value.asInstanceOf[js.Any])
+    
+    inline def ListEmptyComponentNull: this.type = set("ListEmptyComponent", null)
+    
+    inline def ListEmptyComponentVdomElement(value: VdomElement): this.type = set("ListEmptyComponent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def ListFooterComponent(value: ComponentType[Any] | Element): this.type = set("ListFooterComponent", value.asInstanceOf[js.Any])
+    
+    inline def ListFooterComponentNull: this.type = set("ListFooterComponent", null)
+    
+    inline def ListFooterComponentStyle(value: StyleProp[ViewStyle]): this.type = set("ListFooterComponentStyle", value.asInstanceOf[js.Any])
+    
+    inline def ListFooterComponentStyleNull: this.type = set("ListFooterComponentStyle", null)
+    
+    inline def ListFooterComponentVdomElement(value: VdomElement): this.type = set("ListFooterComponent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def ListHeaderComponent(value: ComponentType[Any] | Element): this.type = set("ListHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def ListHeaderComponentNull: this.type = set("ListHeaderComponent", null)
+    
+    inline def ListHeaderComponentStyle(value: StyleProp[ViewStyle]): this.type = set("ListHeaderComponentStyle", value.asInstanceOf[js.Any])
+    
+    inline def ListHeaderComponentStyleNull: this.type = set("ListHeaderComponentStyle", null)
+    
+    inline def ListHeaderComponentVdomElement(value: VdomElement): this.type = set("ListHeaderComponent", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def StickyHeaderComponent(value: ComponentType[Any]): this.type = set("StickyHeaderComponent", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActions(value: js.Array[AccessibilityActionInfo]): this.type = set("accessibilityActions", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityActionsVarargs(value: AccessibilityActionInfo*): this.type = set("accessibilityActions", js.Array(value*))
+    
+    inline def accessibilityElementsHidden(value: Boolean): this.type = set("accessibilityElementsHidden", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityHint(value: String): this.type = set("accessibilityHint", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityIgnoresInvertColors(value: Boolean): this.type = set("accessibilityIgnoresInvertColors", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabel(value: String): this.type = set("accessibilityLabel", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledBy(value: String | js.Array[String]): this.type = set("accessibilityLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLabelledByVarargs(value: String*): this.type = set("accessibilityLabelledBy", js.Array(value*))
+    
+    inline def accessibilityLanguage(value: String): this.type = set("accessibilityLanguage", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityLiveRegion(value: none | polite | assertive): this.type = set("accessibilityLiveRegion", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityRole(value: AccessibilityRole): this.type = set("accessibilityRole", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityState(value: AccessibilityState): this.type = set("accessibilityState", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityValue(value: AccessibilityValue): this.type = set("accessibilityValue", value.asInstanceOf[js.Any])
+    
+    inline def accessibilityViewIsModal(value: Boolean): this.type = set("accessibilityViewIsModal", value.asInstanceOf[js.Any])
+    
+    inline def accessible(value: Boolean): this.type = set("accessible", value.asInstanceOf[js.Any])
+    
+    inline def activeAnimationOptions(value: DecayAnimationConfig | TimingAnimationConfig | SpringAnimationConfig): this.type = set("activeAnimationOptions", value.asInstanceOf[js.Any])
+    
+    inline def activeAnimationType(value: decay | spring | timing): this.type = set("activeAnimationType", value.asInstanceOf[js.Any])
+    
+    inline def activeSlideAlignment(value: start | center | end): this.type = set("activeSlideAlignment", value.asInstanceOf[js.Any])
+    
+    inline def activeSlideOffset(value: Double): this.type = set("activeSlideOffset", value.asInstanceOf[js.Any])
+    
+    inline def alwaysBounceHorizontal(value: Boolean): this.type = set("alwaysBounceHorizontal", value.asInstanceOf[js.Any])
+    
+    inline def alwaysBounceVertical(value: Boolean): this.type = set("alwaysBounceVertical", value.asInstanceOf[js.Any])
+    
+    inline def apparitionDelay(value: Double): this.type = set("apparitionDelay", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustContentInsets(value: Boolean): this.type = set("automaticallyAdjustContentInsets", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustKeyboardInsets(value: Boolean): this.type = set("automaticallyAdjustKeyboardInsets", value.asInstanceOf[js.Any])
+    
+    inline def automaticallyAdjustsScrollIndicatorInsets(value: Boolean): this.type = set("automaticallyAdjustsScrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def autoplay(value: Boolean): this.type = set("autoplay", value.asInstanceOf[js.Any])
+    
+    inline def autoplayDelay(value: Double): this.type = set("autoplayDelay", value.asInstanceOf[js.Any])
+    
+    inline def autoplayInterval(value: Double): this.type = set("autoplayInterval", value.asInstanceOf[js.Any])
+    
+    inline def bounces(value: Boolean): this.type = set("bounces", value.asInstanceOf[js.Any])
+    
+    inline def bouncesZoom(value: Boolean): this.type = set("bouncesZoom", value.asInstanceOf[js.Any])
+    
+    inline def callbackOffsetMargin(value: Double): this.type = set("callbackOffsetMargin", value.asInstanceOf[js.Any])
+    
+    inline def canCancelContentTouches(value: Boolean): this.type = set("canCancelContentTouches", value.asInstanceOf[js.Any])
+    
+    inline def centerContent(value: Boolean): this.type = set("centerContent", value.asInstanceOf[js.Any])
+    
+    inline def collapsable(value: Boolean): this.type = set("collapsable", value.asInstanceOf[js.Any])
+    
+    inline def columnWrapperStyle(value: StyleProp[ViewStyle]): this.type = set("columnWrapperStyle", value.asInstanceOf[js.Any])
+    
+    inline def columnWrapperStyleNull: this.type = set("columnWrapperStyle", null)
+    
+    inline def containerCustomStyle(value: StyleProp[ViewStyle]): this.type = set("containerCustomStyle", value.asInstanceOf[js.Any])
+    
+    inline def containerCustomStyleNull: this.type = set("containerCustomStyle", null)
+    
+    inline def contentContainerCustomStyle(value: StyleProp[ViewStyle]): this.type = set("contentContainerCustomStyle", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerCustomStyleNull: this.type = set("contentContainerCustomStyle", null)
+    
+    inline def contentContainerStyle(value: StyleProp[ViewStyle]): this.type = set("contentContainerStyle", value.asInstanceOf[js.Any])
+    
+    inline def contentContainerStyleNull: this.type = set("contentContainerStyle", null)
+    
+    inline def contentInset(value: Insets): this.type = set("contentInset", value.asInstanceOf[js.Any])
+    
+    inline def contentInsetAdjustmentBehavior(value: automatic | scrollableAxes | never | always): this.type = set("contentInsetAdjustmentBehavior", value.asInstanceOf[js.Any])
+    
+    inline def contentOffset(value: PointProp): this.type = set("contentOffset", value.asInstanceOf[js.Any])
+    
+    inline def data(value: js.Array[T]): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataNull: this.type = set("data", null)
+    
+    inline def dataVarargs(value: T*): this.type = set("data", js.Array(value*))
+    
+    inline def debug(value: Boolean): this.type = set("debug", value.asInstanceOf[js.Any])
+    
+    inline def decelerationRate(value: fast | normal_ | Double): this.type = set("decelerationRate", value.asInstanceOf[js.Any])
+    
+    inline def directionalLockEnabled(value: Boolean): this.type = set("directionalLockEnabled", value.asInstanceOf[js.Any])
+    
+    inline def disableIntervalMomentum(value: Boolean): this.type = set("disableIntervalMomentum", value.asInstanceOf[js.Any])
+    
+    inline def disableScrollViewPanResponder(value: Boolean): this.type = set("disableScrollViewPanResponder", value.asInstanceOf[js.Any])
+    
+    inline def disableVirtualization(value: Boolean): this.type = set("disableVirtualization", value.asInstanceOf[js.Any])
+    
+    inline def enableMomentum(value: Boolean): this.type = set("enableMomentum", value.asInstanceOf[js.Any])
+    
+    inline def enableSnap(value: Boolean): this.type = set("enableSnap", value.asInstanceOf[js.Any])
+    
+    inline def endFillColor(value: ColorValue): this.type = set("endFillColor", value.asInstanceOf[js.Any])
+    
+    inline def extraData(value: Any): this.type = set("extraData", value.asInstanceOf[js.Any])
+    
+    inline def fadingEdgeLength(value: Double): this.type = set("fadingEdgeLength", value.asInstanceOf[js.Any])
+    
+    inline def firstItem(value: Double): this.type = set("firstItem", value.asInstanceOf[js.Any])
+    
+    inline def focusable(value: Boolean): this.type = set("focusable", value.asInstanceOf[js.Any])
+    
+    inline def getItem(value: (/* data */ Any, /* index */ Double) => T): this.type = set("getItem", js.Any.fromFunction2(value))
+    
+    inline def getItemCount(value: /* data */ Any => Double): this.type = set("getItemCount", js.Any.fromFunction1(value))
+    
+    inline def getItemLayout(value: (/* data */ js.UndefOr[js.Array[T] | Null], /* index */ Double) => Length): this.type = set("getItemLayout", js.Any.fromFunction2(value))
+    
+    inline def hasParallaxImages(value: Boolean): this.type = set("hasParallaxImages", value.asInstanceOf[js.Any])
+    
+    inline def hasTVPreferredFocus(value: Boolean): this.type = set("hasTVPreferredFocus", value.asInstanceOf[js.Any])
+    
+    inline def hitSlop(value: Insets): this.type = set("hitSlop", value.asInstanceOf[js.Any])
+    
+    inline def horizontal(value: Boolean): this.type = set("horizontal", value.asInstanceOf[js.Any])
+    
+    inline def horizontalNull: this.type = set("horizontal", null)
+    
+    inline def importantForAccessibility(value: auto | yes | no | `no-hide-descendants`): this.type = set("importantForAccessibility", value.asInstanceOf[js.Any])
+    
+    inline def inactiveSlideOpacity(value: Double): this.type = set("inactiveSlideOpacity", value.asInstanceOf[js.Any])
+    
+    inline def inactiveSlideScale(value: Double): this.type = set("inactiveSlideScale", value.asInstanceOf[js.Any])
+    
+    inline def inactiveSlideShift(value: Double): this.type = set("inactiveSlideShift", value.asInstanceOf[js.Any])
+    
+    inline def indicatorStyle(value: typingsJapgolly.reactNative.reactNativeStrings.default | black | white): this.type = set("indicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def initialNumToRender(value: Double): this.type = set("initialNumToRender", value.asInstanceOf[js.Any])
+    
+    inline def initialScrollIndex(value: Double): this.type = set("initialScrollIndex", value.asInstanceOf[js.Any])
+    
+    inline def initialScrollIndexNull: this.type = set("initialScrollIndex", null)
+    
+    inline def invertStickyHeaders(value: Boolean): this.type = set("invertStickyHeaders", value.asInstanceOf[js.Any])
+    
+    inline def inverted(value: Boolean): this.type = set("inverted", value.asInstanceOf[js.Any])
+    
+    inline def invertedNull: this.type = set("inverted", null)
+    
+    inline def isTVSelectable(value: Boolean): this.type = set("isTVSelectable", value.asInstanceOf[js.Any])
+    
+    inline def itemHeight(value: Double): this.type = set("itemHeight", value.asInstanceOf[js.Any])
+    
+    inline def itemWidth(value: Double): this.type = set("itemWidth", value.asInstanceOf[js.Any])
+    
+    inline def keyExtractor(value: (T, /* index */ Double) => String): this.type = set("keyExtractor", js.Any.fromFunction2(value))
+    
+    inline def keyboardDismissMode(value: none | interactive | `on-drag`): this.type = set("keyboardDismissMode", value.asInstanceOf[js.Any])
+    
+    inline def keyboardShouldPersistTaps(value: Boolean | always | never | handled): this.type = set("keyboardShouldPersistTaps", value.asInstanceOf[js.Any])
+    
+    inline def layout(
+      value: typingsJapgolly.reactNativeSnapCarousel.reactNativeSnapCarouselStrings.default | stack | tinder
+    ): this.type = set("layout", value.asInstanceOf[js.Any])
+    
+    inline def layoutCardOffset(value: Double): this.type = set("layoutCardOffset", value.asInstanceOf[js.Any])
+    
+    inline def legacyImplementation(value: Boolean): this.type = set("legacyImplementation", value.asInstanceOf[js.Any])
+    
+    inline def listKey(value: String): this.type = set("listKey", value.asInstanceOf[js.Any])
+    
+    inline def lockScrollTimeoutDuration(value: Double): this.type = set("lockScrollTimeoutDuration", value.asInstanceOf[js.Any])
+    
+    inline def lockScrollWhileSnapping(value: Boolean): this.type = set("lockScrollWhileSnapping", value.asInstanceOf[js.Any])
+    
+    inline def loop(value: Boolean): this.type = set("loop", value.asInstanceOf[js.Any])
+    
+    inline def loopClonesPerSide(value: Double): this.type = set("loopClonesPerSide", value.asInstanceOf[js.Any])
+    
+    inline def maintainVisibleContentPosition(value: AutoscrollToTopThreshold): this.type = set("maintainVisibleContentPosition", value.asInstanceOf[js.Any])
+    
+    inline def maintainVisibleContentPositionNull: this.type = set("maintainVisibleContentPosition", null)
+    
+    inline def maxToRenderPerBatch(value: Double): this.type = set("maxToRenderPerBatch", value.asInstanceOf[js.Any])
+    
+    inline def maximumZoomScale(value: Double): this.type = set("maximumZoomScale", value.asInstanceOf[js.Any])
+    
+    inline def minimumZoomScale(value: Double): this.type = set("minimumZoomScale", value.asInstanceOf[js.Any])
+    
+    inline def nativeID(value: String): this.type = set("nativeID", value.asInstanceOf[js.Any])
+    
+    inline def needsOffscreenAlphaCompositing(value: Boolean): this.type = set("needsOffscreenAlphaCompositing", value.asInstanceOf[js.Any])
+    
+    inline def nestedScrollEnabled(value: Boolean): this.type = set("nestedScrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def numColumns(value: Double): this.type = set("numColumns", value.asInstanceOf[js.Any])
+    
+    inline def onAccessibilityAction(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onAccessibilityAction", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onAccessibilityEscape(value: Callback): this.type = set("onAccessibilityEscape", value.toJsFn)
+    
+    inline def onAccessibilityTap(value: Callback): this.type = set("onAccessibilityTap", value.toJsFn)
+    
+    inline def onBeforeSnapToItem(value: /* slideIndex */ Double => Callback): this.type = set("onBeforeSnapToItem", js.Any.fromFunction1((t0: /* slideIndex */ Double) => value(t0).runNow()))
+    
+    inline def onContentSizeChange(value: (/* w */ Double, /* h */ Double) => Callback): this.type = set("onContentSizeChange", js.Any.fromFunction2((t0: /* w */ Double, t1: /* h */ Double) => (value(t0, t1)).runNow()))
+    
+    inline def onEndReached(value: /* info */ DistanceFromEnd => Callback): this.type = set("onEndReached", js.Any.fromFunction1((t0: /* info */ DistanceFromEnd) => value(t0).runNow()))
+    
+    inline def onEndReachedNull: this.type = set("onEndReached", null)
+    
+    inline def onEndReachedThreshold(value: Double): this.type = set("onEndReachedThreshold", value.asInstanceOf[js.Any])
+    
+    inline def onEndReachedThresholdNull: this.type = set("onEndReachedThreshold", null)
+    
+    inline def onLayout(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onLayout", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMagicTap(value: Callback): this.type = set("onMagicTap", value.toJsFn)
+    
+    inline def onMomentumScrollBegin(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onMomentumScrollBegin", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMomentumScrollEnd(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onMomentumScrollEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onMoveShouldSetResponder(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Boolean): this.type = set("onMoveShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onMoveShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Boolean): this.type = set("onMoveShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onPointerCancel(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerCancel", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerCancelCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerCancelCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerDown(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerDown", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerDownCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerDownCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnter(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerEnter", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerEnterCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerEnterCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeave(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerLeave", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerLeaveCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerLeaveCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerMove(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerMoveCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerMoveCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerUp(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerUp", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onPointerUpCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onPointerUpCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onRefresh(value: Callback): this.type = set("onRefresh", value.toJsFn)
+    
+    inline def onRefreshNull: this.type = set("onRefresh", null)
+    
+    inline def onResponderEnd(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderGrant(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderGrant", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderMove(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderReject(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderReject", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderRelease(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderRelease", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderStart(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminate(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onResponderTerminate", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onResponderTerminationRequest(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Boolean): this.type = set("onResponderTerminationRequest", js.Any.fromFunction1(value))
+    
+    inline def onScroll(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onScroll", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onScrollAnimationEnd(value: Callback): this.type = set("onScrollAnimationEnd", value.toJsFn)
+    
+    inline def onScrollBeginDrag(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onScrollBeginDrag", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onScrollEndDrag(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onScrollEndDrag", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onScrollToIndexFailed(value: /* info */ AverageItemLength => Callback): this.type = set("onScrollToIndexFailed", js.Any.fromFunction1((t0: /* info */ AverageItemLength) => value(t0).runNow()))
+    
+    inline def onScrollToTop(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onScrollToTop", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onSnapToItem(value: /* slideIndex */ Double => Callback): this.type = set("onSnapToItem", js.Any.fromFunction1((t0: /* slideIndex */ Double) => value(t0).runNow()))
+    
+    inline def onStartShouldSetResponder(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Boolean): this.type = set("onStartShouldSetResponder", js.Any.fromFunction1(value))
+    
+    inline def onStartShouldSetResponderCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Boolean): this.type = set("onStartShouldSetResponderCapture", js.Any.fromFunction1(value))
+    
+    inline def onTouchCancel(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onTouchCancel", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchEnd(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onTouchEnd", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchEndCapture(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onTouchEndCapture", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchMove(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onTouchMove", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onTouchStart(value: ReactEventFrom[NodeHandle & org.scalajs.dom.Element] => Callback): this.type = set("onTouchStart", js.Any.fromFunction1((t0: ReactEventFrom[NodeHandle & org.scalajs.dom.Element]) => value(t0).runNow()))
+    
+    inline def onViewableItemsChanged(value: /* info */ Changed => Callback): this.type = set("onViewableItemsChanged", js.Any.fromFunction1((t0: /* info */ Changed) => value(t0).runNow()))
+    
+    inline def onViewableItemsChangedNull: this.type = set("onViewableItemsChanged", null)
+    
+    inline def overScrollMode(value: auto | always | never): this.type = set("overScrollMode", value.asInstanceOf[js.Any])
+    
+    inline def pagingEnabled(value: Boolean): this.type = set("pagingEnabled", value.asInstanceOf[js.Any])
+    
+    inline def persistentScrollbar(value: Boolean): this.type = set("persistentScrollbar", value.asInstanceOf[js.Any])
+    
+    inline def pinchGestureEnabled(value: Boolean): this.type = set("pinchGestureEnabled", value.asInstanceOf[js.Any])
+    
+    inline def pointerEvents(value: `box-none` | none | `box-only` | auto): this.type = set("pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def progressViewOffset(value: Double): this.type = set("progressViewOffset", value.asInstanceOf[js.Any])
+    
+    inline def refreshControl(value: VdomElement): this.type = set("refreshControl", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def refreshing(value: Boolean): this.type = set("refreshing", value.asInstanceOf[js.Any])
+    
+    inline def refreshingNull: this.type = set("refreshing", null)
+    
+    inline def removeClippedSubviews(value: Boolean): this.type = set("removeClippedSubviews", value.asInstanceOf[js.Any])
+    
+    inline def renderItem(value: /* info */ ListRenderItemInfo[T] => Element | Null): this.type = set("renderItem", js.Any.fromFunction1(value))
+    
+    inline def renderItemNull: this.type = set("renderItem", null)
+    
+    inline def renderScrollComponent(value: /* props */ ScrollViewProps => Element): this.type = set("renderScrollComponent", js.Any.fromFunction1(value))
+    
+    inline def renderToHardwareTextureAndroid(value: Boolean): this.type = set("renderToHardwareTextureAndroid", value.asInstanceOf[js.Any])
+    
+    inline def scrollEnabled(value: Boolean): this.type = set("scrollEnabled", value.asInstanceOf[js.Any])
+    
+    inline def scrollEndDragDebounceValue(value: Double): this.type = set("scrollEndDragDebounceValue", value.asInstanceOf[js.Any])
+    
+    inline def scrollEventThrottle(value: Double): this.type = set("scrollEventThrottle", value.asInstanceOf[js.Any])
+    
+    inline def scrollIndicatorInsets(value: Insets): this.type = set("scrollIndicatorInsets", value.asInstanceOf[js.Any])
+    
+    inline def scrollInterpolator(value: (/* index */ Double, /* carouselProps */ CarouselProps[Any]) => InputRange): this.type = set("scrollInterpolator", js.Any.fromFunction2(value))
+    
+    inline def scrollPerfTag(value: String): this.type = set("scrollPerfTag", value.asInstanceOf[js.Any])
+    
+    inline def scrollToOverflowEnabled(value: Boolean): this.type = set("scrollToOverflowEnabled", value.asInstanceOf[js.Any])
+    
+    inline def scrollsToTop(value: Boolean): this.type = set("scrollsToTop", value.asInstanceOf[js.Any])
+    
+    inline def shouldOptimizeUpdates(value: Boolean): this.type = set("shouldOptimizeUpdates", value.asInstanceOf[js.Any])
+    
+    inline def shouldRasterizeIOS(value: Boolean): this.type = set("shouldRasterizeIOS", value.asInstanceOf[js.Any])
+    
+    inline def showsHorizontalScrollIndicator(value: Boolean): this.type = set("showsHorizontalScrollIndicator", value.asInstanceOf[js.Any])
+    
+    inline def showsVerticalScrollIndicator(value: Boolean): this.type = set("showsVerticalScrollIndicator", value.asInstanceOf[js.Any])
+    
+    inline def slideInterpolatedStyle(
+      value: (/* index */ Double, /* animatedValue */ AnimatedValue, /* carouselProps */ CarouselProps[Any]) => StyleProp[ViewStyle]
+    ): this.type = set("slideInterpolatedStyle", js.Any.fromFunction3(value))
+    
+    inline def slideStyle(value: StyleProp[ViewStyle]): this.type = set("slideStyle", value.asInstanceOf[js.Any])
+    
+    inline def slideStyleNull: this.type = set("slideStyle", null)
+    
+    inline def sliderHeight(value: Double): this.type = set("sliderHeight", value.asInstanceOf[js.Any])
+    
+    inline def sliderWidth(value: Double): this.type = set("sliderWidth", value.asInstanceOf[js.Any])
+    
+    inline def snapToAlignment(
+      value: typingsJapgolly.reactNative.reactNativeStrings.start | typingsJapgolly.reactNative.reactNativeStrings.center | typingsJapgolly.reactNative.reactNativeStrings.end
+    ): this.type = set("snapToAlignment", value.asInstanceOf[js.Any])
+    
+    inline def snapToEnd(value: Boolean): this.type = set("snapToEnd", value.asInstanceOf[js.Any])
+    
+    inline def snapToInterval(value: Double): this.type = set("snapToInterval", value.asInstanceOf[js.Any])
+    
+    inline def snapToOffsets(value: js.Array[Double]): this.type = set("snapToOffsets", value.asInstanceOf[js.Any])
+    
+    inline def snapToOffsetsVarargs(value: Double*): this.type = set("snapToOffsets", js.Array(value*))
+    
+    inline def snapToStart(value: Boolean): this.type = set("snapToStart", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderHiddenOnScroll(value: Boolean): this.type = set("stickyHeaderHiddenOnScroll", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderIndices(value: js.Array[Double]): this.type = set("stickyHeaderIndices", value.asInstanceOf[js.Any])
+    
+    inline def stickyHeaderIndicesVarargs(value: Double*): this.type = set("stickyHeaderIndices", js.Array(value*))
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def swipeThreshold(value: Double): this.type = set("swipeThreshold", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxMagnification(value: Double): this.type = set("tvParallaxMagnification", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxProperties(value: TVParallaxProperties): this.type = set("tvParallaxProperties", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxShiftDistanceX(value: Double): this.type = set("tvParallaxShiftDistanceX", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxShiftDistanceY(value: Double): this.type = set("tvParallaxShiftDistanceY", value.asInstanceOf[js.Any])
+    
+    inline def tvParallaxTiltAngle(value: Double): this.type = set("tvParallaxTiltAngle", value.asInstanceOf[js.Any])
+    
+    inline def updateCellsBatchingPeriod(value: Double): this.type = set("updateCellsBatchingPeriod", value.asInstanceOf[js.Any])
+    
+    inline def useScrollView(value: Boolean): this.type = set("useScrollView", value.asInstanceOf[js.Any])
+    
+    inline def vertical(value: Boolean): this.type = set("vertical", value.asInstanceOf[js.Any])
+    
+    inline def viewabilityConfig(value: Any): this.type = set("viewabilityConfig", value.asInstanceOf[js.Any])
+    
+    inline def viewabilityConfigCallbackPairs(value: ViewabilityConfigCallbackPairs): this.type = set("viewabilityConfigCallbackPairs", value.asInstanceOf[js.Any])
+    
+    inline def viewabilityConfigCallbackPairsVarargs(value: ViewabilityConfigCallbackPair*): this.type = set("viewabilityConfigCallbackPairs", js.Array(value*))
+    
+    inline def windowSize(value: Double): this.type = set("windowSize", value.asInstanceOf[js.Any])
+    
+    inline def zoomScale(value: Double): this.type = set("zoomScale", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[T](companion: ReactNativeSnapCarousel.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: CarouselProperties[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

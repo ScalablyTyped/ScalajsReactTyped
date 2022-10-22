@@ -1,25 +1,31 @@
 package typingsJapgolly.jestHasteMap
 
-import typingsJapgolly.jestHasteMap.typesMod.HTypeValue
+import typingsJapgolly.jestHasteMap.mod.HTypeValue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestHasteMapStrings {
-  @js.native
-  sealed trait Null extends HTypeValue
   
   @js.native
-  sealed trait g extends HTypeValue
+  sealed trait Null
+    extends StObject
+       with HTypeValue
+  inline def Null: Null = "\u0000".asInstanceOf[Null]
   
   @js.native
-  sealed trait native extends HTypeValue
+  sealed trait change extends StObject
+  inline def change: change = "change".asInstanceOf[change]
   
-  @scala.inline
-  def Null: Null = "\u0000".asInstanceOf[Null]
-  @scala.inline
-  def g: g = "g".asInstanceOf[g]
-  @scala.inline
-  def native: native = "native".asInstanceOf[native]
+  @js.native
+  sealed trait g
+    extends StObject
+       with HTypeValue
+  inline def g: g = "g".asInstanceOf[g]
+  
+  @js.native
+  sealed trait native
+    extends StObject
+       with HTypeValue
+  inline def native: native = "native".asInstanceOf[native]
 }
-

@@ -1,79 +1,136 @@
 package typingsJapgolly.mfiles
 
-import typingsJapgolly.mfiles.mfilesNumbers.`1`
-import typingsJapgolly.mfiles.mfilesNumbers.`2`
-import typingsJapgolly.mfiles.mfilesNumbers.`3`
-import typingsJapgolly.mfiles.mfilesNumbers.`4`
+import typingsJapgolly.mfiles.mfilesInts.`1`
+import typingsJapgolly.mfiles.mfilesInts.`2`
+import typingsJapgolly.mfiles.mfilesInts.`3`
+import typingsJapgolly.mfiles.mfilesInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMessage extends js.Object {
+trait IMessage extends StObject {
+  
   var button1_enabled: js.UndefOr[Boolean] = js.undefined
+  
   var button1_title: js.UndefOr[String] = js.undefined
+  
   var button2_enabled: js.UndefOr[Boolean] = js.undefined
+  
   var button2_title: js.UndefOr[String] = js.undefined
+  
   var button3_enabled: js.UndefOr[Boolean] = js.undefined
+  
   var button3_title: js.UndefOr[String] = js.undefined
+  
   var button4_enabled: js.UndefOr[Boolean] = js.undefined
+  
   var button4_title: js.UndefOr[String] = js.undefined
+  
   var cancelButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var checkbox_checked: js.UndefOr[Boolean] = js.undefined
+  
   var checkbox_enabled: js.UndefOr[Boolean] = js.undefined
+  
   var checkbox_title: js.UndefOr[String] = js.undefined
+  
   var defaultButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var message: js.UndefOr[String] = js.undefined
+  
   var timeOut: js.UndefOr[Double] = js.undefined
+  
   var timeOutButton: js.UndefOr[`1` | `2` | `3` | `4`] = js.undefined
+  
   var timeout_deactivateOnFocusChange: js.UndefOr[Boolean] = js.undefined
 }
-
 object IMessage {
-  @scala.inline
-  def apply(
-    button1_enabled: js.UndefOr[Boolean] = js.undefined,
-    button1_title: String = null,
-    button2_enabled: js.UndefOr[Boolean] = js.undefined,
-    button2_title: String = null,
-    button3_enabled: js.UndefOr[Boolean] = js.undefined,
-    button3_title: String = null,
-    button4_enabled: js.UndefOr[Boolean] = js.undefined,
-    button4_title: String = null,
-    cancelButton: `1` | `2` | `3` | `4` = null,
-    caption: String = null,
-    checkbox_checked: js.UndefOr[Boolean] = js.undefined,
-    checkbox_enabled: js.UndefOr[Boolean] = js.undefined,
-    checkbox_title: String = null,
-    defaultButton: `1` | `2` | `3` | `4` = null,
-    icon: String = null,
-    message: String = null,
-    timeOut: Int | Double = null,
-    timeOutButton: `1` | `2` | `3` | `4` = null,
-    timeout_deactivateOnFocusChange: js.UndefOr[Boolean] = js.undefined
-  ): IMessage = {
+  
+  inline def apply(): IMessage = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(button1_enabled)) __obj.updateDynamic("button1_enabled")(button1_enabled.asInstanceOf[js.Any])
-    if (button1_title != null) __obj.updateDynamic("button1_title")(button1_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button2_enabled)) __obj.updateDynamic("button2_enabled")(button2_enabled.asInstanceOf[js.Any])
-    if (button2_title != null) __obj.updateDynamic("button2_title")(button2_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button3_enabled)) __obj.updateDynamic("button3_enabled")(button3_enabled.asInstanceOf[js.Any])
-    if (button3_title != null) __obj.updateDynamic("button3_title")(button3_title.asInstanceOf[js.Any])
-    if (!js.isUndefined(button4_enabled)) __obj.updateDynamic("button4_enabled")(button4_enabled.asInstanceOf[js.Any])
-    if (button4_title != null) __obj.updateDynamic("button4_title")(button4_title.asInstanceOf[js.Any])
-    if (cancelButton != null) __obj.updateDynamic("cancelButton")(cancelButton.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkbox_checked)) __obj.updateDynamic("checkbox_checked")(checkbox_checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkbox_enabled)) __obj.updateDynamic("checkbox_enabled")(checkbox_enabled.asInstanceOf[js.Any])
-    if (checkbox_title != null) __obj.updateDynamic("checkbox_title")(checkbox_title.asInstanceOf[js.Any])
-    if (defaultButton != null) __obj.updateDynamic("defaultButton")(defaultButton.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
-    if (timeOutButton != null) __obj.updateDynamic("timeOutButton")(timeOutButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(timeout_deactivateOnFocusChange)) __obj.updateDynamic("timeout_deactivateOnFocusChange")(timeout_deactivateOnFocusChange.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMessage]
   }
+  
+  extension [Self <: IMessage](x: Self) {
+    
+    inline def setButton1_enabled(value: Boolean): Self = StObject.set(x, "button1_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setButton1_enabledUndefined: Self = StObject.set(x, "button1_enabled", js.undefined)
+    
+    inline def setButton1_title(value: String): Self = StObject.set(x, "button1_title", value.asInstanceOf[js.Any])
+    
+    inline def setButton1_titleUndefined: Self = StObject.set(x, "button1_title", js.undefined)
+    
+    inline def setButton2_enabled(value: Boolean): Self = StObject.set(x, "button2_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setButton2_enabledUndefined: Self = StObject.set(x, "button2_enabled", js.undefined)
+    
+    inline def setButton2_title(value: String): Self = StObject.set(x, "button2_title", value.asInstanceOf[js.Any])
+    
+    inline def setButton2_titleUndefined: Self = StObject.set(x, "button2_title", js.undefined)
+    
+    inline def setButton3_enabled(value: Boolean): Self = StObject.set(x, "button3_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setButton3_enabledUndefined: Self = StObject.set(x, "button3_enabled", js.undefined)
+    
+    inline def setButton3_title(value: String): Self = StObject.set(x, "button3_title", value.asInstanceOf[js.Any])
+    
+    inline def setButton3_titleUndefined: Self = StObject.set(x, "button3_title", js.undefined)
+    
+    inline def setButton4_enabled(value: Boolean): Self = StObject.set(x, "button4_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setButton4_enabledUndefined: Self = StObject.set(x, "button4_enabled", js.undefined)
+    
+    inline def setButton4_title(value: String): Self = StObject.set(x, "button4_title", value.asInstanceOf[js.Any])
+    
+    inline def setButton4_titleUndefined: Self = StObject.set(x, "button4_title", js.undefined)
+    
+    inline def setCancelButton(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "cancelButton", value.asInstanceOf[js.Any])
+    
+    inline def setCancelButtonUndefined: Self = StObject.set(x, "cancelButton", js.undefined)
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setCheckbox_checked(value: Boolean): Self = StObject.set(x, "checkbox_checked", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_checkedUndefined: Self = StObject.set(x, "checkbox_checked", js.undefined)
+    
+    inline def setCheckbox_enabled(value: Boolean): Self = StObject.set(x, "checkbox_enabled", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_enabledUndefined: Self = StObject.set(x, "checkbox_enabled", js.undefined)
+    
+    inline def setCheckbox_title(value: String): Self = StObject.set(x, "checkbox_title", value.asInstanceOf[js.Any])
+    
+    inline def setCheckbox_titleUndefined: Self = StObject.set(x, "checkbox_title", js.undefined)
+    
+    inline def setDefaultButton(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "defaultButton", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultButtonUndefined: Self = StObject.set(x, "defaultButton", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setTimeOut(value: Double): Self = StObject.set(x, "timeOut", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOutButton(value: `1` | `2` | `3` | `4`): Self = StObject.set(x, "timeOutButton", value.asInstanceOf[js.Any])
+    
+    inline def setTimeOutButtonUndefined: Self = StObject.set(x, "timeOutButton", js.undefined)
+    
+    inline def setTimeOutUndefined: Self = StObject.set(x, "timeOut", js.undefined)
+    
+    inline def setTimeout_deactivateOnFocusChange(value: Boolean): Self = StObject.set(x, "timeout_deactivateOnFocusChange", value.asInstanceOf[js.Any])
+    
+    inline def setTimeout_deactivateOnFocusChangeUndefined: Self = StObject.set(x, "timeout_deactivateOnFocusChange", js.undefined)
+  }
 }
-

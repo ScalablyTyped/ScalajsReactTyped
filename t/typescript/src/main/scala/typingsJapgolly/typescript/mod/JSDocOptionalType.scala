@@ -1,16 +1,18 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSDocOptionalType
-  extends JSDocType
+  extends StObject
+     with JSDocType
      with HasType
      with JSDocTypeReferencingNode {
+  
   @JSName("kind")
-  var kind_JSDocOptionalType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocOptionalType = js.native
-  var `type`: TypeNode = js.native
+  val kind_JSDocOptionalType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocOptionalType = js.native
+  
+  val `type`: TypeNode = js.native
 }
-

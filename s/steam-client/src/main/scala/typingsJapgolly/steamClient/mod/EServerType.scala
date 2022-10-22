@@ -1,658 +1,656 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EServerType extends js.Object
-
+sealed trait EServerType extends StObject
 @JSImport("steam-client", "EServerType")
 @js.native
-object EServerType extends js.Object {
-  @js.native
-  sealed trait ACS extends EServerType
-  
-  @js.native
-  sealed trait AM extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait ASBOBSOLETE extends EServerType
-  
-  @js.native
-  sealed trait ATS extends EServerType
-  
-  @js.native
-  sealed trait AccountScore extends EServerType
-  
-  @js.native
-  sealed trait AppInformation extends EServerType
-  
-  @js.native
-  sealed trait Auth extends EServerType
-  
-  @js.native
-  sealed trait BRP extends EServerType
-  
-  @js.native
-  sealed trait BS extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait BUM extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait BUMOBOSOLETE extends EServerType
-  
-  @js.native
-  sealed trait Backpack extends EServerType
-  
-   // removed,
-  @js.native
-  sealed trait BootstrapOBSOLETE extends EServerType
-  
-  @js.native
-  sealed trait BoxMonitor extends EServerType
-  
-  @js.native
-  sealed trait BroadcastChat extends EServerType
-  
-  @js.native
-  sealed trait BroadcastDirectory extends EServerType
-  
-  @js.native
-  sealed trait BroadcastRelay extends EServerType
-  
-  @js.native
-  sealed trait CCS extends EServerType
-  
-  @js.native
-  sealed trait CM extends EServerType
-  
-  @js.native
-  sealed trait CRE extends EServerType
-  
-  @js.native
-  sealed trait CS extends EServerType
-  
-  @js.native
-  sealed trait Client extends EServerType
-  
-  @js.native
-  sealed trait Community extends EServerType
-  
-  @js.native
-  sealed trait Console extends EServerType
-  
-  @js.native
-  sealed trait DFS extends EServerType
-  
-  @js.native
-  sealed trait DP extends EServerType
-  
-  @js.native
-  sealed trait DRMS extends EServerType
-  
-   // removed "renamed to Community"
-  @js.native
-  sealed trait DSS extends EServerType
-  
-  @js.native
-  sealed trait DepotWebContent extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait EPM extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait EPMOBSOLETE extends EServerType
-  
-  @js.native
-  sealed trait ES extends EServerType
-  
-  @js.native
-  sealed trait Econ extends EServerType
-  
-  @js.native
-  sealed trait EmailDelivery extends EServerType
-  
-  @js.native
-  sealed trait ExternalConfig extends EServerType
-  
-  @js.native
-  sealed trait ExternalMonitor extends EServerType
-  
-  @js.native
-  sealed trait FBS extends EServerType
-  
-   // removed "renamed to BoxMonitor"
-  @js.native
-  sealed trait FG extends EServerType
-  
-  @js.native
-  sealed trait FS extends EServerType
-  
-  @js.native
-  sealed trait FTS extends EServerType
-  
-  @js.native
-  sealed trait First extends EServerType
-  
-  @js.native
-  sealed trait GC extends EServerType
-  
-  @js.native
-  sealed trait GCH extends EServerType
-  
-  @js.native
-  sealed trait GM extends EServerType
-  
-  @js.native
-  sealed trait GMS extends EServerType
-  
-  @js.native
-  sealed trait GameNotifications extends EServerType
-  
-  @js.native
-  sealed trait HLTVRelay extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait HubOBSOLETE extends EServerType
-  
-  @js.native
-  sealed trait IS extends EServerType
-  
-  @js.native
-  sealed trait Invalid extends EServerType
-  
-  @js.native
-  sealed trait InventoryManagement extends EServerType
-  
-  @js.native
-  sealed trait KGS extends EServerType
-  
-  @js.native
-  sealed trait LBS extends EServerType
-  
-  @js.native
-  sealed trait Localization extends EServerType
-  
-  @js.native
-  sealed trait LogRequest extends EServerType
-  
-  @js.native
-  sealed trait LogWorker extends EServerType
-  
-  @js.native
-  sealed trait Logsink extends EServerType
-  
-  @js.native
-  sealed trait MDS extends EServerType
-  
-  @js.native
-  sealed trait MMS extends EServerType
-  
-  @js.native
-  sealed trait MPAS extends EServerType
-  
-  @js.native
-  sealed trait Market extends EServerType
-  
-  @js.native
-  sealed trait MarketRepl extends EServerType
-  
-  @js.native
-  sealed trait MarketSearch extends EServerType
-  
-  @js.native
-  sealed trait Max extends EServerType
-  
-  @js.native
-  sealed trait MoneyStats extends EServerType
-  
-  @js.native
-  sealed trait NS extends EServerType
-  
-  @js.native
-  sealed trait OGS extends EServerType
-  
-   // removed
-  @js.native
-  sealed trait P2PRelayOBSOLETE extends EServerType
-  
-  @js.native
-  sealed trait PICS extends EServerType
-  
-  @js.native
-  sealed trait PNP extends EServerType
-  
-  @js.native
-  sealed trait PS extends EServerType
-  
-  @js.native
-  sealed trait Parental extends EServerType
-  
-  @js.native
-  sealed trait Partner extends EServerType
-  
-  @js.native
-  sealed trait PartnerUpload extends EServerType
-  
-  @js.native
-  sealed trait Phone extends EServerType
-  
-  @js.native
-  sealed trait PublicTest extends EServerType
-  
-  @js.native
-  sealed trait Quest extends EServerType
-  
-  @js.native
-  sealed trait RM extends EServerType
-  
-  @js.native
-  sealed trait SLC extends EServerType
-  
-  @js.native
-  sealed trait SM extends EServerType
-  
-  @js.native
-  sealed trait SS extends EServerType
-  
-  @js.native
-  sealed trait Secrets extends EServerType
-  
-  @js.native
-  sealed trait Shell extends EServerType
-  
-  @js.native
-  sealed trait SolrMgr extends EServerType
-  
-  @js.native
-  sealed trait Spare extends EServerType
-  
-  @js.native
-  sealed trait Steam2Emulator extends EServerType
-  
-   // removed "renamed to StoreFeature"
-  @js.native
-  sealed trait Store extends EServerType
-  
-  @js.native
-  sealed trait StoreCatalog extends EServerType
-  
-  @js.native
-  sealed trait StoreFeature extends EServerType
-  
-  @js.native
-  sealed trait Support extends EServerType
-  
-  @js.native
-  sealed trait TaxForm extends EServerType
-  
-  @js.native
-  sealed trait Trade extends EServerType
-  
-  @js.native
-  sealed trait TradeOffer extends EServerType
-  
-  @js.native
-  sealed trait UCM extends EServerType
-  
-  @js.native
-  sealed trait UDS extends EServerType
-  
-  @js.native
-  sealed trait UFS extends EServerType
-  
-  @js.native
-  sealed trait UGS extends EServerType
-  
-  @js.native
-  sealed trait UMQ extends EServerType
-  
-  @js.native
-  sealed trait Util extends EServerType
-  
-  @js.native
-  sealed trait VS extends EServerType
-  
-  @js.native
-  sealed trait VideoManager extends EServerType
-  
-  @js.native
-  sealed trait WDS extends EServerType
-  
-  @js.native
-  sealed trait WG extends EServerType
-  
-  @js.native
-  sealed trait WebAPI extends EServerType
-  
-  @js.native
-  sealed trait Workshop extends EServerType
+object EServerType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EServerType with Double] = js.native
-  /* 65 */ @js.native
-  object ACS extends TopLevel[ACS with Double]
-  
-  /* 3 */ @js.native
-  object AM extends TopLevel[AM with Double]
-  
-  /* 14 */ @js.native
-  object ASBOBSOLETE extends TopLevel[ASBOBSOLETE with Double]
-  
-  /* 6 */ @js.native
-  object ATS extends TopLevel[ATS with Double]
-  
-  /* 88 */ @js.native
-  object AccountScore extends TopLevel[AccountScore with Double]
-  
-  /* 26 */ @js.native
-  object AppInformation extends TopLevel[AppInformation with Double]
-  
-  /* 94 */ @js.native
-  object Auth extends TopLevel[Auth with Double]
-  
-  /* 56 */ @js.native
-  object BRP extends TopLevel[BRP with Double]
-  
-  /* 4 */ @js.native
-  object BS extends TopLevel[BS with Double]
-  
-  /* 2 */ @js.native
-  object BUM extends TopLevel[BUM with Double]
-  
-  /* 2 */ @js.native
-  object BUMOBOSOLETE extends TopLevel[BUMOBOSOLETE with Double]
-  
-  /* 49 */ @js.native
-  object Backpack extends TopLevel[Backpack with Double]
-  
-  /* 16 */ @js.native
-  object BootstrapOBSOLETE extends TopLevel[BootstrapOBSOLETE with Double]
-  
-  /* 9 */ @js.native
-  object BoxMonitor extends TopLevel[BoxMonitor with Double]
-  
-  /* 86 */ @js.native
-  object BroadcastChat extends TopLevel[BroadcastChat with Double]
-  
-  /* 83 */ @js.native
-  object BroadcastDirectory extends TopLevel[BroadcastDirectory with Double]
-  
-  /* 82 */ @js.native
-  object BroadcastRelay extends TopLevel[BroadcastRelay with Double]
-  
-  /* 32 */ @js.native
-  object CCS extends TopLevel[CCS with Double]
-  
-  /* 7 */ @js.native
-  object CM extends TopLevel[CM with Double]
-  
-  /* 53 */ @js.native
-  object CRE extends TopLevel[CRE with Double]
-  
-  /* 36 */ @js.native
-  object CS extends TopLevel[CS with Double]
-  
-  /* 15 */ @js.native
-  object Client extends TopLevel[Client with Double]
-  
-  /* 24 */ @js.native
-  object Community extends TopLevel[Community with Double]
-  
-  /* 13 */ @js.native
-  object Console extends TopLevel[Console with Double]
-  
-  /* 33 */ @js.native
-  object DFS extends TopLevel[DFS with Double]
-  
-  /* 17 */ @js.native
-  object DP extends TopLevel[DP with Double]
-  
-  /* 11 */ @js.native
-  object DRMS extends TopLevel[DRMS with Double]
-  
-  /* 24 */ @js.native
-  object DSS extends TopLevel[DSS with Double]
-  
-  /* 73 */ @js.native
-  object DepotWebContent extends TopLevel[DepotWebContent with Double]
-  
-  /* 29 */ @js.native
-  object EPM extends TopLevel[EPM with Double]
-  
-  /* 29 */ @js.native
-  object EPMOBSOLETE extends TopLevel[EPMOBSOLETE with Double]
-  
-  /* 72 */ @js.native
-  object ES extends TopLevel[ES with Double]
-  
-  /* 48 */ @js.native
-  object Econ extends TopLevel[Econ with Double]
-  
-  /* 92 */ @js.native
-  object EmailDelivery extends TopLevel[EmailDelivery with Double]
-  
-  /* 74 */ @js.native
-  object ExternalConfig extends TopLevel[ExternalConfig with Double]
-  
-  /* 68 */ @js.native
-  object ExternalMonitor extends TopLevel[ExternalMonitor with Double]
-  
-  /* 8 */ @js.native
-  object FBS extends TopLevel[FBS with Double]
-  
-  /* 9 */ @js.native
-  object FG extends TopLevel[FG with Double]
-  
-  /* 47 */ @js.native
-  object FS extends TopLevel[FS with Double]
-  
-  /* 28 */ @js.native
-  object FTS extends TopLevel[FTS with Double]
-  
-  /* 0 */ @js.native
-  object First extends TopLevel[First with Double]
-  
-  /* 37 */ @js.native
-  object GC extends TopLevel[GC with Double]
-  
-  /* 57 */ @js.native
-  object GCH extends TopLevel[GCH with Double]
-  
-  /* 1 */ @js.native
-  object GM extends TopLevel[GM with Double]
-  
-  /* 43 */ @js.native
-  object GMS extends TopLevel[GMS with Double]
-  
-  /* 75 */ @js.native
-  object GameNotifications extends TopLevel[GameNotifications with Double]
-  
-  /* 96 */ @js.native
-  object HLTVRelay extends TopLevel[HLTVRelay with Double]
-  
-  /* 12 */ @js.native
-  object HubOBSOLETE extends TopLevel[HubOBSOLETE with Double]
-  
-  /* 31 */ @js.native
-  object IS extends TopLevel[IS with Double]
-  
-  /* -1 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
-  
-  /* 93 */ @js.native
-  object InventoryManagement extends TopLevel[InventoryManagement with Double]
-  
-  /* 44 */ @js.native
-  object KGS extends TopLevel[KGS with Double]
-  
-  /* 34 */ @js.native
-  object LBS extends TopLevel[LBS with Double]
-  
-  /* 78 */ @js.native
-  object Localization extends TopLevel[Localization with Double]
-  
-  /* 90 */ @js.native
-  object LogRequest extends TopLevel[LogRequest with Double]
-  
-  /* 91 */ @js.native
-  object LogWorker extends TopLevel[LogWorker with Double]
-  
-  /* 61 */ @js.native
-  object Logsink extends TopLevel[Logsink with Double]
-  
-  /* 35 */ @js.native
-  object MDS extends TopLevel[MDS with Double]
-  
-  /* 42 */ @js.native
-  object MMS extends TopLevel[MMS with Double]
-  
-  /* 58 */ @js.native
-  object MPAS extends TopLevel[MPAS with Double]
-  
-  /* 62 */ @js.native
-  object Market extends TopLevel[Market with Double]
-  
-  /* 76 */ @js.native
-  object MarketRepl extends TopLevel[MarketRepl with Double]
-  
-  /* 77 */ @js.native
-  object MarketSearch extends TopLevel[MarketSearch with Double]
-  
-  /* 97 */ @js.native
-  object Max extends TopLevel[Max with Double]
-  
-  /* 52 */ @js.native
-  object MoneyStats extends TopLevel[MoneyStats with Double]
-  
-  /* 38 */ @js.native
-  object NS extends TopLevel[NS with Double]
-  
-  /* 39 */ @js.native
-  object OGS extends TopLevel[OGS with Double]
-  
-  /* 25 */ @js.native
-  object P2PRelayOBSOLETE extends TopLevel[P2PRelayOBSOLETE with Double]
-  
-  /* 14 */ @js.native
-  object PICS extends TopLevel[PICS with Double]
-  
-  /* 66 */ @js.native
-  object PNP extends TopLevel[PNP with Double]
-  
-  /* 30 */ @js.native
-  object PS extends TopLevel[PS with Double]
-  
-  /* 69 */ @js.native
-  object Parental extends TopLevel[Parental with Double]
-  
-  /* 71 */ @js.native
-  object Partner extends TopLevel[Partner with Double]
-  
-  /* 70 */ @js.native
-  object PartnerUpload extends TopLevel[PartnerUpload with Double]
-  
-  /* 87 */ @js.native
-  object Phone extends TopLevel[Phone with Double]
-  
-  /* 80 */ @js.native
-  object PublicTest extends TopLevel[PublicTest with Double]
-  
-  /* 63 */ @js.native
-  object Quest extends TopLevel[Quest with Double]
-  
-  /* 46 */ @js.native
-  object RM extends TopLevel[RM with Double]
-  
-  /* 20 */ @js.native
-  object SLC extends TopLevel[SLC with Double]
-  
-  /* 19 */ @js.native
-  object SM extends TopLevel[SM with Double]
-  
-  /* 10 */ @js.native
-  object SS extends TopLevel[SS with Double]
-  
-  /* 60 */ @js.native
-  object Secrets extends TopLevel[Secrets with Double]
-  
-  /* 0 */ @js.native
-  object Shell extends TopLevel[Shell with Double]
-  
-  /* 81 */ @js.native
-  object SolrMgr extends TopLevel[SolrMgr with Double]
-  
-  /* 27 */ @js.native
-  object Spare extends TopLevel[Spare with Double]
-  
-  /* 79 */ @js.native
-  object Steam2Emulator extends TopLevel[Steam2Emulator with Double]
-  
-  /* 51 */ @js.native
-  object Store extends TopLevel[Store with Double]
-  
-  /* 95 */ @js.native
-  object StoreCatalog extends TopLevel[StoreCatalog with Double]
-  
-  /* 51 */ @js.native
-  object StoreFeature extends TopLevel[StoreFeature with Double]
-  
-  /* 89 */ @js.native
-  object Support extends TopLevel[Support with Double]
-  
-  /* 67 */ @js.native
-  object TaxForm extends TopLevel[TaxForm with Double]
-  
-  /* 59 */ @js.native
-  object Trade extends TopLevel[Trade with Double]
-  
-  /* 85 */ @js.native
-  object TradeOffer extends TopLevel[TradeOffer with Double]
-  
-  /* 45 */ @js.native
-  object UCM extends TopLevel[UCM with Double]
-  
-  /* 41 */ @js.native
-  object UDS extends TopLevel[UDS with Double]
-  
-  /* 21 */ @js.native
-  object UFS extends TopLevel[UFS with Double]
-  
-  /* 50 */ @js.native
-  object UGS extends TopLevel[UGS with Double]
-  
-  /* 54 */ @js.native
-  object UMQ extends TopLevel[UMQ with Double]
-  
-  /* 23 */ @js.native
-  object Util extends TopLevel[Util with Double]
-  
-  /* 5 */ @js.native
-  object VS extends TopLevel[VS with Double]
-  
-  /* 84 */ @js.native
-  object VideoManager extends TopLevel[VideoManager with Double]
-  
-  /* 64 */ @js.native
-  object WDS extends TopLevel[WDS with Double]
-  
-  /* 18 */ @js.native
-  object WG extends TopLevel[WG with Double]
-  
-  /* 40 */ @js.native
-  object WebAPI extends TopLevel[WebAPI with Double]
-  
-  /* 55 */ @js.native
-  object Workshop extends TopLevel[Workshop with Double]
-  
+  def apply(value: Double): js.UndefOr[EServerType & Double] = js.native
+  
+  @js.native
+  sealed trait ACS
+    extends StObject
+       with EServerType
+  /* 65 */ val ACS: typingsJapgolly.steamClient.mod.EServerType.ACS & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait AM
+    extends StObject
+       with EServerType
+  /* 3 */ val AM: typingsJapgolly.steamClient.mod.EServerType.AM & Double = js.native
+  
+  @js.native
+  sealed trait ASBOBSOLETE
+    extends StObject
+       with EServerType
+  /* 14 */ val ASBOBSOLETE: typingsJapgolly.steamClient.mod.EServerType.ASBOBSOLETE & Double = js.native
+  
+  @js.native
+  sealed trait ATS
+    extends StObject
+       with EServerType
+  /* 6 */ val ATS: typingsJapgolly.steamClient.mod.EServerType.ATS & Double = js.native
+  
+  @js.native
+  sealed trait AccountScore
+    extends StObject
+       with EServerType
+  /* 88 */ val AccountScore: typingsJapgolly.steamClient.mod.EServerType.AccountScore & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait AppInformation
+    extends StObject
+       with EServerType
+  /* 26 */ val AppInformation: typingsJapgolly.steamClient.mod.EServerType.AppInformation & Double = js.native
+  
+  @js.native
+  sealed trait Auth
+    extends StObject
+       with EServerType
+  /* 94 */ val Auth: typingsJapgolly.steamClient.mod.EServerType.Auth & Double = js.native
+  
+  @js.native
+  sealed trait BRP
+    extends StObject
+       with EServerType
+  /* 56 */ val BRP: typingsJapgolly.steamClient.mod.EServerType.BRP & Double = js.native
+  
+  @js.native
+  sealed trait BS
+    extends StObject
+       with EServerType
+  /* 4 */ val BS: typingsJapgolly.steamClient.mod.EServerType.BS & Double = js.native
+  
+  @js.native
+  sealed trait BUM
+    extends StObject
+       with EServerType
+  /* 2 */ val BUM: typingsJapgolly.steamClient.mod.EServerType.BUM & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait BUMOBOSOLETE
+    extends StObject
+       with EServerType
+  /* 2 */ val BUMOBOSOLETE: typingsJapgolly.steamClient.mod.EServerType.BUMOBOSOLETE & Double = js.native
+  
+  @js.native
+  sealed trait Backpack
+    extends StObject
+       with EServerType
+  /* 49 */ val Backpack: typingsJapgolly.steamClient.mod.EServerType.Backpack & Double = js.native
+  
+  @js.native
+  sealed trait BootstrapOBSOLETE
+    extends StObject
+       with EServerType
+  /* 16 */ val BootstrapOBSOLETE: typingsJapgolly.steamClient.mod.EServerType.BootstrapOBSOLETE & Double = js.native
+  
+  // removed "renamed to BoxMonitor"
+  @js.native
+  sealed trait BoxMonitor
+    extends StObject
+       with EServerType
+  /* 9 */ val BoxMonitor: typingsJapgolly.steamClient.mod.EServerType.BoxMonitor & Double = js.native
+  
+  @js.native
+  sealed trait BroadcastChat
+    extends StObject
+       with EServerType
+  /* 86 */ val BroadcastChat: typingsJapgolly.steamClient.mod.EServerType.BroadcastChat & Double = js.native
+  
+  @js.native
+  sealed trait BroadcastDirectory
+    extends StObject
+       with EServerType
+  /* 83 */ val BroadcastDirectory: typingsJapgolly.steamClient.mod.EServerType.BroadcastDirectory & Double = js.native
+  
+  @js.native
+  sealed trait BroadcastRelay
+    extends StObject
+       with EServerType
+  /* 82 */ val BroadcastRelay: typingsJapgolly.steamClient.mod.EServerType.BroadcastRelay & Double = js.native
+  
+  @js.native
+  sealed trait CCS
+    extends StObject
+       with EServerType
+  /* 32 */ val CCS: typingsJapgolly.steamClient.mod.EServerType.CCS & Double = js.native
+  
+  @js.native
+  sealed trait CM
+    extends StObject
+       with EServerType
+  /* 7 */ val CM: typingsJapgolly.steamClient.mod.EServerType.CM & Double = js.native
+  
+  @js.native
+  sealed trait CRE
+    extends StObject
+       with EServerType
+  /* 53 */ val CRE: typingsJapgolly.steamClient.mod.EServerType.CRE & Double = js.native
+  
+  @js.native
+  sealed trait CS
+    extends StObject
+       with EServerType
+  /* 36 */ val CS: typingsJapgolly.steamClient.mod.EServerType.CS & Double = js.native
+  
+  @js.native
+  sealed trait Client
+    extends StObject
+       with EServerType
+  /* 15 */ val Client: typingsJapgolly.steamClient.mod.EServerType.Client & Double = js.native
+  
+  // removed "renamed to Community"
+  @js.native
+  sealed trait Community
+    extends StObject
+       with EServerType
+  /* 24 */ val Community: typingsJapgolly.steamClient.mod.EServerType.Community & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait Console
+    extends StObject
+       with EServerType
+  /* 13 */ val Console: typingsJapgolly.steamClient.mod.EServerType.Console & Double = js.native
+  
+  @js.native
+  sealed trait DFS
+    extends StObject
+       with EServerType
+  /* 33 */ val DFS: typingsJapgolly.steamClient.mod.EServerType.DFS & Double = js.native
+  
+  // removed,
+  @js.native
+  sealed trait DP
+    extends StObject
+       with EServerType
+  /* 17 */ val DP: typingsJapgolly.steamClient.mod.EServerType.DP & Double = js.native
+  
+  @js.native
+  sealed trait DRMS
+    extends StObject
+       with EServerType
+  /* 11 */ val DRMS: typingsJapgolly.steamClient.mod.EServerType.DRMS & Double = js.native
+  
+  @js.native
+  sealed trait DSS
+    extends StObject
+       with EServerType
+  /* 24 */ val DSS: typingsJapgolly.steamClient.mod.EServerType.DSS & Double = js.native
+  
+  @js.native
+  sealed trait DepotWebContent
+    extends StObject
+       with EServerType
+  /* 73 */ val DepotWebContent: typingsJapgolly.steamClient.mod.EServerType.DepotWebContent & Double = js.native
+  
+  @js.native
+  sealed trait EPM
+    extends StObject
+       with EServerType
+  /* 29 */ val EPM: typingsJapgolly.steamClient.mod.EServerType.EPM & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait EPMOBSOLETE
+    extends StObject
+       with EServerType
+  /* 29 */ val EPMOBSOLETE: typingsJapgolly.steamClient.mod.EServerType.EPMOBSOLETE & Double = js.native
+  
+  @js.native
+  sealed trait ES
+    extends StObject
+       with EServerType
+  /* 72 */ val ES: typingsJapgolly.steamClient.mod.EServerType.ES & Double = js.native
+  
+  @js.native
+  sealed trait Econ
+    extends StObject
+       with EServerType
+  /* 48 */ val Econ: typingsJapgolly.steamClient.mod.EServerType.Econ & Double = js.native
+  
+  @js.native
+  sealed trait EmailDelivery
+    extends StObject
+       with EServerType
+  /* 92 */ val EmailDelivery: typingsJapgolly.steamClient.mod.EServerType.EmailDelivery & Double = js.native
+  
+  @js.native
+  sealed trait ExternalConfig
+    extends StObject
+       with EServerType
+  /* 74 */ val ExternalConfig: typingsJapgolly.steamClient.mod.EServerType.ExternalConfig & Double = js.native
+  
+  @js.native
+  sealed trait ExternalMonitor
+    extends StObject
+       with EServerType
+  /* 68 */ val ExternalMonitor: typingsJapgolly.steamClient.mod.EServerType.ExternalMonitor & Double = js.native
+  
+  @js.native
+  sealed trait FBS
+    extends StObject
+       with EServerType
+  /* 8 */ val FBS: typingsJapgolly.steamClient.mod.EServerType.FBS & Double = js.native
+  
+  @js.native
+  sealed trait FG
+    extends StObject
+       with EServerType
+  /* 9 */ val FG: typingsJapgolly.steamClient.mod.EServerType.FG & Double = js.native
+  
+  @js.native
+  sealed trait FS
+    extends StObject
+       with EServerType
+  /* 47 */ val FS: typingsJapgolly.steamClient.mod.EServerType.FS & Double = js.native
+  
+  @js.native
+  sealed trait FTS
+    extends StObject
+       with EServerType
+  /* 28 */ val FTS: typingsJapgolly.steamClient.mod.EServerType.FTS & Double = js.native
+  
+  @js.native
+  sealed trait First
+    extends StObject
+       with EServerType
+  /* 0 */ val First: typingsJapgolly.steamClient.mod.EServerType.First & Double = js.native
+  
+  @js.native
+  sealed trait GC
+    extends StObject
+       with EServerType
+  /* 37 */ val GC: typingsJapgolly.steamClient.mod.EServerType.GC & Double = js.native
+  
+  @js.native
+  sealed trait GCH
+    extends StObject
+       with EServerType
+  /* 57 */ val GCH: typingsJapgolly.steamClient.mod.EServerType.GCH & Double = js.native
+  
+  @js.native
+  sealed trait GM
+    extends StObject
+       with EServerType
+  /* 1 */ val GM: typingsJapgolly.steamClient.mod.EServerType.GM & Double = js.native
+  
+  @js.native
+  sealed trait GMS
+    extends StObject
+       with EServerType
+  /* 43 */ val GMS: typingsJapgolly.steamClient.mod.EServerType.GMS & Double = js.native
+  
+  @js.native
+  sealed trait GameNotifications
+    extends StObject
+       with EServerType
+  /* 75 */ val GameNotifications: typingsJapgolly.steamClient.mod.EServerType.GameNotifications & Double = js.native
+  
+  @js.native
+  sealed trait HLTVRelay
+    extends StObject
+       with EServerType
+  /* 96 */ val HLTVRelay: typingsJapgolly.steamClient.mod.EServerType.HLTVRelay & Double = js.native
+  
+  @js.native
+  sealed trait HubOBSOLETE
+    extends StObject
+       with EServerType
+  /* 12 */ val HubOBSOLETE: typingsJapgolly.steamClient.mod.EServerType.HubOBSOLETE & Double = js.native
+  
+  @js.native
+  sealed trait IS
+    extends StObject
+       with EServerType
+  /* 31 */ val IS: typingsJapgolly.steamClient.mod.EServerType.IS & Double = js.native
+  
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with EServerType
+  /* -1 */ val Invalid: typingsJapgolly.steamClient.mod.EServerType.Invalid & Double = js.native
+  
+  @js.native
+  sealed trait InventoryManagement
+    extends StObject
+       with EServerType
+  /* 93 */ val InventoryManagement: typingsJapgolly.steamClient.mod.EServerType.InventoryManagement & Double = js.native
+  
+  @js.native
+  sealed trait KGS
+    extends StObject
+       with EServerType
+  /* 44 */ val KGS: typingsJapgolly.steamClient.mod.EServerType.KGS & Double = js.native
+  
+  @js.native
+  sealed trait LBS
+    extends StObject
+       with EServerType
+  /* 34 */ val LBS: typingsJapgolly.steamClient.mod.EServerType.LBS & Double = js.native
+  
+  @js.native
+  sealed trait Localization
+    extends StObject
+       with EServerType
+  /* 78 */ val Localization: typingsJapgolly.steamClient.mod.EServerType.Localization & Double = js.native
+  
+  @js.native
+  sealed trait LogRequest
+    extends StObject
+       with EServerType
+  /* 90 */ val LogRequest: typingsJapgolly.steamClient.mod.EServerType.LogRequest & Double = js.native
+  
+  @js.native
+  sealed trait LogWorker
+    extends StObject
+       with EServerType
+  /* 91 */ val LogWorker: typingsJapgolly.steamClient.mod.EServerType.LogWorker & Double = js.native
+  
+  @js.native
+  sealed trait Logsink
+    extends StObject
+       with EServerType
+  /* 61 */ val Logsink: typingsJapgolly.steamClient.mod.EServerType.Logsink & Double = js.native
+  
+  @js.native
+  sealed trait MDS
+    extends StObject
+       with EServerType
+  /* 35 */ val MDS: typingsJapgolly.steamClient.mod.EServerType.MDS & Double = js.native
+  
+  @js.native
+  sealed trait MMS
+    extends StObject
+       with EServerType
+  /* 42 */ val MMS: typingsJapgolly.steamClient.mod.EServerType.MMS & Double = js.native
+  
+  @js.native
+  sealed trait MPAS
+    extends StObject
+       with EServerType
+  /* 58 */ val MPAS: typingsJapgolly.steamClient.mod.EServerType.MPAS & Double = js.native
+  
+  @js.native
+  sealed trait Market
+    extends StObject
+       with EServerType
+  /* 62 */ val Market: typingsJapgolly.steamClient.mod.EServerType.Market & Double = js.native
+  
+  @js.native
+  sealed trait MarketRepl
+    extends StObject
+       with EServerType
+  /* 76 */ val MarketRepl: typingsJapgolly.steamClient.mod.EServerType.MarketRepl & Double = js.native
+  
+  @js.native
+  sealed trait MarketSearch
+    extends StObject
+       with EServerType
+  /* 77 */ val MarketSearch: typingsJapgolly.steamClient.mod.EServerType.MarketSearch & Double = js.native
+  
+  @js.native
+  sealed trait Max
+    extends StObject
+       with EServerType
+  /* 97 */ val Max: typingsJapgolly.steamClient.mod.EServerType.Max & Double = js.native
+  
+  @js.native
+  sealed trait MoneyStats
+    extends StObject
+       with EServerType
+  /* 52 */ val MoneyStats: typingsJapgolly.steamClient.mod.EServerType.MoneyStats & Double = js.native
+  
+  @js.native
+  sealed trait NS
+    extends StObject
+       with EServerType
+  /* 38 */ val NS: typingsJapgolly.steamClient.mod.EServerType.NS & Double = js.native
+  
+  @js.native
+  sealed trait OGS
+    extends StObject
+       with EServerType
+  /* 39 */ val OGS: typingsJapgolly.steamClient.mod.EServerType.OGS & Double = js.native
+  
+  @js.native
+  sealed trait P2PRelayOBSOLETE
+    extends StObject
+       with EServerType
+  /* 25 */ val P2PRelayOBSOLETE: typingsJapgolly.steamClient.mod.EServerType.P2PRelayOBSOLETE & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait PICS
+    extends StObject
+       with EServerType
+  /* 14 */ val PICS: typingsJapgolly.steamClient.mod.EServerType.PICS & Double = js.native
+  
+  @js.native
+  sealed trait PNP
+    extends StObject
+       with EServerType
+  /* 66 */ val PNP: typingsJapgolly.steamClient.mod.EServerType.PNP & Double = js.native
+  
+  // removed
+  @js.native
+  sealed trait PS
+    extends StObject
+       with EServerType
+  /* 30 */ val PS: typingsJapgolly.steamClient.mod.EServerType.PS & Double = js.native
+  
+  @js.native
+  sealed trait Parental
+    extends StObject
+       with EServerType
+  /* 69 */ val Parental: typingsJapgolly.steamClient.mod.EServerType.Parental & Double = js.native
+  
+  @js.native
+  sealed trait Partner
+    extends StObject
+       with EServerType
+  /* 71 */ val Partner: typingsJapgolly.steamClient.mod.EServerType.Partner & Double = js.native
+  
+  @js.native
+  sealed trait PartnerUpload
+    extends StObject
+       with EServerType
+  /* 70 */ val PartnerUpload: typingsJapgolly.steamClient.mod.EServerType.PartnerUpload & Double = js.native
+  
+  @js.native
+  sealed trait Phone
+    extends StObject
+       with EServerType
+  /* 87 */ val Phone: typingsJapgolly.steamClient.mod.EServerType.Phone & Double = js.native
+  
+  @js.native
+  sealed trait PublicTest
+    extends StObject
+       with EServerType
+  /* 80 */ val PublicTest: typingsJapgolly.steamClient.mod.EServerType.PublicTest & Double = js.native
+  
+  @js.native
+  sealed trait Quest
+    extends StObject
+       with EServerType
+  /* 63 */ val Quest: typingsJapgolly.steamClient.mod.EServerType.Quest & Double = js.native
+  
+  @js.native
+  sealed trait RM
+    extends StObject
+       with EServerType
+  /* 46 */ val RM: typingsJapgolly.steamClient.mod.EServerType.RM & Double = js.native
+  
+  @js.native
+  sealed trait SLC
+    extends StObject
+       with EServerType
+  /* 20 */ val SLC: typingsJapgolly.steamClient.mod.EServerType.SLC & Double = js.native
+  
+  @js.native
+  sealed trait SM
+    extends StObject
+       with EServerType
+  /* 19 */ val SM: typingsJapgolly.steamClient.mod.EServerType.SM & Double = js.native
+  
+  @js.native
+  sealed trait SS
+    extends StObject
+       with EServerType
+  /* 10 */ val SS: typingsJapgolly.steamClient.mod.EServerType.SS & Double = js.native
+  
+  @js.native
+  sealed trait Secrets
+    extends StObject
+       with EServerType
+  /* 60 */ val Secrets: typingsJapgolly.steamClient.mod.EServerType.Secrets & Double = js.native
+  
+  @js.native
+  sealed trait Shell
+    extends StObject
+       with EServerType
+  /* 0 */ val Shell: typingsJapgolly.steamClient.mod.EServerType.Shell & Double = js.native
+  
+  @js.native
+  sealed trait SolrMgr
+    extends StObject
+       with EServerType
+  /* 81 */ val SolrMgr: typingsJapgolly.steamClient.mod.EServerType.SolrMgr & Double = js.native
+  
+  @js.native
+  sealed trait Spare
+    extends StObject
+       with EServerType
+  /* 27 */ val Spare: typingsJapgolly.steamClient.mod.EServerType.Spare & Double = js.native
+  
+  @js.native
+  sealed trait Steam2Emulator
+    extends StObject
+       with EServerType
+  /* 79 */ val Steam2Emulator: typingsJapgolly.steamClient.mod.EServerType.Steam2Emulator & Double = js.native
+  
+  @js.native
+  sealed trait Store
+    extends StObject
+       with EServerType
+  /* 51 */ val Store: typingsJapgolly.steamClient.mod.EServerType.Store & Double = js.native
+  
+  @js.native
+  sealed trait StoreCatalog
+    extends StObject
+       with EServerType
+  /* 95 */ val StoreCatalog: typingsJapgolly.steamClient.mod.EServerType.StoreCatalog & Double = js.native
+  
+  // removed "renamed to StoreFeature"
+  @js.native
+  sealed trait StoreFeature
+    extends StObject
+       with EServerType
+  /* 51 */ val StoreFeature: typingsJapgolly.steamClient.mod.EServerType.StoreFeature & Double = js.native
+  
+  @js.native
+  sealed trait Support
+    extends StObject
+       with EServerType
+  /* 89 */ val Support: typingsJapgolly.steamClient.mod.EServerType.Support & Double = js.native
+  
+  @js.native
+  sealed trait TaxForm
+    extends StObject
+       with EServerType
+  /* 67 */ val TaxForm: typingsJapgolly.steamClient.mod.EServerType.TaxForm & Double = js.native
+  
+  @js.native
+  sealed trait Trade
+    extends StObject
+       with EServerType
+  /* 59 */ val Trade: typingsJapgolly.steamClient.mod.EServerType.Trade & Double = js.native
+  
+  @js.native
+  sealed trait TradeOffer
+    extends StObject
+       with EServerType
+  /* 85 */ val TradeOffer: typingsJapgolly.steamClient.mod.EServerType.TradeOffer & Double = js.native
+  
+  @js.native
+  sealed trait UCM
+    extends StObject
+       with EServerType
+  /* 45 */ val UCM: typingsJapgolly.steamClient.mod.EServerType.UCM & Double = js.native
+  
+  @js.native
+  sealed trait UDS
+    extends StObject
+       with EServerType
+  /* 41 */ val UDS: typingsJapgolly.steamClient.mod.EServerType.UDS & Double = js.native
+  
+  @js.native
+  sealed trait UFS
+    extends StObject
+       with EServerType
+  /* 21 */ val UFS: typingsJapgolly.steamClient.mod.EServerType.UFS & Double = js.native
+  
+  @js.native
+  sealed trait UGS
+    extends StObject
+       with EServerType
+  /* 50 */ val UGS: typingsJapgolly.steamClient.mod.EServerType.UGS & Double = js.native
+  
+  @js.native
+  sealed trait UMQ
+    extends StObject
+       with EServerType
+  /* 54 */ val UMQ: typingsJapgolly.steamClient.mod.EServerType.UMQ & Double = js.native
+  
+  @js.native
+  sealed trait Util
+    extends StObject
+       with EServerType
+  /* 23 */ val Util: typingsJapgolly.steamClient.mod.EServerType.Util & Double = js.native
+  
+  @js.native
+  sealed trait VS
+    extends StObject
+       with EServerType
+  /* 5 */ val VS: typingsJapgolly.steamClient.mod.EServerType.VS & Double = js.native
+  
+  @js.native
+  sealed trait VideoManager
+    extends StObject
+       with EServerType
+  /* 84 */ val VideoManager: typingsJapgolly.steamClient.mod.EServerType.VideoManager & Double = js.native
+  
+  @js.native
+  sealed trait WDS
+    extends StObject
+       with EServerType
+  /* 64 */ val WDS: typingsJapgolly.steamClient.mod.EServerType.WDS & Double = js.native
+  
+  @js.native
+  sealed trait WG
+    extends StObject
+       with EServerType
+  /* 18 */ val WG: typingsJapgolly.steamClient.mod.EServerType.WG & Double = js.native
+  
+  @js.native
+  sealed trait WebAPI
+    extends StObject
+       with EServerType
+  /* 40 */ val WebAPI: typingsJapgolly.steamClient.mod.EServerType.WebAPI & Double = js.native
+  
+  @js.native
+  sealed trait Workshop
+    extends StObject
+       with EServerType
+  /* 55 */ val Workshop: typingsJapgolly.steamClient.mod.EServerType.Workshop & Double = js.native
 }
-

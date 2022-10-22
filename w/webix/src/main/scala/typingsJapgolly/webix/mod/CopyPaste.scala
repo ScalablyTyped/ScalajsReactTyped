@@ -1,13 +1,12 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.webix.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CopyPaste extends js.Object
-
-@JSImport("webix", "CopyPaste")
-@js.native
-object CopyPaste extends TopLevel[CopyPaste]
-
+trait CopyPaste extends StObject
+object CopyPaste {
+  
+  inline def apply: CopyPaste = ^.asInstanceOf[js.Dynamic].selectDynamic("CopyPaste").asInstanceOf[CopyPaste]
+}

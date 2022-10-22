@@ -1,39 +1,62 @@
 package typingsJapgolly.webix.webix
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataRecordConfig extends js.Object {
-  var data: js.UndefOr[String | js.Array[_]] = js.undefined
+trait DataRecordConfig extends StObject {
+  
+  var data: js.UndefOr[String | js.Array[Any]] = js.undefined
+  
   var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
+  
   var datatype: js.UndefOr[String] = js.undefined
+  
   var id: js.UndefOr[String | Double] = js.undefined
+  
   var on: js.UndefOr[EventHash] = js.undefined
-  var url: js.UndefOr[js.Any] = js.undefined
+  
+  var url: js.UndefOr[Any] = js.undefined
+  
   var view: js.UndefOr[String] = js.undefined
 }
-
 object DataRecordConfig {
-  @scala.inline
-  def apply(
-    data: String | js.Array[_] = null,
-    dataFeed: String | WebixCallback = null,
-    datatype: String = null,
-    id: String | Double = null,
-    on: EventHash = null,
-    url: js.Any = null,
-    view: String = null
-  ): DataRecordConfig = {
+  
+  inline def apply(): DataRecordConfig = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dataFeed != null) __obj.updateDynamic("dataFeed")(dataFeed.asInstanceOf[js.Any])
-    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRecordConfig]
   }
+  
+  extension [Self <: DataRecordConfig](x: Self) {
+    
+    inline def setData(value: String | js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
+    
+    inline def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDataVarargs(value: Any*): Self = StObject.set(x, "data", js.Array(value*))
+    
+    inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
+    
+    inline def setDatatypeUndefined: Self = StObject.set(x, "datatype", js.undefined)
+    
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setOn(value: EventHash): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    
+    inline def setUrl(value: Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

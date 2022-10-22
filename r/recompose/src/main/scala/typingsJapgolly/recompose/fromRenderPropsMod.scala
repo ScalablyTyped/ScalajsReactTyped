@@ -2,22 +2,24 @@ package typingsJapgolly.recompose
 
 import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.recompose.mod.ComponentEnhancer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#fromrenderprops
-@JSImport("recompose/fromRenderProps", JSImport.Namespace)
-@js.native
-object fromRenderPropsMod extends js.Object {
-  def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[_],
+object fromRenderPropsMod {
+  
+  @JSImport("recompose/fromRenderProps", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[TInner, TOutter, TRenderProps](
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
-  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
-  def default[TInner, TOutter, TRenderProps](
-    RenderPropsComponent: ComponentType[_],
+  ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
+  inline def default[TInner, TOutter, TRenderProps](
+    RenderPropsComponent: ComponentType[Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String
-  ): ComponentEnhancer[TInner with TOutter, TOutter] = js.native
+  ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any], renderPropName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
 }
-

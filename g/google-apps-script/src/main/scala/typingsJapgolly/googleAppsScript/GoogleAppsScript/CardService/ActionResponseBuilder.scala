@@ -1,37 +1,48 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for ActionResponse objects.
   */
-trait ActionResponseBuilder extends js.Object {
+trait ActionResponseBuilder extends StObject {
+  
   def build(): ActionResponse
+  
   def setNavigation(navigation: Navigation): ActionResponseBuilder
+  
   def setNotification(notification: Notification): ActionResponseBuilder
+  
   def setOpenLink(openLink: OpenLink): ActionResponseBuilder
+  
   def setStateChanged(stateChanged: Boolean): ActionResponseBuilder
 }
-
 object ActionResponseBuilder {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     build: CallbackTo[ActionResponse],
-    setNavigation: Navigation => CallbackTo[ActionResponseBuilder],
-    setNotification: Notification => CallbackTo[ActionResponseBuilder],
-    setOpenLink: OpenLink => CallbackTo[ActionResponseBuilder],
-    setStateChanged: Boolean => CallbackTo[ActionResponseBuilder]
+    setNavigation: Navigation => ActionResponseBuilder,
+    setNotification: Notification => ActionResponseBuilder,
+    setOpenLink: OpenLink => ActionResponseBuilder,
+    setStateChanged: Boolean => ActionResponseBuilder
   ): ActionResponseBuilder = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("build")(build.toJsFn)
-    __obj.updateDynamic("setNavigation")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Navigation) => setNavigation(t0).runNow()))
-    __obj.updateDynamic("setNotification")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.Notification) => setNotification(t0).runNow()))
-    __obj.updateDynamic("setOpenLink")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService.OpenLink) => setOpenLink(t0).runNow()))
-    __obj.updateDynamic("setStateChanged")(js.Any.fromFunction1((t0: scala.Boolean) => setStateChanged(t0).runNow()))
+    val __obj = js.Dynamic.literal(build = build.toJsFn, setNavigation = js.Any.fromFunction1(setNavigation), setNotification = js.Any.fromFunction1(setNotification), setOpenLink = js.Any.fromFunction1(setOpenLink), setStateChanged = js.Any.fromFunction1(setStateChanged))
     __obj.asInstanceOf[ActionResponseBuilder]
   }
+  
+  extension [Self <: ActionResponseBuilder](x: Self) {
+    
+    inline def setBuild(value: CallbackTo[ActionResponse]): Self = StObject.set(x, "build", value.toJsFn)
+    
+    inline def setSetNavigation(value: Navigation => ActionResponseBuilder): Self = StObject.set(x, "setNavigation", js.Any.fromFunction1(value))
+    
+    inline def setSetNotification(value: Notification => ActionResponseBuilder): Self = StObject.set(x, "setNotification", js.Any.fromFunction1(value))
+    
+    inline def setSetOpenLink(value: OpenLink => ActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    
+    inline def setSetStateChanged(value: Boolean => ActionResponseBuilder): Self = StObject.set(x, "setStateChanged", js.Any.fromFunction1(value))
+  }
 }
-

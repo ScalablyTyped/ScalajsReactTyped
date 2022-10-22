@@ -1,12 +1,13 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.AudioParam
+import org.scalajs.dom.AudioParam
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Oscillator extends js.Object {
+trait Oscillator extends StObject {
+  
   /**
     *   Add a value to the p5.Oscillator's output
     *   amplitude, and return the oscillator. Calling this
@@ -17,9 +18,11 @@ trait Oscillator extends js.Object {
     *   scaled output
     */
   def add(number: Double): Oscillator = js.native
+  
   def amp(vol: js.Object): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double): AudioParam = js.native
   def amp(vol: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def amp(vol: js.Object, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   /**
     *   Set the amplitude between 0 and 1.0. Or, pass in
     *   an object such as an oscillator to modulate
@@ -37,18 +40,23 @@ trait Oscillator extends js.Object {
   def amp(vol: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double): AudioParam = js.native
   def amp(vol: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def amp(vol: Double, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
+  
   /**
     *   Connect to a p5.sound / Web Audio object.
     *   @param unit A p5.sound or Web Audio object
     */
   def connect(unit: js.Object): Unit = js.native
+  
   /**
     *   Disconnect all outputs
     */
   def disconnect(): Unit = js.native
+  
   def freq(Frequency: js.Object): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double): AudioParam = js.native
   def freq(Frequency: js.Object, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def freq(Frequency: js.Object, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
   /**
     *   Set frequency of an oscillator to a value. Or,
     *   pass in an object such as an oscillator to
@@ -65,6 +73,36 @@ trait Oscillator extends js.Object {
   def freq(Frequency: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double): AudioParam = js.native
   def freq(Frequency: Double, rampTime: Double, timeFromNow: Double): AudioParam = js.native
+  def freq(Frequency: Double, rampTime: Unit, timeFromNow: Double): AudioParam = js.native
+  
+  /**
+    *   Returns the value of output gain
+    *   @return Amplitude value between 0.0 and 1.0
+    */
+  def getAmp(): Double = js.native
+  
+  /**
+    *   Returns the value of frequency of oscillator
+    *   @return Frequency of oscillator in Hertz
+    */
+  def getFreq(): Double = js.native
+  
+  /**
+    *   Returns the current value of panPosition , between
+    *   Left (-1) and Right (1)
+    *   @return panPosition of oscillator , between Left
+    *   (-1) and Right (1)
+    */
+  def getPan(): Double = js.native
+  
+  /**
+    *   Returns current type of oscillator eg. 'sine',
+    *   'triangle', 'sawtooth' or 'square'.
+    *   @return type of oscillator eg . 'sine',
+    *   'triangle', 'sawtooth' or 'square'.
+    */
+  def getType(): String = js.native
+  
   /**
     *   Multiply the p5.Oscillator's output amplitude by a
     *   fixed value (i.e. turn it up!). Calling this
@@ -75,6 +113,7 @@ trait Oscillator extends js.Object {
     *   multiplied output
     */
   def mult(number: Double): Oscillator = js.native
+  
   /**
     *   Pan between Left (-1) and Right (1)
     *   @param panning Number between -1 and 1
@@ -82,6 +121,7 @@ trait Oscillator extends js.Object {
     *   seconds from now
     */
   def pan(panning: Double, timeFromNow: Double): Unit = js.native
+  
   /**
     *   Set the phase of an oscillator between 0.0 and
     *   1.0. In this implementation, phase is a delay time
@@ -89,6 +129,7 @@ trait Oscillator extends js.Object {
     *   @param phase float between 0.0 and 1.0
     */
   def phase(phase: Double): Unit = js.native
+  
   /**
     *   Scale this oscillator's amplitude values to a
     *   given range, and return the oscillator. Calling
@@ -102,6 +143,7 @@ trait Oscillator extends js.Object {
     *   scaled output
     */
   def scale(inMin: Double, inMax: Double, outMin: Double, outMax: Double): Oscillator = js.native
+  
   /**
     *   Set type to 'sine', 'triangle', 'sawtooth' or
     *   'square'.
@@ -109,16 +151,21 @@ trait Oscillator extends js.Object {
     *   'square'.
     */
   def setType(`type`: String): Unit = js.native
+  
   /**
-    *   Start an oscillator. Accepts an optional parameter
-    *   to determine how long (in seconds from now) until
-    *   the oscillator starts.
+    *   Start an oscillator. Starting an oscillator on a
+    *   user gesture will enable audio in browsers that
+    *   have a strict autoplay policy, including Chrome
+    *   and most mobile devices. See also:
+    *   userStartAudio().
     *   @param [time] startTime in seconds from now.
     *   @param [frequency] frequency in Hz.
     */
   def start(): Unit = js.native
   def start(time: Double): Unit = js.native
   def start(time: Double, frequency: Double): Unit = js.native
+  def start(time: Unit, frequency: Double): Unit = js.native
+  
   /**
     *   Stop an oscillator. Accepts an optional parameter
     *   to determine how long (in seconds from now) until
@@ -127,4 +174,3 @@ trait Oscillator extends js.Object {
     */
   def stop(secondsFromNow: Double): Unit = js.native
 }
-

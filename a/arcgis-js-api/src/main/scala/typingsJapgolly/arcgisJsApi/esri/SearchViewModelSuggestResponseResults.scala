@@ -1,25 +1,29 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SearchViewModelSuggestResponseResults extends Object {
+trait SearchViewModelSuggestResponseResults
+  extends StObject
+     with Object {
+  
   /**
     * An array of suggest results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResponse)
     */
   var results: js.Array[SearchViewModelSuggestResult]
+  
   /**
     * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#sources) of the selected result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchViewModel.html#SuggestResponse)
     */
-  var source: js.Any
+  var source: Any
+  
   /**
     * The index of the currently selected source.
     *
@@ -27,21 +31,28 @@ trait SearchViewModelSuggestResponseResults extends Object {
     */
   var sourceIndex: Double
 }
-
 object SearchViewModelSuggestResponseResults {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean,
     results: js.Array[SearchViewModelSuggestResult],
-    source: js.Any,
+    source: Any,
     sourceIndex: Double
   ): SearchViewModelSuggestResponseResults = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), results = results.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], sourceIndex = sourceIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchViewModelSuggestResponseResults]
   }
+  
+  extension [Self <: SearchViewModelSuggestResponseResults](x: Self) {
+    
+    inline def setResults(value: js.Array[SearchViewModelSuggestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    
+    inline def setResultsVarargs(value: SearchViewModelSuggestResult*): Self = StObject.set(x, "results", js.Array(value*))
+    
+    inline def setSource(value: Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+  }
 }
-

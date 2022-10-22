@@ -1,163 +1,159 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`27`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`28`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`29`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`30`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`31`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`33`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`34`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`35`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`37`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`64000`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`27`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`28`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`29`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`30`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`31`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`33`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`34`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`35`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`37`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`64000`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`8`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`19`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`11`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`23`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`64000`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`16`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`12`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`14`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`13`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`17`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`15`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`35`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`30`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`36`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`24`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`25`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`28`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`29`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`26`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`27`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`31`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`32`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`18`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`10`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`22`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`6`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`7`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`5`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`21`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`20`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`37`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`34`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`33`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`8`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`19`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`11`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`23`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`64000`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`16`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`12`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`14`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`13`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`17`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`15`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`35`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`30`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`36`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`24`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`25`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`28`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`29`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`26`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`27`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`31`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`32`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`18`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`10`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`22`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`6`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`7`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`5`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`21`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`20`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`37`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`34`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`33`
 */
-trait PpSaveAsFileType extends js.Object
-
+trait PpSaveAsFileType extends StObject
 object PpSaveAsFileType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppSaveAsAddIn: `8` = this.cast(8)
-  @scala.inline
-  def ppSaveAsBMP: `19` = this.cast(19)
-  @scala.inline
-  def ppSaveAsDefault: `11` = this.cast(11)
-  @scala.inline
-  def ppSaveAsEMF: `23` = this.cast(23)
-  @scala.inline
-  def ppSaveAsExternalConverter: `64000` = this.cast(64000)
-  @scala.inline
-  def ppSaveAsGIF: `16` = this.cast(16)
-  @scala.inline
-  def ppSaveAsHTML: `12` = this.cast(12)
-  @scala.inline
-  def ppSaveAsHTMLDual: `14` = this.cast(14)
-  @scala.inline
-  def ppSaveAsHTMLv3: `13` = this.cast(13)
-  @scala.inline
-  def ppSaveAsJPG: `17` = this.cast(17)
-  @scala.inline
-  def ppSaveAsMetaFile: `15` = this.cast(15)
-  @scala.inline
-  def ppSaveAsOpenDocumentPresentation: `35` = this.cast(35)
-  @scala.inline
-  def ppSaveAsOpenXMLAddin: `30` = this.cast(30)
-  @scala.inline
-  def ppSaveAsOpenXMLPicturePresentation: `36` = this.cast(36)
-  @scala.inline
-  def ppSaveAsOpenXMLPresentation: `24` = this.cast(24)
-  @scala.inline
-  def ppSaveAsOpenXMLPresentationMacroEnabled: `25` = this.cast(25)
-  @scala.inline
-  def ppSaveAsOpenXMLShow: `28` = this.cast(28)
-  @scala.inline
-  def ppSaveAsOpenXMLShowMacroEnabled: `29` = this.cast(29)
-  @scala.inline
-  def ppSaveAsOpenXMLTemplate: `26` = this.cast(26)
-  @scala.inline
-  def ppSaveAsOpenXMLTemplateMacroEnabled: `27` = this.cast(27)
-  @scala.inline
-  def ppSaveAsOpenXMLTheme: `31` = this.cast(31)
-  @scala.inline
-  def ppSaveAsPDF: `32` = this.cast(32)
-  @scala.inline
-  def ppSaveAsPNG: `18` = this.cast(18)
-  @scala.inline
-  def ppSaveAsPowerPoint3: `4` = this.cast(4)
-  @scala.inline
-  def ppSaveAsPowerPoint4: `3` = this.cast(3)
-  @scala.inline
-  def ppSaveAsPowerPoint4FarEast: `10` = this.cast(10)
-  @scala.inline
-  def ppSaveAsPowerPoint7: `2` = this.cast(2)
-  @scala.inline
-  def ppSaveAsPresForReview: `22` = this.cast(22)
-  @scala.inline
-  def ppSaveAsPresentation: `1` = this.cast(1)
-  @scala.inline
-  def ppSaveAsRTF: `6` = this.cast(6)
-  @scala.inline
-  def ppSaveAsShow: `7` = this.cast(7)
-  @scala.inline
-  def ppSaveAsTIF: `21` = this.cast(21)
-  @scala.inline
-  def ppSaveAsTemplate: `5` = this.cast(5)
-  @scala.inline
-  def ppSaveAsWMV: `37` = this.cast(37)
-  @scala.inline
-  def ppSaveAsWebArchive: `20` = this.cast(20)
-  @scala.inline
-  def ppSaveAsXMLPresentation: `34` = this.cast(34)
-  @scala.inline
-  def ppSaveAsXPS: `33` = this.cast(33)
+  
+  inline def ppSaveAsAddIn: `8` = 8.asInstanceOf[`8`]
+  
+  inline def ppSaveAsBMP: `19` = 19.asInstanceOf[`19`]
+  
+  inline def ppSaveAsDefault: `11` = 11.asInstanceOf[`11`]
+  
+  inline def ppSaveAsEMF: `23` = 23.asInstanceOf[`23`]
+  
+  inline def ppSaveAsExternalConverter: `64000` = 64000.asInstanceOf[`64000`]
+  
+  inline def ppSaveAsGIF: `16` = 16.asInstanceOf[`16`]
+  
+  inline def ppSaveAsHTML: `12` = 12.asInstanceOf[`12`]
+  
+  inline def ppSaveAsHTMLDual: `14` = 14.asInstanceOf[`14`]
+  
+  inline def ppSaveAsHTMLv3: `13` = 13.asInstanceOf[`13`]
+  
+  inline def ppSaveAsJPG: `17` = 17.asInstanceOf[`17`]
+  
+  inline def ppSaveAsMetaFile: `15` = 15.asInstanceOf[`15`]
+  
+  inline def ppSaveAsOpenDocumentPresentation: `35` = 35.asInstanceOf[`35`]
+  
+  inline def ppSaveAsOpenXMLAddin: `30` = 30.asInstanceOf[`30`]
+  
+  inline def ppSaveAsOpenXMLPicturePresentation: `36` = 36.asInstanceOf[`36`]
+  
+  inline def ppSaveAsOpenXMLPresentation: `24` = 24.asInstanceOf[`24`]
+  
+  inline def ppSaveAsOpenXMLPresentationMacroEnabled: `25` = 25.asInstanceOf[`25`]
+  
+  inline def ppSaveAsOpenXMLShow: `28` = 28.asInstanceOf[`28`]
+  
+  inline def ppSaveAsOpenXMLShowMacroEnabled: `29` = 29.asInstanceOf[`29`]
+  
+  inline def ppSaveAsOpenXMLTemplate: `26` = 26.asInstanceOf[`26`]
+  
+  inline def ppSaveAsOpenXMLTemplateMacroEnabled: `27` = 27.asInstanceOf[`27`]
+  
+  inline def ppSaveAsOpenXMLTheme: `31` = 31.asInstanceOf[`31`]
+  
+  inline def ppSaveAsPDF: `32` = 32.asInstanceOf[`32`]
+  
+  inline def ppSaveAsPNG: `18` = 18.asInstanceOf[`18`]
+  
+  inline def ppSaveAsPowerPoint3: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppSaveAsPowerPoint4: `3` = 3.asInstanceOf[`3`]
+  
+  inline def ppSaveAsPowerPoint4FarEast: `10` = 10.asInstanceOf[`10`]
+  
+  inline def ppSaveAsPowerPoint7: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppSaveAsPresForReview: `22` = 22.asInstanceOf[`22`]
+  
+  inline def ppSaveAsPresentation: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppSaveAsRTF: `6` = 6.asInstanceOf[`6`]
+  
+  inline def ppSaveAsShow: `7` = 7.asInstanceOf[`7`]
+  
+  inline def ppSaveAsTIF: `21` = 21.asInstanceOf[`21`]
+  
+  inline def ppSaveAsTemplate: `5` = 5.asInstanceOf[`5`]
+  
+  inline def ppSaveAsWMV: `37` = 37.asInstanceOf[`37`]
+  
+  inline def ppSaveAsWebArchive: `20` = 20.asInstanceOf[`20`]
+  
+  inline def ppSaveAsXMLPresentation: `34` = 34.asInstanceOf[`34`]
+  
+  inline def ppSaveAsXPS: `33` = 33.asInstanceOf[`33`]
 }
-

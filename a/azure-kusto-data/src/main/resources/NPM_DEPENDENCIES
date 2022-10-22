@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "azure-kusto-data" : "3.4.2"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "azure-kusto-data" : "3.4.2"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

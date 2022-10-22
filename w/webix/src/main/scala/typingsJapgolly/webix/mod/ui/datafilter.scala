@@ -1,65 +1,83 @@
 package typingsJapgolly.webix.mod.ui
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("webix", "ui.datafilter")
-@js.native
-object datafilter extends js.Object {
-  @js.native
-  class columnGroup () extends textFilter
+object datafilter {
   
+  @JSImport("webix", "ui.datafilter.columnGroup")
   @js.native
-  class dateFilter () extends textFilter
+  open class columnGroup () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.dateFilter")
   @js.native
-  class dateRangeFilter () extends textFilter
+  open class dateFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.dateRangeFilter")
   @js.native
-  class datepickerFilter () extends textFilter
+  open class dateRangeFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.datepickerFilter")
   @js.native
-  class masterCheckbox () extends textFilter
+  open class datepickerFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.masterCheckbox")
   @js.native
-  class multiComboFilter () extends textFilter
+  open class masterCheckbox () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.multiComboFilter")
   @js.native
-  class multiSelectFilter () extends textFilter
+  open class multiComboFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.multiSelectFilter")
   @js.native
-  class numberFilter () extends textFilter
+  open class multiSelectFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.numberFilter")
   @js.native
-  class selectFilter () extends textFilter
+  open class numberFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.selectFilter")
   @js.native
-  class serverFilter () extends textFilter
+  open class selectFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.serverFilter")
   @js.native
-  class serverMultiSelectFilter () extends textFilter
+  open class serverFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.serverMultiSelectFilter")
   @js.native
-  class serverSelectFilter () extends textFilter
+  open class serverMultiSelectFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.serverSelectFilter")
   @js.native
-  class summColumn () extends textFilter
+  open class serverSelectFilter () extends textFilter
   
+  @JSImport("webix", "ui.datafilter.summColumn")
   @js.native
-  class textFilter () extends WebixFilter {
+  open class summColumn () extends textFilter
+  
+  @JSImport("webix", "ui.datafilter.textFilter")
+  @js.native
+  open class textFilter ()
+    extends StObject
+       with WebixFilter {
+    
     def getInputNode(node: HTMLElement): HTMLElement = js.native
+    
     /* CompleteClass */
-    override def getValue(node: HTMLElement): js.Any = js.native
+    override def getValue(node: HTMLElement): Any = js.native
+    
     /* CompleteClass */
-    override def refresh(master: typingsJapgolly.webix.webix.ui.baseview, node: HTMLElement, value: js.Any): Unit = js.native
+    override def refresh(master: typingsJapgolly.webix.webix.ui.baseview, node: HTMLElement, value: Any): Unit = js.native
+    
     /* CompleteClass */
-    override def render(master: typingsJapgolly.webix.webix.ui.baseview, config: StringDictionary[js.Any]): String = js.native
+    override def render(master: typingsJapgolly.webix.webix.ui.baseview, config: StringDictionary[Any]): String = js.native
+    
     /* CompleteClass */
-    override def setValue(node: HTMLElement, value: js.Any): js.Any = js.native
+    override def setValue(node: HTMLElement, value: Any): Any = js.native
   }
-  
 }
-

@@ -1,14 +1,17 @@
 package typingsJapgolly.winrt.Windows.Media.Protection
 
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Media.Protection.RevocationAndRenewalInformation")
-@js.native
-class RevocationAndRenewalInformation () extends IRevocationAndRenewalInformation {
-  /* CompleteClass */
-  override var items: IVector[RevocationAndRenewalItem] = js.native
+trait RevocationAndRenewalInformation
+  extends StObject
+     with IRevocationAndRenewalInformation
+object RevocationAndRenewalInformation {
+  
+  inline def apply(items: IVector[RevocationAndRenewalItem]): RevocationAndRenewalInformation = {
+    val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RevocationAndRenewalInformation]
+  }
 }
-

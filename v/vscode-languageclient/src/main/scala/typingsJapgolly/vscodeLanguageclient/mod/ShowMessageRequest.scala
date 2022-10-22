@@ -1,14 +1,23 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.MessageActionItem
-import typingsJapgolly.vscodeLanguageserverProtocol.protocolMod.ShowMessageRequestParams
+import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientStrings.windowSlashshowMessageRequest
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.MessageActionItem
+import typingsJapgolly.vscodeLanguageserverProtocol.libCommonProtocolMod.ShowMessageRequestParams
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "ShowMessageRequest")
-@js.native
-object ShowMessageRequest extends js.Object {
-  val `type`: typingsJapgolly.vscodeJsonrpc.mod.RequestType[ShowMessageRequestParams, MessageActionItem | Null, Unit, Unit] = js.native
+object ShowMessageRequest {
+  
+  @JSImport("vscode-languageclient", "ShowMessageRequest.messageDirection")
+  @js.native
+  val messageDirection: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.MessageDirection = js.native
+  
+  @JSImport("vscode-languageclient", "ShowMessageRequest.method")
+  @js.native
+  val method: windowSlashshowMessageRequest = js.native
+  
+  @JSImport("vscode-languageclient", "ShowMessageRequest.type")
+  @js.native
+  val `type`: typingsJapgolly.vscodeLanguageserverProtocol.libCommonMessagesMod.ProtocolRequestType[ShowMessageRequestParams, MessageActionItem | Null, scala.Nothing, Unit, Unit] = js.native
 }
-

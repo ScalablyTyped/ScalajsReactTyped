@@ -3,46 +3,56 @@ package typingsJapgolly.officeJsPreview.Excel
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Local
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Remote
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.WorksheetAdded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * Provides information about the worksheet that raised the added event.
   *
-  * Provides information about the worksheet that raised the Added event.
-  *
+  * @remarks
   * [Api set: ExcelApi 1.7]
   */
-trait WorksheetAddedEventArgs extends js.Object {
+trait WorksheetAddedEventArgs extends StObject {
+  
   /**
+    * Gets the source of the event. See `Excel.EventSource` for details.
     *
-    * Gets the source of the event. See Excel.EventSource for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var source: EventSource | Local | Remote
+  
   /**
+    * Gets the type of the event. See `Excel.EventType` for details.
     *
-    * Gets the type of the event. See Excel.EventType for details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var `type`: WorksheetAdded
+  
   /**
+    * Gets the ID of the worksheet that is added to the workbook.
     *
-    * Gets the id of the worksheet that is added to the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var worksheetId: String
 }
-
 object WorksheetAddedEventArgs {
-  @scala.inline
-  def apply(source: EventSource | Local | Remote, `type`: WorksheetAdded, worksheetId: String): WorksheetAddedEventArgs = {
+  
+  inline def apply(source: EventSource | Local | Remote, worksheetId: String): WorksheetAddedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetAdded")
     __obj.asInstanceOf[WorksheetAddedEventArgs]
   }
+  
+  extension [Self <: WorksheetAddedEventArgs](x: Self) {
+    
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: WorksheetAdded): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+  }
 }
-

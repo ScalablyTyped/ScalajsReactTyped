@@ -1,41 +1,50 @@
 package typingsJapgolly.mobxReactLite
 
-import typingsJapgolly.mobxReactLite.observerMod.IObserverOptions
-import typingsJapgolly.mobxReactLite.optimizeSchedulerMod.IBatchedUpdates
-import typingsJapgolly.mobxReactLite.useDisposableMod.TDisposable
-import typingsJapgolly.mobxReactLite.useObservableMod.SupportedValues
-import typingsJapgolly.mobxReactLite.useObserverMod.IUseObserverOptions
+import typingsJapgolly.mobx.distApiAnnotationMod.AnnotationsMap
+import typingsJapgolly.mobxReactLite.anon.IObserverOptionsforwardRe
+import typingsJapgolly.mobxReactLite.distObserverMod.IObserverOptions
 import typingsJapgolly.react.mod.ForwardRefExoticComponent
+import typingsJapgolly.react.mod.ForwardRefRenderFunction
 import typingsJapgolly.react.mod.FunctionComponent
 import typingsJapgolly.react.mod.MemoExoticComponent
 import typingsJapgolly.react.mod.PropsWithoutRef
 import typingsJapgolly.react.mod.RefAttributes
-import typingsJapgolly.react.mod.RefForwardingComponent
 import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mobx-react-lite", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def isUsingStaticRendering(): Boolean = js.native
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = js.native
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = js.native
-  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
-  def optimizeScheduler(reactionScheduler: IBatchedUpdates): Unit = js.native
-  def useAsObservableSource[TSource](current: TSource): TSource = js.native
-  def useComputed[T](func: js.Function0[T]): T = js.native
-  def useComputed[T](func: js.Function0[T], inputs: js.Array[_]): T = js.native
-  def useDisposable[D /* <: TDisposable */](disposerGenerator: js.Function0[D]): D = js.native
-  def useDisposable[D /* <: TDisposable */](disposerGenerator: js.Function0[D], inputs: js.Array[_]): D = js.native
-  def useForceUpdate(): js.Function0[Unit] = js.native
-  def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore]): TStore = js.native
-  def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = js.native
-  def useObservable[T /* <: SupportedValues */](initialValue: T): T = js.native
-  def useObserver[T](fn: js.Function0[T]): T = js.native
-  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
-  def useObserver[T](fn: js.Function0[T], baseComponentName: String, options: IUseObserverOptions): T = js.native
-  def useStaticRendering(enable: Boolean): Unit = js.native
+object mod {
+  
+  @JSImport("mobx-react-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def enableStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def isObserverBatched(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObserverBatched")().asInstanceOf[Boolean]
+  
+  inline def isUsingStaticRendering(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingStaticRendering")().asInstanceOf[Boolean]
+  
+  inline def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
+  inline def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[P]]
+  inline def observer[C /* <: FunctionComponent[Any] | (ForwardRefRenderFunction[Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C): /* import warning: importer.ImportType#apply Failed type conversion: Options extends {  forwardRef :true} ? C extends react.react.ForwardRefRenderFunction<infer TRef, infer P> ? C & react.react.MemoExoticComponent<react.react.ForwardRefExoticComponent<react.react.PropsWithoutRef<P> & react.react.RefAttributes<TRef>>> : never : C & {  displayName :string} */ js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Options extends {  forwardRef :true} ? C extends react.react.ForwardRefRenderFunction<infer TRef, infer P> ? C & react.react.MemoExoticComponent<react.react.ForwardRefExoticComponent<react.react.PropsWithoutRef<P> & react.react.RefAttributes<TRef>>> : never : C & {  displayName :string} */ js.Any]
+  inline def observer[C /* <: FunctionComponent[Any] | (ForwardRefRenderFunction[Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C, options: Options): /* import warning: importer.ImportType#apply Failed type conversion: Options extends {  forwardRef :true} ? C extends react.react.ForwardRefRenderFunction<infer TRef, infer P> ? C & react.react.MemoExoticComponent<react.react.ForwardRefExoticComponent<react.react.PropsWithoutRef<P> & react.react.RefAttributes<TRef>>> : never : C & {  displayName :string} */ js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply Failed type conversion: Options extends {  forwardRef :true} ? C extends react.react.ForwardRefRenderFunction<infer TRef, infer P> ? C & react.react.MemoExoticComponent<react.react.ForwardRefExoticComponent<react.react.PropsWithoutRef<P> & react.react.RefAttributes<TRef>>> : never : C & {  displayName :string} */ js.Any]
+  inline def observer[P /* <: js.Object */, TRef](baseComponent: ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]]]
+  inline def observer[P /* <: js.Object */, TRef](baseComponent: ForwardRefRenderFunction[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]]]
+  
+  inline def observerBatching(reactionScheduler: Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observerBatching")(reactionScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def useAsObservableSource[TSource /* <: js.Object */](current: TSource): TSource = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsObservableSource")(current.asInstanceOf[js.Any]).asInstanceOf[TSource]
+  
+  inline def useLocalObservable[TStore /* <: Record[String, Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  inline def useLocalObservable[TStore /* <: Record[String, Any] */](initializer: js.Function0[TStore], annotations: AnnotationsMap[TStore, scala.Nothing]): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[TStore]
+  
+  inline def useLocalStore[TStore /* <: Record[String, Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  inline def useLocalStore[TStore /* <: Record[String, Any] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[TStore]
+  
+  inline def useObserver[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any], baseComponentName.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  inline def useStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

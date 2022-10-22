@@ -1,26 +1,33 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps
+import typingsJapgolly.officeUiFabricReact.libComponentsKeytipLayerKeytipLayerDottypesMod.IKeytipLayerProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/KeytipLayer", JSImport.Namespace)
-@js.native
-object libKeytipLayerMod extends js.Object {
-  @js.native
-  class KeytipLayerBase protected ()
-    extends typingsJapgolly.officeUiFabricReact.keytipLayerMod.KeytipLayerBase {
-    def this(props: IKeytipLayerProps, context: js.Any) = this()
-  }
+object libKeytipLayerMod {
   
+  @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayer")
+  @js.native
   val KeytipLayer: FunctionComponent[IKeytipLayerProps] = js.native
-  /* static members */
-  @js.native
-  object KeytipLayerBase extends js.Object {
-    var defaultProps: IKeytipLayerProps = js.native
-  }
   
+  @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase")
+  @js.native
+  open class KeytipLayerBase protected ()
+    extends typingsJapgolly.officeUiFabricReact.libComponentsKeytipLayerMod.KeytipLayerBase {
+    def this(props: IKeytipLayerProps, context: Any) = this()
+  }
+  /* static members */
+  object KeytipLayerBase {
+    
+    @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase.defaultProps")
+    @js.native
+    def defaultProps: IKeytipLayerProps = js.native
+    inline def defaultProps_=(x: IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  }
 }
-

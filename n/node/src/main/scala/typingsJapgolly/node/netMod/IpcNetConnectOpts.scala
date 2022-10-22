@@ -1,35 +1,28 @@
 package typingsJapgolly.node.netMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IpcNetConnectOpts
-  extends IpcSocketConnectOpts
+  extends StObject
+     with IpcSocketConnectOpts
      with SocketConstructorOpts
      with NetConnectOpts {
+  
   var timeout: js.UndefOr[Double] = js.undefined
 }
-
 object IpcNetConnectOpts {
-  @scala.inline
-  def apply(
-    path: String,
-    allowHalfOpen: js.UndefOr[Boolean] = js.undefined,
-    fd: Int | Double = null,
-    onread: OnReadOpts = null,
-    readable: js.UndefOr[Boolean] = js.undefined,
-    timeout: Int | Double = null,
-    writable: js.UndefOr[Boolean] = js.undefined
-  ): IpcNetConnectOpts = {
+  
+  inline def apply(path: String): IpcNetConnectOpts = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen.asInstanceOf[js.Any])
-    if (fd != null) __obj.updateDynamic("fd")(fd.asInstanceOf[js.Any])
-    if (onread != null) __obj.updateDynamic("onread")(onread.asInstanceOf[js.Any])
-    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpcNetConnectOpts]
   }
+  
+  extension [Self <: IpcNetConnectOpts](x: Self) {
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+  }
 }
-

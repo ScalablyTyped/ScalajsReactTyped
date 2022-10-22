@@ -1,27 +1,42 @@
 package typingsJapgolly.betterSqlite3.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RegistrationOptions extends js.Object {
+trait RegistrationOptions extends StObject {
+  
   var deterministic: js.UndefOr[Boolean] = js.undefined
+  
+  var directOnly: js.UndefOr[Boolean] = js.undefined
+  
   var safeIntegers: js.UndefOr[Boolean] = js.undefined
+  
   var varargs: js.UndefOr[Boolean] = js.undefined
 }
-
 object RegistrationOptions {
-  @scala.inline
-  def apply(
-    deterministic: js.UndefOr[Boolean] = js.undefined,
-    safeIntegers: js.UndefOr[Boolean] = js.undefined,
-    varargs: js.UndefOr[Boolean] = js.undefined
-  ): RegistrationOptions = {
+  
+  inline def apply(): RegistrationOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deterministic)) __obj.updateDynamic("deterministic")(deterministic.asInstanceOf[js.Any])
-    if (!js.isUndefined(safeIntegers)) __obj.updateDynamic("safeIntegers")(safeIntegers.asInstanceOf[js.Any])
-    if (!js.isUndefined(varargs)) __obj.updateDynamic("varargs")(varargs.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegistrationOptions]
   }
+  
+  extension [Self <: RegistrationOptions](x: Self) {
+    
+    inline def setDeterministic(value: Boolean): Self = StObject.set(x, "deterministic", value.asInstanceOf[js.Any])
+    
+    inline def setDeterministicUndefined: Self = StObject.set(x, "deterministic", js.undefined)
+    
+    inline def setDirectOnly(value: Boolean): Self = StObject.set(x, "directOnly", value.asInstanceOf[js.Any])
+    
+    inline def setDirectOnlyUndefined: Self = StObject.set(x, "directOnly", js.undefined)
+    
+    inline def setSafeIntegers(value: Boolean): Self = StObject.set(x, "safeIntegers", value.asInstanceOf[js.Any])
+    
+    inline def setSafeIntegersUndefined: Self = StObject.set(x, "safeIntegers", js.undefined)
+    
+    inline def setVarargs(value: Boolean): Self = StObject.set(x, "varargs", value.asInstanceOf[js.Any])
+    
+    inline def setVarargsUndefined: Self = StObject.set(x, "varargs", js.undefined)
+  }
 }
-

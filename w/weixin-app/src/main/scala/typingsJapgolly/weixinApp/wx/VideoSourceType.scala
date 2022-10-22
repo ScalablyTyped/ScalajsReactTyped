@@ -1,21 +1,17 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.album
   - typingsJapgolly.weixinApp.weixinAppStrings.camera
 */
-trait VideoSourceType extends js.Object
-
+trait VideoSourceType extends StObject
 object VideoSourceType {
-  @scala.inline
-  def album: typingsJapgolly.weixinApp.weixinAppStrings.album = this.cast("album")
-  @scala.inline
-  def camera: typingsJapgolly.weixinApp.weixinAppStrings.camera = this.cast("camera")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def album: typingsJapgolly.weixinApp.weixinAppStrings.album = "album".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.album]
+  
+  inline def camera: typingsJapgolly.weixinApp.weixinAppStrings.camera = "camera".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.camera]
 }
-

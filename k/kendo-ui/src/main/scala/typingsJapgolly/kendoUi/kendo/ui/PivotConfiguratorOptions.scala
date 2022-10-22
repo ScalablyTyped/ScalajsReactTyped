@@ -1,37 +1,55 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.PivotDataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PivotConfiguratorOptions extends js.Object {
-  var dataSource: js.UndefOr[js.Any | PivotDataSource] = js.undefined
+trait PivotConfiguratorOptions extends StObject {
+  
+  var dataSource: js.UndefOr[Any | PivotDataSource] = js.undefined
+  
   var filterable: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double | String] = js.undefined
+  
   var messages: js.UndefOr[PivotConfiguratorMessages] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var sortable: js.UndefOr[Boolean | PivotConfiguratorSortable] = js.undefined
 }
-
 object PivotConfiguratorOptions {
-  @scala.inline
-  def apply(
-    dataSource: js.Any | PivotDataSource = null,
-    filterable: js.UndefOr[Boolean] = js.undefined,
-    height: Double | String = null,
-    messages: PivotConfiguratorMessages = null,
-    name: String = null,
-    sortable: Boolean | PivotConfiguratorSortable = null
-  ): PivotConfiguratorOptions = {
+  
+  inline def apply(): PivotConfiguratorOptions = {
     val __obj = js.Dynamic.literal()
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (messages != null) __obj.updateDynamic("messages")(messages.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotConfiguratorOptions]
   }
+  
+  extension [Self <: PivotConfiguratorOptions](x: Self) {
+    
+    inline def setDataSource(value: Any | PivotDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setFilterable(value: Boolean): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setMessages(value: PivotConfiguratorMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSortable(value: Boolean | PivotConfiguratorSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+  }
 }
-

@@ -1,25 +1,38 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonOptions
+import typingsJapgolly.braintree.anon.Options
 import typingsJapgolly.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TransactionGateway extends js.Object {
+trait TransactionGateway extends StObject {
+  
+  def adjustAuthorization(transactionID: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  def adjustAuthorization(transactionID: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  
   def cancelRelease(transactionId: String): js.Promise[Unit] = js.native
-  def cloneTransaction(transactionId: String, options: AnonOptions): js.Promise[Unit] = js.native
+  
+  def cloneTransaction(transactionId: String, options: Options): js.Promise[Unit] = js.native
+  
   def find(transactionId: String): js.Promise[Transaction] = js.native
+  
   def holdInEscrow(transactionId: String): js.Promise[Transaction] = js.native
+  
   def refund(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   def refund(transactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  
   def releaseFromEscrow(transactionId: String): js.Promise[Transaction] = js.native
+  
   def sale(request: TransactionRequest): js.Promise[ValidatedResponse[Transaction]] = js.native
-  def search(searchFn: js.Any): Readable = js.native
+  
+  def search(searchFn: TransactionSearchFn): Readable = js.native
+  
   def submitForPartialSettlement(authorizedTransactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  
   def submitForSettlement(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
   def submitForSettlement(transactionId: String, amount: String): js.Promise[ValidatedResponse[Transaction]] = js.native
+  
   def void(transactionId: String): js.Promise[ValidatedResponse[Transaction]] = js.native
 }
-

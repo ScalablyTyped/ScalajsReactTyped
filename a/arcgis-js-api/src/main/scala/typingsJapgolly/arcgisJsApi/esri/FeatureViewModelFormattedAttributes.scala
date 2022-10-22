@@ -1,42 +1,48 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FeatureViewModelFormattedAttributes extends Object {
+trait FeatureViewModelFormattedAttributes
+  extends StObject
+     with Object {
+  
   /**
-    * The formatted attributes for an individual content element. This is derived from the module:esri/PopupTemplate PopupTemplate, or per an individual content element. This element is defined with a [fieldsContent](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html) popup element set on the PopupTemplate's [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content).
+    * The formatted attributes for an individual content element.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Feature-FeatureViewModel.html#formattedAttributes)
     */
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[Any] = js.undefined
+  
   /**
     * The formatted attributes specified at the root level of the [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html) using the [PopupTemplate.fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#fieldInfos) property.
     *
     * [Read more...](global.html)
     */
-  var global: js.UndefOr[js.Any] = js.undefined
+  var global: js.UndefOr[Any] = js.undefined
 }
-
 object FeatureViewModelFormattedAttributes {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    content: js.Any = null,
-    global: js.Any = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): FeatureViewModelFormattedAttributes = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (global != null) __obj.updateDynamic("global")(global.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[FeatureViewModelFormattedAttributes]
   }
+  
+  extension [Self <: FeatureViewModelFormattedAttributes](x: Self) {
+    
+    inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setGlobal(value: Any): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+  }
 }
-

@@ -1,50 +1,46 @@
 package typingsJapgolly.materializeCss.M
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.materializeCss.MElements
-import typingsJapgolly.materializeCss.PartialSidenavOptions
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("M.Sidenav")
-@js.native
-class Sidenav ()
-  extends Component[SidenavOptions]
+trait Sidenav
+  extends StObject
+     with Component[SidenavOptions]
      with Openable {
+  
   /**
     * Describes if Sidenav is being dragged
     */
-  var isDragged: Boolean = js.native
+  var isDragged: Boolean
+  
   /**
     * Describes if sidenav is fixed
     */
-  var isFixed: Boolean = js.native
-  /* CompleteClass */
-  override var isOpen: Boolean = js.native
-  /* CompleteClass */
-  override def close(): Unit = js.native
-  /* CompleteClass */
-  override def open(): Unit = js.native
+  var isFixed: Boolean
 }
-
-/* static members */
-@JSGlobal("M.Sidenav")
-@js.native
-object Sidenav extends js.Object {
-  /**
-    * Get Instance
-    */
-  def getInstance(elem: Element): Sidenav = js.native
-  /**
-    * Init Sidenavs
-    */
-  def init(els: MElements): js.Array[Sidenav] = js.native
-  def init(els: MElements, options: PartialSidenavOptions): js.Array[Sidenav] = js.native
-  /**
-    * Init Sidenav
-    */
-  def init(els: typingsJapgolly.std.Element): Sidenav = js.native
-  def init(els: typingsJapgolly.std.Element, options: PartialSidenavOptions): Sidenav = js.native
+object Sidenav {
+  
+  inline def apply(
+    close: Callback,
+    destroy: Callback,
+    el: Element,
+    isDragged: Boolean,
+    isFixed: Boolean,
+    isOpen: Boolean,
+    open: Callback,
+    options: SidenavOptions
+  ): Sidenav = {
+    val __obj = js.Dynamic.literal(close = close.toJsFn, destroy = destroy.toJsFn, el = el.asInstanceOf[js.Any], isDragged = isDragged.asInstanceOf[js.Any], isFixed = isFixed.asInstanceOf[js.Any], isOpen = isOpen.asInstanceOf[js.Any], open = open.toJsFn, options = options.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Sidenav]
+  }
+  
+  extension [Self <: Sidenav](x: Self) {
+    
+    inline def setIsDragged(value: Boolean): Self = StObject.set(x, "isDragged", value.asInstanceOf[js.Any])
+    
+    inline def setIsFixed(value: Boolean): Self = StObject.set(x, "isFixed", value.asInstanceOf[js.Any])
+  }
 }
-

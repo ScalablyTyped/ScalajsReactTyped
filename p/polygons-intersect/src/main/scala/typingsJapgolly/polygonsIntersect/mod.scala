@@ -1,12 +1,15 @@
 package typingsJapgolly.polygonsIntersect
 
+import typingsJapgolly.polygonsIntersect.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("polygons-intersect", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(poly1: js.Array[AnonX], poly2: js.Array[AnonX]): js.Array[AnonX] = js.native
+object mod {
+  
+  inline def apply(poly1: js.Array[X], poly2: js.Array[X]): js.Array[X] = (^.asInstanceOf[js.Dynamic].apply(poly1.asInstanceOf[js.Any], poly2.asInstanceOf[js.Any])).asInstanceOf[js.Array[X]]
+  
+  @JSImport("polygons-intersect", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

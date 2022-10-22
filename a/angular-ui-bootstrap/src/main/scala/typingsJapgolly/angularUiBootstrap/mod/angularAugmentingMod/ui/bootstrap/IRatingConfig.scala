@@ -1,28 +1,32 @@
 package typingsJapgolly.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IRatingConfig extends js.Object {
+trait IRatingConfig extends StObject {
+  
   /**
     * Changes the number of icons.
     *
     * @default: 5
     */
   var max: js.UndefOr[Double] = js.undefined
+  
   /**
     * A variable used in the template to specify the state for unselected icons.
     *
     * @default: null
     */
   var stateOff: js.UndefOr[String] = js.undefined
+  
   /**
     * A variable used in the template to specify the state for selected icons.
     *
     * @default: null
     */
   var stateOn: js.UndefOr[String] = js.undefined
+  
   /**
     * An array of strings defining titles for all icons.
     *
@@ -30,21 +34,31 @@ trait IRatingConfig extends js.Object {
     */
   var titles: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object IRatingConfig {
-  @scala.inline
-  def apply(
-    max: Int | Double = null,
-    stateOff: String = null,
-    stateOn: String = null,
-    titles: js.Array[String] = null
-  ): IRatingConfig = {
+  
+  inline def apply(): IRatingConfig = {
     val __obj = js.Dynamic.literal()
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (stateOff != null) __obj.updateDynamic("stateOff")(stateOff.asInstanceOf[js.Any])
-    if (stateOn != null) __obj.updateDynamic("stateOn")(stateOn.asInstanceOf[js.Any])
-    if (titles != null) __obj.updateDynamic("titles")(titles.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRatingConfig]
   }
+  
+  extension [Self <: IRatingConfig](x: Self) {
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setStateOff(value: String): Self = StObject.set(x, "stateOff", value.asInstanceOf[js.Any])
+    
+    inline def setStateOffUndefined: Self = StObject.set(x, "stateOff", js.undefined)
+    
+    inline def setStateOn(value: String): Self = StObject.set(x, "stateOn", value.asInstanceOf[js.Any])
+    
+    inline def setStateOnUndefined: Self = StObject.set(x, "stateOn", js.undefined)
+    
+    inline def setTitles(value: js.Array[String]): Self = StObject.set(x, "titles", value.asInstanceOf[js.Any])
+    
+    inline def setTitlesUndefined: Self = StObject.set(x, "titles", js.undefined)
+    
+    inline def setTitlesVarargs(value: String*): Self = StObject.set(x, "titles", js.Array(value*))
+  }
 }
-

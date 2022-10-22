@@ -1,25 +1,32 @@
 package typingsJapgolly.mongodb.mod
 
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.buffer.mod.Buffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "Decimal128")
 @js.native
-class Decimal128 protected ()
+open class Decimal128 protected ()
   extends typingsJapgolly.bson.mod.Decimal128 {
+  def this(bytes: String) = this()
   /**
-    * @param bytes A buffer containing the raw Decimal128 bytes.
+    * @param bytes - a buffer containing the raw Decimal128 bytes in little endian order,
+    *                or a string representation as returned by .toString()
     */
   def this(bytes: Buffer) = this()
 }
-
 /* static members */
-@JSImport("mongodb", "Decimal128")
-@js.native
-object Decimal128 extends js.Object {
-  /** Create a Decimal128 instance from a string representation. */
-  def fromString(s: String): typingsJapgolly.bson.mod.Decimal128 = js.native
+object Decimal128 {
+  
+  @JSImport("mongodb", "Decimal128")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /**
+    * Create a Decimal128 instance from a string representation
+    *
+    * @param representation - a numeric string representation.
+    */
+  inline def fromString(representation: String): typingsJapgolly.bson.mod.Decimal128 = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(representation.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.bson.mod.Decimal128]
 }
-

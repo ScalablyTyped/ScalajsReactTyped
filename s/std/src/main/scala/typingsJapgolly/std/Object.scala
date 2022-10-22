@@ -1,29 +1,46 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Object extends js.Object {
+trait Object extends StObject {
+  
   /** The initial value of Object.prototype.constructor is the standard built-in Object constructor. */
+  /* standard es5 */
   var constructor: js.Function
+  
   /**
     * Determines whether an object has a property with the specified name.
     * @param v A property name.
     */
+  /* standard es5 */
   def hasOwnProperty(v: PropertyKey): scala.Boolean
+  
   /**
     * Determines whether a specified property is enumerable.
     * @param v A property name.
     */
+  /* standard es5 */
   def propertyIsEnumerable(v: PropertyKey): scala.Boolean
 }
-
-/**
-  * Provides functionality common to all JavaScript objects.
-  */
-@JSGlobal("Object")
-@js.native
-object Object extends TopLevel[ObjectConstructor]
-
+object Object {
+  
+  inline def apply(
+    constructor: js.Function,
+    hasOwnProperty: PropertyKey => scala.Boolean,
+    propertyIsEnumerable: PropertyKey => scala.Boolean
+  ): Object = {
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.asInstanceOf[Object]
+  }
+  
+  extension [Self <: Object](x: Self) {
+    
+    inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+    
+    inline def setHasOwnProperty(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "hasOwnProperty", js.Any.fromFunction1(value))
+    
+    inline def setPropertyIsEnumerable(value: PropertyKey => scala.Boolean): Self = StObject.set(x, "propertyIsEnumerable", js.Any.fromFunction1(value))
+  }
+}

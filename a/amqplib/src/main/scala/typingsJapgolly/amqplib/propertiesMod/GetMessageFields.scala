@@ -1,16 +1,18 @@
 package typingsJapgolly.amqplib.propertiesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetMessageFields extends CommonMessageFields {
+trait GetMessageFields
+  extends StObject
+     with CommonMessageFields {
+  
   var messageCount: Double
 }
-
 object GetMessageFields {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     deliveryTag: Double,
     exchange: String,
     messageCount: Double,
@@ -18,8 +20,11 @@ object GetMessageFields {
     routingKey: String
   ): GetMessageFields = {
     val __obj = js.Dynamic.literal(deliveryTag = deliveryTag.asInstanceOf[js.Any], exchange = exchange.asInstanceOf[js.Any], messageCount = messageCount.asInstanceOf[js.Any], redelivered = redelivered.asInstanceOf[js.Any], routingKey = routingKey.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[GetMessageFields]
   }
+  
+  extension [Self <: GetMessageFields](x: Self) {
+    
+    inline def setMessageCount(value: Double): Self = StObject.set(x, "messageCount", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,35 +1,31 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
 */
-trait WdHeadingSeparator extends js.Object
-
+trait WdHeadingSeparator extends StObject
 object WdHeadingSeparator {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdHeadingSeparatorBlankLine: `1` = this.cast(1)
-  @scala.inline
-  def wdHeadingSeparatorLetter: `2` = this.cast(2)
-  @scala.inline
-  def wdHeadingSeparatorLetterFull: `4` = this.cast(4)
-  @scala.inline
-  def wdHeadingSeparatorLetterLow: `3` = this.cast(3)
-  @scala.inline
-  def wdHeadingSeparatorNone: `0` = this.cast(0)
+  
+  inline def wdHeadingSeparatorBlankLine: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdHeadingSeparatorLetter: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdHeadingSeparatorLetterFull: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdHeadingSeparatorLetterLow: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdHeadingSeparatorNone: `0` = 0.asInstanceOf[`0`]
 }
-

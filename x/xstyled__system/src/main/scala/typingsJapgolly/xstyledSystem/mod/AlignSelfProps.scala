@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.AlignSelfProperty
+import typingsJapgolly.csstype.mod.Property.AlignSelf
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlignSelfProps extends js.Object {
-  val alignSelf: js.UndefOr[ResponsiveValue[AlignSelfProperty]] = js.undefined
+trait AlignSelfProps extends StObject {
+  
+  val alignSelf: js.UndefOr[ResponsiveValue[AlignSelf]] = js.undefined
 }
-
 object AlignSelfProps {
-  @scala.inline
-  def apply(alignSelf: ResponsiveValue[AlignSelfProperty] = null): AlignSelfProps = {
+  
+  inline def apply(): AlignSelfProps = {
     val __obj = js.Dynamic.literal()
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlignSelfProps]
   }
+  
+  extension [Self <: AlignSelfProps](x: Self) {
+    
+    inline def setAlignSelf(value: ResponsiveValue[AlignSelf]): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+    
+    inline def setAlignSelfVarargs(value: AlignSelf*): Self = StObject.set(x, "alignSelf", js.Array(value*))
+  }
 }
-

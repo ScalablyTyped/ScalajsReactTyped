@@ -1,20 +1,22 @@
 package typingsJapgolly.angularCore.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PipeTransform extends js.Object {
-  def transform(value: js.Any, args: js.Any*): js.Any
+trait PipeTransform extends StObject {
+  
+  def transform(value: Any, args: Any*): Any
 }
-
 object PipeTransform {
-  @scala.inline
-  def apply(transform: (js.Any, /* repeated */ js.Any) => CallbackTo[js.Any]): PipeTransform = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("transform")(js.Any.fromFunction2((t0: js.Any, t1: /* repeated */ js.Any) => transform(t0, t1).runNow()))
+  
+  inline def apply(transform: (Any, /* repeated */ Any) => Any): PipeTransform = {
+    val __obj = js.Dynamic.literal(transform = js.Any.fromFunction2(transform))
     __obj.asInstanceOf[PipeTransform]
   }
+  
+  extension [Self <: PipeTransform](x: Self) {
+    
+    inline def setTransform(value: (Any, /* repeated */ Any) => Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+  }
 }
-

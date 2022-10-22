@@ -1,7 +1,7 @@
 
 # Scala.js typings for no-case
 
-Typings are for version 2.3.2
+Typings are for version 3.0.4
 
 ## Library description:
 Transform into a lower cased string with spaces between words
@@ -10,10 +10,10 @@ Transform into a lower cased string with spaces between words
 | ------------------ | :-------------: |
 | Full name          | no-case |
 | Keywords           | no, case, space, lower, convert, transform |
-| # releases         | 5 |
-| # dependents       | 35 |
-| # downloads        | 218530344 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 6.6252436666666664E7 |
+| # stars            | 1779.0 |
 
 ## Links
 - [Homepage](https://github.com/blakeembrey/change-case/tree/master/packages/no-case#readme)

@@ -1,12 +1,12 @@
 package typingsJapgolly.oracleOraclejet.ojgaugeMod
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.oracleOraclejet.Anon10
-import typingsJapgolly.oracleOraclejet.Anon11
-import typingsJapgolly.oracleOraclejet.AnonBorderColorBorderRadius
-import typingsJapgolly.oracleOraclejet.AnonConverterPosition
-import typingsJapgolly.oracleOraclejet.AnonLabelAndValue
-import typingsJapgolly.oracleOraclejet.AnonPositionStyle
+import typingsJapgolly.oracleOraclejet.anon.BorderColorBorderRadius
+import typingsJapgolly.oracleOraclejet.anon.ConverterPosition
+import typingsJapgolly.oracleOraclejet.anon.LabelAndValue
+import typingsJapgolly.oracleOraclejet.anon.PositionStyle
+import typingsJapgolly.oracleOraclejet.anon.`12`
+import typingsJapgolly.oracleOraclejet.anon.`13`
 import typingsJapgolly.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.ReferenceLine
 import typingsJapgolly.oracleOraclejet.ojgaugeMod.ojStatusMeterGauge.Threshold
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.all
@@ -19,113 +19,212 @@ import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.off
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.on
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.onIndicator
 import typingsJapgolly.oracleOraclejet.oracleOraclejetStrings.vertical
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<@oracle/oraclejet.@oracle/oraclejet/ojgauge.ojStatusMeterGaugeSettableProperties> */
 trait ojStatusMeterGaugeSettablePropertiesLenient
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var angleExtent: js.UndefOr[Double] = js.undefined
+  
   var animationDuration: js.UndefOr[Double] = js.undefined
+  
   var animationOnDataChange: js.UndefOr[auto | none] = js.undefined
+  
   var animationOnDisplay: js.UndefOr[auto | none] = js.undefined
+  
   var borderColor: js.UndefOr[String] = js.undefined
+  
   var borderRadius: js.UndefOr[String] = js.undefined
-  var center: js.UndefOr[Anon10] = js.undefined
+  
+  var center: js.UndefOr[`12`] = js.undefined
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var indicatorSize: js.UndefOr[Double] = js.undefined
+  
   var innerRadius: js.UndefOr[Double] = js.undefined
-  var label: js.UndefOr[AnonPositionStyle] = js.undefined
+  
+  var label: js.UndefOr[PositionStyle] = js.undefined
+  
   var max: js.UndefOr[Double] = js.undefined
-  var metricLabel: js.UndefOr[AnonConverterPosition] = js.undefined
+  
+  var metricLabel: js.UndefOr[ConverterPosition] = js.undefined
+  
   var min: js.UndefOr[Double] = js.undefined
+  
   var orientation: js.UndefOr[circular | vertical | horizontal] = js.undefined
-  var plotArea: js.UndefOr[AnonBorderColorBorderRadius] = js.undefined
+  
+  var plotArea: js.UndefOr[BorderColorBorderRadius] = js.undefined
+  
   var readonly: js.UndefOr[Boolean] = js.undefined
+  
   var referenceLines: js.UndefOr[js.Array[ReferenceLine]] = js.undefined
+  
   var startAngle: js.UndefOr[Double] = js.undefined
-  var step: js.UndefOr[Double] = js.undefined
+  
+  var step: js.UndefOr[Double | Null] = js.undefined
+  
   var svgClassName: js.UndefOr[String] = js.undefined
+  
   var svgStyle: js.UndefOr[js.Object] = js.undefined
+  
   var thresholdDisplay: js.UndefOr[currentOnly | all | onIndicator] = js.undefined
+  
   var thresholds: js.UndefOr[js.Array[Threshold]] = js.undefined
-  var tooltip: js.UndefOr[Anon11] = js.undefined
+  
+  var tooltip: js.UndefOr[`13`] = js.undefined
+  
   var trackResize: js.UndefOr[on | off] = js.undefined
-  var transientValue: js.UndefOr[Double] = js.undefined
-  var translations: js.UndefOr[AnonLabelAndValue] = js.undefined
-  var value: js.UndefOr[Double] = js.undefined
+  
+  var transientValue: js.UndefOr[Double | Null] = js.undefined
+  
+  var translations: js.UndefOr[LabelAndValue] = js.undefined
+  
+  var value: js.UndefOr[Double | Null] = js.undefined
+  
   var visualEffects: js.UndefOr[none | auto] = js.undefined
 }
-
 object ojStatusMeterGaugeSettablePropertiesLenient {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    angleExtent: Int | Double = null,
-    animationDuration: Int | Double = null,
-    animationOnDataChange: auto | none = null,
-    animationOnDisplay: auto | none = null,
-    borderColor: String = null,
-    borderRadius: String = null,
-    center: Anon10 = null,
-    color: String = null,
-    indicatorSize: Int | Double = null,
-    innerRadius: Int | Double = null,
-    label: AnonPositionStyle = null,
-    max: Int | Double = null,
-    metricLabel: AnonConverterPosition = null,
-    min: Int | Double = null,
-    orientation: circular | vertical | horizontal = null,
-    plotArea: AnonBorderColorBorderRadius = null,
-    readonly: js.UndefOr[Boolean] = js.undefined,
-    referenceLines: js.Array[ReferenceLine] = null,
-    startAngle: Int | Double = null,
-    step: Int | Double = null,
-    svgClassName: String = null,
-    svgStyle: js.Object = null,
-    thresholdDisplay: currentOnly | all | onIndicator = null,
-    thresholds: js.Array[Threshold] = null,
-    tooltip: Anon11 = null,
-    trackResize: on | off = null,
-    transientValue: Int | Double = null,
-    translations: AnonLabelAndValue = null,
-    value: Int | Double = null,
-    visualEffects: none | auto = null
-  ): ojStatusMeterGaugeSettablePropertiesLenient = {
+  
+  inline def apply(): ojStatusMeterGaugeSettablePropertiesLenient = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (angleExtent != null) __obj.updateDynamic("angleExtent")(angleExtent.asInstanceOf[js.Any])
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (animationOnDataChange != null) __obj.updateDynamic("animationOnDataChange")(animationOnDataChange.asInstanceOf[js.Any])
-    if (animationOnDisplay != null) __obj.updateDynamic("animationOnDisplay")(animationOnDisplay.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (indicatorSize != null) __obj.updateDynamic("indicatorSize")(indicatorSize.asInstanceOf[js.Any])
-    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (metricLabel != null) __obj.updateDynamic("metricLabel")(metricLabel.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
-    if (plotArea != null) __obj.updateDynamic("plotArea")(plotArea.asInstanceOf[js.Any])
-    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
-    if (referenceLines != null) __obj.updateDynamic("referenceLines")(referenceLines.asInstanceOf[js.Any])
-    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (svgClassName != null) __obj.updateDynamic("svgClassName")(svgClassName.asInstanceOf[js.Any])
-    if (svgStyle != null) __obj.updateDynamic("svgStyle")(svgStyle.asInstanceOf[js.Any])
-    if (thresholdDisplay != null) __obj.updateDynamic("thresholdDisplay")(thresholdDisplay.asInstanceOf[js.Any])
-    if (thresholds != null) __obj.updateDynamic("thresholds")(thresholds.asInstanceOf[js.Any])
-    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip.asInstanceOf[js.Any])
-    if (trackResize != null) __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
-    if (transientValue != null) __obj.updateDynamic("transientValue")(transientValue.asInstanceOf[js.Any])
-    if (translations != null) __obj.updateDynamic("translations")(translations.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    if (visualEffects != null) __obj.updateDynamic("visualEffects")(visualEffects.asInstanceOf[js.Any])
     __obj.asInstanceOf[ojStatusMeterGaugeSettablePropertiesLenient]
   }
+  
+  extension [Self <: ojStatusMeterGaugeSettablePropertiesLenient](x: Self) {
+    
+    inline def setAngleExtent(value: Double): Self = StObject.set(x, "angleExtent", value.asInstanceOf[js.Any])
+    
+    inline def setAngleExtentUndefined: Self = StObject.set(x, "angleExtent", js.undefined)
+    
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    
+    inline def setAnimationOnDataChange(value: auto | none): Self = StObject.set(x, "animationOnDataChange", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDataChangeUndefined: Self = StObject.set(x, "animationOnDataChange", js.undefined)
+    
+    inline def setAnimationOnDisplay(value: auto | none): Self = StObject.set(x, "animationOnDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setAnimationOnDisplayUndefined: Self = StObject.set(x, "animationOnDisplay", js.undefined)
+    
+    inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setCenter(value: `12`): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setIndicatorSize(value: Double): Self = StObject.set(x, "indicatorSize", value.asInstanceOf[js.Any])
+    
+    inline def setIndicatorSizeUndefined: Self = StObject.set(x, "indicatorSize", js.undefined)
+    
+    inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    
+    inline def setLabel(value: PositionStyle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMetricLabel(value: ConverterPosition): Self = StObject.set(x, "metricLabel", value.asInstanceOf[js.Any])
+    
+    inline def setMetricLabelUndefined: Self = StObject.set(x, "metricLabel", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setOrientation(value: circular | vertical | horizontal): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    
+    inline def setPlotArea(value: BorderColorBorderRadius): Self = StObject.set(x, "plotArea", value.asInstanceOf[js.Any])
+    
+    inline def setPlotAreaUndefined: Self = StObject.set(x, "plotArea", js.undefined)
+    
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    
+    inline def setReadonlyUndefined: Self = StObject.set(x, "readonly", js.undefined)
+    
+    inline def setReferenceLines(value: js.Array[ReferenceLine]): Self = StObject.set(x, "referenceLines", value.asInstanceOf[js.Any])
+    
+    inline def setReferenceLinesUndefined: Self = StObject.set(x, "referenceLines", js.undefined)
+    
+    inline def setReferenceLinesVarargs(value: ReferenceLine*): Self = StObject.set(x, "referenceLines", js.Array(value*))
+    
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepNull: Self = StObject.set(x, "step", null)
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setSvgClassName(value: String): Self = StObject.set(x, "svgClassName", value.asInstanceOf[js.Any])
+    
+    inline def setSvgClassNameUndefined: Self = StObject.set(x, "svgClassName", js.undefined)
+    
+    inline def setSvgStyle(value: js.Object): Self = StObject.set(x, "svgStyle", value.asInstanceOf[js.Any])
+    
+    inline def setSvgStyleUndefined: Self = StObject.set(x, "svgStyle", js.undefined)
+    
+    inline def setThresholdDisplay(value: currentOnly | all | onIndicator): Self = StObject.set(x, "thresholdDisplay", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdDisplayUndefined: Self = StObject.set(x, "thresholdDisplay", js.undefined)
+    
+    inline def setThresholds(value: js.Array[Threshold]): Self = StObject.set(x, "thresholds", value.asInstanceOf[js.Any])
+    
+    inline def setThresholdsUndefined: Self = StObject.set(x, "thresholds", js.undefined)
+    
+    inline def setThresholdsVarargs(value: Threshold*): Self = StObject.set(x, "thresholds", js.Array(value*))
+    
+    inline def setTooltip(value: `13`): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    
+    inline def setTrackResize(value: on | off): Self = StObject.set(x, "trackResize", value.asInstanceOf[js.Any])
+    
+    inline def setTrackResizeUndefined: Self = StObject.set(x, "trackResize", js.undefined)
+    
+    inline def setTransientValue(value: Double): Self = StObject.set(x, "transientValue", value.asInstanceOf[js.Any])
+    
+    inline def setTransientValueNull: Self = StObject.set(x, "transientValue", null)
+    
+    inline def setTransientValueUndefined: Self = StObject.set(x, "transientValue", js.undefined)
+    
+    inline def setTranslations(value: LabelAndValue): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
+    
+    inline def setTranslationsUndefined: Self = StObject.set(x, "translations", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueNull: Self = StObject.set(x, "value", null)
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    
+    inline def setVisualEffects(value: none | auto): Self = StObject.set(x, "visualEffects", value.asInstanceOf[js.Any])
+    
+    inline def setVisualEffectsUndefined: Self = StObject.set(x, "visualEffects", js.undefined)
+  }
 }
-

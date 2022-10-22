@@ -1,7 +1,7 @@
 
 # Scala.js typings for sparqljs
 
-Typings are for version 2.1
+Typings are for version 3.1
 
 ## Library description:
 A parser for the SPARQL query language
@@ -10,10 +10,10 @@ A parser for the SPARQL query language
 | ------------------ | :-------------: |
 | Full name          | sparqljs |
 | Keywords           | sparql, rdf, query, parser |
-| # releases         | 11 |
-| # dependents       | 24 |
-| # downloads        | 33265 |
-| # stars            | 5 |
+| # releases         | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 25328.333333333332 |
+| # stars            | 308.0 |
 
 ## Links
 - [Homepage](https://github.com/RubenVerborgh/SPARQL.js#readme)

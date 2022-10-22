@@ -1,55 +1,56 @@
 package typingsJapgolly.antdMobileRn.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.marqueeNativeMod.MarqueeProps
-import typingsJapgolly.antdMobileRn.marqueeNativeMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libNoticeBarMarqueeDotnativeMod.MarqueeProps
+import typingsJapgolly.antdMobileRn.libNoticeBarMarqueeDotnativeMod.default
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MarqueeDotnative {
-  def apply(
-    className: String = null,
-    fps: Int | Double = null,
-    leading: Int | Double = null,
-    loop: js.UndefOr[Boolean] = js.undefined,
-    maxWidth: Int | Double = null,
-    style: StyleProp[TextStyle] = null,
-    text: VdomNode = null,
-    trailing: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MarqueeProps, default, Unit, MarqueeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
-    if (leading != null) __obj.updateDynamic("leading")(leading.asInstanceOf[js.Any])
-    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
-    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.rawNode.asInstanceOf[js.Any])
-    if (trailing != null) __obj.updateDynamic("trailing")(trailing.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.marqueeNativeMod.MarqueeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.marqueeNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.marqueeNativeMod.MarqueeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/notice-bar/Marquee.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def fps(value: Double): this.type = set("fps", value.asInstanceOf[js.Any])
+    
+    inline def leading(value: Double): this.type = set("leading", value.asInstanceOf[js.Any])
+    
+    inline def loop(value: Boolean): this.type = set("loop", value.asInstanceOf[js.Any])
+    
+    inline def maxWidth(value: Double): this.type = set("maxWidth", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[TextStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def text(value: VdomNode): this.type = set("text", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def textNull: this.type = set("text", null)
+    
+    inline def textVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("text", js.Array(value*))
+    
+    inline def textVdomElement(value: VdomElement): this.type = set("text", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def trailing(value: Double): this.type = set("trailing", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MarqueeDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MarqueeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

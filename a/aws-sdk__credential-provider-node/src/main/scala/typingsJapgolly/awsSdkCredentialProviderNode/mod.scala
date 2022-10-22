@@ -1,18 +1,18 @@
 package typingsJapgolly.awsSdkCredentialProviderNode
 
-import typingsJapgolly.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProviderInit
-import typingsJapgolly.awsSdkCredentialProviderIni.mod.FromIniInit
-import typingsJapgolly.awsSdkCredentialProviderNode.awsSdkCredentialProviderNodeStrings.AWS_EC2_METADATA_DISABLED
-import typingsJapgolly.awsSdkTypes.credentialsMod.CredentialProvider
+import typingsJapgolly.awsSdkCredentialProviderNode.distTypesDefaultProviderMod.DefaultProviderInit
+import typingsJapgolly.awsSdkTypes.distTypesCredentialsMod.Credentials
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.MemoizedProvider
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/credential-provider-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val ENV_IMDS_DISABLED: AWS_EC2_METADATA_DISABLED = js.native
-  def defaultProvider(): CredentialProvider = js.native
-  def defaultProvider(init: FromIniInit with RemoteProviderInit): CredentialProvider = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/credential-provider-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def defaultProvider(): MemoizedProvider[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")().asInstanceOf[MemoizedProvider[Credentials]]
+  inline def defaultProvider(init: DefaultProviderInit): MemoizedProvider[Credentials] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProvider")(init.asInstanceOf[js.Any]).asInstanceOf[MemoizedProvider[Credentials]]
 }
-

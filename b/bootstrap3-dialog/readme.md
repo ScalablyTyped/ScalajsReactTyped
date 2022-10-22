@@ -11,9 +11,9 @@ Make use of Bootstrap Modal more monkey-friendly.
 | Full name          | bootstrap3-dialog |
 | Keywords           | bootstrap, dialog |
 | # releases         | 1 |
-| # dependents       | 9 |
-| # downloads        | 102560 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 15231.0 |
+| # stars            | 1912.0 |
 
 ## Links
 - [Homepage](http://nakupanda.github.io/bootstrap3-dialog)

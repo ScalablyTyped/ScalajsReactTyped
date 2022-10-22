@@ -1,12 +1,15 @@
 package typingsJapgolly.sequelize.mod
 
-import typingsJapgolly.sequelize.AnonValues
+import typingsJapgolly.sequelize.anon.Values
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DataTypeEnum extends DataTypeAbstract {
+trait DataTypeEnum
+  extends StObject
+     with DataTypeAbstract {
+  
   /**
     * Enum field
     *
@@ -14,8 +17,7 @@ trait DataTypeEnum extends DataTypeAbstract {
     */
   def apply(): DataTypeEnum = js.native
   def apply(args: String*): DataTypeEnum = js.native
-  def apply(options: AnonValues): DataTypeEnum = js.native
+  def apply(options: Values): DataTypeEnum = js.native
   def apply(values: String): DataTypeEnum = js.native
   def apply(values: js.Array[String]): DataTypeEnum = js.native
 }
-

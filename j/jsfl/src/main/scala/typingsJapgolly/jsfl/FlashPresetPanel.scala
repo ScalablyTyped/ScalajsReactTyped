@@ -1,58 +1,85 @@
 package typingsJapgolly.jsfl
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlashPresetPanel extends js.Object {
-  def addNewItem(): js.Any
-  def applyPreset(): js.Any
-  def deleteFolder(): js.Any
-  def deleteItem(): js.Any
-  def expandFolder(): js.Any
-  def exportItem(): js.Any
-  def findItemIndex(): js.Any
-  def getSelectedItems(): js.Any
-  def importItem(): js.Any
-  def moveToFolder(): js.Any
-  def newFolder(): js.Any
-  def renameItem(): js.Any
-  def selectItem(): js.Any
+trait FlashPresetPanel extends StObject {
+  
+  def addNewItem(): Any
+  
+  def applyPreset(): Any
+  
+  def deleteFolder(): Any
+  
+  def deleteItem(): Any
+  
+  def expandFolder(): Any
+  
+  def exportItem(): Any
+  
+  def findItemIndex(): Any
+  
+  def getSelectedItems(): Any
+  
+  def importItem(): Any
+  
+  def moveToFolder(): Any
+  
+  def newFolder(): Any
+  
+  def renameItem(): Any
+  
+  def selectItem(): Any
 }
-
 object FlashPresetPanel {
-  @scala.inline
-  def apply(
-    addNewItem: CallbackTo[js.Any],
-    applyPreset: CallbackTo[js.Any],
-    deleteFolder: CallbackTo[js.Any],
-    deleteItem: CallbackTo[js.Any],
-    expandFolder: CallbackTo[js.Any],
-    exportItem: CallbackTo[js.Any],
-    findItemIndex: CallbackTo[js.Any],
-    getSelectedItems: CallbackTo[js.Any],
-    importItem: CallbackTo[js.Any],
-    moveToFolder: CallbackTo[js.Any],
-    newFolder: CallbackTo[js.Any],
-    renameItem: CallbackTo[js.Any],
-    selectItem: CallbackTo[js.Any]
+  
+  inline def apply(
+    addNewItem: CallbackTo[Any],
+    applyPreset: CallbackTo[Any],
+    deleteFolder: CallbackTo[Any],
+    deleteItem: CallbackTo[Any],
+    expandFolder: CallbackTo[Any],
+    exportItem: CallbackTo[Any],
+    findItemIndex: CallbackTo[Any],
+    getSelectedItems: CallbackTo[Any],
+    importItem: CallbackTo[Any],
+    moveToFolder: CallbackTo[Any],
+    newFolder: CallbackTo[Any],
+    renameItem: CallbackTo[Any],
+    selectItem: CallbackTo[Any]
   ): FlashPresetPanel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("addNewItem")(addNewItem.toJsFn)
-    __obj.updateDynamic("applyPreset")(applyPreset.toJsFn)
-    __obj.updateDynamic("deleteFolder")(deleteFolder.toJsFn)
-    __obj.updateDynamic("deleteItem")(deleteItem.toJsFn)
-    __obj.updateDynamic("expandFolder")(expandFolder.toJsFn)
-    __obj.updateDynamic("exportItem")(exportItem.toJsFn)
-    __obj.updateDynamic("findItemIndex")(findItemIndex.toJsFn)
-    __obj.updateDynamic("getSelectedItems")(getSelectedItems.toJsFn)
-    __obj.updateDynamic("importItem")(importItem.toJsFn)
-    __obj.updateDynamic("moveToFolder")(moveToFolder.toJsFn)
-    __obj.updateDynamic("newFolder")(newFolder.toJsFn)
-    __obj.updateDynamic("renameItem")(renameItem.toJsFn)
-    __obj.updateDynamic("selectItem")(selectItem.toJsFn)
+    val __obj = js.Dynamic.literal(addNewItem = addNewItem.toJsFn, applyPreset = applyPreset.toJsFn, deleteFolder = deleteFolder.toJsFn, deleteItem = deleteItem.toJsFn, expandFolder = expandFolder.toJsFn, exportItem = exportItem.toJsFn, findItemIndex = findItemIndex.toJsFn, getSelectedItems = getSelectedItems.toJsFn, importItem = importItem.toJsFn, moveToFolder = moveToFolder.toJsFn, newFolder = newFolder.toJsFn, renameItem = renameItem.toJsFn, selectItem = selectItem.toJsFn)
     __obj.asInstanceOf[FlashPresetPanel]
   }
+  
+  extension [Self <: FlashPresetPanel](x: Self) {
+    
+    inline def setAddNewItem(value: CallbackTo[Any]): Self = StObject.set(x, "addNewItem", value.toJsFn)
+    
+    inline def setApplyPreset(value: CallbackTo[Any]): Self = StObject.set(x, "applyPreset", value.toJsFn)
+    
+    inline def setDeleteFolder(value: CallbackTo[Any]): Self = StObject.set(x, "deleteFolder", value.toJsFn)
+    
+    inline def setDeleteItem(value: CallbackTo[Any]): Self = StObject.set(x, "deleteItem", value.toJsFn)
+    
+    inline def setExpandFolder(value: CallbackTo[Any]): Self = StObject.set(x, "expandFolder", value.toJsFn)
+    
+    inline def setExportItem(value: CallbackTo[Any]): Self = StObject.set(x, "exportItem", value.toJsFn)
+    
+    inline def setFindItemIndex(value: CallbackTo[Any]): Self = StObject.set(x, "findItemIndex", value.toJsFn)
+    
+    inline def setGetSelectedItems(value: CallbackTo[Any]): Self = StObject.set(x, "getSelectedItems", value.toJsFn)
+    
+    inline def setImportItem(value: CallbackTo[Any]): Self = StObject.set(x, "importItem", value.toJsFn)
+    
+    inline def setMoveToFolder(value: CallbackTo[Any]): Self = StObject.set(x, "moveToFolder", value.toJsFn)
+    
+    inline def setNewFolder(value: CallbackTo[Any]): Self = StObject.set(x, "newFolder", value.toJsFn)
+    
+    inline def setRenameItem(value: CallbackTo[Any]): Self = StObject.set(x, "renameItem", value.toJsFn)
+    
+    inline def setSelectItem(value: CallbackTo[Any]): Self = StObject.set(x, "selectItem", value.toJsFn)
+  }
 }
-

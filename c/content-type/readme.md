@@ -11,9 +11,9 @@ Create and parse HTTP Content-Type header
 | Full name          | content-type |
 | Keywords           | content-type, http, req, res, rfc7231 |
 | # releases         | 1 |
-| # dependents       | 487 |
-| # downloads        | 431791862 |
-| # stars            | 13 |
+| # dependents       | 0.0 |
+| # downloads        | 9.157822666666667E7 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/jshttp/content-type#readme)

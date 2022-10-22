@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.friday
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.saturday
 */
-trait WeeklySchedule extends js.Object
-
+trait WeeklySchedule extends StObject
 object WeeklySchedule {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def everyday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.everyday = this.cast("everyday")
-  @scala.inline
-  def friday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.friday = this.cast("friday")
-  @scala.inline
-  def monday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monday = this.cast("monday")
-  @scala.inline
-  def saturday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.saturday = this.cast("saturday")
-  @scala.inline
-  def sunday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sunday = this.cast("sunday")
-  @scala.inline
-  def thursday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.thursday = this.cast("thursday")
-  @scala.inline
-  def tuesday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tuesday = this.cast("tuesday")
-  @scala.inline
-  def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = this.cast("userDefined")
-  @scala.inline
-  def wednesday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.wednesday = this.cast("wednesday")
+  
+  inline def everyday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.everyday = "everyday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.everyday]
+  
+  inline def friday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.friday = "friday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.friday]
+  
+  inline def monday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.monday = "monday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.monday]
+  
+  inline def saturday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.saturday = "saturday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.saturday]
+  
+  inline def sunday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sunday = "sunday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sunday]
+  
+  inline def thursday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.thursday = "thursday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.thursday]
+  
+  inline def tuesday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.tuesday = "tuesday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.tuesday]
+  
+  inline def userDefined: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userDefined]
+  
+  inline def wednesday: typingsJapgolly.microsoftGraph.microsoftGraphStrings.wednesday = "wednesday".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.wednesday]
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.yar
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yarStrings {
-  @js.native
-  sealed trait Lax extends js.Object
   
   @js.native
-  sealed trait Strict extends js.Object
+  sealed trait Lax extends StObject
+  inline def Lax: Lax = "Lax".asInstanceOf[Lax]
   
-  @scala.inline
-  def Lax: Lax = "Lax".asInstanceOf[Lax]
-  @scala.inline
-  def Strict: Strict = "Strict".asInstanceOf[Strict]
+  @js.native
+  sealed trait Strict extends StObject
+  inline def Strict: Strict = "Strict".asInstanceOf[Strict]
 }
-

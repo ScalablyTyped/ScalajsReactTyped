@@ -1,18 +1,26 @@
 package typingsJapgolly.shipitUtils
 
+import typingsJapgolly.shipitUtils.anon.Typeofshipit
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("shipit-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def equalValues(value: js.Array[_]): Unit = js.native
-  def getShipit(gruntOrShipit: GruntOrShipit): Typeofshipit = js.native
-  def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: js.Array[String]): Typeofshipit = js.native
-  def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: EmptyCallback): Typeofshipit = js.native
-  def runTask(gruntOrShipit: js.Object): Unit = js.native
+object mod {
+  
+  @JSImport("shipit-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def equalValues(value: js.Array[Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equalValues")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def getShipit(gruntOrShipit: GruntOrShipit): Typeofshipit = ^.asInstanceOf[js.Dynamic].applyDynamic("getShipit")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Typeofshipit]
+  
+  inline def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: js.Array[String]): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  inline def registerTask(gruntOrShipit: GruntOrShipit, name: String, dependenciesOrTask: EmptyCallback): Typeofshipit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTask")(gruntOrShipit.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dependenciesOrTask.asInstanceOf[js.Any])).asInstanceOf[Typeofshipit]
+  
+  inline def runTask(gruntOrShipit: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runTask")(gruntOrShipit.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   type EmptyCallback = js.Function0[Unit]
+  
   type GruntOrShipit = Typeofshipit | js.Object
 }
-

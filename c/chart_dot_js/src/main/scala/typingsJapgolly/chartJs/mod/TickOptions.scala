@@ -1,85 +1,79 @@
 package typingsJapgolly.chartJs.mod
 
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.chartJs.chartJsBooleans.`false`
-import typingsJapgolly.chartJs.chartJsStrings.auto
-import typingsJapgolly.chartJs.chartJsStrings.data
-import typingsJapgolly.chartJs.chartJsStrings.labels
+import typingsJapgolly.chartJs.anon.Enabled
+import typingsJapgolly.chartJs.anon.PartialFontSpec
+import typingsJapgolly.chartJs.typesColorMod.Color
+import typingsJapgolly.chartJs.typesGeometricMod.ChartArea
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TickOptions extends NestedTickOptions {
-  var major: js.UndefOr[MajorTickOptions | `false`] = js.undefined
-  var minor: js.UndefOr[NestedTickOptions | `false`] = js.undefined
+@js.native
+trait TickOptions extends StObject {
+  
+  /**
+    * Color of label backdrops.
+    * @default 'rgba(255, 255, 255, 0.75)'
+    */
+  var backdropColor: Scriptable[Color, ScriptableScaleContext] = js.native
+  
+  /**
+    * Padding of tick backdrop.
+    * @default 2
+    */
+  var backdropPadding: Double | ChartArea = js.native
+  
+  def callback(tickValue: String, index: Double, ticks: js.Array[Tick]): js.UndefOr[String | (js.Array[Double | String]) | Double | Null] = js.native
+  /**
+    * Returns the string representation of the tick value as it should be displayed on the chart. See callback.
+    */
+  def callback(tickValue: Double, index: Double, ticks: js.Array[Tick]): js.UndefOr[String | (js.Array[Double | String]) | Double | Null] = js.native
+  
+  /**
+    * Color of tick
+    * @see Defaults.color
+    */
+  var color: ScriptableAndArray[Color, ScriptableScaleContext] = js.native
+  
+  /**
+    * If true, show tick labels.
+    * @default true
+    */
+  var display: Boolean = js.native
+  
+  /**
+    * see Fonts
+    */
+  var font: ScriptableAndScriptableOptions[PartialFontSpec, ScriptableScaleContext] = js.native
+  
+  var major: Enabled = js.native
+  
+  /**
+    * Sets the offset of the tick labels from the axis
+    */
+  var padding: Double = js.native
+  
+  /**
+    * If true, draw a background behind the tick labels.
+    * @default false
+    */
+  var showLabelBackdrop: Scriptable[Boolean, ScriptableScaleContext] = js.native
+  
+  /**
+    * The color of the stroke around the text.
+    * @default undefined
+    */
+  var textStrokeColor: Scriptable[Color, ScriptableScaleContext] = js.native
+  
+  /**
+    * Stroke width around the text.
+    * @default 0
+    */
+  var textStrokeWidth: Scriptable[Double, ScriptableScaleContext] = js.native
+  
+  /**
+    * z-index of tick layer. Useful when ticks are drawn on chart area. Values <= 0 are drawn under datasets, > 0 on top.
+    * @default 0
+    */
+  var z: Double = js.native
 }
-
-object TickOptions {
-  @scala.inline
-  def apply(
-    autoSkip: js.UndefOr[Boolean] = js.undefined,
-    autoSkipPadding: Int | Double = null,
-    backdropColor: ChartColor = null,
-    backdropPaddingX: Int | Double = null,
-    backdropPaddingY: Int | Double = null,
-    beginAtZero: js.UndefOr[Boolean] = js.undefined,
-    callback: (/* value */ js.Any, /* index */ js.Any, /* values */ js.Any) => CallbackTo[String | Double] = null,
-    display: js.UndefOr[Boolean] = js.undefined,
-    fontColor: ChartColor = null,
-    fontFamily: String = null,
-    fontSize: Int | Double = null,
-    fontStyle: String = null,
-    labelOffset: Int | Double = null,
-    lineHeight: Int | Double = null,
-    major: MajorTickOptions | `false` = null,
-    max: js.Any = null,
-    maxRotation: Int | Double = null,
-    maxTicksLimit: Int | Double = null,
-    min: js.Any = null,
-    minRotation: Int | Double = null,
-    minor: NestedTickOptions | `false` = null,
-    mirror: js.UndefOr[Boolean] = js.undefined,
-    padding: Int | Double = null,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    sampleSize: Int | Double = null,
-    showLabelBackdrop: js.UndefOr[Boolean] = js.undefined,
-    source: auto | data | labels = null,
-    stepSize: Int | Double = null,
-    suggestedMax: Int | Double = null,
-    suggestedMin: Int | Double = null
-  ): TickOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autoSkip)) __obj.updateDynamic("autoSkip")(autoSkip.asInstanceOf[js.Any])
-    if (autoSkipPadding != null) __obj.updateDynamic("autoSkipPadding")(autoSkipPadding.asInstanceOf[js.Any])
-    if (backdropColor != null) __obj.updateDynamic("backdropColor")(backdropColor.asInstanceOf[js.Any])
-    if (backdropPaddingX != null) __obj.updateDynamic("backdropPaddingX")(backdropPaddingX.asInstanceOf[js.Any])
-    if (backdropPaddingY != null) __obj.updateDynamic("backdropPaddingY")(backdropPaddingY.asInstanceOf[js.Any])
-    if (!js.isUndefined(beginAtZero)) __obj.updateDynamic("beginAtZero")(beginAtZero.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3((t0: /* value */ js.Any, t1: /* index */ js.Any, t2: /* values */ js.Any) => callback(t0, t1, t2).runNow()))
-    if (!js.isUndefined(display)) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
-    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxRotation != null) __obj.updateDynamic("maxRotation")(maxRotation.asInstanceOf[js.Any])
-    if (maxTicksLimit != null) __obj.updateDynamic("maxTicksLimit")(maxTicksLimit.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minRotation != null) __obj.updateDynamic("minRotation")(minRotation.asInstanceOf[js.Any])
-    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
-    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLabelBackdrop)) __obj.updateDynamic("showLabelBackdrop")(showLabelBackdrop.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (stepSize != null) __obj.updateDynamic("stepSize")(stepSize.asInstanceOf[js.Any])
-    if (suggestedMax != null) __obj.updateDynamic("suggestedMax")(suggestedMax.asInstanceOf[js.Any])
-    if (suggestedMin != null) __obj.updateDynamic("suggestedMin")(suggestedMin.asInstanceOf[js.Any])
-    __obj.asInstanceOf[TickOptions]
-  }
-}
-

@@ -9,223 +9,270 @@ import typingsJapgolly.coinbase.mod.SellStatus
 import typingsJapgolly.coinbase.mod.TransactionStatus
 import typingsJapgolly.coinbase.mod.TransactionType
 import typingsJapgolly.coinbase.mod.WithdrawalStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coinbaseStrings {
-  @js.native
-  sealed trait account extends ResourceType
   
   @js.native
-  sealed trait ach_bank_account extends PaymentMethodType
+  sealed trait account
+    extends StObject
+       with ResourceType
+  inline def account: account = "account".asInstanceOf[account]
   
   @js.native
-  sealed trait address extends ResourceType
+  sealed trait ach_bank_account
+    extends StObject
+       with PaymentMethodType
+  inline def ach_bank_account: ach_bank_account = "ach_bank_account".asInstanceOf[ach_bank_account]
   
   @js.native
-  sealed trait bank_wire extends PaymentMethodType
+  sealed trait address
+    extends StObject
+       with ResourceType
+  inline def address: address = "address".asInstanceOf[address]
+  
+  @js.native
+  sealed trait asc extends StObject
+  inline def asc: asc = "asc".asInstanceOf[asc]
+  
+  @js.native
+  sealed trait bank_wire
+    extends StObject
+       with PaymentMethodType
+  inline def bank_wire: bank_wire = "bank_wire".asInstanceOf[bank_wire]
   
   @js.native
   sealed trait buy
-    extends ResourceType
+    extends StObject
+       with ResourceType
        with TransactionType
+  inline def buy: buy = "buy".asInstanceOf[buy]
   
   @js.native
   sealed trait canceled
-    extends BuyStatus
+    extends StObject
+       with BuyStatus
        with DepositStatus
        with SellStatus
        with TransactionStatus
        with WithdrawalStatus
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
   sealed trait completed
-    extends BuyStatus
+    extends StObject
+       with BuyStatus
        with DepositStatus
        with SellStatus
        with TransactionStatus
        with WithdrawalStatus
+  inline def completed: completed = "completed".asInstanceOf[completed]
   
   @js.native
   sealed trait created
-    extends BuyStatus
+    extends StObject
+       with BuyStatus
        with DepositStatus
        with SellStatus
        with WithdrawalStatus
+  inline def created: created = "created".asInstanceOf[created]
   
   @js.native
-  sealed trait credit_card extends PaymentMethodType
+  sealed trait credit_card
+    extends StObject
+       with PaymentMethodType
+  inline def credit_card: credit_card = "credit_card".asInstanceOf[credit_card]
   
   @js.native
-  sealed trait deposit extends ResourceType
+  sealed trait deposit
+    extends StObject
+       with ResourceType
+  inline def deposit: deposit = "deposit".asInstanceOf[deposit]
   
   @js.native
-  sealed trait eft_bank_account extends PaymentMethodType
+  sealed trait desc extends StObject
+  inline def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait exchange_deposit extends TransactionType
+  sealed trait eft_bank_account
+    extends StObject
+       with PaymentMethodType
+  inline def eft_bank_account: eft_bank_account = "eft_bank_account".asInstanceOf[eft_bank_account]
   
   @js.native
-  sealed trait exchange_withdrawal extends TransactionType
+  sealed trait exchange_deposit
+    extends StObject
+       with TransactionType
+  inline def exchange_deposit: exchange_deposit = "exchange_deposit".asInstanceOf[exchange_deposit]
   
   @js.native
-  sealed trait expired extends TransactionStatus
+  sealed trait exchange_withdrawal
+    extends StObject
+       with TransactionType
+  inline def exchange_withdrawal: exchange_withdrawal = "exchange_withdrawal".asInstanceOf[exchange_withdrawal]
   
   @js.native
-  sealed trait failed extends TransactionStatus
+  sealed trait expired
+    extends StObject
+       with TransactionStatus
+  inline def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
-  sealed trait fiat extends AccountType
+  sealed trait failed
+    extends StObject
+       with TransactionStatus
+  inline def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait fiat_account extends PaymentMethodType
+  sealed trait fiat
+    extends StObject
+       with AccountType
+  inline def fiat: fiat = "fiat".asInstanceOf[fiat]
   
   @js.native
-  sealed trait fiat_deposit extends TransactionType
+  sealed trait fiat_account
+    extends StObject
+       with PaymentMethodType
+  inline def fiat_account: fiat_account = "fiat_account".asInstanceOf[fiat_account]
   
   @js.native
-  sealed trait fiat_withdrawal extends TransactionType
+  sealed trait fiat_deposit
+    extends StObject
+       with TransactionType
+  inline def fiat_deposit: fiat_deposit = "fiat_deposit".asInstanceOf[fiat_deposit]
   
   @js.native
-  sealed trait ideal_bank_account extends PaymentMethodType
+  sealed trait fiat_withdrawal
+    extends StObject
+       with TransactionType
+  inline def fiat_withdrawal: fiat_withdrawal = "fiat_withdrawal".asInstanceOf[fiat_withdrawal]
   
   @js.native
-  sealed trait interac extends PaymentMethodType
+  sealed trait ideal_bank_account
+    extends StObject
+       with PaymentMethodType
+  inline def ideal_bank_account: ideal_bank_account = "ideal_bank_account".asInstanceOf[ideal_bank_account]
   
   @js.native
-  sealed trait multisig extends AccountType
+  sealed trait interac
+    extends StObject
+       with PaymentMethodType
+  inline def interac: interac = "interac".asInstanceOf[interac]
   
   @js.native
-  sealed trait multisig_vault extends AccountType
+  sealed trait multisig
+    extends StObject
+       with AccountType
+  inline def multisig: multisig = "multisig".asInstanceOf[multisig]
   
   @js.native
-  sealed trait payment_method extends ResourceType
+  sealed trait multisig_vault
+    extends StObject
+       with AccountType
+  inline def multisig_vault: multisig_vault = "multisig_vault".asInstanceOf[multisig_vault]
   
   @js.native
-  sealed trait pending extends TransactionStatus
+  sealed trait payment_method
+    extends StObject
+       with ResourceType
+  inline def payment_method: payment_method = "payment_method".asInstanceOf[payment_method]
   
   @js.native
-  sealed trait request extends TransactionType
+  sealed trait pending
+    extends StObject
+       with TransactionStatus
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait secure3d_card extends PaymentMethodType
+  sealed trait request
+    extends StObject
+       with TransactionType
+  inline def request: request = "request".asInstanceOf[request]
+  
+  @js.native
+  sealed trait secure3d_card
+    extends StObject
+       with PaymentMethodType
+  inline def secure3d_card: secure3d_card = "secure3d_card".asInstanceOf[secure3d_card]
   
   @js.native
   sealed trait sell
-    extends ResourceType
+    extends StObject
+       with ResourceType
        with TransactionType
+  inline def sell: sell = "sell".asInstanceOf[sell]
   
   @js.native
-  sealed trait send extends TransactionType
+  sealed trait send
+    extends StObject
+       with TransactionType
+  inline def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait sepa_bank_account extends PaymentMethodType
+  sealed trait sepa_bank_account
+    extends StObject
+       with PaymentMethodType
+  inline def sepa_bank_account: sepa_bank_account = "sepa_bank_account".asInstanceOf[sepa_bank_account]
   
   @js.native
-  sealed trait transaction extends ResourceType
+  sealed trait trade
+    extends StObject
+       with TransactionType
+  inline def trade: trade = "trade".asInstanceOf[trade]
   
   @js.native
-  sealed trait transfer extends TransactionType
+  sealed trait transaction
+    extends StObject
+       with ResourceType
+  inline def transaction: transaction = "transaction".asInstanceOf[transaction]
   
   @js.native
-  sealed trait user extends ResourceType
+  sealed trait transfer
+    extends StObject
+       with TransactionType
+  inline def transfer: transfer = "transfer".asInstanceOf[transfer]
   
   @js.native
-  sealed trait vault extends AccountType
+  sealed trait user
+    extends StObject
+       with ResourceType
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
-  sealed trait vault_withdrawal extends TransactionType
+  sealed trait vault
+    extends StObject
+       with AccountType
+  inline def vault: vault = "vault".asInstanceOf[vault]
   
   @js.native
-  sealed trait waiting_for_clearing extends TransactionStatus
+  sealed trait vault_withdrawal
+    extends StObject
+       with TransactionType
+  inline def vault_withdrawal: vault_withdrawal = "vault_withdrawal".asInstanceOf[vault_withdrawal]
   
   @js.native
-  sealed trait waiting_for_signature extends TransactionStatus
+  sealed trait waiting_for_clearing
+    extends StObject
+       with TransactionStatus
+  inline def waiting_for_clearing: waiting_for_clearing = "waiting_for_clearing".asInstanceOf[waiting_for_clearing]
   
   @js.native
-  sealed trait wallet extends AccountType
+  sealed trait waiting_for_signature
+    extends StObject
+       with TransactionStatus
+  inline def waiting_for_signature: waiting_for_signature = "waiting_for_signature".asInstanceOf[waiting_for_signature]
   
   @js.native
-  sealed trait withdrawal extends ResourceType
+  sealed trait wallet
+    extends StObject
+       with AccountType
+  inline def wallet: wallet = "wallet".asInstanceOf[wallet]
   
-  @scala.inline
-  def account: account = "account".asInstanceOf[account]
-  @scala.inline
-  def ach_bank_account: ach_bank_account = "ach_bank_account".asInstanceOf[ach_bank_account]
-  @scala.inline
-  def address: address = "address".asInstanceOf[address]
-  @scala.inline
-  def bank_wire: bank_wire = "bank_wire".asInstanceOf[bank_wire]
-  @scala.inline
-  def buy: buy = "buy".asInstanceOf[buy]
-  @scala.inline
-  def canceled: canceled = "canceled".asInstanceOf[canceled]
-  @scala.inline
-  def completed: completed = "completed".asInstanceOf[completed]
-  @scala.inline
-  def created: created = "created".asInstanceOf[created]
-  @scala.inline
-  def credit_card: credit_card = "credit_card".asInstanceOf[credit_card]
-  @scala.inline
-  def deposit: deposit = "deposit".asInstanceOf[deposit]
-  @scala.inline
-  def eft_bank_account: eft_bank_account = "eft_bank_account".asInstanceOf[eft_bank_account]
-  @scala.inline
-  def exchange_deposit: exchange_deposit = "exchange_deposit".asInstanceOf[exchange_deposit]
-  @scala.inline
-  def exchange_withdrawal: exchange_withdrawal = "exchange_withdrawal".asInstanceOf[exchange_withdrawal]
-  @scala.inline
-  def expired: expired = "expired".asInstanceOf[expired]
-  @scala.inline
-  def failed: failed = "failed".asInstanceOf[failed]
-  @scala.inline
-  def fiat: fiat = "fiat".asInstanceOf[fiat]
-  @scala.inline
-  def fiat_account: fiat_account = "fiat_account".asInstanceOf[fiat_account]
-  @scala.inline
-  def fiat_deposit: fiat_deposit = "fiat_deposit".asInstanceOf[fiat_deposit]
-  @scala.inline
-  def fiat_withdrawal: fiat_withdrawal = "fiat_withdrawal".asInstanceOf[fiat_withdrawal]
-  @scala.inline
-  def ideal_bank_account: ideal_bank_account = "ideal_bank_account".asInstanceOf[ideal_bank_account]
-  @scala.inline
-  def interac: interac = "interac".asInstanceOf[interac]
-  @scala.inline
-  def multisig: multisig = "multisig".asInstanceOf[multisig]
-  @scala.inline
-  def multisig_vault: multisig_vault = "multisig_vault".asInstanceOf[multisig_vault]
-  @scala.inline
-  def payment_method: payment_method = "payment_method".asInstanceOf[payment_method]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def request: request = "request".asInstanceOf[request]
-  @scala.inline
-  def secure3d_card: secure3d_card = "secure3d_card".asInstanceOf[secure3d_card]
-  @scala.inline
-  def sell: sell = "sell".asInstanceOf[sell]
-  @scala.inline
-  def send: send = "send".asInstanceOf[send]
-  @scala.inline
-  def sepa_bank_account: sepa_bank_account = "sepa_bank_account".asInstanceOf[sepa_bank_account]
-  @scala.inline
-  def transaction: transaction = "transaction".asInstanceOf[transaction]
-  @scala.inline
-  def transfer: transfer = "transfer".asInstanceOf[transfer]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def vault: vault = "vault".asInstanceOf[vault]
-  @scala.inline
-  def vault_withdrawal: vault_withdrawal = "vault_withdrawal".asInstanceOf[vault_withdrawal]
-  @scala.inline
-  def waiting_for_clearing: waiting_for_clearing = "waiting_for_clearing".asInstanceOf[waiting_for_clearing]
-  @scala.inline
-  def waiting_for_signature: waiting_for_signature = "waiting_for_signature".asInstanceOf[waiting_for_signature]
-  @scala.inline
-  def wallet: wallet = "wallet".asInstanceOf[wallet]
-  @scala.inline
-  def withdrawal: withdrawal = "withdrawal".asInstanceOf[withdrawal]
+  @js.native
+  sealed trait withdrawal
+    extends StObject
+       with ResourceType
+  inline def withdrawal: withdrawal = "withdrawal".asInstanceOf[withdrawal]
 }
-

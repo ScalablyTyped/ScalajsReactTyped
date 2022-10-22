@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EnterFullScreenEventUIParam extends js.Object {
+trait EnterFullScreenEventUIParam extends StObject {
+  
   /**
-  	 * Get the url of the playing video.
-  	 */
+    * Get the url of the playing video.
+    */
   var source: js.UndefOr[String] = js.undefined
 }
-
 object EnterFullScreenEventUIParam {
-  @scala.inline
-  def apply(source: String = null): EnterFullScreenEventUIParam = {
+  
+  inline def apply(): EnterFullScreenEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnterFullScreenEventUIParam]
   }
+  
+  extension [Self <: EnterFullScreenEventUIParam](x: Self) {
+    
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+  }
 }
-

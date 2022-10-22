@@ -1,13 +1,14 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAutoSortByStateDef...
   */
-trait INxAutoSortByStateDef extends js.Object {
+trait INxAutoSortByStateDef extends StObject {
+  
   /**
     * This parameter applies to list objects.
     *
@@ -18,13 +19,15 @@ trait INxAutoSortByStateDef extends js.Object {
     */
   var qDisplayNumberOfRows: Double
 }
-
 object INxAutoSortByStateDef {
-  @scala.inline
-  def apply(qDisplayNumberOfRows: Double): INxAutoSortByStateDef = {
-    val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows.asInstanceOf[js.Any])
   
+  inline def apply(qDisplayNumberOfRows: Double): INxAutoSortByStateDef = {
+    val __obj = js.Dynamic.literal(qDisplayNumberOfRows = qDisplayNumberOfRows.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxAutoSortByStateDef]
   }
+  
+  extension [Self <: INxAutoSortByStateDef](x: Self) {
+    
+    inline def setQDisplayNumberOfRows(value: Double): Self = StObject.set(x, "qDisplayNumberOfRows", value.asInstanceOf[js.Any])
+  }
 }
-

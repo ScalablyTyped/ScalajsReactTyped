@@ -1,7 +1,7 @@
 
 # Scala.js typings for sisteransi
 
-Typings are for version 1.0.4
+Typings are for version 1.0.5
 
 ## Library description:
 ANSI escape codes for some terminal swag
@@ -10,10 +10,10 @@ ANSI escape codes for some terminal swag
 | ------------------ | :-------------: |
 | Full name          | sisteransi |
 | Keywords           | ansi, escape codes, escape, terminal, style |
-| # releases         | 10 |
-| # dependents       | 13 |
-| # downloads        | 177172034 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6.4788024333333336E7 |
+| # stars            | 37.0 |
 
 ## Links
 - [Homepage](https://github.com/terkelg/sisteransi#readme)

@@ -1,55 +1,53 @@
 package typingsJapgolly.vscode.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait IndentAction extends js.Object
-
+sealed trait IndentAction extends StObject
 @JSImport("vscode", "IndentAction")
 @js.native
-object IndentAction extends js.Object {
-  /**
-  		 * Insert new line and indent once (relative to the previous line's indentation).
-  		 */
-  @js.native
-  sealed trait Indent extends IndentAction
-  
-  /**
-  		 * Insert two new lines:
-  		 *  - the first one indented which will hold the cursor
-  		 *  - the second one at the same indentation level
-  		 */
-  @js.native
-  sealed trait IndentOutdent extends IndentAction
-  
-  /**
-  		 * Insert new line and copy the previous line's indentation.
-  		 */
-  @js.native
-  sealed trait None extends IndentAction
-  
-  /**
-  		 * Insert new line and outdent once (relative to the previous line's indentation).
-  		 */
-  @js.native
-  sealed trait Outdent extends IndentAction
+object IndentAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[IndentAction with Double] = js.native
-  /* 1 */ @js.native
-  object Indent extends TopLevel[Indent with Double]
+  def apply(value: Double): js.UndefOr[IndentAction & Double] = js.native
   
-  /* 2 */ @js.native
-  object IndentOutdent extends TopLevel[IndentOutdent with Double]
+  /**
+    * Insert new line and indent once (relative to the previous line's indentation).
+    */
+  @js.native
+  sealed trait Indent
+    extends StObject
+       with IndentAction
+  /* 1 */ val Indent: typingsJapgolly.vscode.mod.IndentAction.Indent & Double = js.native
   
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  /**
+    * Insert two new lines:
+    *  - the first one indented which will hold the cursor
+    *  - the second one at the same indentation level
+    */
+  @js.native
+  sealed trait IndentOutdent
+    extends StObject
+       with IndentAction
+  /* 2 */ val IndentOutdent: typingsJapgolly.vscode.mod.IndentAction.IndentOutdent & Double = js.native
   
-  /* 3 */ @js.native
-  object Outdent extends TopLevel[Outdent with Double]
+  /**
+    * Insert new line and copy the previous line's indentation.
+    */
+  @js.native
+  sealed trait None
+    extends StObject
+       with IndentAction
+  /* 0 */ val None: typingsJapgolly.vscode.mod.IndentAction.None & Double = js.native
   
+  /**
+    * Insert new line and outdent once (relative to the previous line's indentation).
+    */
+  @js.native
+  sealed trait Outdent
+    extends StObject
+       with IndentAction
+  /* 3 */ val Outdent: typingsJapgolly.vscode.mod.IndentAction.Outdent & Double = js.native
 }
-

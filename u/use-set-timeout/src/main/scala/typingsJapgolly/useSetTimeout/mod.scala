@@ -1,12 +1,14 @@
 package typingsJapgolly.useSetTimeout
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("use-set-timeout", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(fn: js.Function0[Unit], delay: Double): Unit = js.native
+object mod {
+  
+  @JSImport("use-set-timeout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(fn: js.Function0[Unit], delay: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(fn.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

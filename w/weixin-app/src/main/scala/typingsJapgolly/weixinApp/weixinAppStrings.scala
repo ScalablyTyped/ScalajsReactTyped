@@ -15,496 +15,562 @@ import typingsJapgolly.weixinApp.wx.TransitionEventType
 import typingsJapgolly.weixinApp.wx.VideoSourceType
 import typingsJapgolly.weixinApp.wx.networkType
 import typingsJapgolly.weixinApp.wx.scanType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object weixinAppStrings {
-  @js.native
-  sealed trait `2g` extends networkType
   
   @js.native
-  sealed trait `3g` extends networkType
+  sealed trait `100` extends StObject
+  inline def `100`: `100` = "100".asInstanceOf[`100`]
   
   @js.native
-  sealed trait `4g` extends networkType
+  sealed trait `200` extends StObject
+  inline def `200`: `200` = "200".asInstanceOf[`200`]
   
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait `2g`
+    extends StObject
+       with networkType
+  inline def `2g`: `2g` = "2g".asInstanceOf[`2g`]
   
   @js.native
-  sealed trait Component extends js.Object
+  sealed trait `300` extends StObject
+  inline def `300`: `300` = "300".asInstanceOf[`300`]
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait `3g`
+    extends StObject
+       with networkType
+  inline def `3g`: `3g` = "3g".asInstanceOf[`3g`]
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait `400` extends StObject
+  inline def `400`: `400` = "400".asInstanceOf[`400`]
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait `4g`
+    extends StObject
+       with networkType
+  inline def `4g`: `4g` = "4g".asInstanceOf[`4g`]
   
   @js.native
-  sealed trait `HMAC-SHA256` extends PaymentSignType
+  sealed trait `500` extends StObject
+  inline def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait MD5 extends PaymentSignType
+  sealed trait `600` extends StObject
+  inline def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
-  sealed trait Numbersign000000 extends js.Object
+  sealed trait `700` extends StObject
+  inline def `700`: `700` = "700".asInstanceOf[`700`]
   
   @js.native
-  sealed trait Numbersignffffff extends js.Object
+  sealed trait `800` extends StObject
+  inline def `800`: `800` = "800".asInstanceOf[`800`]
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait `900` extends StObject
+  inline def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait CONNECT extends StObject
+  inline def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait DELETE extends StObject
+  inline def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait RecordPropsDefinition extends js.Object
+  sealed trait GET extends StObject
+  inline def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait HEAD extends StObject
+  inline def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  
+  @js.native
+  sealed trait `HMAC-SHA256`
+    extends StObject
+       with PaymentSignType
+  inline def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
+  
+  @js.native
+  sealed trait MD5
+    extends StObject
+       with PaymentSignType
+  inline def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  
+  @js.native
+  sealed trait Numbersign000000 extends StObject
+  inline def Numbersign000000: Numbersign000000 = "#000000".asInstanceOf[Numbersign000000]
+  
+  @js.native
+  sealed trait Numbersignffffff extends StObject
+  inline def Numbersignffffff: Numbersignffffff = "#ffffff".asInstanceOf[Numbersignffffff]
+  
+  @js.native
+  sealed trait OPTIONS extends StObject
+  inline def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  
+  @js.native
+  sealed trait POST extends StObject
+  inline def POST: POST = "POST".asInstanceOf[POST]
+  
+  @js.native
+  sealed trait PUT extends StObject
+  inline def PUT: PUT = "PUT".asInstanceOf[PUT]
+  
+  @js.native
+  sealed trait TRACE extends StObject
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait album
-    extends ImageSourceType
+    extends StObject
+       with ImageSourceType
        with VideoSourceType
+  inline def album: album = "album".asInstanceOf[album]
   
   @js.native
-  sealed trait ancestor extends js.Object
+  sealed trait ancestor extends StObject
+  inline def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
   
   @js.native
   sealed trait animationend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
+  inline def animationend: animationend = "animationend".asInstanceOf[animationend]
   
   @js.native
   sealed trait animationiteration
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
+  inline def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
   
   @js.native
   sealed trait animationstart
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
+  inline def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
   
   @js.native
-  sealed trait back extends CameraDevice
+  sealed trait back
+    extends StObject
+       with CameraDevice
+  inline def back: back = "back".asInstanceOf[back]
   
   @js.native
-  sealed trait barCode extends scanType
+  sealed trait barCode
+    extends StObject
+       with scanType
+  inline def barCode: barCode = "barCode".asInstanceOf[barCode]
   
   @js.native
-  sealed trait bevel extends LineJoinType
+  sealed trait bevel
+    extends StObject
+       with LineJoinType
+  inline def bevel: bevel = "bevel".asInstanceOf[bevel]
   
   @js.native
-  sealed trait butt extends LineCapType
+  sealed trait bold extends StObject
+  inline def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait butt
+    extends StObject
+       with LineCapType
+  inline def butt: butt = "butt".asInstanceOf[butt]
+  
+  @js.native
+  sealed trait button extends StObject
+  inline def button: button = "button".asInstanceOf[button]
   
   @js.native
   sealed trait camera
-    extends ImageSourceType
+    extends StObject
+       with ImageSourceType
        with VideoSourceType
+  inline def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center extends StObject
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait child extends js.Object
+  sealed trait child extends StObject
+  inline def child: child = "child".asInstanceOf[child]
   
   @js.native
-  sealed trait compressed extends ImageSizeType
+  sealed trait compressed
+    extends StObject
+       with ImageSizeType
+  inline def compressed: compressed = "compressed".asInstanceOf[compressed]
   
   @js.native
-  sealed trait descendant extends js.Object
+  sealed trait descendant extends StObject
+  inline def descendant: descendant = "descendant".asInstanceOf[descendant]
   
   @js.native
-  sealed trait doc extends js.Object
+  sealed trait doc extends StObject
+  inline def doc: doc = "doc".asInstanceOf[doc]
   
   @js.native
-  sealed trait docx extends js.Object
+  sealed trait docx extends StObject
+  inline def docx: docx = "docx".asInstanceOf[docx]
   
   @js.native
-  sealed trait ease extends TimingFunction
+  sealed trait ease
+    extends StObject
+       with TimingFunction
+  inline def ease: ease = "ease".asInstanceOf[ease]
   
   @js.native
-  sealed trait `ease-in` extends TimingFunction
+  sealed trait `ease-in`
+    extends StObject
+       with TimingFunction
+  inline def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
   
   @js.native
-  sealed trait `ease-in-out` extends TimingFunction
+  sealed trait `ease-in-out`
+    extends StObject
+       with TimingFunction
+  inline def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
   
   @js.native
-  sealed trait `ease-out` extends TimingFunction
+  sealed trait `ease-out`
+    extends StObject
+       with TimingFunction
+  inline def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
   
   @js.native
-  sealed trait easeIn extends js.Object
+  sealed trait easeIn extends StObject
+  inline def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
   
   @js.native
-  sealed trait easeInOut extends js.Object
+  sealed trait easeInOut extends StObject
+  inline def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
   
   @js.native
-  sealed trait easeOut extends js.Object
+  sealed trait easeOut extends StObject
+  inline def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
   
   @js.native
-  sealed trait facial extends AuthModes
+  sealed trait facial
+    extends StObject
+       with AuthModes
+  inline def facial: facial = "facial".asInstanceOf[facial]
   
   @js.native
-  sealed trait fingerPrint extends AuthModes
+  sealed trait fingerPrint
+    extends StObject
+       with AuthModes
+  inline def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
   
   @js.native
-  sealed trait form extends EventType
+  sealed trait form
+    extends StObject
+       with EventType
+  inline def form: form = "form".asInstanceOf[form]
   
   @js.native
-  sealed trait front extends CameraDevice
+  sealed trait front
+    extends StObject
+       with CameraDevice
+  inline def front: front = "front".asInstanceOf[front]
   
   @js.native
-  sealed trait gcj02 extends js.Object
+  sealed trait gcj02 extends StObject
+  inline def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
   
   @js.native
-  sealed trait input extends EventType
+  sealed trait inherit extends StObject
+  inline def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait input
+    extends StObject
+       with EventType
+  inline def input: input = "input".asInstanceOf[input]
   
   @js.native
-  sealed trait linear extends TimingFunction
+  sealed trait italic extends StObject
+  inline def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait longpress extends EventType
+  sealed trait linear
+    extends StObject
+       with TimingFunction
+  inline def linear: linear = "linear".asInstanceOf[linear]
   
   @js.native
-  sealed trait menu extends js.Object
+  sealed trait loading extends StObject
+  inline def loading: loading = "loading".asInstanceOf[loading]
   
   @js.native
-  sealed trait miter extends LineJoinType
+  sealed trait longpress
+    extends StObject
+       with EventType
+  inline def longpress: longpress = "longpress".asInstanceOf[longpress]
   
   @js.native
-  sealed trait none extends networkType
+  sealed trait menu extends StObject
+  inline def menu: menu = "menu".asInstanceOf[menu]
   
   @js.native
-  sealed trait ok extends js.Object
+  sealed trait miter
+    extends StObject
+       with LineJoinType
+  inline def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait original extends ImageSizeType
+  sealed trait native extends StObject
+  inline def native: native = "native".asInstanceOf[native]
   
   @js.native
-  sealed trait parent extends js.Object
+  sealed trait none
+    extends StObject
+       with networkType
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait pdf extends js.Object
+  sealed trait normal extends StObject
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait ppt extends js.Object
+  sealed trait oblique extends StObject
+  inline def oblique: oblique = "oblique".asInstanceOf[oblique]
   
   @js.native
-  sealed trait pptx extends js.Object
+  sealed trait ok extends StObject
+  inline def ok: ok = "ok".asInstanceOf[ok]
   
   @js.native
-  sealed trait qrCode extends scanType
+  sealed trait original
+    extends StObject
+       with ImageSizeType
+  inline def original: original = "original".asInstanceOf[original]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait parent extends StObject
+  inline def parent: parent = "parent".asInstanceOf[parent]
+  
+  @js.native
+  sealed trait pdf extends StObject
+  inline def pdf: pdf = "pdf".asInstanceOf[pdf]
+  
+  @js.native
+  sealed trait ppt extends StObject
+  inline def ppt: ppt = "ppt".asInstanceOf[ppt]
+  
+  @js.native
+  sealed trait pptx extends StObject
+  inline def pptx: pptx = "pptx".asInstanceOf[pptx]
+  
+  @js.native
+  sealed trait qrCode
+    extends StObject
+       with scanType
+  inline def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
+  
+  @js.native
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait round
-    extends LineCapType
+    extends StObject
+       with LineCapType
        with LineJoinType
+  inline def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait scopeDotaddress extends Scope
+  sealed trait scopeDotaddress
+    extends StObject
+       with Scope
+  inline def scopeDotaddress: scopeDotaddress = "scope.address".asInstanceOf[scopeDotaddress]
   
   @js.native
-  sealed trait scopeDotcamera extends Scope
+  sealed trait scopeDotcamera
+    extends StObject
+       with Scope
+  inline def scopeDotcamera: scopeDotcamera = "scope.camera".asInstanceOf[scopeDotcamera]
   
   @js.native
-  sealed trait scopeDotinvoice extends Scope
+  sealed trait scopeDotinvoice
+    extends StObject
+       with Scope
+  inline def scopeDotinvoice: scopeDotinvoice = "scope.invoice".asInstanceOf[scopeDotinvoice]
   
   @js.native
-  sealed trait scopeDotinvoiceTitle extends Scope
+  sealed trait scopeDotinvoiceTitle
+    extends StObject
+       with Scope
+  inline def scopeDotinvoiceTitle: scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDotinvoiceTitle]
   
   @js.native
-  sealed trait scopeDotrecord extends Scope
+  sealed trait scopeDotrecord
+    extends StObject
+       with Scope
+  inline def scopeDotrecord: scopeDotrecord = "scope.record".asInstanceOf[scopeDotrecord]
   
   @js.native
-  sealed trait scopeDotuserInfo extends Scope
+  sealed trait scopeDotuserInfo
+    extends StObject
+       with Scope
+  inline def scopeDotuserInfo: scopeDotuserInfo = "scope.userInfo".asInstanceOf[scopeDotuserInfo]
   
   @js.native
-  sealed trait scopeDotuserLocation extends Scope
+  sealed trait scopeDotuserLocation
+    extends StObject
+       with Scope
+  inline def scopeDotuserLocation: scopeDotuserLocation = "scope.userLocation".asInstanceOf[scopeDotuserLocation]
   
   @js.native
-  sealed trait scopeDotuserLocationBackground extends Scope
+  sealed trait scopeDotuserLocationBackground
+    extends StObject
+       with Scope
+  inline def scopeDotuserLocationBackground: scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[scopeDotuserLocationBackground]
   
   @js.native
-  sealed trait scopeDotwerun extends Scope
+  sealed trait scopeDotwerun
+    extends StObject
+       with Scope
+  inline def scopeDotwerun: scopeDotwerun = "scope.werun".asInstanceOf[scopeDotwerun]
   
   @js.native
-  sealed trait scopeDotwritePhotosAlbum extends Scope
+  sealed trait scopeDotwritePhotosAlbum
+    extends StObject
+       with Scope
+  inline def scopeDotwritePhotosAlbum: scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDotwritePhotosAlbum]
   
   @js.native
-  sealed trait scroll extends EventType
+  sealed trait scroll
+    extends StObject
+       with EventType
+  inline def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait speech extends AuthModes
+  sealed trait `small-caps` extends StObject
+  inline def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   
   @js.native
-  sealed trait square extends LineCapType
+  sealed trait speech
+    extends StObject
+       with AuthModes
+  inline def speech: speech = "speech".asInstanceOf[speech]
   
   @js.native
-  sealed trait `step-end` extends TimingFunction
+  sealed trait square
+    extends StObject
+       with LineCapType
+  inline def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait `step-start` extends TimingFunction
+  sealed trait `step-end`
+    extends StObject
+       with TimingFunction
+  inline def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
   
   @js.native
-  sealed trait submit extends EventType
+  sealed trait `step-start`
+    extends StObject
+       with TimingFunction
+  inline def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait submit
+    extends StObject
+       with EventType
+  inline def submit: submit = "submit".asInstanceOf[submit]
+  
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait tap
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def tap: tap = "tap".asInstanceOf[tap]
   
   @js.native
   sealed trait touchcancel
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
   
   @js.native
   sealed trait touchend
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def touchend: touchend = "touchend".asInstanceOf[touchend]
   
   @js.native
   sealed trait touchforcechange
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def touchforcechange: touchforcechange = "touchforcechange".asInstanceOf[touchforcechange]
   
   @js.native
   sealed trait touchmove
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
   
   @js.native
   sealed trait touchstart
-    extends EventType
+    extends StObject
+       with EventType
        with TouchEventType
+  inline def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
   
   @js.native
   sealed trait transitionend
-    extends EventType
+    extends StObject
+       with EventType
        with TransitionEventType
+  inline def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
   
   @js.native
-  sealed trait unknown extends networkType
+  sealed trait unknown
+    extends StObject
+       with networkType
+  inline def unknown: unknown = "unknown".asInstanceOf[unknown]
   
   @js.native
-  sealed trait wgs84 extends js.Object
+  sealed trait webview extends StObject
+  inline def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native
-  sealed trait wifi extends networkType
+  sealed trait wgs84 extends StObject
+  inline def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
   
   @js.native
-  sealed trait xls extends js.Object
+  sealed trait wifi
+    extends StObject
+       with networkType
+  inline def wifi: wifi = "wifi".asInstanceOf[wifi]
   
   @js.native
-  sealed trait xlsx extends js.Object
+  sealed trait xls extends StObject
+  inline def xls: xls = "xls".asInstanceOf[xls]
   
-  @scala.inline
-  def `2g`: `2g` = "2g".asInstanceOf[`2g`]
-  @scala.inline
-  def `3g`: `3g` = "3g".asInstanceOf[`3g`]
-  @scala.inline
-  def `4g`: `4g` = "4g".asInstanceOf[`4g`]
-  @scala.inline
-  def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
-  @scala.inline
-  def Component: Component = "Component".asInstanceOf[Component]
-  @scala.inline
-  def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
-  @scala.inline
-  def GET: GET = "GET".asInstanceOf[GET]
-  @scala.inline
-  def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
-  @scala.inline
-  def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
-  @scala.inline
-  def MD5: MD5 = "MD5".asInstanceOf[MD5]
-  @scala.inline
-  def Numbersign000000: Numbersign000000 = "#000000".asInstanceOf[Numbersign000000]
-  @scala.inline
-  def Numbersignffffff: Numbersignffffff = "#ffffff".asInstanceOf[Numbersignffffff]
-  @scala.inline
-  def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
-  @scala.inline
-  def POST: POST = "POST".asInstanceOf[POST]
-  @scala.inline
-  def PUT: PUT = "PUT".asInstanceOf[PUT]
-  @scala.inline
-  def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
-  @scala.inline
-  def album: album = "album".asInstanceOf[album]
-  @scala.inline
-  def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
-  @scala.inline
-  def animationend: animationend = "animationend".asInstanceOf[animationend]
-  @scala.inline
-  def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
-  @scala.inline
-  def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
-  @scala.inline
-  def back: back = "back".asInstanceOf[back]
-  @scala.inline
-  def barCode: barCode = "barCode".asInstanceOf[barCode]
-  @scala.inline
-  def bevel: bevel = "bevel".asInstanceOf[bevel]
-  @scala.inline
-  def butt: butt = "butt".asInstanceOf[butt]
-  @scala.inline
-  def button: button = "button".asInstanceOf[button]
-  @scala.inline
-  def camera: camera = "camera".asInstanceOf[camera]
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
-  @scala.inline
-  def child: child = "child".asInstanceOf[child]
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
-  @scala.inline
-  def descendant: descendant = "descendant".asInstanceOf[descendant]
-  @scala.inline
-  def doc: doc = "doc".asInstanceOf[doc]
-  @scala.inline
-  def docx: docx = "docx".asInstanceOf[docx]
-  @scala.inline
-  def ease: ease = "ease".asInstanceOf[ease]
-  @scala.inline
-  def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
-  @scala.inline
-  def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
-  @scala.inline
-  def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
-  @scala.inline
-  def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
-  @scala.inline
-  def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
-  @scala.inline
-  def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
-  @scala.inline
-  def facial: facial = "facial".asInstanceOf[facial]
-  @scala.inline
-  def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
-  @scala.inline
-  def form: form = "form".asInstanceOf[form]
-  @scala.inline
-  def front: front = "front".asInstanceOf[front]
-  @scala.inline
-  def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
-  @scala.inline
-  def input: input = "input".asInstanceOf[input]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def linear: linear = "linear".asInstanceOf[linear]
-  @scala.inline
-  def loading: loading = "loading".asInstanceOf[loading]
-  @scala.inline
-  def longpress: longpress = "longpress".asInstanceOf[longpress]
-  @scala.inline
-  def menu: menu = "menu".asInstanceOf[menu]
-  @scala.inline
-  def miter: miter = "miter".asInstanceOf[miter]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def ok: ok = "ok".asInstanceOf[ok]
-  @scala.inline
-  def original: original = "original".asInstanceOf[original]
-  @scala.inline
-  def parent: parent = "parent".asInstanceOf[parent]
-  @scala.inline
-  def pdf: pdf = "pdf".asInstanceOf[pdf]
-  @scala.inline
-  def ppt: ppt = "ppt".asInstanceOf[ppt]
-  @scala.inline
-  def pptx: pptx = "pptx".asInstanceOf[pptx]
-  @scala.inline
-  def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def round: round = "round".asInstanceOf[round]
-  @scala.inline
-  def scopeDotaddress: scopeDotaddress = "scope.address".asInstanceOf[scopeDotaddress]
-  @scala.inline
-  def scopeDotcamera: scopeDotcamera = "scope.camera".asInstanceOf[scopeDotcamera]
-  @scala.inline
-  def scopeDotinvoice: scopeDotinvoice = "scope.invoice".asInstanceOf[scopeDotinvoice]
-  @scala.inline
-  def scopeDotinvoiceTitle: scopeDotinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDotinvoiceTitle]
-  @scala.inline
-  def scopeDotrecord: scopeDotrecord = "scope.record".asInstanceOf[scopeDotrecord]
-  @scala.inline
-  def scopeDotuserInfo: scopeDotuserInfo = "scope.userInfo".asInstanceOf[scopeDotuserInfo]
-  @scala.inline
-  def scopeDotuserLocation: scopeDotuserLocation = "scope.userLocation".asInstanceOf[scopeDotuserLocation]
-  @scala.inline
-  def scopeDotuserLocationBackground: scopeDotuserLocationBackground = "scope.userLocationBackground".asInstanceOf[scopeDotuserLocationBackground]
-  @scala.inline
-  def scopeDotwerun: scopeDotwerun = "scope.werun".asInstanceOf[scopeDotwerun]
-  @scala.inline
-  def scopeDotwritePhotosAlbum: scopeDotwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDotwritePhotosAlbum]
-  @scala.inline
-  def scroll: scroll = "scroll".asInstanceOf[scroll]
-  @scala.inline
-  def speech: speech = "speech".asInstanceOf[speech]
-  @scala.inline
-  def square: square = "square".asInstanceOf[square]
-  @scala.inline
-  def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
-  @scala.inline
-  def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
-  @scala.inline
-  def submit: submit = "submit".asInstanceOf[submit]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
-  @scala.inline
-  def tap: tap = "tap".asInstanceOf[tap]
-  @scala.inline
-  def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
-  @scala.inline
-  def touchend: touchend = "touchend".asInstanceOf[touchend]
-  @scala.inline
-  def touchforcechange: touchforcechange = "touchforcechange".asInstanceOf[touchforcechange]
-  @scala.inline
-  def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
-  @scala.inline
-  def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
-  @scala.inline
-  def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
-  @scala.inline
-  def unknown: unknown = "unknown".asInstanceOf[unknown]
-  @scala.inline
-  def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
-  @scala.inline
-  def wifi: wifi = "wifi".asInstanceOf[wifi]
-  @scala.inline
-  def xls: xls = "xls".asInstanceOf[xls]
-  @scala.inline
-  def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
+  @js.native
+  sealed trait xlsx extends StObject
+  inline def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
 }
-

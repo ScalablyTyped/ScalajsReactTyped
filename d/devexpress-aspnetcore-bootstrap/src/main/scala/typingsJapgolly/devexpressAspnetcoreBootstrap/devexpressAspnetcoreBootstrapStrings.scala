@@ -1,659 +1,528 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object devexpressAspnetcoreBootstrapStrings {
-  @js.native
-  sealed trait activeTabChanged extends js.Object
   
   @js.native
-  sealed trait activeTabChanging extends js.Object
+  sealed trait activeTabChanged extends StObject
+  inline def activeTabChanged: activeTabChanged = "activeTabChanged".asInstanceOf[activeTabChanged]
   
   @js.native
-  sealed trait activeViewChanged extends js.Object
+  sealed trait activeTabChanging extends StObject
+  inline def activeTabChanging: activeTabChanging = "activeTabChanging".asInstanceOf[activeTabChanging]
   
   @js.native
-  sealed trait activeViewChanging extends js.Object
+  sealed trait activeViewChanged extends StObject
+  inline def activeViewChanged: activeViewChanged = "activeViewChanged".asInstanceOf[activeViewChanged]
   
   @js.native
-  sealed trait afterResizing extends js.Object
+  sealed trait activeViewChanging extends StObject
+  inline def activeViewChanging: activeViewChanging = "activeViewChanging".asInstanceOf[activeViewChanging]
   
   @js.native
-  sealed trait appointmentClick extends js.Object
+  sealed trait afterResizing extends StObject
+  inline def afterResizing: afterResizing = "afterResizing".asInstanceOf[afterResizing]
   
   @js.native
-  sealed trait appointmentDeleting extends js.Object
+  sealed trait appointmentClick extends StObject
+  inline def appointmentClick: appointmentClick = "appointmentClick".asInstanceOf[appointmentClick]
   
   @js.native
-  sealed trait appointmentDoubleClick extends js.Object
+  sealed trait appointmentDeleting extends StObject
+  inline def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
   
   @js.native
-  sealed trait appointmentDrag extends js.Object
+  sealed trait appointmentDoubleClick extends StObject
+  inline def appointmentDoubleClick: appointmentDoubleClick = "appointmentDoubleClick".asInstanceOf[appointmentDoubleClick]
   
   @js.native
-  sealed trait appointmentDrop extends js.Object
+  sealed trait appointmentDrag extends StObject
+  inline def appointmentDrag: appointmentDrag = "appointmentDrag".asInstanceOf[appointmentDrag]
   
   @js.native
-  sealed trait appointmentResize extends js.Object
+  sealed trait appointmentDrop extends StObject
+  inline def appointmentDrop: appointmentDrop = "appointmentDrop".asInstanceOf[appointmentDrop]
   
   @js.native
-  sealed trait appointmentResizing extends js.Object
+  sealed trait appointmentResize extends StObject
+  inline def appointmentResize: appointmentResize = "appointmentResize".asInstanceOf[appointmentResize]
   
   @js.native
-  sealed trait appointmentToolTipShowing extends js.Object
+  sealed trait appointmentResizing extends StObject
+  inline def appointmentResizing: appointmentResizing = "appointmentResizing".asInstanceOf[appointmentResizing]
   
   @js.native
-  sealed trait appointmentsSelectionChanged extends js.Object
+  sealed trait appointmentToolTipShowing extends StObject
+  inline def appointmentToolTipShowing: appointmentToolTipShowing = "appointmentToolTipShowing".asInstanceOf[appointmentToolTipShowing]
   
   @js.native
-  sealed trait argumentAxisClick extends js.Object
+  sealed trait appointmentsSelectionChanged extends StObject
+  inline def appointmentsSelectionChanged: appointmentsSelectionChanged = "appointmentsSelectionChanged".asInstanceOf[appointmentsSelectionChanged]
   
   @js.native
-  sealed trait batchEditCardDeleting extends js.Object
+  sealed trait argumentAxisClick extends StObject
+  inline def argumentAxisClick: argumentAxisClick = "argumentAxisClick".asInstanceOf[argumentAxisClick]
   
   @js.native
-  sealed trait batchEditCardInserting extends js.Object
+  sealed trait batchEditCardDeleting extends StObject
+  inline def batchEditCardDeleting: batchEditCardDeleting = "batchEditCardDeleting".asInstanceOf[batchEditCardDeleting]
   
   @js.native
-  sealed trait batchEditCardValidating extends js.Object
+  sealed trait batchEditCardInserting extends StObject
+  inline def batchEditCardInserting: batchEditCardInserting = "batchEditCardInserting".asInstanceOf[batchEditCardInserting]
   
   @js.native
-  sealed trait batchEditChangesCanceling extends js.Object
+  sealed trait batchEditCardValidating extends StObject
+  inline def batchEditCardValidating: batchEditCardValidating = "batchEditCardValidating".asInstanceOf[batchEditCardValidating]
   
   @js.native
-  sealed trait batchEditChangesSaving extends js.Object
+  sealed trait batchEditChangesCanceling extends StObject
+  inline def batchEditChangesCanceling: batchEditChangesCanceling = "batchEditChangesCanceling".asInstanceOf[batchEditChangesCanceling]
   
   @js.native
-  sealed trait batchEditConfirmShowing extends js.Object
+  sealed trait batchEditChangesSaving extends StObject
+  inline def batchEditChangesSaving: batchEditChangesSaving = "batchEditChangesSaving".asInstanceOf[batchEditChangesSaving]
   
   @js.native
-  sealed trait batchEditEndEditing extends js.Object
+  sealed trait batchEditConfirmShowing extends StObject
+  inline def batchEditConfirmShowing: batchEditConfirmShowing = "batchEditConfirmShowing".asInstanceOf[batchEditConfirmShowing]
   
   @js.native
-  sealed trait batchEditRowDeleting extends js.Object
+  sealed trait batchEditEndEditing extends StObject
+  inline def batchEditEndEditing: batchEditEndEditing = "batchEditEndEditing".asInstanceOf[batchEditEndEditing]
   
   @js.native
-  sealed trait batchEditRowInserting extends js.Object
+  sealed trait batchEditRowDeleting extends StObject
+  inline def batchEditRowDeleting: batchEditRowDeleting = "batchEditRowDeleting".asInstanceOf[batchEditRowDeleting]
   
   @js.native
-  sealed trait batchEditRowValidating extends js.Object
+  sealed trait batchEditRowInserting extends StObject
+  inline def batchEditRowInserting: batchEditRowInserting = "batchEditRowInserting".asInstanceOf[batchEditRowInserting]
   
   @js.native
-  sealed trait batchEditStartEditing extends js.Object
+  sealed trait batchEditRowValidating extends StObject
+  inline def batchEditRowValidating: batchEditRowValidating = "batchEditRowValidating".asInstanceOf[batchEditRowValidating]
   
   @js.native
-  sealed trait batchEditTemplateCellFocused extends js.Object
+  sealed trait batchEditStartEditing extends StObject
+  inline def batchEditStartEditing: batchEditStartEditing = "batchEditStartEditing".asInstanceOf[batchEditStartEditing]
   
   @js.native
-  sealed trait beforeResizing extends js.Object
+  sealed trait batchEditTemplateCellFocused extends StObject
+  inline def batchEditTemplateCellFocused: batchEditTemplateCellFocused = "batchEditTemplateCellFocused".asInstanceOf[batchEditTemplateCellFocused]
   
   @js.native
-  sealed trait beginCallback extends js.Object
+  sealed trait beforeResizing extends StObject
+  inline def beforeResizing: beforeResizing = "beforeResizing".asInstanceOf[beforeResizing]
   
   @js.native
-  sealed trait buttonClick extends js.Object
+  sealed trait beginCallback extends StObject
+  inline def beginCallback: beginCallback = "beginCallback".asInstanceOf[beginCallback]
   
   @js.native
-  sealed trait calendarCustomDisabledDate extends js.Object
+  sealed trait buttonClick extends StObject
+  inline def buttonClick: buttonClick = "buttonClick".asInstanceOf[buttonClick]
   
   @js.native
-  sealed trait callbackError extends js.Object
+  sealed trait calendarCustomDisabledDate extends StObject
+  inline def calendarCustomDisabledDate: calendarCustomDisabledDate = "calendarCustomDisabledDate".asInstanceOf[calendarCustomDisabledDate]
   
   @js.native
-  sealed trait cardClick extends js.Object
+  sealed trait callbackError extends StObject
+  inline def callbackError: callbackError = "callbackError".asInstanceOf[callbackError]
   
   @js.native
-  sealed trait cardDblClick extends js.Object
+  sealed trait cardClick extends StObject
+  inline def cardClick: cardClick = "cardClick".asInstanceOf[cardClick]
   
   @js.native
-  sealed trait cardFocusing extends js.Object
+  sealed trait cardDblClick extends StObject
+  inline def cardDblClick: cardDblClick = "cardDblClick".asInstanceOf[cardDblClick]
   
   @js.native
-  sealed trait cellClick extends js.Object
+  sealed trait cardFocusing extends StObject
+  inline def cardFocusing: cardFocusing = "cardFocusing".asInstanceOf[cardFocusing]
   
   @js.native
-  sealed trait cellDoubleClick extends js.Object
+  sealed trait cellClick extends StObject
+  inline def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
   
   @js.native
-  sealed trait checkedChanged extends js.Object
+  sealed trait cellDoubleClick extends StObject
+  inline def cellDoubleClick: cellDoubleClick = "cellDoubleClick".asInstanceOf[cellDoubleClick]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait checkedChanged extends StObject
+  inline def checkedChanged: checkedChanged = "checkedChanged".asInstanceOf[checkedChanged]
   
   @js.native
-  sealed trait closeUp extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closeUp extends StObject
+  inline def closeUp: closeUp = "closeUp".asInstanceOf[closeUp]
   
   @js.native
-  sealed trait columnGrouping extends js.Object
+  sealed trait closing extends StObject
+  inline def closing: closing = "closing".asInstanceOf[closing]
   
   @js.native
-  sealed trait columnMoving extends js.Object
+  sealed trait columnGrouping extends StObject
+  inline def columnGrouping: columnGrouping = "columnGrouping".asInstanceOf[columnGrouping]
   
   @js.native
-  sealed trait columnResized extends js.Object
+  sealed trait columnMoving extends StObject
+  inline def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
   
   @js.native
-  sealed trait columnResizing extends js.Object
+  sealed trait columnResized extends StObject
+  inline def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
   
   @js.native
-  sealed trait columnSorting extends js.Object
+  sealed trait columnResizing extends StObject
+  inline def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
   
   @js.native
-  sealed trait columnStartDragging extends js.Object
+  sealed trait columnSorting extends StObject
+  inline def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
   
   @js.native
-  sealed trait contextMenu extends js.Object
+  sealed trait columnStartDragging extends StObject
+  inline def columnStartDragging: columnStartDragging = "columnStartDragging".asInstanceOf[columnStartDragging]
   
   @js.native
-  sealed trait contextMenuItemClick extends js.Object
+  sealed trait contextMenu extends StObject
+  inline def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
   
   @js.native
-  sealed trait customButtonClick extends js.Object
+  sealed trait contextMenuItemClick extends StObject
+  inline def contextMenuItemClick: contextMenuItemClick = "contextMenuItemClick".asInstanceOf[contextMenuItemClick]
   
   @js.native
-  sealed trait customDisabledDate extends js.Object
+  sealed trait customButtonClick extends StObject
+  inline def customButtonClick: customButtonClick = "customButtonClick".asInstanceOf[customButtonClick]
   
   @js.native
-  sealed trait customHighlighting extends js.Object
+  sealed trait customDisabledDate extends StObject
+  inline def customDisabledDate: customDisabledDate = "customDisabledDate".asInstanceOf[customDisabledDate]
   
   @js.native
-  sealed trait customizationWindowCloseUp extends js.Object
+  sealed trait customHighlighting extends StObject
+  inline def customHighlighting: customHighlighting = "customHighlighting".asInstanceOf[customHighlighting]
   
   @js.native
-  sealed trait dateChanged extends js.Object
+  sealed trait customizationWindowCloseUp extends StObject
+  inline def customizationWindowCloseUp: customizationWindowCloseUp = "customizationWindowCloseUp".asInstanceOf[customizationWindowCloseUp]
   
   @js.native
-  sealed trait detailRowCollapsing extends js.Object
+  sealed trait dateChanged extends StObject
+  inline def dateChanged: dateChanged = "dateChanged".asInstanceOf[dateChanged]
   
   @js.native
-  sealed trait detailRowExpanding extends js.Object
+  sealed trait detailRowCollapsing extends StObject
+  inline def detailRowCollapsing: detailRowCollapsing = "detailRowCollapsing".asInstanceOf[detailRowCollapsing]
   
   @js.native
-  sealed trait disposing extends js.Object
+  sealed trait detailRowExpanding extends StObject
+  inline def detailRowExpanding: detailRowExpanding = "detailRowExpanding".asInstanceOf[detailRowExpanding]
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait disposing extends StObject
+  inline def disposing: disposing = "disposing".asInstanceOf[disposing]
   
   @js.native
-  sealed trait drawn extends js.Object
+  sealed trait done extends StObject
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait dropDown extends js.Object
+  sealed trait drawn extends StObject
+  inline def drawn: drawn = "drawn".asInstanceOf[drawn]
   
   @js.native
-  sealed trait dropZoneEnter extends js.Object
+  sealed trait dropDown extends StObject
+  inline def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
   
   @js.native
-  sealed trait dropZoneLeave extends js.Object
+  sealed trait dropZoneEnter extends StObject
+  inline def dropZoneEnter: dropZoneEnter = "dropZoneEnter".asInstanceOf[dropZoneEnter]
   
   @js.native
-  sealed trait endCallback extends js.Object
+  sealed trait dropZoneLeave extends StObject
+  inline def dropZoneLeave: dropZoneLeave = "dropZoneLeave".asInstanceOf[dropZoneLeave]
   
   @js.native
-  sealed trait expandedChanged extends js.Object
+  sealed trait endCallback extends StObject
+  inline def endCallback: endCallback = "endCallback".asInstanceOf[endCallback]
   
   @js.native
-  sealed trait expandedChanging extends js.Object
+  sealed trait expandedChanged extends StObject
+  inline def expandedChanged: expandedChanged = "expandedChanged".asInstanceOf[expandedChanged]
   
   @js.native
-  sealed trait exported extends js.Object
+  sealed trait expandedChanging extends StObject
+  inline def expandedChanging: expandedChanging = "expandedChanging".asInstanceOf[expandedChanging]
   
   @js.native
-  sealed trait exporting extends js.Object
+  sealed trait exported extends StObject
+  inline def exported: exported = "exported".asInstanceOf[exported]
   
   @js.native
-  sealed trait fileInputCountChanged extends js.Object
+  sealed trait exporting extends StObject
+  inline def exporting: exporting = "exporting".asInstanceOf[exporting]
   
   @js.native
-  sealed trait fileSaving extends js.Object
+  sealed trait fileInputCountChanged extends StObject
+  inline def fileInputCountChanged: fileInputCountChanged = "fileInputCountChanged".asInstanceOf[fileInputCountChanged]
   
   @js.native
-  sealed trait fileUploadComplete extends js.Object
+  sealed trait fileSaving extends StObject
+  inline def fileSaving: fileSaving = "fileSaving".asInstanceOf[fileSaving]
   
   @js.native
-  sealed trait filesUploadComplete extends js.Object
+  sealed trait fileUploadComplete extends StObject
+  inline def fileUploadComplete: fileUploadComplete = "fileUploadComplete".asInstanceOf[fileUploadComplete]
   
   @js.native
-  sealed trait filesUploadStart extends js.Object
+  sealed trait filesUploadComplete extends StObject
+  inline def filesUploadComplete: filesUploadComplete = "filesUploadComplete".asInstanceOf[filesUploadComplete]
   
   @js.native
-  sealed trait focusedCardChanged extends js.Object
+  sealed trait filesUploadStart extends StObject
+  inline def filesUploadStart: filesUploadStart = "filesUploadStart".asInstanceOf[filesUploadStart]
   
   @js.native
-  sealed trait focusedCellChanging extends js.Object
+  sealed trait focusedCardChanged extends StObject
+  inline def focusedCardChanged: focusedCardChanged = "focusedCardChanged".asInstanceOf[focusedCardChanged]
   
   @js.native
-  sealed trait focusedRowChanged extends js.Object
+  sealed trait focusedCellChanging extends StObject
+  inline def focusedCellChanging: focusedCellChanging = "focusedCellChanging".asInstanceOf[focusedCellChanging]
   
   @js.native
-  sealed trait gotFocus extends js.Object
+  sealed trait focusedRowChanged extends StObject
+  inline def focusedRowChanged: focusedRowChanged = "focusedRowChanged".asInstanceOf[focusedRowChanged]
   
   @js.native
-  sealed trait headerClick extends js.Object
+  sealed trait gotFocus extends StObject
+  inline def gotFocus: gotFocus = "gotFocus".asInstanceOf[gotFocus]
   
   @js.native
-  sealed trait incidentOccurred extends js.Object
+  sealed trait headerClick extends StObject
+  inline def headerClick: headerClick = "headerClick".asInstanceOf[headerClick]
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait incidentOccurred extends StObject
+  inline def incidentOccurred: incidentOccurred = "incidentOccurred".asInstanceOf[incidentOccurred]
   
   @js.native
-  sealed trait itemClick extends js.Object
+  sealed trait init extends StObject
+  inline def init: init = "init".asInstanceOf[init]
   
   @js.native
-  sealed trait itemDoubleClick extends js.Object
+  sealed trait itemClick extends StObject
+  inline def itemClick: itemClick = "itemClick".asInstanceOf[itemClick]
   
   @js.native
-  sealed trait itemFiltering extends js.Object
+  sealed trait itemDoubleClick extends StObject
+  inline def itemDoubleClick: itemDoubleClick = "itemDoubleClick".asInstanceOf[itemDoubleClick]
   
   @js.native
-  sealed trait itemMouseOut extends js.Object
+  sealed trait itemFiltering extends StObject
+  inline def itemFiltering: itemFiltering = "itemFiltering".asInstanceOf[itemFiltering]
   
   @js.native
-  sealed trait itemMouseOver extends js.Object
+  sealed trait itemMouseOut extends StObject
+  inline def itemMouseOut: itemMouseOut = "itemMouseOut".asInstanceOf[itemMouseOut]
   
   @js.native
-  sealed trait keyDown extends js.Object
+  sealed trait itemMouseOver extends StObject
+  inline def itemMouseOver: itemMouseOver = "itemMouseOver".asInstanceOf[itemMouseOver]
   
   @js.native
-  sealed trait keyPress extends js.Object
+  sealed trait keyDown extends StObject
+  inline def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
   
   @js.native
-  sealed trait keyUp extends js.Object
+  sealed trait keyPress extends StObject
+  inline def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
   
   @js.native
-  sealed trait legendClick extends js.Object
+  sealed trait keyUp extends StObject
+  inline def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
   
   @js.native
-  sealed trait lostFocus extends js.Object
+  sealed trait legendClick extends StObject
+  inline def legendClick: legendClick = "legendClick".asInstanceOf[legendClick]
   
   @js.native
-  sealed trait menuItemClicked extends js.Object
+  sealed trait lostFocus extends StObject
+  inline def lostFocus: lostFocus = "lostFocus".asInstanceOf[lostFocus]
   
   @js.native
-  sealed trait moreButtonClicked extends js.Object
+  sealed trait menuItemClicked extends StObject
+  inline def menuItemClicked: menuItemClicked = "menuItemClicked".asInstanceOf[menuItemClicked]
   
   @js.native
-  sealed trait nodeClick extends js.Object
+  sealed trait moreButtonClicked extends StObject
+  inline def moreButtonClicked: moreButtonClicked = "moreButtonClicked".asInstanceOf[moreButtonClicked]
   
   @js.native
-  sealed trait numberChanged extends js.Object
+  sealed trait nodeClick extends StObject
+  inline def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
   
   @js.native
-  sealed trait optionChanged extends js.Object
+  sealed trait numberChanged extends StObject
+  inline def numberChanged: numberChanged = "numberChanged".asInstanceOf[numberChanged]
   
   @js.native
-  sealed trait parseDate extends js.Object
+  sealed trait optionChanged extends StObject
+  inline def optionChanged: optionChanged = "optionChanged".asInstanceOf[optionChanged]
   
   @js.native
-  sealed trait pinnedChanged extends js.Object
+  sealed trait parseDate extends StObject
+  inline def parseDate: parseDate = "parseDate".asInstanceOf[parseDate]
   
   @js.native
-  sealed trait pointClick extends js.Object
+  sealed trait pinnedChanged extends StObject
+  inline def pinnedChanged: pinnedChanged = "pinnedChanged".asInstanceOf[pinnedChanged]
   
   @js.native
-  sealed trait pointHoverChanged extends js.Object
+  sealed trait pointClick extends StObject
+  inline def pointClick: pointClick = "pointClick".asInstanceOf[pointClick]
   
   @js.native
-  sealed trait pointSelectionChanged extends js.Object
+  sealed trait pointHoverChanged extends StObject
+  inline def pointHoverChanged: pointHoverChanged = "pointHoverChanged".asInstanceOf[pointHoverChanged]
   
   @js.native
-  sealed trait popUp extends js.Object
+  sealed trait pointSelectionChanged extends StObject
+  inline def pointSelectionChanged: pointSelectionChanged = "pointSelectionChanged".asInstanceOf[pointSelectionChanged]
   
   @js.native
-  sealed trait queryCloseUp extends js.Object
+  sealed trait popUp extends StObject
+  inline def popUp: popUp = "popUp".asInstanceOf[popUp]
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait queryCloseUp extends StObject
+  inline def queryCloseUp: queryCloseUp = "queryCloseUp".asInstanceOf[queryCloseUp]
   
   @js.native
-  sealed trait rowClick extends js.Object
+  sealed trait resize extends StObject
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait rowCollapsing extends js.Object
+  sealed trait rowClick extends StObject
+  inline def rowClick: rowClick = "rowClick".asInstanceOf[rowClick]
   
   @js.native
-  sealed trait rowDblClick extends js.Object
+  sealed trait rowCollapsing extends StObject
+  inline def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
   
   @js.native
-  sealed trait rowExpanding extends js.Object
+  sealed trait rowDblClick extends StObject
+  inline def rowDblClick: rowDblClick = "rowDblClick".asInstanceOf[rowDblClick]
   
   @js.native
-  sealed trait rowFocusing extends js.Object
+  sealed trait rowExpanding extends StObject
+  inline def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
   
   @js.native
-  sealed trait selectedIndexChanged extends js.Object
+  sealed trait rowFocusing extends StObject
+  inline def rowFocusing: rowFocusing = "rowFocusing".asInstanceOf[rowFocusing]
   
   @js.native
-  sealed trait selectionChanged extends js.Object
+  sealed trait selectedIndexChanged extends StObject
+  inline def selectedIndexChanged: selectedIndexChanged = "selectedIndexChanged".asInstanceOf[selectedIndexChanged]
   
   @js.native
-  sealed trait selectionChanging extends js.Object
+  sealed trait selectionChanged extends StObject
+  inline def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
   
   @js.native
-  sealed trait seriesClick extends js.Object
+  sealed trait selectionChanging extends StObject
+  inline def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
   
   @js.native
-  sealed trait seriesHoverChanged extends js.Object
+  sealed trait seriesClick extends StObject
+  inline def seriesClick: seriesClick = "seriesClick".asInstanceOf[seriesClick]
   
   @js.native
-  sealed trait seriesSelectionChanged extends js.Object
+  sealed trait seriesHoverChanged extends StObject
+  inline def seriesHoverChanged: seriesHoverChanged = "seriesHoverChanged".asInstanceOf[seriesHoverChanged]
   
   @js.native
-  sealed trait shortcut extends js.Object
+  sealed trait seriesSelectionChanged extends StObject
+  inline def seriesSelectionChanged: seriesSelectionChanged = "seriesSelectionChanged".asInstanceOf[seriesSelectionChanged]
   
   @js.native
-  sealed trait shown extends js.Object
+  sealed trait shortcut extends StObject
+  inline def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
   
   @js.native
-  sealed trait tabClick extends js.Object
+  sealed trait shown extends StObject
+  inline def shown: shown = "shown".asInstanceOf[shown]
   
   @js.native
-  sealed trait tagsChanged extends js.Object
+  sealed trait tabClick extends StObject
+  inline def tabClick: tabClick = "tabClick".asInstanceOf[tabClick]
   
   @js.native
-  sealed trait textChanged extends js.Object
+  sealed trait tagsChanged extends StObject
+  inline def tagsChanged: tagsChanged = "tagsChanged".asInstanceOf[tagsChanged]
   
   @js.native
-  sealed trait toolbarItemClick extends js.Object
+  sealed trait textChanged extends StObject
+  inline def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
   
   @js.native
-  sealed trait tooltipHidden extends js.Object
+  sealed trait toolbarItemClick extends StObject
+  inline def toolbarItemClick: toolbarItemClick = "toolbarItemClick".asInstanceOf[toolbarItemClick]
   
   @js.native
-  sealed trait tooltipShown extends js.Object
+  sealed trait tooltipHidden extends StObject
+  inline def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
   
   @js.native
-  sealed trait uploadingProgressChanged extends js.Object
+  sealed trait tooltipShown extends StObject
+  inline def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
   
   @js.native
-  sealed trait userInput extends js.Object
+  sealed trait uploadingProgressChanged extends StObject
+  inline def uploadingProgressChanged: uploadingProgressChanged = "uploadingProgressChanged".asInstanceOf[uploadingProgressChanged]
   
   @js.native
-  sealed trait validation extends js.Object
+  sealed trait userInput extends StObject
+  inline def userInput: userInput = "userInput".asInstanceOf[userInput]
   
   @js.native
-  sealed trait validationErrorOccurred extends js.Object
+  sealed trait validation extends StObject
+  inline def validation: validation = "validation".asInstanceOf[validation]
   
   @js.native
-  sealed trait valueChanged extends js.Object
+  sealed trait validationErrorOccurred extends StObject
+  inline def validationErrorOccurred: validationErrorOccurred = "validationErrorOccurred".asInstanceOf[validationErrorOccurred]
   
   @js.native
-  sealed trait visibleIntervalChanged extends js.Object
+  sealed trait valueChanged extends StObject
+  inline def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
   
   @js.native
-  sealed trait visibleMonthChanged extends js.Object
+  sealed trait visibleIntervalChanged extends StObject
+  inline def visibleIntervalChanged: visibleIntervalChanged = "visibleIntervalChanged".asInstanceOf[visibleIntervalChanged]
   
   @js.native
-  sealed trait zoomEnd extends js.Object
+  sealed trait visibleMonthChanged extends StObject
+  inline def visibleMonthChanged: visibleMonthChanged = "visibleMonthChanged".asInstanceOf[visibleMonthChanged]
   
   @js.native
-  sealed trait zoomStart extends js.Object
+  sealed trait zoomEnd extends StObject
+  inline def zoomEnd: zoomEnd = "zoomEnd".asInstanceOf[zoomEnd]
   
-  @scala.inline
-  def activeTabChanged: activeTabChanged = "activeTabChanged".asInstanceOf[activeTabChanged]
-  @scala.inline
-  def activeTabChanging: activeTabChanging = "activeTabChanging".asInstanceOf[activeTabChanging]
-  @scala.inline
-  def activeViewChanged: activeViewChanged = "activeViewChanged".asInstanceOf[activeViewChanged]
-  @scala.inline
-  def activeViewChanging: activeViewChanging = "activeViewChanging".asInstanceOf[activeViewChanging]
-  @scala.inline
-  def afterResizing: afterResizing = "afterResizing".asInstanceOf[afterResizing]
-  @scala.inline
-  def appointmentClick: appointmentClick = "appointmentClick".asInstanceOf[appointmentClick]
-  @scala.inline
-  def appointmentDeleting: appointmentDeleting = "appointmentDeleting".asInstanceOf[appointmentDeleting]
-  @scala.inline
-  def appointmentDoubleClick: appointmentDoubleClick = "appointmentDoubleClick".asInstanceOf[appointmentDoubleClick]
-  @scala.inline
-  def appointmentDrag: appointmentDrag = "appointmentDrag".asInstanceOf[appointmentDrag]
-  @scala.inline
-  def appointmentDrop: appointmentDrop = "appointmentDrop".asInstanceOf[appointmentDrop]
-  @scala.inline
-  def appointmentResize: appointmentResize = "appointmentResize".asInstanceOf[appointmentResize]
-  @scala.inline
-  def appointmentResizing: appointmentResizing = "appointmentResizing".asInstanceOf[appointmentResizing]
-  @scala.inline
-  def appointmentToolTipShowing: appointmentToolTipShowing = "appointmentToolTipShowing".asInstanceOf[appointmentToolTipShowing]
-  @scala.inline
-  def appointmentsSelectionChanged: appointmentsSelectionChanged = "appointmentsSelectionChanged".asInstanceOf[appointmentsSelectionChanged]
-  @scala.inline
-  def argumentAxisClick: argumentAxisClick = "argumentAxisClick".asInstanceOf[argumentAxisClick]
-  @scala.inline
-  def batchEditCardDeleting: batchEditCardDeleting = "batchEditCardDeleting".asInstanceOf[batchEditCardDeleting]
-  @scala.inline
-  def batchEditCardInserting: batchEditCardInserting = "batchEditCardInserting".asInstanceOf[batchEditCardInserting]
-  @scala.inline
-  def batchEditCardValidating: batchEditCardValidating = "batchEditCardValidating".asInstanceOf[batchEditCardValidating]
-  @scala.inline
-  def batchEditChangesCanceling: batchEditChangesCanceling = "batchEditChangesCanceling".asInstanceOf[batchEditChangesCanceling]
-  @scala.inline
-  def batchEditChangesSaving: batchEditChangesSaving = "batchEditChangesSaving".asInstanceOf[batchEditChangesSaving]
-  @scala.inline
-  def batchEditConfirmShowing: batchEditConfirmShowing = "batchEditConfirmShowing".asInstanceOf[batchEditConfirmShowing]
-  @scala.inline
-  def batchEditEndEditing: batchEditEndEditing = "batchEditEndEditing".asInstanceOf[batchEditEndEditing]
-  @scala.inline
-  def batchEditRowDeleting: batchEditRowDeleting = "batchEditRowDeleting".asInstanceOf[batchEditRowDeleting]
-  @scala.inline
-  def batchEditRowInserting: batchEditRowInserting = "batchEditRowInserting".asInstanceOf[batchEditRowInserting]
-  @scala.inline
-  def batchEditRowValidating: batchEditRowValidating = "batchEditRowValidating".asInstanceOf[batchEditRowValidating]
-  @scala.inline
-  def batchEditStartEditing: batchEditStartEditing = "batchEditStartEditing".asInstanceOf[batchEditStartEditing]
-  @scala.inline
-  def batchEditTemplateCellFocused: batchEditTemplateCellFocused = "batchEditTemplateCellFocused".asInstanceOf[batchEditTemplateCellFocused]
-  @scala.inline
-  def beforeResizing: beforeResizing = "beforeResizing".asInstanceOf[beforeResizing]
-  @scala.inline
-  def beginCallback: beginCallback = "beginCallback".asInstanceOf[beginCallback]
-  @scala.inline
-  def buttonClick: buttonClick = "buttonClick".asInstanceOf[buttonClick]
-  @scala.inline
-  def calendarCustomDisabledDate: calendarCustomDisabledDate = "calendarCustomDisabledDate".asInstanceOf[calendarCustomDisabledDate]
-  @scala.inline
-  def callbackError: callbackError = "callbackError".asInstanceOf[callbackError]
-  @scala.inline
-  def cardClick: cardClick = "cardClick".asInstanceOf[cardClick]
-  @scala.inline
-  def cardDblClick: cardDblClick = "cardDblClick".asInstanceOf[cardDblClick]
-  @scala.inline
-  def cardFocusing: cardFocusing = "cardFocusing".asInstanceOf[cardFocusing]
-  @scala.inline
-  def cellClick: cellClick = "cellClick".asInstanceOf[cellClick]
-  @scala.inline
-  def cellDoubleClick: cellDoubleClick = "cellDoubleClick".asInstanceOf[cellDoubleClick]
-  @scala.inline
-  def checkedChanged: checkedChanged = "checkedChanged".asInstanceOf[checkedChanged]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def closeUp: closeUp = "closeUp".asInstanceOf[closeUp]
-  @scala.inline
-  def closing: closing = "closing".asInstanceOf[closing]
-  @scala.inline
-  def columnGrouping: columnGrouping = "columnGrouping".asInstanceOf[columnGrouping]
-  @scala.inline
-  def columnMoving: columnMoving = "columnMoving".asInstanceOf[columnMoving]
-  @scala.inline
-  def columnResized: columnResized = "columnResized".asInstanceOf[columnResized]
-  @scala.inline
-  def columnResizing: columnResizing = "columnResizing".asInstanceOf[columnResizing]
-  @scala.inline
-  def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
-  @scala.inline
-  def columnStartDragging: columnStartDragging = "columnStartDragging".asInstanceOf[columnStartDragging]
-  @scala.inline
-  def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
-  @scala.inline
-  def contextMenuItemClick: contextMenuItemClick = "contextMenuItemClick".asInstanceOf[contextMenuItemClick]
-  @scala.inline
-  def customButtonClick: customButtonClick = "customButtonClick".asInstanceOf[customButtonClick]
-  @scala.inline
-  def customDisabledDate: customDisabledDate = "customDisabledDate".asInstanceOf[customDisabledDate]
-  @scala.inline
-  def customHighlighting: customHighlighting = "customHighlighting".asInstanceOf[customHighlighting]
-  @scala.inline
-  def customizationWindowCloseUp: customizationWindowCloseUp = "customizationWindowCloseUp".asInstanceOf[customizationWindowCloseUp]
-  @scala.inline
-  def dateChanged: dateChanged = "dateChanged".asInstanceOf[dateChanged]
-  @scala.inline
-  def detailRowCollapsing: detailRowCollapsing = "detailRowCollapsing".asInstanceOf[detailRowCollapsing]
-  @scala.inline
-  def detailRowExpanding: detailRowExpanding = "detailRowExpanding".asInstanceOf[detailRowExpanding]
-  @scala.inline
-  def disposing: disposing = "disposing".asInstanceOf[disposing]
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
-  @scala.inline
-  def drawn: drawn = "drawn".asInstanceOf[drawn]
-  @scala.inline
-  def dropDown: dropDown = "dropDown".asInstanceOf[dropDown]
-  @scala.inline
-  def dropZoneEnter: dropZoneEnter = "dropZoneEnter".asInstanceOf[dropZoneEnter]
-  @scala.inline
-  def dropZoneLeave: dropZoneLeave = "dropZoneLeave".asInstanceOf[dropZoneLeave]
-  @scala.inline
-  def endCallback: endCallback = "endCallback".asInstanceOf[endCallback]
-  @scala.inline
-  def expandedChanged: expandedChanged = "expandedChanged".asInstanceOf[expandedChanged]
-  @scala.inline
-  def expandedChanging: expandedChanging = "expandedChanging".asInstanceOf[expandedChanging]
-  @scala.inline
-  def exported: exported = "exported".asInstanceOf[exported]
-  @scala.inline
-  def exporting: exporting = "exporting".asInstanceOf[exporting]
-  @scala.inline
-  def fileInputCountChanged: fileInputCountChanged = "fileInputCountChanged".asInstanceOf[fileInputCountChanged]
-  @scala.inline
-  def fileSaving: fileSaving = "fileSaving".asInstanceOf[fileSaving]
-  @scala.inline
-  def fileUploadComplete: fileUploadComplete = "fileUploadComplete".asInstanceOf[fileUploadComplete]
-  @scala.inline
-  def filesUploadComplete: filesUploadComplete = "filesUploadComplete".asInstanceOf[filesUploadComplete]
-  @scala.inline
-  def filesUploadStart: filesUploadStart = "filesUploadStart".asInstanceOf[filesUploadStart]
-  @scala.inline
-  def focusedCardChanged: focusedCardChanged = "focusedCardChanged".asInstanceOf[focusedCardChanged]
-  @scala.inline
-  def focusedCellChanging: focusedCellChanging = "focusedCellChanging".asInstanceOf[focusedCellChanging]
-  @scala.inline
-  def focusedRowChanged: focusedRowChanged = "focusedRowChanged".asInstanceOf[focusedRowChanged]
-  @scala.inline
-  def gotFocus: gotFocus = "gotFocus".asInstanceOf[gotFocus]
-  @scala.inline
-  def headerClick: headerClick = "headerClick".asInstanceOf[headerClick]
-  @scala.inline
-  def incidentOccurred: incidentOccurred = "incidentOccurred".asInstanceOf[incidentOccurred]
-  @scala.inline
-  def init: init = "init".asInstanceOf[init]
-  @scala.inline
-  def itemClick: itemClick = "itemClick".asInstanceOf[itemClick]
-  @scala.inline
-  def itemDoubleClick: itemDoubleClick = "itemDoubleClick".asInstanceOf[itemDoubleClick]
-  @scala.inline
-  def itemFiltering: itemFiltering = "itemFiltering".asInstanceOf[itemFiltering]
-  @scala.inline
-  def itemMouseOut: itemMouseOut = "itemMouseOut".asInstanceOf[itemMouseOut]
-  @scala.inline
-  def itemMouseOver: itemMouseOver = "itemMouseOver".asInstanceOf[itemMouseOver]
-  @scala.inline
-  def keyDown: keyDown = "keyDown".asInstanceOf[keyDown]
-  @scala.inline
-  def keyPress: keyPress = "keyPress".asInstanceOf[keyPress]
-  @scala.inline
-  def keyUp: keyUp = "keyUp".asInstanceOf[keyUp]
-  @scala.inline
-  def legendClick: legendClick = "legendClick".asInstanceOf[legendClick]
-  @scala.inline
-  def lostFocus: lostFocus = "lostFocus".asInstanceOf[lostFocus]
-  @scala.inline
-  def menuItemClicked: menuItemClicked = "menuItemClicked".asInstanceOf[menuItemClicked]
-  @scala.inline
-  def moreButtonClicked: moreButtonClicked = "moreButtonClicked".asInstanceOf[moreButtonClicked]
-  @scala.inline
-  def nodeClick: nodeClick = "nodeClick".asInstanceOf[nodeClick]
-  @scala.inline
-  def numberChanged: numberChanged = "numberChanged".asInstanceOf[numberChanged]
-  @scala.inline
-  def optionChanged: optionChanged = "optionChanged".asInstanceOf[optionChanged]
-  @scala.inline
-  def parseDate: parseDate = "parseDate".asInstanceOf[parseDate]
-  @scala.inline
-  def pinnedChanged: pinnedChanged = "pinnedChanged".asInstanceOf[pinnedChanged]
-  @scala.inline
-  def pointClick: pointClick = "pointClick".asInstanceOf[pointClick]
-  @scala.inline
-  def pointHoverChanged: pointHoverChanged = "pointHoverChanged".asInstanceOf[pointHoverChanged]
-  @scala.inline
-  def pointSelectionChanged: pointSelectionChanged = "pointSelectionChanged".asInstanceOf[pointSelectionChanged]
-  @scala.inline
-  def popUp: popUp = "popUp".asInstanceOf[popUp]
-  @scala.inline
-  def queryCloseUp: queryCloseUp = "queryCloseUp".asInstanceOf[queryCloseUp]
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def rowClick: rowClick = "rowClick".asInstanceOf[rowClick]
-  @scala.inline
-  def rowCollapsing: rowCollapsing = "rowCollapsing".asInstanceOf[rowCollapsing]
-  @scala.inline
-  def rowDblClick: rowDblClick = "rowDblClick".asInstanceOf[rowDblClick]
-  @scala.inline
-  def rowExpanding: rowExpanding = "rowExpanding".asInstanceOf[rowExpanding]
-  @scala.inline
-  def rowFocusing: rowFocusing = "rowFocusing".asInstanceOf[rowFocusing]
-  @scala.inline
-  def selectedIndexChanged: selectedIndexChanged = "selectedIndexChanged".asInstanceOf[selectedIndexChanged]
-  @scala.inline
-  def selectionChanged: selectionChanged = "selectionChanged".asInstanceOf[selectionChanged]
-  @scala.inline
-  def selectionChanging: selectionChanging = "selectionChanging".asInstanceOf[selectionChanging]
-  @scala.inline
-  def seriesClick: seriesClick = "seriesClick".asInstanceOf[seriesClick]
-  @scala.inline
-  def seriesHoverChanged: seriesHoverChanged = "seriesHoverChanged".asInstanceOf[seriesHoverChanged]
-  @scala.inline
-  def seriesSelectionChanged: seriesSelectionChanged = "seriesSelectionChanged".asInstanceOf[seriesSelectionChanged]
-  @scala.inline
-  def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
-  @scala.inline
-  def shown: shown = "shown".asInstanceOf[shown]
-  @scala.inline
-  def tabClick: tabClick = "tabClick".asInstanceOf[tabClick]
-  @scala.inline
-  def tagsChanged: tagsChanged = "tagsChanged".asInstanceOf[tagsChanged]
-  @scala.inline
-  def textChanged: textChanged = "textChanged".asInstanceOf[textChanged]
-  @scala.inline
-  def toolbarItemClick: toolbarItemClick = "toolbarItemClick".asInstanceOf[toolbarItemClick]
-  @scala.inline
-  def tooltipHidden: tooltipHidden = "tooltipHidden".asInstanceOf[tooltipHidden]
-  @scala.inline
-  def tooltipShown: tooltipShown = "tooltipShown".asInstanceOf[tooltipShown]
-  @scala.inline
-  def uploadingProgressChanged: uploadingProgressChanged = "uploadingProgressChanged".asInstanceOf[uploadingProgressChanged]
-  @scala.inline
-  def userInput: userInput = "userInput".asInstanceOf[userInput]
-  @scala.inline
-  def validation: validation = "validation".asInstanceOf[validation]
-  @scala.inline
-  def validationErrorOccurred: validationErrorOccurred = "validationErrorOccurred".asInstanceOf[validationErrorOccurred]
-  @scala.inline
-  def valueChanged: valueChanged = "valueChanged".asInstanceOf[valueChanged]
-  @scala.inline
-  def visibleIntervalChanged: visibleIntervalChanged = "visibleIntervalChanged".asInstanceOf[visibleIntervalChanged]
-  @scala.inline
-  def visibleMonthChanged: visibleMonthChanged = "visibleMonthChanged".asInstanceOf[visibleMonthChanged]
-  @scala.inline
-  def zoomEnd: zoomEnd = "zoomEnd".asInstanceOf[zoomEnd]
-  @scala.inline
-  def zoomStart: zoomStart = "zoomStart".asInstanceOf[zoomStart]
+  @js.native
+  sealed trait zoomStart extends StObject
+  inline def zoomStart: zoomStart = "zoomStart".asInstanceOf[zoomStart]
 }
-

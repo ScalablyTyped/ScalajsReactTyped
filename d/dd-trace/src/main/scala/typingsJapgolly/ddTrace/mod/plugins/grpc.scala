@@ -1,43 +1,42 @@
 package typingsJapgolly.ddTrace.mod.plugins
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This plugin automatically instruments the
   * [grpc](https://github.com/grpc/grpc-node) module.
   */
-trait grpc extends Grpc_ {
+trait grpc
+  extends StObject
+     with Grpc_ {
+  
   /**
     * Configuration for gRPC clients.
     */
   var client: js.UndefOr[Grpc_] = js.undefined
+  
   /**
     * Configuration for gRPC servers.
     */
   var server: js.UndefOr[Grpc_] = js.undefined
 }
-
 object grpc {
-  @scala.inline
-  def apply(
-    analytics: Boolean | Double = null,
-    client: Grpc_ = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    metadata: js.Array[String] | (js.Function1[/* variables */ StringDictionary[js.Any], StringDictionary[_]]) = null,
-    server: Grpc_ = null,
-    service: String = null
-  ): grpc = {
+  
+  inline def apply(): grpc = {
     val __obj = js.Dynamic.literal()
-    if (analytics != null) __obj.updateDynamic("analytics")(analytics.asInstanceOf[js.Any])
-    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (metadata != null) __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
-    if (service != null) __obj.updateDynamic("service")(service.asInstanceOf[js.Any])
     __obj.asInstanceOf[grpc]
   }
+  
+  extension [Self <: grpc](x: Self) {
+    
+    inline def setClient(value: Grpc_): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    
+    inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+    
+    inline def setServer(value: Grpc_): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+  }
 }
-

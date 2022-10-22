@@ -1,9 +1,10 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.none_
@@ -17,36 +18,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.hidden
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait RiskDetail extends js.Object
-
+trait RiskDetail extends StObject
 object RiskDetail {
-  @scala.inline
-  def adminConfirmedSigninCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised = this.cast("adminConfirmedSigninCompromised")
-  @scala.inline
-  def adminConfirmedSigninSafe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe = this.cast("adminConfirmedSigninSafe")
-  @scala.inline
-  def adminConfirmedUserCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = this.cast("adminConfirmedUserCompromised")
-  @scala.inline
-  def adminDismissedAllRiskForUser: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser = this.cast("adminDismissedAllRiskForUser")
-  @scala.inline
-  def adminGeneratedTemporaryPassword: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword = this.cast("adminGeneratedTemporaryPassword")
-  @scala.inline
-  def aiConfirmedSigninSafe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe = this.cast("aiConfirmedSigninSafe")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def hidden: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hidden = this.cast("hidden")
-  @scala.inline
-  def none: none_ = this.cast("none")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
-  @scala.inline
-  def userPassedMFADrivenByRiskBasedPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy = this.cast("userPassedMFADrivenByRiskBasedPolicy")
-  @scala.inline
-  def userPerformedSecuredPasswordChange: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange = this.cast("userPerformedSecuredPasswordChange")
-  @scala.inline
-  def userPerformedSecuredPasswordReset: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset = this.cast("userPerformedSecuredPasswordReset")
+  
+  inline def adminConfirmedSigninCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised = "adminConfirmedSigninCompromised".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninCompromised]
+  
+  inline def adminConfirmedSigninSafe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe = "adminConfirmedSigninSafe".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedSigninSafe]
+  
+  inline def adminConfirmedUserCompromised: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised = "adminConfirmedUserCompromised".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminConfirmedUserCompromised]
+  
+  inline def adminDismissedAllRiskForUser: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser = "adminDismissedAllRiskForUser".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminDismissedAllRiskForUser]
+  
+  inline def adminGeneratedTemporaryPassword: typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword = "adminGeneratedTemporaryPassword".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.adminGeneratedTemporaryPassword]
+  
+  inline def aiConfirmedSigninSafe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe = "aiConfirmedSigninSafe".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.aiConfirmedSigninSafe]
+  
+  inline def hidden: typingsJapgolly.microsoftGraph.microsoftGraphStrings.hidden = "hidden".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.hidden]
+  
+  inline def none: none_ = "none".asInstanceOf[none_]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
+  
+  inline def userPassedMFADrivenByRiskBasedPolicy: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy = "userPassedMFADrivenByRiskBasedPolicy".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPassedMFADrivenByRiskBasedPolicy]
+  
+  inline def userPerformedSecuredPasswordChange: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange = "userPerformedSecuredPasswordChange".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordChange]
+  
+  inline def userPerformedSecuredPasswordReset: typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset = "userPerformedSecuredPasswordReset".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.userPerformedSecuredPasswordReset]
 }
-

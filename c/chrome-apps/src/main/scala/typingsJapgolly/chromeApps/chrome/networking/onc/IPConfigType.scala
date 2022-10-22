@@ -1,21 +1,17 @@
 package typingsJapgolly.chromeApps.chrome.networking.onc
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.DHCP
   - typingsJapgolly.chromeApps.chromeAppsStrings.Static
 */
-trait IPConfigType extends js.Object
-
+trait IPConfigType extends StObject
 object IPConfigType {
-  @scala.inline
-  def DHCP: typingsJapgolly.chromeApps.chromeAppsStrings.DHCP = this.cast("DHCP")
-  @scala.inline
-  def Static: typingsJapgolly.chromeApps.chromeAppsStrings.Static = this.cast("Static")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DHCP: typingsJapgolly.chromeApps.chromeAppsStrings.DHCP = "DHCP".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.DHCP]
+  
+  inline def Static: typingsJapgolly.chromeApps.chromeAppsStrings.Static = "Static".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.Static]
 }
-

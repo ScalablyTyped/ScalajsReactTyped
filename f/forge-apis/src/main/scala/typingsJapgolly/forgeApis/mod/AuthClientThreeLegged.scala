@@ -1,12 +1,15 @@
 package typingsJapgolly.forgeApis.mod
 
+import typingsJapgolly.forgeApis.anon.Refreshtoken
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "AuthClientThreeLegged")
 @js.native
-class AuthClientThreeLegged protected () extends AuthClient {
+open class AuthClientThreeLegged protected ()
+  extends StObject
+     with AuthClient {
   def this(
     clientId: String,
     clientSecret: String,
@@ -14,8 +17,11 @@ class AuthClientThreeLegged protected () extends AuthClient {
     scopes: js.Array[Scope],
     autoRefresh: Boolean
   ) = this()
-  def generateAuthUrl(): String = js.native
+  
+  def generateAuthUrl(state: String): String = js.native
+  
   def getToken(code: String): js.Promise[AuthToken] = js.native
-  def refreshToken(credentials: AuthToken): js.Promise[AuthToken] = js.native
+  
+  def refreshToken(credentials: Refreshtoken): js.Promise[AuthToken] = js.native
+  def refreshToken(credentials: Refreshtoken, scope: js.Array[Scope]): js.Promise[AuthToken] = js.native
 }
-

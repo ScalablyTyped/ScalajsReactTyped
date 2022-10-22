@@ -1,24 +1,39 @@
 package typingsJapgolly.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* tslint:disable:interface-name */
-trait IPAMConfig extends js.Object {
+trait IPAMConfig extends StObject {
+  
   var IPv4Address: js.UndefOr[String] = js.undefined
+  
   var IPv6Address: js.UndefOr[String] = js.undefined
+  
   var LinkLocalIPs: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object IPAMConfig {
-  @scala.inline
-  def apply(IPv4Address: String = null, IPv6Address: String = null, LinkLocalIPs: js.Array[String] = null): IPAMConfig = {
+  
+  inline def apply(): IPAMConfig = {
     val __obj = js.Dynamic.literal()
-    if (IPv4Address != null) __obj.updateDynamic("IPv4Address")(IPv4Address.asInstanceOf[js.Any])
-    if (IPv6Address != null) __obj.updateDynamic("IPv6Address")(IPv6Address.asInstanceOf[js.Any])
-    if (LinkLocalIPs != null) __obj.updateDynamic("LinkLocalIPs")(LinkLocalIPs.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPAMConfig]
   }
+  
+  extension [Self <: IPAMConfig](x: Self) {
+    
+    inline def setIPv4Address(value: String): Self = StObject.set(x, "IPv4Address", value.asInstanceOf[js.Any])
+    
+    inline def setIPv4AddressUndefined: Self = StObject.set(x, "IPv4Address", js.undefined)
+    
+    inline def setIPv6Address(value: String): Self = StObject.set(x, "IPv6Address", value.asInstanceOf[js.Any])
+    
+    inline def setIPv6AddressUndefined: Self = StObject.set(x, "IPv6Address", js.undefined)
+    
+    inline def setLinkLocalIPs(value: js.Array[String]): Self = StObject.set(x, "LinkLocalIPs", value.asInstanceOf[js.Any])
+    
+    inline def setLinkLocalIPsUndefined: Self = StObject.set(x, "LinkLocalIPs", js.undefined)
+    
+    inline def setLinkLocalIPsVarargs(value: String*): Self = StObject.set(x, "LinkLocalIPs", js.Array(value*))
+  }
 }
-

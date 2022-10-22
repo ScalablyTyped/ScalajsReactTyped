@@ -1,67 +1,94 @@
 package typingsJapgolly.winrtUwp.Windows.Networking.NetworkOperators
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a mobile broadband modem. */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandModem")
-@js.native
-abstract class MobileBroadbandModem () extends js.Object {
+trait MobileBroadbandModem extends StObject {
+  
   /** Gets the MobileBroadbandAccount associated currently with the mobile broadband modem. */
-  var currentAccount: MobileBroadbandAccount = js.native
+  var currentAccount: MobileBroadbandAccount
+  
   /** Gets an object that describes the mobile broadband network that this modem us currently attached to. */
-  var currentNetwork: MobileBroadbandNetwork = js.native
+  var currentNetwork: MobileBroadbandNetwork
+  
   /** Gets the MobileBroadbandDeviceInformation for the mobile broadband modem. */
-  var deviceInformation: MobileBroadbandDeviceInformation = js.native
+  var deviceInformation: MobileBroadbandDeviceInformation
+  
   /** Gets a list of the device services available for the mobile broadband modem. */
-  var deviceServices: IVectorView[MobileBroadbandDeviceServiceInformation] = js.native
-  /** Gets a value indicating whether the mobile broadband modem allows a reset operation. */
-  var isResetSupported: Boolean = js.native
-  /** Gets the maximum device service command size, in bytes, for the mobile broadband modem. */
-  var maxDeviceServiceCommandSizeInBytes: Double = js.native
-  /** Gets the maximum device service data size, in bytes, for the mobile broadband modem. */
-  var maxDeviceServiceDataSizeInBytes: Double = js.native
+  var deviceServices: IVectorView[MobileBroadbandDeviceServiceInformation]
+  
   /**
     * Asynchronously retrieves mobile broadband modem configuration information.
     * @return An asynchronous retrieval operation. On successful completion, contains a MobileBroadbandModemConfiguration object representing the current configuration.
     */
-  def getCurrentConfigurationAsync(): IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration] = js.native
+  def getCurrentConfigurationAsync(): IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]
+  
   /**
     * Gets a specific device service for the mobile broadband modem.
     * @param deviceServiceId The unique device service identifier for the device service to be retrieved.
     * @return The mobile broadband device service retrieved.
     */
-  def getDeviceService(deviceServiceId: String): MobileBroadbandDeviceService = js.native
+  def getDeviceService(deviceServiceId: String): MobileBroadbandDeviceService
+  
+  /** Gets a value indicating whether the mobile broadband modem allows a reset operation. */
+  var isResetSupported: Boolean
+  
+  /** Gets the maximum device service command size, in bytes, for the mobile broadband modem. */
+  var maxDeviceServiceCommandSizeInBytes: Double
+  
+  /** Gets the maximum device service data size, in bytes, for the mobile broadband modem. */
+  var maxDeviceServiceDataSizeInBytes: Double
+  
   /**
     * Asynchronously performs a reset operation on the mobile broadband modem.
     * @return An asynchronous reset operation.
     */
-  def resetAsync(): IPromiseWithIAsyncAction = js.native
+  def resetAsync(): IPromiseWithIAsyncAction
 }
-
-/* static members */
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandModem")
-@js.native
-object MobileBroadbandModem extends js.Object {
-  /**
-    * Determine if a mobile broadband device is a Wireless WAN device.
-    * @param deviceId The mobile broadband device ID
-    * @return The mobile broadband modem.
-    */
-  def fromId(deviceId: String): MobileBroadbandModem = js.native
-  /**
-    * Determines the default mobile broadband modem.
-    * @return The mobile broadband modem.
-    */
-  def getDefault(): MobileBroadbandModem = js.native
-  /**
-    * Gets a device selector for the mobile broadband modem.
-    * @return A device selector for the mobile broadband modem.
-    */
-  def getDeviceSelector(): String = js.native
+object MobileBroadbandModem {
+  
+  inline def apply(
+    currentAccount: MobileBroadbandAccount,
+    currentNetwork: MobileBroadbandNetwork,
+    deviceInformation: MobileBroadbandDeviceInformation,
+    deviceServices: IVectorView[MobileBroadbandDeviceServiceInformation],
+    getCurrentConfigurationAsync: CallbackTo[IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]],
+    getDeviceService: String => MobileBroadbandDeviceService,
+    isResetSupported: Boolean,
+    maxDeviceServiceCommandSizeInBytes: Double,
+    maxDeviceServiceDataSizeInBytes: Double,
+    resetAsync: CallbackTo[IPromiseWithIAsyncAction]
+  ): MobileBroadbandModem = {
+    val __obj = js.Dynamic.literal(currentAccount = currentAccount.asInstanceOf[js.Any], currentNetwork = currentNetwork.asInstanceOf[js.Any], deviceInformation = deviceInformation.asInstanceOf[js.Any], deviceServices = deviceServices.asInstanceOf[js.Any], getCurrentConfigurationAsync = getCurrentConfigurationAsync.toJsFn, getDeviceService = js.Any.fromFunction1(getDeviceService), isResetSupported = isResetSupported.asInstanceOf[js.Any], maxDeviceServiceCommandSizeInBytes = maxDeviceServiceCommandSizeInBytes.asInstanceOf[js.Any], maxDeviceServiceDataSizeInBytes = maxDeviceServiceDataSizeInBytes.asInstanceOf[js.Any], resetAsync = resetAsync.toJsFn)
+    __obj.asInstanceOf[MobileBroadbandModem]
+  }
+  
+  extension [Self <: MobileBroadbandModem](x: Self) {
+    
+    inline def setCurrentAccount(value: MobileBroadbandAccount): Self = StObject.set(x, "currentAccount", value.asInstanceOf[js.Any])
+    
+    inline def setCurrentNetwork(value: MobileBroadbandNetwork): Self = StObject.set(x, "currentNetwork", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceInformation(value: MobileBroadbandDeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceServices(value: IVectorView[MobileBroadbandDeviceServiceInformation]): Self = StObject.set(x, "deviceServices", value.asInstanceOf[js.Any])
+    
+    inline def setGetCurrentConfigurationAsync(value: CallbackTo[IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration]]): Self = StObject.set(x, "getCurrentConfigurationAsync", value.toJsFn)
+    
+    inline def setGetDeviceService(value: String => MobileBroadbandDeviceService): Self = StObject.set(x, "getDeviceService", js.Any.fromFunction1(value))
+    
+    inline def setIsResetSupported(value: Boolean): Self = StObject.set(x, "isResetSupported", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDeviceServiceCommandSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceCommandSizeInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setMaxDeviceServiceDataSizeInBytes(value: Double): Self = StObject.set(x, "maxDeviceServiceDataSizeInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setResetAsync(value: CallbackTo[IPromiseWithIAsyncAction]): Self = StObject.set(x, "resetAsync", value.toJsFn)
+  }
 }
-

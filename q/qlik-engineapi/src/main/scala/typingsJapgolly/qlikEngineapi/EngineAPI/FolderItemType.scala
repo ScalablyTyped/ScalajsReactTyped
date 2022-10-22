@@ -1,24 +1,20 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FOLDER
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER
 */
-trait FolderItemType extends js.Object
-
+trait FolderItemType extends StObject
 object FolderItemType {
-  @scala.inline
-  def FILE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE = this.cast("FILE")
-  @scala.inline
-  def FOLDER: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FOLDER = this.cast("FOLDER")
-  @scala.inline
-  def OTHER: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER = this.cast("OTHER")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FILE: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE = "FILE".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FILE]
+  
+  inline def FOLDER: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FOLDER = "FOLDER".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FOLDER]
+  
+  inline def OTHER: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER = "OTHER".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.OTHER]
 }
-

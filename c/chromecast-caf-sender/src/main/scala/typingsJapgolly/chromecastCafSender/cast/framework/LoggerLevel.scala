@@ -1,47 +1,37 @@
 package typingsJapgolly.chromecastCafSender.cast.framework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait LoggerLevel extends js.Object
-
+sealed trait LoggerLevel extends StObject
 @JSGlobal("cast.framework.LoggerLevel")
 @js.native
-object LoggerLevel extends js.Object {
-  @js.native
-  sealed trait DEBUG extends LoggerLevel
+object LoggerLevel extends StObject {
   
   @js.native
-  sealed trait ERROR extends LoggerLevel
+  sealed trait DEBUG
+    extends StObject
+       with LoggerLevel
   
   @js.native
-  sealed trait INFO extends LoggerLevel
+  sealed trait ERROR
+    extends StObject
+       with LoggerLevel
   
   @js.native
-  sealed trait NONE extends LoggerLevel
+  sealed trait INFO
+    extends StObject
+       with LoggerLevel
   
   @js.native
-  sealed trait WARNING extends LoggerLevel
+  sealed trait NONE
+    extends StObject
+       with LoggerLevel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[LoggerLevel with Double] = js.native
-  /* 0 */ @js.native
-  object DEBUG extends TopLevel[DEBUG with Double]
-  
-  /* 3 */ @js.native
-  object ERROR extends TopLevel[ERROR with Double]
-  
-  /* 1 */ @js.native
-  object INFO extends TopLevel[INFO with Double]
-  
-  /* 4 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
-  
-  /* 2 */ @js.native
-  object WARNING extends TopLevel[WARNING with Double]
-  
+  @js.native
+  sealed trait WARNING
+    extends StObject
+       with LoggerLevel
 }
-

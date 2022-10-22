@@ -10,10 +10,10 @@ A simple module for creating, manipulating and signing Ethereum transactions
 | ------------------ | :-------------: |
 | Full name          | ethereumjs-tx |
 | Keywords           | ethereum, transactions |
-| # releases         | 8 |
-| # dependents       | 488 |
-| # downloads        | 2869257 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2520861.3333333335 |
+| # stars            | 754.0 |
 
 ## Links
 - [Homepage](https://github.com/ethereumjs/ethereumjs-tx)

@@ -1,7 +1,7 @@
 
 # Scala.js typings for emotion__is-prop-valid
 
-Typings are for version 0.8.5
+Typings are for version 1.2.0
 
 ## Library description:
 A function to check whether a prop is valid for HTML and SVG elements
@@ -10,15 +10,15 @@ A function to check whether a prop is valid for HTML and SVG elements
 | ------------------ | :-------------: |
 | Full name          | @emotion/is-prop-valid |
 | Keywords           | - |
-| # releases         | 25 |
-| # dependents       | 84 |
-| # downloads        | 74298572 |
-| # stars            | 0 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 3.9554516333333336E7 |
+| # stars            | 15226.0 |
 
 ## Links
-- [Homepage](https://github.com/emotion-js/emotion#readme)
+- [Homepage](https://github.com/emotion-js/emotion/tree/main#readme)
 - [Bugs](https://github.com/emotion-js/emotion/issues)
-- [Repository](https://github.com/emotion-js/emotion)
+- [Repository](https://github.com/emotion-js/emotion/tree/main)
 - [Npm](https://www.npmjs.com/package/%40emotion%2Fis-prop-valid)
     
 

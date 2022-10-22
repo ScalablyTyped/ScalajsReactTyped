@@ -1,12 +1,12 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "Listener")
 @js.native
-class Listener protected () extends js.Object {
+open class Listener protected () extends StObject {
   /**
     * @param {!Function} fn The acutal listener function.
     * @param {(Object|undefined)} scope The object in whose scope to invoke the
@@ -15,4 +15,3 @@ class Listener protected () extends js.Object {
     */
   def this(fn: js.Function, scope: js.Object, oneshot: Boolean) = this()
 }
-

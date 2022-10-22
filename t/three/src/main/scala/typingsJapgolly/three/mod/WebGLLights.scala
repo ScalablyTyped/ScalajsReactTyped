@@ -1,14 +1,15 @@
 package typingsJapgolly.three.mod
 
-import org.scalajs.dom.raw.WebGLRenderingContext
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "WebGLLights")
 @js.native
-class WebGLLights protected ()
-  extends typingsJapgolly.three.webGLLightsMod.WebGLLights {
-  def this(gl: WebGLRenderingContext, properties: js.Any, info: js.Any) = this()
+open class WebGLLights protected ()
+  extends typingsJapgolly.three.srcThreeMod.WebGLLights {
+  def this(
+    extensions: typingsJapgolly.three.srcRenderersWebglWebGLExtensionsMod.WebGLExtensions,
+    capabilities: typingsJapgolly.three.srcRenderersWebglWebGLCapabilitiesMod.WebGLCapabilities
+  ) = this()
 }
-

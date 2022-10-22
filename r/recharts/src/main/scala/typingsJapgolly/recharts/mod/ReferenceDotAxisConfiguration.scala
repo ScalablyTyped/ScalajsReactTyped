@@ -1,20 +1,22 @@
 package typingsJapgolly.recharts.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ReferenceDotAxisConfiguration extends js.Object {
+trait ReferenceDotAxisConfiguration extends StObject {
+  
   var scale: ScaleCalculator
 }
-
 object ReferenceDotAxisConfiguration {
-  @scala.inline
-  def apply(scale: /* x */ Double | String => CallbackTo[Double]): ReferenceDotAxisConfiguration = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("scale")(js.Any.fromFunction1((t0: /* x */ scala.Double | java.lang.String) => scale(t0).runNow()))
+  
+  inline def apply(scale: /* x */ Double | String => Double): ReferenceDotAxisConfiguration = {
+    val __obj = js.Dynamic.literal(scale = js.Any.fromFunction1(scale))
     __obj.asInstanceOf[ReferenceDotAxisConfiguration]
   }
+  
+  extension [Self <: ReferenceDotAxisConfiguration](x: Self) {
+    
+    inline def setScale(value: /* x */ Double | String => Double): Self = StObject.set(x, "scale", js.Any.fromFunction1(value))
+  }
 }
-

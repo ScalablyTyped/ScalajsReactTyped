@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.gridListTileBarGridListTileBarMod.GridListTileBarProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/GridListTileBar", JSImport.Namespace)
-@js.native
-object gridListTileBarMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[GridListTileBarProps, ComponentState, js.Any] {
-    def this(props: GridListTileBarProps) = this()
-    def this(props: GridListTileBarProps, context: js.Any) = this()
-  }
+object gridListTileBarMod {
   
+  @JSImport("@material-ui/core/GridListTileBar", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[GridListTileBarProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: GridListTileBarProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

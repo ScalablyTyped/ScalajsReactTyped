@@ -1,65 +1,74 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosDeviceFeaturesConfiguration extends DeviceConfiguration {
+trait IosDeviceFeaturesConfiguration
+  extends StObject
+     with DeviceConfiguration {
+  
   // Asset tag information for the device, displayed on the login window and lock screen.
-  var assetTagTemplate: js.UndefOr[String] = js.undefined
+  var assetTagTemplate: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // A list of app and folders to appear on the Home Screen Dock. This collection can contain a maximum of 500 elements.
-  var homeScreenDockIcons: js.UndefOr[js.Array[IosHomeScreenItem]] = js.undefined
+  var homeScreenDockIcons: js.UndefOr[NullableOption[js.Array[IosHomeScreenItem]]] = js.undefined
+  
   // A list of pages on the Home Screen. This collection can contain a maximum of 500 elements.
-  var homeScreenPages: js.UndefOr[js.Array[IosHomeScreenPage]] = js.undefined
+  var homeScreenPages: js.UndefOr[NullableOption[js.Array[IosHomeScreenPage]]] = js.undefined
+  
   // A footnote displayed on the login window and lock screen. Available in iOS 9.3.1 and later.
-  var lockScreenFootnote: js.UndefOr[String] = js.undefined
+  var lockScreenFootnote: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Notification settings for each bundle id. Applicable to devices in supervised mode only (iOS 9.3 and later). This
     * collection can contain a maximum of 500 elements.
     */
-  var notificationSettings: js.UndefOr[js.Array[IosNotificationSettings]] = js.undefined
+  var notificationSettings: js.UndefOr[NullableOption[js.Array[IosNotificationSettings]]] = js.undefined
 }
-
 object IosDeviceFeaturesConfiguration {
-  @scala.inline
-  def apply(
-    assetTagTemplate: String = null,
-    assignments: js.Array[DeviceConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceConfigurationDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    homeScreenDockIcons: js.Array[IosHomeScreenItem] = null,
-    homeScreenPages: js.Array[IosHomeScreenPage] = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    lockScreenFootnote: String = null,
-    notificationSettings: js.Array[IosNotificationSettings] = null,
-    userStatusOverview: DeviceConfigurationUserOverview = null,
-    userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
-  ): IosDeviceFeaturesConfiguration = {
+  
+  inline def apply(): IosDeviceFeaturesConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assetTagTemplate != null) __obj.updateDynamic("assetTagTemplate")(assetTagTemplate.asInstanceOf[js.Any])
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (homeScreenDockIcons != null) __obj.updateDynamic("homeScreenDockIcons")(homeScreenDockIcons.asInstanceOf[js.Any])
-    if (homeScreenPages != null) __obj.updateDynamic("homeScreenPages")(homeScreenPages.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (lockScreenFootnote != null) __obj.updateDynamic("lockScreenFootnote")(lockScreenFootnote.asInstanceOf[js.Any])
-    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosDeviceFeaturesConfiguration]
   }
+  
+  extension [Self <: IosDeviceFeaturesConfiguration](x: Self) {
+    
+    inline def setAssetTagTemplate(value: NullableOption[String]): Self = StObject.set(x, "assetTagTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setAssetTagTemplateNull: Self = StObject.set(x, "assetTagTemplate", null)
+    
+    inline def setAssetTagTemplateUndefined: Self = StObject.set(x, "assetTagTemplate", js.undefined)
+    
+    inline def setHomeScreenDockIcons(value: NullableOption[js.Array[IosHomeScreenItem]]): Self = StObject.set(x, "homeScreenDockIcons", value.asInstanceOf[js.Any])
+    
+    inline def setHomeScreenDockIconsNull: Self = StObject.set(x, "homeScreenDockIcons", null)
+    
+    inline def setHomeScreenDockIconsUndefined: Self = StObject.set(x, "homeScreenDockIcons", js.undefined)
+    
+    inline def setHomeScreenDockIconsVarargs(value: IosHomeScreenItem*): Self = StObject.set(x, "homeScreenDockIcons", js.Array(value*))
+    
+    inline def setHomeScreenPages(value: NullableOption[js.Array[IosHomeScreenPage]]): Self = StObject.set(x, "homeScreenPages", value.asInstanceOf[js.Any])
+    
+    inline def setHomeScreenPagesNull: Self = StObject.set(x, "homeScreenPages", null)
+    
+    inline def setHomeScreenPagesUndefined: Self = StObject.set(x, "homeScreenPages", js.undefined)
+    
+    inline def setHomeScreenPagesVarargs(value: IosHomeScreenPage*): Self = StObject.set(x, "homeScreenPages", js.Array(value*))
+    
+    inline def setLockScreenFootnote(value: NullableOption[String]): Self = StObject.set(x, "lockScreenFootnote", value.asInstanceOf[js.Any])
+    
+    inline def setLockScreenFootnoteNull: Self = StObject.set(x, "lockScreenFootnote", null)
+    
+    inline def setLockScreenFootnoteUndefined: Self = StObject.set(x, "lockScreenFootnote", js.undefined)
+    
+    inline def setNotificationSettings(value: NullableOption[js.Array[IosNotificationSettings]]): Self = StObject.set(x, "notificationSettings", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationSettingsNull: Self = StObject.set(x, "notificationSettings", null)
+    
+    inline def setNotificationSettingsUndefined: Self = StObject.set(x, "notificationSettings", js.undefined)
+    
+    inline def setNotificationSettingsVarargs(value: IosNotificationSettings*): Self = StObject.set(x, "notificationSettings", js.Array(value*))
+  }
 }
-

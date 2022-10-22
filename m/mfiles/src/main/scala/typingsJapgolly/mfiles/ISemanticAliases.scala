@@ -1,21 +1,27 @@
 package typingsJapgolly.mfiles
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISemanticAliases extends js.Object {
-  var Value: String
+trait ISemanticAliases extends StObject {
+  
   def Clone(): ISemanticAliases
+  
+  var Value: String
 }
-
 object ISemanticAliases {
-  @scala.inline
-  def apply(Clone: CallbackTo[ISemanticAliases], Value: String): ISemanticAliases = {
-    val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
-    __obj.updateDynamic("Clone")(Clone.toJsFn)
+  
+  inline def apply(Clone: CallbackTo[ISemanticAliases], Value: String): ISemanticAliases = {
+    val __obj = js.Dynamic.literal(Clone = Clone.toJsFn, Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISemanticAliases]
   }
+  
+  extension [Self <: ISemanticAliases](x: Self) {
+    
+    inline def setClone(value: CallbackTo[ISemanticAliases]): Self = StObject.set(x, "Clone", value.toJsFn)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+  }
 }
-

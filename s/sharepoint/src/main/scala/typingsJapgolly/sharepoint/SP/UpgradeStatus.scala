@@ -1,41 +1,32 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UpgradeStatus extends js.Object
-
+sealed trait UpgradeStatus extends StObject
 @JSGlobal("SP.UpgradeStatus")
 @js.native
-object UpgradeStatus extends js.Object {
-  @js.native
-  sealed trait completed extends UpgradeStatus
+object UpgradeStatus extends StObject {
   
   @js.native
-  sealed trait failed extends UpgradeStatus
+  sealed trait completed
+    extends StObject
+       with UpgradeStatus
   
   @js.native
-  sealed trait inProgress extends UpgradeStatus
+  sealed trait failed
+    extends StObject
+       with UpgradeStatus
   
   @js.native
-  sealed trait none extends UpgradeStatus
+  sealed trait inProgress
+    extends StObject
+       with UpgradeStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UpgradeStatus with Double] = js.native
-  /* 3 */ @js.native
-  object completed extends TopLevel[completed with Double]
-  
-  /* 2 */ @js.native
-  object failed extends TopLevel[failed with Double]
-  
-  /* 1 */ @js.native
-  object inProgress extends TopLevel[inProgress with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with UpgradeStatus
 }
-

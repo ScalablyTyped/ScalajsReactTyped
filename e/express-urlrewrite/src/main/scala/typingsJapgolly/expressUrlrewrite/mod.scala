@@ -1,16 +1,33 @@
 package typingsJapgolly.expressUrlrewrite
 
-import typingsJapgolly.express.mod.Handler
-import typingsJapgolly.std.RegExp
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.expressUrlrewrite.mod.urlRewrite.urlrewrite
+import typingsJapgolly.node.httpMod.IncomingMessage
+import typingsJapgolly.node.httpMod.ServerResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("express-urlrewrite", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(s: String): Handler = js.native
-  def apply(s: String, t: String): Handler = js.native
-  def apply(s: RegExp, t: String): Handler = js.native
+object mod extends Shortcut {
+  
+  @JSImport("express-urlrewrite", JSImport.Namespace)
+  @js.native
+  val ^ : urlrewrite = js.native
+  
+  type _To = urlrewrite
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: urlrewrite = ^
+  
+  object urlRewrite {
+    
+    type expressUrlRewriteInstance = js.Function3[
+        /* req */ IncomingMessage, 
+        /* res */ ServerResponse[IncomingMessage], 
+        /* cb */ js.Function0[Any], 
+        Unit
+      ]
+    
+    type urlrewrite = js.Function2[/* from */ String, /* to */ js.UndefOr[String], expressUrlRewriteInstance]
+  }
 }
-

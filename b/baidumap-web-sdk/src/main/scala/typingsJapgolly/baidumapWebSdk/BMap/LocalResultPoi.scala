@@ -1,27 +1,38 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LocalResultPoi extends js.Object {
+trait LocalResultPoi extends StObject {
+  
   var address: String
+  
   var city: String
+  
   var detailUrl: String
+  
   var isAccurate: Boolean
+  
   var phoneNumber: String
+  
   var point: Point
+  
   var postcode: String
+  
   var province: String
+  
   var tags: js.Array[String]
+  
   var title: String
+  
   var `type`: PoiType
+  
   var url: String
 }
-
 object LocalResultPoi {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     address: String,
     city: String,
     detailUrl: String,
@@ -39,5 +50,33 @@ object LocalResultPoi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocalResultPoi]
   }
+  
+  extension [Self <: LocalResultPoi](x: Self) {
+    
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setDetailUrl(value: String): Self = StObject.set(x, "detailUrl", value.asInstanceOf[js.Any])
+    
+    inline def setIsAccurate(value: Boolean): Self = StObject.set(x, "isAccurate", value.asInstanceOf[js.Any])
+    
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    
+    inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    
+    inline def setPostcode(value: String): Self = StObject.set(x, "postcode", value.asInstanceOf[js.Any])
+    
+    inline def setProvince(value: String): Self = StObject.set(x, "province", value.asInstanceOf[js.Any])
+    
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: PoiType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

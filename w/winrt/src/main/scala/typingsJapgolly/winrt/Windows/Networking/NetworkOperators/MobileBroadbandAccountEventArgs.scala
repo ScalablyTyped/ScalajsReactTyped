@@ -1,13 +1,16 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountEventArgs")
-@js.native
-class MobileBroadbandAccountEventArgs () extends IMobileBroadbandAccountEventArgs {
-  /* CompleteClass */
-  override var networkAccountId: String = js.native
+trait MobileBroadbandAccountEventArgs
+  extends StObject
+     with IMobileBroadbandAccountEventArgs
+object MobileBroadbandAccountEventArgs {
+  
+  inline def apply(networkAccountId: String): MobileBroadbandAccountEventArgs = {
+    val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MobileBroadbandAccountEventArgs]
+  }
 }
-

@@ -1,23 +1,31 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IMacAlgorithmProvider extends js.Object {
+trait IMacAlgorithmProvider extends StObject {
+  
   var algorithmName: String
-  var macLength: Double
+  
   def createKey(keyMaterial: IBuffer): CryptographicKey
+  
+  var macLength: Double
 }
-
 object IMacAlgorithmProvider {
-  @scala.inline
-  def apply(algorithmName: String, createKey: IBuffer => CallbackTo[CryptographicKey], macLength: Double): IMacAlgorithmProvider = {
-    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], macLength = macLength.asInstanceOf[js.Any])
-    __obj.updateDynamic("createKey")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => createKey(t0).runNow()))
+  
+  inline def apply(algorithmName: String, createKey: IBuffer => CryptographicKey, macLength: Double): IMacAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey), macLength = macLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMacAlgorithmProvider]
   }
+  
+  extension [Self <: IMacAlgorithmProvider](x: Self) {
+    
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    
+    inline def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
+    
+    inline def setMacLength(value: Double): Self = StObject.set(x, "macLength", value.asInstanceOf[js.Any])
+  }
 }
-

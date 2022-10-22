@@ -1,25 +1,25 @@
 package typingsJapgolly.reactTether
 
-import typingsJapgolly.reactTether.mod.ReactTether._ContraintsTo
+import typingsJapgolly.reactTether.mod.TetherEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactTetherStrings {
-  @js.native
-  sealed trait scrollParent extends _ContraintsTo
   
   @js.native
-  sealed trait together extends js.Object
+  sealed trait repositioned
+    extends StObject
+       with TetherEvent
+  inline def repositioned: repositioned = "repositioned".asInstanceOf[repositioned]
   
   @js.native
-  sealed trait window extends _ContraintsTo
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def scrollParent: scrollParent = "scrollParent".asInstanceOf[scrollParent]
-  @scala.inline
-  def together: together = "together".asInstanceOf[together]
-  @scala.inline
-  def window: window = "window".asInstanceOf[window]
+  @js.native
+  sealed trait update
+    extends StObject
+       with TetherEvent
+  inline def update: update = "update".asInstanceOf[update]
 }
-

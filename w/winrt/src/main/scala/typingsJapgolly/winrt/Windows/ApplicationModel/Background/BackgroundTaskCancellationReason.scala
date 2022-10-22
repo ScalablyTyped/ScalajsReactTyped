@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BackgroundTaskCancellationReason extends js.Object
-
+sealed trait BackgroundTaskCancellationReason extends StObject
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskCancellationReason")
 @js.native
-object BackgroundTaskCancellationReason extends js.Object {
-  @js.native
-  sealed trait abort extends BackgroundTaskCancellationReason
+object BackgroundTaskCancellationReason extends StObject {
   
   @js.native
-  sealed trait loggingOff extends BackgroundTaskCancellationReason
+  sealed trait abort
+    extends StObject
+       with BackgroundTaskCancellationReason
   
   @js.native
-  sealed trait servicingUpdate extends BackgroundTaskCancellationReason
+  sealed trait loggingOff
+    extends StObject
+       with BackgroundTaskCancellationReason
   
   @js.native
-  sealed trait terminating extends BackgroundTaskCancellationReason
+  sealed trait servicingUpdate
+    extends StObject
+       with BackgroundTaskCancellationReason
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BackgroundTaskCancellationReason with Double] = js.native
-  /* 0 */ @js.native
-  object abort extends TopLevel[abort with Double]
-  
-  /* 2 */ @js.native
-  object loggingOff extends TopLevel[loggingOff with Double]
-  
-  /* 3 */ @js.native
-  object servicingUpdate extends TopLevel[servicingUpdate with Double]
-  
-  /* 1 */ @js.native
-  object terminating extends TopLevel[terminating with Double]
-  
+  @js.native
+  sealed trait terminating
+    extends StObject
+       with BackgroundTaskCancellationReason
 }
-

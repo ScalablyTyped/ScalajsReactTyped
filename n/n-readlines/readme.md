@@ -10,10 +10,10 @@ Read file line by line without buffering the whole file in memory.
 | ------------------ | :-------------: |
 | Full name          | n-readlines |
 | Keywords           | read, line, reader, linereader, readfile, linebyline, synchronous, sync, readline, readlines |
-| # releases         | 2 |
-| # dependents       | 75 |
-| # downloads        | 586360 |
-| # stars            | 3 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 258949.66666666666 |
+| # stars            | 141.0 |
 
 ## Links
 - [Homepage](https://github.com/nacholibre/node-readlines#readme)

@@ -11,9 +11,9 @@ Ajax library with XHR2, promises and request limit
 | Full name          | qwest |
 | Keywords           | ajax, request, promises, xhr |
 | # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 149597 |
-| # stars            | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 26675.333333333332 |
+| # stars            | 719.0 |
 
 ## Links
 - [Homepage](https://github.com/pyrsmk/qwest#readme)

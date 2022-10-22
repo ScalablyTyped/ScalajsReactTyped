@@ -1,10 +1,13 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSetOptions extends DataSetQueueOptions {
+trait DataSetOptions
+  extends StObject
+     with DataSetQueueOptions {
+  
   /**
     * The name of the field containing the id of the items.
     * When data is fetched from a server which uses some specific field to identify items,
@@ -12,6 +15,7 @@ trait DataSetOptions extends DataSetQueueOptions {
     * For example CouchDB uses the field "_id" to identify documents.
     */
   var fieldId: js.UndefOr[String] = js.undefined
+  
   /**
     * An object containing field names as key, and data types as value.
     * By default, the type of the properties of items are left unchanged.
@@ -20,17 +24,23 @@ trait DataSetOptions extends DataSetQueueOptions {
     * from a server into JavaScript Date objects.
     * The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.undefined
+  var `type`: js.UndefOr[Any] = js.undefined
 }
-
 object DataSetOptions {
-  @scala.inline
-  def apply(fieldId: String = null, queue: js.Any | Boolean = null, `type`: js.Any = null): DataSetOptions = {
+  
+  inline def apply(): DataSetOptions = {
     val __obj = js.Dynamic.literal()
-    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId.asInstanceOf[js.Any])
-    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSetOptions]
   }
+  
+  extension [Self <: DataSetOptions](x: Self) {
+    
+    inline def setFieldId(value: String): Self = StObject.set(x, "fieldId", value.asInstanceOf[js.Any])
+    
+    inline def setFieldIdUndefined: Self = StObject.set(x, "fieldId", js.undefined)
+    
+    inline def setType(value: Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

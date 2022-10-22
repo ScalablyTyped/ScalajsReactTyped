@@ -1,19 +1,7 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCOfferAnswerOptions extends js.Object {
-  var voiceActivityDetection: js.UndefOr[scala.Boolean] = js.undefined
-}
-
-object RTCOfferAnswerOptions {
-  @scala.inline
-  def apply(voiceActivityDetection: js.UndefOr[scala.Boolean] = js.undefined): RTCOfferAnswerOptions = {
-    val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(voiceActivityDetection)) __obj.updateDynamic("voiceActivityDetection")(voiceActivityDetection.asInstanceOf[js.Any])
-    __obj.asInstanceOf[RTCOfferAnswerOptions]
-  }
-}
-
+trait RTCOfferAnswerOptions extends StObject

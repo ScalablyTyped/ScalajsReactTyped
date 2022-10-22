@@ -1,70 +1,57 @@
 package typingsJapgolly.materialUiCore.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.materialUiCore.createMuiThemeMod.Theme
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.materialUiCore.fadeFadeMod.FadeProps
-import typingsJapgolly.materialUiCore.fadeMod.default
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Fade {
-  def apply(
-    addEndListener: js.Any = null,
-    appear: js.UndefOr[Boolean] = js.undefined,
-    enter: js.UndefOr[Boolean] = js.undefined,
-    exit: js.UndefOr[Boolean] = js.undefined,
-    in: js.Any = null,
-    mountOnEnter: js.Any = null,
-    onEnter: js.Any = null,
-    onEntered: js.Any = null,
-    onEntering: js.Any = null,
-    onExit: js.Any = null,
-    onExited: js.Any = null,
-    onExiting: js.Any = null,
-    style: CSSProperties = null,
-    theme: Theme = null,
-    timeout: js.Any = null,
-    unmountOnExit: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FadeProps, default, Unit, FadeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (addEndListener != null) __obj.updateDynamic("addEndListener")(addEndListener.asInstanceOf[js.Any])
-    if (!js.isUndefined(appear)) __obj.updateDynamic("appear")(appear.asInstanceOf[js.Any])
-    if (!js.isUndefined(enter)) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
-    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
-    if (in != null) __obj.updateDynamic("in")(in.asInstanceOf[js.Any])
-    if (mountOnEnter != null) __obj.updateDynamic("mountOnEnter")(mountOnEnter.asInstanceOf[js.Any])
-    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
-    if (onEntered != null) __obj.updateDynamic("onEntered")(onEntered.asInstanceOf[js.Any])
-    if (onEntering != null) __obj.updateDynamic("onEntering")(onEntering.asInstanceOf[js.Any])
-    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
-    if (onExited != null) __obj.updateDynamic("onExited")(onExited.asInstanceOf[js.Any])
-    if (onExiting != null) __obj.updateDynamic("onExiting")(onExiting.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (unmountOnExit != null) __obj.updateDynamic("unmountOnExit")(unmountOnExit.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.materialUiCore.fadeFadeMod.FadeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.materialUiCore.fadeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.materialUiCore.fadeFadeMod.FadeProps])(children: _*)
-  }
-  @JSImport("@material-ui/core/Fade", JSImport.Default)
+  @JSImport("@material-ui/core", "Fade_")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def addEndListener(value: Any): this.type = set("addEndListener", value.asInstanceOf[js.Any])
+    
+    inline def appear(value: Boolean): this.type = set("appear", value.asInstanceOf[js.Any])
+    
+    inline def disableStrictModeCompat(value: Boolean): this.type = set("disableStrictModeCompat", value.asInstanceOf[js.Any])
+    
+    inline def enter(value: Boolean): this.type = set("enter", value.asInstanceOf[js.Any])
+    
+    inline def exit(value: Boolean): this.type = set("exit", value.asInstanceOf[js.Any])
+    
+    inline def in(value: Boolean): this.type = set("in", value.asInstanceOf[js.Any])
+    
+    inline def mountOnEnter(value: Any): this.type = set("mountOnEnter", value.asInstanceOf[js.Any])
+    
+    inline def onEnter(value: Any): this.type = set("onEnter", value.asInstanceOf[js.Any])
+    
+    inline def onEntered(value: Any): this.type = set("onEntered", value.asInstanceOf[js.Any])
+    
+    inline def onEntering(value: Any): this.type = set("onEntering", value.asInstanceOf[js.Any])
+    
+    inline def onExit(value: Any): this.type = set("onExit", value.asInstanceOf[js.Any])
+    
+    inline def onExited(value: Any): this.type = set("onExited", value.asInstanceOf[js.Any])
+    
+    inline def onExiting(value: Any): this.type = set("onExiting", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def timeout(value: Any): this.type = set("timeout", value.asInstanceOf[js.Any])
+    
+    inline def unmountOnExit(value: Any): this.type = set("unmountOnExit", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Fade.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: FadeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

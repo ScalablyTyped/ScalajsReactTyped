@@ -1,15 +1,15 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.coreTransportMod.Transport
-import typingsJapgolly.sipJs.transactionUserMod.ServerTransactionUser
+import typingsJapgolly.sipJs.libCoreTransactionsTransactionUserMod.ServerTransactionUser
+import typingsJapgolly.sipJs.libCoreTransportMod.Transport
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.NonInviteServerTransaction")
 @js.native
-class NonInviteServerTransaction protected ()
-  extends typingsJapgolly.sipJs.coreMod.NonInviteServerTransaction {
+open class NonInviteServerTransaction protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.NonInviteServerTransaction {
   /**
     * Constructor.
     * After construction the transaction will be in the "trying": state and the transaction
@@ -20,9 +20,8 @@ class NonInviteServerTransaction protected ()
     * @param user - The transaction user.
     */
   def this(
-    request: typingsJapgolly.sipJs.messagesMod.IncomingRequestMessage,
+    request: typingsJapgolly.sipJs.libCoreMessagesMod.IncomingRequestMessage,
     transport: Transport,
     user: ServerTransactionUser
   ) = this()
 }
-

@@ -1,28 +1,19 @@
 package typingsJapgolly.durandal
 
-import typingsJapgolly.knockout.KnockoutComputed
-import typingsJapgolly.knockout.KnockoutObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DurandalActivator[T] extends KnockoutComputed[T] {
-  /**
-    * An observable which indicates whether or not the activator is currently in the process of activating an instance.
-    * @returns {boolean}
-    */
-  @JSName("isActivating")
-  var isActivating_Original: KnockoutObservable[Boolean] = js.native
-  /**
-    * The settings for this activator.
-    */
-  var settings: DurandalActivatorSettings = js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<T> * / any */ @js.native
+trait DurandalActivator[T] extends StObject {
+  
   /**
     * Activates the activator, in its current state.
     * @returns {promise}
     */
   def activate(): DurandalPromise[Boolean] = js.native
+  
   /**
     * Activates the specified item.
     * @param {object} newItem The item to activate.
@@ -30,12 +21,14 @@ trait DurandalActivator[T] extends KnockoutComputed[T] {
     * @returns {promise}
     */
   def activateItem(newItem: T): DurandalPromise[Boolean] = js.native
-  def activateItem(newItem: T, activationData: js.Any): DurandalPromise[Boolean] = js.native
+  def activateItem(newItem: T, activationData: Any): DurandalPromise[Boolean] = js.native
+  
   /**
     * Determines whether or not the activator, in its current state, can be activated.
     * @returns {promise}
     */
   def canActivate(): DurandalPromise[Boolean] = js.native
+  
   /**
     * Determines whether or not the specified item can be activated.
     * @param {object} item The item to check.
@@ -43,12 +36,14 @@ trait DurandalActivator[T] extends KnockoutComputed[T] {
     * @returns {promise}
     */
   def canActivateItem(newItem: T): DurandalPromise[Boolean] = js.native
-  def canActivateItem(newItem: T, activationData: js.Any): DurandalPromise[Boolean] = js.native
+  def canActivateItem(newItem: T, activationData: Any): DurandalPromise[Boolean] = js.native
+  
   /**
     * Determines whether or not the activator, in its current state, can be deactivated.
     * @returns {promise}
     */
   def canDeactivate(close: Boolean): DurandalPromise[Boolean] = js.native
+  
   /**
     * Determines whether or not the specified item can be deactivated.
     * @param {object} item The item to check.
@@ -56,11 +51,13 @@ trait DurandalActivator[T] extends KnockoutComputed[T] {
     * @returns {promise}
     */
   def canDeactivateItem(item: T, close: Boolean): DurandalPromise[Boolean] = js.native
+  
   /**
     * Deactivates the activator, in its current state.
     * @returns {promise}
     */
   def deactivate(close: Boolean): DurandalPromise[Boolean] = js.native
+  
   /**
     * Deactivates the specified item.
     * @param {object} item The item to deactivate.
@@ -68,23 +65,25 @@ trait DurandalActivator[T] extends KnockoutComputed[T] {
     * @returns {promise}
     */
   def deactivateItem(item: T, close: Boolean): DurandalPromise[Boolean] = js.native
+  
   /**
     * Sets up a collection representing a pool of objects which the activator will activate. See below for details. Activators without an item bool always close their values on deactivate. Activators with an items pool only deactivate, but do not close them.
     */
-  def forItems(items: js.Array[_]): DurandalActivator[T] = js.native
+  def forItems(items: js.Array[Any]): DurandalActivator[T] = js.native
+  
   /**
     * Adds canActivate, activate, canDeactivate and deactivate functions to the provided model which pass through to the corresponding functions on the activator.
     */
-  def includeIn(includeIn: js.Any): Unit = js.native
+  def includeIn(includeIn: Any): Unit = js.native
+  
   /**
     * An observable which indicates whether or not the activator is currently in the process of activating an instance.
     * @returns {boolean}
     */
-  def isActivating(): Boolean = js.native
+  var isActivating: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any = js.native
+  
   /**
-    * An observable which indicates whether or not the activator is currently in the process of activating an instance.
-    * @returns {boolean}
+    * The settings for this activator.
     */
-  def isActivating(value: Boolean): Unit = js.native
+  var settings: DurandalActivatorSettings = js.native
 }
-

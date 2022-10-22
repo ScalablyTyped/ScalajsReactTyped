@@ -1,20 +1,25 @@
 package typingsJapgolly.msRestAzure.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MSIAppServiceOptions extends MSIOptions {
+trait MSIAppServiceOptions
+  extends StObject
+     with MSIOptions {
+  
   /**
     * @property {string} [msiApiVersion] - The api-version of the local MSI agent. Default value is "2017-09-01".
     */
   var msiApiVersion: js.UndefOr[String] = js.undefined
+  
   /**
     * @property {string} [msiEndpoint] - The local URL from which your app can request tokens.
     * Either provide this parameter or set the environment varaible `MSI_ENDPOINT`.
     * For example: `export MSI_ENDPOINT="http://127.0.0.1:41741/MSI/token/"`
     */
   var msiEndpoint: js.UndefOr[String] = js.undefined
+  
   /**
     * @property {string} [msiSecret] - The secret used in communication between your code and the local MSI agent.
     * Either provide this parameter or set the environment varaible `MSI_SECRET`.
@@ -22,21 +27,25 @@ trait MSIAppServiceOptions extends MSIOptions {
     */
   var msiSecret: js.UndefOr[String] = js.undefined
 }
-
 object MSIAppServiceOptions {
-  @scala.inline
-  def apply(
-    msiApiVersion: String = null,
-    msiEndpoint: String = null,
-    msiSecret: String = null,
-    resource: String = null
-  ): MSIAppServiceOptions = {
+  
+  inline def apply(): MSIAppServiceOptions = {
     val __obj = js.Dynamic.literal()
-    if (msiApiVersion != null) __obj.updateDynamic("msiApiVersion")(msiApiVersion.asInstanceOf[js.Any])
-    if (msiEndpoint != null) __obj.updateDynamic("msiEndpoint")(msiEndpoint.asInstanceOf[js.Any])
-    if (msiSecret != null) __obj.updateDynamic("msiSecret")(msiSecret.asInstanceOf[js.Any])
-    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[MSIAppServiceOptions]
   }
+  
+  extension [Self <: MSIAppServiceOptions](x: Self) {
+    
+    inline def setMsiApiVersion(value: String): Self = StObject.set(x, "msiApiVersion", value.asInstanceOf[js.Any])
+    
+    inline def setMsiApiVersionUndefined: Self = StObject.set(x, "msiApiVersion", js.undefined)
+    
+    inline def setMsiEndpoint(value: String): Self = StObject.set(x, "msiEndpoint", value.asInstanceOf[js.Any])
+    
+    inline def setMsiEndpointUndefined: Self = StObject.set(x, "msiEndpoint", js.undefined)
+    
+    inline def setMsiSecret(value: String): Self = StObject.set(x, "msiSecret", value.asInstanceOf[js.Any])
+    
+    inline def setMsiSecretUndefined: Self = StObject.set(x, "msiSecret", js.undefined)
+  }
 }
-

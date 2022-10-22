@@ -1,19 +1,16 @@
 package typingsJapgolly.jsonRulesEngine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonRulesEngineStrings {
-  @js.native
-  sealed trait failure extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait failure extends StObject
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  @js.native
+  sealed trait success extends StObject
+  inline def success: success = "success".asInstanceOf[success]
 }
-

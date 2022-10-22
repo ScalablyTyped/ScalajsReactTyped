@@ -1,9 +1,8 @@
-package typingsJapgolly
+package typingsJapgolly.each
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object each {
-  type EachStatic = js.Function1[/* array */ js.Array[js.Any], typingsJapgolly.each.Each_]
-}
+
+type EachStatic = js.Function1[/* array */ js.Array[Any], Each]

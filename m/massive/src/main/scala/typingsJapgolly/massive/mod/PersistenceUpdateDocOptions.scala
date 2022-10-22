@@ -1,19 +1,24 @@
 package typingsJapgolly.massive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PersistenceUpdateDocOptions extends js.Object {
+trait PersistenceUpdateDocOptions extends StObject {
+  
   var body: js.UndefOr[String] = js.undefined
 }
-
 object PersistenceUpdateDocOptions {
-  @scala.inline
-  def apply(body: String = null): PersistenceUpdateDocOptions = {
+  
+  inline def apply(): PersistenceUpdateDocOptions = {
     val __obj = js.Dynamic.literal()
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistenceUpdateDocOptions]
   }
+  
+  extension [Self <: PersistenceUpdateDocOptions](x: Self) {
+    
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+  }
 }
-

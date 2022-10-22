@@ -1,20 +1,21 @@
 package typingsJapgolly.webpackErrorNotification
 
 import typingsJapgolly.webpackErrorNotification.mod._Strategy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackErrorNotificationStrings {
-  @js.native
-  sealed trait darwin extends _Strategy
   
   @js.native
-  sealed trait linux extends _Strategy
+  sealed trait darwin
+    extends StObject
+       with _Strategy
+  inline def darwin: darwin = "darwin".asInstanceOf[darwin]
   
-  @scala.inline
-  def darwin: darwin = "darwin".asInstanceOf[darwin]
-  @scala.inline
-  def linux: linux = "linux".asInstanceOf[linux]
+  @js.native
+  sealed trait linux
+    extends StObject
+       with _Strategy
+  inline def linux: linux = "linux".asInstanceOf[linux]
 }
-

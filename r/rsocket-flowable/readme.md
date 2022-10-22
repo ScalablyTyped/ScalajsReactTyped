@@ -10,10 +10,10 @@ ReactiveStreams for JavaScript
 | ------------------ | :-------------: |
 | Full name          | rsocket-flowable |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 17 |
-| # downloads        | 137179 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 554720.0 |
+| # stars            | 495.0 |
 
 ## Links
 - [Homepage](https://github.com/rsocket/rsocket-js#readme)

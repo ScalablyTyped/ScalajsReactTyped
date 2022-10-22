@@ -1,24 +1,21 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.sis
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.manual
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait EducationExternalSource extends js.Object
-
+trait EducationExternalSource extends StObject
 object EducationExternalSource {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def manual: typingsJapgolly.microsoftGraph.microsoftGraphStrings.manual = this.cast("manual")
-  @scala.inline
-  def sis: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sis = this.cast("sis")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  
+  inline def manual: typingsJapgolly.microsoftGraph.microsoftGraphStrings.manual = "manual".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.manual]
+  
+  inline def sis: typingsJapgolly.microsoftGraph.microsoftGraphStrings.sis = "sis".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.sis]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }
-

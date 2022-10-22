@@ -1,22 +1,27 @@
 package typingsJapgolly.yandexMaps.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPanoramaTileLevel extends js.Object {
+trait IPanoramaTileLevel extends StObject {
+  
   def getImageSize(): js.Array[Double]
+  
   def getTileUrl(x: Double, y: Double): String
 }
-
 object IPanoramaTileLevel {
-  @scala.inline
-  def apply(getImageSize: CallbackTo[js.Array[Double]], getTileUrl: (Double, Double) => CallbackTo[String]): IPanoramaTileLevel = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getImageSize")(getImageSize.toJsFn)
-    __obj.updateDynamic("getTileUrl")(js.Any.fromFunction2((t0: scala.Double, t1: scala.Double) => getTileUrl(t0, t1).runNow()))
+  
+  inline def apply(getImageSize: CallbackTo[js.Array[Double]], getTileUrl: (Double, Double) => String): IPanoramaTileLevel = {
+    val __obj = js.Dynamic.literal(getImageSize = getImageSize.toJsFn, getTileUrl = js.Any.fromFunction2(getTileUrl))
     __obj.asInstanceOf[IPanoramaTileLevel]
   }
+  
+  extension [Self <: IPanoramaTileLevel](x: Self) {
+    
+    inline def setGetImageSize(value: CallbackTo[js.Array[Double]]): Self = StObject.set(x, "getImageSize", value.toJsFn)
+    
+    inline def setGetTileUrl(value: (Double, Double) => String): Self = StObject.set(x, "getTileUrl", js.Any.fromFunction2(value))
+  }
 }
-

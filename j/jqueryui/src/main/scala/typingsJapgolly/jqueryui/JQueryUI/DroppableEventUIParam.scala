@@ -1,25 +1,37 @@
 package typingsJapgolly.jqueryui.JQueryUI
 
-import typingsJapgolly.jqueryui.AnonLeft
 import typingsJapgolly.jqueryui.JQuery
+import typingsJapgolly.jqueryui.anon.Left
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Droppable //////////////////////////////////////////////////
-trait DroppableEventUIParam extends js.Object {
-  var draggable: JQuery
-  var helper: JQuery
-  var offset: AnonLeft
-  var position: AnonLeft
-}
-
-object DroppableEventUIParam {
-  @scala.inline
-  def apply(draggable: JQuery, helper: JQuery, offset: AnonLeft, position: AnonLeft): DroppableEventUIParam = {
-    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
+trait DroppableEventUIParam extends StObject {
   
+  var draggable: JQuery
+  
+  var helper: JQuery
+  
+  var offset: Left
+  
+  var position: Left
+}
+object DroppableEventUIParam {
+  
+  inline def apply(draggable: JQuery, helper: JQuery, offset: Left, position: Left): DroppableEventUIParam = {
+    val __obj = js.Dynamic.literal(draggable = draggable.asInstanceOf[js.Any], helper = helper.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableEventUIParam]
   }
+  
+  extension [Self <: DroppableEventUIParam](x: Self) {
+    
+    inline def setDraggable(value: JQuery): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setHelper(value: JQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
+    
+    inline def setOffset(value: Left): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Left): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,16 +1,31 @@
 package typingsJapgolly.angularCommon
 
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.angularCommon.anon.MNT
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/common/locales/lt", JSImport.Namespace)
-@js.native
-object localesLtMod extends js.Object {
+object localesLtMod extends Shortcut {
+  
+  @JSImport("@angular/common/locales/lt", JSImport.Default)
+  @js.native
   val default: js.Array[
     js.UndefOr[
-      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* n */ Double, Double]) | AnonMNT
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | MNT
     ]
   ] = js.native
+  
+  type _To = js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | MNT
+    ]
+  ]
+  
+  /* This means you don't have to write `default`, but can instead just say `localesLtMod.foo` */
+  override def _to: js.Array[
+    js.UndefOr[
+      String | Double | (js.Array[js.UndefOr[js.Array[String] | Double | String]]) | (js.Function1[/* val */ Double, Double]) | MNT
+    ]
+  ] = default
 }
-

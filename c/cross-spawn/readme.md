@@ -10,15 +10,12 @@ Cross platform child_process#spawn and child_process#spawnSync
 | ------------------ | :-------------: |
 | Full name          | cross-spawn |
 | Keywords           | spawn, spawnSync, windows, cross-platform, path-ext, shebang, cmd, execute |
-| # releases         | 9 |
-| # dependents       | 3607 |
-| # downloads        | 1048607418 |
-| # stars            | 49 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.4114323866666666E8 |
+| # stars            | 962.0 |
 
 ## Links
-- [Homepage](https://github.com/moxystudio/node-cross-spawn)
-- [Bugs](https://github.com/moxystudio/node-cross-spawn/issues)
-- [Repository](https://github.com/moxystudio/node-cross-spawn)
 - [Npm](https://www.npmjs.com/package/cross-spawn)
     
 

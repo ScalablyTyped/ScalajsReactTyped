@@ -1,213 +1,439 @@
 package typingsJapgolly.phaser.Phaser.Types.Core
 
-import org.scalajs.dom.raw.CanvasRenderingContext2D
-import org.scalajs.dom.raw.HTMLCanvasElement
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.CanvasRenderingContext2D
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.phaser.Phaser.Scene
 import typingsJapgolly.phaser.Phaser.Types.Scenes.CreateSceneFromObjectConfig
 import typingsJapgolly.phaser.Phaser.Types.Scenes.SettingsConfig
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GameConfig extends js.Object {
+trait GameConfig extends StObject {
+  
+  /**
+    * When set to `true`, WebGL uses linear interpolation to draw scaled or rotated textures, giving a smooth appearance. When set to `false`, WebGL uses nearest-neighbor interpolation, giving a crisper appearance. `false` also disables antialiasing of the game canvas itself, if the browser supports it, when the game canvas is scaled.
+    */
+  var antialias: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * Sets the `antialias` property when the WebGL context is created. Setting this value does not impact any subsequent textures that are created, or the canvas style attributes.
+    */
+  var antialiasGL: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The Audio Configuration object.
     */
   var audio: js.UndefOr[AudioConfig] = js.undefined
+  
   /**
     * Automatically call window.focus() when the game boots. Usually necessary to capture input events if the game is in a separate frame.
     */
   var autoFocus: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The background color of the game canvas. The default is black.
     */
   var backgroundColor: js.UndefOr[String | Double] = js.undefined
+  
   /**
     * Configuration for the banner printed in the browser console when the game starts.
     */
   var banner: js.UndefOr[Boolean | BannerConfig] = js.undefined
+  
+  /**
+    * The default WebGL batch size. Represents the number of _quads_ that can be added to a single batch.
+    */
+  var batchSize: js.UndefOr[Double] = js.undefined
+  
   /**
     * Optional callbacks to run before or after game boot.
     */
   var callbacks: js.UndefOr[CallbacksConfig] = js.undefined
+  
   /**
     * Provide your own Canvas element for Phaser to use instead of creating one.
     */
   var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
+  
   /**
     * CSS styles to apply to the game canvas instead of Phasers default styles.
     */
   var canvasStyle: js.UndefOr[String] = js.undefined
+  
+  /**
+    * Whether the game canvas will be cleared between each rendering frame.
+    */
+  var clearBeforeRender: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Provide your own Canvas Context for Phaser to use, instead of creating one.
     */
   var context: js.UndefOr[CanvasRenderingContext2D] = js.undefined
+  
   /**
     * Is Phaser running under a custom (non-native web) environment? If so, set this to `true` to skip internal Feature detection. If `true` the `renderType` cannot be left as `AUTO`.
     */
   var customEnvironment: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * When set to `true` it will create a desynchronized context for both 2D and WebGL. See https://developers.google.com/web/updates/2019/05/desynchronized for details.
+    */
+  var desynchronized: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Disable the browser's default 'contextmenu' event (usually triggered by a right-button mouse click).
     */
   var disableContextMenu: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The DOM Container configuration object.
     */
   var dom: js.UndefOr[DOMContainerConfig] = js.undefined
+  
+  /**
+    * Let the browser abort creating a WebGL context if it judges performance would be unacceptable.
+    */
+  var failIfMajorPerformanceCaveat: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Game loop configuration.
     */
   var fps: js.UndefOr[FPSConfig] = js.undefined
+  
   /**
     * The height of the game, in game pixels.
     */
-  var height: js.UndefOr[integer | String] = js.undefined
+  var height: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * Images configuration.
     */
   var images: js.UndefOr[ImagesConfig] = js.undefined
+  
   /**
     * Input configuration, or `false` to disable all game input.
     */
   var input: js.UndefOr[Boolean | InputConfig] = js.undefined
+  
   /**
     * Loader configuration.
     */
   var loader: js.UndefOr[LoaderConfig] = js.undefined
+  
   /**
-    * The DOM element that will contain the game canvas, or its `id`. If undefined or if the named element doesn't exist, the game canvas is inserted directly into the document body. If `null` no parent will be used and you are responsible for adding the canvas to your environment.
+    * The maximum number of lights allowed to be visible within range of a single Camera in the LightManager.
+    */
+  var maxLights: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * When in WebGL mode, this sets the maximum number of GPU Textures to use. The default, -1, will use all available units. The WebGL1 spec says all browsers should provide a minimum of 8.
+    */
+  var maxTextures: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The mipmap magFilter to be used when creating WebGL textures.
+    */
+  var mipmapFilter: js.UndefOr[String] = js.undefined
+  
+  /**
+    * The DOM element that will contain the game canvas, or its `id`. If undefined, or if the named element doesn't exist, the game canvas is appended to the document body. If `null` no parent will be used and you are responsible for adding the canvas to the dom.
     */
   var parent: js.UndefOr[HTMLElement | String] = js.undefined
+  
   /**
     * Physics configuration.
     */
   var physics: js.UndefOr[PhysicsConfig] = js.undefined
+  
+  /**
+    * A WebGL Pipeline configuration object. Can also be part of the `RenderConfig`.
+    */
+  var pipeline: js.UndefOr[PipelineConfig] = js.undefined
+  
+  /**
+    * Sets `antialias` to false and `roundPixels` to true. This is the best setting for pixel-art games.
+    */
+  var pixelArt: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Plugins to install.
     */
   var plugins: js.UndefOr[PluginObject | js.Array[PluginObjectItem]] = js.undefined
+  
+  /**
+    * "high-performance", "low-power" or "default". A hint to the browser on how much device power the game might use.
+    */
+  var powerPreference: js.UndefOr[String] = js.undefined
+  
+  /**
+    * In WebGL mode, the drawing buffer contains colors with pre-multiplied alpha.
+    */
+  var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If the value is true the WebGL buffers will not be cleared and will preserve their values until cleared or overwritten by the author.
+    */
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Game renderer configuration.
     */
   var render: js.UndefOr[RenderConfig] = js.undefined
+  
   /**
-    * The size of each game pixel, in canvas pixels. Values larger than 1 are "high" resolution.
+    * Draw texture-based Game Objects at only whole-integer positions. Game Objects without textures, like Graphics, ignore this property.
     */
-  var resolution: js.UndefOr[Double] = js.undefined
+  var roundPixels: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The Scale Manager configuration.
     */
   var scale: js.UndefOr[ScaleConfig] = js.undefined
+  
   /**
     * A scene or scenes to add to the game. If several are given, the first is started; the remainder are started only if they have `{ active: true }`. See the `sceneConfig` argument in `Phaser.Scenes.SceneManager#add`.
     */
   var scene: js.UndefOr[
     Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
   ] = js.undefined
+  
   /**
     * Seed for the random number generator.
     */
   var seed: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * The title of the game. Shown in the browser console.
     */
   var title: js.UndefOr[String] = js.undefined
+  
   /**
-    * Whether the game canvas will have a transparent background.
+    * Whether the game canvas will be transparent. Boolean that indicates if the canvas contains an alpha channel. If set to false, the browser now knows that the backdrop is always opaque, which can speed up drawing of transparent content and images.
     */
   var transparent: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Which renderer to use. Phaser.AUTO, Phaser.CANVAS, Phaser.HEADLESS, or Phaser.WEBGL. AUTO picks WEBGL if available, otherwise CANVAS.
     */
   var `type`: js.UndefOr[Double] = js.undefined
+  
   /**
     * The URL of the game. Shown in the browser console.
     */
   var url: js.UndefOr[String] = js.undefined
+  
   /**
     * The version of the game. Shown in the browser console.
     */
   var version: js.UndefOr[String] = js.undefined
+  
   /**
     * The width of the game, in game pixels.
     */
-  var width: js.UndefOr[integer | String] = js.undefined
+  var width: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * Simple scale applied to the game canvas. 2 is double size, 0.5 is half size, etc.
     */
   var zoom: js.UndefOr[Double] = js.undefined
 }
-
 object GameConfig {
-  @scala.inline
-  def apply(
-    audio: AudioConfig = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    backgroundColor: String | Double = null,
-    banner: Boolean | BannerConfig = null,
-    callbacks: CallbacksConfig = null,
-    canvas: HTMLCanvasElement = null,
-    canvasStyle: String = null,
-    context: CanvasRenderingContext2D = null,
-    customEnvironment: js.UndefOr[Boolean] = js.undefined,
-    disableContextMenu: js.UndefOr[Boolean] = js.undefined,
-    dom: DOMContainerConfig = null,
-    fps: FPSConfig = null,
-    height: integer | String = null,
-    images: ImagesConfig = null,
-    input: Boolean | InputConfig = null,
-    loader: LoaderConfig = null,
-    parent: HTMLElement | String = null,
-    physics: PhysicsConfig = null,
-    plugins: PluginObject | js.Array[PluginObjectItem] = null,
-    render: RenderConfig = null,
-    resolution: Int | Double = null,
-    scale: ScaleConfig = null,
-    scene: Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function = null,
-    seed: js.Array[String] = null,
-    title: String = null,
-    transparent: js.UndefOr[Boolean] = js.undefined,
-    `type`: Int | Double = null,
-    url: String = null,
-    version: String = null,
-    width: integer | String = null,
-    zoom: Int | Double = null
-  ): GameConfig = {
+  
+  inline def apply(): GameConfig = {
     val __obj = js.Dynamic.literal()
-    if (audio != null) __obj.updateDynamic("audio")(audio.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
-    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks.asInstanceOf[js.Any])
-    if (canvas != null) __obj.updateDynamic("canvas")(canvas.asInstanceOf[js.Any])
-    if (canvasStyle != null) __obj.updateDynamic("canvasStyle")(canvasStyle.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(customEnvironment)) __obj.updateDynamic("customEnvironment")(customEnvironment.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu.asInstanceOf[js.Any])
-    if (dom != null) __obj.updateDynamic("dom")(dom.asInstanceOf[js.Any])
-    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (physics != null) __obj.updateDynamic("physics")(physics.asInstanceOf[js.Any])
-    if (plugins != null) __obj.updateDynamic("plugins")(plugins.asInstanceOf[js.Any])
-    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
-    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (scene != null) __obj.updateDynamic("scene")(scene.asInstanceOf[js.Any])
-    if (seed != null) __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameConfig]
   }
+  
+  extension [Self <: GameConfig](x: Self) {
+    
+    inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasGL(value: Boolean): Self = StObject.set(x, "antialiasGL", value.asInstanceOf[js.Any])
+    
+    inline def setAntialiasGLUndefined: Self = StObject.set(x, "antialiasGL", js.undefined)
+    
+    inline def setAntialiasUndefined: Self = StObject.set(x, "antialias", js.undefined)
+    
+    inline def setAudio(value: AudioConfig): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    
+    inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+    
+    inline def setBackgroundColor(value: String | Double): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBanner(value: Boolean | BannerConfig): Self = StObject.set(x, "banner", value.asInstanceOf[js.Any])
+    
+    inline def setBannerUndefined: Self = StObject.set(x, "banner", js.undefined)
+    
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    
+    inline def setCallbacks(value: CallbacksConfig): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+    
+    inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+    
+    inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    
+    inline def setCanvasStyle(value: String): Self = StObject.set(x, "canvasStyle", value.asInstanceOf[js.Any])
+    
+    inline def setCanvasStyleUndefined: Self = StObject.set(x, "canvasStyle", js.undefined)
+    
+    inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+    
+    inline def setClearBeforeRender(value: Boolean): Self = StObject.set(x, "clearBeforeRender", value.asInstanceOf[js.Any])
+    
+    inline def setClearBeforeRenderUndefined: Self = StObject.set(x, "clearBeforeRender", js.undefined)
+    
+    inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setCustomEnvironment(value: Boolean): Self = StObject.set(x, "customEnvironment", value.asInstanceOf[js.Any])
+    
+    inline def setCustomEnvironmentUndefined: Self = StObject.set(x, "customEnvironment", js.undefined)
+    
+    inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
+    
+    inline def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
+    
+    inline def setDisableContextMenu(value: Boolean): Self = StObject.set(x, "disableContextMenu", value.asInstanceOf[js.Any])
+    
+    inline def setDisableContextMenuUndefined: Self = StObject.set(x, "disableContextMenu", js.undefined)
+    
+    inline def setDom(value: DOMContainerConfig): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+    
+    inline def setDomUndefined: Self = StObject.set(x, "dom", js.undefined)
+    
+    inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
+    
+    inline def setFailIfMajorPerformanceCaveatUndefined: Self = StObject.set(x, "failIfMajorPerformanceCaveat", js.undefined)
+    
+    inline def setFps(value: FPSConfig): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    
+    inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setImages(value: ImagesConfig): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    
+    inline def setInput(value: Boolean | InputConfig): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    
+    inline def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    
+    inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+    
+    inline def setMaxLights(value: Double): Self = StObject.set(x, "maxLights", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLightsUndefined: Self = StObject.set(x, "maxLights", js.undefined)
+    
+    inline def setMaxTextures(value: Double): Self = StObject.set(x, "maxTextures", value.asInstanceOf[js.Any])
+    
+    inline def setMaxTexturesUndefined: Self = StObject.set(x, "maxTextures", js.undefined)
+    
+    inline def setMipmapFilter(value: String): Self = StObject.set(x, "mipmapFilter", value.asInstanceOf[js.Any])
+    
+    inline def setMipmapFilterUndefined: Self = StObject.set(x, "mipmapFilter", js.undefined)
+    
+    inline def setParent(value: HTMLElement | String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+    
+    inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
+    
+    inline def setPipeline(value: PipelineConfig): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    
+    inline def setPixelArt(value: Boolean): Self = StObject.set(x, "pixelArt", value.asInstanceOf[js.Any])
+    
+    inline def setPixelArtUndefined: Self = StObject.set(x, "pixelArt", js.undefined)
+    
+    inline def setPlugins(value: PluginObject | js.Array[PluginObjectItem]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    
+    inline def setPluginsVarargs(value: PluginObjectItem*): Self = StObject.set(x, "plugins", js.Array(value*))
+    
+    inline def setPowerPreference(value: String): Self = StObject.set(x, "powerPreference", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPreferenceUndefined: Self = StObject.set(x, "powerPreference", js.undefined)
+    
+    inline def setPremultipliedAlpha(value: Boolean): Self = StObject.set(x, "premultipliedAlpha", value.asInstanceOf[js.Any])
+    
+    inline def setPremultipliedAlphaUndefined: Self = StObject.set(x, "premultipliedAlpha", js.undefined)
+    
+    inline def setPreserveDrawingBuffer(value: Boolean): Self = StObject.set(x, "preserveDrawingBuffer", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveDrawingBufferUndefined: Self = StObject.set(x, "preserveDrawingBuffer", js.undefined)
+    
+    inline def setRender(value: RenderConfig): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    
+    inline def setRoundPixels(value: Boolean): Self = StObject.set(x, "roundPixels", value.asInstanceOf[js.Any])
+    
+    inline def setRoundPixelsUndefined: Self = StObject.set(x, "roundPixels", js.undefined)
+    
+    inline def setScale(value: ScaleConfig): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    
+    inline def setScene(
+      value: Scene | (js.Array[CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig]) | SettingsConfig | CreateSceneFromObjectConfig | js.Function
+    ): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    
+    inline def setSceneUndefined: Self = StObject.set(x, "scene", js.undefined)
+    
+    inline def setSceneVarargs(value: (CreateSceneFromObjectConfig | js.Function | Scene | SettingsConfig)*): Self = StObject.set(x, "scene", js.Array(value*))
+    
+    inline def setSeed(value: js.Array[String]): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    
+    inline def setSeedVarargs(value: String*): Self = StObject.set(x, "seed", js.Array(value*))
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    
+    inline def setTransparentUndefined: Self = StObject.set(x, "transparent", js.undefined)
+    
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+  }
 }
-

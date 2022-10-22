@@ -1,46 +1,66 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.devextremeStrings.breakWord
-import typingsJapgolly.devextreme.devextremeStrings.center
-import typingsJapgolly.devextreme.devextremeStrings.ellipsis
-import typingsJapgolly.devextreme.devextremeStrings.hide
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.none
-import typingsJapgolly.devextreme.devextremeStrings.normal
-import typingsJapgolly.devextreme.devextremeStrings.right
+import typingsJapgolly.devextreme.mod.DevExpress.common.HorizontalAlignment
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.TextOverflow
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.WordWrap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartCommonAxisSettingsTitle extends js.Object {
-  /** Aligns the axis title to the left, center, or right of the axis. */
-  var alignment: js.UndefOr[center | left | right] = js.undefined
-  /** Specifies font options for the axis title. */
+trait dxChartCommonAxisSettingsTitle extends StObject {
+  
+  /**
+    * Aligns the axis title to the left, center, or right of the axis.
+    */
+  var alignment: js.UndefOr[HorizontalAlignment] = js.undefined
+  
+  /**
+    * Specifies font properties for the axis title.
+    */
   var font: js.UndefOr[Font] = js.undefined
-  /** Adds a pixel-measured empty space between the axis title and axis labels. */
+  
+  /**
+    * Adds a pixel-measured empty space between the axis title and axis labels.
+    */
   var margin: js.UndefOr[Double] = js.undefined
-  /** Specifies what to do with the axis title when it overflows the allocated space after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing. */
-  var textOverflow: js.UndefOr[ellipsis | hide | none] = js.undefined
-  /** Specifies how to wrap the axis title if it does not fit into a single line. */
-  var wordWrap: js.UndefOr[normal | breakWord | none] = js.undefined
+  
+  /**
+    * Specifies what to do with the axis title when it overflows the allocated space after applying wordWrap: hide, truncate them and display an ellipsis, or do nothing.
+    */
+  var textOverflow: js.UndefOr[TextOverflow] = js.undefined
+  
+  /**
+    * Specifies how to wrap the axis title if it does not fit into a single line.
+    */
+  var wordWrap: js.UndefOr[WordWrap] = js.undefined
 }
-
 object dxChartCommonAxisSettingsTitle {
-  @scala.inline
-  def apply(
-    alignment: center | left | right = null,
-    font: Font = null,
-    margin: Int | Double = null,
-    textOverflow: ellipsis | hide | none = null,
-    wordWrap: normal | breakWord | none = null
-  ): dxChartCommonAxisSettingsTitle = {
+  
+  inline def apply(): dxChartCommonAxisSettingsTitle = {
     val __obj = js.Dynamic.literal()
-    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
-    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
-    if (wordWrap != null) __obj.updateDynamic("wordWrap")(wordWrap.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartCommonAxisSettingsTitle]
   }
+  
+  extension [Self <: dxChartCommonAxisSettingsTitle](x: Self) {
+    
+    inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    
+    inline def setFont(value: Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setTextOverflow(value: TextOverflow): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    
+    inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+    
+    inline def setWordWrap(value: WordWrap): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    
+    inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+  }
 }
-

@@ -1,47 +1,92 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Protection.PlayReady
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrtUwp.Windows.Foundation.IAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.Uri
 import typingsJapgolly.winrtUwp.Windows.WinRTError
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the service methods for requesting platform individualization. */
-@JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyIndividualizationServiceRequest")
-@js.native
-/** Initializes a new instance of the PlayReadyIndividualizationServiceRequest class. */
-class PlayReadyIndividualizationServiceRequest () extends js.Object {
-  /** Gets or sets the custom data of the request challenge. This property is not supported in this class. */
-  var challengeCustomData: String = js.native
-  /** Gets the vendor content protection system identifier. */
-  var protectionSystem: String = js.native
-  /** Gets the custom data that was returned in the response from the service. This property is not supported in this class. */
-  var responseCustomData: String = js.native
-  /** Gets the GUID for the type of operation that the PlayReady individualization service request performs. */
-  var `type`: String = js.native
-  /** Gets or sets the URI used to perform a service request action. This property is not supported in this class. */
-  var uri: Uri = js.native
+trait PlayReadyIndividualizationServiceRequest extends StObject {
+  
   /**
     * Begins an asynchronous service request operation.
     * @return The asynchronous service action.
     */
-  def beginServiceRequest(): IAsyncAction = js.native
+  def beginServiceRequest(): IAsyncAction
+  
+  /** Gets or sets the custom data of the request challenge. This property is not supported in this class. */
+  var challengeCustomData: String
+  
   /**
     * Begins the process of manually enabling. This method is not supported in this class.
     * @return This method always returns 0x80070032 (the request is not supported).
     */
-  def generateManualEnablingChallenge(): PlayReadySoapMessage = js.native
+  def generateManualEnablingChallenge(): PlayReadySoapMessage
+  
   /**
     * Returns a new service request interface.
     * @return The new service request interface.
     */
-  def nextServiceRequest(): IPlayReadyServiceRequest = js.native
+  def nextServiceRequest(): IPlayReadyServiceRequest
+  
   /**
     * Process the raw binary result of a manual enabling challenge. This method is not supported in this class.
     * @param responseBytes The response result to be processed.
     * @return This method always returns 0x80070032 (the request is not supported).
     */
-  def processManualEnablingResponse(responseBytes: js.Array[Double]): WinRTError = js.native
+  def processManualEnablingResponse(responseBytes: js.Array[Double]): WinRTError
+  
+  /** Gets the vendor content protection system identifier. */
+  var protectionSystem: String
+  
+  /** Gets the custom data that was returned in the response from the service. This property is not supported in this class. */
+  var responseCustomData: String
+  
+  /** Gets the GUID for the type of operation that the PlayReady individualization service request performs. */
+  var `type`: String
+  
+  /** Gets or sets the URI used to perform a service request action. This property is not supported in this class. */
+  var uri: Uri
 }
-
+object PlayReadyIndividualizationServiceRequest {
+  
+  inline def apply(
+    beginServiceRequest: CallbackTo[IAsyncAction],
+    challengeCustomData: String,
+    generateManualEnablingChallenge: CallbackTo[PlayReadySoapMessage],
+    nextServiceRequest: CallbackTo[IPlayReadyServiceRequest],
+    processManualEnablingResponse: js.Array[Double] => WinRTError,
+    protectionSystem: String,
+    responseCustomData: String,
+    `type`: String,
+    uri: Uri
+  ): PlayReadyIndividualizationServiceRequest = {
+    val __obj = js.Dynamic.literal(beginServiceRequest = beginServiceRequest.toJsFn, challengeCustomData = challengeCustomData.asInstanceOf[js.Any], generateManualEnablingChallenge = generateManualEnablingChallenge.toJsFn, nextServiceRequest = nextServiceRequest.toJsFn, processManualEnablingResponse = js.Any.fromFunction1(processManualEnablingResponse), protectionSystem = protectionSystem.asInstanceOf[js.Any], responseCustomData = responseCustomData.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayReadyIndividualizationServiceRequest]
+  }
+  
+  extension [Self <: PlayReadyIndividualizationServiceRequest](x: Self) {
+    
+    inline def setBeginServiceRequest(value: CallbackTo[IAsyncAction]): Self = StObject.set(x, "beginServiceRequest", value.toJsFn)
+    
+    inline def setChallengeCustomData(value: String): Self = StObject.set(x, "challengeCustomData", value.asInstanceOf[js.Any])
+    
+    inline def setGenerateManualEnablingChallenge(value: CallbackTo[PlayReadySoapMessage]): Self = StObject.set(x, "generateManualEnablingChallenge", value.toJsFn)
+    
+    inline def setNextServiceRequest(value: CallbackTo[IPlayReadyServiceRequest]): Self = StObject.set(x, "nextServiceRequest", value.toJsFn)
+    
+    inline def setProcessManualEnablingResponse(value: js.Array[Double] => WinRTError): Self = StObject.set(x, "processManualEnablingResponse", js.Any.fromFunction1(value))
+    
+    inline def setProtectionSystem(value: String): Self = StObject.set(x, "protectionSystem", value.asInstanceOf[js.Any])
+    
+    inline def setResponseCustomData(value: String): Self = StObject.set(x, "responseCustomData", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setUri(value: Uri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+  }
+}

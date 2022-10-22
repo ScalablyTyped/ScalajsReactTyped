@@ -1,13 +1,15 @@
 package typingsJapgolly.workboxRouting
 
-import typingsJapgolly.workboxRouting.routeHandlerMod.RouteHandler
+import typingsJapgolly.workboxRouting.typesRouteHandlerMod.RouteHandler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("workbox-routing/setCatchHandler", JSImport.Namespace)
-@js.native
-object setCatchHandlerMod extends js.Object {
-  def setCatchHandler(handler: RouteHandler): Unit = js.native
+object setCatchHandlerMod {
+  
+  @JSImport("workbox-routing/setCatchHandler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def setCatchHandler(handler: RouteHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCatchHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

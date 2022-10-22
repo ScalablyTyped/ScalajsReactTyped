@@ -1,17 +1,21 @@
 package typingsJapgolly.autobahn.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("autobahn", "Result")
 @js.native
-class Result () extends IResult {
-  def this(args: js.Array[_]) = this()
-  def this(args: js.Array[_], kwargs: js.Any) = this()
+open class Result ()
+  extends StObject
+     with IResult {
+  def this(args: js.Array[Any]) = this()
+  def this(args: js.Array[Any], kwargs: Any) = this()
+  def this(args: Unit, kwargs: Any) = this()
+  
   /* CompleteClass */
-  override var args: js.Array[_] = js.native
+  var args: js.Array[Any] = js.native
+  
   /* CompleteClass */
-  override var kwargs: js.Any = js.native
+  var kwargs: Any = js.native
 }
-

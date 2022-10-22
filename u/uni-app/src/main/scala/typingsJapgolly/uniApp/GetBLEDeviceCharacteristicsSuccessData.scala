@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetBLEDeviceCharacteristicsSuccessData extends js.Object {
+trait GetBLEDeviceCharacteristicsSuccessData extends StObject {
+  
   /**
     * 该特征值支持的操作类型
     */
-  var properties: js.UndefOr[js.Any] = js.undefined
+  var properties: js.UndefOr[Any] = js.undefined
+  
   /**
     * 蓝牙设备服务的 uuid
     */
   var uuid: js.UndefOr[String] = js.undefined
 }
-
 object GetBLEDeviceCharacteristicsSuccessData {
-  @scala.inline
-  def apply(properties: js.Any = null, uuid: String = null): GetBLEDeviceCharacteristicsSuccessData = {
+  
+  inline def apply(): GetBLEDeviceCharacteristicsSuccessData = {
     val __obj = js.Dynamic.literal()
-    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
-    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBLEDeviceCharacteristicsSuccessData]
   }
+  
+  extension [Self <: GetBLEDeviceCharacteristicsSuccessData](x: Self) {
+    
+    inline def setProperties(value: Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    
+    inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+  }
 }
-

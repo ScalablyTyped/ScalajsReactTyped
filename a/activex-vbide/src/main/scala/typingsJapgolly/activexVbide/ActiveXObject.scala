@@ -10,41 +10,41 @@ import typingsJapgolly.activexVbide.activexVbideStrings.ItemAdded
 import typingsJapgolly.activexVbide.activexVbideStrings.ItemRemoved
 import typingsJapgolly.activexVbide.activexVbideStrings.Reference
 import typingsJapgolly.activexVbide.activexVbideStrings.handled
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActiveXObject extends js.Object {
+trait ActiveXObject extends StObject {
+  
   def on(
     obj: CommandBarEvents,
     event: Click,
     argNames: js.Tuple3[CommandBarControl, handled, CancelDefault],
-    handler: js.ThisFunction1[/* this */ CommandBarEvents, /* parameter */ AnonCancelDefault, Unit]
+    handler: js.ThisFunction1[
+      /* this */ CommandBarEvents, 
+      /* parameter */ typingsJapgolly.activexVbide.anon.CancelDefault, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: ReferencesEvents,
-    event: ItemAdded,
+    event: ItemAdded | ItemRemoved,
     argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ ReferencesEvents, /* parameter */ AnonReference, Unit]
-  ): Unit = js.native
-  def on(
-    obj: ReferencesEvents,
-    event: ItemRemoved,
-    argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ ReferencesEvents, /* parameter */ AnonReference, Unit]
-  ): Unit = js.native
-  def on(
-    obj: References,
-    event: ItemAdded,
-    argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ References, /* parameter */ AnonReference, Unit]
+    handler: js.ThisFunction1[
+      /* this */ ReferencesEvents, 
+      /* parameter */ typingsJapgolly.activexVbide.anon.Reference, 
+      Unit
+    ]
   ): Unit = js.native
   def on(
     obj: References,
-    event: ItemRemoved,
+    event: ItemAdded | ItemRemoved,
     argNames: js.Array[Reference],
-    handler: js.ThisFunction1[/* this */ References, /* parameter */ AnonReference, Unit]
+    handler: js.ThisFunction1[
+      /* this */ References, 
+      /* parameter */ typingsJapgolly.activexVbide.anon.Reference, 
+      Unit
+    ]
   ): Unit = js.native
 }
-

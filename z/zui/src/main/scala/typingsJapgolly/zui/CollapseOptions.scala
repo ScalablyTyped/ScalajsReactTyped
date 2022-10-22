@@ -1,21 +1,30 @@
 package typingsJapgolly.zui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollapseOptions extends js.Object {
-  var parent: js.UndefOr[js.Any] = js.undefined
+trait CollapseOptions extends StObject {
+  
+  var parent: js.UndefOr[Any] = js.undefined
+  
   var toggle: js.UndefOr[Boolean] = js.undefined
 }
-
 object CollapseOptions {
-  @scala.inline
-  def apply(parent: js.Any = null, toggle: js.UndefOr[Boolean] = js.undefined): CollapseOptions = {
+  
+  inline def apply(): CollapseOptions = {
     val __obj = js.Dynamic.literal()
-    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
-    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollapseOptions]
   }
+  
+  extension [Self <: CollapseOptions](x: Self) {
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    
+    inline def setToggle(value: Boolean): Self = StObject.set(x, "toggle", value.asInstanceOf[js.Any])
+    
+    inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+  }
 }
-

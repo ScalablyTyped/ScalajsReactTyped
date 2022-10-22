@@ -1,42 +1,26 @@
 package typingsJapgolly.mjmlReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.mjmlReact.mod.MjmlBreakpointProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MjmlBreakpoint {
-  def apply(
-    width: String | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    MjmlBreakpointProps, 
-    typingsJapgolly.mjmlReact.mod.MjmlBreakpoint, 
-    Unit, 
-    MjmlBreakpointProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.mjmlReact.mod.MjmlBreakpointProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.mjmlReact.mod.MjmlBreakpoint](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.mjmlReact.mod.MjmlBreakpointProps])(children: _*)
-  }
   @JSImport("mjml-react", "MjmlBreakpoint")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.mjmlReact.mod.MjmlBreakpoint] {
+    
+    inline def width(value: String | Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MjmlBreakpoint.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MjmlBreakpointProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,33 +1,48 @@
 package typingsJapgolly.googleAdwordsScripts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ExtensionScheduleInput extends js.Object {
+trait ExtensionScheduleInput extends StObject {
+  
   var dayOfWeek: js.UndefOr[DayOfWeekString] = js.undefined
+  
   var endHour: js.UndefOr[Double] = js.undefined
+  
   var endMinute: js.UndefOr[Double] = js.undefined
+  
   var startHour: js.UndefOr[Double] = js.undefined
+  
   var startMinute: js.UndefOr[Double] = js.undefined
 }
-
 object ExtensionScheduleInput {
-  @scala.inline
-  def apply(
-    dayOfWeek: DayOfWeekString = null,
-    endHour: Int | Double = null,
-    endMinute: Int | Double = null,
-    startHour: Int | Double = null,
-    startMinute: Int | Double = null
-  ): ExtensionScheduleInput = {
+  
+  inline def apply(): ExtensionScheduleInput = {
     val __obj = js.Dynamic.literal()
-    if (dayOfWeek != null) __obj.updateDynamic("dayOfWeek")(dayOfWeek.asInstanceOf[js.Any])
-    if (endHour != null) __obj.updateDynamic("endHour")(endHour.asInstanceOf[js.Any])
-    if (endMinute != null) __obj.updateDynamic("endMinute")(endMinute.asInstanceOf[js.Any])
-    if (startHour != null) __obj.updateDynamic("startHour")(startHour.asInstanceOf[js.Any])
-    if (startMinute != null) __obj.updateDynamic("startMinute")(startMinute.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionScheduleInput]
   }
+  
+  extension [Self <: ExtensionScheduleInput](x: Self) {
+    
+    inline def setDayOfWeek(value: DayOfWeekString): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    
+    inline def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
+    
+    inline def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
+    
+    inline def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
+    
+    inline def setEndMinuteUndefined: Self = StObject.set(x, "endMinute", js.undefined)
+    
+    inline def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
+    
+    inline def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
+    
+    inline def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
+    
+    inline def setStartMinuteUndefined: Self = StObject.set(x, "startMinute", js.undefined)
+  }
 }
-

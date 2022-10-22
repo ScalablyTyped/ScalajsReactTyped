@@ -8,12 +8,12 @@ import typingsJapgolly.xrm.xrmStrings.integer
 import typingsJapgolly.xrm.xrmStrings.lookup
 import typingsJapgolly.xrm.xrmStrings.memo
 import typingsJapgolly.xrm.xrmStrings.money
-import typingsJapgolly.xrm.xrmStrings.multioptionset
+import typingsJapgolly.xrm.xrmStrings.multiselectoptionset
 import typingsJapgolly.xrm.xrmStrings.optionset
 import typingsJapgolly.xrm.xrmStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Constant Enum: Attribute types for {@link Attributes.Attribute.setDisplayState()}.
@@ -28,36 +28,32 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.xrm.xrmStrings.lookup
   - typingsJapgolly.xrm.xrmStrings.memo
   - typingsJapgolly.xrm.xrmStrings.money
-  - typingsJapgolly.xrm.xrmStrings.multioptionset
+  - typingsJapgolly.xrm.xrmStrings.multiselectoptionset
   - typingsJapgolly.xrm.xrmStrings.optionset
   - typingsJapgolly.xrm.xrmStrings.string
 */
-trait AttributeType extends js.Object
-
+trait AttributeType extends StObject
 object AttributeType {
-  @scala.inline
-  def Boolean: boolean = this.cast("boolean")
-  @scala.inline
-  def DateTime: datetime = this.cast("datetime")
-  @scala.inline
-  def Decimal: decimal = this.cast("decimal")
-  @scala.inline
-  def Double: double = this.cast("double")
-  @scala.inline
-  def Integer: integer = this.cast("integer")
-  @scala.inline
-  def Lookup: lookup = this.cast("lookup")
-  @scala.inline
-  def Memo: memo = this.cast("memo")
-  @scala.inline
-  def Money: money = this.cast("money")
-  @scala.inline
-  def MultiOptionSet: multioptionset = this.cast("multioptionset")
-  @scala.inline
-  def OptionSet: optionset = this.cast("optionset")
-  @scala.inline
-  def String: string = this.cast("string")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Boolean: boolean = "boolean".asInstanceOf[boolean]
+  
+  inline def DateTime: datetime = "datetime".asInstanceOf[datetime]
+  
+  inline def Decimal: decimal = "decimal".asInstanceOf[decimal]
+  
+  inline def Double: double = "double".asInstanceOf[double]
+  
+  inline def Integer: integer = "integer".asInstanceOf[integer]
+  
+  inline def Lookup: lookup = "lookup".asInstanceOf[lookup]
+  
+  inline def Memo: memo = "memo".asInstanceOf[memo]
+  
+  inline def Money: money = "money".asInstanceOf[money]
+  
+  inline def MultiOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
+  
+  inline def OptionSet: optionset = "optionset".asInstanceOf[optionset]
+  
+  inline def String: string = "string".asInstanceOf[string]
 }
-

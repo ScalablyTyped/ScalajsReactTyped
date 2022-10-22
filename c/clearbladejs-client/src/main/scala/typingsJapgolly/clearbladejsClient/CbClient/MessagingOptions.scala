@@ -1,33 +1,26 @@
 package typingsJapgolly.clearbladejsClient.CbClient
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MessagingOptions extends CommonMessagingProperties {
+trait MessagingOptions
+  extends StObject
+     with CommonMessagingProperties {
+  
   var qos: js.UndefOr[MessagingQOS] = js.undefined
 }
-
 object MessagingOptions {
-  @scala.inline
-  def apply(
-    cleanSession: js.UndefOr[Boolean] = js.undefined,
-    hosts: String = null,
-    onFailure: js.Function = null,
-    onSuccess: js.Function = null,
-    ports: String = null,
-    qos: MessagingQOS = null,
-    useSSL: js.UndefOr[Boolean] = js.undefined
-  ): MessagingOptions = {
+  
+  inline def apply(): MessagingOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(cleanSession)) __obj.updateDynamic("cleanSession")(cleanSession.asInstanceOf[js.Any])
-    if (hosts != null) __obj.updateDynamic("hosts")(hosts.asInstanceOf[js.Any])
-    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
-    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess.asInstanceOf[js.Any])
-    if (ports != null) __obj.updateDynamic("ports")(ports.asInstanceOf[js.Any])
-    if (qos != null) __obj.updateDynamic("qos")(qos.asInstanceOf[js.Any])
-    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessagingOptions]
   }
+  
+  extension [Self <: MessagingOptions](x: Self) {
+    
+    inline def setQos(value: MessagingQOS): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
+    
+    inline def setQosUndefined: Self = StObject.set(x, "qos", js.undefined)
+  }
 }
-

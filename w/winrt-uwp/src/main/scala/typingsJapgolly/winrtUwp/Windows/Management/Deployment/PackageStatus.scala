@@ -1,53 +1,43 @@
 package typingsJapgolly.winrtUwp.Windows.Management.Deployment
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PackageStatus extends js.Object
-
+sealed trait PackageStatus extends StObject
 /** Provides info about the status of a package. */
 @JSGlobal("Windows.Management.Deployment.PackageStatus")
 @js.native
-object PackageStatus extends js.Object {
+object PackageStatus extends StObject {
+  
   /** The package is not available for use. It can still be serviced. */
   @js.native
-  sealed trait disabled extends PackageStatus
+  sealed trait disabled
+    extends StObject
+       with PackageStatus
   
   /** The license of the package is not valid. */
   @js.native
-  sealed trait licenseIssue extends PackageStatus
+  sealed trait licenseIssue
+    extends StObject
+       with PackageStatus
   
   /** The package payload was modified by an unknown source. */
   @js.native
-  sealed trait modified extends PackageStatus
+  sealed trait modified
+    extends StObject
+       with PackageStatus
   
   /** The package is usable. */
   @js.native
-  sealed trait ok extends PackageStatus
+  sealed trait ok
+    extends StObject
+       with PackageStatus
   
   /** The package payload was tampered with intentionally. */
   @js.native
-  sealed trait tampered extends PackageStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PackageStatus with Double] = js.native
-  /* 4 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
-  
-  /* 1 */ @js.native
-  object licenseIssue extends TopLevel[licenseIssue with Double]
-  
-  /* 2 */ @js.native
-  object modified extends TopLevel[modified with Double]
-  
-  /* 0 */ @js.native
-  object ok extends TopLevel[ok with Double]
-  
-  /* 3 */ @js.native
-  object tampered extends TopLevel[tampered with Double]
-  
+  sealed trait tampered
+    extends StObject
+       with PackageStatus
 }
-

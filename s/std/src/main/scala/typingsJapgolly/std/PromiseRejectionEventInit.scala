@@ -1,29 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PromiseRejectionEventInit extends EventInit {
-  var promise: js.Promise[_]
-  var reason: js.UndefOr[js.Any] = js.undefined
+trait PromiseRejectionEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var promise: js.Promise[Any]
+  
+  /* standard dom */
+  var reason: js.UndefOr[Any] = js.undefined
 }
-
 object PromiseRejectionEventInit {
-  @scala.inline
-  def apply(
-    promise: js.Promise[_],
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    reason: js.Any = null
-  ): PromiseRejectionEventInit = {
+  
+  inline def apply(promise: js.Promise[Any]): PromiseRejectionEventInit = {
     val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (reason != null) __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromiseRejectionEventInit]
   }
+  
+  extension [Self <: PromiseRejectionEventInit](x: Self) {
+    
+    inline def setPromise(value: js.Promise[Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    
+    inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+  }
 }
-

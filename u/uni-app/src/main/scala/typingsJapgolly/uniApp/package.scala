@@ -1,13 +1,20 @@
-package typingsJapgolly
+package typingsJapgolly.uniApp
 
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object uniApp {
-  type AnyObject = typingsJapgolly.std.Record[java.lang.String, js.Any]
-  type KVInfer[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+
+type AnyObject = Record[String, Any]
+
+/** NOTE: Mapped type definitions are impossible to translate to Scala.
+  * See https://www.typescriptlang.org/docs/handbook/2/mapped-types.html for an intro.
+  * This translation is imprecise and ignores the effect of the type mapping. 
+  * TS definition: {{{
   {[ K in keyof T ]: T[K]}
-    */ typingsJapgolly.uniApp.uniAppStrings.KVInfer with T
-  type Void[T] = js.UndefOr[T | scala.Null]
-}
+  }}}
+  */
+type KVInfer[T] = T
+
+type Void[T] = js.UndefOr[T | Null]

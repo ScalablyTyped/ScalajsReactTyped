@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.automaticReplies
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientScope
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientSuggestions
 */
-trait MailTipsType extends js.Object
-
+trait MailTipsType extends StObject
 object MailTipsType {
-  @scala.inline
-  def automaticReplies: typingsJapgolly.microsoftGraph.microsoftGraphStrings.automaticReplies = this.cast("automaticReplies")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def customMailTip: typingsJapgolly.microsoftGraph.microsoftGraphStrings.customMailTip = this.cast("customMailTip")
-  @scala.inline
-  def deliveryRestriction: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deliveryRestriction = this.cast("deliveryRestriction")
-  @scala.inline
-  def externalMemberCount: typingsJapgolly.microsoftGraph.microsoftGraphStrings.externalMemberCount = this.cast("externalMemberCount")
-  @scala.inline
-  def mailboxFullStatus: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mailboxFullStatus = this.cast("mailboxFullStatus")
-  @scala.inline
-  def maxMessageSize: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maxMessageSize = this.cast("maxMessageSize")
-  @scala.inline
-  def moderationStatus: typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderationStatus = this.cast("moderationStatus")
-  @scala.inline
-  def recipientScope: typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientScope = this.cast("recipientScope")
-  @scala.inline
-  def recipientSuggestions: typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientSuggestions = this.cast("recipientSuggestions")
-  @scala.inline
-  def totalMemberCount: typingsJapgolly.microsoftGraph.microsoftGraphStrings.totalMemberCount = this.cast("totalMemberCount")
+  
+  inline def automaticReplies: typingsJapgolly.microsoftGraph.microsoftGraphStrings.automaticReplies = "automaticReplies".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.automaticReplies]
+  
+  inline def customMailTip: typingsJapgolly.microsoftGraph.microsoftGraphStrings.customMailTip = "customMailTip".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.customMailTip]
+  
+  inline def deliveryRestriction: typingsJapgolly.microsoftGraph.microsoftGraphStrings.deliveryRestriction = "deliveryRestriction".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.deliveryRestriction]
+  
+  inline def externalMemberCount: typingsJapgolly.microsoftGraph.microsoftGraphStrings.externalMemberCount = "externalMemberCount".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.externalMemberCount]
+  
+  inline def mailboxFullStatus: typingsJapgolly.microsoftGraph.microsoftGraphStrings.mailboxFullStatus = "mailboxFullStatus".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.mailboxFullStatus]
+  
+  inline def maxMessageSize: typingsJapgolly.microsoftGraph.microsoftGraphStrings.maxMessageSize = "maxMessageSize".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.maxMessageSize]
+  
+  inline def moderationStatus: typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderationStatus = "moderationStatus".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.moderationStatus]
+  
+  inline def recipientScope: typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientScope = "recipientScope".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientScope]
+  
+  inline def recipientSuggestions: typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientSuggestions = "recipientSuggestions".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.recipientSuggestions]
+  
+  inline def totalMemberCount: typingsJapgolly.microsoftGraph.microsoftGraphStrings.totalMemberCount = "totalMemberCount".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.totalMemberCount]
 }
-

@@ -1,40 +1,36 @@
 package typingsJapgolly.activexShell.Shell32
 
-import typingsJapgolly.activexShell.activexShellNumbers.`0`
-import typingsJapgolly.activexShell.activexShellNumbers.`16`
-import typingsJapgolly.activexShell.activexShellNumbers.`1`
-import typingsJapgolly.activexShell.activexShellNumbers.`3`
-import typingsJapgolly.activexShell.activexShellNumbers.`4`
-import typingsJapgolly.activexShell.activexShellNumbers.`8`
+import typingsJapgolly.activexShell.activexShellInts.`0`
+import typingsJapgolly.activexShell.activexShellInts.`16`
+import typingsJapgolly.activexShell.activexShellInts.`1`
+import typingsJapgolly.activexShell.activexShellInts.`3`
+import typingsJapgolly.activexShell.activexShellInts.`4`
+import typingsJapgolly.activexShell.activexShellInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// tslint:disable-next-line no-const-enum
+// eslint-disable-next-line no-const-enum
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexShell.activexShellNumbers.`0`
-  - typingsJapgolly.activexShell.activexShellNumbers.`1`
-  - typingsJapgolly.activexShell.activexShellNumbers.`3`
-  - typingsJapgolly.activexShell.activexShellNumbers.`4`
-  - typingsJapgolly.activexShell.activexShellNumbers.`8`
-  - typingsJapgolly.activexShell.activexShellNumbers.`16`
+  - typingsJapgolly.activexShell.activexShellInts.`0`
+  - typingsJapgolly.activexShell.activexShellInts.`1`
+  - typingsJapgolly.activexShell.activexShellInts.`3`
+  - typingsJapgolly.activexShell.activexShellInts.`4`
+  - typingsJapgolly.activexShell.activexShellInts.`8`
+  - typingsJapgolly.activexShell.activexShellInts.`16`
 */
-trait ShellFolderViewSelectItem extends js.Object
-
+trait ShellFolderViewSelectItem extends StObject
 object ShellFolderViewSelectItem {
-  @scala.inline
-  def Deselect: `0` = this.cast(0)
-  @scala.inline
-  def DeselectAllButThis: `4` = this.cast(4)
-  @scala.inline
-  def EditMode: `3` = this.cast(3)
-  @scala.inline
-  def Focus: `16` = this.cast(16)
-  @scala.inline
-  def ScrollIntoView: `8` = this.cast(8)
-  @scala.inline
-  def Select: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Deselect: `0` = 0.asInstanceOf[`0`]
+  
+  inline def DeselectAllButThis: `4` = 4.asInstanceOf[`4`]
+  
+  inline def EditMode: `3` = 3.asInstanceOf[`3`]
+  
+  inline def Focus: `16` = 16.asInstanceOf[`16`]
+  
+  inline def ScrollIntoView: `8` = 8.asInstanceOf[`8`]
+  
+  inline def Select: `1` = 1.asInstanceOf[`1`]
 }
-

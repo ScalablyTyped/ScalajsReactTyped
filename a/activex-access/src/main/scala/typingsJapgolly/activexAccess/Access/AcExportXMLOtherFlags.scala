@@ -1,39 +1,35 @@
 package typingsJapgolly.activexAccess.Access
 
-import typingsJapgolly.activexAccess.activexAccessNumbers.`16`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`32`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`4`
-import typingsJapgolly.activexAccess.activexAccessNumbers.`8`
+import typingsJapgolly.activexAccess.activexAccessInts.`16`
+import typingsJapgolly.activexAccess.activexAccessInts.`1`
+import typingsJapgolly.activexAccess.activexAccessInts.`2`
+import typingsJapgolly.activexAccess.activexAccessInts.`32`
+import typingsJapgolly.activexAccess.activexAccessInts.`4`
+import typingsJapgolly.activexAccess.activexAccessInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`1`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`2`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`32`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`8`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`16`
-  - typingsJapgolly.activexAccess.activexAccessNumbers.`4`
+  - typingsJapgolly.activexAccess.activexAccessInts.`1`
+  - typingsJapgolly.activexAccess.activexAccessInts.`2`
+  - typingsJapgolly.activexAccess.activexAccessInts.`32`
+  - typingsJapgolly.activexAccess.activexAccessInts.`8`
+  - typingsJapgolly.activexAccess.activexAccessInts.`16`
+  - typingsJapgolly.activexAccess.activexAccessInts.`4`
 */
-trait AcExportXMLOtherFlags extends js.Object
-
+trait AcExportXMLOtherFlags extends StObject
 object AcExportXMLOtherFlags {
-  @scala.inline
-  def acEmbedSchema: `1` = this.cast(1)
-  @scala.inline
-  def acExcludePrimaryKeyAndIndexes: `2` = this.cast(2)
-  @scala.inline
-  def acExportAllTableAndFieldProperties: `32` = this.cast(32)
-  @scala.inline
-  def acLiveReportSource: `8` = this.cast(8)
-  @scala.inline
-  def acPersistReportML: `16` = this.cast(16)
-  @scala.inline
-  def acRunFromServer: `4` = this.cast(4)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def acEmbedSchema: `1` = 1.asInstanceOf[`1`]
+  
+  inline def acExcludePrimaryKeyAndIndexes: `2` = 2.asInstanceOf[`2`]
+  
+  inline def acExportAllTableAndFieldProperties: `32` = 32.asInstanceOf[`32`]
+  
+  inline def acLiveReportSource: `8` = 8.asInstanceOf[`8`]
+  
+  inline def acPersistReportML: `16` = 16.asInstanceOf[`16`]
+  
+  inline def acRunFromServer: `4` = 4.asInstanceOf[`4`]
 }
-

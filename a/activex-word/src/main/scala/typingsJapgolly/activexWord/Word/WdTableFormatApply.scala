@@ -1,51 +1,47 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`128`
-import typingsJapgolly.activexWord.activexWordNumbers.`16`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`256`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`32`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`64`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
+import typingsJapgolly.activexWord.activexWordInts.`128`
+import typingsJapgolly.activexWord.activexWordInts.`16`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`256`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`32`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`64`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`16`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`128`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`32`
-  - typingsJapgolly.activexWord.activexWordNumbers.`256`
-  - typingsJapgolly.activexWord.activexWordNumbers.`64`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`16`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`128`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`32`
+  - typingsJapgolly.activexWord.activexWordInts.`256`
+  - typingsJapgolly.activexWord.activexWordInts.`64`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
 */
-trait WdTableFormatApply extends js.Object
-
+trait WdTableFormatApply extends StObject
 object WdTableFormatApply {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdTableFormatApplyAutoFit: `16` = this.cast(16)
-  @scala.inline
-  def wdTableFormatApplyBorders: `1` = this.cast(1)
-  @scala.inline
-  def wdTableFormatApplyColor: `8` = this.cast(8)
-  @scala.inline
-  def wdTableFormatApplyFirstColumn: `128` = this.cast(128)
-  @scala.inline
-  def wdTableFormatApplyFont: `4` = this.cast(4)
-  @scala.inline
-  def wdTableFormatApplyHeadingRows: `32` = this.cast(32)
-  @scala.inline
-  def wdTableFormatApplyLastColumn: `256` = this.cast(256)
-  @scala.inline
-  def wdTableFormatApplyLastRow: `64` = this.cast(64)
-  @scala.inline
-  def wdTableFormatApplyShading: `2` = this.cast(2)
+  
+  inline def wdTableFormatApplyAutoFit: `16` = 16.asInstanceOf[`16`]
+  
+  inline def wdTableFormatApplyBorders: `1` = 1.asInstanceOf[`1`]
+  
+  inline def wdTableFormatApplyColor: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdTableFormatApplyFirstColumn: `128` = 128.asInstanceOf[`128`]
+  
+  inline def wdTableFormatApplyFont: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdTableFormatApplyHeadingRows: `32` = 32.asInstanceOf[`32`]
+  
+  inline def wdTableFormatApplyLastColumn: `256` = 256.asInstanceOf[`256`]
+  
+  inline def wdTableFormatApplyLastRow: `64` = 64.asInstanceOf[`64`]
+  
+  inline def wdTableFormatApplyShading: `2` = 2.asInstanceOf[`2`]
 }
-

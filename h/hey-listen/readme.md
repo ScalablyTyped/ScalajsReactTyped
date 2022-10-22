@@ -10,10 +10,10 @@ Warning and invariant dev-ex messaging.
 | ------------------ | :-------------: |
 | Full name          | hey-listen |
 | Keywords           | warning, invariant |
-| # releases         | 11 |
-| # dependents       | 23 |
-| # downloads        | 4354367 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4804601.666666667 |
+| # stars            | 21.0 |
 
 ## Links
 - [Homepage](https://github.com/Popmotion/hey-listen#readme)

@@ -1,21 +1,17 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.arraybuffer
   - typingsJapgolly.std.stdStrings.blob
 */
-trait BinaryType extends js.Object
-
+trait BinaryType extends StObject
 object BinaryType {
-  @scala.inline
-  def arraybuffer: typingsJapgolly.std.stdStrings.arraybuffer = this.cast("arraybuffer")
-  @scala.inline
-  def blob: typingsJapgolly.std.stdStrings.blob = this.cast("blob")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def arraybuffer: typingsJapgolly.std.stdStrings.arraybuffer = "arraybuffer".asInstanceOf[typingsJapgolly.std.stdStrings.arraybuffer]
+  
+  inline def blob: typingsJapgolly.std.stdStrings.blob = "blob".asInstanceOf[typingsJapgolly.std.stdStrings.blob]
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.reactNativeMaterialKit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SliderStyle extends js.Object {
+trait SliderStyle extends StObject {
+  
   var lowerTrackColor: js.UndefOr[String] = js.undefined
+  
   var upperTrackColor: js.UndefOr[String] = js.undefined
 }
-
 object SliderStyle {
-  @scala.inline
-  def apply(lowerTrackColor: String = null, upperTrackColor: String = null): SliderStyle = {
+  
+  inline def apply(): SliderStyle = {
     val __obj = js.Dynamic.literal()
-    if (lowerTrackColor != null) __obj.updateDynamic("lowerTrackColor")(lowerTrackColor.asInstanceOf[js.Any])
-    if (upperTrackColor != null) __obj.updateDynamic("upperTrackColor")(upperTrackColor.asInstanceOf[js.Any])
     __obj.asInstanceOf[SliderStyle]
   }
+  
+  extension [Self <: SliderStyle](x: Self) {
+    
+    inline def setLowerTrackColor(value: String): Self = StObject.set(x, "lowerTrackColor", value.asInstanceOf[js.Any])
+    
+    inline def setLowerTrackColorUndefined: Self = StObject.set(x, "lowerTrackColor", js.undefined)
+    
+    inline def setUpperTrackColor(value: String): Self = StObject.set(x, "upperTrackColor", value.asInstanceOf[js.Any])
+    
+    inline def setUpperTrackColorUndefined: Self = StObject.set(x, "upperTrackColor", js.undefined)
+  }
 }
-

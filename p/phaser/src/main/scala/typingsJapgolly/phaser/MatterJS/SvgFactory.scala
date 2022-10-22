@@ -1,13 +1,12 @@
 package typingsJapgolly.phaser.MatterJS
 
-import org.scalajs.dom.raw.SVGPathElement
+import org.scalajs.dom.SVGPathElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MatterJS.SvgFactory")
-@js.native
-class SvgFactory () extends js.Object {
+trait SvgFactory extends StObject {
+  
   /**
     * Converts an SVG path into an array of vector points.
     * If the input path forms a concave shape, you must decompose the result into convex parts before use.
@@ -18,6 +17,17 @@ class SvgFactory () extends js.Object {
     * @param {Number} [sampleLength=15]
     * @return {Vector[]} points
     */
-  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector] = js.native
+  def pathToVertices(path: SVGPathElement, sampleLength: Double): js.Array[Vector]
 }
-
+object SvgFactory {
+  
+  inline def apply(pathToVertices: (SVGPathElement, Double) => js.Array[Vector]): SvgFactory = {
+    val __obj = js.Dynamic.literal(pathToVertices = js.Any.fromFunction2(pathToVertices))
+    __obj.asInstanceOf[SvgFactory]
+  }
+  
+  extension [Self <: SvgFactory](x: Self) {
+    
+    inline def setPathToVertices(value: (SVGPathElement, Double) => js.Array[Vector]): Self = StObject.set(x, "pathToVertices", js.Any.fromFunction2(value))
+  }
+}

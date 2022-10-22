@@ -1,42 +1,54 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SummariesMethodSelectionChangedEventUIParam extends js.Object {
+trait SummariesMethodSelectionChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the column key of the column where it is changed selection of summary method.
-  	 */
+    * Gets the column key of the column where it is changed selection of summary method.
+    */
   var columnKey: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets whether method is selected or not.
-  	 */
+    * Gets whether method is selected or not.
+    */
   var isSelected: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets the summary method name.
-  	 */
+    * Gets the summary method name.
+    */
   var methodName: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the igGridSummaries widget object.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the igGridSummaries widget object.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object SummariesMethodSelectionChangedEventUIParam {
-  @scala.inline
-  def apply(
-    columnKey: String = null,
-    isSelected: js.UndefOr[Boolean] = js.undefined,
-    methodName: String = null,
-    owner: js.Any = null
-  ): SummariesMethodSelectionChangedEventUIParam = {
+  
+  inline def apply(): SummariesMethodSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected.asInstanceOf[js.Any])
-    if (methodName != null) __obj.updateDynamic("methodName")(methodName.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummariesMethodSelectionChangedEventUIParam]
   }
+  
+  extension [Self <: SummariesMethodSelectionChangedEventUIParam](x: Self) {
+    
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    
+    inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+    
+    inline def setMethodName(value: String): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

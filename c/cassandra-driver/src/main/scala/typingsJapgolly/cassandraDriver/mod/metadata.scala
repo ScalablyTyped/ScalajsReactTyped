@@ -1,20 +1,22 @@
 package typingsJapgolly.cassandraDriver.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "metadata")
-@js.native
-object metadata extends js.Object {
-  @js.native
-  object IndexKind extends js.Object {
-    /* 1 */ val composites: typingsJapgolly.cassandraDriver.metadataMod.metadata.IndexKind.composites with Double = js.native
-    /* 0 */ val custom: typingsJapgolly.cassandraDriver.metadataMod.metadata.IndexKind.custom with Double = js.native
-    /* 0 */ val keys: typingsJapgolly.cassandraDriver.metadataMod.metadata.IndexKind.keys with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.cassandraDriver.metadataMod.metadata.IndexKind with Double] = js.native
-  }
+object metadata {
   
+  @JSImport("cassandra-driver", "metadata.IndexKind")
+  @js.native
+  object IndexKind extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.cassandraDriver.libMetadataMod.metadata.IndexKind & Double] = js.native
+    
+    /* 1 */ val composites: typingsJapgolly.cassandraDriver.libMetadataMod.metadata.IndexKind.composites & Double = js.native
+    
+    /* 0 */ val custom: typingsJapgolly.cassandraDriver.libMetadataMod.metadata.IndexKind.custom & Double = js.native
+    
+    /* 0 */ val keys: typingsJapgolly.cassandraDriver.libMetadataMod.metadata.IndexKind.keys & Double = js.native
+  }
 }
-

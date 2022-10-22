@@ -1,22 +1,33 @@
 package typingsJapgolly.awsSdkClientKmsNode
 
-import typingsJapgolly.awsSdkClientKmsNode.outputTypesUnionMod.OutputTypesUnion
-import typingsJapgolly.awsSdkTypes.responseMod.ResponseMetadata
+import typingsJapgolly.awsSdkClientKmsNode.typesOutputTypesUnionMod.OutputTypesUnion
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.ResponseMetadata
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/client-kms-node/types/DisableKeyRotationOutput", JSImport.Namespace)
-@js.native
-object typesDisableKeyRotationOutputMod extends js.Object {
-  @js.native
-  trait DisableKeyRotationOutput extends OutputTypesUnion {
+object typesDisableKeyRotationOutputMod {
+  
+  trait DisableKeyRotationOutput
+    extends StObject
+       with OutputTypesUnion {
+    
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
   }
-  
+  object DisableKeyRotationOutput {
+    
+    inline def apply($metadata: ResponseMetadata): DisableKeyRotationOutput = {
+      val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
+      __obj.asInstanceOf[DisableKeyRotationOutput]
+    }
+    
+    extension [Self <: DisableKeyRotationOutput](x: Self) {
+      
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

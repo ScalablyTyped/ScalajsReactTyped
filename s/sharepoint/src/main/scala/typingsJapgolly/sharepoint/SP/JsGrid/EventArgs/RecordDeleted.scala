@@ -2,16 +2,33 @@ package typingsJapgolly.sharepoint.SP.JsGrid.EventArgs
 
 import typingsJapgolly.sharepoint.SP.JsGrid.IChangeKey
 import typingsJapgolly.sharepoint.SP.JsGrid.IEventArgs
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.JsGrid.EventArgs.RecordDeleted")
-@js.native
-class RecordDeleted protected () extends IEventArgs {
-  def this(recordKey: Double, recordIdx: Double, changeKey: IChangeKey) = this()
-  var changeKey: IChangeKey = js.native
-  var recordIdx: Double = js.native
-  var recordKey: Double = js.native
+trait RecordDeleted
+  extends StObject
+     with IEventArgs {
+  
+  var changeKey: IChangeKey
+  
+  var recordIdx: Double
+  
+  var recordKey: Double
 }
-
+object RecordDeleted {
+  
+  inline def apply(changeKey: IChangeKey, recordIdx: Double, recordKey: Double): RecordDeleted = {
+    val __obj = js.Dynamic.literal(changeKey = changeKey.asInstanceOf[js.Any], recordIdx = recordIdx.asInstanceOf[js.Any], recordKey = recordKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordDeleted]
+  }
+  
+  extension [Self <: RecordDeleted](x: Self) {
+    
+    inline def setChangeKey(value: IChangeKey): Self = StObject.set(x, "changeKey", value.asInstanceOf[js.Any])
+    
+    inline def setRecordIdx(value: Double): Self = StObject.set(x, "recordIdx", value.asInstanceOf[js.Any])
+    
+    inline def setRecordKey(value: Double): Self = StObject.set(x, "recordKey", value.asInstanceOf[js.Any])
+  }
+}

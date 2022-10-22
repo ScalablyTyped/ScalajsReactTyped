@@ -1,28 +1,33 @@
 package typingsJapgolly.activexWord.Word
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.BuildingBlockEntries")
 @js.native
-class BuildingBlockEntries protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Count: Double = js.native
-  val Creator: Double = js.native
-  val Parent: js.Any = js.native
-  @JSName("Word.BuildingBlockEntries_typekey")
-  var WordDotBuildingBlockEntries_typekey: BuildingBlockEntries = js.native
+trait BuildingBlockEntries extends StObject {
+  
   /** @param Word.WdDocPartInsertOptions [InsertOptions=0] */
-  def Add(Name: String, Type: WdBuildingBlockTypes, Category: String, Range: Range, Description: js.Any): BuildingBlock = js.native
+  def Add(Name: String, Type: WdBuildingBlockTypes, Category: String, Range: Range, Description: Any): BuildingBlock = js.native
   def Add(
     Name: String,
     Type: WdBuildingBlockTypes,
     Category: String,
     Range: Range,
-    Description: js.Any,
+    Description: Any,
     InsertOptions: WdDocPartInsertOptions
   ): BuildingBlock = js.native
-  def Item(Index: js.Any): BuildingBlock = js.native
+  
+  val Application: typingsJapgolly.activexWord.Word.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: Double = js.native
+  
+  def Item(Index: Any): BuildingBlock = js.native
+  
+  val Parent: Any = js.native
+  
+  /* private */ @JSName("Word.BuildingBlockEntries_typekey")
+  var WordDotBuildingBlockEntries_typekey: BuildingBlockEntries = js.native
 }
-

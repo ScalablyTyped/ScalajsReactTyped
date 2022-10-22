@@ -1,55 +1,25 @@
 package typingsJapgolly.babelTypes.mod
 
-import typingsJapgolly.babelTypes.babelTypesStrings.DoWhileStatement
-import typingsJapgolly.babelTypes.babelTypesStrings.WhileStatement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.babelTypes.mod.DoWhileStatement_
   - typingsJapgolly.babelTypes.mod.WhileStatement_
 */
-trait While extends js.Object
-
+trait While extends StObject
 object While {
-  @scala.inline
-  def DoWhileStatement_(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: DoWhileStatement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): While = {
+  
+  inline def DoWhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typingsJapgolly.babelTypes.mod.DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[While]
+    __obj.updateDynamic("type")("DoWhileStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.DoWhileStatement_]
   }
-  @scala.inline
-  def WhileStatement_(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: WhileStatement,
-    innerComments: js.Array[Comment] = null,
-    leadingComments: js.Array[Comment] = null,
-    trailingComments: js.Array[Comment] = null
-  ): While = {
+  
+  inline def WhileStatement_(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): typingsJapgolly.babelTypes.mod.WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (innerComments != null) __obj.updateDynamic("innerComments")(innerComments.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
-    __obj.asInstanceOf[While]
+    __obj.updateDynamic("type")("WhileStatement")
+    __obj.asInstanceOf[typingsJapgolly.babelTypes.mod.WhileStatement_]
   }
 }
-

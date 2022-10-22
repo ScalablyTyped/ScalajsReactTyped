@@ -1,22 +1,20 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GeoRSSLayerView extends LayerView {
+trait GeoRSSLayerView
+  extends StObject
+     with LayerView {
+  
   /**
     * Highlights the given feature(s).
-    * > **Known Limitations**  Currently the highlight method is only supported in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-GeoRSSLayerView.html#highlight)
-    *
-    * @param target The feature(s) to highlight.
-    *
     */
   def highlight(): Handle = js.native
   def highlight(target: js.Array[Graphic]): Handle = js.native
   def highlight(target: Graphic): Handle = js.native
 }
-

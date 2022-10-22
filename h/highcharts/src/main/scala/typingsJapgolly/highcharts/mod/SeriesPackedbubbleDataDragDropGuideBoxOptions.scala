@@ -1,22 +1,27 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SeriesPackedbubbleDataDragDropGuideBoxOptions extends js.Object {
+trait SeriesPackedbubbleDataDragDropGuideBoxOptions extends StObject {
+  
   /**
     * (Highcharts) Style options for the guide box default state.
     */
-  var default: js.UndefOr[SeriesPackedbubbleDataDragDropGuideBoxDefaultOptions] = js.undefined
+  var default: js.UndefOr[DragDropGuideBoxOptionsObject] = js.undefined
 }
-
 object SeriesPackedbubbleDataDragDropGuideBoxOptions {
-  @scala.inline
-  def apply(default: SeriesPackedbubbleDataDragDropGuideBoxDefaultOptions = null): SeriesPackedbubbleDataDragDropGuideBoxOptions = {
+  
+  inline def apply(): SeriesPackedbubbleDataDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesPackedbubbleDataDragDropGuideBoxOptions]
   }
+  
+  extension [Self <: SeriesPackedbubbleDataDragDropGuideBoxOptions](x: Self) {
+    
+    inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+  }
 }
-

@@ -1,12 +1,12 @@
 package typingsJapgolly.lodash.fpMod
 
 import typingsJapgolly.lodash.mod.CloneWithCustomizer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LodashCloneWith1x2[T] extends js.Object {
-  def apply[TResult](customizer: CloneWithCustomizer[T, js.UndefOr[TResult]]): TResult | T = js.native
+trait LodashCloneWith1x2[T] extends StObject {
+  
+  def apply[TResult /* <: js.Object | String | Double | Boolean | Null */](customizer: CloneWithCustomizer[T, TResult]): TResult = js.native
 }
-

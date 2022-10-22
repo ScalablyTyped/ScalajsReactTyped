@@ -1,20 +1,20 @@
 package typingsJapgolly.react.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+//
+// Props / DOM Attributes
+// ----------------------------------------------------------------------
 trait HTMLProps[T]
-  extends AllHTMLAttributes[T]
+  extends StObject
+     with AllHTMLAttributes[T]
      with ClassAttributes[T]
-
 object HTMLProps {
-  @scala.inline
-  def apply[T](AllHTMLAttributes: AllHTMLAttributes[T] = null, ClassAttributes: ClassAttributes[T] = null): HTMLProps[T] = {
+  
+  inline def apply[T](): HTMLProps[T] = {
     val __obj = js.Dynamic.literal()
-    if (AllHTMLAttributes != null) js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
-    if (ClassAttributes != null) js.Dynamic.global.Object.assign(__obj, ClassAttributes)
     __obj.asInstanceOf[HTMLProps[T]]
   }
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.winrt.Windows.Media.MediaProperties
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IAudioEncodingProperties extends IMediaEncodingProperties {
+trait IAudioEncodingProperties
+  extends StObject
+     with IMediaEncodingProperties {
+  
   var bitrate: Double
+  
   var bitsPerSample: Double
+  
   var channelCount: Double
+  
   var sampleRate: Double
 }
-
 object IAudioEncodingProperties {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     bitrate: Double,
     bitsPerSample: Double,
     channelCount: Double,
@@ -26,5 +31,15 @@ object IAudioEncodingProperties {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAudioEncodingProperties]
   }
+  
+  extension [Self <: IAudioEncodingProperties](x: Self) {
+    
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    
+    inline def setBitsPerSample(value: Double): Self = StObject.set(x, "bitsPerSample", value.asInstanceOf[js.Any])
+    
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+  }
 }
-

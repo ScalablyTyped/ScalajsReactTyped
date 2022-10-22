@@ -1,27 +1,38 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetConnectedBluetoothDevicesSuccess extends js.Object {
+trait GetConnectedBluetoothDevicesSuccess extends StObject {
+  
   /**
     * 搜索到的设备列表
     */
   var devices: js.UndefOr[js.Array[GetConnectedBluetoothDevicesSuccessData]] = js.undefined
+  
   /**
     * 成功：ok，错误：详细信息
     */
   var errMsg: js.UndefOr[String] = js.undefined
 }
-
 object GetConnectedBluetoothDevicesSuccess {
-  @scala.inline
-  def apply(devices: js.Array[GetConnectedBluetoothDevicesSuccessData] = null, errMsg: String = null): GetConnectedBluetoothDevicesSuccess = {
+  
+  inline def apply(): GetConnectedBluetoothDevicesSuccess = {
     val __obj = js.Dynamic.literal()
-    if (devices != null) __obj.updateDynamic("devices")(devices.asInstanceOf[js.Any])
-    if (errMsg != null) __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetConnectedBluetoothDevicesSuccess]
   }
+  
+  extension [Self <: GetConnectedBluetoothDevicesSuccess](x: Self) {
+    
+    inline def setDevices(value: js.Array[GetConnectedBluetoothDevicesSuccessData]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    
+    inline def setDevicesVarargs(value: GetConnectedBluetoothDevicesSuccessData*): Self = StObject.set(x, "devices", js.Array(value*))
+    
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    
+    inline def setErrMsgUndefined: Self = StObject.set(x, "errMsg", js.undefined)
+  }
 }
-

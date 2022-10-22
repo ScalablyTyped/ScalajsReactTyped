@@ -1,20 +1,61 @@
 package typingsJapgolly.activexMshtml.MSHTML
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("MSHTML.WebGeocoordinates")
-@js.native
-class WebGeocoordinates protected () extends js.Object {
-  @JSName("MSHTML.WebGeocoordinates_typekey")
-  var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates = js.native
-  val accuracy: Double = js.native
-  val altitude: js.Any = js.native
-  val altitudeAccuracy: js.Any = js.native
-  val heading: js.Any = js.native
-  val latitude: Double = js.native
-  val longitude: Double = js.native
-  val speed: js.Any = js.native
+trait WebGeocoordinates extends StObject {
+  
+  /* private */ @JSName("MSHTML.WebGeocoordinates_typekey")
+  var MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates
+  
+  val accuracy: Double
+  
+  val altitude: Any
+  
+  val altitudeAccuracy: Any
+  
+  val heading: Any
+  
+  val latitude: Double
+  
+  val longitude: Double
+  
+  val speed: Any
 }
-
+object WebGeocoordinates {
+  
+  inline def apply(
+    MSHTMLDotWebGeocoordinates_typekey: WebGeocoordinates,
+    accuracy: Double,
+    altitude: Any,
+    altitudeAccuracy: Any,
+    heading: Any,
+    latitude: Double,
+    longitude: Double,
+    speed: Any
+  ): WebGeocoordinates = {
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], altitude = altitude.asInstanceOf[js.Any], altitudeAccuracy = altitudeAccuracy.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any])
+    __obj.updateDynamic("MSHTML.WebGeocoordinates_typekey")(MSHTMLDotWebGeocoordinates_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebGeocoordinates]
+  }
+  
+  extension [Self <: WebGeocoordinates](x: Self) {
+    
+    inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
+    
+    inline def setAltitude(value: Any): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+    
+    inline def setAltitudeAccuracy(value: Any): Self = StObject.set(x, "altitudeAccuracy", value.asInstanceOf[js.Any])
+    
+    inline def setHeading(value: Any): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    
+    inline def setMSHTMLDotWebGeocoordinates_typekey(value: WebGeocoordinates): Self = StObject.set(x, "MSHTML.WebGeocoordinates_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSpeed(value: Any): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+  }
+}

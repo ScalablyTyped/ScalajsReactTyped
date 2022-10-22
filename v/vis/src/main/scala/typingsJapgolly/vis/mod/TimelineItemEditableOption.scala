@@ -1,27 +1,36 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineItemEditableOption extends js.Object {
+trait TimelineItemEditableOption extends StObject {
+  
   var remove: js.UndefOr[Boolean] = js.undefined
+  
   var updateGroup: js.UndefOr[Boolean] = js.undefined
+  
   var updateTime: js.UndefOr[Boolean] = js.undefined
 }
-
 object TimelineItemEditableOption {
-  @scala.inline
-  def apply(
-    remove: js.UndefOr[Boolean] = js.undefined,
-    updateGroup: js.UndefOr[Boolean] = js.undefined,
-    updateTime: js.UndefOr[Boolean] = js.undefined
-  ): TimelineItemEditableOption = {
+  
+  inline def apply(): TimelineItemEditableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateGroup)) __obj.updateDynamic("updateGroup")(updateGroup.asInstanceOf[js.Any])
-    if (!js.isUndefined(updateTime)) __obj.updateDynamic("updateTime")(updateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItemEditableOption]
   }
+  
+  extension [Self <: TimelineItemEditableOption](x: Self) {
+    
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setUpdateGroup(value: Boolean): Self = StObject.set(x, "updateGroup", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateGroupUndefined: Self = StObject.set(x, "updateGroup", js.undefined)
+    
+    inline def setUpdateTime(value: Boolean): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+  }
 }
-

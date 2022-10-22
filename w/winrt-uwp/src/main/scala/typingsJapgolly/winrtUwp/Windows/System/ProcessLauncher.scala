@@ -1,17 +1,7 @@
 package typingsJapgolly.winrtUwp.Windows.System
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.System.ProcessLauncher")
-@js.native
-abstract class ProcessLauncher () extends js.Object
-
-/* static members */
-@JSGlobal("Windows.System.ProcessLauncher")
-@js.native
-object ProcessLauncher extends js.Object {
-  var runToCompletionAsync: js.Any = js.native
-}
-
+trait ProcessLauncher extends StObject

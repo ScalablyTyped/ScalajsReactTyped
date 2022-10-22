@@ -1,42 +1,33 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.modalPropsTypeMod.Action
-import typingsJapgolly.antdMobileRn.operationContainerNativeMod.OperationContainerProps
-import typingsJapgolly.antdMobileRn.operationContainerNativeMod.default
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libModalOperationContainerDotnativeMod.OperationContainerProps
+import typingsJapgolly.antdMobileRn.libModalOperationContainerDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libModalPropsTypeMod.Action
 import typingsJapgolly.reactNative.mod.TextStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OperationContainerDotnative {
-  def apply(
-    actions: js.Array[Action[TextStyle]],
-    onAnimationEnd: /* visible */ Boolean => Callback = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[OperationContainerProps, default, Unit, OperationContainerProps] = {
-    val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
   
-      if (onAnimationEnd != null) __obj.updateDynamic("onAnimationEnd")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onAnimationEnd(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.operationContainerNativeMod.OperationContainerProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.operationContainerNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.operationContainerNativeMod.OperationContainerProps])(children: _*)
+  inline def apply(actions: js.Array[Action[TextStyle]]): Builder = {
+    val __props = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[OperationContainerProps]))
   }
+  
   @JSImport("antd-mobile-rn/lib/modal/OperationContainer.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def onAnimationEnd(value: /* visible */ Boolean => Callback): this.type = set("onAnimationEnd", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+  }
+  
+  def withProps(p: OperationContainerProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

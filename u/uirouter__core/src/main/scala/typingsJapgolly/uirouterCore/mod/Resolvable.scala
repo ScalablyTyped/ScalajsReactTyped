@@ -1,19 +1,19 @@
 package typingsJapgolly.uirouterCore.mod
 
-import typingsJapgolly.uirouterCore.resolveInterfaceMod.ResolvableLiteral
-import typingsJapgolly.uirouterCore.resolveInterfaceMod.ResolvePolicy
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod.ResolvableLiteral
+import typingsJapgolly.uirouterCore.libResolveInterfaceMod.ResolvePolicy
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/core", "Resolvable")
 @js.native
-class Resolvable protected ()
+open class Resolvable protected ()
   extends typingsJapgolly.uirouterCore.libResolveMod.Resolvable {
-  /** This constructor creates a Resolvable copy */
-  def this(resolvable: typingsJapgolly.uirouterCore.resolvableMod.Resolvable) = this()
   /** This constructor creates a new Resolvable from the plain old [[ResolvableLiteral]] javascript object */
   def this(resolvable: ResolvableLiteral) = this()
+  /** This constructor creates a Resolvable copy */
+  def this(resolvable: typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable) = this()
   /**
     * This constructor creates a new `Resolvable`
     *
@@ -33,16 +33,21 @@ class Resolvable protected ()
     * @param policy the [[ResolvePolicy]] defines when and how the Resolvable is processed
     * @param data Pre-resolved data. If the resolve value is already known, it may be provided here.
     */
-  def this(token: js.Any, resolveFn: js.Function) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_]) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
+  def this(token: Any, resolveFn: js.Function) = this()
+  def this(token: Any, resolveFn: js.Function, deps: js.Array[Any]) = this()
+  def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy) = this()
+  def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
+  def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: Unit, data: Any) = this()
+  def this(token: Any, resolveFn: js.Function, deps: js.Array[Any], policy: ResolvePolicy, data: Any) = this()
+  def this(token: Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: Any) = this()
+  def this(token: Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: Any) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/core", "Resolvable")
-@js.native
-object Resolvable extends js.Object {
-  def fromData(token: js.Any, data: js.Any): typingsJapgolly.uirouterCore.resolvableMod.Resolvable = js.native
+object Resolvable {
+  
+  @JSImport("@uirouter/core", "Resolvable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fromData(token: Any, data: Any): typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.uirouterCore.libResolveResolvableMod.Resolvable]
 }
-

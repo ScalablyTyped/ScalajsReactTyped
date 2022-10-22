@@ -1,19 +1,24 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ControlOptions extends js.Object {
+trait ControlOptions extends StObject {
+  
   var position: js.UndefOr[ControlPosition] = js.undefined
 }
-
 object ControlOptions {
-  @scala.inline
-  def apply(position: ControlPosition = null): ControlOptions = {
+  
+  inline def apply(): ControlOptions = {
     val __obj = js.Dynamic.literal()
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ControlOptions]
   }
+  
+  extension [Self <: ControlOptions](x: Self) {
+    
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

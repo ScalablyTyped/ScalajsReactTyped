@@ -5,76 +5,133 @@ import typingsJapgolly.nodeSass.nodeSassStrings.compact
 import typingsJapgolly.nodeSass.nodeSassStrings.compressed
 import typingsJapgolly.nodeSass.nodeSassStrings.expanded
 import typingsJapgolly.nodeSass.nodeSassStrings.nested
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Options
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[Any] {
+  
   var data: js.UndefOr[String] = js.undefined
+  
   var file: js.UndefOr[String] = js.undefined
+  
   var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.undefined
+  
   var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
+  
   var includePaths: js.UndefOr[js.Array[String]] = js.undefined
+  
   var indentType: js.UndefOr[String] = js.undefined
+  
   var indentWidth: js.UndefOr[Double] = js.undefined
+  
   var indentedSyntax: js.UndefOr[Boolean] = js.undefined
+  
   var linefeed: js.UndefOr[String] = js.undefined
+  
   var omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined
+  
   var outFile: js.UndefOr[String] = js.undefined
+  
   var outputStyle: js.UndefOr[compact | compressed | expanded | nested] = js.undefined
+  
   var precision: js.UndefOr[Double] = js.undefined
+  
   var sourceComments: js.UndefOr[Boolean] = js.undefined
+  
   var sourceMap: js.UndefOr[Boolean | String] = js.undefined
+  
   var sourceMapContents: js.UndefOr[Boolean] = js.undefined
+  
   var sourceMapEmbed: js.UndefOr[Boolean] = js.undefined
+  
   var sourceMapRoot: js.UndefOr[String] = js.undefined
 }
-
 object Options {
-  @scala.inline
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    data: String = null,
-    file: String = null,
-    functions: FunctionDeclarations[SassFunction] = null,
-    importer: Importer | js.Array[Importer] = null,
-    includePaths: js.Array[String] = null,
-    indentType: String = null,
-    indentWidth: Int | Double = null,
-    indentedSyntax: js.UndefOr[Boolean] = js.undefined,
-    linefeed: String = null,
-    omitSourceMapUrl: js.UndefOr[Boolean] = js.undefined,
-    outFile: String = null,
-    outputStyle: compact | compressed | expanded | nested = null,
-    precision: Int | Double = null,
-    sourceComments: js.UndefOr[Boolean] = js.undefined,
-    sourceMap: Boolean | String = null,
-    sourceMapContents: js.UndefOr[Boolean] = js.undefined,
-    sourceMapEmbed: js.UndefOr[Boolean] = js.undefined,
-    sourceMapRoot: String = null
-  ): Options = {
+  
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
-    if (functions != null) __obj.updateDynamic("functions")(functions.asInstanceOf[js.Any])
-    if (importer != null) __obj.updateDynamic("importer")(importer.asInstanceOf[js.Any])
-    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths.asInstanceOf[js.Any])
-    if (indentType != null) __obj.updateDynamic("indentType")(indentType.asInstanceOf[js.Any])
-    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(indentedSyntax)) __obj.updateDynamic("indentedSyntax")(indentedSyntax.asInstanceOf[js.Any])
-    if (linefeed != null) __obj.updateDynamic("linefeed")(linefeed.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitSourceMapUrl)) __obj.updateDynamic("omitSourceMapUrl")(omitSourceMapUrl.asInstanceOf[js.Any])
-    if (outFile != null) __obj.updateDynamic("outFile")(outFile.asInstanceOf[js.Any])
-    if (outputStyle != null) __obj.updateDynamic("outputStyle")(outputStyle.asInstanceOf[js.Any])
-    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceComments)) __obj.updateDynamic("sourceComments")(sourceComments.asInstanceOf[js.Any])
-    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapContents)) __obj.updateDynamic("sourceMapContents")(sourceMapContents.asInstanceOf[js.Any])
-    if (!js.isUndefined(sourceMapEmbed)) __obj.updateDynamic("sourceMapEmbed")(sourceMapEmbed.asInstanceOf[js.Any])
-    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  extension [Self <: Options](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    
+    inline def setFunctions(value: FunctionDeclarations[SassFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    
+    inline def setImporter(value: Importer | js.Array[Importer]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
+    
+    inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
+    
+    inline def setImporterVarargs(value: Importer*): Self = StObject.set(x, "importer", js.Array(value*))
+    
+    inline def setIncludePaths(value: js.Array[String]): Self = StObject.set(x, "includePaths", value.asInstanceOf[js.Any])
+    
+    inline def setIncludePathsUndefined: Self = StObject.set(x, "includePaths", js.undefined)
+    
+    inline def setIncludePathsVarargs(value: String*): Self = StObject.set(x, "includePaths", js.Array(value*))
+    
+    inline def setIndentType(value: String): Self = StObject.set(x, "indentType", value.asInstanceOf[js.Any])
+    
+    inline def setIndentTypeUndefined: Self = StObject.set(x, "indentType", js.undefined)
+    
+    inline def setIndentWidth(value: Double): Self = StObject.set(x, "indentWidth", value.asInstanceOf[js.Any])
+    
+    inline def setIndentWidthUndefined: Self = StObject.set(x, "indentWidth", js.undefined)
+    
+    inline def setIndentedSyntax(value: Boolean): Self = StObject.set(x, "indentedSyntax", value.asInstanceOf[js.Any])
+    
+    inline def setIndentedSyntaxUndefined: Self = StObject.set(x, "indentedSyntax", js.undefined)
+    
+    inline def setLinefeed(value: String): Self = StObject.set(x, "linefeed", value.asInstanceOf[js.Any])
+    
+    inline def setLinefeedUndefined: Self = StObject.set(x, "linefeed", js.undefined)
+    
+    inline def setOmitSourceMapUrl(value: Boolean): Self = StObject.set(x, "omitSourceMapUrl", value.asInstanceOf[js.Any])
+    
+    inline def setOmitSourceMapUrlUndefined: Self = StObject.set(x, "omitSourceMapUrl", js.undefined)
+    
+    inline def setOutFile(value: String): Self = StObject.set(x, "outFile", value.asInstanceOf[js.Any])
+    
+    inline def setOutFileUndefined: Self = StObject.set(x, "outFile", js.undefined)
+    
+    inline def setOutputStyle(value: compact | compressed | expanded | nested): Self = StObject.set(x, "outputStyle", value.asInstanceOf[js.Any])
+    
+    inline def setOutputStyleUndefined: Self = StObject.set(x, "outputStyle", js.undefined)
+    
+    inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+    
+    inline def setSourceComments(value: Boolean): Self = StObject.set(x, "sourceComments", value.asInstanceOf[js.Any])
+    
+    inline def setSourceCommentsUndefined: Self = StObject.set(x, "sourceComments", js.undefined)
+    
+    inline def setSourceMap(value: Boolean | String): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapContents(value: Boolean): Self = StObject.set(x, "sourceMapContents", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapContentsUndefined: Self = StObject.set(x, "sourceMapContents", js.undefined)
+    
+    inline def setSourceMapEmbed(value: Boolean): Self = StObject.set(x, "sourceMapEmbed", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapEmbedUndefined: Self = StObject.set(x, "sourceMapEmbed", js.undefined)
+    
+    inline def setSourceMapRoot(value: String): Self = StObject.set(x, "sourceMapRoot", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapRootUndefined: Self = StObject.set(x, "sourceMapRoot", js.undefined)
+    
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+  }
 }
-

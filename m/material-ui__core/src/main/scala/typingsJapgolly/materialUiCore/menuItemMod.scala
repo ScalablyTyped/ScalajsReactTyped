@@ -1,26 +1,35 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.materialUiCore.menuItemMenuItemMod.MenuItemProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import org.scalablytyped.runtime.Shortcut
+import typingsJapgolly.materialUiCore.anon.`7`
+import typingsJapgolly.materialUiCore.anon.`8`
+import typingsJapgolly.materialUiCore.buttonBaseButtonBaseMod.ExtendButtonBase
+import typingsJapgolly.materialUiCore.materialUiCoreStrings.li
+import typingsJapgolly.materialUiCore.menuItemMenuItemMod.MenuItemTypeMap
+import typingsJapgolly.materialUiCore.overridableComponentMod.OverridableComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/MenuItem", JSImport.Namespace)
-@js.native
-object menuItemMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[MenuItemProps, ComponentState, js.Any] {
-    def this(props: MenuItemProps) = this()
-    def this(props: MenuItemProps, context: js.Any) = this()
-  }
+object menuItemMod extends Shortcut {
   
+  /**
+    *
+    * Demos:
+    *
+    * - [Menus](https://mui.com/components/menus/)
+    *
+    * API:
+    *
+    * - [MenuItem API](https://mui.com/api/menu-item/)
+    * - inherits [ListItem API](https://mui.com/api/list-item/)
+    */
+  @JSImport("@material-ui/core/MenuItem", JSImport.Default)
   @js.native
-  object default extends TopLevel[ComponentType[MenuItemProps]]
+  val default: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = js.native
   
+  type _To = (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]])
+  
+  /* This means you don't have to write `default`, but can instead just say `menuItemMod.foo` */
+  override def _to: (OverridableComponent[MenuItemTypeMap[`7`, li]]) & (ExtendButtonBase[MenuItemTypeMap[`8`, li]]) = default
 }
-

@@ -25,49 +25,60 @@ import typingsJapgolly.officeJs.officeJsStrings.ThreeDEmboss
 import typingsJapgolly.officeJs.officeJsStrings.ThreeDEngrave
 import typingsJapgolly.officeJs.officeJsStrings.Triple
 import typingsJapgolly.officeJs.officeJsStrings.Wave
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "tableBorder.toJSON()". */
-trait TableBorderData extends js.Object {
+/** An interface describing the data returned by calling `tableBorder.toJSON()`. */
+trait TableBorderData extends StObject {
+  
   /**
-    *
     * Gets or sets the table border color.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
-    *
     * Gets or sets the type of the table border.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var `type`: js.UndefOr[
     BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave
   ] = js.undefined
+  
   /**
-    *
     * Gets or sets the width, in points, of the table border. Not applicable to table border types that have fixed widths.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
-
 object TableBorderData {
-  @scala.inline
-  def apply(
-    color: String = null,
-    `type`: BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave = null,
-    width: Int | scala.Double = null
-  ): TableBorderData = {
+  
+  inline def apply(): TableBorderData = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableBorderData]
   }
+  
+  extension [Self <: TableBorderData](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setType(
+      value: BorderType | Mixed | None | Single | Double | Dotted | Dashed | DotDashed | Dot2Dashed | Triple | ThinThickSmall | ThickThinSmall | ThinThickThinSmall | ThinThickMed | ThickThinMed | ThinThickThinMed | ThinThickLarge | ThickThinLarge | ThinThickThinLarge | Wave | DoubleWave | DashedSmall | DashDotStroked | ThreeDEmboss | ThreeDEngrave
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: scala.Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

@@ -1,24 +1,20 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.OPEN
   - typingsJapgolly.squareConnect.squareConnectStrings.COMPLETED
   - typingsJapgolly.squareConnect.squareConnectStrings.CANCELED
 */
-trait OrderStateType extends js.Object
-
+trait OrderStateType extends StObject
 object OrderStateType {
-  @scala.inline
-  def CANCELED: typingsJapgolly.squareConnect.squareConnectStrings.CANCELED = this.cast("CANCELED")
-  @scala.inline
-  def COMPLETED: typingsJapgolly.squareConnect.squareConnectStrings.COMPLETED = this.cast("COMPLETED")
-  @scala.inline
-  def OPEN: typingsJapgolly.squareConnect.squareConnectStrings.OPEN = this.cast("OPEN")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CANCELED: typingsJapgolly.squareConnect.squareConnectStrings.CANCELED = "CANCELED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.CANCELED]
+  
+  inline def COMPLETED: typingsJapgolly.squareConnect.squareConnectStrings.COMPLETED = "COMPLETED".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.COMPLETED]
+  
+  inline def OPEN: typingsJapgolly.squareConnect.squareConnectStrings.OPEN = "OPEN".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.OPEN]
 }
-

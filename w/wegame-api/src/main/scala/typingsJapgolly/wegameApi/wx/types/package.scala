@@ -1,11 +1,15 @@
-package typingsJapgolly.wegameApi.wx
+package typingsJapgolly.wegameApi.wx.types
 
+import typingsJapgolly.wegameApi.anon.ErrMsg
+import typingsJapgolly.wegameApi.anon.`0`
+import typingsJapgolly.wegameApi.anon.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object types {
-  type SocketErrorCallback = js.Function1[/* res */ typingsJapgolly.wegameApi.AnonErrMsg, scala.Unit]
-  type SocketMessageCallback = js.Function1[/* res */ typingsJapgolly.wegameApi.Anon0, scala.Unit]
-  type SocketOpenCallback = js.Function1[/* res */ typingsJapgolly.wegameApi.Anon1, scala.Unit]
-}
+
+type SocketErrorCallback = js.Function1[/* res */ ErrMsg, Unit]
+
+type SocketMessageCallback = js.Function1[/* res */ `0`, Unit]
+
+type SocketOpenCallback = js.Function1[/* res */ `1`, Unit]

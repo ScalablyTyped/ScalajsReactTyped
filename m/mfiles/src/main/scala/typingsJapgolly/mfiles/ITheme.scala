@@ -1,21 +1,26 @@
 package typingsJapgolly.mfiles
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.mfiles.mfilesNumbers.`0`
+import typingsJapgolly.mfiles.mfilesInts.`0`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITheme extends /* key */ StringDictionary[String | Boolean | Double] {
+trait ITheme
+  extends StObject
+     with /* key */ StringDictionary[String | Boolean | Double] {
+  
   var last: `0`
 }
-
 object ITheme {
-  @scala.inline
-  def apply(last: `0`, StringDictionary: /* key */ StringDictionary[String | Boolean | Double] = null): ITheme = {
-    val __obj = js.Dynamic.literal(last = last.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
+  
+  inline def apply(): ITheme = {
+    val __obj = js.Dynamic.literal(last = 0)
     __obj.asInstanceOf[ITheme]
   }
+  
+  extension [Self <: ITheme](x: Self) {
+    
+    inline def setLast(value: `0`): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+  }
 }
-

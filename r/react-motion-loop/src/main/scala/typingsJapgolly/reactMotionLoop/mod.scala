@@ -1,30 +1,71 @@
 package typingsJapgolly.reactMotionLoop
 
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.facade.React.Element
 import typingsJapgolly.react.mod.Component
 import typingsJapgolly.reactMotion.mod.PlainStyle
 import typingsJapgolly.reactMotion.mod.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-motion-loop", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class ReactMotionLoop ()
-    extends Component[ReactMotionLoopProps, js.Object, js.Any]
+object mod {
   
-  /* Inlined parent std.Partial<react-motion.react-motion.MotionProps> */
+  @JSImport("react-motion-loop", "ReactMotionLoop")
   @js.native
-  trait ReactMotionLoopProps extends js.Object {
-    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, Element | Element]] = js.native
-    var defaultStyle: js.UndefOr[PlainStyle] = js.native
-    var onRest: js.UndefOr[js.Function0[Unit]] = js.native
-    var style: js.UndefOr[Style] = js.native
-    var styleFrom: Style = js.native
-    var styleTo: Style = js.native
+  open class ReactMotionLoop protected ()
+    extends Component[ReactMotionLoopProps, js.Object, Any] {
+    def this(props: ReactMotionLoopProps) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: ReactMotionLoopProps, context: Any) = this()
   }
   
+  /* Inlined parent std.Partial<react-motion.react-motion.MotionProps> */
+  trait ReactMotionLoopProps extends StObject {
+    
+    var children: js.UndefOr[js.Function1[/* interpolatedStyle */ PlainStyle, Element]] = js.undefined
+    
+    var defaultStyle: js.UndefOr[PlainStyle] = js.undefined
+    
+    var onRest: js.UndefOr[js.Function0[Unit]] = js.undefined
+    
+    var style: js.UndefOr[Style] = js.undefined
+    
+    var styleFrom: Style
+    
+    var styleTo: Style
+  }
+  object ReactMotionLoopProps {
+    
+    inline def apply(styleFrom: Style, styleTo: Style): ReactMotionLoopProps = {
+      val __obj = js.Dynamic.literal(styleFrom = styleFrom.asInstanceOf[js.Any], styleTo = styleTo.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ReactMotionLoopProps]
+    }
+    
+    extension [Self <: ReactMotionLoopProps](x: Self) {
+      
+      inline def setChildren(value: /* interpolatedStyle */ PlainStyle => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setDefaultStyle(value: PlainStyle): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+      
+      inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+      
+      inline def setOnRest(value: Callback): Self = StObject.set(x, "onRest", value.toJsFn)
+      
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      
+      inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      
+      inline def setStyleFrom(value: Style): Self = StObject.set(x, "styleFrom", value.asInstanceOf[js.Any])
+      
+      inline def setStyleTo(value: Style): Self = StObject.set(x, "styleTo", value.asInstanceOf[js.Any])
+      
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    }
+  }
 }
-

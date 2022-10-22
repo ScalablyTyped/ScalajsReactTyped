@@ -1,60 +1,120 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotificationOptions extends js.Object {
+trait NotificationOptions extends StObject {
+  
+  /* standard dom */
   var actions: js.UndefOr[js.Array[NotificationAction]] = js.undefined
+  
+  /* standard dom */
   var badge: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var body: js.UndefOr[java.lang.String] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
+  
+  /* standard dom */
+  var data: js.UndefOr[Any] = js.undefined
+  
+  /* standard dom */
   var dir: js.UndefOr[NotificationDirection] = js.undefined
+  
+  /* standard dom */
   var icon: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var image: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var lang: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var renotify: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var requireInteraction: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var silent: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var tag: js.UndefOr[java.lang.String] = js.undefined
-  var timestamp: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
+  var timestamp: js.UndefOr[EpochTimeStamp] = js.undefined
+  
+  /* standard dom */
   var vibrate: js.UndefOr[VibratePattern] = js.undefined
 }
-
 object NotificationOptions {
-  @scala.inline
-  def apply(
-    actions: js.Array[NotificationAction] = null,
-    badge: java.lang.String = null,
-    body: java.lang.String = null,
-    data: js.Any = null,
-    dir: NotificationDirection = null,
-    icon: java.lang.String = null,
-    image: java.lang.String = null,
-    lang: java.lang.String = null,
-    renotify: js.UndefOr[scala.Boolean] = js.undefined,
-    requireInteraction: js.UndefOr[scala.Boolean] = js.undefined,
-    silent: js.UndefOr[scala.Boolean] = js.undefined,
-    tag: java.lang.String = null,
-    timestamp: Int | Double = null,
-    vibrate: VibratePattern = null
-  ): NotificationOptions = {
+  
+  inline def apply(): NotificationOptions = {
     val __obj = js.Dynamic.literal()
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (dir != null) __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (!js.isUndefined(renotify)) __obj.updateDynamic("renotify")(renotify.asInstanceOf[js.Any])
-    if (!js.isUndefined(requireInteraction)) __obj.updateDynamic("requireInteraction")(requireInteraction.asInstanceOf[js.Any])
-    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
-    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp.asInstanceOf[js.Any])
-    if (vibrate != null) __obj.updateDynamic("vibrate")(vibrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotificationOptions]
   }
+  
+  extension [Self <: NotificationOptions](x: Self) {
+    
+    inline def setActions(value: js.Array[NotificationAction]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: NotificationAction*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setBadge(value: java.lang.String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    
+    inline def setBody(value: java.lang.String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setDir(value: NotificationDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    
+    inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+    
+    inline def setIcon(value: java.lang.String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setImage(value: java.lang.String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    
+    inline def setLang(value: java.lang.String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setRenotify(value: scala.Boolean): Self = StObject.set(x, "renotify", value.asInstanceOf[js.Any])
+    
+    inline def setRenotifyUndefined: Self = StObject.set(x, "renotify", js.undefined)
+    
+    inline def setRequireInteraction(value: scala.Boolean): Self = StObject.set(x, "requireInteraction", value.asInstanceOf[js.Any])
+    
+    inline def setRequireInteractionUndefined: Self = StObject.set(x, "requireInteraction", js.undefined)
+    
+    inline def setSilent(value: scala.Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    
+    inline def setTag(value: java.lang.String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    
+    inline def setTimestamp(value: EpochTimeStamp): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    
+    inline def setVibrate(value: VibratePattern): Self = StObject.set(x, "vibrate", value.asInstanceOf[js.Any])
+    
+    inline def setVibrateUndefined: Self = StObject.set(x, "vibrate", js.undefined)
+    
+    inline def setVibrateVarargs(value: Double*): Self = StObject.set(x, "vibrate", js.Array(value*))
+  }
 }
-

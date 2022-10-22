@@ -1,39 +1,32 @@
 package typingsJapgolly.dynatrace
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynatraceStrings {
-  @js.native
-  sealed trait _error_ extends js.Object
   
   @js.native
-  sealed trait _info_ extends js.Object
+  sealed trait _error_ extends StObject
+  inline def _error_ : _error_ = "_error_".asInstanceOf[_error_]
   
   @js.native
-  sealed trait _warn_ extends js.Object
+  sealed trait _info_ extends StObject
+  inline def _info_ : _info_ = "_info_".asInstanceOf[_info_]
   
   @js.native
-  sealed trait c extends js.Object
+  sealed trait _warn_ extends StObject
+  inline def _warn_ : _warn_ = "_warn_".asInstanceOf[_warn_]
   
   @js.native
-  sealed trait i extends js.Object
+  sealed trait c extends StObject
+  inline def c: c = "c".asInstanceOf[c]
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait i extends StObject
+  inline def i: i = "i".asInstanceOf[i]
   
-  @scala.inline
-  def _error_ : _error_ = "_error_".asInstanceOf[_error_]
-  @scala.inline
-  def _info_ : _info_ = "_info_".asInstanceOf[_info_]
-  @scala.inline
-  def _warn_ : _warn_ = "_warn_".asInstanceOf[_warn_]
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
-  @scala.inline
-  def i: i = "i".asInstanceOf[i]
-  @scala.inline
-  def s: s = "s".asInstanceOf[s]
+  @js.native
+  sealed trait s extends StObject
+  inline def s: s = "s".asInstanceOf[s]
 }
-

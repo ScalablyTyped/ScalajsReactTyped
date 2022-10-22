@@ -1,7 +1,7 @@
 
 # Scala.js typings for bent
 
-Typings are for version 7.0
+Typings are for version 7.3
 
 ## Library description:
 Functional HTTP client for Node.js w/ async/await.
@@ -10,10 +10,10 @@ Functional HTTP client for Node.js w/ async/await.
 | ------------------ | :-------------: |
 | Full name          | bent |
 | Keywords           | - |
-| # releases         | 45 |
-| # dependents       | 22 |
-| # downloads        | 99573 |
-| # stars            | 1 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 1057886.3333333333 |
+| # stars            | 2160.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeal/bent#readme)

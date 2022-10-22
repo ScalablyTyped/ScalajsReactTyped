@@ -10,9 +10,9 @@ YouTube upload API
 | Full name          | youtube |
 | Keywords           | youtube, upload, video |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 6168 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1073.6666666666667 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/youtube)

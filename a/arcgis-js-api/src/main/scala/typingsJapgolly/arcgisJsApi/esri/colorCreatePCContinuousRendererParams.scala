@@ -1,86 +1,119 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorCreatePCContinuousRendererParams extends Object {
+trait colorCreatePCContinuousRendererParams
+  extends StObject
+     with Object {
+  
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
-    *
     * @default gray
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var basemap: js.UndefOr[String | Basemap] = js.undefined
+  
   /**
-    * In authoring apps, the user may select a pre-defined color scheme. Pass the scheme object to this property to avoid getting one based on the `basemap`.
+    * In authoring apps, the user may select a pre-defined color scheme.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var colorScheme: js.UndefOr[ColorScheme] = js.undefined
+  
   /**
     * The number of points per inch in the view.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
-    *
     * @default 25
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var density: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization. The only field names used for this renderer type are `elevation` and `intensity`.
+    * The name of the field whose data will be queried for statistics and used for the basis of the data-driven visualization.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var field: String
+  
   /**
     * The layer for which the visualization is generated.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var layer: PointCloudLayer
+  
   /**
-    * The size of each point expressed as a percentage. This value will determine point sizes scaled based on the given `density` of points. When the value is `100%`, the size of each point is set so that it minimizes the number of gaps between neighboring points. Any value above `100%` will allow for points to overlap neighboring points scaled to the given value. Values below `100%` scale point sizes smaller so there appear to be more gaps between points.
+    * Allows for cancelable requests.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
+  /**
+    * The size of each point expressed as a percentage.
     *
     * @default 100%
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var size: js.UndefOr[String] = js.undefined
+  
   /**
-    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatistics.html) function. If statistics for the field have already been generated, then pass the stats object here to avoid making a second statistics query to the server.
+    * A statistics object generated from the [summaryStatistics](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatistics.html) function.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-creators-color.html#createPCContinuousRenderer)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createPCContinuousRenderer)
     */
   var statistics: js.UndefOr[SummaryStatisticsResult] = js.undefined
 }
-
 object colorCreatePCContinuousRendererParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     field: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     layer: PointCloudLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    basemap: String | Basemap = null,
-    colorScheme: ColorScheme = null,
-    density: Int | Double = null,
-    size: String = null,
-    statistics: SummaryStatisticsResult = null
+    propertyIsEnumerable: PropertyKey => Boolean
   ): colorCreatePCContinuousRendererParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (basemap != null) __obj.updateDynamic("basemap")(basemap.asInstanceOf[js.Any])
-    if (colorScheme != null) __obj.updateDynamic("colorScheme")(colorScheme.asInstanceOf[js.Any])
-    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (statistics != null) __obj.updateDynamic("statistics")(statistics.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[colorCreatePCContinuousRendererParams]
   }
+  
+  extension [Self <: colorCreatePCContinuousRendererParams](x: Self) {
+    
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+  }
 }
-

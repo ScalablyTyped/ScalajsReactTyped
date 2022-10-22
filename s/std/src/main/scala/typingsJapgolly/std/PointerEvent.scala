@@ -1,29 +1,49 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The state of a DOM event produced by a pointer such as the geometry of the contact point, the device type that generated the event, the amount of pressure that was applied on the contact surface, etc. */
 @js.native
-trait PointerEvent extends MouseEvent {
+trait PointerEvent
+  extends StObject
+     with MouseEvent {
+  
+  /** Available only in secure contexts. */
+  /* standard dom */
+  def getCoalescedEvents(): js.Array[org.scalajs.dom.PointerEvent] = js.native
+  
+  /* standard dom */
+  def getPredictedEvents(): js.Array[org.scalajs.dom.PointerEvent] = js.native
+  
+  /* standard dom */
   val height: Double = js.native
+  
+  /* standard dom */
   val isPrimary: scala.Boolean = js.native
+  
+  /* standard dom */
   val pointerId: Double = js.native
+  
+  /* standard dom */
   val pointerType: java.lang.String = js.native
+  
+  /* standard dom */
   val pressure: Double = js.native
+  
+  /* standard dom */
   val tangentialPressure: Double = js.native
+  
+  /* standard dom */
   val tiltX: Double = js.native
+  
+  /* standard dom */
   val tiltY: Double = js.native
+  
+  /* standard dom */
   val twist: Double = js.native
+  
+  /* standard dom */
   val width: Double = js.native
 }
-
-@JSGlobal("PointerEvent")
-@js.native
-object PointerEvent
-  extends Instantiable1[/* type */ java.lang.String, PointerEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ PointerEventInit, PointerEvent]
-

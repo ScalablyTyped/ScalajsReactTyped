@@ -1,23 +1,38 @@
 package typingsJapgolly.reactJsonschemaForm.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AjvError extends js.Object {
+trait AjvError extends StObject {
+  
   var message: String
+  
   var name: String
-  var params: js.Any
+  
+  var params: Any
+  
   var property: String
+  
   var stack: String
 }
-
 object AjvError {
-  @scala.inline
-  def apply(message: String, name: String, params: js.Any, property: String, stack: String): AjvError = {
-    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
   
+  inline def apply(message: String, name: String, params: Any, property: String, stack: String): AjvError = {
+    val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjvError]
   }
+  
+  extension [Self <: AjvError](x: Self) {
+    
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    
+    inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+  }
 }
-

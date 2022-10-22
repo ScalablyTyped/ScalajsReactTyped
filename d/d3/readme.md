@@ -1,7 +1,7 @@
 
 # Scala.js typings for d3
 
-Typings are for version 5.7
+Typings are for version 7.4
 
 ## Library description:
 Data-Driven Documents
@@ -9,11 +9,11 @@ Data-Driven Documents
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | d3 |
-| Keywords           | dom, visualization, svg, animation, canvas |
-| # releases         | 37 |
-| # dependents       | 2383 |
-| # downloads        | 38405973 |
-| # stars            | 155 |
+| Keywords           | d3, dom, visualization, svg, animation, canvas |
+| # releases         | 36 |
+| # dependents       | 0.0 |
+| # downloads        | 7318557.333333333 |
+| # stars            | 101810.0 |
 
 ## Links
 - [Homepage](https://d3js.org)

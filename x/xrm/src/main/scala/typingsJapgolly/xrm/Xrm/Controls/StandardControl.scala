@@ -1,9 +1,9 @@
 package typingsJapgolly.xrm.Xrm.Controls
 
 import typingsJapgolly.xrm.Xrm.Attributes.Attribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a standard control.
@@ -11,15 +11,18 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait StandardControl
-  extends Control
+  extends StObject
+     with Control
      with UiStandardElement
      with UiFocusable
      with UiCanGetDisabledElement
      with UiCanSetDisabledElement {
+  
   /**
     * Displays an error or recommendation notification for a control, and lets you specify actions to execute based on the notification.
     */
   def addNotification(notification: AddControlNotificationOptions): Unit = js.native
+  
   /**
     * Clears the notification identified by uniqueId.
     * @param uniqueId (Optional) Unique identifier.
@@ -28,18 +31,20 @@ trait StandardControl
     */
   def clearNotification(): Boolean = js.native
   def clearNotification(uniqueId: String): Boolean = js.native
+  
   /**
     * Gets the control's bound attribute.
     * @returns The attribute.
     */
-  def getAttribute(): Attribute = js.native
+  def getAttribute(): Attribute[Any] = js.native
   /**
     * Gets the control's bound attribute.
     * @template T An Attribute type.
     * @returns The attribute.
     */
   @JSName("getAttribute")
-  def getAttribute_T_Attribute_T[T /* <: Attribute */](): T = js.native
+  def getAttribute_T_T[T /* <: Attribute[Any] */](): T = js.native
+  
   /**
     * Sets a control-local notification message.
     * @param message The message.
@@ -50,4 +55,3 @@ trait StandardControl
     */
   def setNotification(message: String, uniqueId: String): Boolean = js.native
 }
-

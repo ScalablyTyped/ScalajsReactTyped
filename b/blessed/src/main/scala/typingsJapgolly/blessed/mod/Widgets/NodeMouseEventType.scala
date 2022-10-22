@@ -1,8 +1,8 @@
 package typingsJapgolly.blessed.mod.Widgets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.blessed.blessedStrings.mouse
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.blessed.blessedStrings.wheelup
   - typingsJapgolly.blessed.blessedStrings.mousemove
 */
-trait NodeMouseEventType extends js.Object
-
+trait NodeMouseEventType extends StObject
 object NodeMouseEventType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def mouse: typingsJapgolly.blessed.blessedStrings.mouse = this.cast("mouse")
-  @scala.inline
-  def mousedown: typingsJapgolly.blessed.blessedStrings.mousedown = this.cast("mousedown")
-  @scala.inline
-  def mousemove: typingsJapgolly.blessed.blessedStrings.mousemove = this.cast("mousemove")
-  @scala.inline
-  def mouseout: typingsJapgolly.blessed.blessedStrings.mouseout = this.cast("mouseout")
-  @scala.inline
-  def mouseover: typingsJapgolly.blessed.blessedStrings.mouseover = this.cast("mouseover")
-  @scala.inline
-  def mouseup: typingsJapgolly.blessed.blessedStrings.mouseup = this.cast("mouseup")
-  @scala.inline
-  def mousewheel: typingsJapgolly.blessed.blessedStrings.mousewheel = this.cast("mousewheel")
-  @scala.inline
-  def wheeldown: typingsJapgolly.blessed.blessedStrings.wheeldown = this.cast("wheeldown")
-  @scala.inline
-  def wheelup: typingsJapgolly.blessed.blessedStrings.wheelup = this.cast("wheelup")
+  
+  inline def mouse: typingsJapgolly.blessed.blessedStrings.mouse = "mouse".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mouse]
+  
+  inline def mousedown: typingsJapgolly.blessed.blessedStrings.mousedown = "mousedown".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mousedown]
+  
+  inline def mousemove: typingsJapgolly.blessed.blessedStrings.mousemove = "mousemove".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mousemove]
+  
+  inline def mouseout: typingsJapgolly.blessed.blessedStrings.mouseout = "mouseout".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mouseout]
+  
+  inline def mouseover: typingsJapgolly.blessed.blessedStrings.mouseover = "mouseover".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mouseover]
+  
+  inline def mouseup: typingsJapgolly.blessed.blessedStrings.mouseup = "mouseup".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mouseup]
+  
+  inline def mousewheel: typingsJapgolly.blessed.blessedStrings.mousewheel = "mousewheel".asInstanceOf[typingsJapgolly.blessed.blessedStrings.mousewheel]
+  
+  inline def wheeldown: typingsJapgolly.blessed.blessedStrings.wheeldown = "wheeldown".asInstanceOf[typingsJapgolly.blessed.blessedStrings.wheeldown]
+  
+  inline def wheelup: typingsJapgolly.blessed.blessedStrings.wheelup = "wheelup".asInstanceOf[typingsJapgolly.blessed.blessedStrings.wheelup]
 }
-

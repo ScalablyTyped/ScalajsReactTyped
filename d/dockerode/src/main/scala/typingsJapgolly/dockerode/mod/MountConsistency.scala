@@ -1,8 +1,8 @@
 package typingsJapgolly.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dockerode.dockerodeStrings.default
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.dockerode.dockerodeStrings.cached
   - typingsJapgolly.dockerode.dockerodeStrings.delegated
 */
-trait MountConsistency extends js.Object
-
+trait MountConsistency extends StObject
 object MountConsistency {
-  @scala.inline
-  def cached: typingsJapgolly.dockerode.dockerodeStrings.cached = this.cast("cached")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def consistent: typingsJapgolly.dockerode.dockerodeStrings.consistent = this.cast("consistent")
-  @scala.inline
-  def default: typingsJapgolly.dockerode.dockerodeStrings.default = this.cast("default")
-  @scala.inline
-  def delegated: typingsJapgolly.dockerode.dockerodeStrings.delegated = this.cast("delegated")
+  
+  inline def default: typingsJapgolly.dockerode.dockerodeStrings.default = "default".asInstanceOf[typingsJapgolly.dockerode.dockerodeStrings.default]
+  
+  inline def cached: typingsJapgolly.dockerode.dockerodeStrings.cached = "cached".asInstanceOf[typingsJapgolly.dockerode.dockerodeStrings.cached]
+  
+  inline def consistent: typingsJapgolly.dockerode.dockerodeStrings.consistent = "consistent".asInstanceOf[typingsJapgolly.dockerode.dockerodeStrings.consistent]
+  
+  inline def delegated: typingsJapgolly.dockerode.dockerodeStrings.delegated = "delegated".asInstanceOf[typingsJapgolly.dockerode.dockerodeStrings.delegated]
 }
-

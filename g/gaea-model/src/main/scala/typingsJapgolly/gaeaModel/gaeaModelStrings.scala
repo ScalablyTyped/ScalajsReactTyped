@@ -1,69 +1,56 @@
 package typingsJapgolly.gaeaModel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaeaModelStrings {
-  @js.native
-  sealed trait add extends js.Object
   
   @js.native
-  sealed trait addCombo extends js.Object
+  sealed trait add extends StObject
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait addSource extends js.Object
+  sealed trait addCombo extends StObject
+  inline def addCombo: addCombo = "addCombo".asInstanceOf[addCombo]
   
   @js.native
-  sealed trait combo extends js.Object
+  sealed trait addSource extends StObject
+  inline def addSource: addSource = "addSource".asInstanceOf[addSource]
   
   @js.native
-  sealed trait exchange extends js.Object
+  sealed trait combo extends StObject
+  inline def combo: combo = "combo".asInstanceOf[combo]
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait exchange extends StObject
+  inline def exchange: exchange = "exchange".asInstanceOf[exchange]
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait move extends StObject
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait paste extends js.Object
+  sealed trait `new` extends StObject
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait paste extends StObject
+  inline def paste: paste = "paste".asInstanceOf[paste]
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait remove extends StObject
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait reset extends StObject
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait viewport extends js.Object
+  sealed trait update extends StObject
+  inline def update: update = "update".asInstanceOf[update]
   
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def addCombo: addCombo = "addCombo".asInstanceOf[addCombo]
-  @scala.inline
-  def addSource: addSource = "addSource".asInstanceOf[addSource]
-  @scala.inline
-  def combo: combo = "combo".asInstanceOf[combo]
-  @scala.inline
-  def exchange: exchange = "exchange".asInstanceOf[exchange]
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
-  @scala.inline
-  def `new`: `new` = "new".asInstanceOf[`new`]
-  @scala.inline
-  def paste: paste = "paste".asInstanceOf[paste]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
-  @scala.inline
-  def update: update = "update".asInstanceOf[update]
-  @scala.inline
-  def viewport: viewport = "viewport".asInstanceOf[viewport]
+  @js.native
+  sealed trait viewport extends StObject
+  inline def viewport: viewport = "viewport".asInstanceOf[viewport]
 }
-

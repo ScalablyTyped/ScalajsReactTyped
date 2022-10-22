@@ -1,24 +1,36 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.Anon0
-import typingsJapgolly.antdMobileRn.checkboxIndexNativeMod.default
-import typingsJapgolly.antdMobileRn.checkboxPropsTypeMod.CheckboxPropsType
+import typingsJapgolly.antdMobileRn.anon.Styles
+import typingsJapgolly.antdMobileRn.libCheckboxIndexDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libCheckboxPropsTypeMod.CheckboxPropsType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Checkbox")
 @js.native
-class Checkbox protected () extends default {
-  def this(props: CheckboxPropsType, context: js.Any) = this()
+open class Checkbox protected () extends default {
+  def this(props: CheckboxPropsType, context: Any) = this()
 }
-
 /* static members */
-@JSImport("antd-mobile-rn", "Checkbox")
-@js.native
-object Checkbox extends js.Object {
-  var AgreeItem: js.Any = js.native
-  var CheckboxItem: js.Any = js.native
-  var defaultProps: Anon0 = js.native
+object Checkbox {
+  
+  @JSImport("antd-mobile-rn", "Checkbox")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Checkbox.AgreeItem")
+  @js.native
+  def AgreeItem: Any = js.native
+  inline def AgreeItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgreeItem")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Checkbox.CheckboxItem")
+  @js.native
+  def CheckboxItem: Any = js.native
+  inline def CheckboxItem_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CheckboxItem")(x.asInstanceOf[js.Any])
+  
+  @JSImport("antd-mobile-rn", "Checkbox.defaultProps")
+  @js.native
+  def defaultProps: Styles = js.native
+  inline def defaultProps_=(x: Styles): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

@@ -1,35 +1,42 @@
 package typingsJapgolly.cesium.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait HeightReference extends js.Object
-
+sealed trait HeightReference extends StObject
 @JSImport("cesium", "HeightReference")
 @js.native
-object HeightReference extends js.Object {
-  @js.native
-  sealed trait CLAMP_TO_GROUND extends HeightReference
-  
-  @js.native
-  sealed trait NONE extends HeightReference
-  
-  @js.native
-  sealed trait RELATIVE_TO_GROUND extends HeightReference
+object HeightReference extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[HeightReference with Double] = js.native
-  /* 0 */ @js.native
-  object CLAMP_TO_GROUND extends TopLevel[CLAMP_TO_GROUND with Double]
+  def apply(value: Double): js.UndefOr[HeightReference & Double] = js.native
   
-  /* 1 */ @js.native
-  object NONE extends TopLevel[NONE with Double]
+  /**
+    * The position is clamped to the terrain.
+    */
+  @js.native
+  sealed trait CLAMP_TO_GROUND
+    extends StObject
+       with HeightReference
+  /* 1 */ val CLAMP_TO_GROUND: typingsJapgolly.cesium.mod.HeightReference.CLAMP_TO_GROUND & Double = js.native
   
-  /* 2 */ @js.native
-  object RELATIVE_TO_GROUND extends TopLevel[RELATIVE_TO_GROUND with Double]
+  /**
+    * The position is absolute.
+    */
+  @js.native
+  sealed trait NONE
+    extends StObject
+       with HeightReference
+  /* 0 */ val NONE: typingsJapgolly.cesium.mod.HeightReference.NONE & Double = js.native
   
+  /**
+    * The position height is the height above the terrain.
+    */
+  @js.native
+  sealed trait RELATIVE_TO_GROUND
+    extends StObject
+       with HeightReference
+  /* 2 */ val RELATIVE_TO_GROUND: typingsJapgolly.cesium.mod.HeightReference.RELATIVE_TO_GROUND & Double = js.native
 }
-

@@ -1,24 +1,37 @@
 package typingsJapgolly.aliOss.mod
 
-import typingsJapgolly.aliOss.AnonFragCount
+import typingsJapgolly.aliOss.anon.FragCount
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PutChannelConf extends js.Object {
+trait PutChannelConf extends StObject {
+  
   var Description: js.UndefOr[String] = js.undefined
+  
   var Status: js.UndefOr[String] = js.undefined
-  var Target: js.UndefOr[AnonFragCount] = js.undefined
+  
+  var Target: js.UndefOr[FragCount] = js.undefined
 }
-
 object PutChannelConf {
-  @scala.inline
-  def apply(Description: String = null, Status: String = null, Target: AnonFragCount = null): PutChannelConf = {
+  
+  inline def apply(): PutChannelConf = {
     val __obj = js.Dynamic.literal()
-    if (Description != null) __obj.updateDynamic("Description")(Description.asInstanceOf[js.Any])
-    if (Status != null) __obj.updateDynamic("Status")(Status.asInstanceOf[js.Any])
-    if (Target != null) __obj.updateDynamic("Target")(Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutChannelConf]
   }
+  
+  extension [Self <: PutChannelConf](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    
+    inline def setTarget(value: FragCount): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    
+    inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
+  }
 }
-

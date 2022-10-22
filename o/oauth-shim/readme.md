@@ -10,10 +10,10 @@ OAuth2 shim for OAuth1 services, works with the clientside library HelloJS
 | ------------------ | :-------------: |
 | Full name          | oauth-shim |
 | Keywords           | oauth, oauth-proxy, oauth-shim, rest |
-| # releases         | 5 |
-| # dependents       | 3 |
-| # downloads        | 26017 |
-| # stars            | 5 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3615.3333333333335 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/MrSwitch/node-oauth-shim)

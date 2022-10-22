@@ -1,13 +1,22 @@
 package typingsJapgolly.sinonChrome.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sinon-chrome", "desktopCapture")
-@js.native
-object desktopCapture extends js.Object {
-  var cancelChooseDesktopMedia: SinonChromeStub = js.native
-  var chooseDesktopMedia: SinonChromeStub = js.native
+object desktopCapture {
+  
+  @JSImport("sinon-chrome", "desktopCapture")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("sinon-chrome", "desktopCapture.cancelChooseDesktopMedia")
+  @js.native
+  def cancelChooseDesktopMedia: SinonChromeStub = js.native
+  inline def cancelChooseDesktopMedia_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelChooseDesktopMedia")(x.asInstanceOf[js.Any])
+  
+  @JSImport("sinon-chrome", "desktopCapture.chooseDesktopMedia")
+  @js.native
+  def chooseDesktopMedia: SinonChromeStub = js.native
+  inline def chooseDesktopMedia_=(x: SinonChromeStub): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chooseDesktopMedia")(x.asInstanceOf[js.Any])
 }
-

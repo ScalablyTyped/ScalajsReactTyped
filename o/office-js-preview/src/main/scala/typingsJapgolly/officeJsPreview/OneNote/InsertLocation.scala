@@ -1,32 +1,34 @@
 package typingsJapgolly.officeJsPreview.OneNote
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InsertLocation extends js.Object
-
+sealed trait InsertLocation extends StObject
 /**
+  * @remarks
   * [Api set: OneNoteApi 1.1]
   */
 @JSGlobal("OneNote.InsertLocation")
 @js.native
-object InsertLocation extends js.Object {
+object InsertLocation extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait after extends InsertLocation
+  sealed trait after
+    extends StObject
+       with InsertLocation
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.1]
+    */
   @js.native
-  sealed trait before extends InsertLocation
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[InsertLocation with String] = js.native
-  /* "After" */ @js.native
-  object after extends TopLevel[after with String]
-  
-  /* "Before" */ @js.native
-  object before extends TopLevel[before with String]
-  
+  sealed trait before
+    extends StObject
+       with InsertLocation
 }
-

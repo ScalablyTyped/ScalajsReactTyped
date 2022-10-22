@@ -1,26 +1,30 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`data-layer`
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DynamicDataLayer extends Object {
+trait DynamicDataLayer
+  extends StObject
+     with Object {
+  
   /**
-    * A table, feature class, or raster that resides in a registered workspace (either a folder or geodatabase). The data sources are not visible in the Services Directory by default. They may be viewed, published, and configured using the ArcGIS Server Manager.
+    * A table, feature class, or raster that resides in a registered workspace (either a folder or geodatabase).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
     */
   var dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource
+  
   /**
-    * Controls field visibility in the layer. Only specified fields will be visible. If `null`, all fields are visible in the dynamic layer. The specification for a field object is provided below.
+    * Controls field visibility in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#DynamicDataLayer)
     */
   var fields: js.Array[DynamicDataLayerFields]
+  
   /**
     * This value is always `data-layer` and is inferred when the `dataSource` property is set.
     *
@@ -28,22 +32,28 @@ trait DynamicDataLayer extends Object {
     */
   var `type`: `data-layer`
 }
-
 object DynamicDataLayer {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     dataSource: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource,
     fields: js.Array[DynamicDataLayerFields],
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    `type`: `data-layer`
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): DynamicDataLayer = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], dataSource = dataSource.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
+    __obj.updateDynamic("type")("data-layer")
     __obj.asInstanceOf[DynamicDataLayer]
   }
+  
+  extension [Self <: DynamicDataLayer](x: Self) {
+    
+    inline def setDataSource(value: TableDataSource | QueryTableDataSource | RasterDataSource | JoinTableDataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setFields(value: js.Array[DynamicDataLayerFields]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsVarargs(value: DynamicDataLayerFields*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setType(value: `data-layer`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

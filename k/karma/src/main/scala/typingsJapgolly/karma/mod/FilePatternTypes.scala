@@ -1,34 +1,26 @@
 package typingsJapgolly.karma.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.karma.karmaStrings.css
   - typingsJapgolly.karma.karmaStrings.html
   - typingsJapgolly.karma.karmaStrings.js_
-  - typingsJapgolly.karma.karmaStrings.dart
   - typingsJapgolly.karma.karmaStrings.module
   - typingsJapgolly.karma.karmaStrings.dom
 */
-trait FilePatternTypes extends js.Object
-
+trait FilePatternTypes extends StObject
 object FilePatternTypes {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def css: typingsJapgolly.karma.karmaStrings.css = this.cast("css")
-  @scala.inline
-  def dart: typingsJapgolly.karma.karmaStrings.dart = this.cast("dart")
-  @scala.inline
-  def dom: typingsJapgolly.karma.karmaStrings.dom = this.cast("dom")
-  @scala.inline
-  def html: typingsJapgolly.karma.karmaStrings.html = this.cast("html")
-  @JSName("js")
-  @scala.inline
-  def js_ : typingsJapgolly.karma.karmaStrings.js_ = this.cast("js")
-  @scala.inline
-  def module: typingsJapgolly.karma.karmaStrings.module = this.cast("module")
+  
+  inline def css: typingsJapgolly.karma.karmaStrings.css = "css".asInstanceOf[typingsJapgolly.karma.karmaStrings.css]
+  
+  inline def dom: typingsJapgolly.karma.karmaStrings.dom = "dom".asInstanceOf[typingsJapgolly.karma.karmaStrings.dom]
+  
+  inline def html: typingsJapgolly.karma.karmaStrings.html = "html".asInstanceOf[typingsJapgolly.karma.karmaStrings.html]
+  
+  inline def js_ : typingsJapgolly.karma.karmaStrings.js_ = "js".asInstanceOf[typingsJapgolly.karma.karmaStrings.js_]
+  
+  inline def module: typingsJapgolly.karma.karmaStrings.module = "module".asInstanceOf[typingsJapgolly.karma.karmaStrings.module]
 }
-

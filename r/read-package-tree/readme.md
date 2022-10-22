@@ -10,10 +10,10 @@ Read the contents of node_modules.
 | ------------------ | :-------------: |
 | Full name          | read-package-tree |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 82 |
-| # downloads        | 46951620 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 8911140.333333334 |
+| # stars            | 39.0 |
 
 ## Links
 - [Homepage](https://github.com/npm/read-package-tree)

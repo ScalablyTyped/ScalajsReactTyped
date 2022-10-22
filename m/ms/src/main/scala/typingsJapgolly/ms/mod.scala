@@ -1,20 +1,23 @@
 package typingsJapgolly.ms
 
+import typingsJapgolly.ms.anon.Long
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("ms", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
   /**
   * Parse the given `value` and return milliseconds.
   *
   * @param {String} value
   * @return {Number}
   */
-  def apply(value: String): Double = js.native
-  def apply(value: Double): String = js.native
-  def apply(value: Double, options: AnonLong): String = js.native
+  inline def apply(value: String): Double = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: Double, options: Long): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("ms", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IGenericMeasureListLayout
   */
-trait IGenericMeasureListLayout extends IGenericBaseLayout {
+trait IGenericMeasureListLayout
+  extends StObject
+     with IGenericBaseLayout {
+  
   var qMeassureListObject: IMeassureList
 }
-
 object IGenericMeasureListLayout {
-  @scala.inline
-  def apply(qInfo: INxInfo, qMeassureListObject: IMeassureList, qMeta: INxMeta): IGenericMeasureListLayout = {
-    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeassureListObject = qMeassureListObject.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
   
+  inline def apply(qInfo: INxInfo, qMeassureListObject: IMeassureList, qMeta: INxMeta): IGenericMeasureListLayout = {
+    val __obj = js.Dynamic.literal(qInfo = qInfo.asInstanceOf[js.Any], qMeassureListObject = qMeassureListObject.asInstanceOf[js.Any], qMeta = qMeta.asInstanceOf[js.Any])
     __obj.asInstanceOf[IGenericMeasureListLayout]
   }
+  
+  extension [Self <: IGenericMeasureListLayout](x: Self) {
+    
+    inline def setQMeassureListObject(value: IMeassureList): Self = StObject.set(x, "qMeassureListObject", value.asInstanceOf[js.Any])
+  }
 }
-

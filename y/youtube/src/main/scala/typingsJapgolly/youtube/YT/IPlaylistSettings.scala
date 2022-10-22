@@ -1,41 +1,45 @@
 package typingsJapgolly.youtube.YT
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPlaylistSettings extends VideoOrPlaylistSettings {
+trait IPlaylistSettings
+  extends StObject
+     with VideoOrPlaylistSettings {
+  
   /**
-  		 * Start index of the playlist, if not 0.
-  		 */
+    * Start index of the playlist, if not 0.
+    */
   var index: js.UndefOr[Double] = js.undefined
+  
   /**
-  		 * Identifier for the listType videos list.
-  		 */
+    * Identifier for the listType videos list.
+    */
   var list: String
+  
   /**
-  		 * Which type of content loads in the player.
-  		 */
+    * Which type of content loads in the player.
+    */
   var listType: js.UndefOr[ListType] = js.undefined
 }
-
 object IPlaylistSettings {
-  @scala.inline
-  def apply(
-    list: String,
-    endSeconds: Int | Double = null,
-    index: Int | Double = null,
-    listType: ListType = null,
-    startSeconds: Int | Double = null,
-    suggestedQuality: SuggestedVideoQuality = null
-  ): IPlaylistSettings = {
+  
+  inline def apply(list: String): IPlaylistSettings = {
     val __obj = js.Dynamic.literal(list = list.asInstanceOf[js.Any])
-    if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
-    if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
-    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPlaylistSettings]
   }
+  
+  extension [Self <: IPlaylistSettings](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    inline def setListType(value: ListType): Self = StObject.set(x, "listType", value.asInstanceOf[js.Any])
+    
+    inline def setListTypeUndefined: Self = StObject.set(x, "listType", js.undefined)
+  }
 }
-

@@ -1,104 +1,137 @@
 package typingsJapgolly.grommet.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Node
 import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.grommet.buttonMod.ButtonProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.grommet.anon.Disabled
+import typingsJapgolly.grommet.anon.Max
+import typingsJapgolly.grommet.es6ComponentsButtonMod.ButtonProps
+import typingsJapgolly.grommet.es6ComponentsRoutedButtonMod.RoutedButtonProps
+import typingsJapgolly.grommet.es6ComponentsTipMod.TipProps
+import typingsJapgolly.grommet.es6UtilsMod.A11yTitleType
+import typingsJapgolly.grommet.es6UtilsMod.AlignSelfType
+import typingsJapgolly.grommet.es6UtilsMod.ColorType
+import typingsJapgolly.grommet.es6UtilsMod.FillType
+import typingsJapgolly.grommet.es6UtilsMod.GapType
+import typingsJapgolly.grommet.es6UtilsMod.GridAreaType
+import typingsJapgolly.grommet.es6UtilsMod.HoverIndicatorType
+import typingsJapgolly.grommet.es6UtilsMod.MarginType
+import typingsJapgolly.grommet.es6UtilsMod.PolymorphicType
 import typingsJapgolly.grommet.grommetStrings._blank
 import typingsJapgolly.grommet.grommetStrings._parent
 import typingsJapgolly.grommet.grommetStrings._self
 import typingsJapgolly.grommet.grommetStrings._top
+import typingsJapgolly.grommet.grommetStrings.around
+import typingsJapgolly.grommet.grommetStrings.between
 import typingsJapgolly.grommet.grommetStrings.button
+import typingsJapgolly.grommet.grommetStrings.center
+import typingsJapgolly.grommet.grommetStrings.end
+import typingsJapgolly.grommet.grommetStrings.evenly
+import typingsJapgolly.grommet.grommetStrings.large
+import typingsJapgolly.grommet.grommetStrings.medium
 import typingsJapgolly.grommet.grommetStrings.push
 import typingsJapgolly.grommet.grommetStrings.replace
 import typingsJapgolly.grommet.grommetStrings.reset
+import typingsJapgolly.grommet.grommetStrings.small
+import typingsJapgolly.grommet.grommetStrings.start
+import typingsJapgolly.grommet.grommetStrings.stretch
 import typingsJapgolly.grommet.grommetStrings.submit
-import typingsJapgolly.grommet.routedButtonMod.RoutedButtonProps
-import typingsJapgolly.grommet.utilsMod.A11yTitleType
-import typingsJapgolly.grommet.utilsMod.AlignSelfType
-import typingsJapgolly.grommet.utilsMod.BackgroundType
-import typingsJapgolly.grommet.utilsMod.ColorType
-import typingsJapgolly.grommet.utilsMod.FillType
-import typingsJapgolly.grommet.utilsMod.GapType
-import typingsJapgolly.grommet.utilsMod.GridAreaType
-import typingsJapgolly.grommet.utilsMod.MarginType
-import typingsJapgolly.grommet.utilsMod.PolymorphicType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RoutedButton {
-  def apply(
-    path: String,
-    a11yTitle: A11yTitleType = null,
-    active: js.UndefOr[Boolean] = js.undefined,
-    alignSelf: AlignSelfType = null,
-    as: PolymorphicType = null,
-    color: ColorType = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fill: FillType = null,
-    focusIndicator: js.UndefOr[Boolean] = js.undefined,
-    gap: GapType = null,
-    gridArea: GridAreaType = null,
-    hoverIndicator: BackgroundType | Boolean = null,
-    href: String = null,
-    icon: VdomElement = null,
-    label: VdomNode = null,
-    margin: MarginType = null,
-    method: push | replace = null,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    primary: js.UndefOr[Boolean] = js.undefined,
-    reverse: js.UndefOr[Boolean] = js.undefined,
-    target: _self | _blank | _parent | _top = null,
-    `type`: button | reset | submit = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    RoutedButtonProps with ButtonProps, 
-    typingsJapgolly.grommet.mod.RoutedButton, 
-    Unit, 
-    RoutedButtonProps with ButtonProps
-  ] = {
-    val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
   
-      if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle.asInstanceOf[js.Any])
-    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
-    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusIndicator)) __obj.updateDynamic("focusIndicator")(focusIndicator.asInstanceOf[js.Any])
-    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
-    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
-    if (hoverIndicator != null) __obj.updateDynamic("hoverIndicator")(hoverIndicator.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.rawElement.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.rawNode.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
-    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.grommet.routedButtonMod.RoutedButtonProps with typingsJapgolly.grommet.buttonMod.ButtonProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.grommet.mod.RoutedButton](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.grommet.routedButtonMod.RoutedButtonProps with typingsJapgolly.grommet.buttonMod.ButtonProps])(children: _*)
+  inline def apply(path: String): Builder = {
+    val __props = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[RoutedButtonProps & ButtonProps]))
   }
-  @JSImport("grommet", "RoutedButton")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("grommet/es6", "RoutedButton")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.grommet.es6Mod.RoutedButton] {
+    
+    inline def a11yTitle(value: A11yTitleType): this.type = set("a11yTitle", value.asInstanceOf[js.Any])
+    
+    inline def active(value: Boolean): this.type = set("active", value.asInstanceOf[js.Any])
+    
+    inline def alignSelf(value: AlignSelfType): this.type = set("alignSelf", value.asInstanceOf[js.Any])
+    
+    inline def as(value: PolymorphicType): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def badge(value: Boolean | Double | Max | Element): this.type = set("badge", value.asInstanceOf[js.Any])
+    
+    inline def badgeVdomElement(value: VdomElement): this.type = set("badge", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def children(value: Node | (js.Function1[/* hasDisabledHoverFocus */ Disabled, Node])): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* hasDisabledHoverFocus */ Disabled => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def color(value: ColorType): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: FillType): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def focusIndicator(value: Boolean): this.type = set("focusIndicator", value.asInstanceOf[js.Any])
+    
+    inline def gap(value: GapType): this.type = set("gap", value.asInstanceOf[js.Any])
+    
+    inline def gridArea(value: GridAreaType): this.type = set("gridArea", value.asInstanceOf[js.Any])
+    
+    inline def hoverIndicator(value: HoverIndicatorType): this.type = set("hoverIndicator", value.asInstanceOf[js.Any])
+    
+    inline def href(value: String): this.type = set("href", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: VdomElement): this.type = set("icon", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def justify(value: around | between | center | end | evenly | start | stretch): this.type = set("justify", value.asInstanceOf[js.Any])
+    
+    inline def kind(value: String): this.type = set("kind", value.asInstanceOf[js.Any])
+    
+    inline def label(value: VdomNode): this.type = set("label", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def labelNull: this.type = set("label", null)
+    
+    inline def labelVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): this.type = set("label", js.Array(value*))
+    
+    inline def labelVdomElement(value: VdomElement): this.type = set("label", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def margin(value: MarginType): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def method(value: push | replace): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def plain(value: Boolean): this.type = set("plain", value.asInstanceOf[js.Any])
+    
+    inline def primary(value: Boolean): this.type = set("primary", value.asInstanceOf[js.Any])
+    
+    inline def reverse(value: Boolean): this.type = set("reverse", value.asInstanceOf[js.Any])
+    
+    inline def secondary(value: Boolean): this.type = set("secondary", value.asInstanceOf[js.Any])
+    
+    inline def size(value: small | medium | large | String): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def target(value: _self | _blank | _parent | _top | String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def tip(value: TipProps | String): this.type = set("tip", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: button | reset | submit): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: RoutedButtonProps & ButtonProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

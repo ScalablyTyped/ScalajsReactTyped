@@ -1,13 +1,15 @@
 package typingsJapgolly.w3cGenericSensor
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OrientationSensor")
 @js.native
-class OrientationSensor () extends Sensor {
-  val quaternion: js.UndefOr[js.Array[Double]] = js.native
+trait OrientationSensor
+  extends StObject
+     with Sensor {
+  
   def populateMatrix(targetMatrix: RotationMatrixType): Unit = js.native
+  
+  val quaternion: js.UndefOr[js.Array[Double]] = js.native
 }
-

@@ -1,16 +1,20 @@
 package typingsJapgolly.cordovaPluginFile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents a directory on a file system. */
 @js.native
-trait DirectoryEntry extends Entry {
+trait DirectoryEntry
+  extends StObject
+     with Entry {
+  
   /**
     * Creates a new DirectoryReader to read Entries from this Directory.
     */
   def createReader(): DirectoryReader = js.native
+  
   /**
     * Creates or looks up a directory.
     * @param path    Either an absolute path or a relative path from this DirectoryEntry
@@ -25,6 +29,19 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def getDirectory(path: String): Unit = js.native
+  def getDirectory(path: String, options: Unit, successCallback: js.Function1[/* entry */ this.type, Unit]): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: Unit,
+    successCallback: js.Function1[/* entry */ this.type, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getDirectory(path: String, options: Flags): Unit = js.native
   def getDirectory(path: String, options: Flags, successCallback: js.Function1[/* entry */ this.type, Unit]): Unit = js.native
   def getDirectory(
@@ -33,6 +50,13 @@ trait DirectoryEntry extends Entry {
     successCallback: js.Function1[/* entry */ this.type, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  def getDirectory(
+    path: String,
+    options: Flags,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  
   /**
     * Creates or looks up a file.
     * @param path    Either an absolute path or a relative path from this DirectoryEntry
@@ -47,6 +71,19 @@ trait DirectoryEntry extends Entry {
     * @param errorCallback   A callback that is called when errors happen.
     */
   def getFile(path: String): Unit = js.native
+  def getFile(path: String, options: Unit, successCallback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
+  def getFile(
+    path: String,
+    options: Unit,
+    successCallback: js.Function1[/* entry */ FileEntry, Unit],
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  def getFile(
+    path: String,
+    options: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
   def getFile(path: String, options: Flags): Unit = js.native
   def getFile(path: String, options: Flags, successCallback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
   def getFile(
@@ -55,6 +92,13 @@ trait DirectoryEntry extends Entry {
     successCallback: js.Function1[/* entry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileError, Unit]
   ): Unit = js.native
+  def getFile(
+    path: String,
+    options: Flags,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* error */ FileError, Unit]
+  ): Unit = js.native
+  
   /**
     * Deletes a directory and all of its contents, if any. In the event of an error (e.g. trying
     * to delete a directory that contains a file that cannot be removed), some of the contents
@@ -65,4 +109,3 @@ trait DirectoryEntry extends Entry {
   def removeRecursively(successCallback: js.Function0[Unit]): Unit = js.native
   def removeRecursively(successCallback: js.Function0[Unit], errorCallback: js.Function1[/* error */ FileError, Unit]): Unit = js.native
 }
-

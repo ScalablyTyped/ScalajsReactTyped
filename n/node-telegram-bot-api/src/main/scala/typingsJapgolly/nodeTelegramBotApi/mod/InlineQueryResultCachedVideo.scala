@@ -1,40 +1,53 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
 import typingsJapgolly.nodeTelegramBotApi.nodeTelegramBotApiStrings.video
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InlineQueryResultCachedVideo
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
+  
   var caption: js.UndefOr[String] = js.undefined
+  
   var description: js.UndefOr[String] = js.undefined
+  
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
+  
   var title: String
+  
   var `type`: video
+  
   var video_file_id: String
 }
-
 object InlineQueryResultCachedVideo {
-  @scala.inline
-  def apply(
-    id: String,
-    title: String,
-    `type`: video,
-    video_file_id: String,
-    caption: String = null,
-    description: String = null,
-    input_message_content: InputMessageContent = null,
-    reply_markup: InlineKeyboardMarkup = null
-  ): InlineQueryResultCachedVideo = {
+  
+  inline def apply(id: String, title: String, video_file_id: String): InlineQueryResultCachedVideo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], video_file_id = video_file_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (caption != null) __obj.updateDynamic("caption")(caption.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (input_message_content != null) __obj.updateDynamic("input_message_content")(input_message_content.asInstanceOf[js.Any])
-    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InlineQueryResultCachedVideo]
   }
+  
+  extension [Self <: InlineQueryResultCachedVideo](x: Self) {
+    
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setInput_message_content(value: InputMessageContent): Self = StObject.set(x, "input_message_content", value.asInstanceOf[js.Any])
+    
+    inline def setInput_message_contentUndefined: Self = StObject.set(x, "input_message_content", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVideo_file_id(value: String): Self = StObject.set(x, "video_file_id", value.asInstanceOf[js.Any])
+  }
 }
-

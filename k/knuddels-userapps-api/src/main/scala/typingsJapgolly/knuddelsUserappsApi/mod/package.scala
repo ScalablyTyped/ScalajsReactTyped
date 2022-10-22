@@ -1,50 +1,33 @@
-package typingsJapgolly.knuddelsUserappsApi
+package typingsJapgolly.knuddelsUserappsApi.mod
 
+import typingsJapgolly.knuddelsUserappsApi.mod.global.Json
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typingsJapgolly.std.Date
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.Json
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.JsonArray
-    - `js.undefined`
-  */
-  type JsonData = js.UndefOr[
-    typingsJapgolly.knuddelsUserappsApi.mod._JsonData | java.lang.String | scala.Double | scala.Boolean | js.Date
-  ]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.Json
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.KnuddelsEventArray
-  */
-  type KnuddelsEvent = typingsJapgolly.knuddelsUserappsApi.mod._KnuddelsEvent | java.lang.String
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typingsJapgolly.std.Date
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.KnuddelsJson
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.KnuddelsJsonArray
-    - typingsJapgolly.knuddelsUserappsApi.mod.KnuddelsSerializable
-    - `js.undefined`
-  */
-  type KnuddelsJsonData = js.UndefOr[
-    typingsJapgolly.knuddelsUserappsApi.mod._KnuddelsJsonData | java.lang.String | scala.Double | scala.Boolean | js.Date
-  ]
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.User
-    - typingsJapgolly.knuddelsUserappsApi.mod._Global_.BotUser
-    - `js.undefined`
-  */
-  type KnuddelsSerializable = js.UndefOr[
-    typingsJapgolly.knuddelsUserappsApi.mod._KnuddelsSerializable | java.lang.String | scala.Double | scala.Boolean
-  ]
-}
+
+type JsonData = js.UndefOr[String | Double | Boolean | js.Date | Json | Any]
+
+type KnuddelsEvent = String | Json | Any
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - scala.Double
+  - scala.Boolean
+  - js.Date
+  - typingsJapgolly.knuddelsUserappsApi.mod.global.KnuddelsJson
+  - scala.Any
+  - typingsJapgolly.knuddelsUserappsApi.mod.KnuddelsSerializable
+  - scala.Unit
+*/
+type KnuddelsJsonData = js.UndefOr[_KnuddelsJsonData | String | Double | Boolean | js.Date | Any]
+
+/* Rewritten from type alias, can be one of: 
+  - java.lang.String
+  - scala.Double
+  - scala.Boolean
+  - typingsJapgolly.knuddelsUserappsApi.mod.global.User
+  - typingsJapgolly.knuddelsUserappsApi.mod.global.BotUser
+  - scala.Unit
+*/
+type KnuddelsSerializable = js.UndefOr[_KnuddelsSerializable | String | Double | Boolean]

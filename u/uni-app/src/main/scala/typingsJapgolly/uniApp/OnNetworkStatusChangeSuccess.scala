@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnNetworkStatusChangeSuccess extends js.Object {
+trait OnNetworkStatusChangeSuccess extends StObject {
+  
   /**
     * 当前是否有网络连接
     */
   var isConnected: js.UndefOr[Double] = js.undefined
+  
   /**
     * 网络类型
     */
   var networkType: js.UndefOr[String] = js.undefined
 }
-
 object OnNetworkStatusChangeSuccess {
-  @scala.inline
-  def apply(isConnected: Int | Double = null, networkType: String = null): OnNetworkStatusChangeSuccess = {
+  
+  inline def apply(): OnNetworkStatusChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (isConnected != null) __obj.updateDynamic("isConnected")(isConnected.asInstanceOf[js.Any])
-    if (networkType != null) __obj.updateDynamic("networkType")(networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnNetworkStatusChangeSuccess]
   }
+  
+  extension [Self <: OnNetworkStatusChangeSuccess](x: Self) {
+    
+    inline def setIsConnected(value: Double): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
+    
+    inline def setIsConnectedUndefined: Self = StObject.set(x, "isConnected", js.undefined)
+    
+    inline def setNetworkType(value: String): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkTypeUndefined: Self = StObject.set(x, "networkType", js.undefined)
+  }
 }
-

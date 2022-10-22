@@ -1,14 +1,17 @@
 package typingsJapgolly.officeUiFabricReact.components
 
+import typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object DefaultButton
-  extends SharedApply_IButtonProps955672688[typingsJapgolly.officeUiFabricReact.mod.DefaultButton] {
+object DefaultButton {
+  
   @JSImport("office-ui-fabric-react", "DefaultButton")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: DefaultButton.type): SharedBuilder_IButtonProps96385884[typingsJapgolly.officeUiFabricReact.mod.DefaultButton] = new SharedBuilder_IButtonProps96385884[typingsJapgolly.officeUiFabricReact.mod.DefaultButton](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IButtonProps): SharedBuilder_IButtonProps96385884[typingsJapgolly.officeUiFabricReact.mod.DefaultButton] = new SharedBuilder_IButtonProps96385884[typingsJapgolly.officeUiFabricReact.mod.DefaultButton](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

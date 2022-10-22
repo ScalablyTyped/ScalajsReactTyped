@@ -1,9 +1,9 @@
 package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.olx.source.ClusterOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -16,7 +16,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.Cluster")
 @js.native
-class Cluster protected () extends Vector {
+open class Cluster protected () extends Vector {
   /**
     * @classdesc
     * Layer source to cluster vector data. Works out of the box with point
@@ -27,18 +27,21 @@ class Cluster protected () extends Vector {
     * @api
     */
   def this(options: ClusterOptions) = this()
+  
   /**
     * Get the distance in pixels between clusters.
     * @return The distance in pixels.
     * @api
     */
   def getDistance(): Double = js.native
+  
   /**
     * Get a reference to the wrapped source.
     * @return Source.
     * @api
     */
   def getSource(): Vector = js.native
+  
   /**
     * Set the distance in pixels between clusters.
     * @param distance The distance in pixels.
@@ -46,4 +49,3 @@ class Cluster protected () extends Vector {
     */
   def setDistance(distance: Double): Unit = js.native
 }
-

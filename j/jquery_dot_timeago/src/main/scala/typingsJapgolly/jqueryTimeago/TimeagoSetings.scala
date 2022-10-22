@@ -1,27 +1,37 @@
 package typingsJapgolly.jqueryTimeago
 
+import typingsJapgolly.jqueryTimeago.anon.Day
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimeagoSetings extends js.Object {
+trait TimeagoSetings extends StObject {
+  
   var allowFuture: js.UndefOr[Boolean] = js.undefined
+  
   var refreshMillis: js.UndefOr[Double] = js.undefined
-  var strings: js.UndefOr[AnonDay] = js.undefined
+  
+  var strings: js.UndefOr[Day] = js.undefined
 }
-
 object TimeagoSetings {
-  @scala.inline
-  def apply(
-    allowFuture: js.UndefOr[Boolean] = js.undefined,
-    refreshMillis: Int | Double = null,
-    strings: AnonDay = null
-  ): TimeagoSetings = {
+  
+  inline def apply(): TimeagoSetings = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowFuture)) __obj.updateDynamic("allowFuture")(allowFuture.asInstanceOf[js.Any])
-    if (refreshMillis != null) __obj.updateDynamic("refreshMillis")(refreshMillis.asInstanceOf[js.Any])
-    if (strings != null) __obj.updateDynamic("strings")(strings.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeagoSetings]
   }
+  
+  extension [Self <: TimeagoSetings](x: Self) {
+    
+    inline def setAllowFuture(value: Boolean): Self = StObject.set(x, "allowFuture", value.asInstanceOf[js.Any])
+    
+    inline def setAllowFutureUndefined: Self = StObject.set(x, "allowFuture", js.undefined)
+    
+    inline def setRefreshMillis(value: Double): Self = StObject.set(x, "refreshMillis", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshMillisUndefined: Self = StObject.set(x, "refreshMillis", js.undefined)
+    
+    inline def setStrings(value: Day): Self = StObject.set(x, "strings", value.asInstanceOf[js.Any])
+    
+    inline def setStringsUndefined: Self = StObject.set(x, "strings", js.undefined)
+  }
 }
-

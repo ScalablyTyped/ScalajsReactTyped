@@ -1,29 +1,32 @@
 package typingsJapgolly.vscodeLanguageclient.mod
 
-import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientNumbers.`0`
-import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientNumbers.`1`
-import typingsJapgolly.vscodeLanguageclient.vscodeLanguageclientNumbers.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageclient", "TextDocumentSyncKind")
-@js.native
-object TextDocumentSyncKind extends js.Object {
+object TextDocumentSyncKind {
+  
   /**
     * Documents are synced by always sending the full content
     * of the document.
     */
-  val Full: `1` = js.native
+  @JSImport("vscode-languageclient", "TextDocumentSyncKind.Full")
+  @js.native
+  val Full: /* 1 */ Double = js.native
+  
   /**
     * Documents are synced by sending the full content on open.
     * After that only incremental updates to the document are
     * send.
     */
-  val Incremental: `2` = js.native
+  @JSImport("vscode-languageclient", "TextDocumentSyncKind.Incremental")
+  @js.native
+  val Incremental: /* 2 */ Double = js.native
+  
   /**
     * Documents should not be synced at all.
     */
-  val None: `0` = js.native
+  @JSImport("vscode-languageclient", "TextDocumentSyncKind.None")
+  @js.native
+  val None: /* 0 */ Double = js.native
 }
-

@@ -2,44 +2,63 @@ package typingsJapgolly.pkgcloud.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientError extends Error {
+trait ClientError
+  extends StObject
+     with Error {
+  
   var failCode: js.UndefOr[String] = js.undefined
+  
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var href: js.UndefOr[String] = js.undefined
+  
   var method: js.UndefOr[String] = js.undefined
+  
   var provider: js.UndefOr[Providers] = js.undefined
-  var result: js.UndefOr[js.Any] = js.undefined
+  
+  var result: js.UndefOr[Any] = js.undefined
+  
   var statusCode: js.UndefOr[Double] = js.undefined
 }
-
 object ClientError {
-  @scala.inline
-  def apply(
-    message: String,
-    name: String,
-    failCode: String = null,
-    headers: StringDictionary[String] = null,
-    href: String = null,
-    method: String = null,
-    provider: Providers = null,
-    result: js.Any = null,
-    stack: String = null,
-    statusCode: Int | Double = null
-  ): ClientError = {
+  
+  inline def apply(message: String, name: String): ClientError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (failCode != null) __obj.updateDynamic("failCode")(failCode.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (href != null) __obj.updateDynamic("href")(href.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (provider != null) __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
-    if (result != null) __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientError]
   }
+  
+  extension [Self <: ClientError](x: Self) {
+    
+    inline def setFailCode(value: String): Self = StObject.set(x, "failCode", value.asInstanceOf[js.Any])
+    
+    inline def setFailCodeUndefined: Self = StObject.set(x, "failCode", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setProvider(value: Providers): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    
+    inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+    
+    inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+  }
 }
-

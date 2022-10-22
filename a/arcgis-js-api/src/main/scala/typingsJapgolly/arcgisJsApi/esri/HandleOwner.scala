@@ -1,12 +1,14 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait HandleOwner extends Accessor {
+trait HandleOwner
+  extends StObject
+     with Accessor {
+  
   /**
     * Handle registry to help manage `handles`.
     *
@@ -14,8 +16,3 @@ trait HandleOwner extends Accessor {
     */
   var handles: Handles = js.native
 }
-
-@JSGlobal("__esri.HandleOwner")
-@js.native
-object HandleOwner extends TopLevel[HandleOwnerConstructor]
-

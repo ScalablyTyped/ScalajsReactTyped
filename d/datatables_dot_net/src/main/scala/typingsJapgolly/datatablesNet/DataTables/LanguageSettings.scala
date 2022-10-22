@@ -1,69 +1,117 @@
 package typingsJapgolly.datatablesNet.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion "callback-functions"
 //#region "language-settings"
 // these are all optional
-trait LanguageSettings extends js.Object {
+trait LanguageSettings extends StObject {
+  
   var aria: js.UndefOr[LanguageAriaSettings] = js.undefined
+  
   var decimal: js.UndefOr[String] = js.undefined
+  
   var emptyTable: js.UndefOr[String] = js.undefined
+  
   var info: js.UndefOr[String] = js.undefined
+  
   var infoEmpty: js.UndefOr[String] = js.undefined
+  
   var infoFiltered: js.UndefOr[String] = js.undefined
+  
   var infoPostFix: js.UndefOr[String] = js.undefined
+  
   var lengthMenu: js.UndefOr[String] = js.undefined
+  
   var loadingRecords: js.UndefOr[String] = js.undefined
+  
   var paginate: js.UndefOr[LanguagePaginateSettings] = js.undefined
+  
   var processing: js.UndefOr[String] = js.undefined
+  
   var search: js.UndefOr[String] = js.undefined
+  
   var searchPlaceholder: js.UndefOr[String] = js.undefined
+  
   var thousands: js.UndefOr[String] = js.undefined
+  
   var url: js.UndefOr[String] = js.undefined
+  
   var zeroRecords: js.UndefOr[String] = js.undefined
 }
-
 object LanguageSettings {
-  @scala.inline
-  def apply(
-    aria: LanguageAriaSettings = null,
-    decimal: String = null,
-    emptyTable: String = null,
-    info: String = null,
-    infoEmpty: String = null,
-    infoFiltered: String = null,
-    infoPostFix: String = null,
-    lengthMenu: String = null,
-    loadingRecords: String = null,
-    paginate: LanguagePaginateSettings = null,
-    processing: String = null,
-    search: String = null,
-    searchPlaceholder: String = null,
-    thousands: String = null,
-    url: String = null,
-    zeroRecords: String = null
-  ): LanguageSettings = {
+  
+  inline def apply(): LanguageSettings = {
     val __obj = js.Dynamic.literal()
-    if (aria != null) __obj.updateDynamic("aria")(aria.asInstanceOf[js.Any])
-    if (decimal != null) __obj.updateDynamic("decimal")(decimal.asInstanceOf[js.Any])
-    if (emptyTable != null) __obj.updateDynamic("emptyTable")(emptyTable.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (infoEmpty != null) __obj.updateDynamic("infoEmpty")(infoEmpty.asInstanceOf[js.Any])
-    if (infoFiltered != null) __obj.updateDynamic("infoFiltered")(infoFiltered.asInstanceOf[js.Any])
-    if (infoPostFix != null) __obj.updateDynamic("infoPostFix")(infoPostFix.asInstanceOf[js.Any])
-    if (lengthMenu != null) __obj.updateDynamic("lengthMenu")(lengthMenu.asInstanceOf[js.Any])
-    if (loadingRecords != null) __obj.updateDynamic("loadingRecords")(loadingRecords.asInstanceOf[js.Any])
-    if (paginate != null) __obj.updateDynamic("paginate")(paginate.asInstanceOf[js.Any])
-    if (processing != null) __obj.updateDynamic("processing")(processing.asInstanceOf[js.Any])
-    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder.asInstanceOf[js.Any])
-    if (thousands != null) __obj.updateDynamic("thousands")(thousands.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
-    if (zeroRecords != null) __obj.updateDynamic("zeroRecords")(zeroRecords.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageSettings]
   }
+  
+  extension [Self <: LanguageSettings](x: Self) {
+    
+    inline def setAria(value: LanguageAriaSettings): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
+    
+    inline def setAriaUndefined: Self = StObject.set(x, "aria", js.undefined)
+    
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+    
+    inline def setEmptyTable(value: String): Self = StObject.set(x, "emptyTable", value.asInstanceOf[js.Any])
+    
+    inline def setEmptyTableUndefined: Self = StObject.set(x, "emptyTable", js.undefined)
+    
+    inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setInfoEmpty(value: String): Self = StObject.set(x, "infoEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setInfoEmptyUndefined: Self = StObject.set(x, "infoEmpty", js.undefined)
+    
+    inline def setInfoFiltered(value: String): Self = StObject.set(x, "infoFiltered", value.asInstanceOf[js.Any])
+    
+    inline def setInfoFilteredUndefined: Self = StObject.set(x, "infoFiltered", js.undefined)
+    
+    inline def setInfoPostFix(value: String): Self = StObject.set(x, "infoPostFix", value.asInstanceOf[js.Any])
+    
+    inline def setInfoPostFixUndefined: Self = StObject.set(x, "infoPostFix", js.undefined)
+    
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    
+    inline def setLengthMenu(value: String): Self = StObject.set(x, "lengthMenu", value.asInstanceOf[js.Any])
+    
+    inline def setLengthMenuUndefined: Self = StObject.set(x, "lengthMenu", js.undefined)
+    
+    inline def setLoadingRecords(value: String): Self = StObject.set(x, "loadingRecords", value.asInstanceOf[js.Any])
+    
+    inline def setLoadingRecordsUndefined: Self = StObject.set(x, "loadingRecords", js.undefined)
+    
+    inline def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    
+    inline def setProcessing(value: String): Self = StObject.set(x, "processing", value.asInstanceOf[js.Any])
+    
+    inline def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
+    
+    inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+    
+    inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
+    
+    inline def setThousandsUndefined: Self = StObject.set(x, "thousands", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    
+    inline def setZeroRecords(value: String): Self = StObject.set(x, "zeroRecords", value.asInstanceOf[js.Any])
+    
+    inline def setZeroRecordsUndefined: Self = StObject.set(x, "zeroRecords", js.undefined)
+  }
 }
-

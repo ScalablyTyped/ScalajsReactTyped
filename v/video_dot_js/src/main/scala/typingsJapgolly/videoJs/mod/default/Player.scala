@@ -1,33 +1,36 @@
 package typingsJapgolly.videoJs.mod.default
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
-import org.scalajs.dom.raw.Element
+import org.scalajs.dom.Element
+import typingsJapgolly.videoJs.mod.VideoJsPlayer
 import typingsJapgolly.videoJs.mod.videojs.PlayerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("video.js", "Player")
-@js.native
-object Player
-  extends /**
-  * An instance of the `Player` class is created when any of the Video.js setup methods
-  * are used to initialize a video.
-  *
-  * After an instance has been created it can be accessed globally in two ways:
-  * 1. By calling `videojs('example_video_1');`
-  * 2. By using it directly via  `videojs.players.example_video_1;`
-  */
-Instantiable1[
-      /* player */ typingsJapgolly.videoJs.mod.videojs.Player, 
-      typingsJapgolly.videoJs.mod.videojs.Player
-    ]
-     with Instantiable2[
-      /* player */ typingsJapgolly.videoJs.mod.videojs.Player, 
-      /* options */ PlayerOptions, 
-      typingsJapgolly.videoJs.mod.videojs.Player
-    ] {
+object Player {
+  
+  /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
+  @JSImport("video.js", "default.Player")
+  @js.native
+  open class ^ protected ()
+    extends StObject
+       with VideoJsPlayer {
+    /**
+      * An instance of the `Player` class is created when any of the Video.js setup methods
+      * are used to initialize a video.
+      *
+      * After an instance has been created it can be accessed globally in two ways:
+      * 1. By calling `videojs('example_video_1');`
+      * 2. By using it directly via  `videojs.players.example_video_1;`
+      */
+    def this(player: typingsJapgolly.videoJs.mod.videojs.Player) = this()
+    def this(player: typingsJapgolly.videoJs.mod.videojs.Player, options: PlayerOptions) = this()
+  }
+  
+  @JSImport("video.js", "default.Player")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gets tag settings
     *
@@ -37,6 +40,5 @@ Instantiable1[
     * @return An object containing all of the settings
     *         for a player tag
     */
-  def getTagSettings(tag: Element): js.Any = js.native
+  inline def getTagSettings(tag: Element): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTagSettings")(tag.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

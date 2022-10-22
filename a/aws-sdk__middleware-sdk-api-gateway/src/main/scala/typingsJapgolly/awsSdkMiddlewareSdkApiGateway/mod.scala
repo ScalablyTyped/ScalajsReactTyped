@@ -1,14 +1,23 @@
 package typingsJapgolly.awsSdkMiddlewareSdkApiGateway
 
-import typingsJapgolly.awsSdkTypes.middlewareMod.BuildHandler
-import typingsJapgolly.awsSdkTypes.middlewareMod.BuildHandlerArguments
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.BuildHandlerOptions
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.BuildMiddleware
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Pluggable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/middleware-sdk-api-gateway", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def acceptsHeader(next: BuildHandler[_, _, scala.scalajs.js.typedarray.Uint8Array]): js.Function1[/* args */ BuildHandlerArguments[_, _], js.Promise[_]] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/middleware-sdk-api-gateway", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def acceptHeaderMiddleware(): BuildMiddleware[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("acceptHeaderMiddleware")().asInstanceOf[BuildMiddleware[Any, Any]]
+  
+  @JSImport("@aws-sdk/middleware-sdk-api-gateway", "acceptHeaderMiddlewareOptions")
+  @js.native
+  val acceptHeaderMiddlewareOptions: BuildHandlerOptions = js.native
+  
+  inline def getAcceptHeaderPlugin(unused: Any): Pluggable[Any, Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAcceptHeaderPlugin")(unused.asInstanceOf[js.Any]).asInstanceOf[Pluggable[Any, Any]]
 }
-

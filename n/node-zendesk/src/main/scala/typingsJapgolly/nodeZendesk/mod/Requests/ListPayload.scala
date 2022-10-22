@@ -1,26 +1,27 @@
 package typingsJapgolly.nodeZendesk.mod.Requests
 
 import typingsJapgolly.nodeZendesk.mod.PaginablePayload
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListPayload extends PaginablePayload {
+trait ListPayload
+  extends StObject
+     with PaginablePayload {
+  
   val requests: js.Array[ResponseModel]
 }
-
 object ListPayload {
-  @scala.inline
-  def apply(
-    count: Double,
-    requests: js.Array[ResponseModel],
-    next_page: Int | Double = null,
-    previous_page: Int | Double = null
-  ): ListPayload = {
-    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any])
-    if (next_page != null) __obj.updateDynamic("next_page")(next_page.asInstanceOf[js.Any])
-    if (previous_page != null) __obj.updateDynamic("previous_page")(previous_page.asInstanceOf[js.Any])
+  
+  inline def apply(count: Double, requests: js.Array[ResponseModel]): ListPayload = {
+    val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], requests = requests.asInstanceOf[js.Any], next_page = null, previous_page = null)
     __obj.asInstanceOf[ListPayload]
   }
+  
+  extension [Self <: ListPayload](x: Self) {
+    
+    inline def setRequests(value: js.Array[ResponseModel]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsVarargs(value: ResponseModel*): Self = StObject.set(x, "requests", js.Array(value*))
+  }
 }
-

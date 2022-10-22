@@ -1,22 +1,34 @@
 package typingsJapgolly.exceljs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowBreak extends js.Object {
+trait RowBreak extends StObject {
+  
   var id: Double
+  
   var man: Double
+  
   var max: Double
+  
   var min: Double
 }
-
 object RowBreak {
-  @scala.inline
-  def apply(id: Double, man: Double, max: Double, min: Double): RowBreak = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], man = man.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
   
+  inline def apply(id: Double, man: Double, max: Double, min: Double): RowBreak = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], man = man.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowBreak]
   }
+  
+  extension [Self <: RowBreak](x: Self) {
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setMan(value: Double): Self = StObject.set(x, "man", value.asInstanceOf[js.Any])
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,47 +1,37 @@
 package typingsJapgolly.ydnDb.ydn.db
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Policy extends js.Object
-
+sealed trait Policy extends StObject
 @JSGlobal("ydn.db.Policy")
 @js.native
-object Policy extends js.Object {
-  @js.native
-  sealed trait all extends Policy
+object Policy extends StObject {
   
   @js.native
-  sealed trait atomic extends Policy
+  sealed trait all
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait multi extends Policy
+  sealed trait atomic
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait repeat extends Policy
+  sealed trait multi
+    extends StObject
+       with Policy
   
   @js.native
-  sealed trait single extends Policy
+  sealed trait repeat
+    extends StObject
+       with Policy
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Policy with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object atomic extends TopLevel[atomic with Double]
-  
-  /* 2 */ @js.native
-  object multi extends TopLevel[multi with Double]
-  
-  /* 3 */ @js.native
-  object repeat extends TopLevel[repeat with Double]
-  
-  /* 4 */ @js.native
-  object single extends TopLevel[single with Double]
-  
+  @js.native
+  sealed trait single
+    extends StObject
+       with Policy
 }
-

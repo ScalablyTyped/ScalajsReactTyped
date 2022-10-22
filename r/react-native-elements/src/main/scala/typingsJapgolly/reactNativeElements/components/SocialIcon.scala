@@ -1,82 +1,97 @@
 package typingsJapgolly.reactNativeElements.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.ComponentClassP
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.Instantiable1
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
 import typingsJapgolly.reactNative.mod.ViewStyle
-import typingsJapgolly.reactNativeElements.mod.SocialIconProps
-import typingsJapgolly.reactNativeElements.mod.SocialMediaType
+import typingsJapgolly.reactNativeElements.anon.RecursivePartialFullThemeAvatar
+import typingsJapgolly.reactNativeElements.anon.TypeofComponent
+import typingsJapgolly.reactNativeElements.distConfigThemeMod.Theme
+import typingsJapgolly.reactNativeElements.distConfigThemeProviderMod.ThemeProps
+import typingsJapgolly.reactNativeElements.distSocialSocialIconMod.SocialIconProps
+import typingsJapgolly.reactNativeElements.distSocialSocialIconMod.SocialMediaType
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SocialIcon {
-  def apply(
-    `type`: SocialMediaType,
-    Component: ComponentClassP[js.Object] = null,
-    button: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fontFamily: String = null,
-    fontStyle: StyleProp[TextStyle] = null,
-    fontWeight: String = null,
-    iconColor: String = null,
-    iconSize: Int | Double = null,
-    iconStyle: StyleProp[ViewStyle] = null,
-    light: js.UndefOr[Boolean] = js.undefined,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    onLongPress: js.UndefOr[Callback] = js.undefined,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    raised: js.UndefOr[Boolean] = js.undefined,
-    style: StyleProp[ViewStyle] = null,
-    title: String = null,
-    underlayColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    SocialIconProps, 
-    typingsJapgolly.reactNativeElements.mod.SocialIcon, 
-    Unit, 
-    SocialIconProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (Component != null) __obj.updateDynamic("Component")(Component.asInstanceOf[js.Any])
-    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
-    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
-    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    onLongPress.foreach(p => __obj.updateDynamic("onLongPress")(p.toJsFn))
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeElements.mod.SocialIconProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeElements.mod.SocialIcon](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeElements.mod.SocialIconProps])(children: _*)
+  inline def apply(
+    replaceTheme: RecursivePartialFullThemeAvatar => Callback,
+    theme: Theme[SocialIconProps],
+    updateTheme: RecursivePartialFullThemeAvatar => Callback
+  ): Builder = {
+    val __props = js.Dynamic.literal(replaceTheme = js.Any.fromFunction1((t0: RecursivePartialFullThemeAvatar) => replaceTheme(t0).runNow()), theme = theme.asInstanceOf[js.Any], updateTheme = js.Any.fromFunction1((t0: RecursivePartialFullThemeAvatar) => updateTheme(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[SocialIconProps & Partial[ThemeProps[SocialIconProps]]]))
   }
-  @JSImport("react-native-elements", "SocialIcon")
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-native-elements/dist/social/SocialIcon", "SocialIcon")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def Component(
+      value: TypeofComponent & (Instantiable1[
+          /* import warning: RewrittenClass.unapply cls was tparam P */ /* props */ Any, 
+          japgolly.scalajs.react.facade.React.Component[js.Object, js.Object]
+        ])
+    ): this.type = set("Component", value.asInstanceOf[js.Any])
+    
+    inline def activityIndicatorStyle(value: StyleProp[ViewStyle]): this.type = set("activityIndicatorStyle", value.asInstanceOf[js.Any])
+    
+    inline def activityIndicatorStyleNull: this.type = set("activityIndicatorStyle", null)
+    
+    inline def button(value: Boolean): this.type = set("button", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fontFamily(value: String): this.type = set("fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def fontStyle(value: StyleProp[TextStyle]): this.type = set("fontStyle", value.asInstanceOf[js.Any])
+    
+    inline def fontStyleNull: this.type = set("fontStyle", null)
+    
+    inline def fontWeight(value: String): this.type = set("fontWeight", value.asInstanceOf[js.Any])
+    
+    inline def iconColor(value: String): this.type = set("iconColor", value.asInstanceOf[js.Any])
+    
+    inline def iconSize(value: Double): this.type = set("iconSize", value.asInstanceOf[js.Any])
+    
+    inline def iconStyle(value: StyleProp[ViewStyle]): this.type = set("iconStyle", value.asInstanceOf[js.Any])
+    
+    inline def iconStyleNull: this.type = set("iconStyle", null)
+    
+    inline def iconType(value: String): this.type = set("iconType", value.asInstanceOf[js.Any])
+    
+    inline def light(value: Boolean): this.type = set("light", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onLongPress(value: Callback): this.type = set("onLongPress", value.toJsFn)
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def raised(value: Boolean): this.type = set("raised", value.asInstanceOf[js.Any])
+    
+    inline def small(value: String): this.type = set("small", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def `type`(value: SocialMediaType): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def underlayColor(value: String): this.type = set("underlayColor", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SocialIconProps & Partial[ThemeProps[SocialIconProps]]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

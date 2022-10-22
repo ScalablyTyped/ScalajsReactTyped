@@ -1,50 +1,48 @@
 package typingsJapgolly.openpgp.mod.enums
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait keyStatus extends js.Object
-
+sealed trait keyStatus extends StObject
 /**
   * Key status
   */
 @JSImport("openpgp", "enums.keyStatus")
 @js.native
-object keyStatus extends js.Object {
-  @js.native
-  sealed trait expired extends keyStatus
-  
-  @js.native
-  sealed trait invalid extends keyStatus
-  
-  @js.native
-  sealed trait no_self_cert extends keyStatus
-  
-  @js.native
-  sealed trait revoked extends keyStatus
-  
-  @js.native
-  sealed trait valid extends keyStatus
+object keyStatus extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[keyStatus with Double] = js.native
-  /* 1 */ @js.native
-  object expired extends TopLevel[expired with Double]
+  def apply(value: Double): js.UndefOr[keyStatus & Double] = js.native
   
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
+  @js.native
+  sealed trait expired
+    extends StObject
+       with keyStatus
+  /* 1 */ val expired: typingsJapgolly.openpgp.mod.enums.keyStatus.expired & Double = js.native
   
-  /* 4 */ @js.native
-  object no_self_cert extends TopLevel[no_self_cert with Double]
+  @js.native
+  sealed trait invalid
+    extends StObject
+       with keyStatus
+  /* 0 */ val invalid: typingsJapgolly.openpgp.mod.enums.keyStatus.invalid & Double = js.native
   
-  /* 2 */ @js.native
-  object revoked extends TopLevel[revoked with Double]
+  @js.native
+  sealed trait no_self_cert
+    extends StObject
+       with keyStatus
+  /* 4 */ val no_self_cert: typingsJapgolly.openpgp.mod.enums.keyStatus.no_self_cert & Double = js.native
   
-  /* 3 */ @js.native
-  object valid extends TopLevel[valid with Double]
+  @js.native
+  sealed trait revoked
+    extends StObject
+       with keyStatus
+  /* 2 */ val revoked: typingsJapgolly.openpgp.mod.enums.keyStatus.revoked & Double = js.native
   
+  @js.native
+  sealed trait valid
+    extends StObject
+       with keyStatus
+  /* 3 */ val valid: typingsJapgolly.openpgp.mod.enums.keyStatus.valid & Double = js.native
 }
-

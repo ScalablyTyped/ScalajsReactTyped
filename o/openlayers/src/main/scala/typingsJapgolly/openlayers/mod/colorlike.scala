@@ -1,17 +1,20 @@
 package typingsJapgolly.openlayers.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("openlayers", "colorlike")
-@js.native
-object colorlike extends js.Object {
+object colorlike {
+  
+  @JSImport("openlayers", "colorlike")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def asColorLike(color: ColorLike_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
   /**
     * @param color Color.
     * @return The color as an ol.ColorLike
     * @api
     */
-  def asColorLike(color: ColorLike_ | Color_): ColorLike_ = js.native
+  inline def asColorLike(color: Color_): ColorLike_ = ^.asInstanceOf[js.Dynamic].applyDynamic("asColorLike")(color.asInstanceOf[js.Any]).asInstanceOf[ColorLike_]
 }
-

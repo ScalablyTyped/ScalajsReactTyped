@@ -1,29 +1,27 @@
 package typingsJapgolly.evernote.mod.Types
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BusinessUserRole extends js.Object
-
+sealed trait BusinessUserRole extends StObject
 @JSImport("evernote", "Types.BusinessUserRole")
 @js.native
-object BusinessUserRole extends js.Object {
-  @js.native
-  sealed trait ADMIN extends BusinessUserRole
-  
-  @js.native
-  sealed trait NORMAL extends BusinessUserRole
+object BusinessUserRole extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BusinessUserRole with Double] = js.native
-  /* 1 */ @js.native
-  object ADMIN extends TopLevel[ADMIN with Double]
+  def apply(value: Double): js.UndefOr[BusinessUserRole & Double] = js.native
   
-  /* 2 */ @js.native
-  object NORMAL extends TopLevel[NORMAL with Double]
+  @js.native
+  sealed trait ADMIN
+    extends StObject
+       with BusinessUserRole
+  /* 1 */ val ADMIN: typingsJapgolly.evernote.mod.Types.BusinessUserRole.ADMIN & Double = js.native
   
+  @js.native
+  sealed trait NORMAL
+    extends StObject
+       with BusinessUserRole
+  /* 2 */ val NORMAL: typingsJapgolly.evernote.mod.Types.BusinessUserRole.NORMAL & Double = js.native
 }
-

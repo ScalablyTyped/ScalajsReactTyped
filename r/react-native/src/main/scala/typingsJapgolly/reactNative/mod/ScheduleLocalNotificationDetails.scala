@@ -6,49 +6,79 @@ import typingsJapgolly.reactNative.reactNativeStrings.minute
 import typingsJapgolly.reactNative.reactNativeStrings.month
 import typingsJapgolly.reactNative.reactNativeStrings.week
 import typingsJapgolly.reactNative.reactNativeStrings.year
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScheduleLocalNotificationDetails extends js.Object {
+trait ScheduleLocalNotificationDetails extends StObject {
+  
   var alertAction: js.UndefOr[String] = js.undefined
+  
   var alertBody: js.UndefOr[String] = js.undefined
+  
   var alertTitle: js.UndefOr[String] = js.undefined
+  
   var applicationIconBadgeNumber: js.UndefOr[Double] = js.undefined
+  
   var category: js.UndefOr[String] = js.undefined
+  
   var fireDate: js.UndefOr[Double | String] = js.undefined
+  
   var isSilent: js.UndefOr[Boolean] = js.undefined
+  
   var repeatInterval: js.UndefOr[year | month | week | day | hour | minute] = js.undefined
+  
   var soundName: js.UndefOr[String] = js.undefined
+  
   var userInfo: js.UndefOr[js.Object] = js.undefined
 }
-
 object ScheduleLocalNotificationDetails {
-  @scala.inline
-  def apply(
-    alertAction: String = null,
-    alertBody: String = null,
-    alertTitle: String = null,
-    applicationIconBadgeNumber: Int | Double = null,
-    category: String = null,
-    fireDate: Double | String = null,
-    isSilent: js.UndefOr[Boolean] = js.undefined,
-    repeatInterval: year | month | week | day | hour | minute = null,
-    soundName: String = null,
-    userInfo: js.Object = null
-  ): ScheduleLocalNotificationDetails = {
+  
+  inline def apply(): ScheduleLocalNotificationDetails = {
     val __obj = js.Dynamic.literal()
-    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction.asInstanceOf[js.Any])
-    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody.asInstanceOf[js.Any])
-    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle.asInstanceOf[js.Any])
-    if (applicationIconBadgeNumber != null) __obj.updateDynamic("applicationIconBadgeNumber")(applicationIconBadgeNumber.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (fireDate != null) __obj.updateDynamic("fireDate")(fireDate.asInstanceOf[js.Any])
-    if (!js.isUndefined(isSilent)) __obj.updateDynamic("isSilent")(isSilent.asInstanceOf[js.Any])
-    if (repeatInterval != null) __obj.updateDynamic("repeatInterval")(repeatInterval.asInstanceOf[js.Any])
-    if (soundName != null) __obj.updateDynamic("soundName")(soundName.asInstanceOf[js.Any])
-    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScheduleLocalNotificationDetails]
   }
+  
+  extension [Self <: ScheduleLocalNotificationDetails](x: Self) {
+    
+    inline def setAlertAction(value: String): Self = StObject.set(x, "alertAction", value.asInstanceOf[js.Any])
+    
+    inline def setAlertActionUndefined: Self = StObject.set(x, "alertAction", js.undefined)
+    
+    inline def setAlertBody(value: String): Self = StObject.set(x, "alertBody", value.asInstanceOf[js.Any])
+    
+    inline def setAlertBodyUndefined: Self = StObject.set(x, "alertBody", js.undefined)
+    
+    inline def setAlertTitle(value: String): Self = StObject.set(x, "alertTitle", value.asInstanceOf[js.Any])
+    
+    inline def setAlertTitleUndefined: Self = StObject.set(x, "alertTitle", js.undefined)
+    
+    inline def setApplicationIconBadgeNumber(value: Double): Self = StObject.set(x, "applicationIconBadgeNumber", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationIconBadgeNumberUndefined: Self = StObject.set(x, "applicationIconBadgeNumber", js.undefined)
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setFireDate(value: Double | String): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
+    
+    inline def setFireDateUndefined: Self = StObject.set(x, "fireDate", js.undefined)
+    
+    inline def setIsSilent(value: Boolean): Self = StObject.set(x, "isSilent", value.asInstanceOf[js.Any])
+    
+    inline def setIsSilentUndefined: Self = StObject.set(x, "isSilent", js.undefined)
+    
+    inline def setRepeatInterval(value: year | month | week | day | hour | minute): Self = StObject.set(x, "repeatInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRepeatIntervalUndefined: Self = StObject.set(x, "repeatInterval", js.undefined)
+    
+    inline def setSoundName(value: String): Self = StObject.set(x, "soundName", value.asInstanceOf[js.Any])
+    
+    inline def setSoundNameUndefined: Self = StObject.set(x, "soundName", js.undefined)
+    
+    inline def setUserInfo(value: js.Object): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
+    
+    inline def setUserInfoUndefined: Self = StObject.set(x, "userInfo", js.undefined)
+  }
 }
-

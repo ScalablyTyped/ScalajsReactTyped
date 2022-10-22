@@ -1,13 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ej.format")
 @js.native
-object format extends js.Object {
-  def apply(value: js.Any, format: String): String = js.native
-  def apply(value: js.Any, format: String, culture: String): String = js.native
+sealed trait Format extends StObject
+@JSGlobal("ej.Format")
+@js.native
+object Format extends StObject {
+  
+  //To render the TagCloud items in cloud format
+  @js.native
+  sealed trait Cloud
+    extends StObject
+       with Format
+  
+  //To render the TagCloud items in list format
+  @js.native
+  sealed trait List
+    extends StObject
+       with Format
 }
-

@@ -10,10 +10,10 @@ Polyfill for Time to Interactive. See https://goo.gl/OSmrPk
 | ------------------ | :-------------: |
 | Full name          | tti-polyfill |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 2003378 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 806375.0 |
+| # stars            | 324.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/tti-polyfill#readme)

@@ -1,13 +1,13 @@
 package typingsJapgolly.vexflow.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "RuntimeError")
 @js.native
-class RuntimeError protected ()
-  extends typingsJapgolly.vexflow.Vex.RuntimeError {
+open class RuntimeError protected ()
+  extends StObject
+     with typingsJapgolly.vexflow.Vex.RuntimeError {
   def this(code: String, message: String) = this()
 }
-

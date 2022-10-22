@@ -1,50 +1,39 @@
 package typingsJapgolly.reactTagcloud.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactTagcloud.ReactTagCloud_.TagCloudProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TagCloud {
-  def apply(
-    maxSize: Double,
-    minSize: Double,
-    tags: js.Array[_],
-    className: String = null,
-    colorOptions: js.Object = null,
-    disableRandomColor: js.UndefOr[Boolean] = js.undefined,
-    onClick: js.Function = null,
-    renderer: js.Function = null,
-    shuffle: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[TagCloudProps, typingsJapgolly.reactTagcloud.mod.TagCloud, Unit, TagCloudProps] = {
-    val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (colorOptions != null) __obj.updateDynamic("colorOptions")(colorOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableRandomColor)) __obj.updateDynamic("disableRandomColor")(disableRandomColor.asInstanceOf[js.Any])
-    if (onClick != null) __obj.updateDynamic("onClick")(onClick.asInstanceOf[js.Any])
-    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
-    if (!js.isUndefined(shuffle)) __obj.updateDynamic("shuffle")(shuffle.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTagcloud.ReactTagCloud_.TagCloudProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTagcloud.mod.TagCloud](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTagcloud.ReactTagCloud_.TagCloudProps])(children: _*)
+  inline def apply(maxSize: Double, minSize: Double, tags: js.Array[Any]): Builder = {
+    val __props = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any], minSize = minSize.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[TagCloudProps]))
   }
+  
   @JSImport("react-tagcloud", "TagCloud")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactTagcloud.mod.TagCloud] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def colorOptions(value: js.Object): this.type = set("colorOptions", value.asInstanceOf[js.Any])
+    
+    inline def disableRandomColor(value: Boolean): this.type = set("disableRandomColor", value.asInstanceOf[js.Any])
+    
+    inline def onClick(value: js.Function): this.type = set("onClick", value.asInstanceOf[js.Any])
+    
+    inline def renderer(value: js.Function): this.type = set("renderer", value.asInstanceOf[js.Any])
+    
+    inline def shuffle(value: Boolean): this.type = set("shuffle", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: TagCloudProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

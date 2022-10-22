@@ -1,114 +1,111 @@
 package typingsJapgolly.steamClient.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EClanPermission extends js.Object
-
+sealed trait EClanPermission extends StObject
 @JSImport("steam-client", "EClanPermission")
 @js.native
-object EClanPermission extends js.Object {
-   // 15
-  @js.native
-  sealed trait AllMembers extends EClanPermission
-  
-   // 143
-  @js.native
-  sealed trait Anybody extends EClanPermission
-  
-  @js.native
-  sealed trait Member extends EClanPermission
-  
-   // 132
-  @js.native
-  sealed trait MemberAllowed extends EClanPermission
-  
-  @js.native
-  sealed trait Moderator extends EClanPermission
-  
-   // 140
-  @js.native
-  sealed trait ModeratorAllowed extends EClanPermission
-  
-  @js.native
-  sealed trait Nobody extends EClanPermission
-  
-  @js.native
-  sealed trait NonMember extends EClanPermission
-  
-  @js.native
-  sealed trait OGGGameOwner extends EClanPermission
-  
-  @js.native
-  sealed trait Officer extends EClanPermission
-  
-   // 142
-  @js.native
-  sealed trait OfficerAllowed extends EClanPermission
-  
-  @js.native
-  sealed trait Owner extends EClanPermission
-  
-   // 143
-  @js.native
-  sealed trait OwnerAllowed extends EClanPermission
-  
-  @js.native
-  sealed trait OwnerAndOfficer extends EClanPermission
-  
-   // 11
-  @js.native
-  sealed trait OwnerOfficerModerator extends EClanPermission
+object EClanPermission extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EClanPermission with Double] = js.native
-  /* 1 | 2 | 8 | 4 */ @js.native
-  object AllMembers extends TopLevel[AllMembers with Double]
+  def apply(value: Double): js.UndefOr[EClanPermission & Double] = js.native
   
-  /* 128 | 4 | 8 | 2 | 1 */ @js.native
-  object Anybody extends TopLevel[Anybody with Double]
+  // 11
+  @js.native
+  sealed trait AllMembers
+    extends StObject
+       with EClanPermission
+  /* 1 | 2 | 8 | 4 */ val AllMembers: typingsJapgolly.steamClient.mod.EClanPermission.AllMembers & Double = js.native
   
-  /* 4 */ @js.native
-  object Member extends TopLevel[Member with Double]
+  // 143
+  @js.native
+  sealed trait Anybody
+    extends StObject
+       with EClanPermission
+  /* 128 | 4 | 8 | 2 | 1 */ val Anybody: typingsJapgolly.steamClient.mod.EClanPermission.Anybody & Double = js.native
   
-  /* 128 | 4 */ @js.native
-  object MemberAllowed extends TopLevel[MemberAllowed with Double]
+  @js.native
+  sealed trait Member
+    extends StObject
+       with EClanPermission
+  /* 4 */ val Member: typingsJapgolly.steamClient.mod.EClanPermission.Member & Double = js.native
   
-  /* 8 */ @js.native
-  object Moderator extends TopLevel[Moderator with Double]
+  @js.native
+  sealed trait MemberAllowed
+    extends StObject
+       with EClanPermission
+  /* 128 | 4 */ val MemberAllowed: typingsJapgolly.steamClient.mod.EClanPermission.MemberAllowed & Double = js.native
   
-  /* 128 | 4 | 8 */ @js.native
-  object ModeratorAllowed extends TopLevel[ModeratorAllowed with Double]
+  @js.native
+  sealed trait Moderator
+    extends StObject
+       with EClanPermission
+  /* 8 */ val Moderator: typingsJapgolly.steamClient.mod.EClanPermission.Moderator & Double = js.native
   
-  /* 0 */ @js.native
-  object Nobody extends TopLevel[Nobody with Double]
+  // 132
+  @js.native
+  sealed trait ModeratorAllowed
+    extends StObject
+       with EClanPermission
+  /* 128 | 4 | 8 */ val ModeratorAllowed: typingsJapgolly.steamClient.mod.EClanPermission.ModeratorAllowed & Double = js.native
   
-  /* 128 */ @js.native
-  object NonMember extends TopLevel[NonMember with Double]
+  @js.native
+  sealed trait Nobody
+    extends StObject
+       with EClanPermission
+  /* 0 */ val Nobody: typingsJapgolly.steamClient.mod.EClanPermission.Nobody & Double = js.native
   
-  /* 16 */ @js.native
-  object OGGGameOwner extends TopLevel[OGGGameOwner with Double]
+  @js.native
+  sealed trait NonMember
+    extends StObject
+       with EClanPermission
+  /* 128 */ val NonMember: typingsJapgolly.steamClient.mod.EClanPermission.NonMember & Double = js.native
   
-  /* 2 */ @js.native
-  object Officer extends TopLevel[Officer with Double]
+  // 15
+  @js.native
+  sealed trait OGGGameOwner
+    extends StObject
+       with EClanPermission
+  /* 16 */ val OGGGameOwner: typingsJapgolly.steamClient.mod.EClanPermission.OGGGameOwner & Double = js.native
   
-  /* 128 | 4 | 8 | 2 */ @js.native
-  object OfficerAllowed extends TopLevel[OfficerAllowed with Double]
+  @js.native
+  sealed trait Officer
+    extends StObject
+       with EClanPermission
+  /* 2 */ val Officer: typingsJapgolly.steamClient.mod.EClanPermission.Officer & Double = js.native
   
-  /* 1 */ @js.native
-  object Owner extends TopLevel[Owner with Double]
+  // 140
+  @js.native
+  sealed trait OfficerAllowed
+    extends StObject
+       with EClanPermission
+  /* 128 | 4 | 8 | 2 */ val OfficerAllowed: typingsJapgolly.steamClient.mod.EClanPermission.OfficerAllowed & Double = js.native
   
-  /* 128 | 4 | 8 | 2 | 1 */ @js.native
-  object OwnerAllowed extends TopLevel[OwnerAllowed with Double]
+  @js.native
+  sealed trait Owner
+    extends StObject
+       with EClanPermission
+  /* 1 */ val Owner: typingsJapgolly.steamClient.mod.EClanPermission.Owner & Double = js.native
   
-  /* 3 */ @js.native
-  object OwnerAndOfficer extends TopLevel[OwnerAndOfficer with Double]
+  // 142
+  @js.native
+  sealed trait OwnerAllowed
+    extends StObject
+       with EClanPermission
+  /* 128 | 4 | 8 | 2 | 1 */ val OwnerAllowed: typingsJapgolly.steamClient.mod.EClanPermission.OwnerAllowed & Double = js.native
   
-  /* 1 | 2 | 8 */ @js.native
-  object OwnerOfficerModerator extends TopLevel[OwnerOfficerModerator with Double]
+  @js.native
+  sealed trait OwnerAndOfficer
+    extends StObject
+       with EClanPermission
+  /* 3 */ val OwnerAndOfficer: typingsJapgolly.steamClient.mod.EClanPermission.OwnerAndOfficer & Double = js.native
   
+  @js.native
+  sealed trait OwnerOfficerModerator
+    extends StObject
+       with EClanPermission
+  /* 1 | 2 | 8 */ val OwnerOfficerModerator: typingsJapgolly.steamClient.mod.EClanPermission.OwnerOfficerModerator & Double = js.native
 }
-

@@ -1,29 +1,24 @@
 package typingsJapgolly.difflib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object difflibStrings {
-  @js.native
-  sealed trait delete extends js.Object
   
   @js.native
-  sealed trait equal extends js.Object
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait equal extends StObject
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait insert extends StObject
+  inline def insert: insert = "insert".asInstanceOf[insert]
   
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
-  @scala.inline
-  def insert: insert = "insert".asInstanceOf[insert]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  @js.native
+  sealed trait replace extends StObject
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }
-

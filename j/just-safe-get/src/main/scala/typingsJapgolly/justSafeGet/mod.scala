@@ -1,15 +1,21 @@
 package typingsJapgolly.justSafeGet
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("just-safe-get", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(item: js.Array[_], target: String): js.Any = js.native
-  def apply(item: js.Array[_], target: js.Array[String]): js.Any = js.native
-  def apply(item: js.Object, target: String): js.Any = js.native
-  def apply(item: js.Object, target: js.Array[String]): js.Any = js.native
+object mod {
+  
+  @JSImport("just-safe-get", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(item: js.Array[Any], target: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Array[Any], target: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Array[Any], target: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Array[Any], target: js.Array[String], defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Object, target: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Object, target: String, defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Object, target: js.Array[String]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def default(item: js.Object, target: js.Array[String], defaultValue: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(item.asInstanceOf[js.Any], target.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

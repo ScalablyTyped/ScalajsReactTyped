@@ -1,65 +1,52 @@
 package typingsJapgolly.minappEnv.DB
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QUERY_COMMANDS_LITERAL extends js.Object
-
+sealed trait QUERY_COMMANDS_LITERAL extends StObject
 @JSGlobal("DB.QUERY_COMMANDS_LITERAL")
 @js.native
-object QUERY_COMMANDS_LITERAL extends js.Object {
-  @js.native
-  sealed trait EQ extends QUERY_COMMANDS_LITERAL
+object QUERY_COMMANDS_LITERAL extends StObject {
   
   @js.native
-  sealed trait GT extends QUERY_COMMANDS_LITERAL
+  sealed trait EQ
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait GTE extends QUERY_COMMANDS_LITERAL
+  sealed trait GT
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait IN extends QUERY_COMMANDS_LITERAL
+  sealed trait GTE
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait LT extends QUERY_COMMANDS_LITERAL
+  sealed trait IN
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait LTE extends QUERY_COMMANDS_LITERAL
+  sealed trait LT
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait NEQ extends QUERY_COMMANDS_LITERAL
+  sealed trait LTE
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
   @js.native
-  sealed trait NIN extends QUERY_COMMANDS_LITERAL
+  sealed trait NEQ
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[QUERY_COMMANDS_LITERAL with String] = js.native
-  /* "eq" */ @js.native
-  object EQ extends TopLevel[EQ with String]
-  
-  /* "gt" */ @js.native
-  object GT extends TopLevel[GT with String]
-  
-  /* "gte" */ @js.native
-  object GTE extends TopLevel[GTE with String]
-  
-  /* "in" */ @js.native
-  object IN extends TopLevel[IN with String]
-  
-  /* "lt" */ @js.native
-  object LT extends TopLevel[LT with String]
-  
-  /* "lte" */ @js.native
-  object LTE extends TopLevel[LTE with String]
-  
-  /* "neq" */ @js.native
-  object NEQ extends TopLevel[NEQ with String]
-  
-  /* "nin" */ @js.native
-  object NIN extends TopLevel[NIN with String]
-  
+  @js.native
+  sealed trait NIN
+    extends StObject
+       with QUERY_COMMANDS_LITERAL
 }
-

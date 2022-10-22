@@ -1,23 +1,17 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ULSTraceLevel extends js.Object
-
+sealed trait ULSTraceLevel extends StObject
 @JSGlobal("SP.ULSTraceLevel")
 @js.native
-object ULSTraceLevel extends js.Object {
+object ULSTraceLevel extends StObject {
+  
   @js.native
-  sealed trait verbose extends ULSTraceLevel
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ULSTraceLevel with Double] = js.native
-  /* 0 */ @js.native
-  object verbose extends TopLevel[verbose with Double]
-  
+  sealed trait verbose
+    extends StObject
+       with ULSTraceLevel
 }
-

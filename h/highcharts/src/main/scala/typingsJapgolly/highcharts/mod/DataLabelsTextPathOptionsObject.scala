@@ -1,27 +1,37 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataLabelsTextPathOptionsObject extends js.Object {
+trait DataLabelsTextPathOptionsObject extends StObject {
+  
   /**
-    * Presentation attributes for the text path.
+    * (Highcharts, Highstock, Gantt) Presentation attributes for the text path.
     */
   var attributes: js.UndefOr[SVGAttributes] = js.undefined
+  
   /**
-    * Enable or disable `textPath` option for link's or marker's data labels.
+    * (Highcharts, Highstock, Gantt) Enable or disable `textPath` option for
+    * link's or marker's data labels.
     */
   var enabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object DataLabelsTextPathOptionsObject {
-  @scala.inline
-  def apply(attributes: SVGAttributes = null, enabled: js.UndefOr[Boolean] = js.undefined): DataLabelsTextPathOptionsObject = {
+  
+  inline def apply(): DataLabelsTextPathOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataLabelsTextPathOptionsObject]
   }
+  
+  extension [Self <: DataLabelsTextPathOptionsObject](x: Self) {
+    
+    inline def setAttributes(value: SVGAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+  }
 }
-

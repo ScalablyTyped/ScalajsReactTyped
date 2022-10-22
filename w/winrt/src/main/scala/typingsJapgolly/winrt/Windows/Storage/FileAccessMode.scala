@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Storage
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileAccessMode extends js.Object
-
+sealed trait FileAccessMode extends StObject
 @JSGlobal("Windows.Storage.FileAccessMode")
 @js.native
-object FileAccessMode extends js.Object {
-  @js.native
-  sealed trait read extends FileAccessMode
+object FileAccessMode extends StObject {
   
   @js.native
-  sealed trait readWrite extends FileAccessMode
+  sealed trait read
+    extends StObject
+       with FileAccessMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileAccessMode with Double] = js.native
-  /* 0 */ @js.native
-  object read extends TopLevel[read with Double]
-  
-  /* 1 */ @js.native
-  object readWrite extends TopLevel[readWrite with Double]
-  
+  @js.native
+  sealed trait readWrite
+    extends StObject
+       with FileAccessMode
 }
-

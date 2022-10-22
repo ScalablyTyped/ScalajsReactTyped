@@ -1,20 +1,18 @@
 organization := "org.scalablytyped.japgolly"
 name := "inversify-restify-utils"
-version := "3.4.0-5ad662"
-scalaVersion := "2.13.1"
+version := "3.5.0-f68007"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "bunyan" % "1.8-dt-20200226Z-ec4c1d",
-  "org.scalablytyped.japgolly" %%% "formidable" % "1.0.16-dt-20200225Z-cf44e7",
-  "org.scalablytyped.japgolly" %%% "inversify" % "5.0.1-4052f8",
-  "org.scalablytyped.japgolly" %%% "node" % "13.7-dt-20200228Z-e4cd2e",
-  "org.scalablytyped.japgolly" %%% "restify" % "8.4-dt-20200225Z-8f0faf",
-  "org.scalablytyped.japgolly" %%% "spdy" % "3.4-dt-20200227Z-9e93db",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "bunyan" % "1.8-dt-20211202Z-40b88d",
+  "org.scalablytyped.japgolly" %%% "formidable" % "2.0-dt-20220502Z-a6cef0",
+  "org.scalablytyped.japgolly" %%% "inversify" % "6.0.1-a9a274",
+  "org.scalablytyped.japgolly" %%% "node" % "18.11-dt-20221015Z-288d1b",
+  "org.scalablytyped.japgolly" %%% "restify" % "8.5-dt-20220810Z-e09e9d",
+  "org.scalablytyped.japgolly" %%% "spdy" % "3.4-dt-20211202Z-553442",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

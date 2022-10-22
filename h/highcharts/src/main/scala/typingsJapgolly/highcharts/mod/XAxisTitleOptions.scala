@@ -3,22 +3,27 @@ package typingsJapgolly.highcharts.mod
 import typingsJapgolly.highcharts.highchartsStrings.chart_
 import typingsJapgolly.highcharts.highchartsStrings.flap
 import typingsJapgolly.highcharts.highchartsStrings.ortho
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait XAxisTitleOptions extends AxisTitleOptions {
+trait XAxisTitleOptions
+  extends StObject
+     with AxisTitleOptions {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment of the title relative
     * to the axis values. Possible values are "low", "middle" or "high".
     */
   var align: js.UndefOr[AxisTitleAlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel distance between the
     * axis labels or line and the title. Defaults to 0 for horizontal axes, 10
     * for vertical
     */
   var margin: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The distance of the axis title
     * from the axis line. By default, this distance is computed from the offset
@@ -26,6 +31,7 @@ trait XAxisTitleOptions extends AxisTitleOptions {
     * margin. However when the offset option is set, it overrides all this.
     */
   var offset: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Defines how the title is repositioned according to the 3D
     * chart orientation.
@@ -50,16 +56,19 @@ trait XAxisTitleOptions extends AxisTitleOptions {
   var position3d: js.UndefOr[
     chart_ | flap | typingsJapgolly.highcharts.highchartsStrings.offset | ortho | Null
   ] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to reserve space for the title
     * when laying out the axis.
     */
   var reserveSpace: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The rotation of the text in
     * degrees. 0 is horizontal, 270 is vertical reading from bottom to top.
     */
   var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) If enabled, the axis title will skewed to follow the
     * perspective.
@@ -72,6 +81,7 @@ trait XAxisTitleOptions extends AxisTitleOptions {
     * A `null` value will use the config from `labels.skew3d`.
     */
   var skew3d: js.UndefOr[Boolean | Null] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the title. If the
     * title text is longer than the axis length, it will wrap to multiple lines
@@ -82,12 +92,14 @@ trait XAxisTitleOptions extends AxisTitleOptions {
     * class.
     */
   var style: js.UndefOr[CSSObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The actual text of the axis
-    * title. It can contain basic HTML text markup like <b>, <i> and spans with
+    * title. It can contain basic HTML tags like `b`, `i` and `span` with
     * style.
     */
   var text: js.UndefOr[String | Null] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Alignment of the text, can be
     * `"left"`, `"right"` or `"center"`. Default alignment depends on the
@@ -118,55 +130,90 @@ trait XAxisTitleOptions extends AxisTitleOptions {
     * `right`
     */
   var textAlign: js.UndefOr[AlignValue] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to use HTML to render the axis
     * title.
     */
   var useHTML: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Horizontal pixel offset of the title
     * position.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Vertical pixel offset of the title
     * position.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object XAxisTitleOptions {
-  @scala.inline
-  def apply(
-    align: AxisTitleAlignValue = null,
-    margin: Int | Double = null,
-    offset: Int | Double = null,
-    position3d: chart_ | flap | typingsJapgolly.highcharts.highchartsStrings.offset | ortho = null,
-    reserveSpace: js.UndefOr[Boolean] = js.undefined,
-    rotation: Int | Double = null,
-    skew3d: js.UndefOr[Boolean] = js.undefined,
-    style: CSSObject = null,
-    text: String = null,
-    textAlign: AlignValue = null,
-    useHTML: js.UndefOr[Boolean] = js.undefined,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): XAxisTitleOptions = {
+  
+  inline def apply(): XAxisTitleOptions = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (position3d != null) __obj.updateDynamic("position3d")(position3d.asInstanceOf[js.Any])
-    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace.asInstanceOf[js.Any])
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (!js.isUndefined(skew3d)) __obj.updateDynamic("skew3d")(skew3d.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
-    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[XAxisTitleOptions]
   }
+  
+  extension [Self <: XAxisTitleOptions](x: Self) {
+    
+    inline def setAlign(value: AxisTitleAlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPosition3d(value: chart_ | flap | typingsJapgolly.highcharts.highchartsStrings.offset | ortho): Self = StObject.set(x, "position3d", value.asInstanceOf[js.Any])
+    
+    inline def setPosition3dNull: Self = StObject.set(x, "position3d", null)
+    
+    inline def setPosition3dUndefined: Self = StObject.set(x, "position3d", js.undefined)
+    
+    inline def setReserveSpace(value: Boolean): Self = StObject.set(x, "reserveSpace", value.asInstanceOf[js.Any])
+    
+    inline def setReserveSpaceUndefined: Self = StObject.set(x, "reserveSpace", js.undefined)
+    
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    inline def setSkew3d(value: Boolean): Self = StObject.set(x, "skew3d", value.asInstanceOf[js.Any])
+    
+    inline def setSkew3dNull: Self = StObject.set(x, "skew3d", null)
+    
+    inline def setSkew3dUndefined: Self = StObject.set(x, "skew3d", js.undefined)
+    
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlign(value: AlignValue): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    
+    inline def setTextNull: Self = StObject.set(x, "text", null)
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setUseHTML(value: Boolean): Self = StObject.set(x, "useHTML", value.asInstanceOf[js.Any])
+    
+    inline def setUseHTMLUndefined: Self = StObject.set(x, "useHTML", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

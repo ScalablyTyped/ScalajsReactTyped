@@ -1,13 +1,13 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
 import typingsJapgolly.std.Promise
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("selenium-webdriver", "AlertPromise")
 @js.native
-class AlertPromise protected ()
+open class AlertPromise protected ()
   extends Alert
      with Promise[Alert] {
   /**
@@ -18,4 +18,3 @@ class AlertPromise protected ()
     */
   def this(driver: WebDriver, alert: js.Promise[Alert]) = this()
 }
-

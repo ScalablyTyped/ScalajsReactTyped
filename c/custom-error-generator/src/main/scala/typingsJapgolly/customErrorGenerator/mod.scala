@@ -1,14 +1,17 @@
 package typingsJapgolly.customErrorGenerator
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("custom-error-generator", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(name: String): js.Any = js.native
-  def apply(name: String, parameters: js.Object): js.Any = js.native
-  def apply(name: String, parameters: js.Object, Constructor: js.Any): js.Any = js.native
+object mod {
+  
+  inline def apply(name: String): Any = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def apply(name: String, parameters: js.Object): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: String, parameters: js.Object, Constructor: Any): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[Any]
+  inline def apply(name: String, parameters: Unit, Constructor: Any): Any = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], Constructor.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  @JSImport("custom-error-generator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

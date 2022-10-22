@@ -1,27 +1,23 @@
 package typingsJapgolly.activexDao.DAO
 
-import typingsJapgolly.activexDao.activexDaoNumbers.`1`
-import typingsJapgolly.activexDao.activexDaoNumbers.`2`
-import typingsJapgolly.activexDao.activexDaoNumbers.`4`
+import typingsJapgolly.activexDao.activexDaoInts.`1`
+import typingsJapgolly.activexDao.activexDaoInts.`2`
+import typingsJapgolly.activexDao.activexDaoInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexDao.activexDaoNumbers.`4`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`2`
-  - typingsJapgolly.activexDao.activexDaoNumbers.`1`
+  - typingsJapgolly.activexDao.activexDaoInts.`4`
+  - typingsJapgolly.activexDao.activexDaoInts.`2`
+  - typingsJapgolly.activexDao.activexDaoInts.`1`
 */
-trait UpdateTypeEnum extends js.Object
-
+trait UpdateTypeEnum extends StObject
 object UpdateTypeEnum {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def dbUpdateBatch: `4` = this.cast(4)
-  @scala.inline
-  def dbUpdateCurrentRecord: `2` = this.cast(2)
-  @scala.inline
-  def dbUpdateRegular: `1` = this.cast(1)
+  
+  inline def dbUpdateBatch: `4` = 4.asInstanceOf[`4`]
+  
+  inline def dbUpdateCurrentRecord: `2` = 2.asInstanceOf[`2`]
+  
+  inline def dbUpdateRegular: `1` = 1.asInstanceOf[`1`]
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for terser
 
-Typings are for version 4.6.3
+Typings are for version 5.15.1
 
 ## Library description:
 JavaScript parser, mangler/compressor and beautifier toolkit for ES6+
@@ -10,10 +10,10 @@ JavaScript parser, mangler/compressor and beautifier toolkit for ES6+
 | ------------------ | :-------------: |
 | Full name          | terser |
 | Keywords           | uglify, terser, uglify-es, uglify-js, minify, minifier, javascript, ecmascript, es5, es6, es7, es8, es2015, es2016, es2017, async, await |
-| # releases         | 75 |
-| # dependents       | 364 |
-| # downloads        | 276281155 |
-| # stars            | 1 |
+| # releases         | 28 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2503319466666667E8 |
+| # stars            | 7405.0 |
 
 ## Links
 - [Homepage](https://terser.org)

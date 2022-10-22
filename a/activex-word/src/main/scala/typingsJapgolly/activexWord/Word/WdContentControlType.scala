@@ -1,51 +1,47 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`0`
-import typingsJapgolly.activexWord.activexWordNumbers.`1`
-import typingsJapgolly.activexWord.activexWordNumbers.`2`
-import typingsJapgolly.activexWord.activexWordNumbers.`3`
-import typingsJapgolly.activexWord.activexWordNumbers.`4`
-import typingsJapgolly.activexWord.activexWordNumbers.`5`
-import typingsJapgolly.activexWord.activexWordNumbers.`6`
-import typingsJapgolly.activexWord.activexWordNumbers.`7`
-import typingsJapgolly.activexWord.activexWordNumbers.`8`
+import typingsJapgolly.activexWord.activexWordInts.`0`
+import typingsJapgolly.activexWord.activexWordInts.`1`
+import typingsJapgolly.activexWord.activexWordInts.`2`
+import typingsJapgolly.activexWord.activexWordInts.`3`
+import typingsJapgolly.activexWord.activexWordInts.`4`
+import typingsJapgolly.activexWord.activexWordInts.`5`
+import typingsJapgolly.activexWord.activexWordInts.`6`
+import typingsJapgolly.activexWord.activexWordInts.`7`
+import typingsJapgolly.activexWord.activexWordInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`5`
-  - typingsJapgolly.activexWord.activexWordNumbers.`8`
-  - typingsJapgolly.activexWord.activexWordNumbers.`3`
-  - typingsJapgolly.activexWord.activexWordNumbers.`6`
-  - typingsJapgolly.activexWord.activexWordNumbers.`4`
-  - typingsJapgolly.activexWord.activexWordNumbers.`7`
-  - typingsJapgolly.activexWord.activexWordNumbers.`2`
-  - typingsJapgolly.activexWord.activexWordNumbers.`0`
-  - typingsJapgolly.activexWord.activexWordNumbers.`1`
+  - typingsJapgolly.activexWord.activexWordInts.`5`
+  - typingsJapgolly.activexWord.activexWordInts.`8`
+  - typingsJapgolly.activexWord.activexWordInts.`3`
+  - typingsJapgolly.activexWord.activexWordInts.`6`
+  - typingsJapgolly.activexWord.activexWordInts.`4`
+  - typingsJapgolly.activexWord.activexWordInts.`7`
+  - typingsJapgolly.activexWord.activexWordInts.`2`
+  - typingsJapgolly.activexWord.activexWordInts.`0`
+  - typingsJapgolly.activexWord.activexWordInts.`1`
 */
-trait WdContentControlType extends js.Object
-
+trait WdContentControlType extends StObject
 object WdContentControlType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdContentControlBuildingBlockGallery: `5` = this.cast(5)
-  @scala.inline
-  def wdContentControlCheckBox: `8` = this.cast(8)
-  @scala.inline
-  def wdContentControlComboBox: `3` = this.cast(3)
-  @scala.inline
-  def wdContentControlDate: `6` = this.cast(6)
-  @scala.inline
-  def wdContentControlDropdownList: `4` = this.cast(4)
-  @scala.inline
-  def wdContentControlGroup: `7` = this.cast(7)
-  @scala.inline
-  def wdContentControlPicture: `2` = this.cast(2)
-  @scala.inline
-  def wdContentControlRichText: `0` = this.cast(0)
-  @scala.inline
-  def wdContentControlText: `1` = this.cast(1)
+  
+  inline def wdContentControlBuildingBlockGallery: `5` = 5.asInstanceOf[`5`]
+  
+  inline def wdContentControlCheckBox: `8` = 8.asInstanceOf[`8`]
+  
+  inline def wdContentControlComboBox: `3` = 3.asInstanceOf[`3`]
+  
+  inline def wdContentControlDate: `6` = 6.asInstanceOf[`6`]
+  
+  inline def wdContentControlDropdownList: `4` = 4.asInstanceOf[`4`]
+  
+  inline def wdContentControlGroup: `7` = 7.asInstanceOf[`7`]
+  
+  inline def wdContentControlPicture: `2` = 2.asInstanceOf[`2`]
+  
+  inline def wdContentControlRichText: `0` = 0.asInstanceOf[`0`]
+  
+  inline def wdContentControlText: `1` = 1.asInstanceOf[`1`]
 }
-

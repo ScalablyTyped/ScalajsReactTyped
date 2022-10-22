@@ -10,10 +10,10 @@ A shim for the setImmediate efficient script yielding API
 | ------------------ | :-------------: |
 | Full name          | setimmediate |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 341 |
-| # downloads        | 296427725 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 6.1461132666666664E7 |
+| # stars            | 1231.0 |
 
 ## Links
 - [Homepage](https://github.com/yuzujs/setImmediate#readme)

@@ -1,35 +1,31 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`4`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`-2`
-  - typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`3`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`4`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`-2`
+  - typingsJapgolly.activexPowerpoint.activexPowerpointInts.`3`
 */
-trait PpTabStopType extends js.Object
-
+trait PpTabStopType extends StObject
 object PpTabStopType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def ppTabStopCenter: `2` = this.cast(2)
-  @scala.inline
-  def ppTabStopDecimal: `4` = this.cast(4)
-  @scala.inline
-  def ppTabStopLeft: `1` = this.cast(1)
-  @scala.inline
-  def ppTabStopMixed: `-2` = this.cast(-2)
-  @scala.inline
-  def ppTabStopRight: `3` = this.cast(3)
+  
+  inline def ppTabStopCenter: `2` = 2.asInstanceOf[`2`]
+  
+  inline def ppTabStopDecimal: `4` = 4.asInstanceOf[`4`]
+  
+  inline def ppTabStopLeft: `1` = 1.asInstanceOf[`1`]
+  
+  inline def ppTabStopMixed: `-2` = -2.asInstanceOf[`-2`]
+  
+  inline def ppTabStopRight: `3` = 3.asInstanceOf[`3`]
 }
-

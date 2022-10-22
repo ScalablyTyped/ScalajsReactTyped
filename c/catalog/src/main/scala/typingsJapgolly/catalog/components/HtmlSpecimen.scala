@@ -1,66 +1,56 @@
 package typingsJapgolly.catalog.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.catalog.catalogNumbers.`1`
-import typingsJapgolly.catalog.catalogNumbers.`2`
-import typingsJapgolly.catalog.catalogNumbers.`3`
-import typingsJapgolly.catalog.catalogNumbers.`4`
-import typingsJapgolly.catalog.catalogNumbers.`5`
-import typingsJapgolly.catalog.catalogNumbers.`6`
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.catalog.catalogInts.`1`
+import typingsJapgolly.catalog.catalogInts.`2`
+import typingsJapgolly.catalog.catalogInts.`3`
+import typingsJapgolly.catalog.catalogInts.`4`
+import typingsJapgolly.catalog.catalogInts.`5`
+import typingsJapgolly.catalog.catalogInts.`6`
 import typingsJapgolly.catalog.mod.HtmlSpecimenProps
 import typingsJapgolly.catalog.mod.SpecimenProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HtmlSpecimen {
-  def apply(
-    dark: js.UndefOr[Boolean] = js.undefined,
-    frame: js.UndefOr[Boolean] = js.undefined,
-    light: js.UndefOr[Boolean] = js.undefined,
-    noSource: js.UndefOr[Boolean] = js.undefined,
-    plain: js.UndefOr[Boolean] = js.undefined,
-    rawBody: String = null,
-    rawOptions: String = null,
-    responsive: Boolean | String | js.Array[String] = null,
-    showSource: js.UndefOr[Boolean] = js.undefined,
-    span: `1` | `2` | `3` | `4` | `5` | `6` = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: String
-  ): UnmountedWithRoot[
-    SpecimenProps with HtmlSpecimenProps, 
-    typingsJapgolly.catalog.mod.HtmlSpecimen, 
-    Unit, 
-    SpecimenProps with HtmlSpecimenProps
-  ] = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(dark)) __obj.updateDynamic("dark")(dark.asInstanceOf[js.Any])
-    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
-    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light.asInstanceOf[js.Any])
-    if (!js.isUndefined(noSource)) __obj.updateDynamic("noSource")(noSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain.asInstanceOf[js.Any])
-    if (rawBody != null) __obj.updateDynamic("rawBody")(rawBody.asInstanceOf[js.Any])
-    if (rawOptions != null) __obj.updateDynamic("rawOptions")(rawOptions.asInstanceOf[js.Any])
-    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSource)) __obj.updateDynamic("showSource")(showSource.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.HtmlSpecimenProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.catalog.mod.HtmlSpecimen](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.catalog.mod.SpecimenProps with typingsJapgolly.catalog.mod.HtmlSpecimenProps])
+  inline def apply(children: String): Builder = {
+    val __props = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[SpecimenProps & HtmlSpecimenProps]))
   }
+  
   @JSImport("catalog", "HtmlSpecimen")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.catalog.mod.HtmlSpecimen] {
+    
+    inline def dark(value: Boolean): this.type = set("dark", value.asInstanceOf[js.Any])
+    
+    inline def frame(value: Boolean): this.type = set("frame", value.asInstanceOf[js.Any])
+    
+    inline def light(value: Boolean): this.type = set("light", value.asInstanceOf[js.Any])
+    
+    inline def noSource(value: Boolean): this.type = set("noSource", value.asInstanceOf[js.Any])
+    
+    inline def plain(value: Boolean): this.type = set("plain", value.asInstanceOf[js.Any])
+    
+    inline def rawBody(value: String): this.type = set("rawBody", value.asInstanceOf[js.Any])
+    
+    inline def rawOptions(value: String): this.type = set("rawOptions", value.asInstanceOf[js.Any])
+    
+    inline def responsive(value: Boolean | String | js.Array[String]): this.type = set("responsive", value.asInstanceOf[js.Any])
+    
+    inline def responsiveVarargs(value: String*): this.type = set("responsive", js.Array(value*))
+    
+    inline def showSource(value: Boolean): this.type = set("showSource", value.asInstanceOf[js.Any])
+    
+    inline def span(value: `1` | `2` | `3` | `4` | `5` | `6`): this.type = set("span", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SpecimenProps & HtmlSpecimenProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

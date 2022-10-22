@@ -1,22 +1,28 @@
 package typingsJapgolly.reactNativeFirebase.mod.RNFirebase
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConfirmationResult extends js.Object {
-  var verificationId: String | Null
+trait ConfirmationResult extends StObject {
+  
   def confirm(verificationCode: String): js.Promise[User | Null]
+  
+  var verificationId: String | Null
 }
-
 object ConfirmationResult {
-  @scala.inline
-  def apply(confirm: String => CallbackTo[js.Promise[User | Null]], verificationId: String = null): ConfirmationResult = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("confirm")(js.Any.fromFunction1((t0: java.lang.String) => confirm(t0).runNow()))
-    if (verificationId != null) __obj.updateDynamic("verificationId")(verificationId.asInstanceOf[js.Any])
+  
+  inline def apply(confirm: String => js.Promise[User | Null]): ConfirmationResult = {
+    val __obj = js.Dynamic.literal(confirm = js.Any.fromFunction1(confirm), verificationId = null)
     __obj.asInstanceOf[ConfirmationResult]
   }
+  
+  extension [Self <: ConfirmationResult](x: Self) {
+    
+    inline def setConfirm(value: String => js.Promise[User | Null]): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+    
+    inline def setVerificationId(value: String): Self = StObject.set(x, "verificationId", value.asInstanceOf[js.Any])
+    
+    inline def setVerificationIdNull: Self = StObject.set(x, "verificationId", null)
+  }
 }
-

@@ -1,29 +1,28 @@
 package typingsJapgolly.node.dnsMod
 
 import typingsJapgolly.node.nodeBooleans.`false`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LookupOneOptions extends LookupOptions {
+trait LookupOneOptions
+  extends StObject
+     with LookupOptions {
+  
   @JSName("all")
   var all_LookupOneOptions: js.UndefOr[`false`] = js.undefined
 }
-
 object LookupOneOptions {
-  @scala.inline
-  def apply(
-    all: `false` = null,
-    family: Int | Double = null,
-    hints: Int | Double = null,
-    verbatim: js.UndefOr[Boolean] = js.undefined
-  ): LookupOneOptions = {
+  
+  inline def apply(): LookupOneOptions = {
     val __obj = js.Dynamic.literal()
-    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (hints != null) __obj.updateDynamic("hints")(hints.asInstanceOf[js.Any])
-    if (!js.isUndefined(verbatim)) __obj.updateDynamic("verbatim")(verbatim.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupOneOptions]
   }
+  
+  extension [Self <: LookupOneOptions](x: Self) {
+    
+    inline def setAll(value: `false`): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    
+    inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+  }
 }
-

@@ -11,9 +11,9 @@ Allows the use of ES2016 async functions as Express route handlers
 | Full name          | express-async-wrap |
 | Keywords           | express, async-await, routes |
 | # releases         | 1 |
-| # dependents       | 6 |
-| # downloads        | 129777 |
-| # stars            | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 15966.333333333334 |
+| # stars            | 31.0 |
 
 ## Links
 - [Homepage](https://github.com/Greenfields/express-async-wrap#readme)

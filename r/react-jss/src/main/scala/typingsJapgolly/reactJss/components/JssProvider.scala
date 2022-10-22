@@ -1,53 +1,43 @@
 package typingsJapgolly.reactJss.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.jss.mod.CreateGenerateIdOptions
 import typingsJapgolly.jss.mod.Jss
 import typingsJapgolly.jss.mod.Rule
 import typingsJapgolly.jss.mod.SheetsRegistry
 import typingsJapgolly.jss.mod.StyleSheet
-import typingsJapgolly.reactJss.AnonChildren
+import typingsJapgolly.reactJss.anon.Children
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JssProvider {
-  def apply(
-    classNamePrefix: String = null,
-    disableStylesGeneration: js.UndefOr[Boolean] = js.undefined,
-    generateId: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => CallbackTo[String] = null,
-    id: CreateGenerateIdOptions = null,
-    jss: Jss = null,
-    registry: SheetsRegistry = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AnonChildren, typingsJapgolly.reactJss.mod.JssProvider, Unit, AnonChildren] = {
-    val __obj = js.Dynamic.literal()
   
-      if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration.asInstanceOf[js.Any])
-    if (generateId != null) __obj.updateDynamic("generateId")(js.Any.fromFunction2((t0: /* rule */ typingsJapgolly.jss.mod.Rule, t1: /* sheet */ js.UndefOr[typingsJapgolly.jss.mod.StyleSheet[java.lang.String]]) => generateId(t0, t1).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (jss != null) __obj.updateDynamic("jss")(jss.asInstanceOf[js.Any])
-    if (registry != null) __obj.updateDynamic("registry")(registry.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactJss.AnonChildren, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactJss.mod.JssProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactJss.AnonChildren])(children: _*)
-  }
   @JSImport("react-jss", "JssProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def classNamePrefix(value: String): this.type = set("classNamePrefix", value.asInstanceOf[js.Any])
+    
+    inline def disableStylesGeneration(value: Boolean): this.type = set("disableStylesGeneration", value.asInstanceOf[js.Any])
+    
+    inline def generateId(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): this.type = set("generateId", js.Any.fromFunction2(value))
+    
+    inline def id(value: CreateGenerateIdOptions): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def isSSR(value: Boolean): this.type = set("isSSR", value.asInstanceOf[js.Any])
+    
+    inline def jss(value: Jss): this.type = set("jss", value.asInstanceOf[js.Any])
+    
+    inline def registry(value: SheetsRegistry): this.type = set("registry", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: JssProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Children): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

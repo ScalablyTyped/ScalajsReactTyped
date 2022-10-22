@@ -1,11 +1,11 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SortsFunctions extends js.Object {
+trait SortsFunctions extends StObject {
+  
   /**
     * Sorting between 2 numbers
     *
@@ -15,7 +15,8 @@ trait SortsFunctions extends js.Object {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def number(a: js.Any, b: js.Any, attr: String, direction: Double): Double
+  def number(a: Any, b: Any, attr: String, direction: Double): Double
+  
   /**
     * Restores the original order we had...
     *
@@ -23,7 +24,8 @@ trait SortsFunctions extends js.Object {
     * @param b The second record
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def originalPlacement(a: js.Any, b: js.Any): Double
+  def originalPlacement(a: Any, b: Any): Double
+  
   /**
     * Sorting between 2 strings
     *
@@ -33,21 +35,25 @@ trait SortsFunctions extends js.Object {
     * @param direction The number describingthe order: ASC (+1), DESC (-1) or none (0)
     * @return The number (-1, 0 or +1) representing the comparison
     */
-  def string(a: js.Any, b: js.Any, attr: String, direction: Double): Double
+  def string(a: Any, b: Any, attr: String, direction: Double): Double
 }
-
 object SortsFunctions {
-  @scala.inline
-  def apply(
-    number: (js.Any, js.Any, String, Double) => CallbackTo[Double],
-    originalPlacement: (js.Any, js.Any) => CallbackTo[Double],
-    string: (js.Any, js.Any, String, Double) => CallbackTo[Double]
+  
+  inline def apply(
+    number: (Any, Any, String, Double) => Double,
+    originalPlacement: (Any, Any) => Double,
+    string: (Any, Any, String, Double) => Double
   ): SortsFunctions = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("number")(js.Any.fromFunction4((t0: js.Any, t1: js.Any, t2: java.lang.String, t3: scala.Double) => number(t0, t1, t2, t3).runNow()))
-    __obj.updateDynamic("originalPlacement")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => originalPlacement(t0, t1).runNow()))
-    __obj.updateDynamic("string")(js.Any.fromFunction4((t0: js.Any, t1: js.Any, t2: java.lang.String, t3: scala.Double) => string(t0, t1, t2, t3).runNow()))
+    val __obj = js.Dynamic.literal(number = js.Any.fromFunction4(number), originalPlacement = js.Any.fromFunction2(originalPlacement), string = js.Any.fromFunction4(string))
     __obj.asInstanceOf[SortsFunctions]
   }
+  
+  extension [Self <: SortsFunctions](x: Self) {
+    
+    inline def setNumber(value: (Any, Any, String, Double) => Double): Self = StObject.set(x, "number", js.Any.fromFunction4(value))
+    
+    inline def setOriginalPlacement(value: (Any, Any) => Double): Self = StObject.set(x, "originalPlacement", js.Any.fromFunction2(value))
+    
+    inline def setString(value: (Any, Any, String, Double) => Double): Self = StObject.set(x, "string", js.Any.fromFunction4(value))
+  }
 }
-

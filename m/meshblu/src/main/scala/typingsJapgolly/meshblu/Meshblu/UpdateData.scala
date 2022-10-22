@@ -1,20 +1,26 @@
 package typingsJapgolly.meshblu.Meshblu
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateData extends js.Object {
+trait UpdateData extends StObject {
+  
   var color: String
+  
   var uuid: String
 }
-
 object UpdateData {
-  @scala.inline
-  def apply(color: String, uuid: String): UpdateData = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
   
+  inline def apply(color: String, uuid: String): UpdateData = {
+    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateData]
   }
+  
+  extension [Self <: UpdateData](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+  }
 }
-

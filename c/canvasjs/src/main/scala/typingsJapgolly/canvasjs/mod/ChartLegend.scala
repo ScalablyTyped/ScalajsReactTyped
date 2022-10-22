@@ -1,16 +1,20 @@
 package typingsJapgolly.canvasjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartLegend extends ChartLegendOptions {
+trait ChartLegend
+  extends StObject
+     with ChartLegendOptions {
+  
   /**
     * Returns the specified property of legend.
     * @param propertyName Name of the property.
     */
   def get(propertyName: String): Double | String | Boolean = js.native
+  
   def set(propertyName: String, value: String): Unit = js.native
   def set(propertyName: String, value: String, updateChart: Boolean): Unit = js.native
   def set(propertyName: String, value: Boolean): Unit = js.native
@@ -24,4 +28,3 @@ trait ChartLegend extends ChartLegendOptions {
   def set(propertyName: String, value: Double): Unit = js.native
   def set(propertyName: String, value: Double, updateChart: Boolean): Unit = js.native
 }
-

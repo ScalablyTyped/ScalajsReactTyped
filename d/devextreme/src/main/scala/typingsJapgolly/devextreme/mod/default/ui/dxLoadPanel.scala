@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
 import typingsJapgolly.devextreme.mod.DevExpress.ui.dxLoadPanelOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxLoadPanel")
+@JSImport("devextreme", "default.ui.dxLoadPanel")
 @js.native
-class dxLoadPanel protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxLoadPanelOptions) = this()
-  def this(element: Element, options: dxLoadPanelOptions) = this()
-}
-
+open class dxLoadPanel ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxOverlay[dxLoadPanelOptions]

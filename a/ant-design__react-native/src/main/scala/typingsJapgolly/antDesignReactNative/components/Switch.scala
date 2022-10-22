@@ -1,57 +1,82 @@
 package typingsJapgolly.antDesignReactNative.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antDesignReactNative.switchMod.AntmSwitchProps
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antDesignReactNative.anon.False
+import typingsJapgolly.antDesignReactNative.libSwitchStyleMod.SwitchStyle
+import typingsJapgolly.antDesignReactNative.libSwitchSwitchMod.SwitchProps
+import typingsJapgolly.reactNative.mod.ColorValue
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Switch {
-  def apply(
-    checked: js.UndefOr[Boolean] = js.undefined,
-    color: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* checked */ Boolean => Callback = null,
-    onPress: /* checked */ js.UndefOr[Boolean] => Callback = null,
-    style: StyleProp[ViewStyle] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    AntmSwitchProps, 
-    MountedWithRawType[AntmSwitchProps, js.Object, RawMounted[AntmSwitchProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* checked */ scala.Boolean) => onChange(t0).runNow()))
-    if (onPress != null) __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: /* checked */ js.UndefOr[scala.Boolean]) => onPress(t0).runNow()))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antDesignReactNative.switchMod.AntmSwitchProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignReactNative.switchMod.AntmSwitchProps])(children: _*)
-  }
-  @JSImport("@ant-design/react-native/lib/switch", JSImport.Default)
+  @JSImport("@ant-design/react-native", "Switch")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def checkedChildren(value: String | Node): this.type = set("checkedChildren", value.asInstanceOf[js.Any])
+    
+    inline def checkedChildrenNull: this.type = set("checkedChildren", null)
+    
+    inline def checkedChildrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("checkedChildren", js.Array(value*))
+    
+    inline def checkedChildrenVdomElement(value: VdomElement): this.type = set("checkedChildren", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def color(value: String): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* checked */ Boolean => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* checked */ Boolean) => value(t0).runNow()))
+    
+    inline def onPress(value: /* checked */ Boolean => Callback): this.type = set("onPress", js.Any.fromFunction1((t0: /* checked */ Boolean) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: Partial[SwitchStyle]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def thumbColor(value: ColorValue): this.type = set("thumbColor", value.asInstanceOf[js.Any])
+    
+    inline def thumbTintColor(value: ColorValue): this.type = set("thumbTintColor", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def trackColor(value: False): this.type = set("trackColor", value.asInstanceOf[js.Any])
+    
+    inline def unCheckedChildren(value: String | Node): this.type = set("unCheckedChildren", value.asInstanceOf[js.Any])
+    
+    inline def unCheckedChildrenNull: this.type = set("unCheckedChildren", null)
+    
+    inline def unCheckedChildrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("unCheckedChildren", js.Array(value*))
+    
+    inline def unCheckedChildrenVdomElement(value: VdomElement): this.type = set("unCheckedChildren", value.rawElement.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Switch.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SwitchProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

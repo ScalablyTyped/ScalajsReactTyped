@@ -1,21 +1,28 @@
 package typingsJapgolly.teechart.Tee
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPalette extends js.Object {
+trait IPalette extends StObject {
+  
   var colors: js.Array[String]
+  
   def get(index: Double): String
 }
-
 object IPalette {
-  @scala.inline
-  def apply(colors: js.Array[String], get: Double => CallbackTo[String]): IPalette = {
-    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
-    __obj.updateDynamic("get")(js.Any.fromFunction1((t0: scala.Double) => get(t0).runNow()))
+  
+  inline def apply(colors: js.Array[String], get: Double => String): IPalette = {
+    val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[IPalette]
   }
+  
+  extension [Self <: IPalette](x: Self) {
+    
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setGet(value: Double => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+  }
 }
-

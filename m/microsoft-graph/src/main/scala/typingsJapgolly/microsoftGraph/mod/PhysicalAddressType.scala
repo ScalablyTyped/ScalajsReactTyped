@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
@@ -11,18 +11,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.business
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.other
 */
-trait PhysicalAddressType extends js.Object
-
+trait PhysicalAddressType extends StObject
 object PhysicalAddressType {
-  @scala.inline
-  def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = this.cast("business")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def home: typingsJapgolly.microsoftGraph.microsoftGraphStrings.home = this.cast("home")
-  @scala.inline
-  def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = this.cast("other")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def business: typingsJapgolly.microsoftGraph.microsoftGraphStrings.business = "business".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.business]
+  
+  inline def home: typingsJapgolly.microsoftGraph.microsoftGraphStrings.home = "home".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.home]
+  
+  inline def other: typingsJapgolly.microsoftGraph.microsoftGraphStrings.other = "other".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.other]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

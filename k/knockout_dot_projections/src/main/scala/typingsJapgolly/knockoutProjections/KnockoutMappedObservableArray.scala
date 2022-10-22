@@ -1,13 +1,9 @@
 package typingsJapgolly.knockoutProjections
 
-import typingsJapgolly.knockout.KnockoutObservableArray
-import typingsJapgolly.knockout.KnockoutSubscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KnockoutMappedObservableArray[T]
-  extends KnockoutObservableArray[T]
-     with KnockoutSubscription
-
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservableArray<T> * / any
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutSubscription * / any */ trait KnockoutMappedObservableArray[T] extends StObject

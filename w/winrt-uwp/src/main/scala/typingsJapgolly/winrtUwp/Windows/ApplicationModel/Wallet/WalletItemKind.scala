@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Wallet
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait WalletItemKind extends js.Object
-
+sealed trait WalletItemKind extends StObject
 /** Represents the kinds (classifications) of wallet items supported. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletItemKind")
 @js.native
-object WalletItemKind extends js.Object {
+object WalletItemKind extends StObject {
+  
   /** A boarding pass. */
   @js.native
-  sealed trait boardingPass extends WalletItemKind
+  sealed trait boardingPass
+    extends StObject
+       with WalletItemKind
   
   /** A deal. */
   @js.native
-  sealed trait deal extends WalletItemKind
+  sealed trait deal
+    extends StObject
+       with WalletItemKind
   
   /** A general item. */
   @js.native
-  sealed trait general extends WalletItemKind
+  sealed trait general
+    extends StObject
+       with WalletItemKind
   
   /** The item is invalid. */
   @js.native
-  sealed trait invalid extends WalletItemKind
+  sealed trait invalid
+    extends StObject
+       with WalletItemKind
   
   /** A membership card. */
   @js.native
-  sealed trait membershipCard extends WalletItemKind
+  sealed trait membershipCard
+    extends StObject
+       with WalletItemKind
   
   /** A payment instrument. */
   @js.native
-  sealed trait paymentInstrument extends WalletItemKind
+  sealed trait paymentInstrument
+    extends StObject
+       with WalletItemKind
   
   /** A ticket. */
   @js.native
-  sealed trait ticket extends WalletItemKind
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[WalletItemKind with Double] = js.native
-  /* 5 */ @js.native
-  object boardingPass extends TopLevel[boardingPass with Double]
-  
-  /* 1 */ @js.native
-  object deal extends TopLevel[deal with Double]
-  
-  /* 2 */ @js.native
-  object general extends TopLevel[general with Double]
-  
-  /* 0 */ @js.native
-  object invalid extends TopLevel[invalid with Double]
-  
-  /* 6 */ @js.native
-  object membershipCard extends TopLevel[membershipCard with Double]
-  
-  /* 3 */ @js.native
-  object paymentInstrument extends TopLevel[paymentInstrument with Double]
-  
-  /* 4 */ @js.native
-  object ticket extends TopLevel[ticket with Double]
-  
+  sealed trait ticket
+    extends StObject
+       with WalletItemKind
 }
-

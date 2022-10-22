@@ -1,23 +1,23 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Graphics.Imaging.BitmapTransform")
-@js.native
-class BitmapTransform () extends IBitmapTransform {
-  /* CompleteClass */
-  override var bounds: BitmapBounds = js.native
-  /* CompleteClass */
-  override var flip: BitmapFlip = js.native
-  /* CompleteClass */
-  override var interpolationMode: BitmapInterpolationMode = js.native
-  /* CompleteClass */
-  override var rotation: BitmapRotation = js.native
-  /* CompleteClass */
-  override var scaledHeight: Double = js.native
-  /* CompleteClass */
-  override var scaledWidth: Double = js.native
+trait BitmapTransform
+  extends StObject
+     with IBitmapTransform
+object BitmapTransform {
+  
+  inline def apply(
+    bounds: BitmapBounds,
+    flip: BitmapFlip,
+    interpolationMode: BitmapInterpolationMode,
+    rotation: BitmapRotation,
+    scaledHeight: Double,
+    scaledWidth: Double
+  ): BitmapTransform = {
+    val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], flip = flip.asInstanceOf[js.Any], interpolationMode = interpolationMode.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scaledHeight = scaledHeight.asInstanceOf[js.Any], scaledWidth = scaledWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BitmapTransform]
+  }
 }
-

@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.PointOfService
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PosPrinterLineStyle extends js.Object
-
+sealed trait PosPrinterLineStyle extends StObject
 /** Describes the line styles that a receipt or slip printer station can use to print a ruled line. */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterLineStyle")
 @js.native
-object PosPrinterLineStyle extends js.Object {
+object PosPrinterLineStyle extends StObject {
+  
   /** Prints a sequence of short lines separated by spaces. */
   @js.native
-  sealed trait broken extends PosPrinterLineStyle
+  sealed trait broken
+    extends StObject
+       with PosPrinterLineStyle
   
   /** Prints a sequence of short lines separated by a space, then followed by a very short line, followed by a space, then followed by a short line again. */
   @js.native
-  sealed trait chain extends PosPrinterLineStyle
+  sealed trait chain
+    extends StObject
+       with PosPrinterLineStyle
   
   /** Prints a continuous solid line of double the normal thickness. */
   @js.native
-  sealed trait doubleSolid extends PosPrinterLineStyle
+  sealed trait doubleSolid
+    extends StObject
+       with PosPrinterLineStyle
   
   /** Prints a continuous solid line. */
   @js.native
-  sealed trait singleSolid extends PosPrinterLineStyle
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PosPrinterLineStyle with Double] = js.native
-  /* 2 */ @js.native
-  object broken extends TopLevel[broken with Double]
-  
-  /* 3 */ @js.native
-  object chain extends TopLevel[chain with Double]
-  
-  /* 1 */ @js.native
-  object doubleSolid extends TopLevel[doubleSolid with Double]
-  
-  /* 0 */ @js.native
-  object singleSolid extends TopLevel[singleSolid with Double]
-  
+  sealed trait singleSolid
+    extends StObject
+       with PosPrinterLineStyle
 }
-

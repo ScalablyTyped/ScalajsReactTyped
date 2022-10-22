@@ -1,61 +1,96 @@
 package typingsJapgolly.jqrangeslider
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQRangeSliderOptions extends js.Object {
-   // speed of the wheel scrolling
+trait JQRangeSliderOptions extends StObject {
+  
+  // speed of the wheel scrolling
   var arrows: js.UndefOr[Boolean] = js.undefined
-   // fade out length when displaying value labels (only when valueLabels = "change")
+  
+  // fade out length when displaying value labels (only when valueLabels = "change")
   var delayOut: js.UndefOr[Double] = js.undefined
-   // when to show value labels: "show" (always), "hide" (never) and "change" (only if slider changed)
+  
+  // when to show value labels: "show" (always), "hide" (never) and "change" (only if slider changed)
   var durationIn: js.UndefOr[Double] = js.undefined
-   // fade in length when displaying value labels (only when valueLabels = "change")
+  
+  // fade in length when displaying value labels (only when valueLabels = "change")
   var durationOut: js.UndefOr[Double] = js.undefined
-   // show handles and make them clearly select the range. Warning: must be used with 'minimum' and must not be used with 'scale'
+  
+  // show handles and make them clearly select the range. Warning: must be used with 'minimum' and must not be used with 'scale'
   var enabled: js.UndefOr[Boolean] = js.undefined
-   // duration labels are shown after the user changed its values (only when valueLabels = "change")
+  
+  // duration labels are shown after the user changed its values (only when valueLabels = "change")
   var range: js.UndefOr[Boolean | JQRangeSliderRangeLength] = js.undefined
-   // configure a read-only slider
+  
+  // configure a read-only slider
   var scales: js.UndefOr[js.Array[jQRangeSliderScale]] = js.undefined
-   // lets you specify minimum and/or maximum range length
+  
+  // lets you specify minimum and/or maximum range length
   var symmetricPositionning: js.UndefOr[Boolean] = js.undefined
-   // hide the arrows or not
+  
+  // hide the arrows or not
   var valueLabels: js.UndefOr[String] = js.undefined
+  
   var wheelMode: js.UndefOr[String] = js.undefined
-   // function of the wheel, "zoom", "scroll" or null
+  
+  // function of the wheel, "zoom", "scroll" or null
   var wheelSpeed: js.UndefOr[Double] = js.undefined
 }
-
 object JQRangeSliderOptions {
-  @scala.inline
-  def apply(
-    arrows: js.UndefOr[Boolean] = js.undefined,
-    delayOut: Int | Double = null,
-    durationIn: Int | Double = null,
-    durationOut: Int | Double = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    range: Boolean | JQRangeSliderRangeLength = null,
-    scales: js.Array[jQRangeSliderScale] = null,
-    symmetricPositionning: js.UndefOr[Boolean] = js.undefined,
-    valueLabels: String = null,
-    wheelMode: String = null,
-    wheelSpeed: Int | Double = null
-  ): JQRangeSliderOptions = {
+  
+  inline def apply(): JQRangeSliderOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows.asInstanceOf[js.Any])
-    if (delayOut != null) __obj.updateDynamic("delayOut")(delayOut.asInstanceOf[js.Any])
-    if (durationIn != null) __obj.updateDynamic("durationIn")(durationIn.asInstanceOf[js.Any])
-    if (durationOut != null) __obj.updateDynamic("durationOut")(durationOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (scales != null) __obj.updateDynamic("scales")(scales.asInstanceOf[js.Any])
-    if (!js.isUndefined(symmetricPositionning)) __obj.updateDynamic("symmetricPositionning")(symmetricPositionning.asInstanceOf[js.Any])
-    if (valueLabels != null) __obj.updateDynamic("valueLabels")(valueLabels.asInstanceOf[js.Any])
-    if (wheelMode != null) __obj.updateDynamic("wheelMode")(wheelMode.asInstanceOf[js.Any])
-    if (wheelSpeed != null) __obj.updateDynamic("wheelSpeed")(wheelSpeed.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQRangeSliderOptions]
   }
+  
+  extension [Self <: JQRangeSliderOptions](x: Self) {
+    
+    inline def setArrows(value: Boolean): Self = StObject.set(x, "arrows", value.asInstanceOf[js.Any])
+    
+    inline def setArrowsUndefined: Self = StObject.set(x, "arrows", js.undefined)
+    
+    inline def setDelayOut(value: Double): Self = StObject.set(x, "delayOut", value.asInstanceOf[js.Any])
+    
+    inline def setDelayOutUndefined: Self = StObject.set(x, "delayOut", js.undefined)
+    
+    inline def setDurationIn(value: Double): Self = StObject.set(x, "durationIn", value.asInstanceOf[js.Any])
+    
+    inline def setDurationInUndefined: Self = StObject.set(x, "durationIn", js.undefined)
+    
+    inline def setDurationOut(value: Double): Self = StObject.set(x, "durationOut", value.asInstanceOf[js.Any])
+    
+    inline def setDurationOutUndefined: Self = StObject.set(x, "durationOut", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setRange(value: Boolean | JQRangeSliderRangeLength): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setScales(value: js.Array[jQRangeSliderScale]): Self = StObject.set(x, "scales", value.asInstanceOf[js.Any])
+    
+    inline def setScalesUndefined: Self = StObject.set(x, "scales", js.undefined)
+    
+    inline def setScalesVarargs(value: jQRangeSliderScale*): Self = StObject.set(x, "scales", js.Array(value*))
+    
+    inline def setSymmetricPositionning(value: Boolean): Self = StObject.set(x, "symmetricPositionning", value.asInstanceOf[js.Any])
+    
+    inline def setSymmetricPositionningUndefined: Self = StObject.set(x, "symmetricPositionning", js.undefined)
+    
+    inline def setValueLabels(value: String): Self = StObject.set(x, "valueLabels", value.asInstanceOf[js.Any])
+    
+    inline def setValueLabelsUndefined: Self = StObject.set(x, "valueLabels", js.undefined)
+    
+    inline def setWheelMode(value: String): Self = StObject.set(x, "wheelMode", value.asInstanceOf[js.Any])
+    
+    inline def setWheelModeUndefined: Self = StObject.set(x, "wheelMode", js.undefined)
+    
+    inline def setWheelSpeed(value: Double): Self = StObject.set(x, "wheelSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setWheelSpeedUndefined: Self = StObject.set(x, "wheelSpeed", js.undefined)
+  }
 }
-

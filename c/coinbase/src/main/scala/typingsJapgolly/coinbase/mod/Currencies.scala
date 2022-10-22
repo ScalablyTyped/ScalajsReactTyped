@@ -1,20 +1,25 @@
 package typingsJapgolly.coinbase.mod
 
-import typingsJapgolly.coinbase.AnonMinsize
+import typingsJapgolly.coinbase.anon.Id
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Currencies extends js.Object {
-  var data: js.Array[AnonMinsize]
-}
-
-object Currencies {
-  @scala.inline
-  def apply(data: js.Array[AnonMinsize]): Currencies = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
+trait Currencies extends StObject {
   
+  var data: js.Array[Id]
+}
+object Currencies {
+  
+  inline def apply(data: js.Array[Id]): Currencies = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[Currencies]
   }
+  
+  extension [Self <: Currencies](x: Self) {
+    
+    inline def setData(value: js.Array[Id]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataVarargs(value: Id*): Self = StObject.set(x, "data", js.Array(value*))
+  }
 }
-

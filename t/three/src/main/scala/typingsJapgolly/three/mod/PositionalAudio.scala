@@ -1,13 +1,12 @@
 package typingsJapgolly.three.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "PositionalAudio")
 @js.native
-class PositionalAudio protected ()
-  extends typingsJapgolly.three.positionalAudioMod.PositionalAudio {
-  def this(listener: typingsJapgolly.three.audioListenerMod.AudioListener) = this()
+open class PositionalAudio protected ()
+  extends typingsJapgolly.three.srcThreeMod.PositionalAudio {
+  def this(listener: typingsJapgolly.three.srcAudioAudioListenerMod.AudioListener) = this()
 }
-

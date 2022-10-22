@@ -1,28 +1,33 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("yandex-maps", "collection")
-@js.native
-object collection extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+object collection {
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typingsJapgolly.yandexMaps.mod.IEventEmitter because Already inherited
-  - typingsJapgolly.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @js.native
-  class Item ()
-    extends IChild[IControlParent]
+  - typingsJapgolly.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "collection.Item")
+  @js.native
+  open class Item ()
+    extends StObject
+       with IChild[IControlParent]
        with IParentOnMap {
     def this(options: js.Object) = this()
+    
     /* CompleteClass */
-    override var events: IEventManager = js.native
-    var options: IOptionManager = js.native
+    var events: IEventManager[js.Object] = js.native
+    
     /* CompleteClass */
     override def getMap(): Map_ = js.native
+    
     def onAddToMap(map: Map_): Unit = js.native
+    
     def onRemoveFromMap(oldMap: Map_): Unit = js.native
+    
+    var options: IOptionManager = js.native
+    
     def setParent(parent: IControlParent): this.type = js.native
   }
-  
 }
-

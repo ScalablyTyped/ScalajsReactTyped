@@ -1,17 +1,20 @@
 package typingsJapgolly.harFormat.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Content extends js.Object {
+trait Content extends StObject {
+  
   /**  A comment provided by the user or the application */
   var comment: js.UndefOr[String] = js.undefined
+  
   /**
     * Number of bytes saved. Leave out this field if the information is not
     * available.
     */
   var compression: js.UndefOr[Double] = js.undefined
+  
   /**
     * Encoding used for response text field e.g `base64`.
     *
@@ -20,6 +23,7 @@ trait Content extends js.Object {
     * set into UTF-8.
     */
   var encoding: js.UndefOr[String] = js.undefined
+  
   /**
     * MIME type of the response text (value of the Content-Type response
     * header).
@@ -27,6 +31,7 @@ trait Content extends js.Object {
     * The charset attribute of the MIME type is included (if available).
     */
   var mimeType: String
+  
   /**
     * Length of the returned content in bytes.
     *
@@ -34,6 +39,7 @@ trait Content extends js.Object {
     * bigger when the content has been compressed.
     */
   var size: Double
+  
   /**
     * Response body sent from the server or loaded from the browser cache.
     *
@@ -46,23 +52,33 @@ trait Content extends js.Object {
     */
   var text: js.UndefOr[String] = js.undefined
 }
-
 object Content {
-  @scala.inline
-  def apply(
-    mimeType: String,
-    size: Double,
-    comment: String = null,
-    compression: Int | Double = null,
-    encoding: String = null,
-    text: String = null
-  ): Content = {
+  
+  inline def apply(mimeType: String, size: Double): Content = {
     val __obj = js.Dynamic.literal(mimeType = mimeType.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (compression != null) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
+  
+  extension [Self <: Content](x: Self) {
+    
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setCompression(value: Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

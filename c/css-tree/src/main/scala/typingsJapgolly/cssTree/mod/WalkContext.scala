@@ -1,44 +1,70 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WalkContext extends js.Object {
+trait WalkContext extends StObject {
+  
   var atrule: Atrule | Null
+  
   var atrulePrelude: AtrulePrelude | Null
+  
   var block: Block | Null
+  
   var declaration: Declaration | Null
+  
   var function: FunctionNode | PseudoClassSelector | PseudoElementSelector | Null
+  
   var root: CssNode
+  
   var rule: Rule | Null
+  
   var selector: SelectorList | Null
+  
   var stylesheet: StyleSheet | Null
 }
-
 object WalkContext {
-  @scala.inline
-  def apply(
-    root: CssNode,
-    atrule: Atrule = null,
-    atrulePrelude: AtrulePrelude = null,
-    block: Block = null,
-    declaration: Declaration = null,
-    function: FunctionNode | PseudoClassSelector | PseudoElementSelector = null,
-    rule: Rule = null,
-    selector: SelectorList = null,
-    stylesheet: StyleSheet = null
-  ): WalkContext = {
-    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any])
-    if (atrule != null) __obj.updateDynamic("atrule")(atrule.asInstanceOf[js.Any])
-    if (atrulePrelude != null) __obj.updateDynamic("atrulePrelude")(atrulePrelude.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (declaration != null) __obj.updateDynamic("declaration")(declaration.asInstanceOf[js.Any])
-    if (function != null) __obj.updateDynamic("function")(function.asInstanceOf[js.Any])
-    if (rule != null) __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (stylesheet != null) __obj.updateDynamic("stylesheet")(stylesheet.asInstanceOf[js.Any])
+  
+  inline def apply(root: CssNode): WalkContext = {
+    val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any], atrule = null, atrulePrelude = null, block = null, declaration = null, function = null, rule = null, selector = null, stylesheet = null)
     __obj.asInstanceOf[WalkContext]
   }
+  
+  extension [Self <: WalkContext](x: Self) {
+    
+    inline def setAtrule(value: Atrule): Self = StObject.set(x, "atrule", value.asInstanceOf[js.Any])
+    
+    inline def setAtruleNull: Self = StObject.set(x, "atrule", null)
+    
+    inline def setAtrulePrelude(value: AtrulePrelude): Self = StObject.set(x, "atrulePrelude", value.asInstanceOf[js.Any])
+    
+    inline def setAtrulePreludeNull: Self = StObject.set(x, "atrulePrelude", null)
+    
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
+    
+    inline def setDeclaration(value: Declaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+    
+    inline def setDeclarationNull: Self = StObject.set(x, "declaration", null)
+    
+    inline def setFunction(value: FunctionNode | PseudoClassSelector | PseudoElementSelector): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    
+    inline def setFunctionNull: Self = StObject.set(x, "function", null)
+    
+    inline def setRoot(value: CssNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    
+    inline def setRule(value: Rule): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    
+    inline def setRuleNull: Self = StObject.set(x, "rule", null)
+    
+    inline def setSelector(value: SelectorList): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    
+    inline def setSelectorNull: Self = StObject.set(x, "selector", null)
+    
+    inline def setStylesheet(value: StyleSheet): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
+    
+    inline def setStylesheetNull: Self = StObject.set(x, "stylesheet", null)
+  }
 }
-

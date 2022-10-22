@@ -1,50 +1,36 @@
 package typingsJapgolly.reactCircularProgressbar.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactCircularProgressbar.AnonBackground
-import typingsJapgolly.reactCircularProgressbar.circularProgressbarMod.default
-import typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarProps
-import typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarStyles
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reactCircularProgressbar.anon.Background
+import typingsJapgolly.reactCircularProgressbar.distTypesMod.CircularProgressbarProps
+import typingsJapgolly.reactCircularProgressbar.distTypesMod.CircularProgressbarStyles
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CircularProgressbar {
-  def apply(
+  
+  inline def apply(
     background: Boolean,
     backgroundPadding: Double,
     circleRatio: Double,
     className: String,
-    classes: AnonBackground,
+    classes: Background,
     counterClockwise: Boolean,
     maxValue: Double,
     minValue: Double,
     strokeWidth: Double,
     styles: CircularProgressbarStyles,
     text: String,
-    value: Double,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[CircularProgressbarProps, default, Unit, CircularProgressbarProps] = {
-    val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], backgroundPadding = backgroundPadding.asInstanceOf[js.Any], circleRatio = circleRatio.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], counterClockwise = counterClockwise.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-  
-      key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactCircularProgressbar.circularProgressbarMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactCircularProgressbar.typesMod.CircularProgressbarProps])(children: _*)
+    value: Double
+  ): Default[typingsJapgolly.reactCircularProgressbar.mod.CircularProgressbar] = {
+    val __props = js.Dynamic.literal(background = background.asInstanceOf[js.Any], backgroundPadding = backgroundPadding.asInstanceOf[js.Any], circleRatio = circleRatio.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any], classes = classes.asInstanceOf[js.Any], counterClockwise = counterClockwise.asInstanceOf[js.Any], maxValue = maxValue.asInstanceOf[js.Any], minValue = minValue.asInstanceOf[js.Any], strokeWidth = strokeWidth.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    new Default[typingsJapgolly.reactCircularProgressbar.mod.CircularProgressbar](js.Array(this.component, __props.asInstanceOf[CircularProgressbarProps]))
   }
-  @JSImport("react-circular-progressbar/dist/CircularProgressbar", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-circular-progressbar", "CircularProgressbar")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: CircularProgressbarProps): Default[typingsJapgolly.reactCircularProgressbar.mod.CircularProgressbar] = new Default[typingsJapgolly.reactCircularProgressbar.mod.CircularProgressbar](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

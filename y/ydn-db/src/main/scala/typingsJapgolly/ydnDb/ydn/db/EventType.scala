@@ -1,53 +1,42 @@
 package typingsJapgolly.ydnDb.ydn.db
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
-
+sealed trait EventType extends StObject
 @JSGlobal("ydn.db.EventType")
 @js.native
-object EventType extends js.Object {
-  @js.native
-  sealed trait created extends EventType
+object EventType extends StObject {
   
   @js.native
-  sealed trait deleted extends EventType
+  sealed trait created
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait error extends EventType
+  sealed trait deleted
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait fail extends EventType
+  sealed trait error
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ready extends EventType
+  sealed trait fail
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait updated extends EventType
+  sealed trait ready
+    extends StObject
+       with EventType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EventType with Double] = js.native
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 1 */ @js.native
-  object deleted extends TopLevel[deleted with Double]
-  
-  /* 2 */ @js.native
-  object error extends TopLevel[error with Double]
-  
-  /* 3 */ @js.native
-  object fail extends TopLevel[fail with Double]
-  
-  /* 4 */ @js.native
-  object ready extends TopLevel[ready with Double]
-  
-  /* 5 */ @js.native
-  object updated extends TopLevel[updated with Double]
-  
+  @js.native
+  sealed trait updated
+    extends StObject
+       with EventType
 }
-

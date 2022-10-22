@@ -1,15 +1,17 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartParallelAxesOptions extends js.Object {
+trait ChartParallelAxesOptions extends StObject {
+  
   /**
     * (Highcharts) Accessibility options for an axis. Requires the
     * accessibility module.
     */
-  var accessibility: js.UndefOr[js.Object | ChartParallelAxesAccessibilityOptions] = js.undefined
+  var accessibility: js.UndefOr[AxisAccessibilityOptionsObject] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) When using multiple axis, the ticks of two
     * or more opposite axes will automatically be aligned by adding ticks to
@@ -25,35 +27,39 @@ trait ChartParallelAxesOptions extends js.Object {
     * Disabled for logarithmic axes.
     */
   var alignTicks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Whether to allow decimals in this axis' ticks. When counting
     * integers, like persons or hits on a web page, decimals should be avoided
-    * in the labels.
+    * in the labels. By default, decimals are allowed on small scale axes.
     */
   var allowDecimals: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Gantt) If categories are present for the xAxis, names are
-    * used instead of numbers for that axis. Since Highcharts 3.0, categories
-    * can also be extracted by giving each point a name and setting axis type
-    * to `category`. However, if you have multiple series, best practice
-    * remains defining the `categories` array.
+    * used instead of numbers for that axis.
     *
-    * Example:
+    * Since Highcharts 3.0, categories can also be extracted by giving each
+    * point a name and setting axis type to `category`. However, if you have
+    * multiple series, best practice remains defining the `categories` array.
     *
-    *  (see online documentation for example)
+    * Example: `categories: ['Apples', 'Bananas', 'Oranges']`
     */
   var categories: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The highest allowed value for
     * automatically computed axis extremes.
     */
   var ceiling: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) A class name that opens for styling the axis by CSS,
     * especially in Highcharts styled mode. The class name is applied to group
     * elements for the grid, axis elements and labels.
     */
   var className: js.UndefOr[String] = js.undefined
+  
   /**
     * (Highcharts) Configure a crosshair that follows either the mouse pointer
     * or the hovered point.
@@ -61,60 +67,85 @@ trait ChartParallelAxesOptions extends js.Object {
     * In styled mode, the crosshairs are styled in the `.highcharts-crosshair`,
     * `.highcharts-crosshair-thin` or `.highcharts-xaxis-category` classes.
     */
-  var crosshair: js.UndefOr[Boolean | ChartParallelAxesCrosshairOptions] = js.undefined
+  var crosshair: js.UndefOr[Boolean | AxisCrosshairOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) For a datetime axis, the scale will
     * automatically adjust to the appropriate unit. This member gives the
     * default string representations used for each unit. For intermediate
     * values, different units may be used, for example the `day` unit can be
     * used on midnight and `hour` unit be used for intermediate values on the
-    * same axis. For an overview of the replacement codes, see dateFormat.
-    * Defaults to:
+    * same axis.
     *
-    *  (see online documentation for example)
+    * For an overview of the replacement codes, see dateFormat.
+    *
+    * Defaults to: (see online documentation for example)
     */
-  var dateTimeLabelFormats: js.UndefOr[ChartParallelAxesDateTimeLabelFormatsOptions] = js.undefined
+  var dateTimeLabelFormats: js.UndefOr[AxisDateTimeLabelFormatsOptions] = js.undefined
+  
   /**
     * (Highcharts) Whether to force the axis to end on a tick. Use this option
     * with the `maxPadding` option to control the axis end.
+    *
+    * This option is always disabled, when panning type is either `y` or `xy`.
     */
   var endOnTick: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Event handlers for the axis.
     */
   var events: js.UndefOr[ChartParallelAxesEventsOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The lowest allowed value for automatically
     * computed axis extremes.
     */
   var floor: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Gantt) Set grid options for the axis labels. Requires Highcharts Gantt.
     */
   var grid: js.UndefOr[ChartParallelAxesGridOptions] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The Z index of the grid lines.
     */
   var gridZIndex: js.UndefOr[Double] = js.undefined
+  
   /**
-    * (Highstock) The height of the Y axis. If it's a number, it is interpreted
-    * as pixels.
+    * (Highcharts, Highstock) The height of the Y axis. If it's a number, it is
+    * interpreted as pixels.
     *
-    * Since Highstock 2: If it's a percentage string, it is interpreted as
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
     * percentages of the total plot height.
     */
   var height: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * (Highcharts) The axis labels show the number or category for each tick.
+    *
+    * Since v8.0.0: Labels are animated in categorized x-axis with updating
+    * data if `tickInterval` and `step` is set to 1.
     */
   var labels: js.UndefOr[ChartParallelAxesLabelsOptions] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The left position as the horizontal axis. If it's
+    * a number, it is interpreted as pixel position relative to the chart.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the plot width, offset from plot area left.
+    */
+  var left: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * (Highcharts) The color of the line marking the axis itself.
     *
     * In styled mode, the line stroke is given in the `.highcharts-axis-line`
     * or `.highcharts-xaxis-line` class.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var lineColor: js.UndefOr[ColorType] = js.undefined
+  
   /**
     * (Highcharts) The width of the line marking the axis itself.
     *
@@ -122,6 +153,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * or `.highcharts-xaxis-line` class.
     */
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Index of another axis that this axis is
     * linked to. When an axis is linked to a master axis, it will take the same
@@ -130,12 +162,14 @@ trait ChartParallelAxesOptions extends js.Object {
     * duplicating the scales.
     */
   var linkedTo: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) If there are multiple axes on the same side of the chart,
     * the pixel margin between the axes. Defaults to 0 on vertical axes, 15 on
     * horizontal axes.
     */
   var margin: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The maximum value of the axis. If `null`, the max value is
     * automatically calculated.
@@ -148,11 +182,13 @@ trait ChartParallelAxesOptions extends js.Object {
     * is applied internally.
     */
   var max: js.UndefOr[Double | Null] = js.undefined
+  
   /**
     * (Highstock) Maximal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
     */
   var maxLength: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Padding of the max value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -166,11 +202,13 @@ trait ChartParallelAxesOptions extends js.Object {
     * `softThreshold` is set to false.
     */
   var maxPadding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Gantt) Maximum range which can be set using the navigator's
     * handles. Opposite of xAxis.minRange.
     */
   var maxRange: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The minimum value of the axis. If `null` the min value is
     * automatically calculated.
@@ -183,11 +221,13 @@ trait ChartParallelAxesOptions extends js.Object {
     * series.softThreshold.
     */
   var min: js.UndefOr[Double | Null] = js.undefined
+  
   /**
     * (Highstock) Minimal size of a resizable axis. Could be set as a percent
     * of plot area or pixel size.
     */
   var minLength: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Padding of the min value relative to the
     * length of the axis. A padding of 0.05 will make a 100px axis 5px longer.
@@ -201,6 +241,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * `softThreshold` is set to false.
     */
   var minPadding: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The minimum range to display on this axis. The entire axis
     * will not be allowed to span over a smaller interval than this. For
@@ -214,10 +255,11 @@ trait ChartParallelAxesOptions extends js.Object {
     * minRange of 1 means that the axis can be zoomed to 10-100, 100-1000,
     * 1000-10000 etc.
     *
-    * Note that the `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
+    * **Note**: The `minPadding`, `maxPadding`, `startOnTick` and `endOnTick`
     * settings also affect how the extremes of the axis are computed.
     */
   var minRange: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The minimum tick interval allowed in axis values. For
     * example on zooming in on an axis with daily data, this can be used to
@@ -225,10 +267,12 @@ trait ChartParallelAxesOptions extends js.Object {
     * between two points on the axis.
     */
   var minTickInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Color for the minor tick marks.
     */
-  var minorTickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var minorTickColor: js.UndefOr[ColorType] = js.undefined
+  
   /**
     * (Highcharts) Specific tick interval in axis units for the minor ticks. On
     * a linear axis, if `"auto"`, the minor tick interval is calculated as a
@@ -244,19 +288,23 @@ trait ChartParallelAxesOptions extends js.Object {
     * sense, and will be ignored to prevent performance problems.
     */
   var minorTickInterval: js.UndefOr[Double | String | Null] = js.undefined
+  
   /**
     * (Highcharts) The pixel length of the minor tick marks.
     */
   var minorTickLength: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The position of the minor tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
   var minorTickPosition: js.UndefOr[OptionsMinorTickPositionValue] = js.undefined
+  
   /**
     * (Highcharts) The pixel width of the minor tick mark.
     */
   var minorTickWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Enable or disable minor ticks. Unless minorTickInterval is
     * set, the tick interval is calculated as a fifth of the `tickInterval`.
@@ -268,6 +316,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * `minorTickInterval` to `"auto"`.
     */
   var minorTicks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) The distance in pixels from the plot area to the axis line.
     * A positive offset moves the axis with it's line, labels and ticks away
@@ -277,6 +326,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * setting offset explicitly.
     */
   var offset: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock, Highcharts, Gantt) Whether to display the axis on the
     * opposite side of the normal. The normal is on the left side for vertical
@@ -284,48 +334,63 @@ trait ChartParallelAxesOptions extends js.Object {
     * top respectively. This is typically used with dual or multiple axes.
     */
   var opposite: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Refers to the index in the panes array. Used for circular
     * gauges and polar charts. When the option is not set then first pane will
     * be used.
     */
   var pane: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * (Highcharts) Whether to pan axis. If `chart.panning` is enabled, the
+    * option allows to disable panning on an individual axis.
+    */
+  var panningEnabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highstock) The zoomed range to display when only defining one or none of
     * `min` or `max`. For example, to show the latest month, a range of one
     * month can be set.
     */
   var range: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highstock) Options for axis resizing. It adds a thick line between panes
     * which the user can drag in order to resize the panes.
     */
   var resize: js.UndefOr[ChartParallelAxesResizeOptions] = js.undefined
+  
   /**
     * (Highcharts) Whether to reverse the axis so that the highest number is
     * closest to the origin.
     */
   var reversed: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock) If `true`, the first series in a stack will be
     * drawn on top in a positive, non-reversed Y axis. If `false`, the first
     * series is in the base of the stack.
     */
   var reversedStacks: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Whether to show the axis line and title when the axis has no
     * data.
     */
   var showEmpty: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts) Whether to show the first tick label.
     */
   var showFirstLabel: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to show the last tick label.
     * Defaults to `true` on cartesian charts, and `false` on polar charts.
     */
   var showLastLabel: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) A soft maximum for the axis. If the series
     * data maximum is less than this, the axis will stay at this maximum, but
@@ -336,6 +401,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * option.
     */
   var softMax: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) A soft minimum for the axis. If the series
     * data minimum is greater than this, the axis will stay at this minimum,
@@ -346,17 +412,22 @@ trait ChartParallelAxesOptions extends js.Object {
     * option.
     */
   var softMin: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) For datetime axes, this decides where to
     * put the tick between weeks. 0 = Sunday, 1 = Monday.
     */
   var startOfWeek: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether to force the axis to start on a
     * tick. Use this option with the `maxPadding` option to control the axis
     * start.
+    *
+    * This option is always disabled, when panning type is either `y` or `xy`.
     */
   var startOnTick: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Gantt) For vertical axes only. Setting the static scale ensures that
     * each tick unit is translated into a fixed pixel height. For example,
@@ -365,6 +436,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * will make the chart resize.
     */
   var staticScale: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The amount of ticks to draw on the axis.
     * This opens up for aligning the ticks of multiple charts or panes within a
@@ -374,12 +446,14 @@ trait ChartParallelAxesOptions extends js.Object {
     * category axes are not affected.
     */
   var tickAmount: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Color for the main tick marks.
     *
     * In styled mode, the stroke is given in the `.highcharts-tick` class.
     */
-  var tickColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
+  var tickColor: js.UndefOr[ColorType] = js.undefined
+  
   /**
     * (Highcharts) The interval of the tick marks in axis units. When
     * `undefined`, the tick interval is computed to approximately follow the
@@ -401,10 +475,12 @@ trait ChartParallelAxesOptions extends js.Object {
     * the `tickInterval` setting.
     */
   var tickInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The pixel length of the main tick marks.
     */
   var tickLength: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) If tickInterval is `null` this option sets the approximate
     * pixel interval of the tick marks. Not applicable to categorized axis.
@@ -413,11 +489,13 @@ trait ChartParallelAxesOptions extends js.Object {
     * by default prevents ticks from being denser than the data points.
     */
   var tickPixelInterval: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) The position of the major tick marks relative to the axis
     * line. Can be one of `inside` and `outside`.
     */
   var tickPosition: js.UndefOr[OptionsTickPositionValue] = js.undefined
+  
   /**
     * (Highcharts) A callback function returning array defining where the ticks
     * are laid out on the axis. This overrides the default behaviour of
@@ -426,16 +504,19 @@ trait ChartParallelAxesOptions extends js.Object {
     * callback.
     */
   var tickPositioner: js.UndefOr[AxisTickPositionerCallbackFunction] = js.undefined
+  
   /**
     * (Highcharts) An array defining where the ticks are laid out on the axis.
     * This overrides the default behaviour of tickPixelInterval and
     * tickInterval.
     */
   var tickPositions: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) The pixel width of the major tick marks.
     */
   var tickWidth: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts, Gantt) For categorized axes only. If `on` the tick mark is
     * placed in the center of the category, if `between` the tick mark is
@@ -443,12 +524,14 @@ trait ChartParallelAxesOptions extends js.Object {
     * is 1, else `on`.
     */
   var tickmarkPlacement: js.UndefOr[OptionsTickmarkPlacementValue] = js.undefined
+  
   /**
     * (Highcharts) Titles for yAxes are taken from xAxis.categories. All
     * options for `xAxis.labels` applies to parallel coordinates titles. For
     * example, to style categories, use xAxis.labels.style.
     */
   var title: js.UndefOr[ChartParallelAxesTitleOptions] = js.undefined
+  
   /**
     * (Highcharts) Parallel coordinates only. Format that will be used for
     * point.y and available in tooltip.pointFormat as `{point.formattedValue}`.
@@ -465,14 +548,16 @@ trait ChartParallelAxesOptions extends js.Object {
     * 4. If yAxis is linear/logarithmic type, then simple value will be used
     */
   var tooltipValueFormat: js.UndefOr[String] = js.undefined
+  
   /**
-    * (Highstock) The top position of the Y axis. If it's a number, it is
-    * interpreted as pixel position relative to the chart.
+    * (Highcharts, Highstock) The top position of the Y axis. If it's a number,
+    * it is interpreted as pixel position relative to the chart.
     *
-    * Since Highstock 2: If it's a percentage string, it is interpreted as
+    * Since Highcharts 2: If it's a percentage string, it is interpreted as
     * percentages of the plot height, offset from plot area top.
     */
   var top: js.UndefOr[Double | String] = js.undefined
+  
   /**
     * (Highcharts, Gantt) The type of axis. Can be one of `linear`,
     * `logarithmic`, `datetime`, `category` or `treegrid`. Defaults to
@@ -484,6 +569,7 @@ trait ChartParallelAxesOptions extends js.Object {
     * categories, if a categories array is not defined.
     */
   var `type`: js.UndefOr[AxisTypeValue] = js.undefined
+  
   /**
     * (Highcharts, Gantt) Applies only when the axis `type` is `category`. When
     * `uniqueNames` is true, points are placed on the X axis according to their
@@ -494,167 +580,346 @@ trait ChartParallelAxesOptions extends js.Object {
     * the name of the last point in each position.
     */
   var uniqueNames: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Datetime axis only. An array determining
     * what time intervals the ticks are allowed to fall on. Each array item is
     * an array where the first value is the time unit and the second value
-    * another array of allowed multiples. Defaults to:
+    * another array of allowed multiples.
     *
-    *  (see online documentation for example)
+    * Defaults to: (see online documentation for example)
     */
   var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Gantt) Whether axis, including axis title, line,
     * ticks and labels, should be visible.
     */
   var visible: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock) The width as the horizontal axis. If it's a
+    * number, it is interpreted as pixels.
+    *
+    * Since Highcharts v5.0.13: If it's a percentage string, it is interpreted
+    * as percentages of the total plot width.
+    */
+  var width: js.UndefOr[Double | String] = js.undefined
+  
+  /**
+    * (Highcharts) The Z index for the axis group.
+    */
+  var zIndex: js.UndefOr[Double] = js.undefined
+  
   /**
     * (Highcharts) Whether to zoom axis. If `chart.zoomType` is set, the option
     * allows to disable zooming on an individual axis.
     */
   var zoomEnabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object ChartParallelAxesOptions {
-  @scala.inline
-  def apply(
-    accessibility: js.Object | ChartParallelAxesAccessibilityOptions = null,
-    alignTicks: js.UndefOr[Boolean] = js.undefined,
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    categories: js.Array[String] = null,
-    ceiling: Int | Double = null,
-    className: String = null,
-    crosshair: Boolean | ChartParallelAxesCrosshairOptions = null,
-    dateTimeLabelFormats: ChartParallelAxesDateTimeLabelFormatsOptions = null,
-    endOnTick: js.UndefOr[Boolean] = js.undefined,
-    events: ChartParallelAxesEventsOptions = null,
-    floor: Int | Double = null,
-    grid: ChartParallelAxesGridOptions = null,
-    gridZIndex: Int | Double = null,
-    height: Double | String = null,
-    labels: ChartParallelAxesLabelsOptions = null,
-    lineColor: ColorString | GradientColorObject | PatternObject = null,
-    lineWidth: Int | Double = null,
-    linkedTo: Int | Double = null,
-    margin: Int | Double = null,
-    max: Int | Double = null,
-    maxLength: Double | String = null,
-    maxPadding: Int | Double = null,
-    maxRange: Int | Double = null,
-    min: Int | Double = null,
-    minLength: Double | String = null,
-    minPadding: Int | Double = null,
-    minRange: Int | Double = null,
-    minTickInterval: Int | Double = null,
-    minorTickColor: ColorString | GradientColorObject | PatternObject = null,
-    minorTickInterval: Double | String = null,
-    minorTickLength: Int | Double = null,
-    minorTickPosition: OptionsMinorTickPositionValue = null,
-    minorTickWidth: Int | Double = null,
-    minorTicks: js.UndefOr[Boolean] = js.undefined,
-    offset: Int | Double = null,
-    opposite: js.UndefOr[Boolean] = js.undefined,
-    pane: Int | Double = null,
-    range: Int | Double = null,
-    resize: ChartParallelAxesResizeOptions = null,
-    reversed: js.UndefOr[Boolean] = js.undefined,
-    reversedStacks: js.UndefOr[Boolean] = js.undefined,
-    showEmpty: js.UndefOr[Boolean] = js.undefined,
-    showFirstLabel: js.UndefOr[Boolean] = js.undefined,
-    showLastLabel: js.UndefOr[Boolean] = js.undefined,
-    softMax: Int | Double = null,
-    softMin: Int | Double = null,
-    startOfWeek: Int | Double = null,
-    startOnTick: js.UndefOr[Boolean] = js.undefined,
-    staticScale: Int | Double = null,
-    tickAmount: Int | Double = null,
-    tickColor: ColorString | GradientColorObject | PatternObject = null,
-    tickInterval: Int | Double = null,
-    tickLength: Int | Double = null,
-    tickPixelInterval: Int | Double = null,
-    tickPosition: OptionsTickPositionValue = null,
-    tickPositioner: AxisTickPositionerCallbackFunction = null,
-    tickPositions: js.Array[Double] = null,
-    tickWidth: Int | Double = null,
-    tickmarkPlacement: OptionsTickmarkPlacementValue = null,
-    title: ChartParallelAxesTitleOptions = null,
-    tooltipValueFormat: String = null,
-    top: Double | String = null,
-    `type`: AxisTypeValue = null,
-    uniqueNames: js.UndefOr[Boolean] = js.undefined,
-    units: js.Array[js.Tuple2[String, js.Array[Double] | Null]] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoomEnabled: js.UndefOr[Boolean] = js.undefined
-  ): ChartParallelAxesOptions = {
+  
+  inline def apply(): ChartParallelAxesOptions = {
     val __obj = js.Dynamic.literal()
-    if (accessibility != null) __obj.updateDynamic("accessibility")(accessibility.asInstanceOf[js.Any])
-    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks.asInstanceOf[js.Any])
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (ceiling != null) __obj.updateDynamic("ceiling")(ceiling.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (crosshair != null) __obj.updateDynamic("crosshair")(crosshair.asInstanceOf[js.Any])
-    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (floor != null) __obj.updateDynamic("floor")(floor.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (gridZIndex != null) __obj.updateDynamic("gridZIndex")(gridZIndex.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (labels != null) __obj.updateDynamic("labels")(labels.asInstanceOf[js.Any])
-    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (linkedTo != null) __obj.updateDynamic("linkedTo")(linkedTo.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
-    if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
-    if (maxRange != null) __obj.updateDynamic("maxRange")(maxRange.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
-    if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
-    if (minRange != null) __obj.updateDynamic("minRange")(minRange.asInstanceOf[js.Any])
-    if (minTickInterval != null) __obj.updateDynamic("minTickInterval")(minTickInterval.asInstanceOf[js.Any])
-    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
-    if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition.asInstanceOf[js.Any])
-    if (minorTickWidth != null) __obj.updateDynamic("minorTickWidth")(minorTickWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(minorTicks)) __obj.updateDynamic("minorTicks")(minorTicks.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (!js.isUndefined(opposite)) __obj.updateDynamic("opposite")(opposite.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (resize != null) __obj.updateDynamic("resize")(resize.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed.asInstanceOf[js.Any])
-    if (!js.isUndefined(reversedStacks)) __obj.updateDynamic("reversedStacks")(reversedStacks.asInstanceOf[js.Any])
-    if (!js.isUndefined(showEmpty)) __obj.updateDynamic("showEmpty")(showEmpty.asInstanceOf[js.Any])
-    if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel.asInstanceOf[js.Any])
-    if (!js.isUndefined(showLastLabel)) __obj.updateDynamic("showLastLabel")(showLastLabel.asInstanceOf[js.Any])
-    if (softMax != null) __obj.updateDynamic("softMax")(softMax.asInstanceOf[js.Any])
-    if (softMin != null) __obj.updateDynamic("softMin")(softMin.asInstanceOf[js.Any])
-    if (startOfWeek != null) __obj.updateDynamic("startOfWeek")(startOfWeek.asInstanceOf[js.Any])
-    if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick.asInstanceOf[js.Any])
-    if (staticScale != null) __obj.updateDynamic("staticScale")(staticScale.asInstanceOf[js.Any])
-    if (tickAmount != null) __obj.updateDynamic("tickAmount")(tickAmount.asInstanceOf[js.Any])
-    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
-    if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
-    if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
-    if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition.asInstanceOf[js.Any])
-    if (tickPositioner != null) __obj.updateDynamic("tickPositioner")(tickPositioner.asInstanceOf[js.Any])
-    if (tickPositions != null) __obj.updateDynamic("tickPositions")(tickPositions.asInstanceOf[js.Any])
-    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
-    if (tickmarkPlacement != null) __obj.updateDynamic("tickmarkPlacement")(tickmarkPlacement.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (tooltipValueFormat != null) __obj.updateDynamic("tooltipValueFormat")(tooltipValueFormat.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(uniqueNames)) __obj.updateDynamic("uniqueNames")(uniqueNames.asInstanceOf[js.Any])
-    if (units != null) __obj.updateDynamic("units")(units.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomEnabled)) __obj.updateDynamic("zoomEnabled")(zoomEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartParallelAxesOptions]
   }
+  
+  extension [Self <: ChartParallelAxesOptions](x: Self) {
+    
+    inline def setAccessibility(value: AxisAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    
+    inline def setAccessibilityUndefined: Self = StObject.set(x, "accessibility", js.undefined)
+    
+    inline def setAlignTicks(value: Boolean): Self = StObject.set(x, "alignTicks", value.asInstanceOf[js.Any])
+    
+    inline def setAlignTicksUndefined: Self = StObject.set(x, "alignTicks", js.undefined)
+    
+    inline def setAllowDecimals(value: Boolean): Self = StObject.set(x, "allowDecimals", value.asInstanceOf[js.Any])
+    
+    inline def setAllowDecimalsUndefined: Self = StObject.set(x, "allowDecimals", js.undefined)
+    
+    inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: String*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setCeiling(value: Double): Self = StObject.set(x, "ceiling", value.asInstanceOf[js.Any])
+    
+    inline def setCeilingUndefined: Self = StObject.set(x, "ceiling", js.undefined)
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setCrosshair(value: Boolean | AxisCrosshairOptions): Self = StObject.set(x, "crosshair", value.asInstanceOf[js.Any])
+    
+    inline def setCrosshairUndefined: Self = StObject.set(x, "crosshair", js.undefined)
+    
+    inline def setDateTimeLabelFormats(value: AxisDateTimeLabelFormatsOptions): Self = StObject.set(x, "dateTimeLabelFormats", value.asInstanceOf[js.Any])
+    
+    inline def setDateTimeLabelFormatsUndefined: Self = StObject.set(x, "dateTimeLabelFormats", js.undefined)
+    
+    inline def setEndOnTick(value: Boolean): Self = StObject.set(x, "endOnTick", value.asInstanceOf[js.Any])
+    
+    inline def setEndOnTickUndefined: Self = StObject.set(x, "endOnTick", js.undefined)
+    
+    inline def setEvents(value: ChartParallelAxesEventsOptions): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setFloor(value: Double): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+    
+    inline def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
+    
+    inline def setGrid(value: ChartParallelAxesGridOptions): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    
+    inline def setGridZIndex(value: Double): Self = StObject.set(x, "gridZIndex", value.asInstanceOf[js.Any])
+    
+    inline def setGridZIndexUndefined: Self = StObject.set(x, "gridZIndex", js.undefined)
+    
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setLabels(value: ChartParallelAxesLabelsOptions): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    
+    inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setLineColor(value: ColorType): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
+    
+    inline def setLineColorUndefined: Self = StObject.set(x, "lineColor", js.undefined)
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setLinkedTo(value: Double): Self = StObject.set(x, "linkedTo", value.asInstanceOf[js.Any])
+    
+    inline def setLinkedToUndefined: Self = StObject.set(x, "linkedTo", js.undefined)
+    
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLength(value: Double | String): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    
+    inline def setMaxNull: Self = StObject.set(x, "max", null)
+    
+    inline def setMaxPadding(value: Double): Self = StObject.set(x, "maxPadding", value.asInstanceOf[js.Any])
+    
+    inline def setMaxPaddingUndefined: Self = StObject.set(x, "maxPadding", js.undefined)
+    
+    inline def setMaxRange(value: Double): Self = StObject.set(x, "maxRange", value.asInstanceOf[js.Any])
+    
+    inline def setMaxRangeUndefined: Self = StObject.set(x, "maxRange", js.undefined)
+    
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setMinLength(value: Double | String): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    
+    inline def setMinNull: Self = StObject.set(x, "min", null)
+    
+    inline def setMinPadding(value: Double): Self = StObject.set(x, "minPadding", value.asInstanceOf[js.Any])
+    
+    inline def setMinPaddingUndefined: Self = StObject.set(x, "minPadding", js.undefined)
+    
+    inline def setMinRange(value: Double): Self = StObject.set(x, "minRange", value.asInstanceOf[js.Any])
+    
+    inline def setMinRangeUndefined: Self = StObject.set(x, "minRange", js.undefined)
+    
+    inline def setMinTickInterval(value: Double): Self = StObject.set(x, "minTickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setMinTickIntervalUndefined: Self = StObject.set(x, "minTickInterval", js.undefined)
+    
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    
+    inline def setMinorTickColor(value: ColorType): Self = StObject.set(x, "minorTickColor", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickColorUndefined: Self = StObject.set(x, "minorTickColor", js.undefined)
+    
+    inline def setMinorTickInterval(value: Double | String): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickIntervalNull: Self = StObject.set(x, "minorTickInterval", null)
+    
+    inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
+    
+    inline def setMinorTickLength(value: Double): Self = StObject.set(x, "minorTickLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickLengthUndefined: Self = StObject.set(x, "minorTickLength", js.undefined)
+    
+    inline def setMinorTickPosition(value: OptionsMinorTickPositionValue): Self = StObject.set(x, "minorTickPosition", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickPositionUndefined: Self = StObject.set(x, "minorTickPosition", js.undefined)
+    
+    inline def setMinorTickWidth(value: Double): Self = StObject.set(x, "minorTickWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickWidthUndefined: Self = StObject.set(x, "minorTickWidth", js.undefined)
+    
+    inline def setMinorTicks(value: Boolean): Self = StObject.set(x, "minorTicks", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTicksUndefined: Self = StObject.set(x, "minorTicks", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
+    
+    inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
+    
+    inline def setPane(value: Double): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    
+    inline def setPanningEnabled(value: Boolean): Self = StObject.set(x, "panningEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setPanningEnabledUndefined: Self = StObject.set(x, "panningEnabled", js.undefined)
+    
+    inline def setRange(value: Double): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    
+    inline def setResize(value: ChartParallelAxesResizeOptions): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    
+    inline def setReversedStacks(value: Boolean): Self = StObject.set(x, "reversedStacks", value.asInstanceOf[js.Any])
+    
+    inline def setReversedStacksUndefined: Self = StObject.set(x, "reversedStacks", js.undefined)
+    
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    
+    inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "showEmpty", value.asInstanceOf[js.Any])
+    
+    inline def setShowEmptyUndefined: Self = StObject.set(x, "showEmpty", js.undefined)
+    
+    inline def setShowFirstLabel(value: Boolean): Self = StObject.set(x, "showFirstLabel", value.asInstanceOf[js.Any])
+    
+    inline def setShowFirstLabelUndefined: Self = StObject.set(x, "showFirstLabel", js.undefined)
+    
+    inline def setShowLastLabel(value: Boolean): Self = StObject.set(x, "showLastLabel", value.asInstanceOf[js.Any])
+    
+    inline def setShowLastLabelUndefined: Self = StObject.set(x, "showLastLabel", js.undefined)
+    
+    inline def setSoftMax(value: Double): Self = StObject.set(x, "softMax", value.asInstanceOf[js.Any])
+    
+    inline def setSoftMaxUndefined: Self = StObject.set(x, "softMax", js.undefined)
+    
+    inline def setSoftMin(value: Double): Self = StObject.set(x, "softMin", value.asInstanceOf[js.Any])
+    
+    inline def setSoftMinUndefined: Self = StObject.set(x, "softMin", js.undefined)
+    
+    inline def setStartOfWeek(value: Double): Self = StObject.set(x, "startOfWeek", value.asInstanceOf[js.Any])
+    
+    inline def setStartOfWeekUndefined: Self = StObject.set(x, "startOfWeek", js.undefined)
+    
+    inline def setStartOnTick(value: Boolean): Self = StObject.set(x, "startOnTick", value.asInstanceOf[js.Any])
+    
+    inline def setStartOnTickUndefined: Self = StObject.set(x, "startOnTick", js.undefined)
+    
+    inline def setStaticScale(value: Double): Self = StObject.set(x, "staticScale", value.asInstanceOf[js.Any])
+    
+    inline def setStaticScaleUndefined: Self = StObject.set(x, "staticScale", js.undefined)
+    
+    inline def setTickAmount(value: Double): Self = StObject.set(x, "tickAmount", value.asInstanceOf[js.Any])
+    
+    inline def setTickAmountUndefined: Self = StObject.set(x, "tickAmount", js.undefined)
+    
+    inline def setTickColor(value: ColorType): Self = StObject.set(x, "tickColor", value.asInstanceOf[js.Any])
+    
+    inline def setTickColorUndefined: Self = StObject.set(x, "tickColor", js.undefined)
+    
+    inline def setTickInterval(value: Double): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
+    
+    inline def setTickLength(value: Double): Self = StObject.set(x, "tickLength", value.asInstanceOf[js.Any])
+    
+    inline def setTickLengthUndefined: Self = StObject.set(x, "tickLength", js.undefined)
+    
+    inline def setTickPixelInterval(value: Double): Self = StObject.set(x, "tickPixelInterval", value.asInstanceOf[js.Any])
+    
+    inline def setTickPixelIntervalUndefined: Self = StObject.set(x, "tickPixelInterval", js.undefined)
+    
+    inline def setTickPosition(value: OptionsTickPositionValue): Self = StObject.set(x, "tickPosition", value.asInstanceOf[js.Any])
+    
+    inline def setTickPositionUndefined: Self = StObject.set(x, "tickPosition", js.undefined)
+    
+    inline def setTickPositioner(value: AxisTickPositionerCallbackFunction): Self = StObject.set(x, "tickPositioner", value.asInstanceOf[js.Any])
+    
+    inline def setTickPositionerUndefined: Self = StObject.set(x, "tickPositioner", js.undefined)
+    
+    inline def setTickPositions(value: js.Array[Double]): Self = StObject.set(x, "tickPositions", value.asInstanceOf[js.Any])
+    
+    inline def setTickPositionsUndefined: Self = StObject.set(x, "tickPositions", js.undefined)
+    
+    inline def setTickPositionsVarargs(value: Double*): Self = StObject.set(x, "tickPositions", js.Array(value*))
+    
+    inline def setTickWidth(value: Double): Self = StObject.set(x, "tickWidth", value.asInstanceOf[js.Any])
+    
+    inline def setTickWidthUndefined: Self = StObject.set(x, "tickWidth", js.undefined)
+    
+    inline def setTickmarkPlacement(value: OptionsTickmarkPlacementValue): Self = StObject.set(x, "tickmarkPlacement", value.asInstanceOf[js.Any])
+    
+    inline def setTickmarkPlacementUndefined: Self = StObject.set(x, "tickmarkPlacement", js.undefined)
+    
+    inline def setTitle(value: ChartParallelAxesTitleOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setTooltipValueFormat(value: String): Self = StObject.set(x, "tooltipValueFormat", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipValueFormatUndefined: Self = StObject.set(x, "tooltipValueFormat", js.undefined)
+    
+    inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    
+    inline def setType(value: AxisTypeValue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setUniqueNames(value: Boolean): Self = StObject.set(x, "uniqueNames", value.asInstanceOf[js.Any])
+    
+    inline def setUniqueNamesUndefined: Self = StObject.set(x, "uniqueNames", js.undefined)
+    
+    inline def setUnits(value: js.Array[js.Tuple2[String, js.Array[Double] | Null]]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    
+    inline def setUnitsVarargs(value: (js.Tuple2[String, js.Array[Double] | Null])*): Self = StObject.set(x, "units", js.Array(value*))
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    
+    inline def setZoomEnabled(value: Boolean): Self = StObject.set(x, "zoomEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setZoomEnabledUndefined: Self = StObject.set(x, "zoomEnabled", js.undefined)
+  }
 }
-

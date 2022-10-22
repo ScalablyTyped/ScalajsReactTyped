@@ -1,14 +1,21 @@
 package typingsJapgolly.webpack.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webpack", "EnvironmentPlugin")
 @js.native
-class EnvironmentPlugin protected () extends Plugin {
-  def this(envs: js.Array[String]) = this()
-  def this(envs: StringDictionary[js.Any]) = this()
+open class EnvironmentPlugin protected () extends StObject {
+  def this(keys: Any*) = this()
+  
+  /**
+  	 * Apply the plugin
+  	 */
+  @JSName("apply")
+  def apply(compiler: Compiler): Unit = js.native
+  
+  var defaultValues: Any = js.native
+  
+  var keys: js.Array[Any] = js.native
 }
-

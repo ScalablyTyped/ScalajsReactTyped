@@ -1,23 +1,36 @@
 package typingsJapgolly.sequelize.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait json extends js.Object {
+trait json extends StObject {
+  
   var conditions: js.UndefOr[js.Object] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String | Double | Boolean] = js.undefined
 }
-
 object json {
-  @scala.inline
-  def apply(conditions: js.Object = null, path: String = null, value: String | Double | Boolean = null): json = {
+  
+  inline def apply(): json = {
     val __obj = js.Dynamic.literal()
-    if (conditions != null) __obj.updateDynamic("conditions")(conditions.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[json]
   }
+  
+  extension [Self <: json](x: Self) {
+    
+    inline def setConditions(value: js.Object): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    
+    inline def setConditionsUndefined: Self = StObject.set(x, "conditions", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setValue(value: String | Double | Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

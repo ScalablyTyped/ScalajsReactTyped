@@ -1,7 +1,7 @@
 
 # Scala.js typings for tslint
 
-Typings are for version 5.20.1
+Typings are for version 6.1.3
 
 ## Library description:
 An extensible static analysis linter for the TypeScript language
@@ -10,10 +10,10 @@ An extensible static analysis linter for the TypeScript language
 | ------------------ | :-------------: |
 | Full name          | tslint |
 | Keywords           | cli, typescript, linter |
-| # releases         | 19 |
-| # dependents       | 1813 |
-| # downloads        | 127929500 |
-| # stars            | 69 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1983655333333334E7 |
+| # stars            | 5908.0 |
 
 ## Links
 - [Homepage](https://palantir.github.io/tslint)

@@ -1,23 +1,24 @@
 package typingsJapgolly.calidation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValueValidatorConfig[T] extends SimpleValidatorConfig {
-  var value: T
+trait ValueValidatorConfig[P, T /* <: js.Object */]
+  extends StObject
+     with SimpleValidatorConfig[T] {
+  
+  var value: P
 }
-
 object ValueValidatorConfig {
-  @scala.inline
-  def apply[T](
-    message: String,
-    value: T,
-    validateIf: (js.Function1[/* context */ ValidatorContext, Boolean]) | Boolean = null
-  ): ValueValidatorConfig[T] = {
+  
+  inline def apply[P, T /* <: js.Object */](message: String, value: P): ValueValidatorConfig[P, T] = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    if (validateIf != null) __obj.updateDynamic("validateIf")(validateIf.asInstanceOf[js.Any])
-    __obj.asInstanceOf[ValueValidatorConfig[T]]
+    __obj.asInstanceOf[ValueValidatorConfig[P, T]]
+  }
+  
+  extension [Self <: ValueValidatorConfig[?, ?], P, T /* <: js.Object */](x: Self & (ValueValidatorConfig[P, T])) {
+    
+    inline def setValue(value: P): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }
-

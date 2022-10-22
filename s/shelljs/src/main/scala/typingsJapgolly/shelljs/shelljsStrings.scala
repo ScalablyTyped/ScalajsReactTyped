@@ -2,79 +2,85 @@ package typingsJapgolly.shelljs
 
 import typingsJapgolly.shelljs.mod.TestOptions
 import typingsJapgolly.shelljs.mod.TouchOptionsLiteral
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shelljsStrings {
-  @js.native
-  sealed trait `-L` extends TestOptions
   
   @js.native
-  sealed trait `-N` extends js.Object
+  sealed trait `-L`
+    extends StObject
+       with TestOptions
+  inline def `-L`: `-L` = "-L".asInstanceOf[`-L`]
   
   @js.native
-  sealed trait `-S` extends TestOptions
+  sealed trait `-N` extends StObject
+  inline def `-N`: `-N` = "-N".asInstanceOf[`-N`]
   
   @js.native
-  sealed trait `-a` extends TouchOptionsLiteral
+  sealed trait `-S`
+    extends StObject
+       with TestOptions
+  inline def `-S`: `-S` = "-S".asInstanceOf[`-S`]
   
   @js.native
-  sealed trait `-b` extends TestOptions
+  sealed trait `-a`
+    extends StObject
+       with TouchOptionsLiteral
+  inline def `-a`: `-a` = "-a".asInstanceOf[`-a`]
+  
+  @js.native
+  sealed trait `-b`
+    extends StObject
+       with TestOptions
+  inline def `-b`: `-b` = "-b".asInstanceOf[`-b`]
   
   @js.native
   sealed trait `-c`
-    extends TestOptions
+    extends StObject
+       with TestOptions
        with TouchOptionsLiteral
+  inline def `-c`: `-c` = "-c".asInstanceOf[`-c`]
   
   @js.native
   sealed trait `-d`
-    extends TestOptions
+    extends StObject
+       with TestOptions
        with TouchOptionsLiteral
+  inline def `-d`: `-d` = "-d".asInstanceOf[`-d`]
   
   @js.native
-  sealed trait `-e` extends TestOptions
+  sealed trait `-e`
+    extends StObject
+       with TestOptions
+  inline def `-e`: `-e` = "-e".asInstanceOf[`-e`]
   
   @js.native
-  sealed trait `-f` extends TestOptions
+  sealed trait `-f`
+    extends StObject
+       with TestOptions
+  inline def `-f`: `-f` = "-f".asInstanceOf[`-f`]
   
   @js.native
-  sealed trait `-m` extends TouchOptionsLiteral
+  sealed trait `-m`
+    extends StObject
+       with TouchOptionsLiteral
+  inline def `-m`: `-m` = "-m".asInstanceOf[`-m`]
   
   @js.native
-  sealed trait `-p` extends TestOptions
+  sealed trait `-p`
+    extends StObject
+       with TestOptions
+  inline def `-p`: `-p` = "-p".asInstanceOf[`-p`]
   
   @js.native
-  sealed trait `-r` extends TouchOptionsLiteral
+  sealed trait `-r`
+    extends StObject
+       with TouchOptionsLiteral
+  inline def `-r`: `-r` = "-r".asInstanceOf[`-r`]
   
   @js.native
-  sealed trait PlussignN extends js.Object
-  
-  @scala.inline
-  def `-L`: `-L` = "-L".asInstanceOf[`-L`]
-  @scala.inline
-  def `-N`: `-N` = "-N".asInstanceOf[`-N`]
-  @scala.inline
-  def `-S`: `-S` = "-S".asInstanceOf[`-S`]
-  @scala.inline
-  def `-a`: `-a` = "-a".asInstanceOf[`-a`]
-  @scala.inline
-  def `-b`: `-b` = "-b".asInstanceOf[`-b`]
-  @scala.inline
-  def `-c`: `-c` = "-c".asInstanceOf[`-c`]
-  @scala.inline
-  def `-d`: `-d` = "-d".asInstanceOf[`-d`]
-  @scala.inline
-  def `-e`: `-e` = "-e".asInstanceOf[`-e`]
-  @scala.inline
-  def `-f`: `-f` = "-f".asInstanceOf[`-f`]
-  @scala.inline
-  def `-m`: `-m` = "-m".asInstanceOf[`-m`]
-  @scala.inline
-  def `-p`: `-p` = "-p".asInstanceOf[`-p`]
-  @scala.inline
-  def `-r`: `-r` = "-r".asInstanceOf[`-r`]
-  @scala.inline
-  def PlussignN: PlussignN = "+N".asInstanceOf[PlussignN]
+  sealed trait PlussignN extends StObject
+  inline def PlussignN: PlussignN = "+N".asInstanceOf[PlussignN]
 }
-

@@ -1,37 +1,55 @@
 package typingsJapgolly.offlineJs
 
+import typingsJapgolly.offlineJs.anon.Delay
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OfflineOptions extends js.Object {
+trait OfflineOptions extends StObject {
+  
   // TODO Should these types be `boolean|Function`?
   // The project documentation is not clear here.
   var checkOnLoad: js.UndefOr[Boolean] = js.undefined
+  
   var checks: js.UndefOr[OfflineChecks] = js.undefined
+  
   var game: js.UndefOr[Boolean] = js.undefined
+  
   var interceptRequests: js.UndefOr[Boolean] = js.undefined
-  var reconnect: AnonDelay
+  
+  var reconnect: Delay
+  
   var requests: js.UndefOr[Boolean] = js.undefined
 }
-
 object OfflineOptions {
-  @scala.inline
-  def apply(
-    reconnect: AnonDelay,
-    checkOnLoad: js.UndefOr[Boolean] = js.undefined,
-    checks: OfflineChecks = null,
-    game: js.UndefOr[Boolean] = js.undefined,
-    interceptRequests: js.UndefOr[Boolean] = js.undefined,
-    requests: js.UndefOr[Boolean] = js.undefined
-  ): OfflineOptions = {
+  
+  inline def apply(reconnect: Delay): OfflineOptions = {
     val __obj = js.Dynamic.literal(reconnect = reconnect.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkOnLoad)) __obj.updateDynamic("checkOnLoad")(checkOnLoad.asInstanceOf[js.Any])
-    if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
-    if (!js.isUndefined(game)) __obj.updateDynamic("game")(game.asInstanceOf[js.Any])
-    if (!js.isUndefined(interceptRequests)) __obj.updateDynamic("interceptRequests")(interceptRequests.asInstanceOf[js.Any])
-    if (!js.isUndefined(requests)) __obj.updateDynamic("requests")(requests.asInstanceOf[js.Any])
     __obj.asInstanceOf[OfflineOptions]
   }
+  
+  extension [Self <: OfflineOptions](x: Self) {
+    
+    inline def setCheckOnLoad(value: Boolean): Self = StObject.set(x, "checkOnLoad", value.asInstanceOf[js.Any])
+    
+    inline def setCheckOnLoadUndefined: Self = StObject.set(x, "checkOnLoad", js.undefined)
+    
+    inline def setChecks(value: OfflineChecks): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    
+    inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+    
+    inline def setGame(value: Boolean): Self = StObject.set(x, "game", value.asInstanceOf[js.Any])
+    
+    inline def setGameUndefined: Self = StObject.set(x, "game", js.undefined)
+    
+    inline def setInterceptRequests(value: Boolean): Self = StObject.set(x, "interceptRequests", value.asInstanceOf[js.Any])
+    
+    inline def setInterceptRequestsUndefined: Self = StObject.set(x, "interceptRequests", js.undefined)
+    
+    inline def setReconnect(value: Delay): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
+    
+    inline def setRequests(value: Boolean): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+  }
 }
-

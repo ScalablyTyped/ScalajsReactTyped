@@ -1,30 +1,38 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RTCPeerConnectionIceEventInit extends EventInit {
-  var candidate: js.UndefOr[org.scalajs.dom.experimental.webrtc.RTCIceCandidate | Null] = js.undefined
+trait RTCPeerConnectionIceEventInit
+  extends StObject
+     with EventInit {
+  
+  /* standard dom */
+  var candidate: js.UndefOr[org.scalajs.dom.RTCIceCandidate | Null] = js.undefined
+  
+  /* standard dom */
   var url: js.UndefOr[java.lang.String | Null] = js.undefined
 }
-
 object RTCPeerConnectionIceEventInit {
-  @scala.inline
-  def apply(
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    candidate: org.scalajs.dom.experimental.webrtc.RTCIceCandidate = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    url: java.lang.String = null
-  ): RTCPeerConnectionIceEventInit = {
+  
+  inline def apply(): RTCPeerConnectionIceEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (candidate != null) __obj.updateDynamic("candidate")(candidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCPeerConnectionIceEventInit]
   }
+  
+  extension [Self <: RTCPeerConnectionIceEventInit](x: Self) {
+    
+    inline def setCandidate(value: org.scalajs.dom.RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
+    
+    inline def setCandidateNull: Self = StObject.set(x, "candidate", null)
+    
+    inline def setCandidateUndefined: Self = StObject.set(x, "candidate", js.undefined)
+    
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlNull: Self = StObject.set(x, "url", null)
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,29 +1,16 @@
 package typingsJapgolly.promiseAllsettled
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseAllsettledStrings {
-  @js.native
-  sealed trait PromiseResultTuple extends js.Object
   
   @js.native
-  sealed trait PromiseTuple extends js.Object
+  sealed trait fulfilled extends StObject
+  inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   
   @js.native
-  sealed trait fulfilled extends js.Object
-  
-  @js.native
-  sealed trait rejected extends js.Object
-  
-  @scala.inline
-  def PromiseResultTuple: PromiseResultTuple = "PromiseResultTuple".asInstanceOf[PromiseResultTuple]
-  @scala.inline
-  def PromiseTuple: PromiseTuple = "PromiseTuple".asInstanceOf[PromiseTuple]
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  sealed trait rejected extends StObject
+  inline def rejected: rejected = "rejected".asInstanceOf[rejected]
 }
-

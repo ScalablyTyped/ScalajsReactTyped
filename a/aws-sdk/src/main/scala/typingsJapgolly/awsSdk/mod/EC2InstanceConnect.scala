@@ -1,17 +1,16 @@
 package typingsJapgolly.awsSdk.mod
 
-import typingsJapgolly.awsSdk.ec2instanceconnectMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsEc2instanceconnectMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aws-sdk", "EC2InstanceConnect")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class EC2InstanceConnect ()
-  extends typingsJapgolly.awsSdk.allMod.EC2InstanceConnect {
+open class EC2InstanceConnect ()
+  extends typingsJapgolly.awsSdk.clientsAllMod.EC2InstanceConnect {
   def this(options: ClientConfiguration) = this()
 }
-

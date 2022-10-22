@@ -1,20 +1,23 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IShim extends js.Object {
-  def dispose(dummy: js.Any): Unit
+trait IShim extends StObject {
+  
+  def dispose(dummy: Any): Unit
 }
-
 object IShim {
-  @scala.inline
-  def apply(dispose: js.Any => Callback): IShim = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(js.Any.fromFunction1((t0: js.Any) => dispose(t0).runNow()))
+  
+  inline def apply(dispose: Any => Callback): IShim = {
+    val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction1((t0: Any) => dispose(t0).runNow()))
     __obj.asInstanceOf[IShim]
   }
+  
+  extension [Self <: IShim](x: Self) {
+    
+    inline def setDispose(value: Any => Callback): Self = StObject.set(x, "dispose", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

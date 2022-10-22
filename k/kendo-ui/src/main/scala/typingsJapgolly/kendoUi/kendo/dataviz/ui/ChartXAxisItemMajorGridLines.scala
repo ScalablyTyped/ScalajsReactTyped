@@ -1,36 +1,54 @@
 package typingsJapgolly.kendoUi.kendo.dataviz.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartXAxisItemMajorGridLines extends js.Object {
+trait ChartXAxisItemMajorGridLines extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
+  
   var dashType: js.UndefOr[String] = js.undefined
+  
   var skip: js.UndefOr[Double] = js.undefined
+  
   var step: js.UndefOr[Double] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ChartXAxisItemMajorGridLines {
-  @scala.inline
-  def apply(
-    color: String = null,
-    dashType: String = null,
-    skip: Int | Double = null,
-    step: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    width: Int | Double = null
-  ): ChartXAxisItemMajorGridLines = {
+  
+  inline def apply(): ChartXAxisItemMajorGridLines = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dashType != null) __obj.updateDynamic("dashType")(dashType.asInstanceOf[js.Any])
-    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
-    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartXAxisItemMajorGridLines]
   }
+  
+  extension [Self <: ChartXAxisItemMajorGridLines](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDashType(value: String): Self = StObject.set(x, "dashType", value.asInstanceOf[js.Any])
+    
+    inline def setDashTypeUndefined: Self = StObject.set(x, "dashType", js.undefined)
+    
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

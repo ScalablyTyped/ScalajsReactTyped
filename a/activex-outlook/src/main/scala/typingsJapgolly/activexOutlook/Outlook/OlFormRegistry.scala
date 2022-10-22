@@ -1,31 +1,27 @@
 package typingsJapgolly.activexOutlook.Outlook
 
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-import typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`2`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+import typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`0`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`3`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`4`
-  - typingsJapgolly.activexOutlook.activexOutlookNumbers.`2`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`0`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`3`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`4`
+  - typingsJapgolly.activexOutlook.activexOutlookInts.`2`
 */
-trait OlFormRegistry extends js.Object
-
+trait OlFormRegistry extends StObject
 object OlFormRegistry {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def olDefaultRegistry: `0` = this.cast(0)
-  @scala.inline
-  def olFolderRegistry: `3` = this.cast(3)
-  @scala.inline
-  def olOrganizationRegistry: `4` = this.cast(4)
-  @scala.inline
-  def olPersonalRegistry: `2` = this.cast(2)
+  
+  inline def olDefaultRegistry: `0` = 0.asInstanceOf[`0`]
+  
+  inline def olFolderRegistry: `3` = 3.asInstanceOf[`3`]
+  
+  inline def olOrganizationRegistry: `4` = 4.asInstanceOf[`4`]
+  
+  inline def olPersonalRegistry: `2` = 2.asInstanceOf[`2`]
 }
-

@@ -1,6 +1,7 @@
 
 # Scala.js typings for browser-resolve
 
+Typings are for version 2.0
 
 ## Library description:
 resolve which handles browser field support in package.json
@@ -10,14 +11,14 @@ resolve which handles browser field support in package.json
 | Full name          | browser-resolve |
 | Keywords           | resolve, browser |
 | # releases         | 2 |
-| # dependents       | 157 |
-| # downloads        | 221252903 |
-| # stars            | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 2.2925748333333332E7 |
+| # stars            | 98.0 |
 
 ## Links
-- [Homepage](https://github.com/shtylman/node-browser-resolve#readme)
-- [Bugs](https://github.com/shtylman/node-browser-resolve/issues)
-- [Repository](https://github.com/shtylman/node-browser-resolve)
+- [Homepage](https://github.com/browserify/browser-resolve#readme)
+- [Bugs](https://github.com/browserify/browser-resolve/issues)
+- [Repository](https://github.com/browserify/browser-resolve)
 - [Npm](https://www.npmjs.com/package/browser-resolve)
     
 

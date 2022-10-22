@@ -1,19 +1,24 @@
 package typingsJapgolly.kendoUi.kendo.dataviz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartPointOptions extends js.Object {
+trait ChartPointOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
 }
-
 object ChartPointOptions {
-  @scala.inline
-  def apply(name: String = null): ChartPointOptions = {
+  
+  inline def apply(): ChartPointOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartPointOptions]
   }
+  
+  extension [Self <: ChartPointOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

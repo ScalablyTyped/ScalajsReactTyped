@@ -1,13 +1,15 @@
 package typingsJapgolly.filterInvalidDomProps
 
 import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("filter-invalid-dom-props", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[T](props: T): Partial[T] = js.native
+object mod {
+  
+  @JSImport("filter-invalid-dom-props", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[T](props: T): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Partial[T]]
 }
-

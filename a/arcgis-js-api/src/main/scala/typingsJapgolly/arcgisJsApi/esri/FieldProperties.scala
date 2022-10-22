@@ -1,5 +1,7 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import typingsJapgolly.arcgisJsApi.anon.CodedValueDomainPropertie
+import typingsJapgolly.arcgisJsApi.anon.RangeDomainPropertiestype
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`count-or-amount`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`date-and-time`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`global-id`
@@ -20,142 +22,163 @@ import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.guid
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.integer
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.long
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.measurement
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.none_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.oid
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.raster
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.single
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.string_
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.xml
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldProperties extends js.Object {
+trait FieldProperties extends StObject {
+  
   /**
     * The display name for the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#alias)
     */
   var alias: js.UndefOr[String] = js.undefined
+  
   /**
     * The default value set for the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
-    *
     * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#defaultValue)
     */
-  var defaultValue: js.UndefOr[Double | String | js.Any] = js.undefined
+  var defaultValue: js.UndefOr[Double | String | Any] = js.undefined
+  
   /**
     * Contains information describing the purpose of each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#description)
     */
   var description: js.UndefOr[String] = js.undefined
+  
   /**
-    * The domain associated with the field. Domains are used to constrain the values allowed in a field. There are two types of domains: [RangeDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RangeDomain.html) and [CodedValueDomain](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-CodedValueDomain.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
+    * The domain associated with the field.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#domain)
     */
-  var domain: js.UndefOr[DomainProperties] = js.undefined
+  var domain: js.UndefOr[
+    CodedValueDomainPropertie | RangeDomainPropertiestype | typingsJapgolly.arcgisJsApi.anon.InheritedDomainProperties
+  ] = js.undefined
+  
   /**
     * Indicates whether the field is editable.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
-    *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#editable)
     */
   var editable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The field length.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
-    *
     * @default -1
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#length)
     */
   var length: js.UndefOr[Double] = js.undefined
+  
   /**
     * The name of the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#name)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-    * Indicates if the field can accept `null` values. *Requires ArcGIS Server version 10.1 or greater.*
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
+    * Indicates if the field can accept `null` values.
     *
     * @default true
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#nullable)
     */
   var nullable: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * The data type of the field.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
-    *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#type)
     */
   var `type`: js.UndefOr[
-    `small-integer` | integer | single | double | long | string | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    `small-integer` | integer | single | double | long | string_ | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
   ] = js.undefined
+  
   /**
-    * The types of values that can be assigned to a field. See the table below for a list of possible values.
-    *
-    * | Mode | Description |
-    * | ------|------------ |
-    * | name-or-title | Text that represents a name, title, label, or keyword for each feature. |
-    * | description | Text that provides a longer description of the feature, more than just a name or title. |
-    * | type-or-category | Types or categories that group features based on common characteristics. |
-    * | count-or-amount | Integers (no decimal) that represent how many or how much there is of a specific attribute. |
-    * | percentage-or-ratio | Number values in this field reflect the relationship between different quantities. |
-    * | measurement | A number that reflects a characteristic that you can precisely measure. |
-    * | unique-identifier | The values in this field are used to positively distinguish one feature or entity from another. |
-    * | ordered-or-ranked | The values in this field represent a feature's status in an ordered or ranked list. For example, a feature could be one of the following: `Small, medium, large`, `First, second, third, fourth`, or `Informational, warning, error, failure`.|
-    * | binary | Only one of two values are possible for each feature. Some examples include the following: `On or off`, `Yes or no`, `True or false`, or `Inhabited or vacant`. |
-    * | location-or-place-name | Values in this field represent a geographic location. Examples of values in such a field include a street address, city name, region, building name (such as A.K. Smiley Public Library), attraction name (such as Alameda County Fairgrounds or Cairngorms National Park), postal code, or country. |
-    * | coordinate | These fields store a geographic coordinate value such as x, y, z, latitude, or longitude. |
-    * | date-and-time | Values in this field store explicit dates and times or date references such as days of the week, months, or years. |
-    * | none | No specified type. |
-    *
+    * The types of values that can be assigned to a field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Field.html#valueType)
     */
   var valueType: js.UndefOr[
-    binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
+    binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
   ] = js.undefined
 }
-
 object FieldProperties {
-  @scala.inline
-  def apply(
-    alias: String = null,
-    defaultValue: Double | String | js.Any = null,
-    description: String = null,
-    domain: DomainProperties = null,
-    editable: js.UndefOr[Boolean] = js.undefined,
-    length: Int | Double = null,
-    name: String = null,
-    nullable: js.UndefOr[Boolean] = js.undefined,
-    `type`: `small-integer` | integer | single | double | long | string | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml = null,
-    valueType: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier` = null
-  ): FieldProperties = {
+  
+  inline def apply(): FieldProperties = {
     val __obj = js.Dynamic.literal()
-    if (alias != null) __obj.updateDynamic("alias")(alias.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
-    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldProperties]
   }
+  
+  extension [Self <: FieldProperties](x: Self) {
+    
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    
+    inline def setDefaultValue(value: Double | String | Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setDomain(
+      value: CodedValueDomainPropertie | RangeDomainPropertiestype | typingsJapgolly.arcgisJsApi.anon.InheritedDomainProperties
+    ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    
+    inline def setType(
+      value: `small-integer` | integer | single | double | long | string_ | date | oid | typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.geometry | blob | raster | guid | `global-id` | xml
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValueType(
+      value: binary | coordinate | `count-or-amount` | `date-and-time` | description | `location-or-place-name` | measurement | `name-or-title` | none_ | `ordered-or-ranked` | `percentage-or-ratio` | `type-or-category` | `unique-identifier`
+    ): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+  }
 }
-

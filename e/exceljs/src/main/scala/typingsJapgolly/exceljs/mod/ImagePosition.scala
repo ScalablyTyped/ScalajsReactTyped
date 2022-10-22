@@ -1,22 +1,28 @@
 package typingsJapgolly.exceljs.mod
 
-import typingsJapgolly.exceljs.AnonCol
-import typingsJapgolly.exceljs.AnonHeight
+import typingsJapgolly.exceljs.anon.Col
+import typingsJapgolly.exceljs.anon.Height
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImagePosition extends js.Object {
-  var ext: AnonHeight
-  var tl: AnonCol
-}
-
-object ImagePosition {
-  @scala.inline
-  def apply(ext: AnonHeight, tl: AnonCol): ImagePosition = {
-    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
+trait ImagePosition extends StObject {
   
+  var ext: Height
+  
+  var tl: Col
+}
+object ImagePosition {
+  
+  inline def apply(ext: Height, tl: Col): ImagePosition = {
+    val __obj = js.Dynamic.literal(ext = ext.asInstanceOf[js.Any], tl = tl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImagePosition]
   }
+  
+  extension [Self <: ImagePosition](x: Self) {
+    
+    inline def setExt(value: Height): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    
+    inline def setTl(value: Col): Self = StObject.set(x, "tl", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,31 +1,27 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`-4132`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`2`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`4`
+import typingsJapgolly.activexExcel.activexExcelInts.`-4132`
+import typingsJapgolly.activexExcel.activexExcelInts.`2`
+import typingsJapgolly.activexExcel.activexExcelInts.`3`
+import typingsJapgolly.activexExcel.activexExcelInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`4`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`3`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`-4132`
-  - typingsJapgolly.activexExcel.activexExcelNumbers.`2`
+  - typingsJapgolly.activexExcel.activexExcelInts.`4`
+  - typingsJapgolly.activexExcel.activexExcelInts.`3`
+  - typingsJapgolly.activexExcel.activexExcelInts.`-4132`
+  - typingsJapgolly.activexExcel.activexExcelInts.`2`
 */
-trait XlDataSeriesType extends js.Object
-
+trait XlDataSeriesType extends StObject
 object XlDataSeriesType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlAutoFill: `4` = this.cast(4)
-  @scala.inline
-  def xlChronological: `3` = this.cast(3)
-  @scala.inline
-  def xlDataSeriesLinear: `-4132` = this.cast(-4132)
-  @scala.inline
-  def xlGrowth: `2` = this.cast(2)
+  
+  inline def xlAutoFill: `4` = 4.asInstanceOf[`4`]
+  
+  inline def xlChronological: `3` = 3.asInstanceOf[`3`]
+  
+  inline def xlDataSeriesLinear: `-4132` = -4132.asInstanceOf[`-4132`]
+  
+  inline def xlGrowth: `2` = 2.asInstanceOf[`2`]
 }
-

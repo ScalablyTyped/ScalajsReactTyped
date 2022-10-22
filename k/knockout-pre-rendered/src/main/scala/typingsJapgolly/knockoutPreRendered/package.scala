@@ -1,9 +1,9 @@
-package typingsJapgolly
+package typingsJapgolly.knockoutPreRendered
 
+import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object knockoutPreRendered {
-  type KnockoutComputedFunctions[T] = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.knockoutPreRendered.KnockoutBindingHandler]
-}
+
+type KnockoutComputedFunctions[T] = StringDictionary[KnockoutBindingHandler]

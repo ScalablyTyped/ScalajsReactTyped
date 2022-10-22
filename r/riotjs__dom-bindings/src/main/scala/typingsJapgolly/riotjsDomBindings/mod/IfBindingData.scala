@@ -1,31 +1,25 @@
 package typingsJapgolly.riotjsDomBindings.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IfBindingData
-  extends BaseBindingData
-     with BindingData {
-  var template: TemplateChunk[_, _]
+trait IfBindingData[Scope]
+  extends StObject
+     with BaseBindingData[Scope]
+     with _BindingData[Scope] {
+  
+  var template: TemplateChunk[Scope, Any]
 }
-
 object IfBindingData {
-  @scala.inline
-  def apply(
-    template: TemplateChunk[_, _],
-    evaluate: /* scope */ js.Any => CallbackTo[js.Any] = null,
-    redundantAttribute: String = null,
-    selector: String = null,
-    `type`: BindingType = null
-  ): IfBindingData = {
+  
+  inline def apply[Scope](template: TemplateChunk[Scope, Any]): IfBindingData[Scope] = {
     val __obj = js.Dynamic.literal(template = template.asInstanceOf[js.Any])
-    if (evaluate != null) __obj.updateDynamic("evaluate")(js.Any.fromFunction1((t0: /* scope */ js.Any) => evaluate(t0).runNow()))
-    if (redundantAttribute != null) __obj.updateDynamic("redundantAttribute")(redundantAttribute.asInstanceOf[js.Any])
-    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[IfBindingData]
+    __obj.asInstanceOf[IfBindingData[Scope]]
+  }
+  
+  extension [Self <: IfBindingData[?], Scope](x: Self & IfBindingData[Scope]) {
+    
+    inline def setTemplate(value: TemplateChunk[Scope, Any]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
   }
 }
-

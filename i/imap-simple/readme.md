@@ -10,10 +10,10 @@ Wrapper over node-imap, providing a simpler api for common use cases
 | ------------------ | :-------------: |
 | Full name          | imap-simple |
 | Keywords           | imap, node-imap |
-| # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 441955 |
-| # stars            | 13 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 234686.0 |
+| # stars            | 227.0 |
 
 ## Links
 - [Homepage](https://github.com/chadxz/imap-simple#readme)

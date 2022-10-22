@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OnBLEConnectionStateChangeSuccess extends js.Object {
+trait OnBLEConnectionStateChangeSuccess extends StObject {
+  
   /**
     * 连接目前的状态
     */
   var connected: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * 蓝牙设备 id，参考 device 对象
     */
   var deviceId: js.UndefOr[String] = js.undefined
 }
-
 object OnBLEConnectionStateChangeSuccess {
-  @scala.inline
-  def apply(connected: js.UndefOr[Boolean] = js.undefined, deviceId: String = null): OnBLEConnectionStateChangeSuccess = {
+  
+  inline def apply(): OnBLEConnectionStateChangeSuccess = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(connected)) __obj.updateDynamic("connected")(connected.asInstanceOf[js.Any])
-    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBLEConnectionStateChangeSuccess]
   }
+  
+  extension [Self <: OnBLEConnectionStateChangeSuccess](x: Self) {
+    
+    inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+    
+    inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+    
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+  }
 }
-

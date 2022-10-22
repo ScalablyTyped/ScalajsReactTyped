@@ -1,22 +1,25 @@
 package typingsJapgolly.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNative.AnonX
-import typingsJapgolly.reactNative.AnonY
+import typingsJapgolly.reactNative.anon.TranslateX
+import typingsJapgolly.reactNative.anon.TranslateY
+import typingsJapgolly.reactNative.anon.X
+import typingsJapgolly.reactNative.anon.Y
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native", "Animated.ValueXY")
 @js.native
-class ValueXY ()
-  extends typingsJapgolly.reactNative.mod.Animated.Animated {
-  def this(valueIn: AnonY) = this()
-  var x: AnimatedValue = js.native
-  var y: AnimatedValue = js.native
-  def addListener(callback: ValueXYListenerCallback): String = js.native
+open class ValueXY () extends AnimatedWithChildren {
+  def this(valueIn: Y) = this()
+  def this(valueIn: Unit, config: AnimatedConfig) = this()
+  def this(valueIn: Y, config: AnimatedConfig) = this()
+  
   def extractOffset(): Unit = js.native
+  
   def flattenOffset(): Unit = js.native
+  
   /**
     * Converts `{x, y}` into `{left, top}` for use in style, e.g.
     *
@@ -25,6 +28,7 @@ class ValueXY ()
     *```
     */
   def getLayout(): StringDictionary[AnimatedValue] = js.native
+  
   /**
     * Converts `{x, y}` into a useable translation transform, e.g.
     *
@@ -34,11 +38,16 @@ class ValueXY ()
     *  }}
     *```
     */
-  def getTranslateTransform(): js.Array[StringDictionary[AnimatedValue]] = js.native
-  def removeListener(id: String): Unit = js.native
-  def setOffset(offset: AnonX): Unit = js.native
-  def setValue(value: AnonX): Unit = js.native
+  def getTranslateTransform(): js.Tuple2[TranslateX, TranslateY] = js.native
+  
+  def setOffset(offset: X): Unit = js.native
+  
+  def setValue(value: X): Unit = js.native
+  
   def stopAnimation(): Unit = js.native
-  def stopAnimation(callback: js.Function1[/* value */ AnonX, Unit]): Unit = js.native
+  def stopAnimation(callback: js.Function1[/* value */ X, Unit]): Unit = js.native
+  
+  var x: AnimatedValue = js.native
+  
+  var y: AnimatedValue = js.native
 }
-

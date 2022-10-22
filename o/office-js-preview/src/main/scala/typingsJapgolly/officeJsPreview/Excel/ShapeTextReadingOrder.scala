@@ -1,35 +1,36 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ShapeTextReadingOrder extends js.Object
-
+sealed trait ShapeTextReadingOrder extends StObject
 /**
-  *
   * Specifies the reading order for the text frame in a shape.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
 @JSGlobal("Excel.ShapeTextReadingOrder")
 @js.native
-object ShapeTextReadingOrder extends js.Object {
+object ShapeTextReadingOrder extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait leftToRight extends ShapeTextReadingOrder
+  sealed trait leftToRight
+    extends StObject
+       with ShapeTextReadingOrder
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.9]
+    */
   @js.native
-  sealed trait rightToLeft extends ShapeTextReadingOrder
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ShapeTextReadingOrder with String] = js.native
-  /* "LeftToRight" */ @js.native
-  object leftToRight extends TopLevel[leftToRight with String]
-  
-  /* "RightToLeft" */ @js.native
-  object rightToLeft extends TopLevel[rightToLeft with String]
-  
+  sealed trait rightToLeft
+    extends StObject
+       with ShapeTextReadingOrder
 }
-

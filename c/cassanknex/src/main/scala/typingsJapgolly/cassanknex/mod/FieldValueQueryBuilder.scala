@@ -1,35 +1,48 @@
 package typingsJapgolly.cassanknex.mod
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.cassandraDriver.mod.types.BigDecimal
 import typingsJapgolly.cassandraDriver.mod.types.InetAddress
 import typingsJapgolly.cassandraDriver.mod.types.LocalDate
 import typingsJapgolly.cassandraDriver.mod.types.TimeUuid
 import typingsJapgolly.cassandraDriver.mod.types.Uuid
-import typingsJapgolly.long.mod.Long
-import typingsJapgolly.node.Buffer
+import typingsJapgolly.node.bufferMod.global.Buffer
 import typingsJapgolly.std.Map
 import typingsJapgolly.std.Set
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FieldValueQueryBuilder[T] extends js.Object {
-  def ascii[K /* <: String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
-  def bigint[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Long, this.type]
-  def blob[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Buffer, this.type]
-  def boolean[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Boolean, this.type]
-  def counter[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Long, this.type]
-  def date[K /* <: String */](columnName: K): TypeMatchedValue[T, K, LocalDate, this.type]
-  def decimal[K /* <: String */](columnName: K): TypeMatchedValue[T, K, BigDecimal, this.type]
-  def double[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Long, this.type]
-  def float[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
-  def inet[K /* <: String */](columnName: K): TypeMatchedValue[T, K, InetAddress, this.type]
-  def int[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
-  def list[K /* <: String */](columnName: K, typeName: String): TypeMatchedValue[T, K, js.Array[_], this.type]
-  def map[K /* <: String */, A /* <: String */, B](columnName: K, a: A, b: B): TypeMatchedValue[T, K, Map[A, B], this.type]
-  def primary(primaryKey: String): this.type
-  def set[K /* <: String */, A /* <: String */](columnName: K, a: A): TypeMatchedValue[
+trait FieldValueQueryBuilder[T] extends StObject {
+  
+  def ascii[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
+  
+  def bigint[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typingsJapgolly.long.mod.^, this.type]
+  
+  def blob[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Buffer, this.type]
+  
+  def boolean[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Boolean, this.type]
+  
+  def counter[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typingsJapgolly.long.mod.^, this.type]
+  
+  def date[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, LocalDate, this.type]
+  
+  def decimal[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, BigDecimal, this.type]
+  
+  def double[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, typingsJapgolly.long.mod.^, this.type]
+  
+  def float[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
+  
+  def inet[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, InetAddress, this.type]
+  
+  def int[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Double, this.type]
+  
+  def list[K /* <: /* keyof T */ String */](columnName: K, typeName: String): TypeMatchedValue[T, K, js.Array[Any], this.type]
+  
+  def map[K /* <: /* keyof T */ String */, A /* <: String */, B](columnName: K, a: A, b: B): TypeMatchedValue[T, K, Map[A, B], this.type]
+  
+  def primary(primaryKeys: (String | js.Array[String])*): this.type
+  
+  def set[K /* <: /* keyof T */ String */, A /* <: String */](columnName: K, a: A): TypeMatchedValue[
     T, 
     K, 
     Set[
@@ -37,68 +50,101 @@ trait FieldValueQueryBuilder[T] extends js.Object {
     ], 
     this.type
   ]
-  def text[K /* <: String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
-  def timestamp[K /* <: String */](columnName: K): TypeMatchedValue[T, K, js.Date, this.type]
-  def timeuuid[K /* <: String */](columnName: K): TypeMatchedValue[T, K, TimeUuid, this.type]
-  def uuid[K /* <: String */](columnName: K): TypeMatchedValue[T, K, Uuid, this.type]
-  def varchar[K /* <: String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
+  
+  def text[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
+  
+  def timestamp[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, js.Date, this.type]
+  
+  def timeuuid[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, TimeUuid, this.type]
+  
+  def uuid[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, Uuid, this.type]
+  
+  def varchar[K /* <: /* keyof T */ String */](columnName: K): TypeMatchedValue[T, K, String, this.type]
 }
-
 object FieldValueQueryBuilder {
-  @scala.inline
-  def apply[T](
-    ascii: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]],
-    bigint: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]],
-    blob: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Buffer, FieldValueQueryBuilder[T]]],
-    boolean: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Boolean, FieldValueQueryBuilder[T]]],
-    counter: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]],
-    date: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, LocalDate, FieldValueQueryBuilder[T]]],
-    decimal: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, BigDecimal, FieldValueQueryBuilder[T]]],
-    double: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Long, FieldValueQueryBuilder[T]]],
-    float: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]],
-    inet: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, InetAddress, FieldValueQueryBuilder[T]]],
-    int: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Double, FieldValueQueryBuilder[T]]],
-    list: (js.Any, String) => CallbackTo[TypeMatchedValue[T, js.Any, js.Array[js.Any], FieldValueQueryBuilder[T]]],
-    map: (js.Any, js.Any, js.Any) => CallbackTo[TypeMatchedValue[T, js.Any, Map[js.Any, js.Any], FieldValueQueryBuilder[T]]],
-    primary: String => CallbackTo[FieldValueQueryBuilder[T]],
-    set: (js.Any, js.Any) => CallbackTo[
-      TypeMatchedValue[
-        T, 
-        js.Any, 
-        Set[
-          /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-        ], 
-        FieldValueQueryBuilder[T]
-      ]
+  
+  inline def apply[T](
+    ascii: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]],
+    bigint: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]],
+    blob: Any => TypeMatchedValue[T, Any, Buffer, FieldValueQueryBuilder[T]],
+    boolean: Any => TypeMatchedValue[T, Any, Boolean, FieldValueQueryBuilder[T]],
+    counter: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]],
+    date: Any => TypeMatchedValue[T, Any, LocalDate, FieldValueQueryBuilder[T]],
+    decimal: Any => TypeMatchedValue[T, Any, BigDecimal, FieldValueQueryBuilder[T]],
+    double: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]],
+    float: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]],
+    inet: Any => TypeMatchedValue[T, Any, InetAddress, FieldValueQueryBuilder[T]],
+    int: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]],
+    list: (Any, String) => TypeMatchedValue[T, Any, js.Array[Any], FieldValueQueryBuilder[T]],
+    map: (Any, Any, Any) => TypeMatchedValue[T, Any, Map[Any, Any], FieldValueQueryBuilder[T]],
+    primary: /* repeated */ String | js.Array[String] => FieldValueQueryBuilder[T],
+    set: (Any, Any) => TypeMatchedValue[
+      T, 
+      Any, 
+      Set[
+        /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+      ], 
+      FieldValueQueryBuilder[T]
     ],
-    text: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]],
-    timestamp: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, js.Date, FieldValueQueryBuilder[T]]],
-    timeuuid: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, TimeUuid, FieldValueQueryBuilder[T]]],
-    uuid: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, Uuid, FieldValueQueryBuilder[T]]],
-    varchar: js.Any => CallbackTo[TypeMatchedValue[T, js.Any, String, FieldValueQueryBuilder[T]]]
+    text: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]],
+    timestamp: Any => TypeMatchedValue[T, Any, js.Date, FieldValueQueryBuilder[T]],
+    timeuuid: Any => TypeMatchedValue[T, Any, TimeUuid, FieldValueQueryBuilder[T]],
+    uuid: Any => TypeMatchedValue[T, Any, Uuid, FieldValueQueryBuilder[T]],
+    varchar: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]
   ): FieldValueQueryBuilder[T] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("ascii")(js.Any.fromFunction1((t0: js.Any) => ascii(t0).runNow()))
-    __obj.updateDynamic("bigint")(js.Any.fromFunction1((t0: js.Any) => bigint(t0).runNow()))
-    __obj.updateDynamic("blob")(js.Any.fromFunction1((t0: js.Any) => blob(t0).runNow()))
-    __obj.updateDynamic("boolean")(js.Any.fromFunction1((t0: js.Any) => boolean(t0).runNow()))
-    __obj.updateDynamic("counter")(js.Any.fromFunction1((t0: js.Any) => counter(t0).runNow()))
-    __obj.updateDynamic("date")(js.Any.fromFunction1((t0: js.Any) => date(t0).runNow()))
-    __obj.updateDynamic("decimal")(js.Any.fromFunction1((t0: js.Any) => decimal(t0).runNow()))
-    __obj.updateDynamic("double")(js.Any.fromFunction1((t0: js.Any) => double(t0).runNow()))
-    __obj.updateDynamic("float")(js.Any.fromFunction1((t0: js.Any) => float(t0).runNow()))
-    __obj.updateDynamic("inet")(js.Any.fromFunction1((t0: js.Any) => inet(t0).runNow()))
-    __obj.updateDynamic("int")(js.Any.fromFunction1((t0: js.Any) => int(t0).runNow()))
-    __obj.updateDynamic("list")(js.Any.fromFunction2((t0: js.Any, t1: java.lang.String) => list(t0, t1).runNow()))
-    __obj.updateDynamic("map")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: js.Any) => map(t0, t1, t2).runNow()))
-    __obj.updateDynamic("primary")(js.Any.fromFunction1((t0: java.lang.String) => primary(t0).runNow()))
-    __obj.updateDynamic("set")(js.Any.fromFunction2((t0: js.Any, t1: js.Any) => set(t0, t1).runNow()))
-    __obj.updateDynamic("text")(js.Any.fromFunction1((t0: js.Any) => text(t0).runNow()))
-    __obj.updateDynamic("timestamp")(js.Any.fromFunction1((t0: js.Any) => timestamp(t0).runNow()))
-    __obj.updateDynamic("timeuuid")(js.Any.fromFunction1((t0: js.Any) => timeuuid(t0).runNow()))
-    __obj.updateDynamic("uuid")(js.Any.fromFunction1((t0: js.Any) => uuid(t0).runNow()))
-    __obj.updateDynamic("varchar")(js.Any.fromFunction1((t0: js.Any) => varchar(t0).runNow()))
+    val __obj = js.Dynamic.literal(ascii = js.Any.fromFunction1(ascii), bigint = js.Any.fromFunction1(bigint), blob = js.Any.fromFunction1(blob), boolean = js.Any.fromFunction1(boolean), counter = js.Any.fromFunction1(counter), date = js.Any.fromFunction1(date), decimal = js.Any.fromFunction1(decimal), double = js.Any.fromFunction1(double), float = js.Any.fromFunction1(float), inet = js.Any.fromFunction1(inet), int = js.Any.fromFunction1(int), list = js.Any.fromFunction2(list), map = js.Any.fromFunction3(map), primary = js.Any.fromFunction1(primary), set = js.Any.fromFunction2(set), text = js.Any.fromFunction1(text), timestamp = js.Any.fromFunction1(timestamp), timeuuid = js.Any.fromFunction1(timeuuid), uuid = js.Any.fromFunction1(uuid), varchar = js.Any.fromFunction1(varchar))
     __obj.asInstanceOf[FieldValueQueryBuilder[T]]
   }
+  
+  extension [Self <: FieldValueQueryBuilder[?], T](x: Self & FieldValueQueryBuilder[T]) {
+    
+    inline def setAscii(value: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "ascii", js.Any.fromFunction1(value))
+    
+    inline def setBigint(value: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "bigint", js.Any.fromFunction1(value))
+    
+    inline def setBlob(value: Any => TypeMatchedValue[T, Any, Buffer, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "blob", js.Any.fromFunction1(value))
+    
+    inline def setBoolean(value: Any => TypeMatchedValue[T, Any, Boolean, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "boolean", js.Any.fromFunction1(value))
+    
+    inline def setCounter(value: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "counter", js.Any.fromFunction1(value))
+    
+    inline def setDate(value: Any => TypeMatchedValue[T, Any, LocalDate, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "date", js.Any.fromFunction1(value))
+    
+    inline def setDecimal(value: Any => TypeMatchedValue[T, Any, BigDecimal, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "decimal", js.Any.fromFunction1(value))
+    
+    inline def setDouble(value: Any => TypeMatchedValue[T, Any, typingsJapgolly.long.mod.^, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "double", js.Any.fromFunction1(value))
+    
+    inline def setFloat(value: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "float", js.Any.fromFunction1(value))
+    
+    inline def setInet(value: Any => TypeMatchedValue[T, Any, InetAddress, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "inet", js.Any.fromFunction1(value))
+    
+    inline def setInt(value: Any => TypeMatchedValue[T, Any, Double, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "int", js.Any.fromFunction1(value))
+    
+    inline def setList(value: (Any, String) => TypeMatchedValue[T, Any, js.Array[Any], FieldValueQueryBuilder[T]]): Self = StObject.set(x, "list", js.Any.fromFunction2(value))
+    
+    inline def setMap(value: (Any, Any, Any) => TypeMatchedValue[T, Any, Map[Any, Any], FieldValueQueryBuilder[T]]): Self = StObject.set(x, "map", js.Any.fromFunction3(value))
+    
+    inline def setPrimary(value: /* repeated */ String | js.Array[String] => FieldValueQueryBuilder[T]): Self = StObject.set(x, "primary", js.Any.fromFunction1(value))
+    
+    inline def setSet(
+      value: (Any, Any) => TypeMatchedValue[
+          T, 
+          Any, 
+          Set[
+            /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+          ], 
+          FieldValueQueryBuilder[T]
+        ]
+    ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    
+    inline def setText(value: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    
+    inline def setTimestamp(value: Any => TypeMatchedValue[T, Any, js.Date, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "timestamp", js.Any.fromFunction1(value))
+    
+    inline def setTimeuuid(value: Any => TypeMatchedValue[T, Any, TimeUuid, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "timeuuid", js.Any.fromFunction1(value))
+    
+    inline def setUuid(value: Any => TypeMatchedValue[T, Any, Uuid, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "uuid", js.Any.fromFunction1(value))
+    
+    inline def setVarchar(value: Any => TypeMatchedValue[T, Any, String, FieldValueQueryBuilder[T]]): Self = StObject.set(x, "varchar", js.Any.fromFunction1(value))
+  }
 }
-

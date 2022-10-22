@@ -1,39 +1,43 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Events that occur due to the user interacting with a pointing device (such as a mouse). Common events using this interface include click, dblclick, mouseup, mousedown. */
 @js.native
-trait MouseEvent extends UIEvent {
+trait MouseEvent
+  extends StObject
+     with UIEvent {
+  
+  /* standard dom */
   val altKey: scala.Boolean = js.native
+  
+  /* standard dom */
   val button: Double = js.native
+  
+  /* standard dom */
   val buttons: Double = js.native
+  
+  /* standard dom */
   val clientX: Double = js.native
+  
+  /* standard dom */
   val clientY: Double = js.native
+  
+  /* standard dom */
   val ctrlKey: scala.Boolean = js.native
-  val metaKey: scala.Boolean = js.native
-  val movementX: Double = js.native
-  val movementY: Double = js.native
-  val offsetX: Double = js.native
-  val offsetY: Double = js.native
-  val pageX: Double = js.native
-  val pageY: Double = js.native
-  val relatedTarget: org.scalajs.dom.raw.EventTarget | Null = js.native
-  val screenX: Double = js.native
-  val screenY: Double = js.native
-  val shiftKey: scala.Boolean = js.native
-  val x: Double = js.native
-  val y: Double = js.native
+  
+  /* standard dom */
   def getModifierState(keyArg: java.lang.String): scala.Boolean = js.native
+  
+  /** @deprecated */
+  /* standard dom */
   def initMouseEvent(
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window_,
+    viewArg: org.scalajs.dom.Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,
@@ -49,7 +53,7 @@ trait MouseEvent extends UIEvent {
     typeArg: java.lang.String,
     canBubbleArg: scala.Boolean,
     cancelableArg: scala.Boolean,
-    viewArg: Window_,
+    viewArg: org.scalajs.dom.Window,
     detailArg: Double,
     screenXArg: Double,
     screenYArg: Double,
@@ -60,13 +64,45 @@ trait MouseEvent extends UIEvent {
     shiftKeyArg: scala.Boolean,
     metaKeyArg: scala.Boolean,
     buttonArg: Double,
-    relatedTargetArg: org.scalajs.dom.raw.EventTarget
+    relatedTargetArg: org.scalajs.dom.EventTarget
   ): Unit = js.native
+  
+  /* standard dom */
+  val metaKey: scala.Boolean = js.native
+  
+  /* standard dom */
+  val movementX: Double = js.native
+  
+  /* standard dom */
+  val movementY: Double = js.native
+  
+  /* standard dom */
+  val offsetX: Double = js.native
+  
+  /* standard dom */
+  val offsetY: Double = js.native
+  
+  /* standard dom */
+  val pageX: Double = js.native
+  
+  /* standard dom */
+  val pageY: Double = js.native
+  
+  /* standard dom */
+  val relatedTarget: org.scalajs.dom.EventTarget | Null = js.native
+  
+  /* standard dom */
+  val screenX: Double = js.native
+  
+  /* standard dom */
+  val screenY: Double = js.native
+  
+  /* standard dom */
+  val shiftKey: scala.Boolean = js.native
+  
+  /* standard dom */
+  val x: Double = js.native
+  
+  /* standard dom */
+  val y: Double = js.native
 }
-
-@JSGlobal("MouseEvent")
-@js.native
-object MouseEvent
-  extends Instantiable1[/* type */ java.lang.String, MouseEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ MouseEventInit, MouseEvent]
-

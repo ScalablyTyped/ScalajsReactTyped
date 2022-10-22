@@ -1,10 +1,13 @@
-package typingsJapgolly
+package typingsJapgolly.lodash
 
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object lodash {
-  // tslint:disable-next-line:strict-export-declare-modifiers
-  type GlobalPartial[T] = typingsJapgolly.std.Partial[T]
-}
+
+// tslint:disable-next-line:strict-export-declare-modifiers
+type GlobalFunction = js.Function
+
+// tslint:disable-next-line:strict-export-declare-modifiers
+type GlobalPartial[T] = Partial[T]

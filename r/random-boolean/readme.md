@@ -11,9 +11,9 @@ Get a random boolean
 | Full name          | random-boolean |
 | Keywords           | random, bool, boolean, true, false |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2848 |
-| # stars            | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 289.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/arthurvr/random-boolean#readme)

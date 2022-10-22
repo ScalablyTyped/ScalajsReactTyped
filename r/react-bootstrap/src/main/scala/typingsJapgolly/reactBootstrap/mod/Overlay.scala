@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.overlayMod.OverlayProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Overlay")
 @js.native
-class Overlay ()
-  extends Component[OverlayProps, js.Object, js.Any]
-
+open class Overlay ()
+  extends typingsJapgolly.reactBootstrap.libMod.Overlay

@@ -10,10 +10,10 @@ Recursively iterates over specified directory, require()'ing each file, and retu
 | ------------------ | :-------------: |
 | Full name          | require-directory |
 | Keywords           | require, directory, library, recursive |
-| # releases         | 1 |
-| # dependents       | 310 |
-| # downloads        | 391806869 |
-| # stars            | 35 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 1.13991268E8 |
+| # stars            | 392.0 |
 
 ## Links
 - [Homepage](https://github.com/troygoode/node-require-directory/)

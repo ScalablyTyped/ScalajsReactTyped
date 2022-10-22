@@ -1,21 +1,30 @@
 package typingsJapgolly.datatablesNetButtons.DataTables
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonDomButtomCommon extends js.Object {
+trait ButtonDomButtomCommon extends StObject {
+  
   var className: js.UndefOr[String] = js.undefined
+  
   var tag: js.UndefOr[String] = js.undefined
 }
-
 object ButtonDomButtomCommon {
-  @scala.inline
-  def apply(className: String = null, tag: String = null): ButtonDomButtomCommon = {
+  
+  inline def apply(): ButtonDomButtomCommon = {
     val __obj = js.Dynamic.literal()
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonDomButtomCommon]
   }
+  
+  extension [Self <: ButtonDomButtomCommon](x: Self) {
+    
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+  }
 }
-

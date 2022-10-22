@@ -1,23 +1,14 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaStreamAudioDestinationNode extends AudioNode {
-  val stream: org.scalajs.dom.experimental.mediastream.MediaStream = js.native
+trait MediaStreamAudioDestinationNode
+  extends StObject
+     with AudioNode {
+  
+  /* standard dom */
+  val stream: org.scalajs.dom.MediaStream = js.native
 }
-
-@JSGlobal("MediaStreamAudioDestinationNode")
-@js.native
-object MediaStreamAudioDestinationNode
-  extends Instantiable1[/* context */ AudioContext, MediaStreamAudioDestinationNode]
-     with Instantiable2[
-      /* context */ AudioContext, 
-      /* options */ AudioNodeOptions, 
-      MediaStreamAudioDestinationNode
-    ]
-

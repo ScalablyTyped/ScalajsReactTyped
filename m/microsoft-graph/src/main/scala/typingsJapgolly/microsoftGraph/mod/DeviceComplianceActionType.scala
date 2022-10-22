@@ -1,8 +1,8 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.noAction
@@ -13,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.pushNotification
 */
-trait DeviceComplianceActionType extends js.Object
-
+trait DeviceComplianceActionType extends StObject
 object DeviceComplianceActionType {
-  @scala.inline
-  def block: typingsJapgolly.microsoftGraph.microsoftGraphStrings.block = this.cast("block")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def noAction: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noAction = this.cast("noAction")
-  @scala.inline
-  def notification: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notification = this.cast("notification")
-  @scala.inline
-  def pushNotification: typingsJapgolly.microsoftGraph.microsoftGraphStrings.pushNotification = this.cast("pushNotification")
-  @scala.inline
-  def removeResourceAccessProfiles: typingsJapgolly.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles = this.cast("removeResourceAccessProfiles")
-  @scala.inline
-  def retire: typingsJapgolly.microsoftGraph.microsoftGraphStrings.retire = this.cast("retire")
-  @scala.inline
-  def wipe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.wipe = this.cast("wipe")
+  
+  inline def block: typingsJapgolly.microsoftGraph.microsoftGraphStrings.block = "block".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.block]
+  
+  inline def noAction: typingsJapgolly.microsoftGraph.microsoftGraphStrings.noAction = "noAction".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.noAction]
+  
+  inline def notification: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notification = "notification".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notification]
+  
+  inline def pushNotification: typingsJapgolly.microsoftGraph.microsoftGraphStrings.pushNotification = "pushNotification".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.pushNotification]
+  
+  inline def removeResourceAccessProfiles: typingsJapgolly.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles = "removeResourceAccessProfiles".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.removeResourceAccessProfiles]
+  
+  inline def retire: typingsJapgolly.microsoftGraph.microsoftGraphStrings.retire = "retire".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.retire]
+  
+  inline def wipe: typingsJapgolly.microsoftGraph.microsoftGraphStrings.wipe = "wipe".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.wipe]
 }
-

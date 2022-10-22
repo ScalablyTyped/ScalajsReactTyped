@@ -1,47 +1,37 @@
 package typingsJapgolly.reactDataGrid.AdazzleReactDataGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SCROLL_DIRECTION extends js.Object
-
+sealed trait SCROLL_DIRECTION extends StObject
 @JSGlobal("AdazzleReactDataGrid.SCROLL_DIRECTION")
 @js.native
-object SCROLL_DIRECTION extends js.Object {
-  @js.native
-  sealed trait DOWN extends SCROLL_DIRECTION
+object SCROLL_DIRECTION extends StObject {
   
   @js.native
-  sealed trait LEFT extends SCROLL_DIRECTION
+  sealed trait DOWN
+    extends StObject
+       with SCROLL_DIRECTION
   
   @js.native
-  sealed trait NONE extends SCROLL_DIRECTION
+  sealed trait LEFT
+    extends StObject
+       with SCROLL_DIRECTION
   
   @js.native
-  sealed trait RIGHT extends SCROLL_DIRECTION
+  sealed trait NONE
+    extends StObject
+       with SCROLL_DIRECTION
   
   @js.native
-  sealed trait UP extends SCROLL_DIRECTION
+  sealed trait RIGHT
+    extends StObject
+       with SCROLL_DIRECTION
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[SCROLL_DIRECTION with String] = js.native
-  /* "downwards" */ @js.native
-  object DOWN extends TopLevel[DOWN with String]
-  
-  /* "left" */ @js.native
-  object LEFT extends TopLevel[LEFT with String]
-  
-  /* "none" */ @js.native
-  object NONE extends TopLevel[NONE with String]
-  
-  /* "right" */ @js.native
-  object RIGHT extends TopLevel[RIGHT with String]
-  
-  /* "upwards" */ @js.native
-  object UP extends TopLevel[UP with String]
-  
+  @js.native
+  sealed trait UP
+    extends StObject
+       with SCROLL_DIRECTION
 }
-

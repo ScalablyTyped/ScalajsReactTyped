@@ -1,38 +1,46 @@
 package typingsJapgolly.griddleReact.mod.components
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait RowDefinitionProps
-  extends // Allow custom plugin props
-/* x */ StringDictionary[js.Any] {
+  extends StObject
+     with /* x */ StringDictionary[Any] {
+  
   //The column that will be known used to track child data
   //By default this will be "children"
   var childColumnName: js.UndefOr[String] = js.undefined
+  
   //The css class name, or a function to generate a class name from props, to apply to this row.
-  var cssClassName: js.UndefOr[String | (js.Function1[/* props */ js.Any, String])] = js.undefined
+  var cssClassName: js.UndefOr[String | (js.Function1[/* props */ Any, String])] = js.undefined
+  
   //The column value that should be used as the key for the row
   //if this is not set it will make one up (not efficient)
   var rowKey: js.UndefOr[String] = js.undefined
 }
-
 object RowDefinitionProps {
-  @scala.inline
-  def apply(
-    StringDictionary: // Allow custom plugin props
-  /* x */ StringDictionary[js.Any] = null,
-    childColumnName: String = null,
-    cssClassName: String | (js.Function1[/* props */ js.Any, String]) = null,
-    rowKey: String = null
-  ): RowDefinitionProps = {
+  
+  inline def apply(): RowDefinitionProps = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (childColumnName != null) __obj.updateDynamic("childColumnName")(childColumnName.asInstanceOf[js.Any])
-    if (cssClassName != null) __obj.updateDynamic("cssClassName")(cssClassName.asInstanceOf[js.Any])
-    if (rowKey != null) __obj.updateDynamic("rowKey")(rowKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowDefinitionProps]
   }
+  
+  extension [Self <: RowDefinitionProps](x: Self) {
+    
+    inline def setChildColumnName(value: String): Self = StObject.set(x, "childColumnName", value.asInstanceOf[js.Any])
+    
+    inline def setChildColumnNameUndefined: Self = StObject.set(x, "childColumnName", js.undefined)
+    
+    inline def setCssClassName(value: String | (js.Function1[/* props */ Any, String])): Self = StObject.set(x, "cssClassName", value.asInstanceOf[js.Any])
+    
+    inline def setCssClassNameFunction1(value: /* props */ Any => String): Self = StObject.set(x, "cssClassName", js.Any.fromFunction1(value))
+    
+    inline def setCssClassNameUndefined: Self = StObject.set(x, "cssClassName", js.undefined)
+    
+    inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    
+    inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
+  }
 }
-

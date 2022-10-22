@@ -9,15 +9,18 @@ import typingsJapgolly.minappEnv.minappEnvStrings.base64
 import typingsJapgolly.minappEnv.minappEnvStrings.binary
 import typingsJapgolly.minappEnv.minappEnvStrings.hex
 import typingsJapgolly.minappEnv.minappEnvStrings.latin1
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WriteFileOption extends js.Object {
+trait WriteFileOption extends StObject {
+  
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[WriteFileCompleteCallback] = js.undefined
+  
   /** 要写入的文本或二进制数据 */
   var data: String | ArrayBuffer
+  
   /** 指定写入文件的字符编码
     *
     * 可选值：
@@ -31,30 +34,45 @@ trait WriteFileOption extends js.Object {
   var encoding: js.UndefOr[
     ascii | base64 | binary | hex | `ucs2Slashucs-2Slashutf16leSlashutf-16le` | `utf-8Slashutf8` | latin1
   ] = js.undefined
+  
   /** 接口调用失败的回调函数 */
   var fail: js.UndefOr[WriteFileFailCallback] = js.undefined
+  
   /** 要写入的文件路径 */
   var filePath: String
+  
   /** 接口调用成功的回调函数 */
   var success: js.UndefOr[WriteFileSuccessCallback] = js.undefined
 }
-
 object WriteFileOption {
-  @scala.inline
-  def apply(
-    data: String | ArrayBuffer,
-    filePath: String,
-    complete: /* res */ GeneralCallbackResult => Callback = null,
-    encoding: ascii | base64 | binary | hex | `ucs2Slashucs-2Slashutf16leSlashutf-16le` | `utf-8Slashutf8` | latin1 = null,
-    fail: /* result */ WriteFileFailCallbackResult => Callback = null,
-    success: /* res */ GeneralCallbackResult => Callback = null
-  ): WriteFileOption = {
+  
+  inline def apply(data: String | ArrayBuffer, filePath: String): WriteFileOption = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => complete(t0).runNow()))
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* result */ typingsJapgolly.minappEnv.wx.WriteFileFailCallbackResult) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: /* res */ typingsJapgolly.minappEnv.wx.GeneralCallbackResult) => success(t0).runNow()))
     __obj.asInstanceOf[WriteFileOption]
   }
+  
+  extension [Self <: WriteFileOption](x: Self) {
+    
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "complete", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setEncoding(
+      value: ascii | base64 | binary | hex | `ucs2Slashucs-2Slashutf16leSlashutf-16le` | `utf-8Slashutf8` | latin1
+    ): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    
+    inline def setFail(value: /* result */ WriteFileFailCallbackResult => Callback): Self = StObject.set(x, "fail", js.Any.fromFunction1((t0: /* result */ WriteFileFailCallbackResult) => value(t0).runNow()))
+    
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    
+    inline def setSuccess(value: /* res */ GeneralCallbackResult => Callback): Self = StObject.set(x, "success", js.Any.fromFunction1((t0: /* res */ GeneralCallbackResult) => value(t0).runNow()))
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+  }
 }
-

@@ -1,31 +1,45 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
 import typingsJapgolly.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait KMLOptions extends js.Object {
+trait KMLOptions extends StObject {
+  
   var defaultStyle: js.UndefOr[js.Array[Style]] = js.undefined
+  
   var extractStyles: js.UndefOr[Boolean] = js.undefined
+  
   var showPointNames: js.UndefOr[Boolean] = js.undefined
+  
   var writeStyles: js.UndefOr[Boolean] = js.undefined
 }
-
 object KMLOptions {
-  @scala.inline
-  def apply(
-    defaultStyle: js.Array[Style] = null,
-    extractStyles: js.UndefOr[Boolean] = js.undefined,
-    showPointNames: js.UndefOr[Boolean] = js.undefined,
-    writeStyles: js.UndefOr[Boolean] = js.undefined
-  ): KMLOptions = {
+  
+  inline def apply(): KMLOptions = {
     val __obj = js.Dynamic.literal()
-    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(extractStyles)) __obj.updateDynamic("extractStyles")(extractStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(showPointNames)) __obj.updateDynamic("showPointNames")(showPointNames.asInstanceOf[js.Any])
-    if (!js.isUndefined(writeStyles)) __obj.updateDynamic("writeStyles")(writeStyles.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMLOptions]
   }
+  
+  extension [Self <: KMLOptions](x: Self) {
+    
+    inline def setDefaultStyle(value: js.Array[Style]): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+    
+    inline def setDefaultStyleVarargs(value: Style*): Self = StObject.set(x, "defaultStyle", js.Array(value*))
+    
+    inline def setExtractStyles(value: Boolean): Self = StObject.set(x, "extractStyles", value.asInstanceOf[js.Any])
+    
+    inline def setExtractStylesUndefined: Self = StObject.set(x, "extractStyles", js.undefined)
+    
+    inline def setShowPointNames(value: Boolean): Self = StObject.set(x, "showPointNames", value.asInstanceOf[js.Any])
+    
+    inline def setShowPointNamesUndefined: Self = StObject.set(x, "showPointNames", js.undefined)
+    
+    inline def setWriteStyles(value: Boolean): Self = StObject.set(x, "writeStyles", value.asInstanceOf[js.Any])
+    
+    inline def setWriteStylesUndefined: Self = StObject.set(x, "writeStyles", js.undefined)
+  }
 }
-

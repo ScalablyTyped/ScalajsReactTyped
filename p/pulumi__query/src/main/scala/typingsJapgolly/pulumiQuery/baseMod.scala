@@ -1,27 +1,29 @@
 package typingsJapgolly.pulumiQuery
 
-import typingsJapgolly.pulumiQuery.interfacesMod.AsyncIterableIterator
+import typingsJapgolly.pulumiQuery.interfacesMod.AsyncQuerySource
+import typingsJapgolly.pulumiQuery.interfacesMod.GroupedAsyncIterable
+import typingsJapgolly.std.AsyncIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/query/base", JSImport.Namespace)
-@js.native
-object baseMod extends js.Object {
-  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-  - typingsJapgolly.pulumiQuery.interfacesMod.AsyncIterator because Already inherited
-  - typingsJapgolly.pulumiQuery.interfacesMod.AsyncIterableIterator because Already inherited
-  - typingsJapgolly.pulumiQuery.interfacesMod.GroupedAsyncIterableIterator because var conflicts: `return`, `throw`. Inlined key */ @js.native
-  class GroupedAsyncIterableIteratorImpl[TKey, TSource] protected () extends IterableBase[TSource] {
-    def this(key: TKey, core: AsyncIterableIterator[TSource]) = this()
-    val key: TKey = js.native
-  }
+object baseMod {
   
+  @JSImport("@pulumi/query/base", "GroupedAsyncIterableImpl")
   @js.native
-  abstract class IterableBase[T] protected () extends AsyncIterableIterator[T] {
-    def this(core: AsyncIterableIterator[T]) = this()
-    val core: js.Any = js.native
+  open class GroupedAsyncIterableImpl[TKey, TSource] protected ()
+    extends IterableBase[TSource]
+       with GroupedAsyncIterable[TKey, TSource] {
+    def this(key: TKey, core: AsyncIterable[TSource]) = this()
   }
   
+  /* note: abstract class */ @JSImport("@pulumi/query/base", "IterableBase")
+  @js.native
+  open class IterableBase[T] protected ()
+    extends StObject
+       with AsyncIterable[T] {
+    def this(source: AsyncQuerySource[T]) = this()
+    
+    /* protected */ val source: AsyncQuerySource[T] = js.native
+  }
 }
-

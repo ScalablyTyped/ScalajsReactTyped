@@ -1,15 +1,19 @@
 package typingsJapgolly.sharepoint.SP
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("SP.Change")
 @js.native
-class Change () extends ClientObject {
+trait Change
+  extends StObject
+     with ClientObject {
+  
   def get_changeToken(): ChangeToken = js.native
+  
   def get_changeType(): ChangeType = js.native
+  
   def get_siteId(): Guid = js.native
+  
   def get_time(): js.Date = js.native
 }
-

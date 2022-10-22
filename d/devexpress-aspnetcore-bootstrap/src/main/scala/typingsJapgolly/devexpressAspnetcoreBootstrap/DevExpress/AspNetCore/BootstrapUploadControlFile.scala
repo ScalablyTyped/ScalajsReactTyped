@@ -1,13 +1,20 @@
 package typingsJapgolly.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("DevExpress.AspNetCore.BootstrapUploadControlFile")
 @js.native
-class BootstrapUploadControlFile () extends Control {
+trait BootstrapUploadControlFile
+  extends StObject
+     with Control {
+  
+  def off(
+    eventName: Unit,
+    callback: js.ThisFunction1[/* this */ this.type, /* args */ js.UndefOr[EventArgs], Unit]
+  ): this.type = js.native
+  
   val size: Double = js.native
-  val sourceFileObject: js.Any = js.native
+  
+  val sourceFileObject: Any = js.native
 }
-

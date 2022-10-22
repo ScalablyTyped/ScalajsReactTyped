@@ -1,139 +1,112 @@
 package typingsJapgolly.twitterForWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twitterForWebStrings {
-  @js.native
-  sealed trait all extends js.Object
   
   @js.native
-  sealed trait assertive extends js.Object
+  sealed trait all extends StObject
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait assertive extends StObject
+  inline def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait auto extends StObject
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait collection extends js.Object
+  sealed trait click extends StObject
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait collection extends StObject
+  inline def collection: collection = "collection".asInstanceOf[collection]
   
   @js.native
-  sealed trait favorite extends js.Object
+  sealed trait dark extends StObject
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait follow extends js.Object
+  sealed trait favorite extends StObject
+  inline def favorite: favorite = "favorite".asInstanceOf[favorite]
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait follow extends StObject
+  inline def follow: follow = "follow".asInstanceOf[follow]
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait hidden extends StObject
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait large extends StObject
+  inline def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait left extends StObject
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait likes extends js.Object
+  sealed trait light extends StObject
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait likes extends StObject
+  inline def likes: likes = "likes".asInstanceOf[likes]
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait loaded extends StObject
+  inline def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait medium extends StObject
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait polite extends js.Object
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait profile extends js.Object
+  sealed trait polite extends StObject
+  inline def polite: polite = "polite".asInstanceOf[polite]
   
   @js.native
-  sealed trait rendered extends js.Object
+  sealed trait profile extends StObject
+  inline def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
-  sealed trait retweet extends js.Object
+  sealed trait rendered extends StObject
+  inline def rendered: rendered = "rendered".asInstanceOf[rendered]
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait retweet extends StObject
+  inline def retweet: retweet = "retweet".asInstanceOf[retweet]
   
   @js.native
-  sealed trait rude extends js.Object
+  sealed trait right extends StObject
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait tweet extends js.Object
+  sealed trait rude extends StObject
+  inline def rude: rude = "rude".asInstanceOf[rude]
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait tweet extends StObject
+  inline def tweet: tweet = "tweet".asInstanceOf[tweet]
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait url extends StObject
+  inline def url: url = "url".asInstanceOf[url]
   
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
-  @scala.inline
-  def assertive: assertive = "assertive".asInstanceOf[assertive]
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
-  @scala.inline
-  def collection: collection = "collection".asInstanceOf[collection]
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
-  @scala.inline
-  def favorite: favorite = "favorite".asInstanceOf[favorite]
-  @scala.inline
-  def follow: follow = "follow".asInstanceOf[follow]
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
-  @scala.inline
-  def large: large = "large".asInstanceOf[large]
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
-  @scala.inline
-  def likes: likes = "likes".asInstanceOf[likes]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def loaded: loaded = "loaded".asInstanceOf[loaded]
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
-  @scala.inline
-  def polite: polite = "polite".asInstanceOf[polite]
-  @scala.inline
-  def profile: profile = "profile".asInstanceOf[profile]
-  @scala.inline
-  def rendered: rendered = "rendered".asInstanceOf[rendered]
-  @scala.inline
-  def retweet: retweet = "retweet".asInstanceOf[retweet]
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
-  @scala.inline
-  def rude: rude = "rude".asInstanceOf[rude]
-  @scala.inline
-  def tweet: tweet = "tweet".asInstanceOf[tweet]
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
-  @scala.inline
-  def visible: visible = "visible".asInstanceOf[visible]
+  @js.native
+  sealed trait visible extends StObject
+  inline def visible: visible = "visible".asInstanceOf[visible]
 }
-

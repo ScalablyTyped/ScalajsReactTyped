@@ -1,19 +1,22 @@
 package typingsJapgolly.protobufjs.lightMod
 
 import typingsJapgolly.protobufjs.mod.ITokenizerHandle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("protobufjs/light", "tokenize")
-@js.native
-object tokenize extends js.Object {
-  def apply(source: String, alternateCommentMode: Boolean): ITokenizerHandle = js.native
+object tokenize {
+  
+  inline def apply(source: String, alternateCommentMode: Boolean): ITokenizerHandle = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], alternateCommentMode.asInstanceOf[js.Any])).asInstanceOf[ITokenizerHandle]
+  
+  @JSImport("protobufjs/light", "tokenize")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Unescapes a string.
     * @param str String to unescape
     * @returns Unescaped string
     */
-  def unescape(str: String): String = js.native
+  inline def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

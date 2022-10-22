@@ -1,99 +1,45 @@
 package typingsJapgolly.lobibox.LobiboxModule
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.lobibox.AnonCancel
-import typingsJapgolly.lobibox.AnonConfirm
-import typingsJapgolly.lobibox.AnonIconClass
+import typingsJapgolly.lobibox.anon.IconClass
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AlertOptions extends MessageBoxesOptions {
-  var error: js.UndefOr[AnonIconClass] = js.undefined
-  var info: js.UndefOr[AnonIconClass] = js.undefined
-  var success: js.UndefOr[AnonIconClass] = js.undefined
-  var warning: js.UndefOr[AnonIconClass] = js.undefined
+trait AlertOptions
+  extends StObject
+     with MessageBoxesOptions {
+  
+  var error: js.UndefOr[IconClass] = js.undefined
+  
+  var info: js.UndefOr[IconClass] = js.undefined
+  
+  var success: js.UndefOr[IconClass] = js.undefined
+  
+  var warning: js.UndefOr[IconClass] = js.undefined
 }
-
 object AlertOptions {
-  @scala.inline
-  def apply(
-    baseClass: String = null,
-    beforeClose: /* lobibox */ js.Any => Callback = null,
-    bodyClass: String = null,
-    buttons: AnonCancel | js.Any = null,
-    buttonsAlign: js.Any = null,
-    callback: (/* lobibox */ js.Any, /* type */ js.UndefOr[String], /* ev */ js.UndefOr[js.Any]) => Callback = null,
-    closeButton: js.UndefOr[Boolean] = js.undefined,
-    closeOnEsc: js.UndefOr[Boolean] = js.undefined,
-    closed: /* lobibox */ js.Any => Callback = null,
-    customBtnClass: String = null,
-    debug: js.UndefOr[Boolean] = js.undefined,
-    delayToRemove: Int | Double = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    error: AnonIconClass = null,
-    getTitle: js.UndefOr[CallbackTo[String]] = js.undefined,
-    height: String = null,
-    hide: js.UndefOr[CallbackTo[AlertOptions]] = js.undefined,
-    hideClass: String = null,
-    horizontalOffset: Int | Double = null,
-    info: AnonIconClass = null,
-    modal: js.UndefOr[Boolean] = js.undefined,
-    modalClasses: AnonConfirm = null,
-    msg: String = null,
-    onShow: /* lobibox */ js.Any => Callback = null,
-    setHeight: /* height */ js.UndefOr[Double] => CallbackTo[AlertOptions] = null,
-    setPosition: (/* left */ js.UndefOr[Double | String], /* top */ js.UndefOr[Double]) => CallbackTo[AlertOptions] = null,
-    setSize: (/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => CallbackTo[AlertOptions] = null,
-    setTitle: /* title */ js.UndefOr[String] => CallbackTo[AlertOptions] = null,
-    setWidth: /* width */ js.UndefOr[Double] => CallbackTo[AlertOptions] = null,
-    show: js.UndefOr[CallbackTo[AlertOptions]] = js.undefined,
-    showClass: String = null,
-    shown: /* lobibox */ js.Any => Callback = null,
-    success: AnonIconClass = null,
-    title: String = null,
-    warning: AnonIconClass = null,
-    width: Int | Double = null
-  ): AlertOptions = {
+  
+  inline def apply(): AlertOptions = {
     val __obj = js.Dynamic.literal()
-    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (beforeClose != null) __obj.updateDynamic("beforeClose")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => beforeClose(t0).runNow()))
-    if (bodyClass != null) __obj.updateDynamic("bodyClass")(bodyClass.asInstanceOf[js.Any])
-    if (buttons != null) __obj.updateDynamic("buttons")(buttons.asInstanceOf[js.Any])
-    if (buttonsAlign != null) __obj.updateDynamic("buttonsAlign")(buttonsAlign.asInstanceOf[js.Any])
-    if (callback != null) __obj.updateDynamic("callback")(js.Any.fromFunction3((t0: /* lobibox */ js.Any, t1: /* type */ js.UndefOr[java.lang.String], t2: /* ev */ js.UndefOr[js.Any]) => callback(t0, t1, t2).runNow()))
-    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(closeOnEsc)) __obj.updateDynamic("closeOnEsc")(closeOnEsc.asInstanceOf[js.Any])
-    if (closed != null) __obj.updateDynamic("closed")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => closed(t0).runNow()))
-    if (customBtnClass != null) __obj.updateDynamic("customBtnClass")(customBtnClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug.asInstanceOf[js.Any])
-    if (delayToRemove != null) __obj.updateDynamic("delayToRemove")(delayToRemove.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    getTitle.foreach(p => __obj.updateDynamic("getTitle")(p.toJsFn))
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    hide.foreach(p => __obj.updateDynamic("hide")(p.toJsFn))
-    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass.asInstanceOf[js.Any])
-    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
-    if (info != null) __obj.updateDynamic("info")(info.asInstanceOf[js.Any])
-    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal.asInstanceOf[js.Any])
-    if (modalClasses != null) __obj.updateDynamic("modalClasses")(modalClasses.asInstanceOf[js.Any])
-    if (msg != null) __obj.updateDynamic("msg")(msg.asInstanceOf[js.Any])
-    if (onShow != null) __obj.updateDynamic("onShow")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => onShow(t0).runNow()))
-    if (setHeight != null) __obj.updateDynamic("setHeight")(js.Any.fromFunction1((t0: /* height */ js.UndefOr[scala.Double]) => setHeight(t0).runNow()))
-    if (setPosition != null) __obj.updateDynamic("setPosition")(js.Any.fromFunction2((t0: /* left */ js.UndefOr[scala.Double | java.lang.String], t1: /* top */ js.UndefOr[scala.Double]) => setPosition(t0, t1).runNow()))
-    if (setSize != null) __obj.updateDynamic("setSize")(js.Any.fromFunction2((t0: /* width */ js.UndefOr[scala.Double], t1: /* height */ js.UndefOr[scala.Double]) => setSize(t0, t1).runNow()))
-    if (setTitle != null) __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: /* title */ js.UndefOr[java.lang.String]) => setTitle(t0).runNow()))
-    if (setWidth != null) __obj.updateDynamic("setWidth")(js.Any.fromFunction1((t0: /* width */ js.UndefOr[scala.Double]) => setWidth(t0).runNow()))
-    show.foreach(p => __obj.updateDynamic("show")(p.toJsFn))
-    if (showClass != null) __obj.updateDynamic("showClass")(showClass.asInstanceOf[js.Any])
-    if (shown != null) __obj.updateDynamic("shown")(js.Any.fromFunction1((t0: /* lobibox */ js.Any) => shown(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(success.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (warning != null) __obj.updateDynamic("warning")(warning.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertOptions]
   }
+  
+  extension [Self <: AlertOptions](x: Self) {
+    
+    inline def setError(value: IconClass): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    
+    inline def setInfo(value: IconClass): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    
+    inline def setSuccess(value: IconClass): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    
+    inline def setWarning(value: IconClass): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+  }
 }
-

@@ -1,55 +1,43 @@
 package typingsJapgolly.reactNativePopupDialog.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.reactNative.mod.NodeHandle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.GestureResponderEvent
 import typingsJapgolly.reactNativePopupDialog.mod.OverlayProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Overlay {
-  def apply(
-    onPress: ReactEventFrom[NodeHandle with Element] => Callback,
-    animationDuration: Int | Double = null,
-    backgroundColor: String = null,
-    opacity: Int | Double = null,
-    pointerEvents: String = null,
-    showOverlay: js.UndefOr[Boolean] = js.undefined,
-    useNativeDriver: js.UndefOr[Boolean] = js.undefined,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[OverlayProps, typingsJapgolly.reactNativePopupDialog.mod.Overlay, Unit, OverlayProps] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[typingsJapgolly.reactNative.mod.NodeHandle with org.scalajs.dom.raw.Element]) => onPress(t0).runNow()))
-    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativePopupDialog.mod.OverlayProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativePopupDialog.mod.Overlay](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativePopupDialog.mod.OverlayProps])(children: _*)
+  inline def apply(onPress: GestureResponderEvent => Callback): Builder = {
+    val __props = js.Dynamic.literal(onPress = js.Any.fromFunction1((t0: GestureResponderEvent) => onPress(t0).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[OverlayProps]))
   }
+  
   @JSImport("react-native-popup-dialog", "Overlay")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativePopupDialog.mod.Overlay] {
+    
+    inline def animationDuration(value: Double): this.type = set("animationDuration", value.asInstanceOf[js.Any])
+    
+    inline def backgroundColor(value: String): this.type = set("backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def opacity(value: Double): this.type = set("opacity", value.asInstanceOf[js.Any])
+    
+    inline def pointerEvents(value: String): this.type = set("pointerEvents", value.asInstanceOf[js.Any])
+    
+    inline def showOverlay(value: Boolean): this.type = set("showOverlay", value.asInstanceOf[js.Any])
+    
+    inline def useNativeDriver(value: Boolean): this.type = set("useNativeDriver", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: OverlayProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

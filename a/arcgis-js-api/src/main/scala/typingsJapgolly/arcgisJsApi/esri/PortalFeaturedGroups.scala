@@ -1,19 +1,22 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PortalFeaturedGroups extends Object {
+trait PortalFeaturedGroups
+  extends StObject
+     with Object {
+  
   /**
     * Name of the group owner.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-Portal.html#featuredGroups)
     */
   var owner: String
+  
   /**
     * Group title.
     *
@@ -21,20 +24,23 @@ trait PortalFeaturedGroups extends Object {
     */
   var title: String
 }
-
 object PortalFeaturedGroups {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
     owner: String,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    propertyIsEnumerable: PropertyKey => Boolean,
     title: String
   ): PortalFeaturedGroups = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), owner = owner.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalFeaturedGroups]
   }
+  
+  extension [Self <: PortalFeaturedGroups](x: Self) {
+    
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

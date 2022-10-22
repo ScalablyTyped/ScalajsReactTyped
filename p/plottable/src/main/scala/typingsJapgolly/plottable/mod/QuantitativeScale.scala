@@ -1,8 +1,8 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "QuantitativeScale")
 @js.native
@@ -12,13 +12,17 @@ import scala.scalajs.js.annotation._
   *
   * @constructor
   */
-class QuantitativeScale[D] ()
-  extends typingsJapgolly.plottable.quantitativeScaleMod.QuantitativeScale[D]
-
+open class QuantitativeScale[D] ()
+  extends typingsJapgolly.plottable.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[D]
 /* static members */
-@JSImport("plottable", "QuantitativeScale")
-@js.native
-object QuantitativeScale extends js.Object {
-  var _DEFAULT_NUM_TICKS: Double = js.native
+object QuantitativeScale {
+  
+  @JSImport("plottable", "QuantitativeScale")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("plottable", "QuantitativeScale._DEFAULT_NUM_TICKS")
+  @js.native
+  def _DEFAULT_NUM_TICKS: Double = js.native
+  inline def _DEFAULT_NUM_TICKS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_NUM_TICKS")(x.asInstanceOf[js.Any])
 }
-

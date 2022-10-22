@@ -1,16 +1,43 @@
 package typingsJapgolly.onsenui.mod
 
+import org.scalajs.dom.EventListenerOptions
+import typingsJapgolly.std.AddEventListenerOptions
+import typingsJapgolly.std.EventListenerOrEventListenerObject
 import typingsJapgolly.std.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait OnsToastElement extends HTMLElement {
-  var onDeviceBackButton: js.Any = js.native
-  var visible: js.Any = js.native
-  def hide(args: js.Any*): js.Any = js.native
-  def show(args: js.Any*): js.Any = js.native
-  def toggle(args: js.Any*): js.Any = js.native
+trait OnsToastElement
+  extends StObject
+     with HTMLElement {
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+  
+  var animationOptions: js.Object = js.native
+  
+  def hide(args: Any*): Any = js.native
+  
+  var onDeviceBackButton: Any = js.native
+  
+  /* standard dom */
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+  
+  def show(args: Any*): Any = js.native
+  
+  def toggle(args: Any*): Any = js.native
+  
+  var visible: Any = js.native
 }
-

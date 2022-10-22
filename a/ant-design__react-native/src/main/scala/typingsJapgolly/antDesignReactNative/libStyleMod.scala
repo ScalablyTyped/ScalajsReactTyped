@@ -1,0 +1,1349 @@
+package typingsJapgolly.antDesignReactNative
+
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.antDesignReactNative.anon.Actionsheetitemfontsize
+import typingsJapgolly.react.mod.Context
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object libStyleMod {
+  
+  @JSImport("@ant-design/react-native/lib/style", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@ant-design/react-native/lib/style", "ThemeContext")
+  @js.native
+  val ThemeContext: Context[Actionsheetitemfontsize] = js.native
+  
+  inline def ThemeProvider(props: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def WithTheme[T, S](props: WithThemeProps[T, S]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithTheme")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  inline def useTheme(): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[Actionsheetitemfontsize]
+  inline def useTheme(props: UseThemeContextProps): Actionsheetitemfontsize = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")(props.asInstanceOf[js.Any]).asInstanceOf[Actionsheetitemfontsize]
+  
+  /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/style.Theme> */
+  trait PartialTheme extends StObject {
+    
+    var action_sheet_zindex: js.UndefOr[Double] = js.undefined
+    
+    var actionsheet_item_font_size: js.UndefOr[Double] = js.undefined
+    
+    var actionsheet_item_height: js.UndefOr[Double] = js.undefined
+    
+    var border_color_base: js.UndefOr[String] = js.undefined
+    
+    var border_width_lg: js.UndefOr[Double] = js.undefined
+    
+    var border_width_md: js.UndefOr[Double] = js.undefined
+    
+    var border_width_sm: js.UndefOr[Double] = js.undefined
+    
+    var brand_error: js.UndefOr[String] = js.undefined
+    
+    var brand_important: js.UndefOr[String] = js.undefined
+    
+    var brand_primary: js.UndefOr[String] = js.undefined
+    
+    var brand_primary_tap: js.UndefOr[String] = js.undefined
+    
+    var brand_success: js.UndefOr[String] = js.undefined
+    
+    var brand_wait: js.UndefOr[String] = js.undefined
+    
+    var brand_warning: js.UndefOr[String] = js.undefined
+    
+    var button_font_size: js.UndefOr[Double] = js.undefined
+    
+    var button_font_size_sm: js.UndefOr[Double] = js.undefined
+    
+    var button_height: js.UndefOr[Double] = js.undefined
+    
+    var button_height_sm: js.UndefOr[Double] = js.undefined
+    
+    var checkbox_border: js.UndefOr[String] = js.undefined
+    
+    var checkbox_border_disabled: js.UndefOr[String] = js.undefined
+    
+    var checkbox_fill: js.UndefOr[String] = js.undefined
+    
+    var checkbox_fill_disabled: js.UndefOr[String] = js.undefined
+    
+    var color_icon_base: js.UndefOr[String] = js.undefined
+    
+    var color_link: js.UndefOr[String] = js.undefined
+    
+    var color_text_base: js.UndefOr[String] = js.undefined
+    
+    var color_text_base_inverse: js.UndefOr[String] = js.undefined
+    
+    var color_text_caption: js.UndefOr[String] = js.undefined
+    
+    var color_text_disabled: js.UndefOr[String] = js.undefined
+    
+    var color_text_paragraph: js.UndefOr[String] = js.undefined
+    
+    var color_text_placeholder: js.UndefOr[String] = js.undefined
+    
+    var color_text_secondary: js.UndefOr[String] = js.undefined
+    
+    var ease_in_out_quint: js.UndefOr[String] = js.undefined
+    
+    var fill_base: js.UndefOr[String] = js.undefined
+    
+    var fill_body: js.UndefOr[String] = js.undefined
+    
+    var fill_disabled: js.UndefOr[String] = js.undefined
+    
+    var fill_grey: js.UndefOr[String] = js.undefined
+    
+    var fill_mask: js.UndefOr[String] = js.undefined
+    
+    var fill_tap: js.UndefOr[String] = js.undefined
+    
+    var font_size_base: js.UndefOr[Double] = js.undefined
+    
+    var font_size_caption: js.UndefOr[Double] = js.undefined
+    
+    var font_size_caption_sm: js.UndefOr[Double] = js.undefined
+    
+    var font_size_heading: js.UndefOr[Double] = js.undefined
+    
+    var font_size_icontext: js.UndefOr[Double] = js.undefined
+    
+    var font_size_subhead: js.UndefOr[Double] = js.undefined
+    
+    var ghost_button_color: js.UndefOr[String] = js.undefined
+    
+    var ghost_button_fill_tap: js.UndefOr[String] = js.undefined
+    
+    var h_spacing_lg: js.UndefOr[Double] = js.undefined
+    
+    var h_spacing_md: js.UndefOr[Double] = js.undefined
+    
+    var h_spacing_sm: js.UndefOr[Double] = js.undefined
+    
+    var icon_size_lg: js.UndefOr[Double] = js.undefined
+    
+    var icon_size_md: js.UndefOr[Double] = js.undefined
+    
+    var icon_size_sm: js.UndefOr[Double] = js.undefined
+    
+    var icon_size_xs: js.UndefOr[Double] = js.undefined
+    
+    var icon_size_xxs: js.UndefOr[Double] = js.undefined
+    
+    var input_color_icon: js.UndefOr[String] = js.undefined
+    
+    var input_color_icon_tap: js.UndefOr[String] = js.undefined
+    
+    var input_font_size: js.UndefOr[Double] = js.undefined
+    
+    var input_label_width: js.UndefOr[Double] = js.undefined
+    
+    var line_height_base: js.UndefOr[Double] = js.undefined
+    
+    var line_height_paragraph: js.UndefOr[Double] = js.undefined
+    
+    var link_button_fill_tap: js.UndefOr[String] = js.undefined
+    
+    var link_button_font_size: js.UndefOr[Double] = js.undefined
+    
+    var list_item_height: js.UndefOr[Double] = js.undefined
+    
+    var list_item_height_sm: js.UndefOr[Double] = js.undefined
+    
+    var list_title_height: js.UndefOr[Double] = js.undefined
+    
+    var modal_button_font_size: js.UndefOr[Double] = js.undefined
+    
+    var modal_button_height: js.UndefOr[Double] = js.undefined
+    
+    var modal_font_size_heading: js.UndefOr[Double] = js.undefined
+    
+    var modal_zindex: js.UndefOr[Double] = js.undefined
+    
+    var notice_bar_fill: js.UndefOr[String] = js.undefined
+    
+    var notice_bar_height: js.UndefOr[Double] = js.undefined
+    
+    var opacity_disabled: js.UndefOr[String] = js.undefined
+    
+    var option_height: js.UndefOr[Double] = js.undefined
+    
+    var popup_zindex: js.UndefOr[Double] = js.undefined
+    
+    var primary_button_fill: js.UndefOr[String] = js.undefined
+    
+    var primary_button_fill_tap: js.UndefOr[String] = js.undefined
+    
+    var radius_lg: js.UndefOr[Double] = js.undefined
+    
+    var radius_md: js.UndefOr[Double] = js.undefined
+    
+    var radius_sm: js.UndefOr[Double] = js.undefined
+    
+    var radius_xs: js.UndefOr[Double] = js.undefined
+    
+    var search_bar_fill: js.UndefOr[String] = js.undefined
+    
+    var search_bar_font_size: js.UndefOr[Double] = js.undefined
+    
+    var search_bar_height: js.UndefOr[Double] = js.undefined
+    
+    var search_bar_input_height: js.UndefOr[Double] = js.undefined
+    
+    var search_color_icon: js.UndefOr[String] = js.undefined
+    
+    var segmented_control_color: js.UndefOr[String] = js.undefined
+    
+    var segmented_control_fill_tap: js.UndefOr[String] = js.undefined
+    
+    var segmented_control_height: js.UndefOr[Double] = js.undefined
+    
+    var switch_checked_disabled: js.UndefOr[String] = js.undefined
+    
+    var switch_fill: js.UndefOr[String] = js.undefined
+    
+    var switch_unchecked: js.UndefOr[String] = js.undefined
+    
+    var switch_unchecked_disabled: js.UndefOr[String] = js.undefined
+    
+    var tab_bar_fill: js.UndefOr[String] = js.undefined
+    
+    var tab_bar_height: js.UndefOr[Double] = js.undefined
+    
+    var tabs_color: js.UndefOr[String] = js.undefined
+    
+    var tabs_font_size_heading: js.UndefOr[Double] = js.undefined
+    
+    var tabs_height: js.UndefOr[Double] = js.undefined
+    
+    var tag_height: js.UndefOr[Double] = js.undefined
+    
+    var tag_small_height: js.UndefOr[Double] = js.undefined
+    
+    var toast_fill: js.UndefOr[String] = js.undefined
+    
+    var toast_zindex: js.UndefOr[Double] = js.undefined
+    
+    var v_spacing_lg: js.UndefOr[Double] = js.undefined
+    
+    var v_spacing_md: js.UndefOr[Double] = js.undefined
+    
+    var v_spacing_sm: js.UndefOr[Double] = js.undefined
+    
+    var v_spacing_xl: js.UndefOr[Double] = js.undefined
+    
+    var v_spacing_xs: js.UndefOr[Double] = js.undefined
+    
+    var warning_button_fill: js.UndefOr[String] = js.undefined
+    
+    var warning_button_fill_tap: js.UndefOr[String] = js.undefined
+  }
+  object PartialTheme {
+    
+    inline def apply(): PartialTheme = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[PartialTheme]
+    }
+    
+    extension [Self <: PartialTheme](x: Self) {
+      
+      inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setAction_sheet_zindexUndefined: Self = StObject.set(x, "action_sheet_zindex", js.undefined)
+      
+      inline def setActionsheet_item_font_size(value: Double): Self = StObject.set(x, "actionsheet_item_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setActionsheet_item_font_sizeUndefined: Self = StObject.set(x, "actionsheet_item_font_size", js.undefined)
+      
+      inline def setActionsheet_item_height(value: Double): Self = StObject.set(x, "actionsheet_item_height", value.asInstanceOf[js.Any])
+      
+      inline def setActionsheet_item_heightUndefined: Self = StObject.set(x, "actionsheet_item_height", js.undefined)
+      
+      inline def setBorder_color_base(value: String): Self = StObject.set(x, "border_color_base", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_color_baseUndefined: Self = StObject.set(x, "border_color_base", js.undefined)
+      
+      inline def setBorder_width_lg(value: Double): Self = StObject.set(x, "border_width_lg", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_lgUndefined: Self = StObject.set(x, "border_width_lg", js.undefined)
+      
+      inline def setBorder_width_md(value: Double): Self = StObject.set(x, "border_width_md", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_mdUndefined: Self = StObject.set(x, "border_width_md", js.undefined)
+      
+      inline def setBorder_width_sm(value: Double): Self = StObject.set(x, "border_width_sm", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_smUndefined: Self = StObject.set(x, "border_width_sm", js.undefined)
+      
+      inline def setBrand_error(value: String): Self = StObject.set(x, "brand_error", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_errorUndefined: Self = StObject.set(x, "brand_error", js.undefined)
+      
+      inline def setBrand_important(value: String): Self = StObject.set(x, "brand_important", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_importantUndefined: Self = StObject.set(x, "brand_important", js.undefined)
+      
+      inline def setBrand_primary(value: String): Self = StObject.set(x, "brand_primary", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_primaryUndefined: Self = StObject.set(x, "brand_primary", js.undefined)
+      
+      inline def setBrand_primary_tap(value: String): Self = StObject.set(x, "brand_primary_tap", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_primary_tapUndefined: Self = StObject.set(x, "brand_primary_tap", js.undefined)
+      
+      inline def setBrand_success(value: String): Self = StObject.set(x, "brand_success", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_successUndefined: Self = StObject.set(x, "brand_success", js.undefined)
+      
+      inline def setBrand_wait(value: String): Self = StObject.set(x, "brand_wait", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_waitUndefined: Self = StObject.set(x, "brand_wait", js.undefined)
+      
+      inline def setBrand_warning(value: String): Self = StObject.set(x, "brand_warning", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_warningUndefined: Self = StObject.set(x, "brand_warning", js.undefined)
+      
+      inline def setButton_font_size(value: Double): Self = StObject.set(x, "button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setButton_font_sizeUndefined: Self = StObject.set(x, "button_font_size", js.undefined)
+      
+      inline def setButton_font_size_sm(value: Double): Self = StObject.set(x, "button_font_size_sm", value.asInstanceOf[js.Any])
+      
+      inline def setButton_font_size_smUndefined: Self = StObject.set(x, "button_font_size_sm", js.undefined)
+      
+      inline def setButton_height(value: Double): Self = StObject.set(x, "button_height", value.asInstanceOf[js.Any])
+      
+      inline def setButton_heightUndefined: Self = StObject.set(x, "button_height", js.undefined)
+      
+      inline def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
+      
+      inline def setButton_height_smUndefined: Self = StObject.set(x, "button_height_sm", js.undefined)
+      
+      inline def setCheckbox_border(value: String): Self = StObject.set(x, "checkbox_border", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_borderUndefined: Self = StObject.set(x, "checkbox_border", js.undefined)
+      
+      inline def setCheckbox_border_disabled(value: String): Self = StObject.set(x, "checkbox_border_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border_disabledUndefined: Self = StObject.set(x, "checkbox_border_disabled", js.undefined)
+      
+      inline def setCheckbox_fill(value: String): Self = StObject.set(x, "checkbox_fill", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fillUndefined: Self = StObject.set(x, "checkbox_fill", js.undefined)
+      
+      inline def setCheckbox_fill_disabled(value: String): Self = StObject.set(x, "checkbox_fill_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill_disabledUndefined: Self = StObject.set(x, "checkbox_fill_disabled", js.undefined)
+      
+      inline def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
+      
+      inline def setColor_icon_baseUndefined: Self = StObject.set(x, "color_icon_base", js.undefined)
+      
+      inline def setColor_link(value: String): Self = StObject.set(x, "color_link", value.asInstanceOf[js.Any])
+      
+      inline def setColor_linkUndefined: Self = StObject.set(x, "color_link", js.undefined)
+      
+      inline def setColor_text_base(value: String): Self = StObject.set(x, "color_text_base", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_baseUndefined: Self = StObject.set(x, "color_text_base", js.undefined)
+      
+      inline def setColor_text_base_inverse(value: String): Self = StObject.set(x, "color_text_base_inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_base_inverseUndefined: Self = StObject.set(x, "color_text_base_inverse", js.undefined)
+      
+      inline def setColor_text_caption(value: String): Self = StObject.set(x, "color_text_caption", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_captionUndefined: Self = StObject.set(x, "color_text_caption", js.undefined)
+      
+      inline def setColor_text_disabled(value: String): Self = StObject.set(x, "color_text_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_disabledUndefined: Self = StObject.set(x, "color_text_disabled", js.undefined)
+      
+      inline def setColor_text_paragraph(value: String): Self = StObject.set(x, "color_text_paragraph", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_paragraphUndefined: Self = StObject.set(x, "color_text_paragraph", js.undefined)
+      
+      inline def setColor_text_placeholder(value: String): Self = StObject.set(x, "color_text_placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_placeholderUndefined: Self = StObject.set(x, "color_text_placeholder", js.undefined)
+      
+      inline def setColor_text_secondary(value: String): Self = StObject.set(x, "color_text_secondary", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_secondaryUndefined: Self = StObject.set(x, "color_text_secondary", js.undefined)
+      
+      inline def setEase_in_out_quint(value: String): Self = StObject.set(x, "ease_in_out_quint", value.asInstanceOf[js.Any])
+      
+      inline def setEase_in_out_quintUndefined: Self = StObject.set(x, "ease_in_out_quint", js.undefined)
+      
+      inline def setFill_base(value: String): Self = StObject.set(x, "fill_base", value.asInstanceOf[js.Any])
+      
+      inline def setFill_baseUndefined: Self = StObject.set(x, "fill_base", js.undefined)
+      
+      inline def setFill_body(value: String): Self = StObject.set(x, "fill_body", value.asInstanceOf[js.Any])
+      
+      inline def setFill_bodyUndefined: Self = StObject.set(x, "fill_body", js.undefined)
+      
+      inline def setFill_disabled(value: String): Self = StObject.set(x, "fill_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setFill_disabledUndefined: Self = StObject.set(x, "fill_disabled", js.undefined)
+      
+      inline def setFill_grey(value: String): Self = StObject.set(x, "fill_grey", value.asInstanceOf[js.Any])
+      
+      inline def setFill_greyUndefined: Self = StObject.set(x, "fill_grey", js.undefined)
+      
+      inline def setFill_mask(value: String): Self = StObject.set(x, "fill_mask", value.asInstanceOf[js.Any])
+      
+      inline def setFill_maskUndefined: Self = StObject.set(x, "fill_mask", js.undefined)
+      
+      inline def setFill_tap(value: String): Self = StObject.set(x, "fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setFill_tapUndefined: Self = StObject.set(x, "fill_tap", js.undefined)
+      
+      inline def setFont_size_base(value: Double): Self = StObject.set(x, "font_size_base", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_baseUndefined: Self = StObject.set(x, "font_size_base", js.undefined)
+      
+      inline def setFont_size_caption(value: Double): Self = StObject.set(x, "font_size_caption", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_captionUndefined: Self = StObject.set(x, "font_size_caption", js.undefined)
+      
+      inline def setFont_size_caption_sm(value: Double): Self = StObject.set(x, "font_size_caption_sm", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_caption_smUndefined: Self = StObject.set(x, "font_size_caption_sm", js.undefined)
+      
+      inline def setFont_size_heading(value: Double): Self = StObject.set(x, "font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_headingUndefined: Self = StObject.set(x, "font_size_heading", js.undefined)
+      
+      inline def setFont_size_icontext(value: Double): Self = StObject.set(x, "font_size_icontext", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_icontextUndefined: Self = StObject.set(x, "font_size_icontext", js.undefined)
+      
+      inline def setFont_size_subhead(value: Double): Self = StObject.set(x, "font_size_subhead", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_subheadUndefined: Self = StObject.set(x, "font_size_subhead", js.undefined)
+      
+      inline def setGhost_button_color(value: String): Self = StObject.set(x, "ghost_button_color", value.asInstanceOf[js.Any])
+      
+      inline def setGhost_button_colorUndefined: Self = StObject.set(x, "ghost_button_color", js.undefined)
+      
+      inline def setGhost_button_fill_tap(value: String): Self = StObject.set(x, "ghost_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setGhost_button_fill_tapUndefined: Self = StObject.set(x, "ghost_button_fill_tap", js.undefined)
+      
+      inline def setH_spacing_lg(value: Double): Self = StObject.set(x, "h_spacing_lg", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_lgUndefined: Self = StObject.set(x, "h_spacing_lg", js.undefined)
+      
+      inline def setH_spacing_md(value: Double): Self = StObject.set(x, "h_spacing_md", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_mdUndefined: Self = StObject.set(x, "h_spacing_md", js.undefined)
+      
+      inline def setH_spacing_sm(value: Double): Self = StObject.set(x, "h_spacing_sm", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_smUndefined: Self = StObject.set(x, "h_spacing_sm", js.undefined)
+      
+      inline def setIcon_size_lg(value: Double): Self = StObject.set(x, "icon_size_lg", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_lgUndefined: Self = StObject.set(x, "icon_size_lg", js.undefined)
+      
+      inline def setIcon_size_md(value: Double): Self = StObject.set(x, "icon_size_md", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_mdUndefined: Self = StObject.set(x, "icon_size_md", js.undefined)
+      
+      inline def setIcon_size_sm(value: Double): Self = StObject.set(x, "icon_size_sm", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_smUndefined: Self = StObject.set(x, "icon_size_sm", js.undefined)
+      
+      inline def setIcon_size_xs(value: Double): Self = StObject.set(x, "icon_size_xs", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_xsUndefined: Self = StObject.set(x, "icon_size_xs", js.undefined)
+      
+      inline def setIcon_size_xxs(value: Double): Self = StObject.set(x, "icon_size_xxs", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_xxsUndefined: Self = StObject.set(x, "icon_size_xxs", js.undefined)
+      
+      inline def setInput_color_icon(value: String): Self = StObject.set(x, "input_color_icon", value.asInstanceOf[js.Any])
+      
+      inline def setInput_color_iconUndefined: Self = StObject.set(x, "input_color_icon", js.undefined)
+      
+      inline def setInput_color_icon_tap(value: String): Self = StObject.set(x, "input_color_icon_tap", value.asInstanceOf[js.Any])
+      
+      inline def setInput_color_icon_tapUndefined: Self = StObject.set(x, "input_color_icon_tap", js.undefined)
+      
+      inline def setInput_font_size(value: Double): Self = StObject.set(x, "input_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setInput_font_sizeUndefined: Self = StObject.set(x, "input_font_size", js.undefined)
+      
+      inline def setInput_label_width(value: Double): Self = StObject.set(x, "input_label_width", value.asInstanceOf[js.Any])
+      
+      inline def setInput_label_widthUndefined: Self = StObject.set(x, "input_label_width", js.undefined)
+      
+      inline def setLine_height_base(value: Double): Self = StObject.set(x, "line_height_base", value.asInstanceOf[js.Any])
+      
+      inline def setLine_height_baseUndefined: Self = StObject.set(x, "line_height_base", js.undefined)
+      
+      inline def setLine_height_paragraph(value: Double): Self = StObject.set(x, "line_height_paragraph", value.asInstanceOf[js.Any])
+      
+      inline def setLine_height_paragraphUndefined: Self = StObject.set(x, "line_height_paragraph", js.undefined)
+      
+      inline def setLink_button_fill_tap(value: String): Self = StObject.set(x, "link_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setLink_button_fill_tapUndefined: Self = StObject.set(x, "link_button_fill_tap", js.undefined)
+      
+      inline def setLink_button_font_size(value: Double): Self = StObject.set(x, "link_button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setLink_button_font_sizeUndefined: Self = StObject.set(x, "link_button_font_size", js.undefined)
+      
+      inline def setList_item_height(value: Double): Self = StObject.set(x, "list_item_height", value.asInstanceOf[js.Any])
+      
+      inline def setList_item_heightUndefined: Self = StObject.set(x, "list_item_height", js.undefined)
+      
+      inline def setList_item_height_sm(value: Double): Self = StObject.set(x, "list_item_height_sm", value.asInstanceOf[js.Any])
+      
+      inline def setList_item_height_smUndefined: Self = StObject.set(x, "list_item_height_sm", js.undefined)
+      
+      inline def setList_title_height(value: Double): Self = StObject.set(x, "list_title_height", value.asInstanceOf[js.Any])
+      
+      inline def setList_title_heightUndefined: Self = StObject.set(x, "list_title_height", js.undefined)
+      
+      inline def setModal_button_font_size(value: Double): Self = StObject.set(x, "modal_button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setModal_button_font_sizeUndefined: Self = StObject.set(x, "modal_button_font_size", js.undefined)
+      
+      inline def setModal_button_height(value: Double): Self = StObject.set(x, "modal_button_height", value.asInstanceOf[js.Any])
+      
+      inline def setModal_button_heightUndefined: Self = StObject.set(x, "modal_button_height", js.undefined)
+      
+      inline def setModal_font_size_heading(value: Double): Self = StObject.set(x, "modal_font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setModal_font_size_headingUndefined: Self = StObject.set(x, "modal_font_size_heading", js.undefined)
+      
+      inline def setModal_zindex(value: Double): Self = StObject.set(x, "modal_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setModal_zindexUndefined: Self = StObject.set(x, "modal_zindex", js.undefined)
+      
+      inline def setNotice_bar_fill(value: String): Self = StObject.set(x, "notice_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setNotice_bar_fillUndefined: Self = StObject.set(x, "notice_bar_fill", js.undefined)
+      
+      inline def setNotice_bar_height(value: Double): Self = StObject.set(x, "notice_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setNotice_bar_heightUndefined: Self = StObject.set(x, "notice_bar_height", js.undefined)
+      
+      inline def setOpacity_disabled(value: String): Self = StObject.set(x, "opacity_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setOpacity_disabledUndefined: Self = StObject.set(x, "opacity_disabled", js.undefined)
+      
+      inline def setOption_height(value: Double): Self = StObject.set(x, "option_height", value.asInstanceOf[js.Any])
+      
+      inline def setOption_heightUndefined: Self = StObject.set(x, "option_height", js.undefined)
+      
+      inline def setPopup_zindex(value: Double): Self = StObject.set(x, "popup_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setPopup_zindexUndefined: Self = StObject.set(x, "popup_zindex", js.undefined)
+      
+      inline def setPrimary_button_fill(value: String): Self = StObject.set(x, "primary_button_fill", value.asInstanceOf[js.Any])
+      
+      inline def setPrimary_button_fillUndefined: Self = StObject.set(x, "primary_button_fill", js.undefined)
+      
+      inline def setPrimary_button_fill_tap(value: String): Self = StObject.set(x, "primary_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setPrimary_button_fill_tapUndefined: Self = StObject.set(x, "primary_button_fill_tap", js.undefined)
+      
+      inline def setRadius_lg(value: Double): Self = StObject.set(x, "radius_lg", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_lgUndefined: Self = StObject.set(x, "radius_lg", js.undefined)
+      
+      inline def setRadius_md(value: Double): Self = StObject.set(x, "radius_md", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_mdUndefined: Self = StObject.set(x, "radius_md", js.undefined)
+      
+      inline def setRadius_sm(value: Double): Self = StObject.set(x, "radius_sm", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_smUndefined: Self = StObject.set(x, "radius_sm", js.undefined)
+      
+      inline def setRadius_xs(value: Double): Self = StObject.set(x, "radius_xs", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_xsUndefined: Self = StObject.set(x, "radius_xs", js.undefined)
+      
+      inline def setSearch_bar_fill(value: String): Self = StObject.set(x, "search_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_fillUndefined: Self = StObject.set(x, "search_bar_fill", js.undefined)
+      
+      inline def setSearch_bar_font_size(value: Double): Self = StObject.set(x, "search_bar_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_font_sizeUndefined: Self = StObject.set(x, "search_bar_font_size", js.undefined)
+      
+      inline def setSearch_bar_height(value: Double): Self = StObject.set(x, "search_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_heightUndefined: Self = StObject.set(x, "search_bar_height", js.undefined)
+      
+      inline def setSearch_bar_input_height(value: Double): Self = StObject.set(x, "search_bar_input_height", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_input_heightUndefined: Self = StObject.set(x, "search_bar_input_height", js.undefined)
+      
+      inline def setSearch_color_icon(value: String): Self = StObject.set(x, "search_color_icon", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_color_iconUndefined: Self = StObject.set(x, "search_color_icon", js.undefined)
+      
+      inline def setSegmented_control_color(value: String): Self = StObject.set(x, "segmented_control_color", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_colorUndefined: Self = StObject.set(x, "segmented_control_color", js.undefined)
+      
+      inline def setSegmented_control_fill_tap(value: String): Self = StObject.set(x, "segmented_control_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_fill_tapUndefined: Self = StObject.set(x, "segmented_control_fill_tap", js.undefined)
+      
+      inline def setSegmented_control_height(value: Double): Self = StObject.set(x, "segmented_control_height", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_heightUndefined: Self = StObject.set(x, "segmented_control_height", js.undefined)
+      
+      inline def setSwitch_checked_disabled(value: String): Self = StObject.set(x, "switch_checked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_checked_disabledUndefined: Self = StObject.set(x, "switch_checked_disabled", js.undefined)
+      
+      inline def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_fillUndefined: Self = StObject.set(x, "switch_fill", js.undefined)
+      
+      inline def setSwitch_unchecked(value: String): Self = StObject.set(x, "switch_unchecked", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_uncheckedUndefined: Self = StObject.set(x, "switch_unchecked", js.undefined)
+      
+      inline def setSwitch_unchecked_disabled(value: String): Self = StObject.set(x, "switch_unchecked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked_disabledUndefined: Self = StObject.set(x, "switch_unchecked_disabled", js.undefined)
+      
+      inline def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setTab_bar_fillUndefined: Self = StObject.set(x, "tab_bar_fill", js.undefined)
+      
+      inline def setTab_bar_height(value: Double): Self = StObject.set(x, "tab_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setTab_bar_heightUndefined: Self = StObject.set(x, "tab_bar_height", js.undefined)
+      
+      inline def setTabs_color(value: String): Self = StObject.set(x, "tabs_color", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_colorUndefined: Self = StObject.set(x, "tabs_color", js.undefined)
+      
+      inline def setTabs_font_size_heading(value: Double): Self = StObject.set(x, "tabs_font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_font_size_headingUndefined: Self = StObject.set(x, "tabs_font_size_heading", js.undefined)
+      
+      inline def setTabs_height(value: Double): Self = StObject.set(x, "tabs_height", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_heightUndefined: Self = StObject.set(x, "tabs_height", js.undefined)
+      
+      inline def setTag_height(value: Double): Self = StObject.set(x, "tag_height", value.asInstanceOf[js.Any])
+      
+      inline def setTag_heightUndefined: Self = StObject.set(x, "tag_height", js.undefined)
+      
+      inline def setTag_small_height(value: Double): Self = StObject.set(x, "tag_small_height", value.asInstanceOf[js.Any])
+      
+      inline def setTag_small_heightUndefined: Self = StObject.set(x, "tag_small_height", js.undefined)
+      
+      inline def setToast_fill(value: String): Self = StObject.set(x, "toast_fill", value.asInstanceOf[js.Any])
+      
+      inline def setToast_fillUndefined: Self = StObject.set(x, "toast_fill", js.undefined)
+      
+      inline def setToast_zindex(value: Double): Self = StObject.set(x, "toast_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setToast_zindexUndefined: Self = StObject.set(x, "toast_zindex", js.undefined)
+      
+      inline def setV_spacing_lg(value: Double): Self = StObject.set(x, "v_spacing_lg", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_lgUndefined: Self = StObject.set(x, "v_spacing_lg", js.undefined)
+      
+      inline def setV_spacing_md(value: Double): Self = StObject.set(x, "v_spacing_md", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_mdUndefined: Self = StObject.set(x, "v_spacing_md", js.undefined)
+      
+      inline def setV_spacing_sm(value: Double): Self = StObject.set(x, "v_spacing_sm", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_smUndefined: Self = StObject.set(x, "v_spacing_sm", js.undefined)
+      
+      inline def setV_spacing_xl(value: Double): Self = StObject.set(x, "v_spacing_xl", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_xlUndefined: Self = StObject.set(x, "v_spacing_xl", js.undefined)
+      
+      inline def setV_spacing_xs(value: Double): Self = StObject.set(x, "v_spacing_xs", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_xsUndefined: Self = StObject.set(x, "v_spacing_xs", js.undefined)
+      
+      inline def setWarning_button_fill(value: String): Self = StObject.set(x, "warning_button_fill", value.asInstanceOf[js.Any])
+      
+      inline def setWarning_button_fillUndefined: Self = StObject.set(x, "warning_button_fill", js.undefined)
+      
+      inline def setWarning_button_fill_tap(value: String): Self = StObject.set(x, "warning_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setWarning_button_fill_tapUndefined: Self = StObject.set(x, "warning_button_fill_tap", js.undefined)
+    }
+  }
+  
+  trait Theme
+    extends StObject
+       with /* key */ StringDictionary[Any] {
+    
+    var action_sheet_zindex: Double
+    
+    var actionsheet_item_font_size: Double
+    
+    var actionsheet_item_height: Double
+    
+    var border_color_base: String
+    
+    var border_width_lg: Double
+    
+    var border_width_md: Double
+    
+    var border_width_sm: Double
+    
+    var brand_error: String
+    
+    var brand_important: String
+    
+    var brand_primary: String
+    
+    var brand_primary_tap: String
+    
+    var brand_success: String
+    
+    var brand_wait: String
+    
+    var brand_warning: String
+    
+    var button_font_size: Double
+    
+    var button_font_size_sm: Double
+    
+    var button_height: Double
+    
+    var button_height_sm: Double
+    
+    var checkbox_border: String
+    
+    var checkbox_border_disabled: String
+    
+    var checkbox_fill: String
+    
+    var checkbox_fill_disabled: String
+    
+    var color_icon_base: String
+    
+    var color_link: String
+    
+    var color_text_base: String
+    
+    var color_text_base_inverse: String
+    
+    var color_text_caption: String
+    
+    var color_text_disabled: String
+    
+    var color_text_paragraph: String
+    
+    var color_text_placeholder: String
+    
+    var color_text_secondary: String
+    
+    var ease_in_out_quint: String
+    
+    var fill_base: String
+    
+    var fill_body: String
+    
+    var fill_disabled: String
+    
+    var fill_grey: String
+    
+    var fill_mask: String
+    
+    var fill_tap: String
+    
+    var font_size_base: Double
+    
+    var font_size_caption: Double
+    
+    var font_size_caption_sm: Double
+    
+    var font_size_heading: Double
+    
+    var font_size_icontext: Double
+    
+    var font_size_subhead: Double
+    
+    var ghost_button_color: String
+    
+    var ghost_button_fill_tap: String
+    
+    var h_spacing_lg: Double
+    
+    var h_spacing_md: Double
+    
+    var h_spacing_sm: Double
+    
+    var icon_size_lg: Double
+    
+    var icon_size_md: Double
+    
+    var icon_size_sm: Double
+    
+    var icon_size_xs: Double
+    
+    var icon_size_xxs: Double
+    
+    var input_color_icon: String
+    
+    var input_color_icon_tap: String
+    
+    var input_font_size: Double
+    
+    var input_label_width: Double
+    
+    var line_height_base: Double
+    
+    var line_height_paragraph: Double
+    
+    var link_button_fill_tap: String
+    
+    var link_button_font_size: Double
+    
+    var list_item_height: Double
+    
+    var list_item_height_sm: Double
+    
+    var list_title_height: Double
+    
+    var modal_button_font_size: Double
+    
+    var modal_button_height: Double
+    
+    var modal_font_size_heading: Double
+    
+    var modal_zindex: Double
+    
+    var notice_bar_fill: String
+    
+    var notice_bar_height: Double
+    
+    var opacity_disabled: String
+    
+    var option_height: Double
+    
+    var popup_zindex: Double
+    
+    var primary_button_fill: String
+    
+    var primary_button_fill_tap: String
+    
+    var radius_lg: Double
+    
+    var radius_md: Double
+    
+    var radius_sm: Double
+    
+    var radius_xs: Double
+    
+    var search_bar_fill: String
+    
+    var search_bar_font_size: Double
+    
+    var search_bar_height: Double
+    
+    var search_bar_input_height: Double
+    
+    var search_color_icon: String
+    
+    var segmented_control_color: String
+    
+    var segmented_control_fill_tap: String
+    
+    var segmented_control_height: Double
+    
+    var switch_checked_disabled: String
+    
+    var switch_fill: String
+    
+    var switch_unchecked: String
+    
+    var switch_unchecked_disabled: String
+    
+    var tab_bar_fill: String
+    
+    var tab_bar_height: Double
+    
+    var tabs_color: String
+    
+    var tabs_font_size_heading: Double
+    
+    var tabs_height: Double
+    
+    var tag_height: Double
+    
+    var tag_small_height: Double
+    
+    var toast_fill: String
+    
+    var toast_zindex: Double
+    
+    var v_spacing_lg: Double
+    
+    var v_spacing_md: Double
+    
+    var v_spacing_sm: Double
+    
+    var v_spacing_xl: Double
+    
+    var v_spacing_xs: Double
+    
+    var warning_button_fill: String
+    
+    var warning_button_fill_tap: String
+  }
+  object Theme {
+    
+    inline def apply(
+      action_sheet_zindex: Double,
+      actionsheet_item_font_size: Double,
+      actionsheet_item_height: Double,
+      border_color_base: String,
+      border_width_lg: Double,
+      border_width_md: Double,
+      border_width_sm: Double,
+      brand_error: String,
+      brand_important: String,
+      brand_primary: String,
+      brand_primary_tap: String,
+      brand_success: String,
+      brand_wait: String,
+      brand_warning: String,
+      button_font_size: Double,
+      button_font_size_sm: Double,
+      button_height: Double,
+      button_height_sm: Double,
+      checkbox_border: String,
+      checkbox_border_disabled: String,
+      checkbox_fill: String,
+      checkbox_fill_disabled: String,
+      color_icon_base: String,
+      color_link: String,
+      color_text_base: String,
+      color_text_base_inverse: String,
+      color_text_caption: String,
+      color_text_disabled: String,
+      color_text_paragraph: String,
+      color_text_placeholder: String,
+      color_text_secondary: String,
+      ease_in_out_quint: String,
+      fill_base: String,
+      fill_body: String,
+      fill_disabled: String,
+      fill_grey: String,
+      fill_mask: String,
+      fill_tap: String,
+      font_size_base: Double,
+      font_size_caption: Double,
+      font_size_caption_sm: Double,
+      font_size_heading: Double,
+      font_size_icontext: Double,
+      font_size_subhead: Double,
+      ghost_button_color: String,
+      ghost_button_fill_tap: String,
+      h_spacing_lg: Double,
+      h_spacing_md: Double,
+      h_spacing_sm: Double,
+      icon_size_lg: Double,
+      icon_size_md: Double,
+      icon_size_sm: Double,
+      icon_size_xs: Double,
+      icon_size_xxs: Double,
+      input_color_icon: String,
+      input_color_icon_tap: String,
+      input_font_size: Double,
+      input_label_width: Double,
+      line_height_base: Double,
+      line_height_paragraph: Double,
+      link_button_fill_tap: String,
+      link_button_font_size: Double,
+      list_item_height: Double,
+      list_item_height_sm: Double,
+      list_title_height: Double,
+      modal_button_font_size: Double,
+      modal_button_height: Double,
+      modal_font_size_heading: Double,
+      modal_zindex: Double,
+      notice_bar_fill: String,
+      notice_bar_height: Double,
+      opacity_disabled: String,
+      option_height: Double,
+      popup_zindex: Double,
+      primary_button_fill: String,
+      primary_button_fill_tap: String,
+      radius_lg: Double,
+      radius_md: Double,
+      radius_sm: Double,
+      radius_xs: Double,
+      search_bar_fill: String,
+      search_bar_font_size: Double,
+      search_bar_height: Double,
+      search_bar_input_height: Double,
+      search_color_icon: String,
+      segmented_control_color: String,
+      segmented_control_fill_tap: String,
+      segmented_control_height: Double,
+      switch_checked_disabled: String,
+      switch_fill: String,
+      switch_unchecked: String,
+      switch_unchecked_disabled: String,
+      tab_bar_fill: String,
+      tab_bar_height: Double,
+      tabs_color: String,
+      tabs_font_size_heading: Double,
+      tabs_height: Double,
+      tag_height: Double,
+      tag_small_height: Double,
+      toast_fill: String,
+      toast_zindex: Double,
+      v_spacing_lg: Double,
+      v_spacing_md: Double,
+      v_spacing_sm: Double,
+      v_spacing_xl: Double,
+      v_spacing_xs: Double,
+      warning_button_fill: String,
+      warning_button_fill_tap: String
+    ): Theme = {
+      val __obj = js.Dynamic.literal(action_sheet_zindex = action_sheet_zindex.asInstanceOf[js.Any], actionsheet_item_font_size = actionsheet_item_font_size.asInstanceOf[js.Any], actionsheet_item_height = actionsheet_item_height.asInstanceOf[js.Any], border_color_base = border_color_base.asInstanceOf[js.Any], border_width_lg = border_width_lg.asInstanceOf[js.Any], border_width_md = border_width_md.asInstanceOf[js.Any], border_width_sm = border_width_sm.asInstanceOf[js.Any], brand_error = brand_error.asInstanceOf[js.Any], brand_important = brand_important.asInstanceOf[js.Any], brand_primary = brand_primary.asInstanceOf[js.Any], brand_primary_tap = brand_primary_tap.asInstanceOf[js.Any], brand_success = brand_success.asInstanceOf[js.Any], brand_wait = brand_wait.asInstanceOf[js.Any], brand_warning = brand_warning.asInstanceOf[js.Any], button_font_size = button_font_size.asInstanceOf[js.Any], button_font_size_sm = button_font_size_sm.asInstanceOf[js.Any], button_height = button_height.asInstanceOf[js.Any], button_height_sm = button_height_sm.asInstanceOf[js.Any], checkbox_border = checkbox_border.asInstanceOf[js.Any], checkbox_border_disabled = checkbox_border_disabled.asInstanceOf[js.Any], checkbox_fill = checkbox_fill.asInstanceOf[js.Any], checkbox_fill_disabled = checkbox_fill_disabled.asInstanceOf[js.Any], color_icon_base = color_icon_base.asInstanceOf[js.Any], color_link = color_link.asInstanceOf[js.Any], color_text_base = color_text_base.asInstanceOf[js.Any], color_text_base_inverse = color_text_base_inverse.asInstanceOf[js.Any], color_text_caption = color_text_caption.asInstanceOf[js.Any], color_text_disabled = color_text_disabled.asInstanceOf[js.Any], color_text_paragraph = color_text_paragraph.asInstanceOf[js.Any], color_text_placeholder = color_text_placeholder.asInstanceOf[js.Any], color_text_secondary = color_text_secondary.asInstanceOf[js.Any], ease_in_out_quint = ease_in_out_quint.asInstanceOf[js.Any], fill_base = fill_base.asInstanceOf[js.Any], fill_body = fill_body.asInstanceOf[js.Any], fill_disabled = fill_disabled.asInstanceOf[js.Any], fill_grey = fill_grey.asInstanceOf[js.Any], fill_mask = fill_mask.asInstanceOf[js.Any], fill_tap = fill_tap.asInstanceOf[js.Any], font_size_base = font_size_base.asInstanceOf[js.Any], font_size_caption = font_size_caption.asInstanceOf[js.Any], font_size_caption_sm = font_size_caption_sm.asInstanceOf[js.Any], font_size_heading = font_size_heading.asInstanceOf[js.Any], font_size_icontext = font_size_icontext.asInstanceOf[js.Any], font_size_subhead = font_size_subhead.asInstanceOf[js.Any], ghost_button_color = ghost_button_color.asInstanceOf[js.Any], ghost_button_fill_tap = ghost_button_fill_tap.asInstanceOf[js.Any], h_spacing_lg = h_spacing_lg.asInstanceOf[js.Any], h_spacing_md = h_spacing_md.asInstanceOf[js.Any], h_spacing_sm = h_spacing_sm.asInstanceOf[js.Any], icon_size_lg = icon_size_lg.asInstanceOf[js.Any], icon_size_md = icon_size_md.asInstanceOf[js.Any], icon_size_sm = icon_size_sm.asInstanceOf[js.Any], icon_size_xs = icon_size_xs.asInstanceOf[js.Any], icon_size_xxs = icon_size_xxs.asInstanceOf[js.Any], input_color_icon = input_color_icon.asInstanceOf[js.Any], input_color_icon_tap = input_color_icon_tap.asInstanceOf[js.Any], input_font_size = input_font_size.asInstanceOf[js.Any], input_label_width = input_label_width.asInstanceOf[js.Any], line_height_base = line_height_base.asInstanceOf[js.Any], line_height_paragraph = line_height_paragraph.asInstanceOf[js.Any], link_button_fill_tap = link_button_fill_tap.asInstanceOf[js.Any], link_button_font_size = link_button_font_size.asInstanceOf[js.Any], list_item_height = list_item_height.asInstanceOf[js.Any], list_item_height_sm = list_item_height_sm.asInstanceOf[js.Any], list_title_height = list_title_height.asInstanceOf[js.Any], modal_button_font_size = modal_button_font_size.asInstanceOf[js.Any], modal_button_height = modal_button_height.asInstanceOf[js.Any], modal_font_size_heading = modal_font_size_heading.asInstanceOf[js.Any], modal_zindex = modal_zindex.asInstanceOf[js.Any], notice_bar_fill = notice_bar_fill.asInstanceOf[js.Any], notice_bar_height = notice_bar_height.asInstanceOf[js.Any], opacity_disabled = opacity_disabled.asInstanceOf[js.Any], option_height = option_height.asInstanceOf[js.Any], popup_zindex = popup_zindex.asInstanceOf[js.Any], primary_button_fill = primary_button_fill.asInstanceOf[js.Any], primary_button_fill_tap = primary_button_fill_tap.asInstanceOf[js.Any], radius_lg = radius_lg.asInstanceOf[js.Any], radius_md = radius_md.asInstanceOf[js.Any], radius_sm = radius_sm.asInstanceOf[js.Any], radius_xs = radius_xs.asInstanceOf[js.Any], search_bar_fill = search_bar_fill.asInstanceOf[js.Any], search_bar_font_size = search_bar_font_size.asInstanceOf[js.Any], search_bar_height = search_bar_height.asInstanceOf[js.Any], search_bar_input_height = search_bar_input_height.asInstanceOf[js.Any], search_color_icon = search_color_icon.asInstanceOf[js.Any], segmented_control_color = segmented_control_color.asInstanceOf[js.Any], segmented_control_fill_tap = segmented_control_fill_tap.asInstanceOf[js.Any], segmented_control_height = segmented_control_height.asInstanceOf[js.Any], switch_checked_disabled = switch_checked_disabled.asInstanceOf[js.Any], switch_fill = switch_fill.asInstanceOf[js.Any], switch_unchecked = switch_unchecked.asInstanceOf[js.Any], switch_unchecked_disabled = switch_unchecked_disabled.asInstanceOf[js.Any], tab_bar_fill = tab_bar_fill.asInstanceOf[js.Any], tab_bar_height = tab_bar_height.asInstanceOf[js.Any], tabs_color = tabs_color.asInstanceOf[js.Any], tabs_font_size_heading = tabs_font_size_heading.asInstanceOf[js.Any], tabs_height = tabs_height.asInstanceOf[js.Any], tag_height = tag_height.asInstanceOf[js.Any], tag_small_height = tag_small_height.asInstanceOf[js.Any], toast_fill = toast_fill.asInstanceOf[js.Any], toast_zindex = toast_zindex.asInstanceOf[js.Any], v_spacing_lg = v_spacing_lg.asInstanceOf[js.Any], v_spacing_md = v_spacing_md.asInstanceOf[js.Any], v_spacing_sm = v_spacing_sm.asInstanceOf[js.Any], v_spacing_xl = v_spacing_xl.asInstanceOf[js.Any], v_spacing_xs = v_spacing_xs.asInstanceOf[js.Any], warning_button_fill = warning_button_fill.asInstanceOf[js.Any], warning_button_fill_tap = warning_button_fill_tap.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Theme]
+    }
+    
+    extension [Self <: Theme](x: Self) {
+      
+      inline def setAction_sheet_zindex(value: Double): Self = StObject.set(x, "action_sheet_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setActionsheet_item_font_size(value: Double): Self = StObject.set(x, "actionsheet_item_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setActionsheet_item_height(value: Double): Self = StObject.set(x, "actionsheet_item_height", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_color_base(value: String): Self = StObject.set(x, "border_color_base", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_lg(value: Double): Self = StObject.set(x, "border_width_lg", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_md(value: Double): Self = StObject.set(x, "border_width_md", value.asInstanceOf[js.Any])
+      
+      inline def setBorder_width_sm(value: Double): Self = StObject.set(x, "border_width_sm", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_error(value: String): Self = StObject.set(x, "brand_error", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_important(value: String): Self = StObject.set(x, "brand_important", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_primary(value: String): Self = StObject.set(x, "brand_primary", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_primary_tap(value: String): Self = StObject.set(x, "brand_primary_tap", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_success(value: String): Self = StObject.set(x, "brand_success", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_wait(value: String): Self = StObject.set(x, "brand_wait", value.asInstanceOf[js.Any])
+      
+      inline def setBrand_warning(value: String): Self = StObject.set(x, "brand_warning", value.asInstanceOf[js.Any])
+      
+      inline def setButton_font_size(value: Double): Self = StObject.set(x, "button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setButton_font_size_sm(value: Double): Self = StObject.set(x, "button_font_size_sm", value.asInstanceOf[js.Any])
+      
+      inline def setButton_height(value: Double): Self = StObject.set(x, "button_height", value.asInstanceOf[js.Any])
+      
+      inline def setButton_height_sm(value: Double): Self = StObject.set(x, "button_height_sm", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border(value: String): Self = StObject.set(x, "checkbox_border", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_border_disabled(value: String): Self = StObject.set(x, "checkbox_border_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill(value: String): Self = StObject.set(x, "checkbox_fill", value.asInstanceOf[js.Any])
+      
+      inline def setCheckbox_fill_disabled(value: String): Self = StObject.set(x, "checkbox_fill_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColor_icon_base(value: String): Self = StObject.set(x, "color_icon_base", value.asInstanceOf[js.Any])
+      
+      inline def setColor_link(value: String): Self = StObject.set(x, "color_link", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_base(value: String): Self = StObject.set(x, "color_text_base", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_base_inverse(value: String): Self = StObject.set(x, "color_text_base_inverse", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_caption(value: String): Self = StObject.set(x, "color_text_caption", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_disabled(value: String): Self = StObject.set(x, "color_text_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_paragraph(value: String): Self = StObject.set(x, "color_text_paragraph", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_placeholder(value: String): Self = StObject.set(x, "color_text_placeholder", value.asInstanceOf[js.Any])
+      
+      inline def setColor_text_secondary(value: String): Self = StObject.set(x, "color_text_secondary", value.asInstanceOf[js.Any])
+      
+      inline def setEase_in_out_quint(value: String): Self = StObject.set(x, "ease_in_out_quint", value.asInstanceOf[js.Any])
+      
+      inline def setFill_base(value: String): Self = StObject.set(x, "fill_base", value.asInstanceOf[js.Any])
+      
+      inline def setFill_body(value: String): Self = StObject.set(x, "fill_body", value.asInstanceOf[js.Any])
+      
+      inline def setFill_disabled(value: String): Self = StObject.set(x, "fill_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setFill_grey(value: String): Self = StObject.set(x, "fill_grey", value.asInstanceOf[js.Any])
+      
+      inline def setFill_mask(value: String): Self = StObject.set(x, "fill_mask", value.asInstanceOf[js.Any])
+      
+      inline def setFill_tap(value: String): Self = StObject.set(x, "fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_base(value: Double): Self = StObject.set(x, "font_size_base", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_caption(value: Double): Self = StObject.set(x, "font_size_caption", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_caption_sm(value: Double): Self = StObject.set(x, "font_size_caption_sm", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_heading(value: Double): Self = StObject.set(x, "font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_icontext(value: Double): Self = StObject.set(x, "font_size_icontext", value.asInstanceOf[js.Any])
+      
+      inline def setFont_size_subhead(value: Double): Self = StObject.set(x, "font_size_subhead", value.asInstanceOf[js.Any])
+      
+      inline def setGhost_button_color(value: String): Self = StObject.set(x, "ghost_button_color", value.asInstanceOf[js.Any])
+      
+      inline def setGhost_button_fill_tap(value: String): Self = StObject.set(x, "ghost_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_lg(value: Double): Self = StObject.set(x, "h_spacing_lg", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_md(value: Double): Self = StObject.set(x, "h_spacing_md", value.asInstanceOf[js.Any])
+      
+      inline def setH_spacing_sm(value: Double): Self = StObject.set(x, "h_spacing_sm", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_lg(value: Double): Self = StObject.set(x, "icon_size_lg", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_md(value: Double): Self = StObject.set(x, "icon_size_md", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_sm(value: Double): Self = StObject.set(x, "icon_size_sm", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_xs(value: Double): Self = StObject.set(x, "icon_size_xs", value.asInstanceOf[js.Any])
+      
+      inline def setIcon_size_xxs(value: Double): Self = StObject.set(x, "icon_size_xxs", value.asInstanceOf[js.Any])
+      
+      inline def setInput_color_icon(value: String): Self = StObject.set(x, "input_color_icon", value.asInstanceOf[js.Any])
+      
+      inline def setInput_color_icon_tap(value: String): Self = StObject.set(x, "input_color_icon_tap", value.asInstanceOf[js.Any])
+      
+      inline def setInput_font_size(value: Double): Self = StObject.set(x, "input_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setInput_label_width(value: Double): Self = StObject.set(x, "input_label_width", value.asInstanceOf[js.Any])
+      
+      inline def setLine_height_base(value: Double): Self = StObject.set(x, "line_height_base", value.asInstanceOf[js.Any])
+      
+      inline def setLine_height_paragraph(value: Double): Self = StObject.set(x, "line_height_paragraph", value.asInstanceOf[js.Any])
+      
+      inline def setLink_button_fill_tap(value: String): Self = StObject.set(x, "link_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setLink_button_font_size(value: Double): Self = StObject.set(x, "link_button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setList_item_height(value: Double): Self = StObject.set(x, "list_item_height", value.asInstanceOf[js.Any])
+      
+      inline def setList_item_height_sm(value: Double): Self = StObject.set(x, "list_item_height_sm", value.asInstanceOf[js.Any])
+      
+      inline def setList_title_height(value: Double): Self = StObject.set(x, "list_title_height", value.asInstanceOf[js.Any])
+      
+      inline def setModal_button_font_size(value: Double): Self = StObject.set(x, "modal_button_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setModal_button_height(value: Double): Self = StObject.set(x, "modal_button_height", value.asInstanceOf[js.Any])
+      
+      inline def setModal_font_size_heading(value: Double): Self = StObject.set(x, "modal_font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setModal_zindex(value: Double): Self = StObject.set(x, "modal_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setNotice_bar_fill(value: String): Self = StObject.set(x, "notice_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setNotice_bar_height(value: Double): Self = StObject.set(x, "notice_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setOpacity_disabled(value: String): Self = StObject.set(x, "opacity_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setOption_height(value: Double): Self = StObject.set(x, "option_height", value.asInstanceOf[js.Any])
+      
+      inline def setPopup_zindex(value: Double): Self = StObject.set(x, "popup_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setPrimary_button_fill(value: String): Self = StObject.set(x, "primary_button_fill", value.asInstanceOf[js.Any])
+      
+      inline def setPrimary_button_fill_tap(value: String): Self = StObject.set(x, "primary_button_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_lg(value: Double): Self = StObject.set(x, "radius_lg", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_md(value: Double): Self = StObject.set(x, "radius_md", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_sm(value: Double): Self = StObject.set(x, "radius_sm", value.asInstanceOf[js.Any])
+      
+      inline def setRadius_xs(value: Double): Self = StObject.set(x, "radius_xs", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_fill(value: String): Self = StObject.set(x, "search_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_font_size(value: Double): Self = StObject.set(x, "search_bar_font_size", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_height(value: Double): Self = StObject.set(x, "search_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_bar_input_height(value: Double): Self = StObject.set(x, "search_bar_input_height", value.asInstanceOf[js.Any])
+      
+      inline def setSearch_color_icon(value: String): Self = StObject.set(x, "search_color_icon", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_color(value: String): Self = StObject.set(x, "segmented_control_color", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_fill_tap(value: String): Self = StObject.set(x, "segmented_control_fill_tap", value.asInstanceOf[js.Any])
+      
+      inline def setSegmented_control_height(value: Double): Self = StObject.set(x, "segmented_control_height", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_checked_disabled(value: String): Self = StObject.set(x, "switch_checked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_fill(value: String): Self = StObject.set(x, "switch_fill", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked(value: String): Self = StObject.set(x, "switch_unchecked", value.asInstanceOf[js.Any])
+      
+      inline def setSwitch_unchecked_disabled(value: String): Self = StObject.set(x, "switch_unchecked_disabled", value.asInstanceOf[js.Any])
+      
+      inline def setTab_bar_fill(value: String): Self = StObject.set(x, "tab_bar_fill", value.asInstanceOf[js.Any])
+      
+      inline def setTab_bar_height(value: Double): Self = StObject.set(x, "tab_bar_height", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_color(value: String): Self = StObject.set(x, "tabs_color", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_font_size_heading(value: Double): Self = StObject.set(x, "tabs_font_size_heading", value.asInstanceOf[js.Any])
+      
+      inline def setTabs_height(value: Double): Self = StObject.set(x, "tabs_height", value.asInstanceOf[js.Any])
+      
+      inline def setTag_height(value: Double): Self = StObject.set(x, "tag_height", value.asInstanceOf[js.Any])
+      
+      inline def setTag_small_height(value: Double): Self = StObject.set(x, "tag_small_height", value.asInstanceOf[js.Any])
+      
+      inline def setToast_fill(value: String): Self = StObject.set(x, "toast_fill", value.asInstanceOf[js.Any])
+      
+      inline def setToast_zindex(value: Double): Self = StObject.set(x, "toast_zindex", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_lg(value: Double): Self = StObject.set(x, "v_spacing_lg", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_md(value: Double): Self = StObject.set(x, "v_spacing_md", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_sm(value: Double): Self = StObject.set(x, "v_spacing_sm", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_xl(value: Double): Self = StObject.set(x, "v_spacing_xl", value.asInstanceOf[js.Any])
+      
+      inline def setV_spacing_xs(value: Double): Self = StObject.set(x, "v_spacing_xs", value.asInstanceOf[js.Any])
+      
+      inline def setWarning_button_fill(value: String): Self = StObject.set(x, "warning_button_fill", value.asInstanceOf[js.Any])
+      
+      inline def setWarning_button_fill_tap(value: String): Self = StObject.set(x, "warning_button_fill_tap", value.asInstanceOf[js.Any])
+    }
+  }
+  
+  trait ThemeProviderProps extends StObject {
+    
+    var children: js.UndefOr[Node] = js.undefined
+    
+    var value: js.UndefOr[PartialTheme] = js.undefined
+  }
+  object ThemeProviderProps {
+    
+    inline def apply(): ThemeProviderProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThemeProviderProps]
+    }
+    
+    extension [Self <: ThemeProviderProps](x: Self) {
+      
+      inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+      
+      inline def setChildrenNull: Self = StObject.set(x, "children", null)
+      
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      
+      inline def setChildrenVarargs(value: (Empty | String | JsNumber | japgolly.scalajs.react.facade.React.Element)*): Self = StObject.set(x, "children", js.Array(value*))
+      
+      inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+      
+      inline def setValue(value: PartialTheme): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    }
+  }
+  
+  trait UseThemeContextProps extends StObject {
+    
+    var theme: js.UndefOr[PartialTheme] = js.undefined
+  }
+  object UseThemeContextProps {
+    
+    inline def apply(): UseThemeContextProps = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[UseThemeContextProps]
+    }
+    
+    extension [Self <: UseThemeContextProps](x: Self) {
+      
+      inline def setTheme(value: PartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    }
+  }
+  
+  trait WithThemeProps[T, S] extends StObject {
+    
+    def children(styles: T & StringDictionary[Any], theme: Theme): Node
+    
+    var styles: js.UndefOr[S & StringDictionary[Any]] = js.undefined
+    
+    var themeStyles: js.UndefOr[js.Function1[/* theme */ Theme, T]] = js.undefined
+  }
+  object WithThemeProps {
+    
+    inline def apply[T, S](children: (T & StringDictionary[Any], Theme) => Node): WithThemeProps[T, S] = {
+      val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children))
+      __obj.asInstanceOf[WithThemeProps[T, S]]
+    }
+    
+    extension [Self <: WithThemeProps[?, ?], T, S](x: Self & (WithThemeProps[T, S])) {
+      
+      inline def setChildren(value: (T & StringDictionary[Any], Theme) => Node): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      
+      inline def setStyles(value: S & StringDictionary[Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      
+      inline def setThemeStyles(value: /* theme */ Theme => T): Self = StObject.set(x, "themeStyles", js.Any.fromFunction1(value))
+      
+      inline def setThemeStylesUndefined: Self = StObject.set(x, "themeStyles", js.undefined)
+    }
+  }
+  
+  trait WithThemeStyles[T] extends StObject {
+    
+    var styles: js.UndefOr[Partial[T]] = js.undefined
+  }
+  object WithThemeStyles {
+    
+    inline def apply[T](): WithThemeStyles[T] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[WithThemeStyles[T]]
+    }
+    
+    extension [Self <: WithThemeStyles[?], T](x: Self & WithThemeStyles[T]) {
+      
+      inline def setStyles(value: Partial[T]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    }
+  }
+}

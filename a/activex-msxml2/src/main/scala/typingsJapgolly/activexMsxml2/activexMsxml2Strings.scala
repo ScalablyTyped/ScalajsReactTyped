@@ -1,19 +1,16 @@
 package typingsJapgolly.activexMsxml2
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexMsxml2Strings {
-  @js.native
-  sealed trait ondataavailable extends js.Object
   
   @js.native
-  sealed trait onreadystatechange extends js.Object
+  sealed trait ondataavailable extends StObject
+  inline def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
   
-  @scala.inline
-  def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
-  @scala.inline
-  def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
+  @js.native
+  sealed trait onreadystatechange extends StObject
+  inline def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
 }
-

@@ -1,6 +1,5 @@
 package typingsJapgolly.openlayers.mod.olx.interaction
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.openlayers.mod.Collection
 import typingsJapgolly.openlayers.mod.EventsConditionType
 import typingsJapgolly.openlayers.mod.Feature
@@ -8,43 +7,73 @@ import typingsJapgolly.openlayers.mod.MapBrowserEvent
 import typingsJapgolly.openlayers.mod.StyleFunction
 import typingsJapgolly.openlayers.mod.source.Vector
 import typingsJapgolly.openlayers.mod.style.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ModifyOptions extends js.Object {
+trait ModifyOptions extends StObject {
+  
   var condition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var deleteCondition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var features: js.UndefOr[Collection[Feature]] = js.undefined
+  
   var insertVertexCondition: js.UndefOr[EventsConditionType] = js.undefined
+  
   var pixelTolerance: js.UndefOr[Double] = js.undefined
+  
   var source: js.UndefOr[Vector] = js.undefined
+  
   var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
+  
   var wrapX: js.UndefOr[Boolean] = js.undefined
 }
-
 object ModifyOptions {
-  @scala.inline
-  def apply(
-    condition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    deleteCondition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    features: Collection[Feature] = null,
-    insertVertexCondition: /* event */ MapBrowserEvent => CallbackTo[Boolean] = null,
-    pixelTolerance: Int | Double = null,
-    source: Vector = null,
-    style: Style | js.Array[Style] | StyleFunction = null,
-    wrapX: js.UndefOr[Boolean] = js.undefined
-  ): ModifyOptions = {
+  
+  inline def apply(): ModifyOptions = {
     val __obj = js.Dynamic.literal()
-    if (condition != null) __obj.updateDynamic("condition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => condition(t0).runNow()))
-    if (deleteCondition != null) __obj.updateDynamic("deleteCondition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => deleteCondition(t0).runNow()))
-    if (features != null) __obj.updateDynamic("features")(features.asInstanceOf[js.Any])
-    if (insertVertexCondition != null) __obj.updateDynamic("insertVertexCondition")(js.Any.fromFunction1((t0: /* event */ typingsJapgolly.openlayers.mod.MapBrowserEvent) => insertVertexCondition(t0).runNow()))
-    if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
-    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyOptions]
   }
+  
+  extension [Self <: ModifyOptions](x: Self) {
+    
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    
+    inline def setDeleteCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "deleteCondition", js.Any.fromFunction1(value))
+    
+    inline def setDeleteConditionUndefined: Self = StObject.set(x, "deleteCondition", js.undefined)
+    
+    inline def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    inline def setInsertVertexCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "insertVertexCondition", js.Any.fromFunction1(value))
+    
+    inline def setInsertVertexConditionUndefined: Self = StObject.set(x, "insertVertexCondition", js.undefined)
+    
+    inline def setPixelTolerance(value: Double): Self = StObject.set(x, "pixelTolerance", value.asInstanceOf[js.Any])
+    
+    inline def setPixelToleranceUndefined: Self = StObject.set(x, "pixelTolerance", js.undefined)
+    
+    inline def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    
+    inline def setStyle(value: Style | js.Array[Style] | StyleFunction): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleFunction2(
+      value: (/* feature */ Feature | typingsJapgolly.openlayers.mod.render.Feature, /* resolution */ Double) => Style | js.Array[Style] | Null
+    ): Self = StObject.set(x, "style", js.Any.fromFunction2(value))
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setStyleVarargs(value: Style*): Self = StObject.set(x, "style", js.Array(value*))
+    
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+  }
 }
-

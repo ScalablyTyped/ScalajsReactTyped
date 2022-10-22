@@ -1,19 +1,24 @@
 package typingsJapgolly.postmanCollection.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PropertyBaseDefinition extends js.Object {
+trait PropertyBaseDefinition extends StObject {
+  
   var description: js.UndefOr[String | DescriptionDefinition] = js.undefined
 }
-
 object PropertyBaseDefinition {
-  @scala.inline
-  def apply(description: String | DescriptionDefinition = null): PropertyBaseDefinition = {
+  
+  inline def apply(): PropertyBaseDefinition = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertyBaseDefinition]
   }
+  
+  extension [Self <: PropertyBaseDefinition](x: Self) {
+    
+    inline def setDescription(value: String | DescriptionDefinition): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+  }
 }
-

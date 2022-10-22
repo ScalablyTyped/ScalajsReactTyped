@@ -1,58 +1,64 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.`hide-children`
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.exclusive
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hide
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.independent
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.inherited
-import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.show
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait GroupLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with LayersMixinProperties
-     with PortalLayerProperties {
+     with TablesMixinProperties
+     with PortalLayerProperties
+     with BlendLayerProperties {
+  
   /**
-    * Indicates how to manage the visibility of the children layers. Possible values are described in the table below.
+    * The maximum scale (most zoomed in) at which the layer is visible in the view.
     *
-    * Value | Description
-    * ------|------------
-    * independent | Each child layer manages its visibility independent from other layers.
-    * inherited | Each child layer's visibility matches the [GroupLayer’s visibility](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visible).
-    * exclusive | Only one child layer is visible at a time.
+    * @default 0
     *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#maxScale)
+    */
+  var maxScale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The minimum scale (most zoomed out) at which the layer is visible in the view.
+    *
+    * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#minScale)
+    */
+  var minScale: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Indicates how to manage the visibility of the children layers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GroupLayer.html#visibilityMode)
     */
   var visibilityMode: js.UndefOr[independent | inherited | exclusive] = js.undefined
 }
-
 object GroupLayerProperties {
-  @scala.inline
-  def apply(
-    fullExtent: ExtentProperties = null,
-    id: String = null,
-    layers: CollectionProperties[LayerProperties] | js.Array[LayerProperties] = null,
-    listMode: show | hide | `hide-children` = null,
-    opacity: Int | Double = null,
-    portalItem: PortalItemProperties = null,
-    title: String = null,
-    visibilityMode: independent | inherited | exclusive = null,
-    visible: js.UndefOr[Boolean] = js.undefined
-  ): GroupLayerProperties = {
+  
+  inline def apply(): GroupLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (fullExtent != null) __obj.updateDynamic("fullExtent")(fullExtent.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
-    if (listMode != null) __obj.updateDynamic("listMode")(listMode.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (portalItem != null) __obj.updateDynamic("portalItem")(portalItem.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (visibilityMode != null) __obj.updateDynamic("visibilityMode")(visibilityMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupLayerProperties]
   }
+  
+  extension [Self <: GroupLayerProperties](x: Self) {
+    
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    
+    inline def setVisibilityMode(value: independent | inherited | exclusive): Self = StObject.set(x, "visibilityMode", value.asInstanceOf[js.Any])
+    
+    inline def setVisibilityModeUndefined: Self = StObject.set(x, "visibilityMode", js.undefined)
+  }
 }
-

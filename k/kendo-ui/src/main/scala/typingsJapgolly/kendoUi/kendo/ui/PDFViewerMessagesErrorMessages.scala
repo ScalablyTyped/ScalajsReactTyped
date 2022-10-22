@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PDFViewerMessagesErrorMessages extends js.Object {
+trait PDFViewerMessagesErrorMessages extends StObject {
+  
   var notFound: js.UndefOr[String] = js.undefined
+  
   var notSupported: js.UndefOr[String] = js.undefined
+  
   var parseError: js.UndefOr[String] = js.undefined
 }
-
 object PDFViewerMessagesErrorMessages {
-  @scala.inline
-  def apply(notFound: String = null, notSupported: String = null, parseError: String = null): PDFViewerMessagesErrorMessages = {
+  
+  inline def apply(): PDFViewerMessagesErrorMessages = {
     val __obj = js.Dynamic.literal()
-    if (notFound != null) __obj.updateDynamic("notFound")(notFound.asInstanceOf[js.Any])
-    if (notSupported != null) __obj.updateDynamic("notSupported")(notSupported.asInstanceOf[js.Any])
-    if (parseError != null) __obj.updateDynamic("parseError")(parseError.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFViewerMessagesErrorMessages]
   }
+  
+  extension [Self <: PDFViewerMessagesErrorMessages](x: Self) {
+    
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    
+    inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+    
+    inline def setNotSupported(value: String): Self = StObject.set(x, "notSupported", value.asInstanceOf[js.Any])
+    
+    inline def setNotSupportedUndefined: Self = StObject.set(x, "notSupported", js.undefined)
+    
+    inline def setParseError(value: String): Self = StObject.set(x, "parseError", value.asInstanceOf[js.Any])
+    
+    inline def setParseErrorUndefined: Self = StObject.set(x, "parseError", js.undefined)
+  }
 }
-

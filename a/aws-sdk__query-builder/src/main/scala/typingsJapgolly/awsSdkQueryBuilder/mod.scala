@@ -1,43 +1,44 @@
 package typingsJapgolly.awsSdkQueryBuilder
 
-import typingsJapgolly.awsSdkTypes.marshallerMod.BodySerializer
-import typingsJapgolly.awsSdkTypes.marshallerMod.BodySerializerBuildOptions
-import typingsJapgolly.awsSdkTypes.utilMod.Decoder
-import typingsJapgolly.awsSdkTypes.utilMod.Encoder
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Decoder
+import typingsJapgolly.awsSdkTypes.distTypesUtilMod.Encoder
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/query-builder", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializer * / any */ @JSImport("@aws-sdk/query-builder", "QueryBuilder")
   @js.native
-  class QueryBuilder protected () extends BodySerializer[String] {
+  open class QueryBuilder protected () extends StObject {
     def this(base64Encoder: Encoder, utf8Decoder: Decoder) = this()
     def this(base64Encoder: Encoder, utf8Decoder: Decoder, protocol: String) = this()
-    val base64Encoder: js.Any = js.native
-    var capitalizeFirstChar: js.Any = js.native
-    val isEC2Query: js.Any = js.native
-    var serialize: js.Any = js.native
-    var serializeBlob: js.Any = js.native
-    var serializeList: js.Any = js.native
-    var serializeMap: js.Any = js.native
-    var serializeMapEntry: js.Any = js.native
-    var serializeStructure: js.Any = js.native
-    var serializeTimestamp: js.Any = js.native
-    val utf8Decoder: js.Any = js.native
-    /**
-      * Converts the provided `input` into the serialized format described in the
-      * provided `shape`.
-      *
-      * @param options Modeled and user-provided operation input to serialize.
-      *
-      * @throws if a node in the input cannot be converted into the type
-      *          specified by the serialization model
-      */
-    /* CompleteClass */
-    override def build(options: BodySerializerBuildOptions): String = js.native
+    
+    /* private */ val base64Encoder: Any = js.native
+    
+    def build(
+      hasOperationInput: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BodySerializerBuildOptions */ Any
+    ): String = js.native
+    
+    /* private */ var capitalizeFirstChar: Any = js.native
+    
+    /* private */ val isEC2Query: Any = js.native
+    
+    /* private */ var serialize: Any = js.native
+    
+    /* private */ var serializeBlob: Any = js.native
+    
+    /* private */ var serializeList: Any = js.native
+    
+    /* private */ var serializeMap: Any = js.native
+    
+    /* private */ var serializeMapEntry: Any = js.native
+    
+    /* private */ var serializeStructure: Any = js.native
+    
+    /* private */ var serializeTimestamp: Any = js.native
+    
+    /* private */ val utf8Decoder: Any = js.native
   }
-  
 }
-

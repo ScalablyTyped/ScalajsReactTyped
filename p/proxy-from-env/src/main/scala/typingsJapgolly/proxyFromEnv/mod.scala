@@ -1,14 +1,16 @@
 package typingsJapgolly.proxyFromEnv
 
 import typingsJapgolly.node.urlMod.Url
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("proxy-from-env", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def getProxyForUrl(url: String): String = js.native
-  def getProxyForUrl(url: Url): String = js.native
+object mod {
+  
+  @JSImport("proxy-from-env", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getProxyForUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getProxyForUrl(url: Url): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProxyForUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

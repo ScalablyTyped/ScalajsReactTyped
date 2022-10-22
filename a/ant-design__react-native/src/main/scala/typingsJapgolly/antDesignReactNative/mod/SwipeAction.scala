@@ -1,19 +1,10 @@
 package typingsJapgolly.antDesignReactNative.mod
 
-import typingsJapgolly.antDesignReactNative.swipeActionMod.SwipeActionProps
-import typingsJapgolly.antDesignReactNative.swipeActionMod.default
+import typingsJapgolly.antDesignReactNative.libSwipeActionMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ant-design/react-native", "SwipeAction")
 @js.native
-class SwipeAction () extends default
-
-/* static members */
-@JSImport("@ant-design/react-native", "SwipeAction")
-@js.native
-object SwipeAction extends js.Object {
-  var defaultProps: SwipeActionProps = js.native
-}
-
+open class SwipeAction () extends default

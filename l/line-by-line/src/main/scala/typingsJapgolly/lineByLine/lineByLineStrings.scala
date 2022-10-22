@@ -1,64 +1,52 @@
 package typingsJapgolly.lineByLine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineByLineStrings {
-  @js.native
-  sealed trait ascii extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait ascii extends StObject
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait binary extends StObject
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait end extends StObject
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait latin1 extends StObject
+  inline def latin1: latin1 = "latin1".asInstanceOf[latin1]
   
   @js.native
-  sealed trait ucs2 extends js.Object
+  sealed trait line extends StObject
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait ucs2 extends StObject
+  inline def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf16le extends StObject
+  inline def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
   
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def latin1: latin1 = "latin1".asInstanceOf[latin1]
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
-  @scala.inline
-  def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
-  @scala.inline
-  def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @js.native
+  sealed trait utf8 extends StObject
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
-

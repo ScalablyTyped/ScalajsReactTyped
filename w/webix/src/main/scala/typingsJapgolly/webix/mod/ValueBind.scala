@@ -1,13 +1,12 @@
 package typingsJapgolly.webix.mod
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.webix.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ValueBind extends js.Object
-
-@JSImport("webix", "ValueBind")
-@js.native
-object ValueBind extends TopLevel[ValueBind]
-
+trait ValueBind extends StObject
+object ValueBind {
+  
+  inline def apply: ValueBind = ^.asInstanceOf[js.Dynamic].selectDynamic("ValueBind").asInstanceOf[ValueBind]
+}

@@ -1,35 +1,33 @@
 package typingsJapgolly.typescript.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait FileWatcherEventKind extends js.Object
-
+sealed trait FileWatcherEventKind extends StObject
 @JSImport("typescript", "FileWatcherEventKind")
 @js.native
-object FileWatcherEventKind extends js.Object {
-  @js.native
-  sealed trait Changed extends FileWatcherEventKind
-  
-  @js.native
-  sealed trait Created extends FileWatcherEventKind
-  
-  @js.native
-  sealed trait Deleted extends FileWatcherEventKind
+object FileWatcherEventKind extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[FileWatcherEventKind with Double] = js.native
-  /* 1 */ @js.native
-  object Changed extends TopLevel[Changed with Double]
+  def apply(value: Double): js.UndefOr[FileWatcherEventKind & Double] = js.native
   
-  /* 0 */ @js.native
-  object Created extends TopLevel[Created with Double]
+  @js.native
+  sealed trait Changed
+    extends StObject
+       with FileWatcherEventKind
+  /* 1 */ val Changed: typingsJapgolly.typescript.mod.FileWatcherEventKind.Changed & Double = js.native
   
-  /* 2 */ @js.native
-  object Deleted extends TopLevel[Deleted with Double]
+  @js.native
+  sealed trait Created
+    extends StObject
+       with FileWatcherEventKind
+  /* 0 */ val Created: typingsJapgolly.typescript.mod.FileWatcherEventKind.Created & Double = js.native
   
+  @js.native
+  sealed trait Deleted
+    extends StObject
+       with FileWatcherEventKind
+  /* 2 */ val Deleted: typingsJapgolly.typescript.mod.FileWatcherEventKind.Deleted & Double = js.native
 }
-

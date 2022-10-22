@@ -1,7 +1,7 @@
 
 # Scala.js typings for yaml
 
-Typings are for version 1.2
+Typings are for version 2.1.3
 
 ## Library description:
 JavaScript parser and stringifier for YAML
@@ -10,10 +10,10 @@ JavaScript parser and stringifier for YAML
 | ------------------ | :-------------: |
 | Full name          | yaml |
 | Keywords           | YAML, parser, stringifier |
-| # releases         | 33 |
-| # dependents       | 504 |
-| # downloads        | 17385543 |
-| # stars            | 15 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 9.233062333333333E7 |
+| # stars            | 732.0 |
 
 ## Links
 - [Homepage](https://eemeli.org/yaml/)
@@ -24,7 +24,7 @@ JavaScript parser and stringifier for YAML
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

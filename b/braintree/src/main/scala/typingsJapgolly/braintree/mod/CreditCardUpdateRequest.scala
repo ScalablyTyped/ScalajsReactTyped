@@ -1,40 +1,61 @@
 package typingsJapgolly.braintree.mod
 
-import typingsJapgolly.braintree.AnonCountryCodeAlpha2
+import typingsJapgolly.braintree.anon.CountryCodeAlpha2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreditCardUpdateRequest extends js.Object {
-  var billingAddress: js.UndefOr[AnonCountryCodeAlpha2] = js.undefined
+trait CreditCardUpdateRequest extends StObject {
+  
+  var billingAddress: js.UndefOr[CountryCodeAlpha2] = js.undefined
+  
   var cardholderName: js.UndefOr[String] = js.undefined
+  
   var cvv: js.UndefOr[String] = js.undefined
+  
   var expirationDate: js.UndefOr[String] = js.undefined
+  
   var expirationMonth: js.UndefOr[String] = js.undefined
+  
   var expirationYear: js.UndefOr[String] = js.undefined
+  
   var number: js.UndefOr[String] = js.undefined
 }
-
 object CreditCardUpdateRequest {
-  @scala.inline
-  def apply(
-    billingAddress: AnonCountryCodeAlpha2 = null,
-    cardholderName: String = null,
-    cvv: String = null,
-    expirationDate: String = null,
-    expirationMonth: String = null,
-    expirationYear: String = null,
-    number: String = null
-  ): CreditCardUpdateRequest = {
+  
+  inline def apply(): CreditCardUpdateRequest = {
     val __obj = js.Dynamic.literal()
-    if (billingAddress != null) __obj.updateDynamic("billingAddress")(billingAddress.asInstanceOf[js.Any])
-    if (cardholderName != null) __obj.updateDynamic("cardholderName")(cardholderName.asInstanceOf[js.Any])
-    if (cvv != null) __obj.updateDynamic("cvv")(cvv.asInstanceOf[js.Any])
-    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
-    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
-    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreditCardUpdateRequest]
   }
+  
+  extension [Self <: CreditCardUpdateRequest](x: Self) {
+    
+    inline def setBillingAddress(value: CountryCodeAlpha2): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
+    
+    inline def setBillingAddressUndefined: Self = StObject.set(x, "billingAddress", js.undefined)
+    
+    inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
+    
+    inline def setCardholderNameUndefined: Self = StObject.set(x, "cardholderName", js.undefined)
+    
+    inline def setCvv(value: String): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+    
+    inline def setCvvUndefined: Self = StObject.set(x, "cvv", js.undefined)
+    
+    inline def setExpirationDate(value: String): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+    
+    inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    
+    inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+  }
 }
-

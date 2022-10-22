@@ -1,24 +1,20 @@
 package typingsJapgolly.weixinApp.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weixinApp.weixinAppStrings.fingerPrint
   - typingsJapgolly.weixinApp.weixinAppStrings.facial
   - typingsJapgolly.weixinApp.weixinAppStrings.speech
 */
-trait AuthModes extends js.Object
-
+trait AuthModes extends StObject
 object AuthModes {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def facial: typingsJapgolly.weixinApp.weixinAppStrings.facial = this.cast("facial")
-  @scala.inline
-  def fingerPrint: typingsJapgolly.weixinApp.weixinAppStrings.fingerPrint = this.cast("fingerPrint")
-  @scala.inline
-  def speech: typingsJapgolly.weixinApp.weixinAppStrings.speech = this.cast("speech")
+  
+  inline def facial: typingsJapgolly.weixinApp.weixinAppStrings.facial = "facial".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.facial]
+  
+  inline def fingerPrint: typingsJapgolly.weixinApp.weixinAppStrings.fingerPrint = "fingerPrint".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.fingerPrint]
+  
+  inline def speech: typingsJapgolly.weixinApp.weixinAppStrings.speech = "speech".asInstanceOf[typingsJapgolly.weixinApp.weixinAppStrings.speech]
 }
-

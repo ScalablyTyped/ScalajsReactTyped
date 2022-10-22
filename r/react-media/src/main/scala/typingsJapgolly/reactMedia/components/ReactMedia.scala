@@ -2,53 +2,54 @@ package typingsJapgolly.reactMedia.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactMedia.mod.MediaQueryValue
-import typingsJapgolly.reactMedia.mod.SingleQueryProps
-import typingsJapgolly.std.Window_
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.Window
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactMedia.mod.MultiQueryProps
+import typingsJapgolly.reactMedia.mod.QueryResults
+import typingsJapgolly.std.Partial
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactMedia {
-  def apply(
-    query: MediaQueryValue,
-    defaultMatches: js.UndefOr[Boolean] = js.undefined,
-    onChange: /* matches */ Boolean => Callback = null,
-    render: js.UndefOr[CallbackTo[Node]] = js.undefined,
-    targetWindow: Window_ = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: (js.Function1[/* matches */ Boolean, Node]) | Node = null
-  ): UnmountedSimple[
-    SingleQueryProps, 
-    MountedWithRawType[SingleQueryProps, js.Object, RawMounted[SingleQueryProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultMatches)) __obj.updateDynamic("defaultMatches")(defaultMatches.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* matches */ scala.Boolean) => onChange(t0).runNow()))
-    render.foreach(p => __obj.updateDynamic("render")(p.toJsFn))
-    if (targetWindow != null) __obj.updateDynamic("targetWindow")(targetWindow.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reactMedia.mod.SingleQueryProps, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactMedia.mod.SingleQueryProps])
+  inline def apply[Q](queries: Q): Builder[Q] = {
+    val __props = js.Dynamic.literal(queries = queries.asInstanceOf[js.Any])
+    new Builder[Q](js.Array(this.component, __props.asInstanceOf[MultiQueryProps[Q]]))
   }
+  
   @JSImport("react-media", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[Q] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def children(value: (js.Function1[/* matches */ QueryResults[Q], Node]) | Node): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* matches */ QueryResults[Q] => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def defaultMatches(value: Partial[QueryResults[Q]]): this.type = set("defaultMatches", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* matches */ QueryResults[Q] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* matches */ QueryResults[Q]) => value(t0).runNow()))
+    
+    inline def render(value: CallbackTo[Node]): this.type = set("render", value.toJsFn)
+    
+    inline def targetWindow(value: Window): this.type = set("targetWindow", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[Q](p: MultiQueryProps[Q]): Builder[Q] = new Builder[Q](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

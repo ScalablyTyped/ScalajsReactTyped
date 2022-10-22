@@ -1,24 +1,28 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
-import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.user
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * User Object (Private)
   * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
   */
-trait UserObjectPrivate extends UserObjectPublic {
+trait UserObjectPrivate
+  extends StObject
+     with UserObjectPublic {
+  
   var birthdate: String
+  
   var country: String
+  
   var email: String
+  
   var product: String
 }
-
 object UserObjectPrivate {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     birthdate: String,
     country: String,
     email: String,
@@ -26,18 +30,21 @@ object UserObjectPrivate {
     href: String,
     id: String,
     product: String,
-    `type`: user,
-    uri: String,
-    display_name: String = null,
-    followers: FollowersObject = null,
-    images: js.Array[ImageObject] = null
+    uri: String
   ): UserObjectPrivate = {
     val __obj = js.Dynamic.literal(birthdate = birthdate.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], product = product.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (display_name != null) __obj.updateDynamic("display_name")(display_name.asInstanceOf[js.Any])
-    if (followers != null) __obj.updateDynamic("followers")(followers.asInstanceOf[js.Any])
-    if (images != null) __obj.updateDynamic("images")(images.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObjectPrivate]
   }
+  
+  extension [Self <: UserObjectPrivate](x: Self) {
+    
+    inline def setBirthdate(value: String): Self = StObject.set(x, "birthdate", value.asInstanceOf[js.Any])
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+  }
 }
-

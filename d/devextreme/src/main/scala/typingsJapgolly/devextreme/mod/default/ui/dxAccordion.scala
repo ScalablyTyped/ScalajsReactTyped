@@ -1,19 +1,12 @@
 package typingsJapgolly.devextreme.mod.default.ui
 
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.devextreme.mod.DevExpress.ui.dxAccordionOptions
-import typingsJapgolly.devextreme.mod._Global_.JQuery
+import typingsJapgolly.devextreme.mod.DevExpress.ui.dxAccordion.ItemLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("devextreme", "ui.dxAccordion")
+@JSImport("devextreme", "default.ui.dxAccordion")
 @js.native
-class dxAccordion protected ()
-  extends typingsJapgolly.devextreme.mod.DevExpress.ui.dxAccordion {
-  def this(element: JQuery) = this()
-  def this(element: Element) = this()
-  def this(element: JQuery, options: dxAccordionOptions) = this()
-  def this(element: Element, options: dxAccordionOptions) = this()
-}
-
+open class dxAccordion[TItem /* <: ItemLike */, TKey] ()
+  extends StObject
+     with typingsJapgolly.devextreme.mod.DevExpress.ui.dxAccordion[TItem, TKey]

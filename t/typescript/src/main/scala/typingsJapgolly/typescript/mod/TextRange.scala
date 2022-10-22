@@ -1,20 +1,26 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TextRange extends js.Object {
+trait TextRange extends StObject {
+  
   var end: Double
+  
   var pos: Double
 }
-
 object TextRange {
-  @scala.inline
-  def apply(end: Double, pos: Double): TextRange = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
   
+  inline def apply(end: Double, pos: Double): TextRange = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextRange]
   }
+  
+  extension [Self <: TextRange](x: Self) {
+    
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+  }
 }
-

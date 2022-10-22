@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/loadtracks | Load tracks to a player}
@@ -12,16 +12,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.artist
   - typingsJapgolly.deezerSdk.deezerSdkStrings.user
 */
-trait RadioType extends js.Object
-
+trait RadioType extends StObject
 object RadioType {
-  @scala.inline
-  def artist: typingsJapgolly.deezerSdk.deezerSdkStrings.artist = this.cast("artist")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def radio: typingsJapgolly.deezerSdk.deezerSdkStrings.radio = this.cast("radio")
-  @scala.inline
-  def user: typingsJapgolly.deezerSdk.deezerSdkStrings.user = this.cast("user")
+  
+  inline def artist: typingsJapgolly.deezerSdk.deezerSdkStrings.artist = "artist".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.artist]
+  
+  inline def radio: typingsJapgolly.deezerSdk.deezerSdkStrings.radio = "radio".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.radio]
+  
+  inline def user: typingsJapgolly.deezerSdk.deezerSdkStrings.user = "user".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.user]
 }
-

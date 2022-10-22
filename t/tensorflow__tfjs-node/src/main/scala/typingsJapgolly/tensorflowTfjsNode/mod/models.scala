@@ -1,18 +1,20 @@
 package typingsJapgolly.tensorflowTfjsNode.mod
 
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.ConfigDict
-import typingsJapgolly.tensorflowTfjsLayers.modelsMod.ModelAndWeightsConfig
-import typingsJapgolly.tensorflowTfjsLayers.typesMod.PyJsonDict
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typingsJapgolly.tensorflowTfjsLayers.distKerasFormatTypesMod.PyJsonDict
+import typingsJapgolly.tensorflowTfjsLayers.distModelsMod.ModelAndWeightsConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-node", "models")
-@js.native
-object models extends js.Object {
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typingsJapgolly.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
-  def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.trainingMod.LayersModel] = js.native
+object models {
+  
+  @JSImport("@tensorflow/tfjs-node", "models")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: PyJsonDict, customObjects: ConfigDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig): js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = ^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
+  inline def modelFromJSON(modelAndWeightsConfig: ModelAndWeightsConfig, customObjects: ConfigDict): js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel] = (^.asInstanceOf[js.Dynamic].applyDynamic("modelFromJSON")(modelAndWeightsConfig.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typingsJapgolly.tensorflowTfjsLayers.distEngineTrainingMod.LayersModel]]
 }
-

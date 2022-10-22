@@ -1,51 +1,52 @@
 package typingsJapgolly.reactColor.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.ReactEventFrom
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactColor.anon.PartialClassesany
+import typingsJapgolly.reactColor.libComponentsCommonSaturationMod.SaturationProps
 import typingsJapgolly.reactColor.mod.Color
 import typingsJapgolly.reactColor.mod.ColorResult
-import typingsJapgolly.reactColor.mod.CustomPickerProps
-import typingsJapgolly.reactColor.saturationMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Saturation {
-  def apply(
-    onChange: /* color */ ColorResult => Callback,
-    color: Color = null,
-    pointer: VdomNode = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    CustomPickerProps[typingsJapgolly.reactColor.saturationMod.Saturation], 
-    default, 
-    Unit, 
-    CustomPickerProps[typingsJapgolly.reactColor.saturationMod.Saturation]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* color */ typingsJapgolly.reactColor.mod.ColorResult) => onChange(t0).runNow()))
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (pointer != null) __obj.updateDynamic("pointer")(pointer.rawNode.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactColor.mod.CustomPickerProps[typingsJapgolly.reactColor.saturationMod.Saturation], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactColor.saturationMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactColor.mod.CustomPickerProps[typingsJapgolly.reactColor.saturationMod.Saturation]])(children: _*)
+  inline def apply(onChange: (/* color */ ColorResult, /* event */ ReactEventFrom[HTMLInputElement]) => Callback): Builder = {
+    val __props = js.Dynamic.literal(onChange = js.Any.fromFunction2((t0: /* color */ ColorResult, t1: /* event */ ReactEventFrom[HTMLInputElement]) => (onChange(t0, t1)).runNow()))
+    new Builder(js.Array(this.component, __props.asInstanceOf[SaturationProps]))
   }
-  @JSImport("react-color/lib/components/common/Saturation", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("react-color/lib/components/common", "Saturation")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactColor.libComponentsCommonMod.Saturation] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def color(value: Color): this.type = set("color", value.asInstanceOf[js.Any])
+    
+    inline def pointer(value: VdomNode): this.type = set("pointer", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def pointerNull: this.type = set("pointer", null)
+    
+    inline def pointerVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("pointer", js.Array(value*))
+    
+    inline def pointerVdomElement(value: VdomElement): this.type = set("pointer", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def styles(value: PartialClassesany): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: SaturationProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

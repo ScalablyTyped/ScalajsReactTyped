@@ -1,30 +1,42 @@
 package typingsJapgolly.breeze.breeze
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SaveOptionsConfiguration extends js.Object {
+trait SaveOptionsConfiguration extends StObject {
+  
   var allowConcurrentSaves: js.UndefOr[Boolean] = js.undefined
+  
   var dataService: js.UndefOr[DataService] = js.undefined
+  
   var resourceName: js.UndefOr[String] = js.undefined
+  
   var tag: js.UndefOr[js.Object] = js.undefined
 }
-
 object SaveOptionsConfiguration {
-  @scala.inline
-  def apply(
-    allowConcurrentSaves: js.UndefOr[Boolean] = js.undefined,
-    dataService: DataService = null,
-    resourceName: String = null,
-    tag: js.Object = null
-  ): SaveOptionsConfiguration = {
+  
+  inline def apply(): SaveOptionsConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowConcurrentSaves)) __obj.updateDynamic("allowConcurrentSaves")(allowConcurrentSaves.asInstanceOf[js.Any])
-    if (dataService != null) __obj.updateDynamic("dataService")(dataService.asInstanceOf[js.Any])
-    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName.asInstanceOf[js.Any])
-    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveOptionsConfiguration]
   }
+  
+  extension [Self <: SaveOptionsConfiguration](x: Self) {
+    
+    inline def setAllowConcurrentSaves(value: Boolean): Self = StObject.set(x, "allowConcurrentSaves", value.asInstanceOf[js.Any])
+    
+    inline def setAllowConcurrentSavesUndefined: Self = StObject.set(x, "allowConcurrentSaves", js.undefined)
+    
+    inline def setDataService(value: DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
+    
+    inline def setDataServiceUndefined: Self = StObject.set(x, "dataService", js.undefined)
+    
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    
+    inline def setTag(value: js.Object): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+  }
 }
-

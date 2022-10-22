@@ -1,48 +1,38 @@
 package typingsJapgolly.sharepoint.SP.Social
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SocialFeedType extends js.Object
-
+sealed trait SocialFeedType extends StObject
 /** Identifies the kind of post to be retrieved.  */
 @JSGlobal("SP.Social.SocialFeedType")
 @js.native
-object SocialFeedType extends js.Object {
-  @js.native
-  sealed trait everyone extends SocialFeedType
+object SocialFeedType extends StObject {
   
   @js.native
-  sealed trait likes extends SocialFeedType
+  sealed trait everyone
+    extends StObject
+       with SocialFeedType
   
   @js.native
-  sealed trait news extends SocialFeedType
+  sealed trait likes
+    extends StObject
+       with SocialFeedType
   
   @js.native
-  sealed trait personal extends SocialFeedType
+  sealed trait news
+    extends StObject
+       with SocialFeedType
   
   @js.native
-  sealed trait timeline extends SocialFeedType
+  sealed trait personal
+    extends StObject
+       with SocialFeedType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SocialFeedType with Double] = js.native
-  /* 4 */ @js.native
-  object everyone extends TopLevel[everyone with Double]
-  
-  /* 3 */ @js.native
-  object likes extends TopLevel[likes with Double]
-  
-  /* 1 */ @js.native
-  object news extends TopLevel[news with Double]
-  
-  /* 0 */ @js.native
-  object personal extends TopLevel[personal with Double]
-  
-  /* 2 */ @js.native
-  object timeline extends TopLevel[timeline with Double]
-  
+  @js.native
+  sealed trait timeline
+    extends StObject
+       with SocialFeedType
 }
-

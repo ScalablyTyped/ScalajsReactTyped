@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapFlip extends js.Object
-
+sealed trait BitmapFlip extends StObject
 @JSGlobal("Windows.Graphics.Imaging.BitmapFlip")
 @js.native
-object BitmapFlip extends js.Object {
-  @js.native
-  sealed trait horizontal extends BitmapFlip
+object BitmapFlip extends StObject {
   
   @js.native
-  sealed trait none extends BitmapFlip
+  sealed trait horizontal
+    extends StObject
+       with BitmapFlip
   
   @js.native
-  sealed trait vertical extends BitmapFlip
+  sealed trait none
+    extends StObject
+       with BitmapFlip
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapFlip with Double] = js.native
-  /* 1 */ @js.native
-  object horizontal extends TopLevel[horizontal with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 2 */ @js.native
-  object vertical extends TopLevel[vertical with Double]
-  
+  @js.native
+  sealed trait vertical
+    extends StObject
+       with BitmapFlip
 }
-

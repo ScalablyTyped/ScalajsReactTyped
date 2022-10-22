@@ -1,43 +1,61 @@
 package typingsJapgolly.octokitRequestError
 
+import typingsJapgolly.octokitRequestError.distTypesTypesMod.RequestErrorOptions
 import typingsJapgolly.octokitRequestError.octokitRequestErrorStrings.HttpError
-import typingsJapgolly.octokitRequestError.typesMod.RequestErrorOptions
+import typingsJapgolly.octokitTypes.distTypesOctokitResponseMod.OctokitResponse
+import typingsJapgolly.octokitTypes.distTypesRequestOptionsMod.RequestOptions
+import typingsJapgolly.octokitTypes.distTypesResponseHeadersMod.ResponseHeaders
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@octokit/request-error", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("@octokit/request-error", "RequestError")
   @js.native
-  class RequestError protected () extends Error {
+  open class RequestError protected ()
+    extends StObject
+       with Error {
     def this(message: String, statusCode: Double, options: RequestErrorOptions) = this()
+    
     /**
       * http status code
       *
       * @deprecated `error.code` is deprecated in favor of `error.status`
       */
     var code: Double = js.native
+    
     /**
       * error response headers
+      *
+      * @deprecated `error.headers` is deprecated in favor of `error.response.headers`
       */
-    var headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseHeaders */ js.Any = js.native
+    var headers: ResponseHeaders = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
     @JSName("name")
     var name_RequestError: HttpError = js.native
+    
     /**
       * Request options that lead to the error.
       */
-    var request: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RequestOptions */ js.Any = js.native
+    var request: RequestOptions = js.native
+    
+    /**
+      * Response object if a response was received
+      */
+    var response: js.UndefOr[OctokitResponse[Any, Double]] = js.native
+    
     /**
       * http status code
       */
     var status: Double = js.native
   }
-  
 }
-

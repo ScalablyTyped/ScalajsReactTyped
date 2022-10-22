@@ -1,13 +1,15 @@
 package typingsJapgolly.awsSdkUtilFormatUrl
 
-import typingsJapgolly.awsSdkTypes.httpMod.HttpRequest
+import typingsJapgolly.awsSdkUtilFormatUrl.anon.OmitHttpRequestheadersmet
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/util-format-url", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def formatUrl(request: HttpRequest[scala.scalajs.js.typedarray.Uint8Array]): String = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/util-format-url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def formatUrl(request: OmitHttpRequestheadersmet): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatUrl")(request.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

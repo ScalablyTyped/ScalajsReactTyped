@@ -1,34 +1,38 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DriveItemVersion extends BaseItemVersion {
+trait DriveItemVersion
+  extends StObject
+     with BaseItemVersion {
+  
   // The content stream for this version of the item.
-  var content: js.UndefOr[js.Any] = js.undefined
+  var content: js.UndefOr[NullableOption[Any]] = js.undefined
+  
   // Indicates the size of the content stream for this version of the item.
-  var size: js.UndefOr[Double] = js.undefined
+  var size: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object DriveItemVersion {
-  @scala.inline
-  def apply(
-    content: js.Any = null,
-    id: String = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedDateTime: String = null,
-    publication: PublicationFacet = null,
-    size: Int | Double = null
-  ): DriveItemVersion = {
+  
+  inline def apply(): DriveItemVersion = {
     val __obj = js.Dynamic.literal()
-    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItemVersion]
   }
+  
+  extension [Self <: DriveItemVersion](x: Self) {
+    
+    inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    
+    inline def setContentNull: Self = StObject.set(x, "content", null)
+    
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    
+    inline def setSize(value: NullableOption[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    
+    inline def setSizeNull: Self = StObject.set(x, "size", null)
+    
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+  }
 }
-

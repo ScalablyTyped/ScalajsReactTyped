@@ -3,37 +3,54 @@ package typingsJapgolly.vueTemplateCompiler.mod
 import typingsJapgolly.std.Record
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.condense
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.preserve
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * Template compilation options / results
   */
-trait CompilerOptions extends js.Object {
+trait CompilerOptions extends StObject {
+  
   var directives: js.UndefOr[Record[String, DirectiveFunction]] = js.undefined
+  
   var modules: js.UndefOr[js.Array[ModuleOptions]] = js.undefined
-  var outputSourceRange: js.UndefOr[js.Any] = js.undefined
+  
+  var outputSourceRange: js.UndefOr[Any] = js.undefined
+  
   var preserveWhitespace: js.UndefOr[Boolean] = js.undefined
+  
   var whitespace: js.UndefOr[preserve | condense] = js.undefined
 }
-
 object CompilerOptions {
-  @scala.inline
-  def apply(
-    directives: Record[String, DirectiveFunction] = null,
-    modules: js.Array[ModuleOptions] = null,
-    outputSourceRange: js.Any = null,
-    preserveWhitespace: js.UndefOr[Boolean] = js.undefined,
-    whitespace: preserve | condense = null
-  ): CompilerOptions = {
+  
+  inline def apply(): CompilerOptions = {
     val __obj = js.Dynamic.literal()
-    if (directives != null) __obj.updateDynamic("directives")(directives.asInstanceOf[js.Any])
-    if (modules != null) __obj.updateDynamic("modules")(modules.asInstanceOf[js.Any])
-    if (outputSourceRange != null) __obj.updateDynamic("outputSourceRange")(outputSourceRange.asInstanceOf[js.Any])
-    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
-    if (whitespace != null) __obj.updateDynamic("whitespace")(whitespace.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompilerOptions]
   }
+  
+  extension [Self <: CompilerOptions](x: Self) {
+    
+    inline def setDirectives(value: Record[String, DirectiveFunction]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    
+    inline def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    
+    inline def setModules(value: js.Array[ModuleOptions]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    
+    inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+    
+    inline def setModulesVarargs(value: ModuleOptions*): Self = StObject.set(x, "modules", js.Array(value*))
+    
+    inline def setOutputSourceRange(value: Any): Self = StObject.set(x, "outputSourceRange", value.asInstanceOf[js.Any])
+    
+    inline def setOutputSourceRangeUndefined: Self = StObject.set(x, "outputSourceRange", js.undefined)
+    
+    inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+    
+    inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+    
+    inline def setWhitespace(value: preserve | condense): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    
+    inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
+  }
 }
-

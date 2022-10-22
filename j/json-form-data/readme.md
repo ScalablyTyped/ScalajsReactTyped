@@ -10,10 +10,10 @@ A library to convert javascript objects into form data.
 | ------------------ | :-------------: |
 | Full name          | json-form-data |
 | Keywords           | json, formdata, form, data, convert |
-| # releases         | 15 |
-| # dependents       | 1 |
-| # downloads        | 71040 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 70902.0 |
+| # stars            | 49.0 |
 
 ## Links
 - [Homepage](https://github.com/hyperatom/json-form-data#readme)

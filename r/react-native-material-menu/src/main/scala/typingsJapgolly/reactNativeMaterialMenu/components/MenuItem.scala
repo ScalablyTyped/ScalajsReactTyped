@@ -1,59 +1,50 @@
 package typingsJapgolly.reactNativeMaterialMenu.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.TextStyle
+import typingsJapgolly.reactNative.mod.ViewStyle
 import typingsJapgolly.reactNativeMaterialMenu.mod.MenuItemProps
 import typingsJapgolly.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.clip
+import typingsJapgolly.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.head
+import typingsJapgolly.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.middle
 import typingsJapgolly.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.tail
-import typingsJapgolly.std.StyleMedia_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MenuItem {
-  def apply(
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    disabledTextColor: String = null,
-    ellipsizeMode: clip | tail = null,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    style: StyleMedia_ = null,
-    textStyle: TextStyle = null,
-    underlayColor: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    MenuItemProps, 
-    typingsJapgolly.reactNativeMaterialMenu.mod.MenuItem, 
-    Unit, 
-    MenuItemProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (disabledTextColor != null) __obj.updateDynamic("disabledTextColor")(disabledTextColor.asInstanceOf[js.Any])
-    if (ellipsizeMode != null) __obj.updateDynamic("ellipsizeMode")(ellipsizeMode.asInstanceOf[js.Any])
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
-    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialMenu.mod.MenuItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialMenu.mod.MenuItem](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialMenu.mod.MenuItemProps])(children: _*)
-  }
   @JSImport("react-native-material-menu", "MenuItem")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialMenu.mod.MenuItem] {
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def disabledTextColor(value: String): this.type = set("disabledTextColor", value.asInstanceOf[js.Any])
+    
+    inline def ellipsizeMode(value: head | middle | tail | clip): this.type = set("ellipsizeMode", value.asInstanceOf[js.Any])
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+    
+    inline def textStyle(value: TextStyle): this.type = set("textStyle", value.asInstanceOf[js.Any])
+    
+    inline def underlayColor(value: String): this.type = set("underlayColor", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: MenuItem.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: MenuItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

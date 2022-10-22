@@ -1,12 +1,15 @@
 package typingsJapgolly.angularCore.mod
 
 import typingsJapgolly.angularCore.angularCoreBooleans.`true`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ComponentDefFeature extends js.Object {
+trait ComponentDefFeature extends StObject {
+  
+  def apply[T](componentDef: ɵComponentDef[T]): Unit = js.native
+  
   /**
     * Marks a feature as something that {@link InheritDefinitionFeature} will execute
     * during inheritance.
@@ -16,6 +19,4 @@ trait ComponentDefFeature extends js.Object {
     * every bundle.
     */
   var ngInherit: js.UndefOr[`true`] = js.native
-  def apply[T](componentDef: ɵComponentDef[T]): Unit = js.native
 }
-

@@ -2,14 +2,17 @@ package typingsJapgolly.azdata.mod
 
 import typingsJapgolly.vscode.Thenable
 import typingsJapgolly.vscode.mod.Disposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("azdata", "credentials")
-@js.native
-object credentials extends js.Object {
-  def getProvider(namespaceId: String): Thenable[CredentialProvider] = js.native
-  def registerProvider(provider: CredentialProvider): Disposable = js.native
+object credentials {
+  
+  @JSImport("azdata", "credentials")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getProvider(namespaceId: String): Thenable[CredentialProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")(namespaceId.asInstanceOf[js.Any]).asInstanceOf[Thenable[CredentialProvider]]
+  
+  inline def registerProvider(provider: CredentialProvider): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
 }
-

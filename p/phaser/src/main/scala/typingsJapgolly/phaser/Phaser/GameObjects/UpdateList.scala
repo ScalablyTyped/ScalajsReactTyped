@@ -3,9 +3,9 @@ package typingsJapgolly.phaser.Phaser.GameObjects
 import typingsJapgolly.phaser.Phaser.Scene
 import typingsJapgolly.phaser.Phaser.Scenes.Systems
 import typingsJapgolly.phaser.Phaser.Structs.ProcessQueue
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Update List plugin.
@@ -14,22 +14,16 @@ import scala.scalajs.js.annotation._
   * 
   * Some or all of these Game Objects may also be part of the Scene's [Display List]{@link Phaser.GameObjects.DisplayList}, for Rendering.
   */
-@JSGlobal("Phaser.GameObjects.UpdateList")
 @js.native
-class UpdateList protected () extends ProcessQueue[GameObject] {
-  /**
-    * 
-    * @param scene The Scene that the Update List belongs to.
-    */
-  def this(scene: Scene) = this()
+trait UpdateList
+  extends StObject
+     with ProcessQueue[GameObject] {
+  
   /**
     * The Scene that the Update List belongs to.
     */
   var scene: Scene = js.native
-  /**
-    * The Scene's Systems.
-    */
-  var systems: Systems = js.native
+  
   /**
     * The update step.
     * 
@@ -38,5 +32,9 @@ class UpdateList protected () extends ProcessQueue[GameObject] {
     * @param delta The delta time elapsed since the last frame.
     */
   def sceneUpdate(time: Double, delta: Double): Unit = js.native
+  
+  /**
+    * The Scene's Systems.
+    */
+  var systems: Systems = js.native
 }
-

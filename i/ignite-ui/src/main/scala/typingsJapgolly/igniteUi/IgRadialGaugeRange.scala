@@ -1,94 +1,123 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgRadialGaugeRange
-  extends /**
-	 * Option for IgRadialGaugeRange
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets or sets the brush for the entire range.
-  	 */
+    * Gets or sets the brush for the entire range.
+    */
   var brush: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the ending value of the range.
-  	 */
+    * Gets or sets the ending value of the range.
+    */
   var endValue: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the ending value of the inner extent of the range.
-  	 */
+    * Gets or sets the ending value of the inner extent of the range.
+    */
   var innerEndExtent: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the starting value of the inner extent of the range.
-  	 */
+    * Gets or sets the starting value of the inner extent of the range.
+    */
   var innerStartExtent: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the name of the range.
-  	 */
+    * Gets or sets the name of the range.
+    */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the ending value of the outer extent of the range.
-  	 */
+    * Gets or sets the ending value of the outer extent of the range.
+    */
   var outerEndExtent: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the starting value of the outer extent of the range.
-  	 */
+    * Gets or sets the starting value of the outer extent of the range.
+    */
   var outerStartExtent: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the brush for the outline of the range.
-  	 */
+    * Gets or sets the brush for the outline of the range.
+    */
   var outline: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.
-  	 */
+    * Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.
+    */
   var remove: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets or sets the starting value of the range.
-  	 */
+    * Gets or sets the starting value of the range.
+    */
   var startValue: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Gets or sets the thickness of the range outline.
-  	 */
+    * Gets or sets the thickness of the range outline.
+    */
   var strokeThickness: js.UndefOr[Double] = js.undefined
 }
-
 object IgRadialGaugeRange {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgRadialGaugeRange
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    brush: String = null,
-    endValue: Int | Double = null,
-    innerEndExtent: Int | Double = null,
-    innerStartExtent: Int | Double = null,
-    name: String = null,
-    outerEndExtent: Int | Double = null,
-    outerStartExtent: Int | Double = null,
-    outline: String = null,
-    remove: js.UndefOr[Boolean] = js.undefined,
-    startValue: Int | Double = null,
-    strokeThickness: Int | Double = null
-  ): IgRadialGaugeRange = {
+  
+  inline def apply(): IgRadialGaugeRange = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (brush != null) __obj.updateDynamic("brush")(brush.asInstanceOf[js.Any])
-    if (endValue != null) __obj.updateDynamic("endValue")(endValue.asInstanceOf[js.Any])
-    if (innerEndExtent != null) __obj.updateDynamic("innerEndExtent")(innerEndExtent.asInstanceOf[js.Any])
-    if (innerStartExtent != null) __obj.updateDynamic("innerStartExtent")(innerStartExtent.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (outerEndExtent != null) __obj.updateDynamic("outerEndExtent")(outerEndExtent.asInstanceOf[js.Any])
-    if (outerStartExtent != null) __obj.updateDynamic("outerStartExtent")(outerStartExtent.asInstanceOf[js.Any])
-    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
-    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
-    if (startValue != null) __obj.updateDynamic("startValue")(startValue.asInstanceOf[js.Any])
-    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgRadialGaugeRange]
   }
+  
+  extension [Self <: IgRadialGaugeRange](x: Self) {
+    
+    inline def setBrush(value: String): Self = StObject.set(x, "brush", value.asInstanceOf[js.Any])
+    
+    inline def setBrushUndefined: Self = StObject.set(x, "brush", js.undefined)
+    
+    inline def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    
+    inline def setInnerEndExtent(value: Double): Self = StObject.set(x, "innerEndExtent", value.asInstanceOf[js.Any])
+    
+    inline def setInnerEndExtentUndefined: Self = StObject.set(x, "innerEndExtent", js.undefined)
+    
+    inline def setInnerStartExtent(value: Double): Self = StObject.set(x, "innerStartExtent", value.asInstanceOf[js.Any])
+    
+    inline def setInnerStartExtentUndefined: Self = StObject.set(x, "innerStartExtent", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOuterEndExtent(value: Double): Self = StObject.set(x, "outerEndExtent", value.asInstanceOf[js.Any])
+    
+    inline def setOuterEndExtentUndefined: Self = StObject.set(x, "outerEndExtent", js.undefined)
+    
+    inline def setOuterStartExtent(value: Double): Self = StObject.set(x, "outerStartExtent", value.asInstanceOf[js.Any])
+    
+    inline def setOuterStartExtentUndefined: Self = StObject.set(x, "outerStartExtent", js.undefined)
+    
+    inline def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    
+    inline def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+    
+    inline def setStrokeThickness(value: Double): Self = StObject.set(x, "strokeThickness", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeThicknessUndefined: Self = StObject.set(x, "strokeThickness", js.undefined)
+  }
 }
-

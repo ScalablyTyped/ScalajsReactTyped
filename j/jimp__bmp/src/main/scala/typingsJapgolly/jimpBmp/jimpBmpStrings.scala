@@ -1,19 +1,16 @@
 package typingsJapgolly.jimpBmp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jimpBmpStrings {
-  @js.native
-  sealed trait imageSlashbmp extends js.Object
   
   @js.native
-  sealed trait `imageSlashx-ms-bmp` extends js.Object
+  sealed trait imageSlashbmp extends StObject
+  inline def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
   
-  @scala.inline
-  def imageSlashbmp: imageSlashbmp = "image/bmp".asInstanceOf[imageSlashbmp]
-  @scala.inline
-  def `imageSlashx-ms-bmp`: `imageSlashx-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`imageSlashx-ms-bmp`]
+  @js.native
+  sealed trait `imageSlashx-ms-bmp` extends StObject
+  inline def `imageSlashx-ms-bmp`: `imageSlashx-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`imageSlashx-ms-bmp`]
 }
-

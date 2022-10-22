@@ -1,30 +1,33 @@
 package typingsJapgolly.jqueryEasyLoading
 
 import typingsJapgolly.jqueryEasyLoading.JQueryEasyLoading.Command
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jqueryEasyLoadingStrings {
-  @js.native
-  sealed trait resize extends Command
   
   @js.native
-  sealed trait start extends Command
+  sealed trait resize
+    extends StObject
+       with Command
+  inline def resize: resize = "resize".asInstanceOf[resize]
   
   @js.native
-  sealed trait stop extends Command
+  sealed trait start
+    extends StObject
+       with Command
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait toggle extends Command
+  sealed trait stop
+    extends StObject
+       with Command
+  inline def stop: stop = "stop".asInstanceOf[stop]
   
-  @scala.inline
-  def resize: resize = "resize".asInstanceOf[resize]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
-  @scala.inline
-  def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @js.native
+  sealed trait toggle
+    extends StObject
+       with Command
+  inline def toggle: toggle = "toggle".asInstanceOf[toggle]
 }
-

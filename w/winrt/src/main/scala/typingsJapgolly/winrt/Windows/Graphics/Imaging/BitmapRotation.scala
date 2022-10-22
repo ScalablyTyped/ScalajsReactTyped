@@ -1,41 +1,32 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BitmapRotation extends js.Object
-
+sealed trait BitmapRotation extends StObject
 @JSGlobal("Windows.Graphics.Imaging.BitmapRotation")
 @js.native
-object BitmapRotation extends js.Object {
-  @js.native
-  sealed trait clockwise180Degrees extends BitmapRotation
+object BitmapRotation extends StObject {
   
   @js.native
-  sealed trait clockwise270Degrees extends BitmapRotation
+  sealed trait clockwise180Degrees
+    extends StObject
+       with BitmapRotation
   
   @js.native
-  sealed trait clockwise90Degrees extends BitmapRotation
+  sealed trait clockwise270Degrees
+    extends StObject
+       with BitmapRotation
   
   @js.native
-  sealed trait none extends BitmapRotation
+  sealed trait clockwise90Degrees
+    extends StObject
+       with BitmapRotation
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[BitmapRotation with Double] = js.native
-  /* 2 */ @js.native
-  object clockwise180Degrees extends TopLevel[clockwise180Degrees with Double]
-  
-  /* 3 */ @js.native
-  object clockwise270Degrees extends TopLevel[clockwise270Degrees with Double]
-  
-  /* 1 */ @js.native
-  object clockwise90Degrees extends TopLevel[clockwise90Degrees with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
+  @js.native
+  sealed trait none
+    extends StObject
+       with BitmapRotation
 }
-

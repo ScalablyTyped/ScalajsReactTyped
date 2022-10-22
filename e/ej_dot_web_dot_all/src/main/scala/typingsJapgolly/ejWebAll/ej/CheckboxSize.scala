@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CheckboxSize extends js.Object
-
+sealed trait CheckboxSize extends StObject
 @JSGlobal("ej.CheckboxSize")
 @js.native
-object CheckboxSize extends js.Object {
+object CheckboxSize extends StObject {
+  
   //Displays the CheckBox in medium size
   @js.native
-  sealed trait Medium extends CheckboxSize
+  sealed trait Medium
+    extends StObject
+       with CheckboxSize
   
   //Displays the CheckBox in small size
   @js.native
-  sealed trait Small extends CheckboxSize
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CheckboxSize with Double] = js.native
-  /* 0 */ @js.native
-  object Medium extends TopLevel[Medium with Double]
-  
-  /* 1 */ @js.native
-  object Small extends TopLevel[Small with Double]
-  
+  sealed trait Small
+    extends StObject
+       with CheckboxSize
 }
-

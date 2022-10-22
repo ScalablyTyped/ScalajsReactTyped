@@ -1,29 +1,31 @@
 package typingsJapgolly.openpgp.mod
 
 import typingsJapgolly.openpgp.mod.enums.keyStatus
-import typingsJapgolly.openpgp.mod.packet.List
 import typingsJapgolly.openpgp.mod.packet.PublicKey
 import typingsJapgolly.openpgp.mod.packet.PublicSubkey
 import typingsJapgolly.openpgp.mod.packet.SecretKey
 import typingsJapgolly.openpgp.mod.packet.SecretSubkey
 import typingsJapgolly.openpgp.mod.packet.Signature
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "SubKey")
 @js.native
-class SubKey () extends js.Object {
+open class SubKey () extends StObject {
+  
   /**
     * Returns algorithm information
     * @returns An object of the form {algorithm: string, bits:int, curve:String}
     */
   def getAlgorithmInfo(): js.Object = js.native
+  
   /**
     * Returns the creation time of the key
     * @returns
     */
   def getCreationTime(): js.Date = js.native
+  
   def getExpirationTime(primaryKey: PublicKey, date: js.Date): js.Promise[js.Date | Infinity | Null] = js.native
   /**
     * Returns the expiration time of the subkey or Infinity if key does not expire
@@ -33,26 +35,31 @@ class SubKey () extends js.Object {
     * @returns
     */
   def getExpirationTime(primaryKey: SecretKey, date: js.Date): js.Promise[js.Date | Infinity | Null] = js.native
+  
   /**
     * Calculates the fingerprint of the key
     * @returns A string containing the fingerprint in lowercase hex
     */
   def getFingerprint(): String = js.native
+  
   /**
     * Calculates the key id of the key
     * @returns A 8 byte key id
     */
   def getKeyId(): String = js.native
+  
   /**
     * Calculates whether two keys have the same fingerprint without actually calculating the fingerprint
     * @returns Whether the two keys have the same version and public key data
     */
   def hasSameFingerprintAs(): Boolean = js.native
+  
   /**
     * Check whether secret-key data is available in decrypted form. Returns null for public keys.
     * @returns
     */
   def isDecrypted(): Boolean | Null = js.native
+  
   def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicKey, date: js.Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: PublicKey, signature: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: PublicKey, signature: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
@@ -69,6 +76,7 @@ class SubKey () extends js.Object {
   def isRevoked(primaryKey: SecretKey, signature: Signature, key: PublicSubkey, date: js.Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretKey, date: js.Date): js.Promise[Boolean] = js.native
   def isRevoked(primaryKey: SecretKey, signature: Signature, key: SecretSubkey, date: js.Date): js.Promise[Boolean] = js.native
+  
   /**
     * Revokes the subkey
     * @param primaryKey decrypted private primary key for revocation
@@ -79,19 +87,22 @@ class SubKey () extends js.Object {
     * @returns new subkey with revocation signature
     */
   def revoke(primaryKey: SecretKey, reasonForRevocation: revokeReasonForRevocation, date: js.Date): js.Promise[typingsJapgolly.openpgp.mod.key.SubKey] = js.native
+  
   /**
     * Transforms structured subkey data to packetlist
     * @returns
     */
-  def toPacketlist(): List = js.native
+  def toPacketlist(): typingsJapgolly.openpgp.mod.packet.List = js.native
+  
   /**
     * Update subkey with new components from specified subkey
     * @param subKey Source subkey to merge
     * @param primaryKey primary key used for validation
     * @returns
     */
-  def update(subKey: typingsJapgolly.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def update(subKey: typingsJapgolly.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[js.UndefOr[scala.Nothing]] = js.native
+  def update(subKey: typingsJapgolly.openpgp.mod.key.SubKey, primaryKey: SecretKey): js.Promise[Unit] = js.native
+  def update(subKey: typingsJapgolly.openpgp.mod.key.SubKey, primaryKey: SecretSubkey): js.Promise[Unit] = js.native
+  
   def verify(primaryKey: PublicKey, date: js.Date): js.Promise[keyStatus] = js.native
   /**
     * Verify subkey. Checks for revocation signatures, expiration time
@@ -102,4 +113,3 @@ class SubKey () extends js.Object {
     */
   def verify(primaryKey: SecretKey, date: js.Date): js.Promise[keyStatus] = js.native
 }
-

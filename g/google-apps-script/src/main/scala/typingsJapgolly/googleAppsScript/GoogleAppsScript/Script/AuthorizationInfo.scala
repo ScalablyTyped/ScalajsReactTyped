@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Script
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object used to determine whether the user needs to authorize this script to use one or more
@@ -16,18 +16,23 @@ import scala.scalajs.js.annotation._
   * all cases, scripts should call ScriptApp.getAuthorizationInfo(ScriptApp.AuthMode.FULL),
   * since no other authorization mode requires that users grant authorization.
   */
-trait AuthorizationInfo extends js.Object {
+trait AuthorizationInfo extends StObject {
+  
   def getAuthorizationStatus(): AuthorizationStatus
+  
   def getAuthorizationUrl(): String
 }
-
 object AuthorizationInfo {
-  @scala.inline
-  def apply(getAuthorizationStatus: CallbackTo[AuthorizationStatus], getAuthorizationUrl: CallbackTo[String]): AuthorizationInfo = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getAuthorizationStatus")(getAuthorizationStatus.toJsFn)
-    __obj.updateDynamic("getAuthorizationUrl")(getAuthorizationUrl.toJsFn)
+  
+  inline def apply(getAuthorizationStatus: CallbackTo[AuthorizationStatus], getAuthorizationUrl: CallbackTo[String]): AuthorizationInfo = {
+    val __obj = js.Dynamic.literal(getAuthorizationStatus = getAuthorizationStatus.toJsFn, getAuthorizationUrl = getAuthorizationUrl.toJsFn)
     __obj.asInstanceOf[AuthorizationInfo]
   }
+  
+  extension [Self <: AuthorizationInfo](x: Self) {
+    
+    inline def setGetAuthorizationStatus(value: CallbackTo[AuthorizationStatus]): Self = StObject.set(x, "getAuthorizationStatus", value.toJsFn)
+    
+    inline def setGetAuthorizationUrl(value: CallbackTo[String]): Self = StObject.set(x, "getAuthorizationUrl", value.toJsFn)
+  }
 }
-

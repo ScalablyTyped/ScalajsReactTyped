@@ -1,42 +1,29 @@
 package typingsJapgolly.reactBootstrapTypeahead.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactBootstrapTypeahead.mod.HighligherProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Highlighter {
-  def apply(
-    search: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    HighligherProps, 
-    typingsJapgolly.reactBootstrapTypeahead.mod.Highlighter, 
-    Unit, 
-    HighligherProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactBootstrapTypeahead.mod.HighligherProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactBootstrapTypeahead.mod.Highlighter](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactBootstrapTypeahead.mod.HighligherProps])(children: _*)
+  inline def apply(search: String): Builder = {
+    val __props = js.Dynamic.literal(search = search.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[HighligherProps]))
   }
+  
   @JSImport("react-bootstrap-typeahead", "Highlighter")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactBootstrapTypeahead.mod.Highlighter] {
+    
+    inline def highlightClassName(value: String): this.type = set("highlightClassName", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: HighligherProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

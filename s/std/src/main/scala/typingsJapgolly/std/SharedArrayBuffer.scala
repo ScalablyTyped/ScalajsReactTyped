@@ -1,32 +1,30 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SharedArrayBuffer extends ArrayBufferLike {
+trait SharedArrayBuffer extends StObject {
+  
   /**
     * Read-only. The length of the ArrayBuffer (in bytes).
     */
+  /* standard es2017.sharedmemory */
   val byteLength: Double = js.native
-  /*
-    * The SharedArrayBuffer constructor's length property whose value is 1.
-    */
-  var length: Double = js.native
-  @JSName(scala.scalajs.js.Symbol.species)
-  val species: SharedArrayBuffer = js.native
-  @JSName(scala.scalajs.js.Symbol.toStringTag)
-  val toStringTag: typingsJapgolly.std.stdStrings.SharedArrayBuffer = js.native
+  
   /**
     * Returns a section of an SharedArrayBuffer.
     */
+  /* standard es2017.sharedmemory */
   def slice(begin: Double): SharedArrayBuffer = js.native
   def slice(begin: Double, end: Double): SharedArrayBuffer = js.native
+  
+  /* standard es2017.sharedmemory */
+  @JSName(js.Symbol.species)
+  val species: SharedArrayBuffer = js.native
+  
+  /* standard es2017.sharedmemory */
+  @JSName(js.Symbol.toStringTag)
+  val toStringTag: typingsJapgolly.std.stdStrings.SharedArrayBuffer = js.native
 }
-
-@JSGlobal("SharedArrayBuffer")
-@js.native
-object SharedArrayBuffer extends TopLevel[SharedArrayBufferConstructor]
-

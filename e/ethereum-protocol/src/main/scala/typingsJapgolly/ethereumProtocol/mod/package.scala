@@ -1,20 +1,27 @@
-package typingsJapgolly.ethereumProtocol
+package typingsJapgolly.ethereumProtocol.mod
 
+import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.bignumberJs.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type BlockParam = typingsJapgolly.ethereumProtocol.mod.BlockParamLiteral | scala.Double
-  type ContractAbi = js.Array[typingsJapgolly.ethereumProtocol.mod.AbiDefinition]
-  type ContractEventArg = java.lang.String | typingsJapgolly.bignumberJs.mod.default | scala.Double | scala.Boolean
-  type DecodedLogArgs = org.scalablytyped.runtime.StringDictionary[typingsJapgolly.ethereumProtocol.mod.ContractEventArg]
-  type JSONRPCErrorCallback = js.Function2[
-    /* err */ js.Error | scala.Null, 
-    /* result */ js.UndefOr[typingsJapgolly.ethereumProtocol.mod.JSONRPCResponsePayload], 
-    scala.Unit
-  ]
-  type LogTopic = scala.Null | java.lang.String | js.Array[java.lang.String]
-  type LogWithDecodedArgs[ArgsType /* <: typingsJapgolly.ethereumProtocol.mod.DecodedLogArgs */] = typingsJapgolly.ethereumProtocol.mod.DecodedLogEntry[ArgsType]
-  type RawLog = typingsJapgolly.ethereumProtocol.mod.LogEntry
-}
+
+type BlockParam = BlockParamLiteral | Double
+
+type ContractAbi = js.Array[AbiDefinition]
+
+type ContractEventArg = String | default | Double | Boolean
+
+type DecodedLogArgs = StringDictionary[ContractEventArg]
+
+type JSONRPCErrorCallback = js.Function2[
+/* err */ js.Error | Null, 
+/* result */ js.UndefOr[JSONRPCResponsePayload], 
+scala.Unit]
+
+type LogTopic = Null | String | js.Array[String]
+
+type LogWithDecodedArgs[ArgsType /* <: DecodedLogArgs */] = DecodedLogEntry[ArgsType]
+
+type RawLog = LogEntry

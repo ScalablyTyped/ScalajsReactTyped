@@ -1,21 +1,23 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Resources
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Uri
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IResourceLoaderStatics extends js.Object {
+trait IResourceLoaderStatics extends StObject {
+  
   def getStringForReference(uri: Uri): String
 }
-
 object IResourceLoaderStatics {
-  @scala.inline
-  def apply(getStringForReference: Uri => CallbackTo[String]): IResourceLoaderStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStringForReference")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Uri) => getStringForReference(t0).runNow()))
+  
+  inline def apply(getStringForReference: Uri => String): IResourceLoaderStatics = {
+    val __obj = js.Dynamic.literal(getStringForReference = js.Any.fromFunction1(getStringForReference))
     __obj.asInstanceOf[IResourceLoaderStatics]
   }
+  
+  extension [Self <: IResourceLoaderStatics](x: Self) {
+    
+    inline def setGetStringForReference(value: Uri => String): Self = StObject.set(x, "getStringForReference", js.Any.fromFunction1(value))
+  }
 }
-

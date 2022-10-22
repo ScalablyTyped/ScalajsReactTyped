@@ -1,18 +1,23 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.bullet")
 @js.native
-class bullet () extends baseview {
+trait bullet
+  extends StObject
+     with baseview {
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
+  
   @JSName("config")
   var config_bullet: bulletConfig = js.native
+  
   def getValue(bullet_value: Double): Unit = js.native
+  
   def refresh(): Unit = js.native
+  
   def setValue(new_value: Double): Unit = js.native
 }
-

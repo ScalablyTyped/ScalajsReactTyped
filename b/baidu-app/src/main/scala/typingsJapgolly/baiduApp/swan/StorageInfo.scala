@@ -1,30 +1,41 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StorageInfo extends js.Object {
+trait StorageInfo extends StObject {
+  
   /**
-  		 * 当前占用的空间大小, 单位kb
-  		 */
+    * 当前占用的空间大小, 单位kb
+    */
   var currentSize: Double
+  
   /**
-  		 * 当前storage中所有的key
-  		 */
+    * 当前storage中所有的key
+    */
   var keys: js.Array[String]
+  
   /**
-  		 * 限制的空间大小，单位kb
-  		 */
+    * 限制的空间大小，单位kb
+    */
   var limitSize: Double
 }
-
 object StorageInfo {
-  @scala.inline
-  def apply(currentSize: Double, keys: js.Array[String], limitSize: Double): StorageInfo = {
-    val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
   
+  inline def apply(currentSize: Double, keys: js.Array[String], limitSize: Double): StorageInfo = {
+    val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageInfo]
   }
+  
+  extension [Self <: StorageInfo](x: Self) {
+    
+    inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
+    
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value*))
+    
+    inline def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
+  }
 }
-

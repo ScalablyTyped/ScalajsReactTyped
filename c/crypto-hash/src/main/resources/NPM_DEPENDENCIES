@@ -1,12 +1,12 @@
 {
   "compile-dependencies" : [
     {
-      "crypto-hash" : "1.2.2"
+      "crypto-hash" : "2.0.1"
     }
   ],
   "test-dependencies" : [
     {
-      "crypto-hash" : "1.2.2"
+      "crypto-hash" : "2.0.1"
     }
   ],
   "compile-devDependencies" : [

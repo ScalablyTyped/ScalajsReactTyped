@@ -1,23 +1,36 @@
 package typingsJapgolly.axeCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Locale extends js.Object {
+trait Locale extends StObject {
+  
   var checks: js.UndefOr[CheckLocale] = js.undefined
+  
   var lang: js.UndefOr[String] = js.undefined
+  
   var rules: js.UndefOr[RuleLocale] = js.undefined
 }
-
 object Locale {
-  @scala.inline
-  def apply(checks: CheckLocale = null, lang: String = null, rules: RuleLocale = null): Locale = {
+  
+  inline def apply(): Locale = {
     val __obj = js.Dynamic.literal()
-    if (checks != null) __obj.updateDynamic("checks")(checks.asInstanceOf[js.Any])
-    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
-    if (rules != null) __obj.updateDynamic("rules")(rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
+  
+  extension [Self <: Locale](x: Self) {
+    
+    inline def setChecks(value: CheckLocale): Self = StObject.set(x, "checks", value.asInstanceOf[js.Any])
+    
+    inline def setChecksUndefined: Self = StObject.set(x, "checks", js.undefined)
+    
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    
+    inline def setRules(value: RuleLocale): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+  }
 }
-

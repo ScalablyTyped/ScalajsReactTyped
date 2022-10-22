@@ -6,42 +6,56 @@ import typingsJapgolly.mapboxGl.mapboxGlStrings.POST
 import typingsJapgolly.mapboxGl.mapboxGlStrings.PUT
 import typingsJapgolly.mapboxGl.mapboxGlStrings.`same-origin`
 import typingsJapgolly.mapboxGl.mapboxGlStrings.include
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestParameters extends js.Object {
+trait RequestParameters extends StObject {
+  
   var collectResourceTiming: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Use `'include'` to send cookies with cross-origin requests.
     */
   var credentials: js.UndefOr[`same-origin` | include] = js.undefined
+  
   /**
     * The headers to be sent with the request.
     */
-  var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var headers: js.UndefOr[StringDictionary[Any]] = js.undefined
+  
   var method: js.UndefOr[GET | POST | PUT] = js.undefined
+  
   /**
     * The URL to be requested.
     */
   var url: String
 }
-
 object RequestParameters {
-  @scala.inline
-  def apply(
-    url: String,
-    collectResourceTiming: js.UndefOr[Boolean] = js.undefined,
-    credentials: `same-origin` | include = null,
-    headers: StringDictionary[js.Any] = null,
-    method: GET | POST | PUT = null
-  ): RequestParameters = {
+  
+  inline def apply(url: String): RequestParameters = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (!js.isUndefined(collectResourceTiming)) __obj.updateDynamic("collectResourceTiming")(collectResourceTiming.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestParameters]
   }
+  
+  extension [Self <: RequestParameters](x: Self) {
+    
+    inline def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
+    
+    inline def setCollectResourceTimingUndefined: Self = StObject.set(x, "collectResourceTiming", js.undefined)
+    
+    inline def setCredentials(value: `same-origin` | include): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setMethod(value: GET | POST | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

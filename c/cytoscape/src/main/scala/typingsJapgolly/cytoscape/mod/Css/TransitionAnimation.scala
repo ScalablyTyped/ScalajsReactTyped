@@ -1,34 +1,37 @@
 package typingsJapgolly.cytoscape.mod.Css
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#style/transition-animation
   */
-trait TransitionAnimation extends js.Object {
+trait TransitionAnimation extends StObject {
+  
   /**
     * The length of the delay in seconds before the transition occurs (e.g. 250ms).
     */
   var `transition-delay`: Double
+  
   /**
     * The length of the transition in seconds(e.g. 0.5s).
     */
   var `transition-duration`: Double
+  
   /**
     * A comma separated list of style properties to animate in this state.
     */
   var `transition-property`: String
+  
   /**
     * An easing function that controls the animation progress curve (a visualisation of easings serves as a reference).
     */
   var `transition-timing-function`: TransitionTimingFunction
 }
-
 object TransitionAnimation {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     `transition-delay`: Double,
     `transition-duration`: Double,
     `transition-property`: String,
@@ -41,5 +44,15 @@ object TransitionAnimation {
     __obj.updateDynamic("transition-timing-function")(`transition-timing-function`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransitionAnimation]
   }
+  
+  extension [Self <: TransitionAnimation](x: Self) {
+    
+    inline def `setTransition-delay`(value: Double): Self = StObject.set(x, "transition-delay", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-duration`(value: Double): Self = StObject.set(x, "transition-duration", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-property`(value: String): Self = StObject.set(x, "transition-property", value.asInstanceOf[js.Any])
+    
+    inline def `setTransition-timing-function`(value: TransitionTimingFunction): Self = StObject.set(x, "transition-timing-function", value.asInstanceOf[js.Any])
+  }
 }
-

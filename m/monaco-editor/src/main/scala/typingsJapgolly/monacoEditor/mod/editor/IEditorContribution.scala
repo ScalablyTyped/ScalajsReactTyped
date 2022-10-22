@@ -2,43 +2,44 @@ package typingsJapgolly.monacoEditor.mod.editor
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IEditorContribution extends js.Object {
-  /**
-    * Restore view state.
-    */
-  var restoreViewState: js.UndefOr[js.Function1[/* state */ js.Any, Unit]] = js.undefined
-  /**
-    * Store view state.
-    */
-  var saveViewState: js.UndefOr[js.Function0[_]] = js.undefined
+trait IEditorContribution extends StObject {
+  
   /**
     * Dispose this contribution.
     */
   def dispose(): Unit
+  
   /**
-    * Get a unique identifier for this contribution.
+    * Restore view state.
     */
-  def getId(): String
+  var restoreViewState: js.UndefOr[js.Function1[/* state */ Any, Unit]] = js.undefined
+  
+  /**
+    * Store view state.
+    */
+  var saveViewState: js.UndefOr[js.Function0[Any]] = js.undefined
 }
-
 object IEditorContribution {
-  @scala.inline
-  def apply(
-    dispose: Callback,
-    getId: CallbackTo[String],
-    restoreViewState: /* state */ js.Any => Callback = null,
-    saveViewState: js.UndefOr[CallbackTo[js.Any]] = js.undefined
-  ): IEditorContribution = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("dispose")(dispose.toJsFn)
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    if (restoreViewState != null) __obj.updateDynamic("restoreViewState")(js.Any.fromFunction1((t0: /* state */ js.Any) => restoreViewState(t0).runNow()))
-    saveViewState.foreach(p => __obj.updateDynamic("saveViewState")(p.toJsFn))
+  
+  inline def apply(dispose: Callback): IEditorContribution = {
+    val __obj = js.Dynamic.literal(dispose = dispose.toJsFn)
     __obj.asInstanceOf[IEditorContribution]
   }
+  
+  extension [Self <: IEditorContribution](x: Self) {
+    
+    inline def setDispose(value: Callback): Self = StObject.set(x, "dispose", value.toJsFn)
+    
+    inline def setRestoreViewState(value: /* state */ Any => Callback): Self = StObject.set(x, "restoreViewState", js.Any.fromFunction1((t0: /* state */ Any) => value(t0).runNow()))
+    
+    inline def setRestoreViewStateUndefined: Self = StObject.set(x, "restoreViewState", js.undefined)
+    
+    inline def setSaveViewState(value: CallbackTo[Any]): Self = StObject.set(x, "saveViewState", value.toJsFn)
+    
+    inline def setSaveViewStateUndefined: Self = StObject.set(x, "saveViewState", js.undefined)
+  }
 }
-

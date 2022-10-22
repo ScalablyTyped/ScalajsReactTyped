@@ -1,25 +1,27 @@
 package typingsJapgolly.jsonPatchGen
 
 import typingsJapgolly.jsonPatchGen.mod.PatchOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonPatchGenStrings {
-  @js.native
-  sealed trait add extends PatchOperation
   
   @js.native
-  sealed trait remove extends PatchOperation
+  sealed trait add
+    extends StObject
+       with PatchOperation
+  inline def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait replace extends PatchOperation
+  sealed trait remove
+    extends StObject
+       with PatchOperation
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
-  @scala.inline
-  def add: add = "add".asInstanceOf[add]
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  @js.native
+  sealed trait replace
+    extends StObject
+       with PatchOperation
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }
-

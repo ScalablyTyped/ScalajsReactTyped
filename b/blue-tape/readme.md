@@ -10,10 +10,10 @@ Tape test runner with promise support
 | ------------------ | :-------------: |
 | Full name          | blue-tape |
 | Keywords           | tape, bluebird, promises |
-| # releases         | 0 |
-| # dependents       | 27 |
-| # downloads        | 193226 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 8616.666666666666 |
+| # stars            | 210.0 |
 
 ## Links
 - [Homepage](https://github.com/spion/blue-tape#readme)

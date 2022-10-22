@@ -1,19 +1,23 @@
 package typingsJapgolly.antdMobileRn.mod
 
-import typingsJapgolly.antdMobileRn.AnonDefaultValue
-import typingsJapgolly.antdMobileRn.sliderIndexNativeMod.default
+import typingsJapgolly.antdMobileRn.anon.DefaultValue
+import typingsJapgolly.antdMobileRn.libSliderIndexDotnativeMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "Slider")
 @js.native
-class Slider () extends default
-
+open class Slider () extends default
 /* static members */
-@JSImport("antd-mobile-rn", "Slider")
-@js.native
-object Slider extends js.Object {
-  var defaultProps: AnonDefaultValue = js.native
+object Slider {
+  
+  @JSImport("antd-mobile-rn", "Slider")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("antd-mobile-rn", "Slider.defaultProps")
+  @js.native
+  def defaultProps: DefaultValue = js.native
+  inline def defaultProps_=(x: DefaultValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

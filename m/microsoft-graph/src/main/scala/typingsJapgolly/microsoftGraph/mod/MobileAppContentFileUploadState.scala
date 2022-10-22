@@ -1,9 +1,9 @@
 package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.success
@@ -23,42 +23,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileFailed
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileTimedOut
 */
-trait MobileAppContentFileUploadState extends js.Object
-
+trait MobileAppContentFileUploadState extends StObject
 object MobileAppContentFileUploadState {
-  @scala.inline
-  def azureStorageUriRenewalFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalFailed = this.cast("azureStorageUriRenewalFailed")
-  @scala.inline
-  def azureStorageUriRenewalPending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalPending = this.cast("azureStorageUriRenewalPending")
-  @scala.inline
-  def azureStorageUriRenewalSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalSuccess = this.cast("azureStorageUriRenewalSuccess")
-  @scala.inline
-  def azureStorageUriRenewalTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalTimedOut = this.cast("azureStorageUriRenewalTimedOut")
-  @scala.inline
-  def azureStorageUriRequestFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestFailed = this.cast("azureStorageUriRequestFailed")
-  @scala.inline
-  def azureStorageUriRequestPending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestPending = this.cast("azureStorageUriRequestPending")
-  @scala.inline
-  def azureStorageUriRequestSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestSuccess = this.cast("azureStorageUriRequestSuccess")
-  @scala.inline
-  def azureStorageUriRequestTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestTimedOut = this.cast("azureStorageUriRequestTimedOut")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def commitFileFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileFailed = this.cast("commitFileFailed")
-  @scala.inline
-  def commitFilePending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFilePending = this.cast("commitFilePending")
-  @scala.inline
-  def commitFileSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileSuccess = this.cast("commitFileSuccess")
-  @scala.inline
-  def commitFileTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileTimedOut = this.cast("commitFileTimedOut")
-  @scala.inline
-  def error: typingsJapgolly.microsoftGraph.microsoftGraphStrings.error = this.cast("error")
-  @scala.inline
-  def success: typingsJapgolly.microsoftGraph.microsoftGraphStrings.success = this.cast("success")
-  @scala.inline
-  def transientError: typingsJapgolly.microsoftGraph.microsoftGraphStrings.transientError = this.cast("transientError")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
+  
+  inline def azureStorageUriRenewalFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalFailed = "azureStorageUriRenewalFailed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalFailed]
+  
+  inline def azureStorageUriRenewalPending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalPending = "azureStorageUriRenewalPending".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalPending]
+  
+  inline def azureStorageUriRenewalSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalSuccess = "azureStorageUriRenewalSuccess".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalSuccess]
+  
+  inline def azureStorageUriRenewalTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalTimedOut = "azureStorageUriRenewalTimedOut".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRenewalTimedOut]
+  
+  inline def azureStorageUriRequestFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestFailed = "azureStorageUriRequestFailed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestFailed]
+  
+  inline def azureStorageUriRequestPending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestPending = "azureStorageUriRequestPending".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestPending]
+  
+  inline def azureStorageUriRequestSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestSuccess = "azureStorageUriRequestSuccess".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestSuccess]
+  
+  inline def azureStorageUriRequestTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestTimedOut = "azureStorageUriRequestTimedOut".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.azureStorageUriRequestTimedOut]
+  
+  inline def commitFileFailed: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileFailed = "commitFileFailed".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileFailed]
+  
+  inline def commitFilePending: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFilePending = "commitFilePending".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFilePending]
+  
+  inline def commitFileSuccess: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileSuccess = "commitFileSuccess".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileSuccess]
+  
+  inline def commitFileTimedOut: typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileTimedOut = "commitFileTimedOut".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.commitFileTimedOut]
+  
+  inline def error: typingsJapgolly.microsoftGraph.microsoftGraphStrings.error = "error".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.error]
+  
+  inline def success: typingsJapgolly.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.success]
+  
+  inline def transientError: typingsJapgolly.microsoftGraph.microsoftGraphStrings.transientError = "transientError".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.transientError]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
 }
-

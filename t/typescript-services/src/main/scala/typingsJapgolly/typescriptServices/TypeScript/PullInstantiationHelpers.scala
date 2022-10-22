@@ -1,38 +1,38 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.PullInstantiationHelpers")
-@js.native
-object PullInstantiationHelpers extends js.Object {
-  @js.native
-  class MutableTypeArgumentMap protected () extends js.Object {
-    def this(typeParameterArgumentMap: TypeArgumentMap) = this()
-    var createdDuplicateTypeArgumentMap: Boolean = js.native
-    var typeParameterArgumentMap: TypeArgumentMap = js.native
-    def ensureTypeArgumentCopy(): Unit = js.native
-  }
+object PullInstantiationHelpers {
   
-  def cleanUpTypeArgumentMap(symbol: InstantiableSymbol, mutableTypeArgumentMap: MutableTypeArgumentMap): Unit = js.native
-  def createTypeParameterArgumentMap(typeParameters: js.Array[PullTypeParameterSymbol], typeArguments: js.Array[PullTypeSymbol]): TypeArgumentMap = js.native
-  def getAllowedToReferenceTypeParametersFromDecl(decl: PullDecl): js.Array[PullTypeParameterSymbol] = js.native
-  def instantiateTypeArgument(
-    resolver: PullTypeResolver,
-    symbol: InstantiableSymbol,
-    mutableTypeParameterMap: MutableTypeArgumentMap
-  ): Unit = js.native
-  def twoTypesAreInstantiationsOfSameNamedGenericType(type1: PullTypeSymbol, type2: PullTypeSymbol): Boolean = js.native
-  def updateMutableTypeParameterArgumentMap(
-    typeParameters: js.Array[PullTypeParameterSymbol],
-    typeArguments: js.Array[PullTypeSymbol],
-    mutableMap: MutableTypeArgumentMap
-  ): Unit = js.native
-  def updateTypeParameterArgumentMap(
-    typeParameters: js.Array[PullTypeParameterSymbol],
-    typeArguments: js.Array[PullTypeSymbol],
-    typeParameterArgumentMap: TypeArgumentMap
-  ): TypeArgumentMap = js.native
+  trait MutableTypeArgumentMap extends StObject {
+    
+    var createdDuplicateTypeArgumentMap: Boolean
+    
+    def ensureTypeArgumentCopy(): Unit
+    
+    var typeParameterArgumentMap: TypeArgumentMap
+  }
+  object MutableTypeArgumentMap {
+    
+    inline def apply(
+      createdDuplicateTypeArgumentMap: Boolean,
+      ensureTypeArgumentCopy: Callback,
+      typeParameterArgumentMap: TypeArgumentMap
+    ): MutableTypeArgumentMap = {
+      val __obj = js.Dynamic.literal(createdDuplicateTypeArgumentMap = createdDuplicateTypeArgumentMap.asInstanceOf[js.Any], ensureTypeArgumentCopy = ensureTypeArgumentCopy.toJsFn, typeParameterArgumentMap = typeParameterArgumentMap.asInstanceOf[js.Any])
+      __obj.asInstanceOf[MutableTypeArgumentMap]
+    }
+    
+    extension [Self <: MutableTypeArgumentMap](x: Self) {
+      
+      inline def setCreatedDuplicateTypeArgumentMap(value: Boolean): Self = StObject.set(x, "createdDuplicateTypeArgumentMap", value.asInstanceOf[js.Any])
+      
+      inline def setEnsureTypeArgumentCopy(value: Callback): Self = StObject.set(x, "ensureTypeArgumentCopy", value.toJsFn)
+      
+      inline def setTypeParameterArgumentMap(value: TypeArgumentMap): Self = StObject.set(x, "typeParameterArgumentMap", value.asInstanceOf[js.Any])
+    }
+  }
 }
-

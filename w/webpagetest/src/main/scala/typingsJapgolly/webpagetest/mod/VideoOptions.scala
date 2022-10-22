@@ -1,20 +1,25 @@
 package typingsJapgolly.webpagetest.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VideoOptions extends js.Object {
+trait VideoOptions extends StObject {
+  
   /** frame comparison end point: [visual]=visually complete | all=last change | doc=document complete | full=fully loaded */
   var comparisonEndPoint: js.UndefOr[String] = js.undefined
 }
-
 object VideoOptions {
-  @scala.inline
-  def apply(comparisonEndPoint: String = null): VideoOptions = {
+  
+  inline def apply(): VideoOptions = {
     val __obj = js.Dynamic.literal()
-    if (comparisonEndPoint != null) __obj.updateDynamic("comparisonEndPoint")(comparisonEndPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoOptions]
   }
+  
+  extension [Self <: VideoOptions](x: Self) {
+    
+    inline def setComparisonEndPoint(value: String): Self = StObject.set(x, "comparisonEndPoint", value.asInstanceOf[js.Any])
+    
+    inline def setComparisonEndPointUndefined: Self = StObject.set(x, "comparisonEndPoint", js.undefined)
+  }
 }
-

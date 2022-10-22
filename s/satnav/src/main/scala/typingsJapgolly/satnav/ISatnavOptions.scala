@@ -1,30 +1,42 @@
 package typingsJapgolly.satnav
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ISatnavOptions extends js.Object {
+trait ISatnavOptions extends StObject {
+  
   var force: js.UndefOr[Boolean] = js.undefined
+  
   var html5: js.UndefOr[Boolean] = js.undefined
+  
   var matchAll: js.UndefOr[Boolean] = js.undefined
+  
   var poll: js.UndefOr[Double] = js.undefined
 }
-
 object ISatnavOptions {
-  @scala.inline
-  def apply(
-    force: js.UndefOr[Boolean] = js.undefined,
-    html5: js.UndefOr[Boolean] = js.undefined,
-    matchAll: js.UndefOr[Boolean] = js.undefined,
-    poll: Int | Double = null
-  ): ISatnavOptions = {
+  
+  inline def apply(): ISatnavOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(html5)) __obj.updateDynamic("html5")(html5.asInstanceOf[js.Any])
-    if (!js.isUndefined(matchAll)) __obj.updateDynamic("matchAll")(matchAll.asInstanceOf[js.Any])
-    if (poll != null) __obj.updateDynamic("poll")(poll.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISatnavOptions]
   }
+  
+  extension [Self <: ISatnavOptions](x: Self) {
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+    
+    inline def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
+    
+    inline def setMatchAll(value: Boolean): Self = StObject.set(x, "matchAll", value.asInstanceOf[js.Any])
+    
+    inline def setMatchAllUndefined: Self = StObject.set(x, "matchAll", js.undefined)
+    
+    inline def setPoll(value: Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+    
+    inline def setPollUndefined: Self = StObject.set(x, "poll", js.undefined)
+  }
 }
-

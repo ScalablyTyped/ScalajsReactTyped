@@ -1,36 +1,51 @@
 package typingsJapgolly.couchbase.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CreateBucketOptions extends js.Object {
+trait CreateBucketOptions extends StObject {
+  
   var authType: js.UndefOr[String] = js.undefined
+  
   var bucketType: js.UndefOr[String] = js.undefined
+  
   /**
     * The bucket name
     */
   var name: js.UndefOr[String] = js.undefined
+  
   var ramQuotaMB: js.UndefOr[Double] = js.undefined
+  
   var replicaNumber: js.UndefOr[Double] = js.undefined
 }
-
 object CreateBucketOptions {
-  @scala.inline
-  def apply(
-    authType: String = null,
-    bucketType: String = null,
-    name: String = null,
-    ramQuotaMB: Int | Double = null,
-    replicaNumber: Int | Double = null
-  ): CreateBucketOptions = {
+  
+  inline def apply(): CreateBucketOptions = {
     val __obj = js.Dynamic.literal()
-    if (authType != null) __obj.updateDynamic("authType")(authType.asInstanceOf[js.Any])
-    if (bucketType != null) __obj.updateDynamic("bucketType")(bucketType.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (ramQuotaMB != null) __obj.updateDynamic("ramQuotaMB")(ramQuotaMB.asInstanceOf[js.Any])
-    if (replicaNumber != null) __obj.updateDynamic("replicaNumber")(replicaNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBucketOptions]
   }
+  
+  extension [Self <: CreateBucketOptions](x: Self) {
+    
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    
+    inline def setAuthTypeUndefined: Self = StObject.set(x, "authType", js.undefined)
+    
+    inline def setBucketType(value: String): Self = StObject.set(x, "bucketType", value.asInstanceOf[js.Any])
+    
+    inline def setBucketTypeUndefined: Self = StObject.set(x, "bucketType", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRamQuotaMB(value: Double): Self = StObject.set(x, "ramQuotaMB", value.asInstanceOf[js.Any])
+    
+    inline def setRamQuotaMBUndefined: Self = StObject.set(x, "ramQuotaMB", js.undefined)
+    
+    inline def setReplicaNumber(value: Double): Self = StObject.set(x, "replicaNumber", value.asInstanceOf[js.Any])
+    
+    inline def setReplicaNumberUndefined: Self = StObject.set(x, "replicaNumber", js.undefined)
+  }
 }
-

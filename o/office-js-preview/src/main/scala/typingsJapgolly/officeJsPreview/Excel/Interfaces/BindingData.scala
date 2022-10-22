@@ -4,35 +4,44 @@ import typingsJapgolly.officeJsPreview.Excel.BindingType
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Range
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Table
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Text
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `binding.toJSON()`. */
-trait BindingData extends js.Object {
+trait BindingData extends StObject {
+  
   /**
+    * Represents the binding identifier.
     *
-    * Represents binding identifier. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var id: js.UndefOr[String] = js.undefined
+  
   /**
+    * Returns the type of the binding. See `Excel.BindingType` for details.
     *
-    * Returns the type of the binding. See Excel.BindingType for details. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var `type`: js.UndefOr[BindingType | Range | Table | Text] = js.undefined
 }
-
 object BindingData {
-  @scala.inline
-  def apply(id: String = null, `type`: BindingType | Range | Table | Text = null): BindingData = {
+  
+  inline def apply(): BindingData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindingData]
   }
+  
+  extension [Self <: BindingData](x: Self) {
+    
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setType(value: BindingType | Range | Table | Text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

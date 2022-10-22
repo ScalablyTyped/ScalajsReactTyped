@@ -1,35 +1,47 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UploadUploadEvent extends UploadEvent {
-  var XMLHttpRequest: js.UndefOr[js.Any] = js.undefined
-  var data: js.UndefOr[js.Any] = js.undefined
-  var files: js.UndefOr[js.Array[_]] = js.undefined
-  var formData: js.UndefOr[js.Any] = js.undefined
+trait UploadUploadEvent
+  extends StObject
+     with UploadEvent {
+  
+  var XMLHttpRequest: js.UndefOr[Any] = js.undefined
+  
+  var data: js.UndefOr[Any] = js.undefined
+  
+  var files: js.UndefOr[js.Array[Any]] = js.undefined
+  
+  var formData: js.UndefOr[Any] = js.undefined
 }
-
 object UploadUploadEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Upload,
-    XMLHttpRequest: js.Any = null,
-    data: js.Any = null,
-    files: js.Array[_] = null,
-    formData: js.Any = null
-  ): UploadUploadEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (XMLHttpRequest != null) __obj.updateDynamic("XMLHttpRequest")(XMLHttpRequest.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (files != null) __obj.updateDynamic("files")(files.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Upload): UploadUploadEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadUploadEvent]
   }
+  
+  extension [Self <: UploadUploadEvent](x: Self) {
+    
+    inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setFiles(value: js.Array[Any]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    
+    inline def setFilesVarargs(value: Any*): Self = StObject.set(x, "files", js.Array(value*))
+    
+    inline def setFormData(value: Any): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    
+    inline def setXMLHttpRequest(value: Any): Self = StObject.set(x, "XMLHttpRequest", value.asInstanceOf[js.Any])
+    
+    inline def setXMLHttpRequestUndefined: Self = StObject.set(x, "XMLHttpRequest", js.undefined)
+  }
 }
-

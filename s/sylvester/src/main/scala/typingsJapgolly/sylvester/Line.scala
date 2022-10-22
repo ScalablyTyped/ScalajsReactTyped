@@ -1,27 +1,29 @@
 package typingsJapgolly.sylvester
 
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.sylvester.Sylvester.LineStatic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Line extends js.Object {
+trait Line extends StObject {
+  
   /**
     * Gets the 3D vector corresponding to a point on the line.
     */
   var anchor: Vector = js.native
-  /**
-    * Gets a normalized 3D vector representing the line's direction.
-    */
-  var direction: Vector = js.native
+  
   /**
     * Returns true if the argument is a point on the line.
     *
     * @param {Vector} point The point.
     */
   def contains(point: Vector): Boolean = js.native
+  
+  /**
+    * Gets a normalized 3D vector representing the line's direction.
+    */
+  var direction: Vector = js.native
+  
   def distanceFrom(obj: Line): Double = js.native
   def distanceFrom(obj: Plane): Double = js.native
   /**
@@ -30,16 +32,19 @@ trait Line extends js.Object {
     * @param {Vector|Line|Plane} obj The object.
     */
   def distanceFrom(obj: Vector): Double = js.native
+  
   /**
     * Returns a copy of the line.
     */
   def dup(): Line = js.native
+  
   /**
     * Returns true if the argument occupies the same space as the line.
     *
     * @param {Line} line The other line.
     */
   def eql(line: Line): Boolean = js.native
+  
   /**
     * Returns the unique intersection point with the argument, if one exists.
     *
@@ -47,6 +52,7 @@ trait Line extends js.Object {
     */
   def intersectionWith(obj: Line): Vector = js.native
   def intersectionWith(obj: Plane): Vector = js.native
+  
   /**
     * Returns true if the line has a unique point of intersection with the argument.
     *
@@ -54,6 +60,7 @@ trait Line extends js.Object {
     */
   def intersects(obj: Line): Boolean = js.native
   def intersects(obj: Plane): Boolean = js.native
+  
   /**
     * Returns true if the line is parallel to the argument. Here, 'parallel to' means that the argument's
     * direction is either parallel or antiparallel to the line's own direction. A line is parallel to a
@@ -63,12 +70,14 @@ trait Line extends js.Object {
     */
   def isParallelTo(obj: Line): Boolean = js.native
   def isParallelTo(obj: Plane): Boolean = js.native
+  
   /**
     * Returns true if the line lies in the given plane.
     *
     * @param {Plane} plane The plane.
     */
   def liesIn(plane: Plane): Boolean = js.native
+  
   def pointClosestTo(obj: Line): Vector = js.native
   /**
     * Returns the point on the line that is closest to the given point or line.
@@ -76,6 +85,7 @@ trait Line extends js.Object {
     * @param {Vector|Line} obj The object.
     */
   def pointClosestTo(obj: Vector): Vector = js.native
+  
   def reflectionIn(obj: Line): Line = js.native
   def reflectionIn(obj: Plane): Line = js.native
   /**
@@ -84,6 +94,7 @@ trait Line extends js.Object {
     * @param {Vector|Line|Plane} obj The object.
     */
   def reflectionIn(obj: Vector): Line = js.native
+  
   def rotate(t: Double, axis: Line): Line = js.native
   /**
     * Returns a copy of the line rotated by t radians about the given line. Works by finding the argument's
@@ -95,6 +106,7 @@ trait Line extends js.Object {
     * @param {Vector|Line} axis The axis.
     */
   def rotate(t: Double, axis: Vector): Line = js.native
+  
   /**
     * Set the line's anchor point and direction.
     *
@@ -105,6 +117,7 @@ trait Line extends js.Object {
   def setVectors(anchor: js.Array[Double], direction: Vector): Line = js.native
   def setVectors(anchor: Vector, direction: js.Array[Double]): Line = js.native
   def setVectors(anchor: Vector, direction: Vector): Line = js.native
+  
   def translate(vector: js.Array[Double]): Line = js.native
   /**
     * Returns the result of translating the line by the given vector/array.
@@ -113,8 +126,3 @@ trait Line extends js.Object {
     */
   def translate(vector: Vector): Line = js.native
 }
-
-@JSGlobal("Line")
-@js.native
-object Line extends TopLevel[LineStatic]
-

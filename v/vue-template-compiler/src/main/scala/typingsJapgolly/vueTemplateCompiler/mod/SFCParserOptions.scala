@@ -3,25 +3,34 @@ package typingsJapgolly.vueTemplateCompiler.mod
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerBooleans.`true`
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.line
 import typingsJapgolly.vueTemplateCompiler.vueTemplateCompilerStrings.space
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * SFC parser related types
   */
-trait SFCParserOptions extends js.Object {
+trait SFCParserOptions extends StObject {
+  
   var deindent: js.UndefOr[Boolean] = js.undefined
+  
   var pad: js.UndefOr[`true` | line | space] = js.undefined
 }
-
 object SFCParserOptions {
-  @scala.inline
-  def apply(deindent: js.UndefOr[Boolean] = js.undefined, pad: `true` | line | space = null): SFCParserOptions = {
+  
+  inline def apply(): SFCParserOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(deindent)) __obj.updateDynamic("deindent")(deindent.asInstanceOf[js.Any])
-    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCParserOptions]
   }
+  
+  extension [Self <: SFCParserOptions](x: Self) {
+    
+    inline def setDeindent(value: Boolean): Self = StObject.set(x, "deindent", value.asInstanceOf[js.Any])
+    
+    inline def setDeindentUndefined: Self = StObject.set(x, "deindent", js.undefined)
+    
+    inline def setPad(value: `true` | line | space): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    
+    inline def setPadUndefined: Self = StObject.set(x, "pad", js.undefined)
+  }
 }
-

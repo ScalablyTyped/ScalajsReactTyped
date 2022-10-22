@@ -1,22 +1,25 @@
 package typingsJapgolly.simulant
 
 import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Node
-import typingsJapgolly.std.Event_
-import typingsJapgolly.std.Window_
+import org.scalajs.dom.Event
+import org.scalajs.dom.Node
+import org.scalajs.dom.Window
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("simulant", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(eventName: String): Event_ = js.native
-  def apply(eventName: String, payload: StringDictionary[js.Any]): Event_ = js.native
-  def apply(window: Window_, eventName: String): Event_ = js.native
-  def apply(window: Window_, eventName: String, payload: StringDictionary[js.Any]): Event_ = js.native
-  def fire(el: Node, e: String): Unit = js.native
-  def fire(el: Node, e: String, payload: StringDictionary[js.Any]): Unit = js.native
-  def fire(el: Node, e: Event_): Unit = js.native
+object mod {
+  
+  inline def apply(eventName: String): Event = ^.asInstanceOf[js.Dynamic].apply(eventName.asInstanceOf[js.Any]).asInstanceOf[Event]
+  inline def apply(eventName: String, payload: StringDictionary[Any]): Event = (^.asInstanceOf[js.Dynamic].apply(eventName.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def apply(window: Window, eventName: String): Event = (^.asInstanceOf[js.Dynamic].apply(window.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Event]
+  inline def apply(window: Window, eventName: String, payload: StringDictionary[Any]): Event = (^.asInstanceOf[js.Dynamic].apply(window.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Event]
+  
+  @JSImport("simulant", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def fire(el: Node, e: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(el.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fire(el: Node, e: String, payload: StringDictionary[Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(el.asInstanceOf[js.Any], e.asInstanceOf[js.Any], payload.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def fire(el: Node, e: Event): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(el.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

@@ -1,19 +1,24 @@
 package typingsJapgolly.mapboxGl.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StyleOptions extends js.Object {
+trait StyleOptions extends StObject {
+  
   var transition: js.UndefOr[Boolean] = js.undefined
 }
-
 object StyleOptions {
-  @scala.inline
-  def apply(transition: js.UndefOr[Boolean] = js.undefined): StyleOptions = {
+  
+  inline def apply(): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(transition)) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }
+  
+  extension [Self <: StyleOptions](x: Self) {
+    
+    inline def setTransition(value: Boolean): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+    
+    inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+  }
 }
-

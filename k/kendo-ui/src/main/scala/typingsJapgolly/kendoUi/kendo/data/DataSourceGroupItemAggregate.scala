@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.data
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSourceGroupItemAggregate extends js.Object {
+trait DataSourceGroupItemAggregate extends StObject {
+  
   var aggregate: js.UndefOr[String] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
 }
-
 object DataSourceGroupItemAggregate {
-  @scala.inline
-  def apply(aggregate: String = null, field: String = null): DataSourceGroupItemAggregate = {
+  
+  inline def apply(): DataSourceGroupItemAggregate = {
     val __obj = js.Dynamic.literal()
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceGroupItemAggregate]
   }
+  
+  extension [Self <: DataSourceGroupItemAggregate](x: Self) {
+    
+    inline def setAggregate(value: String): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+  }
 }
-

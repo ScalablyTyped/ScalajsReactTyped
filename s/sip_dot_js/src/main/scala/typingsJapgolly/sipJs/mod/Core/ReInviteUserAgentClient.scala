@@ -1,21 +1,28 @@
 package typingsJapgolly.sipJs.mod.Core
 
-import typingsJapgolly.sipJs.inviteMod.OutgoingInviteRequestDelegate
-import typingsJapgolly.sipJs.outgoingRequestMod.RequestOptions
+import typingsJapgolly.sipJs.libCoreMessagesMethodsInviteMod.OutgoingInviteRequestDelegate
+import typingsJapgolly.sipJs.libCoreMessagesOutgoingRequestMod.RequestOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sip.js", "Core.ReInviteUserAgentClient")
 @js.native
-class ReInviteUserAgentClient protected ()
-  extends typingsJapgolly.sipJs.coreMod.ReInviteUserAgentClient {
-  def this(dialog: typingsJapgolly.sipJs.dialogsMod.SessionDialog) = this()
-  def this(dialog: typingsJapgolly.sipJs.dialogsMod.SessionDialog, delegate: OutgoingInviteRequestDelegate) = this()
+open class ReInviteUserAgentClient protected ()
+  extends typingsJapgolly.sipJs.libCoreMod.ReInviteUserAgentClient {
+  def this(dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SessionDialog) = this()
   def this(
-    dialog: typingsJapgolly.sipJs.dialogsMod.SessionDialog,
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SessionDialog,
+    delegate: OutgoingInviteRequestDelegate
+  ) = this()
+  def this(
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SessionDialog,
+    delegate: Unit,
+    options: RequestOptions
+  ) = this()
+  def this(
+    dialog: typingsJapgolly.sipJs.libCoreDialogsMod.SessionDialog,
     delegate: OutgoingInviteRequestDelegate,
     options: RequestOptions
   ) = this()
 }
-

@@ -2,20 +2,21 @@ package typingsJapgolly.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typingsJapgolly.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to certificate creation, import, and enrollment methods. */
-@JSGlobal("Windows.Security.Cryptography.Certificates.UserCertificateEnrollmentManager")
 @js.native
-abstract class UserCertificateEnrollmentManager () extends js.Object {
+trait UserCertificateEnrollmentManager extends StObject {
+  
   /**
     * Asynchronously creates a PKCS #10 certificate request based on properties specified in a CertificateRequestProperties object.
     * @param request A CertificateRequestProperties object that contains the property values used to create the certificate request.
     * @return An asynchronous operation to retrieve the base64 encoded PKCS #10 certificate request.
     */
   def createRequestAsync(request: CertificateRequestProperties): IPromiseWithIAsyncOperation[String] = js.native
+  
   /**
     * Asynchronously imports a user certificate from a Personal Information Exchange (PFX) message.
     * @param pfxData Base64-encoded PFX message.
@@ -62,6 +63,7 @@ abstract class UserCertificateEnrollmentManager () extends js.Object {
     * @return This method does not return a value.
     */
   def importPfxDataAsync(pfxData: String, password: String, pfxImportParameters: PfxImportParameters): IPromiseWithIAsyncAction = js.native
+  
   /**
     * Asynchronously installs a certificate chain into the app container on the local computer.
     * @param certificate The encoded certificate. The certificate is encoded by using Distinguished Encoding Rules (DER) as defined by the Abstract Syntax Notation One (ASN.1) standard.
@@ -70,4 +72,3 @@ abstract class UserCertificateEnrollmentManager () extends js.Object {
     */
   def installCertificateAsync(certificate: String, installOption: InstallOptions): IPromiseWithIAsyncAction = js.native
 }
-

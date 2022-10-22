@@ -1,50 +1,69 @@
 package typingsJapgolly.electron.Electron
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PopupOptions extends js.Object {
+trait PopupOptions extends StObject {
+  
   /**
     * Called when menu is closed.
     */
   var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /**
     * The index of the menu item to be positioned under the mouse cursor at the
     * specified coordinates. Default is -1.
+    *
+    * @platform darwin
     */
   var positioningItem: js.UndefOr[Double] = js.undefined
+  
   /**
     * Default is the focused window.
     */
   var window: js.UndefOr[BrowserWindow] = js.undefined
+  
   /**
-    * Default is the current mouse cursor position. Must be declared if y is declared.
+    * Default is the current mouse cursor position. Must be declared if `y` is
+    * declared.
     */
   var x: js.UndefOr[Double] = js.undefined
+  
   /**
-    * Default is the current mouse cursor position. Must be declared if x is declared.
+    * Default is the current mouse cursor position. Must be declared if `x` is
+    * declared.
     */
   var y: js.UndefOr[Double] = js.undefined
 }
-
 object PopupOptions {
-  @scala.inline
-  def apply(
-    callback: js.UndefOr[Callback] = js.undefined,
-    positioningItem: Int | Double = null,
-    window: BrowserWindow = null,
-    x: Int | Double = null,
-    y: Int | Double = null
-  ): PopupOptions = {
+  
+  inline def apply(): PopupOptions = {
     val __obj = js.Dynamic.literal()
-    callback.foreach(p => __obj.updateDynamic("callback")(p.toJsFn))
-    if (positioningItem != null) __obj.updateDynamic("positioningItem")(positioningItem.asInstanceOf[js.Any])
-    if (window != null) __obj.updateDynamic("window")(window.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
     __obj.asInstanceOf[PopupOptions]
   }
+  
+  extension [Self <: PopupOptions](x: Self) {
+    
+    inline def setCallback(value: Callback): Self = StObject.set(x, "callback", value.toJsFn)
+    
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    
+    inline def setPositioningItem(value: Double): Self = StObject.set(x, "positioningItem", value.asInstanceOf[js.Any])
+    
+    inline def setPositioningItemUndefined: Self = StObject.set(x, "positioningItem", js.undefined)
+    
+    inline def setWindow(value: BrowserWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+  }
 }
-

@@ -1,10 +1,8 @@
 package typingsJapgolly.phaser.Phaser.GameObjects
 
-import typingsJapgolly.phaser.Phaser.Scene
-import typingsJapgolly.phaser.integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Ellipse Shape is a Game Object that can be added to a Scene, Group or Container. You can
@@ -23,39 +21,30 @@ import scala.scalajs.js.annotation._
   * that take place during construction. Increase and decrease the default value for smoother, or more
   * jagged, shapes.
   */
-@JSGlobal("Phaser.GameObjects.Ellipse")
 @js.native
-class Ellipse protected () extends Shape {
+trait Ellipse
+  extends StObject
+     with Shape {
+  
   /**
-    * 
-    * @param scene The Scene to which this Game Object belongs. A Game Object can only belong to one Scene at a time.
-    * @param x The horizontal position of this Game Object in the world. Default 0.
-    * @param y The vertical position of this Game Object in the world. Default 0.
-    * @param width The width of the ellipse. An ellipse with equal width and height renders as a circle. Default 128.
-    * @param height The height of the ellipse. An ellipse with equal width and height renders as a circle. Default 128.
-    * @param fillColor The color the ellipse will be filled with, i.e. 0xff0000 for red.
-    * @param fillAlpha The alpha the ellipse will be filled with. You can also set the alpha of the overall Shape using its `alpha` property.
+    * Sets the size of the ellipse by changing the underlying geometry data, rather than scaling the object.
+    * This call can be chained.
+    * @param width The width of the ellipse.
+    * @param height The height of the ellipse.
     */
-  def this(
-    scene: Scene,
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    width: js.UndefOr[Double],
-    height: js.UndefOr[Double],
-    fillColor: js.UndefOr[Double],
-    fillAlpha: js.UndefOr[Double]
-  ) = this()
-  /**
-    * The smoothness of the ellipse. The number of points used when rendering it.
-    * Increase this value for a smoother ellipse, at the cost of more polygons being rendered.
-    */
-  var smoothness: integer = js.native
+  def setSize(width: Double, height: Double): this.type = js.native
+  
   /**
     * Sets the smoothness of the ellipse. The number of points used when rendering it.
     * Increase this value for a smoother ellipse, at the cost of more polygons being rendered.
     * This call can be chained.
     * @param value The value to set the smoothness to.
     */
-  def setSmoothness(value: integer): this.type = js.native
+  def setSmoothness(value: Double): this.type = js.native
+  
+  /**
+    * The smoothness of the ellipse. The number of points used when rendering it.
+    * Increase this value for a smoother ellipse, at the cost of more polygons being rendered.
+    */
+  var smoothness: Double = js.native
 }
-

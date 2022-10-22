@@ -1,7 +1,7 @@
 
 # Scala.js typings for electron-util
 
-Typings are for version 0.12.3
+Typings are for version 0.17.2
 
 ## Library description:
 Useful utilities for Electron apps and modules
@@ -10,10 +10,10 @@ Useful utilities for Electron apps and modules
 | ------------------ | :-------------: |
 | Full name          | electron-util |
 | Keywords           | electron, app, dev, development, utility, utilities, util, utils, useful |
-| # releases         | 19 |
-| # dependents       | 29 |
-| # downloads        | 81430 |
-| # stars            | 1 |
+| # releases         | 7 |
+| # dependents       | 0.0 |
+| # downloads        | 37297.666666666664 |
+| # stars            | 1126.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/electron-util#readme)

@@ -1,40 +1,38 @@
 package typingsJapgolly.estree.mod
 
 import typingsJapgolly.estree.estreeStrings.init
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.estree.mod.Node because Already inherited */ trait AssignmentProperty extends Property {
+trait AssignmentProperty
+  extends StObject
+     with Property {
+  
   @JSName("kind")
   var kind_AssignmentProperty: init
+  
   @JSName("value")
   var value_AssignmentProperty: Pattern
 }
-
 object AssignmentProperty {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     computed: Boolean,
-    key: Expression,
-    kind: init,
+    key: Expression | PrivateIdentifier,
     method: Boolean,
     shorthand: Boolean,
-    `type`: typingsJapgolly.estree.estreeStrings.Property,
-    value: Pattern,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
+    value: Pattern
   ): AssignmentProperty = {
-    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = "init", method = method.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Property")
     __obj.asInstanceOf[AssignmentProperty]
   }
+  
+  extension [Self <: AssignmentProperty](x: Self) {
+    
+    inline def setKind(value: init): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: Pattern): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

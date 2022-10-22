@@ -11,9 +11,9 @@ A NodeJS module that helps you reading large text files, line by line, without b
 | Full name          | line-by-line |
 | Keywords           | line, file, reader, fs |
 | # releases         | 1 |
-| # dependents       | 128 |
-| # downloads        | 931955 |
-| # stars            | 30 |
+| # dependents       | 0.0 |
+| # downloads        | 111780.33333333333 |
+| # stars            | 137.0 |
 
 ## Links
 - [Homepage](https://github.com/Osterjour/line-by-line)

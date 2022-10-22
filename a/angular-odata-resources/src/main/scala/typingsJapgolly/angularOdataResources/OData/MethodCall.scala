@@ -1,14 +1,15 @@
 package typingsJapgolly.angularOdataResources.OData
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("OData.MethodCall")
 @js.native
-class MethodCall protected () extends IExecutable {
-  def this(methodName: String, args: js.Any*) = this()
-  var methodName: js.Any = js.native
-  var params: js.Any = js.native
+trait MethodCall
+  extends StObject
+     with IExecutable {
+  
+  /* private */ var methodName: Any = js.native
+  
+  /* private */ var params: Any = js.native
 }
-

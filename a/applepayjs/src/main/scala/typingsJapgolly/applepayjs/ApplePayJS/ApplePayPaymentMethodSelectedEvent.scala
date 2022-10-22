@@ -1,18 +1,19 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The ApplePayPaymentMethodSelectedEvent class defines the attributes contained by the ApplePaySession.onpaymentmethodselected callback function.
   */
-@JSGlobal("ApplePayJS.ApplePayPaymentMethodSelectedEvent")
 @js.native
-abstract class ApplePayPaymentMethodSelectedEvent () extends Event {
+trait ApplePayPaymentMethodSelectedEvent
+  extends StObject
+     with Event {
+  
   /**
     * The card used to complete a payment.
     */
   val paymentMethod: ApplePayPaymentMethod = js.native
 }
-

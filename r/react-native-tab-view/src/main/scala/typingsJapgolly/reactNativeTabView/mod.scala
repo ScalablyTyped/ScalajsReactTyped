@@ -1,46 +1,34 @@
 package typingsJapgolly.reactNativeTabView
 
-import japgolly.scalajs.react.raw.React.Element
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactNativeTabView.scrollPagerMod.default
-import typingsJapgolly.reactNativeTabView.typesMod.Route
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeTabView.libTypescriptSceneMapMod.SceneProps
+import typingsJapgolly.reactNativeTabView.libTypescriptTabBarMod.Props
+import typingsJapgolly.reactNativeTabView.libTypescriptTypesMod.Route
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-native-tab-view", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class ScrollPager[T /* <: Route */] () extends default[T]
+object mod {
   
+  @JSImport("react-native-tab-view", JSImport.Namespace)
   @js.native
-  class TabBar[T /* <: Route */] ()
-    extends typingsJapgolly.reactNativeTabView.tabBarMod.default[T]
+  val ^ : js.Any = js.native
   
-  @js.native
-  class TabView[T /* <: Route */] ()
-    extends typingsJapgolly.reactNativeTabView.tabViewMod.default[T]
+  inline def SceneMap[T /* <: Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ SceneProps, Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("SceneMap")(scenes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* hasRouteJumpToPosition */ SceneProps, Element]]
   
-  def SceneMap[T /* <: js.Any */](scenes: StringDictionary[ComponentType[T]]): js.Function1[/* hasRouteJumpToPosition */ T, Element] = js.native
-  /* static members */
-  @js.native
-  object ScrollPager extends js.Object {
-    var defaultProps: AnonBounces = js.native
-  }
+  inline def TabBar[T /* <: Route */](
+    hasGetLabelTextGetAccessibleGetAccessibilityLabelGetTestIDRenderIndicatorGapScrollEnabledJumpToNavigationStatePositionActiveColorBouncesContentContainerStyleInactiveColorIndicatorContainerStyleIndicatorStyleLabelStyleOnTabLongPressOnTabPressPressColorPressOpacityRenderBadgeRenderIconRenderLabelRenderTabBarItemStyleTabStyle: Props[T]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabBar")(hasGetLabelTextGetAccessibleGetAccessibilityLabelGetTestIDRenderIndicatorGapScrollEnabledJumpToNavigationStatePositionActiveColorBouncesContentContainerStyleInactiveColorIndicatorContainerStyleIndicatorStyleLabelStyleOnTabLongPressOnTabPressPressColorPressOpacityRenderBadgeRenderIconRenderLabelRenderTabBarItemStyleTabStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* static members */
-  @js.native
-  object TabBar extends js.Object {
-    var defaultProps: AnonGetAccessibilityLabel = js.native
-  }
+  inline def TabBarIndicator[T /* <: Route */](
+    hasGetTabWidthLayoutNavigationStatePositionWidthGapStyle: typingsJapgolly.reactNativeTabView.libTypescriptTabBarIndicatorMod.Props[T]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabBarIndicator")(hasGetTabWidthLayoutNavigationStatePositionWidthGapStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  /* static members */
-  @js.native
-  object TabView extends js.Object {
-    var defaultProps: AnonGestureHandlerProps = js.native
-  }
+  inline def TabBarItem[T /* <: Route */](props: typingsJapgolly.reactNativeTabView.libTypescriptTabBarItemMod.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabBarItem")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
+  inline def TabView[T /* <: Route */](
+    hasOnIndexChangeNavigationStateRenderSceneInitialLayoutKeyboardDismissModeLazyLazyPreloadDistanceOnSwipeStartOnSwipeEndRenderLazyPlaceholderRenderTabBarSceneContainerStylePagerStyleStyleSwipeEnabledTabBarPositionAnimationEnabled: typingsJapgolly.reactNativeTabView.libTypescriptTabViewMod.Props[T]
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("TabView")(hasOnIndexChangeNavigationStateRenderSceneInitialLayoutKeyboardDismissModeLazyLazyPreloadDistanceOnSwipeStartOnSwipeEndRenderLazyPlaceholderRenderTabBarSceneContainerStylePagerStyleStyleSwipeEnabledTabBarPositionAnimationEnabled.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

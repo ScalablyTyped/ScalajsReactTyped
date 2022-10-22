@@ -2,10 +2,10 @@ package typingsJapgolly.cytoscape.mod
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.MouseEvent
+import org.scalajs.dom.MouseEvent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Events passed to handler callbacks are similar to
@@ -14,24 +14,26 @@ import scala.scalajs.js.annotation._
   *
   * http://js.cytoscape.org/#events
   */
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typingsJapgolly.cytoscape.mod.AbstractEventObject because Already inherited
-- typingsJapgolly.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ trait EventObject extends InputEventObject {
+- typingsJapgolly.cytoscape.mod.LayoutEventObject because var conflicts: cy, namespace, target, timeStamp, `type`. Inlined layout */ trait EventObject
+  extends StObject
+     with InputEventObject {
+  
   /**
     * layout : indicates the corresponding layout that triggered the event
     * (useful if running multiple layouts simultaneously)
     */
-  var layout: js.Any
+  var layout: Any
 }
-
 object EventObject {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     cy: Core,
     isDefaultPrevented: CallbackTo[Boolean],
     isImmediatePropagationStopped: CallbackTo[Boolean],
     isPropagationStopped: CallbackTo[Boolean],
-    layout: js.Any,
+    layout: Any,
     namespace: String,
     originalEvent: MouseEvent,
     position: Position,
@@ -39,19 +41,17 @@ object EventObject {
     renderedPosition: Position,
     stopImmediatePropagation: Callback,
     stopPropagation: Callback,
-    target: js.Any,
+    target: Any,
     timeStamp: Double,
     `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt
   ): EventObject = {
-    val __obj = js.Dynamic.literal(cy = cy.asInstanceOf[js.Any], layout = layout.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], renderedPosition = renderedPosition.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    __obj.updateDynamic("isImmediatePropagationStopped")(isImmediatePropagationStopped.toJsFn)
-    __obj.updateDynamic("isPropagationStopped")(isPropagationStopped.toJsFn)
-    __obj.updateDynamic("preventDefault")(preventDefault.toJsFn)
-    __obj.updateDynamic("stopImmediatePropagation")(stopImmediatePropagation.toJsFn)
-    __obj.updateDynamic("stopPropagation")(stopPropagation.toJsFn)
+    val __obj = js.Dynamic.literal(cy = cy.asInstanceOf[js.Any], isDefaultPrevented = isDefaultPrevented.toJsFn, isImmediatePropagationStopped = isImmediatePropagationStopped.toJsFn, isPropagationStopped = isPropagationStopped.toJsFn, layout = layout.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], preventDefault = preventDefault.toJsFn, renderedPosition = renderedPosition.asInstanceOf[js.Any], stopImmediatePropagation = stopImmediatePropagation.toJsFn, stopPropagation = stopPropagation.toJsFn, target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventObject]
   }
+  
+  extension [Self <: EventObject](x: Self) {
+    
+    inline def setLayout(value: Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,26 @@
 package typingsJapgolly.reactNavigation.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationProp[S] extends js.Object {
+trait NavigationProp[S] extends StObject {
+  
   var dispatch: NavigationDispatch
+  
   var state: S
 }
-
 object NavigationProp {
-  @scala.inline
-  def apply[S](dispatch: /* action */ NavigationAction => CallbackTo[Boolean], state: S): NavigationProp[S] = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
-    __obj.updateDynamic("dispatch")(js.Any.fromFunction1((t0: /* action */ typingsJapgolly.reactNavigation.mod.NavigationAction) => dispatch(t0).runNow()))
+  
+  inline def apply[S](dispatch: /* action */ NavigationAction => Boolean, state: S): NavigationProp[S] = {
+    val __obj = js.Dynamic.literal(dispatch = js.Any.fromFunction1(dispatch), state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationProp[S]]
   }
+  
+  extension [Self <: NavigationProp[?], S](x: Self & NavigationProp[S]) {
+    
+    inline def setDispatch(value: /* action */ NavigationAction => Boolean): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+    
+    inline def setState(value: S): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+  }
 }
-

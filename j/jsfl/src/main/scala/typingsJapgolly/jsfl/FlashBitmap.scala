@@ -1,23 +1,42 @@
 package typingsJapgolly.jsfl
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlashBitmap extends js.Object {
-  var bits: js.Any
+trait FlashBitmap extends StObject {
+  
+  var bits: Any
+  
   var cTab: js.UndefOr[js.Array[String]] = js.undefined
-  var depth: js.Any
-  var height: js.Any
-  var width: js.Any
+  
+  var depth: Any
+  
+  var height: Any
+  
+  var width: Any
 }
-
 object FlashBitmap {
-  @scala.inline
-  def apply(bits: js.Any, depth: js.Any, height: js.Any, width: js.Any, cTab: js.Array[String] = null): FlashBitmap = {
+  
+  inline def apply(bits: Any, depth: Any, height: Any, width: Any): FlashBitmap = {
     val __obj = js.Dynamic.literal(bits = bits.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
-    if (cTab != null) __obj.updateDynamic("cTab")(cTab.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlashBitmap]
   }
+  
+  extension [Self <: FlashBitmap](x: Self) {
+    
+    inline def setBits(value: Any): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+    
+    inline def setCTab(value: js.Array[String]): Self = StObject.set(x, "cTab", value.asInstanceOf[js.Any])
+    
+    inline def setCTabUndefined: Self = StObject.set(x, "cTab", js.undefined)
+    
+    inline def setCTabVarargs(value: String*): Self = StObject.set(x, "cTab", js.Array(value*))
+    
+    inline def setDepth(value: Any): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    inline def setHeight(value: Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setWidth(value: Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
 }
-

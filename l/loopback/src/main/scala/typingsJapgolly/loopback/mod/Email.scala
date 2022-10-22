@@ -1,9 +1,9 @@
 package typingsJapgolly.loopback.mod
 
-import typingsJapgolly.loopback.AnonFrom
+import typingsJapgolly.loopback.anon.From
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Email model.  Extends LoopBack base [Model](#model-new-model).
@@ -17,27 +17,35 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("loopback", "Email")
 @js.native
-class Email () extends Model {
+open class Email protected () extends Model {
+  def this(data: Any) = this()
+  
   /** Email sender address.  Required. */
   var from: String = js.native
+  
   /** HTML body of email. */
   var html: String = js.native
-  /** Email subject string.  Required. */
-  var subject: String = js.native
-  /** Text body of email. */
-  var text: String = js.native
-  /** Email addressee.  Required. */
-  var to: String = js.native
+  
   /**
     * A shortcut for Email.send(this).
     */
   def send(): Unit = js.native
+  
+  /** Email subject string.  Required. */
+  var subject: String = js.native
+  
+  /** Text body of email. */
+  var text: String = js.native
+  
+  /** Email addressee.  Required. */
+  var to: String = js.native
 }
-
-/* static members */
-@JSImport("loopback", "Email")
-@js.native
-object Email extends js.Object {
+object Email {
+  
+  @JSImport("loopback", "Email")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Send an email with the given `options`
     * Example Options
@@ -60,6 +68,6 @@ object Email extends js.Object {
     * @prop {string} html Body HTML (optional)
     * @param {() => void} callback Called after the e-mail is sent or the sending faile
     */
-  def send(callback: js.Function0[Unit], options: AnonFrom): Unit = js.native
+  /* static member */
+  inline def send(callback: js.Function0[Unit], options: From): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }
-

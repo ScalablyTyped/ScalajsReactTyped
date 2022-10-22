@@ -1,19 +1,28 @@
 package typingsJapgolly.genericFunctions
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("generic-functions", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def endswithdot(str: String): String = js.native
-  def icstrcmp(str1: String, str2: String): Boolean = js.native
-  def icstrendswith(str: String, suffix: String): Boolean = js.native
-  def objGetKeyByValue(`object`: js.Object, value: js.Any): String = js.native
-  def println(message: String): Unit = js.native
-  def printlns(message: js.Array[String]): Unit = js.native
-  def strcmp(str1: String, str2: String): Boolean = js.native
-  def strendswith(str: String, suffix: String): Boolean = js.native
+object mod {
+  
+  @JSImport("generic-functions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def endswithdot(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("endswithdot")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  inline def icstrcmp(str1: String, str2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("icstrcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def icstrendswith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("icstrendswith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def objGetKeyByValue(`object`: js.Object, value: Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("objGetKeyByValue")(`object`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def println(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("println")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def printlns(message: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("printlns")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  inline def strcmp(str1: String, str2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strcmp")(str1.asInstanceOf[js.Any], str2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def strendswith(str: String, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("strendswith")(str.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }
-

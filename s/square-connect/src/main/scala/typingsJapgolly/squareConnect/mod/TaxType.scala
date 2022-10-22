@@ -1,24 +1,20 @@
 package typingsJapgolly.squareConnect.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.squareConnect.squareConnectStrings.ADDITIVE
   - typingsJapgolly.squareConnect.squareConnectStrings.INCLUSIVE
   - typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_TAX
 */
-trait TaxType extends js.Object
-
+trait TaxType extends StObject
 object TaxType {
-  @scala.inline
-  def ADDITIVE: typingsJapgolly.squareConnect.squareConnectStrings.ADDITIVE = this.cast("ADDITIVE")
-  @scala.inline
-  def INCLUSIVE: typingsJapgolly.squareConnect.squareConnectStrings.INCLUSIVE = this.cast("INCLUSIVE")
-  @scala.inline
-  def UNKNOWN_TAX: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_TAX = this.cast("UNKNOWN_TAX")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ADDITIVE: typingsJapgolly.squareConnect.squareConnectStrings.ADDITIVE = "ADDITIVE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.ADDITIVE]
+  
+  inline def INCLUSIVE: typingsJapgolly.squareConnect.squareConnectStrings.INCLUSIVE = "INCLUSIVE".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.INCLUSIVE]
+  
+  inline def UNKNOWN_TAX: typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_TAX = "UNKNOWN_TAX".asInstanceOf[typingsJapgolly.squareConnect.squareConnectStrings.UNKNOWN_TAX]
 }
-

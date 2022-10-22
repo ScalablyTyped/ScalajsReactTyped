@@ -11,9 +11,9 @@ Copy file globs, watching for changes.
 | Full name          | cpx |
 | Keywords           | cp, cli, tool, commandline, sync, rsync, watch, observe, copy, dir, directory, directories, file, files |
 | # releases         | 1 |
-| # dependents       | 161 |
-| # downloads        | 12099056 |
-| # stars            | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 982810.3333333334 |
+| # stars            | 496.0 |
 
 ## Links
 - [Homepage](https://github.com/mysticatea/cpx)

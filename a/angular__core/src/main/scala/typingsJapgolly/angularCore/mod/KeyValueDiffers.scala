@@ -1,26 +1,31 @@
 package typingsJapgolly.angularCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "KeyValueDiffers")
 @js.native
-class KeyValueDiffers protected () extends js.Object {
+open class KeyValueDiffers protected () extends StObject {
   def this(factories: js.Array[KeyValueDifferFactory]) = this()
+  
   /**
     * @deprecated v4.0.0 - Should be private.
     */
   var factories: js.Array[KeyValueDifferFactory] = js.native
-  def find(kv: js.Any): KeyValueDifferFactory = js.native
+  
+  def find(kv: Any): KeyValueDifferFactory = js.native
 }
-
 /* static members */
-@JSImport("@angular/core", "KeyValueDiffers")
-@js.native
-object KeyValueDiffers extends js.Object {
-  def create[S](factories: js.Array[KeyValueDifferFactory]): KeyValueDiffers = js.native
-  def create[S](factories: js.Array[KeyValueDifferFactory], parent: KeyValueDiffers): KeyValueDiffers = js.native
+object KeyValueDiffers {
+  
+  @JSImport("@angular/core", "KeyValueDiffers")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def create[S](factories: js.Array[KeyValueDifferFactory]): KeyValueDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[KeyValueDiffers]
+  inline def create[S](factories: js.Array[KeyValueDifferFactory], parent: KeyValueDiffers): KeyValueDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[KeyValueDiffers]
+  
   /**
     * Takes an array of {@link KeyValueDifferFactory} and returns a provider used to extend the
     * inherited {@link KeyValueDiffers} instance with the provided factories and return a new
@@ -41,6 +46,11 @@ object KeyValueDiffers extends js.Object {
     * })
     * ```
     */
-  def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = js.native
+  inline def extend[S](factories: js.Array[KeyValueDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
+  
+  /** @nocollapse */
+  @JSImport("@angular/core", "KeyValueDiffers.\u0275prov")
+  @js.native
+  def ɵprov: Any = js.native
+  inline def ɵprov_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("\u0275prov")(x.asInstanceOf[js.Any])
 }
-

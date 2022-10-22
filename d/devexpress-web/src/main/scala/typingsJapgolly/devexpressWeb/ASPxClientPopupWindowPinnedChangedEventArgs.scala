@@ -1,24 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPopupControlBase.PinnedChanged event.
   */
-@JSGlobal("ASPxClientPopupWindowPinnedChangedEventArgs")
-@js.native
-class ASPxClientPopupWindowPinnedChangedEventArgs protected () extends ASPxClientPopupWindowEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientPopupWindowPinnedChangedEventArgs class with the specified settings.
-    * @param window An ASPxClientPopupWindow object that is a popup window related to the generated event.
-    * @param pinned true if the window has been pinned; false if the window has been unpinned.
-    */
-  def this(window: ASPxClientPopupWindow, pinned: Boolean) = this()
+trait ASPxClientPopupWindowPinnedChangedEventArgs
+  extends StObject
+     with ASPxClientPopupWindowEventArgs {
+  
   /**
     * Gets a value indicating whether the processed popup window has been pinned.
     */
-  var pinned: Boolean = js.native
+  var pinned: Boolean
 }
-
+object ASPxClientPopupWindowPinnedChangedEventArgs {
+  
+  inline def apply(pinned: Boolean, window: ASPxClientPopupWindow): ASPxClientPopupWindowPinnedChangedEventArgs = {
+    val __obj = js.Dynamic.literal(pinned = pinned.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientPopupWindowPinnedChangedEventArgs]
+  }
+  
+  extension [Self <: ASPxClientPopupWindowPinnedChangedEventArgs](x: Self) {
+    
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,81 +1,33 @@
 package typingsJapgolly.antd.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antd.antdNumbers.`1`
-import typingsJapgolly.antd.antdNumbers.`2`
-import typingsJapgolly.antd.antdNumbers.`3`
-import typingsJapgolly.antd.antdNumbers.`4`
-import typingsJapgolly.antd.baseMod.BaseType
-import typingsJapgolly.antd.baseMod.CopyConfig
-import typingsJapgolly.antd.baseMod.EditConfig
-import typingsJapgolly.antd.baseMod.EllipsisConfig
-import typingsJapgolly.antd.typographyTitleMod.TitleProps
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.libSkeletonTitleMod.SkeletonTitleProps
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Title {
-  def apply(
-    `aria-label`: String = null,
-    className: String = null,
-    code: js.UndefOr[Boolean] = js.undefined,
-    copyable: Boolean | CopyConfig = null,
-    delete: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    editable: Boolean | EditConfig = null,
-    ellipsis: Boolean | EllipsisConfig = null,
-    id: String = null,
-    level: `1` | `2` | `3` | `4` = null,
-    mark: js.UndefOr[Boolean] = js.undefined,
-    prefixCls: String = null,
-    style: CSSProperties = null,
-    title: String = null,
-    `type`: BaseType = null,
-    underline: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    TitleProps, 
-    MountedWithRawType[TitleProps, js.Object, RawMounted[TitleProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
-    if (copyable != null) __obj.updateDynamic("copyable")(copyable.asInstanceOf[js.Any])
-    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (ellipsis != null) __obj.updateDynamic("ellipsis")(ellipsis.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
-    if (!js.isUndefined(mark)) __obj.updateDynamic("mark")(mark.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.antd.typographyTitleMod.TitleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.typographyTitleMod.TitleProps])(children: _*)
-  }
-  @JSImport("antd/lib/typography/Title", JSImport.Default)
+  @JSImport("antd/lib/skeleton/Title", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double | String): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Title.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SkeletonTitleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

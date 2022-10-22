@@ -1,41 +1,119 @@
-package typingsJapgolly.babelCore
+package typingsJapgolly.babelCore.mod
 
+import typingsJapgolly.babelCore.anon.FnCall
+import typingsJapgolly.babelCore.anon.ReadonlyPartialConfig
+import typingsJapgolly.babelCore.babelCoreBooleans.`false`
+import typingsJapgolly.babelCore.babelCoreStrings.Dotes
+import typingsJapgolly.babelCore.babelCoreStrings.Dotes6
+import typingsJapgolly.babelCore.babelCoreStrings.Dotjs
+import typingsJapgolly.babelCore.babelCoreStrings.Dotjsx
+import typingsJapgolly.babelCore.babelCoreStrings.Dotmjs
+import typingsJapgolly.babelCore.mod.^
+import typingsJapgolly.babelTemplate.mod.DefaultTemplateBuilder
+import typingsJapgolly.std.ReturnType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ConfigFunction = js.Function1[
-    /* api */ typingsJapgolly.babelCore.mod.ConfigAPI, 
-    typingsJapgolly.babelCore.mod.TransformOptions
-  ]
-  type FileParseCallback = js.Function2[
-    /* err */ js.Error | scala.Null, 
-    /* result */ typingsJapgolly.babelCore.mod.ParseResult | scala.Null, 
-    js.Any
-  ]
-  type FileResultCallback = js.Function2[
-    /* err */ js.Error | scala.Null, 
-    /* result */ typingsJapgolly.babelCore.mod.BabelFileResult | scala.Null, 
-    js.Any
-  ]
-  type MatchPattern = java.lang.String | js.RegExp | (js.Function2[
-    /* filename */ js.UndefOr[java.lang.String], 
-    /* context */ typingsJapgolly.babelCore.mod.MatchPatternContext, 
-    scala.Boolean
-  ])
-  type Node = typingsJapgolly.babelTypes.mod.Node
-  type ParseResult = typingsJapgolly.babelTypes.mod.File_ | typingsJapgolly.babelTypes.mod.Program_
-  type PluginItem = typingsJapgolly.babelCore.mod.ConfigItem | typingsJapgolly.babelCore.mod.PluginObj[js.Any] | typingsJapgolly.babelCore.mod.PluginTarget | (js.Tuple2[
-    typingsJapgolly.babelCore.mod.PluginTarget, 
-    typingsJapgolly.babelCore.mod.PluginOptions
-  ]) | (js.Tuple3[
-    typingsJapgolly.babelCore.mod.PluginTarget, 
-    typingsJapgolly.babelCore.mod.PluginOptions, 
-    js.UndefOr[java.lang.String]
-  ])
-  type PluginOptions = js.UndefOr[js.Object | typingsJapgolly.babelCore.babelCoreBooleans.`false`]
-  type PluginTarget = java.lang.String | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])
-  type SimpleCacheCallback[T /* <: typingsJapgolly.babelCore.mod.SimpleCacheKey */] = js.Function0[T]
-  type SimpleCacheKey = js.UndefOr[java.lang.String | scala.Boolean | scala.Double | scala.Null]
-}
+
+inline def DEFAULT_EXTENSIONS: js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs] = ^.asInstanceOf[js.Dynamic].selectDynamic("DEFAULT_EXTENSIONS").asInstanceOf[js.Tuple5[Dotjs, Dotjsx, Dotes6, Dotes, Dotmjs]]
+
+inline def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions]): ConfigItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any]).asInstanceOf[ConfigItem]
+inline def createConfigItem(value: js.Tuple2[PluginTarget, PluginOptions], options: CreateConfigItemOptions): ConfigItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigItem]
+inline def createConfigItem(value: js.Tuple3[PluginTarget, PluginOptions, js.UndefOr[String]]): ConfigItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any]).asInstanceOf[ConfigItem]
+inline def createConfigItem(
+  value: js.Tuple3[PluginTarget, PluginOptions, js.UndefOr[String]],
+  options: CreateConfigItemOptions
+): ConfigItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigItem]
+inline def createConfigItem(value: PluginTarget): ConfigItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any]).asInstanceOf[ConfigItem]
+inline def createConfigItem(value: PluginTarget, options: CreateConfigItemOptions): ConfigItem = (^.asInstanceOf[js.Dynamic].applyDynamic("createConfigItem")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfigItem]
+
+inline def loadOptions(): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadOptions")().asInstanceOf[js.Object | Null]
+inline def loadOptions(options: TransformOptions): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadOptions")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
+
+inline def loadPartialConfig(): ReadonlyPartialConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfig")().asInstanceOf[ReadonlyPartialConfig | Null]
+inline def loadPartialConfig(options: TransformOptions): ReadonlyPartialConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfig")(options.asInstanceOf[js.Any]).asInstanceOf[ReadonlyPartialConfig | Null]
+
+inline def loadPartialConfigAsync(): js.Promise[ReadonlyPartialConfig | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfigAsync")().asInstanceOf[js.Promise[ReadonlyPartialConfig | Null]]
+inline def loadPartialConfigAsync(options: TransformOptions): js.Promise[ReadonlyPartialConfig | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadPartialConfigAsync")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReadonlyPartialConfig | Null]]
+
+inline def parse(code: String): ParseResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any]).asInstanceOf[ParseResult | Null]
+inline def parse(code: String, callback: FileParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse(code: String, options: Unit, callback: FileParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def parse(code: String, options: TransformOptions): ParseResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResult | Null]
+inline def parse(code: String, options: TransformOptions, callback: FileParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def parseAsync(code: String): js.Promise[ParseResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseAsync")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ParseResult | Null]]
+inline def parseAsync(code: String, options: TransformOptions): js.Promise[ParseResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAsync")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ParseResult | Null]]
+
+inline def parseSync(code: String): ParseResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(code.asInstanceOf[js.Any]).asInstanceOf[ParseResult | Null]
+inline def parseSync(code: String, options: TransformOptions): ParseResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(code.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseResult | Null]
+
+inline def resolvePlugin(name: String, dirname: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePlugin")(name.asInstanceOf[js.Any], dirname.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+
+inline def resolvePreset(name: String, dirname: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolvePreset")(name.asInstanceOf[js.Any], dirname.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+
+inline def template: DefaultTemplateBuilder = ^.asInstanceOf[js.Dynamic].selectDynamic("template").asInstanceOf[DefaultTemplateBuilder]
+
+inline def transform(code: String): BabelFileResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any]).asInstanceOf[BabelFileResult | Null]
+inline def transform(code: String, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transform(code: String, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transform(code: String, opts: TransformOptions): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+inline def transform(code: String, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def transformAsync(code: String): js.Promise[BabelFileResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformAsync")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BabelFileResult | Null]]
+inline def transformAsync(code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAsync")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BabelFileResult | Null]]
+
+inline def transformFile(filename: String, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFile")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFile(filename: String, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFile")(filename.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFile(filename: String, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFile")(filename.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def transformFileAsync(filename: String): js.Promise[BabelFileResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformFileAsync")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BabelFileResult | Null]]
+inline def transformFileAsync(filename: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFileAsync")(filename.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BabelFileResult | Null]]
+
+inline def transformFileSync(filename: String): BabelFileResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transformFileSync")(filename.asInstanceOf[js.Any]).asInstanceOf[BabelFileResult | Null]
+inline def transformFileSync(filename: String, opts: TransformOptions): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFileSync")(filename.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+
+inline def transformFromAst(ast: Node, code: String, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFromAst(ast: Node, code: String, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFromAst(ast: Node, code: String, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFromAst(ast: Node, code: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFromAst(ast: Node, code: Unit, opts: Unit, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+inline def transformFromAst(ast: Node, code: Unit, opts: TransformOptions, callback: FileResultCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAst")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+
+inline def transformFromAstAsync(ast: Node): js.Promise[BabelFileResult | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstAsync")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BabelFileResult | Null]]
+inline def transformFromAstAsync(ast: Node, code: String): js.Promise[BabelFileResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstAsync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BabelFileResult | Null]]
+inline def transformFromAstAsync(ast: Node, code: String, opts: TransformOptions): js.Promise[BabelFileResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstAsync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BabelFileResult | Null]]
+inline def transformFromAstAsync(ast: Node, code: Unit, opts: TransformOptions): js.Promise[BabelFileResult | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstAsync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BabelFileResult | Null]]
+
+inline def transformFromAstSync(ast: Node): BabelFileResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstSync")(ast.asInstanceOf[js.Any]).asInstanceOf[BabelFileResult | Null]
+inline def transformFromAstSync(ast: Node, code: String): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstSync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+inline def transformFromAstSync(ast: Node, code: String, opts: TransformOptions): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstSync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+inline def transformFromAstSync(ast: Node, code: Unit, opts: TransformOptions): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFromAstSync")(ast.asInstanceOf[js.Any], code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+
+inline def transformSync(code: String): BabelFileResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(code.asInstanceOf[js.Any]).asInstanceOf[BabelFileResult | Null]
+inline def transformSync(code: String, opts: TransformOptions): BabelFileResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSync")(code.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BabelFileResult | Null]
+
+inline def version: String = ^.asInstanceOf[js.Dynamic].selectDynamic("version").asInstanceOf[String]
+
+type ConfigFunction = js.Function1[/* api */ ConfigAPI, TransformOptions]
+
+type FileParseCallback = js.Function2[/* err */ js.Error | Null, /* result */ ParseResult | Null, Any]
+
+type FileResultCallback = js.Function2[/* err */ js.Error | Null, /* result */ BabelFileResult | Null, Any]
+
+type MatchPattern = String | js.RegExp | (js.Function2[/* filename */ js.UndefOr[String], /* context */ MatchPatternContext, Boolean])
+
+type Node = typingsJapgolly.babelTypes.mod.Node
+
+type ParseResult = ReturnType[FnCall]
+
+type PluginItem = ConfigItem | PluginObj[Any] | PluginTarget | (js.Tuple2[PluginTarget, PluginOptions]) | (js.Tuple3[PluginTarget, PluginOptions, js.UndefOr[String]])
+
+type PluginOptions = js.UndefOr[js.Object | `false`]
+
+type PluginTarget = String | js.Object | (js.Function1[/* repeated */ Any, Any])
+
+type SimpleCacheCallback[T /* <: SimpleCacheKey */] = js.Function0[T]
+
+type SimpleCacheKey = js.UndefOr[String | Boolean | Double | Null]

@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "quadstore" : "11.0.6"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "quadstore" : "11.0.6"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

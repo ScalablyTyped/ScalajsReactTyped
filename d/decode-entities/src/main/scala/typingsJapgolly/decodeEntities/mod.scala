@@ -1,12 +1,14 @@
 package typingsJapgolly.decodeEntities
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("decode-entities", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(encodedString: String): String = js.native
+object mod {
+  
+  inline def apply(encodedString: String): String = ^.asInstanceOf[js.Dynamic].apply(encodedString.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("decode-entities", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

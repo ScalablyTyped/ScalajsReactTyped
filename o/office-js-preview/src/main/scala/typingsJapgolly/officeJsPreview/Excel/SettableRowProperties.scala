@@ -1,9 +1,9 @@
 package typingsJapgolly.officeJsPreview.Excel
 
-import typingsJapgolly.officeJsPreview.CellPropertiesFormatrowHe
+import typingsJapgolly.officeJsPreview.anon.CellPropertiesFormatrowHe
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *
@@ -11,7 +11,10 @@ import scala.scalajs.js.annotation._
   *
   * [Api set: ExcelApi 1.9]
   */
-trait SettableRowProperties extends SettableCellProperties {
+trait SettableRowProperties
+  extends StObject
+     with SettableCellProperties {
+  
   /**
     *
     * Represents the `format` property.
@@ -20,6 +23,7 @@ trait SettableRowProperties extends SettableCellProperties {
     */
   @JSName("format")
   var format_SettableRowProperties: js.UndefOr[CellPropertiesFormatrowHe] = js.undefined
+  
   /**
     *
     * Represents the `rowHidden` property.
@@ -28,21 +32,21 @@ trait SettableRowProperties extends SettableCellProperties {
     */
   var rowHidden: js.UndefOr[Boolean] = js.undefined
 }
-
 object SettableRowProperties {
-  @scala.inline
-  def apply(
-    format: CellPropertiesFormatrowHe = null,
-    hyperlink: RangeHyperlink = null,
-    rowHidden: js.UndefOr[Boolean] = js.undefined,
-    style: String = null
-  ): SettableRowProperties = {
+  
+  inline def apply(): SettableRowProperties = {
     val __obj = js.Dynamic.literal()
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink.asInstanceOf[js.Any])
-    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
     __obj.asInstanceOf[SettableRowProperties]
   }
+  
+  extension [Self <: SettableRowProperties](x: Self) {
+    
+    inline def setFormat(value: CellPropertiesFormatrowHe): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
+    
+    inline def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
+  }
 }
-

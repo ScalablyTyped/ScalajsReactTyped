@@ -1,95 +1,91 @@
 package typingsJapgolly.activexWia.WIA
 
-import typingsJapgolly.activexWia.activexWiaNumbers.`-2147483648`
-import typingsJapgolly.activexWia.activexWiaNumbers.`0`
-import typingsJapgolly.activexWia.activexWiaNumbers.`1024`
-import typingsJapgolly.activexWia.activexWiaNumbers.`128`
-import typingsJapgolly.activexWia.activexWiaNumbers.`16384`
-import typingsJapgolly.activexWia.activexWiaNumbers.`16`
-import typingsJapgolly.activexWia.activexWiaNumbers.`1`
-import typingsJapgolly.activexWia.activexWiaNumbers.`2048`
-import typingsJapgolly.activexWia.activexWiaNumbers.`256`
-import typingsJapgolly.activexWia.activexWiaNumbers.`2`
-import typingsJapgolly.activexWia.activexWiaNumbers.`32768`
-import typingsJapgolly.activexWia.activexWiaNumbers.`32`
-import typingsJapgolly.activexWia.activexWiaNumbers.`4096`
-import typingsJapgolly.activexWia.activexWiaNumbers.`4`
-import typingsJapgolly.activexWia.activexWiaNumbers.`512`
-import typingsJapgolly.activexWia.activexWiaNumbers.`64`
-import typingsJapgolly.activexWia.activexWiaNumbers.`65536`
-import typingsJapgolly.activexWia.activexWiaNumbers.`8192`
-import typingsJapgolly.activexWia.activexWiaNumbers.`8`
+import typingsJapgolly.activexWia.activexWiaDoubles.`-2147483648`
+import typingsJapgolly.activexWia.activexWiaInts.`0`
+import typingsJapgolly.activexWia.activexWiaInts.`1024`
+import typingsJapgolly.activexWia.activexWiaInts.`128`
+import typingsJapgolly.activexWia.activexWiaInts.`16384`
+import typingsJapgolly.activexWia.activexWiaInts.`16`
+import typingsJapgolly.activexWia.activexWiaInts.`1`
+import typingsJapgolly.activexWia.activexWiaInts.`2048`
+import typingsJapgolly.activexWia.activexWiaInts.`256`
+import typingsJapgolly.activexWia.activexWiaInts.`2`
+import typingsJapgolly.activexWia.activexWiaInts.`32768`
+import typingsJapgolly.activexWia.activexWiaInts.`32`
+import typingsJapgolly.activexWia.activexWiaInts.`4096`
+import typingsJapgolly.activexWia.activexWiaInts.`4`
+import typingsJapgolly.activexWia.activexWiaInts.`512`
+import typingsJapgolly.activexWia.activexWiaInts.`64`
+import typingsJapgolly.activexWia.activexWiaInts.`65536`
+import typingsJapgolly.activexWia.activexWiaInts.`8192`
+import typingsJapgolly.activexWia.activexWiaInts.`8`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An Item's type is composed of bits from the WiaItemFlags enumeration. You can test an Item's type by using the AND operation with
   * Item.Properties("Item Flags") and a member from the WiaItemFlags enumeration.
   */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWia.activexWiaNumbers.`16`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`32`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`2048`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`128`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`64`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`256`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`2`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`4`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`0`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`16384`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`32768`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`512`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`1`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`-2147483648`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`8`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`4096`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`8192`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`65536`
-  - typingsJapgolly.activexWia.activexWiaNumbers.`1024`
+  - typingsJapgolly.activexWia.activexWiaInts.`16`
+  - typingsJapgolly.activexWia.activexWiaInts.`32`
+  - typingsJapgolly.activexWia.activexWiaInts.`2048`
+  - typingsJapgolly.activexWia.activexWiaInts.`128`
+  - typingsJapgolly.activexWia.activexWiaInts.`64`
+  - typingsJapgolly.activexWia.activexWiaInts.`256`
+  - typingsJapgolly.activexWia.activexWiaInts.`2`
+  - typingsJapgolly.activexWia.activexWiaInts.`4`
+  - typingsJapgolly.activexWia.activexWiaInts.`0`
+  - typingsJapgolly.activexWia.activexWiaInts.`16384`
+  - typingsJapgolly.activexWia.activexWiaInts.`32768`
+  - typingsJapgolly.activexWia.activexWiaInts.`512`
+  - typingsJapgolly.activexWia.activexWiaInts.`1`
+  - typingsJapgolly.activexWia.activexWiaDoubles.`-2147483648`
+  - typingsJapgolly.activexWia.activexWiaInts.`8`
+  - typingsJapgolly.activexWia.activexWiaInts.`4096`
+  - typingsJapgolly.activexWia.activexWiaInts.`8192`
+  - typingsJapgolly.activexWia.activexWiaInts.`65536`
+  - typingsJapgolly.activexWia.activexWiaInts.`1024`
 */
-trait WiaItemFlag extends js.Object
-
+trait WiaItemFlag extends StObject
 object WiaItemFlag {
-  @scala.inline
-  def AnalyzeItemFlag: `16` = this.cast(16)
-  @scala.inline
-  def AudioItemFlag: `32` = this.cast(32)
-  @scala.inline
-  def BurstItemFlag: `2048` = this.cast(2048)
-  @scala.inline
-  def DeletedItemFlag: `128` = this.cast(128)
-  @scala.inline
-  def DeviceItemFlag: `64` = this.cast(64)
-  @scala.inline
-  def DisconnectedItemFlag: `256` = this.cast(256)
-  @scala.inline
-  def FileItemFlag: `2` = this.cast(2)
-  @scala.inline
-  def FolderItemFlag: `4` = this.cast(4)
-  @scala.inline
-  def FreeItemFlag: `0` = this.cast(0)
-  @scala.inline
-  def GeneratedItemFlag: `16384` = this.cast(16384)
-  @scala.inline
-  def HPanoramaItemFlag: `512` = this.cast(512)
-  @scala.inline
-  def HasAttachmentsItemFlag: `32768` = this.cast(32768)
-  @scala.inline
-  def ImageItemFlag: `1` = this.cast(1)
-  @scala.inline
-  def RemovedItemFlag: `-2147483648` = this.cast(-2147483648)
-  @scala.inline
-  def RootItemFlag: `8` = this.cast(8)
-  @scala.inline
-  def StorageItemFlag: `4096` = this.cast(4096)
-  @scala.inline
-  def TransferItemFlag: `8192` = this.cast(8192)
-  @scala.inline
-  def VPanoramaItemFlag: `1024` = this.cast(1024)
-  @scala.inline
-  def VideoItemFlag: `65536` = this.cast(65536)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def AnalyzeItemFlag: `16` = 16.asInstanceOf[`16`]
+  
+  inline def AudioItemFlag: `32` = 32.asInstanceOf[`32`]
+  
+  inline def BurstItemFlag: `2048` = 2048.asInstanceOf[`2048`]
+  
+  inline def DeletedItemFlag: `128` = 128.asInstanceOf[`128`]
+  
+  inline def DeviceItemFlag: `64` = 64.asInstanceOf[`64`]
+  
+  inline def DisconnectedItemFlag: `256` = 256.asInstanceOf[`256`]
+  
+  inline def FileItemFlag: `2` = 2.asInstanceOf[`2`]
+  
+  inline def FolderItemFlag: `4` = 4.asInstanceOf[`4`]
+  
+  inline def FreeItemFlag: `0` = 0.asInstanceOf[`0`]
+  
+  inline def GeneratedItemFlag: `16384` = 16384.asInstanceOf[`16384`]
+  
+  inline def HPanoramaItemFlag: `512` = 512.asInstanceOf[`512`]
+  
+  inline def HasAttachmentsItemFlag: `32768` = 32768.asInstanceOf[`32768`]
+  
+  inline def ImageItemFlag: `1` = 1.asInstanceOf[`1`]
+  
+  inline def RemovedItemFlag: `-2147483648` = -2147483648d.asInstanceOf[`-2147483648`]
+  
+  inline def RootItemFlag: `8` = 8.asInstanceOf[`8`]
+  
+  inline def StorageItemFlag: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def TransferItemFlag: `8192` = 8192.asInstanceOf[`8192`]
+  
+  inline def VPanoramaItemFlag: `1024` = 1024.asInstanceOf[`1024`]
+  
+  inline def VideoItemFlag: `65536` = 65536.asInstanceOf[`65536`]
 }
-

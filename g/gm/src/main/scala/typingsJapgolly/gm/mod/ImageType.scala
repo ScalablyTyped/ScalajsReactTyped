@@ -1,9 +1,9 @@
 package typingsJapgolly.gm.mod
 
 import typingsJapgolly.gm.gmStrings.Grayscale_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Bilevel
@@ -16,28 +16,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.ColorSeparationMatte
   - typingsJapgolly.gm.gmStrings.Optimize
 */
-trait ImageType extends js.Object
-
+trait ImageType extends StObject
 object ImageType {
-  @scala.inline
-  def Bilevel: typingsJapgolly.gm.gmStrings.Bilevel = this.cast("Bilevel")
-  @scala.inline
-  def ColorSeparation: typingsJapgolly.gm.gmStrings.ColorSeparation = this.cast("ColorSeparation")
-  @scala.inline
-  def ColorSeparationMatte: typingsJapgolly.gm.gmStrings.ColorSeparationMatte = this.cast("ColorSeparationMatte")
-  @scala.inline
-  def Grayscale: Grayscale_ = this.cast("Grayscale")
-  @scala.inline
-  def Optimize: typingsJapgolly.gm.gmStrings.Optimize = this.cast("Optimize")
-  @scala.inline
-  def Palette: typingsJapgolly.gm.gmStrings.Palette = this.cast("Palette")
-  @scala.inline
-  def PaletteMatte: typingsJapgolly.gm.gmStrings.PaletteMatte = this.cast("PaletteMatte")
-  @scala.inline
-  def TrueColor: typingsJapgolly.gm.gmStrings.TrueColor = this.cast("TrueColor")
-  @scala.inline
-  def TrueColorMatte: typingsJapgolly.gm.gmStrings.TrueColorMatte = this.cast("TrueColorMatte")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Bilevel: typingsJapgolly.gm.gmStrings.Bilevel = "Bilevel".asInstanceOf[typingsJapgolly.gm.gmStrings.Bilevel]
+  
+  inline def ColorSeparation: typingsJapgolly.gm.gmStrings.ColorSeparation = "ColorSeparation".asInstanceOf[typingsJapgolly.gm.gmStrings.ColorSeparation]
+  
+  inline def ColorSeparationMatte: typingsJapgolly.gm.gmStrings.ColorSeparationMatte = "ColorSeparationMatte".asInstanceOf[typingsJapgolly.gm.gmStrings.ColorSeparationMatte]
+  
+  inline def Grayscale: Grayscale_ = "Grayscale".asInstanceOf[Grayscale_]
+  
+  inline def Optimize: typingsJapgolly.gm.gmStrings.Optimize = "Optimize".asInstanceOf[typingsJapgolly.gm.gmStrings.Optimize]
+  
+  inline def Palette: typingsJapgolly.gm.gmStrings.Palette = "Palette".asInstanceOf[typingsJapgolly.gm.gmStrings.Palette]
+  
+  inline def PaletteMatte: typingsJapgolly.gm.gmStrings.PaletteMatte = "PaletteMatte".asInstanceOf[typingsJapgolly.gm.gmStrings.PaletteMatte]
+  
+  inline def TrueColor: typingsJapgolly.gm.gmStrings.TrueColor = "TrueColor".asInstanceOf[typingsJapgolly.gm.gmStrings.TrueColor]
+  
+  inline def TrueColorMatte: typingsJapgolly.gm.gmStrings.TrueColorMatte = "TrueColorMatte".asInstanceOf[typingsJapgolly.gm.gmStrings.TrueColorMatte]
 }
-

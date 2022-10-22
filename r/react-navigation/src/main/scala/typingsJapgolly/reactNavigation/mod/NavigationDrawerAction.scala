@@ -1,13 +1,8 @@
 package typingsJapgolly.reactNavigation.mod
 
-import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashCLOSE_DRAWER
-import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashDRAWER_CLOSED
-import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashDRAWER_OPENED
-import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashOPEN_DRAWER
-import typingsJapgolly.reactNavigation.reactNavigationStrings.NavigationSlashTOGGLE_DRAWER
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNavigation.mod.NavigationDrawerOpenedAction
@@ -16,43 +11,38 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNavigation.mod.NavigationCloseDrawerAction
   - typingsJapgolly.reactNavigation.mod.NavigationToggleDrawerAction
 */
-trait NavigationDrawerAction extends _NavigationAction
-
+trait NavigationDrawerAction
+  extends StObject
+     with _NavigationAction
 object NavigationDrawerAction {
-  @scala.inline
-  def NavigationToggleDrawerAction(`type`: NavigationSlashTOGGLE_DRAWER, key: String = null): NavigationDrawerAction = {
+  
+  inline def NavigationCloseDrawerAction(): typingsJapgolly.reactNavigation.mod.NavigationCloseDrawerAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationDrawerAction]
+    __obj.updateDynamic("type")("Navigation/CLOSE_DRAWER")
+    __obj.asInstanceOf[typingsJapgolly.reactNavigation.mod.NavigationCloseDrawerAction]
   }
-  @scala.inline
-  def NavigationOpenDrawerAction(`type`: NavigationSlashOPEN_DRAWER, key: String = null): NavigationDrawerAction = {
+  
+  inline def NavigationDrawerClosedAction(): typingsJapgolly.reactNavigation.mod.NavigationDrawerClosedAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationDrawerAction]
+    __obj.updateDynamic("type")("Navigation/DRAWER_CLOSED")
+    __obj.asInstanceOf[typingsJapgolly.reactNavigation.mod.NavigationDrawerClosedAction]
   }
-  @scala.inline
-  def NavigationDrawerOpenedAction(`type`: NavigationSlashDRAWER_OPENED, key: String = null): NavigationDrawerAction = {
+  
+  inline def NavigationDrawerOpenedAction(): typingsJapgolly.reactNavigation.mod.NavigationDrawerOpenedAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationDrawerAction]
+    __obj.updateDynamic("type")("Navigation/DRAWER_OPENED")
+    __obj.asInstanceOf[typingsJapgolly.reactNavigation.mod.NavigationDrawerOpenedAction]
   }
-  @scala.inline
-  def NavigationCloseDrawerAction(`type`: NavigationSlashCLOSE_DRAWER, key: String = null): NavigationDrawerAction = {
+  
+  inline def NavigationOpenDrawerAction(): typingsJapgolly.reactNavigation.mod.NavigationOpenDrawerAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationDrawerAction]
+    __obj.updateDynamic("type")("Navigation/OPEN_DRAWER")
+    __obj.asInstanceOf[typingsJapgolly.reactNavigation.mod.NavigationOpenDrawerAction]
   }
-  @scala.inline
-  def NavigationDrawerClosedAction(`type`: NavigationSlashDRAWER_CLOSED, key: String = null): NavigationDrawerAction = {
+  
+  inline def NavigationToggleDrawerAction(): typingsJapgolly.reactNavigation.mod.NavigationToggleDrawerAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    __obj.asInstanceOf[NavigationDrawerAction]
+    __obj.updateDynamic("type")("Navigation/TOGGLE_DRAWER")
+    __obj.asInstanceOf[typingsJapgolly.reactNavigation.mod.NavigationToggleDrawerAction]
   }
 }
-

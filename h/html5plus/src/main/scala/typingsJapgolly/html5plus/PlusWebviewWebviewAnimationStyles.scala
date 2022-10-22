@@ -1,8 +1,8 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Webview窗口动画样式
@@ -10,7 +10,8 @@ import scala.scalajs.js.annotation._
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-trait PlusWebviewWebviewAnimationStyles extends js.Object {
+trait PlusWebviewWebviewAnimationStyles extends StObject {
+  
   /**
     * 画窗口的起始左侧位置
     * 支持百分比、像素值，默认值为当前窗口的位置。
@@ -18,23 +19,31 @@ trait PlusWebviewWebviewAnimationStyles extends js.Object {
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var fromLeft: js.UndefOr[String] = js.undefined
+  
   /**
     * 画窗口的目标左侧位置
     * 持百分比、像素值。
-    * 	注意：如果设置的位置与起始位置一直，则无动画效果。
+    *     注意：如果设置的位置与起始位置一直，则无动画效果。
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var toLeft: js.UndefOr[String] = js.undefined
 }
-
 object PlusWebviewWebviewAnimationStyles {
-  @scala.inline
-  def apply(fromLeft: String = null, toLeft: String = null): PlusWebviewWebviewAnimationStyles = {
+  
+  inline def apply(): PlusWebviewWebviewAnimationStyles = {
     val __obj = js.Dynamic.literal()
-    if (fromLeft != null) __obj.updateDynamic("fromLeft")(fromLeft.asInstanceOf[js.Any])
-    if (toLeft != null) __obj.updateDynamic("toLeft")(toLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewAnimationStyles]
   }
+  
+  extension [Self <: PlusWebviewWebviewAnimationStyles](x: Self) {
+    
+    inline def setFromLeft(value: String): Self = StObject.set(x, "fromLeft", value.asInstanceOf[js.Any])
+    
+    inline def setFromLeftUndefined: Self = StObject.set(x, "fromLeft", js.undefined)
+    
+    inline def setToLeft(value: String): Self = StObject.set(x, "toLeft", value.asInstanceOf[js.Any])
+    
+    inline def setToLeftUndefined: Self = StObject.set(x, "toLeft", js.undefined)
+  }
 }
-

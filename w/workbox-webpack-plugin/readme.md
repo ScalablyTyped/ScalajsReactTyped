@@ -1,7 +1,7 @@
 
 # Scala.js typings for workbox-webpack-plugin
 
-Typings are for version 5.0
+Typings are for version 5.1
 
 ## Library description:
 A plugin for your Webpack build process, helping you generate a manifest of local files that workbox-sw should precache.
@@ -10,10 +10,10 @@ A plugin for your Webpack build process, helping you generate a manifest of loca
 | ------------------ | :-------------: |
 | Full name          | workbox-webpack-plugin |
 | Keywords           | workbox, workboxjs, webpack, service worker, caching, fetch requests, offline, file manifest |
-| # releases         | 39 |
-| # dependents       | 1418 |
-| # downloads        | 50912951 |
-| # stars            | 5 |
+| # releases         | 26 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6159615E7 |
+| # stars            | 10909.0 |
 
 ## Links
 - [Homepage](https://github.com/GoogleChrome/workbox)

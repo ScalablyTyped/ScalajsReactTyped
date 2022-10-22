@@ -1,43 +1,63 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SignInLocation extends js.Object {
+trait SignInLocation extends StObject {
+  
   /**
     * Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the
     * sign-in activity.
     */
-  var city: js.UndefOr[String] = js.undefined
+  var city: js.UndefOr[NullableOption[String]] = js.undefined
+  
   /**
     * Provides the country code info (2 letter code) where the sign-in originated. This is calculated using
     * latitude/longitude information from the sign-in activity.
     */
-  var countryOrRegion: js.UndefOr[String] = js.undefined
+  var countryOrRegion: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Provides the latitude, longitude and altitude where the sign-in originated.
-  var geoCoordinates: js.UndefOr[GeoCoordinates] = js.undefined
+  var geoCoordinates: js.UndefOr[NullableOption[GeoCoordinates]] = js.undefined
+  
   /**
     * Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the
     * sign-in activity.
     */
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object SignInLocation {
-  @scala.inline
-  def apply(
-    city: String = null,
-    countryOrRegion: String = null,
-    geoCoordinates: GeoCoordinates = null,
-    state: String = null
-  ): SignInLocation = {
+  
+  inline def apply(): SignInLocation = {
     val __obj = js.Dynamic.literal()
-    if (city != null) __obj.updateDynamic("city")(city.asInstanceOf[js.Any])
-    if (countryOrRegion != null) __obj.updateDynamic("countryOrRegion")(countryOrRegion.asInstanceOf[js.Any])
-    if (geoCoordinates != null) __obj.updateDynamic("geoCoordinates")(geoCoordinates.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignInLocation]
   }
+  
+  extension [Self <: SignInLocation](x: Self) {
+    
+    inline def setCity(value: NullableOption[String]): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCityNull: Self = StObject.set(x, "city", null)
+    
+    inline def setCityUndefined: Self = StObject.set(x, "city", js.undefined)
+    
+    inline def setCountryOrRegion(value: NullableOption[String]): Self = StObject.set(x, "countryOrRegion", value.asInstanceOf[js.Any])
+    
+    inline def setCountryOrRegionNull: Self = StObject.set(x, "countryOrRegion", null)
+    
+    inline def setCountryOrRegionUndefined: Self = StObject.set(x, "countryOrRegion", js.undefined)
+    
+    inline def setGeoCoordinates(value: NullableOption[GeoCoordinates]): Self = StObject.set(x, "geoCoordinates", value.asInstanceOf[js.Any])
+    
+    inline def setGeoCoordinatesNull: Self = StObject.set(x, "geoCoordinates", null)
+    
+    inline def setGeoCoordinatesUndefined: Self = StObject.set(x, "geoCoordinates", js.undefined)
+    
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+  }
 }
-

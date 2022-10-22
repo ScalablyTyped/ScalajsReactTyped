@@ -1,7 +1,7 @@
 
 # Scala.js typings for swagger-express-validator
 
-Typings are for version 0.0
+Typings are for version 1.0
 
 ## Library description:
 Validation middleware that validates request/response against provided swagger spec
@@ -10,10 +10,10 @@ Validation middleware that validates request/response against provided swagger s
 | ------------------ | :-------------: |
 | Full name          | swagger-express-validator |
 | Keywords           | validation, swagger, middleware, connect, express |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 82551 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4848.333333333333 |
+| # stars            | 55.0 |
 
 ## Links
 - [Homepage](https://github.com/gargol/swagger-express-validator#readme)

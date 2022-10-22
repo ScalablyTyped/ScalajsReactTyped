@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej.datavisualization.Sunburst
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SunburstHighlightType extends js.Object
-
+sealed trait SunburstHighlightType extends StObject
 @JSGlobal("ej.datavisualization.Sunburst.SunburstHighlightType")
 @js.native
-object SunburstHighlightType extends js.Object {
-  //string
-  @js.native
-  sealed trait Color extends SunburstHighlightType
+object SunburstHighlightType extends StObject {
   
   //string
   @js.native
-  sealed trait Opacity extends SunburstHighlightType
+  sealed trait Color
+    extends StObject
+       with SunburstHighlightType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SunburstHighlightType with Double] = js.native
-  /* 1 */ @js.native
-  object Color extends TopLevel[Color with Double]
-  
-  /* 0 */ @js.native
-  object Opacity extends TopLevel[Opacity with Double]
-  
+  //string
+  @js.native
+  sealed trait Opacity
+    extends StObject
+       with SunburstHighlightType
 }
-

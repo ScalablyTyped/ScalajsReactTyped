@@ -3,14 +3,13 @@ package typingsJapgolly.objectOmit
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.std.Exclude
 import typingsJapgolly.std.Pick
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("object.omit", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply[GObject /* <: js.Object */, GKey /* <: String */](
+object mod {
+  
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](
     `object`: GObject,
     fn: js.Function3[
       /* import warning: importer.ImportType#apply Failed type conversion: GObject[GKey] */ /* value */ js.Any, 
@@ -18,7 +17,7 @@ object mod extends js.Object {
       /* obj */ GObject, 
       Boolean
     ]
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[Any] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Any]]
   /**
     * Return a copy of an object excluding the given key, or array of keys. Also accepts an optional filter function as the last argument."
     *
@@ -30,8 +29,12 @@ object mod extends js.Object {
     * @param object
     * @param keys
     */
-  def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = js.native
-  def apply[GObject /* <: js.Object */, GKey /* <: String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = js.native
-  type Omit[GType, GKeys /* <: String */] = Pick[GType, Exclude[String, GKeys]]
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: GKey): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
+  inline def apply[GObject /* <: js.Object */, GKey /* <: /* keyof GObject */ String */](`object`: GObject, key: js.Array[GKey]): Omit[GObject, GKey] = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Omit[GObject, GKey]]
+  
+  @JSImport("object.omit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  type Omit[GType, GKeys /* <: /* keyof GType */ String */] = Pick[GType, Exclude[/* keyof GType */ String, GKeys]]
 }
-

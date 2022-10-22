@@ -1,30 +1,45 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomTransformers extends js.Object {
+trait CustomTransformers extends StObject {
+  
   /** Custom transformers to evaluate after built-in .js transformations. */
   var after: js.UndefOr[js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]] = js.undefined
+  
   /** Custom transformers to evaluate after built-in .d.ts transformations. */
   var afterDeclarations: js.UndefOr[js.Array[(TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory]] = js.undefined
+  
   /** Custom transformers to evaluate before built-in .js transformations. */
   var before: js.UndefOr[js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]] = js.undefined
 }
-
 object CustomTransformers {
-  @scala.inline
-  def apply(
-    after: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory] = null,
-    afterDeclarations: js.Array[(TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory] = null,
-    before: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory] = null
-  ): CustomTransformers = {
+  
+  inline def apply(): CustomTransformers = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
-    if (afterDeclarations != null) __obj.updateDynamic("afterDeclarations")(afterDeclarations.asInstanceOf[js.Any])
-    if (before != null) __obj.updateDynamic("before")(before.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomTransformers]
   }
+  
+  extension [Self <: CustomTransformers](x: Self) {
+    
+    inline def setAfter(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    
+    inline def setAfterDeclarations(value: js.Array[(TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory]): Self = StObject.set(x, "afterDeclarations", value.asInstanceOf[js.Any])
+    
+    inline def setAfterDeclarationsUndefined: Self = StObject.set(x, "afterDeclarations", js.undefined)
+    
+    inline def setAfterDeclarationsVarargs(value: ((TransformerFactory[Bundle | SourceFile]) | CustomTransformerFactory)*): Self = StObject.set(x, "afterDeclarations", js.Array(value*))
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setAfterVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "after", js.Array(value*))
+    
+    inline def setBefore(value: js.Array[TransformerFactory[SourceFile] | CustomTransformerFactory]): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setBeforeVarargs(value: (TransformerFactory[SourceFile] | CustomTransformerFactory)*): Self = StObject.set(x, "before", js.Array(value*))
+  }
 }
-

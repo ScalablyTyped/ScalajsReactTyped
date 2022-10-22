@@ -10,10 +10,10 @@ A lightweight graphical user interface for changing variables in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | dat.gui |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 61 |
-| # downloads        | 396695 |
-| # stars            | 8 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 125244.0 |
+| # stars            | 6240.0 |
 
 ## Links
 - [Homepage](https://github.com/dataarts/dat.gui#readme)

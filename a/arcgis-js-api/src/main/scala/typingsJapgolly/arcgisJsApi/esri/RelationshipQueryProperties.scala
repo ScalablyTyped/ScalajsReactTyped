@@ -1,100 +1,204 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RelationshipQueryProperties extends js.Object {
+trait RelationshipQueryProperties extends StObject {
+  
+  /**
+    * Indicates if the service should cache the relationship query results.
+    *
+    * @default undefined
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#cacheHint)
+    */
+  var cacheHint: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Specify the geodatabase version to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#gdbVersion)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#gdbVersion)
     */
   var gdbVersion: js.UndefOr[String] = js.undefined
+  
   /**
     * Specify the number of decimal places for the geometries returned by the query operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#geometryPrecision)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#geometryPrecision)
     */
   var geometryPrecision: js.UndefOr[Double] = js.undefined
+  
   /**
-    * The historic moment to query. This parameter applies only if the `supportsHistoricMoment` on [FeatureLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#capabilities) property of the layer is set to `true`.
+    * The historic moment to query.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#historicMoment)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#historicMoment)
     */
   var historicMoment: js.UndefOr[DateProperties] = js.undefined
+  
   /**
-    * The maximum allowable offset used for generalizing geometries returned by the query operation. The offset is in the units of `outSpatialReference`. If `outSpatialReference` is not defined, the [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference) of the view is used.
+    * The maximum allowable offset used for generalizing geometries returned by the query operation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#maxAllowableOffset)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#maxAllowableOffset)
     */
   var maxAllowableOffset: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The number of features to retrieve.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#num)
+    */
+  var num: js.UndefOr[Double] = js.undefined
+  
   /**
     * An array of objectIds for the features in the layer/table being queried.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#objectIds)
     */
   var objectIds: js.UndefOr[js.Array[Double]] = js.undefined
+  
   /**
-    * Attribute fields to include in the FeatureSet. Fields must exist in the map layer. You must list actual field names rather than the alias names. You are, however, able to use the alias names when you display the results.  When specifying the output fields, you should limit the fields to only those you expect to use in the query or the results. The fewer fields you include, the faster the response will be.  Each query must have access to the Shape and ObjectId fields for a layer. However, your list of fields does not need to include these two fields.
+    * One or more field names used to order the query results.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#outFields)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#orderByFields)
+    */
+  var orderByFields: js.UndefOr[js.Array[String]] = js.undefined
+  
+  /**
+    * Attribute fields to include in the FeatureSet.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outFields)
     */
   var outFields: js.UndefOr[js.Array[String]] = js.undefined
+  
   /**
-    * The spatial reference for the returned geometry. If `outSpatialReference` is not defined, the [spatialReference](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html#spatialReference) of the view is used.
+    * The spatial reference for the returned geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#outSpatialReference)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#outSpatialReference)
     */
   var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
+  
   /**
-    * The ID of the relationship to be queried. The ids for the relationships the table or layer participates in are listed in the ArcGIS Services directory. The ID of the relationship to be queried. The relationships that this layer/table participates in are included in the Feature Service Layer resource response. Records in tables/layers corresponding to the related table/layer of the relationship are queried.
+    * The ID of the relationship to be queried.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#relationshipId)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#relationshipId)
     */
   var relationshipId: js.UndefOr[Double] = js.undefined
+  
   /**
-    * If `true`, each feature in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html) includes the geometry. Set to `false` (default) if you do not plan to include highlighted features on a map since the geometry makes up a significant portion of the response.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#returnGeometry)
+    * If `true`, each feature in the [FeatureSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-FeatureSet.html) includes the geometry.
     *
     * @default false
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry)
     */
   var returnGeometry: js.UndefOr[Boolean] = js.undefined
+  
   /**
-    * The definition expression to be applied to the related table or layer. Only records in the list of [objectIds](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#objectIds) that satisfy the definition expression are queried for related records.
+    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then m-values are included in the geometry.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html#where)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnM)
+    */
+  var returnM: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * If `true`, and [returnGeometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnGeometry) is `true`, then z-values are included in the geometry.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#returnZ)
+    */
+  var returnZ: js.UndefOr[Boolean] = js.undefined
+  
+  /**
+    * The zero-based index indicating where to begin retrieving features.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#start)
+    */
+  var start: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * The definition expression to be applied to the related table or layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-RelationshipQuery.html#where)
     */
   var where: js.UndefOr[String] = js.undefined
 }
-
 object RelationshipQueryProperties {
-  @scala.inline
-  def apply(
-    gdbVersion: String = null,
-    geometryPrecision: Int | Double = null,
-    historicMoment: DateProperties = null,
-    maxAllowableOffset: Int | Double = null,
-    objectIds: js.Array[Double] = null,
-    outFields: js.Array[String] = null,
-    outSpatialReference: SpatialReferenceProperties = null,
-    relationshipId: Int | Double = null,
-    returnGeometry: js.UndefOr[Boolean] = js.undefined,
-    where: String = null
-  ): RelationshipQueryProperties = {
+  
+  inline def apply(): RelationshipQueryProperties = {
     val __obj = js.Dynamic.literal()
-    if (gdbVersion != null) __obj.updateDynamic("gdbVersion")(gdbVersion.asInstanceOf[js.Any])
-    if (geometryPrecision != null) __obj.updateDynamic("geometryPrecision")(geometryPrecision.asInstanceOf[js.Any])
-    if (historicMoment != null) __obj.updateDynamic("historicMoment")(historicMoment.asInstanceOf[js.Any])
-    if (maxAllowableOffset != null) __obj.updateDynamic("maxAllowableOffset")(maxAllowableOffset.asInstanceOf[js.Any])
-    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds.asInstanceOf[js.Any])
-    if (outFields != null) __obj.updateDynamic("outFields")(outFields.asInstanceOf[js.Any])
-    if (outSpatialReference != null) __obj.updateDynamic("outSpatialReference")(outSpatialReference.asInstanceOf[js.Any])
-    if (relationshipId != null) __obj.updateDynamic("relationshipId")(relationshipId.asInstanceOf[js.Any])
-    if (!js.isUndefined(returnGeometry)) __obj.updateDynamic("returnGeometry")(returnGeometry.asInstanceOf[js.Any])
-    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
     __obj.asInstanceOf[RelationshipQueryProperties]
   }
+  
+  extension [Self <: RelationshipQueryProperties](x: Self) {
+    
+    inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
+    
+    inline def setCacheHintUndefined: Self = StObject.set(x, "cacheHint", js.undefined)
+    
+    inline def setGdbVersion(value: String): Self = StObject.set(x, "gdbVersion", value.asInstanceOf[js.Any])
+    
+    inline def setGdbVersionUndefined: Self = StObject.set(x, "gdbVersion", js.undefined)
+    
+    inline def setGeometryPrecision(value: Double): Self = StObject.set(x, "geometryPrecision", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryPrecisionUndefined: Self = StObject.set(x, "geometryPrecision", js.undefined)
+    
+    inline def setHistoricMoment(value: DateProperties): Self = StObject.set(x, "historicMoment", value.asInstanceOf[js.Any])
+    
+    inline def setHistoricMomentUndefined: Self = StObject.set(x, "historicMoment", js.undefined)
+    
+    inline def setMaxAllowableOffset(value: Double): Self = StObject.set(x, "maxAllowableOffset", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAllowableOffsetUndefined: Self = StObject.set(x, "maxAllowableOffset", js.undefined)
+    
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    
+    inline def setNumUndefined: Self = StObject.set(x, "num", js.undefined)
+    
+    inline def setObjectIds(value: js.Array[Double]): Self = StObject.set(x, "objectIds", value.asInstanceOf[js.Any])
+    
+    inline def setObjectIdsUndefined: Self = StObject.set(x, "objectIds", js.undefined)
+    
+    inline def setObjectIdsVarargs(value: Double*): Self = StObject.set(x, "objectIds", js.Array(value*))
+    
+    inline def setOrderByFields(value: js.Array[String]): Self = StObject.set(x, "orderByFields", value.asInstanceOf[js.Any])
+    
+    inline def setOrderByFieldsUndefined: Self = StObject.set(x, "orderByFields", js.undefined)
+    
+    inline def setOrderByFieldsVarargs(value: String*): Self = StObject.set(x, "orderByFields", js.Array(value*))
+    
+    inline def setOutFields(value: js.Array[String]): Self = StObject.set(x, "outFields", value.asInstanceOf[js.Any])
+    
+    inline def setOutFieldsUndefined: Self = StObject.set(x, "outFields", js.undefined)
+    
+    inline def setOutFieldsVarargs(value: String*): Self = StObject.set(x, "outFields", js.Array(value*))
+    
+    inline def setOutSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "outSpatialReference", value.asInstanceOf[js.Any])
+    
+    inline def setOutSpatialReferenceUndefined: Self = StObject.set(x, "outSpatialReference", js.undefined)
+    
+    inline def setRelationshipId(value: Double): Self = StObject.set(x, "relationshipId", value.asInstanceOf[js.Any])
+    
+    inline def setRelationshipIdUndefined: Self = StObject.set(x, "relationshipId", js.undefined)
+    
+    inline def setReturnGeometry(value: Boolean): Self = StObject.set(x, "returnGeometry", value.asInstanceOf[js.Any])
+    
+    inline def setReturnGeometryUndefined: Self = StObject.set(x, "returnGeometry", js.undefined)
+    
+    inline def setReturnM(value: Boolean): Self = StObject.set(x, "returnM", value.asInstanceOf[js.Any])
+    
+    inline def setReturnMUndefined: Self = StObject.set(x, "returnM", js.undefined)
+    
+    inline def setReturnZ(value: Boolean): Self = StObject.set(x, "returnZ", value.asInstanceOf[js.Any])
+    
+    inline def setReturnZUndefined: Self = StObject.set(x, "returnZ", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    
+    inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+    
+    inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+  }
 }
-

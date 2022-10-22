@@ -1,43 +1,23 @@
 package typingsJapgolly.reachWindowSize.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reachWindowSize.AnonHeight
+import japgolly.scalajs.react.facade.React.Element
+import typingsJapgolly.StBuildingComponent.Default
+import typingsJapgolly.reachWindowSize.anon.Height
 import typingsJapgolly.reachWindowSize.mod.WindowSizeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WindowSize {
-  def apply(
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: AnonHeight => CallbackTo[Node]
-  ): UnmountedSimple[
-    WindowSizeProps, 
-    MountedWithRawType[WindowSizeProps, js.Object, RawMounted[WindowSizeProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      __obj.updateDynamic("children")(js.Any.fromFunction1((t0: typingsJapgolly.reachWindowSize.AnonHeight) => children(t0).runNow()))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.reachWindowSize.mod.WindowSizeProps, 
-  japgolly.scalajs.react.Children.None, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reachWindowSize.mod.WindowSizeProps])
+  inline def apply(children: Height => Element): Default[js.Object] = {
+    val __props = js.Dynamic.literal(children = js.Any.fromFunction1(children))
+    new Default[js.Object](js.Array(this.component, __props.asInstanceOf[WindowSizeProps]))
   }
-  @JSImport("@reach/window-size", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("@reach/window-size", "WindowSize")
+  @js.native
+  val component: js.Object = js.native
+  
+  def withProps(p: WindowSizeProps): Default[js.Object] = new Default[js.Object](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.ncom
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ncomStrings {
-  @js.native
-  sealed trait connection extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait connection extends StObject
+  inline def connection: connection = "connection".asInstanceOf[connection]
   
-  @scala.inline
-  def connection: connection = "connection".asInstanceOf[connection]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  @js.native
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
 }
-

@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Capture
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CameraCaptureUIVideoFormat extends js.Object
-
+sealed trait CameraCaptureUIVideoFormat extends StObject
 /** Determines the format for saving captured videos. */
 @JSGlobal("Windows.Media.Capture.CameraCaptureUIVideoFormat")
 @js.native
-object CameraCaptureUIVideoFormat extends js.Object {
+object CameraCaptureUIVideoFormat extends StObject {
+  
   /** MP4/H.264/AAC format. */
   @js.native
-  sealed trait mp4 extends CameraCaptureUIVideoFormat
+  sealed trait mp4
+    extends StObject
+       with CameraCaptureUIVideoFormat
   
   /** WMV format. */
   @js.native
-  sealed trait wmv extends CameraCaptureUIVideoFormat
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CameraCaptureUIVideoFormat with Double] = js.native
-  /* 0 */ @js.native
-  object mp4 extends TopLevel[mp4 with Double]
-  
-  /* 1 */ @js.native
-  object wmv extends TopLevel[wmv with Double]
-  
+  sealed trait wmv
+    extends StObject
+       with CameraCaptureUIVideoFormat
 }
-

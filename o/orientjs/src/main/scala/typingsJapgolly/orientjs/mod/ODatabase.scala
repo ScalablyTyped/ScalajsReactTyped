@@ -1,13 +1,12 @@
 package typingsJapgolly.orientjs.mod
 
-import typingsJapgolly.orientjs.AnonHost
+import typingsJapgolly.orientjs.anon.Host
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "ODatabase")
 @js.native
-class ODatabase () extends ODB {
-  def this(config: AnonHost) = this()
+open class ODatabase () extends ODB {
+  def this(config: Host) = this()
 }
-

@@ -1,24 +1,40 @@
 package typingsJapgolly.blueprintjsCore.mod
 
 import org.scalablytyped.runtime.Instantiable1
-import typingsJapgolly.blueprintjsCore.treeNodeMod.ITreeNodeProps
+import typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.ITreeNodeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "TreeNode")
 @js.native
-class TreeNode[T] ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.TreeNode[T]
-
-/* static members */
-@JSImport("@blueprintjs/core", "TreeNode")
-@js.native
-object TreeNode extends js.Object {
-  var displayName: String = js.native
-  def ofType[T](): Instantiable1[
-    /* props */ ITreeNodeProps[T], 
-    typingsJapgolly.blueprintjsCore.treeNodeMod.TreeNode[T]
-  ] = js.native
+open class TreeNode[T] protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.TreeNode[T] {
+  def this(props: ITreeNodeProps[T]) = this()
+  /**
+    * @deprecated
+    * @see https://reactjs.org/docs/legacy-context.html
+    */
+  def this(props: ITreeNodeProps[T], context: Any) = this()
 }
-
+/* static members */
+object TreeNode {
+  
+  @JSImport("@blueprintjs/core", "TreeNode")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "TreeNode.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  
+  /** @deprecated no longer necessary now that the TypeScript parser supports type arguments on JSX element tags */
+  inline def ofType[U](): Instantiable1[
+    /* props */ ITreeNodeProps[U], 
+    typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[U]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[
+    /* props */ ITreeNodeProps[U], 
+    typingsJapgolly.blueprintjsCore.libEsmComponentsTreeTreeNodeMod.TreeNode[U]
+  ]]
+}

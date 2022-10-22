@@ -1,101 +1,99 @@
 package typingsJapgolly.grpc.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait callError extends js.Object
-
+sealed trait callError extends StObject
 @JSImport("grpc", "callError")
 @js.native
-object callError extends js.Object {
-  @js.native
-  sealed trait ALREADY_FINISHED extends callError
-  
-  @js.native
-  sealed trait ALREADY_INVOKED extends callError
-  
-  @js.native
-  sealed trait BATCH_TOO_BIG extends callError
-  
-  @js.native
-  sealed trait ERROR extends callError
-  
-  @js.native
-  sealed trait INVALID_FLAGS extends callError
-  
-  @js.native
-  sealed trait INVALID_MESSAGE extends callError
-  
-  @js.native
-  sealed trait INVALID_METADATA extends callError
-  
-  @js.native
-  sealed trait NOT_INVOKED extends callError
-  
-  @js.native
-  sealed trait NOT_ON_CLIENT extends callError
-  
-  @js.native
-  sealed trait NOT_ON_SERVER extends callError
-  
-  @js.native
-  sealed trait NOT_SERVER_COMPLETION_QUEUE extends callError
-  
-  @js.native
-  sealed trait OK extends callError
-  
-  @js.native
-  sealed trait PAYLOAD_TYPE_MISMATCH extends callError
-  
-  @js.native
-  sealed trait TOO_MANY_OPERATIONS extends callError
+object callError extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[callError with Double] = js.native
-  /* 6 */ @js.native
-  object ALREADY_FINISHED extends TopLevel[ALREADY_FINISHED with Double]
+  def apply(value: Double): js.UndefOr[callError & Double] = js.native
   
-  /* 4 */ @js.native
-  object ALREADY_INVOKED extends TopLevel[ALREADY_INVOKED with Double]
+  @js.native
+  sealed trait ALREADY_FINISHED
+    extends StObject
+       with callError
+  /* 6 */ val ALREADY_FINISHED: typingsJapgolly.grpc.mod.callError.ALREADY_FINISHED & Double = js.native
   
-  /* 12 */ @js.native
-  object BATCH_TOO_BIG extends TopLevel[BATCH_TOO_BIG with Double]
+  @js.native
+  sealed trait ALREADY_INVOKED
+    extends StObject
+       with callError
+  /* 4 */ val ALREADY_INVOKED: typingsJapgolly.grpc.mod.callError.ALREADY_INVOKED & Double = js.native
   
-  /* 1 */ @js.native
-  object ERROR extends TopLevel[ERROR with Double]
+  @js.native
+  sealed trait BATCH_TOO_BIG
+    extends StObject
+       with callError
+  /* 12 */ val BATCH_TOO_BIG: typingsJapgolly.grpc.mod.callError.BATCH_TOO_BIG & Double = js.native
   
-  /* 8 */ @js.native
-  object INVALID_FLAGS extends TopLevel[INVALID_FLAGS with Double]
+  @js.native
+  sealed trait ERROR
+    extends StObject
+       with callError
+  /* 1 */ val ERROR: typingsJapgolly.grpc.mod.callError.ERROR & Double = js.native
   
-  /* 10 */ @js.native
-  object INVALID_MESSAGE extends TopLevel[INVALID_MESSAGE with Double]
+  @js.native
+  sealed trait INVALID_FLAGS
+    extends StObject
+       with callError
+  /* 8 */ val INVALID_FLAGS: typingsJapgolly.grpc.mod.callError.INVALID_FLAGS & Double = js.native
   
-  /* 9 */ @js.native
-  object INVALID_METADATA extends TopLevel[INVALID_METADATA with Double]
+  @js.native
+  sealed trait INVALID_MESSAGE
+    extends StObject
+       with callError
+  /* 10 */ val INVALID_MESSAGE: typingsJapgolly.grpc.mod.callError.INVALID_MESSAGE & Double = js.native
   
-  /* 5 */ @js.native
-  object NOT_INVOKED extends TopLevel[NOT_INVOKED with Double]
+  @js.native
+  sealed trait INVALID_METADATA
+    extends StObject
+       with callError
+  /* 9 */ val INVALID_METADATA: typingsJapgolly.grpc.mod.callError.INVALID_METADATA & Double = js.native
   
-  /* 3 */ @js.native
-  object NOT_ON_CLIENT extends TopLevel[NOT_ON_CLIENT with Double]
+  @js.native
+  sealed trait NOT_INVOKED
+    extends StObject
+       with callError
+  /* 5 */ val NOT_INVOKED: typingsJapgolly.grpc.mod.callError.NOT_INVOKED & Double = js.native
   
-  /* 2 */ @js.native
-  object NOT_ON_SERVER extends TopLevel[NOT_ON_SERVER with Double]
+  @js.native
+  sealed trait NOT_ON_CLIENT
+    extends StObject
+       with callError
+  /* 3 */ val NOT_ON_CLIENT: typingsJapgolly.grpc.mod.callError.NOT_ON_CLIENT & Double = js.native
   
-  /* 11 */ @js.native
-  object NOT_SERVER_COMPLETION_QUEUE extends TopLevel[NOT_SERVER_COMPLETION_QUEUE with Double]
+  @js.native
+  sealed trait NOT_ON_SERVER
+    extends StObject
+       with callError
+  /* 2 */ val NOT_ON_SERVER: typingsJapgolly.grpc.mod.callError.NOT_ON_SERVER & Double = js.native
   
-  /* 0 */ @js.native
-  object OK extends TopLevel[OK with Double]
+  @js.native
+  sealed trait NOT_SERVER_COMPLETION_QUEUE
+    extends StObject
+       with callError
+  /* 11 */ val NOT_SERVER_COMPLETION_QUEUE: typingsJapgolly.grpc.mod.callError.NOT_SERVER_COMPLETION_QUEUE & Double = js.native
   
-  /* 13 */ @js.native
-  object PAYLOAD_TYPE_MISMATCH extends TopLevel[PAYLOAD_TYPE_MISMATCH with Double]
+  @js.native
+  sealed trait OK
+    extends StObject
+       with callError
+  /* 0 */ val OK: typingsJapgolly.grpc.mod.callError.OK & Double = js.native
   
-  /* 7 */ @js.native
-  object TOO_MANY_OPERATIONS extends TopLevel[TOO_MANY_OPERATIONS with Double]
+  @js.native
+  sealed trait PAYLOAD_TYPE_MISMATCH
+    extends StObject
+       with callError
+  /* 13 */ val PAYLOAD_TYPE_MISMATCH: typingsJapgolly.grpc.mod.callError.PAYLOAD_TYPE_MISMATCH & Double = js.native
   
+  @js.native
+  sealed trait TOO_MANY_OPERATIONS
+    extends StObject
+       with callError
+  /* 7 */ val TOO_MANY_OPERATIONS: typingsJapgolly.grpc.mod.callError.TOO_MANY_OPERATIONS & Double = js.native
 }
-

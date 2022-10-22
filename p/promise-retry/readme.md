@@ -11,9 +11,9 @@ Retries a function that returns a promise, leveraging the power of the retry mod
 | Full name          | promise-retry |
 | Keywords           | retry, promise, backoff, repeat, replay |
 | # releases         | 1 |
-| # dependents       | 237 |
-| # downloads        | 67955950 |
-| # stars            | 18 |
+| # dependents       | 0.0 |
+| # downloads        | 3.1014894333333332E7 |
+| # stars            | 276.0 |
 
 ## Links
 - [Homepage](https://github.com/IndigoUnited/node-promise-retry#readme)

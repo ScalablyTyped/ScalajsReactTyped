@@ -1,7 +1,7 @@
 
 # Scala.js typings for decimal_dot_js
 
-Typings are for version 10.2.0
+Typings are for version 10.4.2
 
 ## Library description:
 An arbitrary-precision Decimal type for JavaScript.
@@ -10,10 +10,10 @@ An arbitrary-precision Decimal type for JavaScript.
 | ------------------ | :-------------: |
 | Full name          | decimal.js |
 | Keywords           | arbitrary, precision, arithmetic, big, number, decimal, float, biginteger, bigdecimal, bignumber, bigint, bignum |
-| # releases         | 7 |
-| # dependents       | 269 |
-| # downloads        | 12749385 |
-| # stars            | 17 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 5.9919552E7 |
+| # stars            | 5125.0 |
 
 ## Links
 - [Homepage](https://github.com/MikeMcl/decimal.js#readme)

@@ -1,29 +1,22 @@
 package typingsJapgolly.clearbladejsServer.CbServer
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait QuerySortDirections extends js.Object
-
+sealed trait QuerySortDirections extends StObject
 @JSGlobal("CbServer.QuerySortDirections")
 @js.native
-object QuerySortDirections extends js.Object {
-  @js.native
-  sealed trait QUERY_SORT_ASCENDING extends QuerySortDirections
+object QuerySortDirections extends StObject {
   
   @js.native
-  sealed trait QUERY_SORT_DESCENDING extends QuerySortDirections
+  sealed trait QUERY_SORT_ASCENDING
+    extends StObject
+       with QuerySortDirections
   
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[QuerySortDirections with String] = js.native
-  /* "ASC" */ @js.native
-  object QUERY_SORT_ASCENDING extends TopLevel[QUERY_SORT_ASCENDING with String]
-  
-  /* "DESC" */ @js.native
-  object QUERY_SORT_DESCENDING extends TopLevel[QUERY_SORT_DESCENDING with String]
-  
+  @js.native
+  sealed trait QUERY_SORT_DESCENDING
+    extends StObject
+       with QuerySortDirections
 }
-

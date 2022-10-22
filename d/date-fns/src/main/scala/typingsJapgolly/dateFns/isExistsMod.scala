@@ -1,15 +1,17 @@
 package typingsJapgolly.dateFns
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/fp/isExists", JSImport.Namespace)
-@js.native
-object isExistsMod extends js.Object {
-  @js.native
-  object default extends TopLevel[CurriedFn3[Double, Double, Double, Boolean]]
+object isExistsMod {
   
+  object default {
+    
+    inline def apply(year: Double, month: Double, day: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], day.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @JSImport("date-fns/isExists", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

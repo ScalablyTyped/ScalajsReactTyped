@@ -9,10 +9,10 @@ db-migrate base driver
 | ------------------ | :-------------: |
 | Full name          | db-migrate-base |
 | Keywords           | db-migrate, migration, base, driver, database, db, migrate |
-| # releases         | 8 |
-| # dependents       | 21 |
-| # downloads        | 2033201 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 415574.3333333333 |
+| # stars            | 6.0 |
 
 ## Links
 - [Homepage](https://github.com/db-migrate/db-migrate-base)

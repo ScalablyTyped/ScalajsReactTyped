@@ -1,22 +1,26 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.PickISearchBoxPropsdisabl
-import typingsJapgolly.officeUiFabricReact.searchBoxTypesMod.ISearchBoxProps
+import typingsJapgolly.officeUiFabricReact.anon.PickISearchBoxPropsdisabl
+import typingsJapgolly.officeUiFabricReact.libComponentsSearchBoxSearchBoxDottypesMod.ISearchBoxProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SearchBoxBase")
 @js.native
-class SearchBoxBase protected ()
+open class SearchBoxBase protected ()
   extends typingsJapgolly.officeUiFabricReact.libSearchBoxMod.SearchBoxBase {
   def this(props: ISearchBoxProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "SearchBoxBase")
-@js.native
-object SearchBoxBase extends js.Object {
-  var defaultProps: PickISearchBoxPropsdisabl = js.native
+object SearchBoxBase {
+  
+  @JSImport("office-ui-fabric-react", "SearchBoxBase")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "SearchBoxBase.defaultProps")
+  @js.native
+  def defaultProps: PickISearchBoxPropsdisabl = js.native
+  inline def defaultProps_=(x: PickISearchBoxPropsdisabl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

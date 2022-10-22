@@ -1,76 +1,48 @@
 package typingsJapgolly.reactDateRange
 
-import typingsJapgolly.reactDateRange.mod.DateRangeIndex
-import typingsJapgolly.reactDateRange.mod.LanguageType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactDateRangeStrings {
-  @js.native
-  sealed trait `Last 30 Days` extends DateRangeIndex
   
   @js.native
-  sealed trait `Last 7 Days` extends DateRangeIndex
+  sealed trait backwards extends StObject
+  inline def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait Today extends DateRangeIndex
+  sealed trait date extends StObject
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait Yesterday extends DateRangeIndex
+  sealed trait dateRange extends StObject
+  inline def dateRange: dateRange = "dateRange".asInstanceOf[dateRange]
   
   @js.native
-  sealed trait cn extends LanguageType
+  sealed trait forwards extends StObject
+  inline def forwards: forwards = "forwards".asInstanceOf[forwards]
   
   @js.native
-  sealed trait de extends LanguageType
+  sealed trait horizontal extends StObject
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait es extends LanguageType
+  sealed trait monthOffset extends StObject
+  inline def monthOffset: monthOffset = "monthOffset".asInstanceOf[monthOffset]
   
   @js.native
-  sealed trait fr extends LanguageType
+  sealed trait set extends StObject
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait it extends LanguageType
+  sealed trait setMonth extends StObject
+  inline def setMonth: setMonth = "setMonth".asInstanceOf[setMonth]
   
   @js.native
-  sealed trait jp extends LanguageType
+  sealed trait setYear extends StObject
+  inline def setYear: setYear = "setYear".asInstanceOf[setYear]
   
   @js.native
-  sealed trait ko extends LanguageType
-  
-  @js.native
-  sealed trait ru extends LanguageType
-  
-  @js.native
-  sealed trait tr extends LanguageType
-  
-  @scala.inline
-  def `Last 30 Days`: `Last 30 Days` = "Last 30 Days".asInstanceOf[`Last 30 Days`]
-  @scala.inline
-  def `Last 7 Days`: `Last 7 Days` = "Last 7 Days".asInstanceOf[`Last 7 Days`]
-  @scala.inline
-  def Today: Today = "Today".asInstanceOf[Today]
-  @scala.inline
-  def Yesterday: Yesterday = "Yesterday".asInstanceOf[Yesterday]
-  @scala.inline
-  def cn: cn = "cn".asInstanceOf[cn]
-  @scala.inline
-  def de: de = "de".asInstanceOf[de]
-  @scala.inline
-  def es: es = "es".asInstanceOf[es]
-  @scala.inline
-  def fr: fr = "fr".asInstanceOf[fr]
-  @scala.inline
-  def it: it = "it".asInstanceOf[it]
-  @scala.inline
-  def jp: jp = "jp".asInstanceOf[jp]
-  @scala.inline
-  def ko: ko = "ko".asInstanceOf[ko]
-  @scala.inline
-  def ru: ru = "ru".asInstanceOf[ru]
-  @scala.inline
-  def tr: tr = "tr".asInstanceOf[tr]
+  sealed trait vertical extends StObject
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
-

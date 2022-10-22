@@ -1,7 +1,7 @@
 
 # Scala.js typings for xmlcreate
 
-Typings are for version 1.0.2
+Typings are for version 2.0.4
 
 ## Library description:
 Simple XML builder for Node.js
@@ -10,10 +10,10 @@ Simple XML builder for Node.js
 | ------------------ | :-------------: |
 | Full name          | xmlcreate |
 | Keywords           | build, builder, create, creator, xml |
-| # releases         | 3 |
-| # dependents       | 3 |
-| # downloads        | 21540840 |
-| # stars            | 1 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6029231.666666667 |
+| # stars            | 4.0 |
 
 ## Links
 - [Homepage](https://github.com/michaelkourlas/node-xmlcreate#readme)

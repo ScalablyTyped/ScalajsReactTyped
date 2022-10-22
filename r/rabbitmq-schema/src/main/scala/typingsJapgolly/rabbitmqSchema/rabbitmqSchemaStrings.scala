@@ -1,24 +1,20 @@
 package typingsJapgolly.rabbitmqSchema
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rabbitmqSchemaStrings {
-  @js.native
-  sealed trait direct extends js.Object
   
   @js.native
-  sealed trait fanout extends js.Object
+  sealed trait direct extends StObject
+  inline def direct: direct = "direct".asInstanceOf[direct]
   
   @js.native
-  sealed trait topic extends js.Object
+  sealed trait fanout extends StObject
+  inline def fanout: fanout = "fanout".asInstanceOf[fanout]
   
-  @scala.inline
-  def direct: direct = "direct".asInstanceOf[direct]
-  @scala.inline
-  def fanout: fanout = "fanout".asInstanceOf[fanout]
-  @scala.inline
-  def topic: topic = "topic".asInstanceOf[topic]
+  @js.native
+  sealed trait topic extends StObject
+  inline def topic: topic = "topic".asInstanceOf[topic]
 }
-

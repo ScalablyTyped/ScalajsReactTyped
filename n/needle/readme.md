@@ -1,7 +1,7 @@
 
 # Scala.js typings for needle
 
-Typings are for version 2.0
+Typings are for version 2.5
 
 ## Library description:
 The leanest and most handsome HTTP client in the Nodelands.
@@ -10,10 +10,10 @@ The leanest and most handsome HTTP client in the Nodelands.
 | ------------------ | :-------------: |
 | Full name          | needle |
 | Keywords           | http, https, simple, request, client, multipart, upload, proxy, deflate, timeout, charset, iconv, cookie, redirect |
-| # releases         | 11 |
-| # dependents       | 492 |
-| # downloads        | 247936362 |
-| # stars            | 52 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 2.5597561E7 |
+| # stars            | 1488.0 |
 
 ## Links
 - [Homepage](https://github.com/tomas/needle#readme)

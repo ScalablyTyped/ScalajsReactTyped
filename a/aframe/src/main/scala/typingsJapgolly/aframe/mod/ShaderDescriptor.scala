@@ -1,20 +1,26 @@
 package typingsJapgolly.aframe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShaderDescriptor[T /* <: Shader */] extends js.Object {
+trait ShaderDescriptor[T /* <: Shader */] extends StObject {
+  
   var Shader: ShaderConstructor[T]
+  
   var schema: Schema_[js.Object]
 }
-
 object ShaderDescriptor {
-  @scala.inline
-  def apply[T /* <: Shader */](Shader: ShaderConstructor[T], schema: Schema_[js.Object]): ShaderDescriptor[T] = {
-    val __obj = js.Dynamic.literal(Shader = Shader.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
   
+  inline def apply[T /* <: Shader */](Shader: ShaderConstructor[T], schema: Schema_[js.Object]): ShaderDescriptor[T] = {
+    val __obj = js.Dynamic.literal(Shader = Shader.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShaderDescriptor[T]]
   }
+  
+  extension [Self <: ShaderDescriptor[?], T /* <: Shader */](x: Self & ShaderDescriptor[T]) {
+    
+    inline def setSchema(value: Schema_[js.Object]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    
+    inline def setShader(value: ShaderConstructor[T]): Self = StObject.set(x, "Shader", value.asInstanceOf[js.Any])
+  }
 }
-

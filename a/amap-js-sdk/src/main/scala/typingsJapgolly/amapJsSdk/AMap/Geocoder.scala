@@ -1,14 +1,12 @@
 package typingsJapgolly.amapJsSdk.AMap
 
-import typingsJapgolly.amapJsSdk.AnonBatch
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("AMap.Geocoder")
 @js.native
-class Geocoder () extends js.Object {
-  def this(opts: AnonBatch) = this()
+trait Geocoder extends StObject {
+  
   def getAddress(
     location: js.Array[LngLat],
     callback: js.Function2[
@@ -25,6 +23,7 @@ class Geocoder () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def getLocation(address: String): Unit = js.native
   def getLocation(
     address: String,
@@ -34,6 +33,6 @@ class Geocoder () extends js.Object {
       Unit
     ]
   ): Unit = js.native
+  
   def setCity(city: String): Unit = js.native
 }
-

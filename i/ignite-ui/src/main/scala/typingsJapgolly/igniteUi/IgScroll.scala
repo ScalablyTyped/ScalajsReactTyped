@@ -2,299 +2,413 @@ package typingsJapgolly.igniteUi
 
 import japgolly.scalajs.react.Callback
 import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.std.Event_
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgScroll
-  extends /**
-	 * Option for igScroll
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Sets or gets if the scrollbars should be always visible (on all environments). Otherwise it will be the default behavior. Note: this option is only for the custom scrollbars set through the scrollbarType option.
-  	 *
-  	 */
+    * Sets or gets if the scrollbars should be always visible (on all environments). Otherwise it will be the default behavior. Note: this option is only for the custom scrollbars set through the scrollbarType option.
+    *
+    */
   var alwaysVisible: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar track areas.
-  	 *
-  	 */
+    * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar track areas.
+    *
+    */
   var bigIncrementStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets at least how many times the horizontal speed should be bigger so the inertia proceeds only horizontally without scrolling vertically. This is to improve interactions due to not perfectly swiping left/right with some deviation down/up
-  	 *
-  	 */
+    * Sets gets at least how many times the horizontal speed should be bigger so the inertia proceeds only horizontally without scrolling vertically. This is to improve interactions due to not perfectly swiping left/right with some deviation down/up
+    *
+    */
   var inertiaDeltaX: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets at least how many times the vertical speed should be bigger so the inertia proceeds only vertically without scrolling horizontally. This is to improve interactions due to not perfectly swiping down/up with some deviation left/right
-  	 *
-  	 */
+    * Sets gets at least how many times the vertical speed should be bigger so the inertia proceeds only vertically without scrolling horizontally. This is to improve interactions due to not perfectly swiping down/up with some deviation left/right
+    *
+    */
   var inertiaDeltaY: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets the modifier for how long the inertia last on mobile devices
-  	 *
-  	 */
+    * Sets gets the modifier for how long the inertia last on mobile devices
+    *
+    */
   var inertiaDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets the modifier for how much the inertia scrolls on mobile devices
-  	 *
-  	 */
+    * Sets gets the modifier for how much the inertia scrolls on mobile devices
+    *
+    */
   var inertiaStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Set/Get the locale language setting for the widget.
-  	 *
-  	 */
+    * Set/Get the locale language setting for the widget.
+    *
+    */
   var language: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Set/Get the locale setting for the widget.
-  	 *
-  	 */
-  var locale: js.UndefOr[js.Any] = js.undefined
+    * Set/Get the locale setting for the widget.
+    *
+    */
+  var locale: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
-  	 *
-  	 */
+    * Sets or gets the minimum size of the thumb drag in pixels. For the vertical thumb it means its minimum height, for the horizontal thumb it means its minimum width. This affects only the custom scrollblar when scrollbarType is set to "custom".
+    *
+    */
   var minThumbSize: js.UndefOr[Double | String] = js.undefined
+  
   /**
-  	 * Sets or gets if igScroll can modify the DOM when it is initialized on certain element so that the content can be scrollable.
-  	 *
-  	 */
+    * Sets or gets if igScroll can modify the DOM when it is initialized on certain element so that the content can be scrollable.
+    *
+    */
   var modifyDOM: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Set/Get the regional setting for the widget.
-  	 *
-  	 */
+    * Set/Get the regional setting for the widget.
+    *
+    */
   var regional: js.UndefOr[String | js.Object] = js.undefined
+  
   /**
-  	 * Event which is raised after the scroller has been rendered fully
-  	 */
+    * Event which is raised after the scroller has been rendered fully
+    */
   var rendered: js.UndefOr[RenderedEvent] = js.undefined
+  
   /**
-  	 * Event which is raised after the igScroll has finished resizing.
-  	 * Function takes arguments evt and args.
-  	 * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
-  	 * Use args.owner to obtain reference to igScroll.
-  	 */
+    * Event which is raised after the igScroll has finished resizing.
+    * Function takes arguments evt and args.
+    * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
+    * Use args.owner to obtain reference to igScroll.
+    */
   var resized: js.UndefOr[ResizedEvent] = js.undefined
+  
   /**
-  	 * Event which is raised when the igScroll detects that the element is reizing.
-  	 * Function takes arguments evt and args.
-  	 * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
-  	 * Use args.owner to obtain reference to igScroll.
-  	 */
+    * Event which is raised when the igScroll detects that the element is reizing.
+    * Function takes arguments evt and args.
+    * Use evt.originalEvent (with validation for not null of evt) to obtain reference to event of browser.
+    * Use args.owner to obtain reference to igScroll.
+    */
   var resizing: js.UndefOr[ResizingEvent] = js.undefined
+  
   /**
-  	 * Sets custom value for how high is actually the content. Useful when wanting to scroll and update the shown content manually.
-  	 *
-  	 */
+    * Sets custom value for how high is actually the content. Useful when wanting to scroll and update the shown content manually.
+    *
+    */
   var scrollHeight: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets current horizontal position of the content.
-  	 *
-  	 */
+    * Sets gets current horizontal position of the content.
+    *
+    */
   var scrollLeft: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets if only the linked horizontal scrollbar should be used for horizontal scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
-  	 *
-  	 */
+    * Sets gets if only the linked horizontal scrollbar should be used for horizontal scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
+    *
+    */
   var scrollOnlyHBar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets gets if only the linked vertical scrollbar should be used for vertical scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
-  	 *
-  	 */
+    * Sets gets if only the linked vertical scrollbar should be used for vertical scrolling. Note: The behavior when the linked scrollbar is scrolled in this case should be handled manually.
+    *
+    */
   var scrollOnlyVBar: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets gets current vertical position of the content.
-  	 *
-  	 */
+    * Sets gets current vertical position of the content.
+    *
+    */
   var scrollTop: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets custom value for what width is actually the content. Useful when wanting to scroll and update the shown content manually.
-  	 *
-  	 */
+    * Sets custom value for what width is actually the content. Useful when wanting to scroll and update the shown content manually.
+    *
+    */
   var scrollWidth: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets html or jQuery element which is used for horizontal scrolling.
-  	 *
-  	 */
+    * Sets gets html or jQuery element which is used for horizontal scrolling.
+    *
+    */
   var scrollbarH: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets gets html or jQuery element to which the horizontal scrollbar will be appended to.
-  	 *
-  	 */
+    * Sets gets html or jQuery element to which the horizontal scrollbar will be appended to.
+    *
+    */
   var scrollbarHParent: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets or gets what type of scrollbars should be using the igScroll (on all environments).
-  	 *
-  	 *
-  	 * Valid values:
-  	 * "custom" Custom scrollbars with custom ui and events.
-  	 * "native" Native scrollbars
-  	 * "none" No scrollbars should be visible
-  	 */
+    * Sets or gets what type of scrollbars should be using the igScroll (on all environments).
+    *
+    *
+    * Valid values:
+    * "custom" Custom scrollbars with custom ui and events.
+    * "native" Native scrollbars
+    * "none" No scrollbars should be visible
+    */
   var scrollbarType: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets gets html or jQuery element which is used for vertical scrolling.
-  	 *
-  	 */
+    * Sets gets html or jQuery element which is used for vertical scrolling.
+    *
+    */
   var scrollbarV: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Sets gets html or jQuery element to which the vertical scrollbar will be appended to.
-  	 *
-  	 */
+    * Sets gets html or jQuery element to which the vertical scrollbar will be appended to.
+    *
+    */
   var scrollbarVParent: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Event which is raised after scrolling has stopped.
-  	 */
+    * Event which is raised after scrolling has stopped.
+    */
   var scrolled: js.UndefOr[ScrolledEvent] = js.undefined
+  
   /**
-  	 * Event which is raised before scrolling or before each step when having inertia.
-  	 * Return false in order to cancel action.
-  	 */
+    * Event which is raised before scrolling or before each step when having inertia.
+    * Return false in order to cancel action.
+    */
   var scrolling: js.UndefOr[ScrollingEvent] = js.undefined
+  
   /**
-  	 * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar arrows
-  	 *
-  	 */
+    * Sets gets the step of the default scrolling behavior when using any of the custom scrollbar arrows
+    *
+    */
   var smallIncrementStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets if smoother scrolling with small intertia should be used when using mouse wheel
-  	 *
-  	 */
+    * Sets gets if smoother scrolling with small intertia should be used when using mouse wheel
+    *
+    */
   var smoothing: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the smooth scrolling behavior.
-  	 *
-  	 */
+    * Sets or gets the modifier for how long the scroll ‘animation’ lasts when using the mouse wheel once. This is used only for the smooth scrolling behavior.
+    *
+    */
   var smoothingDuration: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the smooth scrolling behavior.
-  	 *
-  	 */
+    * Sets or gets the modifier for how many pixels will be scrolled when using the mouse wheel once. This is used only for the smooth scrolling behavior.
+    *
+    */
   var smoothingStep: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets how much pixels of toleration there will be when initially swiping horizontally. This is to improve swiping up/down without scrolling left/right when not intended due to small deviation left/right
-  	 *
-  	 */
+    * Sets gets how much pixels of toleration there will be when initially swiping horizontally. This is to improve swiping up/down without scrolling left/right when not intended due to small deviation left/right
+    *
+    */
   var swipeToleranceX: js.UndefOr[Double] = js.undefined
+  
   /**
-  	 * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
-  	 *
-  	 */
-  var syncedElemsH: js.UndefOr[js.Array[_]] = js.undefined
+    * Sets gets elements that are linked to the main content horizontally. When the content is scrolled on X axis the linked elements scroll accordingly.
+    *
+    */
+  var syncedElemsH: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
-  	 *
-  	 */
-  var syncedElemsV: js.UndefOr[js.Array[_]] = js.undefined
+    * Sets gets elements that are linked to the main content vertically. When the content is scrolled on Y axis the linked elements scroll accordingly.
+    *
+    */
+  var syncedElemsV: js.UndefOr[js.Array[Any]] = js.undefined
+  
   /**
-  	 * Event which is raised on mouse up from the scrollbar's thumb drag.
-  	 */
+    * Event which is raised on mouse up from the scrollbar's thumb drag.
+    */
   var thumbDragEnd: js.UndefOr[ThumbDragEndEvent] = js.undefined
+  
   /**
-  	 * Event which is raised when the thumb drag is being moved.
-  	 */
+    * Event which is raised when the thumb drag is being moved.
+    */
   var thumbDragMove: js.UndefOr[ThumbDragMoveEvent] = js.undefined
+  
   /**
-  	 * Event which is raised when there is mouse click on the scrollbar's thumb drag.
-  	 */
+    * Event which is raised when there is mouse click on the scrollbar's thumb drag.
+    */
   var thumbDragStart: js.UndefOr[ThumbDragStartEvent] = js.undefined
+  
   /**
-  	 * Sets gets the step of the default scrolling behavior when using mouse wheel
-  	 *
-  	 */
+    * Sets gets the step of the default scrolling behavior when using mouse wheel
+    *
+    */
   var wheelStep: js.UndefOr[Double] = js.undefined
 }
-
 object IgScroll {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for igScroll
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    alwaysVisible: js.UndefOr[Boolean] = js.undefined,
-    bigIncrementStep: Int | Double = null,
-    inertiaDeltaX: Int | Double = null,
-    inertiaDeltaY: Int | Double = null,
-    inertiaDuration: Int | Double = null,
-    inertiaStep: Int | Double = null,
-    language: String = null,
-    locale: js.Any = null,
-    minThumbSize: Double | String = null,
-    modifyDOM: js.UndefOr[Boolean] = js.undefined,
-    regional: String | js.Object = null,
-    rendered: (/* event */ Event_, /* ui */ RenderedEventUIParam) => Callback = null,
-    resized: (/* event */ Event_, /* ui */ ResizedEventUIParam) => Callback = null,
-    resizing: (/* event */ Event_, /* ui */ ResizingEventUIParam) => Callback = null,
-    scrollHeight: Int | Double = null,
-    scrollLeft: Int | Double = null,
-    scrollOnlyHBar: js.UndefOr[Boolean] = js.undefined,
-    scrollOnlyVBar: js.UndefOr[Boolean] = js.undefined,
-    scrollTop: Int | Double = null,
-    scrollWidth: Int | Double = null,
-    scrollbarH: String = null,
-    scrollbarHParent: String = null,
-    scrollbarType: String = null,
-    scrollbarV: String = null,
-    scrollbarVParent: String = null,
-    scrolled: (/* event */ Event_, /* ui */ ScrolledEventUIParam) => Callback = null,
-    scrolling: (/* event */ Event_, /* ui */ ScrollingEventUIParam) => Callback = null,
-    smallIncrementStep: Int | Double = null,
-    smoothing: js.UndefOr[Boolean] = js.undefined,
-    smoothingDuration: Int | Double = null,
-    smoothingStep: Int | Double = null,
-    swipeToleranceX: Int | Double = null,
-    syncedElemsH: js.Array[_] = null,
-    syncedElemsV: js.Array[_] = null,
-    thumbDragEnd: (/* event */ Event_, /* ui */ ThumbDragEndEventUIParam) => Callback = null,
-    thumbDragMove: (/* event */ Event_, /* ui */ ThumbDragMoveEventUIParam) => Callback = null,
-    thumbDragStart: (/* event */ Event_, /* ui */ ThumbDragStartEventUIParam) => Callback = null,
-    wheelStep: Int | Double = null
-  ): IgScroll = {
+  
+  inline def apply(): IgScroll = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible.asInstanceOf[js.Any])
-    if (bigIncrementStep != null) __obj.updateDynamic("bigIncrementStep")(bigIncrementStep.asInstanceOf[js.Any])
-    if (inertiaDeltaX != null) __obj.updateDynamic("inertiaDeltaX")(inertiaDeltaX.asInstanceOf[js.Any])
-    if (inertiaDeltaY != null) __obj.updateDynamic("inertiaDeltaY")(inertiaDeltaY.asInstanceOf[js.Any])
-    if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
-    if (inertiaStep != null) __obj.updateDynamic("inertiaStep")(inertiaStep.asInstanceOf[js.Any])
-    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (minThumbSize != null) __obj.updateDynamic("minThumbSize")(minThumbSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifyDOM)) __obj.updateDynamic("modifyDOM")(modifyDOM.asInstanceOf[js.Any])
-    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
-    if (rendered != null) __obj.updateDynamic("rendered")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.RenderedEventUIParam) => rendered(t0, t1).runNow()))
-    if (resized != null) __obj.updateDynamic("resized")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ResizedEventUIParam) => resized(t0, t1).runNow()))
-    if (resizing != null) __obj.updateDynamic("resizing")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ResizingEventUIParam) => resizing(t0, t1).runNow()))
-    if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollOnlyHBar)) __obj.updateDynamic("scrollOnlyHBar")(scrollOnlyHBar.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollOnlyVBar)) __obj.updateDynamic("scrollOnlyVBar")(scrollOnlyVBar.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
-    if (scrollWidth != null) __obj.updateDynamic("scrollWidth")(scrollWidth.asInstanceOf[js.Any])
-    if (scrollbarH != null) __obj.updateDynamic("scrollbarH")(scrollbarH.asInstanceOf[js.Any])
-    if (scrollbarHParent != null) __obj.updateDynamic("scrollbarHParent")(scrollbarHParent.asInstanceOf[js.Any])
-    if (scrollbarType != null) __obj.updateDynamic("scrollbarType")(scrollbarType.asInstanceOf[js.Any])
-    if (scrollbarV != null) __obj.updateDynamic("scrollbarV")(scrollbarV.asInstanceOf[js.Any])
-    if (scrollbarVParent != null) __obj.updateDynamic("scrollbarVParent")(scrollbarVParent.asInstanceOf[js.Any])
-    if (scrolled != null) __obj.updateDynamic("scrolled")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ScrolledEventUIParam) => scrolled(t0, t1).runNow()))
-    if (scrolling != null) __obj.updateDynamic("scrolling")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ScrollingEventUIParam) => scrolling(t0, t1).runNow()))
-    if (smallIncrementStep != null) __obj.updateDynamic("smallIncrementStep")(smallIncrementStep.asInstanceOf[js.Any])
-    if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing.asInstanceOf[js.Any])
-    if (smoothingDuration != null) __obj.updateDynamic("smoothingDuration")(smoothingDuration.asInstanceOf[js.Any])
-    if (smoothingStep != null) __obj.updateDynamic("smoothingStep")(smoothingStep.asInstanceOf[js.Any])
-    if (swipeToleranceX != null) __obj.updateDynamic("swipeToleranceX")(swipeToleranceX.asInstanceOf[js.Any])
-    if (syncedElemsH != null) __obj.updateDynamic("syncedElemsH")(syncedElemsH.asInstanceOf[js.Any])
-    if (syncedElemsV != null) __obj.updateDynamic("syncedElemsV")(syncedElemsV.asInstanceOf[js.Any])
-    if (thumbDragEnd != null) __obj.updateDynamic("thumbDragEnd")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ThumbDragEndEventUIParam) => thumbDragEnd(t0, t1).runNow()))
-    if (thumbDragMove != null) __obj.updateDynamic("thumbDragMove")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ThumbDragMoveEventUIParam) => thumbDragMove(t0, t1).runNow()))
-    if (thumbDragStart != null) __obj.updateDynamic("thumbDragStart")(js.Any.fromFunction2((t0: /* event */ typingsJapgolly.std.Event_, t1: /* ui */ typingsJapgolly.igniteUi.ThumbDragStartEventUIParam) => thumbDragStart(t0, t1).runNow()))
-    if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgScroll]
   }
+  
+  extension [Self <: IgScroll](x: Self) {
+    
+    inline def setAlwaysVisible(value: Boolean): Self = StObject.set(x, "alwaysVisible", value.asInstanceOf[js.Any])
+    
+    inline def setAlwaysVisibleUndefined: Self = StObject.set(x, "alwaysVisible", js.undefined)
+    
+    inline def setBigIncrementStep(value: Double): Self = StObject.set(x, "bigIncrementStep", value.asInstanceOf[js.Any])
+    
+    inline def setBigIncrementStepUndefined: Self = StObject.set(x, "bigIncrementStep", js.undefined)
+    
+    inline def setInertiaDeltaX(value: Double): Self = StObject.set(x, "inertiaDeltaX", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaDeltaXUndefined: Self = StObject.set(x, "inertiaDeltaX", js.undefined)
+    
+    inline def setInertiaDeltaY(value: Double): Self = StObject.set(x, "inertiaDeltaY", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaDeltaYUndefined: Self = StObject.set(x, "inertiaDeltaY", js.undefined)
+    
+    inline def setInertiaDuration(value: Double): Self = StObject.set(x, "inertiaDuration", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaDurationUndefined: Self = StObject.set(x, "inertiaDuration", js.undefined)
+    
+    inline def setInertiaStep(value: Double): Self = StObject.set(x, "inertiaStep", value.asInstanceOf[js.Any])
+    
+    inline def setInertiaStepUndefined: Self = StObject.set(x, "inertiaStep", js.undefined)
+    
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    
+    inline def setLocale(value: Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setMinThumbSize(value: Double | String): Self = StObject.set(x, "minThumbSize", value.asInstanceOf[js.Any])
+    
+    inline def setMinThumbSizeUndefined: Self = StObject.set(x, "minThumbSize", js.undefined)
+    
+    inline def setModifyDOM(value: Boolean): Self = StObject.set(x, "modifyDOM", value.asInstanceOf[js.Any])
+    
+    inline def setModifyDOMUndefined: Self = StObject.set(x, "modifyDOM", js.undefined)
+    
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    
+    inline def setRendered(value: (/* event */ Event, /* ui */ RenderedEventUIParam) => Callback): Self = StObject.set(x, "rendered", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ RenderedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setRenderedUndefined: Self = StObject.set(x, "rendered", js.undefined)
+    
+    inline def setResized(value: (/* event */ Event, /* ui */ ResizedEventUIParam) => Callback): Self = StObject.set(x, "resized", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ResizedEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setResizedUndefined: Self = StObject.set(x, "resized", js.undefined)
+    
+    inline def setResizing(value: (/* event */ Event, /* ui */ ResizingEventUIParam) => Callback): Self = StObject.set(x, "resizing", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ResizingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setResizingUndefined: Self = StObject.set(x, "resizing", js.undefined)
+    
+    inline def setScrollHeight(value: Double): Self = StObject.set(x, "scrollHeight", value.asInstanceOf[js.Any])
+    
+    inline def setScrollHeightUndefined: Self = StObject.set(x, "scrollHeight", js.undefined)
+    
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    
+    inline def setScrollOnlyHBar(value: Boolean): Self = StObject.set(x, "scrollOnlyHBar", value.asInstanceOf[js.Any])
+    
+    inline def setScrollOnlyHBarUndefined: Self = StObject.set(x, "scrollOnlyHBar", js.undefined)
+    
+    inline def setScrollOnlyVBar(value: Boolean): Self = StObject.set(x, "scrollOnlyVBar", value.asInstanceOf[js.Any])
+    
+    inline def setScrollOnlyVBarUndefined: Self = StObject.set(x, "scrollOnlyVBar", js.undefined)
+    
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    
+    inline def setScrollWidth(value: Double): Self = StObject.set(x, "scrollWidth", value.asInstanceOf[js.Any])
+    
+    inline def setScrollWidthUndefined: Self = StObject.set(x, "scrollWidth", js.undefined)
+    
+    inline def setScrollbarH(value: String): Self = StObject.set(x, "scrollbarH", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarHParent(value: String): Self = StObject.set(x, "scrollbarHParent", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarHParentUndefined: Self = StObject.set(x, "scrollbarHParent", js.undefined)
+    
+    inline def setScrollbarHUndefined: Self = StObject.set(x, "scrollbarH", js.undefined)
+    
+    inline def setScrollbarType(value: String): Self = StObject.set(x, "scrollbarType", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarTypeUndefined: Self = StObject.set(x, "scrollbarType", js.undefined)
+    
+    inline def setScrollbarV(value: String): Self = StObject.set(x, "scrollbarV", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarVParent(value: String): Self = StObject.set(x, "scrollbarVParent", value.asInstanceOf[js.Any])
+    
+    inline def setScrollbarVParentUndefined: Self = StObject.set(x, "scrollbarVParent", js.undefined)
+    
+    inline def setScrollbarVUndefined: Self = StObject.set(x, "scrollbarV", js.undefined)
+    
+    inline def setScrolled(value: (/* event */ Event, /* ui */ ScrolledEventUIParam) => Callback): Self = StObject.set(x, "scrolled", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ScrolledEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setScrolledUndefined: Self = StObject.set(x, "scrolled", js.undefined)
+    
+    inline def setScrolling(value: (/* event */ Event, /* ui */ ScrollingEventUIParam) => Callback): Self = StObject.set(x, "scrolling", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ScrollingEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setScrollingUndefined: Self = StObject.set(x, "scrolling", js.undefined)
+    
+    inline def setSmallIncrementStep(value: Double): Self = StObject.set(x, "smallIncrementStep", value.asInstanceOf[js.Any])
+    
+    inline def setSmallIncrementStepUndefined: Self = StObject.set(x, "smallIncrementStep", js.undefined)
+    
+    inline def setSmoothing(value: Boolean): Self = StObject.set(x, "smoothing", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingDuration(value: Double): Self = StObject.set(x, "smoothingDuration", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingDurationUndefined: Self = StObject.set(x, "smoothingDuration", js.undefined)
+    
+    inline def setSmoothingStep(value: Double): Self = StObject.set(x, "smoothingStep", value.asInstanceOf[js.Any])
+    
+    inline def setSmoothingStepUndefined: Self = StObject.set(x, "smoothingStep", js.undefined)
+    
+    inline def setSmoothingUndefined: Self = StObject.set(x, "smoothing", js.undefined)
+    
+    inline def setSwipeToleranceX(value: Double): Self = StObject.set(x, "swipeToleranceX", value.asInstanceOf[js.Any])
+    
+    inline def setSwipeToleranceXUndefined: Self = StObject.set(x, "swipeToleranceX", js.undefined)
+    
+    inline def setSyncedElemsH(value: js.Array[Any]): Self = StObject.set(x, "syncedElemsH", value.asInstanceOf[js.Any])
+    
+    inline def setSyncedElemsHUndefined: Self = StObject.set(x, "syncedElemsH", js.undefined)
+    
+    inline def setSyncedElemsHVarargs(value: Any*): Self = StObject.set(x, "syncedElemsH", js.Array(value*))
+    
+    inline def setSyncedElemsV(value: js.Array[Any]): Self = StObject.set(x, "syncedElemsV", value.asInstanceOf[js.Any])
+    
+    inline def setSyncedElemsVUndefined: Self = StObject.set(x, "syncedElemsV", js.undefined)
+    
+    inline def setSyncedElemsVVarargs(value: Any*): Self = StObject.set(x, "syncedElemsV", js.Array(value*))
+    
+    inline def setThumbDragEnd(value: (/* event */ Event, /* ui */ ThumbDragEndEventUIParam) => Callback): Self = StObject.set(x, "thumbDragEnd", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ThumbDragEndEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setThumbDragEndUndefined: Self = StObject.set(x, "thumbDragEnd", js.undefined)
+    
+    inline def setThumbDragMove(value: (/* event */ Event, /* ui */ ThumbDragMoveEventUIParam) => Callback): Self = StObject.set(x, "thumbDragMove", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ThumbDragMoveEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setThumbDragMoveUndefined: Self = StObject.set(x, "thumbDragMove", js.undefined)
+    
+    inline def setThumbDragStart(value: (/* event */ Event, /* ui */ ThumbDragStartEventUIParam) => Callback): Self = StObject.set(x, "thumbDragStart", js.Any.fromFunction2((t0: /* event */ Event, t1: /* ui */ ThumbDragStartEventUIParam) => (value(t0, t1)).runNow()))
+    
+    inline def setThumbDragStartUndefined: Self = StObject.set(x, "thumbDragStart", js.undefined)
+    
+    inline def setWheelStep(value: Double): Self = StObject.set(x, "wheelStep", value.asInstanceOf[js.Any])
+    
+    inline def setWheelStepUndefined: Self = StObject.set(x, "wheelStep", js.undefined)
+  }
 }
-

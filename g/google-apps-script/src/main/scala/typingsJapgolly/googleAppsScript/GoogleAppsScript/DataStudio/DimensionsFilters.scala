@@ -7,24 +7,27 @@ import typingsJapgolly.googleAppsScript.googleAppsScriptStrings.EXCLUDE
 import typingsJapgolly.googleAppsScript.googleAppsScriptStrings.INCLUDE
 import typingsJapgolly.googleAppsScript.googleAppsScriptStrings.IN_LIST
 import typingsJapgolly.googleAppsScript.googleAppsScriptStrings.IS_NULL
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DimensionsFilters extends js.Object {
+trait DimensionsFilters extends StObject {
+  
   /** The name of the field to be filtered */
   var fieldName: String
+  
   /** The operator to apply. */
   var operator: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator
+  
   /** Whether data matching this filter should be included or excluded from the getData() response. */
   var `type`: INCLUDE | EXCLUDE
+  
   /** An array of values to use for the operator. */
   var values: js.Array[String]
 }
-
 object DimensionsFilters {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     fieldName: String,
     operator: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator,
     `type`: INCLUDE | EXCLUDE,
@@ -34,5 +37,17 @@ object DimensionsFilters {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DimensionsFilters]
   }
+  
+  extension [Self <: DimensionsFilters](x: Self) {
+    
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    
+    inline def setOperator(value: EQUALS | CONTAINS | RegexpOperator | IN_LIST | IS_NULL | BETWEEN | NumericOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: INCLUDE | EXCLUDE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

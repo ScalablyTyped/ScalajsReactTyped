@@ -1,22 +1,27 @@
 package typingsJapgolly.zui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ImageCutter extends js.Object {
+trait ImageCutter extends StObject {
+  
   def getData(): ImageData
-  def resetImage(img: String): js.Any
+  
+  def resetImage(img: String): Any
 }
-
 object ImageCutter {
-  @scala.inline
-  def apply(getData: CallbackTo[ImageData], resetImage: String => CallbackTo[js.Any]): ImageCutter = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getData")(getData.toJsFn)
-    __obj.updateDynamic("resetImage")(js.Any.fromFunction1((t0: java.lang.String) => resetImage(t0).runNow()))
+  
+  inline def apply(getData: CallbackTo[ImageData], resetImage: String => Any): ImageCutter = {
+    val __obj = js.Dynamic.literal(getData = getData.toJsFn, resetImage = js.Any.fromFunction1(resetImage))
     __obj.asInstanceOf[ImageCutter]
   }
+  
+  extension [Self <: ImageCutter](x: Self) {
+    
+    inline def setGetData(value: CallbackTo[ImageData]): Self = StObject.set(x, "getData", value.toJsFn)
+    
+    inline def setResetImage(value: String => Any): Self = StObject.set(x, "resetImage", js.Any.fromFunction1(value))
+  }
 }
-

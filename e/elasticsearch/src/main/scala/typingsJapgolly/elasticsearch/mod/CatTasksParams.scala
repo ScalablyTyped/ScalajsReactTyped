@@ -1,56 +1,78 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CatTasksParams extends GenericParams {
+trait CatTasksParams
+  extends StObject
+     with GenericParams {
+  
   var actions: js.UndefOr[NameList] = js.undefined
+  
   var detailed: js.UndefOr[Boolean] = js.undefined
+  
   var format: String
+  
   var h: js.UndefOr[NameList] = js.undefined
+  
   var help: js.UndefOr[Boolean] = js.undefined
+  
   var nodeId: js.UndefOr[NameList] = js.undefined
+  
   var parentNode: js.UndefOr[String] = js.undefined
+  
   var parentTask: js.UndefOr[Double] = js.undefined
+  
   var v: js.UndefOr[Boolean] = js.undefined
 }
-
 object CatTasksParams {
-  @scala.inline
-  def apply(
-    format: String,
-    actions: NameList = null,
-    body: js.Any = null,
-    detailed: js.UndefOr[Boolean] = js.undefined,
-    filterPath: String | js.Array[String] = null,
-    h: NameList = null,
-    help: js.UndefOr[Boolean] = js.undefined,
-    ignore: Double | js.Array[Double] = null,
-    maxRetries: Int | Double = null,
-    method: String = null,
-    nodeId: NameList = null,
-    parentNode: String = null,
-    parentTask: Int | Double = null,
-    requestTimeout: Int | Double = null,
-    v: js.UndefOr[Boolean] = js.undefined
-  ): CatTasksParams = {
+  
+  inline def apply(format: String): CatTasksParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
-    if (actions != null) __obj.updateDynamic("actions")(actions.asInstanceOf[js.Any])
-    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
-    if (filterPath != null) __obj.updateDynamic("filterPath")(filterPath.asInstanceOf[js.Any])
-    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
-    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help.asInstanceOf[js.Any])
-    if (ignore != null) __obj.updateDynamic("ignore")(ignore.asInstanceOf[js.Any])
-    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (nodeId != null) __obj.updateDynamic("nodeId")(nodeId.asInstanceOf[js.Any])
-    if (parentNode != null) __obj.updateDynamic("parentNode")(parentNode.asInstanceOf[js.Any])
-    if (parentTask != null) __obj.updateDynamic("parentTask")(parentTask.asInstanceOf[js.Any])
-    if (requestTimeout != null) __obj.updateDynamic("requestTimeout")(requestTimeout.asInstanceOf[js.Any])
-    if (!js.isUndefined(v)) __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatTasksParams]
   }
+  
+  extension [Self <: CatTasksParams](x: Self) {
+    
+    inline def setActions(value: NameList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value*))
+    
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setH(value: NameList): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value*))
+    
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value*))
+    
+    inline def setParentNode(value: String): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    
+    inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+    
+    inline def setParentTask(value: Double): Self = StObject.set(x, "parentTask", value.asInstanceOf[js.Any])
+    
+    inline def setParentTaskUndefined: Self = StObject.set(x, "parentTask", js.undefined)
+    
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+  }
 }
-

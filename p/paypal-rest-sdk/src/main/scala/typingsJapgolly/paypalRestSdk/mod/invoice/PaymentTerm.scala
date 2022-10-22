@@ -1,21 +1,30 @@
 package typingsJapgolly.paypalRestSdk.mod.invoice
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentTerm extends js.Object {
+trait PaymentTerm extends StObject {
+  
   var due_date: js.UndefOr[String] = js.undefined
+  
   var term_type: js.UndefOr[String] = js.undefined
 }
-
 object PaymentTerm {
-  @scala.inline
-  def apply(due_date: String = null, term_type: String = null): PaymentTerm = {
+  
+  inline def apply(): PaymentTerm = {
     val __obj = js.Dynamic.literal()
-    if (due_date != null) __obj.updateDynamic("due_date")(due_date.asInstanceOf[js.Any])
-    if (term_type != null) __obj.updateDynamic("term_type")(term_type.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentTerm]
   }
+  
+  extension [Self <: PaymentTerm](x: Self) {
+    
+    inline def setDue_date(value: String): Self = StObject.set(x, "due_date", value.asInstanceOf[js.Any])
+    
+    inline def setDue_dateUndefined: Self = StObject.set(x, "due_date", js.undefined)
+    
+    inline def setTerm_type(value: String): Self = StObject.set(x, "term_type", value.asInstanceOf[js.Any])
+    
+    inline def setTerm_typeUndefined: Self = StObject.set(x, "term_type", js.undefined)
+  }
 }
-

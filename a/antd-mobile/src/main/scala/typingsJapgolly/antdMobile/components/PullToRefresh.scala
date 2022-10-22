@@ -1,59 +1,75 @@
 package typingsJapgolly.antdMobile.components
 
-import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobile.pullToRefreshMod.default
-import typingsJapgolly.react.mod.CSSProperties
-import typingsJapgolly.rmcPullToRefresh.propsTypeMod.Indicator
-import typingsJapgolly.rmcPullToRefresh.propsTypeMod.PropsType
-import typingsJapgolly.rmcPullToRefresh.rmcPullToRefreshStrings.down
-import typingsJapgolly.rmcPullToRefresh.rmcPullToRefreshStrings.up
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobile.esComponentsPullToRefreshPullToRefreshMod.PullStatus
+import typingsJapgolly.antdMobile.esComponentsPullToRefreshPullToRefreshMod.PullToRefreshProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullToRefresh {
-  def apply(
-    damping: Double,
-    direction: down | up,
-    distanceToRefresh: Double,
-    indicator: Indicator,
-    getScrollContainer: CallbackTo[Node],
-    onRefresh: Callback,
-    className: String = null,
-    prefixCls: String = null,
-    refreshing: js.UndefOr[Boolean] = js.undefined,
-    style: CSSProperties = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PropsType, default, Unit, PropsType] = {
-    val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], distanceToRefresh = distanceToRefresh.asInstanceOf[js.Any], indicator = indicator.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("getScrollContainer")(getScrollContainer.toJsFn)
-    __obj.updateDynamic("onRefresh")(onRefresh.toJsFn)
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (!js.isUndefined(refreshing)) __obj.updateDynamic("refreshing")(refreshing.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.rmcPullToRefresh.propsTypeMod.PropsType, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobile.pullToRefreshMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.rmcPullToRefresh.propsTypeMod.PropsType])(children: _*)
-  }
-  @JSImport("antd-mobile/lib/pull-to-refresh", JSImport.Default)
+  @JSImport("antd-mobile", "PullToRefresh")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def canReleaseText(value: VdomNode): this.type = set("canReleaseText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def canReleaseTextNull: this.type = set("canReleaseText", null)
+    
+    inline def canReleaseTextVarargs(value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | Element)*): this.type = set("canReleaseText", js.Array(value*))
+    
+    inline def canReleaseTextVdomElement(value: VdomElement): this.type = set("canReleaseText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def completeDelay(value: Double): this.type = set("completeDelay", value.asInstanceOf[js.Any])
+    
+    inline def completeText(value: VdomNode): this.type = set("completeText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def completeTextNull: this.type = set("completeText", null)
+    
+    inline def completeTextVarargs(value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | Element)*): this.type = set("completeText", js.Array(value*))
+    
+    inline def completeTextVdomElement(value: VdomElement): this.type = set("completeText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def headHeight(value: Double): this.type = set("headHeight", value.asInstanceOf[js.Any])
+    
+    inline def onRefresh(value: CallbackTo[js.Promise[Any]]): this.type = set("onRefresh", value.toJsFn)
+    
+    inline def pullingText(value: VdomNode): this.type = set("pullingText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def pullingTextNull: this.type = set("pullingText", null)
+    
+    inline def pullingTextVarargs(value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | Element)*): this.type = set("pullingText", js.Array(value*))
+    
+    inline def pullingTextVdomElement(value: VdomElement): this.type = set("pullingText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def refreshingText(value: VdomNode): this.type = set("refreshingText", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def refreshingTextNull: this.type = set("refreshingText", null)
+    
+    inline def refreshingTextVarargs(value: (japgolly.scalajs.react.facade.Empty | String | JsNumber | Element)*): this.type = set("refreshingText", js.Array(value*))
+    
+    inline def refreshingTextVdomElement(value: VdomElement): this.type = set("refreshingText", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def renderText(value: /* status */ PullStatus => Node): this.type = set("renderText", js.Any.fromFunction1(value))
+    
+    inline def threshold(value: Double): this.type = set("threshold", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: PullToRefresh.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PullToRefreshProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

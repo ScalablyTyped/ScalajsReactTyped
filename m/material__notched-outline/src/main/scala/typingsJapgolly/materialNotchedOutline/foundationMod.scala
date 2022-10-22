@@ -1,38 +1,33 @@
 package typingsJapgolly.materialNotchedOutline
 
+import typingsJapgolly.materialBase.foundationMod.MDCFoundation
 import typingsJapgolly.materialNotchedOutline.adapterMod.MDCNotchedOutlineAdapter
+import typingsJapgolly.materialNotchedOutline.anon.PartialMDCNotchedOutlineA
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material/notched-outline/foundation", JSImport.Namespace)
-@js.native
-object foundationMod extends js.Object {
+object foundationMod {
+  
+  @JSImport("@material/notched-outline/foundation", JSImport.Default)
   @js.native
-  trait MDCNotchedOutlineFoundation
-    extends typingsJapgolly.materialBase.foundationMod.default[MDCNotchedOutlineAdapter] {
+  open class default () extends MDCNotchedOutlineFoundation {
+    def this(adapter: PartialMDCNotchedOutlineA) = this()
+  }
+  
+  @JSImport("@material/notched-outline/foundation", "MDCNotchedOutlineFoundation")
+  @js.native
+  open class MDCNotchedOutlineFoundation () extends MDCFoundation[MDCNotchedOutlineAdapter] {
+    def this(adapter: PartialMDCNotchedOutlineA) = this()
+    
     /**
       * Removes notched outline selector to close the notch in the outline.
       */
     def closeNotch(): Unit = js.native
+    
     /**
-      * Adds the outline notched selector and updates the notch width
-      * calculated based off of notchWidth and isRtl.
+      * Adds the outline notched selector and updates the notch width calculated based off of notchWidth.
       */
     def notch(notchWidth: Double): Unit = js.native
-    def notch(notchWidth: Double, isRtl: Boolean): Unit = js.native
   }
-  
-  @js.native
-  class default () extends MDCNotchedOutlineFoundation
-  
-  /* static members */
-  @js.native
-  object default extends js.Object {
-    val cssClasses: typingsJapgolly.materialNotchedOutline.constantsMod.cssClasses = js.native
-    val defaultAdapter: MDCNotchedOutlineAdapter = js.native
-    val strings: typingsJapgolly.materialNotchedOutline.constantsMod.strings = js.native
-  }
-  
 }
-

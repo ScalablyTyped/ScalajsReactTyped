@@ -1,48 +1,63 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditModeValidationErrorEventUIParam extends js.Object {
+trait EditModeValidationErrorEventUIParam extends StObject {
+  
   /**
-  	 * Get or set the [action](ig.spreadsheet.SpreadsheetEditModeValidationErrorAction)  to take in response to the failed validation.
-  	 */
+    * Get or set the [action](ig.spreadsheet.SpreadsheetEditModeValidationErrorAction)  to take in response to the failed validation.
+    */
   var action: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Get a boolean indicating whether the cell is allowed to stay in edit mode.
-  	 */
+    * Get a boolean indicating whether the cell is allowed to stay in edit mode.
+    */
   var canStayInEditMode: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets the cell for which the control is in edit mode.
-  	 */
+    * Gets the cell for which the control is in edit mode.
+    */
   var cell: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets a reference to the spreadsheet widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the spreadsheet widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Get the [rule](ig.excel.DataValidationRule) which failed validation.
-  	 */
+    * Get the [rule](ig.excel.DataValidationRule) which failed validation.
+    */
   var validationRule: js.UndefOr[String] = js.undefined
 }
-
 object EditModeValidationErrorEventUIParam {
-  @scala.inline
-  def apply(
-    action: String = null,
-    canStayInEditMode: js.UndefOr[Boolean] = js.undefined,
-    cell: String = null,
-    owner: js.Any = null,
-    validationRule: String = null
-  ): EditModeValidationErrorEventUIParam = {
+  
+  inline def apply(): EditModeValidationErrorEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (!js.isUndefined(canStayInEditMode)) __obj.updateDynamic("canStayInEditMode")(canStayInEditMode.asInstanceOf[js.Any])
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (validationRule != null) __obj.updateDynamic("validationRule")(validationRule.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditModeValidationErrorEventUIParam]
   }
+  
+  extension [Self <: EditModeValidationErrorEventUIParam](x: Self) {
+    
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    
+    inline def setCanStayInEditMode(value: Boolean): Self = StObject.set(x, "canStayInEditMode", value.asInstanceOf[js.Any])
+    
+    inline def setCanStayInEditModeUndefined: Self = StObject.set(x, "canStayInEditMode", js.undefined)
+    
+    inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setValidationRule(value: String): Self = StObject.set(x, "validationRule", value.asInstanceOf[js.Any])
+    
+    inline def setValidationRuleUndefined: Self = StObject.set(x, "validationRule", js.undefined)
+  }
 }
-

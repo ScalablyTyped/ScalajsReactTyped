@@ -1,7 +1,7 @@
 
 # Scala.js typings for html-minifier
 
-Typings are for version 3.5
+Typings are for version 4.0
 
 ## Library description:
 Highly configurable, well-tested, JavaScript-based HTML minifier.
@@ -10,10 +10,10 @@ Highly configurable, well-tested, JavaScript-based HTML minifier.
 | ------------------ | :-------------: |
 | Full name          | html-minifier |
 | Keywords           | cli, compress, compressor, css, html, htmlmin, javascript, min, minification, minifier, minify, optimize, optimizer, pack, packer, parse, parser, uglifier, uglify |
-| # releases         | 16 |
-| # dependents       | 1258 |
-| # downloads        | 213664360 |
-| # stars            | 97 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1.6063766E7 |
+| # stars            | 4648.0 |
 
 ## Links
 - [Homepage](https://kangax.github.io/html-minifier/)

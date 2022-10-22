@@ -1,21 +1,30 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric because var conflicts: draggableId, mode. Inlined  */ trait DragStart extends BeforeCapture {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.reactBeautifulDnd.mod.DraggableRubric because var conflicts: draggableId, mode. Inlined source */ trait DragStart
+  extends StObject
+     with BeforeCapture {
+  
   var source: DraggableLocation
+  
   var `type`: TypeId
 }
-
 object DragStart {
-  @scala.inline
-  def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation, `type`: TypeId): DragStart = {
+  
+  inline def apply(draggableId: DraggableId, mode: MovementMode, source: DraggableLocation, `type`: TypeId): DragStart = {
     val __obj = js.Dynamic.literal(draggableId = draggableId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragStart]
   }
+  
+  extension [Self <: DragStart](x: Self) {
+    
+    inline def setSource(value: DraggableLocation): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: TypeId): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

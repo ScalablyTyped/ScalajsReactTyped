@@ -1,54 +1,52 @@
 package typingsJapgolly.reactAsync
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactAsyncStrings {
-  @js.native
-  sealed trait cancel extends js.Object
   
   @js.native
-  sealed trait fulfill extends js.Object
+  sealed trait cancel extends StObject
+  inline def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait fulfilled extends js.Object
+  sealed trait counter extends StObject
+  inline def counter: counter = "counter".asInstanceOf[counter]
   
   @js.native
-  sealed trait initial extends js.Object
+  sealed trait fulfill extends StObject
+  inline def fulfill: fulfill = "fulfill".asInstanceOf[fulfill]
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait fulfilled extends StObject
+  inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   
   @js.native
-  sealed trait reject extends js.Object
+  sealed trait initial extends StObject
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait rejected extends js.Object
+  sealed trait initialValue extends StObject
+  inline def initialValue: initialValue = "initialValue".asInstanceOf[initialValue]
   
   @js.native
-  sealed trait run extends js.Object
+  sealed trait pending extends StObject
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait promise extends StObject
+  inline def promise: promise = "promise".asInstanceOf[promise]
   
-  @scala.inline
-  def cancel: cancel = "cancel".asInstanceOf[cancel]
-  @scala.inline
-  def fulfill: fulfill = "fulfill".asInstanceOf[fulfill]
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def reject: reject = "reject".asInstanceOf[reject]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  @js.native
+  sealed trait reject extends StObject
+  inline def reject: reject = "reject".asInstanceOf[reject]
+  
+  @js.native
+  sealed trait rejected extends StObject
+  inline def rejected: rejected = "rejected".asInstanceOf[rejected]
+  
+  @js.native
+  sealed trait start extends StObject
+  inline def start: start = "start".asInstanceOf[start]
 }
-

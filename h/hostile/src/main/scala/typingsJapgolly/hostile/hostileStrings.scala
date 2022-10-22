@@ -1,19 +1,16 @@
 package typingsJapgolly.hostile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hostileStrings {
-  @js.native
-  sealed trait CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts extends js.Object
   
   @js.native
-  sealed trait SlashetcSlashhosts extends js.Object
+  sealed trait CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts extends StObject
+  inline def CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts: CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts = "C:/Windows/System32/drivers/etc/hosts".asInstanceOf[CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts]
   
-  @scala.inline
-  def CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts: CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts = "C:/Windows/System32/drivers/etc/hosts".asInstanceOf[CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts]
-  @scala.inline
-  def SlashetcSlashhosts: SlashetcSlashhosts = "/etc/hosts".asInstanceOf[SlashetcSlashhosts]
+  @js.native
+  sealed trait SlashetcSlashhosts extends StObject
+  inline def SlashetcSlashhosts: SlashetcSlashhosts = "/etc/hosts".asInstanceOf[SlashetcSlashhosts]
 }
-

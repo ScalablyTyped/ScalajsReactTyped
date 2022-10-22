@@ -1,8 +1,8 @@
 package typingsJapgolly.openlayers.mod.source
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request encoding. One of 'KVP', 'REST'.
@@ -11,14 +11,10 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.openlayers.openlayersStrings.KVP
   - typingsJapgolly.openlayers.openlayersStrings.REST
 */
-trait WMTSRequestEncoding extends js.Object
-
+trait WMTSRequestEncoding extends StObject
 object WMTSRequestEncoding {
-  @scala.inline
-  def KVP: typingsJapgolly.openlayers.openlayersStrings.KVP = this.cast("KVP")
-  @scala.inline
-  def REST: typingsJapgolly.openlayers.openlayersStrings.REST = this.cast("REST")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def KVP: typingsJapgolly.openlayers.openlayersStrings.KVP = "KVP".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.KVP]
+  
+  inline def REST: typingsJapgolly.openlayers.openlayersStrings.REST = "REST".asInstanceOf[typingsJapgolly.openlayers.openlayersStrings.REST]
 }
-

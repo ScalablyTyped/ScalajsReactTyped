@@ -1,15 +1,34 @@
 package typingsJapgolly.jsClipper.ClipperLib
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("ClipperLib.LocalMinima")
-@js.native
-class LocalMinima () extends js.Object {
-  var Y: Double = js.native
-  var leftBound: TEdge = js.native
-  var next: TEdge = js.native
-  var rightBound: TEdge = js.native
+trait LocalMinima extends StObject {
+  
+  var Y: Double
+  
+  var leftBound: TEdge
+  
+  var next: TEdge
+  
+  var rightBound: TEdge
 }
-
+object LocalMinima {
+  
+  inline def apply(Y: Double, leftBound: TEdge, next: TEdge, rightBound: TEdge): LocalMinima = {
+    val __obj = js.Dynamic.literal(Y = Y.asInstanceOf[js.Any], leftBound = leftBound.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], rightBound = rightBound.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocalMinima]
+  }
+  
+  extension [Self <: LocalMinima](x: Self) {
+    
+    inline def setLeftBound(value: TEdge): Self = StObject.set(x, "leftBound", value.asInstanceOf[js.Any])
+    
+    inline def setNext(value: TEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    
+    inline def setRightBound(value: TEdge): Self = StObject.set(x, "rightBound", value.asInstanceOf[js.Any])
+    
+    inline def setY(value: Double): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+  }
+}

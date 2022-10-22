@@ -1,35 +1,29 @@
 package typingsJapgolly.std.Intl
 
-import org.scalablytyped.runtime.Instantiable0
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PluralRules extends js.Object {
+trait PluralRules extends StObject {
+  
+  /* standard es2018.intl */
   def resolvedOptions(): ResolvedPluralRulesOptions
-  def select(n: Double): String
+  
+  /* standard es2018.intl */
+  def select(n: Double): LDMLPluralRule
 }
-
-@JSGlobal("Intl.PluralRules")
-@js.native
-object PluralRules
-  extends Instantiable0[PluralRules]
-     with Instantiable1[(/* locales */ js.Array[String]) | (/* locales */ String), PluralRules]
-     with Instantiable2[
-      (/* locales */ js.Array[String]) | (/* locales */ String), 
-      /* options */ PluralRulesOptions, 
-      PluralRules
-    ] {
-  def apply(): PluralRules = js.native
-  def apply(locales: String): PluralRules = js.native
-  def apply(locales: String, options: PluralRulesOptions): PluralRules = js.native
-  def apply(locales: js.Array[String]): PluralRules = js.native
-  def apply(locales: js.Array[String], options: PluralRulesOptions): PluralRules = js.native
-  def supportedLocalesOf(locales: String): js.Array[String] = js.native
-  def supportedLocalesOf(locales: String, options: PluralRulesOptions): js.Array[String] = js.native
-  def supportedLocalesOf(locales: js.Array[String]): js.Array[String] = js.native
-  def supportedLocalesOf(locales: js.Array[String], options: PluralRulesOptions): js.Array[String] = js.native
+object PluralRules {
+  
+  inline def apply(resolvedOptions: CallbackTo[ResolvedPluralRulesOptions], select: Double => LDMLPluralRule): PluralRules = {
+    val __obj = js.Dynamic.literal(resolvedOptions = resolvedOptions.toJsFn, select = js.Any.fromFunction1(select))
+    __obj.asInstanceOf[PluralRules]
+  }
+  
+  extension [Self <: PluralRules](x: Self) {
+    
+    inline def setResolvedOptions(value: CallbackTo[ResolvedPluralRulesOptions]): Self = StObject.set(x, "resolvedOptions", value.toJsFn)
+    
+    inline def setSelect(value: Double => LDMLPluralRule): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+  }
 }
-

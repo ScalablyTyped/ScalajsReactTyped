@@ -1,7 +1,13 @@
 package typingsJapgolly.mjmlReact.mod
 
-import typingsJapgolly.csstype.mod.BackgroundColorProperty
-import typingsJapgolly.csstype.mod.ColorProperty
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import japgolly.scalajs.react.vdom.VdomNode
+import typingsJapgolly.csstype.mod.Property.BackgroundColor
+import typingsJapgolly.csstype.mod.Property.Color
 import typingsJapgolly.mjmlReact.mjmlReactStrings.`facebook-noshare`
 import typingsJapgolly.mjmlReact.mjmlReactStrings.`google-noshare`
 import typingsJapgolly.mjmlReact.mjmlReactStrings.`linkedin-noshare`
@@ -16,8 +22,10 @@ import typingsJapgolly.mjmlReact.mjmlReactStrings.google
 import typingsJapgolly.mjmlReact.mjmlReactStrings.horizontal
 import typingsJapgolly.mjmlReact.mjmlReactStrings.instagram
 import typingsJapgolly.mjmlReact.mjmlReactStrings.linkedin
+import typingsJapgolly.mjmlReact.mjmlReactStrings.ltr
 import typingsJapgolly.mjmlReact.mjmlReactStrings.medium
 import typingsJapgolly.mjmlReact.mjmlReactStrings.pinterest
+import typingsJapgolly.mjmlReact.mjmlReactStrings.rtl
 import typingsJapgolly.mjmlReact.mjmlReactStrings.snapchat
 import typingsJapgolly.mjmlReact.mjmlReactStrings.soundcloud
 import typingsJapgolly.mjmlReact.mjmlReactStrings.tumblr
@@ -27,63 +35,131 @@ import typingsJapgolly.mjmlReact.mjmlReactStrings.vimeo
 import typingsJapgolly.mjmlReact.mjmlReactStrings.web
 import typingsJapgolly.mjmlReact.mjmlReactStrings.xing
 import typingsJapgolly.mjmlReact.mjmlReactStrings.youtube
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MjmlSocialElementProps extends js.Object {
+trait MjmlSocialElementProps extends StObject {
+  
   var align: js.UndefOr[String] = js.undefined
+  
   var alt: js.UndefOr[String] = js.undefined
-  var backgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
+  
+  var backgroundColor: js.UndefOr[BackgroundColor] = js.undefined
+  
   var borderRadius: js.UndefOr[String | Double] = js.undefined
-  var color: js.UndefOr[ColorProperty] = js.undefined
+  
+  var children: js.UndefOr[Node] = js.undefined
+  
+  var color: js.UndefOr[Color] = js.undefined
+  
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
+  
   var fontFamily: js.UndefOr[String] = js.undefined
+  
   var fontSize: js.UndefOr[String | Double] = js.undefined
+  
   var iconHeight: js.UndefOr[String] = js.undefined
+  
+  var iconPadding: js.UndefOr[String] = js.undefined
+  
   var iconSize: js.UndefOr[String] = js.undefined
+  
   var lineHeight: js.UndefOr[String | Double] = js.undefined
+  
   var mode: js.UndefOr[vertical | horizontal] = js.undefined
+  
   var name: js.UndefOr[
     facebook | `facebook-noshare` | twitter | `twitter-noshare` | google | `google-noshare` | pinterest | `pinterest-noshare` | linkedin | `linkedin-noshare` | tumblr | `tumblr-noshare` | xing | `xing-noshare` | github | instagram | web | snapchat | youtube | vimeo | medium | soundcloud | dribbble
   ] = js.undefined
+  
   var src: js.UndefOr[String] = js.undefined
+  
   var textDecoration: js.UndefOr[String] = js.undefined
 }
-
 object MjmlSocialElementProps {
-  @scala.inline
-  def apply(
-    align: String = null,
-    alt: String = null,
-    backgroundColor: BackgroundColorProperty = null,
-    borderRadius: String | Double = null,
-    color: ColorProperty = null,
-    fontFamily: String = null,
-    fontSize: String | Double = null,
-    iconHeight: String = null,
-    iconSize: String = null,
-    lineHeight: String | Double = null,
-    mode: vertical | horizontal = null,
-    name: facebook | `facebook-noshare` | twitter | `twitter-noshare` | google | `google-noshare` | pinterest | `pinterest-noshare` | linkedin | `linkedin-noshare` | tumblr | `tumblr-noshare` | xing | `xing-noshare` | github | instagram | web | snapchat | youtube | vimeo | medium | soundcloud | dribbble = null,
-    src: String = null,
-    textDecoration: String = null
-  ): MjmlSocialElementProps = {
+  
+  inline def apply(): MjmlSocialElementProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (alt != null) __obj.updateDynamic("alt")(alt.asInstanceOf[js.Any])
-    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
-    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
-    if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
-    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
-    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (src != null) __obj.updateDynamic("src")(src.asInstanceOf[js.Any])
-    if (textDecoration != null) __obj.updateDynamic("textDecoration")(textDecoration.asInstanceOf[js.Any])
     __obj.asInstanceOf[MjmlSocialElementProps]
   }
+  
+  extension [Self <: MjmlSocialElementProps](x: Self) {
+    
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    
+    inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    
+    inline def setBorderRadius(value: String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    
+    inline def setChildren(value: VdomNode): Self = StObject.set(x, "children", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
+    
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    
+    inline def setChildrenVarargs(value: (Empty | String | JsNumber | Element)*): Self = StObject.set(x, "children", js.Array(value*))
+    
+    inline def setChildrenVdomElement(value: VdomElement): Self = StObject.set(x, "children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setDirection(value: ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    
+    inline def setFontSize(value: String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    
+    inline def setIconHeight(value: String): Self = StObject.set(x, "iconHeight", value.asInstanceOf[js.Any])
+    
+    inline def setIconHeightUndefined: Self = StObject.set(x, "iconHeight", js.undefined)
+    
+    inline def setIconPadding(value: String): Self = StObject.set(x, "iconPadding", value.asInstanceOf[js.Any])
+    
+    inline def setIconPaddingUndefined: Self = StObject.set(x, "iconPadding", js.undefined)
+    
+    inline def setIconSize(value: String): Self = StObject.set(x, "iconSize", value.asInstanceOf[js.Any])
+    
+    inline def setIconSizeUndefined: Self = StObject.set(x, "iconSize", js.undefined)
+    
+    inline def setLineHeight(value: String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+    
+    inline def setMode(value: vertical | horizontal): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setName(
+      value: facebook | `facebook-noshare` | twitter | `twitter-noshare` | google | `google-noshare` | pinterest | `pinterest-noshare` | linkedin | `linkedin-noshare` | tumblr | `tumblr-noshare` | xing | `xing-noshare` | github | instagram | web | snapchat | youtube | vimeo | medium | soundcloud | dribbble
+    ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    
+    inline def setTextDecoration(value: String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+  }
 }
-

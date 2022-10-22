@@ -1,59 +1,92 @@
 package typingsJapgolly.postcss.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.postcss.PickProcessOptionsmapfrom
+import typingsJapgolly.postcss.anon.PickProcessOptionsmapfrom
+import typingsJapgolly.postcss.anon.ToString
+import typingsJapgolly.postcss.libNodeMod.AnyNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ProcessOptions extends js.Object {
+trait ProcessOptions extends StObject {
+  
   /**
-    * The path of the CSS source file. You should always set "from", because it is
-    * used in source map generation and syntax error messages.
+    * The path of the CSS source file. You should always set `from`,
+    * because it is used in source map generation and syntax error messages.
     */
   var from: js.UndefOr[String] = js.undefined
+  
   /**
     * Source map options
     */
   var map: js.UndefOr[SourceMapOptions | Boolean] = js.undefined
+  
   /**
     * Function to generate AST by string.
     */
-  var parser: js.UndefOr[Parser] = js.undefined
+  var parser: js.UndefOr[
+    Syntax | (Parser[
+      typingsJapgolly.postcss.libRootMod.default | typingsJapgolly.postcss.libDocumentMod.default
+    ])
+  ] = js.undefined
+  
   /**
     * Class to generate string by AST.
     */
-  var stringifier: js.UndefOr[Stringifier] = js.undefined
+  var stringifier: js.UndefOr[Syntax | Stringifier] = js.undefined
+  
   /**
     * Object with parse and stringify.
     */
   var syntax: js.UndefOr[Syntax] = js.undefined
+  
   /**
-    * The path where you'll put the output CSS file. You should always set "to"
+    * The path where you'll put the output CSS file. You should always set `to`
     * to generate correct source maps.
     */
   var to: js.UndefOr[String] = js.undefined
 }
-
 object ProcessOptions {
-  @scala.inline
-  def apply(
-    from: String = null,
-    map: SourceMapOptions | Boolean = null,
-    parser: (/* css */ ParserInput, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => CallbackTo[Root_] = null,
-    stringifier: (/* node */ Node, /* builder */ Builder) => Callback = null,
-    syntax: Syntax = null,
-    to: String = null
-  ): ProcessOptions = {
+  
+  inline def apply(): ProcessOptions = {
     val __obj = js.Dynamic.literal()
-    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
-    if (map != null) __obj.updateDynamic("map")(map.asInstanceOf[js.Any])
-    if (parser != null) __obj.updateDynamic("parser")(js.Any.fromFunction2((t0: /* css */ typingsJapgolly.postcss.mod.ParserInput, t1: /* opts */ js.UndefOr[typingsJapgolly.postcss.PickProcessOptionsmapfrom]) => parser(t0, t1).runNow()))
-    if (stringifier != null) __obj.updateDynamic("stringifier")(js.Any.fromFunction2((t0: /* node */ typingsJapgolly.postcss.mod.Node, t1: /* builder */ typingsJapgolly.postcss.mod.Builder) => stringifier(t0, t1).runNow()))
-    if (syntax != null) __obj.updateDynamic("syntax")(syntax.asInstanceOf[js.Any])
-    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessOptions]
   }
+  
+  extension [Self <: ProcessOptions](x: Self) {
+    
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    
+    inline def setMap(value: SourceMapOptions | Boolean): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    
+    inline def setParser(
+      value: Syntax | (Parser[
+          typingsJapgolly.postcss.libRootMod.default | typingsJapgolly.postcss.libDocumentMod.default
+        ])
+    ): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+    
+    inline def setParserFunction2(
+      value: (/* css */ String | ToString, /* opts */ js.UndefOr[PickProcessOptionsmapfrom]) => typingsJapgolly.postcss.libRootMod.default | typingsJapgolly.postcss.libDocumentMod.default
+    ): Self = StObject.set(x, "parser", js.Any.fromFunction2(value))
+    
+    inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+    
+    inline def setStringifier(value: Syntax | Stringifier): Self = StObject.set(x, "stringifier", value.asInstanceOf[js.Any])
+    
+    inline def setStringifierFunction2(value: (/* node */ AnyNode, /* builder */ Builder) => Callback): Self = StObject.set(x, "stringifier", js.Any.fromFunction2((t0: /* node */ AnyNode, t1: /* builder */ Builder) => (value(t0, t1)).runNow()))
+    
+    inline def setStringifierUndefined: Self = StObject.set(x, "stringifier", js.undefined)
+    
+    inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+    
+    inline def setSyntaxUndefined: Self = StObject.set(x, "syntax", js.undefined)
+    
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+  }
 }
-

@@ -1,14 +1,16 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnimationOptions extends js.Object {
+trait AnimationOptions extends StObject {
+  
   /**
     * The duration (in milliseconds).
     */
   var duration: Double
+  
   /**
     * The easing function.
     *
@@ -19,13 +21,17 @@ trait AnimationOptions extends js.Object {
     */
   var easingFunction: EasingFunction
 }
-
 object AnimationOptions {
-  @scala.inline
-  def apply(duration: Double, easingFunction: EasingFunction): AnimationOptions = {
-    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easingFunction = easingFunction.asInstanceOf[js.Any])
   
+  inline def apply(duration: Double, easingFunction: EasingFunction): AnimationOptions = {
+    val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], easingFunction = easingFunction.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationOptions]
   }
+  
+  extension [Self <: AnimationOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setEasingFunction(value: EasingFunction): Self = StObject.set(x, "easingFunction", value.asInstanceOf[js.Any])
+  }
 }
-

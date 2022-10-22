@@ -2,85 +2,98 @@ package typingsJapgolly.antDesignPro.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.antDesignPro.antDesignProStrings.bottomCenter
 import typingsJapgolly.antDesignPro.antDesignProStrings.bottomLeft
 import typingsJapgolly.antDesignPro.antDesignProStrings.bottomRight
 import typingsJapgolly.antDesignPro.antDesignProStrings.topCenter
 import typingsJapgolly.antDesignPro.antDesignProStrings.topLeft
 import typingsJapgolly.antDesignPro.antDesignProStrings.topRight
-import typingsJapgolly.antDesignPro.headerDropdownMod.HeaderDropdownProps
-import typingsJapgolly.antDesignPro.headerDropdownMod.OverlayFunc
-import typingsJapgolly.antDesignPro.headerDropdownMod.default
+import typingsJapgolly.antDesignPro.libHeaderDropdownMod.HeaderDropdownProps
+import typingsJapgolly.antDesignPro.libHeaderDropdownMod.OverlayFunc
 import typingsJapgolly.antd.antdStrings.click
 import typingsJapgolly.antd.antdStrings.contextMenu
 import typingsJapgolly.antd.antdStrings.hover
-import typingsJapgolly.antd.dropdownDropdownMod.Align
+import typingsJapgolly.antd.libDropdownDropdownMod.Align
+import typingsJapgolly.antd.libDropdownDropdownMod.DropdownArrowOptions
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HeaderDropdown {
-  def apply(
-    align: Align = null,
-    className: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    forceRender: js.UndefOr[Boolean] = js.undefined,
-    getPopupContainer: /* triggerNode */ HTMLElement => CallbackTo[HTMLElement] = null,
-    mouseEnterDelay: Int | Double = null,
-    mouseLeaveDelay: Int | Double = null,
-    onVisibleChange: /* visible */ Boolean => Callback = null,
-    openClassName: String = null,
-    overlay: Node | OverlayFunc = null,
-    overlayClassName: String = null,
-    overlayStyle: CSSProperties = null,
-    placement: bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter = null,
-    prefixCls: String = null,
-    transitionName: String = null,
-    trigger: js.Array[click | hover | contextMenu] = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HeaderDropdownProps, default, Unit, HeaderDropdownProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender.asInstanceOf[js.Any])
-    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(js.Any.fromFunction1((t0: /* triggerNode */ org.scalajs.dom.raw.HTMLElement) => getPopupContainer(t0).runNow()))
-    if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
-    if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
-    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(js.Any.fromFunction1((t0: /* visible */ scala.Boolean) => onVisibleChange(t0).runNow()))
-    if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName.asInstanceOf[js.Any])
-    if (overlay != null) __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
-    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
-    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle.asInstanceOf[js.Any])
-    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName.asInstanceOf[js.Any])
-    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antDesignPro.headerDropdownMod.HeaderDropdownProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antDesignPro.headerDropdownMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antDesignPro.headerDropdownMod.HeaderDropdownProps])(children: _*)
-  }
-  @JSImport("ant-design-pro/lib/HeaderDropdown", JSImport.Default)
+  @JSImport("ant-design-pro", "HeaderDropdown")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.antDesignPro.mod.HeaderDropdown] {
+    
+    inline def align(value: Align): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def arrow(value: Boolean | DropdownArrowOptions): this.type = set("arrow", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def destroyPopupOnHide(value: Boolean): this.type = set("destroyPopupOnHide", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def forceRender(value: Boolean): this.type = set("forceRender", value.asInstanceOf[js.Any])
+    
+    inline def getPopupContainer(value: /* triggerNode */ HTMLElement => HTMLElement): this.type = set("getPopupContainer", js.Any.fromFunction1(value))
+    
+    inline def mouseEnterDelay(value: Double): this.type = set("mouseEnterDelay", value.asInstanceOf[js.Any])
+    
+    inline def mouseLeaveDelay(value: Double): this.type = set("mouseLeaveDelay", value.asInstanceOf[js.Any])
+    
+    inline def onOpenChange(value: /* open */ Boolean => Callback): this.type = set("onOpenChange", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+    
+    inline def onVisibleChange(value: /* visible */ Boolean => Callback): this.type = set("onVisibleChange", js.Any.fromFunction1((t0: /* visible */ Boolean) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def openClassName(value: String): this.type = set("openClassName", value.asInstanceOf[js.Any])
+    
+    inline def overlay(value: Node | OverlayFunc): this.type = set("overlay", value.asInstanceOf[js.Any])
+    
+    inline def overlayCallbackTo(value: CallbackTo[Node]): this.type = set("overlay", value.toJsFn)
+    
+    inline def overlayClassName(value: String): this.type = set("overlayClassName", value.asInstanceOf[js.Any])
+    
+    inline def overlayNull: this.type = set("overlay", null)
+    
+    inline def overlayStyle(value: CSSProperties): this.type = set("overlayStyle", value.asInstanceOf[js.Any])
+    
+    inline def overlayVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("overlay", js.Array(value*))
+    
+    inline def overlayVdomElement(value: VdomElement): this.type = set("overlay", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def placement(value: bottomLeft | bottomRight | topLeft | topCenter | topRight | bottomCenter): this.type = set("placement", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def transitionName(value: String): this.type = set("transitionName", value.asInstanceOf[js.Any])
+    
+    inline def trigger(value: js.Array[click | hover | contextMenu]): this.type = set("trigger", value.asInstanceOf[js.Any])
+    
+    inline def triggerVarargs(value: (click | hover | contextMenu)*): this.type = set("trigger", js.Array(value*))
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: HeaderDropdown.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: HeaderDropdownProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

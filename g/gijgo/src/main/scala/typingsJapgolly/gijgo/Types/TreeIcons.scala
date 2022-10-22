@@ -1,22 +1,31 @@
 package typingsJapgolly.gijgo.Types
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tree
-trait TreeIcons extends js.Object {
+trait TreeIcons extends StObject {
+  
   var collapse: js.UndefOr[String] = js.undefined
+  
   var expand: js.UndefOr[String] = js.undefined
 }
-
 object TreeIcons {
-  @scala.inline
-  def apply(collapse: String = null, expand: String = null): TreeIcons = {
+  
+  inline def apply(): TreeIcons = {
     val __obj = js.Dynamic.literal()
-    if (collapse != null) __obj.updateDynamic("collapse")(collapse.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeIcons]
   }
+  
+  extension [Self <: TreeIcons](x: Self) {
+    
+    inline def setCollapse(value: String): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
+    
+    inline def setCollapseUndefined: Self = StObject.set(x, "collapse", js.undefined)
+    
+    inline def setExpand(value: String): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+  }
 }
-

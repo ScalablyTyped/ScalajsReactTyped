@@ -1,43 +1,24 @@
 package typingsJapgolly.reactDataGrid.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.EditorBaseProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* This component has complicated props, you'll have to assemble `props` yourself using js.Dynamic.literal(...) or similar. */
+/* The props of this component has an unsupported shape. You can use `set` manually to use it, but with no compiler support :/ . Couldn't find props for P & typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.EditorBaseProps because: IArray(Could't extract props from P because couldn't resolve ClassTree.) */
 object EditorBase {
-  def apply[P, S](
-    props: P with EditorBaseProps with js.Object,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    P with EditorBaseProps with js.Object, 
-    typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase[P, S], 
-    Unit, 
-    P with EditorBaseProps with js.Object
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      js.Dynamic.global.Object.assign(__obj, props)
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
+  def apply[P, S](p: P & EditorBaseProps): Builder[P, S] = new Builder[P, S](js.Array(this.component, p.asInstanceOf[js.Any]))
   
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  P with typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.EditorBaseProps with js.Object, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase[P, S]](this.componentImport)
-    f(__obj.asInstanceOf[P with typingsJapgolly.reactDataGrid.AdazzleReactDataGrid.EditorBaseProps with js.Object])(children: _*)
-  }
-  @JSGlobal("AdazzleReactDataGrid.ReactDataGrid.editors.EditorBase")
+  @JSImport("react-data-grid", "editors.EditorBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[P, S] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactDataGrid.mod.editors.EditorBase[P, S]]
+  
+  implicit def make[P, S](companion: EditorBase.type): Builder[P, S] = new Builder[P, S](js.Array(this.component, js.Dictionary.empty))()
 }
-

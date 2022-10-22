@@ -1,49 +1,79 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnFilterable extends js.Object {
+trait GridColumnFilterable extends StObject {
+  
   var cell: js.UndefOr[GridColumnFilterableCell] = js.undefined
+  
   var checkAll: js.UndefOr[Boolean] = js.undefined
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
+  
+  var dataSource: js.UndefOr[Any | DataSource] = js.undefined
+  
   var extra: js.UndefOr[Boolean] = js.undefined
+  
   var ignoreCase: js.UndefOr[Boolean] = js.undefined
+  
   var itemTemplate: js.UndefOr[js.Function] = js.undefined
+  
   var multi: js.UndefOr[Boolean] = js.undefined
-  var operators: js.UndefOr[js.Any] = js.undefined
+  
+  var operators: js.UndefOr[Any] = js.undefined
+  
   var search: js.UndefOr[Boolean] = js.undefined
+  
   var ui: js.UndefOr[String | js.Function] = js.undefined
 }
-
 object GridColumnFilterable {
-  @scala.inline
-  def apply(
-    cell: GridColumnFilterableCell = null,
-    checkAll: js.UndefOr[Boolean] = js.undefined,
-    dataSource: js.Any | DataSource = null,
-    extra: js.UndefOr[Boolean] = js.undefined,
-    ignoreCase: js.UndefOr[Boolean] = js.undefined,
-    itemTemplate: js.Function = null,
-    multi: js.UndefOr[Boolean] = js.undefined,
-    operators: js.Any = null,
-    search: js.UndefOr[Boolean] = js.undefined,
-    ui: String | js.Function = null
-  ): GridColumnFilterable = {
+  
+  inline def apply(): GridColumnFilterable = {
     val __obj = js.Dynamic.literal()
-    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
-    if (!js.isUndefined(checkAll)) __obj.updateDynamic("checkAll")(checkAll.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (!js.isUndefined(extra)) __obj.updateDynamic("extra")(extra.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase.asInstanceOf[js.Any])
-    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi.asInstanceOf[js.Any])
-    if (operators != null) __obj.updateDynamic("operators")(operators.asInstanceOf[js.Any])
-    if (!js.isUndefined(search)) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
-    if (ui != null) __obj.updateDynamic("ui")(ui.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnFilterable]
   }
+  
+  extension [Self <: GridColumnFilterable](x: Self) {
+    
+    inline def setCell(value: GridColumnFilterableCell): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    
+    inline def setCheckAll(value: Boolean): Self = StObject.set(x, "checkAll", value.asInstanceOf[js.Any])
+    
+    inline def setCheckAllUndefined: Self = StObject.set(x, "checkAll", js.undefined)
+    
+    inline def setDataSource(value: Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    
+    inline def setItemTemplate(value: js.Function): Self = StObject.set(x, "itemTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
+    
+    inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+    
+    inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+    
+    inline def setOperators(value: Any): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    
+    inline def setOperatorsUndefined: Self = StObject.set(x, "operators", js.undefined)
+    
+    inline def setSearch(value: Boolean): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+    
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    
+    inline def setUi(value: String | js.Function): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+    
+    inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+  }
 }
-

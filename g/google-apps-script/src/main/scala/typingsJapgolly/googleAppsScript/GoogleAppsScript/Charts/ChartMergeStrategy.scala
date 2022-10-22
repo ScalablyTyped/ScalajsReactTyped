@@ -1,32 +1,25 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChartMergeStrategy extends js.Object
-
+sealed trait ChartMergeStrategy extends StObject
 /**
   * An enumeration of how multiple ranges in the source are expressed in a chart.
   */
 @JSGlobal("GoogleAppsScript.Charts.ChartMergeStrategy")
 @js.native
-object ChartMergeStrategy extends js.Object {
-  @js.native
-  sealed trait MERGE_COLUMNS extends ChartMergeStrategy
+object ChartMergeStrategy extends StObject {
   
   @js.native
-  sealed trait MERGE_ROWS extends ChartMergeStrategy
+  sealed trait MERGE_COLUMNS
+    extends StObject
+       with ChartMergeStrategy
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChartMergeStrategy with Double] = js.native
-  /* 0 */ @js.native
-  object MERGE_COLUMNS extends TopLevel[MERGE_COLUMNS with Double]
-  
-  /* 1 */ @js.native
-  object MERGE_ROWS extends TopLevel[MERGE_ROWS with Double]
-  
+  @js.native
+  sealed trait MERGE_ROWS
+    extends StObject
+       with ChartMergeStrategy
 }
-

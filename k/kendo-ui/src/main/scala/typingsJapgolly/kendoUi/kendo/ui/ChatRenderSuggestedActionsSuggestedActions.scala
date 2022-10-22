@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChatRenderSuggestedActionsSuggestedActions extends js.Object {
+trait ChatRenderSuggestedActionsSuggestedActions extends StObject {
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object ChatRenderSuggestedActionsSuggestedActions {
-  @scala.inline
-  def apply(title: String = null, value: String = null): ChatRenderSuggestedActionsSuggestedActions = {
+  
+  inline def apply(): ChatRenderSuggestedActionsSuggestedActions = {
     val __obj = js.Dynamic.literal()
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRenderSuggestedActionsSuggestedActions]
   }
+  
+  extension [Self <: ChatRenderSuggestedActionsSuggestedActions](x: Self) {
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

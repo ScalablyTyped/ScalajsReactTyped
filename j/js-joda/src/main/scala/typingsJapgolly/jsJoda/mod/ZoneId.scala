@@ -1,28 +1,49 @@
 package typingsJapgolly.jsJoda.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("js-joda", "ZoneId")
+/* note: abstract class */ @JSImport("js-joda", "ZoneId")
 @js.native
-abstract class ZoneId () extends js.Object {
-  def equals(other: js.Any): Boolean = js.native
+open class ZoneId () extends StObject {
+  
   def id(): String = js.native
+  
   def normalized(): ZoneId = js.native
+  
   def rules(): ZoneRules = js.native
 }
-
-/* static members */
-@JSImport("js-joda", "ZoneId")
-@js.native
-object ZoneId extends js.Object {
-  var SYSTEM: ZoneId = js.native
-  var UTC: ZoneId = js.native
-  def from(temporal: TemporalAccessor): ZoneId = js.native
-  def getAvailableZoneIds(): js.Array[String] = js.native
-  def of(zoneId: String): ZoneId = js.native
-  def ofOffset(prefix: String, offset: ZoneOffset): ZoneId = js.native
-  def systemDefault(): ZoneId = js.native
+object ZoneId {
+  
+  @JSImport("js-joda", "ZoneId")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("js-joda", "ZoneId.SYSTEM")
+  @js.native
+  def SYSTEM: ZoneId = js.native
+  inline def SYSTEM_=(x: ZoneId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SYSTEM")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("js-joda", "ZoneId.UTC")
+  @js.native
+  def UTC: ZoneId = js.native
+  inline def UTC_=(x: ZoneId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  inline def from(temporal: TemporalAccessor): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
+  
+  /* static member */
+  inline def getAvailableZoneIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableZoneIds")().asInstanceOf[js.Array[String]]
+  
+  /* static member */
+  inline def of(zoneId: String): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
+  
+  /* static member */
+  inline def ofOffset(prefix: String, offset: ZoneOffset): ZoneId = (^.asInstanceOf[js.Dynamic].applyDynamic("ofOffset")(prefix.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[ZoneId]
+  
+  /* static member */
+  inline def systemDefault(): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("systemDefault")().asInstanceOf[ZoneId]
 }
-

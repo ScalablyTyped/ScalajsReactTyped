@@ -10,10 +10,10 @@ Like duplexer but using streams3
 | ------------------ | :-------------: |
 | Full name          | duplexer2 |
 | Keywords           | duplex, duplexer, stream, stream3, join, combine |
-| # releases         | 0 |
-| # dependents       | 164 |
-| # downloads        | 158116031 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2.6912151333333332E7 |
+| # stars            | 71.0 |
 
 ## Links
 - [Homepage](https://github.com/deoxxa/duplexer2#readme)

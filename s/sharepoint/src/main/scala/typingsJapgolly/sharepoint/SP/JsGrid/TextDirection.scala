@@ -1,37 +1,29 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait TextDirection extends js.Object
-
+sealed trait TextDirection extends StObject
 @JSGlobal("SP.JsGrid.TextDirection")
 @js.native
-object TextDirection extends js.Object {
-   // 0,
-  @js.native
-  sealed trait Default extends TextDirection
+object TextDirection extends StObject {
   
   @js.native
-  sealed trait LeftToRight extends TextDirection
+  sealed trait Default
+    extends StObject
+       with TextDirection
   
-   // 1,
+  // 1,
   @js.native
-  sealed trait RightToLeft extends TextDirection
+  sealed trait LeftToRight
+    extends StObject
+       with TextDirection
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TextDirection with Double] = js.native
-  /* 0 */ @js.native
-  object Default extends TopLevel[Default with Double]
-  
-  /* 2 */ @js.native
-  object LeftToRight extends TopLevel[LeftToRight with Double]
-  
-  /* 1 */ @js.native
-  object RightToLeft extends TopLevel[RightToLeft with Double]
-  
+  // 0,
+  @js.native
+  sealed trait RightToLeft
+    extends StObject
+       with TextDirection
 }
-

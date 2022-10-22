@@ -1,22 +1,26 @@
 package typingsJapgolly.qlik.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InitialPropertiesListobject
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[Any]
      with InitialProperties {
+  
   var qListobjectDef: ListobjectDef
 }
-
 object InitialPropertiesListobject {
-  @scala.inline
-  def apply(qListobjectDef: ListobjectDef, StringDictionary: /* key */ StringDictionary[js.Any] = null): InitialPropertiesListobject = {
+  
+  inline def apply(qListobjectDef: ListobjectDef): InitialPropertiesListobject = {
     val __obj = js.Dynamic.literal(qListobjectDef = qListobjectDef.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitialPropertiesListobject]
   }
+  
+  extension [Self <: InitialPropertiesListobject](x: Self) {
+    
+    inline def setQListobjectDef(value: ListobjectDef): Self = StObject.set(x, "qListobjectDef", value.asInstanceOf[js.Any])
+  }
 }
-

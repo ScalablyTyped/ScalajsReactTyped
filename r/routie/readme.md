@@ -10,10 +10,10 @@ A route map utility for express.
 | ------------------ | :-------------: |
 | Full name          | routie |
 | Keywords           | route, map, express, compound |
-| # releases         | 1 |
-| # dependents       | 1 |
-| # downloads        | 215 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 27.0 |
+| # stars            | 0.0 |
 
 ## Links
 - [Homepage](https://github.com/taoyuan/routie)

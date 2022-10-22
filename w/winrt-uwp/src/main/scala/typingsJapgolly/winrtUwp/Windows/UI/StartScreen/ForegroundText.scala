@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.UI.StartScreen
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ForegroundText extends js.Object
-
+sealed trait ForegroundText extends StObject
 /** Specifies the color of the tile's foreground text. */
 @JSGlobal("Windows.UI.StartScreen.ForegroundText")
 @js.native
-object ForegroundText extends js.Object {
+object ForegroundText extends StObject {
+  
   /** A Windows-specified default dark text color. */
   @js.native
-  sealed trait dark extends ForegroundText
+  sealed trait dark
+    extends StObject
+       with ForegroundText
   
   /** A Windows-specified default light text color. */
   @js.native
-  sealed trait light extends ForegroundText
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ForegroundText with Double] = js.native
-  /* 0 */ @js.native
-  object dark extends TopLevel[dark with Double]
-  
-  /* 1 */ @js.native
-  object light extends TopLevel[light with Double]
-  
+  sealed trait light
+    extends StObject
+       with ForegroundText
 }
-

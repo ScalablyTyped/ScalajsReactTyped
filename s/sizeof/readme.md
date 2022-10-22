@@ -11,9 +11,9 @@ Calculates the size of Javascript object.
 | Full name          | sizeof |
 | Keywords           | size, sizeof, js, object, array, memory |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 35077 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 14363.666666666666 |
+| # stars            | 12.0 |
 
 ## Links
 - [Homepage](https://github.com/lyroyce/sizeof)

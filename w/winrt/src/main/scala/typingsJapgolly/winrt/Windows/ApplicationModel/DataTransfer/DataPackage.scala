@@ -1,10 +1,10 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.DataTransfer
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.ApplicationModel.DataTransfer.DataPackage")
 @js.native
-class DataPackage () extends IDataPackage
-
+trait DataPackage
+  extends StObject
+     with IDataPackage

@@ -1,70 +1,63 @@
 package typingsJapgolly.officeUiFabricReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactKeyboardEventFrom
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
-import typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangle
-import typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps
-import typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleStyleProps
-import typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleStyles
-import typingsJapgolly.officeUiFabricReact.interfacesMod.IColor
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import org.scalajs.dom.Element
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorRectangleColorRectangleDottypesMod.IColorRectangle
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorRectangleColorRectangleDottypesMod.IColorRectangleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorRectangleColorRectangleDottypesMod.IColorRectangleStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsColorPickerColorRectangleColorRectangleDottypesMod.IColorRectangleStyles
+import typingsJapgolly.officeUiFabricReact.libUtilitiesColorInterfacesMod.IColor
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ColorRectangle {
-  def apply(
-    color: IColor,
-    ariaDescription: String = null,
-    ariaLabel: String = null,
-    ariaValueFormat: String = null,
-    className: String = null,
-    componentRef: IRefObject[IColorRectangle] = null,
-    minSize: Int | Double = null,
-    onChange: (/* ev */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], /* color */ IColor) => Callback = null,
-    styles: IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    IColorRectangleProps, 
-    MountedWithRawType[IColorRectangleProps, js.Object, RawMounted[IColorRectangleProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
   
-      if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (ariaValueFormat != null) __obj.updateDynamic("ariaValueFormat")(ariaValueFormat.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* ev */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.Element] | japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.Element], t1: /* color */ typingsJapgolly.officeUiFabricReact.interfacesMod.IColor) => onChange(t0, t1).runNow()))
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.colorRectangleTypesMod.IColorRectangleProps])(children: _*)
+  inline def apply(color: IColor): Builder = {
+    val __props = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IColorRectangleProps]))
   }
+  
   @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle", "ColorRectangle")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def ariaDescription(value: String): this.type = set("ariaDescription", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaValueFormat(value: String): this.type = set("ariaValueFormat", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IColorRectangle]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IColorRectangle | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IColorRectangle | Null) => value(t0).runNow()))
+    
+    inline def minSize(value: Double): this.type = set("minSize", value.asInstanceOf[js.Any])
+    
+    inline def onChange(
+      value: (/* ev */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], /* color */ IColor) => Callback
+    ): this.type = set("onChange", js.Any.fromFunction2((t0: /* ev */ ReactMouseEventFrom[Element] | ReactKeyboardEventFrom[Element], t1: /* color */ IColor) => (value(t0, t1)).runNow()))
+    
+    inline def styles(value: IStyleFunctionOrObject[IColorRectangleStyleProps, IColorRectangleStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IColorRectangleStyleProps => DeepPartial[IColorRectangleStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IColorRectangleProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

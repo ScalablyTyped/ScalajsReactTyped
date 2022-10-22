@@ -1,33 +1,51 @@
 package typingsJapgolly.chromeApps.chrome.fileSystemProvider
 
-import typingsJapgolly.chromeApps.AnonCHANGED
+import typingsJapgolly.chromeApps.anon.DELETED
 import typingsJapgolly.chromeApps.chrome.ToStringLiteral
 import typingsJapgolly.chromeApps.chromeAppsStrings.CHANGED
-import typingsJapgolly.chromeApps.chromeAppsStrings.DELETED
-import typingsJapgolly.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NotificationChange extends js.Object {
+trait NotificationChange extends StObject {
+  
   /**
     * The type of the change which happened to the entry.
     * @see ChangeType
     */
-  var changeType: ToStringLiteral[AnonCHANGED, String, Exclude[String, CHANGED | DELETED]]
+  var changeType: ToStringLiteral[
+    DELETED, 
+    /* keyof chrome-apps.anon.DELETED */ CHANGED | typingsJapgolly.chromeApps.chromeAppsStrings.DELETED, 
+    /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
+  ]
+  
   /** The path of the changed entry. */
   var entryPath: String
 }
-
 object NotificationChange {
-  @scala.inline
-  def apply(
-    changeType: ToStringLiteral[AnonCHANGED, String, Exclude[String, CHANGED | DELETED]],
+  
+  inline def apply(
+    changeType: ToStringLiteral[
+      DELETED, 
+      /* keyof chrome-apps.anon.DELETED */ CHANGED | typingsJapgolly.chromeApps.chromeAppsStrings.DELETED, 
+      /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
+    ],
     entryPath: String
   ): NotificationChange = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], entryPath = entryPath.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[NotificationChange]
   }
+  
+  extension [Self <: NotificationChange](x: Self) {
+    
+    inline def setChangeType(
+      value: ToStringLiteral[
+          DELETED, 
+          /* keyof chrome-apps.anon.DELETED */ CHANGED | typingsJapgolly.chromeApps.chromeAppsStrings.DELETED, 
+          /* import warning: importer.ImportType#apply Failed type conversion: keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} extends keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'} ? std.Exclude<keyof {  CHANGED :'CHANGED',   DELETED :'DELETED'}, 'CHANGED' | 'DELETED'> : never */ js.Any
+        ]
+    ): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    
+    inline def setEntryPath(value: String): Self = StObject.set(x, "entryPath", value.asInstanceOf[js.Any])
+  }
 }
-

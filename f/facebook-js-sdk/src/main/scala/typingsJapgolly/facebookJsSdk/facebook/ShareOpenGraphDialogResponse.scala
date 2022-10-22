@@ -1,20 +1,24 @@
 package typingsJapgolly.facebookJsSdk.facebook
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShareOpenGraphDialogResponse extends DialogResponse {
+trait ShareOpenGraphDialogResponse
+  extends StObject
+     with DialogResponse {
+  
   var post_id: String
 }
-
 object ShareOpenGraphDialogResponse {
-  @scala.inline
-  def apply(post_id: String, error_code: Int | Double = null, error_message: String = null): ShareOpenGraphDialogResponse = {
+  
+  inline def apply(post_id: String): ShareOpenGraphDialogResponse = {
     val __obj = js.Dynamic.literal(post_id = post_id.asInstanceOf[js.Any])
-    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
-    if (error_message != null) __obj.updateDynamic("error_message")(error_message.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShareOpenGraphDialogResponse]
   }
+  
+  extension [Self <: ShareOpenGraphDialogResponse](x: Self) {
+    
+    inline def setPost_id(value: String): Self = StObject.set(x, "post_id", value.asInstanceOf[js.Any])
+  }
 }
-

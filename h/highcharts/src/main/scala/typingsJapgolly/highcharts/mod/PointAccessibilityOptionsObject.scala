@@ -1,22 +1,45 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PointAccessibilityOptionsObject extends js.Object {
+trait PointAccessibilityOptionsObject extends StObject {
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Provide a description of the data point,
+    * announced to screen readers.
+    */
   /**
     * Provide a description of the data point, announced to screen readers.
     */
   var description: js.UndefOr[String] = js.undefined
+  
+  /**
+    * (Highcharts, Highstock, Gantt) Set to false to disable accessibility
+    * functionality for a specific point. The point will not be included in
+    * keyboard navigation, and will not be exposed to assistive technology.
+    */
+  /**
+    * Enable or disable exposing the point to assistive technology
+    */
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
-
 object PointAccessibilityOptionsObject {
-  @scala.inline
-  def apply(description: String = null): PointAccessibilityOptionsObject = {
+  
+  inline def apply(): PointAccessibilityOptionsObject = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointAccessibilityOptionsObject]
   }
+  
+  extension [Self <: PointAccessibilityOptionsObject](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+  }
 }
-

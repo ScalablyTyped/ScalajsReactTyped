@@ -1,7 +1,7 @@
 
 # Scala.js typings for hellosign-embedded
 
-Typings are for version v1.2.0
+Typings are for version 2.0
 
 ## Library description:
 Embed HelloSign signature requests and templates from within your web application.
@@ -10,10 +10,10 @@ Embed HelloSign signature requests and templates from within your web applicatio
 | ------------------ | :-------------: |
 | Full name          | hellosign-embedded |
 | Keywords           | hellosign, embedded, esignature, esign, sign |
-| # releases         | 55 |
-| # dependents       | 1 |
-| # downloads        | 897796 |
-| # stars            | 0 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 297509.3333333333 |
+| # stars            | 41.0 |
 
 ## Links
 - [Homepage](https://github.com/hellosign/hellosign-embedded)

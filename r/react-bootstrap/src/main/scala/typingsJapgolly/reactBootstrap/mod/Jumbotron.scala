@@ -1,13 +1,10 @@
 package typingsJapgolly.reactBootstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactBootstrap.jumbotronMod.JumbotronProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap", "Jumbotron")
 @js.native
-class Jumbotron ()
-  extends Component[JumbotronProps, js.Object, js.Any]
-
+open class Jumbotron ()
+  extends typingsJapgolly.reactBootstrap.libMod.Jumbotron

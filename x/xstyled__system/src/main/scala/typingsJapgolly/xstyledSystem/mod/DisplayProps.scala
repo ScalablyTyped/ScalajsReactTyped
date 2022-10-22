@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.DisplayProperty
+import typingsJapgolly.csstype.mod.Property.Display
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DisplayProps extends js.Object {
-  val display: js.UndefOr[ResponsiveValue[DisplayProperty]] = js.undefined
+trait DisplayProps extends StObject {
+  
+  val display: js.UndefOr[ResponsiveValue[Display]] = js.undefined
 }
-
 object DisplayProps {
-  @scala.inline
-  def apply(display: ResponsiveValue[DisplayProperty] = null): DisplayProps = {
+  
+  inline def apply(): DisplayProps = {
     val __obj = js.Dynamic.literal()
-    if (display != null) __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayProps]
   }
+  
+  extension [Self <: DisplayProps](x: Self) {
+    
+    inline def setDisplay(value: ResponsiveValue[Display]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+    
+    inline def setDisplayVarargs(value: Display*): Self = StObject.set(x, "display", js.Array(value*))
+  }
 }
-

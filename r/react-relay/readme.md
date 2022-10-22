@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-relay
 
-Typings are for version 7.0
+Typings are for version 14.1
 
 ## Library description:
 A framework for building GraphQL-driven React applications.
@@ -10,10 +10,10 @@ A framework for building GraphQL-driven React applications.
 | ------------------ | :-------------: |
 | Full name          | react-relay |
 | Keywords           | graphql, relay, react |
-| # releases         | 196 |
-| # dependents       | 90 |
-| # downloads        | 2601854 |
-| # stars            | 23 |
+| # releases         | 1768 |
+| # dependents       | 0.0 |
+| # downloads        | 602484.3333333334 |
+| # stars            | 17329.0 |
 
 ## Links
 - [Homepage](https://relay.dev)

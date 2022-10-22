@@ -1,23 +1,40 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceMotionEventAcceleration extends js.Object {
+/** Available only in secure contexts. */
+trait DeviceMotionEventAcceleration extends StObject {
+  
+  /* standard dom */
   val x: Double | Null
+  
+  /* standard dom */
   val y: Double | Null
+  
+  /* standard dom */
   val z: Double | Null
 }
-
 object DeviceMotionEventAcceleration {
-  @scala.inline
-  def apply(x: Int | Double = null, y: Int | Double = null, z: Int | Double = null): DeviceMotionEventAcceleration = {
-    val __obj = js.Dynamic.literal()
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+  
+  inline def apply(): DeviceMotionEventAcceleration = {
+    val __obj = js.Dynamic.literal(x = null, y = null, z = null)
     __obj.asInstanceOf[DeviceMotionEventAcceleration]
   }
+  
+  extension [Self <: DeviceMotionEventAcceleration](x: Self) {
+    
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    
+    inline def setXNull: Self = StObject.set(x, "x", null)
+    
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    
+    inline def setYNull: Self = StObject.set(x, "y", null)
+    
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    
+    inline def setZNull: Self = StObject.set(x, "z", null)
+  }
 }
-

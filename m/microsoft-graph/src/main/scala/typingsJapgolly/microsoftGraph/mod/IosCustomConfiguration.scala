@@ -1,54 +1,43 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IosCustomConfiguration extends DeviceConfiguration {
+trait IosCustomConfiguration
+  extends StObject
+     with DeviceConfiguration {
+  
   // Payload. (UTF8 encoded byte array)
-  var payload: js.UndefOr[Double] = js.undefined
+  var payload: js.UndefOr[String] = js.undefined
+  
   // Payload file name (.mobileconfig
-  var payloadFileName: js.UndefOr[String] = js.undefined
+  var payloadFileName: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Name that is displayed to the user.
   var payloadName: js.UndefOr[String] = js.undefined
 }
-
 object IosCustomConfiguration {
-  @scala.inline
-  def apply(
-    assignments: js.Array[DeviceConfigurationAssignment] = null,
-    createdDateTime: String = null,
-    description: String = null,
-    deviceSettingStateSummaries: js.Array[SettingStateDeviceSummary] = null,
-    deviceStatusOverview: DeviceConfigurationDeviceOverview = null,
-    deviceStatuses: js.Array[DeviceConfigurationDeviceStatus] = null,
-    displayName: String = null,
-    id: String = null,
-    lastModifiedDateTime: String = null,
-    payload: Int | Double = null,
-    payloadFileName: String = null,
-    payloadName: String = null,
-    userStatusOverview: DeviceConfigurationUserOverview = null,
-    userStatuses: js.Array[DeviceConfigurationUserStatus] = null,
-    version: Int | Double = null
-  ): IosCustomConfiguration = {
+  
+  inline def apply(): IosCustomConfiguration = {
     val __obj = js.Dynamic.literal()
-    if (assignments != null) __obj.updateDynamic("assignments")(assignments.asInstanceOf[js.Any])
-    if (createdDateTime != null) __obj.updateDynamic("createdDateTime")(createdDateTime.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (deviceSettingStateSummaries != null) __obj.updateDynamic("deviceSettingStateSummaries")(deviceSettingStateSummaries.asInstanceOf[js.Any])
-    if (deviceStatusOverview != null) __obj.updateDynamic("deviceStatusOverview")(deviceStatusOverview.asInstanceOf[js.Any])
-    if (deviceStatuses != null) __obj.updateDynamic("deviceStatuses")(deviceStatuses.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (payloadFileName != null) __obj.updateDynamic("payloadFileName")(payloadFileName.asInstanceOf[js.Any])
-    if (payloadName != null) __obj.updateDynamic("payloadName")(payloadName.asInstanceOf[js.Any])
-    if (userStatusOverview != null) __obj.updateDynamic("userStatusOverview")(userStatusOverview.asInstanceOf[js.Any])
-    if (userStatuses != null) __obj.updateDynamic("userStatuses")(userStatuses.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[IosCustomConfiguration]
   }
+  
+  extension [Self <: IosCustomConfiguration](x: Self) {
+    
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadFileName(value: NullableOption[String]): Self = StObject.set(x, "payloadFileName", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadFileNameNull: Self = StObject.set(x, "payloadFileName", null)
+    
+    inline def setPayloadFileNameUndefined: Self = StObject.set(x, "payloadFileName", js.undefined)
+    
+    inline def setPayloadName(value: String): Self = StObject.set(x, "payloadName", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadNameUndefined: Self = StObject.set(x, "payloadName", js.undefined)
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+  }
 }
-

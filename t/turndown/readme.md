@@ -10,15 +10,12 @@ A library that converts HTML to Markdown
 | ------------------ | :-------------: |
 | Full name          | turndown |
 | Keywords           | converter, html, markdown |
-| # releases         | 5 |
-| # dependents       | 103 |
-| # downloads        | 1793964 |
-| # stars            | 0 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 1779118.3333333333 |
+| # stars            | 6262.0 |
 
 ## Links
-- [Homepage](https://github.com/domchristie/turndown#readme)
-- [Bugs](https://github.com/domchristie/turndown/issues)
-- [Repository](https://github.com/domchristie/turndown)
 - [Npm](https://www.npmjs.com/package/turndown)
     
 

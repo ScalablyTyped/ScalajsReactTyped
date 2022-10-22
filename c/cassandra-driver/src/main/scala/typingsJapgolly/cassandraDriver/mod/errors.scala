@@ -1,68 +1,84 @@
 package typingsJapgolly.cassandraDriver.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("cassandra-driver", "errors")
-@js.native
-object errors extends js.Object {
+object errors {
+  
+  @JSImport("cassandra-driver", "errors.ArgumentError")
   @js.native
-  class ArgumentError protected () extends DriverError {
+  open class ArgumentError protected () extends DriverError {
     def this(message: String) = this()
   }
   
+  @JSImport("cassandra-driver", "errors.AuthenticationError")
   @js.native
-  class AuthenticationError protected () extends DriverError {
+  open class AuthenticationError protected () extends DriverError {
     def this(message: String) = this()
   }
   
+  @JSImport("cassandra-driver", "errors.BusyConnectionError")
   @js.native
-  class BusyConnectionError protected () extends DriverError {
+  open class BusyConnectionError protected () extends DriverError {
     def this(address: String, maxRequestsPerConnection: Double, connectionLength: Double) = this()
   }
   
+  /* note: abstract class */ @JSImport("cassandra-driver", "errors.DriverError")
   @js.native
-  abstract class DriverError protected () extends Error {
+  open class DriverError protected ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
-    def this(message: String, constructor: js.Any) = this()
+    def this(message: String, constructor: Any) = this()
+    
     var info: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var message: String = js.native
+    var message: String = js.native
+    
+    /* standard es5 */
     /* CompleteClass */
-    override var name: String = js.native
+    var name: String = js.native
   }
   
+  @JSImport("cassandra-driver", "errors.DriverInternalError")
   @js.native
-  class DriverInternalError protected () extends DriverError {
+  open class DriverInternalError protected () extends DriverError {
     def this(message: String) = this()
   }
   
+  @JSImport("cassandra-driver", "errors.NoHostAvailableError")
   @js.native
-  class NoHostAvailableError protected () extends DriverError {
-    def this(innerErrors: js.Any) = this()
-    def this(innerErrors: js.Any, message: String) = this()
-    var innerErrors: js.Any = js.native
+  open class NoHostAvailableError protected () extends DriverError {
+    def this(innerErrors: Any) = this()
+    def this(innerErrors: Any, message: String) = this()
+    
+    var innerErrors: Any = js.native
   }
   
+  @JSImport("cassandra-driver", "errors.NotSupportedError")
   @js.native
-  class NotSupportedError protected () extends DriverError {
+  open class NotSupportedError protected () extends DriverError {
     def this(message: String) = this()
   }
   
+  @JSImport("cassandra-driver", "errors.OperationTimedOutError")
   @js.native
-  class OperationTimedOutError protected () extends DriverError {
+  open class OperationTimedOutError protected () extends DriverError {
     def this(message: String) = this()
     def this(message: String, host: String) = this()
+    
     var host: js.UndefOr[String] = js.native
   }
   
+  @JSImport("cassandra-driver", "errors.ResponseError")
   @js.native
-  class ResponseError protected () extends DriverError {
+  open class ResponseError protected () extends DriverError {
     def this(code: Double, message: String) = this()
+    
     var code: Double = js.native
   }
-  
 }
-

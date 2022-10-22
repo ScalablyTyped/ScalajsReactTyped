@@ -1,25 +1,27 @@
 package typingsJapgolly.globStream
 
 import typingsJapgolly.globStream.mod.UniqueByStringPredicate
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globStreamStrings {
-  @js.native
-  sealed trait base extends UniqueByStringPredicate
   
   @js.native
-  sealed trait cwd extends UniqueByStringPredicate
+  sealed trait base
+    extends StObject
+       with UniqueByStringPredicate
+  inline def base: base = "base".asInstanceOf[base]
   
   @js.native
-  sealed trait path extends UniqueByStringPredicate
+  sealed trait cwd
+    extends StObject
+       with UniqueByStringPredicate
+  inline def cwd: cwd = "cwd".asInstanceOf[cwd]
   
-  @scala.inline
-  def base: base = "base".asInstanceOf[base]
-  @scala.inline
-  def cwd: cwd = "cwd".asInstanceOf[cwd]
-  @scala.inline
-  def path: path = "path".asInstanceOf[path]
+  @js.native
+  sealed trait path
+    extends StObject
+       with UniqueByStringPredicate
+  inline def path: path = "path".asInstanceOf[path]
 }
-

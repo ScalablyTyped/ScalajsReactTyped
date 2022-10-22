@@ -10,15 +10,12 @@ Copy properties from one object to another.
 | ------------------ | :-------------: |
 | Full name          | object-mapper |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 26 |
-| # downloads        | 625495 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 154178.0 |
+| # stars            | 251.0 |
 
 ## Links
-- [Homepage](https://github.com/wankdanker/node-object-mapper#readme)
-- [Bugs](https://github.com/wankdanker/node-object-mapper/issues)
-- [Repository](https://github.com/wankdanker/node-object-mapper)
 - [Npm](https://www.npmjs.com/package/object-mapper)
     
 

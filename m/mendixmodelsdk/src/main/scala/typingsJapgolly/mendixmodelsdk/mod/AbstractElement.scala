@@ -1,26 +1,27 @@
 package typingsJapgolly.mendixmodelsdk.mod
 
-import typingsJapgolly.mendixmodelsdk.structuresMod.aliases.IContainer
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.IAbstractModel
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.Container
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalStructuresMod.aliases.IContainer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("mendixmodelsdk", "AbstractElement")
+/* note: abstract class */ @JSImport("mendixmodelsdk", "AbstractElement")
 @js.native
-abstract class AbstractElement protected ()
-  extends typingsJapgolly.mendixmodelsdk.internalMod.AbstractElement {
+open class AbstractElement[TModel /* <: IAbstractModel */, TContainer /* <: Container */] protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcSdkInternalMod.AbstractElement[TModel, TContainer] {
   def this(
-    model: typingsJapgolly.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean
   ) = this()
   def this(
-    model: typingsJapgolly.mendixmodelsdk.abstractModelMod.AbstractModel,
+    model: typingsJapgolly.mendixmodelsdk.srcSdkInternalAbstractModelMod.AbstractModel,
     structureTypeName: String,
     id: String,
     isPartial: Boolean,
     container: IContainer
   ) = this()
 }
-

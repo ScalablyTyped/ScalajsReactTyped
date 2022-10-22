@@ -1,13 +1,18 @@
 package typingsJapgolly.mongodb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongodb", "MongoNetworkError")
 @js.native
-class MongoNetworkError protected () extends MongoError {
+open class MongoNetworkError protected () extends MongoError {
+  /* Excluded from this release type: [kBeforeHandshake] */
   def this(message: String) = this()
-  var errorLabels: js.Array[String] = js.native
+  def this(message: js.Error) = this()
+  def this(message: String, options: MongoNetworkErrorOptions) = this()
+  def this(message: js.Error, options: MongoNetworkErrorOptions) = this()
+  
+  @JSName("name")
+  def name_MMongoNetworkError: String = js.native
 }
-

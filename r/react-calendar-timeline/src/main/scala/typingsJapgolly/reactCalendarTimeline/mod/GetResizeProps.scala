@@ -1,31 +1,43 @@
 package typingsJapgolly.reactCalendarTimeline.mod
 
 import typingsJapgolly.react.mod.CSSProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GetResizeProps extends js.Object {
+trait GetResizeProps extends StObject {
+  
   var leftClassName: js.UndefOr[String] = js.undefined
+  
   var leftStyle: js.UndefOr[CSSProperties] = js.undefined
+  
   var rightClassName: js.UndefOr[String] = js.undefined
+  
   var rightStyle: js.UndefOr[CSSProperties] = js.undefined
 }
-
 object GetResizeProps {
-  @scala.inline
-  def apply(
-    leftClassName: String = null,
-    leftStyle: CSSProperties = null,
-    rightClassName: String = null,
-    rightStyle: CSSProperties = null
-  ): GetResizeProps = {
+  
+  inline def apply(): GetResizeProps = {
     val __obj = js.Dynamic.literal()
-    if (leftClassName != null) __obj.updateDynamic("leftClassName")(leftClassName.asInstanceOf[js.Any])
-    if (leftStyle != null) __obj.updateDynamic("leftStyle")(leftStyle.asInstanceOf[js.Any])
-    if (rightClassName != null) __obj.updateDynamic("rightClassName")(rightClassName.asInstanceOf[js.Any])
-    if (rightStyle != null) __obj.updateDynamic("rightStyle")(rightStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResizeProps]
   }
+  
+  extension [Self <: GetResizeProps](x: Self) {
+    
+    inline def setLeftClassName(value: String): Self = StObject.set(x, "leftClassName", value.asInstanceOf[js.Any])
+    
+    inline def setLeftClassNameUndefined: Self = StObject.set(x, "leftClassName", js.undefined)
+    
+    inline def setLeftStyle(value: CSSProperties): Self = StObject.set(x, "leftStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLeftStyleUndefined: Self = StObject.set(x, "leftStyle", js.undefined)
+    
+    inline def setRightClassName(value: String): Self = StObject.set(x, "rightClassName", value.asInstanceOf[js.Any])
+    
+    inline def setRightClassNameUndefined: Self = StObject.set(x, "rightClassName", js.undefined)
+    
+    inline def setRightStyle(value: CSSProperties): Self = StObject.set(x, "rightStyle", value.asInstanceOf[js.Any])
+    
+    inline def setRightStyleUndefined: Self = StObject.set(x, "rightStyle", js.undefined)
+  }
 }
-

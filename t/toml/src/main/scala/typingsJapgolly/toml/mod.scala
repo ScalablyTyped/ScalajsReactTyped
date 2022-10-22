@@ -1,12 +1,14 @@
 package typingsJapgolly.toml
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("toml", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def parse(input: String): js.Any = js.native
+object mod {
+  
+  @JSImport("toml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def parse(input: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Any]
 }
-

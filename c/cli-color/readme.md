@@ -11,9 +11,9 @@ Colors, formatting and other tools for the console
 | Full name          | cli-color |
 | Keywords           | ansi, color, console, terminal, cli, shell, log, logging, xterm |
 | # releases         | 4 |
-| # dependents       | 1461 |
-| # downloads        | 36589727 |
-| # stars            | 57 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3143342333333334E7 |
+| # stars            | 613.0 |
 
 ## Links
 - [Homepage](https://github.com/medikoo/cli-color#readme)

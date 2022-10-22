@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-runtime
 
-Typings are for version 24.9.0
+Typings are for version 29.2.0
 
 
 
@@ -9,10 +9,10 @@ Typings are for version 24.9.0
 | ------------------ | :-------------: |
 | Full name          | jest-runtime |
 | Keywords           | - |
-| # releases         | 73 |
-| # dependents       | 34 |
-| # downloads        | 230508930 |
-| # stars            | 1 |
+| # releases         | 76 |
+| # dependents       | 0.0 |
+| # downloads        | 7.7519752E7 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/facebook/jest#readme)

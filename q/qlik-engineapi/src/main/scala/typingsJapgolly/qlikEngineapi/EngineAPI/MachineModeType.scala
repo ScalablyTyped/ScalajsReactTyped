@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * One of:
@@ -15,16 +15,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_64
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_32
 */
-trait MachineModeType extends js.Object
-
+trait MachineModeType extends StObject
 object MachineModeType {
-  @scala.inline
-  def CONNECT_32: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_32 = this.cast("CONNECT_32")
-  @scala.inline
-  def CONNECT_64: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_64 = this.cast("CONNECT_64")
-  @scala.inline
-  def CONNECT_DEFAULT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT = this.cast("CONNECT_DEFAULT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CONNECT_32: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_32 = "CONNECT_32".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_32]
+  
+  inline def CONNECT_64: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_64 = "CONNECT_64".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_64]
+  
+  inline def CONNECT_DEFAULT: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT = "CONNECT_DEFAULT".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CONNECT_DEFAULT]
 }
-

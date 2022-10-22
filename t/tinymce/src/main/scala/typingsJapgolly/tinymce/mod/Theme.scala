@@ -1,20 +1,22 @@
 package typingsJapgolly.tinymce.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Theme extends js.Object {
+trait Theme extends StObject {
+  
   def renderUI(obj: js.Object): js.Object
 }
-
 object Theme {
-  @scala.inline
-  def apply(renderUI: js.Object => CallbackTo[js.Object]): Theme = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("renderUI")(js.Any.fromFunction1((t0: js.Object) => renderUI(t0).runNow()))
+  
+  inline def apply(renderUI: js.Object => js.Object): Theme = {
+    val __obj = js.Dynamic.literal(renderUI = js.Any.fromFunction1(renderUI))
     __obj.asInstanceOf[Theme]
   }
+  
+  extension [Self <: Theme](x: Self) {
+    
+    inline def setRenderUI(value: js.Object => js.Object): Self = StObject.set(x, "renderUI", js.Any.fromFunction1(value))
+  }
 }
-

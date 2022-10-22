@@ -1,29 +1,12 @@
 package typingsJapgolly.businessRulesEngine
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Utils")
-@js.native
-object Utils extends js.Object {
-  @js.native
-  class NumberFce () extends js.Object
+object Utils {
   
-  @js.native
-  class StringFce () extends js.Object
+  trait NumberFce extends StObject
   
-  /* static members */
-  @js.native
-  object NumberFce extends js.Object {
-    def GetNegDigits(value: String): Double = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object StringFce extends js.Object {
-    def format(s: String, args: js.Any): String = js.native
-  }
-  
+  trait StringFce extends StObject
 }
-

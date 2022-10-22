@@ -1,20 +1,19 @@
 package typingsJapgolly.karmaMochaReporter
 
-import typingsJapgolly.karmaMochaReporter.mod.ShowDiffOptions
+import typingsJapgolly.karmaMochaReporter.karmaMod.ShowDiffOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object karmaMochaReporterBooleans {
-  @js.native
-  sealed trait `false` extends js.Object
   
   @js.native
-  sealed trait `true` extends ShowDiffOptions
+  sealed trait `false` extends StObject
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  @js.native
+  sealed trait `true`
+    extends StObject
+       with ShowDiffOptions
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }
-

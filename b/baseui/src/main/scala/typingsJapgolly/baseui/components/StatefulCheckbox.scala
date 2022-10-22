@@ -1,83 +1,84 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactEventFrom
-import japgolly.scalajs.react.ReactFocusEventFrom
-import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.baseui.baseuiStrings.bottom
-import typingsJapgolly.baseui.baseuiStrings.default_
-import typingsJapgolly.baseui.baseuiStrings.left
-import typingsJapgolly.baseui.baseuiStrings.right
-import typingsJapgolly.baseui.baseuiStrings.toggle
-import typingsJapgolly.baseui.baseuiStrings.toggle_round
-import typingsJapgolly.baseui.baseuiStrings.top
-import typingsJapgolly.baseui.checkboxMod.CheckboxOverrides
-import typingsJapgolly.baseui.checkboxMod.StatefulCheckboxProps
-import typingsJapgolly.baseui.checkboxMod.initialState
+import japgolly.scalajs.react.facade.React.RefHandle
+import org.scalajs.dom.HTMLInputElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.baseui.checkboxTypesMod.CheckboxReducerState
+import typingsJapgolly.baseui.checkboxTypesMod.LabelPlacement
+import typingsJapgolly.baseui.checkboxTypesMod.StatefulCheckboxProps
+import typingsJapgolly.baseui.checkboxTypesMod.StyleType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulCheckbox {
-  def apply(
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    checkmarkType: default_ | toggle | toggle_round = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    initialState: initialState = null,
-    inputRef: Ref = null,
-    isError: js.UndefOr[Boolean] = js.undefined,
-    isIndeterminate: js.UndefOr[Boolean] = js.undefined,
-    labelPlacement: top | right | bottom | left = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onChange: ReactEventFrom[HTMLInputElement] => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onMouseEnter: ReactMouseEventFrom[HTMLInputElement] => Callback = null,
-    onMouseLeave: ReactMouseEventFrom[HTMLInputElement] => Callback = null,
-    overrides: CheckboxOverrides = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    StatefulCheckboxProps, 
-    MountedWithRawType[StatefulCheckboxProps, js.Object, RawMounted[StatefulCheckboxProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (checkmarkType != null) __obj.updateDynamic("checkmarkType")(checkmarkType.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(isError)) __obj.updateDynamic("isError")(isError.asInstanceOf[js.Any])
-    if (!js.isUndefined(isIndeterminate)) __obj.updateDynamic("isIndeterminate")(isIndeterminate.asInstanceOf[js.Any])
-    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onMouseEnter(t0).runNow()))
-    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onMouseLeave(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.checkboxMod.StatefulCheckboxProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.checkboxMod.StatefulCheckboxProps])(children: _*)
-  }
   @JSImport("baseui/checkbox", "StatefulCheckbox")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-errormessage`(value: String): this.type = set("aria-errormessage", value.asInstanceOf[js.Any])
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def autoFocus(value: Boolean): this.type = set("autoFocus", value.asInstanceOf[js.Any])
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def checkmarkType(value: StyleType): this.type = set("checkmarkType", value.asInstanceOf[js.Any])
+    
+    inline def containsInteractiveElement(value: Boolean): this.type = set("containsInteractiveElement", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def error(value: Boolean): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def initialState(value: CheckboxReducerState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: RefHandle[HTMLInputElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def isIndeterminate(value: Boolean): this.type = set("isIndeterminate", value.asInstanceOf[js.Any])
+    
+    inline def labelPlacement(value: LabelPlacement): this.type = set("labelPlacement", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onBlur", js.Any.fromFunction1(value))
+    
+    inline def onChange(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def onFocus(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onFocus", js.Any.fromFunction1(value))
+    
+    inline def onMouseDown(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onMouseDown", js.Any.fromFunction1(value))
+    
+    inline def onMouseEnter(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onMouseEnter", js.Any.fromFunction1(value))
+    
+    inline def onMouseLeave(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onMouseLeave", js.Any.fromFunction1(value))
+    
+    inline def onMouseUp(value: /* e */ ReactEventFrom[HTMLInputElement] => Any): this.type = set("onMouseUp", js.Any.fromFunction1(value))
+    
+    inline def overrides(value: Any): this.type = set("overrides", value.asInstanceOf[js.Any])
+    
+    inline def required(value: Boolean): this.type = set("required", value.asInstanceOf[js.Any])
+    
+    inline def title(value: String): this.type = set("title", value.asInstanceOf[js.Any])
+    
+    inline def titleNull: this.type = set("title", null)
+    
+    inline def `type`(value: String): this.type = set("type", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: StatefulCheckbox.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: StatefulCheckboxProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

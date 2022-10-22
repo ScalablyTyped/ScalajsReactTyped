@@ -2,52 +2,75 @@ package typingsJapgolly.winrt.Windows.Security.Cryptography
 
 import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICryptographicBufferStatics extends js.Object {
+trait ICryptographicBufferStatics extends StObject {
+  
   def compare(object1: IBuffer, object2: IBuffer): Boolean
+  
   def convertBinaryToString(encoding: BinaryStringEncoding, buffer: IBuffer): String
+  
   def convertStringToBinary(value: String, encoding: BinaryStringEncoding): IBuffer
-  def copyToByteArray(buffer: IBuffer): scala.scalajs.js.typedarray.Uint8Array
-  def createFromByteArray(value: scala.scalajs.js.typedarray.Uint8Array): IBuffer
+  
+  def copyToByteArray(buffer: IBuffer): js.typedarray.Uint8Array
+  
+  def createFromByteArray(value: js.typedarray.Uint8Array): IBuffer
+  
   def decodeFromBase64String(value: String): IBuffer
+  
   def decodeFromHexString(value: String): IBuffer
+  
   def encodeToBase64String(buffer: IBuffer): String
+  
   def encodeToHexString(buffer: IBuffer): String
+  
   def generateRandom(length: Double): IBuffer
+  
   def generateRandomNumber(): Double
 }
-
 object ICryptographicBufferStatics {
-  @scala.inline
-  def apply(
-    compare: (IBuffer, IBuffer) => CallbackTo[Boolean],
-    convertBinaryToString: (BinaryStringEncoding, IBuffer) => CallbackTo[String],
-    convertStringToBinary: (String, BinaryStringEncoding) => CallbackTo[IBuffer],
-    copyToByteArray: IBuffer => CallbackTo[scala.scalajs.js.typedarray.Uint8Array],
-    createFromByteArray: scala.scalajs.js.typedarray.Uint8Array => CallbackTo[IBuffer],
-    decodeFromBase64String: String => CallbackTo[IBuffer],
-    decodeFromHexString: String => CallbackTo[IBuffer],
-    encodeToBase64String: IBuffer => CallbackTo[String],
-    encodeToHexString: IBuffer => CallbackTo[String],
-    generateRandom: Double => CallbackTo[IBuffer],
+  
+  inline def apply(
+    compare: (IBuffer, IBuffer) => Boolean,
+    convertBinaryToString: (BinaryStringEncoding, IBuffer) => String,
+    convertStringToBinary: (String, BinaryStringEncoding) => IBuffer,
+    copyToByteArray: IBuffer => js.typedarray.Uint8Array,
+    createFromByteArray: js.typedarray.Uint8Array => IBuffer,
+    decodeFromBase64String: String => IBuffer,
+    decodeFromHexString: String => IBuffer,
+    encodeToBase64String: IBuffer => String,
+    encodeToHexString: IBuffer => String,
+    generateRandom: Double => IBuffer,
     generateRandomNumber: CallbackTo[Double]
   ): ICryptographicBufferStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("compare")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => compare(t0, t1).runNow()))
-    __obj.updateDynamic("convertBinaryToString")(js.Any.fromFunction2((t0: typingsJapgolly.winrt.Windows.Security.Cryptography.BinaryStringEncoding, t1: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => convertBinaryToString(t0, t1).runNow()))
-    __obj.updateDynamic("convertStringToBinary")(js.Any.fromFunction2((t0: java.lang.String, t1: typingsJapgolly.winrt.Windows.Security.Cryptography.BinaryStringEncoding) => convertStringToBinary(t0, t1).runNow()))
-    __obj.updateDynamic("copyToByteArray")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => copyToByteArray(t0).runNow()))
-    __obj.updateDynamic("createFromByteArray")(js.Any.fromFunction1((t0: scala.scalajs.js.typedarray.Uint8Array) => createFromByteArray(t0).runNow()))
-    __obj.updateDynamic("decodeFromBase64String")(js.Any.fromFunction1((t0: java.lang.String) => decodeFromBase64String(t0).runNow()))
-    __obj.updateDynamic("decodeFromHexString")(js.Any.fromFunction1((t0: java.lang.String) => decodeFromHexString(t0).runNow()))
-    __obj.updateDynamic("encodeToBase64String")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => encodeToBase64String(t0).runNow()))
-    __obj.updateDynamic("encodeToHexString")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer) => encodeToHexString(t0).runNow()))
-    __obj.updateDynamic("generateRandom")(js.Any.fromFunction1((t0: scala.Double) => generateRandom(t0).runNow()))
-    __obj.updateDynamic("generateRandomNumber")(generateRandomNumber.toJsFn)
+    val __obj = js.Dynamic.literal(compare = js.Any.fromFunction2(compare), convertBinaryToString = js.Any.fromFunction2(convertBinaryToString), convertStringToBinary = js.Any.fromFunction2(convertStringToBinary), copyToByteArray = js.Any.fromFunction1(copyToByteArray), createFromByteArray = js.Any.fromFunction1(createFromByteArray), decodeFromBase64String = js.Any.fromFunction1(decodeFromBase64String), decodeFromHexString = js.Any.fromFunction1(decodeFromHexString), encodeToBase64String = js.Any.fromFunction1(encodeToBase64String), encodeToHexString = js.Any.fromFunction1(encodeToHexString), generateRandom = js.Any.fromFunction1(generateRandom), generateRandomNumber = generateRandomNumber.toJsFn)
     __obj.asInstanceOf[ICryptographicBufferStatics]
   }
+  
+  extension [Self <: ICryptographicBufferStatics](x: Self) {
+    
+    inline def setCompare(value: (IBuffer, IBuffer) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+    
+    inline def setConvertBinaryToString(value: (BinaryStringEncoding, IBuffer) => String): Self = StObject.set(x, "convertBinaryToString", js.Any.fromFunction2(value))
+    
+    inline def setConvertStringToBinary(value: (String, BinaryStringEncoding) => IBuffer): Self = StObject.set(x, "convertStringToBinary", js.Any.fromFunction2(value))
+    
+    inline def setCopyToByteArray(value: IBuffer => js.typedarray.Uint8Array): Self = StObject.set(x, "copyToByteArray", js.Any.fromFunction1(value))
+    
+    inline def setCreateFromByteArray(value: js.typedarray.Uint8Array => IBuffer): Self = StObject.set(x, "createFromByteArray", js.Any.fromFunction1(value))
+    
+    inline def setDecodeFromBase64String(value: String => IBuffer): Self = StObject.set(x, "decodeFromBase64String", js.Any.fromFunction1(value))
+    
+    inline def setDecodeFromHexString(value: String => IBuffer): Self = StObject.set(x, "decodeFromHexString", js.Any.fromFunction1(value))
+    
+    inline def setEncodeToBase64String(value: IBuffer => String): Self = StObject.set(x, "encodeToBase64String", js.Any.fromFunction1(value))
+    
+    inline def setEncodeToHexString(value: IBuffer => String): Self = StObject.set(x, "encodeToHexString", js.Any.fromFunction1(value))
+    
+    inline def setGenerateRandom(value: Double => IBuffer): Self = StObject.set(x, "generateRandom", js.Any.fromFunction1(value))
+    
+    inline def setGenerateRandomNumber(value: CallbackTo[Double]): Self = StObject.set(x, "generateRandomNumber", value.toJsFn)
+  }
 }
-

@@ -1,20 +1,32 @@
 package typingsJapgolly.blueprintjsCore.mod
 
-import typingsJapgolly.blueprintjsCore.AnonAllowInInput
+import typingsJapgolly.blueprintjsCore.anon.AllowInInput
+import typingsJapgolly.blueprintjsCore.libEsmComponentsHotkeysHotkeyMod.IHotkeyProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Hotkey")
 @js.native
-class Hotkey ()
-  extends typingsJapgolly.blueprintjsCore.componentsMod.Hotkey
-
-/* static members */
-@JSImport("@blueprintjs/core", "Hotkey")
-@js.native
-object Hotkey extends js.Object {
-  var defaultProps: AnonAllowInInput = js.native
-  var displayName: String = js.native
+open class Hotkey protected ()
+  extends typingsJapgolly.blueprintjsCore.libEsmComponentsMod.Hotkey {
+  def this(props: IHotkeyProps) = this()
+  def this(props: IHotkeyProps, context: Any) = this()
 }
-
+/* static members */
+object Hotkey {
+  
+  @JSImport("@blueprintjs/core", "Hotkey")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("@blueprintjs/core", "Hotkey.defaultProps")
+  @js.native
+  def defaultProps: AllowInInput = js.native
+  inline def defaultProps_=(x: AllowInInput): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  
+  @JSImport("@blueprintjs/core", "Hotkey.displayName")
+  @js.native
+  def displayName: String = js.native
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+}

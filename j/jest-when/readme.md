@@ -1,7 +1,7 @@
 
 # Scala.js typings for jest-when
 
-Typings are for version 2.7
+Typings are for version 3.5
 
 ## Library description:
 An extension lib for jest
@@ -10,10 +10,10 @@ An extension lib for jest
 | ------------------ | :-------------: |
 | Full name          | jest-when |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 1 |
-| # downloads        | 701204 |
-| # stars            | 0 |
+| # releases         | 15 |
+| # dependents       | 0.0 |
+| # downloads        | 1279906.6666666667 |
+| # stars            | 634.0 |
 
 ## Links
 - [Homepage](https://github.com/timkindberg/jest-when#readme)

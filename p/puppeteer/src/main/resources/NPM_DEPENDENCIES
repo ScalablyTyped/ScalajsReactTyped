@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "puppeteer" : "19.0.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "puppeteer" : "19.0.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

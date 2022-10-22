@@ -1,45 +1,41 @@
 package typingsJapgolly.activexAdodb.ADODB
 
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`1048576`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`256`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`4096`
-import typingsJapgolly.activexAdodb.activexAdodbNumbers.`65536`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`1048576`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`256`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`4096`
+import typingsJapgolly.activexAdodb.activexAdodbInts.`65536`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`256`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`16`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`4096`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`1048576`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`65536`
-  - typingsJapgolly.activexAdodb.activexAdodbNumbers.`-1`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`256`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`16`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`4096`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`1048576`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`65536`
+  - typingsJapgolly.activexAdodb.activexAdodbInts.`-1`
 */
-trait IsolationLevelEnum extends js.Object
-
+trait IsolationLevelEnum extends StObject
 object IsolationLevelEnum {
-  @scala.inline
-  def adXactBrowse: `256` = this.cast(256)
-  @scala.inline
-  def adXactChaos: `16` = this.cast(16)
-  @scala.inline
-  def adXactCursorStability: `4096` = this.cast(4096)
-  @scala.inline
-  def adXactIsolated: `1048576` = this.cast(1048576)
-  @scala.inline
-  def adXactReadCommitted: `4096` = this.cast(4096)
-  @scala.inline
-  def adXactReadUncommitted: `256` = this.cast(256)
-  @scala.inline
-  def adXactRepeatableRead: `65536` = this.cast(65536)
-  @scala.inline
-  def adXactSerializable: `1048576` = this.cast(1048576)
-  @scala.inline
-  def adXactUnspecified: `-1` = this.cast(-1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def adXactBrowse: `256` = 256.asInstanceOf[`256`]
+  
+  inline def adXactChaos: `16` = 16.asInstanceOf[`16`]
+  
+  inline def adXactCursorStability: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def adXactIsolated: `1048576` = 1048576.asInstanceOf[`1048576`]
+  
+  inline def adXactReadCommitted: `4096` = 4096.asInstanceOf[`4096`]
+  
+  inline def adXactReadUncommitted: `256` = 256.asInstanceOf[`256`]
+  
+  inline def adXactRepeatableRead: `65536` = 65536.asInstanceOf[`65536`]
+  
+  inline def adXactSerializable: `1048576` = 1048576.asInstanceOf[`1048576`]
+  
+  inline def adXactUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }
-

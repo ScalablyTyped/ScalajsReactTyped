@@ -1,41 +1,39 @@
 package typingsJapgolly.azdata.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StepCompletionAction extends js.Object
-
+sealed trait StepCompletionAction extends StObject
 @JSImport("azdata", "StepCompletionAction")
 @js.native
-object StepCompletionAction extends js.Object {
-  @js.native
-  sealed trait GoToNextStep extends StepCompletionAction
-  
-  @js.native
-  sealed trait GoToStep extends StepCompletionAction
-  
-  @js.native
-  sealed trait QuitWithFailure extends StepCompletionAction
-  
-  @js.native
-  sealed trait QuitWithSuccess extends StepCompletionAction
+object StepCompletionAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StepCompletionAction with Double] = js.native
-  /* 3 */ @js.native
-  object GoToNextStep extends TopLevel[GoToNextStep with Double]
+  def apply(value: Double): js.UndefOr[StepCompletionAction & Double] = js.native
   
-  /* 4 */ @js.native
-  object GoToStep extends TopLevel[GoToStep with Double]
+  @js.native
+  sealed trait GoToNextStep
+    extends StObject
+       with StepCompletionAction
+  /* 3 */ val GoToNextStep: typingsJapgolly.azdata.mod.StepCompletionAction.GoToNextStep & Double = js.native
   
-  /* 2 */ @js.native
-  object QuitWithFailure extends TopLevel[QuitWithFailure with Double]
+  @js.native
+  sealed trait GoToStep
+    extends StObject
+       with StepCompletionAction
+  /* 4 */ val GoToStep: typingsJapgolly.azdata.mod.StepCompletionAction.GoToStep & Double = js.native
   
-  /* 1 */ @js.native
-  object QuitWithSuccess extends TopLevel[QuitWithSuccess with Double]
+  @js.native
+  sealed trait QuitWithFailure
+    extends StObject
+       with StepCompletionAction
+  /* 2 */ val QuitWithFailure: typingsJapgolly.azdata.mod.StepCompletionAction.QuitWithFailure & Double = js.native
   
+  @js.native
+  sealed trait QuitWithSuccess
+    extends StObject
+       with StepCompletionAction
+  /* 1 */ val QuitWithSuccess: typingsJapgolly.azdata.mod.StepCompletionAction.QuitWithSuccess & Double = js.native
 }
-

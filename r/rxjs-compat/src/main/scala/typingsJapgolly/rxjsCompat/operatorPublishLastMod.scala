@@ -1,12 +1,15 @@
 package typingsJapgolly.rxjsCompat
 
+import typingsJapgolly.rxjs.mod.ConnectableObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rxjs-compat/operator/publishLast", JSImport.Namespace)
-@js.native
-object operatorPublishLastMod extends js.Object {
-  def publishLast[T](): js.Any = js.native
+object operatorPublishLastMod {
+  
+  @JSImport("rxjs-compat/operator/publishLast", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def publishLast[T](): ConnectableObservable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("publishLast")().asInstanceOf[ConnectableObservable[T]]
 }
-

@@ -1,117 +1,158 @@
 package typingsJapgolly.antd.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Blob
-import org.scalajs.dom.raw.File
+import japgolly.scalajs.react.ReactDragEventFrom
+import org.scalajs.dom.Blob
+import org.scalajs.dom.File
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antd.anon.Download
+import typingsJapgolly.antd.anon.UploadPropsanyheightnumbe
+import typingsJapgolly.antd.antdStrings.PATCH
 import typingsJapgolly.antd.antdStrings.POST
 import typingsJapgolly.antd.antdStrings.PUT
+import typingsJapgolly.antd.antdStrings.environment
+import typingsJapgolly.antd.antdStrings.patch_
 import typingsJapgolly.antd.antdStrings.post_
 import typingsJapgolly.antd.antdStrings.put_
-import typingsJapgolly.antd.uploadInterfaceMod.HttpRequestHeader
-import typingsJapgolly.antd.uploadInterfaceMod.RcCustomRequestOptions
-import typingsJapgolly.antd.uploadInterfaceMod.RcFile
-import typingsJapgolly.antd.uploadInterfaceMod.ShowUploadListInterface
-import typingsJapgolly.antd.uploadInterfaceMod.UploadChangeParam
-import typingsJapgolly.antd.uploadInterfaceMod.UploadFile
-import typingsJapgolly.antd.uploadInterfaceMod.UploadListType
-import typingsJapgolly.antd.uploadInterfaceMod.UploadLocale
-import typingsJapgolly.antd.uploadInterfaceMod.UploadProps
-import typingsJapgolly.antd.uploadInterfaceMod.UploadType
-import typingsJapgolly.antd.uploadMod.default
+import typingsJapgolly.antd.antdStrings.user
+import typingsJapgolly.antd.libUploadInterfaceMod.BeforeUploadValueType
+import typingsJapgolly.antd.libUploadInterfaceMod.HttpRequestHeader
+import typingsJapgolly.antd.libUploadInterfaceMod.RcFile
+import typingsJapgolly.antd.libUploadInterfaceMod.ShowUploadListInterface
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadChangeParam
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadFile
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadListProgressProps
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadListType
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadLocale
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadProps
+import typingsJapgolly.antd.libUploadInterfaceMod.UploadType
+import typingsJapgolly.rcUpload.esInterfaceMod.UploadRequestOption
 import typingsJapgolly.react.mod.CSSProperties
+import typingsJapgolly.react.mod.RefAttributes
+import typingsJapgolly.std.PromiseLike
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Upload {
-  def apply(
-    accept: String = null,
-    action: String | (js.Function1[/* file */ RcFile, String | js.Thenable[String]]) = null,
-    beforeUpload: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => CallbackTo[Boolean | js.Thenable[Unit]] = null,
-    className: String = null,
-    customRequest: /* options */ RcCustomRequestOptions => Callback = null,
-    data: js.Object | (js.Function1[/* file */ UploadFile[_], js.Object]) = null,
-    defaultFileList: js.Array[UploadFile[_]] = null,
-    directory: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    fileList: js.Array[UploadFile[_]] = null,
-    headers: HttpRequestHeader = null,
-    iconRender: (/* file */ UploadFile[js.Any], /* listType */ js.UndefOr[UploadListType]) => CallbackTo[Node] = null,
-    id: String = null,
-    listType: UploadListType = null,
-    locale: UploadLocale = null,
-    method: POST | PUT | post_ | put_ = null,
-    multiple: js.UndefOr[Boolean] = js.undefined,
-    name: String = null,
-    onChange: /* info */ UploadChangeParam[UploadFile[js.Any]] => Callback = null,
-    onDownload: /* file */ UploadFile[js.Any] => Callback = null,
-    onPreview: /* file */ UploadFile[js.Any] => Callback = null,
-    onRemove: /* file */ UploadFile[js.Any] => CallbackTo[Unit | Boolean | (js.Promise[Unit | Boolean])] = null,
-    openFileDialogOnClick: js.UndefOr[Boolean] = js.undefined,
-    prefixCls: String = null,
-    previewFile: /* file */ File | Blob => CallbackTo[js.Thenable[String]] = null,
-    showUploadList: Boolean | ShowUploadListInterface = null,
-    style: CSSProperties = null,
-    supportServerRender: js.UndefOr[Boolean] = js.undefined,
-    transformFile: /* file */ RcFile => CallbackTo[String | Blob | File | (js.Thenable[String | Blob | File])] = null,
-    `type`: UploadType = null,
-    withCredentials: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[UploadProps, default, Unit, UploadProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (accept != null) __obj.updateDynamic("accept")(accept.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (beforeUpload != null) __obj.updateDynamic("beforeUpload")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.RcFile, t1: /* FileList */ js.Array[typingsJapgolly.antd.uploadInterfaceMod.RcFile]) => beforeUpload(t0, t1).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customRequest != null) __obj.updateDynamic("customRequest")(js.Any.fromFunction1((t0: /* options */ typingsJapgolly.antd.uploadInterfaceMod.RcCustomRequestOptions) => customRequest(t0).runNow()))
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (defaultFileList != null) __obj.updateDynamic("defaultFileList")(defaultFileList.asInstanceOf[js.Any])
-    if (!js.isUndefined(directory)) __obj.updateDynamic("directory")(directory.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (fileList != null) __obj.updateDynamic("fileList")(fileList.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
-    if (iconRender != null) __obj.updateDynamic("iconRender")(js.Any.fromFunction2((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any], t1: /* listType */ js.UndefOr[typingsJapgolly.antd.uploadInterfaceMod.UploadListType]) => iconRender(t0, t1).runNow()))
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* info */ typingsJapgolly.antd.uploadInterfaceMod.UploadChangeParam[typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]]) => onChange(t0).runNow()))
-    if (onDownload != null) __obj.updateDynamic("onDownload")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onDownload(t0).runNow()))
-    if (onPreview != null) __obj.updateDynamic("onPreview")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onPreview(t0).runNow()))
-    if (onRemove != null) __obj.updateDynamic("onRemove")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.UploadFile[js.Any]) => onRemove(t0).runNow()))
-    if (!js.isUndefined(openFileDialogOnClick)) __obj.updateDynamic("openFileDialogOnClick")(openFileDialogOnClick.asInstanceOf[js.Any])
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (previewFile != null) __obj.updateDynamic("previewFile")(js.Any.fromFunction1((t0: /* file */ org.scalajs.dom.raw.File | org.scalajs.dom.raw.Blob) => previewFile(t0).runNow()))
-    if (showUploadList != null) __obj.updateDynamic("showUploadList")(showUploadList.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(supportServerRender)) __obj.updateDynamic("supportServerRender")(supportServerRender.asInstanceOf[js.Any])
-    if (transformFile != null) __obj.updateDynamic("transformFile")(js.Any.fromFunction1((t0: /* file */ typingsJapgolly.antd.uploadInterfaceMod.RcFile) => transformFile(t0).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antd.uploadInterfaceMod.UploadProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antd.uploadMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antd.uploadInterfaceMod.UploadProps])(children: _*)
+  object Dragger {
+    
+    @JSImport("antd", "Upload.Dragger")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Dragger.type): SharedBuilder_UploadPropsanyheightnumbe_553613363 = new SharedBuilder_UploadPropsanyheightnumbe_553613363(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: UploadPropsanyheightnumbe): SharedBuilder_UploadPropsanyheightnumbe_553613363 = new SharedBuilder_UploadPropsanyheightnumbe_553613363(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("antd/lib/upload", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  @JSImport("antd", "Upload")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def accept(value: String): this.type = set("accept", value.asInstanceOf[js.Any])
+    
+    inline def action(value: String | (js.Function1[/* file */ RcFile, PromiseLike[String] | String])): this.type = set("action", value.asInstanceOf[js.Any])
+    
+    inline def actionFunction1(value: /* file */ RcFile => PromiseLike[String] | String): this.type = set("action", js.Any.fromFunction1(value))
+    
+    inline def beforeUpload(
+      value: (/* file */ RcFile, /* FileList */ js.Array[RcFile]) => BeforeUploadValueType | js.Promise[BeforeUploadValueType]
+    ): this.type = set("beforeUpload", js.Any.fromFunction2(value))
+    
+    inline def capture(value: Boolean | user | environment): this.type = set("capture", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def customRequest(value: /* options */ UploadRequestOption[Any] => Callback): this.type = set("customRequest", js.Any.fromFunction1((t0: /* options */ UploadRequestOption[Any]) => value(t0).runNow()))
+    
+    inline def data(
+      value: (Record[String, Any]) | (js.Function1[
+          /* file */ UploadFile[Any], 
+          (Record[String, Any]) | (js.Promise[Record[String, Any]])
+        ])
+    ): this.type = set("data", value.asInstanceOf[js.Any])
+    
+    inline def dataFunction1(value: /* file */ UploadFile[Any] => (Record[String, Any]) | (js.Promise[Record[String, Any]])): this.type = set("data", js.Any.fromFunction1(value))
+    
+    inline def defaultFileList(value: js.Array[UploadFile[Any]]): this.type = set("defaultFileList", value.asInstanceOf[js.Any])
+    
+    inline def defaultFileListVarargs(value: UploadFile[Any]*): this.type = set("defaultFileList", js.Array(value*))
+    
+    inline def directory(value: Boolean): this.type = set("directory", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def fileList(value: js.Array[UploadFile[Any]]): this.type = set("fileList", value.asInstanceOf[js.Any])
+    
+    inline def fileListVarargs(value: UploadFile[Any]*): this.type = set("fileList", js.Array(value*))
+    
+    inline def headers(value: HttpRequestHeader): this.type = set("headers", value.asInstanceOf[js.Any])
+    
+    inline def iconRender(
+      value: (/* file */ UploadFile[Any], /* listType */ js.UndefOr[UploadListType]) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("iconRender", js.Any.fromFunction2(value))
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def isImageUrl(value: /* file */ UploadFile[Any] => Boolean): this.type = set("isImageUrl", js.Any.fromFunction1(value))
+    
+    inline def itemRender(
+      value: (/* originNode */ japgolly.scalajs.react.facade.React.Element, /* file */ UploadFile[Any], /* fileList */ js.Array[UploadFile[Any]], /* actions */ Download) => japgolly.scalajs.react.facade.React.Node
+    ): this.type = set("itemRender", js.Any.fromFunction4(value))
+    
+    inline def listType(value: UploadListType): this.type = set("listType", value.asInstanceOf[js.Any])
+    
+    inline def locale(value: UploadLocale): this.type = set("locale", value.asInstanceOf[js.Any])
+    
+    inline def maxCount(value: Double): this.type = set("maxCount", value.asInstanceOf[js.Any])
+    
+    inline def method(value: POST | PUT | PATCH | post_ | put_ | patch_): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def multiple(value: Boolean): this.type = set("multiple", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* info */ UploadChangeParam[UploadFile[Any]] => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* info */ UploadChangeParam[UploadFile[Any]]) => value(t0).runNow()))
+    
+    inline def onDownload(value: /* file */ UploadFile[Any] => Callback): this.type = set("onDownload", js.Any.fromFunction1((t0: /* file */ UploadFile[Any]) => value(t0).runNow()))
+    
+    inline def onDrop(value: /* event */ ReactDragEventFrom[HTMLDivElement] => Callback): this.type = set("onDrop", js.Any.fromFunction1((t0: /* event */ ReactDragEventFrom[HTMLDivElement]) => value(t0).runNow()))
+    
+    inline def onPreview(value: /* file */ UploadFile[Any] => Callback): this.type = set("onPreview", js.Any.fromFunction1((t0: /* file */ UploadFile[Any]) => value(t0).runNow()))
+    
+    inline def onRemove(value: /* file */ UploadFile[Any] => Unit | Boolean | (js.Promise[Unit | Boolean])): this.type = set("onRemove", js.Any.fromFunction1(value))
+    
+    inline def openFileDialogOnClick(value: Boolean): this.type = set("openFileDialogOnClick", value.asInstanceOf[js.Any])
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def previewFile(value: /* file */ File | Blob => PromiseLike[String]): this.type = set("previewFile", js.Any.fromFunction1(value))
+    
+    inline def progress(value: UploadListProgressProps): this.type = set("progress", value.asInstanceOf[js.Any])
+    
+    inline def showUploadList(value: Boolean | ShowUploadListInterface): this.type = set("showUploadList", value.asInstanceOf[js.Any])
+    
+    inline def style(value: CSSProperties): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def supportServerRender(value: Boolean): this.type = set("supportServerRender", value.asInstanceOf[js.Any])
+    
+    inline def transformFile(value: /* file */ RcFile => String | Blob | File | (PromiseLike[String | Blob | File])): this.type = set("transformFile", js.Any.fromFunction1(value))
+    
+    inline def `type`(value: UploadType): this.type = set("type", value.asInstanceOf[js.Any])
+    
+    inline def withCredentials(value: Boolean): this.type = set("withCredentials", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Upload.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: UploadProps[Any] & RefAttributes[Any]): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

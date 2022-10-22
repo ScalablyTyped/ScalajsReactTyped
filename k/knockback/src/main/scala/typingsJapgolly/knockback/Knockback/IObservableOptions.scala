@@ -2,62 +2,102 @@ package typingsJapgolly.knockback.Knockback
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import typingsJapgolly.knockout.KnockoutObservable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** parameter of ko.observable constructor
-	Options Hash: (option):
-	key (String) — the name of the attribute.
-	read (Function) — a function used to provide transform the attribute value before passing it to the caller. Signature: read()
-	write (Function) — a function used to provide transform the value before passing it to the model set function. Signature: write(value)
-	args (Array) — arguments to pass to the read and write functions (they can be ko.observables). Can be useful for passing arguments to a locale manager.
-	localizer (Constructor) — a concrete kb.LocalizedObservable constructor for localization.
-	default (Data|ko.observable) — the default value. Can be a value, string or ko.observable.
-	path (String) — the path to the value (used to create related observables from the factory).
-	store (kb.Store) — a store used to cache and share view models.
-	factory (kb.Factory) — a factory used to create view models.
-	options (Object) — a set of options merge into these options using _.defaults. Useful for extending options when deriving classes rather than merging them by hand.
-	*/
-trait IObservableOptions extends js.Object {
-  var args: js.UndefOr[js.Array[KnockoutObservable[_]]] = js.undefined
-  var default: js.UndefOr[js.Any] = js.undefined
-  var factory: js.UndefOr[js.Any] = js.undefined
+  Options Hash: (option):
+  key (String) — the name of the attribute.
+  read (Function) — a function used to provide transform the attribute value before passing it to the caller. Signature: read()
+  write (Function) — a function used to provide transform the value before passing it to the model set function. Signature: write(value)
+  args (Array) — arguments to pass to the read and write functions (they can be ko.observables). Can be useful for passing arguments to a locale manager.
+  localizer (Constructor) — a concrete kb.LocalizedObservable constructor for localization.
+  default (Data|ko.observable) — the default value. Can be a value, string or ko.observable.
+  path (String) — the path to the value (used to create related observables from the factory).
+  store (kb.Store) — a store used to cache and share view models.
+  factory (kb.Factory) — a factory used to create view models.
+  options (Object) — a set of options merge into these options using _.defaults. Useful for extending options when deriving classes rather than merging them by hand.
+  */
+trait IObservableOptions extends StObject {
+  
+  var default: js.UndefOr[Any] = js.undefined
+  
+  var args: js.UndefOr[
+    js.Array[
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
+    ]
+  ] = js.undefined
+  
+  var factory: js.UndefOr[Any] = js.undefined
+  
   var key: String
+  
   var localizer: js.UndefOr[LocalizedObservable] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
+  
+  var options: js.UndefOr[Any] = js.undefined
+  
   var path: js.UndefOr[String] = js.undefined
-  var read: js.UndefOr[js.Function0[_]] = js.undefined
-  var store: js.UndefOr[js.Any] = js.undefined
-  var write: js.UndefOr[js.Function1[/* value */ js.Any, Unit]] = js.undefined
+  
+  var read: js.UndefOr[js.Function0[Any]] = js.undefined
+  
+  var store: js.UndefOr[Any] = js.undefined
+  
+  var write: js.UndefOr[js.Function1[/* value */ Any, Unit]] = js.undefined
 }
-
 object IObservableOptions {
-  @scala.inline
-  def apply(
-    key: String,
-    args: js.Array[KnockoutObservable[_]] = null,
-    default: js.Any = null,
-    factory: js.Any = null,
-    localizer: LocalizedObservable = null,
-    options: js.Any = null,
-    path: String = null,
-    read: js.UndefOr[CallbackTo[js.Any]] = js.undefined,
-    store: js.Any = null,
-    write: /* value */ js.Any => Callback = null
-  ): IObservableOptions = {
+  
+  inline def apply(key: String): IObservableOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
-    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (factory != null) __obj.updateDynamic("factory")(factory.asInstanceOf[js.Any])
-    if (localizer != null) __obj.updateDynamic("localizer")(localizer.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
-    read.foreach(p => __obj.updateDynamic("read")(p.toJsFn))
-    if (store != null) __obj.updateDynamic("store")(store.asInstanceOf[js.Any])
-    if (write != null) __obj.updateDynamic("write")(js.Any.fromFunction1((t0: /* value */ js.Any) => write(t0).runNow()))
     __obj.asInstanceOf[IObservableOptions]
   }
+  
+  extension [Self <: IObservableOptions](x: Self) {
+    
+    inline def setArgs(
+      value: js.Array[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any
+        ]
+    ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    
+    inline def setArgsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<any> */ Any)*
+    ): Self = StObject.set(x, "args", js.Array(value*))
+    
+    inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setFactory(value: Any): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+    
+    inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizer(value: LocalizedObservable): Self = StObject.set(x, "localizer", value.asInstanceOf[js.Any])
+    
+    inline def setLocalizerUndefined: Self = StObject.set(x, "localizer", js.undefined)
+    
+    inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    
+    inline def setRead(value: CallbackTo[Any]): Self = StObject.set(x, "read", value.toJsFn)
+    
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    
+    inline def setStore(value: Any): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    
+    inline def setWrite(value: /* value */ Any => Callback): Self = StObject.set(x, "write", js.Any.fromFunction1((t0: /* value */ Any) => value(t0).runNow()))
+    
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+  }
 }
-

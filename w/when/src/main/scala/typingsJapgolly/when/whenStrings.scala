@@ -1,24 +1,20 @@
 package typingsJapgolly.when
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whenStrings {
-  @js.native
-  sealed trait fulfilled extends js.Object
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait fulfilled extends StObject
+  inline def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
   
   @js.native
-  sealed trait rejected extends js.Object
+  sealed trait pending extends StObject
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
-  @scala.inline
-  def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  @js.native
+  sealed trait rejected extends StObject
+  inline def rejected: rejected = "rejected".asInstanceOf[rejected]
 }
-

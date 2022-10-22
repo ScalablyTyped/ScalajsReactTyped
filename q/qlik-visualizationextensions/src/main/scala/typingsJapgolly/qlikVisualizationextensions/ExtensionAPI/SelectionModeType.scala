@@ -1,22 +1,18 @@
 package typingsJapgolly.qlikVisualizationextensions.ExtensionAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ExtensionAPI
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK
 */
-trait SelectionModeType extends js.Object
-
+trait SelectionModeType extends StObject
 object SelectionModeType {
-  @scala.inline
-  def CONFIRM: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = this.cast("CONFIRM")
-  @scala.inline
-  def QUICK: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = this.cast("QUICK")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CONFIRM: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM = "CONFIRM".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.CONFIRM]
+  
+  inline def QUICK: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK = "QUICK".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.QUICK]
 }
-

@@ -1,21 +1,17 @@
 package typingsJapgolly.stripeV2.stripe
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.stripeV2.stripeV2Strings.postalAddress
   - typingsJapgolly.stripeV2.stripeV2Strings.name
 */
-trait StripeApplePayBillingContactField extends js.Object
-
+trait StripeApplePayBillingContactField extends StObject
 object StripeApplePayBillingContactField {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def name: typingsJapgolly.stripeV2.stripeV2Strings.name = this.cast("name")
-  @scala.inline
-  def postalAddress: typingsJapgolly.stripeV2.stripeV2Strings.postalAddress = this.cast("postalAddress")
+  
+  inline def name: typingsJapgolly.stripeV2.stripeV2Strings.name = "name".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.name]
+  
+  inline def postalAddress: typingsJapgolly.stripeV2.stripeV2Strings.postalAddress = "postalAddress".asInstanceOf[typingsJapgolly.stripeV2.stripeV2Strings.postalAddress]
 }
-

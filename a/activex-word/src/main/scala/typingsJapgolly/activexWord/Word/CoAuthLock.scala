@@ -1,21 +1,67 @@
 package typingsJapgolly.activexWord.Word
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Word.CoAuthLock")
-@js.native
-class CoAuthLock protected () extends js.Object {
-  val Application: typingsJapgolly.activexWord.Word.Application = js.native
-  val Creator: Double = js.native
-  val HeaderFooter: Boolean = js.native
-  val Owner: CoAuthor = js.native
-  val Parent: js.Any = js.native
-  val Range: typingsJapgolly.activexWord.Word.Range = js.native
-  val Type: WdLockType = js.native
-  @JSName("Word.CoAuthLock_typekey")
-  var WordDotCoAuthLock_typekey: CoAuthLock = js.native
-  def Unlock(): Unit = js.native
+trait CoAuthLock extends StObject {
+  
+  val Application: typingsJapgolly.activexWord.Word.Application
+  
+  val Creator: Double
+  
+  val HeaderFooter: Boolean
+  
+  val Owner: CoAuthor
+  
+  val Parent: Any
+  
+  val Range: typingsJapgolly.activexWord.Word.Range
+  
+  val Type: WdLockType
+  
+  def Unlock(): Unit
+  
+  /* private */ @JSName("Word.CoAuthLock_typekey")
+  var WordDotCoAuthLock_typekey: CoAuthLock
 }
-
+object CoAuthLock {
+  
+  inline def apply(
+    Application: Application,
+    Creator: Double,
+    HeaderFooter: Boolean,
+    Owner: CoAuthor,
+    Parent: Any,
+    Range: Range,
+    Type: WdLockType,
+    Unlock: Callback,
+    WordDotCoAuthLock_typekey: CoAuthLock
+  ): CoAuthLock = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], HeaderFooter = HeaderFooter.asInstanceOf[js.Any], Owner = Owner.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Range = Range.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Unlock = Unlock.toJsFn)
+    __obj.updateDynamic("Word.CoAuthLock_typekey")(WordDotCoAuthLock_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CoAuthLock]
+  }
+  
+  extension [Self <: CoAuthLock](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderFooter(value: Boolean): Self = StObject.set(x, "HeaderFooter", value.asInstanceOf[js.Any])
+    
+    inline def setOwner(value: CoAuthor): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: WdLockType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    
+    inline def setUnlock(value: Callback): Self = StObject.set(x, "Unlock", value.toJsFn)
+    
+    inline def setWordDotCoAuthLock_typekey(value: CoAuthLock): Self = StObject.set(x, "Word.CoAuthLock_typekey", value.asInstanceOf[js.Any])
+  }
+}

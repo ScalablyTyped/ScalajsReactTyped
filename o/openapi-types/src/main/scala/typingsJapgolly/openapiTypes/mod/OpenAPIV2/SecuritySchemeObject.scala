@@ -1,90 +1,50 @@
 package typingsJapgolly.openapiTypes.mod.OpenAPIV2
 
-import typingsJapgolly.openapiTypes.openapiTypesStrings.`implicit`
-import typingsJapgolly.openapiTypes.openapiTypesStrings.accessCode
-import typingsJapgolly.openapiTypes.openapiTypesStrings.apiKey
-import typingsJapgolly.openapiTypes.openapiTypesStrings.application
-import typingsJapgolly.openapiTypes.openapiTypesStrings.basic
-import typingsJapgolly.openapiTypes.openapiTypesStrings.oauth2
-import typingsJapgolly.openapiTypes.openapiTypesStrings.password
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeBasic
   - typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeApiKey
   - typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2
 */
-trait SecuritySchemeObject extends js.Object
-
+trait SecuritySchemeObject extends StObject
 object SecuritySchemeObject {
-  @scala.inline
-  def SecuritySchemeBasic(`type`: basic, description: String = null): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
-  }
-  @scala.inline
-  def SecuritySchemeApiKey(in: String, name: String, `type`: apiKey, description: String = null): SecuritySchemeObject = {
+  
+  inline def SecuritySchemeApiKey(in: String, name: String): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeApiKey = {
     val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
+    __obj.updateDynamic("type")("apiKey")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeApiKey]
   }
-  @scala.inline
-  def SecuritySchemeOauth2Implicit(
-    authorizationUrl: String,
-    flow: `implicit`,
-    scopes: ScopesObject,
-    `type`: basic | apiKey | oauth2,
-    description: String = null
-  ): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
+  
+  inline def SecuritySchemeBasic(): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeBasic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("type")("basic")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeBasic]
   }
-  @scala.inline
-  def SecuritySchemeOauth2Application(
-    flow: application,
-    scopes: ScopesObject,
-    tokenUrl: String,
-    `type`: basic | apiKey | oauth2,
-    description: String = null
-  ): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
+  
+  inline def SecuritySchemeOauth2AccessCode(authorizationUrl: String, scopes: ScopesObject, tokenUrl: String): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2AccessCode = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "accessCode", scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2AccessCode]
   }
-  @scala.inline
-  def SecuritySchemeOauth2Password(
-    flow: password,
-    scopes: ScopesObject,
-    tokenUrl: String,
-    `type`: basic | apiKey | oauth2,
-    description: String = null
-  ): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
+  
+  inline def SecuritySchemeOauth2Application(scopes: ScopesObject, tokenUrl: String): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Application = {
+    val __obj = js.Dynamic.literal(flow = "application", scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Application]
   }
-  @scala.inline
-  def SecuritySchemeOauth2AccessCode(
-    authorizationUrl: String,
-    flow: accessCode,
-    scopes: ScopesObject,
-    tokenUrl: String,
-    `type`: basic | apiKey | oauth2,
-    description: String = null
-  ): SecuritySchemeObject = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    __obj.asInstanceOf[SecuritySchemeObject]
+  
+  inline def SecuritySchemeOauth2Implicit(authorizationUrl: String, scopes: ScopesObject): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Implicit = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "implicit", scopes = scopes.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Implicit]
+  }
+  
+  inline def SecuritySchemeOauth2Password(scopes: ScopesObject, tokenUrl: String): typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Password = {
+    val __obj = js.Dynamic.literal(flow = "password", scopes = scopes.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
+    __obj.asInstanceOf[typingsJapgolly.openapiTypes.mod.OpenAPIV2.SecuritySchemeOauth2Password]
   }
 }
-

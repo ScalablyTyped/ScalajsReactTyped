@@ -1,33 +1,30 @@
 package typingsJapgolly.vexflow.Vex.Flow
 
-import typingsJapgolly.vexflow.AnonLeftshift
 import typingsJapgolly.vexflow.Vex.Flow.Renderer.LineEndType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Vex.Flow.StringNumber")
 @js.native
-class StringNumber protected () extends Modifier {
-  def this(number: String) = this()
-  // actually this is not really consistent in the vexflow code "ctx.measureText(this.string_number).width" looks
-  // like it is a string. But from the use of it it might be a number ?!
-  def this(number: Double) = this()
-  var string_number: Double | String = js.native
+trait StringNumber
+  extends StObject
+     with Modifier {
+  
+  var radius: Double = js.native
+  
   def setDashed(dashed: Boolean): StringNumber = js.native
+  
   def setLastNote(note: StemmableNote): StringNumber = js.native
+  
   def setLineEndType(leg: LineEndType): StringNumber = js.native
+  
   def setNote(note: StemmableNote): StringNumber = js.native
+  
   def setOffsetX(x: Double): StringNumber = js.native
+  
   def setOffsetY(y: Double): StringNumber = js.native
+  
   def setStringNumber(number: Double): StringNumber = js.native
+  
+  var string_number: Double | String = js.native
 }
-
-/* static members */
-@JSGlobal("Vex.Flow.StringNumber")
-@js.native
-object StringNumber extends js.Object {
-  val CATEGORY: String = js.native
-  def format(nums: js.Array[StringNumber], state: AnonLeftshift): Boolean = js.native
-}
-

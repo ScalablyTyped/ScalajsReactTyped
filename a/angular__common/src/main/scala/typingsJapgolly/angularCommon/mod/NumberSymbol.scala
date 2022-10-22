@@ -1,44 +1,58 @@
 package typingsJapgolly.angularCommon.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait NumberSymbol extends js.Object
-
+sealed trait NumberSymbol extends StObject
 @JSImport("@angular/common", "NumberSymbol")
 @js.native
-object NumberSymbol extends js.Object {
+object NumberSymbol extends StObject {
+  
+  @JSBracketAccess
+  def apply(value: Double): js.UndefOr[NumberSymbol & Double] = js.native
+  
   /**
     * Decimal separator for currency values (fallback to `Decimal`).
     * Example: $2,345.67
     */
   @js.native
-  sealed trait CurrencyDecimal extends NumberSymbol
+  sealed trait CurrencyDecimal
+    extends StObject
+       with NumberSymbol
+  /* 12 */ val CurrencyDecimal: typingsJapgolly.angularCommon.mod.NumberSymbol.CurrencyDecimal & Double = js.native
   
   /**
     * Group separator for currency values (fallback to `Group`).
     * Example: $2,345.67
     */
   @js.native
-  sealed trait CurrencyGroup extends NumberSymbol
+  sealed trait CurrencyGroup
+    extends StObject
+       with NumberSymbol
+  /* 13 */ val CurrencyGroup: typingsJapgolly.angularCommon.mod.NumberSymbol.CurrencyGroup & Double = js.native
   
   /**
     * Decimal separator.
     * For `en-US`, the dot character.
-    * Example : 2,345`.`67
+    * Example: 2,345`.`67
     */
   @js.native
-  sealed trait Decimal extends NumberSymbol
+  sealed trait Decimal
+    extends StObject
+       with NumberSymbol
+  /* 0 */ val Decimal: typingsJapgolly.angularCommon.mod.NumberSymbol.Decimal & Double = js.native
   
   /**
     * Computer notation for exponential value (n times a power of 10).
     * Example: 1.2E3
     */
   @js.native
-  sealed trait Exponential extends NumberSymbol
+  sealed trait Exponential
+    extends StObject
+       with NumberSymbol
+  /* 6 */ val Exponential: typingsJapgolly.angularCommon.mod.NumberSymbol.Exponential & Double = js.native
   
   /**
     * Grouping separator, typically for thousands.
@@ -46,114 +60,98 @@ object NumberSymbol extends js.Object {
     * Example: 2`,`345.67
     */
   @js.native
-  sealed trait Group extends NumberSymbol
+  sealed trait Group
+    extends StObject
+       with NumberSymbol
+  /* 1 */ val Group: typingsJapgolly.angularCommon.mod.NumberSymbol.Group & Double = js.native
   
   /**
     * Infinity, can be used with plus and minus.
     * Example: ∞, +∞, -∞
     */
   @js.native
-  sealed trait Infinity extends NumberSymbol
+  sealed trait Infinity
+    extends StObject
+       with NumberSymbol
+  /* 9 */ val Infinity: typingsJapgolly.angularCommon.mod.NumberSymbol.Infinity & Double = js.native
   
   /**
     * List-item separator.
     * Example: "one, two, and three"
     */
   @js.native
-  sealed trait List extends NumberSymbol
+  sealed trait List
+    extends StObject
+       with NumberSymbol
+  /* 2 */ val List: typingsJapgolly.angularCommon.mod.NumberSymbol.List & Double = js.native
   
   /**
     * Sign for negative numbers.
     * Example: -23
     */
   @js.native
-  sealed trait MinusSign extends NumberSymbol
+  sealed trait MinusSign
+    extends StObject
+       with NumberSymbol
+  /* 5 */ val MinusSign: typingsJapgolly.angularCommon.mod.NumberSymbol.MinusSign & Double = js.native
   
   /**
     * Not a number.
     * Example: NaN
     */
   @js.native
-  sealed trait NaN extends NumberSymbol
+  sealed trait NaN
+    extends StObject
+       with NumberSymbol
+  /* 10 */ val NaN: typingsJapgolly.angularCommon.mod.NumberSymbol.NaN & Double = js.native
   
   /**
     * Sign for permille (out of 1000).
     * Example: 23.4‰
     */
   @js.native
-  sealed trait PerMille extends NumberSymbol
+  sealed trait PerMille
+    extends StObject
+       with NumberSymbol
+  /* 8 */ val PerMille: typingsJapgolly.angularCommon.mod.NumberSymbol.PerMille & Double = js.native
   
   /**
     * Sign for percentage (out of 100).
     * Example: 23.4%
     */
   @js.native
-  sealed trait PercentSign extends NumberSymbol
+  sealed trait PercentSign
+    extends StObject
+       with NumberSymbol
+  /* 3 */ val PercentSign: typingsJapgolly.angularCommon.mod.NumberSymbol.PercentSign & Double = js.native
   
   /**
     * Sign for positive numbers.
     * Example: +23
     */
   @js.native
-  sealed trait PlusSign extends NumberSymbol
+  sealed trait PlusSign
+    extends StObject
+       with NumberSymbol
+  /* 4 */ val PlusSign: typingsJapgolly.angularCommon.mod.NumberSymbol.PlusSign & Double = js.native
   
   /**
     * Human-readable format of exponential.
     * Example: 1.2x103
     */
   @js.native
-  sealed trait SuperscriptingExponent extends NumberSymbol
+  sealed trait SuperscriptingExponent
+    extends StObject
+       with NumberSymbol
+  /* 7 */ val SuperscriptingExponent: typingsJapgolly.angularCommon.mod.NumberSymbol.SuperscriptingExponent & Double = js.native
   
   /**
     * Symbol used between time units.
     * Example: 10:52
     */
   @js.native
-  sealed trait TimeSeparator extends NumberSymbol
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[NumberSymbol with Double] = js.native
-  /* 12 */ @js.native
-  object CurrencyDecimal extends TopLevel[CurrencyDecimal with Double]
-  
-  /* 13 */ @js.native
-  object CurrencyGroup extends TopLevel[CurrencyGroup with Double]
-  
-  /* 0 */ @js.native
-  object Decimal extends TopLevel[Decimal with Double]
-  
-  /* 6 */ @js.native
-  object Exponential extends TopLevel[Exponential with Double]
-  
-  /* 1 */ @js.native
-  object Group extends TopLevel[Group with Double]
-  
-  /* 9 */ @js.native
-  object Infinity extends TopLevel[Infinity with Double]
-  
-  /* 2 */ @js.native
-  object List extends TopLevel[List with Double]
-  
-  /* 5 */ @js.native
-  object MinusSign extends TopLevel[MinusSign with Double]
-  
-  /* 10 */ @js.native
-  object NaN extends TopLevel[NaN with Double]
-  
-  /* 8 */ @js.native
-  object PerMille extends TopLevel[PerMille with Double]
-  
-  /* 3 */ @js.native
-  object PercentSign extends TopLevel[PercentSign with Double]
-  
-  /* 4 */ @js.native
-  object PlusSign extends TopLevel[PlusSign with Double]
-  
-  /* 7 */ @js.native
-  object SuperscriptingExponent extends TopLevel[SuperscriptingExponent with Double]
-  
-  /* 11 */ @js.native
-  object TimeSeparator extends TopLevel[TimeSeparator with Double]
-  
+  sealed trait TimeSeparator
+    extends StObject
+       with NumberSymbol
+  /* 11 */ val TimeSeparator: typingsJapgolly.angularCommon.mod.NumberSymbol.TimeSeparator & Double = js.native
 }
-

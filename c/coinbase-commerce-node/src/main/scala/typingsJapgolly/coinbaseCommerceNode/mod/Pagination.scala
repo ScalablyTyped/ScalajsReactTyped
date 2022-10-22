@@ -2,9 +2,9 @@ package typingsJapgolly.coinbaseCommerceNode.mod
 
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.asc
 import typingsJapgolly.coinbaseCommerceNode.coinbaseCommerceNodeStrings.desc
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Pagination response.
@@ -12,39 +12,67 @@ import scala.scalajs.js.annotation._
   * @link https://commerce.coinbase.com/docs/api/#pagination
   */
 /* Inlined parent std.Pick<coinbase-commerce-node.coinbase-commerce-node.PaginationRequest, 'order' | 'starting_after' | 'ending_before' | 'limit'> */
-trait Pagination extends js.Object {
+trait Pagination extends StObject {
+  
   var cursor_range: js.Tuple2[String, String]
-  var ending_before: js.UndefOr[String] = js.undefined
+  
+  var ending_before: js.UndefOr[String | Null] = js.undefined
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var next_uri: Null | String
+  
   var order: js.UndefOr[asc | desc] = js.undefined
+  
   var previous_uri: Null | String
-  var starting_after: js.UndefOr[String] = js.undefined
+  
+  var starting_after: js.UndefOr[String | Null] = js.undefined
+  
   var total: Double
+  
   var yielded: Double
 }
-
 object Pagination {
-  @scala.inline
-  def apply(
-    cursor_range: js.Tuple2[String, String],
-    total: Double,
-    yielded: Double,
-    ending_before: String = null,
-    limit: Int | Double = null,
-    next_uri: String = null,
-    order: asc | desc = null,
-    previous_uri: String = null,
-    starting_after: String = null
-  ): Pagination = {
-    val __obj = js.Dynamic.literal(cursor_range = cursor_range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], yielded = yielded.asInstanceOf[js.Any])
-    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (next_uri != null) __obj.updateDynamic("next_uri")(next_uri.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (previous_uri != null) __obj.updateDynamic("previous_uri")(previous_uri.asInstanceOf[js.Any])
-    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after.asInstanceOf[js.Any])
+  
+  inline def apply(cursor_range: js.Tuple2[String, String], total: Double, yielded: Double): Pagination = {
+    val __obj = js.Dynamic.literal(cursor_range = cursor_range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], yielded = yielded.asInstanceOf[js.Any], next_uri = null, previous_uri = null)
     __obj.asInstanceOf[Pagination]
   }
+  
+  extension [Self <: Pagination](x: Self) {
+    
+    inline def setCursor_range(value: js.Tuple2[String, String]): Self = StObject.set(x, "cursor_range", value.asInstanceOf[js.Any])
+    
+    inline def setEnding_before(value: String): Self = StObject.set(x, "ending_before", value.asInstanceOf[js.Any])
+    
+    inline def setEnding_beforeNull: Self = StObject.set(x, "ending_before", null)
+    
+    inline def setEnding_beforeUndefined: Self = StObject.set(x, "ending_before", js.undefined)
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setNext_uri(value: String): Self = StObject.set(x, "next_uri", value.asInstanceOf[js.Any])
+    
+    inline def setNext_uriNull: Self = StObject.set(x, "next_uri", null)
+    
+    inline def setOrder(value: asc | desc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    
+    inline def setPrevious_uri(value: String): Self = StObject.set(x, "previous_uri", value.asInstanceOf[js.Any])
+    
+    inline def setPrevious_uriNull: Self = StObject.set(x, "previous_uri", null)
+    
+    inline def setStarting_after(value: String): Self = StObject.set(x, "starting_after", value.asInstanceOf[js.Any])
+    
+    inline def setStarting_afterNull: Self = StObject.set(x, "starting_after", null)
+    
+    inline def setStarting_afterUndefined: Self = StObject.set(x, "starting_after", js.undefined)
+    
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    
+    inline def setYielded(value: Double): Self = StObject.set(x, "yielded", value.asInstanceOf[js.Any])
+  }
 }
-

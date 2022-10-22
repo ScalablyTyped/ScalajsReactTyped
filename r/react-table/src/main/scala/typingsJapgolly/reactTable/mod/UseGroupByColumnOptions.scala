@@ -1,34 +1,50 @@
 package typingsJapgolly.reactTable.mod
 
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined std.Partial<{  aggregate  :react-table.react-table.Aggregator<D> | std.Array<react-table.react-table.Aggregator<D>>,   Aggregated  :react-table.react-table.Renderer<react-table.react-table.CellProps<D>>,   disableGroupBy  :boolean,   defaultCanGroupBy  :boolean,   groupByBoundary  :boolean}> */
-trait UseGroupByColumnOptions[D /* <: js.Object */] extends js.Object {
-  var Aggregated: js.UndefOr[Renderer[CellProps[D]]] = js.undefined
-  var aggregate: js.UndefOr[Aggregator[D] | js.Array[Aggregator[D]]] = js.undefined
+/* Inlined std.Partial<{  aggregate :react-table.react-table.Aggregator<D>,   Aggregated :react-table.react-table.Renderer<react-table.react-table.CellProps<D, any>>,   disableGroupBy :boolean,   defaultCanGroupBy :boolean}> */
+trait UseGroupByColumnOptions[D /* <: js.Object */] extends StObject {
+  
+  var Aggregated: js.UndefOr[Renderer[CellProps[D, Any]]] = js.undefined
+  
+  var aggregate: js.UndefOr[Aggregator[D]] = js.undefined
+  
   var defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined
+  
   var disableGroupBy: js.UndefOr[Boolean] = js.undefined
-  var groupByBoundary: js.UndefOr[Boolean] = js.undefined
 }
-
 object UseGroupByColumnOptions {
-  @scala.inline
-  def apply[D /* <: js.Object */](
-    Aggregated: Renderer[CellProps[D]] = null,
-    aggregate: Aggregator[D] | js.Array[Aggregator[D]] = null,
-    defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined,
-    disableGroupBy: js.UndefOr[Boolean] = js.undefined,
-    groupByBoundary: js.UndefOr[Boolean] = js.undefined
-  ): UseGroupByColumnOptions[D] = {
+  
+  inline def apply[D /* <: js.Object */](): UseGroupByColumnOptions[D] = {
     val __obj = js.Dynamic.literal()
-    if (Aggregated != null) __obj.updateDynamic("Aggregated")(Aggregated.asInstanceOf[js.Any])
-    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultCanGroupBy)) __obj.updateDynamic("defaultCanGroupBy")(defaultCanGroupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableGroupBy)) __obj.updateDynamic("disableGroupBy")(disableGroupBy.asInstanceOf[js.Any])
-    if (!js.isUndefined(groupByBoundary)) __obj.updateDynamic("groupByBoundary")(groupByBoundary.asInstanceOf[js.Any])
     __obj.asInstanceOf[UseGroupByColumnOptions[D]]
   }
+  
+  extension [Self <: UseGroupByColumnOptions[?], D /* <: js.Object */](x: Self & UseGroupByColumnOptions[D]) {
+    
+    inline def setAggregate(value: Aggregator[D]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    
+    inline def setAggregateFunction3(
+      value: (/* columnValues */ js.Array[CellValue[Any]], /* rows */ js.Array[Row[D]], /* isAggregated */ Boolean) => AggregatedValue
+    ): Self = StObject.set(x, "aggregate", js.Any.fromFunction3(value))
+    
+    inline def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
+    
+    inline def setAggregated(value: Renderer[CellProps[D, Any]]): Self = StObject.set(x, "Aggregated", value.asInstanceOf[js.Any])
+    
+    inline def setAggregatedUndefined: Self = StObject.set(x, "Aggregated", js.undefined)
+    
+    inline def setAggregatedVdomElement(value: VdomElement): Self = StObject.set(x, "Aggregated", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def setDefaultCanGroupBy(value: Boolean): Self = StObject.set(x, "defaultCanGroupBy", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultCanGroupByUndefined: Self = StObject.set(x, "defaultCanGroupBy", js.undefined)
+    
+    inline def setDisableGroupBy(value: Boolean): Self = StObject.set(x, "disableGroupBy", value.asInstanceOf[js.Any])
+    
+    inline def setDisableGroupByUndefined: Self = StObject.set(x, "disableGroupBy", js.undefined)
+  }
 }
-

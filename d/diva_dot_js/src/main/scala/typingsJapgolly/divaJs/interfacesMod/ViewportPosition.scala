@@ -1,27 +1,36 @@
 package typingsJapgolly.divaJs.interfacesMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ViewportPosition extends js.Object {
+trait ViewportPosition extends StObject {
+  
   var anchorPage: Boolean
+  
   var horizontalOffset: Double
+  
   var verticalOffset: Double
+  
   var zoomLevel: Null | Double
 }
-
 object ViewportPosition {
-  @scala.inline
-  def apply(
-    anchorPage: Boolean,
-    horizontalOffset: Double,
-    verticalOffset: Double,
-    zoomLevel: Int | Double = null
-  ): ViewportPosition = {
-    val __obj = js.Dynamic.literal(anchorPage = anchorPage.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], verticalOffset = verticalOffset.asInstanceOf[js.Any])
-    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
+  
+  inline def apply(anchorPage: Boolean, horizontalOffset: Double, verticalOffset: Double): ViewportPosition = {
+    val __obj = js.Dynamic.literal(anchorPage = anchorPage.asInstanceOf[js.Any], horizontalOffset = horizontalOffset.asInstanceOf[js.Any], verticalOffset = verticalOffset.asInstanceOf[js.Any], zoomLevel = null)
     __obj.asInstanceOf[ViewportPosition]
   }
+  
+  extension [Self <: ViewportPosition](x: Self) {
+    
+    inline def setAnchorPage(value: Boolean): Self = StObject.set(x, "anchorPage", value.asInstanceOf[js.Any])
+    
+    inline def setHorizontalOffset(value: Double): Self = StObject.set(x, "horizontalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setVerticalOffset(value: Double): Self = StObject.set(x, "verticalOffset", value.asInstanceOf[js.Any])
+    
+    inline def setZoomLevel(value: Double): Self = StObject.set(x, "zoomLevel", value.asInstanceOf[js.Any])
+    
+    inline def setZoomLevelNull: Self = StObject.set(x, "zoomLevel", null)
+  }
 }
-

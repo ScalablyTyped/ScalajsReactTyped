@@ -1,41 +1,51 @@
 package typingsJapgolly.monacoEditor.mod.languages.typescript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait JsxEmit extends js.Object
-
+sealed trait JsxEmit extends StObject
 @JSImport("monaco-editor", "languages.typescript.JsxEmit")
 @js.native
-object JsxEmit extends js.Object {
-  @js.native
-  sealed trait None extends JsxEmit
-  
-  @js.native
-  sealed trait Preserve extends JsxEmit
-  
-  @js.native
-  sealed trait React extends JsxEmit
-  
-  @js.native
-  sealed trait ReactNative extends JsxEmit
+object JsxEmit extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[JsxEmit with Double] = js.native
-  /* 0 */ @js.native
-  object None extends TopLevel[None with Double]
+  def apply(value: Double): js.UndefOr[JsxEmit & Double] = js.native
   
-  /* 1 */ @js.native
-  object Preserve extends TopLevel[Preserve with Double]
+  @js.native
+  sealed trait None
+    extends StObject
+       with JsxEmit
+  /* 0 */ val None: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.None & Double = js.native
   
-  /* 2 */ @js.native
-  object React extends TopLevel[React with Double]
+  @js.native
+  sealed trait Preserve
+    extends StObject
+       with JsxEmit
+  /* 1 */ val Preserve: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.Preserve & Double = js.native
   
-  /* 3 */ @js.native
-  object ReactNative extends TopLevel[ReactNative with Double]
+  @js.native
+  sealed trait React
+    extends StObject
+       with JsxEmit
+  /* 2 */ val React: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.React & Double = js.native
   
+  @js.native
+  sealed trait ReactJSX
+    extends StObject
+       with JsxEmit
+  /* 4 */ val ReactJSX: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.ReactJSX & Double = js.native
+  
+  @js.native
+  sealed trait ReactJSXDev
+    extends StObject
+       with JsxEmit
+  /* 5 */ val ReactJSXDev: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.ReactJSXDev & Double = js.native
+  
+  @js.native
+  sealed trait ReactNative
+    extends StObject
+       with JsxEmit
+  /* 3 */ val ReactNative: typingsJapgolly.monacoEditor.mod.languages.typescript.JsxEmit.ReactNative & Double = js.native
 }
-

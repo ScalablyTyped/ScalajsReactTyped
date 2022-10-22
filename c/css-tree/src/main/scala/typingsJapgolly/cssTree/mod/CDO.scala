@@ -1,24 +1,28 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait CDO
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
+  
   @JSName("type")
   var type_CDO: typingsJapgolly.cssTree.cssTreeStrings.CDO
 }
-
 object CDO {
-  @scala.inline
-  def apply(`type`: typingsJapgolly.cssTree.cssTreeStrings.CDO, loc: CssLocation = null): CDO = {
+  
+  inline def apply(): CDO = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CDO")
     __obj.asInstanceOf[CDO]
   }
+  
+  extension [Self <: CDO](x: Self) {
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.CDO): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

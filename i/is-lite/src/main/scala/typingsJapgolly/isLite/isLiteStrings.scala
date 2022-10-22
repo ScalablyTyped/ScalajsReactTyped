@@ -1,120 +1,160 @@
 package typingsJapgolly.isLite
 
-import typingsJapgolly.isLite.mod.Types
+import typingsJapgolly.isLite.mod.ObjectTypes
+import typingsJapgolly.isLite.mod.PrimitiveTypes
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isLiteStrings {
-  @js.native
-  sealed trait Array extends Types
   
   @js.native
-  sealed trait AsyncFunction extends Types
+  sealed trait Array
+    extends StObject
+       with ObjectTypes
+  inline def Array: Array = "Array".asInstanceOf[Array]
   
   @js.native
-  sealed trait Date extends Types
+  sealed trait ArrayBuffer
+    extends StObject
+       with ObjectTypes
+  inline def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
   
   @js.native
-  sealed trait Error extends Types
+  sealed trait AsyncFunction
+    extends StObject
+       with ObjectTypes
+  inline def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
   
   @js.native
-  sealed trait Function extends Types
+  sealed trait AsyncGenerator
+    extends StObject
+       with ObjectTypes
+  inline def AsyncGenerator: AsyncGenerator = "AsyncGenerator".asInstanceOf[AsyncGenerator]
   
   @js.native
-  sealed trait Generator extends Types
+  sealed trait AsyncGeneratorFunction
+    extends StObject
+       with ObjectTypes
+  inline def AsyncGeneratorFunction: AsyncGeneratorFunction = "AsyncGeneratorFunction".asInstanceOf[AsyncGeneratorFunction]
   
   @js.native
-  sealed trait GeneratorFunction extends Types
+  sealed trait Date
+    extends StObject
+       with ObjectTypes
+  inline def Date: Date = "Date".asInstanceOf[Date]
   
   @js.native
-  sealed trait Iterable extends Types
+  sealed trait Error
+    extends StObject
+       with ObjectTypes
+  inline def Error: Error = "Error".asInstanceOf[Error]
   
   @js.native
-  sealed trait Map extends Types
+  sealed trait Function
+    extends StObject
+       with ObjectTypes
+  inline def Function: Function = "Function".asInstanceOf[Function]
   
   @js.native
-  sealed trait Object extends Types
+  sealed trait Generator
+    extends StObject
+       with ObjectTypes
+  inline def Generator: Generator = "Generator".asInstanceOf[Generator]
   
   @js.native
-  sealed trait Promise extends Types
+  sealed trait GeneratorFunction
+    extends StObject
+       with ObjectTypes
+  inline def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
   
   @js.native
-  sealed trait RegExp extends Types
+  sealed trait HTMLElement
+    extends StObject
+       with ObjectTypes
+  inline def HTMLElement: HTMLElement = "HTMLElement".asInstanceOf[HTMLElement]
   
   @js.native
-  sealed trait Set extends Types
+  sealed trait Map
+    extends StObject
+       with ObjectTypes
+  inline def Map: Map = "Map".asInstanceOf[Map]
   
   @js.native
-  sealed trait WeakMap extends Types
+  sealed trait Object
+    extends StObject
+       with ObjectTypes
+  inline def Object: Object = "Object".asInstanceOf[Object]
   
   @js.native
-  sealed trait WeakSet extends Types
+  sealed trait Promise
+    extends StObject
+       with ObjectTypes
+  inline def Promise: Promise = "Promise".asInstanceOf[Promise]
   
   @js.native
-  sealed trait bigint extends Types
+  sealed trait RegExp
+    extends StObject
+       with ObjectTypes
+  inline def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
   
   @js.native
-  sealed trait boolean extends Types
+  sealed trait Set
+    extends StObject
+       with ObjectTypes
+  inline def Set: Set = "Set".asInstanceOf[Set]
   
   @js.native
-  sealed trait `null` extends Types
+  sealed trait WeakMap
+    extends StObject
+       with ObjectTypes
+  inline def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
   
   @js.native
-  sealed trait number extends Types
+  sealed trait WeakSet
+    extends StObject
+       with ObjectTypes
+  inline def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
   
   @js.native
-  sealed trait string extends Types
+  sealed trait bigint
+    extends StObject
+       with PrimitiveTypes
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
-  sealed trait symbol extends Types
+  sealed trait boolean
+    extends StObject
+       with PrimitiveTypes
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait undefined extends Types
+  sealed trait `null`
+    extends StObject
+       with PrimitiveTypes
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
-  @scala.inline
-  def Array: Array = "Array".asInstanceOf[Array]
-  @scala.inline
-  def AsyncFunction: AsyncFunction = "AsyncFunction".asInstanceOf[AsyncFunction]
-  @scala.inline
-  def Date: Date = "Date".asInstanceOf[Date]
-  @scala.inline
-  def Error: Error = "Error".asInstanceOf[Error]
-  @scala.inline
-  def Function: Function = "Function".asInstanceOf[Function]
-  @scala.inline
-  def Generator: Generator = "Generator".asInstanceOf[Generator]
-  @scala.inline
-  def GeneratorFunction: GeneratorFunction = "GeneratorFunction".asInstanceOf[GeneratorFunction]
-  @scala.inline
-  def Iterable: Iterable = "Iterable".asInstanceOf[Iterable]
-  @scala.inline
-  def Map: Map = "Map".asInstanceOf[Map]
-  @scala.inline
-  def Object: Object = "Object".asInstanceOf[Object]
-  @scala.inline
-  def Promise: Promise = "Promise".asInstanceOf[Promise]
-  @scala.inline
-  def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
-  @scala.inline
-  def Set: Set = "Set".asInstanceOf[Set]
-  @scala.inline
-  def WeakMap: WeakMap = "WeakMap".asInstanceOf[WeakMap]
-  @scala.inline
-  def WeakSet: WeakSet = "WeakSet".asInstanceOf[WeakSet]
-  @scala.inline
-  def bigint: bigint = "bigint".asInstanceOf[bigint]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @js.native
+  sealed trait number
+    extends StObject
+       with PrimitiveTypes
+  inline def number: number = "number".asInstanceOf[number]
+  
+  @js.native
+  sealed trait string
+    extends StObject
+       with PrimitiveTypes
+  inline def string: string = "string".asInstanceOf[string]
+  
+  @js.native
+  sealed trait symbol
+    extends StObject
+       with PrimitiveTypes
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with PrimitiveTypes
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

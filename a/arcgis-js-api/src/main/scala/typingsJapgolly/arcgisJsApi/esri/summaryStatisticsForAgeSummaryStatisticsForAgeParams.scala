@@ -1,37 +1,57 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.days
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.hours
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.minutes
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.months
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.seconds
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.years
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends Object {
+trait summaryStatisticsForAgeSummaryStatisticsForAgeParams
+  extends StObject
+     with Object {
+  
   /**
-    * The end time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `startTime` parameter must be a field name.
+    * The end time for the age calculation.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
   var endTime: js.Date | String | Double
+  
   /**
     * The layer from which to generate age statistics for the given `startTime` and `endTime`.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer
+  
   /**
-    * The start time for the age calculation. This can be a field name or a date value, such as `Date.now()`. If a `Date` is provided, then the `endTime` parameter must be a field name.
+    * Allows for cancelable requests.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
+  /**
+    * The start time for the age calculation.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
   var startTime: js.Date | String | Double
+  
   /**
-    * The desired units of the age result.  **Possible Values:** years | months | days | hours | minutes | seconds
+    * The desired units of the age result.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var unit: String
+  var unit: years | months | days | hours | minutes | seconds
+  
   /**
     * The view in which features will be rendered.
     *
@@ -39,24 +59,37 @@ trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends Object {
     */
   var view: js.UndefOr[MapView | SceneView] = js.undefined
 }
-
 object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     endTime: js.Date | String | Double,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer,
+    propertyIsEnumerable: PropertyKey => Boolean,
     startTime: js.Date | String | Double,
-    unit: String,
-    view: MapView | SceneView = null
+    unit: years | months | days | hours | minutes | seconds
   ): summaryStatisticsForAgeSummaryStatisticsForAgeParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], endTime = endTime.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), startTime = startTime.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any])
     __obj.asInstanceOf[summaryStatisticsForAgeSummaryStatisticsForAgeParams]
   }
+  
+  extension [Self <: summaryStatisticsForAgeSummaryStatisticsForAgeParams](x: Self) {
+    
+    inline def setEndTime(value: js.Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer | WFSLayer | OGCFeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setStartTime(value: js.Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    
+    inline def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    
+    inline def setView(value: MapView | SceneView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+  }
 }
-

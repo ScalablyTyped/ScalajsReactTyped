@@ -1,18 +1,13 @@
 package typingsJapgolly.reactJsonschemaForm.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.jsonSchema.mod.JSONSchema6
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.react.mod.FunctionComponent
 import typingsJapgolly.reactJsonschemaForm.mod.AjvError
 import typingsJapgolly.reactJsonschemaForm.mod.ArrayFieldTemplateProps
 import typingsJapgolly.reactJsonschemaForm.mod.ErrorListProps
 import typingsJapgolly.reactJsonschemaForm.mod.ErrorSchema
-import typingsJapgolly.reactJsonschemaForm.mod.Field
 import typingsJapgolly.reactJsonschemaForm.mod.FieldTemplateProps
 import typingsJapgolly.reactJsonschemaForm.mod.FormProps
 import typingsJapgolly.reactJsonschemaForm.mod.FormValidation
@@ -20,106 +15,99 @@ import typingsJapgolly.reactJsonschemaForm.mod.IChangeEvent
 import typingsJapgolly.reactJsonschemaForm.mod.ISubmitEvent
 import typingsJapgolly.reactJsonschemaForm.mod.ObjectFieldTemplateProps
 import typingsJapgolly.reactJsonschemaForm.mod.UiSchema
-import typingsJapgolly.reactJsonschemaForm.mod.Widget
 import typingsJapgolly.reactJsonschemaForm.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactJsonschemaForm {
-  def apply[T](
-    schema: JSONSchema6,
-    ArrayFieldTemplate: StatelessComponent[ArrayFieldTemplateProps[_]] = null,
-    ErrorList: StatelessComponent[ErrorListProps] = null,
-    FieldTemplate: StatelessComponent[FieldTemplateProps] = null,
-    ObjectFieldTemplate: StatelessComponent[ObjectFieldTemplateProps[_]] = null,
-    acceptcharset: String = null,
-    action: String = null,
-    additionalMetaSchemas: js.Array[js.Object] = null,
-    autocomplete: String = null,
-    className: String = null,
-    customFormats: StringDictionary[String | js.RegExp | (js.Function1[/* data */ String, Boolean])] = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    enctype: String = null,
-    fields: StringDictionary[Field] = null,
-    formContext: js.Any = null,
-    formData: T = null,
-    id: String = null,
-    idPrefix: String = null,
-    liveOmit: js.UndefOr[Boolean] = js.undefined,
-    liveValidate: js.UndefOr[Boolean] = js.undefined,
-    method: String = null,
-    name: String = null,
-    noHtml5Validate: js.UndefOr[Boolean] = js.undefined,
-    noValidate: js.UndefOr[Boolean] = js.undefined,
-    omitExtraData: js.UndefOr[Boolean] = js.undefined,
-    onBlur: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback = null,
-    onChange: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => CallbackTo[js.Any] = null,
-    onError: /* e */ js.Any => CallbackTo[js.Any] = null,
-    onSubmit: /* e */ ISubmitEvent[T] => CallbackTo[js.Any] = null,
-    safeRenderCompletion: js.UndefOr[Boolean] = js.undefined,
-    showErrorList: js.UndefOr[Boolean] = js.undefined,
-    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any = null,
-    target: String = null,
-    transformErrors: /* errors */ js.Array[AjvError] => CallbackTo[js.Array[AjvError]] = null,
-    uiSchema: UiSchema = null,
-    validate: (T, /* errors */ FormValidation) => CallbackTo[FormValidation] = null,
-    widgets: StringDictionary[Widget] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[FormProps[T], default[T], Unit, FormProps[T]] = {
-    val __obj = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
   
-      if (ArrayFieldTemplate != null) __obj.updateDynamic("ArrayFieldTemplate")(ArrayFieldTemplate.asInstanceOf[js.Any])
-    if (ErrorList != null) __obj.updateDynamic("ErrorList")(ErrorList.asInstanceOf[js.Any])
-    if (FieldTemplate != null) __obj.updateDynamic("FieldTemplate")(FieldTemplate.asInstanceOf[js.Any])
-    if (ObjectFieldTemplate != null) __obj.updateDynamic("ObjectFieldTemplate")(ObjectFieldTemplate.asInstanceOf[js.Any])
-    if (acceptcharset != null) __obj.updateDynamic("acceptcharset")(acceptcharset.asInstanceOf[js.Any])
-    if (action != null) __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
-    if (additionalMetaSchemas != null) __obj.updateDynamic("additionalMetaSchemas")(additionalMetaSchemas.asInstanceOf[js.Any])
-    if (autocomplete != null) __obj.updateDynamic("autocomplete")(autocomplete.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customFormats != null) __obj.updateDynamic("customFormats")(customFormats.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (enctype != null) __obj.updateDynamic("enctype")(enctype.asInstanceOf[js.Any])
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (formContext != null) __obj.updateDynamic("formContext")(formContext.asInstanceOf[js.Any])
-    if (formData != null) __obj.updateDynamic("formData")(formData.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveOmit)) __obj.updateDynamic("liveOmit")(liveOmit.asInstanceOf[js.Any])
-    if (!js.isUndefined(liveValidate)) __obj.updateDynamic("liveValidate")(liveValidate.asInstanceOf[js.Any])
-    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (!js.isUndefined(noHtml5Validate)) __obj.updateDynamic("noHtml5Validate")(noHtml5Validate.asInstanceOf[js.Any])
-    if (!js.isUndefined(noValidate)) __obj.updateDynamic("noValidate")(noValidate.asInstanceOf[js.Any])
-    if (!js.isUndefined(omitExtraData)) __obj.updateDynamic("omitExtraData")(omitExtraData.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2((t0: /* id */ java.lang.String, t1: /* value */ scala.Boolean | scala.Double | java.lang.String | scala.Null) => onBlur(t0, t1).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction2((t0: /* e */ typingsJapgolly.reactJsonschemaForm.mod.IChangeEvent[T], t1: /* es */ js.UndefOr[typingsJapgolly.reactJsonschemaForm.mod.ErrorSchema]) => onChange(t0, t1).runNow()))
-    if (onError != null) __obj.updateDynamic("onError")(js.Any.fromFunction1((t0: /* e */ js.Any) => onError(t0).runNow()))
-    if (onSubmit != null) __obj.updateDynamic("onSubmit")(js.Any.fromFunction1((t0: /* e */ typingsJapgolly.reactJsonschemaForm.mod.ISubmitEvent[T]) => onSubmit(t0).runNow()))
-    if (!js.isUndefined(safeRenderCompletion)) __obj.updateDynamic("safeRenderCompletion")(safeRenderCompletion.asInstanceOf[js.Any])
-    if (!js.isUndefined(showErrorList)) __obj.updateDynamic("showErrorList")(showErrorList.asInstanceOf[js.Any])
-    if (tagName != null) __obj.updateDynamic("tagName")(tagName.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
-    if (transformErrors != null) __obj.updateDynamic("transformErrors")(js.Any.fromFunction1((t0: /* errors */ js.Array[typingsJapgolly.reactJsonschemaForm.mod.AjvError]) => transformErrors(t0).runNow()))
-    if (uiSchema != null) __obj.updateDynamic("uiSchema")(uiSchema.asInstanceOf[js.Any])
-    if (validate != null) __obj.updateDynamic("validate")(js.Any.fromFunction2((t0: T, t1: /* errors */ typingsJapgolly.reactJsonschemaForm.mod.FormValidation) => validate(t0, t1).runNow()))
-    if (widgets != null) __obj.updateDynamic("widgets")(widgets.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactJsonschemaForm.mod.FormProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactJsonschemaForm.mod.default[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactJsonschemaForm.mod.FormProps[T]])(children: _*)
+  inline def apply[T](schema: JSONSchema6): Builder[T] = {
+    val __props = js.Dynamic.literal(schema = schema.asInstanceOf[js.Any])
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[FormProps[T]]))
   }
+  
   @JSImport("react-jsonschema-form", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default[T]] {
+    
+    inline def ArrayFieldTemplate(value: FunctionComponent[ArrayFieldTemplateProps[Any]]): this.type = set("ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def ErrorList(value: FunctionComponent[ErrorListProps]): this.type = set("ErrorList", value.asInstanceOf[js.Any])
+    
+    inline def FieldTemplate(value: FunctionComponent[FieldTemplateProps]): this.type = set("FieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def ObjectFieldTemplate(value: FunctionComponent[ObjectFieldTemplateProps[Any]]): this.type = set("ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    
+    inline def acceptcharset(value: String): this.type = set("acceptcharset", value.asInstanceOf[js.Any])
+    
+    inline def action(value: String): this.type = set("action", value.asInstanceOf[js.Any])
+    
+    inline def additionalMetaSchemas(value: js.Array[js.Object]): this.type = set("additionalMetaSchemas", value.asInstanceOf[js.Any])
+    
+    inline def additionalMetaSchemasVarargs(value: js.Object*): this.type = set("additionalMetaSchemas", js.Array(value*))
+    
+    inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def enctype(value: String): this.type = set("enctype", value.asInstanceOf[js.Any])
+    
+    inline def formContext(value: Any): this.type = set("formContext", value.asInstanceOf[js.Any])
+    
+    inline def formData(value: T): this.type = set("formData", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def idPrefix(value: String): this.type = set("idPrefix", value.asInstanceOf[js.Any])
+    
+    inline def liveOmit(value: Boolean): this.type = set("liveOmit", value.asInstanceOf[js.Any])
+    
+    inline def liveValidate(value: Boolean): this.type = set("liveValidate", value.asInstanceOf[js.Any])
+    
+    inline def method(value: String): this.type = set("method", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def noHtml5Validate(value: Boolean): this.type = set("noHtml5Validate", value.asInstanceOf[js.Any])
+    
+    inline def noValidate(value: Boolean): this.type = set("noValidate", value.asInstanceOf[js.Any])
+    
+    inline def omitExtraData(value: Boolean): this.type = set("omitExtraData", value.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback): this.type = set("onBlur", js.Any.fromFunction2((t0: /* id */ String, t1: /* value */ Boolean | Double | String | Null) => (value(t0, t1)).runNow()))
+    
+    inline def onChange(value: (/* e */ IChangeEvent[T], /* es */ js.UndefOr[ErrorSchema]) => Any): this.type = set("onChange", js.Any.fromFunction2(value))
+    
+    inline def onError(value: /* e */ Any => Any): this.type = set("onError", js.Any.fromFunction1(value))
+    
+    inline def onFocus(value: (/* id */ String, /* value */ Boolean | Double | String | Null) => Callback): this.type = set("onFocus", js.Any.fromFunction2((t0: /* id */ String, t1: /* value */ Boolean | Double | String | Null) => (value(t0, t1)).runNow()))
+    
+    inline def onSubmit(value: /* e */ ISubmitEvent[T] => Any): this.type = set("onSubmit", js.Any.fromFunction1(value))
+    
+    inline def safeRenderCompletion(value: Boolean): this.type = set("safeRenderCompletion", value.asInstanceOf[js.Any])
+    
+    inline def showErrorList(value: Boolean): this.type = set("showErrorList", value.asInstanceOf[js.Any])
+    
+    inline def tagName(
+      value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 177, starting with typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.a, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.abbr, typingsJapgolly.reactJsonschemaForm.reactJsonschemaFormStrings.address */ Any
+    ): this.type = set("tagName", value.asInstanceOf[js.Any])
+    
+    inline def target(value: String): this.type = set("target", value.asInstanceOf[js.Any])
+    
+    inline def transformErrors(value: /* errors */ js.Array[AjvError] => js.Array[AjvError]): this.type = set("transformErrors", js.Any.fromFunction1(value))
+    
+    inline def uiSchema(value: UiSchema): this.type = set("uiSchema", value.asInstanceOf[js.Any])
+    
+    inline def validate(value: (T, /* errors */ FormValidation) => FormValidation): this.type = set("validate", js.Any.fromFunction2(value))
+  }
+  
+  def withProps[T](p: FormProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

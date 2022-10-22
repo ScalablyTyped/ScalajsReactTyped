@@ -1,23 +1,36 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EditorToolItem extends js.Object {
+trait EditorToolItem extends StObject {
+  
   var context: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var value: js.UndefOr[String] = js.undefined
 }
-
 object EditorToolItem {
-  @scala.inline
-  def apply(context: String = null, text: String = null, value: String = null): EditorToolItem = {
+  
+  inline def apply(): EditorToolItem = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorToolItem]
   }
+  
+  extension [Self <: EditorToolItem](x: Self) {
+    
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

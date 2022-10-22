@@ -1,26 +1,31 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RefreshableLayerProperties extends js.Object {
+trait RefreshableLayerProperties extends StObject {
+  
   /**
-    * Refresh interval of the layer in minutes. Value of `0` indicates no refresh.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
+    * Refresh interval of the layer in minutes.
     *
     * @default 0
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-RefreshableLayer.html#refreshInterval)
     */
   var refreshInterval: js.UndefOr[Double] = js.undefined
 }
-
 object RefreshableLayerProperties {
-  @scala.inline
-  def apply(refreshInterval: Int | Double = null): RefreshableLayerProperties = {
+  
+  inline def apply(): RefreshableLayerProperties = {
     val __obj = js.Dynamic.literal()
-    if (refreshInterval != null) __obj.updateDynamic("refreshInterval")(refreshInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefreshableLayerProperties]
   }
+  
+  extension [Self <: RefreshableLayerProperties](x: Self) {
+    
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+  }
 }
-

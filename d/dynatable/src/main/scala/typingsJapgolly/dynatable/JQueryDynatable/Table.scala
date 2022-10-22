@@ -1,18 +1,21 @@
 package typingsJapgolly.dynatable.JQueryDynatable
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Table extends js.Object {
+trait Table extends StObject {
+  
   /**
     * Selector used by dynatable in order to find the table body rows
     *
     * @default 'tbody tr'
     */
   var bodyRowSelector: js.UndefOr[String] = js.undefined
+  
   /** Generated internally by the plugin, will be reset by the DomColumns at init */
   var columns: js.UndefOr[js.Array[Column]] = js.undefined
+  
   /**
     * By default, dynatable converts headings to JSON attribute names using:
     *
@@ -29,12 +32,14 @@ trait Table extends js.Object {
     * // `lowercase` would translate it to id `favorite music`
     */
   var defaultColumnIdStyle: js.UndefOr[String] = js.undefined
+  
   /**
     * Optional classname that can be added by dynatable to the header cells
     *
     * @default null
     */
   var headRowClass: js.UndefOr[String] = js.undefined
+  
   /**
     * Selector used by dynatable in order to find the table header row
     *
@@ -42,23 +47,35 @@ trait Table extends js.Object {
     */
   var headRowSelector: js.UndefOr[String] = js.undefined
 }
-
 object Table {
-  @scala.inline
-  def apply(
-    bodyRowSelector: String = null,
-    columns: js.Array[Column] = null,
-    defaultColumnIdStyle: String = null,
-    headRowClass: String = null,
-    headRowSelector: String = null
-  ): Table = {
+  
+  inline def apply(): Table = {
     val __obj = js.Dynamic.literal()
-    if (bodyRowSelector != null) __obj.updateDynamic("bodyRowSelector")(bodyRowSelector.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (defaultColumnIdStyle != null) __obj.updateDynamic("defaultColumnIdStyle")(defaultColumnIdStyle.asInstanceOf[js.Any])
-    if (headRowClass != null) __obj.updateDynamic("headRowClass")(headRowClass.asInstanceOf[js.Any])
-    if (headRowSelector != null) __obj.updateDynamic("headRowSelector")(headRowSelector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Table]
   }
+  
+  extension [Self <: Table](x: Self) {
+    
+    inline def setBodyRowSelector(value: String): Self = StObject.set(x, "bodyRowSelector", value.asInstanceOf[js.Any])
+    
+    inline def setBodyRowSelectorUndefined: Self = StObject.set(x, "bodyRowSelector", js.undefined)
+    
+    inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setDefaultColumnIdStyle(value: String): Self = StObject.set(x, "defaultColumnIdStyle", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultColumnIdStyleUndefined: Self = StObject.set(x, "defaultColumnIdStyle", js.undefined)
+    
+    inline def setHeadRowClass(value: String): Self = StObject.set(x, "headRowClass", value.asInstanceOf[js.Any])
+    
+    inline def setHeadRowClassUndefined: Self = StObject.set(x, "headRowClass", js.undefined)
+    
+    inline def setHeadRowSelector(value: String): Self = StObject.set(x, "headRowSelector", value.asInstanceOf[js.Any])
+    
+    inline def setHeadRowSelectorUndefined: Self = StObject.set(x, "headRowSelector", js.undefined)
+  }
 }
-

@@ -1,17 +1,16 @@
 package typingsJapgolly.dynogels.mod.AWS
 
-import typingsJapgolly.awsSdk.workmailMod.ClientConfiguration
+import typingsJapgolly.awsSdk.clientsWorkmailMod.ClientConfiguration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.WorkMail")
 @js.native
 /**
   * Constructs a service object. This object has one method for each API operation.
   */
-class WorkMail ()
+open class WorkMail ()
   extends typingsJapgolly.awsSdk.mod.WorkMail {
   def this(options: ClientConfiguration) = this()
 }
-

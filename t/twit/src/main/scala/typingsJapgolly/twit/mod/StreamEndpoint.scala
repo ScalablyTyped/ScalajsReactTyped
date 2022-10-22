@@ -1,8 +1,8 @@
 package typingsJapgolly.twit.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.twit.twitStrings.statusesSlashfilter
@@ -11,20 +11,16 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.twit.twitStrings.user
   - typingsJapgolly.twit.twitStrings.site
 */
-trait StreamEndpoint extends js.Object
-
+trait StreamEndpoint extends StObject
 object StreamEndpoint {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def site: typingsJapgolly.twit.twitStrings.site = this.cast("site")
-  @scala.inline
-  def statusesSlashfilter: typingsJapgolly.twit.twitStrings.statusesSlashfilter = this.cast("statuses/filter")
-  @scala.inline
-  def statusesSlashfirehose: typingsJapgolly.twit.twitStrings.statusesSlashfirehose = this.cast("statuses/firehose")
-  @scala.inline
-  def statusesSlashsample: typingsJapgolly.twit.twitStrings.statusesSlashsample = this.cast("statuses/sample")
-  @scala.inline
-  def user: typingsJapgolly.twit.twitStrings.user = this.cast("user")
+  
+  inline def site: typingsJapgolly.twit.twitStrings.site = "site".asInstanceOf[typingsJapgolly.twit.twitStrings.site]
+  
+  inline def statusesSlashfilter: typingsJapgolly.twit.twitStrings.statusesSlashfilter = "statuses/filter".asInstanceOf[typingsJapgolly.twit.twitStrings.statusesSlashfilter]
+  
+  inline def statusesSlashfirehose: typingsJapgolly.twit.twitStrings.statusesSlashfirehose = "statuses/firehose".asInstanceOf[typingsJapgolly.twit.twitStrings.statusesSlashfirehose]
+  
+  inline def statusesSlashsample: typingsJapgolly.twit.twitStrings.statusesSlashsample = "statuses/sample".asInstanceOf[typingsJapgolly.twit.twitStrings.statusesSlashsample]
+  
+  inline def user: typingsJapgolly.twit.twitStrings.user = "user".asInstanceOf[typingsJapgolly.twit.twitStrings.user]
 }
-

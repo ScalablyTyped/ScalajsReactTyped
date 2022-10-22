@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheetColumn extends js.Object {
+trait SpreadsheetSheetColumn extends StObject {
+  
   var index: js.UndefOr[Double] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object SpreadsheetSheetColumn {
-  @scala.inline
-  def apply(index: Int | Double = null, width: Int | Double = null): SpreadsheetSheetColumn = {
+  
+  inline def apply(): SpreadsheetSheetColumn = {
     val __obj = js.Dynamic.literal()
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheetColumn]
   }
+  
+  extension [Self <: SpreadsheetSheetColumn](x: Self) {
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

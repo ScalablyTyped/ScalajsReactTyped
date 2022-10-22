@@ -1,12 +1,23 @@
 package typingsJapgolly.swaggerSchemaOfficial.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Reference extends js.Object {
+trait Reference extends StObject {
+  
   @JSName("$ref")
-  var $ref: String = js.native
+  var $ref: String
 }
-
+object Reference {
+  
+  inline def apply($ref: String): Reference = {
+    val __obj = js.Dynamic.literal($ref = $ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Reference]
+  }
+  
+  extension [Self <: Reference](x: Self) {
+    
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+  }
+}

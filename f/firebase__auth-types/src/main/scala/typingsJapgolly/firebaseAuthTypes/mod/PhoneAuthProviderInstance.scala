@@ -1,15 +1,19 @@
 package typingsJapgolly.firebaseAuthTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "PhoneAuthProvider_Instance")
 @js.native
-class PhoneAuthProviderInstance () extends AuthProvider {
+open class PhoneAuthProviderInstance ()
+  extends StObject
+     with AuthProvider {
   def this(auth: FirebaseAuth) = this()
+  
   /* CompleteClass */
-  override var providerId: String = js.native
-  def verifyPhoneNumber(phoneNumber: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
+  var providerId: String = js.native
+  
+  def verifyPhoneNumber(phoneInfoOptions: String, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
+  def verifyPhoneNumber(phoneInfoOptions: PhoneInfoOptions, applicationVerifier: ApplicationVerifier): js.Promise[String] = js.native
 }
-

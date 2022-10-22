@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SPClientTemplates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UrlFormatType extends js.Object
-
+sealed trait UrlFormatType extends StObject
 @JSGlobal("SPClientTemplates.UrlFormatType")
 @js.native
-object UrlFormatType extends js.Object {
-  @js.native
-  sealed trait Hyperlink extends UrlFormatType
+object UrlFormatType extends StObject {
   
   @js.native
-  sealed trait Image extends UrlFormatType
+  sealed trait Hyperlink
+    extends StObject
+       with UrlFormatType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UrlFormatType with Double] = js.native
-  /* 0 */ @js.native
-  object Hyperlink extends TopLevel[Hyperlink with Double]
-  
-  /* 1 */ @js.native
-  object Image extends TopLevel[Image with Double]
-  
+  @js.native
+  sealed trait Image
+    extends StObject
+       with UrlFormatType
 }
-

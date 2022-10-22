@@ -1,51 +1,84 @@
 package typingsJapgolly.navermaps.naver.maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StyleOptions extends js.Object {
+trait StyleOptions extends StObject {
+  
   var clickable: js.UndefOr[Boolean] = js.undefined
+  
   var fillColor: js.UndefOr[String] = js.undefined
+  
   var fillOpacity: js.UndefOr[Double] = js.undefined
+  
   var icon: js.UndefOr[String | ImageIcon | SymbolIcon | HtmlIcon] = js.undefined
+  
   var shape: js.UndefOr[MarkerShape] = js.undefined
+  
   var strokeColor: js.UndefOr[String] = js.undefined
+  
   var strokeOpacity: js.UndefOr[Double] = js.undefined
+  
   var strokeWeight: js.UndefOr[Double] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
+  
   var visible: js.UndefOr[Boolean] = js.undefined
+  
   var zIndex: js.UndefOr[Double] = js.undefined
 }
-
 object StyleOptions {
-  @scala.inline
-  def apply(
-    clickable: js.UndefOr[Boolean] = js.undefined,
-    fillColor: String = null,
-    fillOpacity: Int | Double = null,
-    icon: String | ImageIcon | SymbolIcon | HtmlIcon = null,
-    shape: MarkerShape = null,
-    strokeColor: String = null,
-    strokeOpacity: Int | Double = null,
-    strokeWeight: Int | Double = null,
-    title: String = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zIndex: Int | Double = null
-  ): StyleOptions = {
+  
+  inline def apply(): StyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable.asInstanceOf[js.Any])
-    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
-    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleOptions]
   }
+  
+  extension [Self <: StyleOptions](x: Self) {
+    
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    
+    inline def setIcon(value: String | ImageIcon | SymbolIcon | HtmlIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setShape(value: MarkerShape): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    
+    inline def setStrokeWeight(value: Double): Self = StObject.set(x, "strokeWeight", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWeightUndefined: Self = StObject.set(x, "strokeWeight", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+  }
 }
-

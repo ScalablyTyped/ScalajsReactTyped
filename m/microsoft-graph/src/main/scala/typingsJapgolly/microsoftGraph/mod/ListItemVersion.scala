@@ -1,30 +1,29 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListItemVersion extends BaseItemVersion {
+trait ListItemVersion
+  extends StObject
+     with BaseItemVersion {
+  
   // A collection of the fields and values for this version of the list item.
-  var fields: js.UndefOr[FieldValueSet] = js.undefined
+  var fields: js.UndefOr[NullableOption[FieldValueSet]] = js.undefined
 }
-
 object ListItemVersion {
-  @scala.inline
-  def apply(
-    fields: FieldValueSet = null,
-    id: String = null,
-    lastModifiedBy: IdentitySet = null,
-    lastModifiedDateTime: String = null,
-    publication: PublicationFacet = null
-  ): ListItemVersion = {
+  
+  inline def apply(): ListItemVersion = {
     val __obj = js.Dynamic.literal()
-    if (fields != null) __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (lastModifiedBy != null) __obj.updateDynamic("lastModifiedBy")(lastModifiedBy.asInstanceOf[js.Any])
-    if (lastModifiedDateTime != null) __obj.updateDynamic("lastModifiedDateTime")(lastModifiedDateTime.asInstanceOf[js.Any])
-    if (publication != null) __obj.updateDynamic("publication")(publication.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListItemVersion]
   }
+  
+  extension [Self <: ListItemVersion](x: Self) {
+    
+    inline def setFields(value: NullableOption[FieldValueSet]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsNull: Self = StObject.set(x, "fields", null)
+    
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+  }
 }
-

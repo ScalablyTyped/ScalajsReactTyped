@@ -1,22 +1,34 @@
 package typingsJapgolly.reactNativeAuth0.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LogoutParams extends js.Object {
+trait LogoutParams extends StObject {
+  
   var clientId: js.UndefOr[String] = js.undefined
+  
   var federated: Boolean
+  
   var returnTo: js.UndefOr[String] = js.undefined
 }
-
 object LogoutParams {
-  @scala.inline
-  def apply(federated: Boolean, clientId: String = null, returnTo: String = null): LogoutParams = {
+  
+  inline def apply(federated: Boolean): LogoutParams = {
     val __obj = js.Dynamic.literal(federated = federated.asInstanceOf[js.Any])
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (returnTo != null) __obj.updateDynamic("returnTo")(returnTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogoutParams]
   }
+  
+  extension [Self <: LogoutParams](x: Self) {
+    
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setFederated(value: Boolean): Self = StObject.set(x, "federated", value.asInstanceOf[js.Any])
+    
+    inline def setReturnTo(value: String): Self = StObject.set(x, "returnTo", value.asInstanceOf[js.Any])
+    
+    inline def setReturnToUndefined: Self = StObject.set(x, "returnTo", js.undefined)
+  }
 }
-

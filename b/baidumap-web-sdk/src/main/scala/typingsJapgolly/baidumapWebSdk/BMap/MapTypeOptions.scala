@@ -1,33 +1,48 @@
 package typingsJapgolly.baidumapWebSdk.BMap
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapTypeOptions extends js.Object {
+trait MapTypeOptions extends StObject {
+  
   var errorImageUrl: js.UndefOr[String] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var minZoom: js.UndefOr[Double] = js.undefined
+  
   var textColor: js.UndefOr[Double] = js.undefined
+  
   var tips: js.UndefOr[String] = js.undefined
 }
-
 object MapTypeOptions {
-  @scala.inline
-  def apply(
-    errorImageUrl: String = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    textColor: Int | Double = null,
-    tips: String = null
-  ): MapTypeOptions = {
+  
+  inline def apply(): MapTypeOptions = {
     val __obj = js.Dynamic.literal()
-    if (errorImageUrl != null) __obj.updateDynamic("errorImageUrl")(errorImageUrl.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (textColor != null) __obj.updateDynamic("textColor")(textColor.asInstanceOf[js.Any])
-    if (tips != null) __obj.updateDynamic("tips")(tips.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapTypeOptions]
   }
+  
+  extension [Self <: MapTypeOptions](x: Self) {
+    
+    inline def setErrorImageUrl(value: String): Self = StObject.set(x, "errorImageUrl", value.asInstanceOf[js.Any])
+    
+    inline def setErrorImageUrlUndefined: Self = StObject.set(x, "errorImageUrl", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+    
+    inline def setTextColor(value: Double): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    
+    inline def setTips(value: String): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    
+    inline def setTipsUndefined: Self = StObject.set(x, "tips", js.undefined)
+  }
 }
-

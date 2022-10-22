@@ -1,17 +1,10 @@
 package typingsJapgolly.pixiJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/**
-  * Fill style object for Graphics.
-  *
-  * @class
-  * @memberof PIXI
-  */
 @JSImport("pixi.js", "FillStyle")
 @js.native
-class FillStyle ()
-  extends typingsJapgolly.pixiJs.PIXI.FillStyle
-
+open class FillStyle ()
+  extends typingsJapgolly.pixiGraphics.mod.FillStyle

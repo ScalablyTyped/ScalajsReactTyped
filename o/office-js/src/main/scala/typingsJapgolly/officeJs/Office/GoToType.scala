@@ -1,67 +1,56 @@
 package typingsJapgolly.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GoToType extends js.Object
-
+sealed trait GoToType extends StObject
 /**
   * Specifies the type of place or object to navigate to.
   */
 @JSGlobal("Office.GoToType")
 @js.native
-object GoToType extends js.Object {
+object GoToType extends StObject {
+  
   /**
-    * Goes to a binding object using the specified binding id.
-    * 
-    * Supported hosts: Excel, Word
+    * Goes to a binding object using the specified binding ID.
+    *
+    * Supported applications: Excel, Word
     */
   @js.native
-  sealed trait Binding extends GoToType
+  sealed trait Binding
+    extends StObject
+       with GoToType
   
   /**
     * Goes to the specified index by slide number or {@link Office.Index}.
-    * 
-    * Supported hosts: PowerPoint
+    *
+    * Supported applications: PowerPoint
     */
   @js.native
-  sealed trait Index extends GoToType
+  sealed trait Index
+    extends StObject
+       with GoToType
   
   /**
     * Goes to a named item using that item's name.
     * In Excel, you can use any structured reference for a named range or table: "Worksheet2!Table1"
-    * 
-    * Supported hosts: Excel
+    *
+    * Supported applications: Excel
     */
   @js.native
-  sealed trait NamedItem extends GoToType
+  sealed trait NamedItem
+    extends StObject
+       with GoToType
   
   /**
-    * Goes to a slide using the specified id.
-    * 
-    * Supported hosts: PowerPoint
+    * Goes to a slide using the specified ID.
+    *
+    * Supported applications: PowerPoint
     */
   @js.native
-  sealed trait Slide extends GoToType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GoToType with Double] = js.native
-  /* 0 */ @js.native
-  object Binding
-    extends TopLevel[typingsJapgolly.officeJs.Office.GoToType.Binding with Double]
-  
-  /* 3 */ @js.native
-  object Index
-    extends TopLevel[typingsJapgolly.officeJs.Office.GoToType.Index with Double]
-  
-  /* 1 */ @js.native
-  object NamedItem extends TopLevel[NamedItem with Double]
-  
-  /* 2 */ @js.native
-  object Slide extends TopLevel[Slide with Double]
-  
+  sealed trait Slide
+    extends StObject
+       with GoToType
 }
-

@@ -2,18 +2,17 @@ package typingsJapgolly.dynogels.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typingsJapgolly.joi.mod.AnySchema
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SchemaType extends /* key */ StringDictionary[AnySchema | SchemaType]
-
+trait SchemaType
+  extends StObject
+     with /* key */ StringDictionary[AnySchema[Any] | SchemaType]
 object SchemaType {
-  @scala.inline
-  def apply(StringDictionary: /* key */ StringDictionary[AnySchema | SchemaType] = null): SchemaType = {
+  
+  inline def apply(): SchemaType = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[SchemaType]
   }
 }
-

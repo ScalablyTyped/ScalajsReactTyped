@@ -9,10 +9,10 @@ Efficient implementation of Levenshtein algorithm  with locale-specific collator
 | ------------------ | :-------------: |
 | Full name          | fast-levenshtein |
 | Keywords           | levenshtein, distance, string |
-| # releases         | 1 |
-| # dependents       | 179 |
-| # downloads        | 374748475 |
-| # stars            | 17 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 1.1067155633333333E8 |
+| # stars            | 554.0 |
 
 ## Links
 - [Homepage](https://github.com/hiddentao/fast-levenshtein#readme)

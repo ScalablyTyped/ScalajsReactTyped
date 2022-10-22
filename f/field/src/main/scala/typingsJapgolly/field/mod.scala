@@ -1,13 +1,16 @@
 package typingsJapgolly.field
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("field", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def get(topObj: js.Any, fields: String): js.Any = js.native
-  def set(topObj: js.Any, fields: String, value: js.Any): js.Any = js.native
+object mod {
+  
+  @JSImport("field", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def get(topObj: Any, fields: String): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(topObj.asInstanceOf[js.Any], fields.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def set(topObj: Any, fields: String, value: Any): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(topObj.asInstanceOf[js.Any], fields.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Any]
 }
-

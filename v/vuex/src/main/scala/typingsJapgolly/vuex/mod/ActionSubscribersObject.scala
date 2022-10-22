@@ -1,22 +1,36 @@
 package typingsJapgolly.vuex.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ActionSubscribersObject[P, S] extends js.Object {
+trait ActionSubscribersObject[P, S] extends StObject {
+  
   var after: js.UndefOr[ActionSubscriber[P, S]] = js.undefined
+  
   var before: js.UndefOr[ActionSubscriber[P, S]] = js.undefined
+  
+  var error: js.UndefOr[ActionErrorSubscriber[P, S]] = js.undefined
 }
-
 object ActionSubscribersObject {
-  @scala.inline
-  def apply[P, S](after: (P, S) => CallbackTo[js.Any] = null, before: (P, S) => CallbackTo[js.Any] = null): ActionSubscribersObject[P, S] = {
+  
+  inline def apply[P, S](): ActionSubscribersObject[P, S] = {
     val __obj = js.Dynamic.literal()
-    if (after != null) __obj.updateDynamic("after")(js.Any.fromFunction2((t0: P, t1: S) => after(t0, t1).runNow()))
-    if (before != null) __obj.updateDynamic("before")(js.Any.fromFunction2((t0: P, t1: S) => before(t0, t1).runNow()))
     __obj.asInstanceOf[ActionSubscribersObject[P, S]]
   }
+  
+  extension [Self <: ActionSubscribersObject[?, ?], P, S](x: Self & (ActionSubscribersObject[P, S])) {
+    
+    inline def setAfter(value: (P, S) => Any): Self = StObject.set(x, "after", js.Any.fromFunction2(value))
+    
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    
+    inline def setBefore(value: (P, S) => Any): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+    
+    inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+    
+    inline def setError(value: (P, S, /* error */ js.Error) => Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+  }
 }
-

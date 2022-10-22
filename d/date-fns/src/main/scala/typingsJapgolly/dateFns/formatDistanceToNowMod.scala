@@ -1,22 +1,21 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.AddSuffix
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/formatDistanceToNow", JSImport.Namespace)
-@js.native
-object formatDistanceToNowMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(date: Double): String = js.native
-    def apply(date: Double, options: AnonAddSuffix): String = js.native
-    def apply(date: Double, options: AnonIncludeSeconds): String = js.native
-    def apply(date: Date): String = js.native
-    def apply(date: Date, options: AnonAddSuffix): String = js.native
-    def apply(date: Date, options: AnonIncludeSeconds): String = js.native
-  }
+object formatDistanceToNowMod {
   
+  object default {
+    
+    inline def apply(date: js.Date): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(date: js.Date, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def apply(date: Double): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def apply(date: Double, options: AddSuffix): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @JSImport("date-fns/formatDistanceToNow", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

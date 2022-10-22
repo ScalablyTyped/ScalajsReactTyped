@@ -1,17 +1,19 @@
 package typingsJapgolly.oracledb.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used when creating a new SODA document.
   */
-trait SodaDocumentOptions extends js.Object {
+trait SodaDocumentOptions extends StObject {
+  
   /**
     * Must be supplied if the document in intended to be inserted into a collection with client-assigned keys. It should be undefined, otherwise.
     */
   var key: js.UndefOr[String] = js.undefined
+  
   /**
     * If the document has non-JSON content, then mediaType should be set to the desired media type. Using a MIME type is recommended.
     *
@@ -19,14 +21,21 @@ trait SodaDocumentOptions extends js.Object {
     */
   var mediaType: js.UndefOr[String] = js.undefined
 }
-
 object SodaDocumentOptions {
-  @scala.inline
-  def apply(key: String = null, mediaType: String = null): SodaDocumentOptions = {
+  
+  inline def apply(): SodaDocumentOptions = {
     val __obj = js.Dynamic.literal()
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
-    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SodaDocumentOptions]
   }
+  
+  extension [Self <: SodaDocumentOptions](x: Self) {
+    
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    
+    inline def setMediaType(value: String): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+  }
 }
-

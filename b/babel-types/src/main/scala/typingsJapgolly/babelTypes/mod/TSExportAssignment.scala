@@ -1,20 +1,29 @@
 package typingsJapgolly.babelTypes.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait TSExportAssignment
-  extends Node
+  extends StObject
+     with Node
      with Statement {
+  
   var expression: Expression
+  
   @JSName("type")
   var type_TSExportAssignment: typingsJapgolly.babelTypes.babelTypesStrings.TSExportAssignment
 }
-
-@JSImport("babel-types", "TSExportAssignment")
-@js.native
-object TSExportAssignment extends js.Object {
+object TSExportAssignment {
+  
+  @JSImport("babel-types", "TSExportAssignment")
+  @js.native
   def apply(expression: Expression): TSExportAssignment = js.native
+  
+  extension [Self <: TSExportAssignment](x: Self) {
+    
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.babelTypes.babelTypesStrings.TSExportAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

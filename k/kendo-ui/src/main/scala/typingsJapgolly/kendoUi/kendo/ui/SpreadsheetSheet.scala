@@ -1,55 +1,95 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import typingsJapgolly.kendoUi.kendo.data.DataSource
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SpreadsheetSheet extends js.Object {
+trait SpreadsheetSheet extends StObject {
+  
   var activeCell: js.UndefOr[String] = js.undefined
+  
   var columns: js.UndefOr[js.Array[SpreadsheetSheetColumn]] = js.undefined
+  
   var dataSource: js.UndefOr[DataSource] = js.undefined
+  
   var filter: js.UndefOr[SpreadsheetSheetFilter] = js.undefined
+  
   var frozenColumns: js.UndefOr[Double] = js.undefined
+  
   var frozenRows: js.UndefOr[Double] = js.undefined
-  var mergedCells: js.UndefOr[js.Any] = js.undefined
+  
+  var mergedCells: js.UndefOr[Any] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var rows: js.UndefOr[js.Array[SpreadsheetSheetRow]] = js.undefined
+  
   var selection: js.UndefOr[String] = js.undefined
+  
   var showGridLines: js.UndefOr[Boolean] = js.undefined
+  
   var sort: js.UndefOr[SpreadsheetSheetSort] = js.undefined
 }
-
 object SpreadsheetSheet {
-  @scala.inline
-  def apply(
-    activeCell: String = null,
-    columns: js.Array[SpreadsheetSheetColumn] = null,
-    dataSource: DataSource = null,
-    filter: SpreadsheetSheetFilter = null,
-    frozenColumns: Int | Double = null,
-    frozenRows: Int | Double = null,
-    mergedCells: js.Any = null,
-    name: String = null,
-    rows: js.Array[SpreadsheetSheetRow] = null,
-    selection: String = null,
-    showGridLines: js.UndefOr[Boolean] = js.undefined,
-    sort: SpreadsheetSheetSort = null
-  ): SpreadsheetSheet = {
+  
+  inline def apply(): SpreadsheetSheet = {
     val __obj = js.Dynamic.literal()
-    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
-    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
-    if (frozenColumns != null) __obj.updateDynamic("frozenColumns")(frozenColumns.asInstanceOf[js.Any])
-    if (frozenRows != null) __obj.updateDynamic("frozenRows")(frozenRows.asInstanceOf[js.Any])
-    if (mergedCells != null) __obj.updateDynamic("mergedCells")(mergedCells.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (selection != null) __obj.updateDynamic("selection")(selection.asInstanceOf[js.Any])
-    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines.asInstanceOf[js.Any])
-    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpreadsheetSheet]
   }
+  
+  extension [Self <: SpreadsheetSheet](x: Self) {
+    
+    inline def setActiveCell(value: String): Self = StObject.set(x, "activeCell", value.asInstanceOf[js.Any])
+    
+    inline def setActiveCellUndefined: Self = StObject.set(x, "activeCell", js.undefined)
+    
+    inline def setColumns(value: js.Array[SpreadsheetSheetColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setColumnsVarargs(value: SpreadsheetSheetColumn*): Self = StObject.set(x, "columns", js.Array(value*))
+    
+    inline def setDataSource(value: DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setFilter(value: SpreadsheetSheetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    
+    inline def setFrozenColumns(value: Double): Self = StObject.set(x, "frozenColumns", value.asInstanceOf[js.Any])
+    
+    inline def setFrozenColumnsUndefined: Self = StObject.set(x, "frozenColumns", js.undefined)
+    
+    inline def setFrozenRows(value: Double): Self = StObject.set(x, "frozenRows", value.asInstanceOf[js.Any])
+    
+    inline def setFrozenRowsUndefined: Self = StObject.set(x, "frozenRows", js.undefined)
+    
+    inline def setMergedCells(value: Any): Self = StObject.set(x, "mergedCells", value.asInstanceOf[js.Any])
+    
+    inline def setMergedCellsUndefined: Self = StObject.set(x, "mergedCells", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setRows(value: js.Array[SpreadsheetSheetRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    
+    inline def setRowsVarargs(value: SpreadsheetSheetRow*): Self = StObject.set(x, "rows", js.Array(value*))
+    
+    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    
+    inline def setShowGridLines(value: Boolean): Self = StObject.set(x, "showGridLines", value.asInstanceOf[js.Any])
+    
+    inline def setShowGridLinesUndefined: Self = StObject.set(x, "showGridLines", js.undefined)
+    
+    inline def setSort(value: SpreadsheetSheetSort): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+  }
 }
-

@@ -1,16 +1,26 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PushSubscriptionOptions extends js.Object {
-  val applicationServerKey: scala.scalajs.js.typedarray.ArrayBuffer | Null
-  val userVisibleOnly: scala.Boolean
+/** Available only in secure contexts. */
+trait PushSubscriptionOptions extends StObject {
+  
+  /* standard dom */
+  val applicationServerKey: js.typedarray.ArrayBuffer | Null
 }
-
-@JSGlobal("PushSubscriptionOptions")
-@js.native
-object PushSubscriptionOptions extends Instantiable0[PushSubscriptionOptions]
-
+object PushSubscriptionOptions {
+  
+  inline def apply(): PushSubscriptionOptions = {
+    val __obj = js.Dynamic.literal(applicationServerKey = null)
+    __obj.asInstanceOf[PushSubscriptionOptions]
+  }
+  
+  extension [Self <: PushSubscriptionOptions](x: Self) {
+    
+    inline def setApplicationServerKey(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "applicationServerKey", value.asInstanceOf[js.Any])
+    
+    inline def setApplicationServerKeyNull: Self = StObject.set(x, "applicationServerKey", null)
+  }
+}

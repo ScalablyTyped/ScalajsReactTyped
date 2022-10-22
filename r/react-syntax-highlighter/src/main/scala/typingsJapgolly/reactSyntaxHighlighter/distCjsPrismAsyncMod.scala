@@ -1,0 +1,17 @@
+package typingsJapgolly.reactSyntaxHighlighter
+
+import typingsJapgolly.react.mod.Component
+import typingsJapgolly.reactSyntaxHighlighter.mod.SyntaxHighlighterProps
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object distCjsPrismAsyncMod {
+  
+  @JSImport("react-syntax-highlighter/dist/cjs/prism-async", JSImport.Default)
+  @js.native
+  open class default ()
+    extends Component[SyntaxHighlighterProps, js.Object, Any]
+  
+  type SyntaxHighlighter = japgolly.scalajs.react.facade.React.Component[SyntaxHighlighterProps & js.Object, js.Object]
+}

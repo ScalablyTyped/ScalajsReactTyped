@@ -1,19 +1,24 @@
 package typingsJapgolly.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EventActionJumpUrl extends js.Object {
+trait EventActionJumpUrl extends StObject {
+  
   var url: js.UndefOr[String] = js.undefined
 }
-
 object EventActionJumpUrl {
-  @scala.inline
-  def apply(url: String = null): EventActionJumpUrl = {
+  
+  inline def apply(): EventActionJumpUrl = {
     val __obj = js.Dynamic.literal()
-    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventActionJumpUrl]
   }
+  
+  extension [Self <: EventActionJumpUrl](x: Self) {
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+  }
 }
-

@@ -1,30 +1,23 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GanttBarDateType extends js.Object
-
+sealed trait GanttBarDateType extends StObject
 @JSGlobal("SP.JsGrid.GanttBarDateType")
 @js.native
-object GanttBarDateType extends js.Object {
+object GanttBarDateType extends StObject {
+  
+  // 0,
   @js.native
-  sealed trait End extends GanttBarDateType
+  sealed trait End
+    extends StObject
+       with GanttBarDateType
   
-   // 0,
   @js.native
-  sealed trait Start extends GanttBarDateType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GanttBarDateType with Double] = js.native
-  /* 1 */ @js.native
-  object End extends TopLevel[End with Double]
-  
-  /* 0 */ @js.native
-  object Start extends TopLevel[Start with Double]
-  
+  sealed trait Start
+    extends StObject
+       with GanttBarDateType
 }
-

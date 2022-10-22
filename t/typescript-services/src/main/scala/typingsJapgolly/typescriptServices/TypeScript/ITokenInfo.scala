@@ -1,27 +1,40 @@
 package typingsJapgolly.typescriptServices.TypeScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ITokenInfo extends js.Object {
+trait ITokenInfo extends StObject {
+  
   var leadingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
+  
   var trailingTrivia: js.UndefOr[js.Array[ISyntaxTrivia]] = js.undefined
 }
-
 object ITokenInfo {
-  @scala.inline
-  def apply(
-    leadingTrivia: js.Array[ISyntaxTrivia] = null,
-    text: String = null,
-    trailingTrivia: js.Array[ISyntaxTrivia] = null
-  ): ITokenInfo = {
+  
+  inline def apply(): ITokenInfo = {
     val __obj = js.Dynamic.literal()
-    if (leadingTrivia != null) __obj.updateDynamic("leadingTrivia")(leadingTrivia.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
-    if (trailingTrivia != null) __obj.updateDynamic("trailingTrivia")(trailingTrivia.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITokenInfo]
   }
+  
+  extension [Self <: ITokenInfo](x: Self) {
+    
+    inline def setLeadingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "leadingTrivia", value.asInstanceOf[js.Any])
+    
+    inline def setLeadingTriviaUndefined: Self = StObject.set(x, "leadingTrivia", js.undefined)
+    
+    inline def setLeadingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "leadingTrivia", js.Array(value*))
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    
+    inline def setTrailingTrivia(value: js.Array[ISyntaxTrivia]): Self = StObject.set(x, "trailingTrivia", value.asInstanceOf[js.Any])
+    
+    inline def setTrailingTriviaUndefined: Self = StObject.set(x, "trailingTrivia", js.undefined)
+    
+    inline def setTrailingTriviaVarargs(value: ISyntaxTrivia*): Self = StObject.set(x, "trailingTrivia", js.Array(value*))
+  }
 }
-

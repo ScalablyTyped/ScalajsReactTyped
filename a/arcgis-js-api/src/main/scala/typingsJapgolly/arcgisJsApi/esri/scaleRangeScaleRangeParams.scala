@@ -1,27 +1,39 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.AbortSignal
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait scaleRangeScaleRangeParams extends Object {
+trait scaleRangeScaleRangeParams
+  extends StObject
+     with Object {
+  
   /**
     * The layer for which to generate a suggested min/max scale range.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-heuristics-scaleRange.html#scaleRange)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-scaleRange.html#scaleRange)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer
+  var layer: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer
+  
   /**
-    * The number of features in the `layer` to sample for spatial statistics. A higher sample size will yield more precise results. However, higher sample sizes also require more time for the function to process the result.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-smartMapping-heuristics-scaleRange.html#scaleRange)
+    * The number of features in the `layer` to sample for spatial statistics.
     *
     * @default 500
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-scaleRange.html#scaleRange)
     */
   var sampleSize: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Allows for cancelable requests.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-heuristics-scaleRange.html#scaleRange)
+    */
+  var signal: js.UndefOr[AbortSignal] = js.undefined
+  
   /**
     * The [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html) or [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) where the layer will be rendered.
     *
@@ -29,22 +41,33 @@ trait scaleRangeScaleRangeParams extends Object {
     */
   var view: View
 }
-
 object scaleRangeScaleRangeParams {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    layer: FeatureLayer | SceneLayer | CSVLayer | PointCloudLayer | GeoJSONLayer,
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    view: View,
-    sampleSize: Int | Double = null
+    hasOwnProperty: PropertyKey => Boolean,
+    layer: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer,
+    propertyIsEnumerable: PropertyKey => Boolean,
+    view: View
   ): scaleRangeScaleRangeParams = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], layer = layer.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (sampleSize != null) __obj.updateDynamic("sampleSize")(sampleSize.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), layer = layer.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[scaleRangeScaleRangeParams]
   }
+  
+  extension [Self <: scaleRangeScaleRangeParams](x: Self) {
+    
+    inline def setLayer(
+      value: FeatureLayer | SceneLayer | CSVLayer | OGCFeatureLayer | PointCloudLayer | GeoJSONLayer | WFSLayer
+    ): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    
+    inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
+    
+    inline def setSampleSizeUndefined: Self = StObject.set(x, "sampleSize", js.undefined)
+    
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+  }
 }
-

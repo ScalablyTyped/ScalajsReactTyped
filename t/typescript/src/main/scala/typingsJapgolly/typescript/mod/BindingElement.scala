@@ -1,24 +1,31 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BindingElement
-  extends NamedDeclaration
+  extends StObject
+     with NamedDeclaration
      with ArrayBindingElement
      with HasExpressionInitializer
+     with ObjectBindingOrAssignmentElement
      with VariableLikeDeclaration
-     with _BindingOrAssignmentElement {
-  var dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
-  var initializer: js.UndefOr[Expression] = js.native
+     with _ArrayBindingOrAssignmentElement {
+  
+  val dotDotDotToken: js.UndefOr[DotDotDotToken] = js.native
+  
+  val initializer: js.UndefOr[Expression] = js.native
+  
   @JSName("kind")
-  var kind_BindingElement: typingsJapgolly.typescript.mod.SyntaxKind.BindingElement = js.native
+  val kind_BindingElement: typingsJapgolly.typescript.mod.SyntaxKind.BindingElement = js.native
+  
   @JSName("name")
-  var name_BindingElement: BindingName = js.native
+  val name_BindingElement: BindingName = js.native
+  
   @JSName("parent")
-  var parent_BindingElement: BindingPattern = js.native
-  var propertyName: js.UndefOr[PropertyName] = js.native
+  val parent_BindingElement: BindingPattern = js.native
+  
+  val propertyName: js.UndefOr[PropertyName] = js.native
 }
-

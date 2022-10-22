@@ -1,279 +1,224 @@
 package typingsJapgolly.dialogflow
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogflowStrings {
-  @js.native
-  sealed trait action extends js.Object
   
   @js.native
-  sealed trait agentContent extends js.Object
+  sealed trait action extends StObject
+  inline def action: action = "action".asInstanceOf[action]
   
   @js.native
-  sealed trait agentUri extends js.Object
+  sealed trait agentContent extends StObject
+  inline def agentContent: agentContent = "agentContent".asInstanceOf[agentContent]
   
   @js.native
-  sealed trait audioConfig extends js.Object
+  sealed trait agentUri extends StObject
+  inline def agentUri: agentUri = "agentUri".asInstanceOf[agentUri]
   
   @js.native
-  sealed trait basicCard extends js.Object
+  sealed trait audioConfig extends StObject
+  inline def audioConfig: audioConfig = "audioConfig".asInstanceOf[audioConfig]
   
   @js.native
-  sealed trait boolValue extends js.Object
+  sealed trait basicCard extends StObject
+  inline def basicCard: basicCard = "basicCard".asInstanceOf[basicCard]
   
   @js.native
-  sealed trait browseCarouselCard extends js.Object
+  sealed trait boolValue extends StObject
+  inline def boolValue: boolValue = "boolValue".asInstanceOf[boolValue]
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait browseCarouselCard extends StObject
+  inline def browseCarouselCard: browseCarouselCard = "browseCarouselCard".asInstanceOf[browseCarouselCard]
   
   @js.native
-  sealed trait carouselSelect extends js.Object
+  sealed trait card extends StObject
+  inline def card: card = "card".asInstanceOf[card]
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait carouselSelect extends StObject
+  inline def carouselSelect: carouselSelect = "carouselSelect".asInstanceOf[carouselSelect]
   
   @js.native
-  sealed trait contentUri extends js.Object
+  sealed trait content extends StObject
+  inline def content: content = "content".asInstanceOf[content]
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait contentUri extends StObject
+  inline def contentUri: contentUri = "contentUri".asInstanceOf[contentUri]
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait custom extends StObject
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait dial extends js.Object
+  sealed trait delete extends StObject
+  inline def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait entityTypeBatchInline extends js.Object
+  sealed trait dial extends StObject
+  inline def dial: dial = "dial".asInstanceOf[dial]
   
   @js.native
-  sealed trait entityTypeBatchUri extends js.Object
+  sealed trait entityTypeBatchInline extends StObject
+  inline def entityTypeBatchInline: entityTypeBatchInline = "entityTypeBatchInline".asInstanceOf[entityTypeBatchInline]
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait entityTypeBatchUri extends StObject
+  inline def entityTypeBatchUri: entityTypeBatchUri = "entityTypeBatchUri".asInstanceOf[entityTypeBatchUri]
   
   @js.native
-  sealed trait event extends js.Object
+  sealed trait error extends StObject
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait gcsSource extends js.Object
+  sealed trait event extends StObject
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait gcsSource extends StObject
+  inline def gcsSource: gcsSource = "gcsSource".asInstanceOf[gcsSource]
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait get extends StObject
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait icon extends StObject
+  inline def icon: icon = "icon".asInstanceOf[icon]
   
   @js.native
-  sealed trait intentBatchInline extends js.Object
+  sealed trait image extends StObject
+  inline def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait intentBatchUri extends js.Object
+  sealed trait intentBatchInline extends StObject
+  inline def intentBatchInline: intentBatchInline = "intentBatchInline".asInstanceOf[intentBatchInline]
   
   @js.native
-  sealed trait largeImage extends js.Object
+  sealed trait intentBatchUri extends StObject
+  inline def intentBatchUri: intentBatchUri = "intentBatchUri".asInstanceOf[intentBatchUri]
   
   @js.native
-  sealed trait linkOutSuggestion extends js.Object
+  sealed trait largeImage extends StObject
+  inline def largeImage: largeImage = "largeImage".asInstanceOf[largeImage]
   
   @js.native
-  sealed trait listSelect extends js.Object
+  sealed trait linkOutSuggestion extends StObject
+  inline def linkOutSuggestion: linkOutSuggestion = "linkOutSuggestion".asInstanceOf[linkOutSuggestion]
   
   @js.native
-  sealed trait listValue extends js.Object
+  sealed trait listSelect extends StObject
+  inline def listSelect: listSelect = "listSelect".asInstanceOf[listSelect]
   
   @js.native
-  sealed trait mediaContent extends js.Object
+  sealed trait listValue extends StObject
+  inline def listValue: listValue = "listValue".asInstanceOf[listValue]
   
   @js.native
-  sealed trait nullValue extends js.Object
+  sealed trait mediaContent extends StObject
+  inline def mediaContent: mediaContent = "mediaContent".asInstanceOf[mediaContent]
   
   @js.native
-  sealed trait numberValue extends js.Object
+  sealed trait nullValue extends StObject
+  inline def nullValue: nullValue = "nullValue".asInstanceOf[nullValue]
   
   @js.native
-  sealed trait openUrl extends js.Object
+  sealed trait numberValue extends StObject
+  inline def numberValue: numberValue = "numberValue".asInstanceOf[numberValue]
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait openUrl extends StObject
+  inline def openUrl: openUrl = "openUrl".asInstanceOf[openUrl]
   
   @js.native
-  sealed trait payload extends js.Object
+  sealed trait patch extends StObject
+  inline def patch: patch = "patch".asInstanceOf[patch]
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait payload extends StObject
+  inline def payload: payload = "payload".asInstanceOf[payload]
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait post extends StObject
+  inline def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait quickReplies extends js.Object
+  sealed trait put extends StObject
+  inline def put: put = "put".asInstanceOf[put]
   
   @js.native
-  sealed trait rawContent extends js.Object
+  sealed trait quickReplies extends StObject
+  inline def quickReplies: quickReplies = "quickReplies".asInstanceOf[quickReplies]
   
   @js.native
-  sealed trait rbmCarouselRichCard extends js.Object
+  sealed trait rawContent extends StObject
+  inline def rawContent: rawContent = "rawContent".asInstanceOf[rawContent]
   
   @js.native
-  sealed trait rbmStandaloneRichCard extends js.Object
+  sealed trait rbmCarouselRichCard extends StObject
+  inline def rbmCarouselRichCard: rbmCarouselRichCard = "rbmCarouselRichCard".asInstanceOf[rbmCarouselRichCard]
   
   @js.native
-  sealed trait rbmText extends js.Object
+  sealed trait rbmStandaloneRichCard extends StObject
+  inline def rbmStandaloneRichCard: rbmStandaloneRichCard = "rbmStandaloneRichCard".asInstanceOf[rbmStandaloneRichCard]
   
   @js.native
-  sealed trait reply extends js.Object
+  sealed trait rbmText extends StObject
+  inline def rbmText: rbmText = "rbmText".asInstanceOf[rbmText]
   
   @js.native
-  sealed trait response extends js.Object
+  sealed trait reply extends StObject
+  inline def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
-  sealed trait shareLocation extends js.Object
+  sealed trait response extends StObject
+  inline def response: response = "response".asInstanceOf[response]
   
   @js.native
-  sealed trait simpleResponses extends js.Object
+  sealed trait shareLocation extends StObject
+  inline def shareLocation: shareLocation = "shareLocation".asInstanceOf[shareLocation]
   
   @js.native
-  sealed trait ssml extends js.Object
+  sealed trait simpleResponses extends StObject
+  inline def simpleResponses: simpleResponses = "simpleResponses".asInstanceOf[simpleResponses]
   
   @js.native
-  sealed trait stringValue extends js.Object
+  sealed trait ssml extends StObject
+  inline def ssml: ssml = "ssml".asInstanceOf[ssml]
   
   @js.native
-  sealed trait structValue extends js.Object
+  sealed trait stringValue extends StObject
+  inline def stringValue: stringValue = "stringValue".asInstanceOf[stringValue]
   
   @js.native
-  sealed trait suggestions extends js.Object
+  sealed trait structValue extends StObject
+  inline def structValue: structValue = "structValue".asInstanceOf[structValue]
   
   @js.native
-  sealed trait tableCard extends js.Object
+  sealed trait suggestions extends StObject
+  inline def suggestions: suggestions = "suggestions".asInstanceOf[suggestions]
   
   @js.native
-  sealed trait telephonyPlayAudio extends js.Object
+  sealed trait tableCard extends StObject
+  inline def tableCard: tableCard = "tableCard".asInstanceOf[tableCard]
   
   @js.native
-  sealed trait telephonySynthesizeSpeech extends js.Object
+  sealed trait telephonyPlayAudio extends StObject
+  inline def telephonyPlayAudio: telephonyPlayAudio = "telephonyPlayAudio".asInstanceOf[telephonyPlayAudio]
   
   @js.native
-  sealed trait telephonyTransferCall extends js.Object
+  sealed trait telephonySynthesizeSpeech extends StObject
+  inline def telephonySynthesizeSpeech: telephonySynthesizeSpeech = "telephonySynthesizeSpeech".asInstanceOf[telephonySynthesizeSpeech]
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait telephonyTransferCall extends StObject
+  inline def telephonyTransferCall: telephonyTransferCall = "telephonyTransferCall".asInstanceOf[telephonyTransferCall]
   
-  @scala.inline
-  def action: action = "action".asInstanceOf[action]
-  @scala.inline
-  def agentContent: agentContent = "agentContent".asInstanceOf[agentContent]
-  @scala.inline
-  def agentUri: agentUri = "agentUri".asInstanceOf[agentUri]
-  @scala.inline
-  def audioConfig: audioConfig = "audioConfig".asInstanceOf[audioConfig]
-  @scala.inline
-  def basicCard: basicCard = "basicCard".asInstanceOf[basicCard]
-  @scala.inline
-  def boolValue: boolValue = "boolValue".asInstanceOf[boolValue]
-  @scala.inline
-  def browseCarouselCard: browseCarouselCard = "browseCarouselCard".asInstanceOf[browseCarouselCard]
-  @scala.inline
-  def card: card = "card".asInstanceOf[card]
-  @scala.inline
-  def carouselSelect: carouselSelect = "carouselSelect".asInstanceOf[carouselSelect]
-  @scala.inline
-  def content: content = "content".asInstanceOf[content]
-  @scala.inline
-  def contentUri: contentUri = "contentUri".asInstanceOf[contentUri]
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
-  @scala.inline
-  def delete: delete = "delete".asInstanceOf[delete]
-  @scala.inline
-  def dial: dial = "dial".asInstanceOf[dial]
-  @scala.inline
-  def entityTypeBatchInline: entityTypeBatchInline = "entityTypeBatchInline".asInstanceOf[entityTypeBatchInline]
-  @scala.inline
-  def entityTypeBatchUri: entityTypeBatchUri = "entityTypeBatchUri".asInstanceOf[entityTypeBatchUri]
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
-  @scala.inline
-  def gcsSource: gcsSource = "gcsSource".asInstanceOf[gcsSource]
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
-  @scala.inline
-  def icon: icon = "icon".asInstanceOf[icon]
-  @scala.inline
-  def image: image = "image".asInstanceOf[image]
-  @scala.inline
-  def intentBatchInline: intentBatchInline = "intentBatchInline".asInstanceOf[intentBatchInline]
-  @scala.inline
-  def intentBatchUri: intentBatchUri = "intentBatchUri".asInstanceOf[intentBatchUri]
-  @scala.inline
-  def largeImage: largeImage = "largeImage".asInstanceOf[largeImage]
-  @scala.inline
-  def linkOutSuggestion: linkOutSuggestion = "linkOutSuggestion".asInstanceOf[linkOutSuggestion]
-  @scala.inline
-  def listSelect: listSelect = "listSelect".asInstanceOf[listSelect]
-  @scala.inline
-  def listValue: listValue = "listValue".asInstanceOf[listValue]
-  @scala.inline
-  def mediaContent: mediaContent = "mediaContent".asInstanceOf[mediaContent]
-  @scala.inline
-  def nullValue: nullValue = "nullValue".asInstanceOf[nullValue]
-  @scala.inline
-  def numberValue: numberValue = "numberValue".asInstanceOf[numberValue]
-  @scala.inline
-  def openUrl: openUrl = "openUrl".asInstanceOf[openUrl]
-  @scala.inline
-  def patch: patch = "patch".asInstanceOf[patch]
-  @scala.inline
-  def payload: payload = "payload".asInstanceOf[payload]
-  @scala.inline
-  def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
-  @scala.inline
-  def quickReplies: quickReplies = "quickReplies".asInstanceOf[quickReplies]
-  @scala.inline
-  def rawContent: rawContent = "rawContent".asInstanceOf[rawContent]
-  @scala.inline
-  def rbmCarouselRichCard: rbmCarouselRichCard = "rbmCarouselRichCard".asInstanceOf[rbmCarouselRichCard]
-  @scala.inline
-  def rbmStandaloneRichCard: rbmStandaloneRichCard = "rbmStandaloneRichCard".asInstanceOf[rbmStandaloneRichCard]
-  @scala.inline
-  def rbmText: rbmText = "rbmText".asInstanceOf[rbmText]
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
-  @scala.inline
-  def response: response = "response".asInstanceOf[response]
-  @scala.inline
-  def shareLocation: shareLocation = "shareLocation".asInstanceOf[shareLocation]
-  @scala.inline
-  def simpleResponses: simpleResponses = "simpleResponses".asInstanceOf[simpleResponses]
-  @scala.inline
-  def ssml: ssml = "ssml".asInstanceOf[ssml]
-  @scala.inline
-  def stringValue: stringValue = "stringValue".asInstanceOf[stringValue]
-  @scala.inline
-  def structValue: structValue = "structValue".asInstanceOf[structValue]
-  @scala.inline
-  def suggestions: suggestions = "suggestions".asInstanceOf[suggestions]
-  @scala.inline
-  def tableCard: tableCard = "tableCard".asInstanceOf[tableCard]
-  @scala.inline
-  def telephonyPlayAudio: telephonyPlayAudio = "telephonyPlayAudio".asInstanceOf[telephonyPlayAudio]
-  @scala.inline
-  def telephonySynthesizeSpeech: telephonySynthesizeSpeech = "telephonySynthesizeSpeech".asInstanceOf[telephonySynthesizeSpeech]
-  @scala.inline
-  def telephonyTransferCall: telephonyTransferCall = "telephonyTransferCall".asInstanceOf[telephonyTransferCall]
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  @js.native
+  sealed trait text extends StObject
+  inline def text: text = "text".asInstanceOf[text]
 }
-

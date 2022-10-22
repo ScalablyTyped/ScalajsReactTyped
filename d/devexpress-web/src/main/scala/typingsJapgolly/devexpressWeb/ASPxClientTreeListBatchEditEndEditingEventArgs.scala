@@ -1,28 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.BatchEditEndEditing event.
   */
-@JSGlobal("ASPxClientTreeListBatchEditEndEditingEventArgs")
-@js.native
-class ASPxClientTreeListBatchEditEndEditingEventArgs protected () extends ASPxClientCancelEventArgs {
+trait ASPxClientTreeListBatchEditEndEditingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
-    * Initializes a new instance of the ASPxClientTreeListBatchEditEndEditingEventArgs class.
-    * @param nodeKey A String value that identifies the processed node.
-    * @param nodeValues An object representing a data source’s field values.
+    * Gets the column to which the edited cell belongs.
     */
-  def this(nodeKey: String, nodeValues: js.Any) = this()
+  var focusedColumn: ASPxClientTreeListColumn
+  
   /**
     * Gets the processed node's key value.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
+  
   /**
     * Gets the value of the processed cell.
     */
-  var nodeValues: js.Any = js.native
+  var nodeValues: Any
 }
-
+object ASPxClientTreeListBatchEditEndEditingEventArgs {
+  
+  inline def apply(cancel: Boolean, focusedColumn: ASPxClientTreeListColumn, nodeKey: String, nodeValues: Any): ASPxClientTreeListBatchEditEndEditingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], focusedColumn = focusedColumn.asInstanceOf[js.Any], nodeKey = nodeKey.asInstanceOf[js.Any], nodeValues = nodeValues.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditEndEditingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientTreeListBatchEditEndEditingEventArgs](x: Self) {
+    
+    inline def setFocusedColumn(value: ASPxClientTreeListColumn): Self = StObject.set(x, "focusedColumn", value.asInstanceOf[js.Any])
+    
+    inline def setNodeKey(value: String): Self = StObject.set(x, "nodeKey", value.asInstanceOf[js.Any])
+    
+    inline def setNodeValues(value: Any): Self = StObject.set(x, "nodeValues", value.asInstanceOf[js.Any])
+  }
+}

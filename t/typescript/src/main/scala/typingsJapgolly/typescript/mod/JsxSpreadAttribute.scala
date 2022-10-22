@@ -1,17 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsxSpreadAttribute
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JsxAttributeLike {
-  var expression: Expression = js.native
+  
+  val expression: Expression = js.native
+  
   @JSName("kind")
-  var kind_JsxSpreadAttribute: typingsJapgolly.typescript.mod.SyntaxKind.JsxSpreadAttribute = js.native
+  val kind_JsxSpreadAttribute: typingsJapgolly.typescript.mod.SyntaxKind.JsxSpreadAttribute = js.native
+  
   @JSName("parent")
-  var parent_JsxSpreadAttribute: JsxAttributes = js.native
+  val parent_JsxSpreadAttribute: JsxAttributes = js.native
 }
-

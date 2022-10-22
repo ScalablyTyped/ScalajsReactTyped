@@ -1,24 +1,20 @@
 package typingsJapgolly.reactSound
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactSoundStrings {
-  @js.native
-  sealed trait PAUSED extends js.Object
   
   @js.native
-  sealed trait PLAYING extends js.Object
+  sealed trait PAUSED extends StObject
+  inline def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
   
   @js.native
-  sealed trait STOPPED extends js.Object
+  sealed trait PLAYING extends StObject
+  inline def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
   
-  @scala.inline
-  def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
-  @scala.inline
-  def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
-  @scala.inline
-  def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
+  @js.native
+  sealed trait STOPPED extends StObject
+  inline def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
 }
-

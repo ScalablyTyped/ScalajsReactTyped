@@ -1,17 +1,19 @@
 package typingsJapgolly.awsSdkCoreHandler
 
-import typingsJapgolly.awsSdkTypes.httpMod.HttpHandler
-import typingsJapgolly.awsSdkTypes.httpMod.HttpOptions
-import typingsJapgolly.awsSdkTypes.middlewareMod.Terminalware
-import typingsJapgolly.awsSdkTypes.responseMod.MetadataBearer
-import typingsJapgolly.awsSdkTypes.unmarshallerMod.ResponseParser
+import typingsJapgolly.awsSdkTypes.distTypesMiddlewareMod.Terminalware
+import typingsJapgolly.awsSdkTypes.distTypesResponseMod.MetadataBearer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/core-handler", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def coreHandler[OutputConstraint /* <: MetadataBearer */, Stream](httpHandler: HttpHandler[Stream, HttpOptions], responseParser: ResponseParser[Stream]): Terminalware[OutputConstraint, Stream] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/core-handler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def coreHandler[OutputConstraint /* <: MetadataBearer */, Stream](
+    httpHandler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpHandler<Stream> */ Any,
+    responseParser: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ResponseParser<Stream> */ Any
+  ): Terminalware = (^.asInstanceOf[js.Dynamic].applyDynamic("coreHandler")(httpHandler.asInstanceOf[js.Any], responseParser.asInstanceOf[js.Any])).asInstanceOf[Terminalware]
 }
-

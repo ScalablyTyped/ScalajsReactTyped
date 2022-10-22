@@ -2,80 +2,93 @@ package typingsJapgolly.caniuseLite
 
 import typingsJapgolly.caniuseLite.mod._FeatureStatus
 import typingsJapgolly.caniuseLite.mod._SupportStatus
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object caniuseLiteStrings {
-  @js.native
-  sealed trait a extends _SupportStatus
   
   @js.native
-  sealed trait `a x` extends _SupportStatus
+  sealed trait a
+    extends StObject
+       with _SupportStatus
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
-  sealed trait cr extends _FeatureStatus
+  sealed trait `a x`
+    extends StObject
+       with _SupportStatus
+  inline def `a x`: `a x` = ("a x").asInstanceOf[`a x`]
   
   @js.native
-  sealed trait ls extends _FeatureStatus
+  sealed trait cr
+    extends StObject
+       with _FeatureStatus
+  inline def cr: cr = "cr".asInstanceOf[cr]
   
   @js.native
-  sealed trait n extends _SupportStatus
+  sealed trait ls
+    extends StObject
+       with _FeatureStatus
+  inline def ls: ls = "ls".asInstanceOf[ls]
   
   @js.native
-  sealed trait other extends _FeatureStatus
+  sealed trait n
+    extends StObject
+       with _SupportStatus
+  inline def n: n = "n".asInstanceOf[n]
   
   @js.native
-  sealed trait p extends _SupportStatus
+  sealed trait other
+    extends StObject
+       with _FeatureStatus
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait pr extends _FeatureStatus
+  sealed trait p
+    extends StObject
+       with _SupportStatus
+  inline def p: p = "p".asInstanceOf[p]
   
   @js.native
-  sealed trait rec extends _FeatureStatus
+  sealed trait pr
+    extends StObject
+       with _FeatureStatus
+  inline def pr: pr = "pr".asInstanceOf[pr]
   
   @js.native
-  sealed trait u extends _SupportStatus
+  sealed trait rec
+    extends StObject
+       with _FeatureStatus
+  inline def rec: rec = "rec".asInstanceOf[rec]
   
   @js.native
-  sealed trait unoff extends _FeatureStatus
+  sealed trait u
+    extends StObject
+       with _SupportStatus
+  inline def u: u = "u".asInstanceOf[u]
   
   @js.native
-  sealed trait wd extends _FeatureStatus
+  sealed trait unoff
+    extends StObject
+       with _FeatureStatus
+  inline def unoff: unoff = "unoff".asInstanceOf[unoff]
   
   @js.native
-  sealed trait y extends _SupportStatus
+  sealed trait wd
+    extends StObject
+       with _FeatureStatus
+  inline def wd: wd = "wd".asInstanceOf[wd]
   
   @js.native
-  sealed trait `y x` extends _SupportStatus
+  sealed trait y
+    extends StObject
+       with _SupportStatus
+  inline def y: y = "y".asInstanceOf[y]
   
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
-  @scala.inline
-  def `a x`: `a x` = "a x".asInstanceOf[`a x`]
-  @scala.inline
-  def cr: cr = "cr".asInstanceOf[cr]
-  @scala.inline
-  def ls: ls = "ls".asInstanceOf[ls]
-  @scala.inline
-  def n: n = "n".asInstanceOf[n]
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
-  @scala.inline
-  def p: p = "p".asInstanceOf[p]
-  @scala.inline
-  def pr: pr = "pr".asInstanceOf[pr]
-  @scala.inline
-  def rec: rec = "rec".asInstanceOf[rec]
-  @scala.inline
-  def u: u = "u".asInstanceOf[u]
-  @scala.inline
-  def unoff: unoff = "unoff".asInstanceOf[unoff]
-  @scala.inline
-  def wd: wd = "wd".asInstanceOf[wd]
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
-  @scala.inline
-  def `y x`: `y x` = "y x".asInstanceOf[`y x`]
+  @js.native
+  sealed trait `y x`
+    extends StObject
+       with _SupportStatus
+  inline def `y x`: `y x` = ("y x").asInstanceOf[`y x`]
 }
-

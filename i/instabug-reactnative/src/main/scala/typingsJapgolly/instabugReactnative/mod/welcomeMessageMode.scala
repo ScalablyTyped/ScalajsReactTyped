@@ -1,35 +1,33 @@
 package typingsJapgolly.instabugReactnative.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait welcomeMessageMode extends js.Object
-
+sealed trait welcomeMessageMode extends StObject
 @JSImport("instabug-reactnative", "welcomeMessageMode")
 @js.native
-object welcomeMessageMode extends js.Object {
-  @js.native
-  sealed trait beta extends welcomeMessageMode
-  
-  @js.native
-  sealed trait disabled extends welcomeMessageMode
-  
-  @js.native
-  sealed trait live extends welcomeMessageMode
+object welcomeMessageMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[welcomeMessageMode with Double] = js.native
-  /* 1 */ @js.native
-  object beta extends TopLevel[beta with Double]
+  def apply(value: Double): js.UndefOr[welcomeMessageMode & Double] = js.native
   
-  /* 2 */ @js.native
-  object disabled extends TopLevel[disabled with Double]
+  @js.native
+  sealed trait beta
+    extends StObject
+       with welcomeMessageMode
+  /* 1 */ val beta: typingsJapgolly.instabugReactnative.mod.welcomeMessageMode.beta & Double = js.native
   
-  /* 0 */ @js.native
-  object live extends TopLevel[live with Double]
+  @js.native
+  sealed trait disabled
+    extends StObject
+       with welcomeMessageMode
+  /* 2 */ val disabled: typingsJapgolly.instabugReactnative.mod.welcomeMessageMode.disabled & Double = js.native
   
+  @js.native
+  sealed trait live
+    extends StObject
+       with welcomeMessageMode
+  /* 0 */ val live: typingsJapgolly.instabugReactnative.mod.welcomeMessageMode.live & Double = js.native
 }
-

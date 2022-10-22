@@ -1,20 +1,30 @@
 package typingsJapgolly.gaeaModel.FitGaea
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GaeaEvent extends js.Object {
+trait GaeaEvent extends StObject {
+  
   var effects: js.Array[EventAction]
+  
   var triggers: js.Array[EventTriggerCondition]
 }
-
 object GaeaEvent {
-  @scala.inline
-  def apply(effects: js.Array[EventAction], triggers: js.Array[EventTriggerCondition]): GaeaEvent = {
-    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
   
+  inline def apply(effects: js.Array[EventAction], triggers: js.Array[EventTriggerCondition]): GaeaEvent = {
+    val __obj = js.Dynamic.literal(effects = effects.asInstanceOf[js.Any], triggers = triggers.asInstanceOf[js.Any])
     __obj.asInstanceOf[GaeaEvent]
   }
+  
+  extension [Self <: GaeaEvent](x: Self) {
+    
+    inline def setEffects(value: js.Array[EventAction]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    
+    inline def setEffectsVarargs(value: EventAction*): Self = StObject.set(x, "effects", js.Array(value*))
+    
+    inline def setTriggers(value: js.Array[EventTriggerCondition]): Self = StObject.set(x, "triggers", value.asInstanceOf[js.Any])
+    
+    inline def setTriggersVarargs(value: EventTriggerCondition*): Self = StObject.set(x, "triggers", js.Array(value*))
+  }
 }
-

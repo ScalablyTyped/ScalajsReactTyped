@@ -1,32 +1,45 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RequestSuccessCallbackResult extends js.Object {
+trait RequestSuccessCallbackResult extends StObject {
+  
   /**
     * 开发者服务器返回的数据
     */
   var data: js.UndefOr[String] = js.undefined
+  
   /**
     * 开发者服务器返回的 HTTP Response Header
     */
-  var header: js.UndefOr[js.Any] = js.undefined
+  var header: js.UndefOr[Any] = js.undefined
+  
   /**
     * 开发者服务器返回的 HTTP 状态码
     */
   var statusCode: js.UndefOr[Double] = js.undefined
 }
-
 object RequestSuccessCallbackResult {
-  @scala.inline
-  def apply(data: String = null, header: js.Any = null, statusCode: Int | Double = null): RequestSuccessCallbackResult = {
+  
+  inline def apply(): RequestSuccessCallbackResult = {
     val __obj = js.Dynamic.literal()
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestSuccessCallbackResult]
   }
+  
+  extension [Self <: RequestSuccessCallbackResult](x: Self) {
+    
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setHeader(value: Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+  }
 }
-

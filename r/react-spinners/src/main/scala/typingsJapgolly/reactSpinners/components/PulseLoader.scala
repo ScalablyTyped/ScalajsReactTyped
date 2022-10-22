@@ -1,14 +1,18 @@
 package typingsJapgolly.reactSpinners.components
 
-import typingsJapgolly.reactSpinners.pulseLoaderMod.default
+import org.scalajs.dom.HTMLSpanElement
+import typingsJapgolly.reactSpinners.esmHelpersPropsMod.LoaderSizeMarginProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object PulseLoader extends SharedApply_LoaderSizeMarginProps_190013267[default] {
-  @JSImport("react-spinners/PulseLoader", JSImport.Default)
-  @js.native
-  override object componentImport extends js.Object
+object PulseLoader {
   
+  @JSImport("react-spinners/esm", "PulseLoader")
+  @js.native
+  val component: js.Object = js.native
+  
+  implicit def make(companion: PulseLoader.type): SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement] = new SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LoaderSizeMarginProps): SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement] = new SharedBuilder_LoaderSizeMarginProps_1327159610[HTMLSpanElement](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.highcharts.highchartsStrings.applicationSlashpdf
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.highcharts.highchartsStrings.imageSlashpng
   - typingsJapgolly.highcharts.highchartsStrings.imageSlashsvgPlussignxml
 */
-trait ExportingMimeTypeValue extends js.Object
-
+trait ExportingMimeTypeValue extends StObject
 object ExportingMimeTypeValue {
-  @scala.inline
-  def applicationSlashpdf: typingsJapgolly.highcharts.highchartsStrings.applicationSlashpdf = this.cast("application/pdf")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def imageSlashjpeg: typingsJapgolly.highcharts.highchartsStrings.imageSlashjpeg = this.cast("image/jpeg")
-  @scala.inline
-  def imageSlashpng: typingsJapgolly.highcharts.highchartsStrings.imageSlashpng = this.cast("image/png")
-  @scala.inline
-  def imageSlashsvgPlussignxml: typingsJapgolly.highcharts.highchartsStrings.imageSlashsvgPlussignxml = this.cast("image/svg+xml")
+  
+  inline def applicationSlashpdf: typingsJapgolly.highcharts.highchartsStrings.applicationSlashpdf = "application/pdf".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.applicationSlashpdf]
+  
+  inline def imageSlashjpeg: typingsJapgolly.highcharts.highchartsStrings.imageSlashjpeg = "image/jpeg".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.imageSlashjpeg]
+  
+  inline def imageSlashpng: typingsJapgolly.highcharts.highchartsStrings.imageSlashpng = "image/png".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.imageSlashpng]
+  
+  inline def imageSlashsvgPlussignxml: typingsJapgolly.highcharts.highchartsStrings.imageSlashsvgPlussignxml = "image/svg+xml".asInstanceOf[typingsJapgolly.highcharts.highchartsStrings.imageSlashsvgPlussignxml]
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.std.stdStrings.`individualization-request`
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.std.stdStrings.`license-renewal`
   - typingsJapgolly.std.stdStrings.`license-request`
 */
-trait MediaKeyMessageType extends js.Object
-
+trait MediaKeyMessageType extends StObject
 object MediaKeyMessageType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def `individualization-request`: typingsJapgolly.std.stdStrings.`individualization-request` = this.cast("individualization-request")
-  @scala.inline
-  def `license-release`: typingsJapgolly.std.stdStrings.`license-release` = this.cast("license-release")
-  @scala.inline
-  def `license-renewal`: typingsJapgolly.std.stdStrings.`license-renewal` = this.cast("license-renewal")
-  @scala.inline
-  def `license-request`: typingsJapgolly.std.stdStrings.`license-request` = this.cast("license-request")
+  
+  inline def `individualization-request`: typingsJapgolly.std.stdStrings.`individualization-request` = "individualization-request".asInstanceOf[typingsJapgolly.std.stdStrings.`individualization-request`]
+  
+  inline def `license-release`: typingsJapgolly.std.stdStrings.`license-release` = "license-release".asInstanceOf[typingsJapgolly.std.stdStrings.`license-release`]
+  
+  inline def `license-renewal`: typingsJapgolly.std.stdStrings.`license-renewal` = "license-renewal".asInstanceOf[typingsJapgolly.std.stdStrings.`license-renewal`]
+  
+  inline def `license-request`: typingsJapgolly.std.stdStrings.`license-request` = "license-request".asInstanceOf[typingsJapgolly.std.stdStrings.`license-request`]
 }
-

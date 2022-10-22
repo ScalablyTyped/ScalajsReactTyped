@@ -1,20 +1,23 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IPrintTaskSourceRequestedDeferral extends js.Object {
+trait IPrintTaskSourceRequestedDeferral extends StObject {
+  
   def complete(): Unit
 }
-
 object IPrintTaskSourceRequestedDeferral {
-  @scala.inline
-  def apply(complete: Callback): IPrintTaskSourceRequestedDeferral = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("complete")(complete.toJsFn)
+  
+  inline def apply(complete: Callback): IPrintTaskSourceRequestedDeferral = {
+    val __obj = js.Dynamic.literal(complete = complete.toJsFn)
     __obj.asInstanceOf[IPrintTaskSourceRequestedDeferral]
   }
+  
+  extension [Self <: IPrintTaskSourceRequestedDeferral](x: Self) {
+    
+    inline def setComplete(value: Callback): Self = StObject.set(x, "complete", value.toJsFn)
+  }
 }
-

@@ -1,26 +1,16 @@
 package typingsJapgolly.materialUiCore
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.materialUiCore.tooltipTooltipMod.TooltipProps
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
+import typingsJapgolly.react.mod.global.JSX.Element
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/core/Tooltip", JSImport.Namespace)
-@js.native
-object tooltipMod extends js.Object {
-  @js.native
-  class default protected ()
-    extends Component[TooltipProps, ComponentState, js.Any] {
-    def this(props: TooltipProps) = this()
-    def this(props: TooltipProps, context: js.Any) = this()
-  }
+object tooltipMod {
   
+  @JSImport("@material-ui/core/Tooltip", JSImport.Namespace)
   @js.native
-  object default extends TopLevel[ComponentType[TooltipProps]]
+  val ^ : js.Any = js.native
   
+  inline def default(props: TooltipProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
 }
-

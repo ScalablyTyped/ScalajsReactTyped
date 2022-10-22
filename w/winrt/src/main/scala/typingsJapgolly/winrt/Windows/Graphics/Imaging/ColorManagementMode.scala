@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.Graphics.Imaging
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ColorManagementMode extends js.Object
-
+sealed trait ColorManagementMode extends StObject
 @JSGlobal("Windows.Graphics.Imaging.ColorManagementMode")
 @js.native
-object ColorManagementMode extends js.Object {
-  @js.native
-  sealed trait colorManageToSRgb extends ColorManagementMode
+object ColorManagementMode extends StObject {
   
   @js.native
-  sealed trait doNotColorManage extends ColorManagementMode
+  sealed trait colorManageToSRgb
+    extends StObject
+       with ColorManagementMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ColorManagementMode with Double] = js.native
-  /* 1 */ @js.native
-  object colorManageToSRgb extends TopLevel[colorManageToSRgb with Double]
-  
-  /* 0 */ @js.native
-  object doNotColorManage extends TopLevel[doNotColorManage with Double]
-  
+  @js.native
+  sealed trait doNotColorManage
+    extends StObject
+       with ColorManagementMode
 }
-

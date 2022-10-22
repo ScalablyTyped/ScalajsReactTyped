@@ -1,0 +1,28 @@
+package typingsJapgolly.storybookReactNative.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Transform extends StObject {
+  
+  var transform: js.Array[TranslateX]
+  
+  var width: Double
+}
+object Transform {
+  
+  inline def apply(transform: js.Array[TranslateX], width: Double): Transform = {
+    val __obj = js.Dynamic.literal(transform = transform.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Transform]
+  }
+  
+  extension [Self <: Transform](x: Self) {
+    
+    inline def setTransform(value: js.Array[TranslateX]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    
+    inline def setTransformVarargs(value: TranslateX*): Self = StObject.set(x, "transform", js.Array(value*))
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+  }
+}

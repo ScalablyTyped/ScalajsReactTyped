@@ -1,21 +1,30 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MutateRegisterOptions extends js.Object {
-  var family: js.UndefOr[js.Any] = js.undefined
-  var key: js.UndefOr[js.Any] = js.undefined
+trait MutateRegisterOptions extends StObject {
+  
+  var family: js.UndefOr[Any] = js.undefined
+  
+  var key: js.UndefOr[Any] = js.undefined
 }
-
 object MutateRegisterOptions {
-  @scala.inline
-  def apply(family: js.Any = null, key: js.Any = null): MutateRegisterOptions = {
+  
+  inline def apply(): MutateRegisterOptions = {
     val __obj = js.Dynamic.literal()
-    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
-    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutateRegisterOptions]
   }
+  
+  extension [Self <: MutateRegisterOptions](x: Self) {
+    
+    inline def setFamily(value: Any): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+    
+    inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+    
+    inline def setKey(value: Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+  }
 }
-

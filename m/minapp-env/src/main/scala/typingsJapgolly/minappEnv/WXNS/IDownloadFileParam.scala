@@ -1,30 +1,30 @@
 package typingsJapgolly.minappEnv.WXNS
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IDownloadFileParam extends IAPIParam[IDownloadFileSuccessResult] {
+trait IDownloadFileParam
+  extends StObject
+     with IAPIParam[IDownloadFileSuccessResult] {
+  
   var header: js.UndefOr[AnyObject] = js.undefined
+  
   var url: String
 }
-
 object IDownloadFileParam {
-  @scala.inline
-  def apply(
-    url: String,
-    complete: /* val */ IDownloadFileSuccessResult | IAPIError => Callback = null,
-    fail: /* err */ IAPIError => Callback = null,
-    header: AnyObject = null,
-    success: IDownloadFileSuccessResult => Callback = null
-  ): IDownloadFileParam = {
+  
+  inline def apply(url: String): IDownloadFileParam = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* val */ typingsJapgolly.minappEnv.WXNS.IDownloadFileSuccessResult | typingsJapgolly.minappEnv.WXNS.IAPIError) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: /* err */ typingsJapgolly.minappEnv.WXNS.IAPIError) => fail(t0).runNow()))
-    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: typingsJapgolly.minappEnv.WXNS.IDownloadFileSuccessResult) => success(t0).runNow()))
     __obj.asInstanceOf[IDownloadFileParam]
   }
+  
+  extension [Self <: IDownloadFileParam](x: Self) {
+    
+    inline def setHeader(value: AnyObject): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,23 +1,38 @@
 package typingsJapgolly.dockerode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NetworkContainer extends js.Object {
+trait NetworkContainer extends StObject {
+  
   var EndpointID: String
+  
+  var IPv4Address: String
+  
   var IPv6Address: String
-  var Ipv4Address: String
+  
   var MacAddress: String
+  
   var Name: String
 }
-
 object NetworkContainer {
-  @scala.inline
-  def apply(EndpointID: String, IPv6Address: String, Ipv4Address: String, MacAddress: String, Name: String): NetworkContainer = {
-    val __obj = js.Dynamic.literal(EndpointID = EndpointID.asInstanceOf[js.Any], IPv6Address = IPv6Address.asInstanceOf[js.Any], Ipv4Address = Ipv4Address.asInstanceOf[js.Any], MacAddress = MacAddress.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
   
+  inline def apply(EndpointID: String, IPv4Address: String, IPv6Address: String, MacAddress: String, Name: String): NetworkContainer = {
+    val __obj = js.Dynamic.literal(EndpointID = EndpointID.asInstanceOf[js.Any], IPv4Address = IPv4Address.asInstanceOf[js.Any], IPv6Address = IPv6Address.asInstanceOf[js.Any], MacAddress = MacAddress.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkContainer]
   }
+  
+  extension [Self <: NetworkContainer](x: Self) {
+    
+    inline def setEndpointID(value: String): Self = StObject.set(x, "EndpointID", value.asInstanceOf[js.Any])
+    
+    inline def setIPv4Address(value: String): Self = StObject.set(x, "IPv4Address", value.asInstanceOf[js.Any])
+    
+    inline def setIPv6Address(value: String): Self = StObject.set(x, "IPv6Address", value.asInstanceOf[js.Any])
+    
+    inline def setMacAddress(value: String): Self = StObject.set(x, "MacAddress", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+  }
 }
-

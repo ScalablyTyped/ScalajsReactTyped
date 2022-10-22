@@ -1,60 +1,72 @@
 package typingsJapgolly.officeJsPreview.Excel
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
-  *
   * Specifies which properties to load on the `format.borders` object.
   *
+  * @remarks
   * [Api set: ExcelApi 1.9]
   */
-trait CellPropertiesBorderLoadOptions extends js.Object {
+trait CellPropertiesBorderLoadOptions extends StObject {
+  
   /**
+    * Specifies whether to load the `color` property.
     *
-    * Specifies whether to load on the `color` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var color: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `style` property.
     *
-    * Specifies whether to load on the `style` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var style: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `tintAndShade` property.
     *
-    * Specifies whether to load on the `tintAndShade` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var tintAndShade: js.UndefOr[Boolean] = js.undefined
+  
   /**
+    * Specifies whether to load the `weight` property.
     *
-    * Specifies whether to load on the `weight` property.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.9]
     */
   var weight: js.UndefOr[Boolean] = js.undefined
 }
-
 object CellPropertiesBorderLoadOptions {
-  @scala.inline
-  def apply(
-    color: js.UndefOr[Boolean] = js.undefined,
-    style: js.UndefOr[Boolean] = js.undefined,
-    tintAndShade: js.UndefOr[Boolean] = js.undefined,
-    weight: js.UndefOr[Boolean] = js.undefined
-  ): CellPropertiesBorderLoadOptions = {
+  
+  inline def apply(): CellPropertiesBorderLoadOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (!js.isUndefined(tintAndShade)) __obj.updateDynamic("tintAndShade")(tintAndShade.asInstanceOf[js.Any])
-    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellPropertiesBorderLoadOptions]
   }
+  
+  extension [Self <: CellPropertiesBorderLoadOptions](x: Self) {
+    
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    
+    inline def setTintAndShade(value: Boolean): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    
+    inline def setWeight(value: Boolean): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+  }
 }
-

@@ -1,37 +1,34 @@
 package typingsJapgolly.griddleReact.mod
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.griddleReact.mod.utils.SortProperties
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GriddleEvents extends GriddleActions {
+trait GriddleEvents
+  extends StObject
+     with GriddleActions {
+  
   var onFilter: js.UndefOr[js.Function1[/* filterText */ String, Unit]] = js.undefined
+  
   var setSortProperties: js.UndefOr[js.Function1[/* sortProperties */ SortProperties, js.Function0[Unit]]] = js.undefined
 }
-
 object GriddleEvents {
-  @scala.inline
-  def apply(
-    onFilter: /* filterText */ String => Callback = null,
-    onGetPage: /* pageNumber */ Double => Callback = null,
-    onNext: js.UndefOr[Callback] = js.undefined,
-    onPrevious: js.UndefOr[Callback] = js.undefined,
-    onSort: /* sortProperties */ js.Any => Callback = null,
-    setFilter: /* filter */ GriddleFilter => Callback = null,
-    setSortProperties: /* sortProperties */ SortProperties => CallbackTo[js.Function0[Unit]] = null
-  ): GriddleEvents = {
+  
+  inline def apply(): GriddleEvents = {
     val __obj = js.Dynamic.literal()
-    if (onFilter != null) __obj.updateDynamic("onFilter")(js.Any.fromFunction1((t0: /* filterText */ java.lang.String) => onFilter(t0).runNow()))
-    if (onGetPage != null) __obj.updateDynamic("onGetPage")(js.Any.fromFunction1((t0: /* pageNumber */ scala.Double) => onGetPage(t0).runNow()))
-    onNext.foreach(p => __obj.updateDynamic("onNext")(p.toJsFn))
-    onPrevious.foreach(p => __obj.updateDynamic("onPrevious")(p.toJsFn))
-    if (onSort != null) __obj.updateDynamic("onSort")(js.Any.fromFunction1((t0: /* sortProperties */ js.Any) => onSort(t0).runNow()))
-    if (setFilter != null) __obj.updateDynamic("setFilter")(js.Any.fromFunction1((t0: /* filter */ typingsJapgolly.griddleReact.mod.GriddleFilter) => setFilter(t0).runNow()))
-    if (setSortProperties != null) __obj.updateDynamic("setSortProperties")(js.Any.fromFunction1((t0: /* sortProperties */ typingsJapgolly.griddleReact.mod.utils.SortProperties) => setSortProperties(t0).runNow()))
     __obj.asInstanceOf[GriddleEvents]
   }
+  
+  extension [Self <: GriddleEvents](x: Self) {
+    
+    inline def setOnFilter(value: /* filterText */ String => Callback): Self = StObject.set(x, "onFilter", js.Any.fromFunction1((t0: /* filterText */ String) => value(t0).runNow()))
+    
+    inline def setOnFilterUndefined: Self = StObject.set(x, "onFilter", js.undefined)
+    
+    inline def setSetSortProperties(value: /* sortProperties */ SortProperties => js.Function0[Unit]): Self = StObject.set(x, "setSortProperties", js.Any.fromFunction1(value))
+    
+    inline def setSetSortPropertiesUndefined: Self = StObject.set(x, "setSortProperties", js.undefined)
+  }
 }
-

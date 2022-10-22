@@ -1,8 +1,8 @@
 package typingsJapgolly.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $filterProvider - $filter - provider in module ng
@@ -12,7 +12,10 @@ import scala.scalajs.js.annotation._
   * see https://docs.angularjs.org/api/ng/provider/$filterProvider
   */
 @js.native
-trait IFilterProvider extends IServiceProvider {
+trait IFilterProvider
+  extends StObject
+     with IServiceProvider {
+  
   /**
     * register(name);
     *
@@ -21,4 +24,3 @@ trait IFilterProvider extends IServiceProvider {
   def register(name: String): IServiceProvider = js.native
   def register(name: js.Object): IServiceProvider = js.native
 }
-

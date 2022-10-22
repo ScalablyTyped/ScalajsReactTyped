@@ -1,39 +1,30 @@
-package typingsJapgolly.googleProtobuf
+package typingsJapgolly.googleProtobuf.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type AnyFieldType = typingsJapgolly.googleProtobuf.mod.ScalarFieldType | typingsJapgolly.googleProtobuf.mod.RepeatedFieldType | scala.scalajs.js.typedarray.Uint8Array
-  type BinaryRead = js.Function2[
-    /* msg */ js.Any, 
-    /* reader */ typingsJapgolly.googleProtobuf.mod.BinaryReadReader, 
-    scala.Unit
-  ]
-  type BinaryReadReader = js.Function2[
-    /* msg */ js.Any, 
-    /* binaryReader */ typingsJapgolly.googleProtobuf.mod.BinaryReader, 
-    scala.Unit
-  ]
-  type BinaryWrite = js.Function3[
-    /* fieldNumber */ scala.Double, 
-    /* value */ js.Any, 
-    /* writerCallback */ typingsJapgolly.googleProtobuf.mod.BinaryWriteCallback, 
-    scala.Unit
-  ]
-  type BinaryWriteCallback = js.Function2[
-    /* value */ js.Any, 
-    /* binaryWriter */ typingsJapgolly.googleProtobuf.mod.BinaryWriter, 
-    scala.Unit
-  ]
-  type ByteSource = scala.scalajs.js.typedarray.ArrayBuffer | scala.scalajs.js.typedarray.Uint8Array | js.Array[scala.Double] | java.lang.String
-  type FieldValue = js.UndefOr[
-    java.lang.String | scala.Double | scala.Boolean | scala.scalajs.js.typedarray.Uint8Array | typingsJapgolly.googleProtobuf.mod.FieldValueArray
-  ]
-  type Map[K, V] = typingsJapgolly.googleProtobuf.mod.Map_[K, V]
-  type RepeatedFieldType = js.Array[
-    typingsJapgolly.googleProtobuf.mod.ScalarFieldType | scala.scalajs.js.typedarray.Uint8Array
-  ]
-  type ScalarFieldType = scala.Boolean | scala.Double | java.lang.String
-}
+
+type AnyFieldType = ScalarFieldType | RepeatedFieldType | js.typedarray.Uint8Array
+
+type BinaryRead = js.Function2[/* msg */ Any, /* reader */ BinaryReadReader, Any]
+
+type BinaryReadCallback = js.Function2[/* value */ Any, /* binaryReader */ BinaryReader, Unit]
+
+type BinaryReadReader = js.Function2[/* msg */ Any, /* binaryReader */ BinaryReader, Unit]
+
+type BinaryWrite = js.Function3[
+/* fieldNumber */ Double, 
+/* value */ Any, 
+/* writerCallback */ BinaryWriteCallback, 
+Unit]
+
+type BinaryWriteCallback = js.Function2[/* value */ Any, /* binaryWriter */ BinaryWriter, Unit]
+
+type ByteSource = js.typedarray.ArrayBuffer | js.typedarray.Uint8Array | js.Array[Double] | String
+
+type FieldValue = js.UndefOr[String | Double | Boolean | js.typedarray.Uint8Array | FieldValueArray]
+
+type RepeatedFieldType = js.Array[ScalarFieldType | js.typedarray.Uint8Array]
+
+type ScalarFieldType = Boolean | Double | String

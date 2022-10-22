@@ -2,75 +2,79 @@ package typingsJapgolly.electron.Electron
 
 import typingsJapgolly.electron.electronStrings.detach
 import typingsJapgolly.electron.electronStrings.message
+import typingsJapgolly.node.eventsMod.EventEmitter
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Electron.Debugger")
 @js.native
-class Debugger () extends EventEmitter {
+trait Debugger extends EventEmitter {
+  
   @JSName("addListener")
   def addListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
+  
   /**
-    * Attaches the debugger to the webContents.
+    * Attaches the debugger to the `webContents`.
     */
   def attach(): Unit = js.native
   def attach(protocolVersion: String): Unit = js.native
+  
   /**
-    * Detaches the debugger from the webContents.
+    * Detaches the debugger from the `webContents`.
     */
   def detach(): Unit = js.native
-  def isAttached(): Boolean = js.native
-  // Docs: http://electronjs.org/docs/api/debugger
+  
   /**
-    * Emitted when debugging session is terminated. This happens either when
-    * webContents is closed or devtools is invoked for the attached webContents.
+    * Whether a debugger is attached to the `webContents`.
+    */
+  def isAttached(): Boolean = js.native
+  
+  // Docs: https://electronjs.org/docs/api/debugger
+  /**
+    * Emitted when the debugging session is terminated. This happens either when
+    * `webContents` is closed or devtools is invoked for the attached `webContents`.
     */
   @JSName("on")
   def on_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   /**
-    * Emitted whenever debugging target issues instrumentation event.
+    * Emitted whenever the debugging target issues an instrumentation event.
     */
   @JSName("on")
   def on_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
+  
   @JSName("once")
   def once_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("once")
   def once_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
+  
   @JSName("removeListener")
   def removeListener_detach(event: detach, listener: js.Function2[/* event */ Event, /* reason */ String, Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_message(
     event: message,
-    listener: js.Function3[/* event */ Event, /* method */ String, /* params */ js.Any, Unit]
+    listener: js.Function4[/* event */ Event, /* method */ String, /* params */ Any, /* sessionId */ String, Unit]
   ): this.type = js.native
+  
   /**
-    * Send given command to the debugging target. Deprecated Soon
-    */
-  def sendCommand(method: String): Unit = js.native
-  def sendCommand(method: String, commandParams: js.Any): Unit = js.native
-  def sendCommand(
-    method: String,
-    commandParams: js.Any,
-    callback: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
-  ): Unit = js.native
-  /**
+    * A promise that resolves with the response defined by the 'returns' attribute of
+    * the command description in the remote debugging protocol or is rejected
+    * indicating the failure of the command.
+    *
     * Send given command to the debugging target.
     */
-  @JSName("sendCommand")
-  def sendCommand_Promise(method: String): js.Promise[_] = js.native
-  @JSName("sendCommand")
-  def sendCommand_Promise(method: String, commandParams: js.Any): js.Promise[_] = js.native
+  def sendCommand(method: String): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Any): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Any, sessionId: String): js.Promise[Any] = js.native
+  def sendCommand(method: String, commandParams: Unit, sessionId: String): js.Promise[Any] = js.native
 }
-

@@ -1,12 +1,13 @@
 package typingsJapgolly.yandexMaps.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Polyline")
 @js.native
-class Polyline protected () extends GeoObject_ {
+open class Polyline protected ()
+  extends GeoObject_[ILineStringGeometry, js.Object] {
   def this(geometry: js.Array[js.Array[Double]]) = this()
   def this(geometry: js.Object) = this()
   def this(geometry: ILineStringGeometry) = this()
@@ -17,10 +18,12 @@ class Polyline protected () extends GeoObject_ {
   def this(geometry: ILineStringGeometry, properties: js.Object) = this()
   def this(geometry: ILineStringGeometry, properties: IDataManager) = this()
   def this(geometry: js.Array[js.Array[Double]], properties: js.Object, options: IPolylineOptions) = this()
+  def this(geometry: js.Array[js.Array[Double]], properties: Unit, options: IPolylineOptions) = this()
   def this(geometry: js.Array[js.Array[Double]], properties: IDataManager, options: IPolylineOptions) = this()
   def this(geometry: js.Object, properties: js.Object, options: IPolylineOptions) = this()
+  def this(geometry: js.Object, properties: Unit, options: IPolylineOptions) = this()
   def this(geometry: js.Object, properties: IDataManager, options: IPolylineOptions) = this()
   def this(geometry: ILineStringGeometry, properties: js.Object, options: IPolylineOptions) = this()
+  def this(geometry: ILineStringGeometry, properties: Unit, options: IPolylineOptions) = this()
   def this(geometry: ILineStringGeometry, properties: IDataManager, options: IPolylineOptions) = this()
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJs.Word.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "tableCollection.toJSON()". */
-trait TableCollectionData extends js.Object {
+/** An interface describing the data returned by calling `tableCollection.toJSON()`. */
+trait TableCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[TableData]] = js.undefined
 }
-
 object TableCollectionData {
-  @scala.inline
-  def apply(items: js.Array[TableData] = null): TableCollectionData = {
+  
+  inline def apply(): TableCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableCollectionData]
   }
+  
+  extension [Self <: TableCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[TableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: TableData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

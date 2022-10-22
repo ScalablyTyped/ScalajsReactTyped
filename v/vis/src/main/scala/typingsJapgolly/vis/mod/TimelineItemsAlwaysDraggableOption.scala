@@ -1,21 +1,30 @@
 package typingsJapgolly.vis.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TimelineItemsAlwaysDraggableOption extends js.Object {
+trait TimelineItemsAlwaysDraggableOption extends StObject {
+  
   var item: js.UndefOr[Boolean] = js.undefined
+  
   var range: js.UndefOr[Boolean] = js.undefined
 }
-
 object TimelineItemsAlwaysDraggableOption {
-  @scala.inline
-  def apply(item: js.UndefOr[Boolean] = js.undefined, range: js.UndefOr[Boolean] = js.undefined): TimelineItemsAlwaysDraggableOption = {
+  
+  inline def apply(): TimelineItemsAlwaysDraggableOption = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(item)) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
-    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineItemsAlwaysDraggableOption]
   }
+  
+  extension [Self <: TimelineItemsAlwaysDraggableOption](x: Self) {
+    
+    inline def setItem(value: Boolean): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    
+    inline def setRange(value: Boolean): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+  }
 }
-

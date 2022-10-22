@@ -2,9 +2,10 @@ package typingsJapgolly.angular.mod
 
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $q - service in module ng
@@ -13,15 +14,14 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait IQService
-  extends Instantiable1[
-      /* resolver */ js.Function2[
-        /* resolve */ IQResolveReject[js.Object], 
-        /* reject */ IQResolveReject[js.Any], 
-        js.Any
-      ], 
+  extends StObject
+     with Instantiable1[
+      /* resolver */ js.Function2[/* resolve */ IQResolveReject[js.Object], /* reject */ IQResolveReject[Any], Any], 
       IPromise[js.Object]
     ] {
-  def apply[T](resolver: js.Function2[/* resolve */ IQResolveReject[T], /* reject */ IQResolveReject[_], _]): IPromise[T] = js.native
+  
+  def apply[T](resolver: js.Function2[/* resolve */ IQResolveReject[T], /* reject */ IQResolveReject[Any], Any]): IPromise[T] = js.native
+  
   /**
     * Combines multiple promises into a single promise that is resolved when all of the input promises are resolved.
     *
@@ -30,9 +30,7 @@ trait IQService
     * @param promises A hash of promises.
     */
   def all[T](
-    promises: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]}
-    */ typingsJapgolly.angular.angularStrings.IQService with js.Any
+    promises: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: angular.angular.IPromise<T[K]> | T[K]} */ js.Any
   ): IPromise[T] = js.native
   def all[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[TAll]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | IPromise[T1], T2 | IPromise[T2]]): IPromise[js.Tuple2[T1, T2]] = js.native
@@ -114,10 +112,12 @@ trait IQService
       T10 | IPromise[T10]
     ]
   ): IPromise[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
+  
   /**
     * Creates a Deferred object which represents a task which will finish in the future.
     */
   def defer[T](): IDeferred[T] = js.native
+  
   /**
     * Returns a promise that resolves or rejects as soon as one of those promises resolves or rejects, with the value or reason from that promise.
     *
@@ -125,6 +125,7 @@ trait IQService
     */
   def race[T](promises: js.Array[IPromise[T]]): IPromise[T] = js.native
   def race[T](promises: StringDictionary[IPromise[T]]): IPromise[T] = js.native
+  
   /**
     * Creates a promise that is resolved as rejected with the specified reason. This api should be used to forward rejection in a chain of promises. If you are dealing with the last promise in a promise chain, you don't need to worry about it.
     *
@@ -133,7 +134,8 @@ trait IQService
     * @param reason Constant, message, exception or an object representing the rejection reason.
     */
   def reject(): IPromise[scala.Nothing] = js.native
-  def reject(reason: js.Any): IPromise[scala.Nothing] = js.native
+  def reject(reason: Any): IPromise[scala.Nothing] = js.native
+  
   /**
     * Wraps an object that might be a value or a (3rd party) then-able promise into a $q promise. This is useful when you are dealing with an object that might or might not be a promise, or if the promise comes from a source that can't be trusted.
     */
@@ -144,7 +146,7 @@ trait IQService
     *
     * @param value Value or a promise
     */
-  def resolve[T](value: js.Thenable[T]): IPromise[T] = js.native
+  def resolve[T](value: PromiseLike[T]): IPromise[T] = js.native
   @JSName("resolve")
   def resolve_T1T2[T1, T2](value: T2): IPromise[T1 | T2] = js.native
   /**
@@ -152,7 +154,8 @@ trait IQService
     * To use resolve with two different types, pass a union type to the single-type-argument overload.
     */
   @JSName("resolve")
-  def resolve_T1T2[T1, T2](value: js.Thenable[T1]): IPromise[T1 | T2] = js.native
+  def resolve_T1T2[T1, T2](value: PromiseLike[T1]): IPromise[T1 | T2] = js.native
+  
   /**
     * Wraps an object that might be a value or a (3rd party) then-able promise into a $q promise. This is useful when you are dealing with an object that might or might not be a promise, or if the promise comes from a source that can't be trusted.
     */
@@ -163,49 +166,48 @@ trait IQService
     *
     * @param value Value or a promise
     */
-  def when[T](value: js.Thenable[T]): IPromise[T] = js.native
-  def when[TResult, T](value: T, successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult]): IPromise[TResult] = js.native
+  def when[T](value: PromiseLike[T]): IPromise[T] = js.native
+  def when[TResult, T](value: T, successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult]): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.UndefOr[scala.Nothing],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, _]
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ Any, Any],
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
     value: T,
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, _],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
-  ): IPromise[TResult] = js.native
-  def when[TResult, T](
-    value: T,
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
     errorCallback: Null,
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult] = js.native
   def when[TResult, T](
-    value: js.Thenable[T],
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult]
+    value: T,
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
+    errorCallback: Unit,
+    notifyCallback: js.Function1[/* state */ Any, Any]
+  ): IPromise[TResult] = js.native
+  def when[TResult, T](
+    value: PromiseLike[T],
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult]
   ): IPromise[TResult] = js.native
   def when[TResult, TResult2, T](
-    value: js.Thenable[T],
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
+    value: PromiseLike[T],
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]]
   ): IPromise[TResult | TResult2] = js.native
   def when[TResult, TResult2, T](
-    value: js.Thenable[T],
-    successCallback: js.Function1[/* promiseValue */ T, js.Thenable[TResult] | TResult],
-    errorCallback: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]],
-    notifyCallback: js.Function1[/* state */ js.Any, _]
+    value: PromiseLike[T],
+    successCallback: js.Function1[/* promiseValue */ T, PromiseLike[TResult] | TResult],
+    errorCallback: js.Function1[/* reason */ Any, TResult2 | PromiseLike[TResult2]],
+    notifyCallback: js.Function1[/* state */ Any, Any]
   ): IPromise[TResult | TResult2] = js.native
   @JSName("when")
   def when_T1T2[T1, T2](value: T2): IPromise[T1 | T2] = js.native
   @JSName("when")
-  def when_T1T2[T1, T2](value: js.Thenable[T1]): IPromise[T1 | T2] = js.native
+  def when_T1T2[T1, T2](value: PromiseLike[T1]): IPromise[T1 | T2] = js.native
 }
-

@@ -1,15 +1,23 @@
 package typingsJapgolly.tableResolver
 
+import typingsJapgolly.tableResolver.anon.Column
+import typingsJapgolly.tableResolver.anon.Columns
+import typingsJapgolly.tableResolver.anon.Method
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("table-resolver", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def columnChildren[T](args: AnonColumns[T]): js.Array[T] = js.native
-  def headerRows[T](args: AnonColumns[T]): js.Array[T] = js.native
-  def nested[T](args: AnonColumn[T]): T = js.native
-  def resolve[T](args: AnonMethod[T]): js.Function1[/* data */ js.Any, js.Array[T]] = js.native
+object mod {
+  
+  @JSImport("table-resolver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def columnChildren[T](args: Columns[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("columnChildren")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  inline def headerRows[T](args: Columns[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("headerRows")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  
+  inline def nested[T](args: Column[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nested")(args.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  inline def resolve[T](args: Method[T]): js.Function1[/* data */ Any, js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(args.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* data */ Any, js.Array[T]]]
 }
-

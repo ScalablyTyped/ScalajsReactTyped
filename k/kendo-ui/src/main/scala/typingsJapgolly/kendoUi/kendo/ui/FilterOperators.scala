@@ -1,30 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FilterOperators extends js.Object {
+trait FilterOperators extends StObject {
+  
   var boolean: js.UndefOr[FilterOperatorsBoolean] = js.undefined
+  
   var date: js.UndefOr[FilterOperatorsDate] = js.undefined
+  
   var number: js.UndefOr[FilterOperatorsNumber] = js.undefined
+  
   var string: js.UndefOr[FilterOperatorsString] = js.undefined
 }
-
 object FilterOperators {
-  @scala.inline
-  def apply(
-    boolean: FilterOperatorsBoolean = null,
-    date: FilterOperatorsDate = null,
-    number: FilterOperatorsNumber = null,
-    string: FilterOperatorsString = null
-  ): FilterOperators = {
+  
+  inline def apply(): FilterOperators = {
     val __obj = js.Dynamic.literal()
-    if (boolean != null) __obj.updateDynamic("boolean")(boolean.asInstanceOf[js.Any])
-    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
-    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
-    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOperators]
   }
+  
+  extension [Self <: FilterOperators](x: Self) {
+    
+    inline def setBoolean(value: FilterOperatorsBoolean): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    
+    inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+    
+    inline def setDate(value: FilterOperatorsDate): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    
+    inline def setNumber(value: FilterOperatorsNumber): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    
+    inline def setString(value: FilterOperatorsString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    
+    inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+  }
 }
-

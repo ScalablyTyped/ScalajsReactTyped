@@ -1,29 +1,39 @@
 package typingsJapgolly.applepayjs.ApplePayJS
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updated transaction details resulting from a change in payment method.
   */
-trait ApplePayPaymentMethodUpdate extends js.Object {
+trait ApplePayPaymentMethodUpdate extends StObject {
+  
   /**
     * An optional list of line items.
     */
   var newLineItems: js.UndefOr[js.Array[ApplePayLineItem]] = js.undefined
+  
   /**
     * The new total resulting from a change in the payment method.
     */
   var newTotal: ApplePayLineItem
 }
-
 object ApplePayPaymentMethodUpdate {
-  @scala.inline
-  def apply(newTotal: ApplePayLineItem, newLineItems: js.Array[ApplePayLineItem] = null): ApplePayPaymentMethodUpdate = {
+  
+  inline def apply(newTotal: ApplePayLineItem): ApplePayPaymentMethodUpdate = {
     val __obj = js.Dynamic.literal(newTotal = newTotal.asInstanceOf[js.Any])
-    if (newLineItems != null) __obj.updateDynamic("newLineItems")(newLineItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplePayPaymentMethodUpdate]
   }
+  
+  extension [Self <: ApplePayPaymentMethodUpdate](x: Self) {
+    
+    inline def setNewLineItems(value: js.Array[ApplePayLineItem]): Self = StObject.set(x, "newLineItems", value.asInstanceOf[js.Any])
+    
+    inline def setNewLineItemsUndefined: Self = StObject.set(x, "newLineItems", js.undefined)
+    
+    inline def setNewLineItemsVarargs(value: ApplePayLineItem*): Self = StObject.set(x, "newLineItems", js.Array(value*))
+    
+    inline def setNewTotal(value: ApplePayLineItem): Self = StObject.set(x, "newTotal", value.asInstanceOf[js.Any])
+  }
 }
-

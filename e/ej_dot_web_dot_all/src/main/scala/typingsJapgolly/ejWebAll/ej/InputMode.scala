@@ -1,31 +1,24 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InputMode extends js.Object
-
+sealed trait InputMode extends StObject
 @JSGlobal("ej.InputMode")
 @js.native
-object InputMode extends js.Object {
-  //string
-  @js.native
-  sealed trait Password extends InputMode
+object InputMode extends StObject {
   
   //string
   @js.native
-  sealed trait Text extends InputMode
+  sealed trait Password
+    extends StObject
+       with InputMode
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InputMode with Double] = js.native
-  /* 0 */ @js.native
-  object Password extends TopLevel[Password with Double]
-  
-  /* 1 */ @js.native
-  object Text extends TopLevel[Text with Double]
-  
+  //string
+  @js.native
+  sealed trait Text
+    extends StObject
+       with InputMode
 }
-

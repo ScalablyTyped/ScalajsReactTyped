@@ -1,38 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import japgolly.scalajs.react.CallbackTo
-import org.scalajs.dom.raw.Blob
+import org.scalajs.dom.Blob
 import typingsJapgolly.std.Object
 import typingsJapgolly.std.PropertyKey
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AttachmentEditAttachment extends Object {
+trait AttachmentEditAttachment
+  extends StObject
+     with Object {
+  
   /**
-    * The content type of the attachment. For example, `'image/jpeg'`. See the [ArcGIS REST API documentation](https://developers.arcgis.com/rest/services-reference/query-attachments-feature-service-layer-.htm) for more information on supported attachment types.
+    * The content type of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
   var contentType: js.UndefOr[String] = js.undefined
+  
   /**
     * The attachment data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
-  var data: js.UndefOr[Blob | js.Any | String] = js.undefined
+  var data: js.UndefOr[Blob | Any | String] = js.undefined
+  
   /**
     * The globalId of the attachment to be added or updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
   var globalId: String
+  
   /**
-    * The name of the attachment. This parameter must be set if the attachment type is `Blob`.
+    * The name of the attachment.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#AttachmentEdit)
     */
   var name: js.UndefOr[String] = js.undefined
+  
   /**
     * The id of pre-loaded attachment.
     *
@@ -40,27 +46,36 @@ trait AttachmentEditAttachment extends Object {
     */
   var uploadId: js.UndefOr[String] = js.undefined
 }
-
 object AttachmentEditAttachment {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constructor: js.Function,
     globalId: String,
-    hasOwnProperty: PropertyKey => CallbackTo[Boolean],
-    propertyIsEnumerable: PropertyKey => CallbackTo[Boolean],
-    contentType: String = null,
-    data: Blob | js.Any | String = null,
-    name: String = null,
-    uploadId: String = null
+    hasOwnProperty: PropertyKey => Boolean,
+    propertyIsEnumerable: PropertyKey => Boolean
   ): AttachmentEditAttachment = {
-    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any])
-    __obj.updateDynamic("hasOwnProperty")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => hasOwnProperty(t0).runNow()))
-    __obj.updateDynamic("propertyIsEnumerable")(js.Any.fromFunction1((t0: typingsJapgolly.std.PropertyKey) => propertyIsEnumerable(t0).runNow()))
-    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
-    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (uploadId != null) __obj.updateDynamic("uploadId")(uploadId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], globalId = globalId.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable))
     __obj.asInstanceOf[AttachmentEditAttachment]
   }
+  
+  extension [Self <: AttachmentEditAttachment](x: Self) {
+    
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    
+    inline def setData(value: Blob | Any | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    inline def setGlobalId(value: String): Self = StObject.set(x, "globalId", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setUploadId(value: String): Self = StObject.set(x, "uploadId", value.asInstanceOf[js.Any])
+    
+    inline def setUploadIdUndefined: Self = StObject.set(x, "uploadId", js.undefined)
+  }
 }
-

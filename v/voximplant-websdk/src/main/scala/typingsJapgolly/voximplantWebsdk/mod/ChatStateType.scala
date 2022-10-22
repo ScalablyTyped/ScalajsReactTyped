@@ -1,71 +1,69 @@
 package typingsJapgolly.voximplantWebsdk.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ChatStateType extends js.Object
-
+sealed trait ChatStateType extends StObject
 @JSImport("voximplant-websdk", "ChatStateType")
 @js.native
-object ChatStateType extends js.Object {
-  /**
-  		*	User is actively participating in the chat session
-  		*/
-  @js.native
-  sealed trait Active extends ChatStateType
-  
-  /**
-  		*	User is composing a message
-  		*/
-  @js.native
-  sealed trait Composing extends ChatStateType
-  
-  /**
-  		*	User has effectively ended their participation in the chat session
-  		*/
-  @js.native
-  sealed trait Gone extends ChatStateType
-  
-  /**
-  		*	User has not been actively participating in the chat session
-  		*/
-  @js.native
-  sealed trait Inactive extends ChatStateType
-  
-  /**
-  		*	Invalid type
-  		*/
-  @js.native
-  sealed trait Invalid extends ChatStateType
-  
-  /**
-  		*	User had been composing but now has stopped
-  		*/
-  @js.native
-  sealed trait Paused extends ChatStateType
+object ChatStateType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ChatStateType with Double] = js.native
-  /* 0 */ @js.native
-  object Active extends TopLevel[Active with Double]
+  def apply(value: Double): js.UndefOr[ChatStateType & Double] = js.native
   
-  /* 1 */ @js.native
-  object Composing extends TopLevel[Composing with Double]
+  /**
+    *    User is actively participating in the chat session
+    */
+  @js.native
+  sealed trait Active
+    extends StObject
+       with ChatStateType
+  /* 0 */ val Active: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Active & Double = js.native
   
-  /* 2 */ @js.native
-  object Gone extends TopLevel[Gone with Double]
+  /**
+    *    User is composing a message
+    */
+  @js.native
+  sealed trait Composing
+    extends StObject
+       with ChatStateType
+  /* 1 */ val Composing: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Composing & Double = js.native
   
-  /* 3 */ @js.native
-  object Inactive extends TopLevel[Inactive with Double]
+  /**
+    *    User has effectively ended their participation in the chat session
+    */
+  @js.native
+  sealed trait Gone
+    extends StObject
+       with ChatStateType
+  /* 2 */ val Gone: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Gone & Double = js.native
   
-  /* 4 */ @js.native
-  object Invalid extends TopLevel[Invalid with Double]
+  /**
+    *    User has not been actively participating in the chat session
+    */
+  @js.native
+  sealed trait Inactive
+    extends StObject
+       with ChatStateType
+  /* 3 */ val Inactive: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Inactive & Double = js.native
   
-  /* 5 */ @js.native
-  object Paused extends TopLevel[Paused with Double]
+  /**
+    *    Invalid type
+    */
+  @js.native
+  sealed trait Invalid
+    extends StObject
+       with ChatStateType
+  /* 4 */ val Invalid: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Invalid & Double = js.native
   
+  /**
+    *    User had been composing but now has stopped
+    */
+  @js.native
+  sealed trait Paused
+    extends StObject
+       with ChatStateType
+  /* 5 */ val Paused: typingsJapgolly.voximplantWebsdk.mod.ChatStateType.Paused & Double = js.native
 }
-

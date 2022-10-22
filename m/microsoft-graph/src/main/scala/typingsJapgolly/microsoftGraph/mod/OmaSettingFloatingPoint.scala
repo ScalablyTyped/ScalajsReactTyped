@@ -1,28 +1,27 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OmaSettingFloatingPoint extends OmaSetting {
+trait OmaSettingFloatingPoint
+  extends StObject
+     with OmaSetting {
+  
   // Value.
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object OmaSettingFloatingPoint {
-  @scala.inline
-  def apply(
-    description: String = null,
-    displayName: String = null,
-    omaUri: String = null,
-    value: Int | Double = null
-  ): OmaSettingFloatingPoint = {
+  
+  inline def apply(): OmaSettingFloatingPoint = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (displayName != null) __obj.updateDynamic("displayName")(displayName.asInstanceOf[js.Any])
-    if (omaUri != null) __obj.updateDynamic("omaUri")(omaUri.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OmaSettingFloatingPoint]
   }
+  
+  extension [Self <: OmaSettingFloatingPoint](x: Self) {
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

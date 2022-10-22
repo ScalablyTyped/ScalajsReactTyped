@@ -1,33 +1,48 @@
 package typingsJapgolly.mjmlReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaddingProps extends js.Object {
+trait PaddingProps extends StObject {
+  
   var padding: js.UndefOr[String | Double] = js.undefined
+  
   var paddingBottom: js.UndefOr[String | Double] = js.undefined
+  
   var paddingLeft: js.UndefOr[String | Double] = js.undefined
+  
   var paddingRight: js.UndefOr[String | Double] = js.undefined
+  
   var paddingTop: js.UndefOr[String | Double] = js.undefined
 }
-
 object PaddingProps {
-  @scala.inline
-  def apply(
-    padding: String | Double = null,
-    paddingBottom: String | Double = null,
-    paddingLeft: String | Double = null,
-    paddingRight: String | Double = null,
-    paddingTop: String | Double = null
-  ): PaddingProps = {
+  
+  inline def apply(): PaddingProps = {
     val __obj = js.Dynamic.literal()
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottom != null) __obj.updateDynamic("paddingBottom")(paddingBottom.asInstanceOf[js.Any])
-    if (paddingLeft != null) __obj.updateDynamic("paddingLeft")(paddingLeft.asInstanceOf[js.Any])
-    if (paddingRight != null) __obj.updateDynamic("paddingRight")(paddingRight.asInstanceOf[js.Any])
-    if (paddingTop != null) __obj.updateDynamic("paddingTop")(paddingTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingProps]
   }
+  
+  extension [Self <: PaddingProps](x: Self) {
+    
+    inline def setPadding(value: String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBottom(value: String | Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    
+    inline def setPaddingLeft(value: String | Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    
+    inline def setPaddingRight(value: String | Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    
+    inline def setPaddingTop(value: String | Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+  }
 }
-

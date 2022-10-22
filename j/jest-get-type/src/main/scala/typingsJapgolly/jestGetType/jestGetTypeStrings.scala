@@ -1,75 +1,93 @@
 package typingsJapgolly.jestGetType
 
 import typingsJapgolly.jestGetType.mod.ValueType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jestGetTypeStrings {
-  @js.native
-  sealed trait array extends ValueType
   
   @js.native
-  sealed trait boolean extends ValueType
+  sealed trait array
+    extends StObject
+       with ValueType
+  inline def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait date extends ValueType
+  sealed trait bigint
+    extends StObject
+       with ValueType
+  inline def bigint: bigint = "bigint".asInstanceOf[bigint]
   
   @js.native
-  sealed trait function extends ValueType
+  sealed trait boolean
+    extends StObject
+       with ValueType
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait map extends ValueType
+  sealed trait date
+    extends StObject
+       with ValueType
+  inline def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `null` extends ValueType
+  sealed trait function
+    extends StObject
+       with ValueType
+  inline def function: function = "function".asInstanceOf[function]
   
   @js.native
-  sealed trait number extends ValueType
+  sealed trait map
+    extends StObject
+       with ValueType
+  inline def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait `object` extends ValueType
+  sealed trait `null`
+    extends StObject
+       with ValueType
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait regexp extends ValueType
+  sealed trait number
+    extends StObject
+       with ValueType
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait set extends ValueType
+  sealed trait `object`
+    extends StObject
+       with ValueType
+  inline def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait string extends ValueType
+  sealed trait regexp
+    extends StObject
+       with ValueType
+  inline def regexp: regexp = "regexp".asInstanceOf[regexp]
   
   @js.native
-  sealed trait symbol extends ValueType
+  sealed trait set
+    extends StObject
+       with ValueType
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
-  sealed trait undefined extends ValueType
+  sealed trait string
+    extends StObject
+       with ValueType
+  inline def string: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def array: array = "array".asInstanceOf[array]
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
-  @scala.inline
-  def date: date = "date".asInstanceOf[date]
-  @scala.inline
-  def function: function = "function".asInstanceOf[function]
-  @scala.inline
-  def map: map = "map".asInstanceOf[map]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
-  @scala.inline
-  def `object`: `object` = "object".asInstanceOf[`object`]
-  @scala.inline
-  def regexp: regexp = "regexp".asInstanceOf[regexp]
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def symbol: symbol = "symbol".asInstanceOf[symbol]
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @js.native
+  sealed trait symbol
+    extends StObject
+       with ValueType
+  inline def symbol: symbol = "symbol".asInstanceOf[symbol]
+  
+  @js.native
+  sealed trait undefined
+    extends StObject
+       with ValueType
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
-

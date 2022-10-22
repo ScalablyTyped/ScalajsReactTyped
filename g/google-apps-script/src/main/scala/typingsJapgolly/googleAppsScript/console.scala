@@ -1,12 +1,29 @@
 package typingsJapgolly.googleAppsScript
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("console")
 @js.native
-object console
-  extends TopLevel[typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.console]
-
+trait Console extends StObject {
+  
+  def error(): Unit = js.native
+  def error(formatOrObject: String, values: Any*): Unit = js.native
+  def error(formatOrObject: js.Object, values: Any*): Unit = js.native
+  
+  def info(): Unit = js.native
+  def info(formatOrObject: String, values: Any*): Unit = js.native
+  def info(formatOrObject: js.Object, values: Any*): Unit = js.native
+  
+  def log(): Unit = js.native
+  def log(formatOrObject: String, values: Any*): Unit = js.native
+  def log(formatOrObject: js.Object, values: Any*): Unit = js.native
+  
+  def time(label: String): Unit = js.native
+  
+  def timeEnd(label: String): Unit = js.native
+  
+  def warn(): Unit = js.native
+  def warn(formatOrObject: String, values: Any*): Unit = js.native
+  def warn(formatOrObject: js.Object, values: Any*): Unit = js.native
+}

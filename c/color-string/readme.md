@@ -10,15 +10,12 @@ Parser and generator for CSS color strings
 | ------------------ | :-------------: |
 | Full name          | color-string |
 | Keywords           | color, colour, rgb, css |
-| # releases         | 2 |
-| # dependents       | 76 |
-| # downloads        | 275727205 |
-| # stars            | 3 |
+| # releases         | 14 |
+| # dependents       | 0.0 |
+| # downloads        | 6.3798656333333336E7 |
+| # stars            | 201.0 |
 
 ## Links
-- [Homepage](https://github.com/Qix-/color-string#readme)
-- [Bugs](https://github.com/Qix-/color-string/issues)
-- [Repository](https://github.com/Qix-/color-string)
 - [Npm](https://www.npmjs.com/package/color-string)
     
 

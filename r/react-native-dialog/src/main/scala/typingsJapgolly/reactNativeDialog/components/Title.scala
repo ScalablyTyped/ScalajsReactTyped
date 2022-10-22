@@ -1,14 +1,17 @@
 package typingsJapgolly.reactNativeDialog.components
 
+import typingsJapgolly.reactNative.mod.TextProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object Title
-  extends `SharedApply_<intersection>_172182747`[typingsJapgolly.reactNativeDialog.mod.default.Title] {
+object Title {
+  
   @JSImport("react-native-dialog", "default.Title")
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: Title.type): SharedBuilder_TextProps1643770914 = new SharedBuilder_TextProps1643770914(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: TextProps): SharedBuilder_TextProps1643770914 = new SharedBuilder_TextProps1643770914(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

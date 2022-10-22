@@ -10,10 +10,10 @@ Multi-strategy object caching service
 | ------------------ | :-------------: |
 | Full name          | @hapi/catbox |
 | Keywords           | cache, generic, adapter |
-| # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 3084952 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2300304.3333333335 |
+| # stars            | 493.0 |
 
 ## Links
 - [Homepage](https://github.com/hapijs/catbox#readme)

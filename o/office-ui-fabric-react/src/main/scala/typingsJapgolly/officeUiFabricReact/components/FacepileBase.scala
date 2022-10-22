@@ -1,96 +1,87 @@
 package typingsJapgolly.officeUiFabricReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.officeUiFabricReact.buttonTypesMod.IButtonProps
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepile
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepileProps
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepileStyleProps
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepileStyles
-import typingsJapgolly.officeUiFabricReact.facepileTypesMod.OverflowButtonType
-import typingsJapgolly.officeUiFabricReact.personaTypesMod.IPersonaSharedProps
-import typingsJapgolly.officeUiFabricReact.personaTypesMod.PersonaSize
-import typingsJapgolly.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
-import typingsJapgolly.uifabricStyling.ithemeMod.ITheme
-import typingsJapgolly.uifabricUtilities.createRefMod.IRefObject
+import japgolly.scalajs.react.Callback
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiTheme.libTypesIthemeMod.ITheme
+import typingsJapgolly.officeUiFabricReact.libComponentsButtonButtonDottypesMod.IButtonProps
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepile
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepilePersona
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepileProps
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepileStyleProps
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.IFacepileStyles
+import typingsJapgolly.officeUiFabricReact.libComponentsFacepileFacepileDottypesMod.OverflowButtonType
+import typingsJapgolly.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.IPersonaSharedProps
+import typingsJapgolly.officeUiFabricReact.libComponentsPersonaPersonaDottypesMod.PersonaSize
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.uifabricMergeStyles.libDeepPartialMod.DeepPartial
+import typingsJapgolly.uifabricMergeStyles.libIstylefunctionMod.IStyleFunctionOrObject
+import typingsJapgolly.uifabricUtilities.libCreateRefMod.IRefObject
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FacepileBase {
-  def apply(
-    personas: js.Array[IFacepilePersona],
-    addButtonProps: IButtonProps = null,
-    ariaDescription: String = null,
-    ariaLabel: String = null,
-    chevronButtonProps: IButtonProps = null,
-    className: String = null,
-    componentRef: IRefObject[IFacepile] = null,
-    getPersonaProps: /* persona */ IFacepilePersona => CallbackTo[IPersonaSharedProps] = null,
-    maxDisplayablePersonas: Int | Double = null,
-    onRenderPersona: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => CallbackTo[Element | Null] = null,
-    onRenderPersonaCoin: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => CallbackTo[Element | Null] = null,
-    overflowButtonProps: IButtonProps = null,
-    overflowButtonType: OverflowButtonType = null,
-    overflowPersonas: js.Array[IFacepilePersona] = null,
-    personaSize: PersonaSize = null,
-    showAddButton: js.UndefOr[Boolean] = js.undefined,
-    styles: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles] = null,
-    theme: ITheme = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    IFacepileProps, 
-    typingsJapgolly.officeUiFabricReact.mod.FacepileBase, 
-    Unit, 
-    IFacepileProps
-  ] = {
-    val __obj = js.Dynamic.literal(personas = personas.asInstanceOf[js.Any])
   
-      if (addButtonProps != null) __obj.updateDynamic("addButtonProps")(addButtonProps.asInstanceOf[js.Any])
-    if (ariaDescription != null) __obj.updateDynamic("ariaDescription")(ariaDescription.asInstanceOf[js.Any])
-    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel.asInstanceOf[js.Any])
-    if (chevronButtonProps != null) __obj.updateDynamic("chevronButtonProps")(chevronButtonProps.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (componentRef != null) __obj.updateDynamic("componentRef")(componentRef.asInstanceOf[js.Any])
-    if (getPersonaProps != null) __obj.updateDynamic("getPersonaProps")(js.Any.fromFunction1((t0: /* persona */ typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona) => getPersonaProps(t0).runNow()))
-    if (maxDisplayablePersonas != null) __obj.updateDynamic("maxDisplayablePersonas")(maxDisplayablePersonas.asInstanceOf[js.Any])
-    if (onRenderPersona != null) __obj.updateDynamic("onRenderPersona")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderPersona(t0, t1).runNow()))
-    if (onRenderPersonaCoin != null) __obj.updateDynamic("onRenderPersonaCoin")(js.Any.fromFunction2((t0: /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona], t1: /* defaultRender */ js.UndefOr[
-  js.Function1[
-    /* props */ js.UndefOr[typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepilePersona], 
-    japgolly.scalajs.react.raw.React.Element | scala.Null
-  ]]) => onRenderPersonaCoin(t0, t1).runNow()))
-    if (overflowButtonProps != null) __obj.updateDynamic("overflowButtonProps")(overflowButtonProps.asInstanceOf[js.Any])
-    if (overflowButtonType != null) __obj.updateDynamic("overflowButtonType")(overflowButtonType.asInstanceOf[js.Any])
-    if (overflowPersonas != null) __obj.updateDynamic("overflowPersonas")(overflowPersonas.asInstanceOf[js.Any])
-    if (personaSize != null) __obj.updateDynamic("personaSize")(personaSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(showAddButton)) __obj.updateDynamic("showAddButton")(showAddButton.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepileProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.officeUiFabricReact.mod.FacepileBase](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.officeUiFabricReact.facepileTypesMod.IFacepileProps])(children: _*)
+  inline def apply(personas: js.Array[IFacepilePersona]): Builder = {
+    val __props = js.Dynamic.literal(personas = personas.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IFacepileProps]))
   }
+  
   @JSImport("office-ui-fabric-react", "FacepileBase")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.officeUiFabricReact.mod.FacepileBase] {
+    
+    inline def addButtonProps(value: IButtonProps): this.type = set("addButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def ariaDescription(value: String): this.type = set("ariaDescription", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def chevronButtonProps(value: IButtonProps): this.type = set("chevronButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def componentRef(value: IRefObject[IFacepile]): this.type = set("componentRef", value.asInstanceOf[js.Any])
+    
+    inline def componentRefFunction1(value: /* ref */ IFacepile | Null => Callback): this.type = set("componentRef", js.Any.fromFunction1((t0: /* ref */ IFacepile | Null) => value(t0).runNow()))
+    
+    inline def getPersonaProps(value: /* persona */ IFacepilePersona => IPersonaSharedProps): this.type = set("getPersonaProps", js.Any.fromFunction1(value))
+    
+    inline def maxDisplayablePersonas(value: Double): this.type = set("maxDisplayablePersonas", value.asInstanceOf[js.Any])
+    
+    inline def onRenderPersona(
+      value: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderPersona", js.Any.fromFunction2(value))
+    
+    inline def onRenderPersonaCoin(
+      value: (/* props */ js.UndefOr[IFacepilePersona], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IFacepilePersona], Element | Null]]) => Element | Null
+    ): this.type = set("onRenderPersonaCoin", js.Any.fromFunction2(value))
+    
+    inline def overflowButtonProps(value: IButtonProps): this.type = set("overflowButtonProps", value.asInstanceOf[js.Any])
+    
+    inline def overflowButtonType(value: OverflowButtonType): this.type = set("overflowButtonType", value.asInstanceOf[js.Any])
+    
+    inline def overflowPersonas(value: js.Array[IFacepilePersona]): this.type = set("overflowPersonas", value.asInstanceOf[js.Any])
+    
+    inline def overflowPersonasVarargs(value: IFacepilePersona*): this.type = set("overflowPersonas", js.Array(value*))
+    
+    inline def personaSize(value: PersonaSize): this.type = set("personaSize", value.asInstanceOf[js.Any])
+    
+    inline def showAddButton(value: Boolean): this.type = set("showAddButton", value.asInstanceOf[js.Any])
+    
+    inline def showTooltip(value: Boolean): this.type = set("showTooltip", value.asInstanceOf[js.Any])
+    
+    inline def styles(value: IStyleFunctionOrObject[IFacepileStyleProps, IFacepileStyles]): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def stylesFunction1(value: IFacepileStyleProps => DeepPartial[IFacepileStyles]): this.type = set("styles", js.Any.fromFunction1(value))
+    
+    inline def theme(value: ITheme): this.type = set("theme", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IFacepileProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

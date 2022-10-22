@@ -1,9 +1,9 @@
 package typingsJapgolly.googleAppsScript.GoogleAppsScript.Charts
 
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for pie charts. For more details, see the Google Charts documentation.
@@ -23,21 +23,34 @@ import scala.scalajs.js.annotation._
   *       var chart = chartBuilder.build();
   */
 @js.native
-trait PieChartBuilder extends js.Object {
+trait PieChartBuilder extends StObject {
+  
   def build(): Chart = js.native
+  
   def reverseCategories(): PieChartBuilder = js.native
+  
   def set3D(): PieChartBuilder = js.native
+  
   def setBackgroundColor(cssValue: String): PieChartBuilder = js.native
+  
   def setColors(cssValues: js.Array[String]): PieChartBuilder = js.native
+  
   def setDataSourceUrl(url: String): PieChartBuilder = js.native
+  
   def setDataTable(tableBuilder: DataTableBuilder): PieChartBuilder = js.native
   def setDataTable(table: DataTableSource): PieChartBuilder = js.native
+  
   def setDataViewDefinition(dataViewDefinition: DataViewDefinition): PieChartBuilder = js.native
+  
   def setDimensions(width: Integer, height: Integer): PieChartBuilder = js.native
+  
   def setLegendPosition(position: Position): PieChartBuilder = js.native
+  
   def setLegendTextStyle(textStyle: TextStyle): PieChartBuilder = js.native
-  def setOption(option: String, value: js.Any): PieChartBuilder = js.native
+  
+  def setOption(option: String, value: Any): PieChartBuilder = js.native
+  
   def setTitle(chartTitle: String): PieChartBuilder = js.native
+  
   def setTitleTextStyle(textStyle: TextStyle): PieChartBuilder = js.native
 }
-

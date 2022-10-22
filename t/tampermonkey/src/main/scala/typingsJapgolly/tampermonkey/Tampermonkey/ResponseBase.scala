@@ -1,34 +1,56 @@
 package typingsJapgolly.tampermonkey.Tampermonkey
 
-import typingsJapgolly.std.Document_
+import org.scalajs.dom.Document
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponseBase extends js.Object {
+trait ResponseBase extends StObject {
+  
   val readyState: ReadyState
-  val response: js.Any
+  
+  val response: Any
+  
   val responseHeaders: String
+  
   val responseText: String
-  val responseXML: Document_ | Null
+  
+  val responseXML: Document | Null
+  
   val status: Double
+  
   val statusText: String
 }
-
 object ResponseBase {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     readyState: ReadyState,
-    response: js.Any,
+    response: Any,
     responseHeaders: String,
     responseText: String,
     status: Double,
-    statusText: String,
-    responseXML: Document_ = null
+    statusText: String
   ): ResponseBase = {
-    val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
-    if (responseXML != null) __obj.updateDynamic("responseXML")(responseXML.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], responseXML = null)
     __obj.asInstanceOf[ResponseBase]
   }
+  
+  extension [Self <: ResponseBase](x: Self) {
+    
+    inline def setReadyState(value: ReadyState): Self = StObject.set(x, "readyState", value.asInstanceOf[js.Any])
+    
+    inline def setResponse(value: Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    
+    inline def setResponseHeaders(value: String): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    
+    inline def setResponseText(value: String): Self = StObject.set(x, "responseText", value.asInstanceOf[js.Any])
+    
+    inline def setResponseXML(value: Document): Self = StObject.set(x, "responseXML", value.asInstanceOf[js.Any])
+    
+    inline def setResponseXMLNull: Self = StObject.set(x, "responseXML", null)
+    
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+  }
 }
-

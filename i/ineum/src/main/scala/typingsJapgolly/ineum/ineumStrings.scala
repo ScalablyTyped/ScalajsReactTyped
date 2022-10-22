@@ -1,79 +1,116 @@
 package typingsJapgolly.ineum
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ineumStrings {
-  @js.native
-  sealed trait autoClearResourceTimings extends js.Object
   
   @js.native
-  sealed trait getPageLoadId extends js.Object
+  sealed trait allowedOrigins extends StObject
+  inline def allowedOrigins: allowedOrigins = "allowedOrigins".asInstanceOf[allowedOrigins]
   
   @js.native
-  sealed trait ignoreErrorMessages extends js.Object
+  sealed trait apiKey extends StObject
+  inline def apiKey: apiKey = "apiKey".asInstanceOf[apiKey]
   
   @js.native
-  sealed trait ignoreUrls extends js.Object
+  sealed trait beaconBatchingTime extends StObject
+  inline def beaconBatchingTime: beaconBatchingTime = "beaconBatchingTime".asInstanceOf[beaconBatchingTime]
   
   @js.native
-  sealed trait key extends js.Object
+  sealed trait captureHeaders extends StObject
+  inline def captureHeaders: captureHeaders = "captureHeaders".asInstanceOf[captureHeaders]
   
   @js.native
-  sealed trait meta extends js.Object
+  sealed trait getPageLoadId extends StObject
+  inline def getPageLoadId: getPageLoadId = "getPageLoadId".asInstanceOf[getPageLoadId]
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait ignoreErrorMessages extends StObject
+  inline def ignoreErrorMessages: ignoreErrorMessages = "ignoreErrorMessages".asInstanceOf[ignoreErrorMessages]
   
   @js.native
-  sealed trait reportError extends js.Object
+  sealed trait ignorePings extends StObject
+  inline def ignorePings: ignorePings = "ignorePings".asInstanceOf[ignorePings]
   
   @js.native
-  sealed trait reportingUrl extends js.Object
+  sealed trait ignoreUrls extends StObject
+  inline def ignoreUrls: ignoreUrls = "ignoreUrls".asInstanceOf[ignoreUrls]
   
   @js.native
-  sealed trait traceId extends js.Object
+  sealed trait ignoreUserTimings extends StObject
+  inline def ignoreUserTimings: ignoreUserTimings = "ignoreUserTimings".asInstanceOf[ignoreUserTimings]
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait key extends StObject
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait whitelistedOrigins extends js.Object
+  sealed trait maxMaitForPageLoadMetricsMillis extends StObject
+  inline def maxMaitForPageLoadMetricsMillis: maxMaitForPageLoadMetricsMillis = "maxMaitForPageLoadMetricsMillis".asInstanceOf[maxMaitForPageLoadMetricsMillis]
   
   @js.native
-  sealed trait wrapEventHandlers extends js.Object
+  sealed trait maxWaitForResourceTimingsMillis extends StObject
+  inline def maxWaitForResourceTimingsMillis: maxWaitForResourceTimingsMillis = "maxWaitForResourceTimingsMillis".asInstanceOf[maxWaitForResourceTimingsMillis]
   
   @js.native
-  sealed trait wrapTimers extends js.Object
+  sealed trait meta extends StObject
+  inline def meta: meta = "meta".asInstanceOf[meta]
   
-  @scala.inline
-  def autoClearResourceTimings: autoClearResourceTimings = "autoClearResourceTimings".asInstanceOf[autoClearResourceTimings]
-  @scala.inline
-  def getPageLoadId: getPageLoadId = "getPageLoadId".asInstanceOf[getPageLoadId]
-  @scala.inline
-  def ignoreErrorMessages: ignoreErrorMessages = "ignoreErrorMessages".asInstanceOf[ignoreErrorMessages]
-  @scala.inline
-  def ignoreUrls: ignoreUrls = "ignoreUrls".asInstanceOf[ignoreUrls]
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
-  @scala.inline
-  def meta: meta = "meta".asInstanceOf[meta]
-  @scala.inline
-  def page: page = "page".asInstanceOf[page]
-  @scala.inline
-  def reportError: reportError = "reportError".asInstanceOf[reportError]
-  @scala.inline
-  def reportingUrl: reportingUrl = "reportingUrl".asInstanceOf[reportingUrl]
-  @scala.inline
-  def traceId: traceId = "traceId".asInstanceOf[traceId]
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
-  @scala.inline
-  def whitelistedOrigins: whitelistedOrigins = "whitelistedOrigins".asInstanceOf[whitelistedOrigins]
-  @scala.inline
-  def wrapEventHandlers: wrapEventHandlers = "wrapEventHandlers".asInstanceOf[wrapEventHandlers]
-  @scala.inline
-  def wrapTimers: wrapTimers = "wrapTimers".asInstanceOf[wrapTimers]
+  @js.native
+  sealed trait page extends StObject
+  inline def page: page = "page".asInstanceOf[page]
+  
+  @js.native
+  sealed trait reportError extends StObject
+  inline def reportError: reportError = "reportError".asInstanceOf[reportError]
+  
+  @js.native
+  sealed trait reportEvent extends StObject
+  inline def reportEvent: reportEvent = "reportEvent".asInstanceOf[reportEvent]
+  
+  @js.native
+  sealed trait reportingUrl extends StObject
+  inline def reportingUrl: reportingUrl = "reportingUrl".asInstanceOf[reportingUrl]
+  
+  @js.native
+  sealed trait secrets extends StObject
+  inline def secrets: secrets = "secrets".asInstanceOf[secrets]
+  
+  @js.native
+  sealed trait terminateSession extends StObject
+  inline def terminateSession: terminateSession = "terminateSession".asInstanceOf[terminateSession]
+  
+  @js.native
+  sealed trait traceId extends StObject
+  inline def traceId: traceId = "traceId".asInstanceOf[traceId]
+  
+  @js.native
+  sealed trait trackSessions extends StObject
+  inline def trackSessions: trackSessions = "trackSessions".asInstanceOf[trackSessions]
+  
+  @js.native
+  sealed trait urlsToCheckForGraphQlInsights extends StObject
+  inline def urlsToCheckForGraphQlInsights: urlsToCheckForGraphQlInsights = "urlsToCheckForGraphQlInsights".asInstanceOf[urlsToCheckForGraphQlInsights]
+  
+  @js.native
+  sealed trait user extends StObject
+  inline def user: user = "user".asInstanceOf[user]
+  
+  @js.native
+  sealed trait whitelistedOrigins extends StObject
+  inline def whitelistedOrigins: whitelistedOrigins = "whitelistedOrigins".asInstanceOf[whitelistedOrigins]
+  
+  @js.native
+  sealed trait wrapEventHandlers extends StObject
+  inline def wrapEventHandlers: wrapEventHandlers = "wrapEventHandlers".asInstanceOf[wrapEventHandlers]
+  
+  @js.native
+  sealed trait wrapTimers extends StObject
+  inline def wrapTimers: wrapTimers = "wrapTimers".asInstanceOf[wrapTimers]
+  
+  @js.native
+  sealed trait xhrTransmissionTimeout extends StObject
+  inline def xhrTransmissionTimeout: xhrTransmissionTimeout = "xhrTransmissionTimeout".asInstanceOf[xhrTransmissionTimeout]
 }
-

@@ -1,19 +1,16 @@
 package typingsJapgolly.angular.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * $templateRequest service
   * see http://docs.angularjs.org/api/ng/service/$templateRequest
   */
 @js.native
-trait ITemplateRequestService extends js.Object {
-  /**
-    * total amount of pending template requests being downloaded.
-    */
-  var totalPendingRequests: Double = js.native
+trait ITemplateRequestService extends StObject {
+  
   /**
     * Downloads a template using $http and, upon success, stores the
     * contents inside of $templateCache.
@@ -31,5 +28,9 @@ trait ITemplateRequestService extends js.Object {
     */
   def apply(tpl: String): IPromise[String] = js.native
   def apply(tpl: String, ignoreRequestError: Boolean): IPromise[String] = js.native
+  
+  /**
+    * total amount of pending template requests being downloaded.
+    */
+  var totalPendingRequests: Double = js.native
 }
-

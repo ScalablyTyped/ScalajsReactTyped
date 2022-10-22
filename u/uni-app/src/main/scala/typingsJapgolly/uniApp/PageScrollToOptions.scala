@@ -1,27 +1,36 @@
 package typingsJapgolly.uniApp
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PageScrollToOptions extends js.Object {
+trait PageScrollToOptions extends StObject {
+  
   /**
     * 滚动动画的时长
     */
   var duration: js.UndefOr[Double] = js.undefined
+  
   /**
     * 滚动到页面的目标位置
     */
   var scrollTop: js.UndefOr[Double] = js.undefined
 }
-
 object PageScrollToOptions {
-  @scala.inline
-  def apply(duration: Int | Double = null, scrollTop: Int | Double = null): PageScrollToOptions = {
+  
+  inline def apply(): PageScrollToOptions = {
     val __obj = js.Dynamic.literal()
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageScrollToOptions]
   }
+  
+  extension [Self <: PageScrollToOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+  }
 }
-

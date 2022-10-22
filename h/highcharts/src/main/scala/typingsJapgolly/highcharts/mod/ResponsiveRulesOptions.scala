@@ -1,10 +1,11 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ResponsiveRulesOptions extends js.Object {
+trait ResponsiveRulesOptions extends StObject {
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A full set of chart options to
     * apply as overrides to the general chart options. The chart options are
@@ -19,20 +20,28 @@ trait ResponsiveRulesOptions extends js.Object {
     * options.
     */
   var chartOptions: js.UndefOr[Options] = js.undefined
+  
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Under which conditions the rule
     * applies.
     */
   var condition: js.UndefOr[ResponsiveRulesConditionOptions] = js.undefined
 }
-
 object ResponsiveRulesOptions {
-  @scala.inline
-  def apply(chartOptions: Options = null, condition: ResponsiveRulesConditionOptions = null): ResponsiveRulesOptions = {
+  
+  inline def apply(): ResponsiveRulesOptions = {
     val __obj = js.Dynamic.literal()
-    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions.asInstanceOf[js.Any])
-    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponsiveRulesOptions]
   }
+  
+  extension [Self <: ResponsiveRulesOptions](x: Self) {
+    
+    inline def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
+    
+    inline def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
+    
+    inline def setCondition(value: ResponsiveRulesConditionOptions): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+  }
 }
-

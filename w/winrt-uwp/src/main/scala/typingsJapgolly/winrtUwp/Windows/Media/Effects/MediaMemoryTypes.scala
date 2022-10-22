@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Effects
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaMemoryTypes extends js.Object
-
+sealed trait MediaMemoryTypes extends StObject
 /** Specifies the types of memory that can be used for a media operation. */
 @JSGlobal("Windows.Media.Effects.MediaMemoryTypes")
 @js.native
-object MediaMemoryTypes extends js.Object {
+object MediaMemoryTypes extends StObject {
+  
   /** CPU memory. */
   @js.native
-  sealed trait cpu extends MediaMemoryTypes
+  sealed trait cpu
+    extends StObject
+       with MediaMemoryTypes
   
   /** GPU memory. */
   @js.native
-  sealed trait gpu extends MediaMemoryTypes
+  sealed trait gpu
+    extends StObject
+       with MediaMemoryTypes
   
   /** Both GPU and CPU memory. */
   @js.native
-  sealed trait gpuAndCpu extends MediaMemoryTypes
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaMemoryTypes with Double] = js.native
-  /* 1 */ @js.native
-  object cpu extends TopLevel[cpu with Double]
-  
-  /* 0 */ @js.native
-  object gpu extends TopLevel[gpu with Double]
-  
-  /* 2 */ @js.native
-  object gpuAndCpu extends TopLevel[gpuAndCpu with Double]
-  
+  sealed trait gpuAndCpu
+    extends StObject
+       with MediaMemoryTypes
 }
-

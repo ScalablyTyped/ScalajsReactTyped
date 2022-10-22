@@ -1,9 +1,10 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.success
@@ -11,24 +12,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplied
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnabled
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknown_
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait AppliedConditionalAccessPolicyResult extends js.Object
-
+trait AppliedConditionalAccessPolicyResult extends StObject
 object AppliedConditionalAccessPolicyResult {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def failure: typingsJapgolly.microsoftGraph.microsoftGraphStrings.failure = this.cast("failure")
-  @scala.inline
-  def notApplied: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplied = this.cast("notApplied")
-  @scala.inline
-  def notEnabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnabled = this.cast("notEnabled")
-  @scala.inline
-  def success: typingsJapgolly.microsoftGraph.microsoftGraphStrings.success = this.cast("success")
-  @scala.inline
-  def unknown: unknown_ = this.cast("unknown")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  
+  inline def failure: typingsJapgolly.microsoftGraph.microsoftGraphStrings.failure = "failure".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.failure]
+  
+  inline def notApplied: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplied = "notApplied".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notApplied]
+  
+  inline def notEnabled: typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnabled = "notEnabled".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.notEnabled]
+  
+  inline def success: typingsJapgolly.microsoftGraph.microsoftGraphStrings.success = "success".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.success]
+  
+  inline def unknown: unknown_ = "unknown".asInstanceOf[unknown_]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }
-

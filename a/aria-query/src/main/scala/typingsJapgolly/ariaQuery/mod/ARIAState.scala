@@ -1,8 +1,8 @@
 package typingsJapgolly.ariaQuery.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-busy`
@@ -15,28 +15,24 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-pressed`
   - typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-selected`
 */
-trait ARIAState extends js.Object
-
+trait ARIAState extends StObject
 object ARIAState {
-  @scala.inline
-  def `aria-busy`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-busy` = this.cast("aria-busy")
-  @scala.inline
-  def `aria-checked`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-checked` = this.cast("aria-checked")
-  @scala.inline
-  def `aria-disabled`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-disabled` = this.cast("aria-disabled")
-  @scala.inline
-  def `aria-expanded`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-expanded` = this.cast("aria-expanded")
-  @scala.inline
-  def `aria-grabbed`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-grabbed` = this.cast("aria-grabbed")
-  @scala.inline
-  def `aria-hidden`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-hidden` = this.cast("aria-hidden")
-  @scala.inline
-  def `aria-invalid`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-invalid` = this.cast("aria-invalid")
-  @scala.inline
-  def `aria-pressed`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-pressed` = this.cast("aria-pressed")
-  @scala.inline
-  def `aria-selected`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-selected` = this.cast("aria-selected")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def `aria-busy`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-busy` = "aria-busy".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-busy`]
+  
+  inline def `aria-checked`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-checked` = "aria-checked".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-checked`]
+  
+  inline def `aria-disabled`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-disabled` = "aria-disabled".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-disabled`]
+  
+  inline def `aria-expanded`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-expanded` = "aria-expanded".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-expanded`]
+  
+  inline def `aria-grabbed`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-grabbed` = "aria-grabbed".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-grabbed`]
+  
+  inline def `aria-hidden`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-hidden` = "aria-hidden".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-hidden`]
+  
+  inline def `aria-invalid`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-invalid` = "aria-invalid".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-invalid`]
+  
+  inline def `aria-pressed`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-pressed` = "aria-pressed".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-pressed`]
+  
+  inline def `aria-selected`: typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-selected` = "aria-selected".asInstanceOf[typingsJapgolly.ariaQuery.ariaQueryStrings.`aria-selected`]
 }
-

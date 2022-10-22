@@ -1,8 +1,8 @@
 package typingsJapgolly.arcgisRestApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLS
@@ -12,22 +12,18 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPFS
   - typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriTS
 */
-trait SymbolType extends js.Object
-
+trait SymbolType extends StObject
 object SymbolType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def esriPFS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPFS = this.cast("esriPFS")
-  @scala.inline
-  def esriPMS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPMS = this.cast("esriPMS")
-  @scala.inline
-  def esriSFS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSFS = this.cast("esriSFS")
-  @scala.inline
-  def esriSLS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLS = this.cast("esriSLS")
-  @scala.inline
-  def esriSMS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSMS = this.cast("esriSMS")
-  @scala.inline
-  def esriTS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriTS = this.cast("esriTS")
+  
+  inline def esriPFS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPFS = "esriPFS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPFS]
+  
+  inline def esriPMS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPMS = "esriPMS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriPMS]
+  
+  inline def esriSFS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSFS = "esriSFS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSFS]
+  
+  inline def esriSLS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLS = "esriSLS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSLS]
+  
+  inline def esriSMS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSMS = "esriSMS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriSMS]
+  
+  inline def esriTS: typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriTS = "esriTS".asInstanceOf[typingsJapgolly.arcgisRestApi.arcgisRestApiStrings.esriTS]
 }
-

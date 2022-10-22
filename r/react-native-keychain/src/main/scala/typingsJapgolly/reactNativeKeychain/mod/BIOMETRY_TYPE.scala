@@ -1,35 +1,45 @@
 package typingsJapgolly.reactNativeKeychain.mod
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait BIOMETRY_TYPE extends js.Object
-
+sealed trait BIOMETRY_TYPE extends StObject
 @JSImport("react-native-keychain", "BIOMETRY_TYPE")
 @js.native
-object BIOMETRY_TYPE extends js.Object {
-  @js.native
-  sealed trait FACE_ID extends BIOMETRY_TYPE
-  
-  @js.native
-  sealed trait FINGERPRINT extends BIOMETRY_TYPE
-  
-  @js.native
-  sealed trait TOUCH_ID extends BIOMETRY_TYPE
+object BIOMETRY_TYPE extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[BIOMETRY_TYPE with String] = js.native
-  /* "FaceID" */ @js.native
-  object FACE_ID extends TopLevel[FACE_ID with String]
+  def apply(value: String): js.UndefOr[BIOMETRY_TYPE & String] = js.native
   
-  /* "Fingerprint" */ @js.native
-  object FINGERPRINT extends TopLevel[FINGERPRINT with String]
+  @js.native
+  sealed trait FACE
+    extends StObject
+       with BIOMETRY_TYPE
+  /* "Face" */ val FACE: typingsJapgolly.reactNativeKeychain.mod.BIOMETRY_TYPE.FACE & String = js.native
   
-  /* "TouchID" */ @js.native
-  object TOUCH_ID extends TopLevel[TOUCH_ID with String]
+  @js.native
+  sealed trait FACE_ID
+    extends StObject
+       with BIOMETRY_TYPE
+  /* "FaceID" */ val FACE_ID: typingsJapgolly.reactNativeKeychain.mod.BIOMETRY_TYPE.FACE_ID & String = js.native
   
+  @js.native
+  sealed trait FINGERPRINT
+    extends StObject
+       with BIOMETRY_TYPE
+  /* "Fingerprint" */ val FINGERPRINT: typingsJapgolly.reactNativeKeychain.mod.BIOMETRY_TYPE.FINGERPRINT & String = js.native
+  
+  @js.native
+  sealed trait IRIS
+    extends StObject
+       with BIOMETRY_TYPE
+  /* "Iris" */ val IRIS: typingsJapgolly.reactNativeKeychain.mod.BIOMETRY_TYPE.IRIS & String = js.native
+  
+  @js.native
+  sealed trait TOUCH_ID
+    extends StObject
+       with BIOMETRY_TYPE
+  /* "TouchID" */ val TOUCH_ID: typingsJapgolly.reactNativeKeychain.mod.BIOMETRY_TYPE.TOUCH_ID & String = js.native
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.plottable.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("plottable", "Dataset")
 @js.native
@@ -14,9 +14,9 @@ import scala.scalajs.js.annotation._
   * @param {any[]} [data=[]] The data for this Dataset.
   * @param {any} [metadata={}] An object containing additional information.
   */
-class Dataset ()
-  extends typingsJapgolly.plottable.datasetMod.Dataset {
-  def this(data: js.Array[_]) = this()
-  def this(data: js.Array[_], metadata: js.Any) = this()
+open class Dataset ()
+  extends typingsJapgolly.plottable.buildSrcCoreDatasetMod.Dataset {
+  def this(data: js.Array[Any]) = this()
+  def this(data: js.Array[Any], metadata: Any) = this()
+  def this(data: Unit, metadata: Any) = this()
 }
-

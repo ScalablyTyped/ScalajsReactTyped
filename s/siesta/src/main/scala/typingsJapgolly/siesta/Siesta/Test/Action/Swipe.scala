@@ -2,35 +2,31 @@ package typingsJapgolly.siesta.Siesta.Test.Action
 
 import typingsJapgolly.siesta.Siesta.Test.Action.Role.IHasTarget
 import typingsJapgolly.siesta.Siesta.Test.IAction
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
 trait Swipe
-  extends IAction
+  extends StObject
+     with IAction
      with IHasTarget {
+  
   var direction: js.UndefOr[String] = js.undefined
 }
-
 object Swipe {
-  @scala.inline
-  def apply(
-    desc: String = null,
-    direction: String = null,
-    el: js.Any = null,
-    passTargetToNext: js.UndefOr[Boolean] = js.undefined,
-    target: js.Any = null
-  ): Swipe = {
+  
+  inline def apply(): Swipe = {
     val __obj = js.Dynamic.literal()
-    if (desc != null) __obj.updateDynamic("desc")(desc.asInstanceOf[js.Any])
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
-    if (el != null) __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
-    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext.asInstanceOf[js.Any])
-    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Swipe]
   }
+  
+  extension [Self <: Swipe](x: Self) {
+    
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+  }
 }
-

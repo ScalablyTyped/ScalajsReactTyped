@@ -1,7 +1,7 @@
 
 # Scala.js typings for pino-http
 
-Typings are for version 4.3
+Typings are for version 5.8
 
 ## Library description:
 High-speed HTTP logger for Node.js
@@ -10,10 +10,10 @@ High-speed HTTP logger for Node.js
 | ------------------ | :-------------: |
 | Full name          | pino-http |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 29 |
-| # downloads        | 1921071 |
-| # stars            | 2 |
+| # releases         | 24 |
+| # dependents       | 0.0 |
+| # downloads        | 1951193.6666666667 |
+| # stars            | 320.0 |
 
 ## Links
 - [Homepage](https://github.com/pinojs/pino-http#readme)

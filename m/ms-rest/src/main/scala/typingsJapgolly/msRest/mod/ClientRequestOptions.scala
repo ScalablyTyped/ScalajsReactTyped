@@ -1,21 +1,26 @@
 package typingsJapgolly.msRest.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ClientRequestOptions extends RequestOptions {
+trait ClientRequestOptions
+  extends StObject
+     with RequestOptions {
+  
   var jar: js.UndefOr[Boolean] = js.undefined
 }
-
 object ClientRequestOptions {
-  @scala.inline
-  def apply(customHeaders: StringDictionary[String] = null, jar: js.UndefOr[Boolean] = js.undefined): ClientRequestOptions = {
+  
+  inline def apply(): ClientRequestOptions = {
     val __obj = js.Dynamic.literal()
-    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders.asInstanceOf[js.Any])
-    if (!js.isUndefined(jar)) __obj.updateDynamic("jar")(jar.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequestOptions]
   }
+  
+  extension [Self <: ClientRequestOptions](x: Self) {
+    
+    inline def setJar(value: Boolean): Self = StObject.set(x, "jar", value.asInstanceOf[js.Any])
+    
+    inline def setJarUndefined: Self = StObject.set(x, "jar", js.undefined)
+  }
 }
-

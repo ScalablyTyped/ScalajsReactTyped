@@ -1,22 +1,27 @@
 package typingsJapgolly.electron.Electron
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BitmapOptions extends js.Object {
+trait BitmapOptions extends StObject {
+  
   /**
     * Defaults to 1.0.
     */
   var scaleFactor: js.UndefOr[Double] = js.undefined
 }
-
 object BitmapOptions {
-  @scala.inline
-  def apply(scaleFactor: Int | Double = null): BitmapOptions = {
+  
+  inline def apply(): BitmapOptions = {
     val __obj = js.Dynamic.literal()
-    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapOptions]
   }
+  
+  extension [Self <: BitmapOptions](x: Self) {
+    
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+  }
 }
-

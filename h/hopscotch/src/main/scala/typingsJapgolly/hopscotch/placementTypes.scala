@@ -1,8 +1,8 @@
 package typingsJapgolly.hopscotch
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hopscotch.hopscotchStrings.top
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hopscotch.hopscotchStrings.right
   - typingsJapgolly.hopscotch.hopscotchStrings.left
 */
-trait placementTypes extends js.Object
-
+trait placementTypes extends StObject
 object placementTypes {
-  @scala.inline
-  def bottom: typingsJapgolly.hopscotch.hopscotchStrings.bottom = this.cast("bottom")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def left: typingsJapgolly.hopscotch.hopscotchStrings.left = this.cast("left")
-  @scala.inline
-  def right: typingsJapgolly.hopscotch.hopscotchStrings.right = this.cast("right")
-  @scala.inline
-  def top: typingsJapgolly.hopscotch.hopscotchStrings.top = this.cast("top")
+  
+  inline def bottom: typingsJapgolly.hopscotch.hopscotchStrings.bottom = "bottom".asInstanceOf[typingsJapgolly.hopscotch.hopscotchStrings.bottom]
+  
+  inline def left: typingsJapgolly.hopscotch.hopscotchStrings.left = "left".asInstanceOf[typingsJapgolly.hopscotch.hopscotchStrings.left]
+  
+  inline def right: typingsJapgolly.hopscotch.hopscotchStrings.right = "right".asInstanceOf[typingsJapgolly.hopscotch.hopscotchStrings.right]
+  
+  inline def top: typingsJapgolly.hopscotch.hopscotchStrings.top = "top".asInstanceOf[typingsJapgolly.hopscotch.hopscotchStrings.top]
 }
-

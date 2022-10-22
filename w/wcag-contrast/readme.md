@@ -1,7 +1,7 @@
 
 # Scala.js typings for wcag-contrast
 
-Typings are for version 2.1
+Typings are for version 3.0
 
 ## Library description:
 evaluate the wcag color contrast score for two colors
@@ -10,10 +10,10 @@ evaluate the wcag color contrast score for two colors
 | ------------------ | :-------------: |
 | Full name          | wcag-contrast |
 | Keywords           | color, contrast, wcag |
-| # releases         | 11 |
-| # dependents       | 8 |
-| # downloads        | 185275 |
-| # stars            | 2 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 148988.0 |
+| # stars            | 114.0 |
 
 ## Links
 - [Homepage](https://github.com/tmcw/wcag-contrast#readme)

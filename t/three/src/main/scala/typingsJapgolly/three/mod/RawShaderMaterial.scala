@@ -1,14 +1,13 @@
 package typingsJapgolly.three.mod
 
-import typingsJapgolly.three.shaderMaterialMod.ShaderMaterialParameters
+import typingsJapgolly.three.srcMaterialsShaderMaterialMod.ShaderMaterialParameters
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "RawShaderMaterial")
 @js.native
-class RawShaderMaterial ()
-  extends typingsJapgolly.three.materialsMod.RawShaderMaterial {
+open class RawShaderMaterial ()
+  extends typingsJapgolly.three.srcThreeMod.RawShaderMaterial {
   def this(parameters: ShaderMaterialParameters) = this()
 }
-

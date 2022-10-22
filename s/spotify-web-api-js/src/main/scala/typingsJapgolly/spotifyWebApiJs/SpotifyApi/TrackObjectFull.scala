@@ -1,23 +1,26 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
-import typingsJapgolly.spotifyWebApiJs.spotifyWebApiJsStrings.track
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Full Track Object
   * [track object (full)](https://developer.spotify.com/web-api/object-model/#track-object-full)
   */
-trait TrackObjectFull extends TrackObjectSimplified {
+trait TrackObjectFull
+  extends StObject
+     with TrackObjectSimplified {
+  
   var album: AlbumObjectSimplified
+  
   var external_ids: ExternalIdObject
+  
   var popularity: Double
 }
-
 object TrackObjectFull {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     album: AlbumObjectSimplified,
     artists: js.Array[ArtistObjectSimplified],
     disc_number: Double,
@@ -31,18 +34,19 @@ object TrackObjectFull {
     popularity: Double,
     preview_url: String,
     track_number: Double,
-    `type`: track,
-    uri: String,
-    available_markets: js.Array[String] = null,
-    is_playable: js.UndefOr[Boolean] = js.undefined,
-    linked_from: TrackLinkObject = null
+    uri: String
   ): TrackObjectFull = {
     val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], disc_number = disc_number.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_ids = external_ids.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], popularity = popularity.asInstanceOf[js.Any], preview_url = preview_url.asInstanceOf[js.Any], track_number = track_number.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (available_markets != null) __obj.updateDynamic("available_markets")(available_markets.asInstanceOf[js.Any])
-    if (!js.isUndefined(is_playable)) __obj.updateDynamic("is_playable")(is_playable.asInstanceOf[js.Any])
-    if (linked_from != null) __obj.updateDynamic("linked_from")(linked_from.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("track")
     __obj.asInstanceOf[TrackObjectFull]
   }
+  
+  extension [Self <: TrackObjectFull](x: Self) {
+    
+    inline def setAlbum(value: AlbumObjectSimplified): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
+    
+    inline def setExternal_ids(value: ExternalIdObject): Self = StObject.set(x, "external_ids", value.asInstanceOf[js.Any])
+    
+    inline def setPopularity(value: Double): Self = StObject.set(x, "popularity", value.asInstanceOf[js.Any])
+  }
 }
-

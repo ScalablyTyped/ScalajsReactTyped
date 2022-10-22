@@ -1,177 +1,171 @@
 package typingsJapgolly.googleMapsReact.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.Element
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.googleMapsReact.mod.GoogleAPI
-import typingsJapgolly.googleMapsReact.mod.MapProps
-import typingsJapgolly.googlemaps.google.maps.FullscreenControlOptions
-import typingsJapgolly.googlemaps.google.maps.GestureHandlingOptions
-import typingsJapgolly.googlemaps.google.maps.LatLng
-import typingsJapgolly.googlemaps.google.maps.LatLngBounds
-import typingsJapgolly.googlemaps.google.maps.LatLngBoundsLiteral
-import typingsJapgolly.googlemaps.google.maps.LatLngLiteral
-import typingsJapgolly.googlemaps.google.maps.MapRestriction
-import typingsJapgolly.googlemaps.google.maps.MapTypeControlOptions
-import typingsJapgolly.googlemaps.google.maps.MapTypeId
-import typingsJapgolly.googlemaps.google.maps.MapTypeStyle
-import typingsJapgolly.googlemaps.google.maps.PanControlOptions
-import typingsJapgolly.googlemaps.google.maps.RotateControlOptions
-import typingsJapgolly.googlemaps.google.maps.ScaleControlOptions
-import typingsJapgolly.googlemaps.google.maps.StreetViewControlOptions
-import typingsJapgolly.googlemaps.google.maps.StreetViewPanorama
-import typingsJapgolly.googlemaps.google.maps.ZoomControlOptions
+import typingsJapgolly.googleMapsReact.mod.IMapProps
+import typingsJapgolly.googleMapsReact.mod.Style
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Map {
-  def apply(
-    google: GoogleAPI,
-    backgroundColor: String = null,
-    bounds: LatLngBounds | LatLngBoundsLiteral = null,
-    center: LatLng | LatLngLiteral = null,
-    centerAroundCurrentLocation: js.UndefOr[Boolean] = js.undefined,
-    clickableIcons: js.UndefOr[Boolean] = js.undefined,
-    controlSize: Int | Double = null,
-    disableDefaultUI: js.UndefOr[Boolean] = js.undefined,
-    disableDoubleClickZoom: js.UndefOr[Boolean] = js.undefined,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    draggableCursor: String = null,
-    draggingCursor: String = null,
-    fullscreenControl: js.UndefOr[Boolean] = js.undefined,
-    fullscreenControlOptions: FullscreenControlOptions = null,
-    gestureHandling: GestureHandlingOptions = null,
-    heading: Int | Double = null,
-    initialCenter: LatLngLiteral = null,
-    keyboardShortcuts: js.UndefOr[Boolean] = js.undefined,
-    loaded: js.UndefOr[Boolean] = js.undefined,
-    mapTypeControl: js.UndefOr[Boolean] = js.undefined,
-    mapTypeControlOptions: MapTypeControlOptions = null,
-    mapTypeId: MapTypeId | String = null,
-    maxZoom: Int | Double = null,
-    minZoom: Int | Double = null,
-    noClear: js.UndefOr[Boolean] = js.undefined,
-    onBoundsChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onCenterChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onClick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onDblclick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onDragend: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onDragstart: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onHeadingChange: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onIdle: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onMaptypeidChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onMousemove: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onMouseout: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onMouseover: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onProjectionChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onReady: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onRecenter: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onResize: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onRightclick: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onTilesloaded: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onTiltChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    onZoomChanged: (/* mapProps */ js.UndefOr[MapProps], /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[Element]], /* event */ js.UndefOr[js.Any]) => CallbackTo[js.Any] = null,
-    panControl: js.UndefOr[Boolean] = js.undefined,
-    panControlOptions: PanControlOptions = null,
-    restriction: MapRestriction = null,
-    rotateControl: js.UndefOr[Boolean] = js.undefined,
-    rotateControlOptions: RotateControlOptions = null,
-    scaleControl: js.UndefOr[Boolean] = js.undefined,
-    scaleControlOptions: ScaleControlOptions = null,
-    scrollwheel: js.UndefOr[Boolean] = js.undefined,
-    streetView: StreetViewPanorama = null,
-    streetViewControl: js.UndefOr[Boolean] = js.undefined,
-    streetViewControlOptions: StreetViewControlOptions = null,
-    styles: js.Array[MapTypeStyle] = null,
-    tilt: Int | Double = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    zoom: Int | Double = null,
-    zoomControl: js.UndefOr[Boolean] = js.undefined,
-    zoomControlOptions: ZoomControlOptions = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[MapProps, typingsJapgolly.googleMapsReact.mod.Map, Unit, MapProps] = {
-    val __obj = js.Dynamic.literal(google = google.asInstanceOf[js.Any])
   
-      if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
-    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
-    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerAroundCurrentLocation)) __obj.updateDynamic("centerAroundCurrentLocation")(centerAroundCurrentLocation.asInstanceOf[js.Any])
-    if (!js.isUndefined(clickableIcons)) __obj.updateDynamic("clickableIcons")(clickableIcons.asInstanceOf[js.Any])
-    if (controlSize != null) __obj.updateDynamic("controlSize")(controlSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDefaultUI)) __obj.updateDynamic("disableDefaultUI")(disableDefaultUI.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableDoubleClickZoom)) __obj.updateDynamic("disableDoubleClickZoom")(disableDoubleClickZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (draggableCursor != null) __obj.updateDynamic("draggableCursor")(draggableCursor.asInstanceOf[js.Any])
-    if (draggingCursor != null) __obj.updateDynamic("draggingCursor")(draggingCursor.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreenControl)) __obj.updateDynamic("fullscreenControl")(fullscreenControl.asInstanceOf[js.Any])
-    if (fullscreenControlOptions != null) __obj.updateDynamic("fullscreenControlOptions")(fullscreenControlOptions.asInstanceOf[js.Any])
-    if (gestureHandling != null) __obj.updateDynamic("gestureHandling")(gestureHandling.asInstanceOf[js.Any])
-    if (heading != null) __obj.updateDynamic("heading")(heading.asInstanceOf[js.Any])
-    if (initialCenter != null) __obj.updateDynamic("initialCenter")(initialCenter.asInstanceOf[js.Any])
-    if (!js.isUndefined(keyboardShortcuts)) __obj.updateDynamic("keyboardShortcuts")(keyboardShortcuts.asInstanceOf[js.Any])
-    if (!js.isUndefined(loaded)) __obj.updateDynamic("loaded")(loaded.asInstanceOf[js.Any])
-    if (!js.isUndefined(mapTypeControl)) __obj.updateDynamic("mapTypeControl")(mapTypeControl.asInstanceOf[js.Any])
-    if (mapTypeControlOptions != null) __obj.updateDynamic("mapTypeControlOptions")(mapTypeControlOptions.asInstanceOf[js.Any])
-    if (mapTypeId != null) __obj.updateDynamic("mapTypeId")(mapTypeId.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(noClear)) __obj.updateDynamic("noClear")(noClear.asInstanceOf[js.Any])
-    if (onBoundsChanged != null) __obj.updateDynamic("onBoundsChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onBoundsChanged(t0, t1, t2).runNow()))
-    if (onCenterChanged != null) __obj.updateDynamic("onCenterChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onCenterChanged(t0, t1, t2).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onClick(t0, t1, t2).runNow()))
-    if (onDblclick != null) __obj.updateDynamic("onDblclick")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onDblclick(t0, t1, t2).runNow()))
-    if (onDragend != null) __obj.updateDynamic("onDragend")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onDragend(t0, t1, t2).runNow()))
-    if (onDragstart != null) __obj.updateDynamic("onDragstart")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onDragstart(t0, t1, t2).runNow()))
-    if (onHeadingChange != null) __obj.updateDynamic("onHeadingChange")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onHeadingChange(t0, t1, t2).runNow()))
-    if (onIdle != null) __obj.updateDynamic("onIdle")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onIdle(t0, t1, t2).runNow()))
-    if (onMaptypeidChanged != null) __obj.updateDynamic("onMaptypeidChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onMaptypeidChanged(t0, t1, t2).runNow()))
-    if (onMousemove != null) __obj.updateDynamic("onMousemove")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onMousemove(t0, t1, t2).runNow()))
-    if (onMouseout != null) __obj.updateDynamic("onMouseout")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onMouseout(t0, t1, t2).runNow()))
-    if (onMouseover != null) __obj.updateDynamic("onMouseover")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onMouseover(t0, t1, t2).runNow()))
-    if (onProjectionChanged != null) __obj.updateDynamic("onProjectionChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onProjectionChanged(t0, t1, t2).runNow()))
-    if (onReady != null) __obj.updateDynamic("onReady")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onReady(t0, t1, t2).runNow()))
-    if (onRecenter != null) __obj.updateDynamic("onRecenter")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onRecenter(t0, t1, t2).runNow()))
-    if (onResize != null) __obj.updateDynamic("onResize")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onResize(t0, t1, t2).runNow()))
-    if (onRightclick != null) __obj.updateDynamic("onRightclick")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onRightclick(t0, t1, t2).runNow()))
-    if (onTilesloaded != null) __obj.updateDynamic("onTilesloaded")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onTilesloaded(t0, t1, t2).runNow()))
-    if (onTiltChanged != null) __obj.updateDynamic("onTiltChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onTiltChanged(t0, t1, t2).runNow()))
-    if (onZoomChanged != null) __obj.updateDynamic("onZoomChanged")(js.Any.fromFunction3((t0: /* mapProps */ js.UndefOr[typingsJapgolly.googleMapsReact.mod.MapProps], t1: /* map */ js.UndefOr[typingsJapgolly.googlemaps.google.maps.Map[org.scalajs.dom.raw.Element]], t2: /* event */ js.UndefOr[js.Any]) => onZoomChanged(t0, t1, t2).runNow()))
-    if (!js.isUndefined(panControl)) __obj.updateDynamic("panControl")(panControl.asInstanceOf[js.Any])
-    if (panControlOptions != null) __obj.updateDynamic("panControlOptions")(panControlOptions.asInstanceOf[js.Any])
-    if (restriction != null) __obj.updateDynamic("restriction")(restriction.asInstanceOf[js.Any])
-    if (!js.isUndefined(rotateControl)) __obj.updateDynamic("rotateControl")(rotateControl.asInstanceOf[js.Any])
-    if (rotateControlOptions != null) __obj.updateDynamic("rotateControlOptions")(rotateControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scaleControl)) __obj.updateDynamic("scaleControl")(scaleControl.asInstanceOf[js.Any])
-    if (scaleControlOptions != null) __obj.updateDynamic("scaleControlOptions")(scaleControlOptions.asInstanceOf[js.Any])
-    if (!js.isUndefined(scrollwheel)) __obj.updateDynamic("scrollwheel")(scrollwheel.asInstanceOf[js.Any])
-    if (streetView != null) __obj.updateDynamic("streetView")(streetView.asInstanceOf[js.Any])
-    if (!js.isUndefined(streetViewControl)) __obj.updateDynamic("streetViewControl")(streetViewControl.asInstanceOf[js.Any])
-    if (streetViewControlOptions != null) __obj.updateDynamic("streetViewControlOptions")(streetViewControlOptions.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tilt != null) __obj.updateDynamic("tilt")(tilt.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(zoomControl)) __obj.updateDynamic("zoomControl")(zoomControl.asInstanceOf[js.Any])
-    if (zoomControlOptions != null) __obj.updateDynamic("zoomControlOptions")(zoomControlOptions.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.googleMapsReact.mod.MapProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.googleMapsReact.mod.Map](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.googleMapsReact.mod.MapProps])(children: _*)
+  inline def apply(google: GoogleAPI): Builder = {
+    val __props = js.Dynamic.literal(google = google.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[IMapProps]))
   }
+  
   @JSImport("google-maps-react", "Map")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.googleMapsReact.mod.Map] {
+    
+    inline def bounds(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngBounds */ Any
+    ): this.type = set("bounds", value.asInstanceOf[js.Any])
+    
+    inline def center(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+    ): this.type = set("center", value.asInstanceOf[js.Any])
+    
+    inline def centerAroundCurrentLocation(value: Boolean): this.type = set("centerAroundCurrentLocation", value.asInstanceOf[js.Any])
+    
+    inline def containerStyle(value: Style): this.type = set("containerStyle", value.asInstanceOf[js.Any])
+    
+    inline def initialCenter(
+      value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.LatLngLiteral */ Any
+    ): this.type = set("initialCenter", value.asInstanceOf[js.Any])
+    
+    inline def loaded(value: Boolean): this.type = set("loaded", value.asInstanceOf[js.Any])
+    
+    inline def onBoundsChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onBoundsChanged", js.Any.fromFunction3(value))
+    
+    inline def onCenterChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onCenterChanged", js.Any.fromFunction3(value))
+    
+    inline def onClick(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onClick", js.Any.fromFunction3(value))
+    
+    inline def onDblclick(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onDblclick", js.Any.fromFunction3(value))
+    
+    inline def onDragend(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onDragend", js.Any.fromFunction3(value))
+    
+    inline def onDragstart(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onDragstart", js.Any.fromFunction3(value))
+    
+    inline def onHeadingChange(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onHeadingChange", js.Any.fromFunction3(value))
+    
+    inline def onIdle(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onIdle", js.Any.fromFunction3(value))
+    
+    inline def onMaptypeidChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onMaptypeidChanged", js.Any.fromFunction3(value))
+    
+    inline def onMousemove(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onMousemove", js.Any.fromFunction3(value))
+    
+    inline def onMouseout(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onMouseout", js.Any.fromFunction3(value))
+    
+    inline def onMouseover(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onMouseover", js.Any.fromFunction3(value))
+    
+    inline def onProjectionChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onProjectionChanged", js.Any.fromFunction3(value))
+    
+    inline def onReady(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onReady", js.Any.fromFunction3(value))
+    
+    inline def onRecenter(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onRecenter", js.Any.fromFunction3(value))
+    
+    inline def onResize(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onResize", js.Any.fromFunction3(value))
+    
+    inline def onRightclick(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onRightclick", js.Any.fromFunction3(value))
+    
+    inline def onTilesloaded(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onTilesloaded", js.Any.fromFunction3(value))
+    
+    inline def onTiltChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onTiltChanged", js.Any.fromFunction3(value))
+    
+    inline def onZoomChanged(
+      value: (/* mapProps */ js.UndefOr[IMapProps], /* map */ js.UndefOr[
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify google.maps.Map */ Any
+        ], /* event */ Any) => Any
+    ): this.type = set("onZoomChanged", js.Any.fromFunction3(value))
+    
+    inline def style(value: Style): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def visible(value: Boolean): this.type = set("visible", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: IMapProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

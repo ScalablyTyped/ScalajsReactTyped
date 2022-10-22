@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Streams
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UnicodeEncoding extends js.Object
-
+sealed trait UnicodeEncoding extends StObject
 /** Specifies the type of character encoding for a stream. */
 @JSGlobal("Windows.Storage.Streams.UnicodeEncoding")
 @js.native
-object UnicodeEncoding extends js.Object {
+object UnicodeEncoding extends StObject {
+  
   /** The encoding is UTF-16, with the most significant byte first in the two eight-bit bytes. */
   @js.native
-  sealed trait utf16BE extends UnicodeEncoding
+  sealed trait utf16BE
+    extends StObject
+       with UnicodeEncoding
   
   /** The encoding is UTF-16, with the least significant byte first in the two eight-bit bytes. */
   @js.native
-  sealed trait utf16LE extends UnicodeEncoding
+  sealed trait utf16LE
+    extends StObject
+       with UnicodeEncoding
   
   /** The encoding is UTF-8. */
   @js.native
-  sealed trait utf8 extends UnicodeEncoding
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UnicodeEncoding with Double] = js.native
-  /* 2 */ @js.native
-  object utf16BE extends TopLevel[utf16BE with Double]
-  
-  /* 1 */ @js.native
-  object utf16LE extends TopLevel[utf16LE with Double]
-  
-  /* 0 */ @js.native
-  object utf8 extends TopLevel[utf8 with Double]
-  
+  sealed trait utf8
+    extends StObject
+       with UnicodeEncoding
 }
-

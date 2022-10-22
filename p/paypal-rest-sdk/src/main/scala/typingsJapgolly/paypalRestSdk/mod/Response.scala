@@ -1,29 +1,40 @@
 package typingsJapgolly.paypalRestSdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Response extends js.Object {
+trait Response extends StObject {
+  
   val count: js.UndefOr[Double] = js.undefined
+  
   val create_time: js.UndefOr[String] = js.undefined
+  
   val httpStatusCode: Double
+  
   val total_count: js.UndefOr[Double] = js.undefined
 }
-
 object Response {
-  @scala.inline
-  def apply(
-    httpStatusCode: Double,
-    count: Int | Double = null,
-    create_time: String = null,
-    total_count: Int | Double = null
-  ): Response = {
+  
+  inline def apply(httpStatusCode: Double): Response = {
     val __obj = js.Dynamic.literal(httpStatusCode = httpStatusCode.asInstanceOf[js.Any])
-    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
-    if (create_time != null) __obj.updateDynamic("create_time")(create_time.asInstanceOf[js.Any])
-    if (total_count != null) __obj.updateDynamic("total_count")(total_count.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response]
   }
+  
+  extension [Self <: Response](x: Self) {
+    
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    
+    inline def setCreate_time(value: String): Self = StObject.set(x, "create_time", value.asInstanceOf[js.Any])
+    
+    inline def setCreate_timeUndefined: Self = StObject.set(x, "create_time", js.undefined)
+    
+    inline def setHttpStatusCode(value: Double): Self = StObject.set(x, "httpStatusCode", value.asInstanceOf[js.Any])
+    
+    inline def setTotal_count(value: Double): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
+    
+    inline def setTotal_countUndefined: Self = StObject.set(x, "total_count", js.undefined)
+  }
 }
-

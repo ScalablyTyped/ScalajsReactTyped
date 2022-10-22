@@ -1,46 +1,55 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartAxes.toJSON()`. */
-trait ChartAxesData extends js.Object {
+trait ChartAxesData extends StObject {
+  
   /**
+    * Represents the category axis in a chart.
     *
-    * Represents the category axis in a chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var categoryAxis: js.UndefOr[ChartAxisData] = js.undefined
+  
   /**
+    * Represents the series axis of a 3-D chart.
     *
-    * Represents the series axis of a 3-dimensional chart. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var seriesAxis: js.UndefOr[ChartAxisData] = js.undefined
+  
   /**
+    * Represents the value axis in an axis.
     *
-    * Represents the value axis in an axis. Read-only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.1]
     */
   var valueAxis: js.UndefOr[ChartAxisData] = js.undefined
 }
-
 object ChartAxesData {
-  @scala.inline
-  def apply(
-    categoryAxis: ChartAxisData = null,
-    seriesAxis: ChartAxisData = null,
-    valueAxis: ChartAxisData = null
-  ): ChartAxesData = {
+  
+  inline def apply(): ChartAxesData = {
     val __obj = js.Dynamic.literal()
-    if (categoryAxis != null) __obj.updateDynamic("categoryAxis")(categoryAxis.asInstanceOf[js.Any])
-    if (seriesAxis != null) __obj.updateDynamic("seriesAxis")(seriesAxis.asInstanceOf[js.Any])
-    if (valueAxis != null) __obj.updateDynamic("valueAxis")(valueAxis.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartAxesData]
   }
+  
+  extension [Self <: ChartAxesData](x: Self) {
+    
+    inline def setCategoryAxis(value: ChartAxisData): Self = StObject.set(x, "categoryAxis", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryAxisUndefined: Self = StObject.set(x, "categoryAxis", js.undefined)
+    
+    inline def setSeriesAxis(value: ChartAxisData): Self = StObject.set(x, "seriesAxis", value.asInstanceOf[js.Any])
+    
+    inline def setSeriesAxisUndefined: Self = StObject.set(x, "seriesAxis", js.undefined)
+    
+    inline def setValueAxis(value: ChartAxisData): Self = StObject.set(x, "valueAxis", value.asInstanceOf[js.Any])
+    
+    inline def setValueAxisUndefined: Self = StObject.set(x, "valueAxis", js.undefined)
+  }
 }
-

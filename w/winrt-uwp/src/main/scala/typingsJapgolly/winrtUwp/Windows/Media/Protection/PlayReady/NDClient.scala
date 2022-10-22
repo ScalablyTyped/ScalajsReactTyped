@@ -11,37 +11,15 @@ import typingsJapgolly.winrtUwp.winrtUwpStrings.licensefetchcompleted
 import typingsJapgolly.winrtUwp.winrtUwpStrings.proximitydetectioncompleted
 import typingsJapgolly.winrtUwp.winrtUwpStrings.registrationcompleted
 import typingsJapgolly.winrtUwp.winrtUwpStrings.reregistrationneeded
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Creates PlayReady-ND sessions, coordinates with the download engine and the stream parser (for example, an MPEG-2 demuxer), manages the sample buffer, and listens to media stream source events. */
-@JSGlobal("Windows.Media.Protection.PlayReady.NDClient")
 @js.native
-class NDClient protected () extends js.Object {
-  /**
-    * Creates a new instance of the NDClient class.
-    * @param downloadEngine The download engine used to stream protected media content from a transmitter.
-    * @param streamParser The stream parser used to parse data from a media stream.
-    * @param pMessenger The messenger used to send messages between the PlayReady-ND receiver and transmitter.
-    */
-  def this(downloadEngine: INDDownloadEngine, streamParser: INDStreamParser, pMessenger: INDMessenger) = this()
-  /** Notifies listeners that a closed caption acquisition operation has completed. */
-  @JSName("onclosedcaptiondatareceived")
-  var onclosedcaptiondatareceived_Original: TypedEventHandler[NDClient, INDClosedCaptionDataReceivedEventArgs] = js.native
-  /** Notifies listeners that a license fetch operation has completed. */
-  @JSName("onlicensefetchcompleted")
-  var onlicensefetchcompleted_Original: TypedEventHandler[NDClient, INDLicenseFetchCompletedEventArgs] = js.native
-  /** Notifies listeners that a proximity detection operation has completed. */
-  @JSName("onproximitydetectioncompleted")
-  var onproximitydetectioncompleted_Original: TypedEventHandler[NDClient, INDProximityDetectionCompletedEventArgs] = js.native
-  /** Notifies listeners that a registration operation has completed. */
-  @JSName("onregistrationcompleted")
-  var onregistrationcompleted_Original: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs] = js.native
-  /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
-  @JSName("onreregistrationneeded")
-  var onreregistrationneeded_Original: TypedEventHandler[NDClient, _] = js.native
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+trait NDClient extends StObject {
+  
+  def addEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_closedcaptiondatareceived(
     `type`: closedcaptiondatareceived,
@@ -63,32 +41,56 @@ class NDClient protected () extends js.Object {
     listener: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, _]): Unit = js.native
+  def addEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, Any]): Unit = js.native
+  
   /** Closes the current playback session regardless of whether it is in the registration, proximity detection, license fetch, or play state. */
   def close(): Unit = js.native
+  
   /**
     * Performs a license fetch between a client receiver and a transmitter.
     * @param licenseFetchDescriptor Descriptor for the license being fetched.
     * @return The result of the asynchronous license fetch call.
     */
   def licenseFetchAsync(licenseFetchDescriptor: INDLicenseFetchDescriptor): IPromiseWithIAsyncOperation[INDLicenseFetchResult] = js.native
+  
   /** Notifies listeners that a closed caption acquisition operation has completed. */
-  def onclosedcaptiondatareceived(ev: INDClosedCaptionDataReceivedEventArgs with WinRTEvent[NDClient]): Unit = js.native
+  def onclosedcaptiondatareceived(ev: INDClosedCaptionDataReceivedEventArgs & WinRTEvent[NDClient]): Unit = js.native
+  /** Notifies listeners that a closed caption acquisition operation has completed. */
+  @JSName("onclosedcaptiondatareceived")
+  var onclosedcaptiondatareceived_Original: TypedEventHandler[NDClient, INDClosedCaptionDataReceivedEventArgs] = js.native
+  
   /** Notifies listeners that a license fetch operation has completed. */
-  def onlicensefetchcompleted(ev: INDLicenseFetchCompletedEventArgs with WinRTEvent[NDClient]): Unit = js.native
+  def onlicensefetchcompleted(ev: INDLicenseFetchCompletedEventArgs & WinRTEvent[NDClient]): Unit = js.native
+  /** Notifies listeners that a license fetch operation has completed. */
+  @JSName("onlicensefetchcompleted")
+  var onlicensefetchcompleted_Original: TypedEventHandler[NDClient, INDLicenseFetchCompletedEventArgs] = js.native
+  
   /** Notifies listeners that a proximity detection operation has completed. */
-  def onproximitydetectioncompleted(ev: INDProximityDetectionCompletedEventArgs with WinRTEvent[NDClient]): Unit = js.native
+  def onproximitydetectioncompleted(ev: INDProximityDetectionCompletedEventArgs & WinRTEvent[NDClient]): Unit = js.native
+  /** Notifies listeners that a proximity detection operation has completed. */
+  @JSName("onproximitydetectioncompleted")
+  var onproximitydetectioncompleted_Original: TypedEventHandler[NDClient, INDProximityDetectionCompletedEventArgs] = js.native
+  
   /** Notifies listeners that a registration operation has completed. */
-  def onregistrationcompleted(ev: INDRegistrationCompletedEventArgs with WinRTEvent[NDClient]): Unit = js.native
+  def onregistrationcompleted(ev: INDRegistrationCompletedEventArgs & WinRTEvent[NDClient]): Unit = js.native
+  /** Notifies listeners that a registration operation has completed. */
+  @JSName("onregistrationcompleted")
+  var onregistrationcompleted_Original: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs] = js.native
+  
   /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
-  def onreregistrationneeded(ev: js.Any with WinRTEvent[NDClient]): Unit = js.native
+  def onreregistrationneeded(ev: Any & WinRTEvent[NDClient]): Unit = js.native
+  /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
+  @JSName("onreregistrationneeded")
+  var onreregistrationneeded_Original: TypedEventHandler[NDClient, Any] = js.native
+  
   /**
     * Performs a proximity detection and reregistration between a client receiver and a transmitter.
     * @param registrationCustomData Custom data for the registration request.
     * @return The result of the asynchronous reregistration call.
     */
   def reRegistrationAsync(registrationCustomData: INDCustomData): IPromiseWithIAsyncAction = js.native
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  
+  def removeEventListener(`type`: String, listener: EventHandler[Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_closedcaptiondatareceived(
     `type`: closedcaptiondatareceived,
@@ -110,7 +112,8 @@ class NDClient protected () extends js.Object {
     listener: TypedEventHandler[NDClient, INDRegistrationCompletedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, _]): Unit = js.native
+  def removeEventListener_reregistrationneeded(`type`: reregistrationneeded, listener: TypedEventHandler[NDClient, Any]): Unit = js.native
+  
   /**
     * Starts the registration, proximity detection, and license fetch procedures between a client receiver and a transmitter.
     * @param contentUrl The URL of the streamed content.
@@ -126,4 +129,3 @@ class NDClient protected () extends js.Object {
     licenseFetchDescriptor: INDLicenseFetchDescriptor
   ): IPromiseWithIAsyncOperation[INDStartResult] = js.native
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for json2csv
 
-Typings are for version 4.5
+Typings are for version 5.0
 
 ## Library description:
 Convert JSON to CSV
@@ -10,13 +10,13 @@ Convert JSON to CSV
 | ------------------ | :-------------: |
 | Full name          | json2csv |
 | Keywords           | json, to, csv, export, convert, parse |
-| # releases         | 31 |
-| # dependents       | 372 |
-| # downloads        | 10865055 |
-| # stars            | 59 |
+| # releases         | 9 |
+| # dependents       | 0.0 |
+| # downloads        | 3679061.0 |
+| # stars            | 2562.0 |
 
 ## Links
-- [Homepage](https://github.com/zemirco/json2csv#readme)
+- [Homepage](http://zemirco.github.io/json2csv)
 - [Bugs](https://github.com/zemirco/json2csv/issues)
 - [Repository](https://github.com/zemirco/json2csv)
 - [Npm](https://www.npmjs.com/package/json2csv)

@@ -1,14 +1,18 @@
 package typingsJapgolly.rmcDatePicker.components
 
+import typingsJapgolly.rmcDatePicker.libIdatepickerpropsMod.IDatePickerProps
 import typingsJapgolly.rmcDatePicker.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object RmcDatePicker extends SharedApply_IDatePickerProps_235633069[default] {
+object RmcDatePicker {
+  
   @JSImport("rmc-date-picker", JSImport.Default)
   @js.native
-  override object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  implicit def make(companion: RmcDatePicker.type): SharedBuilder_IDatePickerProps993048654[default] = new SharedBuilder_IDatePickerProps993048654[default](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IDatePickerProps): SharedBuilder_IDatePickerProps993048654[default] = new SharedBuilder_IDatePickerProps993048654[default](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

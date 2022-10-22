@@ -1,29 +1,22 @@
 package typingsJapgolly.winrt.Windows.UI.Text
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CaretType extends js.Object
-
+sealed trait CaretType extends StObject
 @JSGlobal("Windows.UI.Text.CaretType")
 @js.native
-object CaretType extends js.Object {
-  @js.native
-  sealed trait normal extends CaretType
+object CaretType extends StObject {
   
   @js.native
-  sealed trait null_ extends CaretType
+  sealed trait normal
+    extends StObject
+       with CaretType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CaretType with Double] = js.native
-  /* 0 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 1 */ @js.native
-  object null_ extends TopLevel[null_ with Double]
-  
+  @js.native
+  sealed trait null_
+    extends StObject
+       with CaretType
 }
-

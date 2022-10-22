@@ -11,9 +11,9 @@ Japan postal code library
 | Full name          | japan-postal-code |
 | Keywords           | zip, postal code |
 | # releases         | 1 |
-| # dependents       | 0 |
-| # downloads        | 64230 |
-| # stars            | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 13551.333333333334 |
+| # stars            | 30.0 |
 
 ## Links
 - [Homepage](https://github.com/mzp/japan-postal-code)

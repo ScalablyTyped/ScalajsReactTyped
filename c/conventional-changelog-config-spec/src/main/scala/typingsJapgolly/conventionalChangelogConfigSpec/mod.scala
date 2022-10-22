@@ -1,12 +1,19 @@
 package typingsJapgolly.conventionalChangelogConfigSpec
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.Shortcut
 import typingsJapgolly.jsonSchema.mod.JSONSchema7
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("conventional-changelog-config-spec", JSImport.Namespace)
-@js.native
-object mod extends TopLevel[JSONSchema7]
-
+object mod extends Shortcut {
+  
+  @JSImport("conventional-changelog-config-spec", JSImport.Namespace)
+  @js.native
+  val ^ : JSONSchema7 = js.native
+  
+  type _To = JSONSchema7
+  
+  /* This means you don't have to write `^`, but can instead just say `mod.foo` */
+  override def _to: JSONSchema7 = ^
+}

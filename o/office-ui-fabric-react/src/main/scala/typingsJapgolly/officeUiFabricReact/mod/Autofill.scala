@@ -1,34 +1,39 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
-import typingsJapgolly.officeUiFabricReact.AnonEnableAutofillOnKeyPress
-import typingsJapgolly.officeUiFabricReact.autofillTypesMod.IAutofillProps
+import typingsJapgolly.officeUiFabricReact.anon.EnableAutofillOnKeyPress
+import typingsJapgolly.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofillProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Already inherited
+- scala.AnyRef because Already inherited
 - typingsJapgolly.react.mod.DeprecatedLifecycle because Already inherited
 - typingsJapgolly.react.mod.NewLifecycle because Already inherited
+- js.Any because Already inherited
 - typingsJapgolly.react.mod.ComponentLifecycle because Already inherited
+- js.Object because Already inherited
+- typingsJapgolly.officeUiFabricReact.libComponentsAutofillAutofillDottypesMod.IAutofill because Already inherited
 - typingsJapgolly.react.mod.Component because Already inherited
-- typingsJapgolly.uifabricUtilities.baseComponentMod.BaseComponent because Already inherited
-- typingsJapgolly.uifabricUtilities.mod.BaseComponent because Already inherited
-- typingsJapgolly.officeUiFabricReact.autofillTypesMod.IAutofill because Already inherited
-- typingsJapgolly.officeUiFabricReact.utilitiesMod.BaseComponent because Already inherited
-- typingsJapgolly.officeUiFabricReact.autofillAutofillMod.Autofill because Already inherited
-- typingsJapgolly.officeUiFabricReact.baseAutoFillMod.Autofill because Inheritance from two classes. Inlined 
-- typingsJapgolly.officeUiFabricReact.pickersMod.Autofill because Inheritance from two classes. Inlined 
+- typingsJapgolly.officeUiFabricReact.libComponentsAutofillAutofillMod.Autofill because Already inherited
+- typingsJapgolly.officeUiFabricReact.libComponentsPickersAutoFillBaseAutoFillMod.Autofill because Inheritance from two classes. Inlined 
+- typingsJapgolly.officeUiFabricReact.libComponentsPickersMod.Autofill because Inheritance from two classes. Inlined 
 - typingsJapgolly.officeUiFabricReact.libPickersMod.Autofill because Inheritance from two classes. Inlined  */ @JSImport("office-ui-fabric-react", "Autofill")
 @js.native
-class Autofill protected ()
+open class Autofill protected ()
   extends typingsJapgolly.officeUiFabricReact.libAutofillMod.Autofill {
   def this(props: IAutofillProps) = this()
 }
-
 /* static members */
-@JSImport("office-ui-fabric-react", "Autofill")
-@js.native
-object Autofill extends js.Object {
-  var defaultProps: AnonEnableAutofillOnKeyPress = js.native
+object Autofill {
+  
+  @JSImport("office-ui-fabric-react", "Autofill")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("office-ui-fabric-react", "Autofill.defaultProps")
+  @js.native
+  def defaultProps: EnableAutofillOnKeyPress = js.native
+  inline def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }
-

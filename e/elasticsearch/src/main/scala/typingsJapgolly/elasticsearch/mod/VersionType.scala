@@ -1,8 +1,8 @@
 package typingsJapgolly.elasticsearch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.elasticsearch.elasticsearchStrings.internal
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.elasticsearch.elasticsearchStrings.external_gte
   - typingsJapgolly.elasticsearch.elasticsearchStrings.force
 */
-trait VersionType extends js.Object
-
+trait VersionType extends StObject
 object VersionType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def external: typingsJapgolly.elasticsearch.elasticsearchStrings.external = this.cast("external")
-  @scala.inline
-  def external_gte: typingsJapgolly.elasticsearch.elasticsearchStrings.external_gte = this.cast("external_gte")
-  @scala.inline
-  def force: typingsJapgolly.elasticsearch.elasticsearchStrings.force = this.cast("force")
-  @scala.inline
-  def internal: typingsJapgolly.elasticsearch.elasticsearchStrings.internal = this.cast("internal")
+  
+  inline def external: typingsJapgolly.elasticsearch.elasticsearchStrings.external = "external".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.external]
+  
+  inline def external_gte: typingsJapgolly.elasticsearch.elasticsearchStrings.external_gte = "external_gte".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.external_gte]
+  
+  inline def force: typingsJapgolly.elasticsearch.elasticsearchStrings.force = "force".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.force]
+  
+  inline def internal: typingsJapgolly.elasticsearch.elasticsearchStrings.internal = "internal".asInstanceOf[typingsJapgolly.elasticsearch.elasticsearchStrings.internal]
 }
-

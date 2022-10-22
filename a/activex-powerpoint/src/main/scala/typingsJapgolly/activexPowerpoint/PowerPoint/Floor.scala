@@ -1,26 +1,93 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.Floor")
-@js.native
-class Floor protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  val Border: ChartBorder = js.native
-  val Creator: Double = js.native
-  val Fill: ChartFillFormat = js.native
-  val Format: ChartFormat = js.native
-  val Interior: typingsJapgolly.activexPowerpoint.PowerPoint.Interior = js.native
-  val Name: String = js.native
-  val Parent: js.Any = js.native
-  var PictureType: js.Any = js.native
-  @JSName("PowerPoint.Floor_typekey")
-  var PowerPointDotFloor_typekey: Floor = js.native
-  var Thickness: Double = js.native
-  def ClearFormats(): js.Any = js.native
-  def Paste(): Unit = js.native
-  def Select(): js.Any = js.native
+trait Floor extends StObject {
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application
+  
+  val Border: ChartBorder
+  
+  def ClearFormats(): Any
+  
+  val Creator: Double
+  
+  val Fill: ChartFillFormat
+  
+  val Format: ChartFormat
+  
+  val Interior: typingsJapgolly.activexPowerpoint.PowerPoint.Interior
+  
+  val Name: String
+  
+  val Parent: Any
+  
+  def Paste(): Unit
+  
+  var PictureType: Any
+  
+  /* private */ @JSName("PowerPoint.Floor_typekey")
+  var PowerPointDotFloor_typekey: Floor
+  
+  def Select(): Any
+  
+  var Thickness: Double
 }
-
+object Floor {
+  
+  inline def apply(
+    Application: Application,
+    Border: ChartBorder,
+    ClearFormats: CallbackTo[Any],
+    Creator: Double,
+    Fill: ChartFillFormat,
+    Format: ChartFormat,
+    Interior: Interior,
+    Name: String,
+    Parent: Any,
+    Paste: Callback,
+    PictureType: Any,
+    PowerPointDotFloor_typekey: Floor,
+    Select: CallbackTo[Any],
+    Thickness: Double
+  ): Floor = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], Border = Border.asInstanceOf[js.Any], ClearFormats = ClearFormats.toJsFn, Creator = Creator.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Paste = Paste.toJsFn, PictureType = PictureType.asInstanceOf[js.Any], Select = Select.toJsFn, Thickness = Thickness.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.Floor_typekey")(PowerPointDotFloor_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Floor]
+  }
+  
+  extension [Self <: Floor](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setBorder(value: ChartBorder): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    
+    inline def setClearFormats(value: CallbackTo[Any]): Self = StObject.set(x, "ClearFormats", value.toJsFn)
+    
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPaste(value: Callback): Self = StObject.set(x, "Paste", value.toJsFn)
+    
+    inline def setPictureType(value: Any): Self = StObject.set(x, "PictureType", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotFloor_typekey(value: Floor): Self = StObject.set(x, "PowerPoint.Floor_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setSelect(value: CallbackTo[Any]): Self = StObject.set(x, "Select", value.toJsFn)
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "Thickness", value.asInstanceOf[js.Any])
+  }
+}

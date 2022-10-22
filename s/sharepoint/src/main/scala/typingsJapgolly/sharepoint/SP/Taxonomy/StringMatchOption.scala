@@ -1,29 +1,22 @@
 package typingsJapgolly.sharepoint.SP.Taxonomy
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait StringMatchOption extends js.Object
-
+sealed trait StringMatchOption extends StObject
 @JSGlobal("SP.Taxonomy.StringMatchOption")
 @js.native
-object StringMatchOption extends js.Object {
-  @js.native
-  sealed trait exactMatch extends StringMatchOption
+object StringMatchOption extends StObject {
   
   @js.native
-  sealed trait startsWith extends StringMatchOption
+  sealed trait exactMatch
+    extends StObject
+       with StringMatchOption
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StringMatchOption with Double] = js.native
-  /* 1 */ @js.native
-  object exactMatch extends TopLevel[exactMatch with Double]
-  
-  /* 0 */ @js.native
-  object startsWith extends TopLevel[startsWith with Double]
-  
+  @js.native
+  sealed trait startsWith
+    extends StObject
+       with StringMatchOption
 }
-

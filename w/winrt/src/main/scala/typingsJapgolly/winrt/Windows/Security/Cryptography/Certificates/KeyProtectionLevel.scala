@@ -1,35 +1,27 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Certificates
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait KeyProtectionLevel extends js.Object
-
+sealed trait KeyProtectionLevel extends StObject
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyProtectionLevel")
 @js.native
-object KeyProtectionLevel extends js.Object {
-  @js.native
-  sealed trait consentOnly extends KeyProtectionLevel
+object KeyProtectionLevel extends StObject {
   
   @js.native
-  sealed trait consentWithPassword extends KeyProtectionLevel
+  sealed trait consentOnly
+    extends StObject
+       with KeyProtectionLevel
   
   @js.native
-  sealed trait noConsent extends KeyProtectionLevel
+  sealed trait consentWithPassword
+    extends StObject
+       with KeyProtectionLevel
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[KeyProtectionLevel with Double] = js.native
-  /* 1 */ @js.native
-  object consentOnly extends TopLevel[consentOnly with Double]
-  
-  /* 2 */ @js.native
-  object consentWithPassword extends TopLevel[consentWithPassword with Double]
-  
-  /* 0 */ @js.native
-  object noConsent extends TopLevel[noConsent with Double]
-  
+  @js.native
+  sealed trait noConsent
+    extends StObject
+       with KeyProtectionLevel
 }
-

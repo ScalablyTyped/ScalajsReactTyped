@@ -1,77 +1,62 @@
 package typingsJapgolly.winrt.Windows.Graphics.Printing
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PrintQuality extends js.Object
-
+sealed trait PrintQuality extends StObject
 @JSGlobal("Windows.Graphics.Printing.PrintQuality")
 @js.native
-object PrintQuality extends js.Object {
-  @js.native
-  sealed trait automatic extends PrintQuality
+object PrintQuality extends StObject {
   
   @js.native
-  sealed trait default extends PrintQuality
+  sealed trait default
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait draft extends PrintQuality
+  sealed trait automatic
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait fax extends PrintQuality
+  sealed trait draft
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait high extends PrintQuality
+  sealed trait fax
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait normal extends PrintQuality
+  sealed trait high
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait notAvailable extends PrintQuality
+  sealed trait normal
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait photographic extends PrintQuality
+  sealed trait notAvailable
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait printerCustom extends PrintQuality
+  sealed trait photographic
+    extends StObject
+       with PrintQuality
   
   @js.native
-  sealed trait text extends PrintQuality
+  sealed trait printerCustom
+    extends StObject
+       with PrintQuality
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PrintQuality with Double] = js.native
-  /* 3 */ @js.native
-  object automatic extends TopLevel[automatic with Double]
-  
-  /* 0 */ @js.native
-  object default extends TopLevel[default with Double]
-  
-  /* 4 */ @js.native
-  object draft extends TopLevel[draft with Double]
-  
-  /* 5 */ @js.native
-  object fax extends TopLevel[fax with Double]
-  
-  /* 6 */ @js.native
-  object high extends TopLevel[high with Double]
-  
-  /* 7 */ @js.native
-  object normal extends TopLevel[normal with Double]
-  
-  /* 1 */ @js.native
-  object notAvailable extends TopLevel[notAvailable with Double]
-  
-  /* 8 */ @js.native
-  object photographic extends TopLevel[photographic with Double]
-  
-  /* 2 */ @js.native
-  object printerCustom extends TopLevel[printerCustom with Double]
-  
-  /* 9 */ @js.native
-  object text extends TopLevel[text with Double]
-  
+  @js.native
+  sealed trait text
+    extends StObject
+       with PrintQuality
 }
-

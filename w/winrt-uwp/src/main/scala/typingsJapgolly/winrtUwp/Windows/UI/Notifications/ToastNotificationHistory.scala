@@ -1,14 +1,14 @@
 package typingsJapgolly.winrtUwp.Windows.UI.Notifications
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages the toast notifications for an app including the ability the clear all toast history and removing individual toasts. */
-@JSGlobal("Windows.UI.Notifications.ToastNotificationHistory")
 @js.native
-abstract class ToastNotificationHistory () extends js.Object {
+trait ToastNotificationHistory extends StObject {
+  
   /** Removes all notifications sent by this app from action center. */
   def clear(): Unit = js.native
   /**
@@ -16,6 +16,7 @@ abstract class ToastNotificationHistory () extends js.Object {
     * @param applicationId The ID of the app inside the app package whose notifications are to be deleted.
     */
   def clear(applicationId: String): Unit = js.native
+  
   /**
     * Gets notification history, for all notifications sent by this app, from action center.
     * @return A collection of toasts.
@@ -27,6 +28,7 @@ abstract class ToastNotificationHistory () extends js.Object {
     * @return A collection of toasts.
     */
   def getHistory(applicationId: String): IVectorView[ToastNotification] = js.native
+  
   /**
     * Removes an individual toast, with the specified tag label, from action center.
     * @param tag The tag label of the toast notification to be removed.
@@ -45,6 +47,7 @@ abstract class ToastNotificationHistory () extends js.Object {
     * @param applicationId The app ID of the app that sent the specified toast notification. This app must be part of the same app package as the app making this remove request.
     */
   def remove(tag: String, group: String, applicationId: String): Unit = js.native
+  
   /**
     * Removes a group of toast notifications, identified by the specified group label, from action center.
     * @param group The group label of the toast notifications to be removed.
@@ -57,4 +60,3 @@ abstract class ToastNotificationHistory () extends js.Object {
     */
   def removeGroup(group: String, applicationId: String): Unit = js.native
 }
-

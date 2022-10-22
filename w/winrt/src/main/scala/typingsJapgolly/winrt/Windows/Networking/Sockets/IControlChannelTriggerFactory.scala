@@ -1,11 +1,12 @@
 package typingsJapgolly.winrt.Windows.Networking.Sockets
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IControlChannelTriggerFactory extends js.Object {
+trait IControlChannelTriggerFactory extends StObject {
+  
   def createControlChannelTrigger(channelId: String, serverKeepAliveIntervalInMinutes: Double): ControlChannelTrigger = js.native
   def createControlChannelTrigger(
     channelId: String,
@@ -13,4 +14,3 @@ trait IControlChannelTriggerFactory extends js.Object {
     resourceRequestType: ControlChannelTriggerResourceType
   ): ControlChannelTrigger = js.native
 }
-

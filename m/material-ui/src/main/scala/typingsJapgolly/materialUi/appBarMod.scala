@@ -2,21 +2,19 @@ package typingsJapgolly.materialUi
 
 import typingsJapgolly.materialUi.MaterialUI.AppBarProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // __MaterialUI
-@JSImport("material-ui/AppBar", JSImport.Namespace)
-@js.native
-object appBarMod extends js.Object {
-  @js.native
-  class AppBar ()
-    extends Component[AppBarProps, js.Object, js.Any]
+object appBarMod {
   
+  @JSImport("material-ui/AppBar", JSImport.Default)
   @js.native
-  class default ()
-    extends Component[AppBarProps, js.Object, js.Any]
+  open class default () extends AppBar
   
+  @JSImport("material-ui/AppBar", "AppBar")
+  @js.native
+  open class AppBar ()
+    extends Component[AppBarProps, js.Object, Any]
 }
-

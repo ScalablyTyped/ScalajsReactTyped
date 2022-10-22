@@ -10,10 +10,10 @@ A Context API implementation that uses continuation-local-storage under the hood
 | ------------------ | :-------------: |
 | Full name          | zipkin-context-cls |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 35 |
-| # downloads        | 798271 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 81044.33333333333 |
+| # stars            | 525.0 |
 
 ## Links
 - [Homepage](https://github.com/openzipkin/zipkin-js#readme)

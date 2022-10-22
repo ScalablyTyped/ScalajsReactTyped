@@ -1,16 +1,19 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.video")
 @js.native
-class video () extends baseview {
+trait video
+  extends StObject
+     with baseview {
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
+  
   @JSName("config")
   var config_video: videoConfig = js.native
+  
   def getVideo(): Unit = js.native
 }
-

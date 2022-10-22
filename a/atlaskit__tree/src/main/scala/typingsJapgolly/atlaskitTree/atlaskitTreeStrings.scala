@@ -1,24 +1,31 @@
 package typingsJapgolly.atlaskitTree
 
+import typingsJapgolly.atlaskitTree.distTypesComponentsTreeItemTreeItemTypesMod._DragActionType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object atlaskitTreeStrings {
-  @js.native
-  sealed trait `border-box` extends js.Object
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait key
+    extends StObject
+       with _DragActionType
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait mouse
+    extends StObject
+       with _DragActionType
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
-  @scala.inline
-  def `border-box`: `border-box` = "border-box".asInstanceOf[`border-box`]
-  @scala.inline
-  def fixed: fixed = "fixed".asInstanceOf[fixed]
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  @js.native
+  sealed trait none extends StObject
+  inline def none: none = "none".asInstanceOf[none]
+  
+  @js.native
+  sealed trait touch
+    extends StObject
+       with _DragActionType
+  inline def touch: touch = "touch".asInstanceOf[touch]
 }
-

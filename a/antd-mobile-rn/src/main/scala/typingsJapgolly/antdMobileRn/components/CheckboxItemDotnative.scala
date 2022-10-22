@@ -1,63 +1,66 @@
 package typingsJapgolly.antdMobileRn.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.antdMobileRn.checkboxItemNativeMod.ICheckboxItemNativeProps
-import typingsJapgolly.antdMobileRn.checkboxItemNativeMod.default
-import typingsJapgolly.antdMobileRn.checkboxPropsTypeMod.OnChangeParams
-import typingsJapgolly.antdMobileRn.checkboxStyleIndexNativeMod.ICheckboxStyle
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.antdMobileRn.libCheckboxCheckboxItemDotnativeMod.ICheckboxItemNativeProps
+import typingsJapgolly.antdMobileRn.libCheckboxCheckboxItemDotnativeMod.default
+import typingsJapgolly.antdMobileRn.libCheckboxPropsTypeMod.OnChangeParams
+import typingsJapgolly.antdMobileRn.libCheckboxStyleIndexDotnativeMod.ICheckboxStyle
 import typingsJapgolly.reactNative.mod.ImageStyle
 import typingsJapgolly.reactNative.mod.StyleProp
 import typingsJapgolly.reactNative.mod.ViewStyle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CheckboxItemDotnative {
-  def apply(
-    checkboxStyle: StyleProp[ImageStyle] = null,
-    checked: js.UndefOr[Boolean] = js.undefined,
-    defaultChecked: js.UndefOr[Boolean] = js.undefined,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    extra: VdomNode = null,
-    onChange: /* params */ OnChangeParams => Callback = null,
-    onClick: /* e */ js.UndefOr[js.Any] => Callback = null,
-    prefixCls: String = null,
-    style: StyleProp[ViewStyle] = null,
-    styles: ICheckboxStyle = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ICheckboxItemNativeProps, default, Unit, ICheckboxItemNativeProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (checkboxStyle != null) __obj.updateDynamic("checkboxStyle")(checkboxStyle.asInstanceOf[js.Any])
-    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (extra != null) __obj.updateDynamic("extra")(extra.rawNode.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* params */ typingsJapgolly.antdMobileRn.checkboxPropsTypeMod.OnChangeParams) => onChange(t0).runNow()))
-    if (onClick != null) __obj.updateDynamic("onClick")(js.Any.fromFunction1((t0: /* e */ js.UndefOr[js.Any]) => onClick(t0).runNow()))
-    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.antdMobileRn.checkboxItemNativeMod.ICheckboxItemNativeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.antdMobileRn.checkboxItemNativeMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.antdMobileRn.checkboxItemNativeMod.ICheckboxItemNativeProps])(children: _*)
-  }
   @JSImport("antd-mobile-rn/lib/checkbox/CheckboxItem.native", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def checkboxStyle(value: StyleProp[ImageStyle]): this.type = set("checkboxStyle", value.asInstanceOf[js.Any])
+    
+    inline def checkboxStyleNull: this.type = set("checkboxStyle", null)
+    
+    inline def checked(value: Boolean): this.type = set("checked", value.asInstanceOf[js.Any])
+    
+    inline def defaultChecked(value: Boolean): this.type = set("defaultChecked", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def extra(value: VdomNode): this.type = set("extra", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def extraNull: this.type = set("extra", null)
+    
+    inline def extraVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("extra", js.Array(value*))
+    
+    inline def extraVdomElement(value: VdomElement): this.type = set("extra", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onChange(value: /* params */ OnChangeParams => Callback): this.type = set("onChange", js.Any.fromFunction1((t0: /* params */ OnChangeParams) => value(t0).runNow()))
+    
+    inline def onClick(value: /* e */ js.UndefOr[Any] => Callback): this.type = set("onClick", js.Any.fromFunction1((t0: /* e */ js.UndefOr[Any]) => value(t0).runNow()))
+    
+    inline def prefixCls(value: String): this.type = set("prefixCls", value.asInstanceOf[js.Any])
+    
+    inline def style(value: StyleProp[ViewStyle]): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def styleNull: this.type = set("style", null)
+    
+    inline def styles(value: ICheckboxStyle): this.type = set("styles", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: CheckboxItemDotnative.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: ICheckboxItemNativeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

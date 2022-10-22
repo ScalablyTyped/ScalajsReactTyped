@@ -1,13 +1,13 @@
 package typingsJapgolly.lruCache.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("lru-cache", JSImport.Namespace)
 @js.native
-class ^[K, V] () extends LRUCache[K, V] {
-  def this(max: Double) = this()
+open class ^[K, V] protected ()
+  extends StObject
+     with LRUCache[K, V] {
   def this(options: Options[K, V]) = this()
 }
-

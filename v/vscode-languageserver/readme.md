@@ -1,7 +1,7 @@
 
 # Scala.js typings for vscode-languageserver
 
-Typings are for version 5.2.1
+Typings are for version 8.0.2
 
 ## Library description:
 Language server implementation for node
@@ -10,10 +10,10 @@ Language server implementation for node
 | ------------------ | :-------------: |
 | Full name          | vscode-languageserver |
 | Keywords           | - |
-| # releases         | 46 |
-| # dependents       | 161 |
-| # downloads        | 9984756 |
-| # stars            | 0 |
+| # releases         | 34 |
+| # dependents       | 0.0 |
+| # downloads        | 5625909.0 |
+| # stars            | 1042.0 |
 
 ## Links
 - [Homepage](https://github.com/Microsoft/vscode-languageserver-node#readme)

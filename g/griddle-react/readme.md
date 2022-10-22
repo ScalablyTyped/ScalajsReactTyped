@@ -10,10 +10,10 @@ A fast and flexible grid component for React
 | ------------------ | :-------------: |
 | Full name          | griddle-react |
 | Keywords           | react-component, grid, react, pagination, sort |
-| # releases         | 7 |
-| # dependents       | 15 |
-| # downloads        | 275124 |
-| # stars            | 10 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 23953.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/griddle-react)

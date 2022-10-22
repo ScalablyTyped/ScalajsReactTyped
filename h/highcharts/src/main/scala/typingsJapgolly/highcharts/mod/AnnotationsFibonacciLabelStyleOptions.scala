@@ -1,19 +1,24 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnnotationsFibonacciLabelStyleOptions extends js.Object {
+trait AnnotationsFibonacciLabelStyleOptions extends StObject {
+  
   var color: js.UndefOr[String] = js.undefined
 }
-
 object AnnotationsFibonacciLabelStyleOptions {
-  @scala.inline
-  def apply(color: String = null): AnnotationsFibonacciLabelStyleOptions = {
+  
+  inline def apply(): AnnotationsFibonacciLabelStyleOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnnotationsFibonacciLabelStyleOptions]
   }
+  
+  extension [Self <: AnnotationsFibonacciLabelStyleOptions](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+  }
 }
-

@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikVisualizationextensions.BackendAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS
   - typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV
 */
-trait FieldAttributesType extends js.Object
-
+trait FieldAttributesType extends StObject
 object FieldAttributesType {
-  @scala.inline
-  def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = this.cast("A")
-  @scala.inline
-  def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = this.cast("D")
-  @scala.inline
-  def F: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F = this.cast("F")
-  @scala.inline
-  def I: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I = this.cast("I")
-  @scala.inline
-  def IV: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV = this.cast("IV")
-  @scala.inline
-  def M: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M = this.cast("M")
-  @scala.inline
-  def R: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R = this.cast("R")
-  @scala.inline
-  def T: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T = this.cast("T")
-  @scala.inline
-  def TS: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS = this.cast("TS")
-  @scala.inline
-  def U: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U = this.cast("U")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def A: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A = "A".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.A]
+  
+  inline def D: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D = "D".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.D]
+  
+  inline def F: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F = "F".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.F]
+  
+  inline def I: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I = "I".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.I]
+  
+  inline def IV: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV = "IV".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.IV]
+  
+  inline def M: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M = "M".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.M]
+  
+  inline def R: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R = "R".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.R]
+  
+  inline def T: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T = "T".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.T]
+  
+  inline def TS: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS = "TS".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.TS]
+  
+  inline def U: typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U = "U".asInstanceOf[typingsJapgolly.qlikVisualizationextensions.qlikVisualizationextensionsStrings.U]
 }
-

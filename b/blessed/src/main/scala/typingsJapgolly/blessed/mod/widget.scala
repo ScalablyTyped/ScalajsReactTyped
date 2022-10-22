@@ -1,15 +1,16 @@
 package typingsJapgolly.blessed.mod
 
 import typingsJapgolly.blessed.mod.Widgets.TerminalElement
+import typingsJapgolly.blessed.mod.Widgets.TerminalOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("blessed", "widget")
-@js.native
-object widget extends js.Object {
-  @js.native
-  class Terminal () extends TerminalElement
+object widget {
   
+  @JSImport("blessed", "widget.Terminal")
+  @js.native
+  open class Terminal protected () extends TerminalElement {
+    def this(opts: TerminalOptions) = this()
+  }
 }
-

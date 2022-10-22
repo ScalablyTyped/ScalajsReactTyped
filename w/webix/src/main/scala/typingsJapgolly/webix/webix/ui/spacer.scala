@@ -1,15 +1,17 @@
 package typingsJapgolly.webix.webix.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("webix.ui.spacer")
 @js.native
-class spacer () extends baseview {
+trait spacer
+  extends StObject
+     with baseview {
+  
   @JSName("$scope")
-  var $scope: js.Any = js.native
+  var $scope: Any = js.native
+  
   @JSName("config")
   var config_spacer: spacerConfig = js.native
 }
-

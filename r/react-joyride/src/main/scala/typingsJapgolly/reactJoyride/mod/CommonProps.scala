@@ -1,64 +1,121 @@
 package typingsJapgolly.reactJoyride.mod
 
-import japgolly.scalajs.react.raw.React.ElementType
+import japgolly.scalajs.react.facade.React.ElementType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CommonProps extends js.Object {
+trait CommonProps extends StObject {
+  
   var beaconComponent: js.UndefOr[ElementType] = js.undefined
+  
   var disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined
+  
   var disableOverlay: js.UndefOr[Boolean] = js.undefined
+  
   var disableOverlayClose: js.UndefOr[Boolean] = js.undefined
+  
   var disableScrollParentFix: js.UndefOr[Boolean] = js.undefined
+  
   var disableScrolling: js.UndefOr[Boolean] = js.undefined
-  var floaterProps: js.UndefOr[FloaterProps] = js.undefined
+  
+  var floaterProps: js.UndefOr[Props] = js.undefined
+  
   var hideBackButton: js.UndefOr[Boolean] = js.undefined
+  
+  var hideCloseButton: js.UndefOr[Boolean] = js.undefined
+  
   var locale: js.UndefOr[Locale] = js.undefined
+  
+  var nonce: js.UndefOr[String] = js.undefined
+  
   var showProgress: js.UndefOr[Boolean] = js.undefined
+  
   var showSkipButton: js.UndefOr[Boolean] = js.undefined
+  
   var spotlightClicks: js.UndefOr[Boolean] = js.undefined
+  
   var spotlightPadding: js.UndefOr[Double] = js.undefined
+  
   var styles: js.UndefOr[Styles] = js.undefined
+  
   var tooltipComponent: js.UndefOr[ElementType] = js.undefined
 }
-
 object CommonProps {
-  @scala.inline
-  def apply(
-    beaconComponent: ElementType = null,
-    disableCloseOnEsc: js.UndefOr[Boolean] = js.undefined,
-    disableOverlay: js.UndefOr[Boolean] = js.undefined,
-    disableOverlayClose: js.UndefOr[Boolean] = js.undefined,
-    disableScrollParentFix: js.UndefOr[Boolean] = js.undefined,
-    disableScrolling: js.UndefOr[Boolean] = js.undefined,
-    floaterProps: FloaterProps = null,
-    hideBackButton: js.UndefOr[Boolean] = js.undefined,
-    locale: Locale = null,
-    showProgress: js.UndefOr[Boolean] = js.undefined,
-    showSkipButton: js.UndefOr[Boolean] = js.undefined,
-    spotlightClicks: js.UndefOr[Boolean] = js.undefined,
-    spotlightPadding: Int | Double = null,
-    styles: Styles = null,
-    tooltipComponent: ElementType = null
-  ): CommonProps = {
+  
+  inline def apply(): CommonProps = {
     val __obj = js.Dynamic.literal()
-    if (beaconComponent != null) __obj.updateDynamic("beaconComponent")(beaconComponent.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableCloseOnEsc)) __obj.updateDynamic("disableCloseOnEsc")(disableCloseOnEsc.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlay)) __obj.updateDynamic("disableOverlay")(disableOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableOverlayClose)) __obj.updateDynamic("disableOverlayClose")(disableOverlayClose.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrollParentFix)) __obj.updateDynamic("disableScrollParentFix")(disableScrollParentFix.asInstanceOf[js.Any])
-    if (!js.isUndefined(disableScrolling)) __obj.updateDynamic("disableScrolling")(disableScrolling.asInstanceOf[js.Any])
-    if (floaterProps != null) __obj.updateDynamic("floaterProps")(floaterProps.asInstanceOf[js.Any])
-    if (!js.isUndefined(hideBackButton)) __obj.updateDynamic("hideBackButton")(hideBackButton.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (!js.isUndefined(showProgress)) __obj.updateDynamic("showProgress")(showProgress.asInstanceOf[js.Any])
-    if (!js.isUndefined(showSkipButton)) __obj.updateDynamic("showSkipButton")(showSkipButton.asInstanceOf[js.Any])
-    if (!js.isUndefined(spotlightClicks)) __obj.updateDynamic("spotlightClicks")(spotlightClicks.asInstanceOf[js.Any])
-    if (spotlightPadding != null) __obj.updateDynamic("spotlightPadding")(spotlightPadding.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (tooltipComponent != null) __obj.updateDynamic("tooltipComponent")(tooltipComponent.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonProps]
   }
+  
+  extension [Self <: CommonProps](x: Self) {
+    
+    inline def setBeaconComponent(value: ElementType): Self = StObject.set(x, "beaconComponent", value.asInstanceOf[js.Any])
+    
+    inline def setBeaconComponentUndefined: Self = StObject.set(x, "beaconComponent", js.undefined)
+    
+    inline def setDisableCloseOnEsc(value: Boolean): Self = StObject.set(x, "disableCloseOnEsc", value.asInstanceOf[js.Any])
+    
+    inline def setDisableCloseOnEscUndefined: Self = StObject.set(x, "disableCloseOnEsc", js.undefined)
+    
+    inline def setDisableOverlay(value: Boolean): Self = StObject.set(x, "disableOverlay", value.asInstanceOf[js.Any])
+    
+    inline def setDisableOverlayClose(value: Boolean): Self = StObject.set(x, "disableOverlayClose", value.asInstanceOf[js.Any])
+    
+    inline def setDisableOverlayCloseUndefined: Self = StObject.set(x, "disableOverlayClose", js.undefined)
+    
+    inline def setDisableOverlayUndefined: Self = StObject.set(x, "disableOverlay", js.undefined)
+    
+    inline def setDisableScrollParentFix(value: Boolean): Self = StObject.set(x, "disableScrollParentFix", value.asInstanceOf[js.Any])
+    
+    inline def setDisableScrollParentFixUndefined: Self = StObject.set(x, "disableScrollParentFix", js.undefined)
+    
+    inline def setDisableScrolling(value: Boolean): Self = StObject.set(x, "disableScrolling", value.asInstanceOf[js.Any])
+    
+    inline def setDisableScrollingUndefined: Self = StObject.set(x, "disableScrolling", js.undefined)
+    
+    inline def setFloaterProps(value: Props): Self = StObject.set(x, "floaterProps", value.asInstanceOf[js.Any])
+    
+    inline def setFloaterPropsUndefined: Self = StObject.set(x, "floaterProps", js.undefined)
+    
+    inline def setHideBackButton(value: Boolean): Self = StObject.set(x, "hideBackButton", value.asInstanceOf[js.Any])
+    
+    inline def setHideBackButtonUndefined: Self = StObject.set(x, "hideBackButton", js.undefined)
+    
+    inline def setHideCloseButton(value: Boolean): Self = StObject.set(x, "hideCloseButton", value.asInstanceOf[js.Any])
+    
+    inline def setHideCloseButtonUndefined: Self = StObject.set(x, "hideCloseButton", js.undefined)
+    
+    inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    
+    inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+    
+    inline def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
+    
+    inline def setShowProgress(value: Boolean): Self = StObject.set(x, "showProgress", value.asInstanceOf[js.Any])
+    
+    inline def setShowProgressUndefined: Self = StObject.set(x, "showProgress", js.undefined)
+    
+    inline def setShowSkipButton(value: Boolean): Self = StObject.set(x, "showSkipButton", value.asInstanceOf[js.Any])
+    
+    inline def setShowSkipButtonUndefined: Self = StObject.set(x, "showSkipButton", js.undefined)
+    
+    inline def setSpotlightClicks(value: Boolean): Self = StObject.set(x, "spotlightClicks", value.asInstanceOf[js.Any])
+    
+    inline def setSpotlightClicksUndefined: Self = StObject.set(x, "spotlightClicks", js.undefined)
+    
+    inline def setSpotlightPadding(value: Double): Self = StObject.set(x, "spotlightPadding", value.asInstanceOf[js.Any])
+    
+    inline def setSpotlightPaddingUndefined: Self = StObject.set(x, "spotlightPadding", js.undefined)
+    
+    inline def setStyles(value: Styles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    inline def setTooltipComponent(value: ElementType): Self = StObject.set(x, "tooltipComponent", value.asInstanceOf[js.Any])
+    
+    inline def setTooltipComponentUndefined: Self = StObject.set(x, "tooltipComponent", js.undefined)
+  }
 }
-

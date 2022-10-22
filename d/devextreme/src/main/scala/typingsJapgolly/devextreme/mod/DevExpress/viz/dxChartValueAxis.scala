@@ -1,209 +1,300 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
-import typingsJapgolly.devextreme.AnonColorOpacity
-import typingsJapgolly.devextreme.AnonLength
-import typingsJapgolly.devextreme.AnonLine
-import typingsJapgolly.devextreme.devextremeStrings.auto
-import typingsJapgolly.devextreme.devextremeStrings.betweenLabels
-import typingsJapgolly.devextreme.devextremeStrings.bottom
-import typingsJapgolly.devextreme.devextremeStrings.continuous
-import typingsJapgolly.devextreme.devextremeStrings.crossLabels
-import typingsJapgolly.devextreme.devextremeStrings.datetime
-import typingsJapgolly.devextreme.devextremeStrings.day
-import typingsJapgolly.devextreme.devextremeStrings.discrete
-import typingsJapgolly.devextreme.devextremeStrings.hour
-import typingsJapgolly.devextreme.devextremeStrings.keep
-import typingsJapgolly.devextreme.devextremeStrings.left
-import typingsJapgolly.devextreme.devextremeStrings.logarithmic
-import typingsJapgolly.devextreme.devextremeStrings.millisecond
-import typingsJapgolly.devextreme.devextremeStrings.minute
-import typingsJapgolly.devextreme.devextremeStrings.month
-import typingsJapgolly.devextreme.devextremeStrings.numeric
-import typingsJapgolly.devextreme.devextremeStrings.quarter
-import typingsJapgolly.devextreme.devextremeStrings.reset
-import typingsJapgolly.devextreme.devextremeStrings.right
-import typingsJapgolly.devextreme.devextremeStrings.second
-import typingsJapgolly.devextreme.devextremeStrings.shift
-import typingsJapgolly.devextreme.devextremeStrings.string_
-import typingsJapgolly.devextreme.devextremeStrings.top
-import typingsJapgolly.devextreme.devextremeStrings.week
-import typingsJapgolly.devextreme.devextremeStrings.year
+import typingsJapgolly.devextreme.mod.DevExpress.common.Position
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.AxisScaleType
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.ChartsDataType
+import typingsJapgolly.devextreme.mod.DevExpress.common.charts.VisualRangeUpdateMode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait dxChartValueAxis extends dxChartCommonAxisSettings {
-  /** Enables auto-calculated scale breaks. Applies only if the axis' type is "continuous" or "logarithmic" and valueType is "numeric". */
+trait dxChartValueAxis
+  extends StObject
+     with dxChartCommonAxisSettings {
+  
+  /**
+    * Enables auto-calculated scale breaks. Applies only if the axis&apos; type is &apos;continuous&apos; or &apos;logarithmic&apos; and valueType is &apos;numeric&apos;.
+    */
   var autoBreaksEnabled: js.UndefOr[Boolean] = js.undefined
-  /** Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the "continuous" and "logarithmic" types. */
+  
+  /**
+    * Specifies the minimum distance between two neighboring major ticks in pixels. Applies only to the axes of the &apos;continuous&apos; and &apos;logarithmic&apos; types.
+    */
   var axisDivisionFactor: js.UndefOr[Double] = js.undefined
-  /** Declares a custom scale break collection. Applies only if the axis' type is "continuous" or "logarithmic". */
+  
+  /**
+    * Declares a custom scale break collection. Applies only if the axis&apos; type is &apos;continuous&apos; or &apos;logarithmic&apos;.
+    */
   var breaks: js.UndefOr[js.Array[ScaleBreak]] = js.undefined
-  /** Specifies the order of categories on an axis of the "discrete" type. */
+  
+  /**
+    * Specifies the order of categories on an axis of the &apos;discrete&apos; type.
+    */
   var categories: js.UndefOr[js.Array[Double | String | js.Date]] = js.undefined
-  /** Specifies the appearance of those constant lines that belong to the value axis. */
+  
+  /**
+    * Specifies the appearance of those constant lines that belong to the value axis.
+    */
   @JSName("constantLineStyle")
   var constantLineStyle_dxChartValueAxis: js.UndefOr[dxChartValueAxisConstantLineStyle] = js.undefined
-  /** Declares a collection of constant lines belonging to the value axis. */
+  
+  /**
+    * Declares a collection of constant lines belonging to the value axis.
+    */
   var constantLines: js.UndefOr[js.Array[dxChartValueAxisConstantLines]] = js.undefined
-  /** Configures the labels of the value axis. */
+  
+  /**
+    * Specifies the position of the value axis on the argument axis.
+    */
+  var customPosition: js.UndefOr[Double | js.Date | String] = js.undefined
+  
+  /**
+    * Configures the labels of the value axis.
+    */
   @JSName("label")
   var label_dxChartValueAxis: js.UndefOr[dxChartValueAxisLabel] = js.undefined
-  /** Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes. */
+  
+  /**
+    * Specifies a value used to calculate the range on a logarithmic axis within which the axis should be linear. Applies only if the data source contains negative values or zeroes.
+    */
   var linearThreshold: js.UndefOr[Double] = js.undefined
-  /** Specifies the value to be raised to a power when generating ticks for an axis of the "logarithmic" type. */
+  
+  /**
+    * Specifies the value to be raised to a power when generating ticks for an axis of the &apos;logarithmic&apos; type.
+    */
   var logarithmBase: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use the valueAxis.visualRange option instead. */
-  /** Coupled with the min option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
-  var max: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** Sets a limit on auto-calculated scale breaks. Custom scale breaks are not counted. */
+  
+  /**
+    * Sets a limit on auto-calculated scale breaks. Custom scale breaks are not counted.
+    */
   var maxAutoBreakCount: js.UndefOr[Double] = js.undefined
-  /** @deprecated Use the valueAxis.visualRange option instead. */
-  /** Coupled with the max option, focuses the widget on a specific chart segment. Applies only to the axes of the "continuous" and "logarithmic" type. */
-  var min: js.UndefOr[Double | js.Date | String] = js.undefined
-  /** Specifies the minimum length of the visual range. */
-  var minVisualRangeLength: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** Specifies how many minor ticks to place between two neighboring major ticks. */
+  
+  /**
+    * Specifies the minimum length of the visual range.
+    */
+  var minVisualRangeLength: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * Specifies how many minor ticks to place between two neighboring major ticks.
+    */
   var minorTickCount: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between minor ticks. Applies only to continuous axes. */
-  var minorTickInterval: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are located on one side of the chart. */
+  
+  /**
+    * Specifies the interval between minor ticks. Applies only to continuous axes.
+    */
+  var minorTickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * Adds a pixel-measured empty space between two side-by-side value axes. Applies if several value axes are located on one side of the chart.
+    */
   var multipleAxesSpacing: js.UndefOr[Double] = js.undefined
-  /** Specifies the name of the value axis. */
+  
+  /**
+    * Specifies the name of the value axis.
+    */
   var name: js.UndefOr[String] = js.undefined
-  /** Binds the value axis to a pane. */
+  
+  /**
+    * Specifies the shift in pixels of the value axis.
+    */
+  var offset: js.UndefOr[Double] = js.undefined
+  
+  /**
+    * Binds the value axis to a pane.
+    */
   var pane: js.UndefOr[String] = js.undefined
-  /** Relocates the value axis. */
-  var position: js.UndefOr[bottom | left | right | top] = js.undefined
-  /** Specifies whether or not to show zero on the value axis. */
+  
+  /**
+    * Relocates the value axis.
+    */
+  var position: js.UndefOr[Position] = js.undefined
+  
+  /**
+    * Specifies whether or not to show zero on the value axis.
+    */
   var showZero: js.UndefOr[Boolean] = js.undefined
-  /** Declares a collection of strips belonging to the value axis. */
+  
+  /**
+    * Declares a collection of strips belonging to the value axis.
+    */
   var strips: js.UndefOr[js.Array[dxChartValueAxisStrips]] = js.undefined
-  /** Synchronizes two or more value axes with each other at a specific value. */
+  
+  /**
+    * Synchronizes two or more value axes with each other at a specific value.
+    */
   var synchronizedValue: js.UndefOr[Double] = js.undefined
-  /** Specifies the interval between major ticks. Does not apply to discrete axes. */
-  var tickInterval: js.UndefOr[
-    Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year
-  ] = js.undefined
-  /** Configures the axis title. */
+  
+  /**
+    * Specifies the interval between major ticks. Does not apply to discrete axes.
+    */
+  var tickInterval: js.UndefOr[VizTimeInterval] = js.undefined
+  
+  /**
+    * Configures the axis title.
+    */
   @JSName("title")
   var title_dxChartValueAxis: js.UndefOr[dxChartValueAxisTitle] = js.undefined
-  /** Specifies the type of the value axis. */
-  var `type`: js.UndefOr[continuous | discrete | logarithmic] = js.undefined
-  /** Casts values to a specified data type. */
-  var valueType: js.UndefOr[datetime | numeric | string_] = js.undefined
-  /** Defines the axis' displayed range. Cannot be wider than the wholeRange. */
+  
+  /**
+    * Specifies the type of the value axis.
+    */
+  var `type`: js.UndefOr[AxisScaleType] = js.undefined
+  
+  /**
+    * Casts values to a specified data type.
+    */
+  var valueType: js.UndefOr[ChartsDataType] = js.undefined
+  
+  /**
+    * Defines the axis&apos; displayed range. Cannot be wider than the wholeRange.
+    */
   var visualRange: js.UndefOr[VizRange | (js.Array[Double | String | js.Date])] = js.undefined
-  /** Specifies how the axis's visual range should behave when chart data is updated. */
-  var visualRangeUpdateMode: js.UndefOr[auto | keep | reset | shift] = js.undefined
-  /** Defines the range where the axis can be zoomed and panned. */
+  
+  /**
+    * Specifies how the axis&apos;s visual range should behave when chart data is updated.
+    */
+  var visualRangeUpdateMode: js.UndefOr[VisualRangeUpdateMode] = js.undefined
+  
+  /**
+    * Defines the range where the axis can be zoomed and panned.
+    */
   var wholeRange: js.UndefOr[VizRange | (js.Array[Double | String | js.Date])] = js.undefined
 }
-
 object dxChartValueAxis {
-  @scala.inline
-  def apply(
-    allowDecimals: js.UndefOr[Boolean] = js.undefined,
-    autoBreaksEnabled: js.UndefOr[Boolean] = js.undefined,
-    axisDivisionFactor: Int | Double = null,
-    breakStyle: AnonLine = null,
-    breaks: js.Array[ScaleBreak] = null,
-    categories: js.Array[Double | String | js.Date] = null,
-    color: String = null,
-    constantLineStyle: dxChartValueAxisConstantLineStyle = null,
-    constantLines: js.Array[dxChartValueAxisConstantLines] = null,
-    discreteAxisDivisionMode: betweenLabels | crossLabels = null,
-    endOnTick: js.UndefOr[Boolean] = js.undefined,
-    grid: AnonColorOpacity = null,
-    inverted: js.UndefOr[Boolean] = js.undefined,
-    label: dxChartValueAxisLabel = null,
-    linearThreshold: Int | Double = null,
-    logarithmBase: Int | Double = null,
-    max: Double | js.Date | String = null,
-    maxAutoBreakCount: Int | Double = null,
-    maxValueMargin: Int | Double = null,
-    min: Double | js.Date | String = null,
-    minValueMargin: Int | Double = null,
-    minVisualRangeLength: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    minorGrid: AnonColorOpacity = null,
-    minorTick: AnonLength = null,
-    minorTickCount: Int | Double = null,
-    minorTickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    multipleAxesSpacing: Int | Double = null,
-    name: String = null,
-    opacity: Int | Double = null,
-    pane: String = null,
-    placeholderSize: Int | Double = null,
-    position: bottom | left | right | top = null,
-    showZero: js.UndefOr[Boolean] = js.undefined,
-    stripStyle: dxChartCommonAxisSettingsStripStyle = null,
-    strips: js.Array[dxChartValueAxisStrips] = null,
-    synchronizedValue: Int | Double = null,
-    tick: AnonLength = null,
-    tickInterval: Double | js.Any | day | hour | millisecond | minute | month | quarter | second | week | year = null,
-    title: dxChartValueAxisTitle = null,
-    `type`: continuous | discrete | logarithmic = null,
-    valueMarginsEnabled: js.UndefOr[Boolean] = js.undefined,
-    valueType: datetime | numeric | string_ = null,
-    visible: js.UndefOr[Boolean] = js.undefined,
-    visualRange: VizRange | (js.Array[Double | String | js.Date]) = null,
-    visualRangeUpdateMode: auto | keep | reset | shift = null,
-    wholeRange: VizRange | (js.Array[Double | String | js.Date]) = null,
-    width: Int | Double = null
-  ): dxChartValueAxis = {
+  
+  inline def apply(): dxChartValueAxis = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowDecimals)) __obj.updateDynamic("allowDecimals")(allowDecimals.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoBreaksEnabled)) __obj.updateDynamic("autoBreaksEnabled")(autoBreaksEnabled.asInstanceOf[js.Any])
-    if (axisDivisionFactor != null) __obj.updateDynamic("axisDivisionFactor")(axisDivisionFactor.asInstanceOf[js.Any])
-    if (breakStyle != null) __obj.updateDynamic("breakStyle")(breakStyle.asInstanceOf[js.Any])
-    if (breaks != null) __obj.updateDynamic("breaks")(breaks.asInstanceOf[js.Any])
-    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (constantLineStyle != null) __obj.updateDynamic("constantLineStyle")(constantLineStyle.asInstanceOf[js.Any])
-    if (constantLines != null) __obj.updateDynamic("constantLines")(constantLines.asInstanceOf[js.Any])
-    if (discreteAxisDivisionMode != null) __obj.updateDynamic("discreteAxisDivisionMode")(discreteAxisDivisionMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick.asInstanceOf[js.Any])
-    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
-    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (linearThreshold != null) __obj.updateDynamic("linearThreshold")(linearThreshold.asInstanceOf[js.Any])
-    if (logarithmBase != null) __obj.updateDynamic("logarithmBase")(logarithmBase.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (maxAutoBreakCount != null) __obj.updateDynamic("maxAutoBreakCount")(maxAutoBreakCount.asInstanceOf[js.Any])
-    if (maxValueMargin != null) __obj.updateDynamic("maxValueMargin")(maxValueMargin.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (minValueMargin != null) __obj.updateDynamic("minValueMargin")(minValueMargin.asInstanceOf[js.Any])
-    if (minVisualRangeLength != null) __obj.updateDynamic("minVisualRangeLength")(minVisualRangeLength.asInstanceOf[js.Any])
-    if (minorGrid != null) __obj.updateDynamic("minorGrid")(minorGrid.asInstanceOf[js.Any])
-    if (minorTick != null) __obj.updateDynamic("minorTick")(minorTick.asInstanceOf[js.Any])
-    if (minorTickCount != null) __obj.updateDynamic("minorTickCount")(minorTickCount.asInstanceOf[js.Any])
-    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
-    if (multipleAxesSpacing != null) __obj.updateDynamic("multipleAxesSpacing")(multipleAxesSpacing.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (pane != null) __obj.updateDynamic("pane")(pane.asInstanceOf[js.Any])
-    if (placeholderSize != null) __obj.updateDynamic("placeholderSize")(placeholderSize.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
-    if (!js.isUndefined(showZero)) __obj.updateDynamic("showZero")(showZero.asInstanceOf[js.Any])
-    if (stripStyle != null) __obj.updateDynamic("stripStyle")(stripStyle.asInstanceOf[js.Any])
-    if (strips != null) __obj.updateDynamic("strips")(strips.asInstanceOf[js.Any])
-    if (synchronizedValue != null) __obj.updateDynamic("synchronizedValue")(synchronizedValue.asInstanceOf[js.Any])
-    if (tick != null) __obj.updateDynamic("tick")(tick.asInstanceOf[js.Any])
-    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(valueMarginsEnabled)) __obj.updateDynamic("valueMarginsEnabled")(valueMarginsEnabled.asInstanceOf[js.Any])
-    if (valueType != null) __obj.updateDynamic("valueType")(valueType.asInstanceOf[js.Any])
-    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible.asInstanceOf[js.Any])
-    if (visualRange != null) __obj.updateDynamic("visualRange")(visualRange.asInstanceOf[js.Any])
-    if (visualRangeUpdateMode != null) __obj.updateDynamic("visualRangeUpdateMode")(visualRangeUpdateMode.asInstanceOf[js.Any])
-    if (wholeRange != null) __obj.updateDynamic("wholeRange")(wholeRange.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxChartValueAxis]
   }
+  
+  extension [Self <: dxChartValueAxis](x: Self) {
+    
+    inline def setAutoBreaksEnabled(value: Boolean): Self = StObject.set(x, "autoBreaksEnabled", value.asInstanceOf[js.Any])
+    
+    inline def setAutoBreaksEnabledUndefined: Self = StObject.set(x, "autoBreaksEnabled", js.undefined)
+    
+    inline def setAxisDivisionFactor(value: Double): Self = StObject.set(x, "axisDivisionFactor", value.asInstanceOf[js.Any])
+    
+    inline def setAxisDivisionFactorUndefined: Self = StObject.set(x, "axisDivisionFactor", js.undefined)
+    
+    inline def setBreaks(value: js.Array[ScaleBreak]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    
+    inline def setBreaksVarargs(value: ScaleBreak*): Self = StObject.set(x, "breaks", js.Array(value*))
+    
+    inline def setCategories(value: js.Array[Double | String | js.Date]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    
+    inline def setCategoriesVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "categories", js.Array(value*))
+    
+    inline def setConstantLineStyle(value: dxChartValueAxisConstantLineStyle): Self = StObject.set(x, "constantLineStyle", value.asInstanceOf[js.Any])
+    
+    inline def setConstantLineStyleUndefined: Self = StObject.set(x, "constantLineStyle", js.undefined)
+    
+    inline def setConstantLines(value: js.Array[dxChartValueAxisConstantLines]): Self = StObject.set(x, "constantLines", value.asInstanceOf[js.Any])
+    
+    inline def setConstantLinesUndefined: Self = StObject.set(x, "constantLines", js.undefined)
+    
+    inline def setConstantLinesVarargs(value: dxChartValueAxisConstantLines*): Self = StObject.set(x, "constantLines", js.Array(value*))
+    
+    inline def setCustomPosition(value: Double | js.Date | String): Self = StObject.set(x, "customPosition", value.asInstanceOf[js.Any])
+    
+    inline def setCustomPositionUndefined: Self = StObject.set(x, "customPosition", js.undefined)
+    
+    inline def setLabel(value: dxChartValueAxisLabel): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setLinearThreshold(value: Double): Self = StObject.set(x, "linearThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setLinearThresholdUndefined: Self = StObject.set(x, "linearThreshold", js.undefined)
+    
+    inline def setLogarithmBase(value: Double): Self = StObject.set(x, "logarithmBase", value.asInstanceOf[js.Any])
+    
+    inline def setLogarithmBaseUndefined: Self = StObject.set(x, "logarithmBase", js.undefined)
+    
+    inline def setMaxAutoBreakCount(value: Double): Self = StObject.set(x, "maxAutoBreakCount", value.asInstanceOf[js.Any])
+    
+    inline def setMaxAutoBreakCountUndefined: Self = StObject.set(x, "maxAutoBreakCount", js.undefined)
+    
+    inline def setMinVisualRangeLength(value: VizTimeInterval): Self = StObject.set(x, "minVisualRangeLength", value.asInstanceOf[js.Any])
+    
+    inline def setMinVisualRangeLengthUndefined: Self = StObject.set(x, "minVisualRangeLength", js.undefined)
+    
+    inline def setMinorTickCount(value: Double): Self = StObject.set(x, "minorTickCount", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickCountUndefined: Self = StObject.set(x, "minorTickCount", js.undefined)
+    
+    inline def setMinorTickInterval(value: VizTimeInterval): Self = StObject.set(x, "minorTickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setMinorTickIntervalUndefined: Self = StObject.set(x, "minorTickInterval", js.undefined)
+    
+    inline def setMultipleAxesSpacing(value: Double): Self = StObject.set(x, "multipleAxesSpacing", value.asInstanceOf[js.Any])
+    
+    inline def setMultipleAxesSpacingUndefined: Self = StObject.set(x, "multipleAxesSpacing", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setPane(value: String): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
+    
+    inline def setPaneUndefined: Self = StObject.set(x, "pane", js.undefined)
+    
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    
+    inline def setShowZero(value: Boolean): Self = StObject.set(x, "showZero", value.asInstanceOf[js.Any])
+    
+    inline def setShowZeroUndefined: Self = StObject.set(x, "showZero", js.undefined)
+    
+    inline def setStrips(value: js.Array[dxChartValueAxisStrips]): Self = StObject.set(x, "strips", value.asInstanceOf[js.Any])
+    
+    inline def setStripsUndefined: Self = StObject.set(x, "strips", js.undefined)
+    
+    inline def setStripsVarargs(value: dxChartValueAxisStrips*): Self = StObject.set(x, "strips", js.Array(value*))
+    
+    inline def setSynchronizedValue(value: Double): Self = StObject.set(x, "synchronizedValue", value.asInstanceOf[js.Any])
+    
+    inline def setSynchronizedValueUndefined: Self = StObject.set(x, "synchronizedValue", js.undefined)
+    
+    inline def setTickInterval(value: VizTimeInterval): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+    
+    inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
+    
+    inline def setTitle(value: dxChartValueAxisTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setType(value: AxisScaleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setValueType(value: ChartsDataType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    
+    inline def setVisualRange(value: VizRange | (js.Array[Double | String | js.Date])): Self = StObject.set(x, "visualRange", value.asInstanceOf[js.Any])
+    
+    inline def setVisualRangeUndefined: Self = StObject.set(x, "visualRange", js.undefined)
+    
+    inline def setVisualRangeUpdateMode(value: VisualRangeUpdateMode): Self = StObject.set(x, "visualRangeUpdateMode", value.asInstanceOf[js.Any])
+    
+    inline def setVisualRangeUpdateModeUndefined: Self = StObject.set(x, "visualRangeUpdateMode", js.undefined)
+    
+    inline def setVisualRangeVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "visualRange", js.Array(value*))
+    
+    inline def setWholeRange(value: VizRange | (js.Array[Double | String | js.Date])): Self = StObject.set(x, "wholeRange", value.asInstanceOf[js.Any])
+    
+    inline def setWholeRangeUndefined: Self = StObject.set(x, "wholeRange", js.undefined)
+    
+    inline def setWholeRangeVarargs(value: (Double | String | js.Date)*): Self = StObject.set(x, "wholeRange", js.Array(value*))
+  }
 }
-

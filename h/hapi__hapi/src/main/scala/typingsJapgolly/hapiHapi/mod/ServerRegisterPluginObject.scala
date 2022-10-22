@@ -1,34 +1,36 @@
 package typingsJapgolly.hapiHapi.mod
 
-import typingsJapgolly.hapiHapi.AnonVhost
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ServerRegisterPluginObject[T] extends ServerRegisterOptions {
+trait ServerRegisterPluginObject[T]
+  extends StObject
+     with ServerRegisterOptions {
+  
   /**
     * options passed to the plugin during registration.
     */
   var options: js.UndefOr[T] = js.undefined
+  
   /**
     * a plugin object.
     */
   var plugin: Plugin[T]
 }
-
 object ServerRegisterPluginObject {
-  @scala.inline
-  def apply[T](
-    plugin: Plugin[T],
-    once: js.UndefOr[Boolean] = js.undefined,
-    options: T = null,
-    routes: AnonVhost = null
-  ): ServerRegisterPluginObject[T] = {
+  
+  inline def apply[T](plugin: Plugin[T]): ServerRegisterPluginObject[T] = {
     val __obj = js.Dynamic.literal(plugin = plugin.asInstanceOf[js.Any])
-    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
-    if (routes != null) __obj.updateDynamic("routes")(routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRegisterPluginObject[T]]
   }
+  
+  extension [Self <: ServerRegisterPluginObject[?], T](x: Self & ServerRegisterPluginObject[T]) {
+    
+    inline def setOptions(value: T): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    
+    inline def setPlugin(value: Plugin[T]): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+  }
 }
-

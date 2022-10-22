@@ -1,8 +1,8 @@
 package typingsJapgolly.reactNativeFbsdk.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web
   - typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.feed
 */
-trait ShareDialogModeAndroid extends js.Object
-
+trait ShareDialogModeAndroid extends StObject
 object ShareDialogModeAndroid {
-  @scala.inline
-  def automatic: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = this.cast("automatic")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def feed: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.feed = this.cast("feed")
-  @scala.inline
-  def native: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native = this.cast("native")
-  @scala.inline
-  def web: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web = this.cast("web")
+  
+  inline def automatic: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic = "automatic".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.automatic]
+  
+  inline def feed: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.feed = "feed".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.feed]
+  
+  inline def native: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native = "native".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.native]
+  
+  inline def web: typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web = "web".asInstanceOf[typingsJapgolly.reactNativeFbsdk.reactNativeFbsdkStrings.web]
 }
-

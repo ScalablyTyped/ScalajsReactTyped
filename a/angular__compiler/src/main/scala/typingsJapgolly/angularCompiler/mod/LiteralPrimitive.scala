@@ -1,13 +1,13 @@
 package typingsJapgolly.angularCompiler.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "LiteralPrimitive")
 @js.native
-class LiteralPrimitive protected ()
-  extends typingsJapgolly.angularCompiler.publicApiMod.LiteralPrimitive {
-  def this(span: typingsJapgolly.angularCompiler.astMod.ParseSpan, value: js.Any) = this()
+open class LiteralPrimitive protected () extends AST {
+  def this(span: ParseSpan, sourceSpan: AbsoluteSourceSpan, value: Any) = this()
+  
+  var value: Any = js.native
 }
-

@@ -1,35 +1,27 @@
 package typingsJapgolly.sharepoint.CUI
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ImgContainerType extends js.Object
-
+sealed trait ImgContainerType extends StObject
 @JSGlobal("CUI.ImgContainerType")
 @js.native
-object ImgContainerType extends js.Object {
-  @js.native
-  sealed trait anchor extends ImgContainerType
+object ImgContainerType extends StObject {
   
   @js.native
-  sealed trait div extends ImgContainerType
+  sealed trait anchor
+    extends StObject
+       with ImgContainerType
   
   @js.native
-  sealed trait span extends ImgContainerType
+  sealed trait div
+    extends StObject
+       with ImgContainerType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ImgContainerType with Double] = js.native
-  /* 2 */ @js.native
-  object anchor extends TopLevel[anchor with Double]
-  
-  /* 0 */ @js.native
-  object div extends TopLevel[div with Double]
-  
-  /* 1 */ @js.native
-  object span extends TopLevel[span with Double]
-  
+  @js.native
+  sealed trait span
+    extends StObject
+       with ImgContainerType
 }
-

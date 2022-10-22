@@ -1,21 +1,30 @@
 package typingsJapgolly.nodeTelegramBotApi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GameHighScore extends js.Object {
+trait GameHighScore extends StObject {
+  
   var position: Double
+  
   var score: Double
+  
   var user: User
 }
-
 object GameHighScore {
-  @scala.inline
-  def apply(position: Double, score: Double, user: User): GameHighScore = {
-    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
   
+  inline def apply(position: Double, score: Double, user: User): GameHighScore = {
+    val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameHighScore]
   }
+  
+  extension [Self <: GameHighScore](x: Self) {
+    
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+  }
 }
-

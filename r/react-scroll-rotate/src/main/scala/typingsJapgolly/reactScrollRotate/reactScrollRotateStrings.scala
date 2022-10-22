@@ -1,19 +1,16 @@
 package typingsJapgolly.reactScrollRotate
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactScrollRotateStrings {
-  @js.native
-  sealed trait prec extends js.Object
   
   @js.native
-  sealed trait px extends js.Object
+  sealed trait perc extends StObject
+  inline def perc: perc = "perc".asInstanceOf[perc]
   
-  @scala.inline
-  def prec: prec = "prec".asInstanceOf[prec]
-  @scala.inline
-  def px: px = "px".asInstanceOf[px]
+  @js.native
+  sealed trait px extends StObject
+  inline def px: px = "px".asInstanceOf[px]
 }
-

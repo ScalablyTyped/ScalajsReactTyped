@@ -1,26 +1,39 @@
 package typingsJapgolly.mithril.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RouteOptions extends js.Object {
+trait RouteOptions extends StObject {
+  
   /** Routing parameters. If path has routing parameter slots, the properties of this object are interpolated into the path string. */
   var replace: js.UndefOr[Boolean] = js.undefined
+  
   /** The state object to pass to the underlying history.pushState / history.replaceState call. */
-  var state: js.UndefOr[js.Any] = js.undefined
+  var state: js.UndefOr[Any] = js.undefined
+  
   /** The title string to pass to the underlying history.pushState / history.replaceState call. */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object RouteOptions {
-  @scala.inline
-  def apply(replace: js.UndefOr[Boolean] = js.undefined, state: js.Any = null, title: String = null): RouteOptions = {
+  
+  inline def apply(): RouteOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(replace)) __obj.updateDynamic("replace")(replace.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouteOptions]
   }
+  
+  extension [Self <: RouteOptions](x: Self) {
+    
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    
+    inline def setState(value: Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

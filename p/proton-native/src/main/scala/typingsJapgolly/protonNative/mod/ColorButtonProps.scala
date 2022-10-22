@@ -1,51 +1,42 @@
 package typingsJapgolly.protonNative.mod
 
 import japgolly.scalajs.react.Callback
-import typingsJapgolly.protonNative.AnonA
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import typingsJapgolly.protonNative.anon.A
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ColorButtonProps
-  extends GridChildrenProps
+  extends StObject
+     with GridChildrenProps
      with Label
      with Stretchy {
+  
   /**
     * The initial color for the ColorButton. Can be passed as standard color seen in CSS (a color name, hex, rgb, rgba, hsl, hsla).
     */
   var color: js.UndefOr[String] = js.undefined
+  
   /**
     * Called when the color is changed for the ColorButton. The current color is passed as an object of RGBA.
     */
-  var onChange: js.UndefOr[js.Function1[/* color */ AnonA, Unit]] = js.undefined
+  var onChange: js.UndefOr[js.Function1[/* color */ A, Unit]] = js.undefined
 }
-
 object ColorButtonProps {
-  @scala.inline
-  def apply(
-    align: AnonH = null,
-    color: String = null,
-    column: Int | Double = null,
-    expand: AnonH = null,
-    label: String = null,
-    onChange: /* color */ AnonA => Callback = null,
-    row: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined
-  ): ColorButtonProps = {
+  
+  inline def apply(): ColorButtonProps = {
     val __obj = js.Dynamic.literal()
-    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* color */ typingsJapgolly.protonNative.AnonA) => onChange(t0).runNow()))
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorButtonProps]
   }
+  
+  extension [Self <: ColorButtonProps](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setOnChange(value: /* color */ A => Callback): Self = StObject.set(x, "onChange", js.Any.fromFunction1((t0: /* color */ A) => value(t0).runNow()))
+    
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+  }
 }
-

@@ -1,30 +1,23 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait GanttDrawBarFlags extends js.Object
-
+sealed trait GanttDrawBarFlags extends StObject
 @JSGlobal("SP.JsGrid.GanttDrawBarFlags")
 @js.native
-object GanttDrawBarFlags extends js.Object {
-   // 0x01,
-  @js.native
-  sealed trait LeftLink extends GanttDrawBarFlags
+object GanttDrawBarFlags extends StObject {
   
   @js.native
-  sealed trait RightLink extends GanttDrawBarFlags
+  sealed trait LeftLink
+    extends StObject
+       with GanttDrawBarFlags
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GanttDrawBarFlags with Double] = js.native
-  /* 0 */ @js.native
-  object LeftLink extends TopLevel[LeftLink with Double]
-  
-  /* 1 */ @js.native
-  object RightLink extends TopLevel[RightLink with Double]
-  
+  // 0x01,
+  @js.native
+  sealed trait RightLink
+    extends StObject
+       with GanttDrawBarFlags
 }
-

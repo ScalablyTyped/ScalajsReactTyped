@@ -1,8 +1,8 @@
 package typingsJapgolly.baiduApp.swan
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.baiduApp.baiduAppStrings.transitionend
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.baiduApp.baiduAppStrings.animationiteration
   - typingsJapgolly.baiduApp.baiduAppStrings.animationend
 */
-trait TransitionEventType extends js.Object
-
+trait TransitionEventType extends StObject
 object TransitionEventType {
-  @scala.inline
-  def animationend: typingsJapgolly.baiduApp.baiduAppStrings.animationend = this.cast("animationend")
-  @scala.inline
-  def animationiteration: typingsJapgolly.baiduApp.baiduAppStrings.animationiteration = this.cast("animationiteration")
-  @scala.inline
-  def animationstart: typingsJapgolly.baiduApp.baiduAppStrings.animationstart = this.cast("animationstart")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def transitionend: typingsJapgolly.baiduApp.baiduAppStrings.transitionend = this.cast("transitionend")
+  
+  inline def animationend: typingsJapgolly.baiduApp.baiduAppStrings.animationend = "animationend".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.animationend]
+  
+  inline def animationiteration: typingsJapgolly.baiduApp.baiduAppStrings.animationiteration = "animationiteration".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.animationiteration]
+  
+  inline def animationstart: typingsJapgolly.baiduApp.baiduAppStrings.animationstart = "animationstart".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.animationstart]
+  
+  inline def transitionend: typingsJapgolly.baiduApp.baiduAppStrings.transitionend = "transitionend".asInstanceOf[typingsJapgolly.baiduApp.baiduAppStrings.transitionend]
 }
-

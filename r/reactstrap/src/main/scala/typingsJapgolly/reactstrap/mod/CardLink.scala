@@ -1,13 +1,10 @@
 package typingsJapgolly.reactstrap.mod
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactstrap.cardLinkMod.CardLinkProps
+import typingsJapgolly.reactstrap.typesLibCardLinkMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("reactstrap", "CardLink")
 @js.native
-class CardLink[T] ()
-  extends Component[CardLinkProps, js.Object, js.Any]
-
+open class CardLink () extends default

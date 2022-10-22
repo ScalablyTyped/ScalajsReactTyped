@@ -1,7 +1,7 @@
 
 # Scala.js typings for koa-helmet
 
-Typings are for version 3.1
+Typings are for version 6.0
 
 ## Library description:
 Security header middleware collection for koa
@@ -10,10 +10,10 @@ Security header middleware collection for koa
 | ------------------ | :-------------: |
 | Full name          | koa-helmet |
 | Keywords           | security, headers, koa, x-frame-options, csp, hsts |
-| # releases         | 8 |
-| # dependents       | 155 |
-| # downloads        | 2349593 |
-| # stars            | 15 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 655231.6666666666 |
+| # stars            | 624.0 |
 
 ## Links
 - [Homepage](https://github.com/venables/koa-helmet#readme)

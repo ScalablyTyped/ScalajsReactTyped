@@ -1,13 +1,12 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "PowerEdge")
 @js.native
-class PowerEdge protected ()
-  extends typingsJapgolly.webcola.powergraphMod.PowerEdge {
-  def this(source: js.Any, target: js.Any, `type`: Double) = this()
+open class PowerEdge protected ()
+  extends typingsJapgolly.webcola.distSrcPowergraphMod.PowerEdge {
+  def this(source: Any, target: Any, `type`: Double) = this()
 }
-

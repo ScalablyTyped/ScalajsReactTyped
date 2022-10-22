@@ -1,24 +1,78 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
+import japgolly.scalajs.react.Callback
 import typingsJapgolly.activexOffice.Office.MsoTriState
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("PowerPoint.PublishObject")
-@js.native
-class PublishObject protected () extends js.Object {
-  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application = js.native
-  var FileName: String = js.native
-  var HTMLVersion: PpHTMLVersion = js.native
-  val Parent: js.Any = js.native
-  @JSName("PowerPoint.PublishObject_typekey")
-  var PowerPointDotPublishObject_typekey: PublishObject = js.native
-  var RangeEnd: Double = js.native
-  var RangeStart: Double = js.native
-  var SlideShowName: String = js.native
-  var SourceType: PpPublishSourceType = js.native
-  var SpeakerNotes: MsoTriState = js.native
-  def Publish(): Unit = js.native
+trait PublishObject extends StObject {
+  
+  val Application: typingsJapgolly.activexPowerpoint.PowerPoint.Application
+  
+  var FileName: String
+  
+  var HTMLVersion: PpHTMLVersion
+  
+  val Parent: Any
+  
+  /* private */ @JSName("PowerPoint.PublishObject_typekey")
+  var PowerPointDotPublishObject_typekey: PublishObject
+  
+  def Publish(): Unit
+  
+  var RangeEnd: Double
+  
+  var RangeStart: Double
+  
+  var SlideShowName: String
+  
+  var SourceType: PpPublishSourceType
+  
+  var SpeakerNotes: MsoTriState
 }
-
+object PublishObject {
+  
+  inline def apply(
+    Application: Application,
+    FileName: String,
+    HTMLVersion: PpHTMLVersion,
+    Parent: Any,
+    PowerPointDotPublishObject_typekey: PublishObject,
+    Publish: Callback,
+    RangeEnd: Double,
+    RangeStart: Double,
+    SlideShowName: String,
+    SourceType: PpPublishSourceType,
+    SpeakerNotes: MsoTriState
+  ): PublishObject = {
+    val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], FileName = FileName.asInstanceOf[js.Any], HTMLVersion = HTMLVersion.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Publish = Publish.toJsFn, RangeEnd = RangeEnd.asInstanceOf[js.Any], RangeStart = RangeStart.asInstanceOf[js.Any], SlideShowName = SlideShowName.asInstanceOf[js.Any], SourceType = SourceType.asInstanceOf[js.Any], SpeakerNotes = SpeakerNotes.asInstanceOf[js.Any])
+    __obj.updateDynamic("PowerPoint.PublishObject_typekey")(PowerPointDotPublishObject_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublishObject]
+  }
+  
+  extension [Self <: PublishObject](x: Self) {
+    
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    
+    inline def setHTMLVersion(value: PpHTMLVersion): Self = StObject.set(x, "HTMLVersion", value.asInstanceOf[js.Any])
+    
+    inline def setParent(value: Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    inline def setPowerPointDotPublishObject_typekey(value: PublishObject): Self = StObject.set(x, "PowerPoint.PublishObject_typekey", value.asInstanceOf[js.Any])
+    
+    inline def setPublish(value: Callback): Self = StObject.set(x, "Publish", value.toJsFn)
+    
+    inline def setRangeEnd(value: Double): Self = StObject.set(x, "RangeEnd", value.asInstanceOf[js.Any])
+    
+    inline def setRangeStart(value: Double): Self = StObject.set(x, "RangeStart", value.asInstanceOf[js.Any])
+    
+    inline def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
+    
+    inline def setSourceType(value: PpPublishSourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    
+    inline def setSpeakerNotes(value: MsoTriState): Self = StObject.set(x, "SpeakerNotes", value.asInstanceOf[js.Any])
+  }
+}

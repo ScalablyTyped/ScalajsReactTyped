@@ -1,36 +1,62 @@
 package typingsJapgolly.hummusRecipe.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LineToOptions extends js.Object {
+trait LineToOptions extends StObject {
+  
   var color: js.UndefOr[String | js.Array[Double]] = js.undefined
+  
   var dash: js.UndefOr[js.Array[Double]] = js.undefined
+  
   var fill: js.UndefOr[String | js.Array[Double]] = js.undefined
+  
   var lineWidth: js.UndefOr[Double] = js.undefined
+  
   var opacity: js.UndefOr[Double] = js.undefined
+  
   var stroke: js.UndefOr[String | js.Array[Double]] = js.undefined
 }
-
 object LineToOptions {
-  @scala.inline
-  def apply(
-    color: String | js.Array[Double] = null,
-    dash: js.Array[Double] = null,
-    fill: String | js.Array[Double] = null,
-    lineWidth: Int | Double = null,
-    opacity: Int | Double = null,
-    stroke: String | js.Array[Double] = null
-  ): LineToOptions = {
+  
+  inline def apply(): LineToOptions = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (dash != null) __obj.updateDynamic("dash")(dash.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
-    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineToOptions]
   }
+  
+  extension [Self <: LineToOptions](x: Self) {
+    
+    inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setDash(value: js.Array[Double]): Self = StObject.set(x, "dash", value.asInstanceOf[js.Any])
+    
+    inline def setDashUndefined: Self = StObject.set(x, "dash", js.undefined)
+    
+    inline def setDashVarargs(value: Double*): Self = StObject.set(x, "dash", js.Array(value*))
+    
+    inline def setFill(value: String | js.Array[Double]): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setFillVarargs(value: Double*): Self = StObject.set(x, "fill", js.Array(value*))
+    
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    
+    inline def setStroke(value: String | js.Array[Double]): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeVarargs(value: Double*): Self = StObject.set(x, "stroke", js.Array(value*))
+  }
 }
-

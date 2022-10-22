@@ -1,45 +1,72 @@
 package typingsJapgolly.jsuite
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Iconfig extends js.Object {
+trait Iconfig extends StObject {
+  
   var columns: js.UndefOr[String] = js.undefined
+  
   var end: js.UndefOr[Double] = js.undefined
-  var filterExpression: js.UndefOr[js.Any] = js.undefined
+  
+  var filterExpression: js.UndefOr[Any] = js.undefined
+  
   var logging: js.UndefOr[Boolean] = js.undefined
+  
   var maxUnitsUsage: js.UndefOr[Double] = js.undefined
+  
   var recordType: js.UndefOr[String] = js.undefined
+  
   var searchId: js.UndefOr[String] = js.undefined
+  
   var smartConvert: js.UndefOr[Boolean] = js.undefined
+  
   var start: js.UndefOr[Double] = js.undefined
 }
-
 object Iconfig {
-  @scala.inline
-  def apply(
-    columns: String = null,
-    end: Int | Double = null,
-    filterExpression: js.Any = null,
-    logging: js.UndefOr[Boolean] = js.undefined,
-    maxUnitsUsage: Int | Double = null,
-    recordType: String = null,
-    searchId: String = null,
-    smartConvert: js.UndefOr[Boolean] = js.undefined,
-    start: Int | Double = null
-  ): Iconfig = {
+  
+  inline def apply(): Iconfig = {
     val __obj = js.Dynamic.literal()
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
-    if (filterExpression != null) __obj.updateDynamic("filterExpression")(filterExpression.asInstanceOf[js.Any])
-    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
-    if (maxUnitsUsage != null) __obj.updateDynamic("maxUnitsUsage")(maxUnitsUsage.asInstanceOf[js.Any])
-    if (recordType != null) __obj.updateDynamic("recordType")(recordType.asInstanceOf[js.Any])
-    if (searchId != null) __obj.updateDynamic("searchId")(searchId.asInstanceOf[js.Any])
-    if (!js.isUndefined(smartConvert)) __obj.updateDynamic("smartConvert")(smartConvert.asInstanceOf[js.Any])
-    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Iconfig]
   }
+  
+  extension [Self <: Iconfig](x: Self) {
+    
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    
+    inline def setFilterExpression(value: Any): Self = StObject.set(x, "filterExpression", value.asInstanceOf[js.Any])
+    
+    inline def setFilterExpressionUndefined: Self = StObject.set(x, "filterExpression", js.undefined)
+    
+    inline def setLogging(value: Boolean): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    
+    inline def setMaxUnitsUsage(value: Double): Self = StObject.set(x, "maxUnitsUsage", value.asInstanceOf[js.Any])
+    
+    inline def setMaxUnitsUsageUndefined: Self = StObject.set(x, "maxUnitsUsage", js.undefined)
+    
+    inline def setRecordType(value: String): Self = StObject.set(x, "recordType", value.asInstanceOf[js.Any])
+    
+    inline def setRecordTypeUndefined: Self = StObject.set(x, "recordType", js.undefined)
+    
+    inline def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
+    
+    inline def setSearchIdUndefined: Self = StObject.set(x, "searchId", js.undefined)
+    
+    inline def setSmartConvert(value: Boolean): Self = StObject.set(x, "smartConvert", value.asInstanceOf[js.Any])
+    
+    inline def setSmartConvertUndefined: Self = StObject.set(x, "smartConvert", js.undefined)
+    
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+  }
 }
-

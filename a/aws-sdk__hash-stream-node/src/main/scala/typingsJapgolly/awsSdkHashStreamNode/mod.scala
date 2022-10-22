@@ -1,14 +1,18 @@
 package typingsJapgolly.awsSdkHashStreamNode
 
-import typingsJapgolly.awsSdkTypes.cryptoMod.StreamHasher
+import typingsJapgolly.awsSdkTypes.distTypesCryptoMod.StreamHasher
 import typingsJapgolly.node.streamMod.Readable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@aws-sdk/hash-stream-node", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val calculateSha256: StreamHasher[Readable] = js.native
+object mod {
+  
+  @JSImport("@aws-sdk/hash-stream-node", "fileStreamHasher")
+  @js.native
+  val fileStreamHasher: StreamHasher[Readable] = js.native
+  
+  @JSImport("@aws-sdk/hash-stream-node", "readableStreamHasher")
+  @js.native
+  val readableStreamHasher: StreamHasher[Readable] = js.native
 }
-

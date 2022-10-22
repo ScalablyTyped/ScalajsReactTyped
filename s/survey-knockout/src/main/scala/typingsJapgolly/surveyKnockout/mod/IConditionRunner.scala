@@ -1,20 +1,22 @@
 package typingsJapgolly.surveyKnockout.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IConditionRunner extends js.Object {
-  def runCondition(values: HashTable[_], properties: HashTable[_]): js.Any
+trait IConditionRunner extends StObject {
+  
+  def runCondition(values: Any, properties: Any): Any
 }
-
 object IConditionRunner {
-  @scala.inline
-  def apply(runCondition: (HashTable[js.Any], HashTable[js.Any]) => CallbackTo[js.Any]): IConditionRunner = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("runCondition")(js.Any.fromFunction2((t0: typingsJapgolly.surveyKnockout.mod.HashTable[js.Any], t1: typingsJapgolly.surveyKnockout.mod.HashTable[js.Any]) => runCondition(t0, t1).runNow()))
+  
+  inline def apply(runCondition: (Any, Any) => Any): IConditionRunner = {
+    val __obj = js.Dynamic.literal(runCondition = js.Any.fromFunction2(runCondition))
     __obj.asInstanceOf[IConditionRunner]
   }
+  
+  extension [Self <: IConditionRunner](x: Self) {
+    
+    inline def setRunCondition(value: (Any, Any) => Any): Self = StObject.set(x, "runCondition", js.Any.fromFunction2(value))
+  }
 }
-

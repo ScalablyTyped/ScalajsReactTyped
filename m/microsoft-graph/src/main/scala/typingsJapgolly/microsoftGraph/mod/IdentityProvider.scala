@@ -1,32 +1,65 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IdentityProvider extends Entity {
-  var clientId: js.UndefOr[String] = js.undefined
-  var clientSecret: js.UndefOr[String] = js.undefined
-  var name: js.UndefOr[String] = js.undefined
-  var `type`: js.UndefOr[String] = js.undefined
+trait IdentityProvider
+  extends StObject
+     with Entity {
+  
+  /**
+    * The client ID for the application. This is the client ID obtained when registering the application with the identity
+    * provider. Required. Not nullable.
+    */
+  var clientId: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * The client secret for the application. This is the client secret obtained when registering the application with the
+    * identity provider. This is write-only. A read operation will return ****. Required. Not nullable.
+    */
+  var clientSecret: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // The display name of the identity provider. Not nullable.
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  /**
+    * The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft,
+    * Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
+    */
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object IdentityProvider {
-  @scala.inline
-  def apply(
-    clientId: String = null,
-    clientSecret: String = null,
-    id: String = null,
-    name: String = null,
-    `type`: String = null
-  ): IdentityProvider = {
+  
+  inline def apply(): IdentityProvider = {
     val __obj = js.Dynamic.literal()
-    if (clientId != null) __obj.updateDynamic("clientId")(clientId.asInstanceOf[js.Any])
-    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentityProvider]
   }
+  
+  extension [Self <: IdentityProvider](x: Self) {
+    
+    inline def setClientId(value: NullableOption[String]): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    
+    inline def setClientIdNull: Self = StObject.set(x, "clientId", null)
+    
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    
+    inline def setClientSecret(value: NullableOption[String]): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+    
+    inline def setClientSecretNull: Self = StObject.set(x, "clientSecret", null)
+    
+    inline def setClientSecretUndefined: Self = StObject.set(x, "clientSecret", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -1,23 +1,26 @@
 package typingsJapgolly.semanticUiReact.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
 import japgolly.scalajs.react.ReactMouseEventFrom
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.ElementType
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.semanticUiReact.genericMod.SemanticShorthandItem
-import typingsJapgolly.semanticUiReact.inputInputMod.InputProps
-import typingsJapgolly.semanticUiReact.searchCategoryMod.SearchCategoryProps
-import typingsJapgolly.semanticUiReact.searchMod.default
-import typingsJapgolly.semanticUiReact.searchResultMod.SearchResultProps
-import typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps
-import typingsJapgolly.semanticUiReact.searchSearchMod.SearchResultData
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.ReactNodeArray
+import typingsJapgolly.semanticUiReact.anon.PickSearchCategoryLayoutP
+import typingsJapgolly.semanticUiReact.distCommonjsElementsInputInputMod.InputProps
+import typingsJapgolly.semanticUiReact.distCommonjsGenericMod.SemanticShorthandItem
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchMod.SearchProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchMod.SearchResultData
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchResultMod.SearchResultProps
+import typingsJapgolly.semanticUiReact.distCommonjsModulesSearchSearchResultsMod.SearchResultsProps
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.big
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.huge
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.large
@@ -25,89 +28,142 @@ import typingsJapgolly.semanticUiReact.semanticUiReactStrings.massive
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.mini
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.small
 import typingsJapgolly.semanticUiReact.semanticUiReactStrings.tiny
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Search {
-  def apply(
-    StringDictionary: /* key */ StringDictionary[js.Any] = null,
-    aligned: String = null,
-    as: js.Any = null,
-    category: js.UndefOr[Boolean] = js.undefined,
-    categoryLayoutRenderer: /* props */ SearchCategoryProps => CallbackTo[Element] = null,
-    categoryRenderer: /* props */ SearchCategoryProps => CallbackTo[Element] = null,
-    className: String = null,
-    defaultOpen: js.UndefOr[Boolean] = js.undefined,
-    defaultValue: String = null,
-    fluid: js.UndefOr[Boolean] = js.undefined,
-    icon: js.Any = null,
-    input: SemanticShorthandItem[InputProps] = null,
-    loading: js.UndefOr[Boolean] = js.undefined,
-    minCharacters: Int | Double = null,
-    noResultsDescription: VdomNode = null,
-    noResultsMessage: VdomNode = null,
-    onBlur: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback = null,
-    onFocus: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback = null,
-    onMouseDown: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback = null,
-    onResultSelect: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ SearchResultData) => Callback = null,
-    onSearchChange: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback = null,
-    onSelectionChange: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchResultData) => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    resultRenderer: /* props */ SearchResultProps => CallbackTo[Element] = null,
-    results: js.Array[_] | js.Object = null,
-    selectFirstResult: js.UndefOr[Boolean] = js.undefined,
-    showNoResults: js.UndefOr[Boolean] = js.undefined,
-    size: mini | tiny | small | large | big | huge | massive = null,
-    value: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SearchProps, default, Unit, SearchProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (aligned != null) __obj.updateDynamic("aligned")(aligned.asInstanceOf[js.Any])
-    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
-    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (categoryLayoutRenderer != null) __obj.updateDynamic("categoryLayoutRenderer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.semanticUiReact.searchCategoryMod.SearchCategoryProps) => categoryLayoutRenderer(t0).runNow()))
-    if (categoryRenderer != null) __obj.updateDynamic("categoryRenderer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.semanticUiReact.searchCategoryMod.SearchCategoryProps) => categoryRenderer(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen.asInstanceOf[js.Any])
-    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
-    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (minCharacters != null) __obj.updateDynamic("minCharacters")(minCharacters.asInstanceOf[js.Any])
-    if (noResultsDescription != null) __obj.updateDynamic("noResultsDescription")(noResultsDescription.rawNode.asInstanceOf[js.Any])
-    if (noResultsMessage != null) __obj.updateDynamic("noResultsMessage")(noResultsMessage.rawNode.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps) => onBlur(t0, t1).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps) => onFocus(t0, t1).runNow()))
-    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps) => onMouseDown(t0, t1).runNow()))
-    if (onResultSelect != null) __obj.updateDynamic("onResultSelect")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLDivElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchResultData) => onResultSelect(t0, t1).runNow()))
-    if (onSearchChange != null) __obj.updateDynamic("onSearchChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps) => onSearchChange(t0, t1).runNow()))
-    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(js.Any.fromFunction2((t0: /* event */ japgolly.scalajs.react.ReactMouseEventFrom[org.scalajs.dom.raw.HTMLElement], t1: /* data */ typingsJapgolly.semanticUiReact.searchSearchMod.SearchResultData) => onSelectionChange(t0, t1).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (resultRenderer != null) __obj.updateDynamic("resultRenderer")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.semanticUiReact.searchResultMod.SearchResultProps) => resultRenderer(t0).runNow()))
-    if (results != null) __obj.updateDynamic("results")(results.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectFirstResult)) __obj.updateDynamic("selectFirstResult")(selectFirstResult.asInstanceOf[js.Any])
-    if (!js.isUndefined(showNoResults)) __obj.updateDynamic("showNoResults")(showNoResults.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.semanticUiReact.searchMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.semanticUiReact.searchSearchMod.SearchProps])(children: _*)
+  object Category {
+    
+    @JSImport("semantic-ui-react", "Search.Category")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Category.type): SharedBuilder_SearchCategoryProps_1382226292 = new SharedBuilder_SearchCategoryProps_1382226292(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: SearchCategoryProps): SharedBuilder_SearchCategoryProps_1382226292 = new SharedBuilder_SearchCategoryProps_1382226292(js.Array(this.component, p.asInstanceOf[js.Any]))
   }
-  @JSImport("semantic-ui-react/dist/commonjs/modules/Search", JSImport.Default)
-  @js.native
-  object componentImport extends js.Object
   
+  object Result {
+    
+    inline def apply(title: String): SharedBuilder_SearchResultProps_1847840980[typingsJapgolly.semanticUiReact.mod.Search.Result] = {
+      val __props = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
+      new SharedBuilder_SearchResultProps_1847840980[typingsJapgolly.semanticUiReact.mod.Search.Result](js.Array(this.component, __props.asInstanceOf[SearchResultProps]))
+    }
+    
+    @JSImport("semantic-ui-react", "Search.Result")
+    @js.native
+    val component: js.Object = js.native
+    
+    def withProps(p: SearchResultProps): SharedBuilder_SearchResultProps_1847840980[typingsJapgolly.semanticUiReact.mod.Search.Result] = new SharedBuilder_SearchResultProps_1847840980[typingsJapgolly.semanticUiReact.mod.Search.Result](js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  object Results {
+    
+    @JSImport("semantic-ui-react", "Search.Results")
+    @js.native
+    val component: js.Object = js.native
+    
+    implicit def make(companion: Results.type): SharedBuilder_SearchResultsProps_1346928132 = new SharedBuilder_SearchResultsProps_1346928132(js.Array(this.component, js.Dictionary.empty))()
+    
+    def withProps(p: SearchResultsProps): SharedBuilder_SearchResultsProps_1346928132 = new SharedBuilder_SearchResultsProps_1346928132(js.Array(this.component, p.asInstanceOf[js.Any]))
+  }
+  
+  @JSImport("semantic-ui-react", "Search")
+  @js.native
+  val component: js.Object = js.native
+  
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Search] {
+    
+    inline def aligned(value: String): this.type = set("aligned", value.asInstanceOf[js.Any])
+    
+    inline def as(value: Any): this.type = set("as", value.asInstanceOf[js.Any])
+    
+    inline def category(value: Boolean): this.type = set("category", value.asInstanceOf[js.Any])
+    
+    inline def categoryLayoutRenderer(value: /* props */ PickSearchCategoryLayoutP => Element): this.type = set("categoryLayoutRenderer", js.Any.fromFunction1(value))
+    
+    inline def categoryRenderer(value: /* props */ SearchCategoryProps => Element): this.type = set("categoryRenderer", js.Any.fromFunction1(value))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def defaultOpen(value: Boolean): this.type = set("defaultOpen", value.asInstanceOf[js.Any])
+    
+    inline def defaultValue(value: String): this.type = set("defaultValue", value.asInstanceOf[js.Any])
+    
+    inline def fluid(value: Boolean): this.type = set("fluid", value.asInstanceOf[js.Any])
+    
+    inline def icon(value: Any): this.type = set("icon", value.asInstanceOf[js.Any])
+    
+    inline def input(value: SemanticShorthandItem[InputProps]): this.type = set("input", value.asInstanceOf[js.Any])
+    
+    inline def inputFunction3(
+      value: (/* component */ ElementType, InputProps, /* children */ js.UndefOr[Node | ReactNodeArray]) => Element | Null
+    ): this.type = set("input", js.Any.fromFunction3(value))
+    
+    inline def inputNull: this.type = set("input", null)
+    
+    inline def inputVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("input", js.Array(value*))
+    
+    inline def inputVdomElement(value: VdomElement): this.type = set("input", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def loading(value: Boolean): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def minCharacters(value: Double): this.type = set("minCharacters", value.asInstanceOf[js.Any])
+    
+    inline def noResultsDescription(value: VdomNode): this.type = set("noResultsDescription", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def noResultsDescriptionNull: this.type = set("noResultsDescription", null)
+    
+    inline def noResultsDescriptionVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("noResultsDescription", js.Array(value*))
+    
+    inline def noResultsDescriptionVdomElement(value: VdomElement): this.type = set("noResultsDescription", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def noResultsMessage(value: VdomNode): this.type = set("noResultsMessage", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def noResultsMessageNull: this.type = set("noResultsMessage", null)
+    
+    inline def noResultsMessageVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("noResultsMessage", js.Array(value*))
+    
+    inline def noResultsMessageVdomElement(value: VdomElement): this.type = set("noResultsMessage", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onBlur(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback): this.type = set("onBlur", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ SearchProps) => (value(t0, t1)).runNow()))
+    
+    inline def onFocus(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback): this.type = set("onFocus", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ SearchProps) => (value(t0, t1)).runNow()))
+    
+    inline def onMouseDown(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback): this.type = set("onMouseDown", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ SearchProps) => (value(t0, t1)).runNow()))
+    
+    inline def onResultSelect(value: (/* event */ ReactMouseEventFrom[HTMLDivElement], /* data */ SearchResultData) => Callback): this.type = set("onResultSelect", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLDivElement], t1: /* data */ SearchResultData) => (value(t0, t1)).runNow()))
+    
+    inline def onSearchChange(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchProps) => Callback): this.type = set("onSearchChange", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ SearchProps) => (value(t0, t1)).runNow()))
+    
+    inline def onSelectionChange(value: (/* event */ ReactMouseEventFrom[HTMLElement], /* data */ SearchResultData) => Callback): this.type = set("onSelectionChange", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[HTMLElement], t1: /* data */ SearchResultData) => (value(t0, t1)).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def placeholder(value: String): this.type = set("placeholder", value.asInstanceOf[js.Any])
+    
+    inline def resultRenderer(value: /* props */ SearchResultProps => Element): this.type = set("resultRenderer", js.Any.fromFunction1(value))
+    
+    inline def results(value: js.Array[Any] | (Record[String, Any])): this.type = set("results", value.asInstanceOf[js.Any])
+    
+    inline def resultsVarargs(value: Any*): this.type = set("results", js.Array(value*))
+    
+    inline def selectFirstResult(value: Boolean): this.type = set("selectFirstResult", value.asInstanceOf[js.Any])
+    
+    inline def showNoResults(value: Boolean): this.type = set("showNoResults", value.asInstanceOf[js.Any])
+    
+    inline def size(value: mini | tiny | small | large | big | huge | massive): this.type = set("size", value.asInstanceOf[js.Any])
+    
+    inline def value(value: String): this.type = set("value", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Search.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SearchProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

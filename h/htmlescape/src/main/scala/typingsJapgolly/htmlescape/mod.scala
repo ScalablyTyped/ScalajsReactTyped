@@ -1,13 +1,16 @@
 package typingsJapgolly.htmlescape
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("htmlescape", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(o: js.Any): String = js.native
-  def sanitize(s: String): String = js.native
+object mod {
+  
+  inline def apply(o: Any): String = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @JSImport("htmlescape", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def sanitize(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(s.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

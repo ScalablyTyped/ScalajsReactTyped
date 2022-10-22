@@ -1,47 +1,37 @@
 package typingsJapgolly.winrt.Windows.Networking.NetworkOperators
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MobileBroadbandAccountWatcherStatus extends js.Object
-
+sealed trait MobileBroadbandAccountWatcherStatus extends StObject
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccountWatcherStatus")
 @js.native
-object MobileBroadbandAccountWatcherStatus extends js.Object {
-  @js.native
-  sealed trait aborted extends MobileBroadbandAccountWatcherStatus
+object MobileBroadbandAccountWatcherStatus extends StObject {
   
   @js.native
-  sealed trait created extends MobileBroadbandAccountWatcherStatus
+  sealed trait aborted
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait enumerationCompleted extends MobileBroadbandAccountWatcherStatus
+  sealed trait created
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait started extends MobileBroadbandAccountWatcherStatus
+  sealed trait enumerationCompleted
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
   @js.native
-  sealed trait stopped extends MobileBroadbandAccountWatcherStatus
+  sealed trait started
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MobileBroadbandAccountWatcherStatus with Double] = js.native
-  /* 4 */ @js.native
-  object aborted extends TopLevel[aborted with Double]
-  
-  /* 0 */ @js.native
-  object created extends TopLevel[created with Double]
-  
-  /* 2 */ @js.native
-  object enumerationCompleted extends TopLevel[enumerationCompleted with Double]
-  
-  /* 1 */ @js.native
-  object started extends TopLevel[started with Double]
-  
-  /* 3 */ @js.native
-  object stopped extends TopLevel[stopped with Double]
-  
+  @js.native
+  sealed trait stopped
+    extends StObject
+       with MobileBroadbandAccountWatcherStatus
 }
-

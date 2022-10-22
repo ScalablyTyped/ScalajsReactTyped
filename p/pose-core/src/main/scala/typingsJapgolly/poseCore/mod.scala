@@ -1,17 +1,19 @@
 package typingsJapgolly.poseCore
 
-import typingsJapgolly.poseCore.typesMod.PoseFactoryConfig
-import typingsJapgolly.poseCore.typesMod.Poser
-import typingsJapgolly.poseCore.typesMod.PoserConfig
+import typingsJapgolly.poseCore.libTypesMod.PoseFactoryConfig
+import typingsJapgolly.poseCore.libTypesMod.Poser
+import typingsJapgolly.poseCore.libTypesMod.PoserConfig
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("pose-core", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[V, A, C, P, TD](
+object mod {
+  
+  @JSImport("pose-core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[V, A, C, P, TD](
     hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI: PoseFactoryConfig[V, A, C, P, TD]
-  ): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = js.native
+  ): js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetDefaultPropsDefaultTransitionsBindOnChangeStartActionStopActionReadValueReadValueFromSourceResolveTargetSetValueSetValueNativeCreateValueConvertValueGetInstantTransitionGetTransitionPropsAddActionDelaySelectValueToReadConvertTransitionDefinitionTransformPosePosePriorityForceRenderExtendAPI.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]]]
 }
-

@@ -16,48 +16,61 @@ import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.RankAscending
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.RankDecending
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.RunningTotal
 import typingsJapgolly.officeJsPreview.officeJsPreviewStrings.Unknown_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
+  * @remarks
   * [Api set: ExcelApi 1.8]
   */
-trait ShowAsRule extends js.Object {
+trait ShowAsRule extends StObject {
+  
   /**
+    * The PivotField to base the `ShowAs` calculation on, if applicable according to the `ShowAsCalculation` type, else `null`.
     *
-    * The base PivotField to base the ShowAs calculation, if applicable based on the ShowAsCalculation type, else null.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var baseField: js.UndefOr[PivotField] = js.undefined
+  
   /**
+    * The item to base the `ShowAs` calculation on, if applicable according to the `ShowAsCalculation` type, else `null`.
     *
-    * The base Item to base the ShowAs calculation on, if applicable based on the ShowAsCalculation type, else null.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var baseItem: js.UndefOr[PivotItem] = js.undefined
+  
   /**
+    * The `ShowAs` calculation to use for the PivotField. See `Excel.ShowAsCalculation` for details.
     *
-    * The ShowAs Calculation to use for the Data PivotField. See Excel.ShowAsCalculation for Details.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.8]
     */
   var calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
 }
-
 object ShowAsRule {
-  @scala.inline
-  def apply(
-    calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index,
-    baseField: PivotField = null,
-    baseItem: PivotItem = null
+  
+  inline def apply(
+    calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
   ): ShowAsRule = {
     val __obj = js.Dynamic.literal(calculation = calculation.asInstanceOf[js.Any])
-    if (baseField != null) __obj.updateDynamic("baseField")(baseField.asInstanceOf[js.Any])
-    if (baseItem != null) __obj.updateDynamic("baseItem")(baseItem.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShowAsRule]
   }
+  
+  extension [Self <: ShowAsRule](x: Self) {
+    
+    inline def setBaseField(value: PivotField): Self = StObject.set(x, "baseField", value.asInstanceOf[js.Any])
+    
+    inline def setBaseFieldUndefined: Self = StObject.set(x, "baseField", js.undefined)
+    
+    inline def setBaseItem(value: PivotItem): Self = StObject.set(x, "baseItem", value.asInstanceOf[js.Any])
+    
+    inline def setBaseItemUndefined: Self = StObject.set(x, "baseItem", js.undefined)
+    
+    inline def setCalculation(
+      value: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
+    ): Self = StObject.set(x, "calculation", value.asInstanceOf[js.Any])
+  }
 }
-

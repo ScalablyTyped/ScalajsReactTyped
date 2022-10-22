@@ -1,17 +1,21 @@
 package typingsJapgolly.p5.mod
 
-import org.scalajs.dom.raw.AudioNode
+import org.scalajs.dom.AudioNode
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distortion extends Effect {
+trait Distortion
+  extends StObject
+     with Effect {
+  
   /**
     *   The p5.Distortion is built with a  Web Audio
     *   WaveShaper Node.
     */
   var WaveShaperNode: AudioNode = js.native
+  
   /**
     *   Return the distortion amount, typically between
     *   0-1.
@@ -19,12 +23,14 @@ trait Distortion extends Effect {
     *   range from 0-1.
     */
   def getAmount(): Double = js.native
+  
   /**
     *   Return the oversampling.
     *   @return Oversample can either be 'none', '2x', or
     *   '4x'.
     */
   def getOversample(): String = js.native
+  
   /**
     *   Process a sound source, optionally specify amount
     *   and oversample values.
@@ -35,6 +41,8 @@ trait Distortion extends Effect {
   def process(): Unit = js.native
   def process(amount: Double): Unit = js.native
   def process(amount: Double, oversample: String): Unit = js.native
+  def process(amount: Unit, oversample: String): Unit = js.native
+  
   /**
     *   Set the amount and oversample of the waveshaper
     *   distortion.
@@ -45,5 +53,5 @@ trait Distortion extends Effect {
   def set(): Unit = js.native
   def set(amount: Double): Unit = js.native
   def set(amount: Double, oversample: String): Unit = js.native
+  def set(amount: Unit, oversample: String): Unit = js.native
 }
-

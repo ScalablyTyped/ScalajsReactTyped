@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.GridColumnProperty
+import typingsJapgolly.csstype.mod.Property.GridColumn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnProps extends js.Object {
-  val gridColumn: js.UndefOr[ResponsiveValue[GridColumnProperty]] = js.undefined
+trait GridColumnProps extends StObject {
+  
+  val gridColumn: js.UndefOr[ResponsiveValue[GridColumn]] = js.undefined
 }
-
 object GridColumnProps {
-  @scala.inline
-  def apply(gridColumn: ResponsiveValue[GridColumnProperty] = null): GridColumnProps = {
+  
+  inline def apply(): GridColumnProps = {
     val __obj = js.Dynamic.literal()
-    if (gridColumn != null) __obj.updateDynamic("gridColumn")(gridColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnProps]
   }
+  
+  extension [Self <: GridColumnProps](x: Self) {
+    
+    inline def setGridColumn(value: ResponsiveValue[GridColumn]): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+    
+    inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+    
+    inline def setGridColumnVarargs(value: GridColumn*): Self = StObject.set(x, "gridColumn", js.Array(value*))
+  }
 }
-

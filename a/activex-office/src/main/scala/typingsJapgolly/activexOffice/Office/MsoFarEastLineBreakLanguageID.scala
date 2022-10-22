@@ -1,31 +1,27 @@
 package typingsJapgolly.activexOffice.Office
 
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1028`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1041`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`1042`
-import typingsJapgolly.activexOffice.activexOfficeNumbers.`2052`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1028`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1041`
+import typingsJapgolly.activexOffice.activexOfficeInts.`1042`
+import typingsJapgolly.activexOffice.activexOfficeInts.`2052`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1041`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1042`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`2052`
-  - typingsJapgolly.activexOffice.activexOfficeNumbers.`1028`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1041`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1042`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`2052`
+  - typingsJapgolly.activexOffice.activexOfficeInts.`1028`
 */
-trait MsoFarEastLineBreakLanguageID extends js.Object
-
+trait MsoFarEastLineBreakLanguageID extends StObject
 object MsoFarEastLineBreakLanguageID {
-  @scala.inline
-  def MsoFarEastLineBreakLanguageJapanese: `1041` = this.cast(1041)
-  @scala.inline
-  def MsoFarEastLineBreakLanguageKorean: `1042` = this.cast(1042)
-  @scala.inline
-  def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = this.cast(2052)
-  @scala.inline
-  def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = this.cast(1028)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def MsoFarEastLineBreakLanguageJapanese: `1041` = 1041.asInstanceOf[`1041`]
+  
+  inline def MsoFarEastLineBreakLanguageKorean: `1042` = 1042.asInstanceOf[`1042`]
+  
+  inline def MsoFarEastLineBreakLanguageSimplifiedChinese: `2052` = 2052.asInstanceOf[`2052`]
+  
+  inline def MsoFarEastLineBreakLanguageTraditionalChinese: `1028` = 1028.asInstanceOf[`1028`]
 }
-

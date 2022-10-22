@@ -1,41 +1,102 @@
 package typingsJapgolly.three.mod
 
-import typingsJapgolly.three.AnonAlphaMap
-import typingsJapgolly.three.AnonAmbientLightColor
-import typingsJapgolly.three.AnonAoMap
-import typingsJapgolly.three.AnonBumpMap
-import typingsJapgolly.three.AnonDiffuse
-import typingsJapgolly.three.AnonDisplacementBias
-import typingsJapgolly.three.AnonEmissiveMap
-import typingsJapgolly.three.AnonEnvMap
-import typingsJapgolly.three.AnonFogColor
-import typingsJapgolly.three.AnonGradientMap
-import typingsJapgolly.three.AnonLightMap
-import typingsJapgolly.three.AnonMetalnessMap
-import typingsJapgolly.three.AnonNormalMap
-import typingsJapgolly.three.AnonRoughnessMap
-import typingsJapgolly.three.AnonSpecularMap
+import typingsJapgolly.three.anon.AlphaMap
+import typingsJapgolly.three.anon.AmbientLightColor
+import typingsJapgolly.three.anon.AoMap
+import typingsJapgolly.three.anon.BumpMap
+import typingsJapgolly.three.anon.Diffuse
+import typingsJapgolly.three.anon.DisplacementBias
+import typingsJapgolly.three.anon.EmissiveMap
+import typingsJapgolly.three.anon.EnvMap
+import typingsJapgolly.three.anon.FogColor
+import typingsJapgolly.three.anon.GradientMap
+import typingsJapgolly.three.anon.LightMap
+import typingsJapgolly.three.anon.MetalnessMap
+import typingsJapgolly.three.anon.NormalMap
+import typingsJapgolly.three.anon.RoughnessMap
+import typingsJapgolly.three.anon.SpecularMap
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("three", "UniformsLib")
-@js.native
-object UniformsLib extends js.Object {
-  var aomap: AnonAoMap = js.native
-  var bumpmap: AnonBumpMap = js.native
-  var common: AnonAlphaMap = js.native
-  var displacementmap: AnonDisplacementBias = js.native
-  var emissivemap: AnonEmissiveMap = js.native
-  var envmap: AnonEnvMap = js.native
-  var fog: AnonFogColor = js.native
-  var gradientmap: AnonGradientMap = js.native
-  var lightmap: AnonLightMap = js.native
-  var lights: AnonAmbientLightColor = js.native
-  var metalnessmap: AnonMetalnessMap = js.native
-  var normalmap: AnonNormalMap = js.native
-  var points: AnonDiffuse = js.native
-  var roughnessmap: AnonRoughnessMap = js.native
-  var specularmap: AnonSpecularMap = js.native
+object UniformsLib {
+  
+  @JSImport("three", "UniformsLib")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("three", "UniformsLib.aomap")
+  @js.native
+  def aomap: AoMap = js.native
+  inline def aomap_=(x: AoMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aomap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.bumpmap")
+  @js.native
+  def bumpmap: BumpMap = js.native
+  inline def bumpmap_=(x: BumpMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bumpmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.common")
+  @js.native
+  def common: AlphaMap = js.native
+  inline def common_=(x: AlphaMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("common")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.displacementmap")
+  @js.native
+  def displacementmap: DisplacementBias = js.native
+  inline def displacementmap_=(x: DisplacementBias): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displacementmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.emissivemap")
+  @js.native
+  def emissivemap: EmissiveMap = js.native
+  inline def emissivemap_=(x: EmissiveMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emissivemap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.envmap")
+  @js.native
+  def envmap: EnvMap = js.native
+  inline def envmap_=(x: EnvMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("envmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.fog")
+  @js.native
+  def fog: FogColor = js.native
+  inline def fog_=(x: FogColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fog")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.gradientmap")
+  @js.native
+  def gradientmap: GradientMap = js.native
+  inline def gradientmap_=(x: GradientMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("gradientmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.lightmap")
+  @js.native
+  def lightmap: LightMap = js.native
+  inline def lightmap_=(x: LightMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.lights")
+  @js.native
+  def lights: AmbientLightColor = js.native
+  inline def lights_=(x: AmbientLightColor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lights")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.metalnessmap")
+  @js.native
+  def metalnessmap: MetalnessMap = js.native
+  inline def metalnessmap_=(x: MetalnessMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metalnessmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.normalmap")
+  @js.native
+  def normalmap: NormalMap = js.native
+  inline def normalmap_=(x: NormalMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.points")
+  @js.native
+  def points: Diffuse = js.native
+  inline def points_=(x: Diffuse): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("points")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.roughnessmap")
+  @js.native
+  def roughnessmap: RoughnessMap = js.native
+  inline def roughnessmap_=(x: RoughnessMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("roughnessmap")(x.asInstanceOf[js.Any])
+  
+  @JSImport("three", "UniformsLib.specularmap")
+  @js.native
+  def specularmap: SpecularMap = js.native
+  inline def specularmap_=(x: SpecularMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("specularmap")(x.asInstanceOf[js.Any])
 }
-

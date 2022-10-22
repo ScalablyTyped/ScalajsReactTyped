@@ -10,10 +10,10 @@ Provides a fast, pretty robust e-mail validator. Only checks form, not function.
 | ------------------ | :-------------: |
 | Full name          | email-validator |
 | Keywords           | email, validation, validator, syntax |
-| # releases         | 8 |
-| # dependents       | 262 |
-| # downloads        | 12623961 |
-| # stars            | 16 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 2247385.6666666665 |
+| # stars            | 373.0 |
 
 ## Links
 - [Homepage](http://github.com/manishsaraan/email-validator)

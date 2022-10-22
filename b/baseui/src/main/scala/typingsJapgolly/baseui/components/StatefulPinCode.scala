@@ -1,128 +1,79 @@
 package typingsJapgolly.baseui.components
 
-import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.ReactFocusEventFrom
-import japgolly.scalajs.react.ReactKeyboardEventFrom
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import japgolly.scalajs.react.raw.React.Node
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLInputElement
-import typingsJapgolly.baseui.AnonValues
-import typingsJapgolly.baseui.baseuiStrings.both
-import typingsJapgolly.baseui.baseuiStrings.change_
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.baseui.baseuiStrings.compact
 import typingsJapgolly.baseui.baseuiStrings.default_
 import typingsJapgolly.baseui.baseuiStrings.large_
-import typingsJapgolly.baseui.baseuiStrings.left
-import typingsJapgolly.baseui.baseuiStrings.none
-import typingsJapgolly.baseui.baseuiStrings.right
-import typingsJapgolly.baseui.inputMod.InputOverrides
-import typingsJapgolly.baseui.inputMod.SharedProps
-import typingsJapgolly.baseui.pinCodeMod.PinCodeOverrides
-import typingsJapgolly.baseui.pinCodeMod.State
-import typingsJapgolly.baseui.pinCodeMod.StatefulPinCodeProps
+import typingsJapgolly.baseui.baseuiStrings.mini
+import typingsJapgolly.baseui.pinCodeTypesMod.ChangeEvent
+import typingsJapgolly.baseui.pinCodeTypesMod.PinCodeOverrides
+import typingsJapgolly.baseui.pinCodeTypesMod.StateChange
+import typingsJapgolly.baseui.pinCodeTypesMod.StatefulPinCodeContainerState
+import typingsJapgolly.baseui.pinCodeTypesMod.StatefulPinCodeProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StatefulPinCode {
-  def apply(
-    adjoined: none | left | right | both = null,
-    `aria-describedby`: String = null,
-    `aria-label`: String = null,
-    `aria-labelledby`: String = null,
-    autoComplete: String = null,
-    autoFocus: js.UndefOr[Boolean] = js.undefined,
-    clearable: js.UndefOr[Boolean] = js.undefined,
-    `data-baseweb`: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    endEnhancer: (js.Function1[/* args */ SharedProps, Node]) | Node = null,
-    error: js.UndefOr[Boolean] = js.undefined,
-    id: String = null,
-    initialState: State = null,
-    inputRef: Ref = null,
-    manageFocus: js.UndefOr[Boolean] = js.undefined,
-    max: Int | Double = null,
-    min: Int | Double = null,
-    name: String = null,
-    onBlur: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onChange: /* args */ AnonValues => Callback = null,
-    onFocus: ReactFocusEventFrom[HTMLInputElement] => Callback = null,
-    onKeyDown: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    onKeyPress: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    onKeyUp: ReactKeyboardEventFrom[HTMLInputElement] => Callback = null,
-    overrides: InputOverrides with PinCodeOverrides = null,
-    placeholder: String = null,
-    positive: js.UndefOr[Boolean] = js.undefined,
-    required: js.UndefOr[Boolean] = js.undefined,
-    rows: Int | Double = null,
-    size: default_ | compact | large_ = null,
-    startEnhancer: (js.Function1[/* args */ SharedProps, Node]) | Node = null,
-    stateReducer: (change_, /* nextState */ State, /* currentState */ State) => CallbackTo[State] = null,
-    `type`: String = null,
-    values: js.Array[String] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[
-    StatefulPinCodeProps, 
-    MountedWithRawType[StatefulPinCodeProps, js.Object, RawMounted[StatefulPinCodeProps, js.Object]]
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (adjoined != null) __obj.updateDynamic("adjoined")(adjoined.asInstanceOf[js.Any])
-    if (`aria-describedby` != null) __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
-    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`.asInstanceOf[js.Any])
-    if (`aria-labelledby` != null) __obj.updateDynamic("aria-labelledby")(`aria-labelledby`.asInstanceOf[js.Any])
-    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
-    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus.asInstanceOf[js.Any])
-    if (!js.isUndefined(clearable)) __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
-    if (`data-baseweb` != null) __obj.updateDynamic("data-baseweb")(`data-baseweb`.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (endEnhancer != null) __obj.updateDynamic("endEnhancer")(endEnhancer.asInstanceOf[js.Any])
-    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (initialState != null) __obj.updateDynamic("initialState")(initialState.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (!js.isUndefined(manageFocus)) __obj.updateDynamic("manageFocus")(manageFocus.asInstanceOf[js.Any])
-    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
-    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (onBlur != null) __obj.updateDynamic("onBlur")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onBlur(t0).runNow()))
-    if (onChange != null) __obj.updateDynamic("onChange")(js.Any.fromFunction1((t0: /* args */ typingsJapgolly.baseui.AnonValues) => onChange(t0).runNow()))
-    if (onFocus != null) __obj.updateDynamic("onFocus")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactFocusEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onFocus(t0).runNow()))
-    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyDown(t0).runNow()))
-    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyPress(t0).runNow()))
-    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(js.Any.fromFunction1((t0: japgolly.scalajs.react.ReactKeyboardEventFrom[org.scalajs.dom.raw.HTMLInputElement]) => onKeyUp(t0).runNow()))
-    if (overrides != null) __obj.updateDynamic("overrides")(overrides.asInstanceOf[js.Any])
-    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder.asInstanceOf[js.Any])
-    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive.asInstanceOf[js.Any])
-    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
-    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
-    if (startEnhancer != null) __obj.updateDynamic("startEnhancer")(startEnhancer.asInstanceOf[js.Any])
-    if (stateReducer != null) __obj.updateDynamic("stateReducer")(js.Any.fromFunction3((t0: typingsJapgolly.baseui.baseuiStrings.change_, t1: /* nextState */ typingsJapgolly.baseui.pinCodeMod.State, t2: /* currentState */ typingsJapgolly.baseui.pinCodeMod.State) => stateReducer(t0, t1, t2).runNow()))
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.baseui.pinCodeMod.StatefulPinCodeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.baseui.pinCodeMod.StatefulPinCodeProps])(children: _*)
+  inline def apply(
+    autoFocus: Boolean,
+    disabled: Boolean,
+    error: Boolean,
+    manageFocus: Boolean,
+    mask: Boolean | String,
+    overrides: PinCodeOverrides,
+    placeholder: String,
+    positive: Boolean,
+    required: Boolean,
+    size: /* keyof baseui.anon.Compact */ mini | default_ | compact | large_,
+    values: js.Array[String]
+  ): Builder = {
+    val __props = js.Dynamic.literal(autoFocus = autoFocus.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], manageFocus = manageFocus.asInstanceOf[js.Any], mask = mask.asInstanceOf[js.Any], overrides = overrides.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], positive = positive.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[StatefulPinCodeProps]))
   }
+  
   @JSImport("baseui/pin-code", "StatefulPinCode")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def `aria-describedby`(value: String): this.type = set("aria-describedby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-describedbyNull`: this.type = set("aria-describedby", null)
+    
+    inline def `aria-label`(value: String): this.type = set("aria-label", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelNull`: this.type = set("aria-label", null)
+    
+    inline def `aria-labelledby`(value: String): this.type = set("aria-labelledby", value.asInstanceOf[js.Any])
+    
+    inline def `aria-labelledbyNull`: this.type = set("aria-labelledby", null)
+    
+    inline def autoComplete(value: String): this.type = set("autoComplete", value.asInstanceOf[js.Any])
+    
+    inline def autoCompleteNull: this.type = set("autoComplete", null)
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def idNull: this.type = set("id", null)
+    
+    inline def initialState(value: StatefulPinCodeContainerState): this.type = set("initialState", value.asInstanceOf[js.Any])
+    
+    inline def name(value: String): this.type = set("name", value.asInstanceOf[js.Any])
+    
+    inline def nameNull: this.type = set("name", null)
+    
+    inline def onChange(value: /* event */ ChangeEvent => Any): this.type = set("onChange", js.Any.fromFunction1(value))
+    
+    inline def stateReducer(
+      value: (/* type */ StateChange, /* nextState */ StatefulPinCodeContainerState, /* currentState */ StatefulPinCodeContainerState) => StatefulPinCodeContainerState
+    ): this.type = set("stateReducer", js.Any.fromFunction3(value))
+  }
+  
+  def withProps(p: StatefulPinCodeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

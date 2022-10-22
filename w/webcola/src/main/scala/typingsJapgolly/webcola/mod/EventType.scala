@@ -1,16 +1,19 @@
 package typingsJapgolly.webcola.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("webcola", "EventType")
 @js.native
-object EventType extends js.Object {
-  /* 2 */ val end: typingsJapgolly.webcola.layoutMod.EventType.end with Double = js.native
-  /* 0 */ val start: typingsJapgolly.webcola.layoutMod.EventType.start with Double = js.native
-  /* 1 */ val tick: typingsJapgolly.webcola.layoutMod.EventType.tick with Double = js.native
+object EventType extends StObject {
+  
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typingsJapgolly.webcola.layoutMod.EventType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typingsJapgolly.webcola.distSrcLayoutMod.EventType & Double] = js.native
+  
+  /* 2 */ val end: typingsJapgolly.webcola.distSrcLayoutMod.EventType.end & Double = js.native
+  
+  /* 0 */ val start: typingsJapgolly.webcola.distSrcLayoutMod.EventType.start & Double = js.native
+  
+  /* 1 */ val tick: typingsJapgolly.webcola.distSrcLayoutMod.EventType.tick & Double = js.native
 }
-

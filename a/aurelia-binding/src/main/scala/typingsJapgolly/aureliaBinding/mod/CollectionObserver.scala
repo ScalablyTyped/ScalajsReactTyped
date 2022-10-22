@@ -1,27 +1,29 @@
 package typingsJapgolly.aureliaBinding.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CollectionObserver extends js.Object {
+trait CollectionObserver extends StObject {
+  
   /**
     * Subscribe to collection mutation events.
     */
-  def subscribe(callback: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[_, _]], Unit]): Disposable
+  def subscribe(callback: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[Any, Any]], Unit]): Disposable
 }
-
 object CollectionObserver {
-  @scala.inline
-  def apply(
-    subscribe: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[js.Any, js.Any]], Unit] => CallbackTo[Disposable]
+  
+  inline def apply(
+    subscribe: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[Any, Any]], Unit] => Disposable
   ): CollectionObserver = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("subscribe")(js.Any.fromFunction1((t0: js.Function1[
-  /* changeRecords */ js.Array[typingsJapgolly.aureliaBinding.mod.ICollectionObserverSplice[js.Any, js.Any]], 
-  scala.Unit]) => subscribe(t0).runNow()))
+    val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[CollectionObserver]
   }
+  
+  extension [Self <: CollectionObserver](x: Self) {
+    
+    inline def setSubscribe(
+      value: js.Function1[/* changeRecords */ js.Array[ICollectionObserverSplice[Any, Any]], Unit] => Disposable
+    ): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+  }
 }
-

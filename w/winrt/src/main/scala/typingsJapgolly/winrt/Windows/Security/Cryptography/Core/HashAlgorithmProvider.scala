@@ -1,27 +1,23 @@
 package typingsJapgolly.winrt.Windows.Security.Cryptography.Core
 
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Storage.Streams.IBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-class HashAlgorithmProvider () extends IHashAlgorithmProvider {
-  /* CompleteClass */
-  override var algorithmName: String = js.native
-  /* CompleteClass */
-  override var hashLength: Double = js.native
-  /* CompleteClass */
-  override def createHash(): CryptographicHash = js.native
-  /* CompleteClass */
-  override def hashData(data: IBuffer): IBuffer = js.native
+trait HashAlgorithmProvider
+  extends StObject
+     with IHashAlgorithmProvider
+object HashAlgorithmProvider {
+  
+  inline def apply(
+    algorithmName: String,
+    createHash: CallbackTo[CryptographicHash],
+    hashData: IBuffer => IBuffer,
+    hashLength: Double
+  ): HashAlgorithmProvider = {
+    val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createHash = createHash.toJsFn, hashData = js.Any.fromFunction1(hashData), hashLength = hashLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HashAlgorithmProvider]
+  }
 }
-
-/* static members */
-@JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
-@js.native
-object HashAlgorithmProvider extends js.Object {
-  def openAlgorithm(algorithm: String): HashAlgorithmProvider = js.native
-}
-

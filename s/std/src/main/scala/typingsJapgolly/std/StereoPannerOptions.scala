@@ -1,27 +1,27 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StereoPannerOptions extends AudioNodeOptions {
+trait StereoPannerOptions
+  extends StObject
+     with AudioNodeOptions {
+  
+  /* standard dom */
   var pan: js.UndefOr[Double] = js.undefined
 }
-
 object StereoPannerOptions {
-  @scala.inline
-  def apply(
-    channelCount: Int | Double = null,
-    channelCountMode: ChannelCountMode = null,
-    channelInterpretation: ChannelInterpretation = null,
-    pan: Int | Double = null
-  ): StereoPannerOptions = {
+  
+  inline def apply(): StereoPannerOptions = {
     val __obj = js.Dynamic.literal()
-    if (channelCount != null) __obj.updateDynamic("channelCount")(channelCount.asInstanceOf[js.Any])
-    if (channelCountMode != null) __obj.updateDynamic("channelCountMode")(channelCountMode.asInstanceOf[js.Any])
-    if (channelInterpretation != null) __obj.updateDynamic("channelInterpretation")(channelInterpretation.asInstanceOf[js.Any])
-    if (pan != null) __obj.updateDynamic("pan")(pan.asInstanceOf[js.Any])
     __obj.asInstanceOf[StereoPannerOptions]
   }
+  
+  extension [Self <: StereoPannerOptions](x: Self) {
+    
+    inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+    
+    inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+  }
 }
-

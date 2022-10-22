@@ -4,21 +4,18 @@
 Typings are for version 0.0
 
 ## Library description:
-RSocket core
+This package is published from the rsocket-js monorepo.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | rsocket-core |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 18 |
-| # downloads        | 128005 |
-| # stars            | 0 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 116469.0 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/rsocket/rsocket-js#readme)
-- [Bugs](https://github.com/rsocket/rsocket-js/issues)
-- [Repository](https://github.com/rsocket/rsocket-js)
 - [Npm](https://www.npmjs.com/package/rsocket-core)
     
 

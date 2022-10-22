@@ -1,15 +1,17 @@
 package typingsJapgolly.reduxFirstRouterRestoreScroll
 
 import typingsJapgolly.history.mod.History
-import typingsJapgolly.history.mod.LocationState
+import typingsJapgolly.reduxFirstRouterRestoreScroll.anon.Manual
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("redux-first-router-restore-scroll", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default(): js.Function1[/* history */ History[LocationState], js.Object] = js.native
-  def default(options: AnonManual): js.Function1[/* history */ History[LocationState], js.Object] = js.native
+object mod {
+  
+  @JSImport("redux-first-router-restore-scroll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(): js.Function1[/* history */ History, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* history */ History, js.Object]]
+  inline def default(options: Manual): js.Function1[/* history */ History, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* history */ History, js.Object]]
 }
-

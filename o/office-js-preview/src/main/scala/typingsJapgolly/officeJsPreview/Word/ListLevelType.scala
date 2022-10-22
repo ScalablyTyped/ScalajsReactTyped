@@ -1,38 +1,43 @@
 package typingsJapgolly.officeJsPreview.Word
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait ListLevelType extends js.Object
-
+sealed trait ListLevelType extends StObject
 /**
-  * [Api set: WordApi]
+  * @remarks
+  * [Api set: WordApi 1.3]
   */
 @JSGlobal("Word.ListLevelType")
 @js.native
-object ListLevelType extends js.Object {
+object ListLevelType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait bullet extends ListLevelType
+  sealed trait bullet
+    extends StObject
+       with ListLevelType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait number extends ListLevelType
+  sealed trait number
+    extends StObject
+       with ListLevelType
   
+  /**
+    * @remarks
+    * [Api set: WordApi 1.3]
+    */
   @js.native
-  sealed trait picture extends ListLevelType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[ListLevelType with String] = js.native
-  /* "Bullet" */ @js.native
-  object bullet extends TopLevel[bullet with String]
-  
-  /* "Number" */ @js.native
-  object number extends TopLevel[number with String]
-  
-  /* "Picture" */ @js.native
-  object picture extends TopLevel[picture with String]
-  
+  sealed trait picture
+    extends StObject
+       with ListLevelType
 }
-

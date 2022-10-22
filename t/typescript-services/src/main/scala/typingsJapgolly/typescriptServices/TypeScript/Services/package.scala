@@ -1,9 +1,9 @@
-package typingsJapgolly.typescriptServices.TypeScript
+package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import typingsJapgolly.typescriptServices.TypeScript.ILogger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Services {
-  type IClassifierHost = typingsJapgolly.typescriptServices.TypeScript.ILogger
-}
+
+type IClassifierHost = ILogger

@@ -1,21 +1,17 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.guest
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.domain
 */
-trait SharedPCAllowedAccountType extends js.Object
-
+trait SharedPCAllowedAccountType extends StObject
 object SharedPCAllowedAccountType {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def domain: typingsJapgolly.microsoftGraph.microsoftGraphStrings.domain = this.cast("domain")
-  @scala.inline
-  def guest: typingsJapgolly.microsoftGraph.microsoftGraphStrings.guest = this.cast("guest")
+  
+  inline def domain: typingsJapgolly.microsoftGraph.microsoftGraphStrings.domain = "domain".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.domain]
+  
+  inline def guest: typingsJapgolly.microsoftGraph.microsoftGraphStrings.guest = "guest".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.guest]
 }
-

@@ -1,15 +1,19 @@
 package typingsJapgolly.freshy
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("freshy", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def freshy(module: String): js.Any = js.native
-  def freshy(module: String, cb: js.Function1[/* module */ js.Any, _]): js.Any = js.native
-  def reload(module: String): js.Any = js.native
-  def unload(module: String): Boolean = js.native
+object mod {
+  
+  @JSImport("freshy", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def freshy(module: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("freshy")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
+  inline def freshy(module: String, cb: js.Function1[/* module */ Any, Any]): Any = (^.asInstanceOf[js.Dynamic].applyDynamic("freshy")(module.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Any]
+  
+  inline def reload(module: String): Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")(module.asInstanceOf[js.Any]).asInstanceOf[Any]
+  
+  inline def unload(module: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(module.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }
-

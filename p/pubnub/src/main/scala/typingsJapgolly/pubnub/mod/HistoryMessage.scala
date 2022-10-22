@@ -1,23 +1,34 @@
 package typingsJapgolly.pubnub.mod
 
-import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HistoryMessage extends js.Object {
-  var entry: js.Any
-  var meta: js.UndefOr[StringDictionary[String]] = js.undefined
+trait HistoryMessage extends StObject {
+  
+  var entry: Any
+  
+  var meta: js.UndefOr[js.Object] = js.undefined
+  
   var timetoken: js.UndefOr[String | Double] = js.undefined
 }
-
 object HistoryMessage {
-  @scala.inline
-  def apply(entry: js.Any, meta: StringDictionary[String] = null, timetoken: String | Double = null): HistoryMessage = {
+  
+  inline def apply(entry: Any): HistoryMessage = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
-    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
-    if (timetoken != null) __obj.updateDynamic("timetoken")(timetoken.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryMessage]
   }
+  
+  extension [Self <: HistoryMessage](x: Self) {
+    
+    inline def setEntry(value: Any): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    
+    inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    
+    inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+    
+    inline def setTimetoken(value: String | Double): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    
+    inline def setTimetokenUndefined: Self = StObject.set(x, "timetoken", js.undefined)
+  }
 }
-

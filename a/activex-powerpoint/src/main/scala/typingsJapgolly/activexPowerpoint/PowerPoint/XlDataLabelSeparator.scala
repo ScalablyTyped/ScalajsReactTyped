@@ -1,14 +1,11 @@
 package typingsJapgolly.activexPowerpoint.PowerPoint
 
-import typingsJapgolly.activexPowerpoint.activexPowerpointNumbers.`1`
+import typingsJapgolly.activexPowerpoint.activexPowerpointInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XlDataLabelSeparator {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def xlDataLabelSeparatorDefault: `1` = this.cast(1)
+  
+  inline def xlDataLabelSeparatorDefault: `1` = 1.asInstanceOf[`1`]
 }
-

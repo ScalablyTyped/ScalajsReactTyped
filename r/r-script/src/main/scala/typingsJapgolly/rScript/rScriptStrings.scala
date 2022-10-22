@@ -1,79 +1,64 @@
 package typingsJapgolly.rScript
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rScriptStrings {
-  @js.native
-  sealed trait ISO8601 extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait ISO8601 extends StObject
+  inline def ISO8601: ISO8601 = "ISO8601".asInstanceOf[ISO8601]
   
   @js.native
-  sealed trait columnmajor extends js.Object
+  sealed trait base64 extends StObject
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait colums extends js.Object
+  sealed trait columnmajor extends StObject
+  inline def columnmajor: columnmajor = "columnmajor".asInstanceOf[columnmajor]
   
   @js.native
-  sealed trait epoch extends js.Object
+  sealed trait colums extends StObject
+  inline def colums: colums = "colums".asInstanceOf[colums]
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait epoch extends StObject
+  inline def epoch: epoch = "epoch".asInstanceOf[epoch]
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait hex extends StObject
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait integer extends StObject
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait mongo extends js.Object
+  sealed trait list extends StObject
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait mongo extends StObject
+  inline def mongo: mongo = "mongo".asInstanceOf[mongo]
   
   @js.native
-  sealed trait rowmajor extends js.Object
+  sealed trait `null` extends StObject
+  inline def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait rows extends js.Object
+  sealed trait rowmajor extends StObject
+  inline def rowmajor: rowmajor = "rowmajor".asInstanceOf[rowmajor]
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait rows extends StObject
+  inline def rows: rows = "rows".asInstanceOf[rows]
   
   @js.native
-  sealed trait values extends js.Object
+  sealed trait string extends StObject
+  inline def string: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def ISO8601: ISO8601 = "ISO8601".asInstanceOf[ISO8601]
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
-  @scala.inline
-  def columnmajor: columnmajor = "columnmajor".asInstanceOf[columnmajor]
-  @scala.inline
-  def colums: colums = "colums".asInstanceOf[colums]
-  @scala.inline
-  def epoch: epoch = "epoch".asInstanceOf[epoch]
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
-  @scala.inline
-  def mongo: mongo = "mongo".asInstanceOf[mongo]
-  @scala.inline
-  def `null`: `null` = "null".asInstanceOf[`null`]
-  @scala.inline
-  def rowmajor: rowmajor = "rowmajor".asInstanceOf[rowmajor]
-  @scala.inline
-  def rows: rows = "rows".asInstanceOf[rows]
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
-  @scala.inline
-  def values: values = "values".asInstanceOf[values]
+  @js.native
+  sealed trait values extends StObject
+  inline def values: values = "values".asInstanceOf[values]
 }
-

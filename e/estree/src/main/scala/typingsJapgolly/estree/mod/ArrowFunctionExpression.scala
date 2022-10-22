@@ -1,41 +1,31 @@
 package typingsJapgolly.estree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait ArrowFunctionExpression
-  extends BaseFunction
-     with Expression
+  extends StObject
+     with BaseFunction
      with Function {
+  
   var expression: Boolean
+  
   @JSName("type")
   var type_ArrowFunctionExpression: typingsJapgolly.estree.estreeStrings.ArrowFunctionExpression
 }
-
 object ArrowFunctionExpression {
-  @scala.inline
-  def apply(
-    body: BlockStatement | Expression,
-    expression: Boolean,
-    params: js.Array[Pattern],
-    `type`: typingsJapgolly.estree.estreeStrings.ArrowFunctionExpression,
-    async: js.UndefOr[Boolean] = js.undefined,
-    generator: js.UndefOr[Boolean] = js.undefined,
-    leadingComments: js.Array[Comment] = null,
-    loc: SourceLocation = null,
-    range: js.Tuple2[Double, Double] = null,
-    trailingComments: js.Array[Comment] = null
-  ): ArrowFunctionExpression = {
+  
+  inline def apply(body: BlockStatement | Expression, expression: Boolean, params: js.Array[Pattern]): ArrowFunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
-    if (!js.isUndefined(generator)) __obj.updateDynamic("generator")(generator.asInstanceOf[js.Any])
-    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
-    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[ArrowFunctionExpression]
   }
+  
+  extension [Self <: ArrowFunctionExpression](x: Self) {
+    
+    inline def setExpression(value: Boolean): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: typingsJapgolly.estree.estreeStrings.ArrowFunctionExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

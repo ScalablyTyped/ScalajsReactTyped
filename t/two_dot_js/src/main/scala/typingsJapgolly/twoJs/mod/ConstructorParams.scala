@@ -1,36 +1,54 @@
 package typingsJapgolly.twoJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConstructorParams extends js.Object {
+trait ConstructorParams extends StObject {
+  
   var autostart: js.UndefOr[Boolean] = js.undefined
+  
   var fullscreen: js.UndefOr[Boolean] = js.undefined
+  
   var height: js.UndefOr[Double] = js.undefined
+  
   var ratio: js.UndefOr[Double] = js.undefined
+  
   var `type`: js.UndefOr[Types] = js.undefined
+  
   var width: js.UndefOr[Double] = js.undefined
 }
-
 object ConstructorParams {
-  @scala.inline
-  def apply(
-    autostart: js.UndefOr[Boolean] = js.undefined,
-    fullscreen: js.UndefOr[Boolean] = js.undefined,
-    height: Int | Double = null,
-    ratio: Int | Double = null,
-    `type`: Types = null,
-    width: Int | Double = null
-  ): ConstructorParams = {
+  
+  inline def apply(): ConstructorParams = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart.asInstanceOf[js.Any])
-    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstructorParams]
   }
+  
+  extension [Self <: ConstructorParams](x: Self) {
+    
+    inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
+    
+    inline def setAutostartUndefined: Self = StObject.set(x, "autostart", js.undefined)
+    
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    
+    inline def setFullscreenUndefined: Self = StObject.set(x, "fullscreen", js.undefined)
+    
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    
+    inline def setType(value: Types): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

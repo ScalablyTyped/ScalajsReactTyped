@@ -1,80 +1,69 @@
 package typingsJapgolly.protonNative.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.protonNative.AnonBackgroundColor
-import typingsJapgolly.protonNative.AnonH
-import typingsJapgolly.protonNative.AnonX
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.protonNative.anon.BackgroundColor
+import typingsJapgolly.protonNative.anon.H
+import typingsJapgolly.protonNative.anon.X
 import typingsJapgolly.protonNative.mod.AreaTextProps
 import typingsJapgolly.protonNative.protonNativeStrings.bevel
 import typingsJapgolly.protonNative.protonNativeStrings.flat
 import typingsJapgolly.protonNative.protonNativeStrings.miter
 import typingsJapgolly.protonNative.protonNativeStrings.round
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AreaText {
-  def apply(
-    align: AnonH = null,
-    column: Int | Double = null,
-    expand: AnonH = null,
-    fill: String = null,
-    fillOpacity: Int | Double = null,
-    label: String = null,
-    row: Int | Double = null,
-    span: AnonX = null,
-    stretchy: js.UndefOr[Boolean] = js.undefined,
-    stroke: String = null,
-    strokeLinecap: flat | round | bevel = null,
-    strokeLinejoin: miter | round | bevel = null,
-    strokeMiterlimit: Int | Double = null,
-    strokeOpacity: Int | Double = null,
-    strokeWidth: Int | Double = null,
-    style: AnonBackgroundColor = null,
-    transform: String = null,
-    x: Double | String = null,
-    y: Double | String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[AreaTextProps, typingsJapgolly.protonNative.mod.AreaText, Unit, AreaTextProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
-    if (expand != null) __obj.updateDynamic("expand")(expand.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
-    if (span != null) __obj.updateDynamic("span")(span.asInstanceOf[js.Any])
-    if (!js.isUndefined(stretchy)) __obj.updateDynamic("stretchy")(stretchy.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeLinecap != null) __obj.updateDynamic("strokeLinecap")(strokeLinecap.asInstanceOf[js.Any])
-    if (strokeLinejoin != null) __obj.updateDynamic("strokeLinejoin")(strokeLinejoin.asInstanceOf[js.Any])
-    if (strokeMiterlimit != null) __obj.updateDynamic("strokeMiterlimit")(strokeMiterlimit.asInstanceOf[js.Any])
-    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.protonNative.mod.AreaTextProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.protonNative.mod.AreaText](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.protonNative.mod.AreaTextProps])(children: _*)
-  }
   @JSImport("proton-native", "AreaText")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.protonNative.mod.AreaText] {
+    
+    inline def align(value: H): this.type = set("align", value.asInstanceOf[js.Any])
+    
+    inline def column(value: Double): this.type = set("column", value.asInstanceOf[js.Any])
+    
+    inline def expand(value: H): this.type = set("expand", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: String): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillOpacity(value: Double): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def label(value: String): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def row(value: Double): this.type = set("row", value.asInstanceOf[js.Any])
+    
+    inline def span(value: X): this.type = set("span", value.asInstanceOf[js.Any])
+    
+    inline def stretchy(value: Boolean): this.type = set("stretchy", value.asInstanceOf[js.Any])
+    
+    inline def stroke(value: String): this.type = set("stroke", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinecap(value: flat | round | bevel): this.type = set("strokeLinecap", value.asInstanceOf[js.Any])
+    
+    inline def strokeLinejoin(value: miter | round | bevel): this.type = set("strokeLinejoin", value.asInstanceOf[js.Any])
+    
+    inline def strokeMiterlimit(value: Double): this.type = set("strokeMiterlimit", value.asInstanceOf[js.Any])
+    
+    inline def strokeOpacity(value: Double): this.type = set("strokeOpacity", value.asInstanceOf[js.Any])
+    
+    inline def strokeWidth(value: Double): this.type = set("strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def style(value: BackgroundColor): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def transform(value: String): this.type = set("transform", value.asInstanceOf[js.Any])
+    
+    inline def x(value: Double | String): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def y(value: Double | String): this.type = set("y", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: AreaText.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: AreaTextProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

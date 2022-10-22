@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-google-recaptcha
 
-Typings are for version 1.1
+Typings are for version 2.1
 
 ## Library description:
 React Component Wrapper for Google reCAPTCHA
@@ -10,10 +10,10 @@ React Component Wrapper for Google reCAPTCHA
 | ------------------ | :-------------: |
 | Full name          | react-google-recaptcha |
 | Keywords           | react, react-component, captcha, recaptcha, google-recaptcha |
-| # releases         | 21 |
-| # dependents       | 39 |
-| # downloads        | 4156691 |
-| # stars            | 7 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 1902747.0 |
+| # stars            | 836.0 |
 
 ## Links
 - [Homepage](https://github.com/dozoisch/react-google-recaptcha)

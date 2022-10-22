@@ -1,35 +1,54 @@
 package typingsJapgolly.muiDatatables.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MUIDataTableFilter extends js.Object {
+trait MUIDataTableFilter extends StObject {
+  
   var classes: js.UndefOr[js.Object] = js.undefined
-  var filterData: js.Array[_]
+  
+  var filterData: js.Array[Any]
+  
   var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
-  var onFilterRest: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var onFilterUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.undefined
-  var options: js.Object
+  
+  var onFilterReset: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var onFilterUpdate: js.UndefOr[js.Function1[/* args */ Any, Any]] = js.undefined
+  
+  var options: MUIDataTableOptions
 }
-
 object MUIDataTableFilter {
-  @scala.inline
-  def apply(
-    filterData: js.Array[_],
-    options: js.Object,
-    classes: js.Object = null,
-    filterList: js.Array[js.Array[String]] = null,
-    onFilterRest: /* args */ js.Any => CallbackTo[js.Any] = null,
-    onFilterUpdate: /* args */ js.Any => CallbackTo[js.Any] = null
-  ): MUIDataTableFilter = {
+  
+  inline def apply(filterData: js.Array[Any], options: MUIDataTableOptions): MUIDataTableFilter = {
     val __obj = js.Dynamic.literal(filterData = filterData.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
-    if (classes != null) __obj.updateDynamic("classes")(classes.asInstanceOf[js.Any])
-    if (filterList != null) __obj.updateDynamic("filterList")(filterList.asInstanceOf[js.Any])
-    if (onFilterRest != null) __obj.updateDynamic("onFilterRest")(js.Any.fromFunction1((t0: /* args */ js.Any) => onFilterRest(t0).runNow()))
-    if (onFilterUpdate != null) __obj.updateDynamic("onFilterUpdate")(js.Any.fromFunction1((t0: /* args */ js.Any) => onFilterUpdate(t0).runNow()))
     __obj.asInstanceOf[MUIDataTableFilter]
   }
+  
+  extension [Self <: MUIDataTableFilter](x: Self) {
+    
+    inline def setClasses(value: js.Object): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    
+    inline def setFilterData(value: js.Array[Any]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+    
+    inline def setFilterDataVarargs(value: Any*): Self = StObject.set(x, "filterData", js.Array(value*))
+    
+    inline def setFilterList(value: js.Array[js.Array[String]]): Self = StObject.set(x, "filterList", value.asInstanceOf[js.Any])
+    
+    inline def setFilterListUndefined: Self = StObject.set(x, "filterList", js.undefined)
+    
+    inline def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value*))
+    
+    inline def setOnFilterReset(value: /* args */ Any => Any): Self = StObject.set(x, "onFilterReset", js.Any.fromFunction1(value))
+    
+    inline def setOnFilterResetUndefined: Self = StObject.set(x, "onFilterReset", js.undefined)
+    
+    inline def setOnFilterUpdate(value: /* args */ Any => Any): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction1(value))
+    
+    inline def setOnFilterUpdateUndefined: Self = StObject.set(x, "onFilterUpdate", js.undefined)
+    
+    inline def setOptions(value: MUIDataTableOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+  }
 }
-

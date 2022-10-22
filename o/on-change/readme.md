@@ -1,7 +1,7 @@
 
 # Scala.js typings for on-change
 
-Typings are for version 1.6.2
+Typings are for version 4.0.1
 
 ## Library description:
 Watch an object or array for changes
@@ -10,10 +10,10 @@ Watch an object or array for changes
 | ------------------ | :-------------: |
 | Full name          | on-change |
 | Keywords           | on, change, watch, object, array, changes, observe, watcher, observer, proxy, proxies, es2015, event, listener |
-| # releases         | 12 |
-| # dependents       | 26 |
-| # downloads        | 29188 |
-| # stars            | 0 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 55849.0 |
+| # stars            | 1787.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/on-change#readme)

@@ -1,20 +1,7 @@
 package typingsJapgolly.typescriptServices.TypeScript.Services
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("TypeScript.Services.MatchKind")
-@js.native
-class MatchKind () extends js.Object
-
-/* static members */
-@JSGlobal("TypeScript.Services.MatchKind")
-@js.native
-object MatchKind extends js.Object {
-  var exact: String = js.native
-  var none: String = js.native
-  var prefix: String = js.native
-  var subString: String = js.native
-}
-
+trait MatchKind extends StObject

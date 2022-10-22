@@ -1,7 +1,7 @@
 
 # Scala.js typings for url-variables
 
-Typings are for version 1.0.2
+Typings are for version 1.0.3
 
 ## Library description:
 URLVariables class for TypeScript
@@ -10,10 +10,10 @@ URLVariables class for TypeScript
 | ------------------ | :-------------: |
 | Full name          | url-variables |
 | Keywords           | URLVariables, url, variables, encode, decode |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 3663 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2872.0 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/samchon/urlvariables)

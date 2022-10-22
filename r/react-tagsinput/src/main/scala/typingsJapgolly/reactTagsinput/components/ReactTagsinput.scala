@@ -1,93 +1,86 @@
 package typingsJapgolly.reactTagsinput.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ReactChild
 import typingsJapgolly.reactTagsinput.mod.InputProps
 import typingsJapgolly.reactTagsinput.mod.ReactTagsInputProps
 import typingsJapgolly.reactTagsinput.mod.RenderInputProps
 import typingsJapgolly.reactTagsinput.mod.RenderTagProps
-import typingsJapgolly.reactTagsinput.mod.Tag
 import typingsJapgolly.reactTagsinput.mod.TagProps
 import typingsJapgolly.reactTagsinput.mod.^
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactTagsinput {
-  def apply(
-    value: js.Array[Tag],
-    onChange: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Callback,
-    addKeys: js.Array[Double | String] = null,
-    addOnBlur: js.UndefOr[Boolean] = js.undefined,
-    addOnPaste: js.UndefOr[Boolean] = js.undefined,
-    className: String = null,
-    currentValue: String = null,
-    disabled: js.UndefOr[Boolean] = js.undefined,
-    focusedClassName: String = null,
-    inputProps: InputProps = null,
-    inputValue: String = null,
-    maxTags: Int | Double = null,
-    onChangeInput: /* value */ String => Callback = null,
-    onValidationReject: /* tags */ js.Array[String] => Callback = null,
-    onlyUnique: js.UndefOr[Boolean] = js.undefined,
-    pasteSplit: /* data */ String => CallbackTo[js.Array[String]] = null,
-    preventSubmit: js.UndefOr[Boolean] = js.undefined,
-    removeKeys: js.Array[Double] = null,
-    renderInput: /* props */ RenderInputProps => CallbackTo[Node] = null,
-    renderLayout: (/* tagElements */ js.Array[Element], /* inputElement */ Element) => CallbackTo[ReactChild] = null,
-    renderTag: /* props */ RenderTagProps => CallbackTo[Node] = null,
-    tagDisplayProp: String = null,
-    tagProps: TagProps = null,
-    validationRegex: js.RegExp = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ReactTagsInputProps, ^, Unit, ReactTagsInputProps] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
   
-      __obj.updateDynamic("onChange")(js.Any.fromFunction3((t0: js.Array[typingsJapgolly.reactTagsinput.mod.Tag], t1: js.Array[typingsJapgolly.reactTagsinput.mod.Tag], t2: js.Array[scala.Double]) => onChange(t0, t1, t2).runNow()))
-    if (addKeys != null) __obj.updateDynamic("addKeys")(addKeys.asInstanceOf[js.Any])
-    if (!js.isUndefined(addOnBlur)) __obj.updateDynamic("addOnBlur")(addOnBlur.asInstanceOf[js.Any])
-    if (!js.isUndefined(addOnPaste)) __obj.updateDynamic("addOnPaste")(addOnPaste.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue.asInstanceOf[js.Any])
-    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
-    if (focusedClassName != null) __obj.updateDynamic("focusedClassName")(focusedClassName.asInstanceOf[js.Any])
-    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps.asInstanceOf[js.Any])
-    if (inputValue != null) __obj.updateDynamic("inputValue")(inputValue.asInstanceOf[js.Any])
-    if (maxTags != null) __obj.updateDynamic("maxTags")(maxTags.asInstanceOf[js.Any])
-    if (onChangeInput != null) __obj.updateDynamic("onChangeInput")(js.Any.fromFunction1((t0: /* value */ java.lang.String) => onChangeInput(t0).runNow()))
-    if (onValidationReject != null) __obj.updateDynamic("onValidationReject")(js.Any.fromFunction1((t0: /* tags */ js.Array[java.lang.String]) => onValidationReject(t0).runNow()))
-    if (!js.isUndefined(onlyUnique)) __obj.updateDynamic("onlyUnique")(onlyUnique.asInstanceOf[js.Any])
-    if (pasteSplit != null) __obj.updateDynamic("pasteSplit")(js.Any.fromFunction1((t0: /* data */ java.lang.String) => pasteSplit(t0).runNow()))
-    if (!js.isUndefined(preventSubmit)) __obj.updateDynamic("preventSubmit")(preventSubmit.asInstanceOf[js.Any])
-    if (removeKeys != null) __obj.updateDynamic("removeKeys")(removeKeys.asInstanceOf[js.Any])
-    if (renderInput != null) __obj.updateDynamic("renderInput")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactTagsinput.mod.RenderInputProps) => renderInput(t0).runNow()))
-    if (renderLayout != null) __obj.updateDynamic("renderLayout")(js.Any.fromFunction2((t0: /* tagElements */ js.Array[japgolly.scalajs.react.raw.React.Element], t1: /* inputElement */ japgolly.scalajs.react.raw.React.Element) => renderLayout(t0, t1).runNow()))
-    if (renderTag != null) __obj.updateDynamic("renderTag")(js.Any.fromFunction1((t0: /* props */ typingsJapgolly.reactTagsinput.mod.RenderTagProps) => renderTag(t0).runNow()))
-    if (tagDisplayProp != null) __obj.updateDynamic("tagDisplayProp")(tagDisplayProp.asInstanceOf[js.Any])
-    if (tagProps != null) __obj.updateDynamic("tagProps")(tagProps.asInstanceOf[js.Any])
-    if (validationRegex != null) __obj.updateDynamic("validationRegex")(validationRegex.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactTagsinput.mod.ReactTagsInputProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactTagsinput.mod.^](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactTagsinput.mod.ReactTagsInputProps])(children: _*)
+  inline def apply[Tag](onChange: (js.Array[Tag], js.Array[Tag], js.Array[Double]) => Callback, value: js.Array[Tag]): Builder[Tag] = {
+    val __props = js.Dynamic.literal(onChange = js.Any.fromFunction3((t0: js.Array[Tag], t1: js.Array[Tag], t2: js.Array[Double]) => (onChange(t0, t1, t2)).runNow()), value = value.asInstanceOf[js.Any])
+    new Builder[Tag](js.Array(this.component, __props.asInstanceOf[ReactTagsInputProps[Tag]]))
   }
+  
   @JSImport("react-tagsinput", JSImport.Namespace)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[Tag] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[^[Tag]] {
+    
+    inline def addKeys(value: js.Array[Double | String]): this.type = set("addKeys", value.asInstanceOf[js.Any])
+    
+    inline def addKeysVarargs(value: (Double | String)*): this.type = set("addKeys", js.Array(value*))
+    
+    inline def addOnBlur(value: Boolean): this.type = set("addOnBlur", value.asInstanceOf[js.Any])
+    
+    inline def addOnPaste(value: Boolean): this.type = set("addOnPaste", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def currentValue(value: String): this.type = set("currentValue", value.asInstanceOf[js.Any])
+    
+    inline def disabled(value: Boolean): this.type = set("disabled", value.asInstanceOf[js.Any])
+    
+    inline def focusedClassName(value: String): this.type = set("focusedClassName", value.asInstanceOf[js.Any])
+    
+    inline def inputProps(value: InputProps): this.type = set("inputProps", value.asInstanceOf[js.Any])
+    
+    inline def inputValue(value: String): this.type = set("inputValue", value.asInstanceOf[js.Any])
+    
+    inline def maxTags(value: Double): this.type = set("maxTags", value.asInstanceOf[js.Any])
+    
+    inline def onChangeInput(value: /* value */ String => Callback): this.type = set("onChangeInput", js.Any.fromFunction1((t0: /* value */ String) => value(t0).runNow()))
+    
+    inline def onValidationReject(value: /* tags */ js.Array[String] => Callback): this.type = set("onValidationReject", js.Any.fromFunction1((t0: /* tags */ js.Array[String]) => value(t0).runNow()))
+    
+    inline def onlyUnique(value: Boolean): this.type = set("onlyUnique", value.asInstanceOf[js.Any])
+    
+    inline def pasteSplit(value: /* data */ String => js.Array[String]): this.type = set("pasteSplit", js.Any.fromFunction1(value))
+    
+    inline def preventSubmit(value: Boolean): this.type = set("preventSubmit", value.asInstanceOf[js.Any])
+    
+    inline def removeKeys(value: js.Array[Double]): this.type = set("removeKeys", value.asInstanceOf[js.Any])
+    
+    inline def removeKeysVarargs(value: Double*): this.type = set("removeKeys", js.Array(value*))
+    
+    inline def renderInput(value: /* props */ RenderInputProps[Tag] => Node): this.type = set("renderInput", js.Any.fromFunction1(value))
+    
+    inline def renderLayout(value: (/* tagElements */ js.Array[Element], /* inputElement */ Element) => ReactChild): this.type = set("renderLayout", js.Any.fromFunction2(value))
+    
+    inline def renderTag(value: /* props */ RenderTagProps[Tag] => Node): this.type = set("renderTag", js.Any.fromFunction1(value))
+    
+    inline def tagDisplayProp(value: /* keyof Tag */ String): this.type = set("tagDisplayProp", value.asInstanceOf[js.Any])
+    
+    inline def tagDisplayPropNull: this.type = set("tagDisplayProp", null)
+    
+    inline def tagProps(value: TagProps): this.type = set("tagProps", value.asInstanceOf[js.Any])
+    
+    inline def validationRegex(value: js.RegExp): this.type = set("validationRegex", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[Tag](p: ReactTagsInputProps[Tag]): Builder[Tag] = new Builder[Tag](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

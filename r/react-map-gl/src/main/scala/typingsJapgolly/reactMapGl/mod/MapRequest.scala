@@ -1,23 +1,35 @@
 package typingsJapgolly.reactMapGl.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MapRequest extends js.Object {
+trait MapRequest extends StObject {
+  
   var credentials: js.UndefOr[String] = js.undefined
+  
   var headers: js.UndefOr[StringDictionary[String]] = js.undefined
+  
   var url: String
 }
-
 object MapRequest {
-  @scala.inline
-  def apply(url: String, credentials: String = null, headers: StringDictionary[String] = null): MapRequest = {
+  
+  inline def apply(url: String): MapRequest = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapRequest]
   }
+  
+  extension [Self <: MapRequest](x: Self) {
+    
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+  }
 }
-

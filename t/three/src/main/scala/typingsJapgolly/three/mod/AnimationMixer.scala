@@ -1,13 +1,14 @@
 package typingsJapgolly.three.mod
 
+import typingsJapgolly.three.srcCoreEventDispatcherMod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "AnimationMixer")
 @js.native
-class AnimationMixer protected ()
-  extends typingsJapgolly.three.animationMixerMod.AnimationMixer {
-  def this(root: js.Any) = this()
+open class AnimationMixer protected ()
+  extends typingsJapgolly.three.srcThreeMod.AnimationMixer {
+  def this(root: typingsJapgolly.three.srcAnimationAnimationObjectGroupMod.AnimationObjectGroup) = this()
+  def this(root: typingsJapgolly.three.srcCoreObject3DMod.Object3D[Event]) = this()
 }
-

@@ -1,22 +1,26 @@
 package typingsJapgolly.qlik.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait InitialPropertiesHyperCube
-  extends /* key */ StringDictionary[js.Any]
+  extends StObject
+     with /* key */ StringDictionary[Any]
      with InitialProperties {
+  
   var qHyperCubeDef: HyperCubeDef
 }
-
 object InitialPropertiesHyperCube {
-  @scala.inline
-  def apply(qHyperCubeDef: HyperCubeDef, StringDictionary: /* key */ StringDictionary[js.Any] = null): InitialPropertiesHyperCube = {
+  
+  inline def apply(qHyperCubeDef: HyperCubeDef): InitialPropertiesHyperCube = {
     val __obj = js.Dynamic.literal(qHyperCubeDef = qHyperCubeDef.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
     __obj.asInstanceOf[InitialPropertiesHyperCube]
   }
+  
+  extension [Self <: InitialPropertiesHyperCube](x: Self) {
+    
+    inline def setQHyperCubeDef(value: HyperCubeDef): Self = StObject.set(x, "qHyperCubeDef", value.asInstanceOf[js.Any])
+  }
 }
-

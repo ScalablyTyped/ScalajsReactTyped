@@ -1,17 +1,69 @@
 package typingsJapgolly.easyXapiUtils
 
 import typingsJapgolly.express.mod.RequestHandler
-import typingsJapgolly.expressServeStaticCore.mod.ParamsDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("easy-xapi-utils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def hasRole(role: String): RequestHandler[ParamsDictionary] = js.native
-  def isLoggedIn(): RequestHandler[ParamsDictionary] = js.native
-  def isLoggedIn(role: String): RequestHandler[ParamsDictionary] = js.native
-  def isLoggedOut(): RequestHandler[ParamsDictionary] = js.native
+object mod {
+  
+  @JSImport("easy-xapi-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def hasRole(role: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRole")(role.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  
+  inline def isLoggedIn(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  inline def isLoggedIn(role: String): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")(role.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
+  
+  inline def isLoggedOut(): RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedOut")().asInstanceOf[RequestHandler[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.ParamsDictionary */ Any, 
+    Any, 
+    Any, 
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify core.Query */ Any, 
+    Record[String, Any]
+  ]]
 }
-

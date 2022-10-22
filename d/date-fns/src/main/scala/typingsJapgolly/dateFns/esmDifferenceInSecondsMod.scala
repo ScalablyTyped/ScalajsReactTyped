@@ -1,20 +1,25 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import typingsJapgolly.dateFns.anon.RoundingMethod
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/differenceInSeconds", JSImport.Namespace)
-@js.native
-object esmDifferenceInSecondsMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(dateLeft: Double, dateRight: Double): Double = js.native
-    def apply(dateLeft: Double, dateRight: Date): Double = js.native
-    def apply(dateLeft: Date, dateRight: Double): Double = js.native
-    def apply(dateLeft: Date, dateRight: Date): Double = js.native
-  }
+object esmDifferenceInSecondsMod {
   
+  object default {
+    
+    inline def apply(dateLeft: js.Date, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: js.Date, options: RoundingMethod): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: js.Date, dateRight: Double, options: RoundingMethod): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: js.Date): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: js.Date, options: RoundingMethod): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: Double): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def apply(dateLeft: Double, dateRight: Double, options: RoundingMethod): Double = (^.asInstanceOf[js.Dynamic].apply(dateLeft.asInstanceOf[js.Any], dateRight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @JSImport("date-fns/esm/differenceInSeconds", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

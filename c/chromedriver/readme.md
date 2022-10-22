@@ -1,7 +1,7 @@
 
 # Scala.js typings for chromedriver
 
-Typings are for version 2.38
+Typings are for version 81.0
 
 ## Library description:
 ChromeDriver for Selenium
@@ -10,10 +10,10 @@ ChromeDriver for Selenium
 | ------------------ | :-------------: |
 | Full name          | chromedriver |
 | Keywords           | chromedriver, selenium |
-| # releases         | 33 |
-| # dependents       | 226 |
-| # downloads        | 14857230 |
-| # stars            | 39 |
+| # releases         | 41 |
+| # dependents       | 0.0 |
+| # downloads        | 2544406.0 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://github.com/giggio/node-chromedriver)

@@ -1,26 +1,44 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines line style settings.
   */
-@JSGlobal("ASPxClientLineStyle")
-@js.native
-class ASPxClientLineStyle () extends ASPxClientWebChartElement {
+trait ASPxClientLineStyle
+  extends StObject
+     with ASPxClientWebChartElement {
+  
   /**
     * Gets the dash style used to paint the line.
     */
-  var dashStyle: String = js.native
+  var dashStyle: String
+  
   /**
     * Returns the join style for the ends of consecutive lines.
     */
-  var lineJoin: String = js.native
+  var lineJoin: String
+  
   /**
     * Gets the thickness that corresponds to the value of the current ASPxClientLineStyle object.
     */
-  var thickness: Double = js.native
+  var thickness: Double
 }
-
+object ASPxClientLineStyle {
+  
+  inline def apply(chart: ASPxClientWebChart, dashStyle: String, lineJoin: String, thickness: Double): ASPxClientLineStyle = {
+    val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], dashStyle = dashStyle.asInstanceOf[js.Any], lineJoin = lineJoin.asInstanceOf[js.Any], thickness = thickness.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientLineStyle]
+  }
+  
+  extension [Self <: ASPxClientLineStyle](x: Self) {
+    
+    inline def setDashStyle(value: String): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+  }
+}

@@ -1,28 +1,30 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
-import typingsJapgolly.uirouterCore.paramsInterfaceMod.RawParams
-import typingsJapgolly.uirouterCore.stateInterfaceMod.StateDeclaration
+import typingsJapgolly.uirouterCore.libParamsInterfaceMod.RawParams
+import typingsJapgolly.uirouterCore.libStateInterfaceMod.StateDeclaration
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "Param")
 @js.native
-class Param protected ()
+open class Param protected ()
   extends typingsJapgolly.uirouterCore.mod.Param {
   def this(
     id: String,
-    `type`: typingsJapgolly.uirouterCore.paramTypeMod.ParamType,
-    location: typingsJapgolly.uirouterCore.paramMod.DefType,
+    `type`: typingsJapgolly.uirouterCore.libParamsParamTypeMod.ParamType,
+    location: typingsJapgolly.uirouterCore.libParamsParamMod.DefType,
     urlConfig: typingsJapgolly.uirouterCore.libUrlMod.UrlConfig,
     state: StateDeclaration
   ) = this()
 }
-
 /* static members */
-@JSImport("@uirouter/angularjs", "Param")
-@js.native
-object Param extends js.Object {
+object Param {
+  
+  @JSImport("@uirouter/angularjs", "Param")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Finds [[Param]] objects which have different param values
     *
@@ -34,13 +36,19 @@ object Param extends js.Object {
     *
     * @returns any Param objects whose values were different between values1 and values2
     */
-  def changed(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param]): js.Array[typingsJapgolly.uirouterCore.paramMod.Param] = js.native
-  def changed(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param], values1: RawParams): js.Array[typingsJapgolly.uirouterCore.paramMod.Param] = js.native
-  def changed(
-    params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param],
+  inline def changed(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]): js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param] = ^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any]).asInstanceOf[js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]]
+  inline def changed(
+    params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param],
+    values1: Unit,
+    values2: RawParams
+  ): js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]]
+  inline def changed(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param], values1: RawParams): js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]]
+  inline def changed(
+    params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param],
     values1: RawParams,
     values2: RawParams
-  ): js.Array[typingsJapgolly.uirouterCore.paramMod.Param] = js.native
+  ): js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param] = (^.asInstanceOf[js.Dynamic].applyDynamic("changed")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]]
+  
   /**
     * Checks if two param value objects are equal (for a set of [[Param]] objects)
     *
@@ -50,17 +58,23 @@ object Param extends js.Object {
     *
     * @returns true if the param values in values1 and values2 are equal
     */
-  def equals(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param]): Boolean = js.native
-  def equals(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param], values1: js.Object): Boolean = js.native
-  def equals(
-    params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param],
+  inline def equals(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def equals(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param], values1: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals(
+    params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param],
     values1: js.Object,
     values2: js.Object
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals(
+    params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param],
+    values1: Unit,
+    values2: js.Object
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(params.asInstanceOf[js.Any], values1.asInstanceOf[js.Any], values2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   /** Returns true if a the parameter values are valid, according to the Param definitions */
-  def validates(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param]): Boolean = js.native
-  def validates(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param], values: RawParams): Boolean = js.native
-  def values(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param]): RawParams = js.native
-  def values(params: js.Array[typingsJapgolly.uirouterCore.paramMod.Param], values: RawParams): RawParams = js.native
+  inline def validates(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def validates(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param], values: RawParams): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validates")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def values(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param]): RawParams = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any]).asInstanceOf[RawParams]
+  inline def values(params: js.Array[typingsJapgolly.uirouterCore.libParamsParamMod.Param], values: RawParams): RawParams = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(params.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[RawParams]
 }
-

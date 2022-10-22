@@ -1,64 +1,60 @@
 package typingsJapgolly.reactNativeMaterialUi.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.react.mod.global.JSX.Element
 import typingsJapgolly.reactNativeMaterialUi.mod.ListItemCenterElement
 import typingsJapgolly.reactNativeMaterialUi.mod.ListItemProps
 import typingsJapgolly.reactNativeMaterialUi.mod.ListItemStyle
-import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`1`
-import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`2`
-import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiNumbers.`3`
+import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiInts.`1`
+import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiInts.`2`
+import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiInts.`3`
 import typingsJapgolly.reactNativeMaterialUi.reactNativeMaterialUiStrings.dynamic
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ListItem {
-  def apply(
-    centerElement: Element | String | ListItemCenterElement,
-    dense: js.UndefOr[Boolean] = js.undefined,
-    divider: js.UndefOr[Boolean] = js.undefined,
-    leftElement: Element | String = null,
-    numberOfLines: `1` | `2` | `3` | dynamic = null,
-    onPress: js.UndefOr[Callback] = js.undefined,
-    onPressValue: js.Any = null,
-    onRightElementPress: js.UndefOr[Callback] = js.undefined,
-    rightElement: Element | String = null,
-    style: ListItemStyle = null,
-    testID: String = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[ListItemProps, typingsJapgolly.reactNativeMaterialUi.mod.ListItem, Unit, ListItemProps] = {
-    val __obj = js.Dynamic.literal(centerElement = centerElement.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense.asInstanceOf[js.Any])
-    if (!js.isUndefined(divider)) __obj.updateDynamic("divider")(divider.asInstanceOf[js.Any])
-    if (leftElement != null) __obj.updateDynamic("leftElement")(leftElement.asInstanceOf[js.Any])
-    if (numberOfLines != null) __obj.updateDynamic("numberOfLines")(numberOfLines.asInstanceOf[js.Any])
-    onPress.foreach(p => __obj.updateDynamic("onPress")(p.toJsFn))
-    if (onPressValue != null) __obj.updateDynamic("onPressValue")(onPressValue.asInstanceOf[js.Any])
-    onRightElementPress.foreach(p => __obj.updateDynamic("onRightElementPress")(p.toJsFn))
-    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement.asInstanceOf[js.Any])
-    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
-    if (testID != null) __obj.updateDynamic("testID")(testID.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeMaterialUi.mod.ListItemProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeMaterialUi.mod.ListItem](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeMaterialUi.mod.ListItemProps])(children: _*)
+  inline def apply(centerElement: Element | String | ListItemCenterElement): Builder = {
+    val __props = js.Dynamic.literal(centerElement = centerElement.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ListItemProps]))
   }
+  
   @JSImport("react-native-material-ui", "ListItem")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeMaterialUi.mod.ListItem] {
+    
+    inline def dense(value: Boolean): this.type = set("dense", value.asInstanceOf[js.Any])
+    
+    inline def divider(value: Boolean): this.type = set("divider", value.asInstanceOf[js.Any])
+    
+    inline def leftElement(value: Element | String): this.type = set("leftElement", value.asInstanceOf[js.Any])
+    
+    inline def leftElementVdomElement(value: VdomElement): this.type = set("leftElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def numberOfLines(value: `1` | `2` | `3` | dynamic): this.type = set("numberOfLines", value.asInstanceOf[js.Any])
+    
+    inline def onPress(value: Callback): this.type = set("onPress", value.toJsFn)
+    
+    inline def onPressValue(value: Any): this.type = set("onPressValue", value.asInstanceOf[js.Any])
+    
+    inline def onRightElementPress(value: Callback): this.type = set("onRightElementPress", value.toJsFn)
+    
+    inline def rightElement(value: Element | String): this.type = set("rightElement", value.asInstanceOf[js.Any])
+    
+    inline def rightElementVdomElement(value: VdomElement): this.type = set("rightElement", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def style(value: ListItemStyle): this.type = set("style", value.asInstanceOf[js.Any])
+    
+    inline def testID(value: String): this.type = set("testID", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: ListItemProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

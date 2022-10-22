@@ -1,9 +1,9 @@
 package typingsJapgolly.chromeApps.WebView
 
-import typingsJapgolly.chromeApps.chromeAppsStrings.disabled_
+import typingsJapgolly.chromeApps.chromeAppsStrings.disabled__
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the how zooming is handled in the webview.
@@ -30,18 +30,14 @@ import scala.scalajs.js.annotation._
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.chromeApps.chromeAppsStrings.`per-origin`
   - typingsJapgolly.chromeApps.chromeAppsStrings.`per-view`
-  - typingsJapgolly.chromeApps.chromeAppsStrings.disabled_
+  - typingsJapgolly.chromeApps.chromeAppsStrings.disabled__
 */
-trait ZoomMode extends js.Object
-
+trait ZoomMode extends StObject
 object ZoomMode {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def disabled: disabled_ = this.cast("disabled")
-  @scala.inline
-  def `per-origin`: typingsJapgolly.chromeApps.chromeAppsStrings.`per-origin` = this.cast("per-origin")
-  @scala.inline
-  def `per-view`: typingsJapgolly.chromeApps.chromeAppsStrings.`per-view` = this.cast("per-view")
+  
+  inline def disabled: disabled__ = "disabled".asInstanceOf[disabled__]
+  
+  inline def `per-origin`: typingsJapgolly.chromeApps.chromeAppsStrings.`per-origin` = "per-origin".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.`per-origin`]
+  
+  inline def `per-view`: typingsJapgolly.chromeApps.chromeAppsStrings.`per-view` = "per-view".asInstanceOf[typingsJapgolly.chromeApps.chromeAppsStrings.`per-view`]
 }
-

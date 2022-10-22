@@ -1,18 +1,27 @@
-package typingsJapgolly.senchaTouch.Ext
+package typingsJapgolly.senchaTouch.Ext.util
 
+import typingsJapgolly.senchaTouch.Ext.IBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object util {
-  type IAudio = typingsJapgolly.senchaTouch.Ext.IBase
-  type IFormat = typingsJapgolly.senchaTouch.Ext.IBase
-  type IIndicator = typingsJapgolly.senchaTouch.Ext.IBase
-  type IInflector = typingsJapgolly.senchaTouch.Ext.IBase
-  type IInputBlocker = typingsJapgolly.senchaTouch.Ext.IBase
-  type IJSONP = typingsJapgolly.senchaTouch.Ext.IBase
-  type IOffset = typingsJapgolly.senchaTouch.Ext.IBase
-  type IPaintMonitor = typingsJapgolly.senchaTouch.Ext.IBase
-  type ISizeMonitor = typingsJapgolly.senchaTouch.Ext.IBase
-  type ITranslatable = typingsJapgolly.senchaTouch.Ext.IBase
-}
+
+type IAudio = IBase
+
+type IFormat = IBase
+
+type IIndicator = IBase
+
+type IInflector = IBase
+
+type IInputBlocker = IBase
+
+type IJSONP = IBase
+
+type IOffset = IBase
+
+type IPaintMonitor = IBase
+
+type ISizeMonitor = IBase
+
+type ITranslatable = IBase

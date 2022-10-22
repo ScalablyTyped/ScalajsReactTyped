@@ -11,9 +11,9 @@ Encrypt your Redux store.
 | Full name          | redux-persist-transform-encrypt |
 | Keywords           | redux, redux-persist, redux-persist-transform, encryption |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 292038 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 56063.0 |
+| # stars            | 333.0 |
 
 ## Links
 - [Homepage](https://github.com/maxdeviant/redux-persist-transform-encrypt#readme)

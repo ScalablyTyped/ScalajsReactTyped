@@ -1,16 +1,20 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JSDocNullableType
-  extends JSDocType
+  extends StObject
+     with JSDocType
      with HasType
      with JSDocTypeReferencingNode {
+  
   @JSName("kind")
-  var kind_JSDocNullableType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNullableType = js.native
-  var `type`: TypeNode = js.native
+  val kind_JSDocNullableType: typingsJapgolly.typescript.mod.SyntaxKind.JSDocNullableType = js.native
+  
+  val postfix: Boolean = js.native
+  
+  val `type`: TypeNode = js.native
 }
-

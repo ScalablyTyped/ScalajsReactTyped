@@ -1,54 +1,102 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DOMMatrix2DInit extends js.Object {
+trait DOMMatrix2DInit extends StObject {
+  
+  /* standard dom */
   var a: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var b: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var c: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var d: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var e: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var f: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m11: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m12: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m21: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m22: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m41: js.UndefOr[Double] = js.undefined
+  
+  /* standard dom */
   var m42: js.UndefOr[Double] = js.undefined
 }
-
 object DOMMatrix2DInit {
-  @scala.inline
-  def apply(
-    a: Int | Double = null,
-    b: Int | Double = null,
-    c: Int | Double = null,
-    d: Int | Double = null,
-    e: Int | Double = null,
-    f: Int | Double = null,
-    m11: Int | Double = null,
-    m12: Int | Double = null,
-    m21: Int | Double = null,
-    m22: Int | Double = null,
-    m41: Int | Double = null,
-    m42: Int | Double = null
-  ): DOMMatrix2DInit = {
+  
+  inline def apply(): DOMMatrix2DInit = {
     val __obj = js.Dynamic.literal()
-    if (a != null) __obj.updateDynamic("a")(a.asInstanceOf[js.Any])
-    if (b != null) __obj.updateDynamic("b")(b.asInstanceOf[js.Any])
-    if (c != null) __obj.updateDynamic("c")(c.asInstanceOf[js.Any])
-    if (d != null) __obj.updateDynamic("d")(d.asInstanceOf[js.Any])
-    if (e != null) __obj.updateDynamic("e")(e.asInstanceOf[js.Any])
-    if (f != null) __obj.updateDynamic("f")(f.asInstanceOf[js.Any])
-    if (m11 != null) __obj.updateDynamic("m11")(m11.asInstanceOf[js.Any])
-    if (m12 != null) __obj.updateDynamic("m12")(m12.asInstanceOf[js.Any])
-    if (m21 != null) __obj.updateDynamic("m21")(m21.asInstanceOf[js.Any])
-    if (m22 != null) __obj.updateDynamic("m22")(m22.asInstanceOf[js.Any])
-    if (m41 != null) __obj.updateDynamic("m41")(m41.asInstanceOf[js.Any])
-    if (m42 != null) __obj.updateDynamic("m42")(m42.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMMatrix2DInit]
   }
+  
+  extension [Self <: DOMMatrix2DInit](x: Self) {
+    
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    
+    inline def setAUndefined: Self = StObject.set(x, "a", js.undefined)
+    
+    inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    
+    inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+    
+    inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    
+    inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+    
+    inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    
+    inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+    
+    inline def setFUndefined: Self = StObject.set(x, "f", js.undefined)
+    
+    inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
+    
+    inline def setM11Undefined: Self = StObject.set(x, "m11", js.undefined)
+    
+    inline def setM12(value: Double): Self = StObject.set(x, "m12", value.asInstanceOf[js.Any])
+    
+    inline def setM12Undefined: Self = StObject.set(x, "m12", js.undefined)
+    
+    inline def setM21(value: Double): Self = StObject.set(x, "m21", value.asInstanceOf[js.Any])
+    
+    inline def setM21Undefined: Self = StObject.set(x, "m21", js.undefined)
+    
+    inline def setM22(value: Double): Self = StObject.set(x, "m22", value.asInstanceOf[js.Any])
+    
+    inline def setM22Undefined: Self = StObject.set(x, "m22", js.undefined)
+    
+    inline def setM41(value: Double): Self = StObject.set(x, "m41", value.asInstanceOf[js.Any])
+    
+    inline def setM41Undefined: Self = StObject.set(x, "m41", js.undefined)
+    
+    inline def setM42(value: Double): Self = StObject.set(x, "m42", value.asInstanceOf[js.Any])
+    
+    inline def setM42Undefined: Self = StObject.set(x, "m42", js.undefined)
+  }
 }
-

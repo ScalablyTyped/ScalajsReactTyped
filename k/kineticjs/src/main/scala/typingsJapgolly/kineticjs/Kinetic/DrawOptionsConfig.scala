@@ -1,33 +1,48 @@
 package typingsJapgolly.kineticjs.Kinetic
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DrawOptionsConfig extends js.Object {
+trait DrawOptionsConfig extends StObject {
+  
   var fill: js.UndefOr[String] = js.undefined
+  
   var lineJoin: js.UndefOr[String] = js.undefined
-  var shadow: js.UndefOr[js.Any] = js.undefined
+  
+  var shadow: js.UndefOr[Any] = js.undefined
+  
   var stroke: js.UndefOr[String] = js.undefined
+  
   var strokeWidth: js.UndefOr[Double] = js.undefined
 }
-
 object DrawOptionsConfig {
-  @scala.inline
-  def apply(
-    fill: String = null,
-    lineJoin: String = null,
-    shadow: js.Any = null,
-    stroke: String = null,
-    strokeWidth: Int | Double = null
-  ): DrawOptionsConfig = {
+  
+  inline def apply(): DrawOptionsConfig = {
     val __obj = js.Dynamic.literal()
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin.asInstanceOf[js.Any])
-    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
-    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawOptionsConfig]
   }
+  
+  extension [Self <: DrawOptionsConfig](x: Self) {
+    
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    
+    inline def setShadow(value: Any): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+  }
 }
-

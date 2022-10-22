@@ -1,15 +1,15 @@
 package typingsJapgolly.easeljs.createjs
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("createjs.DOMElement")
 @js.native
-class DOMElement protected () extends DisplayObject {
-  def this(htmlElement: HTMLElement) = this()
+trait DOMElement
+  extends StObject
+     with DisplayObject {
+  
   // properties
   var htmlElement: HTMLElement = js.native
 }
-

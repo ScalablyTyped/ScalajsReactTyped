@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "@lingui/conf" : "3.14.0"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "@lingui/conf" : "3.14.0"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

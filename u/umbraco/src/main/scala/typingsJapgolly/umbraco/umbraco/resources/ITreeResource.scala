@@ -1,32 +1,39 @@
 package typingsJapgolly.umbraco.umbraco.resources
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @ngdoc service
   * @name umbraco.resources.treeResource
   * @description Loads in data for trees
   **/
-trait ITreeResource extends js.Object {
+trait ITreeResource extends StObject {
+  
   /** Loads in the data to display the nodes for an application */
-  def loadApplication(options: js.Any): Unit
+  def loadApplication(options: Any): Unit
+  
   /** Loads in the data to display the nodes menu */
-  def loadMenu(node: js.Any): Unit
+  def loadMenu(node: Any): Unit
+  
   /** Loads in the data to display the child nodes for a given node */
-  def loadNodes(options: js.Any): Unit
+  def loadNodes(options: Any): Unit
 }
-
 object ITreeResource {
-  @scala.inline
-  def apply(loadApplication: js.Any => Callback, loadMenu: js.Any => Callback, loadNodes: js.Any => Callback): ITreeResource = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("loadApplication")(js.Any.fromFunction1((t0: js.Any) => loadApplication(t0).runNow()))
-    __obj.updateDynamic("loadMenu")(js.Any.fromFunction1((t0: js.Any) => loadMenu(t0).runNow()))
-    __obj.updateDynamic("loadNodes")(js.Any.fromFunction1((t0: js.Any) => loadNodes(t0).runNow()))
+  
+  inline def apply(loadApplication: Any => Callback, loadMenu: Any => Callback, loadNodes: Any => Callback): ITreeResource = {
+    val __obj = js.Dynamic.literal(loadApplication = js.Any.fromFunction1((t0: Any) => loadApplication(t0).runNow()), loadMenu = js.Any.fromFunction1((t0: Any) => loadMenu(t0).runNow()), loadNodes = js.Any.fromFunction1((t0: Any) => loadNodes(t0).runNow()))
     __obj.asInstanceOf[ITreeResource]
   }
+  
+  extension [Self <: ITreeResource](x: Self) {
+    
+    inline def setLoadApplication(value: Any => Callback): Self = StObject.set(x, "loadApplication", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setLoadMenu(value: Any => Callback): Self = StObject.set(x, "loadMenu", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+    
+    inline def setLoadNodes(value: Any => Callback): Self = StObject.set(x, "loadNodes", js.Any.fromFunction1((t0: Any) => value(t0).runNow()))
+  }
 }
-

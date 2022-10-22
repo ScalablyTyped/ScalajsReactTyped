@@ -1,15 +1,16 @@
 package typingsJapgolly.teechart.Tee
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Tee.Point")
-@js.native
-class Point () extends IPoint {
-  /* CompleteClass */
-  override var x: Double = js.native
-  /* CompleteClass */
-  override var y: Double = js.native
+trait Point
+  extends StObject
+     with IPoint
+object Point {
+  
+  inline def apply(x: Double, y: Double): Point = {
+    val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Point]
+  }
 }
-

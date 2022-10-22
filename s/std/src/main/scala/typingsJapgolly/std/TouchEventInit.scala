@@ -1,65 +1,47 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TouchEventInit extends EventModifierInit {
-  var changedTouches: js.UndefOr[js.Array[org.scalajs.dom.raw.Touch]] = js.undefined
-  var targetTouches: js.UndefOr[js.Array[org.scalajs.dom.raw.Touch]] = js.undefined
-  var touches: js.UndefOr[js.Array[org.scalajs.dom.raw.Touch]] = js.undefined
+trait TouchEventInit
+  extends StObject
+     with EventModifierInit {
+  
+  /* standard dom */
+  var changedTouches: js.UndefOr[js.Array[org.scalajs.dom.Touch]] = js.undefined
+  
+  /* standard dom */
+  var targetTouches: js.UndefOr[js.Array[org.scalajs.dom.Touch]] = js.undefined
+  
+  /* standard dom */
+  var touches: js.UndefOr[js.Array[org.scalajs.dom.Touch]] = js.undefined
 }
-
 object TouchEventInit {
-  @scala.inline
-  def apply(
-    altKey: js.UndefOr[scala.Boolean] = js.undefined,
-    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
-    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
-    changedTouches: js.Array[org.scalajs.dom.raw.Touch] = null,
-    composed: js.UndefOr[scala.Boolean] = js.undefined,
-    ctrlKey: js.UndefOr[scala.Boolean] = js.undefined,
-    detail: Int | Double = null,
-    metaKey: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierAltGraph: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierCapsLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFn: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierFnLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierHyper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierNumLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierScrollLock: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSuper: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbol: js.UndefOr[scala.Boolean] = js.undefined,
-    modifierSymbolLock: js.UndefOr[scala.Boolean] = js.undefined,
-    shiftKey: js.UndefOr[scala.Boolean] = js.undefined,
-    targetTouches: js.Array[org.scalajs.dom.raw.Touch] = null,
-    touches: js.Array[org.scalajs.dom.raw.Touch] = null,
-    view: Window_ = null
-  ): TouchEventInit = {
+  
+  inline def apply(): TouchEventInit = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(altKey)) __obj.updateDynamic("altKey")(altKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles.asInstanceOf[js.Any])
-    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable.asInstanceOf[js.Any])
-    if (changedTouches != null) __obj.updateDynamic("changedTouches")(changedTouches.asInstanceOf[js.Any])
-    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed.asInstanceOf[js.Any])
-    if (!js.isUndefined(ctrlKey)) __obj.updateDynamic("ctrlKey")(ctrlKey.asInstanceOf[js.Any])
-    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
-    if (!js.isUndefined(metaKey)) __obj.updateDynamic("metaKey")(metaKey.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierAltGraph)) __obj.updateDynamic("modifierAltGraph")(modifierAltGraph.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierCapsLock)) __obj.updateDynamic("modifierCapsLock")(modifierCapsLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFn)) __obj.updateDynamic("modifierFn")(modifierFn.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierFnLock)) __obj.updateDynamic("modifierFnLock")(modifierFnLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierHyper)) __obj.updateDynamic("modifierHyper")(modifierHyper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierNumLock)) __obj.updateDynamic("modifierNumLock")(modifierNumLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierScrollLock)) __obj.updateDynamic("modifierScrollLock")(modifierScrollLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSuper)) __obj.updateDynamic("modifierSuper")(modifierSuper.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbol)) __obj.updateDynamic("modifierSymbol")(modifierSymbol.asInstanceOf[js.Any])
-    if (!js.isUndefined(modifierSymbolLock)) __obj.updateDynamic("modifierSymbolLock")(modifierSymbolLock.asInstanceOf[js.Any])
-    if (!js.isUndefined(shiftKey)) __obj.updateDynamic("shiftKey")(shiftKey.asInstanceOf[js.Any])
-    if (targetTouches != null) __obj.updateDynamic("targetTouches")(targetTouches.asInstanceOf[js.Any])
-    if (touches != null) __obj.updateDynamic("touches")(touches.asInstanceOf[js.Any])
-    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchEventInit]
   }
+  
+  extension [Self <: TouchEventInit](x: Self) {
+    
+    inline def setChangedTouches(value: js.Array[org.scalajs.dom.Touch]): Self = StObject.set(x, "changedTouches", value.asInstanceOf[js.Any])
+    
+    inline def setChangedTouchesUndefined: Self = StObject.set(x, "changedTouches", js.undefined)
+    
+    inline def setChangedTouchesVarargs(value: org.scalajs.dom.Touch*): Self = StObject.set(x, "changedTouches", js.Array(value*))
+    
+    inline def setTargetTouches(value: js.Array[org.scalajs.dom.Touch]): Self = StObject.set(x, "targetTouches", value.asInstanceOf[js.Any])
+    
+    inline def setTargetTouchesUndefined: Self = StObject.set(x, "targetTouches", js.undefined)
+    
+    inline def setTargetTouchesVarargs(value: org.scalajs.dom.Touch*): Self = StObject.set(x, "targetTouches", js.Array(value*))
+    
+    inline def setTouches(value: js.Array[org.scalajs.dom.Touch]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+    
+    inline def setTouchesUndefined: Self = StObject.set(x, "touches", js.undefined)
+    
+    inline def setTouchesVarargs(value: org.scalajs.dom.Touch*): Self = StObject.set(x, "touches", js.Array(value*))
+  }
 }
-

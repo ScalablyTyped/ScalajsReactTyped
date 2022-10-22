@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AlarmAccessStatus extends js.Object
-
+sealed trait AlarmAccessStatus extends StObject
 /** Indicates whether the user has given permission for the app to set alarms. */
 @JSGlobal("Windows.ApplicationModel.Background.AlarmAccessStatus")
 @js.native
-object AlarmAccessStatus extends js.Object {
+object AlarmAccessStatus extends StObject {
+  
   /** The user has given permission for the app to set alarms, and alarms can wake up the computer from standby. */
   @js.native
-  sealed trait allowedWithWakeupCapability extends AlarmAccessStatus
+  sealed trait allowedWithWakeupCapability
+    extends StObject
+       with AlarmAccessStatus
   
   /** The user has given permission for the app to set alarms, but the alarms cannot wake up the computer from standby. */
   @js.native
-  sealed trait allowedWithoutWakeupCapability extends AlarmAccessStatus
+  sealed trait allowedWithoutWakeupCapability
+    extends StObject
+       with AlarmAccessStatus
   
   /** The user has denied permission for the app to set alarms. */
   @js.native
-  sealed trait denied extends AlarmAccessStatus
+  sealed trait denied
+    extends StObject
+       with AlarmAccessStatus
   
   /** The user has not responded to a permission request for the app to set alarms. */
   @js.native
-  sealed trait unspecified extends AlarmAccessStatus
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AlarmAccessStatus with Double] = js.native
-  /* 1 */ @js.native
-  object allowedWithWakeupCapability extends TopLevel[allowedWithWakeupCapability with Double]
-  
-  /* 2 */ @js.native
-  object allowedWithoutWakeupCapability extends TopLevel[allowedWithoutWakeupCapability with Double]
-  
-  /* 3 */ @js.native
-  object denied extends TopLevel[denied with Double]
-  
-  /* 0 */ @js.native
-  object unspecified extends TopLevel[unspecified with Double]
-  
+  sealed trait unspecified
+    extends StObject
+       with AlarmAccessStatus
 }
-

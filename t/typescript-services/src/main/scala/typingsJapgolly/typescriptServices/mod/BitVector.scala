@@ -1,13 +1,15 @@
 package typingsJapgolly.typescriptServices.mod
 
 import typingsJapgolly.typescriptServices.TypeScript.IBitVector
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("typescript-services", "BitVector")
-@js.native
-object BitVector extends js.Object {
-  def getBitVector(allowUndefinedValues: Boolean): IBitVector = js.native
+object BitVector {
+  
+  @JSImport("typescript-services", "BitVector")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def getBitVector(allowUndefinedValues: Boolean): IBitVector = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitVector")(allowUndefinedValues.asInstanceOf[js.Any]).asInstanceOf[IBitVector]
 }
-

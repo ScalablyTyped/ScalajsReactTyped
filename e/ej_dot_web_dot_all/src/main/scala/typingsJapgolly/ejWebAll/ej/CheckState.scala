@@ -1,38 +1,30 @@
 package typingsJapgolly.ejWebAll.ej
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait CheckState extends js.Object
-
+sealed trait CheckState extends StObject
 @JSGlobal("ej.CheckState")
 @js.native
-object CheckState extends js.Object {
-  //string
-  @js.native
-  sealed trait Check extends CheckState
+object CheckState extends StObject {
   
   //string
   @js.native
-  sealed trait Indeterminate extends CheckState
+  sealed trait Check
+    extends StObject
+       with CheckState
   
   //string
   @js.native
-  sealed trait Uncheck extends CheckState
+  sealed trait Indeterminate
+    extends StObject
+       with CheckState
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CheckState with Double] = js.native
-  /* 1 */ @js.native
-  object Check extends TopLevel[Check with Double]
-  
-  /* 2 */ @js.native
-  object Indeterminate extends TopLevel[Indeterminate with Double]
-  
-  /* 0 */ @js.native
-  object Uncheck extends TopLevel[Uncheck with Double]
-  
+  //string
+  @js.native
+  sealed trait Uncheck
+    extends StObject
+       with CheckState
 }
-

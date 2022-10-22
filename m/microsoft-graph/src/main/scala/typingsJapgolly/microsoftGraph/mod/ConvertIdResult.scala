@@ -1,29 +1,48 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ConvertIdResult extends js.Object {
+trait ConvertIdResult extends StObject {
+  
   /**
     * An error object indicating the reason for the conversion failure. This value is not present if the conversion
     * succeeded.
     */
-  var errorDetails: js.UndefOr[GenericError] = js.undefined
+  var errorDetails: js.UndefOr[NullableOption[GenericError]] = js.undefined
+  
   // The identifier that was converted. This value is the original, un-converted identifier.
-  var sourceId: js.UndefOr[String] = js.undefined
+  var sourceId: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The converted identifier. This value is not present if the conversion failed.
-  var targetId: js.UndefOr[String] = js.undefined
+  var targetId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ConvertIdResult {
-  @scala.inline
-  def apply(errorDetails: GenericError = null, sourceId: String = null, targetId: String = null): ConvertIdResult = {
+  
+  inline def apply(): ConvertIdResult = {
     val __obj = js.Dynamic.literal()
-    if (errorDetails != null) __obj.updateDynamic("errorDetails")(errorDetails.asInstanceOf[js.Any])
-    if (sourceId != null) __obj.updateDynamic("sourceId")(sourceId.asInstanceOf[js.Any])
-    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConvertIdResult]
   }
+  
+  extension [Self <: ConvertIdResult](x: Self) {
+    
+    inline def setErrorDetails(value: NullableOption[GenericError]): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    
+    inline def setErrorDetailsNull: Self = StObject.set(x, "errorDetails", null)
+    
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    
+    inline def setSourceId(value: NullableOption[String]): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    
+    inline def setSourceIdNull: Self = StObject.set(x, "sourceId", null)
+    
+    inline def setSourceIdUndefined: Self = StObject.set(x, "sourceId", js.undefined)
+    
+    inline def setTargetId(value: NullableOption[String]): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    
+    inline def setTargetIdNull: Self = StObject.set(x, "targetId", null)
+    
+    inline def setTargetIdUndefined: Self = StObject.set(x, "targetId", js.undefined)
+  }
 }
-

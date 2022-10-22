@@ -1,131 +1,169 @@
 package typingsJapgolly.nivoStream.components
 
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.nivoAxes.mod.AxisProps
-import typingsJapgolly.nivoColors.mod.InheritedColorProp
-import typingsJapgolly.nivoColors.mod.OrdinalColorsInstruction
-import typingsJapgolly.nivoCore.AnonDictkey
-import typingsJapgolly.nivoCore.AnonId
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.nivoAxes.distTypesTypesMod.AxisProps
+import typingsJapgolly.nivoAxes.distTypesTypesMod.GridValues
+import typingsJapgolly.nivoColors.distTypesInheritedColorMod.InheritedColorConfig
+import typingsJapgolly.nivoColors.distTypesScalesOrdinalColorScaleMod.OrdinalColorScaleConfig
+import typingsJapgolly.nivoCore.anon.Dictkey
+import typingsJapgolly.nivoCore.anon.Id
 import typingsJapgolly.nivoCore.mod.AreaCurve
 import typingsJapgolly.nivoCore.mod.Box
+import typingsJapgolly.nivoCore.mod.PropertyAccessor
 import typingsJapgolly.nivoCore.mod.StackOffset
 import typingsJapgolly.nivoCore.mod.StackOrder
 import typingsJapgolly.nivoCore.mod.Theme
-import typingsJapgolly.nivoLegends.mod.LegendProps
-import typingsJapgolly.nivoScales.mod.Scale
-import typingsJapgolly.nivoStream.Anon0
-import typingsJapgolly.nivoStream.mod.DatumToNumber
-import typingsJapgolly.nivoStream.mod.StreamProps
-import typingsJapgolly.nivoStream.mod.TooltipFormatter
+import typingsJapgolly.nivoCore.mod.ValueFormat
+import typingsJapgolly.nivoLegends.distTypesTypesMod.LegendProps
+import typingsJapgolly.nivoStream.anon.OmitStreamLayerDatalabelc
+import typingsJapgolly.nivoStream.anon.`0`
+import typingsJapgolly.nivoStream.distTypesTypesMod.DotComponent
+import typingsJapgolly.nivoStream.distTypesTypesMod.StreamDatum
+import typingsJapgolly.nivoStream.distTypesTypesMod.StreamLayerData
+import typingsJapgolly.nivoStream.distTypesTypesMod.StreamLayerDatum
+import typingsJapgolly.nivoStream.distTypesTypesMod.StreamSvgProps
+import typingsJapgolly.nivoStream.distTypesTypesMod.Tooltip
 import typingsJapgolly.nivoStream.nivoStreamStrings.center
 import typingsJapgolly.nivoStream.nivoStreamStrings.end
 import typingsJapgolly.nivoStream.nivoStreamStrings.start
+import typingsJapgolly.std.Exclude
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ResponsiveStream {
-  def apply[T](
-    data: js.Array[T],
-    keys: js.Array[String],
-    animate: js.UndefOr[Boolean] = js.undefined,
-    axisBottom: AxisProps = null,
-    axisLeft: AxisProps = null,
-    axisRight: AxisProps = null,
-    axisTop: AxisProps = null,
-    borderColor: InheritedColorProp[_] = null,
-    borderWidth: Int | Double = null,
-    colors: OrdinalColorsInstruction[_] = null,
-    curve: AreaCurve = null,
-    defs: js.Array[AnonDictkey] = null,
-    dotBorderColor: InheritedColorProp[_] = null,
-    dotBorderWidth: DatumToNumber | Double = null,
-    dotColor: InheritedColorProp[_] = null,
-    dotPosition: start | center | end = null,
-    dotSize: DatumToNumber | Double = null,
-    enableDots: js.UndefOr[Boolean] = js.undefined,
-    enableGridX: js.UndefOr[Boolean] = js.undefined,
-    enableGridY: js.UndefOr[Boolean] = js.undefined,
-    enableStackTooltip: js.UndefOr[Boolean] = js.undefined,
-    fill: js.Array[AnonId[T]] = null,
-    fillOpacity: Int | Double = null,
-    isInteractive: js.UndefOr[Boolean] = js.undefined,
-    legends: js.Array[LegendProps] = null,
-    margin: Box = null,
-    motionDamping: Int | Double = null,
-    motionStiffness: Int | Double = null,
-    offsetType: StackOffset = null,
-    order: StackOrder = null,
-    renderDot: typingsJapgolly.nivoStream.mod.StreamDotsItem = null,
-    stack: /* data */ js.Array[T] => CallbackTo[js.Array[js.Array[Anon0[T]]]] = null,
-    theme: Theme = null,
-    tooltipFormat: TooltipFormatter[T] | String = null,
-    tooltipLabel: T => CallbackTo[String] = null,
-    xScale: Scale = null,
-    yScale: Scale = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    StreamProps[T], 
-    typingsJapgolly.nivoStream.mod.ResponsiveStream[T], 
-    Unit, 
-    StreamProps[T]
-  ] = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
   
-      if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (axisBottom != null) __obj.updateDynamic("axisBottom")(axisBottom.asInstanceOf[js.Any])
-    if (axisLeft != null) __obj.updateDynamic("axisLeft")(axisLeft.asInstanceOf[js.Any])
-    if (axisRight != null) __obj.updateDynamic("axisRight")(axisRight.asInstanceOf[js.Any])
-    if (axisTop != null) __obj.updateDynamic("axisTop")(axisTop.asInstanceOf[js.Any])
-    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
-    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (curve != null) __obj.updateDynamic("curve")(curve.asInstanceOf[js.Any])
-    if (defs != null) __obj.updateDynamic("defs")(defs.asInstanceOf[js.Any])
-    if (dotBorderColor != null) __obj.updateDynamic("dotBorderColor")(dotBorderColor.asInstanceOf[js.Any])
-    if (dotBorderWidth != null) __obj.updateDynamic("dotBorderWidth")(dotBorderWidth.asInstanceOf[js.Any])
-    if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor.asInstanceOf[js.Any])
-    if (dotPosition != null) __obj.updateDynamic("dotPosition")(dotPosition.asInstanceOf[js.Any])
-    if (dotSize != null) __obj.updateDynamic("dotSize")(dotSize.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableDots)) __obj.updateDynamic("enableDots")(enableDots.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridX)) __obj.updateDynamic("enableGridX")(enableGridX.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableGridY)) __obj.updateDynamic("enableGridY")(enableGridY.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableStackTooltip)) __obj.updateDynamic("enableStackTooltip")(enableStackTooltip.asInstanceOf[js.Any])
-    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
-    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
-    if (!js.isUndefined(isInteractive)) __obj.updateDynamic("isInteractive")(isInteractive.asInstanceOf[js.Any])
-    if (legends != null) __obj.updateDynamic("legends")(legends.asInstanceOf[js.Any])
-    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
-    if (motionDamping != null) __obj.updateDynamic("motionDamping")(motionDamping.asInstanceOf[js.Any])
-    if (motionStiffness != null) __obj.updateDynamic("motionStiffness")(motionStiffness.asInstanceOf[js.Any])
-    if (offsetType != null) __obj.updateDynamic("offsetType")(offsetType.asInstanceOf[js.Any])
-    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
-    if (renderDot != null) __obj.updateDynamic("renderDot")(renderDot.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(js.Any.fromFunction1((t0: /* data */ js.Array[T]) => stack(t0).runNow()))
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat.asInstanceOf[js.Any])
-    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(js.Any.fromFunction1((t0: T) => tooltipLabel(t0).runNow()))
-    if (xScale != null) __obj.updateDynamic("xScale")(xScale.asInstanceOf[js.Any])
-    if (yScale != null) __obj.updateDynamic("yScale")(yScale.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.nivoStream.mod.StreamProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.nivoStream.mod.ResponsiveStream[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.nivoStream.mod.StreamProps[T]])(children: _*)
+  inline def apply[RawDatum /* <: StreamDatum */](
+    data: js.Array[RawDatum],
+    height: Double,
+    keys: js.Array[Exclude[/* keyof RawDatum */ String, js.Symbol]],
+    width: Double
+  ): Builder[RawDatum] = {
+    val __props = js.Dynamic.literal(data = data.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    new Builder[RawDatum](js.Array(this.component, __props.asInstanceOf[StreamSvgProps[RawDatum]]))
   }
+  
   @JSImport("@nivo/stream", "ResponsiveStream")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[RawDatum /* <: StreamDatum */] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[js.Object] {
+    
+    inline def animate(value: Boolean): this.type = set("animate", value.asInstanceOf[js.Any])
+    
+    inline def ariaDescribedBy(value: String): this.type = set("ariaDescribedBy", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabel(value: String): this.type = set("ariaLabel", value.asInstanceOf[js.Any])
+    
+    inline def ariaLabelledBy(value: String): this.type = set("ariaLabelledBy", value.asInstanceOf[js.Any])
+    
+    inline def axisBottom(value: AxisProps[Any]): this.type = set("axisBottom", value.asInstanceOf[js.Any])
+    
+    inline def axisBottomNull: this.type = set("axisBottom", null)
+    
+    inline def axisLeft(value: AxisProps[Any]): this.type = set("axisLeft", value.asInstanceOf[js.Any])
+    
+    inline def axisLeftNull: this.type = set("axisLeft", null)
+    
+    inline def axisRight(value: AxisProps[Any]): this.type = set("axisRight", value.asInstanceOf[js.Any])
+    
+    inline def axisRightNull: this.type = set("axisRight", null)
+    
+    inline def axisTop(value: AxisProps[Any]): this.type = set("axisTop", value.asInstanceOf[js.Any])
+    
+    inline def axisTopNull: this.type = set("axisTop", null)
+    
+    inline def borderColor(value: InheritedColorConfig[StreamLayerData]): this.type = set("borderColor", value.asInstanceOf[js.Any])
+    
+    inline def borderWidth(value: Double): this.type = set("borderWidth", value.asInstanceOf[js.Any])
+    
+    inline def colors(value: OrdinalColorScaleConfig[OmitStreamLayerDatalabelc]): this.type = set("colors", value.asInstanceOf[js.Any])
+    
+    inline def colorsFunction1(value: OmitStreamLayerDatalabelc => String): this.type = set("colors", js.Any.fromFunction1(value))
+    
+    inline def colorsVarargs(value: String*): this.type = set("colors", js.Array(value*))
+    
+    inline def curve(value: AreaCurve): this.type = set("curve", value.asInstanceOf[js.Any])
+    
+    inline def defs(value: js.Array[Dictkey]): this.type = set("defs", value.asInstanceOf[js.Any])
+    
+    inline def defsVarargs(value: Dictkey*): this.type = set("defs", js.Array(value*))
+    
+    inline def dotBorderColor(value: InheritedColorConfig[StreamLayerDatum]): this.type = set("dotBorderColor", value.asInstanceOf[js.Any])
+    
+    inline def dotBorderWidth(value: (js.Function1[/* datum */ StreamLayerDatum, Double]) | Double): this.type = set("dotBorderWidth", value.asInstanceOf[js.Any])
+    
+    inline def dotBorderWidthFunction1(value: /* datum */ StreamLayerDatum => Double): this.type = set("dotBorderWidth", js.Any.fromFunction1(value))
+    
+    inline def dotColor(value: InheritedColorConfig[StreamLayerDatum]): this.type = set("dotColor", value.asInstanceOf[js.Any])
+    
+    inline def dotComponent(value: DotComponent): this.type = set("dotComponent", value.asInstanceOf[js.Any])
+    
+    inline def dotPosition(value: start | center | end): this.type = set("dotPosition", value.asInstanceOf[js.Any])
+    
+    inline def dotSize(value: (js.Function1[/* datum */ StreamLayerDatum, Double]) | Double): this.type = set("dotSize", value.asInstanceOf[js.Any])
+    
+    inline def dotSizeFunction1(value: /* datum */ StreamLayerDatum => Double): this.type = set("dotSize", js.Any.fromFunction1(value))
+    
+    inline def enableDots(value: Boolean): this.type = set("enableDots", value.asInstanceOf[js.Any])
+    
+    inline def enableGridX(value: Boolean): this.type = set("enableGridX", value.asInstanceOf[js.Any])
+    
+    inline def enableGridY(value: Boolean): this.type = set("enableGridY", value.asInstanceOf[js.Any])
+    
+    inline def enableStackTooltip(value: Boolean): this.type = set("enableStackTooltip", value.asInstanceOf[js.Any])
+    
+    inline def fill(value: js.Array[Id[StreamLayerData]]): this.type = set("fill", value.asInstanceOf[js.Any])
+    
+    inline def fillOpacity(value: Double): this.type = set("fillOpacity", value.asInstanceOf[js.Any])
+    
+    inline def fillVarargs(value: Id[StreamLayerData]*): this.type = set("fill", js.Array(value*))
+    
+    inline def gridXValues(value: GridValues[String | Double]): this.type = set("gridXValues", value.asInstanceOf[js.Any])
+    
+    inline def gridYValues(value: GridValues[Double]): this.type = set("gridYValues", value.asInstanceOf[js.Any])
+    
+    inline def isInteractive(value: Boolean): this.type = set("isInteractive", value.asInstanceOf[js.Any])
+    
+    inline def label(value: PropertyAccessor[OmitStreamLayerDatalabelc, String | Double]): this.type = set("label", value.asInstanceOf[js.Any])
+    
+    inline def labelFunction1(value: OmitStreamLayerDatalabelc => String | Double): this.type = set("label", js.Any.fromFunction1(value))
+    
+    inline def layers(value: js.Array[typingsJapgolly.nivoStream.distTypesTypesMod.StreamLayer]): this.type = set("layers", value.asInstanceOf[js.Any])
+    
+    inline def layersVarargs(value: typingsJapgolly.nivoStream.distTypesTypesMod.StreamLayer*): this.type = set("layers", js.Array(value*))
+    
+    inline def legends(value: js.Array[LegendProps]): this.type = set("legends", value.asInstanceOf[js.Any])
+    
+    inline def legendsVarargs(value: LegendProps*): this.type = set("legends", js.Array(value*))
+    
+    inline def margin(value: Box): this.type = set("margin", value.asInstanceOf[js.Any])
+    
+    inline def motionConfig(
+      value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringConfig */ Any)
+    ): this.type = set("motionConfig", value.asInstanceOf[js.Any])
+    
+    inline def offsetType(value: StackOffset): this.type = set("offsetType", value.asInstanceOf[js.Any])
+    
+    inline def order(value: StackOrder): this.type = set("order", value.asInstanceOf[js.Any])
+    
+    inline def renderWrapper(value: Boolean): this.type = set("renderWrapper", value.asInstanceOf[js.Any])
+    
+    inline def role(value: String): this.type = set("role", value.asInstanceOf[js.Any])
+    
+    inline def stack(value: /* data */ js.Array[RawDatum] => js.Array[js.Array[`0`[RawDatum]]]): this.type = set("stack", js.Any.fromFunction1(value))
+    
+    inline def stackTooltip(value: typingsJapgolly.nivoStream.distTypesTypesMod.StackTooltip): this.type = set("stackTooltip", value.asInstanceOf[js.Any])
+    
+    inline def theme(value: Theme): this.type = set("theme", value.asInstanceOf[js.Any])
+    
+    inline def tooltip(value: Tooltip): this.type = set("tooltip", value.asInstanceOf[js.Any])
+    
+    inline def valueFormat(value: ValueFormat[Double, Unit]): this.type = set("valueFormat", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps[RawDatum /* <: StreamDatum */](p: StreamSvgProps[RawDatum]): Builder[RawDatum] = new Builder[RawDatum](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

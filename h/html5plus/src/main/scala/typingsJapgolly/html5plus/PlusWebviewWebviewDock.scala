@@ -1,33 +1,37 @@
 package typingsJapgolly.html5plus
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 原生控件在窗口中停靠的方式
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-trait PlusWebviewWebviewDock extends js.Object {
+trait PlusWebviewWebviewDock extends StObject {
+  
   /**
     * 控件停靠在页面底部
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var bottom: js.UndefOr[String] = js.undefined
+  
   /**
     * 控件停靠在页面左侧
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var left: js.UndefOr[String] = js.undefined
+  
   /**
     * 控件停靠在页面右侧
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
   var right: js.UndefOr[String] = js.undefined
+  
   /**
     * 控件停靠则页面顶部
     * 
@@ -35,16 +39,29 @@ trait PlusWebviewWebviewDock extends js.Object {
     */
   var top: js.UndefOr[String] = js.undefined
 }
-
 object PlusWebviewWebviewDock {
-  @scala.inline
-  def apply(bottom: String = null, left: String = null, right: String = null, top: String = null): PlusWebviewWebviewDock = {
+  
+  inline def apply(): PlusWebviewWebviewDock = {
     val __obj = js.Dynamic.literal()
-    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
-    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
-    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
-    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusWebviewWebviewDock]
   }
+  
+  extension [Self <: PlusWebviewWebviewDock](x: Self) {
+    
+    inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    
+    inline def setRight(value: String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+  }
 }
-

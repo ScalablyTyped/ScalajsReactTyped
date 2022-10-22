@@ -1,97 +1,93 @@
 package typingsJapgolly.chrome.chrome.cast
 
-import typingsJapgolly.chrome.AnonName
+import typingsJapgolly.chrome.anon.Name
 import typingsJapgolly.chrome.chrome.cast.media.LoadRequest
 import typingsJapgolly.chrome.chrome.cast.media.Media
 import typingsJapgolly.chrome.chrome.cast.media.QueueLoadRequest
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("chrome.cast.Session")
 @js.native
-class Session protected () extends js.Object {
+trait Session extends StObject {
+  
   /**
-    * @param {string} sessionId
-    * @param {string} appId
-    * @param {string} displayName
-    * @param {!Array<chrome.cast.Image>} appImages
-    * @param {!chrome.cast.Receiver} receiver
-    * @constructor
-    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Session
-    */
-  def this(
-    sessionId: String,
-    appId: String,
-    displayName: String,
-    appImages: js.Array[Image],
-    receiver: Receiver
-  ) = this()
-  var appId: String = js.native
-  var appImages: js.Array[Image] = js.native
-  var displayName: String = js.native
-  var media: js.Array[Media] = js.native
-  var namespaces: js.Array[AnonName] = js.native
-  var receiver: Receiver = js.native
-  var senderApps: js.Array[SenderApplication] = js.native
-  var sessionId: String = js.native
-  var status: SessionStatus = js.native
-  /**
-    * @param {function(!chrome.cast.media.Media)} listener
+    * @param listener
     */
   def addMediaListener(listener: js.Function1[/* media */ Media, Unit]): Unit = js.native
+  
   /**
-    * @param {string} namespace
-    * @param {function(string,string)} listener
+    * @param namespace
+    * @param listener
     */
   def addMessageListener(namespace: String, listener: js.Function2[/* namespace */ String, /* message */ String, Unit]): Unit = js.native
+  
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def addUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+  
+  var appId: String = js.native
+  
+  var appImages: js.Array[Image] = js.native
+  
+  var displayName: String = js.native
+  
   /**
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def leave(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
-    * @param {!chrome.cast.media.LoadRequest} loadRequest
-    * @param {function(!chrome.cast.media.Media)} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param loadRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def loadMedia(
     loadRequest: LoadRequest,
     successCallback: js.Function1[/* media */ Media, Unit],
     errorCallback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
+  var media: js.Array[Media] = js.native
+  
+  var namespaces: js.Array[Name] = js.native
+  
   /**
-    * @param {!chrome.cast.media.QueueLoadRequest} queueLoadRequest
-    * @param {function(!chrome.cast.media.Media)} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param queueLoadRequest
+    * @param successCallback
+    * @param errorCallback
     */
   def queueLoad(
     queueLoadRequest: QueueLoadRequest,
     successCallback: js.Function1[/* media */ Media, Unit],
     errorCallback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
+  var receiver: Receiver = js.native
+  
   /**
-    * @param {function(!chrome.cast.media.Media)} listener
+    * @param listener
     */
   def removeMediaListener(listener: js.Function1[/* media */ Media, Unit]): Unit = js.native
+  
   /**
-    * @param {string} namespace
-    * @param {function(string,string)} listener
+    * @param namespace
+    * @param listener
     */
   def removeMessageListener(namespace: String, listener: js.Function2[/* namespace */ String, /* message */ String, Unit]): Unit = js.native
+  
   /**
-    * @param {function(boolean)} listener
+    * @param listener
     */
   def removeUpdateListener(listener: js.Function1[/* isAlive */ Boolean, Unit]): Unit = js.native
+  
   /**
-    * @param {string} namespace
-    * @param {!Object|string} message
-    * @param {!function()} successCallback
-    * @param {function(!chrome.cast.Error)} errorCallback
+    * @param namespace
+    * @param message
+    * @param successCallback
+    * @param errorCallback
     */
   def sendMessage(
     namespace: String,
@@ -105,26 +101,38 @@ class Session protected () extends js.Object {
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
+  var senderApps: js.Array[SenderApplication] = js.native
+  
+  var sessionId: String = js.native
+  
   /**
-    * @param {boolean} muted
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param muted
+    * @param successCallback
+    * @param errorCallback
     */
   def setReceiverMuted(muted: Boolean, successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
   /**
-    * @param {number} newLevel
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param newLevel
+    * @param successCallback
+    * @param errorCallback
     */
   def setReceiverVolumeLevel(
     newLevel: Double,
     successCallback: js.Function,
     errorCallback: js.Function1[/* error */ Error, Unit]
   ): Unit = js.native
+  
+  var status: SessionStatus = js.native
+  
+  var statusText: String | Null = js.native
+  
   /**
-    * @param {function()} successCallback
-    * @param {function(chrome.cast.Error)} errorCallback
+    * @param successCallback
+    * @param errorCallback
     */
   def stop(successCallback: js.Function, errorCallback: js.Function1[/* error */ Error, Unit]): Unit = js.native
+  
+  var transportId: String = js.native
 }
-

@@ -1,22 +1,27 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DataSelectorRenderedEventUIParam extends js.Object {
+trait DataSelectorRenderedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the data selector.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the data selector.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object DataSelectorRenderedEventUIParam {
-  @scala.inline
-  def apply(owner: js.Any = null): DataSelectorRenderedEventUIParam = {
+  
+  inline def apply(): DataSelectorRenderedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSelectorRenderedEventUIParam]
   }
+  
+  extension [Self <: DataSelectorRenderedEventUIParam](x: Self) {
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

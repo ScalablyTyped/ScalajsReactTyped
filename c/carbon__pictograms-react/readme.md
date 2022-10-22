@@ -1,7 +1,7 @@
 
 # Scala.js typings for carbon__pictograms-react
 
-Typings are for version 10.7
+Typings are for version 11.31
 
 ## Library description:
 React components for pictograms in digital and software products using the Carbon Design System
@@ -10,10 +10,10 @@ React components for pictograms in digital and software products using the Carbo
 | ------------------ | :-------------: |
 | Full name          | @carbon/pictograms-react |
 | Keywords           | ibm, elements, carbon, carbon-elements, carbon-design-system, components, react |
-| # releases         | 33 |
-| # dependents       | 0 |
-| # downloads        | 7526 |
-| # stars            | 0 |
+| # releases         | 73 |
+| # dependents       | 0.0 |
+| # downloads        | 54077.333333333336 |
+| # stars            | 5968.0 |
 
 ## Links
 - [Homepage](https://github.com/carbon-design-system/carbon#readme)

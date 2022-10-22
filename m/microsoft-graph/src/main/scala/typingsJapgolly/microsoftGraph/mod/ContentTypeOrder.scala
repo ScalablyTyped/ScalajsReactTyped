@@ -1,23 +1,36 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ContentTypeOrder extends js.Object {
+trait ContentTypeOrder extends StObject {
+  
   // Whether this is the default Content Type
-  var default: js.UndefOr[Boolean] = js.undefined
+  var default: js.UndefOr[NullableOption[Boolean]] = js.undefined
+  
   // Specifies the position in which the Content Type appears in the selection UI.
-  var position: js.UndefOr[Double] = js.undefined
+  var position: js.UndefOr[NullableOption[Double]] = js.undefined
 }
-
 object ContentTypeOrder {
-  @scala.inline
-  def apply(default: js.UndefOr[Boolean] = js.undefined, position: Int | Double = null): ContentTypeOrder = {
+  
+  inline def apply(): ContentTypeOrder = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
-    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentTypeOrder]
   }
+  
+  extension [Self <: ContentTypeOrder](x: Self) {
+    
+    inline def setDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
+    
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    
+    inline def setPosition(value: NullableOption[Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
+    
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+  }
 }
-

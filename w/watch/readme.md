@@ -10,10 +10,10 @@ Utilities for watching file trees.
 | ------------------ | :-------------: |
 | Full name          | watch |
 | Keywords           | util, utility, fs, files |
-| # releases         | 1 |
-| # dependents       | 680 |
-| # downloads        | 137114174 |
-| # stars            | 84 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 3670602.3333333335 |
+| # stars            | 1237.0 |
 
 ## Links
 - [Homepage](https://github.com/mikeal/watch)

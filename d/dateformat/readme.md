@@ -1,7 +1,7 @@
 
 # Scala.js typings for dateformat
 
-Typings are for version 3.0
+Typings are for version 5.0
 
 ## Library description:
 A node.js package for Steven Levithan's excellent dateFormat() function.
@@ -10,10 +10,10 @@ A node.js package for Steven Levithan's excellent dateFormat() function.
 | ------------------ | :-------------: |
 | Full name          | dateformat |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 1445 |
-| # downloads        | 194762648 |
-| # stars            | 97 |
+| # releases         | 22 |
+| # dependents       | 0.0 |
+| # downloads        | 3.6463621333333336E7 |
+| # stars            | 1262.0 |
 
 ## Links
 - [Homepage](https://github.com/felixge/node-dateformat)

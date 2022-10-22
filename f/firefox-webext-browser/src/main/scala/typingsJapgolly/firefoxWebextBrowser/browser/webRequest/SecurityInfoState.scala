@@ -1,8 +1,8 @@
 package typingsJapgolly.firefoxWebextBrowser.browser.webRequest
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken
   - typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure
 */
-trait SecurityInfoState extends js.Object
-
+trait SecurityInfoState extends StObject
 object SecurityInfoState {
-  @scala.inline
-  def broken: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = this.cast("broken")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def insecure: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = this.cast("insecure")
-  @scala.inline
-  def secure: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = this.cast("secure")
-  @scala.inline
-  def weak: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = this.cast("weak")
+  
+  inline def broken: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken = "broken".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.broken]
+  
+  inline def insecure: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure = "insecure".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.insecure]
+  
+  inline def secure: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure = "secure".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.secure]
+  
+  inline def weak: typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak = "weak".asInstanceOf[typingsJapgolly.firefoxWebextBrowser.firefoxWebextBrowserStrings.weak]
 }
-

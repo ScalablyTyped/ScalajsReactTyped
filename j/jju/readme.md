@@ -10,10 +10,10 @@ a set of utilities to work with JSON / JSON5 documents
 | ------------------ | :-------------: |
 | Full name          | jju |
 | Keywords           | json, json5, parser, serializer, data |
-| # releases         | 2 |
-| # dependents       | 69 |
-| # downloads        | 19687721 |
-| # stars            | 3 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 6310819.333333333 |
+| # stars            | 63.0 |
 
 ## Links
 - [Homepage](http://rlidwka.github.io/jju/)

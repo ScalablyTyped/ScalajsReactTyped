@@ -1,29 +1,33 @@
 package typingsJapgolly.nodal.mod
 
 import typingsJapgolly.std.Error
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IExtendedError extends Error {
+trait IExtendedError
+  extends StObject
+     with Error {
+  
   var details: js.UndefOr[js.Object] = js.undefined
+  
   var notFound: js.UndefOr[Boolean] = js.undefined
 }
-
 object IExtendedError {
-  @scala.inline
-  def apply(
-    message: String,
-    name: String,
-    details: js.Object = null,
-    notFound: js.UndefOr[Boolean] = js.undefined,
-    stack: String = null
-  ): IExtendedError = {
+  
+  inline def apply(message: String, name: String): IExtendedError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    if (details != null) __obj.updateDynamic("details")(details.asInstanceOf[js.Any])
-    if (!js.isUndefined(notFound)) __obj.updateDynamic("notFound")(notFound.asInstanceOf[js.Any])
-    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExtendedError]
   }
+  
+  extension [Self <: IExtendedError](x: Self) {
+    
+    inline def setDetails(value: js.Object): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    
+    inline def setNotFound(value: Boolean): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    
+    inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+  }
 }
-

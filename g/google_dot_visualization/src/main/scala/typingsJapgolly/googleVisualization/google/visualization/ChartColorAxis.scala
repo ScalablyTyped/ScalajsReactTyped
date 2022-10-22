@@ -1,33 +1,52 @@
 package typingsJapgolly.googleVisualization.google.visualization
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ChartColorAxis extends js.Object {
+trait ChartColorAxis extends StObject {
+  
   var colors: js.UndefOr[js.Array[String]] = js.undefined
+  
   var legend: js.UndefOr[ChartLegend] = js.undefined
+  
   var maxValue: js.UndefOr[Double] = js.undefined
+  
   var minValue: js.UndefOr[Double] = js.undefined
+  
   var values: js.UndefOr[js.Array[Double]] = js.undefined
 }
-
 object ChartColorAxis {
-  @scala.inline
-  def apply(
-    colors: js.Array[String] = null,
-    legend: ChartLegend = null,
-    maxValue: Int | Double = null,
-    minValue: Int | Double = null,
-    values: js.Array[Double] = null
-  ): ChartColorAxis = {
+  
+  inline def apply(): ChartColorAxis = {
     val __obj = js.Dynamic.literal()
-    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
-    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
-    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
-    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChartColorAxis]
   }
+  
+  extension [Self <: ChartColorAxis](x: Self) {
+    
+    inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    
+    inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value*))
+    
+    inline def setLegend(value: ChartLegend): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
+    
+    inline def setLegendUndefined: Self = StObject.set(x, "legend", js.undefined)
+    
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

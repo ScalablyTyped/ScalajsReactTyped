@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media.Import
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PhotoImportAccessMode extends js.Object
-
+sealed trait PhotoImportAccessMode extends StObject
 /** Specifies the access mode with which photos are imported. */
 @JSGlobal("Windows.Media.Import.PhotoImportAccessMode")
 @js.native
-object PhotoImportAccessMode extends js.Object {
+object PhotoImportAccessMode extends StObject {
+  
   /** Photos are imported with read and delete access. */
   @js.native
-  sealed trait readAndDelete extends PhotoImportAccessMode
+  sealed trait readAndDelete
+    extends StObject
+       with PhotoImportAccessMode
   
   /** Photos are imported with read-only access. */
   @js.native
-  sealed trait readOnly extends PhotoImportAccessMode
+  sealed trait readOnly
+    extends StObject
+       with PhotoImportAccessMode
   
   /** Photos are imported with read and write access. */
   @js.native
-  sealed trait readWrite extends PhotoImportAccessMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PhotoImportAccessMode with Double] = js.native
-  /* 2 */ @js.native
-  object readAndDelete extends TopLevel[readAndDelete with Double]
-  
-  /* 1 */ @js.native
-  object readOnly extends TopLevel[readOnly with Double]
-  
-  /* 0 */ @js.native
-  object readWrite extends TopLevel[readWrite with Double]
-  
+  sealed trait readWrite
+    extends StObject
+       with PhotoImportAccessMode
 }
-

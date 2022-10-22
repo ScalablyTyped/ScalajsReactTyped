@@ -1,9 +1,9 @@
 package typingsJapgolly.gm.mod
 
 import typingsJapgolly.gm.gmStrings.Gray_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.gm.gmStrings.Red
@@ -17,30 +17,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.gm.gmStrings.Black
   - typingsJapgolly.gm.gmStrings.Gray_
 */
-trait NamedColor extends js.Object
-
+trait NamedColor extends StObject
 object NamedColor {
-  @scala.inline
-  def Black: typingsJapgolly.gm.gmStrings.Black = this.cast("Black")
-  @scala.inline
-  def Blue: typingsJapgolly.gm.gmStrings.Blue = this.cast("Blue")
-  @scala.inline
-  def Cyan: typingsJapgolly.gm.gmStrings.Cyan = this.cast("Cyan")
-  @scala.inline
-  def Gray: Gray_ = this.cast("Gray")
-  @scala.inline
-  def Green: typingsJapgolly.gm.gmStrings.Green = this.cast("Green")
-  @scala.inline
-  def Magenta: typingsJapgolly.gm.gmStrings.Magenta = this.cast("Magenta")
-  @scala.inline
-  def Matte: typingsJapgolly.gm.gmStrings.Matte = this.cast("Matte")
-  @scala.inline
-  def Opacity: typingsJapgolly.gm.gmStrings.Opacity = this.cast("Opacity")
-  @scala.inline
-  def Red: typingsJapgolly.gm.gmStrings.Red = this.cast("Red")
-  @scala.inline
-  def Yellow: typingsJapgolly.gm.gmStrings.Yellow = this.cast("Yellow")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def Black: typingsJapgolly.gm.gmStrings.Black = "Black".asInstanceOf[typingsJapgolly.gm.gmStrings.Black]
+  
+  inline def Blue: typingsJapgolly.gm.gmStrings.Blue = "Blue".asInstanceOf[typingsJapgolly.gm.gmStrings.Blue]
+  
+  inline def Cyan: typingsJapgolly.gm.gmStrings.Cyan = "Cyan".asInstanceOf[typingsJapgolly.gm.gmStrings.Cyan]
+  
+  inline def Gray: Gray_ = "Gray".asInstanceOf[Gray_]
+  
+  inline def Green: typingsJapgolly.gm.gmStrings.Green = "Green".asInstanceOf[typingsJapgolly.gm.gmStrings.Green]
+  
+  inline def Magenta: typingsJapgolly.gm.gmStrings.Magenta = "Magenta".asInstanceOf[typingsJapgolly.gm.gmStrings.Magenta]
+  
+  inline def Matte: typingsJapgolly.gm.gmStrings.Matte = "Matte".asInstanceOf[typingsJapgolly.gm.gmStrings.Matte]
+  
+  inline def Opacity: typingsJapgolly.gm.gmStrings.Opacity = "Opacity".asInstanceOf[typingsJapgolly.gm.gmStrings.Opacity]
+  
+  inline def Red: typingsJapgolly.gm.gmStrings.Red = "Red".asInstanceOf[typingsJapgolly.gm.gmStrings.Red]
+  
+  inline def Yellow: typingsJapgolly.gm.gmStrings.Yellow = "Yellow".asInstanceOf[typingsJapgolly.gm.gmStrings.Yellow]
 }
-

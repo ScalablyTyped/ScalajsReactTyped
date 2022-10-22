@@ -1,20 +1,24 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Background
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides the ability to run custom handlers when prefetching web resources. */
-@JSGlobal("Windows.ApplicationModel.Background.ContentPrefetchTrigger")
-@js.native
-/** Initializes a new instance of the ContentPrefetchTrigger class. */
-class ContentPrefetchTrigger () extends js.Object {
-  /**
-    * Initializes a new instance of the ContentPrefetchTrigger class using a specified time interval.
-    * @param waitInterval Interval before next allowed content prefetch.
-    */
-  def this(waitInterval: Double) = this()
+trait ContentPrefetchTrigger extends StObject {
+  
   /** Retrieves the time interval for prefetching web content. */
-  var waitInterval: Double = js.native
+  var waitInterval: Double
 }
-
+object ContentPrefetchTrigger {
+  
+  inline def apply(waitInterval: Double): ContentPrefetchTrigger = {
+    val __obj = js.Dynamic.literal(waitInterval = waitInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContentPrefetchTrigger]
+  }
+  
+  extension [Self <: ContentPrefetchTrigger](x: Self) {
+    
+    inline def setWaitInterval(value: Double): Self = StObject.set(x, "waitInterval", value.asInstanceOf[js.Any])
+  }
+}

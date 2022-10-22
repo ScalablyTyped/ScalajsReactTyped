@@ -1,7 +1,7 @@
 
 # Scala.js typings for react-overlays
 
-Typings are for version 1.1
+Typings are for version 5.2.1
 
 ## Library description:
 Utilities for creating robust overlay components
@@ -10,10 +10,10 @@ Utilities for creating robust overlay components
 | ------------------ | :-------------: |
 | Full name          | react-overlays |
 | Keywords           | react-overlays, react-component, react, overlay, react-component, tooltip, bootstrap, popover, modal |
-| # releases         | 30 |
-| # dependents       | 299 |
-| # downloads        | 28636639 |
-| # stars            | 9 |
+| # releases         | 10 |
+| # dependents       | 0.0 |
+| # downloads        | 7553387.333333333 |
+| # stars            | 864.0 |
 
 ## Links
 - [Homepage](https://github.com/react-bootstrap/react-overlays#readme)
@@ -24,7 +24,7 @@ Utilities for creating robust overlay components
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

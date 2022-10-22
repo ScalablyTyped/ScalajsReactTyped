@@ -1,56 +1,74 @@
 package typingsJapgolly.officeJs.Word.Interfaces
 
 import typingsJapgolly.officeJs.Word.ListLevelType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/** An interface describing the data returned by calling "list.toJSON()". */
-trait ListData extends js.Object {
+/** An interface describing the data returned by calling `list.toJSON()`. */
+trait ListData extends StObject {
+  
   /**
-    *
     * Gets the list's id.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var id: js.UndefOr[Double] = js.undefined
+  
   /**
+    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level.
     *
-    * Checks whether each of the 9 levels exists in the list. A true value indicates the level exists, which means there is at least one list item at that level. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var levelExistences: js.UndefOr[js.Array[Boolean]] = js.undefined
+  
   /**
+    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'.
     *
-    * Gets all 9 level types in the list. Each type can be 'Bullet', 'Number', or 'Picture'. Read-only.
-    *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var levelTypes: js.UndefOr[js.Array[ListLevelType]] = js.undefined
+  
   /**
-    *
     * Gets paragraphs in the list. Read-only.
     *
+    * @remarks
     * [Api set: WordApi 1.3]
     */
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
-
 object ListData {
-  @scala.inline
-  def apply(
-    id: Int | Double = null,
-    levelExistences: js.Array[Boolean] = null,
-    levelTypes: js.Array[ListLevelType] = null,
-    paragraphs: js.Array[ParagraphData] = null
-  ): ListData = {
+  
+  inline def apply(): ListData = {
     val __obj = js.Dynamic.literal()
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (levelExistences != null) __obj.updateDynamic("levelExistences")(levelExistences.asInstanceOf[js.Any])
-    if (levelTypes != null) __obj.updateDynamic("levelTypes")(levelTypes.asInstanceOf[js.Any])
-    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListData]
   }
+  
+  extension [Self <: ListData](x: Self) {
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setLevelExistences(value: js.Array[Boolean]): Self = StObject.set(x, "levelExistences", value.asInstanceOf[js.Any])
+    
+    inline def setLevelExistencesUndefined: Self = StObject.set(x, "levelExistences", js.undefined)
+    
+    inline def setLevelExistencesVarargs(value: Boolean*): Self = StObject.set(x, "levelExistences", js.Array(value*))
+    
+    inline def setLevelTypes(value: js.Array[ListLevelType]): Self = StObject.set(x, "levelTypes", value.asInstanceOf[js.Any])
+    
+    inline def setLevelTypesUndefined: Self = StObject.set(x, "levelTypes", js.undefined)
+    
+    inline def setLevelTypesVarargs(value: ListLevelType*): Self = StObject.set(x, "levelTypes", js.Array(value*))
+    
+    inline def setParagraphs(value: js.Array[ParagraphData]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    
+    inline def setParagraphsVarargs(value: ParagraphData*): Self = StObject.set(x, "paragraphs", js.Array(value*))
+  }
 }
-

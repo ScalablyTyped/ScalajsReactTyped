@@ -1,20 +1,27 @@
 package typingsJapgolly.xstyledSystem.mod
 
-import typingsJapgolly.csstype.mod.FlexDirectionProperty
+import typingsJapgolly.csstype.mod.Property.FlexDirection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait FlexDirectionProps extends js.Object {
-  val flexDirection: js.UndefOr[ResponsiveValue[FlexDirectionProperty]] = js.undefined
+trait FlexDirectionProps extends StObject {
+  
+  val flexDirection: js.UndefOr[ResponsiveValue[FlexDirection]] = js.undefined
 }
-
 object FlexDirectionProps {
-  @scala.inline
-  def apply(flexDirection: ResponsiveValue[FlexDirectionProperty] = null): FlexDirectionProps = {
+  
+  inline def apply(): FlexDirectionProps = {
     val __obj = js.Dynamic.literal()
-    if (flexDirection != null) __obj.updateDynamic("flexDirection")(flexDirection.asInstanceOf[js.Any])
     __obj.asInstanceOf[FlexDirectionProps]
   }
+  
+  extension [Self <: FlexDirectionProps](x: Self) {
+    
+    inline def setFlexDirection(value: ResponsiveValue[FlexDirection]): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+    
+    inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
+    
+    inline def setFlexDirectionVarargs(value: FlexDirection*): Self = StObject.set(x, "flexDirection", js.Array(value*))
+  }
 }
-

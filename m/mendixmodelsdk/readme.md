@@ -1,7 +1,7 @@
 
 # Scala.js typings for mendixmodelsdk
 
-Typings are for version 4.29.0
+Typings are for version 4.67.0
 
 ## Library description:
 Mendix Model SDK
@@ -10,10 +10,10 @@ Mendix Model SDK
 | ------------------ | :-------------: |
 | Full name          | mendixmodelsdk |
 | Keywords           | - |
-| # releases         | 250 |
-| # dependents       | 4 |
-| # downloads        | 77616 |
-| # stars            | 1 |
+| # releases         | 204 |
+| # dependents       | 0.0 |
+| # downloads        | 6793.333333333333 |
+| # stars            | ? |
 
 ## Links
 - [Npm](https://www.npmjs.com/package/mendixmodelsdk)

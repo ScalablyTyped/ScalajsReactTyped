@@ -1,20 +1,26 @@
 package typingsJapgolly.minappEnv
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IteratorResult[T] extends js.Object {
+trait IteratorResult[T] extends StObject {
+  
   var done: scala.Boolean
+  
   var value: T
 }
-
 object IteratorResult {
-  @scala.inline
-  def apply[T](done: scala.Boolean, value: T): IteratorResult[T] = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
   
+  inline def apply[T](done: scala.Boolean, value: T): IteratorResult[T] = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IteratorResult[T]]
   }
+  
+  extension [Self <: IteratorResult[?], T](x: Self & IteratorResult[T]) {
+    
+    inline def setDone(value: scala.Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+  }
 }
-

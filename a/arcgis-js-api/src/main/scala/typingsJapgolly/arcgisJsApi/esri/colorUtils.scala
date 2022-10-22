@@ -1,32 +1,44 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait colorUtils extends js.Object {
+/**
+  * Contains utilities for working with colors in the [View](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-View.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html)
+  */
+trait colorUtils extends StObject {
+  
   /**
-    * Returns the average color of the view's background within the view's [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent). The view's background includes the non-reference [base layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-Basemap.html#baseLayers) of the [map](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#map)'s basemap, the [background color](https://developers.arcgis.com/javascript/latest/api-reference/esri-webmap-InitialViewProperties.html#background) of the web map (if applicable), and the background color of the view's [container](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#container).
+    * Returns the average color of the view's background within the view's [extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#extent).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColor)
-    *
-    * @param view The MapView instance from which to calculate the average color of the background.
-    *
     */
   def getBackgroundColor(view: MapView): js.Promise[Color_]
+  
   /**
-    * This method inspects the basemap and background of a MapView and returns either `light` or `dark` as the theme of the background depending on if the average color of the basemap and the view's background is light or dark.  The background theme is determined by taking the average color of the view's background and basemap and determining its brightness based on [this algorithm for determining color visibility](https://www.w3.org/TR/AERT/#color-contrast).
+    * This method inspects the basemap and background of a MapView and returns either `light` or `dark` as the theme of the background depending on if the average color of the basemap and the view's background is light or dark.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-support-colorUtils.html#getBackgroundColorTheme)
-    *
-    * @param view The MapView instance from which to get the background color theme.
-    *
     */
   def getBackgroundColorTheme(view: MapView): js.Promise[String]
 }
-
-@JSGlobal("__esri.colorUtils")
-@js.native
-object colorUtils extends TopLevel[colorUtils]
-
+object colorUtils {
+  
+  inline def apply(
+    getBackgroundColor: MapView => js.Promise[Color_],
+    getBackgroundColorTheme: MapView => js.Promise[String]
+  ): colorUtils = {
+    val __obj = js.Dynamic.literal(getBackgroundColor = js.Any.fromFunction1(getBackgroundColor), getBackgroundColorTheme = js.Any.fromFunction1(getBackgroundColorTheme))
+    __obj.asInstanceOf[colorUtils]
+  }
+  
+  extension [Self <: colorUtils](x: Self) {
+    
+    inline def setGetBackgroundColor(value: MapView => js.Promise[Color_]): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction1(value))
+    
+    inline def setGetBackgroundColorTheme(value: MapView => js.Promise[String]): Self = StObject.set(x, "getBackgroundColorTheme", js.Any.fromFunction1(value))
+  }
+}

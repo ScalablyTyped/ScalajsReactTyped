@@ -1,29 +1,33 @@
 package typingsJapgolly.kendoUi.kendo.mobile.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ScrollerScrollEvent extends ScrollerEvent {
+trait ScrollerScrollEvent
+  extends StObject
+     with ScrollerEvent {
+  
   var scrollLeft: js.UndefOr[Double] = js.undefined
+  
   var scrollTop: js.UndefOr[Double] = js.undefined
 }
-
 object ScrollerScrollEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Scroller,
-    scrollLeft: Int | Double = null,
-    scrollTop: Int | Double = null
-  ): ScrollerScrollEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
-    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Scroller): ScrollerScrollEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollerScrollEvent]
   }
+  
+  extension [Self <: ScrollerScrollEvent](x: Self) {
+    
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    
+    inline def setScrollLeftUndefined: Self = StObject.set(x, "scrollLeft", js.undefined)
+    
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+  }
 }
-

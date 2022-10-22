@@ -1,36 +1,45 @@
 package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObserverBaseOpts extends js.Object {
+trait ObserverBaseOpts extends StObject {
+  
   /**
   	 * The context to be used for the callback.
   	 */
-  var context: js.UndefOr[js.Any] = js.undefined
+  var context: js.UndefOr[Any] = js.undefined
+  
   /**
   	 * Whether or not to defer calling the callback until after the DOM has been updated.
   	 */
   var defer: js.UndefOr[Boolean] = js.undefined
+  
   /**
   	 * Whether or not to call the callback with the initial value.
   	 */
   var init: js.UndefOr[Boolean] = js.undefined
 }
-
 object ObserverBaseOpts {
-  @scala.inline
-  def apply(
-    context: js.Any = null,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    init: js.UndefOr[Boolean] = js.undefined
-  ): ObserverBaseOpts = {
+  
+  inline def apply(): ObserverBaseOpts = {
     val __obj = js.Dynamic.literal()
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverBaseOpts]
   }
+  
+  extension [Self <: ObserverBaseOpts](x: Self) {
+    
+    inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    
+    inline def setDefer(value: Boolean): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    
+    inline def setInit(value: Boolean): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+  }
 }
-

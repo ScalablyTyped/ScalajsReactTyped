@@ -1,56 +1,47 @@
 package typingsJapgolly.officeJs.Office
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait Index extends js.Object
-
+sealed trait Index extends StObject
 /**
   * Specifies the relative PowerPoint slide.
   */
 @JSGlobal("Office.Index")
 @js.native
-object Index extends js.Object {
+object Index extends StObject {
+  
   /**
     * Represents the first PowerPoint slide
     */
   @js.native
-  sealed trait First extends Index
+  sealed trait First
+    extends StObject
+       with Index
   
   /**
     * Represents the last PowerPoint slide
     */
   @js.native
-  sealed trait Last extends Index
+  sealed trait Last
+    extends StObject
+       with Index
   
   /**
     * Represents the next PowerPoint slide
     */
   @js.native
-  sealed trait Next extends Index
+  sealed trait Next
+    extends StObject
+       with Index
   
   /**
     * Represents the previous PowerPoint slide
     */
   @js.native
-  sealed trait Previous extends Index
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[Index with Double] = js.native
-  /* 0 */ @js.native
-  object First extends TopLevel[First with Double]
-  
-  /* 1 */ @js.native
-  object Last extends TopLevel[Last with Double]
-  
-  /* 2 */ @js.native
-  object Next extends TopLevel[Next with Double]
-  
-  /* 3 */ @js.native
-  object Previous extends TopLevel[Previous with Double]
-  
+  sealed trait Previous
+    extends StObject
+       with Index
 }
-

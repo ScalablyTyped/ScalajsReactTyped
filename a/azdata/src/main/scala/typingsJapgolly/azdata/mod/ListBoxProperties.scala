@@ -1,21 +1,34 @@
 package typingsJapgolly.azdata.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ListBoxProperties extends js.Object {
+trait ListBoxProperties
+  extends StObject
+     with ComponentProperties {
+  
   var selectedRow: js.UndefOr[Double] = js.undefined
+  
   var values: js.UndefOr[js.Array[String]] = js.undefined
 }
-
 object ListBoxProperties {
-  @scala.inline
-  def apply(selectedRow: Int | Double = null, values: js.Array[String] = null): ListBoxProperties = {
+  
+  inline def apply(): ListBoxProperties = {
     val __obj = js.Dynamic.literal()
-    if (selectedRow != null) __obj.updateDynamic("selectedRow")(selectedRow.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxProperties]
   }
+  
+  extension [Self <: ListBoxProperties](x: Self) {
+    
+    inline def setSelectedRow(value: Double): Self = StObject.set(x, "selectedRow", value.asInstanceOf[js.Any])
+    
+    inline def setSelectedRowUndefined: Self = StObject.set(x, "selectedRow", js.undefined)
+    
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value*))
+  }
 }
-

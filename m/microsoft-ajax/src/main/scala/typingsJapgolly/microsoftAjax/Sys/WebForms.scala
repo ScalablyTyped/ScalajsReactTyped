@@ -1,12 +1,14 @@
 package typingsJapgolly.microsoftAjax.Sys
 
-import org.scalajs.dom.raw.HTMLDivElement
-import org.scalajs.dom.raw.HTMLElement
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
+import org.scalajs.dom.HTMLDivElement
+import org.scalajs.dom.HTMLElement
 import typingsJapgolly.microsoftAjax.Sys.Net.WebRequest
 import typingsJapgolly.microsoftAjax.Sys.Net.WebRequestExecutor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region Sys.WebForms Namespace
@@ -14,64 +16,67 @@ import scala.scalajs.js.annotation._
   * The Sys.WebForms namespace contains classes related to partial-page rendering in the Microsoft Ajax Library.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb397566(v=vs.100).aspx}
   */
-@JSGlobal("Sys.WebForms")
-@js.native
-object WebForms extends js.Object {
+object WebForms {
+  
   /**
     * Used by the beginRequest event of the PageRequestManager class to pass argument information to event handlers.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb384003(v=vs.100).aspx}
     */
-  @js.native
-  class BeginRequestEventArgs protected () extends EventArgs {
-    //#region Constructors
-    /**
-      * Initializes a new instance of the BeginRequestEventArgs class.
-      * @param request
-      *           A Sys.Net.WebRequest representing the web request for the EventArgs.
-      * @param postBackElement
-      *           The postback element that initiated the async postback.
-      * @param updatePanelsToUpdate
-      *           (Optional) A list of UniqueIDs for UpdatePanel controls that are requested to update their rendering by the client. Server-side processing may update additional UpdatePanels.
-      */
-    def this(request: WebRequest, postBackElement: js.Any, updatePanelsToUpdate: js.Array[String]) = this()
+  trait BeginRequestEventArgs
+    extends StObject
+       with EventArgs {
+    
     //#endregion
     //#region Properties
     /**
       * Gets the postback element that initiated the asynchronous postback. This property is read-only.
-      * @readonly
       * @return An HTML DOM element.
       */
-    def get_postBackElement(): HTMLElement = js.native
+    def get_postBackElement(): HTMLElement
+    
     /**
       * Gets the request object that represents the current postback.
       * @return An instance of the Sys.Net.WebRequest class.
       */
-    def get_request(): WebRequest = js.native
+    def get_request(): WebRequest
+    
     /**
       * Gets a list of UniqueID values for UpdatePanel controls that should re-render their content, as requested by the client.
       * Server-side processing might update additional UpdatePanel controls.
       * @return An array of UniqueID values for UpdatePanel controls.
       */
-    def get_updatePanelsToUpdate(): js.Array[String] = js.native
+    def get_updatePanelsToUpdate(): js.Array[String]
+  }
+  object BeginRequestEventArgs {
+    
+    inline def apply(
+      Empty: EventArgs,
+      get_postBackElement: CallbackTo[HTMLElement],
+      get_request: CallbackTo[WebRequest],
+      get_updatePanelsToUpdate: CallbackTo[js.Array[String]]
+    ): BeginRequestEventArgs = {
+      val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_postBackElement = get_postBackElement.toJsFn, get_request = get_request.toJsFn, get_updatePanelsToUpdate = get_updatePanelsToUpdate.toJsFn)
+      __obj.asInstanceOf[BeginRequestEventArgs]
+    }
+    
+    extension [Self <: BeginRequestEventArgs](x: Self) {
+      
+      inline def setGet_postBackElement(value: CallbackTo[HTMLElement]): Self = StObject.set(x, "get_postBackElement", value.toJsFn)
+      
+      inline def setGet_request(value: CallbackTo[WebRequest]): Self = StObject.set(x, "get_request", value.toJsFn)
+      
+      inline def setGet_updatePanelsToUpdate(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "get_updatePanelsToUpdate", value.toJsFn)
+    }
   }
   
   /**
     * Used by the endRequest event of the PageRequestManager class to pass argument information to event handlers.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397499.aspx}
     */
-  @js.native
-  class EndRequestEventArgs protected () extends EventArgs {
-    //#region Constructors
-    /**
-      * Initializes a new instance of the EndRequestEventArgs class.
-      * @param error
-      *           An error object.
-      * @param dataItems
-      *           An object containing data items.
-      * @param response
-      *           An object of type Sys.Net.WebRequestExecutor.
-      */
-    def this(error: js.Error, dataItems: js.Any, response: WebRequestExecutor) = this()
+  trait EndRequestEventArgs
+    extends StObject
+       with EventArgs {
+    
     //#endregion
     //#region Properties
     /**
@@ -79,30 +84,61 @@ object WebForms extends js.Object {
       * The JavaScript Error object exposes several properties that define the error. The Microsoft Ajax Library provides additional functions for the Error object.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): Any
+    
     /**
       * Gets the Error object.
       * @return A base ECMAScript (JavaScript) Error object.
       */
-    def get_error(): js.Error = js.native
+    def get_error(): js.Error
+    
     /**
       * Get or sets a value that indicates whether the error has been handled.
       * Use this property to determine whether an asynchronous postback error has already been handled. If it has not and if you want to take action on the error, you can set the error as handled.
       * @return true if the error has been handled; otherwise false.
       */
-    def get_errorHandled(): Boolean = js.native
+    def get_errorHandled(): Boolean
+    
     /**
       * Gets a response object that is represented by the Sys.Net.WebRequestExecutor class.
       * @return A response object that is represented by the WebRequestExecutor class.
       */
-    def get_response(): WebRequestExecutor = js.native
+    def get_response(): WebRequestExecutor
+    
     /**
       * Get or sets a value that indicates whether the error has been handled.
       * Use this property to determine whether an asynchronous postback error has already been handled. If it has not and if you want to take action on the error, you can set the error as handled.
       * @param value
       *         true or false.
       */
-    def set_errorHandled(value: Boolean): Unit = js.native
+    def set_errorHandled(value: Boolean): Unit
+  }
+  object EndRequestEventArgs {
+    
+    inline def apply(
+      Empty: EventArgs,
+      get_dataItems: CallbackTo[Any],
+      get_error: CallbackTo[js.Error],
+      get_errorHandled: CallbackTo[Boolean],
+      get_response: CallbackTo[WebRequestExecutor],
+      set_errorHandled: Boolean => Callback
+    ): EndRequestEventArgs = {
+      val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_dataItems = get_dataItems.toJsFn, get_error = get_error.toJsFn, get_errorHandled = get_errorHandled.toJsFn, get_response = get_response.toJsFn, set_errorHandled = js.Any.fromFunction1((t0: Boolean) => set_errorHandled(t0).runNow()))
+      __obj.asInstanceOf[EndRequestEventArgs]
+    }
+    
+    extension [Self <: EndRequestEventArgs](x: Self) {
+      
+      inline def setGet_dataItems(value: CallbackTo[Any]): Self = StObject.set(x, "get_dataItems", value.toJsFn)
+      
+      inline def setGet_error(value: CallbackTo[js.Error]): Self = StObject.set(x, "get_error", value.toJsFn)
+      
+      inline def setGet_errorHandled(value: CallbackTo[Boolean]): Self = StObject.set(x, "get_errorHandled", value.toJsFn)
+      
+      inline def setGet_response(value: CallbackTo[WebRequestExecutor]): Self = StObject.set(x, "get_response", value.toJsFn)
+      
+      inline def setSet_errorHandled(value: Boolean => Callback): Self = StObject.set(x, "set_errorHandled", js.Any.fromFunction1((t0: Boolean) => value(t0).runNow()))
+    }
   }
   
   /**
@@ -110,49 +146,61 @@ object WebForms extends js.Object {
     * This class contains private members that support the client-script infrastructure and are not intended to be used directly from your code. Names of private members begin with an underscore ( _ ).
     * @see {@link http://msdn.microsoft.com/en-us/library/bb311030(v=vs.100).aspx}
     */
-  @js.native
-  class InitializeRequestEventArgs protected () extends EventArgs {
-    //#region Constructors
-    /**
-      * Initializes a new instance of the EndRequestEventArgs class.
-      * @param request
-      *           A Sys.Net.WebRequest object that represents the Web request for the EventArgs object.
-      * @param datapostBackElementItems
-      *           The postback element that initiated the asynchronous postback.
-      * @param updatePanelsToUpdate
-      *           (Optional) A list of UniqueID values for UpdatePanel controls that are being requested to update their rendering by the client. Server-side processing might update additional UpdatePanel controls.
-      */
-    def this(request: WebRequest, postBackElement: js.Any, updatePanelsToUpdate: js.Array[String]) = this()
+  trait InitializeRequestEventArgs
+    extends StObject
+       with EventArgs {
+    
     //#endregion
     //#region Properties
     /**
       * Gets the postback element that initiated the asynchronous postback.
       * @return An HTML DOM element.
       */
-    def get_postBackElement(): HTMLElement = js.native
+    def get_postBackElement(): HTMLElement
+    
     /**
       * Gets the request object that represents the current postback.
       * @return A request object that is represented by the Sys.Net.WebRequestExecutor class.
       */
-    def get_request(): WebRequestExecutor = js.native
+    def get_request(): WebRequestExecutor
+    
     /**
       * Gets or sets a list of UniqueID values for UpdatePanel controls that should re-render their content, as requested by the client.
       * The returned array can be modified by a client event handler to add or remove UpdatePanel controls that should re-render their content dynamically. Server processing can also modify the array.
       * @return An array of UniqueID values for UpdatePanel controls.
       */
-    def get_updatePanelsToUpdate(): js.Array[String] = js.native
+    def get_updatePanelsToUpdate(): js.Array[String]
+  }
+  object InitializeRequestEventArgs {
+    
+    inline def apply(
+      Empty: EventArgs,
+      get_postBackElement: CallbackTo[HTMLElement],
+      get_request: CallbackTo[WebRequestExecutor],
+      get_updatePanelsToUpdate: CallbackTo[js.Array[String]]
+    ): InitializeRequestEventArgs = {
+      val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_postBackElement = get_postBackElement.toJsFn, get_request = get_request.toJsFn, get_updatePanelsToUpdate = get_updatePanelsToUpdate.toJsFn)
+      __obj.asInstanceOf[InitializeRequestEventArgs]
+    }
+    
+    extension [Self <: InitializeRequestEventArgs](x: Self) {
+      
+      inline def setGet_postBackElement(value: CallbackTo[HTMLElement]): Self = StObject.set(x, "get_postBackElement", value.toJsFn)
+      
+      inline def setGet_request(value: CallbackTo[WebRequestExecutor]): Self = StObject.set(x, "get_request", value.toJsFn)
+      
+      inline def setGet_updatePanelsToUpdate(value: CallbackTo[js.Array[String]]): Self = StObject.set(x, "get_updatePanelsToUpdate", value.toJsFn)
+    }
   }
   
   /**
     * Used by the pageLoaded event of the PageRequestManager class to send event data that represents the UpdatePanel controls that were updated and created in the most recent postback.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397476(v=vs.100).aspx}
     */
-  @js.native
-  //#region Constructors
-  /**
-    * Initializes a new instance of the PageLoadedEventArgs class.
-    */
-  class PageLoadedEventArgs () extends EventArgs {
+  trait PageLoadedEventArgs
+    extends StObject
+       with EventArgs {
+    
     //#endregion
     //#region Properties
     /**
@@ -163,33 +211,54 @@ object WebForms extends js.Object {
       *
       * @return A JSON data structure that contains name/value pairs that were registered as data items that use the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): Any
+    
     /**
       * Gets an array of HTML div elements that represent UpdatePanel controls that were created when the DOM was updated during the last asynchronous postback.
       * If an UpdatePanel control is updated as a result of a partial-page update, the array referenced in the panelsCreated property of the PageLoadedEventArgs class contains a reference to the corresponding div element.
       * The pageLoaded event of the Sys.WebForms.PageRequestManager class uses a PageLoadedEventArgs object to return its event data.
       * @return An array of div elements that were created during the DOM manipulation that was caused by the last asynchronous postback. If no elements were created, the property returns null.
       */
-    def get_panelsCreated(): js.Array[HTMLDivElement] = js.native
+    def get_panelsCreated(): js.Array[HTMLDivElement]
+    
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that were updated when the DOM was updated during the last asynchronous postback.
       * If an UpdatePanel control is updated as a result of a partial-page update, the array referenced in the panelsUpdated property of the PageLoadedEventArgs class contains a reference to the corresponding <div> element.
       * The pageLoaded event of the Sys.WebForms.PageRequestManager class uses a PageLoadedEventArgs object to return its event data.
       * @return An array of <div> elements that were updated during the DOM manipulation that was the result of the last asynchronous postback. If no elements were created, the property returns null.
       */
-    def get_panelsUpdated(): js.Array[HTMLDivElement] = js.native
+    def get_panelsUpdated(): js.Array[HTMLDivElement]
+  }
+  object PageLoadedEventArgs {
+    
+    inline def apply(
+      Empty: EventArgs,
+      get_dataItems: CallbackTo[Any],
+      get_panelsCreated: CallbackTo[js.Array[HTMLDivElement]],
+      get_panelsUpdated: CallbackTo[js.Array[HTMLDivElement]]
+    ): PageLoadedEventArgs = {
+      val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_dataItems = get_dataItems.toJsFn, get_panelsCreated = get_panelsCreated.toJsFn, get_panelsUpdated = get_panelsUpdated.toJsFn)
+      __obj.asInstanceOf[PageLoadedEventArgs]
+    }
+    
+    extension [Self <: PageLoadedEventArgs](x: Self) {
+      
+      inline def setGet_dataItems(value: CallbackTo[Any]): Self = StObject.set(x, "get_dataItems", value.toJsFn)
+      
+      inline def setGet_panelsCreated(value: CallbackTo[js.Array[HTMLDivElement]]): Self = StObject.set(x, "get_panelsCreated", value.toJsFn)
+      
+      inline def setGet_panelsUpdated(value: CallbackTo[js.Array[HTMLDivElement]]): Self = StObject.set(x, "get_panelsUpdated", value.toJsFn)
+    }
   }
   
   /**
     * Used by the pageLoading event of the PageRequestManager class to send event data that represents the UpdatePanel controls that are being updated and deleted as a result of the most recent postback.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310960(v=vs.100).aspx}
     */
-  @js.native
-  //#region Constructors
-  /**
-    * Initializes a new instance of the PageLoadingEventArgs class.
-    */
-  class PageLoadingEventArgs () extends EventArgs {
+  trait PageLoadingEventArgs
+    extends StObject
+       with EventArgs {
+    
     //#endregion
     //#region Properties
     /**
@@ -200,21 +269,44 @@ object WebForms extends js.Object {
       * The name is the unique ID of the control that is used in the control parameter of the RegisterDataItem method. The value is the dataItem parameter of the RegisterDataItem method.
       * @return A JSON data structure that contains name/value pairs that were registered as data items by using the RegisterDataItem method of the ScriptManager class.
       */
-    def get_dataItems(): js.Any = js.native
+    def get_dataItems(): Any
+    
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be deleted from the DOM as a result of the current asynchronous postback.
       * If the contents of an UpdatePanel control will be deleted as the result of a partial-page update, the array that is referenced in the panelsDeleting property of the PageLoadingEventArgs class contains a reference to the corresponding <div> element.
       * The pageLoading event of the Sys.WebForms.PageRequestManager class uses a PageLoadingEventArgs object to return its event data.
       * @return An array of <div> elements that will be deleted from the DOM. If no elements will be deleted, the property returns null.
       */
-    def get_panelsDeleting(): js.Array[HTMLDivElement] = js.native
+    def get_panelsDeleting(): js.Array[HTMLDivElement]
+    
     /**
       * Gets an array of HTML <div> elements that represent UpdatePanel controls that will be updated in the DOM as a result of the current asynchronous postback.
       * If the contents of any UpdatePanel controls will be updated as the result of a partial-page update, the panelsUpdating property contains an array that references the corresponding <div> elements.
       * The pageLoading event of the Sys.WebForms.PageRequestManager class uses a PageLoadingEventArgs object to return its event data.
       * @return An array of <div> elements that will be updated in the DOM. If no elements will be updated, the property returns null.
       */
-    def get_panelsUpdating(): js.Array[HTMLDivElement] = js.native
+    def get_panelsUpdating(): js.Array[HTMLDivElement]
+  }
+  object PageLoadingEventArgs {
+    
+    inline def apply(
+      Empty: EventArgs,
+      get_dataItems: CallbackTo[Any],
+      get_panelsDeleting: CallbackTo[js.Array[HTMLDivElement]],
+      get_panelsUpdating: CallbackTo[js.Array[HTMLDivElement]]
+    ): PageLoadingEventArgs = {
+      val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any], get_dataItems = get_dataItems.toJsFn, get_panelsDeleting = get_panelsDeleting.toJsFn, get_panelsUpdating = get_panelsUpdating.toJsFn)
+      __obj.asInstanceOf[PageLoadingEventArgs]
+    }
+    
+    extension [Self <: PageLoadingEventArgs](x: Self) {
+      
+      inline def setGet_dataItems(value: CallbackTo[Any]): Self = StObject.set(x, "get_dataItems", value.toJsFn)
+      
+      inline def setGet_panelsDeleting(value: CallbackTo[js.Array[HTMLDivElement]]): Self = StObject.set(x, "get_panelsDeleting", value.toJsFn)
+      
+      inline def setGet_panelsUpdating(value: CallbackTo[js.Array[HTMLDivElement]]): Self = StObject.set(x, "get_panelsUpdating", value.toJsFn)
+    }
   }
   
   /**
@@ -222,16 +314,14 @@ object WebForms extends js.Object {
     * @see {@link http://msdn.microsoft.com/en-us/library/bb311028(v=vs.100).aspx}
     */
   @js.native
-  //#region Constructors
-  /**
-    * Initializes a new instance of the Sys.WebForms.PageRequestManager Class.
-    */
-  class PageRequestManager () extends js.Object {
+  trait PageRequestManager extends StObject {
+    
     /**
       * Stops all updates that would occur as a result of an asynchronous postback.
       * The abortPostBack method stops the currently executing postback. To cancel a new postback, provide an event handler for the initializeRequest event and use the cancel event of the Sys.CancelEventArgs class.
       */
     def abortPostBack(): Unit = js.native
+    
     //#endregion
     //#region Events
     /**
@@ -239,33 +329,38 @@ object WebForms extends js.Object {
       * @param beginRequestHandler
       *               The name of the handler method that will be called.
       */
-    def add_beginRequest(beginRequestHandler: js.Function2[/* sender */ js.Any, /* args */ BeginRequestEventArgs, Unit]): Unit = js.native
+    def add_beginRequest(beginRequestHandler: js.Function2[/* sender */ Any, /* args */ BeginRequestEventArgs, Unit]): Unit = js.native
+    
     /**
       * Raised after an asynchronous postback is finished and control has been returned to the browser.
       * @param endRequestHandler
       *               The name of the handler method that will be called.
       */
-    def add_endRequest(endRequestHandler: js.Function2[/* sender */ js.Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    def add_endRequest(endRequestHandler: js.Function2[/* sender */ Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    
     /**
       * Raised during the initialization of the asynchronous postback.
       * @param initializeRequestHandler
       *               The name of the handler method that will be called.
       */
     def add_initializeRequest(
-      initializeRequestHandler: js.Function2[/* sender */ js.Any, /* args */ InitializeRequestEventArgs, Unit]
+      initializeRequestHandler: js.Function2[/* sender */ Any, /* args */ InitializeRequestEventArgs, Unit]
     ): Unit = js.native
+    
     /**
       * Raised after all content on the page is refreshed as a result of either a synchronous or an asynchronous postback.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def add_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    def add_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    
     /**
       * Raised after the response from the server to an asynchronous postback is received but before any content on the page is updated.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def add_pageLoading(pageLoadingHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
+    def add_pageLoading(pageLoadingHandler: js.Function2[/* sender */ Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
+    
     /**
       * Begins an asynchronous postback.
       * @param updatePanelsToUpdate
@@ -296,47 +391,185 @@ object WebForms extends js.Object {
       causesValidation: Boolean,
       validationGroup: String
     ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: js.Array[String], eventTarget: Unit, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: js.Array[String],
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: String, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: String, eventArgument: Unit, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: String,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: String): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: String, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: String,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(updatePanelsToUpdate: Unit, eventTarget: Unit, eventArgument: Unit, causesValidation: Boolean): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Boolean,
+      validationGroup: String
+    ): Unit = js.native
+    def beginAsyncPostBack(
+      updatePanelsToUpdate: Unit,
+      eventTarget: Unit,
+      eventArgument: Unit,
+      causesValidation: Unit,
+      validationGroup: String
+    ): Unit = js.native
+    
     /**
       * Releases ECMAScript (JavaScript) resources and detaches events.
       * the dispose method to free client resources. The PageRequestManager instance calls the dispose method during the window.unload event of the browser.
       * If you call the dispose method and then reference members of the PageRequestManager class, an error occurs. In typical page developer scenarios, you do not have to call the dispose method.
       */
     def dispose(): Unit = js.native
+    
     //#endregion
     //#region Properties
     def get_isInAsyncPostBack(): Boolean = js.native
+    
     /**
       * Raised before the processing of an asynchronous postback starts and the postback request is sent to the server.
       *  @param beginRequestHandler
       *               The handler method that will be removed.
       */
     def remove_beginRequest(beginRequestHandler: js.Function): Unit = js.native
+    
     /**
       * Raised after an asynchronous postback is finished and control has been returned to the browser.
       * @param endRequestHandler
       *               The name of the handler method that will be removed.
       */
-    def remove_endRequest(endRequestHandler: js.Function2[/* sender */ js.Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    def remove_endRequest(endRequestHandler: js.Function2[/* sender */ Any, /* args */ EndRequestEventArgs, Unit]): Unit = js.native
+    
     /**
       * Raised during the initialization of the asynchronous postback.
       * @param initializeRequestHandler
       *               The name of the handler method that will be called.
       */
     def remove_initializeRequest(
-      initializeRequestHandler: js.Function2[/* sender */ js.Any, /* args */ InitializeRequestEventArgs, Unit]
+      initializeRequestHandler: js.Function2[/* sender */ Any, /* args */ InitializeRequestEventArgs, Unit]
     ): Unit = js.native
+    
     /**
       * Raised after all content on the page is refreshed as a result of either a synchronous or an asynchronous postback.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def remove_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    def remove_pageLoaded(pageLoadedHandler: js.Function2[/* sender */ Any, /* args */ PageLoadedEventArgs, Unit]): Unit = js.native
+    
     /**
       * Raised after the response from the server to an asynchronous postback is received but before any content on the page is updated.
       * @param pageLoadedHandler
       *               The name of the handler method that will be called.
       */
-    def remove_pageLoading(pageLoadingHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
+    def remove_pageLoading(pageLoadingHandler: js.Function2[/* sender */ Any, /* args */ PageLoadingEventArgs, Unit]): Unit = js.native
   }
   
   //#region Exceptions: Defines exceptions that can occur during partial-page updates.
@@ -346,8 +579,7 @@ object WebForms extends js.Object {
     * For information about how to handle this error condition, see Debugging and Tracing Ajax Applications Overview.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}
     */
-  @js.native
-  class PageRequestManagerParserErrorException () extends js.Object
+  trait PageRequestManagerParserErrorException extends StObject
   
   /**
     * Raised when an error occurs on the server.
@@ -356,8 +588,7 @@ object WebForms extends js.Object {
     * For an example of how to provide custom error handling during partial-page updates, see Customizing Error Handling for ASP.NET UpdatePanel Controls.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}        *
     */
-  @js.native
-  class PageRequestManagerServerErrorException () extends js.Object
+  trait PageRequestManagerServerErrorException extends StObject
   
   /**
     * Raised when the request times out.
@@ -366,20 +597,5 @@ object WebForms extends js.Object {
     * To change the interval that elapses before asynchronous postbacks time out, set the AsyncPostBackTimeout property of the ScriptManager control.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb397466(v=vs.100).aspx}
     */
-  @js.native
-  class PageRequestManagerTimeoutException () extends js.Object
-  
-  /* static members */
-  @js.native
-  object PageRequestManager extends js.Object {
-    //#endregion
-    //#region Methods
-    /**
-      * Returns the instance of the PageRequestManager class for the page.
-      * @return The current instance of the PageRequestManager class. You do not create a new instance of the PageRequestManager class directly. Instead, an instance is available when partial-page rendering is enabled.
-      */
-    def getInstance(): PageRequestManager = js.native
-  }
-  
+  trait PageRequestManagerTimeoutException extends StObject
 }
-

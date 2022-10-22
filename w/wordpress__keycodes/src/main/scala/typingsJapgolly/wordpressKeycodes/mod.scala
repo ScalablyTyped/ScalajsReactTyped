@@ -1,126 +1,231 @@
 package typingsJapgolly.wordpressKeycodes
 
-import typingsJapgolly.std.Event_
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`121`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`13`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`27`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`32`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`37`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`38`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`39`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`40`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`46`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`8`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesNumbers.`9`
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesStrings.alt
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesStrings.ctrl
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesStrings.meta
-import typingsJapgolly.wordpressKeycodes.wordpressKeycodesStrings.shift
+import org.scalajs.dom.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@wordpress/keycodes", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  val ALT: alt = js.native
-  val BACKSPACE: `8` = js.native
-  val COMMAND: meta = js.native
-  val CTRL: ctrl = js.native
-  val DELETE: `46` = js.native
-  val DOWN: `40` = js.native
-  val ENTER: `13` = js.native
-  val ESCAPE: `27` = js.native
-  val F10: `121` = js.native
-  val LEFT: `37` = js.native
-  val RIGHT: `39` = js.native
-  val SHIFT: shift = js.native
-  val SPACE: `32` = js.native
-  val TAB: `9` = js.native
-  val UP: `38` = js.native
+object mod {
+  
+  @JSImport("@wordpress/keycodes", "ALT")
   @js.native
-  object displayShortcut extends js.Object {
-    def access(character: String): String = js.native
-    def alt(character: String): String = js.native
-    def ctrl(character: String): String = js.native
-    def ctrlShift(character: String): String = js.native
-    def primary(character: String): String = js.native
-    def primaryAlt(character: String): String = js.native
-    def primaryShift(character: String): String = js.native
-    def secondary(character: String): String = js.native
-    def shift(character: String): String = js.native
-    def shiftAlt(character: String): String = js.native
+  val ALT: /* "alt" */ String = js.native
+  
+  @JSImport("@wordpress/keycodes", "BACKSPACE")
+  @js.native
+  val BACKSPACE: /* 8 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "COMMAND")
+  @js.native
+  val COMMAND: /* "meta" */ String = js.native
+  
+  @JSImport("@wordpress/keycodes", "CTRL")
+  @js.native
+  val CTRL: /* "ctrl" */ String = js.native
+  
+  @JSImport("@wordpress/keycodes", "DELETE")
+  @js.native
+  val DELETE: /* 46 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "DOWN")
+  @js.native
+  val DOWN: /* 40 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "ENTER")
+  @js.native
+  val ENTER: /* 13 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "ESCAPE")
+  @js.native
+  val ESCAPE: /* 27 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "F10")
+  @js.native
+  val F10: /* 121 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "LEFT")
+  @js.native
+  val LEFT: /* 37 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "RIGHT")
+  @js.native
+  val RIGHT: /* 39 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "SHIFT")
+  @js.native
+  val SHIFT: /* "shift" */ String = js.native
+  
+  @JSImport("@wordpress/keycodes", "SPACE")
+  @js.native
+  val SPACE: /* 32 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "TAB")
+  @js.native
+  val TAB: /* 9 */ Double = js.native
+  
+  @JSImport("@wordpress/keycodes", "UP")
+  @js.native
+  val UP: /* 38 */ Double = js.native
+  
+  object displayShortcut {
+    
+    @JSImport("@wordpress/keycodes", "displayShortcut")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
-  object displayShortcutList extends js.Object {
-    def access(character: String): js.Array[String] = js.native
-    def alt(character: String): js.Array[String] = js.native
-    def ctrl(character: String): js.Array[String] = js.native
-    def ctrlShift(character: String): js.Array[String] = js.native
-    def primary(character: String): js.Array[String] = js.native
-    def primaryAlt(character: String): js.Array[String] = js.native
-    def primaryShift(character: String): js.Array[String] = js.native
-    def secondary(character: String): js.Array[String] = js.native
-    def shift(character: String): js.Array[String] = js.native
-    def shiftAlt(character: String): js.Array[String] = js.native
+  object displayShortcutList {
+    
+    @JSImport("@wordpress/keycodes", "displayShortcutList")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def alt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def ctrl(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def ctrlShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def primary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def primaryAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def primaryShift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def secondary(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def shift(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def shiftAlt(character: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
-  @js.native
-  object isKeyboardEvent extends js.Object {
-    def access(event: Event_, character: String): Boolean = js.native
-    def alt(event: Event_, character: String): Boolean = js.native
-    def ctrl(event: Event_, character: String): Boolean = js.native
-    def ctrlShift(event: Event_, character: String): Boolean = js.native
-    def primary(event: Event_, character: String): Boolean = js.native
-    def primaryAlt(event: Event_, character: String): Boolean = js.native
-    def primaryShift(event: Event_, character: String): Boolean = js.native
-    def secondary(event: Event_, character: String): Boolean = js.native
-    def shift(event: Event_, character: String): Boolean = js.native
-    def shiftAlt(event: Event_, character: String): Boolean = js.native
+  object isKeyboardEvent {
+    
+    @JSImport("@wordpress/keycodes", "isKeyboardEvent")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("access")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def alt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("alt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def ctrl(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def ctrlShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def primary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def primaryAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def primaryShift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def secondary(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def shift(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shift")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    inline def shiftAlt(event: Event, character: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(event.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
-  @js.native
-  object modifiers extends js.Object {
-    def access(isApple: js.Function0[Boolean]): js.Array[String] = js.native
-    def alt(): js.Array[String] = js.native
-    def ctrl(): js.Array[String] = js.native
-    def ctrlShift(): js.Array[String] = js.native
-    def primary(isApple: js.Function0[Boolean]): js.Array[String] = js.native
-    def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = js.native
-    def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = js.native
-    def secondary(isApple: js.Function0[Boolean]): js.Array[String] = js.native
-    def shift(): js.Array[String] = js.native
-    def shiftAlt(): js.Array[String] = js.native
+  object modifiers {
+    
+    @JSImport("@wordpress/keycodes", "modifiers")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def alt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")().asInstanceOf[js.Array[String]]
+    
+    inline def ctrl(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")().asInstanceOf[js.Array[String]]
+    
+    inline def ctrlShift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")().asInstanceOf[js.Array[String]]
+    
+    inline def primary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def primaryAlt(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def primaryShift(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def secondary(isApple: js.Function0[Boolean]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(isApple.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    
+    inline def shift(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.Array[String]]
+    
+    inline def shiftAlt(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")().asInstanceOf[js.Array[String]]
   }
   
-  @js.native
-  object rawShortcut extends js.Object {
-    def access(character: String): String = js.native
-    def alt(character: String): String = js.native
-    def ctrl(character: String): String = js.native
-    def ctrlShift(character: String): String = js.native
-    def primary(character: String): String = js.native
-    def primaryAlt(character: String): String = js.native
-    def primaryShift(character: String): String = js.native
-    def secondary(character: String): String = js.native
-    def shift(character: String): String = js.native
-    def shiftAlt(character: String): String = js.native
+  object rawShortcut {
+    
+    @JSImport("@wordpress/keycodes", "rawShortcut")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
-  object shortcutAriaLabel extends js.Object {
-    def access(character: String): String = js.native
-    def alt(character: String): String = js.native
-    def ctrl(character: String): String = js.native
-    def ctrlShift(character: String): String = js.native
-    def primary(character: String): String = js.native
-    def primaryAlt(character: String): String = js.native
-    def primaryShift(character: String): String = js.native
-    def secondary(character: String): String = js.native
-    def shift(character: String): String = js.native
-    def shiftAlt(character: String): String = js.native
+  object shortcutAriaLabel {
+    
+    @JSImport("@wordpress/keycodes", "shortcutAriaLabel")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def access(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("access")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def alt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("alt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrl(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrl")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def ctrlShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ctrlShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def primaryShift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryShift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def secondary(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("secondary")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shift(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")(character.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    inline def shiftAlt(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftAlt")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  
 }
-

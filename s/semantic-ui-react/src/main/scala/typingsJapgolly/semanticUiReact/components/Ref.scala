@@ -1,39 +1,32 @@
 package typingsJapgolly.semanticUiReact.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.Js.MountedWithRawType
-import japgolly.scalajs.react.component.Js.RawMounted
-import japgolly.scalajs.react.component.Js.UnmountedSimple
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.stardustUiReactComponentRef.typesMod.RefProps
+import japgolly.scalajs.react.Callback
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.fluentuiReactComponentRef.distEsRefMod.RefProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Ref {
-  def apply(
-    innerRef: japgolly.scalajs.react.raw.React.Ref = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedSimple[RefProps, MountedWithRawType[RefProps, js.Object, RawMounted[RefProps, js.Object]]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsComponent[
-  typingsJapgolly.stardustUiReactComponentRef.typesMod.RefProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  js.Object](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stardustUiReactComponentRef.typesMod.RefProps])(children: _*)
-  }
   @JSImport("semantic-ui-react", "Ref")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.semanticUiReact.mod.Ref] {
+    
+    inline def innerRef(value: typingsJapgolly.react.mod.Ref[HTMLElement]): this.type = set("innerRef", value.asInstanceOf[js.Any])
+    
+    inline def innerRefFunction1(value: HTMLElement | Null => Callback): this.type = set("innerRef", js.Any.fromFunction1((t0: HTMLElement | Null) => value(t0).runNow()))
+    
+    inline def innerRefNull: this.type = set("innerRef", null)
+  }
+  
+  implicit def make(companion: Ref.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: RefProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

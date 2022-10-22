@@ -1,140 +1,221 @@
 package typingsJapgolly.jqueryBlockui
 
 import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait JQBlockUIOptions extends js.Object {
+trait JQBlockUIOptions extends StObject {
+  
   /** 
     * allow body element to be stetched in ie6; this makes blocking look better
     * on "short" pages.  disable if you wish to prevent changes to the body height 
     */
   var allowBodyStretch: js.UndefOr[Boolean] = js.undefined
+  
   /** z-index for the blocking overlay */
   var baseZ: js.UndefOr[Double] = js.undefined
+  
   /** enable if you want key and mouse events to be disabled for content that is blocked */
   var bindEvents: js.UndefOr[Boolean] = js.undefined
+  
   /** class name of the message block */
   var blockMsgClass: js.UndefOr[String] = js.undefined
+  
   /** set true to have the message automatically centered for X */
   var centerX: js.UndefOr[Boolean] = js.undefined
+  
   /** set true to have the message automatically centered for Y */
   var centerY: js.UndefOr[Boolean] = js.undefined
+  
   /** be default blockUI will supress tab navigation from leaving blocking content(if bindEvents is true) */
   var constrainTabKey: js.UndefOr[Boolean] = js.undefined
+  
   /** 
     * styles for the message when blocking; if you wish to disable 
     * these and use an external stylesheet then do this in your code: 
     * $.blockUI.defaults.css = {}; 
     */
-  var css: js.UndefOr[js.Any] = js.undefined
+  var css: js.UndefOr[Any] = js.undefined
+  
   /** style to replace wait cursor before unblocking to correct issue of lingering wait cursor */
   var cursorReset: js.UndefOr[String] = js.undefined
+  
   /** only used when theme == true (requires jquery-ui.js to be loaded) */
   var draggable: js.UndefOr[Boolean] = js.undefined
+  
   /** fadeIn time in millis; set to 0 to disable fadeIn on block  */
   var fadeIn: js.UndefOr[Double] = js.undefined
+  
   /** fadeOut time in millis; set to 0 to disable fadeOut on unblock */
   var fadeOut: js.UndefOr[Double] = js.undefined
+  
   /** if true, focus will be placed in the first available input field when page blocking */
   var focusInput: js.UndefOr[Boolean] = js.undefined
+  
   /** force usage of iframe in non-IE browsers (handy for blocking applets) */
   var forceIframe: js.UndefOr[Boolean] = js.undefined
+  
   /** styles applied when using $.growlUI */
-  var growlCSS: js.UndefOr[js.Any] = js.undefined
+  var growlCSS: js.UndefOr[Any] = js.undefined
+  
   /** ifreamSrc for IE */
   var iframeSrc: js.UndefOr[String] = js.undefined
+  
   /** if it is already blocked, then ignore it (don't unblock and reblock) */
   var ignoreIfBlocked: js.UndefOr[Boolean] = js.undefined
+  
   /** message displayed when blocking (use null for no message) */
-  var message: js.UndefOr[js.Any] = js.undefined
+  var message: js.UndefOr[Any] = js.undefined
+  
   /** callback method invoked when fadeIn has completed and blocking message is visible */
   var onBlock: js.UndefOr[js.Function0[Unit]] = js.undefined
+  
   /** 
     * callback method invoked when unblocking has completed; the callback is 
     * passed the element that has been unblocked (which is the window object for page 
     * blocks) and the options that were passed to the unblock call: 
     * onUnblock(element, options) 
     */
-  var onUnblock: js.UndefOr[js.Function2[/* element */ js.Any, /* options */ js.Any, Unit]] = js.undefined
+  var onUnblock: js.UndefOr[js.Function2[/* element */ Any, /* options */ Any, Unit]] = js.undefined
+  
   /** styles for the overlay */
-  var overlayCSS: js.UndefOr[js.Any] = js.undefined
+  var overlayCSS: js.UndefOr[Any] = js.undefined
+  
   // don't ask; if you really must know: http://groups.google.com/group/jquery-en/browse_thread/thread/36640a8730503595/2f6a79a77a78e493#2f6a79a77a78e493 
   /** quirksmodeOffsetHack */
   var quirksmodeOffsetHack: js.UndefOr[Double] = js.undefined
+  
   /** disable if you don't want to show the overlay */
   var showOverlay: js.UndefOr[Boolean] = js.undefined
+  
   /** set to true to use with jQuery UI themes */
   var theme: js.UndefOr[Boolean] = js.undefined
+  
   /** minimal style set used when themes are used  */
-  var themedCSS: js.UndefOr[js.Any] = js.undefined
+  var themedCSS: js.UndefOr[Any] = js.undefined
+  
   /** time in millis to wait before auto-unblocking; set to 0 to disable auto-unblock */
   var timeout: js.UndefOr[Double] = js.undefined
+  
   /** title string; only used when theme == true  */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object JQBlockUIOptions {
-  @scala.inline
-  def apply(
-    allowBodyStretch: js.UndefOr[Boolean] = js.undefined,
-    baseZ: Int | Double = null,
-    bindEvents: js.UndefOr[Boolean] = js.undefined,
-    blockMsgClass: String = null,
-    centerX: js.UndefOr[Boolean] = js.undefined,
-    centerY: js.UndefOr[Boolean] = js.undefined,
-    constrainTabKey: js.UndefOr[Boolean] = js.undefined,
-    css: js.Any = null,
-    cursorReset: String = null,
-    draggable: js.UndefOr[Boolean] = js.undefined,
-    fadeIn: Int | Double = null,
-    fadeOut: Int | Double = null,
-    focusInput: js.UndefOr[Boolean] = js.undefined,
-    forceIframe: js.UndefOr[Boolean] = js.undefined,
-    growlCSS: js.Any = null,
-    iframeSrc: String = null,
-    ignoreIfBlocked: js.UndefOr[Boolean] = js.undefined,
-    message: js.Any = null,
-    onBlock: js.UndefOr[Callback] = js.undefined,
-    onUnblock: (/* element */ js.Any, /* options */ js.Any) => Callback = null,
-    overlayCSS: js.Any = null,
-    quirksmodeOffsetHack: Int | Double = null,
-    showOverlay: js.UndefOr[Boolean] = js.undefined,
-    theme: js.UndefOr[Boolean] = js.undefined,
-    themedCSS: js.Any = null,
-    timeout: Int | Double = null,
-    title: String = null
-  ): JQBlockUIOptions = {
+  
+  inline def apply(): JQBlockUIOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(allowBodyStretch)) __obj.updateDynamic("allowBodyStretch")(allowBodyStretch.asInstanceOf[js.Any])
-    if (baseZ != null) __obj.updateDynamic("baseZ")(baseZ.asInstanceOf[js.Any])
-    if (!js.isUndefined(bindEvents)) __obj.updateDynamic("bindEvents")(bindEvents.asInstanceOf[js.Any])
-    if (blockMsgClass != null) __obj.updateDynamic("blockMsgClass")(blockMsgClass.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerX)) __obj.updateDynamic("centerX")(centerX.asInstanceOf[js.Any])
-    if (!js.isUndefined(centerY)) __obj.updateDynamic("centerY")(centerY.asInstanceOf[js.Any])
-    if (!js.isUndefined(constrainTabKey)) __obj.updateDynamic("constrainTabKey")(constrainTabKey.asInstanceOf[js.Any])
-    if (css != null) __obj.updateDynamic("css")(css.asInstanceOf[js.Any])
-    if (cursorReset != null) __obj.updateDynamic("cursorReset")(cursorReset.asInstanceOf[js.Any])
-    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable.asInstanceOf[js.Any])
-    if (fadeIn != null) __obj.updateDynamic("fadeIn")(fadeIn.asInstanceOf[js.Any])
-    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
-    if (!js.isUndefined(focusInput)) __obj.updateDynamic("focusInput")(focusInput.asInstanceOf[js.Any])
-    if (!js.isUndefined(forceIframe)) __obj.updateDynamic("forceIframe")(forceIframe.asInstanceOf[js.Any])
-    if (growlCSS != null) __obj.updateDynamic("growlCSS")(growlCSS.asInstanceOf[js.Any])
-    if (iframeSrc != null) __obj.updateDynamic("iframeSrc")(iframeSrc.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreIfBlocked)) __obj.updateDynamic("ignoreIfBlocked")(ignoreIfBlocked.asInstanceOf[js.Any])
-    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
-    onBlock.foreach(p => __obj.updateDynamic("onBlock")(p.toJsFn))
-    if (onUnblock != null) __obj.updateDynamic("onUnblock")(js.Any.fromFunction2((t0: /* element */ js.Any, t1: /* options */ js.Any) => onUnblock(t0, t1).runNow()))
-    if (overlayCSS != null) __obj.updateDynamic("overlayCSS")(overlayCSS.asInstanceOf[js.Any])
-    if (quirksmodeOffsetHack != null) __obj.updateDynamic("quirksmodeOffsetHack")(quirksmodeOffsetHack.asInstanceOf[js.Any])
-    if (!js.isUndefined(showOverlay)) __obj.updateDynamic("showOverlay")(showOverlay.asInstanceOf[js.Any])
-    if (!js.isUndefined(theme)) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
-    if (themedCSS != null) __obj.updateDynamic("themedCSS")(themedCSS.asInstanceOf[js.Any])
-    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQBlockUIOptions]
   }
+  
+  extension [Self <: JQBlockUIOptions](x: Self) {
+    
+    inline def setAllowBodyStretch(value: Boolean): Self = StObject.set(x, "allowBodyStretch", value.asInstanceOf[js.Any])
+    
+    inline def setAllowBodyStretchUndefined: Self = StObject.set(x, "allowBodyStretch", js.undefined)
+    
+    inline def setBaseZ(value: Double): Self = StObject.set(x, "baseZ", value.asInstanceOf[js.Any])
+    
+    inline def setBaseZUndefined: Self = StObject.set(x, "baseZ", js.undefined)
+    
+    inline def setBindEvents(value: Boolean): Self = StObject.set(x, "bindEvents", value.asInstanceOf[js.Any])
+    
+    inline def setBindEventsUndefined: Self = StObject.set(x, "bindEvents", js.undefined)
+    
+    inline def setBlockMsgClass(value: String): Self = StObject.set(x, "blockMsgClass", value.asInstanceOf[js.Any])
+    
+    inline def setBlockMsgClassUndefined: Self = StObject.set(x, "blockMsgClass", js.undefined)
+    
+    inline def setCenterX(value: Boolean): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    
+    inline def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
+    
+    inline def setCenterY(value: Boolean): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    
+    inline def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
+    
+    inline def setConstrainTabKey(value: Boolean): Self = StObject.set(x, "constrainTabKey", value.asInstanceOf[js.Any])
+    
+    inline def setConstrainTabKeyUndefined: Self = StObject.set(x, "constrainTabKey", js.undefined)
+    
+    inline def setCss(value: Any): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    
+    inline def setCursorReset(value: String): Self = StObject.set(x, "cursorReset", value.asInstanceOf[js.Any])
+    
+    inline def setCursorResetUndefined: Self = StObject.set(x, "cursorReset", js.undefined)
+    
+    inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
+    
+    inline def setDraggableUndefined: Self = StObject.set(x, "draggable", js.undefined)
+    
+    inline def setFadeIn(value: Double): Self = StObject.set(x, "fadeIn", value.asInstanceOf[js.Any])
+    
+    inline def setFadeInUndefined: Self = StObject.set(x, "fadeIn", js.undefined)
+    
+    inline def setFadeOut(value: Double): Self = StObject.set(x, "fadeOut", value.asInstanceOf[js.Any])
+    
+    inline def setFadeOutUndefined: Self = StObject.set(x, "fadeOut", js.undefined)
+    
+    inline def setFocusInput(value: Boolean): Self = StObject.set(x, "focusInput", value.asInstanceOf[js.Any])
+    
+    inline def setFocusInputUndefined: Self = StObject.set(x, "focusInput", js.undefined)
+    
+    inline def setForceIframe(value: Boolean): Self = StObject.set(x, "forceIframe", value.asInstanceOf[js.Any])
+    
+    inline def setForceIframeUndefined: Self = StObject.set(x, "forceIframe", js.undefined)
+    
+    inline def setGrowlCSS(value: Any): Self = StObject.set(x, "growlCSS", value.asInstanceOf[js.Any])
+    
+    inline def setGrowlCSSUndefined: Self = StObject.set(x, "growlCSS", js.undefined)
+    
+    inline def setIframeSrc(value: String): Self = StObject.set(x, "iframeSrc", value.asInstanceOf[js.Any])
+    
+    inline def setIframeSrcUndefined: Self = StObject.set(x, "iframeSrc", js.undefined)
+    
+    inline def setIgnoreIfBlocked(value: Boolean): Self = StObject.set(x, "ignoreIfBlocked", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreIfBlockedUndefined: Self = StObject.set(x, "ignoreIfBlocked", js.undefined)
+    
+    inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    
+    inline def setOnBlock(value: Callback): Self = StObject.set(x, "onBlock", value.toJsFn)
+    
+    inline def setOnBlockUndefined: Self = StObject.set(x, "onBlock", js.undefined)
+    
+    inline def setOnUnblock(value: (/* element */ Any, /* options */ Any) => Callback): Self = StObject.set(x, "onUnblock", js.Any.fromFunction2((t0: /* element */ Any, t1: /* options */ Any) => (value(t0, t1)).runNow()))
+    
+    inline def setOnUnblockUndefined: Self = StObject.set(x, "onUnblock", js.undefined)
+    
+    inline def setOverlayCSS(value: Any): Self = StObject.set(x, "overlayCSS", value.asInstanceOf[js.Any])
+    
+    inline def setOverlayCSSUndefined: Self = StObject.set(x, "overlayCSS", js.undefined)
+    
+    inline def setQuirksmodeOffsetHack(value: Double): Self = StObject.set(x, "quirksmodeOffsetHack", value.asInstanceOf[js.Any])
+    
+    inline def setQuirksmodeOffsetHackUndefined: Self = StObject.set(x, "quirksmodeOffsetHack", js.undefined)
+    
+    inline def setShowOverlay(value: Boolean): Self = StObject.set(x, "showOverlay", value.asInstanceOf[js.Any])
+    
+    inline def setShowOverlayUndefined: Self = StObject.set(x, "showOverlay", js.undefined)
+    
+    inline def setTheme(value: Boolean): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    
+    inline def setThemedCSS(value: Any): Self = StObject.set(x, "themedCSS", value.asInstanceOf[js.Any])
+    
+    inline def setThemedCSSUndefined: Self = StObject.set(x, "themedCSS", js.undefined)
+    
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

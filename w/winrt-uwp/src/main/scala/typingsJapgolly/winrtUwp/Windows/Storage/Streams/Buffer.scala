@@ -1,42 +1,34 @@
 package typingsJapgolly.winrtUwp.Windows.Storage.Streams
 
-import typingsJapgolly.winrtUwp.Windows.Foundation.IMemoryBuffer
-import typingsJapgolly.winrtUwp.Windows.Foundation.MemoryBuffer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a default implementation of the IBuffer interface and its related interfaces. */
-@JSGlobal("Windows.Storage.Streams.Buffer")
-@js.native
-class Buffer protected () extends js.Object {
-  /**
-    * Initializes a new instance of the Buffer class with the specified capacity.
-    * @param capacity The maximum number of bytes that the buffer can hold.
-    */
-  def this(capacity: Double) = this()
-  var byteLength: js.Any = js.native
-   /* unmapped type */ /** Gets the maximum number of bytes that the buffer can hold. */
-  var capacity: Double = js.native
+trait Buffer extends StObject {
+  
+  var byteLength: Any
+  
+  /* unmapped type */
+  /** Gets the maximum number of bytes that the buffer can hold. */
+  var capacity: Double
+  
   /** Gets the number of bytes currently in use in the buffer. */
-  var length: Double = js.native
+  var length: Double
 }
-
-/* static members */
-@JSGlobal("Windows.Storage.Streams.Buffer")
-@js.native
-object Buffer extends js.Object {
-  /**
-    * Creates a new buffer containing a copy of a specified buffer.
-    * @param input The buffer to be copied.
-    * @return The newly created copy.
-    */
-  def createCopyFromMemoryBuffer(input: IMemoryBuffer): Buffer = js.native
-  /**
-    * Creates a MemoryBuffer from an existing IBuffer .
-    * @param input The input IBuffer .
-    * @return The newly created MemoryBuffer .
-    */
-  def createMemoryBufferOverIBuffer(input: IBuffer): MemoryBuffer = js.native
+object Buffer {
+  
+  inline def apply(byteLength: Any, capacity: Double, length: Double): Buffer = {
+    val __obj = js.Dynamic.literal(byteLength = byteLength.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Buffer]
+  }
+  
+  extension [Self <: Buffer](x: Self) {
+    
+    inline def setByteLength(value: Any): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
+    
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+  }
 }
-

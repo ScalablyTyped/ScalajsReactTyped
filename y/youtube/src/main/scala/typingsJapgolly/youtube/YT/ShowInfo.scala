@@ -1,29 +1,28 @@
 package typingsJapgolly.youtube.YT
 
-import typingsJapgolly.youtube.youtubeNumbers.`0`
-import typingsJapgolly.youtube.youtubeNumbers.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.youtube.youtubeNumbers.`0`
-  - typingsJapgolly.youtube.youtubeNumbers.`1`
-*/
-trait ShowInfo extends js.Object
-
-object ShowInfo {
+@js.native
+sealed trait ShowInfo extends StObject
+@JSGlobal("YT.ShowInfo")
+@js.native
+object ShowInfo extends StObject {
+  
   /**
-  		 * Hide video title and uploader before video starts playing.
-  		 */
-  @scala.inline
-  def Hide: `0` = this.cast(0)
+    * Hide video title and uploader before video starts playing.
+    */
+  @js.native
+  sealed trait Hide
+    extends StObject
+       with ShowInfo
+  
   /**
-  		 * Show video title and uploader before video starts playing.
-  		 */
-  @scala.inline
-  def Show: `1` = this.cast(1)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+    * Show video title and uploader before video starts playing.
+    */
+  @js.native
+  sealed trait Show
+    extends StObject
+       with ShowInfo
 }
-

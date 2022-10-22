@@ -1,29 +1,32 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait PaymentDetailsInit extends PaymentDetailsBase {
+trait PaymentDetailsInit
+  extends StObject
+     with PaymentDetailsBase {
+  
+  /* standard dom */
   var id: js.UndefOr[java.lang.String] = js.undefined
+  
+  /* standard dom */
   var total: PaymentItem
 }
-
 object PaymentDetailsInit {
-  @scala.inline
-  def apply(
-    total: PaymentItem,
-    displayItems: js.Array[PaymentItem] = null,
-    id: java.lang.String = null,
-    modifiers: js.Array[PaymentDetailsModifier] = null,
-    shippingOptions: js.Array[PaymentShippingOption] = null
-  ): PaymentDetailsInit = {
+  
+  inline def apply(total: PaymentItem): PaymentDetailsInit = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
-    if (displayItems != null) __obj.updateDynamic("displayItems")(displayItems.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (modifiers != null) __obj.updateDynamic("modifiers")(modifiers.asInstanceOf[js.Any])
-    if (shippingOptions != null) __obj.updateDynamic("shippingOptions")(shippingOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaymentDetailsInit]
   }
+  
+  extension [Self <: PaymentDetailsInit](x: Self) {
+    
+    inline def setId(value: java.lang.String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+  }
 }
-

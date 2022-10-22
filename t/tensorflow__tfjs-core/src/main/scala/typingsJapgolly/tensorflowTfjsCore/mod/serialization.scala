@@ -1,26 +1,28 @@
 package typingsJapgolly.tensorflowTfjsCore.mod
 
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.ConfigDict
-import typingsJapgolly.tensorflowTfjsCore.serializationMod.SerializableConstructor
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.ConfigDict
+import typingsJapgolly.tensorflowTfjsCore.distSerializationMod.SerializableConstructor
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@tensorflow/tfjs-core", "serialization")
-@js.native
-object serialization extends js.Object {
-  @js.native
-  abstract class Serializable ()
-    extends typingsJapgolly.tensorflowTfjsCore.serializationMod.Serializable
+object serialization {
   
+  @JSImport("@tensorflow/tfjs-core", "serialization")
   @js.native
-  class SerializationMap protected ()
-    extends typingsJapgolly.tensorflowTfjsCore.serializationMod.SerializationMap
+  val ^ : js.Any = js.native
   
-  def registerClass[T /* <: typingsJapgolly.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = js.native
+  /* note: abstract class */ @JSImport("@tensorflow/tfjs-core", "serialization.Serializable")
+  @js.native
+  open class Serializable ()
+    extends typingsJapgolly.tensorflowTfjsCore.distBaseMod.serialization.Serializable
   /* static members */
-  @js.native
-  object Serializable extends js.Object {
+  object Serializable {
+    
+    @JSImport("@tensorflow/tfjs-core", "serialization.Serializable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates an instance of T from a ConfigDict.
       *
@@ -30,22 +32,35 @@ object serialization extends js.Object {
       * @param config The Configuration for the object.
       */
     /** @nocollapse */
-    def fromConfig[T /* <: typingsJapgolly.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = js.native
+    inline def fromConfig[T /* <: typingsJapgolly.tensorflowTfjsCore.distSerializationMod.Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
   }
   
-  /* static members */
+  @JSImport("@tensorflow/tfjs-core", "serialization.SerializationMap")
   @js.native
-  object SerializationMap extends js.Object {
-    var instance: js.Any = js.native
+  /* private */ open class SerializationMap ()
+    extends typingsJapgolly.tensorflowTfjsCore.distBaseMod.serialization.SerializationMap
+  /* static members */
+  object SerializationMap {
+    
+    @JSImport("@tensorflow/tfjs-core", "serialization.SerializationMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the singleton instance of the map.
       */
-    def getMap(): typingsJapgolly.tensorflowTfjsCore.serializationMod.SerializationMap = js.native
+    inline def getMap(): typingsJapgolly.tensorflowTfjsCore.distSerializationMod.SerializationMap = ^.asInstanceOf[js.Dynamic].applyDynamic("getMap")().asInstanceOf[typingsJapgolly.tensorflowTfjsCore.distSerializationMod.SerializationMap]
+    
+    @JSImport("@tensorflow/tfjs-core", "serialization.SerializationMap.instance")
+    @js.native
+    def instance: Any = js.native
+    inline def instance_=(x: Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+    
     /**
       * Registers the class as serializable.
       */
-    def register[T /* <: typingsJapgolly.tensorflowTfjsCore.serializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = js.native
+    inline def register[T /* <: typingsJapgolly.tensorflowTfjsCore.distSerializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
+  inline def registerClass[T /* <: typingsJapgolly.tensorflowTfjsCore.distSerializationMod.Serializable */](cls: SerializableConstructor[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(cls.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

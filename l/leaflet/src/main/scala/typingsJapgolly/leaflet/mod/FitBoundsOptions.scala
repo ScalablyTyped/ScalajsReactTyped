@@ -1,42 +1,63 @@
 package typingsJapgolly.leaflet.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- typingsJapgolly.leaflet.mod.PanOptions because var conflicts: animate. Inlined duration, easeLinearity, noMoveStart */ trait FitBoundsOptions extends ZoomOptions {
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- typingsJapgolly.leaflet.mod.PanOptions because var conflicts: animate. Inlined duration, easeLinearity, noMoveStart */ trait FitBoundsOptions
+  extends StObject
+     with ZoomOptions {
+  
   var duration: js.UndefOr[Double] = js.undefined
+  
   var easeLinearity: js.UndefOr[Double] = js.undefined
+  
   var maxZoom: js.UndefOr[Double] = js.undefined
+  
   var noMoveStart: js.UndefOr[Boolean] = js.undefined
+  
   var padding: js.UndefOr[PointExpression] = js.undefined
+  
   var paddingBottomRight: js.UndefOr[PointExpression] = js.undefined
+  
   var paddingTopLeft: js.UndefOr[PointExpression] = js.undefined
 }
-
 object FitBoundsOptions {
-  @scala.inline
-  def apply(
-    animate: js.UndefOr[Boolean] = js.undefined,
-    duration: Int | Double = null,
-    easeLinearity: Int | Double = null,
-    maxZoom: Int | Double = null,
-    noMoveStart: js.UndefOr[Boolean] = js.undefined,
-    padding: PointExpression = null,
-    paddingBottomRight: PointExpression = null,
-    paddingTopLeft: PointExpression = null
-  ): FitBoundsOptions = {
+  
+  inline def apply(): FitBoundsOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate.asInstanceOf[js.Any])
-    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
-    if (easeLinearity != null) __obj.updateDynamic("easeLinearity")(easeLinearity.asInstanceOf[js.Any])
-    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
-    if (!js.isUndefined(noMoveStart)) __obj.updateDynamic("noMoveStart")(noMoveStart.asInstanceOf[js.Any])
-    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
-    if (paddingBottomRight != null) __obj.updateDynamic("paddingBottomRight")(paddingBottomRight.asInstanceOf[js.Any])
-    if (paddingTopLeft != null) __obj.updateDynamic("paddingTopLeft")(paddingTopLeft.asInstanceOf[js.Any])
     __obj.asInstanceOf[FitBoundsOptions]
   }
+  
+  extension [Self <: FitBoundsOptions](x: Self) {
+    
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    
+    inline def setEaseLinearity(value: Double): Self = StObject.set(x, "easeLinearity", value.asInstanceOf[js.Any])
+    
+    inline def setEaseLinearityUndefined: Self = StObject.set(x, "easeLinearity", js.undefined)
+    
+    inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+    
+    inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+    
+    inline def setNoMoveStart(value: Boolean): Self = StObject.set(x, "noMoveStart", value.asInstanceOf[js.Any])
+    
+    inline def setNoMoveStartUndefined: Self = StObject.set(x, "noMoveStart", js.undefined)
+    
+    inline def setPadding(value: PointExpression): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBottomRight(value: PointExpression): Self = StObject.set(x, "paddingBottomRight", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingBottomRightUndefined: Self = StObject.set(x, "paddingBottomRight", js.undefined)
+    
+    inline def setPaddingTopLeft(value: PointExpression): Self = StObject.set(x, "paddingTopLeft", value.asInstanceOf[js.Any])
+    
+    inline def setPaddingTopLeftUndefined: Self = StObject.set(x, "paddingTopLeft", js.undefined)
+    
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+  }
 }
-

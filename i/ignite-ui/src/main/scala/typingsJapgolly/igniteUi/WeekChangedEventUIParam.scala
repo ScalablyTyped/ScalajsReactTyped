@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WeekChangedEventUIParam extends js.Object {
+trait WeekChangedEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to newly selected date.
-  	 */
-  var newSelectedDate: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to newly selected date.
+    */
+  var newSelectedDate: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to the scheduler.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to the scheduler.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object WeekChangedEventUIParam {
-  @scala.inline
-  def apply(newSelectedDate: js.Any = null, owner: js.Any = null): WeekChangedEventUIParam = {
+  
+  inline def apply(): WeekChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (newSelectedDate != null) __obj.updateDynamic("newSelectedDate")(newSelectedDate.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeekChangedEventUIParam]
   }
+  
+  extension [Self <: WeekChangedEventUIParam](x: Self) {
+    
+    inline def setNewSelectedDate(value: Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
+    
+    inline def setNewSelectedDateUndefined: Self = StObject.set(x, "newSelectedDate", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.winrt.Windows.Networking.Connectivity
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ILanIdentifier extends js.Object {
+trait ILanIdentifier extends StObject {
+  
   var infrastructureId: LanIdentifierData
+  
   var networkAdapterId: String
+  
   var portId: LanIdentifierData
 }
-
 object ILanIdentifier {
-  @scala.inline
-  def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): ILanIdentifier = {
-    val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
   
+  inline def apply(infrastructureId: LanIdentifierData, networkAdapterId: String, portId: LanIdentifierData): ILanIdentifier = {
+    val __obj = js.Dynamic.literal(infrastructureId = infrastructureId.asInstanceOf[js.Any], networkAdapterId = networkAdapterId.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILanIdentifier]
   }
+  
+  extension [Self <: ILanIdentifier](x: Self) {
+    
+    inline def setInfrastructureId(value: LanIdentifierData): Self = StObject.set(x, "infrastructureId", value.asInstanceOf[js.Any])
+    
+    inline def setNetworkAdapterId(value: String): Self = StObject.set(x, "networkAdapterId", value.asInstanceOf[js.Any])
+    
+    inline def setPortId(value: LanIdentifierData): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
+  }
 }
-

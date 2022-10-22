@@ -1,24 +1,20 @@
 package typingsJapgolly.weappApi.mod.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.weappApi.weappApiStrings.develop
   - typingsJapgolly.weappApi.weappApiStrings.trial
   - typingsJapgolly.weappApi.weappApiStrings.release
 */
-trait envVersion extends js.Object
-
+trait envVersion extends StObject
 object envVersion {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def develop: typingsJapgolly.weappApi.weappApiStrings.develop = this.cast("develop")
-  @scala.inline
-  def release: typingsJapgolly.weappApi.weappApiStrings.release = this.cast("release")
-  @scala.inline
-  def trial: typingsJapgolly.weappApi.weappApiStrings.trial = this.cast("trial")
+  
+  inline def develop: typingsJapgolly.weappApi.weappApiStrings.develop = "develop".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.develop]
+  
+  inline def release: typingsJapgolly.weappApi.weappApiStrings.release = "release".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.release]
+  
+  inline def trial: typingsJapgolly.weappApi.weappApiStrings.trial = "trial".asInstanceOf[typingsJapgolly.weappApi.weappApiStrings.trial]
 }
-

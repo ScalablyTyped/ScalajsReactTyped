@@ -1,34 +1,43 @@
 package typingsJapgolly.cssTree.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Atrule
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
+  
   var block: Block | Null
+  
   var name: String
+  
   var prelude: AtrulePrelude | Raw | Null
+  
   @JSName("type")
   var type_Atrule: typingsJapgolly.cssTree.cssTreeStrings.Atrule
 }
-
 object Atrule {
-  @scala.inline
-  def apply(
-    name: String,
-    `type`: typingsJapgolly.cssTree.cssTreeStrings.Atrule,
-    block: Block = null,
-    loc: CssLocation = null,
-    prelude: AtrulePrelude | Raw = null
-  ): Atrule = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (block != null) __obj.updateDynamic("block")(block.asInstanceOf[js.Any])
-    if (loc != null) __obj.updateDynamic("loc")(loc.asInstanceOf[js.Any])
-    if (prelude != null) __obj.updateDynamic("prelude")(prelude.asInstanceOf[js.Any])
+  
+  inline def apply(name: String): Atrule = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], block = null, prelude = null)
+    __obj.updateDynamic("type")("Atrule")
     __obj.asInstanceOf[Atrule]
   }
+  
+  extension [Self <: Atrule](x: Self) {
+    
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    
+    inline def setBlockNull: Self = StObject.set(x, "block", null)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setPrelude(value: AtrulePrelude | Raw): Self = StObject.set(x, "prelude", value.asInstanceOf[js.Any])
+    
+    inline def setPreludeNull: Self = StObject.set(x, "prelude", null)
+    
+    inline def setType(value: typingsJapgolly.cssTree.cssTreeStrings.Atrule): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

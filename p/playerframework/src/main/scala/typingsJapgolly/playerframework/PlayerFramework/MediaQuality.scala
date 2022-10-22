@@ -1,35 +1,28 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait MediaQuality extends js.Object
-
+sealed trait MediaQuality extends StObject
 @JSGlobal("PlayerFramework.MediaQuality")
 @js.native
-object MediaQuality extends js.Object {
-  /**
-  		* Typically indicates greater than or equal to 720p media quality.
-  		**/
-  @js.native
-  sealed trait highDefinition extends MediaQuality
+object MediaQuality extends StObject {
   
   /**
-  		* Typically indicates less than 720p media quality.
-  		**/
+    * Typically indicates greater than or equal to 720p media quality.
+    **/
   @js.native
-  sealed trait standardDefinition extends MediaQuality
+  sealed trait highDefinition
+    extends StObject
+       with MediaQuality
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[MediaQuality with Double] = js.native
-  /* 1 */ @js.native
-  object highDefinition extends TopLevel[highDefinition with Double]
-  
-  /* 0 */ @js.native
-  object standardDefinition extends TopLevel[standardDefinition with Double]
-  
+  /**
+    * Typically indicates less than 720p media quality.
+    **/
+  @js.native
+  sealed trait standardDefinition
+    extends StObject
+       with MediaQuality
 }
-

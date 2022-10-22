@@ -1,27 +1,36 @@
 package typingsJapgolly.node.inspectorMod.Profiler
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait StartPreciseCoverageParameterType extends js.Object {
+trait StartPreciseCoverageParameterType extends StObject {
+  
   /**
     * Collect accurate call counts beyond simple 'covered' or 'not covered'.
     */
   var callCount: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Collect block-based coverage.
     */
   var detailed: js.UndefOr[Boolean] = js.undefined
 }
-
 object StartPreciseCoverageParameterType {
-  @scala.inline
-  def apply(callCount: js.UndefOr[Boolean] = js.undefined, detailed: js.UndefOr[Boolean] = js.undefined): StartPreciseCoverageParameterType = {
+  
+  inline def apply(): StartPreciseCoverageParameterType = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(callCount)) __obj.updateDynamic("callCount")(callCount.asInstanceOf[js.Any])
-    if (!js.isUndefined(detailed)) __obj.updateDynamic("detailed")(detailed.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartPreciseCoverageParameterType]
   }
+  
+  extension [Self <: StartPreciseCoverageParameterType](x: Self) {
+    
+    inline def setCallCount(value: Boolean): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
+    
+    inline def setCallCountUndefined: Self = StObject.set(x, "callCount", js.undefined)
+    
+    inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+    
+    inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+  }
 }
-

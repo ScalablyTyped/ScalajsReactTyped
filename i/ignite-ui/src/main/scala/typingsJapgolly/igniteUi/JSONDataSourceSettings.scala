@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait JSONDataSourceSettings
-  extends /**
-	 * Option for JSONDataSourceSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Type of the data source.
-  	 */
+    * Type of the data source.
+    */
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object JSONDataSourceSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for JSONDataSourceSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    `type`: String = null
-  ): JSONDataSourceSettings = {
+  
+  inline def apply(): JSONDataSourceSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSONDataSourceSettings]
   }
+  
+  extension [Self <: JSONDataSourceSettings](x: Self) {
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

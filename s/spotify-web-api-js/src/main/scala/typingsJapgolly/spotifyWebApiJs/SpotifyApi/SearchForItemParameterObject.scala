@@ -1,8 +1,8 @@
 package typingsJapgolly.spotifyWebApiJs.SpotifyApi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Parameter Objects for searching
@@ -20,30 +20,45 @@ import scala.scalajs.js.annotation._
   * @param limit Optional. The maximum number of results to return. Default: 20. Minimum: 1. Maximum: 50.
   * @param offset Optional. The index of the first result to return. Default: 0 (i.e., the first result). Maximum offset: 100.000. Use with limit to get the next page of search results.
   */
-trait SearchForItemParameterObject extends js.Object {
+trait SearchForItemParameterObject extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var market: js.UndefOr[String] = js.undefined
+  
   var offset: js.UndefOr[Double] = js.undefined
+  
   var q: js.UndefOr[String] = js.undefined
+  
   var `type`: js.UndefOr[String] = js.undefined
 }
-
 object SearchForItemParameterObject {
-  @scala.inline
-  def apply(
-    limit: Int | Double = null,
-    market: String = null,
-    offset: Int | Double = null,
-    q: String = null,
-    `type`: String = null
-  ): SearchForItemParameterObject = {
+  
+  inline def apply(): SearchForItemParameterObject = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (market != null) __obj.updateDynamic("market")(market.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
-    if (q != null) __obj.updateDynamic("q")(q.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchForItemParameterObject]
   }
+  
+  extension [Self <: SearchForItemParameterObject](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setMarket(value: String): Self = StObject.set(x, "market", value.asInstanceOf[js.Any])
+    
+    inline def setMarketUndefined: Self = StObject.set(x, "market", js.undefined)
+    
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    
+    inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

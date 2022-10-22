@@ -1,21 +1,30 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DatePickerAnimation extends js.Object {
+trait DatePickerAnimation extends StObject {
+  
   var close: js.UndefOr[DatePickerAnimationClose] = js.undefined
+  
   var open: js.UndefOr[DatePickerAnimationOpen] = js.undefined
 }
-
 object DatePickerAnimation {
-  @scala.inline
-  def apply(close: DatePickerAnimationClose = null, open: DatePickerAnimationOpen = null): DatePickerAnimation = {
+  
+  inline def apply(): DatePickerAnimation = {
     val __obj = js.Dynamic.literal()
-    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
-    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatePickerAnimation]
   }
+  
+  extension [Self <: DatePickerAnimation](x: Self) {
+    
+    inline def setClose(value: DatePickerAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    
+    inline def setOpen(value: DatePickerAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+  }
 }
-

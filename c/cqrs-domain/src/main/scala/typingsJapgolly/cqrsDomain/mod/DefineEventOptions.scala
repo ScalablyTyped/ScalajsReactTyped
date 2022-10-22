@@ -1,25 +1,38 @@
 package typingsJapgolly.cqrsDomain.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // endregion
 // region defineEvent
-trait DefineEventOptions extends js.Object {
+trait DefineEventOptions extends StObject {
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var payload: js.UndefOr[String] = js.undefined
+  
   var version: js.UndefOr[Double] = js.undefined
 }
-
 object DefineEventOptions {
-  @scala.inline
-  def apply(name: String = null, payload: String = null, version: Int | Double = null): DefineEventOptions = {
+  
+  inline def apply(): DefineEventOptions = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
-    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineEventOptions]
   }
+  
+  extension [Self <: DefineEventOptions](x: Self) {
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+  }
 }
-

@@ -1,28 +1,28 @@
 package typingsJapgolly.promiseSftp.mod
 
-import typingsJapgolly.node.Buffer
 import typingsJapgolly.node.NodeJS.ReadableStream
 import typingsJapgolly.node.NodeJS.WritableStream
-import typingsJapgolly.promiseSftp.AnonAttrs
-import typingsJapgolly.promiseSftp.AnonAutoClose
-import typingsJapgolly.promiseSftp.AnonBuffer
+import typingsJapgolly.node.bufferMod.global.Buffer
+import typingsJapgolly.promiseSftp.anon.Attrs
+import typingsJapgolly.promiseSftp.anon.AutoClose
 import typingsJapgolly.ssh2.mod.SFTPWrapper
 import typingsJapgolly.ssh2Streams.mod.Attributes
 import typingsJapgolly.ssh2Streams.mod.InputAttributes
 import typingsJapgolly.ssh2Streams.mod.Stats
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PromiseSftp extends js.Object {
+trait PromiseSftp extends StObject {
+  
   def append(input: String, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def append(input: Buffer, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   /**
     * Same as `#append()`, but appends to `destPath` if it already exists.
     */
   def append(input: ReadableStream, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def append(input: Buffer, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   def chmod(path: String, mode: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   /**
     * Set the mode for a resource on the server.
@@ -30,6 +30,7 @@ trait PromiseSftp extends js.Object {
     * @param mode - The new mode, a number or a string with an octal number.
     */
   def chmod(path: String, mode: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the ownership for a resource on the server.
     * @param path - The path to the resource to change ownership of.
@@ -37,11 +38,13 @@ trait PromiseSftp extends js.Object {
     * @param gid - The id of the new owner group.
     */
   def chown(path: String, uid: Double, gid: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Close a resource on the server.
     * @param handle - A file handle returned from `#open()` or `#opendir()`.
     */
   def close(handle: Buffer): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Connects to an SFTP server; returned promise resolves to the server's
     * greeting message. If multiple authentication methods are available based
@@ -52,6 +55,7 @@ trait PromiseSftp extends js.Object {
     * work here, except for secure, secureOptions, and preserveCwd.
     */
   def connect(options: Options): Null | SFTPWrapper = js.native
+  
   /**
     * Creates a read stream from a file on the server.
     * @param path - The path of the file to create a read stream from.
@@ -59,7 +63,8 @@ trait PromiseSftp extends js.Object {
     */
   def createReadStream(path: String): typingsJapgolly.bluebird.mod.^[ReadableStream] = js.native
   def createReadStream(path: String, options: String): typingsJapgolly.bluebird.mod.^[ReadableStream] = js.native
-  def createReadStream(path: String, options: AnonAutoClose): typingsJapgolly.bluebird.mod.^[ReadableStream] = js.native
+  def createReadStream(path: String, options: AutoClose): typingsJapgolly.bluebird.mod.^[ReadableStream] = js.native
+  
   /**
     * Creates a write stream to a file on the server.
     * @param path - The path of the file to create a write stream to.
@@ -67,12 +72,14 @@ trait PromiseSftp extends js.Object {
     */
   def createWriteStream(path: String): typingsJapgolly.bluebird.mod.^[WritableStream] = js.native
   def createWriteStream(path: String, options: String): typingsJapgolly.bluebird.mod.^[WritableStream] = js.native
-  def createWriteStream(path: String, options: AnonAutoClose): typingsJapgolly.bluebird.mod.^[WritableStream] = js.native
+  def createWriteStream(path: String, options: AutoClose): typingsJapgolly.bluebird.mod.^[WritableStream] = js.native
+  
   /**
     * Closes the connection to the server immediately.
     * @returns whether the connection was connected prior to the call to **destroy()**.
     */
   def destroy(): Boolean = js.native
+  
   /**
     * Closes the connection to the server after any/all enqueued commands have
     * been executed.
@@ -80,18 +87,21 @@ trait PromiseSftp extends js.Object {
     * associated with closing the connection.
     */
   def end(): typingsJapgolly.bluebird.mod.^[Boolean] = js.native
+  
   /**
     * **OpenSSH extension**
     * Perform POSIX fstatvfs(2) on a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
     */
   def ext_openssh_fstatvfs(handle: Buffer): typingsJapgolly.bluebird.mod.^[Statvfs] = js.native
+  
   /**
     * **OpenSSH extension**
     * Perform POSIX fsync(3) on a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
     */
   def ext_openssh_fsync(handle: Buffer): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * **OpenSSH extension**
     * Performs POSIX link(2) to create a hard link on the server.
@@ -99,6 +109,7 @@ trait PromiseSftp extends js.Object {
     * @param linkPath - The path of the newly created hardlink.
     */
   def ext_openssh_hardlink(targetPath: String, linkPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * **OpenSSH extension**
     * Performs POSIX rename(3) on a resource on the server.
@@ -106,12 +117,14 @@ trait PromiseSftp extends js.Object {
     * @param destPath - The new path to rename the resource to.
     */
   def ext_openssh_rename(srcPath: String, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * **OpenSSH extension**
     * Perform POSIX fstatvfs(2) on a resource on the server.
     * @param path - The path to get the statvfs of.
     */
   def ext_openssh_statvfs(path: String): typingsJapgolly.bluebird.mod.^[Statvfs] = js.native
+  
   /**
     * Download a file from the server using parallel reads for faster throughput.
     * @param remotePath - The path to the remote file to read from.
@@ -119,6 +132,7 @@ trait PromiseSftp extends js.Object {
     */
   def fastGet(remotePath: String, localPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def fastGet(remotePath: String, localPath: String, options: FastOptions): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Upload a file to the server using parallel reads for faster throughput.
     * @param localPath - The path to the local file to read from.
@@ -126,6 +140,7 @@ trait PromiseSftp extends js.Object {
     */
   def fastPut(localPath: String, remotePath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def fastPut(localPath: String, remotePath: String, options: FastOptions): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   def fchmod(handle: Buffer, mode: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   /**
     * Set the mode for a resource on the server.
@@ -133,6 +148,7 @@ trait PromiseSftp extends js.Object {
     * @param mode - The new mode, a number or a string with an octal number.
     */
   def fchmod(handle: Buffer, mode: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the ownership for a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
@@ -140,50 +156,60 @@ trait PromiseSftp extends js.Object {
     * @param gid - The id of the new owner group.
     */
   def fchown(handle: Buffer, uid: Double, gid: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the attributes for a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
     */
   def fsetstat(handle: Buffer, attributes: Attributes): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Retrieves attributes from a resource on the server.
     * @param handle - A file handle returned from `#open()` or `#opendir()`
     */
   def fstat(handle: Buffer): typingsJapgolly.bluebird.mod.^[Stats] = js.native
-  def futimes(handle: Buffer, atime: Double, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def futimes(handle: Buffer, atime: Double, mtime: Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def futimes(handle: Buffer, atime: Date, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the access and modified times for a resource on the server.
     * @param handle - A resource handle returned from `#open()` or `#fopen()`.
     * @param atime - A Date or unix timestamp representing the new access time for the resource
     * @param mtime - A Date or unix timestamp representing the new modify time for the resource
     */
-  def futimes(handle: Buffer, atime: Date, mtime: Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: js.Date, mtime: js.Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: js.Date, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: Double, mtime: js.Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def futimes(handle: Buffer, atime: Double, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Retrieve a file from the server.
     * @param path - The file to retrieve from the server.
     */
   def get(path: String): typingsJapgolly.bluebird.mod.^[ReadableStream] = js.native
+  
   /**
     * @returns a string describing the current connection state.
     */
   def getConnectionStatus(): typingsJapgolly.promiseFtpCommon.mod.STATUSES = js.native
+  
   /**
     * Retrieve the last modified date of a file on the server.
     * @param path - The path to the file to get the last modified date of.
     */
   def lastMod(path: String): js.Date = js.native
+  
   /**
     * Retrieves a directory listing.
     * @param path - The path of the directory to get the listing of.
     */
   def list(): typingsJapgolly.bluebird.mod.^[js.Array[DirectoryListing]] = js.native
   def list(path: String): typingsJapgolly.bluebird.mod.^[js.Array[DirectoryListing]] = js.native
+  
   /** Alias to `#list()` */
   def listSafe(path: String): typingsJapgolly.bluebird.mod.^[js.Array[DirectoryListing]] = js.native
+  
   /** Alias to `#end()` */
   def logout(): typingsJapgolly.bluebird.mod.^[Boolean] = js.native
+  
   /**
     * Retrieve attributes for a resource on the server. If the resource is a
     * symlink, it retrieves the stats for the link itself instead of the
@@ -191,6 +217,7 @@ trait PromiseSftp extends js.Object {
     * @param path - The path to the resource to retrieve the attributes of.
     */
   def lstat(path: String): typingsJapgolly.bluebird.mod.^[Stats] = js.native
+  
   /**
     * Create a new directory.
     * @param path - The path to create a new directory at.
@@ -201,6 +228,8 @@ trait PromiseSftp extends js.Object {
   def mkdir(path: String, attributes: InputAttributes): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def mkdir(path: String, recursive: Boolean): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   def mkdir(path: String, recursive: Boolean, attributes: InputAttributes): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def mkdir(path: String, recursive: Unit, attributes: InputAttributes): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Opens a file on the server.
     * @param filename - The path of the file to open.
@@ -211,20 +240,23 @@ trait PromiseSftp extends js.Object {
   def open(filename: String, mode: String, attributes: InputAttributes): typingsJapgolly.bluebird.mod.^[Buffer] = js.native
   def open(filename: String, mode: Double): typingsJapgolly.bluebird.mod.^[Buffer] = js.native
   def open(filename: String, mode: Double, attributes: InputAttributes): typingsJapgolly.bluebird.mod.^[Buffer] = js.native
+  
   /**
     * Open a directory on the server.
     * @param path - The path of the directory to open.
     * @returns a buffer with the handle of the opened directory.
     */
   def opendir(path: String): typingsJapgolly.bluebird.mod.^[Buffer] = js.native
+  
   def put(input: String, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def put(input: Buffer, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
   /**
     * Sends data to the server.
     * @param destPath - The file to store the data in. If string the path to a
     * local file.
     */
   def put(input: ReadableStream, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def put(input: Buffer, destPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Read binary data from a file on the server to a buffer.
     * @param handle - A file handle returned from `#open()` or `#opendir()`.
@@ -241,83 +273,96 @@ trait PromiseSftp extends js.Object {
     * @param length - The number of bytes to read from the buffer.
     * @param position - The position of the file to begin writing to.
     */
-  def read(handle: Buffer, buffer: Buffer, offset: Double, length: Double, position: Double): typingsJapgolly.bluebird.mod.^[AnonBuffer] = js.native
-  def readdir(location: String): typingsJapgolly.bluebird.mod.^[AnonAttrs] = js.native
+  def read(handle: Buffer, buffer: Buffer, offset: Double, length: Double, position: Double): typingsJapgolly.bluebird.mod.^[typingsJapgolly.promiseSftp.anon.Buffer] = js.native
+  
+  def readdir(location: String): typingsJapgolly.bluebird.mod.^[Attrs] = js.native
   /**
     * Read a directory on the server.
     * @param location - The path of the directory to read or a handle returned from `#opendir()`.
     */
-  def readdir(location: Buffer): typingsJapgolly.bluebird.mod.^[AnonAttrs] = js.native
+  def readdir(location: Buffer): typingsJapgolly.bluebird.mod.^[Attrs] = js.native
+  
   /**
     * Read the target of a symlink on the server.
     * @param path - The path of the symlink to read the target of.
     */
   def readlink(path: String): typingsJapgolly.bluebird.mod.^[String] = js.native
+  
   /**
     * Get the absolute path from a relative path on the server.
     * @param path - The path to get the absolute path of.
     */
   def realpath(path: String): typingsJapgolly.bluebird.mod.^[String] = js.native
+  
   /**
     * Connects to an SFTP server using the config from the most recent call to
     * #connect().
     * @returns promise that resolves to the server's greeting message.
     */
   def reconnect(): typingsJapgolly.bluebird.mod.^[String] = js.native
+  
   /** Alias for `#unlink()` */
   def remove(path: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Renames/moves one file/directory to another on the server.
     * @param oldPath - The source file/directory.
     * @param newPath - The destination file/directory.
     */
   def rename(oldPath: String, newPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Sets the file byte offset for the next file transfer action initiated via
     * #get() or #put() to `byteOffset`.
     */
   def restart(byteOffset: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Remove a directory on the server.
     * @param path - The path of the directory to remove.
     */
   def rmdir(path: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the attributes of a resource on the server.
     * @param path - The path to the resource to set the attributes of.
     * @param attributes - The new attributes for the resource.
     */
   def setstat(path: String, attributes: Attributes): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Retrieve the size of a file on the server.
     * @param path - The path to the file to retrieve the size of.
     */
   def size(path: String): typingsJapgolly.bluebird.mod.^[Double] = js.native
+  
   /**
     * Retrieve attributes for a resource on the server.
     * @param path - The path to the resource to retrieve the attributes of.
     */
   def stat(path: String): typingsJapgolly.bluebird.mod.^[Stats] = js.native
+  
   /**
     * Create a symlink on the server.
     * @param targetPath - The path to the target of the symlink.
     * @param linkPath - The path of the new symlink.
     */
   def symlink(targetPath: String, linkPath: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Remove a file or symlink on the server.
     * @param path - The path of the file/symlink to remove.
     */
   def unlink(path: String): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def utimes(path: String, atime: Double, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def utimes(path: String, atime: Double, mtime: Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
-  def utimes(path: String, atime: Date, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  
   /**
     * Set the access and modified times for a resource on the server.
     * @param path - The path of the resource to set times of.
     * @param atime - A Date or unix timestamp representing the new access time for the resource
     * @param mtime - A Date or unix timestamp representing the new modify time for the resource
     */
-  def utimes(path: String, atime: Date, mtime: Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: js.Date, mtime: js.Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: js.Date, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: Double, mtime: js.Date): typingsJapgolly.bluebird.mod.^[Unit] = js.native
+  def utimes(path: String, atime: Double, mtime: Double): typingsJapgolly.bluebird.mod.^[Unit] = js.native
 }
-

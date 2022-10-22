@@ -1,53 +1,44 @@
 package typingsJapgolly.playerframework.PlayerFramework
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait InteractionType extends js.Object
-
+sealed trait InteractionType extends StObject
 @JSGlobal("PlayerFramework.InteractionType")
 @js.native
-object InteractionType extends js.Object {
-  /**
-  		* Indicates both "soft" and "hard" interactions.
-  		**/
-  @js.native
-  sealed trait all extends InteractionType
+object InteractionType extends StObject {
   
   /**
-  		* Indicates a "hard" interaction such as a tap, click, or a key is pressed.
-  		**/
+    * Indicates both "soft" and "hard" interactions.
+    **/
   @js.native
-  sealed trait hard extends InteractionType
+  sealed trait all
+    extends StObject
+       with InteractionType
   
   /**
-  		* Indicates no interaction.
-  		**/
+    * Indicates a "hard" interaction such as a tap, click, or a key is pressed.
+    **/
   @js.native
-  sealed trait none extends InteractionType
+  sealed trait hard
+    extends StObject
+       with InteractionType
   
   /**
-  		* Indicates a "soft" interaction such as mouse movement or a timeout occurring.
-  		**/
+    * Indicates no interaction.
+    **/
   @js.native
-  sealed trait soft extends InteractionType
+  sealed trait none
+    extends StObject
+       with InteractionType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[InteractionType with Double] = js.native
-  /* 3 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 2 */ @js.native
-  object hard extends TopLevel[hard with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object soft extends TopLevel[soft with Double]
-  
+  /**
+    * Indicates a "soft" interaction such as mouse movement or a timeout occurring.
+    **/
+  @js.native
+  sealed trait soft
+    extends StObject
+       with InteractionType
 }
-

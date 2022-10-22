@@ -1,22 +1,34 @@
 package typingsJapgolly.breeze.mod
 
-import typingsJapgolly.breeze.AnonIsCaseSensitive
+import typingsJapgolly.breeze.anon.IsCaseSensitive
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("breeze", "LocalQueryComparisonOptions")
 @js.native
-class LocalQueryComparisonOptions protected ()
-  extends typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions {
-  def this(config: AnonIsCaseSensitive) = this()
+open class LocalQueryComparisonOptions protected ()
+  extends StObject
+     with typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions {
+  def this(config: IsCaseSensitive) = this()
+  
+  /* CompleteClass */
+  override def setAsDefault(): Unit = js.native
 }
-
 /* static members */
-@JSImport("breeze", "LocalQueryComparisonOptions")
-@js.native
-object LocalQueryComparisonOptions extends js.Object {
-  var caseInsensitiveSQL: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions = js.native
-  var defaultInstance: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions = js.native
+object LocalQueryComparisonOptions {
+  
+  @JSImport("breeze", "LocalQueryComparisonOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("breeze", "LocalQueryComparisonOptions.caseInsensitiveSQL")
+  @js.native
+  def caseInsensitiveSQL: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions = js.native
+  inline def caseInsensitiveSQL_=(x: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("caseInsensitiveSQL")(x.asInstanceOf[js.Any])
+  
+  @JSImport("breeze", "LocalQueryComparisonOptions.defaultInstance")
+  @js.native
+  def defaultInstance: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions = js.native
+  inline def defaultInstance_=(x: typingsJapgolly.breeze.breeze.LocalQueryComparisonOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultInstance")(x.asInstanceOf[js.Any])
 }
-

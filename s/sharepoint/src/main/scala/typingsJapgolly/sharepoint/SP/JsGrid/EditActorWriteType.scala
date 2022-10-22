@@ -1,44 +1,35 @@
 package typingsJapgolly.sharepoint.SP.JsGrid
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EditActorWriteType extends js.Object
-
+sealed trait EditActorWriteType extends StObject
 @JSGlobal("SP.JsGrid.EditActorWriteType")
 @js.native
-object EditActorWriteType extends js.Object {
-   // 1,
-  @js.native
-  sealed trait Both extends EditActorWriteType
-  
-   // 3,
-  @js.native
-  sealed trait DataOnly extends EditActorWriteType
+object EditActorWriteType extends StObject {
   
   @js.native
-  sealed trait Either extends EditActorWriteType
+  sealed trait Both
+    extends StObject
+       with EditActorWriteType
   
-   // 2,
+  // 2,
   @js.native
-  sealed trait LocalizedOnly extends EditActorWriteType
+  sealed trait DataOnly
+    extends StObject
+       with EditActorWriteType
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EditActorWriteType with Double] = js.native
-  /* 0 */ @js.native
-  object Both extends TopLevel[Both with Double]
+  // 3,
+  @js.native
+  sealed trait Either
+    extends StObject
+       with EditActorWriteType
   
-  /* 2 */ @js.native
-  object DataOnly extends TopLevel[DataOnly with Double]
-  
-  /* 3 */ @js.native
-  object Either extends TopLevel[Either with Double]
-  
-  /* 1 */ @js.native
-  object LocalizedOnly extends TopLevel[LocalizedOnly with Double]
-  
+  // 1,
+  @js.native
+  sealed trait LocalizedOnly
+    extends StObject
+       with EditActorWriteType
 }
-

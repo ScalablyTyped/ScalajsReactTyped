@@ -1,7 +1,7 @@
 
 # Scala.js typings for subsume
 
-Typings are for version 3.0.0
+Typings are for version 4.0.0
 
 ## Library description:
 Embed data in other data and easily extract it when needed
@@ -10,10 +10,10 @@ Embed data in other data and easily extract it when needed
 | ------------------ | :-------------: |
 | Full name          | subsume |
 | Keywords           | subsume, embed, embedded, include, insert, data, string, text, content, compose, parse, extract, encode, decode |
-| # releases         | 4 |
-| # dependents       | 2 |
-| # downloads        | 5507 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 3416.6666666666665 |
+| # stars            | 72.0 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/subsume#readme)

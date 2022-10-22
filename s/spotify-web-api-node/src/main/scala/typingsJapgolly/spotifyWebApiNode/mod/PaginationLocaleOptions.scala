@@ -1,27 +1,17 @@
 package typingsJapgolly.spotifyWebApiNode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait PaginationLocaleOptions
-  extends PaginationOptions
+  extends StObject
+     with PaginationOptions
      with LocaleOptions
-
 object PaginationLocaleOptions {
-  @scala.inline
-  def apply(
-    country: String = null,
-    limit: Int | Double = null,
-    locale: String = null,
-    offset: Int | Double = null
-  ): PaginationLocaleOptions = {
+  
+  inline def apply(): PaginationLocaleOptions = {
     val __obj = js.Dynamic.literal()
-    if (country != null) __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
-    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationLocaleOptions]
   }
 }
-

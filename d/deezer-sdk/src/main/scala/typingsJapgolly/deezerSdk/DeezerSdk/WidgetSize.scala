@@ -1,8 +1,8 @@
 package typingsJapgolly.deezerSdk.DeezerSdk
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://developers.deezer.com/sdk/javascript/player#options | Player options}
@@ -12,16 +12,12 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.deezerSdk.deezerSdkStrings.medium
   - typingsJapgolly.deezerSdk.deezerSdkStrings.big
 */
-trait WidgetSize extends js.Object
-
+trait WidgetSize extends StObject
 object WidgetSize {
-  @scala.inline
-  def big: typingsJapgolly.deezerSdk.deezerSdkStrings.big = this.cast("big")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def medium: typingsJapgolly.deezerSdk.deezerSdkStrings.medium = this.cast("medium")
-  @scala.inline
-  def small: typingsJapgolly.deezerSdk.deezerSdkStrings.small = this.cast("small")
+  
+  inline def big: typingsJapgolly.deezerSdk.deezerSdkStrings.big = "big".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.big]
+  
+  inline def medium: typingsJapgolly.deezerSdk.deezerSdkStrings.medium = "medium".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.medium]
+  
+  inline def small: typingsJapgolly.deezerSdk.deezerSdkStrings.small = "small".asInstanceOf[typingsJapgolly.deezerSdk.deezerSdkStrings.small]
 }
-

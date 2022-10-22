@@ -1,22 +1,25 @@
 organization := "org.scalablytyped.japgolly"
 name := "jupyterlab__services"
-version := "4.2.0-cb5b24"
-scalaVersion := "2.13.1"
+version := "6.4.8-4413bf"
+scalaVersion := "3.1.2"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.github.japgolly.scalajs-react" %%% "core" % "1.5.0",
-  "com.olvind" %%% "scalablytyped-runtime" % "2.1.0",
-  "org.scalablytyped.japgolly" %%% "jupyterlab__coreutils" % "3.2.0-706227",
-  "org.scalablytyped.japgolly" %%% "jupyterlab__observables" % "2.4.0-ead621",
-  "org.scalablytyped.japgolly" %%% "phosphor__algorithm" % "1.2.0-436d64",
-  "org.scalablytyped.japgolly" %%% "phosphor__commands" % "1.7.2-682fd6",
-  "org.scalablytyped.japgolly" %%% "phosphor__coreutils" % "1.3.1-166b65",
-  "org.scalablytyped.japgolly" %%% "phosphor__disposable" % "1.3.1-d69c6d",
-  "org.scalablytyped.japgolly" %%% "phosphor__messaging" % "1.3.0-e44f58",
-  "org.scalablytyped.japgolly" %%% "phosphor__signaling" % "1.3.1-ccc341",
-  "org.scalablytyped.japgolly" %%% "std" % "3.8-8884a5")
+  "com.github.japgolly.scalajs-react" %%% "core" % "2.1.1",
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped.japgolly" %%% "jupyterlab__coreutils" % "5.4.8-1ef8c9",
+  "org.scalablytyped.japgolly" %%% "jupyterlab__nbformat" % "3.4.8-f54e5c",
+  "org.scalablytyped.japgolly" %%% "jupyterlab__observables" % "4.4.8-2ce4bb",
+  "org.scalablytyped.japgolly" %%% "jupyterlab__settingregistry" % "3.4.8-e84666",
+  "org.scalablytyped.japgolly" %%% "jupyterlab__statedb" % "3.4.8-b6bde3",
+  "org.scalablytyped.japgolly" %%% "lumino__algorithm" % "1.9.2-147e30",
+  "org.scalablytyped.japgolly" %%% "lumino__commands" % "1.20.1-bc4958",
+  "org.scalablytyped.japgolly" %%% "lumino__coreutils" % "1.12.1-93beef",
+  "org.scalablytyped.japgolly" %%% "lumino__disposable" % "1.10.2-d4a6c7",
+  "org.scalablytyped.japgolly" %%% "lumino__messaging" % "1.10.3-4da0f7",
+  "org.scalablytyped.japgolly" %%% "lumino__polling" % "1.11.2-d03709",
+  "org.scalablytyped.japgolly" %%% "lumino__signaling" % "1.10.2-08c11b",
+  "org.scalablytyped.japgolly" %%% "lumino__virtualdom" % "1.14.2-25af81",
+  "org.scalablytyped.japgolly" %%% "std" % "4.8-608dc7")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-g:notailcalls", "-P:scalajs:sjsDefinedByDefault")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent", "-source:future")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalajsReactTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalajsReactTyped")

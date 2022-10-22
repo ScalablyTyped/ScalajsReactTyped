@@ -11,9 +11,9 @@ A simple in-memory cache. put(), get() and del()
 | Full name          | memory-cache |
 | Keywords           | cache, ram, simple, storage |
 | # releases         | 1 |
-| # dependents       | 310 |
-| # downloads        | 5201799 |
-| # stars            | 63 |
+| # dependents       | 0.0 |
+| # downloads        | 1860909.0 |
+| # stars            | 1487.0 |
 
 ## Links
 - [Homepage](https://github.com/ptarjan/node-cache#readme)

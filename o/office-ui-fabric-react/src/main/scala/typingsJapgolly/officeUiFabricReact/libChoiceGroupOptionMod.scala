@@ -1,14 +1,14 @@
 package typingsJapgolly.officeUiFabricReact
 
-import typingsJapgolly.officeUiFabricReact.choiceGroupOptionTypesMod.IChoiceGroupOptionProps
+import typingsJapgolly.officeUiFabricReact.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod.IChoiceGroupOptionProps
 import typingsJapgolly.react.mod.FunctionComponent
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("office-ui-fabric-react/lib/ChoiceGroupOption", JSImport.Namespace)
-@js.native
-object libChoiceGroupOptionMod extends js.Object {
+object libChoiceGroupOptionMod {
+  
+  @JSImport("office-ui-fabric-react/lib/ChoiceGroupOption", "ChoiceGroupOption")
+  @js.native
   val ChoiceGroupOption: FunctionComponent[IChoiceGroupOptionProps] = js.native
 }
-

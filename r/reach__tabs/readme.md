@@ -1,7 +1,7 @@
 
 # Scala.js typings for reach__tabs
 
-Typings are for version 0.1
+Typings are for version 0.18.0
 
 ## Library description:
 Accessible React Tabs Component
@@ -10,10 +10,10 @@ Accessible React Tabs Component
 | ------------------ | :-------------: |
 | Full name          | @reach/tabs |
 | Keywords           | - |
-| # releases         | 21 |
-| # dependents       | 13 |
-| # downloads        | 362814 |
-| # stars            | 0 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 502989.6666666667 |
+| # stars            | 5565.0 |
 
 ## Links
 - [Homepage](https://github.com/reach/reach-ui#readme)
@@ -24,7 +24,7 @@ Accessible React Tabs Component
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

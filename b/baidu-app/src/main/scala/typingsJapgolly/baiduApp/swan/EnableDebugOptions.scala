@@ -1,30 +1,26 @@
 package typingsJapgolly.baiduApp.swan
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #endregion
 trait EnableDebugOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[Any, Any] {
+  
   var enableDebug: Boolean
 }
-
 object EnableDebugOptions {
-  @scala.inline
-  def apply(
-    enableDebug: Boolean,
-    complete: /* res */ js.Any => Callback = null,
-    fail: js.Any => Callback = null,
-    success: js.Any => Callback = null
-  ): EnableDebugOptions = {
+  
+  inline def apply(enableDebug: Boolean): EnableDebugOptions = {
     val __obj = js.Dynamic.literal(enableDebug = enableDebug.asInstanceOf[js.Any])
-    if (complete != null) __obj.updateDynamic("complete")(js.Any.fromFunction1((t0: /* res */ js.Any) => complete(t0).runNow()))
-    if (fail != null) __obj.updateDynamic("fail")(js.Any.fromFunction1((t0: js.Any) => fail(t0).runNow()))
-    if (success != null) __obj.updateDynamic("success")(js.Any.fromFunction1((t0: js.Any) => success(t0).runNow()))
     __obj.asInstanceOf[EnableDebugOptions]
   }
+  
+  extension [Self <: EnableDebugOptions](x: Self) {
+    
+    inline def setEnableDebug(value: Boolean): Self = StObject.set(x, "enableDebug", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,32 @@
 package typingsJapgolly.vscode.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WebviewPortMapping extends js.Object {
+trait WebviewPortMapping extends StObject {
+  
   /**
-  		 * Destination port. The `webviewPort` is resolved to this port.
-  		 */
+    * Destination port. The `webviewPort` is resolved to this port.
+    */
   val extensionHostPort: Double
+  
   /**
-  		 * Localhost port to remap inside the webview.
-  		 */
+    * Localhost port to remap inside the webview.
+    */
   val webviewPort: Double
 }
-
 object WebviewPortMapping {
-  @scala.inline
-  def apply(extensionHostPort: Double, webviewPort: Double): WebviewPortMapping = {
-    val __obj = js.Dynamic.literal(extensionHostPort = extensionHostPort.asInstanceOf[js.Any], webviewPort = webviewPort.asInstanceOf[js.Any])
   
+  inline def apply(extensionHostPort: Double, webviewPort: Double): WebviewPortMapping = {
+    val __obj = js.Dynamic.literal(extensionHostPort = extensionHostPort.asInstanceOf[js.Any], webviewPort = webviewPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebviewPortMapping]
   }
+  
+  extension [Self <: WebviewPortMapping](x: Self) {
+    
+    inline def setExtensionHostPort(value: Double): Self = StObject.set(x, "extensionHostPort", value.asInstanceOf[js.Any])
+    
+    inline def setWebviewPort(value: Double): Self = StObject.set(x, "webviewPort", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -2,31 +2,42 @@ package typingsJapgolly.chunkedDc.jasmine
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NestedResults extends Result {
-  var description: String
-  var failedCount: Double
-  var passedCount: Double
-  var skipped: Boolean
-  var totalCount: Double
+trait NestedResults
+  extends StObject
+     with Result {
+  
   def addResult(result: Result): Unit
+  
+  var description: String
+  
+  var failedCount: Double
+  
   def getItems(): js.Array[Result]
-  def log(values: js.Any): Unit
+  
+  def log(values: scala.Any): Unit
+  
   def passed(): Boolean
+  
+  var passedCount: Double
+  
   def rollupCounts(result: NestedResults): Unit
+  
+  var skipped: Boolean
+  
+  var totalCount: Double
 }
-
 object NestedResults {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     addResult: Result => Callback,
     description: String,
     failedCount: Double,
     getItems: CallbackTo[js.Array[Result]],
-    log: js.Any => Callback,
+    log: scala.Any => Callback,
     passed: CallbackTo[Boolean],
     passedCount: Double,
     rollupCounts: NestedResults => Callback,
@@ -34,14 +45,31 @@ object NestedResults {
     totalCount: Double,
     `type`: String
   ): NestedResults = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], failedCount = failedCount.asInstanceOf[js.Any], passedCount = passedCount.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
-    __obj.updateDynamic("addResult")(js.Any.fromFunction1((t0: typingsJapgolly.chunkedDc.jasmine.Result) => addResult(t0).runNow()))
-    __obj.updateDynamic("getItems")(getItems.toJsFn)
-    __obj.updateDynamic("log")(js.Any.fromFunction1((t0: js.Any) => log(t0).runNow()))
-    __obj.updateDynamic("passed")(passed.toJsFn)
-    __obj.updateDynamic("rollupCounts")(js.Any.fromFunction1((t0: typingsJapgolly.chunkedDc.jasmine.NestedResults) => rollupCounts(t0).runNow()))
+    val __obj = js.Dynamic.literal(addResult = js.Any.fromFunction1((t0: Result) => addResult(t0).runNow()), description = description.asInstanceOf[js.Any], failedCount = failedCount.asInstanceOf[js.Any], getItems = getItems.toJsFn, log = js.Any.fromFunction1((t0: scala.Any) => log(t0).runNow()), passed = passed.toJsFn, passedCount = passedCount.asInstanceOf[js.Any], rollupCounts = js.Any.fromFunction1((t0: NestedResults) => rollupCounts(t0).runNow()), skipped = skipped.asInstanceOf[js.Any], totalCount = totalCount.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NestedResults]
   }
+  
+  extension [Self <: NestedResults](x: Self) {
+    
+    inline def setAddResult(value: Result => Callback): Self = StObject.set(x, "addResult", js.Any.fromFunction1((t0: Result) => value(t0).runNow()))
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setFailedCount(value: Double): Self = StObject.set(x, "failedCount", value.asInstanceOf[js.Any])
+    
+    inline def setGetItems(value: CallbackTo[js.Array[Result]]): Self = StObject.set(x, "getItems", value.toJsFn)
+    
+    inline def setLog(value: scala.Any => Callback): Self = StObject.set(x, "log", js.Any.fromFunction1((t0: scala.Any) => value(t0).runNow()))
+    
+    inline def setPassed(value: CallbackTo[Boolean]): Self = StObject.set(x, "passed", value.toJsFn)
+    
+    inline def setPassedCount(value: Double): Self = StObject.set(x, "passedCount", value.asInstanceOf[js.Any])
+    
+    inline def setRollupCounts(value: NestedResults => Callback): Self = StObject.set(x, "rollupCounts", js.Any.fromFunction1((t0: NestedResults) => value(t0).runNow()))
+    
+    inline def setSkipped(value: Boolean): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    
+    inline def setTotalCount(value: Double): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+  }
 }
-

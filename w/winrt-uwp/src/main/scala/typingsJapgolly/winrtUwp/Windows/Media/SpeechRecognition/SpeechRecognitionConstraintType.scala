@@ -1,46 +1,37 @@
 package typingsJapgolly.winrtUwp.Windows.Media.SpeechRecognition
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait SpeechRecognitionConstraintType extends js.Object
-
+sealed trait SpeechRecognitionConstraintType extends StObject
 /** Specifies the type of pre-defined grammar constraint used for speech recognition. */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognitionConstraintType")
 @js.native
-object SpeechRecognitionConstraintType extends js.Object {
+object SpeechRecognitionConstraintType extends StObject {
+  
   /** A constraint based on a SRGS grammar file. See SpeechRecognitionGrammarFileConstraint . */
   @js.native
-  sealed trait grammar extends SpeechRecognitionConstraintType
+  sealed trait grammar
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a list of words or phrases. See SpeechRecognitionListConstraint . */
   @js.native
-  sealed trait list extends SpeechRecognitionConstraintType
+  sealed trait list
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a dictation topic. See SpeechRecognitionTopicConstraint . */
   @js.native
-  sealed trait topic extends SpeechRecognitionConstraintType
+  sealed trait topic
+    extends StObject
+       with SpeechRecognitionConstraintType
   
   /** A constraint based on a VCD file. See SpeechRecognitionVoiceCommandDefinitionConstraint . */
   @js.native
-  sealed trait voiceCommandDefinition extends SpeechRecognitionConstraintType
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[SpeechRecognitionConstraintType with Double] = js.native
-  /* 2 */ @js.native
-  object grammar extends TopLevel[grammar with Double]
-  
-  /* 1 */ @js.native
-  object list extends TopLevel[list with Double]
-  
-  /* 0 */ @js.native
-  object topic extends TopLevel[topic with Double]
-  
-  /* 3 */ @js.native
-  object voiceCommandDefinition extends TopLevel[voiceCommandDefinition with Double]
-  
+  sealed trait voiceCommandDefinition
+    extends StObject
+       with SpeechRecognitionConstraintType
 }
-

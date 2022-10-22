@@ -1,13 +1,15 @@
 package typingsJapgolly.xmlEscape
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("xml-escape", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(string: String): String = js.native
-  def apply(string: String, ignore: String): String = js.native
+object mod {
+  
+  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(string: String, ignore: String): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @JSImport("xml-escape", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }
-

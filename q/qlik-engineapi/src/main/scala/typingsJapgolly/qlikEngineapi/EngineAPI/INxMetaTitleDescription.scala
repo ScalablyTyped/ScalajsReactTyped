@@ -1,29 +1,37 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxMetaTitleDescription width extend NxMeta
   */
-trait INxMetaTitleDescription extends INxMeta {
+trait INxMetaTitleDescription
+  extends StObject
+     with INxMeta {
+  
   /**
     * Set a description.
     */
   var description: String
+  
   /**
     * Set a title.
     */
   var title: String
 }
-
 object INxMetaTitleDescription {
-  @scala.inline
-  def apply(description: String, title: String, qName: String = null): INxMetaTitleDescription = {
+  
+  inline def apply(description: String, title: String): INxMetaTitleDescription = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    if (qName != null) __obj.updateDynamic("qName")(qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxMetaTitleDescription]
   }
+  
+  extension [Self <: INxMetaTitleDescription](x: Self) {
+    
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+  }
 }
-

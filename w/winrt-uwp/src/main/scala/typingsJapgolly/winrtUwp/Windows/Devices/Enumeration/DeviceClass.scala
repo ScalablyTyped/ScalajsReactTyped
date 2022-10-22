@@ -1,67 +1,55 @@
 package typingsJapgolly.winrtUwp.Windows.Devices.Enumeration
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait DeviceClass extends js.Object
-
+sealed trait DeviceClass extends StObject
 /** Indicates the type of devices that the user wants to enumerate. */
 @JSGlobal("Windows.Devices.Enumeration.DeviceClass")
 @js.native
-object DeviceClass extends js.Object {
+object DeviceClass extends StObject {
+  
   /** Indicates that the user wants to enumerate all devices. */
   @js.native
-  sealed trait all extends DeviceClass
+  sealed trait all
+    extends StObject
+       with DeviceClass
   
   /** Indicates that the user wants to enumerate all audio capture devices. */
   @js.native
-  sealed trait audioCapture extends DeviceClass
+  sealed trait audioCapture
+    extends StObject
+       with DeviceClass
   
   /** Indicates that the user wants to enumerate all audio rendering devices. */
   @js.native
-  sealed trait audioRender extends DeviceClass
+  sealed trait audioRender
+    extends StObject
+       with DeviceClass
   
   /** Introduced in Windows 8.1. Indicates that the user wants to enumerate all scanning devices. */
   @js.native
-  sealed trait imageScanner extends DeviceClass
+  sealed trait imageScanner
+    extends StObject
+       with DeviceClass
   
   /** Introduced in Windows 8.1. Indicates that the user wants to enumerate all location aware devices. */
   @js.native
-  sealed trait location extends DeviceClass
+  sealed trait location
+    extends StObject
+       with DeviceClass
   
   /** Indicates that the user wants to enumerate all portable storage devices. */
   @js.native
-  sealed trait portableStorageDevice extends DeviceClass
+  sealed trait portableStorageDevice
+    extends StObject
+       with DeviceClass
   
   /** Indicates that the user wants to enumerate all video capture devices. */
   @js.native
-  sealed trait videoCapture extends DeviceClass
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[DeviceClass with Double] = js.native
-  /* 0 */ @js.native
-  object all extends TopLevel[all with Double]
-  
-  /* 1 */ @js.native
-  object audioCapture extends TopLevel[audioCapture with Double]
-  
-  /* 2 */ @js.native
-  object audioRender extends TopLevel[audioRender with Double]
-  
-  /* 5 */ @js.native
-  object imageScanner extends TopLevel[imageScanner with Double]
-  
-  /* 6 */ @js.native
-  object location extends TopLevel[location with Double]
-  
-  /* 3 */ @js.native
-  object portableStorageDevice extends TopLevel[portableStorageDevice with Double]
-  
-  /* 4 */ @js.native
-  object videoCapture extends TopLevel[videoCapture with Double]
-  
+  sealed trait videoCapture
+    extends StObject
+       with DeviceClass
 }
-

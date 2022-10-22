@@ -1,24 +1,38 @@
 package typingsJapgolly.reactAriaLive
 
 import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.StatelessComponent
+import typingsJapgolly.react.mod.FunctionComponent
+import typingsJapgolly.reactAriaLive.anon.Arialive
+import typingsJapgolly.reactAriaLive.anon.Children
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-aria-live", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-aria-live", "LiveAnnouncer")
   @js.native
-  class LiveAnnouncer ()
-    extends Component[js.Object, js.Object, js.Any] {
+  open class LiveAnnouncer protected ()
+    extends Component[js.Object, js.Object, Any] {
+    def this(props: js.Object) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Object, context: Any) = this()
+    
     def announceAssertive(message: String): Unit = js.native
     def announceAssertive(message: String, id: String): Unit = js.native
+    
     def announcePolite(message: String): Unit = js.native
     def announcePolite(message: String, id: String): Unit = js.native
   }
   
-  val LiveMessage: StatelessComponent[AnonArialive] = js.native
-  val LiveMessenger: StatelessComponent[AnonChildren] = js.native
+  @JSImport("react-aria-live", "LiveMessage")
+  @js.native
+  val LiveMessage: FunctionComponent[Arialive] = js.native
+  
+  @JSImport("react-aria-live", "LiveMessenger")
+  @js.native
+  val LiveMessenger: FunctionComponent[Children] = js.native
 }
-

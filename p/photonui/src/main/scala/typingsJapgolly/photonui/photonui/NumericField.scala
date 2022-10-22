@@ -1,16 +1,72 @@
 package typingsJapgolly.photonui.photonui
 
+import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.photonui.anon.X
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("photonui.NumericField")
-@js.native
-class NumericField () extends Field {
-  var decimalDigits: Double = js.native
-  var decimalSymbol: String = js.native
-  var max: Double = js.native
-  var min: Double = js.native
-  var step: Double = js.native
+trait NumericField
+  extends StObject
+     with Field {
+  
+  var decimalDigits: Double
+  
+  var decimalSymbol: String
+  
+  var max: Double
+  
+  var min: Double
+  
+  var step: Double
 }
-
+object NumericField {
+  
+  inline def apply(
+    absolutePosition: X,
+    addClass: String => Callback,
+    contextMenu: PopupWindow,
+    contextMenuName: String,
+    decimalDigits: Double,
+    decimalSymbol: String,
+    destroy: Callback,
+    hide: Callback,
+    html: HTMLElement,
+    layoutOptions: StringDictionary[Any],
+    max: Double,
+    min: Double,
+    name: String,
+    offsetHeight: Double,
+    offsetWidth: Double,
+    parent: Widget,
+    parentName: String,
+    placeholder: String,
+    registerCallback: (String, String, js.Function, Any) => Callback,
+    removeCallback: String => Callback,
+    removeClass: String => Callback,
+    show: Callback,
+    step: Double,
+    tooltip: String,
+    unparent: Callback,
+    value: Boolean,
+    visible: Boolean
+  ): NumericField = {
+    val __obj = js.Dynamic.literal(absolutePosition = absolutePosition.asInstanceOf[js.Any], addClass = js.Any.fromFunction1((t0: String) => addClass(t0).runNow()), contextMenu = contextMenu.asInstanceOf[js.Any], contextMenuName = contextMenuName.asInstanceOf[js.Any], decimalDigits = decimalDigits.asInstanceOf[js.Any], decimalSymbol = decimalSymbol.asInstanceOf[js.Any], destroy = destroy.toJsFn, hide = hide.toJsFn, html = html.asInstanceOf[js.Any], layoutOptions = layoutOptions.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], offsetHeight = offsetHeight.asInstanceOf[js.Any], offsetWidth = offsetWidth.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentName = parentName.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], registerCallback = js.Any.fromFunction4((t0: String, t1: String, t2: js.Function, t3: Any) => (registerCallback(t0, t1, t2, t3)).runNow()), removeCallback = js.Any.fromFunction1((t0: String) => removeCallback(t0).runNow()), removeClass = js.Any.fromFunction1((t0: String) => removeClass(t0).runNow()), show = show.toJsFn, step = step.asInstanceOf[js.Any], tooltip = tooltip.asInstanceOf[js.Any], unparent = unparent.toJsFn, value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NumericField]
+  }
+  
+  extension [Self <: NumericField](x: Self) {
+    
+    inline def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
+    
+    inline def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
+    
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+  }
+}

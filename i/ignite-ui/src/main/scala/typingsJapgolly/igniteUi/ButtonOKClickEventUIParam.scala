@@ -1,27 +1,36 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonOKClickEventUIParam extends js.Object {
+trait ButtonOKClickEventUIParam extends StObject {
+  
   /**
-  	 * Gets a reference to the igGridModalDialog element.
-  	 */
+    * Gets a reference to the igGridModalDialog element.
+    */
   var modalDialog: js.UndefOr[String] = js.undefined
+  
   /**
-  	 * Gets the reference to the igGridModalDialog widget.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets the reference to the igGridModalDialog widget.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
 }
-
 object ButtonOKClickEventUIParam {
-  @scala.inline
-  def apply(modalDialog: String = null, owner: js.Any = null): ButtonOKClickEventUIParam = {
+  
+  inline def apply(): ButtonOKClickEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (modalDialog != null) __obj.updateDynamic("modalDialog")(modalDialog.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOKClickEventUIParam]
   }
+  
+  extension [Self <: ButtonOKClickEventUIParam](x: Self) {
+    
+    inline def setModalDialog(value: String): Self = StObject.set(x, "modalDialog", value.asInstanceOf[js.Any])
+    
+    inline def setModalDialogUndefined: Self = StObject.set(x, "modalDialog", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+  }
 }
-

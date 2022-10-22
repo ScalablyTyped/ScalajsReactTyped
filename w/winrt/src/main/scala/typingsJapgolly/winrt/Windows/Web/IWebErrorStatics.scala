@@ -1,20 +1,22 @@
 package typingsJapgolly.winrt.Windows.Web
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWebErrorStatics extends js.Object {
+trait IWebErrorStatics extends StObject {
+  
   def getStatus(hresult: Double): WebErrorStatus
 }
-
 object IWebErrorStatics {
-  @scala.inline
-  def apply(getStatus: Double => CallbackTo[WebErrorStatus]): IWebErrorStatics = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("getStatus")(js.Any.fromFunction1((t0: scala.Double) => getStatus(t0).runNow()))
+  
+  inline def apply(getStatus: Double => WebErrorStatus): IWebErrorStatics = {
+    val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
     __obj.asInstanceOf[IWebErrorStatics]
   }
+  
+  extension [Self <: IWebErrorStatics](x: Self) {
+    
+    inline def setGetStatus(value: Double => WebErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+  }
 }
-

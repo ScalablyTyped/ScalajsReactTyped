@@ -1,19 +1,22 @@
 package typingsJapgolly.phaser.MatterJS
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.phaser.Phaser.Types.Physics.Matter.MatterBody
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BodyType extends MatterBody {
+trait BodyType
+  extends StObject
+     with MatterBody {
+  
   /**
     * Holds the original friction, mass, etc values from when this Body was made static.
     *
     * @property _original
     * @type any
     */
-  var _original: js.Any
+  var _original: Any
+  
   /**
     * A `Number` specifying the angle of the body, in radians.
     *
@@ -22,6 +25,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var angle: Double
+  
   /**
     * The previous angle.
     *
@@ -30,6 +34,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var anglePrev: Double
+  
   /**
     * A `Number` that _measures_ the current angular speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.angularVelocity`).
     *
@@ -39,6 +44,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var angularSpeed: Double
+  
   /**
     * A `Number` that _measures_ the current angular velocity of the body after the last `Body.update`. It is read-only.
     * If you need to modify a body's angular velocity directly, you should apply a torque or simply change the body's `angle` (as the engine uses position-Verlet integration).
@@ -49,6 +55,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var angularVelocity: Double
+  
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
     *
@@ -57,6 +64,7 @@ trait BodyType extends MatterBody {
     * @default
     */
   var area: Double
+  
   /**
     * An array of unique axis vectors (edge normals) used for collision detection.
     * These are automatically calculated from the given convex hull (`vertices` array) in `Body.create`.
@@ -66,6 +74,7 @@ trait BodyType extends MatterBody {
     * @type vector[]
     */
   var axes: js.UndefOr[js.Array[Vector]] = js.undefined
+  
   /**
     * A `Bounds` object that defines the AABB region for the body.
     * It is automatically calculated from the given convex hull (`vertices` array) in `Body.create` and constantly updated by `Body.update` during simulation.
@@ -74,6 +83,7 @@ trait BodyType extends MatterBody {
     * @type bounds
     */
   var bounds: IBound
+  
   /**
     * The center of mass of the Body.
     *
@@ -82,6 +92,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var centerOfMass: Vector
+  
   /**
     * The center of the body in pixel values.
     * Used by Phaser for texture aligment.
@@ -91,6 +102,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var centerOffset: Vector
+  
   /**
     * A Chamfer object, if this Body has them.
     *
@@ -98,6 +110,7 @@ trait BodyType extends MatterBody {
     * @type any
     */
   var chamfer: js.UndefOr[IChamfer] = js.undefined
+  
   /**
     * The radius of this Body, if it's a circle.
     *
@@ -106,6 +119,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var circleRadius: Double
+  
   /**
     * An `Object` that specifies the collision filtering properties of this body.
     *
@@ -132,6 +146,7 @@ trait BodyType extends MatterBody {
     * @type object
     */
   var collisionFilter: ICollisionFilter
+  
   /**
     * A `Vector` that specifies the constraint impulse.
     *
@@ -140,6 +155,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var constraintImpulse: Vector
+  
   /**
     * A `Number` that defines the density of the body, that is its mass per unit area.
     * If you pass the density via `Body.create` the `mass` property is automatically calculated for you based on the size (area) of the object.
@@ -150,13 +166,15 @@ trait BodyType extends MatterBody {
     * @default 0.001
     */
   var density: Double
+  
   /**
     * Holds Body event handlers.
     *
     * @property events
     * @type any
     */
-  var events: js.UndefOr[js.Any] = js.undefined
+  var events: js.UndefOr[Any] = js.undefined
+  
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
     *
@@ -165,6 +183,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var force: Vector
+  
   /**
     * A `Number` that defines the friction of the body. The value is always positive and is in the range `(0, 1)`.
     * A value of `0` means that the body may slide indefinitely.
@@ -182,6 +201,7 @@ trait BodyType extends MatterBody {
     * @default 0.1
     */
   var friction: Double
+  
   /**
     * A `Number` that defines the air friction of the body (air resistance).
     * A value of `0` means the body will never slow as it moves through space.
@@ -193,6 +213,7 @@ trait BodyType extends MatterBody {
     * @default 0.01
     */
   var frictionAir: Double
+  
   /**
     * A `Number` that defines the static friction of the body (in the Coulomb friction model).
     * A value of `0` means the body will never 'stick' when it is nearly stationary and only dynamic `friction` is used.
@@ -204,13 +225,15 @@ trait BodyType extends MatterBody {
     * @default 0.5
     */
   var frictionStatic: Double
+  
   /**
     * A reference to the Phaser Game Object this body belongs to, if any.
     *
     * @property gameObject
     * @type Phaser.GameObjects.GameObject
     */
-  var gameObject: js.UndefOr[js.Any] = js.undefined
+  var gameObject: js.UndefOr[Any] = js.undefined
+  
   /**
     * Scale the influence of World gravity when applied to this body.
     *
@@ -219,6 +242,7 @@ trait BodyType extends MatterBody {
     * @default { x: 1, y: 1 }
     */
   var gravityScale: Vector
+  
   /**
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
     *
@@ -226,6 +250,7 @@ trait BodyType extends MatterBody {
     * @type number
     */
   var id: Double
+  
   /**
     * Will this Body ignore World gravity during the Engine update?
     *
@@ -234,6 +259,7 @@ trait BodyType extends MatterBody {
     * @default false
     */
   var ignoreGravity: Boolean
+  
   /**
     * Will this Body ignore Phaser Pointer input events?
     *
@@ -242,6 +268,7 @@ trait BodyType extends MatterBody {
     * @default false
     */
   var ignorePointer: Boolean
+  
   /**
     * A `Number` that defines the moment of inertia (i.e. second moment of area) of the body.
     * It is automatically calculated from the given convex hull (`vertices` array) and density in `Body.create`.
@@ -251,6 +278,7 @@ trait BodyType extends MatterBody {
     * @type number
     */
   var inertia: Double
+  
   /**
     * A `Number` that defines the inverse moment of inertia of the body (`1 / inertia`).
     * If you modify this value, you must also modify the `body.inertia` property.
@@ -259,6 +287,7 @@ trait BodyType extends MatterBody {
     * @type number
     */
   var inverseInertia: Double
+  
   /**
     * A `Number` that defines the inverse mass of the body (`1 / mass`).
     * If you modify this value, you must also modify the `body.mass` property.
@@ -267,6 +296,7 @@ trait BodyType extends MatterBody {
     * @type number
     */
   var inverseMass: Double
+  
   /**
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
     *
@@ -275,6 +305,7 @@ trait BodyType extends MatterBody {
     * @default false
     */
   var isSensor: Boolean
+  
   /**
     * A flag that indicates whether the body is considered sleeping. A sleeping body acts similar to a static body, except it is only temporary and can be awoken.
     * If you need to set a body as sleeping, you should use `Sleeping.set` as this requires more than just setting this flag.
@@ -284,6 +315,7 @@ trait BodyType extends MatterBody {
     * @default false
     */
   var isSleeping: Boolean
+  
   /**
     * A flag that indicates whether a body is considered static. A static body can never change position or angle and is completely fixed.
     * If you need to set a body as static after its creation, you should use `Body.setStatic` as this requires more than just setting this flag.
@@ -293,6 +325,7 @@ trait BodyType extends MatterBody {
     * @default false
     */
   var isStatic: Boolean
+  
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
     *
@@ -301,6 +334,7 @@ trait BodyType extends MatterBody {
     * @default "Body"
     */
   var label: String
+  
   /**
     * A `Number` that defines the mass of the body, although it may be more appropriate to specify the `density` property instead.
     * If you modify this value, you must also modify the `body.inverseMass` property (`1 / mass`).
@@ -309,6 +343,7 @@ trait BodyType extends MatterBody {
     * @type number
     */
   var mass: Double
+  
   /**
     * A `Number` that _measures_ the amount of movement a body currently has (a combination of `speed` and `angularSpeed`). It is read-only and always positive.
     * It is used and updated by the `Matter.Sleeping` module during simulation to decide if a body has come to rest.
@@ -319,6 +354,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var motion: Double
+  
   /**
     * A callback that is invoked for the duration that this Body is colliding with any other Body.
     * 
@@ -329,6 +365,7 @@ trait BodyType extends MatterBody {
     * @default null
     */
   var onCollideActiveCallback: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * A callback that is invoked when this Body starts colliding with any other Body.
     * 
@@ -339,6 +376,7 @@ trait BodyType extends MatterBody {
     * @default null
     */
   var onCollideCallback: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * A callback that is invoked when this Body stops colliding with any other Body.
     * 
@@ -349,6 +387,7 @@ trait BodyType extends MatterBody {
     * @default null
     */
   var onCollideEndCallback: js.UndefOr[js.Function] = js.undefined
+  
   /**
     * A collision callback dictionary used by the `Body.setOnCollideWith` function.
     *
@@ -356,7 +395,8 @@ trait BodyType extends MatterBody {
     * @type object
     * @default null
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.undefined
+  var onCollideWith: js.UndefOr[Any] = js.undefined
+  
   /**
     * A self reference if the body is _not_ a part of another body.
     * Otherwise this is a reference to the body that this is a part of.
@@ -366,6 +406,7 @@ trait BodyType extends MatterBody {
     * @type body
     */
   var parent: BodyType
+  
   /**
     * An array of bodies that make up this body. 
     * The first body in the array must always be a self reference to the current body instance.
@@ -378,13 +419,15 @@ trait BodyType extends MatterBody {
     * @type body[]
     */
   var parts: js.Array[BodyType]
+  
   /**
     * An object reserved for storing plugin-specific properties.
     *
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any
+  var plugin: Any
+  
   /**
     * A `Vector` that specifies the current world-space position of the body.
     *
@@ -393,6 +436,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var position: Vector
+  
   /**
     * A `Vector` that specifies the position impulse.
     *
@@ -401,6 +445,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var positionImpulse: Vector
+  
   /**
     * A `Vector` that specifies the previous position.
     *
@@ -409,6 +454,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var positionPrev: Vector
+  
   /**
     * A `Vector` that specifies the previous position impulse.
     *
@@ -417,6 +463,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var previousPositionImpulse: Vector
+  
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
     *
@@ -424,6 +471,7 @@ trait BodyType extends MatterBody {
     * @type object
     */
   var render: IBodyRenderOptions
+  
   /**
     * A `Number` that defines the restitution (elasticity) of the body. The value is always positive and is in the range `(0, 1)`.
     * A value of `0` means collisions may be perfectly inelastic and no bouncing may occur.
@@ -437,6 +485,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var restitution: Double
+  
   /**
     * The scale of the Body.
     *
@@ -446,6 +495,15 @@ trait BodyType extends MatterBody {
     * @default { x: 1, y: 1 }
     */
   var scale: Vector
+  
+  /**
+    * Sets the onCollideWith callback.
+    *
+    * @property setOnCollideWith
+    * @type Function
+    */
+  def setOnCollideWith(body: BodyType, callback: js.Function): BodyType
+  
   /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
     *
@@ -454,6 +512,7 @@ trait BodyType extends MatterBody {
     * @default 60
     */
   var sleepThreshold: Double
+  
   /**
     * A `Number` that specifies a tolerance on how far a body is allowed to 'sink' or rotate into other bodies.
     * Avoid changing this value unless you understand the purpose of `slop` in physics engines.
@@ -464,6 +523,7 @@ trait BodyType extends MatterBody {
     * @default 0.05
     */
   var slop: Double
+  
   /**
     * A `Number` that _measures_ the current speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.velocity`).
     *
@@ -473,6 +533,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var speed: Double
+  
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
     *
@@ -481,6 +542,7 @@ trait BodyType extends MatterBody {
     * @default 1
     */
   var timeScale: Double
+  
   /**
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
     *
@@ -489,6 +551,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var torque: Double
+  
   /**
     * The total number of contacts.
     *
@@ -497,6 +560,7 @@ trait BodyType extends MatterBody {
     * @default 0
     */
   var totalContacts: Double
+  
   /**
     * A `String` denoting the type of object.
     *
@@ -506,6 +570,7 @@ trait BodyType extends MatterBody {
     * @readOnly
     */
   var `type`: String
+  
   /**
     * A `Vector` that _measures_ the current velocity of the body after the last `Body.update`. It is read-only.
     * If you need to modify a body's velocity directly, you should either apply a force or simply change the body's `position` (as the engine uses position-Verlet integration).
@@ -516,6 +581,7 @@ trait BodyType extends MatterBody {
     * @default { x: 0, y: 0 }
     */
   var velocity: Vector
+  
   /**
     * An array of `Vector` objects that specify the convex hull of the rigid body.
     * These should be provided about the origin `(0, 0)`. E.g.
@@ -532,19 +598,11 @@ trait BodyType extends MatterBody {
     * @type vector[]
     */
   var vertices: js.UndefOr[js.Array[Vector]] = js.undefined
-  /**
-    * Sets the onCollideWith callback.
-    *
-    * @property setOnCollideWith
-    * @type Function
-    */
-  def setOnCollideWith(body: BodyType, callback: js.Function): BodyType
 }
-
 object BodyType {
-  @scala.inline
-  def apply(
-    _original: js.Any,
+  
+  inline def apply(
+    _original: Any,
     angle: Double,
     anglePrev: Double,
     angularSpeed: Double,
@@ -576,7 +634,7 @@ object BodyType {
     motion: Double,
     parent: BodyType,
     parts: js.Array[BodyType],
-    plugin: js.Any,
+    plugin: Any,
     position: Vector,
     positionImpulse: Vector,
     positionPrev: Vector,
@@ -584,7 +642,7 @@ object BodyType {
     render: IBodyRenderOptions,
     restitution: Double,
     scale: Vector,
-    setOnCollideWith: (BodyType, js.Function) => CallbackTo[BodyType],
+    setOnCollideWith: (BodyType, js.Function) => BodyType,
     sleepThreshold: Double,
     slop: Double,
     speed: Double,
@@ -592,30 +650,153 @@ object BodyType {
     torque: Double,
     totalContacts: Double,
     `type`: String,
-    velocity: Vector,
-    axes: js.Array[Vector] = null,
-    chamfer: IChamfer = null,
-    events: js.Any = null,
-    gameObject: js.Any = null,
-    onCollideActiveCallback: js.Function = null,
-    onCollideCallback: js.Function = null,
-    onCollideEndCallback: js.Function = null,
-    onCollideWith: js.Any = null,
-    vertices: js.Array[Vector] = null
+    velocity: Vector
   ): BodyType = {
-    val __obj = js.Dynamic.literal(_original = _original.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], anglePrev = anglePrev.asInstanceOf[js.Any], angularSpeed = angularSpeed.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], centerOfMass = centerOfMass.asInstanceOf[js.Any], centerOffset = centerOffset.asInstanceOf[js.Any], circleRadius = circleRadius.asInstanceOf[js.Any], collisionFilter = collisionFilter.asInstanceOf[js.Any], constraintImpulse = constraintImpulse.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], friction = friction.asInstanceOf[js.Any], frictionAir = frictionAir.asInstanceOf[js.Any], frictionStatic = frictionStatic.asInstanceOf[js.Any], gravityScale = gravityScale.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ignoreGravity = ignoreGravity.asInstanceOf[js.Any], ignorePointer = ignorePointer.asInstanceOf[js.Any], inertia = inertia.asInstanceOf[js.Any], inverseInertia = inverseInertia.asInstanceOf[js.Any], inverseMass = inverseMass.asInstanceOf[js.Any], isSensor = isSensor.asInstanceOf[js.Any], isSleeping = isSleeping.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mass = mass.asInstanceOf[js.Any], motion = motion.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], positionImpulse = positionImpulse.asInstanceOf[js.Any], positionPrev = positionPrev.asInstanceOf[js.Any], previousPositionImpulse = previousPositionImpulse.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], restitution = restitution.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], sleepThreshold = sleepThreshold.asInstanceOf[js.Any], slop = slop.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timeScale = timeScale.asInstanceOf[js.Any], torque = torque.asInstanceOf[js.Any], totalContacts = totalContacts.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
-    __obj.updateDynamic("setOnCollideWith")(js.Any.fromFunction2((t0: typingsJapgolly.phaser.MatterJS.BodyType, t1: js.Function) => setOnCollideWith(t0, t1).runNow()))
+    val __obj = js.Dynamic.literal(_original = _original.asInstanceOf[js.Any], angle = angle.asInstanceOf[js.Any], anglePrev = anglePrev.asInstanceOf[js.Any], angularSpeed = angularSpeed.asInstanceOf[js.Any], angularVelocity = angularVelocity.asInstanceOf[js.Any], area = area.asInstanceOf[js.Any], bounds = bounds.asInstanceOf[js.Any], centerOfMass = centerOfMass.asInstanceOf[js.Any], centerOffset = centerOffset.asInstanceOf[js.Any], circleRadius = circleRadius.asInstanceOf[js.Any], collisionFilter = collisionFilter.asInstanceOf[js.Any], constraintImpulse = constraintImpulse.asInstanceOf[js.Any], density = density.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], friction = friction.asInstanceOf[js.Any], frictionAir = frictionAir.asInstanceOf[js.Any], frictionStatic = frictionStatic.asInstanceOf[js.Any], gravityScale = gravityScale.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ignoreGravity = ignoreGravity.asInstanceOf[js.Any], ignorePointer = ignorePointer.asInstanceOf[js.Any], inertia = inertia.asInstanceOf[js.Any], inverseInertia = inverseInertia.asInstanceOf[js.Any], inverseMass = inverseMass.asInstanceOf[js.Any], isSensor = isSensor.asInstanceOf[js.Any], isSleeping = isSleeping.asInstanceOf[js.Any], isStatic = isStatic.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], mass = mass.asInstanceOf[js.Any], motion = motion.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], plugin = plugin.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], positionImpulse = positionImpulse.asInstanceOf[js.Any], positionPrev = positionPrev.asInstanceOf[js.Any], previousPositionImpulse = previousPositionImpulse.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any], restitution = restitution.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], setOnCollideWith = js.Any.fromFunction2(setOnCollideWith), sleepThreshold = sleepThreshold.asInstanceOf[js.Any], slop = slop.asInstanceOf[js.Any], speed = speed.asInstanceOf[js.Any], timeScale = timeScale.asInstanceOf[js.Any], torque = torque.asInstanceOf[js.Any], totalContacts = totalContacts.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (axes != null) __obj.updateDynamic("axes")(axes.asInstanceOf[js.Any])
-    if (chamfer != null) __obj.updateDynamic("chamfer")(chamfer.asInstanceOf[js.Any])
-    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
-    if (gameObject != null) __obj.updateDynamic("gameObject")(gameObject.asInstanceOf[js.Any])
-    if (onCollideActiveCallback != null) __obj.updateDynamic("onCollideActiveCallback")(onCollideActiveCallback.asInstanceOf[js.Any])
-    if (onCollideCallback != null) __obj.updateDynamic("onCollideCallback")(onCollideCallback.asInstanceOf[js.Any])
-    if (onCollideEndCallback != null) __obj.updateDynamic("onCollideEndCallback")(onCollideEndCallback.asInstanceOf[js.Any])
-    if (onCollideWith != null) __obj.updateDynamic("onCollideWith")(onCollideWith.asInstanceOf[js.Any])
-    if (vertices != null) __obj.updateDynamic("vertices")(vertices.asInstanceOf[js.Any])
     __obj.asInstanceOf[BodyType]
   }
+  
+  extension [Self <: BodyType](x: Self) {
+    
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    
+    inline def setAnglePrev(value: Double): Self = StObject.set(x, "anglePrev", value.asInstanceOf[js.Any])
+    
+    inline def setAngularSpeed(value: Double): Self = StObject.set(x, "angularSpeed", value.asInstanceOf[js.Any])
+    
+    inline def setAngularVelocity(value: Double): Self = StObject.set(x, "angularVelocity", value.asInstanceOf[js.Any])
+    
+    inline def setArea(value: Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    
+    inline def setAxes(value: js.Array[Vector]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    
+    inline def setAxesVarargs(value: Vector*): Self = StObject.set(x, "axes", js.Array(value*))
+    
+    inline def setBounds(value: IBound): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    
+    inline def setCenterOfMass(value: Vector): Self = StObject.set(x, "centerOfMass", value.asInstanceOf[js.Any])
+    
+    inline def setCenterOffset(value: Vector): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
+    
+    inline def setChamfer(value: IChamfer): Self = StObject.set(x, "chamfer", value.asInstanceOf[js.Any])
+    
+    inline def setChamferUndefined: Self = StObject.set(x, "chamfer", js.undefined)
+    
+    inline def setCircleRadius(value: Double): Self = StObject.set(x, "circleRadius", value.asInstanceOf[js.Any])
+    
+    inline def setCollisionFilter(value: ICollisionFilter): Self = StObject.set(x, "collisionFilter", value.asInstanceOf[js.Any])
+    
+    inline def setConstraintImpulse(value: Vector): Self = StObject.set(x, "constraintImpulse", value.asInstanceOf[js.Any])
+    
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    
+    inline def setEvents(value: Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    
+    inline def setForce(value: Vector): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    
+    inline def setFrictionAir(value: Double): Self = StObject.set(x, "frictionAir", value.asInstanceOf[js.Any])
+    
+    inline def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
+    
+    inline def setGameObject(value: Any): Self = StObject.set(x, "gameObject", value.asInstanceOf[js.Any])
+    
+    inline def setGameObjectUndefined: Self = StObject.set(x, "gameObject", js.undefined)
+    
+    inline def setGravityScale(value: Vector): Self = StObject.set(x, "gravityScale", value.asInstanceOf[js.Any])
+    
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreGravity(value: Boolean): Self = StObject.set(x, "ignoreGravity", value.asInstanceOf[js.Any])
+    
+    inline def setIgnorePointer(value: Boolean): Self = StObject.set(x, "ignorePointer", value.asInstanceOf[js.Any])
+    
+    inline def setInertia(value: Double): Self = StObject.set(x, "inertia", value.asInstanceOf[js.Any])
+    
+    inline def setInverseInertia(value: Double): Self = StObject.set(x, "inverseInertia", value.asInstanceOf[js.Any])
+    
+    inline def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
+    
+    inline def setIsSensor(value: Boolean): Self = StObject.set(x, "isSensor", value.asInstanceOf[js.Any])
+    
+    inline def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
+    
+    inline def setIsStatic(value: Boolean): Self = StObject.set(x, "isStatic", value.asInstanceOf[js.Any])
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setMass(value: Double): Self = StObject.set(x, "mass", value.asInstanceOf[js.Any])
+    
+    inline def setMotion(value: Double): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+    
+    inline def setOnCollideActiveCallback(value: js.Function): Self = StObject.set(x, "onCollideActiveCallback", value.asInstanceOf[js.Any])
+    
+    inline def setOnCollideActiveCallbackUndefined: Self = StObject.set(x, "onCollideActiveCallback", js.undefined)
+    
+    inline def setOnCollideCallback(value: js.Function): Self = StObject.set(x, "onCollideCallback", value.asInstanceOf[js.Any])
+    
+    inline def setOnCollideCallbackUndefined: Self = StObject.set(x, "onCollideCallback", js.undefined)
+    
+    inline def setOnCollideEndCallback(value: js.Function): Self = StObject.set(x, "onCollideEndCallback", value.asInstanceOf[js.Any])
+    
+    inline def setOnCollideEndCallbackUndefined: Self = StObject.set(x, "onCollideEndCallback", js.undefined)
+    
+    inline def setOnCollideWith(value: Any): Self = StObject.set(x, "onCollideWith", value.asInstanceOf[js.Any])
+    
+    inline def setOnCollideWithUndefined: Self = StObject.set(x, "onCollideWith", js.undefined)
+    
+    inline def setParent(value: BodyType): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    
+    inline def setParts(value: js.Array[BodyType]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    
+    inline def setPartsVarargs(value: BodyType*): Self = StObject.set(x, "parts", js.Array(value*))
+    
+    inline def setPlugin(value: Any): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    
+    inline def setPosition(value: Vector): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    
+    inline def setPositionImpulse(value: Vector): Self = StObject.set(x, "positionImpulse", value.asInstanceOf[js.Any])
+    
+    inline def setPositionPrev(value: Vector): Self = StObject.set(x, "positionPrev", value.asInstanceOf[js.Any])
+    
+    inline def setPreviousPositionImpulse(value: Vector): Self = StObject.set(x, "previousPositionImpulse", value.asInstanceOf[js.Any])
+    
+    inline def setRender(value: IBodyRenderOptions): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    
+    inline def setScale(value: Vector): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    inline def setSetOnCollideWith(value: (BodyType, js.Function) => BodyType): Self = StObject.set(x, "setOnCollideWith", js.Any.fromFunction2(value))
+    
+    inline def setSleepThreshold(value: Double): Self = StObject.set(x, "sleepThreshold", value.asInstanceOf[js.Any])
+    
+    inline def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
+    
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    
+    inline def setTimeScale(value: Double): Self = StObject.set(x, "timeScale", value.asInstanceOf[js.Any])
+    
+    inline def setTorque(value: Double): Self = StObject.set(x, "torque", value.asInstanceOf[js.Any])
+    
+    inline def setTotalContacts(value: Double): Self = StObject.set(x, "totalContacts", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setVelocity(value: Vector): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    
+    inline def setVertices(value: js.Array[Vector]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    
+    inline def setVerticesUndefined: Self = StObject.set(x, "vertices", js.undefined)
+    
+    inline def setVerticesVarargs(value: Vector*): Self = StObject.set(x, "vertices", js.Array(value*))
+    
+    inline def set_original(value: Any): Self = StObject.set(x, "_original", value.asInstanceOf[js.Any])
+  }
 }
-

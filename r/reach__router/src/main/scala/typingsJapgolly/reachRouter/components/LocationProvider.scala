@@ -1,45 +1,44 @@
 package typingsJapgolly.reachRouter.components
 
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Node
-import org.scalablytyped.runtime.StringDictionary
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.facade.React.Node
+import japgolly.scalajs.react.vdom.VdomElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reachRouter.mod.History
+import typingsJapgolly.reachRouter.mod.LocationContext
 import typingsJapgolly.reachRouter.mod.LocationProviderProps
 import typingsJapgolly.reachRouter.mod.LocationProviderRenderFn
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LocationProvider {
-  def apply(
-    history: History = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: Node | LocationProviderRenderFn = null
-  ): UnmountedWithRoot[
-    LocationProviderProps, 
-    typingsJapgolly.reachRouter.mod.LocationProvider, 
-    Unit, 
-    LocationProviderProps
-  ] = {
-    val __obj = js.Dynamic.literal()
   
-      if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
-    if (history != null) __obj.updateDynamic("history")(history.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reachRouter.mod.LocationProviderProps, 
-  japgolly.scalajs.react.Children.None, 
-  typingsJapgolly.reachRouter.mod.LocationProvider](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reachRouter.mod.LocationProviderProps])
-  }
   @JSImport("@reach/router", "LocationProvider")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reachRouter.mod.LocationProvider] {
+    
+    inline def children(value: Node | LocationProviderRenderFn): this.type = set("children", value.asInstanceOf[js.Any])
+    
+    inline def childrenFunction1(value: /* context */ LocationContext => Node): this.type = set("children", js.Any.fromFunction1(value))
+    
+    inline def childrenNull: this.type = set("children", null)
+    
+    inline def childrenVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("children", js.Array(value*))
+    
+    inline def childrenVdomElement(value: VdomElement): this.type = set("children", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def history(value: History): this.type = set("history", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: LocationProvider.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: LocationProviderProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

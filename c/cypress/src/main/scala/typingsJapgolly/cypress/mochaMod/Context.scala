@@ -1,8 +1,8 @@
 package typingsJapgolly.cypress.mochaMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion Runnable untyped events
 /**
@@ -12,6 +12,6 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("mocha", "Context")
 @js.native
-class Context ()
-  extends typingsJapgolly.cypress.Mocha_.Context
-
+open class Context ()
+  extends StObject
+     with typingsJapgolly.cypress.Mocha.Context

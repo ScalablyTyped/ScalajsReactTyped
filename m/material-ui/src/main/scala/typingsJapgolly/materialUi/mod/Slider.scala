@@ -2,12 +2,11 @@ package typingsJapgolly.materialUi.mod
 
 import typingsJapgolly.materialUi.MaterialUI.SliderProps
 import typingsJapgolly.react.mod.Component
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("material-ui", "Slider")
 @js.native
-class Slider ()
-  extends Component[SliderProps, js.Object, js.Any]
-
+open class Slider ()
+  extends Component[SliderProps, js.Object, Any]

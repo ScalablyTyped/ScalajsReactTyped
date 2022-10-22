@@ -1,19 +1,36 @@
 package typingsJapgolly.abstractLeveldown
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractLeveldownStrings {
-  @js.native
-  sealed trait del extends js.Object
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait closed extends StObject
+  inline def closed: closed = "closed".asInstanceOf[closed]
   
-  @scala.inline
-  def del: del = "del".asInstanceOf[del]
-  @scala.inline
-  def put: put = "put".asInstanceOf[put]
+  @js.native
+  sealed trait closing extends StObject
+  inline def closing: closing = "closing".asInstanceOf[closing]
+  
+  @js.native
+  sealed trait del extends StObject
+  inline def del: del = "del".asInstanceOf[del]
+  
+  @js.native
+  sealed trait `new` extends StObject
+  inline def `new`: `new` = "new".asInstanceOf[`new`]
+  
+  @js.native
+  sealed trait open extends StObject
+  inline def open: open = "open".asInstanceOf[open]
+  
+  @js.native
+  sealed trait opening extends StObject
+  inline def opening: opening = "opening".asInstanceOf[opening]
+  
+  @js.native
+  sealed trait put extends StObject
+  inline def put: put = "put".asInstanceOf[put]
 }
-

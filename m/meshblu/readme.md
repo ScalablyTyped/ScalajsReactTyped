@@ -11,9 +11,9 @@ Meshblu IoT network and API
 | Full name          | meshblu |
 | Keywords           | iot, internet of things, arduino, tessel, raspberrypi, skynet, meshblu |
 | # releases         | 1 |
-| # dependents       | 105 |
-| # downloads        | 6995 |
-| # stars            | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 755.6666666666666 |
+| # stars            | 19.0 |
 
 ## Links
 - [Homepage](https://github.com/octoblu/meshblu-npm#readme)

@@ -3,23 +3,6 @@
 
 Typings are for version 3.1
 
-## Library description:
-A React layer component responsible for the position of an element on a page
-
-|                    |                 |
-| ------------------ | :-------------: |
-| Full name          | @atlaskit/layer |
-| Keywords           | atlaskit, react, ui |
-| # releases         | 47 |
-| # dependents       | 4 |
-| # downloads        | 2057503 |
-| # stars            | 0 |
-
-## Links
-- [Homepage](https://bitbucket.org/atlassian/atlaskit-mk-2#readme)
-- [Repository](https://bitbucket.org/atlassian/atlaskit-mk-2)
-- [Npm](https://www.npmjs.com/package/%40atlaskit%2Flayer)
-    
 
 
 ## Note

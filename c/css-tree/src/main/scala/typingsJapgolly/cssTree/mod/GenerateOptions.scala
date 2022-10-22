@@ -1,25 +1,30 @@
 package typingsJapgolly.cssTree.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GenerateOptions extends js.Object {
+trait GenerateOptions extends StObject {
+  
   var decorator: js.UndefOr[js.Function1[/* handlers */ GenerateHandlers, GenerateHandlers]] = js.undefined
+  
   var sourceMap: js.UndefOr[Boolean] = js.undefined
 }
-
 object GenerateOptions {
-  @scala.inline
-  def apply(
-    decorator: /* handlers */ GenerateHandlers => CallbackTo[GenerateHandlers] = null,
-    sourceMap: js.UndefOr[Boolean] = js.undefined
-  ): GenerateOptions = {
+  
+  inline def apply(): GenerateOptions = {
     val __obj = js.Dynamic.literal()
-    if (decorator != null) __obj.updateDynamic("decorator")(js.Any.fromFunction1((t0: /* handlers */ typingsJapgolly.cssTree.mod.GenerateHandlers) => decorator(t0).runNow()))
-    if (!js.isUndefined(sourceMap)) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
     __obj.asInstanceOf[GenerateOptions]
   }
+  
+  extension [Self <: GenerateOptions](x: Self) {
+    
+    inline def setDecorator(value: /* handlers */ GenerateHandlers => GenerateHandlers): Self = StObject.set(x, "decorator", js.Any.fromFunction1(value))
+    
+    inline def setDecoratorUndefined: Self = StObject.set(x, "decorator", js.undefined)
+    
+    inline def setSourceMap(value: Boolean): Self = StObject.set(x, "sourceMap", value.asInstanceOf[js.Any])
+    
+    inline def setSourceMapUndefined: Self = StObject.set(x, "sourceMap", js.undefined)
+  }
 }
-

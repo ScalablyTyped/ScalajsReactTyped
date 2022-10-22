@@ -1,13 +1,12 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "HookBuilder")
 @js.native
-class HookBuilder protected ()
+open class HookBuilder protected ()
   extends typingsJapgolly.uirouterCore.mod.HookBuilder {
-  def this(transition: typingsJapgolly.uirouterCore.transitionTransitionMod.Transition) = this()
+  def this(transition: typingsJapgolly.uirouterCore.libTransitionTransitionMod.Transition) = this()
 }
-

@@ -1,11 +1,10 @@
 package typingsJapgolly.uirouterCore.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@uirouter/core", "UIRouterPluginBase")
+/* note: abstract class */ @JSImport("@uirouter/core", "UIRouterPluginBase")
 @js.native
-abstract class UIRouterPluginBase ()
-  extends typingsJapgolly.uirouterCore.interfaceMod.UIRouterPluginBase
-
+open class UIRouterPluginBase ()
+  extends typingsJapgolly.uirouterCore.libInterfaceMod.UIRouterPluginBase

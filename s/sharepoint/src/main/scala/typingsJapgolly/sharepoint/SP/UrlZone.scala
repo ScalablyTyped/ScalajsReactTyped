@@ -1,47 +1,37 @@
 package typingsJapgolly.sharepoint.SP
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait UrlZone extends js.Object
-
+sealed trait UrlZone extends StObject
 @JSGlobal("SP.UrlZone")
 @js.native
-object UrlZone extends js.Object {
-  @js.native
-  sealed trait custom extends UrlZone
+object UrlZone extends StObject {
   
   @js.native
-  sealed trait defaultZone extends UrlZone
+  sealed trait custom
+    extends StObject
+       with UrlZone
   
   @js.native
-  sealed trait extranet extends UrlZone
+  sealed trait defaultZone
+    extends StObject
+       with UrlZone
   
   @js.native
-  sealed trait internet extends UrlZone
+  sealed trait extranet
+    extends StObject
+       with UrlZone
   
   @js.native
-  sealed trait intranet extends UrlZone
+  sealed trait internet
+    extends StObject
+       with UrlZone
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[UrlZone with Double] = js.native
-  /* 3 */ @js.native
-  object custom extends TopLevel[custom with Double]
-  
-  /* 0 */ @js.native
-  object defaultZone extends TopLevel[defaultZone with Double]
-  
-  /* 4 */ @js.native
-  object extranet extends TopLevel[extranet with Double]
-  
-  /* 2 */ @js.native
-  object internet extends TopLevel[internet with Double]
-  
-  /* 1 */ @js.native
-  object intranet extends TopLevel[intranet with Double]
-  
+  @js.native
+  sealed trait intranet
+    extends StObject
+       with UrlZone
 }
-

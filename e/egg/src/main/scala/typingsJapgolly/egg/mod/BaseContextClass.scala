@@ -1,18 +1,18 @@
 package typingsJapgolly.egg.mod
 
-import typingsJapgolly.eggLogger.mod.EggLogger
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("egg", "BaseContextClass")
 @js.native
-class BaseContextClass ()
-  extends typingsJapgolly.eggCore.mod.BaseContextClass[Context, Application, EggAppConfig, IService] {
+open class BaseContextClass protected ()
+  extends typingsJapgolly.eggCore.mod.BaseContextClass[Context[Any], Application, EggAppConfig, IService] {
+  def this(ctx: Context[Any]) = this()
+  
   // tslint:disable-line
   /**
     * logger
     */
-  var logger: EggLogger = js.native
+  /* protected */ var logger: EggLogger = js.native
 }
-

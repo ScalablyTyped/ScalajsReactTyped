@@ -10,15 +10,12 @@ Convert .json files to ES6 modules:
 | ------------------ | :-------------: |
 | Full name          | rollup-plugin-json |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 363 |
-| # downloads        | 9905553 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 2327384.0 |
+| # stars            | 130.0 |
 
 ## Links
-- [Homepage](https://github.com/rollup/rollup-plugin-json#readme)
-- [Bugs](https://github.com/rollup/rollup-plugin-json/issues)
-- [Repository](https://github.com/rollup/rollup-plugin-json)
 - [Npm](https://www.npmjs.com/package/rollup-plugin-json)
     
 

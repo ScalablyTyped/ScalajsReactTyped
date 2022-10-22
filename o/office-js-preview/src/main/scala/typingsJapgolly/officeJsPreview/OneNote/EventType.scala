@@ -1,44 +1,52 @@
 package typingsJapgolly.officeJsPreview.OneNote
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EventType extends js.Object
-
+sealed trait EventType extends StObject
 /**
-  * [Api set: OneNoteApi 1.3]
+  * @remarks
+  * [Api set: OneNoteApi 1.9]
   */
 @JSGlobal("OneNote.EventType")
 @js.native
-object EventType extends js.Object {
+object EventType extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait notebookChanged extends EventType
+  sealed trait alterationSelected
+    extends StObject
+       with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait pageSelectionChanged extends EventType
+  sealed trait inkSelectedForCorrection
+    extends StObject
+       with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait sectionSelectionChanged extends EventType
+  sealed trait reset
+    extends StObject
+       with EventType
   
+  /**
+    * @remarks
+    * [Api set: OneNoteApi 1.9]
+    */
   @js.native
-  sealed trait stickyNotesContextMenuExecuted extends EventType
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[EventType with String] = js.native
-  /* "NotebookChanged" */ @js.native
-  object notebookChanged extends TopLevel[notebookChanged with String]
-  
-  /* "PageSelectionChanged" */ @js.native
-  object pageSelectionChanged extends TopLevel[pageSelectionChanged with String]
-  
-  /* "SectionSelectionChanged" */ @js.native
-  object sectionSelectionChanged extends TopLevel[sectionSelectionChanged with String]
-  
-  /* "StickyNotesContextMenuExecuted" */ @js.native
-  object stickyNotesContextMenuExecuted extends TopLevel[stickyNotesContextMenuExecuted with String]
-  
+  sealed trait restrictionsCalculated
+    extends StObject
+       with EventType
 }
-

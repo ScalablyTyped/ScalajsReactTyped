@@ -1,31 +1,40 @@
 package typingsJapgolly.vscodeLanguageserver.mod
 
-import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverNumbers.`1`
-import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverNumbers.`2`
-import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverNumbers.`3`
-import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverNumbers.`4`
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverInts.`1`
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverInts.`2`
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverInts.`3`
+import typingsJapgolly.vscodeLanguageserver.vscodeLanguageserverInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("vscode-languageserver", "DiagnosticSeverity")
-@js.native
-object DiagnosticSeverity extends js.Object {
+object DiagnosticSeverity {
+  
   /**
     * Reports an error.
     */
+  @JSImport("vscode-languageserver", "DiagnosticSeverity.Error")
+  @js.native
   val Error: `1` = js.native
+  
   /**
     * Reports a hint.
     */
+  @JSImport("vscode-languageserver", "DiagnosticSeverity.Hint")
+  @js.native
   val Hint: `4` = js.native
+  
   /**
     * Reports an information.
     */
+  @JSImport("vscode-languageserver", "DiagnosticSeverity.Information")
+  @js.native
   val Information: `3` = js.native
+  
   /**
     * Reports a warning.
     */
+  @JSImport("vscode-languageserver", "DiagnosticSeverity.Warning")
+  @js.native
   val Warning: `2` = js.native
 }
-

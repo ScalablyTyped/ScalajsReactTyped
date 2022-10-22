@@ -1,25 +1,29 @@
 package typingsJapgolly.esquery.mod
 
 import typingsJapgolly.esquery.esqueryStrings.not
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait Negation
-  extends MultiSelectorAtom
+  extends StObject
+     with MultiSelectorAtom
      with MultiSelector
      with Selector {
+  
   @JSName("type")
   var type_Negation: not
 }
-
 object Negation {
-  @scala.inline
-  def apply(selectors: js.Array[SubjectSelector], `type`: not, subject: js.UndefOr[Boolean] = js.undefined): Negation = {
+  
+  inline def apply(selectors: js.Array[SubjectSelector]): Negation = {
     val __obj = js.Dynamic.literal(selectors = selectors.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("not")
     __obj.asInstanceOf[Negation]
   }
+  
+  extension [Self <: Negation](x: Self) {
+    
+    inline def setType(value: not): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,26 +1,45 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ManagedAppDiagnosticStatus extends js.Object {
+trait ManagedAppDiagnosticStatus extends StObject {
+  
   // Instruction on how to mitigate a failed validation
-  var mitigationInstruction: js.UndefOr[String] = js.undefined
+  var mitigationInstruction: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The state of the operation
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // The validation friendly name
-  var validationName: js.UndefOr[String] = js.undefined
+  var validationName: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object ManagedAppDiagnosticStatus {
-  @scala.inline
-  def apply(mitigationInstruction: String = null, state: String = null, validationName: String = null): ManagedAppDiagnosticStatus = {
+  
+  inline def apply(): ManagedAppDiagnosticStatus = {
     val __obj = js.Dynamic.literal()
-    if (mitigationInstruction != null) __obj.updateDynamic("mitigationInstruction")(mitigationInstruction.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (validationName != null) __obj.updateDynamic("validationName")(validationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManagedAppDiagnosticStatus]
   }
+  
+  extension [Self <: ManagedAppDiagnosticStatus](x: Self) {
+    
+    inline def setMitigationInstruction(value: NullableOption[String]): Self = StObject.set(x, "mitigationInstruction", value.asInstanceOf[js.Any])
+    
+    inline def setMitigationInstructionNull: Self = StObject.set(x, "mitigationInstruction", null)
+    
+    inline def setMitigationInstructionUndefined: Self = StObject.set(x, "mitigationInstruction", js.undefined)
+    
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setValidationName(value: NullableOption[String]): Self = StObject.set(x, "validationName", value.asInstanceOf[js.Any])
+    
+    inline def setValidationNameNull: Self = StObject.set(x, "validationName", null)
+    
+    inline def setValidationNameUndefined: Self = StObject.set(x, "validationName", js.undefined)
+  }
 }
-

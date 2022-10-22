@@ -2,9 +2,10 @@ package typingsJapgolly.microsoftGraph.mod
 
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.failed_
 import typingsJapgolly.microsoftGraph.microsoftGraphStrings.notStarted_
+import typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.invalid
@@ -12,24 +13,20 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.inProgress
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.succeeded
   - typingsJapgolly.microsoftGraph.microsoftGraphStrings.failed_
-  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue
+  - typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue_
 */
-trait TeamsAsyncOperationStatus extends js.Object
-
+trait TeamsAsyncOperationStatus extends StObject
 object TeamsAsyncOperationStatus {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def failed: failed_ = this.cast("failed")
-  @scala.inline
-  def inProgress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inProgress = this.cast("inProgress")
-  @scala.inline
-  def invalid: typingsJapgolly.microsoftGraph.microsoftGraphStrings.invalid = this.cast("invalid")
-  @scala.inline
-  def notStarted: notStarted_ = this.cast("notStarted")
-  @scala.inline
-  def succeeded: typingsJapgolly.microsoftGraph.microsoftGraphStrings.succeeded = this.cast("succeeded")
-  @scala.inline
-  def unknownFutureValue: typingsJapgolly.microsoftGraph.microsoftGraphStrings.unknownFutureValue = this.cast("unknownFutureValue")
+  
+  inline def failed: failed_ = "failed".asInstanceOf[failed_]
+  
+  inline def inProgress: typingsJapgolly.microsoftGraph.microsoftGraphStrings.inProgress = "inProgress".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.inProgress]
+  
+  inline def invalid: typingsJapgolly.microsoftGraph.microsoftGraphStrings.invalid = "invalid".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.invalid]
+  
+  inline def notStarted: notStarted_ = "notStarted".asInstanceOf[notStarted_]
+  
+  inline def succeeded: typingsJapgolly.microsoftGraph.microsoftGraphStrings.succeeded = "succeeded".asInstanceOf[typingsJapgolly.microsoftGraph.microsoftGraphStrings.succeeded]
+  
+  inline def unknownFutureValue: unknownFutureValue_ = "unknownFutureValue".asInstanceOf[unknownFutureValue_]
 }
-

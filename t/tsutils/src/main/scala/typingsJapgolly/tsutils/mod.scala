@@ -1,15 +1,18 @@
 package typingsJapgolly.tsutils
 
 import typingsJapgolly.std.Map
-import typingsJapgolly.tsutils.controlFlowMod.ControlFlowEnd
-import typingsJapgolly.tsutils.convertAstMod.ConvertedAst
-import typingsJapgolly.tsutils.convertAstMod.NodeWrap
+import typingsJapgolly.tsutils.anon.BindingElementnameIdentif
+import typingsJapgolly.tsutils.anon.VariableDeclarationnameId
 import typingsJapgolly.tsutils.tsutilsStrings.CarriagereturnLinefeed
 import typingsJapgolly.tsutils.tsutilsStrings.Linefeed
 import typingsJapgolly.tsutils.tsutilsStrings.stripInternal
-import typingsJapgolly.tsutils.usageMod.DeclarationDomain
-import typingsJapgolly.tsutils.usageMod.UsageDomain
-import typingsJapgolly.tsutils.usageMod.VariableInfo
+import typingsJapgolly.tsutils.utilControlFlowMod.ControlFlowEnd
+import typingsJapgolly.tsutils.utilControlFlowMod.SignatureEffect
+import typingsJapgolly.tsutils.utilConvertAstMod.ConvertedAst
+import typingsJapgolly.tsutils.utilConvertAstMod.NodeWrap
+import typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain
+import typingsJapgolly.tsutils.utilUsageMod.UsageDomain
+import typingsJapgolly.tsutils.utilUsageMod.VariableInfo
 import typingsJapgolly.tsutils.utilUtilMod.AccessKind
 import typingsJapgolly.tsutils.utilUtilMod.BooleanCompilerOptions
 import typingsJapgolly.tsutils.utilUtilMod.ForEachCommentCallback
@@ -23,6 +26,7 @@ import typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions
 import typingsJapgolly.tsutils.utilUtilMod.StrictCompilerOption
 import typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind
 import typingsJapgolly.tsutils.utilUtilMod.WellKnownSymbolLiteral
+import typingsJapgolly.typescript.mod.AccessorDeclaration
 import typingsJapgolly.typescript.mod.ArrowFunction
 import typingsJapgolly.typescript.mod.AssertionExpression
 import typingsJapgolly.typescript.mod.BindingElement
@@ -35,9 +39,11 @@ import typingsJapgolly.typescript.mod.ClassLikeDeclaration
 import typingsJapgolly.typescript.mod.CommentRange
 import typingsJapgolly.typescript.mod.CompilerOptions
 import typingsJapgolly.typescript.mod.Expression
+import typingsJapgolly.typescript.mod.ExpressionWithTypeArguments
 import typingsJapgolly.typescript.mod.FunctionExpression
 import typingsJapgolly.typescript.mod.Identifier
 import typingsJapgolly.typescript.mod.JSDoc
+import typingsJapgolly.typescript.mod.MethodDeclaration
 import typingsJapgolly.typescript.mod.Modifier
 import typingsJapgolly.typescript.mod.ModifierFlags
 import typingsJapgolly.typescript.mod.ModifiersArray
@@ -48,447 +54,858 @@ import typingsJapgolly.typescript.mod.NodeFlags
 import typingsJapgolly.typescript.mod.ObjectFlags
 import typingsJapgolly.typescript.mod.ObjectType
 import typingsJapgolly.typescript.mod.ParameterDeclaration
+import typingsJapgolly.typescript.mod.PropertyDeclaration
 import typingsJapgolly.typescript.mod.PropertyName
+import typingsJapgolly.typescript.mod.PseudoBigInt
 import typingsJapgolly.typescript.mod.ScriptTarget
 import typingsJapgolly.typescript.mod.Signature
 import typingsJapgolly.typescript.mod.SourceFile
 import typingsJapgolly.typescript.mod.Statement
 import typingsJapgolly.typescript.mod.StringLiteral
+import typingsJapgolly.typescript.mod.SwitchStatement
 import typingsJapgolly.typescript.mod.Symbol
 import typingsJapgolly.typescript.mod.SymbolFlags
 import typingsJapgolly.typescript.mod.SyntaxKind
+import typingsJapgolly.typescript.mod.SyntaxKind.AbstractKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.AsyncKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.ConstKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.DeclareKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.DefaultKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.ExportKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.InKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.OutKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.OverrideKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.PrivateKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.ProtectedKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.PublicKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.ReadonlyKeyword
+import typingsJapgolly.typescript.mod.SyntaxKind.StaticKeyword
 import typingsJapgolly.typescript.mod.Token
 import typingsJapgolly.typescript.mod.Type
 import typingsJapgolly.typescript.mod.TypeChecker
 import typingsJapgolly.typescript.mod.TypeFlags
 import typingsJapgolly.typescript.mod.VariableDeclaration
 import typingsJapgolly.typescript.mod.VariableDeclarationList
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tsutils", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def canHaveJsDoc(node: Node): /* is typescript.typescript.HasJSDoc */ Boolean = js.native
-  def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = js.native
-  def commentText(sourceText: String, comment: CommentRange): String = js.native
-  def convertAst(sourceFile: SourceFile): ConvertedAst = js.native
-  def endsControlFlow(statement: BlockLike): Boolean = js.native
-  def endsControlFlow(statement: Statement): Boolean = js.native
-  def findImportLikeNodes(sourceFile: SourceFile, kinds: ImportKind): js.Array[ImportLike] = js.native
-  def findImports(sourceFile: SourceFile, kinds: ImportKind): js.Array[StringLiteral | NoSubstitutionTemplateLiteral] = js.native
-  def forEachComment(node: Node, cb: ForEachCommentCallback): Unit = js.native
-  def forEachComment(node: Node, cb: ForEachCommentCallback, sourceFile: SourceFile): Unit = js.native
-  def forEachDeclaredVariable[T](
+object mod {
+  
+  @JSImport("tsutils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("tsutils", "AccessKind")
+  @js.native
+  object AccessKind extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.AccessKind & Double] = js.native
+    
+    /* 4 */ val Delete: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Delete & Double = js.native
+    
+    /* 6 */ val Modification: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Modification & Double = js.native
+    
+    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.AccessKind.None & Double = js.native
+    
+    /* 1 */ val Read: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Read & Double = js.native
+    
+    /* 3 */ val ReadWrite: typingsJapgolly.tsutils.utilUtilMod.AccessKind.ReadWrite & Double = js.native
+    
+    /* 2 */ val Write: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Write & Double = js.native
+  }
+  
+  @JSImport("tsutils", "DeclarationDomain")
+  @js.native
+  object DeclarationDomain extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain & Double] = js.native
+    
+    /* 7 */ val Any: typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain.Any & Double = js.native
+    
+    /* 8 */ val Import: typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain.Import & Double = js.native
+    
+    /* 1 */ val Namespace: typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain.Namespace & Double = js.native
+    
+    /* 2 */ val Type: typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain.Type & Double = js.native
+    
+    /* 4 */ val Value: typingsJapgolly.tsutils.utilUsageMod.DeclarationDomain.Value & Double = js.native
+  }
+  
+  @JSImport("tsutils", "ImportKind")
+  @js.native
+  object ImportKind extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ImportKind & Double] = js.native
+    
+    /* 63 */ val All: typingsJapgolly.tsutils.utilUtilMod.ImportKind.All & Double = js.native
+    
+    /* 24 */ val AllImportExpressions: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllImportExpressions & Double = js.native
+    
+    /* 59 */ val AllImports: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllImports & Double = js.native
+    
+    /* 18 */ val AllRequireLike: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllRequireLike & Double = js.native
+    
+    /* 3 */ val AllStaticImports: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllStaticImports & Double = js.native
+    
+    /* 8 */ val DynamicImport: typingsJapgolly.tsutils.utilUtilMod.ImportKind.DynamicImport & Double = js.native
+    
+    /* 4 */ val ExportFrom: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ExportFrom & Double = js.native
+    
+    /* 1 */ val ImportDeclaration: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportDeclaration & Double = js.native
+    
+    /* 2 */ val ImportEquals: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportEquals & Double = js.native
+    
+    /* 32 */ val ImportType: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportType & Double = js.native
+    
+    /* 16 */ val Require: typingsJapgolly.tsutils.utilUtilMod.ImportKind.Require & Double = js.native
+  }
+  
+  @JSImport("tsutils", "ScopeBoundary")
+  @js.native
+  object ScopeBoundary extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary & Double] = js.native
+    
+    /* 2 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Block & Double = js.native
+    
+    /* 8 */ val ConditionalType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.ConditionalType & Double = js.native
+    
+    /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Function & Double = js.native
+    
+    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.None & Double = js.native
+    
+    /* 4 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Type & Double = js.native
+  }
+  
+  @JSImport("tsutils", "ScopeBoundarySelector")
+  @js.native
+  object ScopeBoundarySelector extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector & Double] = js.native
+    
+    /* 3 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Block & Double = js.native
+    
+    /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Function & Double = js.native
+    
+    /* 8 */ val InferType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.InferType & Double = js.native
+    
+    /* 7 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Type & Double = js.native
+  }
+  
+  @JSImport("tsutils", "SideEffectOptions")
+  @js.native
+  object SideEffectOptions extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions & Double] = js.native
+    
+    /* 2 */ val Constructor: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.Constructor & Double = js.native
+    
+    /* 4 */ val JsxElement: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.JsxElement & Double = js.native
+    
+    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.None & Double = js.native
+    
+    /* 1 */ val TaggedTemplate: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate & Double = js.native
+  }
+  
+  @JSImport("tsutils", "SignatureEffect")
+  @js.native
+  object SignatureEffect extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilControlFlowMod.SignatureEffect & Double] = js.native
+    
+    /* 2 */ val Asserts: typingsJapgolly.tsutils.utilControlFlowMod.SignatureEffect.Asserts & Double = js.native
+    
+    /* 1 */ val Never: typingsJapgolly.tsutils.utilControlFlowMod.SignatureEffect.Never & Double = js.native
+  }
+  
+  @JSImport("tsutils", "UsageDomain")
+  @js.native
+  object UsageDomain extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUsageMod.UsageDomain & Double] = js.native
+    
+    /* 7 */ val Any: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.Any & Double = js.native
+    
+    /* 1 */ val Namespace: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.Namespace & Double = js.native
+    
+    /* 2 */ val Type: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.Type & Double = js.native
+    
+    /* 8 */ val TypeQuery: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.TypeQuery & Double = js.native
+    
+    /* 4 */ val Value: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.Value & Double = js.native
+    
+    /* 5 */ val ValueOrNamespace: typingsJapgolly.tsutils.utilUsageMod.UsageDomain.ValueOrNamespace & Double = js.native
+  }
+  
+  @JSImport("tsutils", "VariableDeclarationKind")
+  @js.native
+  object VariableDeclarationKind extends StObject {
+    
+    @JSBracketAccess
+    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind & Double] = js.native
+    
+    /* 2 */ val Const: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Const & Double = js.native
+    
+    /* 1 */ val Let: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Let & Double = js.native
+    
+    /* 0 */ val Var: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Var & Double = js.native
+  }
+  
+  inline def callExpressionAffectsControlFlow(node: CallExpression, checker: TypeChecker): js.UndefOr[SignatureEffect] = (^.asInstanceOf[js.Dynamic].applyDynamic("callExpressionAffectsControlFlow")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[SignatureEffect]]
+  
+  inline def canHaveJsDoc(node: Node): /* is typescript.typescript.HasJSDoc */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canHaveJsDoc")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.HasJSDoc */ Boolean]
+  
+  inline def collectVariableUsage(sourceFile: SourceFile): Map[Identifier, VariableInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("collectVariableUsage")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[Map[Identifier, VariableInfo]]
+  
+  inline def commentText(sourceText: String, comment: CommentRange): String = (^.asInstanceOf[js.Dynamic].applyDynamic("commentText")(sourceText.asInstanceOf[js.Any], comment.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  inline def convertAst(sourceFile: SourceFile): ConvertedAst = ^.asInstanceOf[js.Dynamic].applyDynamic("convertAst")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[ConvertedAst]
+  
+  inline def endsControlFlow(statement: BlockLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def endsControlFlow(statement: BlockLike, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def endsControlFlow(statement: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def endsControlFlow(statement: Statement, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsControlFlow")(statement.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def findImportLikeNodes(sourceFile: SourceFile, kinds: ImportKind): js.Array[ImportLike] = (^.asInstanceOf[js.Dynamic].applyDynamic("findImportLikeNodes")(sourceFile.asInstanceOf[js.Any], kinds.asInstanceOf[js.Any])).asInstanceOf[js.Array[ImportLike]]
+  inline def findImportLikeNodes(sourceFile: SourceFile, kinds: ImportKind, ignoreFileName: Boolean): js.Array[ImportLike] = (^.asInstanceOf[js.Dynamic].applyDynamic("findImportLikeNodes")(sourceFile.asInstanceOf[js.Any], kinds.asInstanceOf[js.Any], ignoreFileName.asInstanceOf[js.Any])).asInstanceOf[js.Array[ImportLike]]
+  
+  inline def findImports(sourceFile: SourceFile, kinds: ImportKind): js.Array[StringLiteral | NoSubstitutionTemplateLiteral] = (^.asInstanceOf[js.Dynamic].applyDynamic("findImports")(sourceFile.asInstanceOf[js.Any], kinds.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringLiteral | NoSubstitutionTemplateLiteral]]
+  inline def findImports(sourceFile: SourceFile, kinds: ImportKind, ignoreFileName: Boolean): js.Array[StringLiteral | NoSubstitutionTemplateLiteral] = (^.asInstanceOf[js.Dynamic].applyDynamic("findImports")(sourceFile.asInstanceOf[js.Any], kinds.asInstanceOf[js.Any], ignoreFileName.asInstanceOf[js.Any])).asInstanceOf[js.Array[StringLiteral | NoSubstitutionTemplateLiteral]]
+  
+  inline def forEachComment(node: Node, cb: ForEachCommentCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachComment")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachComment(node: Node, cb: ForEachCommentCallback, sourceFile: SourceFile): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachComment")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def forEachDeclaredVariable[T](
     declarationList: VariableDeclarationList,
-    cb: js.Function1[/* element */ (VariableDeclaration | BindingElement) with AnonName, T]
-  ): js.UndefOr[T] = js.native
-  def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElementnameIdentif, T]): js.UndefOr[T] = js.native
-  def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit]): Unit = js.native
-  def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit], sourceFile: SourceFile): Unit = js.native
-  def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = js.native
-  def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback, sourceFile: SourceFile): Unit = js.native
-  def getAccessKind(node: Node): AccessKind = js.native
-  def getCallSignaturesOfType(`type`: Type): js.Array[Signature] = js.native
-  def getCheckJsDirective(source: String): js.UndefOr[CheckJsDirective] = js.native
-  def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T): js.UndefOr[Token[T]] = js.native
-  def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T, sourceFile: SourceFile): js.UndefOr[Token[T]] = js.native
-  def getCommentAtPosition(sourceFile: SourceFile, pos: Double): js.UndefOr[CommentRange] = js.native
-  def getCommentAtPosition(sourceFile: SourceFile, pos: Double, parent: Node): js.UndefOr[CommentRange] = js.native
-  def getConstructorTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
-  def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = js.native
-  def getControlFlowEnd(statement: Statement): ControlFlowEnd = js.native
-  def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = js.native
-  def getDeclarationOfBindingElement(node: BindingElement): VariableDeclaration | ParameterDeclaration = js.native
-  def getIIFE(func: ArrowFunction): js.UndefOr[CallExpression] = js.native
-  def getIIFE(func: FunctionExpression): js.UndefOr[CallExpression] = js.native
-  def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = js.native
-  def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = js.native
-  def getJsDoc(node: Node): js.Array[JSDoc] = js.native
-  def getJsDoc(node: Node, sourceFile: SourceFile): js.Array[JSDoc] = js.native
-  def getLateBoundPropertyNames(node: Expression, checker: TypeChecker): LateBoundPropertyNames = js.native
-  def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = js.native
-  def getLineBreakStyle(sourceFile: SourceFile): Linefeed | CarriagereturnLinefeed = js.native
-  def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = js.native
-  @JSName("getModifier")
-  def getModifier_kind(
-    node: Node,
-    kind: /* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any
-  ): js.UndefOr[Modifier] = js.native
-  def getNextStatement(statement: Statement): js.UndefOr[Statement] = js.native
-  def getNextToken(node: Node): js.UndefOr[Node] = js.native
-  def getNextToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = js.native
-  def getPreviousStatement(statement: Statement): js.UndefOr[Statement] = js.native
-  def getPreviousToken(node: Node): js.UndefOr[Node] = js.native
-  def getPreviousToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = js.native
-  def getPropertyName(propertyName: PropertyName): js.UndefOr[String] = js.native
-  def getPropertyNameFromType(`type`: Type): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName] = js.native
-  def getPropertyNameOfWellKnownSymbol(node: WellKnownSymbolLiteral): typingsJapgolly.tsutils.utilUtilMod.PropertyName = js.native
-  def getPropertyOfType(`type`: Type, name: typingsJapgolly.typescript.mod.String): js.UndefOr[Symbol] = js.native
-  def getSingleLateBoundPropertyNameOfPropertyName(node: PropertyName, checker: TypeChecker): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName] = js.native
-  def getTokenAtPosition(parent: Node, pos: Double): js.UndefOr[Node] = js.native
-  def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile): js.UndefOr[Node] = js.native
-  def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile, allowJsDoc: Boolean): js.UndefOr[Node] = js.native
-  def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = js.native
-  def getVariableDeclarationKind(declarationList: VariableDeclarationList): VariableDeclarationKind = js.native
-  def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = js.native
-  def hasAccessModifier(node: ClassElement): Boolean = js.native
-  def hasAccessModifier(node: ParameterDeclaration): Boolean = js.native
-  @JSName("hasModifier")
-  def hasModifier_kind(
-    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
-  ): Boolean = js.native
-  @JSName("hasModifier")
-  def hasModifier_kind(
+    cb: js.Function1[/* element */ VariableDeclarationnameId | BindingElementnameIdentif, T]
+  ): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachDeclaredVariable")(declarationList.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  
+  inline def forEachDestructuringIdentifier[T](pattern: BindingPattern, fn: js.Function1[/* element */ BindingElementnameIdentif, T]): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachDestructuringIdentifier")(pattern.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  
+  inline def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachToken")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachToken(node: Node, cb: js.Function1[/* node */ Node, Unit], sourceFile: SourceFile): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachToken")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTokenWithTrivia")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def forEachTokenWithTrivia(node: Node, cb: ForEachTokenCallback, sourceFile: SourceFile): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTokenWithTrivia")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  inline def formatPseudoBigInt(v: PseudoBigInt): /* template literal string: ${string}n */ String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatPseudoBigInt")(v.asInstanceOf[js.Any]).asInstanceOf[/* template literal string: ${string}n */ String]
+  
+  inline def getAccessKind(node: Node): AccessKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessKind")(node.asInstanceOf[js.Any]).asInstanceOf[AccessKind]
+  
+  inline def getAstNodeAtPosition(node: Node, pos: Double): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAstNodeAtPosition")(node.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  
+  inline def getBaseClassMemberOfClassElement(node: AccessorDeclaration, checker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseClassMemberOfClassElement")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  inline def getBaseClassMemberOfClassElement(node: MethodDeclaration, checker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseClassMemberOfClassElement")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  inline def getBaseClassMemberOfClassElement(node: PropertyDeclaration, checker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBaseClassMemberOfClassElement")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  
+  inline def getBaseOfClassLikeExpression(node: ClassLikeDeclaration): js.UndefOr[ExpressionWithTypeArguments] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseOfClassLikeExpression")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ExpressionWithTypeArguments]]
+  
+  inline def getCallSignaturesOfType(`type`: Type): js.Array[Signature] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCallSignaturesOfType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Signature]]
+  
+  inline def getCheckJsDirective(source: String): js.UndefOr[CheckJsDirective] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCheckJsDirective")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CheckJsDirective]]
+  
+  inline def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T): js.UndefOr[Token[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildOfKind")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Token[T]]]
+  inline def getChildOfKind[T /* <: SyntaxKind */](node: Node, kind: T, sourceFile: SourceFile): js.UndefOr[Token[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChildOfKind")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Token[T]]]
+  
+  inline def getCommentAtPosition(sourceFile: SourceFile, pos: Double): js.UndefOr[CommentRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCommentAtPosition")(sourceFile.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommentRange]]
+  inline def getCommentAtPosition(sourceFile: SourceFile, pos: Double, parent: Node): js.UndefOr[CommentRange] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCommentAtPosition")(sourceFile.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CommentRange]]
+  
+  inline def getConstructorTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getConstructorTypeOfClassLikeDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  inline def getControlFlowEnd(statement: BlockLike): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  inline def getControlFlowEnd(statement: BlockLike, checker: TypeChecker): ControlFlowEnd = (^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[ControlFlowEnd]
+  inline def getControlFlowEnd(statement: Statement): ControlFlowEnd = ^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any]).asInstanceOf[ControlFlowEnd]
+  inline def getControlFlowEnd(statement: Statement, checker: TypeChecker): ControlFlowEnd = (^.asInstanceOf[js.Dynamic].applyDynamic("getControlFlowEnd")(statement.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[ControlFlowEnd]
+  
+  inline def getDeclarationDomain(node: Identifier): js.UndefOr[DeclarationDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclarationDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DeclarationDomain]]
+  
+  inline def getDeclarationOfBindingElement(node: BindingElement): VariableDeclaration | ParameterDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclarationOfBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[VariableDeclaration | ParameterDeclaration]
+  
+  inline def getIIFE(func: ArrowFunction): js.UndefOr[CallExpression] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIIFE")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CallExpression]]
+  inline def getIIFE(func: FunctionExpression): js.UndefOr[CallExpression] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIIFE")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CallExpression]]
+  
+  inline def getInstanceTypeOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstanceTypeOfClassLikeDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  inline def getIteratorYieldResultFromIteratorResult(`type`: Type, node: Node, checker: TypeChecker): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("getIteratorYieldResultFromIteratorResult")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  inline def getJsDoc(node: Node): js.Array[JSDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("getJsDoc")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[JSDoc]]
+  inline def getJsDoc(node: Node, sourceFile: SourceFile): js.Array[JSDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("getJsDoc")(node.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDoc]]
+  
+  inline def getLateBoundPropertyNames(node: Expression, checker: TypeChecker): LateBoundPropertyNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getLateBoundPropertyNames")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[LateBoundPropertyNames]
+  
+  inline def getLateBoundPropertyNamesOfPropertyName(node: PropertyName, checker: TypeChecker): LateBoundPropertyNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getLateBoundPropertyNamesOfPropertyName")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[LateBoundPropertyNames]
+  
+  inline def getLineBreakStyle(sourceFile: SourceFile): Linefeed | CarriagereturnLinefeed = ^.asInstanceOf[js.Dynamic].applyDynamic("getLineBreakStyle")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[Linefeed | CarriagereturnLinefeed]
+  
+  inline def getLineRanges(sourceFile: SourceFile): js.Array[LineRange] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLineRanges")(sourceFile.asInstanceOf[js.Any]).asInstanceOf[js.Array[LineRange]]
+  
+  inline def getModifier(node: Node, kind: AbstractKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: AsyncKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: ConstKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: DeclareKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: DefaultKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: ExportKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: InKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: OutKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: OverrideKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: PrivateKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: ProtectedKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: PublicKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: ReadonlyKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  inline def getModifier(node: Node, kind: StaticKeyword): js.UndefOr[Modifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifier")(node.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Modifier]]
+  
+  inline def getNextStatement(statement: Statement): js.UndefOr[Statement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextStatement")(statement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Statement]]
+  
+  inline def getNextToken(node: Node): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextToken")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Node]]
+  inline def getNextToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextToken")(node.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  
+  inline def getPreviousStatement(statement: Statement): js.UndefOr[Statement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousStatement")(statement.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Statement]]
+  
+  inline def getPreviousToken(node: Node): js.UndefOr[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousToken")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Node]]
+  inline def getPreviousToken(node: Node, sourceFile: SourceFile): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousToken")(node.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  
+  inline def getPropertyName(propertyName: PropertyName): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyName")(propertyName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  
+  inline def getPropertyNameFromType(`type`: Type): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyNameFromType")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName]]
+  
+  inline def getPropertyNameOfWellKnownSymbol(node: WellKnownSymbolLiteral): typingsJapgolly.tsutils.utilUtilMod.PropertyName = ^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyNameOfWellKnownSymbol")(node.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.tsutils.utilUtilMod.PropertyName]
+  
+  inline def getPropertyOfType(`type`: Type, name: typingsJapgolly.typescript.mod.String): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPropertyOfType")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  
+  inline def getSingleLateBoundPropertyNameOfPropertyName(node: PropertyName, checker: TypeChecker): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSingleLateBoundPropertyNameOfPropertyName")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.PropertyName]]
+  
+  inline def getSymbolOfClassLikeDeclaration(node: ClassLikeDeclaration, checker: TypeChecker): Symbol = (^.asInstanceOf[js.Dynamic].applyDynamic("getSymbolOfClassLikeDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Symbol]
+  
+  inline def getTokenAtPosition(parent: Node, pos: Double): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTokenAtPosition")(parent.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  inline def getTokenAtPosition(parent: Node, pos: Double, sourceFile: Unit, allowJsDoc: Boolean): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTokenAtPosition")(parent.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], allowJsDoc.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  inline def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTokenAtPosition")(parent.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  inline def getTokenAtPosition(parent: Node, pos: Double, sourceFile: SourceFile, allowJsDoc: Boolean): js.UndefOr[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTokenAtPosition")(parent.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any], allowJsDoc.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Node]]
+  
+  inline def getTsCheckDirective(source: String): js.UndefOr[CheckJsDirective] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTsCheckDirective")(source.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CheckJsDirective]]
+  
+  inline def getUsageDomain(node: Identifier): js.UndefOr[UsageDomain] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsageDomain")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[UsageDomain]]
+  
+  inline def getVariableDeclarationKind(declarationList: VariableDeclarationList): VariableDeclarationKind = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableDeclarationKind")(declarationList.asInstanceOf[js.Any]).asInstanceOf[VariableDeclarationKind]
+  
+  inline def getWellKnownSymbolPropertyOfType(`type`: Type, wellKnownSymbolName: String, checker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWellKnownSymbolPropertyOfType")(`type`.asInstanceOf[js.Any], wellKnownSymbolName.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  
+  inline def getWrappedNodeAtPosition(wrap: NodeWrap, pos: Double): js.UndefOr[NodeWrap] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWrappedNodeAtPosition")(wrap.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NodeWrap]]
+  
+  inline def hasAccessModifier(node: ClassElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAccessModifier")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasAccessModifier(node: ParameterDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasAccessModifier")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def hasExhaustiveCaseClauses(node: SwitchStatement, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasExhaustiveCaseClauses")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def hasModifier(
+    modifiers: Unit,
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | InKeyword | PrivateKeyword | ProtectedKeyword | PublicKeyword | OutKeyword | OverrideKeyword | ReadonlyKeyword | StaticKeyword)*
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  inline def hasModifier(
     modifiers: ModifiersArray,
-    kinds: (/* import warning: importer.ImportType#apply Failed type conversion: typescript.typescript.Modifier['kind'] */ js.Any)*
-  ): Boolean = js.native
-  def hasOwnThisReference(node: Node): Boolean = js.native
-  def hasSideEffects(node: Expression): Boolean = js.native
-  def hasSideEffects(node: Expression, options: SideEffectOptions): Boolean = js.native
-  def intersectionTypeParts(`type`: Type): js.Array[Type] = js.native
-  def isAccessorDeclaration(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = js.native
-  def isAmbientModule(node: ModuleDeclaration): Boolean = js.native
-  def isAmbientModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
-  def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = js.native
-  def isArrayLiteralExpression(node: Node): /* is typescript.typescript.ArrayLiteralExpression */ Boolean = js.native
-  def isArrayTypeNode(node: Node): /* is typescript.typescript.ArrayTypeNode */ Boolean = js.native
-  def isArrowFunction(node: Node): /* is typescript.typescript.ArrowFunction */ Boolean = js.native
-  def isAsExpression(node: Node): /* is typescript.typescript.AsExpression */ Boolean = js.native
-  def isAssertionExpression(node: Node): /* is typescript.typescript.AssertionExpression */ Boolean = js.native
-  def isAssignmentKind(kind: SyntaxKind): Boolean = js.native
-  def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = js.native
-  def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = js.native
-  def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = js.native
-  def isBindableObjectDefinePropertyCall(node: CallExpression): Boolean = js.native
-  def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = js.native
-  def isBindingPattern(node: Node): /* is typescript.typescript.BindingPattern */ Boolean = js.native
-  def isBlock(node: Node): /* is typescript.typescript.Block */ Boolean = js.native
-  def isBlockLike(node: Node): /* is typescript.typescript.BlockLike */ Boolean = js.native
-  def isBlockScopeBoundary(node: Node): ScopeBoundary = js.native
-  def isBlockScopedDeclarationStatement(statement: Statement): /* is typescript.typescript.DeclarationStatement */ Boolean = js.native
-  def isBlockScopedVariableDeclaration(declaration: VariableDeclaration): Boolean = js.native
-  def isBlockScopedVariableDeclarationList(declarationList: VariableDeclarationList): Boolean = js.native
-  def isBooleanLiteral(node: Node): /* is typescript.typescript.BooleanLiteral */ Boolean = js.native
-  def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = js.native
-  def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = js.native
-  def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = js.native
-  def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
-  def isCallLikeExpression(node: Node): /* is typescript.typescript.CallLikeExpression */ Boolean = js.native
-  def isCallSignatureDeclaration(node: Node): /* is typescript.typescript.CallSignatureDeclaration */ Boolean = js.native
-  def isCaseBlock(node: Node): /* is typescript.typescript.CaseBlock */ Boolean = js.native
-  def isCaseClause(node: Node): /* is typescript.typescript.CaseClause */ Boolean = js.native
-  def isCaseOrDefaultClause(node: Node): /* is typescript.typescript.CaseOrDefaultClause */ Boolean = js.native
-  def isCatchClause(node: Node): /* is typescript.typescript.CatchClause */ Boolean = js.native
-  def isClassDeclaration(node: Node): /* is typescript.typescript.ClassDeclaration */ Boolean = js.native
-  def isClassExpression(node: Node): /* is typescript.typescript.ClassExpression */ Boolean = js.native
-  def isClassLikeDeclaration(node: Node): /* is typescript.typescript.ClassLikeDeclaration */ Boolean = js.native
-  def isCommaListExpression(node: Node): /* is typescript.typescript.CommaListExpression */ Boolean = js.native
-  def isCompilerOptionEnabled(options: CompilerOptions, option: BooleanCompilerOptions): Boolean = js.native
-  @JSName("isCompilerOptionEnabled")
-  def isCompilerOptionEnabled_stripInternal(options: CompilerOptions, option: stripInternal): Boolean = js.native
-  def isComputedPropertyName(node: Node): /* is typescript.typescript.ComputedPropertyName */ Boolean = js.native
-  def isConditionalExpression(node: Node): /* is typescript.typescript.ConditionalExpression */ Boolean = js.native
-  def isConditionalType(`type`: Type): /* is typescript.typescript.ConditionalType */ Boolean = js.native
-  def isConditionalTypeNode(node: Node): /* is typescript.typescript.ConditionalTypeNode */ Boolean = js.native
-  def isConstAssertion(node: AssertionExpression): Boolean = js.native
-  def isConstructSignatureDeclaration(node: Node): /* is typescript.typescript.ConstructSignatureDeclaration */ Boolean = js.native
-  def isConstructorDeclaration(node: Node): /* is typescript.typescript.ConstructorDeclaration */ Boolean = js.native
-  def isConstructorTypeNode(node: Node): /* is typescript.typescript.ConstructorTypeNode */ Boolean = js.native
-  def isContinueStatement(node: Node): /* is typescript.typescript.ContinueStatement */ Boolean = js.native
-  def isDebuggerStatement(node: Node): /* is typescript.typescript.DebuggerStatement */ Boolean = js.native
-  def isDecorator(node: Node): /* is typescript.typescript.Decorator */ Boolean = js.native
-  def isDefaultClause(node: Node): /* is typescript.typescript.DefaultClause */ Boolean = js.native
-  def isDeleteExpression(node: Node): /* is typescript.typescript.DeleteExpression */ Boolean = js.native
-  def isDoStatement(node: Node): /* is typescript.typescript.DoStatement */ Boolean = js.native
-  def isElementAccessExpression(node: Node): /* is typescript.typescript.ElementAccessExpression */ Boolean = js.native
-  def isEmptyObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
-  def isEmptyStatement(node: Node): /* is typescript.typescript.EmptyStatement */ Boolean = js.native
-  def isEntityName(node: Node): /* is typescript.typescript.EntityName */ Boolean = js.native
-  def isEntityNameExpression(node: Node): /* is typescript.typescript.EntityNameExpression */ Boolean = js.native
-  def isEnumDeclaration(node: Node): /* is typescript.typescript.EnumDeclaration */ Boolean = js.native
-  def isEnumMember(node: Node): /* is typescript.typescript.EnumMember */ Boolean = js.native
-  def isEnumType(`type`: Type): /* is typescript.typescript.EnumType */ Boolean = js.native
-  def isExportAssignment(node: Node): /* is typescript.typescript.ExportAssignment */ Boolean = js.native
-  def isExportDeclaration(node: Node): /* is typescript.typescript.ExportDeclaration */ Boolean = js.native
-  def isExportSpecifier(node: Node): /* is typescript.typescript.ExportSpecifier */ Boolean = js.native
-  def isExpression(node: Node): /* is typescript.typescript.Expression */ Boolean = js.native
-  def isExpressionStatement(node: Node): /* is typescript.typescript.ExpressionStatement */ Boolean = js.native
-  def isExpressionValueUsed(node: Expression): Boolean = js.native
-  def isExpressionWithTypeArguments(node: Node): /* is typescript.typescript.ExpressionWithTypeArguments */ Boolean = js.native
-  def isExternalModuleReference(node: Node): /* is typescript.typescript.ExternalModuleReference */ Boolean = js.native
-  def isFalsyType(`type`: Type): Boolean = js.native
-  def isForInOrOfStatement(node: Node): /* is typescript.typescript.ForInOrOfStatement */ Boolean = js.native
-  def isForInStatement(node: Node): /* is typescript.typescript.ForInStatement */ Boolean = js.native
-  def isForOfStatement(node: Node): /* is typescript.typescript.ForOfStatement */ Boolean = js.native
-  def isForStatement(node: Node): /* is typescript.typescript.ForStatement */ Boolean = js.native
-  def isFunctionDeclaration(node: Node): /* is typescript.typescript.FunctionDeclaration */ Boolean = js.native
-  def isFunctionExpression(node: Node): /* is typescript.typescript.FunctionExpression */ Boolean = js.native
-  def isFunctionScopeBoundary(node: Node): ScopeBoundary = js.native
-  def isFunctionTypeNode(node: Node): /* is typescript.typescript.FunctionTypeNode */ Boolean = js.native
-  def isFunctionWithBody(node: Node): Boolean = js.native
-  def isGenericType(`type`: Type): /* is typescript.typescript.GenericType */ Boolean = js.native
-  def isGetAccessorDeclaration(node: Node): /* is typescript.typescript.GetAccessorDeclaration */ Boolean = js.native
-  def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = js.native
-  def isIfStatement(node: Node): /* is typescript.typescript.IfStatement */ Boolean = js.native
-  def isImportClause(node: Node): /* is typescript.typescript.ImportClause */ Boolean = js.native
-  def isImportDeclaration(node: Node): /* is typescript.typescript.ImportDeclaration */ Boolean = js.native
-  def isImportEqualsDeclaration(node: Node): /* is typescript.typescript.ImportEqualsDeclaration */ Boolean = js.native
-  def isImportSpecifier(node: Node): /* is typescript.typescript.ImportSpecifier */ Boolean = js.native
-  def isImportTypeNode(node: Node): /* is typescript.typescript.ImportTypeNode */ Boolean = js.native
-  def isInConstContext(node: Expression): Boolean = js.native
-  def isInSingleStatementContext(statement: Statement): Boolean = js.native
-  def isIndexSignatureDeclaration(node: Node): /* is typescript.typescript.IndexSignatureDeclaration */ Boolean = js.native
-  def isIndexedAccessType(`type`: Type): /* is typescript.typescript.IndexedAccessType */ Boolean = js.native
-  def isIndexedAccessTypeNode(node: Node): /* is typescript.typescript.IndexedAccessTypeNode */ Boolean = js.native
-  def isIndexedAccessype(`type`: Type): /* is typescript.typescript.IndexType */ Boolean = js.native
-  def isInferTypeNode(node: Node): /* is typescript.typescript.InferTypeNode */ Boolean = js.native
-  def isInstantiableType(`type`: Type): /* is typescript.typescript.InstantiableType */ Boolean = js.native
-  def isInterfaceDeclaration(node: Node): /* is typescript.typescript.InterfaceDeclaration */ Boolean = js.native
-  def isInterfaceType(`type`: Type): /* is typescript.typescript.InterfaceType */ Boolean = js.native
-  def isIntersectionType(`type`: Type): /* is typescript.typescript.IntersectionType */ Boolean = js.native
-  def isIntersectionTypeNode(node: Node): /* is typescript.typescript.IntersectionTypeNode */ Boolean = js.native
-  def isIterationStatement(node: Node): /* is typescript.typescript.IterationStatement */ Boolean = js.native
-  def isJsDoc(node: Node): /* is typescript.typescript.JSDoc */ Boolean = js.native
-  def isJsDocKind(kind: SyntaxKind): Boolean = js.native
-  def isJsxAttribute(node: Node): /* is typescript.typescript.JsxAttribute */ Boolean = js.native
-  def isJsxAttributeLike(node: Node): /* is typescript.typescript.JsxAttributeLike */ Boolean = js.native
-  def isJsxAttributes(node: Node): /* is typescript.typescript.JsxAttributes */ Boolean = js.native
-  def isJsxClosingElement(node: Node): /* is typescript.typescript.JsxClosingElement */ Boolean = js.native
-  def isJsxClosingFragment(node: Node): /* is typescript.typescript.JsxClosingFragment */ Boolean = js.native
-  def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ Boolean = js.native
-  def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = js.native
-  def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = js.native
-  def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = js.native
-  def isJsxOpeningFragment(node: Node): /* is typescript.typescript.JsxOpeningFragment */ Boolean = js.native
-  def isJsxOpeningLikeElement(node: Node): /* is typescript.typescript.JsxOpeningLikeElement */ Boolean = js.native
-  def isJsxSelfClosingElement(node: Node): /* is typescript.typescript.JsxSelfClosingElement */ Boolean = js.native
-  def isJsxSpreadAttribute(node: Node): /* is typescript.typescript.JsxSpreadAttribute */ Boolean = js.native
-  def isJsxText(node: Node): /* is typescript.typescript.JsxText */ Boolean = js.native
-  def isKeywordKind(kind: SyntaxKind): Boolean = js.native
-  def isLabeledStatement(node: Node): /* is typescript.typescript.LabeledStatement */ Boolean = js.native
-  def isLiteralExpression(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = js.native
-  def isLiteralType(`type`: Type): /* is typescript.typescript.LiteralType */ Boolean = js.native
-  def isLiteralTypeNode(node: Node): /* is typescript.typescript.LiteralTypeNode */ Boolean = js.native
-  def isMappedTypeNode(node: Node): /* is typescript.typescript.MappedTypeNode */ Boolean = js.native
-  def isMetaProperty(node: Node): /* is typescript.typescript.MetaProperty */ Boolean = js.native
-  def isMethodDeclaration(node: Node): /* is typescript.typescript.MethodDeclaration */ Boolean = js.native
-  def isMethodSignature(node: Node): /* is typescript.typescript.MethodSignature */ Boolean = js.native
-  def isModifierFlagSet(node: Node, flag: ModifierFlags): Boolean = js.native
-  def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = js.native
-  def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = js.native
-  def isNamedExports(node: Node): /* is typescript.typescript.NamedExports */ Boolean = js.native
-  def isNamedImports(node: Node): /* is typescript.typescript.NamedImports */ Boolean = js.native
-  def isNamespaceDeclaration(node: Node): /* is typescript.typescript.NamespaceDeclaration */ Boolean = js.native
-  def isNamespaceExportDeclaration(node: Node): /* is typescript.typescript.NamespaceExportDeclaration */ Boolean = js.native
-  def isNamespaceImport(node: Node): /* is typescript.typescript.NamespaceImport */ Boolean = js.native
-  def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = js.native
-  def isNoSubstitutionTemplateLiteral(node: Node): /* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean = js.native
-  def isNodeFlagSet(node: Node, flag: NodeFlags): Boolean = js.native
-  def isNodeKind(kind: SyntaxKind): Boolean = js.native
-  def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = js.native
-  def isNullLiteral(node: Node): /* is typescript.typescript.NullLiteral */ Boolean = js.native
-  def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = js.native
-  def isNumericOrStringLikeLiteral(node: Node): Boolean = js.native
-  def isNumericPropertyName(name: String): Boolean = js.native
-  def isNumericPropertyName(name: typingsJapgolly.typescript.mod.String): Boolean = js.native
-  def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = js.native
-  def isObjectFlagSet(objectType: ObjectType, flag: ObjectFlags): Boolean = js.native
-  def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = js.native
-  def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = js.native
-  def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = js.native
-  def isOptionalTypeNode(node: Node): /* is typescript.typescript.OptionalTypeNode */ Boolean = js.native
-  def isParameterDeclaration(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = js.native
-  def isParameterProperty(node: ParameterDeclaration): Boolean = js.native
-  def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = js.native
-  def isParenthesizedTypeNode(node: Node): /* is typescript.typescript.ParenthesizedTypeNode */ Boolean = js.native
-  def isPositionInComment(sourceFile: SourceFile, pos: Double): Boolean = js.native
-  def isPositionInComment(sourceFile: SourceFile, pos: Double, parent: Node): Boolean = js.native
-  def isPostfixUnaryExpression(node: Node): /* is typescript.typescript.PostfixUnaryExpression */ Boolean = js.native
-  def isPrefixUnaryExpression(node: Node): /* is typescript.typescript.PrefixUnaryExpression */ Boolean = js.native
-  def isPropertyAccessExpression(node: Node): /* is typescript.typescript.PropertyAccessExpression */ Boolean = js.native
-  def isPropertyAssignment(node: Node): /* is typescript.typescript.PropertyAssignment */ Boolean = js.native
-  def isPropertyDeclaration(node: Node): /* is typescript.typescript.PropertyDeclaration */ Boolean = js.native
-  def isPropertyReadonlyInType(`type`: Type, name: typingsJapgolly.typescript.mod.String, checker: TypeChecker): Boolean = js.native
-  def isPropertySignature(node: Node): /* is typescript.typescript.PropertySignature */ Boolean = js.native
-  def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = js.native
-  def isReadonlyAssignmentDeclaration(node: CallExpression, checker: TypeChecker): Boolean = js.native
-  def isReassignmentTarget(node: Expression): Boolean = js.native
-  def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = js.native
-  def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = js.native
-  def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = js.native
-  def isSameLine(sourceFile: SourceFile, pos1: Double, pos2: Double): Boolean = js.native
-  def isScopeBoundary(node: Node): ScopeBoundary = js.native
-  def isSetAccessorDeclaration(node: Node): /* is typescript.typescript.SetAccessorDeclaration */ Boolean = js.native
-  def isShorthandPropertyAssignment(node: Node): /* is typescript.typescript.ShorthandPropertyAssignment */ Boolean = js.native
-  def isSignatureDeclaration(node: Node): /* is typescript.typescript.SignatureDeclaration */ Boolean = js.native
-  def isSourceFile(node: Node): /* is typescript.typescript.SourceFile */ Boolean = js.native
-  def isSpreadAssignment(node: Node): /* is typescript.typescript.SpreadAssignment */ Boolean = js.native
-  def isSpreadElement(node: Node): /* is typescript.typescript.SpreadElement */ Boolean = js.native
-  def isStatementInAmbientContext(node: Statement): Boolean = js.native
-  def isStrictCompilerOptionEnabled(options: CompilerOptions, option: StrictCompilerOption): Boolean = js.native
-  def isStringLiteral(node: Node): /* is typescript.typescript.StringLiteral */ Boolean = js.native
-  def isSubstitutionType(`type`: Type): /* is typescript.typescript.SubstitutionType */ Boolean = js.native
-  def isSwitchStatement(node: Node): /* is typescript.typescript.SwitchStatement */ Boolean = js.native
-  def isSymbolFlagSet(symbol: Symbol, flag: SymbolFlags): Boolean = js.native
-  def isSyntaxList(node: Node): /* is typescript.typescript.SyntaxList */ Boolean = js.native
-  def isSyntheticExpression(node: Node): /* is typescript.typescript.SyntheticExpression */ Boolean = js.native
-  def isTaggedTemplateExpression(node: Node): /* is typescript.typescript.TaggedTemplateExpression */ Boolean = js.native
-  def isTemplateExpression(node: Node): /* is typescript.typescript.TemplateExpression */ Boolean = js.native
-  def isTemplateLiteral(node: Node): /* is typescript.typescript.TemplateLiteral */ Boolean = js.native
-  def isTextualLiteral(node: Node): Boolean = js.native
-  def isThenableType(checker: TypeChecker, node: Expression): Boolean = js.native
-  def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = js.native
-  def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = js.native
-  def isThisParameter(parameter: ParameterDeclaration): Boolean = js.native
-  def isThrowStatement(node: Node): /* is typescript.typescript.ThrowStatement */ Boolean = js.native
-  def isTokenKind(kind: SyntaxKind): Boolean = js.native
-  def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = js.native
-  def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = js.native
-  def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = js.native
-  def isTupleTypeReference(`type`: Type): /* is tsutils.TypeReferencetargetTupleT */ Boolean = js.native
-  def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = js.native
-  def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = js.native
-  def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = js.native
-  def isTypeAssignableToString(checker: TypeChecker, `type`: Type): Boolean = js.native
-  def isTypeFlagSet(`type`: Type, flag: TypeFlags): Boolean = js.native
-  def isTypeLiteralNode(node: Node): /* is typescript.typescript.TypeLiteralNode */ Boolean = js.native
-  def isTypeNodeKind(kind: SyntaxKind): Boolean = js.native
-  def isTypeOfExpression(node: Node): /* is typescript.typescript.TypeOfExpression */ Boolean = js.native
-  def isTypeOperatorNode(node: Node): /* is typescript.typescript.TypeOperatorNode */ Boolean = js.native
-  def isTypeParameter(`type`: Type): /* is typescript.typescript.TypeParameter */ Boolean = js.native
-  def isTypeParameterDeclaration(node: Node): /* is typescript.typescript.TypeParameterDeclaration */ Boolean = js.native
-  def isTypePredicateNode(node: Node): /* is typescript.typescript.TypePredicateNode */ Boolean = js.native
-  def isTypeQueryNode(node: Node): /* is typescript.typescript.TypeQueryNode */ Boolean = js.native
-  def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = js.native
-  def isTypeReferenceNode(node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = js.native
-  def isTypeScopeBoundary(node: Node): ScopeBoundary = js.native
-  def isTypeVariable(`type`: Type): Boolean = js.native
-  def isUnionOrIntersectionType(`type`: Type): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = js.native
-  def isUnionType(`type`: Type): /* is typescript.typescript.UnionType */ Boolean = js.native
-  def isUnionTypeNode(node: Node): /* is typescript.typescript.UnionTypeNode */ Boolean = js.native
-  def isUniqueESSymbolType(`type`: Type): /* is typescript.typescript.UniqueESSymbolType */ Boolean = js.native
-  def isValidIdentifier(text: String): Boolean = js.native
-  def isValidIdentifier(text: String, languageVersion: ScriptTarget): Boolean = js.native
-  def isValidJsxIdentifier(text: String): Boolean = js.native
-  def isValidJsxIdentifier(text: String, languageVersion: ScriptTarget): Boolean = js.native
-  def isValidNumericLiteral(text: String): Boolean = js.native
-  def isValidNumericLiteral(text: String, languageVersion: ScriptTarget): Boolean = js.native
-  def isValidPropertyAccess(text: String): Boolean = js.native
-  def isValidPropertyAccess(text: String, languageVersion: ScriptTarget): Boolean = js.native
-  def isValidPropertyName(text: String): Boolean = js.native
-  def isValidPropertyName(text: String, languageVersion: ScriptTarget): Boolean = js.native
-  def isVariableDeclaration(node: Node): /* is typescript.typescript.VariableDeclaration */ Boolean = js.native
-  def isVariableDeclarationList(node: Node): /* is typescript.typescript.VariableDeclarationList */ Boolean = js.native
-  def isVariableStatement(node: Node): /* is typescript.typescript.VariableStatement */ Boolean = js.native
-  def isVoidExpression(node: Node): /* is typescript.typescript.VoidExpression */ Boolean = js.native
-  def isWellKnownSymbolLiterally(node: Expression): /* is tsutils.tsutils/util/util.WellKnownSymbolLiteral */ Boolean = js.native
-  def isWhileStatement(node: Node): /* is typescript.typescript.WhileStatement */ Boolean = js.native
-  def isWithStatement(node: Node): /* is typescript.typescript.WithStatement */ Boolean = js.native
-  def parseJsDocOfNode(node: Node): js.Array[JSDoc] = js.native
-  def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean): js.Array[JSDoc] = js.native
-  def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean, sourceFile: SourceFile): js.Array[JSDoc] = js.native
-  def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = js.native
-  def someTypePart(
+    kinds: (AbstractKeyword | AsyncKeyword | ConstKeyword | DeclareKeyword | DefaultKeyword | ExportKeyword | InKeyword | PrivateKeyword | ProtectedKeyword | PublicKeyword | OutKeyword | OverrideKeyword | ReadonlyKeyword | StaticKeyword)*
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")(scala.List(modifiers.asInstanceOf[js.Any]).`++`(kinds.asInstanceOf[Seq[js.Any]])*).asInstanceOf[Boolean]
+  
+  inline def hasOwnThisReference(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOwnThisReference")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def hasSideEffects(node: Expression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasSideEffects")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasSideEffects(node: Expression, options: SideEffectOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasSideEffects")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def intersectionTypeParts(`type`: Type): js.Array[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("intersectionTypeParts")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type]]
+  
+  inline def isAccessorDeclaration(node: Node): /* is typescript.typescript.AccessorDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessorDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AccessorDeclaration */ Boolean]
+  
+  inline def isAmbientModule(node: ModuleDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientModule")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isAmbientModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAmbientModuleBlock")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleBlock */ Boolean]
+  
+  inline def isArrayBindingPattern(node: Node): /* is typescript.typescript.ArrayBindingPattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayBindingPattern")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrayBindingPattern */ Boolean]
+  
+  inline def isArrayLiteralExpression(node: Node): /* is typescript.typescript.ArrayLiteralExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLiteralExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrayLiteralExpression */ Boolean]
+  
+  inline def isArrayTypeNode(node: Node): /* is typescript.typescript.ArrayTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrayTypeNode */ Boolean]
+  
+  inline def isArrowFunction(node: Node): /* is typescript.typescript.ArrowFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrowFunction")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ArrowFunction */ Boolean]
+  
+  inline def isAsExpression(node: Node): /* is typescript.typescript.AsExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AsExpression */ Boolean]
+  
+  inline def isAssertionExpression(node: Node): /* is typescript.typescript.AssertionExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssertionExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AssertionExpression */ Boolean]
+  
+  inline def isAssignmentKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAssignmentKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isAwaitExpression(node: Node): /* is typescript.typescript.AwaitExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAwaitExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.AwaitExpression */ Boolean]
+  
+  inline def isBigIntLiteral(node: Node): /* is typescript.typescript.BigIntLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBigIntLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BigIntLiteral */ Boolean]
+  
+  inline def isBinaryExpression(node: Node): /* is typescript.typescript.BinaryExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BinaryExpression */ Boolean]
+  
+  inline def isBindableObjectDefinePropertyCall(node: CallExpression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBindableObjectDefinePropertyCall")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isBindingElement(node: Node): /* is typescript.typescript.BindingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBindingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BindingElement */ Boolean]
+  
+  inline def isBindingPattern(node: Node): /* is typescript.typescript.BindingPattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBindingPattern")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BindingPattern */ Boolean]
+  
+  inline def isBlock(node: Node): /* is typescript.typescript.Block */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlock")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Block */ Boolean]
+  
+  inline def isBlockLike(node: Node): /* is typescript.typescript.BlockLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BlockLike */ Boolean]
+  
+  inline def isBlockScopeBoundary(node: Node): ScopeBoundary = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[ScopeBoundary]
+  
+  inline def isBlockScopedDeclarationStatement(statement: Statement): /* is typescript.typescript.DeclarationStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedDeclarationStatement")(statement.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.DeclarationStatement */ Boolean]
+  
+  inline def isBlockScopedVariableDeclaration(declaration: VariableDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedVariableDeclaration")(declaration.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isBlockScopedVariableDeclarationList(declarationList: VariableDeclarationList): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlockScopedVariableDeclarationList")(declarationList.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isBooleanLiteral(node: Node): /* is typescript.typescript.BooleanLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BooleanLiteral */ Boolean]
+  
+  inline def isBooleanLiteralType(`type`: Type, literal: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanLiteralType")(`type`.asInstanceOf[js.Any], literal.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isBreakOrContinueStatement(node: Node): /* is typescript.typescript.BreakOrContinueStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBreakOrContinueStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BreakOrContinueStatement */ Boolean]
+  
+  inline def isBreakStatement(node: Node): /* is typescript.typescript.BreakStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBreakStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.BreakStatement */ Boolean]
+  
+  inline def isCallExpression(node: Node): /* is typescript.typescript.CallExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCallExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CallExpression */ Boolean]
+  
+  inline def isCallLikeExpression(node: Node): /* is typescript.typescript.CallLikeExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCallLikeExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CallLikeExpression */ Boolean]
+  
+  inline def isCallSignatureDeclaration(node: Node): /* is typescript.typescript.CallSignatureDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCallSignatureDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CallSignatureDeclaration */ Boolean]
+  
+  inline def isCaseBlock(node: Node): /* is typescript.typescript.CaseBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaseBlock")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CaseBlock */ Boolean]
+  
+  inline def isCaseClause(node: Node): /* is typescript.typescript.CaseClause */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaseClause")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CaseClause */ Boolean]
+  
+  inline def isCaseOrDefaultClause(node: Node): /* is typescript.typescript.CaseOrDefaultClause */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCaseOrDefaultClause")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CaseOrDefaultClause */ Boolean]
+  
+  inline def isCatchClause(node: Node): /* is typescript.typescript.CatchClause */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCatchClause")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CatchClause */ Boolean]
+  
+  inline def isClassDeclaration(node: Node): /* is typescript.typescript.ClassDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ClassDeclaration */ Boolean]
+  
+  inline def isClassExpression(node: Node): /* is typescript.typescript.ClassExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ClassExpression */ Boolean]
+  
+  inline def isClassLikeDeclaration(node: Node): /* is typescript.typescript.ClassLikeDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassLikeDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ClassLikeDeclaration */ Boolean]
+  
+  inline def isCommaListExpression(node: Node): /* is typescript.typescript.CommaListExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommaListExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.CommaListExpression */ Boolean]
+  
+  inline def isCompilerOptionEnabled(options: CompilerOptions, option: BooleanCompilerOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompilerOptionEnabled")(options.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isCompilerOptionEnabled_stripInternal(options: CompilerOptions, option: stripInternal): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompilerOptionEnabled")(options.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isComputedPropertyName(node: Node): /* is typescript.typescript.ComputedPropertyName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComputedPropertyName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ComputedPropertyName */ Boolean]
+  
+  inline def isConditionalExpression(node: Node): /* is typescript.typescript.ConditionalExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConditionalExpression */ Boolean]
+  
+  inline def isConditionalType(`type`: Type): /* is typescript.typescript.ConditionalType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConditionalType */ Boolean]
+  
+  inline def isConditionalTypeNode(node: Node): /* is typescript.typescript.ConditionalTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConditionalTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConditionalTypeNode */ Boolean]
+  
+  inline def isConstAssertion(node: AssertionExpression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstAssertion")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isConstructSignatureDeclaration(node: Node): /* is typescript.typescript.ConstructSignatureDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructSignatureDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConstructSignatureDeclaration */ Boolean]
+  
+  inline def isConstructorDeclaration(node: Node): /* is typescript.typescript.ConstructorDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConstructorDeclaration */ Boolean]
+  
+  inline def isConstructorTypeNode(node: Node): /* is typescript.typescript.ConstructorTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConstructorTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ConstructorTypeNode */ Boolean]
+  
+  inline def isContinueStatement(node: Node): /* is typescript.typescript.ContinueStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinueStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ContinueStatement */ Boolean]
+  
+  inline def isDebuggerStatement(node: Node): /* is typescript.typescript.DebuggerStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDebuggerStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.DebuggerStatement */ Boolean]
+  
+  inline def isDecorator(node: Node): /* is typescript.typescript.Decorator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecorator")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Decorator */ Boolean]
+  
+  inline def isDefaultClause(node: Node): /* is typescript.typescript.DefaultClause */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultClause")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.DefaultClause */ Boolean]
+  
+  inline def isDeleteExpression(node: Node): /* is typescript.typescript.DeleteExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeleteExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.DeleteExpression */ Boolean]
+  
+  inline def isDoStatement(node: Node): /* is typescript.typescript.DoStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDoStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.DoStatement */ Boolean]
+  
+  inline def isElementAccessExpression(node: Node): /* is typescript.typescript.ElementAccessExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementAccessExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ElementAccessExpression */ Boolean]
+  
+  inline def isEmptyObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyObjectType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectType */ Boolean]
+  
+  inline def isEmptyStatement(node: Node): /* is typescript.typescript.EmptyStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmptyStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EmptyStatement */ Boolean]
+  
+  inline def isEntityName(node: Node): /* is typescript.typescript.EntityName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntityName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EntityName */ Boolean]
+  
+  inline def isEntityNameExpression(node: Node): /* is typescript.typescript.EntityNameExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntityNameExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EntityNameExpression */ Boolean]
+  
+  inline def isEnumDeclaration(node: Node): /* is typescript.typescript.EnumDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnumDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EnumDeclaration */ Boolean]
+  
+  inline def isEnumMember(node: Node): /* is typescript.typescript.EnumMember */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnumMember")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EnumMember */ Boolean]
+  
+  inline def isEnumType(`type`: Type): /* is typescript.typescript.EnumType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnumType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.EnumType */ Boolean]
+  
+  inline def isExportAssignment(node: Node): /* is typescript.typescript.ExportAssignment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportAssignment */ Boolean]
+  
+  inline def isExportDeclaration(node: Node): /* is typescript.typescript.ExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportDeclaration */ Boolean]
+  
+  inline def isExportSpecifier(node: Node): /* is typescript.typescript.ExportSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExportSpecifier */ Boolean]
+  
+  inline def isExpression(node: Node): /* is typescript.typescript.Expression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Expression */ Boolean]
+  
+  inline def isExpressionStatement(node: Node): /* is typescript.typescript.ExpressionStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpressionStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExpressionStatement */ Boolean]
+  
+  inline def isExpressionValueUsed(node: Expression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpressionValueUsed")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isExpressionWithTypeArguments(node: Node): /* is typescript.typescript.ExpressionWithTypeArguments */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpressionWithTypeArguments")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExpressionWithTypeArguments */ Boolean]
+  
+  inline def isExternalModuleReference(node: Node): /* is typescript.typescript.ExternalModuleReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExternalModuleReference")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ExternalModuleReference */ Boolean]
+  
+  inline def isFalsyType(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFalsyType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isForInOrOfStatement(node: Node): /* is typescript.typescript.ForInOrOfStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForInOrOfStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForInOrOfStatement */ Boolean]
+  
+  inline def isForInStatement(node: Node): /* is typescript.typescript.ForInStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForInStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForInStatement */ Boolean]
+  
+  inline def isForOfStatement(node: Node): /* is typescript.typescript.ForOfStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForOfStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForOfStatement */ Boolean]
+  
+  inline def isForStatement(node: Node): /* is typescript.typescript.ForStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isForStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ForStatement */ Boolean]
+  
+  inline def isFunctionDeclaration(node: Node): /* is typescript.typescript.FunctionDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionDeclaration */ Boolean]
+  
+  inline def isFunctionExpression(node: Node): /* is typescript.typescript.FunctionExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionExpression */ Boolean]
+  
+  inline def isFunctionScopeBoundary(node: Node): ScopeBoundary = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[ScopeBoundary]
+  
+  inline def isFunctionTypeNode(node: Node): /* is typescript.typescript.FunctionTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.FunctionTypeNode */ Boolean]
+  
+  inline def isFunctionWithBody(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunctionWithBody")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isGenericType(`type`: Type): /* is typescript.typescript.GenericType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGenericType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.GenericType */ Boolean]
+  
+  inline def isGetAccessorDeclaration(node: Node): /* is typescript.typescript.GetAccessorDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGetAccessorDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.GetAccessorDeclaration */ Boolean]
+  
+  inline def isIdentifier(node: Node): /* is typescript.typescript.Identifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.Identifier */ Boolean]
+  
+  inline def isIfStatement(node: Node): /* is typescript.typescript.IfStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIfStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IfStatement */ Boolean]
+  
+  inline def isImportClause(node: Node): /* is typescript.typescript.ImportClause */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportClause")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ImportClause */ Boolean]
+  
+  inline def isImportDeclaration(node: Node): /* is typescript.typescript.ImportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ImportDeclaration */ Boolean]
+  
+  inline def isImportEqualsDeclaration(node: Node): /* is typescript.typescript.ImportEqualsDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportEqualsDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ImportEqualsDeclaration */ Boolean]
+  
+  inline def isImportSpecifier(node: Node): /* is typescript.typescript.ImportSpecifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportSpecifier")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ImportSpecifier */ Boolean]
+  
+  inline def isImportTypeNode(node: Node): /* is typescript.typescript.ImportTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ImportTypeNode */ Boolean]
+  
+  inline def isInConstContext(node: Expression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInConstContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isInSingleStatementContext(statement: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInSingleStatementContext")(statement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isIndexSignatureDeclaration(node: Node): /* is typescript.typescript.IndexSignatureDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexSignatureDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexSignatureDeclaration */ Boolean]
+  
+  inline def isIndexedAccessType(`type`: Type): /* is typescript.typescript.IndexedAccessType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexedAccessType */ Boolean]
+  
+  inline def isIndexedAccessTypeNode(node: Node): /* is typescript.typescript.IndexedAccessTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexedAccessTypeNode */ Boolean]
+  
+  inline def isIndexedAccessype(`type`: Type): /* is typescript.typescript.IndexType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedAccessype")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IndexType */ Boolean]
+  
+  inline def isInferTypeNode(node: Node): /* is typescript.typescript.InferTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInferTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InferTypeNode */ Boolean]
+  
+  inline def isInstantiableType(`type`: Type): /* is typescript.typescript.InstantiableType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstantiableType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InstantiableType */ Boolean]
+  
+  inline def isInterfaceDeclaration(node: Node): /* is typescript.typescript.InterfaceDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterfaceDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InterfaceDeclaration */ Boolean]
+  
+  inline def isInterfaceType(`type`: Type): /* is typescript.typescript.InterfaceType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInterfaceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.InterfaceType */ Boolean]
+  
+  inline def isIntersectionType(`type`: Type): /* is typescript.typescript.IntersectionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntersectionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IntersectionType */ Boolean]
+  
+  inline def isIntersectionTypeNode(node: Node): /* is typescript.typescript.IntersectionTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntersectionTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IntersectionTypeNode */ Boolean]
+  
+  inline def isIterationStatement(node: Node): /* is typescript.typescript.IterationStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIterationStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.IterationStatement */ Boolean]
+  
+  inline def isJsDoc(node: Node): /* is typescript.typescript.JSDoc */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsDoc")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JSDoc */ Boolean]
+  
+  inline def isJsDocKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsDocKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isJsxAttribute(node: Node): /* is typescript.typescript.JsxAttribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttribute")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttribute */ Boolean]
+  
+  inline def isJsxAttributeLike(node: Node): /* is typescript.typescript.JsxAttributeLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttributeLike")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttributeLike */ Boolean]
+  
+  inline def isJsxAttributes(node: Node): /* is typescript.typescript.JsxAttributes */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxAttributes")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxAttributes */ Boolean]
+  
+  inline def isJsxClosingElement(node: Node): /* is typescript.typescript.JsxClosingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxClosingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxClosingElement */ Boolean]
+  
+  inline def isJsxClosingFragment(node: Node): /* is typescript.typescript.JsxClosingFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxClosingFragment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxClosingFragment */ Boolean]
+  
+  inline def isJsxElement(node: Node): /* is typescript.typescript.JsxElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxElement */ Boolean]
+  
+  inline def isJsxExpression(node: Node): /* is typescript.typescript.JsxExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxExpression */ Boolean]
+  
+  inline def isJsxFragment(node: Node): /* is typescript.typescript.JsxFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxFragment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxFragment */ Boolean]
+  
+  inline def isJsxOpeningElement(node: Node): /* is typescript.typescript.JsxOpeningElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxOpeningElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxOpeningElement */ Boolean]
+  
+  inline def isJsxOpeningFragment(node: Node): /* is typescript.typescript.JsxOpeningFragment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxOpeningFragment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxOpeningFragment */ Boolean]
+  
+  inline def isJsxOpeningLikeElement(node: Node): /* is typescript.typescript.JsxOpeningLikeElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxOpeningLikeElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxOpeningLikeElement */ Boolean]
+  
+  inline def isJsxSelfClosingElement(node: Node): /* is typescript.typescript.JsxSelfClosingElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxSelfClosingElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxSelfClosingElement */ Boolean]
+  
+  inline def isJsxSpreadAttribute(node: Node): /* is typescript.typescript.JsxSpreadAttribute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxSpreadAttribute")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxSpreadAttribute */ Boolean]
+  
+  inline def isJsxText(node: Node): /* is typescript.typescript.JsxText */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJsxText")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.JsxText */ Boolean]
+  
+  inline def isKeywordKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeywordKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isLabeledStatement(node: Node): /* is typescript.typescript.LabeledStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLabeledStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LabeledStatement */ Boolean]
+  
+  inline def isLiteralExpression(node: Node): /* is typescript.typescript.LiteralExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralExpression */ Boolean]
+  
+  inline def isLiteralType(`type`: Type): /* is typescript.typescript.LiteralType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralType */ Boolean]
+  
+  inline def isLiteralTypeNode(node: Node): /* is typescript.typescript.LiteralTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteralTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.LiteralTypeNode */ Boolean]
+  
+  inline def isMappedTypeNode(node: Node): /* is typescript.typescript.MappedTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMappedTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.MappedTypeNode */ Boolean]
+  
+  inline def isMetaProperty(node: Node): /* is typescript.typescript.MetaProperty */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMetaProperty")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.MetaProperty */ Boolean]
+  
+  inline def isMethodDeclaration(node: Node): /* is typescript.typescript.MethodDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMethodDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.MethodDeclaration */ Boolean]
+  
+  inline def isMethodSignature(node: Node): /* is typescript.typescript.MethodSignature */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMethodSignature")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.MethodSignature */ Boolean]
+  
+  inline def isModifierFlagSet(node: Node, flag: ModifierFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModifierFlagSet")(node.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isModuleBlock(node: Node): /* is typescript.typescript.ModuleBlock */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleBlock")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleBlock */ Boolean]
+  
+  inline def isModuleDeclaration(node: Node): /* is typescript.typescript.ModuleDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModuleDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ModuleDeclaration */ Boolean]
+  
+  inline def isNamedExports(node: Node): /* is typescript.typescript.NamedExports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedExports")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedExports */ Boolean]
+  
+  inline def isNamedImports(node: Node): /* is typescript.typescript.NamedImports */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedImports")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamedImports */ Boolean]
+  
+  inline def isNamespaceDeclaration(node: Node): /* is typescript.typescript.NamespaceDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamespaceDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamespaceDeclaration */ Boolean]
+  
+  inline def isNamespaceExportDeclaration(node: Node): /* is typescript.typescript.NamespaceExportDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamespaceExportDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamespaceExportDeclaration */ Boolean]
+  
+  inline def isNamespaceImport(node: Node): /* is typescript.typescript.NamespaceImport */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamespaceImport")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NamespaceImport */ Boolean]
+  
+  inline def isNewExpression(node: Node): /* is typescript.typescript.NewExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NewExpression */ Boolean]
+  
+  inline def isNoSubstitutionTemplateLiteral(node: Node): /* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoSubstitutionTemplateLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NoSubstitutionTemplateLiteral */ Boolean]
+  
+  inline def isNodeFlagSet(node: Node, flag: NodeFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNodeFlagSet")(node.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isNodeKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isNonNullExpression(node: Node): /* is typescript.typescript.NonNullExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNonNullExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NonNullExpression */ Boolean]
+  
+  inline def isNullLiteral(node: Node): /* is typescript.typescript.NullLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NullLiteral */ Boolean]
+  
+  inline def isNumericLiteral(node: Node): /* is typescript.typescript.NumericLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumericLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NumericLiteral */ Boolean]
+  
+  inline def isNumericOrStringLikeLiteral(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumericOrStringLikeLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isNumericPropertyName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumericPropertyName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNumericPropertyName(name: typingsJapgolly.typescript.mod.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumericPropertyName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isObjectBindingPattern(node: Node): /* is typescript.typescript.ObjectBindingPattern */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectBindingPattern")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectBindingPattern */ Boolean]
+  
+  inline def isObjectFlagSet(objectType: ObjectType, flag: ObjectFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObjectFlagSet")(objectType.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isObjectLiteralExpression(node: Node): /* is typescript.typescript.ObjectLiteralExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectLiteralExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectLiteralExpression */ Boolean]
+  
+  inline def isObjectType(`type`: Type): /* is typescript.typescript.ObjectType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ObjectType */ Boolean]
+  
+  inline def isOmittedExpression(node: Node): /* is typescript.typescript.OmittedExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOmittedExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.OmittedExpression */ Boolean]
+  
+  inline def isOptionalChainingUndefinedMarkerType(checker: TypeChecker, t: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalChainingUndefinedMarkerType")(checker.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isOptionalTypeNode(node: Node): /* is typescript.typescript.OptionalTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.OptionalTypeNode */ Boolean]
+  
+  inline def isParameterDeclaration(node: Node): /* is typescript.typescript.ParameterDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParameterDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ParameterDeclaration */ Boolean]
+  
+  inline def isParameterProperty(node: ParameterDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParameterProperty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isParenthesizedExpression(node: Node): /* is typescript.typescript.ParenthesizedExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParenthesizedExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ParenthesizedExpression */ Boolean]
+  
+  inline def isParenthesizedTypeNode(node: Node): /* is typescript.typescript.ParenthesizedTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isParenthesizedTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ParenthesizedTypeNode */ Boolean]
+  
+  inline def isPositionInComment(sourceFile: SourceFile, pos: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPositionInComment")(sourceFile.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isPositionInComment(sourceFile: SourceFile, pos: Double, parent: Node): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPositionInComment")(sourceFile.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isPostfixUnaryExpression(node: Node): /* is typescript.typescript.PostfixUnaryExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPostfixUnaryExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PostfixUnaryExpression */ Boolean]
+  
+  inline def isPrefixUnaryExpression(node: Node): /* is typescript.typescript.PrefixUnaryExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrefixUnaryExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PrefixUnaryExpression */ Boolean]
+  
+  inline def isPropertyAccessExpression(node: Node): /* is typescript.typescript.PropertyAccessExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyAccessExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PropertyAccessExpression */ Boolean]
+  
+  inline def isPropertyAssignment(node: Node): /* is typescript.typescript.PropertyAssignment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PropertyAssignment */ Boolean]
+  
+  inline def isPropertyDeclaration(node: Node): /* is typescript.typescript.PropertyDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PropertyDeclaration */ Boolean]
+  
+  inline def isPropertyReadonlyInType(`type`: Type, name: typingsJapgolly.typescript.mod.String, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPropertyReadonlyInType")(`type`.asInstanceOf[js.Any], name.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isPropertySignature(node: Node): /* is typescript.typescript.PropertySignature */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPropertySignature")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.PropertySignature */ Boolean]
+  
+  inline def isQualifiedName(node: Node): /* is typescript.typescript.QualifiedName */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQualifiedName")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.QualifiedName */ Boolean]
+  
+  inline def isReadonlyAssignmentDeclaration(node: CallExpression, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReadonlyAssignmentDeclaration")(node.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isReassignmentTarget(node: Expression): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReassignmentTarget")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isRegularExpressionLiteral(node: Node): /* is typescript.typescript.RegularExpressionLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegularExpressionLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.RegularExpressionLiteral */ Boolean]
+  
+  inline def isRestTypeNode(node: Node): /* is typescript.typescript.RestTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRestTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.RestTypeNode */ Boolean]
+  
+  inline def isReturnStatement(node: Node): /* is typescript.typescript.ReturnStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReturnStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ReturnStatement */ Boolean]
+  
+  inline def isSameLine(sourceFile: SourceFile, pos1: Double, pos2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameLine")(sourceFile.asInstanceOf[js.Any], pos1.asInstanceOf[js.Any], pos2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isScopeBoundary(node: Node): ScopeBoundary = ^.asInstanceOf[js.Dynamic].applyDynamic("isScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[ScopeBoundary]
+  
+  inline def isSetAccessorDeclaration(node: Node): /* is typescript.typescript.SetAccessorDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSetAccessorDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SetAccessorDeclaration */ Boolean]
+  
+  inline def isShorthandPropertyAssignment(node: Node): /* is typescript.typescript.ShorthandPropertyAssignment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isShorthandPropertyAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ShorthandPropertyAssignment */ Boolean]
+  
+  inline def isSignatureDeclaration(node: Node): /* is typescript.typescript.SignatureDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSignatureDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SignatureDeclaration */ Boolean]
+  
+  inline def isSourceFile(node: Node): /* is typescript.typescript.SourceFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSourceFile")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SourceFile */ Boolean]
+  
+  inline def isSpreadAssignment(node: Node): /* is typescript.typescript.SpreadAssignment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadAssignment")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SpreadAssignment */ Boolean]
+  
+  inline def isSpreadElement(node: Node): /* is typescript.typescript.SpreadElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpreadElement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SpreadElement */ Boolean]
+  
+  inline def isStatementInAmbientContext(node: Statement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStatementInAmbientContext")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isStrictCompilerOptionEnabled(options: CompilerOptions, option: StrictCompilerOption): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStrictCompilerOptionEnabled")(options.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isStringLiteral(node: Node): /* is typescript.typescript.StringLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.StringLiteral */ Boolean]
+  
+  inline def isSubstitutionType(`type`: Type): /* is typescript.typescript.SubstitutionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubstitutionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SubstitutionType */ Boolean]
+  
+  inline def isSwitchStatement(node: Node): /* is typescript.typescript.SwitchStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSwitchStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SwitchStatement */ Boolean]
+  
+  inline def isSymbolFlagSet(symbol: Symbol, flag: SymbolFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolFlagSet")(symbol.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isSyntaxList(node: Node): /* is typescript.typescript.SyntaxList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyntaxList")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SyntaxList */ Boolean]
+  
+  inline def isSyntheticExpression(node: Node): /* is typescript.typescript.SyntheticExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyntheticExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.SyntheticExpression */ Boolean]
+  
+  inline def isTaggedTemplateExpression(node: Node): /* is typescript.typescript.TaggedTemplateExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaggedTemplateExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TaggedTemplateExpression */ Boolean]
+  
+  inline def isTemplateExpression(node: Node): /* is typescript.typescript.TemplateExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TemplateExpression */ Boolean]
+  
+  inline def isTemplateLiteral(node: Node): /* is typescript.typescript.TemplateLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTemplateLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TemplateLiteral */ Boolean]
+  
+  inline def isTextualLiteral(node: Node): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextualLiteral")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isThenableType(checker: TypeChecker, node: Expression): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isThenableType(checker: TypeChecker, node: Expression, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isThenableType(checker: TypeChecker, node: Node, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isThenableType")(checker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isThisParameter(parameter: ParameterDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThisParameter")(parameter.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isThrowStatement(node: Node): /* is typescript.typescript.ThrowStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isThrowStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.ThrowStatement */ Boolean]
+  
+  inline def isTokenKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTokenKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isTryStatement(node: Node): /* is typescript.typescript.TryStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTryStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TryStatement */ Boolean]
+  
+  inline def isTupleType(`type`: Type): /* is typescript.typescript.TupleType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTupleType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TupleType */ Boolean]
+  
+  inline def isTupleTypeNode(node: Node): /* is typescript.typescript.TupleTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTupleTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TupleTypeNode */ Boolean]
+  
+  inline def isTupleTypeReference(`type`: Type): /* is tsutils.anon.TypeReferencetargetTupleT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTupleTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is tsutils.anon.TypeReferencetargetTupleT */ Boolean]
+  
+  inline def isTypeAliasDeclaration(node: Node): /* is typescript.typescript.TypeAliasDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAliasDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeAliasDeclaration */ Boolean]
+  
+  inline def isTypeAssertion(node: Node): /* is typescript.typescript.TypeAssertion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssertion")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeAssertion */ Boolean]
+  
+  inline def isTypeAssignableToNumber(checker: TypeChecker, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssignableToNumber")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isTypeAssignableToString(checker: TypeChecker, `type`: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeAssignableToString")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isTypeFlagSet(`type`: Type, flag: TypeFlags): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTypeFlagSet")(`type`.asInstanceOf[js.Any], flag.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isTypeLiteralNode(node: Node): /* is typescript.typescript.TypeLiteralNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeLiteralNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeLiteralNode */ Boolean]
+  
+  inline def isTypeNodeKind(kind: SyntaxKind): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeNodeKind")(kind.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isTypeOfExpression(node: Node): /* is typescript.typescript.TypeOfExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOfExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOfExpression */ Boolean]
+  
+  inline def isTypeOperatorNode(node: Node): /* is typescript.typescript.TypeOperatorNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeOperatorNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeOperatorNode */ Boolean]
+  
+  inline def isTypeParameter(`type`: Type): /* is typescript.typescript.TypeParameter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameter")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeParameter */ Boolean]
+  
+  inline def isTypeParameterDeclaration(node: Node): /* is typescript.typescript.TypeParameterDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeParameterDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeParameterDeclaration */ Boolean]
+  
+  inline def isTypePredicateNode(node: Node): /* is typescript.typescript.TypePredicateNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypePredicateNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypePredicateNode */ Boolean]
+  
+  inline def isTypeQueryNode(node: Node): /* is typescript.typescript.TypeQueryNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeQueryNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeQueryNode */ Boolean]
+  
+  inline def isTypeReference(`type`: Type): /* is typescript.typescript.TypeReference */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeReference")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeReference */ Boolean]
+  
+  inline def isTypeReferenceNode(node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeReferenceNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.TypeReferenceNode */ Boolean]
+  
+  inline def isTypeScopeBoundary(node: Node): ScopeBoundary = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeScopeBoundary")(node.asInstanceOf[js.Any]).asInstanceOf[ScopeBoundary]
+  
+  inline def isTypeVariable(`type`: Type): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypeVariable")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  inline def isUnionOrIntersectionType(`type`: Type): /* is typescript.typescript.UnionOrIntersectionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionOrIntersectionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionOrIntersectionType */ Boolean]
+  
+  inline def isUnionType(`type`: Type): /* is typescript.typescript.UnionType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionType */ Boolean]
+  
+  inline def isUnionTypeNode(node: Node): /* is typescript.typescript.UnionTypeNode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUnionTypeNode")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UnionTypeNode */ Boolean]
+  
+  inline def isUniqueESSymbolType(`type`: Type): /* is typescript.typescript.UniqueESSymbolType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUniqueESSymbolType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.UniqueESSymbolType */ Boolean]
+  
+  inline def isValidIdentifier(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidIdentifier")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidIdentifier(text: String, languageVersion: ScriptTarget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidIdentifier")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidJsxIdentifier(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidJsxIdentifier")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidJsxIdentifier(text: String, languageVersion: ScriptTarget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidJsxIdentifier")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidNumericLiteral(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumericLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidNumericLiteral(text: String, languageVersion: ScriptTarget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumericLiteral")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidPropertyAccess(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPropertyAccess")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPropertyAccess(text: String, languageVersion: ScriptTarget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPropertyAccess")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isValidPropertyName(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidPropertyName")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isValidPropertyName(text: String, languageVersion: ScriptTarget): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidPropertyName")(text.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  inline def isVariableDeclaration(node: Node): /* is typescript.typescript.VariableDeclaration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableDeclaration")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.VariableDeclaration */ Boolean]
+  
+  inline def isVariableDeclarationList(node: Node): /* is typescript.typescript.VariableDeclarationList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableDeclarationList")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.VariableDeclarationList */ Boolean]
+  
+  inline def isVariableStatement(node: Node): /* is typescript.typescript.VariableStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariableStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.VariableStatement */ Boolean]
+  
+  inline def isVoidExpression(node: Node): /* is typescript.typescript.VoidExpression */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVoidExpression")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.VoidExpression */ Boolean]
+  
+  inline def isWellKnownSymbolLiterally(node: Expression): /* is tsutils.tsutils/util/util.WellKnownSymbolLiteral */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellKnownSymbolLiterally")(node.asInstanceOf[js.Any]).asInstanceOf[/* is tsutils.tsutils/util/util.WellKnownSymbolLiteral */ Boolean]
+  
+  inline def isWhileStatement(node: Node): /* is typescript.typescript.WhileStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhileStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.WhileStatement */ Boolean]
+  
+  inline def isWithStatement(node: Node): /* is typescript.typescript.WithStatement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWithStatement")(node.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.WithStatement */ Boolean]
+  
+  inline def parseJsDocOfNode(node: Node): js.Array[JSDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJsDocOfNode")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[JSDoc]]
+  inline def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean): js.Array[JSDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsDocOfNode")(node.asInstanceOf[js.Any], considerTrailingComments.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDoc]]
+  inline def parseJsDocOfNode(node: Node, considerTrailingComments: Boolean, sourceFile: SourceFile): js.Array[JSDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsDocOfNode")(node.asInstanceOf[js.Any], considerTrailingComments.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDoc]]
+  inline def parseJsDocOfNode(node: Node, considerTrailingComments: Unit, sourceFile: SourceFile): js.Array[JSDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJsDocOfNode")(node.asInstanceOf[js.Any], considerTrailingComments.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Array[JSDoc]]
+  
+  inline def removeOptionalChainingUndefinedMarkerType(checker: TypeChecker, `type`: Type): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOptionalChainingUndefinedMarkerType")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  inline def removeOptionalityFromType(checker: TypeChecker, `type`: Type): Type = (^.asInstanceOf[js.Dynamic].applyDynamic("removeOptionalityFromType")(checker.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Type]
+  
+  inline def someTypePart(
     `type`: Type,
     predicate: js.Function1[/* t */ Type, /* is typescript.typescript.UnionOrIntersectionType */ Boolean],
     cb: js.Function1[/* t */ Type, Boolean]
-  ): Boolean = js.native
-  def symbolHasReadonlyDeclaration(symbol: Symbol, checker: TypeChecker): Boolean = js.native
-  def unionTypeParts(`type`: Type): js.Array[Type] = js.native
-  def unwrapParentheses(node: Expression): Expression = js.native
-  @js.native
-  object AccessKind extends js.Object {
-    /* 4 */ val Delete: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Delete with Double = js.native
-    /* 6 */ val Modification: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Modification with Double = js.native
-    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.AccessKind.None with Double = js.native
-    /* 1 */ val Read: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Read with Double = js.native
-    /* 3 */ val ReadWrite: typingsJapgolly.tsutils.utilUtilMod.AccessKind.ReadWrite with Double = js.native
-    /* 2 */ val Write: typingsJapgolly.tsutils.utilUtilMod.AccessKind.Write with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.AccessKind with Double] = js.native
-  }
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("someTypePart")(`type`.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
-  object DeclarationDomain extends js.Object {
-    /* 7 */ val Any: typingsJapgolly.tsutils.usageMod.DeclarationDomain.Any with Double = js.native
-    /* 8 */ val Import: typingsJapgolly.tsutils.usageMod.DeclarationDomain.Import with Double = js.native
-    /* 1 */ val Namespace: typingsJapgolly.tsutils.usageMod.DeclarationDomain.Namespace with Double = js.native
-    /* 2 */ val Type: typingsJapgolly.tsutils.usageMod.DeclarationDomain.Type with Double = js.native
-    /* 4 */ val Value: typingsJapgolly.tsutils.usageMod.DeclarationDomain.Value with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.usageMod.DeclarationDomain with Double] = js.native
-  }
+  inline def symbolHasReadonlyDeclaration(symbol: Symbol, checker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolHasReadonlyDeclaration")(symbol.asInstanceOf[js.Any], checker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
-  object ImportKind extends js.Object {
-    /* 63 */ val All: typingsJapgolly.tsutils.utilUtilMod.ImportKind.All with Double = js.native
-    /* 24 */ val AllImportExpressions: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllImportExpressions with Double = js.native
-    /* 59 */ val AllImports: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllImports with Double = js.native
-    /* 18 */ val AllRequireLike: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllRequireLike with Double = js.native
-    /* 3 */ val AllStaticImports: typingsJapgolly.tsutils.utilUtilMod.ImportKind.AllStaticImports with Double = js.native
-    /* 8 */ val DynamicImport: typingsJapgolly.tsutils.utilUtilMod.ImportKind.DynamicImport with Double = js.native
-    /* 4 */ val ExportFrom: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ExportFrom with Double = js.native
-    /* 1 */ val ImportDeclaration: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportDeclaration with Double = js.native
-    /* 2 */ val ImportEquals: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportEquals with Double = js.native
-    /* 32 */ val ImportType: typingsJapgolly.tsutils.utilUtilMod.ImportKind.ImportType with Double = js.native
-    /* 16 */ val Require: typingsJapgolly.tsutils.utilUtilMod.ImportKind.Require with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ImportKind with Double] = js.native
-  }
+  inline def unionTypeParts(`type`: Type): js.Array[Type] = ^.asInstanceOf[js.Dynamic].applyDynamic("unionTypeParts")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Array[Type]]
   
-  @js.native
-  object ScopeBoundary extends js.Object {
-    /* 2 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Block with Double = js.native
-    /* 8 */ val ConditionalType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.ConditionalType with Double = js.native
-    /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Function with Double = js.native
-    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.None with Double = js.native
-    /* 4 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary.Type with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ScopeBoundary with Double] = js.native
-  }
-  
-  @js.native
-  object ScopeBoundarySelector extends js.Object {
-    /* 3 */ val Block: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Block with Double = js.native
-    /* 1 */ val Function: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Function with Double = js.native
-    /* 8 */ val InferType: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.InferType with Double = js.native
-    /* 7 */ val Type: typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector.Type with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.ScopeBoundarySelector with Double] = js.native
-  }
-  
-  @js.native
-  object SideEffectOptions extends js.Object {
-    /* 2 */ val Constructor: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.Constructor with Double = js.native
-    /* 4 */ val JsxElement: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.JsxElement with Double = js.native
-    /* 0 */ val None: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.None with Double = js.native
-    /* 1 */ val TaggedTemplate: typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions.TaggedTemplate with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.SideEffectOptions with Double] = js.native
-  }
-  
-  @js.native
-  object UsageDomain extends js.Object {
-    /* 7 */ val Any: typingsJapgolly.tsutils.usageMod.UsageDomain.Any with Double = js.native
-    /* 1 */ val Namespace: typingsJapgolly.tsutils.usageMod.UsageDomain.Namespace with Double = js.native
-    /* 2 */ val Type: typingsJapgolly.tsutils.usageMod.UsageDomain.Type with Double = js.native
-    /* 8 */ val TypeQuery: typingsJapgolly.tsutils.usageMod.UsageDomain.TypeQuery with Double = js.native
-    /* 4 */ val Value: typingsJapgolly.tsutils.usageMod.UsageDomain.Value with Double = js.native
-    /* 5 */ val ValueOrNamespace: typingsJapgolly.tsutils.usageMod.UsageDomain.ValueOrNamespace with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.usageMod.UsageDomain with Double] = js.native
-  }
-  
-  @js.native
-  object VariableDeclarationKind extends js.Object {
-    /* 2 */ val Const: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Const with Double = js.native
-    /* 1 */ val Let: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Let with Double = js.native
-    /* 0 */ val Var: typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind.Var with Double = js.native
-    @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typingsJapgolly.tsutils.utilUtilMod.VariableDeclarationKind with Double] = js.native
-  }
-  
+  inline def unwrapParentheses(node: Expression): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrapParentheses")(node.asInstanceOf[js.Any]).asInstanceOf[Expression]
 }
-

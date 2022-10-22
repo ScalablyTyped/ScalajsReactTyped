@@ -1,28 +1,19 @@
 package typingsJapgolly.highcharts.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait _ColorType extends js.Object
-
+trait _ColorType extends StObject
 object _ColorType {
-  @scala.inline
-  def GradientColorObject(
-    stops: js.Array[GradientColorStopObject],
-    linearGradient: LinearGradientColorObject = null,
-    radialGradient: RadialGradientColorObject = null
-  ): _ColorType = {
+  
+  inline def GradientColorObject(stops: js.Array[GradientColorStopObject]): typingsJapgolly.highcharts.mod.GradientColorObject = {
     val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any])
-    if (linearGradient != null) __obj.updateDynamic("linearGradient")(linearGradient.asInstanceOf[js.Any])
-    if (radialGradient != null) __obj.updateDynamic("radialGradient")(radialGradient.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ColorType]
+    __obj.asInstanceOf[typingsJapgolly.highcharts.mod.GradientColorObject]
   }
-  @scala.inline
-  def PatternObject(pattern: PatternOptionsObject, animation: Boolean | AnimationOptionsObject = null): _ColorType = {
+  
+  inline def PatternObject(pattern: PatternOptionsObject): typingsJapgolly.highcharts.mod.PatternObject = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
-    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
-    __obj.asInstanceOf[_ColorType]
+    __obj.asInstanceOf[typingsJapgolly.highcharts.mod.PatternObject]
   }
 }
-

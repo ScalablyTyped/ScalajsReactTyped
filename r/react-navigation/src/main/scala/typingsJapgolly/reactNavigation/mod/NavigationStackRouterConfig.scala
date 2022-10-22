@@ -1,30 +1,42 @@
 package typingsJapgolly.reactNavigation.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait NavigationStackRouterConfig extends js.Object {
+trait NavigationStackRouterConfig extends StObject {
+  
   var initialRouteKey: js.UndefOr[String] = js.undefined
+  
   var initialRouteName: js.UndefOr[String] = js.undefined
+  
   var initialRouteParams: js.UndefOr[NavigationParams] = js.undefined
+  
   var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
 }
-
 object NavigationStackRouterConfig {
-  @scala.inline
-  def apply(
-    initialRouteKey: String = null,
-    initialRouteName: String = null,
-    initialRouteParams: NavigationParams = null,
-    paths: NavigationPathsConfig = null
-  ): NavigationStackRouterConfig = {
+  
+  inline def apply(): NavigationStackRouterConfig = {
     val __obj = js.Dynamic.literal()
-    if (initialRouteKey != null) __obj.updateDynamic("initialRouteKey")(initialRouteKey.asInstanceOf[js.Any])
-    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName.asInstanceOf[js.Any])
-    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams.asInstanceOf[js.Any])
-    if (paths != null) __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigationStackRouterConfig]
   }
+  
+  extension [Self <: NavigationStackRouterConfig](x: Self) {
+    
+    inline def setInitialRouteKey(value: String): Self = StObject.set(x, "initialRouteKey", value.asInstanceOf[js.Any])
+    
+    inline def setInitialRouteKeyUndefined: Self = StObject.set(x, "initialRouteKey", js.undefined)
+    
+    inline def setInitialRouteName(value: String): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
+    
+    inline def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
+    
+    inline def setInitialRouteParams(value: NavigationParams): Self = StObject.set(x, "initialRouteParams", value.asInstanceOf[js.Any])
+    
+    inline def setInitialRouteParamsUndefined: Self = StObject.set(x, "initialRouteParams", js.undefined)
+    
+    inline def setPaths(value: NavigationPathsConfig): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+  }
 }
-

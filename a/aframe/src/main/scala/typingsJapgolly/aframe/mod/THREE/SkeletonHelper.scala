@@ -1,14 +1,14 @@
 package typingsJapgolly.aframe.mod.THREE
 
-import typingsJapgolly.three.object3DMod.Object3D
+import typingsJapgolly.three.srcCoreEventDispatcherMod.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.SkeletonHelper")
 @js.native
-class SkeletonHelper protected ()
+open class SkeletonHelper protected ()
   extends typingsJapgolly.three.mod.SkeletonHelper {
-  def this(bone: Object3D) = this()
+  def this(`object`: typingsJapgolly.three.srcCoreObject3DMod.Object3D[Event]) = this()
 }
-

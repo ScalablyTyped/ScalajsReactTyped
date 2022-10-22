@@ -1,271 +1,1414 @@
 package typingsJapgolly.jspdf.mod
 
-import typingsJapgolly.jspdf.AnonAlign
-import typingsJapgolly.jspdf.AnonArc
-import typingsJapgolly.jspdf.AnonCollections
-import typingsJapgolly.jspdf.AnonGetContext
-import typingsJapgolly.jspdf.AnonReturnPromise
+import org.scalablytyped.runtime.StringDictionary
+import org.scalajs.dom.Blob
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLElement
+import org.scalajs.dom.HTMLImageElement
+import org.scalajs.dom.URL
+import org.scalajs.dom.Window
+import typingsJapgolly.jspdf.anon.Appearance
+import typingsJapgolly.jspdf.anon.Events
+import typingsJapgolly.jspdf.anon.Filename
+import typingsJapgolly.jspdf.anon.GetContext
+import typingsJapgolly.jspdf.anon.ReturnPromise
+import typingsJapgolly.jspdf.anon.W
+import typingsJapgolly.jspdf.jspdfBooleans.`false`
+import typingsJapgolly.jspdf.jspdfBooleans.`true`
+import typingsJapgolly.jspdf.jspdfStrings.FullScreen
+import typingsJapgolly.jspdf.jspdfStrings.MacRomanEncoding
+import typingsJapgolly.jspdf.jspdfStrings.StandardEncoding
+import typingsJapgolly.jspdf.jspdfStrings.UseOutlines
+import typingsJapgolly.jspdf.jspdfStrings.UseThumbs
+import typingsJapgolly.jspdf.jspdfStrings.WinAnsiEncoding
+import typingsJapgolly.jspdf.jspdfStrings.`Identity-H`
+import typingsJapgolly.jspdf.jspdfStrings.arraybuffer
+import typingsJapgolly.jspdf.jspdfStrings.blob
+import typingsJapgolly.jspdf.jspdfStrings.bloburi
+import typingsJapgolly.jspdf.jspdfStrings.bloburl
+import typingsJapgolly.jspdf.jspdfStrings.cm
+import typingsJapgolly.jspdf.jspdfStrings.continuous
+import typingsJapgolly.jspdf.jspdfStrings.datauri
+import typingsJapgolly.jspdf.jspdfStrings.datauristring
+import typingsJapgolly.jspdf.jspdfStrings.dataurl
+import typingsJapgolly.jspdf.jspdfStrings.dataurlnewwindow
+import typingsJapgolly.jspdf.jspdfStrings.dataurlstring
+import typingsJapgolly.jspdf.jspdfStrings.em
+import typingsJapgolly.jspdf.jspdfStrings.evenodd
+import typingsJapgolly.jspdf.jspdfStrings.ex
+import typingsJapgolly.jspdf.jspdfStrings.fullheight
+import typingsJapgolly.jspdf.jspdfStrings.fullpage
+import typingsJapgolly.jspdf.jspdfStrings.fullwidth
+import typingsJapgolly.jspdf.jspdfStrings.in
 import typingsJapgolly.jspdf.jspdfStrings.l
 import typingsJapgolly.jspdf.jspdfStrings.landscape
+import typingsJapgolly.jspdf.jspdfStrings.mm
+import typingsJapgolly.jspdf.jspdfStrings.original
 import typingsJapgolly.jspdf.jspdfStrings.p
+import typingsJapgolly.jspdf.jspdfStrings.pc
+import typingsJapgolly.jspdf.jspdfStrings.pdfjsnewwindow
+import typingsJapgolly.jspdf.jspdfStrings.pdfobjectnewwindow
 import typingsJapgolly.jspdf.jspdfStrings.portrait
-import typingsJapgolly.std.HTMLElement
+import typingsJapgolly.jspdf.jspdfStrings.pt
+import typingsJapgolly.jspdf.jspdfStrings.px
+import typingsJapgolly.jspdf.jspdfStrings.reset
+import typingsJapgolly.jspdf.jspdfStrings.single
+import typingsJapgolly.jspdf.jspdfStrings.two
+import typingsJapgolly.jspdf.jspdfStrings.twoleft
+import typingsJapgolly.jspdf.jspdfStrings.tworight
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+@JSImport("jspdf", "jsPDF")
 @js.native
-trait jsPDF extends js.Object {
-  var CapJoinStyles: js.Any = js.native
-  // jsPDF plugin: Annotations
-  var annotationPlugin: js.Any = js.native
-  // jsPDF plugin: Canvas
-  var canvas: AnonGetContext = js.native
-  // jsPDF plugin: addImage
-  var color_spaces: js.Any = js.native
-  // jsPDF plugin: Context2D
-  var context2d: AnonArc = js.native
-  var decode: js.Any = js.native
-  var image_compression: js.Any = js.native
-  var internal: AnonCollections = js.native
-  var version: String = js.native
+open class jsPDF () extends StObject {
+  def this(options: jsPDFOptions) = this()
+  def this(orientation: p | portrait | l | landscape) = this()
+  def this(orientation: p | portrait | l | landscape, unit: pt | px | in | mm | cm | ex | em | pc) = this()
+  def this(orientation: Unit, unit: pt | px | in | mm | cm | ex | em | pc) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: String
+  ) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: js.Array[Double]
+  ) = this()
+  def this(orientation: p | portrait | l | landscape, unit: Unit, format: String) = this()
+  def this(orientation: p | portrait | l | landscape, unit: Unit, format: js.Array[Double]) = this()
+  def this(orientation: Unit, unit: pt | px | in | mm | cm | ex | em | pc, format: String) = this()
+  def this(orientation: Unit, unit: pt | px | in | mm | cm | ex | em | pc, format: js.Array[Double]) = this()
+  def this(orientation: Unit, unit: Unit, format: String) = this()
+  def this(orientation: Unit, unit: Unit, format: js.Array[Double]) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: String,
+    compressPdf: Boolean
+  ) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: js.Array[Double],
+    compressPdf: Boolean
+  ) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: Unit,
+    compressPdf: Boolean
+  ) = this()
+  def this(orientation: p | portrait | l | landscape, unit: Unit, format: String, compressPdf: Boolean) = this()
+  def this(
+    orientation: p | portrait | l | landscape,
+    unit: Unit,
+    format: js.Array[Double],
+    compressPdf: Boolean
+  ) = this()
+  def this(orientation: p | portrait | l | landscape, unit: Unit, format: Unit, compressPdf: Boolean) = this()
+  def this(
+    orientation: Unit,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: String,
+    compressPdf: Boolean
+  ) = this()
+  def this(
+    orientation: Unit,
+    unit: pt | px | in | mm | cm | ex | em | pc,
+    format: js.Array[Double],
+    compressPdf: Boolean
+  ) = this()
+  def this(orientation: Unit, unit: pt | px | in | mm | cm | ex | em | pc, format: Unit, compressPdf: Boolean) = this()
+  def this(orientation: Unit, unit: Unit, format: String, compressPdf: Boolean) = this()
+  def this(orientation: Unit, unit: Unit, format: js.Array[Double], compressPdf: Boolean) = this()
+  def this(orientation: Unit, unit: Unit, format: Unit, compressPdf: Boolean) = this()
+  
+  var AcroForm: Appearance = js.native
+  
+  var CapJoinStyles: Any = js.native
+  
+  def GState(parameters: typingsJapgolly.jspdf.mod.GState): typingsJapgolly.jspdf.mod.GState = js.native
+  
+  def Matrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): typingsJapgolly.jspdf.mod.Matrix = js.native
+  
+  def ShadingPattern(`type`: ShadingPatternType, coords: js.Array[Double], colors: js.Array[ShadingPatterStop]): typingsJapgolly.jspdf.mod.ShadingPattern = js.native
+  def ShadingPattern(
+    `type`: ShadingPatternType,
+    coords: js.Array[Double],
+    colors: js.Array[ShadingPatterStop],
+    gState: Unit,
+    matrix: Matrix
+  ): typingsJapgolly.jspdf.mod.ShadingPattern = js.native
+  def ShadingPattern(
+    `type`: ShadingPatternType,
+    coords: js.Array[Double],
+    colors: js.Array[ShadingPatterStop],
+    gState: GState
+  ): typingsJapgolly.jspdf.mod.ShadingPattern = js.native
+  def ShadingPattern(
+    `type`: ShadingPatternType,
+    coords: js.Array[Double],
+    colors: js.Array[ShadingPatterStop],
+    gState: GState,
+    matrix: Matrix
+  ): typingsJapgolly.jspdf.mod.ShadingPattern = js.native
+  
+  def TilingPattern(boundingBox: js.Array[Double], xStep: Double, yStep: Double): typingsJapgolly.jspdf.mod.TilingPattern = js.native
+  def TilingPattern(boundingBox: js.Array[Double], xStep: Double, yStep: Double, gState: Unit, matrix: Matrix): typingsJapgolly.jspdf.mod.TilingPattern = js.native
+  def TilingPattern(boundingBox: js.Array[Double], xStep: Double, yStep: Double, gState: GState): typingsJapgolly.jspdf.mod.TilingPattern = js.native
+  def TilingPattern(boundingBox: js.Array[Double], xStep: Double, yStep: Double, gState: GState, matrix: Matrix): typingsJapgolly.jspdf.mod.TilingPattern = js.native
+  
+  // jsPDF plugin: AcroForm
+  def addField(field: AcroFormField): jsPDF = js.native
+  
   def addFileToVFS(filename: String, filecontent: String): jsPDF = js.native
-  def addFont(postScriptName: String, fontName: String, fontStyle: String): String = js.native
-  def addHTML(element: js.Any, callback: js.Function): jsPDF = js.native
+  
+  def addFont(postScriptName: String, id: String, fontStyle: String): String = js.native
+  def addFont(postScriptName: String, id: String, fontStyle: String, fontWeight: String): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: String,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: String,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: String,
+    encoding: Unit,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(postScriptName: String, id: String, fontStyle: String, fontWeight: Double): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Double,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Double,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Double,
+    encoding: Unit,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Unit,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Unit,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(
+    postScriptName: String,
+    id: String,
+    fontStyle: String,
+    fontWeight: Unit,
+    encoding: Unit,
+    isStandardFont: Boolean
+  ): String = js.native
+  def addFont(url: URL, id: String, fontStyle: String): String = js.native
+  def addFont(url: URL, id: String, fontStyle: String, fontWeight: String): String = js.native
+  def addFont(
+    url: URL,
+    id: String,
+    fontStyle: String,
+    fontWeight: String,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  def addFont(url: URL, id: String, fontStyle: String, fontWeight: Double): String = js.native
+  def addFont(
+    url: URL,
+    id: String,
+    fontStyle: String,
+    fontWeight: Double,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  def addFont(
+    url: URL,
+    id: String,
+    fontStyle: String,
+    fontWeight: Unit,
+    encoding: StandardEncoding | MacRomanEncoding | `Identity-H` | WinAnsiEncoding
+  ): String = js.native
+  
+  def addGState(key: String, gState: GState): jsPDF = js.native
+  
   /**
     * jsPDF plugins below:
     *
-    *  - AddHTML
+    *  - AcroForm
     *  - AddImage
     *  - Annotations
     *  - AutoPrint
     *  - Canvas
     *  - Cell
     *  - Context2D
-    *  - FromHTML
+    *  - fileloading
+    *  - html
     *  - JavaScript
-    *  - PNG
     *  - split_text_to_size
     *  - SVG
     *  - total_pages
+    *  - utf8
     *  - vfs
+    *  - xmp_metadata
     */
-  // jsPDF plugin: addHTML
-  def addHTML(element: js.Any, x: Double, y: Double, options: js.Any, callback: js.Function): jsPDF = js.native
+  // jsPDF plugin: addImage
+  def addImage(imageData: String, format: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: String, format: String, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
   def addImage(
-    imageData: js.UndefOr[js.Any],
-    format: js.UndefOr[js.Any],
-    x: js.UndefOr[Double],
-    y: js.UndefOr[Double],
-    w: js.UndefOr[Double],
-    h: js.UndefOr[Double],
-    alias: js.UndefOr[js.Any],
-    compression: js.UndefOr[js.Any],
-    rotation: js.UndefOr[js.Any]
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
   ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: String, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: js.typedarray.Uint8Array, format: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: js.typedarray.Uint8Array, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: js.typedarray.Uint8Array, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: js.typedarray.Uint8Array,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: HTMLCanvasElement, format: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: HTMLCanvasElement, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: HTMLCanvasElement, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLCanvasElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: HTMLImageElement, format: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: HTMLImageElement, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: HTMLImageElement, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: HTMLImageElement,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: RGBAData, format: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: RGBAData, format: String, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    format: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(imageData: RGBAData, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addImage(imageData: RGBAData, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression
+  ): jsPDF = js.native
+  def addImage(
+    imageData: RGBAData,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: ImageCompression,
+    rotation: Double
+  ): jsPDF = js.native
+  def addImage(options: ImageOptions): jsPDF = js.native
+  
   // jsPDF plugin: JavaScript
-  def addJS(txt: String): jsPDF = js.native
+  def addJS(javascript: String): jsPDF = js.native
+  
+  // jsPDF plugin: xmp_metadata
+  def addMetadata(metadata: String): jsPDF = js.native
+  def addMetadata(metadata: String, namespaceuri: String): jsPDF = js.native
+  
   def addPage(): jsPDF = js.native
   def addPage(format: String): jsPDF = js.native
+  def addPage(format: String, orientation: p | portrait | l | landscape): jsPDF = js.native
   def addPage(format: js.Array[Double]): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_l(format: String, orientation: l): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_l(format: js.Array[Double], orientation: l): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_landscape(format: String, orientation: landscape): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_landscape(format: js.Array[Double], orientation: landscape): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_p(format: String, orientation: p): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_p(format: js.Array[Double], orientation: p): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_portrait(format: String, orientation: portrait): jsPDF = js.native
-  @JSName("addPage")
-  def addPage_portrait(format: js.Array[Double], orientation: portrait): jsPDF = js.native
+  def addPage(format: js.Array[Double], orientation: p | portrait | l | landscape): jsPDF = js.native
+  def addPage(format: Unit, orientation: p | portrait | l | landscape): jsPDF = js.native
+  
+  def addShadingPattern(key: String, pattern: ShadingPattern): jsPDF = js.native
+  
   // jsPDF plugin: SVG
-  def addSVG(svgtext: String, x: Double, y: Double): jsPDF = js.native
-  def addSVG(svgtext: String, x: Double, y: Double, w: Double): jsPDF = js.native
-  def addSVG(svgtext: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
-  def arrayBufferToBase64(arrayBuffer: scala.scalajs.js.typedarray.ArrayBuffer): String = js.native
-  def arrayBufferToBinaryString(buffer: js.Any): String = js.native
-  def arrayMax(array: js.Array[_]): Double = js.native
-  def arrayMax(array: js.Array[_], comparisonFn: js.Function): Double = js.native
+  def addSvgAsImage(svg: String, x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
+  def addSvgAsImage(svg: String, x: Double, y: Double, w: Double, h: Double, alias: String): jsPDF = js.native
+  def addSvgAsImage(svg: String, x: Double, y: Double, w: Double, h: Double, alias: String, compression: Boolean): jsPDF = js.native
+  def addSvgAsImage(
+    svg: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Boolean,
+    rotation: Double
+  ): jsPDF = js.native
+  def addSvgAsImage(
+    svg: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: String,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  def addSvgAsImage(svg: String, x: Double, y: Double, w: Double, h: Double, alias: Unit, compression: Boolean): jsPDF = js.native
+  def addSvgAsImage(
+    svg: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Boolean,
+    rotation: Double
+  ): jsPDF = js.native
+  def addSvgAsImage(
+    svg: String,
+    x: Double,
+    y: Double,
+    w: Double,
+    h: Double,
+    alias: Unit,
+    compression: Unit,
+    rotation: Double
+  ): jsPDF = js.native
+  
+  def advancedAPI(): Unit = js.native
+  def advancedAPI(body: js.Function1[/* pdf */ this.type, Unit]): Unit = js.native
+  
   // jsPDF plugin: AutoPrint
   def autoPrint(): jsPDF = js.native
-  def binaryStringToUint8Array(binary_string: String): scala.scalajs.js.typedarray.Uint8Array = js.native
-  def calculateLineHeight(headerNames: js.Array[String], columnWidths: js.Array[Double], model: js.Array[_]): Double = js.native
+  def autoPrint(options: AutoPrintInput): jsPDF = js.native
+  
+  def beginFormObject(x: Double, y: Double, width: Double, height: Double, matrix: Any): jsPDF = js.native
+  
+  def beginTilingPattern(pattern: TilingPattern): Unit = js.native
+  
+  def calculateLineHeight(headerNames: js.Array[String], columnWidths: js.Array[Double], model: js.Array[Any]): Double = js.native
+  
+  // jsPDF plugin: Canvas
+  var canvas: GetContext = js.native
+  
   def cell(x: Double, y: Double, w: Double, h: Double, txt: String, ln: Double, align: String): jsPDF = js.native
-  def cellAddPage(): Unit = js.native
-  def cellInitialize(): Unit = js.native
+  
+  def cellAddPage(): jsPDF = js.native
+  
+  def circle(x: Double, y: Double, r: Double): jsPDF = js.native
   def circle(x: Double, y: Double, r: Double, style: String): jsPDF = js.native
-  def clip(): Unit = js.native
-  def createAnnotation(options: js.Any): Unit = js.native
-  def createImageInfo(data: js.Any, wd: js.Any, ht: js.Any, cs: js.Any, bpc: js.Any, imageIndex: Double, alias: js.Any): js.Any = js.native
-  def createImageInfo(
-    data: js.Any,
-    wd: js.Any,
-    ht: js.Any,
-    cs: js.Any,
-    bpc: js.Any,
-    imageIndex: Double,
-    alias: js.Any,
-    f: js.Any
-  ): js.Any = js.native
-  def createImageInfo(
-    data: js.Any,
-    wd: js.Any,
-    ht: js.Any,
-    cs: js.Any,
-    bpc: js.Any,
-    imageIndex: Double,
-    alias: js.Any,
-    f: js.Any,
-    dp: js.Any
-  ): js.Any = js.native
-  def createImageInfo(
-    data: js.Any,
-    wd: js.Any,
-    ht: js.Any,
-    cs: js.Any,
-    bpc: js.Any,
-    imageIndex: Double,
-    alias: js.Any,
-    f: js.Any,
-    dp: js.Any,
-    trns: js.Any
-  ): js.Any = js.native
-  def createImageInfo(
-    data: js.Any,
-    wd: js.Any,
-    ht: js.Any,
-    cs: js.Any,
-    bpc: js.Any,
-    imageIndex: Double,
-    alias: js.Any,
-    f: js.Any,
-    dp: js.Any,
-    trns: js.Any,
-    pal: js.Any
-  ): js.Any = js.native
-  def createImageInfo(
-    data: js.Any,
-    wd: js.Any,
-    ht: js.Any,
-    cs: js.Any,
-    bpc: js.Any,
-    imageIndex: Double,
-    alias: js.Any,
-    f: js.Any,
-    dp: js.Any,
-    trns: js.Any,
-    pal: js.Any,
-    smask: js.Any
-  ): js.Any = js.native
-  def deletePage(n: Double): jsPDF = js.native
+  
+  def clip(): jsPDF = js.native
+  
+  def clipEvenOdd(): jsPDF = js.native
+  
+  @JSName("clip")
+  def clip_evenodd(rule: evenodd): jsPDF = js.native
+  
+  def close(): jsPDF = js.native
+  
+  def compatAPI(): Unit = js.native
+  def compatAPI(body: js.Function1[/* pdf */ this.type, Unit]): Unit = js.native
+  
+  var context2d: Context2d = js.native
+  
+  // jsPDF plugin: Annotations
+  def createAnnotation(options: Annotation): Unit = js.native
+  
+  def curveTo(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): jsPDF = js.native
+  
+  def deletePage(targetPage: Double): jsPDF = js.native
+  
+  def discardPath(): jsPDF = js.native
+  
+  def doFormObject(key: Any, matrix: Any): jsPDF = js.native
+  
   def ellipse(x: Double, y: Double, rx: Double, ry: Double): jsPDF = js.native
   def ellipse(x: Double, y: Double, rx: Double, ry: Double, style: String): jsPDF = js.native
+  
+  def endFormObject(key: Any): jsPDF = js.native
+  
+  def endTilingPattern(key: String, pattern: TilingPattern): Unit = js.native
+  
   // jsPDF plugin: vfs
   def existsFileInVFS(filename: String): Boolean = js.native
-  def extractInfoFromBase64DataURI(dataURI: String): js.Array[_] = js.native
-  // jsPDF plugin: fromHTML
-  def fromHTML(HTML: String, x: Double, y: Double): jsPDF = js.native
-  def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any): jsPDF = js.native
-  def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any, callback: js.Function): jsPDF = js.native
-  def fromHTML(HTML: String, x: Double, y: Double, settings: js.Any, callback: js.Function, margins: js.Any): jsPDF = js.native
-  def fromHTML(HTML: HTMLElement, x: Double, y: Double): jsPDF = js.native
-  def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any): jsPDF = js.native
-  def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any, callback: js.Function): jsPDF = js.native
-  def fromHTML(HTML: HTMLElement, x: Double, y: Double, settings: js.Any, callback: js.Function, margins: js.Any): jsPDF = js.native
+  
+  def f2(number: Double): String = js.native
+  
+  def f3(number: Double): String = js.native
+  
+  def fill(): jsPDF = js.native
+  def fill(pattern: PatternData): jsPDF = js.native
+  
+  def fillEvenOdd(): jsPDF = js.native
+  def fillEvenOdd(pattern: PatternData): jsPDF = js.native
+  
+  def fillStroke(): jsPDF = js.native
+  def fillStroke(pattern: PatternData): jsPDF = js.native
+  
+  def fillStrokeEvenOdd(): jsPDF = js.native
+  def fillStrokeEvenOdd(pattern: PatternData): jsPDF = js.native
+  
+  def getCharSpace(): Double = js.native
+  
   // jsPDF plugin: split_text_to_size
-  def getCharWidthsArray(text: String): js.Array[_] = js.native
-  def getCharWidthsArray(text: String, options: js.Any): js.Array[_] = js.native
+  def getCharWidthsArray(text: String): js.Array[Any] = js.native
+  def getCharWidthsArray(text: String, options: Any): js.Array[Any] = js.native
+  
+  def getCreationDate(`type`: String): js.Date = js.native
+  
+  def getCurrentPageInfo(): PageInfo = js.native
+  
+  def getDrawColor(): String = js.native
+  
   def getFileFromVFS(filename: String): String = js.native
-  def getFontList(): js.Any = js.native
+  
+  def getFileId(): String = js.native
+  
+  def getFillColor(): String = js.native
+  
+  def getFont(): Font = js.native
+  
+  def getFontList(): StringDictionary[js.Array[String]] = js.native
+  
+  def getFontSize(): Double = js.native
+  
+  def getFormObject(key: Any): Any = js.native
+  
+  def getHorizontalCoordinateString(value: Double): Double = js.native
+  
+  def getImageProperties(imageData: String): ImageProperties = js.native
+  def getImageProperties(imageData: js.typedarray.Uint8Array): ImageProperties = js.native
+  def getImageProperties(imageData: HTMLCanvasElement): ImageProperties = js.native
+  def getImageProperties(imageData: HTMLImageElement): ImageProperties = js.native
+  
   def getLineHeight(): Double = js.native
+  
+  def getLineHeightFactor(): Double = js.native
+  
+  def getLineWidth(): Double = js.native
+  
+  def getNumberOfPages(): Double = js.native
+  
+  def getPageInfo(pageNumberOneBased: Double): PageInfo = js.native
+  
+  def getR2L(): Boolean = js.native
+  
   def getStringUnitWidth(text: String): Double = js.native
-  def getStringUnitWidth(text: String, options: js.Any): Double = js.native
-  def getTextDimensions(txt: String): js.Any = js.native
+  def getStringUnitWidth(text: String, options: Any): Double = js.native
+  
+  def getStyle(style: String): String = js.native
+  
+  def getTextColor(): String = js.native
+  
+  def getTextDimensions(text: String): W = js.native
+  def getTextDimensions(text: String, options: typingsJapgolly.jspdf.anon.Font): W = js.native
+  
   def getTextWidth(text: String): Double = js.native
+  
+  def getVerticalCoordinateString(value: Double): Double = js.native
+  
+  // jsPDF plugin: html
+  def html(src: String): HTMLWorker = js.native
+  def html(src: String, options: HTMLOptions): HTMLWorker = js.native
+  def html(src: HTMLElement): HTMLWorker = js.native
+  def html(src: HTMLElement, options: HTMLOptions): HTMLWorker = js.native
+  
   def insertPage(beforePage: Double): jsPDF = js.native
-  def isArrayBuffer(`object`: js.Any): Boolean = js.native
-  def isArrayBufferView(`object`: js.Any): Boolean = js.native
-  def isString(`object`: js.Any): Boolean = js.native
-  def line(x1: Double, y1: Double, x2: Double, y2: Double): js.Any = js.native
-  def lines(lines: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
-  def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any): jsPDF = js.native
-  def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any, style: String): jsPDF = js.native
-  def lines(lines: js.Any, x: js.Any, y: js.Any, scale: js.Any, style: String, closed: Boolean): jsPDF = js.native
-  def link(x: Double, y: Double, w: Double, h: Double, options: js.Any): Unit = js.native
-  def lstext(text: String, x: Double, y: Double, spacing: Double): jsPDF = js.native
+  
+  var internal: Events = js.native
+  
+  def isAdvancedAPI(): Boolean = js.native
+  
+  def line(x1: Double, y1: Double, x2: Double, y2: Double): jsPDF = js.native
+  def line(x1: Double, y1: Double, x2: Double, y2: Double, style: String): jsPDF = js.native
+  
+  def lineTo(x: Double, y: Double): jsPDF = js.native
+  
+  def lines(lines: js.Array[Any], x: Any, y: Any): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Any): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Any, style: String): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Any, style: String, closed: Boolean): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Any, style: Null, closed: Boolean): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Any, style: Unit, closed: Boolean): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Unit, style: String): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Unit, style: String, closed: Boolean): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Unit, style: Null, closed: Boolean): jsPDF = js.native
+  def lines(lines: js.Array[Any], x: Any, y: Any, scale: Unit, style: Unit, closed: Boolean): jsPDF = js.native
+  
+  def link(x: Double, y: Double, w: Double, h: Double, options: Any): Unit = js.native
+  
+  // jsPDF plugin: fileloading
+  def loadFile(url: String): String = js.native
+  @JSName("loadFile")
+  def loadFile_false(url: String, sync: `false`, callback: js.Function1[/* data */ String, String]): Unit = js.native
+  @JSName("loadFile")
+  def loadFile_true(url: String, sync: `true`): String = js.native
+  
+  def matrixMult(m1: Matrix, m2: Matrix): Matrix = js.native
+  
   def movePage(targetPage: Double, beforePage: Double): jsPDF = js.native
-  def output(): js.Any = js.native
-  def output(`type`: String): js.Any = js.native
-  def output(`type`: String, options: js.Any): js.Any = js.native
+  
+  def moveTo(x: Double, y: Double): jsPDF = js.native
+  
+  //jsPDF plugin: Outline
+  var outline: Outline = js.native
+  
+  def output(): String = js.native
+  def output(`type`: datauristring | dataurlstring): String = js.native
+  def output(`type`: datauristring | dataurlstring, options: Filename): String = js.native
+  @JSName("output")
+  def output_Boolean(`type`: dataurl | datauri): Boolean = js.native
+  @JSName("output")
+  def output_Boolean(`type`: dataurl | datauri, options: Filename): Boolean = js.native
+  @JSName("output")
+  def output_URL(`type`: bloburi | bloburl): URL = js.native
+  @JSName("output")
+  def output_Window(`type`: pdfobjectnewwindow | pdfjsnewwindow | dataurlnewwindow): Window = js.native
+  @JSName("output")
+  def output_Window(`type`: pdfobjectnewwindow | pdfjsnewwindow | dataurlnewwindow, options: Filename): Window = js.native
+  @JSName("output")
+  def output_arraybuffer(`type`: arraybuffer): js.typedarray.ArrayBuffer = js.native
+  @JSName("output")
+  def output_blob(`type`: blob): Blob = js.native
+  
+  def path(): jsPDF = js.native
+  def path(lines: js.Array[Any]): jsPDF = js.native
+  def path(lines: js.Array[Any], style: String): jsPDF = js.native
+  def path(lines: Unit, style: String): jsPDF = js.native
+  
+  def pdfEscape(text: String, flags: Any): String = js.native
+  
   def printHeaderRow(lineNumber: Double): Unit = js.native
   def printHeaderRow(lineNumber: Double, new_page: Boolean): Unit = js.native
-  def processJPEG(data: js.Any, index: Double, alias: js.Any): js.Any = js.native
-  def processJPEG(data: js.Any, index: Double, alias: js.Any, compression: js.Any): js.Any = js.native
-  def processJPEG(data: js.Any, index: Double, alias: js.Any, compression: js.Any, dataAsBinaryString: String): js.Any = js.native
-  def processJPG(): js.Any = js.native
-  // jsPDF plugin: PNG
-  def processPNG(
-    imageData: js.Any,
-    imageIndex: Double,
-    alias: String,
-    compression: js.Any,
-    dataAsBinaryString: String
-  ): js.Any = js.native
+  
+  // jsPDF plugin: arabic
+  def processArabic(text: String): String = js.native
+  
   // jsPDF plugin: total_pages
   def putTotalPages(pageExpression: String): jsPDF = js.native
+  
   def rect(x: Double, y: Double, w: Double, h: Double): jsPDF = js.native
   def rect(x: Double, y: Double, w: Double, h: Double, style: String): jsPDF = js.native
+  
+  def restoreGraphicsState(): jsPDF = js.native
+  
+  def roundedRect(x: Double, y: Double, w: Double, h: Double, rx: Double, ry: Double): jsPDF = js.native
   def roundedRect(x: Double, y: Double, w: Double, h: Double, rx: Double, ry: Double, style: String): jsPDF = js.native
-  def sHashCode(str: String): js.Any = js.native
-  def save(filename: String): Unit = js.native
-  def save(filename: String, options: AnonReturnPromise): js.Promise[_] = js.native
+  
+  def save(): jsPDF = js.native
+  def save(filename: String): jsPDF = js.native
+  def save(filename: String, options: ReturnPromise): js.Promise[Unit] = js.native
+  
+  def saveGraphicsState(): jsPDF = js.native
+  
+  def setCharSpace(charSpace: Double): jsPDF = js.native
+  
+  def setCreationDate(): jsPDF = js.native
+  def setCreationDate(date: String): jsPDF = js.native
+  def setCreationDate(date: js.Date): jsPDF = js.native
+  
+  def setCurrentTransformationMatrix(matrix: Matrix): jsPDF = js.native
+  
   def setDisplayMode(): jsPDF = js.native
+  def setDisplayMode(zoom: fullheight | fullwidth | fullpage | original): jsPDF = js.native
+  def setDisplayMode(
+    zoom: fullheight | fullwidth | fullpage | original,
+    layout: continuous | single | twoleft | tworight | two
+  ): jsPDF = js.native
+  def setDisplayMode(
+    zoom: fullheight | fullwidth | fullpage | original,
+    layout: continuous | single | twoleft | tworight | two,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(
+    zoom: fullheight | fullwidth | fullpage | original,
+    layout: Null,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(
+    zoom: fullheight | fullwidth | fullpage | original,
+    layout: Unit,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
   def setDisplayMode(zoom: String): jsPDF = js.native
-  def setDisplayMode(zoom: String, layout: String): jsPDF = js.native
-  def setDisplayMode(zoom: String, layout: String, pmode: String): jsPDF = js.native
+  def setDisplayMode(zoom: String, layout: continuous | single | twoleft | tworight | two): jsPDF = js.native
+  def setDisplayMode(
+    zoom: String,
+    layout: continuous | single | twoleft | tworight | two,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(zoom: String, layout: Null, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: String, layout: Unit, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Double): jsPDF = js.native
+  def setDisplayMode(zoom: Double, layout: continuous | single | twoleft | tworight | two): jsPDF = js.native
+  def setDisplayMode(
+    zoom: Double,
+    layout: continuous | single | twoleft | tworight | two,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(zoom: Double, layout: Null, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Double, layout: Unit, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Null, layout: continuous | single | twoleft | tworight | two): jsPDF = js.native
+  def setDisplayMode(
+    zoom: Null,
+    layout: continuous | single | twoleft | tworight | two,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(zoom: Null, layout: Null, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Null, layout: Unit, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Unit, layout: continuous | single | twoleft | tworight | two): jsPDF = js.native
+  def setDisplayMode(
+    zoom: Unit,
+    layout: continuous | single | twoleft | tworight | two,
+    pmode: UseOutlines | UseThumbs | FullScreen
+  ): jsPDF = js.native
+  def setDisplayMode(zoom: Unit, layout: Null, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  def setDisplayMode(zoom: Unit, layout: Unit, pmode: UseOutlines | UseThumbs | FullScreen): jsPDF = js.native
+  
+  def setDocumentProperties(properties: DocumentProperties): jsPDF = js.native
+  
   def setDrawColor(ch1: String): jsPDF = js.native
   def setDrawColor(ch1: Double): jsPDF = js.native
   def setDrawColor(ch1: Double, ch2: Double, ch3: Double): jsPDF = js.native
   def setDrawColor(ch1: Double, ch2: Double, ch3: Double, ch4: Double): jsPDF = js.native
+  
+  def setFileId(value: String): jsPDF = js.native
+  
   def setFillColor(ch1: String): jsPDF = js.native
-  def setFillColor(ch1: Double): jsPDF = js.native
   def setFillColor(ch1: Double, ch2: Double, ch3: Double): jsPDF = js.native
   def setFillColor(ch1: Double, ch2: Double, ch3: Double, ch4: Double): jsPDF = js.native
-  def setFont(): jsPDF = js.native
+  
   def setFont(fontName: String): jsPDF = js.native
   def setFont(fontName: String, fontStyle: String): jsPDF = js.native
+  def setFont(fontName: String, fontStyle: String, fontWeight: String): jsPDF = js.native
+  def setFont(fontName: String, fontStyle: String, fontWeight: Double): jsPDF = js.native
+  def setFont(fontName: String, fontStyle: Unit, fontWeight: String): jsPDF = js.native
+  def setFont(fontName: String, fontStyle: Unit, fontWeight: Double): jsPDF = js.native
+  
   def setFontSize(size: Double): jsPDF = js.native
-  def setFontStyle(style: String): jsPDF = js.native
-  def setFontType(style: String): jsPDF = js.native
+  
+  def setGState(gState: Any): jsPDF = js.native
+  
   // jsPDF plugin: Cell
-  def setHeaderFunction(func: js.Function): Unit = js.native
+  def setHeaderFunction(func: js.Function2[/* jsPDFInstance */ this.type, /* pages */ Double, js.Array[Double]]): jsPDF = js.native
+  
+  // jsPDF plugin: setlanguage
+  def setLanguage(
+    langCode: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 196, starting with typingsJapgolly.jspdf.jspdfStrings.af, typingsJapgolly.jspdf.jspdfStrings.sq, typingsJapgolly.jspdf.jspdfStrings.ar */ Any
+  ): jsPDF = js.native
+  
   def setLineCap(style: String): jsPDF = js.native
   def setLineCap(style: Double): jsPDF = js.native
+  
+  def setLineDashPattern(dashArray: js.Array[Double], dashPhase: Double): jsPDF = js.native
+  
+  def setLineHeightFactor(value: Double): jsPDF = js.native
+  
   def setLineJoin(style: String): jsPDF = js.native
   def setLineJoin(style: Double): jsPDF = js.native
+  
+  def setLineMiterLimit(length: Double): jsPDF = js.native
+  
   def setLineWidth(width: Double): jsPDF = js.native
-  def setPage(n: Double): jsPDF = js.native
-  def setProperties(properties: js.Any): jsPDF = js.native
-  def setTableHeaderRow(config: js.Array[_]): Unit = js.native
+  
+  def setPage(pageNumber: Double): jsPDF = js.native
+  
+  def setProperties(properties: DocumentProperties): jsPDF = js.native
+  
+  def setR2L(value: Boolean): jsPDF = js.native
+  
+  def setTableHeaderRow(config: js.Array[CellConfig]): Unit = js.native
+  
   def setTextColor(ch1: String): jsPDF = js.native
   def setTextColor(ch1: Double): jsPDF = js.native
   def setTextColor(ch1: Double, ch2: Double, ch3: Double): jsPDF = js.native
   def setTextColor(ch1: Double, ch2: Double, ch3: Double, ch4: Double): jsPDF = js.native
-  def splitTextToSize(text: String, maxlen: Double): js.Any = js.native
-  def splitTextToSize(text: String, maxlen: Double, options: js.Any): js.Any = js.native
-  def supportsArrayBuffer(): Boolean = js.native
-  def table(x: Double, y: Double, data: js.Any, headers: js.Array[AnonAlign], config: js.Any): jsPDF = js.native
-  def text(text: js.Any, x: js.Any, y: js.Any): jsPDF = js.native
-  def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any): jsPDF = js.native
-  def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any): jsPDF = js.native
-  def text(text: js.Any, x: js.Any, y: js.Any, flags: js.Any, angle: js.Any, align: js.Any): jsPDF = js.native
-  def textWithLink(text: String, x: Double, y: Double, options: js.Any): Double = js.native
+  
+  def splitTextToSize(text: String, maxlen: Double): Any = js.native
+  def splitTextToSize(text: String, maxlen: Double, options: Any): Any = js.native
+  
+  def stroke(): jsPDF = js.native
+  
+  def table(
+    x: Double,
+    y: Double,
+    data: js.Array[StringDictionary[String]],
+    headers: js.Array[CellConfig | String],
+    config: TableConfig
+  ): jsPDF = js.native
+  
+  def text(text: String, x: Double, y: Double): jsPDF = js.native
+  def text(text: String, x: Double, y: Double, options: Unit, transform: Any): jsPDF = js.native
+  def text(text: String, x: Double, y: Double, options: Unit, transform: Double): jsPDF = js.native
+  def text(text: String, x: Double, y: Double, options: TextOptionsLight): jsPDF = js.native
+  def text(text: String, x: Double, y: Double, options: TextOptionsLight, transform: Any): jsPDF = js.native
+  def text(text: String, x: Double, y: Double, options: TextOptionsLight, transform: Double): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double, options: Unit, transform: Any): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double, options: Unit, transform: Double): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double, options: TextOptionsLight): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double, options: TextOptionsLight, transform: Any): jsPDF = js.native
+  def text(text: js.Array[String], x: Double, y: Double, options: TextOptionsLight, transform: Double): jsPDF = js.native
+  
+  def textWithLink(text: String, x: Double, y: Double, options: Any): Double = js.native
+  
+  def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): jsPDF = js.native
   def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, style: String): jsPDF = js.native
+  
+  var unitMatrix: Matrix = js.native
+  
+  var version: String = js.native
+  
+  // jsPDF plugin: viewerpreferences
+  def viewerPreferences(options: ViewerPreferencesInput): jsPDF = js.native
+  def viewerPreferences(options: ViewerPreferencesInput, doReset: Boolean): jsPDF = js.native
+  @JSName("viewerPreferences")
+  def viewerPreferences_reset(arg: reset): jsPDF = js.native
 }
-
+/* static members */
+object jsPDF {
+  
+  @JSImport("jspdf", "jsPDF")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("jspdf", "jsPDF.API")
+  @js.native
+  def API: jsPDFAPI = js.native
+  inline def API_=(x: jsPDFAPI): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("API")(x.asInstanceOf[js.Any])
+  
+  @JSImport("jspdf", "jsPDF.version")
+  @js.native
+  def version: String = js.native
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+}

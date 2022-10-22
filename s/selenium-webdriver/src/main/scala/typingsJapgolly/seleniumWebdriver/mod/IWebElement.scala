@@ -1,11 +1,12 @@
 package typingsJapgolly.seleniumWebdriver.mod
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IWebElement extends js.Object {
+trait IWebElement extends StObject {
+  
   /**
     * Schedules a command to clear the {@code value} of this element. This
     * command has no effect if the underlying DOM element is neither a text INPUT
@@ -14,6 +15,7 @@ trait IWebElement extends js.Object {
     *     the element has been cleared.
     */
   def clear(): js.Promise[Unit]
+  
   // region Methods
   /**
     * Schedules a command to click on this element.
@@ -21,6 +23,7 @@ trait IWebElement extends js.Object {
     *     the click command has completed.
     */
   def click(): js.Promise[Unit]
+  
   /**
     * Schedules a command to query for the value of the given attribute of the
     * element. Will return the current value even if it has been modified after
@@ -49,6 +52,7 @@ trait IWebElement extends js.Object {
     *     attribute's value.
     */
   def getAttribute(attributeName: String): js.Promise[String]
+  
   /**
     * Schedules a command to query for the computed style of the element
     * represented by this instance. If the element inherits the named style from
@@ -64,6 +68,7 @@ trait IWebElement extends js.Object {
     *     requested CSS value.
     */
   def getCssValue(cssStyleProperty: String): js.Promise[String]
+  
   /**
     * @return {!Promise.<WebElement.Id>} A promise
     *     that resolves to this element's JSON representation as defined by the
@@ -71,17 +76,20 @@ trait IWebElement extends js.Object {
     * @see http://code.google.com/p/selenium/wiki/JsonWireProtocol
     */
   def getId(): js.Promise[IWebElementId]
+  
   /**
     * Schedules a command to compute the location of this element in page space.
     * @return {!Promise} A promise that will be resolved to the
     *     element's location as a {@code {x:number, y:number}} object.
     */
   def getLocation(): js.Promise[ILocation]
+  
   /**
     * Returns an object describing an element's location, in pixels relative to
     * the document element, and the element's size in pixels.
     */
   def getRect(): js.Promise[IRectangle]
+  
   /**
     * Schedules a command to compute the size of this element's bounding box, in
     * pixels.
@@ -89,12 +97,14 @@ trait IWebElement extends js.Object {
     *     element's size as a {@code {width:number, height:number}} object.
     */
   def getSize(): js.Promise[ISize]
+  
   /**
     * Schedules a command to query for the tag/node name of this element.
     * @return {!Promise} A promise that will be resolved with the
     *     element's tag name.
     */
   def getTagName(): js.Promise[String]
+  
   /**
     * Get the visible (i.e. not hidden by CSS) innerText of this element,
     * including sub-elements, without any leading or trailing whitespace.
@@ -102,12 +112,14 @@ trait IWebElement extends js.Object {
     *     element's visible text.
     */
   def getText(): js.Promise[String]
+  
   /**
     * Schedules a command to test whether this element is currently displayed.
     * @return {!Promise} A promise that will be resolved with
     *     whether this element is currently visible on the page.
     */
   def isDisplayed(): js.Promise[Boolean]
+  
   /**
     * Schedules a command to query whether the DOM element represented by this
     * instance is enabled, as dicted by the {@code disabled} attribute.
@@ -115,12 +127,14 @@ trait IWebElement extends js.Object {
     *     whether this element is currently enabled.
     */
   def isEnabled(): js.Promise[Boolean]
+  
   /**
     * Schedules a command to query whether this element is selected.
     * @return {!Promise} A promise that will be resolved with
     *     whether this element is currently selected.
     */
   def isSelected(): js.Promise[Boolean]
+  
   /**
     * Schedules a command to type a sequence on the DOM element represented by
     * this instance.
@@ -178,6 +192,7 @@ trait IWebElement extends js.Object {
     *     keys have been typed.
     */
   def sendKeys(var_args: (Double | String | (js.Promise[String | Double]))*): js.Promise[Unit]
+  
   /**
     * Schedules a command to submit the form containing this element (or this
     * element if it is a FORM element). This command is a no-op if the element is
@@ -187,14 +202,13 @@ trait IWebElement extends js.Object {
     */
   def submit(): js.Promise[Unit]
 }
-
 object IWebElement {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     clear: CallbackTo[js.Promise[Unit]],
     click: CallbackTo[js.Promise[Unit]],
-    getAttribute: String => CallbackTo[js.Promise[String]],
-    getCssValue: String => CallbackTo[js.Promise[String]],
+    getAttribute: String => js.Promise[String],
+    getCssValue: String => js.Promise[String],
     getId: CallbackTo[js.Promise[IWebElementId]],
     getLocation: CallbackTo[js.Promise[ILocation]],
     getRect: CallbackTo[js.Promise[IRectangle]],
@@ -204,26 +218,43 @@ object IWebElement {
     isDisplayed: CallbackTo[js.Promise[Boolean]],
     isEnabled: CallbackTo[js.Promise[Boolean]],
     isSelected: CallbackTo[js.Promise[Boolean]],
-    sendKeys: /* repeated */ Double | String | (js.Promise[String | Double]) => CallbackTo[js.Promise[Unit]],
+    sendKeys: /* repeated */ Double | String | (js.Promise[String | Double]) => js.Promise[Unit],
     submit: CallbackTo[js.Promise[Unit]]
   ): IWebElement = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("clear")(clear.toJsFn)
-    __obj.updateDynamic("click")(click.toJsFn)
-    __obj.updateDynamic("getAttribute")(js.Any.fromFunction1((t0: java.lang.String) => getAttribute(t0).runNow()))
-    __obj.updateDynamic("getCssValue")(js.Any.fromFunction1((t0: java.lang.String) => getCssValue(t0).runNow()))
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getLocation")(getLocation.toJsFn)
-    __obj.updateDynamic("getRect")(getRect.toJsFn)
-    __obj.updateDynamic("getSize")(getSize.toJsFn)
-    __obj.updateDynamic("getTagName")(getTagName.toJsFn)
-    __obj.updateDynamic("getText")(getText.toJsFn)
-    __obj.updateDynamic("isDisplayed")(isDisplayed.toJsFn)
-    __obj.updateDynamic("isEnabled")(isEnabled.toJsFn)
-    __obj.updateDynamic("isSelected")(isSelected.toJsFn)
-    __obj.updateDynamic("sendKeys")(js.Any.fromFunction1((t0: /* repeated */ scala.Double | java.lang.String | (js.Promise[java.lang.String | scala.Double])) => sendKeys(t0).runNow()))
-    __obj.updateDynamic("submit")(submit.toJsFn)
+    val __obj = js.Dynamic.literal(clear = clear.toJsFn, click = click.toJsFn, getAttribute = js.Any.fromFunction1(getAttribute), getCssValue = js.Any.fromFunction1(getCssValue), getId = getId.toJsFn, getLocation = getLocation.toJsFn, getRect = getRect.toJsFn, getSize = getSize.toJsFn, getTagName = getTagName.toJsFn, getText = getText.toJsFn, isDisplayed = isDisplayed.toJsFn, isEnabled = isEnabled.toJsFn, isSelected = isSelected.toJsFn, sendKeys = js.Any.fromFunction1(sendKeys), submit = submit.toJsFn)
     __obj.asInstanceOf[IWebElement]
   }
+  
+  extension [Self <: IWebElement](x: Self) {
+    
+    inline def setClear(value: CallbackTo[js.Promise[Unit]]): Self = StObject.set(x, "clear", value.toJsFn)
+    
+    inline def setClick(value: CallbackTo[js.Promise[Unit]]): Self = StObject.set(x, "click", value.toJsFn)
+    
+    inline def setGetAttribute(value: String => js.Promise[String]): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    
+    inline def setGetCssValue(value: String => js.Promise[String]): Self = StObject.set(x, "getCssValue", js.Any.fromFunction1(value))
+    
+    inline def setGetId(value: CallbackTo[js.Promise[IWebElementId]]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetLocation(value: CallbackTo[js.Promise[ILocation]]): Self = StObject.set(x, "getLocation", value.toJsFn)
+    
+    inline def setGetRect(value: CallbackTo[js.Promise[IRectangle]]): Self = StObject.set(x, "getRect", value.toJsFn)
+    
+    inline def setGetSize(value: CallbackTo[js.Promise[ISize]]): Self = StObject.set(x, "getSize", value.toJsFn)
+    
+    inline def setGetTagName(value: CallbackTo[js.Promise[String]]): Self = StObject.set(x, "getTagName", value.toJsFn)
+    
+    inline def setGetText(value: CallbackTo[js.Promise[String]]): Self = StObject.set(x, "getText", value.toJsFn)
+    
+    inline def setIsDisplayed(value: CallbackTo[js.Promise[Boolean]]): Self = StObject.set(x, "isDisplayed", value.toJsFn)
+    
+    inline def setIsEnabled(value: CallbackTo[js.Promise[Boolean]]): Self = StObject.set(x, "isEnabled", value.toJsFn)
+    
+    inline def setIsSelected(value: CallbackTo[js.Promise[Boolean]]): Self = StObject.set(x, "isSelected", value.toJsFn)
+    
+    inline def setSendKeys(value: /* repeated */ Double | String | (js.Promise[String | Double]) => js.Promise[Unit]): Self = StObject.set(x, "sendKeys", js.Any.fromFunction1(value))
+    
+    inline def setSubmit(value: CallbackTo[js.Promise[Unit]]): Self = StObject.set(x, "submit", value.toJsFn)
+  }
 }
-

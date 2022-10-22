@@ -1,23 +1,19 @@
 package typingsJapgolly.activexWord.Word
 
-import typingsJapgolly.activexWord.activexWordNumbers.`100`
-import typingsJapgolly.activexWord.activexWordNumbers.`99`
+import typingsJapgolly.activexWord.activexWordInts.`100`
+import typingsJapgolly.activexWord.activexWordInts.`99`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.activexWord.activexWordNumbers.`99`
-  - typingsJapgolly.activexWord.activexWordNumbers.`100`
+  - typingsJapgolly.activexWord.activexWordInts.`99`
+  - typingsJapgolly.activexWord.activexWordInts.`100`
 */
-trait WdCalendarTypeBi extends js.Object
-
+trait WdCalendarTypeBi extends StObject
 object WdCalendarTypeBi {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def wdCalendarTypeBidi: `99` = this.cast(99)
-  @scala.inline
-  def wdCalendarTypeGregorian: `100` = this.cast(100)
+  
+  inline def wdCalendarTypeBidi: `99` = 99.asInstanceOf[`99`]
+  
+  inline def wdCalendarTypeGregorian: `100` = 100.asInstanceOf[`100`]
 }
-

@@ -1,24 +1,35 @@
 package typingsJapgolly.apolloProtobufjs.mod
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait INamespace extends AnyNestedObject {
+trait INamespace
+  extends StObject
+     with AnyNestedObject {
+  
   /** Nested object descriptors */
   var nested: js.UndefOr[StringDictionary[AnyNestedObject]] = js.undefined
+  
   /** Namespace options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
+  var options: js.UndefOr[StringDictionary[Any]] = js.undefined
 }
-
 object INamespace {
-  @scala.inline
-  def apply(nested: StringDictionary[AnyNestedObject] = null, options: StringDictionary[js.Any] = null): INamespace = {
+  
+  inline def apply(): INamespace = {
     val __obj = js.Dynamic.literal()
-    if (nested != null) __obj.updateDynamic("nested")(nested.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[INamespace]
   }
+  
+  extension [Self <: INamespace](x: Self) {
+    
+    inline def setNested(value: StringDictionary[AnyNestedObject]): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+    
+    inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+    
+    inline def setOptions(value: StringDictionary[Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

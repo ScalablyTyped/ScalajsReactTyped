@@ -1,13 +1,16 @@
 package typingsJapgolly.typescript.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UnparsedSection extends Node {
-  var data: js.UndefOr[java.lang.String] = js.native
+trait UnparsedSection
+  extends StObject
+     with Node {
+  
+  val data: js.UndefOr[java.lang.String] = js.native
+  
   @JSName("parent")
-  var parent_UnparsedSection: UnparsedSource = js.native
+  val parent_UnparsedSection: UnparsedSource = js.native
 }
-

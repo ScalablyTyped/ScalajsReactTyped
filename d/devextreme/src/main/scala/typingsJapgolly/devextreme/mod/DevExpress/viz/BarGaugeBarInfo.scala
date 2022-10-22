@@ -1,26 +1,45 @@
 package typingsJapgolly.devextreme.mod.DevExpress.viz
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BarGaugeBarInfo extends js.Object {
-  /** The bar's hexadecimal color code. */
+trait BarGaugeBarInfo extends StObject {
+  
+  /**
+    * The bar&apos;s hexadecimal color code.
+    */
   var color: js.UndefOr[String] = js.undefined
-  /** The bar's zero-based index. Bars closest to the gauge's center have higher indexes. */
+  
+  /**
+    * The bar&apos;s zero-based index. Bars closest to the gauge&apos;s center have higher indexes.
+    */
   var index: js.UndefOr[Double] = js.undefined
-  /** The bar's value. */
+  
+  /**
+    * The bar&apos;s value.
+    */
   var value: js.UndefOr[Double] = js.undefined
 }
-
 object BarGaugeBarInfo {
-  @scala.inline
-  def apply(color: String = null, index: Int | Double = null, value: Int | Double = null): BarGaugeBarInfo = {
+  
+  inline def apply(): BarGaugeBarInfo = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
-    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarGaugeBarInfo]
   }
+  
+  extension [Self <: BarGaugeBarInfo](x: Self) {
+    
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+  }
 }
-

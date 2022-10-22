@@ -1,8 +1,8 @@
 package typingsJapgolly.hapiJoi.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.hapiJoi.hapiJoiStrings.any
@@ -18,34 +18,30 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.hapiJoi.hapiJoiStrings.string
   - typingsJapgolly.hapiJoi.hapiJoiStrings.symbol
 */
-trait Types extends js.Object
-
+trait Types extends StObject
 object Types {
-  @scala.inline
-  def alternatives: typingsJapgolly.hapiJoi.hapiJoiStrings.alternatives = this.cast("alternatives")
-  @scala.inline
-  def any: typingsJapgolly.hapiJoi.hapiJoiStrings.any = this.cast("any")
-  @scala.inline
-  def array: typingsJapgolly.hapiJoi.hapiJoiStrings.array = this.cast("array")
-  @scala.inline
-  def binary: typingsJapgolly.hapiJoi.hapiJoiStrings.binary = this.cast("binary")
-  @scala.inline
-  def boolean: typingsJapgolly.hapiJoi.hapiJoiStrings.boolean = this.cast("boolean")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def date: typingsJapgolly.hapiJoi.hapiJoiStrings.date = this.cast("date")
-  @scala.inline
-  def function: typingsJapgolly.hapiJoi.hapiJoiStrings.function = this.cast("function")
-  @scala.inline
-  def link: typingsJapgolly.hapiJoi.hapiJoiStrings.link = this.cast("link")
-  @scala.inline
-  def number: typingsJapgolly.hapiJoi.hapiJoiStrings.number = this.cast("number")
-  @scala.inline
-  def `object`: typingsJapgolly.hapiJoi.hapiJoiStrings.`object` = this.cast("object")
-  @scala.inline
-  def string: typingsJapgolly.hapiJoi.hapiJoiStrings.string = this.cast("string")
-  @scala.inline
-  def symbol: typingsJapgolly.hapiJoi.hapiJoiStrings.symbol = this.cast("symbol")
+  
+  inline def alternatives: typingsJapgolly.hapiJoi.hapiJoiStrings.alternatives = "alternatives".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.alternatives]
+  
+  inline def any: typingsJapgolly.hapiJoi.hapiJoiStrings.any = "any".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.any]
+  
+  inline def array: typingsJapgolly.hapiJoi.hapiJoiStrings.array = "array".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.array]
+  
+  inline def binary: typingsJapgolly.hapiJoi.hapiJoiStrings.binary = "binary".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.binary]
+  
+  inline def boolean: typingsJapgolly.hapiJoi.hapiJoiStrings.boolean = "boolean".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.boolean]
+  
+  inline def date: typingsJapgolly.hapiJoi.hapiJoiStrings.date = "date".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.date]
+  
+  inline def function: typingsJapgolly.hapiJoi.hapiJoiStrings.function = "function".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.function]
+  
+  inline def link: typingsJapgolly.hapiJoi.hapiJoiStrings.link = "link".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.link]
+  
+  inline def number: typingsJapgolly.hapiJoi.hapiJoiStrings.number = "number".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.number]
+  
+  inline def `object`: typingsJapgolly.hapiJoi.hapiJoiStrings.`object` = "object".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.`object`]
+  
+  inline def string: typingsJapgolly.hapiJoi.hapiJoiStrings.string = "string".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.string]
+  
+  inline def symbol: typingsJapgolly.hapiJoi.hapiJoiStrings.symbol = "symbol".asInstanceOf[typingsJapgolly.hapiJoi.hapiJoiStrings.symbol]
 }
-

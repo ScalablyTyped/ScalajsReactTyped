@@ -1,96 +1,106 @@
-package typingsJapgolly.slonik
+package typingsJapgolly.slonik.mod
 
+import typingsJapgolly.node.streamMod.Readable
+import typingsJapgolly.slonik.anon.Format
+import typingsJapgolly.slonik.anon.StripComments
+import typingsJapgolly.slonik.mod.^
+import typingsJapgolly.std.Parameters
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object mod {
-  type ClientConfigurationInputType = typingsJapgolly.slonik.mod.ClientConfigurationType
-  type ConnectionRoutineType[T] = js.Function1[
-    /* connection */ typingsJapgolly.slonik.mod.DatabasePoolConnectionType, 
-    js.Promise[T]
-  ]
-  type DatabaseConfigurationType = java.lang.String | typingsJapgolly.slonik.AnonDatabase
-  type IdentifierNormalizerType = js.Function1[/* identifierName */ java.lang.String, java.lang.String]
-  type LoggerType = js.Function1[/* repeated */ java.lang.String, scala.Nothing]
-  type MaybePromiseType[T] = T | js.Promise[T]
-  type NamedAssignmentType = typingsJapgolly.std.Record[java.lang.String, typingsJapgolly.slonik.mod.ValueExpressionType]
-  type NamedParameterValuesType = typingsJapgolly.std.Record[java.lang.String, typingsJapgolly.slonik.mod.ValueExpressionType]
-  type PrimitiveValueExpressionType = java.lang.String | scala.Double | scala.Boolean | scala.Null | typingsJapgolly.slonik.mod.PrimitiveValueExpressionTypeArray
-  type QueryAnyFirstFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[
-      js.Array[
-        /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
-      ]
-    ]
-  ]
-  type QueryAnyFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[js.Array[js.Any]]
-  ]
-  type QueryFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[typingsJapgolly.slonik.mod.QueryResultType[js.Any]]
-  ]
-  type QueryIdType = java.lang.String
-  type QueryManyFirstFunctionType = typingsJapgolly.slonik.mod.QueryAnyFirstFunctionType
-  type QueryManyFunctionType = typingsJapgolly.slonik.mod.QueryAnyFunctionType
-  type QueryMaybeOneFirstFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[
-      (/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any) | scala.Null
-    ]
-  ]
-  type QueryMaybeOneFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[js.Any | scala.Null]
-  ]
-  type QueryMethodParams[T] = typingsJapgolly.std.Parameters[typingsJapgolly.slonik.mod.QueryMethodType[T, scala.Nothing]]
-  type QueryMethodType[RowType, Result] = js.Function2[
-    /* sql */ typingsJapgolly.slonik.mod.TaggedTemplateLiteralInvocationType[RowType], 
-    /* values */ js.UndefOr[js.Array[typingsJapgolly.slonik.mod.PrimitiveValueExpressionType]], 
-    js.Promise[Result]
-  ]
-  type QueryOneFirstFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[
-      /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
-    ]
-  ]
-  type QueryOneFunctionType = js.Function1[
-    /* args */ typingsJapgolly.slonik.mod.QueryMethodParams[js.Any], 
-    js.Promise[js.Any]
-  ]
-  type QueryResultRowColumnType = java.lang.String | scala.Double
-  type QueryResultRowType[ColumnName /* <: java.lang.String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ name in ColumnName ]: slonik.slonik.QueryResultRowColumnType}
-    */ typingsJapgolly.slonik.slonikStrings.QueryResultRowType with js.Any
-  /* Rewritten from type alias, can be one of: 
-    - java.lang.String
-    - scala.Double
-    - scala.Boolean
-    - scala.Null
-    - js.Object
-    - typingsJapgolly.slonik.mod.SerializableValueObject
-    - typingsJapgolly.slonik.mod.SerializableValueArray
-  */
-  type SerializableValueType = typingsJapgolly.slonik.mod._SerializableValueType | java.lang.String | scala.Double | scala.Boolean | scala.Null | js.Object
-  type SqlSqlTokenType[T] = typingsJapgolly.slonik.mod.TaggedTemplateLiteralInvocationType[T]
-  /* Rewritten from type alias, can be one of: 
-    - typingsJapgolly.slonik.mod.ArraySqlTokenType
-    - typingsJapgolly.slonik.mod.BinarySqlTokenType
-    - typingsJapgolly.slonik.mod.IdentifierSqlTokenType
-    - typingsJapgolly.slonik.mod.JsonSqlTokenType
-    - typingsJapgolly.slonik.mod.ListSqlTokenType
-    - typingsJapgolly.slonik.mod.SqlSqlTokenType[js.Any]
-    - typingsJapgolly.slonik.mod.UnnestSqlTokenType
-  */
-  type SqlTokenType = typingsJapgolly.slonik.mod._SqlTokenType | typingsJapgolly.slonik.mod.SqlSqlTokenType[js.Any]
-  type StreamHandlerType = js.Function1[/* stream */ typingsJapgolly.node.streamMod.Readable, scala.Unit]
-  type TransactionFunctionType[T] = js.Function1[
-    /* connection */ typingsJapgolly.slonik.mod.DatabaseTransactionConnectionType, 
-    js.Promise[T]
-  ]
-  type ValueExpressionType = typingsJapgolly.slonik.mod.SqlTokenType | typingsJapgolly.slonik.mod.PrimitiveValueExpressionType
-}
+
+inline def createBenchmarkingInterceptor(): InterceptorType = ^.asInstanceOf[js.Dynamic].applyDynamic("createBenchmarkingInterceptor")().asInstanceOf[InterceptorType]
+
+inline def createBigintTypeParser(): TypeParserType[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createBigintTypeParser")().asInstanceOf[TypeParserType[Double]]
+
+inline def createFieldNameTransformationInterceptor(configuration: Format): InterceptorType = ^.asInstanceOf[js.Dynamic].applyDynamic("createFieldNameTransformationInterceptor")(configuration.asInstanceOf[js.Any]).asInstanceOf[InterceptorType]
+
+inline def createInterceptorPreset(): js.Array[InterceptorType] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterceptorPreset")().asInstanceOf[js.Array[InterceptorType]]
+
+inline def createPool(connectionUri: String): DatabasePoolType = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(connectionUri.asInstanceOf[js.Any]).asInstanceOf[DatabasePoolType]
+inline def createPool(connectionUri: String, clientUserConfiguration: ClientConfigurationInputType): DatabasePoolType = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(connectionUri.asInstanceOf[js.Any], clientUserConfiguration.asInstanceOf[js.Any])).asInstanceOf[DatabasePoolType]
+
+inline def createQueryNormalizationInterceptor(): InterceptorType = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryNormalizationInterceptor")().asInstanceOf[InterceptorType]
+inline def createQueryNormalizationInterceptor(configuration: StripComments): InterceptorType = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryNormalizationInterceptor")(configuration.asInstanceOf[js.Any]).asInstanceOf[InterceptorType]
+
+inline def createSqlTag(): SqlTaggedTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSqlTag")().asInstanceOf[SqlTaggedTemplateType]
+inline def createSqlTag(configuration: SqlTagConfigurationType): SqlTaggedTemplateType = ^.asInstanceOf[js.Dynamic].applyDynamic("createSqlTag")(configuration.asInstanceOf[js.Any]).asInstanceOf[SqlTaggedTemplateType]
+
+inline def createTimestampTypeParser(): TypeParserType[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimestampTypeParser")().asInstanceOf[TypeParserType[Double | Null]]
+
+inline def createTimestampWithTimeZoneTypeParser(): TypeParserType[Double | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimestampWithTimeZoneTypeParser")().asInstanceOf[TypeParserType[Double | Null]]
+
+inline def createTypeParserPreset(): js.Array[TypeParserType[Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeParserPreset")().asInstanceOf[js.Array[TypeParserType[Any]]]
+
+inline def sql: SqlTaggedTemplateType = ^.asInstanceOf[js.Dynamic].selectDynamic("sql").asInstanceOf[SqlTaggedTemplateType]
+
+type ClientConfigurationInputType = ClientConfigurationType
+
+type ConnectionRoutineType[T] = js.Function1[/* connection */ DatabasePoolConnectionType, js.Promise[T]]
+
+type DatabaseConnectionType = DatabasePoolConnectionType & DatabasePoolType
+
+type IdentifierNormalizerType = js.Function1[/* identifierName */ String, String]
+
+type MaybePromiseType[T] = T | js.Promise[T]
+
+type NamedAssignmentType = Record[String, ValueExpressionType]
+
+type NamedParameterValuesType = Record[String, ValueExpressionType]
+
+type PrimitiveValueExpressionType = String | Double | Boolean | Null | PrimitiveValueExpressionTypeArray
+
+type QueryAnyFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[js.Array[Any]]]
+
+type QueryExistsFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[Boolean]]
+
+type QueryFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[QueryResultType[Any]]]
+
+type QueryIdType = String
+
+type QueryManyFirstFunctionType = QueryAnyFirstFunctionType
+
+type QueryMaybeOneFirstFunctionType = js.Function1[
+/* args */ QueryMethodParams[Any], 
+js.Promise[
+  (/* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any) | Null
+]]
+
+type QueryMaybeOneFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[Any | Null]]
+
+type QueryMethodParams[T] = Parameters[QueryMethodType[T, scala.Nothing]]
+
+type QueryOneFirstFunctionType = js.Function1[
+/* args */ QueryMethodParams[Any], 
+js.Promise[
+  /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any] */ js.Any
+]]
+
+type QueryOneFunctionType = js.Function1[/* args */ QueryMethodParams[Any], js.Promise[Any]]
+
+type QueryResultRowColumnType = String | Double
+
+type SerializableValueArray = js.Array[SerializableValueType]
+
+type SerializableValueType = String | Double | Boolean | Null | js.Object | SerializableValueObject | Any
+
+type SqlSqlTokenType[T] = TaggedTemplateLiteralInvocationType[T]
+
+/* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.slonik.mod.ArraySqlTokenType
+  - typingsJapgolly.slonik.mod.BinarySqlTokenType
+  - typingsJapgolly.slonik.mod.IdentifierSqlTokenType
+  - typingsJapgolly.slonik.mod.JsonSqlTokenType
+  - typingsJapgolly.slonik.mod.ListSqlTokenType
+  - typingsJapgolly.slonik.mod.SqlSqlTokenType[scala.Any]
+  - typingsJapgolly.slonik.mod.UnnestSqlTokenType
+*/
+type SqlTokenType = _SqlTokenType | SqlSqlTokenType[Any]
+
+type StreamHandlerType = js.Function1[/* stream */ Readable, Unit]
+
+type TransactionFunctionType[T] = js.Function1[/* connection */ DatabaseTransactionConnectionType, js.Promise[T]]
+
+type ValueExpressionType = SqlTokenType | Any

@@ -1,27 +1,40 @@
 package typingsJapgolly.minappEnv.wx
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 提供预设的 Wi-Fi 信息列表 */
-trait WifiData extends js.Object {
+trait WifiData extends StObject {
+  
   /** Wi-Fi 的 BSSID */
   var BSSID: js.UndefOr[String] = js.undefined
+  
   /** Wi-Fi 的 SSID */
   var SSID: js.UndefOr[String] = js.undefined
+  
   /** Wi-Fi 设备密码 */
   var password: js.UndefOr[String] = js.undefined
 }
-
 object WifiData {
-  @scala.inline
-  def apply(BSSID: String = null, SSID: String = null, password: String = null): WifiData = {
+  
+  inline def apply(): WifiData = {
     val __obj = js.Dynamic.literal()
-    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID.asInstanceOf[js.Any])
-    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
     __obj.asInstanceOf[WifiData]
   }
+  
+  extension [Self <: WifiData](x: Self) {
+    
+    inline def setBSSID(value: String): Self = StObject.set(x, "BSSID", value.asInstanceOf[js.Any])
+    
+    inline def setBSSIDUndefined: Self = StObject.set(x, "BSSID", js.undefined)
+    
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    
+    inline def setSSID(value: String): Self = StObject.set(x, "SSID", value.asInstanceOf[js.Any])
+    
+    inline def setSSIDUndefined: Self = StObject.set(x, "SSID", js.undefined)
+  }
 }
-

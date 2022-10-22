@@ -1,13 +1,13 @@
 package typingsJapgolly.uirouterAngularjs.mod
 
-import typingsJapgolly.uirouterCore.paramsInterfaceMod.ParamTypeDefinition
+import typingsJapgolly.uirouterCore.libParamsInterfaceMod.ParamTypeDefinition
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "ParamType")
 @js.native
-class ParamType protected ()
+open class ParamType protected ()
   extends typingsJapgolly.uirouterCore.mod.ParamType {
   /**
     * @param def  A configuration object which contains the custom type definition.  The object's
@@ -16,4 +16,3 @@ class ParamType protected ()
     */
   def this(`def`: ParamTypeDefinition) = this()
 }
-

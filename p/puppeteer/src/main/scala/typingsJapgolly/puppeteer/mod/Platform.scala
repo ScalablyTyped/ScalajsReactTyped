@@ -1,27 +1,26 @@
 package typingsJapgolly.puppeteer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
+  - typingsJapgolly.puppeteer.puppeteerStrings.linux
   - typingsJapgolly.puppeteer.puppeteerStrings.mac
+  - typingsJapgolly.puppeteer.puppeteerStrings.mac_arm
   - typingsJapgolly.puppeteer.puppeteerStrings.win32
   - typingsJapgolly.puppeteer.puppeteerStrings.win64
-  - typingsJapgolly.puppeteer.puppeteerStrings.linux
 */
-trait Platform extends js.Object
-
+trait Platform extends StObject
 object Platform {
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def linux: typingsJapgolly.puppeteer.puppeteerStrings.linux = this.cast("linux")
-  @scala.inline
-  def mac: typingsJapgolly.puppeteer.puppeteerStrings.mac = this.cast("mac")
-  @scala.inline
-  def win32: typingsJapgolly.puppeteer.puppeteerStrings.win32 = this.cast("win32")
-  @scala.inline
-  def win64: typingsJapgolly.puppeteer.puppeteerStrings.win64 = this.cast("win64")
+  
+  inline def linux: typingsJapgolly.puppeteer.puppeteerStrings.linux = "linux".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.linux]
+  
+  inline def mac: typingsJapgolly.puppeteer.puppeteerStrings.mac = "mac".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.mac]
+  
+  inline def mac_arm: typingsJapgolly.puppeteer.puppeteerStrings.mac_arm = "mac_arm".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.mac_arm]
+  
+  inline def win32: typingsJapgolly.puppeteer.puppeteerStrings.win32 = "win32".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.win32]
+  
+  inline def win64: typingsJapgolly.puppeteer.puppeteerStrings.win64 = "win64".asInstanceOf[typingsJapgolly.puppeteer.puppeteerStrings.win64]
 }
-

@@ -1,43 +1,32 @@
 package typingsJapgolly.blueprintjsCore.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLElement
-import typingsJapgolly.blueprintjsCore.portalMod.IPortalProps
+import org.scalajs.dom.HTMLElement
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsCore.libEsmComponentsPortalPortalMod.IPortalProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portal {
-  def apply(
-    className: String = null,
-    container: HTMLElement = null,
-    onChildrenMount: js.UndefOr[Callback] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[IPortalProps, typingsJapgolly.blueprintjsCore.mod.Portal, Unit, IPortalProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
-    onChildrenMount.foreach(p => __obj.updateDynamic("onChildrenMount")(p.toJsFn))
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsCore.portalMod.IPortalProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsCore.mod.Portal](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsCore.portalMod.IPortalProps])(children: _*)
-  }
   @JSImport("@blueprintjs/core", "Portal")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsCore.mod.Portal] {
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def container(value: HTMLElement): this.type = set("container", value.asInstanceOf[js.Any])
+    
+    inline def onChildrenMount(value: Callback): this.type = set("onChildrenMount", value.toJsFn)
+  }
+  
+  implicit def make(companion: Portal.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: IPortalProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

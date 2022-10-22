@@ -1,21 +1,24 @@
 package typingsJapgolly.pEvery
 
 import typingsJapgolly.pMap.mod.Options
+import typingsJapgolly.std.PromiseLike
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("p-every", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def default[ValueType](
-    input: js.Iterable[js.Thenable[ValueType] | ValueType],
-    testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]]
-  ): js.Promise[Boolean] = js.native
-  def default[ValueType](
-    input: js.Iterable[js.Thenable[ValueType] | ValueType],
-    testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | js.Thenable[Boolean]],
+object mod {
+  
+  @JSImport("p-every", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[ValueType](
+    input: js.Iterable[PromiseLike[ValueType] | ValueType],
+    testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | PromiseLike[Boolean]]
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], testFunction.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def default[ValueType](
+    input: js.Iterable[PromiseLike[ValueType] | ValueType],
+    testFunction: js.Function2[/* element */ ValueType, /* index */ Double, Boolean | PromiseLike[Boolean]],
     options: Options
-  ): js.Promise[Boolean] = js.native
+  ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], testFunction.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
 }
-

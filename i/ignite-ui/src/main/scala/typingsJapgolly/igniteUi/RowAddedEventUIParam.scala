@@ -1,32 +1,45 @@
 package typingsJapgolly.igniteUi
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait RowAddedEventUIParam extends js.Object {
+trait RowAddedEventUIParam extends StObject {
+  
   /**
-  	 * Gets the default value (before editing) for the column with the specified key.
-  	 */
-  var oldValues: js.UndefOr[js.Any] = js.undefined
+    * Gets the default value (before editing) for the column with the specified key.
+    */
+  var oldValues: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets a reference to GridUpdating.
-  	 */
-  var owner: js.UndefOr[js.Any] = js.undefined
+    * Gets a reference to GridUpdating.
+    */
+  var owner: js.UndefOr[Any] = js.undefined
+  
   /**
-  	 * Gets the value for the column with the specified key.
-  	 */
-  var values: js.UndefOr[js.Any] = js.undefined
+    * Gets the value for the column with the specified key.
+    */
+  var values: js.UndefOr[Any] = js.undefined
 }
-
 object RowAddedEventUIParam {
-  @scala.inline
-  def apply(oldValues: js.Any = null, owner: js.Any = null, values: js.Any = null): RowAddedEventUIParam = {
+  
+  inline def apply(): RowAddedEventUIParam = {
     val __obj = js.Dynamic.literal()
-    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues.asInstanceOf[js.Any])
-    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowAddedEventUIParam]
   }
+  
+  extension [Self <: RowAddedEventUIParam](x: Self) {
+    
+    inline def setOldValues(value: Any): Self = StObject.set(x, "oldValues", value.asInstanceOf[js.Any])
+    
+    inline def setOldValuesUndefined: Self = StObject.set(x, "oldValues", js.undefined)
+    
+    inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+  }
 }
-

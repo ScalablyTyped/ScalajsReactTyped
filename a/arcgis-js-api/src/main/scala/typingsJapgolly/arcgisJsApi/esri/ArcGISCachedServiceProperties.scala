@@ -1,16 +1,18 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArcGISCachedServiceProperties extends js.Object {
+trait ArcGISCachedServiceProperties extends StObject {
+  
   /**
     * The copyright text as defined by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISCachedService.html#copyright)
     */
   var copyright: js.UndefOr[String] = js.undefined
+  
   /**
     * Contains information about the tiling scheme for the layer.
     *
@@ -18,14 +20,21 @@ trait ArcGISCachedServiceProperties extends js.Object {
     */
   var tileInfo: js.UndefOr[TileInfoProperties] = js.undefined
 }
-
 object ArcGISCachedServiceProperties {
-  @scala.inline
-  def apply(copyright: String = null, tileInfo: TileInfoProperties = null): ArcGISCachedServiceProperties = {
+  
+  inline def apply(): ArcGISCachedServiceProperties = {
     val __obj = js.Dynamic.literal()
-    if (copyright != null) __obj.updateDynamic("copyright")(copyright.asInstanceOf[js.Any])
-    if (tileInfo != null) __obj.updateDynamic("tileInfo")(tileInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcGISCachedServiceProperties]
   }
+  
+  extension [Self <: ArcGISCachedServiceProperties](x: Self) {
+    
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    
+    inline def setTileInfo(value: TileInfoProperties): Self = StObject.set(x, "tileInfo", value.asInstanceOf[js.Any])
+    
+    inline def setTileInfoUndefined: Self = StObject.set(x, "tileInfo", js.undefined)
+  }
 }
-

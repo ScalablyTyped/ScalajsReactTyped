@@ -2,37 +2,93 @@ package typingsJapgolly.winrtUwp.Windows.Media.Import
 
 import typingsJapgolly.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typingsJapgolly.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an media item that has been imported from a source. */
-@JSGlobal("Windows.Media.Import.PhotoImportItem")
-@js.native
-abstract class PhotoImportItem () extends js.Object {
+trait PhotoImportItem extends StObject {
+  
   /** Gets the content type of the imported item. */
-  var contentType: PhotoImportContentType = js.native
+  var contentType: PhotoImportContentType
+  
   /** Gets the creation date of the imported item. */
-  var date: js.Date = js.native
+  var date: js.Date
+  
   /** Gets a list of the names of files associated with this item that were deleted. */
-  var deletedFileNames: IVectorView[String] = js.native
+  var deletedFileNames: IVectorView[String]
+  
   /** Gets a list of the names of files associated with this item that were imported. */
-  var importedFileNames: IVectorView[String] = js.native
+  var importedFileNames: IVectorView[String]
+  
   /** Gets a value indicating whether the item is currently selected for import. */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
+  
   /** Gets the key used to identify the item. */
-  var itemKey: Double = js.native
+  var itemKey: Double
+  
   /** Gets the name of the item. */
-  var name: String = js.native
+  var name: String
+  
   /** Gets the sibling file associated with the item, if one exists. */
-  var sibling: PhotoImportSidecar = js.native
+  var sibling: PhotoImportSidecar
+  
   /** Gets the list of sidecar files associated with the item, if any exists. */
-  var sidecars: IVectorView[PhotoImportSidecar] = js.native
+  var sidecars: IVectorView[PhotoImportSidecar]
+  
   /** Gets the size of the item, in bytes. */
-  var sizeInBytes: Double = js.native
+  var sizeInBytes: Double
+  
   /** Gets a random access stream containing the thumbnail image associated with the item. */
-  var thumbnail: IRandomAccessStreamReference = js.native
+  var thumbnail: IRandomAccessStreamReference
+  
   /** Gets the list of video segments associated with the item. */
-  var videoSegments: IVectorView[PhotoImportVideoSegment] = js.native
+  var videoSegments: IVectorView[PhotoImportVideoSegment]
 }
-
+object PhotoImportItem {
+  
+  inline def apply(
+    contentType: PhotoImportContentType,
+    date: js.Date,
+    deletedFileNames: IVectorView[String],
+    importedFileNames: IVectorView[String],
+    isSelected: Boolean,
+    itemKey: Double,
+    name: String,
+    sibling: PhotoImportSidecar,
+    sidecars: IVectorView[PhotoImportSidecar],
+    sizeInBytes: Double,
+    thumbnail: IRandomAccessStreamReference,
+    videoSegments: IVectorView[PhotoImportVideoSegment]
+  ): PhotoImportItem = {
+    val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], deletedFileNames = deletedFileNames.asInstanceOf[js.Any], importedFileNames = importedFileNames.asInstanceOf[js.Any], isSelected = isSelected.asInstanceOf[js.Any], itemKey = itemKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], sibling = sibling.asInstanceOf[js.Any], sidecars = sidecars.asInstanceOf[js.Any], sizeInBytes = sizeInBytes.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], videoSegments = videoSegments.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PhotoImportItem]
+  }
+  
+  extension [Self <: PhotoImportItem](x: Self) {
+    
+    inline def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    
+    inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    
+    inline def setDeletedFileNames(value: IVectorView[String]): Self = StObject.set(x, "deletedFileNames", value.asInstanceOf[js.Any])
+    
+    inline def setImportedFileNames(value: IVectorView[String]): Self = StObject.set(x, "importedFileNames", value.asInstanceOf[js.Any])
+    
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    
+    inline def setItemKey(value: Double): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
+    
+    inline def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
+    
+    inline def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    
+    inline def setVideoSegments(value: IVectorView[PhotoImportVideoSegment]): Self = StObject.set(x, "videoSegments", value.asInstanceOf[js.Any])
+  }
+}

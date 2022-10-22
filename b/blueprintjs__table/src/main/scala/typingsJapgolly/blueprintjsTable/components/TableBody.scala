@@ -1,90 +1,78 @@
 package typingsJapgolly.blueprintjsTable.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.KeyboardEvent
-import org.scalajs.dom.raw.MouseEvent
-import typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates
-import typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData
-import typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion
-import typingsJapgolly.blueprintjsTable.gridMod.Grid
-import typingsJapgolly.blueprintjsTable.locatorMod.ILocator
-import typingsJapgolly.blueprintjsTable.menuContextMod.IMenuContext
-import typingsJapgolly.blueprintjsTable.rectMod.Rect
-import typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.BATCH
-import typingsJapgolly.blueprintjsTable.renderModeMod.RenderMode.NONE
-import typingsJapgolly.blueprintjsTable.tableBodyMod.ITableBodyProps
+import japgolly.scalajs.react.facade.React.Element
+import org.scalajs.dom.KeyboardEvent
+import org.scalajs.dom.MouseEvent
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.blueprintjsTable.libEsmCommonCellTypesMod.FocusedCellCoordinates
+import typingsJapgolly.blueprintjsTable.libEsmCommonGridMod.Grid
+import typingsJapgolly.blueprintjsTable.libEsmCommonRectMod.Rect
+import typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.BATCH
+import typingsJapgolly.blueprintjsTable.libEsmCommonRenderModeMod.RenderMode.NONE
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsDragTypesMod.ICoordinateData
+import typingsJapgolly.blueprintjsTable.libEsmInteractionsMenusMenuContextMod.IMenuContext
+import typingsJapgolly.blueprintjsTable.libEsmLocatorMod.ILocator
+import typingsJapgolly.blueprintjsTable.libEsmRegionsMod.Region
+import typingsJapgolly.blueprintjsTable.libEsmTableBodyMod.ITableBodyProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TableBody {
-  def apply(
+  
+  inline def apply(
+    cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => js.UndefOr[Element],
     columnIndexEnd: Double,
     columnIndexStart: Double,
     grid: Grid,
     loading: Boolean,
     locator: ILocator,
+    onFocusedCell: FocusedCellCoordinates => Callback,
+    onSelection: js.Array[Region] => Callback,
     rowIndexEnd: Double,
     rowIndexStart: Double,
-    viewportRect: Rect,
-    cellRenderer: (/* rowIndex */ Double, /* columnIndex */ Double) => CallbackTo[Element],
-    onFocusedCell: IFocusedCellCoordinates => Callback,
-    onSelection: js.Array[IRegion] => Callback,
-    bodyContextMenuRenderer: /* context */ IMenuContext => CallbackTo[Element] = null,
-    className: String = null,
-    enableMultipleSelection: js.UndefOr[Boolean] = js.undefined,
-    focusedCell: IFocusedCellCoordinates = null,
-    numFrozenColumns: Int | Double = null,
-    numFrozenRows: Int | Double = null,
-    onCompleteRender: js.UndefOr[Callback] = js.undefined,
-    onSelectionEnd: /* regions */ js.Array[IRegion] => Callback = null,
-    renderMode: BATCH | NONE = null,
-    selectedRegionTransform: (/* region */ IRegion, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => CallbackTo[IRegion] = null,
-    selectedRegions: js.Array[IRegion] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    ITableBodyProps, 
-    typingsJapgolly.blueprintjsTable.tableBodyMod.TableBody, 
-    Unit, 
-    ITableBodyProps
-  ] = {
-    val __obj = js.Dynamic.literal(columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], locator = locator.asInstanceOf[js.Any], rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
-  
-      __obj.updateDynamic("cellRenderer")(js.Any.fromFunction2((t0: /* rowIndex */ scala.Double, t1: /* columnIndex */ scala.Double) => cellRenderer(t0, t1).runNow()))
-    __obj.updateDynamic("onFocusedCell")(js.Any.fromFunction1((t0: typingsJapgolly.blueprintjsTable.commonCellMod.IFocusedCellCoordinates) => onFocusedCell(t0).runNow()))
-    __obj.updateDynamic("onSelection")(js.Any.fromFunction1((t0: js.Array[typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion]) => onSelection(t0).runNow()))
-    if (bodyContextMenuRenderer != null) __obj.updateDynamic("bodyContextMenuRenderer")(js.Any.fromFunction1((t0: /* context */ typingsJapgolly.blueprintjsTable.menuContextMod.IMenuContext) => bodyContextMenuRenderer(t0).runNow()))
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (!js.isUndefined(enableMultipleSelection)) __obj.updateDynamic("enableMultipleSelection")(enableMultipleSelection.asInstanceOf[js.Any])
-    if (focusedCell != null) __obj.updateDynamic("focusedCell")(focusedCell.asInstanceOf[js.Any])
-    if (numFrozenColumns != null) __obj.updateDynamic("numFrozenColumns")(numFrozenColumns.asInstanceOf[js.Any])
-    if (numFrozenRows != null) __obj.updateDynamic("numFrozenRows")(numFrozenRows.asInstanceOf[js.Any])
-    onCompleteRender.foreach(p => __obj.updateDynamic("onCompleteRender")(p.toJsFn))
-    if (onSelectionEnd != null) __obj.updateDynamic("onSelectionEnd")(js.Any.fromFunction1((t0: /* regions */ js.Array[typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion]) => onSelectionEnd(t0).runNow()))
-    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (selectedRegionTransform != null) __obj.updateDynamic("selectedRegionTransform")(js.Any.fromFunction3((t0: /* region */ typingsJapgolly.blueprintjsTable.esmRegionsMod.IRegion, t1: /* event */ org.scalajs.dom.raw.MouseEvent | org.scalajs.dom.raw.KeyboardEvent, t2: /* coords */ js.UndefOr[typingsJapgolly.blueprintjsTable.draggableMod.ICoordinateData]) => selectedRegionTransform(t0, t1, t2).runNow()))
-    if (selectedRegions != null) __obj.updateDynamic("selectedRegions")(selectedRegions.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.blueprintjsTable.tableBodyMod.ITableBodyProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.blueprintjsTable.tableBodyMod.TableBody](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.blueprintjsTable.tableBodyMod.ITableBodyProps])(children: _*)
+    viewportRect: Rect
+  ): Builder = {
+    val __props = js.Dynamic.literal(cellRenderer = js.Any.fromFunction2(cellRenderer), columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], locator = locator.asInstanceOf[js.Any], onFocusedCell = js.Any.fromFunction1((t0: FocusedCellCoordinates) => onFocusedCell(t0).runNow()), onSelection = js.Any.fromFunction1((t0: js.Array[Region]) => onSelection(t0).runNow()), rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any], viewportRect = viewportRect.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[ITableBodyProps]))
   }
+  
   @JSImport("@blueprintjs/table/lib/esm/tableBody", "TableBody")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.blueprintjsTable.libEsmTableBodyMod.TableBody] {
+    
+    inline def bodyContextMenuRenderer(value: /* context */ IMenuContext => typingsJapgolly.react.mod.global.JSX.Element): this.type = set("bodyContextMenuRenderer", js.Any.fromFunction1(value))
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def enableMultipleSelection(value: Boolean): this.type = set("enableMultipleSelection", value.asInstanceOf[js.Any])
+    
+    inline def focusedCell(value: FocusedCellCoordinates): this.type = set("focusedCell", value.asInstanceOf[js.Any])
+    
+    inline def numFrozenColumns(value: Double): this.type = set("numFrozenColumns", value.asInstanceOf[js.Any])
+    
+    inline def numFrozenRows(value: Double): this.type = set("numFrozenRows", value.asInstanceOf[js.Any])
+    
+    inline def onCompleteRender(value: Callback): this.type = set("onCompleteRender", value.toJsFn)
+    
+    inline def onSelectionEnd(value: /* regions */ js.Array[Region] => Callback): this.type = set("onSelectionEnd", js.Any.fromFunction1((t0: /* regions */ js.Array[Region]) => value(t0).runNow()))
+    
+    inline def renderMode(value: BATCH | NONE): this.type = set("renderMode", value.asInstanceOf[js.Any])
+    
+    inline def selectedRegionTransform(
+      value: (/* region */ Region, /* event */ MouseEvent | KeyboardEvent, /* coords */ js.UndefOr[ICoordinateData]) => Region
+    ): this.type = set("selectedRegionTransform", js.Any.fromFunction3(value))
+    
+    inline def selectedRegions(value: js.Array[Region]): this.type = set("selectedRegions", value.asInstanceOf[js.Any])
+    
+    inline def selectedRegionsVarargs(value: Region*): this.type = set("selectedRegions", js.Array(value*))
+  }
+  
+  def withProps(p: ITableBodyProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -1,10 +1,11 @@
 package typingsJapgolly.bingmaps.Microsoft.Maps
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICustomOverlayOptions extends js.Object {
+trait ICustomOverlayOptions extends StObject {
+  
   /**
     * Specifies if the custom overlay should be rendered above or below the label layer of the map. When above,
     * elements in the overlay can be clickable. Default: True
@@ -13,13 +14,17 @@ trait ICustomOverlayOptions extends js.Object {
     */
   var beneathLabels: js.UndefOr[Boolean] = js.undefined
 }
-
 object ICustomOverlayOptions {
-  @scala.inline
-  def apply(beneathLabels: js.UndefOr[Boolean] = js.undefined): ICustomOverlayOptions = {
+  
+  inline def apply(): ICustomOverlayOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(beneathLabels)) __obj.updateDynamic("beneathLabels")(beneathLabels.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomOverlayOptions]
   }
+  
+  extension [Self <: ICustomOverlayOptions](x: Self) {
+    
+    inline def setBeneathLabels(value: Boolean): Self = StObject.set(x, "beneathLabels", value.asInstanceOf[js.Any])
+    
+    inline def setBeneathLabelsUndefined: Self = StObject.set(x, "beneathLabels", js.undefined)
+  }
 }
-

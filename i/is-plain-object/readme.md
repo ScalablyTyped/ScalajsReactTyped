@@ -1,19 +1,19 @@
 
 # Scala.js typings for is-plain-object
 
-Typings are for version 3.0.0
+Typings are for version 5.0.0
 
 ## Library description:
-Returns true if an object was created by the `Object` constructor.
+Returns true if an object was created by the `Object` constructor, or Object.create(null).
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | is-plain-object |
 | Keywords           | check, is, is-object, isobject, javascript, kind, kind-of, object, plain, type, typeof, value |
-| # releases         | 2 |
-| # dependents       | 607 |
-| # downloads        | 510927832 |
-| # stars            | 5 |
+| # releases         | 5 |
+| # dependents       | 0.0 |
+| # downloads        | 1.34257922E8 |
+| # stars            | 124.0 |
 
 ## Links
 - [Homepage](https://github.com/jonschlinkert/is-plain-object)

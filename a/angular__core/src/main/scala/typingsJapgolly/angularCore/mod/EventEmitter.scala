@@ -2,29 +2,36 @@ package typingsJapgolly.angularCore.mod
 
 import typingsJapgolly.rxjs.mod.Subject
 import typingsJapgolly.rxjs.mod.Subscription
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@angular/core", "EventEmitter")
-@js.native
-/**
-  * Creates an instance of this class that can
-  * deliver events synchronously or asynchronously.
-  *
-  * @param isAsync When true, deliver events asynchronously.
-  *
-  */
-class EventEmitter[T /* <: js.Any */] () extends Subject[T] {
-  def this(isAsync: Boolean) = this()
+/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+- scala.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+- js.Any because Inheritance from two classes. Inlined 
+- scala.AnyRef because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined 
+- js.Any because Inheritance from two classes. Inlined 
+- org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+- js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+- org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+- org.scalablytyped.runtime.Instantiable0 because Inheritance from two classes. Inlined  */ @js.native
+trait EventEmitter[T] extends Subject[T] {
+  
   /**
     * Emits an event containing a given value.
     * @param value The value to emit.
     */
   def emit(): Unit = js.native
   def emit(value: T): Unit = js.native
-  def subscribe(generatorOrNext: js.Any): Subscription = js.native
-  def subscribe(generatorOrNext: js.Any, error: js.Any): Subscription = js.native
-  def subscribe(generatorOrNext: js.Any, error: js.Any, complete: js.Any): Subscription = js.native
+  
+  def subscribe(observerOrNext: Any): Subscription = js.native
+  def subscribe(observerOrNext: Any, error: Any): Subscription = js.native
+  def subscribe(observerOrNext: Any, error: Any, complete: Any): Subscription = js.native
+  def subscribe(observerOrNext: Any, error: Unit, complete: Any): Subscription = js.native
+  def subscribe(observerOrNext: Unit, error: Any): Subscription = js.native
+  def subscribe(observerOrNext: Unit, error: Any, complete: Any): Subscription = js.native
+  def subscribe(observerOrNext: Unit, error: Unit, complete: Any): Subscription = js.native
 }
-

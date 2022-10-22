@@ -1,25 +1,42 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait TreeListToolbarItem extends js.Object {
+trait TreeListToolbarItem extends StObject {
+  
   var click: js.UndefOr[js.Function] = js.undefined
+  
   var imageClass: js.UndefOr[String] = js.undefined
+  
   var name: js.UndefOr[String] = js.undefined
+  
   var text: js.UndefOr[String] = js.undefined
 }
-
 object TreeListToolbarItem {
-  @scala.inline
-  def apply(click: js.Function = null, imageClass: String = null, name: String = null, text: String = null): TreeListToolbarItem = {
+  
+  inline def apply(): TreeListToolbarItem = {
     val __obj = js.Dynamic.literal()
-    if (click != null) __obj.updateDynamic("click")(click.asInstanceOf[js.Any])
-    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
-    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListToolbarItem]
   }
+  
+  extension [Self <: TreeListToolbarItem](x: Self) {
+    
+    inline def setClick(value: js.Function): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    
+    inline def setImageClass(value: String): Self = StObject.set(x, "imageClass", value.asInstanceOf[js.Any])
+    
+    inline def setImageClassUndefined: Self = StObject.set(x, "imageClass", js.undefined)
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+  }
 }
-

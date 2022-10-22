@@ -1,50 +1,35 @@
 package typingsJapgolly.stormReactDiagrams.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.stormReactDiagrams.defaultNodeModelMod.DefaultNodeModel
-import typingsJapgolly.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeProps
-import typingsJapgolly.stormReactDiagrams.diagramEngineMod.DiagramEngine
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsModelsDefaultNodeModelMod.DefaultNodeModel
+import typingsJapgolly.stormReactDiagrams.distSrcDefaultsWidgetsDefaultNodeWidgetMod.DefaultNodeProps
+import typingsJapgolly.stormReactDiagrams.distSrcDiagramEngineMod.DiagramEngine
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DefaultNodeWidget {
-  def apply(
-    diagramEngine: DiagramEngine,
-    node: DefaultNodeModel,
-    baseClass: String = null,
-    className: String = null,
-    extraProps: js.Any = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[
-    DefaultNodeProps, 
-    typingsJapgolly.stormReactDiagrams.mod.DefaultNodeWidget, 
-    Unit, 
-    DefaultNodeProps
-  ] = {
-    val __obj = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
   
-      if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass.asInstanceOf[js.Any])
-    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (extraProps != null) __obj.updateDynamic("extraProps")(extraProps.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.stormReactDiagrams.mod.DefaultNodeWidget](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.stormReactDiagrams.defaultNodeWidgetMod.DefaultNodeProps])(children: _*)
+  inline def apply(diagramEngine: DiagramEngine, node: DefaultNodeModel): Builder = {
+    val __props = js.Dynamic.literal(diagramEngine = diagramEngine.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    new Builder(js.Array(this.component, __props.asInstanceOf[DefaultNodeProps]))
   }
+  
   @JSImport("storm-react-diagrams", "DefaultNodeWidget")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.stormReactDiagrams.mod.DefaultNodeWidget] {
+    
+    inline def baseClass(value: String): this.type = set("baseClass", value.asInstanceOf[js.Any])
+    
+    inline def className(value: String): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def extraProps(value: Any): this.type = set("extraProps", value.asInstanceOf[js.Any])
+  }
+  
+  def withProps(p: DefaultNodeProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

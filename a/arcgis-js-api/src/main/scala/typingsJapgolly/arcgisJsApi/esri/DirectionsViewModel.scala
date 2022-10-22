@@ -1,189 +1,237 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.disabled
+import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.ready
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DirectionsViewModel
-  extends Accessor
+  extends StObject
+     with Accessor
      with GoTo {
+  
   /**
-    * The network attribute name to be used as the impedance attribute in the analysis. The default is as defined in the specific routing network layer used in your [RouteTask](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-RouteTask.html). You can specify any attribute names listed in the Service Directory under `Network Dataset -> Network Attributes` as `Usage Type: esriNAUTCost`. You can also specify a value of `none` to indicate that no network attributes should be used for impedance. If you specify an empty array, it will default to the default of the service.  For example, set `impedanceAttribute = "Time"` for the quickest route and `impedanceAttribute = "Length"` for shortest drive, assuming the service has those two esriNAUTCost attributes.  For more information, see [Understanding the network attribute](http://resources.arcgis.com/en/help/main/10.2/index.html#//00470000000m000000).
+    * An authorization string used to access a resource or service.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#apiKey)
+    */
+  var apiKey: String = js.native
+  
+  /**
+    * Centers the map at the specified maneuver or stop.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#centerAt)
+    */
+  def centerAt(stopOrManeuver: Graphic): scala.Unit = js.native
+  
+  /**
+    * Clears any highlighted route segments.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#clearHighlights)
+    */
+  def clearHighlights(): scala.Unit = js.native
+  
+  /**
+    * Removes the route directions from the directions list, leaving the inputs untouched.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#clearResults)
+    */
+  def clearResults(): scala.Unit = js.native
+  
+  /**
+    * Returns the cost attribute associated with the parsed name.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getCostAttribute)
+    */
+  def getCostAttribute(attributeName: String): Any = js.native
+  
+  /**
+    * Computes a route and directions.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getDirections)
+    */
+  def getDirections(): js.Promise[RouteLayerSolveResult] = js.native
+  
+  /**
+    * Highlights the specified network feature.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#highlight)
+    */
+  def highlight(networkFeature: DirectionLine): js.Promise[Any] = js.native
+  def highlight(networkFeature: DirectionPoint): js.Promise[Any] = js.native
+  def highlight(networkFeature: PointBarrier): js.Promise[Any] = js.native
+  def highlight(networkFeature: PolygonBarrier): js.Promise[Any] = js.native
+  def highlight(networkFeature: PolylineBarrier): js.Promise[Any] = js.native
+  def highlight(networkFeature: RouteInfo): js.Promise[Any] = js.native
+  def highlight(networkFeature: Stop): js.Promise[Any] = js.native
+  
+  /**
+    * Highlights the specified route segment on the map.
+    *
+    * @deprecated since version 4.24. Use [highlight](#highlight) instead.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#highlightSegment)
+    */
+  def highlightSegment(maneuver: Graphic): scala.Unit = js.native
+  
+  /**
+    * The network attribute name to be used as the impedance attribute in the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#impedanceAttribute)
     */
-  var impedanceAttribute: String = js.native
+  val impedanceAttribute: DirectionsViewModelImpedanceAttribute = js.native
+  
   /**
-    * The most recent route result. Returns an object containing properties for any barriers used when generating the route, messages that may arise when solving the route, and finally an array of returned [RouteResults](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteResult.html).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#lastRoute)
+    * The most recent route result.
     *
     * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#lastRoute)
     */
   val lastRoute: DirectionsViewModelLastRoute = js.native
+  
+  /**
+    * The [RouteLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-RouteLayer.html) associated with the DirectionsViewModel.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#layer)
+    */
+  var layer: RouteLayer = js.native
+  
+  /**
+    * This method should be called to load the view model's routing resources.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#load)
+    */
+  def load(): js.Promise[Any] = js.native
+  
   /**
     * The maximum number of stops allowed for routing.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#maxStops)
-    *
     * @default 50
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#maxStops)
     */
   var maxStops: Double = js.native
+  
   /**
-    * Route Parameters object used to call the service. Please refer to the [RouteParameters](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RouteParameters.html) documentation for the list of available settings.
+    * Resets the state of the ViewModel, clearing all the input stops and results in the widget and in the map.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#reset)
+    */
+  def reset(): scala.Unit = js.native
+  
+  /**
+    * Route Parameters object used to call the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeParameters)
     */
   var routeParameters: RouteParameters = js.native
+  
   /**
     * The URL of the REST endpoint of the Route service.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeServiceUrl)
+    * @deprecated since version 4.24. Use {@link module:esri/layers/RouteLayer#url url} from [layer](#layer) instead.
     *
-    * @default "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeServiceUrl)
     */
   var routeServiceUrl: String = js.native
+  
   /**
     * Defines the symbol used to draw the route on the map.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteSymbols#directionLines directionLines} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeSymbol)
     */
   var routeSymbol: SimpleLineSymbol = js.native
+  
   /**
-    * The selected travel mode. More information can be found in the [ArcGIS Online documentation](https://doc.arcgis.com/en/arcgis-online/reference/travel-modes.htm#GUID-96DF7F50-E0B2-4BF3-8271-EB515D3F0107).
+    * Saves the RouteLayer associated with the view model.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
-    *
-    * @default null | 'Driving Time'
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#save)
     */
-  var selectedTravelMode: DirectionsViewModelSelectedTravelMode = js.native
+  def save(): js.Promise[PortalItem] = js.native
+  
   /**
-    * The Service Description object returned by the Route REST Endpoint. This object contains service specific details like available Cost attributes, supported Restrictions, default Attribute Parameter Values, Service Limits (like maximum input stop count), default Impedance Attribute, etc. This information is useful when implementing complex logistics scenarios operating with limitations or preferences on vehicle or stop properties, for example avoiding toll roads, dealing with hazardous materials, working with stop service times, etc.
+    * Saves the RouteLayer associated with the view model as a new portal item.
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#serviceDescription)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#saveAs)
+    */
+  def saveAs(portalItem: js.Promise[PortalItem]): js.Promise[PortalItem] = js.native
+  def saveAs(portalItem: js.Promise[PortalItem], options: DirectionsViewModelSaveAsOptions): js.Promise[PortalItem] = js.native
+  
+  /**
+    * The selected travel mode.
     *
     * @default null
-    */
-  val serviceDescription: js.Any = js.native
-  /**
-    * The current state of the view model.  **Possible Values:** disabled | ready
     *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#state)
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
+    */
+  var selectedTravelMode: TravelMode = js.native
+  
+  /**
+    * The Service Description object returned by the Route REST Endpoint.
+    *
+    * @default null
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#serviceDescription)
+    */
+  val serviceDescription: DirectionsViewModelServiceDescription = js.native
+  
+  /**
+    * The current state of the view model.
     *
     * @default disabled
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#state)
     */
-  val state: String = js.native
+  val state: disabled | ready = js.native
+  
   /**
     * The default stop symbols used to display locations between the origin and final destination.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/support/RouteStopSymbols} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stopSymbols)
     */
   var stopSymbols: DirectionsViewModelStopSymbols = js.native
+  
   /**
-    * An array of graphics that define the stop locations along the route.
+    * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Stop](https://developers.arcgis.com/javascript/latest/api-reference/esri-rest-support-Stop.html)s that define the stop locations along the route.
+    *
+    * @deprecated since version 4.24. Use {@link module:esri/layers/RouteLayer#stops stops} from [layer](#layer) instead.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stops)
     */
-  var stops: Collection[Graphic] = js.native
+  var stops: Collection[Stop] = js.native
+  
   /**
     * The name of the network attribute to use for the drive time when computing directions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#timeAttribute)
     */
   val timeAttribute: DirectionsViewModelTimeAttribute = js.native
+  
   /**
-    * Array of objects containing properties specific to either an ArcGIS service or organization's travel modes. More information can be found in the [ArcGIS Online documentation](https://doc.arcgis.com/en/arcgis-online/reference/travel-modes.htm#GUID-96DF7F50-E0B2-4BF3-8271-EB515D3F0107).
+    * Array of objects containing properties specific to either an ArcGIS service or organization's travel modes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#travelModes)
     */
   val travelModes: js.Array[TravelMode] = js.native
+  
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#view)
     */
   var view: MapView | SceneView = js.native
-  /**
-    * Centers the map at the specified maneuver or stop.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#centerAt)
-    *
-    * @param stopOrManeuver The stop or maneuver where the map should be centered.
-    *
-    */
-  def centerAt(stopOrManeuver: Graphic): Unit = js.native
-  /**
-    * Clears any highlighted route segments.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#clearHighlights)
-    *
-    *
-    */
-  def clearHighlights(): Unit = js.native
-  /**
-    * Removes the route directions from the directions list, leaving the inputs untouched. The route and locations persist on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#clearResults)
-    *
-    *
-    */
-  def clearResults(): Unit = js.native
-  /**
-    * Returns cost attribute name specific to a particular route service. This can be used as a [travel mode impedance](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#TravelMode).
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getCostAttribute)
-    *
-    * @param attributeName The attribute name specifying the cost attribute used as an impedance.
-    *
-    */
-  def getCostAttribute(attributeName: String): String = js.native
-  /**
-    * Calculate the route to the input locations and display the list of directions.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#getDirections)
-    *
-    *
-    */
-  def getDirections(): js.Promise[RouteResult] = js.native
-  /**
-    * Highlights the specified route segment on the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#highlightSegment)
-    *
-    * @param maneuver The route segment to highlight.
-    *
-    */
-  def highlightSegment(maneuver: Graphic): Unit = js.native
-  /**
-    * This method should be called to load the view model's routing resources.
-    * > You must first call this before using `DirectionsViewModel`.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#load)
-    *
-    *
-    */
-  def load(): js.Promise[_] = js.native
-  /**
-    * Resets the state of the ViewModel, clearing all the input stops and results in the widget and in the map.
-    *
-    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#reset)
-    *
-    *
-    */
-  def reset(): Unit = js.native
+  
   /**
     * Zoom so that the full route is displayed within the current map extent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#zoomToRoute)
-    *
-    *
     */
-  def zoomToRoute(): Unit = js.native
+  def zoomToRoute(): scala.Unit = js.native
 }
-
-@JSGlobal("__esri.DirectionsViewModel")
-@js.native
-object DirectionsViewModel extends TopLevel[DirectionsViewModelConstructor]
-

@@ -1,27 +1,25 @@
 package typingsJapgolly.activexExcel.Excel
 
-import typingsJapgolly.activexExcel.activexExcelNumbers.`0`
-import typingsJapgolly.activexExcel.activexExcelNumbers.`1`
+import typingsJapgolly.activexExcel.activexExcelInts.`0`
+import typingsJapgolly.activexExcel.activexExcelInts.`1`
 import typingsJapgolly.std.SafeArray
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ListObjects extends js.Object {
-  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
-  val Count: Double = js.native
-  val Creator: XlCreator = js.native
-  val Parent: js.Any = js.native
+trait ListObjects extends StObject {
+  
   def apply(Index: String): ListObject = js.native
   def apply(Index: Double): ListObject = js.native
+  
   /**
     * @param SourceType [SourceType=1]
     * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
     */
   def Add(
     SourceType: js.UndefOr[XlListObjectSourceType],
-    Source: js.UndefOr[js.Any],
+    Source: js.UndefOr[Any],
     LinkSource: js.UndefOr[Boolean],
     XlListObjectHasHeaders: js.UndefOr[XlYesNoGuess],
     Destination: js.UndefOr[Range],
@@ -47,46 +45,187 @@ trait ListObjects extends js.Object {
   @JSName("Add")
   def Add_1(SourceType: `1`): ListObject = js.native
   @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: Unit,
+    Destination: Unit,
+    TableStyleName: String
+  ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(SourceType: `1`, Source: Unit, LinkSource: Unit, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
+  @JSName("Add")
+  def Add_1(
+    SourceType: `1`,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Unit,
+    TableStyleName: String
+  ): ListObject = js.native
+  @JSName("Add")
   def Add_1(SourceType: `1`, Source: Range): ListObject = js.native
   @JSName("Add")
   def Add_1(
     SourceType: `1`,
     Source: Range,
-    LinkSource: js.UndefOr[scala.Nothing],
-    XlListObjectHasHeaders: XlYesNoGuess
+    LinkSource: Unit,
+    XlListObjectHasHeaders: Unit,
+    Destination: Unit,
+    TableStyleName: String
   ): ListObject = js.native
+  @JSName("Add")
+  def Add_1(SourceType: `1`, Source: Range, LinkSource: Unit, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
   @JSName("Add")
   def Add_1(
     SourceType: `1`,
     Source: Range,
-    LinkSource: js.UndefOr[scala.Nothing],
+    LinkSource: Unit,
     XlListObjectHasHeaders: XlYesNoGuess,
-    Destination: js.UndefOr[scala.Nothing],
+    Destination: Unit,
     TableStyleName: String
   ): ListObject = js.native
+  
+  val Application: typingsJapgolly.activexExcel.Excel.Application = js.native
+  
+  val Count: Double = js.native
+  
+  val Creator: XlCreator = js.native
+  
   def Item(Index: String): ListObject = js.native
   def Item(Index: Double): ListObject = js.native
+  
+  val Parent: Any = js.native
+  
   /**
     * @param SourceType [SourceType=1]
     * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
     */
   def _Add(): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any, LinkSource: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any, LinkSource: Any, XlListObjectHasHeaders: Unit, Destination: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any, LinkSource: Any, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
+  def _Add(
+    SourceType: Unit,
+    Source: Any,
+    LinkSource: Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any, LinkSource: Unit, XlListObjectHasHeaders: Unit, Destination: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Any, LinkSource: Unit, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
+  def _Add(
+    SourceType: Unit,
+    Source: Any,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Unit, LinkSource: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Unit, LinkSource: Any, XlListObjectHasHeaders: Unit, Destination: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Unit, LinkSource: Any, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
+  def _Add(
+    SourceType: Unit,
+    Source: Unit,
+    LinkSource: Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Unit, LinkSource: Unit, XlListObjectHasHeaders: Unit, Destination: Any): ListObject = js.native
+  def _Add(SourceType: Unit, Source: Unit, LinkSource: Unit, XlListObjectHasHeaders: XlYesNoGuess): ListObject = js.native
+  def _Add(
+    SourceType: Unit,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
   def _Add(SourceType: XlListObjectSourceType): ListObject = js.native
-  def _Add(SourceType: XlListObjectSourceType, Source: js.Any): ListObject = js.native
-  def _Add(SourceType: XlListObjectSourceType, Source: js.Any, LinkSource: js.Any): ListObject = js.native
+  def _Add(SourceType: XlListObjectSourceType, Source: Any): ListObject = js.native
+  def _Add(SourceType: XlListObjectSourceType, Source: Any, LinkSource: Any): ListObject = js.native
   def _Add(
     SourceType: XlListObjectSourceType,
-    Source: js.Any,
-    LinkSource: js.Any,
+    Source: Any,
+    LinkSource: Any,
+    XlListObjectHasHeaders: Unit,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Any,
+    LinkSource: Any,
     XlListObjectHasHeaders: XlYesNoGuess
   ): ListObject = js.native
   def _Add(
     SourceType: XlListObjectSourceType,
-    Source: js.Any,
-    LinkSource: js.Any,
+    Source: Any,
+    LinkSource: Any,
     XlListObjectHasHeaders: XlYesNoGuess,
-    Destination: js.Any
+    Destination: Any
   ): ListObject = js.native
-  def _Default(Index: js.Any): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Any,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: Unit,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Any,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Any,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(SourceType: XlListObjectSourceType, Source: Unit, LinkSource: Any): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Any,
+    XlListObjectHasHeaders: Unit,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Any,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Any,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: Unit,
+    Destination: Any
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess
+  ): ListObject = js.native
+  def _Add(
+    SourceType: XlListObjectSourceType,
+    Source: Unit,
+    LinkSource: Unit,
+    XlListObjectHasHeaders: XlYesNoGuess,
+    Destination: Any
+  ): ListObject = js.native
+  
+  def _Default(Index: Any): ListObject = js.native
 }
-

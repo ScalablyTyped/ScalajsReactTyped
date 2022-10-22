@@ -1,34 +1,33 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadata
-  extends /**
-	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadata
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Optional="false" Metadata used for the creation of the cube.
-  	 */
+    * Optional="false" Metadata used for the creation of the cube.
+    */
   var cube: js.UndefOr[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube] = js.undefined
 }
-
 object IgPivotGridDataSourceOptionsFlatDataOptionsMetadata {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadata
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    cube: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube = null
-  ): IgPivotGridDataSourceOptionsFlatDataOptionsMetadata = {
+  
+  inline def apply(): IgPivotGridDataSourceOptionsFlatDataOptionsMetadata = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (cube != null) __obj.updateDynamic("cube")(cube.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadata]
   }
+  
+  extension [Self <: IgPivotGridDataSourceOptionsFlatDataOptionsMetadata](x: Self) {
+    
+    inline def setCube(value: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+  }
 }
-

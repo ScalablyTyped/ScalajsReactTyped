@@ -1,12 +1,15 @@
-package typingsJapgolly.activexOutlook
+package typingsJapgolly.activexOutlook.Outlook
 
+import typingsJapgolly.activexOutlook.activexOutlookInts.`1`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Outlook {
-  type OlFormatKeywords = typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  type OlFormatText = typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  type OlJournalRecipientType = typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-  type OlSelectionContents = typingsJapgolly.activexOutlook.activexOutlookNumbers.`1`
-}
+
+type OlFormatKeywords = `1`
+
+type OlFormatText = `1`
+
+type OlJournalRecipientType = `1`
+
+type OlSelectionContents = `1`

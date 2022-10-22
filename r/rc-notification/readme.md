@@ -1,7 +1,7 @@
 
 # Scala.js typings for rc-notification
 
-Typings are for version 4.0.0
+Typings are for version 5.0.0-alpha.9
 
 ## Library description:
 notification ui component for react
@@ -10,10 +10,10 @@ notification ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-notification |
 | Keywords           | react, react-component, react-notification, notification |
-| # releases         | 7 |
-| # dependents       | 260 |
-| # downloads        | 10830878 |
-| # stars            | 2 |
+| # releases         | 19 |
+| # dependents       | 0.0 |
+| # downloads        | 3258359.0 |
+| # stars            | 335.0 |
 
 ## Links
 - [Homepage](http://github.com/react-component/notification)

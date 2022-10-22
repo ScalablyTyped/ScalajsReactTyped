@@ -1,44 +1,71 @@
 package typingsJapgolly.dav.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.Account> */
-trait AccountOptions extends js.Object {
+trait AccountOptions extends StObject {
+  
   var addressBooks: js.UndefOr[js.Array[AddressBook]] = js.undefined
+  
   var calendars: js.UndefOr[js.Array[Calendar]] = js.undefined
-  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], js.Any]] = js.undefined
+  
+  var constructor: js.UndefOr[js.Function1[/* options */ js.UndefOr[this.type], Any]] = js.undefined
+  
   var credentials: js.UndefOr[Credentials] = js.undefined
+  
   var homeUrl: js.UndefOr[String] = js.undefined
+  
   var principalUrl: js.UndefOr[String] = js.undefined
+  
   var rootUrl: js.UndefOr[String] = js.undefined
+  
   var server: js.UndefOr[String] = js.undefined
 }
-
 object AccountOptions {
-  @scala.inline
-  def apply(
-    addressBooks: js.Array[AddressBook] = null,
-    calendars: js.Array[Calendar] = null,
-    constructor: /* options */ js.UndefOr[AccountOptions] => CallbackTo[js.Any] = null,
-    credentials: Credentials = null,
-    homeUrl: String = null,
-    principalUrl: String = null,
-    rootUrl: String = null,
-    server: String = null
-  ): AccountOptions = {
+  
+  inline def apply(): AccountOptions = {
     val __obj = js.Dynamic.literal()
-    if (addressBooks != null) __obj.updateDynamic("addressBooks")(addressBooks.asInstanceOf[js.Any])
-    if (calendars != null) __obj.updateDynamic("calendars")(calendars.asInstanceOf[js.Any])
-    if (constructor != null) __obj.updateDynamic("constructor")(js.Any.fromFunction1((t0: /* options */ js.UndefOr[typingsJapgolly.dav.mod.AccountOptions]) => constructor(t0).runNow()))
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (homeUrl != null) __obj.updateDynamic("homeUrl")(homeUrl.asInstanceOf[js.Any])
-    if (principalUrl != null) __obj.updateDynamic("principalUrl")(principalUrl.asInstanceOf[js.Any])
-    if (rootUrl != null) __obj.updateDynamic("rootUrl")(rootUrl.asInstanceOf[js.Any])
-    if (server != null) __obj.updateDynamic("server")(server.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountOptions]
   }
+  
+  extension [Self <: AccountOptions](x: Self) {
+    
+    inline def setAddressBooks(value: js.Array[AddressBook]): Self = StObject.set(x, "addressBooks", value.asInstanceOf[js.Any])
+    
+    inline def setAddressBooksUndefined: Self = StObject.set(x, "addressBooks", js.undefined)
+    
+    inline def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value*))
+    
+    inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    
+    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value*))
+    
+    inline def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setHomeUrl(value: String): Self = StObject.set(x, "homeUrl", value.asInstanceOf[js.Any])
+    
+    inline def setHomeUrlUndefined: Self = StObject.set(x, "homeUrl", js.undefined)
+    
+    inline def setPrincipalUrl(value: String): Self = StObject.set(x, "principalUrl", value.asInstanceOf[js.Any])
+    
+    inline def setPrincipalUrlUndefined: Self = StObject.set(x, "principalUrl", js.undefined)
+    
+    inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+    
+    inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+    
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.asana.mod.auth
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OauthAuthenticatorOptions extends js.Object {
+trait OauthAuthenticatorOptions extends StObject {
+  
   var credentials: js.UndefOr[Credentials | String] = js.undefined
+  
   var flowType: js.UndefOr[FlowType] = js.undefined
 }
-
 object OauthAuthenticatorOptions {
-  @scala.inline
-  def apply(credentials: Credentials | String = null, flowType: FlowType = null): OauthAuthenticatorOptions = {
+  
+  inline def apply(): OauthAuthenticatorOptions = {
     val __obj = js.Dynamic.literal()
-    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
-    if (flowType != null) __obj.updateDynamic("flowType")(flowType.asInstanceOf[js.Any])
     __obj.asInstanceOf[OauthAuthenticatorOptions]
   }
+  
+  extension [Self <: OauthAuthenticatorOptions](x: Self) {
+    
+    inline def setCredentials(value: Credentials | String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    
+    inline def setFlowType(value: FlowType): Self = StObject.set(x, "flowType", value.asInstanceOf[js.Any])
+    
+    inline def setFlowTypeUndefined: Self = StObject.set(x, "flowType", js.undefined)
+  }
 }
-

@@ -1,29 +1,39 @@
 package typingsJapgolly.node.fsMod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MakeDirectoryOptions extends js.Object {
+trait MakeDirectoryOptions extends StObject {
+  
   /**
     * A file mode. If a string is passed, it is parsed as an octal integer. If not specified
-    * @default 0o777.
+    * @default 0o777
     */
-  var mode: js.UndefOr[Double] = js.undefined
+  var mode: js.UndefOr[Mode] = js.undefined
+  
   /**
     * Indicates whether parent folders should be created.
+    * If a folder was created, the path to the first created folder will be returned.
     * @default false
     */
   var recursive: js.UndefOr[Boolean] = js.undefined
 }
-
 object MakeDirectoryOptions {
-  @scala.inline
-  def apply(mode: Int | Double = null, recursive: js.UndefOr[Boolean] = js.undefined): MakeDirectoryOptions = {
+  
+  inline def apply(): MakeDirectoryOptions = {
     val __obj = js.Dynamic.literal()
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(recursive)) __obj.updateDynamic("recursive")(recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDirectoryOptions]
   }
+  
+  extension [Self <: MakeDirectoryOptions](x: Self) {
+    
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+  }
 }
-

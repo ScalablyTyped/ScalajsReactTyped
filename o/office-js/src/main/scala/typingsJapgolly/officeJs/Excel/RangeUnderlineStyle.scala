@@ -1,50 +1,61 @@
 package typingsJapgolly.officeJs.Excel
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait RangeUnderlineStyle extends js.Object
-
+sealed trait RangeUnderlineStyle extends StObject
 /**
+  * @remarks
   * [Api set: ExcelApi 1.1]
   */
 @JSGlobal("Excel.RangeUnderlineStyle")
 @js.native
-object RangeUnderlineStyle extends js.Object {
+object RangeUnderlineStyle extends StObject {
+  
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait double extends RangeUnderlineStyle
+  sealed trait double
+    extends StObject
+       with RangeUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait doubleAccountant extends RangeUnderlineStyle
+  sealed trait doubleAccountant
+    extends StObject
+       with RangeUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait none extends RangeUnderlineStyle
+  sealed trait none
+    extends StObject
+       with RangeUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait single extends RangeUnderlineStyle
+  sealed trait single
+    extends StObject
+       with RangeUnderlineStyle
   
+  /**
+    * @remarks
+    * [Api set: ExcelApi 1.1]
+    */
   @js.native
-  sealed trait singleAccountant extends RangeUnderlineStyle
-  
-  @JSBracketAccess
-  def apply(value: String): js.UndefOr[RangeUnderlineStyle with String] = js.native
-  /* "Double" */ @js.native
-  object double extends TopLevel[double with String]
-  
-  /* "DoubleAccountant" */ @js.native
-  object doubleAccountant extends TopLevel[doubleAccountant with String]
-  
-  /* "None" */ @js.native
-  object none extends TopLevel[none with String]
-  
-  /* "Single" */ @js.native
-  object single extends TopLevel[single with String]
-  
-  /* "SingleAccountant" */ @js.native
-  object singleAccountant extends TopLevel[singleAccountant with String]
-  
+  sealed trait singleAccountant
+    extends StObject
+       with RangeUnderlineStyle
 }
-

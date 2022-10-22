@@ -1,20 +1,22 @@
 package typingsJapgolly.aqb.mod
 
-import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpsertRet extends js.Object {
-  def insert(insertExpr: js.Any): UpsertRetInsertRet
+trait UpsertRet extends StObject {
+  
+  def insert(insertExpr: Any): UpsertRetInsertRet
 }
-
 object UpsertRet {
-  @scala.inline
-  def apply(insert: js.Any => CallbackTo[UpsertRetInsertRet]): UpsertRet = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("insert")(js.Any.fromFunction1((t0: js.Any) => insert(t0).runNow()))
+  
+  inline def apply(insert: Any => UpsertRetInsertRet): UpsertRet = {
+    val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[UpsertRet]
   }
+  
+  extension [Self <: UpsertRet](x: Self) {
+    
+    inline def setInsert(value: Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+  }
 }
-

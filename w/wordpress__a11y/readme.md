@@ -1,7 +1,7 @@
 
 # Scala.js typings for wordpress__a11y
 
-Typings are for version 2.4
+Typings are for version 3.19.0
 
 ## Library description:
 Accessibility (a11y) utilities for WordPress.
@@ -9,21 +9,22 @@ Accessibility (a11y) utilities for WordPress.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @wordpress/a11y |
-| Keywords           | wordpress, a11y, aria-live |
-| # releases         | 18 |
-| # dependents       | 11 |
-| # downloads        | 174782 |
-| # stars            | 0 |
+| Keywords           | wordpress, gutenberg, accessibility, a11y, aria-live |
+| # releases         | 54 |
+| # dependents       | 0.0 |
+| # downloads        | 146281.33333333334 |
+| # stars            | ? |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/a11y/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/a11y/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
+- [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fa11y)
     
 
 
 ## Note
-This library has been generated from typescript code from [DefinitelyTyped](https://definitelytyped.org).
+This library has been generated from typescript code from first party type definitions.
 
 Provided with :purple_heart: from [ScalablyTyped](https://github.com/oyvindberg/ScalablyTyped)
 

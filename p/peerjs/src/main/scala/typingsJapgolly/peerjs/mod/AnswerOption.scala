@@ -1,19 +1,24 @@
 package typingsJapgolly.peerjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait AnswerOption extends js.Object {
+trait AnswerOption extends StObject {
+  
   var sdpTransform: js.UndefOr[js.Function] = js.undefined
 }
-
 object AnswerOption {
-  @scala.inline
-  def apply(sdpTransform: js.Function = null): AnswerOption = {
+  
+  inline def apply(): AnswerOption = {
     val __obj = js.Dynamic.literal()
-    if (sdpTransform != null) __obj.updateDynamic("sdpTransform")(sdpTransform.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnswerOption]
   }
+  
+  extension [Self <: AnswerOption](x: Self) {
+    
+    inline def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
+    
+    inline def setSdpTransformUndefined: Self = StObject.set(x, "sdpTransform", js.undefined)
+  }
 }
-

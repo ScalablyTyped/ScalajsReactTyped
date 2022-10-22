@@ -1,23 +1,33 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait lang extends js.Object {
+/**
+  * Provides a utility method for deeply cloning objects with properties that are computed or have their own `clone()` method, such as [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html).
+  *
+  * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-lang.html)
+  */
+trait lang extends StObject {
+  
   /**
-    * Use this method to deeply clone objects with properties that are computed or have their own `clone()` method. For example, if you are creating an object that stores an initial extent and a spatial reference for your application, you can use `esriLang.clone(initialProps)` to clone this object so that the `extent` and `spatialReference` are properly cloned.
+    * Use this method to deeply clone objects with properties that are computed or have their own `clone()` method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-lang.html#clone)
-    *
-    * @param elem The object to be cloned.
-    *
     */
-  def clone(elem: js.Any): js.Any
+  def clone(elem: Any): Any
 }
-
-@JSGlobal("__esri.lang")
-@js.native
-object lang extends TopLevel[lang]
-
+object lang {
+  
+  inline def apply(clone_ : Any => Any): lang = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(js.Any.fromFunction1(clone_))
+    __obj.asInstanceOf[lang]
+  }
+  
+  extension [Self <: lang](x: Self) {
+    
+    inline def setClone_(value: Any => Any): Self = StObject.set(x, "clone", js.Any.fromFunction1(value))
+  }
+}

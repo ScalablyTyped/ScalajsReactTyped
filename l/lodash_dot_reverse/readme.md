@@ -10,10 +10,10 @@ The lodash method `_.reverse` exported as a module.
 | ------------------ | :-------------: |
 | Full name          | lodash.reverse |
 | Keywords           | lodash-modularized, reverse |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 171242 |
-| # stars            | 0 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 26045.333333333332 |
+| # stars            | ? |
 
 ## Links
 - [Homepage](https://lodash.com/)

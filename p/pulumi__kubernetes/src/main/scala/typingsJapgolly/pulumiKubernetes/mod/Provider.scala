@@ -1,23 +1,18 @@
 package typingsJapgolly.pulumiKubernetes.mod
 
-import typingsJapgolly.pulumiKubernetes.providerMod.ProviderArgs
-import typingsJapgolly.pulumiPulumi.resourceMod.ResourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "Provider")
-@js.native
-class Provider protected ()
-  extends typingsJapgolly.pulumiKubernetes.providerMod.Provider {
+object Provider {
+  
+  @JSImport("@pulumi/kubernetes", "Provider")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
-    * Create a Provider resource with the given unique name, arguments, and options.
-    *
-    * @param name The _unique_ name of the resource.
-    * @param args The arguments to use to populate this resource's properties.
-    * @param opts A bag of options that control this resource's behavior.
+    * Returns true if the given object is an instance of Provider.  This is designed to work even
+    * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  def this(name: String, args: ProviderArgs) = this()
-  def this(name: String, args: ProviderArgs, opts: ResourceOptions) = this()
+  inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/provider.Provider */ Boolean]
 }
-

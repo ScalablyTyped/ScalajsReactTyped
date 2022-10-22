@@ -4,9 +4,9 @@ import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.Blob
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A layout item that displays an image. Items can be accessed or created from a Form.
@@ -19,26 +19,39 @@ import scala.scalajs.js.annotation._
   *         .setHelpText('Google Logo') // The help text is the image description
   *         .setImage(img);
   */
-trait ImageItem extends js.Object {
+trait ImageItem extends StObject {
+  
   def duplicate(): ImageItem
+  
   def getAlignment(): Alignment
+  
   def getHelpText(): String
+  
   def getId(): Integer
+  
   def getImage(): Blob
+  
   def getIndex(): Integer
+  
   def getTitle(): String
+  
   def getType(): ItemType
+  
   def getWidth(): Integer
+  
   def setAlignment(alignment: Alignment): ImageItem
+  
   def setHelpText(text: String): ImageItem
+  
   def setImage(image: BlobSource): ImageItem
+  
   def setTitle(title: String): ImageItem
+  
   def setWidth(width: Integer): ImageItem
 }
-
 object ImageItem {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     duplicate: CallbackTo[ImageItem],
     getAlignment: CallbackTo[Alignment],
     getHelpText: CallbackTo[String],
@@ -48,28 +61,44 @@ object ImageItem {
     getTitle: CallbackTo[String],
     getType: CallbackTo[ItemType],
     getWidth: CallbackTo[Integer],
-    setAlignment: Alignment => CallbackTo[ImageItem],
-    setHelpText: String => CallbackTo[ImageItem],
-    setImage: BlobSource => CallbackTo[ImageItem],
-    setTitle: String => CallbackTo[ImageItem],
-    setWidth: Integer => CallbackTo[ImageItem]
+    setAlignment: Alignment => ImageItem,
+    setHelpText: String => ImageItem,
+    setImage: BlobSource => ImageItem,
+    setTitle: String => ImageItem,
+    setWidth: Integer => ImageItem
   ): ImageItem = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("duplicate")(duplicate.toJsFn)
-    __obj.updateDynamic("getAlignment")(getAlignment.toJsFn)
-    __obj.updateDynamic("getHelpText")(getHelpText.toJsFn)
-    __obj.updateDynamic("getId")(getId.toJsFn)
-    __obj.updateDynamic("getImage")(getImage.toJsFn)
-    __obj.updateDynamic("getIndex")(getIndex.toJsFn)
-    __obj.updateDynamic("getTitle")(getTitle.toJsFn)
-    __obj.updateDynamic("getType")(getType.toJsFn)
-    __obj.updateDynamic("getWidth")(getWidth.toJsFn)
-    __obj.updateDynamic("setAlignment")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Forms.Alignment) => setAlignment(t0).runNow()))
-    __obj.updateDynamic("setHelpText")(js.Any.fromFunction1((t0: java.lang.String) => setHelpText(t0).runNow()))
-    __obj.updateDynamic("setImage")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Base.BlobSource) => setImage(t0).runNow()))
-    __obj.updateDynamic("setTitle")(js.Any.fromFunction1((t0: java.lang.String) => setTitle(t0).runNow()))
-    __obj.updateDynamic("setWidth")(js.Any.fromFunction1((t0: typingsJapgolly.googleAppsScript.GoogleAppsScript.Integer) => setWidth(t0).runNow()))
+    val __obj = js.Dynamic.literal(duplicate = duplicate.toJsFn, getAlignment = getAlignment.toJsFn, getHelpText = getHelpText.toJsFn, getId = getId.toJsFn, getImage = getImage.toJsFn, getIndex = getIndex.toJsFn, getTitle = getTitle.toJsFn, getType = getType.toJsFn, getWidth = getWidth.toJsFn, setAlignment = js.Any.fromFunction1(setAlignment), setHelpText = js.Any.fromFunction1(setHelpText), setImage = js.Any.fromFunction1(setImage), setTitle = js.Any.fromFunction1(setTitle), setWidth = js.Any.fromFunction1(setWidth))
     __obj.asInstanceOf[ImageItem]
   }
+  
+  extension [Self <: ImageItem](x: Self) {
+    
+    inline def setDuplicate(value: CallbackTo[ImageItem]): Self = StObject.set(x, "duplicate", value.toJsFn)
+    
+    inline def setGetAlignment(value: CallbackTo[Alignment]): Self = StObject.set(x, "getAlignment", value.toJsFn)
+    
+    inline def setGetHelpText(value: CallbackTo[String]): Self = StObject.set(x, "getHelpText", value.toJsFn)
+    
+    inline def setGetId(value: CallbackTo[Integer]): Self = StObject.set(x, "getId", value.toJsFn)
+    
+    inline def setGetImage(value: CallbackTo[Blob]): Self = StObject.set(x, "getImage", value.toJsFn)
+    
+    inline def setGetIndex(value: CallbackTo[Integer]): Self = StObject.set(x, "getIndex", value.toJsFn)
+    
+    inline def setGetTitle(value: CallbackTo[String]): Self = StObject.set(x, "getTitle", value.toJsFn)
+    
+    inline def setGetType(value: CallbackTo[ItemType]): Self = StObject.set(x, "getType", value.toJsFn)
+    
+    inline def setGetWidth(value: CallbackTo[Integer]): Self = StObject.set(x, "getWidth", value.toJsFn)
+    
+    inline def setSetAlignment(value: Alignment => ImageItem): Self = StObject.set(x, "setAlignment", js.Any.fromFunction1(value))
+    
+    inline def setSetHelpText(value: String => ImageItem): Self = StObject.set(x, "setHelpText", js.Any.fromFunction1(value))
+    
+    inline def setSetImage(value: BlobSource => ImageItem): Self = StObject.set(x, "setImage", js.Any.fromFunction1(value))
+    
+    inline def setSetTitle(value: String => ImageItem): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+    
+    inline def setSetWidth(value: Integer => ImageItem): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+  }
 }
-

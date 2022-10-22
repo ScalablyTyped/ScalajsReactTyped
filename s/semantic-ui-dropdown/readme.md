@@ -10,10 +10,10 @@ Single component release of dropdown
 | ------------------ | :-------------: |
 | Full name          | semantic-ui-dropdown |
 | Keywords           | - |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 75762 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 5302.333333333333 |
+| # stars            | 24.0 |
 
 ## Links
 - [Homepage](http://www.semantic-ui.com)

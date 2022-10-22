@@ -1,19 +1,24 @@
 package typingsJapgolly.mdast.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Reference extends Association {
+trait Reference
+  extends StObject
+     with Association {
+  
   var referenceType: ReferenceType
 }
-
 object Reference {
-  @scala.inline
-  def apply(identifier: String, referenceType: ReferenceType, label: String = null): Reference = {
+  
+  inline def apply(identifier: String, referenceType: ReferenceType): Reference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
+  
+  extension [Self <: Reference](x: Self) {
+    
+    inline def setReferenceType(value: ReferenceType): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
+  }
 }
-

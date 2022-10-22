@@ -1,27 +1,36 @@
 package typingsJapgolly.googleCloudFirestore.FirebaseFirestore
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("FirebaseFirestore.GeoPoint")
-@js.native
-class GeoPoint protected () extends js.Object {
-  /**
-    * Creates a new immutable GeoPoint object with the provided latitude and
-    * longitude values.
-    * @param latitude The latitude as number between -90 and 90.
-    * @param longitude The longitude as number between -180 and 180.
-    */
-  def this(latitude: Double, longitude: Double) = this()
-  val latitude: Double = js.native
-  val longitude: Double = js.native
+trait GeoPoint extends StObject {
+  
   /**
     * Returns true if this `GeoPoint` is equal to the provided one.
     *
     * @param other The `GeoPoint` to compare against.
     * @return true if this `GeoPoint` is equal to the provided one.
     */
-  def isEqual(other: GeoPoint): Boolean = js.native
+  def isEqual(other: GeoPoint): Boolean
+  
+  val latitude: Double
+  
+  val longitude: Double
 }
-
+object GeoPoint {
+  
+  inline def apply(isEqual: GeoPoint => Boolean, latitude: Double, longitude: Double): GeoPoint = {
+    val __obj = js.Dynamic.literal(isEqual = js.Any.fromFunction1(isEqual), latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeoPoint]
+  }
+  
+  extension [Self <: GeoPoint](x: Self) {
+    
+    inline def setIsEqual(value: GeoPoint => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
+    
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+  }
+}

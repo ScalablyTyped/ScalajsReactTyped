@@ -1,13 +1,24 @@
 package typingsJapgolly.jqueryNoty
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQuery extends js.Object {
+trait JQuery extends StObject {
+  
+  def noty(notyOptions: NotyOptions): Any
   @JSName("noty")
-  var noty_Original: Noty_ = js.native
-  def noty(notyOptions: NotyOptions): js.Any = js.native
+  var noty_Original: Noty
 }
-
+object JQuery {
+  
+  inline def apply(noty: Noty): JQuery = {
+    val __obj = js.Dynamic.literal(noty = noty.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  extension [Self <: JQuery](x: Self) {
+    
+    inline def setNoty(value: Noty): Self = StObject.set(x, "noty", value.asInstanceOf[js.Any])
+  }
+}

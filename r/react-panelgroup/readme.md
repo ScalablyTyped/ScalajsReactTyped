@@ -10,10 +10,10 @@ react-panelgroup React component
 | ------------------ | :-------------: |
 | Full name          | react-panelgroup |
 | Keywords           | react-component |
-| # releases         | 6 |
-| # dependents       | 1 |
-| # downloads        | 102285 |
-| # stars            | 0 |
+| # releases         | 2 |
+| # dependents       | 0.0 |
+| # downloads        | 12385.666666666666 |
+| # stars            | 245.0 |
 
 ## Links
 - [Homepage](http://www.DanFessler.com)

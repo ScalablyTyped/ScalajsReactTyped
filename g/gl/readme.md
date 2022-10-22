@@ -10,10 +10,10 @@ Creates a WebGL context without a window
 | ------------------ | :-------------: |
 | Full name          | gl |
 | Keywords           | webgl, opengl, gl, headless, server, gpgpu |
-| # releases         | 8 |
-| # dependents       | 21 |
-| # downloads        | 265742 |
-| # stars            | 7 |
+| # releases         | 6 |
+| # dependents       | 0.0 |
+| # downloads        | 92835.0 |
+| # stars            | 1514.0 |
 
 ## Links
 - [Homepage](https://github.com/stackgl/headless-gl#readme)

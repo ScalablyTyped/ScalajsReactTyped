@@ -1,20 +1,15 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable1
-import org.scalablytyped.runtime.Instantiable2
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Focus-related events like focus, blur, focusin, or focusout. */
 @js.native
-trait FocusEvent extends UIEvent {
-  val relatedTarget: org.scalajs.dom.raw.EventTarget | Null = js.native
+trait FocusEvent
+  extends StObject
+     with UIEvent {
+  
+  /* standard dom */
+  val relatedTarget: org.scalajs.dom.EventTarget | Null = js.native
 }
-
-@JSGlobal("FocusEvent")
-@js.native
-object FocusEvent
-  extends Instantiable1[/* type */ java.lang.String, FocusEvent]
-     with Instantiable2[/* type */ java.lang.String, /* eventInitDict */ FocusEventInit, FocusEvent]
-

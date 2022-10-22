@@ -2,98 +2,114 @@ package typingsJapgolly.reactPdf.components
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import japgolly.scalajs.react.raw.React.Element
-import org.scalablytyped.runtime.StringDictionary
-import org.scalajs.dom.raw.HTMLDivElement
-import typingsJapgolly.pdfjsDist.mod.PDFPageProxy
+import japgolly.scalajs.react.ReactMouseEventFrom
+import japgolly.scalajs.react.vdom.VdomElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalajs.dom.HTMLDivElement
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.LegacyRef
-import typingsJapgolly.reactPdf.pageMod.LoadingProcessData
-import typingsJapgolly.reactPdf.pageMod.Props
-import typingsJapgolly.reactPdf.pageMod.RenderFunction
-import typingsJapgolly.reactPdf.pageMod.TextItem
-import typingsJapgolly.reactPdf.pageMod.TextLayerItemInternal
-import typingsJapgolly.reactPdf.pageMod.default
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactPdf.distPageMod.PDFPageProxy
+import typingsJapgolly.reactPdf.distPageMod.Props
+import typingsJapgolly.reactPdf.distPageMod.RenderFunction
+import typingsJapgolly.reactPdf.distPageMod.TextItem
+import typingsJapgolly.reactPdf.distPageMod.TextLayerItemInternal
 import typingsJapgolly.reactPdf.reactPdfStrings.canvas
 import typingsJapgolly.reactPdf.reactPdfStrings.none
 import typingsJapgolly.reactPdf.reactPdfStrings.svg
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Page {
-  def apply(
-    className: String | js.Array[String] = null,
-    customTextRenderer: /* layer */ TextLayerItemInternal => CallbackTo[Element] = null,
-    error: String | Element | RenderFunction = null,
-    height: Int | Double = null,
-    inputRef: LegacyRef[HTMLDivElement] = null,
-    loading: String | Element | RenderFunction = null,
-    noData: String | Element | RenderFunction = null,
-    onGetAnnotationsError: /* error */ js.Error => Callback = null,
-    onGetAnnotationsSuccess: /* annotations */ js.Any => Callback = null,
-    onGetTextError: /* error */ js.Error => Callback = null,
-    onGetTextSuccess: /* items */ js.Array[TextItem] => Callback = null,
-    onLoadError: /* error */ js.Error => Callback = null,
-    onLoadProgress: /* data */ LoadingProcessData => Callback = null,
-    onLoadSuccess: /* page */ PDFPageProxy => Callback = null,
-    onRenderError: /* error */ js.Error => Callback = null,
-    onRenderSuccess: js.UndefOr[Callback] = js.undefined,
-    pageIndex: Int | Double = null,
-    pageNumber: Int | Double = null,
-    renderAnnotationLayer: js.UndefOr[Boolean] = js.undefined,
-    renderInteractiveForms: js.UndefOr[Boolean] = js.undefined,
-    renderMode: canvas | svg | none = null,
-    renderTextLayer: js.UndefOr[Boolean] = js.undefined,
-    rotate: Int | Double = null,
-    scale: Int | Double = null,
-    width: Int | Double = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[Props, default, Unit, Props] = {
-    val __obj = js.Dynamic.literal()
   
-      if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
-    if (customTextRenderer != null) __obj.updateDynamic("customTextRenderer")(js.Any.fromFunction1((t0: /* layer */ typingsJapgolly.reactPdf.pageMod.TextLayerItemInternal) => customTextRenderer(t0).runNow()))
-    if (error != null) __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
-    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
-    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
-    if (noData != null) __obj.updateDynamic("noData")(noData.asInstanceOf[js.Any])
-    if (onGetAnnotationsError != null) __obj.updateDynamic("onGetAnnotationsError")(js.Any.fromFunction1((t0: /* error */ js.Error) => onGetAnnotationsError(t0).runNow()))
-    if (onGetAnnotationsSuccess != null) __obj.updateDynamic("onGetAnnotationsSuccess")(js.Any.fromFunction1((t0: /* annotations */ js.Any) => onGetAnnotationsSuccess(t0).runNow()))
-    if (onGetTextError != null) __obj.updateDynamic("onGetTextError")(js.Any.fromFunction1((t0: /* error */ js.Error) => onGetTextError(t0).runNow()))
-    if (onGetTextSuccess != null) __obj.updateDynamic("onGetTextSuccess")(js.Any.fromFunction1((t0: /* items */ js.Array[typingsJapgolly.reactPdf.pageMod.TextItem]) => onGetTextSuccess(t0).runNow()))
-    if (onLoadError != null) __obj.updateDynamic("onLoadError")(js.Any.fromFunction1((t0: /* error */ js.Error) => onLoadError(t0).runNow()))
-    if (onLoadProgress != null) __obj.updateDynamic("onLoadProgress")(js.Any.fromFunction1((t0: /* data */ typingsJapgolly.reactPdf.pageMod.LoadingProcessData) => onLoadProgress(t0).runNow()))
-    if (onLoadSuccess != null) __obj.updateDynamic("onLoadSuccess")(js.Any.fromFunction1((t0: /* page */ typingsJapgolly.pdfjsDist.mod.PDFPageProxy) => onLoadSuccess(t0).runNow()))
-    if (onRenderError != null) __obj.updateDynamic("onRenderError")(js.Any.fromFunction1((t0: /* error */ js.Error) => onRenderError(t0).runNow()))
-    onRenderSuccess.foreach(p => __obj.updateDynamic("onRenderSuccess")(p.toJsFn))
-    if (pageIndex != null) __obj.updateDynamic("pageIndex")(pageIndex.asInstanceOf[js.Any])
-    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderAnnotationLayer)) __obj.updateDynamic("renderAnnotationLayer")(renderAnnotationLayer.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderInteractiveForms)) __obj.updateDynamic("renderInteractiveForms")(renderInteractiveForms.asInstanceOf[js.Any])
-    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
-    if (!js.isUndefined(renderTextLayer)) __obj.updateDynamic("renderTextLayer")(renderTextLayer.asInstanceOf[js.Any])
-    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
-    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactPdf.pageMod.Props, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactPdf.pageMod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactPdf.pageMod.Props])(children: _*)
-  }
-  @JSImport("react-pdf/dist/Page", JSImport.Default)
+  @JSImport("react-pdf", "Page")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactPdf.mod.Page] {
+    
+    inline def canvasRef(value: LegacyRef[HTMLCanvasElement]): this.type = set("canvasRef", value.asInstanceOf[js.Any])
+    
+    inline def canvasRefFunction1(value: HTMLCanvasElement | Null => Callback): this.type = set("canvasRef", js.Any.fromFunction1((t0: HTMLCanvasElement | Null) => value(t0).runNow()))
+    
+    inline def canvasRefNull: this.type = set("canvasRef", null)
+    
+    inline def className(value: String | js.Array[String]): this.type = set("className", value.asInstanceOf[js.Any])
+    
+    inline def classNameVarargs(value: String*): this.type = set("className", js.Array(value*))
+    
+    inline def customTextRenderer(value: /* layer */ TextLayerItemInternal => Element): this.type = set("customTextRenderer", js.Any.fromFunction1(value))
+    
+    inline def error(value: String | japgolly.scalajs.react.facade.React.Element | RenderFunction): this.type = set("error", value.asInstanceOf[js.Any])
+    
+    inline def errorCallbackTo(value: CallbackTo[Element]): this.type = set("error", value.toJsFn)
+    
+    inline def errorVdomElement(value: VdomElement): this.type = set("error", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def height(value: Double): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def inputRef(value: LegacyRef[HTMLDivElement]): this.type = set("inputRef", value.asInstanceOf[js.Any])
+    
+    inline def inputRefFunction1(value: HTMLDivElement | Null => Callback): this.type = set("inputRef", js.Any.fromFunction1((t0: HTMLDivElement | Null) => value(t0).runNow()))
+    
+    inline def inputRefNull: this.type = set("inputRef", null)
+    
+    inline def loading(value: String | japgolly.scalajs.react.facade.React.Element | RenderFunction): this.type = set("loading", value.asInstanceOf[js.Any])
+    
+    inline def loadingCallbackTo(value: CallbackTo[Element]): this.type = set("loading", value.toJsFn)
+    
+    inline def loadingVdomElement(value: VdomElement): this.type = set("loading", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def noData(value: String | japgolly.scalajs.react.facade.React.Element | RenderFunction): this.type = set("noData", value.asInstanceOf[js.Any])
+    
+    inline def noDataCallbackTo(value: CallbackTo[Element]): this.type = set("noData", value.toJsFn)
+    
+    inline def noDataVdomElement(value: VdomElement): this.type = set("noData", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def onClick(
+      value: (/* event */ ReactMouseEventFrom[org.scalajs.dom.Element], /* page */ PDFPageProxy) => Callback
+    ): this.type = set("onClick", js.Any.fromFunction2((t0: /* event */ ReactMouseEventFrom[org.scalajs.dom.Element], t1: /* page */ PDFPageProxy) => (value(t0, t1)).runNow()))
+    
+    inline def onGetAnnotationsError(value: /* error */ js.Error => Callback): this.type = set("onGetAnnotationsError", js.Any.fromFunction1((t0: /* error */ js.Error) => value(t0).runNow()))
+    
+    inline def onGetAnnotationsSuccess(value: /* annotations */ Any => Callback): this.type = set("onGetAnnotationsSuccess", js.Any.fromFunction1((t0: /* annotations */ Any) => value(t0).runNow()))
+    
+    inline def onGetTextError(value: /* error */ js.Error => Callback): this.type = set("onGetTextError", js.Any.fromFunction1((t0: /* error */ js.Error) => value(t0).runNow()))
+    
+    inline def onGetTextSuccess(value: /* items */ js.Array[TextItem] => Callback): this.type = set("onGetTextSuccess", js.Any.fromFunction1((t0: /* items */ js.Array[TextItem]) => value(t0).runNow()))
+    
+    inline def onLoadError(value: /* error */ js.Error => Callback): this.type = set("onLoadError", js.Any.fromFunction1((t0: /* error */ js.Error) => value(t0).runNow()))
+    
+    inline def onLoadSuccess(value: /* page */ PDFPageProxy => Callback): this.type = set("onLoadSuccess", js.Any.fromFunction1((t0: /* page */ PDFPageProxy) => value(t0).runNow()))
+    
+    inline def onRenderError(value: /* error */ js.Error => Callback): this.type = set("onRenderError", js.Any.fromFunction1((t0: /* error */ js.Error) => value(t0).runNow()))
+    
+    inline def onRenderSuccess(value: /* page */ PDFPageProxy => Callback): this.type = set("onRenderSuccess", js.Any.fromFunction1((t0: /* page */ PDFPageProxy) => value(t0).runNow()))
+    
+    inline def pageIndex(value: Double): this.type = set("pageIndex", value.asInstanceOf[js.Any])
+    
+    inline def pageNumber(value: Double): this.type = set("pageNumber", value.asInstanceOf[js.Any])
+    
+    inline def renderAnnotationLayer(value: Boolean): this.type = set("renderAnnotationLayer", value.asInstanceOf[js.Any])
+    
+    inline def renderInteractiveForms(value: Boolean): this.type = set("renderInteractiveForms", value.asInstanceOf[js.Any])
+    
+    inline def renderMode(value: canvas | svg | none): this.type = set("renderMode", value.asInstanceOf[js.Any])
+    
+    inline def renderTextLayer(value: Boolean): this.type = set("renderTextLayer", value.asInstanceOf[js.Any])
+    
+    inline def rotate(value: Double): this.type = set("rotate", value.asInstanceOf[js.Any])
+    
+    inline def scale(value: Double): this.type = set("scale", value.asInstanceOf[js.Any])
+    
+    inline def width(value: Double): this.type = set("width", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Page.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: Props): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

@@ -10,10 +10,10 @@ Fast Javascript text diff
 | ------------------ | :-------------: |
 | Full name          | fast-diff |
 | Keywords           | diff |
-| # releases         | 2 |
-| # dependents       | 52 |
-| # downloads        | 93408288 |
-| # stars            | 6 |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 4.0602450333333336E7 |
+| # stars            | 519.0 |
 
 ## Links
 - [Homepage](https://github.com/jhchen/fast-diff#readme)

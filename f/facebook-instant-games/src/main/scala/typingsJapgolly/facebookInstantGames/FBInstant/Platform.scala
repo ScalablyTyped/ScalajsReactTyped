@@ -1,8 +1,8 @@
 package typingsJapgolly.facebookInstantGames.FBInstant
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the current platform that the user is playing on.
@@ -13,18 +13,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.WEB
   - typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB
 */
-trait Platform extends js.Object
-
+trait Platform extends StObject
 object Platform {
-  @scala.inline
-  def ANDROID: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.ANDROID = this.cast("ANDROID")
-  @scala.inline
-  def IOS: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.IOS = this.cast("IOS")
-  @scala.inline
-  def MOBILE_WEB: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB = this.cast("MOBILE_WEB")
-  @scala.inline
-  def WEB: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.WEB = this.cast("WEB")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def ANDROID: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.ANDROID = "ANDROID".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.ANDROID]
+  
+  inline def IOS: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.IOS = "IOS".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.IOS]
+  
+  inline def MOBILE_WEB: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB = "MOBILE_WEB".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.MOBILE_WEB]
+  
+  inline def WEB: typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.WEB = "WEB".asInstanceOf[typingsJapgolly.facebookInstantGames.facebookInstantGamesStrings.WEB]
 }
-

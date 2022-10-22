@@ -1,15 +1,15 @@
 package typingsJapgolly.knockback.Knockback
 
 import typingsJapgolly.backbone.mod.ModelBase
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Knockback.TriggeredObservable")
 @js.native
-class TriggeredObservable protected () extends Destroyable {
-  def this(emitter: ModelBase, event: String) = this()
+trait TriggeredObservable
+  extends StObject
+     with Destroyable {
+  
   def emitter(): ModelBase = js.native
-  def emitter(newEmitter: ModelBase): js.Any = js.native
+  def emitter(newEmitter: ModelBase): Any = js.native
 }
-

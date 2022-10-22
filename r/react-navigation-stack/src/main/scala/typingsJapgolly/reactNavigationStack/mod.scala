@@ -1,187 +1,211 @@
 package typingsJapgolly.reactNavigationStack
 
-import japgolly.scalajs.react.raw.React.Ref
-import org.scalablytyped.runtime.TopLevel
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.react.mod.ComponentState
-import typingsJapgolly.react.mod.ComponentType
 import typingsJapgolly.react.mod.Context
+import typingsJapgolly.react.mod.NamedExoticComponent
+import typingsJapgolly.react.mod.Ref
+import typingsJapgolly.react.mod.global.JSX.Element
+import typingsJapgolly.reactNativeGestureHandler.libTypescriptHandlersPanGestureHandlerMod.PanGestureHandler
 import typingsJapgolly.reactNavigation.mod.CreateNavigatorConfig
+import typingsJapgolly.reactNavigation.mod.NavigationNavigator
 import typingsJapgolly.reactNavigation.mod.NavigationParams
+import typingsJapgolly.reactNavigation.mod.NavigationProp
 import typingsJapgolly.reactNavigation.mod.NavigationRoute
 import typingsJapgolly.reactNavigation.mod.NavigationRouteConfigMap
 import typingsJapgolly.reactNavigation.mod.NavigationStackRouterConfig
-import typingsJapgolly.reactNavigation.mod.SupportedThemes
-import typingsJapgolly.reactNavigationStack.createPointerEventsContainerMod.InjectedProps
-import typingsJapgolly.reactNavigationStack.createPointerEventsContainerMod.InputProps
-import typingsJapgolly.reactNavigationStack.headerBackButtonMod.default
-import typingsJapgolly.reactNavigationStack.transitionerMod.Props
-import typingsJapgolly.reactNavigationStack.typesMod.NavigationStackConfig
-import typingsJapgolly.reactNavigationStack.typesMod.NavigationStackOptions
-import typingsJapgolly.reactNavigationStack.typesMod.NavigationStackProp
-import typingsJapgolly.reactNavigationStack.typesMod.NavigationStackState
-import typingsJapgolly.reactNavigationStack.typesMod.Scene
-import typingsJapgolly.reactNavigationStack.typesMod.SceneDescriptorMap
-import typingsJapgolly.reactNavigationStack.typesMod.SceneInterpolatorProps
-import typingsJapgolly.reactNavigationStack.typesMod.TransitionConfig
-import typingsJapgolly.reactNavigationStack.typesMod.TransitionProps
-import typingsJapgolly.std.Exclude
-import typingsJapgolly.std.Pick
+import typingsJapgolly.reactNavigation.mod.NavigationState
+import typingsJapgolly.reactNavigationStack.anon.ClosingRouteKeys
+import typingsJapgolly.reactNavigationStack.anon.Descriptors
+import typingsJapgolly.reactNavigationStack.anon.ReadonlyProps
+import typingsJapgolly.reactNavigationStack.anon.ReadonlyState
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardInterpolatedStyle
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackCardInterpolationProps
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolatedStyle
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderInterpolationProps
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackHeaderProps
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationConfig
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationOptions
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.StackNavigationProp
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionPreset
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorTypesMod.TransitionSpec
+import typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderBackButtonMod.Props
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-stack", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("react-navigation-stack", JSImport.Namespace)
   @js.native
-  class Header protected ()
-    extends Component[PickPropsscenenavigationp, js.Any, js.Any] {
-    def this(props: PickPropsscenenavigationp) = this()
-    def this(props: PickPropsscenenavigationp, context: js.Any) = this()
+  val ^ : js.Any = js.native
+  
+  @JSImport("react-navigation-stack", "Assets")
+  @js.native
+  val Assets: js.Array[Any] = js.native
+  
+  @JSImport("react-navigation-stack", "CardAnimationContext")
+  @js.native
+  val CardAnimationContext: Context[js.UndefOr[StackCardInterpolationProps]] = js.native
+  
+  object CardStyleInterpolators {
+    
+    @JSImport("react-navigation-stack", "CardStyleInterpolators")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def forFadeFromBottomAndroid(hasCurrentInvertedHasScreenClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(hasCurrentInvertedHasScreenClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forHorizontalIOS(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forModalPresentationIOS(hasIndexCurrentNextInvertedHasScreenInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(hasIndexCurrentNextInvertedHasScreenInsets.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forNoAnimation(): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forRevealFromBottomAndroid(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(hasCurrentNextClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    inline def forVerticalIOS(hasCurrentInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(hasCurrentInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   }
   
+  @JSImport("react-navigation-stack", "GestureHandlerRefContext")
   @js.native
-  class HeaderBackButton () extends default
+  val GestureHandlerRefContext: Context[Ref[PanGestureHandler]] = js.native
   
+  @JSImport("react-navigation-stack", "Header")
   @js.native
-  class HeaderTitle ()
-    extends typingsJapgolly.reactNavigationStack.headerTitleMod.default
+  val Header: NamedExoticComponent[StackHeaderProps] = js.native
   
-  @js.native
-  class StackView ()
-    extends typingsJapgolly.reactNavigationStack.stackViewMod.StackView
+  inline def HeaderBackButton(
+    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
+  inline def HeaderBackground(
+    hasStyleRest: typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderBackgroundMod.Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-navigation-stack", "HeaderHeightContext")
   @js.native
-  class StackViewCard protected ()
-    extends Component[PickPropsstylechildrensce, ComponentState, js.Any] {
-    def this(props: PickPropsstylechildrensce) = this()
-    def this(props: PickPropsstylechildrensce, context: js.Any) = this()
+  val HeaderHeightContext: Context[js.UndefOr[Double]] = js.native
+  
+  object HeaderStyleInterpolators {
+    
+    @JSImport("react-navigation-stack", "HeaderStyleInterpolators")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(hasCurrentNext.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    inline def forNoAnimation(): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    inline def forSlideLeft(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    inline def forSlideRight(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    inline def forSlideUp(hasCurrentNextHasHeader: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(hasCurrentNextHasHeader.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    inline def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
+  inline def HeaderTitle(
+    hasTintColorStyleRest: typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorViewsHeaderHeaderTitleMod.Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @JSImport("react-navigation-stack", "StackView")
   @js.native
-  class StackViewLayout protected ()
-    extends Component[PickPropsmodeheaderModehe, ComponentState, js.Any] {
-    def this(props: PickPropsmodeheaderModehe) = this()
-    def this(props: PickPropsmodeheaderModehe, context: js.Any) = this()
+  open class StackView ()
+    extends typingsJapgolly.reactNavigationStack.libTypescriptSrcVendorMod.StackView
+  /* static members */
+  object StackView {
+    
+    @JSImport("react-navigation-stack", "StackView")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | Descriptors = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | Descriptors]
   }
   
-  @js.native
-  class Transitioner protected ()
-    extends typingsJapgolly.reactNavigationStack.transitionerMod.default {
-    def this(props: Props) = this()
+  object TransitionPresets {
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.DefaultTransition")
+    @js.native
+    val DefaultTransition: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.FadeFromBottomAndroid")
+    @js.native
+    val FadeFromBottomAndroid: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.ModalPresentationIOS")
+    @js.native
+    val ModalPresentationIOS: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.ModalSlideFromBottomIOS")
+    @js.native
+    val ModalSlideFromBottomIOS: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.ModalTransition")
+    @js.native
+    val ModalTransition: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.RevealFromBottomAndroid")
+    @js.native
+    val RevealFromBottomAndroid: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.ScaleFromCenterAndroid")
+    @js.native
+    val ScaleFromCenterAndroid: TransitionPreset = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionPresets.SlideFromRightIOS")
+    @js.native
+    val SlideFromRightIOS: TransitionPreset = js.native
   }
   
-  val Assets: js.Array[js.Any] = js.native
-  val StackGestureContext: Context[Ref] = js.native
-  def ScenesReducer(
-    scenes: js.Array[Scene],
-    nextState: NavigationStackState,
-    prevState: Null,
-    descriptors: SceneDescriptorMap
-  ): js.Array[Scene] = js.native
-  def ScenesReducer(
-    scenes: js.Array[Scene],
-    nextState: NavigationStackState,
-    prevState: NavigationStackState,
-    descriptors: SceneDescriptorMap
-  ): js.Array[Scene] = js.native
-  def createPointerEventsContainer[Props /* <: InjectedProps with InputProps */](Component: ComponentType[Props]): ComponentType[Pick[Props, Exclude[String, String]]] = js.native
-  def createStackNavigator(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _]
-  ): js.Any = js.native
-  def createStackNavigator(
-    routeConfigMap: NavigationRouteConfigMap[NavigationStackOptions, NavigationStackProp[NavigationRoute[NavigationParams], _], _],
-    stackConfig: CreateNavigatorConfig[
-      NavigationStackConfig, 
-      NavigationStackRouterConfig, 
-      NavigationStackOptions, 
-      NavigationStackProp[NavigationRoute[NavigationParams], _]
+  object TransitionSpecs {
+    
+    @JSImport("react-navigation-stack", "TransitionSpecs.FadeInFromBottomAndroidSpec")
+    @js.native
+    val FadeInFromBottomAndroidSpec: TransitionSpec = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionSpecs.FadeOutToBottomAndroidSpec")
+    @js.native
+    val FadeOutToBottomAndroidSpec: TransitionSpec = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionSpecs.RevealFromBottomAndroidSpec")
+    @js.native
+    val RevealFromBottomAndroidSpec: TransitionSpec = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionSpecs.ScaleFromCenterAndroidSpec")
+    @js.native
+    val ScaleFromCenterAndroidSpec: TransitionSpec = js.native
+    
+    @JSImport("react-navigation-stack", "TransitionSpecs.TransitionIOSSpec")
+    @js.native
+    val TransitionIOSSpec: TransitionSpec = js.native
+  }
+  
+  inline def createStackNavigator(
+    routeConfigMap: NavigationRouteConfigMap[
+      StackNavigationOptions, 
+      StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
+      Any
     ]
-  ): js.Any = js.native
-  @js.native
-  object Header extends TopLevel[ComponentClassPickPropssc | FunctionComponentPickProp]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any]).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
+  inline def createStackNavigator(
+    routeConfigMap: NavigationRouteConfigMap[
+      StackNavigationOptions, 
+      StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams], 
+      Any
+    ],
+    stackConfig: CreateNavigatorConfig[
+      StackNavigationConfig, 
+      NavigationStackRouterConfig, 
+      StackNavigationOptions, 
+      StackNavigationProp[NavigationRoute[NavigationParams], NavigationParams]
+    ]
+  ): NavigationNavigator[Any, NavigationProp[NavigationState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")(routeConfigMap.asInstanceOf[js.Any], stackConfig.asInstanceOf[js.Any])).asInstanceOf[NavigationNavigator[Any, NavigationProp[NavigationState]]]
   
-  /* static members */
-  @js.native
-  object HeaderBackButton extends js.Object {
-    var contextType: Context[SupportedThemes] = js.native
-    var defaultProps: AnonBackImage = js.native
-  }
+  inline def useCardAnimation(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCardAnimation")().asInstanceOf[StackCardInterpolationProps]
   
-  @js.native
-  object HeaderStyleInterpolator extends js.Object {
-    var forBackground: js.Function1[/* hasNavigationScene */ SceneInterpolatorProps, AnonOpacity] = js.native
-    var forBackgroundWithFade: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacity | AnonOpacityAnimatedInterpolation] = js.native
-    var forBackgroundWithInactiveHidden: js.Function1[/* hasNavigationScene */ SceneInterpolatorProps, AnonOpacity] = js.native
-    var forBackgroundWithTranslation: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacityTransform | AnonOpacityUndefined] = js.native
-    var forCenter: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacity | AnonOpacityAnimatedInterpolation] = js.native
-    var forCenterFromLeft: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityTransform | AnonOpacityAnimatedInterpolationTransformArray
-      ] = js.native
-    var forLayout: js.Function1[/* props */ SceneInterpolatorProps, AnonTransform | AnonTransformArray | Anon0] = js.native
-    var forLeft: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacity | AnonOpacityAnimatedInterpolation] = js.native
-    var forLeftButton: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacity | AnonOpacityAnimatedInterpolation] = js.native
-    var forLeftLabel: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityTransform | AnonOpacityAnimatedInterpolationTransformArray
-      ] = js.native
-    var forRight: js.Function1[/* props */ SceneInterpolatorProps, AnonOpacity | AnonOpacityAnimatedInterpolation] = js.native
-  }
+  inline def useGestureHandlerRef(): Ref[PanGestureHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGestureHandlerRef")().asInstanceOf[Ref[PanGestureHandler]]
   
-  /* static members */
-  @js.native
-  object HeaderTitle extends js.Object {
-    var contextType: Context[SupportedThemes] = js.native
-  }
-  
-  @js.native
-  object StackViewCard extends TopLevel[ComponentType[PickPropsstylechildrensce]]
-  
-  @js.native
-  object StackViewLayout extends TopLevel[ComponentType[PickPropsmodeheaderModehe]]
-  
-  @js.native
-  object StackViewStyleInterpolator extends js.Object {
-    var forFade: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityNumber | AnonOpacity | AnonOpacityAnimatedInterpolation
-      ] = js.native
-    var forFadeFromBottomAndroid: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityNumber | AnonOpacityTransform | Anon1
-      ] = js.native
-    var forFadeToBottomAndroid: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityNumber | AnonOpacityTransform | Anon1
-      ] = js.native
-    var forHorizontal: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityNumber | AnonOverlayOpacity | AnonShadowOpacity
-      ] = js.native
-    var forNoAnimation: js.Function0[js.Object] = js.native
-    var forVertical: js.Function1[
-        /* props */ SceneInterpolatorProps, 
-        AnonOpacityNumber | AnonOpacityTransform | AnonOpacityUndefinedTransformArray
-      ] = js.native
-  }
-  
-  @js.native
-  object StackViewTransitionConfigs extends js.Object {
-    var FadeInFromBottomAndroid: AnonScreenInterpolator = js.native
-    var FadeOutToBottomAndroid: AnonScreenInterpolator = js.native
-    var ModalSlideFromBottomIOS: AnonContainerStyleLight = js.native
-    var NoAnimation: AnonTransitionSpec = js.native
-    var SlideFromRightIOS: AnonContainerStyleDark = js.native
-    var defaultTransitionConfig: js.Function3[
-        /* transitionProps */ TransitionProps, 
-        /* prevTransitionProps */ js.UndefOr[TransitionProps], 
-        /* isModal */ js.UndefOr[Boolean], 
-        TransitionConfig
-      ] = js.native
-    var getTransitionConfig: FnCall = js.native
-  }
-  
+  inline def useHeaderHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeaderHeight")().asInstanceOf[Double]
 }
-

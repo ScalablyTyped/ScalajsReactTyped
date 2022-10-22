@@ -1,37 +1,53 @@
 package typingsJapgolly.rmcTabs
 
-import typingsJapgolly.rmcTabs.defaultTabBarMod.PropsType
+import typingsJapgolly.rmcTabs.anon.TypeofDefaultTabBar
+import typingsJapgolly.rmcTabs.libDefaultTabBarMod.PropsType
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("rmc-tabs", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("rmc-tabs", "DefaultTabBar")
   @js.native
-  class DefaultTabBar protected ()
-    extends typingsJapgolly.rmcTabs.defaultTabBarMod.DefaultTabBar {
+  open class DefaultTabBar protected ()
+    extends typingsJapgolly.rmcTabs.libDefaultTabBarMod.DefaultTabBar {
     def this(props: PropsType) = this()
   }
-  
-  @js.native
-  class Tabs protected ()
-    extends typingsJapgolly.rmcTabs.tabsMod.Tabs {
-    def this(props: typingsJapgolly.rmcTabs.tabsMod.PropsType) = this()
-  }
-  
   /* static members */
-  @js.native
-  object DefaultTabBar extends js.Object {
-    var defaultProps: PropsType = js.native
+  object DefaultTabBar {
+    
+    @JSImport("rmc-tabs", "DefaultTabBar")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-tabs", "DefaultTabBar.defaultProps")
+    @js.native
+    def defaultProps: PropsType = js.native
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
+  @JSImport("rmc-tabs", "Tabs")
+  @js.native
+  open class Tabs protected ()
+    extends typingsJapgolly.rmcTabs.libTabsMod.Tabs {
+    def this(props: typingsJapgolly.rmcTabs.libTabsMod.PropsType) = this()
+  }
   /* static members */
-  @js.native
-  object Tabs extends js.Object {
-    var DefaultTabBar: TypeofDefaultTabBar = js.native
-    var defaultProps: typingsJapgolly.rmcTabs.tabsMod.PropsType = js.native
+  object Tabs {
+    
+    @JSImport("rmc-tabs", "Tabs")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("rmc-tabs", "Tabs.DefaultTabBar")
+    @js.native
+    def DefaultTabBar: TypeofDefaultTabBar = js.native
+    inline def DefaultTabBar_=(x: TypeofDefaultTabBar): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultTabBar")(x.asInstanceOf[js.Any])
+    
+    @JSImport("rmc-tabs", "Tabs.defaultProps")
+    @js.native
+    def defaultProps: typingsJapgolly.rmcTabs.libTabsMod.PropsType = js.native
+    inline def defaultProps_=(x: typingsJapgolly.rmcTabs.libTabsMod.PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
-  
 }
-

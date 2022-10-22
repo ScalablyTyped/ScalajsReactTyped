@@ -2,9 +2,9 @@ package typingsJapgolly.googleAppsScript.GoogleAppsScript.CardService
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error that can be returned to trigger an authorization card to be shown to the user.
@@ -14,30 +14,41 @@ import scala.scalajs.js.annotation._
   *       .setResourceDisplayName("Example Resource")
   *       .throwException();
   */
-trait AuthorizationException extends js.Object {
+trait AuthorizationException extends StObject {
+  
   def printJson(): String
+  
   def setAuthorizationUrl(authUrl: String): AuthorizationException
+  
   def setCustomUiCallback(callback: String): AuthorizationException
+  
   def setResourceDisplayName(name: String): AuthorizationException
+  
   def throwException(): Unit
 }
-
 object AuthorizationException {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     printJson: CallbackTo[String],
-    setAuthorizationUrl: String => CallbackTo[AuthorizationException],
-    setCustomUiCallback: String => CallbackTo[AuthorizationException],
-    setResourceDisplayName: String => CallbackTo[AuthorizationException],
+    setAuthorizationUrl: String => AuthorizationException,
+    setCustomUiCallback: String => AuthorizationException,
+    setResourceDisplayName: String => AuthorizationException,
     throwException: Callback
   ): AuthorizationException = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("printJson")(printJson.toJsFn)
-    __obj.updateDynamic("setAuthorizationUrl")(js.Any.fromFunction1((t0: java.lang.String) => setAuthorizationUrl(t0).runNow()))
-    __obj.updateDynamic("setCustomUiCallback")(js.Any.fromFunction1((t0: java.lang.String) => setCustomUiCallback(t0).runNow()))
-    __obj.updateDynamic("setResourceDisplayName")(js.Any.fromFunction1((t0: java.lang.String) => setResourceDisplayName(t0).runNow()))
-    __obj.updateDynamic("throwException")(throwException.toJsFn)
+    val __obj = js.Dynamic.literal(printJson = printJson.toJsFn, setAuthorizationUrl = js.Any.fromFunction1(setAuthorizationUrl), setCustomUiCallback = js.Any.fromFunction1(setCustomUiCallback), setResourceDisplayName = js.Any.fromFunction1(setResourceDisplayName), throwException = throwException.toJsFn)
     __obj.asInstanceOf[AuthorizationException]
   }
+  
+  extension [Self <: AuthorizationException](x: Self) {
+    
+    inline def setPrintJson(value: CallbackTo[String]): Self = StObject.set(x, "printJson", value.toJsFn)
+    
+    inline def setSetAuthorizationUrl(value: String => AuthorizationException): Self = StObject.set(x, "setAuthorizationUrl", js.Any.fromFunction1(value))
+    
+    inline def setSetCustomUiCallback(value: String => AuthorizationException): Self = StObject.set(x, "setCustomUiCallback", js.Any.fromFunction1(value))
+    
+    inline def setSetResourceDisplayName(value: String => AuthorizationException): Self = StObject.set(x, "setResourceDisplayName", js.Any.fromFunction1(value))
+    
+    inline def setThrowException(value: Callback): Self = StObject.set(x, "throwException", value.toJsFn)
+  }
 }
-

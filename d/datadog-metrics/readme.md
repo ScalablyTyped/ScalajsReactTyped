@@ -10,10 +10,10 @@ Buffered metrics reporting via the DataDog HTTP API
 | ------------------ | :-------------: |
 | Full name          | datadog-metrics |
 | Keywords           | datadog, metrics, stats |
-| # releases         | 2 |
-| # dependents       | 14 |
-| # downloads        | 1205930 |
-| # stars            | 6 |
+| # releases         | 8 |
+| # dependents       | 0.0 |
+| # downloads        | 2868973.3333333335 |
+| # stars            | 128.0 |
 
 ## Links
 - [Homepage](https://github.com/dbader/node-datadog-metrics#readme)

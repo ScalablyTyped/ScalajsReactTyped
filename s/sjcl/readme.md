@@ -10,10 +10,10 @@ Stanford Javascript Crypto Library
 | ------------------ | :-------------: |
 | Full name          | sjcl |
 | Keywords           | encryption, high-level, crypto |
-| # releases         | 2 |
-| # dependents       | 279 |
-| # downloads        | 2003125 |
-| # stars            | 7 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 354577.3333333333 |
+| # stars            | 6918.0 |
 
 ## Links
 - [Homepage](https://github.com/bitwiseshiftleft/sjcl)

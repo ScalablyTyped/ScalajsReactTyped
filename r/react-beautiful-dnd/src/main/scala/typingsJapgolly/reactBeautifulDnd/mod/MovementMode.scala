@@ -1,21 +1,17 @@
 package typingsJapgolly.reactBeautifulDnd.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.FLUID
   - typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.SNAP
 */
-trait MovementMode extends js.Object
-
+trait MovementMode extends StObject
 object MovementMode {
-  @scala.inline
-  def FLUID: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = this.cast("FLUID")
-  @scala.inline
-  def SNAP: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = this.cast("SNAP")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def FLUID: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.FLUID = "FLUID".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.FLUID]
+  
+  inline def SNAP: typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.SNAP = "SNAP".asInstanceOf[typingsJapgolly.reactBeautifulDnd.reactBeautifulDndStrings.SNAP]
 }
-

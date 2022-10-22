@@ -1,39 +1,33 @@
 package typingsJapgolly.reactInstantsearch.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.react.mod.ComponentType
-import typingsJapgolly.reactInstantsearchDom.AnonHit
+import typingsJapgolly.reactInstantsearchDom.anon.Hit
 import typingsJapgolly.reactInstantsearchDom.mod.HitsProps
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Hits {
-  def apply[T](
-    hitComponent: ComponentType[AnonHit[T]] = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[HitsProps[T], typingsJapgolly.reactInstantsearch.domMod.Hits[T], Unit, HitsProps[T]] = {
-    val __obj = js.Dynamic.literal()
   
-      if (hitComponent != null) __obj.updateDynamic("hitComponent")(hitComponent.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactInstantsearchDom.mod.HitsProps[T], 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactInstantsearch.domMod.Hits[T]](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactInstantsearchDom.mod.HitsProps[T]])(children: _*)
+  inline def apply[T](): Builder[T] = {
+    val __props = js.Dynamic.literal()
+    new Builder[T](js.Array(this.component, __props.asInstanceOf[HitsProps[T]]))
   }
+  
   @JSImport("react-instantsearch/dom", "Hits")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder[T] (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactInstantsearch.domMod.Hits[T]] {
+    
+    inline def hitComponent(value: ComponentType[Hit[T]]): this.type = set("hitComponent", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make[T](companion: Hits.type): Builder[T] = new Builder[T](js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps[T](p: HitsProps[T]): Builder[T] = new Builder[T](js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

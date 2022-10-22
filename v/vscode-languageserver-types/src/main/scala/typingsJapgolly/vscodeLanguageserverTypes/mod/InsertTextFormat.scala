@@ -1,24 +1,25 @@
 package typingsJapgolly.vscodeLanguageserverTypes.mod
 
-import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
+import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`1`
+import typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`2`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`1`
-  - typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesNumbers.`2`
+  - typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`1`
+  - typingsJapgolly.vscodeLanguageserverTypes.vscodeLanguageserverTypesInts.`2`
 */
-trait InsertTextFormat extends js.Object
-
-@JSImport("vscode-languageserver-types", "InsertTextFormat")
-@js.native
-object InsertTextFormat extends js.Object {
+trait InsertTextFormat extends StObject
+object InsertTextFormat {
+  
   /**
     * The primary text to be inserted is treated as a plain string.
     */
+  @JSImport("vscode-languageserver-types", "InsertTextFormat.PlainText")
+  @js.native
   val PlainText: `1` = js.native
+  
   /**
     * The primary text to be inserted is treated as a snippet.
     *
@@ -27,8 +28,9 @@ object InsertTextFormat extends js.Object {
     * the end of the snippet. Placeholders with equal identifiers are linked,
     * that is typing in one will update others too.
     *
-    * See also: https://github.com/Microsoft/vscode/blob/master/src/vs/editor/contrib/snippet/common/snippet.md
+    * See also: https://microsoft.github.io/language-server-protocol/specifications/specification-current/#snippet_syntax
     */
+  @JSImport("vscode-languageserver-types", "InsertTextFormat.Snippet")
+  @js.native
   val Snippet: `2` = js.native
 }
-

@@ -1,45 +1,72 @@
 package typingsJapgolly.jquerymobile
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ButtonOptions extends js.Object {
+trait ButtonOptions extends StObject {
+  
   var corners: js.UndefOr[Boolean] = js.undefined
+  
   var icon: js.UndefOr[String] = js.undefined
+  
   var iconpos: js.UndefOr[String] = js.undefined
+  
   var iconshadow: js.UndefOr[Boolean] = js.undefined
+  
   var initSelector: js.UndefOr[String] = js.undefined
+  
   var `inline`: js.UndefOr[Boolean] = js.undefined
+  
   var mini: js.UndefOr[Boolean] = js.undefined
+  
   var shadow: js.UndefOr[Boolean] = js.undefined
+  
   var theme: js.UndefOr[String] = js.undefined
 }
-
 object ButtonOptions {
-  @scala.inline
-  def apply(
-    corners: js.UndefOr[Boolean] = js.undefined,
-    icon: String = null,
-    iconpos: String = null,
-    iconshadow: js.UndefOr[Boolean] = js.undefined,
-    initSelector: String = null,
-    `inline`: js.UndefOr[Boolean] = js.undefined,
-    mini: js.UndefOr[Boolean] = js.undefined,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    theme: String = null
-  ): ButtonOptions = {
+  
+  inline def apply(): ButtonOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(corners)) __obj.updateDynamic("corners")(corners.asInstanceOf[js.Any])
-    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
-    if (iconpos != null) __obj.updateDynamic("iconpos")(iconpos.asInstanceOf[js.Any])
-    if (!js.isUndefined(iconshadow)) __obj.updateDynamic("iconshadow")(iconshadow.asInstanceOf[js.Any])
-    if (initSelector != null) __obj.updateDynamic("initSelector")(initSelector.asInstanceOf[js.Any])
-    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
-    if (!js.isUndefined(mini)) __obj.updateDynamic("mini")(mini.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
     __obj.asInstanceOf[ButtonOptions]
   }
+  
+  extension [Self <: ButtonOptions](x: Self) {
+    
+    inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    
+    inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
+    
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    
+    inline def setIconpos(value: String): Self = StObject.set(x, "iconpos", value.asInstanceOf[js.Any])
+    
+    inline def setIconposUndefined: Self = StObject.set(x, "iconpos", js.undefined)
+    
+    inline def setIconshadow(value: Boolean): Self = StObject.set(x, "iconshadow", value.asInstanceOf[js.Any])
+    
+    inline def setIconshadowUndefined: Self = StObject.set(x, "iconshadow", js.undefined)
+    
+    inline def setInitSelector(value: String): Self = StObject.set(x, "initSelector", value.asInstanceOf[js.Any])
+    
+    inline def setInitSelectorUndefined: Self = StObject.set(x, "initSelector", js.undefined)
+    
+    inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+    
+    inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+    
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+  }
 }
-

@@ -1,60 +1,48 @@
 package typingsJapgolly.sharepoint.SP.UserProfiles
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait PersonalSiteCapabilities extends js.Object
-
+sealed trait PersonalSiteCapabilities extends StObject
 /** Specifies the capabilities of a personal site. */
 @JSGlobal("SP.UserProfiles.PersonalSiteCapabilities")
 @js.native
-object PersonalSiteCapabilities extends js.Object {
-  @js.native
-  sealed trait education extends PersonalSiteCapabilities
+object PersonalSiteCapabilities extends StObject {
   
   @js.native
-  sealed trait guest extends PersonalSiteCapabilities
+  sealed trait education
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait myTasksDashboard extends PersonalSiteCapabilities
+  sealed trait guest
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait none extends PersonalSiteCapabilities
+  sealed trait myTasksDashboard
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait profile extends PersonalSiteCapabilities
+  sealed trait none
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait social extends PersonalSiteCapabilities
+  sealed trait profile
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait storage extends PersonalSiteCapabilities
+  sealed trait social
+    extends StObject
+       with PersonalSiteCapabilities
   
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[PersonalSiteCapabilities with Double] = js.native
-  /* 5 */ @js.native
-  object education extends TopLevel[education with Double]
-  
-  /* 6 */ @js.native
-  object guest extends TopLevel[guest with Double]
-  
-  /* 4 */ @js.native
-  object myTasksDashboard extends TopLevel[myTasksDashboard with Double]
-  
-  /* 0 */ @js.native
-  object none extends TopLevel[none with Double]
-  
-  /* 1 */ @js.native
-  object profile extends TopLevel[profile with Double]
-  
-  /* 2 */ @js.native
-  object social extends TopLevel[social with Double]
-  
-  /* 3 */ @js.native
-  object storage extends TopLevel[storage with Double]
-  
+  @js.native
+  sealed trait storage
+    extends StObject
+       with PersonalSiteCapabilities
 }
-

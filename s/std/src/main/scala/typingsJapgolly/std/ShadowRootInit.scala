@@ -1,20 +1,37 @@
 package typingsJapgolly.std
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ShadowRootInit extends js.Object {
+trait ShadowRootInit extends StObject {
+  
+  /* standard dom */
   var delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined
+  
+  /* standard dom */
   var mode: ShadowRootMode
+  
+  /* standard dom */
+  var slotAssignment: js.UndefOr[SlotAssignmentMode] = js.undefined
 }
-
 object ShadowRootInit {
-  @scala.inline
-  def apply(mode: ShadowRootMode, delegatesFocus: js.UndefOr[scala.Boolean] = js.undefined): ShadowRootInit = {
+  
+  inline def apply(mode: ShadowRootMode): ShadowRootInit = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    if (!js.isUndefined(delegatesFocus)) __obj.updateDynamic("delegatesFocus")(delegatesFocus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ShadowRootInit]
   }
+  
+  extension [Self <: ShadowRootInit](x: Self) {
+    
+    inline def setDelegatesFocus(value: scala.Boolean): Self = StObject.set(x, "delegatesFocus", value.asInstanceOf[js.Any])
+    
+    inline def setDelegatesFocusUndefined: Self = StObject.set(x, "delegatesFocus", js.undefined)
+    
+    inline def setMode(value: ShadowRootMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    
+    inline def setSlotAssignment(value: SlotAssignmentMode): Self = StObject.set(x, "slotAssignment", value.asInstanceOf[js.Any])
+    
+    inline def setSlotAssignmentUndefined: Self = StObject.set(x, "slotAssignment", js.undefined)
+  }
 }
-

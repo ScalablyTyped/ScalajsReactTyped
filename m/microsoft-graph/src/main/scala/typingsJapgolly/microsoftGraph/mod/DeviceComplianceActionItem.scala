@@ -1,39 +1,57 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DeviceComplianceActionItem extends Entity {
+trait DeviceComplianceActionItem
+  extends StObject
+     with Entity {
+  
   /**
     * What action to take. Possible values are: noAction, notification, block, retire, wipe, removeResourceAccessProfiles,
     * pushNotification.
     */
   var actionType: js.UndefOr[DeviceComplianceActionType] = js.undefined
+  
   // Number of hours to wait till the action will be enforced. Valid values 0 to 8760
   var gracePeriodHours: js.UndefOr[Double] = js.undefined
+  
   // A list of group IDs to speicify who to CC this notification message to.
-  var notificationMessageCCList: js.UndefOr[js.Array[String]] = js.undefined
+  var notificationMessageCCList: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
+  
   // What notification Message template to use
-  var notificationTemplateId: js.UndefOr[String] = js.undefined
+  var notificationTemplateId: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DeviceComplianceActionItem {
-  @scala.inline
-  def apply(
-    actionType: DeviceComplianceActionType = null,
-    gracePeriodHours: Int | Double = null,
-    id: String = null,
-    notificationMessageCCList: js.Array[String] = null,
-    notificationTemplateId: String = null
-  ): DeviceComplianceActionItem = {
+  
+  inline def apply(): DeviceComplianceActionItem = {
     val __obj = js.Dynamic.literal()
-    if (actionType != null) __obj.updateDynamic("actionType")(actionType.asInstanceOf[js.Any])
-    if (gracePeriodHours != null) __obj.updateDynamic("gracePeriodHours")(gracePeriodHours.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (notificationMessageCCList != null) __obj.updateDynamic("notificationMessageCCList")(notificationMessageCCList.asInstanceOf[js.Any])
-    if (notificationTemplateId != null) __obj.updateDynamic("notificationTemplateId")(notificationTemplateId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeviceComplianceActionItem]
   }
+  
+  extension [Self <: DeviceComplianceActionItem](x: Self) {
+    
+    inline def setActionType(value: DeviceComplianceActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    
+    inline def setGracePeriodHours(value: Double): Self = StObject.set(x, "gracePeriodHours", value.asInstanceOf[js.Any])
+    
+    inline def setGracePeriodHoursUndefined: Self = StObject.set(x, "gracePeriodHours", js.undefined)
+    
+    inline def setNotificationMessageCCList(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notificationMessageCCList", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationMessageCCListNull: Self = StObject.set(x, "notificationMessageCCList", null)
+    
+    inline def setNotificationMessageCCListUndefined: Self = StObject.set(x, "notificationMessageCCList", js.undefined)
+    
+    inline def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value*))
+    
+    inline def setNotificationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "notificationTemplateId", value.asInstanceOf[js.Any])
+    
+    inline def setNotificationTemplateIdNull: Self = StObject.set(x, "notificationTemplateId", null)
+    
+    inline def setNotificationTemplateIdUndefined: Self = StObject.set(x, "notificationTemplateId", js.undefined)
+  }
 }
-

@@ -1,7 +1,7 @@
 
 # Scala.js typings for opentracing
 
-Typings are for version 0.14.4
+Typings are for version 0.14.7
 
 ## Library description:
 [![Build Status][ci-img]][ci] [![Coverage Status][cov-img]][cov] [![NPM Published Version][npm-img]][npm] ![Node Version][node-img] [![Join the chat at https://gitter.im/opentracing/opentracing-javascript](https://badges.gitter.im/opentracing/opentracing-
@@ -11,9 +11,9 @@ Typings are for version 0.14.4
 | Full name          | opentracing |
 | Keywords           | - |
 | # releases         | 4 |
-| # dependents       | 128 |
-| # downloads        | 18489926 |
-| # stars            | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 8369329.666666667 |
+| # stars            | 1085.0 |
 
 ## Links
 - [Homepage](https://github.com/opentracing/opentracing-javascript#readme)

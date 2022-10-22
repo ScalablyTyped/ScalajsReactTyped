@@ -2,114 +2,247 @@ package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.Callback
 import typingsJapgolly.kendoUi.JQuery
+import typingsJapgolly.kendoUi.kendo.data.DataSource
+import typingsJapgolly.kendoUi.kendo.data.DataSourceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumn extends js.Object {
-  var aggregates: js.UndefOr[js.Any] = js.undefined
-  var attributes: js.UndefOr[js.Any] = js.undefined
-  var columns: js.UndefOr[js.Any] = js.undefined
+trait GridColumn extends StObject {
+  
+  var aggregates: js.UndefOr[Any] = js.undefined
+  
+  var attributes: js.UndefOr[Any] = js.undefined
+  
+  var columns: js.UndefOr[Any] = js.undefined
+  
   var command: js.UndefOr[String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem] = js.undefined
+  
+  var dataSource: js.UndefOr[DataSource | DataSourceOptions] = js.undefined
+  
+  var dataTextField: js.UndefOr[String] = js.undefined
+  
+  var dataValueField: js.UndefOr[String] = js.undefined
+  
   var editable: js.UndefOr[js.Function] = js.undefined
+  
   var editor: js.UndefOr[
     js.Function2[/* container */ JQuery, /* options */ GridColumnEditorOptions, Unit]
   ] = js.undefined
+  
   var encoded: js.UndefOr[Boolean] = js.undefined
+  
+  var exportable: js.UndefOr[Boolean | GridColumnExportable] = js.undefined
+  
   var field: js.UndefOr[String] = js.undefined
+  
   var filterable: js.UndefOr[Boolean | GridColumnFilterable] = js.undefined
-  var footerAttributes: js.UndefOr[js.Any] = js.undefined
+  
+  var footerAttributes: js.UndefOr[Any] = js.undefined
+  
   var footerTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var format: js.UndefOr[String] = js.undefined
+  
   var groupFooterTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var groupHeaderColumnTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var groupHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var groupable: js.UndefOr[Boolean | GridColumnGroupable] = js.undefined
-  var headerAttributes: js.UndefOr[js.Any] = js.undefined
+  
+  var headerAttributes: js.UndefOr[Any] = js.undefined
+  
   var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
+  
   var hidden: js.UndefOr[Boolean] = js.undefined
+  
   var lockable: js.UndefOr[Boolean] = js.undefined
+  
   var locked: js.UndefOr[Boolean] = js.undefined
+  
   var media: js.UndefOr[String] = js.undefined
+  
   var menu: js.UndefOr[Boolean] = js.undefined
+  
   var minResizableWidth: js.UndefOr[Double] = js.undefined
+  
   var minScreenWidth: js.UndefOr[Double] = js.undefined
+  
   var selectable: js.UndefOr[Boolean] = js.undefined
+  
   var sortable: js.UndefOr[Boolean | GridColumnSortable] = js.undefined
+  
+  var stickable: js.UndefOr[Boolean] = js.undefined
+  
+  var sticky: js.UndefOr[Boolean] = js.undefined
+  
   var template: js.UndefOr[String | js.Function] = js.undefined
+  
   var title: js.UndefOr[String] = js.undefined
-  var values: js.UndefOr[js.Any] = js.undefined
+  
+  var values: js.UndefOr[Any] = js.undefined
+  
   var width: js.UndefOr[String | Double] = js.undefined
 }
-
 object GridColumn {
-  @scala.inline
-  def apply(
-    aggregates: js.Any = null,
-    attributes: js.Any = null,
-    columns: js.Any = null,
-    command: String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem = null,
-    editable: js.Function = null,
-    editor: (/* container */ JQuery, /* options */ GridColumnEditorOptions) => Callback = null,
-    encoded: js.UndefOr[Boolean] = js.undefined,
-    field: String = null,
-    filterable: Boolean | GridColumnFilterable = null,
-    footerAttributes: js.Any = null,
-    footerTemplate: String | js.Function = null,
-    format: String = null,
-    groupFooterTemplate: String | js.Function = null,
-    groupHeaderColumnTemplate: String | js.Function = null,
-    groupHeaderTemplate: String | js.Function = null,
-    groupable: Boolean | GridColumnGroupable = null,
-    headerAttributes: js.Any = null,
-    headerTemplate: String | js.Function = null,
-    hidden: js.UndefOr[Boolean] = js.undefined,
-    lockable: js.UndefOr[Boolean] = js.undefined,
-    locked: js.UndefOr[Boolean] = js.undefined,
-    media: String = null,
-    menu: js.UndefOr[Boolean] = js.undefined,
-    minResizableWidth: Int | Double = null,
-    minScreenWidth: Int | Double = null,
-    selectable: js.UndefOr[Boolean] = js.undefined,
-    sortable: Boolean | GridColumnSortable = null,
-    template: String | js.Function = null,
-    title: String = null,
-    values: js.Any = null,
-    width: String | Double = null
-  ): GridColumn = {
+  
+  inline def apply(): GridColumn = {
     val __obj = js.Dynamic.literal()
-    if (aggregates != null) __obj.updateDynamic("aggregates")(aggregates.asInstanceOf[js.Any])
-    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
-    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
-    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
-    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
-    if (editor != null) __obj.updateDynamic("editor")(js.Any.fromFunction2((t0: /* container */ typingsJapgolly.kendoUi.JQuery, t1: /* options */ typingsJapgolly.kendoUi.kendo.ui.GridColumnEditorOptions) => editor(t0, t1).runNow()))
-    if (!js.isUndefined(encoded)) __obj.updateDynamic("encoded")(encoded.asInstanceOf[js.Any])
-    if (field != null) __obj.updateDynamic("field")(field.asInstanceOf[js.Any])
-    if (filterable != null) __obj.updateDynamic("filterable")(filterable.asInstanceOf[js.Any])
-    if (footerAttributes != null) __obj.updateDynamic("footerAttributes")(footerAttributes.asInstanceOf[js.Any])
-    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate.asInstanceOf[js.Any])
-    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
-    if (groupFooterTemplate != null) __obj.updateDynamic("groupFooterTemplate")(groupFooterTemplate.asInstanceOf[js.Any])
-    if (groupHeaderColumnTemplate != null) __obj.updateDynamic("groupHeaderColumnTemplate")(groupHeaderColumnTemplate.asInstanceOf[js.Any])
-    if (groupHeaderTemplate != null) __obj.updateDynamic("groupHeaderTemplate")(groupHeaderTemplate.asInstanceOf[js.Any])
-    if (groupable != null) __obj.updateDynamic("groupable")(groupable.asInstanceOf[js.Any])
-    if (headerAttributes != null) __obj.updateDynamic("headerAttributes")(headerAttributes.asInstanceOf[js.Any])
-    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate.asInstanceOf[js.Any])
-    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden.asInstanceOf[js.Any])
-    if (!js.isUndefined(lockable)) __obj.updateDynamic("lockable")(lockable.asInstanceOf[js.Any])
-    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked.asInstanceOf[js.Any])
-    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
-    if (!js.isUndefined(menu)) __obj.updateDynamic("menu")(menu.asInstanceOf[js.Any])
-    if (minResizableWidth != null) __obj.updateDynamic("minResizableWidth")(minResizableWidth.asInstanceOf[js.Any])
-    if (minScreenWidth != null) __obj.updateDynamic("minScreenWidth")(minScreenWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
-    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
-    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
-    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumn]
   }
+  
+  extension [Self <: GridColumn](x: Self) {
+    
+    inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
+    
+    inline def setAggregatesUndefined: Self = StObject.set(x, "aggregates", js.undefined)
+    
+    inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    
+    inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    
+    inline def setCommand(value: String | (js.Array[GridColumnCommandItem | String]) | GridColumnCommandItem): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    
+    inline def setCommandVarargs(value: (GridColumnCommandItem | String)*): Self = StObject.set(x, "command", js.Array(value*))
+    
+    inline def setDataSource(value: DataSource | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    
+    inline def setDataValueField(value: String): Self = StObject.set(x, "dataValueField", value.asInstanceOf[js.Any])
+    
+    inline def setDataValueFieldUndefined: Self = StObject.set(x, "dataValueField", js.undefined)
+    
+    inline def setEditable(value: js.Function): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    
+    inline def setEditor(value: (/* container */ JQuery, /* options */ GridColumnEditorOptions) => Callback): Self = StObject.set(x, "editor", js.Any.fromFunction2((t0: /* container */ JQuery, t1: /* options */ GridColumnEditorOptions) => (value(t0, t1)).runNow()))
+    
+    inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+    
+    inline def setEncoded(value: Boolean): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
+    
+    inline def setEncodedUndefined: Self = StObject.set(x, "encoded", js.undefined)
+    
+    inline def setExportable(value: Boolean | GridColumnExportable): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])
+    
+    inline def setExportableUndefined: Self = StObject.set(x, "exportable", js.undefined)
+    
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    
+    inline def setFilterable(value: Boolean | GridColumnFilterable): Self = StObject.set(x, "filterable", value.asInstanceOf[js.Any])
+    
+    inline def setFilterableUndefined: Self = StObject.set(x, "filterable", js.undefined)
+    
+    inline def setFooterAttributes(value: Any): Self = StObject.set(x, "footerAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setFooterAttributesUndefined: Self = StObject.set(x, "footerAttributes", js.undefined)
+    
+    inline def setFooterTemplate(value: String | js.Function): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+    
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    
+    inline def setGroupFooterTemplate(value: String | js.Function): Self = StObject.set(x, "groupFooterTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setGroupFooterTemplateUndefined: Self = StObject.set(x, "groupFooterTemplate", js.undefined)
+    
+    inline def setGroupHeaderColumnTemplate(value: String | js.Function): Self = StObject.set(x, "groupHeaderColumnTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setGroupHeaderColumnTemplateUndefined: Self = StObject.set(x, "groupHeaderColumnTemplate", js.undefined)
+    
+    inline def setGroupHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "groupHeaderTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setGroupHeaderTemplateUndefined: Self = StObject.set(x, "groupHeaderTemplate", js.undefined)
+    
+    inline def setGroupable(value: Boolean | GridColumnGroupable): Self = StObject.set(x, "groupable", value.asInstanceOf[js.Any])
+    
+    inline def setGroupableUndefined: Self = StObject.set(x, "groupable", js.undefined)
+    
+    inline def setHeaderAttributes(value: Any): Self = StObject.set(x, "headerAttributes", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderAttributesUndefined: Self = StObject.set(x, "headerAttributes", js.undefined)
+    
+    inline def setHeaderTemplate(value: String | js.Function): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+    
+    inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+    
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    
+    inline def setLockable(value: Boolean): Self = StObject.set(x, "lockable", value.asInstanceOf[js.Any])
+    
+    inline def setLockableUndefined: Self = StObject.set(x, "lockable", js.undefined)
+    
+    inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+    
+    inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+    
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    
+    inline def setMenu(value: Boolean): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    
+    inline def setMinResizableWidth(value: Double): Self = StObject.set(x, "minResizableWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinResizableWidthUndefined: Self = StObject.set(x, "minResizableWidth", js.undefined)
+    
+    inline def setMinScreenWidth(value: Double): Self = StObject.set(x, "minScreenWidth", value.asInstanceOf[js.Any])
+    
+    inline def setMinScreenWidthUndefined: Self = StObject.set(x, "minScreenWidth", js.undefined)
+    
+    inline def setSelectable(value: Boolean): Self = StObject.set(x, "selectable", value.asInstanceOf[js.Any])
+    
+    inline def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
+    
+    inline def setSortable(value: Boolean | GridColumnSortable): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+    
+    inline def setSortableUndefined: Self = StObject.set(x, "sortable", js.undefined)
+    
+    inline def setStickable(value: Boolean): Self = StObject.set(x, "stickable", value.asInstanceOf[js.Any])
+    
+    inline def setStickableUndefined: Self = StObject.set(x, "stickable", js.undefined)
+    
+    inline def setSticky(value: Boolean): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+    
+    inline def setStickyUndefined: Self = StObject.set(x, "sticky", js.undefined)
+    
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    
+    inline def setValues(value: Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+  }
 }
-

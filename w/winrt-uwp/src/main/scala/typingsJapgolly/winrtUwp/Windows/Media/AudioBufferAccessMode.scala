@@ -1,39 +1,31 @@
 package typingsJapgolly.winrtUwp.Windows.Media
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait AudioBufferAccessMode extends js.Object
-
+sealed trait AudioBufferAccessMode extends StObject
 /** Defines the access mode of an AudioBuffer returned by AudioFrame::LockBuffer . */
 @JSGlobal("Windows.Media.AudioBufferAccessMode")
 @js.native
-object AudioBufferAccessMode extends js.Object {
+object AudioBufferAccessMode extends StObject {
+  
   /** The audio buffer is read-only. */
   @js.native
-  sealed trait read extends AudioBufferAccessMode
+  sealed trait read
+    extends StObject
+       with AudioBufferAccessMode
   
   /** The audio buffer can be written to and read from. */
   @js.native
-  sealed trait readWrite extends AudioBufferAccessMode
+  sealed trait readWrite
+    extends StObject
+       with AudioBufferAccessMode
   
   /** The audio buffer is write-only. */
   @js.native
-  sealed trait write extends AudioBufferAccessMode
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[AudioBufferAccessMode with Double] = js.native
-  /* 0 */ @js.native
-  object read extends TopLevel[read with Double]
-  
-  /* 1 */ @js.native
-  object readWrite extends TopLevel[readWrite with Double]
-  
-  /* 2 */ @js.native
-  object write extends TopLevel[write with Double]
-  
+  sealed trait write
+    extends StObject
+       with AudioBufferAccessMode
 }
-

@@ -1,31 +1,38 @@
 package typingsJapgolly.musicmatch.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ArtistSearchParams extends Pageable {
+trait ArtistSearchParams
+  extends StObject
+     with Pageable {
+  
   var f_artist_id: js.UndefOr[Double] = js.undefined
+  
   var f_artist_mbid: js.UndefOr[Double] = js.undefined
+  
   var q_artist: js.UndefOr[String] = js.undefined
 }
-
 object ArtistSearchParams {
-  @scala.inline
-  def apply(
-    f_artist_id: Int | Double = null,
-    f_artist_mbid: Int | Double = null,
-    page: Int | Double = null,
-    page_size: Int | Double = null,
-    q_artist: String = null
-  ): ArtistSearchParams = {
+  
+  inline def apply(): ArtistSearchParams = {
     val __obj = js.Dynamic.literal()
-    if (f_artist_id != null) __obj.updateDynamic("f_artist_id")(f_artist_id.asInstanceOf[js.Any])
-    if (f_artist_mbid != null) __obj.updateDynamic("f_artist_mbid")(f_artist_mbid.asInstanceOf[js.Any])
-    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
-    if (page_size != null) __obj.updateDynamic("page_size")(page_size.asInstanceOf[js.Any])
-    if (q_artist != null) __obj.updateDynamic("q_artist")(q_artist.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtistSearchParams]
   }
+  
+  extension [Self <: ArtistSearchParams](x: Self) {
+    
+    inline def setF_artist_id(value: Double): Self = StObject.set(x, "f_artist_id", value.asInstanceOf[js.Any])
+    
+    inline def setF_artist_idUndefined: Self = StObject.set(x, "f_artist_id", js.undefined)
+    
+    inline def setF_artist_mbid(value: Double): Self = StObject.set(x, "f_artist_mbid", value.asInstanceOf[js.Any])
+    
+    inline def setF_artist_mbidUndefined: Self = StObject.set(x, "f_artist_mbid", js.undefined)
+    
+    inline def setQ_artist(value: String): Self = StObject.set(x, "q_artist", value.asInstanceOf[js.Any])
+    
+    inline def setQ_artistUndefined: Self = StObject.set(x, "q_artist", js.undefined)
+  }
 }
-

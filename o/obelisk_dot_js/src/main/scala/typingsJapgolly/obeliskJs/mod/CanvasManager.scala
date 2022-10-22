@@ -1,20 +1,26 @@
 package typingsJapgolly.obeliskJs.mod
 
-import org.scalajs.dom.raw.HTMLCanvasElement
+import org.scalajs.dom.HTMLCanvasElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("obelisk.js", "CanvasManager")
 @js.native
-class CanvasManager () extends js.Object
-
+open class CanvasManager () extends StObject
 /* static members */
-@JSImport("obelisk.js", "CanvasManager")
-@js.native
-object CanvasManager extends js.Object {
-  var defaultCanvas: HTMLCanvasElement = js.native
-  def getDefaultCanvas(): HTMLCanvasElement = js.native
-  def getNewCanvas(): HTMLCanvasElement = js.native
+object CanvasManager {
+  
+  @JSImport("obelisk.js", "CanvasManager")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("obelisk.js", "CanvasManager.defaultCanvas")
+  @js.native
+  def defaultCanvas: HTMLCanvasElement = js.native
+  inline def defaultCanvas_=(x: HTMLCanvasElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultCanvas")(x.asInstanceOf[js.Any])
+  
+  inline def getDefaultCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultCanvas")().asInstanceOf[HTMLCanvasElement]
+  
+  inline def getNewCanvas(): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getNewCanvas")().asInstanceOf[HTMLCanvasElement]
 }
-

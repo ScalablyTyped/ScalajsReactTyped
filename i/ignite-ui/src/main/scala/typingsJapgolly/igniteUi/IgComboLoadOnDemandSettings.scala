@@ -1,42 +1,44 @@
 package typingsJapgolly.igniteUi
 
 import org.scalablytyped.runtime.StringDictionary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait IgComboLoadOnDemandSettings
-  extends /**
-	 * Option for IgComboLoadOnDemandSettings
-	 */
-/* optionName */ StringDictionary[js.Any] {
+  extends StObject
+     with /**
+  * Option for JSONPDataSourceSettings
+  */
+/* optionName */ StringDictionary[Any] {
+  
   /**
-  	 * Gets/Sets option to enable load on demand.
-  	 *
-  	 */
+    * Gets/Sets option to enable load on demand.
+    *
+    */
   var enabled: js.UndefOr[Boolean] = js.undefined
+  
   /**
-  	 * Gets/Sets number of records loaded on each request.
-  	 *
-  	 */
+    * Gets/Sets number of records loaded on each request.
+    *
+    */
   var pageSize: js.UndefOr[Double] = js.undefined
 }
-
 object IgComboLoadOnDemandSettings {
-  @scala.inline
-  def apply(
-    StringDictionary: /**
-  	 * Option for IgComboLoadOnDemandSettings
-  	 */
-  /* optionName */ StringDictionary[js.Any] = null,
-    enabled: js.UndefOr[Boolean] = js.undefined,
-    pageSize: Int | Double = null
-  ): IgComboLoadOnDemandSettings = {
+  
+  inline def apply(): IgComboLoadOnDemandSettings = {
     val __obj = js.Dynamic.literal()
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
-    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[IgComboLoadOnDemandSettings]
   }
+  
+  extension [Self <: IgComboLoadOnDemandSettings](x: Self) {
+    
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+  }
 }
-

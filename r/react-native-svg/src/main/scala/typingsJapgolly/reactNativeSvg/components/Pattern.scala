@@ -1,58 +1,50 @@
 package typingsJapgolly.reactNativeSvg.components
 
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.reactNativeSvg.mod.ColumnMajorTransformMatrix
-import typingsJapgolly.reactNativeSvg.mod.NumberProp
-import typingsJapgolly.reactNativeSvg.mod.PatternProps
-import typingsJapgolly.reactNativeSvg.mod.Units
+import typingsJapgolly.StBuildingComponent
+import typingsJapgolly.reactNativeSvg.libTypescriptElementsPatternMod.PatternProps
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.ColumnMajorTransformMatrix
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.NumberProp
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.TransformProps
+import typingsJapgolly.reactNativeSvg.libTypescriptLibExtractTypesMod.Units
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pattern {
-  def apply(
-    height: NumberProp = null,
-    id: String = null,
-    patternContentUnits: Units = null,
-    patternTransform: ColumnMajorTransformMatrix | String = null,
-    patternUnits: Units = null,
-    preserveAspectRatio: String = null,
-    viewBox: String = null,
-    width: NumberProp = null,
-    x: NumberProp = null,
-    y: NumberProp = null,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[PatternProps, typingsJapgolly.reactNativeSvg.mod.Pattern, Unit, PatternProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
-    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
-    if (patternContentUnits != null) __obj.updateDynamic("patternContentUnits")(patternContentUnits.asInstanceOf[js.Any])
-    if (patternTransform != null) __obj.updateDynamic("patternTransform")(patternTransform.asInstanceOf[js.Any])
-    if (patternUnits != null) __obj.updateDynamic("patternUnits")(patternUnits.asInstanceOf[js.Any])
-    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio.asInstanceOf[js.Any])
-    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox.asInstanceOf[js.Any])
-    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
-    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
-    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactNativeSvg.mod.PatternProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactNativeSvg.mod.Pattern](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactNativeSvg.mod.PatternProps])(children: _*)
-  }
   @JSImport("react-native-svg", "Pattern")
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[typingsJapgolly.reactNativeSvg.mod.Pattern] {
+    
+    inline def height(value: NumberProp): this.type = set("height", value.asInstanceOf[js.Any])
+    
+    inline def id(value: String): this.type = set("id", value.asInstanceOf[js.Any])
+    
+    inline def patternContentUnits(value: Units): this.type = set("patternContentUnits", value.asInstanceOf[js.Any])
+    
+    inline def patternTransform(value: ColumnMajorTransformMatrix | String): this.type = set("patternTransform", value.asInstanceOf[js.Any])
+    
+    inline def patternUnits(value: Units): this.type = set("patternUnits", value.asInstanceOf[js.Any])
+    
+    inline def preserveAspectRatio(value: String): this.type = set("preserveAspectRatio", value.asInstanceOf[js.Any])
+    
+    inline def transform(value: ColumnMajorTransformMatrix | String | TransformProps): this.type = set("transform", value.asInstanceOf[js.Any])
+    
+    inline def viewBox(value: String): this.type = set("viewBox", value.asInstanceOf[js.Any])
+    
+    inline def width(value: NumberProp): this.type = set("width", value.asInstanceOf[js.Any])
+    
+    inline def x(value: NumberProp): this.type = set("x", value.asInstanceOf[js.Any])
+    
+    inline def y(value: NumberProp): this.type = set("y", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: Pattern.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: PatternProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

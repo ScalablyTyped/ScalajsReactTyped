@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJs.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotTableCollection.toJSON()`. */
-trait PivotTableCollectionData extends js.Object {
+trait PivotTableCollectionData extends StObject {
+  
   var items: js.UndefOr[js.Array[PivotTableData]] = js.undefined
 }
-
 object PivotTableCollectionData {
-  @scala.inline
-  def apply(items: js.Array[PivotTableData] = null): PivotTableCollectionData = {
+  
+  inline def apply(): PivotTableCollectionData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotTableCollectionData]
   }
+  
+  extension [Self <: PivotTableCollectionData](x: Self) {
+    
+    inline def setItems(value: js.Array[PivotTableData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: PivotTableData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

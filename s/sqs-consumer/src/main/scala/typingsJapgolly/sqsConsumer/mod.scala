@@ -1,24 +1,25 @@
 package typingsJapgolly.sqsConsumer
 
-import typingsJapgolly.sqsConsumer.consumerMod.ConsumerOptions
+import typingsJapgolly.sqsConsumer.distConsumerMod.ConsumerOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("sqs-consumer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
+object mod {
+  
+  @JSImport("sqs-consumer", "Consumer")
   @js.native
-  class Consumer protected ()
-    extends typingsJapgolly.sqsConsumer.consumerMod.Consumer {
+  open class Consumer protected ()
+    extends typingsJapgolly.sqsConsumer.distConsumerMod.Consumer {
     def this(options: ConsumerOptions) = this()
   }
-  
   /* static members */
-  @js.native
-  object Consumer extends js.Object {
-    def create(options: ConsumerOptions): typingsJapgolly.sqsConsumer.consumerMod.Consumer = js.native
+  object Consumer {
+    
+    @JSImport("sqs-consumer", "Consumer")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    inline def create(options: ConsumerOptions): typingsJapgolly.sqsConsumer.distConsumerMod.Consumer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typingsJapgolly.sqsConsumer.distConsumerMod.Consumer]
   }
-  
 }
-

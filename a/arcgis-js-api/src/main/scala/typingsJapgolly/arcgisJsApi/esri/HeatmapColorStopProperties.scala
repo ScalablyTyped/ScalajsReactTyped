@@ -1,31 +1,42 @@
 package typingsJapgolly.arcgisJsApi.esri
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait HeatmapColorStopProperties extends js.Object {
+trait HeatmapColorStopProperties extends StObject {
+  
   /**
-    * The color to shade a given pixel based on its calculated pixel intensity [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio).
+    * The color to shade a given pixel based on its calculated density [ratio](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#color)
     */
   var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
+  
   /**
-    * The ratio of a pixel's intensity value to the [minPixelIntensity](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#minPixelIntensity) of the renderer. The ratio of each pixel is matched to the corresponding [color](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#color).
+    * The ratio of a pixel's density value to the [maxDensity](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-HeatmapRenderer.html#maxDensity) of the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-support-HeatmapColorStop.html#ratio)
     */
   var ratio: js.UndefOr[Double] = js.undefined
 }
-
 object HeatmapColorStopProperties {
-  @scala.inline
-  def apply(color: Color_ | js.Array[Double] | String = null, ratio: Int | Double = null): HeatmapColorStopProperties = {
+  
+  inline def apply(): HeatmapColorStopProperties = {
     val __obj = js.Dynamic.literal()
-    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
-    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeatmapColorStopProperties]
   }
+  
+  extension [Self <: HeatmapColorStopProperties](x: Self) {
+    
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value*))
+    
+    inline def setRatio(value: Double): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+  }
 }
-

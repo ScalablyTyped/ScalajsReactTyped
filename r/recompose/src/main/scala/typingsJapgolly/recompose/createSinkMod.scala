@@ -1,14 +1,16 @@
 package typingsJapgolly.recompose
 
-import japgolly.scalajs.react.raw.React.ComponentClassP
+import japgolly.scalajs.react.facade.React.ComponentClassP
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#createsink
-@JSImport("recompose/createSink", JSImport.Namespace)
-@js.native
-object createSinkMod extends js.Object {
-  def default(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClassP[js.Object] = js.native
+object createSinkMod {
+  
+  @JSImport("recompose/createSink", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClassP[Any & js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClassP[Any & js.Object]]
 }
-

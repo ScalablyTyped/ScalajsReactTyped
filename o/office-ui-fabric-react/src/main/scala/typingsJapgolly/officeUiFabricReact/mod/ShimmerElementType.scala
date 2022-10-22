@@ -1,18 +1,21 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "ShimmerElementType")
 @js.native
-object ShimmerElementType extends js.Object {
-  /* 2 */ val circle: typingsJapgolly.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.circle with Double = js.native
-  /* 3 */ val gap: typingsJapgolly.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.gap with Double = js.native
-  /* 1 */ val line: typingsJapgolly.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.line with Double = js.native
+object ShimmerElementType extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.shimmerTypesMod.ShimmerElementType with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType & Double
   ] = js.native
+  
+  /* 2 */ val circle: typingsJapgolly.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.circle & Double = js.native
+  
+  /* 3 */ val gap: typingsJapgolly.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.gap & Double = js.native
+  
+  /* 1 */ val line: typingsJapgolly.officeUiFabricReact.libComponentsShimmerShimmerDottypesMod.ShimmerElementType.line & Double = js.native
 }
-

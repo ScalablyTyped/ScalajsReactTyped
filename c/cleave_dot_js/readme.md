@@ -9,11 +9,11 @@ JavaScript library for formatting input text content when you are typing
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | cleave.js |
-| Keywords           | cleave, javascript, html, format, form, input |
-| # releases         | 33 |
-| # dependents       | 69 |
-| # downloads        | 3236784 |
-| # stars            | 12 |
+| Keywords           | cleave, javascript, html, format, form, input, input-mask, mask, formatter, filter, vanilla, react |
+| # releases         | 1 |
+| # dependents       | 0.0 |
+| # downloads        | 912525.0 |
+| # stars            | 17358.0 |
 
 ## Links
 - [Homepage](https://github.com/nosir/cleave.js)

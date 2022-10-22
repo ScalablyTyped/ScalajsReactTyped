@@ -6,74 +6,83 @@ import typingsJapgolly.xlsx.xlsxStrings.binary
 import typingsJapgolly.xlsx.xlsxStrings.buffer
 import typingsJapgolly.xlsx.xlsxStrings.file
 import typingsJapgolly.xlsx.xlsxStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait WritingOptions extends CommonOptions {
+trait WritingOptions
+  extends StObject
+     with CommonOptions
+     with SheetOption {
+  
   /** Override workbook properties on save */
   var Props: js.UndefOr[Properties] = js.undefined
+  
   /**
     * Generate Shared String Table
     * @default false
     */
   var bookSST: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * File format of generated workbook
     * @default 'xlsx'
     */
   var bookType: js.UndefOr[BookType] = js.undefined
+  
   /**
     * Use ZIP compression for ZIP-based formats
     * @default false
     */
   var compression: js.UndefOr[Boolean] = js.undefined
+  
   /**
     * Suppress "number stored as text" errors in generated files
     * @default true
     */
   var ignoreEC: js.UndefOr[Boolean] = js.undefined
-  /**
-    * Name of Worksheet (for single-sheet formats)
-    * @default ''
-    */
-  var sheet: js.UndefOr[String] = js.undefined
+  
+  /** Base64 encoding of NUMBERS base for exports */
+  var numbers: js.UndefOr[String] = js.undefined
+  
   /** Output data encoding */
   var `type`: js.UndefOr[base64 | binary | buffer | file | array | string] = js.undefined
 }
-
 object WritingOptions {
-  @scala.inline
-  def apply(
-    Props: Properties = null,
-    WTF: js.UndefOr[Boolean] = js.undefined,
-    bookSST: js.UndefOr[Boolean] = js.undefined,
-    bookType: BookType = null,
-    bookVBA: js.UndefOr[Boolean] = js.undefined,
-    cellDates: js.UndefOr[Boolean] = js.undefined,
-    cellStyles: js.UndefOr[Boolean] = js.undefined,
-    compression: js.UndefOr[Boolean] = js.undefined,
-    ignoreEC: js.UndefOr[Boolean] = js.undefined,
-    password: String = null,
-    sheet: String = null,
-    sheetStubs: js.UndefOr[Boolean] = js.undefined,
-    `type`: base64 | binary | buffer | file | array | string = null
-  ): WritingOptions = {
+  
+  inline def apply(): WritingOptions = {
     val __obj = js.Dynamic.literal()
-    if (Props != null) __obj.updateDynamic("Props")(Props.asInstanceOf[js.Any])
-    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookSST)) __obj.updateDynamic("bookSST")(bookSST.asInstanceOf[js.Any])
-    if (bookType != null) __obj.updateDynamic("bookType")(bookType.asInstanceOf[js.Any])
-    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates.asInstanceOf[js.Any])
-    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles.asInstanceOf[js.Any])
-    if (!js.isUndefined(compression)) __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
-    if (!js.isUndefined(ignoreEC)) __obj.updateDynamic("ignoreEC")(ignoreEC.asInstanceOf[js.Any])
-    if (password != null) __obj.updateDynamic("password")(password.asInstanceOf[js.Any])
-    if (sheet != null) __obj.updateDynamic("sheet")(sheet.asInstanceOf[js.Any])
-    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WritingOptions]
   }
+  
+  extension [Self <: WritingOptions](x: Self) {
+    
+    inline def setBookSST(value: Boolean): Self = StObject.set(x, "bookSST", value.asInstanceOf[js.Any])
+    
+    inline def setBookSSTUndefined: Self = StObject.set(x, "bookSST", js.undefined)
+    
+    inline def setBookType(value: BookType): Self = StObject.set(x, "bookType", value.asInstanceOf[js.Any])
+    
+    inline def setBookTypeUndefined: Self = StObject.set(x, "bookType", js.undefined)
+    
+    inline def setCompression(value: Boolean): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    
+    inline def setIgnoreEC(value: Boolean): Self = StObject.set(x, "ignoreEC", value.asInstanceOf[js.Any])
+    
+    inline def setIgnoreECUndefined: Self = StObject.set(x, "ignoreEC", js.undefined)
+    
+    inline def setNumbers(value: String): Self = StObject.set(x, "numbers", value.asInstanceOf[js.Any])
+    
+    inline def setNumbersUndefined: Self = StObject.set(x, "numbers", js.undefined)
+    
+    inline def setProps(value: Properties): Self = StObject.set(x, "Props", value.asInstanceOf[js.Any])
+    
+    inline def setPropsUndefined: Self = StObject.set(x, "Props", js.undefined)
+    
+    inline def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

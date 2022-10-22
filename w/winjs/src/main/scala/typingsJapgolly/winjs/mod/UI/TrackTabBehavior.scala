@@ -1,27 +1,30 @@
 package typingsJapgolly.winjs.mod.UI
 
-import org.scalajs.dom.raw.HTMLElement
+import org.scalajs.dom.HTMLElement
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides methods for detecting when the user tabs to or from DOM elements.
 **/
-@JSImport("winjs", "UI.TrackTabBehavior")
-@js.native
-object TrackTabBehavior extends js.Object {
+object TrackTabBehavior {
+  
+  @JSImport("winjs", "UI.TrackTabBehavior")
+  @js.native
+  val ^ : js.Any = js.native
+  
   //#region Functions
   /**
     * Sets the tab order for the specified element within its container.
     * @param element The element to update.
     * @param tabIndex The index value of the element within its container.
     **/
-  def attach(element: HTMLElement, tabIndex: Double): Unit = js.native
+  inline def attach(element: HTMLElement, tabIndex: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any], tabIndex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   /**
     * Removes the tab order information from the specified element.
     * @param element The element to remove tab information from.
     **/
-  def detach(element: HTMLElement): Unit = js.native
+  inline def detach(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }
-

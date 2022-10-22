@@ -1,29 +1,27 @@
 package typingsJapgolly.ractive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ObserverArrayOpts extends ObserverBaseOpts {
+trait ObserverArrayOpts
+  extends StObject
+     with ObserverBaseOpts {
+  
   /**
   	 * Create an array observer, which fires array changes objects rather than the usual callback when array modification methods are used.
   	 */
   var array: Boolean
 }
-
 object ObserverArrayOpts {
-  @scala.inline
-  def apply(
-    array: Boolean,
-    context: js.Any = null,
-    defer: js.UndefOr[Boolean] = js.undefined,
-    init: js.UndefOr[Boolean] = js.undefined
-  ): ObserverArrayOpts = {
+  
+  inline def apply(array: Boolean): ObserverArrayOpts = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
-    if (context != null) __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
-    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
-    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverArrayOpts]
   }
+  
+  extension [Self <: ObserverArrayOpts](x: Self) {
+    
+    inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+  }
 }
-

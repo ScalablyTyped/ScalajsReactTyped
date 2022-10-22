@@ -1,19 +1,24 @@
 package typingsJapgolly.openlayers.mod.olx.format
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait EsriJSONOptions extends js.Object {
+trait EsriJSONOptions extends StObject {
+  
   var geometryName: js.UndefOr[String] = js.undefined
 }
-
 object EsriJSONOptions {
-  @scala.inline
-  def apply(geometryName: String = null): EsriJSONOptions = {
+  
+  inline def apply(): EsriJSONOptions = {
     val __obj = js.Dynamic.literal()
-    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsriJSONOptions]
   }
+  
+  extension [Self <: EsriJSONOptions](x: Self) {
+    
+    inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+    
+    inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+  }
 }
-

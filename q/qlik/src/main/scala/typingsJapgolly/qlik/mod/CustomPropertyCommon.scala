@@ -6,31 +6,47 @@ import typingsJapgolly.qlik.qlikStrings.integer
 import typingsJapgolly.qlik.qlikStrings.items
 import typingsJapgolly.qlik.qlikStrings.number
 import typingsJapgolly.qlik.qlikStrings.string
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait CustomPropertyCommon extends js.Object {
+trait CustomPropertyCommon extends StObject {
+  
   var label: js.UndefOr[String] = js.undefined
+  
   var ref: js.UndefOr[String] = js.undefined
+  
   var show: js.UndefOr[Boolean | ShowFunction] = js.undefined
+  
   var `type`: js.UndefOr[string | integer | number | array | boolean | items] = js.undefined
 }
-
 object CustomPropertyCommon {
-  @scala.inline
-  def apply(
-    label: String = null,
-    ref: String = null,
-    show: Boolean | ShowFunction = null,
-    `type`: string | integer | number | array | boolean | items = null
-  ): CustomPropertyCommon = {
+  
+  inline def apply(): CustomPropertyCommon = {
     val __obj = js.Dynamic.literal()
-    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
-    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
-    if (show != null) __obj.updateDynamic("show")(show.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCommon]
   }
+  
+  extension [Self <: CustomPropertyCommon](x: Self) {
+    
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    
+    inline def setShow(value: Boolean | ShowFunction): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    
+    inline def setShowFunction3(
+      value: (/* layout */ Layout, /* cls */ Any, /* obj */ Any) => Boolean | (js.Function1[/* measure */ NxMeasure, Boolean])
+    ): Self = StObject.set(x, "show", js.Any.fromFunction3(value))
+    
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    
+    inline def setType(value: string | integer | number | array | boolean | items): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+  }
 }
-

@@ -2,13 +2,12 @@ package typingsJapgolly.dynatable.JQueryDynatable
 
 import japgolly.scalajs.react.Callback
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Sorts extends js.Object {
-  /** functions object for Sorts */
-  var functions: SortsFunctions
+trait Sorts extends StObject {
+  
   /**
     * Add a new sort in sortKeys
     *
@@ -17,8 +16,13 @@ trait Sorts extends js.Object {
     * @return A reference to the related Dynatable object
     */
   def add(attr: String, direction: Double): Dynatable
+  
   /** Remove all the sortKeys */
   def clear(): Unit
+  
+  /** functions object for Sorts */
+  var functions: SortsFunctions
+  
   /**
     * Try to intelligently guess which sort function to use based on the type of attribute values.
     *
@@ -27,15 +31,18 @@ trait Sorts extends js.Object {
     * @param attr The key of the property
     * @return A string containing one of the types ('string' or 'number')
     */
-  def guessType(a: js.Any, b: js.Any, attr: String): String
+  def guessType(a: Any, b: Any, attr: String): String
+  
   /** Create and init the sorts */
   def init(): Unit
+  
   /**
     * Check if sort feature is enabled
     *
     * @return A boolean if sort feature is enabled
     */
   def initOnLoad(): Boolean
+  
   /**
     * Remove a sort attribute from the sortKeys
     *
@@ -44,26 +51,35 @@ trait Sorts extends js.Object {
     */
   def remove(attr: String): Dynatable
 }
-
 object Sorts {
-  @scala.inline
-  def apply(
-    add: (String, Double) => CallbackTo[Dynatable],
+  
+  inline def apply(
+    add: (String, Double) => Dynatable,
     clear: Callback,
     functions: SortsFunctions,
-    guessType: (js.Any, js.Any, String) => CallbackTo[String],
+    guessType: (Any, Any, String) => String,
     init: Callback,
     initOnLoad: CallbackTo[Boolean],
-    remove: String => CallbackTo[Dynatable]
+    remove: String => Dynatable
   ): Sorts = {
-    val __obj = js.Dynamic.literal(functions = functions.asInstanceOf[js.Any])
-    __obj.updateDynamic("add")(js.Any.fromFunction2((t0: java.lang.String, t1: scala.Double) => add(t0, t1).runNow()))
-    __obj.updateDynamic("clear")(clear.toJsFn)
-    __obj.updateDynamic("guessType")(js.Any.fromFunction3((t0: js.Any, t1: js.Any, t2: java.lang.String) => guessType(t0, t1, t2).runNow()))
-    __obj.updateDynamic("init")(init.toJsFn)
-    __obj.updateDynamic("initOnLoad")(initOnLoad.toJsFn)
-    __obj.updateDynamic("remove")(js.Any.fromFunction1((t0: java.lang.String) => remove(t0).runNow()))
+    val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), clear = clear.toJsFn, functions = functions.asInstanceOf[js.Any], guessType = js.Any.fromFunction3(guessType), init = init.toJsFn, initOnLoad = initOnLoad.toJsFn, remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[Sorts]
   }
+  
+  extension [Self <: Sorts](x: Self) {
+    
+    inline def setAdd(value: (String, Double) => Dynatable): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    
+    inline def setClear(value: Callback): Self = StObject.set(x, "clear", value.toJsFn)
+    
+    inline def setFunctions(value: SortsFunctions): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    
+    inline def setGuessType(value: (Any, Any, String) => String): Self = StObject.set(x, "guessType", js.Any.fromFunction3(value))
+    
+    inline def setInit(value: Callback): Self = StObject.set(x, "init", value.toJsFn)
+    
+    inline def setInitOnLoad(value: CallbackTo[Boolean]): Self = StObject.set(x, "initOnLoad", value.toJsFn)
+    
+    inline def setRemove(value: String => Dynatable): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+  }
 }
-

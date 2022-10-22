@@ -1,27 +1,32 @@
 package typingsJapgolly.johnnyFive.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait LCDParallelOption extends LCDGeneralOption {
+trait LCDParallelOption
+  extends StObject
+     with LCDGeneralOption {
+  
   var backlight: js.UndefOr[Double] = js.undefined
-  var pins: js.Array[_]
+  
+  var pins: js.Array[Any]
 }
-
 object LCDParallelOption {
-  @scala.inline
-  def apply(
-    pins: js.Array[_],
-    backlight: Int | Double = null,
-    cols: Int | Double = null,
-    rows: Int | Double = null
-  ): LCDParallelOption = {
+  
+  inline def apply(pins: js.Array[Any]): LCDParallelOption = {
     val __obj = js.Dynamic.literal(pins = pins.asInstanceOf[js.Any])
-    if (backlight != null) __obj.updateDynamic("backlight")(backlight.asInstanceOf[js.Any])
-    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
-    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
     __obj.asInstanceOf[LCDParallelOption]
   }
+  
+  extension [Self <: LCDParallelOption](x: Self) {
+    
+    inline def setBacklight(value: Double): Self = StObject.set(x, "backlight", value.asInstanceOf[js.Any])
+    
+    inline def setBacklightUndefined: Self = StObject.set(x, "backlight", js.undefined)
+    
+    inline def setPins(value: js.Array[Any]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
+    
+    inline def setPinsVarargs(value: Any*): Self = StObject.set(x, "pins", js.Array(value*))
+  }
 }
-

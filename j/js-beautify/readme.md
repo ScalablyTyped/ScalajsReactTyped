@@ -1,7 +1,7 @@
 
 # Scala.js typings for js-beautify
 
-Typings are for version 1.8.3
+Typings are for version 1.13
 
 ## Library description:
 beautifier.io for node
@@ -10,10 +10,10 @@ beautifier.io for node
 | ------------------ | :-------------: |
 | Full name          | js-beautify |
 | Keywords           | beautify, beautifier, code-quality |
-| # releases         | 42 |
-| # dependents       | 1402 |
-| # downloads        | 57596410 |
-| # stars            | 78 |
+| # releases         | 16 |
+| # dependents       | 0.0 |
+| # downloads        | 1.2106923E7 |
+| # stars            | 7823.0 |
 
 ## Links
 - [Homepage](https://beautifier.io/)

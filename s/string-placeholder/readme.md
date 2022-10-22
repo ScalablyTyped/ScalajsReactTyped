@@ -10,10 +10,10 @@ Replaces placeholders from string templates.
 | ------------------ | :-------------: |
 | Full name          | string-placeholder |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 2 |
-| # downloads        | 22831 |
-| # stars            | 0 |
+| # releases         | 0 |
+| # dependents       | 0.0 |
+| # downloads        | 20392.333333333332 |
+| # stars            | 2.0 |
 
 ## Links
 - [Homepage](https://github.com/crysalead-js/string-placeholder#readme)

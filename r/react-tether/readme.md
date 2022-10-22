@@ -1,19 +1,19 @@
 
 # Scala.js typings for react-tether
 
-Typings are for version 2.0.7
+Typings are for version 3.0.1
 
 ## Library description:
-Drop content anywhere on the page.
+A positioning engine to make overlays, tooltips and dropdowns better
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-tether |
 | Keywords           | react, react-tether, tether, component, drop |
-| # releases         | 16 |
-| # dependents       | 80 |
-| # downloads        | 1613778 |
-| # stars            | 2 |
+| # releases         | 4 |
+| # dependents       | 0.0 |
+| # downloads        | 277654.6666666667 |
+| # stars            | 385.0 |
 
 ## Links
 - [Homepage](https://github.com/danreeves/react-tether)

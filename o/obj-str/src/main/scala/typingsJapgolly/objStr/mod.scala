@@ -1,13 +1,15 @@
 package typingsJapgolly.objStr
 
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("obj-str", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  def apply(obj: StringDictionary[Boolean]): String = js.native
+object mod {
+  
+  @JSImport("obj-str", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default(input: Record[String, Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
 }
-

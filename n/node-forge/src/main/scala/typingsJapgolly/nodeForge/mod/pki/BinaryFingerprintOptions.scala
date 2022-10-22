@@ -1,33 +1,28 @@
 package typingsJapgolly.nodeForge.mod.pki
 
-import typingsJapgolly.nodeForge.mod.md.MessageDigest
-import typingsJapgolly.nodeForge.nodeForgeStrings.RSAPublicKey
-import typingsJapgolly.nodeForge.nodeForgeStrings.SubjectPublicKeyInfo
 import typingsJapgolly.nodeForge.nodeForgeStrings.binary
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait BinaryFingerprintOptions extends ByteBufferFingerprintOptions {
+trait BinaryFingerprintOptions
+  extends StObject
+     with ByteBufferFingerprintOptions {
+  
   /**
     * @description if not specified, the function will return `ByteStringBuffer`
     */
   var encoding: binary
 }
-
 object BinaryFingerprintOptions {
-  @scala.inline
-  def apply(
-    encoding: binary,
-    delimiter: String = null,
-    md: MessageDigest = null,
-    `type`: SubjectPublicKeyInfo | RSAPublicKey = null
-  ): BinaryFingerprintOptions = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
-    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
-    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
-    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  
+  inline def apply(): BinaryFingerprintOptions = {
+    val __obj = js.Dynamic.literal(encoding = "binary")
     __obj.asInstanceOf[BinaryFingerprintOptions]
   }
+  
+  extension [Self <: BinaryFingerprintOptions](x: Self) {
+    
+    inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+  }
 }
-

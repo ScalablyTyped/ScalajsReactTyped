@@ -1,100 +1,127 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DocumentProperties object, for use in `documentProperties.set({ ... })`. */
-trait DocumentPropertiesUpdateData extends js.Object {
+trait DocumentPropertiesUpdateData extends StObject {
+  
   /**
+    * The author of the workbook.
     *
-    * Gets or sets the author of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var author: js.UndefOr[String] = js.undefined
+  
   /**
+    * The category of the workbook.
     *
-    * Gets or sets the category of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var category: js.UndefOr[String] = js.undefined
+  
   /**
+    * The comments of the workbook.
     *
-    * Gets or sets the comments of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var comments: js.UndefOr[String] = js.undefined
+  
   /**
+    * The company of the workbook.
     *
-    * Gets or sets the company of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var company: js.UndefOr[String] = js.undefined
+  
   /**
+    * The keywords of the workbook.
     *
-    * Gets or sets the keywords of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var keywords: js.UndefOr[String] = js.undefined
+  
   /**
+    * The manager of the workbook.
     *
-    * Gets or sets the manager of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var manager: js.UndefOr[String] = js.undefined
+  
   /**
+    * Gets the revision number of the workbook.
     *
-    * Gets the revision number of the workbook. Read only.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var revisionNumber: js.UndefOr[Double] = js.undefined
+  
   /**
+    * The subject of the workbook.
     *
-    * Gets or sets the subject of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var subject: js.UndefOr[String] = js.undefined
+  
   /**
+    * The title of the workbook.
     *
-    * Gets or sets the title of the workbook.
-    *
+    * @remarks
     * [Api set: ExcelApi 1.7]
     */
   var title: js.UndefOr[String] = js.undefined
 }
-
 object DocumentPropertiesUpdateData {
-  @scala.inline
-  def apply(
-    author: String = null,
-    category: String = null,
-    comments: String = null,
-    company: String = null,
-    keywords: String = null,
-    manager: String = null,
-    revisionNumber: Int | Double = null,
-    subject: String = null,
-    title: String = null
-  ): DocumentPropertiesUpdateData = {
+  
+  inline def apply(): DocumentPropertiesUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (author != null) __obj.updateDynamic("author")(author.asInstanceOf[js.Any])
-    if (category != null) __obj.updateDynamic("category")(category.asInstanceOf[js.Any])
-    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
-    if (company != null) __obj.updateDynamic("company")(company.asInstanceOf[js.Any])
-    if (keywords != null) __obj.updateDynamic("keywords")(keywords.asInstanceOf[js.Any])
-    if (manager != null) __obj.updateDynamic("manager")(manager.asInstanceOf[js.Any])
-    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber.asInstanceOf[js.Any])
-    if (subject != null) __obj.updateDynamic("subject")(subject.asInstanceOf[js.Any])
-    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentPropertiesUpdateData]
   }
+  
+  extension [Self <: DocumentPropertiesUpdateData](x: Self) {
+    
+    inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    
+    inline def setComments(value: String): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    
+    inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+    
+    inline def setKeywords(value: String): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    
+    inline def setManager(value: String): Self = StObject.set(x, "manager", value.asInstanceOf[js.Any])
+    
+    inline def setManagerUndefined: Self = StObject.set(x, "manager", js.undefined)
+    
+    inline def setRevisionNumber(value: Double): Self = StObject.set(x, "revisionNumber", value.asInstanceOf[js.Any])
+    
+    inline def setRevisionNumberUndefined: Self = StObject.set(x, "revisionNumber", js.undefined)
+    
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+  }
 }
-

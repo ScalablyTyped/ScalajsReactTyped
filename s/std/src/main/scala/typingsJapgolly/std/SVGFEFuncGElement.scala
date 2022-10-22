@@ -1,15 +1,11 @@
 package typingsJapgolly.std
 
-import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <feFuncG> element. */
 @js.native
-trait SVGFEFuncGElement extends SVGComponentTransferFunctionElement
-
-@JSGlobal("SVGFEFuncGElement")
-@js.native
-object SVGFEFuncGElement extends Instantiable0[SVGFEFuncGElement]
-
+trait SVGFEFuncGElement
+  extends StObject
+     with SVGComponentTransferFunctionElement

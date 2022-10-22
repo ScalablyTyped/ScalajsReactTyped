@@ -1,15 +1,14 @@
 package typingsJapgolly.tslint.mod
 
-import typingsJapgolly.tslint.ruleMod.IOptions
+import typingsJapgolly.tslint.libLanguageRuleRuleMod.IOptions
 import typingsJapgolly.typescript.mod.SourceFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("tslint", "ScopeAwareRuleWalker")
+/* note: abstract class */ @JSImport("tslint", "ScopeAwareRuleWalker")
 @js.native
-abstract class ScopeAwareRuleWalker[T] protected ()
-  extends typingsJapgolly.tslint.walkerMod.ScopeAwareRuleWalker[T] {
+open class ScopeAwareRuleWalker[T] protected ()
+  extends typingsJapgolly.tslint.libLanguageWalkerMod.ScopeAwareRuleWalker[T] {
   def this(sourceFile: SourceFile, options: IOptions) = this()
 }
-

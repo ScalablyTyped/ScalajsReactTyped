@@ -1,12 +1,11 @@
 package typingsJapgolly.reactInputMask
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This can be used to `require` the library as a side effect.
   If it is a global library this will make scalajs-bundler include it */
 @JSImport("react-input-mask", JSImport.Namespace)
 @js.native
-object reactInputMaskRequire extends js.Object
-
+object reactInputMaskRequire extends StObject

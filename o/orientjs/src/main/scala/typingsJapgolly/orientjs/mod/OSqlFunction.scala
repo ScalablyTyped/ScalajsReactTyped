@@ -1,22 +1,36 @@
 package typingsJapgolly.orientjs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait OSqlFunction extends _OSqlExpression {
+trait OSqlFunction
+  extends StObject
+     with _OSqlExpression {
+  
   var abs: AbsSqlFunction
+  
   var avg: AbsSqlFunction
+  
   var db: ODB
+  
   var sequence: SequenceSqlFunction
 }
-
 object OSqlFunction {
-  @scala.inline
-  def apply(abs: AbsSqlFunction, avg: AbsSqlFunction, db: ODB, sequence: SequenceSqlFunction): OSqlFunction = {
-    val __obj = js.Dynamic.literal(abs = abs.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
   
+  inline def apply(abs: AbsSqlFunction, avg: AbsSqlFunction, db: ODB, sequence: SequenceSqlFunction): OSqlFunction = {
+    val __obj = js.Dynamic.literal(abs = abs.asInstanceOf[js.Any], avg = avg.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any])
     __obj.asInstanceOf[OSqlFunction]
   }
+  
+  extension [Self <: OSqlFunction](x: Self) {
+    
+    inline def setAbs(value: AbsSqlFunction): Self = StObject.set(x, "abs", value.asInstanceOf[js.Any])
+    
+    inline def setAvg(value: AbsSqlFunction): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
+    
+    inline def setDb(value: ODB): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    
+    inline def setSequence(value: SequenceSqlFunction): Self = StObject.set(x, "sequence", value.asInstanceOf[js.Any])
+  }
 }
-

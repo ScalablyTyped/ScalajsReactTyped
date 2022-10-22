@@ -1,26 +1,27 @@
 package typingsJapgolly.kendoUi.kendo.ui
 
 import japgolly.scalajs.react.CallbackTo
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait GridColumnShowEvent extends GridEvent {
-  var column: js.UndefOr[js.Any] = js.undefined
+trait GridColumnShowEvent
+  extends StObject
+     with GridEvent {
+  
+  var column: js.UndefOr[Any] = js.undefined
 }
-
 object GridColumnShowEvent {
-  @scala.inline
-  def apply(
-    isDefaultPrevented: CallbackTo[Boolean],
-    preventDefault: js.Function,
-    sender: Grid,
-    column: js.Any = null
-  ): GridColumnShowEvent = {
-    val __obj = js.Dynamic.literal(preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
-    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented.toJsFn)
-    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+  
+  inline def apply(isDefaultPrevented: CallbackTo[Boolean], preventDefault: js.Function, sender: Grid): GridColumnShowEvent = {
+    val __obj = js.Dynamic.literal(isDefaultPrevented = isDefaultPrevented.toJsFn, preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridColumnShowEvent]
   }
+  
+  extension [Self <: GridColumnShowEvent](x: Self) {
+    
+    inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+  }
 }
-

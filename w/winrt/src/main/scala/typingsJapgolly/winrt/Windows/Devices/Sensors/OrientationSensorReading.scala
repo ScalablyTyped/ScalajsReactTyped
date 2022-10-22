@@ -1,17 +1,16 @@
 package typingsJapgolly.winrt.Windows.Devices.Sensors
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Devices.Sensors.OrientationSensorReading")
-@js.native
-class OrientationSensorReading () extends IOrientationSensorReading {
-  /* CompleteClass */
-  override var quaternion: SensorQuaternion = js.native
-  /* CompleteClass */
-  override var rotationMatrix: SensorRotationMatrix = js.native
-  /* CompleteClass */
-  override var timestamp: js.Date = js.native
+trait OrientationSensorReading
+  extends StObject
+     with IOrientationSensorReading
+object OrientationSensorReading {
+  
+  inline def apply(quaternion: SensorQuaternion, rotationMatrix: SensorRotationMatrix, timestamp: js.Date): OrientationSensorReading = {
+    val __obj = js.Dynamic.literal(quaternion = quaternion.asInstanceOf[js.Any], rotationMatrix = rotationMatrix.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrientationSensorReading]
+  }
 }
-

@@ -1,19 +1,31 @@
 package typingsJapgolly.mendixmodelsdk.mod.microflows
 
+import typingsJapgolly.mendixmodelsdk.srcSdkInternalVersionChecksMod.ILifeCycle
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType")
 @js.native
-class ErrorResultHandlingType ()
-  extends typingsJapgolly.mendixmodelsdk.allModelClassesMod.microflows.ErrorResultHandlingType
-
-/* static members */
-@JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType")
-@js.native
-object ErrorResultHandlingType extends js.Object {
-  var HttpResponse: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ErrorResultHandlingType = js.native
-  var None: typingsJapgolly.mendixmodelsdk.microflowsMod.microflows.ErrorResultHandlingType = js.native
+open class ErrorResultHandlingType protected ()
+  extends typingsJapgolly.mendixmodelsdk.srcGenAllModelClassesMod.microflows.ErrorResultHandlingType {
+  def this(_name: String, lifeCycleInfo: ILifeCycle) = this()
 }
-
+object ErrorResultHandlingType {
+  
+  @JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType.HttpResponse")
+  @js.native
+  def HttpResponse: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ErrorResultHandlingType = js.native
+  inline def HttpResponse_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HttpResponse")(x.asInstanceOf[js.Any])
+  
+  /* static member */
+  @JSImport("mendixmodelsdk", "microflows.ErrorResultHandlingType.None")
+  @js.native
+  def None: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ErrorResultHandlingType = js.native
+  inline def None_=(x: typingsJapgolly.mendixmodelsdk.srcGenMicroflowsMod.microflows.ErrorResultHandlingType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("None")(x.asInstanceOf[js.Any])
+}

@@ -1,8 +1,8 @@
 package typingsJapgolly.qlikEngineapi.EngineAPI
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV
@@ -16,30 +16,26 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JSON
   - typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.KML
 */
-trait FileDataFormatType extends js.Object
-
+trait FileDataFormatType extends StObject
 object FileDataFormatType {
-  @scala.inline
-  def CSV: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV = this.cast("CSV")
-  @scala.inline
-  def DIF: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DIF = this.cast("DIF")
-  @scala.inline
-  def EXCEL_BIFF: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_BIFF = this.cast("EXCEL_BIFF")
-  @scala.inline
-  def EXCEL_OOXML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_OOXML = this.cast("EXCEL_OOXML")
-  @scala.inline
-  def FIX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIX = this.cast("FIX")
-  @scala.inline
-  def HTML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HTML = this.cast("HTML")
-  @scala.inline
-  def JSON: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JSON = this.cast("JSON")
-  @scala.inline
-  def KML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.KML = this.cast("KML")
-  @scala.inline
-  def QVX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.QVX = this.cast("QVX")
-  @scala.inline
-  def XML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XML = this.cast("XML")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def CSV: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV = "CSV".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.CSV]
+  
+  inline def DIF: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DIF = "DIF".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.DIF]
+  
+  inline def EXCEL_BIFF: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_BIFF = "EXCEL_BIFF".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_BIFF]
+  
+  inline def EXCEL_OOXML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_OOXML = "EXCEL_OOXML".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.EXCEL_OOXML]
+  
+  inline def FIX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIX = "FIX".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.FIX]
+  
+  inline def HTML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HTML = "HTML".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.HTML]
+  
+  inline def JSON: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JSON = "JSON".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.JSON]
+  
+  inline def KML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.KML = "KML".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.KML]
+  
+  inline def QVX: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.QVX = "QVX".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.QVX]
+  
+  inline def XML: typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XML = "XML".asInstanceOf[typingsJapgolly.qlikEngineapi.qlikEngineapiStrings.XML]
 }
-

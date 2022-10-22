@@ -1,26 +1,54 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait DriveItemUploadableProperties extends js.Object {
-  // Provides a user-visible description of the item. Read-write. Only on OneDrive Personal
-  var description: js.UndefOr[String] = js.undefined
+trait DriveItemUploadableProperties extends StObject {
+  
+  // Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
+  
+  // Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
+  var fileSize: js.UndefOr[NullableOption[Double]] = js.undefined
+  
   // File system information on client. Read-write.
-  var fileSystemInfo: js.UndefOr[FileSystemInfo] = js.undefined
+  var fileSystemInfo: js.UndefOr[NullableOption[FileSystemInfo]] = js.undefined
+  
   // The name of the item (filename and extension). Read-write.
-  var name: js.UndefOr[String] = js.undefined
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object DriveItemUploadableProperties {
-  @scala.inline
-  def apply(description: String = null, fileSystemInfo: FileSystemInfo = null, name: String = null): DriveItemUploadableProperties = {
+  
+  inline def apply(): DriveItemUploadableProperties = {
     val __obj = js.Dynamic.literal()
-    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
-    if (fileSystemInfo != null) __obj.updateDynamic("fileSystemInfo")(fileSystemInfo.asInstanceOf[js.Any])
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DriveItemUploadableProperties]
   }
+  
+  extension [Self <: DriveItemUploadableProperties](x: Self) {
+    
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
+    
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    
+    inline def setFileSize(value: NullableOption[Double]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    
+    inline def setFileSizeNull: Self = StObject.set(x, "fileSize", null)
+    
+    inline def setFileSizeUndefined: Self = StObject.set(x, "fileSize", js.undefined)
+    
+    inline def setFileSystemInfo(value: NullableOption[FileSystemInfo]): Self = StObject.set(x, "fileSystemInfo", value.asInstanceOf[js.Any])
+    
+    inline def setFileSystemInfoNull: Self = StObject.set(x, "fileSystemInfo", null)
+    
+    inline def setFileSystemInfoUndefined: Self = StObject.set(x, "fileSystemInfo", js.undefined)
+    
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameNull: Self = StObject.set(x, "name", null)
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

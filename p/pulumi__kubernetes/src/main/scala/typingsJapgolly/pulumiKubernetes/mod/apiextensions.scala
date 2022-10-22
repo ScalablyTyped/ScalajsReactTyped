@@ -1,19 +1,26 @@
 package typingsJapgolly.pulumiKubernetes.mod
 
-import typingsJapgolly.pulumiKubernetes.customResourceMod.CustomResourceArgs
-import typingsJapgolly.pulumiKubernetes.customResourceMod.CustomResourceGetOptions
+import typingsJapgolly.pulumiKubernetes.apiextensionsCustomResourceMod.CustomResourceArgs
+import typingsJapgolly.pulumiKubernetes.apiextensionsCustomResourceMod.CustomResourceGetOptions
+import typingsJapgolly.pulumiKubernetes.apiextensionsCustomResourcePatchMod.CustomResourcePatchArgs
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionListArgs
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinitionArgs
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatch
+import typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatchArgs
 import typingsJapgolly.pulumiPulumi.outputMod.Input
 import typingsJapgolly.pulumiPulumi.resourceMod.CustomResourceOptions
 import typingsJapgolly.pulumiPulumi.resourceMod.ID
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@pulumi/kubernetes", "apiextensions")
-@js.native
-object apiextensions extends js.Object {
+object apiextensions {
+  
+  @JSImport("@pulumi/kubernetes", "apiextensions.CustomResource")
   @js.native
-  class CustomResource protected ()
+  open class CustomResource protected ()
     extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.CustomResource {
     /**
       * Create a CustomResource resource with the given unique name, arguments, and options.
@@ -25,210 +32,161 @@ object apiextensions extends js.Object {
     def this(name: String, args: CustomResourceArgs) = this()
     def this(name: String, args: CustomResourceArgs, opts: CustomResourceOptions) = this()
   }
-  
   /* static members */
-  @js.native
-  object CustomResource extends js.Object {
+  object CustomResource {
+    
+    @JSImport("@pulumi/kubernetes", "apiextensions.CustomResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
-      * Get the state of an existing `CustomResource`, as identified by `id`.
-      * Typically this ID  is of the form [namespace]/[name]; if [namespace] is omitted, then (per
-      * Kubernetes convention) the ID becomes default/[name].
+      * Get an existing CustomResource resource's state with the given name, ID, and optional extra
+      * properties used to qualify the lookup.
       *
-      * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-      *
-      * @param name _Unique_ name used to register this resource with Pulumi.
+      * @param name The _unique_ name of the resulting resource.
       * @param opts Uniquely specifies a CustomResource to select.
       */
-    def get(name: String, opts: CustomResourceGetOptions): typingsJapgolly.pulumiKubernetes.customResourceMod.CustomResource = js.native
+    inline def get(name: String, opts: CustomResourceGetOptions): typingsJapgolly.pulumiKubernetes.apiextensionsCustomResourceMod.CustomResource = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsCustomResourceMod.CustomResource]
   }
   
+  @JSImport("@pulumi/kubernetes", "apiextensions.CustomResourcePatch")
   @js.native
-  object v1 extends js.Object {
-    @js.native
-    class CustomResourceDefinition protected ()
-      extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.v1.CustomResourceDefinition {
-      /**
-        * Create a apiextensions.v1.CustomResourceDefinition resource with the given unique name, arguments, and options.
-        *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
-        */
-      def this(name: String) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1.CustomResourceDefinition
-      ) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1.CustomResourceDefinition,
-        opts: CustomResourceOptions
-      ) = this()
-    }
+  open class CustomResourcePatch protected ()
+    extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.CustomResourcePatch {
+    /**
+      * Create a CustomResourcePatch resource with the given unique name, arguments, and options.
+      *
+      * @param name The _unique_ name of the resource.
+      * @param args The arguments to use to populate this resource's properties.
+      * @param opts A bag of options that control this resource's behavior.
+      */
+    def this(name: String, args: CustomResourcePatchArgs) = this()
+    def this(name: String, args: CustomResourcePatchArgs, opts: CustomResourceOptions) = this()
+  }
+  
+  object v1beta1 {
     
-    @js.native
-    class CustomResourceDefinitionList protected ()
-      extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.v1.CustomResourceDefinitionList {
+    object CustomResourceDefinition {
+      
+      @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinition")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a apiextensions.v1.CustomResourceDefinitionList resource with the given unique name, arguments, and options.
+        * Get an existing CustomResourceDefinition resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * @param name The _unique_ name of the resource.
-        * @param args The arguments to use to populate this resource's properties.
-        * @param opts A bag of options that control this resource's behavior.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def this(name: String) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1.CustomResourceDefinitionList
-      ) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1.CustomResourceDefinitionList,
-        opts: CustomResourceOptions
-      ) = this()
-    }
-    
-    /* static members */
-    @js.native
-    object CustomResourceDefinition extends js.Object {
-      /**
-        * Get the state of an existing `CustomResourceDefinition` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1CustomResourceDefinitionMod.CustomResourceDefinition = js.native
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionMod.CustomResourceDefinition]
+      
       /**
         * Returns true if the given object is an instance of CustomResourceDefinition.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1/CustomResourceDefinition.CustomResourceDefinition */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinition.CustomResourceDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinition.CustomResourceDefinition */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinition")
     @js.native
-    object CustomResourceDefinitionList extends js.Object {
+    open class CustomResourceDefinitionCls protected () extends CustomResourceDefinition {
       /**
-        * Get the state of an existing `CustomResourceDefinitionList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
-        *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
-        */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.v1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.v1CustomResourceDefinitionListMod.CustomResourceDefinitionList = js.native
-      /**
-        * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1/CustomResourceDefinitionList.CustomResourceDefinitionList */ Boolean = js.native
-    }
-    
-  }
-  
-  @js.native
-  object v1beta1 extends js.Object {
-    @js.native
-    class CustomResourceDefinition protected ()
-      extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.v1beta1.CustomResourceDefinition {
-      /**
-        * Create a apiextensions.v1beta1.CustomResourceDefinition resource with the given unique name, arguments, and options.
+        * Create a CustomResourceDefinition resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition
-      ) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinition,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: CustomResourceDefinitionArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CustomResourceDefinitionArgs, opts: CustomResourceOptions) = this()
     }
     
-    @js.native
-    class CustomResourceDefinitionList protected ()
-      extends typingsJapgolly.pulumiKubernetes.apiextensionsMod.v1beta1.CustomResourceDefinitionList {
+    object CustomResourceDefinitionList {
+      
+      @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinitionList")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Create a apiextensions.v1beta1.CustomResourceDefinitionList resource with the given unique name, arguments, and options.
+        * Get an existing CustomResourceDefinitionList resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
+        *
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
+        */
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionListMod.CustomResourceDefinitionList]
+      
+      /**
+        * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
+        * when multiple copies of the Pulumi SDK have been loaded into the same process.
+        */
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionList.CustomResourceDefinitionList */ Boolean]
+    }
+    
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinitionList")
+    @js.native
+    open class CustomResourceDefinitionListCls protected () extends CustomResourceDefinitionList {
+      /**
+        * Create a CustomResourceDefinitionList resource with the given unique name, arguments, and options.
         *
         * @param name The _unique_ name of the resource.
         * @param args The arguments to use to populate this resource's properties.
         * @param opts A bag of options that control this resource's behavior.
         */
       def this(name: String) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinitionList
-      ) = this()
-      def this(
-        name: String,
-        args: typingsJapgolly.pulumiKubernetes.inputMod.apiextensions.v1beta1.CustomResourceDefinitionList,
-        opts: CustomResourceOptions
-      ) = this()
+      def this(name: String, args: CustomResourceDefinitionListArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CustomResourceDefinitionListArgs, opts: CustomResourceOptions) = this()
     }
     
-    /* static members */
-    @js.native
-    object CustomResourceDefinition extends js.Object {
+    object CustomResourceDefinitionPatch {
+      
+      @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinitionPatch")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
-        * Get the state of an existing `CustomResourceDefinition` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Get an existing CustomResourceDefinitionPatch resource's state with the given name, ID, and optional extra
+        * properties used to qualify the lookup.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resulting resource.
+        * @param id The _unique_ provider ID of the resource to lookup.
+        * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.customResourceDefinitionMod.CustomResourceDefinition = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.customResourceDefinitionMod.CustomResourceDefinition = js.native
+      inline def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatch]
+      inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typingsJapgolly.pulumiKubernetes.apiextensionsV1beta1CustomResourceDefinitionPatchMod.CustomResourceDefinitionPatch]
+      
       /**
-        * Returns true if the given object is an instance of CustomResourceDefinition.  This is designed to work even
+        * Returns true if the given object is an instance of CustomResourceDefinitionPatch.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/CustomResourceDefinition.CustomResourceDefinition */ Boolean = js.native
+      inline def isInstance(obj: Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionPatch.CustomResourceDefinitionPatch */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/customResourceDefinitionPatch.CustomResourceDefinitionPatch */ Boolean]
     }
     
-    /* static members */
+    /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+    @JSImport("@pulumi/kubernetes", "apiextensions.v1beta1.CustomResourceDefinitionPatch")
     @js.native
-    object CustomResourceDefinitionList extends js.Object {
+    open class CustomResourceDefinitionPatchCls protected () extends CustomResourceDefinitionPatch {
       /**
-        * Get the state of an existing `CustomResourceDefinitionList` resource, as identified by `id`.
-        * The ID is of the form `[namespace]/<name>`; if `namespace` is omitted, then (per
-        * Kubernetes convention) the ID becomes `default/<name>`.
+        * Create a CustomResourceDefinitionPatch resource with the given unique name, arguments, and options.
         *
-        * Pulumi will keep track of this resource using `name` as the Pulumi ID.
-        *
-        * @param name _Unique_ name used to register this resource with Pulumi.
-        * @param id An ID for the Kubernetes resource to retrieve. Takes the form `[namespace]/<name>`.
-        * @param opts Uniquely specifies a CustomResource to select.
+        * @param name The _unique_ name of the resource.
+        * @param args The arguments to use to populate this resource's properties.
+        * @param opts A bag of options that control this resource's behavior.
         */
-      def get(name: String, id: Input[ID]): typingsJapgolly.pulumiKubernetes.customResourceDefinitionListMod.CustomResourceDefinitionList = js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typingsJapgolly.pulumiKubernetes.customResourceDefinitionListMod.CustomResourceDefinitionList = js.native
-      /**
-        * Returns true if the given object is an instance of CustomResourceDefinitionList.  This is designed to work even
-        * when multiple copies of the Pulumi SDK have been loaded into the same process.
-        */
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apiextensions/v1beta1/CustomResourceDefinitionList.CustomResourceDefinitionList */ Boolean = js.native
+      def this(name: String) = this()
+      def this(name: String, args: CustomResourceDefinitionPatchArgs) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
+      def this(name: String, args: CustomResourceDefinitionPatchArgs, opts: CustomResourceOptions) = this()
     }
-    
   }
-  
 }
-

@@ -1,20 +1,27 @@
 package typingsJapgolly.officeJsPreview.Excel.Interfaces
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the CustomPropertyCollection object, for use in `customPropertyCollection.set({ ... })`. */
-trait CustomPropertyCollectionUpdateData extends js.Object {
+trait CustomPropertyCollectionUpdateData extends StObject {
+  
   var items: js.UndefOr[js.Array[CustomPropertyData]] = js.undefined
 }
-
 object CustomPropertyCollectionUpdateData {
-  @scala.inline
-  def apply(items: js.Array[CustomPropertyData] = null): CustomPropertyCollectionUpdateData = {
+  
+  inline def apply(): CustomPropertyCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
-    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomPropertyCollectionUpdateData]
   }
+  
+  extension [Self <: CustomPropertyCollectionUpdateData](x: Self) {
+    
+    inline def setItems(value: js.Array[CustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    
+    inline def setItemsVarargs(value: CustomPropertyData*): Self = StObject.set(x, "items", js.Array(value*))
+  }
 }
-

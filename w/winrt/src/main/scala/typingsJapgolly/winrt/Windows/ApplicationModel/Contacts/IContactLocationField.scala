@@ -1,21 +1,28 @@
 package typingsJapgolly.winrt.Windows.ApplicationModel.Contacts
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IContactLocationField extends IContactField {
+trait IContactLocationField
+  extends StObject
+     with IContactField {
+  
   var city: String
+  
   var country: String
+  
   var postalCode: String
+  
   var region: String
+  
   var street: String
+  
   var unstructuredAddress: String
 }
-
 object IContactLocationField {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     category: ContactFieldCategory,
     city: String,
     country: String,
@@ -31,5 +38,19 @@ object IContactLocationField {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IContactLocationField]
   }
+  
+  extension [Self <: IContactLocationField](x: Self) {
+    
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    
+    inline def setStreet(value: String): Self = StObject.set(x, "street", value.asInstanceOf[js.Any])
+    
+    inline def setUnstructuredAddress(value: String): Self = StObject.set(x, "unstructuredAddress", value.asInstanceOf[js.Any])
+  }
 }
-

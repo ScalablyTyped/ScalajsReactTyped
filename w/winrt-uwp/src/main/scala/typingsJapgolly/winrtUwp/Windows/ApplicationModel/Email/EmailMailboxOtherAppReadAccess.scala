@@ -1,32 +1,25 @@
 package typingsJapgolly.winrtUwp.Windows.ApplicationModel.Email
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-sealed trait EmailMailboxOtherAppReadAccess extends js.Object
-
+sealed trait EmailMailboxOtherAppReadAccess extends StObject
 /** Defines whether an application can read from a mailbox. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxOtherAppReadAccess")
 @js.native
-object EmailMailboxOtherAppReadAccess extends js.Object {
+object EmailMailboxOtherAppReadAccess extends StObject {
+  
   /** All applications can read from this mailbox. */
   @js.native
-  sealed trait full extends EmailMailboxOtherAppReadAccess
+  sealed trait full
+    extends StObject
+       with EmailMailboxOtherAppReadAccess
   
   /** Only system level applications can read from this mailbox. */
   @js.native
-  sealed trait systemOnly extends EmailMailboxOtherAppReadAccess
-  
-  @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EmailMailboxOtherAppReadAccess with Double] = js.native
-  /* 1 */ @js.native
-  object full extends TopLevel[full with Double]
-  
-  /* 0 */ @js.native
-  object systemOnly extends TopLevel[systemOnly with Double]
-  
+  sealed trait systemOnly
+    extends StObject
+       with EmailMailboxOtherAppReadAccess
 }
-

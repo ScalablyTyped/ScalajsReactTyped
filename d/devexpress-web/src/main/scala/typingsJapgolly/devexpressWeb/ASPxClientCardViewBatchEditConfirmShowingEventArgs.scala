@@ -1,23 +1,30 @@
 package typingsJapgolly.devexpressWeb
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.BatchEditConfirmShowing event.
   */
-@JSGlobal("ASPxClientCardViewBatchEditConfirmShowingEventArgs")
-@js.native
-class ASPxClientCardViewBatchEditConfirmShowingEventArgs protected () extends ASPxClientCancelEventArgs {
-  /**
-    * Initializes a new instance of the ASPxClientCardViewBatchEditConfirmShowingEventArgs class.
-    * @param requestTriggerID A string value specifying the client identifier of an object that initiates a request.
-    */
-  def this(requestTriggerID: String) = this()
+trait ASPxClientCardViewBatchEditConfirmShowingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
+  
   /**
     * Gets the client identifier of an object that initiates a send request.
     */
-  var requestTriggerID: String = js.native
+  var requestTriggerID: String
 }
-
+object ASPxClientCardViewBatchEditConfirmShowingEventArgs {
+  
+  inline def apply(cancel: Boolean, requestTriggerID: String): ASPxClientCardViewBatchEditConfirmShowingEventArgs = {
+    val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], requestTriggerID = requestTriggerID.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ASPxClientCardViewBatchEditConfirmShowingEventArgs]
+  }
+  
+  extension [Self <: ASPxClientCardViewBatchEditConfirmShowingEventArgs](x: Self) {
+    
+    inline def setRequestTriggerID(value: String): Self = StObject.set(x, "requestTriggerID", value.asInstanceOf[js.Any])
+  }
+}

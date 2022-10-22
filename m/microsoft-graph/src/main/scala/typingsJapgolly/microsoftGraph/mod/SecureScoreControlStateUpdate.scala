@@ -1,38 +1,63 @@
 package typingsJapgolly.microsoftGraph.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SecureScoreControlStateUpdate extends js.Object {
+trait SecureScoreControlStateUpdate extends StObject {
+  
   // Assigns the control to the user who will take the action.
-  var assignedTo: js.UndefOr[String] = js.undefined
+  var assignedTo: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Provides optional comment about the control.
-  var comment: js.UndefOr[String] = js.undefined
+  var comment: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
-  var state: js.UndefOr[String] = js.undefined
+  var state: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // ID of the user who updated tenant state.
-  var updatedBy: js.UndefOr[String] = js.undefined
+  var updatedBy: js.UndefOr[NullableOption[String]] = js.undefined
+  
   // Time at which the control state was updated.
-  var updatedDateTime: js.UndefOr[String] = js.undefined
+  var updatedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
 }
-
 object SecureScoreControlStateUpdate {
-  @scala.inline
-  def apply(
-    assignedTo: String = null,
-    comment: String = null,
-    state: String = null,
-    updatedBy: String = null,
-    updatedDateTime: String = null
-  ): SecureScoreControlStateUpdate = {
+  
+  inline def apply(): SecureScoreControlStateUpdate = {
     val __obj = js.Dynamic.literal()
-    if (assignedTo != null) __obj.updateDynamic("assignedTo")(assignedTo.asInstanceOf[js.Any])
-    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
-    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
-    if (updatedBy != null) __obj.updateDynamic("updatedBy")(updatedBy.asInstanceOf[js.Any])
-    if (updatedDateTime != null) __obj.updateDynamic("updatedDateTime")(updatedDateTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecureScoreControlStateUpdate]
   }
+  
+  extension [Self <: SecureScoreControlStateUpdate](x: Self) {
+    
+    inline def setAssignedTo(value: NullableOption[String]): Self = StObject.set(x, "assignedTo", value.asInstanceOf[js.Any])
+    
+    inline def setAssignedToNull: Self = StObject.set(x, "assignedTo", null)
+    
+    inline def setAssignedToUndefined: Self = StObject.set(x, "assignedTo", js.undefined)
+    
+    inline def setComment(value: NullableOption[String]): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    
+    inline def setCommentNull: Self = StObject.set(x, "comment", null)
+    
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    
+    inline def setState(value: NullableOption[String]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    
+    inline def setStateNull: Self = StObject.set(x, "state", null)
+    
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    
+    inline def setUpdatedBy(value: NullableOption[String]): Self = StObject.set(x, "updatedBy", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedByNull: Self = StObject.set(x, "updatedBy", null)
+    
+    inline def setUpdatedByUndefined: Self = StObject.set(x, "updatedBy", js.undefined)
+    
+    inline def setUpdatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "updatedDateTime", value.asInstanceOf[js.Any])
+    
+    inline def setUpdatedDateTimeNull: Self = StObject.set(x, "updatedDateTime", null)
+    
+    inline def setUpdatedDateTimeUndefined: Self = StObject.set(x, "updatedDateTime", js.undefined)
+  }
 }
-

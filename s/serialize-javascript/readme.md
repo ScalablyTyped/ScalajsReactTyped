@@ -1,7 +1,7 @@
 
 # Scala.js typings for serialize-javascript
 
-Typings are for version 1.5
+Typings are for version 5.0
 
 ## Library description:
 Serialize JavaScript to a superset of JSON that includes regular expressions and functions.
@@ -10,10 +10,10 @@ Serialize JavaScript to a superset of JSON that includes regular expressions and
 | ------------------ | :-------------: |
 | Full name          | serialize-javascript |
 | Keywords           | serialize, serialization, javascript, js, json |
-| # releases         | 12 |
-| # dependents       | 487 |
-| # downloads        | 290417824 |
-| # stars            | 27 |
+| # releases         | 3 |
+| # dependents       | 0.0 |
+| # downloads        | 1.3901678033333334E8 |
+| # stars            | 2525.0 |
 
 ## Links
 - [Homepage](https://github.com/yahoo/serialize-javascript)

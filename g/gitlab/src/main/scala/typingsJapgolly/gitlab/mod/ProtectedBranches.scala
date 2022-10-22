@@ -1,11 +1,13 @@
 package typingsJapgolly.gitlab.mod
 
+import typingsJapgolly.gitlab.distTypesCoreInfrastructureBaseServiceMod.BaseServiceOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gitlab", "ProtectedBranches")
 @js.native
-class ProtectedBranches ()
-  extends typingsJapgolly.gitlab.protectedBranchesMod.ProtectedBranches
-
+open class ProtectedBranches ()
+  extends typingsJapgolly.gitlab.distTypesCoreServicesMod.ProtectedBranches {
+  def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
+}

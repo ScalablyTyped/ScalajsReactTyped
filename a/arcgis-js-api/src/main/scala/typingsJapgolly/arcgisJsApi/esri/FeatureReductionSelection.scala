@@ -1,15 +1,16 @@
 package typingsJapgolly.arcgisJsApi.esri
 
-import org.scalablytyped.runtime.TopLevel
 import typingsJapgolly.arcgisJsApi.arcgisJsApiStrings.selection
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeatureReductionSelection
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
+  
   /**
     * The feature reduction type.
     *
@@ -17,8 +18,3 @@ trait FeatureReductionSelection
     */
   var `type`: selection = js.native
 }
-
-@JSGlobal("__esri.FeatureReductionSelection")
-@js.native
-object FeatureReductionSelection extends TopLevel[FeatureReductionSelectionConstructor]
-

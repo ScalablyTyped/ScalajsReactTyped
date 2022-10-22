@@ -1,19 +1,24 @@
 package typingsJapgolly.nodeSql2.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Named[Name /* <: String */] extends js.Object {
+trait Named[Name /* <: String */] extends StObject {
+  
   var name: js.UndefOr[Name] = js.undefined
 }
-
 object Named {
-  @scala.inline
-  def apply[Name /* <: String */](name: Name = null): Named[Name] = {
+  
+  inline def apply[Name /* <: String */](): Named[Name] = {
     val __obj = js.Dynamic.literal()
-    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Named[Name]]
   }
+  
+  extension [Self <: Named[?], Name /* <: String */](x: Self & Named[Name]) {
+    
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+  }
 }
-

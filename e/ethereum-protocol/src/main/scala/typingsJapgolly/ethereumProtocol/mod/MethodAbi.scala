@@ -1,23 +1,31 @@
 package typingsJapgolly.ethereumProtocol.mod
 
 import typingsJapgolly.ethereumProtocol.mod.AbiType.Function
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait MethodAbi extends FunctionAbi {
+trait MethodAbi
+  extends StObject
+     with FunctionAbi {
+  
   var constant: Boolean
+  
   var inputs: js.Array[DataItem]
+  
   var name: String
+  
   var outputs: js.Array[DataItem]
+  
   var payable: Boolean
+  
   var stateMutability: StateMutability
+  
   var `type`: Function
 }
-
 object MethodAbi {
-  @scala.inline
-  def apply(
+  
+  inline def apply(
     constant: Boolean,
     inputs: js.Array[DataItem],
     name: String,
@@ -30,5 +38,25 @@ object MethodAbi {
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MethodAbi]
   }
+  
+  extension [Self <: MethodAbi](x: Self) {
+    
+    inline def setConstant(value: Boolean): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+    
+    inline def setInputs(value: js.Array[DataItem]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    
+    inline def setInputsVarargs(value: DataItem*): Self = StObject.set(x, "inputs", js.Array(value*))
+    
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    
+    inline def setOutputs(value: js.Array[DataItem]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    
+    inline def setOutputsVarargs(value: DataItem*): Self = StObject.set(x, "outputs", js.Array(value*))
+    
+    inline def setPayable(value: Boolean): Self = StObject.set(x, "payable", value.asInstanceOf[js.Any])
+    
+    inline def setStateMutability(value: StateMutability): Self = StObject.set(x, "stateMutability", value.asInstanceOf[js.Any])
+    
+    inline def setType(value: Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }
-

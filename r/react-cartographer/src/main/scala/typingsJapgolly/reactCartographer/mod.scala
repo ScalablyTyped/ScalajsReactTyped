@@ -1,17 +1,13 @@
 package typingsJapgolly.reactCartographer
 
-import typingsJapgolly.react.mod.Component
-import typingsJapgolly.reactCartographer.mapMod.MapProps
+import typingsJapgolly.reactCartographer.libComponentsMapMod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-cartographer", JSImport.Namespace)
-@js.native
-object mod extends js.Object {
-  @js.native
-  class Map ()
-    extends Component[MapProps, js.Object, js.Any]
+object mod {
   
+  @JSImport("react-cartographer", "Map")
+  @js.native
+  open class Map () extends default
 }
-

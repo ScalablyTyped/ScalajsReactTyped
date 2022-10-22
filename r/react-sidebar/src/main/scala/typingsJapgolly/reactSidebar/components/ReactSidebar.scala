@@ -1,79 +1,78 @@
 package typingsJapgolly.reactSidebar.components
 
 import japgolly.scalajs.react.Callback
-import japgolly.scalajs.react.CtorType.ChildArg
-import japgolly.scalajs.react.Key
-import japgolly.scalajs.react.component.JsForwardRef.UnmountedWithRoot
+import japgolly.scalajs.react.facade.Empty
+import japgolly.scalajs.react.facade.JsNumber
+import japgolly.scalajs.react.facade.React.Element
+import japgolly.scalajs.react.vdom.VdomElement
 import japgolly.scalajs.react.vdom.VdomNode
-import org.scalablytyped.runtime.StringDictionary
+import typingsJapgolly.StBuildingComponent
 import typingsJapgolly.reactSidebar.mod.SidebarProps
 import typingsJapgolly.reactSidebar.mod.SidebarStyles
 import typingsJapgolly.reactSidebar.mod.default
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactSidebar {
-  def apply(
-    contentClassName: String = null,
-    contentId: String = null,
-    defaultSidebarWidth: Int | Double = null,
-    docked: js.UndefOr[Boolean] = js.undefined,
-    dragToggleDistance: Int | Double = null,
-    onSetOpen: /* open */ Boolean => Callback = null,
-    open: js.UndefOr[Boolean] = js.undefined,
-    overlayClassName: String = null,
-    overlayId: String = null,
-    pullRight: js.UndefOr[Boolean] = js.undefined,
-    rootClassName: String = null,
-    rootId: String = null,
-    shadow: js.UndefOr[Boolean] = js.undefined,
-    sidebar: VdomNode = null,
-    sidebarClassName: String = null,
-    sidebarId: String = null,
-    styles: SidebarStyles = null,
-    touch: js.UndefOr[Boolean] = js.undefined,
-    touchHandleWidth: Int | Double = null,
-    transitions: js.UndefOr[Boolean] = js.undefined,
-    key: js.UndefOr[Key] = js.undefined,
-    _overrides: StringDictionary[js.Any] = null
-  )(
-    children: ChildArg*
-  ): UnmountedWithRoot[SidebarProps, default, Unit, SidebarProps] = {
-    val __obj = js.Dynamic.literal()
   
-      if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName.asInstanceOf[js.Any])
-    if (contentId != null) __obj.updateDynamic("contentId")(contentId.asInstanceOf[js.Any])
-    if (defaultSidebarWidth != null) __obj.updateDynamic("defaultSidebarWidth")(defaultSidebarWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(docked)) __obj.updateDynamic("docked")(docked.asInstanceOf[js.Any])
-    if (dragToggleDistance != null) __obj.updateDynamic("dragToggleDistance")(dragToggleDistance.asInstanceOf[js.Any])
-    if (onSetOpen != null) __obj.updateDynamic("onSetOpen")(js.Any.fromFunction1((t0: /* open */ scala.Boolean) => onSetOpen(t0).runNow()))
-    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
-    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName.asInstanceOf[js.Any])
-    if (overlayId != null) __obj.updateDynamic("overlayId")(overlayId.asInstanceOf[js.Any])
-    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight.asInstanceOf[js.Any])
-    if (rootClassName != null) __obj.updateDynamic("rootClassName")(rootClassName.asInstanceOf[js.Any])
-    if (rootId != null) __obj.updateDynamic("rootId")(rootId.asInstanceOf[js.Any])
-    if (!js.isUndefined(shadow)) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
-    if (sidebar != null) __obj.updateDynamic("sidebar")(sidebar.rawNode.asInstanceOf[js.Any])
-    if (sidebarClassName != null) __obj.updateDynamic("sidebarClassName")(sidebarClassName.asInstanceOf[js.Any])
-    if (sidebarId != null) __obj.updateDynamic("sidebarId")(sidebarId.asInstanceOf[js.Any])
-    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
-    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
-    if (touchHandleWidth != null) __obj.updateDynamic("touchHandleWidth")(touchHandleWidth.asInstanceOf[js.Any])
-    if (!js.isUndefined(transitions)) __obj.updateDynamic("transitions")(transitions.asInstanceOf[js.Any])
-    key.foreach(k => __obj.updateDynamic("key")(k.asInstanceOf[js.Any]))
-    if (_overrides != null) js.Dynamic.global.Object.assign(__obj, _overrides)
-  
-    val f = japgolly.scalajs.react.JsForwardRefComponent.force[
-  typingsJapgolly.reactSidebar.mod.SidebarProps, 
-  japgolly.scalajs.react.Children.Varargs, 
-  typingsJapgolly.reactSidebar.mod.default](this.componentImport)
-    f(__obj.asInstanceOf[typingsJapgolly.reactSidebar.mod.SidebarProps])(children: _*)
-  }
   @JSImport("react-sidebar", JSImport.Default)
   @js.native
-  object componentImport extends js.Object
+  val component: js.Object = js.native
   
+  @scala.inline
+  open class Builder (val args: js.Array[Any])
+    extends AnyVal
+       with StBuildingComponent[default] {
+    
+    inline def contentClassName(value: String): this.type = set("contentClassName", value.asInstanceOf[js.Any])
+    
+    inline def contentId(value: String): this.type = set("contentId", value.asInstanceOf[js.Any])
+    
+    inline def defaultSidebarWidth(value: Double): this.type = set("defaultSidebarWidth", value.asInstanceOf[js.Any])
+    
+    inline def docked(value: Boolean): this.type = set("docked", value.asInstanceOf[js.Any])
+    
+    inline def dragToggleDistance(value: Double): this.type = set("dragToggleDistance", value.asInstanceOf[js.Any])
+    
+    inline def onSetOpen(value: /* open */ Boolean => Callback): this.type = set("onSetOpen", js.Any.fromFunction1((t0: /* open */ Boolean) => value(t0).runNow()))
+    
+    inline def open(value: Boolean): this.type = set("open", value.asInstanceOf[js.Any])
+    
+    inline def overlayClassName(value: String): this.type = set("overlayClassName", value.asInstanceOf[js.Any])
+    
+    inline def overlayId(value: String): this.type = set("overlayId", value.asInstanceOf[js.Any])
+    
+    inline def pullRight(value: Boolean): this.type = set("pullRight", value.asInstanceOf[js.Any])
+    
+    inline def rootClassName(value: String): this.type = set("rootClassName", value.asInstanceOf[js.Any])
+    
+    inline def rootId(value: String): this.type = set("rootId", value.asInstanceOf[js.Any])
+    
+    inline def shadow(value: Boolean): this.type = set("shadow", value.asInstanceOf[js.Any])
+    
+    inline def sidebar(value: VdomNode): this.type = set("sidebar", value.rawNode.asInstanceOf[js.Any])
+    
+    inline def sidebarClassName(value: String): this.type = set("sidebarClassName", value.asInstanceOf[js.Any])
+    
+    inline def sidebarId(value: String): this.type = set("sidebarId", value.asInstanceOf[js.Any])
+    
+    inline def sidebarNull: this.type = set("sidebar", null)
+    
+    inline def sidebarVarargs(value: (Empty | String | JsNumber | Element)*): this.type = set("sidebar", js.Array(value*))
+    
+    inline def sidebarVdomElement(value: VdomElement): this.type = set("sidebar", value.rawElement.asInstanceOf[js.Any])
+    
+    inline def styles(value: SidebarStyles): this.type = set("styles", value.asInstanceOf[js.Any])
+    
+    inline def touch(value: Boolean): this.type = set("touch", value.asInstanceOf[js.Any])
+    
+    inline def touchHandleWidth(value: Double): this.type = set("touchHandleWidth", value.asInstanceOf[js.Any])
+    
+    inline def transitions(value: Boolean): this.type = set("transitions", value.asInstanceOf[js.Any])
+  }
+  
+  implicit def make(companion: ReactSidebar.type): Builder = new Builder(js.Array(this.component, js.Dictionary.empty))()
+  
+  def withProps(p: SidebarProps): Builder = new Builder(js.Array(this.component, p.asInstanceOf[js.Any]))
 }
-

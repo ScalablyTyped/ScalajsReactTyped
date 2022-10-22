@@ -1,21 +1,30 @@
 package typingsJapgolly.arangodb.ArangoDB
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait IterateOptions extends js.Object {
+trait IterateOptions extends StObject {
+  
   var limit: js.UndefOr[Double] = js.undefined
+  
   var probability: js.UndefOr[Double] = js.undefined
 }
-
 object IterateOptions {
-  @scala.inline
-  def apply(limit: Int | Double = null, probability: Int | Double = null): IterateOptions = {
+  
+  inline def apply(): IterateOptions = {
     val __obj = js.Dynamic.literal()
-    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
-    if (probability != null) __obj.updateDynamic("probability")(probability.asInstanceOf[js.Any])
     __obj.asInstanceOf[IterateOptions]
   }
+  
+  extension [Self <: IterateOptions](x: Self) {
+    
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    
+    inline def setProbability(value: Double): Self = StObject.set(x, "probability", value.asInstanceOf[js.Any])
+    
+    inline def setProbabilityUndefined: Self = StObject.set(x, "probability", js.undefined)
+  }
 }
-

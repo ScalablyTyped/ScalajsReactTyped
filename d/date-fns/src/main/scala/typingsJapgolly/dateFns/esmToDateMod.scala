@@ -1,18 +1,18 @@
 package typingsJapgolly.dateFns
 
-import typingsJapgolly.std.Date
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("date-fns/esm/toDate", JSImport.Namespace)
-@js.native
-object esmToDateMod extends js.Object {
-  @js.native
-  object default extends js.Object {
-    def apply(argument: Double): js.Date = js.native
-    def apply(argument: Date): js.Date = js.native
-  }
+object esmToDateMod {
   
+  object default {
+    
+    inline def apply(argument: js.Date): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    inline def apply(argument: Double): js.Date = ^.asInstanceOf[js.Dynamic].apply(argument.asInstanceOf[js.Any]).asInstanceOf[js.Date]
+    
+    @JSImport("date-fns/esm/toDate", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+  }
 }
-

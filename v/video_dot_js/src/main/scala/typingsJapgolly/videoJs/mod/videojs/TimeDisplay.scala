@@ -1,15 +1,18 @@
 package typingsJapgolly.videoJs.mod.videojs
 
 import typingsJapgolly.videoJs.mod.videojs.EventTarget.Event
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Displays the time left in the video
   */
 @js.native
-trait TimeDisplay extends Component {
+trait TimeDisplay
+  extends StObject
+     with Component {
+  
   /**
     * To be filled out in the child class, should update the displayed time
     * in accordance with the fact that the current time has changed.
@@ -22,4 +25,3 @@ trait TimeDisplay extends Component {
   def updateContent(): Unit = js.native
   def updateContent(event: Event): Unit = js.native
 }
-

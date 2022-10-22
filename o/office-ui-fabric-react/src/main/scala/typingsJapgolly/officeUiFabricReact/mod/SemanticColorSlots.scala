@@ -1,19 +1,23 @@
 package typingsJapgolly.officeUiFabricReact.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "SemanticColorSlots")
 @js.native
-object SemanticColorSlots extends js.Object {
-  /* 0 */ val bodyBackground: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyBackground with Double = js.native
-  /* 1 */ val bodyText: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.bodyText with Double = js.native
-  /* 2 */ val disabledBackground: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledBackground with Double = js.native
-  /* 3 */ val disabledText: typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots.disabledText with Double = js.native
+object SemanticColorSlots extends StObject {
+  
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typingsJapgolly.officeUiFabricReact.themeRulesStandardMod.SemanticColorSlots with Double
+    typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots & Double
   ] = js.native
+  
+  /* 0 */ val bodyBackground: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyBackground & Double = js.native
+  
+  /* 1 */ val bodyText: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.bodyText & Double = js.native
+  
+  /* 2 */ val disabledBackground: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledBackground & Double = js.native
+  
+  /* 3 */ val disabledText: typingsJapgolly.officeUiFabricReact.libComponentsThemeGeneratorThemeRulesStandardMod.SemanticColorSlots.disabledText & Double = js.native
 }
-

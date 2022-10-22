@@ -1,14 +1,16 @@
 package typingsJapgolly.materialUiStyles
 
-import japgolly.scalajs.react.raw.React.ElementType
+import japgolly.scalajs.react.facade.React.ElementType
 import typingsJapgolly.materialUiStyles.styledStyledMod.ComponentCreator
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("@material-ui/styles/styled", JSImport.Namespace)
-@js.native
-object styledMod extends js.Object {
-  def default[Component /* <: ElementType */](Component: Component): ComponentCreator[Component] = js.native
+object styledMod {
+  
+  @JSImport("@material-ui/styles/styled", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  inline def default[Component /* <: ElementType */](Component: Component): ComponentCreator[Component] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentCreator[Component]]
 }
-

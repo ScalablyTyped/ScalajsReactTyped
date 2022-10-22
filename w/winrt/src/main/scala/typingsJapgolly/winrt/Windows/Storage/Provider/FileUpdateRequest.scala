@@ -1,23 +1,26 @@
 package typingsJapgolly.winrt.Windows.Storage.Provider
 
+import japgolly.scalajs.react.Callback
+import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Storage.IStorageFile
 import typingsJapgolly.winrt.Windows.Storage.StorageFile
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSGlobal("Windows.Storage.Provider.FileUpdateRequest")
-@js.native
-class FileUpdateRequest () extends IFileUpdateRequest {
-  /* CompleteClass */
-  override var contentId: String = js.native
-  /* CompleteClass */
-  override var file: StorageFile = js.native
-  /* CompleteClass */
-  override var status: FileUpdateStatus = js.native
-  /* CompleteClass */
-  override def getDeferral(): FileUpdateRequestDeferral = js.native
-  /* CompleteClass */
-  override def updateLocalFile(value: IStorageFile): Unit = js.native
+trait FileUpdateRequest
+  extends StObject
+     with IFileUpdateRequest
+object FileUpdateRequest {
+  
+  inline def apply(
+    contentId: String,
+    file: StorageFile,
+    getDeferral: CallbackTo[FileUpdateRequestDeferral],
+    status: FileUpdateStatus,
+    updateLocalFile: IStorageFile => Callback
+  ): FileUpdateRequest = {
+    val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], getDeferral = getDeferral.toJsFn, status = status.asInstanceOf[js.Any], updateLocalFile = js.Any.fromFunction1((t0: IStorageFile) => updateLocalFile(t0).runNow()))
+    __obj.asInstanceOf[FileUpdateRequest]
+  }
 }
-

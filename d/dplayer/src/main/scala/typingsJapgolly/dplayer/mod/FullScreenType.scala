@@ -1,21 +1,17 @@
 package typingsJapgolly.dplayer.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.dplayer.dplayerStrings.web
   - typingsJapgolly.dplayer.dplayerStrings.browser
 */
-trait FullScreenType extends js.Object
-
+trait FullScreenType extends StObject
 object FullScreenType {
-  @scala.inline
-  def browser: typingsJapgolly.dplayer.dplayerStrings.browser = this.cast("browser")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
-  @scala.inline
-  def web: typingsJapgolly.dplayer.dplayerStrings.web = this.cast("web")
+  
+  inline def browser: typingsJapgolly.dplayer.dplayerStrings.browser = "browser".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.browser]
+  
+  inline def web: typingsJapgolly.dplayer.dplayerStrings.web = "web".asInstanceOf[typingsJapgolly.dplayer.dplayerStrings.web]
 }
-

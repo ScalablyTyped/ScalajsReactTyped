@@ -1,21 +1,8 @@
 package typingsJapgolly.foundationSites.FoundationSites
 
-import japgolly.scalajs.react.Callback
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-// http://foundation.zurb.com/sites/docs/dropdown-menu.html#javascript-reference
-trait DropdownMenu extends js.Object {
-  def destroy(): Unit
-}
-
-object DropdownMenu {
-  @scala.inline
-  def apply(destroy: Callback): DropdownMenu = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("destroy")(destroy.toJsFn)
-    __obj.asInstanceOf[DropdownMenu]
-  }
-}
-
+// https://get.foundation/sites/docs/dropdown-menu.html#javascript-reference
+trait DropdownMenu extends StObject

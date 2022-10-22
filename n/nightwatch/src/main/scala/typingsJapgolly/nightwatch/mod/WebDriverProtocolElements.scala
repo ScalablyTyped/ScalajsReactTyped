@@ -1,12 +1,13 @@
 package typingsJapgolly.nightwatch.mod
 
-import typingsJapgolly.nightwatch.AnonELEMENT
+import typingsJapgolly.nightwatch.anon.ELEMENTKEY
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebDriverProtocolElements extends js.Object {
+trait WebDriverProtocolElements extends StObject {
+  
   /**
     * Search for an element on the page, starting from the document root. The located element will be returned as a web element JSON object.
     * First argument to be passed is the locator strategy, which is detailed on the [WebDriver docs](https://www.w3.org/TR/webdriver/#locator-strategies).
@@ -33,10 +34,11 @@ trait WebDriverProtocolElements extends js.Object {
     * }
     */
   def element(
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
   ): this.type = js.native
+  
   /**
     * Get the element on the page that currently has focus. The element will be returned as a [Web Element](https://www.w3.org/TR/webdriver1/#dfn-web-elements) JSON object.
     *
@@ -51,8 +53,20 @@ trait WebDriverProtocolElements extends js.Object {
     */
   def elementActive(): this.type = js.native
   def elementActive(
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
   ): this.type = js.native
+  
+  /**
+    * Move to the element and performs a double-click in the middle of the given element if
+    * element is given else double-clicks at the current mouse coordinates (set by `.moveTo()`).
+    *
+    */
+  def elementIdDoubleClick(webElementId: String): this.type = js.native
+  def elementIdDoubleClick(
+    webElementId: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  
   /**
     * Search for an element on the page, starting from the identified element. The located element will be returned as a Web Element JSON object.
     *
@@ -73,13 +87,14 @@ trait WebDriverProtocolElements extends js.Object {
     *   }
     * }
     */
-  def elementIdElement(id: String, using: LocateStrategy, value: String): this.type = js.native
+  def elementIdElement(id: String, `using`: LocateStrategy, value: String): this.type = js.native
   def elementIdElement(
     id: String,
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[AnonELEMENT], Unit]
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENTKEY], Unit]
   ): this.type = js.native
+  
   /**
     * Search for multiple elements on the page, starting from the identified element. The located element will be returned as a web element JSON objects.
     *
@@ -97,17 +112,18 @@ trait WebDriverProtocolElements extends js.Object {
     *   }
     * }
     */
-  def elementIdElements(id: String, using: LocateStrategy, value: String): this.type = js.native
+  def elementIdElements(id: String, `using`: LocateStrategy, value: String): this.type = js.native
   def elementIdElements(
     id: String,
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[AnonELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
   ): this.type = js.native
+  
   /**
     * Test if two web element IDs refer to the same DOM element.
     *
@@ -128,6 +144,19 @@ trait WebDriverProtocolElements extends js.Object {
     otherId: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Boolean], Unit]
   ): this.type = js.native
+  
+  /**
+    *
+    * Retrieve the value of a specified DOM property for the given element.
+    * For all the available DOM element properties, consult the [Element doc at MDN](https://developer.mozilla.org/en-US/docs/Web/API/element).
+    */
+  def elementIdProperty(webElementId: String, DOMPropertyName: String): this.type = js.native
+  def elementIdProperty(
+    webElementId: String,
+    DOMPropertyName: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[String], Unit]
+  ): this.type = js.native
+  
   /**
     * Search for multiple elements on the page, starting from the document root. The located elements will be returned as web element JSON objects.
     * First argument to be passed is the locator strategy, which is detailed on the [WebDriver docs](https://www.w3.org/TR/webdriver/#locator-strategies).
@@ -167,13 +196,12 @@ trait WebDriverProtocolElements extends js.Object {
     * }
     */
   def elements(
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
-      /* result */ NightwatchCallbackResult[js.Array[AnonELEMENT]], 
+      /* result */ NightwatchCallbackResult[js.Array[ELEMENTKEY]], 
       Unit
     ]
   ): this.type = js.native
 }
-

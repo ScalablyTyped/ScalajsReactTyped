@@ -1,13 +1,14 @@
 package typingsJapgolly.minappEnv.wx
 
-import typingsJapgolly.minappEnv.minappEnvNumbers.`-90`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`0`
-import typingsJapgolly.minappEnv.minappEnvNumbers.`90`
+import typingsJapgolly.minappEnv.minappEnvInts.`-90`
+import typingsJapgolly.minappEnv.minappEnvInts.`0`
+import typingsJapgolly.minappEnv.minappEnvInts.`90`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait VideoContextRequestFullScreenOption extends js.Object {
+trait VideoContextRequestFullScreenOption extends StObject {
+  
   /** 设置全屏时视频的方向，不指定则根据宽高比自动判断。
     *
     * 可选值：
@@ -18,13 +19,17 @@ trait VideoContextRequestFullScreenOption extends js.Object {
     * 最低基础库： `1.7.0` */
   var direction: js.UndefOr[`0` | `90` | `-90`] = js.undefined
 }
-
 object VideoContextRequestFullScreenOption {
-  @scala.inline
-  def apply(direction: `0` | `90` | `-90` = null): VideoContextRequestFullScreenOption = {
+  
+  inline def apply(): VideoContextRequestFullScreenOption = {
     val __obj = js.Dynamic.literal()
-    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoContextRequestFullScreenOption]
   }
+  
+  extension [Self <: VideoContextRequestFullScreenOption](x: Self) {
+    
+    inline def setDirection(value: `0` | `90` | `-90`): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+  }
 }
-

@@ -1,19 +1,10 @@
 package typingsJapgolly.phaser
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Phaser.Class
   */
-@JSGlobal("Class")
-@js.native
-class Class protected () extends js.Object {
-  /**
-    * 
-    * @param definition a dictionary of functions for the class
-    */
-  def this(definition: js.Object) = this()
-}
-
+trait Class extends StObject

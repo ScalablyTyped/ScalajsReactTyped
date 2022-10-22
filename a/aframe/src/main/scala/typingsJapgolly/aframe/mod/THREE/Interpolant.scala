@@ -1,13 +1,13 @@
 package typingsJapgolly.aframe.mod.THREE
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSImport("aframe", "THREE.Interpolant")
 @js.native
-class Interpolant protected ()
+open class Interpolant protected ()
   extends typingsJapgolly.three.mod.Interpolant {
-  def this(parameterPositions: js.Any, samplesValues: js.Any, sampleSize: Double) = this()
+  def this(parameterPositions: Any, sampleValues: Any, sampleSize: Double) = this()
 }
-

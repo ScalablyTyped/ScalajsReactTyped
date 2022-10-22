@@ -1,8 +1,8 @@
 package typingsJapgolly.aliOss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typingsJapgolly.aliOss.aliOssStrings.GET
@@ -10,18 +10,14 @@ import scala.scalajs.js.annotation._
   - typingsJapgolly.aliOss.aliOssStrings.DELETE
   - typingsJapgolly.aliOss.aliOssStrings.PUT
 */
-trait HTTPMethods extends js.Object
-
+trait HTTPMethods extends StObject
 object HTTPMethods {
-  @scala.inline
-  def DELETE: typingsJapgolly.aliOss.aliOssStrings.DELETE = this.cast("DELETE")
-  @scala.inline
-  def GET: typingsJapgolly.aliOss.aliOssStrings.GET = this.cast("GET")
-  @scala.inline
-  def POST: typingsJapgolly.aliOss.aliOssStrings.POST = this.cast("POST")
-  @scala.inline
-  def PUT: typingsJapgolly.aliOss.aliOssStrings.PUT = this.cast("PUT")
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DELETE: typingsJapgolly.aliOss.aliOssStrings.DELETE = "DELETE".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.DELETE]
+  
+  inline def GET: typingsJapgolly.aliOss.aliOssStrings.GET = "GET".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.GET]
+  
+  inline def POST: typingsJapgolly.aliOss.aliOssStrings.POST = "POST".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.POST]
+  
+  inline def PUT: typingsJapgolly.aliOss.aliOssStrings.PUT = "PUT".asInstanceOf[typingsJapgolly.aliOss.aliOssStrings.PUT]
 }
-

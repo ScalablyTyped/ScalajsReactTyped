@@ -2,9 +2,9 @@ package typingsJapgolly.openlayers.mod.source
 
 import typingsJapgolly.openlayers.mod.GlobalObject
 import typingsJapgolly.openlayers.mod.olx.source.WMTSOptions
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @classdesc
@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   */
 @JSImport("openlayers", "source.WMTS")
 @js.native
-class WMTS protected () extends TileImage {
+open class WMTS protected () extends TileImage {
   /**
     * @classdesc
     * Layer source for tile data from WMTS servers.
@@ -24,6 +24,7 @@ class WMTS protected () extends TileImage {
     * @api stable
     */
   def this(options: WMTSOptions) = this()
+  
   /**
     * Get the dimensions, i.e. those passed to the constructor through the
     * "dimensions" option, and possibly updated using the updateDimensions
@@ -32,42 +33,49 @@ class WMTS protected () extends TileImage {
     * @api
     */
   def getDimensions(): GlobalObject = js.native
+  
   /**
     * Return the image format of the WMTS source.
     * @return Format.
     * @api
     */
   def getFormat(): String = js.native
+  
   /**
     * Return the layer of the WMTS source.
     * @return Layer.
     * @api
     */
   def getLayer(): String = js.native
+  
   /**
     * Return the matrix set of the WMTS source.
     * @return MatrixSet.
     * @api
     */
   def getMatrixSet(): String = js.native
+  
   /**
     * Return the request encoding, either "KVP" or "REST".
     * @return Request encoding.
     * @api
     */
   def getRequestEncoding(): WMTSRequestEncoding = js.native
+  
   /**
     * Return the style of the WMTS source.
     * @return Style.
     * @api
     */
   def getStyle(): String = js.native
+  
   /**
     * Return the version of the WMTS source.
     * @return Version.
     * @api
     */
   def getVersion(): String = js.native
+  
   /**
     * Update the dimensions.
     * @param dimensions Dimensions.
@@ -75,11 +83,12 @@ class WMTS protected () extends TileImage {
     */
   def updateDimensions(dimensions: GlobalObject): Unit = js.native
 }
-
-/* static members */
-@JSImport("openlayers", "source.WMTS")
-@js.native
-object WMTS extends js.Object {
+object WMTS {
+  
+  @JSImport("openlayers", "source.WMTS")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Generate source options from a capabilities object.
     * @param wmtsCap An object representing the capabilities document.
@@ -103,6 +112,6 @@ object WMTS extends js.Object {
     * @return WMTS source options object.
     * @api
     */
-  def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = js.native
+  /* static member */
+  inline def optionsFromCapabilities(wmtsCap: GlobalObject, config: GlobalObject): WMTSOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("optionsFromCapabilities")(wmtsCap.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WMTSOptions]
 }
-

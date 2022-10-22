@@ -1,7 +1,7 @@
 
 # Scala.js typings for node
 
-Typings are for version 13.7
+Typings are for version 18.11
 
 ## Library description:
 node
@@ -10,10 +10,10 @@ node
 | ------------------ | :-------------: |
 | Full name          | node |
 | Keywords           | runtime |
-| # releases         | 108 |
-| # dependents       | 171 |
-| # downloads        | 3286651 |
-| # stars            | 23 |
+| # releases         | 114 |
+| # dependents       | 0.0 |
+| # downloads        | 1041414.0 |
+| # stars            | 130.0 |
 
 ## Links
 - [Homepage](https://github.com/aredridel/node-bin-gen#readme)

@@ -1,26 +1,30 @@
 package typingsJapgolly.winrt.Windows.Globalization
 
-import japgolly.scalajs.react.CallbackTo
 import typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait ICalendarFactory extends js.Object {
+trait ICalendarFactory extends StObject {
+  
   def createCalendar(languages: IIterable[String], calendar: String, clock: String): Calendar
+  
   def createCalendarDefaultCalendarAndClock(languages: IIterable[String]): Calendar
 }
-
 object ICalendarFactory {
-  @scala.inline
-  def apply(
-    createCalendar: (IIterable[String], String, String) => CallbackTo[Calendar],
-    createCalendarDefaultCalendarAndClock: IIterable[String] => CallbackTo[Calendar]
+  
+  inline def apply(
+    createCalendar: (IIterable[String], String, String) => Calendar,
+    createCalendarDefaultCalendarAndClock: IIterable[String] => Calendar
   ): ICalendarFactory = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("createCalendar")(js.Any.fromFunction3((t0: typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable[java.lang.String], t1: java.lang.String, t2: java.lang.String) => createCalendar(t0, t1, t2).runNow()))
-    __obj.updateDynamic("createCalendarDefaultCalendarAndClock")(js.Any.fromFunction1((t0: typingsJapgolly.winrt.Windows.Foundation.Collections.IIterable[java.lang.String]) => createCalendarDefaultCalendarAndClock(t0).runNow()))
+    val __obj = js.Dynamic.literal(createCalendar = js.Any.fromFunction3(createCalendar), createCalendarDefaultCalendarAndClock = js.Any.fromFunction1(createCalendarDefaultCalendarAndClock))
     __obj.asInstanceOf[ICalendarFactory]
   }
+  
+  extension [Self <: ICalendarFactory](x: Self) {
+    
+    inline def setCreateCalendar(value: (IIterable[String], String, String) => Calendar): Self = StObject.set(x, "createCalendar", js.Any.fromFunction3(value))
+    
+    inline def setCreateCalendarDefaultCalendarAndClock(value: IIterable[String] => Calendar): Self = StObject.set(x, "createCalendarDefaultCalendarAndClock", js.Any.fromFunction1(value))
+  }
 }
-

@@ -1,186 +1,90 @@
 package typingsJapgolly.log4js.mod
 
-import org.scalablytyped.runtime.StringDictionary
-import typingsJapgolly.log4js.log4jsStrings.categoryFilter
-import typingsJapgolly.log4js.log4jsStrings.console
-import typingsJapgolly.log4js.log4jsStrings.dateFile
-import typingsJapgolly.log4js.log4jsStrings.file
-import typingsJapgolly.log4js.log4jsStrings.fileSync
-import typingsJapgolly.log4js.log4jsStrings.logLevelFilter
-import typingsJapgolly.log4js.log4jsStrings.master
-import typingsJapgolly.log4js.log4jsStrings.multiFile
-import typingsJapgolly.log4js.log4jsStrings.multiprocess
-import typingsJapgolly.log4js.log4jsStrings.noLogFilter
-import typingsJapgolly.log4js.log4jsStrings.recording
-import typingsJapgolly.log4js.log4jsStrings.stderr
-import typingsJapgolly.log4js.log4jsStrings.stdout
-import typingsJapgolly.log4js.log4jsStrings.worker
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
+/* Inlined log4js.log4js.Appenders[keyof log4js.log4js.Appenders] */
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.log4js.mod.CategoryFilterAppender
-  - typingsJapgolly.log4js.mod.ConsoleAppender
-  - typingsJapgolly.log4js.mod.FileAppender
-  - typingsJapgolly.log4js.mod.SyncfileAppender
-  - typingsJapgolly.log4js.mod.DateFileAppender
-  - typingsJapgolly.log4js.mod.LogLevelFilterAppender
-  - typingsJapgolly.log4js.mod.NoLogFilterAppender
-  - typingsJapgolly.log4js.mod.MultiFileAppender
-  - typingsJapgolly.log4js.mod.MultiprocessAppender
-  - typingsJapgolly.log4js.mod.RecordingAppender
-  - typingsJapgolly.log4js.mod.StandardErrorAppender
-  - typingsJapgolly.log4js.mod.StandardOutputAppender
-  - typingsJapgolly.log4js.mod.CustomAppender
+  - typingsJapgolly.log4js.log4jsStrings.pattern
+  - typingsJapgolly.log4js.log4jsStrings.level
+  - typingsJapgolly.log4js.log4jsStrings.numBackups
+  - typingsJapgolly.log4js.log4jsStrings.maxLevel
+  - typingsJapgolly.log4js.log4jsStrings.endMsg
+  - typingsJapgolly.log4js.log4jsStrings.fileNameSep
+  - typingsJapgolly.log4js.log4jsStrings.port
+  - typingsJapgolly.log4js.log4jsStrings.keepFileExt
+  - typingsJapgolly.log4js.log4jsStrings.compress
+  - typingsJapgolly.log4js.log4jsStrings.layout
+  - typingsJapgolly.log4js.log4jsStrings.exclude
+  - typingsJapgolly.log4js.log4jsStrings.host
+  - typingsJapgolly.log4js.log4jsStrings.base
+  - typingsJapgolly.log4js.log4jsStrings.flags
+  - typingsJapgolly.log4js.log4jsStrings.backups
+  - typingsJapgolly.log4js.log4jsStrings.property
+  - typingsJapgolly.log4js.log4jsStrings.appender
+  - typingsJapgolly.log4js.log4jsStrings.loggerHost
+  - typingsJapgolly.log4js.log4jsStrings.filename
+  - typingsJapgolly.log4js.log4jsStrings.mode
+  - typingsJapgolly.log4js.log4jsStrings.`type`
+  - typingsJapgolly.log4js.log4jsStrings.alwaysIncludePattern
+  - typingsJapgolly.log4js.log4jsStrings.maxLogSize
+  - typingsJapgolly.log4js.log4jsStrings.`extension`
+  - typingsJapgolly.log4js.log4jsStrings.loggerPort
+  - typingsJapgolly.log4js.log4jsStrings.encoding
 */
-trait Appender extends js.Object
-
+trait Appender extends StObject
 object Appender {
-  @scala.inline
-  def DateFileAppender(
-    filename: String,
-    `type`: dateFile,
-    alwaysIncludePattern: js.UndefOr[Boolean] = js.undefined,
-    compress: js.UndefOr[Boolean] = js.undefined,
-    daysToKeep: Int | Double = null,
-    encoding: String = null,
-    flags: String = null,
-    keepFileExt: js.UndefOr[Boolean] = js.undefined,
-    layout: Layout = null,
-    mode: Int | Double = null,
-    pattern: String = null
-  ): Appender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (!js.isUndefined(alwaysIncludePattern)) __obj.updateDynamic("alwaysIncludePattern")(alwaysIncludePattern.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (daysToKeep != null) __obj.updateDynamic("daysToKeep")(daysToKeep.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def LogLevelFilterAppender(appender: String, level: String, `type`: logLevelFilter, maxLevel: String = null): Appender = {
-    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (maxLevel != null) __obj.updateDynamic("maxLevel")(maxLevel.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def NoLogFilterAppender(appender: String, exclude: String | js.Array[String], `type`: noLogFilter): Appender = {
-    val __obj = js.Dynamic.literal(appender = appender.asInstanceOf[js.Any], exclude = exclude.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def StandardErrorAppender(`type`: stderr, layout: Layout = null): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def ConsoleAppender(`type`: console, layout: Layout = null): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def FileAppender(
-    filename: String,
-    `type`: file,
-    backups: Int | Double = null,
-    compress: js.UndefOr[Boolean] = js.undefined,
-    encoding: String = null,
-    flags: String = null,
-    keepFileExt: js.UndefOr[Boolean] = js.undefined,
-    layout: Layout = null,
-    maxLogSize: Double | String = null,
-    mode: Int | Double = null,
-    numBackups: Int | Double = null
-  ): Appender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
-    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
-    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
-    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
-    if (!js.isUndefined(keepFileExt)) __obj.updateDynamic("keepFileExt")(keepFileExt.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
-    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
-    if (numBackups != null) __obj.updateDynamic("numBackups")(numBackups.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def CustomAppender(`type`: String | AppenderModule, StringDictionary: /* key */ StringDictionary[js.Any] = null): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (StringDictionary != null) js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def MultiprocessAppender(
-    mode: master | worker,
-    `type`: multiprocess,
-    appender: String = null,
-    loggerHost: String = null,
-    loggerPort: Int | Double = null
-  ): Appender = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (appender != null) __obj.updateDynamic("appender")(appender.asInstanceOf[js.Any])
-    if (loggerHost != null) __obj.updateDynamic("loggerHost")(loggerHost.asInstanceOf[js.Any])
-    if (loggerPort != null) __obj.updateDynamic("loggerPort")(loggerPort.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def StandardOutputAppender(`type`: stdout, layout: Layout = null): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def SyncfileAppender(
-    filename: String,
-    `type`: fileSync,
-    backups: Int | Double = null,
-    layout: Layout = null,
-    maxLogSize: Double | String = null
-  ): Appender = {
-    val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (backups != null) __obj.updateDynamic("backups")(backups.asInstanceOf[js.Any])
-    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
-    if (maxLogSize != null) __obj.updateDynamic("maxLogSize")(maxLogSize.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def MultiFileAppender(base: String, extension: String, property: String, `type`: multiFile): Appender = {
-    val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def RecordingAppender(`type`: recording): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
-  @scala.inline
-  def CategoryFilterAppender(`type`: categoryFilter, appender: String = null, exclude: String | js.Array[String] = null): Appender = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
-    if (appender != null) __obj.updateDynamic("appender")(appender.asInstanceOf[js.Any])
-    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
-    __obj.asInstanceOf[Appender]
-  }
+  
+  inline def alwaysIncludePattern: typingsJapgolly.log4js.log4jsStrings.alwaysIncludePattern = "alwaysIncludePattern".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.alwaysIncludePattern]
+  
+  inline def appender: typingsJapgolly.log4js.log4jsStrings.appender = "appender".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.appender]
+  
+  inline def backups: typingsJapgolly.log4js.log4jsStrings.backups = "backups".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.backups]
+  
+  inline def base: typingsJapgolly.log4js.log4jsStrings.base = "base".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.base]
+  
+  inline def compress: typingsJapgolly.log4js.log4jsStrings.compress = "compress".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.compress]
+  
+  inline def encoding: typingsJapgolly.log4js.log4jsStrings.encoding = "encoding".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.encoding]
+  
+  inline def endMsg: typingsJapgolly.log4js.log4jsStrings.endMsg = "endMsg".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.endMsg]
+  
+  inline def exclude: typingsJapgolly.log4js.log4jsStrings.exclude = "exclude".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.exclude]
+  
+  inline def `extension`: typingsJapgolly.log4js.log4jsStrings.`extension` = "extension".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.`extension`]
+  
+  inline def fileNameSep: typingsJapgolly.log4js.log4jsStrings.fileNameSep = "fileNameSep".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.fileNameSep]
+  
+  inline def filename: typingsJapgolly.log4js.log4jsStrings.filename = "filename".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.filename]
+  
+  inline def flags: typingsJapgolly.log4js.log4jsStrings.flags = "flags".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.flags]
+  
+  inline def host: typingsJapgolly.log4js.log4jsStrings.host = "host".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.host]
+  
+  inline def keepFileExt: typingsJapgolly.log4js.log4jsStrings.keepFileExt = "keepFileExt".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.keepFileExt]
+  
+  inline def layout: typingsJapgolly.log4js.log4jsStrings.layout = "layout".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.layout]
+  
+  inline def level: typingsJapgolly.log4js.log4jsStrings.level = "level".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.level]
+  
+  inline def loggerHost: typingsJapgolly.log4js.log4jsStrings.loggerHost = "loggerHost".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.loggerHost]
+  
+  inline def loggerPort: typingsJapgolly.log4js.log4jsStrings.loggerPort = "loggerPort".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.loggerPort]
+  
+  inline def maxLevel: typingsJapgolly.log4js.log4jsStrings.maxLevel = "maxLevel".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.maxLevel]
+  
+  inline def maxLogSize: typingsJapgolly.log4js.log4jsStrings.maxLogSize = "maxLogSize".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.maxLogSize]
+  
+  inline def mode: typingsJapgolly.log4js.log4jsStrings.mode = "mode".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.mode]
+  
+  inline def numBackups: typingsJapgolly.log4js.log4jsStrings.numBackups = "numBackups".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.numBackups]
+  
+  inline def pattern: typingsJapgolly.log4js.log4jsStrings.pattern = "pattern".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.pattern]
+  
+  inline def port: typingsJapgolly.log4js.log4jsStrings.port = "port".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.port]
+  
+  inline def property: typingsJapgolly.log4js.log4jsStrings.property = "property".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.property]
+  
+  inline def `type`: typingsJapgolly.log4js.log4jsStrings.`type` = "type".asInstanceOf[typingsJapgolly.log4js.log4jsStrings.`type`]
 }
-

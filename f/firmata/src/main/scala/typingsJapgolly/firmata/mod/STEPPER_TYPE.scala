@@ -1,28 +1,24 @@
 package typingsJapgolly.firmata.mod
 
-import typingsJapgolly.firmata.firmataNumbers.`1`
-import typingsJapgolly.firmata.firmataNumbers.`2`
-import typingsJapgolly.firmata.firmataNumbers.`4`
+import typingsJapgolly.firmata.firmataInts.`1`
+import typingsJapgolly.firmata.firmataInts.`2`
+import typingsJapgolly.firmata.firmataInts.`4`
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/firmata/firmata.js/blob/v0.15.0/lib/firmata.js#L474-L478
 /* Rewritten from type alias, can be one of: 
-  - typingsJapgolly.firmata.firmataNumbers.`1`
-  - typingsJapgolly.firmata.firmataNumbers.`2`
-  - typingsJapgolly.firmata.firmataNumbers.`4`
+  - typingsJapgolly.firmata.firmataInts.`1`
+  - typingsJapgolly.firmata.firmataInts.`2`
+  - typingsJapgolly.firmata.firmataInts.`4`
 */
-trait STEPPER_TYPE extends js.Object
-
+trait STEPPER_TYPE extends StObject
 object STEPPER_TYPE {
-  @scala.inline
-  def DRIVER: `1` = this.cast(1)
-  @scala.inline
-  def FOUR_WIRE: `4` = this.cast(4)
-  @scala.inline
-  def TWO_WIRE: `2` = this.cast(2)
-  @scala.inline
-  /* private */ def cast[T](in: js.Any): T = in.asInstanceOf[T]
+  
+  inline def DRIVER: `1` = 1.asInstanceOf[`1`]
+  
+  inline def FOUR_WIRE: `4` = 4.asInstanceOf[`4`]
+  
+  inline def TWO_WIRE: `2` = 2.asInstanceOf[`2`]
 }
-

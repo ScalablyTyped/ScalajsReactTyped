@@ -1,17 +1,19 @@
 package typingsJapgolly.jsrsasign.mod.KJUR.asn1
 
-import typingsJapgolly.jsrsasign.AnonAlg
-import typingsJapgolly.jsrsasign.AnonAlgCert
-import typingsJapgolly.jsrsasign.AnonAlgs
-import typingsJapgolly.jsrsasign.AnonCert
-import typingsJapgolly.jsrsasign.AnonCertString
-import typingsJapgolly.jsrsasign.AnonDigalg
-import typingsJapgolly.jsrsasign.AnonHash
-import typingsJapgolly.jsrsasign.AnonLength
-import typingsJapgolly.jsrsasign.AnonRes
+import typingsJapgolly.jsrsasign.anon.Alg
+import typingsJapgolly.jsrsasign.anon.AlgCert
+import typingsJapgolly.jsrsasign.anon.Algs
+import typingsJapgolly.jsrsasign.anon.Cert
+import typingsJapgolly.jsrsasign.anon.CertString
+import typingsJapgolly.jsrsasign.anon.Digalg
+import typingsJapgolly.jsrsasign.anon.Hash
+import typingsJapgolly.jsrsasign.anon.Length
+import typingsJapgolly.jsrsasign.anon.Res
+import typingsJapgolly.jsrsasign.anon.Tlv
+import typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cms.Attribute
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * kjur's ASN.1 class for RFC 5126 CAdES long term signature
@@ -152,9 +154,66 @@ import scala.scalajs.js.annotation._
   * esthex = info.obj.getContentInfoEncodedHex(); // CAdES-T
   * ```
   */
-@JSImport("jsrsasign", "KJUR.asn1.cades")
-@js.native
-object cades extends js.Object {
+object cades {
+  
+  object CAdESUtil {
+    
+    @JSImport("jsrsasign", "KJUR.asn1.cades.CAdESUtil")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * parse CMS SignedData to add unsigned attributes
+      * @param hex hexadecimal string of ContentInfo of CMS SignedData
+      * @return associative array of parsed data
+      * @description
+      * This method will parse a hexadecimal string of
+      * ContentInfo with CMS SignedData to add a attribute
+      * to unsigned attributes field in a signerInfo field.
+      * Parsed result will be an associative array which has
+      * following properties:
+      *
+      * - version - hex of CMSVersion ASN.1 TLV
+      * - algs - hex of DigestAlgorithms ASN.1 TLV
+      * - encapcontent - hex of EncapContentInfo ASN.1 TLV
+      * - certs - hex of Certificates ASN.1 TLV
+      * - revs - hex of RevocationInfoChoices ASN.1 TLV
+      * - si[] - array of SignerInfo properties
+      * - obj - parsed KJUR.asn1.cms.SignedData object
+      *
+      * @example
+      * info = KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned(beshex);
+      * sd = info.obj;
+      */
+    inline def parseSignedDataForAddingUnsigned(hex: String): Algs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSignedDataForAddingUnsigned")(hex.asInstanceOf[js.Any]).asInstanceOf[Algs]
+    
+    /**
+      * parse SignerInfo to add unsigned attributes
+      * @param hex hexadecimal string of SignerInfo
+      * @return associative array of parsed data
+      * @description
+      * This method will parse a hexadecimal string of
+      * SignerInfo to add a attribute
+      * to unsigned attributes field in a signerInfo field.
+      * Parsed result will be an associative array which has
+      * following properties:
+      *
+      * - version - hex TLV of version
+      * - si - hex TLV of SignerIdentifier
+      * - digalg - hex TLV of DigestAlgorithm
+      * - sattrs - hex TLV of SignedAttributes
+      * - sigalg - hex TLV of SignatureAlgorithm
+      * - sig - hex TLV of signature
+      * - sigval = hex V of signature
+      * - obj - parsed KJUR.asn1.cms.SignerInfo object
+      *
+      * NOTE: Parsing of unsigned attributes will be provided in the
+      * future version. That's way this version provides support
+      * for CAdES-T and not for CAdES-C.
+      */
+    inline def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): Digalg = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSignerInfoForAddingUnsigned")(hex.asInstanceOf[js.Any], iSI.asInstanceOf[js.Any], nth.asInstanceOf[js.Any])).asInstanceOf[Digalg]
+  }
+  
   /**
     * class for RFC 5126 CAdES CompleteCertificateRefs attribute
     * @param params associative array of parameters
@@ -167,10 +226,67 @@ object cades extends js.Object {
     * @example
     * o = new KJUR.asn1.cades.CompleteCertificateRefs([certPEM1,certPEM2]);
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.CompleteCertificateRefs")
   @js.native
-  class CompleteCertificateRefs ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs {
-    def this(params: AnonLength) = this()
+  open class CompleteCertificateRefs ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.CompleteCertificateRefs {
+    def this(params: Length) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /**
+      * set value by array
+      * @param a array of `KJUR.asn1.cades.OtherCertID` argument
+      */
+    /* CompleteClass */
+    override def setByArray(a: js.Array[typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID]): Unit = js.native
   }
   
   /**
@@ -186,11 +302,72 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherCertID(certPEM);
     * o = new KJUR.asn1.cades.OtherCertID({cert:certPEM, hasis: false});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherCertID")
   @js.native
-  class OtherCertID ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID {
+  open class OtherCertID ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherCertID {
     def this(params: String) = this()
-    def this(params: AnonCert) = this()
+    def this(params: Cert) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /**
+      * set value by PEM string of certificate
+      * @param certPEM PEM string of certificate
+      * @description
+      * This method will set value by a PEM string of a certificate.
+      * This will add IssuerAndSerialNumber by default
+      * which depends on hasIssuerSerial flag.
+      */
+    /* CompleteClass */
+    override def setByCertPEM(certPEM: String): Unit = js.native
   }
   
   /**
@@ -210,13 +387,74 @@ object cades extends js.Object {
     * o = new KJUR.asn1.cades.OtherHash({alg: 'sha256', cert: certPEM});
     * o = new KJUR.asn1.cades.OtherHash({cert: certPEM});
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHash")
   @js.native
-  class OtherHash ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherHash {
+  open class OtherHash ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherHash {
     def this(params: String) = this()
-    def this(params: AnonAlg) = this()
-    def this(params: AnonAlgCert) = this()
-    def this(params: AnonCertString) = this()
+    def this(params: Alg) = this()
+    def this(params: AlgCert) = this()
+    def this(params: CertString) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
+    
+    /**
+      * set value by PEM string of certificate
+      * @param certPEM PEM string of certificate
+      * @description
+      * This method will set value by a PEM string of a certificate.
+      * An algorithm used to hash certificate data will
+      * be defined by 'alg' property and 'sha256' is default.
+      */
+    /* CompleteClass */
+    override def setByCertPEM(certPEM: String): Unit = js.native
   }
   
   /**
@@ -230,10 +468,60 @@ object cades extends js.Object {
     * OtherHashValue ::= OCTET STRING
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.OtherHashAlgAndValue")
   @js.native
-  class OtherHashAlgAndValue ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.OtherHashAlgAndValue {
-    def this(params: AnonAlg) = this()
+  open class OtherHashAlgAndValue ()
+    extends StObject
+       with typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object {
+    def this(params: Alg) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -260,10 +548,60 @@ object cades extends js.Object {
     *   hash: {alg: 'sha1', hash: 'a1a2a3a4...'}
     * });
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.SignaturePolicyIdentifier")
   @js.native
-  class SignaturePolicyIdentifier ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.SignaturePolicyIdentifier {
-    def this(params: AnonHash) = this()
+  open class SignaturePolicyIdentifier ()
+    extends StObject
+       with Attribute {
+    def this(params: Hash) = this()
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
+      */
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
+    /**
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
+      */
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
   
   /**
@@ -276,64 +614,59 @@ object cades extends js.Object {
     * SignatureTimeStampToken ::= TimeStampToken
     * ```
     */
+  @JSImport("jsrsasign", "KJUR.asn1.cades.SignatureTimeStamp")
   @js.native
-  class SignatureTimeStamp ()
-    extends typingsJapgolly.jsrsasign.jsrsasign.KJUR.asn1.cades.SignatureTimeStamp {
-    def this(params: AnonRes) = this()
-  }
-  
-  @js.native
-  object CAdESUtil extends js.Object {
+  open class SignatureTimeStamp ()
+    extends StObject
+       with Attribute {
+    def this(params: Res) = this()
+    
     /**
-      * parse CMS SignedData to add unsigned attributes
-      * @param hex hexadecimal string of ContentInfo of CMS SignedData
-      * @return associative array of parsed data
-      * @description
-      * This method will parse a hexadecimal string of
-      * ContentInfo with CMS SignedData to add a attribute
-      * to unsigned attributes field in a signerInfo field.
-      * Parsed result will be an associative array which has
-      * following properties:
-      *
-      * - version - hex of CMSVersion ASN.1 TLV
-      * - algs - hex of DigestAlgorithms ASN.1 TLV
-      * - encapcontent - hex of EncapContentInfo ASN.1 TLV
-      * - certs - hex of Certificates ASN.1 TLV
-      * - revs - hex of RevocationInfoChoices ASN.1 TLV
-      * - si[] - array of SignerInfo properties
-      * - obj - parsed KJUR.asn1.cms.SignedData object
-      *
-      * @example
-      * info = KJUR.asn1.cades.CAdESUtil.parseSignedDataForAddingUnsigned(beshex);
-      * sd = info.obj;
+      * get hexadecimal string of ASN.1 TLV bytes
+      * @return hexadecimal string of ASN.1 TLV
       */
-    def parseSignedDataForAddingUnsigned(hex: String): AnonAlgs = js.native
+    /* CompleteClass */
+    override def getEncodedHex(): String = js.native
+    
+    /* CompleteClass */
+    override def getFreshValueHex(): String = js.native
+    
     /**
-      * parse SignerInfo to add unsigned attributes
-      * @param hex hexadecimal string of SignerInfo
-      * @return associative array of parsed data
-      * @description
-      * This method will parse a hexadecimal string of
-      * SignerInfo to add a attribute
-      * to unsigned attributes field in a signerInfo field.
-      * Parsed result will be an associative array which has
-      * following properties:
-      *
-      * - version - hex TLV of version
-      * - si - hex TLV of SignerIdentifier
-      * - digalg - hex TLV of DigestAlgorithm
-      * - sattrs - hex TLV of SignedAttributes
-      * - sigalg - hex TLV of SignatureAlgorithm
-      * - sig - hex TLV of signature
-      * - sigval = hex V of signature
-      * - obj - parsed KJUR.asn1.cms.SignerInfo object
-      *
-      * NOTE: Parsing of unsigned attributes will be provided in the
-      * future version. That's way this version provides support
-      * for CAdES-T and not for CAdES-C.
+      * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+      * @return hexadecimal string of ASN.1 TLV length(L)
       */
-    def parseSignerInfoForAddingUnsigned(hex: String, iSI: Double, nth: Double): AnonDigalg = js.native
+    /* CompleteClass */
+    override def getLengthHexFromValue(): String = js.native
+    
+    /**
+      * get hexadecimal string of ASN.1 TLV value(V) bytes
+      * @return hexadecimal string of ASN.1 TLV value(V) bytes
+      */
+    /* CompleteClass */
+    override def getValueHex(): String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV length(L) */
+    /* CompleteClass */
+    var hL: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV tag(T) */
+    /* CompleteClass */
+    var hT: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV */
+    /* CompleteClass */
+    var hTLV: String = js.native
+    
+    /** hexadecimal string of ASN.1 TLV value(V) */
+    /* CompleteClass */
+    var hV: String = js.native
+    
+    /** flag whether internal data was changed */
+    /* CompleteClass */
+    var isModified: String = js.native
+    
+    /** JSON object parameter for ASN.1 encode */
+    /* CompleteClass */
+    var params: Tlv | Null = js.native
   }
-  
 }
-

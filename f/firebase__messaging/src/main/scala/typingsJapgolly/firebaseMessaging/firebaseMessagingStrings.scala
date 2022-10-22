@@ -1,165 +1,177 @@
 package typingsJapgolly.firebaseMessaging
 
-import typingsJapgolly.firebaseMessaging.errorsMod.ErrorCode
+import typingsJapgolly.firebaseMessaging.distEsmSrcUtilErrorsMod.ErrorCode
+import typingsJapgolly.firebaseMessaging.distSrcInterfacesLoggingTypesMod.UserResponse
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseMessagingStrings {
-  @js.native
-  sealed trait `BDOU99-h67HcA6JeFXHbSNMu7e2yNNu3RzoMj8TM4W88jITfq7ZmPvIM1Iv-4_l2LxQcYwhqby2xGpWwzjfAnG4` extends js.Object
   
   @js.native
-  sealed trait FCM_MSG extends js.Object
+  sealed trait DELETE_REQUEST
+    extends StObject
+       with UserResponse
+       with typingsJapgolly.firebaseMessaging.distEsmSrcInterfacesLoggingTypesMod.UserResponse
+  inline def DELETE_REQUEST: DELETE_REQUEST = "DELETE_REQUEST".asInstanceOf[DELETE_REQUEST]
   
   @js.native
-  sealed trait `Slashfirebase-cloud-messaging-push-scope` extends js.Object
+  sealed trait RESPONSE_ACTION_UNKNOWN
+    extends StObject
+       with UserResponse
+       with typingsJapgolly.firebaseMessaging.distEsmSrcInterfacesLoggingTypesMod.UserResponse
+  inline def RESPONSE_ACTION_UNKNOWN: RESPONSE_ACTION_UNKNOWN = "RESPONSE_ACTION_UNKNOWN".asInstanceOf[RESPONSE_ACTION_UNKNOWN]
   
   @js.native
-  sealed trait `Slashfirebase-messaging-swDotjs` extends js.Object
+  sealed trait RETRY_REQUEST_LATER
+    extends StObject
+       with UserResponse
+       with typingsJapgolly.firebaseMessaging.distEsmSrcInterfacesLoggingTypesMod.UserResponse
+  inline def RETRY_REQUEST_LATER: RETRY_REQUEST_LATER = "RETRY_REQUEST_LATER".asInstanceOf[RETRY_REQUEST_LATER]
   
   @js.native
-  sealed trait `failed-service-worker-registration` extends ErrorCode
+  sealed trait `failed-service-worker-registration`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `failed-service-worker-registration`: `failed-service-worker-registration` = "failed-service-worker-registration".asInstanceOf[`failed-service-worker-registration`]
   
   @js.native
-  sealed trait `firebase-messaging-database` extends js.Object
+  sealed trait granted extends StObject
+  inline def granted: granted = "granted".asInstanceOf[granted]
   
   @js.native
-  sealed trait googleDotcDotaDotc_id extends js.Object
+  sealed trait `indexed-db-unsupported`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `indexed-db-unsupported`: `indexed-db-unsupported` = "indexed-db-unsupported".asInstanceOf[`indexed-db-unsupported`]
   
   @js.native
-  sealed trait googleDotcDotaDotc_l extends js.Object
+  sealed trait `invalid-bg-handler`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `invalid-bg-handler`: `invalid-bg-handler` = "invalid-bg-handler".asInstanceOf[`invalid-bg-handler`]
   
   @js.native
-  sealed trait googleDotcDotaDote extends js.Object
+  sealed trait `invalid-sw-registration`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `invalid-sw-registration`: `invalid-sw-registration` = "invalid-sw-registration".asInstanceOf[`invalid-sw-registration`]
   
   @js.native
-  sealed trait googleDotcDotaDotts extends js.Object
+  sealed trait `invalid-vapid-key`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `invalid-vapid-key`: `invalid-vapid-key` = "invalid-vapid-key".asInstanceOf[`invalid-vapid-key`]
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait messaging extends StObject
+  inline def messaging: messaging = "messaging".asInstanceOf[messaging]
   
   @js.native
-  sealed trait httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1 extends js.Object
+  sealed trait `missing-app-config-values`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
   
   @js.native
-  sealed trait `invalid-bg-handler` extends ErrorCode
+  sealed trait notificationclick extends StObject
+  inline def notificationclick: notificationclick = "notificationclick".asInstanceOf[notificationclick]
   
   @js.native
-  sealed trait `invalid-sw-registration` extends ErrorCode
+  sealed trait `only-available-in-sw`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `only-available-in-sw`: `only-available-in-sw` = "only-available-in-sw".asInstanceOf[`only-available-in-sw`]
   
   @js.native
-  sealed trait `invalid-vapid-key` extends ErrorCode
+  sealed trait `only-available-in-window`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `only-available-in-window`: `only-available-in-window` = "only-available-in-window".asInstanceOf[`only-available-in-window`]
   
   @js.native
-  sealed trait `missing-app-config-values` extends ErrorCode
+  sealed trait `permission-blocked`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `permission-blocked`: `permission-blocked` = "permission-blocked".asInstanceOf[`permission-blocked`]
   
   @js.native
-  sealed trait notificationclick extends js.Object
+  sealed trait `permission-default`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `permission-default`: `permission-default` = "permission-default".asInstanceOf[`permission-default`]
   
   @js.native
-  sealed trait `only-available-in-sw` extends ErrorCode
+  sealed trait push extends StObject
+  inline def push: push = "push".asInstanceOf[push]
   
   @js.native
-  sealed trait `only-available-in-window` extends ErrorCode
+  sealed trait pushsubscriptionchange extends StObject
+  inline def pushsubscriptionchange: pushsubscriptionchange = "pushsubscriptionchange".asInstanceOf[pushsubscriptionchange]
   
   @js.native
-  sealed trait `permission-blocked` extends ErrorCode
+  sealed trait `token-subscribe-failed`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `token-subscribe-failed`: `token-subscribe-failed` = "token-subscribe-failed".asInstanceOf[`token-subscribe-failed`]
   
   @js.native
-  sealed trait `permission-default` extends ErrorCode
+  sealed trait `token-subscribe-no-token`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `token-subscribe-no-token`: `token-subscribe-no-token` = "token-subscribe-no-token".asInstanceOf[`token-subscribe-no-token`]
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait `token-unsubscribe-failed`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `token-unsubscribe-failed`: `token-unsubscribe-failed` = "token-unsubscribe-failed".asInstanceOf[`token-unsubscribe-failed`]
   
   @js.native
-  sealed trait pushsubscriptionchange extends js.Object
+  sealed trait `token-update-failed`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `token-update-failed`: `token-update-failed` = "token-update-failed".asInstanceOf[`token-update-failed`]
   
   @js.native
-  sealed trait `token-subscribe-failed` extends ErrorCode
+  sealed trait `token-update-no-token`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `token-update-no-token`: `token-update-no-token` = "token-update-no-token".asInstanceOf[`token-update-no-token`]
   
   @js.native
-  sealed trait `token-subscribe-no-token` extends ErrorCode
+  sealed trait `unsupported-browser`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `unsupported-browser`: `unsupported-browser` = "unsupported-browser".asInstanceOf[`unsupported-browser`]
   
   @js.native
-  sealed trait `token-unsubscribe-failed` extends ErrorCode
+  sealed trait `use-sw-after-get-token`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `use-sw-after-get-token`: `use-sw-after-get-token` = "use-sw-after-get-token".asInstanceOf[`use-sw-after-get-token`]
   
   @js.native
-  sealed trait `token-update-failed` extends ErrorCode
-  
-  @js.native
-  sealed trait `token-update-no-token` extends ErrorCode
-  
-  @js.native
-  sealed trait `unsupported-browser` extends ErrorCode
-  
-  @js.native
-  sealed trait `use-sw-after-get-token` extends ErrorCode
-  
-  @js.native
-  sealed trait `use-vapid-key-after-get-token` extends ErrorCode
-  
-  @scala.inline
-  def `BDOU99-h67HcA6JeFXHbSNMu7e2yNNu3RzoMj8TM4W88jITfq7ZmPvIM1Iv-4_l2LxQcYwhqby2xGpWwzjfAnG4`: `BDOU99-h67HcA6JeFXHbSNMu7e2yNNu3RzoMj8TM4W88jITfq7ZmPvIM1Iv-4_l2LxQcYwhqby2xGpWwzjfAnG4` = "BDOU99-h67HcA6JeFXHbSNMu7e2yNNu3RzoMj8TM4W88jITfq7ZmPvIM1Iv-4_l2LxQcYwhqby2xGpWwzjfAnG4".asInstanceOf[`BDOU99-h67HcA6JeFXHbSNMu7e2yNNu3RzoMj8TM4W88jITfq7ZmPvIM1Iv-4_l2LxQcYwhqby2xGpWwzjfAnG4`]
-  @scala.inline
-  def FCM_MSG: FCM_MSG = "FCM_MSG".asInstanceOf[FCM_MSG]
-  @scala.inline
-  def `Slashfirebase-cloud-messaging-push-scope`: `Slashfirebase-cloud-messaging-push-scope` = "/firebase-cloud-messaging-push-scope".asInstanceOf[`Slashfirebase-cloud-messaging-push-scope`]
-  @scala.inline
-  def `Slashfirebase-messaging-swDotjs`: `Slashfirebase-messaging-swDotjs` = "/firebase-messaging-sw.js".asInstanceOf[`Slashfirebase-messaging-swDotjs`]
-  @scala.inline
-  def `failed-service-worker-registration`: `failed-service-worker-registration` = "failed-service-worker-registration".asInstanceOf[`failed-service-worker-registration`]
-  @scala.inline
-  def `firebase-messaging-database`: `firebase-messaging-database` = "firebase-messaging-database".asInstanceOf[`firebase-messaging-database`]
-  @scala.inline
-  def googleDotcDotaDotc_id: googleDotcDotaDotc_id = "google.c.a.c_id".asInstanceOf[googleDotcDotaDotc_id]
-  @scala.inline
-  def googleDotcDotaDotc_l: googleDotcDotaDotc_l = "google.c.a.c_l".asInstanceOf[googleDotcDotaDotc_l]
-  @scala.inline
-  def googleDotcDotaDote: googleDotcDotaDote = "google.c.a.e".asInstanceOf[googleDotcDotaDote]
-  @scala.inline
-  def googleDotcDotaDotts: googleDotcDotaDotts = "google.c.a.ts".asInstanceOf[googleDotcDotaDotts]
-  @scala.inline
-  def granted: granted = "granted".asInstanceOf[granted]
-  @scala.inline
-  def httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1: httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1 = "https://fcmregistrations.googleapis.com/v1".asInstanceOf[httpsColonSlashSlashfcmregistrationsDotgoogleapisDotcomSlashv1]
-  @scala.inline
-  def `invalid-bg-handler`: `invalid-bg-handler` = "invalid-bg-handler".asInstanceOf[`invalid-bg-handler`]
-  @scala.inline
-  def `invalid-sw-registration`: `invalid-sw-registration` = "invalid-sw-registration".asInstanceOf[`invalid-sw-registration`]
-  @scala.inline
-  def `invalid-vapid-key`: `invalid-vapid-key` = "invalid-vapid-key".asInstanceOf[`invalid-vapid-key`]
-  @scala.inline
-  def `missing-app-config-values`: `missing-app-config-values` = "missing-app-config-values".asInstanceOf[`missing-app-config-values`]
-  @scala.inline
-  def notificationclick: notificationclick = "notificationclick".asInstanceOf[notificationclick]
-  @scala.inline
-  def `only-available-in-sw`: `only-available-in-sw` = "only-available-in-sw".asInstanceOf[`only-available-in-sw`]
-  @scala.inline
-  def `only-available-in-window`: `only-available-in-window` = "only-available-in-window".asInstanceOf[`only-available-in-window`]
-  @scala.inline
-  def `permission-blocked`: `permission-blocked` = "permission-blocked".asInstanceOf[`permission-blocked`]
-  @scala.inline
-  def `permission-default`: `permission-default` = "permission-default".asInstanceOf[`permission-default`]
-  @scala.inline
-  def push: push = "push".asInstanceOf[push]
-  @scala.inline
-  def pushsubscriptionchange: pushsubscriptionchange = "pushsubscriptionchange".asInstanceOf[pushsubscriptionchange]
-  @scala.inline
-  def `token-subscribe-failed`: `token-subscribe-failed` = "token-subscribe-failed".asInstanceOf[`token-subscribe-failed`]
-  @scala.inline
-  def `token-subscribe-no-token`: `token-subscribe-no-token` = "token-subscribe-no-token".asInstanceOf[`token-subscribe-no-token`]
-  @scala.inline
-  def `token-unsubscribe-failed`: `token-unsubscribe-failed` = "token-unsubscribe-failed".asInstanceOf[`token-unsubscribe-failed`]
-  @scala.inline
-  def `token-update-failed`: `token-update-failed` = "token-update-failed".asInstanceOf[`token-update-failed`]
-  @scala.inline
-  def `token-update-no-token`: `token-update-no-token` = "token-update-no-token".asInstanceOf[`token-update-no-token`]
-  @scala.inline
-  def `unsupported-browser`: `unsupported-browser` = "unsupported-browser".asInstanceOf[`unsupported-browser`]
-  @scala.inline
-  def `use-sw-after-get-token`: `use-sw-after-get-token` = "use-sw-after-get-token".asInstanceOf[`use-sw-after-get-token`]
-  @scala.inline
-  def `use-vapid-key-after-get-token`: `use-vapid-key-after-get-token` = "use-vapid-key-after-get-token".asInstanceOf[`use-vapid-key-after-get-token`]
+  sealed trait `use-vapid-key-after-get-token`
+    extends StObject
+       with ErrorCode
+       with typingsJapgolly.firebaseMessaging.distSrcUtilErrorsMod.ErrorCode
+  inline def `use-vapid-key-after-get-token`: `use-vapid-key-after-get-token` = "use-vapid-key-after-get-token".asInstanceOf[`use-vapid-key-after-get-token`]
 }
-

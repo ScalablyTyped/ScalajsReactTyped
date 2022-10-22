@@ -1,35 +1,55 @@
 package typingsJapgolly.elasticlunr.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait SerialisedIndexData[T] extends js.Object {
+trait SerialisedIndexData[T] extends StObject {
+  
   var documentStore: SerialisedDocumentStore[T]
-  var fields: js.Array[String]
-  var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typingsJapgolly.elasticlunr.elasticlunrStrings.SerialisedIndexData with js.Any
+  
+  var fields: js.Array[/* keyof T */ String]
+  
+  var index: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode} */ js.Any
+  
   var pipeline: SerialisedPipeline
-  var ref: String
+  
+  var ref: /* keyof T */ String
+  
   var version: String
 }
-
 object SerialisedIndexData {
-  @scala.inline
-  def apply[T](
+  
+  inline def apply[T](
     documentStore: SerialisedDocumentStore[T],
-    fields: js.Array[String],
-    index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
-  {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typingsJapgolly.elasticlunr.elasticlunrStrings.SerialisedIndexData with js.Any,
+    fields: js.Array[/* keyof T */ String],
+    index: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode} */ js.Any,
     pipeline: SerialisedPipeline,
-    ref: String,
+    ref: /* keyof T */ String,
     version: String
   ): SerialisedIndexData[T] = {
     val __obj = js.Dynamic.literal(documentStore = documentStore.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], pipeline = pipeline.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-  
     __obj.asInstanceOf[SerialisedIndexData[T]]
   }
+  
+  extension [Self <: SerialisedIndexData[?], T](x: Self & SerialisedIndexData[T]) {
+    
+    inline def setDocumentStore(value: SerialisedDocumentStore[T]): Self = StObject.set(x, "documentStore", value.asInstanceOf[js.Any])
+    
+    inline def setFields(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    
+    inline def setFieldsVarargs(value: (/* keyof T */ String)*): Self = StObject.set(x, "fields", js.Array(value*))
+    
+    inline def setIndex(
+      value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode} */ js.Any
+    ): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    
+    inline def setPipeline(value: SerialisedPipeline): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    
+    inline def setPipelineVarargs(value: String*): Self = StObject.set(x, "pipeline", js.Array(value*))
+    
+    inline def setRef(value: /* keyof T */ String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+  }
 }
-

@@ -1,21 +1,30 @@
 package typingsJapgolly.jss.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait UpdateOptions extends js.Object {
+trait UpdateOptions extends StObject {
+  
   var force: js.UndefOr[Boolean] = js.undefined
+  
   var process: js.UndefOr[Boolean] = js.undefined
 }
-
 object UpdateOptions {
-  @scala.inline
-  def apply(force: js.UndefOr[Boolean] = js.undefined, process: js.UndefOr[Boolean] = js.undefined): UpdateOptions = {
+  
+  inline def apply(): UpdateOptions = {
     val __obj = js.Dynamic.literal()
-    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force.asInstanceOf[js.Any])
-    if (!js.isUndefined(process)) __obj.updateDynamic("process")(process.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOptions]
   }
+  
+  extension [Self <: UpdateOptions](x: Self) {
+    
+    inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+    
+    inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+    
+    inline def setProcess(value: Boolean): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    
+    inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+  }
 }
-
